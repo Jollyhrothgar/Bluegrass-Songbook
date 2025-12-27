@@ -1,6 +1,9 @@
 {meta: title Don't Let Me Walk Too Far From Calvary}
 {meta: artist The Rambos}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file dontletmewalktoofarfromcalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As long as I can see Him [C]hangin' on a distant [A7]cross
@@ -29,3 +32,6 @@ Don't spare the [D7]agony of [C]Gethsema[G]ne
 I [D7]might soon [G]forget the death You [C]died [E7]for [Am]me
 That's why I [G]pray [C]don't let me [G]stray [D7]too far from [C]Cal[D7]var[G]y
 {end_of_verse}
+
+
+

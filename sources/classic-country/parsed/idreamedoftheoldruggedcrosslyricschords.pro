@@ -1,6 +1,9 @@
 {meta: title I Dreamed Of The Old Rugged Cross}
 {meta: artist Carl Smith}
 {meta: composer Marijohn Wilkin and Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file idreamedoftheoldruggedcrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I dreamed I stood at the portal of [C]heaven one [G]day
@@ -29,3 +32,6 @@
 [C]Then I woke and I cried have mercy I [G]prayed
 [D7]I had dreamed of the old rugged [G]cross
 {end_of_verse}
+
+
+

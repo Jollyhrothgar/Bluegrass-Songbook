@@ -1,6 +1,9 @@
 {meta: title Drinking Tequila}
 {meta: artist Jim Reeves}
 {meta: composer Bob Center}
+{meta: x_source classic-country}
+{meta: x_source_file drinkingtequilalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just gettin' back from [G7]Juarez Mexico
@@ -57,3 +60,10 @@ The maidens are dancing out in the moon[C]light
 Oooh-ha [G7]on top of the world
 Drinkin' tequila and teasin' the [C]girls
 {end_of_verse}
+
+
+
+
+
+
+

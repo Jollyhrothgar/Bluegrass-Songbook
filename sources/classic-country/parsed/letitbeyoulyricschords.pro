@@ -1,6 +1,9 @@
 {meta: title Let It Be You}
 {meta: artist Ricky Skaggs}
 {meta: composer Kevin Welch and Harry Stinson}
+{meta: x_source classic-country}
+{meta: x_source_file letitbeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I could find a love to treasure with this [C]heart and with these [G]hands
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [D7]Let it come true let it [C]be [G]y-ou
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let's Make A Nice Memory}
 {meta: artist Ray Price}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file letsmakeanicememorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's make a nice memory [F]today
@@ -50,3 +53,9 @@ Let's [G7]say all the sweet things we [C]always meant to say
 Don't let tomorrow find us with [F]nothing to remind [Fm]us
 Let's [C]make a nice [G7]memory [F]toda[C]y
 {end_of_verse}
+
+
+
+
+
+

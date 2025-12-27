@@ -1,6 +1,9 @@
 {meta: title What A Friend We Have In Jesus}
 {meta: artist Rhonda Vincent}
 {meta: composer Joseph Scrivens and Charles Converse}
+{meta: x_source classic-country}
+{meta: x_source_file whatafriendwehaveinjesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What a friend we have in [C]Jesus
@@ -50,3 +53,9 @@ Are we weak and heavy [C]laden
 [G]What a privilege to [C]carry
 [D7]Everything to God in [G]prayer
 {end_of_verse}
+
+
+
+
+
+

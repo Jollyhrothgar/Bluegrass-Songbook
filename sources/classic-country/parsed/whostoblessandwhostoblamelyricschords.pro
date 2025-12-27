@@ -1,5 +1,8 @@
 {meta: title Who's To Bless And Who's To Blame}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file whostoblessandwhostoblamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If a cheated man's a loser  and a cheater never [F]wins
@@ -21,3 +24,5 @@ Toss your chips in with your [D7]chances boy  let 'em lay the way they [G7]fall
 Cause the moral doesn't [C]matter  broken rules are all the [F]same
 To the broken or the [G7]breaker  who's to bless and who's to [C]blame
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Cheatin' Fire}
 {meta: artist Johnny Bush}
 {meta: composer Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file cheatinfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cheatin' fire [F]it's gonna burn [C]higher
@@ -41,3 +44,7 @@ Every [Am]night it's still the [C]same
 Pour [F]fuel on the [C]flame
 Before this [Am]cheatin' fire goes [G7]out someone will get [C]burned
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title At The End Of Long Lonely Day}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file attheendoflonglonelydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At the end of a [F]long lonely [C]day without you
@@ -28,3 +31,6 @@ It [G7]makes no difference if I [F]live or [C]die
 With a world locked out[F]side I just [C]lay there and cry
 At the [G7]end of a long lonely [C]day
 {end_of_verse}
+
+
+

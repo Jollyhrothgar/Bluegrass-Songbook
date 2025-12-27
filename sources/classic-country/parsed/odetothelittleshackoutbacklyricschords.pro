@@ -1,6 +1,9 @@
 {meta: title Ode To The Little Shack Out Back}
 {meta: artist Bobby Bare}
 {meta: composer Billy Ed Wheeler}
+{meta: x_source classic-country}
+{meta: x_source_file odetothelittleshackoutbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They passed an ordinance in the town
@@ -61,3 +64,11 @@ They said we'd have to tear it down
 [G]Though the health department said its day was over and [C]dead
 [G]It will stand forever [D7]in my [G]memory
 {end_of_verse}
+
+
+
+
+
+
+
+

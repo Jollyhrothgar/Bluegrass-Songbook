@@ -1,6 +1,9 @@
 {meta: title Echoes From The Burning Bush}
 {meta: artist Chuck Wagon Gang}
 {meta: composer Bryon Foust and V.O. Summar}
+{meta: x_source classic-country}
+{meta: x_source_file echoesfromtheburningbushlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Moses stood on holy ground
@@ -47,3 +50,8 @@ God sent down His only Son
 [C]This my song shall ever be words that are so sweet to me
 [G]Echoes from the burning bush [A7](the [D7]burning [G]bush)
 {end_of_verse}
+
+
+
+
+

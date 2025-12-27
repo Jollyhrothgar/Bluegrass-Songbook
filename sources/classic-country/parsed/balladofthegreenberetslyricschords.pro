@@ -1,6 +1,9 @@
 {meta: title Ballad Of The Green Berets}
 {meta: artist SSgt. Barry Sadler}
 {meta: composer Robin Moore and Barry Sadler}
+{meta: x_source classic-country}
+{meta: x_source_file balladofthegreenberetslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fighting soldiers [G7]from the [C]sky
@@ -43,3 +46,8 @@ Make him [G7]one of America's [C]best
 He'll be a [F]man they'll test one [C]day
 Have him [G7]win the Green [C]Beret
 {end_of_verse}
+
+
+
+
+

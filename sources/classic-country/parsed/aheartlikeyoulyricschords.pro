@@ -1,6 +1,9 @@
 {meta: title A Heart Like You}
 {meta: artist Connie Smith}
 {meta: composer Dallas Fraizer}
+{meta: x_source classic-country}
+{meta: x_source_file aheartlikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]A million [C]times you [F]softly said don’t [C]let him [G7]slip a[C]way
@@ -33,3 +36,7 @@ What’s a [G7]heart like you doing in a fool like [C]me
 {start_of_verse: Verse 4}
 What’s a [G7]heart like you doing in a fool like [C]me
 {end_of_verse}
+
+
+
+

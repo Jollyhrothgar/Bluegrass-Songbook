@@ -1,6 +1,9 @@
 {meta: title Wanted Someone To Love Me}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Fowler/Crowe}
+{meta: x_source classic-country}
+{meta: x_source_file wantedsomeonetolovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you should read the [F]paper [C]be sure to look on page [G7]two
@@ -22,3 +25,5 @@ I don’t know where you [F]are dear [C]but I do want you to [G7]know
 Wanted someone who’s [F]missing [C]someone who’s love I once [G7]knew
 [C]Wanted someone to [F]love me [C]someone who’s [G7]no one but [C]you
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title That's Why I'm Walking}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhyimwalkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've Got My Angel On My [D7]Mind That's Why [G]I'm [G7]Walking
@@ -23,3 +26,5 @@ I've got her [D7]sweet love on my mind that's why I'm [G]walking
 Tag
 I've Got My [D7]Angel On My Mind That's Why I'm [G]Walking
 {end_of_verse}
+
+

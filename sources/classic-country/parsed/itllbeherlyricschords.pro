@@ -1,6 +1,9 @@
 {meta: title It'll Be Her}
 {meta: artist Johnny Rodriguez}
 {meta: composer Billy Ray Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file itllbeherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 It'll Be Her
@@ -41,3 +44,8 @@ It'll be her loving me
 If [F]anyone ever goes out of their way to show they care
 It'll be [C]her  loving me
 {end_of_verse}
+
+
+
+
+

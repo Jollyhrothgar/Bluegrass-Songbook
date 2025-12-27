@@ -1,6 +1,9 @@
 {meta: title Love I Couldn't Give}
 {meta: artist Faron Young}
 {meta: composer Chuck Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file loveicouldntgivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Across the room an empty bed 
@@ -36,3 +39,7 @@ For the only love that [F]makes me want to [Dm]live
 And I [G7]curse the need that drives you to the man 
 Who helps you find the love [F]I couldn't gi[C]ve
 {end_of_verse}
+
+
+
+

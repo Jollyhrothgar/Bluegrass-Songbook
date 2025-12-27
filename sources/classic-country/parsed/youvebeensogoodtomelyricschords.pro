@@ -1,6 +1,9 @@
 {meta: title You've Been So Good To Me}
 {meta: artist Van Trevor}
 {meta: composer Dick Heard and Van Trevor}
+{meta: x_source classic-country}
+{meta: x_source_file youvebeensogoodtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You've been so [G]good to me [C]all the kind things you [G]do
@@ -22,3 +25,5 @@
 [G]How can I thank you you've [D7]been so good to [G]me
 [C]How can [G]I thank you you've [D7]been so good to [G][C]me
 {end_of_verse}
+
+

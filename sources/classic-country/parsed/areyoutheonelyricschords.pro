@@ -1,6 +1,9 @@
 {meta: title Are You The One}
 {meta: artist Jim Reeves}
 {meta: composer Don Crashey and Buddy DeVal}
+{meta: x_source classic-country}
+{meta: x_source_file areyoutheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Are you the one who promised me a love forever true
@@ -50,3 +53,11 @@ Are you the one who'll kiss away the troubles that arise
 Are you the one who'll share my joy and all my troubles too
 [G7]If you're the one then I'm the one who'll give my heart to [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+

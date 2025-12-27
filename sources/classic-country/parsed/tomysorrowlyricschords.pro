@@ -1,6 +1,9 @@
 {meta: title To My Sorrow}
 {meta: artist Eddy Arnold}
 {meta: composer Vernice J. McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file tomysorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]To my [C]sorrow I [C7]loved you [F]only 
@@ -29,3 +32,6 @@ You'll be [D7]sorry that you said we had to [G7]part
 Though I'm [C]smiling inside [C7]I'm [F]crying
 Cause to my [C]sorrow  [G7]you're in my [C]heart
 {end_of_verse}
+
+
+

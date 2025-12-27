@@ -1,5 +1,8 @@
 {meta: title Way Downtown}
 {meta: artist Doc Watson}
+{meta: x_source classic-country}
+{meta: x_source_file waydowntownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Way downtown just fooling [C]around
@@ -49,3 +52,9 @@ I [F]brought nothing with me into this old [C]world
 [F]Oh me and it's oh [C]my
 [G7]No one to go my [C]bail
 {end_of_verse}
+
+
+
+
+
+

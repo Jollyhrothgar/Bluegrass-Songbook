@@ -1,6 +1,9 @@
 {meta: title Old Army Hat}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson and Walt Aldridge}
+{meta: x_source classic-country}
+{meta: x_source_file oldarmyhatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He came home to Tennessee a young man at the end of forty-[Dm]five
@@ -73,3 +76,11 @@ And [F]crown thy good with [C]brotherhood from [F]sea to [G7]shining [C]sea
 {start_of_verse: Verse 9}
 And [F]crown thy good with [C]brotherhood from [F]sea to [G7]shining [C]sea
 {end_of_verse}
+
+
+
+
+
+
+
+

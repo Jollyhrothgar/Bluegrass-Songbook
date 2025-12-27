@@ -1,6 +1,9 @@
 {meta: title No Hard Times}
 {meta: artist Merle Haggard}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file nohardtimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got a barrel of flour Lord I got a bucket of lard [C7]
@@ -33,3 +36,7 @@ I can [F]make more money with my pick and [C]plow
 With [G7]my one-eyed mule and my good ole Jersey [C]cow
 Yodel-lee-o [G7]hard time [C]blues
 {end_of_verse}
+
+
+
+

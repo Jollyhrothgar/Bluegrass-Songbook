@@ -1,6 +1,9 @@
 {meta: title Beautiful Brown Eyes}
 {meta: artist Roy Acuff}
 {meta: composer Alton Delmore, Arthur Smith, Jerry Capehart}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulbrowneyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Beautiful [G7]beautiful brown [C]eyes
@@ -36,3 +39,7 @@ I'll [D7]never see brown eyes no [G]more
 [G]Beautiful [G7]beautiful brown [C]eyes
 I'll [D7]never love blue eyes [G]again
 {end_of_verse}
+
+
+
+

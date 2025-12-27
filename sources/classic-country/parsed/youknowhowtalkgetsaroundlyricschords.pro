@@ -1,6 +1,9 @@
 {meta: title You Know How Talk Gets Around}
 {meta: artist Eddy Arnold}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file youknowhowtalkgetsaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm hearing funny stories and they're far from being [F]true
@@ -29,3 +32,6 @@
 [C]I'd give the world to tell them how I'd love to make [F]commands
 [G7]But you know how talk gets [C]around
 {end_of_verse}
+
+
+

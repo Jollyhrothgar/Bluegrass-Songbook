@@ -1,6 +1,9 @@
 {meta: title Oh Heart Look What You've Done}
 {meta: artist Doyle Lawson}
 {meta: composer Carl Jackson and Russ Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file ohheartlookwhatyouvedonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart spoke to m--e at the moment you left
@@ -34,3 +37,7 @@ O-h [G7]he--art look what you've [C]done
 [C7]You broke your [F]v-ow t-o me now there's no where to [C]run
 O-h [G7]he--art look what you've [C]done
 {end_of_verse}
+
+
+
+

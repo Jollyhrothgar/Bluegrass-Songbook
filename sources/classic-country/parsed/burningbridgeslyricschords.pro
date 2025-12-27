@@ -1,6 +1,9 @@
 {meta: title Burning Bridges Lyrics Chords}
 {meta: artist Ray Price}
 {meta: composer Walter Scott}
+{meta: x_source classic-country}
+{meta: x_source_file burningbridgeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Found some letters you wrote me this [D7]morning
@@ -29,3 +32,6 @@
 [F]Burning bridges behind [C]me
 [G7]All I want is to forget you [C]somehow
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When A Man Loves A Woman}
 {meta: artist Billy Walker}
 {meta: composer Bill Eldridge and Gary Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file whenamanlovesawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When a man loves a [C]woman 
@@ -46,3 +49,8 @@ She alone can [D7]give the strength
 He [C]needs to [D7]carry through
 Woman I love [G]you
 {end_of_verse}
+
+
+
+
+

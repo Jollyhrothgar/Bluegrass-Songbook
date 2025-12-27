@@ -1,6 +1,9 @@
 {meta: title Let Your Lovin' Do Your Talkin'}
 {meta: artist Ferlin Husky}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file letyourlovindoyourtalkinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A let your lovin' do your [D7]talkin'
@@ -36,3 +39,7 @@
 [D7]Let your lovin' do your talkin'
 [C]And you'll be walkin' [D7]in the sunshine [G]everyday
 {end_of_verse}
+
+
+
+

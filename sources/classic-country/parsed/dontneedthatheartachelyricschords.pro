@@ -1,6 +1,9 @@
 {meta: title Don't Need That Heartache}
 {meta: artist Tracy Byrd}
 {meta: composer Melba Montgomery and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file dontneedthatheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hate to say it heart I [D7]told you so 
@@ -49,3 +52,8 @@ It's [C]gonna take time but I know you'll do it
 [D7]You don't need that heartache any[G]more 
 [D7]You don't need that heartache any[G]more
 {end_of_verse}
+
+
+
+
+

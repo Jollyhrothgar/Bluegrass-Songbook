@@ -1,6 +1,9 @@
 {meta: title Building Memories}
 {meta: artist Hank Williams Jr.}
 {meta: composer Robert Jenkins and Larry Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file buildingmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't have to tell you what I've got on my [C]mind 
@@ -29,3 +32,6 @@ Yes [G]tonight your gonna [C]make me feel [D7]alright
 But I'm [C]just another page [D7]in your book [G]of broken [C]dreams 
 And [G]you're my cornerstone [D7]for [C]building [G][D7]mem-ories  
 {end_of_verse}
+
+
+

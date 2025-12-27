@@ -1,6 +1,9 @@
 {meta: title Happyville}
 {meta: artist Mel Tillis}
 {meta: composer Joyce McCord}
+{meta: x_source classic-country}
+{meta: x_source_file happyvillelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I caught a glimpse of heaven the [G7]day that I met you
@@ -33,3 +36,7 @@ For Happyville is [C]just a hill that [G7]could be any[C]where
 {start_of_verse: Verse 4}
 [G7]Happiness is found in Happy[C]ville
 {end_of_verse}
+
+
+
+

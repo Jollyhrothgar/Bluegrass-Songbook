@@ -1,6 +1,9 @@
 {meta: title Memory Number One}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file memorynumberonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got lots of golden [F]mem'-ries
@@ -29,3 +32,6 @@ And I [C]guess that's what this fool [C7]has gone [G7]and done
 But to- [C]night I'm thinkin' of old [F]mem'ries
 [C]You're my [G7]Mem'ry Number [C]One
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Left The Best Part Of Texas In Tennessee}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file ileftthebestpartoftexasintennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She followed me there from Ama[D7]rillo
@@ -41,3 +44,8 @@ I left the [D7]best part of Texas in Tenne[G]ssee
 {start_of_verse: Verse 5}
 I left the [D7]best part of Texas in Tenne[G]ssee 
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Crying On Your Shoulder Again}
 {meta: artist Doug Stone}
 {meta: composer Larry Boone and Paul Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file cryingonyourshoulderagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Turning up my [G7]collar to a [C]cold Kansas morning
@@ -39,3 +42,7 @@ So here I [C]am  [F]crying on your [G7]shoulder [C]again
 {start_of_verse: Verse 4}
 I'm crying and I'm [F]dying just to [G7]hold her [C]crying
 {end_of_verse}
+
+
+
+

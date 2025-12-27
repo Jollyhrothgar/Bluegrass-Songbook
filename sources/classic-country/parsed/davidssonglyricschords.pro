@@ -1,6 +1,9 @@
 {meta: title David's Song}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file davidssonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I sit here in this Loser's [F]Cathedral
@@ -29,3 +32,6 @@
 [F]That My Woman's Good To Me and now forever
 [G7]We'll Be Livin' In A House Full Of [C]Love
 {end_of_verse}
+
+
+

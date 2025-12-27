@@ -1,6 +1,9 @@
 {meta: title What Do You Want With His Love}
 {meta: artist David Ball}
 {meta: composer David Ball and Larry Jefferies}
+{meta: x_source classic-country}
+{meta: x_source_file whatdoyouwantwithhislovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't tell me it's all over don't [C]break my heart in two
@@ -33,3 +36,7 @@ Will you [G]remember this heart you've broken if you [C]leave me far be[A7]hind
 [C]What do you [D7]want with [G]his love [Am]you've [D7]already got [G]mine
 [C]What do you [D7]want with [G]his love [Am]you've [D7]already got [C]min[G]e 
 {end_of_verse}
+
+
+
+

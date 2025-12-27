@@ -1,5 +1,8 @@
 {meta: title You've Got Those Eyes}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotthoseeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can see the quite de[Dm]speration
@@ -39,3 +42,8 @@ I don't know what's taking your a[Dm]ffection
 {start_of_verse: Verse 5}
 [Dm]You've got that [G7]look you've got those [C]eyes
 {end_of_verse}
+
+
+
+
+

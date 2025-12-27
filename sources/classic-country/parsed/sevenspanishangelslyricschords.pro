@@ -1,6 +1,9 @@
 {meta: title Seven Spanish Angels}
 {meta: artist Willie Nelson}
 {meta: composer Eddie Setser and Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file sevenspanishangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He looked down into her brown eyes and said
@@ -64,3 +67,13 @@ They won't [D7]take me back [G]alive
 There were seven Spanish angels
 At the altar of the [D7]sun
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

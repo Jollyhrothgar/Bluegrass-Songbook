@@ -1,5 +1,8 @@
 {meta: title Just One More}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file justonemorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Put the bottle on the table
@@ -40,3 +43,9 @@ One drink just one more [G7]and then [C]another
 Let it stay there till I'm not [F]able
 To [G7]see your face in every place that I [C]go
 {end_of_verse}
+
+
+
+
+
+

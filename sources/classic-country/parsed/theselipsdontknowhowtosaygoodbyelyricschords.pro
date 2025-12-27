@@ -1,6 +1,9 @@
 {meta: title These Lips Don't Know How To Say Goodbye}
 {meta: artist Doug Stone}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file theselipsdontknowhowtosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I promised I'd do anything to please [F]you
@@ -41,3 +44,9 @@ Now these feet can do the walking
 {start_of_verse: Verse 7}
 [G7]No these lips don't know how to say [C]goodbye
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I've Cried A Mile}
 {meta: artist Hank Snow}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file ivecriedmilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the road of love is rocky  and it's [G7]lonely and so blue
@@ -29,3 +32,6 @@ And there's [G7]nothing but a memory and a [F]pillow on your [C]right
 Oh if men were born to suffer then I [F]guess I'm right in style
 Cause for every inch I've [C]laughed  [G7]I've cried a [C]mile
 {end_of_verse}
+
+
+

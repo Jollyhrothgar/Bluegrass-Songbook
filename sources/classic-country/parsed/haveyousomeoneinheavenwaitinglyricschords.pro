@@ -1,6 +1,9 @@
 {meta: title Have You Someone In Heaven Waiting}
 {meta: artist Ricky Skaggs}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file haveyousomeoneinheavenwaitinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have you someone in [F]heaven [C]awaiting
@@ -36,3 +39,7 @@ Expecting you on that beautiful [G7]shore
 Be ready to [C]join that great band [F]of [C]angels
 When they welcome you in-to [G7]that heavenly [C]door
 {end_of_verse}
+
+
+
+

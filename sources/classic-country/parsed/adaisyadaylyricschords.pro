@@ -1,6 +1,9 @@
 {meta: title A Daisy a Day}
 {meta: artist Hank Snow}
 {meta: composer Jud Strunk}
+{meta: x_source classic-country}
+{meta: x_source_file adaisyadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He remembers the first [D7]time he met [G]her
@@ -67,3 +70,11 @@ I'll [C]give you a daisy a [G]day
 [Em]I'll love you until the rivers run still
 And the [G]four winds we [D7]know blow [G]away
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title No Thanks I Just Had One}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file nothanksijusthadonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come closer let me [D7]give you a [G]kiss just for [C]fun
@@ -23,3 +26,5 @@ But [G]I can't forget him and how much I [D7]cared
 No [D7]thanks no thanks I just had [G]one 
 [D7]Thanks but no thanks I just had [G]one
 {end_of_verse}
+
+

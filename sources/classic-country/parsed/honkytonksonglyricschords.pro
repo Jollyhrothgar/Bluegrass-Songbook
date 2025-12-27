@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Song}
 {meta: artist George Jones}
 {meta: composer Frank Meyers and Billy Yates}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonksonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw those blue lights flashin' [F]over my left [C]shoulder
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [F]I gotta [C]hear old Hank a [G7]moanin' a honky tonk [C]song
 {end_of_verse}
+
+
+
+

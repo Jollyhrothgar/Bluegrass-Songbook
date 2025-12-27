@@ -1,6 +1,9 @@
 {meta: title And So It Goes}
 {meta: artist Don Williams}
 {meta: composer Mike Noble, Don Williams, Tim Williams}
+{meta: x_source classic-country}
+{meta: x_source_file andsoitgoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I thought we'd [G7]always be [C]together
@@ -44,3 +47,8 @@ I don't know [D7]why I guess I [F]never thought our [G7]time could pass us [C]by
 And I’m [F]left here with the [G7]words I never got around to [C]saying
 I don't know [D7]why I guess I [F]never thought our [G7]time could pass us [C]by
 {end_of_verse}
+
+
+
+
+

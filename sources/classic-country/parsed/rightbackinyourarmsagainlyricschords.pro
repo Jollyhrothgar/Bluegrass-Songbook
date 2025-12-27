@@ -1,5 +1,8 @@
 {meta: title Right Back In Your Arms Again}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file rightbackinyourarmsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So many times I've told myself 
@@ -36,3 +39,6 @@ For just a few lonely hours and a [C]few sleepless nights
 Too many memories and a fight that I can't [C]win
 And I'm [G]right back [D7]in your arms [G]again
 {end_of_verse}
+
+
+

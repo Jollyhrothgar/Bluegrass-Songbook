@@ -1,6 +1,9 @@
 {meta: title It's About Time}
 {meta: artist Tracy Byrd}
 {meta: composer Curtis Wright and Jim Collins}
+{meta: x_source classic-country}
+{meta: x_source_file itsabouttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another fourteen hour day crisis solved deadline made
@@ -73,3 +76,11 @@ Is sharing in each moment
 It's not too late now [G7]that I rea[C]lize
 [D7]It's about [C]time
 {end_of_verse}
+
+
+
+
+
+
+
+

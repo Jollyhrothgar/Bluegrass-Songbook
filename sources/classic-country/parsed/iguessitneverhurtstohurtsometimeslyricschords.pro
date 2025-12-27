@@ -1,6 +1,9 @@
 {meta: title I Guess It Never Hurts To Hurt Sometimes}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Randy Van Warmer}
+{meta: x_source classic-country}
+{meta: x_source_file iguessitneverhurtstohurtsometimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I feel a wave of a past break in my [C]mind 
@@ -40,3 +43,8 @@ Well I [G]guess it never [D7]hurts to hurt [G][C]sometimes
 {start_of_verse: Verse 4}
 Oh  I [G]guess it never [D7]hurts to hurt [G][C]sometimes
 {end_of_verse}
+
+
+
+
+

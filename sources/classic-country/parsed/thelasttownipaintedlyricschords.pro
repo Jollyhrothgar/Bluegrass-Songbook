@@ -1,5 +1,8 @@
 {meta: title The Last Town I Painted}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file thelasttownipaintedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I came home the other night [D7]I'd been out on the town
@@ -28,3 +31,6 @@ Cause the last town I [G]painted I [D7]painted it [G]blue
 I've [G]got a lotta troubles [G7]no one to tell them [C]to
 Cause the last town I [G]painted I [D7]painted it [G]blue
 {end_of_verse}
+
+
+

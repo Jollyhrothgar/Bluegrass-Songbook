@@ -1,6 +1,9 @@
 {meta: title Kissing You}
 {meta: artist Billy Walker}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file kissingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could kiss the lips I miss
@@ -22,3 +25,5 @@ If [Dm]I found another I couldn’t be [G7]true
 [C]My heart would sigh I’d close my [Am]eyes
 [Dm]And I’d be [F]kissing [C]you
 {end_of_verse}
+
+

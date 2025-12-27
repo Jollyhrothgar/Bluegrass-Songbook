@@ -1,6 +1,9 @@
 {meta: title Prayer Bells Of Heaven}
 {meta: artist J.D. Crowe}
 {meta: composer Paul Williams and Jimmy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file prayerbellsofheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While we are living in this world of care
@@ -43,3 +46,8 @@ Bearing a message unto [D7]Jesus our [G7]King
 [C]When you are burdened down with troubles and care
 Ring on and on for God will [G7]answer your [C]prayer
 {end_of_verse}
+
+
+
+
+

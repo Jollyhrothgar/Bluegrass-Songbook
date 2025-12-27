@@ -1,6 +1,9 @@
 {meta: title Castle Of Shame}
 {meta: artist Jean Shepard}
 {meta: composer Dexter Shaffer and William Ellis}
+{meta: x_source classic-country}
+{meta: x_source_file castleofshamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our home is becoming a [G7]castle of [C]shame
@@ -37,3 +40,8 @@
 {start_of_verse: Verse 5}
 [G7]Our home is becoming a castle of [C]shame
 {end_of_verse}
+
+
+
+
+

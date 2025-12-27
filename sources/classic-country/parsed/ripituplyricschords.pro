@@ -1,6 +1,9 @@
 {meta: title Rip It Up}
 {meta: artist Elvis Presley}
 {meta: composer Robert Alexander Blackwell and John S. Marascalco}
+{meta: x_source classic-country}
+{meta: x_source_file ripituplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it's Saturday night and I just got paid
@@ -56,3 +59,10 @@ I'm gonna [C]rock it up I'm gonna [G]rip it up
 I'm gonna [C]shake it up I'm gonna [G]ball it up
 I'm gonna [D7]rip it up have [C]a ball t[G]onight
 {end_of_verse}
+
+
+
+
+
+
+

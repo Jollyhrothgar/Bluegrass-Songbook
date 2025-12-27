@@ -1,5 +1,8 @@
 {meta: title A Promise You Can't Keep}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file apromiseyoucantkeeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard you [C]swear your love this [G]morning
@@ -36,3 +39,7 @@ But knew there wasn't much to [G]say
 Cause I know that's just a [D7]promise you can't [G]keep
 I heard you [C]swear your love this [G]morning
 {end_of_verse}
+
+
+
+

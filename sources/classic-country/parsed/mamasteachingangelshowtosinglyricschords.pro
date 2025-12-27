@@ -1,6 +1,9 @@
 {meta: title Mama's Teaching Angels How To Sing}
 {meta: artist Ricky Skaggs}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file mamasteachingangelshowtosinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a voice now missing in our [C]little country [G]choir
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]When Mama's teaching angels how [C]to [G]s-ing
 {end_of_verse}
+
+
+
+

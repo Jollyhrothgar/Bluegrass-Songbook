@@ -1,6 +1,9 @@
 {meta: title Driving My Life Away}
 {meta: artist Eddie Rabbitt}
 {meta: composer David Malloy, Eddie Rabbitt, Even Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file drivingmylifeawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the midnight headlight find you on a rainy night
@@ -36,3 +39,8 @@ Those windshield wipers slapping out a tempo
 Keeping perfect rhythm with the song on the [F]radio
 Gotta keep [C]rolling
 {end_of_verse}
+
+
+
+
+

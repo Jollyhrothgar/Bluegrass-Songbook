@@ -1,6 +1,9 @@
 {meta: title We're Strangers Again}
 {meta: artist Randy Travis}
 {meta: composer Merle Haggard and Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file werestrangersagainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]First we were [Em]strangers [F]down on our [C]luck
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G7]Strangers [C]again
 {end_of_verse}
+
+
+
+

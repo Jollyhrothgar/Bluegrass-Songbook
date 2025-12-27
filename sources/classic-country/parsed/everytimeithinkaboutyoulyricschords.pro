@@ -1,6 +1,9 @@
 {meta: title Everytime I Think About You}
 {meta: artist Ricky Nelson}
 {meta: composer Claude Demetrius and Joe Levy}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeithinkaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everytime I think about you  I get so [C7]mad
@@ -42,3 +45,8 @@ Snap your [C]fingers [F]and I'll [C]run cause I get [Dm]blue
 [G7]Everytime I think about [C]you [F]oh [C]yeah 
 [G7]Everytime I think about [C]you [F]oh [C]yeah 
 {end_of_verse}
+
+
+
+
+

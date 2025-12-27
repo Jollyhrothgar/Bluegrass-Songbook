@@ -1,6 +1,9 @@
 {meta: title Somebody Robbed My Beehive}
 {meta: artist George Morgan}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file somebodyrobbedmybeehivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody robbed my bee[A7]hive and [D7]now daddy’s [G7]honey is [C]gone
@@ -18,3 +21,4 @@ They [F]don’t just seem as sweet now as they used to be
 Well [C]somebody robbed my bee[A7]hive and [D7]now daddy’s [G7]honey is [C]gone
 And [D7]now daddy’s [G7]honey is [C]gone
 {end_of_verse}
+

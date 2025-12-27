@@ -1,6 +1,9 @@
 {meta: title Whiskey Six Years Old}
 {meta: artist Norma Jean}
 {meta: composer Glenn Martin and Johnny Slate}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeysixyearsoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I noticed that your socks don't match this [D7]morning
@@ -40,3 +43,7 @@ Whip a man that's thirty-[G]two
 Tell me [D7]how can a whiskey only six years old
 Whip a man that's thirty-[G]two
 {end_of_verse}
+
+
+
+

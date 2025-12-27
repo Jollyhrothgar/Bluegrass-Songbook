@@ -1,5 +1,8 @@
 {meta: title Closer To God Than Ever Before}
 {meta: artist The Hee Haw Gospel Quartet}
+{meta: x_source classic-country}
+{meta: x_source_file closertoGodthaneverbeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you climb to the [G7]top of a [C]mountain
@@ -28,3 +31,6 @@ While the waves gently roll on the [D7]shore
 Can you [G]tell He’s up there watching [C]o’re you
 Then you're closer to [G]God than [D7]ever be[G]fore
 {end_of_verse}
+
+
+

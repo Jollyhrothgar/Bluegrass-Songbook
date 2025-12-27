@@ -1,6 +1,9 @@
 {meta: title I Guess I'm Getting Tired Of Loving You}
 {meta: artist Darrell McCall}
 {meta: composer Gary Adams}
+{meta: x_source classic-country}
+{meta: x_source_file iguessimgettingtiredoflovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My eyes don’t see you any[G7]more
@@ -35,3 +38,7 @@ I guess I’m gettin’ tired of loving [C]you
 {start_of_verse: Verse 5}
 I [G7]guess I’m gettin’ tired of loving [C]you
 {end_of_verse}
+
+
+
+

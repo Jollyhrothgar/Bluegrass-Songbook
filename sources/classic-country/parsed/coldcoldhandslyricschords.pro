@@ -1,6 +1,9 @@
 {meta: title Cold Cold Hands}
 {meta: artist Johnny Bush}
 {meta: composer Lawton Williams}
+{meta: x_source classic-country}
+{meta: x_source_file coldcoldhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There they lay in the wreckage 
@@ -30,3 +33,6 @@ I can't place it on her [G7]cold cold [C]hand
 [F]What will I do with this solid gold [C]band
 I can't place it on her [G7]cold cold [C]hand 
 {end_of_verse}
+
+
+

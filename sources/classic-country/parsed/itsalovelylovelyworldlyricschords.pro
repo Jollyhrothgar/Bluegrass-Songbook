@@ -1,6 +1,9 @@
 {meta: title It's A Lovely Lovely World}
 {meta: artist Carl Smith}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file itsalovelylovelyworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mother Nature's opened up the door
@@ -54,3 +57,11 @@ I used to think that miracles never come true
 But now I'm happy cause I know they do
 It's a lovely lovely world since I met you
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Easy Lovin’ Kind}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file easylovinkindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She’s not just [F]another [G7]pretty [C]face
@@ -25,3 +28,6 @@ I wake up [F]smilin’ every morning [C]just knowing that she’s mine
 {start_of_verse: Verse 4}
 Yeah [F]she’s all [C]woman she’s the [G7]easy lovin’ [C]kind
 {end_of_verse}
+
+
+

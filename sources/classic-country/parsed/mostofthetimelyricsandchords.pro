@@ -1,5 +1,8 @@
 {meta: title Most Of The Time}
 {meta: artist Bobby Helms}
+{meta: x_source classic-country}
+{meta: x_source_file mostofthetimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Most of the time while I'm here [D7]crying
@@ -28,3 +31,6 @@ The rest of the time I'm so [D7]blue
 [G]Part of my time I spend in [D7]slumber
 But most of the time I think of [G]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Blues For Dixie}
 {meta: artist Bob Wills}
 {meta: composer O. W. Mayo}
+{meta: x_source classic-country}
+{meta: x_source_file bluesfordixielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you've ever seen that ole [G7]Mississippi
@@ -35,3 +38,6 @@ That I'm gonna [G]be blue till I'm on that old [G7]choo choo
 There goes [A7]that train
 [D7]That's leaving me Blue For [G]Dixie
 {end_of_verse}
+
+
+

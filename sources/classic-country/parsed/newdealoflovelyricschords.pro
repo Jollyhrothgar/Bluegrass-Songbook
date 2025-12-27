@@ -1,5 +1,8 @@
 {meta: title New Deal Of Love}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file newdealoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let’s break the seal on a new deal of [D7]love
@@ -37,3 +40,8 @@ You’ve raised me long enough
 [G]If love is like poker don’t use me as the [C]joker
 [D7]Let’s ante up our hearts and deal a new hand of [G]love
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Good Hearted Woman}
 {meta: artist Waylon Jennings}
 {meta: composer Waylon Jennings and Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file goodheartedwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A long time forgotten are dreams that just [C7]fell by the [F]way
@@ -29,3 +32,6 @@ She [G7]loves him in spite of his ways that she don't [C]understand
 Through teardrops and laughter they'll pass through this [C7]world [F]hand-in-hand
 A [G7]good-hearted woman loving her good timing [C]man
 {end_of_verse}
+
+
+

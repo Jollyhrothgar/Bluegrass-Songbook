@@ -1,6 +1,9 @@
 {meta: title Maybe Baby}
 {meta: artist Buddy Holly}
 {meta: composer Buddy Holly, Norman Petty, Jerry Allison}
+{meta: x_source classic-country}
+{meta: x_source_file maybebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Maybe baby I'll have [Em]you
@@ -43,3 +46,9 @@ Well you are the one that makes [C]glad
 {start_of_verse: Verse 4}
 Maybe baby [C]I'll have [D7]you for [G]me
 {end_of_verse}
+
+
+
+
+
+

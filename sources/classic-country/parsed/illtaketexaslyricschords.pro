@@ -1,5 +1,8 @@
 {meta: title I'll Take Texas}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file illtaketexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no reason I should go when I really want to stay
@@ -33,3 +36,7 @@ There's no reason I should go and you really ought to stay
 And you can [D7]find me here in [G7]Texas
 I'll [D7]be right here in [G7]Texas if [D7]ya ask me I'll take [G7]Texas any [C]day
 {end_of_verse}
+
+
+
+

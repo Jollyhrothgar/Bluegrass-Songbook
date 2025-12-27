@@ -1,6 +1,9 @@
 {meta: title Lonely Music}
 {meta: artist Jim Reeves}
 {meta: composer Johnny Elgin}
+{meta: x_source classic-country}
+{meta: x_source_file lonelymusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]An empty glass another coin [C]in the [G]jukebox
@@ -29,3 +32,6 @@
 [G]As the words tell their [C]story how I miss [G]you
 [D7]This lonely music keeps reminding me of [G]you
 {end_of_verse}
+
+
+

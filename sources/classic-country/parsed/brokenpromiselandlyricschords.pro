@@ -1,6 +1,9 @@
 {meta: title Broken Promise Land}
 {meta: artist Waylon Jennings}
 {meta: composer Bill Rice and Mary Sharon Rice}
+{meta: x_source classic-country}
+{meta: x_source_file brokenpromiselandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a Bible on the [Dm]dresser and a [G]sign hung on the [C]door
@@ -37,3 +40,7 @@ Where the [G]streets are paved with [C]misery and [D7]lives are built on [Em]lie
 A [G]place they call the [D7]broken promise [C]land
 [G]And it's more than I can [C]stand 
 {end_of_verse}
+
+
+
+

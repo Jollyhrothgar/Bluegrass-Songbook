@@ -1,6 +1,9 @@
 {meta: title She Lays It All On The Line}
 {meta: artist George Strait}
 {meta: composer Clay Blaker}
+{meta: x_source classic-country}
+{meta: x_source_file shelaysitallonthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her hair is red and her [F]eyes are green 
@@ -47,3 +50,9 @@ When [G7]my baby loves me she [F]lays it all on the [C]line
 {start_of_verse: Verse 6}
 When [G7]my baby loves me she [F]lays it all on the [C]line
 {end_of_verse}
+
+
+
+
+
+

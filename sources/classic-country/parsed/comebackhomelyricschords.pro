@@ -1,6 +1,9 @@
 {meta: title Come Back Home}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen, Dave Kirby, Robb Warren}
+{meta: x_source classic-country}
+{meta: x_source_file comebackhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You sure know how to make somebody [F]nothing
@@ -33,3 +36,7 @@ And [D7]New York ain't no place to be [G7]alone
 {start_of_verse: Verse 4}
 [G7]All you have to do is come back [C]home
 {end_of_verse}
+
+
+
+

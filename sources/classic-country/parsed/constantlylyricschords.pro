@@ -1,5 +1,8 @@
 {meta: title Constantly}
 {meta: artist Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file constantlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If my face shows that I'm lonesome when a [G7]tear falls on my cheek
@@ -26,3 +29,6 @@ Since I've lost my one and [C]only I've been [G7]hurtin' constant[C]ly
 {start_of_verse: Verse 4}
 Since I've [F]lost my one and [C]only I've been [G7]hurtin' constant[C]ly
 {end_of_verse}
+
+
+

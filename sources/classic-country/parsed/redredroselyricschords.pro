@@ -1,6 +1,9 @@
 {meta: title Red Red Rose}
 {meta: artist Emmylou Harris}
 {meta: composer David Mallett}
+{meta: x_source classic-country}
+{meta: x_source_file redredroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You may [D7]wonder [C]if you [G]know me
@@ -55,3 +58,10 @@ You know this [C]love is like a [D7]red red [G]rose
 This love of [D7]ours [C]is no common [G]flower
 You know this [Am]love is like a [D7]red red [G]rose
 {end_of_verse}
+
+
+
+
+
+
+

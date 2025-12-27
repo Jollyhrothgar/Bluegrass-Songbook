@@ -1,6 +1,9 @@
 {meta: title Love Never Broke Anyone's Heart}
 {meta: artist Vince Gill}
 {meta: composer Jim Weatherly and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file loveneverbrokeanyonesheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say your [F]heart has been [C]broken
@@ -41,3 +44,8 @@ Love [F]never broke [G7]anyone's [C]heart
 It's not really [Am]love if it [F]tears you [C]apart
 Love [F]never broke [G7]anyone's [C]heart
 {end_of_verse}
+
+
+
+
+

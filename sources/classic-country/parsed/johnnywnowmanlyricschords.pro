@@ -1,5 +1,8 @@
 {meta: title Johnny Snowman}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file johnnywnowmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A week just before Christmas way down in Louisi[D7]an
@@ -48,3 +51,10 @@ So happy that Saint [G]Nicholas had [D7]sent a little [G]snow
 Thanks for the [D7]snow the snow for [G]Johnny
 Now he can [D7]build a big snow[G]man
 {end_of_verse}
+
+
+
+
+
+
+

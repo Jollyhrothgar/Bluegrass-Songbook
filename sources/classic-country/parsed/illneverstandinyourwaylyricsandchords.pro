@@ -1,6 +1,9 @@
 {meta: title I'll Never Stand In Your Way}
 {meta: artist Wilburn Brothers}
 {meta: composer Clint Horner}
+{meta: x_source classic-country}
+{meta: x_source_file illneverstandinyourwaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If you [C]found someone new who means [F]more than me to you
@@ -22,3 +25,5 @@ But [D7]what is to be will be and I'll [G7]obey
 I'll [C]be blue when you go but [F]I'll never let it show
 Darling [G7]I'll never stand in your [C]way
 {end_of_verse}
+
+

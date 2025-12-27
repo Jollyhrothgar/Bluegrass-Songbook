@@ -1,6 +1,9 @@
 {meta: title Fishin' In The Dark}
 {meta: artist Garth Brooks}
 {meta: composer Wendy Waldman and Jim Photoglo}
+{meta: x_source classic-country}
+{meta: x_source_file fishininthedarklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lazy yellow moon coming up tonight 
@@ -74,3 +77,17 @@ Baby get [C]ready  [G7]oooo
 Are floating on the breeze
 Baby get [C]ready
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

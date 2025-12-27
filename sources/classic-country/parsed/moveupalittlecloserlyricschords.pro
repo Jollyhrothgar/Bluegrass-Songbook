@@ -1,6 +1,9 @@
 {meta: title Move Up A Little Closer}
 {meta: artist Wilburn Brothers}
 {meta: composer Johnny Mullins}
+{meta: x_source classic-country}
+{meta: x_source_file moveupalittlecloserlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh how well I do remember back in [F]old camp meetin' [C]times
@@ -29,3 +32,6 @@ Come now and be counted with the children [D7]of the [G7]Lord
 Move up a little [C]closer climb [F]high up the [C]mountain
 Move up a little closer to the [G7]kingdom of the [C]Lord
 {end_of_verse}
+
+
+

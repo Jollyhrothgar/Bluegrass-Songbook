@@ -1,6 +1,9 @@
 {meta: title All Wrapped Up in Christmas}
 {meta: artist Tracy Lawrence}
 {meta: composer Flip Anderson and Kenny Beard}
+{meta: x_source classic-country}
+{meta: x_source_file allwrappedupinChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Her mother called and wondered [C]where we were
@@ -40,3 +43,7 @@ May peace and [D7]joy come your way
 Our best [F]wishes
 [G7]Now go get all wrapped up in [C]Christmas
 {end_of_verse}
+
+
+
+

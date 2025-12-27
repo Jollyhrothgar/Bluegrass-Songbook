@@ -1,5 +1,8 @@
 {meta: title Money Or Love}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file moneyorlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's every kind of definition
@@ -57,3 +60,9 @@ Well you [F]better make [C]sure it's [G]love
 [G](Money or love) you better make [D7]sure
 [G](Money or love) you know you better make [D7]sure it's [G]love
 {end_of_verse}
+
+
+
+
+
+

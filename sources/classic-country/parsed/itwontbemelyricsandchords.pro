@@ -1,6 +1,9 @@
 {meta: title It Won't Be Me}
 {meta: artist Tanya Tucker}
 {meta: composer Tom Shapiro and Chris Waters}
+{meta: x_source classic-country}
+{meta: x_source_file itwontbemelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somebody oughta tell that girl 
@@ -47,3 +50,9 @@ But it won't be [D7]me  [C]   [D7]no it won't be [G]me
 {start_of_verse: Verse 5}
 Well it won't be [D7]me  [C]   [D7]no it won't be [G]me
 {end_of_verse}
+
+
+
+
+
+

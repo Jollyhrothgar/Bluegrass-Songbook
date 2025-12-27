@@ -1,5 +1,8 @@
 {meta: title I've Never Been So Blue}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file iveneverbeensobluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No matter what I do
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 6}
 Repeat last verse
 {end_of_verse}
+
+
+
+
+

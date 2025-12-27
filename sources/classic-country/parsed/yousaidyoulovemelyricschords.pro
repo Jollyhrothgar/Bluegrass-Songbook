@@ -1,6 +1,9 @@
 {meta: title You Said You Love Me}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file yousaidyoulovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said you love me 
@@ -28,3 +31,5 @@ You got me worried over [C]you
 If you don't come [G7]back to me 
 [F]I don't know what I'm gonna [C]do
 {end_of_verse}
+
+

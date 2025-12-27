@@ -1,6 +1,9 @@
 {meta: title Second Handed Flowers}
 {meta: artist George Jones}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file secondhandedflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was working in Miami [F]for a day or [C]two
@@ -36,3 +39,7 @@ I handed her the flowers and she [F]gently kissed my [C]hand
 [C]I said goodbye and as I bent to [F]kiss her fevered [C]brow
 [F]I heard her whisper [C]thank you for the [G7]second handed [C]flowers
 {end_of_verse}
+
+
+
+

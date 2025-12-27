@@ -1,5 +1,8 @@
 {meta: title Forbidden Flowers}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file forbiddenflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are [Dm]flowers [G7]in the [C]cities 
@@ -32,3 +35,7 @@ You may [F]shatter [G7]someone's [C]dream
 {start_of_verse: Verse 4}
 You may [F]shatter [G7]someone's [C]dream
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title My Heart Would Know}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file myheartwouldknowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could [G7]say it's over [C]now
@@ -28,3 +31,6 @@ My [G7]lips could tell a lie but my heart would [C]know
 [F]I could tell my heart I'm glad [C]we [Am]parted
 My [G7]lips could tell a lie but my heart would [C]know
 {end_of_verse}
+
+
+

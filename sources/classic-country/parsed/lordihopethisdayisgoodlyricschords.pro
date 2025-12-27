@@ -1,6 +1,9 @@
 {meta: title Lord I Hope This Day Is Good}
 {meta: artist Don Williams}
 {meta: composer Dave Hanner}
+{meta: x_source classic-country}
+{meta: x_source_file lordihopethisdayisgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I hope this day is good 
@@ -47,3 +50,11 @@ But [F]Lord I hope you [C][G7]understand
 {start_of_verse: Verse 1}
 [C]Lord I hope this day is good 
 {end_of_verse}
+
+
+
+
+
+
+
+

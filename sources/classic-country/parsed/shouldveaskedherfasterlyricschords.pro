@@ -1,6 +1,9 @@
 {meta: title Should've Asked Her Faster}
 {meta: artist Ty England}
 {meta: composer Bob DePiero and Al Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file shouldveaskedherfasterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a little dance hall [F]just outside of [C]Dallas
@@ -48,3 +51,9 @@ A natural [G7]disaster I should've asked her [C]faster
 I didn't get her number I never got her [F]name
 A natural [G7]disaster I should've asked her [C]faster
 {end_of_verse}
+
+
+
+
+
+

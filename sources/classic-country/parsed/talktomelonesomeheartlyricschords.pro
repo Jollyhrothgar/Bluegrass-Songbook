@@ -1,6 +1,9 @@
 {meta: title Talk To Me Lonesome Heart}
 {meta: artist George Jones}
 {meta: composer James O`Gwynn}
+{meta: x_source classic-country}
+{meta: x_source_file talktomelonesomeheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Talk to me oh lonesome heart help me through this lonely [F]night
@@ -29,3 +32,6 @@ You have lost but I’ve [D7]lost as well as [G7]you
 So talk to me oh [C]lonesome heart help me through this lonely [F]night
 Lie to [G7]me and tell me everything’s [C]alright
 {end_of_verse}
+
+
+

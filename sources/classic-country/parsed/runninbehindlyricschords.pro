@@ -1,6 +1,9 @@
 {meta: title Runnin' Behind}
 {meta: artist Tracy Lawrence}
 {meta: composer Mark D. Sanders and Ed Hill}
+{meta: x_source classic-country}
+{meta: x_source_file runninbehindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Work work work day after day
@@ -45,3 +48,9 @@ Yeah I'm [D7]always runnin' [C]but I'm always runnin' [G]behind
 {start_of_verse: Verse 5}
 Lord I'm [D7]always runnin' [C]but I'm always runnin' [G]behind
 {end_of_verse}
+
+
+
+
+
+

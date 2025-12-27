@@ -1,6 +1,9 @@
 {meta: title Love Comes From The Other Side Of Town}
 {meta: artist George Strait}
 {meta: composer Fred Freiling}
+{meta: x_source classic-country}
+{meta: x_source_file lovecomesfromtheothersideoftownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When things get bad at [C]home you don't [G]feel like bein' alone
@@ -33,3 +36,7 @@ Now [D7]love comes from the other side of [G]town
 {start_of_verse: Verse 4}
 And [D7]love comes from the other side of [G]town
 {end_of_verse}
+
+
+
+

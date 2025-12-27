@@ -1,6 +1,9 @@
 {meta: title I Think I'm Gonna Live Forever}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard, Dennis Hromek, Bennie Binion}
+{meta: x_source classic-country}
+{meta: x_source_file ithinkimgonnaliveforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you first left me [C]baby
@@ -31,3 +34,6 @@
 [D7]I think I'm gonna live forever
 [C]Hey it feels so good to [D7]be out of love with [G]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Little Bit South Of Saskatoon}
 {meta: artist Sonny James}
 {meta: composer Sonny James Loden and Carole F Smith}
+{meta: x_source classic-country}
+{meta: x_source_file alittlebitsouthofsaskatoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Just a little bit south of [G7]Saskatoon
@@ -43,3 +46,8 @@ Me and Junny-Mae [C7]sit arm in [F]arm
 [D7]By a big ole fire and [G7]honeymoon
 A little bit [C7]south of [F]Saskatoon
 {end_of_verse}
+
+
+
+
+

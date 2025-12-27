@@ -1,6 +1,9 @@
 {meta: title Between Blue Eyes And Jeans}
 {meta: artist Conway Twitty}
 {meta: composer Ken McDuffie}
+{meta: x_source classic-country}
+{meta: x_source_file betweenblueeyesandjeanslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere between her blue eyes and jeans
@@ -36,3 +39,7 @@ To that lonesome old feelin' between her [G7]blue eyes and [C]jeans
 {start_of_verse: Verse 4}
 She's healin' a-feelin' between her [G7]blue eyes and [C]jeans
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Down The Road I Go}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file downtheroadigolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess there's not much I [D7]can do or [G]say
@@ -28,3 +31,7 @@ Our likes were much the same
 {start_of_verse: Verse 5}
 Repeat# 2, 3, 2
 {end_of_verse}
+
+
+
+

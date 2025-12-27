@@ -1,5 +1,8 @@
 {meta: title A Teardrop on a Rose}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ateardroponaroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While strolling through a lovely [G7]garden
@@ -28,3 +31,6 @@
 [C]I loved I lost [C7]my story [F]ended
 [G7]With just a teardrop on a [C]rose
 {end_of_verse}
+
+
+

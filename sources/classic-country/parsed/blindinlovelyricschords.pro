@@ -1,6 +1,9 @@
 {meta: title Blind In Love}
 {meta: artist Mel Tillis}
 {meta: composer Bob Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file blindinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You [F]tell me come [Em]over but I [Dm]can’t stay [C]late
@@ -52,3 +55,10 @@
 [Am]You can treat me [C]any way you have a mind [D7]to
 [F]Cause I'm [G7]blind in love [Am]with [C]you
 {end_of_verse}
+
+
+
+
+
+
+

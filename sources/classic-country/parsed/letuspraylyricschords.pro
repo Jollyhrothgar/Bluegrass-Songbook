@@ -1,6 +1,9 @@
 {meta: title Let Us Pray}
 {meta: artist Elvis Presley}
 {meta: composer Buddy Kaye and Ben Weisman}
+{meta: x_source classic-country}
+{meta: x_source_file letuspraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come praise the Lord for He is [F]good
@@ -50,3 +53,9 @@ We'll [G7]rejoice love for [C]all [F]to the [C]Lord
 We'll [G7]rejoice love for [C]all [F]to the [C]Lord
 We'll [F]rejoice [G7]for the [C]Lord
 {end_of_verse}
+
+
+
+
+
+

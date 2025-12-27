@@ -1,6 +1,9 @@
 {meta: title It's Different Now}
 {meta: artist The Oak Ridge Boys}
 {meta: composer David Beatty}
+{meta: x_source classic-country}
+{meta: x_source_file itsdifferentnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I was lost in sin I [F]had no peace within
@@ -36,3 +39,7 @@ So different [G7]now since by His blood I’m [C]whole
 Ole Satan had to flee when [F]Jesus rescued me
 [C]Now it's different [G7]oh so different [C]now
 {end_of_verse}
+
+
+
+

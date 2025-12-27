@@ -1,6 +1,9 @@
 {meta: title Long As We’re Dreaming}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file longasweredreaminglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Long as we're dreaming life is wonderful
@@ -35,3 +38,8 @@ Each way we look we see ending
 [F]Long as we're dreaming we don't [C]realize
 [G7]When we wake up love will be [C]gone
 {end_of_verse}
+
+
+
+
+

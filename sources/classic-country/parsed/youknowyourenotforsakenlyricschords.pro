@@ -1,6 +1,9 @@
 {meta: title You Know You're Not Forsaken}
 {meta: artist Connie Francis}
 {meta: composer Tom Everett}
+{meta: x_source classic-country}
+{meta: x_source_file youknowyourenotforsakenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You know there's [C]somethin' on my [G]mind
@@ -40,3 +43,8 @@
 [G]It's worth the time you've [D7]taken
 [G]And if I'm not forsaken [C]soon you'll be [A7]mine
 {end_of_verse}
+
+
+
+
+

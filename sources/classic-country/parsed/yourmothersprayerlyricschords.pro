@@ -1,6 +1,9 @@
 {meta: title Your Mother's Prayer}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Eddie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file yourmothersprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You lived through the crash on the highway[C7] 
@@ -39,3 +42,8 @@ And [D7]pleads with your Maker up [G7]there
 [C]Now you call yourself lucky and be[C7]lieve that it's [F]true
 But your mother just [C]might have [G7]been prayin' for [F]yo[C]u
 {end_of_verse}
+
+
+
+
+

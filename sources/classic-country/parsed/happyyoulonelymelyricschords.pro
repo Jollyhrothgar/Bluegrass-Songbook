@@ -1,6 +1,9 @@
 {meta: title Happy You Lonely Me}
 {meta: artist Norma Jean}
 {meta: composer Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file happyyoulonelymelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Happy you [C7]sad and [F]lonely me
@@ -33,3 +36,7 @@ I tried concealing all the things I [F]felt inside
 [C]At parties I tell jokes and laugh to [F]lighten up the crowd
 [C]But in my room alone I cry [G7]and call your name out [C]loud
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sha-Marie}
 {meta: artist Wynn Stewart}
 {meta: composer Bozo Darnell and Ben Hall}
+{meta: x_source classic-country}
+{meta: x_source_file shamarielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are stories about a lady always waiting for her man
@@ -37,3 +40,7 @@ Sha-[C]Marie she's my baby and I am [G7]Sha-Marie's [C]man
 {start_of_verse: Verse 4}
 [G7]Sha-[C]Marie is my baby and I am [G7]Sha-Marie's [C]man
 {end_of_verse}
+
+
+
+

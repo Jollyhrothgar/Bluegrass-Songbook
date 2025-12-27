@@ -1,5 +1,8 @@
 {meta: title There's the Door}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file theresthedoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wandered in around midnight
@@ -68,3 +71,14 @@ Would still forgive [C]me
 It's a [D7]step that I just never took [G7]before
 There's the [C]door
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Roses Will Bloom Again}
 {meta: artist Jeff and Sheri Easter}
 {meta: composer Marcia B. Henry}
+{meta: x_source classic-country}
+{meta: x_source_file roseswillbloomagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I planted a little [F]rose bush I [G7]tended it with [C]care
@@ -50,3 +53,9 @@ And [F]kept a promise only He could [G7]keep
 {start_of_verse: Verse 5}
 [F]Roses will [G7]bloom [C]again
 {end_of_verse}
+
+
+
+
+
+

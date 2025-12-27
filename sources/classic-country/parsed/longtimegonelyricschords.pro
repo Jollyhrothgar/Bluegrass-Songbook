@@ -1,6 +1,9 @@
 {meta: title Long Time Gone}
 {meta: artist the Everly Brothers}
 {meta: composer Tex Ritter and Frank Hartford}
+{meta: x_source classic-country}
+{meta: x_source_file longtimegonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You cheated me and made me lonely
@@ -37,3 +40,8 @@ Cause when I leave I’ll be [G7]a long time [C]gone
 Be a long time [F]gone be a long time [C]gone
 Yes when I leave I'll be [G7]a long time [C]gone
 {end_of_verse}
+
+
+
+
+

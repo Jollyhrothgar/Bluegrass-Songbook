@@ -1,6 +1,9 @@
 {meta: title Look On The Good Side}
 {meta: artist Jimmy Dean}
 {meta: composer Jimmy Dean and Richard Shannon}
+{meta: x_source classic-country}
+{meta: x_source_file lookonthegoodsidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [E7]You gotta look look look on the good side
@@ -51,3 +54,10 @@
 [C]You gotta look [A#7]look look look [G7]look on the good [E7]side
 [A7]Cut out [D7]watchin' for the [G]bad
 {end_of_verse}
+
+
+
+
+
+
+

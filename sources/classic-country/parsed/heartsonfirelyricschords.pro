@@ -1,6 +1,9 @@
 {meta: title Hearts On Fire}
 {meta: artist Emmylou Harris}
 {meta: composer by Walter Egan and Tom Guidera}
+{meta: x_source classic-country}
+{meta: x_source_file heartsonfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hearts on [C]fire
@@ -42,3 +45,7 @@ My [D7]love for you brought only [G]misery
 Hearts on [C]fire
 Put [D7]out the flames and set this cold heart [G]free
 {end_of_verse}
+
+
+
+

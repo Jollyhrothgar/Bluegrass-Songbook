@@ -1,6 +1,9 @@
 {meta: title 57 Chevrolet}
 {meta: artist Billie Jo Spears}
 {meta: composer Roger Bowling}
+{meta: x_source classic-country}
+{meta: x_source_file 57chevroletlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come and look at this old faded [D7]photo[G]graph 
@@ -47,3 +50,9 @@ We [G]owe it to that [C]old '[D7]57 Chevro[G]let
 {start_of_verse: Verse 6}
 We owe it to that [C]old '[D7]57 Chevro[G]let 
 {end_of_verse}
+
+
+
+
+
+

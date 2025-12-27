@@ -1,6 +1,9 @@
 {meta: title Shame On Me}
 {meta: artist George Strait}
 {meta: composer Bubba Strait / George Strait}
+{meta: x_source classic-country}
+{meta: x_source_file shameonmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You played me for a [F]fool
@@ -52,3 +55,9 @@ Fool me once shame on [F]you
 You were so easy to [F]believe
 [G7]Fool me twice shame on [C]me[F]  [C]
 {end_of_verse}
+
+
+
+
+
+

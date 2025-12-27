@@ -1,6 +1,9 @@
 {meta: title I Dreamed My Baby Came Home}
 {meta: artist George Jones}
 {meta: composer George Jones and Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file idreamedmybabycamehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I went to sleep last night [D7]lonely and blue
@@ -23,3 +26,5 @@ For just a little while my [D7]loneliness was gone
 Cause I dreamed my baby came [G]home
 Repeat 
 {end_of_verse}
+
+

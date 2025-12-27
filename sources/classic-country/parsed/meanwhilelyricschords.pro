@@ -1,6 +1,9 @@
 {meta: title Meanwhile}
 {meta: artist George Strait}
 {meta: composer Wayland Holyfield and Fred Knobloch}
+{meta: x_source classic-country}
+{meta: x_source_file meanwhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She sparkles she dazzles she lights up the room
@@ -42,3 +45,8 @@ I'll [C]find the way [G7]somehow
 [F]You'll always be [G7]with me but I'll never hold you [C]again
 [A7]Meanwhile
 {end_of_verse}
+
+
+
+
+

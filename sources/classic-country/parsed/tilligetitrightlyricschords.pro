@@ -1,5 +1,8 @@
 {meta: title Till I Get It Right}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file tilligetitrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll just keep on falling in love till I get it [D7]right
@@ -25,3 +28,5 @@ I'm as perfect as I'll ever be in my [F]life
 So I'll just keep on falling in [G7]love
 [C]Till I [F]get it [C]right
 {end_of_verse}
+
+

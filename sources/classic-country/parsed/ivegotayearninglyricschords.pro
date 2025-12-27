@@ -1,5 +1,8 @@
 {meta: title I've Got A Yearning}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotayearninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a yearning [F]to hold you [C]tight
@@ -35,3 +38,7 @@
 [C]Everything I wanna lose [F]keeps on hanging [C]on
 [F]This feeling [C]isn't [F]leaving and by [G7]now it should be [C]gone
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Fare Thee Well}
 {meta: artist Tony Rice}
 {meta: composer Bob Dylan}
+{meta: x_source classic-country}
+{meta: x_source_file faretheewelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh it's fare thee well my [C]darlin' [G]true
@@ -57,3 +60,10 @@ We'll meet another place another [D7]time
 It ain't the [G]leavin' that's a-[C]grievin' me
 But the [D7]true love who's bound to stay be[G]hind
 {end_of_verse}
+
+
+
+
+
+
+

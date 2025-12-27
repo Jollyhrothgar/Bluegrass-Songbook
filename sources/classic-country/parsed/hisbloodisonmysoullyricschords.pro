@@ -1,5 +1,8 @@
 {meta: title His Blood Is On My Soul}
 {meta: artist Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file hisbloodisonmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dear Jesus all my [Em]sins forgave 
@@ -40,3 +43,8 @@ His [G]blood is [D7]on my [G]soul
 I rest securely [Em]in His [C]hand 
 His [G]blood is [D7]on my [G]soul
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Just Can't Let You Say Goodbye}
 {meta: artist Roy Drusky}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcantletyousaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I had not planned  on [D7]seeing [G]you 
@@ -29,3 +32,6 @@ Just like the wind  [D7]without a [G]sail
 Please don’t [C]go and [F]please don’t [C]cry
 I just can't [G]let  [D7]you say [G]goodbye
 {end_of_verse}
+
+
+

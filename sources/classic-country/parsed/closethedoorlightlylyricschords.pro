@@ -1,6 +1,9 @@
 {meta: title Close The Door Lightly}
 {meta: artist The Dillards}
 {meta: composer Eric Andersen}
+{meta: x_source classic-country}
+{meta: x_source_file closethedoorlightlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Turn [D7]around don’t whisper out my [G]name
@@ -29,3 +32,6 @@ Look straight [D7]ahead if you’re [C]walking in the [G]rain
 And find a [D7]life if the path is dark and [G]cold
 And [C]close the door [D7]lightly when you [G]go
 {end_of_verse}
+
+
+

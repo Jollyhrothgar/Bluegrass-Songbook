@@ -1,5 +1,8 @@
 {meta: title Headin' South}
 {meta: artist The Boys From Indiana}
+{meta: x_source classic-country}
+{meta: x_source_file headinsouthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You been cheatin' you been lyin' 
@@ -36,3 +39,6 @@ Too much takin' and no givin'
 This old [C]life ain't worth [G]livin'
 And tonight I'm headin' [D7]South on that old [G]train
 {end_of_verse}
+
+
+

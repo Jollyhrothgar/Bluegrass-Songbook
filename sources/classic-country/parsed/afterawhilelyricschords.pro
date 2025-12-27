@@ -1,6 +1,9 @@
 {meta: title After Awhile}
 {meta: artist Jim Reeves}
 {meta: composer Martha High and Bob Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file afterawhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Af-ter [D7]awhile af-ter a[G]while 
@@ -20,3 +23,5 @@ I'll learn to [C]smile [G]af-[D7]ter [G]awhile
 Af-ter a[D7]while af-ter a[G]while 
 I'll learn to [C]smile [G]af-[D7]ter [G]awhile
 {end_of_verse}
+
+

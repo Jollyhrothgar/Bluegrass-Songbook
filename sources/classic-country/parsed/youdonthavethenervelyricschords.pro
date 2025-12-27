@@ -1,6 +1,9 @@
 {meta: title You Don’t Have The Nerve}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file youdonthavethenervelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Within your heart you shelter the [C]shame that you deserve
@@ -29,3 +32,6 @@ The cards are on the table the [C]truth we can observe
 [G]Today you felt you whole world melt your [C]dreams just won’t conserve
 The [D7]love you’ve lost so pay the cost when you don’t have the [G]nerve
 {end_of_verse}
+
+
+

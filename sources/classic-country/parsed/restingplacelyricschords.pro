@@ -1,6 +1,9 @@
 {meta: title Resting Place}
 {meta: artist Charlie Pride}
 {meta: composer Ricky Arkinson}
+{meta: x_source classic-country}
+{meta: x_source_file restingplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many times our [F]work seems [C]endless
@@ -51,3 +54,9 @@ Where we’ll rest [G7]forever [C]more
 Where we’ll rest [G7]forever [C]more
 [G7]Forever [C]more
 {end_of_verse}
+
+
+
+
+
+

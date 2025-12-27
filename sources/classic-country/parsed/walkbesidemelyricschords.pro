@@ -1,5 +1,8 @@
 {meta: title Walk Beside Me}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file walkbesidemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have fallen by the way side many [F]times dear Lord
@@ -33,3 +36,7 @@ Won’t You [G7]walk walk beside me and guide me safely [C]home
 {start_of_verse: Verse 4}
 Won’t You [G7]walk walk beside me and guide me safely [C]h-[F]o-[C]me
 {end_of_verse}
+
+
+
+

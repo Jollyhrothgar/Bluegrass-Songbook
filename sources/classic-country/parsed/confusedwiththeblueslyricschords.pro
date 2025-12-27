@@ -1,5 +1,8 @@
 {meta: title Confused With The Blues}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file confusedwiththeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everyone that I meet on the street tells me I look so sad
@@ -30,3 +33,7 @@ Slowly losin' my mind that's where these tears I can't find with a turn
 [F]Way down deep in your soul is your love full of spark that still [C]burns
 [G7]Please don't roam come on home mend this broken old heart that still [C]yearns
 {end_of_verse}
+
+
+
+

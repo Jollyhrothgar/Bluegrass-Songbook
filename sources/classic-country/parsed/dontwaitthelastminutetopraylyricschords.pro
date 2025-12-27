@@ -1,6 +1,9 @@
 {meta: title Don't Wait The Last Minute To Pray}
 {meta: artist Kitty Wells}
 {meta: composer Harley Huggins}
+{meta: x_source classic-country}
+{meta: x_source_file dontwaitthelastminutetopraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A great day is coming it's [F]not far a[C]way
@@ -43,3 +46,8 @@ Don't wait until it's too [G7]late
 If [C]your soul's in danger if [F]you've lost your [C]way
 Don't wait the last [G7]minute to [C]pray
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Feel Like Crying}
 {meta: artist Carl Smith}
 {meta: composer Werly Fairburn}
+{meta: x_source classic-country}
+{meta: x_source_file ifeellikecryinglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I feel like [F]cryin' my heart is [C]breakin' 
@@ -34,3 +37,7 @@ I couldn't really believe my own [C]eyes
 [G7]No use [C]denyin' I still love [G7]you 
 I feel like cryin' what else can I [C]do
 {end_of_verse}
+
+
+
+

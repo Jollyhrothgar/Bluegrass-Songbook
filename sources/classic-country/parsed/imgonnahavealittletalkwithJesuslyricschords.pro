@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Have A Little Talk With Jesus}
 {meta: artist Randy Travis}
 {meta: composer Alan Donald Schlitz and Randy Bruce Traywick}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnahavealittletalkwithJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna have a little talk with Jesus when [F]I get home to[C]night
@@ -51,3 +54,9 @@ I'm gonna have a little talk with Jesus [G7]tonight when I get [C]home
 {start_of_verse: Verse 4}
 I'm gonna have a little talk with Jesus [G7]tonight when I get [F]hom[C]e
 {end_of_verse}
+
+
+
+
+
+

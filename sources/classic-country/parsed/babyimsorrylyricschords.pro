@@ -1,6 +1,9 @@
 {meta: title Baby I'm Sorry}
 {meta: artist Ricky Nelson}
 {meta: composer Kenneth E. Scott}
+{meta: x_source classic-country}
+{meta: x_source_file babyimsorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you love me like you say you do baby be true to me
@@ -45,3 +48,8 @@ Oh baby I'm [C]sorry (oh baby I'm sorry)
 For all the wrong I've [G]done (for all the wrong I've done)
 Say you'll [D7]forgive me I know I've done you mighty [G]wrong
 {end_of_verse}
+
+
+
+
+

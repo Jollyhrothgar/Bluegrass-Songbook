@@ -1,6 +1,9 @@
 {meta: title Sweetheart Of The Rodeo}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley and Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file sweetheartoftherodeolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear the sound of [C]sorrow in the [G]wind
@@ -38,3 +41,7 @@ She'll come to town to ride the radi[G]o
 Like she's slidin' down the walls of Jeri[D7]cho
 There goes the sweetheart of the rod[G]eo
 {end_of_verse}
+
+
+
+

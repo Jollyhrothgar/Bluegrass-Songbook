@@ -1,5 +1,8 @@
 {meta: title Let It Be Love}
 {meta: artist Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file letitbelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If time changes everything  [F]but one  baby
@@ -25,3 +28,6 @@ Let it be [C]love  let it be [G7]love
 {start_of_verse: Verse 4}
 [G7]Let it be [C]love   
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Bandits Of Beverly Hills}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file banditsofbeverlyhillslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She knew the moment their eyes came together 
@@ -44,3 +47,8 @@ But the [F]dangers are real and the [C]chances are slim
 And there [G7]ain't nothing cheap 
 But the thrill in the badlands of Beverly [C]Hills
 {end_of_verse}
+
+
+
+
+

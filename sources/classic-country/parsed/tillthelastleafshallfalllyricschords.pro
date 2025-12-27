@@ -1,6 +1,9 @@
 {meta: title Till The Last Leaf Shall Fall}
 {meta: artist Sonny James}
 {meta: composer Jack Rhodes and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file tillthelastleafshallfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well my life is in Thy [G7]hands oh [C]Lord 
@@ -29,3 +32,6 @@ Lift up Thy [G7]voice with [C]Me
 His love will guide [G7]you to His [C]arms 
 When the [F]last leaf shall [G7]fall from [C]the [C][F]tree
 {end_of_verse}
+
+
+

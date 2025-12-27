@@ -1,5 +1,8 @@
 {meta: title No I'll Never Get Over You}
 {meta: artist Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file noillnevergetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could find another girl to [F]kiss me
@@ -41,3 +44,8 @@ No I'll never get over you oh [Dm]no ah ah ah oh [F]no
 No I'll never get over you oh [Am]no my heart tells me so 
 No I'll [G7]never get over [C]you
 {end_of_verse}
+
+
+
+
+

@@ -1,7 +1,10 @@
 {meta: title In the Gravel Yard}
 {meta: artist Blue Highway}
+{meta: x_source manual}
+{meta: x_source_file inthegravelyard.pro}
+{meta: x_enriched 2025-12-26}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 [G]In the gravel yard, with a [C]number for my [G]name
 Making little rocks out of [D]big rocks all [G]day
 Oh, the work is mighty hard [C]in the gravel [G]yard
@@ -15,7 +18,7 @@ You'd probably do the same, so [C]why am I to [G]blame
 Sentenced to the [D]rest of my [G]life
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 [G]In the gravel yard, with a [C]number for my [G]name
 Making little rocks out of [D]big rocks all [G]day
 Oh, the work is mighty hard [C]in the gravel [G]yard
@@ -29,9 +32,13 @@ I sing a little song for the [C]one who done me [G]wrong
 She’s lyin’ in the [D]cold, cold [G]ground
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 [G]In the gravel yard, with a [C]number for my [G]name
 Making little rocks out of [D]big rocks all [G]day
 Oh, the work is mighty hard [C]in the gravel [G]yard
 I'll never be a [D]free man, so they [G]say.
 {end_of_chorus}
+
+
+
+

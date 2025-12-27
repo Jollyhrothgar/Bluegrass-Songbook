@@ -1,6 +1,9 @@
 {meta: title Jukebox In My Mind}
 {meta: artist Alabama}
 {meta: composer Dave Gibson and Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file jukeboxinmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the corner of my mind stands a [D7]jukebox
@@ -45,3 +48,8 @@ And [D7]I can't stop this jukebox in my [G]mind
 {start_of_verse: Verse 4}
 And [D7]I can't stop this jukebox in my [G]mind
 {end_of_verse}
+
+
+
+
+

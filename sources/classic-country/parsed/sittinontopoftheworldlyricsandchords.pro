@@ -1,6 +1,9 @@
 {meta: title Sittin' On Top Of The World}
 {meta: artist Doc Watson}
 {meta: composer Walter Vinson and Lonnie Chatmon}
+{meta: x_source classic-country}
+{meta: x_source_file sittinontopoftheworldlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Was in the spring one sunny [C7]day
@@ -36,3 +39,7 @@ My sweetheart [F]left me Lord she went [C]away
 And now she's gone and I don't' [G7]worry
 [C]Lord I'm sitting on [G7]top of the [C]world
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title In Your Eyes}
 {meta: artist George Morgan}
 {meta: composer Jimmy Fox}
+{meta: x_source classic-country}
+{meta: x_source_file inyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You love [G7]another there's [C]no use [F]pretendin'
@@ -30,3 +33,6 @@
 [C]It's written [G7]so plain in your [C]eyes
 [F]Pretty [G7]blue [C]eyes
 {end_of_verse}
+
+
+

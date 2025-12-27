@@ -1,6 +1,9 @@
 {meta: title Too Much Of You}
 {meta: artist Jack Greene}
 {meta: composer Gene Hood}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got [C]too much of [D7]you still on my [G]mind
@@ -30,3 +33,7 @@ I've got [C]too much of [D7]you still on my [G]mind
 {start_of_verse: Verse 5}
 I've got [C]too much of [D7]you still on my [C]mind[G]
 {end_of_verse}
+
+
+
+

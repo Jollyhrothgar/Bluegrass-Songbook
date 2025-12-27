@@ -1,6 +1,9 @@
 {meta: title Heaven Holds All My Treasures}
 {meta: artist Hank Williams}
 {meta: composer Hank Williams [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file heavenholdsallmytreasureslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some people [G7]struggle for [C]riches
@@ -43,3 +46,8 @@ More precious than diamonds [G7]and gold
 Up [C]there I'll meet my [F]darling
 Whom [C]God has called [G7]back to the [C]fold
 {end_of_verse}
+
+
+
+
+

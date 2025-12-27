@@ -1,6 +1,9 @@
 {meta: title Bury Me Deep}
 {meta: artist Hank Snow}
 {meta: composer Ted Daffan}
+{meta: x_source classic-country}
+{meta: x_source_file burymedeeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tired of life all alone and [F]blue
@@ -29,3 +32,6 @@
 [F]Dig down deep where the ground is cold
 [G7]Dark and cold and all [C]alone
 {end_of_verse}
+
+
+

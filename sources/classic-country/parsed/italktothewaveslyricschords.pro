@@ -1,6 +1,9 @@
 {meta: title I Talk To The Waves Lyrics Chords}
 {meta: artist Slim Whitman}
 {meta: composer Leone Richards}
+{meta: x_source classic-country}
+{meta: x_source_file italktothewaveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Remember the [Am]day when we [D7]walked by the [G7]sea
@@ -33,3 +36,7 @@ Listen in they will [G7]say I love [C]you
 {start_of_verse: Verse 4}
 Listen in they will [G7]say I love [C]you
 {end_of_verse}
+
+
+
+

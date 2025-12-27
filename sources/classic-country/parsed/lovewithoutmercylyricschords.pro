@@ -1,6 +1,9 @@
 {meta: title Love Without Mercy}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Don Pfrimmer and Mike Reid}
+{meta: x_source classic-country}
+{meta: x_source_file lovewithoutmercylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Woke up this [Em]morning and I [C]knew I’d be [D7]late
@@ -48,3 +51,9 @@ Love [Am]without [Em]mer[G]cy
 {start_of_verse: Verse 6}
 I say [C]am I com[G]plaining [D7]mercy [G]no
 {end_of_verse}
+
+
+
+
+
+

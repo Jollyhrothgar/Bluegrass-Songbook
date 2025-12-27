@@ -1,5 +1,8 @@
 {meta: title Right Out of A Clear Blue Sky}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file rightoutofaclearblueskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Right [F]out of a [G7]clear blue [C]sky He [F]walked into my [C]life 
@@ -37,3 +40,7 @@ For [G7]sending me His [C]son
 Right [F]out of a [G7]clear blue [C]sky I found true [F]love 
 And the [G7]best is yet to [C]come 
 {end_of_verse}
+
+
+
+

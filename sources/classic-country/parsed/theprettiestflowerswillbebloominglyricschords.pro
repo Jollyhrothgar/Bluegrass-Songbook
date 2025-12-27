@@ -1,6 +1,9 @@
 {meta: title The Prettiest Flowers Will Be Blooming}
 {meta: artist The Forbes Family}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file theprettiestflowerswillbebloominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know there is a land of beautiful [F]flowers
@@ -33,3 +36,7 @@ On that beautiful [C]morning [G7]by the river of [C]life
 {start_of_verse: Verse 5}
 [F]On that beautiful [C]morning [G7]by the river of [C]life
 {end_of_verse}
+
+
+
+

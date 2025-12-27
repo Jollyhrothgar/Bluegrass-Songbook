@@ -1,6 +1,9 @@
 {meta: title If I Could Climb The Walls Of This Bottle}
 {meta: artist David Allan Coe}
 {meta: composer Don Goodman and Dan Seals}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldclimbthewallsofthisbottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If I could climb the walls of this [C]bottle
@@ -31,3 +34,7 @@ And why I [F]left you for [C]this God [F]only knows[Dm]   [A7]
 {start_of_verse: Verse 5}
 If [G7]I could climb the walls of this [C]bottle
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Willy The Wandering Gypsy And Me}
 {meta: artist Tom T. Hall}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file willythewanderinggypsyandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Three fingers whiskey [F]pleasures the drinker
@@ -48,3 +51,9 @@ Willy the wanderin' [G7]Gypsy and [C]me
 {start_of_verse: Verse 6}
 Would you believe Billy Joe [G7]Shaver and [C]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Everything's Found A Home With Me But You}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file everythingsfoundahomewithmebutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your memory knocked up[D7]on my door this [G]morning
@@ -26,3 +29,6 @@ A million [C]tears wait in the hall they found a [G]home where they can [Em]fall
 {start_of_verse: Verse 3}
 [C]Every[G]thing's [C]found a [G]home with [D7]me but [G]you
 {end_of_verse}
+
+
+

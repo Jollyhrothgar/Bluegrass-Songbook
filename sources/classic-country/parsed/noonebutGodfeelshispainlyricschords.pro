@@ -1,5 +1,8 @@
 {meta: title No One But God Feels His Pain}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file noonebutGodfeelshispainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]See the worn [G]out old shoes the torn navy [G7]blues
@@ -56,3 +59,11 @@ From the look in his eyes
 The world's passed him by
 [Am]Now no one [D7]but God feels [Em]his [G][D7][C]pain
 {end_of_verse}
+
+
+
+
+
+
+
+

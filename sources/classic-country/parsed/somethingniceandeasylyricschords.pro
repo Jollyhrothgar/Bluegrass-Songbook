@@ -1,6 +1,9 @@
 {meta: title Something Nice And Easy}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Joe Allison}
+{meta: x_source classic-country}
+{meta: x_source_file somethingniceandeasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Play me something nice and easy
@@ -41,3 +44,8 @@ Play that good old hurtin' song [G]again
 Help me [D7]hold this pretty lady tight
 Play that good old hurtin' songs [G]again
 {end_of_verse}
+
+
+
+
+

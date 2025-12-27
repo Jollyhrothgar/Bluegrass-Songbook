@@ -1,5 +1,8 @@
 {meta: title Two Pairs of Levis and a Pair of Justin Boots}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file twopairsoflevisandapairofjustinbootslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now me and Ernie Taylor we left [F]Denver yester[C]day
@@ -42,3 +45,8 @@ And the [F]trophy saddle [G7]that I'll never [C]ride
 [F]Two pairs of [G7]levi's and a [C]pair of Justin boots
 She left [F]them cause [G7]neither one's her [C]size
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'd Rather Be An Old Time Christian}
 {meta: artist The Kingsmen}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file idratherbeanoldtimechristianlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In this world I've tried most everything
@@ -58,3 +61,13 @@ I'm happy now to say there's nothing like religion
 In the [D7]good old fashioned [G7]way
 I'm walking in the old time way and I want the [C]world to know
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

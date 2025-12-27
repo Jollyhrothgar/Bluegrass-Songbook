@@ -1,6 +1,9 @@
 {meta: title Till I Get Used To The Pain}
 {meta: artist John Anderson}
 {meta: composer Kent M. Robbins and Todd Cerney}
+{meta: x_source classic-country}
+{meta: x_source_file tilligetusedtothepainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some days I have to [Em]cry  [F]some nights I have to [C]drink myself to [G7]sleep
@@ -28,3 +31,6 @@ I [Am]know you're [F]never comin' back [C]so I just cry these tears in [F]vain
 [C]Till your memory goes [G7]away or I get used to the [C]pain
 Till your memory goes [G7]away or I get used to the [F]pai[C]n
 {end_of_verse}
+
+
+

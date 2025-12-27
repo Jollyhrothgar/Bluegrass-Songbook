@@ -1,6 +1,9 @@
 {meta: title Anybody Else's Heart But Mine}
 {meta: artist Tracy Byrd}
 {meta: composer Wayland Holyfield and Kent M. Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file anybodyelsesheartbutminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]She's history don't ruin good beer 
@@ -45,3 +48,7 @@ Anybody [C]else's heart but [D7]mine
 [G]If it was anybody [Em]else's blues
 [C]If it was any[D7]body else's [C]heart [D7]but [G]mine
 {end_of_verse}
+
+
+
+

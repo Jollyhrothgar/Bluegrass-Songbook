@@ -1,6 +1,9 @@
 {meta: title Little Cabin Home On The Hill}
 {meta: artist Bill Monroe}
 {meta: composer Lester Flatt and Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file littlecabinhomeonthehilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm alone [F]without you my [C]dear
@@ -43,3 +46,8 @@ And [Am]left me [D7]here all a[G7]lone
 Just [C]listen to the rain [F]beyond my window [C]pane
 In our [Am]little cabin [G7]home on the [C]hill
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ace In The Hole}
 {meta: artist George Strait}
 {meta: composer Dennis R. Adkins}
+{meta: x_source classic-country}
+{meta: x_source_file aceintheholelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've got to have an ace in the hole
@@ -50,3 +53,9 @@ You've [A7]got to have an [D7]ace in the [G]hole
 No [C]matter what you do no [G]matter where you [E7]go
 You've [A7]got to have an [D7]ace in the [G]hole
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It Keeps Raining}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew, Antoine Domino, Robert Guidry}
+{meta: x_source classic-country}
+{meta: x_source_file itkeepsraininglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It keeps raining and raining
@@ -26,3 +29,6 @@ She left me reeling and rocking
 {start_of_verse: Verse 4}
 repeat
 {end_of_verse}
+
+
+

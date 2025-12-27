@@ -1,6 +1,9 @@
 {meta: title Things God Gave Me}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file thingsGodgavemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The breeze through the [Am]window the [C]light out at [G7]sea
@@ -29,3 +32,7 @@ He [F]preaches thanks[Em]giving then [F]gives thanks to [Em]none[G7]
 The [F]only things [C]dear to me are the [F]things God gave [C]me
 Are the [D]things God gave [C]me 
 {end_of_verse}
+
+
+
+

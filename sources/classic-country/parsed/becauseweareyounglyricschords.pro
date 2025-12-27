@@ -1,6 +1,9 @@
 {meta: title Because We Are Young}
 {meta: artist Mac Wiseman}
 {meta: composer Howard Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file becauseweareyounglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Because we are young they say I’ll [G7]forget you
@@ -29,3 +32,6 @@ When they [D7]realize that our love is [G7]real
 So [C]please hold me tight and [C7]just for to[F]night
 Don’t say we’re not [C]right [G7]because we are [C]young
 {end_of_verse}
+
+
+

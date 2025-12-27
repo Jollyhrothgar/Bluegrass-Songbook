@@ -1,6 +1,9 @@
 {meta: title I.O.U.}
 {meta: artist Lee Greenwood}
 {meta: composer Kerry Chater and Austin Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file IOUlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You believe that I've [Em]changed your life forever
@@ -29,3 +32,6 @@ And [G]nights of honest lov[Em]ing that [Am]time can't take away
 [D7]And I.O.[G]U. more than [C]life now more than [D7]ever
 I [G]know that it's the [Em]sweetest debt I'll [Am]ever [D7]have to [G]pay
 {end_of_verse}
+
+
+

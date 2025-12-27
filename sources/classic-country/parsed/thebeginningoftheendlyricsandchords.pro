@@ -1,6 +1,9 @@
 {meta: title The Beginning Of The End}
 {meta: artist Loretta Lynn}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file thebeginningoftheendlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](I [G]know we've reached the [C]beginning of the [G]end)
@@ -24,3 +27,5 @@ I don't know [G]where or why or when
 [C]I [G]know we've reached the [C]beginning of the [G]end
 [C]I [G]know we've reached the [C]beginning of the [G]end
 {end_of_verse}
+
+

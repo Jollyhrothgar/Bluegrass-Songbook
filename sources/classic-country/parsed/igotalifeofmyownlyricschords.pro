@@ -1,5 +1,8 @@
 {meta: title I Got A Life Of My Own}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file igotalifeofmyownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I said I got a [D7]life of my [G]own
@@ -35,3 +38,6 @@ I said I got a [D7]life of my [G]own
 I got a [D7]life of my [G]own
 I got a [D7]life of my [G]own
 {end_of_verse}
+
+
+

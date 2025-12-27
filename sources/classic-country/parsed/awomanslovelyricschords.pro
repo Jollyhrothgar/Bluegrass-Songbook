@@ -1,5 +1,8 @@
 {meta: title A Woman's Love}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file awomanslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's nothin' like a [G7]woman's love
@@ -28,3 +31,6 @@ For [F]if you found a love young and [C]new
 There's nothin' like a [G7]woman’s love
 So be thankful your love can be [C]true
 {end_of_verse}
+
+
+

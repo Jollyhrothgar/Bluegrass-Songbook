@@ -1,6 +1,9 @@
 {meta: title An Old Pair Of Shoes}
 {meta: artist Randy Travis}
 {meta: composer Jerry Foster, A J Masters, Johnny Morris}
+{meta: x_source classic-country}
+{meta: x_source_file anoldpairofshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've walked a million miles across this floor
@@ -39,3 +42,7 @@ And I'm [A]really [A7]feeling [Gm]used
 And I'm [A]really [A7]feeling [Gm]used
 [C]I'm just like an old pair of [F]shoes
 {end_of_verse}
+
+
+
+

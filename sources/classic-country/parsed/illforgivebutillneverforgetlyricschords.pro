@@ -1,5 +1,8 @@
 {meta: title I'll Forgive But I'll Never Forget}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file illforgivebutillneverforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It wasn't [D7]easy and I [G]know it
@@ -35,3 +38,7 @@ I [C]guess it comes with [G]time
 But [C]even at best there's [G]one thing I know
 I'll [D7]forgive but I'll never [G]forget
 {end_of_verse}
+
+
+
+

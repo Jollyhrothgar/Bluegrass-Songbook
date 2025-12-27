@@ -1,5 +1,8 @@
 {meta: title You Darling You Lyrics and Chords}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file youdarlingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somewhere where dim lights are [C]burning
@@ -28,3 +31,6 @@
 [C]And someone has proved untrue
 [D7]You darling [G]you  [D7]you darling [G]you
 {end_of_verse}
+
+
+

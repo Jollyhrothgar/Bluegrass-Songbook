@@ -1,6 +1,9 @@
 {meta: title Memories Of Old Santa Fe}
 {meta: artist Randy Travis}
 {meta: composer Roger Brown and Rick Peoples}
+{meta: x_source classic-country}
+{meta: x_source_file memoriesofoldsantafelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As blue shadows [G7]fall a[C]cross the canyon [C7]wall
@@ -37,3 +40,8 @@ As [D7]I kissed her softly and [Dm]then rode a[G7]way
 She's [A7]waitin' there I know but for [D7]now all I can hold
 Are my [G7]memories of old Santa [C]Fe
 {end_of_verse}
+
+
+
+
+

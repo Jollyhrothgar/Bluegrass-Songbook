@@ -1,6 +1,9 @@
 {meta: title I Keep Looking Back}
 {meta: artist Ray Price}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file ikeeplookingbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I keep [C]looking back over my [G]shoulder
@@ -27,3 +30,6 @@ But the [D7]footsteps of a fool is all I [G]see
 I keep [C]looking back over my [G]shoulder
 Hoping [D7]someday I'll see you smiling and looking back at [G]me
 {end_of_verse}
+
+
+

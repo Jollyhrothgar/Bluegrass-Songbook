@@ -1,6 +1,9 @@
 {meta: title I Need You}
 {meta: artist Ricky Nelson}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file ineedyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you should ever think of leaving me don't let it go too [D7]far
@@ -30,3 +33,6 @@
 [G]To love me forever [D7]cause I need you honest I [G]do
 [D7]I need you honest I [G]do
 {end_of_verse}
+
+
+

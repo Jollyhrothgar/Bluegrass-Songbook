@@ -1,6 +1,9 @@
 {meta: title Whistle Ain't Made Of Gold}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene Martin}
+{meta: x_source classic-country}
+{meta: x_source_file whistleaintmadeofgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well my train don't run on silver rails
@@ -72,3 +75,12 @@ Cause my train will run on [G]silver rails
 And my [D7]whistle will be [G]gold
 Repeat last two verses
 {end_of_verse}
+
+
+
+
+
+
+
+
+

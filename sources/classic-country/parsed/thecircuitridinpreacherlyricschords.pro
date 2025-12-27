@@ -1,6 +1,9 @@
 {meta: title The Circuit Ridin' Preacher}
 {meta: artist Jim Ed Brown}
 {meta: composer Tim Spencer}
+{meta: x_source classic-country}
+{meta: x_source_file thecircuitridinpreacherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rock of ages [F]cleft for [C]me let me hide [G7]myself in [C]Thee
@@ -34,3 +37,7 @@ His [F]truth is [G7]marching [C]on [G7]
 [C]Glory glory hallelujah [F]glory glory halle[C]lujah
 Glory glory halle[Am]lujah His [F]truth is [G7]marching [C]on
 {end_of_verse}
+
+
+
+

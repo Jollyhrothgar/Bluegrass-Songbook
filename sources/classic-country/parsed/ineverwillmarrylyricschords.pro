@@ -1,6 +1,9 @@
 {meta: title I Never Will Marry}
 {meta: artist Hank Snow}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file ineverwillmarrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One morning as I [G7]rambled down by [C]the [F]seashore
@@ -27,3 +30,6 @@
 [G7]The shells in the ocean [C]shall be my death [F]bed
 [C]While the fish in deep [G7]water swim over my [C]head
 {end_of_verse}
+
+
+

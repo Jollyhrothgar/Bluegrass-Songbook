@@ -1,6 +1,9 @@
 {meta: title Don't Blame It On Your Wife}
 {meta: artist Ricky Nelson}
 {meta: composer Terence Boylan}
+{meta: x_source classic-country}
+{meta: x_source_file dontblameitonyourwifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She works so hard all day [G7]long
@@ -47,3 +50,8 @@
 [A]Buy her a nightgown [C]instead
 [A]Buy her a tractor [C]instead
 {end_of_verse}
+
+
+
+
+

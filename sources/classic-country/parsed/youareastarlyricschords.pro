@@ -1,5 +1,8 @@
 {meta: title You Are A Star}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file youareastarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You are [G]wonderful [C] you are [G]great
@@ -20,3 +23,4 @@ And you are marvelous [C] you're so [G]fine
 You are beautiful [C] yes you [G]are
 [D7]You know what you are you are a [G]star
 {end_of_verse}
+

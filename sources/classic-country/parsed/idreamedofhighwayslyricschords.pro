@@ -1,5 +1,8 @@
 {meta: title I Dreamed Of Highways Lyrics and Chords}
 {meta: artist Hoyt Axton}
+{meta: x_source classic-country}
+{meta: x_source_file idreamedofhighwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was [C]young I dreamed of [G]highways
@@ -44,3 +47,9 @@ It's all [D7]gone  [C]and I don't [G]care
 {start_of_verse: Verse 5}
 It's all [D7]gone  [C]and I don't [G]care
 {end_of_verse}
+
+
+
+
+
+

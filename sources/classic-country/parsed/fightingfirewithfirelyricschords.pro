@@ -1,6 +1,9 @@
 {meta: title Fighting Fire With Fire}
 {meta: artist Gene Watson}
 {meta: composer Bobby Harden}
+{meta: x_source classic-country}
+{meta: x_source_file fightingfirewithfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You came here on purpose in front of me Diana
@@ -50,3 +53,9 @@ I was foolish Diana for taking advantage
 [F]But at least I was hidin' and trying [C]Diana
 [G7]To keep it from breaking your [C]heart
 {end_of_verse}
+
+
+
+
+
+

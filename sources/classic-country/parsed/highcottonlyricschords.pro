@@ -1,6 +1,9 @@
 {meta: title High Cotton}
 {meta: artist Alabama}
 {meta: composer Scott Anders &amp; Roger Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file highcottonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 High Cotton
@@ -51,3 +54,8 @@ And [G]felt the love in mama's [D7]hands
 [C]Taught us how to look ahead
 Now [G]looking back I [D7]think I under[G]stand
 {end_of_verse}
+
+
+
+
+

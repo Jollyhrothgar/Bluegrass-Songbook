@@ -1,6 +1,9 @@
 {meta: title Redneck Girl}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file redneckgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A redneck girl likes to [C]cruise in daddy's [D7]pickup [G]truck[C]
@@ -45,3 +48,9 @@ And I [G]pray that someday I will [C]find me a [D7]redneck [G]girl[D7]   [G]  [D
 [G]Gimme a gimme a [C]gimme a [D7]redneck [G]girl [C]  [D7]
 [G]Gimme a gimme a [C]gimme a [D7]redneck [G]girl[C]  [D7]
 {end_of_verse}
+
+
+
+
+
+

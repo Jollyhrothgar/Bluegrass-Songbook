@@ -1,5 +1,8 @@
 {meta: title Pictures Don't Lie}
 {meta: artist Billy Ray Cyrus}
+{meta: x_source classic-country}
+{meta: x_source_file picturesdontlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Pictures don't [C]lie  [F]no matter what you [C]say
@@ -37,3 +40,7 @@ When you couldn't [C]run  [F]and you couldn't [C]hide [F]
 This time's your [C]last time [G7]cause pictures don't [C]lie [F]
 This time's your [C]last time [G7]cause pictures don't [F]l--i[C]e
 {end_of_verse}
+
+
+
+

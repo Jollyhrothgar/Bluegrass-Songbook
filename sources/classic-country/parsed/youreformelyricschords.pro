@@ -1,6 +1,9 @@
 {meta: title You're For Me}
 {meta: artist Buck Owens}
 {meta: composer Tommy Collins and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file youreformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I saw you walking the [C]avenue
@@ -29,3 +32,6 @@ I [C]love you so [G]you’re for [D7]me
 [G]I knew by the swing you would wear my wedding [C]ring
 [D7]Now we’ll have some little things [C]cause [D7]you’re for [G]me
 {end_of_verse}
+
+
+

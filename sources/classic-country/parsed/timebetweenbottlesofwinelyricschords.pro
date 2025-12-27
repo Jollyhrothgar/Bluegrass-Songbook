@@ -1,6 +1,9 @@
 {meta: title Time Between Bottles Of Wine}
 {meta: artist Waylon Jennings}
 {meta: composer Jimmie Lee Morris}
+{meta: x_source classic-country}
+{meta: x_source_file timebetweenbottlesofwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With fire in my veins I [A]laid down to rest
@@ -51,3 +54,9 @@ The time between [Am]bottles of [D7]wine
 The time between [Am]bottles of [D7]wine 
 The time between [Am]bottles of [D7]wine 
 {end_of_verse}
+
+
+
+
+
+

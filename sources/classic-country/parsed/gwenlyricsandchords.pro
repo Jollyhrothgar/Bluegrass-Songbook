@@ -1,6 +1,9 @@
 {meta: title Gwen}
 {meta: artist Tommy Overstreet}
 {meta: composer Ricci Mareno and Jerry Gillespie}
+{meta: x_source classic-country}
+{meta: x_source_file gwenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gwen  [C][F][G7]congrat-ula-tions
@@ -20,3 +23,5 @@
 [C]Gwen  [G7]how can I [F]face [C]her
 [F]When [C]I let you win and I [G7]fell into sin [C]tonight
 {end_of_verse}
+
+

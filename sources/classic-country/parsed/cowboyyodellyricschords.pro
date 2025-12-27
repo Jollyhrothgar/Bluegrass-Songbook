@@ -1,6 +1,9 @@
 {meta: title Cowboy Yodel}
 {meta: artist Wanda Jackson}
 {meta: composer Carson J. Robison}
+{meta: x_source classic-country}
+{meta: x_source_file cowboyyodellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a [C]cowboy that I know riding in the [G]rodeo
@@ -48,3 +51,11 @@ And he started to yodel
 {start_of_verse: Verse 9}
 Repeat yodel x2
 {end_of_verse}
+
+
+
+
+
+
+
+

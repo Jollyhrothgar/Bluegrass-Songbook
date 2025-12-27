@@ -1,6 +1,9 @@
 {meta: title Santa And The Kids}
 {meta: artist Charley Pride}
 {meta: composer Sue Lane and Charley Pride}
+{meta: x_source classic-country}
+{meta: x_source_file santaandthekidslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Christmas time is here again like every year [D7]before
@@ -30,3 +33,6 @@ And your presents [G]he will bring [D7]on this Christmas [G]Day
 {start_of_verse: Verse 3}
 [C]And your presents [G]he will bring [D7]on this Christmas [G]Day
 {end_of_verse}
+
+
+

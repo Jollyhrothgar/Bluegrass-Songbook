@@ -1,6 +1,9 @@
 {meta: title Wine Take Me Away}
 {meta: artist Merle Haggard}
 {meta: composer Tommy Collins and Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file winetakemeawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Warm red wine you know that place where you take me some times
@@ -29,3 +32,6 @@ When my life becomes a grind and when I'm weary and tired
 [C]It's my life and I wanna live it it's [F]my will and I wanna give [C]it
 [G7]Help me friend of mine wine take me [C]away
 {end_of_verse}
+
+
+

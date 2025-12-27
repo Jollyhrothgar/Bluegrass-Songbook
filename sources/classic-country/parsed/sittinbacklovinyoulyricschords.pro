@@ -1,6 +1,9 @@
 {meta: title Sittin' Back Lovin' You}
 {meta: artist Anne Murray}
 {meta: composer John Sebastian}
+{meta: x_source classic-country}
+{meta: x_source_file sittinbacklovinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you will wonder [C]what I'm gonna do
@@ -52,3 +55,9 @@ I couldn't quite till I could see of you
 [A7]But I'm just sittin' [D7]back sittin' here lovin' [G]you
 [A7]But I'm just sittin' [D7]back sittin' here lovin' [G]you
 {end_of_verse}
+
+
+
+
+
+

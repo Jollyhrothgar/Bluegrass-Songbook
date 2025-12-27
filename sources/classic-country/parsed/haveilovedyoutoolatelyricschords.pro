@@ -1,6 +1,9 @@
 {meta: title Have I Loved You Too Late}
 {meta: artist Rhonda Vincent}
 {meta: composer Randall Hilton}
+{meta: x_source classic-country}
+{meta: x_source_file haveilovedyoutoolatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You were [G]somebody [Bm]special in this [C]heart of [G]mine
@@ -33,3 +36,7 @@ Oh [D7]darling have I loved you too [G]late
 {start_of_verse: Verse 5}
 Oh my [D7]darling have I loved you too [G]late
 {end_of_verse}
+
+
+
+

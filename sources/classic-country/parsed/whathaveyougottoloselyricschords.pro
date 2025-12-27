@@ -1,5 +1,8 @@
 {meta: title What Have You Got To Lose}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file whathaveyougottoloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I've been in some bars where they serve it in big silver
@@ -70,3 +73,12 @@ What have you got to [C]lose
 Try [G7]women and booze and the cigarette blues
 What have you got to [C]lose
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It Happened Last Night}
 {meta: artist Connie Francis}
 {meta: composer Leonard Whitcup and Earl Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file ithappenedlastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh it happened last night as we sat in the movies
@@ -42,3 +45,8 @@ The way all lovers [C]do
 {start_of_verse: Verse 4}
 [G7]Oh it happened last [C]night [G7] at the movies with [C]you
 {end_of_verse}
+
+
+
+
+

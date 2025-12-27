@@ -1,6 +1,9 @@
 {meta: title That's What Lonesome Is}
 {meta: artist Jean Shepard}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatlonesomeislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All night long I stayed away and [D7]stared out into [G]space
@@ -33,3 +36,7 @@
 [G7]I don't know how much longer I can live and hurt like [C]this
 [G]I'm almost [C]dead already that's [D7]what lonesome [G]is
 {end_of_verse}
+
+
+
+

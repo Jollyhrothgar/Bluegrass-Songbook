@@ -1,6 +1,9 @@
 {meta: title A Woman In Love}
 {meta: artist Norma Jean}
 {meta: composer Charles Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file awomaninlovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A little bit of tenderness a [D7]little bit of lovin' care
@@ -69,3 +72,12 @@ A woman in [C]love
 The [F]first thing you know you got [G7]yourself 
 A woman in [C]love
 {end_of_verse}
+
+
+
+
+
+
+
+
+

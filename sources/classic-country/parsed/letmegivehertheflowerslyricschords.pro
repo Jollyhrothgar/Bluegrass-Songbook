@@ -1,6 +1,9 @@
 {meta: title Let Me Give Her The Flowers}
 {meta: artist Lefty Frizzell}
 {meta: composer Gordon Terry}
+{meta: x_source classic-country}
+{meta: x_source_file letmegivehertheflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let me have some pretty flowers for a [D7]lady
@@ -33,3 +36,7 @@ I can [C]see my momma [D7]smile when I get [G]home
 {start_of_verse: Verse 4}
 I can [C]see my momma [D7]smile when I get [G]home
 {end_of_verse}
+
+
+
+

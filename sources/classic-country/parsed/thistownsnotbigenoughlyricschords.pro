@@ -1,6 +1,9 @@
 {meta: title This Town's Not Big Enough}
 {meta: artist Merle Haggard}
 {meta: composer Liz Anderson and Donna Austin}
+{meta: x_source classic-country}
+{meta: x_source_file thistownsnotbigenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Today's the day I leave [C]forever
@@ -34,3 +37,6 @@ I'll drop the dreams I've held so tightly
 [F]In every window pane your face is all I [C]see
 [G7]This town's not big enough to hold both you and [C]me
 {end_of_verse}
+
+
+

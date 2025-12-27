@@ -1,5 +1,8 @@
 {meta: title More Than My Old Guitar}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file morethanmyoldguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]More than my [G7]old [C]guitar
@@ -35,3 +38,7 @@
 [F]I love my old guitar like [C]God loves the [F]poor
 [C]But I love you [G7]e-ven [C]more
 {end_of_verse}
+
+
+
+

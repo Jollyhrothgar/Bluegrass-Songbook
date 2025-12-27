@@ -1,5 +1,8 @@
 {meta: title I Want To Go Where No One Knows Me}
 {meta: artist Jean Shepard}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttogowherenooneknowsmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want to go where no one knows me
@@ -29,3 +32,6 @@ Where I can [C]start my life [G]anew
 I want to go [C]where no one knows [G]me
 No one will ask  [D7]me about [G]you
 {end_of_verse}
+
+
+

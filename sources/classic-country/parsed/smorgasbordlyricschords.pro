@@ -1,6 +1,9 @@
 {meta: title Smorgasbord}
 {meta: artist Elvis Presley}
 {meta: composer Sid Tepper and Roy C. Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file smorgasbordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some like their women short some like 'em tall
@@ -45,3 +48,10 @@ I'm just wild about [C]smorgasbord
 I got a cravin' for [G]smorgasbord
 A [D7]little kiss here a [C]little kiss there that's [G]smorgasbord
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title All American Kid}
 {meta: artist Garth Brooks}
 {meta: composer Terry McBride, Brice Long, Craig Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file allamericankidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Was the captain of the team his [G7]senior [C]year
@@ -55,3 +58,10 @@ Got his [C]picture in the paper and the [A#7]headline [F]read
 Yeah this [Am]song is for those who [G7]never [F]did
 [Am]Come back All [G7]American [C]kids
 {end_of_verse}
+
+
+
+
+
+
+

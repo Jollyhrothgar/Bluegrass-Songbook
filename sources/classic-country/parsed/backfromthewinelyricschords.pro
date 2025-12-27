@@ -1,6 +1,9 @@
 {meta: title Back From The Wine}
 {meta: artist Johnny Bush}
 {meta: composer Larry Kingston and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file backfromthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When life gets to [C]rough you [D7]reach for the [G]crutch
@@ -33,3 +36,7 @@ And [C]she led me [D7]back from the [G]wine
 {start_of_verse: Verse 5}
 [C]She led me [D7]back from the [C]win[G]e
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Houston Dallas Or San Antone}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file houstondallasorsanantonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got [D7]drunk in Austin [Em]Texas I missed [C]my plane in North [G]Carolina
@@ -46,3 +49,10 @@ Tell Dallas there's a [Am]change in plans I [D7]won't be comin' [G]home
 Say goodbye to [Am]Houston for me [D7]give my best to San [G][C]Antone
 Tell Dallas there's a [Am]change in plans I [D7]won't be comin' [G]home
 {end_of_verse}
+
+
+
+
+
+
+

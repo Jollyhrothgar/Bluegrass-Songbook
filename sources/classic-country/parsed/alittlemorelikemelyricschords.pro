@@ -1,6 +1,9 @@
 {meta: title A Little More Like Me}
 {meta: artist Kenny Rogers}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file alittlemorelikemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was an April night and I was right been out on the [G7]town
@@ -36,3 +39,7 @@ If he [D7]were a little more like [G]me
 And I'm [C]sure I [B7]would have [Am]liked him more
 If he [D7]were a little more like [G]me
 {end_of_verse}
+
+
+
+

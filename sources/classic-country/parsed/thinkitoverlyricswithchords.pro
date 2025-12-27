@@ -1,6 +1,9 @@
 {meta: title Think It Over}
 {meta: artist Steve Earl}
 {meta: composer Steve Earle and Richard Rodney Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file thinkitoverlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're here you're [G7]gone I'm [F]still hangin' [G7]on
@@ -30,3 +33,6 @@ And [C]if you [G7]knew what [F]I go [G7]through
 [F]You'd think it [G7]over 
 [F]You'd think it [G7]over [F]you'd think it [G7]over [C]too
 {end_of_verse}
+
+
+

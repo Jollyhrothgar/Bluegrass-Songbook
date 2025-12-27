@@ -1,6 +1,9 @@
 {meta: title Good Morning Dear}
 {meta: artist Don Gibson}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file goodmorningdearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Now were the [C]nights any [Em]sweeter 
@@ -30,3 +33,6 @@ And the [G7]mind grown [F]accustomed to
 [G7]Hearing her say good morning [C]dear[Em]   [Am]
 Repeat last
 {end_of_verse}
+
+
+

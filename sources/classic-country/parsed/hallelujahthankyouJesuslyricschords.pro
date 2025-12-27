@@ -1,6 +1,9 @@
 {meta: title Hallelujah Thank You Jesus}
 {meta: artist B.J. Thomas}
 {meta: composer Paul Davis}
+{meta: x_source classic-country}
+{meta: x_source_file hallelujahthankyouJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ha-[F]lle-[G7]luj-[C]ah
@@ -49,3 +52,9 @@ In [G7]every way we [C]can
 {start_of_verse: Verse 6}
 [C]Ha-[F]lle-[G7]luj-[C]ah
 {end_of_verse}
+
+
+
+
+
+

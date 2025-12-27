@@ -1,6 +1,9 @@
 {meta: title Ain't Misbehavin'}
 {meta: artist Hank Williams Jr.}
 {meta: composer Fats Waller, Harry Brooks. Amdu Razaf}
+{meta: x_source classic-country}
+{meta: x_source_file aintmisbehavinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No one to talk with [Dm]all by [G7]myself
@@ -39,3 +42,8 @@
 [C]I'm home about [C7]eight just me [F]and my [Fm]radio
 [C]Ain't [Em]misbehavin'  [G7][Dm]savin' my love [F][C]for [G7][C]you
 {end_of_verse}
+
+
+
+
+

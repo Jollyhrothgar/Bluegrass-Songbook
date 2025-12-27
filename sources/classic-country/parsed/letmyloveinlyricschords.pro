@@ -1,6 +1,9 @@
 {meta: title Let My Love In}
 {meta: artist Charley Pride}
 {meta: composer John Riggs}
+{meta: x_source classic-country}
+{meta: x_source_file letmyloveinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll stand by your si[G7]de I'll always [F]love [C]you
@@ -36,3 +39,7 @@ So won't you [F]let my love [C]in
 I'll live just for [G]you
 So won't you [F]let my love [C]in
 {end_of_verse}
+
+
+
+

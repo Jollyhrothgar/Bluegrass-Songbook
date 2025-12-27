@@ -1,6 +1,9 @@
 {meta: title Honey Won’t You Call Me}
 {meta: artist Hank Williams Jr.}
 {meta: composer Edmund Willareal and Wanda Watkins}
+{meta: x_source classic-country}
+{meta: x_source_file honeywontyoucallmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can see the home fire burning and the [C]kids playing [D7]in the [G]yard
@@ -36,3 +39,7 @@ It [C]gets so lonely on the [G]road
 If I heard your [C]sweet [Bm]voice oh [F]darlin’ 
 I’d [D7]turn around and come back [G]home
 {end_of_verse}
+
+
+
+

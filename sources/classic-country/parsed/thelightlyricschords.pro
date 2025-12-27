@@ -1,6 +1,9 @@
 {meta: title The Light}
 {meta: artist Emmylou Harris}
 {meta: composer Kieran Kane and Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file thelightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I see the light I see the light at the end of the tunnel
@@ -36,3 +39,7 @@
 [Am]I see the light it's the light at the end that I run to
 [G7]And the light darlin' is [Am]you
 {end_of_verse}
+
+
+
+

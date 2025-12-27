@@ -1,6 +1,9 @@
 {meta: title Gonna Get There Soon}
 {meta: artist The Country Gentlemen}
 {meta: composer Martha Adcock}
+{meta: x_source classic-country}
+{meta: x_source_file gonnagettheresoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the shelter of the mountain I will rest my weary burdens
@@ -47,3 +50,9 @@ Then I'll follow Him I'll [D7]get a[G]cross
 {start_of_verse: Verse 5}
 Then I'll [C]follow Him I'll [D7]get a[G]cross
 {end_of_verse}
+
+
+
+
+
+

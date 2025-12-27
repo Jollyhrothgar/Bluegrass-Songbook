@@ -1,5 +1,8 @@
 {meta: title One Look at Heaven}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file onelookatheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You were my one look at [C]heaven 
@@ -35,3 +38,7 @@ I was [G7]closer than I've ever been [C]before
 [F]You were my one look at [C]heaven 
 But you [G7]left me just outside the [C]door
 {end_of_verse}
+
+
+
+

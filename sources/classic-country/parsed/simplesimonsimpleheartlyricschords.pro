@@ -1,6 +1,9 @@
 {meta: title Simple Simon Simple Heart}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson, Billy Gray, Bud Auge}
+{meta: x_source classic-country}
+{meta: x_source_file simplesimonsimpleheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Simple [G]simon simple heart you met a [C]girlie [D7]at the fair
@@ -29,3 +32,6 @@ You didn't [A7]know it was a game couldn't [D7]tell that it was wrong
 Simple [G]simon simple heart let me [C]tell you [D7]what to do
 Simple [G]simon simple heart now you'd [C]better [D7]forget her like she [G]forgot you
 {end_of_verse}
+
+
+

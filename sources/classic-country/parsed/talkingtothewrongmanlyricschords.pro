@@ -1,6 +1,9 @@
 {meta: title Talking To the Wrong Man}
 {meta: artist Michael Martin Murphey}
 {meta: composer Michael Martin Murphey}
+{meta: x_source classic-country}
+{meta: x_source_file talkingtothewrongmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey daddy I've got a [F]problem
@@ -58,3 +61,10 @@
 [G7]Still ain't got them women figured [C]out
 [G7]Still ain't got them women figured [C]out
 {end_of_verse}
+
+
+
+
+
+
+

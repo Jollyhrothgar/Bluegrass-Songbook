@@ -1,6 +1,9 @@
 {meta: title Jesus Is A Good Ole Boy}
 {meta: artist Cal Smith}
 {meta: composer Hank Cochran and Hollis Rudolph DeLaughter}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusisagoodoleboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To old folks Jesus is a [F]place to [C]go
@@ -36,3 +39,7 @@
 [G7]Heaven's only a whisper [C]away
 [G7]Cause to me Jesus is a good ole [C]boy
 {end_of_verse}
+
+
+
+

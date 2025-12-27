@@ -1,6 +1,9 @@
 {meta: title Till My Get up Has Got Up and Gone}
 {meta: artist Ernest Tubb}
 {meta: composer Bud Logan and Charles Snoddy}
+{meta: x_source classic-country}
+{meta: x_source_file tillmygetuphasgotupandgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna have some fun while I can
@@ -51,3 +54,9 @@ Till my getup has [D7]got up and [G]gone
 {start_of_verse: Verse 5}
 Till my getup has [D7]got up and [G]gone
 {end_of_verse}
+
+
+
+
+
+

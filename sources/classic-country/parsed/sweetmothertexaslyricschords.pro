@@ -1,6 +1,9 @@
 {meta: title Sweet Mother Texas}
 {meta: artist Eddy Raven}
 {meta: composer Eddy Raven and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file sweetmothertexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You reared me and raised me I'm [F]your native [C]son
@@ -33,3 +36,7 @@ Sweet Mother Texas [G7]rock-a-bye [C]me
 {start_of_verse: Verse 5}
 Sweet Mother Texas [G7]rock-a-bye [C]me
 {end_of_verse}
+
+
+
+

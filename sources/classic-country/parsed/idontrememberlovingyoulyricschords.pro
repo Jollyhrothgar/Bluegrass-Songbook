@@ -1,6 +1,9 @@
 {meta: title I Don't Remember Loving You}
 {meta: artist John Conlee}
 {meta: composer Harlan Howard &amp; Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file idontrememberlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't [G7]remember loving [C]you
@@ -69,3 +72,10 @@ And I don't recall the things
 [G7]Well I just don't see how that could be true
 [C]Cause I don't remember loving you
 {end_of_verse}
+
+
+
+
+
+
+

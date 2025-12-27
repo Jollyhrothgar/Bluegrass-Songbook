@@ -1,6 +1,9 @@
 {meta: title Seasons Of My Heart}
 {meta: artist George Jones}
 {meta: composer George Jones & Darrell Edwards}
+{meta: x_source classic-country}
+{meta: x_source_file seasonsofmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The seasons come the seasons go 
@@ -33,3 +36,6 @@ And my tears like withered leaves will [G7]fall
 But [F]spring it could bring some glad [C]tomorrow 
 And darling we could be [G7]happy after [C]all 
 {end_of_verse}
+
+
+

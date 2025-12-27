@@ -1,5 +1,8 @@
 {meta: title Heads Or Tails}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file headsortailslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heads or tails what will it [F]be
@@ -39,3 +42,8 @@ Heads you [G7]win [F]tails you [C]lose
 {start_of_verse: Verse 4}
 Heads you [G7]win [F]tails you [C]lose
 {end_of_verse}
+
+
+
+
+

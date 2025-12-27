@@ -1,6 +1,9 @@
 {meta: title Nothing Left To Lose}
 {meta: artist Faron Young}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file nothinglefttoloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Since I [D7]lost my [G]baby I've got [D7]nothing left to [G]lose 
@@ -37,3 +40,8 @@ Heartaches and [C]tears no longer [G]call on me
 {start_of_verse: Verse 5}
 [C]Since I [D7]lost my [G]baby I've got [D7]nothing left to [G]lose
 {end_of_verse}
+
+
+
+
+

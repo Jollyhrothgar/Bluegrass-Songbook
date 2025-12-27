@@ -1,6 +1,9 @@
 {meta: title Salvation}
 {meta: artist John Berry}
 {meta: composer Gary Burr}
+{meta: x_source classic-country}
+{meta: x_source_file salvationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One day when I was a little [G7]down on my luck
@@ -55,3 +58,10 @@ Cause He [C]already [G7]knows where I've [C]been
 I'd rather have Jesus watch where I'm [F]going
 Cause He [C]already [G7]knows where I've [C]been
 {end_of_verse}
+
+
+
+
+
+
+

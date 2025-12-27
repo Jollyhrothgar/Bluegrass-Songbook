@@ -1,6 +1,9 @@
 {meta: title Leaving On A Jet Plane}
 {meta: artist The Kendalls}
 {meta: composer John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file leavingonajetplanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All my bags are packed I'm ready to [F]go 
@@ -55,3 +58,8 @@ I'm leaving [C]on a jet [F]plane
 [C]Don't know when I'll be back [F]again 
 [C]Oh   [F]babe I hate to [G7]go
 {end_of_verse}
+
+
+
+
+

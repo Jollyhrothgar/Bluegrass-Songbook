@@ -1,6 +1,9 @@
 {meta: title God Holds the Future in His Hands}
 {meta: artist Ricky Skaggs}
 {meta: composer William S. Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file Godholdsthefutureinhishandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dread not the things that are ahead
@@ -57,3 +60,10 @@ God holds the future in His hands
 [C]On Him depend He is your friend
 [G7]He holds the future in His [C]hands
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We Can’t Go On Living Like This}
 {meta: artist Elvis Presley}
 {meta: composer Eddie Rabbitt}
+{meta: x_source classic-country}
+{meta: x_source_file wecantgoonlivinglikethislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we [Dm]look at each other [G7]now
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 6}
 [F]Let’s get back [C]together we can’t [G7]go on living like [C][F]this
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title This Wanting You}
 {meta: artist Gene Watson with Rhonda Vincent}
 {meta: composer Bruce Bouton, Bruce Burch, T. Graham Brown}
+{meta: x_source classic-country}
+{meta: x_source_file thiswantingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I almost wish that I could [C7]loose my [F]mind sometime
@@ -33,3 +36,7 @@ Why [D7]can't I leave our love in pieces it's buried in the [G7]past
 {start_of_verse: Verse 4}
 [G7]It's never ending always there [F]this wanting [C]you
 {end_of_verse}
+
+
+
+

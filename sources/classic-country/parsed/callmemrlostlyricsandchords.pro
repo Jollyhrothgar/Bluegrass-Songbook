@@ -1,6 +1,9 @@
 {meta: title Call Me Mr. Lost}
 {meta: artist Carl Smith}
 {meta: composer Roy Baham}
+{meta: x_source classic-country}
+{meta: x_source_file callmemrlostlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well goodbye  true [C]love  hello Mr. [G]Gloom
@@ -30,3 +33,6 @@
 [D7]Call me Mr. Lost from now [G]on
 [D7]Call me Mr. Lost from now [G]on
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Overtime}
 {meta: artist Patty Loveless}
 {meta: composer Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file overtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Score is tied between us in this loving game
@@ -40,3 +43,8 @@ Going on [F]overtime going on overtime
 [C]I'm gonna love you out of your mind [G7]we're going on over[C]time
 Oh baby take leaving off your mind [G7]we're going on over[C]time
 {end_of_verse}
+
+
+
+
+

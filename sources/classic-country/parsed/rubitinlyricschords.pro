@@ -1,6 +1,9 @@
 {meta: title Rub It In}
 {meta: artist Billy Crash Craddock}
 {meta: composer Layng Martine}
+{meta: x_source classic-country}
+{meta: x_source_file rubitinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lie beside me on the sand
@@ -54,3 +57,9 @@ I feel the tingle be[D7]gin
 You`re getting under my skin
 Rub it in rub it [G]in
 {end_of_verse}
+
+
+
+
+
+

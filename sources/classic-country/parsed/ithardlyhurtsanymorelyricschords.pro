@@ -1,6 +1,9 @@
 {meta: title It Hardly Hurts Anymore}
 {meta: artist Hank Locklin}
 {meta: composer Ben Raleigh and Dolores Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file ithardlyhurtsanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It [C7]hardly [F]hurts anymore the heartache's almost gone [C]away
@@ -26,3 +29,6 @@ It hardly [G7]hurts anymore except for all the [C]time [F]
 {start_of_verse: Verse 4}
 [C]It hardly [G7]hurts anymore except for all the [C]time
 {end_of_verse}
+
+
+

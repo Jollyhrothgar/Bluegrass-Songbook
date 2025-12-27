@@ -1,6 +1,9 @@
 {meta: title I Can't Love You Enough}
 {meta: artist Conway Twitty}
 {meta: composer Max D. Barnes and Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file icantloveyouenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd crawl through the desert on my hands and knees without a drink of water
@@ -67,3 +70,17 @@ I can't love you enough
 {start_of_verse: Verse 13}
 I can't love you enough
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

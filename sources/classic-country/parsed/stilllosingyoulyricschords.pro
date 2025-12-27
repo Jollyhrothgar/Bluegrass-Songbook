@@ -1,6 +1,9 @@
 {meta: title Still Losing You}
 {meta: artist Ronnie Milsap}
 {meta: composer Mike Reid}
+{meta: x_source classic-country}
+{meta: x_source_file stilllosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It came to me [F]again to[C]night
@@ -56,3 +59,10 @@ That [Am]I'm still losing [Em]you  [F]still losing [C]you[E7]
 [Dm]Keeps hanging on even [E7]though you're gone
 [Am]Still losing [Em]you oh I'm [F]still [G7]losing [Am]you
 {end_of_verse}
+
+
+
+
+
+
+

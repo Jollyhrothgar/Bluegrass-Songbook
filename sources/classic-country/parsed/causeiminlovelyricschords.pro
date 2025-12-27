@@ -1,6 +1,9 @@
 {meta: title Cause I'm In Love}
 {meta: artist Bob Wills}
 {meta: composer Stan Jones}
+{meta: x_source classic-country}
+{meta: x_source_file causeiminlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have spots [D7]before my eyes an [G]ailment that I [D7]can't describe
@@ -37,3 +40,8 @@ That's [C]why I'm so [G]happy [A7]I'm singing with the [D7]birds
 {start_of_verse: Verse 6}
 The [C]whole wide world's so [G]wonderful [D7]cause I'm in [G]love
 {end_of_verse}
+
+
+
+
+

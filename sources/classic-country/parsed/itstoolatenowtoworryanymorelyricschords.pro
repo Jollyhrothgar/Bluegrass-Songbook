@@ -1,6 +1,9 @@
 {meta: title It’s Too Late Now To Worry Anymore}
 {meta: artist Marty Robbins}
 {meta: composer Joe Pope}
+{meta: x_source classic-country}
+{meta: x_source_file itstoolatenowtoworryanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Things have changed a [D7]lot since first we [G]met
@@ -29,3 +32,6 @@
 [C]Forget about this aching heart of [G]mine
 [D7]Too late now to worry [G]anymore
 {end_of_verse}
+
+
+

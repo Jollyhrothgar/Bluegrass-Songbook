@@ -1,6 +1,9 @@
 {meta: title Show Me The Way Back To Your Heart}
 {meta: artist Eddy Arnold}
 {meta: composer Steve Nelson, Eddy Arnold, Zel Soehnel, Ed Nelson, Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file showmethewaybacktoyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every road that I take [A7]proves I made a big [D7]mistake
@@ -29,3 +32,6 @@ Cause in [D7]your arms my darling I had so much [G7]happiness
 Oh I [C]know I've been wrong take [A7]me back where I [D7]belong
 Darling [G]show me the way [G7]back to your [C]heart
 {end_of_verse}
+
+
+

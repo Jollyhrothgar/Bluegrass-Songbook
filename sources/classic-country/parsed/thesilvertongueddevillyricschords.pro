@@ -1,5 +1,8 @@
 {meta: title The Silver Tongued Devil}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file thesilvertongueddevillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I took myself down to the [G7]Tally Ho Tavern
@@ -70,3 +73,12 @@ And [C]I'll only live 'till I [G]die
 We [C]take our own chances and [G]pay our own [Em]dues
 The [D7]silver tonged devil and [G]I
 {end_of_verse}
+
+
+
+
+
+
+
+
+

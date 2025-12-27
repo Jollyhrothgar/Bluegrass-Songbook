@@ -1,5 +1,8 @@
 {meta: title So Wrong So Fast}
 {meta: artist Jean Shepard}
+{meta: x_source classic-country}
+{meta: x_source_file sowrongsofastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I sit here alone and in [F]silence 
@@ -35,3 +38,7 @@ For [G7]if I was wrong in the [C]past
 I'll [F]help build the brand new [C]tomorrow 
 That [G7]won't go so wrong so [C]fast
 {end_of_verse}
+
+
+
+

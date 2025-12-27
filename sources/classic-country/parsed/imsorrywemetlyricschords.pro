@@ -1,6 +1,9 @@
 {meta: title I'm Sorry We Met}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers and Elsie McWilliams}
+{meta: x_source classic-country}
+{meta: x_source_file imsorrywemetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though you have refused to [F]see me my [G7]dear
@@ -35,3 +38,7 @@ But [C]you found another and you [F]loved him too
 I am [C]sorry we [A7]met it's so [D7]hard to forget
 The [G7]days that used to [C]be
 {end_of_verse}
+
+
+
+

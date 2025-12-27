@@ -1,6 +1,9 @@
 {meta: title Wildflowers}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file wildflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The hills were alive with wild [C]flowers and [G]I
@@ -50,3 +53,9 @@ No [C]regrets for the path that I [D7][G]chose-o-ose
 When a [G]flower grows wild it can [C]always [G]survive
 Wildflowers don't [D7]care where they [G]grow
 {end_of_verse}
+
+
+
+
+
+

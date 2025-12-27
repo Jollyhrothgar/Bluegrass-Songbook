@@ -1,6 +1,9 @@
 {meta: title Rosetta and chord}
 {meta: artist Bob Wills}
 {meta: composer Hines and Woods}
+{meta: x_source classic-country}
+{meta: x_source_file rosettalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rosetta [F]  m—y Ro[G]setta[E7] 
@@ -18,3 +21,4 @@ God bless you [G]honey
 Rosetta [F]  m—y Ro[G]setta [E7]
 Please say [A7]I’m just the [D7]one dear for [G]you
 {end_of_verse}
+

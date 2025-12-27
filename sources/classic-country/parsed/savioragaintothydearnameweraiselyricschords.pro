@@ -1,6 +1,9 @@
 {meta: title Savior Again To Thy Dear Name We Raise}
 {meta: artist Dottie West}
 {meta: composer John Ellerton and Edward Hopkins}
+{meta: x_source classic-country}
+{meta: x_source_file savioragaintothydearnameweraiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Savior again to [G7]Thy dear [C]name [G7]we [C]raise
@@ -22,3 +25,5 @@ Our balm in [Am]sorrow [D7]and our stay in [G7]strife
 [C]Then when Thy [Dm]voice shall [G7]bid our conflict [C]cease
 [Am]Call us oh [F]Lord to [G7]Thine eternal [C]peace [F]ame[C]n
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Joe and Mabel's 12th Street Bar And Grill}
 {meta: artist Nat Stuckey}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file joeandmabels12thstreetbarandgrilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The kids say daddy where did you meet mother
@@ -43,3 +46,8 @@ Down at [G]Joe and Mabel's [C]12th Street Bar and [G]Grill
 Down at Joe and Mabel's [C]12th Street Bar and [G]Grill
 Down at Joe and Mabel's [C]12th Street Bar and [G]Grill
 {end_of_verse}
+
+
+
+
+

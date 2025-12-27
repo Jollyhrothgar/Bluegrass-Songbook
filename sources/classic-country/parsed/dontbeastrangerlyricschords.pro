@@ -1,6 +1,9 @@
 {meta: title Don't Be A Stranger}
 {meta: artist David Allan Coe}
 {meta: composer David A. Coe and Karen Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file dontbeastrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's [G7]five in the [C]morning [F]and I've been [G7]waiting up all [C]night
@@ -37,3 +40,7 @@ Don't be a [G7]stranger
 Eight in the [G7]morn[C]in' don't be a [G7]stran[C]ger
 Don't be a [G7]stran[F]ger [C]don't be a [G7]stran[C]ger
 {end_of_verse}
+
+
+
+

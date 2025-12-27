@@ -1,6 +1,9 @@
 {meta: title How Far Down Can I Go}
 {meta: artist Lefty Frizzell}
 {meta: composer Harlan Howard &amp; Jerome C. Barney}
+{meta: x_source classic-country}
+{meta: x_source_file howfardowncanigolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've hurt all who loved me they don't [F]understand
@@ -22,3 +25,5 @@
 [C]I brought many a tear to my mama's [F]eyes
 [G7]How far down can I [C]go
 {end_of_verse}
+
+

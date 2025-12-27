@@ -1,6 +1,9 @@
 {meta: title I Catch Myself Crying}
 {meta: artist Jim Reeves}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file icatchmyselfcryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It doesn't matter one way or [F]another I [G7]say
@@ -24,3 +27,5 @@
 [C]It doesn't matter one way or [F]another I [G7]say
 [C]But I'm [G7]lying  I catch myself [C]crying
 {end_of_verse}
+
+

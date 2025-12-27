@@ -1,5 +1,8 @@
 {meta: title Babies In The Mill}
 {meta: artist Dorsey M. Dixon}
+{meta: x_source classic-country}
+{meta: x_source_file babiesinthemilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I used to be a factory hand [C]when things were moving [G]slow
@@ -43,3 +46,9 @@
 [C]Come out of bed little sleepy head and get your bite to [G]eat
 [D7]The factory whistle's calling you there's no more time to [G]sleep
 {end_of_verse}
+
+
+
+
+
+

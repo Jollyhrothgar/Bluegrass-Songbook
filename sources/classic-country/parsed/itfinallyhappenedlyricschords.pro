@@ -1,5 +1,8 @@
 {meta: title It Finally Happened}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file itfinallyhappenedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It finally [F]happened like I said it [C]would
@@ -31,3 +34,7 @@
 [C]It finally [F]happened   this time we're [C]through
 [G7]It finally happened and I stopped loving [C]you
 {end_of_verse}
+
+
+
+

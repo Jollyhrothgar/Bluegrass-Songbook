@@ -1,6 +1,9 @@
 {meta: title Daddy's Girl}
 {meta: artist Red Sovine}
 {meta: composer Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file daddysgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I recall the night that you came [F]into this [C]world
@@ -69,3 +72,11 @@
 [F]For he loves me like I was his son
 [C]Daddy's Girl)
 {end_of_verse}
+
+
+
+
+
+
+
+

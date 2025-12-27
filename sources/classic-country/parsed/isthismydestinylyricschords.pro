@@ -1,6 +1,9 @@
 {meta: title Is This My Destiny}
 {meta: artist Wanda Jackson}
 {meta: composer Helen Carter}
+{meta: x_source classic-country}
+{meta: x_source_file isthismydestinylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cursed with sorrow [G7]pain and woe
@@ -33,3 +36,7 @@ The grave would be [F]escape for me
 {start_of_verse: Verse 5}
 From this [G7]my desti[C]ny
 {end_of_verse}
+
+
+
+

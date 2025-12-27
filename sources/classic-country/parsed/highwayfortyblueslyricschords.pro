@@ -1,6 +1,9 @@
 {meta: title Highway Forty Blues}
 {meta: artist Ricky Skaggs}
 {meta: composer Larry Cordle}
+{meta: x_source classic-country}
+{meta: x_source_file highwayfortyblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well these Highway Forty [Am]blues
@@ -46,3 +49,8 @@
 [D7]Dixieland I sure miss you
 [G]Got the Highway Forty blues
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let's Put Our World Back Together}
 {meta: artist Roy Drusky}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file letsputourworldbacktogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let's put our [C]world [D7]back [G]together
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [C]Without you in my [D7]world the sun don't [G]shine
 {end_of_verse}
+
+
+

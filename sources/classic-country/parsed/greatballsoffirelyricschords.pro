@@ -1,6 +1,9 @@
 {meta: title Great Balls Of Fire}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Otis Blackwell and Jack Hammer}
+{meta: x_source classic-country}
+{meta: x_source_file greatballsoffirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You shake my nerves and you rattle my brain
@@ -36,3 +39,7 @@ I cut my nails and I quiver my thumb
 Your fine so kind
 I'm a gonna tell the world that your mine mine mine [G]mine
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Candy Man}
 {meta: artist Roy Orbison}
 {meta: composer Beverly Ross and Fred Neil}
+{meta: x_source classic-country}
+{meta: x_source_file candymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come on baby let me take you by the hand
@@ -22,3 +25,5 @@ Give you [C]candy kisses every single [G]night
 Go for [D7]me let me [C]be
 All [G]your own candy a-candy  [D7]candy [G]man
 {end_of_verse}
+
+

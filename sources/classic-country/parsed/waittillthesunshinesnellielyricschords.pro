@@ -1,6 +1,9 @@
 {meta: title Wait Till The Sun Shines Nellie}
 {meta: artist Buddy Holly}
 {meta: composer Andrew B. Sterling and Von Tilzer}
+{meta: x_source classic-country}
+{meta: x_source_file waittillthesunshinesnellielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wait till the [C]sun shines [G]Nellie
@@ -28,3 +31,6 @@ Down [B7]lover's [C]lane we'll [G]wander
 [C]Wait [G]till the [E7]sun shines [D7]Nellie
 [G]By [D7]and [C]by[G]
 {end_of_verse}
+
+
+

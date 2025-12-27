@@ -1,6 +1,9 @@
 {meta: title My Second Home}
 {meta: artist Tracy Lawrence}
 {meta: composer Paul Nelson, Kenny Beard, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file mysecondhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a honky tonk on the edge of town 
@@ -53,3 +56,9 @@ But I'll never die of [C]thirst
 {start_of_verse: Verse 7}
 Lord [A7]now that my second [D7]home has become my [G]first
 {end_of_verse}
+
+
+
+
+
+

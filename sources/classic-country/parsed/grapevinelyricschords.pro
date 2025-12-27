@@ -1,6 +1,9 @@
 {meta: title Grapevine}
 {meta: artist Mickey Gilley}
 {meta: composer Dale/Matassa}
+{meta: x_source classic-country}
+{meta: x_source_file grapevinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got it through the grapevine that [C]you were through with [G]me
@@ -34,3 +37,7 @@ I wouldn't have my heart stings [A7]all tied up in a [G]knot
 You're moving out (moving out) way [E7]out (way out) [G]way [D7]out from [G]me
 I'm a-losing out (losing out) way [E7]out (way out) [G]way [D7]out I'd [G]be
 {end_of_verse}
+
+
+
+

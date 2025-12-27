@@ -1,5 +1,8 @@
 {meta: title San Angelo}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file sanangelolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]North of the border of Old Mexico
@@ -99,3 +102,15 @@ I touch the soft velvet hand and it eases the [D7]pain
 Life is no more but we're together
 Even in death she's my lover it's over good[G]bye
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

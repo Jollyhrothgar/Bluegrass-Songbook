@@ -1,6 +1,9 @@
 {meta: title Belle Of The Ball}
 {meta: artist Red Steagall}
 {meta: composer Luke Reed and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file belleoftheballlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a smooth cement [G7]slab by the [C]river
@@ -64,3 +67,11 @@ As I [F]dance with the [G7]belle of the [C]ball
 And I [F]fall in [C]love each [G7]Saturday [C]night
 When the [F]band plays the [G7]Westphalia [C]Waltz
 {end_of_verse}
+
+
+
+
+
+
+
+

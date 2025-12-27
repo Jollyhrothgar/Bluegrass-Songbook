@@ -1,5 +1,8 @@
 {meta: title I Don’t Feel At Home}
 {meta: artist Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file idontfeelathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can’t be true I should have known [F]this [C]before
@@ -21,3 +24,5 @@ If I [C]don’t feel at home in your [G7]arms [C]anymore
 [C]My home was in your arms now what am I living [F]for
 If I [C]don’t feel at home in your [G7]arms [C]anymore
 {end_of_verse}
+
+

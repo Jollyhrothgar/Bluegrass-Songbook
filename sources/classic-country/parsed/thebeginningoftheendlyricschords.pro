@@ -1,6 +1,9 @@
 {meta: title The Beginning Of The End}
 {meta: artist Mickey Gilley}
 {meta: composer Gary Tolbert Nicholson and Charles Victor Rains}
+{meta: x_source classic-country}
+{meta: x_source_file thebeginningoftheendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought when we [G7]said goodbye [C]you and I were through
@@ -33,3 +36,7 @@ And saying good[G]bye is just [D7]the beginning of the [G]end
 {start_of_verse: Verse 4}
 [C]Saying good[G]bye is just [D7]the beginning of the [C]en[G]d 
 {end_of_verse}
+
+
+
+

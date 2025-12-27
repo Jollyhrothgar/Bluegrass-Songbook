@@ -1,6 +1,9 @@
 {meta: title And I'll Go}
 {meta: artist The Everly Brothers}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file andillgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look at me and tell me [Am]you don’t want me around [Em]anymore
@@ -24,3 +27,5 @@
 [Dm]And I’ll [G7]g-o I’ll [Am][C]go
 [Dm]And I’ll g-o [G7]I’ll [C]go
 {end_of_verse}
+
+

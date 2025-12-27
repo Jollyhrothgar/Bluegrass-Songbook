@@ -1,6 +1,9 @@
 {meta: title Headed For The Country}
 {meta: artist David Allan Coe}
 {meta: composer Larry Murray}
+{meta: x_source classic-country}
+{meta: x_source_file headedforthecountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lightly tripping [Em]through the misty dripping [F]morning
@@ -30,3 +33,6 @@ And it [F]looks as if she's [G7]headed for the [C]country once [F]again
 [F]Back to the grassy [G7]meadows to run [C]barefoot through the [F]wind
 They [C]tell me that she's headed for the [G7]country once [C]again
 {end_of_verse}
+
+
+

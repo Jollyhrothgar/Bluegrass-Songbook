@@ -1,6 +1,9 @@
 {meta: title Just One Of A Kind}
 {meta: artist Rhonda Vincent}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file justoneofakindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Within the prison of my soul 
@@ -57,3 +60,10 @@ Got a feelin' in my [Am]mind
 Got a feelin' in my [Am]mind 
 [D7]That he's just one of a [G]kind
 {end_of_verse}
+
+
+
+
+
+
+

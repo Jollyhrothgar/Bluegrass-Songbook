@@ -1,6 +1,9 @@
 {meta: title Acting Like My Old Self Again}
 {meta: artist Wanda Jackson}
 {meta: composer Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file actinglikemyoldselfagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I'm [D7]acting like my old self [G]again
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 5}
 [D7]Yes I'm acting like my old self [G]again
 {end_of_verse}
+
+
+
+

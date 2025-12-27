@@ -1,6 +1,9 @@
 {meta: title Dear Hearts And Gentle People}
 {meta: artist Jim Reeves}
 {meta: composer Bob Hillard and Sammy Fain}
+{meta: x_source classic-country}
+{meta: x_source_file dearheartsandgentlepeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love those dear hearts and gentle [C][F]people 
@@ -37,3 +40,7 @@ I love those dear [C]dear hearts and gentle [F]people
 Who'll [C]never ever [G7]let you [C]down
 They live and [G7]love in my [C]hometown
 {end_of_verse}
+
+
+
+

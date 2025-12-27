@@ -1,6 +1,9 @@
 {meta: title You've Got A Right}
 {meta: artist John Conlee}
 {meta: composer Bruce Channel and Kieran Kane}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotarightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Autumn leaves have started falling time is passing by
@@ -29,3 +32,6 @@ You've got a right to [F]love somebody [C]who loves you [F]too
 [C]You've got a right to [F]love somebody [G7]but it's [C]all up to [F]you
 [D7]You've got a right to [G7]make your dreams come [C]true
 {end_of_verse}
+
+
+

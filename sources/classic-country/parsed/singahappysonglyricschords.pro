@@ -1,6 +1,9 @@
 {meta: title Sing A Happy Song}
 {meta: artist Buck Owens}
 {meta: composer Charlie Williams and Billy Graham}
+{meta: x_source classic-country}
+{meta: x_source_file singahappysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody oughta [G7]sing a happy song 
@@ -76,3 +79,13 @@ And we [Dm]all [G7]sing a happy [C]song
 Can [F]multiply with each [C]passin' [Am]by 
 And we [Dm]all [G7]sing a happy [C]song
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

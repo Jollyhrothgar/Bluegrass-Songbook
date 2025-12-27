@@ -1,6 +1,9 @@
 {meta: title Car Hoppin’ Mama}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Hank Thompson, Billy Gray, Amos Hedrick}
+{meta: x_source classic-country}
+{meta: x_source_file carhoppinmamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wanna [A7]be a poppa to a [D7]car hoppin’ mama
@@ -29,3 +32,6 @@ I'll be [D7]a lucky fellow when she [G7]says I do
 And [A7]I'll become a poppa of a [D7]car hoppin’ mama
 Her [G7]car hoppin’ days are [C]through
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Room For One More Heartache}
 {meta: artist Jack Greene}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file roomforonemoreheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say I'm a fool to [F]forgive you
@@ -29,3 +32,6 @@ I could [G7]still scrape up a tear or [C]two
 Yes I still got room for one more [F]heartache
 So come [G7]home anytime you're ready [C]to
 {end_of_verse}
+
+
+

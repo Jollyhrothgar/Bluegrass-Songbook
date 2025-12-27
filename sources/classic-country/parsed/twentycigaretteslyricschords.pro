@@ -1,6 +1,9 @@
 {meta: title Twenty Cigarettes}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Mel Tillis and Buck Peddy}
+{meta: x_source classic-country}
+{meta: x_source_file twentycigaretteslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now when I was a young boy I remember [D7]back
@@ -36,3 +39,7 @@ I [D7]guess that I was too young to [G]see
 [C]Stealin' cigarettes was my wrong [G]doin'
 One [D7]little pack of weeds made a [C]jailbird out of [G]me
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Heart Please Be Still}
 {meta: artist Wilburn Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file heartpleasebestilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heart Please Be Still don’t [F]tell her you’re aching
@@ -28,3 +31,6 @@ Wish the cloud would break be[F]fore she hears you’re pleading
 [C]So heart please be still don’t [F]tell her you’re aching
 [C]You just mustn’t [G7]tell her on [C]me
 {end_of_verse}
+
+
+

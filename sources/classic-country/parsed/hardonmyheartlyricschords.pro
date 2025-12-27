@@ -1,6 +1,9 @@
 {meta: title Hard On My Heart}
 {meta: artist Del McCoury}
 {meta: composer Sharon Higgins, Terry Smith, William Smith}
+{meta: x_source classic-country}
+{meta: x_source_file hardonmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a shame I fell in love with a knocked out beauty queen
@@ -29,3 +32,6 @@ She [C]cast a spell I'm in heaven's hell lord I'm hypno[G]tized
 I'm just like a sparrow flying where the eagles fly
 She's [C]hard on my heart but easy on my [G]eyes
 {end_of_verse}
+
+
+

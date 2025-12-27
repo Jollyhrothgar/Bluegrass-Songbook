@@ -1,5 +1,8 @@
 {meta: title I Can't Quit}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file icantquitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd like to find somebody who would just be halfway [F]true
@@ -35,3 +38,7 @@ I [C]I'da quit seeing you long ago I wouldn't be loving [G7]you
 Well you [C]keep me so mixed up inside by things you say and [F]do
 But I can't quit I've [C]gone too far I'm [G7]deep in love with [C]you
 {end_of_verse}
+
+
+
+

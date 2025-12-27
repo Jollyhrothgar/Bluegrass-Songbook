@@ -1,6 +1,9 @@
 {meta: title River of Jordan}
 {meta: artist Ricky Skaggs}
 {meta: composer Hazel HouserC}
+{meta: x_source classic-country}
+{meta: x_source_file riverofjordanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 And we read that John the [G7]Baptist met him [C]there
@@ -43,3 +46,8 @@ And we read that John the [G7]Baptist met him [C]there
 When John baptized Jesus in Jordan’s rushing [F]waters
 The [C]mighty power of [G7]God filled the [C]air
 {end_of_verse}
+
+
+
+
+

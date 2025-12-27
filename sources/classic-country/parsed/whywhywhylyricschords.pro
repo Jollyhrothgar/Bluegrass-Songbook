@@ -1,6 +1,9 @@
 {meta: title Why Why Why}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton and Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file whywhywhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why why why did you say goodbye
@@ -38,3 +41,7 @@ To [G7]make you glad that you came back to [C]me
 No more goodbyes and no more tears to cry
 Every [G7]day I'll try to make you [C]happy
 {end_of_verse}
+
+
+
+

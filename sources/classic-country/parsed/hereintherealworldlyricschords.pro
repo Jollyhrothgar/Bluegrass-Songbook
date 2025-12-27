@@ -1,6 +1,9 @@
 {meta: title Here In The Real World}
 {meta: artist George Jones}
 {meta: composer Alan Jackson and Mark Irwin}
+{meta: x_source classic-country}
+{meta: x_source_file hereintherealworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cowboys don't [F]cry  [G7]and heroes don't [C]die
@@ -38,3 +41,7 @@ Is how the boy don’t [Dm]always get [Em]the [F]girl
 Is how the boy don’t [Dm]always get [Em]the [F]girl
 [G7]Here in the real [C][F]wor-ld
 {end_of_verse}
+
+
+
+

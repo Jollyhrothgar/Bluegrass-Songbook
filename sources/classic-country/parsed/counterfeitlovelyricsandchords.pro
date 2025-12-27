@@ -1,6 +1,9 @@
 {meta: title Counterfeit Love}
 {meta: artist Crystal Gayle}
 {meta: composer Paul Craft}
+{meta: x_source classic-country}
+{meta: x_source_file counterfeitlovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Counterfeit [C]love don't try to [G]pass it
@@ -50,3 +53,9 @@ Lend it or [D7]spend it misrepre[G]sent it
 Counterfeit [C]love I know you've [G]got it
 Cause I can [D7]spot it counterfeit [G]love
 {end_of_verse}
+
+
+
+
+
+

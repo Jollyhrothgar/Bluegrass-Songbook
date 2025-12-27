@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Hang Out My Mind Today}
 {meta: artist Lefty Frizzell}
 {meta: composer Dallas Frazier and Darlene Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnahangoutmymindtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna hang out my [G7]mind and let it [C]dry
@@ -45,3 +48,8 @@ I'm gonna [C]hang out my [G7]mind and let it [C]dry
 {start_of_verse: Verse 4}
 Hang out my [G7]mind and let it [C]dry
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Old Eight By Ten}
 {meta: artist Randy Travis}
 {meta: composer Joe Chambers and Larry Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file oldeightbytenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I know it ain't much but it's all that I have since she's [C]gone
@@ -41,3 +44,8 @@ Stands an [Em]eight by ten [D7]picture of [Em]us [C]
 {start_of_verse: Verse 6}
 There's an [G]eight by ten [C]picture of [G]us 
 {end_of_verse}
+
+
+
+
+

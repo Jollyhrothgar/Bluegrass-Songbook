@@ -1,6 +1,9 @@
 {meta: title Back To Schooldays}
 {meta: artist Ricky Nelson}
 {meta: composer Graham Parker}
+{meta: x_source classic-country}
+{meta: x_source_file backtoschooldayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't seem to be no break in the line
@@ -70,3 +73,13 @@ I'm [F]goin' back to schooldays
 I'm [C]goin' back to schooldays
 I'm [G7]goin' back to schooldays damn [C]right
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

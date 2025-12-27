@@ -1,6 +1,9 @@
 {meta: title My Religion's Not Old Fashioned}
 {meta: artist Hank Snow}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file myreligionsnotoldfashionedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My [F]religion's not old-fashioned but it's real [C]genuine
@@ -42,3 +45,9 @@ Two and two [G7]make four today as it did in my Lord's [C]time
 Modern days [F]don't make a difference you can't alter truth or [C]time
 My [G7]religion's not old-fashioned but it's real [C]genuine
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Nobody's Fool But Yours}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file nobodysfoolbutyourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say for everybody [D7]there is a fool
@@ -26,3 +29,6 @@ Yes I'm nobody's fool [C]nobody's fool [G]nobody's fool but [D7]yours
 And [G]although you do me wrong I'll [C]still tag along
 Cause I'm [G]nobody's [D7]fool but [G]yours
 {end_of_verse}
+
+
+

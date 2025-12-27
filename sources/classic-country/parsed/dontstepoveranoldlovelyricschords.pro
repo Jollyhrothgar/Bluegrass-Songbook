@@ -1,6 +1,9 @@
 {meta: title Don't Step Over An Old Love}
 {meta: artist Stanley Brothers}
 {meta: composer Fred Stryker}
+{meta: x_source classic-country}
+{meta: x_source_file dontstepoveranoldlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All the things that we have done [G7]together
@@ -43,3 +46,8 @@
 [F]Don't step over an old [C]love
 [D7]Who always has [G7]been true to [C]you
 {end_of_verse}
+
+
+
+
+

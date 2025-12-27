@@ -1,5 +1,8 @@
 {meta: title Gotta Good Thing Going}
 {meta: artist Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file gottagoodthinggoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Been workin' hard to keep our lives in [C]check
@@ -56,3 +59,9 @@ We've been through things both good and bad
 And once lost [C]everything we had
 We've [D7]got a good thing goin' me and [G]you
 {end_of_verse}
+
+
+
+
+
+

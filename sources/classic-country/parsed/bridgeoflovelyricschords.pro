@@ -1,6 +1,9 @@
 {meta: title Bridge Of Love}
 {meta: artist Tammy Wynette}
 {meta: composer Jae Kay}
+{meta: x_source classic-country}
+{meta: x_source_file bridgeoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hmm hmm hmm hmm hmm hmm hmm hmm [D7]hmm hmm hmm [G]hmm
@@ -71,3 +74,16 @@ The bridge is strong but when hearts go wrong
 [G]Hmm hmm hmm hmm hmm hmm hmm hmm [D7]hmm hmm hmm [G]hmm
 [D7]Hmm hmm hmm hmm hmm [C]hmm hmm hmm down down [G]down
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

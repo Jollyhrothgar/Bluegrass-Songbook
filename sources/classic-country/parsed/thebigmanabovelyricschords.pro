@@ -1,6 +1,9 @@
 {meta: title The Big Man Above}
 {meta: artist Conway Twitty}
 {meta: composer L.E. White}
+{meta: x_source classic-country}
+{meta: x_source_file thebigmanabovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes in life we ought to think twice
@@ -58,3 +61,13 @@ Don't gossip about your [C]neighbor
 One of these days we're gonna stand
 [G7]Before that big man [C]above
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

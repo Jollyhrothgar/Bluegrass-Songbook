@@ -1,5 +1,8 @@
 {meta: title Are You Sure Hank Done it This Way}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file areyousurehankdoneitthiswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord it’s the same old tune [C]fiddle and [G]guitar
@@ -35,3 +38,7 @@
 [C]But I don't think Hank done 'em this way
 [G]No I don't think Hank done 'em this way
 {end_of_verse}
+
+
+
+

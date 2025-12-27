@@ -1,6 +1,9 @@
 {meta: title Just A Little Too Much}
 {meta: artist Ricky Nelson}
 {meta: composer Johnny Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file justalittletoomuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I think I love you ah just a little too [C]much
@@ -36,3 +39,7 @@ But [D7]now I know I'll never get over [G]you
 {start_of_verse: Verse 4}
 [D7]Yeah that's why I love you like I [G]do
 {end_of_verse}
+
+
+
+

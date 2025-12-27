@@ -1,6 +1,9 @@
 {meta: title It Don't Hurt Me Half As Bad}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen, Bucky Lindsey, Deoin Lay}
+{meta: x_source classic-country}
+{meta: x_source_file itdonthurtmehalfasbadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It hurts me just to know I had to leave [F]her
@@ -30,3 +33,6 @@ As [G7]holding you feels [C]good
 [F]No it don't hurt me half as [C]bad
 As [G7]holding you feels [C]good
 {end_of_verse}
+
+
+

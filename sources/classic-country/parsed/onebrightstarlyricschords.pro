@@ -1,6 +1,9 @@
 {meta: title One Bright Star}
 {meta: artist Vince Gill}
 {meta: composer John Jarvis}
+{meta: x_source classic-country}
+{meta: x_source_file onebrightstarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Long long ago in a [Em]world [C]dark and [G]cold
@@ -29,3 +32,5 @@ May it [Am]shine its light on [D7]you this Christmas [G]Night
 {start_of_verse: Verse 3}
 May it [Am]shine its light on [D7]you this Christmas [G]Night
 {end_of_verse}
+
+

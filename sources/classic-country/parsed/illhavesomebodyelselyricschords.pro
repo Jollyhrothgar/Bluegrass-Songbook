@@ -1,5 +1,8 @@
 {meta: title I'll Have Somebody Else}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file illhavesomebodyelselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [A7]I'll have somebody [E7]else as [A7]soon as you are gone
@@ -38,3 +41,8 @@ Perhaps a [D7]change of pasture is the [G7]very thing we need
 [C]I'll have somebody [E7]else as [A7]soon as you are gone
 You'll [D7]never break my [G7]heart no [C]more
 {end_of_verse}
+
+
+
+
+

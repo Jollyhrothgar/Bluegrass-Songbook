@@ -1,6 +1,9 @@
 {meta: title I Wanna Be Hugged To Death By You}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Earl Butts}
+{meta: x_source classic-country}
+{meta: x_source_file iwannabehuggedtodeathbyyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now some folks use a motor car to end it all you see
@@ -43,3 +46,8 @@ I wanna [A7]suffer in the sweetest ago[D7]ny I’ll ever know
 I [G]wanna be crushed in your embrace with [C]your kisses on my [G]face
 I wanna be [D7]hugged to death by [G]you
 {end_of_verse}
+
+
+
+
+

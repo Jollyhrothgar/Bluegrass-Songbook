@@ -1,5 +1,8 @@
 {meta: title Be Proud Of The Grey In Your Hair}
 {meta: artist Dale Evans}
+{meta: x_source classic-country}
+{meta: x_source_file beproudofthegreyinyourhairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lay [F]down that cane and start [C]moving
@@ -35,3 +38,7 @@ Lay [F]down that cane and start [C]moving
 Put [F]on those shoes and start [C]walkin’
 Be [F]proud of the gray in your [C]hair
 {end_of_verse}
+
+
+
+

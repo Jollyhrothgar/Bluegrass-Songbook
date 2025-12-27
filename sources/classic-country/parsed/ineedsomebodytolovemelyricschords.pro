@@ -1,6 +1,9 @@
 {meta: title I Need Somebody To Love Me}
 {meta: artist Billy Crash Craddock}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file ineedsomebodytolovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is there someone in the night who can make me feel right
@@ -38,3 +41,7 @@ I'm [G7]lonely and I need somebody to [C]love me
 {start_of_verse: Verse 5}
 I'm [G7]lonely and I need somebody to [C]love
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Mean the World to Me}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file youmeantheworldtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Daylight comes and bluebirds [F]sing 
@@ -25,3 +28,5 @@ And [G7]temptation looks me straight in the [C]eye
 Cause y--ou  I love you  I [E7]love you  you make all my dreams come [A7]true 
 [D7]You you mean [G7]all the world to [C]me 
 {end_of_verse}
+
+

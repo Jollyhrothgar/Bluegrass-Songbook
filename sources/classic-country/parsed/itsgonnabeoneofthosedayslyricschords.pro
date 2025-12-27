@@ -1,6 +1,9 @@
 {meta: title It's Gonna Be One Of Those Days}
 {meta: artist Carl Smith}
 {meta: composer Tim Cantin}
+{meta: x_source classic-country}
+{meta: x_source_file itsgonnabeoneofthosedayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got up this morning old man [F]sunshine smiled at [C]me
@@ -37,3 +40,7 @@ It's [F]written on my face and I'm bound to show it
 {start_of_verse: Verse 4}
 I've gotta happy feeling it's [G7]gonna be one of those [C]days
 {end_of_verse}
+
+
+
+

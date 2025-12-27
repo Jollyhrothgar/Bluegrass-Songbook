@@ -1,6 +1,9 @@
 {meta: title Friday Night Feeling}
 {meta: artist Vern Gosdin}
 {meta: composer Jake Landers}
+{meta: x_source classic-country}
+{meta: x_source_file fridaynightfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I watched her pack her worn out [C]suitcase
@@ -57,3 +60,10 @@ Till Sunday morning [G]comes
 Oh this Friday night [D7]feeling
 It won’t let me go [G]home
 {end_of_verse}
+
+
+
+
+
+
+

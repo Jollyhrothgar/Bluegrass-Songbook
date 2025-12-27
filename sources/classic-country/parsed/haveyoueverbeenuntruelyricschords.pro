@@ -1,6 +1,9 @@
 {meta: title Have You Ever Been Untrue}
 {meta: artist Lefty Frizzel}
 {meta: composer Vic McAlpin and Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file haveyoueverbeenuntruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You ask me if I've ever been untrue
@@ -23,3 +26,5 @@ Can [G]you say to me [G7]what I just said to [C]you
 That [D7]only in your mind have you ever been un[G]true
 It's [D7]only in my mind that I've ever been un[G]true
 {end_of_verse}
+
+

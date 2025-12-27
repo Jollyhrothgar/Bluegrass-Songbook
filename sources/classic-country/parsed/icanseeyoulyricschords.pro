@@ -1,6 +1,9 @@
 {meta: title I Can See You}
 {meta: artist Ray Price}
 {meta: composer Larry Bastian}
+{meta: x_source classic-country}
+{meta: x_source_file icanseeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can see your laughing eyes 
@@ -47,3 +50,9 @@ I can [G]see [Dm]you with my [C]eyes closed
 {start_of_verse: Verse 6}
 [D7]Who said that love is [G]blind
 {end_of_verse}
+
+
+
+
+
+

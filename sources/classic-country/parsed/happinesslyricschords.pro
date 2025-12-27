@@ -1,5 +1,8 @@
 {meta: title Happiness}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file happinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Happiness [C]happiness
@@ -63,3 +66,11 @@ The [D7]greatest gift that [G]I posses
 I thank the Lord [C]I've been blessed
 With [D7]more than my share of [G]happiness
 {end_of_verse}
+
+
+
+
+
+
+
+

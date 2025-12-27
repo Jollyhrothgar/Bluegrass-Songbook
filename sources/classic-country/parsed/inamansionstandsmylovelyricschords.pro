@@ -1,6 +1,9 @@
 {meta: title In A Mansion Stands My Love}
 {meta: artist Jim Reeves}
 {meta: composer Johnny Russel}
+{meta: x_source classic-country}
+{meta: x_source_file inamansionstandsmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a mountain stands a [G7]mansion so [C]fine 
@@ -33,3 +36,6 @@ And it looks down on this [G7]cabin of [C7][C]m-ine
 But [G7]along came a rich man and loved her [C]too
 Now on a mountain in a [G7]mansion stands my [C]love
 {end_of_verse}
+
+
+

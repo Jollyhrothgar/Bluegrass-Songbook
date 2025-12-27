@@ -1,6 +1,9 @@
 {meta: title Kill Him With Kindness}
 {meta: artist Kitty Wells}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file killhimwithkindnesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Kill him with [D7]kindness spoil him with [G]love
@@ -31,3 +34,7 @@ Practice what I am [G]preaching you'll [D7]see that it don't hurt a [G]thing
 Kill him with [C]kindness spoil him with [G]love
 Kill him with [D7]kindness spoil him with [G]love
 {end_of_verse}
+
+
+
+

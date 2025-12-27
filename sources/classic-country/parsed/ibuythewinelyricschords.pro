@@ -1,6 +1,9 @@
 {meta: title I Buy The Wine}
 {meta: artist Lefty Frizzell}
 {meta: composer Rory Bourke and Gayle Barnhill}
+{meta: x_source classic-country}
+{meta: x_source_file ibuythewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Her hands are burned from the [C]torch that she [Am]carries
@@ -29,3 +32,6 @@ I buy the wine that makes her [C]unwind
 Then in the darkness with our [C]bodies en[Am]twined
 [G]She cries out a [D7]name but Lord it's not [G]mine
 {end_of_verse}
+
+
+

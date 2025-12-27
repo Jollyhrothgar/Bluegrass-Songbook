@@ -1,6 +1,9 @@
 {meta: title Which One is to Blame}
 {meta: artist Norma Jean}
 {meta: composer Robert Charlebois, Sunny Dull, Redd Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file whichoneistoblamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The nicest thing that's come my way is [G7]you 
@@ -33,3 +36,6 @@ The things we've done can only bring us [C]shame
 We've let our passion drag our honor [G7]down 
 I [F]wonder which one of us [G7]is to [C]blame
 {end_of_verse}
+
+
+

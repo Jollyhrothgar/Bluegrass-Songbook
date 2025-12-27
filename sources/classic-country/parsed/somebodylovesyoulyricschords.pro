@@ -1,6 +1,9 @@
 {meta: title Somebody Loves You}
 {meta: artist Ernest Tubb}
 {meta: composer Charles Tobias and Peter DeRose}
+{meta: x_source classic-country}
+{meta: x_source_file somebodylovesyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somebody loves you I want you to [D7]know
@@ -29,3 +32,6 @@ When you're around dear or when you're [G]away
 [C]Somebody loves you sweetheart [G]can't you [E7]see
 And [Am]that somebody [D7]is [G]me
 {end_of_verse}
+
+
+

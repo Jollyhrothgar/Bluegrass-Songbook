@@ -1,6 +1,9 @@
 {meta: title Could You Love Me One More Time}
 {meta: artist Ricky Skaggs}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file couldyoulovemeonemoretimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Could you love me one more [F]time
@@ -30,3 +33,6 @@
 [G7]Though I gave you my heart soul and [C]all
 [G7]Could you love me one more [C]time
 {end_of_verse}
+
+
+

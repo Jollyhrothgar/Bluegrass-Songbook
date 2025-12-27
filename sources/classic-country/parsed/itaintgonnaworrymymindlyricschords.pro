@@ -1,6 +1,9 @@
 {meta: title It Ain’t Gonna Worry My Mind}
 {meta: artist Mickey Gilley}
 {meta: composer Richard C. Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file itaintgonnaworrymymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s the same old [Am]story [F]they all [G7]hand me
@@ -24,3 +27,5 @@ Love is [Am]all that ever [F]made you [C]richer oh [F]well if the truth be [C]to
 [C]Ain't gonna [Am]worry [C]I tell you I ain't gonna [Am]worry no Lord
 [C]Ain't gonna [G7]worry my [C]mind
 {end_of_verse}
+
+

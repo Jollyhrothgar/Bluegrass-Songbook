@@ -1,6 +1,9 @@
 {meta: title Out Of You}
 {meta: artist Lefty Frizzell}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file outofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Out of places filled with laughter
@@ -34,3 +37,7 @@
 [F]Darling I've been out of [C]everything
 [G7]Since I've been out of [C]you
 {end_of_verse}
+
+
+
+

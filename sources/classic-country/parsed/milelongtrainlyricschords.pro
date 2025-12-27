@@ -1,6 +1,9 @@
 {meta: title Mile Long Train}
 {meta: artist Jimmy Dean}
 {meta: composer Gerald Nelson and Chuck Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file milelongtrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wagon [F]t-rain mile long [C]train
@@ -44,3 +47,8 @@ This [F]mile long [C]train [F]wagon [C]train
 {start_of_verse: Verse 4}
 [F]Mile long [C]train [F]wagon [C]train
 {end_of_verse}
+
+
+
+
+

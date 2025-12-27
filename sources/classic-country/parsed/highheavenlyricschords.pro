@@ -1,6 +1,9 @@
 {meta: title High Heaven}
 {meta: artist Wynn Stewart}
 {meta: composer Dale Noe}
+{meta: x_source classic-country}
+{meta: x_source_file highheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We fell in love and now we live in high [G7][F]heaven
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [F]And we're just as [G7]happy as can [C]be
 {end_of_verse}
+
+
+

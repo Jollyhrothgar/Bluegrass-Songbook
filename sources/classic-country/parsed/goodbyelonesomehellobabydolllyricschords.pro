@@ -1,6 +1,9 @@
 {meta: title Goodbye Lonesome Hello Baby Doll}
 {meta: artist Johnny Horton}
 {meta: composer Lee Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyelonesomehellobabydolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been here for a long long time waitin' all [G7]alone
@@ -29,3 +32,6 @@ Well I [C]feel the electricity on the line
 [F]She's done told me she's mine all mine
 [G7]Goodbye lonesome hello baby [C]doll
 {end_of_verse}
+
+
+

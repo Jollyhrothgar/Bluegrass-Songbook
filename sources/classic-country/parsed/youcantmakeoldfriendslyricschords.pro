@@ -1,6 +1,9 @@
 {meta: title You Can't Make Old Friends}
 {meta: artist Kenny Rogers}
 {meta: composer Ryan Hanna King, Don Schlitz, Caitlyn Smith}
+{meta: x_source classic-country}
+{meta: x_source_file youcantmakeoldfriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What will I [G]do when you are [Am]gone [F]who's gonna [G]tell me [C]the truth
@@ -49,3 +52,11 @@ Cause we both [D7]know we will [G]still be old [C]friends
 Hmm [G]hmm [Am]hmm [F]hmm [C]you can't [G]make old [Am]friends [F]      
 Not the [C]way we [G]have always [Am]been [G]    [C]
 {end_of_verse}
+
+
+
+
+
+
+
+

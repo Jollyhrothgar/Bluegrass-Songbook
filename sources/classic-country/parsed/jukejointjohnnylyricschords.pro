@@ -1,6 +1,9 @@
 {meta: title Juke Joint Johnny}
 {meta: artist Red Sovine}
 {meta: composer Lattie Moore}
+{meta: x_source classic-country}
+{meta: x_source_file jukejointjohnnylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I called my baby and I told her to be
@@ -36,3 +39,7 @@ She wants to marry but I wants to play
 Cause I'm a [C]juke joint Johnny I like to go all the [G]time
 I'm a [D7]juke joint Johnny and I juke on down the [G]line
 {end_of_verse}
+
+
+
+

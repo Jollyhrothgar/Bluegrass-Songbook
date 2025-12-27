@@ -1,6 +1,9 @@
 {meta: title Box Seat In Heaven}
 {meta: artist The Wildwood Valley Boys}
 {meta: composer Aubrey Holt}
+{meta: x_source classic-country}
+{meta: x_source_file boxseatinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She'd talk about Jesus [C]while down on her [G]knees
@@ -29,3 +32,6 @@ Reserved for my mother she's up there I [D7]know
 Taking [C]care of God's children like they were her [G]own
 May God bless my mother [D7]she has a new [G]home
 {end_of_verse}
+
+
+

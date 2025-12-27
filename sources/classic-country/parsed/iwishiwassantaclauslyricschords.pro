@@ -1,6 +1,9 @@
 {meta: title I Wish I Was Santa Claus}
 {meta: artist Merle Haggard}
 {meta: composer Raymond McDonald}
+{meta: x_source classic-country}
+{meta: x_source_file iwishiwassantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I was [F]Santa [G7]Claus
@@ -34,3 +37,7 @@ Repeat
 [C]Have old Rudolph lead the [F]way
 [C]I wish I was [G7]Santa [C]Claus
 {end_of_verse}
+
+
+
+

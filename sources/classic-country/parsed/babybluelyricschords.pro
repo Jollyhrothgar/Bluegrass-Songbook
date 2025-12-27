@@ -1,6 +1,9 @@
 {meta: title Baby Blue}
 {meta: artist George Strait}
 {meta: composer Aaron Barker}
+{meta: x_source classic-country}
+{meta: x_source_file babybluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She looked so much like a [Em]lady but she was [F]so much like [G7]a [F]child
@@ -44,3 +47,8 @@ And baby [C]blue  [Em]was the [F]color of her [G7]eyes
 Baby [Em][C]blue   [Am]like the [Dm]Colorado [Em][G7]skies
 Baby [C]blue
 {end_of_verse}
+
+
+
+
+

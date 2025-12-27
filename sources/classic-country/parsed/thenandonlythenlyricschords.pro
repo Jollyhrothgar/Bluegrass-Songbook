@@ -1,6 +1,9 @@
 {meta: title Then And Only Then}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file thenandonlythenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In your haste you left and said you'd be returning
@@ -34,3 +37,7 @@ Will [F]I'll be happy [C]and I live for [G7]then and only [C]then
 Tag:
 And I'll live for [G7]then and only [C]then
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title House Down The Block}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file housedowntheblocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The house my family lives in just down the block
@@ -21,3 +24,5 @@ When Gabriel blows his trumpet and time will be no more
 [C]The tears that fall won't start at all and God will let me [G7]be
 [C]In that house [F]down the block [G7]with my [C]family
 {end_of_verse}
+
+

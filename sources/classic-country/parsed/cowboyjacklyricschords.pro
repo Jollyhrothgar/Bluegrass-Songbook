@@ -1,6 +1,9 @@
 {meta: title Cowboy Jack}
 {meta: artist Don Edwards}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file cowboyjacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He was just a lonely [C]cowboy
@@ -71,3 +74,12 @@ Your [D7]sweetheart waits for [G]you
 Out on the lonely [C]prairie
 Where the [D7]skies are always [G]blue
 {end_of_verse}
+
+
+
+
+
+
+
+
+

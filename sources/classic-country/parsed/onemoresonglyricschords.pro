@@ -1,6 +1,9 @@
 {meta: title One More Song}
 {meta: artist Jim Ed Brown}
 {meta: composer Jack Tempchin}
+{meta: x_source classic-country}
+{meta: x_source_file onemoresonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was singing in a bar in San [F]Diego
@@ -51,3 +54,9 @@ One more [C]song for this road I'm [F]traveling on
 One more [C]song for the [G7]times to [F]come
 One more [C]song
 {end_of_verse}
+
+
+
+
+
+

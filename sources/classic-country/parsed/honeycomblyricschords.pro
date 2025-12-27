@@ -1,6 +1,9 @@
 {meta: title Honeycomb}
 {meta: artist Jimmy Rodgers}
 {meta: composer Bob Merrill}
+{meta: x_source classic-country}
+{meta: x_source_file honeycomblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a darn good life and it's kinda funny
@@ -50,3 +53,9 @@ And He roamed the world looking everywhere
 [G7]What a darn good life
 [C]When you got a wife like honeycomb
 {end_of_verse}
+
+
+
+
+
+

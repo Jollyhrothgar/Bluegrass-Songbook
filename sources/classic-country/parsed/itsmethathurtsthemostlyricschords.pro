@@ -1,6 +1,9 @@
 {meta: title It's Me That Hurts The Most}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Kent Westberry}
+{meta: x_source classic-country}
+{meta: x_source_file itsmethathurtsthemostlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The cup on the table was the [G7]last to feel your [G]lips
@@ -22,3 +25,5 @@ The [D7]flowers were the last to wither up and [G]die
 But I'm still the last one that [G7]your arms held so [C]close
 Of all the things you [G]left here it's [D7]me that hurts the [G]most
 {end_of_verse}
+
+

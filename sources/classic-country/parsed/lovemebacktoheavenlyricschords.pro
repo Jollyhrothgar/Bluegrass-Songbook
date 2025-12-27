@@ -1,6 +1,9 @@
 {meta: title Love Me Back To Heaven}
 {meta: artist Billy Walker}
 {meta: composer Sylvia Walker and Darrell Glenn}
+{meta: x_source classic-country}
+{meta: x_source_file lovemebacktoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love me back to heaven one more [F]time
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 5}
 [G7]Love me back to heaven one more [C]time
 {end_of_verse}
+
+
+
+

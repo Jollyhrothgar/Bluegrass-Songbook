@@ -1,6 +1,9 @@
 {meta: title Jesus Living Next To Me}
 {meta: artist Statler Brothers}
 {meta: composer Langdon Reid}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuslivingnexttomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I will [D7]live [G]all my life in this [C]small house in [D7]every likeli[G]hood 
@@ -31,3 +34,7 @@ Yes I’ll be [C]moving in [G]tomo[Em]rrow with [G]Jesus living [D7]next to [G]m
 {start_of_verse: Verse 4}
 Yes I’ll be [C]moving in to [G]hea[Em]ven with [G]Jesus living [D7]next to [C]me[G]
 {end_of_verse}
+
+
+
+

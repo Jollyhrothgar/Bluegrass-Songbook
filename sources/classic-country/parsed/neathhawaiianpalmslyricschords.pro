@@ -1,6 +1,9 @@
 {meta: title Neath Hawaiian Palms}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Cecil Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file neathhawaiianpalmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Beneath Hawaiian palms inside the gloom my love is true  
@@ -26,3 +29,6 @@ I know my [D7]heart will lead the way to love forever [G]new
 {start_of_verse: Verse 4}
 Aloha [C]aloha [G]Hawaii aloha [D7]Hawaii a[G]loha 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Few More Seasons}
 {meta: artist Ralph Stanley}
 {meta: composer Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file afewmoreseasonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mother first was called to [C]heaven
@@ -29,3 +32,6 @@ A [D7]few more weary nights will [G]come
 We'll all be on our way to [C]heaven
 [D7]When a few more seasons [G]come
 {end_of_verse}
+
+
+

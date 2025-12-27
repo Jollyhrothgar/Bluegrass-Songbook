@@ -1,6 +1,9 @@
 {meta: title All I Left Behind}
 {meta: artist Emmylou Harris}
 {meta: composer Emmylou Harris and Anna McCarrigle}
+{meta: x_source classic-country}
+{meta: x_source_file allileftbehindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]All I left behind should come [C]as no [G]surprise
@@ -41,3 +44,8 @@
 [D7]Of all I left behind with you along the lost [G]highway
 [D7]Of all I left [G]behind
 {end_of_verse}
+
+
+
+
+

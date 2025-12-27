@@ -1,6 +1,9 @@
 {meta: title I Will Trade the Old Cross for a Crown}
 {meta: artist Doyle Lawson}
 {meta: composer Johnson Oatman Jr. and John M. Henson}
+{meta: x_source classic-country}
+{meta: x_source_file iwilltradetheoldcrossforacrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I shall not bear the [D7]cross through yon [G]city
@@ -36,3 +39,7 @@ When the [D7]burdens of [A7]life I lay [D7]down
 When those [G]pearly gates for [B7]me shall swing [C]open
 [G]I will [C]trade the old [D7]cross for a [G]crown
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Heaven On Earth}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file heavenonearthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heaven is [F]right here on [G7]earth
@@ -28,3 +31,6 @@ Keeps me [C]walking on streets of [Am]gold
 Happiness [F]reaches far and [G7]wide
 Heaven on earth is by your [C]side
 {end_of_verse}
+
+
+

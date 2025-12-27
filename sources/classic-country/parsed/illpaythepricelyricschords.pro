@@ -1,6 +1,9 @@
 {meta: title I'll Pay The Price}
 {meta: artist Cowboy Copas}
 {meta: composer Redd Stewart and Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file illpaythepricelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm thinking of [F]yesterday
@@ -43,3 +46,8 @@ There's no need to say that I don't love [F]you
 [C]I'll pay the price the rest of my [F]life
 [G7]For I have waited too [C]long
 {end_of_verse}
+
+
+
+
+

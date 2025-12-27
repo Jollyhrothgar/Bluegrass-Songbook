@@ -1,6 +1,9 @@
 {meta: title St. Louis Blues}
 {meta: artist Roy Drusky}
 {meta: composer William Handy}
+{meta: x_source classic-country}
+{meta: x_source_file stlouisblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I hate to [C]see that evenin' sun go down
@@ -27,3 +30,6 @@ That [G7]gal got a [F]heart like a rock cast in the [C]sea
 Or [G7]else she wouldn't have [F]gone so far from [C]me
 Or [G7]else she wouldn't have [F]gone so [G7]far from [C]me
 {end_of_verse}
+
+
+

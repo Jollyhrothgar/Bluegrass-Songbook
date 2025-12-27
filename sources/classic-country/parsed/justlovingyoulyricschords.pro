@@ -1,6 +1,9 @@
 {meta: title Just Loving You}
 {meta: artist Doyle Lawson}
 {meta: composer Doyle Lawson and Jamie Dailey}
+{meta: x_source classic-country}
+{meta: x_source_file justlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Loving [C]you loving [G]you 
@@ -57,3 +60,9 @@ You went and turned your back on me
 I packed my bags and [C]had to leave
 I [G]can't believe I'm [D7]still in love with [G]you
 {end_of_verse}
+
+
+
+
+
+

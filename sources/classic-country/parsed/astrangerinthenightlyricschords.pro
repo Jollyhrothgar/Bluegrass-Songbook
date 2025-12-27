@@ -1,6 +1,9 @@
 {meta: title A Stranger in The Night}
 {meta: artist Hank Williams}
 {meta: composer Hank Williams and Bill Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file astrangerinthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm lonesome for someone to kiss [F]me [C]goodnight
@@ -36,3 +39,7 @@
 [F]I know I can't face tomorrow [C]alone
 [G7]And I'm lost like a stranger in the [C]night
 {end_of_verse}
+
+
+
+

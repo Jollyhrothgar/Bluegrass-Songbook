@@ -1,6 +1,9 @@
 {meta: title Fast Company}
 {meta: artist Bobby Flores}
 {meta: composer Eddie Miller and Skeets McDonald}
+{meta: x_source classic-country}
+{meta: x_source_file fastcompanylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish you knew what I go through
@@ -43,3 +46,8 @@ When you know that you should [D7]be right here with [G7]me
 These open [F]arms wait patient[C]ly
 I [G7]still believe someday you'll be my fast compa[C]ny
 {end_of_verse}
+
+
+
+
+

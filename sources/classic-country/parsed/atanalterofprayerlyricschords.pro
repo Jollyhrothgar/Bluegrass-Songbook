@@ -1,6 +1,9 @@
 {meta: title At An Altar Of Prayer}
 {meta: artist Jimmie Davis}
 {meta: composer Ike Davis and Ray Heady}
+{meta: x_source classic-country}
+{meta: x_source_file atanalterofprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many long years [C7]ago from [F]heaven
@@ -29,3 +32,6 @@ With com[C]passion He [D7]welcomed me [G]there[G7]
 And my [C]burdens so [C7]heavy were [F]lifted
 When we [C]met at an [G7]altar of [C]prayer
 {end_of_verse}
+
+
+

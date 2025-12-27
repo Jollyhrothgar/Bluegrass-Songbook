@@ -1,6 +1,9 @@
 {meta: title That's My Lord}
 {meta: artist Ray Price}
 {meta: composer Lee Dresser}
+{meta: x_source classic-country}
+{meta: x_source_file thatsmylordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear a voice but there's no sound
@@ -54,3 +57,13 @@ I feel His touch but there's no hand
 [F]And if you'll only let [G7]Him
 [F]My [Dm][Em]L-o-r-d  will love you [C]too
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

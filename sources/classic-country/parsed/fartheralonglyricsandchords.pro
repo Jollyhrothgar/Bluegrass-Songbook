@@ -1,6 +1,9 @@
 {meta: title Farther Along Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer W.B. Stevens and Jesse R. Baxter}
+{meta: x_source classic-country}
+{meta: x_source_file fartheralonglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tempted and tried we're [F]oft made to [C]wonder 
@@ -36,3 +39,7 @@ Farther along we'll [D7]understand [G7]why
 Cheer up my [C]brother live [F]in the [C]sunshine 
 We'll understand it [G7]all by and [C]by
 {end_of_verse}
+
+
+
+

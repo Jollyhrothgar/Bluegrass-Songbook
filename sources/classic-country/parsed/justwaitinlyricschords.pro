@@ -1,6 +1,9 @@
 {meta: title Just Waitin'}
 {meta: artist Hank Williams}
 {meta: composer Hank Williams, Sr. and Bob Gazzaway}
+{meta: x_source classic-country}
+{meta: x_source_file justwaitinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The old maid's waitin' for leap year to come
@@ -64,3 +67,11 @@ Violets just waitin' for [C]dew
 [D7]Bees just waitin' for honey
 And honey I'm just waitin' for [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+

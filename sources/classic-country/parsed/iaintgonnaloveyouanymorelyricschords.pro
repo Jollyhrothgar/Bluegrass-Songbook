@@ -1,6 +1,9 @@
 {meta: title I Ain’t Gonna Love You Anymore}
 {meta: artist Hank Williams}
 {meta: composer Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file iaintgonnaloveyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No need for you to sit alone
@@ -39,3 +42,8 @@ Oh I gave you love and you broke my heart
 You [F]cheated on me from the start
 An' [G7]now I ain't a'gonna love you [C]anymore  
 {end_of_verse}
+
+
+
+
+

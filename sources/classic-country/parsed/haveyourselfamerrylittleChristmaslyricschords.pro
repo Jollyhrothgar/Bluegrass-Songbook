@@ -1,6 +1,9 @@
 {meta: title Have Yourself A Merry Little Christmas}
 {meta: artist Suzy Bogguss}
 {meta: composer Hugh Martin and Ralph Blane}
+{meta: x_source classic-country}
+{meta: x_source_file haveyourselfamerrylittleChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have your[Am]self a [Dm]merry little [G7]Christmas
@@ -38,3 +41,8 @@ Gather [G7]near to [Am]us once [Dm]more[G7]
 {start_of_verse: Verse 5}
 [F]Have yourself a [Dm]merry little [G7]Christmas [C]now
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can't Stop}
 {meta: artist Alabama}
 {meta: composer Robert Byrne and Teddy Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file icantstoplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My love is like an automobile
@@ -47,3 +50,10 @@ I can't [Am]stop  [D7]no I can't [Em]stop
 I'm gonna love you all over and then 
 I can't [Am]stop  [D7]no I can't [G]stop
 {end_of_verse}
+
+
+
+
+
+
+

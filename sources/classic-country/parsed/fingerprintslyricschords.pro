@@ -1,6 +1,9 @@
 {meta: title Fingerprints}
 {meta: artist Patsy Cline}
 {meta: composer Donn Hecht, W.O. Fleener, W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file fingerprintslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I feel the [G]fingerprints
@@ -61,3 +64,13 @@ And hurt me so
 [A7]And you've made up your mind
 [D7]But I just thought you ought to know
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

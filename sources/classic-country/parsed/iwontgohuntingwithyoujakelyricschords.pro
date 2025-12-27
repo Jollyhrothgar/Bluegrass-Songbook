@@ -1,6 +1,9 @@
 {meta: title I Won't Go Hunting With you Jake}
 {meta: artist Jimmy Dean}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file iwontgohuntingwithyoujakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh it's springtime in the mountains
@@ -101,3 +104,20 @@ Beneath them gingham [C]gowns
 Can't even read my catalog
 Like I used to [C]do
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

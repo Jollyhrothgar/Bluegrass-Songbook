@@ -1,6 +1,9 @@
 {meta: title Love Thief}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Mary Lou Powers}
+{meta: x_source classic-country}
+{meta: x_source_file lovethieflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you stole my heart and that's a sin
@@ -63,3 +66,15 @@ But all along you should have known
 {start_of_verse: Verse 13}
 [D7]Love thief I was stealing [G]too
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

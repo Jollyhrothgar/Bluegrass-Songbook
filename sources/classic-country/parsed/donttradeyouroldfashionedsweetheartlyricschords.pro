@@ -1,6 +1,9 @@
 {meta: title Don't Trade Your Old Fashioned Sweetheart}
 {meta: artist Ernest Tubb}
 {meta: composer Eddie Noack}
+{meta: x_source classic-country}
+{meta: x_source_file donttradeyouroldfashionedsweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take away the [G7]bright lights and [C]music 
@@ -29,3 +32,6 @@ Don't [A7]take this hard hearted woman for [D7]your old fashioned girl
 Don't [G]trade one who loves you for the [G7]bright lights that [C]gleam
 Don't trade your old fashioned [G]sweetheart for a [D7]honky tonk [G]queen
 {end_of_verse}
+
+
+

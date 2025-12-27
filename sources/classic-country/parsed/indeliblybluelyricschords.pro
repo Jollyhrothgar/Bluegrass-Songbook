@@ -1,6 +1,9 @@
 {meta: title Indelibly Blue}
 {meta: artist Reba McEntire}
 {meta: composer Jim Peterik}
+{meta: x_source classic-country}
+{meta: x_source_file indeliblybluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Lost in the [C]city [F]deserted and [C]cold 
@@ -47,3 +50,9 @@ And it's making me [F]b-[G7]lue in[Em]delibly [Am]blue
 [F]I can't erase the [G7]memories 
 Of [Em]me and [Am]y-o[F]--[G7]u in[F]delibly [C]blue
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Right Hand Man}
 {meta: artist Eddy Raven}
 {meta: composer Gary Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file righthandmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Johnny gave [D7]Susan a [G]wedding band 
@@ -60,3 +63,10 @@ Carry the [G]load when the [C]wind blows [G]cold
 He can be [C]replaced by another
 Who's [D7]carrying the [G]gold
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Seasons Come Seasons Go}
 {meta: artist Faron Young}
 {meta: composer Bobby Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file seasonscomeseasonsgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The seasons come the [G7]seasons [C]go
@@ -39,3 +42,8 @@ And my tears like withered leaves will [G7]fall
 But [F]spring could bring some glad [C]tomorrow
 And darling we could be [G7]happy after [C]all
 {end_of_verse}
+
+
+
+
+

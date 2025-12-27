@@ -1,6 +1,9 @@
 {meta: title Sinners or Saints}
 {meta: artist George Jones}
 {meta: composer Vip Vipperman, Darryl Worley, J.B. Rudd}
+{meta: x_source classic-country}
+{meta: x_source_file sinnersorsaintslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Young ones in the jailhouse [F]sleeping it [C]off
@@ -43,3 +46,9 @@ The [F]only thing different in sinners and saints
 [C]One is forgiven and the [G7]other one [C]ain't
 One is forgiven and the [G7]other one [C]ain't
 {end_of_verse}
+
+
+
+
+
+

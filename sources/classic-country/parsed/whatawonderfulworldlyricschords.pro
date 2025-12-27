@@ -1,6 +1,9 @@
 {meta: title What A Wonderful World}
 {meta: artist Ray Price}
 {meta: composer George Weiss, George Douglas, Bob Thiele}
+{meta: x_source classic-country}
+{meta: x_source_file whatawonderfulworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see trees of [Em]green [F]red roses [Em]too
@@ -36,3 +39,8 @@ And I [G]think to myself [G7]what a  wonderful [G7][C]world
 {start_of_verse: Verse 5}
 Yes I [Dm]think to myself what a [G7]wonderful [C]world
 {end_of_verse}
+
+
+
+
+

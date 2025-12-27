@@ -1,6 +1,9 @@
 {meta: title Lonely Is Another State}
 {meta: artist John Anderson}
 {meta: composer Ervan James Parker and John David Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file lonelyisanotherstatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s nothing I feel stronger than the need to travel on
@@ -39,3 +42,8 @@ Every [Am]change in times and scenery and [C]the friends I’ve met along the [D
 [C]And I know it won’t last for[G]ever
 Cause [A7]lonely is another state and I’m just passing [D7]through
 {end_of_verse}
+
+
+
+
+

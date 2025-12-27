@@ -1,6 +1,9 @@
 {meta: title On The Wings Of A Nightingale}
 {meta: artist Everly Brothers}
 {meta: composer Paul McCartney}
+{meta: x_source classic-country}
+{meta: x_source_file onthewingsofanightingalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I love I get a [D7]feeling
@@ -42,3 +45,7 @@ Like I'm [G]traveling through the [C]sky
 On the wings of a [G]nightingale   
 [C]On the wings of a [G]nightingale
 {end_of_verse}
+
+
+
+

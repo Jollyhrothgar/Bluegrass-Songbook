@@ -1,6 +1,9 @@
 {meta: title Hey There Little Miss Tease}
 {meta: artist Ricky Nelson}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file heytherelittlemissteaselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey there little miss [Em]tease you [G]got me weak in the [Em]knees
@@ -39,3 +42,8 @@ The next day ya [A7]get along without me [D7]please tell me why why
 Well [G]don't say no please say yes [C]give our love a test
 [G]I only wanna [D7]please little miss [G]tease
 {end_of_verse}
+
+
+
+
+

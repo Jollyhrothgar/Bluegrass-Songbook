@@ -1,5 +1,8 @@
 {meta: title Don't Put An End To Me}
 {meta: artist Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file dontputanendtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I feel you're tryin' to drive me [F]away [C]from you
@@ -28,3 +31,6 @@ Don't [G7]put an end to me and [F]all my [C]happiness
 Please [C]tell me what I accuse you of [F]can't really [C]be
 Don't [F]rush don't hurt [G7]don't put an end to [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title What Became Of That Beautiful Picture}
 {meta: artist Charlie Waller}
 {meta: composer Shep Sessoms and Mel Butler}
+{meta: x_source classic-country}
+{meta: x_source_file whatbecameofthatbeautifulpicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I vision the garden of [D7]roses
@@ -43,3 +46,8 @@ It's faded from my memo[D7]ry
 What became of that beautiful [G]picture
 The [A7]one that you [D7]painted for [G]me
 {end_of_verse}
+
+
+
+
+

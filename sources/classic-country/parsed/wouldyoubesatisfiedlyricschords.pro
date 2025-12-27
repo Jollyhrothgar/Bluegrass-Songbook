@@ -1,6 +1,9 @@
 {meta: title Would You Be Satisfied}
 {meta: artist Jean Shepard}
 {meta: composer Johnny Mullins}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyoubesatisfiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Would You Be Satisfied
@@ -65,3 +68,12 @@ And [C]lead you down that road [G]again
 To all those honky tonks you danced in
 [D7]Would you be [G]satisfied
 {end_of_verse}
+
+
+
+
+
+
+
+
+

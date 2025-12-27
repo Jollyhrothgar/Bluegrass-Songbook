@@ -1,6 +1,9 @@
 {meta: title I Hate Myself}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Ted Vandall}
+{meta: x_source classic-country}
+{meta: x_source_file ihatemyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hate myself [F] for making you [C]cry
@@ -20,3 +23,5 @@ I know I have [G7]hurt you and I hate [C]myself
 It’s you I love [F] there’s nobody [C]else
 I know I have [G7]hurt you and I hate [C]myself
 {end_of_verse}
+
+

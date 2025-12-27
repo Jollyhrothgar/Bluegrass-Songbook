@@ -1,6 +1,9 @@
 {meta: title A Little Bit In Love}
 {meta: artist Patty Loveless}
 {meta: composer Steve Earle}
+{meta: x_source classic-country}
+{meta: x_source_file alittlebitinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't fall in love as a rule
@@ -47,3 +50,8 @@ A little bit in love with [G]you
 But I've [D7]got to admit that I'm 
 A little bit in love with [G]you
 {end_of_verse}
+
+
+
+
+

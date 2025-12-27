@@ -1,5 +1,8 @@
 {meta: title Satin Sheets}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file satinsheetslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Satin Sheets to lie on
@@ -25,3 +28,5 @@ Satin Sheets to lie on
 [C]Big long Cadillacs [F]tailor mades upon my back
 [C]Still I want [G7]you to set [C]me free
 {end_of_verse}
+
+

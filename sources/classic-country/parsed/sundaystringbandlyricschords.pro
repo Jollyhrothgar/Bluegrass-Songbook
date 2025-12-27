@@ -1,6 +1,9 @@
 {meta: title Sunday String Band}
 {meta: artist Mel Tillis}
 {meta: composer Ken McDuffie}
+{meta: x_source classic-country}
+{meta: x_source_file sundaystringbandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun found me walking the [F]city this [C]morning
@@ -47,3 +50,9 @@ But I'm playing my music in a [G7]Sunday String [C]Band[G7]
 {start_of_verse: Verse 6}
 [C]Playing my music in a [G7]Sunday String [C]Band
 {end_of_verse}
+
+
+
+
+
+

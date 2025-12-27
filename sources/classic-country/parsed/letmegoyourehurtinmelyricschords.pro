@@ -1,6 +1,9 @@
 {meta: title Let Me Go You're Hurtin' Me}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Lorene Allen}
+{meta: x_source classic-country}
+{meta: x_source_file letmegoyourehurtinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me [F]go please let me [G7]go you're hurtin' [C]me
@@ -33,3 +36,7 @@ Let me [F]go please let me [G7]go you're hurtin' [C]me
 It's [C]more than I can stand let me [F]go while I still [C]can
 Let me [F]go please let me [G7]go you're hurtin' [C]me
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title One More Tomorrow}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file onemoretomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]One more tomorrow to be [C]lonely
@@ -39,3 +42,8 @@ And [G7]one more tomorrow without [C]you
 {start_of_verse: Verse 4}
 [G7]One more tomorrow without [C]you
 {end_of_verse}
+
+
+
+
+

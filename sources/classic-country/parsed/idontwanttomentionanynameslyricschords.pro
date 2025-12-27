@@ -1,6 +1,9 @@
 {meta: title I Don't Want To Mention Any Names}
 {meta: artist Reba McEntire}
 {meta: composer Larry Cordle and Lisa Palas}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttomentionanynameslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a story to tell would you mind listenin'
@@ -48,3 +51,9 @@ But I don't want to [G7]mention any [C]names
 Well I'm [F]tryin' to let her know that I'm [C]wise to her game
 But I don't want to [G7]mention any [C]names
 {end_of_verse}
+
+
+
+
+
+

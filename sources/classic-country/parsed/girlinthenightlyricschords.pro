@@ -1,6 +1,9 @@
 {meta: title Girl in the Night}
 {meta: artist Ray Price}
 {meta: composer Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file girlinthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She lives her life in honky tonks and the crowded backstreet [C]bars
@@ -23,3 +26,5 @@ And the smoke [D7]rings rise but in her eyes there seems to be such [G]regret
 Is she there to tempt a lover in that dress that hugs her [C]tight
 With a [D7]glass of wine to pass the time a lonely girl in the [G]night
 {end_of_verse}
+
+

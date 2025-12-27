@@ -1,5 +1,8 @@
 {meta: title My Love}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file mylovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My love is the [Am]valley 
@@ -30,3 +33,6 @@ It's all God's [C]creation
 And [Am]that's what I love 
 And [F]that's what I [C]lov[Am]e
 {end_of_verse}
+
+
+

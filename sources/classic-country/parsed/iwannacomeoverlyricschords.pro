@@ -1,6 +1,9 @@
 {meta: title I Wanna Come Over}
 {meta: artist Alabama}
 {meta: composer Richard Beraldi and Michael Beraldi}
+{meta: x_source classic-country}
+{meta: x_source_file iwannacomeoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is that what time it is 
@@ -55,3 +58,11 @@ Please [C]say it’s ok and I'll be [Dm]on my way
 {start_of_verse: Verse 7}
 I wanna come [C]ov-[G7]e--[F]r [Fm]I'm coming [C]over
 {end_of_verse}
+
+
+
+
+
+
+
+

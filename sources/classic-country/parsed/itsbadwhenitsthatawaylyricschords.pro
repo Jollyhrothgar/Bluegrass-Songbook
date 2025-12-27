@@ -1,6 +1,9 @@
 {meta: title It's Bad When It's That A Way}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Abe Mulkey}
+{meta: x_source classic-country}
+{meta: x_source_file itsbadwhenitsthatawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you can't grow a crop when it's [F]dew at the plow
@@ -29,3 +32,6 @@ I [C]don't have money to [G7]pay my bills
 [C]I just have heartaches and [F]broken vows
 It's [C]bad when it's that a [G7]way and it's that a way [C]now
 {end_of_verse}
+
+
+

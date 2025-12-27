@@ -1,6 +1,9 @@
 {meta: title As Simple As I Am}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file assimpleasiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know that you could have more than a [F]poor hard working [C]man
@@ -34,3 +37,7 @@
 Tag:
 [F]I hope that you'll [C]accept me [G7]as simple as I [C]am
 {end_of_verse}
+
+
+
+

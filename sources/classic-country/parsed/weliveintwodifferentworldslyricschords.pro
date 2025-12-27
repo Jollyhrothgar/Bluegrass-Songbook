@@ -1,6 +1,9 @@
 {meta: title We Live in Two Different Worlds}
 {meta: artist Hank Williams}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file weliveintwodifferentworldslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We live in two different worlds [F]dear
@@ -29,3 +32,6 @@ We live in two different worlds [F]dear
 [C]Sweetheart remember when your world gets [F]lonesome
 [C]I'll still be [G7]waiting for [C]you
 {end_of_verse}
+
+
+

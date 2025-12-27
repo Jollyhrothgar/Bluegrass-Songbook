@@ -1,6 +1,9 @@
 {meta: title Our Chain Of Love}
 {meta: artist Jack Greene}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file ourchainoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the [F]chain of love is [C]broken 
@@ -36,3 +39,7 @@ With the link of understanding [A7]gone
 The [D7]link of patience must work [G7]overtime 
 Our [Dm]chain of [A7]love can't last [D7]long
 {end_of_verse}
+
+
+
+

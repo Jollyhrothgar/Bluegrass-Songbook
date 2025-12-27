@@ -1,6 +1,9 @@
 {meta: title Fall Softly Snow}
 {meta: artist Jim Ed Brown and Helen Cornelius}
 {meta: composer Jean Surrey}
+{meta: x_source classic-country}
+{meta: x_source_file fallsoftlysnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Fall softly snow 
@@ -44,3 +47,8 @@ Heavenly hosts proclaim the [G]King
 The [D7]Christ child has just [G]arrived
 Si-[D7]lent [G]night
 {end_of_verse}
+
+
+
+
+

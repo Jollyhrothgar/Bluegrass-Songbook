@@ -1,6 +1,9 @@
 {meta: title Every Night About This Time}
 {meta: artist Fats Domino}
 {meta: composer Fats Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file everynightaboutthistimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Every night about this [G]time
@@ -45,3 +48,11 @@ You might as well cool off and die
 [D7]Yes I'm afraid
 [C]I'm gonna have to let my baby [G]be
 {end_of_verse}
+
+
+
+
+
+
+
+

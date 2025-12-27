@@ -1,6 +1,9 @@
 {meta: title Mother's Birthday Song}
 {meta: artist Daniel O'Donnell}
 {meta: composer John Farry}
+{meta: x_source classic-country}
+{meta: x_source_file mothersbirthdaysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She sits there in the corner in that [F]old easy chair
@@ -55,3 +58,10 @@ A [F]lady with a heart of gold [C]mother [G7]sweet mother of [C]mine
 [F]That’s my [C]mother [G7]sweet mother of [C]mine
 [F]My [C]mother [G7]sweet mother of [F]min[C]e
 {end_of_verse}
+
+
+
+
+
+
+

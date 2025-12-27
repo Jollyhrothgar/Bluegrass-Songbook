@@ -1,6 +1,9 @@
 {meta: title My Rifle My Pony And Me}
 {meta: artist Don Williams}
 {meta: composer Paul F. Webster and Dimitri Tiomkin}
+{meta: x_source classic-country}
+{meta: x_source_file myriflemyponyandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun is sinking in the west
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [F]For my rifle my pony and [C]me
 {end_of_verse}
+
+
+
+

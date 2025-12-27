@@ -1,6 +1,9 @@
 {meta: title Heart on the Line (Operator Operator)}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Larry C. Willoughby and Janet K. Willoughby}
+{meta: x_source classic-country}
+{meta: x_source_file heartonthelineoperatoroperatorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I thought it over how it's come to this
@@ -35,3 +38,6 @@ As to reconnect this [F]number
 I just spent my last [C]dime
 She's got my [G7]love on hold and my heart is on the [C]line
 {end_of_verse}
+
+
+

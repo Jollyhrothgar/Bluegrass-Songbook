@@ -1,6 +1,9 @@
 {meta: title Broken Man}
 {meta: artist Mel Tillis}
 {meta: composer Dave Hanner}
+{meta: x_source classic-country}
+{meta: x_source_file brokenmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It’s been a month since she’s been [Am]gone
@@ -43,3 +46,8 @@
 [Em]Then I guess your life’s back in your [A7]hands
 [Am]Women don’t [D7]like a broken [G]man
 {end_of_verse}
+
+
+
+
+

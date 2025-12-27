@@ -1,6 +1,9 @@
 {meta: title Burn Georgia Burn}
 {meta: artist Alabama}
 {meta: composer Roger Murrah and Tim Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file burngeorgiaburnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Atlanta was on fire and so was [Am]she the [Dm]night he [Fm]left her
@@ -41,3 +44,8 @@ She [C]stumbled on an [F]old familiar [Fm]feeling
 [C]Of how he touched her [A]many [C]years [Am]ago
 And [F]how he made her [C]yearn [Em]   [F]bur[Dm]n Georgia [C]burn
 {end_of_verse}
+
+
+
+
+

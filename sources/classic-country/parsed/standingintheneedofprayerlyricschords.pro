@@ -1,5 +1,8 @@
 {meta: title Standing In The Need Of Prayer}
 {meta: artist The Stanley Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file standingintheneedofprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Not my father not my mother but it's me oh Lord
@@ -70,3 +73,16 @@ Not my father not my mother but it's me oh Lord
 Not my father not my mother but it's me oh Lord
 [D7]Standing in the need of [G]prayer
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Smokey On Your Front Door}
 {meta: artist Waylon Jennings}
 {meta: composer Troy Seals, Max D. Barnes, Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file smokeyonyourfrontdoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You got a Smokey on your front door a [G7]Smokey on your back door [C]too
@@ -35,3 +38,7 @@ I can hear you talkin' I can hear you singin' the [F]blues
 With a [C]Smokey on your front door a [G7]Smokey on your back door [C]too
 Smokey on your front door a [G7]Smokey on your back door [C]too
 {end_of_verse}
+
+
+
+

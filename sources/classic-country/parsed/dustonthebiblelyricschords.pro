@@ -1,6 +1,9 @@
 {meta: title Dust on the Bible}
 {meta: artist Hank Williams}
 {meta: composer Johnny and Walter Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file dustonthebiblelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went into a home one day to see some friends of mine
@@ -36,3 +39,7 @@ Oh if you have a friend you'd like to help along life's way
 [C]The best advice to give him that will make his burden light
 [G7]Is to dust the family Bible trade the wrong way for the [C]right
 {end_of_verse}
+
+
+
+

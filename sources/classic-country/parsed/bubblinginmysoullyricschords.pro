@@ -1,6 +1,9 @@
 {meta: title Bubbling In My Soul}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Tommy James and Jerry Organ}
+{meta: x_source classic-country}
+{meta: x_source_file bubblinginmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's bubblin' bubblin' 
@@ -57,3 +60,10 @@ The half has not been [F]told
 That's why His [G7]joy is bubblin' 
 Bubblin' bubblin' in my [C]soul
 {end_of_verse}
+
+
+
+
+
+
+

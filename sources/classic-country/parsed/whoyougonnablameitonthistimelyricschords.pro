@@ -1,5 +1,8 @@
 {meta: title Who You Gonna Blame It On This Time}
 {meta: artist Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file whoyougonnablameitonthistimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh you say it wasn't your fault the [F]reason that you're [C]late 
@@ -32,3 +35,7 @@ Who are you gonna blame it [G7]on this [C]time
 {start_of_verse: Verse 4}
 So who are you gonna blame it [G7]on this [C]time 
 {end_of_verse}
+
+
+
+

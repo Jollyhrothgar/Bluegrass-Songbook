@@ -1,6 +1,9 @@
 {meta: title God Is Love}
 {meta: artist Doyle Lawson}
 {meta: composer Bill Castle and Dee Gaskin}
+{meta: x_source classic-country}
+{meta: x_source_file Godislovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Those folks who say that God is dead [C7]must see through vision [F]dim
@@ -29,3 +32,6 @@ I [F]hear Him in a robin's song and [D7]in a rippling [G7]stream
 [C]He lives in great majestic pines [C7]that reach the clouds [F]above
 He's in the smile of a [C]little child [G7]oh truly God is [C]love
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Left Your Mark On Me}
 {meta: artist KItty Wells}
 {meta: composer Johnny Wright, Jack Anglin, Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file youleftyourmarkonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You left your mark on me beggin' [C]all my heart to stay
@@ -29,3 +32,6 @@ I wake up crying because you're [D7]gone
 Though [C]we are far apart [G]still I can't be free
 There's no use denying you [D7]left your mark on [G]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title There's No Justice}
 {meta: artist George Jones}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file theresnojusticelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I told you if you walked out on me [D7]we were through
@@ -33,3 +36,6 @@ If wrong can triumph [G7]over right
 [C]If we are licked before we fight
 There's no [G]justice in this [D7]world any[G]more
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Object Of My Affection}
 {meta: artist Faron Young}
 {meta: composer Pinky Tomlin, Coy Poe, Jimmie Grier}
+{meta: x_source classic-country}
+{meta: x_source_file theobjectofmyaffectionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The object of my [G7]affection can [C]change my com[G7]plexion 
@@ -41,3 +44,8 @@ Do what she wants to do [G7]I won't care
 From [F]white to [G7]rosy [F]red
 [Dm]Anytime she [F]holds my [G7]hand and tells me that she's [C]mine[Dm]
 {end_of_verse}
+
+
+
+
+

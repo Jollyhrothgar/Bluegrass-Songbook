@@ -1,6 +1,9 @@
 {meta: title Country Music Nightmare}
 {meta: artist Boxcar Willie}
 {meta: composer and recorded by Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file countrymusicnightmarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was a [F]country music nightmare the [C]worst I’d ever seen
@@ -62,3 +65,11 @@ I [C]stubbed my toe on the floor and had a big [G7]G chord on the pillow
 [C]Why can’t I have some nice [F]dreams about movie [G7]stars
 Pretty [C]girls
 {end_of_verse}
+
+
+
+
+
+
+
+

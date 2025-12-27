@@ -1,5 +1,8 @@
 {meta: title Don't Let Her Know}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file dontletherknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lips  make a smile  on my [F]face
@@ -17,3 +20,4 @@
 [F]Don't let her know  don't let her [G7]know
 [C]How much I've cried
 {end_of_verse}
+

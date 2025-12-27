@@ -1,5 +1,8 @@
 {meta: title No Use To Cry}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file nousetocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No use to cry don't even try to stop [C]yourself from being [G]lonely
@@ -24,3 +27,5 @@
 [C]Keep all your love deep [G]undercover
 [D7]Then when he's gone and you're alone no use to [G]cry
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title You're the Reason I'm Living}
 {meta: artist Wanda Jackson}
 {meta: composer Bobby Darin}
+{meta: x_source classic-country}
+{meta: x_source_file yourethereasonimlivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're the reason I'm [F]living 
@@ -29,3 +32,6 @@ You're the thing that I [C]do
 You're the reason I'm [G7]living 
 I'd be lost without [C]you
 {end_of_verse}
+
+
+

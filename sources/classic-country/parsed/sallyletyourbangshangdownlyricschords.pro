@@ -1,6 +1,9 @@
 {meta: title Sally Let Your Bangs Hang Down}
 {meta: artist Leona Williams}
 {meta: composer Billy Cox and Clarke Van Ness}
+{meta: x_source classic-country}
+{meta: x_source_file sallyletyourbangshangdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I met a gal from Old Kentucky 
@@ -46,3 +49,7 @@ I'll [C]find out what Sally's got
 [F]Makes a man think she's so hot
 [C]Sally let your [G7]bangs hang [C]down
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If She Could See Me Now}
 {meta: artist Ray Price}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file ifshecouldseemenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw the one I loved and lost last night [C]again
@@ -29,3 +32,6 @@ How sad I really looked  [A7]without my party face [D7]on
 The [G]way I just give up sit down and cry out [C]loud 
 But [D7]oh if she could see me [G]now
 {end_of_verse}
+
+
+

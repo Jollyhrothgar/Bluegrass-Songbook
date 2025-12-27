@@ -1,6 +1,9 @@
 {meta: title I Dream Of Jeannie With The Light Brown Hair}
 {meta: artist Charlie Rich}
 {meta: composer Stephen C. Foster}
+{meta: x_source classic-country}
+{meta: x_source_file idreamofjeanniewiththelightbrownhairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I dream of Jeannie with the light brown hair
@@ -28,3 +31,6 @@ Many are the sweet notes her merry heart would pour
 [Dm]Jeannie with the [G7]light brown [C]hair
 [Dm]Jeannie with the [G7]light brown [C]hair
 {end_of_verse}
+
+
+

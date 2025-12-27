@@ -1,6 +1,9 @@
 {meta: title Even A Wino Has A Home}
 {meta: artist Cal Smith}
 {meta: composer Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file evenawinohasahomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Momma your [F]long lost son is [C]hungry
@@ -29,3 +32,6 @@ But the wine just started soaking in my [G7]bones
 [C]But you know momma I [F]really think that I can [C]shake it
 Did you [F]tell me that a [G7]wino has a [C]home
 {end_of_verse}
+
+
+

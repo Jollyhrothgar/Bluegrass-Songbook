@@ -1,6 +1,9 @@
 {meta: title I Just Can't Help Believin'}
 {meta: artist Ronnie Milsap}
 {meta: composer Cynthia Weil and Barry Mann}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcanthelpbelievinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just can't help believin'
@@ -38,3 +41,7 @@ For more than just a [C]day
 {start_of_verse: Verse 5}
 [G7]For more than just a [C]day
 {end_of_verse}
+
+
+
+

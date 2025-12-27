@@ -1,6 +1,9 @@
 {meta: title It Only Takes One Bar (To Make A Prison)}
 {meta: artist Tracy Lawrence}
 {meta: composer Paul Nelson, Kenny Beard, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file itonlytakesonebartomakeaprisonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night she wasn't [Bm]sleeping when [C]I came slipping [G]in
@@ -34,3 +37,7 @@ But it [Am]only [Bm]takes one [C]fool to [D7]be a[G]lone
 It [C]only takes one [D7]bar to [Em]make a [G]pri[C]son
 And it [Am]only [Bm]takes one [C]fool to [D7]be a[G]lone
 {end_of_verse}
+
+
+
+

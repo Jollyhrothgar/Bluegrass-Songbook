@@ -1,6 +1,9 @@
 {meta: title Don't Think I Don't Love You}
 {meta: artist George Jones}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file dontthinkidontloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your old cheatin' heart has finally caught [C]you
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]Don't think I don't love you cause I [G]don't
 {end_of_verse}
+
+
+
+

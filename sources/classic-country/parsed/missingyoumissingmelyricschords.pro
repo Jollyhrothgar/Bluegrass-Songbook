@@ -1,5 +1,8 @@
 {meta: title Missing You Missing Me}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file missingyoumissingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love is gone  but [D7]not [G]forgotten 
@@ -28,3 +31,6 @@ Wishing you  [D7]were missing [G]me
 Missing you  I'll [C]never be [G]free 
 Wishing you  were [D7]missing [G]me
 {end_of_verse}
+
+
+

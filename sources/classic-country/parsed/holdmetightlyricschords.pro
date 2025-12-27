@@ -1,6 +1,9 @@
 {meta: title Hold Me Tight}
 {meta: artist Anne Murray}
 {meta: composer Johnny Nash}
+{meta: x_source classic-country}
+{meta: x_source_file holdmetightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I don't wanna [D7]hear it no more [Am]fussing
@@ -37,3 +40,8 @@ I know I was wrong and I was just a fool
 [D7]Pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa [G]pa
 [D7]pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa pa [G]pa
 {end_of_verse}
+
+
+
+
+

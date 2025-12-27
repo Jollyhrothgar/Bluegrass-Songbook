@@ -1,6 +1,9 @@
 {meta: title Foreign Car}
 {meta: artist Hank Locklin}
 {meta: composer Lawton Williams}
+{meta: x_source classic-country}
+{meta: x_source_file foreigncarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's nothing in the world that pleases me
@@ -50,3 +53,11 @@ I cannot figure out what they go there for
 You can fill up the tank and drive all day
 [D7]On a gallon of gas you'd go a long long [G]way
 {end_of_verse}
+
+
+
+
+
+
+
+

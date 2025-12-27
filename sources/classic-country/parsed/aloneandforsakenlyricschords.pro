@@ -1,5 +1,8 @@
 {meta: title Alone and Forsaken}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file aloneandforsakenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]We met in the springtime when blossoms unfold
@@ -51,3 +54,12 @@ Forsaken forgotten  without [E7]any [Am]love
 The roses have faded there's frost at my door
 The birds in the morning don't [E7]sing [Am]anymore
 {end_of_verse}
+
+
+
+
+
+
+
+
+

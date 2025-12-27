@@ -1,6 +1,9 @@
 {meta: title Got no Reason for Going Home}
 {meta: artist Gene Watson}
 {meta: composer Johnny Russell}
+{meta: x_source classic-country}
+{meta: x_source_file gotnoreasonforgoinghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Got no reason now for going [F]home 
@@ -48,3 +51,10 @@ Got no one there to talk to
 And even though I know I ought [F]to
 Got no [G7]reason now for going [C]home
 {end_of_verse}
+
+
+
+
+
+
+

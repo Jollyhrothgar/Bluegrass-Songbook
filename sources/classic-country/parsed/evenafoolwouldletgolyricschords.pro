@@ -1,6 +1,9 @@
 {meta: title Even A Fool Would Let Go}
 {meta: artist John Anderson}
 {meta: composer Kerry Chater and Tom Snow}
+{meta: x_source classic-country}
+{meta: x_source_file evenafoolwouldletgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Even A Fool Would Let Go
@@ -42,3 +45,7 @@ Even [Am]though there's no reason to [Dm]doubt  [G7]this can never [C]be
 [G7]You keep sayin' it's [C]wrong
 Neither of [G7]us is [C]free and [Dm]still I want to [F]hold on [G7]
 {end_of_verse}
+
+
+
+

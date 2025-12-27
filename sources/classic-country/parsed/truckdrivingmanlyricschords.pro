@@ -1,6 +1,9 @@
 {meta: title Truck Driving Man}
 {meta: artist Buck Owens}
 {meta: composer Terry Fell}
+{meta: x_source classic-country}
+{meta: x_source_file truckdrivingmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I stopped at a roadhouse in [C]Texas
@@ -36,3 +39,7 @@ For [G]it is the best in the [D7]land
 I'll [G]put a nickel in the [C]jukebox
 And [D7]play the truck driving [G]man
 {end_of_verse}
+
+
+
+

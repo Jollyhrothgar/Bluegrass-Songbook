@@ -1,6 +1,9 @@
 {meta: title Fool For Your Love}
 {meta: artist Mickey Gilley}
 {meta: composer Don R. Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file foolforyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm just a [C]fo-[Am]ol for you [Dm]baby[G7]
@@ -46,3 +49,8 @@ And you [F]know it's not enough
 [Dm]I'm just a [G7]fool for your [C]love [Am]
 [Dm]I'm just a [G7]fool for your [C]love
 {end_of_verse}
+
+
+
+
+

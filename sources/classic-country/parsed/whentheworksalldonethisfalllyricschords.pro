@@ -1,6 +1,9 @@
 {meta: title When The Works All Done This Fall}
 {meta: artist Marty Robbins}
 {meta: composer D.J. O'Malley}
+{meta: x_source classic-country}
+{meta: x_source_file whentheworksalldonethisfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A group of jolly cowboys discussing plans at [F]ease
@@ -43,3 +46,8 @@ They buried Charlie at daybreak no tombstone at his [F]head
 Charlie died at daybreak he died from a [F]fall
 Poor [G7]boy won't see his mother when the work's all done this [C]fall
 {end_of_verse}
+
+
+
+
+

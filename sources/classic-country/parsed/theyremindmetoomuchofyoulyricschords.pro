@@ -1,6 +1,9 @@
 {meta: title They Remind Me Too Much Of You}
 {meta: artist Elvis Presley}
 {meta: composer Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file theyremindmetoomuchofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take away the scent of flowers [Am]
@@ -29,3 +32,6 @@ Our love just [C7]wasn't meant to [F]be
 But please come back to me my [C]darling
 If they [G7]remind you too much of [C]me
 {end_of_verse}
+
+
+

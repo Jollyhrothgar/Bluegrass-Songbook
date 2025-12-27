@@ -1,6 +1,9 @@
 {meta: title My World Of Memories}
 {meta: artist Johnny Paycheck}
 {meta: composer Johnny Paycheck and Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file myworldofmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walk in[C7]to my world of [F]memories
@@ -36,3 +39,7 @@ Where the sun always [C]shines
 It’s a private world [G7]just for me
 And it’s where I spend my [C]time
 {end_of_verse}
+
+
+
+

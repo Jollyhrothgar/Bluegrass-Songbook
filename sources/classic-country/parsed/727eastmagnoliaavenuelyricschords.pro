@@ -1,6 +1,9 @@
 {meta: title 727 East Magnolia Avenue}
 {meta: artist Kenny Rogers}
 {meta: composer Steven Jones and Bobby Tomberlin}
+{meta: x_source classic-country}
+{meta: x_source_file 727eastmagnoliaavenuelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You [C]won't [G]believe where I [Am]was today
@@ -34,3 +37,7 @@ At [Am]7-2-[G]7 East [D7]Magnolia Ave[G]nue
 If I could [C]make one wish oh I'd relive my [G]life with [Em]you
 At [Am]7-2-[G]7 East [D7]Magnolia Ave[G]nue
 {end_of_verse}
+
+
+
+

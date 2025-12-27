@@ -1,6 +1,9 @@
 {meta: title A Christmas Card}
 {meta: artist Doug Stone}
 {meta: composer Mike Dyche}
+{meta: x_source classic-country}
+{meta: x_source_file aChristmascardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Close your [G7]eyes and [F]listen
@@ -48,3 +51,9 @@ On this [Em]Christmas [Dm]that we [C]share
 And I wish you [Dm]all a [Em]world of [F]love
 On this [Em]Christmas [Dm]that we [C]share
 {end_of_verse}
+
+
+
+
+
+

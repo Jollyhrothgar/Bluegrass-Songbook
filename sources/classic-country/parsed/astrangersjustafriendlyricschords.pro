@@ -1,6 +1,9 @@
 {meta: title A Stranger's Just A Friend}
 {meta: artist Jim Reeves}
 {meta: composer Gilbert Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file astrangersjustafriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If ever your life is [G7]lonely
@@ -27,3 +30,6 @@ A [C]stranger's just a [G7]friend you do not [C]know
 [F]No matter where you [G7]go of [C]this you can be [F]sure
 A [C]stranger's just a [G7]friend you do not [C]know
 {end_of_verse}
+
+
+

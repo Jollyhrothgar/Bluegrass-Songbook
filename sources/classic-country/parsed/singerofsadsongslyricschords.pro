@@ -1,6 +1,9 @@
 {meta: title Singer Of Sad Songs}
 {meta: artist Waylon Jennings}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file singerofsadsongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Widow Jones couldn't [F]make it on her [C]own
@@ -43,3 +46,8 @@ And she cried Singer of Sad [F]Songs
 [C]Doctor of broken [F]hearts
 Got a [C]slightly used [G7]diamond for your [C][F]pay
 {end_of_verse}
+
+
+
+
+

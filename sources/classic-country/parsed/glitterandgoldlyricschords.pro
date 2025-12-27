@@ -1,5 +1,8 @@
 {meta: title Glitter And Gold}
 {meta: artist The Everly Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file glitterandgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl I know what he can give [F]you
@@ -55,3 +58,10 @@
 [F]Glitter and [C]gold (glitter and [A]gold
 [F]Glitter and [C]gold (glitter and [A]gold
 {end_of_verse}
+
+
+
+
+
+
+

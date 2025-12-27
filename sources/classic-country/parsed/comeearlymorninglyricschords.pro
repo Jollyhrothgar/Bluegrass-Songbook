@@ -1,6 +1,9 @@
 {meta: title Come Early Morning}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file comeearlymorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been a walking  [F]walking in the [C]moonlight 
@@ -36,3 +39,7 @@ And I have stumbled  down the other [G7]side
 And I've been [C]tempted  [F]tried and [C]troubled   
 Come early morning I'll be [G7]home and sat[C]isfied
 {end_of_verse}
+
+
+
+

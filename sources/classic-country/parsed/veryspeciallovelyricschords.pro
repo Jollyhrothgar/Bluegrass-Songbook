@@ -1,6 +1,9 @@
 {meta: title Very Special Love}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Teddy Gentry, Jeff Cook}
+{meta: x_source classic-country}
+{meta: x_source_file veryspeciallovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She said I spent eight [F]years in Cali[C]fornia[F]
@@ -43,3 +46,8 @@ That's the [C]reason why I [F]talk the way I [C]do [F]
 I [C]know we shared a [F]very special [C]friendship[F]
 The [C]night we made a [G7]very special [C]love
 {end_of_verse}
+
+
+
+
+

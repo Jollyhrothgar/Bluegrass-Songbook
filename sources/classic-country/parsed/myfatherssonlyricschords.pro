@@ -1,6 +1,9 @@
 {meta: title My Father's Son}
 {meta: artist Ricky Skaggs}
 {meta: composer Ricky Skaggs and George Green}
+{meta: x_source classic-country}
+{meta: x_source_file myfatherssonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My history is no secret it's [C]written in the [D7]stones
@@ -43,3 +46,8 @@ But the [C]highest laws are [G]written on the hearts of honest [Em]men
 [G]When that cup is passed to me to [C]do what must be [D7]done
 On a [G]chunk of coal just carve these words I [C]was just my father's [G]son
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title All His Children}
 {meta: artist Charlie Pride}
 {meta: composer Alan Bergman, Marvin Bergman, Henry Mancini}
+{meta: x_source classic-country}
+{meta: x_source_file allhischildrenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you're standing alone  with [F]the mountains and the [C]sea
@@ -29,3 +32,6 @@ Though you don't [C]hear a sound as you look [F]around
 [C7]No matter where [F]you're going or where you’ve [C]been
 You're [G7]part of the family of [C]man
 {end_of_verse}
+
+
+

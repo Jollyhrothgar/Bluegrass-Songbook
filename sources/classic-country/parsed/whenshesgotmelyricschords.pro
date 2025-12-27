@@ -1,5 +1,8 @@
 {meta: title When She's Got Me}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file whenshesgotmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night she made it plain she didn't want [F]me
@@ -32,3 +35,7 @@ And [D7]she knew how much I hate [G7]to be [Em][F]alone
 {start_of_verse: Verse 5}
 [G7]When she's got me where she wants [C]me
 {end_of_verse}
+
+
+
+

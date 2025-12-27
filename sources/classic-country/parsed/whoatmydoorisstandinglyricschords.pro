@@ -1,6 +1,9 @@
 {meta: title Who at My Door is Standing}
 {meta: artist Marty Robbins}
 {meta: composer Mary B. Slade and Asa B. Everett}
+{meta: x_source classic-country}
+{meta: x_source_file whoatmydoorisstandinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who at my door is [C]standing   
@@ -29,3 +32,6 @@ Open the door for [D7]me
 [G]If Thou will heed my [C]calling 
 [G]I will [D7]abide with [G]Thee
 {end_of_verse}
+
+
+

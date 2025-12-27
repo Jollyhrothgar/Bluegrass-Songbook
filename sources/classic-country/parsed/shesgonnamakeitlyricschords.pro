@@ -1,6 +1,9 @@
 {meta: title She's Gonna Make It}
 {meta: artist Garth Brooks}
 {meta: composer Kent Blazy, Kim Willaims, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file shesgonnamakeitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]He followed her to [F]work this morning[Dm] 
@@ -44,3 +47,8 @@ She's gonna [F]make it and [G7]he never [Am]will
 {start_of_verse: Verse 6}
 [G7]Lord she's gonna [F]make it [G7]he never [C]will
 {end_of_verse}
+
+
+
+
+

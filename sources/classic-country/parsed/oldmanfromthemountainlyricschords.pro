@@ -1,5 +1,8 @@
 {meta: title Old Man From The Mountain}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file oldmanfromthemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The old man from the mountain's coming home home home
@@ -46,3 +49,11 @@ Now I need a bunch of good loving
 {start_of_verse: Verse 1}
 [G]The old man from the mountain's coming home home home
 {end_of_verse}
+
+
+
+
+
+
+
+

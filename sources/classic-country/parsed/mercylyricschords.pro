@@ -1,6 +1,9 @@
 {meta: title Mercy}
 {meta: artist Jean Shepard}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file mercylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your pillow don't get wet when [C]I go to bed and [G]weep
@@ -27,3 +30,6 @@ Mercy have [C]mercy on [G]me mercy have [C]mercy on [G]me
 A little bit of understandin' and a [C]little bit of sympa[G]thy
 And a little bit of [D7]mercy on [G]me
 {end_of_verse}
+
+
+

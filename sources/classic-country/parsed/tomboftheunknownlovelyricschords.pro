@@ -1,6 +1,9 @@
 {meta: title Tomb Of The Unknown Love}
 {meta: artist Kenny Rogers}
 {meta: composer Michael Smotherman}
+{meta: x_source classic-country}
+{meta: x_source_file tomboftheunknownlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One time I drove to see a girl across the country
@@ -68,3 +71,11 @@ They hung him from that [G7]tree up [C]above
 I know that [G7]local folks say it’s the wind
 I know it’s crying from the tomb of the unknown [C]love
 {end_of_verse}
+
+
+
+
+
+
+
+

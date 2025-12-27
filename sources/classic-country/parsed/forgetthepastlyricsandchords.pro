@@ -1,5 +1,8 @@
 {meta: title Forget the Past}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file forgetthepastlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I am again [C7]do you remember [F]me
@@ -28,3 +31,6 @@ Give me [G7]a little smile help me forget a [C]while
 Oh [F]here I am again with love that didn't [C]last
 Will you [F]help me like I helped [G7]you forget the [C]past 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That's When It Hurts The Most}
 {meta: artist Johnny Tillotson}
 {meta: composer Paul Evans and Larry Kusik}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhenithurtsthemostlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That's when it [G7]hurts the [C]most
@@ -32,3 +35,7 @@
 [G7]That's when it hurts the [C]most
 [G7]That's when it hurts [F]the [C]mo--st
 {end_of_verse}
+
+
+
+

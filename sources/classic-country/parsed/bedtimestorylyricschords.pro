@@ -1,6 +1,9 @@
 {meta: title Bed Time Story}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file bedtimestorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've told you almost every bedtime story
@@ -55,3 +58,9 @@ Then it came to pass the king grew lonely
 [C]Just another [D7]pretty bedtime [G]story
 [D7]So please forgive mommy if she [G]cries
 {end_of_verse}
+
+
+
+
+
+

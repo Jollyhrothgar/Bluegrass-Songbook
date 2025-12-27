@@ -1,6 +1,9 @@
 {meta: title Almost Like Having You Here}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file almostlikehavingyouherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're getting ready for the Friday night [F]fights
@@ -36,3 +39,7 @@
 [F]But it feels so bad when you [C]leave me [Am]alone
 [D7]It's almost like [G7]having you [C]here
 {end_of_verse}
+
+
+
+

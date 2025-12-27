@@ -1,6 +1,9 @@
 {meta: title Lovin' You The Way I Do}
 {meta: artist Hank Locklin}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file lovinyouthewayidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everyday darling [C]come what may
@@ -38,3 +41,8 @@ I'll go on [D7]lovin' you the way I [G]do
 {start_of_verse: Verse 6}
 [C]I'll go on [D7]lovin' you the way I [G]do [C]  [G]
 {end_of_verse}
+
+
+
+
+

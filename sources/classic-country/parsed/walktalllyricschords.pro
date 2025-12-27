@@ -1,6 +1,9 @@
 {meta: title Walk Tall}
 {meta: artist Faron Young}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file walktalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walk tall walk straight and look the [G7]world right in the [C]eye
@@ -50,3 +53,9 @@
 [F]She said son be a proud man and hold your head up [C]high
 [G7]Walk tall walk straight and look the world right in the [C]eye
 {end_of_verse}
+
+
+
+
+
+

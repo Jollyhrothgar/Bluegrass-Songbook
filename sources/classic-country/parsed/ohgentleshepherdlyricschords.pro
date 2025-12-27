@@ -1,6 +1,9 @@
 {meta: title Oh Gentle Shepherd}
 {meta: artist Jim Reeves}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file ohgentleshepherdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My soul is lost so [G7]lonely and so [C]cold 
@@ -22,3 +25,5 @@ And in Thy cool green [Am]pastures let [D7]me [G7]lie
 Beside the [C]still clear waters [C7]lead Thou [F]me
 Oh gentle [C]shepherd safe [G7]forevermore with [C]Thee
 {end_of_verse}
+
+

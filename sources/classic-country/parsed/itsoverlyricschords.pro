@@ -1,6 +1,9 @@
 {meta: title It's Over}
 {meta: artist Sonny James}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file itsoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If time were not a moving thing and I could make it stay this [Em]hour
@@ -34,3 +37,7 @@
 tag:
 [C]To shine a morning light and make [A]us realize all night it's [C]over
 {end_of_verse}
+
+
+
+

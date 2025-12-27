@@ -1,6 +1,9 @@
 {meta: title Far Far Away}
 {meta: artist Roy Orbison}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file farfarawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Far far away is my love of [F]yesterday 
@@ -30,3 +33,6 @@ Oh [G7]where can she [C]be
 Where where where where where
 Oh [G7]where can she [C]be
 {end_of_verse}
+
+
+

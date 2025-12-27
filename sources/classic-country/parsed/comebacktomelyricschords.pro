@@ -1,6 +1,9 @@
 {meta: title Come Back To Me}
 {meta: artist Jamie Dailey and Darrin Vincent}
 {meta: composer Jimmy Fortune}
+{meta: x_source classic-country}
+{meta: x_source_file comebacktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was once a [D7]wayward [Em]child [C]thought I had all the [G]answers[C] 
@@ -50,3 +53,9 @@ You can [C]always [D7]come back to [G]Me
 Oh you can [C]always [Am]you can [D7]always 
 [C]Come [G]back [D7]to [G]Me
 {end_of_verse}
+
+
+
+
+
+

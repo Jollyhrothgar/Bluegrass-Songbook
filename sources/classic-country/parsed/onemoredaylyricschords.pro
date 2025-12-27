@@ -1,6 +1,9 @@
 {meta: title One More Day}
 {meta: artist Ernest Tubb}
 {meta: composer Pete Drake}
+{meta: x_source classic-country}
+{meta: x_source_file onemoredaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m not here to [C]talk about [G]bygones 
@@ -33,3 +36,7 @@ I’m just [G]trying to [D7]live one more [G]day
 {start_of_verse: Verse 4}
 I’m just trying to [D7]live one more [G]day
 {end_of_verse}
+
+
+
+

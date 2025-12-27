@@ -1,6 +1,9 @@
 {meta: title I've Got A Right To Cry}
 {meta: artist Hank Williams Jr.}
 {meta: composer Joe Liggins}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotarighttocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I've got a right to [G]cry 
@@ -41,3 +44,8 @@ Please come on back home where you be[C]long
 And in this reason [A7]why
 [D7]I've got a right to [G]cry
 {end_of_verse}
+
+
+
+
+

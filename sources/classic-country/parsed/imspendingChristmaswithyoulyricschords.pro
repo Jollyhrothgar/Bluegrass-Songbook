@@ -1,6 +1,9 @@
 {meta: title I'm Spending Christmas With You}
 {meta: artist Mickey Gilley}
 {meta: composer Tom Occhipint}
+{meta: x_source classic-country}
+{meta: x_source_file imspendingChristmaswithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The snow is gently [Am]falling [F]the night is so [Fm]cold
@@ -34,3 +37,7 @@ The [F]holiday [G7]wishes [Em]have already come [Am]true
 The [F]holiday [G7]wishes [Em]have already come [Am]true
 And [F]I'm spending [G7]Christmas with [C]you
 {end_of_verse}
+
+
+
+

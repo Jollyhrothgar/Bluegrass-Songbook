@@ -1,6 +1,9 @@
 {meta: title Merry Christmas And A Happy New Year}
 {meta: artist The Bellamy Brothers}
 {meta: composer Ralph Siegel}
+{meta: x_source classic-country}
+{meta: x_source_file merryChristmasandahappynewyearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Merry Christmas [F]joy to [C]you
@@ -65,3 +68,11 @@ A [C]Merry [Am]Christmas and a [F]Happy New [C]Year
 {start_of_verse: Verse 5}
 A Merry [Am]Christmas and a [F]Happy New [C]Year
 {end_of_verse}
+
+
+
+
+
+
+
+

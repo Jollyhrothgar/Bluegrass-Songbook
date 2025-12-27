@@ -1,5 +1,8 @@
 {meta: title Lonesome Road Blues}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomeroadblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m going down this long lonesome road  lawd lawd
@@ -42,3 +45,8 @@ I'm going down this road feeling bad lawd lawd
 [F]I’m going down this long lonesome [C]road  lawd lawd
 [G7]And I ain't a-gonna be treated this [C]a-way
 {end_of_verse}
+
+
+
+
+

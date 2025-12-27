@@ -1,6 +1,9 @@
 {meta: title Little Community Church}
 {meta: artist Ricky Skaggs}
 {meta: composer Lester Flatt and Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file littlecommunitychurchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was lost in sin so long with no one to guide my way
@@ -51,3 +54,8 @@ And would accept [C]me
 And then I felt (then I felt) the Holy Spirit (Holy Spirit)
 I knew my [F]soul (I knew my soul) [G7]was saved in [C]me 
 {end_of_verse}
+
+
+
+
+

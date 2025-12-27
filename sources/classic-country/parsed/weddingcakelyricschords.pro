@@ -1,6 +1,9 @@
 {meta: title Wedding Cake}
 {meta: artist Connie Smith}
 {meta: composer Myra Smith and Margaret Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file weddingcakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't be troubled bout me cause I'm tired
@@ -52,3 +55,11 @@ So when the hands of time trace tiny lines
 [C]We'll laugh and say for all who will partake
 [G7]It all comes with the wedding [C]cake
 {end_of_verse}
+
+
+
+
+
+
+
+

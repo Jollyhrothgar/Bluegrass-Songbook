@@ -1,5 +1,8 @@
 {meta: title Am I Blue}
 {meta: artist George Strait}
+{meta: x_source classic-country}
+{meta: x_source_file amibluelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Am I blue yes I'm blue
@@ -35,3 +38,7 @@ It started the day I lost [G7]you
 Nobody ever missed somebody like I do
 Am I [Dm]blue [G7]am I [C]blue
 {end_of_verse}
+
+
+
+

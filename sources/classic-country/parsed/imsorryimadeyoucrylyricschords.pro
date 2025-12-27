@@ -1,6 +1,9 @@
 {meta: title I'm Sorry I Made You Cry}
 {meta: artist Connie Francis}
 {meta: composer Nick Clesi}
+{meta: x_source classic-country}
+{meta: x_source_file imsorryimadeyoucrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm sorry [Am]dear [D7]so sorry dear 
@@ -22,3 +25,5 @@ It [E7]breaks my heart [A7]  to [D7]hear [A7]you [Dm]sigh
 It [E7]breaks my heart [A7]  to [D7]hear [A7]you [Dm]sigh 
 [D7]I'm sorry [G7]I made you [C]cry
 {end_of_verse}
+
+

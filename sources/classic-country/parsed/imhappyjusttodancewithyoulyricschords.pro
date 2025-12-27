@@ -1,6 +1,9 @@
 {meta: title I'm Happy Just To Dance With You}
 {meta: artist Anne Murray}
 {meta: composer John Lennon and Paul McCartney}
+{meta: x_source classic-country}
+{meta: x_source_file imhappyjusttodancewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I don't [C]wanna kiss or [Em]hold your [G7][Dm]hand
@@ -42,3 +45,8 @@
 [Dm]I'm happy just to [G7]dance [Em]happy just to [A7]dance
 [Dm]Happy just to [G7]dance with [G7][F]you
 {end_of_verse}
+
+
+
+
+

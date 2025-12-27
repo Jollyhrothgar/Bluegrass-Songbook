@@ -1,6 +1,9 @@
 {meta: title Take Time}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis and Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file taketimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if you haven’t found time to tell your girl
@@ -40,3 +43,8 @@ Well if you haven’t found time to kiss her lips
 {start_of_verse: Verse 6}
 [F]You better take take take a little [C]time
 {end_of_verse}
+
+
+
+
+

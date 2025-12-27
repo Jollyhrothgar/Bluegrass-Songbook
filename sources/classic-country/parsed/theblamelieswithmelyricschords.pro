@@ -1,6 +1,9 @@
 {meta: title The Blame Lies With Me}
 {meta: artist Mickey Gilley}
 {meta: composer Sterling Whipple}
+{meta: x_source classic-country}
+{meta: x_source_file theblamelieswithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now you've forgiven me my mistakes  it [C]wasn't all my fault
@@ -33,3 +36,7 @@ It's [D7]just too late you see the blames lies with [G]me
 {start_of_verse: Verse 4}
 It's [D7]just too late you see the blames lies with [G]me
 {end_of_verse}
+
+
+
+

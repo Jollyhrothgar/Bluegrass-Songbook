@@ -1,6 +1,9 @@
 {meta: title Halfway Down}
 {meta: artist Patty Loveless}
 {meta: composer Jim Lauderdale}
+{meta: x_source classic-country}
+{meta: x_source_file halfwaydownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Raindrops on the treetops 
@@ -53,3 +56,10 @@ Yes I'm [G7]only goin' halfway [C]down
 Yes I'm [G7]only goin' halfway [C]down
 Yes I'm [G7]only goin' halfway [C]down
 {end_of_verse}
+
+
+
+
+
+
+

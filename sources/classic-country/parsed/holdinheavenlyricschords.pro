@@ -1,6 +1,9 @@
 {meta: title Holdin' Heaven}
 {meta: artist Tracy Byrd}
 {meta: composer Thom McHugh and Bill Kenner}
+{meta: x_source classic-country}
+{meta: x_source_file holdinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I'm face to face with an [C]angel 
@@ -43,3 +46,8 @@ Now [D7]all my dreams are comin' [G7]true
 {start_of_verse: Verse 4}
 [F]I'm holdin' [C]heaven in my [G7]arms to[C]night
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Little Children}
 {meta: artist Hank Snow}
 {meta: composer Paul Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file littlechildrenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We're living in a [B7]worried world a [C]world that's full of [G]fears
@@ -39,3 +42,6 @@ Little [G]children are the [C]hope of the [G]world
 So help us [Am]teach them Lord to [D7]walk with [G]Thee
 Spoken:
 {end_of_verse}
+
+
+

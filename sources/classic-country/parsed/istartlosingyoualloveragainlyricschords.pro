@@ -1,6 +1,9 @@
 {meta: title I Start Losing You All Over Again}
 {meta: artist Charlie Walker}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file istartlosingyoualloveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the neon signs stop [C]flashing through my [G]window
@@ -26,3 +29,6 @@ But [G]late at night when the [G7]wine gives in to the [C]memory of your [G]love
 {start_of_verse: Verse 3}
 Yes [C]I start [G]losing you [D7]all over [G]again
 {end_of_verse}
+
+
+

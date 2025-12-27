@@ -1,6 +1,9 @@
 {meta: title I'm A Ding Dong Daddy From Dumas}
 {meta: artist Bob Wills}
 {meta: composer Phil Baxter}
+{meta: x_source classic-country}
+{meta: x_source_file imadingdongdaddyfromdumaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a ding dong daddy from Dumas [D7]babe
@@ -50,3 +53,9 @@
 [Am]Wild papa from Polecat Hollow
 [D7]I don't want to get [G7]rough
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Cheatin'}
 {meta: artist Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file cheatinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby you know I love you
@@ -24,3 +27,5 @@ Oh wee [C]baby baby come and go with [G]me
 Yes you been [D7]cheatin' on for me
 But [C]that's the way it seems to [G]be
 {end_of_verse}
+
+

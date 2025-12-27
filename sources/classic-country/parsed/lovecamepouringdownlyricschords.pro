@@ -1,6 +1,9 @@
 {meta: title Love Came Pouring Down}
 {meta: artist Jean Shepard}
 {meta: composer Curly Putman and Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file lovecamepouringdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been so long since I've seen [Dm]sunshine
@@ -38,3 +41,7 @@ And [G7]sweet love came pouring [C]down [D7]    [G7]
 And [C]love came pouring [G7]down
 And love came pouring [C]down
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Got Your Word You Got Mine}
 {meta: artist Jimmy Dean}
 {meta: composer Jimmy Dean and Ruth Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file igotyourwordyougotminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I got [G7]your word you got [C]mine
@@ -32,3 +35,7 @@
 [G7]I got your word you got [C]mine
 [F]I got [G7]your word you got [C]mine
 {end_of_verse}
+
+
+
+

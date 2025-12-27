@@ -1,6 +1,9 @@
 {meta: title I Won't Be Back Tonight}
 {meta: artist Jody Nix}
 {meta: composer Artie Glenn}
+{meta: x_source classic-country}
+{meta: x_source_file iwontbebacktonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I won’t be back tonight or [C]ever
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]When I leave this time it’s from now [G]on
 {end_of_verse}
+
+
+
+

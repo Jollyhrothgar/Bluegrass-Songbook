@@ -1,6 +1,9 @@
 {meta: title Excuse Me}
 {meta: artist Buck Owens}
 {meta: composer Harlan Howard - Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file excusemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They just don't know how lost I feel without [F]you
@@ -31,3 +34,6 @@
 [F]Excuse me  I think I've got a heartache
 [G7]And I better say goodbye before I [C]cry
 {end_of_verse}
+
+
+

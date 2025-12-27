@@ -1,6 +1,9 @@
 {meta: title What Am I Gonna Do}
 {meta: artist Johnny Tillotson}
 {meta: composer Paul Tannen}
+{meta: x_source classic-country}
+{meta: x_source_file whatamigonnadolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([F]Oh [C]what am [G7]I gonna [C]do)[G7]
@@ -37,3 +40,8 @@ Oh [C]what am [G7]I gonna [C]do [G7]   [C]  [F]
 {start_of_verse: Verse 6}
 Oh [C]what am [G7]I gonna [C]do
 {end_of_verse}
+
+
+
+
+

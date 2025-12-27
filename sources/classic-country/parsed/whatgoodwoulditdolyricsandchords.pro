@@ -1,6 +1,9 @@
 {meta: title What Good Would It Do}
 {meta: artist Faron Young}
 {meta: composer Billy Deaton and Jerry Len Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file whatgoodwoulditdolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes in the night my world gets [G7]lonely
@@ -31,3 +34,6 @@ But if [F]you won't come [C]home
 I'd still be [G7]alone
 So what good would it [F]do[C]
 {end_of_verse}
+
+
+

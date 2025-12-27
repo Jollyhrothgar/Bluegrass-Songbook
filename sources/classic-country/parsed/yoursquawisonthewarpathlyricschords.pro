@@ -1,5 +1,8 @@
 {meta: title Your Squaw Is On The Warpath Lyrics Chords}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file yoursquawisonthewarpathlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well-uh your pet name for me is squaw
@@ -43,3 +46,9 @@ Well you're leaving me at home to keep the teepee clean
 {start_of_verse: Verse 6}
 [G7]Your squaw is on the warpath [C]tonight
 {end_of_verse}
+
+
+
+
+
+

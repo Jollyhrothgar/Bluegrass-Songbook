@@ -1,6 +1,9 @@
 {meta: title Oh Me Oh My Sweet Baby}
 {meta: artist George Strait}
 {meta: composer Michael Garvin and Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file ohmeohmysweetbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh me oh my sweet baby [D7]said goodbye
@@ -55,3 +58,10 @@ Go and make me cry oh me oh [G]my
 Why did she [D7]go and make me cry oh me oh [G]my
 [D7]Sweet baby said good[G]bye
 {end_of_verse}
+
+
+
+
+
+
+

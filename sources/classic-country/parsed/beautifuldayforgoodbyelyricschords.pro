@@ -1,6 +1,9 @@
 {meta: title Beautiful Day For Goodbye}
 {meta: artist George Strait}
 {meta: composer Pat Bunch and Doug Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file beautifuldayforgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Isn't it like her to look so [C]pretty
@@ -44,3 +47,7 @@
 [F]There's not a cloud in the [Dm]sky
 [G7]It's a beautiful day for [C]goodbye
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Human Emotions}
 {meta: artist David Allan Coe}
 {meta: composer and recorded by David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file humanemotionslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lone[F]some crying heartaches that's human [C]emotions
@@ -33,3 +36,7 @@ There's nothin' as [G7]lonesome [F]as hearing her [C]say
 {start_of_verse: Verse 5}
 [F]That's human [C]emotions there's nothin' as [G7]lonesome [F]as hearing her [C]say
 {end_of_verse}
+
+
+
+

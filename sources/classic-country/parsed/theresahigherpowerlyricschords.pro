@@ -1,5 +1,8 @@
 {meta: title There's A Higher Power}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file theresahigherpowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When burdens seem to overcome there's a higher power
@@ -50,3 +53,12 @@ But brothers and sisters mark this down there's a higher power
 Then why ask men to help you through there's a higher power
 [D7]They're helpless pilgrims just like you there's a higher [G]power
 {end_of_verse}
+
+
+
+
+
+
+
+
+

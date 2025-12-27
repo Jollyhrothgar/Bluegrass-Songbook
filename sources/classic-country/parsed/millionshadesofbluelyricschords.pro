@@ -1,6 +1,9 @@
 {meta: title Million Shades Of Blue}
 {meta: artist Lynn Anderson}
 {meta: composer Gene Hood}
+{meta: x_source classic-country}
+{meta: x_source_file millionshadesofbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The dying flames of love [F]are slowly [C]flickering
@@ -22,3 +25,5 @@ Of the [D7]rose colored love that we once [G7]knew
 My plan for [C]happiness [F]will soon be in [C]ashes
 And my [G]world will be a [G7]million shades of [C]blue
 {end_of_verse}
+
+

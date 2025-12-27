@@ -1,5 +1,8 @@
 {meta: title It's A Pity What Money Can Do}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file itsapitywhatmoneycandolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was a poor boy a [F]poor girl was she
@@ -28,3 +31,6 @@ Now he has my sweetheart [F]I'm all alone
 She'll spend all his silver then [C7]find someone [F]new
 It's a [G7]pity what money can [C]do
 {end_of_verse}
+
+
+

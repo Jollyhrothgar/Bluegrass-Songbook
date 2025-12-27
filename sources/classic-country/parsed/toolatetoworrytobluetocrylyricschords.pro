@@ -1,6 +1,9 @@
 {meta: title Too Late To Worry To Blue To Cry}
 {meta: artist Ronnie Milsap}
 {meta: composer Al Dexter}
+{meta: x_source classic-country}
+{meta: x_source_file toolatetoworrytobluetocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I broke your heart dear I was [C]untrue
@@ -20,3 +23,5 @@ Too Late To [G]worry too [D7]blue to [G]cry
 [D7]I hope you're [G]happy baby for I'll get [C]by
 Too Late To [G]worry too [D7]blue to [G]cry
 {end_of_verse}
+
+

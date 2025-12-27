@@ -1,6 +1,9 @@
 {meta: title The Thrill Is Back}
 {meta: artist Alan Jackson}
 {meta: composer Anne Graham and Dana Hunt}
+{meta: x_source classic-country}
+{meta: x_source_file thethrillisbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm ready to raise the [G7]blinds in this place
@@ -53,3 +56,10 @@ The thrill is [C]back like it [G7]used to [C]be
 [G7]The room spins [C]around when you're kissing [F]me
 The thrill is [C]back like it [G7]used to [C]be
 {end_of_verse}
+
+
+
+
+
+
+

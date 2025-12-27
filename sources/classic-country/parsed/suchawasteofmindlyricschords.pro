@@ -1,6 +1,9 @@
 {meta: title Such A Waste Of Mind}
 {meta: artist Faron Young}
 {meta: composer Clyde Pitts, Len Pitts, Cile Davis}
+{meta: x_source classic-country}
+{meta: x_source_file suchawasteofmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Living on dreams really [F]isn’t so [C]bad
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]Living on [C]memories and [F]that’s such a [G7]waste of [C]mind
 {end_of_verse}
+
+
+

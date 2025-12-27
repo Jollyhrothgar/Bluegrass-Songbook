@@ -1,5 +1,8 @@
 {meta: title Saddle Tramp}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file saddletramplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They call me a drifter they say I'm no [G7]good
@@ -52,3 +55,10 @@ Saddle [Am]tramp saddle [C]tramp
 I'm as [Am]free as the breeze and I [Dm]ride where I please
 Saddle [C]tramp saddle [Am]tramp
 {end_of_verse}
+
+
+
+
+
+
+

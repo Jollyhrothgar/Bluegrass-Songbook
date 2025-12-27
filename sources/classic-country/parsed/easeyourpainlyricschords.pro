@@ -1,6 +1,9 @@
 {meta: title Ease Your Pain}
 {meta: artist Anne Murray}
 {meta: composer Hoyt Axton}
+{meta: x_source classic-country}
+{meta: x_source_file easeyourpainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could ease your pain if I could [F]lighten your [C]load
@@ -47,3 +50,8 @@ I know you've been livin' in a downhill raid
 [C]If I could just help you find that secret place in your [F]mind
 [C]Where the light of understanding love [F]outshines [G7]the [C]sun
 {end_of_verse}
+
+
+
+
+

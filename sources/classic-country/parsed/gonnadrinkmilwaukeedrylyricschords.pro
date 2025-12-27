@@ -1,6 +1,9 @@
 {meta: title Gonna Drink Milwaukee Dry}
 {meta: artist Charlie Walker}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file gonnadrinkmilwaukeedrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They make it here they [C]break it here
@@ -48,3 +51,7 @@ To drink Milwaukee [G]dry
 And [D7]tonight I'm gonna try
 To drink Milwaukee [G]dry
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title 12-12-84}
 {meta: artist David Ball}
 {meta: composer Billy Spencer, David Ball, Tommy Polk}
+{meta: x_source classic-country}
+{meta: x_source_file 121284lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]12-12-8—4   [C][G][C]ten o'clock [D7]at [G]night
@@ -34,3 +37,7 @@
 {start_of_verse: Verse 4}
 [C]I'd go back to [D7]the end and start [Em]over again on [G][D7][Am]12-12-8--4
 {end_of_verse}
+
+
+
+

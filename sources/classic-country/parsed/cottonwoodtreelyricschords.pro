@@ -1,6 +1,9 @@
 {meta: title Cottonwood Tree}
 {meta: artist Marty Robbins}
 {meta: composer Bobby Sykes}
+{meta: x_source classic-country}
+{meta: x_source_file cottonwoodtreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I rode into Tucson three hours [G7]ago
@@ -99,3 +102,16 @@
 [F]I've done no wrong but the town cannot [C]see
 [G7]And so with my life I must [C]pay
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

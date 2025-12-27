@@ -1,6 +1,9 @@
 {meta: title Ten Minutes Till Heartaches}
 {meta: artist Leona Williams}
 {meta: composer Redd Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file tenminutestillheartacheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ten minutes till [G7]heartaches for [C]me
@@ -36,3 +39,7 @@ It's too [F]late to change your [Fm]mind
 It's ten [C]minutes till [G7]heartaches for [C]me
 Yes it's ten minutes till [G7]heartaches for [F]me[C]
 {end_of_verse}
+
+
+
+

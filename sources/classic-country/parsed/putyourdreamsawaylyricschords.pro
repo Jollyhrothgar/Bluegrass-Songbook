@@ -1,6 +1,9 @@
 {meta: title Put Your Dreams Away}
 {meta: artist Mickey Gilley}
 {meta: composer Wayland Holyfield and Richard Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file putyourdreamsawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every now and then [G7]someone comes to you
@@ -49,3 +52,9 @@ If [G7]you wanna [Am]love that's here to [D7]stay
 [G7]Put your [C]dreams away and [G7]just lay beside me
 [Am]Take all this love that's [C]here [Em]inside [C]me
 {end_of_verse}
+
+
+
+
+
+

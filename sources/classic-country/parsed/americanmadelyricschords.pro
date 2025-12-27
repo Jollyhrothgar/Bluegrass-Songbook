@@ -1,6 +1,9 @@
 {meta: title American Made}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Bob Dipiero and Pat Mcmanus}
+{meta: x_source classic-country}
+{meta: x_source_file americanmadelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Seems everything I [C]buy these days has got a foreign [G]name
@@ -43,3 +46,8 @@ My baby is American Made
 From her silky long hair to her sexy long [G]legs
 My [D7]baby is American [G]Made
 {end_of_verse}
+
+
+
+
+

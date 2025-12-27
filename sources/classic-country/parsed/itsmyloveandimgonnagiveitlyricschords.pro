@@ -1,6 +1,9 @@
 {meta: title It's My Love (And I'm Gonna Give It)}
 {meta: artist Mel Tillis}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file itsmyloveandimgonnagiveitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Old friends say you'll [D7]tear me [G]down
@@ -31,3 +34,7 @@ It's my [G]love [C]love [G]love and [D7]I'm a gonna [G]give it
 {start_of_verse: Verse 5}
 Yes it's my love [C]love [G]love and [D7]I'm a gonna [G]give it
 {end_of_verse}
+
+
+
+

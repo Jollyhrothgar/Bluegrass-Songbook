@@ -1,6 +1,9 @@
 {meta: title Christmas In My Smokey Mountain Home}
 {meta: artist Bobby Bare}
 {meta: composer Brein Fisher and Andra Hamlin}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasinmysmokeymountainhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Snow [F]covered cabin on the [C]hillside
@@ -34,3 +37,7 @@
 [G7]I'll spend Christmas in my Smokey Mountain [F]home
 [G7]Mountain home  mountain [C]home
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If Anything Ever Happened To You}
 {meta: artist Bill Anderson}
 {meta: composer Jon Randall and Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file ifanythingeverhappenedtoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was sitting on the front porch [Am]  with his [G7]wife of [C]fifty [F]years
@@ -42,3 +45,8 @@ That’s all that [F]anyone could do  if [C]anything  [G7]ever happened to [C]yo
 {start_of_verse: Verse 5}
 [F]So don’t let [C]anything  [G7]ever happen to [C]you
 {end_of_verse}
+
+
+
+
+

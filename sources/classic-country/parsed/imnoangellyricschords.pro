@@ -1,5 +1,8 @@
 {meta: title I'm No Angel}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file imnoangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met her on the outskirts of a small country [C]town
@@ -28,3 +31,6 @@
 [G]Let them stare and criticize I love her I don't [C]care
 [D7]By her side I'm satisfied and so happy [G]there
 {end_of_verse}
+
+
+

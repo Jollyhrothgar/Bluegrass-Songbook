@@ -1,5 +1,8 @@
 {meta: title Drive On}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file driveonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I got a friend named Whiskey Sam
@@ -67,3 +70,12 @@ But it's better than not comin' back at all
 [G7]And even now every time I dream
 [C]I hear the men and the monkeys in the [G7]jungle [C]scream
 {end_of_verse}
+
+
+
+
+
+
+
+
+

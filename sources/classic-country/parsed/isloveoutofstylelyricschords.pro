@@ -1,6 +1,9 @@
 {meta: title Is Love Out Of Style}
 {meta: artist Wynn Stewart}
 {meta: composer Bobby Bare, Harlan Howard, Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file isloveoutofstylelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is love out of style is the passion to love [C7]and to [F]leave
@@ -36,3 +39,7 @@
 [C7]Doesn't anyone need a love that will last till the [F]end
 [G7]Well if love's out of style I'll wait till it comes back [C]again
 {end_of_verse}
+
+
+
+

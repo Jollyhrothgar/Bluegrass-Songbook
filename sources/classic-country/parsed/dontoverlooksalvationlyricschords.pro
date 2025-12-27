@@ -1,6 +1,9 @@
 {meta: title Don't Overlook Salvation}
 {meta: artist Ricky Van Shelton}
 {meta: composer John Bava}
+{meta: x_source classic-country}
+{meta: x_source_file dontoverlooksalvationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heaven is a city [C]built by jewels [G]rare
@@ -40,3 +43,8 @@ How awful if He [D7]should turn you [G]away [C]   [G]
 {start_of_verse: Verse 5}
 How awful if He [D7]should turn you [C]awa[G]y
 {end_of_verse}
+
+
+
+
+

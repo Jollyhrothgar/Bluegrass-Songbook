@@ -1,6 +1,9 @@
 {meta: title I Wish I Could Fall In Love Today}
 {meta: artist Ray Price}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file iwishicouldfallinlovetodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wished that I could fall in love [F]today
@@ -29,3 +32,6 @@ Each night I pray I'll wake up at dawn [F]and find
 Then [C]I awake and hear my poor heart [F]say
 I [G7]wish that I could fall in love [C]today 
 {end_of_verse}
+
+
+

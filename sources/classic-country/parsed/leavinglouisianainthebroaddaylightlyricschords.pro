@@ -1,6 +1,9 @@
 {meta: title Leaving Louisiana In The Broad Daylight}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Rodney Crowell and Donavan Cowart}
+{meta: x_source classic-country}
+{meta: x_source_file leavinglouisianainthebroaddaylightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mary took to running with a traveling man
@@ -98,3 +101,22 @@ I gotta [F]roll on between the [C]ditches
 Left her momma crying with her head in her hands
 Such a [F]sad case so broken [C]hearted
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

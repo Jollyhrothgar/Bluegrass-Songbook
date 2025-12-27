@@ -1,5 +1,8 @@
 {meta: title Windy City Anne}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file windycityannelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Chicago gets along so well [F]without me
@@ -63,3 +66,12 @@ Is [C]what I learned from [F]Windy City [C]Anne
 {start_of_verse: Verse 8}
 Now I learned a lot from [F]Windy City [C]Ann
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When Did You Leave Heaven}
 {meta: artist Jim Reeves}
 {meta: composer Richard A. Whiting and Walter Bullock}
+{meta: x_source classic-country}
+{meta: x_source_file whendidyouleaveheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When did you leave heaven
@@ -22,3 +25,5 @@ If I [D7]kissed you  would it be a [G7]sin
 [C]I am only human  but you're so [F]divine
 [C]When did you leave [A7]heaven  [G7]angel of [C]mine
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Hello God}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file helloGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello God it’s just me 
@@ -47,3 +50,8 @@ Praising Your [G]name (praising Your name)
 {comment: C          G}
 Praising [Am]Your name (praising Your [G]name)
 {end_of_verse}
+
+
+
+
+

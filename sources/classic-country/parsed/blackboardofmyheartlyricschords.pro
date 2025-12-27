@@ -1,6 +1,9 @@
 {meta: title Blackboard of My Heart}
 {meta: artist Hank Thompson}
 {meta: composer Lyle Gaston and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file blackboardofmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was young and I went to school they taught me how to [D7]write
@@ -29,3 +32,6 @@ It's too late to clean the slate and make another [G]start
 I'm satisfied the way things are [G7]although we're far [C]apart
 My tears have washed I [G]love you from the [D7]blackboard of my [G]heart
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title God's Little Candles}
 {meta: artist Hank Snow}
 {meta: composer Jimmy Kennedy}
+{meta: x_source classic-country}
+{meta: x_source_file godslittlecandleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The angels are lighting [F]God's little [C]candles
@@ -29,3 +32,6 @@ When [G7]stars twinkle through [D7]night's curtain of [G7]blue
 Th[C]e angels are lightning [F]God's little [C]candles
 [F]Time all God's [C]children were [G7]kneeling to [C]pray  
 {end_of_verse}
+
+
+

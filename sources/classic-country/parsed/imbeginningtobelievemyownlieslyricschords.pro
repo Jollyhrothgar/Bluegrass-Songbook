@@ -1,6 +1,9 @@
 {meta: title I'm Beginning To Believe My Own Lies}
 {meta: artist Charley Pride}
 {meta: composer Al Urban}
+{meta: x_source classic-country}
+{meta: x_source_file imbeginningtobelievemyownlieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't make the same old [F]places that I used [C]to
@@ -33,3 +36,7 @@ I'm beginning to [G7]believe my own [C]lies
 {start_of_verse: Verse 5}
 I'm beginning to [G7]believe my own [C]lies
 {end_of_verse}
+
+
+
+

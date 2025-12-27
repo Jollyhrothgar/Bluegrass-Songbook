@@ -1,5 +1,8 @@
 {meta: title There Goes My Everything}
 {meta: artist Jack Greene}
+{meta: x_source classic-country}
+{meta: x_source_file theregoesmyeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There goes my only [F][C7]possession 
@@ -33,3 +36,7 @@ As they gently walk [G7]across a lonely [C]floor
 [G7]And a [C]voice is softly [C][F]saying 
 Darling this will be goodbye [G7]forever [C]more
 {end_of_verse}
+
+
+
+

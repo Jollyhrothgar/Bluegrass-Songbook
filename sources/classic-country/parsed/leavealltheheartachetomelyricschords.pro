@@ -1,6 +1,9 @@
 {meta: title Leave All The Heartache To Me}
 {meta: artist Kitty Wells}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file leavealltheheartachetomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If two other lips are what you [G7]long for
@@ -29,3 +32,6 @@ I'll find comfort in a few old memo[G7]ries
 You can [C]laugh and love with her and be [F]contented
 And [C]leave all the [G7]heartache to [C]me
 {end_of_verse}
+
+
+

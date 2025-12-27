@@ -1,6 +1,9 @@
 {meta: title Tropical Depression}
 {meta: artist Alan Jackson}
 {meta: composer Jim McBride, Charlie Craig, Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file tropicaldepressionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought some time in the sun would help me get over [C]you
@@ -36,3 +39,7 @@ Gonna blow me [G]away
 If I can't get over [C]you this tropical [D7]depression's
 Gonna blow me [G]away
 {end_of_verse}
+
+
+
+

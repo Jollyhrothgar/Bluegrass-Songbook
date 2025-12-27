@@ -1,5 +1,8 @@
 {meta: title You Didn't Have To Be So Nice}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file youdidnthavetobesonicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You didn't have to be so [C]nice 
@@ -33,3 +36,6 @@ Love there are plenty of [C]hearts
 Beggin' to be broken
 [G]Why'd you have to [D7]go and break [G]mine
 {end_of_verse}
+
+
+

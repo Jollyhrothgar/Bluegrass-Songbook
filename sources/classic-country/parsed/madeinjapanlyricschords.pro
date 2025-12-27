@@ -1,5 +1,8 @@
 {meta: title Made In Japan}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file madeinjapanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My transistor radio comes from far [D7]away
@@ -29,3 +32,6 @@ She cried when she said she'd been promised to another [D7]man
 That's when I left my heart with the girl made in [G]Japan
 [D7]Yes my heart will always be with the girl made in [G]Japan
 {end_of_verse}
+
+
+

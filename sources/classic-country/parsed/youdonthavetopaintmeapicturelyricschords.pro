@@ -1,5 +1,8 @@
 {meta: title You Don't Have To Paint Me A Picture}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file youdonthavetopaintmeapicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The kiss was [F]colder [G7]than I [C]remember
@@ -46,3 +49,9 @@ You [C]don't have to [F]paint me a [G7]picture
 {start_of_verse: Verse 6}
 [F]I can see in the [G7]writing on the [C]wall
 {end_of_verse}
+
+
+
+
+
+

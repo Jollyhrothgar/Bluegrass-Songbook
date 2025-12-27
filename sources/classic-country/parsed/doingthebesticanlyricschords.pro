@@ -1,6 +1,9 @@
 {meta: title Doing The Best I Can}
 {meta: artist Elvis Presley}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file doingthebesticanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I gave my heart I gave my [G7]love
@@ -44,3 +47,8 @@ O-h my [C]darling my whole life [G]through
 [D7]But it's not good enough for [G]you
 [D7]But it's not good enough for [G]you
 {end_of_verse}
+
+
+
+
+

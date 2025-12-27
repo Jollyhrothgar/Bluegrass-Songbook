@@ -1,5 +1,8 @@
 {meta: title Everything But The Wings}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file everythingbutthewingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's hard to [Am]describe[F]
@@ -61,3 +64,11 @@ An [F]angel [G7]everything but the [C]wings
 [G7]Everything but the [C]wings[Am]
 An [F]angel [G7]everything but the [C]wings
 {end_of_verse}
+
+
+
+
+
+
+
+

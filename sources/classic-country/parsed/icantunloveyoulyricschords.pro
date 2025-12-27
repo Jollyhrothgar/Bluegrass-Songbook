@@ -1,6 +1,9 @@
 {meta: title I Can’t Unlove You}
 {meta: artist Kenny Rogers}
 {meta: composer Wade Allen Kirby and Will Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file icantunloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Postcards and [D7]letters
@@ -51,3 +54,7 @@
 [G]I'm finding out it's [D7]impossible to [Em]do
 [C]Oh it's no use  I can't unlove [G]you
 {end_of_verse}
+
+
+
+

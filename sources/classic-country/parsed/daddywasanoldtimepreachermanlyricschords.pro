@@ -1,6 +1,9 @@
 {meta: title Daddy Was An Old Time Preacher Man}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton and Dorothy Jo Hope}
+{meta: x_source classic-country}
+{meta: x_source_file daddywasanoldtimepreachermanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Daddy was an [D7]old time preacher [G]man
@@ -53,3 +56,9 @@
 [G]Then we'd sing I'm on [C]My Way to Canaan's [F]Land
 [C]Yes daddy was an [G7]old time preacher [C]man
 {end_of_verse}
+
+
+
+
+
+

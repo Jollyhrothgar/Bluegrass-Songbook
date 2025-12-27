@@ -1,6 +1,9 @@
 {meta: title I Love You Mostly}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyoumostlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [C7]love you [F]mostly 
@@ -43,3 +46,8 @@ For your sweet [C]tenderness
 And the softness of your [G7]caress 
 Brings nothing but [C]happiness 
 {end_of_verse}
+
+
+
+
+

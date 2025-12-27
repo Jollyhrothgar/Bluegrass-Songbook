@@ -1,6 +1,9 @@
 {meta: title Bright Lights and Blonde Haired Women}
 {meta: artist Ray Price}
 {meta: composer Eddie Kirk}
+{meta: x_source classic-country}
+{meta: x_source_file brightlightsandblondehairedwomenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm getting tired [A7]of roaming [D7]around
@@ -29,3 +32,6 @@
 [F]Believe me baby I'm [C]all [A7][Em]through
 [Dm]Please let me please let me come [G7]home to [C]you
 {end_of_verse}
+
+
+

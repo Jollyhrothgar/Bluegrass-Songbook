@@ -1,6 +1,9 @@
 {meta: title You Lift Me Up To Heaven}
 {meta: artist Reba McEntire}
 {meta: composer Bob Morrison, Johnny McRae, Jim Zerface}
+{meta: x_source classic-country}
+{meta: x_source_file youliftmeuptoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Been to Colorado where the mountains touch the sky
@@ -35,3 +38,7 @@ And we [G7]never leave the [C]ground
 Up [Em]up [Am]up [C]up to [F]heaven
 Yes you [G7]make my world go [C]round
 {end_of_verse}
+
+
+
+

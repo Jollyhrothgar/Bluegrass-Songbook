@@ -1,5 +1,8 @@
 {meta: title I Owe The World To You}
 {meta: artist Tommy Cash}
+{meta: x_source classic-country}
+{meta: x_source_file iowetheworldtoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your sweet love has [F]made me the [C]man that I am
@@ -33,3 +36,7 @@ Yes I owe the [G7]world to [C]you
 And [C]there's no loneliness just [F]pure happi[C]ness
 Yes I owe the [G7]world to [C]you
 {end_of_verse}
+
+
+
+

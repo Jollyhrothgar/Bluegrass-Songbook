@@ -1,6 +1,9 @@
 {meta: title The Devil Ain’t Lazy}
 {meta: artist Bob Wills}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file thedevilaintlazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The devil ain’t lazy  (no [F]sirree)
@@ -87,3 +90,16 @@
 [C]Then you've got one foot in the [F]grave
 [G7]He works 24 hours a [C]day
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title All The Way Through}
 {meta: artist Vern Gosdin}
 {meta: composer Dennis Knutson and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file allthewaythroughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like the [F]sun that shine’s through our [C]window
@@ -41,3 +44,8 @@ Is to [C]hold you [G7]till you come all the way [C]through
 I’ll never be satisfied [C7]just by standin’ [F]close to you
 I wanna [C]hold you [G7]till you come all the way [C]through
 {end_of_verse}
+
+
+
+
+

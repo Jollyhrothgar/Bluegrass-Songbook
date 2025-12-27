@@ -1,6 +1,9 @@
 {meta: title Silent Night After The Fight}
 {meta: artist Ronnie Milsap}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file silentnightafterthefightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hear the rain on the window I [C]never noticed it so [G]loud
@@ -30,3 +33,6 @@ Who's wrong or [G]right that don't matter any[D7]more
 Silent [G]night after the [C]fight
 I can't stand the [G]quiet since [D7]you walked out the [G]door
 {end_of_verse}
+
+
+

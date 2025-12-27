@@ -1,5 +1,8 @@
 {meta: title Our Town}
 {meta: artist Iris Dement}
+{meta: x_source classic-country}
+{meta: x_source_file ourtownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]And you know the sun's settin' [C]fast
@@ -84,3 +87,11 @@
 [G]On our [D7]town on our town [D7][G]goodnight
 [G]Goodnight
 {end_of_verse}
+
+
+
+
+
+
+
+

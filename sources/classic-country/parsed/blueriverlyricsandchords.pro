@@ -1,6 +1,9 @@
 {meta: title Blue River}
 {meta: artist Slim Whitman}
 {meta: composer Ernest Allee}
+{meta: x_source classic-country}
+{meta: x_source_file blueriverlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blue river like you I’m blue
@@ -22,3 +25,5 @@ If you see my [Am]loved one [C]please tell her for me
 [C]Blue river she’s drifted away
 [F]Please bring her [C]back to me [G7]somewhere some[C]day
 {end_of_verse}
+
+

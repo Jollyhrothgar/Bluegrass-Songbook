@@ -1,6 +1,9 @@
 {meta: title I've Got a New Heartache}
 {meta: artist Ray Price}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotanewheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're back in town again  spreadin' talk [D7]around
@@ -29,3 +32,6 @@ That left me for somebody [G]new
 I've got a new heartache about an old [D7]sweetheart
 And that's why I'm feelin' so [G]blue
 {end_of_verse}
+
+
+

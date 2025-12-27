@@ -1,6 +1,9 @@
 {meta: title The Jogger}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file thejoggerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've been a trucker now for twenty years
@@ -88,3 +91,12 @@ And I say hey good buddy can I get ya sumpin
 How [C]bout a little Gatorade here 
 [D7]Naw that's alright I got plenty a-[G]time 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

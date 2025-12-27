@@ -1,4 +1,7 @@
 {meta: composer Martin Luther, Eugene Clark, Carl Mueller}
+{meta: x_source classic-country}
+{meta: x_source_file awayinamangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Away in a manger no [F]crib for a [C]bed 
@@ -19,3 +22,5 @@ Be near [F]me Lord Jesus I ask Thee to stay      G7                C   Close by 
 F C Bless all the dear children in thy tender care
 F C G7 C And take us to heaven to live with thee there
 {end_of_verse}
+
+

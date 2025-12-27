@@ -1,6 +1,9 @@
 {meta: title I Never Knew Love}
 {meta: artist Doug Stone}
 {meta: composer Larry Boone and William Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file ineverknewlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never knew the [G7]power of a [Am]song [C]
@@ -61,3 +64,12 @@ Till [G7]this moment with [F]yo[C]u
 {start_of_verse: Verse 8}
 [Dm]Till I was [G7]loved [F]by [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

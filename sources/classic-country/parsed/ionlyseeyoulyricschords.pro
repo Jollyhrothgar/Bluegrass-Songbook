@@ -1,6 +1,9 @@
 {meta: title I Only See You}
 {meta: artist Ray Tombs}
 {meta: composer Ginny Peters and Clifford G. Snyder}
+{meta: x_source classic-country}
+{meta: x_source_file ionlyseeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a room full of people I only see [D7]you
@@ -40,3 +43,8 @@ In a [G]room full of people [D7]I only see [G]you
 {start_of_verse: Verse 5}
 [C]In a [G]room full of people [D7]I only see [G]you
 {end_of_verse}
+
+
+
+
+

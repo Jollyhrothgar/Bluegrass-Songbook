@@ -1,6 +1,9 @@
 {meta: title Taking A Chance On Love}
 {meta: artist Eddy Arnold}
 {meta: composer John Latouche, Ted Fetter, Vernon Duke}
+{meta: x_source classic-country}
+{meta: x_source_file takingachanceonlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here I go [D7]again I [Am]hear those trumpets [D7]blow [G]again
@@ -34,3 +37,7 @@
 [Em]We'll have a happy ending [A7]now taking a [D7]chance on [G]love
 [D7]Taking a chance on [G]love
 {end_of_verse}
+
+
+
+

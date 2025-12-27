@@ -1,5 +1,8 @@
 {meta: title Nobody Like Yours}
 {meta: artist Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file nobodylikeyourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Nobody I've ever seen
@@ -59,3 +62,11 @@ And [F]still left me begging for more
 [G7]You're my [F]woman for sure 
 [G7]There's nobody like [Am]yours
 {end_of_verse}
+
+
+
+
+
+
+
+

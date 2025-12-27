@@ -1,6 +1,9 @@
 {meta: title Devil Gets His Dues}
 {meta: artist Loretta Lynn}
 {meta: composer Darrell Statler}
+{meta: x_source classic-country}
+{meta: x_source_file devilgetshisdueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well a you think you're the [F]hottest thing a [C]going
@@ -36,3 +39,7 @@ You'll [F]know the devil's [G7]here collecting [C]dues
 [F]The devil gets his dues like I been a [C]saying
 You'll [F]hurt just like you've [G7]hurt me you can [C]bet
 {end_of_verse}
+
+
+
+

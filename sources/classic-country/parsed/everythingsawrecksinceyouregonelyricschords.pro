@@ -1,6 +1,9 @@
 {meta: title Everything's A Wreck (Since You're Gone)}
 {meta: artist Dottie West}
 {meta: composer Dottie West and Bill West}
+{meta: x_source classic-country}
+{meta: x_source_file everythingsawrecksinceyouregonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The grass on the lawn is almost knee [C]high
@@ -35,3 +38,6 @@
 [D7]Like me he's lonely all day long
 [G]Everything's a wreck since you've gone
 {end_of_verse}
+
+
+

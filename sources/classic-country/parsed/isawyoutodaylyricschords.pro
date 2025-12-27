@@ -1,6 +1,9 @@
 {meta: title I Saw You Today}
 {meta: artist Sammy Kershaw}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file isawyoutodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Despite all the [C]distance and [G]time
@@ -31,3 +34,6 @@
 [Am]She's you all [F]over again although [G]you [E7]went [Am]away
 [D7]I saw you I saw you [G]today
 {end_of_verse}
+
+
+

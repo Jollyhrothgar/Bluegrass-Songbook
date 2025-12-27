@@ -1,5 +1,8 @@
 {meta: title The Gambler}
 {meta: artist Kenny Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file thegamblerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a warm summer's evening on a train [F]bound for [C]nowhere
@@ -49,3 +52,9 @@ You got to know when to hold 'em  know [F]when to fold [C]'em
 You never [C]count your money when you're [F]sitting at the [C]table
 There'll be time [F]enough for [C]counting [G7]when the dealings [C]done
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bald Knob Arkansas}
 {meta: artist Vern Williams}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file baldknobarkansaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear that train a comin’
@@ -50,3 +53,9 @@ I will be her lovin’ man
 And [D7]always lover her [G]true
 Till I’m [D7]bald headed [G]too
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Pray My Way Out Of Trouble}
 {meta: artist Josh Turner}
 {meta: composer Loretta Lynn and Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file ipraymywayoutoftroublelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many times my mind is wrapped up in troubles
@@ -29,3 +32,6 @@ And I ask my dear Lord to help me each [G7]day
 I [F]pray my [G7]way out of [Am]troubl[F]e
 And the [C]dear nail-scarred hand wipes my [G7]teardrops [C]away
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title As The Day Wears On}
 {meta: artist Wanda Jackson}
 {meta: composer Vincent Matthews}
+{meta: x_source classic-country}
+{meta: x_source_file asthedaywearsonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Right now he's looking [C]for his pants and [G]socks
@@ -40,3 +43,8 @@ Cause as the [D7]day wears on I'll [C]miss him more and [G]more
 {start_of_verse: Verse 6}
 Cause as the [D7]day wears on I'll [C]miss him more and [G]more
 {end_of_verse}
+
+
+
+
+

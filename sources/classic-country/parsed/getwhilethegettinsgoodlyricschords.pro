@@ -1,5 +1,8 @@
 {meta: title Get While The Gettin's Good}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file getwhilethegettinsgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gotta get while the gettin's [F]good [C]baby
@@ -56,3 +59,10 @@
 [C]If I'm never gonna find a peace of mind
 [G7]I gotta get while the gettin's [C]good
 {end_of_verse}
+
+
+
+
+
+
+

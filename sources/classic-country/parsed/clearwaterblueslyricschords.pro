@@ -1,6 +1,9 @@
 {meta: title Clear Water Blues}
 {meta: artist Alabama}
 {meta: composer Teddy Gentry, Greg Fowler, Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file clearwaterblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Clear water blues [E7]thinking of [Am]you
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 6}
 [Dm]These clear [G7]water [C]blues
 {end_of_verse}
+
+
+
+
+

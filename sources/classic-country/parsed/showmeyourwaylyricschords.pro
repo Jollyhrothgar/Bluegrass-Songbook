@@ -1,6 +1,9 @@
 {meta: title Show Me Your Way}
 {meta: artist Glen Campbell}
 {meta: composer Craig Thomas Fall}
+{meta: x_source classic-country}
+{meta: x_source_file showmeyourwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I find myself in sadness
@@ -54,3 +57,10 @@ I was livin' for fame and fashion
 {start_of_verse: Verse 6}
 [C]I need Your [G]love to [D7]show [G]me
 {end_of_verse}
+
+
+
+
+
+
+

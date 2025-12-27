@@ -1,5 +1,8 @@
 {meta: title Don’t You Think It’s Time}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file dontyouthinkitstimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't you think it's [F]time  for us to work it [C]out
@@ -33,3 +36,7 @@
 [F]Don't you think it's sad  living all [C]alone
 [F]So don't you think it's time  for us to get [C]along
 {end_of_verse}
+
+
+
+

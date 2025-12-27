@@ -1,5 +1,8 @@
 {meta: title Highway 52}
 {meta: artist Dale Evans}
+{meta: x_source classic-country}
+{meta: x_source_file highway52lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well momma said [C]son don't you leave [G]me
@@ -60,3 +63,11 @@ I'll be walking down old [D7]Highway 5[G]2
 {start_of_verse: Verse 7}
 I'm walking down old [D7]Highway 5[G]2
 {end_of_verse}
+
+
+
+
+
+
+
+

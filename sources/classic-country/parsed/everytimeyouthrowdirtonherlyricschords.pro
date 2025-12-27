@@ -1,6 +1,9 @@
 {meta: title Every Time You Throw Dirt On Her}
 {meta: artist George Strait}
 {meta: composer Michael Garvin and Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeyouthrowdirtonherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess you think it’s fun to [F]laugh at her expense
@@ -47,3 +50,8 @@ A [C]lady like that can come here and get
 [F]Somebody who knows what he's found
 And [C]every time you throw [G7]dirt on her you lose a little [C]ground
 {end_of_verse}
+
+
+
+
+

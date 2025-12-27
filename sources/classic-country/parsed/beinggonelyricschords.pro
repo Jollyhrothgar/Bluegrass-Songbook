@@ -1,6 +1,9 @@
 {meta: title Being Gone}
 {meta: artist Tammy Wynette}
 {meta: composer Bill Taylor, Bobby Keel, Judi Tigert}
+{meta: x_source classic-country}
+{meta: x_source_file beinggonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Never [G]thought that you'd be leavin' 
@@ -32,3 +35,6 @@ Than you're [C]bein' gone could [D7]ever take [G]away
 You're [Am]bein' here gave so much more 
 Than you're [C]bein' gone could [D7]ever take [G]away
 {end_of_verse}
+
+
+

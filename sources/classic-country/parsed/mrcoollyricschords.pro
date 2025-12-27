@@ -1,6 +1,9 @@
 {meta: title Mr. Cool}
 {meta: artist Charlie Walker}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file mrcoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mr. Cool you’re a [C]fool 
@@ -36,3 +39,7 @@ There he [D7]goes with your baby while you [G]stand and drool
 He’s telling her the things that you [C]neglected to
 Mr. [D7]Cool you’re a [G]fool 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Right Before My Eyes}
 {meta: artist Waylon Jennings}
 {meta: composer Waylon Jennings and Don Bowman}
+{meta: x_source classic-country}
+{meta: x_source_file rightbeforemyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Right Before My Eyes
@@ -31,3 +34,7 @@ Just [G7]watch my dream will fade away right before my [C]eyes
 [F]Everyone keeps tellin' me what's right before my eyes
 [C]Love is blind and I can't see what's [F]right [G7]before my [C]eyes
 {end_of_verse}
+
+
+
+

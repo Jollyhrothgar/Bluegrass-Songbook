@@ -1,5 +1,8 @@
 {meta: title Heaven Or Hell}
 {meta: artist Willy Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file heavenorhelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well sometimes it's heaven and sometimes it's hell 
@@ -33,3 +36,7 @@ And my [F]back tracks're covered with [C]snow
 [F]Sometimes it's heaven [C]sometimes it's [D7]hell 
 [G7]Sometimes I don't even [C]know
 {end_of_verse}
+
+
+
+

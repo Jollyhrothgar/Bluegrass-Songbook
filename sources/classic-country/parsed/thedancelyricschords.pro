@@ -1,6 +1,9 @@
 {meta: title The Dance}
 {meta: artist Garth Brooks}
 {meta: composer Tony Arata}
+{meta: x_source classic-country}
+{meta: x_source_file thedancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Looking back on the [C]memory of
@@ -37,3 +40,7 @@ Yes my [C]life it's better left to [D7]chance
 I could have missed the [Bm]pain 
 But I'd have had to [C]miss [D7]the [G]dance
 {end_of_verse}
+
+
+
+

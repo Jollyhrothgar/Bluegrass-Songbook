@@ -1,6 +1,9 @@
 {meta: title It's Been a Long Long Time}
 {meta: artist Jimmy Dean}
 {meta: composer Jule Styne and Sammy Cahn}
+{meta: x_source classic-country}
+{meta: x_source_file itsbeenalonglongtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Kiss me once [Em]then kiss me [Am]twice
@@ -41,3 +44,9 @@ It's been a [D7]long [G7]long [A7]time
 {start_of_verse: Verse 7}
 It's been a [D7]long [G7]long [C]time
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Mama Take Me Home}
 {meta: artist George Jones}
 {meta: composer Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file mamatakemehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A drunk man crossed the street today he [C]staggered all around   
@@ -29,3 +32,6 @@ Oh Mama (mama) they took my babies [C]from me
 Oh mama (mama) it's getting hard to [C]breath now
 So mama take me [G]home and help me [D7]live and love [G]again
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Gotta Have My Baby Back}
 {meta: artist Hank Thompson}
 {meta: composer Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file igottahavemybabybacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby [E7]baby I [A7]miss you so very much
@@ -24,3 +27,5 @@ I just [Dm]gotta yes I [Fm]gotta I [G7]gotta have my baby [C]back
 Oh [C]baby [E7]come on home without my [Em]baby I just [C]couldn't go [Am]on
 I just [Dm]gotta yes I [Fm]gotta I [G7]gotta have my baby [C]back
 {end_of_verse}
+
+

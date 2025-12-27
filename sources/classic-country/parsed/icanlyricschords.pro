@@ -1,6 +1,9 @@
 {meta: title I Can}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file icanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can lose [F]myself in the [C]beauty of a [G7]song
@@ -34,3 +37,7 @@
 [F]In my mind I [C]can do [F]anything I want to [C]do
 [F]Except make my [G7]mind forget [C]you
 {end_of_verse}
+
+
+
+

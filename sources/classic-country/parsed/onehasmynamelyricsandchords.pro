@@ -1,5 +1,8 @@
 {meta: title One Has My Name}
 {meta: artist Jimmy Wakely}
+{meta: x_source classic-country}
+{meta: x_source_file onehasmynamelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One has my name  the other has my [G7]heart
@@ -21,3 +24,5 @@ But what good is love to a heart that can't be [C]free
 If I could live over my life [C7]I would [F]change
 The [C]one who has my heart would [G7]also have my [C]name
 {end_of_verse}
+
+

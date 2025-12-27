@@ -1,6 +1,9 @@
 {meta: title Truck Driving Son Of A Gun}
 {meta: artist Ferlin Husky}
 {meta: composer Dixie Dean and Robert A. King}
+{meta: x_source classic-country}
+{meta: x_source_file truckdrivingsonofagunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got a cute little gal in every eastern town from Boston to St Lou’
@@ -29,3 +32,6 @@ There’s six more towns to go before I get back to Tennessee
 And six more [F]women at least I [C]know
 Cause I'm a [G7]kiss stealing wheeling dealing truck driving son of a [C]gun
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Stay Around}
 {meta: artist Ricky Skaggs}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file illstayaroundlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now you just told me that you're leavin'
@@ -43,3 +46,8 @@ When your true love can't be [D7]found
 [G]But if you go dear I won't [C]follow
 [G]I just [D7]think I'll stay [G]around
 {end_of_verse}
+
+
+
+
+

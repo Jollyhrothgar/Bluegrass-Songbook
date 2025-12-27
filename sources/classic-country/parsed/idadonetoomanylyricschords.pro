@@ -1,6 +1,9 @@
 {meta: title I Had One Too Many}
 {meta: artist Wilburn Brothers}
 {meta: composer Lee McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file idadonetoomanylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stayed out all night last night my head is [G7]achin'
@@ -34,3 +37,7 @@ I had [C]one too many when [G7]one was a plenty for [C]me
 {start_of_verse: Verse 5}
 I had one too many when [G7]one was a plenty for [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If I Throw Away My Pride}
 {meta: artist Mel Tillis}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file ifithrowawaymypridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I'm sorry for the [G7]things you think I've [C]done
@@ -23,3 +26,5 @@ Even though the cost is [G7]high our love's [C]worth another [Am]try
 If I [G]throw away my [D7]pride will you come [Em]home [D7]
 If I [G]throw away my [D7]pride will you come [C]hom[G]e
 {end_of_verse}
+
+

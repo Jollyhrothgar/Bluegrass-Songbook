@@ -1,5 +1,8 @@
 {meta: title Fly Away}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file flyawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fly fly [A#7]away  [F]fly away in the [C]morning
@@ -33,3 +36,8 @@ Fly fly [A#7]away  [F]just don't give me no [C]warning
 {start_of_verse: Verse 4}
 Fly fly [A#7]away  [F]fly away in the [C]morning
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title North To Alaska}
 {meta: artist Johnny Horton}
 {meta: composer Mike Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file northtoalaskalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Way up north (north to Alaska) way up north (north to [G7]Alaska)
@@ -47,3 +50,8 @@ North to Alaska go [G7]north the rush is [C]on
 {start_of_verse: Verse 6}
 Way up north (north to Alaska) way up north (north to [G7]Alaska)
 {end_of_verse}
+
+
+
+
+

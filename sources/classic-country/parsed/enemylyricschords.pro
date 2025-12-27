@@ -1,6 +1,9 @@
 {meta: title Enemy}
 {meta: artist George Morgan}
 {meta: composer Johnny Adcock}
+{meta: x_source classic-country}
+{meta: x_source_file enemylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The work day is done it's time to go [D7]home
@@ -29,3 +32,6 @@ The [D7]waiting patient eyes of the [Em]enemy
 There's [G]tears at home by now she's missin' [C]me
 She'll [D7]know I'm in the arms of the [Em]enemy [D7]   [G]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We Loved It Away}
 {meta: artist George Jones}
 {meta: composer George Richey and Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file weloveditawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All my friends told me [C]we’d never make [G]it
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [C]And in each [D7]other’s arms we loved [C]it [G]away
 {end_of_verse}
+
+
+

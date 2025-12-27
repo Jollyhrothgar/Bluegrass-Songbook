@@ -1,6 +1,9 @@
 {meta: title The Doll House Is Empty}
 {meta: artist the Everly Brothers}
 {meta: composer Howard Greenfield and Jack Keller}
+{meta: x_source classic-country}
+{meta: x_source_file thedollhouseisemptylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once you used to play a game called break a heart a day
@@ -31,3 +34,6 @@
 [D7]Childhood days are over and [Am]the writing's on the [D7]door
 [Em]The doll house is [B7]empty [G][D7]now
 {end_of_verse}
+
+
+

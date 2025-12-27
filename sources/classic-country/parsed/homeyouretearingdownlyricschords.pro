@@ -1,6 +1,9 @@
 {meta: title Home You're Tearing Down Lyrics Chords}
 {meta: artist Loretta Lynn}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file homeyouretearingdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know your name I wouldn't know your [G7]face
@@ -29,3 +32,6 @@
 [C]I'll swallow pride and hear your side if you'll just [C7]come [F]around
 [C]Come over anytime and see [G7]the home you're tearing [C]down
 {end_of_verse}
+
+
+

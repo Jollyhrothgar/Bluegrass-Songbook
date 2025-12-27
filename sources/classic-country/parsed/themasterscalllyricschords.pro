@@ -1,5 +1,8 @@
 {meta: title The Master's Call}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file themasterscalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was but a young man I was wild and full of [Am]fire
@@ -63,3 +66,11 @@ I [F]cried and begged for mercy [G7]then and there upon the [Am]ground
 [C]Forgiven by the love of God a love that will [Am]remain
 I [F]gave my life and soul the [G7]night the Savior called my [Am]name
 {end_of_verse}
+
+
+
+
+
+
+
+

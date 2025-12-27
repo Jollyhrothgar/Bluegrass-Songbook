@@ -1,6 +1,9 @@
 {meta: title I Don't Think I'm Ready For You}
 {meta: artist Anne Murray}
 {meta: composer Jim Ed Norman}
+{meta: x_source classic-country}
+{meta: x_source_file idontthinkimreadyforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve never been scared of [Dm]love before [G7]now
@@ -40,3 +43,7 @@ To [Am]tell me but [G7]until you [Am]do
 [D7]I don’t think I’m [G]ready [G7]for [C]you
 [D7]I don’t think I’m [G]ready [G7]for [C]you
 {end_of_verse}
+
+
+
+

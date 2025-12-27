@@ -1,6 +1,9 @@
 {meta: title Blue Hawaii}
 {meta: artist Hank Locklin}
 {meta: composer Leo Robin and Ralph Rainger}
+{meta: x_source classic-country}
+{meta: x_source_file bluehawaiilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Night and you [F]and blue [C]Hawaii
@@ -24,3 +27,5 @@ The [D7]night is young and so are [G7]we
 [A7]And mine could [D7]all come true
 [G7]This magic [C]night of [F]nights with [C]you
 {end_of_verse}
+
+

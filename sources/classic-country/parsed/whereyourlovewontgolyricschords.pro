@@ -1,6 +1,9 @@
 {meta: title Where Your Love Won't Go}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file whereyourlovewontgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a lonesome avenue I'm barely [Dm]living on [C]
@@ -38,3 +41,7 @@ Though it [F]never crossed my mind
 [F]You don't love [G7]me [C]I'm on a one-way [F]street[Dm] 
 Where your [G7]love won't [C]go
 {end_of_verse}
+
+
+
+

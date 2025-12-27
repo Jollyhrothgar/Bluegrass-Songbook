@@ -1,6 +1,9 @@
 {meta: title You're No Angel Yourself}
 {meta: artist Kitty Wells}
 {meta: composer Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file yourenoangelyourselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your jealous heart I [F]can't [C]understand
@@ -29,3 +32,6 @@
 [F]Take away false pride what have you got [C]left
 [G7]Climb off your high horse you're no [F]an-gel [C][G7]yourself
 {end_of_verse}
+
+
+

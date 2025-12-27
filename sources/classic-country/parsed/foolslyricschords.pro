@@ -1,6 +1,9 @@
 {meta: title Fools}
 {meta: artist Jim Ed Brown and Helen Cornelius}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file foolslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fools  [F]never [C]learn  you play [F]with [C]fire 
@@ -34,3 +37,8 @@ I [G7]can't let you [C]go
 [C]Love  [F]this [C]I know  [F]fool I [C]may be 
 I [G7]can't let you [C]go
 {end_of_verse}
+
+
+
+
+

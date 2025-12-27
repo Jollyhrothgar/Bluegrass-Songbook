@@ -1,6 +1,9 @@
 {meta: title If You Ain't Lovin' (You Ain't Livin')}
 {meta: artist George Strait}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouaintlovinyouaintlivinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you got a Cadi[D7]llac boy and a forty room [G]shack boy
@@ -29,3 +32,6 @@ You ain't so [D7]well to do unless you get a little [G]coochy coo
 It takes a little bit of [C]smackin' or your life's a [G]lackin'
 If you ain't [D7]lovin' then you ain't [G]livin'
 {end_of_verse}
+
+
+

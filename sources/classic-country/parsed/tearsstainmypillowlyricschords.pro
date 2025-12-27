@@ -1,6 +1,9 @@
 {meta: title Tears Stain My Pillow}
 {meta: artist Slim Whitman}
 {meta: composer Byron}
+{meta: x_source classic-country}
+{meta: x_source_file tearsstainmypillowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tears stain my pillow every night
@@ -22,3 +25,5 @@ I'm [G7]still in love with you can't you [C]see
 I [F]wish that I could hold you just once [C]more
 It [G7]broke my heart when you walked out the [C]door
 {end_of_verse}
+
+

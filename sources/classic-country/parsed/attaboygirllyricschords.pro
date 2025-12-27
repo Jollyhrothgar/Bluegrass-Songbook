@@ -1,5 +1,8 @@
 {meta: title Atta Boy Girl}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file attaboygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Atta boy girl that atta way to break my [G7]heart
@@ -43,3 +46,9 @@ Well [C]atta boy that girl [G7]atta way to hurt my [C]pride
 {start_of_verse: Verse 5}
 Break my [F]heart make me [G7]cr--y atta boy [C]girl
 {end_of_verse}
+
+
+
+
+
+

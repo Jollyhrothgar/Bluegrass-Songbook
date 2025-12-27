@@ -1,6 +1,9 @@
 {meta: title We've Gone Too Far}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Billy Gray}
+{meta: x_source classic-country}
+{meta: x_source_file wevegonetoofarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Our first affair was just a dare [D7]to tempt our patience [G]greed
@@ -27,3 +30,6 @@
 tag:
 [C]For you must know [G]I love you so and [D7]we can't turn back [G]now
 {end_of_verse}
+
+
+

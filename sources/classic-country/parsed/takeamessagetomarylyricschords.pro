@@ -1,6 +1,9 @@
 {meta: title Take A Message To Mary}
 {meta: artist Everly Brothers}
 {meta: composer Boudleaux and Felice Boudleaux}
+{meta: x_source classic-country}
+{meta: x_source_file takeamessagetomarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]These are the words of a frontier lad
@@ -59,3 +62,12 @@ You [C]can say she [Em]better find [F]someone [C]new
 To [Am]cherish and to hold  oh Lord this [G7]cell is [C]cold
 M-ary  Ma-a-a-ary  [Am]oh Lord this [C]cell is [C][G7]cold
 {end_of_verse}
+
+
+
+
+
+
+
+
+

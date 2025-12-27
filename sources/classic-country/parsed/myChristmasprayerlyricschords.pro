@@ -1,6 +1,9 @@
 {meta: title My Christmas Prayer}
 {meta: artist Bobby Vinton}
 {meta: composer Jerry Bresler and Lyn Duddy}
+{meta: x_source classic-country}
+{meta: x_source_file myChristmasprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No Christmas gift could I [G7][Dm]bestow
@@ -50,3 +53,9 @@
 [C]And fill the world with [Dm]love and [G7]joy
 [Am]That's my fervent [Dm]Christmas [C][G7]prayer
 {end_of_verse}
+
+
+
+
+
+

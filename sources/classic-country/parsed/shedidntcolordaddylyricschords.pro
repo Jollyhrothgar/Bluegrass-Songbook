@@ -1,6 +1,9 @@
 {meta: title She Didn't Color Daddy}
 {meta: artist Wynn Stewart}
 {meta: composer Scott Turner and Roy Warren}
+{meta: x_source classic-country}
+{meta: x_source_file shedidntcolordaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I go to see my [G7]little [C]girl 
@@ -27,3 +30,5 @@ She made the [F]sun as black as night
 As if to [C]say it gave no light
 But she didn't color [G7]daddy I was [F]gone [G7]I was [C]gone
 {end_of_verse}
+
+

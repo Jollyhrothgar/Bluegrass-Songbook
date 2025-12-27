@@ -1,6 +1,9 @@
 {meta: title I'll Just Pretend}
 {meta: artist J.D. Crowe}
 {meta: composer Jessie Mae Martin}
+{meta: x_source classic-country}
+{meta: x_source_file illjustpretendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You spurned the love I gave you [F]darling
@@ -36,3 +39,7 @@
 [C7]As I'm facing all my friends [F]dear
 [C]They'll [G7]understand  I won't [C]pretend
 {end_of_verse}
+
+
+
+

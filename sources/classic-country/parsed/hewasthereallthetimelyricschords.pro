@@ -1,6 +1,9 @@
 {meta: title He Was There All the Time}
 {meta: artist Connie Smith}
 {meta: composer Gary Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file hewasthereallthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Time after time
@@ -43,3 +46,8 @@ And sharing each new day with Him
 [G]Waiting patiently in [C]line
 [Am]He was [G]there [D7]all the [G]time
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Couldn't Believe it Was True}
 {meta: artist Marty Robbins}
 {meta: composer Wally Fowler and Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file icouldntbelieveitwastruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I come home and I [F]knocked on my [C]door
@@ -42,3 +45,9 @@ I couldn't believe it was true oh Lord
 I couldn't believe it was true oh Lord
 [F]I couldn't believe it was [C]true
 {end_of_verse}
+
+
+
+
+
+

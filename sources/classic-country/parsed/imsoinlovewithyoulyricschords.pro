@@ -1,6 +1,9 @@
 {meta: title I’m So In Love With You}
 {meta: artist Faron Young}
 {meta: composer Danny Dill}
+{meta: x_source classic-country}
+{meta: x_source_file imsoinlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I always tried to tell myself 
@@ -69,3 +72,14 @@ Your sin will surely find you out
 I oughta laugh when it's turned about with [C]you 
 But [G7]I'm so in love with [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Heartaches}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file heartacheslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The doctor told me I'd get better in [C]time
@@ -46,3 +49,9 @@ There's no [D7]tellin' how long I've [G]got
 {start_of_verse: Verse 5}
 Cause here come those [C]heartaches again [D7]    [G]
 {end_of_verse}
+
+
+
+
+
+

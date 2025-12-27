@@ -1,6 +1,9 @@
 {meta: title My Walking Shoes}
 {meta: artist Doyle Lawson}
 {meta: composer Jimmy Martin and Paul M. Williams}
+{meta: x_source classic-country}
+{meta: x_source_file mywalkingshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My walking shoes [G7]don't fit me [C]anymore
@@ -36,3 +39,7 @@
 [C]Stay on your side of town honey I won't be [F]around
 [C]My walking shoes [G7]don't fit me [C]anymore
 {end_of_verse}
+
+
+
+

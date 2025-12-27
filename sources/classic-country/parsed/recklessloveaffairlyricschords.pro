@@ -1,6 +1,9 @@
 {meta: title Reckless Love Affair}
 {meta: artist Wanda Jackson}
 {meta: composer Rolley Baird}
+{meta: x_source classic-country}
+{meta: x_source_file recklessloveaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now we're the [D7]victims of a reckless love [G]affair
@@ -33,3 +36,7 @@ Two [C]broken hearts now lie here in des[G]pair
 There's [C]no use to pre[D7]tend we both [G]knew how it would [C]end
 Now we're the [D7]victims of a reckless love [G]affair
 {end_of_verse}
+
+
+
+

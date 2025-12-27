@@ -1,6 +1,9 @@
 {meta: title Honey I Love You}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file honeyiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey I [G7]love you honest I [C]do
@@ -36,3 +39,7 @@ Honey I [G7]love you I really [C]do
 Hey honey I [G7]love you honest I [C]do            
 Oh honey I [G7]love you you know what I really [C]do
 {end_of_verse}
+
+
+
+

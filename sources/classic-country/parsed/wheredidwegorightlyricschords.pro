@@ -1,6 +1,9 @@
 {meta: title Where Did We Go Right}
 {meta: artist Johnny Cash}
 {meta: composer Don Schlitz and Dave Loggins}
+{meta: x_source classic-country}
+{meta: x_source_file wheredidwegorightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a world where everybody's fallin' apart
@@ -53,3 +56,11 @@ I wish they all could know
 [C]Where did we [D7]go [G]right
 [C]Where did we [D7]go [G]right
 {end_of_verse}
+
+
+
+
+
+
+
+

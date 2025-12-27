@@ -1,6 +1,9 @@
 {meta: title Change of Heart Lyrics Chords}
 {meta: artist Kitty Wells}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file changeofheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I guess you must have had [D7]a change of [G]heart 
@@ -23,3 +26,5 @@ They were fragments of a dream that fell [G]apart
 Now they're gone because you had [D7]a change of [G]heart
 They're all gone because you had [D7]a change of [G]heart
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title It Might Take a While But I'll Get over You}
 {meta: artist Johnny Rodriguez}
 {meta: composer Frank Dycus and Shawn Camp}
+{meta: x_source classic-country}
+{meta: x_source_file itmighttakeawhilebutillgetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It might take a [F]while but I’ll [G7]get over you
@@ -33,3 +36,7 @@ It [F]might take a [G7]while but I’ll [F]get over [C]you
 {start_of_verse: Verse 4}
 [F]It might take a [G7]while but I’ll [F]get over [C]you
 {end_of_verse}
+
+
+
+

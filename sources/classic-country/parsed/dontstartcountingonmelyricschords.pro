@@ -1,6 +1,9 @@
 {meta: title Don't Start Counting On Me}
 {meta: artist Johnny Paycheck}
 {meta: composer Donny Young}
+{meta: x_source classic-country}
+{meta: x_source_file dontstartcountingonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don’t start counting on me to smile and take you back again
@@ -28,3 +31,5 @@ So when you find you’ve lost and I’m [G]needed
 Start [C]counting the times you’ve [G]cheated
 Ah but [D7]don’t start counting on [G]me
 {end_of_verse}
+
+

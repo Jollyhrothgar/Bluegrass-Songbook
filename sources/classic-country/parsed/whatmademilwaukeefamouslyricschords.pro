@@ -1,6 +1,9 @@
 {meta: title What Made Milwaukee Famous}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Glen Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file whatmademilwaukeefamouslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's late and she's waiting
@@ -43,3 +46,9 @@ Tag:
 What's Made Milwaukee [C]Famous
 Has made a [G7]loser out of [C]me 
 {end_of_verse}
+
+
+
+
+
+

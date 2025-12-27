@@ -1,6 +1,9 @@
 {meta: title Everybody Loves Somebody}
 {meta: artist Connie Smith}
 {meta: composer Irving Taylor and Ken Lane}
+{meta: x_source classic-country}
+{meta: x_source_file everybodylovessomebodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody [E7]loves somebody [F]sometime
@@ -47,3 +50,9 @@ For [G7]someone like [C]you
 {start_of_verse: Verse 5}
 [C](Everybody [E7]loves somebody [F]sometime)
 {end_of_verse}
+
+
+
+
+
+

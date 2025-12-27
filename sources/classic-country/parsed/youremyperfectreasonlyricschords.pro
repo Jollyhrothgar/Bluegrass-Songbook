@@ -1,6 +1,9 @@
 {meta: title You're My Perfect Reason}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson and Clint Daniels}
+{meta: x_source classic-country}
+{meta: x_source_file youremyperfectreasonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby did you know [F]you’re my perfect [C]reason
@@ -35,3 +38,7 @@ I’m in love for the very first [G7]time and you’re my perfect [C]reason
 {start_of_verse: Verse 4}
 I’m in love for the very first [G7]time you’re my perfect [C]reason
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Shake Rattle And Roll}
 {meta: artist Patsy Cline}
 {meta: composer Charles Calhoun}
+{meta: x_source classic-country}
+{meta: x_source_file shakerattleandrolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Get out that kitchen and rattle those pots and pans
@@ -34,3 +37,8 @@ I believe you're doing me wrong and now I know
 I [F]believe you're doing me wrong and now I [C]know
 The [F]harder I work the [G7]faster my money [C]goes
 {end_of_verse}
+
+
+
+
+

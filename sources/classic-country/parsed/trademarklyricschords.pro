@@ -1,6 +1,9 @@
 {meta: title Trademark}
 {meta: artist Carl Smith}
 {meta: composer Gary Walker and Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file trademarklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A little bit of crooning a little bit of spooning
@@ -33,3 +36,6 @@ A little bit of teasing a little bit of squeezing
 [G7]Well I'm always loving and turtle doving
 [C]That's what I'm [G7]noted [C]for
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Man In Black Is Wearing White}
 {meta: artist The Malpass Brothers}
 {meta: composer Chris Malpass}
+{meta: x_source classic-country}
+{meta: x_source_file maninblackiswearingwhitelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On September 12th [F]God must have felt
@@ -54,3 +57,10 @@ Cause the man in [G7]black is wearing [C]white
 {start_of_verse: Verse 6}
 [F]Cause the man in [G7]black is wearing [C]white
 {end_of_verse}
+
+
+
+
+
+
+

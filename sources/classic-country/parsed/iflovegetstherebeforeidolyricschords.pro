@@ -1,6 +1,9 @@
 {meta: title If Love Gets There Before I Do}
 {meta: artist Don Williams}
 {meta: composer Dickey Lee and Kerry Chater}
+{meta: x_source classic-country}
+{meta: x_source_file iflovegetstherebeforeidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another twenty miles and I'm [F]halfway [C]there
@@ -70,3 +73,12 @@ If [C]love gets there [Am]before I do
 [F]Darlin' don't you [G7]do it
 No don't you [C]do it
 {end_of_verse}
+
+
+
+
+
+
+
+
+

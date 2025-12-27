@@ -1,5 +1,8 @@
 {meta: title Mountain Of Love}
 {meta: artist David Houston}
+{meta: x_source classic-country}
+{meta: x_source_file mountainoflovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Got a mountain of love for the girl in the valley
@@ -42,3 +45,8 @@ Someday I will mar-ry the girl in the [F]valley
 Cause this mountain [C]boy holds a world full of [G7]joy
 For the girl in the [C]valley
 {end_of_verse}
+
+
+
+
+

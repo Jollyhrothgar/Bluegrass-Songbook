@@ -1,6 +1,9 @@
 {meta: title That Something In My Life}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file thatsomethinginmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The older you get the more [C]you stand to lose
@@ -40,3 +43,8 @@ Some [Bm]things really are too [C]good to be true
 That [D7]something in my life one thing in my life
 That [Am]something in [D7]my life is [G]you
 {end_of_verse}
+
+
+
+
+

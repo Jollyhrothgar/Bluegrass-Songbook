@@ -1,6 +1,9 @@
 {meta: title You've Got A Hold On Me}
 {meta: artist Don Williams}
 {meta: composer David Williamson}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotaholdonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another lonely night 
@@ -50,3 +53,9 @@ I'm in love with a [F]memory
 [F]You're not [C]even [G7]here 
 I'm in love with a [F]memory [C]
 {end_of_verse}
+
+
+
+
+
+

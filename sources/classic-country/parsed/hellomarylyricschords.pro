@@ -1,6 +1,9 @@
 {meta: title Hello Mary}
 {meta: artist Moe Bandy}
 {meta: composer Bobby Bond}
+{meta: x_source classic-country}
+{meta: x_source_file hellomarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello Mary (hello Mary) yeah this is [F]me
@@ -51,3 +54,8 @@ All right you guys I made my call
 [F]I got caught up in a business deal
 [C]And it's gonna be a little [G7]while before I get [C]back
 {end_of_verse}
+
+
+
+
+

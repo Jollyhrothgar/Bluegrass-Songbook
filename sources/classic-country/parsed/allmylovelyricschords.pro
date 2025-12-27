@@ -1,6 +1,9 @@
 {meta: title All My Love}
 {meta: artist Mel Tillis}
 {meta: composer Ruth Durand, Henri Contet, Mitchell Parish}
+{meta: x_source classic-country}
+{meta: x_source_file allmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can’t give you [G7]silver  I [F]can’t give you [C]gold
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]But I promise that I will [C]always [F]give you [C]all my [C][G7]love
 {end_of_verse}
+
+
+

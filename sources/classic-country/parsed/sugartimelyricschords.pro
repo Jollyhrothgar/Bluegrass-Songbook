@@ -1,6 +1,9 @@
 {meta: title Sugartime}
 {meta: artist McGuire Sisters}
 {meta: composer Odis Echols and Charlie Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file sugartimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We-[G7]l-l [C]sugar in the morning 
@@ -50,3 +53,8 @@ Sugar in the evening
 [C]Love me [F]all the [C]time
 Repeat all verses above
 {end_of_verse}
+
+
+
+
+

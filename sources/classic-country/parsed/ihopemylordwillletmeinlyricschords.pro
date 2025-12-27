@@ -1,6 +1,9 @@
 {meta: title I Hope My Lord Will Let Me In}
 {meta: artist Ralph Stanley}
 {meta: composer Randall Hylton}
+{meta: x_source classic-country}
+{meta: x_source_file ihopemylordwillletmeinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh they tell me there's a land called [F]Heaven
@@ -33,3 +36,7 @@ Oh I [C]hope that my [G7]Lord will let me [C]in
 {start_of_verse: Verse 5}
 Oh I hope that my [G7]Lord will let me [C]in
 {end_of_verse}
+
+
+
+

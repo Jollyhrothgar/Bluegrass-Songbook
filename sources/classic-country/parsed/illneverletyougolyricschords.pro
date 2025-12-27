@@ -1,6 +1,9 @@
 {meta: title I'll Never Let You Go}
 {meta: artist Hank Snow}
 {meta: composer Jimmy Wakely}
+{meta: x_source classic-country}
+{meta: x_source_file illneverletyougolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say we've reached the hour of [D7]parting
@@ -29,3 +32,6 @@
 [C]I'll never let you go cause I love [G]you
 [D7]So please don’t try to say [G]goodbye
 {end_of_verse}
+
+
+

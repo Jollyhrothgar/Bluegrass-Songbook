@@ -1,6 +1,9 @@
 {meta: title Cotton Eyed Joe}
 {meta: artist Bob Wills}
 {meta: composer Tommy Duncan and Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file cottoneyedjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't you remember [C]don't you know
@@ -46,3 +49,7 @@ Had it not been for [C]Cotton Eyed Joe
 [G]Id'a been married a [C]long time ago
 [G]Id'a been married a [D7]long time [G]ago
 {end_of_verse}
+
+
+
+

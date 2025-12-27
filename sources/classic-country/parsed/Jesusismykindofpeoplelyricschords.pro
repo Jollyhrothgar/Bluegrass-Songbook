@@ -1,6 +1,9 @@
 {meta: title Jesus Is My Kind Of People}
 {meta: artist Ray Price}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusismykindofpeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I felt like a lonely sailor [F]lost on a raging [C]sea 
@@ -50,3 +53,9 @@ Jesus is [Am]my kind of [G7]friend
 [C]Jesus is [F]my kind of [C]people 
 [Am]From now on [Dm]I'm gonna [F]be [G7]His kind of [C]man 
 {end_of_verse}
+
+
+
+
+
+

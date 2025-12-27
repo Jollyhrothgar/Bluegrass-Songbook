@@ -1,6 +1,9 @@
 {meta: title The Creek Will Still Be Running}
 {meta: artist Johnny Paycheck}
 {meta: composer Aubrey L. Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file thecreekwillstillberunninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the creek will still be running seven days a week
@@ -42,3 +45,8 @@ Will still turn brown
 {start_of_verse: Verse 5}
 [C]Yeah after you're gone the creek will [D7]still be running seven days a [G]week
 {end_of_verse}
+
+
+
+
+

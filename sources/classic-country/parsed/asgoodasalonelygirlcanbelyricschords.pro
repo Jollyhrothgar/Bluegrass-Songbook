@@ -1,6 +1,9 @@
 {meta: title As Good As A Lonely Girl Can Be}
 {meta: artist Ernest Tubb and Loretta Lynn}
 {meta: composer Bobby Harden}
+{meta: x_source classic-country}
+{meta: x_source_file asgoodasalonelygirlcanbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tell me darling have I been away too [G7]long
@@ -32,3 +35,6 @@ To [F]lie here beside him learns me [C]how sweet [E7]love can [Am]be
 (You're just too much to me I know I should have known)
 I'm being [C]good [F]as [C]lonely [G7]girl can [C]be
 {end_of_verse}
+
+
+

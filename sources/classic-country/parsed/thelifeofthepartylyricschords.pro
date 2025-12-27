@@ -1,6 +1,9 @@
 {meta: title The Life Of The Party}
 {meta: artist Porter Wagoner}
 {meta: composer Dave Kirby and Hal Bynum}
+{meta: x_source classic-country}
+{meta: x_source_file thelifeofthepartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The neighbors keep calling all the [C7]time since you’ve [F]gone
@@ -22,3 +25,5 @@ I’m the life of the [G7]party  till the last one is [C]gone
 That’s the time that I’m [F]dreading when they’ve all said [C]goodbye
 Then the life of the [G7]party  will [F]break down and [C]cry
 {end_of_verse}
+
+

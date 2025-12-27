@@ -1,6 +1,9 @@
 {meta: title Turn The Cards Slowly}
 {meta: artist Patsy Cline}
 {meta: composer Sammy Masters}
+{meta: x_source classic-country}
+{meta: x_source_file turnthecardsslowlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Turn the cards slowly while you're dealing darling 
@@ -34,3 +37,7 @@ And if you stack the [D7]deck then I'll move [G]on
 Turn the cards slowly while you're dealing darling 
 And if you stack the [D7]deck then I'll move [G]on
 {end_of_verse}
+
+
+
+

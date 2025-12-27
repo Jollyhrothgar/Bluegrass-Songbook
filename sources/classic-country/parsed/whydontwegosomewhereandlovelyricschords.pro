@@ -1,6 +1,9 @@
 {meta: title Why Don't We Go Somewhere And Love}
 {meta: artist Charlie Rich}
 {meta: composer Kenny O'Dell and Larry Henley}
+{meta: x_source classic-country}
+{meta: x_source_file whydontwegosomewhereandlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't want to read the paper this morning
@@ -30,3 +33,7 @@ Cause if we [C]talk too much then we [Am]might just change our [G]minds[C]
 Why don't we go [C]somewhere and love  [G]it's been a long long time [C]
 [G]So why don't we just go [C]somewhere and love and leave it all [G]behind
 {end_of_verse}
+
+
+
+

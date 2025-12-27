@@ -1,6 +1,9 @@
 {meta: title Trouble With Girls}
 {meta: artist Jean Shepard}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file troublewithgirlslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Life ain't fun [F]until you get you [C]one
@@ -67,3 +70,13 @@ But this necessary evil ain't the cotton boll weevil
 [G7]I know the trouble with girls is [C]men
 [G7]I say the trouble with girls is [C]men
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

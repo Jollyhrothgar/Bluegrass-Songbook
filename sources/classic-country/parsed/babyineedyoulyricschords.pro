@@ -1,5 +1,8 @@
 {meta: title Baby I Need You}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file babyineedyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Two lips need two more to kiss them
@@ -38,3 +41,6 @@ Two hearts make a team of love dear
 [C]Love 'em lots and sometimes scold them
 [G]Baby I need [D7]you like you need [G]me
 {end_of_verse}
+
+
+

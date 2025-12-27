@@ -1,6 +1,9 @@
 {meta: title Brand New Heartache}
 {meta: artist Everly Brothers}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file brandnewheartachelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A new boy came to town
@@ -35,3 +38,8 @@ Right [C]now we've got a date
 And you're three hours [C7]late
 I [F]feel a brand new [G7]heartache comin' [C]on  [F]   [C]
 {end_of_verse}
+
+
+
+
+

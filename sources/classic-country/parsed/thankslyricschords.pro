@@ -1,6 +1,9 @@
 {meta: title Thanks}
 {meta: artist Waylon Jennings}
 {meta: composer Bill Martin and Phil Coulter}
+{meta: x_source classic-country}
+{meta: x_source_file thankslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Sunday morning in the [C]valley
@@ -43,3 +46,6 @@ And for [G7]keepin' us from harm
 [C]Thanks [G7]thanks [Am]thanks [F]thanks
 [C]Thanks to the [G7]Lord for a [F]girl [G7]like Emily [C]Jane
 {end_of_verse}
+
+
+

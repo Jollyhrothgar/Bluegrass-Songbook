@@ -1,6 +1,9 @@
 {meta: title Whiskey Chasin'}
 {meta: artist Joe Stampley}
 {meta: composer Buddy Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeychasinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Looks like this [Am]bad rainy weather [D7]kept every one else [G]in
@@ -39,3 +42,8 @@
 {start_of_verse: Verse 6}
 [Am]I'm whiskey chasin' my [D7]troubles away [G]again
 {end_of_verse}
+
+
+
+
+

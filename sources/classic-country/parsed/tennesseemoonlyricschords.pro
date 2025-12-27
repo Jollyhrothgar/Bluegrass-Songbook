@@ -1,5 +1,8 @@
 {meta: title Tennessee Moon}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tennessee moon I’m so [C]lonely tonight
@@ -28,3 +31,6 @@ I [G]miss her and oh my heart [D7]cries
 So [G]tell her I’m hoping that [C]we will meet soon
 [G]Oh [D7]Tennessee [G]moon
 {end_of_verse}
+
+
+

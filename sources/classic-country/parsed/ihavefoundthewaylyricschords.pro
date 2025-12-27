@@ -1,6 +1,9 @@
 {meta: title I Have Found the Way}
 {meta: artist Doyle Lawson}
 {meta: composer Adgar M Pace and L.A. Green}
+{meta: x_source classic-country}
+{meta: x_source_file ihavefoundthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have found the way that [C]leads to endless [G]day
@@ -50,3 +53,9 @@ I have found the [D7]way (found the gospel way)
 [C]Glory [G]hallelujah (hallelujah)
 I have [D7]found the [G]way
 {end_of_verse}
+
+
+
+
+
+

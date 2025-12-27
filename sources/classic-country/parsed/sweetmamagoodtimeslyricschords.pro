@@ -1,6 +1,9 @@
 {meta: title Sweet Mama Good Times}
 {meta: artist Mickey Gilley}
 {meta: composer Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file sweetmamagoodtimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweet Mama Good Times [C]Mama let the good times [G]roll
@@ -46,3 +49,8 @@ Little bit of that old Dixie Lord and [A7]down home country [D7]soul
 {start_of_verse: Verse 4}
 [A7]Mama let the [D7]good times [G]roll
 {end_of_verse}
+
+
+
+
+

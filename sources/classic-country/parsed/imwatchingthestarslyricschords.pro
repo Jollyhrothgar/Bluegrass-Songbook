@@ -1,5 +1,8 @@
 {meta: title I'm Watching The Stars}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file imwatchingthestarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m watching the stars [F]that hang in the [C]sky
@@ -28,3 +31,6 @@ Still [F]I’ve been told that I shouldn’t feel [C]blue
 So I’ll keep on watching and [F]wait for the [C]time
 [G7]When my star will fall and I’ll wish you were [C]mine
 {end_of_verse}
+
+
+

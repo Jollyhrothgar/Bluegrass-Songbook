@@ -1,6 +1,9 @@
 {meta: title Back Up Buddy}
 {meta: artist Carl Smith}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file backupbuddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Back up buddy don't you come any [F]closer
@@ -50,3 +53,9 @@
 [C]Back up buddy don't you come any [F]closer
 [C]She's mine [G7]all [C]mine
 {end_of_verse}
+
+
+
+
+
+

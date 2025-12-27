@@ -1,6 +1,9 @@
 {meta: title Book Of Love}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare and Lance Guyness}
+{meta: x_source classic-country}
+{meta: x_source_file bookoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say for every [F]boy there's a [C]girl
@@ -28,3 +31,6 @@ And I [C]know our names are [F]in that [G7]book of [C]love
 And I [C]know our names are [F]in that [G7]book of [C]love [Am]
 Yes I [C]know our names are [F]in that [G7]book of [C]love
 {end_of_verse}
+
+
+

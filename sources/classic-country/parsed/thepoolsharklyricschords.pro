@@ -1,6 +1,9 @@
 {meta: title The Pool Shark}
 {meta: artist Dave Dudley}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file thepoolsharklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He said pardon me for bein' so [C]bold
@@ -73,3 +76,11 @@ And I checked her form
 [G]I guess you know what I was thinking of
 [C]I said waitress honey what time you get [G]off
 {end_of_verse}
+
+
+
+
+
+
+
+

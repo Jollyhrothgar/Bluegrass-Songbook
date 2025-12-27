@@ -1,6 +1,9 @@
 {meta: title Church At The Wagon}
 {meta: artist Red Steagall}
 {meta: composer Fletcher Jowers}
+{meta: x_source classic-country}
+{meta: x_source_file churchatthewagonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We'd gathered up a herd of longhorns [F]bound for Abi[C]lene
@@ -49,3 +52,8 @@ And we'd [C]sing In The [G7]Sweet Bye and [C]Bye
 In The Sweet Bye and [G7]Bye we shall meet on that beautiful [C]shore
 In The Sweet Bye and [F]Bye we shall [C]meet on that [G7]beautiful [F]shore[C]
 {end_of_verse}
+
+
+
+
+

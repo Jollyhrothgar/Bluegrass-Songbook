@@ -1,6 +1,9 @@
 {meta: title Two Separate Bar Stools}
 {meta: artist Wanda Jackson}
 {meta: composer Billy Graham}
+{meta: x_source classic-country}
+{meta: x_source_file twoseparatebarstoolslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Two lonely people drinking [C]alone 
@@ -34,3 +37,7 @@ While one love is [D7]breaking in [G]two
 Tag:
 While one love is [D7]breaking in [G]two
 {end_of_verse}
+
+
+
+

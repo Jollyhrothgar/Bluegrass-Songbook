@@ -1,6 +1,9 @@
 {meta: title Wear My Ring Around Your Neck}
 {meta: artist Elvis Presley}
 {meta: composer Bert Carroll and Russell Moody}
+{meta: x_source classic-country}
+{meta: x_source_file wearmyringaroundyournecklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Won't you wear my ring around your neck
@@ -29,3 +32,6 @@
 [C]Let them know I love you [F]so
 [C]And let them know [G7]by the ring around your [C]neck
 {end_of_verse}
+
+
+

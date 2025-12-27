@@ -1,6 +1,9 @@
 {meta: title Down The Sawdust Trail}
 {meta: artist Jimmie Davis}
 {meta: composer Millie Lou Pace}
+{meta: x_source classic-country}
+{meta: x_source_file downthesawdusttraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There are so many [D7]memories of my [G]childhood
@@ -31,3 +34,6 @@ How the heart is [G]full [G7]
 When their prayer reached [C]heaven
 At the old camp [G]meeting down the [D7]sawdust [G]trail[C]  [G]
 {end_of_verse}
+
+
+

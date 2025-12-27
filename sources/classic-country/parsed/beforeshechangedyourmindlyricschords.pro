@@ -1,5 +1,8 @@
 {meta: title Before She Changed Your Mind}
 {meta: artist Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file beforeshechangedyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A future filled with sorrow cross my path of happi[G7]ness
@@ -30,3 +33,6 @@ She took you [G7]from me and left me [C]lonely
 Come back to me the [C]one you love 
 [G7]Before she changed your [C]mind
 {end_of_verse}
+
+
+

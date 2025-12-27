@@ -1,6 +1,9 @@
 {meta: title I Don't See How I Can Love You Anymore}
 {meta: artist Charley Pride}
 {meta: composer Max D. Barnes and Maria Houston}
+{meta: x_source classic-country}
+{meta: x_source_file idontseehowicanloveyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can feel the warmth of [F]you against my [C]skin
@@ -33,3 +36,7 @@ But [F]I don't [C]see how I can [G7]love you any[C]more
 {start_of_verse: Verse 4}
 No [F]I don't [C]see how I can [G7]love you any[F]more[C]
 {end_of_verse}
+
+
+
+

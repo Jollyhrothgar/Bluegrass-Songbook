@@ -1,6 +1,9 @@
 {meta: title In The Shadows of My Mind}
 {meta: artist Vernon Oxford}
 {meta: composer E. E. Collins}
+{meta: x_source classic-country}
+{meta: x_source_file intheshadowsofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the shadows of my [F]mind
@@ -36,3 +39,7 @@
 [C]When I'm alone at night  and I turn off the [F]lights
 [C]She goes walking  through [G7]the shadows of my [C]mind
 {end_of_verse}
+
+
+
+

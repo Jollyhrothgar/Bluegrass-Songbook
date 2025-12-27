@@ -1,6 +1,9 @@
 {meta: title Empty Saddles}
 {meta: artist Sons of the Pioneers}
 {meta: composer Billy Hill}
+{meta: x_source classic-country}
+{meta: x_source_file emptysaddleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]There's a something [A7]strange in the old [Em]corral
@@ -50,3 +53,9 @@ My [G]tears will be [A7]dried to[Am]night[D7]
 If you'll [G]only say I'm lonely as you [C]carry my old [Cm]pal
 Empty [G]saddles in the [D7]old cor[G]ral
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title White Man Singin' The Blues}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file whitemansingintheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The old man paid no [C]mind to [G]color
@@ -49,3 +52,9 @@ Cause he knew that I'd [C]been down and [G]out
 Old Joe said that I was a [C]soul [G]brother
 And things I'd been [D7]singin' [G]about
 {end_of_verse}
+
+
+
+
+
+

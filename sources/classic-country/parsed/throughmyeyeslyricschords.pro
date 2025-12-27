@@ -1,6 +1,9 @@
 {meta: title Through My Eyes}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Doc James}
+{meta: x_source classic-country}
+{meta: x_source_file throughmyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I've heard you [G]talking   [D7]on the [G][Em]telephone
@@ -54,3 +57,9 @@
 [Em]Through my eyes
 [C]If only you could [D7]see you through my [G]eyes
 {end_of_verse}
+
+
+
+
+
+

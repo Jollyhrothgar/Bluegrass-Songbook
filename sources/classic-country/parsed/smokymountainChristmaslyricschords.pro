@@ -1,5 +1,8 @@
 {meta: title Smoky Mountain Christmas}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file smokymountainChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm dreaming of a Smoky Mountain [F]Christmas
@@ -38,3 +41,7 @@ I'm dreaming of a Smoky Mountain [F]Christmas
 With [G7]nothing much that money buys but everything worth while in life
 Dreamin' of a Smoky Mountain [C]Christmas
 {end_of_verse}
+
+
+
+

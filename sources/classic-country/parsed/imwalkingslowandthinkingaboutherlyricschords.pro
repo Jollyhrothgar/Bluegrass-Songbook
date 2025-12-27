@@ -1,6 +1,9 @@
 {meta: title I'm Walking Slow (And Thinking About Her)}
 {meta: artist Ray Price}
 {meta: composer Bobby Bare and Lance Guyness}
+{meta: x_source classic-country}
+{meta: x_source_file imwalkingslowandthinkingaboutherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When shadows fall I'm twice as lonely
@@ -47,3 +50,12 @@ Back through the door like always before
 How I miss my one and only
 [G7]Gone the night like many nights before
 {end_of_verse}
+
+
+
+
+
+
+
+
+

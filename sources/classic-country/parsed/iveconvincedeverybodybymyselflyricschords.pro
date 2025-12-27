@@ -1,6 +1,9 @@
 {meta: title I've Convinced Everybody But Myself}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Billy Gray}
+{meta: x_source classic-country}
+{meta: x_source_file iveconvincedeverybodybymyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've convinced everybody I've forgotten you at [D7]last
@@ -29,3 +32,6 @@
 [G7]And if you believe them there's just one person [C]left
 [G]I've convinced everybody   [D7]everybody but [G]myself
 {end_of_verse}
+
+
+

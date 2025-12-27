@@ -1,6 +1,9 @@
 {meta: title 1953 Dear John Honky Tonk Blues}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file 1953dearjohnhonkytonkblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I keep the radio on most all night long and listen to the songs they play
@@ -31,3 +34,6 @@ And [D7]I need help when I hear No Help [G]Wanted
 [D7]Old songs make me wonder what you're [G]doing [C]
 I get those [G]1953 [D7]Dear John Honky Tonk [G]Blues
 {end_of_verse}
+
+
+

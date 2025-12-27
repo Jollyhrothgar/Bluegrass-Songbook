@@ -1,6 +1,9 @@
 {meta: title Wind In The Wheel}
 {meta: artist Red Steagall}
 {meta: composer Dale Burson and Russell D. Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file windinthewheellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's [C]beautiful [F]here in the [G7]canyon to[C]night
@@ -43,3 +46,8 @@ With a [F]good saddle [G7]horse for a [C]friend
 I'm [F]half way near a [G7]windmill be[C]low the Cap[F]rock
 In a [C]cedar break [G7]out of the [C]wind[G7]
 {end_of_verse}
+
+
+
+
+

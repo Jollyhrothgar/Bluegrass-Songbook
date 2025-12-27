@@ -1,6 +1,9 @@
 {meta: title I’m Not Over You}
 {meta: artist Rhonda Vincent}
 {meta: composer Carl Jackson and Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file imnotoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight the rain that's falling only adds to my [G7]heartache
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]I'm going [G7]under cause I'm not over [C]you
 {end_of_verse}
+
+
+
+

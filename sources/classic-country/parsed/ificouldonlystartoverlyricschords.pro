@@ -1,6 +1,9 @@
 {meta: title If I Could Only Start Over}
 {meta: artist Porter Wagoner}
 {meta: composer Faye Bradshaw}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldonlystartoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now if I could only start [F]over
@@ -29,3 +32,6 @@
 [C]But I never dreamed of old [F]sweethearts
 [C]The way that [G7]I dream about [C]you
 {end_of_verse}
+
+
+

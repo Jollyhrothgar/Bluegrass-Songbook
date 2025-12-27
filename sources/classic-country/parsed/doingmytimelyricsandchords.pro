@@ -1,6 +1,9 @@
 {meta: title Doing My Time}
 {meta: artist Lester Flatt and Earl Scruggs}
 {meta: composer Jimmie Skinner}
+{meta: x_source classic-country}
+{meta: x_source_file doingmytimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On this old rock pile with a ball and chain
@@ -29,3 +32,6 @@ I'll settle down and quit my rowdy ways Lord Lord
 [C]With that gal of mine with that gal of [G]mine
 She'll be waitin' for [D7]me when I've done my [G]time
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Whole Lot Of Lettin' Go}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file wholelotoflettingolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I felt the tug of the [D7]ties that bind 
@@ -43,3 +46,6 @@ And I've let [G]go of thinking I could [Am]never go back
 [F]When it comes to [C]her one thing holds [D7]true
 There's a [Am]whole lot of lettin' [D7]go that's left to [G]do
 {end_of_verse}
+
+
+

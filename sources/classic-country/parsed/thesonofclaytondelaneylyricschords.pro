@@ -1,5 +1,8 @@
 {meta: title The Son Of Clayton Delaney}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file thesonofclaytondelaneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On Fourth Street in Louisville in [C][F]1978
@@ -42,3 +45,8 @@ He said you are one man I've wanted to [G7]see
 He [C]said I know you you [F]story tellin' son of a [C]gun
 And you know me I'm [G7]Clayton Delaney's [C]song
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Got Home Just In Time To Say Goodbye}
 {meta: artist Ronnie Milsap}
 {meta: composer Wayne Kemp and Bill Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file igothomejustintimetosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up a thousand [F]miles from home this [C]morning
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]Cause I got [C]home just in time [G7]to say [C]goodbye
 {end_of_verse}
+
+
+
+

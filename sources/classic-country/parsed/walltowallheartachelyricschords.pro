@@ -1,6 +1,9 @@
 {meta: title Wall To Wall Heartache}
 {meta: artist Wynn Stewart}
 {meta: composer Eddie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file walltowallheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In this day and time love don't [C]last too long
@@ -22,3 +25,5 @@ It [D7]seems true love's old fashioned and it's [G]going out of style
 You promised me happiness what you [C]say you’d never do
 And I've got [D7]wall to wall heartaches next to [G]you
 {end_of_verse}
+
+

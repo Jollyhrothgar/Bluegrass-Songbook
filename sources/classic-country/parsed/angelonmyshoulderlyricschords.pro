@@ -1,6 +1,9 @@
 {meta: title Angel On My Shoulder}
 {meta: artist Jerry Wallace}
 {meta: composer Chip Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file angelonmyshoulderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Got an angel [G7]on my shoulder [C]got a [Am]penny in my [C]pocket
@@ -45,3 +48,8 @@
 [G7]And I'm gonna love her [C]too
 [G7]And I'm gonna love her [C]too
 {end_of_verse}
+
+
+
+
+

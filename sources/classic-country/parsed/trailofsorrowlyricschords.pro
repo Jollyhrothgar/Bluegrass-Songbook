@@ -1,6 +1,9 @@
 {meta: title Trail Of Sorrow}
 {meta: artist Reno Brothers}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file trailofsorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know I’m headin’ for a trail of [C]sorrow
@@ -36,3 +39,7 @@ And I [D7]know that I’ve been wrong dear from the [G]start
 I know I’ll have to face each sad to[C]morrow
 And it [D7]breaks my heart to know that we must [G]part
 {end_of_verse}
+
+
+
+

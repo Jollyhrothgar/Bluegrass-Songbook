@@ -1,6 +1,9 @@
 {meta: title Forget About Me}
 {meta: artist The Bellamy Brothers}
 {meta: composer Troy Seals, Eddie Setser, Francis Miller}
+{meta: x_source classic-country}
+{meta: x_source_file forgetaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every time I look into your eyes
@@ -41,3 +44,7 @@ And [Am]all the nights that [D7]we won't share [G]again
 {start_of_verse: Verse 4}
 Forget about me[Am]   [D7]    [G]oh forget about me [Am]    [D7]    [G]
 {end_of_verse}
+
+
+
+

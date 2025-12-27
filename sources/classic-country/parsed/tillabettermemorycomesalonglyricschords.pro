@@ -1,6 +1,9 @@
 {meta: title Till A Better Memory Comes Along}
 {meta: artist Gene Watson}
 {meta: composer Timothy Ray Menzies, Gene Dobbins, Glenn Ray}
+{meta: x_source classic-country}
+{meta: x_source_file tillabettermemorycomesalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]See these tears on my [G7]face [C]I’ve cried every [C7]day
@@ -20,3 +23,4 @@ That didn't start with me and [G7]you
 So I'll [C]hold on until a [G7]better memory comes [F]a-lon[D7]g
 I’m holding [C]on until a [G7]better memory comes [C]along
 {end_of_verse}
+

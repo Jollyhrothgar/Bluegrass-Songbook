@@ -1,6 +1,9 @@
 {meta: title Lucky Arms}
 {meta: artist Lefty Frizzell}
 {meta: composer Sanger D. Shafer and Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file luckyarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't get no [C]money for my [G]pockets 
@@ -37,3 +40,8 @@ Lucky [G]arms [C]I got the world in my [G]arms
 I'll still be independent
 Cause I've got the [D7]world in my [G]arms  
 {end_of_verse}
+
+
+
+
+

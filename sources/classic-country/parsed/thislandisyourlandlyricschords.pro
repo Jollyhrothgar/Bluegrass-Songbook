@@ -1,6 +1,9 @@
 {meta: title This Land Is Your Land}
 {meta: artist Wanda Jackson}
 {meta: composer Woody Guthrie}
+{meta: x_source classic-country}
+{meta: x_source_file thislandisyourlandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This land is [F]your land this land is my [C]land
@@ -36,3 +39,7 @@
 [F]From the Redwood Forests to the Gulf Stream [C]waters
 [G7]This land was made for you and [C]me
 {end_of_verse}
+
+
+
+

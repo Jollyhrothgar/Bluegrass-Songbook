@@ -1,6 +1,9 @@
 {meta: title Love Burning Down}
 {meta: artist Eddy Raven}
 {meta: composer Ron Moore and Doug Hauseman}
+{meta: x_source classic-country}
+{meta: x_source_file loveburningdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Table for [C]one  she sips her [G]wine
@@ -35,3 +38,7 @@ She's feeling the [F]f-l-a-[D7]m-e love burning [G]down
 {start_of_verse: Verse 5}
 She's feeling the [F]f-l-a-[D7]m-e love burning [G]down
 {end_of_verse}
+
+
+
+

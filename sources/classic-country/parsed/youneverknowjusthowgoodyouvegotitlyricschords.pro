@@ -1,6 +1,9 @@
 {meta: title You Never Know Just How Good You've Got It}
 {meta: artist George Jones}
 {meta: composer Mark Nesler}
+{meta: x_source classic-country}
+{meta: x_source_file youneverknowjusthowgoodyouvegotitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey once I was the honky-tonking talk of the town
@@ -51,3 +54,9 @@ And a [F]buck is getting hard to come [C]by
 Well I must [F]confess my [C]life's a big [A7]mess
 I'm so [D7]low  I could [G7]lay down and [C]die
 {end_of_verse}
+
+
+
+
+
+

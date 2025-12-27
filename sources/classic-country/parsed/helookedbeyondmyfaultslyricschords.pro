@@ -1,6 +1,9 @@
 {meta: title He Looked Beyond My Faults}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file helookedbeyondmyfaultslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Fm]He looked be[C]yond [Fm]my [C]fault and [F]saw [G7]my [C]need [F]  [C]
@@ -19,3 +22,5 @@ To [Dm]view [G7]the [Am]cross where [F]Jesus [C]died for [D7]me  [G7]
 How marve[C]lous the [F]grace that caught my [C]falling [Am]soul [C]
 He [Fm]looked be[C]yond my fault and [F]saw [G7]my [C]need
 {end_of_verse}
+
+

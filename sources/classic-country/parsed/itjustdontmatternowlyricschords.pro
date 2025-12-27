@@ -1,6 +1,9 @@
 {meta: title It Just Don’t Matter Now}
 {meta: artist Hank Williams}
 {meta: composer Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file itjustdontmatternowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For years I’ve lived without [F]a meaning
@@ -29,3 +32,6 @@ Cause my heart has lost a [F]feeling
 And I will never say I blame [F]you
 [G7]Cause it just don’t matter [C]now
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title How Can I Get You Out Of My Heart}
 {meta: artist Moe Bandy}
 {meta: composer Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file howcanigetyououtofmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's late [G7]and the crowd is [C]leaving
@@ -34,3 +37,7 @@ When [C]I can't get [G7]you off of my [C]mind
 But [F]how can I [G7]get you [C]out of my [F]heart
 When [C]I can't get [G7]you off of my [C]mind
 {end_of_verse}
+
+
+
+

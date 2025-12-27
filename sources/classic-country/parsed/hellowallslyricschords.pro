@@ -1,6 +1,9 @@
 {meta: title Hello Walls}
 {meta: artist Faron Young}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file hellowallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello walls how'd things [F]go for you [C]today
@@ -33,3 +36,7 @@ You know I can't sleep so won't you [D7]bear with [G7]me awhile
 We must [F]all stick together or [C]else I'll lose my mind 
 I've got a [F]feeling she'll be [G7]gone a long long [C]time
 {end_of_verse}
+
+
+
+

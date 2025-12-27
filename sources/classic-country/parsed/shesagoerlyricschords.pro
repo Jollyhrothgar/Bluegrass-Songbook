@@ -1,5 +1,8 @@
 {meta: title She's A Go-er}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file shesagoerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I think that I should tell you she's a [F]go-er
@@ -26,3 +29,5 @@ I [G7]should have told you that way back long [C]before
 Aw [C]you'll be heaven high till [F]she don't want you anymore
 Then [G7]she'll be gone again cause she's a [C]go-er
 {end_of_verse}
+
+

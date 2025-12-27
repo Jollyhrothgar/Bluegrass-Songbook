@@ -1,6 +1,9 @@
 {meta: title Come Live With Me}
 {meta: artist Roy Clark}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file comelivewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come live with me and be my love share my bread and [C]wine
@@ -22,3 +25,5 @@
 [G]Come live with me and won't you be my love share my bread and [C]wine
 [G]Be part of me be the [D7]heart of me be [G]mine
 {end_of_verse}
+
+

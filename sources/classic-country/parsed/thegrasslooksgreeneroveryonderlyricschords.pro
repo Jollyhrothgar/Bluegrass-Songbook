@@ -1,5 +1,8 @@
 {meta: title The Grass Looks Greener Over Yonder}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file thegrasslooksgreeneroveryonderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The [F]grass looks greener over [C]yonder
@@ -35,3 +38,7 @@ You've [F]got a brand new love [C]affair
 And at your [Am]door temp[C]tation points me [D7]yonder
 The [G7]grass looks greener over [C]there
 {end_of_verse}
+
+
+
+

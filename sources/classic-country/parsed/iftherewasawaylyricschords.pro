@@ -1,5 +1,8 @@
 {meta: title If There Was A Way}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file iftherewasawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I was just [G]standing alone in this [Em]room
@@ -29,3 +32,6 @@ To bring you back to [G]me maybe things I could [Em]say
 Oh [G]I was just [C]wondering I was just [D7]wondering
 If there was a [Em]way
 {end_of_verse}
+
+
+

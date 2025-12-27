@@ -1,6 +1,9 @@
 {meta: title Breaking Down}
 {meta: artist Waylon Jennings}
 {meta: composer Joe Rainey}
+{meta: x_source classic-country}
+{meta: x_source_file breakingdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been a fool [A]fool   [F]such a [C]fool
@@ -37,3 +40,8 @@
 [A]You know what to do that could put it all at [F]ease
 [G7]Just look at me  I'm breakin' [C]down
 {end_of_verse}
+
+
+
+
+

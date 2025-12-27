@@ -1,6 +1,9 @@
 {meta: title Brand New Heartache}
 {meta: artist Emmylou Harris and Gram Parsons}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file brandnewheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A guy moved into town I ain't seen you [C7]around
@@ -23,3 +26,5 @@
 [F]I feel a brand [G7]new heartache [C]coming [C7]on
 [F]I feel a brand new [G7]heartache coming [C]on
 {end_of_verse}
+
+

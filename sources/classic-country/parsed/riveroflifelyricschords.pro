@@ -1,6 +1,9 @@
 {meta: title River Of Life}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Adger M. Pace and Marvin Dalton}
+{meta: x_source classic-country}
+{meta: x_source_file riveroflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I cry like a [G7]little lost [C]child
@@ -22,3 +25,5 @@ And be [Am]free from all [D7]sorrow and [G7]strife
 I will [C]drink from the water that will [F]never run dry
 When I [C]rest by the [G7]river of [C]life
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title I'm Still Not Over You}
 {meta: artist Ronnie Milsap}
+{meta: x_source classic-country}
+{meta: x_source_file imstillnotoveryoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve tried to tell my[C7]self that’s it’s [F]over
@@ -32,3 +35,7 @@ Lord I [C]know [G7]I’m still not over [C]you
 {start_of_verse: Verse 4}
 [F]Yes I [C]know [G7]I’m still not over [C]you
 {end_of_verse}
+
+
+
+

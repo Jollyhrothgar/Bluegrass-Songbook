@@ -1,6 +1,9 @@
 {meta: title I Will}
 {meta: artist Connie Smith}
 {meta: composer Dick Glasser}
+{meta: x_source classic-country}
+{meta: x_source_file iwilllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't wanna be the one [Am]to say I'm gonna miss [C]you
@@ -51,3 +54,11 @@ I'm the one who told
 [Dm]I would love you [G7]dear forever [C]and I [G7]will
 [C]I will
 {end_of_verse}
+
+
+
+
+
+
+
+

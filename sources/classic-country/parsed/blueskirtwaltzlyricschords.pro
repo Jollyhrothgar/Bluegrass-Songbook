@@ -2,6 +2,9 @@
 {meta: artist Hank Thompson}
 {meta: composer Mitchell Parish - Music by Vaclav Blaha}
 {meta: music Vaclav Blaha}
+{meta: x_source classic-country}
+{meta: x_source_file blueskirtwaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wandered [A7]alone one [G][D7]night 
@@ -30,3 +33,6 @@ How can my heart [G]forget
 Come back [D7]blue [G]lady come [D7]back 
 [C]Don't be [D7]blue any [G]more
 {end_of_verse}
+
+
+

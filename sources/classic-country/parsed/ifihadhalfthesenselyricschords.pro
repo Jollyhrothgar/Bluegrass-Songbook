@@ -1,6 +1,9 @@
 {meta: title If I Had Half The Sense}
 {meta: artist Lefty Frizzell}
 {meta: composer Don Pearce}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadhalfthesenselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I had half the sense a fool was [F]born with
@@ -29,3 +32,6 @@ But I [G7]guess I'm twice as dumb as the biggest [C]fool every born
 If [C]I had half the sense a fool was [F]born with I'd [D7]leave my pride [G7]around
 And [Dm]cover me some [G7]ground and [Dm]find myself to [G7]cry in another [C]town
 {end_of_verse}
+
+
+

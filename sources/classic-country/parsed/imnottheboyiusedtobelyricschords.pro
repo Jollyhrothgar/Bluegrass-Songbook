@@ -1,6 +1,9 @@
 {meta: title I'm Not The Boy I Used To Be}
 {meta: artist Charlie Pride}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file imnottheboyiusedtobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear mama I'm coming home tomorrow
@@ -43,3 +46,6 @@ And when you [F]meet me there tomorrow
 Don't [C]be surprised at what you [F]see
 Cause [C]mama I'm not the [G7]boy I used to [C]be
 {end_of_verse}
+
+
+

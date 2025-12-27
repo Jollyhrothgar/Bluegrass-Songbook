@@ -1,5 +1,8 @@
 {meta: title I Think of You}
 {meta: artist Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file ithinkofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s not a day goes by [C]I don’t think of [G]you
@@ -21,3 +24,5 @@ And [C]when [G]I was [Am]weak you kept me [D7]strong
 When I needed [G]love you [C]needed it [G]too
 Not a day goes [Am]by  [D7]I don’t think of [G]you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Led Out Of Bondage}
 {meta: artist The Statler Brothers}
 {meta: composer R.L. Prather}
+{meta: x_source classic-country}
+{meta: x_source_file ledoutofbondagelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]God promised to [C]lead His children out of [G]bondage
@@ -87,3 +90,13 @@ And lead them [A7]to the [D7]promised [G]land
 {start_of_verse: Verse 8}
 And lead them [A7]to the [D7]promised [G]land
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

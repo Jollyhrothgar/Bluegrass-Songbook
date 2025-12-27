@@ -1,6 +1,9 @@
 {meta: title Carol Jane}
 {meta: artist Everly Brothers}
 {meta: composer Dave Rich}
+{meta: x_source classic-country}
+{meta: x_source_file caroljanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Carol Carol Carol Jane you're the one I love
@@ -29,3 +32,7 @@ Carol Carol Carol Jane came from above
 [G7]I love a-love a-love [C]her
 [G7]I love a-love a-love [C]her
 {end_of_verse}
+
+
+
+

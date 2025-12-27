@@ -1,6 +1,9 @@
 {meta: title Summertime}
 {meta: artist Willie Nelson}
 {meta: composer Du Bose Heywood, Ira Gershwin, George Gershwin}
+{meta: x_source classic-country}
+{meta: x_source_file summertimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Summer[Am]time  and the [E7]livin' is [Am]easy 
@@ -16,3 +19,4 @@ You'll spread [Dm]your wings and [B7]take to the [E7]sky
 [C]So hush little [Am]baby [F]don't [E7]you [Am]cry
 [C]Hush little [Am]baby [F]don't [E7]you [Am]cry
 {end_of_verse}
+

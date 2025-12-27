@@ -1,6 +1,9 @@
 {meta: title This Little Light Of Mine}
 {meta: artist Brenda Lee}
 {meta: composer Harry Dixon Loes}
+{meta: x_source classic-country}
+{meta: x_source_file thislittlelightofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This little light of mine 
@@ -59,3 +62,12 @@ I'm gonna let it [G7]shine
 [C]This little light of mine 
 I'm gonna let it [G]shine
 {end_of_verse}
+
+
+
+
+
+
+
+
+

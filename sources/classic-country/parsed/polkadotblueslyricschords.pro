@@ -1,6 +1,9 @@
 {meta: title Polka Dot Blues}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file polkadotblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I  [C]thought I was a [G7]gambler [C]broke every [G7]shark in [C]town 
@@ -31,3 +34,6 @@ Lost my [C]hat and my [G7]coat and my straight-laced [Am]shoe[G7]s
 The [C]mean old gambling [G7]polka dot [C]blues 
 Oh the gambling [G7]polka dot [C]blues
 {end_of_verse}
+
+
+

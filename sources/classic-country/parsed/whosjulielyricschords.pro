@@ -1,6 +1,9 @@
 {meta: title Who's Julie}
 {meta: artist Mel Tillis}
 {meta: composer Wayne C. Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file whosjulielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Cross the [C]table over coffee just this [F]morning
@@ -31,3 +34,6 @@ But I [C]know that would not satisfy your [F]mind
 And [F]honey I'm sorry I have [G7]to tell you so [F]cruelly
 [G7]But now you know and [F]don't you ever ask me again  [G7]who's [C]Julie  
 {end_of_verse}
+
+
+

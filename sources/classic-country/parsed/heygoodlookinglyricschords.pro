@@ -1,5 +1,8 @@
 {meta: title Hey Good Looking}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file heygoodlookinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey Hey Good Lookin' whatcha got cooking
@@ -44,3 +47,10 @@ And buy [F]me one for five or ten [C]cents
 Say Hey Good Lookin' whatcha got [C]cooking
 [D7]How's about cooking [G7]somethin' up with [C]me
 {end_of_verse}
+
+
+
+
+
+
+

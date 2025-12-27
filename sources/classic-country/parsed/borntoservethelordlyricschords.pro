@@ -1,6 +1,9 @@
 {meta: title Born To Serve The Lord}
 {meta: artist Jimmie Davis}
 {meta: composer Bud Chambers}
+{meta: x_source classic-country}
+{meta: x_source_file borntoservethelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From the dust of the earth [F]God created [C]man
@@ -29,3 +32,6 @@ For I was [D7]born to serve the [G7]Lord
 And [C]I can't deny Him I'll [F]always walk be[C]side Him
 For I was [G7]born to serve the [C]Lord
 {end_of_verse}
+
+
+

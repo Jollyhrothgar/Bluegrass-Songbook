@@ -1,6 +1,9 @@
 {meta: title Too Late Now}
 {meta: artist Slim Whitman}
 {meta: composer Harry Rodcay}
+{meta: x_source classic-country}
+{meta: x_source_file toolatenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Too late now to cry [F]we said goodbye
@@ -37,3 +40,7 @@ Should [G7]not complain for what they had [C]agreed
 If we gamble and we lose then [F]we must face our blues
 It’s [G7]too late now to cry honest[C]ly  
 {end_of_verse}
+
+
+
+

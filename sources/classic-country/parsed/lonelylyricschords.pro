@@ -1,6 +1,9 @@
 {meta: title Lonely}
 {meta: artist Hank Snow}
 {meta: composer Lynne Cowan}
+{meta: x_source classic-country}
+{meta: x_source_file lonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though you're far far away are you lonely today
@@ -41,3 +44,10 @@ And [G7]never again go [C]away
 When you're [F]faded and old dear I [C]wonder
 If [F]your heart will ever think of me and [C]yearn
 {end_of_verse}
+
+
+
+
+
+
+

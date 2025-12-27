@@ -1,6 +1,9 @@
 {meta: title A Better Rain}
 {meta: artist George Strait}
 {meta: composer David Cory Lee and Tony Lane}
+{meta: x_source classic-country}
+{meta: x_source_file abetterrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby what do you say when love comes [F]down on you
@@ -47,3 +50,7 @@ Lets you know that [G7]God's alive
 In a better [F]rain  [G7]a better [F]rain[C]   [G7]
 [C]A better [F]rain
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Rodeo Blues}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file rodeoblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got to gather up my tack finish [F]runnin off the slack
@@ -46,3 +49,9 @@ I can't [G7]even pay my association [C]dues
 {start_of_verse: Verse 6}
 I can't [G7]even pay my PRCA [C]dues
 {end_of_verse}
+
+
+
+
+
+

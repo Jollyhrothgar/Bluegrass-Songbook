@@ -1,6 +1,9 @@
 {meta: title Troublesome Waters}
 {meta: artist Johnny Cash}
 {meta: composer Maybelle Carter and Dixie Dean}
+{meta: x_source classic-country}
+{meta: x_source_file troublesomewaterslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Troublesome waters much [F]blacker than [C]night
@@ -43,3 +46,8 @@
 [C]Leading the way to [F]heaven's bright [C]shore
 [Am]Troublesome waters [G7]I'm fearing no [C]more
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title She's Not Forgotten Yet}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Del Reeves and Ellen Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file shesnotforgottenyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You'll forget her in a [F]little while you'll [C]see
@@ -33,3 +36,7 @@ I'll still be [C]saying she's [G7]not forgotten [C]yet
 {start_of_verse: Verse 5}
 I'll still be saying she's [G7]not forgotten [C]yet
 {end_of_verse}
+
+
+
+

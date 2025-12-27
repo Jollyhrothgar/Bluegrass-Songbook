@@ -1,6 +1,9 @@
 {meta: title A Little Piece Of My Heart}
 {meta: artist Conway Twitty}
 {meta: composer Otis Blackwell and Winfield Scott}
+{meta: x_source classic-country}
+{meta: x_source_file alittlepieceofmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Eve[C]ry [G]time you make me cry 
@@ -33,3 +36,6 @@ All I [G]want from life is you
 But [C]each day that we go through
 You [D7]tear away a little piece of my [G]heart[C]   [G]
 {end_of_verse}
+
+
+

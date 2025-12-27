@@ -1,6 +1,9 @@
 {meta: title Me And Mine}
 {meta: artist Mel Tillis}
 {meta: composer Jerry House}
+{meta: x_source classic-country}
+{meta: x_source_file meandminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well hello Mr. Walker could I [F]please talk to your [C]wife
@@ -29,3 +32,6 @@ And the [G7]sweetest grapes on your [C]vine
 But you [F]wasted enough of [C]money
 You and yours used to [G7]be me and [C]mine
 {end_of_verse}
+
+
+

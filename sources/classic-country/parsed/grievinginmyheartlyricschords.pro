@@ -1,5 +1,8 @@
 {meta: title Grieving In My Heart}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file grievinginmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In my heart [F]the tears are falling in my dreams I'm always [C]calling
@@ -18,3 +21,4 @@
 [F]Oh we could start all over  if you just come back [C]tomorrow
 [G7]There'd be no pain and sorrow  and [F]grieving in my [C]heart
 {end_of_verse}
+

@@ -1,6 +1,9 @@
 {meta: title A Whistle And A Whisker Away}
 {meta: artist Lynn Anderson}
 {meta: composer Bill Hayes and Lee Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file whistleandawhiskerawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's starting to snow and [Em]you ought to [G]know 
@@ -31,3 +34,7 @@ Will be a [A7]whistle and a [D7]whisker [G]away
 {start_of_verse: Verse 5}
 A [A7]whistle and a [D7]whisker [G]away
 {end_of_verse}
+
+
+
+

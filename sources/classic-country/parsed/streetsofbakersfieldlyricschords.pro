@@ -1,6 +1,9 @@
 {meta: title Streets Of Bakersfield}
 {meta: artist Buck Owens}
 {meta: composer Homer Joy}
+{meta: x_source classic-country}
+{meta: x_source_file streetsofbakersfieldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I came here in looking for [C]something
@@ -48,3 +51,9 @@
 [C]How many of you that sit and judge me
 [D7]Ever walked the streets of [G]Bakersfield
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Go My Love}
 {meta: artist Crystal Gayle}
 {meta: composer James Valentini and Frank Saulino}
+{meta: x_source classic-country}
+{meta: x_source_file dontgomylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]What a [G]beautiful [D7]gift a [Em]heart can [D7]be 
@@ -41,3 +44,8 @@ So don't [C]go my [D7]love oh [C]oh my [B7]love
 [C]I need you [D7]more than [B7]ever be[Em]fore
 [Am]Oh oh don't you [D7]go my [G]love[D7]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Then You Can Tell Me Goodbye}
 {meta: artist Eddy Arnold}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file thenyoucantellmegoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Kiss me each [Em]morning for a [C]million [D7]years
@@ -34,3 +37,7 @@
 {start_of_verse: Verse 5}
 Then you can [C]tell me [G]good-bye
 {end_of_verse}
+
+
+
+

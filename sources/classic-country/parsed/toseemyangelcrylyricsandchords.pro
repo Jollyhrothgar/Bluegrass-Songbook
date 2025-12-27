@@ -1,6 +1,9 @@
 {meta: title To See My Angel Cry}
 {meta: artist Conway Twitty}
 {meta: composer L.E. White and Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file toseemyangelcrylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]See her there see her crying she [C]thinks she loves him [G]so
@@ -22,3 +25,5 @@ I didn't [C]know how much I hurt her till I saw her here this [D7]way
 If she were [G]mine I'd hold her forever and dry the [C]tears from her [G]eyes
 She don't [C]know how much it [G]hurts me to [D7]see my angel [G]cry
 {end_of_verse}
+
+

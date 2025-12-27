@@ -1,5 +1,8 @@
 {meta: title Are You Alone}
 {meta: artist Bill Clifton}
+{meta: x_source classic-country}
+{meta: x_source_file areyoualonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Are You Alone
@@ -48,3 +51,10 @@ In a [G7]land where our love can bloom [C]again
 Are You Alone
 Written and recorded Bill Clifton
 {end_of_verse}
+
+
+
+
+
+
+

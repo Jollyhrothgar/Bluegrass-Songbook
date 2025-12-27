@@ -1,6 +1,9 @@
 {meta: title Too Many Nights Alone}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein and Even Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file toomanynightsalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Midnight flights and [D7]barroom lights
@@ -36,3 +39,6 @@ And [G]open roads have been my only [D7]home
 [G]I guess I spent [D7]too many nights [Em]alone 
 [C]Too many [D7]nights [G]alone  
 {end_of_verse}
+
+
+

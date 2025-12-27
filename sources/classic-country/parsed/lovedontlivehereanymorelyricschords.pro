@@ -1,6 +1,9 @@
 {meta: title Love Don't Live Here Anymore}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file lovedontlivehereanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Perfect strangers sittin' [D7]down face to face
@@ -43,3 +46,9 @@ Faded photographs [D7]dusty dreams
 {start_of_verse: Verse 5}
 [G7]Love don't live here any[C]more
 {end_of_verse}
+
+
+
+
+
+

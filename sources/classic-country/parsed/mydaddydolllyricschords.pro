@@ -1,6 +1,9 @@
 {meta: title My Daddy Doll}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill, Carmol Taylor, Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file mydaddydolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My little girl was [G7]playing with her [C]friend from down the [G]street
@@ -23,3 +26,5 @@ He [C]kisses me and [G]says goodnight [A7]like my real daddy [D7]did
 My [C]daddy doll is [G]special and [D7]I love him most of [G]all
 My [C]daddy doll is [G]special and [D7]I love him most of [G]all
 {end_of_verse}
+
+

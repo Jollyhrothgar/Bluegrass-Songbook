@@ -1,6 +1,9 @@
 {meta: title Don't Blame It On Me}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file dontblameitonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said your arms are empty and your eyes full of tears
@@ -36,3 +39,7 @@ Haven't had no lovin' for so many years
 [C7]Don't blame it on [F]me I'm not guilty can't you [C]see
 [C7]Don't blame it on [F]me I'm the same as I used to [C]be
 {end_of_verse}
+
+
+
+

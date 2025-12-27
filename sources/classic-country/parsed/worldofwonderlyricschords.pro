@@ -1,6 +1,9 @@
 {meta: title World Of Wonder}
 {meta: artist Ronnie Milsap}
 {meta: composer James Darrell Scott}
+{meta: x_source classic-country}
+{meta: x_source_file worldofwonderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh many is the [C7]day I have [F]squandered [C]away
@@ -41,3 +44,8 @@ I am [C]livin' in a [G7]world of [C]wonder
 [F]Oh I am [C]living [F]you are [C]living
 [F]We are [C]living in a [G7]world of [C]wonder
 {end_of_verse}
+
+
+
+
+

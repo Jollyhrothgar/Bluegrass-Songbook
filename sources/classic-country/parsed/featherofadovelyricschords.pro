@@ -1,6 +1,9 @@
 {meta: title Feather Of A Dove}
 {meta: artist Sonny James}
 {meta: composer Carole Smith and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file featherofadovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tumbling down from up [F]above
@@ -40,3 +43,8 @@
 [G7]Came a [C]token of our [Am]love
 [F]Tumbling down came [G7]the feather of a [C]dove
 {end_of_verse}
+
+
+
+
+

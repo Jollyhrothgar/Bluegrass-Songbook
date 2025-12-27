@@ -1,5 +1,8 @@
 {meta: title Oh So Many Years}
 {meta: artist Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file ohsomanyyearslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All these many years I've loved you no one has ever [F]known 
@@ -28,3 +31,6 @@ We'll go on pretending that our life is oh so [F]gay
 [C]When all the time my heart is longing just to have you [F]near 
 [C]My darling I have loved you oh [G7]so many [C]years 
 {end_of_verse}
+
+
+

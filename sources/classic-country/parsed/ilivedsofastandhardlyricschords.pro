@@ -1,6 +1,9 @@
 {meta: title I Lived So Fast And Hard}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file ilivedsofastandhardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was raised on [G7]cornbread and [C]gravy
@@ -36,3 +39,7 @@ I've been [F]banged around and [C]scarred
 I've done so much I've seen so [F]much
 And I've [C]lived so [G7]fast and [C]hard
 {end_of_verse}
+
+
+
+

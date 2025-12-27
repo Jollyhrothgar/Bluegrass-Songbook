@@ -1,6 +1,9 @@
 {meta: title Mary's Sweet Smile}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid, Harold Reid, Jimmy Fortune}
+{meta: x_source classic-country}
+{meta: x_source_file maryssweetsmilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Shepherds in fear of a [C]light that [Am]shone [G]near 
@@ -29,3 +32,6 @@ An [D7]angel of God gave [G]Jesus His [D7]name
 That [G]night cast a spell that the [C]ages [Am]will [G]tell 
 As the [D7]world glowed with Mary's sweet [G]smile
 {end_of_verse}
+
+
+

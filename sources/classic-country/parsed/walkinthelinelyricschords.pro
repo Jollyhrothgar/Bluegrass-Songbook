@@ -1,6 +1,9 @@
 {meta: title Walkin' The Line}
 {meta: artist Tracy Byrd}
 {meta: composer Wynn Varble, Shawn Camp, Randy Hardison}
+{meta: x_source classic-country}
+{meta: x_source_file walkinthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Girl I swear you dang near took my [G]breath
@@ -43,3 +46,8 @@ I'd spend [G]all my time [D7]walkin' the [G]line
 {start_of_verse: Verse 4}
 [C]I'd spend [G]all my time [D7]walkin' the [G]line
 {end_of_verse}
+
+
+
+
+

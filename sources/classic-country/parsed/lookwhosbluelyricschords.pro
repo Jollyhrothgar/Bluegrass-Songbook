@@ -1,5 +1,8 @@
 {meta: title Look Who's Blue}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhosbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please  please have [F]pity on me 
@@ -35,3 +38,7 @@ Woe is [G7]me look who's [C]blue
 [C]Please please I'm [F]begging like a fool 
 [C]Woe is me [G7]look who's [C]blue 
 {end_of_verse}
+
+
+
+

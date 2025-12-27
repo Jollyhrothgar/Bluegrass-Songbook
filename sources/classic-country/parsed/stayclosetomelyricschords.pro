@@ -1,5 +1,8 @@
 {meta: title Stay Close To Me}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file stayclosetomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stay close to [Dm]me  [G7] give me your [C]heart
@@ -21,3 +24,5 @@ When you're with [Dm]me  [G7] true love we'll [C]find
 [C]Stay close to [Dm]me  [G7] tell me you're [C]mine
 When you're with [Dm]me  [G7] true love we'll [C]find
 {end_of_verse}
+
+

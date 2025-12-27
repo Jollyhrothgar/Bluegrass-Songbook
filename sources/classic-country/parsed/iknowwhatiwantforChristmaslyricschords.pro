@@ -1,6 +1,9 @@
 {meta: title I Know What I Want For Christmas}
 {meta: artist George Strait}
 {meta: composer Charlie Black and Dana Hunt}
+{meta: x_source classic-country}
+{meta: x_source_file iknowwhatiwantforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]Tis the season [C]for gene[F]rosity a [C]time to [G7]give and to [C]receive
@@ -44,3 +47,9 @@ I know what I [Dm]want and nothin' else will [E7]do
 {start_of_verse: Verse 7}
 [Am]This [E7]year for [C]Christmas [Dm]I just want to [G7]be with [C]you
 {end_of_verse}
+
+
+
+
+
+

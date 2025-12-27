@@ -1,6 +1,9 @@
 {meta: title Back When}
 {meta: artist Vern Gosdin}
 {meta: composer Hugh Prestwood}
+{meta: x_source classic-country}
+{meta: x_source_file backwhenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately it seems like we don’t [Em]give much thought
@@ -49,3 +52,9 @@ We [G]wouldn’t [C]even let the [D7]moon get [C]blue
 {start_of_verse: Verse 5}
 [C]Oh get [D7]back to back [G]when
 {end_of_verse}
+
+
+
+
+
+

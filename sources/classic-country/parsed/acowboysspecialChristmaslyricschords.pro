@@ -1,6 +1,9 @@
 {meta: title A Cowboy's Special Christmas}
 {meta: artist Red Steagall}
 {meta: composer Dan Roberts, Roy Robinson, Bobby Wood}
+{meta: x_source classic-country}
+{meta: x_source_file acowboysspecialChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sittin’ in the bunkhouse feelin’ [Dm]sorry for myself
@@ -61,3 +64,10 @@ I don’t [F]know if it was [G7]all the snow
 Or [C]because I had a [F]place to go
 I [D7]started feelin’ [G7]kinda Christmas [C]Eve
 {end_of_verse}
+
+
+
+
+
+
+

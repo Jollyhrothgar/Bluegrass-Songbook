@@ -1,6 +1,9 @@
 {meta: title A Friend To Me}
 {meta: artist Garth Brooks}
 {meta: composer Victoria Shaw and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file afriendtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you and [G7]I  [Am]we're buddies[Em] 
@@ -41,3 +44,8 @@ Oh you've [C]al[Em]ways [F]been
 And you [C]will till [Em]God knows [F]when
 Yes you've [C]al[Em]ways [F]been a [G7]friend to [C]me
 {end_of_verse}
+
+
+
+
+

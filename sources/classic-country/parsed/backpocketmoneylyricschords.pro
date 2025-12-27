@@ -1,6 +1,9 @@
 {meta: title Back Pocket Money}
 {meta: artist Jimmy C. Newman}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file backpocketmoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My baby won't give me no back pocket [D7]money
@@ -34,3 +37,7 @@ Oh and I [G]wish I was a [D7]back pocket money [G]man
 Yeah I wish I was a [D7]back pocket money [G]man
 Lord I wish I was a [D7]back pocket money [G]man
 {end_of_verse}
+
+
+
+

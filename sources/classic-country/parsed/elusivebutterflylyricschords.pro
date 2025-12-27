@@ -1,6 +1,9 @@
 {meta: title Elusive Butterfly}
 {meta: artist Glen Campbell}
 {meta: composer Bob Lind}
+{meta: x_source classic-country}
+{meta: x_source_file elusivebutterflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You might wake up some [Dm]morning
@@ -44,3 +47,8 @@ It's only [G7]me pursuing something I'm not sure [C]of
 Across my [Dm]dreams [G7]with nets [C]of wonder
 I chase the [G7]bright elusive butterfly of [C]love
 {end_of_verse}
+
+
+
+
+

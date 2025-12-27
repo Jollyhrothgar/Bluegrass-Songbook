@@ -1,6 +1,9 @@
 {meta: title River Of Time}
 {meta: artist Dailey and Vincent}
 {meta: composer Robert Gateley}
+{meta: x_source classic-country}
+{meta: x_source_file riveroftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like a shot through the [D7]heart 
@@ -35,3 +38,7 @@ And I [D7]drift down the [G]riv[D7]er of [G]time
 The day that my [C]journey is [G]through
 And I [D7]drift down the river [C]of t-[D7]i-m[C]-e[G]
 {end_of_verse}
+
+
+
+

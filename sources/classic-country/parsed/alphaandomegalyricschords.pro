@@ -1,6 +1,9 @@
 {meta: title Alpha And Omega}
 {meta: artist Jim Ed Brown}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file alphaandomegalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Into my [G7]arms walked [C]an angel 
@@ -27,3 +30,6 @@ My [C]first love [D7]affair and my [G7]last
 The [C7]first time I ever found [F]true love 
 And I'll [C]never find [G7]true love [C]again
 {end_of_verse}
+
+
+

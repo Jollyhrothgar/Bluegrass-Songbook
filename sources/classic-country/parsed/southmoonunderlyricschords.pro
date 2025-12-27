@@ -1,6 +1,9 @@
 {meta: title South Moon Under}
 {meta: artist John Anderson}
 {meta: composer John Anderson and George Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file southmoonunderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a feeling coming [F]over me [G7]being here close to [C]you
@@ -40,3 +43,8 @@ And [F]girl I've got a feeling there's a [G7]south moon under [C]tonight
 {start_of_verse: Verse 4}
 Yeah [F]girl I've got a feeling there's a [G7]south moon under [C]tonight
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Wishing All These Old Things Were New}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file wishingalltheseoldthingswerenewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Watching while some [G7]old friends do a [C]line
@@ -40,3 +43,8 @@ Good [F]times like the roaring '[C]20s and the [Am]roaring '80s [D7]too   [G7]
 {start_of_verse: Verse 5}
 Wishing all these [G7]old things were [C]new
 {end_of_verse}
+
+
+
+
+

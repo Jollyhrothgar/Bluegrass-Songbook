@@ -1,6 +1,9 @@
 {meta: title What She Is (Is A Woman In Love)}
 {meta: artist Earl Thomas Conley}
 {meta: composer Bob McDill and Paul Harrison}
+{meta: x_source classic-country}
+{meta: x_source_file whatsheisisawomaninlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a lot of [D7]nice things [C]that he never [D7]told her
@@ -43,3 +46,8 @@ And what she [C]has she [D7]thinks is [G]enough
 And what she [C]does is [D7]just look at the [G]good things
 And what she [C]is is a woman [D7]in [G]love
 {end_of_verse}
+
+
+
+
+

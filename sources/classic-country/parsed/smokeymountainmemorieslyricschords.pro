@@ -1,6 +1,9 @@
 {meta: title Smokey Mountain Memories}
 {meta: artist Mel Street}
 {meta: composer Earl T. Conley and Dick Heard}
+{meta: x_source classic-country}
+{meta: x_source_file smokeymountainmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Smokey Mountain memories bout my home in [Am]Tennessee
@@ -43,3 +46,8 @@ So mister play your fiddle please play some mountain [Am]memories
 [C]Mountains rising in my soul higher than the dreams I've [Am]known
 [F]Empty eyes they cling to me like [G7]Smokey Mountain [C]mem-o-ries
 {end_of_verse}
+
+
+
+
+

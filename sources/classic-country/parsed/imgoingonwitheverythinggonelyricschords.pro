@@ -1,6 +1,9 @@
 {meta: title I'm Going On With Everything Gone}
 {meta: artist Tammy Wynette}
 {meta: composer Agnes Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file imgoingonwitheverythinggonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The sun comes up to [C]bring another [G]lonely day
@@ -27,3 +30,5 @@ That [D7]I said I couldn't live [G]without
 Yes I'm goin' [C]on with [G]everything gone 
 That [D7]I said I couldn't live [G]without
 {end_of_verse}
+
+

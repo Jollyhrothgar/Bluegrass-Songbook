@@ -1,5 +1,8 @@
 {meta: title I'm Not Ready Yet}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file imnotreadyyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Always knew you'd find [G7]another
@@ -28,3 +31,6 @@
 [C7]Though I'm not ready [F]yet I know I must [C]forget
 [G7]I'll make the change somehow though I'm not ready [C]now
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Change Of Heart}
 {meta: artist Marty Robbins}
 {meta: composer Randy Sharp}
+{meta: x_source classic-country}
+{meta: x_source_file changeofheartlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some will [F]say we [G7]have no [Dm]call
@@ -34,3 +37,7 @@
 [F]Funny [C]how it all comes [G7]down
 [A#7]To just a [G7]change of [C]heart
 {end_of_verse}
+
+
+
+

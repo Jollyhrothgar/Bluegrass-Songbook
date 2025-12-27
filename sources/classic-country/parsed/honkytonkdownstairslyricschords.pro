@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Downstairs}
 {meta: artist George Strait}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkdownstairslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it won't be long now un[C]til that ol' sun goes [G]down
@@ -30,3 +33,6 @@ She's the barmaid in[D7] the honky tonk [G]downstairs
 {start_of_verse: Verse 4}
 She's the barmaid in the [D7]honky tonk down[C]stairs[G]
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title A House of Gold}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ahouseofgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]People steal they [F]cheat and [C]lie
@@ -28,3 +31,6 @@ He paid the cost that was charged to [G7]me
 But if silver and [F]gold I never [C]own
 Thank God one [G7]day I'll have a golden [C]home
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title If You Want Me To}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwantmetolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Thunder rollin’ and [F]lightin' flashin'
@@ -61,3 +64,11 @@ If you want me [C]to
 Goes to show how [F]far I'll go for [G7]you
 If you want me [C]to
 {end_of_verse}
+
+
+
+
+
+
+
+

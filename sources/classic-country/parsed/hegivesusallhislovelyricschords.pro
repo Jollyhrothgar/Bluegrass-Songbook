@@ -1,6 +1,9 @@
 {meta: title He Gives Us All His Love}
 {meta: artist Wanda Jackson}
 {meta: composer Randy Newman}
+{meta: x_source classic-country}
+{meta: x_source_file hegivesusallhislovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He gives us [G]all His love 
@@ -50,3 +53,9 @@ He gives us [A7]all His love
 He's smiling [D7]down on us from up above
 He gives us [G]all His love
 {end_of_verse}
+
+
+
+
+
+

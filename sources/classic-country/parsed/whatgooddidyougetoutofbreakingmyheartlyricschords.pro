@@ -1,5 +1,8 @@
 {meta: title What Good Did You Get Out Of Breaking My Heart}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file whatgooddidyougetoutofbreakingmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What good did you get out of [G7]breaking my [C]heart
@@ -28,3 +31,6 @@
 [F]But if it makes you [C]happy to tear [G7]a soul [C]apart
 [G7]Then you got a lot of good out of breaking my [C]heart
 {end_of_verse}
+
+
+

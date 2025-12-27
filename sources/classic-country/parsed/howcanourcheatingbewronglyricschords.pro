@@ -1,6 +1,9 @@
 {meta: title How Can Our Cheating Be Wrong}
 {meta: artist Jack Greene}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file howcanourcheatingbewronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like two common thieves caught stealing 
@@ -25,3 +28,5 @@ There's no [C]way for [G7]words to [C]smother
 The love we're feeling [F]for each [C]other
 [F]Darling how can our [C]cheating  [G7]be [C]wrong
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title A Brand New Bed Of Roses}
 {meta: artist Charley Pride}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file abrandnewbedofroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm looking for a [F]brand new bed of [C]roses
@@ -26,3 +29,6 @@ A [G7]love with everlasting clinging [C]vine
 {start_of_verse: Verse 4}
 A [G7]love with everlasting clinging [C]vine
 {end_of_verse}
+
+
+

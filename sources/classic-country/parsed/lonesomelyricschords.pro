@@ -1,5 +1,8 @@
 {meta: title Lonesome}
 {meta: artist Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m holding to a candle that’s burning at both ends
@@ -31,3 +34,7 @@ Well I [F]know how you feel [G7]cause I’m lonesome [C]too
 [F]Lonesome sad and [C]blue
 And I’ve been [D7]wondering  [G7]are you lonesome [C]too
 {end_of_verse}
+
+
+
+

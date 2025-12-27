@@ -1,6 +1,9 @@
 {meta: title I'll Need The Prayers Of Those I Love}
 {meta: artist The Larry Stephenson Band}
 {meta: composer Carl Story and William York}
+{meta: x_source classic-country}
+{meta: x_source_file illneedtheprayersofthoseilovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [G]need the prayers of [D7]those I [G]love
@@ -29,3 +32,6 @@ To [G]bare my tempted soul [D7]above
 And [C]intercede with God [G]for me
 I [D7]need the prayers of those I [G]love
 {end_of_verse}
+
+
+

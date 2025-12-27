@@ -1,6 +1,9 @@
 {meta: title When Love Arrives}
 {meta: artist Rhonda Vincent}
 {meta: composer Harley Allen}
+{meta: x_source classic-country}
+{meta: x_source_file whenlovearriveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When memo[D7]ries do [C]dances a[A7]round you [D7]in the [C]dark
@@ -33,3 +36,7 @@ When love [D7]arrives when love [C]arrives
 [F]Don't be afraid to [C]let that love [D7]inside
 When love [G]arrives
 {end_of_verse}
+
+
+
+

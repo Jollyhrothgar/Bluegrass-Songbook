@@ -1,6 +1,9 @@
 {meta: title Don't The Girls All Get Prettier At Closing Time}
 {meta: artist Mickey Gilley}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file dontthegirlsallgetprettieratclosingtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The girls all get prettier at [F]closing time
@@ -50,3 +53,8 @@ Of the falling angels of the back street [C]bars
 {start_of_verse: Verse 4}
 [G7]Of the falling angels of the back street [C]bars
 {end_of_verse}
+
+
+
+
+

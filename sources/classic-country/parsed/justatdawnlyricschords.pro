@@ -1,6 +1,9 @@
 {meta: title Just At Dawn}
 {meta: artist John Anderson}
 {meta: composer Bill Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file justatdawnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The heaven that we shared so long 
@@ -43,3 +46,8 @@ That someday I [C7]might find myself [F]alone
 Until I woke this [C]morning just at dawn 
 It dawned on [G7]me that you were [C]gone
 {end_of_verse}
+
+
+
+
+

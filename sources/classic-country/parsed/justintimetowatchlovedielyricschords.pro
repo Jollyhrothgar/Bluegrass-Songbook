@@ -1,6 +1,9 @@
 {meta: title Just In Time (To Watch Love Die)}
 {meta: artist David Allan Coe}
 {meta: composer David A. Coe and Jimmy Townsend}
+{meta: x_source classic-country}
+{meta: x_source_file justintimetowatchlovedielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a stack of daily papers at her doorstep
@@ -31,3 +34,6 @@ Looks like [F]I'm the one that [G7]got caught in the [C]middle burnt my [F]finge
 I [C]got there just in [F]time to watch love [C]die
 But I got there much too [A#7]late to [F]say good[C]bye
 {end_of_verse}
+
+
+

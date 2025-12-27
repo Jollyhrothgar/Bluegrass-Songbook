@@ -1,6 +1,9 @@
 {meta: title I Would Like To See You Again}
 {meta: artist Kenny Rogers}
 {meta: composer Charlie Craig and Larry Atwood}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldliketoseeyouagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was sitting here thinking [F]about some old [C]times
@@ -43,3 +46,8 @@
 [F]But tonight your [G7]memory's awfully [C]strong on my [Am]mind
 [F]And I would like to see [G7]you [C]again
 {end_of_verse}
+
+
+
+
+

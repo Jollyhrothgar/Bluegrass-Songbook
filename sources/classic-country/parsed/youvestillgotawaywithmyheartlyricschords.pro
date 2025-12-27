@@ -1,6 +1,9 @@
 {meta: title You've Still Got A Way With My Heart}
 {meta: artist Mickey Gilley}
 {meta: composer Ron Moore and Robert Parker}
+{meta: x_source classic-country}
+{meta: x_source_file youvestillgotawaywithmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I [F]remember it [C]all [F]like it was [Am]yester[A#7]day   [A7]
@@ -38,3 +41,7 @@ You’ve [C]still gotta a way with my [Am]heart
 The [Cm]special things you do and say it [A#7]takes me back [C]to that day 
 When [Gm]you you [C]gotta a way with my [F]heart [C]
 {end_of_verse}
+
+
+
+

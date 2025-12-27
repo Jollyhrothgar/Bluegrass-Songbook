@@ -1,6 +1,9 @@
 {meta: title I'm A Lone Wolf}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file imalonewolflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby I’m a-stepping out tonight and I [F]want your [C]company
@@ -42,3 +45,7 @@ Hank Williams started the whole thing off
 [F]Every time I kiss you say quit that now
 [C]I’m a l-one wolf whoo [G7]this is my natural [C]howl
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sugar Coated Sweetheart}
 {meta: artist Jimmy Dean}
 {meta: composer Kay Adelman and Jewel Kibbler}
+{meta: x_source classic-country}
+{meta: x_source_file sugarcoatedsweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re a sugar coated [F]sweet[C]heart you’re so sweet for a [G7]while
@@ -16,3 +19,4 @@ Your [G7]sweetness can leave a bitter bitter taste
 [C]All your sugar coated [F]lov[C]ing has us drifting [G7]apart
 Sugar coated schemes sugar coated dreams and a sugar coated [C]heart
 {end_of_verse}
+

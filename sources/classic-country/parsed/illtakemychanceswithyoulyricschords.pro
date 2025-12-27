@@ -1,6 +1,9 @@
 {meta: title I'll Take My Chances With You}
 {meta: artist Tammy Wynette}
 {meta: composer Marge Barton and Freed McRae}
+{meta: x_source classic-country}
+{meta: x_source_file illtakemychanceswithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll take my [D7]chances with [G7]you 
@@ -24,3 +27,5 @@ Our dreams [C7]won't come [F]true
 [C]But I'll take my [G7]chances with [C]you
 I'll take my [G7]chances with [C]you [G7]   [C]
 {end_of_verse}
+
+

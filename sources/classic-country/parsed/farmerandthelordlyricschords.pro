@@ -1,6 +1,9 @@
 {meta: title Farmer And The Lord}
 {meta: artist Jimmy Dean}
 {meta: composer Jim Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file farmerandthelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While restin' the other evening by the side of the road
@@ -40,3 +43,7 @@ I guess there's plenty folks here about waitin' to ring your line
 [G7]Evening to you Lord and watch us over [C]tonight
 Don't you worry about us now Lord [G7]cause everything is gonna be all [C]right
 {end_of_verse}
+
+
+
+

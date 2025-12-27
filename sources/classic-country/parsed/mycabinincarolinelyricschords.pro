@@ -1,5 +1,8 @@
 {meta: title My Cabin In Caroline}
 {meta: artist Earl Scruggs and Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file mycabinincarolinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a cabin in the pines in the [C]hills of Caro[G]line
@@ -42,3 +45,8 @@ And the blue eyed girl way down in Caro[D7]line
 Some [G]day she'll be my wife we'll [C]live a happy [G]life
 In the cabin in the [D7]hills of Caro[G]line
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Can't Nobody Say I Didn't Try}
 {meta: artist Delbert McClinton}
+{meta: x_source classic-country}
+{meta: x_source_file cantnobodysayididnttrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was there when she fell [C7]for the first [F]time
@@ -33,3 +36,7 @@
 [C7]She only blooms at night there under the neon [F]lights
 [G7]But can’t nobody say I didn’t [C]try
 {end_of_verse}
+
+
+
+

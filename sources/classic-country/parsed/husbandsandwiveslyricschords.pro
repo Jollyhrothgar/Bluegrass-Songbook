@@ -1,5 +1,8 @@
 {meta: title Husbands And Wives}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file husbandsandwiveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two broken hearts 
@@ -35,3 +38,7 @@ Such a waste of two [Dm]lives
 [G7]It's my belief pride is the chief cause
 And the decline in the number of Husbands and [C]Wives
 {end_of_verse}
+
+
+
+

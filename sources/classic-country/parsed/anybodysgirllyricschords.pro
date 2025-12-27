@@ -1,6 +1,9 @@
 {meta: title Anybody's Girl}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file anybodysgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where there's dim lights and there's liquor 
@@ -34,3 +37,7 @@ You're a [D7]honky tonk sweetheart and anybody's [G]girl
 {start_of_verse: Verse 5}
 You're a [D7]honky tonk sweetheart and anybody's [G]girl 
 {end_of_verse}
+
+
+
+

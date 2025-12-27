@@ -1,5 +1,8 @@
 {meta: title You Scared The Love Right Out Of Me Lyrics Chords}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file youscaredtheloverightoutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you scared the love right out of me
@@ -53,3 +56,12 @@ All the [C]time I didn’t [G]know
 It could have been my fate you [D7]know
 So I’m checking [G]out 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

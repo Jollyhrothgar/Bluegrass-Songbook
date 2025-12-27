@@ -1,5 +1,8 @@
 {meta: title No Fool Like An Old Fool}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file nofoollikeanoldfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The first time you hurt me I thought I'd [C]die
@@ -28,3 +31,6 @@ That's [A7]loved and lost at least a hundred [D7]times
 There's no [C]fool like an old [G]fool 
 That [D7]keeps on falling for the same old [G][C]l-ine
 {end_of_verse}
+
+
+

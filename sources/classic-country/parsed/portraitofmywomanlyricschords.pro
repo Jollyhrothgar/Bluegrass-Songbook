@@ -1,6 +1,9 @@
 {meta: title Portrait Of My Woman}
 {meta: artist Eddy Arnold}
 {meta: composer Glen Sherley}
+{meta: x_source classic-country}
+{meta: x_source_file portraitofmywomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Eyes that shine with [C]love for me [D7]caring not for [C]fame's pre[G]stige 
@@ -22,3 +25,5 @@ She [C]kissed my lips and [D7]said my love was [C]all that really [D7]mattered
 [G]So I'll try [C]every day [D7]to hand her love's [C]happy [G]bouquet 
 She means more than [C]life to [Am]me that's a [D7]portrait of my [G]woman
 {end_of_verse}
+
+

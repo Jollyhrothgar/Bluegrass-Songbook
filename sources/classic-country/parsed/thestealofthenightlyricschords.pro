@@ -1,6 +1,9 @@
 {meta: title The Steal Of The Night}
 {meta: artist George Strait}
 {meta: composer Blake Mevis, Bill Shore, David Wills}
+{meta: x_source classic-country}
+{meta: x_source_file thestealofthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The band had just started when they [G7]walked in the door
@@ -64,3 +67,11 @@ Oh yeah she was the [C]steal of the night
 Her long [G7]hair flowing and her jeans so tight
 I held her close and it felt so [C]right
 {end_of_verse}
+
+
+
+
+
+
+
+

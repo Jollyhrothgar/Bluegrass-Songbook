@@ -1,6 +1,9 @@
 {meta: title Sunday Morning}
 {meta: artist Connie Smith}
 {meta: composer Van Trevor and Dick Heard}
+{meta: x_source classic-country}
+{meta: x_source_file sundaymorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sunday Sunday Sunday [G][D7]morning
@@ -54,3 +57,10 @@ On [C]Sunday [G]Sunday Sunday [G][D7]morning
 {start_of_verse: Verse 5}
 [C]Start the day out [G]right with your family [D7]and your [G]friends
 {end_of_verse}
+
+
+
+
+
+
+

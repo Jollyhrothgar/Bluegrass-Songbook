@@ -1,6 +1,9 @@
 {meta: title Ghost Of Another Man}
 {meta: artist George Jones}
 {meta: composer Roger Bowling, George Richey, Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file ghostofanothermanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He’s living in that big old [D7]house that he [C]knows was built by [G]me
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [C]It must be [D7]a living [G]hell [C]to live with [D7]a ghost of another [G][C]man
 {end_of_verse}
+
+
+

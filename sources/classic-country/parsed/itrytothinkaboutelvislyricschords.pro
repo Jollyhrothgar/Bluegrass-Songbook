@@ -1,6 +1,9 @@
 {meta: title I Try To Think About Elvi}
 {meta: artist Patty Loveless}
 {meta: composer Gary Burr}
+{meta: x_source classic-country}
+{meta: x_source_file itrytothinkaboutelvislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I try to think about Elvis 
@@ -52,3 +55,8 @@ New clothes but I guess I should have [Am]known
 {start_of_verse: Verse 5}
 [F]You're all I [G7]think about these [C]days
 {end_of_verse}
+
+
+
+
+

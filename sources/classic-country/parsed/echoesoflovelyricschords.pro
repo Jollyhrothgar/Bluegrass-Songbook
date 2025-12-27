@@ -1,6 +1,9 @@
 {meta: title Echoes Of Love}
 {meta: artist Elvis Presley}
 {meta: composer Ruth Batchelor and Bob Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file echoesoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though you are [G7]gone I still wear your [C]ring
@@ -30,3 +33,7 @@ Cause [F]you'll be with me  [G7]right in my [C]heart
 Echoes of [F]l-o-[G7]ve echoes of l-ov[C]e 
 Cause [F]you'll be with me  [G7]right in my [C]heart 
 {end_of_verse}
+
+
+
+

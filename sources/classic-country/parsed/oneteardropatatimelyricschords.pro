@@ -1,6 +1,9 @@
 {meta: title One Teardrop At A Time}
 {meta: artist Wanda Jackson}
 {meta: composer Eddie Miller and Betty West}
+{meta: x_source classic-country}
+{meta: x_source_file oneteardropatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know that I've cried a lot [D7]today
@@ -29,3 +32,6 @@ That it won't be long until you'll be [D7]leaving me
 [G]When you go I'm gonna [G7]cry one more [C]time
 I'll take [G]back my heart one [D7]teardrop at a [G]time
 {end_of_verse}
+
+
+

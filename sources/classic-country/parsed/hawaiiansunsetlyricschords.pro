@@ -1,6 +1,9 @@
 {meta: title Hawaiian Sunset}
 {meta: artist Elvis Presley}
 {meta: composer Sid Tepper and Roy C. Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file hawaiiansunsetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hawaiian sunset peeping [F]from the [C]sea
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]So until tomorrow [G7]sleep Hawaii [C]sleep
 {end_of_verse}
+
+
+

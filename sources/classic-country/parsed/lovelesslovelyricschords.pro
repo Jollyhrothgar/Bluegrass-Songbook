@@ -1,6 +1,9 @@
 {meta: title Loveless Love}
 {meta: artist Bob Wills}
 {meta: composer W. C. Handy}
+{meta: x_source classic-country}
+{meta: x_source_file lovelesslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love oh love [G7]oh loveless [C]love
@@ -31,3 +34,6 @@ That's why we have a pure food [G7]law
 [C]In everything we [F]find a flaw
 Even [C]love oh [G7]love oh loveless [C]love
 {end_of_verse}
+
+
+

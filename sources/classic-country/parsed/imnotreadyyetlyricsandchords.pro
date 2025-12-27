@@ -1,6 +1,9 @@
 {meta: title I'm Not Ready Yet}
 {meta: artist George Jones}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file imnotreadyyetlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've always said that someday [C]I was gonna leave [G]you
@@ -35,3 +38,7 @@ And some day I'll go but I'm not ready yet
 {start_of_verse: Verse 5}
 [D7]I'm still around cause I'm not ready [G]yet
 {end_of_verse}
+
+
+
+

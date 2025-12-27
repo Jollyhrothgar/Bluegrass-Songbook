@@ -1,6 +1,9 @@
 {meta: title Stranger Things Have Happened}
 {meta: artist Ronnie Milsap}
 {meta: composer Roger Murrah and Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file strangerthingshavehappenedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I keep talking to your picture
@@ -42,3 +45,8 @@ If stranger things can [G7]happen
 You could still come back to [C]me
 Stranger things have happened 
 {end_of_verse}
+
+
+
+
+

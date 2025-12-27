@@ -1,6 +1,9 @@
 {meta: title Some Hearts Get All The Breaks}
 {meta: artist Roger Miller}
 {meta: composer Buck Moore and Jeff Raymond}
+{meta: x_source classic-country}
+{meta: x_source_file someheartsgetallthebreakslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some hearts have all the fun
@@ -43,3 +46,8 @@ Some people never cry
 [C]I guess that's what it takes
 [G7]Some hearts get all [F]the [C]breaks
 {end_of_verse}
+
+
+
+
+

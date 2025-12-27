@@ -1,6 +1,9 @@
 {meta: title My Little Home In Tennessee}
 {meta: artist Mac Wiseman}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file mylittlehomeintennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am always dreaming [C]of my little [Am]home
@@ -43,3 +46,8 @@ Down among the mountains [C]where wild flowers [Am]grow
 [G]I was broken hearted [C]and I went [Am]away
 [D7]From my little home in Tenne[G]ssee
 {end_of_verse}
+
+
+
+
+

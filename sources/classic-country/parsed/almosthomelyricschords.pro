@@ -1,6 +1,9 @@
 {meta: title Almost Home}
 {meta: artist Joe Diffie}
 {meta: composer Larry Williams and Johnny Slate}
+{meta: x_source classic-country}
+{meta: x_source_file almosthomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just can’t remember  [G7]when he started slipping
@@ -34,3 +37,7 @@ And he’s [C]al-[G7]most [C]home
 [A#7]Lord how I’m gonna [C]miss him when he’s [F]gone
 And he’s [C]al-[G7]most [C]home
 {end_of_verse}
+
+
+
+

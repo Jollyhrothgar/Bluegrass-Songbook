@@ -1,6 +1,9 @@
 {meta: title He's Got You}
 {meta: artist Ricky Van Shelton}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file hesgotyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got your picture [G7]that you gave to [C]me
@@ -33,3 +36,7 @@ Oh the only thing [C]different yeah [Am]the only thing [C]new
 [Am]I've got these [C]little things [G7]he's got [C]you
 [F]Yes I've got this [C]pict[G7]ure [F]he's [G7]got [C]you 
 {end_of_verse}
+
+
+
+

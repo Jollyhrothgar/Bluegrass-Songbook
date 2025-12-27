@@ -1,6 +1,9 @@
 {meta: title I Got a Woman}
 {meta: artist Elvis Presley}
 {meta: composer Ray Charles}
+{meta: x_source classic-country}
+{meta: x_source_file igotawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I've got a woman way cross [G7]town
@@ -57,3 +60,10 @@ She's good to [C]me  oh [C][F]yeah
 I've got a woman way over [G7]town
 Good to [C]me 
 {end_of_verse}
+
+
+
+
+
+
+

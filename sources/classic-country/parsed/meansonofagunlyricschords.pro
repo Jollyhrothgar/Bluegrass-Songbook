@@ -1,6 +1,9 @@
 {meta: title Mean Son Of A Gun}
 {meta: artist Johnny Horton}
 {meta: composer Barry Bentley}
+{meta: x_source classic-country}
+{meta: x_source_file meansonofagunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm a guy that likes his fun
@@ -83,3 +86,16 @@ I'm a [G]mean mean [D7]mean son of a [G]gun
 I'm [C]mean I'm mean I'm [G]mean
 I'm a [D7]mean mean mean son of a [G]gun
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

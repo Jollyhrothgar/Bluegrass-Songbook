@@ -1,6 +1,9 @@
 {meta: title Falling In Love}
 {meta: artist Don Williams}
 {meta: composer Bob McDill and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file fallinginlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Falling In Love
@@ -55,3 +58,10 @@ Honey then you [F]smiled at [G7]me and [C]then
 Lord help [Am]me here I go [F]again
 [G7]Falling in [C]love
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Little Bit Later On Down The Line}
 {meta: artist Bobby Bare}
 {meta: composer Chip Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file alittlebitlaterondownthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember the [F]time  [C]she used to be [F]mine
@@ -28,3 +31,6 @@ But [C]today I heard it [F]said [C] she got herself[F] wed
 My one love is [E7]gone  [F]why was I [C]born
 Just a little bit [G7]later on down the [C]line
 {end_of_verse}
+
+
+

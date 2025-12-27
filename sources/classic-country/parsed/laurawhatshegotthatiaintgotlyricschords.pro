@@ -1,6 +1,9 @@
 {meta: title Laura What's He Got That I Ain't Got}
 {meta: artist Kenny Rogers}
 {meta: composer Leon Ashley and Margie Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file laurawhatshegotthatiaintgotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Laura hold these [F]hands and count my [C]fingers 
@@ -40,3 +43,8 @@ Then [Dm]tell me what he's [G7]got that I ain't [C]got
 {start_of_verse: Verse 6}
 Then [Dm]tell me what he's [G7]got that I ain't [C]got
 {end_of_verse}
+
+
+
+
+

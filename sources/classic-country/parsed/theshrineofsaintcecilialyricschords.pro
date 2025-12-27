@@ -1,6 +1,9 @@
 {meta: title The Shrine Of Saint Cecilia}
 {meta: artist Faron Young}
 {meta: composer Pern Jokern and Carroll Loveday}
+{meta: x_source classic-country}
+{meta: x_source_file theshrineofsaintcecilialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our home is in shambles
@@ -51,3 +54,8 @@ And there'll [F]come a day
 [Fm]The storm will be over and that we'll meet [C]again
 At the [F]Shrine of [G7]Saint [C]Cecilia
 {end_of_verse}
+
+
+
+
+

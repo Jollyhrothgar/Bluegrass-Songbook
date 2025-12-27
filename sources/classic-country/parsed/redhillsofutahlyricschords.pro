@@ -1,5 +1,8 @@
 {meta: title Red Hills Of Utah}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file redhillsofutahlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How green are the [Am]valleys how [F]tall are the [G7]trees
@@ -21,3 +24,5 @@ How [C]sweet are the [Am]songs the [F]mockingbirds [G7]sing
 If it's [C]just like my [C7]dreams then I [F]must go and [C]see
 For the [F]Red Hills of [C]Utah are [G7]calling [C]me
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Missing Persons}
 {meta: artist Ferlin Husky}
 {meta: composer Jack Rhodes, Dick Reynolds, Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file missingpersonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I went down to missing [G7]persons [C]told the captain bout [G]you
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [E7]And until I find [A7]you baby I'll be a missing [D7]person [G]too
 {end_of_verse}
+
+
+

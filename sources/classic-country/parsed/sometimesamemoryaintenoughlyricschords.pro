@@ -1,5 +1,8 @@
 {meta: title Sometimes A Memory Ain't Enough}
 {meta: artist Jerry Lee Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file sometimesamemoryaintenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have your pictures to look [C]at 
@@ -32,3 +35,7 @@ I need real live arms to hold [C]me
 {start_of_verse: Verse 4}
 Sometimes a memory  just [D7]ain't [G]enough
 {end_of_verse}
+
+
+
+

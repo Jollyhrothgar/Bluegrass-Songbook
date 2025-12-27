@@ -1,6 +1,9 @@
 {meta: title Down Among The Budded Roses}
 {meta: artist Vern Williams}
 {meta: composer Lou Erck and William York}
+{meta: x_source classic-country}
+{meta: x_source_file downamongthebuddedroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Little sweetheart we have [D7]parted from each other we must [G]go
@@ -25,3 +28,6 @@ Darling meet me up in [D7]Heaven that’s my true and earnest [G]prayer
 Down among the budded [D7]roses I am nothing but a [G]stem
 [C]I have parted from my [G]darling [D7]never more to meet [G]again
 {end_of_verse}
+
+
+

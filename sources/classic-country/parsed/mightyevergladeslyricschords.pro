@@ -1,6 +1,9 @@
 {meta: title Mighty Everglades}
 {meta: artist Jim Reeves}
 {meta: composer Karl Davis}
+{meta: x_source classic-country}
+{meta: x_source_file mightyevergladeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]South from Okeechobee and reachin' to the [Am]keys
@@ -40,3 +43,8 @@
 [D7]A world of things a crawlin' and a thumpin' and a bawlin'
 [G]And a wadin' in the [G][D7]Everglades
 {end_of_verse}
+
+
+
+
+

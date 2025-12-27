@@ -1,6 +1,9 @@
 {meta: title When Hearts Grow Hard And Cold}
 {meta: artist Webb Pierce}
 {meta: composer Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file whenheartsgrowhardandcoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here alone in [G7]my lonely [C]bed 
@@ -29,3 +32,6 @@ To a love once more precious than [G7]gold
 There's [C]just no [C7]room for [F]forgiveness 
 When [C]hearts grow [G7]hard and [C]cold
 {end_of_verse}
+
+
+

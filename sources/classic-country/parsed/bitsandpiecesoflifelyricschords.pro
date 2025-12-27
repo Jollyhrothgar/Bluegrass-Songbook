@@ -1,6 +1,9 @@
 {meta: title Bits And Pieces Of Life}
 {meta: artist Cal Smith}
 {meta: composer Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file bitsandpiecesoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]No one knows the old man’s name 
@@ -50,3 +53,8 @@ The walk today was hardly worth his [C]time
 It’s just a bunch of junk he says
 For there ain’t [G7]nothing here that’s worth a [C]dime
 {end_of_verse}
+
+
+
+
+

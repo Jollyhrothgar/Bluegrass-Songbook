@@ -1,6 +1,9 @@
 {meta: title Magic Isles}
 {meta: artist Fats Domino}
 {meta: composer Antoine Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file magicisleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]To spend one [C]night on the magic [G7]isles
@@ -22,3 +25,5 @@ Lovers [F]walking and [F]talking [C]until the broad day[G7]light
 To spend one [C]night on the magic [G7]isles
 Just one night just to see you [C]smile 
 {end_of_verse}
+
+

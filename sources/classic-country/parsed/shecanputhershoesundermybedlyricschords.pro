@@ -1,6 +1,9 @@
 {meta: title She Can Put Her Shoes Under My Bed}
 {meta: artist Johnny Duncan}
 {meta: composer Aaron Schroeder}
+{meta: x_source classic-country}
+{meta: x_source_file shecanputhershoesundermybedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She can put her shoes under my bed [F]anytime
@@ -41,3 +44,8 @@ Anytime that woman's [G7]ready mmm it's more than [C]okay [G7]
 She [C]can have the key to my door [F]anytime
 And [G7]she can move right into my house and [C]stay
 {end_of_verse}
+
+
+
+
+

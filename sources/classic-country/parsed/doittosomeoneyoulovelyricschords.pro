@@ -1,5 +1,8 @@
 {meta: title Do It To Someone You Love}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file doittosomeoneyoulovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The words I love you come [F]easy
@@ -32,3 +35,7 @@ So [G7]do it to someone you [C]love
 {start_of_verse: Verse 4}
 [G7]Do it to someone you [C]love
 {end_of_verse}
+
+
+
+

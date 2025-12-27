@@ -1,6 +1,9 @@
 {meta: title Country Till I Die}
 {meta: artist John Anderson}
 {meta: composer Troy Seals, Eddie Setser, John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file countrytillidielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got an invite to a Saturday night [F]shindig way up [C]town
@@ -41,3 +44,8 @@ It's in the [C]way you look the way you walk and talk
 {start_of_verse: Verse 5}
 Yeah I'm just gonna be [G7]country till I [C]die
 {end_of_verse}
+
+
+
+
+

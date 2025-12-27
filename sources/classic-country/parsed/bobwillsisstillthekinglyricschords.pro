@@ -1,5 +1,8 @@
 {meta: title Bob Wills Is Still the King}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file bobwillsisstillthekinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the honky-tonks in Texas were my [F]natural second [C]home
@@ -28,3 +31,6 @@ That you just can't live in Texas unless you got a lot of [G7]soul
 It's the [C]home of Willie Nelson the home [F]of Western [C]Swing
 He'll be the first to tell you Bob [G7]Wills is still the [C]king
 {end_of_verse}
+
+
+

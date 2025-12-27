@@ -1,6 +1,9 @@
 {meta: title Between An Old Memory And Me}
 {meta: artist Keith Whitley}
 {meta: composer Charlie Craig and Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file betweenanoldmemoryandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was sittin' at a table [A]at a [F]little club [C]downtown
@@ -26,3 +29,5 @@ I don't [C]want to talk about [C7]it why can't everybody [F]see
 [C]This is just between [Dm]an old [G7]memory and [C]me
 This is just between [Dm]an old [G7]memory and [C]me
 {end_of_verse}
+
+

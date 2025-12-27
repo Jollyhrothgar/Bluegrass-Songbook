@@ -1,5 +1,8 @@
 {meta: title My Baby Ain't My Baby No More}
 {meta: artist Wilburn Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file mybabyaintmybabynomorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know my [G7]baby ain't my baby no [C]more
@@ -58,3 +61,14 @@ The telephone's ringing don't worry me
 {start_of_verse: Verse 11}
 Because my [G7]baby ain't my baby no [C]more
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

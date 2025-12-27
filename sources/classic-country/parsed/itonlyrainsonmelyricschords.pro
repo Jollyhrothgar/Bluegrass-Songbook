@@ -1,6 +1,9 @@
 {meta: title It Only Rains On Me}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file itonlyrainsonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know all [G7]about black [C]clouds
@@ -57,3 +60,10 @@ I'll just take my [G7]cloud and [F]go
 [Am]Now I look [F]around and find
 [C]It only [G7]rains on [C]me
 {end_of_verse}
+
+
+
+
+
+
+

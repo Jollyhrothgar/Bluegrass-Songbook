@@ -1,6 +1,9 @@
 {meta: title I Don't Believe That's How You Feel}
 {meta: artist Tanya Tucker}
 {meta: composer Harlan Howard and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file idontbelievethatshowyoufeellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't believe that's how you feel
@@ -41,3 +44,8 @@ I sure regret the words I told you [C]now
 [G7]I guess I must have hurt you bad I didn't mean to make you sad
 I sure regret the words I told you [C]now
 {end_of_verse}
+
+
+
+
+

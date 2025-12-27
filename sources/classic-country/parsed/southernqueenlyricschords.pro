@@ -1,5 +1,8 @@
 {meta: title Southern Queen}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file southernqueenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Big old voodoo moon peeks down [F]between the clouds
@@ -47,3 +50,9 @@ In this [F]misty Mississippi river [C]rain
 With a [C]touch of midnight madness
 This [G7]misty Mississippi river [F]rain [C]
 {end_of_verse}
+
+
+
+
+
+

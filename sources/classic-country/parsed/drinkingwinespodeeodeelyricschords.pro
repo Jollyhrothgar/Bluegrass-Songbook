@@ -1,6 +1,9 @@
 {meta: title Drinking Wine Spo-dee-o-dee}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Granville McGhee and Mayo Williams}
+{meta: x_source classic-country}
+{meta: x_source_file drinkingwinespodeeodeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down in New Orleans where everything's fine
@@ -59,3 +62,12 @@ All them cats is just a drinking that wine
 [C]Drinking that mess is pure delight
 [G]When getting sloppy drunk they sing all night
 {end_of_verse}
+
+
+
+
+
+
+
+
+

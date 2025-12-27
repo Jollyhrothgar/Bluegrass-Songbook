@@ -1,6 +1,9 @@
 {meta: title Memory Lane}
 {meta: artist The Statler Brothers}
 {meta: composer Jimmy Fortune}
+{meta: x_source classic-country}
+{meta: x_source_file memorylanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's take a [F]ride ride down [C]memory lane
@@ -64,3 +67,11 @@ Do the [G7]things that we used to [C]do
 Let's take a [F]ride ride down [C]memory lane
 And make [G7]love the way we used [C]to
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That's What I Get For Loving You}
 {meta: artist Eddy Arnold}
 {meta: composer Bobby Lee Springfield}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatigetforlovingyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I've got melodies that never leave they linger on my [D7]mind
@@ -43,3 +46,8 @@
 [G7]Happiness that grows and grows and fills me through and [C]through
 [D7]That's what I get for loving [G]you
 {end_of_verse}
+
+
+
+
+

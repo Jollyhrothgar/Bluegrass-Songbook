@@ -1,6 +1,9 @@
 {meta: title Shine On Ruby Mountain}
 {meta: artist Kenny Rogers}
 {meta: composer Kenny Young}
+{meta: x_source classic-country}
+{meta: x_source_file shineonrubymountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Shine on [C]Ruby [G]mountain
@@ -56,3 +59,10 @@ From the valley [D7]to the [G]sea
 Shine on [C]Ruby [G]mountain
 Shine your sweet love [D7]down on [G]me
 {end_of_verse}
+
+
+
+
+
+
+

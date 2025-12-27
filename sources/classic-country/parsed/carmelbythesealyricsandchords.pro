@@ -1,5 +1,8 @@
 {meta: title Carmel by the Sea Lyrics and Chords}
 {meta: artist Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file carmelbythesealyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My darling where-ever [C]you [G]are
@@ -22,3 +25,5 @@
 [C]Oh my l-ove  come back to [G]me
 [D7]Come back to me at Carmel by the [G]sea
 {end_of_verse}
+
+

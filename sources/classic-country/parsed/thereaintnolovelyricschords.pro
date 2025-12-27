@@ -1,6 +1,9 @@
 {meta: title There Ain't No Love}
 {meta: artist Reba McEntire}
 {meta: composer Pat McManus}
+{meta: x_source classic-country}
+{meta: x_source_file thereaintnolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 There Ain't No Love
@@ -44,3 +47,7 @@ There ain't no love like yours for me
 And we'll [C]remain in love 
 With the [Am]kind of love most [D7]lovers never [G]see
 {end_of_verse}
+
+
+
+

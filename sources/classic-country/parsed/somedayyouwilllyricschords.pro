@@ -1,6 +1,9 @@
 {meta: title Someday You Will}
 {meta: artist Charley Pride}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file somedayyouwilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You don't know [C]how I [G]feel but [D7]someday you [C][G]will
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 4}
 [C]You don't know [G]how they feel [D7]but someday you [G]will
 {end_of_verse}
+
+
+
+

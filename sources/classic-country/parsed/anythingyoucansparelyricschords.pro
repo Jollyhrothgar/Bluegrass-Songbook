@@ -1,6 +1,9 @@
 {meta: title Anything You Can Spare}
 {meta: artist Lefty Frizzel}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file anythingyoucansparelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you have any [A7]left-over [D7]kisses 
@@ -22,3 +25,5 @@ Though [C]I've already more than my [G7]share
 I [C]love you all the time so baby [F]keep me in [D7]mind 
 I'll [G7]take anything you can [C]spare
 {end_of_verse}
+
+

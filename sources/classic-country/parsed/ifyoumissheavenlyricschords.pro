@@ -1,6 +1,9 @@
 {meta: title If You Miss Heaven (You Miss It All)}
 {meta: artist Loretta Lynn}
 {meta: composer Dale Fox, Dianne Floyd, Tommy Floyd}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoumissheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're tired of sinning [G7]take your Savior's [C]hand
@@ -22,3 +25,5 @@ And his [F]salvation [C]frees us from the sorrows of earth
 [F]Forever with Jesus makes [C]life seem so small
 [F]If you miss [C]heaven  [G7]you'll miss it [C]all
 {end_of_verse}
+
+

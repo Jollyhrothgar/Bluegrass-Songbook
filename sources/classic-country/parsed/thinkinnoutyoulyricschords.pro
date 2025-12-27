@@ -1,6 +1,9 @@
 {meta: title Thinkin' Bout You}
 {meta: artist Everly Brothers}
 {meta: composer Larry Henley and Billy Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file thinkinnoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This whole thing is out of hand
@@ -36,3 +39,6 @@ Startin' something [G]new
 [G]Thinkin' 'bout you[D7]   [G]
 [D7]Thinkin' 'bout [G]you
 {end_of_verse}
+
+
+

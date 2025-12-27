@@ -1,6 +1,9 @@
 {meta: title Love's Not Love (Till You Give It Away)}
 {meta: artist Bill Anderson}
 {meta: composer Glenn Martin and Ronnie Sessions}
+{meta: x_source classic-country}
+{meta: x_source_file lovesnotlovetillyougiveitawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A bell's not a bell till you [D7]ring it
@@ -33,3 +36,7 @@ Love's not [G]love  [D7]till you give it [G]away
 {start_of_verse: Verse 4}
 [C]Love's not [G]love  [D7]till you give it [G]away
 {end_of_verse}
+
+
+
+

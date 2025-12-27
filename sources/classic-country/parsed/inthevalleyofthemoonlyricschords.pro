@@ -1,6 +1,9 @@
 {meta: title In The Valley Of The Moon}
 {meta: artist Hank Thompson}
 {meta: composer Charles Tobias and Joe Burke}
+{meta: x_source classic-country}
+{meta: x_source_file inthevalleyofthemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](In the [G7]valley of the [C]moon)
@@ -24,3 +27,6 @@ In the [G7]valley of the [C]moon
 {start_of_verse: Verse 4}
 Repeat
 {end_of_verse}
+
+
+

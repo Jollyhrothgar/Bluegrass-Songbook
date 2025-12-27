@@ -1,6 +1,9 @@
 {meta: title Ladies Love}
 {meta: artist Lee Greenwood}
 {meta: composer Pat Mcmanus and Wilson Bomar}
+{meta: x_source classic-country}
+{meta: x_source_file ladieslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was coming of age old enough to under[D7]stand
@@ -54,3 +57,7 @@ Silk and satin and [C]diamond rings
 But [Am]most of all they love that [D7]feeling
 That true love [G]brings
 {end_of_verse}
+
+
+
+

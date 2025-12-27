@@ -1,6 +1,9 @@
 {meta: title Little Joe}
 {meta: artist Hank Snow}
 {meta: composer A.P. Carter, Maybelle Carter, Sara Carter}
+{meta: x_source classic-country}
+{meta: x_source_file littlejoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What will the birds do [F]mother in the [C]spring
@@ -50,3 +53,9 @@
 [C]And any kind angel will know at the [F]gate
 [G7]When you ask for your darling little [C]Joe
 {end_of_verse}
+
+
+
+
+
+

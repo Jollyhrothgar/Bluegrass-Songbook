@@ -1,6 +1,9 @@
 {meta: title Saint To A Sinner}
 {meta: artist Loretta Lynn}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file sainttoasinnerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You put a halo and [F]wings around [C]me
@@ -29,3 +32,6 @@ But you can't blame me for it [G7]all
 You [C]were the teacher I [F]was just a [C]beginner
 You don't know how it [G7]hurt me to [C]fall
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Is The Foundation}
 {meta: artist Cal Smith}
 {meta: composer William C. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file loveisthefoundationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've seen her as she awakens [C]in the [G]morning
@@ -24,3 +27,5 @@ All you need is love to ease your [D7]mind
 When [C]she gives me more [D7]loving 
 Than a [C]lifetime of [D7]looking could ever [G]find
 {end_of_verse}
+
+

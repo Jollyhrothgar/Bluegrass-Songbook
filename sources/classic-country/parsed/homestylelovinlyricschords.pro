@@ -1,6 +1,9 @@
 {meta: title Home Style Lovin'}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file homestylelovinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Home style lovin’ is the answer
@@ -42,3 +45,8 @@
 {start_of_verse: Verse 4}
 [G7]Your home style lovin’ keeps me [C]home
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Can’t Escape From You}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file icantescapefromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've tried and tried to run and hide
@@ -28,3 +31,6 @@ That dreams [C7]will soon come [G7]true
 A [C]slave too long to a [F]heart of [C]stone
 I can't [G7]escape from [C]you
 {end_of_verse}
+
+
+

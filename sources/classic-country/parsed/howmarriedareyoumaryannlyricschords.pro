@@ -1,5 +1,8 @@
 {meta: title How married are you Mary Ann}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file howmarriedareyoumaryannlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I first saw you I saw something 
@@ -78,3 +81,17 @@ How married are you  [G7]Mary [C]Ann
 {start_of_verse: Verse 15}
 How married are you  [G7]Mary [C]Ann
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

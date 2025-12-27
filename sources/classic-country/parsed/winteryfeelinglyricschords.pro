@@ -1,6 +1,9 @@
 {meta: title Wintery Feeling}
 {meta: artist Anne Murray}
 {meta: composer Jesse Winchester}
+{meta: x_source classic-country}
+{meta: x_source_file winteryfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Look how the sky's all silver beautiful Montreal
@@ -42,3 +45,8 @@ Somehow it just seems to suit me [G]fine
 {start_of_verse: Verse 5}
 [C]Oh that sad old wintry [G]feeling
 {end_of_verse}
+
+
+
+
+

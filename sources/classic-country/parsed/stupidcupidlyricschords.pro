@@ -1,6 +1,9 @@
 {meta: title Stupid Cupid}
 {meta: artist Patsy Cline}
 {meta: composer Neil Sedaka and Howie Greenfield}
+{meta: x_source classic-country}
+{meta: x_source_file stupidcupidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stupid Cupid you're a real mean guy
@@ -37,3 +40,6 @@ And I don't feature what you're [C7]puttin' down
 [C]The thing that bothers me is I like it fine
 [G7]Hey hey [F]set me free [C]Stupid Cupid stop [G7]pickin' on [C]me
 {end_of_verse}
+
+
+

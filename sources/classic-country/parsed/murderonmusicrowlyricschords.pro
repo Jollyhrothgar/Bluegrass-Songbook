@@ -1,5 +1,8 @@
 {meta: title Murder On Music Row}
 {meta: artist George Strait}
+{meta: x_source classic-country}
+{meta: x_source_file murderonmusicrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Nobody saw them running
@@ -77,3 +80,13 @@ Why they even tell the Possum
 [G]There's been an awful murder
 [D7]Down on music [G]row
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

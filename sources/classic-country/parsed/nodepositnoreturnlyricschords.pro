@@ -1,6 +1,9 @@
 {meta: title No Deposit No Return}
 {meta: artist Billy Crash Craddock}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file nodepositnoreturnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gypsy woman [F]bring your crystal ball and sit with [C]me awhile
@@ -43,3 +46,8 @@ There ain't no [C]pleasure [F]if there ain't no [C]pain [F]
 And that's a [C]lesson we all must [F]learn
 No [C]deposit [G7]no re[C]turn
 {end_of_verse}
+
+
+
+
+

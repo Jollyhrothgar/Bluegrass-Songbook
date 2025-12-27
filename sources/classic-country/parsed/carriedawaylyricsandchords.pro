@@ -1,6 +1,9 @@
 {meta: title Carried Away}
 {meta: artist Statler Brothers}
 {meta: composer Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file carriedawaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I first met [G7]Becky at the home of a mutual friend
@@ -37,3 +40,7 @@ If you'd have told me then I'd see that [C7]girl in an old gray casket
 Bein' carried [F]away carried [C]away to hear the angels [G7]sing
 [C]Mmm mmm mmm mmm  [F]never grow [C]old
 {end_of_verse}
+
+
+
+

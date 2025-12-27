@@ -1,6 +1,9 @@
 {meta: title Christmas Roses}
 {meta: artist Hank Snow}
 {meta: composer Paula Frances and Gary Romero}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas roses to you I'm sending
@@ -25,3 +28,6 @@ Remember [D7]that I'll always love you though I'm far [G7]away
 Christmas roses to you I'm [C]sending
 May they [G7]bring you Christmas joy though we're [C]apart
 {end_of_verse}
+
+
+

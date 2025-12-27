@@ -1,6 +1,9 @@
 {meta: title Cowboys Holiday (Jingle Bells)}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy, Norbert, Perter Match – traditional}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysholidayjinglebellslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jingle bells shotgun shells boots and hats and hay
@@ -51,3 +54,10 @@ Happy Trails to you Happy Trails to you
 {start_of_verse: Verse 8}
 Happy Trails to you Happy Trails to you
 {end_of_verse}
+
+
+
+
+
+
+

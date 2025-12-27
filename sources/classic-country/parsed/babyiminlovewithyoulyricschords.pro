@@ -1,6 +1,9 @@
 {meta: title Baby I'm In Love With You}
 {meta: artist Ricky Skaggs}
 {meta: composer Cliff Massey and Arbie Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file babyiminlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby I'm in love with you drowning in your eyes so [A7]blue
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [D7]I'd be yours for evermore baby I'm in love with [G]you
 {end_of_verse}
+
+
+

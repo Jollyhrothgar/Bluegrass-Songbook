@@ -1,5 +1,8 @@
 {meta: title I Want To Be Loved}
 {meta: artist Red White and Blue Dixie Band}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttobelovedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want to be kissed but only by your [C]lips dear
@@ -28,3 +31,6 @@ And will [D7]tell me that your love for me is [G]true
 Then we’ll be happy in our home to[C]gether
 I [D7]want to be loved but only by [G]you
 {end_of_verse}
+
+
+

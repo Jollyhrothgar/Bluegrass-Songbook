@@ -1,6 +1,9 @@
 {meta: title To Do What I Do}
 {meta: artist Alan Jackson}
 {meta: composer Tim Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file todowhatidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been a waiter a [C]roofer a clerk
@@ -48,3 +51,8 @@ Cause they're so many people who would [C]give anything[Em]
 [D7]To do what I [G]do [C]  [Am]
 And [G]I thank [D7]you I can do what I [G]do [Em]   [D7]   [G]
 {end_of_verse}
+
+
+
+
+

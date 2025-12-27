@@ -1,6 +1,9 @@
 {meta: title Blue Lonely Winter}
 {meta: artist Goldie Hill}
 {meta: composer Jimmy Newman and Roy A. Baham}
+{meta: x_source classic-country}
+{meta: x_source_file bluelonelywinterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blue [C]lonely winter 
@@ -32,3 +35,7 @@ And the [D7]blue lonely winter [G]alone
 Blue [C]snowflakes falling 
 And the [D7]blue lonely winter [G]alone
 {end_of_verse}
+
+
+
+

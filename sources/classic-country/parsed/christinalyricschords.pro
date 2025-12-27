@@ -1,6 +1,9 @@
 {meta: title Christina}
 {meta: artist Waylon Jennings}
 {meta: composer Steve Karliski}
+{meta: x_source classic-country}
+{meta: x_source_file christinalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Their eyes are upon you as they sat there drinking
@@ -36,3 +39,7 @@ Dance to the strings of your shame and my [C]sorrow
 [G]I'll take you home when it's over
 To dream all the dreams of a bright [C][G7]tomorrow
 {end_of_verse}
+
+
+
+

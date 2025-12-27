@@ -1,6 +1,9 @@
 {meta: title I'm Tired of Your Understanding Ways}
 {meta: artist Merle Haggard}
 {meta: composer David J. Warner}
+{meta: x_source classic-country}
+{meta: x_source_file imtiredofyourunderstandingwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say that it’s alright if I go out at night
@@ -37,3 +40,9 @@ You say that life’s too short to get the most out of each day
 {start_of_verse: Verse 6}
 [G7]Hey I’m tired of your understanding [C]ways
 {end_of_verse}
+
+
+
+
+
+

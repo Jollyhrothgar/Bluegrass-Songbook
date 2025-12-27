@@ -1,6 +1,9 @@
 {meta: title Sharecropper’s Son}
 {meta: artist Ralph Stanley}
 {meta: composer Carter and Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file sharecropperssonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We moved here from Summers [C]when I was [G]fourteen
@@ -49,3 +52,10 @@ And momma's just told us there'd [D7]be another [G]one
 Daylight till dark my [C]work’s never [G]done
 Lord have mercy on a [D7]sharecropper’s [G]son
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title My Hero In The Plastic Radio Lyrics chords}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file myherointheplasticradiolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every morning of my childhood he’d come to wake [C]up 
@@ -39,3 +42,8 @@ My [D7]hero in the plastic [G]radio
 {start_of_verse: Verse 6}
 My [D7]hero in the plastic [G]radio
 {end_of_verse}
+
+
+
+
+

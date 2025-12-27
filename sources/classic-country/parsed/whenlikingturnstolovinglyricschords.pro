@@ -1,6 +1,9 @@
 {meta: title When Liking Turns To Loving}
 {meta: artist Bill Anderson}
 {meta: composer Kenny Young}
+{meta: x_source classic-country}
+{meta: x_source_file whenlikingturnstolovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hold her hand much [C]tighter now 
@@ -39,3 +42,7 @@ When [D7]liking turns to [G]loving
 When [D7]liking turns to [G]loving
 (What a [C]wonderful [D7]wonderful [G]feeling)
 {end_of_verse}
+
+
+
+

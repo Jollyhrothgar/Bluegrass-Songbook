@@ -1,5 +1,8 @@
 {meta: title Hearts Like Ours}
 {meta: artist Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file heartslikeourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like a rolling [F]river we keep on and [C]on
@@ -37,3 +40,7 @@ To hearts like [C]ours
 True love [F]songs still [G7]belong
 To hearts like [C]ours
 {end_of_verse}
+
+
+
+

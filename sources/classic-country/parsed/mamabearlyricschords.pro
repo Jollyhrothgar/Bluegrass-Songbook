@@ -1,6 +1,9 @@
 {meta: title Mama Bear}
 {meta: artist Carl Smith}
 {meta: composer Wiley J. Smith}
+{meta: x_source classic-country}
+{meta: x_source_file mamabearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know Goldilocks is just a children's [F]story
@@ -47,3 +50,9 @@ Who's been laying in my bed and broke it [F]down
 {start_of_verse: Verse 5}
 [G7]Who's been playing around with mamma [C]bear
 {end_of_verse}
+
+
+
+
+
+

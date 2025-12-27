@@ -1,6 +1,9 @@
 {meta: title He's A Jolly Good Fellow}
 {meta: artist Charlie Walker}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file hesajollygoodfellowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He's a jolly good [C]fellow 
@@ -40,3 +43,8 @@ But that [G]jolly good [C]fellow's [G]world's [D7]about to [G]fall
 {start_of_verse: Verse 4}
 Yes that jolly good [C]fellow's [G]world's [D7]about to [G]fall
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let Me Love You One More Time}
 {meta: artist Charlie Sizemore}
 {meta: composer Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file letmeloveyouonemoretimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lay your head on my [C]shoulder
@@ -36,3 +39,7 @@ But [C]losing you won't be so hard [G]dear
 We'll walk down lovers lane [C]together
 [D7]Let me love you one more [G]time
 {end_of_verse}
+
+
+
+

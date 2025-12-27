@@ -1,6 +1,9 @@
 {meta: title I’m Just A Redneck In A Rock And Roll Bar}
 {meta: artist Mel Street}
 {meta: composer Bob Morrison and Bill Anthony}
+{meta: x_source classic-country}
+{meta: x_source_file imjustaredneckinarockandrollbarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Hello Boogie Palace I'm [G]sittin' here [D7]alone
@@ -43,3 +46,8 @@ I miss my fiddles and the [D7]steel [G]guitar
 They're starin' at me like a [C]bug in a [G]jar
 I'm just a redneck in a [D7]rock and roll [G]bar
 {end_of_verse}
+
+
+
+
+

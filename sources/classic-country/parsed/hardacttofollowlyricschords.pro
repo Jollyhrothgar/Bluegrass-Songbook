@@ -1,6 +1,9 @@
 {meta: title Hard Act To Follow}
 {meta: artist Keith Whitley}
 {meta: composer Gary Nicholson and David Chamberlain}
+{meta: x_source classic-country}
+{meta: x_source_file hardacttofollowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My leading lady is gone 
@@ -46,3 +49,9 @@ Her [Dm]leavin' brought the [G7]whole house [C]down
 A [F]hard act to [Am]follow 
 Her [Dm]leavin' brought the [G7]whole house [C]down[G7]   [C]
 {end_of_verse}
+
+
+
+
+
+

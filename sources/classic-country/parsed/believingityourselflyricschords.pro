@@ -1,6 +1,9 @@
 {meta: title Believing it Yourself}
 {meta: artist Faron Young}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file believingityourselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're telling everybody that she loves you   [C]you know she don't
@@ -29,3 +32,6 @@ But you're just asking for a broken heart   [C]when you won't quit
 So go tell everybody   [G7]she found somebody [C]else
 And maybe soon you'll [D7]start believing it [G]yourself
 {end_of_verse}
+
+
+

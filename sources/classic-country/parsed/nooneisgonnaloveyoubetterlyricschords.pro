@@ -1,5 +1,8 @@
 {meta: title No One Is Gonna Love You Better}
 {meta: artist Heather Myles}
+{meta: x_source classic-country}
+{meta: x_source_file nooneisgonnaloveyoubetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't like to think about [C]tomorrow
@@ -38,3 +41,7 @@ I [G]know someone'll keep you [C]warm
 tag:
 [C]O-h [G]but no one no one is gonna [D7]love you [G]better
 {end_of_verse}
+
+
+
+

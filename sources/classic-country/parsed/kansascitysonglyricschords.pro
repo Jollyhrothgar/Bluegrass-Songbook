@@ -1,6 +1,9 @@
 {meta: title Kansas City Song}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file kansascitysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For two long weeks you're going to Kansas [D7]City
@@ -47,3 +50,9 @@ Cause I'll [C]miss you till you're [D7]in my arms [G]again
 {start_of_verse: Verse 5}
 Yes I'll [C]miss you till you're [D7]in my arms [G]again
 {end_of_verse}
+
+
+
+
+
+

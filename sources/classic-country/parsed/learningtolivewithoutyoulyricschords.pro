@@ -1,6 +1,9 @@
 {meta: title Learning To Live Without You}
 {meta: artist Mickey Gilley}
 {meta: composer Steve Michaels}
+{meta: x_source classic-country}
+{meta: x_source_file learningtolivewithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd like to know if you're [C]lonely
@@ -46,3 +49,8 @@ And you [G]won't be back [Em]home
 I'll start [C]learning to [D7]live without [Em]you
 I'll start [C]learning to [D7]live without [G]you
 {end_of_verse}
+
+
+
+
+

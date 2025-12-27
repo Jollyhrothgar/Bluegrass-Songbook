@@ -1,6 +1,9 @@
 {meta: title Two Less Lonely People In The World}
 {meta: artist Rex Allen Jr.}
 {meta: composer Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file twolesslonelypeopleintheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There are millions just like [Am]us
@@ -33,3 +36,6 @@ And [G]stay together till the morning [C]light
 There'll be [G]two less lonely [D7]people 
 In the world [G]tonight
 {end_of_verse}
+
+
+

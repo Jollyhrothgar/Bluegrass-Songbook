@@ -1,5 +1,8 @@
 {meta: title Don't Lead Me On}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file dontleadmeonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My [D7]eyes they crave to [G]see you 
@@ -56,3 +59,10 @@ Cause you know I'd want you to [G7]stay
 And [C]please don't lead me [G]on 
 If we [D7]can't go all the [C]way[G]
 {end_of_verse}
+
+
+
+
+
+
+

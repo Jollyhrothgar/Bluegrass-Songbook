@@ -1,5 +1,8 @@
 {meta: title Take Time To Be Holy}
 {meta: artist Tennessee Ernie Ford}
+{meta: x_source classic-country}
+{meta: x_source_file taketimetobeholylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take time to be [F]ho-[C]ly speak [G7]oft with thy [C]Lord
@@ -21,3 +24,5 @@ Each thought and each [F]mo-[C]tive [G7]be-[D7]neath His con[G7]trol
 Thus led by His [C]Spirit [G7]to fountains of [C]love
 Thou soon shall be [F]fitted [C]for [G7]service [C]above
 {end_of_verse}
+
+

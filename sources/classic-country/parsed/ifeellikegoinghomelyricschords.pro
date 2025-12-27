@@ -1,5 +1,8 @@
 {meta: title I Feel Like Going Home Lyrics and Chords}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file ifeellikegoinghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I [G7]feel like going [Am]home[G7]   [F]
@@ -21,3 +24,5 @@ And not a [Dm]friend [C]around to [G7]help me[C]
 From all the [G7]places that I have [Am]been [C]  [F]
 And I [G7]feel like going [C]home
 {end_of_verse}
+
+

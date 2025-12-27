@@ -1,6 +1,9 @@
 {meta: title Poor Man's Riches}
 {meta: artist George Jones}
 {meta: composer Benny Barnes and Dee Marais}
+{meta: x_source classic-country}
+{meta: x_source_file poormansricheslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I've traveled to the ends of the [G7]rainbow
@@ -33,3 +36,7 @@ If I had you to [G7]have and to [C]hold
 {start_of_verse: Verse 4}
 Yes if I had you to [G7]have and to [C]hold
 {end_of_verse}
+
+
+
+

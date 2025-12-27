@@ -1,5 +1,8 @@
 {meta: title Hamburger Steak Holiday Inn}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file hamburgersteakholidayinnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hamburger Steaks Holiday [C]Inn
@@ -45,3 +48,8 @@ I see people all alone pickin' their [C]guitars and singin' their songs
 But I tell 'em [G]forget it cause you can't [A7]fake it
 If you're gonna [C]make it you've gotta [G]live it
 {end_of_verse}
+
+
+
+
+

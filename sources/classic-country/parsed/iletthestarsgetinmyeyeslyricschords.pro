@@ -1,6 +1,9 @@
 {meta: title I Let The Stars Get In My Eyes}
 {meta: artist Goldie Hill}
 {meta: composer Slim Willet}
+{meta: x_source classic-country}
+{meta: x_source_file iletthestarsgetinmyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I let the stars get in my eyes 
@@ -16,3 +19,4 @@ Too many nights I was [D7]alone
 His love was so grand when he held my hand 
 You know how the moonlight lures you [G]on
 {end_of_verse}
+

@@ -1,6 +1,9 @@
 {meta: title What Is It}
 {meta: artist Mickey Gilley}
 {meta: composer Wayne Kemp, Billy Arr, James Marshall}
+{meta: x_source classic-country}
+{meta: x_source_file whatisitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I walk out today would you stand in my [F]way
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G7]What is it that keeps you hanging [C]on
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title No Other Arms No Other Lips}
 {meta: artist Slim Whitman}
 {meta: composer Joan Whitney, Alex Kramer, Hy Zaret}
+{meta: x_source classic-country}
+{meta: x_source_file nootherarmsnootherlipslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No other arms [G]no other lips [D7]no other love but [G]you
@@ -29,3 +32,8 @@
 {start_of_verse: Verse 6}
 [C]No other arms [G]no other lips [D7]no other love but [G]you
 {end_of_verse}
+
+
+
+
+

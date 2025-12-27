@@ -1,5 +1,8 @@
 {meta: title That Wild And Wicked Look In Your Eye}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file thatwildandwickedlookinyoureyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I saw you while was passing by
@@ -41,3 +44,9 @@ You thought you could make me blue
 But little gal the jokes [C]on you
 Cause [D7]I didn't trust you from the start you [G]see
 {end_of_verse}
+
+
+
+
+
+

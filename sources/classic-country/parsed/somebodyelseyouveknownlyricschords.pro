@@ -1,5 +1,8 @@
 {meta: title Somebody Else You've Known}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file somebodyelseyouveknownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've always been the kinda guy that [G7]didn't love a lot
@@ -33,3 +36,8 @@ Just because you left me all [G7]alone
 {start_of_verse: Verse 5}
 [G7]Surely I must be somebody else you've [C]known
 {end_of_verse}
+
+
+
+
+

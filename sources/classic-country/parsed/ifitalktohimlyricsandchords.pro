@@ -1,6 +1,9 @@
 {meta: title If I Talk to Him}
 {meta: artist Connie Smith}
 {meta: composer Priscilla Mitchell and Dolores Edgin}
+{meta: x_source classic-country}
+{meta: x_source_file ifitalktohimlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I [C]talk to him I'd take him back [G]again 
@@ -34,3 +37,7 @@ I'm [D7]afraid to even answer the [G]phone
 Cause if I [C]talk to him I'd take him back [G]again
 So if he [D7]calls please tell him I'm not [G]home
 {end_of_verse}
+
+
+
+

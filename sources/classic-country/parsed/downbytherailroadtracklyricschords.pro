@@ -1,6 +1,9 @@
 {meta: title Down By The Railroad Track}
 {meta: artist Lefty Frizzel}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file downbytherailroadtracklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down by the [F]railroad [C]track
@@ -56,3 +59,9 @@
 [C]But the life of a [F]king is a hobo's [C]dream
 [G7]Down by the railroad [C]track
 {end_of_verse}
+
+
+
+
+
+

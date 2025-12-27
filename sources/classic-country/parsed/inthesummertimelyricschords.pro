@@ -1,5 +1,8 @@
 {meta: title In The Summertime}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file inthesummertimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the summertime when all the trees and leaves are green
@@ -30,3 +33,6 @@ And you're so all [G7]alone
 In the [C]summertime when all the trees and leaves are green
 And the red bird sings I'll be [G7]blue cause you don't want my [C]love
 {end_of_verse}
+
+
+

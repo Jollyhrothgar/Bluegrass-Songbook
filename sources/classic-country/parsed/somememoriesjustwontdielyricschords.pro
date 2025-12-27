@@ -1,6 +1,9 @@
 {meta: title Some Memories Just Won't Die}
 {meta: artist Marty Robbins}
 {meta: composer Bobby Springfield}
+{meta: x_source classic-country}
+{meta: x_source_file somememoriesjustwontdielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say it's [F]over  [G7]you say it’s [C]through  
@@ -29,3 +32,6 @@ Oh no [C]matter  how [G7]hard you try  and I [C]know  every now and [Em]then
 You still think of [F]him I see it [C]in your eyes 
 Some [Dm]mem-o[F]ries [G7]just won't [C]die 
 {end_of_verse}
+
+
+

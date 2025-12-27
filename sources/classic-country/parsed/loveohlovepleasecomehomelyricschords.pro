@@ -1,6 +1,9 @@
 {meta: title Love Oh Love Please Come Home}
 {meta: artist Bill Monroe}
 {meta: composer Leon Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file loveohlovepleasecomehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As you read this letter that I write to [F]you
@@ -36,3 +39,7 @@ I'm [C]so blue and all [G]alone
 I [C]promise that I'll treat you [G]right
 Love oh [D7]love oh please come [G]home
 {end_of_verse}
+
+
+
+

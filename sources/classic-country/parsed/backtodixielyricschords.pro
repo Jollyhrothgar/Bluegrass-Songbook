@@ -1,6 +1,9 @@
 {meta: title Back To Dixie}
 {meta: artist Tony Rice}
 {meta: composer Doyle Lawson, Johnny Goble, Leroy Drumm}
+{meta: x_source classic-country}
+{meta: x_source_file backtodixielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m goin’ down to the Cumberland River
@@ -61,3 +64,11 @@ I’m goin’ back [D7]back to [G]Dixie
 {start_of_verse: Verse 6}
 Back [D7]back to [G]Dixie
 {end_of_verse}
+
+
+
+
+
+
+
+

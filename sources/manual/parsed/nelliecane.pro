@@ -1,6 +1,9 @@
 {meta: title Nellie Cane}
 {meta: artist Hot Rize}
 {meta: writer Tim O'Brien}
+{meta: x_source manual}
+{meta: x_source_file nelliecane.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 As a [C]young man I went riding out on the western plain
@@ -11,7 +14,7 @@ For five years she had waited for him, just as long as a woman c[Am]an,
 As [G]long as a woman [C]can
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 I don't [F]know what changed my [C]mind
 'til then I [G]was the ramblin' [C]kind
 The kind of [F]love I can't ex[C]plain
@@ -27,7 +30,7 @@ It was then I realized that I would never [Am]know
 [G]I would never [C]go
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 I don't [F]know what changed my [C]mind
 'til then I [G]was the ramblin' [C]kind
 The kind of [F]love I can't ex[C]plain
@@ -40,10 +43,15 @@ I became a father to him and she became my [Am]all,
 [G]She became my [C]all
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 I don't [F]know what changed my [C]mind
 'til then I [G]was the ramblin' [C]kind
 The kind of [F]love I can't ex[C]plain
 That I [G]have for Nellie [C]Kane
 That I [G]have for Nellie [C]Kane
 {end_of_chorus}
+
+
+
+
+

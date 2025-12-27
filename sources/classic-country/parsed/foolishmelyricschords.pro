@@ -1,5 +1,8 @@
 {meta: title Foolish Me}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file foolishmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Foolish me [C]I gave my heart [F]away
@@ -24,3 +27,6 @@ Keep thrillin' me they fill me up so high
 {start_of_verse: Verse 4}
 [F]No matter [C]what you do [G7]I'll still be foolish [C]me
 {end_of_verse}
+
+
+

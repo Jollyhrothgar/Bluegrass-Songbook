@@ -1,5 +1,8 @@
 {meta: title A World Without Music}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file aworldwithoutmusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once my world was filled with [F]music sweet and [C]low
@@ -28,3 +31,6 @@
 [C]Can't you see how lonely the world would [F]be
 [C]If the whole world had [G7]no music like [C][F]me
 {end_of_verse}
+
+
+

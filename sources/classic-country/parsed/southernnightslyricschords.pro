@@ -1,6 +1,9 @@
 {meta: title Southern Nights}
 {meta: artist Glen Campbell}
 {meta: composer Allen Toussaint}
+{meta: x_source classic-country}
+{meta: x_source_file southernnightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Southern nights  have [A7]you ever felt a southern [D7]night
@@ -42,3 +45,8 @@
 [F]La da da da da da la da da da da [Em]da
 [G7]Aa da da da da da da da da da da
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Story}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file mystorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dearest [G]darling [C]dearest [G]darling
@@ -51,3 +54,10 @@ Then [C]she left me when [G]she was through
 What a [C]shame what greed will [G]do
 ([C]This ends this [G]story [C]this ends this [G]story)
 {end_of_verse}
+
+
+
+
+
+
+

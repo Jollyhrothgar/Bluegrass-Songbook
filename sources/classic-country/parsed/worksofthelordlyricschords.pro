@@ -1,6 +1,9 @@
 {meta: title Works Of The Lord}
 {meta: artist The Foggy River Boys}
 {meta: composer Danny Dill}
+{meta: x_source classic-country}
+{meta: x_source_file worksofthelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A friend of mine came up to me and he said if I could [F]see
@@ -36,3 +39,7 @@
 [F]Every time a robin flies or a newborn baby [C]cries
 [G7]Then I know I’ve seen the works of the [C]Lord
 {end_of_verse}
+
+
+
+

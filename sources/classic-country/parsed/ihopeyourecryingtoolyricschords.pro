@@ -1,6 +1,9 @@
 {meta: title I Hope You're Crying Too}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Cathy Annadale}
+{meta: x_source classic-country}
+{meta: x_source_file ihopeyourecryingtoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walk the lonely streets at night I always search for [C]you
@@ -22,3 +25,5 @@
 [C]The mem-or-ies they haunt me now of the love that we once knew
 [D7]The love is gone and I can't go on I hope you're crying [G]too
 {end_of_verse}
+
+

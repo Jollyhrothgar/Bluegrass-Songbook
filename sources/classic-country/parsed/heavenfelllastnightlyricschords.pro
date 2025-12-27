@@ -1,6 +1,9 @@
 {meta: title Heaven Fell Last Night}
 {meta: artist Jim Ed Brown}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file heavenfelllastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heaven [G7]fell last [C]night
@@ -34,3 +37,7 @@ And filled the world with [G7]peaceful [C]charm
 Heaven [G7]fell last [C]night
 And dropped an [F]angel [G7]in my [C]arms
 {end_of_verse}
+
+
+
+

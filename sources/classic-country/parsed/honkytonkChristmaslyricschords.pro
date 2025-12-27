@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Christmas}
 {meta: artist Mickey Gilley}
 {meta: composer Ralph James Murphy}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you left me in the spring the snow was [C]melting
@@ -34,3 +37,7 @@
 {start_of_verse: Verse 4}
 [D7]It's gonna be a honky tonk Christmas this [G]year
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Write It Down In Blue}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Teddy Gentry, Greg Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file writeitdowninbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everyone knows it see talks goin' [Bm]round
@@ -55,3 +58,10 @@
 [A7]Yeah that's the thing to do [C]if you can't say it's [Am]over
 [C]And you can't say [D7]we're through write it down in [G]blue
 {end_of_verse}
+
+
+
+
+
+
+

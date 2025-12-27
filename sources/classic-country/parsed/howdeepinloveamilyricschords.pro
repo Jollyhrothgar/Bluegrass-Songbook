@@ -1,6 +1,9 @@
 {meta: title How Deep In Love Am I}
 {meta: artist Johnny Lee}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file howdeepinloveamilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I say that I'll be all right [C]in a day or two
@@ -36,3 +39,7 @@ I'm [C]chest high in a sea of love and the [G7]waters won't go [C]down
 Deep enough to need a savior but [F]there ain't [C]one a[F]round
 It [C]won't be long before I'll be [G7]deep enough to [Am]drown
 {end_of_verse}
+
+
+
+

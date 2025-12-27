@@ -1,6 +1,9 @@
 {meta: title An Hour And A Six Pack}
 {meta: artist Cal Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file anhourandasixpacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just got home and found a [D7]note 
@@ -63,3 +66,12 @@ And settle back and go to [C]sleep
 And with all that we had going don't it hurt you baby [G]knowing
 My [D7]love is just an hour and a six-pack [G]deep
 {end_of_verse}
+
+
+
+
+
+
+
+
+

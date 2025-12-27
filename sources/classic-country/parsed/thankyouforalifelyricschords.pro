@@ -1,5 +1,8 @@
 {meta: title Thank You For a Life}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file thankyouforalifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Thank you for a life that I'd call [F]happy
@@ -35,3 +38,7 @@
 [C]When it comes to lovin' I've been [F]lucky
 [G7]Everything I am I owe to [C]you [G7]
 {end_of_verse}
+
+
+
+

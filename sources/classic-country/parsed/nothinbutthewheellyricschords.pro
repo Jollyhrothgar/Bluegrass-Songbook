@@ -1,6 +1,9 @@
 {meta: title Nothin' But The Wheel}
 {meta: artist Patty Loveless}
 {meta: composer John S. Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file nothinbutthewheellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I’m past the [G7]boulevards 
@@ -40,3 +43,7 @@ Is if [F]you don't want me [C]anymore
 {start_of_verse: Verse 5}
 [F]I'm holding on to [G7]nothin' but the [C]wheel
 {end_of_verse}
+
+
+
+

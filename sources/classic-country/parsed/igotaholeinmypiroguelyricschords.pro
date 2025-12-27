@@ -1,6 +1,9 @@
 {meta: title I Got A Hole In My Pirogue}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Horton and Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file igotaholeinmypiroguelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I went outta fishin' to [G7]make a little [C]mon
@@ -43,3 +46,8 @@
 [F]I'm up the river hung around the [C]bend
 [G7]I got a hole in my pirogue I just can't haul it [C]in
 {end_of_verse}
+
+
+
+
+

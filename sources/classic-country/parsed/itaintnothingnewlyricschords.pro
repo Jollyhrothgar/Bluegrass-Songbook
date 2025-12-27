@@ -1,6 +1,9 @@
 {meta: title It Ain't Nothing New}
 {meta: artist Randy Travis & Rhonda Vincent}
 {meta: composer Larry E. Cordle, Larry Shell, Betty Key}
+{meta: x_source classic-country}
+{meta: x_source_file itaintnothingnewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say that once the new wears off the [D7]test of love begins
@@ -37,3 +40,8 @@ Tag:
 {start_of_verse: Verse 5}
 [Am]Even though it [D7]ain't nothing [G]new 
 {end_of_verse}
+
+
+
+
+

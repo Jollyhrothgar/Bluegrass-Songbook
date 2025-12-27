@@ -1,6 +1,9 @@
 {meta: title A Ways To Go}
 {meta: artist Emmylou Harris}
 {meta: composer Lainie Marsh}
+{meta: x_source classic-country}
+{meta: x_source_file awaystogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear the clock a ticking [D7]see the sweat upon my brow
@@ -57,3 +60,10 @@ Keep me [C]in your [G]prayers tonight
 I [D7]know the [C]finish [G]line's in sight
 But I [D7]still [C]have a ways to [G]go
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Act Right}
 {meta: artist Carl Smith}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnaactrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna quit rambling [G7]gambling [C]staying out late at [F]night
@@ -32,3 +35,7 @@ But [F]honey you know I [C]still love you how [G7]come you wanna play so [C]roug
 [C]I'm gonna quit rambling [G7]gambling [C]staying out late at [F]night
 I'm gonna go [C]home where I [G7]belong I'm gonna act [C]right
 {end_of_verse}
+
+
+
+

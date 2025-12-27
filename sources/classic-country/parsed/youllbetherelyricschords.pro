@@ -1,6 +1,9 @@
 {meta: title You'll Be There}
 {meta: artist George Strait}
 {meta: composer Cory Mayo}
+{meta: x_source classic-country}
+{meta: x_source_file youllbetherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hope is an anchor and love is a ship 
@@ -50,3 +53,8 @@ Where the streets are gold cause you'll [C]be there oh [F]my my [G7]
 {start_of_verse: Verse 5}
 Cause [C]you'll be there oh [F]my my [G7]   [C]
 {end_of_verse}
+
+
+
+
+

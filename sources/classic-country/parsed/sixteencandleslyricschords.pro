@@ -1,5 +1,8 @@
 {meta: title Sixteen Candles}
 {meta: artist The Crest}
+{meta: x_source classic-country}
+{meta: x_source_file sixteencandleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]Happy birthday happy [G]birthday baby [C]oh I love you [D7]so
@@ -36,3 +39,8 @@
 [D7]Forever and ever for I love you [G]so
 [C]For I love you [G]so
 {end_of_verse}
+
+
+
+
+

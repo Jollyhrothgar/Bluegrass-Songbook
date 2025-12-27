@@ -1,5 +1,8 @@
 {meta: title Steppin' Out On You}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file steppinoutonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came by to say I'm [F]sorry one more [C]time
@@ -32,3 +35,7 @@ You're [C]accusin' me of [G7]steppin' out on [C]you
 {start_of_verse: Verse 4}
 You're accusin' me of [G7]steppin' out on [F]yo[C]u
 {end_of_verse}
+
+
+
+

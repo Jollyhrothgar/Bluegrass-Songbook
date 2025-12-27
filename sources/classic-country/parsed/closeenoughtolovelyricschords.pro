@@ -1,6 +1,9 @@
 {meta: title Close Enough To Love}
 {meta: artist Conway Twitty}
 {meta: composer Johnny Mandel and Paul Williams}
+{meta: x_source classic-country}
+{meta: x_source_file closeenoughtolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your eyes reflect the [Am]sadness
@@ -35,3 +38,7 @@ Oh that's [Am]close [F]enough to [G7]love for [C]me
 {start_of_verse: Verse 5}
 Oh you’re [Am]close [F]enough to [G7]love for [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Pray Every Day}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file prayeverydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh you must pray every day [C]pray every day
@@ -36,3 +39,7 @@ And [G]he'll only [D7]bring sorrow to [G]you
 You've got to [G]go all the way get down [C]on your knees and pray
 [G]Show Him [D7]all your [G]love
 {end_of_verse}
+
+
+
+

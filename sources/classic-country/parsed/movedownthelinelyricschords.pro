@@ -1,6 +1,9 @@
 {meta: title Move Down The Line}
 {meta: artist Johnny Horton}
 {meta: composer Billy Wallace}
+{meta: x_source classic-country}
+{meta: x_source_file movedownthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Move down the line now you can’t be true
@@ -36,3 +39,7 @@ You played a good hand [C7]you just got [F]beat
 I caught up with you I know your [C]side
 Now it’s all [G7]over move down the [C]line
 {end_of_verse}
+
+
+
+

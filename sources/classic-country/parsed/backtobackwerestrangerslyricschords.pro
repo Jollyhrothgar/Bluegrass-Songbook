@@ -1,6 +1,9 @@
 {meta: title Back To Back (We're Strangers)}
 {meta: artist Johnny Duncan}
 {meta: composer Marian Francis}
+{meta: x_source classic-country}
+{meta: x_source_file backtobackwerestrangerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Back to back we're [C]strangers turn [G7]around and let's be [C]friends
@@ -30,3 +33,7 @@ Back to back we're [C]strangers turn [G7]around and let's be [C]friends
 {start_of_verse: Verse 4}
 Back to [F]back we're [C]strangers turn [G7]around and let's be [C]friends
 {end_of_verse}
+
+
+
+

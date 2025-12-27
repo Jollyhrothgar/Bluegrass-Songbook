@@ -1,6 +1,9 @@
 {meta: title What Am I Waiting For}
 {meta: artist George Strait}
 {meta: composer Jim Lauderdale}
+{meta: x_source classic-country}
+{meta: x_source_file whatamiwaitingforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Its [G7]six minutes [F]until [C]eleven
@@ -50,3 +53,9 @@ What am I [Am]waitin' for
 [G7]What am I [Am]waitin' for [D7]
 [F]She'll never get here[G7]   [C]
 {end_of_verse}
+
+
+
+
+
+

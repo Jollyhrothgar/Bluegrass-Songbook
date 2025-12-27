@@ -1,6 +1,9 @@
 {meta: title All I Wanna Do In Life}
 {meta: artist Crystal Gayle}
 {meta: composer Allen Reynolds and Sandy Mason}
+{meta: x_source classic-country}
+{meta: x_source_file alliwannadoinlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've been right and [C]I've been [G]wrong
@@ -57,3 +60,10 @@ Somebody with [D7]all of my [G]might
 All I wanna [C]do in [G]life is to love 
 Somebody with [D7]all of my [G]might
 {end_of_verse}
+
+
+
+
+
+
+

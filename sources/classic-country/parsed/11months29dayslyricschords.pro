@@ -1,6 +1,9 @@
 {meta: title 11 Months 29 Days}
 {meta: artist Johnny Paycheck}
 {meta: composer Billy Sherrill and Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file 11months29dayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Busted in Austin walking around in a daze 
@@ -25,3 +28,6 @@ Busted in Austin walking around in a daze yes I was
 Now I'm [C]sitting in this slammmer looking out the these bars in a [G]haze
 But it'll [D7]all clear up in [C]11 months and 29 [G]days yeah Lord
 {end_of_verse}
+
+
+

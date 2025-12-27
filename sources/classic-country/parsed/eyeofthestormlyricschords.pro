@@ -1,6 +1,9 @@
 {meta: title Eye Of The Storm}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file eyeofthestormlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe you bought all the lines that she told you
@@ -45,3 +48,8 @@ Cause from [F]here to the end is what [C]matters my friend
 And [G7]you're right at the peak of your form
 Still in the eye of the [C]storm
 {end_of_verse}
+
+
+
+
+

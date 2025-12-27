@@ -1,6 +1,9 @@
 {meta: title Open Up Them Pearly Gates}
 {meta: artist The Seekers}
 {meta: composer Judith Mavis Edgeworth, Athol George Guy,}
+{meta: x_source classic-country}
+{meta: x_source_file openupthempearlygateslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Listen all of you people
@@ -80,3 +83,14 @@ Hallelujah-lujah
 [C]Then you know you're home at last
 [G]Open up them [D7]pearly gates for [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

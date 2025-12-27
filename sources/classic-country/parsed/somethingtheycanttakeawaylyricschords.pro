@@ -1,6 +1,9 @@
 {meta: title Something They Can't Take Away}
 {meta: artist Roy Orbison}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file somethingtheycanttakeawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]All too [Dm]soon we were [F]blown upon our [G7]separate ways [C]again
@@ -36,3 +39,7 @@ And that's [G7]something they can't take [C]away
 When your memory comes easy as [F]smiling
 And that's [G7]something they can't take [C]away
 {end_of_verse}
+
+
+
+

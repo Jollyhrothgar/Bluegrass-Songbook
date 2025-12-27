@@ -1,6 +1,9 @@
 {meta: title Jesus And The Atheist}
 {meta: artist Eddy Arnold}
 {meta: composer Billy Austine and Happy Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusandtheatheistlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One Saturday night in a barroom
@@ -78,3 +81,13 @@ Those words to His [C7]very last [F]day
 When Jesus appeared in a [C]barroom
 And [G7]told of God's wonderful [C]way
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

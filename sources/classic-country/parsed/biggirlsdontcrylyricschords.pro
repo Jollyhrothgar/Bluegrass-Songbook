@@ -1,6 +1,9 @@
 {meta: title Big Girls Don't Cry}
 {meta: artist Lynn Anderson}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file biggirlsdontcrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh [C]mama mama who told you that lie
@@ -35,3 +38,8 @@ Oh [C]mama mama who told you that lie
 Oh [C]mama mama who told you that lie
 [D7]Whoever told you that big girls don't [C]c-r-[D7]---[G]y
 {end_of_verse}
+
+
+
+
+

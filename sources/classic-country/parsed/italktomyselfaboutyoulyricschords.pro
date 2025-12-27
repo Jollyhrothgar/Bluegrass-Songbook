@@ -1,6 +1,9 @@
 {meta: title I Talk To Myself About You}
 {meta: artist Eddy Arnold}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file italktomyselfaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I talk to myself about you [C]dear
@@ -36,3 +39,7 @@
 [G]I know in my heart that I'm wasting my [C]time
 [G]When I talk [D7]to myself about [G]you
 {end_of_verse}
+
+
+
+

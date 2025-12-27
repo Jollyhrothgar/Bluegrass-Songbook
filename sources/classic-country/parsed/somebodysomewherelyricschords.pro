@@ -1,5 +1,8 @@
 {meta: title Somebody Somewhere}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysomewherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Somebody somewhere don't know what he's missing [G]tonight
@@ -32,3 +35,8 @@ For [C]love 'em or leave 'em how I need someone to hold [G]tight
 {start_of_verse: Verse 6}
 Repeat last verse
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Blues Ain't Nothing}
 {meta: artist Ferlin Husky}
 {meta: composer Hank Mills, Walter Haynes, Shorty Lavender}
+{meta: x_source classic-country}
+{meta: x_source_file bluesaintnothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you wake up in the morning and you're [C]sick from head to [G]toe
@@ -22,3 +25,5 @@ You gonna hear everybody calling out her name
 [G7]Go find yourself a [C]river jump in and [G]drown
 Cause the blues ain't nothing but a [D7]woman letting a good man [G]down
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title My Lord Has Called Me}
 {meta: artist George Jones}
 {meta: composer George Jones and Lester Weytek}
+{meta: x_source classic-country}
+{meta: x_source_file mylordhascalledmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My Lord has [G7]called me [C]today[G7]
@@ -36,3 +39,7 @@ To go the straight and narrow [C]way
 So for my Lord I'll surely [F]live
 Yes my [C]Lord has [G7]called me [C]today
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Look Of Lovin' In His Eyes}
 {meta: artist Jean Shepard}
 {meta: composer Jan Crutchfield and Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file lookoflovininhiseyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes he finds me standin' in [Dm]front of my [G7]mirror
@@ -33,3 +36,7 @@ When I [C]see that look of [G7]lovin' in his [C]eyes
 {start_of_verse: Verse 5}
 [Dm]When I [C]see that look of [G7]lovin' in his [C]eyes
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Angel In Disguise}
 {meta: artist Earl Thomas Conley}
 {meta: composer Earl Thomas Conley and Randy Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file angelindisguiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You were just another [F]pretty face in the [Em]crowd
@@ -41,3 +44,8 @@ Oh [G]angel[Em]   [D7]in dis[G]guise[Em]
 Oh [G]angel[Em]   [D7]in dis[G]guise[Em]
 [D7]You're just an [G]angel[Em]   [D7]in dis[G]guise
 {end_of_verse}
+
+
+
+
+

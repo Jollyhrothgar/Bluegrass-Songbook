@@ -1,6 +1,9 @@
 {meta: title Don't You Be Fooling With A Fool}
 {meta: artist Mickey Gilley}
 {meta: composer Lewis Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file dontyoubefoolingwithafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The band is softly playing
@@ -45,3 +48,7 @@ The way I love [Em]you [A7]
 {start_of_verse: Verse 5}
 [Am]Don't you be [D7]fooling with a [C]fool
 {end_of_verse}
+
+
+
+

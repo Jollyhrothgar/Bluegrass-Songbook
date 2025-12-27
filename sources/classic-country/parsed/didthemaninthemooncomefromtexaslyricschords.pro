@@ -1,5 +1,8 @@
 {meta: title Did The Man In The Moon Come From Texas}
 {meta: artist Ole Rasmussen}
+{meta: x_source classic-country}
+{meta: x_source_file didthemaninthemooncomefromtexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did the man in the [D7]moon come from [G]Texas
@@ -32,3 +35,6 @@ Who climbed the ladder [G7]made of stars to [C]see
 Did the man in the [D7]moon come from [G]Texas
 That is [C]where my [D7]heart will always [G]be
 {end_of_verse}
+
+
+

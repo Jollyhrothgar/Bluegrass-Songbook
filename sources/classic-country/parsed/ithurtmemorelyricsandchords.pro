@@ -1,5 +1,8 @@
 {meta: title It Hurt Me More}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file ithurtmemorelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I came back to you believing this time we'd work things [D7]out
@@ -28,3 +31,6 @@
 [C]For twice I put my faith in you and twice you let me down
 [D7]But it hurt me more the second time [G]around
 {end_of_verse}
+
+
+

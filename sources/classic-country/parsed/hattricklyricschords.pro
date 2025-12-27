@@ -1,6 +1,9 @@
 {meta: title Hat Trick}
 {meta: artist Tracy Byrd}
 {meta: composer Glenn Sutton and Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file hattricklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You packed up [G7]all my [C]clothes [F]and put 'em by the [C]door
@@ -33,3 +36,7 @@ But [F]I can do a [C]hat trick I'll put it [G7]on and disa[C]ppear
 {start_of_verse: Verse 5}
 So [F]I'll just do my [C]hat trick I'll put it [G7]on and disa[C]ppear
 {end_of_verse}
+
+
+
+

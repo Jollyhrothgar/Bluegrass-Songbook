@@ -1,6 +1,9 @@
 {meta: title That Over Thirty Look}
 {meta: artist Faron Young}
 {meta: composer Billy Arr and Rick Klang}
+{meta: x_source classic-country}
+{meta: x_source_file thatoverthirtylooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That over thirty look sure looks good on [F]you
@@ -28,3 +31,5 @@ We can’t turn that old clock [F]back
 Cause that over thirty [G7]look
 Looks good on [C]you
 {end_of_verse}
+
+

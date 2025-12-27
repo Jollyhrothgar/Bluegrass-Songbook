@@ -1,6 +1,9 @@
 {meta: title Your Love Amazes Me}
 {meta: artist Tanya Tucker}
 {meta: composer Amanda Hunt-Taylor and Charles Harmon Jones}
+{meta: x_source classic-country}
+{meta: x_source_file yourloveamazesmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen the seven wonders of the world
@@ -40,3 +43,7 @@ I've prayed for miracles that never came
 [A]Forever faithful[G7]ly
 Your love amazes [C]me
 {end_of_verse}
+
+
+
+

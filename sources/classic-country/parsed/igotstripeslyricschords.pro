@@ -1,6 +1,9 @@
 {meta: title I Got Stripes}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash and Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file igotstripeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On A Monday I Was arrested (Uh [D7]Huh)
@@ -36,3 +39,7 @@
 [Am]I Got Stripes  Stripes Around My [D7]Shoulders
 [G]And Them Chains   Them Chains They're About To Drag Me Down
 {end_of_verse}
+
+
+
+

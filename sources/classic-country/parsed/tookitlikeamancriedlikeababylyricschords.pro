@@ -1,6 +1,9 @@
 {meta: title Took It Like A Man Cried Like A Baby}
 {meta: artist Vern Gosdin}
 {meta: composer Rory Bourke, Tommy Rocco, Charlie Black}
+{meta: x_source classic-country}
+{meta: x_source_file tookitlikeamancriedlikeababylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The woman was kind to re[G7]veal her deception
@@ -43,3 +46,8 @@ While she was here I stood [C]tall and strong
 Now my knees are weak and my [F]tears are [C]rolli[G7]ng
 I’m hurtin’ bad cause now she’s [C]gone
 {end_of_verse}
+
+
+
+
+

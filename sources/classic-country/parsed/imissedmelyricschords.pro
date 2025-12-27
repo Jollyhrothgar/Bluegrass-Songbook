@@ -1,6 +1,9 @@
 {meta: title I Missed Me}
 {meta: artist Jim Reeves}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file imissedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night was the worst night of my life no [D7]doubt
@@ -29,3 +32,6 @@ Did they miss me like I [G]missed me at your [D7]house last [G]night
 [G]Were you happy with new arms wrapped around you so [C]tight
 I missed me how I [G]missed me at your [D7]house last [G]night
 {end_of_verse}
+
+
+

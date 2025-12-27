@@ -1,6 +1,9 @@
 {meta: title House That Love Built}
 {meta: artist Carl Smith}
 {meta: composer Vic McAlpin and Nellie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file housethatlovebuiltlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is the boy that lived in the house that [G7]love built
@@ -29,3 +32,6 @@ And this is the heart that got broke when it all comes tumbling [C]down
 [C]If you'll start all over and say that you're still [G7]mine
 I'll build from love that's strong enough to stand the test of [C]time
 {end_of_verse}
+
+
+

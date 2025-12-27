@@ -1,6 +1,9 @@
 {meta: title I Won’t Take Less Than Your Love}
 {meta: artist Tanya Tucker}
 {meta: composer P. Overstreet and D. Schitz}
+{meta: x_source classic-country}
+{meta: x_source_file iwonttakelessthanyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How much do I owe you said the husband to the wife
@@ -52,3 +55,11 @@ Shall I build a temple shall I make a sacrifice
 [Em]All the treasures of the world could never [Am]be enough
 [F]And I won't take [G7]less than your [C]love
 {end_of_verse}
+
+
+
+
+
+
+
+

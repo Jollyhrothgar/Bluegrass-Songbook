@@ -1,6 +1,9 @@
 {meta: title Fool}
 {meta: artist Roger Miller}
 {meta: composer Lee Hazlewood and Naomi Ford}
+{meta: x_source classic-country}
+{meta: x_source_file foollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gather round me buddies
@@ -28,3 +31,6 @@ So [F]drink to a fool a [C]crazy fool
 Who told his [G7]baby good[C]bye
 Who told his [G7]baby good[F]bye[C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don’t Believe My Heart Can Stand Another You}
 {meta: artist Tanya Tucker}
 {meta: composer Billy Ray Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file dontbelievemyheartcanstandanotheryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't believe my heart can stand another you
@@ -43,3 +46,8 @@ I don't believe my heart can [G7]stand another [C]you
 {start_of_verse: Verse 4}
 I don't believe my heart can [G7]stand another [C]you
 {end_of_verse}
+
+
+
+
+

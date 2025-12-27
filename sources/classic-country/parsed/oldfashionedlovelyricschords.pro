@@ -1,6 +1,9 @@
 {meta: title Old Fashioned Love}
 {meta: artist John Conlee}
 {meta: composer Jerry Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file oldfashionedlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is staying in love really as hard as it [G7]seems
@@ -34,3 +37,7 @@ They [F]said that they would need the [C]stars above
 {start_of_verse: Verse 5}
 [Dm]Whatever happened to [G7]old fashioned [C]love
 {end_of_verse}
+
+
+
+

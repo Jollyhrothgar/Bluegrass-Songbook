@@ -1,6 +1,9 @@
 {meta: title My Heart Is An Open Book}
 {meta: artist Jimmy Dean}
 {meta: composer Mack Gordon}
+{meta: x_source classic-country}
+{meta: x_source_file myheartisanopenbooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Don't believe all those lies
@@ -35,3 +38,9 @@ Darling just believe your eyes
 {start_of_verse: Verse 5}
 [G7]I  love nobody but [C]you   [G7]nobody but [C]you
 {end_of_verse}
+
+
+
+
+
+

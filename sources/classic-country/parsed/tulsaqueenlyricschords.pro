@@ -1,6 +1,9 @@
 {meta: title Tulsa Queen}
 {meta: artist Emmylou Harris}
 {meta: composer Rodney Crowell and Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file tulsaqueenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard the train in the Tulsa [C]night
@@ -27,3 +30,6 @@ Lately I speak your name too [C]loud
 Each time it comes up in a [G]crowd
 And I [C]know it when I do the Tulsa Queen and yo[G]u  are [F]gone
 {end_of_verse}
+
+
+

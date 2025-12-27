@@ -1,6 +1,9 @@
 {meta: title Even Though Lyrics chords}
 {meta: artist Webb Pierce}
 {meta: composer Curt Peeples and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file eventhoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Even though you took the sunshine out of [F]my heaven
@@ -29,3 +32,6 @@ Even though you took the twinkle out of [C]my eyes
 I will always be in love with you [G7]my darling
 Even [C]though I [F]sit and [C]wonder if [G7]I'm [C]wise
 {end_of_verse}
+
+
+

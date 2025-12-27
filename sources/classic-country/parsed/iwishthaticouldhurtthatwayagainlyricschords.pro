@@ -1,6 +1,9 @@
 {meta: title I Wish That I Could Hurt That Way Again}
 {meta: artist Kenny Rogers}
 {meta: composer Curly Putman, Don Cook, Rafe VanHoy}
+{meta: x_source classic-country}
+{meta: x_source_file iwishthaticouldhurtthatwayagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I wish that I could [G7]hurt that way [C]again
@@ -32,3 +35,6 @@ At least I had you [G7]every now and [C]then
 And as [A#7]long as there's [Am]tomorrow there's no [G7]end
 Oh I [Dm]wish that I could [G7]hurt that way [C]again
 {end_of_verse}
+
+
+

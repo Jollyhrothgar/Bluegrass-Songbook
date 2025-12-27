@@ -1,6 +1,9 @@
 {meta: title It Was Almost Like A Song}
 {meta: artist Ronnie Milsap}
 {meta: composer Hal David and Archie Jordan}
+{meta: x_source classic-country}
+{meta: x_source_file itwasalmostlikeasonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once in every [F]life  [Fm]someone comes [C]along
@@ -24,3 +27,6 @@
 [Am]And it's almost like a [F]song  but [G7]it's much to sad to [C]write
 [G7]It's much to sad to [C]write
 {end_of_verse}
+
+
+

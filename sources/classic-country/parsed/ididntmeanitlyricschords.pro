@@ -1,6 +1,9 @@
 {meta: title I Didn't Mean It}
 {meta: artist Norma Jean}
 {meta: composer Marvin Rainwater}
+{meta: x_source classic-country}
+{meta: x_source_file ididntmeanitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I didn't mean to be untrue didn't mean to cheat on you
@@ -29,3 +32,6 @@ Oh my darling I know I've done you [D7]wrong
 I didn't [C]mean it I didn't [G]mean it
 Even though you've been [D7]gone so [G]long
 {end_of_verse}
+
+
+

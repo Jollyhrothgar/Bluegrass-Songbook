@@ -1,6 +1,9 @@
 {meta: title She Needs Me}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery and Jodie Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file sheneedsmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No I don't know the girl at the bar in the short [F]red [C]dress
@@ -33,3 +36,7 @@ And tonight I [F]could use [C]some [G7]love [C]myself
 {start_of_verse: Verse 4}
 Yes tonight I [F]could use [C]some [G7]love [C]myself
 {end_of_verse}
+
+
+
+

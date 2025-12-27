@@ -1,6 +1,9 @@
 {meta: title White Silver Sands}
 {meta: artist Sonny James}
 {meta: composer Charles G. Matthews and Gladys Reinhardt}
+{meta: x_source classic-country}
+{meta: x_source_file whitesilversandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where the deep  blue pearly [F]waters  
@@ -47,3 +50,8 @@ Wash [C]upon  white silver [G7]sands
 Where on the brink  of love I kissed [C]her  
 And [G7]obeyed my heart's [C]command
 {end_of_verse}
+
+
+
+
+

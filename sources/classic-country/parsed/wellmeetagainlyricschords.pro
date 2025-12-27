@@ -1,6 +1,9 @@
 {meta: title We’ll Meet Again}
 {meta: artist Anne Murray}
 {meta: composer Sammy Fain and Irving Kahal}
+{meta: x_source classic-country}
+{meta: x_source_file wellmeetagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We'll meet [E7]again don't know [A7]where don't know when
@@ -36,3 +39,8 @@ But [D7]I know we'll meet [G7]again some sunny [C]day
 {start_of_verse: Verse 4}
 [D7]I know we'll meet [G7]again some sunny [C]day
 {end_of_verse}
+
+
+
+
+

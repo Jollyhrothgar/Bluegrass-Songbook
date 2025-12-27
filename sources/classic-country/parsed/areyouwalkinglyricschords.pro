@@ -1,5 +1,8 @@
 {meta: title Are You Walking}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file areyouwalkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On your journey to the grave
@@ -48,3 +51,9 @@ Are you walking and [G7]a-talking with the [C]Lord
 {start_of_verse: Verse 7}
 repeat chorus
 {end_of_verse}
+
+
+
+
+
+

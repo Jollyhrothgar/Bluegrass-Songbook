@@ -1,6 +1,9 @@
 {meta: title That's What Breaking Hearts Do}
 {meta: artist George Strait}
 {meta: composer George Strait and Bubba Strait}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatbreakingheartsdolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]You try and try to [G]erase 
@@ -73,3 +76,12 @@ That's what [D7]breaking hearts [G]do
 Make you go [G]insane
 That's what [D7]breaking hearts [G]do
 {end_of_verse}
+
+
+
+
+
+
+
+
+

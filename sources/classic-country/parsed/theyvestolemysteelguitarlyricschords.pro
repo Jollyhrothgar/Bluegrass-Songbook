@@ -1,6 +1,9 @@
 {meta: title They've Stole My Steel Guitar}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file theyvestolemysteelguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I'm a guitar picker [G7]musician is my [C]trade
@@ -43,3 +46,8 @@ It's [F]just an old used Sho Bud [C]for which I've saved and scraped
 [C]I loved it like a woman [F]and I cherished every war
 And I'd have killed a man whose [C]sticky hands [G7]clamped on my steel [C]guitar
 {end_of_verse}
+
+
+
+
+

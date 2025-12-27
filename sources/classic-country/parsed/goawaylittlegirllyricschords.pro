@@ -1,6 +1,9 @@
 {meta: title Go Away Little Girl}
 {meta: artist Leroy Van Dyke}
 {meta: composer Carole King and Gerry Goffin}
+{meta: x_source classic-country}
+{meta: x_source_file goawaylittlegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Go away little girl
@@ -41,3 +44,9 @@ So [Am]go [F]away little girl
 [Dm]Call it a [Em]day little girl
 [A7]Oh please go [Dm]away little girl [G7]before I beg you to [C]stay
 {end_of_verse}
+
+
+
+
+
+

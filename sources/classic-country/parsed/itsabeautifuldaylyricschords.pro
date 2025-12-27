@@ -1,6 +1,9 @@
 {meta: title It's A Beautiful Day}
 {meta: artist Wynn Stewart}
 {meta: composer Tracy Pandervis}
+{meta: x_source classic-country}
+{meta: x_source_file itsabeautifuldaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a beautiful day even though [C7]it's [F]raining
@@ -23,3 +26,6 @@ Repeat
 {start_of_verse: Verse 4}
 [F]Last night you came [C]home and I'm not [G7]alone and it's a beautiful [C][F]d--ay
 {end_of_verse}
+
+
+

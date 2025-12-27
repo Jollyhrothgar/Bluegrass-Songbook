@@ -1,6 +1,9 @@
 {meta: title Waiting On The Light To Change}
 {meta: artist Randy Travis}
 {meta: composer Richard C. Leigh and Gary Tolbert Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file waitingonthelighttochangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This old road has [F]taken it's toll
@@ -51,3 +54,9 @@ I'm just [Dm]waitin' on the [G7]light to [C]change
 [D7]And I'm [G7]ready to roll I'm [C]waitin'
 I'm [Dm]waitin' on the [G7]light to [C]change
 {end_of_verse}
+
+
+
+
+
+

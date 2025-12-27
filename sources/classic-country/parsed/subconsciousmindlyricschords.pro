@@ -1,5 +1,8 @@
 {meta: title Subconscious Mind}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file subconsciousmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought last night that [D7]I saw [G]someone
@@ -28,3 +31,6 @@ Can come back and knock on your [C]door
 Before last night I thought I had [G]forgotten
 But [D7]today I’m not so [G]sure
 {end_of_verse}
+
+
+

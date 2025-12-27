@@ -1,6 +1,9 @@
 {meta: title Can You Build Your House (On Another Man’s Grave)}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Joyce Allsup}
+{meta: x_source classic-country}
+{meta: x_source_file canyoubuildyourhouseonanothermansgravelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know you can take her if you want [C]her
@@ -29,3 +32,6 @@
 [G]Your victory maybe sweet for the [C]moment
 [G]Can you build your house on [D7]another man's [G]grave
 {end_of_verse}
+
+
+

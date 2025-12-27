@@ -1,6 +1,9 @@
 {meta: title We Couldn't Tell A Child}
 {meta: artist Roy Drusky}
 {meta: composer Ralph Davis and Pete Drake}
+{meta: x_source classic-country}
+{meta: x_source_file wecouldnttellachildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We weren't [G7]afraid to face the world 
@@ -34,3 +37,7 @@ But we [F]couldn't tell a [C]child
 We weren't [G7]afraid to face the world 
 But we [F]couldn't tell a [C]child
 {end_of_verse}
+
+
+
+

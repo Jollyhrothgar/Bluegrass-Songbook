@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Miss Her}
 {meta: artist Brad Paisley}
 {meta: composer Frank Rogers and Brad Paisley}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnamissherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Well I [C]love her [Em]    [F]but I love to fish
@@ -46,3 +49,8 @@ Oh lookie [G7]there  another [C]bite
 Yeah I'm gonna [F]miss her  
 Oh lookie [G7]here I’ve got a [C]bite
 {end_of_verse}
+
+
+
+
+

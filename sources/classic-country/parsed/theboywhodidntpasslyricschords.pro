@@ -1,5 +1,8 @@
 {meta: title The Boy Who Didn't Pass}
 {meta: artist Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file theboywhodidntpasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A sad faced little fellow is [F]alone and deep in disgrace
@@ -19,3 +22,5 @@ For they left him with the [C]duller and [G7]gone ahead a half a [C]year
 He sipped a cup of sorrow he [F]drained the bitter glass
 His heart is fairly [C]breaking [G7]he's the boy that didn't [C]pass
 {end_of_verse}
+
+

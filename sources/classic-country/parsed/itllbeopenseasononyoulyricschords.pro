@@ -1,6 +1,9 @@
 {meta: title It'll Be Open Season On You}
 {meta: artist Loretta Lynn}
 {meta: composer Charles William Aldridge}
+{meta: x_source classic-country}
+{meta: x_source_file itllbeopenseasononyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I caught you chasin' my man last night
@@ -43,3 +46,7 @@ For [G]it'll be open [D7]season on [G]you
 {start_of_verse: Verse 4}
 Yeah it'll be open [D7]season on [G]you
 {end_of_verse}
+
+
+
+

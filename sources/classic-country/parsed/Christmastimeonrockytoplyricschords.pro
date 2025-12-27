@@ -1,6 +1,9 @@
 {meta: title Christmas Time On Rocky Top}
 {meta: artist The Osborne Brothers}
 {meta: composer Ronny Scaife and Scott Rouse}
+{meta: x_source classic-country}
+{meta: x_source_file Christmastimeonrockytoplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When it's Christmas time way [C]down on [G]Rocky Top
@@ -59,3 +62,11 @@ And it’s [G]Christ[D7]mas [G]time [D7]on [G]Rocky Top
 There’s [Em]magic everywhere when that [A7]football’s in the air
 And it’s [G]Christ[D7]mas [G]time [D7]on [G]Rocky Top
 {end_of_verse}
+
+
+
+
+
+
+
+

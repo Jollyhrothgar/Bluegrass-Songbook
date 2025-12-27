@@ -1,6 +1,9 @@
 {meta: title If You're Looking For A Fool}
 {meta: artist Tommy Overstreet}
 {meta: composer Cliff Thomas, Ed Thomas, Robert McRee}
+{meta: x_source classic-country}
+{meta: x_source_file ifyourelookingforafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're [G]looking for a [D7]fool here I [Em]am here I [G]am
@@ -36,3 +39,7 @@ If you're [G]looking for a [D7]fool here I [Em]am here I [G]am
 [C]If you're [G]looking for a [D7]fool here I [Em]am here I [G]am
 [C]If you're [G]looking for a [D7]fool here I [Em]am here I [G]am
 {end_of_verse}
+
+
+
+

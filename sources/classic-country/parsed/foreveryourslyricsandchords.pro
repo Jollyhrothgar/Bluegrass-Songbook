@@ -1,6 +1,9 @@
 {meta: title Forever Yours}
 {meta: artist Dottie West}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file foreveryourslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Forever [F]y-ours [G7]I'll always [C]be 
@@ -22,3 +25,5 @@ I love you with [F]all my heart  [G7]say you love me [C]too
 I will stay [F]beside you  [G7]and I will guide [C]you 
 Forever [F]y-ours  [G7]please say that you're [C]mine
 {end_of_verse}
+
+

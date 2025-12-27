@@ -1,6 +1,9 @@
 {meta: title Behind This Last Goodbye}
 {meta: artist Lorrie Morgan}
 {meta: composer Gerald Smith and Charles Harter}
+{meta: x_source classic-country}
+{meta: x_source_file behindthislastgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]With a gentle hand he sweeps a strand of [D7]hair 
@@ -40,3 +43,7 @@ Back from my [C]eyes and sees me [G]cry
 And with a tenderness he'll press his lips to [D7]mine 
 And against my [C]will he says good[G]bye
 {end_of_verse}
+
+
+
+

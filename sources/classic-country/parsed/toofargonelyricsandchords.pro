@@ -1,6 +1,9 @@
 {meta: title Too Far Gone}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file toofargonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can tell that [D7]somewhere there's [G]someone you've [E7]loved more than [A7]me
@@ -27,3 +30,6 @@ But I'm [C]too [E7]far [A7]gone  [D7]too far [G]gone
 I [C]guess I've loved you too [D7]much for too long 
 And [C]I'm too [G7]far [C]gone 
 {end_of_verse}
+
+
+

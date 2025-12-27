@@ -1,6 +1,9 @@
 {meta: title The Missouri Waltz}
 {meta: artist Eddy Arnold}
 {meta: composer J.R.Shannon and John V. Eppel}
+{meta: x_source classic-country}
+{meta: x_source_file themissouriwaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hush a bye my [G7]baby slumber [C]time is coming soon
@@ -29,3 +32,6 @@ When the stars were [G7]blinking and the [C]moon was climbing high
 And I [F]hear mommy glow as in [C]days long ago
 Singing [D7]hush  [G7]a   [C]bye
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Good Leavin' Alone}
 {meta: artist Hank Williams Jr.}
 {meta: composer Ronnie Self}
+{meta: x_source classic-country}
+{meta: x_source_file goodleavinalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna give her a good a leavin' [G7]alone
@@ -45,3 +48,9 @@ Well [G7]I'm a gonna give her a good leavin' [C]alone
 {start_of_verse: Verse 5}
 Yeah [G7]I'm a gonna give her a good leavin' [C]alone
 {end_of_verse}
+
+
+
+
+
+

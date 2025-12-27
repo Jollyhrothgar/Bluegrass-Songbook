@@ -1,6 +1,9 @@
 {meta: title Heartbreak Hurricane}
 {meta: artist Ricky Skaggs}
 {meta: composer Jim Rushing and Larry Cordle}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakhurricanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A mighty clap of thunder
@@ -43,3 +46,8 @@ I know her name spells trouble
 [C]Despite the devastation sweet [G]memories [Em]remain
 [A7]In the wake of a [D7]heartbreak [G]hurricane
 {end_of_verse}
+
+
+
+
+

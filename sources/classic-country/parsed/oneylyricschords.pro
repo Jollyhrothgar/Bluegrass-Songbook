@@ -1,6 +1,9 @@
 {meta: title Oney}
 {meta: artist Johnny Cash}
 {meta: composer Jerry Chestnut}
+{meta: x_source classic-country}
+{meta: x_source_file oneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 spoken:
@@ -71,3 +74,11 @@ Hmmmm  what time is it
 Four thirty   hey Oney 
 Oney ha ha ha ha
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Last Night I Laid Your Memory To Rest}
 {meta: artist John Anderson}
 {meta: composer Frankia Treat and Donna Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file lastnightilaidyourmemorytorestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been years [G7]since you said [C]goodbye
@@ -33,3 +36,7 @@ Last [Am]night I laid your [G7]memory to [F]rest [C]
 {start_of_verse: Verse 4}
 Last [Am]night I laid your [G7]memory to [F]res[C]t
 {end_of_verse}
+
+
+
+

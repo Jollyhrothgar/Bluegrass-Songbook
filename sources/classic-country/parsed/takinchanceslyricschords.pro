@@ -1,6 +1,9 @@
 {meta: title Takin' Chances}
 {meta: artist Porter Wagoner}
 {meta: composer Woody Hill, Ina Hill, Kenny Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file takinchanceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Takin' chances must be your trade 
@@ -36,3 +39,7 @@ Cause you're the best you're tailor [D7]made
 I thought you'd [G]change but it's no [C]use 
 So [G]I'll take my [D7]chance and turn you [G]loose
 {end_of_verse}
+
+
+
+

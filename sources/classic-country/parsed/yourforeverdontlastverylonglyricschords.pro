@@ -1,6 +1,9 @@
 {meta: title Your Forever Don't Last Very Long}
 {meta: artist Jean Shepard}
 {meta: composer Scott Turner, Steve Stone, Wes Buchanan}
+{meta: x_source classic-country}
+{meta: x_source_file yourforeverdontlastverylonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each time you say you'll love me for[F]ever
@@ -29,3 +32,6 @@ So [A7]where do the others be[D7]long
 [C]So this time let's [C7]use my for[F]ever
 Cause your [C]forever's [G7]don't last very [F]lon[C]g
 {end_of_verse}
+
+
+

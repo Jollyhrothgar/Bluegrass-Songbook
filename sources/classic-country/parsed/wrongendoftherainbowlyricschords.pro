@@ -1,6 +1,9 @@
 {meta: title Wrong End Of The Rainbow}
 {meta: artist Don Williams}
 {meta: composer Richard C. Leigh and Milton Blackford}
+{meta: x_source classic-country}
+{meta: x_source_file wrongendoftherainbowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know this feelin' from [G7]somewhere 
@@ -35,3 +38,7 @@ When I was [Am]losin' [Em]all the [Dm]time [G7]
 [F]So here I am [Em]heartache  [Am]my only friend 
 [F]Wrong end of the [G7]rainbow [C]again
 {end_of_verse}
+
+
+
+

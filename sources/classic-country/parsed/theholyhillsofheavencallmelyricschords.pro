@@ -1,6 +1,9 @@
 {meta: title The Holy Hills Of Heaven Call Me}
 {meta: artist Johnny Mathis}
 {meta: composer Joyce Reba (Dottie) Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file theholyhillsofheavencallmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The holy hills of Heaven [D7]call [G]me
@@ -38,3 +41,7 @@
 [G7]And I'll [C]take my fl-ight like a mighty [G]eagle
 [C]When the [G]hills of [D7]h-ome start calling [G]me
 {end_of_verse}
+
+
+
+

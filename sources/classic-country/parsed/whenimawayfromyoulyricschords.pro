@@ -1,6 +1,9 @@
 {meta: title When I'm Away From You}
 {meta: artist The Bellamy Brothers}
 {meta: composer Francis John Miller}
+{meta: x_source classic-country}
+{meta: x_source_file whenimawayfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I'm away from you well I [C]can't stay still
@@ -85,3 +88,14 @@ The [G]mood don't come the words don't rhyme
 When I'm [C]away from you I can't let go
 And you [Em]know oh you [D7]know
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

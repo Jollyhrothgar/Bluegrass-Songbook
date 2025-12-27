@@ -1,6 +1,9 @@
 {meta: title Mighty Day}
 {meta: artist Carl Smith}
 {meta: composer Johnny Russell}
+{meta: x_source classic-country}
+{meta: x_source_file mightydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you left town and the [F]sun went down
@@ -51,3 +54,9 @@ That's [F]when the clouds [G7]will all roll [C]away
 {start_of_verse: Verse 5}
 That's [F]when the clouds [G7]will all roll [C]away
 {end_of_verse}
+
+
+
+
+
+

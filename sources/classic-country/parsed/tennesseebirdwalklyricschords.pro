@@ -1,6 +1,9 @@
 {meta: title Tennessee Bird Walk}
 {meta: artist Buck Owens}
 {meta: composer Jack Blanchard}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseebirdwalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take away the trees and the birds
@@ -93,3 +96,21 @@ In their dirty underwear
 {start_of_verse: Verse 19}
 [D7]Tennessee Bird [G]Walk Tennessee [D7]Bird [G]Walk
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

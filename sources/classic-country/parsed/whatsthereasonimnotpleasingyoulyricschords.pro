@@ -1,6 +1,9 @@
 {meta: title What's The Reason I'm Not Pleasing You}
 {meta: artist Fats Domino}
 {meta: composer Coy Poe, Earl Hatch, Jimmie Grier, Pinky Tomlin}
+{meta: x_source classic-country}
+{meta: x_source_file whatsthereasonimnotpleasingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Why don't [G]we get along
@@ -30,3 +33,6 @@ Tell me [G]what's the reason
 I'm [D7]not pleasing [G]you
 Repeat 
 {end_of_verse}
+
+
+

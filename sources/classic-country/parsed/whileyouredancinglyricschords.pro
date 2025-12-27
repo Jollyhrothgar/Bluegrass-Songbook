@@ -1,6 +1,9 @@
 {meta: title While You're Dancing}
 {meta: artist Marty Robbins}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file whileyouredancinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While you're dancing I'll just sit here at this lonely [G7]table
@@ -33,3 +36,6 @@ If I had [F]walked out long ago how much less would I have cried
 Oh how [G7]many times have I cried while you're [C]dancing
 Oh how [G7]many times have I cried while you're [C]dancing
 {end_of_verse}
+
+
+

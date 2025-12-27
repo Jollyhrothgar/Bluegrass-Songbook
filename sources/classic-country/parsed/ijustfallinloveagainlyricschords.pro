@@ -1,6 +1,9 @@
 {meta: title I Just Fall In Love Again}
 {meta: artist Anne Murray}
 {meta: composer Steve Dorff, Larry Herbstritt, Harry Lloyd, Gloria Skelerov}
+{meta: x_source classic-country}
+{meta: x_source_file ijustfallinloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dreaming I must be [D7]dreaming 
@@ -22,3 +25,5 @@ The [F]way I hold you and the night just seems to [C]fly
 Easy  for you to take me to a [D7]star 
 Heaven [F]is that moment [D7]when I look [F]into your [G7]eyes 
 {end_of_verse}
+
+

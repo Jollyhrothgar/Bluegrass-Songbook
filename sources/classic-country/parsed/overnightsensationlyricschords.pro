@@ -1,6 +1,9 @@
 {meta: title Overnight Sensation}
 {meta: artist Mickey Gilley}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file overnightsensationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen the way men turn their heads  [F]every time that she walks by
@@ -29,3 +32,6 @@ She's [G7]all you've ever wanted [F]ask any man she [C]knows
 And it's [F]just enough of heaven to [C]make you want forever
 And [G7]she'll only stay and love you [F]till the morning takes her [C]home
 {end_of_verse}
+
+
+

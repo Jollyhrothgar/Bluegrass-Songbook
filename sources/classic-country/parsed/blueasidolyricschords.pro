@@ -1,6 +1,9 @@
 {meta: title Blue As I Do}
 {meta: artist Kris Kristofferson}
 {meta: composer Stephen Bruton}
+{meta: x_source classic-country}
+{meta: x_source_file blueasidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Day drinkin' just thinkin' out [G]loud
@@ -31,3 +34,6 @@ Tryin' to take it all in stride
 {start_of_verse: Verse 4}
 [D7]I felt too good for too long to feel as blue as I [G]do
 {end_of_verse}
+
+
+

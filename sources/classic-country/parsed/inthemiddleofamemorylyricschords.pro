@@ -1,6 +1,9 @@
 {meta: title In The Middle Of A Memory}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file inthemiddleofamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm in the middle of a [G7]memory
@@ -36,3 +39,7 @@ I wouldn’t cry if she was [C]here with me
 I'm not ashamed for any[F]one to see
 [G7]I'm in the middle of a [C]memory
 {end_of_verse}
+
+
+
+

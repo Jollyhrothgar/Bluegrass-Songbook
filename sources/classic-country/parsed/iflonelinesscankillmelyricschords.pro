@@ -1,6 +1,9 @@
 {meta: title If Loneliness Can Kill Me Lyrics Chords}
 {meta: artist Loretta Lynn}
 {meta: composer Billy Henson}
+{meta: x_source classic-country}
+{meta: x_source_file iflonelinesscankillmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walk the floor [F]here in my lonely [C]room
@@ -22,3 +25,5 @@
 [C]I'd better find a [F]place to lay my [C]head
 [F]For if loneliness [C]can kill me then [G7]I'm just as good as [C]dead
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Tennessee}
 {meta: artist Mel Tillis}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How I love to hear your old guitar 
@@ -51,3 +54,9 @@ Just [G]down to earth good country folks [A7]they’re my Tenne[D7]ssee
 Oh [G]Tennessee I [C]love you and I’m [G]proud to be part of [C]you
 I [G]sure am glad God [D7]gave us Tenne[G]ssee 
 {end_of_verse}
+
+
+
+
+
+

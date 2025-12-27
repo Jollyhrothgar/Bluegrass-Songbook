@@ -1,6 +1,9 @@
 {meta: title In The Valley He Restoreth My Soul}
 {meta: artist Connie Smith}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file inthevalleyherestorethmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I'm low in spirit I cry Lord lift me up
@@ -33,3 +36,7 @@ In the [C]valley He [G7]restoreth my [C]soul
 {start_of_verse: Verse 4}
 Down in the valley He [G7]restoreth my [F]soul[C]
 {end_of_verse}
+
+
+
+

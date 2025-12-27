@@ -1,6 +1,9 @@
 {meta: title My Reward}
 {meta: artist Statler Brothers}
 {meta: composer Allan Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file myrewardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heart[G7]aches and [Am]tears [C]so many [B7]wasted [C]years
@@ -33,3 +36,7 @@ Is [Dm]that my re[G7]ward for loving [C]you[G7]
 {start_of_verse: Verse 5}
 Is [Dm]that my re[G7]ward for loving [C]you
 {end_of_verse}
+
+
+
+

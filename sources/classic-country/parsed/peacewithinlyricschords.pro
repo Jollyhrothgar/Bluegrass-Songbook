@@ -1,6 +1,9 @@
 {meta: title Peace Within}
 {meta: artist John Conlee}
 {meta: composer Allen Reynolds, Dickey Lee, Kay Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file peacewithinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the road has been rocky my path has been steep
@@ -43,3 +46,8 @@ You are my [C]journey's end
 Peace within peace within
 [G7]You are my journey's [C]end
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: artist Tim McGraw}
 {meta: composer Aaron M. Sain and Jimmy F. Highland}
+{meta: x_source classic-country}
+{meta: x_source_file dearsantalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear Santa I'm a grown man now
@@ -48,3 +51,7 @@ The [Dm]one she's got is bro[G7]ken
 [Dm]Cause Christmas morning when [G7]she wakes up
 [C]Dear [F]Santa that's [G7]what she'll get from [C]me
 {end_of_verse}
+
+
+
+

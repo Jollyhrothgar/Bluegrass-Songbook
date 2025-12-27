@@ -1,6 +1,9 @@
 {meta: title United We Stand}
 {meta: artist Anne Murray}
 {meta: composer Tony Hiller and Peter Simons}
+{meta: x_source classic-country}
+{meta: x_source_file unitedwestandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's nowhere in the world that I would [E7]rather be
@@ -39,3 +42,8 @@ For [C]united we stand [E7]divided we fall
 [Am]And if our backs should ever [F]be against the wall
 We'll be [C]together [F]together you and [C]I  [F]  [G7]
 {end_of_verse}
+
+
+
+
+

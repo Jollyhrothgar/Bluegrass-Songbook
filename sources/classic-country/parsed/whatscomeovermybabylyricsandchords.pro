@@ -1,6 +1,9 @@
 {meta: title What's Come Over My Baby}
 {meta: artist Ray Price}
 {meta: composer Dottie West and Bill West}
+{meta: x_source classic-country}
+{meta: x_source_file whatscomeovermybabylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh what's come [G7]over my [C]baby 
@@ -40,3 +43,8 @@ My [D7]darling don't love me any[G]more
 {start_of_verse: Verse 5}
 My [D7]darling don't love me any[G]more
 {end_of_verse}
+
+
+
+
+

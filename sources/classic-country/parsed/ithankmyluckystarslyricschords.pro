@@ -1,6 +1,9 @@
 {meta: title I Thank My Lucky Stars}
 {meta: artist Eddy Arnold}
 {meta: composer Wayne Walker}
+{meta: x_source classic-country}
+{meta: x_source_file ithankmyluckystarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thank my lucky stars for every[G7]day I spent with you
@@ -29,3 +32,6 @@ And when I count my heartaches thanks to [C]you they're number none
 So [F]if I see I'm little bit too [C]much in love that's [A7]true
 I [Dm]thank my lucky stars because I [G7]found a girl like [C]you
 {end_of_verse}
+
+
+

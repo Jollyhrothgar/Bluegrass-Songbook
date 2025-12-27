@@ -1,6 +1,9 @@
 {meta: title You Went Back On Your Word}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Bobby Stevenson and Brook Benton}
+{meta: x_source classic-country}
+{meta: x_source_file youwentbackonyourwordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Said you would be mine and treat me right
@@ -47,3 +50,9 @@ You said you would never tell me a lie
 [G]But I know that you wrap-a me inside
 [A7]I did everything that you ask of [D7]me
 {end_of_verse}
+
+
+
+
+
+

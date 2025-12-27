@@ -1,6 +1,9 @@
 {meta: title Blow Your Whistle Freight Train}
 {meta: artist Hank Snow}
 {meta: composer Alton Delmore and Rabon Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file blowyourwhistlefreighttrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This old freight train she’s [G7]moving along to [C]Nashville
@@ -43,3 +46,8 @@ Roll me [G7]on down the [C]line
 [F]Bl--ow your [C]whistle freight train
 Got ramb[G7]ling on my [C]mind
 {end_of_verse}
+
+
+
+
+

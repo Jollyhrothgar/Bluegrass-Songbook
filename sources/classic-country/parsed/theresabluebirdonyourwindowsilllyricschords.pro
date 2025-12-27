@@ -1,6 +1,9 @@
 {meta: title There's A Bluebird On Your Windowsill}
 {meta: artist Wilf Carter}
 {meta: composer Elizabeth Clarke}
+{meta: x_source classic-country}
+{meta: x_source_file theresabluebirdonyourwindowsilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a Bluebird on your windowsill
@@ -43,3 +46,8 @@ There's a [F]rainbow in your [C]sky
 There are [F]happy thoughts your [C]heart to fill
 Near [G7]enough to make you [C]cry
 {end_of_verse}
+
+
+
+
+

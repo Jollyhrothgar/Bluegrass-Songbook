@@ -1,6 +1,9 @@
 {meta: title Beautiful Anabel Lee}
 {meta: artist Waylon Jennings}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulanabelleelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was a child and [F]she was a child
@@ -33,3 +36,7 @@ Of my [G7]beautiful Anabel [C]Lee
 {start_of_verse: Verse 5}
 My [G7]beautiful Anabel [C]Lee
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Nashville Rebel}
 {meta: artist Waylon Jennings}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file nashvillerebellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]They call me the Nashville Rebel 
@@ -34,3 +37,6 @@ But [D7]I just don't have the [G]time
 Cause I've got [C]things to do and things [D7]to say in my own [G]way 
 I've got [C]things to do and things [D7]to say in my own [G]way
 {end_of_verse}
+
+
+

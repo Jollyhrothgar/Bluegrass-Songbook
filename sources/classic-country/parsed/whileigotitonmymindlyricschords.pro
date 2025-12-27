@@ -1,5 +1,8 @@
 {meta: title While I Got It On My Mind}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file whileigotitonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Laying round home with the ballgame on
@@ -73,3 +76,15 @@ And there ain’t no joy that'll come to you boys
 [C]I like to get my [G]loving
 [D7]While I got it on my [G]mind
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

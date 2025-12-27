@@ -1,5 +1,8 @@
 {meta: title Gently Comes Love}
 {meta: artist Jim Ed Brown}
+{meta: x_source classic-country}
+{meta: x_source_file gentlycomeslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You don't ask me for promises you know I might not [A7]keep
@@ -28,3 +31,6 @@
 [A7]Uncomplicated love that’s as real [D7]as yellow (real as [C]yellow)
 [D7]Summer [G]sunshine
 {end_of_verse}
+
+
+

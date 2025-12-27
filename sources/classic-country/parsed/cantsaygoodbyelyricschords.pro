@@ -1,6 +1,9 @@
 {meta: title Can't Say Goodbye}
 {meta: artist Russell Moore and IIIrd Tyme Out}
 {meta: composer Greg Luck}
+{meta: x_source classic-country}
+{meta: x_source_file cantsaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just read your [C]letter of good[G]bye
@@ -33,3 +36,7 @@ Dreams of [C]holding you have [G]passed me by[D7]   [Em]
 {start_of_verse: Verse 5}
 [C]Tears of this old [D7]heart can't say good[G]bye
 {end_of_verse}
+
+
+
+

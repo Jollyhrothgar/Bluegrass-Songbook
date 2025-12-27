@@ -1,6 +1,9 @@
 {meta: title Cheap Imitation}
 {meta: artist Mel Tillis}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file cheapimitationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She was just another cheap [D7]imitation of [G]you
@@ -35,3 +38,7 @@
 [C]Were all that lived through a sunrise
 [G]She was just another cheap [D7]imitation of [G]you
 {end_of_verse}
+
+
+
+

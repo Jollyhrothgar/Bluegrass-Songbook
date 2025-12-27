@@ -1,5 +1,8 @@
 {meta: title Did We Have To Come This Far To Say Goodbye chords}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file didwehavetocomethisfartosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you were only [F]friendly on my [C]mind 
@@ -28,3 +31,6 @@ When staying was the last thing [G7]on your mind
 You [C]could have turned around [F]and spared my [C]feelings 
 Did we have to come this far [G7]to say [C]goodbye
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Blame Me}
 {meta: artist Everly Brothers}
 {meta: composer Dorothy Fields and Jimmy McHugh}
+{meta: x_source classic-country}
+{meta: x_source_file dontblamemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't [A#7]blame [A7]me for [F]falling in [G7]love with [C]you
@@ -35,3 +38,8 @@
 [F]And blame all your [G7]charms that melt in my [A7]arms
 [D7]But don't [G7]blame [C]me
 {end_of_verse}
+
+
+
+
+

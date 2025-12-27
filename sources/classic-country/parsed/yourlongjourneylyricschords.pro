@@ -1,6 +1,9 @@
 {meta: title Your Long Journey}
 {meta: artist Emmylou Harris}
 {meta: composer Doc Watson and Rosa Lee Watson}
+{meta: x_source classic-country}
+{meta: x_source_file yourlongjourneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God's given us years of [G7]happiness [C]here
@@ -28,3 +31,5 @@ Oh the days will be empty
 [G7]Oh my darling  my darling
 [C]My heart breaks as you [F]take your long [C]journey
 {end_of_verse}
+
+

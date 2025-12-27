@@ -1,6 +1,9 @@
 {meta: title Blue Velvet}
 {meta: artist Brenda Lee}
 {meta: composer Bernie Wayne and Lee Morris}
+{meta: x_source classic-country}
+{meta: x_source_file bluevelvetlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Blue [Em]velvet [Dm]oh [G7]oh)
@@ -29,3 +32,6 @@
 [F]And I still can see blue [G7]velvet through my [C]tears
 [Em](Blue velvet oh [Dm]oh
 {end_of_verse}
+
+
+

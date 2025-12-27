@@ -1,5 +1,8 @@
 {meta: title Go Go Go}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file gogogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you can't be my loving baby 
@@ -50,3 +53,13 @@ Gonna [G7]get me a gal that'll go out on the [C]town
 {start_of_verse: Verse 2}
 You ain't got the style
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

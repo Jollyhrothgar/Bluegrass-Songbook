@@ -1,6 +1,9 @@
 {meta: title Preservation Of The Wild Life}
 {meta: artist Earl Thomas Conley}
 {meta: composer Jim Allison and Linda Young}
+{meta: x_source classic-country}
+{meta: x_source_file preservationofthewildlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seems everybody's got a [F]cause
@@ -53,3 +56,9 @@ Said she'd teach me how to live [C]right
 But I just keep preserving [G7]wild life
 [F]Cause that' all we've ever [C]done
 {end_of_verse}
+
+
+
+
+
+

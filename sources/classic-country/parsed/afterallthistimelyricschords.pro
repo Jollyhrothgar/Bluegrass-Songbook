@@ -1,6 +1,9 @@
 {meta: title After All This Time}
 {meta: artist Mel Tillis}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file afterallthistimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]After all this time I should [G7]be over you I [C]know
@@ -27,3 +30,6 @@
 [F]Love has carved your name deep in my [C]mind
 [G7]And I still think of you after all this [C]time
 {end_of_verse}
+
+
+

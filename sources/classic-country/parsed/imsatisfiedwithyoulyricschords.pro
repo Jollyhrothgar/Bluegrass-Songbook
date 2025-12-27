@@ -1,6 +1,9 @@
 {meta: title I'm Satisfied With You}
 {meta: artist Hank Williams}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file imsatisfiedwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You don't dress up in satin you don't [F]wear diamond rings
@@ -40,3 +43,8 @@ But [C]I'm satis[G7]fied with [C]you
 {start_of_verse: Verse 5}
 But I'm satis[G7]fied with [C]you
 {end_of_verse}
+
+
+
+
+

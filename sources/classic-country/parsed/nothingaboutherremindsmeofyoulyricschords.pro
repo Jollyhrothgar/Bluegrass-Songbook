@@ -1,6 +1,9 @@
 {meta: title Nothing About Her Reminds Me Of You}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file nothingaboutherremindsmeofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She doesn't have [F]raven black [C]hair
@@ -29,3 +32,6 @@ Her [Dm]lips aren't like [G7]sweet morning [C]dew [G7]
 But [C]God must have [A#7]made her [F]especially for [C]me
 Cause [F]nothing a[C]bout her [G7]reminds me of [F]you[C]
 {end_of_verse}
+
+
+

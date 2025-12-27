@@ -1,6 +1,9 @@
 {meta: title Between Fire And Water}
 {meta: artist Hank Snow}
 {meta: composer Sol Marcus, Eddie Seller, Ralph Care}
+{meta: x_source classic-country}
+{meta: x_source_file betweenfireandwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're mine for awhile till a new [F]face [D7]appears
@@ -29,3 +32,6 @@
 [C]Between fire and water I cry an [F]ocean
 [C]Cause without you I'm [G7]bluer than [C]blue
 {end_of_verse}
+
+
+

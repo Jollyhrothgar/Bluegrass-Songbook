@@ -1,5 +1,8 @@
 {meta: title Running Gun}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file runninggunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I rode out of Kansas City going south to [F]Mexico
@@ -46,3 +49,9 @@ But a [G7]woman's love is wasted when she [F]loves a running [C]gun
 {start_of_verse: Verse 7}
 Running gun running gun
 {end_of_verse}
+
+
+
+
+
+

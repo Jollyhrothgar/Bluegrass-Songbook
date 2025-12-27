@@ -1,6 +1,9 @@
 {meta: title You're Gonna Leave Me Again}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file youregonnaleavemeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just like a re-run [Dm]movie 
@@ -43,3 +46,8 @@ Just like you [C]did the [F]time be[C]fore
 This is the [F]start of the [G7]end 
 The end of [F]me when you walk [G7]out that [C]door
 {end_of_verse}
+
+
+
+
+

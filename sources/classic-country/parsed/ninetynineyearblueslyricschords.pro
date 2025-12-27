@@ -1,6 +1,9 @@
 {meta: title Ninety Nine Year Blues}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers and Roy E. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file ninetynineyearblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lawd these ninety nine blues ain't no fancy dream
@@ -31,3 +34,8 @@ Ninety nine and ninety nine make one hundred and ninety eight
 I don't know what else is in the world to lose
 [G7]Cause I've lost everything except these ninety nine [C]blues
 {end_of_verse}
+
+
+
+
+

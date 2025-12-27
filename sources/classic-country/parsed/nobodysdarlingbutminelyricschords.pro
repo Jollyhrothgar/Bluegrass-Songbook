@@ -1,6 +1,9 @@
 {meta: title Nobody's Darling But Mine}
 {meta: artist Webb Pierce}
 {meta: composer Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file nobodysdarlingbutminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Come and sit by my side little [C]darling
@@ -27,3 +30,5 @@ Be [D7]honest be faithful be [G]kind
 C And promise me that you will never
 D7 G Be nobody's darling but mine
 {end_of_verse}
+
+

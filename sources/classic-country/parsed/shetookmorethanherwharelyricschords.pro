@@ -1,6 +1,9 @@
 {meta: title She Took More Than Her Share}
 {meta: artist Moe Bandy}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file shetookmorethanherwharelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All she said she wanted [F]was a piece of [C]me
@@ -23,3 +26,5 @@ In the time it took for me to close my [G7]eyes
 [F]Cause sweetheart [C]she [G7]took more than her [C]share
 [F]Yes sweetheart [C]she [G7]took more than her [C]share
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title He's Back In Texas}
 {meta: artist Moe Bandy}
 {meta: composer Troy Seals and Wood Newton}
+{meta: x_source classic-country}
+{meta: x_source_file hesbackintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]First time that you see him you'd [G]think he's a regular guy
@@ -40,3 +43,8 @@ When his mind locks in to that Lone Star State the [C]party never [A7]ends
 {start_of_verse: Verse 5}
 [A7]Back in [G]Texas [D7]back in Texas [G]again
 {end_of_verse}
+
+
+
+
+

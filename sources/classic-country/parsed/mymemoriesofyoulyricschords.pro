@@ -1,6 +1,9 @@
 {meta: title My Memories of You}
 {meta: artist Gene Watson}
 {meta: composer Daniel T. Rainwater & Larry Booth}
+{meta: x_source classic-country}
+{meta: x_source_file mymemoriesofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I feel so sorry for my friends now that you've left [C]me
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 Repeat #2
 {end_of_verse}
+
+
+

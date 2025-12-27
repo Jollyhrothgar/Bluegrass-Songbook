@@ -1,6 +1,9 @@
 {meta: title So Good To Be In Love}
 {meta: artist Patty Loveless}
 {meta: composer Karen Staley}
+{meta: x_source classic-country}
+{meta: x_source_file sogoodtobeinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's been a long time since I [G7]thought about a man
@@ -42,3 +45,8 @@ You hung the moon and the [F]stars [C]above
 [G7]So good to be in [C]love 
 [G7]So good to be in [C]love
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Final Affair}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file finalaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is my [G7]final [C]affair 
@@ -42,3 +45,8 @@ I know it's not [F]worth a [C]chance
 My heart's beyond all [G7]repair 
 And this is my final [C]affair
 {end_of_verse}
+
+
+
+
+

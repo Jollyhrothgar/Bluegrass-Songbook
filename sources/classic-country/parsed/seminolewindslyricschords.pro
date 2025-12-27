@@ -1,5 +1,8 @@
 {meta: title Seminole Winds}
 {meta: artist John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file seminolewindslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]Ever since the days [G]of old men would [D7]search for wealth [Am]untold  
@@ -30,3 +33,6 @@ So [Em]blow blow [G]Seminole wind blow [D7]like your never gonna blow [Am]again
 And [Em]blow blow from the [G]Okeechobee  all [D7]the way up to [Am]Micanopy  
 [Em]Blow cross the home of the [G]Seminole the [D7]alligators and the [Am]Garr  
 {end_of_verse}
+
+
+

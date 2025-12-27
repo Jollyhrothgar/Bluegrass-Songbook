@@ -1,6 +1,9 @@
 {meta: title World Of Forgotten People}
 {meta: artist George Jones}
 {meta: composer Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file worldofforgottenpeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I live in a world [C]world of [G]forgotten [C]people
@@ -29,3 +32,6 @@
 [G]I'm here [C]in a world world [G]of forgotten [C]people
 [G]Where every heart [D7]is aching just like [G]mine
 {end_of_verse}
+
+
+

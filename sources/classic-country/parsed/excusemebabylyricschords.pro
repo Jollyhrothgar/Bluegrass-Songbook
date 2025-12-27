@@ -1,6 +1,9 @@
 {meta: title Excuse Me Baby}
 {meta: artist Ricky Nelson}
 {meta: composer Dorsey Burnette and Joe Osborn}
+{meta: x_source classic-country}
+{meta: x_source_file excusemebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Excuse me baby but you're looking mighty fine
@@ -31,3 +34,6 @@ I love you pretty baby I hope you feel the same
 When the right time comes and I want you around
 Well come on [E7]baby [A7]don't you [D7]dare let me [G]down
 {end_of_verse}
+
+
+

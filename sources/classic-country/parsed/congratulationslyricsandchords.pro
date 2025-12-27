@@ -1,6 +1,9 @@
 {meta: title Congratulations}
 {meta: artist Ricky Nelson}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file congratulationslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Congratulations for breaking my [Am]heart
@@ -34,3 +37,7 @@ Just [C]how you took her love from me [F]I'll never under[E7]stand
 [C]Congratulations for breaking my [Am]heart
 [C]Congratulations for breaking my [Am]heart
 {end_of_verse}
+
+
+
+

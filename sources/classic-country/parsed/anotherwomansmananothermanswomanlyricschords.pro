@@ -1,6 +1,9 @@
 {meta: title Another Woman's Man Another Man's Woman Lyrics chords}
 {meta: artist Faron Young}
 {meta: composer Dan Pennington and Marlin Greene}
+{meta: x_source classic-country}
+{meta: x_source_file anotherwomansmananothermanswomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can’t ignore the way your yearning eyes have looked at [G7]me
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]Yes I’m [C]another man’s woman and [G7]I’m another woman’s [C]man
 {end_of_verse}
+
+
+

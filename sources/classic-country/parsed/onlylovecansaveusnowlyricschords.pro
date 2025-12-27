@@ -1,6 +1,9 @@
 {meta: title Only Love Can Save Us Now}
 {meta: artist Johnny Paycheck}
 {meta: composer Billy Sherrill and Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file onlylovecansaveusnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here we are [C]me and [G]you nothing [C]left to hold on [G]to
@@ -22,3 +25,5 @@
 [G]We both want to make it but [C]Lord we don't know [A7]how
 [G]Only [C]love [G]only love can [D7]save us [G]now
 {end_of_verse}
+
+

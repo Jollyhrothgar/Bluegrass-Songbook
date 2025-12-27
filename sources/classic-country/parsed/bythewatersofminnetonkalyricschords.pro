@@ -1,6 +1,9 @@
 {meta: title By The Waters Of Minnetonka}
 {meta: artist Slim Whitman}
 {meta: composer J.M. Cavanass and Thurlow Lieurance}
+{meta: x_source classic-country}
+{meta: x_source_file bythewatersofminnetonkalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whoo oooo whoo oooo 
@@ -30,3 +33,7 @@ Moon dear thee near
 [C]Whoo oooo whoo oooo 
 [G7]Whoo ooo[C]o
 {end_of_verse}
+
+
+
+

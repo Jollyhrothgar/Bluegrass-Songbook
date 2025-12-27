@@ -1,6 +1,9 @@
 {meta: title Jesus Cares For Me}
 {meta: artist Vince Gill}
 {meta: composer Bart Millard and Thad Cockrell}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuscaresformelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jesus [D7]cares for [G]me  it [C]seems too good to [G]be
@@ -26,3 +29,6 @@ Repeat last verse
 [C]All my worries and [G]doubts re[Em]leased [G]Jesus [D7]cares for [G]me
 [C]All my worries are [G]now a-[Em]sea [G]Jesus [D7]cares for [C]me[G]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That's Love}
 {meta: artist Johnny Tillotson}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file thatslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love is cattle [Em]in the clover [C]sun shining [D7]overhead 
@@ -24,3 +27,5 @@ And that's [G]love (that's [D7]love) that’s [G]love
 Love is just a state of mind [C]that only those in love can find
 That's [G]love (that's [D7]love) that’s [G]love
 {end_of_verse}
+
+

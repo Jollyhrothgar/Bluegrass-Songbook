@@ -1,5 +1,8 @@
 {meta: title Jack Daniels If You Please}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file jackdanielsifyoupleaselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jack Daniels if you [F]please  [G7]knock me to my [C]knees
@@ -43,3 +46,7 @@ Jack Daniels if you [F]please  [G7]knock me to my [C]knees
 You can kill this [F]pain that's driving me in[G7]sane
 Since my baby's [C]gone
 {end_of_verse}
+
+
+
+

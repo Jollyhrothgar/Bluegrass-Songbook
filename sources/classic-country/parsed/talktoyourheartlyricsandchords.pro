@@ -1,5 +1,8 @@
 {meta: title Talk to Your Heart}
 {meta: artist Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file talktoyourheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you're alone at night with the world locked [G7]outside
@@ -28,3 +31,6 @@ Remember my own is waiting [C]outside
 Waiting alone outside in the [G7]dark
 So let me come in and talk to your [C]heart
 {end_of_verse}
+
+
+

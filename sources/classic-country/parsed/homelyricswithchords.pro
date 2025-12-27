@@ -1,6 +1,9 @@
 {meta: title Home}
 {meta: artist Joe Diffie}
 {meta: composer Fred Lehner and Andy Spooner}
+{meta: x_source classic-country}
+{meta: x_source_file homelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The only the thing I see ahead 
@@ -63,3 +66,11 @@ But [G7]in my mind I'm always going [C]home[G7]
 {start_of_verse: Verse 7}
 Repeat last verse 
 {end_of_verse}
+
+
+
+
+
+
+
+

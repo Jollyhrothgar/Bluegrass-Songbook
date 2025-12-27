@@ -1,6 +1,9 @@
 {meta: title You Don't Need to Move a Mountain}
 {meta: artist Jeanne Pruett}
 {meta: composer Waylon Holyfield and Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file youdontneedtomoveamountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You would bring me [F]silver and [C]gold
@@ -29,3 +32,6 @@ Tame a raging river or [G7]make your body bleed
 You don't [C]need (you don't need) to [F]swim an [C]ocean
 Lay your head on my breast and [G7]rest a while with [C]me
 {end_of_verse}
+
+
+

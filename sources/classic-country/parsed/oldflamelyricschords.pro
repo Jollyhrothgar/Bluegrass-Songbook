@@ -1,6 +1,9 @@
 {meta: title Old Flame}
 {meta: artist Alabama}
 {meta: composer Donny Lowery and Mac McAnally}
+{meta: x_source classic-country}
+{meta: x_source_file oldflamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw you star-ing [F]at each [C]other 
@@ -23,3 +26,5 @@ You say your love for me is [G7]strong
 But those old [C]mem-ories [F]still [C]upset [F]y-ou
 Well I might be a memory [G7]before too [C]long
 {end_of_verse}
+
+

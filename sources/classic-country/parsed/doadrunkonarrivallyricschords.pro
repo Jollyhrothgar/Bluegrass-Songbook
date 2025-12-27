@@ -1,6 +1,9 @@
 {meta: title D.O.A. (Drunk On Arrival)}
 {meta: artist Johnny Paycheck}
 {meta: composer Larry Lee, Ed Hudson, Michael Heeney}
+{meta: x_source classic-country}
+{meta: x_source_file doadrunkonarrivallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord don't I know whiskey [F]ain't a good [C]chaser
@@ -45,3 +48,8 @@ Deliver me Lord from this [F]hell where I [C]been
 Mixing whiskey and memories till [G7]when
 I'm drunk on arrival [C]again
 {end_of_verse}
+
+
+
+
+

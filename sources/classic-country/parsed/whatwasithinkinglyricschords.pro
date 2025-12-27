@@ -1,6 +1,9 @@
 {meta: title What Was I Thinking}
 {meta: artist Gene Watson}
 {meta: composer Skip Ewing and James Dean Hicks}
+{meta: x_source classic-country}
+{meta: x_source_file whatwasithinkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey what was I thinking I wasn't even [F]drinking
@@ -37,3 +40,7 @@ What was I [C]thinking
 Now my heart is only breaking my love boat is slowly [G7]sinking
 What was I [C]thinking
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Running Scared}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melson and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file runningscaredlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just running scared each place we [Dm]go
@@ -28,3 +31,7 @@ So sure of himself his head in the air
 And my heart was breaking which one would it be
 You turned around and walked [G7]away with [C]me
 {end_of_verse}
+
+
+
+

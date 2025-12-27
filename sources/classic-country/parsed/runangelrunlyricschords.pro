@@ -1,6 +1,9 @@
 {meta: title Run Angel Run}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Stuart Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file runangelrunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I follow angel [C]but angels follows the [G]sun
@@ -40,3 +43,7 @@
 [Am](run angel run angel run)
 [D7]Please angel take me [G]along
 {end_of_verse}
+
+
+
+

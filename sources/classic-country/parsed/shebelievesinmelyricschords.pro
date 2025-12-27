@@ -1,6 +1,9 @@
 {meta: title She Believes In Me}
 {meta: artist Kenny Rogers}
 {meta: composer Steve Gibb}
+{meta: x_source classic-country}
+{meta: x_source_file shebelievesinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While she lays sleeping
@@ -59,3 +62,11 @@ If my song is right I can [Am]find a way [D7]while she [G]sleeps
 {start_of_verse: Verse 7}
 [C]While she waits  while she [Cm]waits for [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+

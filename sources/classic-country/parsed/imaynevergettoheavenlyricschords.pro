@@ -1,6 +1,9 @@
 {meta: title I May Never Get to Heaven}
 {meta: artist Wanda Jackson}
 {meta: composer Buddy Killen and Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file imaynevergettoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walked with you and talked with [G7]you 
@@ -31,3 +34,6 @@ But I [Dm]didn't [G7]miss it [C]much
 I may [F]never [G7]get to [Am][C]heaven 
 But I [Dm]didn't [G7]miss it [C]much
 {end_of_verse}
+
+
+

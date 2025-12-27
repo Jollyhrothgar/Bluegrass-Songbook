@@ -1,6 +1,9 @@
 {meta: title Jukebox Man}
 {meta: artist Mel Tillis}
 {meta: composer Mel Tillis and Buck Peddy}
+{meta: x_source classic-country}
+{meta: x_source_file jukeboxmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna get a bunch of nickels gonna buy em by the roll
@@ -36,3 +39,7 @@ It's the ricky ticky rhythm of a jukebox song
 But [C]when it comes to music I'm the number one fan
 And every[G7]body's callin' me the jukebox [C]man
 {end_of_verse}
+
+
+
+

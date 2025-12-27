@@ -1,6 +1,9 @@
 {meta: title You're Easy To Remember}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
 {meta: composer Eddie Hollowell and James O'Gwynn}
+{meta: x_source classic-country}
+{meta: x_source_file youreeasytorememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could forget the love I gave you 
@@ -29,3 +32,6 @@ But what am I supposed to do
 When you're too easy to re[C]member 
 [G7]I just can't help but think of [C]you [F]   [C]
 {end_of_verse}
+
+
+

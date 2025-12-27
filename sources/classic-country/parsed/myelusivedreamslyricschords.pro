@@ -1,5 +1,8 @@
 {meta: title My Elusive Dreams}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file myelusivedreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd followed you to [C]Texas
@@ -41,3 +44,7 @@
 [C]For they're only fleeting [G]things
 [D7]My elusive [G]dreams
 {end_of_verse}
+
+
+
+

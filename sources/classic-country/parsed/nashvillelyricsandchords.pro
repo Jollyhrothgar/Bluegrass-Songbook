@@ -1,6 +1,9 @@
 {meta: title Nashville}
 {meta: artist David Houston}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file nashvillelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the year of forty-[G7]three momma [C]finished feedin' [F]me
@@ -53,3 +56,9 @@ And I was the richest [G7]poor boy in the town of [C]Nashville
 {start_of_verse: Verse 6}
 And I'm the richest [G7]poor boy in the town of [F]Nashville[C]
 {end_of_verse}
+
+
+
+
+
+

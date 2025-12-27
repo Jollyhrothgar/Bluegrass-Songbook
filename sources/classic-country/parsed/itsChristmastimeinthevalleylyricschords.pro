@@ -1,6 +1,9 @@
 {meta: title It's Christmas Time In The Valley}
 {meta: artist Freddie Fender}
 {meta: composer Charles Preston}
+{meta: x_source classic-country}
+{meta: x_source_file itsChristmastimeinthevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it's Christmas time  [C]in the [G]valley
@@ -22,3 +25,5 @@ And I find [D7]happiness in the valley once [G]again
 Feel the [C]palm trees swaying as if their [G]dancing
 Yes it's [D7]Christmas time in the valley once [G]again
 {end_of_verse}
+
+

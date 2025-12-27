@@ -1,5 +1,8 @@
 {meta: title Hello Central Give Me Heaven}
 {meta: artist The Carter Family}
+{meta: x_source classic-country}
+{meta: x_source_file hellocentralgivemeheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello central give me [G7]heaven
@@ -42,3 +45,8 @@ Yes dear heart I'll soon come [C]home
 Kiss me momma it's your [G7]darling
 Kiss me through the [C]telephone
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Laying It On The Line}
 {meta: artist Buck Owens}
 {meta: composer Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file imlayingitonthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll lay it on the line and I'm a gonna make you [D7]mine
@@ -62,3 +65,13 @@ I think I better warn you it's only just a matter of [G]time
 Yeah as good as gone or my name ain't Don I'm gonna make you [C]mine
 I'm [G]telling you straight I'm a [D7]laying it on the [G]line
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

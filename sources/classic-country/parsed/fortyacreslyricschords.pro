@@ -1,6 +1,9 @@
 {meta: title Forty Acres}
 {meta: artist Boxcar Willie}
 {meta: composer Earl Green}
+{meta: x_source classic-country}
+{meta: x_source_file fortyacreslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was headin' into Beantown in a big long diesel [D7]truck
@@ -72,3 +75,12 @@
 [C]Heck with it I’ll back all the way to Birmingham
 [D7]Cleveland how'd [G7]I get to [C]Cleveland
 {end_of_verse}
+
+
+
+
+
+
+
+
+

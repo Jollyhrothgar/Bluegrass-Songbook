@@ -1,6 +1,9 @@
 {meta: title Boppin' The Blues}
 {meta: artist Ricky Nelson}
 {meta: composer Carl Perkins and Curly Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file boppintheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well all my friends are boppin' the blues it must be goin' [C7]round
@@ -37,3 +40,8 @@ Well rock bop rhythm and blues [C7]rock bop rhythm and blues baby
 [F]Rock bop rhythm and blues [C]rock bop rhythm and blues
 [G7]Rhythm and blues it must be goin' [C]round
 {end_of_verse}
+
+
+
+
+

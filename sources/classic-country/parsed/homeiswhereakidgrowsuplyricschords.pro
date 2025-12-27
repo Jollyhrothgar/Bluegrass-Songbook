@@ -1,5 +1,8 @@
 {meta: title Home Is Where A Kid Grows Up}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file homeiswhereakidgrowsuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It may be down the [C]south in [G]Alabama
@@ -36,3 +39,8 @@ Or maybe just a [D7]little old one horse [G]town
 It could be on the [C]back streets of [G]Chicago
 But if it's home it's [D7]still the greatest place [G]around
 {end_of_verse}
+
+
+
+
+

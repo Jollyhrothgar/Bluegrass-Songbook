@@ -1,6 +1,9 @@
 {meta: title A New Way To Fly}
 {meta: artist Garth Brooks}
 {meta: composer Kim Williams and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file anewwaytoflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like birds on a high line they line up at night time at the [D7]bar
@@ -35,3 +38,7 @@ But they can leave it [C]behind if [A7]they could just [D7]find a new way to [G]
 {start_of_verse: Verse 5}
 They'll leave it [C]behind as [A7]soon as they [D7]find a new way to [G]fly
 {end_of_verse}
+
+
+
+

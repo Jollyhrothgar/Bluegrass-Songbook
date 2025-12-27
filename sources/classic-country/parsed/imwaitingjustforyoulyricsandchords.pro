@@ -1,6 +1,9 @@
 {meta: title I'm Waiting Just For You}
 {meta: artist Wanda Jackson}
 {meta: composer Henry Glover, Carolyn Leigh, Lucky Millinder}
+{meta: x_source classic-country}
+{meta: x_source_file imwaitingjustforyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You have to leave me all by myself [C7]dear
@@ -25,3 +28,6 @@
 [F]So we can do what we used to [C]do
 [F]But I'll [G7]be telling everybody I'm waiting just for [C]you
 {end_of_verse}
+
+
+

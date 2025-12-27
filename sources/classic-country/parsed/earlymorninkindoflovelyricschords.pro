@@ -1,6 +1,9 @@
 {meta: title Early Mornin’ Kind Of Love}
 {meta: artist Red Steagall}
 {meta: composer William Hollis Young}
+{meta: x_source classic-country}
+{meta: x_source_file earlymorninkindoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wake to see the darkness dying
@@ -60,3 +63,10 @@ I love that early [D7]morning kind of [G]love
 {start_of_verse: Verse 5}
 I [C]love that early [D7]morning kind of [G]love
 {end_of_verse}
+
+
+
+
+
+
+

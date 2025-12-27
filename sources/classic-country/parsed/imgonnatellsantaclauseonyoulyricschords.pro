@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Tell Santa Clause On You}
 {meta: artist Faron Young}
 {meta: composer Thelma Blackmon}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnatellsantaclauseonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I’m gonna tell Santa [F]Claus on you
@@ -53,3 +56,10 @@ But [F]if you say you’ll love me [C]and promise [G7]to be [C]true
 We’ll have a Merry [F]Christmas too
 [G7]Cause I won’t tell Santa Claus on [C]you
 {end_of_verse}
+
+
+
+
+
+
+

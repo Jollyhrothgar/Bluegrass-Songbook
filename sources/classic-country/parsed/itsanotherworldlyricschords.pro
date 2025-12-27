@@ -1,6 +1,9 @@
 {meta: title It's Another World}
 {meta: artist Loretta Lynn}
 {meta: composer Richard D. Staedtler}
+{meta: x_source classic-country}
+{meta: x_source_file itsanotherworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's another world when I'm with you
@@ -53,3 +56,13 @@ Love you know just grows and grows
 It's another world when I'm with [G7]you 
 And that's where I wanna [C]be
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

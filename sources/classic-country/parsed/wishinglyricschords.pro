@@ -1,6 +1,9 @@
 {meta: title Wishing}
 {meta: artist Buddy Holly}
 {meta: composer Bob Montgomery and Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file wishinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Wish[C]ing  [Am]that I could see you [F]every [G7]day
@@ -31,3 +34,8 @@
 [F]Wish[C]ing  [Am]that I could see you [F]every [G7]day
 [F]Wish[C]ing  [F]that I could steal your [G7]heart [C]away
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Trying To Forget}
 {meta: artist Jim Reeves}
 {meta: composer Sonny Burnett and Gene Martin}
+{meta: x_source classic-country}
+{meta: x_source_file tryingtoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Trying to forget the [C]thrill of holding [D7]you
@@ -17,3 +20,4 @@
 [G]Please won't you [C]listen I [G]want you to [C]know
 [G]Though you have hurt me  [D7]I still love you [G]so
 {end_of_verse}
+

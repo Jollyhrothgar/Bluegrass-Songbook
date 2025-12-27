@@ -1,5 +1,8 @@
 {meta: title If Only}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file ifonlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If only I could [Am]lie like you
@@ -45,3 +48,7 @@ Oh [G7]what's the use if [C]only
 If [Am]only if [F]only
 Oh [G7]what's the use if [C]only
 {end_of_verse}
+
+
+
+

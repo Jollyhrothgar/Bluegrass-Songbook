@@ -1,5 +1,8 @@
 {meta: title Do You Want To Live In Glory}
 {meta: artist Lonesome River Band}
+{meta: x_source classic-country}
+{meta: x_source_file doyouwanttoliveinglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do you want to live in glory
@@ -49,3 +52,9 @@ Oh dear [Am]friend forever[G7]more
 [C]Do you want a life eternal
 Some[Am]where on that [G7]golden [C]shore
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title He Was There}
 {meta: artist Faron Young}
 {meta: composer Jimmie Dodd}
+{meta: x_source classic-country}
+{meta: x_source_file hewastherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I looked for [Em]Him in a [E7]soft summer [A7]rain and [D7]He was there
@@ -27,3 +30,6 @@ Oh I searched for Him when my ways I would [G7]mend and He was [C]there
 It's so simple yet so [C7]wonderful every[F]body every[C]where
 Just look for [Am]Him [D7]and He'll[G7] be [C]there
 {end_of_verse}
+
+
+

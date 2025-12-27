@@ -1,6 +1,9 @@
 {meta: title Hootenanny Granny}
 {meta: artist Jim Lowe}
 {meta: composer Fred Hertz and Charles Grean}
+{meta: x_source classic-country}
+{meta: x_source_file hootenannygrannylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I took my [F]granny to a hoote[C]nanny
@@ -51,3 +54,9 @@ Now her [G7]silver hair is hanging [C]down down [Am]down
 At the [C]age of 93 now it’s [F]Peter Paul and [G7]she
 She’s my [C]hootenanny granny [G7]with a banjo on her [C]knee[F]  [C]
 {end_of_verse}
+
+
+
+
+
+

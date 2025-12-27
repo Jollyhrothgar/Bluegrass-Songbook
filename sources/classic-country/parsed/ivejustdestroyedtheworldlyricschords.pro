@@ -1,6 +1,9 @@
 {meta: title I've Just Destroyed The World}
 {meta: artist Ray Price}
 {meta: composer Willie Nelson and Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file ivejustdestroyedtheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Sun just went behind a cloud
@@ -26,3 +29,5 @@ I [D7]should have known there'd have to be an [G7]end
 [F]They never learn till it's too late
 And I've [C]just destroyed the [G7]world I'm living [C]in
 {end_of_verse}
+
+

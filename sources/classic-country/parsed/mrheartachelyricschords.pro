@@ -1,6 +1,9 @@
 {meta: title Mr. Heartache}
 {meta: artist Billy Walker}
 {meta: composer James Van Heusen}
+{meta: x_source classic-country}
+{meta: x_source_file mrheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don’t know why I love you or [F]why I feel this way
@@ -29,3 +32,6 @@ That’s what they [G7]call me ever since we’ve been [C]apart
 Mr. [F]Heart[G7]ache Mr. [F]Heart[C]ache
 That’s what they [G7]call me cause I’ve [F]got a [G7]broken [C]heart
 {end_of_verse}
+
+
+

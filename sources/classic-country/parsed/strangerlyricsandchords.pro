@@ -1,6 +1,9 @@
 {meta: title Stranger}
 {meta: artist Johnny Duncan and Janie Fricke}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file strangerlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe she was smiling in the [F]mirror
@@ -47,3 +50,9 @@ And while we lay there making believe you [F]love me
 {start_of_verse: Verse 5}
 [G7]Stranger could I believe in [C]you
 {end_of_verse}
+
+
+
+
+
+

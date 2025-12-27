@@ -1,6 +1,9 @@
 {meta: title I Wouldn’t Take Nothing For My Journey Now}
 {meta: artist Jimmy Davis}
 {meta: composer Jimmie Davis and Charles R. Goodman}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldnttakenothingformyjourneynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wouldn't take nothing for my journey now
@@ -42,3 +45,7 @@ He's [C]offered everything that's got a name
 [F]All the wealth I want and worldly fame
 But if I [C]could still I wouldn't take [G7]nothing for my journey [C]now
 {end_of_verse}
+
+
+
+

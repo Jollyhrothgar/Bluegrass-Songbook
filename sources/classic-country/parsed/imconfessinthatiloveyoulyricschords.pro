@@ -1,6 +1,9 @@
 {meta: title I’m Confessin’ (That I love you)}
 {meta: artist Frank Ifield}
 {meta: composer Doc Daugherty, Al J. Neiburg, Ellis Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file imconfessinthatiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm confessin' that I love [F]you
@@ -45,3 +48,9 @@
 {start_of_verse: Verse 5}
 [A7]I'm confessing that I [D7]love you over [G]again
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title How She Could Sing The Wildwood Flower}
 {meta: artist Emmylou Harris}
 {meta: composer Anna McGarrigle, Emmylou Harris, Kate McGarrigle}
+{meta: x_source classic-country}
+{meta: x_source_file howshecouldsingthewildwoodflowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How she could sing the Wildwood [F]Flower
@@ -48,3 +51,9 @@ And [C]all he has left [G7]of her is a [C]song
 How she could sing the Wildwood [F]Flower
 All [C]we have left [G7]of her is a [C]song
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Heart Full Of Love}
 {meta: artist Eddy Arnold}
 {meta: composer Eddy Arnold, Steve Nelson, Roy Soehnel}
+{meta: x_source classic-country}
+{meta: x_source_file aheartfulloflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I traded a heart [G]full of love for a handful of [C]kisses
@@ -29,3 +32,6 @@ I [A7]had a moment of happiness but what a price to [D7]pay
 I traded a heart [G]full of love for a handful of [C]kisses
 That [G]you were just [D7]throwing [G]away
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Cash on the Barrelhead}
 {meta: artist the Louvin Brothers}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file cashonthebarrelheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Got in a little trouble at the county seat
@@ -52,3 +55,11 @@ This old grey [G7]dog is paid to [C]run
 [C7]When the engine [F]stops  the wheels won't [C]roll
 Give me cash on the [G7]barrelhead I'll take you down the [C]road
 {end_of_verse}
+
+
+
+
+
+
+
+

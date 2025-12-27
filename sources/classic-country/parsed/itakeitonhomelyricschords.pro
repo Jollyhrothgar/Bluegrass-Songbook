@@ -1,6 +1,9 @@
 {meta: title I Take It On Home}
 {meta: artist Charlie Rich}
 {meta: composer Kenny O'Dell}
+{meta: x_source classic-country}
+{meta: x_source_file itakeitonhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes at the end of the [C7]day
@@ -27,3 +30,5 @@ Cause I [C]believe [Em]she'd do the [Am]same if she was [D7]me
 [Am]And when I ain't [C]working I [C7]don't hang out I [F]take it on [C]home
 [G7]I back it on [C]up turn it [F]around and [G7]take it on [F]home
 {end_of_verse}
+
+

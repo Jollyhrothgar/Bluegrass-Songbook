@@ -1,5 +1,8 @@
 {meta: title Back When We Were Young}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file backwhenwewereyounglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Back when we were [C]young everybody came to [G]see us
@@ -46,3 +49,9 @@ Live as far away as [G]California
 {start_of_verse: Verse 6}
 Back when we were [C]young[G]
 {end_of_verse}
+
+
+
+
+
+

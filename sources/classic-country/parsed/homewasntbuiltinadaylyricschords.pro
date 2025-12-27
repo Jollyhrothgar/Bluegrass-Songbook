@@ -1,6 +1,9 @@
 {meta: title Home Wasn't Built In A Day}
 {meta: artist Cal Smith}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file homewasntbuiltinadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I close the [D7]office at [G]five
@@ -36,3 +39,7 @@
 [G]Until love slowly [G7]laid every [C]stone
 [G]In this state of [D7]mind castle called [G][C]home
 {end_of_verse}
+
+
+
+

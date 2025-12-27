@@ -1,5 +1,8 @@
 {meta: title Moon Girl}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file moongirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One dark night as I drove [F]along
@@ -68,3 +71,12 @@
 [F]I come [C]all the way [G7]down to see [C]you
 [F]I come [C]all the way [G7]down to see [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

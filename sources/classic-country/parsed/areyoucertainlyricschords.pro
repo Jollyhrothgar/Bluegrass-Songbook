@@ -1,6 +1,9 @@
 {meta: title Are You Certain}
 {meta: artist Jean Shepard}
 {meta: composer Bennie Benjamin and Sol Marcus}
+{meta: x_source classic-country}
+{meta: x_source_file areyoucertainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Are you certain [D7]when you say you [G]care
@@ -23,3 +26,5 @@
 [D7]So be certain you see only [G]me
 [D7]So be certain you see only [G]me
 {end_of_verse}
+
+

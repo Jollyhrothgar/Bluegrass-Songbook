@@ -1,6 +1,9 @@
 {meta: title Then You Can Let Me (Out Of Your Mind)}
 {meta: artist Moe Bandy}
 {meta: composer Steve Collom}
+{meta: x_source classic-country}
+{meta: x_source_file thenyoucanletmeoutofyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time you touch me [F]you're touching someone else
@@ -33,3 +36,7 @@ I know it's over but you know I [G7]tried
 {start_of_verse: Verse 4}
 [G7]Then you can let me go out of your [C]mind
 {end_of_verse}
+
+
+
+

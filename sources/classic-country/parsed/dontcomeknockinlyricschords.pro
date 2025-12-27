@@ -1,5 +1,8 @@
 {meta: title Don't Come Knockin'}
 {meta: artist Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file dontcomeknockinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't come knocking on my door 
@@ -34,3 +37,8 @@ I just can't go on I just can't [D7]go on
 [C]I'll find the one gonna treat me right treat me [G]right
 [D7]Gonna treat me [G]right
 {end_of_verse}
+
+
+
+
+

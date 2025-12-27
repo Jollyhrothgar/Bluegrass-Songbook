@@ -1,6 +1,9 @@
 {meta: title I'm Beginning To Believe}
 {meta: artist Wynn Stewart}
 {meta: composer Dale Noe}
+{meta: x_source classic-country}
+{meta: x_source_file imbeginningtobelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm be[F]ginning to be[G7]lieve you're in [C]love
@@ -29,3 +32,6 @@ You [D7]fill the emptiness inside of [G]me that I once [G7]knew
 I'm be[F]ginning to be[G7]lieve we're in [C]love
 When [G7]looking in your eyes I see [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Silver Sandals}
 {meta: artist Dolly Parton & Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file silversandalslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In [F]silver sandals she goes walking up those golden [C]stairs
@@ -47,3 +50,9 @@ In silver sandals [G7]walking through our [C]minds
 {start_of_verse: Verse 5}
 In silver sandals [G7]walking through our [C]minds
 {end_of_verse}
+
+
+
+
+
+

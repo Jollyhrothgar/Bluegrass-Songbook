@@ -1,6 +1,9 @@
 {meta: title I Really Got The Feeling}
 {meta: artist Dolly Parton}
 {meta: composer Billy Vera and William McCord}
+{meta: x_source classic-country}
+{meta: x_source_file ireallygotthefeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I really got the feeling that I'll love you for a long long time
@@ -40,3 +43,8 @@ I [Dm]really got the feeling got the [G7]feeling
 I [Dm]really got the feeling got the [G7]feeling
 I [Dm]really got the [G7]feeling that I'll love you till my dying [C]day
 {end_of_verse}
+
+
+
+
+

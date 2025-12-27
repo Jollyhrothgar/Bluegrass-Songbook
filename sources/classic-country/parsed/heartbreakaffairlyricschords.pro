@@ -1,6 +1,9 @@
 {meta: title Heartbreak Affair}
 {meta: artist Porter Wagoner}
 {meta: composer Kay Adams}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Glad that we're [F]through I keep [G]telling [F]myself
@@ -22,3 +25,5 @@
 [G]Glad that we're [F]through I keep [G]telling [F]myself
 [G]But this was a [C]heartbreak [G]affair
 {end_of_verse}
+
+

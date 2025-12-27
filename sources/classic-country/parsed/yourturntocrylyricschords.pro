@@ -1,6 +1,9 @@
 {meta: title Your Turn To Cry}
 {meta: artist Hank Williams Jr.}
 {meta: composer Hank Williams and Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file yourturntocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The day that we parted you [G7]laughed when I [C]cried
@@ -29,3 +32,6 @@ My [G7]turn to laugh [C]your turn to cry
 [G7]But now I've forgotten no more [C]tears in my [C7]eyes
 It's [F]my turn to [G7]laugh and your turn to [C]cry
 {end_of_verse}
+
+
+

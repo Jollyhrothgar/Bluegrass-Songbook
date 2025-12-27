@@ -1,6 +1,9 @@
 {meta: title Never Again Again}
 {meta: artist Lee Ann Womack}
 {meta: composer Monty Holmes and Barbie Isham}
+{meta: x_source classic-country}
+{meta: x_source_file neveragainagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Never again again
@@ -47,3 +50,8 @@
 [G7]And just like it's always been
 [F]I'll say never again [C]again
 {end_of_verse}
+
+
+
+
+

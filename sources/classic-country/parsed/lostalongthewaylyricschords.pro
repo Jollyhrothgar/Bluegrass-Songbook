@@ -1,6 +1,9 @@
 {meta: title Lost Along The Way}
 {meta: artist Faron Young}
 {meta: composer Bobby Harden}
+{meta: x_source classic-country}
+{meta: x_source_file lostalongthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love has been a lonely [C]road for you to [G]travel
@@ -34,3 +37,6 @@ You just got [D7]lost along the [G]way
 Fate was [C]sendin' [D7]you to [C]me 
 You just got [D7]lost along the [G]way
 {end_of_verse}
+
+
+

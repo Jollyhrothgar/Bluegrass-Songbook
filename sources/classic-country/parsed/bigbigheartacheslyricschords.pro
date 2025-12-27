@@ -1,6 +1,9 @@
 {meta: title Big Big Heartaches}
 {meta: artist Melba Montgomery}
 {meta: composer Melba Montgomery and Carl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file bigbigheartacheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At night I try to sleep but sleep won't [F]come
@@ -33,3 +36,7 @@ Big big heartaches [F]keep hanging on
 {start_of_verse: Verse 5}
 [G7]Big big heartaches since you're [C]gone 
 {end_of_verse}
+
+
+
+

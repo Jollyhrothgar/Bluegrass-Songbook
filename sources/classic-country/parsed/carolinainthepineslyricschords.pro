@@ -1,5 +1,8 @@
 {meta: title Carolina In The Pines}
 {meta: artist Michael Martin Murphey}
+{meta: x_source classic-country}
+{meta: x_source_file carolinainthepineslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She came to me said she knew [D7]me
@@ -42,3 +45,8 @@
 [C]There are nights I only feel [G]right
 [C]With Carolina in the [G]pines
 {end_of_verse}
+
+
+
+
+

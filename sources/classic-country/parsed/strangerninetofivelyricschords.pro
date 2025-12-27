@@ -1,6 +1,9 @@
 {meta: title Stranger Nine To Five}
 {meta: artist Jean Shepard}
 {meta: composer Charlie Williams, Scott Turner, Chris Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file strangerninetofivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well there she goes again and the [F]hurt [C]begins
@@ -27,3 +30,6 @@
 [F]But when each endless day is through I'll try to make it up to you
 [G7]For acting like a stranger nine to [C]five
 {end_of_verse}
+
+
+

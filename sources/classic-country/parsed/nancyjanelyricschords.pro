@@ -1,6 +1,9 @@
 {meta: title Nancy Jane}
 {meta: artist Bob Wills}
 {meta: composer Tommy Duncan and Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file nancyjanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gotta gal long and tall sweet as she can be
@@ -36,3 +39,7 @@ My heart got to jumping it got so hot it burned a hole in my under[C7]shirt
 I'm crazy about [F]Nance Jane oh crazy about [C]Nancy [A7]Jane
 [D7]When she starts loving [G7]sure makes a hit with [C]me
 {end_of_verse}
+
+
+
+

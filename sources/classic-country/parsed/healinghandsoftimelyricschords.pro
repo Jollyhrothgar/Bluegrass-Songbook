@@ -1,6 +1,9 @@
 {meta: title Healing Hands of Time}
 {meta: artist Ray Price}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file healinghandsoftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They're working while I'm missing you 
@@ -34,3 +37,7 @@ I'll get over you by clinging [G]to
 [C]I'll get over you by clinging [G]to 
 [D7]Those healing hands of [G]time
 {end_of_verse}
+
+
+
+

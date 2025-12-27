@@ -1,6 +1,9 @@
 {meta: title Wild Eyed Dream}
 {meta: artist Ricky Van Shelton}
 {meta: composer Alan Rhody}
+{meta: x_source classic-country}
+{meta: x_source_file wildeyeddreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Chattanooga down in Chattanooga
@@ -43,3 +46,8 @@ She [D7]turned out to be just another wild eyed [G]dream
 {start_of_verse: Verse 6}
 She [D7]turned out to be just another wild eyed [G]dream
 {end_of_verse}
+
+
+
+
+

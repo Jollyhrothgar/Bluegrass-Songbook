@@ -1,5 +1,8 @@
 {meta: title Knock Off Your Nagging}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file knockoffyournagginglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Knock off your nagging and leave me be 
@@ -42,3 +45,8 @@ You [C7]holler in your [F]head
 So knock off your nagging and [C]leave me be 
 And please [G7]let me go to [C]bed
 {end_of_verse}
+
+
+
+
+

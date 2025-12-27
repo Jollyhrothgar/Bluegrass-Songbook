@@ -1,6 +1,9 @@
 {meta: title A Man Called Peter}
 {meta: artist Ray Price}
 {meta: composer Charles Tobias}
+{meta: x_source classic-country}
+{meta: x_source_file amancalledpeterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I met a man called [F]Peter when my [D7]dreams had gone [C][G7]astray
@@ -22,3 +25,5 @@
 [C]Somewhere this man called [F]Peter helps [D7]people [G7]just like [C]me
 [F]If there were more like [Dm]Peter what a great [G7]world this would [C]be
 {end_of_verse}
+
+

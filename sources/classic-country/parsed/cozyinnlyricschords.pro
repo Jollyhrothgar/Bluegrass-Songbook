@@ -1,6 +1,9 @@
 {meta: title Cozy Inn}
 {meta: artist Hank Thompson}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file cozyinnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well there's a place I know
@@ -58,3 +61,13 @@ It's the place to go for the lights are low
 {start_of_verse: Verse 10}
 [G7]Yeah every thing's rosy down at the Cozy [C]Inn
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

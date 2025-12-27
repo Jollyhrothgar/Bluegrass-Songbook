@@ -1,6 +1,9 @@
 {meta: title We're Watching Our Steps}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery and Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file werewatchingourstepslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our love is a secret [G7]we’re watching our [C]steps [F]   [C]
@@ -30,3 +33,7 @@ Our [F]love is a [C]secret [G7]our love is a [C]shame [F]    [C]
 {start_of_verse: Verse 1}
 [C]Our love is a secret [G7]we’re watching our [C]steps [F]   [C]
 {end_of_verse}
+
+
+
+

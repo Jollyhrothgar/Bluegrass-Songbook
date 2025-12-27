@@ -1,6 +1,9 @@
 {meta: title I Believe}
 {meta: artist Jamie Dailey and Darrin Vincent}
 {meta: composer Jimmy Fortune}
+{meta: x_source classic-country}
+{meta: x_source_file ibelievelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I see the [F]sunrise in the [C]morning
@@ -29,3 +32,6 @@ I be[Em]lieve in a [F]place called Calva[G7]ry
 I [Am]believe in a [F]man His name is [C]Jesus
 [F]And I [C]believe that He [G7]gave His life for [C]me
 {end_of_verse}
+
+
+

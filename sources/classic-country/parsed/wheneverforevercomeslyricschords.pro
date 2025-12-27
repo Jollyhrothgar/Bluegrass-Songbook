@@ -1,6 +1,9 @@
 {meta: title Whenever Forever Comes}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file wheneverforevercomeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whenever [G7]forever [C]comes when [E7]darkness shall hide the [F]sun
@@ -38,3 +41,7 @@ You'll [E7]gather the stars [F]you'll give them to me
 I'll give you the moon and we'll [C]replace the [Am]sun
 [C]Whenever [G7]forever [Am]com[F]es [C]whenever [G7]forever [C]comes
 {end_of_verse}
+
+
+
+

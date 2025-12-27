@@ -1,6 +1,9 @@
 {meta: title Going Ape Over You}
 {meta: artist Jimmy Martin}
 {meta: composer Abe Mulkey and Bruce Delaney}
+{meta: x_source classic-country}
+{meta: x_source_file goingapeoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Stand on my head if you want me to
@@ -46,3 +49,8 @@ Yeah you've got me going ape over you
 Skiddley-oh-bote-'n you've got me going [D7]ape over [G]you
 Skiddley-oh bote-'n doo-oo-ooo
 {end_of_verse}
+
+
+
+
+

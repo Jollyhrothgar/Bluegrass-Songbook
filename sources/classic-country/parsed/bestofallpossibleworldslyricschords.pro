@@ -1,6 +1,9 @@
 {meta: title Best Of All Possible Worlds}
 {meta: artist Roger Miller}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file bestofallpossibleworldslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was [E7]runnin' through the summer rain 
@@ -76,3 +79,11 @@ Lots [D7]of pretty thoughts that I ain't never [G]thunk oh yeah
 Lord there's still so many lonely [C]girls 
 In [D7]this best of all possible [G]worlds
 {end_of_verse}
+
+
+
+
+
+
+
+

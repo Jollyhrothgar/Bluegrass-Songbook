@@ -1,6 +1,9 @@
 {meta: title Head Over Heels In Love With You}
 {meta: artist Porter Wagoner}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file headoverheelsinlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I think I'll go across the ocean
@@ -33,3 +36,6 @@ I just can't bear the [D7]thought of loosing [G]you
 I'm [C]feeling so blue I [G]don't know what to do
 For I'm head over [D7]heels in love with [G]you 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title True}
 {meta: artist George Strait}
 {meta: composer Jeff Stevens and Marv Green}
+{meta: x_source classic-country}
+{meta: x_source_file truelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]True in this modern world when two lovers get together
@@ -43,3 +46,7 @@ This feelin' just keeps gettin' stronger as the time goes by
 [D7]Right as the rain falling from the sky
 [Em]Girl my love for [C]you  is [G]true
 {end_of_verse}
+
+
+
+

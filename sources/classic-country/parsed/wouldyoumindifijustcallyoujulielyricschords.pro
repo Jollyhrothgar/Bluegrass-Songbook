@@ -1,6 +1,9 @@
 {meta: title Would You Mind If I Just Call You Julie}
 {meta: artist Moe Bandy}
 {meta: composer Shirl Milete and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyoumindifijustcallyoujulielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You sure are a lonely lookin' [F]lady
@@ -34,3 +37,7 @@
 [C7]Would you mind too much if I just call you [F]Julie
 [C]And you can call me [G7]anything you [C]like
 {end_of_verse}
+
+
+
+

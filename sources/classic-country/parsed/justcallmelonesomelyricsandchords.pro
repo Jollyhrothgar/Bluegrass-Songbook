@@ -1,6 +1,9 @@
 {meta: title Just Call Me Lonesome}
 {meta: artist Radney Foster}
 {meta: composer George Ducas and Radney Foster}
+{meta: x_source classic-country}
+{meta: x_source_file justcallmelonesomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just call me [F]lonesome  heart broke and then [C]some
@@ -33,3 +36,7 @@ Don't need my [G7]old one call me lonesome from now [C]on
 {start_of_verse: Verse 5}
 I don't need my [G7]old one call me lonesome from now [C]on
 {end_of_verse}
+
+
+
+

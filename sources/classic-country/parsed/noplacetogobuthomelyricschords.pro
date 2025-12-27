@@ -1,6 +1,9 @@
 {meta: title No Place To Go But Home}
 {meta: artist Wanda Jackson}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file noplacetogobuthomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They turned out the [C7]lights 
@@ -32,3 +35,6 @@ And [F]my time to weep
 For [G7]there's no place to go but [C]home
 For [G7]there's no place to go but [C]home
 {end_of_verse}
+
+
+

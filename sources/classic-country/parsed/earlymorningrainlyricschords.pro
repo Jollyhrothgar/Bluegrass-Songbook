@@ -1,6 +1,9 @@
 {meta: title Early Morning Rain}
 {meta: artist George Hamilton IV}
 {meta: composer Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file earlymorningrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the early morning [Em]rain  [G7]with a dollar in my [C]hand
@@ -30,3 +33,6 @@ You can't jump a big jet [Dm]plane  [G7]like you can an old freight [C]train
 So I'd best be on my [Em]way  in [G7]the early morning [C]rain
 Yeah I'd best be on my [Em]way  in [G7]the early morning [C]rain
 {end_of_verse}
+
+
+

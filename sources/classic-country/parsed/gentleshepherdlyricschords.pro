@@ -1,6 +1,9 @@
 {meta: title Gentle Shepherd}
 {meta: artist Tammy Wynette}
 {meta: composer Bickley Reichner}
+{meta: x_source classic-country}
+{meta: x_source_file gentleshepherdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Shepherd [D7]shepherd gentle [C][G]shepherd
@@ -48,3 +51,9 @@
 [D7]Shepherd shepherd [G]gentle [C]shepherd
 [G]Show me [D7]how to [G]go
 {end_of_verse}
+
+
+
+
+
+

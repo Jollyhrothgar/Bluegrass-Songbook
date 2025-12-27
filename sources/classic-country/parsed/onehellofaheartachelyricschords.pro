@@ -1,6 +1,9 @@
 {meta: title One Hell Of A Heartache}
 {meta: artist Gene Watson}
 {meta: composer Keith Palmer & Janet White Demmans}
+{meta: x_source classic-country}
+{meta: x_source_file onehellofaheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It’s the first morning after it’s so hard to [Am]face
@@ -30,3 +33,6 @@ God it [Em]hurts me a lot but I know I’ve still [C]got
 One [G]hell of a [D7]heartache to [G]go
 One hell of a [D7]heartache to [G]go
 {end_of_verse}
+
+
+

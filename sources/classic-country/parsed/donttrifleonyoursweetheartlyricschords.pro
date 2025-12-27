@@ -1,6 +1,9 @@
 {meta: title Don't Trifle On Your Sweetheart}
 {meta: artist Ernest Tubb}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file donttrifleonyoursweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't trifle on your sweetheart the one who wears your wedding [D7]ring
@@ -30,3 +33,6 @@ You'll end up [C]like some faded rose in some [A7]back alley garbage [D7]can
 Don't [G]trifle on your sweetheart you'll be sorry if you [D7]do
 If you trifle on your sweetheart she's got the right to trifle [G]too
 {end_of_verse}
+
+
+

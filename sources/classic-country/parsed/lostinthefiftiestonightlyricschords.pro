@@ -1,6 +1,9 @@
 {meta: title Lost In The Fifties Tonight}
 {meta: artist Ronnie Milsap}
 {meta: composer Mike Reid, Troy Seals, Fred Parris}
+{meta: x_source classic-country}
+{meta: x_source_file lostinthefiftiestonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Close your eyes baby [C7] follow my heart
@@ -27,3 +30,6 @@ In the [C]still of the [Am]night  hold me [F]darling hold me [G7]tight
 Oh  [C]shoo-doop shoo-be [Em]do  [Am]shoo-doop doo  [G7]so [F]real  so [G7]right
 Lost in the fifties to[C]night
 {end_of_verse}
+
+
+

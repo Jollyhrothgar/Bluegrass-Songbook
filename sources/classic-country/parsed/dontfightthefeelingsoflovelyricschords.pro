@@ -1,6 +1,9 @@
 {meta: title Don’t Fight The Feelings Of Love}
 {meta: artist Charley Pride}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file dontfightthefeelingsoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don'tcha don'tcha don'tcha fight the feelings of [D7]love
@@ -36,3 +39,7 @@ Don't fight the feelings of [G]love
 Don't [D7]fight the feelings don't fight the feelings 
 Don't fight the feelings of [G]love
 {end_of_verse}
+
+
+
+

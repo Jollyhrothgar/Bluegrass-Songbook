@@ -1,6 +1,9 @@
 {meta: title I Don't Wanna Love You}
 {meta: artist Ricky Nelson}
 {meta: composer Barry Mann and Cynthia Weil}
+{meta: x_source classic-country}
+{meta: x_source_file idontwannaloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't wanna dream about you [F]every single [G7]night
@@ -30,3 +33,6 @@
 [G7]I know I don't wanna [C]love you (don’t won’t love [F]you)
 [G7]Aw but I [C]do
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Could Be Makin' Love To You}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file icouldbemakinlovetoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Shag carpet on a [F]hotel floor [G7]black and white [C]TV
@@ -36,3 +39,7 @@ They say it comes out [F]sometime this year [G7]I can hardly [C]wait
 Till then I'm a [F]barroom boy [G7]playin' for my [C]pay
 But if I could only be there [F]in your arms you know [G7]I'd throw it all [C]away
 {end_of_verse}
+
+
+
+

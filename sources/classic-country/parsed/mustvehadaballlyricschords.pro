@@ -1,5 +1,8 @@
 {meta: title Must've Had A Ball}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file mustvehadaballlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I must've had a ball last night
@@ -74,3 +77,12 @@ There [F]ain't no way of knowing
 But [C]all the signs are [Am]showing
 I [D7]must've had a [G7]ball last [C]night
 {end_of_verse}
+
+
+
+
+
+
+
+
+

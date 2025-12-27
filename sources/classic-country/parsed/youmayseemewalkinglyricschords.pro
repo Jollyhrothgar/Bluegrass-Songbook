@@ -1,5 +1,8 @@
 {meta: title You May See Me Walking}
 {meta: artist Ricky Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file youmayseemewalkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You may see me walking you may hear me talking
@@ -21,3 +24,5 @@ But the [C]words I speak won't [D7]ever be about [G]you
 You may see me walking you may hear me talking
 But the [C]words I speak won't [D7]ever be about [G]you
 {end_of_verse}
+
+

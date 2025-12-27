@@ -1,6 +1,9 @@
 {meta: title Forty And Found}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Luke Reed}
+{meta: x_source classic-country}
+{meta: x_source_file fortyandfoundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I topped the ridge this mornin' looked [F]across the great expanse
@@ -48,3 +51,9 @@ And on [G7]top of all of this I'm gettin' forty and [C]found
 Now I wouldn't trade my hot roll for a [F]feather bed in town
 And on [G7]top of all of this I'm gettin' forty and [C]found
 {end_of_verse}
+
+
+
+
+
+

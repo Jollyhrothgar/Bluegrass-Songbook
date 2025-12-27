@@ -1,6 +1,9 @@
 {meta: title Years}
 {meta: artist Barbara Mandrell}
 {meta: composer Dennis Morgan and Rhonda Fleming}
+{meta: x_source classic-country}
+{meta: x_source_file yearslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Faded photographs   [F]the feelings all [G7]come [C]back
@@ -29,3 +32,6 @@ Years of hanging on   to dreams already [F]gone
 After all this time   you'd think I wouldn’t [F]cry
 [G7]It’s just  that I still love you  after all these [C]years
 {end_of_verse}
+
+
+

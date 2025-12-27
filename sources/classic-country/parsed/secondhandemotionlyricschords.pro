@@ -1,6 +1,9 @@
 {meta: title Second Hand Emotion}
 {meta: artist Faron Young}
 {meta: composer Charlie Black and Rory Bourke}
+{meta: x_source classic-country}
+{meta: x_source_file secondhandemotionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If passion were a river you would surely [G7]overflow
@@ -40,3 +43,7 @@
 [G]You gave such a fine performance
 [C]That it never feels [G]like second hand [D7]emotion to [C]me
 {end_of_verse}
+
+
+
+

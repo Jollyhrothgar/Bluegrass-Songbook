@@ -1,6 +1,9 @@
 {meta: title This Moment Of Love}
 {meta: artist Ferlin Husky}
 {meta: composer Gene Flocca}
+{meta: x_source classic-country}
+{meta: x_source_file thismomentoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This moment of love is tender and [G7]true
@@ -33,3 +36,7 @@
 [C]I'll never forget [G7]never regret this moment of [C]love
 [G7]This moment of [C]love
 {end_of_verse}
+
+
+
+

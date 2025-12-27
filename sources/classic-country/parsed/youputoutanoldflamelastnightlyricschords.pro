@@ -1,6 +1,9 @@
 {meta: title You Put Out An Old Flame Last Night}
 {meta: artist Gene Watson}
 {meta: composer D. Lindsey and E. Rowell}
+{meta: x_source classic-country}
+{meta: x_source_file youputoutanoldflamelastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just called to thank you for [F]turning me [C]around
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]Yes put out an [G7]old flame last [C]night
 {end_of_verse}
+
+
+

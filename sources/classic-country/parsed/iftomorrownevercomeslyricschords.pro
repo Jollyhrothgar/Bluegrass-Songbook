@@ -1,6 +1,9 @@
 {meta: title If Tomorrow Never Comes}
 {meta: artist Charley Pride}
 {meta: composer Garth Brooks and Kent Biazy}
+{meta: x_source classic-country}
+{meta: x_source_file iftomorrownevercomeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes late at [Dm]night
@@ -65,3 +68,11 @@ If tomorrow never [G7][C]comes
 Just what you’re thinking [G7]of
 If tomorrow never [C][F]comes
 {end_of_verse}
+
+
+
+
+
+
+
+

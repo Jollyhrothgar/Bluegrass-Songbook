@@ -1,6 +1,9 @@
 {meta: title Barely Beatin' Broken Heart}
 {meta: artist Highway 101}
 {meta: composer Roger Miller and Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file barelybeatinbrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you see me in some corner looking like all hope is gone
@@ -29,3 +32,6 @@ He [F]left me for another thought he'd [C]be the last who [G7]would
 So I'm [C]tryin' to forget him lookin' [F]for a place to start
 I'm a [C]walkin' talkin' cryin' barely [G7]beatin' broken [C]heart
 {end_of_verse}
+
+
+

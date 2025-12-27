@@ -1,6 +1,9 @@
 {meta: title Crazy Dreams Lyrics Chords}
 {meta: artist Patsy Cline}
 {meta: composer W.S. Stevenson, Clyde C. Beam, Charley L. Jiles}
+{meta: x_source classic-country}
+{meta: x_source_file crazydreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I had a dream last night that I held [C]you
@@ -37,3 +40,7 @@ Just another Crazy [D7]Dream for [G]me
 {start_of_verse: Verse 5}
 Just another Crazy [D7]Dream for [G]me
 {end_of_verse}
+
+
+
+

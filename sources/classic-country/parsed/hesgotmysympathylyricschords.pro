@@ -1,6 +1,9 @@
 {meta: title He's Got My Sympathy}
 {meta: artist The Everly Brothers}
 {meta: composer Jack Keller and Gerry Goffin}
+{meta: x_source classic-country}
+{meta: x_source_file hesgotmysympathylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Some lucky guy has caught your [C]eye
@@ -44,3 +47,9 @@
 [G7]Cause if you hurt him the way that you hurt me
 [C]It's gonna take all the [F]strength he's [C]got
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just As I Am}
 {meta: artist Ricky Van Shelton}
 {meta: composer Larry Boone and Paul Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file justasiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was lost and [D7]aimlessly [G]searching
@@ -35,3 +38,7 @@ Tag:
 You turned me around with one [C]touch of your [G]hand
 And your love saved me [D7]just as I [G]am
 {end_of_verse}
+
+
+
+

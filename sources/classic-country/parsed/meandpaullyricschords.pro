@@ -1,5 +1,8 @@
 {meta: title Me And Paul}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file meandpaullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's been rough and rocky traveling 
@@ -55,3 +58,7 @@ But I know I've said the same about them all
 We've [D7]received our education 
 In the cities of the nation me and [G]Paul
 {end_of_verse}
+
+
+
+

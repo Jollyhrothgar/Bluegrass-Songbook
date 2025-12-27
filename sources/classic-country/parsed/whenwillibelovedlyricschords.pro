@@ -1,6 +1,9 @@
 {meta: title When Will I Be Loved}
 {meta: artist Everly Brothers}
 {meta: composer Phil Everly}
+{meta: x_source classic-country}
+{meta: x_source_file whenwillibelovedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve been [C]made blue  I’ve [G]been lied [C]to 
@@ -23,3 +26,5 @@ She [C]always breaks my [D7]heart in two it [C]happens every [D7]time
 [G]When will I [C]be [G]loved 
 When will I [C]be [G]loved 
 {end_of_verse}
+
+

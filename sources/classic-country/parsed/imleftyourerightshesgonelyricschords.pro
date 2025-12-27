@@ -1,6 +1,9 @@
 {meta: title I'm Left You're Right She's Gone}
 {meta: artist Elvis Presley}
 {meta: composer Stan Kesler and Bill Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file imleftyourerightshesgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you're right I'm [G7]left she's [C]gone
@@ -50,3 +53,9 @@ Well she's [F]gone I know not where
 But [C]now I just don't care
 For [G7]now I'm falling for [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title He’s My Guide}
 {meta: artist Doyle Lawson}
 {meta: composer George Shuffler}
+{meta: x_source classic-country}
+{meta: x_source_file hesmyguidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I'm down and so in [C]strife 
@@ -33,3 +36,7 @@ He is [G]there and [D7]He's my [G]guide
 {start_of_verse: Verse 4}
 [C]Jesus [G]loves me [D7]He's my [C]guide He's my [G]guide
 {end_of_verse}
+
+
+
+

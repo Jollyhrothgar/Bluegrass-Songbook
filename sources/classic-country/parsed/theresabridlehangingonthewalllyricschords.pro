@@ -1,6 +1,9 @@
 {meta: title There's A Bridle Hanging On The Wall}
 {meta: artist Noel Parlane}
 {meta: composer Carson Robison}
+{meta: x_source classic-country}
+{meta: x_source_file theresabridlehangingonthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a bridle [G7]hanging on the [C]wall
@@ -31,3 +34,6 @@ His [F]saddle's in a lonely [C]stall
 No [G7]more will he answer to my [C]call
 Just his [G7]bridle's hanging on the [C]wall
 {end_of_verse}
+
+
+

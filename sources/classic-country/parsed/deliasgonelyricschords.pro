@@ -1,6 +1,9 @@
 {meta: title Delia’s Gone}
 {meta: artist Johnny Cash}
 {meta: composer Karl Silbersdorf and Dick Toops}
+{meta: x_source classic-country}
+{meta: x_source_file deliasgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Delia oh [C]Delia [G]Delia all my life
@@ -32,3 +35,7 @@ And [C]every rock I bust I seem to [A7]ring out Delia's [D7]name
 Delia's [G]gone [C]one more [G]round [D7]Delia's [G]gone
 [D7]Delia's [G]gone [C]one more [G]round [D7]Delia's [G]gone  
 {end_of_verse}
+
+
+
+

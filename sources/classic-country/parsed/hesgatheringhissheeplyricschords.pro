@@ -1,6 +1,9 @@
 {meta: title He's Gathering His Sheep}
 {meta: artist Billy Parker}
 {meta: composer Thomas C. Smith}
+{meta: x_source classic-country}
+{meta: x_source_file hesgatheringhissheeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Brothers please listen to the [F]words of my [C]song
@@ -40,3 +43,8 @@ Ask and He’ll lead you [G7]out of the [C]dark
 {start_of_verse: Verse 4}
 Jesus will lead you [G7]out of the [F]dar[C]k
 {end_of_verse}
+
+
+
+
+

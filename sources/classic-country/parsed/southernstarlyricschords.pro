@@ -1,6 +1,9 @@
 {meta: title Southern Star}
 {meta: artist Alabama}
 {meta: composer Rich Alves, Steve Dean, Roger Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file southernstarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -41,3 +44,8 @@ And [Dm]too old to [C]be wild and [G]free
 Oh southern [F]star how I [C]wish you would [G]shine
 And [Dm]show me the [C]way to get [G]home
 {end_of_verse}
+
+
+
+
+

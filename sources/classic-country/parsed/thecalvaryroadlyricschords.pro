@@ -1,5 +1,8 @@
 {meta: title The Calvary Road}
 {meta: artist Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file thecalvaryroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The calvary road is the [C]highway to [G]heaven
@@ -33,3 +36,7 @@ There's just one way to God that's the [D7]calvary [G]road
 It was paved by the blood of [C]Jesus the [G]Savior
 There's just one way to God that's the [D7]Calvary [G]road
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Welcome To The Sunshine (Sweet Baby Jane)}
 {meta: artist Jeanne Pruett}
 {meta: composer Ray Willis}
+{meta: x_source classic-country}
+{meta: x_source_file welcometothesunshinesweetbabyjanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Welcome to the sunshine [G]sweet baby Jane
@@ -36,3 +39,7 @@ Welcome to the [C]love I hope you'll [G]find
 [C]Memories of bumble bees and [G]honeysuckle vine
 Welcome to the sunshine [D7]sweet baby [G]Jane
 {end_of_verse}
+
+
+
+

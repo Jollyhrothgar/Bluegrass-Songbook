@@ -1,5 +1,8 @@
 {meta: title Dreaming Of You}
 {meta: artist Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file dreamingofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Moments to [F]remember [C]every day and [G7]night
@@ -21,3 +24,5 @@ And [C]if you ever [F]change your mind [G7]please come back to [C]me
 I'll [G7]keep on dreaming I'll keep on [C]dreaming
 [F]Dream[G7]ing of [C]you
 {end_of_verse}
+
+

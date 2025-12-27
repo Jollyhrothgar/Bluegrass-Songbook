@@ -1,6 +1,9 @@
 {meta: title A Cowboy Like You}
 {meta: artist Reba McEntire}
 {meta: composer Tompall Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file acowboylikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well there's a [G]jukebox [D7]in my [G]ear 
@@ -41,3 +44,8 @@ But I can't stand to [C]be a[G]lone
 Cause I'll only [D7]dream about a cowboy like [G]you
 [C]Yeah I'll only [G]dream about [D7]a cowboy like [G]you
 {end_of_verse}
+
+
+
+
+

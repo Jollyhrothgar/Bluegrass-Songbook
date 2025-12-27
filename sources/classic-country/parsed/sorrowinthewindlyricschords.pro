@@ -1,6 +1,9 @@
 {meta: title Sorrow In The Wind}
 {meta: artist Emmylou Harris}
 {meta: composer Jean Ritchie}
+{meta: x_source classic-country}
+{meta: x_source_file sorrowinthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I [D7]hear the soft wind [G]sighing 
@@ -52,3 +55,10 @@ Sweet sorrow [D7]in the [G]wind
 {start_of_verse: Verse 6}
 Sweet [C]sor[Em]row [D7]in the [G]wind
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Down In Caroline}
 {meta: artist Big Country Bluegrass}
 {meta: composer Charlie Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file downincarolinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the shadow of the pines
@@ -55,3 +58,10 @@ And I'll find that [C]girl of mine
 And I'll find that [C]girl of mine
 [D7]Way down in Caro[G]line
 {end_of_verse}
+
+
+
+
+
+
+

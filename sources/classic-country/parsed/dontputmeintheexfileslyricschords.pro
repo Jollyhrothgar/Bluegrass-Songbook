@@ -1,6 +1,9 @@
 {meta: title Don't Put Me in the Ex Files}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file dontputmeintheexfileslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I stumbled in at four A.M. this [F]morning
@@ -47,3 +50,9 @@ Shootin' the [C]bull and a-[G7]makin' lots of [C]noise
 {start_of_verse: Verse 5}
 Shootin' the [G7]bull and a-makin' lots of [C]noise 
 {end_of_verse}
+
+
+
+
+
+

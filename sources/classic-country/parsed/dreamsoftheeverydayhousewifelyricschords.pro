@@ -1,6 +1,9 @@
 {meta: title Dreams of the Everyday Housewife}
 {meta: artist Glen Campbell}
 {meta: composer Chris Gantry}
+{meta: x_source classic-country}
+{meta: x_source_file dreamsoftheeverydayhousewifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C7]She looks in the mirror and stares at [C]the
@@ -41,3 +44,8 @@ The photograph album she takes
 [C]You see [Dm]everywhere any [C]time of the [G]day
 [F]An everyday housewife who gave up the good life for [C]me
 {end_of_verse}
+
+
+
+
+

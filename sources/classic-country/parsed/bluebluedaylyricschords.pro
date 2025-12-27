@@ -1,5 +1,8 @@
 {meta: title Blue Blue Day}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file bluebluedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's been a blue blue day I feel like runnin' away 
@@ -34,3 +37,8 @@ I feel like [C]praying saying I'm glad [G]we're [D7]through
 It's been a blue blue day I feel like runnin' [G]away 
 I feel like [C]runnin' [D7]away from the [G]blues
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rollin' Home}
 {meta: artist Gene Watson}
 {meta: composer Keith Stegall and Brent Mason}
+{meta: x_source classic-country}
+{meta: x_source_file rollinhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun wasn't even up yet when I [Bb7]left Pittsburgh Pa
@@ -33,3 +36,6 @@ And if I'm [Am]lucky by tonight
 Well I’ve [F]got that hammer down
 [G7]Lord I'm Dixie bound I'm goin' [Bb7]home going [C]home
 {end_of_verse}
+
+
+

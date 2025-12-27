@@ -1,6 +1,9 @@
 {meta: title The Great Divide}
 {meta: artist Gene Watson}
 {meta: composer John Royce Lindley and Randy Bruce Traywick}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatdividelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's time for us to settle up [C]and go [D7]our separate [G]ways
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]There's just no turning [G]back  [D7]we've crossed the great [G][C]divide
 {end_of_verse}
+
+
+
+

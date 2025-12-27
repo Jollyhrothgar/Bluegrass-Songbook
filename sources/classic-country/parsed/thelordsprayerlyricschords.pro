@@ -1,6 +1,9 @@
 {meta: title The Lord's Prayer}
 {meta: artist Johnny Mathis}
 {meta: composer Albert Hay Malotte}
+{meta: x_source classic-country}
+{meta: x_source_file thelordsprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our [G7]Father  [C]which art in [G7][Dm]hea-ven
@@ -23,3 +26,5 @@ And the [D7]power and the [Dm]glory [Dm][C]for-ev-er
 {comment: G7 C}
 {comment: A-men}
 {end_of_verse}
+
+

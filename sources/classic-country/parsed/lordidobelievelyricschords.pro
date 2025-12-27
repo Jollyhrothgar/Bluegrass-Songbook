@@ -1,5 +1,8 @@
 {meta: title Lord I Do Believe}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file lordidobelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord there’s no way that I can make it [C]up to [D7]you
@@ -36,3 +39,6 @@ To [G7]set your people [C]free
 I [D7]know my soul is in your hands
 Lord I do [G]believe
 {end_of_verse}
+
+
+

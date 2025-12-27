@@ -1,5 +1,8 @@
 {meta: title Where Were You}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file wherewereyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Where were you [G7]where were [C]you)
@@ -32,3 +35,7 @@ With [G7]only tears to keep me compa[C]ny
 That's [F]what destroyed the [G7]love that we once [C]knew
 Stop and think when it [F]happened where were [C]you
 {end_of_verse}
+
+
+
+

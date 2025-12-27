@@ -1,6 +1,9 @@
 {meta: title Highly Prized Possession}
 {meta: artist Anne Murray}
 {meta: composer Dave Palmer and Brian Russell}
+{meta: x_source classic-country}
+{meta: x_source_file highlyprizedpossessionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know it's not your passion
@@ -58,3 +61,8 @@
 [C]Ain't no question of [Em]cost
 [F]Could ever measure [G7]the loss of losing [C]you
 {end_of_verse}
+
+
+
+
+

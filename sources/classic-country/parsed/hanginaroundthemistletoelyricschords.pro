@@ -1,6 +1,9 @@
 {meta: title Hangin' Around The Mistletoe}
 {meta: artist Alabama}
 {meta: composer Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file hanginaroundthemistletoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Snowy days and frosty nights
@@ -59,3 +62,10 @@ Waitin' for you [G]dear
 Hangin' 'round the [D7]mistletoe 
 Waitin' for you [G]dear
 {end_of_verse}
+
+
+
+
+
+
+

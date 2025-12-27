@@ -1,6 +1,9 @@
 {meta: title Longing To Hold You Again}
 {meta: artist Tammy Wynette}
 {meta: composer Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file longingtoholdyouagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All alone here am [B7]I so lonely [C]I could cry
@@ -20,3 +23,5 @@ I'll be [G]longing to [D7]hold you [G]again
 Till once more you're close to [B7]me as close as [C]we can be
 I'll be [G]longing to [D7]hold you [C]agai[G]n
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Sparkling Wine}
 {meta: artist Red Sovine}
 {meta: composer Tommy Hill and Red Sovine}
+{meta: x_source classic-country}
+{meta: x_source_file sparklingwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Give me a big glass I said a big glass let it sparkle with [D7]wine
@@ -29,3 +32,6 @@
 [G]It's not an old love but a cold love that's [G7]twisted my [C]mind
 [G]Give me a big glass I [D7]said a big glass of sparklin' [G]wine
 {end_of_verse}
+
+
+

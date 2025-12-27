@@ -1,6 +1,9 @@
 {meta: title If It Weren't For Me}
 {meta: artist Ricky Van Shelton}
 {meta: composer Roger Brown and David Stephenson}
+{meta: x_source classic-country}
+{meta: x_source_file ifitwerentformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If it weren't for [C]me and all the things I [F]did
@@ -37,3 +40,7 @@ If it weren't for [G7]me I'd be holding [C]you
 {start_of_verse: Verse 5}
 If it weren't for [G7]me I'd be holding [C]you [F]  [C]
 {end_of_verse}
+
+
+
+

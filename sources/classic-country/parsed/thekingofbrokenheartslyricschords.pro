@@ -1,6 +1,9 @@
 {meta: title The King Of Broken Hearts}
 {meta: artist George Strait}
 {meta: composer Jim Lauderdale}
+{meta: x_source classic-country}
+{meta: x_source_file thekingofbrokenheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The king of broken hearts doesn't [F]ask much from his friends
@@ -49,3 +52,9 @@ We know he'll be [Dm]brave tonight
 [G7]Cause he's the king of broken [F]hearts
 He's the king of [G7]broken [C]hearts [F]  [G7]   [C]
 {end_of_verse}
+
+
+
+
+
+

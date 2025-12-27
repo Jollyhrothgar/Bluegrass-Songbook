@@ -1,6 +1,9 @@
 {meta: title How Big A Fire}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file howbigafirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How big a fire must I [Em]build to [A7]melt your heart
@@ -26,3 +29,6 @@ How big a [C]fire must I [D7]build to melt your [G]heart[Dm]
 {start_of_verse: Verse 4}
 [G]How big a [C]fire must I [D7]build to melt your [G]heart
 {end_of_verse}
+
+
+

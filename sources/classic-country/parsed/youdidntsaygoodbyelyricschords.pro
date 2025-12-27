@@ -1,6 +1,9 @@
 {meta: title You Didn't Say Goodbye}
 {meta: artist J.D. Crowe}
 {meta: composer Rebe Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file youdidntsaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night while sitting by my [D7]window
@@ -50,3 +53,9 @@
 [D7]May God forgive you and your love dear
 [G]Because you didn't say goodbye
 {end_of_verse}
+
+
+
+
+
+

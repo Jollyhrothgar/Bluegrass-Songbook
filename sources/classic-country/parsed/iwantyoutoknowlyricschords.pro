@@ -1,6 +1,9 @@
 {meta: title I Want You To Know}
 {meta: artist the Everly Brothers}
 {meta: composer Antoine Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file iwantyoutoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want you to know I love her so [F]well
@@ -31,3 +34,6 @@
 [C]She keeps my poor heart in misery
 [F]Oh boy yeah yeah yeah oh [C]boy
 {end_of_verse}
+
+
+

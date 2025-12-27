@@ -1,5 +1,8 @@
 {meta: title Woman Hungry}
 {meta: artist Norma Jean}
+{meta: x_source classic-country}
+{meta: x_source_file womanhungrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately he's been dining out when his [D7]hungry lips need [G]fed
@@ -28,3 +31,6 @@ There's a [C]gnawing in deep inside his heart [G]that will cause a man to [D7]gr
 He'll play [C]around forbidden fruit reach out and take his [G]share
 When a man gets woman hungry he will find [D7]a meal [G]somewhere
 {end_of_verse}
+
+
+

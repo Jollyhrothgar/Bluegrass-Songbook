@@ -1,6 +1,9 @@
 {meta: title Throw Your Hat In First}
 {meta: artist Norma Jean}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file throwyourhatinfirstlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yeah baby I got your letter I knew you're right
@@ -35,3 +38,7 @@ Come on in and [G]love me baby but [D7]throw your hat in [G]first
 {start_of_verse: Verse 5}
 [C]Come on in and [G]love me baby but [D7]throw your hat in [G]first
 {end_of_verse}
+
+
+
+

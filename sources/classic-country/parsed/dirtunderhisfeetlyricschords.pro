@@ -1,6 +1,9 @@
 {meta: title Dirt Under His Feet}
 {meta: artist Jean Shepard}
 {meta: composer Jimmy Gateley}
+{meta: x_source classic-country}
+{meta: x_source_file dirtunderhisfeetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once he loved me now I'm [F]dirt [G7]under his [C]feet
@@ -30,3 +33,7 @@
 [F]Once he loved [G7]me now I'm dirt under his [C]feet
 [F]Once he loved [G7]me now I'm dirt under his [C]feet
 {end_of_verse}
+
+
+
+

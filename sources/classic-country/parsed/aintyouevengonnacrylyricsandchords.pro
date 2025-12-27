@@ -1,6 +1,9 @@
 {meta: title Ain't You Even Gonna Cry}
 {meta: artist Connie Smith}
 {meta: composer Johnny Russell}
+{meta: x_source classic-country}
+{meta: x_source_file aintyouevengonnacrylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't you even gonna [F]cry
@@ -40,3 +43,8 @@ You may never see me many any[F]more
 {start_of_verse: Verse 4}
 [G7]Ain't you even gonna [F]cry[C]
 {end_of_verse}
+
+
+
+
+

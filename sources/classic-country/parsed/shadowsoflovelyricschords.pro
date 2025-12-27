@@ -1,6 +1,9 @@
 {meta: title Shadows Of Love}
 {meta: artist Tommy Overstreet}
 {meta: composer Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file shadowsoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Shadows [Am]   I'm standing in the [C]shadows [Am]
@@ -40,3 +43,8 @@ That the [C]one you [F]really need is [G7]me
 Till you [Am]d--[C]o  [F]I'll wait patiently
 [G7]In the shadows of [C]love  [Am]    [C]shadows [Am]    [G7]
 {end_of_verse}
+
+
+
+
+

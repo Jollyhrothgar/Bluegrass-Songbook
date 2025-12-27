@@ -1,6 +1,9 @@
 {meta: title Conscience Where Were You}
 {meta: artist Moe Bandy}
 {meta: composer Sanger D. Shafer and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file consciencewherewereyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You came to [C]me this [G]mornin' [C]several hours [G]late
@@ -31,3 +34,7 @@
 {start_of_verse: Verse 5}
 [C]Conscience where [G]were you when [D7]I needed you [C]last [G][D7]night
 {end_of_verse}
+
+
+
+

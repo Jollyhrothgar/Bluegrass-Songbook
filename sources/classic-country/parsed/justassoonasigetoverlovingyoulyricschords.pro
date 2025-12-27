@@ -1,6 +1,9 @@
 {meta: title Just As Soon As I Get Over Loving You}
 {meta: artist Jean Shepard}
 {meta: composer Ben Peters and George Richey}
+{meta: x_source classic-country}
+{meta: x_source_file justassoonasigetoverlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'll go [C]out to[Em]night to [Dm]old [G7]familiar [C]places
@@ -26,3 +29,6 @@ Just as [C]soon as I get [G7]over loving [C]you [F]
 {start_of_verse: Verse 4}
 Just as [C]soon as I get [G7]over loving [Am]you [C]  [F]  [C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'd Dance Every Dance With You}
 {meta: artist The Kendalls}
 {meta: composer Kevin Stephen Welch and Mark T. Paden}
+{meta: x_source classic-country}
+{meta: x_source_file iddanceeverydancewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve been high [F]stepping side stepping two stepping [C]too
@@ -43,3 +46,8 @@
 [C]I can tell at [F]a glance [C]if I have a [F]chance
 [G7]I’d dance every dance with [C]you
 {end_of_verse}
+
+
+
+
+

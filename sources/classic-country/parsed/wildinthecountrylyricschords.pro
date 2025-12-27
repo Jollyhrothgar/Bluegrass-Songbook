@@ -1,6 +1,9 @@
 {meta: title Wild In The Country}
 {meta: artist Elvis Presley}
 {meta: composer Luigi Creatore, Hugo Peretti, George David Weiss}
+{meta: x_source classic-country}
+{meta: x_source_file wildinthecountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A rose grows wild in the [F]country
@@ -25,3 +28,6 @@ A heart beats wild in the [F]country
 {start_of_verse: Verse 4}
 [G7]Part of the wild wild [F]country [G7]am [C]I
 {end_of_verse}
+
+
+

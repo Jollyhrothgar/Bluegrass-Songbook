@@ -1,6 +1,9 @@
 {meta: title I'm Ready For The Times To Get Better}
 {meta: artist Crystal Gayle}
 {meta: composer Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file imreadyforthetimestogetbetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been a too long [G7]time 
@@ -39,3 +42,8 @@ And I'm [F]ready for the times to get [Am]better
 [Dm]With no peace of [Am]mind 
 And I'm [F]ready for the times to get [Am]better 
 {end_of_verse}
+
+
+
+
+

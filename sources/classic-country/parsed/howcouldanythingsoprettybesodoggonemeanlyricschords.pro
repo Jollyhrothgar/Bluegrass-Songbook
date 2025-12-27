@@ -1,6 +1,9 @@
 {meta: title How Could Anything So Pretty Be So Doggone Mean}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Jackson King and Jimmy Rule}
+{meta: x_source classic-country}
+{meta: x_source_file howcouldanythingsoprettybesodoggonemeanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes baby you are beautiful I’ve [F]got to hand you [C]that
@@ -29,3 +32,6 @@ You like to set a guy on fire and then [D7]turn on the [G7]cold
 I [C]tried my best to melt you down you [F]little frost [Fm]machine
 How could [C]anything so pretty be so [G7]doggone [C]mean
 {end_of_verse}
+
+
+

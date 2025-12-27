@@ -1,6 +1,9 @@
 {meta: title Sail Away}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Rafe Van Hoy}
+{meta: x_source classic-country}
+{meta: x_source_file sailawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Across the bay a lady waits to hold me [G7]tight
@@ -43,3 +46,8 @@
 [C]Then we will go to sleep together with the rocking of the [G7]water
 [C]And dream of how our life will someday [G7]be when she sails away with [C]me
 {end_of_verse}
+
+
+
+
+

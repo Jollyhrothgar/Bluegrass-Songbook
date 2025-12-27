@@ -1,5 +1,8 @@
 {meta: title The Beginning Of Goodbye}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file thebeginningofgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I heard a record [F]playing
@@ -28,3 +31,6 @@ You left and patiently I [F]waited
 But you [C]don't have time there for an old [F]friend
 With [G7]your new friends in Nashville [C]Tennessee
 {end_of_verse}
+
+
+

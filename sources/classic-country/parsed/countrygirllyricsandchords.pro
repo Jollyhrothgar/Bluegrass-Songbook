@@ -1,6 +1,9 @@
 {meta: title Country Girl Lyrics and Chords}
 {meta: artist Dottie West}
 {meta: composer Red Lane and Dottie West}
+{meta: x_source classic-country}
+{meta: x_source_file countrygirllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was [G7]born a country girl  I will [C]die a [D7]country [G7]girl
@@ -28,3 +31,5 @@ Birds sing good morning country [G7]girl
 [C]My day is made with puppies and [F]kittens 
 [G7]Meadows and [F]daisies I'm so [C]glad I'm [G7]a country [C]girl
 {end_of_verse}
+
+

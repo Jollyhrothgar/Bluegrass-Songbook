@@ -1,6 +1,9 @@
 {meta: title It Hurts So Much To See You Go}
 {meta: artist Jim Reeves}
 {meta: composer Bobby Lee Warren, Billy Guitar, Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file ithurtssomuchtoseeyougolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight we'll reach the hour we [C7]set for [F]parting
@@ -22,3 +25,5 @@
 [C]Why does it have to end this way what's [C7]there to do what can I [F]say
 [C]When it hurts it hurts [G7]so much to see you [C]go
 {end_of_verse}
+
+

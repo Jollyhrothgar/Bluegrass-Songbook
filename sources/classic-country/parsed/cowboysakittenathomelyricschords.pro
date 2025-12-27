@@ -1,6 +1,9 @@
 {meta: title Cowboy's A Kitten At Home}
 {meta: artist Moe Bandy}
 {meta: composer Jim Mundy and Peggy White}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysakittenathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's a bramer bull rider a lover [F]and a [C]fighter
@@ -36,3 +39,7 @@
 [C]But he's a whole lot different when his [F]woman is with [C]him
 [F]The cowboy's a [G7]kitten at [C]home
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My First Taste Of Texas}
 {meta: artist Ed Bruce}
 {meta: composer Ed Bruce and Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file myfirsttasteoftexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My first taste of Texas had blue-eyes and golden [G]hair
@@ -49,3 +52,10 @@ And my [D7]first taste of Texas still lingers in my heart and on my [G]tongue
 And [C]age made no difference I’d been around and she was [G]young
 But my [D7]first taste of Texas still lingers in my heart and on my [G]tongue 
 {end_of_verse}
+
+
+
+
+
+
+

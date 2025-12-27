@@ -1,6 +1,9 @@
 {meta: title No Way Out}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Steve Bogard and Rick Giles}
+{meta: x_source classic-country}
+{meta: x_source_file nowayoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes I really [Gm]saw [G7]her [F]what was I supposed to [C]do
@@ -34,3 +37,7 @@ When you fall a [Am]long way [G7]in darling there’s [C]no  [G7]way [D7]out
 {start_of_verse: Verse 5}
 When you fall a [Am]long way [G7]in darling there’s [C]no  [G7]way [D7]out
 {end_of_verse}
+
+
+
+

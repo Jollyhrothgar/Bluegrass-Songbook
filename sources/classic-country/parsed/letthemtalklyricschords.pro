@@ -1,6 +1,9 @@
 {meta: title Let Them Talk}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Sonny Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file letthemtalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let’em talk [B7]  if they [Em]want to [G]
@@ -34,3 +37,7 @@ But [C]true love [D7]will make it [G]stop
 [C]I want the [B7]whole wide [Em]world to [C]know
 [G]That I [D7]love you [G]so [C]  [G]   [Am]   [G]
 {end_of_verse}
+
+
+
+

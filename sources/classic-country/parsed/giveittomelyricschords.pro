@@ -1,6 +1,9 @@
 {meta: title Give It To Me}
 {meta: artist Don Williams}
 {meta: composer Bob McDill and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file giveittomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can't live without [F]lovin'
@@ -43,3 +46,8 @@
 {start_of_verse: Verse 4}
 [Am]Give it to me [F]give to me give it to [C]me
 {end_of_verse}
+
+
+
+
+

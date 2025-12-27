@@ -1,6 +1,9 @@
 {meta: title Along The Way}
 {meta: artist The Country Gentlemen}
 {meta: composer John Duffey}
+{meta: x_source classic-country}
+{meta: x_source_file alongthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What memories come [D7]back to [G]me
@@ -29,3 +32,6 @@ Through dark and sunny [D7]days
 And [G]may we always [C]be together
 Just my [D7]Lord and I along the [G]way[Am]   [G]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Working On A Road}
 {meta: artist The Bluegrass Band}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file imworkingonaroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Each day I get so lonely while [C]living here [G]below
@@ -55,3 +58,8 @@ On things eternal (on things eternal)
 I'm workin' on a road (I'm workin' on a road)
 [D7]To Glory[G]land
 {end_of_verse}
+
+
+
+
+

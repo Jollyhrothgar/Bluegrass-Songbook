@@ -1,6 +1,9 @@
 {meta: title Try It Again}
 {meta: artist Mel Tillis}
 {meta: composer Earl Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file tryitagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You wake up [A7]Monday morning [D7]feeling so down
@@ -35,3 +38,6 @@ Try it [F]again[G7]   [F]  [G7]   [C]
 Try it again[A7]   [D7]
 Try it [F]again[G7]   [F]  [C]
 {end_of_verse}
+
+
+

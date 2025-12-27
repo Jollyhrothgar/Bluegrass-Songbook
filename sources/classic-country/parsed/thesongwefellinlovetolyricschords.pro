@@ -1,6 +1,9 @@
 {meta: title The Song We Fell In Love To}
 {meta: artist Connie Smith}
 {meta: composer Ray Baker and Tupper Suassy}
+{meta: x_source classic-country}
+{meta: x_source_file thesongwefellinlovetolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just [G7]heard the song we fell in love [F]to
@@ -25,3 +28,5 @@
 [G]For it makes me think of [C]you
 [Dm]That song  [G7]we fell in love [C]to
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Blue Grass Skirt}
 {meta: artist Hank Locklin}
 {meta: composer Lawton Williams}
+{meta: x_source classic-country}
+{meta: x_source_file bluegrassskirtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I learned to [C]hula in Hono[G]lulu
@@ -36,3 +39,7 @@ With a pretty [D7]native in the blue grass [G]skirt
 But a rock'n [C]roller came along and [G]stole her
 Yes he stole my [D7]baby in the blue grass [G]skirt
 {end_of_verse}
+
+
+
+

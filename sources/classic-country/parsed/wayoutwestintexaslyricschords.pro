@@ -1,5 +1,8 @@
 {meta: title Way Out West In Texas}
 {meta: artist Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file wayoutwestintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Way out west in Texas that's [F]where I long to [C]be
@@ -26,3 +29,5 @@ Your [C]Broadway light appeal to you
 But [F]moon light suits me [C]fine
 I'll [F]settle down in [C]Texas I'll [G7]leave my blues [C]behind
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Prisoners Song}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file prisonerssonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now if I had wings like an [C]angel 
@@ -35,3 +38,7 @@ Over [D7]these prison walls I would [G]fly
 And I'd fly to the arms of my [C]darling 
 And [D7]there I'd be willing to [G]die 
 {end_of_verse}
+
+
+
+

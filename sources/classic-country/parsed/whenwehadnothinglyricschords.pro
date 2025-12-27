@@ -1,5 +1,8 @@
 {meta: title When We Had Nothing}
 {meta: artist Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file whenwehadnothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we had [C7]nothing [F]only each [C]other
@@ -20,3 +23,5 @@ We [F]really had [C]something [G7]we had me and [C]you
 Oh I [F]wish we had [C]nothing cause [F]when we had [C]nothing
 We [F]really had [C]something [G7]we had me and [F]yo[C]u
 {end_of_verse}
+
+

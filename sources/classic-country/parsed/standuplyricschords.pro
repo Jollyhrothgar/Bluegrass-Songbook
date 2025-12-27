@@ -1,6 +1,9 @@
 {meta: title Stand Up}
 {meta: artist Ferlin Husky}
 {meta: composer Cliff Crofford}
+{meta: x_source classic-country}
+{meta: x_source_file standuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Stand up if you've ever had the feelin'
@@ -57,3 +60,10 @@ Stand [D7]up yes and let yourself be counted
 Stand [G]up and everybody shout it
 Stand up stand [D7]up by [G]me
 {end_of_verse}
+
+
+
+
+
+
+

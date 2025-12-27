@@ -1,6 +1,9 @@
 {meta: title Burgers and Fries and Cherry Pies}
 {meta: artist Charley Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file burgersandfriesandcherrypieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Burgers and fries and [Em]cherry pies it was [F]simple and good back [C]then
@@ -36,3 +39,7 @@
 [F]Making our love with the [Em]moon above at the [F]drive-in [E]picture [Am]show
 [F]And it was [C]burgers and fries [F]and cherry pies in [G7]a world we used to [C]know
 {end_of_verse}
+
+
+
+

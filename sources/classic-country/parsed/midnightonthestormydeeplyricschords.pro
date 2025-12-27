@@ -1,5 +1,8 @@
 {meta: title Midnight On The Stormy Deep}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file midnightonthestormydeeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Was midnight on the [G7]stormy [C]deep
@@ -42,3 +45,8 @@ My home upon some icy la-[C7]ke
 Where the southern [F]sun refuse to [C]shine
 Than to trust a [G7]love so false as [C]thine 
 {end_of_verse}
+
+
+
+
+

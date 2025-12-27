@@ -1,6 +1,9 @@
 {meta: title Meanest Jukebox In Town}
 {meta: artist Johnny Paycheck}
 {meta: composer Johnny Paycheck and Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file meanestjukeboxintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each dime that goes into that [F]jukebox
@@ -29,3 +32,6 @@ Each dream I try to build it [G7]crumbles to the ground
 And [C]since she's gone the [C7]only thing that [F]keeps me hanging around
 Is the [G7]meanest jukebox in [C]town
 {end_of_verse}
+
+
+

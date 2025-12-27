@@ -1,6 +1,9 @@
 {meta: title Be Ready}
 {meta: artist Don Gibson}
 {meta: composer Audrey Allison}
+{meta: x_source classic-country}
+{meta: x_source_file bereadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you think you got plenty [G7]time to get [C]ready to [F]die
@@ -39,3 +42,7 @@
 [C]But He’ll take you just [G7]the same wait a [C]minute
 [G7]But He’ll [C]take you just [G7]the [C]same)
 {end_of_verse}
+
+
+
+

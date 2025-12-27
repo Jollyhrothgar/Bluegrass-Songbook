@@ -1,6 +1,9 @@
 {meta: title Come Home To Me}
 {meta: artist George Jones}
 {meta: composer Bobby Lamoyne Harden}
+{meta: x_source classic-country}
+{meta: x_source_file comehometomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lying here thinking  [F]and I happen to [C]think
@@ -52,3 +55,10 @@ Longing for you baby
 [C]I can't take one more night all [G7]alone
 [C]Come on home
 {end_of_verse}
+
+
+
+
+
+
+

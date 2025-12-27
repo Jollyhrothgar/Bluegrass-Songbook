@@ -1,6 +1,9 @@
 {meta: title Brown Paper Bag}
 {meta: artist Tammy Wynette}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file brownpaperbaglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She cleans off the table throws the dishes in the [G7]sink
@@ -40,3 +43,7 @@
 [D7]Cause now every day they take their lives home
 [C]In two brown [D7]paper [G]bags
 {end_of_verse}
+
+
+
+

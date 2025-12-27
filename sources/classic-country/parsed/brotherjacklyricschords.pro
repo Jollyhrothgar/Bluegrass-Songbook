@@ -1,6 +1,9 @@
 {meta: title Brother Jack}
 {meta: artist Cal Smith}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file brotherjacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Brother Jack did we [F]ride them Okla[G7]homa roads [C]together
@@ -43,3 +46,8 @@ You and [Am]me singing [F]songs in [G7]sweet harmo[C]ny
 Brother Jack did we [F]pass the bottle [G7]back and forth [C]together
 You and [Am]me singing [F]songs in [G7]sweet harmo[C]ny 
 {end_of_verse}
+
+
+
+
+

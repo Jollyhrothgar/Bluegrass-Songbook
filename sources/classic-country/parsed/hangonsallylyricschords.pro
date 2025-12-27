@@ -1,6 +1,9 @@
 {meta: title Hang On Sally}
 {meta: artist Johnny Paycheck}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file hangonsallylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the mountains there's a valley of love named Sally
@@ -61,3 +64,11 @@ And [D7]bathe my wounds in the fountain of [G]love
 {start_of_verse: Verse 7}
 [D7]Take me to my valley of [G]love
 {end_of_verse}
+
+
+
+
+
+
+
+

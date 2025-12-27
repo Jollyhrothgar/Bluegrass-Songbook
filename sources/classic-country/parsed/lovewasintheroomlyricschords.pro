@@ -1,6 +1,9 @@
 {meta: title Love Was In The Room}
 {meta: artist The Booth Brothers}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file lovewasintheroomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was early in the morning
@@ -70,3 +73,12 @@ When the glory of the Living God
 [G7]Love was in the [C]room
 [G7]Love was in my [C]room
 {end_of_verse}
+
+
+
+
+
+
+
+
+

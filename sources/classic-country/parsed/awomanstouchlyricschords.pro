@@ -1,6 +1,9 @@
 {meta: title A Woman's Touch}
 {meta: artist Glen Campbell}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file awomanstouchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Right from the [F]first day  one [G7]man stood [C]alone
@@ -26,3 +29,6 @@ Thank God for a [F]woman's touch  to [G7]share in the [C]plan
 For it took my [F]woman's touch  [G7]to make me feel like a [C]man
 For without a [F]woman's touch  [G7]life don't mean much to a [C]man
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Too Gone Too Long}
 {meta: artist Randy Travis}
 {meta: composer Gene Pistilli}
+{meta: x_source classic-country}
+{meta: x_source_file toogonetoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've been [A7]too gone for too long
@@ -41,3 +44,8 @@ So now [G7]why don't you just stay [E7]gone
 Now you've been [A7]too gone for [D7]too long
 Now it's [G7]too late to come back [C]home
 {end_of_verse}
+
+
+
+
+

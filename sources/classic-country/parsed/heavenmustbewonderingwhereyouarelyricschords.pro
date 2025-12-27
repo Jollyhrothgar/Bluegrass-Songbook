@@ -1,6 +1,9 @@
 {meta: title Heaven Must Be Wondering Where You Are}
 {meta: artist George Strait}
 {meta: composer David L. Chamberlain and Lemuel David Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file heavenmustbewonderingwhereyouarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somewhere up there [D7]beyond the [Am]blue
@@ -34,3 +37,7 @@ I know how lost I'd be [C]without you here sweetheart
 I found the angel [C]they must be looking for
 [D7]Heaven must wondering where you [G]are
 {end_of_verse}
+
+
+
+

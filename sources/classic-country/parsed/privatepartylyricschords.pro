@@ -1,6 +1,9 @@
 {meta: title Private Party}
 {meta: artist Billy Mata}
 {meta: composer John R. Lambert}
+{meta: x_source classic-country}
+{meta: x_source_file privatepartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve got a standing reservation at my local drinking [C]spot
@@ -34,3 +37,7 @@
 [G]This is a private party and I’m the [C]one
 [G]And only lonely [D7]fool invited that’s [G]me
 {end_of_verse}
+
+
+
+

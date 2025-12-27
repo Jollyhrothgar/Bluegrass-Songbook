@@ -1,6 +1,9 @@
 {meta: title I Can't Get To You From Here}
 {meta: artist Don Williams}
 {meta: composer Frank Knipe and Stephen Chandler}
+{meta: x_source classic-country}
+{meta: x_source_file icantgettoyoufromherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm glad you called me I [Em]still feel your [G]voice
@@ -43,3 +46,8 @@ I don't [C]take on all [G]comers when they [Am]come on too [D7]hard
 I'm a [G]daddy and a voter and I [Em]go to bed [G]tired
 And [C]I can't get [D7]to you from [G]here
 {end_of_verse}
+
+
+
+
+

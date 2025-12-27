@@ -1,5 +1,8 @@
 {meta: title Couples Only}
 {meta: artist Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file couplesonlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I came by your house but you were [C]gone
@@ -28,3 +31,6 @@ Couples [D7]only I'm left out in the [G]cold
 I'm holding back my tears with all my [C]might
 I'm [D7]so lonely couples only [G]tonight
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title So Glad You're Mine}
 {meta: artist Elvis Presley}
 {meta: composer Arthur Crudup}
+{meta: x_source classic-country}
+{meta: x_source_file sogladyoureminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My baby's long and tall 
@@ -52,3 +55,10 @@ She cried [F]ooo-wee I believe [C]I'll change my mind
 She said I'm [G7]so glad I'm livin' 
 I [F]cried I'm [G7]so glad you're [C]mine
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bad Things I Do}
 {meta: artist Charlie Walker}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file badthingsidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's hours past midnight [G7]I'm on my way home
@@ -29,3 +32,6 @@ Tomorrow at breakfast [G7]I hope she won't see
 I'll [C]tell her that I met a [F]friend we once [C]knew
 [F]What makes me [C]do the [G7]bad things I [C]do
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title We Made Memories}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file wemadememorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We made memories too [G]beautiful to forget
@@ -35,3 +38,7 @@ The [A7]first one was when I met [D7]you
 [C]We made memories too [G]beautiful to forget
 A [D7]million before we are [C]throu[G]gh 
 {end_of_verse}
+
+
+
+

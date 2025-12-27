@@ -1,6 +1,9 @@
 {meta: title No Love Have I}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file nolovehaveIlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey bee loves the honey chickadee loves the sky
@@ -31,3 +34,8 @@ But what good is that moonlight if [F]no love [C]have [F]I  no [G7]love have [C]
 Lonely is the city when the moon lights up the sky
 But what good is that moonlight if [F]no love [C]have [F]I  no [G7]love have [C]I
 {end_of_verse}
+
+
+
+
+

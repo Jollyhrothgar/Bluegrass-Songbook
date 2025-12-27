@@ -1,5 +1,8 @@
 {meta: title Soul Of The Wine}
 {meta: artist Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file soulofthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Don't con[G]demn me by lookin' and [D7]oh what you [G]see
@@ -34,3 +37,7 @@ Hidden down deep [D7]in the soul of the [G]wine
 {start_of_verse: Verse 5}
 Hidden down deep [D7]in the soul of the [G]wine
 {end_of_verse}
+
+
+
+

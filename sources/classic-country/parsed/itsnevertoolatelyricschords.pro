@@ -1,6 +1,9 @@
 {meta: title It's Never Too Late}
 {meta: artist Brenda Lee}
 {meta: composer Jimmy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file itsnevertoolatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Say it now while you can whisper low hold my hand
@@ -38,3 +41,9 @@
 [Am]I-I-I-I-I-I-I [G][D7]love you  ooh [A7]yes [D7]I love [G]you
 [Am]I-I-I [D7]said that I love [G]you
 {end_of_verse}
+
+
+
+
+
+

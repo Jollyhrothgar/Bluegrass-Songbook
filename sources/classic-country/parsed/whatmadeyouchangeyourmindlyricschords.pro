@@ -1,5 +1,8 @@
 {meta: title What Made You Change Your Mind}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file whatmadeyouchangeyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today you tell me we are [G7]through
@@ -28,3 +31,6 @@ It's hard to hope when hope is [C]gone
 Could loving you be [C7]such a [F]crime
 [G7]Darling what made you change your [C]mind
 {end_of_verse}
+
+
+

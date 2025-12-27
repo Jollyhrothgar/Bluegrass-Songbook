@@ -1,6 +1,9 @@
 {meta: title Broken Candy Heart}
 {meta: artist George Morgan}
 {meta: composer Cliff Rodgers and Mary Jean Shurtz}
+{meta: x_source classic-country}
+{meta: x_source_file brokencandyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I last saw my darling we kissed [F]and said [C]goodbye
@@ -29,3 +32,6 @@
 [C]I'll go through life without her [F]and play a smiling [C]part
 [F]While living with a [C]memory of [G7]a candy broken [C]heart
 {end_of_verse}
+
+
+

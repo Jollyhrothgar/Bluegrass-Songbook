@@ -1,6 +1,9 @@
 {meta: title Prettiest Flower There}
 {meta: artist Rhonda Vincent}
 {meta: composer Val Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file prettiestflowertherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I came into the parlor a precious [C]soul had gone home
@@ -35,3 +38,7 @@ Heaven's [C]choir played her anthem as [G]they welcomed one so [C]rare
 Heaven [G]knows she is the [D7]prettiest flower [Em]there [A7]
 Heaven [G]knows she is the [D7]prettiest flower [G]there [C]  [G]
 {end_of_verse}
+
+
+
+

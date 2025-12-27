@@ -1,6 +1,9 @@
 {meta: title A Cold Day In December}
 {meta: artist George Jones}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file acolddayindecemberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We tried hard to [F]hold on[C]to 
@@ -43,3 +46,8 @@ It'll be a hot day in [F]mid Ju[C]ly
 Or a cool night in [C7]late Sep[F]tember 
 Before I [C]give our [G7]love another [C]try
 {end_of_verse}
+
+
+
+
+

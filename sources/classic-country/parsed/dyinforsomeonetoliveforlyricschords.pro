@@ -1,6 +1,9 @@
 {meta: title Dyin' For Someone To Live For}
 {meta: artist The Gibson Brothers}
 {meta: composer Shawn Camp and Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file dyinforsomeonetoliveforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Loneliness [C]falls all [G]around
@@ -40,3 +43,8 @@ I'm dyin' for [C]someone to [G]live for
 {start_of_verse: Verse 5}
 I'm dyin' for [C]someone to [G]live for
 {end_of_verse}
+
+
+
+
+

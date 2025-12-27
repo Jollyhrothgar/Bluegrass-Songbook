@@ -1,6 +1,9 @@
 {meta: title I Know But Tell Me}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew, Tommy Blake, W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file iknowbuttellmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you smiled at him 
@@ -39,3 +42,8 @@ You didn't [C]know just what to do
 When he told [F]you I was untrue
 I [G7]know but tell me no it didn't [C]happen
 {end_of_verse}
+
+
+
+
+

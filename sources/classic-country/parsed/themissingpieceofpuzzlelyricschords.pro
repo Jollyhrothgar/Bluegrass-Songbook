@@ -1,6 +1,9 @@
 {meta: title The Missing Piece Of Puzzle}
 {meta: artist Tanya Tucker}
 {meta: composer Mark Sherrill and Leon Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file themissingpieceofpuzzlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're the sunshine that [C]warms my heart each [G]day
@@ -22,3 +25,5 @@ You're [C]something to remember when I'm down and need to get back on my [D7]fee
 You're that [G]missing piece of puzzle that it [D7]takes to put together [G]love
 You're that missing piece of puzzle that it [D7]takes to put together [G]love
 {end_of_verse}
+
+

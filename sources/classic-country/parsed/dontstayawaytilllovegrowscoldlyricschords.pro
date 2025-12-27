@@ -1,6 +1,9 @@
 {meta: title Don't Stay Away (till love grows cold)}
 {meta: artist Lefty Fizzell}
 {meta: composer Lefty Frizzell and Loys Sutherland}
+{meta: x_source classic-country}
+{meta: x_source_file dontstayawaytilllovegrowscoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please don't stay away so long [G7]darling 
@@ -26,3 +29,5 @@ Our love just can't grow [C]old
 So please don't stay away so long [G7]darling 
 Don't stay away till love grows [C]cold 
 {end_of_verse}
+
+

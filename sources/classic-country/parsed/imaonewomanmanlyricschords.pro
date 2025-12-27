@@ -1,6 +1,9 @@
 {meta: title I'm a One Woman Man}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Horton and Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file imaonewomanmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you told me that you love me I would feel so proud
@@ -41,3 +44,10 @@ I'll [D7]always love ya honey and I'll never let you [G]down
 I'll never love another even if I can
 Oh come to me baby I'm a [D7]one woman [G]man
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Won't Be Crying Anymore}
 {meta: artist Webb Pierce}
 {meta: composer Wynn Blackbourn}
+{meta: x_source classic-country}
+{meta: x_source_file iwontbecryinganymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You cheated and you lied
@@ -25,3 +28,5 @@ I didn't think you'd do it
 [F]But now I know it's true  now I know that we're [C]through
 So [G7]I won't be crying [C]anymore
 {end_of_verse}
+
+

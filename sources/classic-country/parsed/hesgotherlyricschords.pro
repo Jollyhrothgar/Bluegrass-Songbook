@@ -1,6 +1,9 @@
 {meta: title He's Got Her}
 {meta: artist Moe Bandy}
 {meta: composer Blake Mevis, John Greenbaum, Becky Hobbs}
+{meta: x_source classic-country}
+{meta: x_source_file hesgotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a room across [G7]town with the [Am]lights and sheets turned [F]down
@@ -33,3 +36,7 @@ Oh he's [C]got her right where I [G7]wanted her to[Am]night [F]
 {start_of_verse: Verse 5}
 Oh he's [C]got her right where I [G7]wanted her to[C]night
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Can't Dance}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file icantdancelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I went to a hop the other night
@@ -62,3 +65,12 @@ And [C]we can't dance [G7]no [C]no and we can't dance [G7]no [C]no
 {start_of_verse: Verse 9}
 I can't dance I can't dance I can't dance
 {end_of_verse}
+
+
+
+
+
+
+
+
+

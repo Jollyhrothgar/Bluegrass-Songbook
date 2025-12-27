@@ -1,6 +1,9 @@
 {meta: title There's Always A Mother Waiting At Home}
 {meta: artist Johnny Cash}
 {meta: composer J. Thornton}
+{meta: x_source classic-country}
+{meta: x_source_file theresalwaysamotherwaitingathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So you're going to leave the old home Jim
@@ -62,3 +65,12 @@ We'll miss you when you go
 [C]But if you get in trouble Jim just write and [F]let us [C]know
 [G7]She spoke these words and then she said [C]goodbye
 {end_of_verse}
+
+
+
+
+
+
+
+
+

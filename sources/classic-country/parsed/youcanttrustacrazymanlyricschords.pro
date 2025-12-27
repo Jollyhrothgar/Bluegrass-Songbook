@@ -1,6 +1,9 @@
 {meta: title You Can't Trust A Crazy Man}
 {meta: artist Mel Tillis}
 {meta: composer Barbara Cummings and Jimmy Null}
+{meta: x_source classic-country}
+{meta: x_source_file youcanttrustacrazymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't treat you like a lady anymore
@@ -33,3 +36,7 @@ I can't stand to see you and not touch you
 {start_of_verse: Verse 5}
 [G7]And you know you can't trust a crazy [C]man
 {end_of_verse}
+
+
+
+

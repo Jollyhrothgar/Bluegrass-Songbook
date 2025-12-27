@@ -1,6 +1,9 @@
 {meta: title Bright Morning Light}
 {meta: artist David Allan Coe}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file brightmorninglightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was a waitress in a west Texas dance [F]hall
@@ -43,3 +46,8 @@ But she [C]don't look half bad I guess I'll stay for the [G7]night
 [C]But I'll tell you boys that was five years ago and Lord God what a [F]woman
 [C]She still looks as good in the [G7]bright morning [C]light
 {end_of_verse}
+
+
+
+
+

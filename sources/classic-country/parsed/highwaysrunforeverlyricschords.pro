@@ -1,5 +1,8 @@
 {meta: title Highways Run Forever}
 {meta: artist Johnny Lee}
+{meta: x_source classic-country}
+{meta: x_source_file highwaysrunforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Them highways run for[Am]ever
@@ -46,3 +49,9 @@ And every [C]time I turn around
 Every [C]time I turn around 
 [F]I'm on another [G7]highway [C]again
 {end_of_verse}
+
+
+
+
+
+

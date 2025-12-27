@@ -1,6 +1,9 @@
 {meta: title I Believe In The Man In The Sky}
 {meta: artist Elvis Presley}
 {meta: composer Richard Howard}
+{meta: x_source classic-country}
+{meta: x_source_file ibelieveinthemanintheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The steps that lead [F]to any church form a [C]stairway to a [G7]star
@@ -21,3 +24,5 @@ Though a [G7]sparrow is all I may [C]be  on me He will [C7]still keep an [F]eye
 Yes I'm singing His praise [C]till the end of my [A7]days
 I [D7]believe in the [G7]Man in the [C]sky
 {end_of_verse}
+
+

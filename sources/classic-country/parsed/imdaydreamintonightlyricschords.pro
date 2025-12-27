@@ -1,6 +1,9 @@
 {meta: title I'm Day Dreamin' Tonight}
 {meta: artist Porter Wagoner}
 {meta: composer Mildred Burk and Ross Burk}
+{meta: x_source classic-country}
+{meta: x_source_file imdaydreamintonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From nighttime I'll borrow [C]sunshine
@@ -57,3 +60,10 @@ Oh should the flame smother
 [C]I'm happy so happy and everything's right
 [D7]I'm day dreamin' [G]tonight
 {end_of_verse}
+
+
+
+
+
+
+

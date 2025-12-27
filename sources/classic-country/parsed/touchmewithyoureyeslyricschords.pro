@@ -1,6 +1,9 @@
 {meta: title Touch Me With Your Eyes}
 {meta: artist Wayne Kemp}
 {meta: composer Clarence Wayne Kemp and Willard Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file touchmewithyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This old crowed room was empty [G7]until you walked [C]in
@@ -22,3 +25,5 @@ And I can do the rest with my [G7]mind
 [C]He don’t have to know it if [G7]he don’t see the [C]sign
 Touch me with your [F]eyes one more [C]time
 {end_of_verse}
+
+

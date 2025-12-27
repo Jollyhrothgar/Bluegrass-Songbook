@@ -1,6 +1,9 @@
 {meta: title Long Lonesome Highway}
 {meta: artist Dick Curless}
 {meta: composer James Hendricks}
+{meta: x_source classic-country}
+{meta: x_source_file longlonesomehighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [A7]Going down that long lonesome [D7]highway
@@ -22,3 +25,5 @@
 [A7]I’m going down that long lonesome [D7]highway
 [G7]I’m gonna live life my [C]way
 {end_of_verse}
+
+

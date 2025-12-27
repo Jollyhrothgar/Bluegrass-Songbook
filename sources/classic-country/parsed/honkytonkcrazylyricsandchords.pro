@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Crazy}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkcrazylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a hundred dollar [G7]bill on the [C]table
@@ -49,3 +52,9 @@ Cause tonight I'll be  [F]honky tonk [C]crazy
 {start_of_verse: Verse 6}
 Oh [F]let the [C]whiskey whisk her [G7]out of my [C]mind
 {end_of_verse}
+
+
+
+
+
+

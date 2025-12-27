@@ -1,6 +1,9 @@
 {meta: title Almost Jamaica}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file almostjamaicalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was born in [F]Dakota
@@ -71,3 +74,12 @@ Almost para[C]dise
 It was almost [G7]Jamaica
 It was almost real [C]nice
 {end_of_verse}
+
+
+
+
+
+
+
+
+

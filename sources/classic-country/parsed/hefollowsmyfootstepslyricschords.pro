@@ -1,6 +1,9 @@
 {meta: title He Follows My Footsteps}
 {meta: artist Charlie Rich}
 {meta: composer Margaret A. Rich}
+{meta: x_source classic-country}
+{meta: x_source_file hefollowsmyfootstepslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He follows my footsteps with every step I take
@@ -29,3 +32,6 @@ But [F]it's my footsteps he [C]follows so I'm [F]bound to walk the [C]line
 For I'm [F]bound to walk the [C]line
 [F]For that little [G7]man of [C]mine
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Field Of Dreams}
 {meta: artist Charley Pride}
 {meta: composer Dickey Lee and Jim Casey}
+{meta: x_source classic-country}
+{meta: x_source_file fieldofdreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Daddy was a dreamer Hannah was his [Am]dream
@@ -46,3 +49,8 @@ Water that [G7]love from the kindness [C]stream
 Watch it [F]gr--[G7]ow like a tall oak [C]tree
 Plant your love in a [G7]field of [C]dreams
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Garden Party}
 {meta: artist Ricky Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file gardenpartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went to a garden [F]party to [C]reminisce with my old [F]friends
@@ -60,3 +63,10 @@ You see you [F]can't please [C]everyone
 So [F]you got [G7]to please [C]yourself
 [F]La  [G7]la   [C]la   la [F]la  la [G7]la la
 {end_of_verse}
+
+
+
+
+
+
+

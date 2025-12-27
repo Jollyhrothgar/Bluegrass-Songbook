@@ -1,5 +1,8 @@
 {meta: title Hopefully (I'll Be Out Of My Mind)}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file hopefullyillbeoutofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I had two cups of [D7]coffee this [G]morning
@@ -28,3 +31,6 @@ And my heart beats for the [G7]very first [C]time
 With love maybe I will [G]know it [C]
 Hopefu[G]lly (hopefully) I'll be [D7]out of my [G]mind
 {end_of_verse}
+
+
+

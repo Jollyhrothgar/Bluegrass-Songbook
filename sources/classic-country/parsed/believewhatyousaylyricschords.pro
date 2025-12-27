@@ -1,6 +1,9 @@
 {meta: title Believe What You Say}
 {meta: artist Ricky Nelson}
 {meta: composer Johnny and Dorsey Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file believewhatyousaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I believe what you say when you say you're going steady
@@ -55,3 +58,12 @@ I'm telling everybody that you're mine all [G]mine
 I believe what you say when you say you don't kiss
 [D7]Nobody else but [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+

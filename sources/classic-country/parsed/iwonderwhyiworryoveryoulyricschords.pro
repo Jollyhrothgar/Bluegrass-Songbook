@@ -1,6 +1,9 @@
 {meta: title I Wonder Why I Worry Over You}
 {meta: artist Ernest Tubb}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwhyiworryoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear you're not worth the breath takes to mention your [F]name
@@ -29,3 +32,6 @@
 [C]And you're not worth the breath it takes to mention your [F]name
 [C]I wonder why [G7]I worry over [C]you
 {end_of_verse}
+
+
+

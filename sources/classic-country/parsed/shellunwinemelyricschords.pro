@@ -1,6 +1,9 @@
 {meta: title She'll Unwine Me}
 {meta: artist Johnny Paycheck}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file shellunwinemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I swore I'd leave the [F]world of wine [C]behind me
@@ -29,3 +32,6 @@ She [G7]loves me and she tries to under[C]stand
 Yes she'll [F]find me and she'll [C]unwine me
 She’ll [G7]unwind me with her tender care [C]again
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Mary Claire Melvina Rebecca Jane}
 {meta: artist Eddy Arnold}
 {meta: composer Martha White and Sarah Nix}
+{meta: x_source classic-country}
+{meta: x_source_file maryclairemelvinarebeccajanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Her name is Mary [G]Claire Melvina [D7]Rebecca [G]Jane)
@@ -39,3 +42,7 @@ There's a pretty little girl in my hometown
 [C]I called her Tuscaloosa touch me not
 [G]Her name is Mary Claire [D7]Melvina Rebecca [G]Jane
 {end_of_verse}
+
+
+
+

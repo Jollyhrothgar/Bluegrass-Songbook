@@ -1,6 +1,9 @@
 {meta: title Love Me Tonight}
 {meta: artist Elvis Presley}
 {meta: composer Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file lovemetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]May this tenderness cling when the [G7]fire of spring is a [C]memory
@@ -16,3 +19,4 @@ I'll confess to [C]you if I [G]knew that our love would be [G7]gone
 With the stars in the [C]dawn's gray light
 I'd still hold you close and [G]whisper  [D7]love me to[G]night
 {end_of_verse}
+

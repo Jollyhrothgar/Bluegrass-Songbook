@@ -1,6 +1,9 @@
 {meta: title You And Me And Time}
 {meta: artist George Jones & Georgette Jones}
 {meta: composer Georgette Jones, Mark McGuinn, Don Pfrimmer}
+{meta: x_source classic-country}
+{meta: x_source_file youandmeandtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You were just a [F]picture on my baby [C]grand
@@ -45,3 +48,9 @@ It [C]only [F]took the [C]three of us  [G7]you and me and [C]time
 {start_of_verse: Verse 6}
 It only [F]took the [C]three of us  [G7]you and me and [C]time
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'm Atlanta Bound}
 {meta: artist Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file imatlantaboundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Went home this mornin' the clock was strikin' four
@@ -34,3 +37,7 @@ They [G7]tied me to a ball and [C]chain
 I'm Atlanta bound [F]Atlanta bound
 I'll [G7]never see my gal [C]again
 {end_of_verse}
+
+
+
+

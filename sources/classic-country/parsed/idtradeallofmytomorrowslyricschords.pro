@@ -1,6 +1,9 @@
 {meta: title I'd Trade All Of My Tomorrows}
 {meta: artist Eddy Arnold}
 {meta: composer Jenny Lou Carson}
+{meta: x_source classic-country}
+{meta: x_source_file idtradeallofmytomorrowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd trade all of my tomorrows for [C7]just one [F]yesterday
@@ -22,3 +25,5 @@
 [C7]I'd trade all of my tomorrows for just one [F]yesterday
 [C]I don't want to live [G7]without you [C]anyhow
 {end_of_verse}
+
+

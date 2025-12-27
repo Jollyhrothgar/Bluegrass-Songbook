@@ -1,6 +1,9 @@
 {meta: title Midnight Love}
 {meta: artist Tammy Wynette}
 {meta: composer Buck Moore}
+{meta: x_source classic-country}
+{meta: x_source_file midnightlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He calls about 5:30 and [C]tells me [D7]he'll be [G]late
@@ -42,3 +45,8 @@ He [C]can't wash [D7]off that [G]midnight [C]love she [G]left all [D7]over [G]hi
 {start_of_verse: Verse 6}
 No he [C]can't wash [D7]off that [G]midnight [C]love she [G]left all [D7]over [G]him
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Catch You When You Fall}
 {meta: artist Buck Owens}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file illcatchyouwhenyoufalllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It seems like years and a million tears
@@ -64,3 +67,13 @@ Well it's plain to see you've forgotten me
 I'll catch you when you fall
 [D7]There's no one else but you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

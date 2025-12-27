@@ -1,6 +1,9 @@
 {meta: title He Will Break Your Heart}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Butler, Curtis Mayfield, Calvin Carter}
+{meta: x_source classic-country}
+{meta: x_source_file hewillbreakyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He don't [Em]love you [G]like I [Em]love you
@@ -50,3 +53,9 @@ And when the [Em]final act is [G]over [Em]
 [G]He don't [G7]love you [C]like I [Cm]love you
 [G]He's try[Em]in' to [Am]tear us [G]apart
 {end_of_verse}
+
+
+
+
+
+

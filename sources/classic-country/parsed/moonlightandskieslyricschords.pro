@@ -1,6 +1,9 @@
 {meta: title Moonlight And Skies}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers and R.E. Hill}
+{meta: x_source classic-country}
+{meta: x_source_file moonlightandskieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh come hear my story of [C]heartaches and [G]sighs
@@ -46,3 +49,9 @@ Their laughter so [C]merry brings heartaches and [G]sighs
 {start_of_verse: Verse 7}
 To a prisoner who's [D7]lonely for my moonlight and [G]skies
 {end_of_verse}
+
+
+
+
+
+

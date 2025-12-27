@@ -1,6 +1,9 @@
 {meta: title A Woman's Hand}
 {meta: artist Jean Shepard}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file awomanshandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna stay right here [D7]beside him
@@ -27,3 +30,6 @@ It's a [F]woman's hand that [G]leads him right or [C]wrong[G]
 For he [C]can't do either [F]one without a [E7]woma[Am]n
 It's a [F]woman's hand that [G]leads him right or [F]wron[C]g
 {end_of_verse}
+
+
+

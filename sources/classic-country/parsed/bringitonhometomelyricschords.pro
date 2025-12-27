@@ -1,6 +1,9 @@
 {meta: title Bring It On Home To Me}
 {meta: artist Mickey Gilley}
 {meta: composer Sam Cooke}
+{meta: x_source classic-country}
+{meta: x_source_file bringitonhometomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If you [C]ever change your [G7]mind
@@ -36,3 +39,6 @@ Bring your sweet [F]lovin'
 Yeah ([F]yeah) yeah ([C]yeah) yeah ([F]yeah)
 Yeah ([C]yeah) yeah ([F]yeah) yeah ([C]yeah)
 {end_of_verse}
+
+
+

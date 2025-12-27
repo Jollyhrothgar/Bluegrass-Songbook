@@ -1,6 +1,9 @@
 {meta: title Let's Jump The Broomstick}
 {meta: artist Brenda Lee}
 {meta: composer Charles Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file letsjumpthebroomsticklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well come a little baby lets jump the broomstick 
@@ -71,3 +74,12 @@ Going all around the world[C7]
 [G7]Come a little baby [F]let's jump the broomstick 
 [G7]Come a let's tie the [C]knot 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

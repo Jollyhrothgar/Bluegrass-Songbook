@@ -1,6 +1,9 @@
 {meta: title Forever In Blue Jeans}
 {meta: artist Tommy Overstreet}
 {meta: composer Neil Diamond and Richard Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file foreverinbluejeanslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Money talks
@@ -55,3 +58,10 @@ We'd do [D7]okay forever in[G] blue jeans babe
 [C]And long as I can have you [G]here with [Am]me
 I'd much rather [D7]be forever in [G]blue jeans babe
 {end_of_verse}
+
+
+
+
+
+
+

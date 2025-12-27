@@ -1,6 +1,9 @@
 {meta: title That's A Lie}
 {meta: artist Doug Stone}
 {meta: composer Randy Boudreaux and Doug Stone}
+{meta: x_source classic-country}
+{meta: x_source_file thatsalielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]Just this morning I [G7]passed you on the street
@@ -46,3 +49,7 @@ That's a [Am]lie[G7]   [F]
 I [C]wish it was true that [G7]I'm over you
 That's a [F]lie [C]
 {end_of_verse}
+
+
+
+

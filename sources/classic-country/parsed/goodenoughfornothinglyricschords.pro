@@ -1,6 +1,9 @@
 {meta: title Good Enough For Nothing}
 {meta: artist Red Sovine}
 {meta: composer Tommy Hill and Red Sovine}
+{meta: x_source classic-country}
+{meta: x_source_file goodenoughfornothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You put me down to all our friends
@@ -57,3 +60,10 @@ You're a happy soul that's searchin'
 [G7]I ain't good enough for nothin'
 [C]Leave ol' good enough alone
 {end_of_verse}
+
+
+
+
+
+
+

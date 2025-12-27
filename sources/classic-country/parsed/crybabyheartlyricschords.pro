@@ -1,6 +1,9 @@
 {meta: title Cry Baby Heart}
 {meta: artist George Morgan}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file crybabyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I say that I don't worry and our parting brought no [F]pain
@@ -29,3 +32,6 @@ So I [G7]could really laugh and say I'm better off [C]alone
 But like an actor in a play I stumble through my [F]part 
 You're [G7]always giving me away you Cry Baby [C]Heart
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Cowboy Boots}
 {meta: artist Dale Watson}
+{meta: x_source classic-country}
+{meta: x_source_file cowboybootslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A Texas night under the Texas [F]moon
@@ -36,3 +39,8 @@ Yeah there's [G7]something about a woman dancing in her cowboy [C]boots
 {start_of_verse: Verse 6}
 Yodel [G7]lay lo lay le [C]eee
 {end_of_verse}
+
+
+
+
+

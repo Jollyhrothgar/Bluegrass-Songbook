@@ -1,6 +1,9 @@
 {meta: title Send Me No Roses}
 {meta: artist Tammy Wynette}
 {meta: composer Hank Mills}
+{meta: x_source classic-country}
+{meta: x_source_file sendmenoroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Send me [C]no ros[G]es [C]please no more ros[G]es
@@ -27,3 +30,6 @@ Roses are [Em]red I know [A7]but to my tears they look [D7]blue
 Send [G]me no [C]ros[G]es [C]please no more [G]roses
 Your [C]roses can't [G]hold [Em]me [D7]what I need most is [G]you [C]  [G]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Second Fling}
 {meta: artist Eddy Arnold}
 {meta: composer Steve Nelson and Joan Ellen Javits}
+{meta: x_source classic-country}
+{meta: x_source_file secondflinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna fill the jukebox up with nickels
@@ -61,3 +64,10 @@ I [C7]cut that apron [F]string
 I'll take the consequences [C]lose my [D7]senses
 And [G7]have me a second [C]fling
 {end_of_verse}
+
+
+
+
+
+
+

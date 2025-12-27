@@ -1,6 +1,9 @@
 {meta: title Travelin' This Lonesome Road}
 {meta: artist Mac Wiseman}
 {meta: composer Clara Hauenschild and James Thornton}
+{meta: x_source classic-country}
+{meta: x_source_file travelinthislonesomeroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm traveling down this lonesome road oh [G7]how I hate to [C]go
@@ -36,3 +39,7 @@ The wind and storms are raging high [F]and it's awful [C]cold
 My mind drifts back to you sweetheart [F]and I love you [C]so
 Now you've gone and left me here to [G7]travel this lonesome [C]road
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Key's in the Mailbox}
 {meta: artist Buck Owens}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file thekeysinthemailboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh jealous me and careless you the odds were just too [G7]great
@@ -29,3 +32,6 @@ I'm [G7]sitting here wishing dear I had your love [C]again
 I'll never even ask you where you've [F]been 
 The [G7]key's in the mailbox come on [C]in
 {end_of_verse}
+
+
+

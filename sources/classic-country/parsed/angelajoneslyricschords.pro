@@ -1,5 +1,8 @@
 {meta: title Angela Jones}
 {meta: artist John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file angelajoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Doot'n do doo [F]doot'n do doo doo [C]Angela Jones (Angela Jones)
@@ -45,3 +48,11 @@ Doot'n do doo [F]doot'n do doo doo [C]Angela Jones (Angela Jones)
 [C]Doot'n do doo [F]doot'n do doo doo [C]Angela Jones (Angela Jones)
 Doot'n do doo [F]doot'n do doo doo [C]Angela Jones (Angela Jones)
 {end_of_verse}
+
+
+
+
+
+
+
+

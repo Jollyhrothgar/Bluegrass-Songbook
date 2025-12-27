@@ -1,5 +1,8 @@
 {meta: title Letter And A Ring}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file letterandaringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I came home this morning  I looked [C]around
@@ -21,3 +24,5 @@
 [G]She said I set you free now  go on [G7]and have your [C]fling
 [G]And all my baby left [D7]me  was a letter and a [G]ring
 {end_of_verse}
+
+

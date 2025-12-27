@@ -1,6 +1,9 @@
 {meta: title Rita Ballou}
 {meta: artist Vince Gill}
 {meta: composer Guy Clark}
+{meta: x_source classic-country}
+{meta: x_source_file ritaballoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She could dance that slow Uvalde [F]shuffle to some cowboy hustle
@@ -49,3 +52,9 @@ Every beer joint in town has played a fool for [G7]you
 [F]Backslidin' barrel ridin' Rita [C]Ballou
 Ain't a cowboy in Texas would not [G7]ride a bull for [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Every Time Two Fools Collide}
 {meta: artist Kenny Rogers}
 {meta: composer Jeffery Tweel and Jan Dyer}
+{meta: x_source classic-country}
+{meta: x_source_file everytimetwofoolscollidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You want [Am]things your [Em]way and [F]I want them [C]mine 
@@ -27,3 +30,6 @@ Every [G7]time two fools co[C]llide
 To [F]keep our hearts from [C]breaking
 Every [G7]time two fools co[F]ll---i[C]de
 {end_of_verse}
+
+
+

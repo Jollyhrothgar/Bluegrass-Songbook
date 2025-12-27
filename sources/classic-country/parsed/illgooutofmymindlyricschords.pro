@@ -1,6 +1,9 @@
 {meta: title I'll go out of my mind}
 {meta: artist Don Rich}
 {meta: composer Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file illgooutofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wait for you to call me but you don't 
@@ -34,3 +37,8 @@ I'll go out of my mind completely it's true
 Tag:
 And [F]if you make me [C]much bluer I'll go out [G7]of my [C]mind
 {end_of_verse}
+
+
+
+
+

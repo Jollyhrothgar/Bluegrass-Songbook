@@ -1,6 +1,9 @@
 {meta: title When The Roll Is Called Up Yonder}
 {meta: artist The Hee Haw Gospel Quartet}
 {meta: composer James M. Black}
+{meta: x_source classic-country}
+{meta: x_source_file whentherolliscalledupyonderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the trumpet of the Lord shall sound and [C]time shall be no [G]more
@@ -43,3 +46,8 @@ When the roll is called up [D7]yonder
 When the [G]roll is called up [C]yonder
 When the [G]roll is called up [D7]yonder I’ll be [G]there
 {end_of_verse}
+
+
+
+
+

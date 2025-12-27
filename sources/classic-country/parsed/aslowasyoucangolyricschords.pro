@@ -1,5 +1,8 @@
 {meta: title As Low As You Can Go}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file aslowasyoucangolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [E7]I came home early this morning [Em]and she was gone
@@ -22,3 +25,5 @@ Where [Am]people are [G7]victims [F]of their own [Am]fears
 [Dm]There lies a [F]man you should have [C]known
 Repeat last verse x2
 {end_of_verse}
+
+

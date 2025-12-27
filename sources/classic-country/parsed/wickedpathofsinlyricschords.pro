@@ -1,6 +1,9 @@
 {meta: title Wicked Path Of Sin}
 {meta: artist The Stanley Brothers}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file wickedpathofsinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In this awful world of sorrow
@@ -43,3 +46,8 @@ Now I'm safe with my Jesus
 [C]Oh I can hear the angels [G]singing
 [D7]Just inside the pearly [G]gates
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That Don’t Make Her A Bad Girl}
 {meta: artist Charlie Walker}
 {meta: composer Clyde Pitts and Van Givens}
+{meta: x_source classic-country}
+{meta: x_source_file thatdontmakeherabadgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just because she [F]works in a [C]honky tonk at night
@@ -33,3 +36,7 @@ And [G7]that don't make her a [C]bad girl
 {start_of_verse: Verse 4}
 No [G7]that don't make her a [C]bad girl
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rainy Day In Richmond}
 {meta: artist Bobby Bare}
 {meta: composer Jerry McBee, Dan Lomax, Billy Large}
+{meta: x_source classic-country}
+{meta: x_source_file rainydayinrichmondlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was a rainy day in [G7]Richmond
@@ -29,3 +32,6 @@
 {start_of_verse: Verse 4}
 [Dm]Oh rainy day in Richmond the [G7]day that I found [C]out
 {end_of_verse}
+
+
+

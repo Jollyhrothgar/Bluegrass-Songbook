@@ -1,6 +1,9 @@
 {meta: title Nothing Like A Woman}
 {meta: artist Vince Gill}
 {meta: composer Reed Nielsen and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file nothinglikeawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh there's [G]nothing like a woman [C] when you're [G]all alone[C]
@@ -28,3 +31,6 @@ Repeat last verse
 She's always there to [B7]understand [Em] the little [G]boy in[C]side of the man
 Oh there's [G]nothing like a woman [C] nothin' at [G]all
 {end_of_verse}
+
+
+

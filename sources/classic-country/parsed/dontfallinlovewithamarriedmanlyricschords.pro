@@ -1,6 +1,9 @@
 {meta: title Don't Fall In Love With A Married Man}
 {meta: artist Jean Shepard}
 {meta: composer Joe Penny and Red Fortner}
+{meta: x_source classic-country}
+{meta: x_source_file dontfallinlovewithamarriedmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh single girls don't be mislead 
@@ -43,3 +46,8 @@ And [C]finds that she's wearing the [D7]brand
 Of a sinful [C]girl alone in the [G]world 
 For [D7]falling in love with a married [G]man
 {end_of_verse}
+
+
+
+
+

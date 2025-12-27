@@ -1,6 +1,9 @@
 {meta: title Cry}
 {meta: artist Willie Nelson}
 {meta: composer Churchill Koleman}
+{meta: x_source classic-country}
+{meta: x_source_file crylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]If your [C]sweetheart sends a letter of good[E7]bye
@@ -25,3 +28,5 @@ If your heartaches seem to hang around too [E7]long
 [C]Behind the cloudy [A7]sky
 So let your [Dm]hair down and [G7]go on and [C]cry
 {end_of_verse}
+
+

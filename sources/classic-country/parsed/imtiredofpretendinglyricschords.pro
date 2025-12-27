@@ -1,5 +1,8 @@
 {meta: title I'm Tired of Pretending}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file imtiredofpretendinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm tired of pretending that I [C]don't care for [G]you
@@ -28,3 +31,6 @@ I'm [C]tired of waking up to find you're only [G]in my [D7]dreams
 I'm [G]tired of pretending our love [C]affair is [G]through
 I'm tired of pretending that I'm not [D7]in love with [G]you   
 {end_of_verse}
+
+
+

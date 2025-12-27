@@ -1,6 +1,9 @@
 {meta: title Four Bare Walls And A Ceiling}
 {meta: artist Cowboy Copas}
 {meta: composer Louis Mann and Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file fourbarewallsandaceilinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Four bare walls and a [F]ceiling
@@ -34,3 +37,7 @@ That [G7]I’m just a prisoner of [C]love
 These walls were once our [F]mansion
 But [G7]now they’re a prison to [C]me
 {end_of_verse}
+
+
+
+

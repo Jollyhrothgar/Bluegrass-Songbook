@@ -1,6 +1,9 @@
 {meta: title Beat The Devil}
 {meta: artist The Statler Brother}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file beatthedevillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Then Jesus was led by the Spirit into the wilderness 
@@ -59,3 +62,11 @@ He beat the [G7]devil at his own [C]game
 {start_of_verse: Verse 9}
 He beat the [G7]devil at his own [C]game
 {end_of_verse}
+
+
+
+
+
+
+
+

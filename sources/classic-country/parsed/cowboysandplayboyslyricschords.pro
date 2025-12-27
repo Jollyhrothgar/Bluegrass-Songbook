@@ -1,6 +1,9 @@
 {meta: title Cowboys And Playboys}
 {meta: artist Moe Bandy}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysandplayboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came down from Detroit in my new Cadillac love [G7]coupe
@@ -35,3 +38,7 @@ But don't look for a playboy look for a cowboy
 But don't look for a playboy look for a cowboy
 [C]In a Cadillac loaded with hay
 {end_of_verse}
+
+
+
+

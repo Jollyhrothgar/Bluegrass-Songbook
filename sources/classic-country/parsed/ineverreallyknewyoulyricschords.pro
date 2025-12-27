@@ -1,6 +1,9 @@
 {meta: title I Never Really Knew You}
 {meta: artist Vince Gill}
 {meta: composer Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file ineverreallyknewyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I never really knew you till you [D7]said goodbye
@@ -35,3 +38,7 @@ You said you'd heard enough of all those [C]little lies
 I [D7]never really knew you till you [G]said goodbye
 No I [D7]never really knew you till you [G]said goodbye
 {end_of_verse}
+
+
+
+

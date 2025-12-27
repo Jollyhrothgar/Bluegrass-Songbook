@@ -1,5 +1,8 @@
 {meta: artist Carl Smith lyrics and chords}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file iputtheblueinhereyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her skin is as [G7]soft as a [C]baby
@@ -33,3 +36,7 @@ When [G7]I put the blue in her [C]eyes
 Yes [F]I changed one of heaven's [C]creation
 When [G7]I put the blue in her [C]eyes
 {end_of_verse}
+
+
+
+

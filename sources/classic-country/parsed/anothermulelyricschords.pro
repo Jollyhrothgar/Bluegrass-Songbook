@@ -1,6 +1,9 @@
 {meta: title Another Mule}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file anothermulelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If your liver starts to jump
@@ -22,3 +25,5 @@ And she [C]give you a dirty [G]look
 Man that's [D7]all
 Another [C]mule is kickin' in your [G]stall
 {end_of_verse}
+
+

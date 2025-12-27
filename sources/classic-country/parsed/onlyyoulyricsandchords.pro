@@ -1,5 +1,8 @@
 {meta: title Only You}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file onlyyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Only you can make my dreams come [F]true 
@@ -30,3 +33,6 @@ You and you alone can keep us far [F]apart
 Only [C]you can [G7]break my [C]heart
 [F]Only [C]you can [G7]break my [C]heart
 {end_of_verse}
+
+
+

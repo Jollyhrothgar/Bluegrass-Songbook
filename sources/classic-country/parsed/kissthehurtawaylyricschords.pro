@@ -1,6 +1,9 @@
 {meta: title Kiss The Hurt Away}
 {meta: artist Barbara Mandrell}
 {meta: composer Chuck Reed and Finley Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file kissthehurtawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If my lonely [C]tears could talk 
@@ -36,3 +39,7 @@ And I love you [Am]so [C]
 [E7]Please come back and [Am]hold me close 
 [D7]And kiss the hurt [G]awa[Em]y  [C]  [D7]   [G]
 {end_of_verse}
+
+
+
+

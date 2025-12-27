@@ -1,5 +1,8 @@
 {meta: title Enough To Make A Grown Man Cry}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file enoughtomakeagrownmancrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I get a little lonesome in the [G7]evening sittin’ here all [C]alone
@@ -40,3 +43,8 @@ Well [G7]it’s enough to make a grown man [C]cry
 [F]When I think of how I [C]tried
 [G7]It’s enough to make a grown man [C]cry
 {end_of_verse}
+
+
+
+
+

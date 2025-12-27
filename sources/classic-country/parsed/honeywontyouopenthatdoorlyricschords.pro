@@ -1,6 +1,9 @@
 {meta: title Honey Won't You Open That Door}
 {meta: artist Ricky Skaggs}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file honeywontyouopenthatdoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey  honey  honey won't you open that [G7]door
@@ -50,3 +53,11 @@ I went right down to see old Bob
 {start_of_verse: Verse 1}
 [C]Honey  honey  honey won't you open that [G7]door
 {end_of_verse}
+
+
+
+
+
+
+
+

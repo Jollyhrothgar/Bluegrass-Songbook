@@ -1,6 +1,9 @@
 {meta: title Donna Donna}
 {meta: artist Everly Brothers}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file donnadonnalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Donna [Em]Donna [G7]why d’ya wanna do [C]that
@@ -59,3 +62,9 @@
 [G7]And left me where I was at da da da [C]da
 [G7]Donna [F]why'd you wanna do [C]that
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ship In The Bottle}
 {meta: artist Stonewall Jackson}
 {meta: composer Glenn Sutton and Hugh X. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file shipinthebottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I sit at this [G7]bar and drink it [C]over
@@ -33,3 +36,7 @@ Keep that [C]rising tide of [F]hurtin’ away from [C]me
 {start_of_verse: Verse 5}
 Keep that rising tide of [F]hurt away from [C]me
 {end_of_verse}
+
+
+
+

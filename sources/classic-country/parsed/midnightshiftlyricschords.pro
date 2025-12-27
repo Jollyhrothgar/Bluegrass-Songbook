@@ -1,6 +1,9 @@
 {meta: title Midnight Shift}
 {meta: artist Buddy Holly}
 {meta: composer Earl Lee and Jimmie Rogers Ainsworth}
+{meta: x_source classic-country}
+{meta: x_source_file midnightshiftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Well if you see old Annie better [C]give her a lift
@@ -42,3 +45,7 @@ She [G]starts slippin' 'round in the middle of the night
 [D7]Brother there just [C]ain't no ifs
 Cause [G]Annie's been a-workin' on the midnight shift
 {end_of_verse}
+
+
+
+

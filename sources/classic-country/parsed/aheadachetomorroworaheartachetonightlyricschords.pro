@@ -1,6 +1,9 @@
 {meta: title A Headache Tomorrow Or A Heartache Tonight}
 {meta: artist Mickey Gilley}
 {meta: composer Chick Rains}
+{meta: x_source classic-country}
+{meta: x_source_file aheadachetomorroworaheartachetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if the whiskey doesn’t get me I know the [C7]memories [F]will
@@ -31,3 +34,6 @@
 [C]When you can’t win [C7]for losin’ [F]you know it’s just not [Fm]right
 [C]It’s a headache [Am]tomorrow or [F]a heartache [C][G7]tonight
 {end_of_verse}
+
+
+

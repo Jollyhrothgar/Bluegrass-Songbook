@@ -1,6 +1,9 @@
 {meta: title Home To Texas For Christmas}
 {meta: artist Mickey Gilley}
 {meta: composer Gary Nicholson, Sandy Pinkard, Edward Atchley}
+{meta: x_source classic-country}
+{meta: x_source_file hometotexasforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Going back to Texas for [C]Christmas
@@ -45,3 +48,8 @@ Well I'm [G]going back down to Texas for [C]Christmas
 All I want is Texas for [C]Christmas
 [D7]Let that Lone Star lead me [G]home
 {end_of_verse}
+
+
+
+
+

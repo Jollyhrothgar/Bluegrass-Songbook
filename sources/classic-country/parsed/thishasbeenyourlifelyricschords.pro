@@ -1,6 +1,9 @@
 {meta: title This Has Been Your Life}
 {meta: artist Jean Shepard}
 {meta: composer Ted Edlin}
+{meta: x_source classic-country}
+{meta: x_source_file thishasbeenyourlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heartaches and sorrow misery and [D7]shame
@@ -29,3 +32,6 @@
 [G7]How do I know this I am your [C]wife
 [G]And though I [D7]love you this has been your [G]life
 {end_of_verse}
+
+
+

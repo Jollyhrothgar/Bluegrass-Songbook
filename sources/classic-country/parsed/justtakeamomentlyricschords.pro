@@ -1,6 +1,9 @@
 {meta: title Just Take A Moment}
 {meta: artist Ricky Nelson}
 {meta: composer Jerry Fuller and Cissi Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file justtakeamomentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just take a moment to remember the [F]love that we once [C]knew
@@ -29,3 +32,6 @@
 {start_of_verse: Verse 4}
 [F]Yes that moment [G7]will last [C]evermore well that [F]moment will [G7]last [C]evermore
 {end_of_verse}
+
+
+

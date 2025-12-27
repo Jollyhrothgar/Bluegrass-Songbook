@@ -1,6 +1,9 @@
 {meta: title Daddy And The Wine}
 {meta: artist Porter Wagoner}
 {meta: composer Gene Crysler}
+{meta: x_source classic-country}
+{meta: x_source_file daddyandthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A child walked in a candy store in [F]faded [C]overalls
@@ -29,3 +32,6 @@
 [C]Then momma disappeared one day [F]and so did daddy's [C]mind
 [F]And now it's me and [C]daddy mostly [G7]daddy and the [C]wine
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's Teardrop Time}
 {meta: artist Dottie West}
 {meta: composer Dallas Frazier and Buddy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file itsteardroptimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's teardrop time I'm all alone [G7]again
@@ -21,3 +24,5 @@
 [C]Hang on and help me [G7]heart it's teardrop [C]time
 [F]Hang on [C]help me heart [G7]it's teardrop [C]time
 {end_of_verse}
+
+

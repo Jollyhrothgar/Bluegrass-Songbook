@@ -1,6 +1,9 @@
 {meta: title I’m Not That Lonely Yet}
 {meta: artist Rhonda Vincent}
 {meta: composer Bill Rice, Mary Rice, Mary Sharon Rice}
+{meta: x_source classic-country}
+{meta: x_source_file imnotthatlonelyyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't wanna [C]give you a [D7]slow dance or [G]two 
@@ -40,3 +43,8 @@ But [G]I'm not that [D7]lonely [G]yet
 {start_of_verse: Verse 5}
 No I'm not that [D7]lonely [G]yet
 {end_of_verse}
+
+
+
+
+

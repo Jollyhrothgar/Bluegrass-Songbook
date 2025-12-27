@@ -1,6 +1,9 @@
 {meta: title Cold Hard Facts Of Life}
 {meta: artist Porter Wagoner}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file coldhardfactsoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got back in town a day [G7]before I'd planned [C]to
@@ -47,3 +50,9 @@ But who taught who the [G7]cold hard facts of [C]life
 {start_of_verse: Verse 7}
 But who taught who the [G7]cold hard facts of [C]life
 {end_of_verse}
+
+
+
+
+
+

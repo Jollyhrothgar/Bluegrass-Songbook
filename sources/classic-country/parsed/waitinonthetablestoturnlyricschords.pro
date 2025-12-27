@@ -1,6 +1,9 @@
 {meta: title Waitin' On The Tables To Turn}
 {meta: artist Mickey Gilley}
 {meta: composer Wayne Kemp and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file waitinonthetablestoturnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's waitin' on the tables  a-[G7]waitin' for the tables to [C]turn
@@ -30,3 +33,7 @@ A-waitin' on the tables a-[G7]waitin' on the tables to [C]turn
 {start_of_verse: Verse 5}
 Waitin' on the tables [G7]waitin' on the tables to [C]turn
 {end_of_verse}
+
+
+
+

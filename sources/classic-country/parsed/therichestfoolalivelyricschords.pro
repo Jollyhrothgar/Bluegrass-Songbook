@@ -1,6 +1,9 @@
 {meta: title The Richest Fool Alive}
 {meta: artist Patty Loveless}
 {meta: composer Bobby Boyd, Kostas Lazarides, Don Mealer}
+{meta: x_source classic-country}
+{meta: x_source_file therichestfoolalivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's just no way of goin' back to [C]change what's come and gone
@@ -36,3 +39,7 @@ And be the [D7]richest fool [G]alive
 I'd have a broken [C]heart worth [G]millions 
 And be the [D7]richest fool [G]alive
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title No Lonesome Tune}
 {meta: artist Jimmie Dale Gilmore}
 {meta: composer Townes Van Zandt}
+{meta: x_source classic-country}
+{meta: x_source_file nolonesometunelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I ain't gonna sing no lonesome tune
@@ -63,3 +66,16 @@ And if you feel the same about me
 {start_of_verse: Verse 13}
 [D7]Your lost high roller's rolling home to [G]stay
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

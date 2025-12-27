@@ -1,5 +1,8 @@
 {meta: title Don't Be Late}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file dontbelatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Momma’s apron [F]hanging in the kitchen on a [C]nail
@@ -42,3 +45,8 @@ Don’t be late don’t be late
 [C]For they wait there for you mom and dad and brother [F]too
 [C]If you love ’em go [G7]and show ‘em don’t be [C]late
 {end_of_verse}
+
+
+
+
+

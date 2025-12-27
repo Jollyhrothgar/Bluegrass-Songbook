@@ -1,6 +1,9 @@
 {meta: title Walk A Country Mile}
 {meta: artist Slim Dusty}
 {meta: composer Joy McKean}
+{meta: x_source classic-country}
+{meta: x_source_file walkacountrymilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've walked a mile or [C]two in my [G]lifetime
@@ -56,3 +59,10 @@ I knew I'd [G]just have to [D7]walk that country [G]mile
 {start_of_verse: Verse 6}
 Yes I knew I'd have to [D7]walk that country [G]mile
 {end_of_verse}
+
+
+
+
+
+
+

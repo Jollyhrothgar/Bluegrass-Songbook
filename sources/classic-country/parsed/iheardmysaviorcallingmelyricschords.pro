@@ -1,6 +1,9 @@
 {meta: title I Heard My Savior Calling Me}
 {meta: artist Kitty Wells}
 {meta: composer Johnnie Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file iheardmysaviorcallingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard my Savior calling me
@@ -29,3 +32,6 @@ I'm on my way to better land
 [C]I know he'll never let me fall
 [G7]Praise out I heard my Savior [C]call
 {end_of_verse}
+
+
+

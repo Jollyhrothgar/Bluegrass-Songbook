@@ -1,6 +1,9 @@
 {meta: title He'll Understand and Say Well Done}
 {meta: artist Johnny Cash}
 {meta: composer Roger Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file hellunderstandandsaywelldonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Give when you give him best of your [G]service 
@@ -29,3 +32,6 @@ But he knew well [G7]that his father [C]in [G]Heaven
 Bearing the [G7]staff and the cross [C]of [G]redemption 
 [C]He'll understand [G]and [A7]say well [G][D7]done
 {end_of_verse}
+
+
+

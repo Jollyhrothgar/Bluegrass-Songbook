@@ -1,6 +1,9 @@
 {meta: title Freeborn Man}
 {meta: artist Glen Campbell}
 {meta: composer Keith Allison and Mark Lindsay}
+{meta: x_source classic-country}
+{meta: x_source_file freebornmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born in southland twenty some odd years ago
@@ -51,3 +54,11 @@ I'm a freeborn [F]man   my home is on my [C]back
 I know [G7]every inch of highway every foot [F]of
 Back road every mile of railroad [C]track
 {end_of_verse}
+
+
+
+
+
+
+
+

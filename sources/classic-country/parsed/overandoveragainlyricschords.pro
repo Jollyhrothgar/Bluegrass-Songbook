@@ -1,5 +1,8 @@
 {meta: title Over And Over Again}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file overandoveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Over and over say you'll forgive me 
@@ -26,3 +29,6 @@ I'll be faithful to the [G7]end
 [C]Back together now and forever ever more will I be [G7]true
 [C]Over and over I'm gonna prove it over and [G7]over to [C]you
 {end_of_verse}
+
+
+

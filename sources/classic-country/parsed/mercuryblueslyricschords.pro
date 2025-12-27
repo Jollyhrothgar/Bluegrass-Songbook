@@ -1,6 +1,9 @@
 {meta: title Mercury Blues}
 {meta: artist Alan Jackson}
 {meta: composer Robert Geddins and K.C. Douglas}
+{meta: x_source classic-country}
+{meta: x_source_file mercuryblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if I had money I tell you what I'd do
@@ -41,3 +44,8 @@ I'm [Am]gonna buy me a [G7]Mercury and cruise it up and down the [C]road
 I'm [Am]gonna buy me a [G7]Mercury and cruise it up and down the [C]road
 Yeah I'm [Am]gonna buy me a [G7]Mercury and cruise it up and down the [C]road
 {end_of_verse}
+
+
+
+
+

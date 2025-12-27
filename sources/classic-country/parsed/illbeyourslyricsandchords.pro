@@ -1,6 +1,9 @@
 {meta: title I'll Be Yours}
 {meta: artist Faron Young}
 {meta: composer Jim Odom}
+{meta: x_source classic-country}
+{meta: x_source_file illbeyourslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When he stopped sending roses 
@@ -29,3 +32,6 @@ When you're lonely for lips to [F]kiss you
 When you have no one to miss [C]you 
 Darling [F]I'll  be  [C][G7]yours
 {end_of_verse}
+
+
+

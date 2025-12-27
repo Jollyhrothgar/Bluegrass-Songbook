@@ -1,6 +1,9 @@
 {meta: title I'm Living In Sunshine}
 {meta: artist Wynn Stewart}
 {meta: composer William Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file imlivinginsunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You bring me [F]sunshine beautiful [C]sunshine
@@ -44,3 +47,10 @@ I'm living in [G7]sunshine when I'm with [C]you
 {start_of_verse: Verse 5}
 Oh I'm living in [G7]sunshine when I'm with [C]you
 {end_of_verse}
+
+
+
+
+
+
+

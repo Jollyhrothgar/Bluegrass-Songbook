@@ -1,6 +1,9 @@
 {meta: title Homecoming}
 {meta: artist Rhonda Vincent}
 {meta: composer Carl Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file homecominglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There'll be a home[Dm]coming [C]some [F]morning
@@ -43,3 +46,8 @@ For [C]heaven's [G7]homecoming [C]day
 I'll see [F]mother and daddy [C]Lord I am [F]ready
 For [C]heaven's [G7]homecoming [C]day
 {end_of_verse}
+
+
+
+
+

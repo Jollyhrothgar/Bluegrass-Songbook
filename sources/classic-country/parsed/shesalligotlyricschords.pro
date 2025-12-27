@@ -1,6 +1,9 @@
 {meta: title She's All I Got}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Williams Jr. and Gary Bonds}
+{meta: x_source classic-country}
+{meta: x_source_file shesalligotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I said friend don't take her she's [Dm]all I’ve got  
@@ -36,3 +39,7 @@ She could [Dm]kiss the [Em]ground in the [F]winter time  and [G7]make a flower [
 I'm telling you friend don't take her she's [Dm]all I got 
 She's every[G7]thing in life I'm ever gonna [C]need
 {end_of_verse}
+
+
+
+

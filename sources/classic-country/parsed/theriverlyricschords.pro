@@ -1,6 +1,9 @@
 {meta: title The River}
 {meta: artist Garth Brooks}
 {meta: composer Victoria Shaw and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file theriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know a dream is like a river 
@@ -84,3 +87,14 @@ Until the [G7]river runs [C]dry
 Until the [G7]river runs [C]dry
 Until the [G7]river runs [C]dry
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

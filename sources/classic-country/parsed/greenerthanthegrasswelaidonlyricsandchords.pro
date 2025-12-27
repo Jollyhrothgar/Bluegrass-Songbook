@@ -1,5 +1,8 @@
 {meta: title Greener Than The Grass We Laid On}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file greenerthanthegrasswelaidonlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I painted [G7]quite a picture for the [F]girls in her home[C]town
@@ -45,3 +48,8 @@ She should've never listened to my [F]songs
 [A#7]To-do-[Gm]do to-do-[C]do do [F]do-do-[A#7]do to-do-[Gm]do-to-do-[C]do do-do-[F]do 
 [A#7]do-do-[Gm]do do-do-[C]do
 {end_of_verse}
+
+
+
+
+

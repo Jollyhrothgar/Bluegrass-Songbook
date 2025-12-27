@@ -1,5 +1,8 @@
 {meta: title Follow Me}
 {meta: artist Jack Greene}
+{meta: x_source classic-country}
+{meta: x_source_file followmelyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With a cardboard bed and a [Em]jug of wine
@@ -48,3 +51,9 @@ How to [Dm]find his way back [G7]home
 [Fm]Follow [C]me and I'll [Am]take you where
 [G7]You'll never be [C]alone
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Cowboys And Daddy's}
 {meta: artist Bobby Bare}
 {meta: composer Marty Cooper}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysanddaddyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you're [G7]sleepy it's [C]time to go [G7]home
@@ -32,3 +35,6 @@
 [F]That's when cowboys [C]and daddy's [G7]don't ever [C]cry
 [F]Cowboys and [C]Daddy's [G7]don't ever [C]cry
 {end_of_verse}
+
+
+

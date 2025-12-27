@@ -1,6 +1,9 @@
 {meta: title The Boxer}
 {meta: artist Alison Krauss and Shawn Colvin}
 {meta: composer Paul Simon}
+{meta: x_source classic-country}
+{meta: x_source_file theboxerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am just a poor boy though my story's [G7]seldom [Am]told 
@@ -75,3 +78,10 @@ Lie-la-[Am]lie
 Lie-la-[G7]la-lie lie-la-lie
 Lie-la-la-la-[C]lie
 {end_of_verse}
+
+
+
+
+
+
+

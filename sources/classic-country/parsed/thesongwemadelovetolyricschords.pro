@@ -1,6 +1,9 @@
 {meta: title The Song We Made Love To}
 {meta: artist Mickey Gilley}
 {meta: composer Kenneth Wahle}
+{meta: x_source classic-country}
+{meta: x_source_file thesongwemadelovetolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Too hard to think about too [A7]sad to talk about
@@ -29,3 +32,6 @@ We held each [G7]other all night [C]long
 And we played that [A7]song that [F]song that [G7]we made [Am]love to
 [D7]That old [F]song that [G7]we made love [C]to
 {end_of_verse}
+
+
+

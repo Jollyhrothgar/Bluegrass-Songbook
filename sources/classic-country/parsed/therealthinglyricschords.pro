@@ -1,6 +1,9 @@
 {meta: title The Real Thing}
 {meta: artist Jean Shepard}
 {meta: composer Ronnie McDowell}
+{meta: x_source classic-country}
+{meta: x_source_file therealthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know you want to set my soul on fire
@@ -46,3 +49,8 @@ I’ll lay with you and talk with you
 [G]And honey that don’t mean just an hour or [E7]two
 [C]You got to [D7]guarantee me the real [G]thing
 {end_of_verse}
+
+
+
+
+

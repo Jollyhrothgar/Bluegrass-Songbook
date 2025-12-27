@@ -1,6 +1,9 @@
 {meta: title Song Of The Patriot}
 {meta: artist Johnny Cash}
 {meta: composer Marty Robbins and Shirl Melete}
+{meta: x_source classic-country}
+{meta: x_source_file songofthepatriotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m a flag waving patriotic nephew of my Uncle Sam
@@ -63,3 +66,12 @@ And I enjoy the liberty of being what I wanna be
 [F]And I’m a flag waving patriotic nephew of my Uncle Sam
 [G7]A rough ridin’ [C]fightin’ Yankee [F]man
 {end_of_verse}
+
+
+
+
+
+
+
+
+

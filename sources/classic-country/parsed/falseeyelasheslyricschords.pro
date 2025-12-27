@@ -1,6 +1,9 @@
 {meta: title False Eyelashes}
 {meta: artist Dolly Parton}
 {meta: composer Bob Tubert and Demetriss Tapp}
+{meta: x_source classic-country}
+{meta: x_source_file falseeyelasheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Folks back home think I'm a star now 
@@ -65,3 +68,12 @@ Is my [G7]only claim to [C]fame
 [F]And the record played in [C]my hometown 
 Is my [G7]only claim to [C]fame
 {end_of_verse}
+
+
+
+
+
+
+
+
+

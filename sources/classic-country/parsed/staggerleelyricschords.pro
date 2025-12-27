@@ -1,6 +1,9 @@
 {meta: title Stagger Lee}
 {meta: artist Fats Domino}
 {meta: composer Harold Logan and Lloyd Price}
+{meta: x_source classic-country}
+{meta: x_source_file staggerleelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was standin' on the corner when I [F]heard my bull dog bark
@@ -27,3 +30,6 @@ A [C]bullet went through Billy and [G7]broke the bartender's [C]glass
 Go Stagger Lee [F]go Stagger Lee
 Go Stagger [C]Lee please [G7]don't shoot poor [C]me
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: artist Charlie Pride}
 {meta: composer Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file wondercouldilivethereanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have you ever been awaken by the crowing of a rooster
@@ -41,3 +44,9 @@ I don't really miss [C7]them like [F]before
 It's nice to think [G7]about it [C]maybe even [Am]visit 
 But I [F]wonder could I [G7]live there [C]anymore
 {end_of_verse}
+
+
+
+
+
+

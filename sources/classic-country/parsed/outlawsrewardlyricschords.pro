@@ -1,5 +1,8 @@
 {meta: title Outlaw's Reward}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file outlawsrewardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've always been labeled as the rip roaring hell raising [F]kind
@@ -41,3 +44,8 @@
 [F]And oh how I'd love to be taken into your custody
 [C]And what kind of reward [G7]Jesus have you got out on [C]me
 {end_of_verse}
+
+
+
+
+

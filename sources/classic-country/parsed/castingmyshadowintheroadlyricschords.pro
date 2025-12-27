@@ -1,6 +1,9 @@
 {meta: title Casting My Shadow In The Road}
 {meta: artist Ricky Skaggs}
 {meta: composer Jimmy Rushing and Randy Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file castingmyshadowintheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There was a warm wind [G7]weaving [C]through the trees
@@ -50,3 +53,7 @@ A [F]burning need for
 A [F]burning need for
 [C]Casting my [G7]shadow in the [C]road
 {end_of_verse}
+
+
+
+

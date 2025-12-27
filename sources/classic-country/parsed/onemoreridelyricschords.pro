@@ -1,6 +1,9 @@
 {meta: title One More Ride}
 {meta: artist Hank Snow}
 {meta: composer Bob Nolan}
+{meta: x_source classic-country}
+{meta: x_source_file onemoreridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One  [D7]more  [G]ride
@@ -35,3 +38,6 @@ As the years go by I wonder why I longed to leave my home
 [G]So it's goodbye now you'll never know how I'm [D7]griev-ing  [G]one  [D7]more  [G]ride
 [D7]One  more  [G]ride
 {end_of_verse}
+
+
+

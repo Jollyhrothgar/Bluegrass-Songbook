@@ -1,6 +1,9 @@
 {meta: title Somewhere In Kentucky Tonight}
 {meta: artist Tom T. Hall}
 {meta: composer Tom T. Hall and Dixie Hall}
+{meta: x_source classic-country}
+{meta: x_source_file somewhereinkentuckytonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere in Kentucky there's [F]a weather-beaten house
@@ -47,3 +50,9 @@ All I ever needed is [F]waiting there for me
 {start_of_verse: Verse 5}
 [G7]Somewhere in Kentucky to[C]night
 {end_of_verse}
+
+
+
+
+
+

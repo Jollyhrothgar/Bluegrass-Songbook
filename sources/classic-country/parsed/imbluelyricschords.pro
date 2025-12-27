@@ -1,6 +1,9 @@
 {meta: title I'm Blue}
 {meta: artist Hank Locklin}
 {meta: composer Jessi Colter}
+{meta: x_source classic-country}
+{meta: x_source_file imbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm [C]blue [G]so [C]blue
@@ -24,3 +27,5 @@ I'm [C]blue [G]so [C]blue
 I [D7]lost my [G]baby
 I [D7]lost my [G]baby
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title There's Poison In Your Heart Lyrics Chords}
 {meta: artist Kitty Wells}
 {meta: composer Zeke Clements}
+{meta: x_source classic-country}
+{meta: x_source_file therespoisoninyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I loved you darling and you [F]thrilled me through and [C]through
@@ -22,3 +25,5 @@ Then I'll forget my fickle dreams of [G7]you
 It's [C]just too bad we've never had an [F]even-steven [C]start
 Your lips are sweet as honey but there's [G7]poison in your [C]heart
 {end_of_verse}
+
+

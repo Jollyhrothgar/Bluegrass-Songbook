@@ -1,5 +1,8 @@
 {meta: title I Can't Be Myself}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file icantbemyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a way of mine to say [G7]just what I'm [C]thinking
@@ -28,3 +31,6 @@ And [F]down deep inside I don't [C]believe that you want me [G7]to
 And [F]it's not my way to take so long [C]deciding 
 That I can't be [G7]myself when I'm with [C]you
 {end_of_verse}
+
+
+

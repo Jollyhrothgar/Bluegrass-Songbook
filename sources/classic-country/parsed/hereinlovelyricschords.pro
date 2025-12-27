@@ -1,6 +1,9 @@
 {meta: title Here In Love}
 {meta: artist Ronnie Milsap}
 {meta: composer Kent M. Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file hereinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our neighbors are in Rio and [F]wanted us to know
@@ -29,3 +32,6 @@ And the feelings we've found here in [F]love
 We reco[C]mmend it to friends it's the in [G7]place this year
 Let’s [F]send them a card and say [G7]wish you were here in [C]love
 {end_of_verse}
+
+
+

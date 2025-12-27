@@ -1,6 +1,9 @@
 {meta: title If A Broken Heart Could Kill}
 {meta: artist Keith Whitley}
 {meta: composer Allen Henson, Norris D. Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file ifabrokenheartcouldkilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Oh it's [G]choking [C]me to [G]death
@@ -43,3 +46,8 @@ But you [G]know [C]I'm still [G]alive
 But [C]Lord knows I'd be [G]cold and [Em]still
 If a [D7]broken heart could [C]kill[Am]   [G]
 {end_of_verse}
+
+
+
+
+

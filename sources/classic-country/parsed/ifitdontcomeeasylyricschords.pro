@@ -1,6 +1,9 @@
 {meta: title If It Don't Come Easy}
 {meta: artist Tanya Tucker}
 {meta: composer Craig Karp and Dave Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file ifitdontcomeeasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know a man a good friend of mine he spends all of his [C]time
@@ -56,3 +59,12 @@ Better let it  better let it [G]go
 But the woman that he loves she don't feel the same
 [D7]I don't know much about love but [C]at least I've learned one [G]thing
 {end_of_verse}
+
+
+
+
+
+
+
+
+

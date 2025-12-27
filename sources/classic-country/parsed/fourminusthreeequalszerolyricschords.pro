@@ -1,6 +1,9 @@
 {meta: title Four Minus Three Equals Zero}
 {meta: artist George Strait}
 {meta: composer Lonnie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file fourminusthreeequalszerolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You always [D7]said you [G]loved me
@@ -31,3 +34,6 @@ Cause I'll be [G]nothing [D7]without your [G]love
 Well [C]four minus [D7]three equals [G]zero[Em] 
 Cause I'll be [G]nothing [D7]without your [C]lov[G]e
 {end_of_verse}
+
+
+

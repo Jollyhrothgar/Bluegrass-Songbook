@@ -1,5 +1,8 @@
 {meta: title There's A Rainbow In Every Teardrop}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file theresarainbowineveryteardroplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a rainbow in every teardrop you're [G7]crying
@@ -26,3 +29,6 @@ So [G7]dry up your tears and kiss [C]me
 Tag:
 So [G7]dry up your tears and kiss [C]me
 {end_of_verse}
+
+
+

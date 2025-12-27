@@ -1,6 +1,9 @@
 {meta: title Award To An Angel}
 {meta: artist Johnny Paycheck}
 {meta: composer Wayne Kemp and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file awardtoanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If they gave a[G7]wards for best [C]angel
@@ -34,3 +37,7 @@ To a [G]woman to a [B7]wife who has [C]loved me all her life
 And [D7]I thank God every [G]day
 You know that [D7]I thank God every [C]day[G]
 {end_of_verse}
+
+
+
+

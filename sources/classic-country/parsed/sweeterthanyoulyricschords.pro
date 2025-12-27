@@ -1,6 +1,9 @@
 {meta: title Sweeter Than You}
 {meta: artist Ricky Nelson}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file sweeterthanyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I could never be [Em]loved by any[C]one [D7]sweeter than [G]you 
@@ -20,3 +23,5 @@ And [C]what more [D7]could I [G]long [Em]for than to [A7]live my life with [D7]y
 [G]I could never be [Em]loved by any[C]one [D7]sweeter than [G]you 
 And [G]I could never be[Em]long to any[C]one [D7]sweeter than [G]you
 {end_of_verse}
+
+

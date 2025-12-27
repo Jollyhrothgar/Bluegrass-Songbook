@@ -1,6 +1,9 @@
 {meta: title It Happens Every Time (I Think Of You)}
 {meta: artist Ronnie Milsap}
 {meta: composer Archie Jordan}
+{meta: x_source classic-country}
+{meta: x_source_file ithappenseverytimeithinkofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just let me [Dm]say [C]I'm over [Dm]you
@@ -35,3 +38,7 @@ And [Dm]I think of [G7]you all the [C]time[Am]   [Dm]
 [G7]All the [C]time[Am]   [Dm]
 [G7]All the [C]time
 {end_of_verse}
+
+
+
+

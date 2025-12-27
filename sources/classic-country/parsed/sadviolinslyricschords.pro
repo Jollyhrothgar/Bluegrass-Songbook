@@ -1,6 +1,9 @@
 {meta: title Sad Violins}
 {meta: artist Red Sovine}
 {meta: composer Bun Wilson and Doc Richardson}
+{meta: x_source classic-country}
+{meta: x_source_file sadviolinslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm [F]back at [G7]our old [C]table in our [F]favorite [C]hide-a-way
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G7]Now all I hear is sad [C]violins
 {end_of_verse}
+
+
+
+

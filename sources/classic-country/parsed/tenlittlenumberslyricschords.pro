@@ -1,5 +1,8 @@
 {meta: title Ten Little Numbers}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file tenlittlenumberslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Countin’ numbers 1, 2, 3
@@ -40,3 +43,8 @@ How many fingers do I hold [D7]up
 Haul up on a crack up on a wheelbarrow blackstone
 Dollar weighs [D7]ten dollar weighs [G]ten
 {end_of_verse}
+
+
+
+
+

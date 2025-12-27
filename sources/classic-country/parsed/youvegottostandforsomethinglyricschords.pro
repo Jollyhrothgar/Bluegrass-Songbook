@@ -1,6 +1,9 @@
 {meta: title You've Got To Stand For Something}
 {meta: artist Charley Pride}
 {meta: composer Buddy Brock and Aaron Tippin}
+{meta: x_source classic-country}
+{meta: x_source_file youvegottostandforsomethinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now daddy didn't like trouble if [G7]it came [C]along
@@ -46,3 +49,9 @@
 {start_of_verse: Verse 6}
 [Dm]You've got to stand [F]for something or you'll [G7]fall for [C]anything
 {end_of_verse}
+
+
+
+
+
+

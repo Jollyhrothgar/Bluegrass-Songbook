@@ -1,5 +1,8 @@
 {meta: title Sad Story}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file sadstorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Listen to my [Am]story [C]it's a sad [Am]story   
@@ -44,3 +47,8 @@ Now watch me [C]cry cry cry cry [Am]cry
 [C]Cry cry cry cry [Am]cry
 [C]Cry cry cry cry [Am]cry
 {end_of_verse}
+
+
+
+
+

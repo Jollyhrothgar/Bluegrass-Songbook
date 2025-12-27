@@ -1,6 +1,9 @@
 {meta: title Country Christmas}
 {meta: artist Ricky Van Shelton}
 {meta: composer Don Schlitz and Ricky Van Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file countryChristmaslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Snow will cover the ground in early [C]winter
@@ -54,3 +57,10 @@
 {start_of_verse: Verse 6}
 [G7]Yes there is nothin' like [C]country [C][F]Christmas
 {end_of_verse}
+
+
+
+
+
+
+

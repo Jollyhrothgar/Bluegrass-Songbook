@@ -1,6 +1,9 @@
 {meta: title I Hang My Head And Cry}
 {meta: artist Marty Robbins}
 {meta: composer Ray Whitley, Gene Autry, Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file ihangmyheadandcrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time I see her passing [F]by
@@ -29,3 +32,6 @@ You have [G7]made me lose the only [C]one
 And my weary heart keeps asking [F]why
 All I [G7]do is hang my head and [C]cry
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title 50,000 Names Carved In The Wall}
 {meta: artist George Jones}
 {meta: composer Jamie O'Hara}
+{meta: x_source classic-country}
+{meta: x_source_file 50000namescarvedinthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's teddy bears and high school rings
@@ -41,3 +44,7 @@ There stars of David and Rosary beads
 {start_of_verse: Verse 5}
 There's 50,000 [D7]names carved in the [G]wall
 {end_of_verse}
+
+
+
+

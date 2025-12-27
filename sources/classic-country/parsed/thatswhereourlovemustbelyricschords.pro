@@ -1,5 +1,8 @@
 {meta: title That's Where Our Love Must Be}
 {meta: artist Dottie West}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhereourlovemustbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](That's where our love [F]our love must [G7]be)
@@ -26,3 +29,6 @@
 [C]In that world of no return lives [C7]our love [F]now
 [G7]That's where that's where our love must [C][F]b-e
 {end_of_verse}
+
+
+

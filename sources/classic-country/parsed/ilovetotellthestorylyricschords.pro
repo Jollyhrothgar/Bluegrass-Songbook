@@ -1,6 +1,9 @@
 {meta: title I Love To Tell The Story}
 {meta: artist Emmylou Harris}
 {meta: composer Katherine Hankey and William Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file ilovetotellthestorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love to tell the story of [F]unseen things [C]above
@@ -35,3 +38,7 @@ I [G7]love to tell the [C]story  [F]'twill be my theme in [C]glory
 To tell the old  old [F]story of [C]Jesus and [G7]his [C]love 
 To tell the old  old [F]story of [C]Jesus and [G7]his [C]love 
 {end_of_verse}
+
+
+
+

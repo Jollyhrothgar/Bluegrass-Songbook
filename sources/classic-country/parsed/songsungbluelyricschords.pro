@@ -1,6 +1,9 @@
 {meta: title Song Sung Blue}
 {meta: artist Johnny Paycheck}
 {meta: composer Neil Diamond}
+{meta: x_source classic-country}
+{meta: x_source_file songsungbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Song sung blue everybody [G7]knows one
@@ -32,3 +35,7 @@ Song sung blue sleeping on my [C]pillow
 {start_of_verse: Verse 4}
 Song sung blue [G7]  song sung blu[C]e 
 {end_of_verse}
+
+
+
+

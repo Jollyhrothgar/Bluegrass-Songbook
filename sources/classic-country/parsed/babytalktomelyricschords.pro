@@ -1,6 +1,9 @@
 {meta: title Baby Talk To Me}
 {meta: artist Marty Robbins}
 {meta: composer Fred Rose and Hy Heath}
+{meta: x_source classic-country}
+{meta: x_source_file babytalktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby don't just sit there [C7]staring into space
@@ -26,3 +29,6 @@ And [D7]I won't ever tease you any[G7]more
 [F]I might hurt you feelings but I'll [C]never hurt your heart
 [G7]Can't we kiss and talk things [C]over  [D7]baby [G7]talk to [C]me
 {end_of_verse}
+
+
+

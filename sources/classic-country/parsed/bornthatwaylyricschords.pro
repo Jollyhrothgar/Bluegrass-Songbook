@@ -1,6 +1,9 @@
 {meta: title Born That Way}
 {meta: artist Stonewall Jackson}
 {meta: composer Glenn Sutton and Hugh X. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file bornthatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know why I [F]drink so much [G7]can't even stand the [C]taste
@@ -34,3 +37,7 @@
 [F]I'm just no good [G7]cause I was born that [C]way
 [F]What can I do [G7]when I was born that a [C]way
 {end_of_verse}
+
+
+
+

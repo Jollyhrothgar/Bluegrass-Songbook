@@ -1,6 +1,9 @@
 {meta: title You Took My Happy Away}
 {meta: artist Ray Price}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file youtookmyhappyawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was with you I was [G7]happy 
@@ -29,3 +32,6 @@ My sorry gets bigger each [G7]day
 With [C]you in my arms I'd be [G7]happy 
 But you took my happy [C]away
 {end_of_verse}
+
+
+

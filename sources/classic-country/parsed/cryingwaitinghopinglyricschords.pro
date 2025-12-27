@@ -1,6 +1,9 @@
 {meta: title Crying Waiting Hoping}
 {meta: artist Buddy Holly}
 {meta: composer Charles Holley}
+{meta: x_source classic-country}
+{meta: x_source_file cryingwaitinghopinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Crying  waiting  [D7]hoping  [G]you'll come [C]back
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [D7]Crying  waiting  [G]hoping
 {end_of_verse}
+
+
+

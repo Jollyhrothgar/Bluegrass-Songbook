@@ -1,6 +1,9 @@
 {meta: title Beacon In The Night}
 {meta: artist George Jones}
 {meta: composer Darrell Edwards and Herby Treece}
+{meta: x_source classic-country}
+{meta: x_source_file beaconinthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Many souls are drifting on the [C]troubled sea of [G]sin
@@ -29,3 +32,6 @@ And [D7]darkest clouds can have a silver [G]lining
 Just set your torch for glory then [C]don't turn left or [G]right
 Be [C]guided straight to [G]heaven by the [D7]beacon in the [G]night
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Tear Dropped By}
 {meta: artist Jean Shepard}
 {meta: composer Larry Lee and Rusty Adams}
+{meta: x_source classic-country}
+{meta: x_source_file ateardroppedbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]A tear drops [G]by
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 4}
 [D7]Every time I think of you a tear drops [G]by
 {end_of_verse}
+
+
+
+

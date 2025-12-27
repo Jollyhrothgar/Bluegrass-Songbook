@@ -1,6 +1,9 @@
 {meta: title Be Proud Of Your Man Lyrics Chords}
 {meta: artist Loretta Lynn}
 {meta: composer L.E. White and Betty Jo White}
+{meta: x_source classic-country}
+{meta: x_source_file beproudofyourmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woman he loves you can't you see
@@ -26,3 +29,6 @@ Pull with him not against him see some good in the bad in him
 [G7]Help him don't hurt him be proud of your [C]man
 [G7]Woman be proud of your [C]man
 {end_of_verse}
+
+
+

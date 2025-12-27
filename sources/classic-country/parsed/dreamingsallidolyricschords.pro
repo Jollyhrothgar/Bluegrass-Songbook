@@ -1,5 +1,8 @@
 {meta: title Dreaming's All I Do}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file dreamingsallidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up [Am]crying [F]I thought I had a [C]dream
@@ -32,3 +35,7 @@ No I [Am]wouldn't dream of [Em]sleeping with [F]anyone but [C]you
 {start_of_verse: Verse 5}
 [Em]Yes anyone will [Am]tell you [F]dreaming's [G7]all I [C]do
 {end_of_verse}
+
+
+
+

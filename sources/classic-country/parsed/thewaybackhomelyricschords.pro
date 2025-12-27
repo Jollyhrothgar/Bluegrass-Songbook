@@ -1,5 +1,8 @@
 {meta: title The Way Back Home}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file thewaybackhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A little girl was cryin' for her [C]momma and her [G]daddy
@@ -41,3 +44,8 @@ Won't you help the [C]children [G]find the [D7]way back [G]home[C]
 {start_of_verse: Verse 6}
 [C]Won't you [G]help the [C]children [G]find the [D7]way back [G]home
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Rhythm In My Baby's Walk}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file rhythminmybabyswalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've traveled across this country been in every town
@@ -45,3 +48,9 @@ I've been from California back through Tennessee
 [F]The love-light tells the answer her eyes began to talk
 [G7]I haven't time to make a rhyme of the rhythm that's in my baby's [C]walk
 {end_of_verse}
+
+
+
+
+
+

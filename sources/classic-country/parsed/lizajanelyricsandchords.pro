@@ -1,6 +1,9 @@
 {meta: title Liza Jane}
 {meta: artist Vince Gill}
 {meta: composer Reed Nielsen and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file lizajanelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've got my number you've got my name
@@ -32,3 +35,8 @@ Oh little [C]Liza [G]Jane
 {start_of_verse: Verse 6}
 Oh [C]little Liza [G]Jane oh little [C]Liza [G]Jane
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Need Someone Like Me}
 {meta: artist George Strait}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file ineedsomeonelikemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're out there somewhere and you're [F]crying
@@ -27,3 +30,6 @@ Cause [F]I need some[C]one like me to [G7]hold on [C]to
 {start_of_verse: Verse 4}
 Cause [F]I need some[C]one like me to [G7]hold on [C]to
 {end_of_verse}
+
+
+

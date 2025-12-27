@@ -1,6 +1,9 @@
 {meta: title Through The Eyes Of A Fool}
 {meta: artist Lefty Frizzell}
 {meta: composer Bobby Bare and Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file throughtheeyesofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll keep [G7]looking through the eyes of a [C]fool
@@ -30,3 +33,7 @@ And now keep [G7]looking through the eyes of a [C]fool
 {start_of_verse: Verse 5}
 Yes I’ll keep [G7]looking through the eyes of a [C]fool
 {end_of_verse}
+
+
+
+

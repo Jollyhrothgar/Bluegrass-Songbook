@@ -1,5 +1,8 @@
 {meta: title A World I Can't Live In}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file aworldicantliveinlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once more I've [G7]said that I’ll [C]leave you
@@ -21,3 +24,5 @@ And you don't mean to [G7]treat me un[C]kind [C7]
 [F]Yours is a [G7]world I can't [C]live in
 [F]But with[C]out you I [A#7]can't live in [F]min[C]e
 {end_of_verse}
+
+

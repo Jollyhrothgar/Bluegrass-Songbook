@@ -1,6 +1,9 @@
 {meta: title You Know Me Much Too Well}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file youknowmemuchtoowelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I see you and you don't speak 
@@ -46,3 +49,9 @@ I [G7]walk sadly by [C]myself
 You pretend that you don't know [G]me 
 Cause you [D7]know me much too [G]well 
 {end_of_verse}
+
+
+
+
+
+

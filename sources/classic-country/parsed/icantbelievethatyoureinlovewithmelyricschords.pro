@@ -1,6 +1,9 @@
 {meta: title I Can’t Believe That You’re In Love With Me}
 {meta: artist Faron Young}
 {meta: composer Jimmy McHugh and Clarence Gaskill}
+{meta: x_source classic-country}
+{meta: x_source_file icantbelievethatyoureinlovewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your [C]eyes are blue your kisses too 
@@ -22,3 +25,5 @@ I can't believe that [D7]you're in love with [G]me
 {start_of_verse: Verse 3}
 [A7]I can't believe that [D7]you're in love with [G]me
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Endless Stream Of Tears}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file endlessstreamoftearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I cry awake at night [G7]and hug my [C]pillow
@@ -53,3 +56,11 @@ Flooded with these memories and emotions
 [F]They say that I'll forget but my [C]face is just as [Am]wet
 [G7]As it was the day you left this [C]town
 {end_of_verse}
+
+
+
+
+
+
+
+

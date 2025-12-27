@@ -1,6 +1,9 @@
 {meta: title You're Still On My Mind}
 {meta: artist Johnny Paycheck}
 {meta: composer Luke McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file yourestillonmymindlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The jukebox is playing a honky tonk [C]song
@@ -26,3 +29,6 @@ It’s an [D7]empty bottle of broken hearts and you're still on my [G]mind
 {start_of_verse: Verse 4}
 It’s an [D7]empty bottle of broken hearts and you're still on my [G]mind
 {end_of_verse}
+
+
+

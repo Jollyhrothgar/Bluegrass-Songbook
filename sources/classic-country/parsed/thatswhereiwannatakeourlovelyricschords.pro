@@ -1,6 +1,9 @@
 {meta: title That's Where I Wanna Take Our Love}
 {meta: artist George Strait}
 {meta: composer Hank Cochran and Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhereiwannatakeourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a quite little place [F]tucked away in the hills
@@ -29,3 +32,6 @@ That's [Dm]where I wanna take our [G7]love and settle [C]down
 And [Am]they'll know just [C]what country means ‘[F]fore they go off to [Fm]town
 That's [Dm]where I wanna take our [G7]love and settle [C]down
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Goody Goody Gumdrop}
 {meta: artist Wilburn Brothers}
 {meta: composer Shirl Milete}
+{meta: x_source classic-country}
+{meta: x_source_file goodygoodygumdroplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh goody goody gumdrop [F]go do a flip flop 
@@ -40,3 +43,8 @@ If you ever see me comin' [F]I'm gonna be hummin'
 {start_of_verse: Verse 4}
 Oh how do you [G7]like good [C]news
 {end_of_verse}
+
+
+
+
+

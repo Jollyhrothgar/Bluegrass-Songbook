@@ -1,6 +1,9 @@
 {meta: title Guilty}
 {meta: artist Kitty Wells}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file guiltylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been accused [C]convicted and [G]condemned 
@@ -28,3 +31,6 @@ Don't punish [C]me for [D7]things I didn't [G]do
 When all I'm [D7]guilty of is loving [G]you
 Yes all I'm [D7]guilty of is loving [G]you 
 {end_of_verse}
+
+
+

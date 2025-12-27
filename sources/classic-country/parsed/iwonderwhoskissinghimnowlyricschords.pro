@@ -1,6 +1,9 @@
 {meta: title I Wonder Who’s Kissing Him Now}
 {meta: artist Anne Murray}
 {meta: composer Frank Adams and Will M. Hough}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwhoskissinghimnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wonder who's [D7]kissing him [G]now 
@@ -22,3 +25,5 @@ For lips that I [B7]used to call [C]mine [E7]
 I [Am]wonder if [C]he ever [G]tells her of [E7]me 
 I [Am]wonder who's [D7]kissing him [D]now
 {end_of_verse}
+
+

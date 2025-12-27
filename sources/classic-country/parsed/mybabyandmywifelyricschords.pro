@@ -1,5 +1,8 @@
 {meta: title My Baby And My Wife}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file mybabyandmywifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When twilight shadows are falling
@@ -76,3 +79,11 @@ Then when he is in dreamland
 [F]When I reach that little [C]home
 [G7]To be greeted by my baby and my [C]wife
 {end_of_verse}
+
+
+
+
+
+
+
+

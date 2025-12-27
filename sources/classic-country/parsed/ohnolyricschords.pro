@@ -1,6 +1,9 @@
 {meta: title Oh No}
 {meta: artist Carl Smith}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file ohnolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh no don't start me fallin' in love again
@@ -40,3 +43,7 @@ Oh [C]no I just can't hurt again can't you [F]see
 I'm [G7]afraid I wanna keep you if I kiss you tenderly
 And I know you're not in love with [C]me
 {end_of_verse}
+
+
+
+

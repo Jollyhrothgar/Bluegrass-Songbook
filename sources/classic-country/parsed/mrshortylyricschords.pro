@@ -1,5 +1,8 @@
 {meta: title Mr. Shorty}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file mrshortylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nobody knew where he [Am]came from [C]they only knew he came [Am]in
@@ -79,3 +82,12 @@ The [D7]bullet went clear through his [G]heart
 [C]If we meet some day you can [Am]bet I would say 
 [D7]That it's me Mr. Shorty your [G]fri[Am]-e-n[G]d
 {end_of_verse}
+
+
+
+
+
+
+
+
+

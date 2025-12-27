@@ -1,6 +1,9 @@
 {meta: title I Keep Forgetting That I Forgot About You}
 {meta: artist Wynn Stewart}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file ikeepforgettingthatiforgotaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I keep forgetting not to remember you to get you out of my [F]mind
@@ -26,3 +29,6 @@ And that old memory comes to torture me and I know right [F]away
 {start_of_verse: Verse 4}
 [F]I keep forgetting that [G7]I've forgot about [C]you
 {end_of_verse}
+
+
+

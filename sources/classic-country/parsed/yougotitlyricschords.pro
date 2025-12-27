@@ -1,6 +1,9 @@
 {meta: title You Got It}
 {meta: artist Roy Orbison}
 {meta: composer Tom Petty, Roy Orbison and Jeff Lynne}
+{meta: x_source classic-country}
+{meta: x_source_file yougotitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time I look into [A]your loving [C][F]eyes       
@@ -61,3 +64,13 @@ I [C]know you [Am]feel the [Em]way I [G7]do
 [G7]Anything at all you got it baby
 You got [C]it
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

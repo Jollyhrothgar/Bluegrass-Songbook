@@ -1,6 +1,9 @@
 {meta: title How Can I Unlove You}
 {meta: artist Lynn Anderson}
 {meta: composer Joe South}
+{meta: x_source classic-country}
+{meta: x_source_file howcaniunloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How can I unsay [F]the things I said to [C]you
@@ -33,3 +36,7 @@ How can I  [Dm]un-love [C][G7]you
 {start_of_verse: Verse 5}
 [Dm]I   [G7]un-love [C]you
 {end_of_verse}
+
+
+
+

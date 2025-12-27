@@ -1,6 +1,9 @@
 {meta: title Carried Away}
 {meta: artist George Strait}
 {meta: composer Steve Bogard and Jeff Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file carriedawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't take my [D7]whiskey to [C]extremes
@@ -43,3 +46,8 @@
 {start_of_verse: Verse 4}
 [G]Carried away
 {end_of_verse}
+
+
+
+
+

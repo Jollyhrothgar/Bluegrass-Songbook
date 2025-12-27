@@ -1,6 +1,9 @@
 {meta: title For Christ's Sake It's Christmas}
 {meta: artist George Strait}
 {meta: composer Hank Cochran and Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file forChristssakeitsChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 For Christ's Sake It's Christmas
@@ -41,3 +44,8 @@ That we've [Em]opened the eyes that were [Am]closed
 For [A7]Christ's sake it's [Dm]Christ[Em]mas [F]
 And for [G7]Christ's sake let [F]eve[Em]ryone [C]know
 {end_of_verse}
+
+
+
+
+

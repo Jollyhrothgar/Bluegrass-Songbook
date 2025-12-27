@@ -1,6 +1,9 @@
 {meta: title Trying to Outrun the Wind}
 {meta: artist Waylon Jennings}
 {meta: composer Eddie Setser, Tom Davey, Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file tryingtooutrunthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's a sad song singer [F]he plays a gut-stringer
@@ -41,3 +44,8 @@ I go on pretending [F]with long haired women
 [F]Like an old stallion who's [C]longing for freedom
 [G7]Trying to outrun the [C]wind
 {end_of_verse}
+
+
+
+
+

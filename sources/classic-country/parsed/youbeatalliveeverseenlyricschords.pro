@@ -1,6 +1,9 @@
 {meta: title You Beat All I’ve Ever Seen}
 {meta: artist Rhonda Vincent}
 {meta: composer Kathy Louvin, Kostas, Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file youbeatalliveeverseenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve looked the world [C]over in [G]search of a dream
@@ -34,3 +37,7 @@ Cause [D7]you beat all I’ve ever [G]seen
 [G]All the world’s [C]wonders mean [G]nothing to me
 Darlin’ [D7]you beat all I’ve ever [G]seen
 {end_of_verse}
+
+
+
+

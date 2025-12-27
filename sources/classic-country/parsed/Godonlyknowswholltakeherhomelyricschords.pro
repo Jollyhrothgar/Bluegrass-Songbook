@@ -1,6 +1,9 @@
 {meta: title God Only Knows Who'll Take Her Home}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file Godonlyknowswholltakeherhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you've seen her kind before
@@ -41,3 +44,7 @@ And then [F]God only [G7]knows who'll take her [C]home
 {start_of_verse: Verse 4}
 And then [F]God only [G7]knows who'll take her [C]home
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Where Is My Castle}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file whereismycastlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]More than once I've [F]cried because [C]impatience let me [F]down 
@@ -29,3 +32,6 @@ How much longer [D7]will I have to [G7]dream
 [F]Where is my [C]sunshine where is my [F]val-ley 
 [C]Where is the [F]love that's [G7]meant for [C]me 
 {end_of_verse}
+
+
+

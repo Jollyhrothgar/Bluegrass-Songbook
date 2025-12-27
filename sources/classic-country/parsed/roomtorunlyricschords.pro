@@ -1,6 +1,9 @@
 {meta: title Room To Run}
 {meta: artist Eddy Raven}
 {meta: composer Eddy Raven and David Powelson}
+{meta: x_source classic-country}
+{meta: x_source_file roomtorunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sit on the side of the [G7]bed with my [F]head in my [C]hands
@@ -36,3 +39,7 @@ And [G7]stayed till there's no room to [C]run
 I've laid here and loved you
 And [G7]stayed till there's no room to [C]run
 {end_of_verse}
+
+
+
+

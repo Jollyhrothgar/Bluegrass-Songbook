@@ -1,6 +1,9 @@
 {meta: title You Can Be a Millionaire With Me}
 {meta: artist J.D. Crowe}
 {meta: composer Grady Cole and Hazel Cole}
+{meta: x_source classic-country}
+{meta: x_source_file youcanbeamillionairewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a bright and shining city 
@@ -61,3 +64,9 @@ If you've never had this blessing
 There's just [C]something you should know
 Sinner [D7]you can be a millionaire with [G]me 
 {end_of_verse}
+
+
+
+
+
+

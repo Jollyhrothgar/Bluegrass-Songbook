@@ -1,6 +1,9 @@
 {meta: title Big Blue Roses}
 {meta: artist Feller and Hill}
 {meta: composer Tom T. Hall and Dixie Hall}
+{meta: x_source classic-country}
+{meta: x_source_file bigblueroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Big blue roses round my [C]door
@@ -40,3 +43,8 @@ Are they [D7]blue or is it just the way I [G]feel
 {start_of_verse: Verse 4}
 Are they [D7]blue or is it just the way I [G]feel
 {end_of_verse}
+
+
+
+
+

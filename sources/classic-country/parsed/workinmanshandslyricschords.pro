@@ -1,6 +1,9 @@
 {meta: title Workin' Man's Hands}
 {meta: artist Patty Loveless}
 {meta: composer Johnny Pierce, Joanne Christy, Paul Marshall}
+{meta: x_source classic-country}
+{meta: x_source_file workinmanshandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love the hands of the [F]workin' [C]man
@@ -57,3 +60,10 @@ Workin' man's [G7]hands strong as [C]steel
 He [F]must of been [Dm]thinking bout [C]me
 When the [G7]Lord made my [Am]workin' man's [C]hands
 {end_of_verse}
+
+
+
+
+
+
+

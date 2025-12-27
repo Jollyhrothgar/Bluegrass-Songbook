@@ -1,5 +1,8 @@
 {meta: title I Walk The Line}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file iwalkthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I keep a [G7]close watch on this heart of [C]mine
@@ -28,3 +31,6 @@ You give me [G7]cause for love that I can't [C]hide
 For you I [F]know I'd even try to turn the [C]tide
 Because you're [G7]mine I walk the [C]line
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Take The World But Give Me Jesus}
 {meta: artist George Jones}
 {meta: composer Todd Wilson Agnew and Frances Jane Crosby}
+{meta: x_source classic-country}
+{meta: x_source_file taketheworldbutgivemejesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take the world but give me Jesus
@@ -43,3 +46,10 @@ Trust in [D7]God and do the [G]right
 [G]Take the world but give me Jesus
 Let me [C]have His constant [G]smile
 {end_of_verse}
+
+
+
+
+
+
+

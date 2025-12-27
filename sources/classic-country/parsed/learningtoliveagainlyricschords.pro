@@ -1,6 +1,9 @@
 {meta: title Learning To Live Again}
 {meta: artist Garth Brooks}
 {meta: composer Don Schlitz and Stephanie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file learningtoliveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I burned my [C]hand and I cut my face 
@@ -61,3 +64,11 @@ Oh this [Dm]learning to [Em]live [F]again is [G7]killing [C]me
 {start_of_verse: Verse 8}
 God this [Dm]learning to [Em]live [F]again is [G7]killing [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+

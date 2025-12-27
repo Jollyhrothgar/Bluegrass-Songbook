@@ -1,5 +1,8 @@
 {meta: title Annie's Song Lyrics and Chords}
 {meta: artist John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file anniessonglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You fill up my [F]sen-ses [G7]like [Am]a night [F]in a [C]forest
@@ -21,3 +24,5 @@
 [F]Like a [G7]storm in [Am]the des-ert  [F]like a sleepy blue [C]ocean
 [F]You fill [G7]up my [Dm]sen-ses [F]come fill me [C]again
 {end_of_verse}
+
+

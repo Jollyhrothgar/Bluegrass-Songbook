@@ -1,5 +1,8 @@
 {meta: title I Feel Like Leaving Town}
 {meta: artist Marvin Rainwater}
+{meta: x_source classic-country}
+{meta: x_source_file ifeellikeleavingtownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gotta feeling you been making plans and not including [F]me
@@ -25,3 +28,6 @@ Sometimes I feel like [C]leaving town and [G7]never coming [C]back
 {start_of_verse: Verse 4}
 [F]Sometimes I feel like [C]leaving town and [G7]never coming [C]back
 {end_of_verse}
+
+
+

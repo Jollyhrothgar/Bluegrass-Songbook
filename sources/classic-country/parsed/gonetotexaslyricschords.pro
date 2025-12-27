@@ -1,5 +1,8 @@
 {meta: title Gone To Texas}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file gonetotexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My granddad was the right man to [F]tame this savage wild [C]land
@@ -48,3 +51,9 @@ And we’ll [F]build a cattle kingdom [G7]and we’ll call Texas [C]home
 Yes we’ll [F]start all over [G7]brand new my [F]daddy taught me [C]how to
 And we’ll [F]build a cattle kingdom [G7]and we’ll call Texas [F]home[C]
 {end_of_verse}
+
+
+
+
+
+

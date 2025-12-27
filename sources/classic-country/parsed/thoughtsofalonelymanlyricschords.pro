@@ -1,5 +1,8 @@
 {meta: title Thoughts Of A Lonely Man}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file thoughtsofalonelymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight when I get through at work [G7]I'll just head straight on [C]home
@@ -29,3 +32,6 @@ Oh [C]what I'd give to see her face or [C7]touch her gentle [F]hand
 That's the [C]thoughts [G7]of a lonely lonely [C]man
 That's the thoughts of [G7]this lonely lonely [C]man
 {end_of_verse}
+
+
+

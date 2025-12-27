@@ -1,6 +1,9 @@
 {meta: title Let Me Live With Love And Die With You}
 {meta: artist Ricky Van Shelton}
 {meta: composer Red Lane and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file letmelivewithloveanddiewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Honey sit down let me [C]tell you what I'm [G]thinking
@@ -33,3 +36,7 @@ And [C]then I asked my two most wanted [G]wishes [C]
 {start_of_verse: Verse 5}
 [G]Yes let me live with [D7]love and die with [C]you[G]
 {end_of_verse}
+
+
+
+

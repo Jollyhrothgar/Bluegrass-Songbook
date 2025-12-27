@@ -1,6 +1,9 @@
 {meta: title Kimberley Jim}
 {meta: artist Jim Reeves}
 {meta: composer Gilbert Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file kimberleyjimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was always a [F]rollin' stone I would tread any [C]road
@@ -22,3 +25,5 @@
 [C]I'm no longer a [F]rollin' stone now that cravin' has [C]gone
 [G7]This lands my own and my home from now [C]on
 {end_of_verse}
+
+

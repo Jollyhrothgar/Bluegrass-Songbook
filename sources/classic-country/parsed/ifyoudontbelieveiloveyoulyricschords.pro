@@ -1,6 +1,9 @@
 {meta: title If You Don't Believe I Love You}
 {meta: artist Darrell McCall}
 {meta: composer Gene Sutton and Darrell McCall}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudontbelieveiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’d crawl a million miles on my knees through flames
@@ -41,3 +44,7 @@ And if you [C]still don’t believe I love [G7]you just ask [C]me
 {start_of_verse: Verse 4}
 And if you still don’t believe I love [G7]you just ask [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Answer Is Love}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton and Buck Trent}
+{meta: x_source classic-country}
+{meta: x_source_file theanswerislovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Things seem to worsen as time goes along 
@@ -33,3 +36,7 @@ The [C]answer is love to [G]all of the problems we face
 {start_of_verse: Verse 4}
 [C]We have asked a [G]question [C]and the [D7]answer is [G]love
 {end_of_verse}
+
+
+
+

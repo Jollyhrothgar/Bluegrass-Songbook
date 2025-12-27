@@ -1,6 +1,9 @@
 {meta: title Lover's Live Longer}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file loverslivelongerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lovers live [C]longer [D7] lovers live [G]right
@@ -41,3 +44,8 @@ Cause the [G]way we're [C]going [D7] we might live [G]forever
 Lovers live [C]longer [D7] so let's stay [G]toget[D7]---[Em]her
 Cause the [G]way we're [C]going [D7] we might live [G]forever
 {end_of_verse}
+
+
+
+
+

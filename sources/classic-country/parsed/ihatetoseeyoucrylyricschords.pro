@@ -1,5 +1,8 @@
 {meta: title I Hate To See You Cry}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file ihatetoseeyoucrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've done you wrong and you know why
@@ -38,3 +41,8 @@ You had my love you can't [C]deny
 I never tried to live a [F]lie
 Now I [C]hate to [G7]see you [C]cry
 {end_of_verse}
+
+
+
+
+

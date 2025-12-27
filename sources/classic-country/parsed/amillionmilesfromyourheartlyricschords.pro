@@ -1,6 +1,9 @@
 {meta: title A Million Miles From Your Heart}
 {meta: artist Eddy Arnold}
 {meta: composer Jenny Lou Carson}
+{meta: x_source classic-country}
+{meta: x_source_file amillionmilesfromyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re in my [A7]arms it’s true my [D7]darling
@@ -29,3 +32,6 @@ To go on [D7]keeping us [G7]apart
 [C]Cause though you [A7]close your arms around [D7]me
 I’m still [G7]million miles from your [C]heart
 {end_of_verse}
+
+
+

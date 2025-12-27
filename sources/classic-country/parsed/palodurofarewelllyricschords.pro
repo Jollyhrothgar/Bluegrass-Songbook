@@ -1,6 +1,9 @@
 {meta: title Palo Duro Farewell}
 {meta: artist Red Steagall}
 {meta: composer David Andy Wilkinson}
+{meta: x_source classic-country}
+{meta: x_source_file palodurofarewelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sold out and it’s time for [F]leavin’
@@ -45,3 +48,8 @@ I’ll [C]take the blame for the [G7]things she might [C]be  [C7]
 I’ll [C]never do [G7]better than [Am]you
 I’ll [C]never do [G7]better than [C]you
 {end_of_verse}
+
+
+
+
+

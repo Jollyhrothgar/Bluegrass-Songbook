@@ -1,6 +1,9 @@
 {meta: title I Laugh When I Think How I Cried Over You}
 {meta: artist Bob Wills}
 {meta: composer Maxine Fowler and James Robert Wills}
+{meta: x_source classic-country}
+{meta: x_source_file ilaughwhenithinkhowicriedoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I laugh when I think how I cried over [D7]you
@@ -16,3 +19,4 @@ When I [G]found out you lied something [D7]real inside me died
 And I laugh when I think how I cried over [G]you
 repeat 
 {end_of_verse}
+

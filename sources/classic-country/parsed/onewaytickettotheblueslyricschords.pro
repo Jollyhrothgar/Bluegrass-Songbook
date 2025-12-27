@@ -1,6 +1,9 @@
 {meta: title One Way Ticket To The Blues}
 {meta: artist Porter Wagoner}
 {meta: composer Jimmie Dallas}
+{meta: x_source classic-country}
+{meta: x_source_file onewaytickettotheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I thought your love I'd [F]win
@@ -33,3 +36,6 @@ We [G7]built up through the years
 [C]Seems I can't win I'll always [F]lose
 I've got a [C]one way [G7]ticket to the [C]blues
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bottom Dollar}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Billy Joe Shaver and Danny Finley}
+{meta: x_source classic-country}
+{meta: x_source_file bottomdollarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bottom [B7]dollar [C]it looks like [G]the [A7]end
@@ -25,3 +28,6 @@
 [G]Oh my [C]how those eagles [A7]fly
 [G]Goodbye bottom [D7]dollar [G]goodbye
 {end_of_verse}
+
+
+

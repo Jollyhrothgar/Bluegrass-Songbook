@@ -1,6 +1,9 @@
 {meta: title Unfaithful Fools}
 {meta: artist Tommy Overstreet}
 {meta: composer Bobby Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file unfaithfulfoolslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess we feel the [G7]same about each [C]other
@@ -47,3 +50,9 @@ Like cheatin' [G7]lyin' [C]hurtin' and [F]cryin'
 We've done it [C]all broke every [G7]rule
 Our love is [F]gone gone gone unfaithful [C]fools
 {end_of_verse}
+
+
+
+
+
+

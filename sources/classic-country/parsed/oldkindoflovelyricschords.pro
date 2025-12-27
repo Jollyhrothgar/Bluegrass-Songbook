@@ -1,6 +1,9 @@
 {meta: title Old Kind Of Love}
 {meta: artist Ricky Skaggs}
 {meta: composer Paul Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file oldkindoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's the [Bb7]newest [F]craze in [G7]town
@@ -60,3 +63,11 @@ Cause [Dm]things are getting back to the [G7]way they used to be
 [C]It's the [Bb7]newest [F]craze in [G7]town
 [C]There's an [Eb]old kind of [G7]love goin' [C]round
 {end_of_verse}
+
+
+
+
+
+
+
+

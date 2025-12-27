@@ -1,6 +1,9 @@
 {meta: title Love Of The Mountains}
 {meta: artist Jimmy Martin}
 {meta: composer Allen H. Mills}
+{meta: x_source classic-country}
+{meta: x_source_file loveofthemountainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Two trees on the [C]hillside of the [G]mountain
@@ -43,3 +46,8 @@ Now the bright moon is [C]shining in the [G]valley
 Two graves on the [C]hillside by a [G]cabin
 [D7]My mom and dad are [C]resting there [G]today
 {end_of_verse}
+
+
+
+
+

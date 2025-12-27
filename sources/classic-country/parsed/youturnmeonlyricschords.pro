@@ -1,5 +1,8 @@
 {meta: title You Turn Me On}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file youturnmeonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You turn me on like no one else [F]has ever [C]done girl
@@ -28,3 +31,6 @@ And the [D7]troubles of the day are quickly [G7]gone
 You make the [C]universe a happy [F]place to [C]live in
 Oh honey [F]I'm in love with [G7]you you turn me [C]on
 {end_of_verse}
+
+
+

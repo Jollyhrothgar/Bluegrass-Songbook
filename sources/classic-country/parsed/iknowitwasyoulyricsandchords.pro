@@ -1,6 +1,9 @@
 {meta: title I Know it Was You}
 {meta: artist Webb Pierce}
 {meta: composer Wayne Walker and John Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file iknowitwasyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Through all my wasted [F]years [G7]through all my bitter [C]tears
@@ -22,3 +25,5 @@ Now let me [D7]be the one to make it up to [G7]you
 [C]Who over [F]looked the past [G7]whose love for me held [C]fast
 When I thought it [F]wouldn't [G7]last I know it was [C]you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Guitar Polka}
 {meta: artist Chet Atkins}
 {meta: composer James B. Harris and Al Dexter}
+{meta: x_source classic-country}
+{meta: x_source_file guitarpolkalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A cowboy rode one day down to old Monterey
@@ -43,3 +46,8 @@ Repeat last verse
 {start_of_verse: Verse 6}
 When he returns to Monte[C]rey
 {end_of_verse}
+
+
+
+
+

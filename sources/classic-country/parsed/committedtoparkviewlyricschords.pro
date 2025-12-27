@@ -1,5 +1,8 @@
 {meta: title Committed To Parkview}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file committedtoparkviewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a man across the hall who sits [D7]staring at the floor
@@ -36,3 +39,6 @@ And then they [A7]give me my injection and I [D7]go right back to sleep
 And my [G]days are kind of foggy and my [C]nights are dreamy too
 For they're [G]taking [C]good care [G]of me while [C]committed to Park[G]view
 {end_of_verse}
+
+
+

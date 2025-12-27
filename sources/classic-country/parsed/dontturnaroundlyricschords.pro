@@ -1,6 +1,9 @@
 {meta: title Don't Turn Around}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Gary Burr}
+{meta: x_source classic-country}
+{meta: x_source_file dontturnaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don’t turn [F]around you could be [G7]tempted
@@ -45,3 +48,9 @@ Don’t turn [F]around go through the [G7]door and walk [Am]away [A#7]
 {start_of_verse: Verse 7}
 Don’t turn [F]around go through the [G7]door and walk [F]away [G7]   [C]
 {end_of_verse}
+
+
+
+
+
+

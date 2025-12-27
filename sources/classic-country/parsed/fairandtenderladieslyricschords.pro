@@ -1,6 +1,9 @@
 {meta: title Fair and Tender Ladies}
 {meta: artist Carter Sisters}
 {meta: composer Maybelle Carter}
+{meta: x_source classic-country}
+{meta: x_source_file fairandtenderladieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come all ye fair and tender ladies
@@ -33,3 +36,7 @@ And fades [Dm]away like morning [C]dew
 {start_of_verse: Verse 5}
 And fades [Dm]away like morning [C]dew  
 {end_of_verse}
+
+
+
+

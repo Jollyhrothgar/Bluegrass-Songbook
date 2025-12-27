@@ -1,6 +1,9 @@
 {meta: title That's What You Do To Me}
 {meta: artist the Everly Brothers}
 {meta: composer Bob Montgomery and Earl Sinks}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatyoudotomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bom do-dee [D7]bom do-dee [G]bom bom [C]bom ba do-dee
@@ -57,3 +60,10 @@ Well [G]that's what you [D7]do to [G]me
 Bom do-dee [D7]bom do-dee [G]bom bom bom [C]ba do-dee
 [G]That's what you [D7]do to [G]me
 {end_of_verse}
+
+
+
+
+
+
+

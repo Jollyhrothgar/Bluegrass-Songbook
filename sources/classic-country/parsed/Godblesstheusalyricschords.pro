@@ -1,5 +1,8 @@
 {meta: title God Bless the USA}
 {meta: artist Lee Greenwood}
+{meta: x_source classic-country}
+{meta: x_source_file Godblesstheusalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If tomorrow all the things were gone
@@ -70,3 +73,12 @@ And de[F]fend her still [Em]today
 Cause there [Dm]ain't no doubt I [C]love this land
 God [F]bless the [G7]U-S-[C]A
 {end_of_verse}
+
+
+
+
+
+
+
+
+

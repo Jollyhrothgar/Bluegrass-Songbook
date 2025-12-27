@@ -1,6 +1,9 @@
 {meta: title Would You Take Me Back Again}
 {meta: artist Marty Robbins}
 {meta: composer Bobby Sykes}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyoutakemebackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One too many [G7]times you left me [C]lonely
@@ -41,3 +44,8 @@ If [G]within your heart you knew I'd [G7]do
 The same things once [C]again
 Tell me [D7]darling would you take me back [G]again
 {end_of_verse}
+
+
+
+
+

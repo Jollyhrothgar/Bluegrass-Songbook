@@ -1,5 +1,8 @@
 {meta: title Too Far Gone f}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file toofargonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could stay a-way then [G7]I could break a-way
@@ -21,3 +24,5 @@ I can't get [F]over you [G7]I'm too far [C]gone
 I'd like to rearrange my life [G7]but I can't change
 Too late I [F]find out now [G7]I'm too far [C]gone
 {end_of_verse}
+
+

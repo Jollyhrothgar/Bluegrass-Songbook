@@ -1,5 +1,8 @@
 {meta: title Broken Hearted Gypsy}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file brokenheartedgypsylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A broken hearted gypsy told her story [D7]well
@@ -36,3 +39,8 @@
 [C]Your kisses were [G]so wonderful you [D7]cuddled up so [G]fine
 [C]The devil may have [G]to remember your eyes [D7]make a man lose his [G]mind
 {end_of_verse}
+
+
+
+
+

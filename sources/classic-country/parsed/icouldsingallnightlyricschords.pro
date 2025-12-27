@@ -1,6 +1,9 @@
 {meta: title I Could Sing All Night}
 {meta: artist Ferlin Husky}
 {meta: composer Tommy Collins and Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file icouldsingallnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could sing sing sing all night
@@ -59,3 +62,11 @@ Mohair and short skins diamond rings and [F]tiepins
 I could sing sing sing [F]all night
 I [C]could sing I [G7]could sing all [C]night
 {end_of_verse}
+
+
+
+
+
+
+
+

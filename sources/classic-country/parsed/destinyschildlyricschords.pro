@@ -1,6 +1,9 @@
 {meta: title Destiny's Child}
 {meta: artist Waylon Jennings}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file destinyschildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Surely you know by now my heart is [D7]wild
@@ -35,3 +38,6 @@ You gave me so much to believe in
 [G]Still I'm [A7]leavin' I'm [D7]destiny's [G]child
 Destiny's [D7]child destiny's [C]child[G]
 {end_of_verse}
+
+
+

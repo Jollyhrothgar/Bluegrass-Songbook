@@ -1,6 +1,9 @@
 {meta: title You Can't Never Tell}
 {meta: artist Hank Locklin}
 {meta: composer Luke McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file youcantnevertelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the other night I had a dream
@@ -41,3 +44,10 @@ Tomorrow you might be a doing time
 [C]So you can't never tell Lord you can't never [G]tell
 [D7]If you're on the right track or trackin' it back you can't never [G]tell
 {end_of_verse}
+
+
+
+
+
+
+

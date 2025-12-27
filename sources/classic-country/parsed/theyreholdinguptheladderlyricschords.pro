@@ -1,6 +1,9 @@
 {meta: title They're Holding Up The Ladder}
 {meta: artist The Easter Brothers}
 {meta: composer Edd F. Easter, James M. Easter,}
+{meta: x_source classic-country}
+{meta: x_source_file theyreholdinguptheladderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They're holding up the ladder that I'm climbing on
@@ -61,3 +64,14 @@ Can't you hear the angels cheering soon the battle will be o'er
 [G]They're holding up the ladder that I'm climbing on
 [D7]I'm climbing up the ladder and I'm [C]going [G]home
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

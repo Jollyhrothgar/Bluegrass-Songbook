@@ -1,6 +1,9 @@
 {meta: title Taken}
 {meta: artist Rhonda Vincent}
 {meta: composer Mike Geiger and Anna Owens}
+{meta: x_source classic-country}
+{meta: x_source_file takenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Taken when I [F]look into your [G7]eyes I see my [F]life
@@ -39,3 +42,8 @@ There's [A#7]nothing but our [Am]sweet love and [G7]I  [F]  [C]  [Dm]
 {start_of_verse: Verse 5}
 [C]Taken [F] oh I'm [C]taken [F] I'm [C]taken
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'll Be Gone}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file illbegonelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I watch as you take [F]off your clothes 
@@ -63,3 +66,10 @@ In the morning when you [D7]wake and find me [G]gone
 {start_of_verse: Verse 5}
 In the morning when you [D7]wake and find me [G]gone
 {end_of_verse}
+
+
+
+
+
+
+

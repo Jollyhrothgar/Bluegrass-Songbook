@@ -1,5 +1,8 @@
 {meta: title The Games That Daddies Play}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file thegamesthatdaddiesplaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He put his arms around her shoulder and with a voice that sounded older
@@ -56,3 +59,12 @@ To [G7]play the games that daddies [C]play
 I know you need and want his [G7]love but son you're the victim of
 Another kind of game that daddies [C]play
 {end_of_verse}
+
+
+
+
+
+
+
+
+

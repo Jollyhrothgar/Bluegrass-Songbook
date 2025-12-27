@@ -1,6 +1,9 @@
 {meta: title Rodeo Girls}
 {meta: artist Tanya Tucker}
 {meta: composer Joe Rainey and Tanya Tucker}
+{meta: x_source classic-country}
+{meta: x_source_file rodeogirlslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On the side of the highway [C]trying to [G]sleep
@@ -41,3 +44,8 @@ Cause [C]rodeo [D7]girls don't [G]cry
 [C]Rodeo [D7]girls don't [G]cry I thought everybody knew
 [C]Rodeo [D7]girls don't [G]cry
 {end_of_verse}
+
+
+
+
+

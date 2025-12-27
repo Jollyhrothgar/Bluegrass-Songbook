@@ -1,5 +1,8 @@
 {meta: title Dawson Legate}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file dawsonlegatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He hung his old saddle up [F]high in the [G7]barn
@@ -63,3 +66,11 @@ As a few [F]strands of wire where fences had [C]been
 And the [F]baldies are starvin’ in the hills where they [G7]graze
 While she's [F]rockin' the first [G7]son of Dawson Le[C]gate
 {end_of_verse}
+
+
+
+
+
+
+
+

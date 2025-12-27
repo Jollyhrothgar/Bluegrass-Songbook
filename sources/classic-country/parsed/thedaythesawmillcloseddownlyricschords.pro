@@ -1,6 +1,9 @@
 {meta: title The Day The Saw Mill Closed Down}
 {meta: artist Bobby Bare}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file thedaythesawmillcloseddownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her house on the [F]corner of [C]Cedar and [F]Elm
@@ -37,3 +40,7 @@ No [F]lon[G7]ger does [C]my love live [F]here
 [C]Not since the [F]saw mill closed [C]down
 She left when the [G7]saw mill closed [C]down
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Things That Mean The Most To Me}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file thingsthatmeanthemosttomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You brought every gift I ever gave [F]you
@@ -21,3 +24,5 @@
 [F]For darling when we part you'll still have my heart
 [G7]And all the things that mean the most to [C]me
 {end_of_verse}
+
+

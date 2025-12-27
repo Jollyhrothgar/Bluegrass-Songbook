@@ -1,5 +1,8 @@
 {meta: title I Wasn't Even In The Running}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file iwasntevenintherunninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I knew there were others [C]after you 
@@ -48,3 +51,7 @@ I [G]wasn't even [D7]in the [G]running
 {start_of_verse: Verse 4}
 I wasn't even [D7]in the [G]running
 {end_of_verse}
+
+
+
+

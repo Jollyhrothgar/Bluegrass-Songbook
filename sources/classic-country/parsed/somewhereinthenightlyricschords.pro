@@ -1,5 +1,8 @@
 {meta: title Somewhere In The Night}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file somewhereinthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Daylight won't find me out in public [D7]places 
@@ -32,3 +35,6 @@ In search of love they live [C]without
 But just like darkness [D7]finds the light 
 I'll find love somewhere in the [G]night
 {end_of_verse}
+
+
+

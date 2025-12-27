@@ -1,6 +1,9 @@
 {meta: title Jeannie Marie You Were A Lady}
 {meta: artist Tommy Overstreet}
 {meta: composer Ricci Mareno and Charlie Black}
+{meta: x_source classic-country}
+{meta: x_source_file jeanniemarieyouwerealadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jeannie there's a [F]story they're [C]tellin' about [G]you
@@ -40,3 +43,9 @@ Lookin' for a good time
 {start_of_verse: Verse 2}
 Lookin' for a good time
 {end_of_verse}
+
+
+
+
+
+

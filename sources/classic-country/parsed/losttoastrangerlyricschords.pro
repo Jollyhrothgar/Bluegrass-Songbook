@@ -1,6 +1,9 @@
 {meta: title Lost To A Stranger}
 {meta: artist Ricky Skaggs}
 {meta: composer Frankie Brown[3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file losttoastrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We went out one evening [C]my darling and [G]I
@@ -29,3 +32,6 @@
 [C]Lost to a stranger I never had [G]seen
 [C]The waltz they were [G]playing had [D7]ended my [G]dream
 {end_of_verse}
+
+
+

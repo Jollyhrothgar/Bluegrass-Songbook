@@ -1,6 +1,9 @@
 {meta: title Every Night About This Time}
 {meta: artist Johnny Rodriguez}
 {meta: composer Dave Alvin}
+{meta: x_source classic-country}
+{meta: x_source_file everynightaboutthistimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every night about this time  
@@ -61,3 +64,10 @@ Just hold her when she [Am]cries[F]
 Don’t just hold her when she [Am]cries [F]
 [G7]Every night about this [C]time
 {end_of_verse}
+
+
+
+
+
+
+

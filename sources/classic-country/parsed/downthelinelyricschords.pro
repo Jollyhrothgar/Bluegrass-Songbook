@@ -1,6 +1,9 @@
 {meta: title Down The Line}
 {meta: artist Buddy Holly}
 {meta: composer Buddy Holly, Bob Montgomery, Norman Petty}
+{meta: x_source classic-country}
+{meta: x_source_file downthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well my old car's a-rollin' down the line
@@ -61,3 +64,11 @@ I gotta [C]roll roll roll roll roll roll roll roll
 {start_of_verse: Verse 4}
 [G7]Roll on down the [C]line
 {end_of_verse}
+
+
+
+
+
+
+
+

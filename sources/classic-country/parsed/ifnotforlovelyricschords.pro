@@ -1,6 +1,9 @@
 {meta: title If Not For Love}
 {meta: artist Johnny Cash}
 {meta: composer Larry Lee and Glenn D. Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file ifnotforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A broken man moves [D7]slowly down the [G]sidewalk
@@ -43,3 +46,8 @@ But if [C]not for you love [D7]wouldn't know my [G]name
 {start_of_verse: Verse 5}
 Yes if not for love I [D7]could be one of [G]these
 {end_of_verse}
+
+
+
+
+

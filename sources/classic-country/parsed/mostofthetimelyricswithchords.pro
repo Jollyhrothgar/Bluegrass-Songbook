@@ -1,6 +1,9 @@
 {meta: title Most Of The Time}
 {meta: artist Marty Robbins}
 {meta: composer Lee Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file mostofthetimelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Most of the time while I'm here [G7]cryin'
@@ -29,3 +32,6 @@ The rest of the time I'm so [G7]blue
 Part [C]of my time I spend in [G7]slumber
 But most of the time I think of [C]you
 {end_of_verse}
+
+
+

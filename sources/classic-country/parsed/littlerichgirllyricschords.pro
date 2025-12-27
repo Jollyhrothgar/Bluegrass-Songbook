@@ -1,5 +1,8 @@
 {meta: title Little Rich Girl}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file littlerichgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is the end of the [G7]romance
@@ -28,3 +31,6 @@
 [F]May the cold chilly winds of despair never [C]blow
 [G7]Little rich girl you're too good for [C]me
 {end_of_verse}
+
+
+

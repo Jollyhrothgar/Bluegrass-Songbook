@@ -1,6 +1,9 @@
 {meta: title Just In Case}
 {meta: artist Gene Watson}
 {meta: composer Rick Tiger and Shawn Hammonds}
+{meta: x_source classic-country}
+{meta: x_source_file justincaselyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I saw the lights go down [F]with his car still in the [C]drive
@@ -31,3 +34,7 @@ So I’m [C]not going anywhe[D7]re  [G7]just in [C]case
 {start_of_verse: Verse 5}
 No I’m not going anywhe[D7]re  [G7]just in [F]cas[C]e 
 {end_of_verse}
+
+
+
+

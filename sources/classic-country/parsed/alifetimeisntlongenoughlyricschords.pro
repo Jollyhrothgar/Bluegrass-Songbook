@@ -1,6 +1,9 @@
 {meta: title A Lifetime isn't Long Enough}
 {meta: artist Faron Young}
 {meta: composer Virginia Midgett and Arthur Korb}
+{meta: x_source classic-country}
+{meta: x_source_file alifetimeisntlongenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A lifetime isn't long enough [F]to be in love with [C]you
@@ -22,3 +25,5 @@
 [C]Long as I live my life is yours [C7]my heart [F]and my love [C]too
 [F]But a lifetime [C]isn't [Am]long enough to [G7]be in love with [C]you
 {end_of_verse}
+
+

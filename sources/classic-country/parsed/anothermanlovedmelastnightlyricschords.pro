@@ -1,6 +1,9 @@
 {meta: title Another Man Loved Me Last Night}
 {meta: artist Norma Jean}
 {meta: composer Peggy Sue Wells and Lorene Allen}
+{meta: x_source classic-country}
+{meta: x_source_file anothermanlovedmelastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He doesn't know that I can't look him in the [F]eyes
@@ -22,3 +25,5 @@ Not [C]being loved was more than I could [G7]take
 Though [C]it was wrong there in his arms it seemed so [F]right
 When [C]another man [G7]loved me last [C]night
 {end_of_verse}
+
+

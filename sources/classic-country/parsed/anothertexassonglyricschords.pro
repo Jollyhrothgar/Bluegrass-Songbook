@@ -1,6 +1,9 @@
 {meta: title Another Texas Song}
 {meta: artist Eddy Raven}
 {meta: composer Edward Garvin Futch}
+{meta: x_source classic-country}
+{meta: x_source_file anothertexassonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been in [D7]this [G]corner
@@ -55,3 +58,10 @@ At least three times tonight
 [C]Her memory's strong so [G]please
 [D7]Don't play another Texas [G]song
 {end_of_verse}
+
+
+
+
+
+
+

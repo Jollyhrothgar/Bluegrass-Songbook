@@ -1,6 +1,9 @@
 {meta: title My Life With You}
 {meta: artist Hank Snow}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file mylifewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd rather live my life with [C]you 
@@ -36,3 +39,7 @@ To [C]share the thrill of a goodnight [G]kiss
 I'd [G]rather live my life with [C]you 
 Than to [G]reign on a golden [G][D7]throne
 {end_of_verse}
+
+
+
+

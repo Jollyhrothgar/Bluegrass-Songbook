@@ -1,6 +1,9 @@
 {meta: title I Want Some More Of This}
 {meta: artist Leona Williams}
 {meta: composer Glenn Barber}
+{meta: x_source classic-country}
+{meta: x_source_file iwantsomemoreofthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A proper lady that’s exactly what I [D7]was
@@ -28,3 +31,6 @@ If he’d stop talking I’d find the [G7]strength to [C]refuse
 Oh it [D7]scares me I want some more of [G]this
 Yes that’s what [D7]scares me I want some more of [G]this
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Don't Worry 'Bout Me}
 {meta: artist Paul Williams and The Victory Trio}
+{meta: x_source classic-country}
+{meta: x_source_file dontworryboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was thinking today of my life here on earth 
@@ -61,3 +64,11 @@ When the call comes don't [D7]worry 'bout [G]me
 His [C]blessed assurance gave me [G]strength for endurance 
 When the call comes don't [D7]worry 'bout [G]me 
 {end_of_verse}
+
+
+
+
+
+
+
+

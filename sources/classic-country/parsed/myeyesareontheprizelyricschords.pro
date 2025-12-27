@@ -1,6 +1,9 @@
 {meta: title My Eyes Are On The Prize}
 {meta: artist Gene Watson}
 {meta: composer Bobbie Bost}
+{meta: x_source classic-country}
+{meta: x_source_file myeyesareontheprizelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Satan came to me this morning spoke to me without a warning
@@ -38,3 +41,7 @@ You'll have to go my eyes are on the [C]prize
 You'll have to come through Jesus' blood
 You'll have to go my eyes are on the [C]prize
 {end_of_verse}
+
+
+
+

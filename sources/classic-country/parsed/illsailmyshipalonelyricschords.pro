@@ -1,6 +1,9 @@
 {meta: title I'll Sail My Ship Alone}
 {meta: artist Patsy Cline}
 {meta: composer Lois Mann, Henry Bernard, Murray Burns}
+{meta: x_source classic-country}
+{meta: x_source_file illsailmyshipalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We've been sweethearts for so long
@@ -49,3 +52,10 @@ I'll sail my ship alone
 [D7]Though all the sails you've torn
 [G]And when it starts to sink then I'll blame you
 {end_of_verse}
+
+
+
+
+
+
+

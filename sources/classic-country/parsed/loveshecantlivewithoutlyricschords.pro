@@ -1,6 +1,9 @@
 {meta: title Love She Can't Live Without}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file loveshecantlivewithoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He gives her attention [Dm]
@@ -51,3 +54,7 @@ And the [Am]hardest [G7]part is she [F]loves him
 But she doesn't [Dm]want the kind of [G7]love she can [C]live with
 She [Am]wants the kind of [Dm]love [C]she [G7]can't live [C]without
 {end_of_verse}
+
+
+
+

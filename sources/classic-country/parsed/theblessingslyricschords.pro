@@ -1,6 +1,9 @@
 {meta: title The Blessings}
 {meta: artist Alabama}
 {meta: composer Russel G. Fowler, Teddy Gentry,}
+{meta: x_source classic-country}
+{meta: x_source_file theblessingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I stand here lookin' [G]up at the stars tonight
@@ -49,3 +52,9 @@ I wanna give [Am]my my my [D7]my [C]  [D7]thanks for the [G]blessings
 {start_of_verse: Verse 6}
 The blessings oh the blessings
 {end_of_verse}
+
+
+
+
+
+

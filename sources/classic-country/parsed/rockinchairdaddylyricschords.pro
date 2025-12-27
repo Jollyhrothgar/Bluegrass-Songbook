@@ -1,6 +1,9 @@
 {meta: title Rockin’ Chair Daddy}
 {meta: artist Hank Williams}
 {meta: composer Gordon B. Schuffert and Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file rockinchairdaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm not lazy I'm just tired
@@ -43,3 +46,8 @@ And the [G7]woman I marry she's sho' got to wait on [C]me
 She got to boil my [F]coffee and strain my [C]tea
 Well I'm a [G7]rockin' chair daddy from way down in Tenne[C]ssee
 {end_of_verse}
+
+
+
+
+

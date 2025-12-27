@@ -1,5 +1,8 @@
 {meta: title You’re The Sweetest Thing}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file yourethesweetestthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In all this big wide happy world [F]you're the sweetest [C]thing
@@ -25,3 +28,5 @@ But if He should I know that you'd still [D7]be in my heart to [G7]stay
 [C]You've turned the gray skies into blue [F]taught this happy heart to [C]sing
 I [F]love you very [C]very much for [G7]you're the sweetest [C]thing
 {end_of_verse}
+
+

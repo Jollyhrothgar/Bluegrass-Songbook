@@ -1,6 +1,9 @@
 {meta: title I Don't Think I'd Believe You}
 {meta: artist Faron Young}
 {meta: composer Kent Westberry and Hal Harbour}
+{meta: x_source classic-country}
+{meta: x_source_file idontthinkidbelieveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once you could'a [A#7]told me black was [C]white
@@ -29,3 +32,6 @@
 [C]You've done me [F]wrong too many times to [C]change just [F]overnight
 [C]Now I don't think I'd [F]believe you if you [G7]told me I was [C]right
 {end_of_verse}
+
+
+

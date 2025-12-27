@@ -1,5 +1,8 @@
 {meta: title Gypsy Lady And The Hobo}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file gypsyladyandthehobolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the gypsy was a lady [C]traveled all over this [G]land
@@ -34,3 +37,7 @@ And that night in a [G]hobo jungle they [D7]were lost in wild [G]desire
 {start_of_verse: Verse 4}
 [C]Yeah the gypsy lady and the [G]wandering hobo [D7]were lost in wild [G]desire
 {end_of_verse}
+
+
+
+

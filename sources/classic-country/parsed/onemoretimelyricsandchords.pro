@@ -1,6 +1,9 @@
 {meta: title One More Time}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file onemoretimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder what the power is that you hold over [F]me
@@ -29,3 +32,6 @@ One more time my arms will hold [C]you
 But it won't be long until you're gone with a mem'ry left [F]behind
 And [G7]I just know that when you go I'll be lonely one more [C]time
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Don't See Me In Your Eyes Anymore}
 {meta: artist Charlie Rich}
 {meta: composer Bennie Benjamin and George Weiss}
+{meta: x_source classic-country}
+{meta: x_source_file idontseemeinyoureyesanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I don't see [C]me   in your eyes anymore
@@ -27,3 +30,6 @@ Then I'll see [G7]me  in your eyes as be[C]fore
 [G7]I pray you'll [C]say  I'm the one you adore
 Then I'll see [G7]me  in your eyes as be[C]fore
 {end_of_verse}
+
+
+

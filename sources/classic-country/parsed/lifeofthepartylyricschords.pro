@@ -1,6 +1,9 @@
 {meta: title Life Of The Party}
 {meta: artist Cal Smith}
 {meta: composer Jim Owen}
+{meta: x_source classic-country}
+{meta: x_source_file lifeofthepartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here comes old life of the party Charlie he's a [G7]funny funny man
@@ -43,3 +46,8 @@ At every party Charlie is the [C]life
 Everyone's in love with the [F]life of the party Charlie except [C]me
 And [G7]I love Charlie's [C]wife
 {end_of_verse}
+
+
+
+
+

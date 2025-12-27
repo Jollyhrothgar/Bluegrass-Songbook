@@ -1,5 +1,8 @@
 {meta: title Moonlight On My Cabin}
 {meta: artist Hawkshaw Hawkins}
+{meta: x_source classic-country}
+{meta: x_source_file moonlightonmycabinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When it's moonlight on my cabin I'll be [F]waiting 
@@ -28,3 +31,6 @@ Lonely blue ridge mountain home I am [F]returning
 When it's [C]moonlight on the cabin I'll be [F]coming
 When it's [C]moonlight on the [G7]pine trees I'll be [C]home
 {end_of_verse}
+
+
+

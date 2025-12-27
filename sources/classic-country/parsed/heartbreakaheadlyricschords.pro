@@ -1,6 +1,9 @@
 {meta: title Heartbreak Ahead}
 {meta: artist Wanda Jackson}
 {meta: composer Dorothy Brown}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakaheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A gypsy fortune teller in a gay [F]market [C]place
@@ -36,3 +39,7 @@ But it's not too late child to turn back from [C]shame
 But love without honor is love that is [G7]dead
 And time will soon heal your heartbreak [C]ahead
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Move To Town In The Fall}
 {meta: artist Vernon Oxford}
 {meta: composer Jeff Clay}
+{meta: x_source classic-country}
+{meta: x_source_file movetotowninthefalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I pick cotton by the ton
@@ -59,3 +62,10 @@ She's [F]gone through it all
 At the honky tonk since
 We [C]moved to [G7]town in the [C]fall
 {end_of_verse}
+
+
+
+
+
+
+

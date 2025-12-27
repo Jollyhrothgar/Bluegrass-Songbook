@@ -1,6 +1,9 @@
 {meta: title Living And Living Well}
 {meta: artist George Strait}
 {meta: composer Tony Martin, Mark Nesler, Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file livingandlivingwelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Had a nice little [Am]life  [C]a little boat a little [Am]beach
@@ -44,3 +47,8 @@ As [C]good as it could [G7]be [C]  [G7]
 [D7]There's a difference in [C]living I [D7]thought I was [C]living
 [D7]There's a difference in [C]living and living [G7]well
 {end_of_verse}
+
+
+
+
+

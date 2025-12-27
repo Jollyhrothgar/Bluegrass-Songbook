@@ -1,5 +1,8 @@
 {meta: title Rainbow Stew}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowstewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a big brown cloud in the city
@@ -56,3 +59,10 @@ Underneath [C]that sky of [G]blue
 [C]All be drinking that free bubble [G]up
 And [D7]eating that rainbow [G]stew
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rounded Up In Glory}
 {meta: artist Gene Autry}
 {meta: composer Oscar Fox}
+{meta: x_source classic-country}
+{meta: x_source_file roundedupinglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've have been thinking [G7]today
@@ -46,3 +49,8 @@
 [G]When He rounds us up (rounds us [D7]up)
 [C]In [G]glory
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Working Man Blues}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file workingmanblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a big job just getting by with nine kids and a wife
@@ -46,3 +49,8 @@ Cry a little bit of these [C]working man [G]blues
 Yeah [D7]drink a little beer in a tavern
 Cry a little bit of these [C]working man [G]blues
 {end_of_verse}
+
+
+
+
+

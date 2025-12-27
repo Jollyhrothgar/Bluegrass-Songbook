@@ -1,6 +1,9 @@
 {meta: title It'll Take A While}
 {meta: artist Wanda Jackson}
 {meta: composer Curtis Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file itlltakeawhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I sit alone and broken [G7]hearted 
@@ -29,3 +32,6 @@ Someone will [G7]take your place [D7]but I don't know [G7]who
 The world [C]outside holds nothing now for [F]me 
 It'll [G7]take a while to shake your memo[C]ry   
 {end_of_verse}
+
+
+

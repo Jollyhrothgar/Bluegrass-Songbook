@@ -1,5 +1,8 @@
 {meta: title Face Of Despair}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file faceofdespairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fingers callous [G7]from the plow wrinkled weather [C]beatin' brow
@@ -35,3 +38,6 @@ In the September [G7]of your years eyes that hide a [C]veil of tears
 A look of longing [F]always there [C]mhm[Am]   [F]
 [G7]Face of de[C]spair
 {end_of_verse}
+
+
+

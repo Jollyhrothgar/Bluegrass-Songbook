@@ -1,5 +1,8 @@
 {meta: title Can’t You Find It In Your Heart Lyrics Chords}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file cantyoufinditinyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can’t you find it in your [F]heart
@@ -28,3 +31,7 @@ No my [D7]heart already [G7]knows you won’t be [C]true
 {start_of_verse: Verse 5}
 Repeat
 {end_of_verse}
+
+
+
+

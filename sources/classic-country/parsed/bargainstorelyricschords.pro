@@ -1,5 +1,8 @@
 {meta: title Bargain Store}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file bargainstorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]My life is like [G]unto a bargain [Am]store
@@ -37,3 +40,7 @@ And I may have just [G]what you're looking [Am]for
 If you don't mind the fact that all the [G]merchandise is [Am]used
 But with a little [G]mending it could be as good as [Am]new
 {end_of_verse}
+
+
+
+

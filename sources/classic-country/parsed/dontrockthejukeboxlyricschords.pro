@@ -1,6 +1,9 @@
 {meta: title Don't Rock The Jukebox}
 {meta: artist Alan Jackson}
 {meta: composer Roger Murrah, Keith Stegall, Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file dontrockthejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't rock the [G]jukebox [C]I wanna hear some [G]Jones
@@ -40,3 +43,8 @@ I don't [G]feel like rockin' [C]since my baby's [G]gone
 {start_of_verse: Verse 4}
 Yeah [C]don't rock the [G]jukebox [D7]play me a country [G]song
 {end_of_verse}
+
+
+
+
+

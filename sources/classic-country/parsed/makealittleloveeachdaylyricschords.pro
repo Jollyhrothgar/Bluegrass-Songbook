@@ -1,6 +1,9 @@
 {meta: title Make A Little Love Each Day}
 {meta: artist Moe Bandy}
 {meta: composer Buck Moore}
+{meta: x_source classic-country}
+{meta: x_source_file makealittleloveeachdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've got to make a little love each [C]day
@@ -56,3 +59,11 @@ It's all give and take but you've gotta make it
 [C]If you don't use it you're gonna lose it
 [D7]You've got to make a little love [G]each [D7]day
 {end_of_verse}
+
+
+
+
+
+
+
+

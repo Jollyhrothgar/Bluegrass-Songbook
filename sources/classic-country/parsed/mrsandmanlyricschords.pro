@@ -1,6 +1,9 @@
 {meta: title Mr. Sandman}
 {meta: artist Emmylou Harris}
 {meta: composer Pat Ballard}
+{meta: x_source classic-country}
+{meta: x_source_file mrsandmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mr. Sandman bring me a [B7]dream
@@ -44,3 +47,8 @@
 [C]Mr. Sandman bring [D7]us please please [C]please
 [D7]Mr. Sandman bring us [G7]a  [C]dream
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title All American Girl}
 {meta: artist Johnny Rodriguez Lyrics with Chords}
 {meta: composer Robert Lee McDill}
+{meta: x_source classic-country}
+{meta: x_source_file allamericangirllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s a marriage made in heaven so her mom is fond of [F]saying
@@ -36,3 +39,7 @@
 [F]And God is still in [C]heaven but she [G7]hopes that He’s not [C]watching
 [F]As time is slowing [C]changing that [G7]All American [C]Girl
 {end_of_verse}
+
+
+
+

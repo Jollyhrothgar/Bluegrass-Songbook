@@ -1,6 +1,9 @@
 {meta: title Listenin' To The Rain}
 {meta: artist The Osborne Brothers}
 {meta: composer Don Devane}
+{meta: x_source classic-country}
+{meta: x_source_file listenintotherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm looking out the window at the rain 
@@ -48,3 +51,9 @@ And listening to the [G]rain
 While I'm a [D7]sittin' here wondering where you are 
 And listening to the [G]rain
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Don't Even Try}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard and Fuzzy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file youdonteventrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Our love keeps drifting and you [C]keep giving me the [G]blame
@@ -15,3 +18,4 @@
 [G]So you stop [C]caring so what a chance have you and [G]I
 [D7]I give my everything  but you don't even [G]try
 {end_of_verse}
+

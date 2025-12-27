@@ -1,5 +1,8 @@
 {meta: title It Was Jesus}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file itwasJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well a man walked down by Galilee
@@ -63,3 +66,11 @@ He's not here for He is risen
 [F]Who was it everybody (it was Jesus)
 [G7]It was Jesus Christ [C]our Lord
 {end_of_verse}
+
+
+
+
+
+
+
+

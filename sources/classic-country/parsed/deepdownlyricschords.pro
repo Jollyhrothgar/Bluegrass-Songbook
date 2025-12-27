@@ -1,6 +1,9 @@
 {meta: title Deep Down}
 {meta: artist Crystal Gayle}
 {meta: composer Gary Nicholson and Kevin Welch}
+{meta: x_source classic-country}
+{meta: x_source_file deepdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Silver tears fall on my [G7]pillow case
@@ -45,3 +48,9 @@ Oh [C]deep [G7]dow[F]n I [G7]know I really [C]need [G7]you [F]  [G7]
 Deep [G7]dow[F]n [G7]   [C]deep [G7]dow[F]n ([G7]way deep down)
 [C]Deep [G7]dow[F]n  [G7]deep [C]down
 {end_of_verse}
+
+
+
+
+
+

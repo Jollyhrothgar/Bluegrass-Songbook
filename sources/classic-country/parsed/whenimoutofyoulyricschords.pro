@@ -1,6 +1,9 @@
 {meta: title When I'm Out Of You}
 {meta: artist John Conlee}
 {meta: composer Sanger D. Shafer and Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file whenimoutofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It sure is good to know you love me [F]baby
@@ -26,3 +29,6 @@ Cause [G7]when I'm out of you I'm out of [C]love
 {start_of_verse: Verse 4}
 Yes [G7]when I'm out of you I'm out of [F]love[C]
 {end_of_verse}
+
+
+

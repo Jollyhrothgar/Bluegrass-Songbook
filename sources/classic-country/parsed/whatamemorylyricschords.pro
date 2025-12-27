@@ -1,6 +1,9 @@
 {meta: title What A Memory}
 {meta: artist Tracy Lawrence}
 {meta: composer Kenny Beard and Jeff Bates}
+{meta: x_source classic-country}
+{meta: x_source_file whatamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On the day momma died  
@@ -61,3 +64,10 @@ Even [Am]in her final [G]moments
 Even [Am]in her final [G]moments 
 [C]Momma thought of me what a [G]memory
 {end_of_verse}
+
+
+
+
+
+
+

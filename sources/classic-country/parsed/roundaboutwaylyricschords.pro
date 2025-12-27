@@ -1,6 +1,9 @@
 {meta: title Round About Way}
 {meta: artist George Strait}
 {meta: composer Steve Dean and Billy Nance}
+{meta: x_source classic-country}
+{meta: x_source_file roundaboutwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As far as [D7]all my friends can tell 
@@ -37,3 +40,7 @@ Cause [A7]she's not around I [C]come unwound and [A7]my heart breaks
 {start_of_verse: Verse 4}
 [D7]Yeah I still miss her in a round about [G]way
 {end_of_verse}
+
+
+
+

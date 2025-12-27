@@ -1,6 +1,9 @@
 {meta: title You Only Want Me When You're Lonely}
 {meta: artist Marty Robbins}
 {meta: composer Gene Autry and Steve Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file youonlywantmewhenyourelonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You only want me when you're [F]lonely
@@ -29,3 +32,6 @@ The [D7]way you break my heart's a [G7]crime
 You [C]only want me when you're [F]lonely
 But [G7]dear I want you all the [C]time
 {end_of_verse}
+
+
+

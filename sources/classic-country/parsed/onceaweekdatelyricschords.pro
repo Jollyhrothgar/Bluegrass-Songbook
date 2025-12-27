@@ -1,5 +1,8 @@
 {meta: title Once A Week Date}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file onceaweekdatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](Too young to really be in love but old enough to [C]cry)
@@ -30,3 +33,7 @@ Too young to really be in love but old enough to [C]cry
 I know because we both cried when they [G7]said we'd have to wait
 And that we must be satisfied with a [F]once [G7]a week [C]date
 {end_of_verse}
+
+
+
+

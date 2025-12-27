@@ -1,6 +1,9 @@
 {meta: title That Christmasy Feeling}
 {meta: artist Johnny Cash}
 {meta: composer Jimmy Peppers and Tommy Cash}
+{meta: x_source classic-country}
+{meta: x_source_file thatChristmasyfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a choir outside of my house singin' Silent [G7]Night 
@@ -38,3 +41,7 @@ Momma's bakin' turkey and daddy's makin' popcorn [C]balls
 And sister's hangin' mistletoe there's [C7]good will to all [F]men 
 We've got that [G7]Christmasy feeling [C]again  
 {end_of_verse}
+
+
+
+

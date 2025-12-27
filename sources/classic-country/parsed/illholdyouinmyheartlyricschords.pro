@@ -1,6 +1,9 @@
 {meta: title I'll Hold You In My Heart}
 {meta: artist Eddy Arnold}
 {meta: composer Eddy Arnold, Hal Horton, Tommy Dilbeck}
+{meta: x_source classic-country}
+{meta: x_source_file illholdyouinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll hold you in my heart
@@ -30,3 +33,5 @@
 [F]Till I can hold you in my arms
 [C]So darling  [G7]please wait for [C]me
 {end_of_verse}
+
+

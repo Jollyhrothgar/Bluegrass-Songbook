@@ -1,6 +1,9 @@
 {meta: title I Live My Whole Life at Night}
 {meta: artist Ronnie Milsap}
 {meta: composer John Schweers and Charles Quillen}
+{meta: x_source classic-country}
+{meta: x_source_file ilivemywholelifeatnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well that old song just went down
@@ -44,3 +47,9 @@ You know the end is nowhere in [D7]sight
 {start_of_verse: Verse 7}
 [G7]Since you left me I [Dm]lived my whole [G7]life at [C]night
 {end_of_verse}
+
+
+
+
+
+

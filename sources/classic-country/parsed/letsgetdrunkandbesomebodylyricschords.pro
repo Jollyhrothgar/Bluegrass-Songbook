@@ -1,6 +1,9 @@
 {meta: title Let's Get Drunk And Be Somebody}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Chuck Hall}
+{meta: x_source classic-country}
+{meta: x_source_file letsgetdrunkandbesomebodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let's get drunk and be somebody 
@@ -41,3 +44,7 @@ I [G]want to forget that big boss man
 {start_of_verse: Verse 4}
 Let's get drunk and [A7]be [D7]some[G]body
 {end_of_verse}
+
+
+
+

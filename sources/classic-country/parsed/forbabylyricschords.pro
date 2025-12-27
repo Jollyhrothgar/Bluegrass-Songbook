@@ -1,6 +1,9 @@
 {meta: title For Baby}
 {meta: artist Anne Murray}
 {meta: composer John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file forbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll walk in the [C]rain by your [G]side
@@ -36,3 +39,7 @@
 [C]The leaves [D7]bow down when [G]you [G7]walk [C]by
 [G]And morning [D7]bells will [G]chime
 {end_of_verse}
+
+
+
+

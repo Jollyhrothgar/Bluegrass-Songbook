@@ -1,5 +1,8 @@
 {meta: title Without You}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file withoutyoulyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Loving you is [C]all I've ever [G]needed
@@ -25,3 +28,6 @@ Cause without [C]you there's [A7]no such [D7]thing as [G]love[C]  [G]
 {start_of_verse: Verse 4}
 Without [C]you there's [A7]no such [D7]thing as [G]love[C]  [G]
 {end_of_verse}
+
+
+

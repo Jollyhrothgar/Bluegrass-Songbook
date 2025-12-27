@@ -1,6 +1,9 @@
 {meta: title Left Over Feelings}
 {meta: artist George Morgan}
 {meta: composer William Rainsford}
+{meta: x_source classic-country}
+{meta: x_source_file leftoverfeelingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Slowly very slowly you're fading away
@@ -22,3 +25,5 @@ And [D7]your memo[Am]ries [D7]are almost [G7]through
 So if [C]I cry when I see you [F]don't think I'm still your fool
 It's just the [G7]left over feelings that [F]I have for [C]you
 {end_of_verse}
+
+

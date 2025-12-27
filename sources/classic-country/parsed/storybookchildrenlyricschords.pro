@@ -1,6 +1,9 @@
 {meta: title Storybook Children}
 {meta: artist Don Williams}
 {meta: composer Chip Taylor and Billy Vera}
+{meta: x_source classic-country}
+{meta: x_source_file storybookchildrenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've got your world and I've got [G7]mine and it's a [C]shame
@@ -26,3 +29,6 @@ Running through the [Dm]rain hand in [G7]hand across the [C]meadow
 In a wonder[Dm]land where [G7]nothing's planned for [C]tomorrow [A7]
 How happy we would [Dm]be if only [G7]we were storybook [C]children
 {end_of_verse}
+
+
+

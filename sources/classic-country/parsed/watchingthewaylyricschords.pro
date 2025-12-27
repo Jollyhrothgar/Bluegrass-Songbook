@@ -1,6 +1,9 @@
 {meta: title Watching The Way}
 {meta: artist Mickey Gilley}
 {meta: composer J.W. Gostick Jr. and R.E. Westmoreland}
+{meta: x_source classic-country}
+{meta: x_source_file watchingthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I went over to your house [G7]I wanted to [C]talk
@@ -33,3 +36,7 @@ Watching the [G]way you [D7]never treated [G]me
 {start_of_verse: Verse 4}
 [C]Watching the [G]way you [D7]never treated [C]me[G]
 {end_of_verse}
+
+
+
+

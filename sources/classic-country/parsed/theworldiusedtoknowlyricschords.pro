@@ -1,6 +1,9 @@
 {meta: title The World I Used To Know}
 {meta: artist Jimmie Rodgers}
 {meta: composer Rod McKuen}
+{meta: x_source classic-country}
+{meta: x_source_file theworldiusedtoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some day some old [G7]familiar [C]rain  
@@ -28,3 +31,5 @@ Will come along and [Am]bid me [F]go
 But [G7]till that day [Dm]I'll be your [A7]man  
 And love [F]away your [G7]troubles if I [C]can 
 {end_of_verse}
+
+

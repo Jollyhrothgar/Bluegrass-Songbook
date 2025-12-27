@@ -1,6 +1,9 @@
 {meta: title Rider On The Rim}
 {meta: artist Red Steagall}
 {meta: composer R.W. Hampton and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file riderontherimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On the wagon last October was a [C]kid of seven[G]teen
@@ -71,3 +74,12 @@ Thru the mist I saw a ghostly rider on the rim
 [D7]If I live to be a hundred I will not forget the day
 When a cowboy guardian angel taught two punchers how to [G]pray
 {end_of_verse}
+
+
+
+
+
+
+
+
+

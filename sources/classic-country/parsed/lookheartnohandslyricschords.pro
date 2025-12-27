@@ -1,6 +1,9 @@
 {meta: title Look Heart No Hands}
 {meta: artist Randy Travis}
 {meta: composer Trey Bruce and Russell Smith}
+{meta: x_source classic-country}
+{meta: x_source_file lookheartnohandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember how it used to feel
@@ -44,3 +47,9 @@ Look [F]heart[C]  [G7]  no [C]hands
 {start_of_verse: Verse 5}
 Look [F]heart[C]  [G7]  no [C]hands
 {end_of_verse}
+
+
+
+
+
+

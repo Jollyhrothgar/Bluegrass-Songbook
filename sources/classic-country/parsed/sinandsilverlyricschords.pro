@@ -1,6 +1,9 @@
 {meta: title Sin And Silver}
 {meta: artist George Morgan}
 {meta: composer Scott Holtzman and Vivian Holtzman}
+{meta: x_source classic-country}
+{meta: x_source_file sinandsilverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We lived a beautiful [F]life together [G7]not so very long [C]ago
@@ -29,3 +32,6 @@ For somewhere she [G7]walks down streets of [C]sin and silver
 Somewhere somewhere somewhere she walks
 Where [G7]sin and silver [C]leads
 {end_of_verse}
+
+
+

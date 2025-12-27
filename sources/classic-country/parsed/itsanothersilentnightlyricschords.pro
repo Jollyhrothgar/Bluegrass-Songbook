@@ -1,6 +1,9 @@
 {meta: title It's Another Silent Night}
 {meta: artist Reba McEntire}
 {meta: composer Terry Skinner and Ken Bell}
+{meta: x_source classic-country}
+{meta: x_source_file itsanothersilentnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Silence is [Bm]golden when the [C]one that you're [G]holdin'
@@ -43,3 +46,8 @@ It's a [D7]cold war of who's wrong or [G]right[D7]
 [G]Nobody's [Bm]winning this [C]unspoken [G]fight 
 It's [Am]another [D7]silent [C]night[Am]   [G]
 {end_of_verse}
+
+
+
+
+

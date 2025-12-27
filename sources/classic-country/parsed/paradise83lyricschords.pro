@@ -1,6 +1,9 @@
 {meta: title Paradise '83}
 {meta: artist Vern Gosdin}
 {meta: composer Buddy Cannon, Vern Gosdin, Mickey Baker}
+{meta: x_source classic-country}
+{meta: x_source_file paradise83lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That Florida moon was shinning bright
@@ -38,3 +41,7 @@ But for [F]me it's been no [G7]paradise since 198[C]3
 But for [F]me it's been no [Dm]paradise[G7]
 Since back in 198[C]3
 {end_of_verse}
+
+
+
+

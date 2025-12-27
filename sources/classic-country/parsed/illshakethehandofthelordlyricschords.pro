@@ -1,6 +1,9 @@
 {meta: title I'll Shake The Hand Of The Lord}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Eldridge L. Fox}
+{meta: x_source classic-country}
+{meta: x_source_file illshakethehandofthelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ll shake the hand of the Lord someday 
@@ -50,3 +53,9 @@ I’ll shake the hand of the Lord some[G7]day
 [C]On the streets of purest gold is a [Am]hand that’s very bold 
 I’ll shake the [C]hand of the [G7]Lord some[C]day 
 {end_of_verse}
+
+
+
+
+
+

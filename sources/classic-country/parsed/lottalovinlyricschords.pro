@@ -1,6 +1,9 @@
 {meta: title Lotta Lovin'}
 {meta: artist Mickey Gilley}
 {meta: composer Bernice Bedwell}
+{meta: x_source classic-country}
+{meta: x_source_file lottalovinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I wanna wanna lotta lotta lovin’
@@ -51,3 +54,9 @@ I’m [D7]gonna get your lovin’ [G]oh you bet
 I [D7]want your lovin’ [G]oh you bet
 I [D7]need your lovin’ [G]oh you bet
 {end_of_verse}
+
+
+
+
+
+

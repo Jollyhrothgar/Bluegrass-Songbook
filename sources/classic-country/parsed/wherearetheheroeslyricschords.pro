@@ -1,6 +1,9 @@
 {meta: title Where Are The Heroes}
 {meta: artist Rex Allen Jr.}
 {meta: composer Curtis Allen, Rex Allen Jr, Denny Demarco}
+{meta: x_source classic-country}
+{meta: x_source_file wherearetheheroeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cowboys and outlaws on big movie screens
@@ -40,3 +43,8 @@ Will [A]he ever learn what it [G7]means to have [C]heroes
 {start_of_verse: Verse 5}
 [G7]To have [C]heroes   
 {end_of_verse}
+
+
+
+
+

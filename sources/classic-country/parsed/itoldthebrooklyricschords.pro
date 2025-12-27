@@ -1,5 +1,8 @@
 {meta: title I Told The Brook}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file itoldthebrooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told the [Em]brook that runs [F]down through the [C]valley
@@ -42,3 +45,8 @@ The [C]bashful white [Em]flowers are [F]again by the [C]hilltop
 I [F]promise there'll be no [Em]more heartaches for [F]me
 Till [C]I fall in [G7]love [C]again
 {end_of_verse}
+
+
+
+
+

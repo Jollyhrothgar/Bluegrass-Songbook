@@ -1,5 +1,8 @@
 {meta: title Please Release Me}
 {meta: artist Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file pleasereleasemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Please [C]release me [G]let me [C]go
@@ -21,3 +24,5 @@ Please [C]release me [G]can’t you [C]see
 To live a [C]lie would [G]bring us [C]pain
 [G]So release me and let [D7]me love [G]again
 {end_of_verse}
+
+

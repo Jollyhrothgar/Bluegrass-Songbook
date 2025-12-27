@@ -1,6 +1,9 @@
 {meta: title In The Jailhouse Now}
 {meta: artist Webb Pierce}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file inthejailhousenowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]He's in the jailhouse [C]now
@@ -66,3 +69,15 @@ And she started to callin' me honey
 To quit playin' cards and a shootin' dice
 [C]We're in the jailhouse now
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Sent Her An Orchid}
 {meta: artist Jean Shepard}
 {meta: composer Jerry Jerico and Kenneth Grant}
+{meta: x_source classic-country}
+{meta: x_source_file yousentheranorchidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You said you'd forget her you tried I [C]suppose
@@ -22,3 +25,5 @@ You [C]had to go and add the insult [G]to the [D7]injury
 Go buy her some [G]diamonds for her fancy [C]clothes
 Then send her an [G]Orchid  and [D7]give her this [G]Rose
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Remind Me Dear Lord}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file remindmedearlordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The things that I love and hold dear to my heart
@@ -22,3 +25,5 @@ Why He [G7]loved me I just can't [C]understand
 Just [C]remember I'm human and [F]humans [C]forget
 So [G7]remind me remind me dear [C]Lord
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Poor Boy Like Me}
 {meta: artist Charley Pride}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file poorboylikemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She grew up in the back-wood country
@@ -33,3 +36,7 @@ What chance is [D7]there for a poor boy like [G]me
 {start_of_verse: Verse 5}
 What chance is [D7]there for a poor boy like [G]me
 {end_of_verse}
+
+
+
+

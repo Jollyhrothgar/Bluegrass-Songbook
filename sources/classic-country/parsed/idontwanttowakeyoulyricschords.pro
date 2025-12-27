@@ -1,6 +1,9 @@
 {meta: title I Don't Want to Wake You}
 {meta: artist Lee Greenwood}
 {meta: composer Peter McCann and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttowakeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While you're lying asleep you're painting a picture
@@ -44,3 +47,9 @@ But I [Am]don't wanna [G]wake you right [C]now
 While you're [G]lying asleep you're painting a picture
 That [D7]I'll always keep in my [G]mind 
 {end_of_verse}
+
+
+
+
+
+

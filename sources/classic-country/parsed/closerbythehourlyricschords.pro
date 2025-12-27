@@ -1,6 +1,9 @@
 {meta: title Closer By The Hour}
 {meta: artist Porter Wagoner}
 {meta: composer Al Gore}
+{meta: x_source classic-country}
+{meta: x_source_file closerbythehourlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're the sweetest one I know
@@ -37,3 +40,6 @@ We get [F]closer by the hour
 Like the [C]bee goes to the [F]flower
 Closer [G7]closer by the [C]hour
 {end_of_verse}
+
+
+

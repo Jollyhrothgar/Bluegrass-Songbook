@@ -1,6 +1,9 @@
 {meta: title I Can't Tell My Heart}
 {meta: artist Hank Williams}
 {meta: composer Johnny Wright, Jim Anglin, Jack Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file icanttellmyheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh foolish heart why won’t you [G7]believe
@@ -29,3 +32,6 @@ I’d give this world if only I [C]could
 You cheated and lied then you left me [F]flat
 Oh [G7]yes it’s true but I can’t tell my heart [C]that
 {end_of_verse}
+
+
+

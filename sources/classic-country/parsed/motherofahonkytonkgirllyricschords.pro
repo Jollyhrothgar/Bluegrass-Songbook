@@ -1,6 +1,9 @@
 {meta: title Mother Of A Honky Tonk Girl}
 {meta: artist Jim Reeves}
 {meta: composer Bob Newman}
+{meta: x_source classic-country}
+{meta: x_source_file motherofahonkytonkgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm the [F]mother of a honky tonk [C]girl
@@ -50,3 +53,7 @@ Yes and a [C]taste of God
 I [F]hope that God will [C]forgive me
 I'm the [G7]mother of a honky tonk [C]girl
 {end_of_verse}
+
+
+
+

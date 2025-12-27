@@ -1,6 +1,9 @@
 {meta: title How Long}
 {meta: artist Connie Smith}
 {meta: composer Harlan Howard, Connie Smith, Marty Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file howlonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m still hurtin’ I’ve tried [C7]everything I [F]know
@@ -34,3 +37,7 @@ Oh I [F]know that in time I’ll [G7]forget but how [C]long
 Re[G7]grets oh there’s so much regret 
 Yes I [F]know that in time I’ll [G7]forget but how [C]long
 {end_of_verse}
+
+
+
+

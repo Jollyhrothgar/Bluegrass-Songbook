@@ -1,6 +1,9 @@
 {meta: title Us}
 {meta: artist Conway Twitty}
 {meta: composer Mickey Jaco}
+{meta: x_source classic-country}
+{meta: x_source_file uslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Please don't take you out of [C]us [G7]
@@ -31,3 +34,7 @@ Take all the tenderness [F]that you've ever [C]shown
 Take all these [C7]precious things from [F]me if you must
 But [G7]please don't take you out of [C]us
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Mr. Ting-A-Ling (Steel Guitar Man)}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file mrtingalingsteelguitarmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Hey Mr. Ting-A-Ling [C]steel guitar man
@@ -28,3 +31,6 @@ I [F]love her I miss her [C]don't you understand
 My [F]baby has left me for [C]some other man
 [G7]Play on Mr. Ting-A-Ling steel guitar [C]man
 {end_of_verse}
+
+
+

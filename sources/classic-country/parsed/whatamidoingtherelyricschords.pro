@@ -1,6 +1,9 @@
 {meta: title What Am I Doing There}
 {meta: artist George Jones}
 {meta: composer Buddy Brock and Zack Turner}
+{meta: x_source classic-country}
+{meta: x_source_file whatamidoingtherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I no longer know what's real [F]anymore
@@ -33,3 +36,7 @@ My new life is [C]here  [G7]what am I doing [C]there
 {start_of_verse: Verse 4}
 [F]My new life is [C]here  [G7]what am I doing [C]there
 {end_of_verse}
+
+
+
+

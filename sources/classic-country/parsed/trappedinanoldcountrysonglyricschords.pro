@@ -1,6 +1,9 @@
 {meta: title Trapped In An Old Country Song}
 {meta: artist Charley Pride}
 {meta: composer Jack Clement and Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file trappedinanoldcountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did you ever just [C]feel like a [G]movie
@@ -35,3 +38,6 @@ In that old country [G]sound
 [C]Caught in the act of [G]crying [Em]alone
 [G]Trapped in an [D7]old country [G]song
 {end_of_verse}
+
+
+

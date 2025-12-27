@@ -1,6 +1,9 @@
 {meta: title Haven For Angels Unaware}
 {meta: artist Johnny Paycheck}
 {meta: composer Johnny Paycheck and Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file havenforangelsunawarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When she comes in it's the [F]first step [C]down
@@ -29,3 +32,6 @@ Hearts [F]broke and [C]lonely
 Looking for some[C7]thing that's [F]never there
 In these [C]bars that be[F]come havens [G7]for angels un[C]aware
 {end_of_verse}
+
+
+

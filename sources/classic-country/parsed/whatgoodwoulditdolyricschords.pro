@@ -1,5 +1,8 @@
 {meta: title What Good Would It Do}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file whatgoodwoulditdolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd forgive you but what good would it [F]do
@@ -28,3 +31,6 @@ One can't [G7]make a go of love it takes [C]two
 Oh you can't keep up a home with a heart that wants [F]roan
 I'd [G7]forgive you but what good would it [C]do
 {end_of_verse}
+
+
+

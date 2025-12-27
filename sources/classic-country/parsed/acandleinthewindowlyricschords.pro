@@ -1,6 +1,9 @@
 {meta: title A Candle In The Window}
 {meta: artist Alabama}
 {meta: composer Gary Baker, Susan Longacre, Walt Aldridge}
+{meta: x_source classic-country}
+{meta: x_source_file acandleinthewindowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a road that I remember [F]leading to a special [C]place
@@ -40,3 +43,8 @@ A simple [F]candle in the [Am]window and [F]Christmas [G7]in your [C]heart
 Just a [F]candle in the [Am]window
 Just a [F]candle in the [C]window
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Daddy Sang Bass}
 {meta: artist Johnny Cash}
 {meta: composer Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file daddysangbasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember when I was a [C7]lad
@@ -45,3 +48,7 @@
 [F]I'll rejoin them in a [C]song
 [G7]I'm gonna join the family circle at the [C]throne
 {end_of_verse}
+
+
+
+

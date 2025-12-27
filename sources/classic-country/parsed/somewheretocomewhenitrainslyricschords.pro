@@ -1,6 +1,9 @@
 {meta: title Somewhere To Come When It Rains}
 {meta: artist Merle Haggard}
 {meta: composer Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file somewheretocomewhenitrainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mhm mhm mhm mhm
@@ -41,3 +44,9 @@ I'm somewhere to [G7]come when it [C]rains[G7]
 {start_of_verse: Verse 7}
 I'll be waiting for you in the [F]rain[C]
 {end_of_verse}
+
+
+
+
+
+

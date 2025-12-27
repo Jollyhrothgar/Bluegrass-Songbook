@@ -1,5 +1,8 @@
 {meta: title If It's All The Same To You}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file ifitsallthesametoyoulyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I listened to a friend who'd do the [C]same for me last [A7]night
@@ -32,3 +35,7 @@ I'll be [G]leavin' if it's [D7]all the same to [G]you
 {start_of_verse: Verse 4}
 Yes it's [C]true I'll be [G]leavin' cause it's [D7]all the same to [G]you
 {end_of_verse}
+
+
+
+

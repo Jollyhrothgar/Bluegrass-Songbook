@@ -1,6 +1,9 @@
 {meta: title The Power Of Positive Drinking}
 {meta: artist Mickey Gilley}
 {meta: composer Rick Klang and Don Pfrimmer}
+{meta: x_source classic-country}
+{meta: x_source_file thepowerofpositivedrinkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Only come here once a day at [F]hurtin' time 
@@ -33,3 +36,7 @@ Thanks a [G7]lot to positive [C]drinkin'
 {start_of_verse: Verse 4}
 Thanks a [G7]lot to positive [C]drinkin'
 {end_of_verse}
+
+
+
+

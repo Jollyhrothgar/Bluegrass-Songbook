@@ -1,6 +1,9 @@
 {meta: title Merry Christmas Polka}
 {meta: artist Jim Reeves}
 {meta: composer Willie Phelps}
+{meta: x_source classic-country}
+{meta: x_source_file merryChristmaspolkalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is Christmas season so there isn't any reason
@@ -29,3 +32,6 @@ We can't dance the Christmas [G7]polka
 Hear sleigh-bells ringing everybody's singing
 Dancing the Christmas [C]polka
 {end_of_verse}
+
+
+

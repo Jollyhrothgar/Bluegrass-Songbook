@@ -1,6 +1,9 @@
 {meta: title Melted Down Memories}
 {meta: artist Leona Williams}
 {meta: composer A.L. Owens and Buck Moore}
+{meta: x_source classic-country}
+{meta: x_source_file melteddownmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I went through all my jewelry [C]took out all the golden [G]rings [C]   [G]
@@ -33,3 +36,7 @@ From wanting love from [D7]someone I know will never be my [G]own
 {start_of_verse: Verse 4}
 [G7]Melted down [C]memori[G]es 
 {end_of_verse}
+
+
+
+

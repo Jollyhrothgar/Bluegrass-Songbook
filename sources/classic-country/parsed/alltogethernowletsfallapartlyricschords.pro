@@ -1,6 +1,9 @@
 {meta: title All Together Now Let's Fall Apart}
 {meta: artist Ronnie Milsap}
 {meta: composer Johnny Koonse}
+{meta: x_source classic-country}
+{meta: x_source_file alltogethernowletsfallapartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All together now [G7]let's fall [C]apart[F]  [C]
@@ -27,3 +30,6 @@ But [D7]she fell in love with somebody new [G7]I guess that's him by her side
 [C]All together now [G7]let's fall [C]apart [F] 
 [C]All together no[G7]w let's fal[C]l apart
 {end_of_verse}
+
+
+

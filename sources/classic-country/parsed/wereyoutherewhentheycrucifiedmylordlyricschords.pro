@@ -1,5 +1,8 @@
 {meta: title Were You There When They Crucified My Lord}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file wereyoutherewhentheycrucifiedmylordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Were you [C]there  when they [G7]crucified my [C]Lord
@@ -33,3 +36,7 @@ Were you [C]there  when the [G7]stone was rolled [C]away
 [G7]Were you [C]there  when they [G7]crucified my [C]Lord
 [G7]Were you [C]there  when they [G7]crucified my [C]Lord
 {end_of_verse}
+
+
+
+

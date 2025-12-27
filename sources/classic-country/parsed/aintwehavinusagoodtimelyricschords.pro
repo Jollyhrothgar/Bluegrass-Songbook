@@ -1,6 +1,9 @@
 {meta: title Ain't We Havin' Us A Good Time}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file aintwehavinusagoodtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A two little [C]honey [G]bees a livin' in an [C]apple [G]tree
@@ -33,3 +36,7 @@ Ain't we havin' us [D7]a good time takin' in [G]a good [G][C]life
 {start_of_verse: Verse 4}
 Oh [C]baby don't you think that [D7]lovin' each other is so [G]fine
 {end_of_verse}
+
+
+
+

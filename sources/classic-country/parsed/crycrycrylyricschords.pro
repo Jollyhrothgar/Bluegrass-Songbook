@@ -1,5 +1,8 @@
 {meta: title Cry Cry Cry}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file crycrycrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody knows where you go when the sun goes down
@@ -41,3 +44,8 @@ You're gonna Cry Cry Cry and you'll want me then
 It'll hurt when you tbink of the fool you've been
 You're gonna Cry Cry Cry
 {end_of_verse}
+
+
+
+
+

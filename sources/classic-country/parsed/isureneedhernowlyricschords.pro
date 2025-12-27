@@ -1,6 +1,9 @@
 {meta: title I Sure Need Her Now}
 {meta: artist Vernon Oxford}
 {meta: composer Clarence Wayne Kemp and Claude Putman Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file isureneedhernowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want her now but it's too late her love is [F]turning to [C]hate
@@ -29,3 +32,6 @@ I walk on the wrong side of [D7]the line until [G7]now
 I'm on the [C]right side of the line now she's [F]changing her [C]mind
 But I [G7]still need her [C]now
 {end_of_verse}
+
+
+

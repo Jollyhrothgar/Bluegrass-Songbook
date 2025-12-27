@@ -1,6 +1,9 @@
 {meta: title If I Only Knew}
 {meta: artist Bobby Helms}
 {meta: composer Bob Saffer}
+{meta: x_source classic-country}
+{meta: x_source_file ifionlyknewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I [D7]only knew [G]how much I'd [C]miss you 
@@ -43,3 +46,8 @@ That's why I cry cry [F]cry
 If I only [Cm]knew you'd [C]miss me [A7]too 
 I'd never say [D7]bye [G]bye [C]bye
 {end_of_verse}
+
+
+
+
+

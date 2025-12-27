@@ -1,6 +1,9 @@
 {meta: title Deck of Card}
 {meta: artist Tex Ritter}
 {meta: composer Richard F Beckham Spoken: Strum softly}
+{meta: x_source classic-country}
+{meta: x_source_file deckofcardslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]During the North African campaign a bunch of soldier [C]boys
@@ -116,3 +119,22 @@ So you see, Sir, my pack of cards serves me as a Bible
 Almanac and Prayer Book.
 [F]And friends this is a true story [Fm]because I knew that [C]soldier
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

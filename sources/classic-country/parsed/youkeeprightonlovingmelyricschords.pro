@@ -1,6 +1,9 @@
 {meta: title You Keep Right On Loving Me}
 {meta: artist Faron Young}
 {meta: composer Don Devaney}
+{meta: x_source classic-country}
+{meta: x_source_file youkeeprightonlovingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Putting on your makeup I can see the lines you're trying hard to [D7]hide
@@ -22,3 +25,5 @@
 [G7]And I know if I try to leave you'd even let me [C]go
 [G]And you'd keep [C]right [D7]on lov-ing me  and why you would  I'll never [G]know
 {end_of_verse}
+
+

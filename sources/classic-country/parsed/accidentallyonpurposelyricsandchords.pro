@@ -1,6 +1,9 @@
 {meta: title Accidentally on Purpose}
 {meta: artist Johnny Cash}
 {meta: composer Darrell Edwards and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file accidentallyonpurposelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Accidentally I [C]saw you this [G]morning
@@ -29,3 +32,6 @@ And [A7]I was just a fool with a [D7]heart of a clown
 Acci[G]dentally [C]you were mis[G]taken that night
 Acci[D7]dentally on purpose for [G]spite 
 {end_of_verse}
+
+
+

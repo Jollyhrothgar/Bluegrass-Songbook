@@ -1,6 +1,9 @@
 {meta: title I Guess I Had A Real Good Time Last Night}
 {meta: artist Moe Bandy}
 {meta: composer Carl Belew and Van Givens}
+{meta: x_source classic-country}
+{meta: x_source_file iguessihadarealgoodtimelastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up this morning feeling like I never felt [F]before
@@ -33,3 +36,7 @@ It [G7]was then I realized I had myself a real good time last [C]night
 {start_of_verse: Verse 5}
 It [G7]was then I realized I had myself a real good time last [C]night
 {end_of_verse}
+
+
+
+

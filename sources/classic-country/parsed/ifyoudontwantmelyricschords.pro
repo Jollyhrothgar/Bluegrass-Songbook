@@ -1,6 +1,9 @@
 {meta: title If You Don't Want Me}
 {meta: artist Patty Loveless}
 {meta: composer Emory Gordy and Monte Warden}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudontwantmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Never really felt like I be[Am]longed 
@@ -31,3 +34,6 @@ Will soon be [C]gone if you hold [G7]on
 If you [F]don't want me [G7] if you don't love [Am]me 
 If you [F]don't want me [G7] let me [C]go
 {end_of_verse}
+
+
+

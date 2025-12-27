@@ -1,6 +1,9 @@
 {meta: title You've Just Stepped In}
 {meta: artist Loretta Lynn}
 {meta: composer Don Trowbridge}
+{meta: x_source classic-country}
+{meta: x_source_file youvejuststeppedinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've just stepped in from stepping out on me
@@ -26,3 +29,5 @@ I'll bet your conscience hurts you [C]constantly
 Oh time and time again [D7]you've been untrue
 So I'll just step in from stepping out on [G]you
 {end_of_verse}
+
+

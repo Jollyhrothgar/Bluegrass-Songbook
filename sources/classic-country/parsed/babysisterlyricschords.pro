@@ -1,6 +1,9 @@
 {meta: title Baby Sister}
 {meta: artist Vernon Oxford}
 {meta: composer Shirl Milete}
+{meta: x_source classic-country}
+{meta: x_source_file babysisterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby sister what a waste to [D7]see you in this place
@@ -26,3 +29,6 @@ Cause I [F]love you baby [G7]sister let’s go [C]home
 {start_of_verse: Verse 4}
 Cause I [F]love you baby [G7]sister let’s go [C]home
 {end_of_verse}
+
+
+

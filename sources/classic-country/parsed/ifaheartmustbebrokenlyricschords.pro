@@ -1,6 +1,9 @@
 {meta: title If A Heart Must Be Broken}
 {meta: artist Anne Murray}
 {meta: composer Craig Bickhardt}
+{meta: x_source classic-country}
+{meta: x_source_file ifaheartmustbebrokenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For y-ou [G7]my heart was always [C]open
@@ -34,3 +37,7 @@ If a [G]heart must be broken [D7]why let the loving [G]begin
 What I'd give to know the [G7]future now and [C]then
 If a [G]heart must be broken [D7]why let the loving [G]begin
 {end_of_verse}
+
+
+
+

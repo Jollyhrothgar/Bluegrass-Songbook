@@ -1,6 +1,9 @@
 {meta: title A Little Bit of Heaven}
 {meta: artist The Isaacs}
 {meta: composer Sonya M. Isaacs}
+{meta: x_source classic-country}
+{meta: x_source_file littlebitofheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a little bit of heaven in every gospel [D7]song
@@ -38,3 +41,7 @@ And it sounds like a choir of [C]angels when [D7]everybody's singin' [G]along
 There's so much [D7]love in [G]every line the harmo[C]ny is so [Am]divine
 There's a little bit of [D7]heaven in [C]ever[D7]y good ol' gospel [G]song
 {end_of_verse}
+
+
+
+

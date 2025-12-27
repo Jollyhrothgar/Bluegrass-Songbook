@@ -1,6 +1,9 @@
 {meta: title Remember Me}
 {meta: artist Willie Nelson}
 {meta: composer Scott Wiseman}
+{meta: x_source classic-country}
+{meta: x_source_file remembermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You told me once you were [F]mine  alone [C]forever
@@ -33,3 +36,7 @@ Be the same [G7]except in [C]memory
 {start_of_verse: Verse 4}
 Just to know you [G7]still remember [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rock of Ages Keep My Soul}
 {meta: artist Doyle Lawson}
 {meta: composer Luther G. Presley}
+{meta: x_source classic-country}
+{meta: x_source_file rockofageskeepmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh Rock of Ages (oh Rock Of Ages) [C]cleft for [G]me ([D7]cleft for [G]me)
@@ -51,3 +54,8 @@ When storms of [G]doubt (when the storms of doubt)
 [C]Against me [G]roll (roll [D7]against me [G]roll) 
 [C]Rock of [G]ages
 {end_of_verse}
+
+
+
+
+

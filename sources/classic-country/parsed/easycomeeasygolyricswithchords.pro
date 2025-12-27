@@ -1,6 +1,9 @@
 {meta: title Easy Come Easy Go}
 {meta: artist Johnny Rodriguez}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file easycomeeasygolyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The highway she's hotter than [C]nine kinds of hell
@@ -43,3 +46,8 @@ Leave [D7]word in the dust where I [G]lay [D7]
 Say I'm [G]easy come [C]easy go
 And [D7]easy to love when I [G]stay
 {end_of_verse}
+
+
+
+
+

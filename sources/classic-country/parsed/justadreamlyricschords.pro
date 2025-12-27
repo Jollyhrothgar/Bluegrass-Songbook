@@ -1,6 +1,9 @@
 {meta: title Just A Dream}
 {meta: artist Connie Francis}
 {meta: composer Jimmy Clanton and Cosimo Matassa}
+{meta: x_source classic-country}
+{meta: x_source_file justadreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just a dream just a dream 
@@ -43,3 +46,8 @@ How can I live in mise[G7]ry
 I know that I won't forget you 
 But now I know it's too late for [C]me
 {end_of_verse}
+
+
+
+
+

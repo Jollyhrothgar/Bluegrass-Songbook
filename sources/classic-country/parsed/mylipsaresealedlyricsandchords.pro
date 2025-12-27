@@ -1,5 +1,8 @@
 {meta: title My Lips Are Sealed}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file mylipsaresealedlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I promise you he'll never know 
@@ -54,3 +57,12 @@ Forget the past I led you [D7]through
 Just don't look back it's all concealed
 My lips are [G]sealed
 {end_of_verse}
+
+
+
+
+
+
+
+
+

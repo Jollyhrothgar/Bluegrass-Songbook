@@ -1,6 +1,9 @@
 {meta: title She's Gonna Win Your Heart}
 {meta: artist Eddy Raven}
 {meta: composer Mentor Williams}
+{meta: x_source classic-country}
+{meta: x_source_file shesgonnawinyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know just how you feel
@@ -60,3 +63,10 @@ She knew right [D7]from the start
 How to [C]play her part
 She's gonna win [G]your heart
 {end_of_verse}
+
+
+
+
+
+
+

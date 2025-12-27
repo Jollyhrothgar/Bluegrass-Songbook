@@ -1,6 +1,9 @@
 {meta: title Someone Before Me}
 {meta: artist Loretta Lynn}
 {meta: composer Bobby Hicks}
+{meta: x_source classic-country}
+{meta: x_source_file someonebeforemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someone before me still turns you inside [G7]out
@@ -22,3 +25,5 @@ You're always wanting [C7]me to do the [F]things she used to [Fm]do
 [C]You're living on old [C7]mem'ries my love [F]can't get through to [Fm]you
 [C]Someone [F]before me sure [G7]left her mark on [C]you
 {end_of_verse}
+
+

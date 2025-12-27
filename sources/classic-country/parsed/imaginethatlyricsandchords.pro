@@ -1,6 +1,9 @@
 {meta: title Imagine That}
 {meta: artist Don Williams}
 {meta: composer Kieran Kane and Jamie O'Hara}
+{meta: x_source classic-country}
+{meta: x_source_file imaginethatlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No more nights sleeping alone 
@@ -43,3 +46,8 @@ To have you here again with me
 Oh [F]Lord I wish I had you back 
 But [C]all I can do is [G7]imagine [C]that
 {end_of_verse}
+
+
+
+
+

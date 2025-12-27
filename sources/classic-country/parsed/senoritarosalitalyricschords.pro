@@ -1,6 +1,9 @@
 {meta: title Senorita Rosalita}
 {meta: artist Hank Snow}
 {meta: composer Jim McBride}
+{meta: x_source classic-country}
+{meta: x_source_file senoritarosalitalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rosa[C]lita my Rosa[G]lita
@@ -40,3 +43,7 @@ Are you [D7]waiting for me just as you promised me you [G]would
 Rosa[C]lita senorita Rosa[G]lita
 I'd fly [D7]back tonight to you like a seagull if I [G]could
 {end_of_verse}
+
+
+
+

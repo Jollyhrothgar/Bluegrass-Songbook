@@ -1,5 +1,8 @@
 {meta: title Sweetheart You Know I Love You So}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file sweetheartyouknowiloveyousolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am so blue [F]longing for you
@@ -28,3 +31,6 @@ There'll come a day [F]we'll have our way
 [C]What the people say [F]cannot change the way
 [C]Sweetheart you [G7]know I love you [C]so
 {end_of_verse}
+
+
+

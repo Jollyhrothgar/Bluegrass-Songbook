@@ -1,6 +1,9 @@
 {meta: title Ain't Nothing But Love}
 {meta: artist Ricky Nelson}
 {meta: composer Thomas Knight}
+{meta: x_source classic-country}
+{meta: x_source_file aintnothingbutlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](It ain't nothin' but [D7]love it ain't nothin' but [G]love)
@@ -80,3 +83,14 @@ Um nothin' but love (ain't [C]nothin' but [G]love)
 Ain't nothin' but love (ain't [C]nothin' but [G]love)
 Well [D7]nothin' but [G]love 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

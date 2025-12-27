@@ -1,6 +1,9 @@
 {meta: title I Wish I Was Crazy Again}
 {meta: artist Waylon Jennings}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file iwishiwascrazyagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met an old [D7]friend this [G]morning 
@@ -37,3 +40,7 @@ And she [C]keeps me out [D7]of [G]trouble
 [C]Sometimes at [D7]night Lord when I [G]hear the [C]wind 
 I [G]wish I was [D7]crazy [G]again  yes [C]I wish [G]I was crazy [G][D7]again 
 {end_of_verse}
+
+
+
+

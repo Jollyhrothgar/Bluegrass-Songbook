@@ -1,6 +1,9 @@
 {meta: title This Thing}
 {meta: artist Webb Pierce}
 {meta: composer Audrey Grisham and Sylvia Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file thisthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love [G7]love [C]love [F]yeah [C]love's got a [G7]hold on [C]me
@@ -37,3 +40,8 @@ It's called [C]love [G7]love [C]love [F]yeah [C]loves got a [G7]hold on [C]me
 {start_of_verse: Verse 5}
 [F]It's called [C]love [G7]love [C]love [F]yeah [C]loves got a [G7]hold on [C]me
 {end_of_verse}
+
+
+
+
+

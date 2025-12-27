@@ -1,6 +1,9 @@
 {meta: title Willow Tree}
 {meta: artist Ferlin Husky}
 {meta: composer Bettie Husky}
+{meta: x_source classic-country}
+{meta: x_source_file willowtreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Willow tree willow [C]tree [D7]you're weeping [G]too
@@ -27,3 +30,6 @@ Willow tree willow tree [C]green leaves turned to [D7]blue
 {start_of_verse: Verse 4}
 Willow tree willow [C]tree [D7]you're weeping [G]too
 {end_of_verse}
+
+
+

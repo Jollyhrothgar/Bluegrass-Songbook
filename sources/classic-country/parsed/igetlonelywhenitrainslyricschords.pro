@@ -1,6 +1,9 @@
 {meta: title I Get Lonely When It Rains}
 {meta: artist Leroy Van Dyke}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file igetlonelywhenitrainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]When the day is dark and the clouds 
@@ -50,3 +53,7 @@ It's just that I get lonely when it [G]rains
 It's [D7]nothing that I can't explain
 It's just that I get lonely when it [G]rains
 {end_of_verse}
+
+
+
+

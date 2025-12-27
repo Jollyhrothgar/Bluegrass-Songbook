@@ -1,6 +1,9 @@
 {meta: title Just Give Me What You Think Is Fair}
 {meta: artist Vern Gosdin}
 {meta: composer Christopher Rider and B.L. Haywood}
+{meta: x_source classic-country}
+{meta: x_source_file justgivemewhatyouthinkisfairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love it when you’re with me
@@ -57,3 +60,12 @@ Now with someone who thinks that you still [C]care
 If I can have [D7]all of you
 Just give what you think is [G]fair
 {end_of_verse}
+
+
+
+
+
+
+
+
+

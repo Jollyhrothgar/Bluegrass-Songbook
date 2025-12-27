@@ -1,6 +1,9 @@
 {meta: title It's Hard To Be A Cowboy These Days}
 {meta: artist Johnny Rodriguez}
 {meta: composer Conrad Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file itshardtobeacowboythesedayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today I act like a kid in my pickup truck
@@ -43,3 +46,6 @@ I'll [C]proudly lay back and let the world go by
 But the [D7]cost of living is getting to high
 Oh it's [F]hard to be a [G7]cowboy these [C]days
 {end_of_verse}
+
+
+

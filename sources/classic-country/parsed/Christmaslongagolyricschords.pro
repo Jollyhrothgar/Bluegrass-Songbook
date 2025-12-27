@@ -1,6 +1,9 @@
 {meta: title Christmas Long Ago}
 {meta: artist Ricky Van Shelton}
 {meta: composer Don Schlitz and Ricky Van Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file Christmaslongagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There used to be a Christmas tree in the center of the [C]square
@@ -41,3 +44,8 @@
 {start_of_verse: Verse 6}
 [D7]And that's the way it used to be Christmas long [G]ago
 {end_of_verse}
+
+
+
+
+

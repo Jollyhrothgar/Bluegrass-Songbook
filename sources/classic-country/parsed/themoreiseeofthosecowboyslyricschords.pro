@@ -1,5 +1,8 @@
 {meta: title The More I See Of Those Cowboys}
 {meta: artist Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file themoreiseeofthosecowboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I grew up in the great state of [D7]Texas
@@ -42,3 +45,8 @@ The [D7]more I think of their [G]horse
 And the [C]more I see of these [G]cowboys
 The [D7]more I think of their [G]horse
 {end_of_verse}
+
+
+
+
+

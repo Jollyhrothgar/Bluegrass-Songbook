@@ -1,6 +1,9 @@
 {meta: title The Last One To Know}
 {meta: artist Reba McEntire}
 {meta: composer Matraca Berg and Jane Mariash}
+{meta: x_source classic-country}
+{meta: x_source_file thelastonetoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't see the fire burn to [F]ashes
@@ -36,3 +39,7 @@ The first one to [C]cry and the last to let [G7]go
 [C]Why is the one left [F]behind the one left [Em]alone
 With no one to [G7]hold the last one to [C]know
 {end_of_verse}
+
+
+
+

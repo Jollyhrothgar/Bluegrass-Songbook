@@ -1,6 +1,9 @@
 {meta: title I Saw A Man}
 {meta: artist Hank Snow}
 {meta: composer Arthur Smith}
+{meta: x_source classic-country}
+{meta: x_source_file isawamanlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I [D7]dreamed an angel [G]came
@@ -35,3 +38,6 @@
 [G]That fell round Him there
 [D7]My life my heart I gave my soul was in His [G]care
 {end_of_verse}
+
+
+

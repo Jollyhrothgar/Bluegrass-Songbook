@@ -1,6 +1,9 @@
 {meta: title True Love Goes On And On}
 {meta: artist Burl Ives}
 {meta: composer Richard Adler and Jerry Ross}
+{meta: x_source classic-country}
+{meta: x_source_file truelovegoesonandonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]True love goes on and on
@@ -48,3 +51,9 @@ Our love will be ever [G7]new
 True love goes on and on
 My darling I'll always love [C]you
 {end_of_verse}
+
+
+
+
+
+

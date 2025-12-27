@@ -1,6 +1,9 @@
 {meta: title If You But Care}
 {meta: artist Cowboy Copas}
 {meta: composer Kit Carson}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoubutcarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a dream in my heart
@@ -33,3 +36,6 @@ And I hope we can [G7]share
 It's a dream of a love we'll have
 If you'll but [C]care
 {end_of_verse}
+
+
+

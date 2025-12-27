@@ -1,6 +1,9 @@
 {meta: title That's What Makes The Jukebox Play}
 {meta: artist Moe Bandy}
 {meta: composer Jimmy WorkG}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatmakesthejukeboxplaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Trying to dry [D7]my tears away
@@ -65,3 +68,15 @@ That's what makes the jukebox [G]play
 [D7]All kinds of people make this world
 That's what makes the jukebox [G]play
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

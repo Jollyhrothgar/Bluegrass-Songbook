@@ -1,5 +1,8 @@
 {meta: artist John Denver}
 {meta: composer John Denver and Joe Henry}
+{meta: x_source classic-country}
+{meta: x_source_file ababyjustlikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The season [G7]is up[F]on us [C]now [F]time for [G7]gifts and [C]giving
@@ -25,3 +28,6 @@ That you may [G7]know the [F]warmth of [C]love and [F]wrap it [G7]all around [C]
 Merry [F]Christmas [G7]little [C]Zachary [Am]Merry [Dm]Christmas [G7]every[C]one
 Merry [F]Christmas [G7]little [C]Zachary [Am]Merry [Dm]Christmas [G7]every[C]one
 {end_of_verse}
+
+
+

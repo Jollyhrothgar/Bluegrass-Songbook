@@ -1,6 +1,9 @@
 {meta: title If I Never Have Anything Else}
 {meta: artist Ernest Tubb}
 {meta: composer Vic McAlpin and Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file ifineverhaveanythingelselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It would be nice if I could buy you almost [D7]anything
@@ -29,3 +32,6 @@
 [D7]But my love will be true and it’s yours to possess
 [G]And I’ll always have dreams if I never have anything else
 {end_of_verse}
+
+
+

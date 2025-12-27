@@ -1,5 +1,8 @@
 {meta: title Waiting In Your Welfare Line}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file waitinginyourwelfarelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got the [Em]hun-gries for [A7]your love 
@@ -49,3 +52,9 @@ And I'm waiting in your [D7]welfare [G]line
 I'm waiting in your welfare line [D7]gimme a [G]handout
 I'm waiting in your [D7]welfare [G]line
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Slow Dance More}
 {meta: artist Kenny Rogers}
 {meta: composer Doug Johnson and Pat Bunch}
+{meta: x_source classic-country}
+{meta: x_source_file slowdancemorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Grady Johnson was a [C]common [G]man [Em]
@@ -60,3 +63,12 @@ Buy [Am]low sell [G]high and [D7]slow dance [G]more
 {start_of_verse: Verse 9}
 Buy [Am]low sell [G]high and [D7]slow dance [G]more
 {end_of_verse}
+
+
+
+
+
+
+
+
+

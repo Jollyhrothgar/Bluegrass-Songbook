@@ -1,6 +1,9 @@
 {meta: title We Buried Her Beneath The Willow}
 {meta: artist Kitty Wells}
 {meta: composer C.R. Runners}
+{meta: x_source classic-country}
+{meta: x_source_file weburiedherbeneaththewillowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One day an angel came down from [C]heaven 
@@ -29,3 +32,6 @@ With heads bowed [G]low we walked [D7]away
 God needed her [G]to sing in [C]heaven 
 We'll meet [G]again  [D7]on that bright [G]day
 {end_of_verse}
+
+
+

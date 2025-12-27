@@ -1,6 +1,9 @@
 {meta: title Hello Mr. Sunshine}
 {meta: artist Tanya Tucker}
 {meta: composer mick stewart and Veto Galati Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file hellomrsunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello Mr. [C]Sunshine so [B7]glad you came my [Em]way
@@ -26,3 +29,5 @@ Comes the hope of brand new [G]way[D7]s
 And [G]so Mr. [C]Sunshine al[B7]though you go [Em]away
 I [C]know that you'll [G]come back to [D7]see me every[G]day
 {end_of_verse}
+
+

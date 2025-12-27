@@ -1,6 +1,9 @@
 {meta: title Girl Without A Name}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file girlwithoutanamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Watch her when she [C]walks across the [G]floor
@@ -29,3 +32,6 @@ And [D7]she knows every angle to [C]get things her [G]way
 [G7]Just a girl without a [C]name
 And [D7]she’s always looking for a [C]new heart to [G]break
 {end_of_verse}
+
+
+

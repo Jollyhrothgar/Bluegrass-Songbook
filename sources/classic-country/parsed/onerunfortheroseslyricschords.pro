@@ -1,6 +1,9 @@
 {meta: title One Run for the Roses}
 {meta: artist Cal Smith}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file onerunfortheroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Talk with me a little while [C7]walk with me one more mile
@@ -44,3 +47,8 @@ With [G7]time alone on my side I’ll [Am]leave an awful lot of pride
 [C]Knowing I made [G7]one run for the [F]roses
 And [C]this will be my [G7]one run for the [F]ro-se[C]s
 {end_of_verse}
+
+
+
+
+

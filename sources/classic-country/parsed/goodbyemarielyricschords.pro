@@ -1,6 +1,9 @@
 {meta: title Goodbye Marie}
 {meta: artist Johnny Rodriguez}
 {meta: composer Dennis Linde and Mel McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyemarielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up this mornin' all cotton mouthed from drinkin'
@@ -53,3 +56,9 @@ Por favor pour me one more tequila
 [F]If I cannot keep your love at least I'll [Am]have your [G7]memory
 [C]Goodbye Marie
 {end_of_verse}
+
+
+
+
+
+

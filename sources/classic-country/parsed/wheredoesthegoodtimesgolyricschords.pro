@@ -1,5 +1,8 @@
 {meta: title Where Does The Good Times Go}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file wheredoesthegoodtimesgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where does the [C]good times go 
@@ -39,3 +42,8 @@ Where does the [C]north wind blow
 {start_of_verse: Verse 4}
 [D7]Where does the good times [G]go 
 {end_of_verse}
+
+
+
+
+

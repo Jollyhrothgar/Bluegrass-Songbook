@@ -1,6 +1,9 @@
 {meta: title I'll Take A Chance On Loving You}
 {meta: artist Buck Owens}
 {meta: composer Chuck Jackson and Marvin Yancy}
+{meta: x_source classic-country}
+{meta: x_source_file illtakeachanceonlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you don't want to run [F]around
@@ -46,3 +49,7 @@ Well did you really mean it
 [C]If you'll be mine and mine alone
 [G7]I'll take a chance on loving [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Somebody Loves You}
 {meta: artist Crystal Gayle}
 {meta: composer Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file somebodylovesyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been a long time since you [F]went away
@@ -36,3 +39,7 @@ Na na na na na [F]na na na oh oh
 [C]Na na na na na [F]na na na
 Someone [C]loves you somebody [G7]loves you I [C]do
 {end_of_verse}
+
+
+
+

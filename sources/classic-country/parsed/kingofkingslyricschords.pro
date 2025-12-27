@@ -1,6 +1,9 @@
 {meta: title King Of Kings}
 {meta: artist Jack Greene}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file kingofkingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](He's the [G7]King of [C]Kings)
@@ -34,3 +37,7 @@ Kneel [C]down all foolish mortals [F]kneel down and [Fm]pray
 [C]He is the [G7]King of [C]Kings
 He is the [G7]King of [C]Kings
 {end_of_verse}
+
+
+
+

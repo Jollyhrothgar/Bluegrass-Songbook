@@ -1,6 +1,9 @@
 {meta: title We'll Waltz In Love Tonight}
 {meta: artist Reba McEntire}
 {meta: composer Bob Morrison, Johnny McRae, Tom Davey}
+{meta: x_source classic-country}
+{meta: x_source_file wellwaltzinlovetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw you [G7]softly [F]smiling and the [Dm]band [G7]began to [C]play [G7]
@@ -34,3 +37,7 @@ And we'll [G7]waltz in love to[C]night
 Your heart and mine in [F]three quarter time
 And we'll [G7]waltz in love to[C]night
 {end_of_verse}
+
+
+
+

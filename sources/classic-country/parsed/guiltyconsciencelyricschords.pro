@@ -1,6 +1,9 @@
 {meta: title Guilty Conscience}
 {meta: artist Carl Smith}
 {meta: composer Carl Butler}
+{meta: x_source classic-country}
+{meta: x_source_file guiltyconsciencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh does a guilty conscience [F]make you rule the [C]day
@@ -29,3 +32,6 @@ And you see that big moon in the [G7]sky
 [C]When you lay your head upon your [F]pillow 
 Does a guilty [G7]conscience make you [C]cry
 {end_of_verse}
+
+
+

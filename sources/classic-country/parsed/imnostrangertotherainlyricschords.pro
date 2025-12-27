@@ -1,6 +1,9 @@
 {meta: title I'm No Stranger To The Rain}
 {meta: artist Keith Whitley}
 {meta: composer Sonny Curtis and Ron Hellard}
+{meta: x_source classic-country}
+{meta: x_source_file imnostrangertotherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm no stranger to the rain [F]I'm a friend of thunder
@@ -40,3 +43,7 @@ But I'll [G7]put this cloud behind me that's [A]how the man designed me
 To [F]ride the wind and dance in a [G7]hurricane 
 I'm no stranger to the [Am]rain oh [D7]no  [F]I'm no [G7]stranger to the [C]rain
 {end_of_verse}
+
+
+
+

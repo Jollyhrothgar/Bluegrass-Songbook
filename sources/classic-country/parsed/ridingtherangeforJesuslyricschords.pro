@@ -1,6 +1,9 @@
 {meta: title Riding The Range For Jesus}
 {meta: artist Slim Whitman}
 {meta: composer Vep Ellis}
+{meta: x_source classic-country}
+{meta: x_source_file ridingtherangeforJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're riding the range for [G7]Jesus
@@ -29,3 +32,6 @@ Seeking a [D7]life gone a[G7]stray
 [C]Waiting for a call from [F]heaven
 For the [C]roundup at [G7]ending of [C]day
 {end_of_verse}
+
+
+

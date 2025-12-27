@@ -1,6 +1,9 @@
 {meta: title My Heart Is Bleeding}
 {meta: artist Fats Domino}
 {meta: composer Pearl King and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file myheartisbleedinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was you [F]darlin' not [C]I
@@ -29,3 +32,6 @@ Oh I [G7]can't sleep day or [C]night
 So my love I'm [F]lost in this [C]fight
 And every[G7]thing will be al[C]right
 {end_of_verse}
+
+
+

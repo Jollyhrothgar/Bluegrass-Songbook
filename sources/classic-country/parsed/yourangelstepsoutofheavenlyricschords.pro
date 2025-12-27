@@ -1,6 +1,9 @@
 {meta: title Your Angel Steps Out Of Heaven}
 {meta: artist George Jones}
 {meta: composer Jack Ripley}
+{meta: x_source classic-country}
+{meta: x_source_file yourangelstepsoutofheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You tell me you [D7]have married an [G]angel
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [D7]Your angel steps out of [C]heaven each [G]night
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title There May Be No Tomorrow}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file theremaybenotomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There [G7]may be no tomorrow so love me forever [C]tonight
@@ -18,3 +21,5 @@ There [G7]may be no tomorrow so love me forever [C]tonight
 {start_of_verse: Verse 3}
 There [G7]may be no tomorrow so love me forever [C]tonight
 {end_of_verse}
+
+

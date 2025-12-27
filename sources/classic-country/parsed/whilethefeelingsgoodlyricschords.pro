@@ -1,6 +1,9 @@
 {meta: title While The Feelings Good}
 {meta: artist Kenny Rogers}
 {meta: composer Freddie Hart and Roger Bowling}
+{meta: x_source classic-country}
+{meta: x_source_file whilethefeelingsgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take your gown out of the closet
@@ -46,3 +49,8 @@ Take that warm smile that you're wearing
 [G]To the room we always love [C]in
 [G]And let's love each [D7]other while the feelings [G]good
 {end_of_verse}
+
+
+
+
+

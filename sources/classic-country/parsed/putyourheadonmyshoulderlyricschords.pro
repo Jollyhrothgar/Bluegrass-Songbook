@@ -1,5 +1,8 @@
 {meta: title Put Your Head On My Shoulder}
 {meta: artist Paul Anka}
+{meta: x_source classic-country}
+{meta: x_source_file putyourheadonmyshoulderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Put your head on my [Em]shoulder
@@ -35,3 +38,7 @@ Put your head on my [Em]shoulder
 [Am]Words I [D7]want to hear [G]ba-[Em]by
 [Am]Put your [D7]head on my [G]shoulder 
 {end_of_verse}
+
+
+
+

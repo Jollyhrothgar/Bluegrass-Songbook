@@ -1,5 +1,8 @@
 {meta: title Are You Building A Temple in Heaven}
 {meta: artist Hank Williams Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file areyoubuildingatempleinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Around me many [G7]are [C]building
@@ -28,3 +31,6 @@ To live in when this life is [G7]over
 Will you [C]move to that [F]beautiful [C]city
 And live with [G7]Christ ever [C]more
 {end_of_verse}
+
+
+

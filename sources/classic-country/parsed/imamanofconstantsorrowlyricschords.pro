@@ -1,5 +1,8 @@
 {meta: title I’m A Man Of Constant Sorrow}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file imamanofconstantsorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm a man of constant [C]sorrow
@@ -35,3 +38,7 @@
 [F]I'll say goodbye and [C]leave [D7]tomorrow
 [G7]And I won't be back this [C]way
 {end_of_verse}
+
+
+
+

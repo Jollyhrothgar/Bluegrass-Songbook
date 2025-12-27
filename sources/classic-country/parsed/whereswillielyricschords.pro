@@ -1,6 +1,9 @@
 {meta: title Where's Willie}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file whereswillielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where's Willie where [C]did that rascal [G]go 
@@ -41,3 +44,6 @@ He's [C]out of sight but if [G]I'm right
 I'll [D7]find that Willie boy [G]tonight
 Won't be [C]much left of [G]Willie in the [D7]morn[G]ing
 {end_of_verse}
+
+
+

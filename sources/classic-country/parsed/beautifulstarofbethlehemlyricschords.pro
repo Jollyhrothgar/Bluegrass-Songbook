@@ -1,6 +1,9 @@
 {meta: title Beautiful Star of Bethlehem}
 {meta: artist The Oak Ridge Boys}
 {meta: composer R. Fisher Boyce and Adger M. Pace}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulstarofbethlehemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]O beautiful star of Bethlehem
@@ -50,3 +53,8 @@ O beautiful star of Bethle[D7]hem  [G7]shine [C]on  [F]  [C]
 Unto the [F]land of perfect [C]day
 O beautiful star of Bethle[D7]hem  [G7]shine [C]on 
 {end_of_verse}
+
+
+
+
+

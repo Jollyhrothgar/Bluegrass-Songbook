@@ -1,6 +1,9 @@
 {meta: title Blessed Be}
 {meta: artist Statler Brother}
 {meta: composer Kim L. Reid}
+{meta: x_source classic-country}
+{meta: x_source_file blessedbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blessed [C]be the [Am]children who are [C]free
@@ -34,3 +37,7 @@ In His [F]word His teaching [G]word
 Blessed [C]be that we [Am]all come to [C]see
 And come to [F]lo-[G7]ve eterna[C]lly
 {end_of_verse}
+
+
+
+

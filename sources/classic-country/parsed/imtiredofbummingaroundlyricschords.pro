@@ -1,6 +1,9 @@
 {meta: title I'm Tired Of Bumming Around}
 {meta: artist Hank Locklin}
 {meta: composer W.S. Stevenson and Pete Graves}
+{meta: x_source classic-country}
+{meta: x_source_file imtiredofbummingaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm tired of bumming around 
@@ -49,3 +52,10 @@ I'm [C]tied of bumming around
 Still I [D7]just can't settle down
 Un[G7]til I find the one I'm searching [C]for
 {end_of_verse}
+
+
+
+
+
+
+

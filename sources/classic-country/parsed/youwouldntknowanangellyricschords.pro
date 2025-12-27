@@ -1,6 +1,9 @@
 {meta: title You Wouldn't Know An Angel}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Frances Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file youwouldntknowanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Because I won't give in to you 
@@ -57,3 +60,10 @@ But [C]I'm not the only one
 To [D7]tell you so you wouldn't know 
 An angel if you [G]saw one
 {end_of_verse}
+
+
+
+
+
+
+

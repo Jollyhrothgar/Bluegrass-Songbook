@@ -1,6 +1,9 @@
 {meta: title Goodbye Mr. Brown}
 {meta: artist Kitty Wells}
 {meta: composer Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyemrbrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello Mrs. Johnson [C]good morning Mr. Brown
@@ -29,3 +32,6 @@ Give my love to your wife and baby God [D7]bless you and you [G]home
 Our [C]love belongs to others now there’s no slipping [G]around
 Goodbye Mrs. Johnson [D7]goodbye Mr. [G]Brown
 {end_of_verse}
+
+
+

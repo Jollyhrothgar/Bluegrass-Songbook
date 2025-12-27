@@ -1,6 +1,9 @@
 {meta: title Whine Whistle Whine}
 {meta: artist John Anderson}
 {meta: composer Don Goodman and Mark Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file whinewhistlewhinelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hopped aboard a southbound freight
@@ -42,3 +45,7 @@ Keep [D7]moving me on farther down the [G]line
 [C]Whine you whistle [G]whine
 There's a [D7]memory trying to catch up with my [G]mind
 {end_of_verse}
+
+
+
+

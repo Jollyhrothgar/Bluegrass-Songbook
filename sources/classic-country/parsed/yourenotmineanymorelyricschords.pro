@@ -1,6 +1,9 @@
 {meta: title You're Not Mine Anymore}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file yourenotmineanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're not mine [E7]anymore  but I'm [F]still praying [C]for
@@ -22,3 +25,5 @@
 [C]Now I know you say [E7]we're through but I'm [F]still in love with [C]you
 [F]And it's my fault that [G7]you're not mine [C]anymore
 {end_of_verse}
+
+

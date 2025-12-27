@@ -1,6 +1,9 @@
 {meta: title Left Over Corner Of Your Heart}
 {meta: artist Dottie West}
 {meta: composer Dottie West, Bill West, Charlie Dick}
+{meta: x_source classic-country}
+{meta: x_source_file leftovercornerofyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You tell me you [G7]love her with [C]all of your heart
@@ -25,3 +28,5 @@ For I'd [C]give my heart full of [C7]true love
 For [F]tiny little start
 In that [C]left over [G7]corner of your [C]heart
 {end_of_verse}
+
+

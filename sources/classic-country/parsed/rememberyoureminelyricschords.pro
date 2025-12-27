@@ -1,6 +1,9 @@
 {meta: title Remember You’re Mine}
 {meta: artist Pat Boone}
 {meta: composer Bernie Lowe and Kal Mann}
+{meta: x_source classic-country}
+{meta: x_source_file rememberyoureminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Be faithful darling while you're away
@@ -22,3 +25,5 @@ But I [A7]promise I'll be [D7]true
 And though I'll [G]miss you have a wonderful [C]time
 Just remember [G]darling [D7]remember you're [G]mine 
 {end_of_verse}
+
+

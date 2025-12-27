@@ -1,6 +1,9 @@
 {meta: title Diamond In My Crown}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley and Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file diamondinmycrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As each long day rolls by [F]and falls behind [C]me
@@ -29,3 +32,6 @@
 [C]Then the closer I [F]will be to [C]my sweetest [F]victory
 [C]There'll be a [G7]diamond a diamond in my [C]crown
 {end_of_verse}
+
+
+

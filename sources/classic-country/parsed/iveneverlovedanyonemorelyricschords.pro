@@ -1,6 +1,9 @@
 {meta: title I've Never Loved Anyone More}
 {meta: artist Johnny Rodriguez}
 {meta: composer Linda Hargrove and Michael Nesmith}
+{meta: x_source classic-country}
+{meta: x_source_file iveneverlovedanyonemorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seems that I don't think about you too much
@@ -24,3 +27,4 @@ But like I said I don't think of it much
 [C]And for all of the pain I would love [A7]you again
 [D7]I've never loved [G7]anyone [C]more
 {end_of_verse}
+

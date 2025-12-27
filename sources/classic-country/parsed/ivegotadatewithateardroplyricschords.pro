@@ -1,5 +1,8 @@
 {meta: title I've Got A Date With A Teardrop Lyrics Chords}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotadatewithateardroplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've gotta [D7]date with a [G]teardrop my [Am]baby just told me good[G]bye
@@ -25,3 +28,6 @@ Until I find a [Am]way to [Em]shake it and [A7]toss it over for a [D7]smile
 {start_of_verse: Verse 4}
 [C](I've got a [D7]date with a [G]teardrop)
 {end_of_verse}
+
+
+

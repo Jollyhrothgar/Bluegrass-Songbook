@@ -1,6 +1,9 @@
 {meta: title Wicked Lies}
 {meta: artist Carl Smith}
 {meta: composer Joe H. Brewster, Pearl D. Jones, Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file wickedlieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't care what you've been it's just what [F]you are [C]today
@@ -29,3 +32,6 @@
 [C]For I want no one but you no one [F]else will ever [C]do
 [G7]We can live and love in spite of wicked [C]lies
 {end_of_verse}
+
+
+

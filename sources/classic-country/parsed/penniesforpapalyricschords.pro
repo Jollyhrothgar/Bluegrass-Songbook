@@ -1,5 +1,8 @@
 {meta: title Pennies for Papa}
 {meta: artist Little Jimmy Dickens}
+{meta: x_source classic-country}
+{meta: x_source_file penniesforpapalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pennies for papa the [F]little one [C]cried
@@ -42,3 +45,8 @@ But we are [G7]thankful some[C]how
 [C]Pennies for papa the [F]little one [C]cried
 Pennies for [G7]papa by my [C]side
 {end_of_verse}
+
+
+
+
+

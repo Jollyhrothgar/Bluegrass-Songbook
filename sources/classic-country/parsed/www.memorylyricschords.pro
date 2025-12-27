@@ -1,6 +1,9 @@
 {meta: title WWW.Memory}
 {meta: artist Alan Jackson}
 {meta: composer and recorded by Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file www.memorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you're [F]leaving [G7]I see the [C]signs 
@@ -31,3 +34,7 @@ If you feel the need [F]just click on me [G7]at www[F].memo[C]ry
 {start_of_verse: Verse 4}
 If you [G7]feel like love [F]just click on me [G7]at www[F].memo[C]ry
 {end_of_verse}
+
+
+
+

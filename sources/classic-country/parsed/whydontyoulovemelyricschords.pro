@@ -1,5 +1,8 @@
 {meta: title Why Don't You Love Me}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file whydontyoulovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well Why Don't You Love Me like you used to do
@@ -48,3 +51,10 @@ What makes you treat me like a piece of [D7]clay
 My [G]hair's still curly and my eyes are still [C]blue
 [G]Why Don't You Love Me like you [D7]used to [G]do
 {end_of_verse}
+
+
+
+
+
+
+

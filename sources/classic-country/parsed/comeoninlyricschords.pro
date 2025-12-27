@@ -1,6 +1,9 @@
 {meta: title Come On In}
 {meta: artist Patsy Cline}
 {meta: composer V.F. Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file comeoninlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come on in and sit [C]right down and [D7]make yourself at [G]home
@@ -57,3 +60,12 @@ When I get my summons on the Judgment Day
 {start_of_verse: Verse 10}
 [C]Come on in and sit right [D7]down and make yourself at [G]home
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You And Me}
 {meta: artist Kenny Rogers}
 {meta: composer Roger Bowling and Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file youandmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain’t it good babe  [F]you and [C]me
@@ -36,3 +39,7 @@ We sailed the stormy waters we calmed the angry [G7]sea
 We knew we [C]could babe  [F]you and [C]me
 Just as long as we [G7]have you and [C]me
 {end_of_verse}
+
+
+
+

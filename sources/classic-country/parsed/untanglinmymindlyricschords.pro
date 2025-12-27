@@ -1,6 +1,9 @@
 {meta: title Untanglin' My Mind}
 {meta: artist Clint Black}
 {meta: composer Merle Haggard and Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file untanglinmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess you're glad to [G7]see I'm finally [C]leaving
@@ -47,3 +50,9 @@ And I'm somewhere [G7]untanglin' my [C]mind [Am]
 {start_of_verse: Verse 7}
 I'm [Dm]somewhere [G7]untanglin' my [C]mind
 {end_of_verse}
+
+
+
+
+
+

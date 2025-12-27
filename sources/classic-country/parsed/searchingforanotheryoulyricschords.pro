@@ -1,6 +1,9 @@
 {meta: title Searching For Another You}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and Lee Ross}
+{meta: x_source classic-country}
+{meta: x_source_file searchingforanotheryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have searched a sea of faces but not one [F]of them [C]replaces
@@ -22,3 +25,5 @@ Oh how lonely is this heart you've broke in [G7]two
 I only [C]live for your returning with each tear [F]that falls I'm [C]learning
 That I'll never ever [G7]find another [C]you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title You're The Only World I Know}
 {meta: artist Sonny James}
 {meta: composer Bob Tubert and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file youretheonlyworldiknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're the only world I know 
@@ -31,3 +34,8 @@ You're my one love all the [G7]way
 You're the one I can't let go
 You're the only only world I [C]know
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Break Up Lyrics and Chords}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file breakuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well who's that guy you been seein' most every day
@@ -47,3 +50,9 @@ Cause if you like him and I know that he likes you
 [G7]Come on baby don't break up with [C]me
 [G7]Come on baby don't break up with [C]me
 {end_of_verse}
+
+
+
+
+
+

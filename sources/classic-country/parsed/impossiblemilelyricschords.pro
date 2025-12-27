@@ -1,6 +1,9 @@
 {meta: title Impossible Mile}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file impossiblemilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus was His name and love was His game
@@ -42,3 +45,9 @@ When they nailed Him to the cross
 When they nailed Him to the cross
 [G7]And He paid the price for me and for [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ain't Your Memory Got No Pride At All}
 {meta: artist Merle Haggard}
 {meta: composer Red Lane, Boyce Porter, Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file aintyourmemorygotnoprideatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up with her [F]in my arms this [C]morning
@@ -26,3 +29,6 @@ You [F]always find the wrong time to come around and [C]call
 {start_of_verse: Verse 4}
 [F]Ain't your memory [C]got no [G7]pride at [C]all
 {end_of_verse}
+
+
+

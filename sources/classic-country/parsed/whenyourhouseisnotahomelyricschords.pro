@@ -1,6 +1,9 @@
 {meta: title When Your House Is Not A Home}
 {meta: artist Jean Shepard}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file whenyourhouseisnotahomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walk up to my door and [D7]hate to turn the [G]key
@@ -22,3 +25,5 @@ Each day [D7]I'm living like a prisoner passing [G]time
 That's how [C]it is ask anyone who lives [G]alone
 That's how it is when your [C]house is not a [G]home
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Get Above Your Raising}
 {meta: artist Ricky Skaggs}
 {meta: composer Lester Flatt and Earl Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file dontgetaboveyourraisinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I got a gal that's sweet to me 
@@ -45,3 +48,11 @@ Don't get [D7]above your raising stay down on earth with [G]me
 {start_of_verse: Verse 1}
 [G]Well I got a gal that's sweet to me 
 {end_of_verse}
+
+
+
+
+
+
+
+

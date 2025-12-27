@@ -1,6 +1,9 @@
 {meta: title Only You (And You Alone)}
 {meta: artist Reba McEntire}
 {meta: composer Andre Rand and Buck Ram}
+{meta: x_source classic-country}
+{meta: x_source_file onlyyouandyoualonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Only [C]you can make this [E7]world seem right
@@ -27,3 +30,5 @@ The [C]magic that you [A7]do
 You're my [D7]dream come true 
 My [G7]one and only [Em]you[C]
 {end_of_verse}
+
+

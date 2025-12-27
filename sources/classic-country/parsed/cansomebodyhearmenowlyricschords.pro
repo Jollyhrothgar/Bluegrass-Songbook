@@ -1,6 +1,9 @@
 {meta: title Can Somebody Hear Me Now}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file cansomebodyhearmenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have called out to the Hero flying higher than the clouds
@@ -42,3 +45,8 @@ And I [G]wonder can some[D7]body hear me [G]now [C]
 {start_of_verse: Verse 6}
 Lord I [G]wonder can some[D7]body hear me [C]now[G]
 {end_of_verse}
+
+
+
+
+

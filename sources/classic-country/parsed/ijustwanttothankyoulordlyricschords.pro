@@ -1,6 +1,9 @@
 {meta: title I Just Want To Thanks You Lord}
 {meta: artist Larry Sparks}
 {meta: composer Judy Marshall}
+{meta: x_source classic-country}
+{meta: x_source_file ijustwanttothankyoulordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just want to thank you Lord for every [F]time you heard me [Dm]pray
@@ -36,3 +39,7 @@ I just want to [G7]thank you [F]Lord thank you [C]Lord
 {start_of_verse: Verse 4}
 [Dm]I just want to [G7]thank you [F]Lord thank you [C]Lord
 {end_of_verse}
+
+
+
+

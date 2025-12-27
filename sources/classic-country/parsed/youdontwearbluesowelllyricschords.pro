@@ -1,6 +1,9 @@
 {meta: title You Don't Wear Blue So Well}
 {meta: artist Statler Brothers}
 {meta: composer Kim Reid, Karmen Reid and Kodi Reid}
+{meta: x_source classic-country}
+{meta: x_source_file youdontwearbluesowelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You don't wear [G7]blue so [C]well
@@ -40,3 +43,8 @@ But you don't [G7]wear blue so [C]well
 {start_of_verse: Verse 4}
 We don't [G7]wear blue so [C]well
 {end_of_verse}
+
+
+
+
+

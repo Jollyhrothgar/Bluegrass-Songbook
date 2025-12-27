@@ -1,6 +1,9 @@
 {meta: title What Does The Deep Sea Say}
 {meta: artist Doc Watson}
 {meta: composer J.E. Mainer}
+{meta: x_source classic-country}
+{meta: x_source_file whatdoesthedeepseasaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She stood on the [G7]beach a[C]lone
@@ -68,3 +71,11 @@ It guards and [G7]keeps
 My [F]lover where he sleeps
 [C]And it rolls on its [G7]weary [C]way
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ol’ What's Her Name}
 {meta: artist Wynn Stewart}
 {meta: composer Fuzzy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file olwhatshernamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'll admit that there's been lots of [C]pretty girls I've [G]known
@@ -33,3 +36,7 @@ Oh I'll [D7]never forget ol' what's her [G]name
 {start_of_verse: Verse 4}
 Oh I'll [D7]never forget ol' what's her [G]name
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Fair Weather Friends}
 {meta: artist Don Williams}
 {meta: composer Johnny Cash and Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file fairweatherfriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fairweather friends fairweather [C][F]sailors
@@ -36,3 +39,7 @@ Will leave you [G7]stranded on life's [C]shore
 One good friend who truly [F]loves [C]you
 Is worth the pain [G7]your heart [C]endures
 {end_of_verse}
+
+
+
+

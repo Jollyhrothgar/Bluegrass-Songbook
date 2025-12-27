@@ -1,6 +1,9 @@
 {meta: title Like A Fool}
 {meta: artist Dottie West}
 {meta: composer Yvonne Devaney}
+{meta: x_source classic-country}
+{meta: x_source_file likeafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know it won't be long until I [F]hear from you
@@ -33,3 +36,7 @@ And like a [C]fool I'll let you [G7]make a fool of [C]me again
 {start_of_verse: Verse 5}
 Like a fool I'll let you [G7]make a fool of [C]me again
 {end_of_verse}
+
+
+
+

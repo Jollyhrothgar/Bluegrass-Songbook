@@ -1,6 +1,9 @@
 {meta: title From Here to Forever}
 {meta: artist Kris Kristofferson}
 {meta: composer Billy Swan, Glen Clark, Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file fromheretoforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cool shadows fall through the [F]moonlight
@@ -48,3 +51,9 @@ And [G7]be there wherever you [C]go
 I will [F]love you from here to for[C]ever
 And [G7]be there wherever you [C]go
 {end_of_verse}
+
+
+
+
+
+

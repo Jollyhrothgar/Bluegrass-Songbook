@@ -1,6 +1,9 @@
 {meta: title I've Got A Funny Feeling}
 {meta: artist George Strait}
 {meta: composer Harlan Howard and Jackson Leap}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotafunnyfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well my baby's wearin' a permanent smile
@@ -50,3 +53,9 @@ I've [D7]got a funny feeling somebody's stealing my [G]gal
 {start_of_verse: Verse 5}
 I've [D7]got a funny feeling somebody's stealing my [G]gal
 {end_of_verse}
+
+
+
+
+
+

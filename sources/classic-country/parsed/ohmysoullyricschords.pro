@@ -1,6 +1,9 @@
 {meta: title Oh My Soul}
 {meta: artist Crystal Gayle}
 {meta: composer Marcia Routh}
+{meta: x_source classic-country}
+{meta: x_source_file ohmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh my soul oh my soul oh my soul
@@ -47,3 +50,9 @@ Are just a vision of His [G7]face
 Oh my [C]soul oh my soul oh my soul
 Reaches up to [G7]Him for the saving [C]grace
 {end_of_verse}
+
+
+
+
+
+

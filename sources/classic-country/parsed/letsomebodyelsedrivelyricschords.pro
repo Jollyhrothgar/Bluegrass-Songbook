@@ -1,6 +1,9 @@
 {meta: title Let Somebody Else Drive}
 {meta: artist John Anderson}
 {meta: composer Merle Kilgore and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file letsomebodyelsedrivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard it on the radio and six o'clock news
@@ -34,3 +37,7 @@ In a room full of drunks surrounded by steel
 Hell's all they serve in a metro bar
 So don't be drinkin' when you're drivin' your car
 {end_of_verse}
+
+
+
+

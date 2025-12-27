@@ -1,6 +1,9 @@
 {meta: title If You See My Savior}
 {meta: artist Anne Murray}
 {meta: composer Rev. Thomas A. Dorsey}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouseemysaviorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was standing by the bedside of a [F]neighbor
@@ -40,3 +43,8 @@ I was [C]standing standing by a [G7]friend [D7]    [G7]
 Who was [C]leaving to cross the [F]Jordan
 Where I wanna [C]cross the Jordan [G7]in the [C]end
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title True True Loving}
 {meta: artist Ferlin Husky}
 {meta: composer Chuck Taylor and Gerald Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file truetruelovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He can give you money he can give you fine [G7]things
@@ -22,3 +25,5 @@ I'll be right here when his [G7]love runs out yes [F]baby I'm [G7]waiting for [C
 And I can give you true true [F]loving true true true [C]loving
 T-r-ue [G7]loving that's what you get from [C]me 
 {end_of_verse}
+
+

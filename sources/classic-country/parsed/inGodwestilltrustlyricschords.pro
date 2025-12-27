@@ -1,6 +1,9 @@
 {meta: title In God We Still Trust}
 {meta: artist Diamond Rio}
 {meta: composer Bill Nash and Robert LeClair}
+{meta: x_source classic-country}
+{meta: x_source_file inGodwestilltrustlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You place your [C]hand on His [G]Bible when you [C]swear to tell the [G]truth
@@ -35,3 +38,7 @@ Here in [C]America here in [A7]America
 Here in [C]America  in [D7]God we still [G]trust
 Here in [C]America  in [D7]God we still [G]trust  [C]here in [G]America
 {end_of_verse}
+
+
+
+

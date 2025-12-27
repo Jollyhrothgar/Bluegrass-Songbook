@@ -1,6 +1,9 @@
 {meta: title Gonna Have Love}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file gonnahavelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My baby called me  [C]just [G]today 
@@ -26,3 +29,6 @@ And I'm gonna have love one [D7]more [G]time
 {start_of_verse: Verse 4}
 I'm gonna have love love love one [D7]more [G]time
 {end_of_verse}
+
+
+

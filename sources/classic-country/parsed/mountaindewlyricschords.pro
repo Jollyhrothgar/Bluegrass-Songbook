@@ -1,5 +1,8 @@
 {meta: title Mountain Dew}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file mountaindewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Not very far from me there's an old holler [G7]tree
@@ -52,3 +55,12 @@ With a jug of that [D7]good ole mountain [G]dew
 I'll hush up my mug if you'll fill up my jug
 With that good ole [D7]mountain [G]dew
 {end_of_verse}
+
+
+
+
+
+
+
+
+

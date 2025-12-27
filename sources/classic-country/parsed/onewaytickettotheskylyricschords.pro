@@ -1,6 +1,9 @@
 {meta: title One Way Ticket To The Sky}
 {meta: artist Kitty Wells}
 {meta: composer Johnnie & Walter Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file onewaytickettotheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got my one way [D7]ticket to the [G]sky 
@@ -57,3 +60,9 @@ Walk with Jesus in the Holy [G]Land
 [C]Shake my dad and mother's [G]hand
 I've got my one way [D7]ticket to the [G]sky
 {end_of_verse}
+
+
+
+
+
+

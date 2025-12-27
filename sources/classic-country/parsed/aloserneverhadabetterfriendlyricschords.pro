@@ -1,6 +1,9 @@
 {meta: title A Loser Never Had A Better Friend}
 {meta: artist Darrell McCall}
 {meta: composer Arthur Leo Owens and Sanger Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file aloserneverhadabetterfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you think I made her up to make you [F]jealous
@@ -38,3 +41,8 @@ Oh a [G7]loser never had a better [C]friend
 {start_of_verse: Verse 6}
 No a [G7]loser never had a better [F]frien[C]d
 {end_of_verse}
+
+
+
+
+

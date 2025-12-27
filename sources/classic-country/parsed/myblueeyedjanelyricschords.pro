@@ -1,6 +1,9 @@
 {meta: title My Blue Eyed Jane}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers and Lullu Belle White}
+{meta: x_source classic-country}
+{meta: x_source_file myblueeyedjanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now the sweetest girl [C]in the world [G]is my [D7]blue eyed [G]Jane
@@ -29,3 +32,6 @@ I know you'll [D7]never change I love you [G]so
 And when the sun goes down and the shadow's creeping over town
 Then I'll come [D7]back again my blue eyed [G]Jane
 {end_of_verse}
+
+
+

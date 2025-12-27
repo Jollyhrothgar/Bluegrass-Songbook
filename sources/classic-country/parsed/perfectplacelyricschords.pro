@@ -1,6 +1,9 @@
 {meta: title Perfect Place}
 {meta: artist Tony Booth}
 {meta: composer Glenn Sutton and Billy Troy}
+{meta: x_source classic-country}
+{meta: x_source_file perfectplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just a room a[G7]bove the [C]bar a [F]couch and one old [C]chair 
@@ -28,3 +31,6 @@ I'll [C]stay un[G7]til your [C]memory is [F]gone without a [C]trace
 If a [F]lonely room can [C]kill it then I've [G7]found the perfect [C]place
 If a [F]lonely room [C]kills memories I've [G7]found the perfect [C]place
 {end_of_verse}
+
+
+

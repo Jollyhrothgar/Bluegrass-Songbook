@@ -1,6 +1,9 @@
 {meta: title Jesus Walked Upon The Water}
 {meta: artist Junior Sisk and Rambler’s Choice}
 {meta: composer George Steve Watts}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuswalkeduponthewaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stormy waters 'round me rise lightening flashes 'cross the sky
@@ -47,3 +50,9 @@ By the power of His [G7]blood we can be [C]whole
 {start_of_verse: Verse 5}
 By the power of His [G7]love we can be [C]whole
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Shot Full Of Love}
 {meta: artist Nitty Gritty Dirt Band}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file shotfulloflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I had a [G7]heart cold as [Am]ice
@@ -43,3 +46,8 @@
 [F]Then I met you and the next thing I [C]knew
 [Am]There I was [F]oooh shot full of [C]love
 {end_of_verse}
+
+
+
+
+

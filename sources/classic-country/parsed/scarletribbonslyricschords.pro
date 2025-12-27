@@ -1,6 +1,9 @@
 {meta: title Scarlet Ribbons}
 {meta: artist Jim Ed Brown}
 {meta: composer Jack Segal and Evelyn Danzig}
+{meta: x_source classic-country}
+{meta: x_source_file scarletribbonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I peeked [C]in to [D7]say good [G]night 
@@ -31,3 +34,6 @@ I will [B7]never [Am]know from whe[D7]re
 [G]Came those [C]lovely [D7]scarlet [G]ribbons 
 [C]Scarlet [D7]ribbons [C]for [D7]her [G]hair
 {end_of_verse}
+
+
+

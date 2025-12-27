@@ -1,6 +1,9 @@
 {meta: title Lord Don't Forsake Me}
 {meta: artist Alison Krauss}
 {meta: composer Todd Rakestraw}
+{meta: x_source classic-country}
+{meta: x_source_file lorddontforsakemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh my Lord please don't for[G7]sake me
@@ -48,3 +51,9 @@ I need a [A#7]place [G7]  where I can [C]rest
 Oh my Lord can you [G7]hear me
 I need a [A#7]place [G7]  where I can [C]rest
 {end_of_verse}
+
+
+
+
+
+

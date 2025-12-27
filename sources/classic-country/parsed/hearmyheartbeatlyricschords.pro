@@ -1,6 +1,9 @@
 {meta: title Hear My Heart Beat}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Jim Casey and Danny Mayo}
+{meta: x_source classic-country}
+{meta: x_source_file hearmyheartbeatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hoping baby that you’ve got a notion 
@@ -50,3 +53,8 @@ Bom bom bom [Em]bom heartbeat
 Bom bom bom [G]bom heartbeat
 Heart[Em]beat heart[G]beat heart[Em]beat [D7]
 {end_of_verse}
+
+
+
+
+

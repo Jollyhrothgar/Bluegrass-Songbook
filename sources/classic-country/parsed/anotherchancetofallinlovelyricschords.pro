@@ -1,6 +1,9 @@
 {meta: title Another Chance To Fall In Love}
 {meta: artist Kitty Wells}
 {meta: composer Bill C. Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file anotherchancetofallinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let’s give [C]ourselves another [G]chance to [D7]fall in [G]love
@@ -33,3 +36,7 @@ Going out with friends and leaving you so [D7]blue
 And you’re [G]passing up a [C]chance we could be [G]happy
 But I still [C]care for you though [G]you have been [G][D7]untrue
 {end_of_verse}
+
+
+
+

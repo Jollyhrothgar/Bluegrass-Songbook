@@ -1,6 +1,9 @@
 {meta: title Beggar To A King}
 {meta: artist Hank Snow}
 {meta: composer J.P. Richardson}
+{meta: x_source classic-country}
+{meta: x_source_file beggartoakinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I Had Sunk As [C]Low As A [G]Man Could [C]Go
@@ -29,3 +32,6 @@ And You Gave Me Your Love To Keep Me [D7]Warm
 Yes You [G]Picked Me [C]Up And You [G]Kissed Me [C]Sweet
 You Changed A [G]Beggar [D7]Into A [G]King
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Leroy The Redneck Reindeer}
 {meta: artist Joe Diffie}
 {meta: composer Steve Pippin, Stacey Slate, Joe Diffie}
+{meta: x_source classic-country}
+{meta: x_source_file leroytheredneckreindeerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you've all heard the story about [F]Rudolph and his [C]nose
@@ -51,3 +54,10 @@ And you could hear him call Merry Christmas y'all
 {start_of_verse: Verse 7}
 [F]He makes jingle bells with [C]the rebel yell and [G7]made history that [C]night
 {end_of_verse}
+
+
+
+
+
+
+

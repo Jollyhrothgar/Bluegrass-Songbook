@@ -1,6 +1,9 @@
 {meta: title If You're Ever Lonely}
 {meta: artist Ray Price}
 {meta: composer Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoureeverlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're ever lonely darling
@@ -34,3 +37,8 @@ Maybe baby you will learn
 Say in your mind you have it coming
 [G7]And you know you have to pay
 {end_of_verse}
+
+
+
+
+

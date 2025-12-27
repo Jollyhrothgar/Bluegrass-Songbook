@@ -1,6 +1,9 @@
 {meta: title Destroyed By Man}
 {meta: artist Mel Tillis}
 {meta: composer Red Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file destroyedbymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a girl in a barroom  [C]we all know her [G]well
@@ -22,3 +25,5 @@ Lost unless heaven counts her [A7]worthy to [D7]save
 [C]Men don't respect her [G]still they hold her hand
 She was created by heaven now [D7]destroyed by [G]man
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title How I Love Them Old Songs}
 {meta: artist Carl Smith}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file howilovethemoldsongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Doggone my soul how I love them old [D7]songs
@@ -30,3 +33,6 @@ That hard knocking rock and rolling life that I've [G]known
 But the dancing is over and the music must go [D7]on
 Doggone my soul how I love them old [G]songs 
 {end_of_verse}
+
+
+

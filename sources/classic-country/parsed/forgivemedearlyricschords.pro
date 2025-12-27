@@ -1,6 +1,9 @@
 {meta: title Forgive Me Dear}
 {meta: artist Faron Young}
 {meta: composer George Jones and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file forgivemedearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I lost your love and started drinking
@@ -37,3 +40,6 @@ I only hope that you still love [C]me
 Cause I’ll [F]swear by stars above [C]me
 Forgive me dear and I will [G7]always do what’s [C]right
 {end_of_verse}
+
+
+

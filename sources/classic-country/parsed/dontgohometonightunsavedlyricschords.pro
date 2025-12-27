@@ -1,6 +1,9 @@
 {meta: title Don't Go Home Tonight Unsaved}
 {meta: artist Wilburn Brothers}
 {meta: composer Garry D. Rector, John F. Gleen Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file dontgohometonightunsavedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Upon my heart I have a [F]burden
@@ -29,3 +32,6 @@ Can't you hear the Savior [G7]say
 [C]Now's the time and there's the [F]alter
 [C]Don't go [G7]home tonight un[C]saved
 {end_of_verse}
+
+
+

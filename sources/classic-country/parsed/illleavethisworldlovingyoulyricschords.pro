@@ -1,5 +1,8 @@
 {meta: title I'll Leave This World Loving You}
 {meta: artist Ricky Van Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file illleavethisworldlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walk away leave [F]with my [C]blessings
@@ -26,3 +29,6 @@ I'll [C]leave this [G7]world loving [C]you
 [G7]If we [C]never meet again this side of [F]heaven
 I'll [C]leave this [G7]world loving [C]you
 {end_of_verse}
+
+
+

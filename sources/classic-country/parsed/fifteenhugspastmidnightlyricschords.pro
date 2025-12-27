@@ -1,6 +1,9 @@
 {meta: title Fifteen Hugs Past Midnight}
 {meta: artist Billy Walker}
 {meta: composer Ray Price and Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file fifteenhugspastmidnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Its fifteen hugs past [D7]midnight [G7]20 kisses till [C]one
@@ -26,3 +29,5 @@ Now [C]don’t you try to hurry to [F]your front door
 [D7]Stay a little longer just for [G7]one kiss more
 Its [C]fifteen hugs past [D7]midnight and [G7]20 kisses till [C]one
 {end_of_verse}
+
+

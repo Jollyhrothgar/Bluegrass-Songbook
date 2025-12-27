@@ -1,6 +1,9 @@
 {meta: title Everybody Makes Mistakes}
 {meta: artist Lacy J. Dalton}
 {meta: composer Billy Sherrill and Lacy J. Dalton}
+{meta: x_source classic-country}
+{meta: x_source_file everybodymakesmistakeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Break [G7]my [D7]heart  hearts get [C][G7]broken
@@ -54,3 +57,9 @@
 [Em]Everybody makes mistakes
 [C]Everybody makes mistakes
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You're Not Alone}
 {meta: artist The Kingsmen}
 {meta: composer Squire Parsons}
+{meta: x_source classic-country}
+{meta: x_source_file yourenotalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When your heart breaks  [C7]from earthly [F]sorrow
@@ -37,3 +40,7 @@ There’s room at the cross for [C]you
 You’re not [C]alone  [F]you’re not [C]alone  [F]you’re not [C]alone
 You’re not alone  [G7]He’s by your [C]side  
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Southern Dixie Flyer}
 {meta: artist Marty Robbins}
 {meta: composer Joe Babcock}
+{meta: x_source classic-country}
+{meta: x_source_file southerndixieflyerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At the station house one day was a lady old and gray
@@ -50,3 +53,9 @@ As the train pulled out of sight and the day became as night
 [C]But then she could say no more as the echo drifted o'er
 [F]Twas the whistle of [C]that Southern [G7]Dixie [C]Flyer
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title True Love Is Greater Than Friendship}
 {meta: artist Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file trueloveisgreaterthanfriendshiplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]True love is [D7]greater than [G]friendship 
@@ -28,3 +31,6 @@ For [A7]that's the only life you've ever [C]know[D7]n
 [C]I love her and [D7]I'll never in my [C]lifetime will I [G]ever
 So [C]I'll just hold to her [D7]love but I'll be [C]gon[G]e
 {end_of_verse}
+
+
+

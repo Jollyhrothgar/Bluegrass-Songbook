@@ -1,6 +1,9 @@
 {meta: title Two Pina Coladas}
 {meta: artist Garth Brooks}
 {meta: composer Shawn Camp, Sandy Mason, Benita Hill}
+{meta: x_source classic-country}
+{meta: x_source_file twopinacoladaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was feeling the blues I was watching the news 
@@ -57,3 +60,10 @@ Let's set sail with Captain Morgan oh and never leave dry [C]land [G7]
 Hey [F]troubles I've forgot ‘em I've [C]buried 'em [C7]in the [F]sand
 So bring me two Pina [C]Coladas she said goodbye to her [G7]good timing [C]man
 {end_of_verse}
+
+
+
+
+
+
+

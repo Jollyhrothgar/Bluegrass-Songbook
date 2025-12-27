@@ -1,6 +1,9 @@
 {meta: title The Girl in the Blue Velvet Band}
 {meta: artist Mac Wiseman}
 {meta: composer Mel Foree and Cliff Carlisle}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlinthebluevelvetbandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One evening while out [G7]for a [C]ramble 
@@ -57,3 +60,10 @@ To [F]live in some far distant [C]land
 I’ll [F]bid farewell to old [C]Frisco
 And the girl in the [G7]blue velvet [C]band 
 {end_of_verse}
+
+
+
+
+
+
+

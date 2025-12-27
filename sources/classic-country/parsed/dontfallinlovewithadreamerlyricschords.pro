@@ -1,6 +1,9 @@
 {meta: title Don't Fall In Love With A Dreamer}
 {meta: artist Kenny Rogers}
 {meta: composer David Ellingson and Kim Carnes}
+{meta: x_source classic-country}
+{meta: x_source_file dontfallinlovewithadreamerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just [D7]look at [Em]you  [G]sitting [C]there
@@ -49,3 +52,8 @@
 {start_of_verse: Verse 5}
 [D7]Before we say [G]goodbye
 {end_of_verse}
+
+
+
+
+

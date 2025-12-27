@@ -1,6 +1,9 @@
 {meta: title Love Fever}
 {meta: artist Mickey Gilley}
 {meta: composer Ray Doggett and Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file lovefeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love fever [D7]love fever [G]you give me [D7]love fever 
@@ -43,3 +46,9 @@ When you hold me when you [G]kiss me
 {start_of_verse: Verse 5}
 Love fever [D7]love fever [G]love fever
 {end_of_verse}
+
+
+
+
+
+

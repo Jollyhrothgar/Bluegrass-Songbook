@@ -1,6 +1,9 @@
 {meta: title All I Need Is You}
 {meta: artist Carl Belew}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file allineedisyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Find the loneliest [F]girl in a [C]thousand
@@ -50,3 +53,9 @@ All I want is [C]you
 To give my lovin' [G7]to
 All I need is [C]you
 {end_of_verse}
+
+
+
+
+
+

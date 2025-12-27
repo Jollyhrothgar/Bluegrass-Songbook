@@ -1,6 +1,9 @@
 {meta: title Call On God}
 {meta: artist Melba Montgomery}
 {meta: composer Melba Montgomery and Carl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file callonGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you fall by the wayside of [C]life's long road
@@ -30,3 +33,6 @@ From His kingdom He watches and [A7]hears when you [D7]pray
 Walk the [G]straight and the narrow put [C]Satan behind
 Call on God for His [G]guidance and to [D7]Heaven you'll [G]find
 {end_of_verse}
+
+
+

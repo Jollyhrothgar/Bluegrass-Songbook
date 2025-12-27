@@ -1,6 +1,9 @@
 {meta: title Tacoma}
 {meta: artist Garth Brooks}
 {meta: composer Bob DiPiero and Caitlyn Smith}
+{meta: x_source classic-country}
+{meta: x_source_file tacomalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm leaving  words fall [G7]out of my mouth and onto the floor
@@ -48,3 +51,8 @@ Might [F]make it to [C]Memphis the Kansas City [G7]line[E7]
 All the way to [F]Tacoma by [G7]then I hope you're out of my [Am]mind[D7]
 All the way to [F]Tacoma by [G7]then I hope you're out of my [C]mind
 {end_of_verse}
+
+
+
+
+

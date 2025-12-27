@@ -1,6 +1,9 @@
 {meta: title It's The Natural Thing To Do}
 {meta: artist Larry Sparks}
 {meta: composer Pete Goble and Leroy Drumm}
+{meta: x_source classic-country}
+{meta: x_source_file itsthenaturalthingtodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Go on and tell me [G7]you don't love me [C]anymore
@@ -35,3 +38,7 @@
 {start_of_verse: Verse 4}
 [C]Because I [G]love you and it's the [D7]natural thing to [G]do
 {end_of_verse}
+
+
+
+

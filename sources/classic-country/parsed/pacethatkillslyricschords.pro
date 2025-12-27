@@ -1,6 +1,9 @@
 {meta: title Pace That Kills}
 {meta: artist Kitty Wells}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file pacethatkillslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Too many parties and too much [D7]drinking
@@ -22,3 +25,5 @@
 [C]You're always searching for a bigger thrill
 [G]And honey I could [D7]never stand the pace that [G]kills
 {end_of_verse}
+
+

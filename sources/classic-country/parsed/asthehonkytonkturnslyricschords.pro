@@ -1,6 +1,9 @@
 {meta: title As The Honky Tonk Turns}
 {meta: artist Mark Chesnutt}
 {meta: composer Roger Springer, Tommy Nixon, Mark Chesnutt}
+{meta: x_source classic-country}
+{meta: x_source_file asthehonkytonkturnslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As the honky tonk turns [G7]and the world [C]goes [G7]round
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [G7]It's just a typical evening as the honky tonk [C]turns
 {end_of_verse}
+
+
+
+
+

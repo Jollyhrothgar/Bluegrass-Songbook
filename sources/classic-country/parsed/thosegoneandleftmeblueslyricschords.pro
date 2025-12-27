@@ -1,6 +1,9 @@
 {meta: title Those Gone And Left Me Blues}
 {meta: artist Cowboy Copas}
 {meta: composer Johnny Bond and Jimmy Wakely}
+{meta: x_source classic-country}
+{meta: x_source_file thosegoneandleftmeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My weary heart for you is [C]crying
@@ -36,3 +39,7 @@ My [D7]heart would never take the [G]news
 I need you now and want you [C]near me
 I've [D7]got those gone and left me [G]blues
 {end_of_verse}
+
+
+
+

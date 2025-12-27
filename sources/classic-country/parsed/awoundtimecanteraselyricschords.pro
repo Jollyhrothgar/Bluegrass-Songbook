@@ -1,6 +1,9 @@
 {meta: title A Wound Time Can't Erase}
 {meta: artist Stonewall Jackson}
 {meta: composer Bill D. Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file awoundtimecanteraselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you found since you turned me [D7]down
@@ -27,3 +30,6 @@ What you gained I guess I'll never [G]see
 {start_of_verse: Verse 4}
 Repeat Chorus
 {end_of_verse}
+
+
+

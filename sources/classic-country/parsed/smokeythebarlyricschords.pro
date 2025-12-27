@@ -1,5 +1,8 @@
 {meta: title Smokey The Bar}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file smokeythebarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Smokey the bar lights dimly [F]low
@@ -32,3 +35,7 @@ Don’t tell them that you’re [G7]crying just say Smokey the [C]bar
 {start_of_verse: Verse 5}
 Repeat last verse
 {end_of_verse}
+
+
+
+

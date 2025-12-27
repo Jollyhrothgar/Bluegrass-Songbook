@@ -1,6 +1,9 @@
 {meta: title Till I’m Too Old To Die Young}
 {meta: artist Moe Bandy}
 {meta: composer Kevin Stephen Welch, John R. Hadley, Scott Dooley}
+{meta: x_source classic-country}
+{meta: x_source_file tillimtoooldtodieyounglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If life is like a candle bright
@@ -43,3 +46,8 @@ To see what they [G7]become
 Oh [C]Lord don't let that cold wind [F]blow
 'Till I'm [C]too old to [G7]die [C]young
 {end_of_verse}
+
+
+
+
+

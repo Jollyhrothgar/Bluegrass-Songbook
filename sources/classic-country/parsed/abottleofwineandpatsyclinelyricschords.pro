@@ -1,6 +1,9 @@
 {meta: title A Bottle Of Wine And Patsy Cline}
 {meta: artist Marsha Thornton}
 {meta: composer Melinda Anne Gravelle and Tommy Rocco}
+{meta: x_source classic-country}
+{meta: x_source_file abottleofwineandpatsyclinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A bottle of [G7]wine and [C]Patsy Cline and [F]every thing's all [Dm]right
@@ -30,3 +33,6 @@ A [G7]bottle of [D7]wine and [G7]Patsy [F]Cline and [D7]I get [G7]by a[C]gain
 {start_of_verse: Verse 3}
 A [G7]bottle of [D7]wine and [G7]Patsy [F]Cline and [D7]I get [G7]by a[C]gain
 {end_of_verse}
+
+
+

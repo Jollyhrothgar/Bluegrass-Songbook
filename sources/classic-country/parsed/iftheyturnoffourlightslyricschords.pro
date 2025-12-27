@@ -1,6 +1,9 @@
 {meta: title If They Turn Off Our Lights}
 {meta: artist Ricky Van Shelton}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file iftheyturnoffourlightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night [Em]I lay [C]tossing [Dm]in the [Em]bed
@@ -38,3 +41,7 @@ If [Dm]they turn [F]off our [G7]lights we'll [Em]kiss in the [A7]dark
 [Dm]One thing they can't [G7]do they can't [Fm]take us 
 [G7]Away from each [C]other
 {end_of_verse}
+
+
+
+

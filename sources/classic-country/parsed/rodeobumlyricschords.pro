@@ -1,6 +1,9 @@
 {meta: title Rodeo Bum}
 {meta: artist Mel Street}
 {meta: composer Dick Heard and Sammy Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file rodeobumlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some call it living 
@@ -59,3 +62,10 @@ You ol rodeo [C]bum[G7]   [C]
 It's a [G7]long dusty [Dm]road
 [G7]But your day is bound to [C]come
 {end_of_verse}
+
+
+
+
+
+
+

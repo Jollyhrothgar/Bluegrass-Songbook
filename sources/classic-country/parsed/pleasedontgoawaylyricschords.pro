@@ -1,6 +1,9 @@
 {meta: title Please Don't Go Away}
 {meta: artist Johnny Tillotson}
 {meta: composer Johnny Tillotson and Lucille Cosenza}
+{meta: x_source classic-country}
+{meta: x_source_file pleasedontgoawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Please don't go [C]away [F]let me [G7]hold you in my [C]arms
@@ -26,3 +29,5 @@ If only you would [F]care say you'll care little girl
 Please tell me that you'll [G7]stay
 [F]Please don't go [C]away  [F]please don't go [C]away
 {end_of_verse}
+
+

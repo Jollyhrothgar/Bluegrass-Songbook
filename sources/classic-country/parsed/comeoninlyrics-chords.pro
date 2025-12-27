@@ -1,6 +1,9 @@
 {meta: title Come On In}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Rick Giles and George Green}
+{meta: x_source classic-country}
+{meta: x_source_file comeoninlyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I get tired and a little lonely 
@@ -85,3 +88,14 @@ Come on [C]in baby take a [G]load off
 Come on in baby shake the blues off 
 I'm gonna love that frown [D7]away 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

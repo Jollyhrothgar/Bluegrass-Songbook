@@ -1,6 +1,9 @@
 {meta: title I'm Lonely And Blue}
 {meta: artist Lefty Frizzell}
 {meta: composer Jimmie Rodgers and Elsie McWilliams}
+{meta: x_source classic-country}
+{meta: x_source_file imlonelyandbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm lonely and blue and downhearted [F]too
@@ -29,3 +32,6 @@ That you and I would never [C]part
 You broken your vow and left but [F]now
 I [G7]pray that somehow you'll return [C]sweetheart
 {end_of_verse}
+
+
+

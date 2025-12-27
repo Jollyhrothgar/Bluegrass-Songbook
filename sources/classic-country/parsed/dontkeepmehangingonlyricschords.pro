@@ -1,6 +1,9 @@
 {meta: title Don't Keep Me Hanging On}
 {meta: artist Sonny James}
 {meta: composer Carole Smith and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file dontkeepmehangingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't keep me hanging [C]on 
@@ -36,3 +39,7 @@ Don't keep me hanging [C]on
 If your love is through if your love is [C]gone 
 [D7]Don't keep me hangin' [G]on 
 {end_of_verse}
+
+
+
+

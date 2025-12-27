@@ -1,6 +1,9 @@
 {meta: title Jingle Bell Rock}
 {meta: artist Brenda Lee}
 {meta: composer Joe Beal and Jim Boothe}
+{meta: x_source classic-country}
+{meta: x_source_file jinglebellrocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jingle-bell jingle-bell jingle-bell rock
@@ -29,3 +32,6 @@
 [Am]Mix and mingle in a jingling [C]beat
 [A7]That's the [D7]jingle-bell [G]rock
 {end_of_verse}
+
+
+

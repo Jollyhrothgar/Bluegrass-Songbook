@@ -1,6 +1,9 @@
 {meta: title Is The Magic Still There}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Teddy Gentry, Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file isthemagicstilltherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Is the magic still [C]there  whenever I hold [Dm]you
@@ -52,3 +55,8 @@ I just need to [G7]know is the magic still [Dm][C]there
 Is the magic [G7]still [C]there         
 Is the [G7]magic still [C]there
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Silver Haired Daddy Of Mine}
 {meta: artist Gene Autry}
 {meta: composer Jimmy Long and Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file silverhaireddaddyofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a vine covered [G7]shack in the [C]mountains
@@ -36,3 +39,7 @@ Dear old [F]daddy I caused you to [C]bear
 If [G7]I could erase those [C]lines from your face
 And [D7]bring back the gold to your [G7]hair
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title At Calvary}
 {meta: artist Doyle Lawson}
 {meta: composer William R. Newell}
+{meta: x_source classic-country}
+{meta: x_source_file atcalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Years I’ve spent in vanity and pride
@@ -55,3 +58,10 @@ At [D7]Cal-va-[G]ry
 [C]There my burdened soul found [G]liberty
 At [D7]Cal-va-[G]ry
 {end_of_verse}
+
+
+
+
+
+
+

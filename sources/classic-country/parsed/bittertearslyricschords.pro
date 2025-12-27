@@ -1,6 +1,9 @@
 {meta: title Bitter Tears}
 {meta: artist Jean Shepard}
 {meta: composer Jimmy Hall}
+{meta: x_source classic-country}
+{meta: x_source_file bittertearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh darling how I wish [F]that we could start all [C]over
@@ -22,3 +25,5 @@
 [C]And oh how I remember the [F]day we had to [C]part
 [G7]And so these bitter tears are flowing from a broken [C]heart
 {end_of_verse}
+
+

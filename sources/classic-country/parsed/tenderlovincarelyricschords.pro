@@ -1,6 +1,9 @@
 {meta: title Tender Lovin' Care}
 {meta: artist George Morgan}
 {meta: composer George Morgan and Curt Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file tenderlovincarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Get your favorite photo and send it to [F]me
@@ -29,3 +32,6 @@
 [C]Send along a memory of the happiness we [F]shared
 [G7]And when it comes I'll treat it with tender lovin' [C]care
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Saw Mommy Kissing Santa Claus}
 {meta: artist Brenda Lee}
 {meta: composer Tommie Connor}
+{meta: x_source classic-country}
+{meta: x_source_file isawmommykissingsantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw [Em]mommy kissing [Bm]Santa [Em]Claus
@@ -20,3 +23,5 @@
 {start_of_verse: Verse 3}
 repeat
 {end_of_verse}
+
+

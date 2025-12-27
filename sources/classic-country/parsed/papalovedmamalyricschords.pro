@@ -1,6 +1,9 @@
 {meta: title Papa Loved Mama}
 {meta: artist Garth Brooks}
 {meta: composer Kim Williams and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file papalovedmamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Papa drove a truck nearly all of his life
@@ -50,3 +53,9 @@ He never hit the brakes and he [G7]was shifting [C]gears
 [F]Papa loved mama mama loved men 
 Mama's in the graveyard [G7]papa's in the [C]pen
 {end_of_verse}
+
+
+
+
+
+

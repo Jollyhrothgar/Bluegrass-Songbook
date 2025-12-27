@@ -1,6 +1,9 @@
 {meta: title Oh How I Cried}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file ohhowicriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blind I could not see oh what a fool a [C7]fool you made of me
@@ -25,3 +28,5 @@ Oh how I [F]cried I almost [C]died [G7]I lost my [C]pride
 Just like rain oh [C7]rain don’t you know
 Oh how I [F]cried I almost [C]died [G7]I lost my [C]pride
 {end_of_verse}
+
+

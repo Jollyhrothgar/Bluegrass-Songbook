@@ -1,5 +1,8 @@
 {meta: title Don't You Believe}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file dontyoubelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't you believe [F]I've tried long [G7]enough
@@ -28,3 +31,6 @@ All I do is follow [F]you
 Your sweet love is all I [F]need
 [G7]And I think you've known it all the [C]time
 {end_of_verse}
+
+
+

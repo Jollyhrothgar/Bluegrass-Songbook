@@ -1,5 +1,8 @@
 {meta: title So Saith He The Lord}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file sosaithhethelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey there Gabriel get your horn and ready it up for blowin’
@@ -28,3 +31,6 @@ I'll put fire in every field and gather [G7]up me [C]children
 So saith He the Lord [F]so saith [C]He the Lord [F]so saith [C]He the Lord 
 And you [G7]better pay [C]h-e[A#7]-e-e[C]-e[A#7]-e-e-[C]d 
 {end_of_verse}
+
+
+

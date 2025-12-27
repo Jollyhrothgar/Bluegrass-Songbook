@@ -1,6 +1,9 @@
 {meta: title Big Man}
 {meta: artist Charlie Rich}
 {meta: composer Dale Fox}
+{meta: x_source classic-country}
+{meta: x_source_file bigmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I went wanderin' way down
@@ -49,3 +52,8 @@ Well then He [G]reached down and got me
 [C]From this well of [G]sin
 I said Big Man [D7]get a hold of [G]me
 {end_of_verse}
+
+
+
+
+

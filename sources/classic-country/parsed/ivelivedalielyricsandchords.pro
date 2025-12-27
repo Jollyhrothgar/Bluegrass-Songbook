@@ -1,5 +1,8 @@
 {meta: title I've Lived A Lie}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file ivelivedalielyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The time has come for me to [F]tell [C]you
@@ -35,3 +38,7 @@
 [C7]I can't go and still deceive [F]you
 [C]I've lived [G7]a lie  I've been [C]untrue
 {end_of_verse}
+
+
+
+

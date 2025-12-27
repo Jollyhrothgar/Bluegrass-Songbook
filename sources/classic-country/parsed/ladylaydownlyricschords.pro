@@ -1,6 +1,9 @@
 {meta: title Lady Lay Down}
 {meta: artist John Conlee}
 {meta: composer Rafe Vanhoy and Don Cook [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file ladylaydownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Too many times I [Em]didn't try to hold [F]you 
@@ -22,3 +25,5 @@ You [Dm]gave me love and [C]learned to live without [G7]it
 [Am]Now that you've [A7]turned to [Dm]go 
 Let me beg you to [C]stay the [F]best way [C]I [C][F]know
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title I'll Let My Heart Break For A Little While}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file illletmyheartbreakforalittlewhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I'll [G]let my heart [B7]break for a [C]little while
@@ -28,3 +31,6 @@ I [G]know that it's [Em]wrong I [Am]shouldn't make you [D7]blue
 But I'll [G]let my heart [B7]break for a [C]little while
 Then I'll [G]go my [D7]way and [G]forget [D7]about [G]you
 {end_of_verse}
+
+
+

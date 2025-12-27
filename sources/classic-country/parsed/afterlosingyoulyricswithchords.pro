@@ -1,5 +1,8 @@
 {meta: title After Losing You}
 {meta: artist Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file afterlosingyoulyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Word is out that [G7]you started [C]over
@@ -32,3 +35,7 @@ Too late I [C]learned [G7]after losing [C]you
 {start_of_verse: Verse 4}
 [F]Too late I [C]learned [G7]after losing [C]you
 {end_of_verse}
+
+
+
+

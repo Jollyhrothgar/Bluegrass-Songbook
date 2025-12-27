@@ -1,6 +1,9 @@
 {meta: title Rock And A Soft Place}
 {meta: artist Tracy Lawrence}
 {meta: composer Cleo Anderson, Rick Huckaby, Michael Brown}
+{meta: x_source classic-country}
+{meta: x_source_file rockandasoftplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her Mercedes Benz is parked right outside
@@ -47,3 +50,8 @@ Or [E7]leave it where it [F]lays
 Looks like she's [Dm]caught between a [G7]rock and a soft [C]place
 Whoa whoa  [G7]rock and a soft [C]place
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Dreamed of an Old Love Affair}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Davis, Bonnie Dodd, Charles Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file idreamedofanoldloveaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just like old times you were here last [G7]night
@@ -29,3 +32,6 @@ And said that we'd make a new [C]start
 [C]Sunlight told me you were gone and that [G7]I
 Had dreamed of an old love [C]affair
 {end_of_verse}
+
+
+

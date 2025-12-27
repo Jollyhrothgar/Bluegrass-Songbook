@@ -1,6 +1,9 @@
 {meta: title I'm A Fool}
 {meta: artist Billy Walker}
 {meta: composer Tommy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file imafoollyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fool I'm a [F]fool 
@@ -38,3 +41,7 @@ They [G7]say there's one born every [C]day
 Fool I'm a [F]fool 
 [G7]Why must I love you this [C]way
 {end_of_verse}
+
+
+
+

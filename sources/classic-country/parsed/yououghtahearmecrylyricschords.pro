@@ -1,6 +1,9 @@
 {meta: title You Oughta Hear Me Cry}
 {meta: artist Carl Smith}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file yououghtahearmecrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you think I laugh louder
@@ -28,3 +31,5 @@ Then I sit down in the [G]corner
 And I [C]turn on the [G]tears
 You oughta [D7]hear me [G]cry
 {end_of_verse}
+
+

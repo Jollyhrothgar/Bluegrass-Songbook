@@ -1,6 +1,9 @@
 {meta: title Ain't Nobody Gonna Miss Me When I'm Gone}
 {meta: artist George Jones}
 {meta: composer George Glenn Jones and Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file aintnobodygonnamissmewhenimgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I remember back in my younger [C]days of high [G]school
@@ -53,3 +56,9 @@
 {start_of_verse: Verse 5}
 [C]There ain't nobody gonna miss me when I'm [G]gone
 {end_of_verse}
+
+
+
+
+
+

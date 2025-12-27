@@ -1,5 +1,8 @@
 {meta: title Now That I Have You}
 {meta: artist Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file nowthatihaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]These were the days when [Am]you walked my way
@@ -30,3 +33,7 @@ You used to talk sweet [Am]talk to me
 {start_of_verse: Verse 4}
 Now that I have [Am]you  [C]now that [Am]I have [C]you
 {end_of_verse}
+
+
+
+

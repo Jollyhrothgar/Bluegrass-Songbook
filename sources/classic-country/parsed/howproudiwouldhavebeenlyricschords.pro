@@ -1,6 +1,9 @@
 {meta: title How Proud I Would Have Been}
 {meta: artist George Jones}
 {meta: composer Joe Poovey}
+{meta: x_source classic-country}
+{meta: x_source_file howproudiwouldhavebeenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How proud I would have been to share your [C]life of sin
@@ -29,3 +32,6 @@ For [C]one like you I'd play a sinners [D7]part so well
 I'd [G]stoop to any length to gain your [C]love it seems
 I'd like to [D7]try again how proud I would have [G]been
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Don't Wanna Tell You}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file idontwannatellyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't wanna tell you 
@@ -57,3 +60,10 @@ My [F]conscience weighin' on my [C]mind[Am]
 [F]I don't wanna [G7]tell you 
 There’s [Dm]just no other [G7]way that I can [C]find
 {end_of_verse}
+
+
+
+
+
+
+

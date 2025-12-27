@@ -1,5 +1,8 @@
 {meta: title Heartbreak Mountain}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakmountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm going up on Heartbreak Mountain
@@ -49,3 +52,9 @@ Now why does a man let a woman
 [C]I'm going up on Heartbreak [G]Mountain
 [D7]Because I've lost my will to [G]live
 {end_of_verse}
+
+
+
+
+
+

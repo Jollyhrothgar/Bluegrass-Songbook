@@ -1,6 +1,9 @@
 {meta: title Christmas Clock}
 {meta: artist Del Reeves}
 {meta: composer Clarence Selman and Dean Manuel}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasclocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tick tock [Am]Christmas [C]clock
@@ -57,3 +60,10 @@ Tick[A7]ing the [D7]minutes [G7]away
 [C]Tick tock [Am]Christmas [G7]clock
 While you know it's Christmas [C]day
 {end_of_verse}
+
+
+
+
+
+
+

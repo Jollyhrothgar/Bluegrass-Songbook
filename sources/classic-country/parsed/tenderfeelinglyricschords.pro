@@ -1,6 +1,9 @@
 {meta: title Tender Feeling}
 {meta: artist Elvis Presley}
 {meta: composer Bill Giant, Bernie Baum, Florenece Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file tenderfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't conceal  [Am]a tender [C]feeling 
@@ -27,3 +30,6 @@ I loved [F]you right from the [Em]start
 And [Am]with each kiss I'll [Em]keep re[F]vealing 
 The [Am]ten-d[Em]er [F]feeling [G7]in my [C]heart
 {end_of_verse}
+
+
+

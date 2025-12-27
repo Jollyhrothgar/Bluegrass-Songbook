@@ -1,6 +1,9 @@
 {meta: title Beyond Those Years}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Eddie Setser and Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file beyondthoseyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Full moons and empty promises
@@ -57,3 +60,10 @@ Be[G]yond those years
 And that [Am]love would find its way
 Through [C]all those tears [G]beyond those [D7]years
 {end_of_verse}
+
+
+
+
+
+
+

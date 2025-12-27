@@ -1,6 +1,9 @@
 {meta: title Little Old Log Cabin In The Lane}
 {meta: artist Jim and Jesse}
 {meta: composer Will S. Hays}
+{meta: x_source classic-country}
+{meta: x_source_file littleoldlogcabininthelanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm getting old and feeble and I [C]cannot find my [G]way  
@@ -43,3 +46,8 @@ Letting in the sunshine and the [D7]rain
 And the [G]only friend I have now is that [C]good old dog of [G]mine
 And my little old log [D7]cabin in the [G]lane
 {end_of_verse}
+
+
+
+
+

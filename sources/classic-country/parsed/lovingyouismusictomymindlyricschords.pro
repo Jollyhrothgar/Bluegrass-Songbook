@@ -1,6 +1,9 @@
 {meta: title Loving You Is Music To My Mind}
 {meta: artist Vern Gosdin}
 {meta: composer Vernon L. Reed &amp; Rex Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file lovingyouismusictomymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the words have all been said
@@ -42,3 +45,8 @@ To lay [F]beside satis[G]fied
 {start_of_verse: Verse 5}
 [C]Yes loving you is [D7]music to my [G]mind
 {end_of_verse}
+
+
+
+
+

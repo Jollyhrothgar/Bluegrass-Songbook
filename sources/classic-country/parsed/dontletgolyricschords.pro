@@ -1,6 +1,9 @@
 {meta: title Don't Let Go}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jesse Stone}
+{meta: x_source classic-country}
+{meta: x_source_file dontletgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hear that whistle it's ten o'clock 
@@ -61,3 +64,11 @@ You've been keeping your [G7]lips from [C]mine
 {start_of_verse: Verse 6}
 Hold me tight and [G7]don't let [C]go 
 {end_of_verse}
+
+
+
+
+
+
+
+

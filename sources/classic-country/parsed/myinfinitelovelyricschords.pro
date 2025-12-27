@@ -1,6 +1,9 @@
 {meta: title My Infinite Love}
 {meta: artist George Strait}
 {meta: composer Annette Grossberg, Billy Wayne Yates, Byron Hill}
+{meta: x_source classic-country}
+{meta: x_source_file myinfinitelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you [G7]see a [D7]shooting [C]star [D7]in the [G7]night [D7]    [C]
@@ -39,3 +42,8 @@ It will live [G7]o--[D7]---[C]n long after we [G7]kiss good[D7]bye [C]
 {start_of_verse: Verse 5}
 My [D7]infinite [C]love my infinite [G7]love
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Family Tree}
 {meta: artist Keith Whitley}
 {meta: composer F. Dycus and Max Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file familytreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Papa lays [F]in a county [C]rest home
@@ -30,3 +33,6 @@ Yes the [F]leaves are slowly [C]falling
 And the last one [G7]to fall is [C]me
 Repeat last verse
 {end_of_verse}
+
+
+

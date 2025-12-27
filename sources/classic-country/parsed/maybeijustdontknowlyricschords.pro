@@ -1,5 +1,8 @@
 {meta: title Maybe I Just Don't Know}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file maybeijustdontknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You came to me [F]like a dove on the [C]wind
@@ -34,3 +37,6 @@ Maybe I [G7]should know better[C]
 Sometimes which [G7]way to go [F]
 Maybe [G7]I just don't [C]know
 {end_of_verse}
+
+
+

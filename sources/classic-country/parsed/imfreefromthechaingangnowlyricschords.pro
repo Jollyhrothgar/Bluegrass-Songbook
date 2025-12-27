@@ -1,6 +1,9 @@
 {meta: title I'm Free From The Chain Gang Now}
 {meta: artist JImmy Rodgers}
 {meta: composer Lou Herscher}
+{meta: x_source classic-country}
+{meta: x_source_file imfreefromthechaingangnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got rid of the [F]shackles that [C]bound me
@@ -41,3 +44,7 @@ And I'll [C]dry all the [F]tears
 That's been [C]shedding for [F]years
 Cause I'm [C]free from the [G7]chain gang [C]now
 {end_of_verse}
+
+
+
+

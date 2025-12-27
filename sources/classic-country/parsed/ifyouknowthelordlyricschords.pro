@@ -1,6 +1,9 @@
 {meta: title If You Know The Lord}
 {meta: artist The King's Heralds}
 {meta: composer Bickley Reichner}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouknowthelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]If you know the [G]Lord[Am]   [G]
@@ -28,3 +31,6 @@ You need nobody else
 To see the Light
 God's wonderful Light
 {end_of_verse}
+
+
+

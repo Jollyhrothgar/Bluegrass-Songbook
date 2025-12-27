@@ -1,6 +1,9 @@
 {meta: title Leaving on Your Mind}
 {meta: artist Patsy Cline}
 {meta: composer Wayne Walker &amp; Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file leavingonyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you've got leavin' on your [F]mind
@@ -29,3 +32,6 @@
 [Am]Hurt me now get it over
 [G7]If there's a new love in your [C]heart
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Can't You Hear Me Calling}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file cantyouhearmecallinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the days are dark and the nights are lonely
@@ -29,3 +32,6 @@ Sweetheart of mine can't you hear me calling
 [C]I mistreated you Lord and I'm [G]sorry
 [D7]Come back to me is my [G]request
 {end_of_verse}
+
+
+

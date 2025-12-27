@@ -1,6 +1,9 @@
 {meta: title Go Woman Go}
 {meta: artist Conway Twitty}
 {meta: composer Mickey Jaco}
+{meta: x_source classic-country}
+{meta: x_source_file gowomangolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Go [A#7]woman [C]go go [A]woman [C]go
@@ -30,3 +33,7 @@ But not this time I've set your free to [G7]go woman [C]go
 {start_of_verse: Verse 5}
 [A#7]Woman [C]go  [A#7]woman [C]go  [A#7]woman [C]go
 {end_of_verse}
+
+
+
+

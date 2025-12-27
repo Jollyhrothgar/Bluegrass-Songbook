@@ -1,6 +1,9 @@
 {meta: title Mental Revenge}
 {meta: artist Waylon Jennings}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file mentalrevengelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hope that the friend you've thrown yourself with
@@ -39,3 +42,8 @@ Lord I [F]hope that it [C]falls on [G]you
 I will have [C]sweet sweet sweet [G]mental revenge
 I will have [C]sweet sweet sweet mental re[D7]venge
 {end_of_verse}
+
+
+
+
+

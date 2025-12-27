@@ -1,6 +1,9 @@
 {meta: title You Can't Break The Chains Of Love}
 {meta: artist Jean Shepard}
 {meta: composer Jimmy Wakely, Lew Porter, Franklin Tableporter}
+{meta: x_source classic-country}
+{meta: x_source_file youcantbreakthechainsoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though we're apart you'll [F]always have my [C]heart
@@ -22,3 +25,5 @@
 [C]I'll be your slave till I [F]am in my [C]grave
 [G7]You can't break the chains of [C]love
 {end_of_verse}
+
+

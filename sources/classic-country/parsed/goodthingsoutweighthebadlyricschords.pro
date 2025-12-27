@@ -1,6 +1,9 @@
 {meta: title Good Things Outweigh The Bad}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Josh Graves and Jake Lambert}
+{meta: x_source classic-country}
+{meta: x_source_file goodthingsoutweighthebadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been sitting here thinking  [C]back over my [G]life
@@ -43,3 +46,8 @@
 [G]And that's when I realize all the bad luck I've [C]had
 [G]And I know all the good [D7]things  outweigh the [G]bad
 {end_of_verse}
+
+
+
+
+

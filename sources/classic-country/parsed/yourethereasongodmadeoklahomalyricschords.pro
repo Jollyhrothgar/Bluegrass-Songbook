@@ -1,6 +1,9 @@
 {meta: title You're The Reason God Made Oklahoma}
 {meta: artist David Frizzell & Shelly West}
 {meta: composer Sandy Pinkard, Larry Collins, Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file yourethereasongodmadeoklahomalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a full moon [F]over [C]Tulsa 
@@ -73,3 +76,14 @@ You're the reason God made [C][F]Oklahoma
 And I'm sure [G7]missing [C]you 
 I'm sure [G7]missing [C]you 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Window Number Five}
 {meta: artist Johnny Duncan}
 {meta: composer Charlie Craig}
+{meta: x_source classic-country}
+{meta: x_source_file windownumberfivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a building I pass by in window number five
@@ -47,3 +50,8 @@ I can't [G]give her my name and I [Em]feel so ashamed
 [C]And a little girl at home just [G]like the one [Em]alone
 That's [Am]crying in [D7]window number [G]five
 {end_of_verse}
+
+
+
+
+

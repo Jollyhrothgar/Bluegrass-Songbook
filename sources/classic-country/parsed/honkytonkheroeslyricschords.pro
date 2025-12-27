@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Heroes}
 {meta: artist Waylon Jennings}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkheroeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Low down leaving sun done
@@ -36,3 +39,7 @@ It seems like it was just the other [F]day
 [C]I was down at Green Gables [A7]hawking them tables
 And [D7]generally blowing all my hard [G7]earned pay
 {end_of_verse}
+
+
+
+

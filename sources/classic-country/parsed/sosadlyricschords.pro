@@ -1,6 +1,9 @@
 {meta: title So Sad}
 {meta: artist The Everly Brothers}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file sosadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We used to [F]have good times to[Dm]gether[G7]
@@ -27,3 +30,6 @@
 [C]It breaks my [F]heart [C]to see us [Am]part
 [C]So sad to [F]watch good [G7]love go [C]bad
 {end_of_verse}
+
+
+

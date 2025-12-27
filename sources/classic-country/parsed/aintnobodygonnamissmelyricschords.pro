@@ -1,6 +1,9 @@
 {meta: title Ain’t Nobody Gonna Miss Me}
 {meta: artist Jimmy Martin}
 {meta: composer Harry McAuliffe and Jake Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file aintnobodygonnamissmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There ain't nobody gonna miss me when I'm [C]gone
@@ -57,3 +60,10 @@ There [G]ain't nobody gonna mourn for me too [D7]long
 Won't you [G]write these words upon my [C]headstone
 There [G]ain't nobody gonna [D7]miss me when I'm [G]gone
 {end_of_verse}
+
+
+
+
+
+
+

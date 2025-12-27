@@ -1,6 +1,9 @@
 {meta: title Happy Happy Birthday Baby}
 {meta: artist Ronnie Milsap}
 {meta: composer Gilbert J. Lopez and Margo Sylvia}
+{meta: x_source classic-country}
+{meta: x_source_file happyhappybirthdaybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Happy Happy Birthday Baby although you're with somebody [D7]new
@@ -35,3 +38,8 @@ You were my [D7]pretty I was your baby [G7]how could we [F]say good[G7]bye
 [G7]So I'll close this note to [Dm]you with good luck and wishes [G7]too
 Happy Happy Birthday [C]Baby [F]   [C]
 {end_of_verse}
+
+
+
+
+

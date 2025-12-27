@@ -1,6 +1,9 @@
 {meta: title You've Still Got A Place In My Heart}
 {meta: artist Merle Haggard}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file youvestillgotaplaceinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If the one you'd think is true 
@@ -30,3 +33,7 @@ Baby you've [C]still got a [G7]place in my [C]heart
 {start_of_verse: Verse 5}
 Repeat last verse
 {end_of_verse}
+
+
+
+

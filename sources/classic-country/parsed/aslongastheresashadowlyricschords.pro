@@ -1,5 +1,8 @@
 {meta: title As Long As There's A Shadow}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file aslongastheresashadowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As long as there's a hill there's a [D7]valley
@@ -33,3 +36,7 @@ And the lonely breeze that blows
 As [C]long as there's a sun there's a [D7]shadow
 As [G7]long as there's a shadow there's a place for you and [C]me
 {end_of_verse}
+
+
+
+

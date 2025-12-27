@@ -1,6 +1,9 @@
 {meta: title This Orchid Means Goodbye}
 {meta: artist Carl Smith}
 {meta: composer B Bryant and M Webb}
+{meta: x_source classic-country}
+{meta: x_source_file thisorchidmeansgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I send [G7]an [C]orchid
@@ -43,3 +46,8 @@ As time goes passing [F]by
 Cause we can't ever love [C]again
 This [G7]orchid means [C]goodbye
 {end_of_verse}
+
+
+
+
+

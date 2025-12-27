@@ -1,5 +1,8 @@
 {meta: title If I Could Be Him}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldbehimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're all friends [F]you and [C]I [G7]me and [C]him
@@ -30,3 +33,6 @@ But someone I called a friend stands in the [G7]way
 I'd give [C]every[F]thing I [C]own for one hour [F]with you [C]alone
 Or if [F]I could just be [C]him [G7]for just one [C]day
 {end_of_verse}
+
+
+

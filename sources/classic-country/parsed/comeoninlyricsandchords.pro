@@ -1,6 +1,9 @@
 {meta: title Come On In}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file comeoninlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you’re here cause you love me and not just [F]because
@@ -29,3 +32,6 @@ It’s the [F]worst kind of hell since we’re living [C]apart
 If you'll come back for ever please [C7]don't break my [F]heart
 Come on [C]in  [G7]come on [C]in 
 {end_of_verse}
+
+
+

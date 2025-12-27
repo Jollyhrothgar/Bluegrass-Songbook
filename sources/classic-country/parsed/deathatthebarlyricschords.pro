@@ -1,5 +1,8 @@
 {meta: title Death At The Bar}
 {meta: artist Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file deathatthebarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Listen drunkards to the story I [C]tell
@@ -42,3 +45,8 @@
 [C]If down the whiskey road you travel to [G]far
 [D7]Drunkards you’ll meet death at the [G]bar
 {end_of_verse}
+
+
+
+
+

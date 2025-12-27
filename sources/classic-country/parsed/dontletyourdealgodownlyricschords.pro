@@ -1,6 +1,9 @@
 {meta: title Don't Let Your Deal Go Down}
 {meta: artist Lester Flatt and Earl Scruggs}
 {meta: composer Gladys Stacey, Louise Certain,}
+{meta: x_source classic-country}
+{meta: x_source_file dontletyourdealgodownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [A7]Oh I've been all around this [D7]whole wide world
@@ -41,3 +44,8 @@ If [A7]these doggone blues don't [D7]leave my mind
 [A7]Don't let your deal go [D7]down
 [G7]Till your last gold dollar is [C]gone
 {end_of_verse}
+
+
+
+
+

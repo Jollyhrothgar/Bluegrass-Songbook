@@ -1,6 +1,9 @@
 {meta: title God Can}
 {meta: artist Doyle Lawson}
 {meta: composer Randy Swift}
+{meta: x_source classic-country}
+{meta: x_source_file Godcanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who can take the beggar man off the streets 
@@ -40,3 +43,7 @@ I know my [Em]God can take away [Bm]all your pain
 [Em]Yesterday [G]today forever the [C]same
 [G]All you gotta do is just [D7]call His [G]name
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Corner Of Despair}
 {meta: artist Jean Shepard}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file cornerofdespairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We were both two lonely [C]people
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [D7]From the corner of [G]despair
 {end_of_verse}
+
+
+

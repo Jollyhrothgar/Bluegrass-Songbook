@@ -1,6 +1,9 @@
 {meta: title If I Didn't Have A Heart}
 {meta: artist Tammy Wynette}
 {meta: composer Jerry Taylor, Dennis Knutson, Linda Grundy}
+{meta: x_source classic-country}
+{meta: x_source_file ifididnthaveaheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I could stand out in the rain
@@ -45,3 +48,7 @@ It would [C]all be so easy [D7]if I didn't have a [G]heart
 {start_of_verse: Verse 4}
 It would [C]all be so easy [D7]if I didn't have a [G]heart
 {end_of_verse}
+
+
+
+

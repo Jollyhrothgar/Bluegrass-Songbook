@@ -1,6 +1,9 @@
 {meta: title Don't Let That Happen To Us}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file dontletthathappentouslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm so happy we're still happy and together
@@ -37,3 +40,7 @@ Darlin' [C]let's don't [G7]let that happen to [C]us
 {start_of_verse: Verse 5}
 Darlin' we won't [G7]let that happen to [C]us
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Stars and Stripes on Iwo Jima}
 {meta: artist Hank Thompson}
 {meta: composer Bob Wills and Cliff Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file starsandstripesoniwojimalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the Yanks raised
@@ -44,3 +47,7 @@ When the Yanks raised
 [A7]There were tears in their [D7]hearts
 [G]Though they smiled
 {end_of_verse}
+
+
+
+

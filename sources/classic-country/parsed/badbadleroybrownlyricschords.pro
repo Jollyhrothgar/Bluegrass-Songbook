@@ -1,6 +1,9 @@
 {meta: title Bad Bad Leroy Brown}
 {meta: artist Mel Street}
 {meta: composer Jim Croce}
+{meta: x_source classic-country}
+{meta: x_source_file badbadleroybrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Along the south side of Chicago is the [A7]baddest part of town
@@ -53,3 +56,11 @@ He's bad bad Leroy Brown the [A7]baddest man the whole darn town
 He's bad bad Leroy Brown the [A7]baddest man the whole darn town
 [B7]Badder than old King [C]Kong and [D7]meaner than a junkyard [G]dog
 {end_of_verse}
+
+
+
+
+
+
+
+

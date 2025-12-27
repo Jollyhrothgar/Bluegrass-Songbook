@@ -1,6 +1,9 @@
 {meta: title Midnight Oil}
 {meta: artist Barbara Mandrell}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file midnightoillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That call was from the office 
@@ -48,3 +51,9 @@ If he [F]knew the devil had me and won't [C]set me free [F]
 While I'm puttin' on my make-up 
 [G7]I'm puttin' on the one that really [C]loves me[F]  [C]
 {end_of_verse}
+
+
+
+
+
+

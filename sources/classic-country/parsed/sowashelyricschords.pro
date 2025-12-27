@@ -1,6 +1,9 @@
 {meta: title So Was He}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file sowashelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the [C]days of the [D7]leaf dust 
@@ -31,3 +34,6 @@ And [Am]when the leaves [D7]were gone so was [G]he
 {start_of_verse: Verse 4}
 Oh and [Am]when the leaves [D7]were gone so was [G]he
 {end_of_verse}
+
+
+

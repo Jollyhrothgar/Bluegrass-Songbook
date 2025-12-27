@@ -1,6 +1,9 @@
 {meta: title Got A Letter From My Kid Today}
 {meta: artist Bob Wills}
 {meta: composer Alex Kramer, Hy Zaret, Joan Whitney}
+{meta: x_source classic-country}
+{meta: x_source_file gotaletterfrommykidtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Got a letter from my kid [E7]today
@@ -29,3 +32,6 @@ Daddy here's my puppy's picture
 [Am]I know exactly how the kid is feeling now
 [A7]Cause I get mighty [D7]lonely [G]too
 {end_of_verse}
+
+
+

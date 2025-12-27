@@ -1,6 +1,9 @@
 {meta: title I Can Make Him Whisper I Love You}
 {meta: artist Rhonda Vincent}
 {meta: composer Pete Goble}
+{meta: x_source classic-country}
+{meta: x_source_file icanmakehimwhisperiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately I have [C]caught myself still [G]thinking
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 6}
 [C]I can make [D7]him whisper I love [G][C][G]you
 {end_of_verse}
+
+
+
+
+
+

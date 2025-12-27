@@ -1,6 +1,9 @@
 {meta: title Midnight In Heaven}
 {meta: artist George Morgan}
 {meta: composer Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file midnightinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was midnight in [B7]heaven last [C]night in your [G]arms
@@ -22,3 +25,5 @@ Her [G]halo was [B7]shinning while [C]I held her [G]tight
 [G]I can't wait till [B7]tomorrow to [C]see her and [G]then
 [C]I'll spend midnight [D7]in heaven a[G]gain
 {end_of_verse}
+
+

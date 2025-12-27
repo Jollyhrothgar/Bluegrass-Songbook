@@ -1,6 +1,9 @@
 {meta: title Long Long Train}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file longlongtrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m on a long long journey on a [F]long long [C]train
@@ -40,3 +43,8 @@ And I ain’t coming back till [G7]I’m over [C]you
 {start_of_verse: Verse 4}
 And I ain’t coming back till [G7]I’m over [C]you
 {end_of_verse}
+
+
+
+
+

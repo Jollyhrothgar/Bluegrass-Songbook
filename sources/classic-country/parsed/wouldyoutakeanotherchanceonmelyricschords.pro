@@ -1,6 +1,9 @@
 {meta: title Would You Take Another Chance On Me}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyoutakeanotherchanceonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I promise you [A7]to straighten up [Dm]and put my life in [G7]order[Dm]
@@ -28,3 +31,6 @@ But my past keeps blindin' [Am]you if [F]you could only [Dm]see
 [F]Would you take [C]another [G7]chance on [C]me [F]   [C]
 Think about it darlin'
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title California On My Mind}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file californiaonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I got California on my mind
@@ -50,3 +53,9 @@ I’m leaving this old town [G7]behind
 [F]I’m going back where the sun is shining
 [C]I got [G7]California on my [C]mind
 {end_of_verse}
+
+
+
+
+
+

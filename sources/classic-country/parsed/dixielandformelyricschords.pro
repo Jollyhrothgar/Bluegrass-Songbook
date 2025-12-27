@@ -1,6 +1,9 @@
 {meta: title Dixieland For Me}
 {meta: artist The Country Gentlemen}
 {meta: composer Curtis McPeake}
+{meta: x_source classic-country}
+{meta: x_source_file dixielandformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m dreaming tonight of Dixie
@@ -48,3 +51,9 @@ But it’s Dixie [G7]Land for [C]me
 That road ahead is mighty long
 But it’s Dixie [G7]Land for [C]me
 {end_of_verse}
+
+
+
+
+
+

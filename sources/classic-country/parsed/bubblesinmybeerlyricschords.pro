@@ -1,6 +1,9 @@
 {meta: title Bubbles in my Beer}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker, Bob Wills, Tommy Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file bubblesinmybeerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Bubbles in My Beer
@@ -34,3 +37,7 @@ And of the golden chances that have passed me [D7]by
 And the [G]dreams that I had now are [D7]empty
 As empty as the bubbles in my [G]beer
 {end_of_verse}
+
+
+
+

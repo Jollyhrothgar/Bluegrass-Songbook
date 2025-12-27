@@ -1,5 +1,8 @@
 {meta: title One In Every Crowd}
 {meta: artist Charlie Walker}
+{meta: x_source classic-country}
+{meta: x_source_file oneineverycrowdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I went tonight and joined a group of merry making friends
@@ -28,3 +31,6 @@ In [C]every crowd of people there's [G]somebody just like me
 I forget you for a moment then I'm [G7]happy and I'm [C]proud
 But it only takes a [G]memory and there's [D7]one in every [G]crowd
 {end_of_verse}
+
+
+

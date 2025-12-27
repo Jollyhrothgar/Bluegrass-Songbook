@@ -1,6 +1,9 @@
 {meta: title Why Am I Chained to a Memory}
 {meta: artist Everly Brothers}
 {meta: composer Eddie Snyder, Kay Rogers, Richard Ahlert}
+{meta: x_source classic-country}
+{meta: x_source_file whyamichainedtoamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why am I chained to a [E7]memory
@@ -29,3 +32,6 @@ I [D7]threw them all [G7]away
 [Am]I keep forgetting I won't [F]see you anymore
 [C]Guess I'm doomed to [Am]be [F]chained to a [G7]memo[C]ry
 {end_of_verse}
+
+
+

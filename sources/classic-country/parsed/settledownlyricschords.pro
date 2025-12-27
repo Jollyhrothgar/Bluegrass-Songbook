@@ -1,5 +1,8 @@
 {meta: title Settle Down}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file settledownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]To live and love her like you can't be [C]proud
@@ -41,3 +44,7 @@ Even though your around her it's not [G]too late
 Settle down right [C]now 
 That’s when you'll [D7]really start beginning to [G]live
 {end_of_verse}
+
+
+
+

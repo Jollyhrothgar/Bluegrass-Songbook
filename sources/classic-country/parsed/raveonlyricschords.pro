@@ -1,6 +1,9 @@
 {meta: title Rave On}
 {meta: artist Buddy Holly}
 {meta: composer Sonny West, Bill Tilghman and Norman Petty}
+{meta: x_source classic-country}
+{meta: x_source_file raveonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the little things you say and do
@@ -40,3 +43,9 @@ Repeat last verse
 [C]Ah ah [G]ah
 [C]Ah ah [G]ah
 {end_of_verse}
+
+
+
+
+
+

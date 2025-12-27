@@ -1,6 +1,9 @@
 {meta: title Blue Clear Sky}
 {meta: artist George Strait}
 {meta: composer Bob DiPiero, Mark D. Sanders, John Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file blueclearskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You swear you've had [F]enough 
@@ -47,3 +50,9 @@ Surprise your [G7]new love has [Am]arrived
 {start_of_verse: Verse 5}
 [F]Out of a [G7]blue clear [C]sky
 {end_of_verse}
+
+
+
+
+
+

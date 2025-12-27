@@ -1,6 +1,9 @@
 {meta: title Jacob's Ladder}
 {meta: artist Mark Wills}
 {meta: composer Tony Martin, Cal Sweat, Brenda Sweat}
+{meta: x_source classic-country}
+{meta: x_source_file jacobsladderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jacob was a dirt poor farm boy
@@ -53,3 +56,9 @@ Cause [Am]heaven was [C]watin' at the [D7]top of Jacob's [G]ladder[Em]
 {start_of_verse: Verse 7}
 Oh an [Am]angel was [C]waitin' at the [D7]top of Jacob's [G]ladder
 {end_of_verse}
+
+
+
+
+
+

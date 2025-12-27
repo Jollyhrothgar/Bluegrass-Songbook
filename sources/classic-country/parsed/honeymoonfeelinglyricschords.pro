@@ -1,6 +1,9 @@
 {meta: title Honeymoon Feeling}
 {meta: artist Roy Clark}
 {meta: composer Ronald Hellard and Gary S. Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file honeymoonfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I still get that [Gm]honeymoon feeling
@@ -42,3 +45,7 @@ After [F]all these years my [Fm]heart goes reeling
 [F]I can still hear those [Fm]wedding bells ring[C]ing
 Every time we [Am]love I get that [F]honeymoon [G7]feeling [C]again
 {end_of_verse}
+
+
+
+

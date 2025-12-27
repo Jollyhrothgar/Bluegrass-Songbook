@@ -1,6 +1,9 @@
 {meta: title No Longer a Sweetheart of Mine}
 {meta: artist Reno and Smiley}
 {meta: composer Don Reno, Fred Swift, Red Smiley}
+{meta: x_source classic-country}
+{meta: x_source_file nolongerasweetheartofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We are saying goodbye dear [G7]forever
@@ -43,3 +46,8 @@ And [G7]stay with your honky-tonk [C]kind
 Go back to the life you've been [F]living
 You're no [G7]longer a sweetheart of [C]mine
 {end_of_verse}
+
+
+
+
+

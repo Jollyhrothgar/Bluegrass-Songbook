@@ -1,6 +1,9 @@
 {meta: title Coming Home Alone}
 {meta: artist Tanya Tucker}
 {meta: composer Dave Loggins}
+{meta: x_source classic-country}
+{meta: x_source_file cominghomealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dinner and cards at my [Em]best friend's [C]house [F]
@@ -53,3 +56,9 @@ Well I’ll [Dm]never mind [G7]coming home [C]alone
 Cause as [C]long as I can [Em]come home in [F]love
 Well I’ll [Dm]never mind [G7]coming home [C]alone
 {end_of_verse}
+
+
+
+
+
+

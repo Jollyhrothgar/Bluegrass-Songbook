@@ -1,6 +1,9 @@
 {meta: title Walk Me to the Door}
 {meta: artist Ray Price}
 {meta: composer Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file walkmetothedoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Walk me to the door and hold me close just one more [C]time
@@ -36,3 +39,7 @@ Just one more favor [G7]walk me to the [C]door
 The [C]longest walk I'll ever take will be across the [F]floor
 That's why I'm asking [G7]one last favor walk me to the [C]door
 {end_of_verse}
+
+
+
+

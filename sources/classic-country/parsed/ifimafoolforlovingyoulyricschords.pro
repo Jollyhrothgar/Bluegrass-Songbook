@@ -1,6 +1,9 @@
 {meta: title If I'm A Fool For Loving You}
 {meta: artist Elvis Presley}
 {meta: composer Stan Kesler}
+{meta: x_source classic-country}
+{meta: x_source_file ifimafoolforlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]If I'm a fool for [C]loving you [G7]then that's just what I want to [C]be
@@ -31,3 +34,7 @@ If I'm a fool for [C]loving you [G7]then that's just what I want to [C]be [C7]
 {start_of_verse: Verse 5}
 [F]If I'm a fool for [C]loving you [G7]then that's just what I want to [C]be
 {end_of_verse}
+
+
+
+

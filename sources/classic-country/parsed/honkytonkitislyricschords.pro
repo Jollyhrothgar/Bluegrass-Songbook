@@ -1,6 +1,9 @@
 {meta: title Honky Tonkitis}
 {meta: artist Billy Walker}
 {meta: composer Tex Atchison}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkitislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a strong suspicion that my [F]baby's coming down
@@ -40,3 +43,8 @@ She's got [G7]honky tonkitis and she's got it bad this [C]time
 {start_of_verse: Verse 5}
 Yes she's got [G7]honky tonkitis and she's got it bad this [C]time
 {end_of_verse}
+
+
+
+
+

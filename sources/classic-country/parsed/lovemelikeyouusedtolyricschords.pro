@@ -1,5 +1,8 @@
 {meta: title Love Me Like You Used To}
 {meta: artist Tanya Tucker}
+{meta: x_source classic-country}
+{meta: x_source_file lovemelikeyouusedtolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]In a cozy little [G7]restaurant for [C]lovers
@@ -49,3 +52,9 @@ When our love was [F]brand [C]new
 And darling when we're [G7]through
 You can [F]love me [C]again
 {end_of_verse}
+
+
+
+
+
+

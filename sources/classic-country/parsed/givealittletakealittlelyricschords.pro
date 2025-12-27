@@ -1,6 +1,9 @@
 {meta: title Give A Little Take A Little}
 {meta: artist Wilburn Brothers}
 {meta: composer Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file givealittletakealittlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Give a little take a little take a little kiss from [G7]me
@@ -18,3 +21,4 @@ So come into my arms let's [C]share each other's charms
 Let's give a little [G7]take a little [C]love
 Repeat 
 {end_of_verse}
+

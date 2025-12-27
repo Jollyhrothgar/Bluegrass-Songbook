@@ -1,6 +1,9 @@
 {meta: title My First Reaction}
 {meta: artist Ricky Van Shelton}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file myfirstreactionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've found a note you [F]left there on the [C]table
@@ -33,3 +36,7 @@ But my [G7]first reaction was to [C]cry
 {start_of_verse: Verse 5}
 Yes my [G7]first reaction was to [C]cry
 {end_of_verse}
+
+
+
+

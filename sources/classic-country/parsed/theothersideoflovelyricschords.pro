@@ -1,5 +1,8 @@
 {meta: title The Other Side Of Love}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file theothersideoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The lights were low the music soft
@@ -62,3 +65,11 @@ On the other side of [C]love
 Yes I [G7]wonder why the grass is always greener
 On the other side of [C]love
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If I Could Only Fly}
 {meta: artist Merle Haggard}
 {meta: composer Michael David Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldonlyflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Almost felt you touching [F]me just now
@@ -43,3 +46,8 @@ I’d bid this [G7]place goodbye and come and be [C]with you
 But [F]I can hardly stand and I [C]got nowhere to run 
 Another [G7]sinking sun and one more lonely [C]night
 {end_of_verse}
+
+
+
+
+

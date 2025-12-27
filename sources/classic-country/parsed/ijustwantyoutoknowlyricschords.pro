@@ -1,6 +1,9 @@
 {meta: title I Just Want You to Know}
 {meta: artist Hank Snow}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file ijustwantyoutoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want you to know if things should go wrong
@@ -29,3 +32,7 @@ When I cannot [A7]speak to you heart to [D7]heart
 Remember I [G]love you   I [D7]just want you to [G]know
 [C]Remember I [G]love you   I [D7]just want you to [G]know   
 {end_of_verse}
+
+
+
+

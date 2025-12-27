@@ -1,6 +1,9 @@
 {meta: title Broad Minded Man}
 {meta: artist Jim Ed Brown}
 {meta: composer Jim Owen}
+{meta: x_source classic-country}
+{meta: x_source_file broadmindedmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve been a rascal since the day I was [Am]born
@@ -54,3 +57,10 @@ I’ll [G7]try to be a broad minded [C]man
 {start_of_verse: Verse 6}
 Yes [G7]I’ll always be a broad minded [C]man
 {end_of_verse}
+
+
+
+
+
+
+

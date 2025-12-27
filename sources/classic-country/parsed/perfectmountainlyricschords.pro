@@ -1,6 +1,9 @@
 {meta: title Perfect Mountain}
 {meta: artist Dean Martin}
 {meta: composer Gene Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file perfectmountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gonna find a perfect [F]mountain 
@@ -47,3 +50,9 @@ Long for things I left [C]behind
 {start_of_verse: Verse 5}
 #1
 {end_of_verse}
+
+
+
+
+
+

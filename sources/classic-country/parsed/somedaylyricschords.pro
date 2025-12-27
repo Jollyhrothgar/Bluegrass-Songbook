@@ -1,6 +1,9 @@
 {meta: title Someday}
 {meta: artist Alan Jackson}
 {meta: composer Jim McBride and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file somedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She looked me in the [G7]eye and said it's [F]over
@@ -40,3 +43,8 @@ And I told her [F]someday she said I [C]can't [Am]wait
 {start_of_verse: Verse 5}
 Oh sometimes [G7]someday [F]just [G7]never [C]comes
 {end_of_verse}
+
+
+
+
+

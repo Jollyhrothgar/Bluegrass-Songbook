@@ -1,6 +1,9 @@
 {meta: title Kathy On My Mind}
 {meta: artist Billy Walker}
 {meta: composer Orville Couch and Eddie McDuff}
+{meta: x_source classic-country}
+{meta: x_source_file kathyonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm walking [D7]down the same [G]old [Em]street
@@ -25,3 +28,5 @@
 [C]Wonder [Em]what I'll [Am]find
 [D7]Could it be I've got Kathy [G]on my [G][C]mind
 {end_of_verse}
+
+

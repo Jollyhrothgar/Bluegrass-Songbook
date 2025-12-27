@@ -1,6 +1,9 @@
 {meta: title This Just Ain't No Good Day For Leavin'}
 {meta: artist Gene Watson}
 {meta: composer Dallas Frazier and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file thisjustaintnogooddayforleavinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The handle on my [F]suitcase is [C]comin' off [Am]again
@@ -47,3 +50,8 @@ If [F]it's alright with [G7]you I think I'll [C]wait
 (Think I'll [F]wait think I'll [G7]wait)
 Just think I'll [C]wait
 {end_of_verse}
+
+
+
+
+

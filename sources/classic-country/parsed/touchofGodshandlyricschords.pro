@@ -1,5 +1,8 @@
 {meta: title Touch of God's Hand}
 {meta: artist Vernon Oxford}
+{meta: x_source classic-country}
+{meta: x_source_file touchofGodshandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my burdens grow heavy  
@@ -42,3 +45,8 @@ When  problems [C]arise
 I kneel down and [C]wait
 [F]Yes I [C]wait  I wait for the [G7]touch of God's [C]hand
 {end_of_verse}
+
+
+
+
+

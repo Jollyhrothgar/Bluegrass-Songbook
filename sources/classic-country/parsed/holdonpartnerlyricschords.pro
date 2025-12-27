@@ -1,6 +1,9 @@
 {meta: title Hold On Partner}
 {meta: artist Roy Rogers and Clint Black}
 {meta: composer Bobby Paine and Larson Paine}
+{meta: x_source classic-country}
+{meta: x_source_file holdonpartnerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you've been trying to get ahead but you're losing ground
@@ -47,3 +50,10 @@
 {start_of_verse: Verse 7}
 [G]If you'll hold on [D7]partner good things are coming to [G]you
 {end_of_verse}
+
+
+
+
+
+
+

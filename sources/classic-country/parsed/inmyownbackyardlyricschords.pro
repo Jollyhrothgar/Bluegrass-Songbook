@@ -1,6 +1,9 @@
 {meta: title In My Own Backyard}
 {meta: artist Joe Diffie}
 {meta: composer Kerry Phillips, Andy Spooner, Joe Diffie}
+{meta: x_source classic-country}
+{meta: x_source_file inmyownbackyardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought that life was runnin' off [F]leavin' me [C]behind
@@ -37,3 +40,7 @@ And to [C]think that I once had it all [G7]in my own back[C]yard
 Ooh [F]you'd never know it now but I used to have it [C]all [A#7]    [G]
 [C]Once I had it all [G7]in my own back[C]yard
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Moonlight Lounge}
 {meta: artist Alabama}
 {meta: composer Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file moonlightloungelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Flattop guitar down around the campfire
@@ -44,3 +47,6 @@ Is the [C]only sound [G]around
 Yeah we're havin' us a party down in the holler
 We [A#7]call it the [C]moonlight [G]lounge
 {end_of_verse}
+
+
+

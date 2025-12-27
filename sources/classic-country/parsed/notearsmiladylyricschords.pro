@@ -1,5 +1,8 @@
 {meta: title No Tears Milady}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file notearsmiladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We had a break-up and we cried a [G7]lot
@@ -28,3 +31,6 @@ And there'll be [F]no tears milady [C]no tears milady
 [F]We'll show them that our life [C]can be as man and wife
 [G7]We're back together now we'll work it out some[C]how
 {end_of_verse}
+
+
+

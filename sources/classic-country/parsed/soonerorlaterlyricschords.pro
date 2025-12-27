@@ -1,6 +1,9 @@
 {meta: title Sooner Or Later}
 {meta: artist Bob Wills}
 {meta: composer Artie Glenn and Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file soonerorlaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sooner or [D7]later [G]you will [D7]fall for [G]someone
@@ -21,3 +24,5 @@ And [C]if he doesn't care for you
 [G]Then you'll know what [A7]I've been through
 But [C]sooner or [D7]later you'll [G]fall
 {end_of_verse}
+
+

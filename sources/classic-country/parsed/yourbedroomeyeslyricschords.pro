@@ -1,6 +1,9 @@
 {meta: title Your Bedroom Eyes}
 {meta: artist Vern Gosdin}
 {meta: composer Rich Landers}
+{meta: x_source classic-country}
+{meta: x_source_file yourbedroomeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your bedroom eyes  [F]make me know what I [C]wanted [F]
@@ -26,3 +29,6 @@ If you looked at [C]someone else [G7]with your bedroom [C]eyes
 {start_of_verse: Verse 3}
 [F]If you looked at [C]someone else [G7]with your bedroom [F]e-ye[C]s
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Forever's Here To Stay}
 {meta: artist George Jones}
 {meta: composer Buddy Cannon and Larry Bastian}
+{meta: x_source classic-country}
+{meta: x_source_file foreversheretostaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She stepped out of the Taxi with a [F]suitcase in her hand
@@ -33,3 +36,7 @@ I [C]do believe [G7]forever's here to [C]stay
 {start_of_verse: Verse 4}
 I do believe [G7]forever's here to [C]stay
 {end_of_verse}
+
+
+
+

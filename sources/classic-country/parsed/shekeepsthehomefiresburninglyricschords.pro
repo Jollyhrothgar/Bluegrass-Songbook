@@ -1,6 +1,9 @@
 {meta: title She Keeps the Home Fires Burning}
 {meta: artist Ronnie Milsap}
 {meta: composer Dennis Morgan, Mike Reid, Don Pfrimmer}
+{meta: x_source classic-country}
+{meta: x_source_file shekeepsthehomefiresburninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Crack of dawn I hit the road  set my shoulders for the heavy load
@@ -46,3 +49,10 @@ The foreman says I'm late again he can't stand it when I only grin
 He's got me [C]eight hours she's got me after [G]that
 I can't wait 'til [D7]it's quitting time
 {end_of_verse}
+
+
+
+
+
+
+

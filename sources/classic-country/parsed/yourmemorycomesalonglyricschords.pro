@@ -1,6 +1,9 @@
 {meta: title Your Memory Comes Along}
 {meta: artist Johnny Tillotson}
 {meta: composer Johnny Tillotson and Paul Tannen}
+{meta: x_source classic-country}
+{meta: x_source_file yourmemorycomesalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tears start falling [C]I can hardly see
@@ -40,3 +43,8 @@ But [D7]just [G]then [C]about that [G]time your [C]memory [D7]comes a[G]long
 {start_of_verse: Verse 4}
 [D7]Just [G]then [C]about that [G]time your [C]memory [D7]comes a[G]long
 {end_of_verse}
+
+
+
+
+

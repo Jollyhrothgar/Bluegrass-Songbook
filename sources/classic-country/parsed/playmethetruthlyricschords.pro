@@ -1,6 +1,9 @@
 {meta: title Play Me The Truth}
 {meta: artist Tony Booth}
 {meta: composer Guyanne McCall and Justin Trevino}
+{meta: x_source classic-country}
+{meta: x_source_file playmethetruthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It amazes me the [C]wisdom you [G]posses
@@ -37,3 +40,7 @@ So [D7]one more time old jukebox play me the [G]truth
 {start_of_verse: Verse 4}
 Just [D7]one more time old jukebox play me the [G]truth
 {end_of_verse}
+
+
+
+

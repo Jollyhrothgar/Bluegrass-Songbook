@@ -1,6 +1,9 @@
 {meta: title As Tears Go By}
 {meta: artist J.D. Crowe}
 {meta: composer Andrew Loog Oldham}
+{meta: x_source classic-country}
+{meta: x_source_file astearsgobylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It is the [A7]evening of the [C]da-[D7]ay
@@ -22,3 +25,5 @@
 [C]All I hear [D7]is the sound of [G]rain falling on the [Em]ground
 [C]I sit and [Am]watch as tears go [D7]by [G]  [A7]   [C]  [D7]   [G]
 {end_of_verse}
+
+

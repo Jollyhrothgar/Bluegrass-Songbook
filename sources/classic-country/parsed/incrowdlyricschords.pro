@@ -1,6 +1,9 @@
 {meta: title In Crowd}
 {meta: artist Cal Smith}
 {meta: composer Jerry McBee and Fred Lehner}
+{meta: x_source classic-country}
+{meta: x_source_file incrowdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's five o'clock and one more working [C]day is finally at [G]an end 
@@ -30,3 +33,6 @@ They’re the light of my [D7]life crowd my kids and my [G]wife crowd
 [C]She hands me my coffee and [G]the kids gather round me
 And it makes me so [D7]proud to be in with the [G]in crowd 
 {end_of_verse}
+
+
+

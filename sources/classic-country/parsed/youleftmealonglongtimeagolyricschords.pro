@@ -1,5 +1,8 @@
 {meta: title You Left Me A Long Long Time Ago}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file youleftmealonglongtimeagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You tell me [F]today that you're [C]leaving
@@ -32,3 +35,7 @@ But you [C]left me a [G7]long long time [C]ago
 {start_of_verse: Verse 5}
 You left me a [G7]long long time [C]ago
 {end_of_verse}
+
+
+
+

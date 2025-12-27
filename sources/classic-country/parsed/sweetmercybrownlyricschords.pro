@@ -1,6 +1,9 @@
 {meta: title Sweet Mercy Brown}
 {meta: artist Nat Stuckey}
 {meta: composer Jim Owen}
+{meta: x_source classic-country}
+{meta: x_source_file sweetmercybrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her daddy was a Louisiana banker 
@@ -47,3 +50,6 @@ To see a [F]millionaire do the bump and grind
 Sweet Mercy [C]Brown mercy [F]mercy sweet Mercy [C]Brown
 Oh mercy [F]mercy sweet Mercy [G7]brown[C]
 {end_of_verse}
+
+
+

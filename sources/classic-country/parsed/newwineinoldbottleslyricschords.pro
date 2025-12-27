@@ -1,6 +1,9 @@
 {meta: title New Wine In Old Bottles}
 {meta: artist Hank Thompson}
 {meta: composer Ann Tygart and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file newwineinoldbottleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They’re at the table wishing holding hands and reminiscing 
@@ -62,3 +65,13 @@ And should have met a lot of years [D7]ago
 But with new wine in [D7]old bottles
 Two [C]hearts can [D7]love [G]again
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

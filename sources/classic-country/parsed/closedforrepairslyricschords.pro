@@ -1,6 +1,9 @@
 {meta: title Closed For Repairs}
 {meta: artist Hank Snow}
 {meta: composer Brad Browne and Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file closedforrepairslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw a sign out on the [F]highway
@@ -43,3 +46,8 @@
 [C]Somebody lied [F]somebody [C]cried
 [G7]My heart is closed for [C]repairs
 {end_of_verse}
+
+
+
+
+

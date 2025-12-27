@@ -1,6 +1,9 @@
 {meta: title Shopping Around}
 {meta: artist Elvis Presley}
 {meta: composer Sid Tepper, Roy Bennett, Aaron Schroeder}
+{meta: x_source classic-country}
+{meta: x_source_file shoppingaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You got the huggin'est arms the thrillin'est eyes
@@ -43,3 +46,7 @@ I'm gonna [G7]stop uh shoppin' [C]around
 I'm gonna [G7]stop shoppin' [C]around
 I'm gonna [G7]stop shoppin' [C]around
 {end_of_verse}
+
+
+
+

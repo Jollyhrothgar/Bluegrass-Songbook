@@ -1,5 +1,8 @@
 {meta: title What Will I Live On Tomorrow}
 {meta: artist Vernon Oxford}
+{meta: x_source classic-country}
+{meta: x_source_file whatwillIliveontomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What will I live on [D7]tomorrow
@@ -28,3 +31,6 @@ If you leave me [G]today
 What will I live on [D7]tomorrow
 You'll take everything [G]away
 {end_of_verse}
+
+
+

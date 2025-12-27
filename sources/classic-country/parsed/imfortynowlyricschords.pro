@@ -1,6 +1,9 @@
 {meta: title I'm Forty Now}
 {meta: artist Cal Smith}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file imfortynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There were barefoot dreams of catching [F]outlaws
@@ -39,3 +42,8 @@
 [C]So many hopeless dreams and I broke some [F]vows
 [C]Maybe life begins [G7]for me I'm [C]forty [G7]now
 {end_of_verse}
+
+
+
+
+

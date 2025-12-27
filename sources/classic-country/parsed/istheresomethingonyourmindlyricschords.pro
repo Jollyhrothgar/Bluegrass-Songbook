@@ -1,5 +1,8 @@
 {meta: title Is There Something On Your Mind}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file istheresomethingonyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Is there something on your mind
@@ -57,3 +60,12 @@ Sung:
 Now that you're near
 [G]Tell me what's on your mind
 {end_of_verse}
+
+
+
+
+
+
+
+
+

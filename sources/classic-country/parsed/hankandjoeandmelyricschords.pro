@@ -1,5 +1,8 @@
 {meta: title Hank And Joe And Me}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file hankandjoeandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the desert where we searched for [G7]gold
@@ -45,3 +48,8 @@ He said Joe [C]you know he’s a dieing [Am]man
 [C]I can’t stand to [G7]hear him cry for [C]water
 He couldn’t stand to [G7]hear me cry for [C]water
 {end_of_verse}
+
+
+
+
+

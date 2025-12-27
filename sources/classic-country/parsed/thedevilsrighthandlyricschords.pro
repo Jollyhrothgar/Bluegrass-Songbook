@@ -1,6 +1,9 @@
 {meta: title The Devil’s Right Hand}
 {meta: artist The Highwaymen}
 {meta: composer Steve Earle}
+{meta: x_source classic-country}
+{meta: x_source_file thedevilsrighthandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]About the time my daddy left to fight the big war
@@ -84,3 +87,18 @@ Not guilty I said you've got the wrong man
 {start_of_verse: Verse 16}
 [G7]Momma says the pistol is the devil's right [C]hand
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

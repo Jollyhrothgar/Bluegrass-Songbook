@@ -1,6 +1,9 @@
 {meta: title I Can't Help Myself}
 {meta: artist Eddie Rabbitt}
 {meta: composer Even (Bruce) Stevens and Eddie Rabbitt}
+{meta: x_source classic-country}
+{meta: x_source_file icanthelpmyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Thought I was over you  thought I could [Em]start a new
@@ -22,3 +25,5 @@ When I [F]know down  [G7]deep inside you don't love [C]me
 But when you're standing there  wind [Em]blowing through your hair
 Well I'm [F]starting to make  the [G7]same old mistake [C]again
 {end_of_verse}
+
+

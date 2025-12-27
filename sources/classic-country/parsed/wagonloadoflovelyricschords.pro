@@ -1,5 +1,8 @@
 {meta: title Wagon Load Of Love}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file wagonloadoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got a wagon load a wagon load of [D7]love
@@ -33,3 +36,7 @@
 [D7]This wedding band to fit your hand like a brand new glove
 [G]Won't you come and ride upon my wagon load of love
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You're Telling Me Sweet Lies Again}
 {meta: artist Jean Shepard}
 {meta: composer Jack Rhodes and Gertrude Cox}
+{meta: x_source classic-country}
+{meta: x_source_file youretellingmesweetliesagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought any fool could be fooled only [D7]once
@@ -29,3 +32,6 @@
 [G]Some magic is holding me spell bound once [D7]more
 [G]You're telling me sweet lies again
 {end_of_verse}
+
+
+

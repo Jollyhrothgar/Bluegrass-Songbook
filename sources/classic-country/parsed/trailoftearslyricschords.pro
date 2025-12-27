@@ -1,6 +1,9 @@
 {meta: title Trail Of Tears}
 {meta: artist Tanya Tucker}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file trailoftearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She'll always get you when your [C]guard is [G]down
@@ -62,3 +65,11 @@ Cause [G]girls like that don't [D7]care at [G]all
 Crawling through a [D7]trail of [G]tears
 [C]Crawling through a [D7]trail of [G]tears
 {end_of_verse}
+
+
+
+
+
+
+
+

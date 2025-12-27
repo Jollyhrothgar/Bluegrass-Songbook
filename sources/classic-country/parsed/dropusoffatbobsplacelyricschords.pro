@@ -1,5 +1,8 @@
 {meta: title Drop Us Off At Bob's Place}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file dropusoffatbobsplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Drop us off at Bob's place [A7]driver
@@ -42,3 +45,8 @@
 [G]Just drop us off at Bob's place [A7]driver
 [D7]Where we can have a grand ol' [G]time
 {end_of_verse}
+
+
+
+
+

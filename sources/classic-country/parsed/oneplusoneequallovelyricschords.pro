@@ -1,6 +1,9 @@
 {meta: title 1+1 = Love}
 {meta: artist Charly McClain}
 {meta: composer L. Rogers, R. Scaife, D. Hogan}
+{meta: x_source classic-country}
+{meta: x_source_file oneplusoneequallovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can remember all my [F]early days of [Dm]school
@@ -40,3 +43,7 @@ With your head [A7]on my shoulder [Dm]dear
 1+[G7]1 = [C]Love[A7]   [Dm]
 1+[G7]1 = [F]Love[C]
 {end_of_verse}
+
+
+
+

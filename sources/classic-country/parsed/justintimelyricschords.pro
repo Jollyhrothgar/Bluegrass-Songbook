@@ -1,6 +1,9 @@
 {meta: title Just In Time}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Leon Ashley and Margie Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file justintimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you fail to see me in the barroom [F]tonight
@@ -29,3 +32,6 @@
 [C]I was headed for the barroom and just couldn't seem to [F]stop
 [G7]But she came along just in [C]time
 {end_of_verse}
+
+
+

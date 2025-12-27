@@ -1,6 +1,9 @@
 {meta: title When Your Old Wedding Ring Was New}
 {meta: artist Jimmy Dean}
 {meta: composer Charles McCarthy, Joe Solieri, Bert Douglas}
+{meta: x_source classic-country}
+{meta: x_source_file whenyouroldweddingringwasnewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [B7]When your [G]old wedding [D7]ring was [G]new
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [E7]When your [C]old wedding [D7]ring was [G]new
 {end_of_verse}
+
+
+
+

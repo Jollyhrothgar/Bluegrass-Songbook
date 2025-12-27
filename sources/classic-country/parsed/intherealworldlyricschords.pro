@@ -1,6 +1,9 @@
 {meta: title In The Real World}
 {meta: artist Roy Orbison}
 {meta: composer Richard Kerr and Will Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file intherealworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]In dreams we do so many things
@@ -62,3 +65,11 @@ But sometimes we must let it [G7]be
 In the real [F]world
 In the real [Am]world
 {end_of_verse}
+
+
+
+
+
+
+
+

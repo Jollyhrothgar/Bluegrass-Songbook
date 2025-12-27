@@ -1,6 +1,9 @@
 {meta: title High Lonesome}
 {meta: artist Randy Travis}
 {meta: composer Gretchen Peters}
+{meta: x_source classic-country}
+{meta: x_source_file highlonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]High in a tree on [F]top of the [C]hill
@@ -41,3 +44,8 @@
 [F]It's a [C]hi-gh [F]lonesome
 [C]Little darling [G7]I'm lonesome for [C]you
 {end_of_verse}
+
+
+
+
+

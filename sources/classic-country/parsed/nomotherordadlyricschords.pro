@@ -1,6 +1,9 @@
 {meta: title No Mother Or Dad}
 {meta: artist Lester Flatt and Earl Scruggs}
 {meta: composer Curley Sechler and Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file nomotherordadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now brother and I are [C]all a[G]lone
@@ -43,3 +46,8 @@ We wish that we were there with [D7]you
 It's not the [G]same since you're [C]away
 We'll see you [G]mother and [D7]dad some [G]day
 {end_of_verse}
+
+
+
+
+

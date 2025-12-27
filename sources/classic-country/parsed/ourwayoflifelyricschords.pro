@@ -1,6 +1,9 @@
 {meta: title Our Way Of Life}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery and Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file ourwayoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm tired of all of this [F]cookin' and a makin' [C]beds
@@ -47,3 +50,9 @@ Till our [F]way of life gets [G7]in our way of [C]love
 {start_of_verse: Verse 6}
 And the [F]way of life never gets [G7]in the way of [C]love
 {end_of_verse}
+
+
+
+
+
+

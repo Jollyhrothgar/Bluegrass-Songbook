@@ -1,6 +1,9 @@
 {meta: title Something About You I Love}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file somethingaboutyouilovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's just something about you I love 
@@ -29,3 +32,6 @@ But [C]I can't seem to get close [G]enough
 I don't know what it [C]is that you [G]do 
 There's just [C]something about you I [G]love  [F]mmm [C]mmm [G]mmm 
 {end_of_verse}
+
+
+

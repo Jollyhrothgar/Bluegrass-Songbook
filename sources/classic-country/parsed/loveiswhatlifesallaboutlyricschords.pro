@@ -1,6 +1,9 @@
 {meta: title Love Is What Life's All About}
 {meta: artist Moe Bandy}
 {meta: composer Carl Belew, Van Givens, Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file loveiswhatlifesallaboutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](Love is what life's all [C]about)
@@ -48,3 +51,8 @@ But [F]all the men's money can't [C]buy a good woman
 [F]All the men's money can't [C]buy a good woman 
 [G7]Love is what life's all [F]about[G7]   [C]
 {end_of_verse}
+
+
+
+
+

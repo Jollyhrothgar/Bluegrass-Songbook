@@ -1,6 +1,9 @@
 {meta: title Because Of Love}
 {meta: artist Elvis Presley}
 {meta: composer Ruth Batchelor and Bob Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file becauseoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Because of [G7]love I'm a hundred feet [C]tall
@@ -30,3 +33,6 @@ Well [F]heaven and earth are [Em]now all mine
 I've [F]jumped to the moon from [G7]cloud number nine
 Be[C]cause be[Am]cause be[F]cause be[G7]cause of [C]love
 {end_of_verse}
+
+
+

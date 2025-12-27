@@ -1,5 +1,8 @@
 {meta: title If You're Ever Lonely Darling}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoureeverlonelydarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you're ever lonely darling think of [D7]all that I've been through
@@ -21,3 +24,5 @@ You've [A7]made me blue sweetheart both night and [D7]day
 Say in your [G]mind you have it coming and you [D7]know you have to pay
 Maybe baby you will learn and change some[G]day
 {end_of_verse}
+
+

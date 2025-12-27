@@ -1,6 +1,9 @@
 {meta: title Frozen Logger}
 {meta: artist Johnny Cash}
 {meta: composer James Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file frozenloggerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As I stepped out one [D7]morning into a small [G]cafe
@@ -41,3 +44,10 @@ At a million degrees below [C]zero it [G]froze my [D7]logger [G]love
 And so I lost my [D7]logger and to this cafe I [G]come
 And here I wait till [C]someone stirs his [G]coffee [D7]with his [G]thumb
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Eating Out Of Your Hand}
 {meta: artist Bill Harrell}
 {meta: composer Bill Harrell and Hope Harlow}
+{meta: x_source classic-country}
+{meta: x_source_file eatingoutofyourhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm tired of eating out of your hand I'm [F]tired of getting [D7]told
@@ -43,3 +46,8 @@ You've [G7]fooled me more than once but let me tell you just one [C]thing
 Someday I'll leave you woman [F]then you'll under[D7]stand
 A [G7]man can only take so much of eating out of your [C]hand
 {end_of_verse}
+
+
+
+
+

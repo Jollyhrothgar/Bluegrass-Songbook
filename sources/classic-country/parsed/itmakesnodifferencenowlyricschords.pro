@@ -1,6 +1,9 @@
 {meta: title It Makes no Difference Now}
 {meta: artist Ernest Tubb}
 {meta: composer Floyd Tillman &amp; Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file itmakesnodifferencenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Makes no difference now what kind of life fate [F]hands me
@@ -29,3 +32,6 @@ Although I [C]know that it will be so hard to [G7]do
 Let things [C]happen as they will and I'll get by [F]somehow
 I don't [C]worry 'cause It [G7]Makes No Difference [C]Now
 {end_of_verse}
+
+
+

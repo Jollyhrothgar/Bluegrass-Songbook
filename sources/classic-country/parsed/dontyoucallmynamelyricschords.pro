@@ -1,6 +1,9 @@
 {meta: title Don’t You Call My Name}
 {meta: artist Dailey and Vincent}
 {meta: composer Herbert Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file dontyoucallmynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don’t you call my name cause I won’t answer
@@ -47,3 +50,9 @@ Don’t you call my name little [G7]girl cause I don’t [C]care
 {start_of_verse: Verse 4}
 Don’t you call my name little [G7]girl cause I don’t [C]care
 {end_of_verse}
+
+
+
+
+
+

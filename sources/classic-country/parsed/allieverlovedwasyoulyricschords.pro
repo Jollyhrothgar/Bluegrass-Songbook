@@ -1,6 +1,9 @@
 {meta: title All I Ever Loved Was You}
 {meta: artist Ricky Skaggs}
 {meta: composer Dorothy Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file allieverlovedwasyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All I ever loved was [C]you
@@ -22,3 +25,5 @@ But you'll be sorry if you [G]do
 You'll never find a love so [C]true 
 For [D7]all I ever loved was [G]you
 {end_of_verse}
+
+

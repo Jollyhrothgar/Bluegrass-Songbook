@@ -1,6 +1,9 @@
 {meta: title Lead Me Guide Me}
 {meta: artist Elvis Presley}
 {meta: composer Doris Akers}
+{meta: x_source classic-country}
+{meta: x_source_file leadmeguidemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lead me oh Lord [G7]won’t you lead [C]me     
@@ -33,3 +36,7 @@ To [Dm]guide me [G7]over  my [C]darkest [C][G7]hour
 For just open my eyes [A7]that I may [Dm]see
 [C]Lead me oh Lord [G7]won’t you lead [C]me     
 {end_of_verse}
+
+
+
+

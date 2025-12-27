@@ -1,6 +1,9 @@
 {meta: title Hello City Limits}
 {meta: artist Red Allen}
 {meta: composer Benny Martin and Johnny Elgin}
+{meta: x_source classic-country}
+{meta: x_source_file hellocitylimitslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello city limits I see your sign
@@ -36,3 +39,7 @@ Left [C]all my worries way be[G]hind
 [D7]Left all my troubles and heartaches there too
 [C]Hello city limits I'm [D7]starting out brand [G]new
 {end_of_verse}
+
+
+
+

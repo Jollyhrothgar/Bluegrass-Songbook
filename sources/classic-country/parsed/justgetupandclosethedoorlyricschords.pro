@@ -1,6 +1,9 @@
 {meta: title Just Get Up And Close The Door}
 {meta: artist Johnny Rodriguez}
 {meta: composer Linda Hargrove Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file justgetupandclosethedoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How can I be sure [G7]you're being honest with [Am]me
@@ -27,3 +30,6 @@
 [C]This time instead [G7]of getting up and [Am]going home to [F]him
 [C]Just Get [G7]Up And Close The [C][F]Do--or
 {end_of_verse}
+
+
+

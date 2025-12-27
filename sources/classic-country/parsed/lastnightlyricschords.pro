@@ -1,6 +1,9 @@
 {meta: title Last Night}
 {meta: artist Webb Pierce}
 {meta: composer Warner H. McPherson and Michael Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file lastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night (last night) I stepped out (stepped [C]out)
@@ -25,3 +28,5 @@
 [G]My heart just fell at your feet with every word you would [C]speak
 [G]Last night I stepped [C]out with a [D7]love I once [G]knew
 {end_of_verse}
+
+

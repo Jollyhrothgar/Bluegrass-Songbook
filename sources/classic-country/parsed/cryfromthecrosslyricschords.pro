@@ -1,5 +1,8 @@
 {meta: title Cry From The Cross}
 {meta: artist The Stanley Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file cryfromthecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One morning in Jerusalem about [C]the break of [G]dawn 
@@ -42,3 +45,8 @@ Forgive them blessed Father He died upon the [D7]cross
 Oh He [C]cried (Jesus cried) from the [G]cross 
 The Son of God was dying to [D7]save the world from [G]loss
 {end_of_verse}
+
+
+
+
+

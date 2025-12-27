@@ -1,6 +1,9 @@
 {meta: title Two Kinds Of Love}
 {meta: artist Eddy Arnold}
 {meta: composer Steve Nelson, Ed G. Nelson, Eddie Thorpe}
+{meta: x_source classic-country}
+{meta: x_source_file twokindsoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are two [C7]kinds of [F]love 
@@ -57,3 +60,10 @@ Which [C]one shall it [G7]be
 There are [C]two  [C7]kinds of [F]love 
 And [C]you’ve got the [G7]right kind for [C]me
 {end_of_verse}
+
+
+
+
+
+
+

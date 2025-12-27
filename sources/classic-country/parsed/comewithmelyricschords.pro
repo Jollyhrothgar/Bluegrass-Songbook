@@ -1,6 +1,9 @@
 {meta: title Come With Me}
 {meta: artist Waylon Jennings}
 {meta: composer Chuck Howard}
+{meta: x_source classic-country}
+{meta: x_source_file comewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you're in a valley with a troubled [C]mind
@@ -36,3 +39,7 @@ The feeling's [D7]free just come with [G]me
 Will get on a cloud babe and ride it [Am]high
 Say hello [D7]sun as we sail [G]by
 {end_of_verse}
+
+
+
+

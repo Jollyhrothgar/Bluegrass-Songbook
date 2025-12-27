@@ -1,6 +1,9 @@
 {meta: title My First Day Without You}
 {meta: artist Wanda Jackson}
 {meta: composer Charlie Williams and Scott Turner}
+{meta: x_source classic-country}
+{meta: x_source_file myfirstdaywithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Getting up was the first mistake I [D7]made today
@@ -23,3 +26,5 @@ A [C]million lonely nights is [G]all I can look forward [C]to
 As I [D7]end my first day without [G]you
 As I [D7]end my first day without [G]you
 {end_of_verse}
+
+

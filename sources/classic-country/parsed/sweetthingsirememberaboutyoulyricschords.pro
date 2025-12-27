@@ -1,6 +1,9 @@
 {meta: title Sweet Things I Remember About You}
 {meta: artist Cal Smith}
 {meta: composer Darlene Shofner}
+{meta: x_source classic-country}
+{meta: x_source_file sweetthingsirememberaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The softness of your warm red lips
@@ -28,3 +31,5 @@ The [G]way you smoke your cigarette
 The way I [C]tingled when first we met
 Are [G]just sweet things I [D7]remember about [G]you
 {end_of_verse}
+
+

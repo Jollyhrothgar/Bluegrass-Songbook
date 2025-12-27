@@ -1,5 +1,8 @@
 {meta: title The Key To Life}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file thekeytolifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd love to hear my daddy play [F]once again
@@ -40,3 +43,8 @@ I learned a few [C]chords on the [G7]banjo was the key to [C]life
 Yeah the pain of losing him cuts like a [F]Randall knife
 I learned a few [C]chords on the [G7]banjo was the key to [C]life
 {end_of_verse}
+
+
+
+
+

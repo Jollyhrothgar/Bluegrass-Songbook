@@ -1,6 +1,9 @@
 {meta: title I Promised You The World}
 {meta: artist Ferlin Husky}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file ipromisedyoutheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The time has [C]come once [D7]more for us to [Am]move on [D7]
@@ -39,3 +42,8 @@ And [D7]daddy's gonna keep tryin' until my dyin' [G]day
 Yes I'll [D7]keep on tryin' for you my [C]golden haired [G]girl
 For after [C]all I [D7]promised you the [G]world
 {end_of_verse}
+
+
+
+
+

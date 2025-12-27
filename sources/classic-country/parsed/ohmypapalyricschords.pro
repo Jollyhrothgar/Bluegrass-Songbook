@@ -1,6 +1,9 @@
 {meta: title Oh My Papa}
 {meta: artist the Everly Brothers}
 {meta: composer Paul Burkhard, Geoffrey Parson, John Turner}
+{meta: x_source classic-country}
+{meta: x_source_file ohmypapalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh my papa to me he was so [G7]wonderful
@@ -31,3 +34,7 @@ Deep in my heart I miss him so [C]today
 {start_of_verse: Verse 4}
 Oh my [F]papa oh my [G7]papa oh my [C]papa
 {end_of_verse}
+
+
+
+

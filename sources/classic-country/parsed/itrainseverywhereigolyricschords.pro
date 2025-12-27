@@ -1,6 +1,9 @@
 {meta: title It Rains Everywhere I Go}
 {meta: artist The Osborne Brothers}
 {meta: composer Don Cusic}
+{meta: x_source classic-country}
+{meta: x_source_file itrainseverywhereigolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The sun used to [C]always [G]shine
@@ -57,3 +60,10 @@
 [G]I got nothin' but [C]trouble to [G]show
 [Em]Cause it rains [D7]everywhere I [G]go
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Grandpa}
 {meta: artist The Judds}
 {meta: composer Jamie O'hara}
+{meta: x_source classic-country}
+{meta: x_source_file grandpalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Grandpa  tell me about the good old [F]days
@@ -35,3 +38,6 @@ Families really bow their heads to [F]pray
 And daddy's really never go [C]away
 Wooo ooh [F]grandpa [G7]tell me about the good old [C]days
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rainbow Rider}
 {meta: artist Tanya Tucker}
 {meta: composer Bobby Fisher, Charlie Black, Austin Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowriderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Out of the shoot he sits [C]tall as the [G]timber
@@ -61,3 +64,11 @@ A [G]dream chasing cowboy with a [C]rodeo [D7]girl by his [G]side
 Rain rain [Am]rainbow [C]rider
 A [G]dream chasing cowboy with a [C]rodeo [D7]girl by his [G]side
 {end_of_verse}
+
+
+
+
+
+
+
+

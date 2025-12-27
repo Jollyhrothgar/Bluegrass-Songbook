@@ -1,6 +1,9 @@
 {meta: title Too Much Blood in My Alcohol Level}
 {meta: artist David Ball}
 {meta: composer Marc-Alan Barnette and Wood Newton}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchbloodinmyalcohollevellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it ain’t like me to hang out [C]here
@@ -55,3 +58,8 @@
 [C]Till I’m one shot short being over the line
 [G]I got too much blood in my [D7]alcohol level [G]tonight
 {end_of_verse}
+
+
+
+
+

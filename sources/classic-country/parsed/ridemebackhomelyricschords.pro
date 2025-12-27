@@ -1,6 +1,9 @@
 {meta: title Ride Me Back Home}
 {meta: artist Willie Nelson}
 {meta: composer Lucinda Hinton, Joe Manual,}
+{meta: x_source classic-country}
+{meta: x_source_file ridemebackhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We rode into battle barebacked and saddled
@@ -53,3 +56,9 @@ And you would just ride me back [C]home
 [C]Somewhere that you could call [G7]home
 And you would just ride me back [C]home
 {end_of_verse}
+
+
+
+
+
+

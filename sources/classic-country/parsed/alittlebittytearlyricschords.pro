@@ -1,6 +1,9 @@
 {meta: title A Little Bitty Tear}
 {meta: artist Wanda Jackson}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file alittlebittytearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you said you were leaving [G7]tomorrow 
@@ -43,3 +46,8 @@ Spoiled my act as a [C]clown
 I had it made up not to make a [F]frown 
 But a [C]little bitty [G7]tear let me [C]down
 {end_of_verse}
+
+
+
+
+

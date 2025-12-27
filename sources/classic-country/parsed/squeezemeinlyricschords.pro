@@ -1,6 +1,9 @@
 {meta: title Squeeze Me In}
 {meta: artist Garth Brooks}
 {meta: composer Gary Nicholson and Delbert McClinton}
+{meta: x_source classic-country}
+{meta: x_source_file squeezemeinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey I know you got a good job
@@ -85,3 +88,14 @@ Honey can you squeeze me [C]in
 Now [G7]make a little time for the good times
 Honey can you squeeze me [C]in
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

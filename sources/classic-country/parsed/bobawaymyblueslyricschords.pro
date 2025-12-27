@@ -1,6 +1,9 @@
 {meta: title Bob Away My Blues}
 {meta: artist Clint Black}
 {meta: composer Toy Caldwell}
+{meta: x_source classic-country}
+{meta: x_source_file bobawaymyblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm going down to the [A7]river I've got a [D7]cane pole [G7]in my [C]hand
@@ -33,3 +36,6 @@ Who[C]ever said a [Am]city boy [D7]can't have the country [G7]blues
 [C]Whoever said a [Am]city boy [D7]can't have the country [G7]blues
 Well [G]honey they ain't [G7]talked to me and [C]you
 {end_of_verse}
+
+
+

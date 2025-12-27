@@ -1,6 +1,9 @@
 {meta: title One Night A Year}
 {meta: artist Barbara Mandrell}
 {meta: composer C Bannon Royal, John Bettis, Royal C Bannon}
+{meta: x_source classic-country}
+{meta: x_source_file onenightayearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once again the windows shine with pretty lights
@@ -53,3 +56,9 @@ One night a [C]year
 {start_of_verse: Verse 5}
 [G7]One night a [C]year
 {end_of_verse}
+
+
+
+
+
+

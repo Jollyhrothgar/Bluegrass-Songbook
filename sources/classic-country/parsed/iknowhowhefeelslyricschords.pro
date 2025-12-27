@@ -1,6 +1,9 @@
 {meta: title I Know How He Feels}
 {meta: artist Reba McEntire}
 {meta: composer Rick Bowles and William Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file iknowhowhefeelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I heard that fa[C]miliar voice my heart stopped dead in its [G]tracks
@@ -37,3 +40,7 @@ Oh [Am]I've been there [D7]I know how he [G]feels
 {start_of_verse: Verse 5}
 And it's [Am]killing me oh [D7]I know how he [G]feels
 {end_of_verse}
+
+
+
+

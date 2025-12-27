@@ -1,6 +1,9 @@
 {meta: title Calling My Children Home}
 {meta: artist Emmylou Harris}
 {meta: composer Doyle Lawson, Charles Waller, Robert Yates}
+{meta: x_source classic-country}
+{meta: x_source_file callingmychildrenhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Those lives were mine to love and cherish
@@ -43,3 +46,8 @@ I lived my life my love I gave them
 [C]Oh may they hear my [F]calling  [C]calling
 [G7]And come back home some [C]day
 {end_of_verse}
+
+
+
+
+

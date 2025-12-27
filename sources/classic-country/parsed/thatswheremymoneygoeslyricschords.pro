@@ -1,6 +1,9 @@
 {meta: title That's Where My Money Goes}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis and Buck Peddy}
+{meta: x_source classic-country}
+{meta: x_source_file thatswheremymoneygoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Oh boy that's where my money [C]goes
@@ -56,3 +59,11 @@ Oh [G7]boy that's where my money [C]goes
 Oh [G7]boy that's where my money [C]goes
 Oh [G7]boy that's where my money [C]goes
 {end_of_verse}
+
+
+
+
+
+
+
+

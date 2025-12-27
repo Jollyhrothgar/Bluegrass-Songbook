@@ -1,5 +1,8 @@
 {meta: title Making Heartaches}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file makingheartacheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Making [F]heartaches [C]you're that kind of girl
@@ -33,3 +36,7 @@ Making [F]heartaches [C]ending someone's world
 Making [F]heartaches [C]you're that kind of girl
 [G7]You'll keep on making heartaches I can [C]tell
 {end_of_verse}
+
+
+
+

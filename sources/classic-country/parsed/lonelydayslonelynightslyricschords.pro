@@ -1,6 +1,9 @@
 {meta: title Lonely Days Lonely Nights}
 {meta: artist Patty Loveless}
 {meta: composer Karen Staley}
+{meta: x_source classic-country}
+{meta: x_source_file lonelydayslonelynightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lonely days [C]lonely [G]nights
@@ -47,3 +50,9 @@ Wanting [C]you to hold me [G]tight
 {start_of_verse: Verse 4}
 [C]Lonely [G]days [D7]lonely [C]night[G]s
 {end_of_verse}
+
+
+
+
+
+

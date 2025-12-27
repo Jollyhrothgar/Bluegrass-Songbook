@@ -1,6 +1,9 @@
 {meta: title I Thought Of You}
 {meta: artist Connie Smith}
 {meta: composer Jimmy Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file ithoughtofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night another held me in his [G7]arms 
@@ -29,3 +32,6 @@ I thought of you and it was useless to [G7]pretend
 Oh [F]when he asked me if I loved him [C]too
 I [G7]closed my eyes sweetheart and thought of [C]you
 {end_of_verse}
+
+
+

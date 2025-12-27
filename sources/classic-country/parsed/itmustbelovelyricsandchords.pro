@@ -1,6 +1,9 @@
 {meta: title It Must Be Love}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file itmustbelovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]First I get cold then hot
@@ -51,3 +54,8 @@ I've [C]been dreaming [G]of
 Oh [C]what a f[G]eeling
 [D7]It must be [G]love
 {end_of_verse}
+
+
+
+
+

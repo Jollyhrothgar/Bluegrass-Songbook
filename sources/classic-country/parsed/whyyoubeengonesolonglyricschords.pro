@@ -1,6 +1,9 @@
 {meta: title Why You Been Gone So Long}
 {meta: artist Joe Sun}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file whyyoubeengonesolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time it rains I [F]run to my [C]window
@@ -34,3 +37,6 @@ The [C]wolf is scratching at my door
 And I can [F]hear that lonesome wind [C]blow
 Tell me baby [G7]why you been gone so [C]long
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Gonna Love Ya (Till The Cows Come Home)}
 {meta: artist Reba McEntire}
 {meta: composer Rick Carnes and Susan Drake}
+{meta: x_source classic-country}
+{meta: x_source_file gonnaloveyatillthecowscomehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gonna love you till the [Em]cows come home
@@ -48,3 +51,9 @@ Oh [G]gonna love you till the [Em]cows come home
 [G]Gonna love you Lordy [Em]me oh my
 [Am]Gonna love you till the [D7]day I die
 {end_of_verse}
+
+
+
+
+
+

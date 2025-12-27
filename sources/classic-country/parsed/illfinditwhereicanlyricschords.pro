@@ -1,6 +1,9 @@
 {meta: title I’ll Find It Where I Can}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Zack Van Arsdale and Michael Clark}
+{meta: x_source classic-country}
+{meta: x_source_file illfinditwhereicanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It’s just another wasted [C]morning
@@ -36,3 +39,7 @@ And I hope you’ll [G]understand
 If I can’t find it in your arms [C]babe
 I’m gonna find it where I [G]can
 {end_of_verse}
+
+
+
+

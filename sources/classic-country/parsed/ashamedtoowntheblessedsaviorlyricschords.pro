@@ -1,6 +1,9 @@
 {meta: title Ashamed To Own The Blessed Savior}
 {meta: artist Jim and Jesse}
 {meta: composer John Bailes and Walter Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file ashamedtoowntheblessedsaviorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Up[F]on the lonely tree of [C]Calvary
@@ -47,3 +50,9 @@ For [G7]He will be ashamed of [C]you
 {start_of_verse: Verse 5}
 For [G7]He will be ashamed of [C]you
 {end_of_verse}
+
+
+
+
+
+

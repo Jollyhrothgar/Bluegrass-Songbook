@@ -1,6 +1,9 @@
 {meta: title Christmas At Home}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas at home [D7]oh how I would love to spend this Christmas at [G]home
@@ -32,3 +35,7 @@ I’m shipping out to[G7]morrow and [C]forever I may be gone
 Christmas at home [C]Christmas at home  
 [D7]Oh how I would love to spend this Christmas at [G]home
 {end_of_verse}
+
+
+
+

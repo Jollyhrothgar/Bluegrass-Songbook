@@ -1,6 +1,9 @@
 {meta: title I'm A Stranger In My Home}
 {meta: artist Red Foley}
 {meta: composer Pee Wee King and Redd Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file imastrangerinmyhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a stranger in my home that I've [G7]never known before
@@ -39,3 +42,7 @@ Just a stranger in her own [C]home
 Tag:
 [G7]I’m just a stranger in my [C]home
 {end_of_verse}
+
+
+
+

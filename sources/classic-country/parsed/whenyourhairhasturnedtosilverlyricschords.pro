@@ -1,6 +1,9 @@
 {meta: title When Your Hair Has Turned To Silver}
 {meta: artist Eddy Arnold}
 {meta: composer Charles Tobias and Peter DeRose}
+{meta: x_source classic-country}
+{meta: x_source_file whenyourhairhasturnedtosilverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When your hair has turned to silver
@@ -22,3 +25,5 @@ Down the [Am]sunset trail we'll [Dm]stray [G7]
 When your [C]hair has turned to [Am]silver
 I will [Dm]love you [G7]as to[C]day 
 {end_of_verse}
+
+

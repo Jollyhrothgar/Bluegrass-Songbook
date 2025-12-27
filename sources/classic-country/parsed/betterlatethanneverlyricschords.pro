@@ -1,5 +1,8 @@
 {meta: title Better Late Than Never}
 {meta: artist The Lonesome Pine Fiddlers}
+{meta: x_source classic-country}
+{meta: x_source_file betterlatethanneverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Better late than never
@@ -60,3 +63,14 @@ Give 'em a little lovin'
 [G]Better late than never
 [C]Better let you [G]see
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

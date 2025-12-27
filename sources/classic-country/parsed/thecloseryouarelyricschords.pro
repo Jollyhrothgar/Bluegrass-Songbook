@@ -1,6 +1,9 @@
 {meta: title The Closer You Are}
 {meta: artist Earl Thomas Conley}
 {meta: composer Earl T. Conley, Clint Daniels, Bat McGrath}
+{meta: x_source classic-country}
+{meta: x_source_file thecloseryouarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't get you out of [Em]mind
@@ -42,3 +45,8 @@ And the [F]closer you are the [G7]farther away I [C]feel
 {start_of_verse: Verse 6}
 The [F]closer you are the [G7]farther away I [C]feel
 {end_of_verse}
+
+
+
+
+

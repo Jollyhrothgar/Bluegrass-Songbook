@@ -1,5 +1,8 @@
 {meta: title Hall of Angels}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file hallofangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We stayed at the barroom 'til closin'
@@ -61,3 +64,11 @@ As [D7]long as the love in his [G]heart
 Oh they'll [C]live in the hall of the [G]angels
 As [D7]long as the love in your [G]heart
 {end_of_verse}
+
+
+
+
+
+
+
+

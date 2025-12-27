@@ -1,6 +1,9 @@
 {meta: title The Old Refrain}
 {meta: artist George Morgan}
 {meta: composer Craig Market}
+{meta: x_source classic-country}
+{meta: x_source_file theoldrefrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I often [F]think of [C]home dee-ol-ee-[D7]ay
@@ -27,3 +30,6 @@ As long as [C]I can sing [G7]dee-ol-ee-[C]ay
 [F]As [D7]long [Am]as [C]I can sing dee-[F]ol-[G7]ee-[C]ay 
 Dee-[Em]ol-ee-[Am]ay [F]dee-[C]ay
 {end_of_verse}
+
+
+

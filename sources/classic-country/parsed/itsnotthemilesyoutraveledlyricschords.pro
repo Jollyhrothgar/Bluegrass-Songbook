@@ -1,6 +1,9 @@
 {meta: title It’s Not The Miles You Traveled}
 {meta: artist Faron Young}
 {meta: composer David Hall and Louis Redding}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotthemilesyoutraveledlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I see that you're well traveled probably [C]been around the [D7]world
@@ -30,3 +33,6 @@ I don't [C]wanna be [D7]another stop you [G]made
 [C]If it's not the miles you [D7]traveled 
 Then [C]surely it must be [D7]the stops you [G]made
 {end_of_verse}
+
+
+

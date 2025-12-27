@@ -1,6 +1,9 @@
 {meta: title Unloved Unwanted}
 {meta: artist Ray Price}
 {meta: composer Wayne P. Walker and Irene Stanton}
+{meta: x_source classic-country}
+{meta: x_source_file unlovedunwantedlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Un-loved [G7]unwanted  [C]I've never been so [G7]blue
@@ -32,3 +35,7 @@ Are [D7]you happy with the kisses that you [G7]steal
 [C]Un-loved [G7]unwanted  [C]I've never been so [G7]blue
 [F]I know that I should [G7]leave but I don't want [C]to
 {end_of_verse}
+
+
+
+

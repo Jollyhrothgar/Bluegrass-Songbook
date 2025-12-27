@@ -1,6 +1,9 @@
 {meta: title Don't Touch Me There}
 {meta: artist Reba McEntire}
 {meta: composer Michael Heeney}
+{meta: x_source classic-country}
+{meta: x_source_file donttouchmetherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]These [C]hands you can hold 'em [F]all night if you [C]want to
@@ -37,3 +40,7 @@ But when it [C]comes to my heart [G7]don't touch me [C]there
 {start_of_verse: Verse 4}
 [F]Oh when it [C]comes to my heart [G7]don't touch me [F]ther[C]e
 {end_of_verse}
+
+
+
+

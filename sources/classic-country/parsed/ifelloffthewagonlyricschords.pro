@@ -1,6 +1,9 @@
 {meta: title I Fell Off The Wagon}
 {meta: artist Vern Gosdin}
 {meta: composer Jody Emerson, William M. Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file ifelloffthewagonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hadn’t had a drop of nothing since I [D7]got that DU[G]I
@@ -40,3 +43,8 @@ Cause [G]I fell off the wagon in [D7]front of the honky tonk last [G]night
 {start_of_verse: Verse 4}
 Yeah I jumped off the wagon in [D7]front of the honky tonk last [G]night
 {end_of_verse}
+
+
+
+
+

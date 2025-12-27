@@ -1,6 +1,9 @@
 {meta: title An Old Fashioned Christmas}
 {meta: artist Statler Brothers}
 {meta: composer John Rimel}
+{meta: x_source classic-country}
+{meta: x_source_file anoldfashionedChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]These city streets [F]seem cold and hard to [C]me
@@ -34,3 +37,7 @@ For an [F]old fashioned [C]Christmas [G7]I'll be comin' home this [C]year
 Let's have an [F]old fashioned [C]Christmas
 [G7]I'll be comin' home this [C]year
 {end_of_verse}
+
+
+
+

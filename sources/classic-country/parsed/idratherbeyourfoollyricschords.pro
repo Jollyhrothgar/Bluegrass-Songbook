@@ -1,5 +1,8 @@
 {meta: title I'd Rather Be Your Fool}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file idratherbeyourfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody says I’m a fool to love [A7]you
@@ -27,3 +30,5 @@ But the man don’t have to [D7]drink
 And I still possess [A7]your love
 Yes [C]I’d rather be [D7]your fool than anyone I know [G]of
 {end_of_verse}
+
+

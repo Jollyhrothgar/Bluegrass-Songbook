@@ -1,6 +1,9 @@
 {meta: title Love On Arrival (LOA}
 {meta: artist Doyle Lawson}
 {meta: composer Dan Seals}
+{meta: x_source classic-country}
+{meta: x_source_file loveonarrivalloalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just had to call you babe I got your letter
@@ -67,3 +70,10 @@ But LO[G]A (love on arrival) [D7]for [G]you
 And now [D7]after all this time [Em]I’ve got nothin’ on my [C]mind
 But LO[G]A (love on arrival) [D7]for [G]you
 {end_of_verse}
+
+
+
+
+
+
+

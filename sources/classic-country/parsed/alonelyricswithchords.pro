@@ -1,6 +1,9 @@
 {meta: title Alone}
 {meta: artist Waylon Jennings}
 {meta: composer Dee Moeller}
+{meta: x_source classic-country}
+{meta: x_source_file alonelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Isn't there anyone who'll take me like I am
@@ -19,3 +22,4 @@ Someone who wouldn't always try to change [C7]me
 [G7]No I guess there isn't and there's no place I can go
 I guess I'm destined to be [C]alone
 {end_of_verse}
+

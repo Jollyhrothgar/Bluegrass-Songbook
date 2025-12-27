@@ -1,6 +1,9 @@
 {meta: title Two Empty Glasses}
 {meta: artist Lee Harmon}
 {meta: composer Jack Greene, Kenneth Campbell, L.M. Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file twoemptyglasseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The dance floor is empty the people have all gone
@@ -33,3 +36,7 @@ Just [C]two empty [G]glasses and [D7]one empty [G]chair
 {start_of_verse: Verse 4}
 Just [C]two empty [G]glasses and [D7]one empty [G]chair
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Baby Why Not}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file babywhynotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh baby why not just take one more [G7]chance
@@ -39,3 +42,8 @@ And went kinda [C]crazy oh [G7]baby why [C]not
 And [F]went kinda [C]crazy oh [G7]baby why [C]not
 And [F]both lost our [C]minds oh [G7]baby why [C]not
 {end_of_verse}
+
+
+
+
+

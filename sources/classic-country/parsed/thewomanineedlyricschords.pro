@@ -1,6 +1,9 @@
 {meta: title The Woman I Need (Honky Tonk Mind)}
 {meta: artist Johnny Horton}
 {meta: composer Eddie Hall, Van Givens, T. Blake, Carl Adams}
+{meta: x_source classic-country}
+{meta: x_source_file thewomanineedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the woman I got is [C]sweet [G]indeed
@@ -36,3 +39,7 @@ If this fits you don't sit [C]there looking
 [C]The night's still young and there's plenty of time
 To [G]demonstrate the powers of a [D7]honky tonk [G]mind 
 {end_of_verse}
+
+
+
+

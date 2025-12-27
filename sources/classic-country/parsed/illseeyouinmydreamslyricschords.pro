@@ -1,6 +1,9 @@
 {meta: title I'll See You In My Dreams}
 {meta: artist Curtis Potter, Tony Booth, Darrell McCall}
 {meta: composer Weldon E. Lister}
+{meta: x_source classic-country}
+{meta: x_source_file illseeyouinmydreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'll dream of candle lights [C7]roses and the [F]wine
@@ -33,3 +36,7 @@ I'll see you in my [C]dreams tonight [G7]if that's alright with [C]you
 {start_of_verse: Verse 4}
 [F]I'll see you in my [C]dreams tonight [G7]if that's alright with [C]you
 {end_of_verse}
+
+
+
+

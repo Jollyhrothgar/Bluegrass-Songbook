@@ -1,6 +1,9 @@
 {meta: title Could I Have This Dance}
 {meta: artist Anne Murray}
 {meta: composer Wayland Holyfield and Bob House}
+{meta: x_source classic-country}
+{meta: x_source_file couldihavethisdancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll always [G7]remember the [C]song they were [D7]playing 
@@ -29,3 +32,6 @@ The [C]first time we [D7]danced and I [G]knew
 [D7]As we [G]swayed to the [G7]music and [C]held to each [D7]other
 [C]I fell in [D7]love with [G]you 
 {end_of_verse}
+
+
+

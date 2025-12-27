@@ -1,6 +1,9 @@
 {meta: title All I Have to Offer You is Me}
 {meta: artist Charlie Pride}
 {meta: composer Dallas Frazier - Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file allihavetoofferyouismelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Before you take another [C]step
@@ -34,3 +37,6 @@ There'll be no [C]fancy [G]cloths for you to [D7]wear
 [G]Everything I [C]have is [G]standing here [C]in front of you to [G]see
 [C]All I have to [G]offer [D7]you is [G]me
 {end_of_verse}
+
+
+

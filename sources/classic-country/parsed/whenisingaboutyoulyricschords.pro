@@ -1,6 +1,9 @@
 {meta: title When I Sing About You}
 {meta: artist Clint Eastwood}
 {meta: composer DeWayne Blackwell}
+{meta: x_source classic-country}
+{meta: x_source_file whenisingaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Telephone but I can't dial it
@@ -57,3 +60,10 @@ When I sing about [G]you
 Oh it all sounds so [D7]right to me
 When I sing about [C]you[G]
 {end_of_verse}
+
+
+
+
+
+
+

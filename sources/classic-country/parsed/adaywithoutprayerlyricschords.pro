@@ -1,6 +1,9 @@
 {meta: title A Day Without Prayer}
 {meta: artist Jimmie Davis}
 {meta: composer Jimmie Davis and Lorine Emberton}
+{meta: x_source classic-country}
+{meta: x_source_file adaywithoutprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Lord has provided a [C]wonderful [G]way
@@ -33,3 +36,6 @@ The [D7]labor is [A7]all in [D7]vain
 With[G]out the [C]Master's [G]guiding [Em]hand
 The labor is [G]all in vain
 {end_of_verse}
+
+
+

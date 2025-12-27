@@ -1,5 +1,8 @@
 {meta: title It's Your World}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file itsyourworldlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's your world and your smile turns on my [F]sunshine
@@ -32,3 +35,6 @@ There [F]must be there must be
 Oh [C]sweet love in  your world
 Cause there [G7]just isn't any in [C]mine
 {end_of_verse}
+
+
+

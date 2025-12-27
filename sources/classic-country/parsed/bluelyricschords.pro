@@ -1,5 +1,8 @@
 {meta: title Blue}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file bluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blue [G7]b-l-u-e [C]so [C][F]blue
@@ -34,3 +37,8 @@
 [G7]Blue b-l-u-e [F][C]so [C]blue
 [G7]What can I do I'm lost without [C][F]you
 {end_of_verse}
+
+
+
+
+

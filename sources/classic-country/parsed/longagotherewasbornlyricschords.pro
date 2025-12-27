@@ -1,6 +1,9 @@
 {meta: title Long Ago There Was Born}
 {meta: artist Slim Whitman}
 {meta: composer Scott Turner and Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file longagotherewasbornlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Long ago there was born in the City of [G7]David 
@@ -29,3 +32,6 @@ And has shown us the way to be loving and [C]kind
 While the [F]stars sang [C]above lulla[G7]by God is [C]love 
 While the [F]stars sang [C]above lulla[G7]by God is [C]love
 {end_of_verse}
+
+
+

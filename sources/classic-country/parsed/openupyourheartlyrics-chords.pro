@@ -1,6 +1,9 @@
 {meta: title Open Up Your Heart}
 {meta: artist Wynn Stewart}
 {meta: composer Lance Guyness}
+{meta: x_source classic-country}
+{meta: x_source_file openupyourheartlyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You are the key to my happiness lock out the [D7]loneliness
@@ -29,3 +32,6 @@
 [G]Just show your love for me how happy we could [D7]be
 [G]You know you have the key that opens up my heart
 {end_of_verse}
+
+
+

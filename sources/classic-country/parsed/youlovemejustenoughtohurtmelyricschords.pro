@@ -1,6 +1,9 @@
 {meta: title You Love Me Just Enough to Hurt Me}
 {meta: artist George Morgan}
 {meta: composer Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file youlovemejustenoughtohurtmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You love me just enough to [A7]hurt me 
@@ -36,3 +39,7 @@ I [D7]wonder what is really wrong
 You [F]love me just enough to [C]hurt me [A7]baby
 But [D7]not enough for [G7]us to get [C]along
 {end_of_verse}
+
+
+
+

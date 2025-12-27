@@ -1,6 +1,9 @@
 {meta: title Here Comes Honey Again}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file herecomeshoneyagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just about the time I pull [F]myself [C]together
@@ -28,3 +31,6 @@
 [G7]It's funny here comes honey [C]again
 [G7]It's funny here comes honey [C]again
 {end_of_verse}
+
+
+

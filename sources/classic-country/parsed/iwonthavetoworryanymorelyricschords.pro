@@ -1,6 +1,9 @@
 {meta: title I Won't Have To Worry Anymore}
 {meta: artist Doyle Lawson}
 {meta: composer James Goss and Jimmy Jones}
+{meta: x_source classic-country}
+{meta: x_source_file iwonthavetoworryanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down here my [F]burden's [C]heavy and the road is [F]rough and [C]long
@@ -34,3 +37,7 @@ And I [G7]won't have to worry any[C]m-[F]or-[C]e
 My [F]eyes will be on Jesus and my [C]heart [G7]will be [C]aglow 
 And I [G7]won't have to worry any[F]m-o-[C]re
 {end_of_verse}
+
+
+
+

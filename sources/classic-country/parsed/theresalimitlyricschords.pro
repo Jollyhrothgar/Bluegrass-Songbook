@@ -1,6 +1,9 @@
 {meta: title There's A Limit}
 {meta: artist Stonewall Jackson}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file theresalimitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 There's A Limit
@@ -40,3 +43,8 @@ And I wonder [G]how much more [D7]of this my heart can [G]stand
 {start_of_verse: Verse 5}
 There's a limit and I've [D7]almost reached [G]mine
 {end_of_verse}
+
+
+
+
+

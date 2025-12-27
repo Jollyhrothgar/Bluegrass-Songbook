@@ -1,6 +1,9 @@
 {meta: title I Feel Like Flying Away}
 {meta: artist Tom T. Hall}
 {meta: composer Tom T. Hall and Alan Pace}
+{meta: x_source classic-country}
+{meta: x_source_file ifeellikeflyingawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up this [Em]mornin' [A#7]feelin' so [A7]good
@@ -42,3 +45,8 @@ Ain't [D7]that a magnificent [G7]line
 {start_of_verse: Verse 5}
 [Dm]I feel like [G7]flyin' [C]away
 {end_of_verse}
+
+
+
+
+

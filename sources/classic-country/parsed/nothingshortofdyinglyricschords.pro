@@ -1,5 +1,8 @@
 {meta: title Nothing Short Of Dying}
 {meta: artist Travis Tritt}
+{meta: x_source classic-country}
+{meta: x_source_file nothingshortofdyinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I should've told her more I [C]loved her 
@@ -55,3 +58,9 @@ Cause there ain't nothing short of [C]dying
 There ain't nothing short of [C]dying 
 [D7]That's worse than being left [C]alon[G]e
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Bend In The River}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file thebendintheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Past the first bend in the [C]river 
@@ -37,3 +40,9 @@ And each desert hill I have [Am]climbed
 If I find love to my liking
 I'll leave the river's bend [G7]far [C]behind
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Will I Do (Till the Real Thing Comes Along)}
 {meta: artist Prairie Oyster}
 {meta: composer Joan Besen}
+{meta: x_source classic-country}
+{meta: x_source_file willidotilltherealthingcomesalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't look the way the one you [G7]dream about should look
@@ -40,3 +43,7 @@ Though I know there'll come a [C7]day someone might
 [F]Steal your heart [D7]away
 Will I [G7]do till the real thing comes [C]along
 {end_of_verse}
+
+
+
+

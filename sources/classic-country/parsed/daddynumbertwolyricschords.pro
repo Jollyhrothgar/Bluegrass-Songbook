@@ -1,6 +1,9 @@
 {meta: title Daddy Number Two}
 {meta: artist Johnny Lee}
 {meta: composer Glenn Barber and Joe Melson}
+{meta: x_source classic-country}
+{meta: x_source_file daddynumbertwolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't mind his daddy's picture on our table
@@ -35,3 +38,6 @@ If you'll just [G]tell me one more [C]time
 So I can [G]satisfy my [C]mind that I am [G]daddy number [D7]two
 But husband number [C]one [D7]to [G]you
 {end_of_verse}
+
+
+

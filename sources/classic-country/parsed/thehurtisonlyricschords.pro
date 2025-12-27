@@ -1,6 +1,9 @@
 {meta: title The Hurt Is On}
 {meta: artist Freddie Hart}
 {meta: composer Louise Worsham}
+{meta: x_source classic-country}
+{meta: x_source_file thehurtisonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say that you won't be [G7]around
@@ -22,3 +25,5 @@
 [C]One thing for sure now that you're [F]gone
 [C]There is [G7]no cure  the hurt is [C]on
 {end_of_verse}
+
+

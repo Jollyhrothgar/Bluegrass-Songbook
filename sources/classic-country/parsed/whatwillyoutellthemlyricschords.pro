@@ -1,6 +1,9 @@
 {meta: title What Will You Tell Them}
 {meta: artist Ernest Tubb}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file whatwillyoutellthemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now someday they'll wonder where [F]daddy can [C]be
@@ -22,3 +25,5 @@ So [F]how will you tell them or [D7]will you even [G7]try
 Oh [C]what will you tell them when they're [F]old enough to [C]see
 If you think you'll lose them then [G7]blame it on [C]me
 {end_of_verse}
+
+

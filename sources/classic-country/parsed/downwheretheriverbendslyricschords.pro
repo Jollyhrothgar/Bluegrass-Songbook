@@ -1,6 +1,9 @@
 {meta: title Down Where The River Bends}
 {meta: artist J.D. Crowe}
 {meta: composer Jack Anglin, Johnny Wright, George Peck}
+{meta: x_source classic-country}
+{meta: x_source_file downwheretheriverbendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's hard to keep tears out of my [F]eyes
@@ -43,3 +46,8 @@ With God's [C]help we'll meet a[G7]gain
 Under the [C]same old sycamore [F]tree
 Proud of each [C]other [G7]and the land of the [C]free
 {end_of_verse}
+
+
+
+
+

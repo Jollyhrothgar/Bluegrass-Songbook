@@ -1,6 +1,9 @@
 {meta: title Wish I Was In Nashville Leaves Oklahoma}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file wishiwasinnashvillelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went to see my honeydew she [F]lived just down the way
@@ -31,3 +34,7 @@ Maybe someday I will [F]ride in the back of a [G7]big Cadillac [C]oh oh
 I wish I was in Nashville [F]guitar on my [C]back
 Maybe someday I will [F]ride in the back of a [G7]big Cadillac [C]oh oh
 {end_of_verse}
+
+
+
+

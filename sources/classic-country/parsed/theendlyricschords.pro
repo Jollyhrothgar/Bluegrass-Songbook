@@ -1,5 +1,8 @@
 {meta: title The End}
 {meta: artist Curtis Potter}
+{meta: x_source classic-country}
+{meta: x_source_file theendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's colder than December in [F]the silence of our [C]room
@@ -34,3 +37,7 @@
 [G7]As I lie here in loves cold and bitter passions
 [F]I know we've reached [C]the end
 {end_of_verse}
+
+
+
+

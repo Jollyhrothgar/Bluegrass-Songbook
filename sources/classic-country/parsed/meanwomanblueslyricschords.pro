@@ -1,6 +1,9 @@
 {meta: title Mean Woman Blues}
 {meta: artist Roy Orbison}
 {meta: composer Claude Demetrius}
+{meta: x_source classic-country}
+{meta: x_source_file meanwomanblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hmm well I got a woman mean as she can be
@@ -25,3 +28,5 @@ Boy she makes [C7]old Roy flip
 Well [F]I got a woman mean as she can [C]be
 Some[G7]times I think she's [F]almost mean as [C]me 
 {end_of_verse}
+
+

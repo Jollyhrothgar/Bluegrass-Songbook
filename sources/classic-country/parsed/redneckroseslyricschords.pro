@@ -1,6 +1,9 @@
 {meta: title Redneck Roses}
 {meta: artist Tracy Byrd}
 {meta: composer Byron Hill and Tracy Byrd}
+{meta: x_source classic-country}
+{meta: x_source_file redneckroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not so long ago on his [Am]way home from work 
@@ -37,3 +40,7 @@ But [Dm]they brought a smile to her [G7]face every [C]time
 {start_of_verse: Verse 4}
 They could [Dm]still put a smile to her [G7]face if he only had the [C]time
 {end_of_verse}
+
+
+
+

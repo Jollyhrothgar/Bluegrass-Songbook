@@ -1,6 +1,9 @@
 {meta: title Right or Left at Oak Street}
 {meta: artist Roy Clark}
 {meta: composer Charlie Williams and Joe Nixon}
+{meta: x_source classic-country}
+{meta: x_source_file rightorleftatoakstreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The alarm rang at [G7]seven this [C]morning
@@ -78,3 +81,13 @@ The [F]staying or [G7]the running [C]away
 And I [F]don’t know [G7]which takes more courage [Am]
 The [F]staying or [G7]the running [C]away
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

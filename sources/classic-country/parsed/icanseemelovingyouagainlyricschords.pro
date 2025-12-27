@@ -1,6 +1,9 @@
 {meta: title I Can See Me Loving You Again}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file icanseemelovingyouagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can see me [C]loving [D7]you [G]again
@@ -23,3 +26,5 @@ There'll always be the chance to make it [G]better
 Oh I can see me [C]loving [D7]you [G]again
 I can see me [C]loving [D7]you a[G]gain
 {end_of_verse}
+
+

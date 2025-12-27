@@ -1,6 +1,9 @@
 {meta: title Whoa Babe}
 {meta: artist Bob Wills}
 {meta: composer Larry Clinton}
+{meta: x_source classic-country}
+{meta: x_source_file whoababelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Whoa Babe
@@ -50,3 +53,10 @@ Oh Babe how do you get that way
 Oh Babe [C]someday you're gonna pay
 When I [G]don't knock [D7]on your door no [G]more
 {end_of_verse}
+
+
+
+
+
+
+

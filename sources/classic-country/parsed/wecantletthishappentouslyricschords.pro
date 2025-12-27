@@ -1,6 +1,9 @@
 {meta: title We Can't Let This Happen To Us}
 {meta: artist Porter Wagoner}
 {meta: composer Dorothy Jo Hope}
+{meta: x_source classic-country}
+{meta: x_source_file wecantletthishappentouslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lately we're [F]acting as if we [C]were [F]strangers
@@ -23,3 +26,5 @@
 [G7]And we can't let this [C]happen [G7]to us
 [C]No we can't let [G7]this happen [F]to [C]us
 {end_of_verse}
+
+

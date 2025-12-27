@@ -1,6 +1,9 @@
 {meta: title A Place To Hang My Hat}
 {meta: artist Randy Travis}
 {meta: composer Byron Hill, Shawn Camp, Brice Long}
+{meta: x_source classic-country}
+{meta: x_source_file aplacetohangmyhatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can see it [C]in your [G]eyes
@@ -51,3 +54,9 @@ It's just a [G]place to hang my [D7]hat till I go [G]home
 {start_of_verse: Verse 6}
 [C]It's just a [G]place to hang my [D7]hat till I go [G]home
 {end_of_verse}
+
+
+
+
+
+

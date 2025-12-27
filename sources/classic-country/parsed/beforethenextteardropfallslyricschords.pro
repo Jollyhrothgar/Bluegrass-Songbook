@@ -1,6 +1,9 @@
 {meta: title Before The Next Teardrop Falls}
 {meta: artist Freddy Fender}
 {meta: composer Ben Peters and Vivian Keith}
+{meta: x_source classic-country}
+{meta: x_source_file beforethenextteardropfallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If he brings you happiness then I [F]wish you both the [C]best
@@ -22,3 +25,5 @@
 [C]If he ever leaves you blue just [F]remember I love [C]you
 [F]I'll be [C]there before the [G7]next teardrop [C]falls
 {end_of_verse}
+
+

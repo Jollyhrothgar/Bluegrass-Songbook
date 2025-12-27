@@ -1,6 +1,9 @@
 {meta: title Christmas In Killarney}
 {meta: artist Anne Murray}
 {meta: composer Frank Weldon, James Cavanaugh, John Redmond}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasinkillarneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The holly green the ivy green
@@ -37,3 +40,8 @@ Repeat
 {start_of_verse: Verse 6}
 [C]It's Christmas in [G]Killarney with [D7]all of the folks at [G]home
 {end_of_verse}
+
+
+
+
+

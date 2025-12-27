@@ -1,6 +1,9 @@
 {meta: title Heaven's Plan}
 {meta: artist Lefty Frizzel}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file heavensplanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little [F]girl's were made to [Dm]kiss
@@ -42,3 +45,6 @@ Because [F]I [Dm]  know [A#7]    [C]it's heaven's [F]plan
 (Heaven’s plan [Dm]heaven’s plan [A#7]it’s heaven’s [C]plan)
 [F]I [Dm]  know ([A#7]it's heaven's [C]plan
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let The Four Winds Blow}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Antoine Domino}
+{meta: x_source classic-country}
+{meta: x_source_file letthefourwindsblowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I like the way you [C]walk
@@ -34,3 +37,7 @@ Repeat #3 #1
 {start_of_verse: Verse 5}
 Repeat #3
 {end_of_verse}
+
+
+
+

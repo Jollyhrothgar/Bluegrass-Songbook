@@ -1,6 +1,9 @@
 {meta: title It's Just A Matter Of Making Up My Mind}
 {meta: artist Mickey Gilley}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file itsjustamatterofmakingupmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the sun's gonna [G7]come up [C]tomorrow
@@ -23,3 +26,5 @@ It's just a [C]matter of [F]makin' up my [C]mind
 [G7]It's just a [C]matter of [F]makin' up my [C]mind
 It's just a matter of [F]makin' up my [C]mind
 {end_of_verse}
+
+

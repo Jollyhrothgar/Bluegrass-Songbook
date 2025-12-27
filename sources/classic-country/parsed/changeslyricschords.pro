@@ -1,6 +1,9 @@
 {meta: title Changes}
 {meta: artist Billy Walker}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file changeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I feel unhappy I feel so sad
@@ -30,3 +33,8 @@ Now all my days are filled with tears
 [Em]I'm going through [Dm]changes  [F]I'm [Em]going through [Dm]changes
 [F]I'm [Em]going through [Dm]changes
 {end_of_verse}
+
+
+
+
+

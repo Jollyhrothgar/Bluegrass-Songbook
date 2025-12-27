@@ -1,6 +1,9 @@
 {meta: title Easy To Love You}
 {meta: artist Randy Travis}
 {meta: composer Danny Orton and Deanna Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file easytoloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You were [C]pure to me as [C7]fresh un[F]traveled snow
@@ -34,3 +37,7 @@ And it was so [C]easy to love you [G7]so hard to walk [C]away
 {start_of_verse: Verse 5}
 [F]Lord it was so [C]easy to love you [G7]so hard to walk [C]away
 {end_of_verse}
+
+
+
+

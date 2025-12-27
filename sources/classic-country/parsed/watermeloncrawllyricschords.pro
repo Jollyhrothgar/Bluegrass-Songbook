@@ -1,6 +1,9 @@
 {meta: title Watermelon Crawl}
 {meta: artist Tracy Byrd}
 {meta: composer Buddy Brock and Zack Turner}
+{meta: x_source classic-country}
+{meta: x_source_file watermeloncrawllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was driving through Georgia in late July
@@ -62,3 +65,11 @@ If you [G]drink don't drive do the [D7]watermelon [G]crawl
 [D7]Do the watermelon [G]crawl [D7]have fun you [G]all
 And [D7]do the watermelon [G]crawl
 {end_of_verse}
+
+
+
+
+
+
+
+

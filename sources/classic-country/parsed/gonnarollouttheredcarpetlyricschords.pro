@@ -1,5 +1,8 @@
 {meta: title Gonna Roll Out The Red Carpet}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file gonnarollouttheredcarpetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna roll out the red carpet when you come home 
@@ -24,3 +27,5 @@ Since I got a word that you was a [G]coming
 The clock on the wall is about stop [C]running 
 I'm a gonna [G]roll out the red carpet [D7]when you come [G]home
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I Know You're Not An Angel}
 {meta: artist Red Sovine}
 {meta: composer Red Sovine and Elmo Linn}
+{meta: x_source classic-country}
+{meta: x_source_file iknowyourenotanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You take in all the nightspots 
@@ -43,3 +46,8 @@ And your [C7]past is filled with [F]shame
 I know you're not an [C]angel 
 But I [G7]love you just the [C]same
 {end_of_verse}
+
+
+
+
+

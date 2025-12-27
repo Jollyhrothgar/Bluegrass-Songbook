@@ -1,5 +1,8 @@
 {meta: title Jimmy Martinez}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file jimmymartinezlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The story began in Renosa a village in old [G7]Mexico
@@ -36,3 +39,7 @@
 [C]Then one night the village was saddened the light in her window was gone
 [G7]Oh oh [C]oh
 {end_of_verse}
+
+
+
+

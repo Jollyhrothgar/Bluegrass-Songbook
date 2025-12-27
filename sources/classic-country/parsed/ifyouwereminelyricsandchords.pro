@@ -1,6 +1,9 @@
 {meta: title If You Were Mine}
 {meta: artist Wilburn Brothers}
 {meta: composer Damon Black}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwereminelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't keep from [C]saying so [G]you of all the [C]girls I know
@@ -29,3 +32,6 @@ The highest [A7]mountain in the world the [D7]bravest men could find
 Then [G]I'd gladly [C]turn right back to [G]get to you [C]retrace each track
 Go [G]right back o'er that mountain stack [D7]if you were [G]mine
 {end_of_verse}
+
+
+

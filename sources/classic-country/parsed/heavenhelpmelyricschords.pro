@@ -1,6 +1,9 @@
 {meta: title Heaven Help Me}
 {meta: artist Porter Wagoner}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file heavenhelpmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heaven help me for my heart has gone [D7]astray
@@ -30,3 +33,6 @@
 [D7]Forsaking all others [C]till death do we [G]part
 [D7]Forsaking all others [C]till death do we [G]part
 {end_of_verse}
+
+
+

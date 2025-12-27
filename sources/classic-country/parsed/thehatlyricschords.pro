@@ -1,5 +1,8 @@
 {meta: title The Hat}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file thehatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey kid where'd you get the lid
@@ -42,3 +45,8 @@ Where'd you get a hat like [G7]that
 [C]If I asked you nice [F]would you tell me [B7]twice[C]
 Where you hang a [G7]hat like [C]that
 {end_of_verse}
+
+
+
+
+

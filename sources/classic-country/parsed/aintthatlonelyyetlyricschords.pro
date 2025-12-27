@@ -1,6 +1,9 @@
 {meta: title Ain't That Lonely Yet}
 {meta: artist Dwight Yoakam}
 {meta: composer James House and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file aintthatlonelyyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You keep callin' me [F]on the tele[C]phone
@@ -56,3 +59,10 @@ No I [F]ain't that [G7]lonely [C]yet
 After [Am]what you put me [E7]through 
 No I [F]ain't that [G7]lonely [C]yet
 {end_of_verse}
+
+
+
+
+
+
+

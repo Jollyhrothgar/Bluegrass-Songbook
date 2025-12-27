@@ -1,6 +1,9 @@
 {meta: title Paper Rosie}
 {meta: artist Gene Watson}
 {meta: composer Dallas Harms}
+{meta: x_source classic-country}
+{meta: x_source_file paperrosielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The sun goes down in Calvin [C]county
@@ -60,3 +63,11 @@ Paper [D7]Rosie  paper [C]Rosie
 She [D7]sold you paper roses 
 But they only cost a [G]dime
 {end_of_verse}
+
+
+
+
+
+
+
+

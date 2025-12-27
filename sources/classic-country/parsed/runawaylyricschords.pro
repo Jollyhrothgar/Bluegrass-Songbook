@@ -1,6 +1,9 @@
 {meta: title Run Away}
 {meta: artist Wynn Stewart}
 {meta: composer Bobby George}
+{meta: x_source classic-country}
+{meta: x_source_file runawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One of these days I'm a gonna run away
@@ -37,3 +40,8 @@ Yeah one of these days well I'm a gonna run away
 [G]One of these days I'm a gonna run away
 [D7]I've got a date with a freight and I'll make my [G]getaway
 {end_of_verse}
+
+
+
+
+

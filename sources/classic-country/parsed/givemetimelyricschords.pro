@@ -1,6 +1,9 @@
 {meta: title Give Me Time}
 {meta: artist Sonny James}
 {meta: composer Richard Hollingsworth and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file givemetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Give me [C]time ([G7]give me [C]time) you must be[F]lieve me
@@ -31,3 +34,6 @@ Please give me [C]time[G7]
 To [G7]prove my [D7]love for [G7]you just give me [C]time 
 ([F]Give me [C]time [G7]give me [C]time)
 {end_of_verse}
+
+
+

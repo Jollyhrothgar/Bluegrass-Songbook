@@ -1,6 +1,9 @@
 {meta: title I'm Not As Strong As I Used To Be}
 {meta: artist Moe Bandy}
 {meta: composer Phyllis Powell and Dewayne Orender}
+{meta: x_source classic-country}
+{meta: x_source_file imnotasstrongasiusedtobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pardon me I don't know [F]what made me break [C]down
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G7]Losing her has made me weaken through the [C]years
 {end_of_verse}
+
+
+
+

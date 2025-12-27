@@ -1,6 +1,9 @@
 {meta: title Same Old Memories}
 {meta: artist Ray Price}
 {meta: composer Tompall Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file sameoldmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You said that you'd come back and start [C]all over
@@ -22,3 +25,5 @@ The same old [C]memories and [A7]every time they [D7]hurt me more
 [G]You're happy when my heart is on its [C]knees
 [D7]Hurting with the same old memo[G]ries
 {end_of_verse}
+
+

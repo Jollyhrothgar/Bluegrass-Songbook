@@ -1,6 +1,9 @@
 {meta: title The Look In Baby's Eyes}
 {meta: artist Johnny Duncan}
 {meta: composer Ann J. Morton}
+{meta: x_source classic-country}
+{meta: x_source_file thelookinbabyseyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's our house [G7]the porch light's [C]on
@@ -26,3 +29,5 @@ Lord I [C]hope that she will under[G7]stand [C]   [F]
 I'll do my best [D7]and if I can
 I'll [C]change the [Dm]look [G7]in my baby's [C]eyes[F]  [C]
 {end_of_verse}
+
+

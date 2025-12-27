@@ -1,5 +1,8 @@
 {meta: title When I Reach That City On The Hill}
 {meta: artist The Blue Sky Boys}
+{meta: x_source classic-country}
+{meta: x_source_file whenireachthatcityonthehilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On the top of Mount Zion is a city 
@@ -42,3 +45,8 @@ Though a pilgrim yet I love Thee [D7]still
 [G]I'll not leave Thee through the ages 
 When I reach that [D7]city on the [G]hill
 {end_of_verse}
+
+
+
+
+

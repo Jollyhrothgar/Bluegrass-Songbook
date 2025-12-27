@@ -1,6 +1,9 @@
 {meta: title Jesus Keep Me Near The Cross}
 {meta: artist Jim Reeves}
 {meta: composer Fanny J. Crosby and William H. Doane}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuskeepmenearthecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus keep me [F]near the cross  
@@ -29,3 +32,6 @@ In the cross [F]in the cross
 [C]Till my raptured [F]soul shall find  
 [C]Rest beyond [G7]the [C]river 
 {end_of_verse}
+
+
+

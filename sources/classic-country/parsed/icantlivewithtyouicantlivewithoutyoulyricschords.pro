@@ -1,6 +1,9 @@
 {meta: title I Can't Live With You (I Can't Live Without You)}
 {meta: artist Porter Wagoner}
 {meta: composer Dale Parker}
+{meta: x_source classic-country}
+{meta: x_source_file icantlivewithtyouicantlivewithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't live with you and I can't [F]live without [C]you
@@ -36,3 +39,7 @@
 [C]Cause I can't live with you and I can't [F]live without [C]you
 [G7]What in the world am I to [C]do
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: artist Jim Hall}
 {meta: music Jim Hill}
+{meta: x_source classic-country}
+{meta: x_source_file whatadaythatwillbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There is coming a day when no heartaches shall come
@@ -24,3 +27,5 @@ And leads me through the Promised [C]Land
 What a [G7]day glorious day that will [C]be
 What a [G7]day glorious day that will [C]be
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title My Pillow}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file mypillowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pillow you're [A7]catching [D7]my tears [G]again
@@ -26,3 +29,6 @@ I can't help my [A7]feelings I [D7]can't hold them [G]back
 [C]I know it's foolish and [G]I know she's [E7]gone
 Oh [C]why must I [D7]cry on and [G]on
 {end_of_verse}
+
+
+

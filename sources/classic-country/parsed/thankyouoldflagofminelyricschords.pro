@@ -1,6 +1,9 @@
 {meta: title Thank You Old Flag Of Mine}
 {meta: artist Boxcar Willie}
 {meta: composer Bill Mack}
+{meta: x_source classic-country}
+{meta: x_source_file thankyouoldflagofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wanna thank you old flag of mine [F]for letting me [C]defend
@@ -33,3 +36,7 @@ I wanna thank you old flag of mine [G7]for what you mean to [C]me
 {start_of_verse: Verse 5}
 I wanna thank you old flag of mine [G7]for what you mean to [C]me
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title You’re My Man}
 {meta: artist Lynn Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file youremymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For once in my life I [F]know the meaning of [C]happiness
@@ -36,3 +39,7 @@ To[Am]gether we're a team that's just unbend[E7]able
 {start_of_verse: Verse 4}
 Oh [F]my whole world's just [G7]knowing you're my [F]man my man my [C]man
 {end_of_verse}
+
+
+
+

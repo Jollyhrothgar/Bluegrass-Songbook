@@ -1,6 +1,9 @@
 {meta: title All In The Name Of Love}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file allinthenameoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take me in the name of [Am]love
@@ -41,3 +44,8 @@ And [G]I will [Em]do it [A7]all in the [D7]name of [G]love
 [G]Take me in the name of [Am]love
 [C]Let me be the one you stand [G]beside
 {end_of_verse}
+
+
+
+
+

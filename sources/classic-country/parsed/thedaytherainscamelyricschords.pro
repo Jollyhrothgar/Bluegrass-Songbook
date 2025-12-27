@@ -1,5 +1,8 @@
 {meta: title The Day The Rains Came}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file thedaytherainscamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your strange love was what I [C]found
@@ -32,3 +35,6 @@ I know that I'd be glad of what I'd [D7]found
 [G]Your strange love was what I [C]found
 The [G]day the rains came [C]down 
 {end_of_verse}
+
+
+

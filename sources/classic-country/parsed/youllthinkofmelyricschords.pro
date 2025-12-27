@@ -1,6 +1,9 @@
 {meta: title You'll Think Of Me}
 {meta: artist Elvis Presley}
 {meta: composer Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file youllthinkofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm sorry now girl but I must leave [F]you
@@ -46,3 +49,8 @@ No [F]no you won't think of [C]me
 Then in your [E7]warm and loving [Am]bed you won't think of [E7]me 
 No [F]no you won't think of [C]me
 {end_of_verse}
+
+
+
+
+

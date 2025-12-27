@@ -1,6 +1,9 @@
 {meta: title Fly Little Bluebird}
 {meta: artist The Goins Brothers}
 {meta: composer M. Goins, M. Paxton, R. Goins}
+{meta: x_source classic-country}
+{meta: x_source_file flylittlebluebirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Poor little bluebird in a pink cherry [G7]tree
@@ -43,3 +46,8 @@ No need to [F]linger no need to [G7]stay
 Time you were [C]leaving time to take [F]wings
 Up in the [C]blue sky [G7]your blue heart can [C]sing
 {end_of_verse}
+
+
+
+
+

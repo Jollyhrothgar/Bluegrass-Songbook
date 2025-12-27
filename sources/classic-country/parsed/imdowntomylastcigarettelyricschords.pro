@@ -1,6 +1,9 @@
 {meta: title I'm Down To My Last Cigarette}
 {meta: artist Billy Walker}
 {meta: composer Harlan Howard and Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file imdowntomylastcigarettelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The coffee's all [G7]gone and my [C]eyes burn like [C7]fire
@@ -33,3 +36,7 @@ And I'm [C]down to my [G7]last [C]cigarette
 {start_of_verse: Verse 5}
 Yes I'm [C]down to my [G7]last [C]cigarette 
 {end_of_verse}
+
+
+
+

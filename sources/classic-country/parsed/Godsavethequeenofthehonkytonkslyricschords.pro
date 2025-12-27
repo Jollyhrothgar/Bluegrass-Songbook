@@ -1,6 +1,9 @@
 {meta: title God Save The Queen Of The Honky Tonks}
 {meta: artist Charlie Walker}
 {meta: composer Wayne Kemp and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file Godsavethequeenofthehonkytonkslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God save the queen of the honky tonks
@@ -46,3 +49,9 @@ And her [G7]old fashioned ways began to [C]change[G7]
 {start_of_verse: Verse 6}
 Yes [G7]God save the queen from men like [C]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Can't Do Wrong And Get By}
 {meta: artist George Jones and Ricky Skaggs}
 {meta: composer Larry Cordle and Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file youcantdowrongandgetbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember my [F]grandfather's [C]counsel
@@ -40,3 +43,8 @@ You [C]can't do [G7]wrong and get [C]by
 {start_of_verse: Verse 5}
 Oh [F]no you [C]can't do [G7]wrong and get [C]by
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Fence Me In}
 {meta: artist Dave Dudley}
 {meta: composer Cole Porter}
+{meta: x_source classic-country}
+{meta: x_source_file dontfencemeinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh give me land lots of land  
@@ -26,3 +29,6 @@ I wanna ride to the ridge where the west [G7]commences
 [C]Gaze at the moon until I lose my senses
 [G]Can't look at hobbles and I [E7]can't stand [C]fences [G]don't [D7]fence me [G]in
 {end_of_verse}
+
+
+

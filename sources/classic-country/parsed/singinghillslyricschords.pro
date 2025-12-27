@@ -1,6 +1,9 @@
 {meta: title Singing Hills}
 {meta: artist Slim Whitman}
 {meta: composer Mack David, Dick Sanford, Sammy Mysels}
+{meta: x_source classic-country}
+{meta: x_source_file singinghillslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The singing hills are singing [G7]tonight
@@ -20,3 +23,5 @@ And echoing among the singing [C]hills
 [G7]Though you are [C]gone my song lingers [G7]on
 And echoing among the singing [C]hills
 {end_of_verse}
+
+

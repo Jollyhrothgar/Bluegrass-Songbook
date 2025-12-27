@@ -1,5 +1,8 @@
 {meta: title I'll Love You Forever And Ever}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file illloveyouforeverandeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Forever and ever I'll love [F]you
@@ -28,3 +31,6 @@
 [F]The man in the moon may stop smiling
 [G7]But I'll always be by your [C]side
 {end_of_verse}
+
+
+

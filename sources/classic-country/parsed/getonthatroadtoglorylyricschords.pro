@@ -1,6 +1,9 @@
 {meta: title Get On That Road To Glory}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Gladys Stacey, Louise Certain, Benny Martin}
+{meta: x_source classic-country}
+{meta: x_source_file getonthatroadtoglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Get on the road to glory where there'll [C]be no stop [G]signs
@@ -29,3 +32,6 @@ But [A7]stay on the road with Jesus and [D7]He will lead the way
 Take [G]heed to the red lights and [C]abide by His [G]laws
 For [C]Jesus paid for [G]our sins when He died [D7]upon the [G]cross
 {end_of_verse}
+
+
+

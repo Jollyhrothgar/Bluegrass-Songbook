@@ -1,6 +1,9 @@
 {meta: title Neon Blue}
 {meta: artist The Mavericks}
 {meta: composer Pete Anderson and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file neonbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]And when the [C]sun goes down [D7]your memory [C]still hanging [G]round[C]
@@ -30,3 +33,6 @@ Tempta[G]tion temptation [A7]has taken you [D7]away
 Leaving my [G]hea[D7]rt a neon [G]blue 
 [C]Turning my [G]hea[D7]rt a neon [G]blue
 {end_of_verse}
+
+
+

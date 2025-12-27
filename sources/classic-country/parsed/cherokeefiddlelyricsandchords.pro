@@ -1,6 +1,9 @@
 {meta: title Cherokee Fiddle}
 {meta: artist Mickey Gilley}
 {meta: composer Michael Martin Murphey}
+{meta: x_source classic-country}
+{meta: x_source_file cherokeefiddlelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the train pulled into the [F]station
@@ -20,3 +23,5 @@ Oh good [C]whiskey never [G7]let him lose his [C]place
 {start_of_verse: Verse 3}
 Oh good whiskey never [G7]let him lose his [C]place
 {end_of_verse}
+
+

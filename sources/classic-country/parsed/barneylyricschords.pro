@@ -1,6 +1,9 @@
 {meta: title Barney}
 {meta: artist Loretta Lynn}
 {meta: composer Frances Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file barneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can take Barney out of the barroom
@@ -44,3 +47,9 @@
 [G]You can take Barney out of the barroom
 [C]But you [G]can't take the bar outta [G][D7]Barney
 {end_of_verse}
+
+
+
+
+
+

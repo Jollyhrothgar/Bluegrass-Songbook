@@ -1,6 +1,9 @@
 {meta: title Country Hall Of Fame}
 {meta: artist Hank Locklin}
 {meta: composer Karl Davis}
+{meta: x_source classic-country}
+{meta: x_source_file countryhalloffamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was roaming around in Nashville in the state of Tennessee 
@@ -61,3 +64,14 @@ Rod [G7]Brasfield Ira Louvin these stars will always [C][F]shine
 Ernest Tubb the great Red Foley and Hank Williams bless his name
 Though some are [G7]gone they'll live forever in the Country Hall Of [F]Fame 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

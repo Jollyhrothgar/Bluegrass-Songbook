@@ -1,6 +1,9 @@
 {meta: title Across The Borderline}
 {meta: artist Willie Nelson}
 {meta: composer John Hiatt, Ry Cooder, James Dickinson}
+{meta: x_source classic-country}
+{meta: x_source_file acrosstheborderlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a place where [G7]I've been [C]told
@@ -54,3 +57,9 @@ Cause [F]you've paid the [G7]price to [C]come so far
 And you're [C]still [G7]just across the border [C]line
 [Am]And you're [C]still [G7]just across the border [C]line
 {end_of_verse}
+
+
+
+
+
+

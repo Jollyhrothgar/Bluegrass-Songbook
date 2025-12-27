@@ -1,6 +1,9 @@
 {meta: title If You Don't Believe The Bible}
 {meta: artist Ricky Skaggs}
 {meta: composer Carl Jackson and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudontbelievethebiblelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You trust your family doctor and a [C]drug is for your [G]fears
@@ -51,3 +54,8 @@ If you [G]don’t believe the bible then [D7]you don’t know the [G]Lord
 (If you don’t believe) [C]if you don’t believe 
 If you [G]don’t believe the bible then [D7]you don’t know the [G]Lord
 {end_of_verse}
+
+
+
+
+

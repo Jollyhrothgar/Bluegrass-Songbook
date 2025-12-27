@@ -1,5 +1,8 @@
 {meta: title The Last One To Touch Me}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file thelastonetotouchmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If there ever was an angel then [G7]surely you must be [C]one
@@ -29,3 +32,6 @@ They [F]tell me we shall meet again upon the golden [G7]shore
 I want [C]you to be the first [G7]one to touch [C]me
 [F]I want [C]you to be the [F]first the last the only [G7]one to touch [C]me
 {end_of_verse}
+
+
+

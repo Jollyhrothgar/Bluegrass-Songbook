@@ -1,6 +1,9 @@
 {meta: title The Beaches Of Cheyenne}
 {meta: artist Garth Brooks}
 {meta: composer Bryan Kennedy, Don Roberts, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file thebeachesofcheyennelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They packed up all his [D7]buckles 
@@ -78,3 +81,13 @@ Cause every night she walks the [D7]beaches of Che[C]yenne
 {start_of_verse: Verse 10}
 Yes every [G]night she walks the [D7]beaches of Che[C]yenne
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

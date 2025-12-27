@@ -1,6 +1,9 @@
 {meta: title Heaven Ain't Ready For You Yet}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file heavenaintreadyforyouyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When they carried you into the parlor
@@ -55,3 +58,8 @@
 [D7]Now I've seen your face now that we've met
 [G]I shall not slip [C]away
 {end_of_verse}
+
+
+
+
+

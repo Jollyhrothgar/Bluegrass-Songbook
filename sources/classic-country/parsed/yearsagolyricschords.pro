@@ -1,6 +1,9 @@
 {meta: title Years Ago}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file yearsagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't come to kiss the bride so [F]don't seat me on either side
@@ -41,3 +44,8 @@ Is that the one they call their [G7]song
 There's no reason I should stay the [F]groom won't shake hands anyway
 [C]And I kissed the [G7]bride years [C]ago
 {end_of_verse}
+
+
+
+
+

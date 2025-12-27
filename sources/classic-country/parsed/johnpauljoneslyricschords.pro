@@ -1,6 +1,9 @@
 {meta: title John Paul Jones}
 {meta: artist Johnny Horton}
 {meta: composer Jimmie Driftwood}
+{meta: x_source classic-country}
+{meta: x_source_file johnpauljoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When John Paul Jones was a little boy he pointed to the sea
@@ -44,3 +47,9 @@ When John Paul was a member of the British Admiralty
 He killed a sailor on his ship which was a [Am]crime you [C]see
 He changed his name to JP Jones and [G7]came to [C]Amerike
 {end_of_verse}
+
+
+
+
+
+

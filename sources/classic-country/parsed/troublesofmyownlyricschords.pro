@@ -1,6 +1,9 @@
 {meta: title Troubles of My Own}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Antoine Domino}
+{meta: x_source classic-country}
+{meta: x_source_file troublesofmyownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nobody knows my trouble
@@ -36,3 +39,7 @@ My [F]father sister and brother
 Tell [C]them don't worry
 [G7]I'm through with all my [C]trouble
 {end_of_verse}
+
+
+
+

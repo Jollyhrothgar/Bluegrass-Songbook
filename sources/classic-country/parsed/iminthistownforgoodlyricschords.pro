@@ -1,6 +1,9 @@
 {meta: title I'm In This Town For Good}
 {meta: artist Johnny Duncan}
 {meta: composer Paul Evans}
+{meta: x_source classic-country}
+{meta: x_source_file iminthistownforgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today you said goodbye [D7]tears fell from my blue eyes
@@ -38,3 +41,7 @@ I [F]guess I'm [G7]in this town for [C]good
 {start_of_verse: Verse 5}
 I [F]guess I'm [G7]in this town for [C]good
 {end_of_verse}
+
+
+
+

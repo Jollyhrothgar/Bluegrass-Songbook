@@ -1,6 +1,9 @@
 {meta: title Let Me Be The First To Know}
 {meta: artist the Wilburn Brothers}
 {meta: composer Doyle Wilburn and Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file letmebethefirsttoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Darling [G7]let me be the first to [C]know
@@ -33,3 +36,7 @@ It would [F]be so hard for me to let you [G7]go
 But [C]if you should ever find you love [F]another
 Darling [G7]let me be the f-irst t-o [C]k-now
 {end_of_verse}
+
+
+
+

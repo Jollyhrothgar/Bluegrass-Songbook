@@ -1,6 +1,9 @@
 {meta: title Let's Give It Up Or Get It On}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file letsgiveituporgetitonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a new car in the driveway and some [F]money I don't [C]need
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [F]So honey let's [C]give it [G7]up or get it [C]on
 {end_of_verse}
+
+
+
+

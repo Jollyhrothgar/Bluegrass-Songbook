@@ -1,5 +1,8 @@
 {meta: title Where Were You (When The World Stopped Turning)}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file wherewereyouwhentheworldstoppedturninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where were you when the world stopped turning 
@@ -112,3 +115,18 @@ And I [F]remember this from when I was [C]young
 [C]Where were you when the world stopped turning 
 [G7]On that September [C]day
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

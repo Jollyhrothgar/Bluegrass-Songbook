@@ -1,6 +1,9 @@
 {meta: title The Bottle Is Just Fooling You}
 {meta: artist Carl Smith}
 {meta: composer Wayne P. Walker and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file thebottleisjustfoolingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now just as fast as that bottle is [F]passed
@@ -36,3 +39,7 @@
 [C]You ain't got no trouble while you're drinking [F]double
 [C]That bottle [G7]is just fooling [C]you
 {end_of_verse}
+
+
+
+

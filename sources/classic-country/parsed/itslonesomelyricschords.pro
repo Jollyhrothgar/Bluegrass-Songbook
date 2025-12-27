@@ -1,6 +1,9 @@
 {meta: title It's Lonesome}
 {meta: artist Billy Walker}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file itslonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've walked a million miles across this [C]floor
@@ -34,3 +37,7 @@
 [C]Oh love me as only you can do
 [D7]Hmm it's lonesome without [G]you
 {end_of_verse}
+
+
+
+

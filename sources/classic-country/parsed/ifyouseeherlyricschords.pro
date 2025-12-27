@@ -1,6 +1,9 @@
 {meta: title If You See Her}
 {meta: artist Waylon Jennings}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouseeherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you see her and she [F]mentions my [C]name
@@ -43,3 +46,8 @@ Tell her the times have but [Dm]I have not [G7]changed
 [Dm]All my friends know that I [C]still feel the [F]same
 [C]If you see her and she [G7]mentions my [C]name
 {end_of_verse}
+
+
+
+
+

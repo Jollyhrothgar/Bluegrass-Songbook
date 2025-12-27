@@ -1,6 +1,9 @@
 {meta: title Signed Sealed Then Forgotten}
 {meta: artist Cowboy Copas}
 {meta: composer Marcel Joseph}
+{meta: x_source classic-country}
+{meta: x_source_file signedsealedthenforgottenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was signed it was [D7]sealed then [G]forgotten
@@ -29,3 +32,6 @@ To your [A7]side I would have known we'd never [D7]part
 It was [G]signed but the [D7]seal now is [G]broken
 Like the [D7]heart that's still in love with you sweet[G]heart
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Fallen Angel Lyrics Chords}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker, Webb Pierce, Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file fallenangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's just  a [G7]fallen angel and I'm the fool who made her [C]fall
@@ -20,3 +23,4 @@ The [G7]devil took her from me and claimed her for his [C]own
 She's just a  fallen [G7]angel but I don't blame her for it [C]all
 She's just a  [G7]fallen angel and I'm the fool who made her [C]fall
 {end_of_verse}
+

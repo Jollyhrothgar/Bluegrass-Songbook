@@ -1,6 +1,9 @@
 {meta: title When The Cactus Is In Bloom}
 {meta: artist Bill Monroe}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file whenthecactusisinbloomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The cattle prowled and the coyotes howled
@@ -50,3 +53,9 @@ Daylight comes and the cowhands yell
 I throw my saddle [G7]on my old cow-horse
 I drink my coffee from a [C]can
 {end_of_verse}
+
+
+
+
+
+

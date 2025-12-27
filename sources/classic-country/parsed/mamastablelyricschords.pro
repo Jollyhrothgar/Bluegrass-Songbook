@@ -1,6 +1,9 @@
 {meta: title Mama's Table}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Jamey Van Johnson and George G. Teren III}
+{meta: x_source classic-country}
+{meta: x_source_file mamastablelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We pull a chair up every night and eat and [C]talk and joke and fight
@@ -35,3 +38,7 @@ It has some [G]faded spots and cracks
 And a [C]couple of burns from candle wax
 There’s a [D7]memory in each scratch on mama's [G]table
 {end_of_verse}
+
+
+
+

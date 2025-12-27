@@ -1,6 +1,9 @@
 {meta: title White Christmas Blue}
 {meta: artist Loretta Lynn}
 {meta: composer Shawn Camp and Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file whiteChristmasbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's Christmas Eve and I'm still all alone
@@ -47,3 +50,11 @@ Icicles hanging from the eves
 Well I been wrapping presents and I been missing you
 [D7]You’re turning my white Christmas [G]blue
 {end_of_verse}
+
+
+
+
+
+
+
+

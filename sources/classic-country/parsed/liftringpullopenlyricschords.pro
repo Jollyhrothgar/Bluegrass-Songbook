@@ -1,6 +1,9 @@
 {meta: title Lift Ring Pull Open}
 {meta: artist Jim Ed Brown}
 {meta: composer Joe Cooper and John Gallie}
+{meta: x_source classic-country}
+{meta: x_source_file liftringpullopenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are four words that are printed on most every can of [D7]beer
@@ -35,3 +38,7 @@ As I [G7]try to forget I'm a loser and escape this [C]misery
 Lift ring  pull open don't even need a [D7]key
 I'll [G7]just pop a top and drink to the last drop and drown my [C]misery
 {end_of_verse}
+
+
+
+

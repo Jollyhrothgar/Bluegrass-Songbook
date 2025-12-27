@@ -1,6 +1,9 @@
 {meta: title Bo Weevil}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file boweevillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On Saturday night where I was born
@@ -36,3 +39,9 @@ As sure as I'm sittin’ on this bale of [G]hay
 {start_of_verse: Verse 7}
 repeat
 {end_of_verse}
+
+
+
+
+
+

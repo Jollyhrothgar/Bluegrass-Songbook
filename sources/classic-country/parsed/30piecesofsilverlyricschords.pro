@@ -1,6 +1,9 @@
 {meta: title 30 Pieces of Silver}
 {meta: artist Hank Williams Sr.}
 {meta: composer Odell McLeod}
+{meta: x_source classic-country}
+{meta: x_source_file 30piecesofsilverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tis a sad but true [F]story  from the bible it [C]came
@@ -34,3 +37,7 @@
 [C7]30 pieces of [F]silver  30 shackles of [C]shame
 [G7]Was the price paid for Jesus on the cross he was [C]slain
 {end_of_verse}
+
+
+
+

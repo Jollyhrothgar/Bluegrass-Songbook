@@ -1,6 +1,9 @@
 {meta: title Everything That I Own (Has Got A Dent)}
 {meta: artist Randy Travis}
 {meta: composer Mark Nesler and Tony Martin}
+{meta: x_source classic-country}
+{meta: x_source_file everythingthatiownhasgotadentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll drive around with the trunk tied down with a [F]bungee cord
@@ -47,3 +50,8 @@ Can't [Am]find one thing that [D7]don't
 Every[Dm]thing that I [G7]own has got a [C]dent
 [G7]Big old [C]dent
 {end_of_verse}
+
+
+
+
+

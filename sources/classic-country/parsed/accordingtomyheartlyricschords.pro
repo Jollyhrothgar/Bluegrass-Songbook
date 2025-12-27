@@ -1,6 +1,9 @@
 {meta: title According to my Heart}
 {meta: artist Faron Young}
 {meta: composer Gary Walker}
+{meta: x_source classic-country}
+{meta: x_source_file accordingtomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]According to my [F]h-e[G7]art you're the one for [C]me
@@ -22,3 +25,5 @@ And [F]every day I pray that [G7]my heart knows what's [C]right
 [C]For according to my [F]h-e[G7]art my future will be [C]bright
 And [F]every day I pray that [G7]my heart knows what's [C]right
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title All That Keeps Me Going}
 {meta: artist Ray Price}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file allthatkeepsmegoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s hard being on the road day after day
@@ -49,3 +52,9 @@ Coffee shops and truck stops have become my second home
 {start_of_verse: Verse 6}
 [Dm]Each mile I leave behind [F]is another mile that I’m [G7]closer to [C]you
 {end_of_verse}
+
+
+
+
+
+

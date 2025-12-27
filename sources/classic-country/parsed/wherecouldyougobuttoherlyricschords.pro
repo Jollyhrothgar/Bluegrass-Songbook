@@ -1,6 +1,9 @@
 {meta: title Where Could You Go But To Her}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file wherecouldyougobuttoherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why will a [G7]man go out and [C]cheat
@@ -40,3 +43,7 @@
 [F]When your glass is [C]emptied
 [C][F]Where will you go [G7]you'll come [C][F]home
 {end_of_verse}
+
+
+
+

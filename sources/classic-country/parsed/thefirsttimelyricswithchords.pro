@@ -1,6 +1,9 @@
 {meta: title The First Time}
 {meta: artist Freddie Hart}
 {meta: composer Jack Grayson}
+{meta: x_source classic-country}
+{meta: x_source_file thefirsttimelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember when I saw you the [F]first time 
@@ -30,3 +33,6 @@ For the [C]good times that we’ve been knowing
 [F]Somehow seems to [Dm]keep on growing
 I’m so [F]thankful there ever [G7]was the [F]first [C]time 
 {end_of_verse}
+
+
+

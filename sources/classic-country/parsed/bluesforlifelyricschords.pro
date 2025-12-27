@@ -1,5 +1,8 @@
 {meta: title Blues For Life}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file bluesforlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I just got over one case of the [C]blues
@@ -42,3 +45,8 @@
 [G]Don't know how it feels but it must be [C]nice
 [G]Not to have to worry bout the [D7]blues for [G]life
 {end_of_verse}
+
+
+
+
+

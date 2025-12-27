@@ -1,6 +1,9 @@
 {meta: title Leave Well Enough Alone}
 {meta: artist Keith Whitley}
 {meta: composer Bill Caswell and Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file leavewellenoughalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Let's [C]leave well [G7]enough a[C]lone
@@ -41,3 +44,8 @@ If we [C]leave well [G7]enough a[C]lone
 Our [F]love's strong [G7]enough to [C]weather the [F]storm
 If we [C]leave well [G7]enough a[C]lone
 {end_of_verse}
+
+
+
+
+

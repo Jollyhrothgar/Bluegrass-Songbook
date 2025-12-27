@@ -1,6 +1,9 @@
 {meta: title Halfway Loved}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Wayne P. Walker and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file halfwaylovedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd rather be [G7]loved by [C]many
@@ -34,3 +37,7 @@ And [F]give up half the dreams that might come [C]true
 The [F]chance I'd have to take is just not [C]worth it
 If I let myself be [G7]halfway loved by [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title For the Good Times}
 {meta: artist Ray Price}
 {meta: composer Kris Krisofferson}
+{meta: x_source classic-country}
+{meta: x_source_file forthegoodtimeslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't look so [Dm]s-ad I know it's [C]over
@@ -29,3 +32,6 @@
 [G7]Hear the [C]whisper of the [C7]raindrops blowing soft [F]against the [Fm]window
 [G7]And make believe you [Dm]love me one more [G7]t-ime for the good [C]times
 {end_of_verse}
+
+
+

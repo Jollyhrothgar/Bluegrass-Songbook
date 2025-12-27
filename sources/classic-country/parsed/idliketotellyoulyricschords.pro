@@ -1,5 +1,8 @@
 {meta: title I'd Like To Tell You}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file idliketotellyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd like to tell you how much I love you 
@@ -42,3 +45,8 @@ I cannot help the [G7]tears that [C]start
 I'd like to tell you how much I [G]love you 
 And [Am]take you back [D7]into my [G]heart
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title So Much to Thank Him For}
 {meta: artist Kevin Spencer}
 {meta: composer Robert Deel}
+{meta: x_source classic-country}
+{meta: x_source_file somuchtothankhimforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I look around and see
@@ -52,3 +55,8 @@ I've got [C]so much to [G7]thank Him [C]for
 And [F]where He’s brought me from
 I've got [C]so much to [G7]thank Him [C]for
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Back To Hers}
 {meta: artist Norma Jean}
 {meta: composer Hank Cochran and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file backtoherslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How can something so right be so [D7]wrong
@@ -23,3 +26,5 @@
 [F]You've gone all the way from [G7]my arms back to [C]hers
 [F]We've come all the way from [G7]lovers back to [C]friends
 {end_of_verse}
+
+

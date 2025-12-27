@@ -1,6 +1,9 @@
 {meta: title Goin' Away}
 {meta: artist Ray Price}
 {meta: composer George Tomsco and Barbara Tomsco}
+{meta: x_source classic-country}
+{meta: x_source_file goinawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm goin' away without you [Dm]babe
@@ -26,3 +29,6 @@ And when I [G7]do I'll send for you to live with [C]me
 {start_of_verse: Verse 4}
 And when I [G7]do I send for you to live with [C]me
 {end_of_verse}
+
+
+

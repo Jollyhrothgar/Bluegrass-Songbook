@@ -1,6 +1,9 @@
 {meta: title Alone}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file alonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Alone at a table for two   alone waiting for [F]you
@@ -41,3 +44,7 @@
 {start_of_verse: Verse 4}
 [G7]Now I can see I was never meant to be [C]alone
 {end_of_verse}
+
+
+
+

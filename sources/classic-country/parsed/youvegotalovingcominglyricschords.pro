@@ -1,6 +1,9 @@
 {meta: title You've Got A Loving Coming}
 {meta: artist Moe Bandy}
 {meta: composer Roger Bowling}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotalovingcominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling I finally got myself together
@@ -29,3 +32,6 @@ That's one [C]thing I never gave [G7]before
 [C]You've got a loving coming [F]one that's been a long time coming
 [C]You won't have to wonder what [G7]love is any[C]more
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Poor Little Fool}
 {meta: artist Ricky Nelson}
 {meta: composer Sharon Sheeley}
+{meta: x_source classic-country}
+{meta: x_source_file poorlittlefoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to play [Am]around with hearts that [F]hastened at my [G7]call
@@ -31,3 +34,7 @@
 [C]The day that someone [Am]else would play love's [F]foolish game with [G7]me
 [C]Poor little [Am]fool [F]oh yeah  [G7]I was [C]a [F]fool [Am]uh [C][G7]huh
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Go On Alone}
 {meta: artist Webb Pierce}
 {meta: composer Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file illgoonalonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're traveling down two different roads in [F]world so far [G7]apart
@@ -29,3 +32,6 @@ Remember though before you get you gotta learn to [C]give
 So if it's change my life or go  then [F]go it's gonna [G7]be
 Cause I can't change my life when you want something more than [C]me
 {end_of_verse}
+
+
+

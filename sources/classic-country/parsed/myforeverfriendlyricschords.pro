@@ -1,6 +1,9 @@
 {meta: title My Forever Friend}
 {meta: artist Daniel O'Donnell}
 {meta: composer Charles Alexander Landsborough}
+{meta: x_source classic-country}
+{meta: x_source_file myforeverfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody needs a little [F]help [C]sometimes
@@ -68,3 +71,12 @@ From darkest [Am]night to rainbows [C]end
 {start_of_verse: Verse 8}
 [G7]He's my forever [C]Friend
 {end_of_verse}
+
+
+
+
+
+
+
+
+

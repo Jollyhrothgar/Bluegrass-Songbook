@@ -1,5 +1,8 @@
 {meta: title Daddy Frank}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file daddyfranklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Daddy Frank played the guitar and the French harp
@@ -58,3 +61,12 @@ And I [F]believe the [C]guitar man [G7]was [C]right
 [C]Daddy Frank played the guitar and the French harp
 Sister played the ringing [G7]tambourine
 {end_of_verse}
+
+
+
+
+
+
+
+
+

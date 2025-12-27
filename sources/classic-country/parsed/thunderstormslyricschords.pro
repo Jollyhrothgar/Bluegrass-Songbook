@@ -1,6 +1,9 @@
 {meta: title Thunderstorms}
 {meta: artist Cal Smith}
 {meta: composer Sterling Whipple}
+{meta: x_source classic-country}
+{meta: x_source_file thunderstormslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A thunderstorm a [C]screen door and a [G]little boy
@@ -43,3 +46,8 @@ And as you slowly close your eyes [Em]I thought I heard you [D7]say
 [C]The rain is His [G]teardrops [C]and thunder is the [G]sound
 [C]Of His magnificent [Em]chariots that [D7]rides on the wind
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Alexis From Texas}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file alexisfromtexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just outside of Gainsville Texas
@@ -41,3 +44,7 @@ So drink a toast to my Alexis
 {start_of_verse: Verse 4}
 [G7]My sweet Alexis Gainsville Texas [C]queen
 {end_of_verse}
+
+
+
+

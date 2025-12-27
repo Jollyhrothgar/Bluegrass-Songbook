@@ -1,5 +1,8 @@
 {meta: title Once You've Had The Best}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file onceyouvehadthebestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm so glad to have you back [C]within these arms of [G]mine 
@@ -28,3 +31,6 @@ And there's nothing better [C]once you've had [D7]the [G]best
 You've got more love [G]in your little finger [C]than all the [G]rest 
 And there's nothing better [C]once you've had [D7]the [G]best 
 {end_of_verse}
+
+
+

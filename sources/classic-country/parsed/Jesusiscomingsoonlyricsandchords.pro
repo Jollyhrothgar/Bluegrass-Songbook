@@ -1,6 +1,9 @@
 {meta: title Jesus Is Coming Soon}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Robert Emmett Winsett}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusiscomingsoonlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Troublesome times [G7]are [C]here filling men's [Am]hearts with fear
@@ -39,3 +42,7 @@ Many will meet [Am]many will meet their doom
 All of the [C]dead [F]shall [C]rise righteous shall meet [G7]in the [C]skies     
 Going where going [Am]where going where [D7]no one [Am]dies [G7]heavenward [C]bound [F]  [C]
 {end_of_verse}
+
+
+
+

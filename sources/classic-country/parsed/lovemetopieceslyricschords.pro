@@ -1,6 +1,9 @@
 {meta: title Love Me To Pieces}
 {meta: artist Kitty Wells}
 {meta: composer Melvin Endsley}
+{meta: x_source classic-country}
+{meta: x_source_file lovemetopieceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Why don't you [C]love me to pieces baby
@@ -47,3 +50,8 @@ You know that [C]I'll never ever leave you
 And [G]I'll never ever grieve you
 [D7]You know I want to be your [G]slave
 {end_of_verse}
+
+
+
+
+

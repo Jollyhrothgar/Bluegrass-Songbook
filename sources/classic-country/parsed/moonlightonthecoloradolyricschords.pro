@@ -1,6 +1,9 @@
 {meta: title Moonlight On The Colorado}
 {meta: artist Slim Whitman}
 {meta: composer Robert A. King and Billy Moll}
+{meta: x_source classic-country}
+{meta: x_source_file moonlightonthecoloradolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Moonlight on the [F]river Colo[C]rado
@@ -22,3 +25,5 @@ As I sit and [F]find each lonely [C]shadow
 [C]When it’s moon[F]light on the Colo[C]rado
 [G7]I wonder if you’re waiting for me [C]too
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title As Far As I'm Concerned}
 {meta: artist Faron Young}
 {meta: composer Dale Parker}
+{meta: x_source classic-country}
+{meta: x_source_file asfarasimconcernedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As far as I'm concerned I [C]don't believe a [G]word
@@ -22,3 +25,5 @@
 [G]For always in my heart  there'll be [C]the flame that [G]burns
 [D7]For you alone dear as far as I'm [G]concerned
 {end_of_verse}
+
+

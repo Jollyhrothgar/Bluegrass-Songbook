@@ -1,6 +1,9 @@
 {meta: title Do The Right Thing}
 {meta: artist George Strait}
 {meta: composer Gary Nicholson and Jim Lauderdale}
+{meta: x_source classic-country}
+{meta: x_source_file dotherightthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once you [C]told me [D7]you were gonna [G]love me
@@ -43,3 +46,9 @@ Go with your [C]heart and [D7]do the right [G]thing
 {start_of_verse: Verse 7}
 Go with your [C]heart and [D7]do the right [G]thing
 {end_of_verse}
+
+
+
+
+
+

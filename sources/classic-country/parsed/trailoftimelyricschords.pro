@@ -1,6 +1,9 @@
 {meta: title Trail Of Time}
 {meta: artist John Anderson}
 {meta: composer Lionel Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file trailoftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down a trail of time there's many [B7]sorr[C]ows
@@ -29,3 +32,6 @@ In a thousand [G]years I couldn't [G7]forget
 I left a[C]lone to face the [B7]futu[C]re
 Sometimes I [G7]wish we'd never [C]met
 {end_of_verse}
+
+
+

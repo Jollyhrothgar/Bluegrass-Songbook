@@ -1,6 +1,9 @@
 {meta: title Homestead On The Farm}
 {meta: artist Bobby Bare}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file homesteadonthefarmlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wonder how the [C]old folks are at [G]home
@@ -36,3 +39,7 @@ I [A7]wonder how the [D7]old folks are at [G]home
 {start_of_verse: Verse 5}
 I [A7]wonder how the [D7]old folks are at [G]home
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title One Broken Heart For Sale}
 {meta: artist Elvis Presley}
 {meta: composer Otis Blackwell and Winfield Scott}
+{meta: x_source classic-country}
+{meta: x_source_file onebrokenheartforsalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who wants to buy a [Am]heart
@@ -53,3 +56,10 @@
 [C]One broken lover's [Am]heart
 [F]One broken [G7]heart [C]for [G7]sale
 {end_of_verse}
+
+
+
+
+
+
+

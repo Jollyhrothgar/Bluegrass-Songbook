@@ -1,6 +1,9 @@
 {meta: title Where Have I Been All My Life}
 {meta: artist George Strait}
 {meta: composer Steve Williams, Will Nance, Sherrie Austin}
+{meta: x_source classic-country}
+{meta: x_source_file wherehaveibeenallmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Been down the road [Dm]to work and back
@@ -43,3 +46,8 @@ I heard What a [C]Wonderful World [Dm]by Louis Armstrong
 [C]After all these years I [Em]finally get that [Am]song
 [Dm]Where have I [G7]been all my [C]life
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Bedroom}
 {meta: artist Jim Ed Brown and Helen Cornelius}
 {meta: composer Ron Muir}
+{meta: x_source classic-country}
+{meta: x_source_file thebedroomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two soft pillows and tangled sheets
@@ -58,3 +61,11 @@ Two soft pillows and tangled sheets
 An unmade [F]bed where no one [C]sleeps
 Standing here just [G7]looking at the [C]bedroom
 {end_of_verse}
+
+
+
+
+
+
+
+

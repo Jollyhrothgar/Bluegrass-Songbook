@@ -1,5 +1,8 @@
 {meta: title Time After Time}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file timeaftertimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Time after [C]time
@@ -47,3 +50,8 @@ Our love gets [G]better
 [D7]Time after [C]time
 Time after [G]time
 {end_of_verse}
+
+
+
+
+

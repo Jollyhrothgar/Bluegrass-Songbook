@@ -1,6 +1,9 @@
 {meta: title You Just Loved The Leavin' Out Of Me}
 {meta: artist Tanya Tucker}
 {meta: composer Linda Hargrove}
+{meta: x_source classic-country}
+{meta: x_source_file youjustlovedtheleavinoutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I swore this [F]mornin' I would [C]leave you
@@ -33,3 +36,7 @@ Cause [D7]you just loved the [G7]leavin' out of [C]me
 {start_of_verse: Verse 4}
 Baby [D7]you just loved the [G7]leavin' out of [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title In the Sweet By and By}
 {meta: artist The Statler Brothers}
 {meta: composer Joseph Webster and Fillmore Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file inthesweetbyandbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a land that is [C]fairer than [G]day
@@ -29,3 +32,6 @@
 [G7]In the sweet by and [C]by
 [G]We shall meet on that [D7]beautiful [G]shore
 {end_of_verse}
+
+
+

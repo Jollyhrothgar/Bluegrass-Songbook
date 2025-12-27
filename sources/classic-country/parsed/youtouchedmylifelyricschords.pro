@@ -1,6 +1,9 @@
 {meta: title You Touched My Life}
 {meta: artist Charley Pride}
 {meta: composer Theodore Clifford Harris}
+{meta: x_source classic-country}
+{meta: x_source_file youtouchedmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You touched my life and made my heart [F]awaken
@@ -30,3 +33,6 @@ You taught my heart that [C7]miracles can [F]happen
 [G7]When you touched my life  when you touched my life
 When [F]you touched my [G7]life with your sweet [C]love
 {end_of_verse}
+
+
+

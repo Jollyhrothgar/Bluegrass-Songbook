@@ -1,5 +1,8 @@
 {meta: title The Promise And The Dream}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file thepromiseandthedreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a sadness in your [C]singing I have [G]never heard before
@@ -42,3 +45,8 @@ The [D7]dream was for the huddled masses [C]yearning to breathe [G]free
 We closed so many [C]doors and banned the [G]prayers on many [C]scenes
 [G]America what happened to the [D7]promise and the [G]dream
 {end_of_verse}
+
+
+
+
+

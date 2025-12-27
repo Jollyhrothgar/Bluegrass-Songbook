@@ -1,6 +1,9 @@
 {meta: title Helping Me Get Over You}
 {meta: artist Travis Tritt}
 {meta: composer Travis Tritt and Lari White}
+{meta: x_source classic-country}
+{meta: x_source_file helpingmegetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You ask who's lying in my [F]bed 
@@ -70,3 +73,12 @@ Oh I did the best that I could [Dm]do
 I had to find somebody [G7]new
 To help me get over [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

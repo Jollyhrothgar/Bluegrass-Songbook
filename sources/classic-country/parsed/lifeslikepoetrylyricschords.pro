@@ -1,5 +1,8 @@
 {meta: title Life's Like Poetry}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file lifeslikepoetrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Life's like poetry and in my poem bay
@@ -21,3 +24,4 @@
 [C]Until now there's always [D7]been a missing [G]line
 [C]Until now there's always [D7]been a missing [G]line
 {end_of_verse}
+

@@ -1,5 +1,8 @@
 {meta: title Turn On To Jesus}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file turnontoJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When temptation tries to [C]lure me
@@ -55,3 +58,10 @@ In His light I find the [C]answer
 When I [G]turn on to [D7]Jesus [G]again
 When I turn on to [D7]Jesus [G]again
 {end_of_verse}
+
+
+
+
+
+
+

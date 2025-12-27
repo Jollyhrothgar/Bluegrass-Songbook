@@ -1,6 +1,9 @@
 {meta: title Midnight Turning Day Blues}
 {meta: artist Wanda Jackson}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file midnightturningdayblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He left me this morning midnight was turning day [G7]
@@ -29,3 +32,6 @@ I got the blues like midnight moon shining bright as day Lord [G7]Lord
 I [D7]w--ish a tornado would come and blow my blues [G]away 
 Yodel le-te-a o-[C]le-te-a o-[G]lete o-[D7]lete o-[G]lete    
 {end_of_verse}
+
+
+

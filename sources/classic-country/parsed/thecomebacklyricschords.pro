@@ -1,6 +1,9 @@
 {meta: title The Comeback}
 {meta: artist Faron Young}
 {meta: composer Danny Dill}
+{meta: x_source classic-country}
+{meta: x_source_file thecomebacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was the world’s champion lover to my [G7]baby
@@ -44,3 +47,9 @@
 [F]That'll be my [C]comeback comeback she'll [F]kiss me and [C]then
 [F]This has [C]been champ will be a [F]champion [C]again
 {end_of_verse}
+
+
+
+
+
+

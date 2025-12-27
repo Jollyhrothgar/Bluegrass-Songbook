@@ -1,6 +1,9 @@
 {meta: title Our Hearts Are Holding Hands}
 {meta: artist Merle Haggard - Bonnie Owens}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file ourheartsareholdinghandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're far apart but our [G7]hearts are holding [C]hands
@@ -40,3 +43,9 @@ But temptation's never [G7]strong as our sweet [C]love
 {start_of_verse: Verse 6}
 And come what may our [G7]hearts are holding [C]hands
 {end_of_verse}
+
+
+
+
+
+

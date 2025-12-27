@@ -1,6 +1,9 @@
 {meta: title The First Hello The Last Goodbye}
 {meta: artist Roger Whittaker}
 {meta: composer Cardew Robison and Roger Whittaker}
+{meta: x_source classic-country}
+{meta: x_source_file thefirsthellothelastgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say when you gain a lover you [F]begin to lose a [D7]friend
@@ -49,3 +52,9 @@ And the [C]first time that we said hello [G7]began our last [C]goodbye
 {start_of_verse: Verse 6}
 And the first time that we said hello [G7]began our last [C]goodbye
 {end_of_verse}
+
+
+
+
+
+

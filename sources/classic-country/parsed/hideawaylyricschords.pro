@@ -1,6 +1,9 @@
 {meta: title Hideaway}
 {meta: artist Laurie Lewis and Kathy Kallick}
 {meta: composer Debbie Cotter}
+{meta: x_source classic-country}
+{meta: x_source_file hideawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can see the sad expression 
@@ -49,3 +52,8 @@ Come to [D7]me if you just need a hide[G]away
 {start_of_verse: Verse 4}
 And when it's [D7]over come to me and hide[C]away[G]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Because He Lives}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Bill and Gloria Gaither}
+{meta: x_source classic-country}
+{meta: x_source_file becauseheliveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God sent His son and they called Him [F]Jesus
@@ -36,3 +39,7 @@
 [F]My life is [C]worth the [Am]living
 [Dm]Just [G7]because He [C]lives
 {end_of_verse}
+
+
+
+

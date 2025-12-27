@@ -1,6 +1,9 @@
 {meta: title Tangled Web}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file tangledweblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With heavy heart I [F]hurry home 
@@ -43,3 +46,8 @@ When [G7]first we venture [C]to deceive
 What a tangled [F]web we weave 
 To [G7]keep from hurting [C]someone
 {end_of_verse}
+
+
+
+
+

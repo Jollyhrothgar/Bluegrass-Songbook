@@ -1,6 +1,9 @@
 {meta: title Following the Feeling}
 {meta: artist Moe Bandy}
 {meta: composer Charlie Craig}
+{meta: x_source classic-country}
+{meta: x_source_file followingthefeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your eyes are not the eyes I should be seen [F]in
@@ -29,3 +32,6 @@ It [C]started with a smile and [G7]hello
 We're hardly [C]more than strangers  ignoring all the [F]dangers
 [C]Following the feeling  [G7]down at cheating [C]row
 {end_of_verse}
+
+
+

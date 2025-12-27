@@ -1,6 +1,9 @@
 {meta: title Out Of Sight Out Of Mind}
 {meta: artist Sonny James}
 {meta: composer Marijohn Wilkin and Mary Ingraham}
+{meta: x_source classic-country}
+{meta: x_source_file outofsightoutofmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Out of sight out of mind  so the story [G7]goes
@@ -26,3 +29,6 @@ You are gone out of sight  but not out of my [C]mind [F]   [C]
 {start_of_verse: Verse 3}
 You are gone out of [G7]sight  but not out of my [C]mind
 {end_of_verse}
+
+
+

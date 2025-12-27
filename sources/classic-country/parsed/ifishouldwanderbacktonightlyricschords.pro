@@ -1,5 +1,8 @@
 {meta: title If I Should Wander Back Tonight}
 {meta: artist Earl Scruggs and Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file ifishouldwanderbacktonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For many years I've been a rolling stone my [C]darling
@@ -35,3 +38,7 @@ Would your [G]eyes be filled with love's own tender [D7]light
 Would your [G]arms be empty dear would you [C]thrill to find me near
 Would you [G]love me if I'd [D7]wander back [G]tonight
 {end_of_verse}
+
+
+
+

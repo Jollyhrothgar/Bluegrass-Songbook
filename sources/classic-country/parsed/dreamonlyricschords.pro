@@ -1,6 +1,9 @@
 {meta: title Dream On}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Dennis Lambert and Brian Potter}
+{meta: x_source classic-country}
+{meta: x_source_file dreamonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lay your head down on my [G7]shoulder 
@@ -39,3 +42,6 @@ I'll be [F]here to light your [G7]way
 [F]But little girl in the [G7]meanwhile 
 Dream [C]on
 {end_of_verse}
+
+
+

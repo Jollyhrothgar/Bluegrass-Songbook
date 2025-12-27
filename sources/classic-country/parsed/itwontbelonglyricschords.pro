@@ -1,6 +1,9 @@
 {meta: title It Won't Be Long}
 {meta: artist Elvis Presley}
 {meta: composer Ben Weisman and Sid Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file itwontbelonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The shooting stars are coming out [C]of your [G]eyes
@@ -43,3 +46,9 @@
 {start_of_verse: Verse 5}
 [A7]It won't be long until we're [D7]out of this world it won't be [G]long
 {end_of_verse}
+
+
+
+
+
+

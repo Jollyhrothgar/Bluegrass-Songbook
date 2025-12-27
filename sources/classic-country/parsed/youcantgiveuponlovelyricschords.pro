@@ -1,5 +1,8 @@
 {meta: title You Can't Give Up On Love}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file youcantgiveuponlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say your [G7]heart's been [F]broken 
@@ -47,3 +50,9 @@ You can't [G7]give up on [C]love
 No you [F]can't give [G7]up on [C]love 
 Oh you [F]can't give [G7]up on [C]love
 {end_of_verse}
+
+
+
+
+
+

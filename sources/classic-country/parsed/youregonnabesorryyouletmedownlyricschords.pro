@@ -1,5 +1,8 @@
 {meta: title You're Gonna Be Sorry You Let Me Down}
 {meta: artist Russell Moore and IIIrd Tyme Out}
+{meta: x_source classic-country}
+{meta: x_source_file youregonnabesorryyouletmedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You told me once dear I was true and kind
@@ -47,3 +50,9 @@ You're gonna be [C]sorry that [G7]you let me [C]down
 [G7]But when I'm [C]laid deep down in the [F]ground
 You're gonna be [C]sorry that [G7]you let me [C]down
 {end_of_verse}
+
+
+
+
+
+

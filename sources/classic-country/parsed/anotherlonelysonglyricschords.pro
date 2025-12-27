@@ -1,6 +1,9 @@
 {meta: title Another Lonely Song}
 {meta: artist Tammy Wynette}
 {meta: composer Norris Wilson, Billy Sherrill, Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file anotherlonelysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Time  won't [G7]ease my memory  it's [Am]killing me [C]now
@@ -31,3 +34,7 @@
 [Dm]Don't frown on [G7]me let's just [C]keep [Am][G7]talking
 [C]Another lonely song I'm singing
 {end_of_verse}
+
+
+
+

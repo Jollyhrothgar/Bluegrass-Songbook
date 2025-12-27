@@ -1,6 +1,9 @@
 {meta: title Loving God Loving Each Other}
 {meta: artist The Oak Ridge Boys}
 {meta: composer William and Gloria Gaither}
+{meta: x_source classic-country}
+{meta: x_source_file lovingGodlovingeachotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Loving God [F]loving each [C]other
@@ -30,3 +33,7 @@ It's not complicated don't need a lot of rules
 [G7]And the story never [C]ends
 [F]Loving God loving each [C]other
 {end_of_verse}
+
+
+
+

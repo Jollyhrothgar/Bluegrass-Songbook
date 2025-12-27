@@ -1,5 +1,8 @@
 {meta: title I Ain't Gonna Work Tomorrow}
 {meta: artist The Country Gentlemen}
+{meta: x_source classic-country}
+{meta: x_source_file iaintgonnaworktomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I ain’t gonna work tomorrow
@@ -42,3 +45,8 @@ I’m [C]leaving you this lonesome [G]song
 I’m [C]leaving you this lonesome [G]song
 Cause [D7]I’m gonna be [G]gone 
 {end_of_verse}
+
+
+
+
+

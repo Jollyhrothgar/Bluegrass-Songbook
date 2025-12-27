@@ -1,6 +1,9 @@
 {meta: title I Thought Of God}
 {meta: artist Porter Wagoner}
 {meta: composer Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file ithoughtofGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walked through the [D7]whispering [G]forest
@@ -36,3 +39,7 @@
 [C]And there in the busy city
 [G]I stopped and [D7]thought of [G]God
 {end_of_verse}
+
+
+
+

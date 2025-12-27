@@ -1,6 +1,9 @@
 {meta: title Let Trouble Be You}
 {meta: artist Wanda Jackson}
 {meta: composer Yvonne Devaney}
+{meta: x_source classic-country}
+{meta: x_source_file lettroublebeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said I was looking for trouble when I fell in love with [C7]you
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]If there's gonna [C]be trouble [G7]let trouble be [C]you
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Less And Less}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file lessandlesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got up and made my [G7]morning cup of [C]coffee
@@ -28,3 +31,6 @@
 [C7]But I didn't cry I think the worst is over [F]now
 [C]More and more I [G7]think about you less and [C]less
 {end_of_verse}
+
+
+

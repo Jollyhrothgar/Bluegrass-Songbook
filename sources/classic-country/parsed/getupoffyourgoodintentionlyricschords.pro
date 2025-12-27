@@ -1,6 +1,9 @@
 {meta: title Get Up Off Your Good Intentions}
 {meta: artist Charlie Pride}
 {meta: composer Bobby David and June Dussia}
+{meta: x_source classic-country}
+{meta: x_source_file getupoffyourgoodintentionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Harness that team and hitch it to the plow
@@ -50,3 +53,9 @@ So get up off your good intentions
 [G]Get up off your good intentions
 [D7]Get a little get up and [G]go
 {end_of_verse}
+
+
+
+
+
+

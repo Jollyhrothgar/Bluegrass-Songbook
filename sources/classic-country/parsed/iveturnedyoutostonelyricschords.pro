@@ -1,6 +1,9 @@
 {meta: title I've Turned You To Stone}
 {meta: artist Don Williams}
 {meta: composer Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file iveturnedyoutostonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish there was some way to [F]tell you I'm [C]sorry
@@ -29,3 +32,6 @@ I [G7]wanna see Frisco feel the [F]sunshine [C]again
 If you want true love you can't stand alone
 [G7]Life here together has turned you to [C]stone
 {end_of_verse}
+
+
+

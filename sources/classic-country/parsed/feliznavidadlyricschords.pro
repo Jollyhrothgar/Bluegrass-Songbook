@@ -1,6 +1,9 @@
 {meta: title Feliz Navidad}
 {meta: artist Clay Walker}
 {meta: composer José Feliciano}
+{meta: x_source classic-country}
+{meta: x_source_file feliznavidadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Feliz Navidad  [D7][C]Feliz [G]Navidad
@@ -34,3 +37,7 @@
 [C]I wanna wish you a Merry Christmas
 [D7]From the bottom of my [G]heart
 {end_of_verse}
+
+
+
+

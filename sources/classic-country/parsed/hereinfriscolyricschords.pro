@@ -1,5 +1,8 @@
 {meta: title Here In Frisco}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file hereinfriscolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's four a.m. in New York City three a.m. in [C]Dallas
@@ -29,3 +32,7 @@ Tag:
 {start_of_verse: Verse 5}
 [G]And I'm still [Em]all [Am]alone [D7]here in [G]Frisco
 {end_of_verse}
+
+
+
+

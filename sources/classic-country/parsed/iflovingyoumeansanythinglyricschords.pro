@@ -1,6 +1,9 @@
 {meta: title If Loving You Means Anything}
 {meta: artist Billy Walker}
 {meta: composer Jerry Chesnut and Dale Ward}
+{meta: x_source classic-country}
+{meta: x_source_file iflovingyoumeansanythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes I [G]love you if just [D7]loving you means [G][C]any-thing
@@ -27,3 +30,6 @@
 [G]And I love you if just [D7]loving you means [G][C]any-thing
 [C]Yes I [G]love you if just [D7]loving you means [G][C]any-thing
 {end_of_verse}
+
+
+

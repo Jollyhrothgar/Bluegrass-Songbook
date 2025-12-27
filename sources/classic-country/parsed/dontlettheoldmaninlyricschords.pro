@@ -1,5 +1,8 @@
 {meta: title Don't Let the Old Man In}
 {meta: artist Toby Keith}
+{meta: x_source classic-country}
+{meta: x_source_file dontlettheoldmaninlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't let the old man in 
@@ -47,3 +50,9 @@ Don't let the [C]old man in
 Look out your [G7]window and smile
 Don't let the [C]old man in
 {end_of_verse}
+
+
+
+
+
+

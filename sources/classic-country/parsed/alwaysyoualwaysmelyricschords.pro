@@ -1,5 +1,8 @@
 {meta: title Always You Always Me}
 {meta: artist Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file alwaysyoualwaysmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Always [C]you always [G7]me 
@@ -28,3 +31,6 @@ Us together eterna[C]lly
 Never blue always [G7]true 
 Always me always [C]you
 {end_of_verse}
+
+
+

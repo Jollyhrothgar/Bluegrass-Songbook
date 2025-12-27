@@ -1,6 +1,9 @@
 {meta: title Wise To The Ways Of A Woman}
 {meta: artist Johnny Horton}
 {meta: composer Richard Nash}
+{meta: x_source classic-country}
+{meta: x_source_file wisetothewaysofawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you gaze into her eyes 
@@ -30,3 +33,5 @@ That's the way they want to treat [C]you
 If you think they won't defeat [F]you
 You're [C]not wise to the ways [G7]of a [C]woman
 {end_of_verse}
+
+

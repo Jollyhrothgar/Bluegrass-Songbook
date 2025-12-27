@@ -1,5 +1,8 @@
 {meta: title Trust In Me}
 {meta: artist Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file trustinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey pretty baby I wanna talk with you
@@ -30,3 +33,7 @@ Hey pretty baby you sho’ look good to me
 Hey pretty baby you sho’ look good to me
 Let’s get [D7]together oh how happy we will [G]be
 {end_of_verse}
+
+
+
+

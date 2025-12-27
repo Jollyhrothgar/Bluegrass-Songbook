@@ -1,6 +1,9 @@
 {meta: title Don't Say Love}
 {meta: artist Connie Smith}
 {meta: composer Jim Glaser and Jimmy Payne}
+{meta: x_source classic-country}
+{meta: x_source_file dontsaylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't say love if you don't mean what you say
@@ -43,3 +46,8 @@ Don't say [G7]love and then [C]turn me away
 Don't be playing the game if you don't know the meaning of
 And if [G7]you can't say forever don't say [F]lo-[C]ve
 {end_of_verse}
+
+
+
+
+

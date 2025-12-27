@@ -1,6 +1,9 @@
 {meta: title Abraham Martin And John}
 {meta: artist Kenny Rogers}
 {meta: composer Dick Holler}
+{meta: x_source classic-country}
+{meta: x_source_file abrahammartinandjohnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Has anybody [Em]here seen my [F]old friend Abra[C]ham
@@ -43,3 +46,8 @@ Precious memories [F]how they [C]linger[G7]
 [C]In the stillness [F]of the [C]midnight
 Precious [G7]sacred seems un[F]fold[C]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Brighten The Corner Where You Are}
 {meta: artist Jim Ed Brown}
 {meta: composer Charles Gabriel and Ina Ogden}
+{meta: x_source classic-country}
+{meta: x_source_file brightenthecornerwhereyouarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Brighten the corner [D7]where you are
@@ -36,3 +39,7 @@ Brighten the corner [G]where you are
 Someone far from home may need a [C]guiding star
 [G]Brighten the corner [D7]where you [G]are
 {end_of_verse}
+
+
+
+

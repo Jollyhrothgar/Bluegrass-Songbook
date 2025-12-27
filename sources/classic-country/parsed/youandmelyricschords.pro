@@ -1,6 +1,9 @@
 {meta: title You And Me}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and George Richey}
+{meta: x_source classic-country}
+{meta: x_source_file youandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can hear the [D7]rain it's falling [G]softly
@@ -27,3 +30,5 @@ Cause every time I [E7]dream you're always [A7]there
 [G]And it will be so real [Am]to me
 [A7]It's finally [D7]you and [G]me
 {end_of_verse}
+
+

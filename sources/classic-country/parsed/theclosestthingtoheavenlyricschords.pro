@@ -1,6 +1,9 @@
 {meta: title The Closest Thing To Heaven}
 {meta: artist Bob Luman}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file theclosestthingtoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You came when I was lost and caught me [F]lonely
@@ -27,3 +30,6 @@ You're the [G7]closest thing to heaven that I've [C]found
 No you may not be an angel but you won't miss it [F]far
 You're the [G7]closest thing to heaven that I've [C]found 
 {end_of_verse}
+
+
+

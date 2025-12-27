@@ -1,5 +1,8 @@
 {meta: title A Good Old Country Song}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file agoodoldcountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My memory takes me back to my [F]childhood
@@ -39,3 +42,8 @@ For there's [G7]nothing like a good old country [C]song
 {start_of_verse: Verse 5}
 For there's [G7]nothing like a good old country [C]song
 {end_of_verse}
+
+
+
+
+

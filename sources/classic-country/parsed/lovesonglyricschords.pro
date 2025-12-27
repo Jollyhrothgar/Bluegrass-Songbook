@@ -1,6 +1,9 @@
 {meta: title Love Song}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Steven W. Runkle}
+{meta: x_source classic-country}
+{meta: x_source_file lovesonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tell you why I called on you
@@ -53,3 +56,9 @@ Every woman should have a good [G7]man
 Let me do the [G7]best I [C]can
 [A7]Take each other's [G7]heart in [C]hand
 {end_of_verse}
+
+
+
+
+
+

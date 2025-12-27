@@ -1,6 +1,9 @@
 {meta: title Dum Dum}
 {meta: artist Brenda Lee}
 {meta: composer Jackie DeShannon and Sharon Sheeley}
+{meta: x_source classic-country}
+{meta: x_source_file dumdumlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A dum dum a [F]diddly dum uh huh [C]huh
@@ -52,3 +55,10 @@
 [F]Dum dum a diddly dum oh [C]yeah
 [F]Dum dum a diddly [C]dum
 {end_of_verse}
+
+
+
+
+
+
+

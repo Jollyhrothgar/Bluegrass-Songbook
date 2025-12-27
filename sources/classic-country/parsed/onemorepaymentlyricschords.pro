@@ -1,6 +1,9 @@
 {meta: title One More Payment}
 {meta: artist Clint Black}
 {meta: composer Clint Black, Hayden Nicholas, Shake Russell}
+{meta: x_source classic-country}
+{meta: x_source_file onemorepaymentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't that the way the luck goes 
@@ -50,3 +53,8 @@ One more [G7]payment and it's [C]mine
 One more [G7]payment and it's [C]mine
 One [F]more one [C]more oh Lord
 {end_of_verse}
+
+
+
+
+

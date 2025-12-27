@@ -1,6 +1,9 @@
 {meta: title Low Dog Blues}
 {meta: artist John Anderson}
 {meta: composer Lionel Alton Delmore and John David Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file lowdogblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lonesome low dog blu[C7]es  [F]holes in both my [C]shoes
@@ -33,3 +36,6 @@ I wish I had a darlin' to [D7]tell my troubles [G7]to
 I've got [F]nothin' to do and I've got [C]nothin' to [F]lose 
 But these [C]lonesome [G7]low dog [C]blues
 {end_of_verse}
+
+
+

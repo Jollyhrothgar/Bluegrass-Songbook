@@ -1,6 +1,9 @@
 {meta: title When I Reach That Home Up There}
 {meta: artist Jamie Dailey and Darrin Vincent}
 {meta: composer Jamie Dailey}
+{meta: x_source classic-country}
+{meta: x_source_file whenireachthathomeuptherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the Lord calls me home and time shall be no more
@@ -37,3 +40,7 @@ There with [F]my dear Savior never more to [C]roam
 And I'll sit with my father mother sister and my [Am]brother
 When I [C]reach my [G7]home up [C]there
 {end_of_verse}
+
+
+
+

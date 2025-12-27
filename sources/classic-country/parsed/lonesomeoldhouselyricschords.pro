@@ -1,5 +1,8 @@
 {meta: title Lonesome Old House}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomeoldhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In this lonesome old [G]house [C]in this lonesome old [G]house
@@ -32,3 +35,7 @@ And that [A7]lovin' that sweet lovin' [D7]smile
 And don't you end up being without 
 [C]In a lonesome old [G]house [C]in a lonesome old [G]house
 {end_of_verse}
+
+
+
+

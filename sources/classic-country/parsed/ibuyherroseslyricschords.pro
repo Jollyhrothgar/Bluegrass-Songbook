@@ -1,6 +1,9 @@
 {meta: title I Buy Her Roses}
 {meta: artist Sammy Kershaw}
 {meta: composer Roger Brown and Glenn Ray}
+{meta: x_source classic-country}
+{meta: x_source_file ibuyherroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pardon me I need to buy some [C]roses
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]Yes loving her was as good as love can [G]get
 {end_of_verse}
+
+
+
+

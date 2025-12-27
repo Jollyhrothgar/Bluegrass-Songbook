@@ -1,5 +1,8 @@
 {meta: title Gene Autry My Hero}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file geneautrymyherolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The childhood memories I treasure the most I [F]suppose
@@ -39,3 +42,8 @@ And [G7]I see Gene Autry go riding across the big [C]screen
 {start_of_verse: Verse 6}
 And [G7]I see Gene Autry go riding across the big [C]screen
 {end_of_verse}
+
+
+
+
+

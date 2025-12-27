@@ -1,6 +1,9 @@
 {meta: title Baby Won't You Come Out Tonight}
 {meta: artist Buddy Holly}
 {meta: composer Buddy Holly and Don Guess}
+{meta: x_source classic-country}
+{meta: x_source_file babywontyoucomeouttonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well go baby go baby go baby go baby
@@ -73,3 +76,16 @@ Well go baby go baby go baby go baby
 [G7]Go baby go baby [F]baby
 [C]Won't you come out tonight
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

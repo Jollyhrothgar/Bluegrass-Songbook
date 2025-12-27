@@ -1,6 +1,9 @@
 {meta: title You Look So Good In Love}
 {meta: artist George Strait}
 {meta: composer Kerry Chater, Rory Bourke, Glen Ballard}
+{meta: x_source classic-country}
+{meta: x_source_file youlooksogoodinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh how you sparkle and [Am]oh how you shine
@@ -46,3 +49,10 @@ You look [G]s-o [Bm]good in [Am]love and [D7]I wish you still wanted [G]me  [D7]
 You look [G]s-o [Bm]good in [Am]love you [D7]want him that's easy to [G]see [D7]
 You look [G]s-o [Bm]good in [Am]love and [D7]I wish you still wanted [G]me  [D7]
 {end_of_verse}
+
+
+
+
+
+
+

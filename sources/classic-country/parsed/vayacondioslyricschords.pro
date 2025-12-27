@@ -1,6 +1,9 @@
 {meta: title Vaya Con Dios}
 {meta: artist Slim Whitman}
 {meta: composer Larry Russell, Buddy Pepper, Inez James}
+{meta: x_source classic-country}
+{meta: x_source_file vayacondioslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now the hacienda's dark the town is [G7]sleeping
@@ -29,3 +32,6 @@ But the [Gm]memories we share are [G7]there to [C]borrow
 [F]Vaya Con Dios my [C]darling
 [G7]May God be with you my [C]love
 {end_of_verse}
+
+
+

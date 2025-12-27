@@ -1,5 +1,8 @@
 {meta: title Thinkin' Of You}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file thinkinofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been thinkin' of you
@@ -67,3 +70,11 @@ Though I always get it [A]wrong
 Gonna have to sing [F]along
 With the familiar drinkin' [C]song
 {end_of_verse}
+
+
+
+
+
+
+
+

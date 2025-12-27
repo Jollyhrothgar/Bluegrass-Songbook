@@ -1,6 +1,9 @@
 {meta: title Don't Tease Me}
 {meta: artist Carl Smith}
 {meta: composer Carl Smith, Jack Bradshaw, Harry Glenn}
+{meta: x_source classic-country}
+{meta: x_source_file dontteasemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't tease me don't tease [C]me
@@ -39,3 +42,8 @@ Don’t start a game if [D7]you don’t know the [G]rules
 If you want [G]my heart and [C]you can play the [G]part
 But don’t [C]tease me cause [D7]I’m no leaving [G]kind
 {end_of_verse}
+
+
+
+
+

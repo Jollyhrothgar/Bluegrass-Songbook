@@ -1,5 +1,8 @@
 {meta: title This Road That I Walk}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file thisroadthatiwalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well this road that I walk is a [F]mighty lonely [C]road
@@ -32,3 +35,7 @@ Each step that you take proves [F]you’re not very [C]smart
 {start_of_verse: Verse 5}
 [F]Like me you must [C]walk this road of [G7]misery [C]alone 
 {end_of_verse}
+
+
+
+

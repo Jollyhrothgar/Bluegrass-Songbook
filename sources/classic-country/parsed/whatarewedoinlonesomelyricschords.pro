@@ -1,6 +1,9 @@
 {meta: title What Are We Doin’ Lonesome}
 {meta: artist Gatlin Brothers}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file whatarewedoinlonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We both look like grownups to [F]me
@@ -33,3 +36,6 @@ Since we [C]both look like we both know what to [F]do
 What are we [E7]doin' [D7]lonesome [G7]what are we doin' [Am]blue
 [F]What are we doin' [C]blue
 {end_of_verse}
+
+
+

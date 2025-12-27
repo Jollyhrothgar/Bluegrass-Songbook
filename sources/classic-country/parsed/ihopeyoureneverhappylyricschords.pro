@@ -1,5 +1,8 @@
 {meta: title I Hope You're Never Happy}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file ihopeyoureneverhappylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish you all the [F]luck I wish you only the [C]best
@@ -46,3 +49,9 @@ I hope you're never [G7]happy with anybody but [C]me
 I hope you're never [F]happy I hope you're never [C]happy
 I hope you're never [G7]happy with anybody but [C]me
 {end_of_verse}
+
+
+
+
+
+

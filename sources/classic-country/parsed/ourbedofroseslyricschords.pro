@@ -1,6 +1,9 @@
 {meta: title Our Bed Of Roses}
 {meta: artist George Jones}
 {meta: composer Keith Steagall and Zack Turner}
+{meta: x_source classic-country}
+{meta: x_source_file ourbedofroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The morning we moved in this house [C]you said let's make a bed [G]of [G][C]roses
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [Am]So I sit alone and watch it [D7]rain on our bed of [G][C]roses
 {end_of_verse}
+
+
+
+

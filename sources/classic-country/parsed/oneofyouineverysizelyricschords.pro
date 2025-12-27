@@ -1,6 +1,9 @@
 {meta: title Merry Christmas To You From Me}
 {meta: artist Marty Robbins}
 {meta: composer Jack Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file oneofyouineverysizelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well honey [D7]I'll take one of you in every [G]size
@@ -38,3 +41,8 @@
 [D7]I'll take one of you in every [G]size
 [D7]I'll take one of you in every [G]size
 {end_of_verse}
+
+
+
+
+

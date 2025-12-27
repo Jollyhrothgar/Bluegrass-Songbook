@@ -1,5 +1,8 @@
 {meta: title Five Little Fingers}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file fivelittlefingerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I came home last night to a [C]dark and lonely [G]cottage [C]
@@ -32,3 +35,5 @@ To tell me all that I needed to [G]know
 {start_of_verse: Verse 3}
 ([D7]Five little fingers too [C]young to under[G]stand)
 {end_of_verse}
+
+

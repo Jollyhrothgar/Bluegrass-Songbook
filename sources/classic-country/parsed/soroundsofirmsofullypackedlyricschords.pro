@@ -1,6 +1,9 @@
 {meta: title So Round So Firm So Fully Packed}
 {meta: artist Ernest Tubb}
 {meta: composer Merle Travis, Cliffie Stone, Eddie Kirk}
+{meta: x_source classic-country}
+{meta: x_source_file soroundsofirmsofullypackedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So round so firm so fully packed [D7]that's my gal
@@ -38,3 +41,7 @@ So [C]round so firm so fully packed [G7]that's my [C]gal
 [D7]Won't be long 'til she wears my brand
 So [C]round so firm so fully packed [G7]that's my [C]gal
 {end_of_verse}
+
+
+
+

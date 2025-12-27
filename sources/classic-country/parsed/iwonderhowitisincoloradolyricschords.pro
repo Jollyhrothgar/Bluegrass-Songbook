@@ -1,6 +1,9 @@
 {meta: title I Wonder How It Is In Colorado}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderhowitisincoloradolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought of hungry children 
@@ -63,3 +66,14 @@ And I [C]wonder how it is [D7]in [G]Colorado
 I been thinking bout you honey
 And I [C]wonder how it is [D7]in [G]Colorado
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

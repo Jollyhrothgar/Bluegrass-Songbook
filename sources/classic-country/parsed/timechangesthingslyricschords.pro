@@ -1,6 +1,9 @@
 {meta: title Time Changes Things}
 {meta: artist Lefty Frizzell}
 {meta: composer Lessie Lyle and Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file timechangesthingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]It was [G]you I loved sent from [C]heaven above
@@ -29,3 +32,6 @@ They don't [D7]know how I'm hurting deep in[G]side
 The [C]trail of yesterday is [G]now the main high[C]way
 [G]It's [C]funny [G]honey how [D7]time changes [G]things
 {end_of_verse}
+
+
+

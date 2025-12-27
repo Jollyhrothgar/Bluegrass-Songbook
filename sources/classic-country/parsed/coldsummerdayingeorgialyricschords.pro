@@ -1,6 +1,9 @@
 {meta: title Cold Summer Day In Georgia}
 {meta: artist Gene Watson}
 {meta: composer Arthur Leo Owens and Dennis Knutson}
+{meta: x_source classic-country}
+{meta: x_source_file coldsummerdayingeorgialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought I [C]had her wrapped around my [G]finger
@@ -36,3 +39,8 @@ But there ain't no frost on a July ground
 [D7]She said it would be a cold summer day in Georgia
 [G]Before I'd see her smiling face again
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Time Don't Run Out On Me}
 {meta: artist Anne Murray}
 {meta: composer Gerald Goffin and Carole King}
+{meta: x_source classic-country}
+{meta: x_source_file timedontrunoutonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Time don't run out on [G7]me
@@ -45,3 +48,8 @@ Time don't run out on [Am]me
 I've [C]gotta get back to where we [Em]used to be (where we used to [D7]be)
 [C]Time [Cm]don't run out on [G]me 
 {end_of_verse}
+
+
+
+
+

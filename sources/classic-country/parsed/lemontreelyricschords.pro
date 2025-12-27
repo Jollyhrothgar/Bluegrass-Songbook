@@ -1,6 +1,9 @@
 {meta: title Lemon Tree}
 {meta: artist Bobby Bare}
 {meta: composer Will Holt}
+{meta: x_source classic-country}
+{meta: x_source_file lemontreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was [G7]just a lad of [C]ten my father [G7]said to [C]me
@@ -29,3 +32,6 @@ But the fruit of the poor lemon is impossible to [C]eat
 Lemon tree very pretty and the lemon flower is [G7]sweet
 But the fruit of the poor lemon is impossible to [C]eat
 {end_of_verse}
+
+
+

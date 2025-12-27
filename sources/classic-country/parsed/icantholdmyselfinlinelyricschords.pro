@@ -1,5 +1,8 @@
 {meta: title I Can't Hold Myself In Line}
 {meta: artist Johnny Paycheck with Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file icantholdmyselfinlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm going [G7]off the deep [C]end 
@@ -29,3 +32,6 @@ I’m full speed ahead and what are you doing [G7]son
 I’m right behind you [C]down the wrong road of [F]lies
 [G7]Cause we can't hold ourselves in [C]line
 {end_of_verse}
+
+
+

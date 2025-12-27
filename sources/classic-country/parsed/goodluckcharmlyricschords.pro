@@ -1,6 +1,9 @@
 {meta: title Good Luck Charm}
 {meta: artist Elvis Presley}
 {meta: composer Aaron Schroeder and Wally Gold}
+{meta: x_source classic-country}
+{meta: x_source_file goodluckcharmlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [A7]Uh huh  un [D7]huh  un [G]huh  oh yeah
@@ -59,3 +62,12 @@ To [A7]have to have to hold [D7]to hold [G]tonight
 {start_of_verse: Verse 10}
 [A7]Uh huh  un [D7]huh  un [G]huh  oh yeah
 {end_of_verse}
+
+
+
+
+
+
+
+
+

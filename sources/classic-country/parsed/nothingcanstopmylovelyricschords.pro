@@ -1,6 +1,9 @@
 {meta: title Nothing Can Stop My Love}
 {meta: artist Roger Miller}
 {meta: composer Roger Miller and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file nothingcanstopmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gotta get up I gotta keep [F]goin' 
@@ -28,3 +31,5 @@ Nothin' at [C]all nothin' in the [F]world
 Can make me stop [C]fallin' for you my girl friend
 Nothin' can stop me stop me [G7]stop my lovin' [C]you
 {end_of_verse}
+
+

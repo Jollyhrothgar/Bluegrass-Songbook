@@ -1,6 +1,9 @@
 {meta: title Sweet Mama Hurry Home}
 {meta: artist JImmy Rodgers}
 {meta: composer Jack Neville and Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file sweetmamahurryhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been so [G7]blue [C]and lonesome [G7]too
@@ -53,3 +56,8 @@ But [D7]then I'll [G7]be long [C]gone ([A7]sweet mamma)
 [D7]Hurry home or [G7]I'll be [C]gone
 Hurry home or [G7]I'll be [C]gone
 {end_of_verse}
+
+
+
+
+

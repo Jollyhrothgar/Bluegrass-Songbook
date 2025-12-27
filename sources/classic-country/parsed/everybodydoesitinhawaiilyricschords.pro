@@ -1,6 +1,9 @@
 {meta: title Everybody Does It in Hawaii}
 {meta: artist Hank Snow}
 {meta: composer Elsie McWilliams and Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file everybodydoesitinhawaiilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now talk about Hawaii I didn't know it was so [D7]grand
@@ -27,3 +30,6 @@
 [D7]A perfect form and I'm hard to please
 [G7]But everybody [C]does it in [C][G7]Hawaii
 {end_of_verse}
+
+
+

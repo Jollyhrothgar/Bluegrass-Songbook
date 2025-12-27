@@ -1,5 +1,8 @@
 {meta: title Don't Take it Out on Me}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file donttakeitoutonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just because you were hurt by [E7]someone
@@ -25,3 +28,6 @@ Just because you were hurt by [E7]someone
 {start_of_verse: Verse 4}
 Repeat
 {end_of_verse}
+
+
+

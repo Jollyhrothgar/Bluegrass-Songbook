@@ -1,6 +1,9 @@
 {meta: title You Can’t Conceal A Broken Heart}
 {meta: artist Kitty Wells}
 {meta: composer Johnny Wright and Wally Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file youcantconcealabrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can't conceal a [C]heart that's [G]broken
@@ -29,3 +32,6 @@
 [G]I try to smile the best I can [C]dear
 [G]But you can't [D7]conceal  a broken [G]heart
 {end_of_verse}
+
+
+

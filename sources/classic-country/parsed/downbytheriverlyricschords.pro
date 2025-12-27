@@ -1,6 +1,9 @@
 {meta: title Down by the River}
 {meta: artist Faron Young}
 {meta: composer Jan Crutchfield and Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file downbytheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down by the river   [F]there's a [C]tree
@@ -36,3 +39,7 @@ Beneath it's branches  you promised [G7]me
 Your love forever now that loves [C]gone
 [F]Down by the [C]river  [G7]I'm all [C]alone  
 {end_of_verse}
+
+
+
+

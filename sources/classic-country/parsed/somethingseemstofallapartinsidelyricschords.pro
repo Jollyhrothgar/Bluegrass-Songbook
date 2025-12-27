@@ -1,6 +1,9 @@
 {meta: title Something Seems to Fall Apart Inside}
 {meta: artist Jack Greene}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file somethingseemstofallapartinsidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s hard sweetheart to try and hide my [D7]feelings
@@ -22,3 +25,5 @@ Gives [D7]me a feeling that’s so hard to [G7]hide
 [C]To be in reach and still not reach and [D7]touch you
 Makes [G7]something seems to fall apart [C]inside
 {end_of_verse}
+
+

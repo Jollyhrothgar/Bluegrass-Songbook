@@ -1,5 +1,8 @@
 {meta: title Have You Ever Been A Fool}
 {meta: artist Jake Penrod}
+{meta: x_source classic-country}
+{meta: x_source_file haveyoueverbeenafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have you ever been a fool
@@ -46,3 +49,8 @@ Then you'll know just what it's like
 To feel like me tonight 
 Have you ever been a [C]fool
 {end_of_verse}
+
+
+
+
+

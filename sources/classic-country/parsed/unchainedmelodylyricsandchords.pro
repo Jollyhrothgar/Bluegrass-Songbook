@@ -1,6 +1,9 @@
 {meta: title Unchained Melody}
 {meta: artist Mel Tillis}
 {meta: composer Hy Zaret and Alex North}
+{meta: x_source classic-country}
+{meta: x_source_file unchainedmelodylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh my [Em]love my [C]darling
@@ -36,3 +39,7 @@
 [G]I need your love I need your [Em]love
 [C]God speed your love  [D7]to [G]me
 {end_of_verse}
+
+
+
+

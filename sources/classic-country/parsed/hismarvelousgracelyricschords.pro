@@ -1,6 +1,9 @@
 {meta: title His Marvelous Grace}
 {meta: artist Jimmie Davis}
 {meta: composer C.E. Todd}
+{meta: x_source classic-country}
+{meta: x_source_file hismarvelousgracelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have read in the Bible that [C]God so loves [G]sinners
@@ -36,3 +39,7 @@ And we'll see our Redeemers sweet [D7]face (sweet face)
 With [G]Him (with Him) we shall [C]reign there [G]forever
 Thank the Lord for His [D7]marvelous [G]grace (marvelous grace)
 {end_of_verse}
+
+
+
+

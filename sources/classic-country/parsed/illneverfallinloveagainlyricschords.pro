@@ -1,6 +1,9 @@
 {meta: title I'll Never Fall In Love Again}
 {meta: artist Anne Murray}
 {meta: composer Hal David and Burt Bacharach}
+{meta: x_source classic-country}
+{meta: x_source_file illneverfallinloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What do you get when you [Em]fall in [G]love
@@ -51,3 +54,9 @@
 {start_of_verse: Verse 7}
 [C]I'll [D7]never fall in love [G]again
 {end_of_verse}
+
+
+
+
+
+

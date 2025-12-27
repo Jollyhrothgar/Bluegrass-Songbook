@@ -1,6 +1,9 @@
 {meta: title Tulsa County}
 {meta: artist Anita Carter}
 {meta: composer Pamela Polland}
+{meta: x_source classic-country}
+{meta: x_source_file tulsacountrylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My nights have been lonely since I've been [F]in Tulsa [G7]County
@@ -32,3 +35,7 @@ Yes I'll [C]think of you   but now  [G7]kiss me [C]goodbye
 Well I don't [F]know  [G7]just where I'll [C]go
 Gonna head on down to [G7]Mexico  down to [C]Mexico
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's Gonna Rain Today}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file itsgonnaraintodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's coldness in the wind the clouds have [F]changed again
@@ -26,3 +29,6 @@ Inside to [C]stay  [G7]it's gonna rain [C]today
 {start_of_verse: Verse 3}
 [F]You're going [C]away  [G7]it's gonna rain [C]today
 {end_of_verse}
+
+
+

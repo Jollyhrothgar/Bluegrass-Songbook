@@ -1,6 +1,9 @@
 {meta: title From Cotton To Satin}
 {meta: artist Gene Watson}
 {meta: composer David Chamberlain and Jim Vest}
+{meta: x_source classic-country}
+{meta: x_source_file fromcottontosatinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From cotton to satin from Birmingham to [F]Manhattan
@@ -40,3 +43,8 @@ She went from cotton to satin from Birmingham to [F]Manhattan
 {start_of_verse: Verse 6}
 She went from cotton to satin
 {end_of_verse}
+
+
+
+
+

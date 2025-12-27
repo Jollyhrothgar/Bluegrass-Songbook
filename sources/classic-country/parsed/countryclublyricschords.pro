@@ -1,6 +1,9 @@
 {meta: title Country Club}
 {meta: artist Travis Tritt}
 {meta: composer Catesby Jones and Dennis Lord}
+{meta: x_source classic-country}
+{meta: x_source_file countryclublyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I took a double take out on the interstate 
@@ -77,3 +80,13 @@ I'm a member of a [C]country club
 At any honky tonk [G7]roadside pub 
 I'm a member of a [C]country club
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

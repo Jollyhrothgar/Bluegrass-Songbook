@@ -1,6 +1,9 @@
 {meta: title Your Shining Face}
 {meta: artist George Jones}
 {meta: composer Joe Allen and Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file yourshiningfacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I fell awake this morning and [Em]thought 
@@ -50,3 +53,9 @@ We could feel it for each [C]other (we could feel it for each other)
 And we saw Him smiling [A#7]gentle (and we saw Him smiling gentle)
 His shining face among the [C]flowers 
 {end_of_verse}
+
+
+
+
+
+

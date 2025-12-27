@@ -1,6 +1,9 @@
 {meta: title Drinkin' Bone}
 {meta: artist Tracy Byrd}
 {meta: composer Kerry Phillips and Casey Beathard}
+{meta: x_source classic-country}
+{meta: x_source_file drinkinbonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's Friday evenin' six o'clock 
@@ -44,3 +47,8 @@ The [C]party bone's connected to the [G7]stayin' out all night long
 And [C]she won't think it's funny and I'll [F]wind up all alone
 And the [C]lonely bone's [G7]connected to the [C]drinkin' bone
 {end_of_verse}
+
+
+
+
+

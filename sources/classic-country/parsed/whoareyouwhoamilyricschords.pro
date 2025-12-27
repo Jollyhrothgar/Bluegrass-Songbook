@@ -1,6 +1,9 @@
 {meta: title Who Are You Who Am I}
 {meta: artist Elvis Presley}
 {meta: composer Sid Wayne and Ben Weisman}
+{meta: x_source classic-country}
+{meta: x_source_file whoareyouwhoamilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [E7]Who are [Em]you  [Dm]who am [C]I
@@ -26,3 +29,5 @@
 [E7]So close to [Em]love  [Dm]and yet so [C]far
 [F]Just [G7]one [C]kiss will [Am]tell us [F]who we [C][G7]are
 {end_of_verse}
+
+

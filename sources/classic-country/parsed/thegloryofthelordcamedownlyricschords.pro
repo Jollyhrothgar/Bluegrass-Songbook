@@ -1,6 +1,9 @@
 {meta: title The Glory Of The Lord Came Down}
 {meta: artist Betty Jean Robinson}
 {meta: composer Brenda Lipsey}
+{meta: x_source classic-country}
+{meta: x_source_file thegloryofthelordcamedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was down at the alter [Am]talking to the father
@@ -75,3 +78,12 @@ I was praising my Savior
 Who [Am]lives and reigns forever
 When the [C]glory of the [D7]Lord [G7]came [C]down
 {end_of_verse}
+
+
+
+
+
+
+
+
+

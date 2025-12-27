@@ -1,6 +1,9 @@
 {meta: title I Am Always Waiting}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file iamalwayswaitinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From the start I [G7]promised you [C]that I would always [F]be
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]For I am always [C][F]wait-ing
 {end_of_verse}
+
+
+
+

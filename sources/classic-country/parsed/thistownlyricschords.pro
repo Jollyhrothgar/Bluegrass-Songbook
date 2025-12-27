@@ -1,5 +1,8 @@
 {meta: title This Town}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file thistownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This town ain't for [Am]me 
@@ -33,3 +36,7 @@ As [F]long as I [G7]leave this [C]town[Am]
 [F]Long as I [G7]leave this [C]town[Am] 
 [F]I've gotta [G7]leave this [C]town
 {end_of_verse}
+
+
+
+

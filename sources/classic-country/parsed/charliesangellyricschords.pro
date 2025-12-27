@@ -1,6 +1,9 @@
 {meta: title Charlie's Angel}
 {meta: artist Mel Tillis}
 {meta: composer Dee Gaskin}
+{meta: x_source classic-country}
+{meta: x_source_file charliesangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Charlie's some where [C]in the [G]bar
@@ -37,3 +40,7 @@ And I'm [C]holding Charlie's [D7]Angel [G]tonight
 {start_of_verse: Verse 4}
 Yes I'm [C]holding Charlie's [D7]Angel [G]tonight
 {end_of_verse}
+
+
+
+

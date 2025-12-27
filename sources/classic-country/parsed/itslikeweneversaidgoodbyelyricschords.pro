@@ -1,6 +1,9 @@
 {meta: title It’s Like We Never Said Goodbye}
 {meta: artist Crystal Gayle}
 {meta: composer Roger Greenaway and Geoff Stephens}
+{meta: x_source classic-country}
+{meta: x_source_file itslikeweneversaidgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was sure I'd lost my chance for for[G7]ever 
@@ -35,3 +38,6 @@ But [F]still that same old fee[C]ling
 As I [F]hold you close I [Em]almost want to [F]cry [G7]
 Cause it [F]feels just [Dm]like we [G7]never said good[C]bye 
 {end_of_verse}
+
+
+

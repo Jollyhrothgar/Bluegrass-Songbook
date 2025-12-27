@@ -1,6 +1,9 @@
 {meta: title Jealousy}
 {meta: artist Kitty Wells}
 {meta: composer Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file jealousylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jealousy [C]is there no [D7]cure 
@@ -29,3 +32,6 @@ Your distrust hurts me darling that's for [G]sure
 Have faith in my love or set me [C]free 
 You are [D7]driving me crazy with [G]jealousy
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'm Called Lonely}
 {meta: artist Ricky Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file imcalledlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Caring is a [A7]word I use for [D7]heartache
@@ -34,3 +37,7 @@ You've [G]left the [C]only one that's [G]me
 I'm called [G]lonely (I'm called lone[D7]ly)
 I'm called [G]lonely
 {end_of_verse}
+
+
+
+

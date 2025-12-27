@@ -1,5 +1,8 @@
 {meta: artist Emmylou Harris}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file colorsofyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Colors of your heart[Am]    [C]like the colors on a [G]pinwheel 
@@ -23,3 +26,5 @@ Like you've [D7]done through mine
 [G]Colors [C]of your [G]eyes[Am]    [C]like the blues [G]in a bottle
 [C]They taking you [G]down [D7]let them wash you [G]away
 {end_of_verse}
+
+

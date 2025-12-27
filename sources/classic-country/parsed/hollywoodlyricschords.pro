@@ -1,6 +1,9 @@
 {meta: title Hollywood}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file hollywoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hollywood
@@ -50,3 +53,11 @@ And you have hooked me with your magic lure
 [F]Anyone can see there's [C]a different [A7]me
 [D7]Cause that's in [C][G7]Hollywood
 {end_of_verse}
+
+
+
+
+
+
+
+

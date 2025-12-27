@@ -1,6 +1,9 @@
 {meta: title Where Have All The Flowers Gone}
 {meta: artist Eddy Arnold}
 {meta: composer Pete Seeger}
+{meta: x_source classic-country}
+{meta: x_source_file wherehavealltheflowersgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where have all the [Em]flowers gone
@@ -57,3 +60,10 @@ Where have all the [Em]soldiers gone
 [C]Oh when will [G]they ever learn
 [C]Oh when will [D7]they ever [G]learn
 {end_of_verse}
+
+
+
+
+
+
+

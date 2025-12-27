@@ -1,5 +1,8 @@
 {meta: title I'm Beginning To Forget}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file imbeginningtoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I think that I'm beginning to [D7]forget you
@@ -28,3 +31,6 @@ Cause I only kiss your picture now and [G]then
 [G]I think that I'm beginning to [D7]forget you
 Cause I only kiss your picture now and [G]then
 {end_of_verse}
+
+
+

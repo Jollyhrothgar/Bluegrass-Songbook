@@ -1,6 +1,9 @@
 {meta: title Enough Heart To Hurt}
 {meta: artist Jean Shepard}
 {meta: composer Ernest Reed and Jade Mangino}
+{meta: x_source classic-country}
+{meta: x_source_file enoughhearttohurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've gone away and [F]left me here to [C]cry
@@ -28,3 +31,6 @@ Now I've got just enough heart to [C]hurt
 {start_of_verse: Verse 4}
 Yes [G7]I've got just enough heart to [C]hurt
 {end_of_verse}
+
+
+

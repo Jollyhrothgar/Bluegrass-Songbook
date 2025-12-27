@@ -1,6 +1,9 @@
 {meta: title Kentucky Bluebird}
 {meta: artist Keith Whitley}
 {meta: composer Don Cook and Wally Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file kentuckybluebirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blown down the highway by [G7]two different winds
@@ -43,3 +46,9 @@ Kentucky [C]Bluebird [F]I heard your song [G7]today [C]  [F]
 But when I [C]try to touch you [G7]you fly [F]away
 You fly [C]away   
 {end_of_verse}
+
+
+
+
+
+

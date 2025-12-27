@@ -1,5 +1,8 @@
 {meta: title In God's Eyes}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file inGodseyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Never think evil [D7]thoughts of [G]anyone
@@ -28,3 +31,6 @@
 [G]But open arms should [D7]await its [G]returning
 [D7]In God's eyes He sees it this [G]way
 {end_of_verse}
+
+
+

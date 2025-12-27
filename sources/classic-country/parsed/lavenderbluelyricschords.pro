@@ -1,6 +1,9 @@
 {meta: title Lavender Blue}
 {meta: artist Jim Ed Brown}
 {meta: composer Larry Moray and Eliot Daniel}
+{meta: x_source classic-country}
+{meta: x_source_file lavenderbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lavender blue dilly dilly [C]lavender [G]green
@@ -33,3 +36,8 @@ Of [G]lavender blue dilly dilly [C]lavender [G]green
 {start_of_verse: Verse 6}
 [C]If I’ll be [G]king dilly dilly [A7]you’ll be [D7]my [G]queen
 {end_of_verse}
+
+
+
+
+

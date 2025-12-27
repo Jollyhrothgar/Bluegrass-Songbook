@@ -1,6 +1,9 @@
 {meta: title Now And Forever}
 {meta: artist Anne Murray}
 {meta: composer David Foster, Jim Vallance, Randy Goodrum}
+{meta: x_source classic-country}
+{meta: x_source_file nowandforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Up until now [C]I've learned to live without [D7]love
@@ -46,3 +49,9 @@
 [G]You and me this is what love should [Em]be
 [Bm]And it's gonna [C]be right now [D7]and [G]for-ever
 {end_of_verse}
+
+
+
+
+
+

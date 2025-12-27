@@ -1,5 +1,8 @@
 {meta: title Faster Horses}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file fasterhorseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He was an old-time cowboy don't you understand
@@ -56,3 +59,11 @@ Son it's faster horses  [C]younger women  [D7]older whiskey  more [G]money
 Faster horses  [C]younger women  [D7]older whiskey  more [G]money
 Faster horses  [C]younger women  [D7]older whiskey  more [G]money
 {end_of_verse}
+
+
+
+
+
+
+
+

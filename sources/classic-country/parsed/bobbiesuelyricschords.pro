@@ -1,6 +1,9 @@
 {meta: title Bobbie Sue}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Dan Tyler, Wood Newton, Adele B. Tyler}
+{meta: x_source classic-country}
+{meta: x_source_file bobbiesuelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard about her from a friend of mine
@@ -49,3 +52,8 @@ I'll take her riding [B][B]on [B][B]a [B][B][B]Friday night
 [D7]My Chevy's humming and she holds me tight
 [G]We'll find a preacher and we'll do it right
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Guess I'll Be Going}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file guessillbegoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here we are but we're [G7]not close [C]together 
@@ -25,3 +28,6 @@ I [G]guess I'll be [D7]going [G]goodnight
 {start_of_verse: Verse 4}
 I [G]guess I'll be [D7]going [G]goodnight
 {end_of_verse}
+
+
+

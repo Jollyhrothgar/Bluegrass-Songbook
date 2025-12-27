@@ -1,6 +1,9 @@
 {meta: title Still Loving You}
 {meta: artist Bob Luman}
 {meta: composer Troy Schondell}
+{meta: x_source classic-country}
+{meta: x_source_file stilllovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Still loving you just like before [C7]
@@ -29,3 +32,6 @@ Some mira[F]cle   would bring you back
 Oh set me [C]free   [A7]so I won't [Dm]be 
 [G7]Still loving [C]you  [G7]still loving [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Will To Love}
 {meta: artist Lee Greenwood}
 {meta: composer Dave Loggins and Steve Diamond}
+{meta: x_source classic-country}
+{meta: x_source_file thewilltolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here we are at the [F]breaking point a[C]gain[F]
@@ -44,3 +47,8 @@ Do you [A#7]still have the [F]will to [C]love
 {start_of_verse: Verse 5}
 If you [A#7]still have a [F]reason to [C]love
 {end_of_verse}
+
+
+
+
+

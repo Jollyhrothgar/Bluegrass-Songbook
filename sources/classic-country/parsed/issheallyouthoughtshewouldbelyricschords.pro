@@ -1,6 +1,9 @@
 {meta: title Is She All You Thought She Would Be}
 {meta: artist Faron Young}
 {meta: composer Roy Drusky and Bud Auge}
+{meta: x_source classic-country}
+{meta: x_source_file issheallyouthoughtshewouldbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Is she [G]all that you [G7]thought she would [C]be
@@ -26,3 +29,5 @@
 [C]Remember she once belonged to me
 [D7]Is she all you thought she would [G]be
 {end_of_verse}
+
+

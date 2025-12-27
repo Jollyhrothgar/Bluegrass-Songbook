@@ -1,6 +1,9 @@
 {meta: title Next Kiss Is The Last Goodbye}
 {meta: artist Conway Twitty}
 {meta: composer Buddy Kaye, David Hill, Ethel Lee}
+{meta: x_source classic-country}
+{meta: x_source_file nextkissisthelastgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Time to say goodbye I know I've said it bef[Em]ore
@@ -30,3 +33,6 @@ If I [C]said I'd forget I'd be telling a [Bm]lie
 The next [D7]kiss is the last good[G]bye
 Just one more [D7]kiss and then baby good[G]bye
 {end_of_verse}
+
+
+

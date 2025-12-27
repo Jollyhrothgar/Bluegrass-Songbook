@@ -1,6 +1,9 @@
 {meta: title I Wonder What He's Doing Tonight}
 {meta: artist Tanya Tucker}
 {meta: composer Gary Nicholson and John Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwhathesdoingtonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was [G]raining like it's raining tonight when I [D7]left him
@@ -38,3 +41,8 @@ Oh I [D7]wonder I wonder what he's doing [G]tonight
 Oh I [D7]wonder I wonder what he's doing [G]tonight
 Oh I [D7]wonder I wonder what he's doing [G]tonight
 {end_of_verse}
+
+
+
+
+

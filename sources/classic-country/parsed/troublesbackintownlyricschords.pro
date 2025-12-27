@@ -1,6 +1,9 @@
 {meta: title Trouble's Back in Town}
 {meta: artist The Wilburn Brothers}
 {meta: composer Dick Flood}
+{meta: x_source classic-country}
+{meta: x_source_file troublesbackintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look who's coming down the [G7]street
@@ -33,3 +36,7 @@ I feel a sad old [G7]memory
 [F]Why did she turn up again
 [C]Just when my heart [F]was on the [G7]mend
 {end_of_verse}
+
+
+
+

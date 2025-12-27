@@ -1,5 +1,8 @@
 {meta: title I Ain't Been No Where}
 {meta: artist Chuck Mead}
+{meta: x_source classic-country}
+{meta: x_source_file iaintbeennowherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was traveling along playing anywhere I could
@@ -68,3 +71,11 @@ Attic basement just to find an old broom
 I [D7]know some place you used to go
 I ain't been no [G]where
 {end_of_verse}
+
+
+
+
+
+
+
+

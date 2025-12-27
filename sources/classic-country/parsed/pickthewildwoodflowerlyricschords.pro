@@ -1,5 +1,8 @@
 {meta: title Pick The Wildwood Flower}
 {meta: artist Gene Watson}
+{meta: x_source classic-country}
+{meta: x_source_file pickthewildwoodflowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Them Texas fields were hot and
@@ -50,3 +53,9 @@ Cause she [G7]must have cried for [C]hours
 I still [G]hear her saying Gary
 Get your [D7]guitar and pick the wildwood [G]flower [D7]
 {end_of_verse}
+
+
+
+
+
+

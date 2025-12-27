@@ -1,6 +1,9 @@
 {meta: title Touching Home}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Dallas Frazier and Al Owens}
+{meta: x_source classic-country}
+{meta: x_source_file touchinghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today [C]I can [G]feel it [D7]touching [G]home 
@@ -28,3 +31,6 @@ Today I know [C]how it [G]feels
 To know that [C]love ain’t [G]real
 Because today [C]I can [G]feel it [D7]touching [G]home
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hey Barnum And Bailey}
 {meta: artist Gene Watson}
 {meta: composer Jerry Abbott, Charles Stewart, Kenneth Hagler}
+{meta: x_source classic-country}
+{meta: x_source_file heybarnumandbaileylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I been [C]livin' on beer and peanuts since my [F]baby kicked me out
@@ -29,3 +32,6 @@ Now I won't need any practice cause I'm the [F]biggest fool in town
 [C]Hey Barnum And [A7]Bailey can you [D7]use [G7]one more [C]clown
 Hey Barnum And [A7]Bailey can you [D7]use [G7]one more [C]clown
 {end_of_verse}
+
+
+

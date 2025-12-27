@@ -1,6 +1,9 @@
 {meta: title In God I Trust}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file inGoditrustlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In God I trust  to always [G7]give me faith
@@ -26,3 +29,6 @@ I'll be with [C]Him above [G7]  in God I [C]trust[F]  [G7]   [C]
 {start_of_verse: Verse 4}
 I'll [F]be with [C]Him above [G7]  in God I [C]trust[F]  [G7]   [C]
 {end_of_verse}
+
+
+

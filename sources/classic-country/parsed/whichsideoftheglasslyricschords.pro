@@ -1,6 +1,9 @@
 {meta: title Which Side Of The Glass}
 {meta: artist George Strait}
 {meta: composer Fred Knobloch and Dana Hunt}
+{meta: x_source classic-country}
+{meta: x_source_file whichsideoftheglasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]In a [F]second story [C]window [F]framed in [C]lace
@@ -41,3 +44,8 @@ I [Dm]turn towards the [C]mirror it's [F]time to face the [G7]facts
 I [C]guess it all depends on [G7]which side of the glass 
 [Em]You're looking [C]through
 {end_of_verse}
+
+
+
+
+

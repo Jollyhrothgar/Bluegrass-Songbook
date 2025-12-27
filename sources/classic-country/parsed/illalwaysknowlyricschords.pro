@@ -1,5 +1,8 @@
 {meta: title I'll Always Know}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file illalwaysknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Revenge must be the [Em]reason
@@ -26,3 +29,6 @@ But remember I saw through you're evil [D7]plan
 And I'll always [C]know when you've been [D7]untrue
 I'll always [G]know
 {end_of_verse}
+
+
+

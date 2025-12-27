@@ -1,6 +1,9 @@
 {meta: title When My Sugar Walks Down The Street}
 {meta: artist Ferlin Husky}
 {meta: composer Irving Mills, Jimmy McHugh, Gene Austin}
+{meta: x_source classic-country}
+{meta: x_source_file whenmysugarwalksdownthestreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Su[Em]gar [D7]sugar is sweet) sure is ([G]sug[Em]ar [D7]sugar is sweet)
@@ -35,3 +38,8 @@ It's never dark when [G]she's around
 (Tweet [Em]tweet) [D7]birdies go tweet tweet [G]tweet (tweet [C]tweet)
 The little [D7]birdies go tweet [G]tweet
 {end_of_verse}
+
+
+
+
+

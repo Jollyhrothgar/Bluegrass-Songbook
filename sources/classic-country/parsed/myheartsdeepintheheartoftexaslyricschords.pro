@@ -1,6 +1,9 @@
 {meta: title My Heart’s Deep In The Heart Of Texas}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file myheartsdeepintheheartoftexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My heart is deep in the heart of [C]Texas
@@ -40,3 +43,8 @@ My heart is deep in the heart of [C]Texas
 {start_of_verse: Verse 4}
 [D7]Texas is deep in the heart of [G]me
 {end_of_verse}
+
+
+
+
+

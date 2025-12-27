@@ -1,6 +1,9 @@
 {meta: title You Took The Easy Way Out}
 {meta: artist Dottie West}
 {meta: composer Dottie West, Bill West, Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file youtooktheeasywayoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said our love was not the same
@@ -35,3 +38,7 @@ And though I loved you heart and soul
 {start_of_verse: Verse 5}
 [F]Yes you took the [G7]easy way [C]out
 {end_of_verse}
+
+
+
+

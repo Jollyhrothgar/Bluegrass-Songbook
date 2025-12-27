@@ -1,6 +1,9 @@
 {meta: title Here I Am}
 {meta: artist Patty Loveless}
 {meta: composer Tony Arata}
+{meta: x_source classic-country}
+{meta: x_source_file hereiamlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't do it darling don't you dare look in [C7]there
@@ -43,3 +46,6 @@ I still [F]carry a flame [C]for you
 [G7]Burnin' me like a [F]brand
 Here [G7]I  [C]am
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Belong To My Heart}
 {meta: artist Marty Robbins}
 {meta: composer Ray Gilbert, Aguirre Agustin Lara}
+{meta: x_source classic-country}
+{meta: x_source_file youbelongtomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You belong to my heart
@@ -41,3 +44,10 @@ And a million guitars are still [D7]playing
 Darling you are the song
 And you'll always belong to my [G]heart
 {end_of_verse}
+
+
+
+
+
+
+

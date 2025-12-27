@@ -1,6 +1,9 @@
 {meta: title I Love Robbin' Banks}
 {meta: artist David Allan Coe}
 {meta: composer Guy Clark and David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file iloverobbinbankslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just keep the motor runnin' this won't [F]take very long
@@ -47,3 +50,10 @@ I always tell the teller [G7]thanks  [F]Lord I love robbin' [C]banks
 Lord I love robbin' [F]banks  Lord I love robbin' [C]banks
 I always tell the teller [G7]thanks  [F]Lord I love robbin' [C]banks
 {end_of_verse}
+
+
+
+
+
+
+

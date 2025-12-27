@@ -1,6 +1,9 @@
 {meta: title The Blizzard}
 {meta: artist Jim Reeves}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file theblizzardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a blizzard coming on  how I'm [C]wishing I was [G]home
@@ -43,3 +46,7 @@ Yes they [G]found him there on the plains hands [C]froze to the [G]reigns
 He was [D7]just a hundred yards form Mary [Em]Ann's
 He was [D7]just a hundred yards from Mary [G]Ann's
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Music To The Man}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Tony Colton}
+{meta: x_source classic-country}
+{meta: x_source_file musictothemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I keep takin' my [F]music to the [C]man
@@ -28,3 +31,5 @@ He only [C]cries but he [F]thinks he knows
 [C]He doesn't know I [F]deal with his [Am]grief
 [F]He doesn't know I [G7]still let him [C]breath
 {end_of_verse}
+
+

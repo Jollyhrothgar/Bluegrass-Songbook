@@ -1,6 +1,9 @@
 {meta: title Streets Of Gold}
 {meta: artist Ronnie Milsap}
 {meta: composer Jim Lunsford}
+{meta: x_source classic-country}
+{meta: x_source_file streetsofgoldlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a western North Carolinian [F]made of [C]stone [G7]and red clay [C]soil
@@ -23,3 +26,5 @@ And [F]there I'll [C]find my [G7]streets of [C]gold
 I'm a western North Carolinian [F]made of [C]stone [G7]and red clay [C]soil
 Got Cherokee blood deep within me [F]when I was [C]born [G7]it began to [C]boil
 {end_of_verse}
+
+

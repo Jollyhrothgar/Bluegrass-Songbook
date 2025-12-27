@@ -1,5 +1,8 @@
 {meta: title Along About Daybreak}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file alongaboutdaybreaklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When we were young and we thought we loved each other
@@ -47,3 +50,9 @@ But for me I will [D7]always be [G]blue
 I know it’s not too late for your sake dear
 But for me I will [D7]always be [G]blue
 {end_of_verse}
+
+
+
+
+
+

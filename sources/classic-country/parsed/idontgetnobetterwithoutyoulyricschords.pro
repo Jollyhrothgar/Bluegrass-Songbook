@@ -1,6 +1,9 @@
 {meta: title I Don't Get No Better Without You}
 {meta: artist Cal Smith}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file idontgetnobetterwithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just don't understand why things keep hanging on
@@ -26,3 +29,6 @@ Cause [G7]I don't get no better without [C]you
 {start_of_verse: Verse 3}
 No [G7]I don't get no better without [C]you
 {end_of_verse}
+
+
+

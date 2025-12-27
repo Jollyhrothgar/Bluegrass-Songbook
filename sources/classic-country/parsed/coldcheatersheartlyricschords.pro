@@ -1,6 +1,9 @@
 {meta: title Cold Cheater’s Heart}
 {meta: artist Del McCoury}
 {meta: composer Mike Reilly}
+{meta: x_source classic-country}
+{meta: x_source_file coldcheatersheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s an old familiar [E7]story of a boy [F]and a [C]girl
@@ -50,3 +53,9 @@
 [C]How Bobby he loved [E7]Mary and she [F]thought she loved [C]him
 [G7]But she found she had a cold cheater’s [C]heart
 {end_of_verse}
+
+
+
+
+
+

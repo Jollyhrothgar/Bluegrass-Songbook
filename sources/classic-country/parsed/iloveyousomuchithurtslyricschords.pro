@@ -1,6 +1,9 @@
 {meta: title I Love You So Much It Hurts}
 {meta: artist Patsy Cline}
 {meta: composer Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyousomuchithurtslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love you so much it hurts me
@@ -22,3 +25,5 @@ I love you so much it hurts me
 [F]I want to hold you my dear [C]forever and [A7]ever
 [D7]I love you so much [G7]it hurts me [C]so
 {end_of_verse}
+
+

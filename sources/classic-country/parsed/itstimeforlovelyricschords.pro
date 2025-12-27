@@ -1,6 +1,9 @@
 {meta: title It's Time For Love}
 {meta: artist Don Williams}
 {meta: composer Bob McDill and Hunter Moore}
+{meta: x_source classic-country}
+{meta: x_source_file itstimeforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well tonight she came home early
@@ -43,3 +46,6 @@ It's time for love she's had her moonlit nights
 It's time for [F]love she's tired of neon lights
 She's had [Dm]everything else [F]now it's time for [C]love
 {end_of_verse}
+
+
+

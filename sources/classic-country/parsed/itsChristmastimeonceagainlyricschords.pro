@@ -1,6 +1,9 @@
 {meta: title It's Christmas Time Once Again}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Joe Bonsall}
+{meta: x_source classic-country}
+{meta: x_source_file itsChristmastimeonceagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tinsel and [Em]holly [C]lights all a[D7]glow
@@ -41,3 +44,8 @@ The [A7]air is alive with the feeling of holiday [D7]cheer
 [C]Why does it [D7]have to [E7]end
 [C]It's Christmas [D7]time once [G]again
 {end_of_verse}
+
+
+
+
+

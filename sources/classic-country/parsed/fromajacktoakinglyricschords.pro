@@ -1,6 +1,9 @@
 {meta: title From a Jack to a King}
 {meta: artist David Houston}
 {meta: composer Ned Miller}
+{meta: x_source classic-country}
+{meta: x_source_file fromajacktoakinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]From a jack to a [G]king 
@@ -47,3 +50,11 @@ You made me king of your [G]heart
 {start_of_verse: Verse 9}
 repeat chorus
 {end_of_verse}
+
+
+
+
+
+
+
+

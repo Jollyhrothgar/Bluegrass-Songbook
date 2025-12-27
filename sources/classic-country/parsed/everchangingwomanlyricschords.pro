@@ -1,6 +1,9 @@
 {meta: title Ever Changing Woman}
 {meta: artist J.D. Crowe}
 {meta: composer Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file everchangingwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She sparkles like the [G7]moonlight on the [C]river
@@ -43,3 +46,8 @@ Sometimes she's [F]hotter than the [G7]thirty-first of [C]August
 [F]Heaven knows I'm [G7]always more than [C]willin'
 To hold that [F]ever changing [G7]woman in my [C]arms
 {end_of_verse}
+
+
+
+
+

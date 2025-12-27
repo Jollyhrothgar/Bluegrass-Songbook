@@ -1,6 +1,9 @@
 {meta: title Let Me Be The One}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Jimbeau Hinson}
+{meta: x_source classic-country}
+{meta: x_source_file letmebetheonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let me be the one you come [C]to
@@ -76,3 +79,13 @@
 [C]Baby when you need someone to fall on
 [D7]Won't you let me be the [G]one
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

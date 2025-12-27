@@ -1,6 +1,9 @@
 {meta: title One Pair Of Hands}
 {meta: artist Carroll Roberson}
 {meta: composer Billie Campbell and Mann Kurtz}
+{meta: x_source classic-country}
+{meta: x_source_file onepairofhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One pair of hands formed the [Am]mountains
@@ -35,3 +38,7 @@
 [C]Put your faith [G7]into one pair of [C]hands
 [F]Put your [C]faith into [G7]one pair of [C]hands
 {end_of_verse}
+
+
+
+

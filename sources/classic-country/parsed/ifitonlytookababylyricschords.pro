@@ -1,6 +1,9 @@
 {meta: title If It Only Took a Baby}
 {meta: artist Statler Brothers}
 {meta: composer Kim Reid}
+{meta: x_source classic-country}
+{meta: x_source_file ifitonlytookababylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it only took a [F]baby
@@ -41,3 +44,8 @@ In our [C]hearts His [G7]smile should [C]be
 {start_of_verse: Verse 6}
 In our hearts His [G7]smile should [C]be
 {end_of_verse}
+
+
+
+
+

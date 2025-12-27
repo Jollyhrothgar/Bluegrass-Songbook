@@ -1,6 +1,9 @@
 {meta: title Telephone Line}
 {meta: artist Leona Williams}
 {meta: composer Leona Williams and Marilyn Belken}
+{meta: x_source classic-country}
+{meta: x_source_file telephonelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I got to work this morning
@@ -52,3 +55,9 @@ I'm raising my [C]children on the [G7]telephone [C]line
 {start_of_verse: Verse 6}
 [F]I'm raising my [C]children on the [G7]telephone [C]line
 {end_of_verse}
+
+
+
+
+
+

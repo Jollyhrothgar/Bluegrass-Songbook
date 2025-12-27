@@ -1,6 +1,9 @@
 {meta: title Somebody Loves Me}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file somebodylovesmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Pardon [C]me  [G7]if I [C]seem a little [F]different
@@ -30,3 +33,5 @@ Somebody [C]loves me (somebody [F]loves me) [C]somebody loves loves [F]loves me
 Somebody [C]loves me (somebody [F]loves me) 
 Somebody [C]loves me (somebody [F]loves me) [C]somebody [F]loves me
 {end_of_verse}
+
+

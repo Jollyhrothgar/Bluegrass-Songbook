@@ -1,6 +1,9 @@
 {meta: title The Winner Of Your Heart}
 {meta: artist Kitty Wells}
 {meta: composer Johnnie Masters}
+{meta: x_source classic-country}
+{meta: x_source_file thewinnerofyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you could read my mind you [G7]wouldn't be so blind
@@ -29,3 +32,6 @@ My friends all think I'm sick but I'm in [C]love
 [C]I'd like for you to know I'm [G7]too bashful to say
 So I'd like to be the winner of your [C]heart
 {end_of_verse}
+
+
+

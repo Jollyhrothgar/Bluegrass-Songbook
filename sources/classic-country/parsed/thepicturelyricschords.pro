@@ -1,6 +1,9 @@
 {meta: title The Picture}
 {meta: artist Ricky Van Shelton}
 {meta: composer Troy Seals, Steve Buckingham, Ricky Van Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file thepicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 The Picture
@@ -42,3 +45,8 @@ If that was [C]me in the [G7]picture with [C]you
 {start_of_verse: Verse 6}
 [F]If that was [C]me in the [G7]picture with [C]you
 {end_of_verse}
+
+
+
+
+

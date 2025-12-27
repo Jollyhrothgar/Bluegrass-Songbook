@@ -1,6 +1,9 @@
 {meta: title Too Many Parties Too Many Pals}
 {meta: artist Hank Williams}
 {meta: composer Billy Rose, Mort Dixon, Ray Henderson}
+{meta: x_source classic-country}
+{meta: x_source_file toomanypartiestoomanypalslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Too many [A7]parties and [D7]too many pals
@@ -42,3 +45,5 @@ This [C]girl is my own daughter and the case is in your hands
 Those Broadway [A7]roses and [D7]prevalent sounds
 At [C]too many parties and [G7]too many [C]pals
 {end_of_verse}
+
+

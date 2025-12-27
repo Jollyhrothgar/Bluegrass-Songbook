@@ -1,6 +1,9 @@
 {meta: title Don't Let My Glass Run Dry}
 {meta: artist Red Sovine}
 {meta: composer Tommy Hill and Red Sovine}
+{meta: x_source classic-country}
+{meta: x_source_file dontletmyglassrundrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't let my glass run dry my heart [G7]can't stand the [C]pain
@@ -29,3 +32,6 @@
 [G]For I'm gonna drown my sorrow and the pain [C]within
 [D7]Don't let my glass run dry please fill it up [G]again
 {end_of_verse}
+
+
+

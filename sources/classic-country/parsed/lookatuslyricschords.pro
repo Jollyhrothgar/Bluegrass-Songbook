@@ -1,6 +1,9 @@
 {meta: title Look At Us}
 {meta: artist Vince Gill}
 {meta: composer Max D. Barnes and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file lookatuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Look at [C]us after [C7]all these years [F]together
@@ -33,3 +36,6 @@ Then just [C]look at us
 When they [G7]wanna see how true love should be
 Then just [C]look at us [G7]   [C]
 {end_of_verse}
+
+
+

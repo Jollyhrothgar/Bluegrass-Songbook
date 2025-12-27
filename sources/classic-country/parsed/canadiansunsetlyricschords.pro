@@ -1,6 +1,9 @@
 {meta: title Canadian Sunset}
 {meta: artist Anne Murray}
 {meta: composer Norman Gimbel and Eddie Heywood}
+{meta: x_source classic-country}
+{meta: x_source_file canadiansunsetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once I was alone
@@ -39,3 +42,9 @@ Fast fast beat my heart
 [G]From that day we'd never [Am]part
 [D7]We'd never ever [G]part
 {end_of_verse}
+
+
+
+
+
+

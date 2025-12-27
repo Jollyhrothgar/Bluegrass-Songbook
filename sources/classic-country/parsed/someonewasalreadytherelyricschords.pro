@@ -1,6 +1,9 @@
 {meta: title Someone Was Already There}
 {meta: artist Bobby Helms}
 {meta: composer Bobby Helms and Don Abram}
+{meta: x_source classic-country}
+{meta: x_source_file someonewasalreadytherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I [G7]went to see my [C]baby
@@ -33,3 +36,6 @@ I [F]couldn't realize as [C]tears filled my eyes
 [G7]Someone was already [C]there
 [G7](Someone was already [C]there [G7]someone was already [C]there)
 {end_of_verse}
+
+
+

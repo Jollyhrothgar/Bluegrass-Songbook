@@ -1,6 +1,9 @@
 {meta: title Yesterday's Promise}
 {meta: artist Kitty Wells}
 {meta: composer Wayne Manning}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdayspromiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yesterday's promise got you [C]everything I had
@@ -23,3 +26,5 @@ When it's [G]love she hopes to [D7]find
 [G]Tomorrow I may find it when the [C]hurt has gone away
 But yesterday's [G]promise has me [D7]cryin' to[G]day
 {end_of_verse}
+
+

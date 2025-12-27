@@ -1,6 +1,9 @@
 {meta: title I'm Sleepin’ In My Leggin’s Tonight}
 {meta: artist Red Steagall}
 {meta: composer Fletcher Jowers and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file imsleepininmylegginstonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a big storm rollin' in I can [F]feel it in my bones
@@ -49,3 +52,9 @@ So I'm [G7]sleepin' in my leggin's [C]tonight
 Longhorns [F]glowing in the [G7]darkness the [F]wind the hail the [G7]rain
 I'm sleepin' in my leggin's [C]tonight
 {end_of_verse}
+
+
+
+
+
+

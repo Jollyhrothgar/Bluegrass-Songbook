@@ -1,6 +1,9 @@
 {meta: title Left To Right}
 {meta: artist Kitty Wells}
 {meta: composer Lorene Mann}
+{meta: x_source classic-country}
+{meta: x_source_file lefttorightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm taking your [D7]ring from my [G]left hand
@@ -29,3 +32,6 @@ From left to right means good[D7]bye
 So I'll [G]take it from my left hand and [C]place it on my right
 To [G]show that I [D7]still love [G]you
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title It's Hard To Kiss The Lips At Night}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file itshardtokissthelipsatnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She used to call me baby I thought she was [C]such a [G]lady
@@ -42,3 +45,8 @@ It's [C]hard to kiss the [G]lips at night that chew your [D7]ass out all day [G]
 {start_of_verse: Verse 6}
 It's [C]hard to kiss the [G]lips at night that chew your [D7]ass out all day [G]long
 {end_of_verse}
+
+
+
+
+

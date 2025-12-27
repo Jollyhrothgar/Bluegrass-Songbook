@@ -1,6 +1,9 @@
 {meta: title Tell Me About It}
 {meta: artist Tanya Tucker}
 {meta: composer Bill LaBounty and Pat McLaughlin}
+{meta: x_source classic-country}
+{meta: x_source_file tellmeaboutitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say that [A7]there's a hole in the [D7]atmosphere
@@ -50,3 +53,8 @@ You [A7]say you need someone to hold you tight
 You can't stand another lonely night
 Well come closer and [D7]tell me about it
 {end_of_verse}
+
+
+
+
+

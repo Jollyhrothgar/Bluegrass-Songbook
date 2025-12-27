@@ -1,6 +1,9 @@
 {meta: title The Maker Said Take Her}
 {meta: artist Alabama}
 {meta: composer Randall Rogers and Mark Wright}
+{meta: x_source classic-country}
+{meta: x_source_file themakersaidtakeherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was taught to believe and never to [G7]doubt 
@@ -44,3 +47,8 @@ The [C]Maker said take her [G7]and treat her [F]right
 Just treat her [C]right
 [F]Just treat her [C]right 
 {end_of_verse}
+
+
+
+
+

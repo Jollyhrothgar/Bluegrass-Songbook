@@ -1,6 +1,9 @@
 {meta: title Stand At Your Window}
 {meta: artist Jim Reeves}
 {meta: composer Jim Carroll}
+{meta: x_source classic-country}
+{meta: x_source_file standatyourwindowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stand at your window some [D7]night
@@ -43,3 +46,8 @@ Just a glimpse of the one that I still [G]love
 The [C]one who is [G]holding
 [A7]The best part of [D7]me
 {end_of_verse}
+
+
+
+
+

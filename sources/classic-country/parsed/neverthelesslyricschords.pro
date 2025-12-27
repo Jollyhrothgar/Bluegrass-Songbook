@@ -1,6 +1,9 @@
 {meta: title Nevertheless}
 {meta: artist Anne Murray}
 {meta: composer Bert Kalmar and Harry Ruby}
+{meta: x_source classic-country}
+{meta: x_source_file neverthelesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe I'm right [Em]and maybe I'm [D#m]wrong
@@ -39,3 +42,8 @@
 [Dm]And maybe I'll [G7]give much [Em]more than I [A7]get
 [Dm]But nevertheless I'm in [G7]love with [C]you
 {end_of_verse}
+
+
+
+
+

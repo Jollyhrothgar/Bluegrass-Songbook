@@ -1,6 +1,9 @@
 {meta: title Pack Up Your Sorrows}
 {meta: artist Johnny Cash}
 {meta: composer Richard Farina and Pauline Marden}
+{meta: x_source classic-country}
+{meta: x_source_file packupyoursorrowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh but if somehow you could pack up your [C]sorrows
@@ -56,3 +59,10 @@
 [C]You would lose them I know how to use them
 [G]Give them [D7]all to [G]me
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Boogie Grass Band}
 {meta: artist Conway Twitty}
 {meta: composer Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file boogiegrassbandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a new kind of music going [F]round
@@ -36,3 +39,7 @@
 [C]We put the music all [G]together
 [D7]So dance to the boogie grass [G]band
 {end_of_verse}
+
+
+
+

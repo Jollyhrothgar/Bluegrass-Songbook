@@ -1,6 +1,9 @@
 {meta: title Shelly}
 {meta: artist Roy Drusky}
 {meta: composer Jeff Barry}
+{meta: x_source classic-country}
+{meta: x_source_file shellylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I still think about my Shelly
@@ -63,3 +66,11 @@ But on the day new life was due
 On the day new life was due
 [F]God say fit to take them [C]home
 {end_of_verse}
+
+
+
+
+
+
+
+

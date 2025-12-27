@@ -1,6 +1,9 @@
 {meta: title One Step Ahead Of My Past}
 {meta: artist Hank Locklin}
 {meta: composer Don Robertson and Hal Blair}
+{meta: x_source classic-country}
+{meta: x_source_file onestepaheadofmypastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The love that I've waited [C]and longed [G]for 
@@ -29,3 +32,6 @@ And close the door to my [C]future at [G]last
 Till [C]the day she knows all about [G]me 
 I'm one step [D7]ahead of my [G]past
 {end_of_verse}
+
+
+

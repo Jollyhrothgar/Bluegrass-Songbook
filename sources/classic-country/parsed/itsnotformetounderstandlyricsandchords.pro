@@ -1,5 +1,8 @@
 {meta: title It's Not For Me To Understand}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotformetounderstandlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I passed a home [D7]the other [G]day
@@ -35,3 +38,7 @@
 [C]After all I'm just a [G]man
 [D7]And it's not for me to [G]understand
 {end_of_verse}
+
+
+
+

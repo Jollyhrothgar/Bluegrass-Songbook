@@ -1,6 +1,9 @@
 {meta: title Go On}
 {meta: artist Patty Loveless}
 {meta: composer Roger Murrah and Patty Loveless}
+{meta: x_source classic-country}
+{meta: x_source_file goonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe in time [G7]it'll get [C]easier
@@ -34,3 +37,7 @@ It won't be [C]easy to do [G7]but we gotta go [C]on
 {start_of_verse: Verse 5}
 [F]It won't be [C]easy to do [G7]but we gotta go [C]on
 {end_of_verse}
+
+
+
+

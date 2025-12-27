@@ -1,5 +1,8 @@
 {meta: title How Do You Feel}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file howdoyoufeellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 How Do You Feel
@@ -26,3 +29,6 @@ It doesn't seem [Am]r-eal [D7]that your new love has [G]gone
 You always [Am]thoug-ht [D7]that you had him [G]enchanted
 Now how do you [Am]f-eel [D7]since your new love has [G]gone [C]   [G]
 {end_of_verse}
+
+
+

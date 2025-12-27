@@ -1,6 +1,9 @@
 {meta: title It’s All Your Fault}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file itsallyourfaultlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh it's all your fault that I ain’t sleepin'
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 5}
 Repeat
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Anywhere You Are}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file anywhereyouarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Anywhere you [Am]are 
@@ -37,3 +40,7 @@ Or [D7]you are too far from [G]me
 I just got to [Am]be with you
 Or [D7]you are too far from [G]me
 {end_of_verse}
+
+
+
+

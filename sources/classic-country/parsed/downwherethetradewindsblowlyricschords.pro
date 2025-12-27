@@ -1,6 +1,9 @@
 {meta: title Down Where The Trade Winds Blow}
 {meta: artist Marty Robbins}
 {meta: composer Harry Owens}
+{meta: x_source classic-country}
+{meta: x_source_file downwherethetradewindsblowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down where the [G7]trade winds play down where they [F]lose the [C]day
@@ -35,3 +38,8 @@ When [F]it is [G7]May again I'll sail [F]away [C]again
 Though I'm [A7]returning it won't be the [D7]same
 She traded her [G7]name way down where the trade winds [C]play [G7]   [C]
 {end_of_verse}
+
+
+
+
+

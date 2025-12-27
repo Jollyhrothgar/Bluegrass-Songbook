@@ -1,5 +1,8 @@
 {meta: title A Woman's Love}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file awomanslovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have felt it [Dm]and I have held it 
@@ -48,3 +51,8 @@ And [C]I know I'll never come [Dm]face to face
 With anything that [F]takes the place 
 Of a woman's [C]love[G7]
 {end_of_verse}
+
+
+
+
+

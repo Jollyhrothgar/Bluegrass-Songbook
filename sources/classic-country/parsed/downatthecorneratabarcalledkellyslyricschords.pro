@@ -1,6 +1,9 @@
 {meta: title Down At The Corner At A Bar Called Kelly's}
 {meta: artist Johnny Paycheck}
 {meta: composer Aubrey Mayhew, Mickey McGivern and Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file downatthecorneratabarcalledkellyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to work all week in a factory [F]nine to [C]four
@@ -34,3 +37,6 @@ And always a finding her [F]gone
 So now you can find me down on the [C]corner 
 At a [G7]bar called Kelly’s getting [C]stoned
 {end_of_verse}
+
+
+

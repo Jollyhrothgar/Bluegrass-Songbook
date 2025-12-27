@@ -1,6 +1,9 @@
 {meta: title Trying To Forget The Blues}
 {meta: artist Porter Wagoner}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file tryingtoforgettheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm having a [G7]hard time trying to forget the [C]blues
@@ -38,3 +41,9 @@ I guess I'll have to go on home and hide
 Don't want to show them how I feel [C]inside
 I'm having a [G7]hard time trying to forget the [C]blues
 {end_of_verse}
+
+
+
+
+
+

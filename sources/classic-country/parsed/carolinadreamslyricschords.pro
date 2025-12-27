@@ -1,6 +1,9 @@
 {meta: title Carolina Dreams}
 {meta: artist Ronnie Milsap}
 {meta: composer Kye Fleming, Dennis Morgan, Marie Tomlinson}
+{meta: x_source classic-country}
+{meta: x_source_file carolinadreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can smell the pines sweet Carolina's on my [A#7]mind
@@ -43,3 +46,8 @@
 [F]I'm dreaming Carolina [G7]dreams
 [F]Carolina [C]dreams
 {end_of_verse}
+
+
+
+
+

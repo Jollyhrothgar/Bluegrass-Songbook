@@ -1,6 +1,9 @@
 {meta: title She's Playing Hard To Forget}
 {meta: artist Moe Bandy}
 {meta: composer Dan Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file shesplayinghardtoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish someone else [C7]had her [F]memory
@@ -33,3 +36,7 @@ Her [F]fingers are touching me [C]gently
 {start_of_verse: Verse 4}
 [G7]She's playing hard to [C]forget
 {end_of_verse}
+
+
+
+

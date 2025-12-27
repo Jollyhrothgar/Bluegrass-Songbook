@@ -1,6 +1,9 @@
 {meta: title I've Got It Made}
 {meta: artist John Anderson}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotitmadelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A high dollar woman in a [F]low cut dress
@@ -35,3 +38,7 @@ I've got a [F]few good friends and all my [C]bills are paid
 I got the [G7]moon and stars above and I've [C]got it made
 I got the [G7]moon and stars above and I've [C]got it made
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Little Glass Of Wine}
 {meta: artist The Stanley Brothers}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file littleglassofwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come little girl let's go get married
@@ -57,3 +60,10 @@ They cast their [F]eyes into the [C]sky
 Oh God oh [F]God ain't this a [C]pity
 That the both true [G7]lovers are bound to [C]die
 {end_of_verse}
+
+
+
+
+
+
+

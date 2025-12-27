@@ -1,6 +1,9 @@
 {meta: title Without Love (There Is Nothing)}
 {meta: artist Elvis Presley}
 {meta: composer Danny Small}
+{meta: x_source classic-country}
+{meta: x_source_file withoutlovethereisnothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I awakened this morning I was [F]filled with des[C]pair
@@ -29,3 +32,6 @@ Without [F]love I've had [D7]nothing at [G7]all
 I have [C]conquered the world all but [F]one thing did I have
 Without [C]love I've had [G7]nothing at [C]all
 {end_of_verse}
+
+
+

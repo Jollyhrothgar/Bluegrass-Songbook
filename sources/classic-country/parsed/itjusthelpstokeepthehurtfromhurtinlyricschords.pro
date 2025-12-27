@@ -1,6 +1,9 @@
 {meta: title It Just Helps To Keep The Hurt From Hurtin'}
 {meta: artist Moe Bandy}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file itjusthelpstokeepthehurtfromhurtinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The barroom atmosphere really brings my heart no [G7]cheer
@@ -41,3 +44,8 @@
 [F]It just helps to keep [G7]the hurt [C]from [Am]hurting
 [Dm]Like I keep hurting [G7]since you're no longer [C]mine
 {end_of_verse}
+
+
+
+
+

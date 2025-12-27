@@ -1,6 +1,9 @@
 {meta: title The Image of Me}
 {meta: artist Jim Reeves}
 {meta: composer Harlan Howard and Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file theimageofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Does he kiss you like I [C]used to kiss [G]you
@@ -33,3 +36,7 @@ Well then he's [D7]the image of [G]me
 {start_of_verse: Verse 5}
 Repeat last verse
 {end_of_verse}
+
+
+
+

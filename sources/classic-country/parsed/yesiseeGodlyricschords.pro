@@ -1,6 +1,9 @@
 {meta: title Yes I See God}
 {meta: artist Charley Pride}
 {meta: composer Dorothy Jo Hope}
+{meta: x_source classic-country}
+{meta: x_source_file yesiseeGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I see God where the mountains reach the sky [G7]
@@ -23,3 +26,5 @@ I see [G]God in a [D7]love that never [G]dies
 I see [G]God and [D7]I know He's near [G]always
 [C]I see [G]God [D7]yes I see [G]God
 {end_of_verse}
+
+

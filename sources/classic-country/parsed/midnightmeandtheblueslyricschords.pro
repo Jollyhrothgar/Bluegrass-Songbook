@@ -1,6 +1,9 @@
 {meta: title Midnight Me and the Blues}
 {meta: artist Mel Tills}
 {meta: composer Jerry House}
+{meta: x_source classic-country}
+{meta: x_source_file midnightmeandtheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Long train [F]rumbles low  in the [G7]distance hear it [C]blow
@@ -36,3 +39,7 @@ When it's [F]midnight me [G7]and the [C]blues
 [F]These blues began when it [C]end-ed [E7]with [Am]you
 Now it's [F]midnight  me [G7]and the [C]blues
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tennessee Sunshine}
 {meta: artist Gene Watson}
 {meta: composer Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseesunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well just before the [F]sunrise in the [C]morning
@@ -48,3 +51,9 @@ I'll [F]trade these traveling [A#7]blues for some [F]Tennessee [A#7]sunshine
 Tennessee [F]sunshine (loving [C]you) 
 Tennessee [F]sunshine (loving [C]you)
 {end_of_verse}
+
+
+
+
+
+

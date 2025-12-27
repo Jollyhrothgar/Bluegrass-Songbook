@@ -1,5 +1,8 @@
 {meta: title Everyday}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file everydaylyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everyday and every night 
@@ -34,3 +37,8 @@ So every[C]day and every night
 I sit and [F]wonder if I was [Dm]right
 For leaving [G7]you for what you did to [C]me
 {end_of_verse}
+
+
+
+
+

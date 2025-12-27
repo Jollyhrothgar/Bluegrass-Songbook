@@ -1,6 +1,9 @@
 {meta: title What Are Those Things}
 {meta: artist Roger Miller}
 {meta: composer Dallas Frazier and A.L. Owens}
+{meta: x_source classic-country}
+{meta: x_source_file whatarethosethingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What are those things with [F]big black [C]wings
@@ -43,3 +46,8 @@ Today all the rooms in our [F]home feel like [C]strangers
 And why have you suddenly [F]emptied your [C]closets
 [Am]And why can't you [G7]look me in the [C]face
 {end_of_verse}
+
+
+
+
+

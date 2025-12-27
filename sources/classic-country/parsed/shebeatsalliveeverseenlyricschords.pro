@@ -1,6 +1,9 @@
 {meta: title She Beats All I've Ever Seen}
 {meta: artist Mickey Gilley}
 {meta: composer Don Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file shebeatsalliveeverseenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's five o'clock I'm punching out
@@ -47,3 +50,7 @@ And I thank [F]God for the love that she [D7]brings
 {start_of_verse: Verse 4}
 [F]She's [G7]my [C]woman she beats [Dm]all [G7]I've ever [C]seen
 {end_of_verse}
+
+
+
+

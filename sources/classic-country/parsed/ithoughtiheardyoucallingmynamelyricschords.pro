@@ -1,6 +1,9 @@
 {meta: title I Thought I Heard You Calling My Name}
 {meta: artist Porter Wagoner}
 {meta: composer Lee Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file ithoughtiheardyoucallingmynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said goodbye to me [C7]this [F]morning
@@ -29,3 +32,6 @@
 [C]Your voice seemed so [C7]close but I [F]knew
 [C]That by now you were [G7]many miles [C]away
 {end_of_verse}
+
+
+

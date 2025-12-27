@@ -1,6 +1,9 @@
 {meta: title I Can't Imagine}
 {meta: artist Jean Shepard}
 {meta: composer Dewayne Orender and Rose Young}
+{meta: x_source classic-country}
+{meta: x_source_file icantimaginelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Saw you out last night [G7]with a [C]stranger
@@ -29,3 +32,6 @@
 [C]Cause I can't [C7]imagine what's come over [F]you
 [G7]Tryin' to get [Am]over [C][G7][F]me
 {end_of_verse}
+
+
+

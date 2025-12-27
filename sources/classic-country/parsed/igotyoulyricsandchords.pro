@@ -1,5 +1,8 @@
 {meta: title I Got You}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file igotyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've had to buy back damn near everything I own
@@ -57,3 +60,9 @@ Cause it [F]don't matter long as I've got [C]you
 Yeah [D7]let 'em go right ahead and sue
 Cause it [F]don't matter long as I've got [C]you
 {end_of_verse}
+
+
+
+
+
+

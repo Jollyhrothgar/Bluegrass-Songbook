@@ -1,6 +1,9 @@
 {meta: title Love Has A Friend}
 {meta: artist Cal Smith}
 {meta: composer Binky Bryant and John Owen}
+{meta: x_source classic-country}
+{meta: x_source_file lovehasafriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When love finds a [D7]heart to move [G]into
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]Yes that's when lonely [C]moves [G]i-n
 {end_of_verse}
+
+
+
+

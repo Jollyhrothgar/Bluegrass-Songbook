@@ -1,5 +1,8 @@
 {meta: title Slippin' Around}
 {meta: artist Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file slippinaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Seems we always have to slip around
@@ -31,3 +34,6 @@ And I've got have you [C]near
 But we just have to [D7]slip around 
 And live in constant [G]fear
 {end_of_verse}
+
+
+

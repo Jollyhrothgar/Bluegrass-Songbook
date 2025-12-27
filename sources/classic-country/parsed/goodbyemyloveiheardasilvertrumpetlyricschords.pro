@@ -1,6 +1,9 @@
 {meta: title Goodbye My Love I Heard A Silver Trumpet}
 {meta: artist Billy Walker}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyemyloveiheardasilvertrumpetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Good[C]bye my love it's time to go 
@@ -33,3 +36,6 @@ I heard a silver trumpet [C7]blow
 It's [F]calling me to find the boat 
 And [C]so good[G7]bye my [C]love
 {end_of_verse}
+
+
+

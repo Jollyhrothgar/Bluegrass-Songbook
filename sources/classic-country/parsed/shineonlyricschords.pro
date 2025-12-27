@@ -1,6 +1,9 @@
 {meta: title Shine On}
 {meta: artist George Jones}
 {meta: composer Bob Morrison and Johnny McRae}
+{meta: x_source classic-country}
+{meta: x_source_file shineonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She'll never grace the centerfold of Playboy [C]Magazine
@@ -31,3 +34,6 @@
 [G]Oh my baby won't [G7]you [C]sh-ine on sh-ine [A7]on
 [G]Shine all [D7]your sweet love on [G][C]m--e
 {end_of_verse}
+
+
+

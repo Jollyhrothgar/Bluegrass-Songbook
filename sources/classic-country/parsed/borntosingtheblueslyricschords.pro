@@ -1,6 +1,9 @@
 {meta: title Born To Sing The Blues}
 {meta: artist Conway Twitty}
 {meta: composer recorded by Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file borntosingtheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Born  [F]to [G7]sing the [F][C]blues
@@ -24,3 +27,5 @@
 [G7]The lonesome [C]blues
 [G7]The weary [C]blues
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title The Blues Come In}
 {meta: artist Vernon Oxford}
+{meta: x_source classic-country}
+{meta: x_source_file thebluescomeinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The blues come in each night at [F]dark
@@ -18,3 +21,5 @@ And each lonely [G7]night the blues come [C]in
 {start_of_verse: Verse 3}
 [F]Yes each lonely [G7]night the blues come [C]in
 {end_of_verse}
+
+

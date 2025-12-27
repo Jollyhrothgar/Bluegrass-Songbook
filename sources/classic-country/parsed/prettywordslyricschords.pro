@@ -1,5 +1,8 @@
 {meta: title Pretty Words}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file prettywordslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Too late to be sorry too late to [C]forget
@@ -28,3 +31,6 @@ Pretty [D7]words were like Heaven to [G]me
 It's as plain as can be it's so easy to [C]see
 Pretty [D7]words made a fool out of [G]me
 {end_of_verse}
+
+
+

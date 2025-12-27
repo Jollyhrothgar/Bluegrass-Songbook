@@ -1,6 +1,9 @@
 {meta: title Almost Always True}
 {meta: artist Elvis Presley}
 {meta: composer Ben Weisman and Fred Wise}
+{meta: x_source classic-country}
+{meta: x_source_file almostalwaystruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was always baby [G7]I was [C]always
@@ -23,3 +26,5 @@
 [G7]Oh  [C]I was almost [G7]always true to [C]you
 [G7]I was almost always true to [C]you
 {end_of_verse}
+
+

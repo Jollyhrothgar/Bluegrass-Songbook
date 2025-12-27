@@ -1,6 +1,9 @@
 {meta: title High Inflation Blues}
 {meta: artist Moe Bandy}
 {meta: composer Steve Collom}
+{meta: x_source classic-country}
+{meta: x_source_file highinflationblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tryin' to make a livin' gets harder every [F]day
@@ -37,3 +40,8 @@
 [F]I just keep on tryin' doin' all that I can [C]do
 [G7]I got those heart breaking escalating high inflation [C]blues
 {end_of_verse}
+
+
+
+
+

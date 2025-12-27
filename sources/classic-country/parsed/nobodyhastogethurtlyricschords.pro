@@ -1,6 +1,9 @@
 {meta: title Nobody Has To Get Hurt}
 {meta: artist George Strait}
 {meta: composer Jim Lauderdale and Terry McBride}
+{meta: x_source classic-country}
+{meta: x_source_file nobodyhastogethurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As the sun sets [F]and you [C]let go 
@@ -36,3 +39,7 @@ Really make this [C]work
 Turn around real [F]slow walk straight back to [G7]me
 Nobody has to get [C]hurt
 {end_of_verse}
+
+
+
+

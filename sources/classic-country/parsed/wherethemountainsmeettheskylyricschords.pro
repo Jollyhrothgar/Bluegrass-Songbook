@@ -1,6 +1,9 @@
 {meta: title Where The Mountains Meet The Sky}
 {meta: artist Eddy Arnold}
 {meta: composer Aston Williams and Sammy Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file wherethemountainsmeettheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna ride [F]ride [C]ride ride 
@@ -36,3 +39,7 @@ And I'll [F]say my [Fm]last good[C]bye
 I'll be up in the [F]blue ho[C]rizon[Am] 
 Where the [Dm]mountains [G7]meet the [G#7]sky [C]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hello Mr. Happiness}
 {meta: artist Ricky Nelson}
 {meta: composer Dave Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file hellomrhappinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello mister happiness goodbye [F]misery
@@ -43,3 +46,8 @@
 [C]Hello mister happiness tell me it's [F]okay
 [C]And you'll be my best [G7]man on my wedding [C]day
 {end_of_verse}
+
+
+
+
+

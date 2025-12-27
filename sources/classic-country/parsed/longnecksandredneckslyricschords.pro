@@ -1,6 +1,9 @@
 {meta: title Longnecks And Rednecks}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file longnecksandredneckslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She sees him flag down the [F]waitress
@@ -47,3 +50,9 @@ That's [C]why we all feel ten feet tall [G7]sittin' on a [C]stool
 {start_of_verse: Verse 5}
 [F]Yeah that's [C]why we all feel ten feet tall [G7]sittin' on a [C]stool
 {end_of_verse}
+
+
+
+
+
+

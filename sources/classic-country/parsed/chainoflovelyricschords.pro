@@ -1,6 +1,9 @@
 {meta: title Chain Of Love}
 {meta: artist Charley Pride}
 {meta: composer Jonnie Barnett and Rory Feek}
+{meta: x_source classic-country}
+{meta: x_source_file chainoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was driving home one evening in his beat up Pontiac
@@ -66,3 +69,15 @@ She was thinking about the money and what the lady's note had said
 As her husband lay there sleeping she whispered [G7]soft and low
 Everything's gonna be alright I love you [C]Joe  
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

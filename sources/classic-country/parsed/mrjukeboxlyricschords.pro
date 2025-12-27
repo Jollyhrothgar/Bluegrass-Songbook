@@ -1,5 +1,8 @@
 {meta: title Mr. Jukebox}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file mrjukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard you say [F]that she don’t love [C]me
@@ -40,3 +43,8 @@ I heard you [G7]crying I [F]heard you [C]moan
 Mr. [F]Jukebox keep playing sad [C]songs
 You [F]know me [C]best [G7]when my baby’s [C]gone
 {end_of_verse}
+
+
+
+
+

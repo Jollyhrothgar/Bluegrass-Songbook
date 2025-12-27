@@ -1,6 +1,9 @@
 {meta: title Somebody’s Been Beating My Time}
 {meta: artist Eddy Arnold}
 {meta: composer Zeke Clements}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysbeenbeatingmytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somebody’s been beating my time
@@ -32,3 +35,7 @@ Somebody’s been beating my [G]time
 [C]Tell me how he’s going to feel
 [G]When he finds your [D7]love ain’t real and [G]true
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Waltz}
 {meta: artist Ray Stevens}
 {meta: composer Paul Craft}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkwaltzlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A honky tonk waltz [F]the juke box was [C]playin'
@@ -36,3 +39,7 @@ But from her [G7]expression I knew from the [C]start
 [G7]That a honky tonk [C]waltz [F]played our love's [C]ending
 And the [G7]beginning of my broken [C]heart[F]  [C]
 {end_of_verse}
+
+
+
+

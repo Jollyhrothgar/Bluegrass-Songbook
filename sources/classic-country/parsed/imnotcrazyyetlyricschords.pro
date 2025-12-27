@@ -1,6 +1,9 @@
 {meta: title I'm not Crazy Yet}
 {meta: artist Ray Price}
 {meta: composer Don Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file imnotcrazyyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don’t leave believing [C]that I didn’t [G]care
@@ -29,3 +32,6 @@
 [G]I may climb the walls when the [C]sun begins to [G]set
 [D7]But I’m not crazy I’m not crazy [G]yet
 {end_of_verse}
+
+
+

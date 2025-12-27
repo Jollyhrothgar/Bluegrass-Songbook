@@ -1,6 +1,9 @@
 {meta: title All The Way}
 {meta: artist Tanya Tucker}
 {meta: composer Bob Morrison and Jim Zerface}
+{meta: x_source classic-country}
+{meta: x_source_file allthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came close to fallin' a time or two before
@@ -29,3 +32,6 @@ Falling [F]deeper in [G7]love every [C]day
 I've tried so [F]hard to take it [G7]slow but I'm [C]losing con[Am]trol
 This [G7]time I [F]think I'm gonna [G7]fall all the [C]way
 {end_of_verse}
+
+
+

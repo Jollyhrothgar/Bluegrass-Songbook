@@ -1,5 +1,8 @@
 {meta: title Mama's Baby}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file mamasbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She said that she just [D7]couldn't leave her [G]mother
@@ -51,3 +54,10 @@ I met a girl out in a town that [C]tore all my resistance down
 Well she [D7]said that she just couldn't leave 
 (leave, leave, leave her [G]mother) 
 {end_of_verse}
+
+
+
+
+
+
+

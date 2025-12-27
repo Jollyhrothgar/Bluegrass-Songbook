@@ -1,6 +1,9 @@
 {meta: title Look Who's Back From Town}
 {meta: artist George Strait}
 {meta: composer Dale Dodson and Billy Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhosbackfromtownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Those city lights [F]drew you like a [C]magnet
@@ -33,3 +36,7 @@ I've been [C]expectin' you oh [G7]look who's back from [C]town
 {start_of_verse: Verse 4}
 [F]I've been [C]expectin' you oh [G7]look who's back from [F]tow[C]n
 {end_of_verse}
+
+
+
+

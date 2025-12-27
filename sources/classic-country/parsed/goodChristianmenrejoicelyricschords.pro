@@ -1,5 +1,8 @@
 {meta: title Good Christian Men Rejoice}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file goodChristianmenrejoicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Good Christian men [G7]rejoice
@@ -48,3 +51,9 @@ To [G7]gain His ever[C]lasting hall
 [Am]Christ was [E7]born to [C]save[G7]
 [C]Christ was [G7]born to [C]save
 {end_of_verse}
+
+
+
+
+
+

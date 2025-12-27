@@ -1,6 +1,9 @@
 {meta: title Baby Made It Good}
 {meta: artist Bob Luman}
 {meta: composer Buddy Cannon and Steve Smith}
+{meta: x_source classic-country}
+{meta: x_source_file babymadeitgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The last time I saw [F]baby she was [C]standing at the window
@@ -30,3 +33,6 @@ And I [F]hate to go cause [G7]baby made it [C]good
 [F]Baby made it [A#7]good she [G7]told me that she could
 [F]Baby made it [A#7]good she [G7]told me that she could[C]
 {end_of_verse}
+
+
+

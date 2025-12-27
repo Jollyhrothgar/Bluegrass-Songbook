@@ -1,5 +1,8 @@
 {meta: title I See A Bridge}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file iseeabridgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see a bridge a way to [Am]cross the [G7]river of [C]strife [F]river of [C]strife
@@ -40,3 +43,5 @@ But I will feel no danger [F]for I'm never alone nor [C]forsaken
 With faith I shall look up and see a [Am]bridge
 Yet there will [G7]always [C]be a way provided [F]for my [C]escape
 {end_of_verse}
+
+

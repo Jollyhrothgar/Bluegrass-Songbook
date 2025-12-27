@@ -1,6 +1,9 @@
 {meta: title Don't Take Your Guns To Town}
 {meta: artist Johnny Cash}
 {meta: music Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file donttakeyourgunstotownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A young cowboy named Billy Joe
@@ -75,3 +78,14 @@ A boy filled with wanderlust
 [C]As Billy Joe fell to the floor the crowd all gathered around
 [G]And wondered at his final words
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Where I Learned To Pray}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file whereilearnedtopraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In our [C]little one room country school is [G]where I learned to pray
@@ -33,3 +36,7 @@ Our [C]church that had no steeple is no [G]longer there [D7]today
 From [G]Monday until Friday at [C]school we'd learn and [G]play
 Then [C]back to school on [G]Sunday that's [D7]where I learned to [G]pray
 {end_of_verse}
+
+
+
+

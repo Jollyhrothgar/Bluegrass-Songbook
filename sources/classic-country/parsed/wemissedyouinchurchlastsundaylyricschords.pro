@@ -1,6 +1,9 @@
 {meta: title We Missed You In Church Last Sunday}
 {meta: artist Joe Mullins}
 {meta: composer Aubrey Holt}
+{meta: x_source classic-country}
+{meta: x_source_file wemissedyouinchurchlastsundaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We missed you in church last [F]Sunday 
@@ -35,3 +38,7 @@ We [C]missed you in church last [F]Sunday
 But we [C]all said a [G7]prayer for [Am]you[F] 
 But we [C]all said a [G7]prayer for [F]you[C] 
 {end_of_verse}
+
+
+
+

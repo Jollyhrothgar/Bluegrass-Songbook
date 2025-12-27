@@ -1,6 +1,9 @@
 {meta: title Just A Simple Song}
 {meta: artist Tommy Overstreet}
 {meta: composer Odis Elder}
+{meta: x_source classic-country}
+{meta: x_source_file justasimplesonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's just a [C]simple song it won't take long to [G7]sing
@@ -32,3 +35,7 @@ I'm just [F]glad you [Em]stayed and [Dm]life re[G7]mains were [C]tied
 {start_of_verse: Verse 5}
 I'm just [F]glad you [Em]stayed and the [Dm]life we [G7]made worked [C]out
 {end_of_verse}
+
+
+
+

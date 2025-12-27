@@ -1,5 +1,8 @@
 {meta: title Kansas City Star}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file kansascitystarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Kansas City Star
@@ -33,3 +36,7 @@ And my [C]barber tells me jokes
 I’m the number one attraction every [F]supermarket parking lot
 I’m the [G7]king of Kansas City no thanks Omaha thanks a [C]lot
 {end_of_verse}
+
+
+
+

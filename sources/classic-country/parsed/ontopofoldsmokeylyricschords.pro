@@ -1,6 +1,9 @@
 {meta: title On Top of Old Smokey}
 {meta: artist Eddy Arnold}
 {meta: composer Charles Grean}
+{meta: x_source classic-country}
+{meta: x_source_file ontopofoldsmokeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On top of old [F]Smokey all covered [C]in snow
@@ -29,3 +32,6 @@ I lost my true [G7]lover by courting too [C]slow
 But courting’s [F]pleasure but parting is [C]grief 
 For a false hearted [G7]lover is worse than [C]a thief
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Left To Right Or Right To Wrong}
 {meta: artist Faron Young}
 {meta: composer William Paul Rigsby and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file lefttorightorrighttowronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I close the office right on time 
@@ -41,3 +44,7 @@ Will I turn left to [G7]right or right to [C]wrong
 {start_of_verse: Verse 4}
 [F]Will I turn left to [G7]right or right to [C]wrong
 {end_of_verse}
+
+
+
+

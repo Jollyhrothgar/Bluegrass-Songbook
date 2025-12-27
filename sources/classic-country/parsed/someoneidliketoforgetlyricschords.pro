@@ -1,6 +1,9 @@
 {meta: title Someone I'd Like To Forget}
 {meta: artist Skeeter Davis}
 {meta: composer Marie Wilson and Skeeter Davis}
+{meta: x_source classic-country}
+{meta: x_source_file someoneidliketoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I  [G]know I'll [D7]keep a [G]memory in[C]side of me
@@ -29,3 +32,6 @@ Mhmm mm[C]m  [G]oh lonesome [D7]me
 I [G]walk a[D7]lone just [G]me and the [C]longing for
 [G]Someone I'd [D7]like to for[G]get
 {end_of_verse}
+
+
+

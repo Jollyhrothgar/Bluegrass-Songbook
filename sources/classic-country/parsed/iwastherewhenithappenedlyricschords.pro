@@ -1,6 +1,9 @@
 {meta: title I Was There When It Happened}
 {meta: artist Johnny Cash}
 {meta: composer Jimmie Davis and Fern Jones}
+{meta: x_source classic-country}
+{meta: x_source_file iwastherewhenithappenedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are some people [F]who say we cannot [C]tell 
@@ -25,3 +28,5 @@ Though the world may [G7]argue that we cannot [C]feel
 The heavy burdens lifted and the wild sins [F]go 
 I was there when it [C]happened and so I [G7]guess I oughta [C]know 
 {end_of_verse}
+
+

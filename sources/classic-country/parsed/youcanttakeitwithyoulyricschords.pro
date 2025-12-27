@@ -1,6 +1,9 @@
 {meta: title You Can't Take It With You}
 {meta: artist Ray Price}
 {meta: composer Hal Bynum and Jim Kandy}
+{meta: x_source classic-country}
+{meta: x_source_file youcanttakeitwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can take the [G7]lips that [C]once kissed me
@@ -26,3 +29,6 @@ And [G]you can't take it [D7]with you when you [C]go[G]
 {start_of_verse: Verse 4}
 No you can't take it [D7]with you when you [C]go[G]
 {end_of_verse}
+
+
+

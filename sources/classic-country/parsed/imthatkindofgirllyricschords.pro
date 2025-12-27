@@ -1,6 +1,9 @@
 {meta: title I'm That Kind Of Girl}
 {meta: artist Patty Loveless}
 {meta: composer Matraca Berg and Ronnie Samoset}
+{meta: x_source classic-country}
+{meta: x_source_file imthatkindofgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]There's a [G7]man in a Stetson hat 
@@ -47,3 +50,8 @@ I'm [G7]that kind of [C]girl [F]  yes I'm [G7]that kind of [C]girl[F]
 I'm [G7]that [C]kind of [F]girl [C]   [G7]oh [C]  [F]oh 
 I'm [G7]that [C]kind of [F]girl [C]   [G7]oh [C]  [F]oh [G7]   [C]
 {end_of_verse}
+
+
+
+
+

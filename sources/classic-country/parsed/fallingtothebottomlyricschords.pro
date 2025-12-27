@@ -1,6 +1,9 @@
 {meta: title Falling To The Bottom}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Carmon Holland and Faye Linard}
+{meta: x_source classic-country}
+{meta: x_source_file fallingtothebottomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes old father time [Dm]done took its [G7]toll at reducing the Killer to n[C]othing
@@ -24,3 +27,5 @@ A [D7]good woman's love is what I need [G7]now so desperately
 [F]Falling to the [C]bottom [G7]working my way [C]down[F]  [C]
 I'm [F]falling to the [C]bottom [G7]working my way [F]down[C]
 {end_of_verse}
+
+

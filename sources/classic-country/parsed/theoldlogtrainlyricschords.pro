@@ -1,5 +1,8 @@
 {meta: title The Old Log Train}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file theoldlogtrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you will listen a [F]song I will [C]sing
@@ -35,3 +38,7 @@ The log train is silent God called daddy to [G7]go
 But [C]when I get to heaven to [F]always re[C]main
 I'll listen for the whistle of [G7]the old log [C]train
 {end_of_verse}
+
+
+
+

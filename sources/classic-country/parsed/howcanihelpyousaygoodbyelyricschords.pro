@@ -1,6 +1,9 @@
 {meta: title How Can I Help You Say Goodbye}
 {meta: artist Patty Loveless}
 {meta: composer Burton Collins and Karen Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file howcanihelpyousaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Through the back [D7]window of our '[C]59 wagon
@@ -49,3 +52,8 @@ It's okay to hurt and it's [D7]okay to cry
 [C]Come let me [D7]hold you and [G]I will [C]try
 [G]How can I [Em]help you [D7]to say good[Em]bye
 {end_of_verse}
+
+
+
+
+

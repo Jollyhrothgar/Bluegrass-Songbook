@@ -1,6 +1,9 @@
 {meta: title But I Do}
 {meta: artist Buck Owens}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file butidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't think that I'd miss you but I do
@@ -29,3 +32,6 @@ Do you wish that God would bind us like I do
 [C]I didn't think that everyday would be so long while you're [F]away
 [G7]I didn't think that I'd love you but I [C]do
 {end_of_verse}
+
+
+

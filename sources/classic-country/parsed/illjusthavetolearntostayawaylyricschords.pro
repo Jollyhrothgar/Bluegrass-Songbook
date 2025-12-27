@@ -1,5 +1,8 @@
 {meta: title I'll Just Have To Learn To Stay Away}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file illjusthavetolearntostayawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a shame I had to [G7]call you on the [Am]phone
@@ -33,3 +36,7 @@ I'll [F]just have to learn to [G7]stay away from [C]you
 It's just a habit and I [G7]don't know what to [Am]do
 I'll [F]just have to learn to [G7]stay away from [C]you
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title My Tennessee Mountain Home}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file mytennesseemountainhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sitting on the front porch on a [F]summer [C]afternoon
@@ -42,3 +45,8 @@
 [F]In my Tennessee mountain home
 [C]Crickets sing in the [G7]fields [C]nearby
 {end_of_verse}
+
+
+
+
+

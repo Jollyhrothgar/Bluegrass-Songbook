@@ -1,6 +1,9 @@
 {meta: title St. Louis Blues}
 {meta: artist Merle Haggard}
 {meta: composer William Handy}
+{meta: x_source classic-country}
+{meta: x_source_file stlouisblueslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I hate to see [F]that evening sun go [C]down
@@ -38,3 +41,8 @@ Cause a black-headed [F]women makes a freight train jump the [C]track
 I said a [F]black headed woman makes a freight train jump the [C]track
 And that ole [G7]long tall gal makes a bullfrog ball the [C]jack
 {end_of_verse}
+
+
+
+
+

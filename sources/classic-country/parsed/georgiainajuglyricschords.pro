@@ -1,6 +1,9 @@
 {meta: title Georgia In A Jug}
 {meta: artist Johnny Paycheck}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file georgiainajuglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mason jars on the dresser filled with [F]dollars  and [D7]quarters
@@ -35,3 +38,7 @@ Going out to Hono[C7]lulu  [F]in a Mai Tai [D7]mug
 And I'm [G7]coming back home to Georgia in a [C]jug
 Yes I'm [G7]coming back home to Georgia in a [C]jug
 {end_of_verse}
+
+
+
+

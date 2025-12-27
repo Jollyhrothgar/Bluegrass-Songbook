@@ -1,5 +1,8 @@
 {meta: title I Heard You Crying In Your Sleep}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file iheardyoucryinginyoursleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know you [C]tried your best to love [G]me
@@ -28,3 +31,6 @@
 [C]I know I can never make you [G]happy
 [D7]Cause last night I heard you crying in your [G]sleep
 {end_of_verse}
+
+
+

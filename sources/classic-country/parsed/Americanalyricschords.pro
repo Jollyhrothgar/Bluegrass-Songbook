@@ -1,5 +1,8 @@
 {meta: title Americana}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file Americanalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve traveled all [G7]around this [C]country
@@ -58,3 +61,10 @@ And it hit me like [Am]a freight train        [F]C                     FThat a s
 [F][Am][C]A—m-ericana, [D7]I’ll [G7]keep holding to [Am]the [G7]dream
 You’re [F]still what [G7]living means to [C]me
 {end_of_verse}
+
+
+
+
+
+
+

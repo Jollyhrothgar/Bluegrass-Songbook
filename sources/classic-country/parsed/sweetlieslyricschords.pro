@@ -1,6 +1,9 @@
 {meta: title Sweet Lies}
 {meta: artist Lefty Frizzell}
 {meta: composer J.A. Ross and Jerry Organ}
+{meta: x_source classic-country}
+{meta: x_source_file sweetlieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Sweet Lies
@@ -34,3 +37,7 @@ Well [D7]remember that she once [G7]wanted me too
 If [C]she says that without you [F]world couldn’t [C]be
 Then [F]she’s telling you [C]sweet lies [G7]just like she told [C]me
 {end_of_verse}
+
+
+
+

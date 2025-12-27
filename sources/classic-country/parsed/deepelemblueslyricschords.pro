@@ -1,6 +1,9 @@
 {meta: title Deep Elem Blues}
 {meta: artist Hank Thompson}
 {meta: composer Bob Attlesey and Joe Attlesey}
+{meta: x_source classic-country}
+{meta: x_source_file deepelemblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you go down to Deep Elem just to have a little fun
@@ -41,3 +44,10 @@ Them gals down in Deep Elem got them Deep Elem blues
 [C]Oh sweet mama  papa got them Deep Elem [G]blues
 [D7]Oh sweet mama  papa got them Deep Elem [G]blues
 {end_of_verse}
+
+
+
+
+
+
+

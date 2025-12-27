@@ -1,6 +1,9 @@
 {meta: title My Days All End In Why}
 {meta: artist Charley Pride}
 {meta: composer Kevin Bloody Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file mydaysallendinwhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Thought you would be the last one [C7]I run into to[F]night
@@ -33,3 +36,7 @@ And as each day [F]slowly [C]turns to [F]night my [C]days all [G7]end in [C]why
 {start_of_verse: Verse 4}
 My days all [G7]end in [C]why
 {end_of_verse}
+
+
+
+

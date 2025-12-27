@@ -1,6 +1,9 @@
 {meta: title There's Not A Thing I Wouldn’t Do For You}
 {meta: artist Eddy Arnold}
 {meta: composer Billy Hughes}
+{meta: x_source classic-country}
+{meta: x_source_file theresnotathingiwouldntdoforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’d take a trip to the moon in an old rocket ship
@@ -61,3 +64,12 @@ I wouldn't do for [C]you
 There's not a single little [G7]thing 
 In this world I wouldn't do for [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

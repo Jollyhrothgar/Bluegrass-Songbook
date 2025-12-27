@@ -1,6 +1,9 @@
 {meta: title Silver Threads Among The Gold}
 {meta: artist Slim Whitman}
 {meta: composer H.P. Danks and Eben E. Rexford}
+{meta: x_source classic-country}
+{meta: x_source_file silverthreadsamongthegoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darlin' I am growin' [D7]older [G]mmm
@@ -29,3 +32,6 @@
 [D7]With the roses of the May [G]mmm
 [D7]I will kiss your lips and [G]say
 {end_of_verse}
+
+
+

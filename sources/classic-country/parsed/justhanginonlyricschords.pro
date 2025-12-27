@@ -1,6 +1,9 @@
 {meta: title Just Hangin’ On}
 {meta: artist Mel Street}
 {meta: composer Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file justhanginonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Up in the [Am]morning stumble [C]out of my bed 
@@ -34,3 +37,6 @@ But I order one [F]more
 [F]Feels like [C]dying
 [F]Can't call it [C]livin’ [G7]I'm just hangin’ [C]on
 {end_of_verse}
+
+
+

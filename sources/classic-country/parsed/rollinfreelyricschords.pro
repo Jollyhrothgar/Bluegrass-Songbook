@@ -1,5 +1,8 @@
 {meta: title Rollin' Free}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file rollinfreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rollin' free rollin' free rollin' free
@@ -48,3 +51,7 @@ That I [C]can't carry over the road
 On [C]trails that ain't been rode before
 Don't [D7]put those chains on me I'm rollin' [G]free
 {end_of_verse}
+
+
+
+

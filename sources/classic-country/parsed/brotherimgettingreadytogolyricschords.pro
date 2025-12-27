@@ -1,6 +1,9 @@
 {meta: title Brother I'm Getting Ready To Go}
 {meta: artist Lester Flatt}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file brotherimgettingreadytogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Lord has saved me I [C]want the world to [G]know
@@ -43,3 +46,8 @@ I'm leaving this world here [D7]below
 Ain't [G]nothing in this world can [C]turn me back I [G]know
 Brother I'm getting [D7]ready to [G]go
 {end_of_verse}
+
+
+
+
+

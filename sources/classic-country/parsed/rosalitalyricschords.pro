@@ -1,6 +1,9 @@
 {meta: title Rosalita}
 {meta: artist Hank Locklin}
 {meta: composer Al Dexter}
+{meta: x_source classic-country}
+{meta: x_source_file rosalitalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rosalita my little rose of the [G7]rancho
@@ -27,3 +30,5 @@ And love's real [G7]story
 Rosa[C]lita another day now is [G7]dawning
 For you I'm longing my Rosa[C]lita
 {end_of_verse}
+
+

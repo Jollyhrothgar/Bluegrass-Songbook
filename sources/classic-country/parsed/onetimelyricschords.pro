@@ -1,6 +1,9 @@
 {meta: title One Time}
 {meta: artist Charlie Pride}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file onetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tell me again how much you love [G7]me
@@ -29,3 +32,6 @@
 [C]Even if I'm not the first to hold [G7]you
 [F]Say you've only [G7]loved one [C]time
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title After All The Things I've Done}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file afterallthethingsivedonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know I broke your heart and made you [F]cry
@@ -42,3 +45,8 @@
 [Fm]I'll try to untangle the web I [F]spun
 [C]After all the [G7]things I've [C]done
 {end_of_verse}
+
+
+
+
+

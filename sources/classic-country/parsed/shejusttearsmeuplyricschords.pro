@@ -1,5 +1,8 @@
 {meta: title She Just Tears Me Up}
 {meta: artist Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file shejusttearsmeuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well she just tears me up every time that she walks by
@@ -36,3 +39,6 @@ Any[C]time at night when I’m [G]feeling just right
 I’m [C]gonna love her so and I [G]won’t let go
 [D7]She just tears me [G]up
 {end_of_verse}
+
+
+

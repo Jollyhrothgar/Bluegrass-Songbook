@@ -1,6 +1,9 @@
 {meta: title Countrified}
 {meta: artist John Anderson}
 {meta: composer Tom Lazaros}
+{meta: x_source classic-country}
+{meta: x_source_file countrifiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I like pretty lights and city nights
@@ -57,3 +60,10 @@ Seeing the stars in the big city bars
 But I [G7]take all these things in stride
 [F]Deep down inside I’m so [G7]countri[C]fied
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title At The Rainbow's End}
 {meta: artist Hank Thompson}
 {meta: composer Bob Nolan}
+{meta: x_source classic-country}
+{meta: x_source_file attherainbowsendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've traveled this [D7]whole world [G]over and [G7]now
@@ -29,3 +32,6 @@
 [C]How it feels to be pressed to an angel's [G]breast
 [A7]When I come to [D7]the rainbow's [G]end
 {end_of_verse}
+
+
+

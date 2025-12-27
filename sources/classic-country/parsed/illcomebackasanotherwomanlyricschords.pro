@@ -1,6 +1,9 @@
 {meta: title I'll Come Back As Another Woman}
 {meta: artist Tanya Tucker}
 {meta: composer Kent M. Robbins and Richard E. Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file illcomebackasanotherwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]You never gave me back the love I gave to [F]you
@@ -53,3 +56,9 @@ And I'll come [F]back as another [Am]woman
 And I'll [F]be the one you [Am]burn for that you [F]reach for it the [Am]dark
 I'll [F]be the one who [Dm]breaks you deviled [Am]heart
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lovely Place To Cry}
 {meta: artist Tammy Wynette}
 {meta: composer Earl Montgomery and Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file lovelyplacetocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know this house is the [F]finest one [C]around
@@ -25,3 +28,5 @@ And live [C]happy if they try
 [F]But for [C]us it's [F]been a [C]lovely [G7]place to [C]cry[F]  [C]
 [F]Yes for [C]us it's [F]been a [C]lovely [G7]place to [C]cry [F]  [C]
 {end_of_verse}
+
+

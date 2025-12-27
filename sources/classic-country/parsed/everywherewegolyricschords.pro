@@ -1,6 +1,9 @@
 {meta: title Everywhere We Go}
 {meta: artist Randy Travis}
 {meta: composer Michael Curtis and Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file everywherewegolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They took Your commandments off the schoolhouse walls
@@ -45,3 +48,10 @@ They say it's a crime to even pray within the halls
 [F]But bless the child that lets You in and knows without a doubt
 [G7]Once You live inside a heart they can't take You out
 {end_of_verse}
+
+
+
+
+
+
+

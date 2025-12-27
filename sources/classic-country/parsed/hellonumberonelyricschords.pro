@@ -1,6 +1,9 @@
 {meta: title Hello Number One}
 {meta: artist Kitty Wells}
 {meta: composer Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file hellonumberonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Hello number one [C]goodbye lonesome time
@@ -26,3 +29,6 @@ We're [G7]back again where we belong hello number [C]one
 {start_of_verse: Verse 3}
 We're [G7]back again where we belong hello number [C]one
 {end_of_verse}
+
+
+

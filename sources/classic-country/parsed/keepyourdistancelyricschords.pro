@@ -1,6 +1,9 @@
 {meta: title Keep Your Distance}
 {meta: artist Patty Loveless}
 {meta: composer Richard Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file keepyourdistancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh if I cross your path again
@@ -39,3 +42,7 @@ Oh with [G]us it must be [D7]all or none at [C]all[G]
 {start_of_verse: Verse 4}
 Oh with us it must be [D7]all or none at [C]all[G]
 {end_of_verse}
+
+
+
+

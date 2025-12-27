@@ -1,6 +1,9 @@
 {meta: title Trying To Get To You}
 {meta: artist Ricky Nelson}
 {meta: composer Rose Marie McCoy and Charles Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file tryingtogettoyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been traveling over mountains
@@ -42,3 +45,10 @@ Running all the [D7]way baby trying to get to [G]you
 {start_of_verse: Verse 3}
 Ever since I read your letter
 {end_of_verse}
+
+
+
+
+
+
+

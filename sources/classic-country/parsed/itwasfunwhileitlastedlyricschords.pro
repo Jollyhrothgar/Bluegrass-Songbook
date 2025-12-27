@@ -1,5 +1,8 @@
 {meta: title It Was Fun While It Lasted}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file itwasfunwhileitlastedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 It Was Fun While It Lasted
@@ -42,3 +45,9 @@ But [G]it just didn't [C]last [D7]long [G]enough
 {start_of_verse: Verse 6}
 No it just didn't [C]last [D7]long [G]enough
 {end_of_verse}
+
+
+
+
+
+

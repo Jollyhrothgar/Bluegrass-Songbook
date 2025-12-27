@@ -1,5 +1,8 @@
 {meta: title Letter From My Darling}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file letterfrommydarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can’t answer her letter
@@ -42,3 +45,8 @@ She said she hated to [D7]go
 It broke my heart the words [G]she wrote me
 She closed by saying [D7]I love you [G]so
 {end_of_verse}
+
+
+
+
+

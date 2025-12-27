@@ -1,6 +1,9 @@
 {meta: title Speak Of The Devil}
 {meta: artist Pirates Of The Mississippi}
 {meta: composer Richard Alves, Danny Bear Mayo, Bill McCorvey}
+{meta: x_source classic-country}
+{meta: x_source_file speakofthedevillyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You think there’s someone else
@@ -37,3 +40,6 @@ Speak of the devil
 [G7]Speak of the devil
 [C]He took me out again last night
 {end_of_verse}
+
+
+

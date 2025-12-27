@@ -1,6 +1,9 @@
 {meta: title Pen And Paper}
 {meta: artist Faron Young}
 {meta: composer Eddie Kilroy and Dianne Kilroy}
+{meta: x_source classic-country}
+{meta: x_source_file penandpaperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Pen and [F]paper won't you [G7]tell me what to [C]write
@@ -30,3 +33,7 @@ Oh [G7]pen (pen) [F]paper (paper) I can't [G7]even be[C]gin
 {start_of_verse: Verse 5}
 [G7]Pen (pen) [F]paper (paper) I can't [G7]even be[C]gin
 {end_of_verse}
+
+
+
+

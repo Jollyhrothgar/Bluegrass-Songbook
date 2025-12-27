@@ -1,6 +1,9 @@
 {meta: title Why Don't That Telephone Ring}
 {meta: artist Tracy Byrd}
 {meta: composer Ron Hellard and Charles Quillen}
+{meta: x_source classic-country}
+{meta: x_source_file whydontthattelephoneringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I had the operator call me back 
@@ -46,3 +49,8 @@ I wish I knew [C]what her [Am]silence is [G]saying
 [C]If my love means any[G]thing 
 [C]Why don't that telephone [G]ring
 {end_of_verse}
+
+
+
+
+

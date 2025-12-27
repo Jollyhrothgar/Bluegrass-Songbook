@@ -1,6 +1,9 @@
 {meta: title Lonely Christmas Call}
 {meta: artist George Jones}
 {meta: composer George Riddle and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file lonelyChristmascalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Won't you beckon [F]to our [C]lonely [G7]Christmas [C]call
@@ -41,3 +44,9 @@
 [F]To the ones whose heart you're [C]breaking
 [F]Won't you [C]beckon to our [G7]lonely Christmas [C]call
 {end_of_verse}
+
+
+
+
+
+

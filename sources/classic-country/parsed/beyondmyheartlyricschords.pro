@@ -1,6 +1,9 @@
 {meta: title Beyond My Heart}
 {meta: artist George Morgan}
 {meta: composer Manning Twomey}
+{meta: x_source classic-country}
+{meta: x_source_file beyondmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I couldn’t see [G7]beyond my [C]heart
@@ -22,3 +25,5 @@
 [G7]I thought you’d be so true to [C]me
 [D7]Beyond my heart I couldn’t [G]see
 {end_of_verse}
+
+

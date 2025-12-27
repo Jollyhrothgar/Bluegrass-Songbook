@@ -1,6 +1,9 @@
 {meta: title Once Before I Die}
 {meta: artist Mickey Gilley}
 {meta: composer Bobby Borchers and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file oncebeforeidielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once before I die  [G7]I wanna see a honky tonk angel [C]fly
@@ -30,3 +33,7 @@ I’ll [F]buy her all the drinks it takes [C]to get her [Am]high
 {start_of_verse: Verse 4}
 [F]Once before I [C]die I wanna see a [G7]honky tonk angel [C]fly
 {end_of_verse}
+
+
+
+

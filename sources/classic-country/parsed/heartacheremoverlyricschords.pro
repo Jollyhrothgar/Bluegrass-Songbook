@@ -1,5 +1,8 @@
 {meta: title Heartache Remover}
 {meta: artist Tony Booth}
+{meta: x_source classic-country}
+{meta: x_source_file heartacheremoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Walked into a package store on [D7]Fifth Avenue
@@ -32,3 +35,7 @@ She [G]left so many memories [G7]I've got to try and [C]lose sir
 {start_of_verse: Verse 4}
 Yes [D7]I need a bottle of your best heartache [G]remover
 {end_of_verse}
+
+
+
+

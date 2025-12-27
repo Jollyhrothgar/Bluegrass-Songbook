@@ -1,6 +1,9 @@
 {meta: title I'll Never Get Out Of This World Alive}
 {meta: artist Hank Williams}
 {meta: composer Hank Williams and Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file illnevergetoutofthisworldalivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now you're looking at a man that's getting kind-a mad
@@ -58,3 +61,13 @@ Cause nothings ever gonna be alright no how
 [G7]No matter how I struggle and strive
 [C]I'll never get out of this world alive
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It Sure Was Love}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file itsurewaslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They said what do you [G7]think you would [C]do
@@ -34,3 +37,7 @@ We got something [G7]they can't take [C]away
 [G7]It sure was good while it [C]lasted
 [G7]It sure was love while it [C]lasted
 {end_of_verse}
+
+
+
+

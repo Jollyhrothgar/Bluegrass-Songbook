@@ -1,6 +1,9 @@
 {meta: title Willie Was A Gamblin' Man}
 {meta: artist Ferlin Husky}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file williewasagamblinmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Three men down on the river [F]bank
@@ -79,3 +82,12 @@
 [G7]I said Willie was a gamblin' [C]man
 [G7]I said Willie was a gamblin' [C]man
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Daddy Don't Cry}
 {meta: artist Elvis Presley}
 {meta: composer Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file daddydontcrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today I stumbled from my bed
@@ -39,3 +42,7 @@ To[C]gether we'll find a [F]brand new mommy
 {start_of_verse: Verse 4}
 [F]Oh [Em]dad-[Dm]dy [G7]please don't [C]cry
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Because of Calvary}
 {meta: artist Paul Williams and The Victory Trio}
+{meta: x_source classic-country}
+{meta: x_source_file becauseofcalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I lived a wasted life that had no [D7]meaning
@@ -32,3 +35,6 @@ He took a life [D7]shattered with [G]sin
 Put it [C]together once again
 And [Am]oh what a change there's [D7]been because of [C]Calva[G]ry
 {end_of_verse}
+
+
+

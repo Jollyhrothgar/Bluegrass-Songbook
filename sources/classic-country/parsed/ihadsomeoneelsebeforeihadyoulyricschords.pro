@@ -1,6 +1,9 @@
 {meta: title I Had Someone Else Before I Had You}
 {meta: artist Bob Wills}
 {meta: composer John Darcy and Phil Harris}
+{meta: x_source classic-country}
+{meta: x_source_file ihadsomeoneelsebeforeihadyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had someone else before I had you
@@ -30,3 +33,6 @@
 [C]I had someone else before I had you
 [D7]And I'll have someone [G7]after you've [C]gone
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Troubadour}
 {meta: artist George Strait}
 {meta: composer Monty Holmes and Leslie Winn Satcher}
+{meta: x_source classic-country}
+{meta: x_source_file troubadourlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I still [G]feel twenty five  [Em]most of the [G]time
@@ -41,3 +44,8 @@ And I'll be an [C]old trouba[D7]dour when I'm [G]gone
 {start_of_verse: Verse 5}
 I'll be an [C]old trouba[D7]dour when I'm [G]gone
 {end_of_verse}
+
+
+
+
+

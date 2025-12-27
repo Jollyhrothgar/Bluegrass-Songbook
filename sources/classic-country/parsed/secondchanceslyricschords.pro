@@ -1,6 +1,9 @@
 {meta: title Second Chances}
 {meta: artist George Strait}
 {meta: composer Sanger D. Shafer and Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file secondchanceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Man don't you know this [C]woman you want
@@ -48,3 +51,9 @@ Are so hard to [G]come by
 And [D7]second chances these days 
 Are so hard to [G]come by
 {end_of_verse}
+
+
+
+
+
+

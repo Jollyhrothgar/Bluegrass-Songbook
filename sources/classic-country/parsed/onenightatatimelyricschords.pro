@@ -1,6 +1,9 @@
 {meta: title One Night At A Time}
 {meta: artist George Strait}
 {meta: composer Roger Cook, Eddie Kilgallon, Bud Lee}
+{meta: x_source classic-country}
+{meta: x_source_file onenightatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm not yours and baby you're not mine 
@@ -57,3 +60,11 @@ All night love all night
 [Dm]Practice makes perfect gonna get it right
 Gonna [G7]get it right one night at a [C]time
 {end_of_verse}
+
+
+
+
+
+
+
+

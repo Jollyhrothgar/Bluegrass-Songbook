@@ -1,5 +1,8 @@
 {meta: title Pretend You're Happy When You're Blue}
 {meta: artist Brenda Lee}
+{meta: x_source classic-country}
+{meta: x_source_file pretendyourehappywhenyourebluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pretend you're [G7]happy when you're [C]blue 
@@ -35,3 +38,7 @@ You'll be pretending just like [Dm]me
 The world is mine [F]it can be yours my [G7]friend 
 So [F]why don't [G7]you [C]pretend
 {end_of_verse}
+
+
+
+

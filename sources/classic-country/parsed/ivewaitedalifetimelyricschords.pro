@@ -1,6 +1,9 @@
 {meta: title I've Waited A Lifetime}
 {meta: artist Wynn Stewart}
 {meta: composer Bill Privett, Larry Stowell, Don Wright}
+{meta: x_source classic-country}
+{meta: x_source_file ivewaitedalifetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm just a little bit lonesome and just a little bit [D7]blue
@@ -32,3 +35,7 @@
 [D7]I'm just a little bit lonesome and just a little bit blue
 [G]I've waited a lifetime my dear for you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Down Louisiana Way}
 {meta: artist George Strait}
 {meta: composer Aaron Baker, Donny Kees, Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file downlouisianawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am going down Louisiana way
@@ -57,3 +60,11 @@ I'm [F]going down [G7]Louisiana [C]way
 {start_of_verse: Verse 6}
 I'm [F]going down [G7]Louisiana [C]way
 {end_of_verse}
+
+
+
+
+
+
+
+

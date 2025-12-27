@@ -1,5 +1,8 @@
 {meta: title Stirring Up The Ashes}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file stirringuptheasheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m stirring up the ashes of [E7]an old flame of [C]mine
@@ -28,3 +31,6 @@
 [G]Something subtle may be buried in those ashes deep and [C]gray
 [D7]So I’ll keep stirring ashes to be sure you stay [G]away
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Live For Jesus}
 {meta: artist Allen Frizzell}
 {meta: composer Allen D. Frizzell, Gayle L. Frizzell, John E. McCollum}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnaliveforJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Saw the light in a country church [C]when I was seven[G]teen
@@ -41,3 +44,8 @@ Now I'm [G]living for Jesus [D7]because He died for [G]me
 {start_of_verse: Verse 4}
 [C]Yes I'm [G]living for Jesus [D7]because He died for [G]me
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title This Ain't Just Another Lust Affair}
 {meta: artist Mel Street}
 {meta: composer Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file thisaintjustanotherlustaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This motel room may [F]make you feel [C]uneasy
@@ -33,3 +36,7 @@ Darling this ain't just [F]another [G7]lust [C]affair
 {start_of_verse: Verse 4}
 Darling this ain't just [F]another [G7]lust [C]affair
 {end_of_verse}
+
+
+
+

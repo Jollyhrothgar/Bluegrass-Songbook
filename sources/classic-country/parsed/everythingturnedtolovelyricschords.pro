@@ -1,6 +1,9 @@
 {meta: title Everything Turned To Love}
 {meta: artist Mickey Gilley}
 {meta: composer William T. Allen III and Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file everythingturnedtolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down down by the [F]river 
@@ -36,3 +39,7 @@ He was watching from [C]above
 When the devil tempted [G7]woman
 Everything turned to [C]love [F]   [C]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can Take It Or Leave It}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and Curtis Leach}
+{meta: x_source classic-country}
+{meta: x_source_file icantakeitorleaveitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I knew a man who drank himself to death
@@ -29,3 +32,6 @@ My sweet lover left me livin' all alone
 [F]Yeah I can take it or leave it but I'd rather not I leave [C]it
 [G7]Yeah I’d rather not leave it I really not leave it [C]alone
 {end_of_verse}
+
+
+

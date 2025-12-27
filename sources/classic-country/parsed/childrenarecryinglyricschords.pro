@@ -1,5 +1,8 @@
 {meta: title The Children Are Crying}
 {meta: artist Earl Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file childrenarecryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart is aching you should be [G7]ashamed
@@ -29,3 +32,7 @@ Now my friends they are [C]talking [G7]about how you let them [C]down
 My heart it is aching you should be [G7]ashamed
 The children are crying and [F]calling your [C]name
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If It's Wrong to Love You}
 {meta: artist Hank Snow}
 {meta: composer Bonnie Dodd and Charles Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file ifitswrongtoloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it's wrong to love you  [C7]wrong I'll always [F]be
@@ -22,3 +25,5 @@ If it's wrong to want you  when [C7]my day is [F]through
 [C]I can't change my heart dear  [C7]you're a part of [F]me
 [G7]If it's wrong to love you  wrong I'll always [C]be
 {end_of_verse}
+
+

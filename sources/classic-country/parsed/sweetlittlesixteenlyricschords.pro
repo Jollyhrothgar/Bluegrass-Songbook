@@ -1,5 +1,8 @@
 {meta: title Sweet Little Sixteen}
 {meta: artist Chuck Berry}
+{meta: x_source classic-country}
+{meta: x_source_file sweetlittlesixteenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They're really rocking in [G7]Boston and Pittsburgh [C]Pa
@@ -49,3 +52,9 @@ Deep in the heart of [G7]Texas and around the Frisco [C]Bay
 All over St. [F]Louis and down in New [C]Orleans
 All the cats wanna [G7]dance with Sweet Little [C]16
 {end_of_verse}
+
+
+
+
+
+

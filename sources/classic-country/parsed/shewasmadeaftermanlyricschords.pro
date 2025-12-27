@@ -1,6 +1,9 @@
 {meta: title She Was Made After Man}
 {meta: artist Wynn Stewart}
 {meta: composer Burt Long}
+{meta: x_source classic-country}
+{meta: x_source_file shewasmadeaftermanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God made man in His own image [F]everything was goin' [C]right
@@ -29,3 +32,6 @@ And thinks she knows more than all the presi[G7]dents
 But she [C]does the best she can cause she [F]was made after man
 And she's [C]been after [G7]man ever [C]since
 {end_of_verse}
+
+
+

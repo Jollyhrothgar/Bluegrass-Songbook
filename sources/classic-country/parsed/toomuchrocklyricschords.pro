@@ -1,6 +1,9 @@
 {meta: title Too Much Rock}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchrocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The sun's gonna shine tomorrow 
@@ -48,3 +51,9 @@ Till that [C]harvest [G]moon [C]smiles [D]down on me
 There's just [C]too many [G]stones to over[D]turn
 [C]Too many [G]stones to over[D]turn
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Statue of a Fool}
 {meta: artist Jack Greene}
+{meta: x_source classic-country}
+{meta: x_source_file statueofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere there should [Am]be 
@@ -24,3 +27,5 @@ Then [Em]everyone would [C]know
 [Ab7]Then inscribe the [C]World's greatest [Am]fool 
 And [Dm7]name  [Em]it  [Dm7]af-ter  [C][G7]me
 {end_of_verse}
+
+

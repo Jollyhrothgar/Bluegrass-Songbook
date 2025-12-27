@@ -1,6 +1,9 @@
 {meta: title Fortune In Memories}
 {meta: artist Ernest Tubb}
 {meta: composer Cindy Walker and Lou Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file fortuneinmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got fortunes in memories 
@@ -56,3 +59,11 @@ And I am a [G]millionaire
 [G]I've got fortunes in memories 
 Of your walk your talk your [D7]smile
 {end_of_verse}
+
+
+
+
+
+
+
+

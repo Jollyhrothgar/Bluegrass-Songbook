@@ -1,6 +1,9 @@
 {meta: title Day In The Life Of A Fool}
 {meta: artist Keith Whitley}
 {meta: composer Mike Dekle and Byron Hill}
+{meta: x_source classic-country}
+{meta: x_source_file dayinthelifeofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Morning comes and [C]I'm a[G]lone it's been a year [C]since you've been [G]gone
@@ -33,3 +36,7 @@ It's just a [G]day in the [D7]life of a [C]fool
 {start_of_verse: Verse 5}
 It's just a [G]day in the [D7]life of a [G]fool
 {end_of_verse}
+
+
+
+

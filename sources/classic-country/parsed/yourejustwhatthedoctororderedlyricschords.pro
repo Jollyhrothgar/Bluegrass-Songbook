@@ -1,6 +1,9 @@
 {meta: title You're Just What The Doctor Ordered}
 {meta: artist Bud Hobbs}
 {meta: composer Ace Dinning and James Ray}
+{meta: x_source classic-country}
+{meta: x_source_file yourejustwhatthedoctororderedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're just what the doctor told me I was needing  
@@ -36,3 +39,7 @@ And I [F]knew he was right from the [C]start
 When I [F]hold you close and kiss you I'm in [C]heaven
 You're just what the doctor ordered for my [G7]broken [C]heart
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: artist Billy Joe Shaver}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file heartoftexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The heart of Texas is where I was born
@@ -66,3 +69,13 @@ Where my [D7]songs are always playing
 Yeah it's [D7]right back there where the best is
 [C]Smack dab in the heart of Texas [G]thank you man
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

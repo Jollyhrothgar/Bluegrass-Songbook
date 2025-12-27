@@ -1,6 +1,9 @@
 {meta: title Boobs}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file boobslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]People at this honky tonk they're about to drive me [C]insane
@@ -54,3 +57,11 @@ Stick out your boobsies stick out your boobsies stick out your boobs [C]now
 Stick out your boobsies stick out your boobsies stick out your boobs [C]now
 [D7]Stick out your boobsies stick out your boobsies stick out your boobs [G]now
 {end_of_verse}
+
+
+
+
+
+
+
+

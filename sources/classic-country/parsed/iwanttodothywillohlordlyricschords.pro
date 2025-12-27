@@ -1,6 +1,9 @@
 {meta: title I Want To Do Thy Will Oh Lord}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Hansel Vibbert and Ronnie Goss}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttodothywillohlordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The cross that you [G7]bear may be [C]hard to carry
@@ -24,3 +27,5 @@ I want to [C]do Thy [G7]will oh [C]Lord [C7]
 [F]Take me and [G7]break me [C]hold me and [F]make me
 I want to [C]do Thy [G7]will oh [E7]Lord[C] 
 {end_of_verse}
+
+

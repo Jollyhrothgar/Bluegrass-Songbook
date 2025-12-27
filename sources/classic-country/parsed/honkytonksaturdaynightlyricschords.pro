@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Saturday Night}
 {meta: artist George Strait}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonksaturdaynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Angels and devils [F]share the same tables
@@ -34,3 +37,7 @@ On a [C]honky tonk [G7]Saturday [C]night[G7]
 With [C]luck I'll take her home when they [F]turn out the lights
 On a [C]honky tonk [G7]Saturday [F]nigh[C]t
 {end_of_verse}
+
+
+
+

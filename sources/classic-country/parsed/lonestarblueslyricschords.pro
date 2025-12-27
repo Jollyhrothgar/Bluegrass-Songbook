@@ -1,6 +1,9 @@
 {meta: title Lone Star Blues}
 {meta: artist George Strait}
 {meta: composer Delbert McClinton and Gary Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file lonestarblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At a truck stop in San Angelo
@@ -108,3 +111,17 @@ I've [G7]done all I know to do
 Tryin' to lose tryin' to lose
 These ol' Lone Star [C]blues 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

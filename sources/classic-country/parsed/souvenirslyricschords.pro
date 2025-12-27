@@ -1,5 +1,8 @@
 {meta: title Souvenirs}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file souvenirslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take these arms of mine [C7]throw them [F]away
@@ -28,3 +31,6 @@ They're [D7]just bits and pieces of my [G7]yesterday anyhow
 Take this old [C]heart of mine it's been [C7]beating too [F]long
 It's just a [G7]souvenir of something that went [C]wrong
 {end_of_verse}
+
+
+

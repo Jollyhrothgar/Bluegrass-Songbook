@@ -1,5 +1,8 @@
 {meta: title Colder Than Winter}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file colderthanwinterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's colder than [A#7]winter  [F]right here in my [C]heart
@@ -28,3 +31,7 @@ It's [C]colder than [A#7]winter  [F]since you closed the [C]door
 {start_of_verse: Verse 5}
 It's colder than [A#7]winter  [F]since you closed the [C]door
 {end_of_verse}
+
+
+
+

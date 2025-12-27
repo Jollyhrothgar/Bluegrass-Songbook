@@ -1,6 +1,9 @@
 {meta: title Out Of My Head And Back In My Bed Lyrics Chords}
 {meta: artist Loretta Lynn}
 {meta: composer Peggy Forman}
+{meta: x_source classic-country}
+{meta: x_source_file outofmyheadandbackinmybedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lying alone in this big old bed I got you on my mind
@@ -50,3 +53,11 @@ I said when you left I could make it by myself
 [C]I see your face every time I close my eyes
 [G7]So I'm going out now and I'm [F]looking for you some winter [C]night
 {end_of_verse}
+
+
+
+
+
+
+
+

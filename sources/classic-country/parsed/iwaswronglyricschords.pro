@@ -1,6 +1,9 @@
 {meta: title I Was Wrong}
 {meta: artist Kitty Wells}
 {meta: composer Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file iwaswronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was wrong I dreamed [C]about you all through the [G]night
@@ -29,3 +32,6 @@ I was [C]wrong what is your answer for you [G]know I am true [D7]blue
 Why do you wait [G]and hesitate I've [C]waited for you oh so [G]long
 Hear my [D7]request and answer yes I was [G]wrong
 {end_of_verse}
+
+
+

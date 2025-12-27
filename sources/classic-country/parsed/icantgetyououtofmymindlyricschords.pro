@@ -1,6 +1,9 @@
 {meta: title I Can't Get You Out Of My Mind}
 {meta: artist Carl Smith}
 {meta: composer Dallas Frazier and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file icantgetyououtofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart still breaks with every thought of [F]you
@@ -22,3 +25,5 @@
 [C]It's true sometimes my thinking ain't quite [F]right
 [G7]Baby [D7]I can't [G7]get you out of my [C]mind
 {end_of_verse}
+
+

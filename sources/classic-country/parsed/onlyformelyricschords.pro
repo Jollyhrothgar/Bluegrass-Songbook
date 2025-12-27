@@ -1,6 +1,9 @@
 {meta: title Only For Me}
 {meta: artist Connie Smith}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file onlyformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -38,3 +41,8 @@ For darling the [D7]world would end only for [G]me
 {start_of_verse: Verse 5}
 You are the [D7]one love meant only for [G]me
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Know What Lies Ahead}
 {meta: artist The Oak Ridge Boys}
+{meta: x_source classic-country}
+{meta: x_source_file iknowwhatliesaheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This road I'm on is strait and narrow
@@ -65,3 +68,13 @@ It was laid by Christ one day at Calvary
 [G]This road may lead over many high mountains
 [C]And valleys dark and [G]low
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

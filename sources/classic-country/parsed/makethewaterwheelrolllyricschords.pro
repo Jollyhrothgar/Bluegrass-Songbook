@@ -1,6 +1,9 @@
 {meta: title Make The Waterwheel Roll}
 {meta: artist Jimmy Dean}
 {meta: composer Mel Tillis and Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file makethewaterwheelrolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Make the waterwheel roll make the waterwheel roll
@@ -49,3 +52,9 @@ Make the waterwheel roll [G7]make the waterwheel [C]roll
 Make the waterwheel roll [G7]make the waterwheel [C]roll
 Make the waterwheel roll [G7]make the waterwheel [C]roll
 {end_of_verse}
+
+
+
+
+
+

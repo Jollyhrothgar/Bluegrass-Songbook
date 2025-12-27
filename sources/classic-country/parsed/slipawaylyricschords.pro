@@ -1,6 +1,9 @@
 {meta: title Slip Away}
 {meta: artist Mel Street}
 {meta: composer Wilbur Terrell, Marcus Daniel, Bill Armstrong}
+{meta: x_source classic-country}
+{meta: x_source_file slipawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While the tiny drops of [C]rain
@@ -31,3 +34,5 @@ Stealing [G]minutes [C]hours [G]days
 I [C]love you [G]so darlin' [D7]slip [G]away
 Repeat last verse
 {end_of_verse}
+
+

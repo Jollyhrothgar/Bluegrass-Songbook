@@ -1,6 +1,9 @@
 {meta: title This Cold War with You}
 {meta: artist Ray Price}
 {meta: composer Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file thiscoldwarwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun goes down [F]and leaves me sad and [C]blue
@@ -17,3 +20,4 @@ And whose [D7]hearts just can’t be [G7]free
 So [C]let’s make up  or [F]let’s just say we’re [C]through
 I just can’t [G7]stand another cold cold war with [C]you
 {end_of_verse}
+

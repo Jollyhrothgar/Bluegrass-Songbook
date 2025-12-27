@@ -1,5 +1,8 @@
 {meta: title Little Bird}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file littlebirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Beauty [F]is a [C]rare per[F]fume 
@@ -35,3 +38,7 @@ Where I [C]found the [G7]treasure of [C]love
 [F]Then sing me a [C]song as you [F]fly me a[C]long 
 On a [F]long last journey a[C]bove[A#7]    [C]
 {end_of_verse}
+
+
+
+

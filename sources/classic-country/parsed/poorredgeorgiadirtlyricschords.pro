@@ -1,6 +1,9 @@
 {meta: title Poor Red Georgia Dirt}
 {meta: artist Stonewall Jackson}
 {meta: composer Fred Burch and Gary Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file poorredgeorgiadirtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Had a little [Dm]gal way [F]down in Ala[C]bamy
@@ -31,3 +34,6 @@ But some[F]how I [G7]can't think which is [F]worse
 Your leaving [C]home and [F]running off from [C]her
 Or [F]staying [C]on this [F]poor red Georgia [C]dirt
 {end_of_verse}
+
+
+

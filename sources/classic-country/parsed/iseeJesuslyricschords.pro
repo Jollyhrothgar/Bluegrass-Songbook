@@ -1,6 +1,9 @@
 {meta: title I See Jesus}
 {meta: artist Cristy Lane}
 {meta: composer Hiram Howard Yates}
+{meta: x_source classic-country}
+{meta: x_source_file iseeJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn’t see the teardrops fall [G7]in the garden where He cried
@@ -40,3 +43,8 @@ But I see [C]Jes[F]us [G7]in every tear I [C]cry
 {start_of_verse: Verse 5}
 [F]But I see [C]Jes[F]us [G7]in every tear I [C]cry
 {end_of_verse}
+
+
+
+
+

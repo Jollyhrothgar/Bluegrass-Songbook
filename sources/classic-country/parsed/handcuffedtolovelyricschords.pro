@@ -1,6 +1,9 @@
 {meta: title Handcuffed To Love}
 {meta: artist Hank Snow}
 {meta: composer Jerry Williams and Hope Harlow}
+{meta: x_source classic-country}
+{meta: x_source_file handcuffedtolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm handcuffed to the [D7]only love I [G]knew
@@ -33,3 +36,6 @@ And [C]remain until to end of [G]time
 Oh [C]please open the pathway to your [G]heart
 I'm [D7]handcuffed to the love I've thought was [G]mine
 {end_of_verse}
+
+
+

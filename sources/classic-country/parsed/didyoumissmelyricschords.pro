@@ -1,6 +1,9 @@
 {meta: title Did You Miss Me}
 {meta: artist Wanda Jackson}
 {meta: composer Bobby Lord}
+{meta: x_source classic-country}
+{meta: x_source_file didyoumissmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tell me did you miss me [C]while I was [D7]gone
@@ -32,3 +35,7 @@
 [G]Did you sit and stare at the [D7][C]tele-phone
 [G]Did you miss [D7]me while I was [G]gone
 {end_of_verse}
+
+
+
+

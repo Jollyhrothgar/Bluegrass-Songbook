@@ -1,6 +1,9 @@
 {meta: title Catalog Dreams}
 {meta: artist Joni Harms}
 {meta: composer Joni Harms and Jim Varsos}
+{meta: x_source classic-country}
+{meta: x_source_file catalogdreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She could see herself a-sewin' on that brand new machine
@@ -47,3 +50,9 @@ When supper time was over daddy turned to me and said
 {start_of_verse: Verse 6}
 [G7]I'm gonna buy 'em all of their catalog [C]dreams
 {end_of_verse}
+
+
+
+
+
+

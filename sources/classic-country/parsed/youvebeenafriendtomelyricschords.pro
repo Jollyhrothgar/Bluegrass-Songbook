@@ -1,6 +1,9 @@
 {meta: title You've Been A Friend To Me}
 {meta: artist The Price Sisters}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file youvebeenafriendtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My bark of life was [C]tossing [G]down
@@ -55,3 +58,10 @@ You've [G]been that [D7]friend to [G]me
 If ever I have [C]had a friend
 You've [G]been that [D7]friend to [G]me
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Come Take Care Of Me}
 {meta: artist Charly McClain}
 {meta: composer Danny Hogan, Larry Rogers, Henry Carter}
+{meta: x_source classic-country}
+{meta: x_source_file cometakecareofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want you for my lover
@@ -44,3 +47,8 @@ So wrap your arms around me [Am]tight
 Everything will be [D7]alright
 Won't you come take care of [G]me
 {end_of_verse}
+
+
+
+
+

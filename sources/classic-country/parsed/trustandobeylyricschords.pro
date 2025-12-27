@@ -1,5 +1,8 @@
 {meta: title Trust And Obey}
 {meta: artist The Jordanaires}
+{meta: x_source classic-country}
+{meta: x_source_file trustandobeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]When we [G]walk with the Lord in the [D7]light of His [G]Word
@@ -36,3 +39,8 @@ Never [C]fear only [G]trust and [D7]obe[G]y
 [D7]Trust and [G]obey for there’s [Em]no other [Am]way
 To be [D7]happy in [G]Jesus but to trust and [D7]obe[G]y
 {end_of_verse}
+
+
+
+
+

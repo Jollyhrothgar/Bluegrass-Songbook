@@ -1,6 +1,9 @@
 {meta: title I'm A Long Way From Home}
 {meta: artist Waylon Jennings}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file imalongwayfromhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a [F]l-ong way [G7]from home and so [F]all [G7]alone 
@@ -29,3 +32,6 @@ I [G7]wish I'd stayed at home like I was [C]told
 I'm a [F]l-ong [G7]way from home [F]everything [G7]is wrong 
 [F]Someone please [G7]watch over [C]me
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Six More Miles Love}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file sixmoremileslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the rain is slowly falling
@@ -28,3 +31,6 @@ Oh I hear the train a-coming
 [G]Six more miles and [C]leave my [G]darling
 [C]Leave the best friend I ever [G]had
 {end_of_verse}
+
+
+

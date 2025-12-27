@@ -1,6 +1,9 @@
 {meta: title Domino}
 {meta: artist Roy Orbison}
 {meta: composer Johnny Rzeznik, Robbie Takac, George Tutuska}
+{meta: x_source classic-country}
+{meta: x_source_file dominolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a cat in town that you might know
@@ -45,3 +48,10 @@ Domino oh oh
 [C]Domino oh  oh  
 That [F]guy can go that [G7]cat called [C]Domino 
 {end_of_verse}
+
+
+
+
+
+
+

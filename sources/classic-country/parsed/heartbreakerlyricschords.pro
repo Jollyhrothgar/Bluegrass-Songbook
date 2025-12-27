@@ -1,6 +1,9 @@
 {meta: title Heartbreaker}
 {meta: artist Dolly Parton}
 {meta: composer Carlo Bayer Sager and David Wolfert}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I sit all [F]alone [G7]thinking about what I should have [C]known 
@@ -32,3 +35,7 @@ Each [D7]time you'd leave I thought that [G7]you would [F]miss [G7]me
 [F]Sweet little love maker [G7]taking [F]my heart and leave me [G7]behind 
 [A7][Em]Heartbreaker [F]couldn't you be just a [G7]little more kind to [C]me 
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Little Orphan Annie}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file littleorphanannielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Play your fiddle [G7]Little Orphan [F]Annie
@@ -22,3 +25,5 @@ They [G7]come for miles [C]around to hear her [G7]play
 [C]Play it for the [G7]hippies down in [F]Mallory Square
 [C]If I'm not [F]there won't you [G7]play a song for [C]me
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Just A Plain Old Country Boy}
 {meta: artist Bob Wills}
 {meta: composer Tommy Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file justaplainoldcountryboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't got much learnin' I ain't a yearnin'
@@ -33,3 +36,6 @@ Bout a [C7]place where cloths don't make the [G7]man
 Soon my pappy I'll be seeing hear the neighbors sayin' we'un 
 I’ll always be a plain old country [C]boy
 {end_of_verse}
+
+
+

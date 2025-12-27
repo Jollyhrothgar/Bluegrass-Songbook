@@ -1,6 +1,9 @@
 {meta: title Blues For My Darling}
 {meta: artist Doyle Lawson}
 {meta: composer Thomas Glenn Fletcher}
+{meta: x_source classic-country}
+{meta: x_source_file bluesformydarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hellion don’t leave me [F]don’t say good[C]bye
@@ -36,3 +39,7 @@ It’s singing my song it’s sending me a warning
 Hear the steamboat whine on the river this morning
 It’s singing my [G7]song the blues for my [C]da[G7]r--[Dm]--l[Am]ing[C]
 {end_of_verse}
+
+
+
+

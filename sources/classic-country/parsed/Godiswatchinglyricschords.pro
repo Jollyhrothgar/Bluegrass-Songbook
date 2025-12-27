@@ -1,6 +1,9 @@
 {meta: title God Is Watching}
 {meta: artist Rhonda Vincent}
 {meta: composer Mickey Harris and Louise Tomberlain}
+{meta: x_source classic-country}
+{meta: x_source_file Godiswatchinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As you travel onward through this [F]world of [C]sin
@@ -29,3 +32,6 @@
 [C]When your load is heavy and [F]you just can't [C]win
 [G7]He will lift your burden if you'll let [C]Him in
 {end_of_verse}
+
+
+

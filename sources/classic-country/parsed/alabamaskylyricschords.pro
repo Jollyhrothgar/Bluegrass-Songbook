@@ -1,6 +1,9 @@
 {meta: title Alabama Sky}
 {meta: artist Alabama}
 {meta: composer Larry Shell}
+{meta: x_source classic-country}
+{meta: x_source_file alabamaskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen him plow a field of corn all day that's reali[Dm]ty  [G7]
@@ -37,3 +40,7 @@ Underneath that [F]Ala[Em]bama [F]sky
 Underneath that [F]Ala[Em]bama [F]sky
 I [Dm]listened to my [G7]Grandpa's memor[C]ies
 {end_of_verse}
+
+
+
+

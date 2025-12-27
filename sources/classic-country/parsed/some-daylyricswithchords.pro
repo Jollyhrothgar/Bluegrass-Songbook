@@ -1,6 +1,9 @@
 {meta: title Someday with chords}
 {meta: artist Webb Pierce}
 {meta: composer Sonny Curtis and Webb PierceC}
+{meta: x_source classic-country}
+{meta: x_source_file some-daylyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Chains of [G7]love I [C]may fall in [F]love [G7]again
@@ -28,3 +31,6 @@ I'll [C]take the [G7]chance [C]again
 [G7]If heartbreak should take you [C]by [G7]surprise
 You'll know how my [D7]heart has been [G7]torn
 {end_of_verse}
+
+
+

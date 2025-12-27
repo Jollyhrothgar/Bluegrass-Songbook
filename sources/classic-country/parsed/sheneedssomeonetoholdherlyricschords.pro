@@ -1,5 +1,8 @@
 {meta: title She Needs Someone To Hold Her}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file sheneedssomeonetoholdherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord she needs someone to [G7]hold her when she [C]cries
@@ -32,3 +35,7 @@ Someone who really [F]understands the [C]way she feels [G7]inside
 And [C]if she ever [F]loves again I [C]hope that she will [F]find
 Someone [C]who’ll always hold her when [G7]she [C]cries
 {end_of_verse}
+
+
+
+

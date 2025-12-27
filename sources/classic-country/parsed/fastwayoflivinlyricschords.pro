@@ -1,6 +1,9 @@
 {meta: title Fast Way Of Livin’}
 {meta: artist Charlie Walker}
 {meta: composer Dixie Davis and Larry Davis}
+{meta: x_source classic-country}
+{meta: x_source_file fastwayoflivinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every night you'll find me on a barstool somewhere
@@ -36,3 +39,7 @@ And you can bet you'll find me with a [D7]honky tonk [G7]girl
 With [C]that laughing and dancing and the time just seems to fly
 I know this fast way of living is just a [G7]slow way to [C]die
 {end_of_verse}
+
+
+
+

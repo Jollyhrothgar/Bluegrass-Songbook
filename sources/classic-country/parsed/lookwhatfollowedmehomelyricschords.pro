@@ -1,5 +1,8 @@
 {meta: title Look What Followed Me Home}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhatfollowedmehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I made my plans to leave you far behind
@@ -31,3 +34,8 @@ And I [D7]thanked that muddy river as it carried you [G]away
 {start_of_verse: Verse 6}
 [C]Yeah I see I was [G]wrong wrong [D7]wrong  look what followed me [G]home
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title In The Name Of Love}
 {meta: artist Barbara Mandrell}
 {meta: composer Carmol Taylor, Earl Montgomery, George Richey}
+{meta: x_source classic-country}
+{meta: x_source_file inthenameoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Guess who called me [Dm]yesterday [G]apologized for [C]going away
@@ -35,3 +38,7 @@ No more sadness [Dm]only smiles [G]he'll be here in a [C]little while
 Guess who called me [Dm]yesterday [G]apologized for [C]going away
 But [Am]tonight he's comin' [D7]home in the name of [G]love
 {end_of_verse}
+
+
+
+

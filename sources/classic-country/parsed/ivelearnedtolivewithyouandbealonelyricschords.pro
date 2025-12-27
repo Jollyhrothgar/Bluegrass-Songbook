@@ -1,6 +1,9 @@
 {meta: title I've Learned To Live With You And Be Alone}
 {meta: artist Jean Shepard}
 {meta: composer Ira Louvin and Charlie Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file ivelearnedtolivewithyouandbealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have learned to live with you [C]and be [G]alone
@@ -29,3 +32,6 @@ If [D7]I stayed away the whole night through you would never call my [G]name
 [G]You don’t miss my love you’d never even [C]notice when I’m [G]gone
 I have learned to live with you [D7]and be [G]alone
 {end_of_verse}
+
+
+

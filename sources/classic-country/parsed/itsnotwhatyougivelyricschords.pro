@@ -1,6 +1,9 @@
 {meta: title It's Not What You Give Lyrics with Chords}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotwhatyougivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My little boy [F]wrapped a toy in some [C]paper
@@ -33,3 +36,7 @@ That's what makes Christmas [F]such a pretty [C]day
 {start_of_verse: Verse 4}
 That's what makes Christmas [F]such a pretty [C]day
 {end_of_verse}
+
+
+
+

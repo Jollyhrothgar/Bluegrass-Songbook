@@ -1,6 +1,9 @@
 {meta: title Lying To Myself}
 {meta: artist Doug Stone}
 {meta: composer Scott Shevel, Jimmy Devine,}
+{meta: x_source classic-country}
+{meta: x_source_file lyingtomyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Your [G]perfume is [Bm]on the [Am]pillow
@@ -62,3 +65,9 @@ To tell the [G]truth with[Em]out you[Am]
 I like [D7]lying to my[C]self[Am]
 [D7]Lying to my[C]self  I keep [D7]lying to my[C]self
 {end_of_verse}
+
+
+
+
+
+

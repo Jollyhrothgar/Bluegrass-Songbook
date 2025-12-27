@@ -1,6 +1,9 @@
 {meta: title Lone Star State Of Mind}
 {meta: artist Rhonda Vincent}
 {meta: composer Pat Alger, Fred Koller, Eugene Albert Levine}
+{meta: x_source classic-country}
+{meta: x_source_file lonestarstateofmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your phone call took me by [Dm]surprise
@@ -55,3 +58,10 @@ And I've got all night to [F]remember you
 Yeah I've got all night to [F]remember you
 [G7]I'm in a lone star state of [C]mind
 {end_of_verse}
+
+
+
+
+
+
+

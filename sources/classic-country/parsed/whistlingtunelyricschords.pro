@@ -1,6 +1,9 @@
 {meta: title Whistling Tune}
 {meta: artist Elvis Presley}
 {meta: composer Sherman Edwards and Hal David}
+{meta: x_source classic-country}
+{meta: x_source_file whistlingtunelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Whistling Tune
@@ -28,3 +31,6 @@ It's a whistling tune for [C]walking in the [G]night
 Listening to old mother [C]nature's favorite [G]tune
 It's a whistling tune for [C]walking in the [G]night
 {end_of_verse}
+
+
+

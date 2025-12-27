@@ -1,5 +1,8 @@
 {meta: title Welcome Home}
 {meta: artist Daniel O'Donnell}
+{meta: x_source classic-country}
+{meta: x_source_file welcomehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If the world is turning colder on your [G7]own
@@ -27,3 +30,6 @@ repeat last verse
 {start_of_verse: Verse 4}
 Welcome [G7]home  welcome [C]home
 {end_of_verse}
+
+
+

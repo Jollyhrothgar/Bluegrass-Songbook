@@ -1,5 +1,8 @@
 {meta: title Coming To The Party}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file comingtothepartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm coming to the [C]party to[G]night
@@ -28,3 +31,6 @@ And [A7]I'll find someone new to hold me [D7]tight
 She [C]thinks I'm home crying [G]won't she be surprised
 Cause I'm coming to the [D7]party to[G]night
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rivers of Babylon}
 {meta: artist Daniel O'Donnell}
 {meta: composer John James Ryan}
+{meta: x_source classic-country}
+{meta: x_source_file Riversofbabylonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]By the rivers of Babylon there we sat down
@@ -36,3 +39,7 @@ Yeah we [D7]wept when we remembered [G]Zion
 By the rivers of Babylon there we sat down
 Yeah we [D7]wept when we remembered [G]Zion
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Can't Be A Beacon}
 {meta: artist Donna Fargo}
 {meta: composer Marty Cooper}
+{meta: x_source classic-country}
+{meta: x_source_file youcantbeabeaconlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can't be a beacon if your light don't shine
@@ -54,3 +57,10 @@ You can be a beacon if you’ll let [G7]it [C]shine
 {start_of_verse: Verse 6}
 Repeat last verse
 {end_of_verse}
+
+
+
+
+
+
+

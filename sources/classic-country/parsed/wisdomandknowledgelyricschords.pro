@@ -1,5 +1,8 @@
 {meta: title Wisdom And Knowledge}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file wisdomandknowledgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wisdom and [D7]knowledge I [G]squandered 
@@ -60,3 +63,11 @@ I’m walking on the [D7]Kings high[G]way
 {start_of_verse: Verse 7}
 I’m walking on the [D7]Kings high[G]way
 {end_of_verse}
+
+
+
+
+
+
+
+

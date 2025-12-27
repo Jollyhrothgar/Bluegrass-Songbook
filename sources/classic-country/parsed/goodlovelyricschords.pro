@@ -1,5 +1,8 @@
 {meta: title Good Love}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file goodlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Damn the way you always bring me [F]down
@@ -37,3 +40,7 @@ So [G7]tell me why the hell we tried so
 Tell me why the hell we tried so
 Tell me why the hell we tried so [C]long 
 {end_of_verse}
+
+
+
+

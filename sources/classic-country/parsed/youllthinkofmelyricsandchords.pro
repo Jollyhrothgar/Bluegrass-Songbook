@@ -1,6 +1,9 @@
 {meta: title You'll Think Of Me}
 {meta: artist Waylon Jennings}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file youllthinkofmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You have her now and she's your life
@@ -38,3 +41,8 @@ As [G7]you wait to see who the next will be
 As you [G7]wait to see who the next will be
 [C]You'll think of me
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title After I Sing All My Songs}
 {meta: artist Merle Haggard}
 {meta: composer Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file afterisingallmysongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the show is over and [D7]every one is [G]gone
@@ -25,3 +28,6 @@
 [D7]After I sing my songs after the crowd is [G]gone
 [C]I need someone to [G]hold me  [D7]after I sing all my [G]songs
 {end_of_verse}
+
+
+

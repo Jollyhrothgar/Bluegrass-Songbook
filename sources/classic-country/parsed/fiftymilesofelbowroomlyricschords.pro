@@ -1,6 +1,9 @@
 {meta: title Fifty Miles Of Elbow Room}
 {meta: artist Hank Locklin}
 {meta: composer Herbert Buffum}
+{meta: x_source classic-country}
+{meta: x_source_file fiftymilesofelbowroomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Twelve hundred miles it's length and breadth that 
@@ -47,3 +50,8 @@ There'll be [D7]room for you and room for [G7]me
 For the [C]gates are wide on the other side where the [F]flowers ever [C]bloom
 On the [F]right hand on the [C]left hand fifty [G7]miles of elbow [C]room
 {end_of_verse}
+
+
+
+
+

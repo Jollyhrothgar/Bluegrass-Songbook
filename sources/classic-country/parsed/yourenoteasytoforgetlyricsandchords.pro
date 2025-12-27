@@ -1,6 +1,9 @@
 {meta: title You're Not Easy to Forget}
 {meta: artist J.D. Crowe}
 {meta: composer Henry Davis and Cynthia Weil}
+{meta: x_source classic-country}
+{meta: x_source_file yourenoteasytoforgetlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I make all the honky tonks and [C]taverns
@@ -29,3 +32,6 @@ I could get someone to [D7]care
 But [G]when I need someone to [C]true love me
 [D7]You're not easy to for[G]get
 {end_of_verse}
+
+
+

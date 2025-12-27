@@ -1,6 +1,9 @@
 {meta: title Falling In Love Again}
 {meta: artist Don Williams}
 {meta: composer Bob McDill and Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file fallinginloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love be gentle  love be kind
@@ -40,3 +43,8 @@ Falling in  love [C]again
 I'd fallen out but there's no [D7]doubt
 I'm falling in love [G]again
 {end_of_verse}
+
+
+
+
+

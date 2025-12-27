@@ -1,6 +1,9 @@
 {meta: title Mexican Minutes}
 {meta: artist Brooks and Dunn}
 {meta: composer Kent M. Robbins and Jim Messina}
+{meta: x_source classic-country}
+{meta: x_source_file mexicanminuteslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Up in the city it's crazy and [C]concrete cold
@@ -53,3 +56,8 @@ As the days goes [C]by
 These Mexican minutes get [G7]longer and longer
 As the days goes [C]by
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tomorrow's Gonna Be Better Than Today}
 {meta: artist Bob Luman}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrowsgonnabebetterthantodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All day long it's been [G7]rainin' at my [C]place
@@ -52,3 +55,9 @@ I'm a gonna [Am]wash my hands of you
 {start_of_verse: Verse 5}
 Tomorrow's gonna be [G7]better than [C]today    
 {end_of_verse}
+
+
+
+
+
+

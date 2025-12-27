@@ -1,6 +1,9 @@
 {meta: title A Little At A Time}
 {meta: artist Rhonda Vincent}
 {meta: composer Tony Martin, Amy Dalley, Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file alittleatatimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]He doesn't [C]know that everything is [Am]changed
@@ -45,3 +48,9 @@ Maybe [F]deep down in my heart the truth could [Am]be
 {start_of_verse: Verse 7}
 Yeah I'm telling him good[F]bye  [G7]a little at a [C]time
 {end_of_verse}
+
+
+
+
+
+

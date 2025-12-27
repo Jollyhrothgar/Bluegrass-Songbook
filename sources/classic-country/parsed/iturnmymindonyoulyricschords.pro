@@ -1,6 +1,9 @@
 {meta: title I Turn My Mind On You}
 {meta: artist Jack Greene}
 {meta: composer Wayne Kemp and Dale Ward}
+{meta: x_source classic-country}
+{meta: x_source_file iturnmymindonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I knew the day you turned away
@@ -53,3 +56,12 @@ And every time she turns to me
 Every time she turns to me
 [D7]I turn my mind on [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

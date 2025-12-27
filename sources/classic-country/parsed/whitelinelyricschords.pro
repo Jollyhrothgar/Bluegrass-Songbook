@@ -1,6 +1,9 @@
 {meta: title White Line}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley and Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file whitelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seems like I was [F]there from the [G7]start 
@@ -60,3 +63,10 @@ Oh how I wish that you were here [C]beside me
 [F]Headlight [C]blind [G7]driving [C]crazy
 [F]If my [C]wheels keep [G7]turnin' gonna roll that white line [C]away
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Anyway}
 {meta: artist George Hamilton IV}
 {meta: composer Bobby Bond}
+{meta: x_source classic-country}
+{meta: x_source_file anywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a big bird out on a runway darlin'
@@ -32,3 +35,7 @@ Isn't that [D7]where you always wanted to [C]be anyway any[G]way
 {start_of_verse: Verse 5}
 Isn't that [D7]where you always wanted to [C]be anyway any[G]way
 {end_of_verse}
+
+
+
+

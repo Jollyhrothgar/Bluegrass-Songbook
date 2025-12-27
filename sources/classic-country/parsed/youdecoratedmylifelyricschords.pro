@@ -1,5 +1,8 @@
 {meta: title You Decorated My Life}
 {meta: artist Kenny Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file youdecoratedmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All my life was a paper 
@@ -58,3 +61,12 @@ Then you added some [G]music
 Every note was in [C]place 
 And anybody could [G]see 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

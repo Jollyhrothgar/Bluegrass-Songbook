@@ -1,6 +1,9 @@
 {meta: title Can’t Nobody Love You}
 {meta: artist Mickey Gilley}
 {meta: composer J. Lee}
+{meta: x_source classic-country}
+{meta: x_source_file cantnobodyloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well can’t nobody [A7]love you if they [D7]don’t know [G7]who you [C]are
@@ -38,3 +41,7 @@ If you think I don’t know [G7]who you [C]are
 Well can’t nobody [A7]love you if they [D7]don’t know [G7]who you [C]are
 Can’t [G7]nobody [A7]love you if they [D7]don’t know [G7]who you [C]are
 {end_of_verse}
+
+
+
+

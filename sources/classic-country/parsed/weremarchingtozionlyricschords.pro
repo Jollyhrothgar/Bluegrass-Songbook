@@ -1,6 +1,9 @@
 {meta: title We're Marching To Zion}
 {meta: artist Burl Ives}
 {meta: composer Isaac Watts}
+{meta: x_source classic-country}
+{meta: x_source_file weremarchingtozionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come ye that [D7]love the [G]Lord
@@ -65,3 +68,10 @@ Beautiful beautiful [D7]Zion
 We're [G]marching upward to [C]Zion
 The [D7]beautiful city of [G]God
 {end_of_verse}
+
+
+
+
+
+
+

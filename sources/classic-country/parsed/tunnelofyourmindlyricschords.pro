@@ -1,6 +1,9 @@
 {meta: title Tunnel Of Your Mind}
 {meta: artist The Osborne Brothers}
 {meta: composer Bobby Osborne}
+{meta: x_source classic-country}
+{meta: x_source_file tunnelofyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somewhere [B7]deep in a [C]tunnel of your [D7]mind
@@ -22,3 +25,5 @@ The [C]pain he left there keeps [A7]our love in a [D7]bind
 But [G]why should you [B7]hurt me [C]cause I'm not that [D7]kind
 But I fight his memory in a tunnel of your [G]mind
 {end_of_verse}
+
+

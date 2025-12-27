@@ -1,6 +1,9 @@
 {meta: title Cabin On The Hill}
 {meta: artist Lester Flatt and Earl Scruggs}
 {meta: composer B.L. Shook}
+{meta: x_source classic-country}
+{meta: x_source_file cabinonthehilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a happy child at home (there's a happy child at home)
@@ -45,3 +48,6 @@ Joy my [G7]heart would over [C]fill (joy my [G7]heart would over [C]fill)
 And I want to wander back (and I want to wander back) 
 To the [G7]cabin on the [C]hill (to the [F]cabin on the [C]hill)
 {end_of_verse}
+
+
+

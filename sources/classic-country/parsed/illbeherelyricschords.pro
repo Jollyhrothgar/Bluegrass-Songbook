@@ -1,6 +1,9 @@
 {meta: title I'll Be Here}
 {meta: artist Statler Brothers}
 {meta: composer Don S. Reid}
+{meta: x_source classic-country}
+{meta: x_source_file illbeherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I’ll be [G]here when [Em]things don’t [C]seem to fall in [G]place
@@ -27,3 +30,6 @@ And when [G]time has [Dm]left you [G]nothing but [C]memo[Em]ries and [G]fear
 {start_of_verse: Verse 4}
 [D7]Don’t you [G]worry [Em]    [Am]honey [D7]I’ll be [C]her[G]e
 {end_of_verse}
+
+
+

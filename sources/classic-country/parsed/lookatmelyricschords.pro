@@ -1,6 +1,9 @@
 {meta: title Look At Me}
 {meta: artist Buddy Holly}
 {meta: composer Buddy Holly, Jerry Allison, Norman Petty}
+{meta: x_source classic-country}
+{meta: x_source_file lookatmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey-hey [C]look at me and [G]tell me
@@ -39,3 +42,8 @@ What's gonna [C]happen to [G]you
 When you've spoken [C]sweet words of [G]love to [C]me
 And [G]I want to [D7]marry [G]you
 {end_of_verse}
+
+
+
+
+

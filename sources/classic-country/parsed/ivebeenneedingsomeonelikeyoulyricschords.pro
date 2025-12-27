@@ -1,6 +1,9 @@
 {meta: title I've Been Needing Someone Like You}
 {meta: artist Waylon Jennings}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeenneedingsomeonelikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just came in to drown some sorrow
@@ -41,3 +44,7 @@ Five long years that's all that I've gone [G7]through
 {start_of_verse: Verse 5}
 Yes [G7]woman I've been needin' someone like [C]you
 {end_of_verse}
+
+
+
+

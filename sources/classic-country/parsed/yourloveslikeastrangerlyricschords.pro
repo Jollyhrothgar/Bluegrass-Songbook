@@ -1,5 +1,8 @@
 {meta: title Your Love's Like A Stranger}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file yourloveslikeastrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like a lamp in the [C]corner  [D7]like a rug on the [G]floor
@@ -25,3 +28,5 @@ Your love's like an [C]ocean  [D7]I may swim or I may [G]drown
 But I'm gonna stop [C]tryin'  [D7]cause I can't take no [G]more
 Your love's like a [C]stranger  [D7]I've never met [G]before
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title It's Not Over If I'm Not Over You}
 {meta: artist Vern Gosdin}
 {meta: composer Larry Kingston & Mark Wright}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotoverifimnotoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can tell everyone  [G7]love is [F]over and [C]done
@@ -34,3 +37,7 @@ It's not [C]over if I'm [G7]not over [C]you
 You may [F]be over [G7]me but [C]can't you [F]see
 It's not [C]over if I'm [G7]not over [C]you
 {end_of_verse}
+
+
+
+

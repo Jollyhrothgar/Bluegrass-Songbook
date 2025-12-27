@@ -1,6 +1,9 @@
 {meta: title Brave Apostles Twelve}
 {meta: artist Statler Brother}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file braveapostlestwelvelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]But the ministry has begun things were starting to build
@@ -49,3 +52,10 @@ And leave it all for Jesus like the [C]brave Apostles [G]twelve
 Simon Peter Andrew James and [C]Phillip Thomas [G]Matthew
 [C]Bartholomew and [G]Simon Judas [C]Judas James John and [G]you
 {end_of_verse}
+
+
+
+
+
+
+

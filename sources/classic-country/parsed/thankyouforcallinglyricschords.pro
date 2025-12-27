@@ -1,6 +1,9 @@
 {meta: title Thank You For Calling}
 {meta: artist Billy Walker}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file thankyouforcallinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who can it be hello hello 
@@ -22,3 +25,5 @@ Yes operator I'll hang up the [Em]phone
 [F]But I'll always love her I [G7]guess till I [C]die
 [F]Thank you for [G7]calling [C]goodbye
 {end_of_verse}
+
+

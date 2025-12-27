@@ -1,6 +1,9 @@
 {meta: title You And Me Her And Him}
 {meta: artist Porter Wagoner}
 {meta: composer Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file youandmeherandhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You and me and her and him must get [F]together
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]Her and [C]him [G7]me and [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Come To The Manger}
 {meta: artist Jimmie Davis}
 {meta: composer Jimmie Davis and J.S. Eastman}
+{meta: x_source classic-country}
+{meta: x_source_file cometothemangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the [G7]fullness of [C]time  we're told long [G7]ago
@@ -29,3 +32,6 @@ It's Christmas [G7]again the children are [C]singing
 The hills and the valleys  [C7]take up the [F]refrain
 On come to the [C]manger  [G7]it's Christmas [C]again[F]  [C]
 {end_of_verse}
+
+
+

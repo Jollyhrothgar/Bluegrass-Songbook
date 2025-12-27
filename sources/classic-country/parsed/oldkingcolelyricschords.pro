@@ -1,6 +1,9 @@
 {meta: title Old King Cole}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file oldkingcolelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well old King Cole was a merry old sole
@@ -60,3 +63,10 @@ We'd [G]like to stay and play all night
 [D7]But we gotta [G]go 
 [D7]But we gotta [G]go
 {end_of_verse}
+
+
+
+
+
+
+

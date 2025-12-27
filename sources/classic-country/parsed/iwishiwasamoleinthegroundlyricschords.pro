@@ -1,5 +1,8 @@
 {meta: title I Wish I Was A Mole In The Ground}
 {meta: artist Doc Watson}
+{meta: x_source classic-country}
+{meta: x_source_file iwishiwasamoleinthegroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I wish I was a [G7]mole in the [C]ground
@@ -64,3 +67,10 @@ If I was a mole in the ground
 I'd root that mountain [Am]down
 And I [C]wish I was a [G7]mole in the [C]ground
 {end_of_verse}
+
+
+
+
+
+
+

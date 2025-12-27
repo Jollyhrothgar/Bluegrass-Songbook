@@ -1,6 +1,9 @@
 {meta: title Think Of Me}
 {meta: artist Charlie Walker}
 {meta: composer Paul Williams}
+{meta: x_source classic-country}
+{meta: x_source_file thinkofmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you embrace her in a fond [G7]caress
@@ -33,3 +36,6 @@ You'll [G7]do all the giving all [C]she'll do is take
 And when you get weak [G7]enough to [C]start giving [F]up
 Think of [C]me she's my [G7]memory think of [C]me
 {end_of_verse}
+
+
+

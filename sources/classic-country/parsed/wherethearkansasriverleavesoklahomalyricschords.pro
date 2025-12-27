@@ -1,6 +1,9 @@
 {meta: title Where The Arkansas River Leaves Oklahoma}
 {meta: artist Don Williams}
 {meta: composer Waylon Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file wherethearkansasriverleavesoklahomalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where the Arkansas River [F]leaves Oklahoma
@@ -43,3 +46,8 @@ It [C]runs free and rambles muddy and [G7]wide
 Where the [C]Arkansas River [F]leaves Oklahoma
 It's [C]gone forever and [G7]never looks [C]back
 {end_of_verse}
+
+
+
+
+

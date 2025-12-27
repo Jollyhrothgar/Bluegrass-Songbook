@@ -1,6 +1,9 @@
 {meta: title The Lonesomest Lonesome}
 {meta: artist Ray Price}
 {meta: composer Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file thelonesomestlonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I [G7]scorched your favorite pan this morning
@@ -39,3 +42,7 @@ This is the [G7]lonesomest lonesome
 [C]Lonesomest [G7]lonesome I've ever [C]known
 [G7]Baby come [C]home
 {end_of_verse}
+
+
+
+

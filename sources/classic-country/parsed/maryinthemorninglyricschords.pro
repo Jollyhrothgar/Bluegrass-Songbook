@@ -1,6 +1,9 @@
 {meta: title Mary In The Morning}
 {meta: artist Glen Campbell}
 {meta: composer Johnny Cymball and Mike Lendell}
+{meta: x_source classic-country}
+{meta: x_source_file maryinthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nothing's quite as pretty  [F]as Mary [C]in the [G7]morning
@@ -35,3 +38,7 @@ And [C]nothing's quite as pretty  [F]as Mary [C]in the [G7]evening
 {start_of_verse: Verse 5}
 Nothing's quite as [F]pretty  as [C]Mary in [G7]the [C]morning
 {end_of_verse}
+
+
+
+

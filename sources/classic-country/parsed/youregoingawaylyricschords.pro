@@ -1,5 +1,8 @@
 {meta: title You're Going Away}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file youregoingawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You tell me that [D7]you’re going
@@ -25,3 +28,5 @@ You just can’t pretend so [G]why should you lie
 Well it promises to be a [C]lonely time for [Am]me
 [G]You’re going [D7]you’re going [G]away  
 {end_of_verse}
+
+

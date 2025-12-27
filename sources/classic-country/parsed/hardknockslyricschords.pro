@@ -1,6 +1,9 @@
 {meta: title Hard Knocks}
 {meta: artist Elvis Presley}
 {meta: composer Joy Byers}
+{meta: x_source classic-country}
+{meta: x_source_file hardknockslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some kids born with a silver spoon
@@ -54,3 +57,9 @@ Some kids born as rich as a king
 [G7]I said you'd better beware
 [F]Cause I've had my share of [C]hard [C][F]knocks
 {end_of_verse}
+
+
+
+
+
+

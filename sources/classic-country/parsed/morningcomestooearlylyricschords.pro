@@ -1,6 +1,9 @@
 {meta: title Morning Comes Too Early}
 {meta: artist Jim Ed Brown and Helen Cornelius}
 {meta: composer Dennis Morgan and Kye Fleming}
+{meta: x_source classic-country}
+{meta: x_source_file morningcomestooearlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The night falls around [D7]us 
@@ -29,3 +32,6 @@ Morning comes too [D7]early
 Morning comes too [D7]early 
 [C]When I'm lying here [D7]with [G]you
 {end_of_verse}
+
+
+

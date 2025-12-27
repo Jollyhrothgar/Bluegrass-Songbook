@@ -1,6 +1,9 @@
 {meta: title How's The World Treating You}
 {meta: artist Elvis Presley}
 {meta: composer Chet Atkins and Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file howstheworldtreatingyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've had nothing but sorrow since you said we were [G7]through
@@ -15,3 +18,4 @@ Every day is blue Monday every day you're [C]away
 Every sweet thing that mattered has [C7]been broken in [F]two
 And I'm asking you [C]darling  [G7]how's the world treating [C]you
 {end_of_verse}
+

@@ -1,6 +1,9 @@
 {meta: title All I Have to Do Is Dream}
 {meta: artist the Everly Brothers}
 {meta: composer Felice and Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file allihavetodoisdreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Drea-ea-ea-ea-[Am]eam  [F]dream  dream  [G7]dream
@@ -43,3 +46,8 @@ I'm [D7]dreaming my life [G7]away
 {start_of_verse: Verse 5}
 [C]Drea-ea-ea-ea-[Am]eam  [F]dream  dream  [G7]dream 
 {end_of_verse}
+
+
+
+
+

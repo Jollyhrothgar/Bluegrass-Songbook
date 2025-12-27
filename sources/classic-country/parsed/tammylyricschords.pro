@@ -1,5 +1,8 @@
 {meta: title Tammy}
 {meta: artist Brenda Lee}
+{meta: x_source classic-country}
+{meta: x_source_file tammylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear the [Em]cottonwoods [F]whispering [C]above
@@ -20,3 +23,5 @@ Wish I [C]knew if he [Em]knew
 [F]What I'm dreamin' [C]of
 [Am]Tammy  [Em]Tammy  [G7]Tammy's in [C]love
 {end_of_verse}
+
+

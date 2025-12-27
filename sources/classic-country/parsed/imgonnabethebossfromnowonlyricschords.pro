@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Be The Boss From Now On}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Jesse Ashlock}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnabethebossfromnowonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The worst thing I [F]did was when I [C]married [G7]you
@@ -29,3 +32,6 @@ I can't love you [F]honey cause your [C]heart ain't [G7]clean
 [C]Listen here baby [F]you'd better get [C]gone
 I'm gonna be  [G7]boss from now [C]on
 {end_of_verse}
+
+
+

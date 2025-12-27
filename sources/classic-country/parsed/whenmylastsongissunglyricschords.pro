@@ -1,5 +1,8 @@
 {meta: title When My Last Song Is Sung}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file whenmylastsongissunglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my last [G7]song is [C]sung and my life's [F]work is [C]done
@@ -21,3 +24,5 @@ For He's the one who [F]guides me every [C]step of the [G7]way
 He's my [C]soul inspi[F]ration and the [C]one who guides my [F]pen
 So let that [C]last [F]song I [C]sing [G7]be for [C]Him
 {end_of_verse}
+
+

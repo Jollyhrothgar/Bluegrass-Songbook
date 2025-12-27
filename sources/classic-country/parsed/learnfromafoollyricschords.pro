@@ -1,6 +1,9 @@
 {meta: title Learn From A Fool}
 {meta: artist Ferlin Husky}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file learnfromafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You and your [F]new love are gonna [G]make it
@@ -26,3 +29,6 @@ Just ask me and [D7]learn from a [G]fool
 {start_of_verse: Verse 4}
 Just ask me and [D7]learn from a [G]fool
 {end_of_verse}
+
+
+

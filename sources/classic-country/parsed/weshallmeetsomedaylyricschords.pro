@@ -1,6 +1,9 @@
 {meta: title We Shall Meet Someday}
 {meta: artist Carl Smith}
 {meta: composer Tillit Teddie}
+{meta: x_source classic-country}
+{meta: x_source_file weshallmeetsomedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How our hearts ache with grief as we say [G][C]goodbye 
@@ -29,3 +32,6 @@ We shall [G]meet [D7]someday
 [G]By the river of life sparkling cool [C]and [G]clear 
 We shall meet [G][D7]some-day
 {end_of_verse}
+
+
+

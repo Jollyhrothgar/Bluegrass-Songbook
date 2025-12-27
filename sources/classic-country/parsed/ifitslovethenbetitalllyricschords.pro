@@ -1,6 +1,9 @@
 {meta: title If It's Love (Then Bet It All)}
 {meta: artist Ray Price}
 {meta: composer J.R. Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file ifitslovethenbetitalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You could build a wall around you now
@@ -45,3 +48,8 @@ Or leave a cushion for yourself should you [C]fall
 If it's love that you're playing for play to [F]win
 [G7]A heart is only broken when it loses the desire to try [C]again
 {end_of_verse}
+
+
+
+
+

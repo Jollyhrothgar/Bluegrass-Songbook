@@ -1,5 +1,8 @@
 {meta: title Seven Lonely Days}
 {meta: artist Patsy Cline}
+{meta: x_source classic-country}
+{meta: x_source_file sevenlonelydayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seven lonely days [F]make one lonely [C]week
@@ -28,3 +31,6 @@ There's no use in [G7]denying I cried for [C]you
 It was your favorite pastime  [C7]making me [F]blue
 Last week was the [G7]last time I cried for [C]you
 {end_of_verse}
+
+
+

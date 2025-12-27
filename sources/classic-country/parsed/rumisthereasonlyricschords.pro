@@ -1,6 +1,9 @@
 {meta: title Rum is the Reason}
 {meta: artist Toby Keith}
 {meta: composer Scotty Emerick and Toby Keith}
+{meta: x_source classic-country}
+{meta: x_source_file rumisthereasonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard Davey Crockett had a [C]pint in his pocket
@@ -46,3 +49,7 @@ Hey [C]rum is the reason [D7]pirates never ruled the [G]world
 {start_of_verse: Verse 5}
 [C]Take it home coral reefers [D7]    [C]   [G]
 {end_of_verse}
+
+
+
+

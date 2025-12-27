@@ -1,5 +1,8 @@
 {meta: title I Can Mend Your Broken Heart}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file icanmendyourbrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Shower you with kisses I'll [B7]give you all my [C]love
@@ -40,3 +43,8 @@ Cause [G7]I can mend your broken [C]heart
 Yes [G7]I can mend your broken [C]heart
 [G7]I can mend your broken [C]heart
 {end_of_verse}
+
+
+
+
+

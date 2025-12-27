@@ -1,6 +1,9 @@
 {meta: title Would You Want The World To End Not Loving Me chords}
 {meta: artist Wynn Stewart}
 {meta: composer Ronal McCown and Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyouwanttheworldtoendnotlovingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All the angry words we've spoken to each [C]other
@@ -33,3 +36,7 @@ Would you [D7]want the world to end not loving [G]me
 {start_of_verse: Verse 4}
 Would you [D7]want the world to end not loving [G]me
 {end_of_verse}
+
+
+
+

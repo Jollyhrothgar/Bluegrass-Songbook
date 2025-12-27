@@ -1,6 +1,9 @@
 {meta: title My God And I}
 {meta: artist Sonny James}
 {meta: composer Sonny James and John Skye}
+{meta: x_source classic-country}
+{meta: x_source_file myGodandilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My God and I walked [F]hand and hand [C]together
@@ -34,3 +37,7 @@ My God and [C]I will [G7]live forever [C]more [F]  [C]
 This earth will [G7]pass but one thing I am [C]sure of
 My God and [G7]I will live forever [C]more
 {end_of_verse}
+
+
+
+

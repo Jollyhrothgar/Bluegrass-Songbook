@@ -1,5 +1,8 @@
 {meta: title Utah Carol}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file utahcarollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]And now my friends you've asked me [F]what makes me sad and [C]still
@@ -56,3 +59,10 @@ I hope we'll all meet Utah [G7]at the roundup far [C]away
 [F]Then they wrapped him in a [C]blanket that [F]saved his little [C]friend
 And it was this red blanket [G7]that brought him to his [C]end 
 {end_of_verse}
+
+
+
+
+
+
+

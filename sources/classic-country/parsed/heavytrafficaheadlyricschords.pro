@@ -1,5 +1,8 @@
 {meta: title Heavy Traffic Ahead}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file heavytrafficaheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On Saturday night when our work is done
@@ -50,3 +53,12 @@ On Friday night we head for Nashville
 Heavy traffic [C]ahead heavy traffic [G]ahead
 We gotta [D7]ramble ramble heavy traffic [G]ahead
 {end_of_verse}
+
+
+
+
+
+
+
+
+

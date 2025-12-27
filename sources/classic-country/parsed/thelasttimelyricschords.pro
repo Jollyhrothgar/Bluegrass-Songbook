@@ -1,6 +1,9 @@
 {meta: title The Last Time}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Mae Boren Axton and Glen Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file thelasttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m kissing [C]you for the [G]last time
@@ -29,3 +32,6 @@ That [A7]after tonight we’re all [D7]through
 For [G]darling this [C]time is the [G]last time
 The [D7]last time I’ll be seeing [G]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Come Home A Drinkin'}
 {meta: artist Cal Smith}
 {meta: composer Loretta Lynn and Peggy Sue Wells}
+{meta: x_source classic-country}
+{meta: x_source_file icomehomeadrinkinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I knew that you'd be sleeping [G7]when I got home last [C]night
@@ -33,3 +36,7 @@ Each [C]time I try to hold you you're [G7]asleep before I [C]do
 {start_of_verse: Verse 4}
 [F]So I come home a [C]drinkin' to a [G7]worn out wife like [C]you
 {end_of_verse}
+
+
+
+

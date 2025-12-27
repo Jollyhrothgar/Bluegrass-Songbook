@@ -1,6 +1,9 @@
 {meta: title Blanket on the Ground}
 {meta: artist Tammy Wynette}
 {meta: composer Roger Bowling}
+{meta: x_source classic-country}
+{meta: x_source_file blanketonthegroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come and look out through the window
@@ -50,3 +53,9 @@ And we'll go walking once [G]again
 To that spot down by the [D7]river
 Where our sweet love first [G]began
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title For The Life Of Me}
 {meta: artist Dick Curless}
 {meta: composer Joe Allison and Joyce Harris}
+{meta: x_source classic-country}
+{meta: x_source_file forthelifeofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How can there be a [F]song without the [C]music
@@ -31,3 +34,6 @@ So run to me [G7]I'm waiting help[C]lessly
 And break these shackles of impatience [F]make me live
 For [C]I must have [G7]you for the life of [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The World Needs A Washin'}
 {meta: artist Porter Wagoner}
 {meta: composer Hank Cochran and Buck Trent}
+{meta: x_source classic-country}
+{meta: x_source_file theworldneedsawashinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the world needs a washin' so why shouldn't it rain
@@ -33,3 +36,7 @@ Let it [F]rain let it [G7]rain let it [C]rain
 {start_of_verse: Verse 3}
 Let it [F]rain let it [G7]rain let it [C]rain
 {end_of_verse}
+
+
+
+

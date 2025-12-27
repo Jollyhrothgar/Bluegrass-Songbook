@@ -1,5 +1,8 @@
 {meta: title Beauty Of My Dream}
 {meta: artist Del McCoury}
+{meta: x_source classic-country}
+{meta: x_source_file beautyofmydreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One day I met the beauty of my dreams
@@ -42,3 +45,8 @@ We wound up in her part of town
 [D7]I gazed into her eyes and she in mine
 [G]She had me in a trance it was so fine
 {end_of_verse}
+
+
+
+
+

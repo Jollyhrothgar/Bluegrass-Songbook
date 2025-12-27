@@ -1,6 +1,9 @@
 {meta: title Journey’s End}
 {meta: artist J.D. Crowe}
 {meta: composer Pete Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file journeysendlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Journey’s End
@@ -48,3 +51,9 @@ A [C]soul with no one to [G7]care
 [C]God heard my [C7]prayer and He [F]called me
 I'll [C]meet my [G7]Lord way up [C]there
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Life Don't Have To Be So Hard}
 {meta: artist Tracy Lawrence}
 {meta: composer Casey Beathard and Kenny West}
+{meta: x_source classic-country}
+{meta: x_source_file lifedonthavetobesohardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't want to read the paper or turn on the news
@@ -44,3 +47,8 @@ It's [F]time to get [G7]lazy [Am]had enough [G7]crazy
 [F]Life ain't gotta [G7]be so [Am]hard [G7]
 Oh [F]life don't have to [G7]be so [C]hard
 {end_of_verse}
+
+
+
+
+

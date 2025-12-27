@@ -1,6 +1,9 @@
 {meta: title 21 Miles To Lake Charles Prison}
 {meta: artist Johnny Paycheck}
 {meta: composer Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file 21milestolakecharlesprisonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh momma I’m [F]so thankful you [C]came
@@ -29,3 +32,6 @@ Now in [C]chains I ride the [G7]Lake Charles Prison [C]train
 But [C]I’m richer by far than all of them together [F]are
 All [C]because momma you [G7]walked me to the [C]train
 {end_of_verse}
+
+
+

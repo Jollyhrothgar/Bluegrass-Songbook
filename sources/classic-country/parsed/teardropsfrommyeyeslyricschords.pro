@@ -1,6 +1,9 @@
 {meta: title Teardrops From My Eyes}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Rudolph Toombs}
+{meta: x_source classic-country}
+{meta: x_source_file teardropsfrommyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every time it rains [D7]I think of [G]you
@@ -47,3 +50,9 @@ And it's [G]raining [D7]teardrops from my [G]eyes
 {start_of_verse: Verse 5}
 Yes it's raining [D7]teardrops from my [G]eyes
 {end_of_verse}
+
+
+
+
+
+

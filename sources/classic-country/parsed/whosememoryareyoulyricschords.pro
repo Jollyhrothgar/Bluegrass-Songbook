@@ -1,6 +1,9 @@
 {meta: title Whose Memory Are You}
 {meta: artist George Morgan}
 {meta: composer George Morgan and Curt Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file whosememoryareyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whose [G7]memory are [C]you  [F]who's all alone and blue
@@ -32,3 +35,7 @@ But please [G7]before you [C]go  [F]one thing I'd like to know
 But please [G7]before you [C]go  [F]one thing I'd like to know
 [G7]Just tell me dear whose memory are [C]you
 {end_of_verse}
+
+
+
+

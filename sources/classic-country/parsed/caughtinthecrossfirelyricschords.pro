@@ -1,6 +1,9 @@
 {meta: title Caught In The Crossfire}
 {meta: artist Rhonda Vincent}
 {meta: composer Terry Herd and Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file caughtinthecrossfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]In the month of June five years ago that's when I came to [G7]be
@@ -48,3 +51,9 @@
 [G7]I love ’em both but I can't choose which one to leave behind
 [Am]I'm caught in the crossfire of a [B7]world that's so [Em]unkind
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Wrong Side (Of The Tracks)}
 {meta: artist The Wilburn Brothers}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file wrongsideofthetrackslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They used to let me [F]play with her [C]awhile
@@ -43,3 +46,8 @@ She [G7]tells me just to wait there'll be a [C]way
 But will they kill her [C7]love by things they [F]say
 And [G7]leave me on the wrong side of the [C]tracks
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title That's What I'd Do For You}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatiddoforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like an owl I'll hoot when the [F]sun goes down
@@ -42,3 +45,8 @@ And [C]if that's what it [F]takes to be true
 I'd [F]make all your wishes and dreams come true
 [C]Baby that's what I'd [G7]do for [C]you
 {end_of_verse}
+
+
+
+
+

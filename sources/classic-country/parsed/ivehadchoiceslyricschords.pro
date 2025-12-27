@@ -1,6 +1,9 @@
 {meta: title I've Had Choices}
 {meta: artist George Jones}
 {meta: composer Billy Yates and Mike Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file ivehadchoiceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've had choices  since the [C]day that I was [G]born
@@ -33,3 +36,7 @@ But I'm still losing  this game of life I [C]play
 {start_of_verse: Verse 5}
 Repeat chorus
 {end_of_verse}
+
+
+
+

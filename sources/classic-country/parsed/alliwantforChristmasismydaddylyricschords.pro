@@ -1,6 +1,9 @@
 {meta: title All I Want For Christmas Is My Daddy}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Jimmy Snyder}
+{meta: x_source classic-country}
+{meta: x_source_file alliwantforChristmasismydaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A little boy with [C]tear dimmed [G]eyes 
@@ -37,3 +40,7 @@ But don't [D7]forget to bring my daddy Christmas [G]Eve
 {start_of_verse: Verse 5}
 No don't [D7]forget to bring my daddy Christmas [G]Eve
 {end_of_verse}
+
+
+
+

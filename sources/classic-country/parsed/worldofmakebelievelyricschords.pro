@@ -1,6 +1,9 @@
 {meta: title World Of Make Believe}
 {meta: artist Bill Anderson}
 {meta: composer Pee Wee Maddux, Marion Carpenter, Pete McCord}
+{meta: x_source classic-country}
+{meta: x_source_file worldofmakebelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I make be[F]lieve
@@ -31,3 +34,6 @@ And we'll [G7]both live in a [F]world [G7]of make be[C]lieve[F]  [C]
 {start_of_verse: Verse 4}
 And we'll [G7]both live in a [F]world [G7]of make be[C]lieve [F]  [C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Twice As Much}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray, Bob Blanchard and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file twiceasmuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wish the days were twice as long it’s hours forty-[D7]eight
@@ -33,3 +36,7 @@ Then [D7]I could love you [G]twice as much and [D7]twice as much I’d [G]do it
 {start_of_verse: Verse 4}
 [D7]Twice as much I’d [G]do it
 {end_of_verse}
+
+
+
+

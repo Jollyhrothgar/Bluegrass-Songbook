@@ -1,6 +1,9 @@
 {meta: title Lorene}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne and Buck Moore}
+{meta: x_source classic-country}
+{meta: x_source_file lorenelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was just twenty three when Lorene married me
@@ -66,3 +69,11 @@ Is the sound Lorene [D7]made when she [G]cried
 As I go under the last I remember
 Is the sound Lorene [D7]made when she [G]cried
 {end_of_verse}
+
+
+
+
+
+
+
+

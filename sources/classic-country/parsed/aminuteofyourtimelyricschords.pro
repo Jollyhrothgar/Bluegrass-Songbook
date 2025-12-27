@@ -1,6 +1,9 @@
 {meta: title A Minute Of Your Time}
 {meta: artist Roy Drusky}
 {meta: composer Gerald Westlake}
+{meta: x_source classic-country}
+{meta: x_source_file aminuteofyourtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For you to [A7]think of me 
@@ -42,3 +45,7 @@ Until [C]that moment you are back to [D7]stay
 But [G]still I'd like to think you think of [Am]me 
 Every [D7]minute of your [G]time
 {end_of_verse}
+
+
+
+

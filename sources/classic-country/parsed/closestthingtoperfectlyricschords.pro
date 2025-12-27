@@ -1,6 +1,9 @@
 {meta: title Closest Thing To Perfect}
 {meta: artist Jean Shepard}
 {meta: composer Jerry Chesnut and Walter Woodward}
+{meta: x_source classic-country}
+{meta: x_source_file closestthingtoperfectlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's better than any other man [F]I've ever seen [C]before
@@ -23,3 +26,5 @@
 [C]He's the [F]closest [C]thing to [G7]perfect that [C]I've [F]found
 [C]He's the [F]closest thing [C]to perfect [G7]that I've [C][F]found
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Talk To Me}
 {meta: artist Mickey Gilley}
 {meta: composer Ace Frehley, Patsy Montana, Joe Seneca}
+{meta: x_source classic-country}
+{meta: x_source_file talktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Talk to me [C]talk to me
@@ -48,3 +51,9 @@ Baby [G]I  [D7]I love you [G]so
 Talk to me [C]talk to me
 Darling [G]I  [D7]I love you [G]so
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lead On}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Teddy Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file leadonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She [D7]said I [G]don't recall [C]seeing you around here
@@ -34,3 +37,7 @@ And [C]pick up right where everything went [D7]wrong  lead [G]on
 She [D7]said I [G]don't recall [C]seeing you around here
 [D7]You must be new to this [G]town
 {end_of_verse}
+
+
+
+

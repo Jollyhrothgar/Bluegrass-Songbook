@@ -1,6 +1,9 @@
 {meta: title Sweet Kind of Love}
 {meta: artist Bob Wills}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file sweetkindoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You do something to me I can’t understand
@@ -29,3 +32,6 @@ You’ve got a [G7]sweet kind of [C]love
 [C]Feelin’ kinda lucky peaceful as a dove
 You’ve got a [G7]sweet kind of [C]love
 {end_of_verse}
+
+
+

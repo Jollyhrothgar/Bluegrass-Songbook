@@ -1,6 +1,9 @@
 {meta: title Gettin' Me Over Mountains}
 {meta: artist Tracy Byrd}
 {meta: composer Larry Boone, Paul Nelson, Tracy Byrd}
+{meta: x_source classic-country}
+{meta: x_source_file gettinmeovermountainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's an everyday [Am]battle [D7]just to try to break [G]even
@@ -35,3 +38,7 @@ I [Am]don't [Bm]know how [C]but she makes it look [G]easy [Em]
 {start_of_verse: Verse 5}
 Oh [Am]gettin' me [G]over [C]mountains [D7]with her [G]love
 {end_of_verse}
+
+
+
+

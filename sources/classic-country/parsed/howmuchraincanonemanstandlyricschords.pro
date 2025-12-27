@@ -1,6 +1,9 @@
 {meta: title How Much Rain Can One Man Stand}
 {meta: artist Waylon Jennings}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file howmuchraincanonemanstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like a raging flood that [F]ruins a poor man's [C]land
@@ -33,3 +36,7 @@ I [F]gave you everything but my right [G7]hand
 {start_of_verse: Verse 4}
 [F]How much [C]r-[F]a-i-[C]n can [G7]one man [C]stand
 {end_of_verse}
+
+
+
+

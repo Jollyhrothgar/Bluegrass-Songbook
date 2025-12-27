@@ -1,5 +1,8 @@
 {meta: title John Boat Blues}
 {meta: artist Jason Allen}
+{meta: x_source classic-country}
+{meta: x_source_file johnboatblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I was born in a John boat with a cane pole in my hand [G7]
@@ -30,3 +33,7 @@ I was born in a John boat with a cane pole in my hand [G7]
 Yeah I was [C]born in a John boat with a cane pole stuck in my [G]hand
 Yeah my [D7]daddy was a river rat I was born a fisher[G]man
 {end_of_verse}
+
+
+
+

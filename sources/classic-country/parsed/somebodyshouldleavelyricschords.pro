@@ -1,6 +1,9 @@
 {meta: title Somebody Should Leave}
 {meta: artist Reba McEntire}
 {meta: composer Harlan Howard and Chick Rains}
+{meta: x_source classic-country}
+{meta: x_source_file somebodyshouldleavelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It sure gets quiet when the [F]kids [D7]go to [Dm]bed
@@ -34,3 +37,7 @@ We keep [G7]hopin' somehow we might need each other [C]again
 [G7]Somebody should [C]leave so we hate to [F]give in
 We just keep [G7]hopin' somehow we might need each other [C]again
 {end_of_verse}
+
+
+
+

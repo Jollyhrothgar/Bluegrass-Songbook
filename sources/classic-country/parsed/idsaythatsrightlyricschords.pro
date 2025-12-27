@@ -1,6 +1,9 @@
 {meta: title I'd Say That's Right}
 {meta: artist Clay Walker}
 {meta: composer Mark D. Sanders and Tim Nichols}
+{meta: x_source classic-country}
+{meta: x_source_file idsaythatsrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Was I nervous the night [D7]I first I met you 
@@ -59,3 +62,9 @@ I'd [D7]say that's [G]right
 {start_of_verse: Verse 5}
 [C]I'd [D7]say that's [G]right  [C]I'd [D7]say that's [G]right
 {end_of_verse}
+
+
+
+
+
+

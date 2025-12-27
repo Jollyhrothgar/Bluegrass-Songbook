@@ -1,6 +1,9 @@
 {meta: title Out Behind The Barn}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file outbehindthebarnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My pappy used to tan my hide [D7]out behind the barn
@@ -47,3 +50,8 @@ I ain't a fooling no sir-[G]eeee
 Passed each examination [D7]out behind the barn
 And it almost made a wreck out of [G]me
 {end_of_verse}
+
+
+
+
+

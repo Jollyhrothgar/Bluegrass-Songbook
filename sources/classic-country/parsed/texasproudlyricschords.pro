@@ -1,6 +1,9 @@
 {meta: title Texas Proud}
 {meta: artist Curtis Potter}
 {meta: composer Shirley Ann Worth}
+{meta: x_source classic-country}
+{meta: x_source_file texasproudlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s good to be back to a real honky [G7]tonk
@@ -25,3 +28,5 @@ Cause [C]Texans have a special way to [C7]make you feel at [F]home
 And they’re my kind of [C]people [F]my kind of [C]crowd
 And there’s [F]no place like [C]Texas and [G7]being Texas [C]proud
 {end_of_verse}
+
+

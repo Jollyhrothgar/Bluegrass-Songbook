@@ -1,5 +1,8 @@
 {meta: title That's What They Say}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhattheysaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There comes a [B7]time for [C]every[G]body
@@ -44,3 +47,9 @@ And [C]love will come your [G]way
 {start_of_verse: Verse 7}
 [C]That's what they [D7]tell me that's what they [G]say
 {end_of_verse}
+
+
+
+
+
+

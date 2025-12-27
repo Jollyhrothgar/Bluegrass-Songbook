@@ -1,6 +1,9 @@
 {meta: title Don't Blame Me For What Happened Last Night}
 {meta: artist Boxcar Willie}
 {meta: composer Lecil Travis Martin}
+{meta: x_source classic-country}
+{meta: x_source_file dontblamemeforwhathappenedlastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How long has it [G7]been since you [C]kissed me
@@ -33,3 +36,7 @@ So don't [D7]blame me for what happened last [G]night
 {start_of_verse: Verse 4}
 No don't [D7]blame me for what happened last [G]night
 {end_of_verse}
+
+
+
+

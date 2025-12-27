@@ -1,6 +1,9 @@
 {meta: title A Heart Full Of Love}
 {meta: artist Slim Whitman}
 {meta: composer Roy Soehnel and Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file aheartfulloflovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A heart full of love and arms full of [C]you
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [D7]A heart full of joy and arms full of [G]you
 {end_of_verse}
+
+
+

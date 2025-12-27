@@ -1,6 +1,9 @@
 {meta: title Loving On Borrowed Time}
 {meta: artist Mel Street}
 {meta: composer Eddie Rabbitt, Dick Heard, Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file lovingonborrowedtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We're taking chances meeting [C]here like [G]this
@@ -33,3 +36,7 @@ We're two lonely [C]people  [D7]loving on borrowed [G]time
 {start_of_verse: Verse 4}
 We're two lonely [C]people  [D7]loving on borrowed [G]time
 {end_of_verse}
+
+
+
+

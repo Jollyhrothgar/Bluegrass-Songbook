@@ -1,6 +1,9 @@
 {meta: title I'm Just A Country Boy}
 {meta: artist Don Williams}
 {meta: composer Marshall Barer and Fred Hellerman}
+{meta: x_source classic-country}
+{meta: x_source_file imjustacountryboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I ain't gonna marry in the fall
@@ -46,3 +49,8 @@ But I've got [D7]silver in [G]the [C]stars
 [D7]Gold in the morning [G]sun
 [D7]Gold in the morning [G]sun
 {end_of_verse}
+
+
+
+
+

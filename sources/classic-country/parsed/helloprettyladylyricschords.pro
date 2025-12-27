@@ -1,5 +1,8 @@
 {meta: title Hello Pretty Lady}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file helloprettyladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello pretty lady [F]I'm wondering why
@@ -28,3 +31,6 @@ In a [G7]world that's as happy as you seem to [C]be
 I'll think of you often and [F]recall with a sigh
 [G7]That you're not for me pretty lady good[C]bye
 {end_of_verse}
+
+
+

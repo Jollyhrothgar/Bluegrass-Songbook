@@ -1,6 +1,9 @@
 {meta: title It’s That Time Of The Night}
 {meta: artist Jim Ed Brown}
 {meta: composer Billy Graham}
+{meta: x_source classic-country}
+{meta: x_source_file itsthattimeofthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know it's after midnight and I'm knocking on your door 
@@ -29,3 +32,6 @@ And [D7]my wanting grows stronger for [G]you
 It's that time of night when a man needs his [C]woman
 And only your [D7]loving will [G]do
 {end_of_verse}
+
+
+

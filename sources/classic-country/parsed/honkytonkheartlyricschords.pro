@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Heart}
 {meta: artist Keith Whitley}
 {meta: composer Joanna Neel and Lonnie Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey I still got a honky tonk [F]heart
@@ -43,3 +46,8 @@ Yeah [G7]I still got a honky tonk [C]heart
 {start_of_verse: Verse 5}
 Yeah [G7]I still got a honky tonk [C]heart
 {end_of_verse}
+
+
+
+
+

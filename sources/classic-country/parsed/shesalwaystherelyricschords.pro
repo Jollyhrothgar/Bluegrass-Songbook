@@ -1,5 +1,8 @@
 {meta: title She's Always There}
 {meta: artist Vernon Oxford}
+{meta: x_source classic-country}
+{meta: x_source_file shesalwaystherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the barroom where I’m playing she comes every night
@@ -29,3 +32,7 @@ So please take your [G]good times  [D7]I’ll go on [G]home
 Then you ask me to your table and you buy me a drink
 You [C]ask me to take you [G]home tonight  woman [D7]I’m not what you [G]think 
 {end_of_verse}
+
+
+
+

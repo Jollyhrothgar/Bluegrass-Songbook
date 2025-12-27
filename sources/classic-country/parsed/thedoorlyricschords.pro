@@ -1,6 +1,9 @@
 {meta: title The Door}
 {meta: artist George Jones}
 {meta: composer Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file thedoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've heard the sound of my dear old [Am]mama [C]cry-ing 
@@ -33,3 +36,7 @@ And of earthquakes storms guns and war
 Lord [C]nothing has ever hurt me more
 Than that [G]lonely sound the [D7]closing of the [G]door
 {end_of_verse}
+
+
+
+

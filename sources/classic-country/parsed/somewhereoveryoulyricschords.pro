@@ -1,6 +1,9 @@
 {meta: title Somewhere Over You}
 {meta: artist Gene Watson}
 {meta: composer David H. Lindsey, Jim Rushing, Gene Watson}
+{meta: x_source classic-country}
+{meta: x_source_file somewhereoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I rolled out of bed with [Am]my eyes on you
@@ -48,3 +51,9 @@ I'm [F]burning your memories and [C]starting my life [Am]a-n-e[F]w
 I'm [F]burning your memories and [C]starting my life [Am]a-n-e[F]w
 [C]Somewhere [G7]over [C]you  oh I'm [F]over yo[C]u
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title No Time Like The Present}
 {meta: artist Wynn Stewart}
 {meta: composer Beverly Stewart and Don Pearce}
+{meta: x_source classic-country}
+{meta: x_source_file notimelikethepresentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your eyes [Em]reveal what your [C]lips conceal[F] 
@@ -47,3 +50,9 @@ There's no time like the present [C]time
 {start_of_verse: Verse 5}
 [F]There's no time [G7]like the present [C]time
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Goodbye Kisses}
 {meta: artist Cowboy Copas}
 {meta: composer Lefty Frizzell and Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyekisseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Goodbye kisses goodbye love [G7]affair
@@ -22,3 +25,5 @@
 [C7]Goodbye to all my dreams I watch them walk [F]away
 [C]They're gone [G7]forever forever far [C]away
 {end_of_verse}
+
+

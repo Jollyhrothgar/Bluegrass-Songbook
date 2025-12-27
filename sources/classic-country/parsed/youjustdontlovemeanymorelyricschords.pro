@@ -1,6 +1,9 @@
 {meta: title You Just Don't Love Me Anymore}
 {meta: artist Ray Price}
 {meta: composer Jan Crutchfield and Joseph Allen}
+{meta: x_source classic-country}
+{meta: x_source_file youjustdontlovemeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]After all the good times after all the things that we’ve gone [F]through
@@ -33,3 +36,6 @@ Now [G7]he just stands here crying cause it’s too late for trying
 After [G7]you it doesn’t matter cause it don’t get no sadder
 [F]You just don’t [G7]love me any[C]more
 {end_of_verse}
+
+
+

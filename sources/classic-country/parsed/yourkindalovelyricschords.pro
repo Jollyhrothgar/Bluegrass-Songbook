@@ -1,6 +1,9 @@
 {meta: title Your Kinda Love}
 {meta: artist Patsy Cline}
 {meta: composer Alex Zanetis and Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file yourkindalovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say you love me then you treat [G7]me like a [C]stranger
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [D7]No I don't understand your kind of [G]love
 {end_of_verse}
+
+
+

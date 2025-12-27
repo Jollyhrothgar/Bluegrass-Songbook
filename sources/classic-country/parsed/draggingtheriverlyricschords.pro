@@ -1,6 +1,9 @@
 {meta: title Dragging The River}
 {meta: artist Ferlin Husky}
 {meta: composer Vic McAlpine}
+{meta: x_source classic-country}
+{meta: x_source_file draggingtheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I’m just a post of which you [F]lean
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Then start dragging the river for [C]me
 {end_of_verse}
+
+
+
+

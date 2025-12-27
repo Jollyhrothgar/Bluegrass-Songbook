@@ -1,6 +1,9 @@
 {meta: title Rockin' Bicycle}
 {meta: artist Fats Domino}
 {meta: composer Antoine Domino, Jack Jessup, Pee Wee Maddux}
+{meta: x_source classic-country}
+{meta: x_source_file rockinbicyclelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't got a Cadillac or [F]big Oldsmobile 
@@ -25,3 +28,5 @@ We don't care if they [F]laugh at us
 But [C]gimme my rockin' [G7]bicycle for [C]two
 Repeat all  
 {end_of_verse}
+
+

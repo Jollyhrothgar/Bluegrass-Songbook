@@ -1,6 +1,9 @@
 {meta: title In A Gospel Way}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file inagospelwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We all got together on a sawdust floor
@@ -42,3 +45,7 @@ We all fell in love together in a [G7]gospel [C]way
 Let's all fall in love together in a [G7]gospel [C]way
 And we'll all get to heaven together in a [G7]gospel [C]way
 {end_of_verse}
+
+
+
+

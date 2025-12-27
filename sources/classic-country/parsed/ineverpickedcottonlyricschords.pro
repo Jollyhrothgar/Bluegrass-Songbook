@@ -1,6 +1,9 @@
 {meta: title I Never Picked Cotton}
 {meta: artist Roy Clark}
 {meta: composer Charlie Williams and Bobby George}
+{meta: x_source classic-country}
+{meta: x_source_file ineverpickedcottonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never picked cotton
@@ -113,3 +116,28 @@ Like my mother did and my brother did
 And my sister did and I’ll never die young
 [D7]Working in a coal [G]mine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

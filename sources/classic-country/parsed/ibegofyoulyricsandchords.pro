@@ -1,6 +1,9 @@
 {meta: title I Beg of You}
 {meta: artist Elvis Presley}
 {meta: composer Rose Marie McCoy and Kelly Owens}
+{meta: x_source classic-country}
+{meta: x_source_file ibegofyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't want my heart to be broken cause it's the only one I've got
@@ -34,3 +37,8 @@ You [C]got me at your mercy now that I'm in love with you
 {start_of_verse: Verse 5}
 My darling [G7]please please love me too [F]I beg of [C]you
 {end_of_verse}
+
+
+
+
+

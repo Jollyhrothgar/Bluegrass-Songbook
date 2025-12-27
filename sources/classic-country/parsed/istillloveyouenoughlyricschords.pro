@@ -1,6 +1,9 @@
 {meta: title I Still Love You Enough}
 {meta: artist Tommy Overstreet}
 {meta: composer Ricci Mareno}
+{meta: x_source classic-country}
+{meta: x_source_file istillloveyouenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I still [D7]love you enough to [G7]love you all over [C]again[F]   [C]  [G7]
@@ -27,3 +30,6 @@ I could [Am]feel that old sweet feelin' [D7]I got from lovin' [G7]you
 I don't [C]love you as much as I [Em]did when our love found its [G7]end
 [Am]But I still [D7]love you enough to [G7]love you all over [C]again [F]  [Em]   [C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Down By The Riverside}
 {meta: artist Patsy Cline}
 {meta: composer Billy Sherrill and Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file downbytheriversidelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I met my little blue eyed doll
@@ -42,3 +45,9 @@ Well I wed that little blue eyed doll
 [G7]Down by the riverside down by the [C]riverside
 [G7]Down by the [C]riverside
 {end_of_verse}
+
+
+
+
+
+

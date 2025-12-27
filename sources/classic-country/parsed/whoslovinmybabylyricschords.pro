@@ -1,6 +1,9 @@
 {meta: title Who's Lovin' My Baby}
 {meta: artist John Anderson}
 {meta: composer Curtis Wright}
+{meta: x_source classic-country}
+{meta: x_source_file whoslovinmybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who's lovin' my [C]baby and who's a-kissin' my [G]gal
@@ -40,3 +43,8 @@ Who's lovin' my [D7]baby who's kissin' my [G]gal
 {start_of_verse: Verse 4}
 Who's lovin' my [D7]baby who's been kissin' my [G]gal
 {end_of_verse}
+
+
+
+
+

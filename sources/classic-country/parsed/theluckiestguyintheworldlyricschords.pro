@@ -1,6 +1,9 @@
 {meta: title The Luckiest Guy In The World}
 {meta: artist Vince Gill}
 {meta: composer Michael Omartian and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file theluckiestguyintheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got a secret I [D7]keep in my heart 
@@ -42,3 +45,8 @@ Cause our hearts feel this [G]way
 I'm the luckiest [D7]guy in the world 
 Cause our hearts feel this [G]way
 {end_of_verse}
+
+
+
+
+

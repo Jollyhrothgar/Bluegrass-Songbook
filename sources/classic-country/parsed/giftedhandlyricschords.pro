@@ -1,6 +1,9 @@
 {meta: title Gifted Hand}
 {meta: artist Gene Watson}
 {meta: composer Doug Crider and William C. Spencer III}
+{meta: x_source classic-country}
+{meta: x_source_file giftedhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The artist draws a [G7]portrait with the [C]likeness [Am]strong and [C]true
@@ -31,3 +34,6 @@ You breathed [D7]life into his soul
 That was cold as if he'd died I've been [C]touched [D7]by a gifted [G]hand 
 I've found [C]love [D7]in your gifted [G]hand
 {end_of_verse}
+
+
+

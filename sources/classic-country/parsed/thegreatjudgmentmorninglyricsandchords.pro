@@ -1,6 +1,9 @@
 {meta: title The Great Judgment Morning}
 {meta: artist Hank Williams}
 {meta: composer Leander L. Pickett}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatjudgmentmorninglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I dreamed that the great judgment [F]morning 
@@ -78,3 +81,13 @@ As the [C]lost were told of their [G7]fate
 They [C]cried for the rocks and the [F]mountains
 They [C]prayed but their [G7]prayers were too [C]late
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

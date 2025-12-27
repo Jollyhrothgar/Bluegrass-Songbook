@@ -1,5 +1,8 @@
 {meta: title Lord Build Me A Cabin In Gloryland}
 {meta: artist Charlie Pride}
+{meta: x_source classic-country}
+{meta: x_source_file lordbuildmeacabininglorylandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many years I've been looking for a [F]place to call [C]home
@@ -35,3 +38,7 @@ On the grapevine of mourning [D7]shall I hear them all [G7]say
 Come [C]and join in the singing and [F]play in our [C]band
 Lord build me a cabin in the corner of [C][G7]Gloryland
 {end_of_verse}
+
+
+
+

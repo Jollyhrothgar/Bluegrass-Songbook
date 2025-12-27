@@ -1,6 +1,9 @@
 {meta: title Am I Losing Your Memory Or Mine}
 {meta: artist George Jones}
 {meta: composer D. Kirby and R. Lane}
+{meta: x_source classic-country}
+{meta: x_source_file amilosingyourmemoryorminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did I wake up this mornin' thinkin' of you 
@@ -39,3 +42,8 @@ And am I losing your [D7]memory or [G]mine
 I'll get over you oh but I [C]really don't [G]want to[C]
 I'm [G]losing your [D7]memory or [G]mine
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Apples Raisins And Roses}
 {meta: artist Eddy Arnold}
 {meta: composer Earl Shuman and Leon Carr}
+{meta: x_source classic-country}
+{meta: x_source_file applesraisinsandroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll bring some [C]apples [D7]   for [G]Jenny
@@ -31,3 +34,6 @@ When her [C]warm eyes say  how [G]long will you stay
 I'll [D7]answer till I'm put to rest
 I'll bring red roses for my [G]Mary
 {end_of_verse}
+
+
+

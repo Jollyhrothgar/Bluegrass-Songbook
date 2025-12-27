@@ -1,6 +1,9 @@
 {meta: title Song In The Night}
 {meta: artist Johnny Duncan}
 {meta: composer Bobby Smith}
+{meta: x_source classic-country}
+{meta: x_source_file songinthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The whole world's asleep  [B7]and it's so quiet here
@@ -29,3 +32,6 @@ When you [D7]touch me this way the music plays the [G]whole night through
 And love's melody serenades me when you [C]hold me tight
 I [D7]hear violins and love begins with a [G]song in the night
 {end_of_verse}
+
+
+

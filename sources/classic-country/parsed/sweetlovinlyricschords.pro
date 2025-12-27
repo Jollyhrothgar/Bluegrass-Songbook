@@ -1,6 +1,9 @@
 {meta: title Sweet Lovin'}
 {meta: artist David Houston}
 {meta: composer Tillman Franks and Clyde Baum}
+{meta: x_source classic-country}
+{meta: x_source_file sweetlovinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweet lovin' sweet lovin' can't you hear me [C]pleadin'
@@ -47,3 +50,10 @@
 [G]Sweet lovin' sweet lovin' can't you hear me [C]pleadin'
 [D7]You know that I'm needin' some sweet lovin' [G]tonight
 {end_of_verse}
+
+
+
+
+
+
+

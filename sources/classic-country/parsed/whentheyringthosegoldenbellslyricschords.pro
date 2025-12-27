@@ -1,6 +1,9 @@
 {meta: title When They Ring Those Golden Bells}
 {meta: artist Sonny James}
 {meta: composer Dion DeMarbelle and Archie Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file whentheyringthosegoldenbellslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a land beyond the river 
@@ -37,3 +40,6 @@ In that [C]far off sweet forever
 Just be[F]yond the shining [C]river
 When they ring those [F]golden [C]bells for [G7]you and [C]me
 {end_of_verse}
+
+
+

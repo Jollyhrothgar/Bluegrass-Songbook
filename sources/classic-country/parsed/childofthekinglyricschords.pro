@@ -1,6 +1,9 @@
 {meta: title Child Of The King}
 {meta: artist Skeeter Davis}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file childofthekinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I was clothed in the rags of my sin
@@ -33,3 +36,7 @@ Praise [C]God Praise [Am]God I'm a [G7]child of the [C]King
 {start_of_verse: Verse 4}
 [Am]Praise God [C]Praise [Am]God I'm a [G7]child of the [C]King
 {end_of_verse}
+
+
+
+

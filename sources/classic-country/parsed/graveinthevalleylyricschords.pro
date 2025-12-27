@@ -1,6 +1,9 @@
 {meta: title Grave In The Valley}
 {meta: artist Jim and Jesse}
 {meta: composer Don McHan}
+{meta: x_source classic-country}
+{meta: x_source_file graveinthevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's grave in the bend of the [D7]valley
@@ -50,3 +53,9 @@ Here the shadows sweep over so [G]still
 Here my darling is sleeping so [C]peaceful
 In a [G]grave at the [D7]foot of the [G]hill
 {end_of_verse}
+
+
+
+
+
+

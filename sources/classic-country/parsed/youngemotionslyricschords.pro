@@ -1,6 +1,9 @@
 {meta: title Young Emotions}
 {meta: artist Ricky Nelson}
 {meta: composer Jerry Livingston and Mack David}
+{meta: x_source classic-country}
+{meta: x_source_file youngemotionslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You[Em]ng e[Am]motio[D7]ns [G]are [Em]mixed [Am]emot[D7]ions 
@@ -28,3 +31,5 @@ For though we're [Em]brave sometimes [C]we are so [D7]afraid
 [C]And our love will help us to [D7]weather 
 [C]These [D7]young e[G]motions
 {end_of_verse}
+
+

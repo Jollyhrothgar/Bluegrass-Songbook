@@ -1,5 +1,8 @@
 {meta: title I'm A Loser}
 {meta: artist Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file imaloserlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a loser I'm a loser but [F]no way to [C]win
@@ -33,3 +36,8 @@ But [Am]darling for [C]all time [F]sake [Am]will you [Dm]be [G7]my [C]friend
 {start_of_verse: Verse 6}
 But [Am]darling for [C]all time [F]sake [Am]will you [Dm]be [G7]my [C]friend
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Share Your Love With Me}
 {meta: artist Charlie Rich}
 {meta: composer Don Robey, Al Braggs, Deadric Malone}
+{meta: x_source classic-country}
+{meta: x_source_file shareyourlovewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's an [C]ill wind [F] that blows no [C]good[F]
@@ -34,3 +37,7 @@ And it's a [C]shame if [Am]you don't [F]share [Dm]your [G7]love with [C]me [D7]
 And it's a [C]shame if [Am]you don't [F]share [Dm]your [G7]love with [C]me
 ([F]Love with [C]me)
 {end_of_verse}
+
+
+
+

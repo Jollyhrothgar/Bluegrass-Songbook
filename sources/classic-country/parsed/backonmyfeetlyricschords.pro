@@ -1,6 +1,9 @@
 {meta: title Back On My Feet}
 {meta: artist Tanya Tucker}
 {meta: composer Troy Seals and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file backonmyfeetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I should've said no  no  no  I should've [G7]taken [C]it [F]slow
@@ -43,3 +46,8 @@
 [F]Learning a lesson or two  [C]hurting [F]all over and totally [C]blue
 [F]I'm putting the word on the [G7]street that I'm back on my [C]feet
 {end_of_verse}
+
+
+
+
+

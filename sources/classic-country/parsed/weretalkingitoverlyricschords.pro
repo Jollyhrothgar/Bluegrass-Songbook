@@ -1,6 +1,9 @@
 {meta: title We're Talking It Over}
 {meta: artist Faron Young}
 {meta: composer Merle Kilgore and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file weretalkingitoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Now that we’ve talked it [C]over I [G7]know it’s still [C]goodbye
@@ -26,3 +29,6 @@ I think of things we did together and how [C]much she [F]means to [C]me
 I wonder why I did the things that [C7]caused her love to [F]die
 Now that we’ve talked it [C]over I [G7]know it’s still [C]goodbye
 {end_of_verse}
+
+
+

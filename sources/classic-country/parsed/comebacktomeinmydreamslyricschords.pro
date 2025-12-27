@@ -1,6 +1,9 @@
 {meta: title Come Back To Me In My Dreams}
 {meta: artist Doyle Lawson}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file comebacktomeinmydreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the bright moon shines up in [F]heaven
@@ -54,3 +57,10 @@
 {start_of_verse: Verse 5}
 [G7]Come back to me in my [C]dreams
 {end_of_verse}
+
+
+
+
+
+
+

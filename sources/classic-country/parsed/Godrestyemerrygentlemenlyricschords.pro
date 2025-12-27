@@ -1,3 +1,6 @@
+{meta: x_source classic-country}
+{meta: x_source_file Godrestyemerrygentlemenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]God rest ye merry gentlemen
@@ -28,3 +31,6 @@ O [C]tidings of [E7]comfort and [Am]joy
 Comfort and [G7]joy
 O [C]tidings of [E7]comfort and [Am]joy 
 {end_of_verse}
+
+
+

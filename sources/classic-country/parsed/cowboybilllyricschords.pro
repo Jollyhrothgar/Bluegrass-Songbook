@@ -1,6 +1,9 @@
 {meta: title Cowboy Bill}
 {meta: artist Garth Brooks}
 {meta: composer Larry Bastian and Ed Berghoff}
+{meta: x_source classic-country}
+{meta: x_source_file cowboybilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He told a good story and all of us [F]kids [C]listened
@@ -65,3 +68,11 @@ That [D7]old man's just tellin' you [G7]lies
 Just as true as his [G7]blue Texas [F]skies
 Just as [C]true as his [G7]blue Texas [C]skies
 {end_of_verse}
+
+
+
+
+
+
+
+

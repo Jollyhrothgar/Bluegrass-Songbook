@@ -1,6 +1,9 @@
 {meta: title I'm Busted}
 {meta: artist Charlie Pride}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file imbustedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The bills are all due and my baby needs shoes
@@ -52,3 +55,11 @@ The fields are all bare and the cotton won't grow
 [D7]Where I'll make a living the Lord only knows
 [G]I'm busted
 {end_of_verse}
+
+
+
+
+
+
+
+

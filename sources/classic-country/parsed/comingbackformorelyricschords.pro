@@ -1,6 +1,9 @@
 {meta: title Coming Back For More}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file comingbackformorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I keep on [C]coming back for more [A7]every single time you hurt [D7]me
@@ -30,3 +33,7 @@ And that's a guaranteed fact honey
 {start_of_verse: Verse 5}
 [G7]Hopeless as it is I keep coming back for [C]more
 {end_of_verse}
+
+
+
+

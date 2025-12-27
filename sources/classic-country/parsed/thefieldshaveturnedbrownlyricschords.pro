@@ -1,6 +1,9 @@
 {meta: title The Fields Have Turned Brown}
 {meta: artist The Stanley Brothers}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file thefieldshaveturnedbrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I left my old home to ramble this country
@@ -31,3 +34,6 @@ For many long years I've traveled in sorrow
 [G7]For years they've been dead
 [C]The fields have turned brown
 {end_of_verse}
+
+
+

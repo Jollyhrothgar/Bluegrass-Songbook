@@ -1,6 +1,9 @@
 {meta: title Just As I Am}
 {meta: artist Ray Price}
 {meta: composer Charlotte Elliott}
+{meta: x_source classic-country}
+{meta: x_source_file justasiamlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Just as I [G7]am just as I [C]am)
@@ -24,3 +27,6 @@ Oh [C]lamb of God I [G7]come I [C]come
 Because Thy [C7]promise [F]I believe 
 oh [C]lamb of God I [G7]come I [C]come 
 {end_of_verse}
+
+
+

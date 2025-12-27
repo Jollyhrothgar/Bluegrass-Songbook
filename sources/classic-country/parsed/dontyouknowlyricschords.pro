@@ -1,6 +1,9 @@
 {meta: title Don't You Know}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Antoine Domino}
+{meta: x_source classic-country}
+{meta: x_source_file dontyouknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You were right I was wrong
@@ -49,3 +52,10 @@ Please come back home and stay
 [C]Don't you know don't you know
 [G]Every day I love you more
 {end_of_verse}
+
+
+
+
+
+
+

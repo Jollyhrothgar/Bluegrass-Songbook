@@ -1,6 +1,9 @@
 {meta: title Hold On Tight (Let It Go)}
 {meta: artist Ricky Skaggs}
 {meta: composer Don Schlitz and Paul Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file holdontightletitgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I know that I'm in trouble when I [D7]think I know it [G]all
@@ -46,3 +49,9 @@ If we hold on [G]tight [D7]let it [G]go
 [C]If we hold on [G]tight [D7]let it [G]go
 [D7]Let it [G]go 
 {end_of_verse}
+
+
+
+
+
+

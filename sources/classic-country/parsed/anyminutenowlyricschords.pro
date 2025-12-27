@@ -1,6 +1,9 @@
 {meta: title Any Minute Now}
 {meta: artist Tracy Lawrence}
 {meta: composer Thom McHugh and J.B. Rudd}
+{meta: x_source classic-country}
+{meta: x_source_file anyminutenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I always pride myself on being [C]strong 
@@ -49,3 +52,9 @@ Any minute now
 [C]Oh [D7]oh [G]any minute no[C]w [D7]
 Any minute [G]now[C]
 {end_of_verse}
+
+
+
+
+
+

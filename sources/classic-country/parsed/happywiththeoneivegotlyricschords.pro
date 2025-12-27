@@ -1,6 +1,9 @@
 {meta: title Happy With The One I've Got}
 {meta: artist David Ball}
 {meta: composer Wood Newton and Rand Bishop}
+{meta: x_source classic-country}
+{meta: x_source_file happywiththeoneivegotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We landed in St. Louis on a wing and a prayer
@@ -68,3 +71,11 @@ I'm [C]happy with the [G7]one I've [C]got
 I'm happy with the [G7]one I've [C]got
 I'm happy with the [G7]one I've [C]got
 {end_of_verse}
+
+
+
+
+
+
+
+

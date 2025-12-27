@@ -1,6 +1,9 @@
 {meta: title Keep On Dreamin'}
 {meta: artist Alabama}
 {meta: composer Jeff Cook and Richard Scott}
+{meta: x_source classic-country}
+{meta: x_source_file keepondreaminlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am so happy [D7]with you in my [Am]arms
@@ -43,3 +46,8 @@
 [D7]Lay back and love me and tell me you're [Am]mine
 [D7]Keep on dreamin' with [G]me
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Beggars and Heroes}
 {meta: artist The Bellamy Brothers}
 {meta: composer Ralph Siegel}
+{meta: x_source classic-country}
+{meta: x_source_file beggarsandheroeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sitten' in a bar talking to my friends
@@ -58,3 +61,10 @@ And [C]in the end they all [A7]surren[D7]der
 Beggars and [C]heroes [D7]like [G]me
 Beggars and [C]heroes [D7]like [G]me
 {end_of_verse}
+
+
+
+
+
+
+

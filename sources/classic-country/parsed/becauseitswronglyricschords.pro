@@ -1,5 +1,8 @@
 {meta: title Because It's Wrong}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file becauseitswronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here we are we're close [C]together
@@ -28,3 +31,6 @@ May it [D7]burn forever [G]strong
 May we always be [C]together
 Not [G]apart   [D7]because it's [G]wrong
 {end_of_verse}
+
+
+

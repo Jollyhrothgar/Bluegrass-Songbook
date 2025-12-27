@@ -1,6 +1,9 @@
 {meta: title Smooth Sailin'}
 {meta: artist T.G.Sheppard}
 {meta: composer Curly Putman and Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file smoothsailinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We got smooth sailin' sailin'
@@ -50,3 +53,9 @@ Looks like every drop of rain is [Am]gone gone gone
 Smooth [D7]sailin' sailin'
 And a blue sky full of rainbows from now [G]on
 {end_of_verse}
+
+
+
+
+
+

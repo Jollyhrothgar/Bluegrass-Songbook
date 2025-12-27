@@ -1,6 +1,9 @@
 {meta: title Roll Tennessee River}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Dave Loggins and Russell Smith}
+{meta: x_source classic-country}
+{meta: x_source_file rolltennesseeriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I might have a big ol' catfish cookin' on the stove
@@ -69,3 +72,14 @@ Then I'm headed [Em]south to try to burn Atlanta [D7][C]down
 Singin' the songs [G]that I wrote on a flat bottomed [A7]boat
 [C]Livin' on the Tennessee River in the heart of [D7]Alabam'
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

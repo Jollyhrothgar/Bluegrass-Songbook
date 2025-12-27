@@ -1,6 +1,9 @@
 {meta: title Where The Sidewalk Ends}
 {meta: artist George Strait}
 {meta: composer Jim Lauderdale and John Leventhal}
+{meta: x_source classic-country}
+{meta: x_source_file wherethesidewalkendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where the sidewalk ends and the road [Em]begins 
@@ -53,3 +56,10 @@ Where the sidewalk [G]ends [D7]you left a [Em]lot
 [C]Where the sidewalk [G]ends [D7]you left a [Em]lot 
 [C]Where the sidewalk [G]ends [D7]you left a [G]lot
 {end_of_verse}
+
+
+
+
+
+
+

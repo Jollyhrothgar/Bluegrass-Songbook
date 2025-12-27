@@ -1,6 +1,9 @@
 {meta: title God Is Good God Is Love}
 {meta: artist Brush Arbor}
 {meta: composer James Rice}
+{meta: x_source classic-country}
+{meta: x_source_file GodisgoodGodislovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]God is [C]good [G]God is [C]love
@@ -47,3 +50,8 @@ But for [G]me God [D7]sent His [G]Son[F]
 I've [G]been away too [C]long
 But for [G]me God [D7]sent His [G]Son[F]
 {end_of_verse}
+
+
+
+
+

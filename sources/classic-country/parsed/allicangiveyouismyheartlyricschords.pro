@@ -1,5 +1,8 @@
 {meta: title All I Can Give You Is My Heart}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file allicangiveyouismyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let's take the final [C]step and get [G]married
@@ -24,3 +27,5 @@ But thank God you [C]want me for just [G]what I am
 Cause right now [C]all that I can [D7]give you is my [G]heart
 Right now [C]all that I can [D7]give you is my [G]heart
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Games That Lover's Play}
 {meta: artist Raul Malo}
+{meta: x_source classic-country}
+{meta: x_source_file gamesthatloversplaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are games that many foolish lovers [G7]play
@@ -32,3 +35,7 @@ When your kisses bring me thrills I never [C]knew
 {start_of_verse: Verse 5}
 Let’s not play those [G7]games that lovers [C]plaaaaay
 {end_of_verse}
+
+
+
+

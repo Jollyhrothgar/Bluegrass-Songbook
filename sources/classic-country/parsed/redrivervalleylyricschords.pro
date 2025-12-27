@@ -1,5 +1,8 @@
 {meta: title Red River Valley}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file redrivervalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From this valley they [G7]say you are [C]leaving
@@ -28,3 +31,6 @@ Do not hasten to bid me [G7]adieu
 Just [C]remember the [C7]Red River [F]Valley
 And the [G7]cowboy that loved you so [C]true
 {end_of_verse}
+
+
+

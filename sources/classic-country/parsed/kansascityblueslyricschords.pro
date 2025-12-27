@@ -1,5 +1,8 @@
 {meta: title Kansas City Blues}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file kansascityblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I wish I was a catfish swimmin' in the sea
@@ -28,3 +31,6 @@ Now foolin' round to Nashville as blue as I can be
 [F]She done move  she done move  [C]she done move to Kansas [G7]City
 [F]Honey baby where they [G7]don't want [C]you
 {end_of_verse}
+
+
+

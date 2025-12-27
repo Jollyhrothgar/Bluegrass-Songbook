@@ -1,6 +1,9 @@
 {meta: title Beautiful Bouquet}
 {meta: artist The Cox Family}
 {meta: composer Rose Maddox and Dusty Rose}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulbouquetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For pleasure I went walking out through the fields one [D7]day
@@ -36,3 +39,7 @@
 [C]I put them all together to make a sweet bouquet
 [D7]A rainbow full of colors that will never fade [G]away
 {end_of_verse}
+
+
+
+

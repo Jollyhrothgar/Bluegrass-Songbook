@@ -1,6 +1,9 @@
 {meta: title Wine Flowed Freely chord}
 {meta: artist Stonewall Jackson}
 {meta: composer Joe Babcock}
+{meta: x_source classic-country}
+{meta: x_source_file wineflowedfreelylyricschord.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All the [G7]days of my youth I [C]remember so well
@@ -36,3 +39,7 @@ I [G7]know it's not long till the [C]end
 But [F]I'd rather be dead than to [C]spend ninety years
 With the [G7]cold prison walls for a [C]friend
 {end_of_verse}
+
+
+
+

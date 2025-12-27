@@ -1,5 +1,8 @@
 {meta: title On The 8th Day}
 {meta: artist Daniel O'Donnell}
+{meta: x_source classic-country}
+{meta: x_source_file onthe8thdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It took the Lord just six [F]days to make the [G7]mountains
@@ -51,3 +54,10 @@ And the [Dm]world joined in [G7]perfect harmo[C]ny
 {start_of_verse: Verse 5}
 Yes the [Dm]world joined in [G7]perfect harmo[C]ny
 {end_of_verse}
+
+
+
+
+
+
+

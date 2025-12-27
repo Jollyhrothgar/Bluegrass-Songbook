@@ -1,6 +1,9 @@
 {meta: title Wedding Bells}
 {meta: artist Hank Williams}
 {meta: composer Claude Boone}
+{meta: x_source classic-country}
+{meta: x_source_file weddingbellslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have the invitation [D7]that you sent [G]me
@@ -43,3 +46,8 @@ And [C]while the organ plays I love you [G]truly
 I [C]knew someday that you would wed [G]another
 But [D7]wedding bells will never ring for [G]me
 {end_of_verse}
+
+
+
+
+

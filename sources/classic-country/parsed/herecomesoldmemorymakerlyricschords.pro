@@ -1,5 +1,8 @@
 {meta: title Here Comes Old Memory Maker}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file herecomesoldmemorymakerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here comes old memory maker [C7]back [F]again
@@ -25,3 +28,6 @@ Here comes old [G7]memory maker back [C]again
 {start_of_verse: Verse 4}
 Here comes old [G7]memory maker back [C]again
 {end_of_verse}
+
+
+

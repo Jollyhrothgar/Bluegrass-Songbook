@@ -1,5 +1,8 @@
 {meta: title Soft Rain}
 {meta: artist Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file softrainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Soft rain was falling when you told me [F]goodbye
@@ -28,3 +31,6 @@ But [G7]perfection is always destroyed by [C]men
 The rain whispered softly a true love just [F]died
 And the [G7]soft rain was teardrops for the angels all [C]cried
 {end_of_verse}
+
+
+

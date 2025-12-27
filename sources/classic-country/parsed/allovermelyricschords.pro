@@ -1,6 +1,9 @@
 {meta: title All Over Me}
 {meta: artist Charlie Rich}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file allovermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My lips  brush across  your [C7]skin in my mind
@@ -36,3 +39,7 @@ I've still [C]got you [G7]all over [C]me
 {start_of_verse: Verse 5}
 [F]I've still [C]got you [G7]all over [F]m-[C]e
 {end_of_verse}
+
+
+
+

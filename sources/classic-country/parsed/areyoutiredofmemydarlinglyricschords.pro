@@ -1,6 +1,9 @@
 {meta: title Are You Tired Of Me My Darling}
 {meta: artist Jim and Jesse}
 {meta: composer G.P. Cook, Ralph Roland, Nanci Griffith}
+{meta: x_source classic-country}
+{meta: x_source_file areyoutiredofmemydarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Are you tired of me my [C]darling
@@ -43,3 +46,8 @@ Do you think I've grown cold [C]hearted
 Are you tired of me my [C]darling
 [D7]Answer only with your [G]eyes
 {end_of_verse}
+
+
+
+
+

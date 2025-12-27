@@ -1,6 +1,9 @@
 {meta: title Wrong Way To Find Mr. Right}
 {meta: artist Gene Watson}
 {meta: composer Tim Mensey and Debbie Hupp}
+{meta: x_source classic-country}
+{meta: x_source_file wrongwaytofindmrrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She walks through the bar
@@ -48,3 +51,9 @@ That's the [F]wrong way to [G7]find Mr. [C]Right
 [G7]Girl don't shop for groceries when you're hungry
 That's the [F]wrong way to [G7]find Mr. [C]Right
 {end_of_verse}
+
+
+
+
+
+

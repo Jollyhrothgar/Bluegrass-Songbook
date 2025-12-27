@@ -1,6 +1,9 @@
 {meta: title The Best I Ever Had}
 {meta: artist Faron Young}
 {meta: composer Danny Hies and Ruby Hies}
+{meta: x_source classic-country}
+{meta: x_source_file thebestidverhadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I try to break the habit 
@@ -45,3 +48,8 @@ Was the best I ever [C]had
 Even so the worst you ever [G7]gave me 
 Was the best I ever [C]had
 {end_of_verse}
+
+
+
+
+

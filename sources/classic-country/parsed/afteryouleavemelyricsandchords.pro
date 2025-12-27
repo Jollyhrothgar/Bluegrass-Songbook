@@ -1,6 +1,9 @@
 {meta: title After You Leave Me}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Bonnie Owens}
+{meta: x_source classic-country}
+{meta: x_source_file afteryouleavemelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]After you leave me [C7]after you're [F]gone 
@@ -22,3 +25,5 @@ After you [C]leave me [G7]what will I [C]do
 My [C]life will be worthless [C7]here without [F]you 
 After you [C]leave me [G7]what will I [C]do
 {end_of_verse}
+
+

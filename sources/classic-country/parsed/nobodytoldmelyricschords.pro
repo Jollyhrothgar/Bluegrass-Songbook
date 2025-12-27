@@ -1,6 +1,9 @@
 {meta: title Nobody Told Me}
 {meta: artist David Ball}
 {meta: composer Gary Cotton and John Wiggins}
+{meta: x_source classic-country}
+{meta: x_source_file nobodytoldmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I bumped my knee [D7]hit a chair 
@@ -40,3 +43,8 @@ Maybe I [C]died when you lef[D7]t and nobody [G]told me
 {start_of_verse: Verse 5}
 Maybe I [Am]died when you lef[D7]t and nobody [G]told me
 {end_of_verse}
+
+
+
+
+

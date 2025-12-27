@@ -1,6 +1,9 @@
 {meta: title Barred From Every Honky Tonk In Town}
 {meta: artist Wilburn Brothers}
 {meta: composer Tompall Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file barredfromeveryhonkytonkintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I have a couple drinks I lose my head and try to fight
@@ -33,3 +36,7 @@ I've been [G]barred from every [D7]honky tonk in [G]town
 {start_of_verse: Verse 4}
 [C]I've been [G]barred from every [D7]honky tonk in [G]town
 {end_of_verse}
+
+
+
+

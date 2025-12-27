@@ -1,6 +1,9 @@
 {meta: title Two Perfect People}
 {meta: artist Freddie Hart}
 {meta: composer Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file twoperfectpeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We were born two people of [G7]perfection
@@ -31,3 +34,7 @@
 {start_of_verse: Verse 5}
 [G7]Yes two perfect people made perfection [C]fold
 {end_of_verse}
+
+
+
+

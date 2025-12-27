@@ -1,5 +1,8 @@
 {meta: title Hush Little Baby}
 {meta: artist Anne Murray}
+{meta: x_source classic-country}
+{meta: x_source_file hushlittlebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hush little baby don't say a [D7]word
@@ -44,3 +47,8 @@
 [C]May the moonlight [G]embrace you the [D7]starlight caress [G]you
 [C]May the sunlight [G]still sing you this [D7]lullaby of [G]love
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Don't Get No Better Than This}
 {meta: artist Lee Greenwood}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file lovedontgetnobetterthanthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can feel your body tremble and I [F]know you feel mine
@@ -48,3 +51,9 @@ Cause [F]love don't get no [G7]better than [C]this
 If we just hang in there girl we [Dm]just can't miss
 Cause [F]love don't get no [G7]better than [C]this
 {end_of_verse}
+
+
+
+
+
+

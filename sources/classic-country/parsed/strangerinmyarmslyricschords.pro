@@ -1,6 +1,9 @@
 {meta: title Stranger In My Arms}
 {meta: artist Merle Haggard}
 {meta: composer Fuzzy Owen and Wally Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file strangerinmyarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't thrill you like I used to do there's something on your [C]mind
@@ -22,3 +25,5 @@ The [D7]flame is cold that used to burn so [G]warm
 There's a strangeness in your ways I'd never known [C]before
 [D7]And you feel like a stranger in my [G]arms
 {end_of_verse}
+
+

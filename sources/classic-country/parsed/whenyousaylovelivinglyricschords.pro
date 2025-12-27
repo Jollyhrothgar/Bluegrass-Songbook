@@ -1,6 +1,9 @@
 {meta: title When You Say Love}
 {meta: artist Bob Luman}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file whenyousaylovelivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When [D7]you say [C]love you're telling [D7]everyone your moment's come
@@ -47,3 +50,9 @@ You'll [C]find you've said it [D7]all when you say [G]love
 {start_of_verse: Verse 5}
 You'll [C]find you've said it [D7]all when you say [G]love
 {end_of_verse}
+
+
+
+
+
+

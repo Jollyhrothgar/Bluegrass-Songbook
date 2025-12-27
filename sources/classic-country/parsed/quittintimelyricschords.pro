@@ -1,6 +1,9 @@
 {meta: title Quittin' Time}
 {meta: artist Keith Whitley}
 {meta: composer Ron Hellard}
+{meta: x_source classic-country}
+{meta: x_source_file quittintimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Quitin' time quittin' time
@@ -36,3 +39,7 @@ Time to disassemble this assembly line
 Lord I [C]love punchin' out like I hate punchin' [G]in
 Hot [D7]damma lama lama it's quittin' time [G]again 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Waiting Just For You}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Henry Glover, Carolyn Leigh, Lucky Millinder}
+{meta: x_source classic-country}
+{meta: x_source_file imwaitingjustforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You have to leave me all by myself [G7]dear
@@ -37,3 +40,8 @@
 [C]So we can do what we used to [G]do
 [C]But I'll be [D7]telling every-body  I'm waiting just for [G]you
 {end_of_verse}
+
+
+
+
+

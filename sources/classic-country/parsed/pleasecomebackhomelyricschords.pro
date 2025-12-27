@@ -1,6 +1,9 @@
 {meta: title Please Come Back Home}
 {meta: artist Carl Smith}
 {meta: composer Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file pleasecomebackhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm lonesome deep inside from a love I cannot hide
@@ -29,3 +32,6 @@ My [G7]heart would be as light as ocean [C]foam
 I try my [F]best to show you're all I [C]love you know
 I'll hold you [G7]tight and so please come back [C]home
 {end_of_verse}
+
+
+

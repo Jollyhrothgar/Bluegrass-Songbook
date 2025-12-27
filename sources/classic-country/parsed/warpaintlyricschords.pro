@@ -1,6 +1,9 @@
 {meta: title War Paint}
 {meta: artist Lorrie Morgan}
 {meta: composer Tom Shapiro and Lorrie Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file warpaintlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]You come in while I'm sittin' at the [Dm]mirror
@@ -49,3 +52,8 @@ And the [F]black will be the [C]nights ahead and my [Dm]shadow in your [G]bed
 I'm [E7]putting on my [Am]war [E7]paint I'm [F]on the path [G]again
 I'm [E7]putting on my [Am]war [E7]paint I'm [F]on the path [G]again
 {end_of_verse}
+
+
+
+
+

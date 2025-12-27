@@ -1,6 +1,9 @@
 {meta: title Conscience Keep An Eye On Me}
 {meta: artist Norma Jean}
 {meta: composer Jack Rhodes and Glen Goza}
+{meta: x_source classic-country}
+{meta: x_source_file consciencekeepaneyeonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight’s his night to work late and I just can't stay [F]home
@@ -29,3 +32,6 @@
 [C]But when temptations beckon I can't tell wrong from [F]right
 [G7]Oh conscience keep an eye on me [C]tonight
 {end_of_verse}
+
+
+

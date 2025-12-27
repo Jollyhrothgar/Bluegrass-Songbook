@@ -1,5 +1,8 @@
 {meta: title Last Word In Jesus Is Us}
 {meta: artist Cristy Lane}
+{meta: x_source classic-country}
+{meta: x_source_file lastwordinJesusisuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When all your dreams and [F]hopes just seem to [C]crumble [G7]to the [C]ground 
@@ -32,3 +35,7 @@ The last word in [F]Jesus thank [G7]God is [C]us
 {start_of_verse: Verse 4}
 The last word in [F]Jesus thank [G7]God is [C]us
 {end_of_verse}
+
+
+
+

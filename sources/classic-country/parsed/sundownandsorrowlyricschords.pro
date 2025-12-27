@@ -1,6 +1,9 @@
 {meta: title Sundown and Sorrow}
 {meta: artist Hank Williams}
 {meta: composer J. L. Frank and Pee Wee King}
+{meta: x_source classic-country}
+{meta: x_source_file sundownandsorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sundown and sorrow have found [F]me
@@ -22,3 +25,5 @@ Forever so long I've been [F]yearning
 [C]Deep in my heart there's a [F]burning
 [C]I just can't [G7]help loving [C]you
 {end_of_verse}
+
+

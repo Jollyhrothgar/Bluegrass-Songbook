@@ -1,6 +1,9 @@
 {meta: title Works Of The Lord}
 {meta: artist Carl Smith}
 {meta: composer Danny Dill}
+{meta: x_source classic-country}
+{meta: x_source_file worksofthelordlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A friend of mine came up to me and he [F]said if I could see
@@ -36,3 +39,7 @@ Then I know I’ve seen the works of the [G7]Lord
 [F]Every time a robin flies [C]or a newborn baby cries
 Then I know I’ve seen the [G7]works of the [C]Lord
 {end_of_verse}
+
+
+
+

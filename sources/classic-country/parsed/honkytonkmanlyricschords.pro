@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Man}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Horton and Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm a honkytonk man and I can't seem to stop
@@ -43,3 +46,8 @@ I love to [C]give the girls a whirl to the music of an old [G]jukebox
 But when my money's all gone I'm on the [D7]telephone
 Hollerin [C]Hey-hey mama can your daddy come [G]home 
 {end_of_verse}
+
+
+
+
+

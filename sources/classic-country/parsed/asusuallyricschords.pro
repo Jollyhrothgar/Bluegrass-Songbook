@@ -1,6 +1,9 @@
 {meta: title As Usual}
 {meta: artist Brenda Lee}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file asusuallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun comes up and brings the dawn  [G7]as usual
@@ -22,3 +25,5 @@ I told myself that you're still here  as [C]usual
 And as I stood there [C7]telling lies the [F]tears began to fill my eyes
 Cause I [G7]know I'm only fooling myself  as us[C]ual
 {end_of_verse}
+
+

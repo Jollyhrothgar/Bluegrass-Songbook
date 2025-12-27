@@ -1,6 +1,9 @@
 {meta: title Does He Love You Like I Do}
 {meta: artist Wynn Stewart}
 {meta: composer Charlie Williams and Scott Turner}
+{meta: x_source classic-country}
+{meta: x_source_file doesheloveyoulikeidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every day he sends you flowers 
@@ -26,3 +29,6 @@ All those things are nice I know
 [F]But later when the lights are low
 [G7]Tell me does he love you like I [C]do  
 {end_of_verse}
+
+
+

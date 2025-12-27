@@ -1,5 +1,8 @@
 {meta: title My Sweet Lady}
 {meta: artist John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file mysweetladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lady are you [F]crying do the [C]tears belong to [F]me [Fm]
@@ -35,3 +38,7 @@ Did you [C]think our time together was all [Dm]gone[G7]
 [C]Lady my sweet [F]lady I'm as [C]close as I can [F]be[Fm]
 And [C]I swear to you our [Dm]time has [G7]just be[C]gun
 {end_of_verse}
+
+
+
+

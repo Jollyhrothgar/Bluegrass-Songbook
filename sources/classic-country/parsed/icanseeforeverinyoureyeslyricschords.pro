@@ -1,6 +1,9 @@
 {meta: title I Can See Forever In Your Eyes}
 {meta: artist Reba McEntire}
 {meta: composer Bob DiPiero}
+{meta: x_source classic-country}
+{meta: x_source_file icanseeforeverinyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Touch me and I [Em]feel your fire
@@ -50,3 +53,9 @@ I can see a [F]love that [C]never [G7]dies
 When you lay me [F]down I [C]rea[G7]lize
 [C]I can [Am]see for[Dm]ever [G7]in your [C]eyes
 {end_of_verse}
+
+
+
+
+
+

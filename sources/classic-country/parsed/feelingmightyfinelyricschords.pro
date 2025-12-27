@@ -1,6 +1,9 @@
 {meta: title Feeling Mighty Fine}
 {meta: artist Statler Brother}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file feelingmightyfinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up this morning feeling fine 
@@ -64,3 +67,11 @@ Cause [G7]I'd been on my knees in the [C]night
 And [F]I'd pray till the Lord gave a [C]sign
 And [G7]now I'm feeling mighty [C]fine
 {end_of_verse}
+
+
+
+
+
+
+
+

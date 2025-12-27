@@ -1,6 +1,9 @@
 {meta: title It's Just Not That Easy}
 {meta: artist Mel Tillis}
 {meta: composer Buddy Cannon, Gene Dunlap, Billy Williams}
+{meta: x_source classic-country}
+{meta: x_source_file itsjustnotthateasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought about leaving and [F]calling long distance
@@ -33,3 +36,7 @@ But it’s just not that [C]easy to say
 {start_of_verse: Verse 4}
 [F]But it’s just not that [C]easy to [F]s--a[C]y
 {end_of_verse}
+
+
+
+

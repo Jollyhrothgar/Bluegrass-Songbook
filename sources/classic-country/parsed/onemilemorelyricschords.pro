@@ -1,5 +1,8 @@
 {meta: title One Mile More}
 {meta: artist Charley Pride}
+{meta: x_source classic-country}
+{meta: x_source_file onemilemorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Old beat up suitcase [C]on the platform a [D7]train ticket in my [G]hand
@@ -33,3 +36,7 @@ Then she'll [D7]find me in my [G]sleep
 {start_of_verse: Verse 4}
 She'll [D7]find me in my [G]sleep she'll [D7]find me in my [G]sleep
 {end_of_verse}
+
+
+
+

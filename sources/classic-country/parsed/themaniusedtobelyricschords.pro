@@ -1,6 +1,9 @@
 {meta: title The Man I Used To Be}
 {meta: artist Boxcar Willie}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file themaniusedtobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m no hero [F]I'm no [C]saint
@@ -42,3 +45,7 @@ She saw a knight in shinning armor
 But [F]Lord he wasn’t [C]me
 I [F]never [C]was the [G7]man I used to [C]be
 {end_of_verse}
+
+
+
+

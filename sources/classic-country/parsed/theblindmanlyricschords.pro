@@ -1,5 +1,8 @@
 {meta: title The Blind Man}
 {meta: artist The Spinney Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file theblindmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was walking sad and lonely 
@@ -40,3 +43,7 @@ Yes I [G7]know what it's like to be [C]blind
 {start_of_verse: Verse 5}
 Do you [G7]know what it's like to be [C]blind
 {end_of_verse}
+
+
+
+

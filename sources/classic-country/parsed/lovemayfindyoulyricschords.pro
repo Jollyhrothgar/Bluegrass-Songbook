@@ -1,6 +1,9 @@
 {meta: title Love May Find You}
 {meta: artist Crystal Gayle}
 {meta: composer Wendy Waldman and Eric Kaz}
+{meta: x_source classic-country}
+{meta: x_source_file lovemayfindyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]How can I trust this [D]love to the wind
@@ -49,3 +52,9 @@ And [C]what I'd [D]miss
 [G]If you need me [C]please believe me
 [Em]I'll still want you [Am]here by my sid[D]e
 {end_of_verse}
+
+
+
+
+
+

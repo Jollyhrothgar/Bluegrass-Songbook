@@ -1,6 +1,9 @@
 {meta: title A Soldier's King}
 {meta: artist Kenny Rogers}
 {meta: composer John Barlow Jarvis and Kenny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file asoldierskinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No one seemed to notice the [Am]man beside the [C]road
@@ -54,3 +57,10 @@
 {start_of_verse: Verse 7}
 [C]Like the soldier who [G7]found his king [C]tonight
 {end_of_verse}
+
+
+
+
+
+
+

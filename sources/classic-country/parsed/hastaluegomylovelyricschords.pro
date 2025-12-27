@@ -1,6 +1,9 @@
 {meta: title Hasta Luego My Love}
 {meta: artist David Ball}
 {meta: composer Jennifer Kimball, Tommy James, Terry McBride}
+{meta: x_source classic-country}
+{meta: x_source_file hastaluegomylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know it's [C]getting [D7]late I hear the [C]mission [G]bells[C]  [D7]   [C]
@@ -45,3 +48,9 @@ La la la la la [C]la la la la [D7]Hasta Luego my [G]love
 La la la la la [C]la la la la [D7]Hasta Luego my [G]love 
 La la la la la [C]la la la la [D7]Hasta Luego my [G]love 
 {end_of_verse}
+
+
+
+
+
+

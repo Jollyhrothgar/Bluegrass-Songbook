@@ -1,6 +1,9 @@
 {meta: title It Comes And Goes}
 {meta: artist Eddy Arnold}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file itcomesandgoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody asks if I still love you
@@ -43,3 +46,8 @@ Comes every morning and it [C]goes all night
 I save a lot of pride [C7]and I haven't really [F]lied
 I [G7]just tell 'em that it comes and [C]goes
 {end_of_verse}
+
+
+
+
+

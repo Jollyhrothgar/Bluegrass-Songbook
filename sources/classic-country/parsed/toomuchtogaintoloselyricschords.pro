@@ -1,6 +1,9 @@
 {meta: title Too Much To Gain To Lose}
 {meta: artist Doyle Lawson}
 {meta: composer Reba Joyce (Dottie) Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchtogaintoloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Too many [D7]miles be[G]hind me 
@@ -33,3 +36,7 @@ There's [G]too much to [D7]gain to [G]lose
 {start_of_verse: Verse 4}
 And there's too much to [D7]gain to [G]lose
 {end_of_verse}
+
+
+
+

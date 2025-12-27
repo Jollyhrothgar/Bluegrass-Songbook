@@ -1,6 +1,9 @@
 {meta: title Christmas At The Jersey Lilly Lounge}
 {meta: artist Moe Bandy}
 {meta: composer Charlie Williams and Theresa Beaty}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasatthejerseylillyloungelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not too many people sittin’ at the bar [D7]today
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G7]It’s Christmas at the Jersey Lilly [C]Lounge
 {end_of_verse}
+
+
+
+

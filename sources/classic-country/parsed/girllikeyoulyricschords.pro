@@ -1,6 +1,9 @@
 {meta: title Girl Like You}
 {meta: artist Tompall and the Glaser Brothers}
 {meta: composer Tompall Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file girllikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a jukebox [G7]in my [C]ear playing so loud I can [F]hardly [C]hear
@@ -22,3 +25,5 @@ Says I probably spend my whole life feeling [G7]blue
 I guess [C]that I should [G7]go on [C]home but I can't stand [F]to be [C]alone
 Cause I'll always [G7]dream about a girl like [C]you
 {end_of_verse}
+
+

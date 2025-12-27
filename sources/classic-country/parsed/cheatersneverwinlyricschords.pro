@@ -1,6 +1,9 @@
 {meta: title Cheaters Never Win}
 {meta: artist Moe Bandy}
 {meta: composer Arthur Leo Owens and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file cheatersneverwinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know how long you left me here [F]alone
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]Oh but [C]we sure [G7]have more [C]fun
 {end_of_verse}
+
+
+
+

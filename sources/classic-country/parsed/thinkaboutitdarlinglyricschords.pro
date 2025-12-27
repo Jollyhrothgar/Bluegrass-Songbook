@@ -1,6 +1,9 @@
 {meta: title Think About It Darling}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Bill Rice and Jerry Foster}
+{meta: x_source classic-country}
+{meta: x_source_file thinkaboutitdarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Search the corners of your precious heart 
@@ -28,3 +31,6 @@ Think about [G7]it darling give yourself a little [C]time
 [C]And there's nothing good about a goodbye think [G7]about it [C]darling
 There's nothing good about goodbye think [G7]about it [C]darling
 {end_of_verse}
+
+
+

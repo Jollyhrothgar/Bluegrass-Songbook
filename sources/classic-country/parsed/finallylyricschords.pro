@@ -1,6 +1,9 @@
 {meta: title Finally}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file finallylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Finally yes darling [C]finally
@@ -32,3 +35,7 @@ You've [D7]filled my every [G7]dream
 Oh [F]finally yes darling [C]finally
 My lips keep [G7]whispering [F]fin-[G7]al-[C]ly
 {end_of_verse}
+
+
+
+

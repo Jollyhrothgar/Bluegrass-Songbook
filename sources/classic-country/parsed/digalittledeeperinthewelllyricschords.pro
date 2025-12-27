@@ -1,6 +1,9 @@
 {meta: title Dig A Little Deeper In The Well}
 {meta: artist The Oak Ridge Boys}
 {meta: composer R. Bowling and Martha Jo Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file digalittledeeperinthewelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dig dig dig a little deeper in the well boys 
@@ -64,3 +67,11 @@ You gotta [D7]dig a little deeper in the [G]well
 If you want a good cool drink of water 
 You gotta [D7]dig a little deeper in the [G]well
 {end_of_verse}
+
+
+
+
+
+
+
+

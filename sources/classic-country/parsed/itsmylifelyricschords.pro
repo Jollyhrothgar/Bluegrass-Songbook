@@ -1,6 +1,9 @@
 {meta: title It's My Life}
 {meta: artist Bill Anderson}
 {meta: composer recorded by Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file itsmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You don't understand the pattern of my life
@@ -50,3 +53,11 @@ It's my life [F]throw it away if I want [C]to
 {start_of_verse: Verse 2}
 Because my life has got no pattern
 {end_of_verse}
+
+
+
+
+
+
+
+

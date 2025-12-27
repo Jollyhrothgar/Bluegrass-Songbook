@@ -1,6 +1,9 @@
 {meta: title Chattahoochee}
 {meta: artist Alan Jackson}
 {meta: composer Jim McBride and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file chattahoocheelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey way down yonder on the Chattahoochee
@@ -75,3 +78,13 @@ A lot about livin' and a [G7]little bout [C]love
 {start_of_verse: Verse 5}
 A lot about livin' and a [G7]little bout [C]love
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

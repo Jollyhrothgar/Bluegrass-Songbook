@@ -1,6 +1,9 @@
 {meta: title Two Hearts Beat Better Than One}
 {meta: artist Eddy Arnold}
 {meta: composer Mary Ann Kennedy, June Page, Dan Hoffman}
+{meta: x_source classic-country}
+{meta: x_source_file twoheartsbeatbetterthanonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s so nice to discover you have found a perfect lover
@@ -46,3 +49,11 @@ And that two hearts beat [G7]better than [C]one
 [C]It’s so nice to discover you have found a perfect lover
 And that two hearts beat [G7]better than [C]one
 {end_of_verse}
+
+
+
+
+
+
+
+

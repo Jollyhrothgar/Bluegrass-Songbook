@@ -1,6 +1,9 @@
 {meta: title A Very Good Year For Girls}
 {meta: artist Johnny Tillotson}
 {meta: composer Fred Tobias and Clint Ballard}
+{meta: x_source classic-country}
+{meta: x_source_file averygoodyearforgirlslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](It was a very very very good for girls
@@ -62,3 +65,12 @@ It's gonna [D7]be the [G7]best year [C]yet
 {start_of_verse: Verse 8}
 It's gonna [D7]be the [G7]best year [C]yet
 {end_of_verse}
+
+
+
+
+
+
+
+
+

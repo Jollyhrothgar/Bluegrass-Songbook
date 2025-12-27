@@ -1,6 +1,9 @@
 {meta: title I Prayed for an Angel}
 {meta: artist Jack Scott}
 {meta: composer Laura Veronica}
+{meta: x_source classic-country}
+{meta: x_source_file iprayedforanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 I Prayed for an Angel 
@@ -26,3 +29,6 @@ Cause only a [C]devil  [G7]  could do what you [C]do
 Cause only a [C]devil   [G7] could do what you [C]do
 [F]I prayed for an [C]angel  [G7]  He sent me [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Down On The Farm}
 {meta: artist Charley Pride}
 {meta: composer Eddie Setser, John Greenebaum, Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file downonthefarmlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Looking back a hundred years
@@ -55,3 +58,10 @@ We can [Em]keep a man [D7]down on the [G]farm
 {start_of_verse: Verse 6}
 America America [C]who do we blame it [G]on
 {end_of_verse}
+
+
+
+
+
+
+

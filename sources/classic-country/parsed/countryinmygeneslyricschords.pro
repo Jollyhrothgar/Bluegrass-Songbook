@@ -1,6 +1,9 @@
 {meta: title Country In My Genes Lyrics Chords}
 {meta: artist Loretta Lynn}
 {meta: composer Larry Cordle, Betty Key, Larry Shell}
+{meta: x_source classic-country}
+{meta: x_source_file countryinmygeneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well they say that I'm too country the way I look and sound
@@ -49,3 +52,9 @@ Well I can't help the way I talk I wouldn't change it if I could
 {start_of_verse: Verse 5}
 [C]Lord I've got [D7]country in my [G]genes
 {end_of_verse}
+
+
+
+
+
+

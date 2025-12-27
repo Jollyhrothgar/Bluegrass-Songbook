@@ -1,6 +1,9 @@
 {meta: title Singing Tree}
 {meta: artist Elvis Presley}
 {meta: composer Arthur Leo Owens and A.C. Solberg}
+{meta: x_source classic-country}
+{meta: x_source_file singingtreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're the one who beckoned the [G7]wind
@@ -29,3 +32,6 @@ Call your friend [G7](call your friend) the roving wind (roving [C]wind)
 Maybe [G7]he can find my [C]love 
 And bring her [G7]back singing [C]tree
 {end_of_verse}
+
+
+

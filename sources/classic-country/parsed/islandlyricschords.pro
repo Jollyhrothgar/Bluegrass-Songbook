@@ -1,6 +1,9 @@
 {meta: title Island}
 {meta: artist Eddy Raven}
 {meta: composer Eddy Raven and Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file islandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There was a time there was a place I [F]loved
@@ -38,3 +41,8 @@ I might [C]sail forever and [G7]never find that island [C]again[F]
 {start_of_verse: Verse 5}
 I could [C]sail forever and [G7]never find that island [C]again
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Take Care Of The Little Things}
 {meta: artist Charley Pride}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file takecareofthelittlethingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Stranger livin' in my house I'm writing this letter to [G7]you
@@ -30,3 +33,6 @@ Take [G]care of the [C]little things I [B7]neglected to [Em]do
 And [C]love my sweet [G]baby I [D7]neglected her [G]too
 And [C]love my sweet [G]baby I [D7]neglected her [G]too
 {end_of_verse}
+
+
+

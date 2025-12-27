@@ -1,6 +1,9 @@
 {meta: title I'll Go To My Grave Loving You}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file illgotomygravelovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll go (I'll go) to my grave (to my [C]grave)
@@ -36,3 +39,7 @@ Loving [C]you (loving you loving [G]you)
 {start_of_verse: Verse 5}
 repeat last verse
 {end_of_verse}
+
+
+
+

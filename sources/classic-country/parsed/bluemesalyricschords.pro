@@ -1,6 +1,9 @@
 {meta: title Blue Mesa}
 {meta: artist Randy Travis}
 {meta: composer Roger Brown and Luke Reed}
+{meta: x_source classic-country}
+{meta: x_source_file bluemesalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bl[B7]ue [C]Mesa land of the Sioux and [G]Crow
@@ -50,3 +53,11 @@ You will always [D7]be home sweet home to me Blue [G]Mesa
 {start_of_verse: Verse 7}
 You will always [D7]be home sweet home to me Blue [G]Mesa
 {end_of_verse}
+
+
+
+
+
+
+
+

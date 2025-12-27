@@ -1,6 +1,9 @@
 {meta: title Ain't Necessarily So}
 {meta: artist Willie Nelson}
 {meta: composer Beth N. Chapman}
+{meta: x_source classic-country}
+{meta: x_source_file aintnecessarilysolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can break your eggs to count your [F]chickens
@@ -51,3 +54,9 @@ Now depending on the soil and the [F]season
 But [C]you can't have a guarantee [F]cause everything that ought to be
 [C]Ain't ne[G7]cessarily [C]so
 {end_of_verse}
+
+
+
+
+
+

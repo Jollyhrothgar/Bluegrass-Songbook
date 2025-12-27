@@ -1,6 +1,9 @@
 {meta: title Real Good Place To Start}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Gary Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file realgoodplacetostartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Still reeling from a relationship that [F]left me torn in two
@@ -37,3 +40,7 @@ You look like a [G7]real good place to [C]start
 If I'm ever gonna [Em]mend this broken [F]heart
 You look like a [G7]real good place to [C]start
 {end_of_verse}
+
+
+
+

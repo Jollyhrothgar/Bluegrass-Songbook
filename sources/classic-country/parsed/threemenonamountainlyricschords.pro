@@ -1,6 +1,9 @@
 {meta: title Three Men On A Mountain}
 {meta: artist Willow Branch}
 {meta: composer Thomas Harley Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file threemenonamountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Three men on a mountain up on Calvary 
@@ -53,3 +56,10 @@ He [D7]died for you and [G]me
 But the [C]Man in the middle was [G]Jesus
 He [D7]died for you and [G]me
 {end_of_verse}
+
+
+
+
+
+
+

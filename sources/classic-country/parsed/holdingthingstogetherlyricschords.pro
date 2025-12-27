@@ -1,6 +1,9 @@
 {meta: title Holding Things Together}
 {meta: artist Merle Haggard}
 {meta: music Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file holdingthingstogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Holding [D7]Things [G]Together
@@ -36,3 +39,7 @@
 [G]When it comes to raising children
 [D7]It's a job  meant for two
 {end_of_verse}
+
+
+
+

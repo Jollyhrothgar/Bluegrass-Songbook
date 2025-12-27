@@ -1,5 +1,8 @@
 {meta: title In The Back Of Your Mind}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file inthebackofyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the back of your mind [F]is there still a familiar [G7]song
@@ -26,3 +29,6 @@ That someone's in [C]love with you [G7]I  [F]think you'll [E7]find
 That someone's in [C]love with you [G7]I  [F]think you'll [E7]find
 [A7]It's in the [D7]back of [G7]my mind [C]too
 {end_of_verse}
+
+
+

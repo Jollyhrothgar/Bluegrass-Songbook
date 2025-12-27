@@ -1,6 +1,9 @@
 {meta: title I Cried All The Way To The Bank}
 {meta: artist Norma Jean}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file icriedallthewaytothebanklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our divorce has been granted there's no [G7]more you and me
@@ -29,3 +32,6 @@ It won't warm me when the nights are dark and [G7]cold
 I've got [C]money to burn and for [C7]that there's you to [F]thank
 But I cried all the [G7]way to the [C]bank
 {end_of_verse}
+
+
+

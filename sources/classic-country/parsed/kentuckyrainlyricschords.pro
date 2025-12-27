@@ -1,6 +1,9 @@
 {meta: title Kentucky Rain}
 {meta: artist Elvis Presley}
 {meta: composer Eddie Rabbit and Dick Heard}
+{meta: x_source classic-country}
+{meta: x_source_file kentuckyrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seven lonely [G7]days and a [C]dozen towns a[F]go
@@ -43,3 +46,8 @@ And he [D7]left me with a prayer that I'd find [G7]you
 [F]With the [C]rain in my [Em]shoes [Am]searching for [F]you
 [G7]In the cold Kentucky [C]rain [F]in the [G7]cold Kentucky [C]rain
 {end_of_verse}
+
+
+
+
+

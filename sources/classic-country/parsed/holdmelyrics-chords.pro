@@ -1,6 +1,9 @@
 {meta: title Hold Me}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file holdmelyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've gotta take me in your arms honey and [D7]hold me
@@ -40,3 +43,8 @@ You've gotta take me in your arms honey and [D7]hold me
 {start_of_verse: Verse 6}
 [G7]Just love my body not my [C]mind
 {end_of_verse}
+
+
+
+
+

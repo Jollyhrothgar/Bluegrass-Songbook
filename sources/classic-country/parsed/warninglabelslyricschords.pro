@@ -1,6 +1,9 @@
 {meta: title Warning Labels}
 {meta: artist Doug Stone}
 {meta: composer Kim Williams and Oscar Turman}
+{meta: x_source classic-country}
+{meta: x_source_file warninglabelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I begged her to stay and [F]give it one more [C]try
@@ -34,3 +37,7 @@ They ought-a [C]put warning labels on those [G7]sad country [C]songs
 There’s nothing [F]harder on my heart than ol’ [C]Haggard and [Am]Jones
 They ought-a [C]put warning labels on those [G7]sad country [F]son[C]gs
 {end_of_verse}
+
+
+
+

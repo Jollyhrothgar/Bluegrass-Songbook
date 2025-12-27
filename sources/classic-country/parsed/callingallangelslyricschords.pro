@@ -1,6 +1,9 @@
 {meta: title Calling All Angels}
 {meta: artist Alabama}
 {meta: composer Jeff Jones}
+{meta: x_source classic-country}
+{meta: x_source_file callingallangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Calling [G]calling all [C]angels    oh I'm [G]calling calling all [C]angels
@@ -47,3 +50,9 @@ Hear me [G]calling calling all [C]angels
 Oh I'm [G]calling calling all [C]angels[D7]
 Hear me [G]calling calling all [C]angels
 {end_of_verse}
+
+
+
+
+
+

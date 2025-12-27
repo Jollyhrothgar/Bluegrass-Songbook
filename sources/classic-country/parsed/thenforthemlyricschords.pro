@@ -1,6 +1,9 @@
 {meta: title Then For Them}
 {meta: artist Ricky Van Shelton}
 {meta: composer Larry Boone and Will Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file thenforthemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Got a ticket in my hand and one [C]foot out the door
@@ -35,3 +38,7 @@ Who carved their names in a [D7]crooked heart on a [Em]love tree [D7]way back [A
 If not for [C]you if not for [D7]me then for [G]them
 If not for [C]you if not for [D7]me then for [G]them
 {end_of_verse}
+
+
+
+

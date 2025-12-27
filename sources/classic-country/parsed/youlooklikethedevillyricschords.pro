@@ -1,6 +1,9 @@
 {meta: title You Look Like The Devil}
 {meta: artist Willie Nelson}
 {meta: composer Leon Russell}
+{meta: x_source classic-country}
+{meta: x_source_file youlooklikethedevillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You look like the devil in the morning
@@ -33,3 +36,7 @@ You look like the devil when you're cryin'
 {start_of_verse: Verse 5}
 [G7]I'm so glad I met you [C]yesterday
 {end_of_verse}
+
+
+
+

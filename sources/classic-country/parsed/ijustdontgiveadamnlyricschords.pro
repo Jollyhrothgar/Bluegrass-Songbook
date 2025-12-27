@@ -1,6 +1,9 @@
 {meta: title I Just Don't Give A Damn}
 {meta: artist George Jones}
 {meta: composer George Jones and Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file ijustdontgiveadamnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I know whose got to change the way I'm [F]living
@@ -27,3 +30,6 @@ But don't call tonight cause [G7]I still don't give a [C]damn
 Oh tomorrow morning I might wake up [F]lonely
 Aw but [C]tonight  [G7]I just don't give [F]dam[C]n
 {end_of_verse}
+
+
+

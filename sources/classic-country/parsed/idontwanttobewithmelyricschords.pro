@@ -1,6 +1,9 @@
 {meta: title I Don't Want To Be With Me}
 {meta: artist Conway Twitty}
 {meta: composer Mickey Jaco}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttobewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]People say when I walk [G7]by 
@@ -23,3 +26,5 @@ I'd give them all  [C7]up for [F]you
 I don't wanna be with [C]me if you're [G7]not with me [C]too
 [F]Well I don't wanna be with [C]me if you're [G7]not with me [C]too
 {end_of_verse}
+
+

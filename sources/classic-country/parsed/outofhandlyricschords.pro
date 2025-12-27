@@ -1,6 +1,9 @@
 {meta: title Out Of Hand}
 {meta: artist Gary Stewart}
 {meta: composer Jeff Barry and Tom Jans}
+{meta: x_source classic-country}
+{meta: x_source_file outofhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never intended to [C]even know your [Am]name 
@@ -31,3 +34,6 @@ I [C]need more to keep me going than [A7]this gold wedding [D7]band
 [G]You're my kind of woman [C]I'm your kind of man 
 [D7]Maybe that's the reason it gets so out of [G]hand 
 {end_of_verse}
+
+
+

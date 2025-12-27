@@ -1,6 +1,9 @@
 {meta: title Ain't Nothin' Shakin' (But The Leaves)}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file aintnothinshakinbuttheleaveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well ever since the day that you left me 
@@ -49,3 +52,9 @@ There ain't nothin' shakin' but the [G]leaves
 [D7]There ain't nothin' shakin' but the [G]leaves
 [D7]There ain't nothin' shakin' but the [G]leaves
 {end_of_verse}
+
+
+
+
+
+

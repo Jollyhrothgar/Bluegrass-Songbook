@@ -1,6 +1,9 @@
 {meta: title I Can See It In Your Eyes}
 {meta: artist Randy Travis}
 {meta: composer Pastor Hagee and Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file icanseeitinyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The first time I saw [Am]you I felt [D7]weak [G]inside
@@ -49,3 +52,9 @@
 [C]I've heard you say a thousand times I'll [B7]love you dear until I [E7]die
 [C]But you don't have [D7]to say a word I can see it in your [G]eyes
 {end_of_verse}
+
+
+
+
+
+

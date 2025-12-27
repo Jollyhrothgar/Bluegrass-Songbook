@@ -1,6 +1,9 @@
 {meta: title Kids Get Lonely}
 {meta: artist Merle Haggard}
 {meta: composer Lou Bradley and Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file kidsgetlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Kids get lonesome too
@@ -37,3 +40,6 @@ And I love you [C]only
 And I'm afraid of what you'll do
 When you'll get [C]lonely  
 {end_of_verse}
+
+
+

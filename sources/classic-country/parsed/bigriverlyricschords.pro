@@ -1,5 +1,8 @@
 {meta: title Big River}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file bigriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I taught the weeping willow how to cry
@@ -35,3 +38,7 @@ Now won't you batter down by Baton Rouge River Queen roll it on
 [G]And the tears that I cried for that woman are gonna flood you Big [C]River
 [G]Then I'm gonna sit right [D7]here until I [G]die
 {end_of_verse}
+
+
+
+

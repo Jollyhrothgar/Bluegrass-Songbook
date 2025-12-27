@@ -1,6 +1,9 @@
 {meta: title When it's Spring Time in Alaska}
 {meta: artist Johnny Horton}
 {meta: composer Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file whenitsspringtimeinalaskalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I mushed from Point Barrow through a [D7]blizzard of [G]snow
@@ -66,3 +69,17 @@ I didn't know Lil was big Ed's wife to be
 He took out his knife and he gave it a throw
 When It's Springtime In [D7]Alas-ka [G]I'll be six [C]feet [G]below
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

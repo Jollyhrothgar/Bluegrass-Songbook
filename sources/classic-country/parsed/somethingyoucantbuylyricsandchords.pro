@@ -1,5 +1,8 @@
 {meta: title Something You Can't Buy}
 {meta: artist Ricky Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file somethingyoucantbuylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can buy you a house and a big shiny car
@@ -46,3 +49,8 @@ And love is somethin' you can't [C]buy
 You [G7]get back what you've given
 And love is somethin' you can't [C]buy
 {end_of_verse}
+
+
+
+
+

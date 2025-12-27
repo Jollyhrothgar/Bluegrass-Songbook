@@ -1,6 +1,9 @@
 {meta: title Dooley}
 {meta: artist Porter Wagoner}
 {meta: composer Mitch Jayne and Rodney Dillard}
+{meta: x_source classic-country}
+{meta: x_source_file dooleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dooley was a [C]good old man [G]he lived below the [D7]mill
@@ -42,3 +45,9 @@ Dooley gimmee a [C]swaller and I'll [D7]pay you back [G]someday
 Dooley slipping up the holler [C]Dooley trying to make a [G]dollar
 Dooley gimmee a [C]swaller and I'll [D7]pay you back [G]someday
 {end_of_verse}
+
+
+
+
+
+

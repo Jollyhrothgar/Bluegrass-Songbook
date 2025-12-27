@@ -1,5 +1,8 @@
 {meta: title It Was Worth It All}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file itwasworthitalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I won’t say I’m glad we’re [G7]through
@@ -28,3 +31,6 @@
 [C]If I’m asked why I’m [F]blue
 [G7]It was worth it all for [C]you
 {end_of_verse}
+
+
+

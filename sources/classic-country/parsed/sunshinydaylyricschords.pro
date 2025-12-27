@@ -1,6 +1,9 @@
 {meta: title Sunshiny Day}
 {meta: artist Charlie Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file sunshinydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I wake up [C]in the mornin' [G]when I look [C]outside it's stormin'
@@ -45,3 +48,9 @@ And I'll I have a [D7]sunshiny day in my [C]heart from now [G]on
 {start_of_verse: Verse 6}
 Ever day is a gonna be a [D7]sunshiny [G]day
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Price To Pay}
 {meta: artist Randy Travis}
 {meta: composer Craig Wiseman and Trey Bruce}
+{meta: x_source classic-country}
+{meta: x_source_file pricetopaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder how we got like [G7]this your heart [Am]wasn't mine to take
@@ -34,3 +37,7 @@ When one [C]night [F]was such a [G7]small price to [C]pay
 {start_of_verse: Verse 5}
 Back when [Dm]one [Em]night [F]was such a [G7]small price to [C]pay
 {end_of_verse}
+
+
+
+

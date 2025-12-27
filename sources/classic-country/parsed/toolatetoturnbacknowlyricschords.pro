@@ -1,6 +1,9 @@
 {meta: title Too Late To Turn Back Now}
 {meta: artist Don Williams}
 {meta: composer Don Williams and Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file toolatetoturnbacknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Uh-mmh-uh-mmh [C]uh-mmh-uh-[G]mmh
@@ -43,3 +46,8 @@ Uh-mmh it's [D7]too late [G]now
 Too late to [C]turn back [G]now
 Uh-mmh you [D7]got me [G]now
 {end_of_verse}
+
+
+
+
+

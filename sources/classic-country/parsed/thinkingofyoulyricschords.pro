@@ -1,5 +1,8 @@
 {meta: title Thinking Of You}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file thinkingofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many new sweethearts have [F]walked in and [C]out 
@@ -28,3 +31,6 @@ And [F]that I would [C]never take time to be [G7]blue
 I've [F]had lots of new love but [C]I still long for true love
 And that's when I find myself [G7]thinking of [C]you
 {end_of_verse}
+
+
+

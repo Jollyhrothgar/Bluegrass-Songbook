@@ -1,5 +1,8 @@
 {meta: title Happy Times Are Here Again}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file happytimesarehereagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Happy times are [G7]here again
@@ -53,3 +56,10 @@ Baby's coming in on the [F]12-0-10
 {start_of_verse: Verse 6}
 [G7]Happy times are here [C]again
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Night After Night}
 {meta: artist Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file nightafternightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Night After Night
@@ -24,3 +27,6 @@ But then [G7]night after night and [F]love after love I [C]cry [F]   [C]
 {start_of_verse: Verse 4}
 [G7]Night after night and [F]love after love I [C]cry [F]  [C]
 {end_of_verse}
+
+
+

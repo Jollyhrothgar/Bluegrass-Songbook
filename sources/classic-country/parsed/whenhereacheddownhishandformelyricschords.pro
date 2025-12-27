@@ -1,6 +1,9 @@
 {meta: title When He Reached Down His Hand For Me}
 {meta: artist Johnny Cash}
 {meta: composer G.E. Wright[3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file whenhereacheddownhishandformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once my soul was astray from the [G7]heavenly [C]way 
@@ -29,3 +32,6 @@ When He reached way [D7]down for [G7]me
 I was [C]lost and undone without my God [F]or His [C]Son 
 When He reached down His [G7]hand for [C]me 
 {end_of_verse}
+
+
+

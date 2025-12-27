@@ -1,6 +1,9 @@
 {meta: title Clementine}
 {meta: artist Johnny Cash}
 {meta: composer Billy Mize and Buddy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file clementinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Oh my [G7]darling [C]Clementine)
@@ -45,3 +48,8 @@ They [G7]found Cody lying on his [C]face
 Cause [G7]Cody won't be riding back this [C]time
 (To his [G7]darling) [C]Clementine
 {end_of_verse}
+
+
+
+
+

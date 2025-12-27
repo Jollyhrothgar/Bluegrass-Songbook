@@ -1,6 +1,9 @@
 {meta: title Come From The Heart}
 {meta: artist Don Williams}
 {meta: composer Richard Leigh and Susanna Clark}
+{meta: x_source classic-country}
+{meta: x_source_file comefromtheheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My daddy told me when I was a young [F]man
@@ -36,3 +39,7 @@
 [C]You got to dance dance dance like nobody's [F]watching
 [C]It's gotta come from [Am]the heart if you [G7]want it to [C]work
 {end_of_verse}
+
+
+
+

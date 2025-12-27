@@ -1,6 +1,9 @@
 {meta: title You Touched My Life}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file youtouchedmylifelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere in the darkened corners of my mind
@@ -31,3 +34,7 @@ And I [C]find [F]peace of [C]mind because you [G7]touched my life one [C]time
 {start_of_verse: Verse 4}
 Yes I find [F]peace of [C]mind because you [G7]touched my life one [F]t-im[C]e
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sail Away}
 {meta: artist Charlie Pride}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file sailawaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come lay down beside me love and [F]close your troubled [C]eyes
@@ -29,3 +32,6 @@ Let me be the shelter from this cold [F]and angry [C]world
 [F]All the rain that came [C]today
 [F]Sail away [G7]yes we sail [C]away
 {end_of_verse}
+
+
+

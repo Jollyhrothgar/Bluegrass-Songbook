@@ -1,6 +1,9 @@
 {meta: title Just In Time}
 {meta: artist Statler Brothers}
 {meta: composer Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file justintimelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was low and needed help God took my [G7]burden
@@ -33,3 +36,7 @@ My Lord reached [C]down to hand me [G7]mercy just in [C]time [C]  [F]  [C]
 {start_of_verse: Verse 4}
 [F]My Lord reached [C]down to hand me [G7]mercy just in [C]time
 {end_of_verse}
+
+
+
+

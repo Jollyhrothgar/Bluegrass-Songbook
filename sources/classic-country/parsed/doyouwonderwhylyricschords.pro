@@ -1,6 +1,9 @@
 {meta: title Do You Wonder Why}
 {meta: artist Larry Sparks}
 {meta: composer Roy Acuff}
+{meta: x_source classic-country}
+{meta: x_source_file doyouwonderwhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I heard those night-birds calling
@@ -50,3 +53,9 @@ After [G7]what you did to [C]me
 Why oh why do I think of you
 But I [G7]do it’s plain to [C]see
 {end_of_verse}
+
+
+
+
+
+

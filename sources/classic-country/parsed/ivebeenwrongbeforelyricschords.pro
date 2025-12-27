@@ -1,6 +1,9 @@
 {meta: title I've Been Wrong Before}
 {meta: artist Everly Brothers}
 {meta: composer L. Ransford}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeenwrongbeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I  [D7]I've been wrong [G]before[D7]
@@ -42,3 +45,7 @@ So I'm [C]telling [D7]you girl
 [G]Cry so I'm [C]telling you [D7]girl
 [G]Cry so I'm [C]telling you [D7]girl [G]cry[F]  [G]
 {end_of_verse}
+
+
+
+

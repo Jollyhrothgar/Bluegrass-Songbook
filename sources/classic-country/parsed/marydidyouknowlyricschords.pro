@@ -1,6 +1,9 @@
 {meta: title Mary Did You Know}
 {meta: artist Kenny Rogers and Wynonna Judd}
 {meta: composer Mark Lowery and Buddy Greene}
+{meta: x_source classic-country}
+{meta: x_source_file marydidyouknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Mary did you know that your baby [G7]boy
@@ -55,3 +58,10 @@ Was [C]heaven's [G7]perfect [Am]lamb
 This sleeping child you're [Dm]holding
 Is the [Am]great [E7]I   [Am]Am
 {end_of_verse}
+
+
+
+
+
+
+

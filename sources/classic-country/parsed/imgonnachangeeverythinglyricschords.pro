@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Change Everything}
 {meta: artist Jim Reeves}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnachangeeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yeah I'm gonna change everything 
@@ -38,3 +41,7 @@ Yeah I'm gonna [G]change everything that [D7]holds a memory of [G]you
 [G]I'm gonna start with the walls 
 Take the pictures off the walls and burn [D7]'em
 {end_of_verse}
+
+
+
+

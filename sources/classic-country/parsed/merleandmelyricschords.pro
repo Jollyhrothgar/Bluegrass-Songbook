@@ -1,5 +1,8 @@
 {meta: title Merle And Me}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file merleandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Back in 1953 [C]we stole a car old Merle and me
@@ -42,3 +45,8 @@ How we escaped that [F]prison cell old [C]Merle and me
 [F]Looking danger in the eyes [C]walking with our heads held high
 [G7]We were not [F]afraid to die old [C]Merle and me
 {end_of_verse}
+
+
+
+
+

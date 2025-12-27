@@ -1,6 +1,9 @@
 {meta: title Tear By Tear}
 {meta: artist Lynn Anderson}
 {meta: composer Jerry Lane}
+{meta: x_source classic-country}
+{meta: x_source_file tearbytearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Kiss by kiss I [C]fell in love with [G]you
@@ -31,3 +34,7 @@ Cause tear by [D7]tear I'm cryin' my life [G]away
 {start_of_verse: Verse 5}
 Tear by [D7]tear I'm cryin' my life [G]away
 {end_of_verse}
+
+
+
+

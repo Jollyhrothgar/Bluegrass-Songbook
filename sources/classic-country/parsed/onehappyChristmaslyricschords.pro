@@ -1,6 +1,9 @@
 {meta: title One Happy Christmas}
 {meta: artist Tammy Wynette}
 {meta: composer Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file onehappyChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard the doorbell [F]ringing as the [G7]clock was striking [C]three
@@ -33,3 +36,7 @@ It's gonna be [C]one happy Christmas [F]one happy Christmas
 {start_of_verse: Verse 4}
 Old Santa did remember cause he [G7]brought you on to [C]me
 {end_of_verse}
+
+
+
+

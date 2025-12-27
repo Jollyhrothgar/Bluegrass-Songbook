@@ -1,6 +1,9 @@
 {meta: title King Creole}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Leiber and Mike Stoller}
+{meta: x_source classic-country}
+{meta: x_source_file kingcreolelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]King Creole go
@@ -65,3 +68,12 @@ He goes by the name of [G7]King Creole
 {start_of_verse: Verse 7}
 You know he's [D7]gone gone gone [C]hip shaking King [G]Creole
 {end_of_verse}
+
+
+
+
+
+
+
+
+

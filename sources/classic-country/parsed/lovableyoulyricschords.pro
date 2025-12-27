@@ -1,6 +1,9 @@
 {meta: title Lovable You}
 {meta: artist George Morgan}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file lovableyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Susie is likeable and [G7]Jane's pretty lovable [D7]too
@@ -29,3 +32,6 @@ I wanna [G7]spend my lifetime loving a lovable [C]you
 Ooh ooh [G7]lovable you  [C]ooh ooh [G7]lovable you 
 [C]Ooh ooh [G7]lovable [C]you
 {end_of_verse}
+
+
+

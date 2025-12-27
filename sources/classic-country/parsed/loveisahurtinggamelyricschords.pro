@@ -1,6 +1,9 @@
 {meta: title Love Is A Hurting Game}
 {meta: artist Marty Robbins}
 {meta: composer Jeff Clay}
+{meta: x_source classic-country}
+{meta: x_source_file loveisahurtinggamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hung around too [F]long  [G7]why I can't [C]explain
@@ -31,3 +34,8 @@ Just let the [G7]teardrops fall where they [C]may
 [C]Don't know why it [F]happened [G7]or who's to [C]blame
 Only know I'm [F]crying  [G7]love's a hurting [C]game
 {end_of_verse}
+
+
+
+
+

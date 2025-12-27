@@ -1,5 +1,8 @@
 {meta: title Over Loving You}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file overlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If there’s such a thing as over loving [G]you
@@ -42,3 +45,8 @@ I [D7]whisper in your ear honey daddy loves you [G]so
 Don’t [C]say that we’re through cause I ain’t gonna [G]quit
 There’s a whole lot of loving that [D7]we ain’t done [G]yet
 {end_of_verse}
+
+
+
+
+

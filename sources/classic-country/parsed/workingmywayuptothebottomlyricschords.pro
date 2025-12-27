@@ -1,6 +1,9 @@
 {meta: title Working My Way Up To The Bottom}
 {meta: artist Roy Drusky}
 {meta: composer Eddie Rabbitt}
+{meta: x_source classic-country}
+{meta: x_source_file workingmywayuptothebottomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I'm [F]working my way up to the [C]bottom
@@ -43,3 +46,8 @@ And [F]I won't need you when [G7]I reach the [C]top
 Yes I'm [F]working my way up to the [C]bottom
 And [F]I won't need you when [G7]I reach the [C]top
 {end_of_verse}
+
+
+
+
+

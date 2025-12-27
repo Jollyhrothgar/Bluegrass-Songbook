@@ -1,5 +1,8 @@
 {meta: title Sorting Memories}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file sortingmemorieslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you've ever spent a night your mind in [F]torture
@@ -28,3 +31,6 @@ And the [D7]ones that hurt I've learned to push [G7]aside
 And with [C]tears I've built a wall of just the sad [F]ones
 There the [C]ones of you I've [G7]hidden deep [C]inside
 {end_of_verse}
+
+
+

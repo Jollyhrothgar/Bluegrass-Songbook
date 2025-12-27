@@ -1,6 +1,9 @@
 {meta: title The Blind Child}
 {meta: artist Hank Williams}
 {meta: composer Ida B. Mercer}
+{meta: x_source classic-country}
+{meta: x_source_file theblindchildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh father tonight they say you are
@@ -50,3 +53,9 @@ And [F]erected a marble [C]square
 And [F]there on the tomb these [C]words do read
 She'll not be [G7]blind up [C]there
 {end_of_verse}
+
+
+
+
+
+

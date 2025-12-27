@@ -1,5 +1,8 @@
 {meta: title It's All Wrong But It's All Right}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file itsallwrongbutitsallrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello are you free [C]tonight
@@ -49,3 +52,9 @@ Just close your eyes and hold me [G]tight
 Tell me sexy lovin' [C]lines
 It's all [D7]wrong but it's all [G]right
 {end_of_verse}
+
+
+
+
+
+

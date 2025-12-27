@@ -1,6 +1,9 @@
 {meta: title In A Moment Of Weakness}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone and Paul Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file inamomentofweaknesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I knew she was [C]lonely and I was [Am]alone
@@ -35,3 +38,7 @@ But in a moment of [C]weak[Dm]ness [G7]your love held [C]strong
 {start_of_verse: Verse 5}
 [Am]In a moment of [F]weakness [G7]your love held [C]strong
 {end_of_verse}
+
+
+
+

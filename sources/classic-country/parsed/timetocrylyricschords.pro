@@ -1,6 +1,9 @@
 {meta: title Time To Cry}
 {meta: artist Roy Orbison}
 {meta: composer Bill Dees and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file timetocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see through [F]teardrops that old clock on the [C]wall 
@@ -27,3 +30,6 @@ The [A]sun is [C]out of sight [A]another [C]lonely night [F]begins
 [Fm]And you're [F]not mine 
 Guess it's [Gm]time to [C]cry [Gm]yes it's [C]time to [A]cry [F]
 {end_of_verse}
+
+
+

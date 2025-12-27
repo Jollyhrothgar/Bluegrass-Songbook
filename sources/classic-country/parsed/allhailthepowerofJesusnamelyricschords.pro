@@ -1,6 +1,9 @@
 {meta: title All Hail The Power Of Jesus' Name}
 {meta: artist Patti Page}
 {meta: composer Harris Hubble}
+{meta: x_source classic-country}
+{meta: x_source_file allhailthepowerofJesusnamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All hail the power of [G7]Jesus' name
@@ -20,3 +23,4 @@ Join in the ever[G7]lasting song
 And [C]crown [F]Him [G7]Lord of [C]all
 [F]Am[C]en
 {end_of_verse}
+

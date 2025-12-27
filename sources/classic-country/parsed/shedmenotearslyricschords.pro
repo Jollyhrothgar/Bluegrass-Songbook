@@ -1,6 +1,9 @@
 {meta: title Shed Me No Tears}
 {meta: artist Jeannie C. Riley}
 {meta: composer Steve Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file shedmenotearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I am [C]gone sing for me no sad [D7]songs
@@ -31,3 +34,7 @@
 {start_of_verse: Verse 4}
 [C]Shed me [D7]no [G]tears
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Strand}
 {meta: artist Statler Brothers}
 {meta: composer Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file thestrandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]To every silver [B7]cowboy who [C]rode the silver [G]screen
@@ -61,3 +64,11 @@ I'd [G]follow many [B7]different trails but [C]one would stay the [G]same
 {start_of_verse: Verse 9}
 That [C]happy trail that [D7]led me to the [G]Strand
 {end_of_verse}
+
+
+
+
+
+
+
+

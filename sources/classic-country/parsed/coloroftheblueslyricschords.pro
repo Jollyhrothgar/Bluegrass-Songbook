@@ -1,6 +1,9 @@
 {meta: title Color Of The Blues}
 {meta: artist George Jones}
 {meta: composer Lawton Williams and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file coloroftheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Up above me are the skies
@@ -37,3 +40,6 @@ There's [C]a blue note in each song
 That I sing since [F]you are [C]gone
 Yes [F]blue must be the [G7]color of the [C]blues
 {end_of_verse}
+
+
+

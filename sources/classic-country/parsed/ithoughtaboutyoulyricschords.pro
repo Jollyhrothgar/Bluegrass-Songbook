@@ -1,6 +1,9 @@
 {meta: title I Thought About You}
 {meta: artist Mel Tillis}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file ithoughtaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought about a walkin' thought about talkin'
@@ -35,3 +38,7 @@ But baby [Dm]most of all I [G7]thought about [C]you
 {start_of_verse: Verse 5}
 Most of [D7]all (most of [G7]all) I thought about [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Big Wide Wonderful World Of Country Music}
 {meta: artist Leroy Van Dyke}
 {meta: composer Gene Nash}
+{meta: x_source classic-country}
+{meta: x_source_file bigwidewonderfulworldofcountrymusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]It's a [G]big wide [C]wonderful [G]world of country [C]music
@@ -57,3 +60,9 @@ And the [G]whole [Em]wide [Am]world is [D7]singing
 The [G]whole [Em]wide [Am]world is [D7]singing
 The [G]whole [Em]wide [Am]world is [D7]singing [G]along
 {end_of_verse}
+
+
+
+
+
+

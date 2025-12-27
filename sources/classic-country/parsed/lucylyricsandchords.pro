@@ -1,6 +1,9 @@
 {meta: title Lucy}
 {meta: artist Johnny Duncan}
 {meta: composer Alex Harvey}
+{meta: x_source classic-country}
+{meta: x_source_file lucylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lucy if [F]you should wake up [G7]in the [C]night
@@ -32,3 +35,6 @@ Still I [F]love you till the [G7]day that I [C]die
 Good[C]bye Lucy Lucy goodbye
 [G7]Goodbye [C]Luc[F]y [G7]Lucy [C]goodbye
 {end_of_verse}
+
+
+

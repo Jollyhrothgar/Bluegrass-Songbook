@@ -1,5 +1,8 @@
 {meta: title Streets of Laredo}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file streetsoflaredolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I walked [G7]out in the [C]streets of [G7]Laredo
@@ -35,3 +38,7 @@ Oh beat the [G7]drum slowly and [C]play the fife [G7]lowly
 [C]Take me to the [G7]valley then [C]lay the sod o'er [G7]me
 I'm [C]a young cowboy and I [G7]know I've [C]done [C][G7]wrong
 {end_of_verse}
+
+
+
+

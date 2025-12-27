@@ -1,6 +1,9 @@
 {meta: title I'll Go To A Stranger}
 {meta: artist Ray Price}
 {meta: composer Ray Pennington and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file illgotoastrangerlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]With someone else perhaps in time
@@ -39,3 +42,7 @@
 [G7]I'll go to a [C]stranger
 [D7]Before I'll come to [C]you
 {end_of_verse}
+
+
+
+

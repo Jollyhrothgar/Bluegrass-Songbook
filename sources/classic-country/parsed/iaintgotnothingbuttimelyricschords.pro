@@ -1,6 +1,9 @@
 {meta: title I Ain't Got Nothing But Time}
 {meta: artist Hank Williams}
 {meta: composer and recorded by Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file iaintgotnothingbuttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little girl if you're feeling low
@@ -50,3 +53,9 @@ So Baby if you wants to [G7]shine
 If [C]you'll take time to look my [F]number's in the [C]book
 And you can [G7]call me [C]anytime
 {end_of_verse}
+
+
+
+
+
+

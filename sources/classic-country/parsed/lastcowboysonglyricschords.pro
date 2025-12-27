@@ -1,6 +1,9 @@
 {meta: title Last Cowboy Song}
 {meta: artist Waylon Jennings}
 {meta: composer Ed Bruce and Ron Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file lastcowboysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is the last cowboy song
@@ -42,3 +45,9 @@ They’ll roll by his graveside and they don’t even notice
 [G7]The music is sad as they're singing along
 [C]Another piece of America's lost
 {end_of_verse}
+
+
+
+
+
+

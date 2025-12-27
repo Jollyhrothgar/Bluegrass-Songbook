@@ -1,6 +1,9 @@
 {meta: title Jason's Farm}
 {meta: artist Cal Smith}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file jasonsfarmlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He bought three hundred acres ten miles south of town
@@ -76,3 +79,16 @@ The [G7]land once rich and green is dead and dry like Jason's [C]dream
 And [G7]the wind that once blew sweet through Mary's [F]hand is strangely [C]calm
 And nothing [G7]grows no [F]more on Jason's [C]Farm
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can't Believe I Lost My Everything}
 {meta: artist Red Sovine}
 {meta: composer Bun Wilson and Doc Richardson}
+{meta: x_source classic-country}
+{meta: x_source_file icantbelieveilostmyeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We had love much more than I had ever [F]dreamed of
@@ -31,3 +34,6 @@ And I [G7]can't believe I've lost the whole [C]thing
 Now tonight a brand new king is in my [F]castle
 And I [G7]can't believe I've lost my every[C]thing
 {end_of_verse}
+
+
+

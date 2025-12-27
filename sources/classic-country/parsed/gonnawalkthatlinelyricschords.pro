@@ -1,6 +1,9 @@
 {meta: title Gonna Walk That Line}
 {meta: artist Randy Travis}
 {meta: composer Jamie O'Hara and Kieran Kane}
+{meta: x_source classic-country}
+{meta: x_source_file gonnawalkthatlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never been too good at doing [F]right
@@ -43,3 +46,8 @@ Ooh I'm gonna walk that line for [G7]you
 [C]Do anything that you [F]want me to
 [C]Ooh I'm gonna walk that [G7]line for [C]you
 {end_of_verse}
+
+
+
+
+

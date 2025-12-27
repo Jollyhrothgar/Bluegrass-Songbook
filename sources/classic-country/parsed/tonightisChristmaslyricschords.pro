@@ -1,6 +1,9 @@
 {meta: title Tonight is Christmas}
 {meta: artist Alabama}
 {meta: composer Stan Munsey, Keith Worsham, Don Matthews}
+{meta: x_source classic-country}
+{meta: x_source_file tonightisChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Factories are shut down  [F]shopping malls are all [C]closed
@@ -30,3 +33,6 @@ To[Am]night we [F]celebrate God's [G7]one and only [C]Son
 Tonight there's [F]hope for peace on [G7]earth eterna[C]lly [Am]
 Tonight is [Dm]Christmas and the [G7]world's in harmo[C]ny  [Am]  
 {end_of_verse}
+
+
+

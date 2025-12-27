@@ -1,6 +1,9 @@
 {meta: title He'll Take You In}
 {meta: artist Russell Moore and IIIrd Tyme Out}
 {meta: composer Billy Smith and Steffan Baker}
+{meta: x_source classic-country}
+{meta: x_source_file helltakeyouinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let not your heart be troubled [F]for He will take you [C]in
@@ -36,3 +39,7 @@ How can you [C]be so down and out you should [F]jump right [C]up and shout
 How can you [C]be so down and out you should [F]jump right [C]up and shout
 (He'll take you in) oh [Am]sinner friend He'll [G7]take you [C]in
 {end_of_verse}
+
+
+
+

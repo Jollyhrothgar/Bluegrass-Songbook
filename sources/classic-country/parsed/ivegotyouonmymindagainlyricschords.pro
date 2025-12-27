@@ -1,5 +1,8 @@
 {meta: title I've Got You On My Mind Again}
 {meta: artist Buck Owens and Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotyouonmymindagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got you [D7]on my mind [G]again
@@ -39,3 +42,8 @@ I've [A7]got you [D7]on my mind [G]again
 {start_of_verse: Verse 5}
 I've [A7]got you [D7]on my mind [G]again
 {end_of_verse}
+
+
+
+
+

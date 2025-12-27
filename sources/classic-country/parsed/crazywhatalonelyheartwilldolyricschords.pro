@@ -1,6 +1,9 @@
 {meta: title Crazy What A Lonely Heart Will Do}
 {meta: artist Rhonda Vincent}
 {meta: composer Jimbeau Hinson and Paulette Carlson}
+{meta: x_source classic-country}
+{meta: x_source_file crazywhatalonelyheartwilldolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Take the blame [C]off of me put it on my lonely [G7]heart
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]Yeah it crazy what [G7]a lonely heart will [C]do
 {end_of_verse}
+
+
+
+

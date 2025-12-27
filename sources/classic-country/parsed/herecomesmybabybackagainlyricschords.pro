@@ -1,6 +1,9 @@
 {meta: title Here Comes My Baby Back Again}
 {meta: artist Dottie West}
 {meta: composer Bill West and Dottie West}
+{meta: x_source classic-country}
+{meta: x_source_file herecomesmybabybackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here comes more tears to cry 
@@ -37,3 +40,8 @@ To let [F]more hurt [C]inside
 Once more [F]I'll [C]understand 
 [G7]Here comes my baby back [C]again
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title According To The Bible}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file accordingtothebiblelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]According to the bible [F]there will be no [C]tears
@@ -35,3 +38,7 @@
 [C]I’m gonna have a mansion [F]on a street of [C]gold
 [G7]And love of Jesus is going to be my [C]life
 {end_of_verse}
+
+
+
+

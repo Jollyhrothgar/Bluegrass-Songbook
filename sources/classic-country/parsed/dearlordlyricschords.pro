@@ -1,6 +1,9 @@
 {meta: title Dear Lord}
 {meta: artist Tracy Lawrence}
 {meta: composer Flip Anderson and Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file dearlordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord You know that I'm no saint
@@ -49,3 +52,8 @@ Dear [C]Lord
 There's [Dm]all of this and [C]more I'm thankful [F]for [G7]
 Dear [C]Lord
 {end_of_verse}
+
+
+
+
+

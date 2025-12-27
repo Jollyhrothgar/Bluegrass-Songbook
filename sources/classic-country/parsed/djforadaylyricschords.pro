@@ -1,6 +1,9 @@
 {meta: title D.J. For A Day}
 {meta: artist Jimmy C. Newman}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file djforadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You won't answer when I call you
@@ -31,3 +34,5 @@ I'd dedicate my love [C]to you
 [F]And every song I'd [C]play
 [F]If I could be a [C]D.J. [G7]for a [C]day
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Colonel Maggie}
 {meta: artist Roger Miller}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file colonelmaggielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Colonel Maggie is my [F]friend
@@ -50,3 +53,9 @@ She [D7]got my self [G7]respect right back for [C]me
 Colonel Maggie is my [F]friend
 With [D7]good old mother[G7]ly sweet sympa[C]thy
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Do You Miss Me}
 {meta: artist Eddy Arnold}
 {meta: composer Cy Coben and Charles Grean}
+{meta: x_source classic-country}
+{meta: x_source_file doyoumissmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the evening shadows fall do you miss [G7]me
@@ -23,3 +26,5 @@
 [F]Though we parted long ago [C]back to your arms I'd [Am]go
 [D7]If I could only [G7]know you miss [C]me
 {end_of_verse}
+
+

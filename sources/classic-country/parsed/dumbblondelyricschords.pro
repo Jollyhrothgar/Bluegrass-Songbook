@@ -1,6 +1,9 @@
 {meta: title Dumb Blonde}
 {meta: artist Dolly Parton}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file dumbblondelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't try to fly [G7]your way out of [C]this
@@ -39,3 +42,8 @@ Blondes have more fun
 {start_of_verse: Verse 3}
 Blondes have more fun
 {end_of_verse}
+
+
+
+
+

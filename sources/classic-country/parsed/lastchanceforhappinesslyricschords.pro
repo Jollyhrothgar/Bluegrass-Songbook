@@ -1,5 +1,8 @@
 {meta: title Last Chance For Happiness}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file lastchanceforhappinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Could you walk away and [D7]leave a man that's [G]drowning
@@ -25,3 +28,6 @@ You're my [G]last chance [D7]for happi[G]ness
 {start_of_verse: Verse 4}
 [C]You're my [G]last chance [D7]for happi[C]nes[G]s
 {end_of_verse}
+
+
+

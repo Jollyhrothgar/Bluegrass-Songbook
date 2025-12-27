@@ -1,6 +1,9 @@
 {meta: title Daddy Will Santa Claus Ever Have To Die}
 {meta: artist Jimmy Martin}
 {meta: composer Jay Penny and Jimmy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file daddywillsantaclauseverhavetodielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Daddy will Santa Clause ever have to [C]die
@@ -37,3 +40,8 @@ As I [G7]heard the words that Lisa said to [C]me
 {start_of_verse: Verse 5}
 Oh [G7]daddy will Santa Clause ever have to [C]die
 {end_of_verse}
+
+
+
+
+

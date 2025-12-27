@@ -1,6 +1,9 @@
 {meta: title I'll Take A Chance With You}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Artie Glenn and Ray Coates}
+{meta: x_source classic-country}
+{meta: x_source_file illtakeachancewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ll take a chance with [G7]you dear
@@ -29,3 +32,6 @@ With [D7]two hearts together I [G7]know I can’t lose
 [C]I’ll take a chance with [G7]you love 
 If you’ll take a chance with [C]me
 {end_of_verse}
+
+
+

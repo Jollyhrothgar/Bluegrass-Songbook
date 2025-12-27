@@ -1,6 +1,9 @@
 {meta: title Dying A Sinner’s Death}
 {meta: artist The Stanley Brothers}
 {meta: composer Roy Acuff}
+{meta: x_source classic-country}
+{meta: x_source_file dyingasinnersdeathlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I lay upon my dying [G7]pillow
@@ -43,3 +46,8 @@ To all [F]sinners I [G7]plead with my last [C]breath
 Don’t shun the work of God that’s what I’ve [F]done
 And [C]tonight I’m [G7]dying a sinner’s [C]death
 {end_of_verse}
+
+
+
+
+

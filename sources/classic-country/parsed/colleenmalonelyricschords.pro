@@ -1,6 +1,9 @@
 {meta: title Colleen Malone}
 {meta: artist Larry Sparks}
 {meta: composer Leroy Maxey Drumm and Johnny Goble}
+{meta: x_source classic-country}
+{meta: x_source_file colleenmalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s been ten years and [F]three since I [C]first went to sea
@@ -43,3 +46,8 @@ Past the [F]mill with the [C]moss covered [G7]stone
 Up the pathway I climb through the [F]woods and the [C]pines
 To [F]be with my [G7]Colleen Ma[C]lone
 {end_of_verse}
+
+
+
+
+

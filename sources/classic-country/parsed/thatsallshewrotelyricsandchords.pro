@@ -1,6 +1,9 @@
 {meta: title That's All She Wrote}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Ernest Worley}
+{meta: x_source classic-country}
+{meta: x_source_file thatsallshewrotelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm so [G7]alone tonight and [C]blue
@@ -29,3 +32,6 @@ For I know I played it un[G7]fair
 Still my [F]heart won't stop its [C]grieving
 With no one to love [G7]no one to [C]care 
 {end_of_verse}
+
+
+

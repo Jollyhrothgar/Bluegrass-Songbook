@@ -1,6 +1,9 @@
 {meta: title My Heart Is A House}
 {meta: artist Charley Pride}
 {meta: composer Ray Winkler, Billy Deaton, John Hathcock}
+{meta: x_source classic-country}
+{meta: x_source_file myheartisahouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My heart is a house and [C]love lives inside  
@@ -26,3 +29,6 @@ Come [D7]into my heart it's a house built for [G]you
 {start_of_verse: Verse 4}
 Come [D7]into my heart it's a house built for [G]you
 {end_of_verse}
+
+
+

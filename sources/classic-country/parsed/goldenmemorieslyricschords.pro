@@ -1,6 +1,9 @@
 {meta: title Golden Memories}
 {meta: artist Bobby Bare}
 {meta: composer Lacy J. Dalton and John Fitzgerald}
+{meta: x_source classic-country}
+{meta: x_source_file goldenmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've got [C]golden [G7]memories
@@ -55,3 +58,12 @@ He gonna make me drink that wine
 {start_of_verse: Verse 9}
 [C]Oh baby I’ve got [G7]good times enough to [C]share
 {end_of_verse}
+
+
+
+
+
+
+
+
+

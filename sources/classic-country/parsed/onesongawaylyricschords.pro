@@ -1,6 +1,9 @@
 {meta: title One Song Away}
 {meta: artist Tommy Cash}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file onesongawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just one song away from being [F]home
@@ -50,3 +53,9 @@ I've got one more verse to do and if the crowd'll let me [F]through
 I've got one more verse to do and if the crowd'll let me [F]through
 [G7]I'm just one song away from being [C]home
 {end_of_verse}
+
+
+
+
+
+

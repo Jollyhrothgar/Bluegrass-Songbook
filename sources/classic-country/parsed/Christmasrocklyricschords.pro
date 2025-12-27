@@ -1,6 +1,9 @@
 {meta: title Christmas Rock}
 {meta: artist Toby Keith}
 {meta: composer Lewis Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasrocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My billfold doesn't have a [G7]prayer
@@ -62,3 +65,11 @@
 [F]She wants a Christmas [C]rock
 [G7]But ol' Santa's pockets ain't got no [C]roll
 {end_of_verse}
+
+
+
+
+
+
+
+

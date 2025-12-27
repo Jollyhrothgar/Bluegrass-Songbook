@@ -1,6 +1,9 @@
 {meta: title Blue Shadows On The Trail}
 {meta: artist Sons Of Pioneers}
 {meta: composer Eliot Daniel and Johnny Lange}
+{meta: x_source classic-country}
+{meta: x_source_file blueshadowsonthetraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Shades of night are [G7]falling
@@ -28,3 +31,6 @@ Soon the dawn will [G7]come and you'll be [A7]on your [G7]way
 [C]Until the darkness sheds its [F]veil
 [Fm]There'll be [C]Blue [Dm]Shadows on the [C]Trail
 {end_of_verse}
+
+
+

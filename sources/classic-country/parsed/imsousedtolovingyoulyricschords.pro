@@ -1,6 +1,9 @@
 {meta: title I'm So Used To Loving You}
 {meta: artist Conway Twitty}
 {meta: composer Harold L. Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file imsousedtolovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm so used to loving you sweetheart
@@ -34,3 +37,8 @@ And the way you hold me close when day is through
 And I love you more each day that we go through
 [D7]You're my life and I'll live it loving [G]you
 {end_of_verse}
+
+
+
+
+

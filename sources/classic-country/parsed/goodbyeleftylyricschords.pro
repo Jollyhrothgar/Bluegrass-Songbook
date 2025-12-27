@@ -1,5 +1,8 @@
 {meta: title Goodbye Lefty}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyeleftylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd love to hear a [D7]jukebox [G]play
@@ -19,3 +22,4 @@ The long black [G]veil that [D7]Alice [G]wore
 Like words he sang some [C]years be[G]fore
 [C]She loved him [G]too   [D7]that's the way love [G]goes
 {end_of_verse}
+

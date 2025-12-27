@@ -1,6 +1,9 @@
 {meta: title I Should Have Known You Lord}
 {meta: artist Statler Brother}
 {meta: composer Harold Reid and William Reid}
+{meta: x_source classic-country}
+{meta: x_source_file ishouldhaveknownyoulordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mary was [G7]weeping that [Am]day at the [F]tomb
@@ -38,3 +41,7 @@ You [F]know me I’m sorry forgive me once [A]mor[G7]e
 [F]I should have [C]known you [F]Lord (should know you [A]Lord)
 [F]I should have [C]known you [F]Lord
 {end_of_verse}
+
+
+
+

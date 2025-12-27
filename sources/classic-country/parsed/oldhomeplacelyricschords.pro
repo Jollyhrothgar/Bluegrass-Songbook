@@ -1,6 +1,9 @@
 {meta: title Old Home Place}
 {meta: artist J.D. Crowe and the New South}
 {meta: composer Dean Webb and Mitchell Jayne}
+{meta: x_source classic-country}
+{meta: x_source_file oldhomeplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's been ten long [B7]years since I [C]left my [G]home
@@ -50,3 +53,9 @@ And look for a [D7]job in the [G]town
 And [G]why did I [B7]leave my plow [C]in the [G]field
 And look for a [D7]job in the [G]town
 {end_of_verse}
+
+
+
+
+
+

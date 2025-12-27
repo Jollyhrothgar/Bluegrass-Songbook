@@ -1,6 +1,9 @@
 {meta: title Next Sunday Darling Is My Birthday}
 {meta: artist Hank Williams}
 {meta: composer Sydney Nathan and James Pritchett}
+{meta: x_source classic-country}
+{meta: x_source_file nextsundaydarlingismybirthdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Next Sunday Darling is my [D7]birthday
@@ -29,3 +32,6 @@ Is [A7]empty now without you [D7]dear
 But [G]in my dreams you're there beside [D7]me
 So let me dream that you are [G]here
 {end_of_verse}
+
+
+

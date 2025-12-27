@@ -1,6 +1,9 @@
 {meta: title Who's Been Sleeping In My Bed}
 {meta: artist Johnny Duncan}
 {meta: composer Danny Hogan and Frank Newberry}
+{meta: x_source classic-country}
+{meta: x_source_file whosbeensleepinginmybedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bright city lights [F]night after [C]night
@@ -40,3 +43,8 @@ Or do you wish it were [G7]me there [Am]instead[C]
 {start_of_verse: Verse 6}
 [D7]Lord I wish it were [G7]me there [C]instead
 {end_of_verse}
+
+
+
+
+

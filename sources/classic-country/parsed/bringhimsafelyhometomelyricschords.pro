@@ -1,6 +1,9 @@
 {meta: title Bring Him Safely Home To Me}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file bringhimsafelyhometomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There goes the alarm  well it's time to get [C7]up
@@ -35,3 +38,7 @@
 {start_of_verse: Verse 5}
 [G7]And bring him safely home to [C]me
 {end_of_verse}
+
+
+
+

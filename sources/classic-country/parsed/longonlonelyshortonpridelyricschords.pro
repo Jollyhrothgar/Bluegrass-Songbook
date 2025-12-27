@@ -1,6 +1,9 @@
 {meta: title Long On Lonely (Short On Pride)}
 {meta: artist Randy Travis}
 {meta: composer Bob McDill, Dickey Lee, Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file longonlonelyshortonpridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll bet that [D7]you're surprised to [C]see me
@@ -37,3 +40,7 @@ I'm a [G]little long on lone[D7]ly a little short on [Em]pride [C]
 {start_of_verse: Verse 5}
 I'm a [G]little long on lone[D7]ly a little short on [G]pride
 {end_of_verse}
+
+
+
+

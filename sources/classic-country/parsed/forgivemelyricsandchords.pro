@@ -1,6 +1,9 @@
 {meta: title Forgive Me}
 {meta: artist Webb Pierce}
 {meta: composer Wiley Walker and Gene Sullivan}
+{meta: x_source classic-country}
+{meta: x_source_file forgivemelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I left you and left you broken [C7]hearted
@@ -29,3 +32,6 @@
 [F]I thought once that I could live without [C]you
 [G7]I'm paying with the broken heart [C]instead
 {end_of_verse}
+
+
+

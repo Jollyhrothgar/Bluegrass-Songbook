@@ -1,6 +1,9 @@
 {meta: title What's One More Time}
 {meta: artist Ronnie Milsap}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file whatsonemoretimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]What's one more [C]time
@@ -39,3 +42,7 @@ What's [G7]one more [C]time [F]
 What's [G7]one more [C]time [F]
 What's [G7]one more [G]time [C]
 {end_of_verse}
+
+
+
+

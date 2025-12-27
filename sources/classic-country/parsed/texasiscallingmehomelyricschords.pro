@@ -1,6 +1,9 @@
 {meta: title Texas Is Calling Me Home}
 {meta: artist Ray Price}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file texasiscallingmehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The city lights gave me that rambling [Dm]fever
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]And Texas is calling me [C]home
 {end_of_verse}
+
+
+
+

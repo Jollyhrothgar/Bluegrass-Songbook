@@ -1,6 +1,9 @@
 {meta: title Somebody Like Me}
 {meta: artist Eddy Arnold}
 {meta: composer Wayne Carson Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file somebodylikemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your baby loves you [F]now 
@@ -57,3 +60,10 @@ Somebody's gonna come [C]along
 And he'll steal her away from [F]you 
 [G7]Somebody like [C]me
 {end_of_verse}
+
+
+
+
+
+
+

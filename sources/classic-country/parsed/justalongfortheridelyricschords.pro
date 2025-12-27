@@ -1,5 +1,8 @@
 {meta: title Just Along For The Ride}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file justalongfortheridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I drew Sunshine in [F]New Mexico
@@ -54,3 +57,10 @@ Lady luck I'll let you [Dm]drive
 Lady luck I'll let you [Dm]drive
 [G7]I'm just along for the [C]ride
 {end_of_verse}
+
+
+
+
+
+
+

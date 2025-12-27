@@ -1,6 +1,9 @@
 {meta: title Walking My Lord Up Calvary’s Hill}
 {meta: artist Rhonda Vincent}
 {meta: composer Ruby Moody}
+{meta: x_source classic-country}
+{meta: x_source_file walkingmylordupcalvaryshilllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On the cross as He hung in [C]shame was for[G]saken
@@ -40,3 +43,8 @@ They were walking my Lord [D7]up Calvary’s [G]Hill
 {start_of_verse: Verse 4}
 They were walking my Lord [D7]up Calvary’s [G]Hill[C]   [G]
 {end_of_verse}
+
+
+
+
+

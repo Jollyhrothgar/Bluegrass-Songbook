@@ -1,6 +1,9 @@
 {meta: title It's A Long Way From Heaven}
 {meta: artist Norma Jean}
 {meta: composer Sharon Higgins and Jimmie Helms}
+{meta: x_source classic-country}
+{meta: x_source_file itsalongwayfromheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Word got back to me you said it’s heaven to be [D7]free
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]It’s a long way from [G]heaven to the [D7]world you’re living [G]in
 {end_of_verse}
+
+
+
+

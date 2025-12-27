@@ -1,6 +1,9 @@
 {meta: title Above All}
 {meta: artist Randy Travis}
 {meta: composer Paul Baloche and Lenny LeBlanc}
+{meta: x_source classic-country}
+{meta: x_source_file abovealllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Above all [F]powers [G7]above all [C]kings
@@ -51,3 +54,9 @@ You lived to [Dm]die [Em]rejected and [C]alone
 [C]You took the [Dm]fall [C]and thought of [F]me 
 [G7]Above [C]all
 {end_of_verse}
+
+
+
+
+
+

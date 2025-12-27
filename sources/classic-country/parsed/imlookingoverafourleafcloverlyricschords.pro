@@ -1,6 +1,9 @@
 {meta: title I'm Looking Over A Four Leaf Clover}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Mort Dixon and Harry Woods}
+{meta: x_source classic-country}
+{meta: x_source_file imlookingoverafourleafcloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm looking over a four leaf clover
@@ -33,3 +36,7 @@ Is [D7]somebody baby I adore
 {start_of_verse: Verse 5}
 [D7]That I over[G7]looked be[C]fore
 {end_of_verse}
+
+
+
+

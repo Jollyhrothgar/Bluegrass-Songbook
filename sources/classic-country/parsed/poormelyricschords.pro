@@ -1,6 +1,9 @@
 {meta: title Poor Me}
 {meta: artist Fats Domino}
 {meta: composer Antoine Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file poormelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woke up this morning feeling low
@@ -35,3 +38,9 @@ Poor [F]me I'm living in [G7]misery
 {start_of_verse: Verse 3}
 [C]What I'm gonna do it's hard to tell
 {end_of_verse}
+
+
+
+
+
+

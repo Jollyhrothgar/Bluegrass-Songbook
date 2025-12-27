@@ -1,5 +1,8 @@
 {meta: title The Blues Man}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file thebluesmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm just a singer a natural born guitar [C]ringer
@@ -40,3 +43,8 @@ If you hadn't [D7]stuck it out with this blues [G]man
 I'm thirty years old now nights sure would be [Am]cold now
 If you hadn't [D7]hung around with this blues [G]man
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hello In There}
 {meta: artist Kris Kristofferson}
 {meta: composer John Prine}
+{meta: x_source classic-country}
+{meta: x_source_file hellointherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We had an a[C]partment in the [D7]city
@@ -44,3 +47,8 @@ So if you're [C]walking down the [D7]street sometime
 [Bm]Please don't just pass them by and [C]stare
 As if you [G]didn't care say [D7]hello in there [G]hello
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Modern Day Romance}
 {meta: artist Nitty Gritty Dirt Band}
 {meta: composer Dan Tyler and Kix Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file moderndayromancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We met on the [C]highway she flagged me [G]down
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [C]It's a modern day [D7]romance  old fashioned [G]pain
 {end_of_verse}
+
+
+
+
+

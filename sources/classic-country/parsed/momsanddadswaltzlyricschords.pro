@@ -1,5 +1,8 @@
 {meta: title Mom and Dad's Waltz}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file momsanddadswaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd walk for miles cry or [D7]smile 
@@ -32,3 +35,6 @@ And I [D7]pray every day for mom and pappy and each [G]night
 I'd walk for miles cry or [D7]smile for my mama [G]and [C]daddy
 I [G]want them to [D7]know I love them [G]so
 {end_of_verse}
+
+
+

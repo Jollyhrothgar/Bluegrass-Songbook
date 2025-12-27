@@ -1,5 +1,8 @@
 {meta: title Sleep Little Moses}
 {meta: artist Rex Allen Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file sleeplittlemoseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sleep little Moses [F]sleep little [C]Moses
@@ -37,3 +40,7 @@ Sleep with your fathers [D7]in the valley [G7]deep
 [C]Sleep little Moses [F]sleep little [C]Moses
 God kissed the little [G7]Moses to [C]sleep
 {end_of_verse}
+
+
+
+

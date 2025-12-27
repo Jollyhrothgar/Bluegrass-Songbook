@@ -1,6 +1,9 @@
 {meta: title A Mile And A Quarter}
 {meta: artist Sonny James}
 {meta: composer Carol Smith and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file amileandaquarterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A [F]mile and a quarter of [C]treacherous water [G7]keeps men in [C]Alcatraz
@@ -52,3 +55,10 @@
 [F]Tried to make a liar out of anyone who [C]says
 [G7]Once you’re on the rock there’s no escape from [C]Alcatraz
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Shall Not Be Moved}
 {meta: artist Johnny Cash}
 {meta: composer Larry Stallings}
+{meta: x_source classic-country}
+{meta: x_source_file ishallnotbemovedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Glo-ry hal-le-lu-jah  [Am]I shall not be [D7]moved
@@ -43,3 +46,8 @@ I shall not be  [D7]I shall not be moved
 Just [G7]like a [C]tree that's planted by the [G]wa-[Em]ters
 [G]I shall [D7]not be [G]moved
 {end_of_verse}
+
+
+
+
+

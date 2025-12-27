@@ -1,6 +1,9 @@
 {meta: title I Had My Heart Set On You}
 {meta: artist Emmylou Harris}
 {meta: composer Rodney Crowell and Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file ihadmyheartsetonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On our wedding [G7]day did you [C]lie
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [G7]Oh darling I had my heart set on [C]you
 {end_of_verse}
+
+
+

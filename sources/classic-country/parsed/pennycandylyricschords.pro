@@ -1,6 +1,9 @@
 {meta: title Penny Candy}
 {meta: artist Jim Reeves}
 {meta: composer Cal Veale}
+{meta: x_source classic-country}
+{meta: x_source_file pennycandylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a little girl lives on our street she's awful sweet and [D7]pretty
@@ -35,3 +38,6 @@
 [C]Penny Candy she eats that messy [G]kind
 [D7]Penny Candy she eats it all the [G]time
 {end_of_verse}
+
+
+

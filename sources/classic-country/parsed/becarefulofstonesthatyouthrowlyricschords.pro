@@ -1,6 +1,9 @@
 {meta: title Be Careful Of Stones That You Throw}
 {meta: artist Hank Williams}
 {meta: composer Bonnie Dodd}
+{meta: x_source classic-country}
+{meta: x_source_file becarefulofstonesthatyouthrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]A tongue can accuse and carry bad [C]news
@@ -52,3 +55,9 @@ The [F]seeds of distrust it will [C]sow
 But [F]unless you've made no mistakes in your [C]life
 Be careful of [G7]stones that you [C]throw
 {end_of_verse}
+
+
+
+
+
+

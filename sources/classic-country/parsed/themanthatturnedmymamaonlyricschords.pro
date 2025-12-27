@@ -1,6 +1,9 @@
 {meta: title The Man That Turned My Mama On}
 {meta: artist Tanya Tucker}
 {meta: composer Ed Bruce}
+{meta: x_source classic-country}
+{meta: x_source_file themanthatturnedmymamaonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I'd known the man a little better that [F]turned my mama [C]on
@@ -54,3 +57,11 @@ She says he thought the [G7]sun would surely [F]rise and set in [C]me
 [C]I wish I'd known the man a little better that [F]turned my mama [C]on
 He must have been a heck of a man cause [G7]mama was a lady don't you [F]know
 {end_of_verse}
+
+
+
+
+
+
+
+

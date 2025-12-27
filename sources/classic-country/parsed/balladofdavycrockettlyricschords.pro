@@ -1,6 +1,9 @@
 {meta: title Ballad Of Davy Crockett}
 {meta: artist Burl Ives}
 {meta: composer Tom Blackburn and George Burns}
+{meta: x_source classic-country}
+{meta: x_source_file balladofdavycrockettlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Born on a mountain top in [C]Tennes[G]see
@@ -73,3 +76,14 @@ From grassy plains to the [A7]mountain [D7]crest
 Davy [C]Davy [G]Crockett 
 [D7]King of the wild fron[G]tier 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Wanna Wake Up With You}
 {meta: artist Johnny Rodriguez}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file iwannawakeupwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wanna [G7]wake up with [Am]you [C]  [F]
@@ -48,3 +51,9 @@ I wanna reach [G7]out and know that you're [C]there
 [F]I want you to [G7]be the [Am]first thing that I [F]see
 [G7]I wanna wake up with [C]you
 {end_of_verse}
+
+
+
+
+
+

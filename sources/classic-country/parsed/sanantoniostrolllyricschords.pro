@@ -1,5 +1,8 @@
 {meta: title San Antonio Stroll}
 {meta: artist Tanya Tucker}
+{meta: x_source classic-country}
+{meta: x_source_file sanantoniostrolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was a child down in South [D7]Caroline
@@ -49,3 +52,9 @@ That old San [D7]Antonio [C][G7]Stroll
 Now I'll [F]sing it to you just so we [C]both can [A7]do
 That old San [D7]Antonio [C][G7]Stroll
 {end_of_verse}
+
+
+
+
+
+

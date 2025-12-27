@@ -1,6 +1,9 @@
 {meta: title Shenandoah}
 {meta: artist The Statler Brothers}
 {meta: composer Philip E. Balsley, Lewis Calvin DeWitt Jr.,Don S. Reid and Harold Wilson Reid}
+{meta: x_source classic-country}
+{meta: x_source_file shenandoahlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh Shenandoah  I [G7]long to see [C][F]you 
@@ -30,3 +33,6 @@ For seven long years [G7]I've been a [C][F]ro-ver
 [Am]A-way I'm bound [G7]a-way
 [F]Cross the [G7]wide [C]Missouri
 {end_of_verse}
+
+
+

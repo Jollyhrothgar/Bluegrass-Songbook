@@ -1,5 +1,8 @@
 {meta: title From A Rolls To The Rails}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file fromarollstotherailslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once he lived like a king and he [C]had every[G]thing
@@ -28,3 +31,6 @@ From a penthouse to the jungle by the [D7]track
 From [G]champagne to cheap wine [C]right down to his last [G]dime  
 And now all he owns is the [D7]cloths on his [G]back
 {end_of_verse}
+
+
+

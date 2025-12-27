@@ -1,6 +1,9 @@
 {meta: title Angels Get Lonesome Sometimes}
 {meta: artist Hank Williams Jr.}
 {meta: composer Terry Skinner, Albert Lowe, John Vinson}
+{meta: x_source classic-country}
+{meta: x_source_file angelsgetlonesomesometimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Billy there's [F]something I wanna [C]tell you
@@ -36,3 +39,7 @@ Don't you know [D7]angels get lonesome some[G]times
 [C]When her mind has time to [G]wander don't you [Em]know [C]
 Even [G]angels get [D7]lonesome some[C]times[G]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ebony Eyes}
 {meta: artist The Everly Brothers}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file ebonyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a weekend pass I wouldn't have had time
@@ -50,3 +53,9 @@ The [F]first angel I'll [C]recognize
 [F]She'll smile at me and I know she will [C]be
 My [G7]beautiful ebony [C]eyes
 {end_of_verse}
+
+
+
+
+
+

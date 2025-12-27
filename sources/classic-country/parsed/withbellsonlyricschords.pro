@@ -1,6 +1,9 @@
 {meta: title With Bells On}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file withbellsonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll be home with [G7]bells on I'll be home with [C]bells on  
@@ -39,3 +42,8 @@ This [G7]Christmas I'll be home with [C]bells on
 Trim the tree and wrap the presents turn the [F]Christmas music [Dm]on
 This [G7]Christmas I'll be home with [C]bells on
 {end_of_verse}
+
+
+
+
+

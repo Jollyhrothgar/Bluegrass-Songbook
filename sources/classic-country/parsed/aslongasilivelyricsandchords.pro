@@ -1,6 +1,9 @@
 {meta: title As Long As I Live}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Dorsey Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file aslongasilivelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As long as I live  baby I'm gonna [F]give
@@ -39,3 +42,7 @@
 {start_of_verse: Verse 4}
 [F]Yes I'm gonna [C]make this [G7]whole world yours and [C]mine
 {end_of_verse}
+
+
+
+

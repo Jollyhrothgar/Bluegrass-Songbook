@@ -1,6 +1,9 @@
 {meta: title Divorce Lawyers Funeral Directors And Jailers}
 {meta: artist Ferlin Husky}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file divorcelawyersfuneraldirectorsandjailerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In this beautiful world there are all kinds of things I can [D7]be
@@ -35,3 +38,7 @@ Than a [G7]divorce lawyer a funeral director or [C]jailer
 {start_of_verse: Verse 5}
 A [G7]divorce lawyer a funeral director or [C]jailer
 {end_of_verse}
+
+
+
+

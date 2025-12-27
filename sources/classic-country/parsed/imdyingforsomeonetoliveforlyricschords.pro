@@ -1,6 +1,9 @@
 {meta: title I'm Dying For Someone To Live For}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Shawn Camp}
+{meta: x_source classic-country}
+{meta: x_source_file imdyingforsomeonetoliveforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Loneliness [F]falls all [C]around
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [F]You're dyin' for someone to live [C]for
 {end_of_verse}
+
+
+
+
+

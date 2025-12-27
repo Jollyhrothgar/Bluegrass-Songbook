@@ -1,5 +1,8 @@
 {meta: title Just To Ease The Pain}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file justtoeasethepainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To ease the pain that heartaches bring from broken love [G7]affairs
@@ -28,3 +31,6 @@ The soul will cry and wonder why the [F]things that fate had [C]planned
 The doubts and fears and bitter tears [C7]may be an endless [F]chain
 But living fast won’t [C]hide the past it’s [G7]just to ease the [C]pain
 {end_of_verse}
+
+
+

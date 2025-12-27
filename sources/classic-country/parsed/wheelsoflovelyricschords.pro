@@ -1,6 +1,9 @@
 {meta: title Wheels Of Love}
 {meta: artist Emmylou Harris}
 {meta: composer Marjy Plant}
+{meta: x_source classic-country}
+{meta: x_source_file wheelsoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The wheels of love turn around and around
@@ -61,3 +64,14 @@ So she's halfway to Texas with all of your dreams
 {start_of_verse: Verse 10}
 On [G7]the wheels riding on the wheels of [C]love     
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Wanna Go To Heaven}
 {meta: artist Jerry Wallace}
 {meta: composer Lorene Mann}
+{meta: x_source classic-country}
+{meta: x_source_file iwannagotoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Yes I wanna go to [C]heaven
@@ -54,3 +57,10 @@ Since the day you came [G7]along
 [G7]If it's anything like [F]you
 (Anything like [C]you) [F]like [C]you
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title These Memories}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file thesememorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like a storm [D7]your love [G]swept through me
@@ -29,3 +32,6 @@ They'll [C]shield [D7]me from the [G]cold
 But [C]when my [D7]arms [G]ache for you
 These [C]memories [D7]are hard to [G]hold
 {end_of_verse}
+
+
+

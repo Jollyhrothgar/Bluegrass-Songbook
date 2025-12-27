@@ -1,6 +1,9 @@
 {meta: title Follow Me}
 {meta: artist Barbara Fairchild}
 {meta: composer Ira F. Stanphill}
+{meta: x_source classic-country}
+{meta: x_source_file followmelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I traveled down a lonely [G7]road and [C]no one seemed to [G]care
@@ -33,3 +36,7 @@ I’ll [Em]lift my cross and [G]follow [D7]close to [G]Thee
 {start_of_verse: Verse 5}
 Lord I’ll [Em]lift my cross and [G]follow [D7]close to [C]The[G]e
 {end_of_verse}
+
+
+
+

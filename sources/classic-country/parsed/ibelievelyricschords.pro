@@ -1,6 +1,9 @@
 {meta: title I Believe}
 {meta: artist Elvis Presley}
 {meta: composer Ervin Drake, Irvin Grahm, Jimmy Shirl, Al Stillman}
+{meta: x_source classic-country}
+{meta: x_source_file ibelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I believe for [Am]every drop of [Dm]rain that falls  [G7]a flower [G7][C]grows
@@ -23,3 +26,5 @@
 [E7]Or touch a leaf or see the [Am]sky
 [Dm]Then I know [G7]why  I [C]believe
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title My Heart Is A Playground}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file myheartisaplaygroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My heart is a playground and a [D7]hobby horse of love
@@ -29,3 +32,6 @@ Like [C]eatin' cotton [G]candy I [A7]knew it just couldn't [D7]last
 Our [G]roll-a-coaster [G7]love affair was [C]just a holiday
 My [D7]heart is a playground where you laugh and walk [G]away
 {end_of_verse}
+
+
+

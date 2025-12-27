@@ -1,6 +1,9 @@
 {meta: title Somethin' About A Jukebox}
 {meta: artist Johnny Rodriguez}
 {meta: composer Ralph Mooney and Gordon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file somethinaboutajukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Something about a jukebox [D7]turns me [G]on
@@ -36,3 +39,7 @@ You can [C]play it ten times over or till [G]all your money's gone
 Something about a jukebox
 There's just something about a jukebox that turns me [G]on
 {end_of_verse}
+
+
+
+

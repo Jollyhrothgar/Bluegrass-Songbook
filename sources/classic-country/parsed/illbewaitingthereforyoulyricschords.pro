@@ -1,5 +1,8 @@
 {meta: title I'll Be Waiting There for You}
 {meta: artist Big Tom and The Mainliners}
+{meta: x_source classic-country}
+{meta: x_source_file illbewaitingthereforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Time has rolled on dear [F]here all [C]alone
@@ -42,3 +45,8 @@ If you [F]feel the way I [C]do
 Then hurry on home darling
 Where I'll be [G7]waiting there for [C]you
 {end_of_verse}
+
+
+
+
+

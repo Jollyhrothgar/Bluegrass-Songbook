@@ -1,6 +1,9 @@
 {meta: title I'm Lost Between Right And Wrong}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Lee Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file imlostbetweenrightandwronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm married to one [G7]in love with [C]another
@@ -22,3 +25,5 @@ I know if I [D7]leave her I'll make her [G]cry
 What can I do [G7]how can I go [C]on
 I'm lost [G]tonight [D7]between right and [G]wrong
 {end_of_verse}
+
+

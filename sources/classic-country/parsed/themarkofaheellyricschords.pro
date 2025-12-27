@@ -1,6 +1,9 @@
 {meta: title The Mark Of A Heel}
 {meta: artist Hank Thompson}
 {meta: composer Neal Merritt and Happy Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file themarkofaheellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every man must leave his footprints
@@ -40,3 +43,8 @@ Is [C]plain enough for [G7]anyone to [C]see
 On the [F]shifting sands of time
 But [C]I'll just leave the [G7]mark   of a [C]heel
 {end_of_verse}
+
+
+
+
+

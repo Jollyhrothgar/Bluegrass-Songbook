@@ -1,6 +1,9 @@
 {meta: title Broken Marriage Vow}
 {meta: artist Kitty Wells}
 {meta: composer Johnnie Bailes and Walter Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file brokenmarriagevowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got the letter darling read it [F]o'er and o'er [C]again
@@ -29,3 +32,6 @@ For I [D7]realize I can [G7]never want you [C]now
 I thought at first I couldn't live [F]without you being [C]around
 But [F]you're the one I'm [C]not to blame for [D7]broken [G7]marriage [C]vows
 {end_of_verse}
+
+
+

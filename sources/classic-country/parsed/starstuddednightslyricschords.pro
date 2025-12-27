@@ -1,6 +1,9 @@
 {meta: title Star Studded Nights}
 {meta: artist Jeanne Pruett}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file starstuddednightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Star studded nights [Dm]ooh flashin' lights
@@ -36,3 +39,7 @@ He showed me star studded nights [Dm]ooh flashin' lights
 Like a soft southern breeze he [Dm]brought me to my knees
 And that [G7]Georgia boy's alright with his star studded [C]nights
 {end_of_verse}
+
+
+
+

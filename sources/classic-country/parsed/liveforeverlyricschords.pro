@@ -1,5 +1,8 @@
 {meta: artist Billy Joe Shaver}
 {meta: composer Billy Joe Shaver and Eddy Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file liveforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna live forever
@@ -65,3 +68,12 @@ Rivers of red wine and [C]orange peel [G]blues
 Rivers of red wine and [C]orange peel [G]blues
 [D7]Dreaming of [G]you 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

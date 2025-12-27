@@ -1,5 +1,8 @@
 {meta: title Free To Be}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file freetobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the spotlight with my [F]shadow and my [G7]guitar on my [C]knees
@@ -29,3 +32,6 @@ Her [F]soft eyes work their [C]magic and I [D7]felt the chemis[G7]try
 Then [F]all at once I [G7]realized this [F]trap surrounding [C]me
 [F]Here I am in love again and [C]I'm not free to be[F]  [G7]   [C]
 {end_of_verse}
+
+
+

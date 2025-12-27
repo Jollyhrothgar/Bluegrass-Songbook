@@ -1,6 +1,9 @@
 {meta: title Knew All Along}
 {meta: artist Alan Jackson}
 {meta: composer Adam Wright and Shannon Wright}
+{meta: x_source classic-country}
+{meta: x_source_file knewallalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]The things you [C]taught me [G7]just a little [Am]while
@@ -47,3 +50,9 @@ But I [F]didn't know it was [G7]gonna be to[C]day[F]
 {start_of_verse: Verse 5}
 No I [F]didn't know it was [G7]gonna be to[C]day
 {end_of_verse}
+
+
+
+
+
+

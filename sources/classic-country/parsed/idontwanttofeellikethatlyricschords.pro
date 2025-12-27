@@ -1,6 +1,9 @@
 {meta: title I Don't Want To Feel Like That}
 {meta: artist Patty Loveless}
 {meta: composer Don Schlitz and Terry Radigan}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttofeellikethatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Cried myself to sleep last night 
@@ -55,3 +58,10 @@ Said I don't want to feel like this no [C]more
 [G]I don't want to feel like that   [C]mmm
 [G]I don't want to feel like that [C]    no more 
 {end_of_verse}
+
+
+
+
+
+
+

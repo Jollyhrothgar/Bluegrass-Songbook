@@ -1,6 +1,9 @@
 {meta: title Ghost In This House}
 {meta: artist Shenandoah}
 {meta: composer Hugh Prestwood}
+{meta: x_source classic-country}
+{meta: x_source_file ghostinthishouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't pick up the [G7]mail I don't pick up the [C]phone
@@ -46,3 +49,7 @@
 [C]I'm just a ghost in this house
 [G7]I'm just a ghost in this [C]house
 {end_of_verse}
+
+
+
+

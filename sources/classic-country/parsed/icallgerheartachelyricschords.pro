@@ -1,5 +1,8 @@
 {meta: title I Call Her Heartache}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file icallgerheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some call her sweetheart but they just don’t [D7]know
@@ -21,3 +24,5 @@ In society’s manner I’d be out of [G]place
 Miss heartache’s no stranger [G7]we’ve met [C]before
 And it seems that each [G]meeting is [D7]worse than [G]before
 {end_of_verse}
+
+

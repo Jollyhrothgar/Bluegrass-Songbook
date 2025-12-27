@@ -1,5 +1,8 @@
 {meta: title The Old Man Is Dead}
 {meta: artist Del C. Way}
+{meta: x_source classic-country}
+{meta: x_source_file theoldmanisdeadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now and [Em]then an old [Am]friend of mine [F]I've not seen for [G7]sometime
@@ -34,3 +37,7 @@
 [F]But your looking on the [G7]outside if you could see [C]inside [Am][Em]instead
 [F]You would see a [G7]brand new man cause the old [F]man [G7]is [C]dead
 {end_of_verse}
+
+
+
+

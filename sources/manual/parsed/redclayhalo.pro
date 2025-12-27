@@ -1,6 +1,9 @@
 {meta: title Red Clay Halo}
 {meta: artist Gillian Welch}
 {meta: composer Gillian Welch}
+{meta: x_source manual}
+{meta: x_source_file redclayhalo.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Well, the [C]girls all dance with the boys from the city   
@@ -16,7 +19,7 @@ Though I [C]do my best with soap and water,
 That [G]dammed old dirt won't [C]go.    
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 But [F]when I pass through the [C]pearly gates
 Will my [G]gown be gold in[C]stead,
 Or just a [F]red clay robe with [C]red clay wings
@@ -45,9 +48,16 @@ But I [C]got no boat, so I'll be good and muddy
 When I [G]get to the other [C]side.   
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 But [F]when I pass through the [C]pearly gates
 Will my [G]gown be gold in[C]stead?
 I'll take a [F]red clay robe and [C]red clay wings
 And a [G]red clay halo for my [C]head
 {end_of_chorus}
+
+
+
+
+
+
+

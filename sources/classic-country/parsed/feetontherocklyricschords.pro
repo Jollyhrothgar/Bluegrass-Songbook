@@ -1,6 +1,9 @@
 {meta: title Feet On The Rock}
 {meta: artist Randy Travis}
 {meta: composer Troy Seals and Buck Moore}
+{meta: x_source classic-country}
+{meta: x_source_file feetontherocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I wanna talk to you for a minute [G]about an old man I met
@@ -49,3 +52,9 @@ So put your feet on the rock [D7]and your name on the [G]roll
 {start_of_verse: Verse 5}
 Put your feet on the rock [D7]and your name on the [G]roll
 {end_of_verse}
+
+
+
+
+
+

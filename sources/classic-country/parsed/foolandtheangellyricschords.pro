@@ -1,6 +1,9 @@
 {meta: title Fool And The Angel}
 {meta: artist Bobby Helms}
 {meta: composer Jimmy Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file foolandtheangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Here is the [Am]story of the [Dm]fool and the [G7]angel)
@@ -38,3 +41,8 @@ The [C]fool finds his [G7]angel [C]again
 But [Dm]always there's [G7]spark of [C]hope [Am]remain
 The [C]fool finds his [G7]angel [C]again
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Mean Mama Blues}
 {meta: artist Bob Wills}
 {meta: composer Waldo O'Neal, Jimmie Rodgers, Bob Sawyer}
+{meta: x_source classic-country}
+{meta: x_source_file meanmamablueslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For weary weeks I've waited hoping for the best
@@ -29,3 +32,6 @@ No money in my pocket I'm loafing around so flat
 And [F]when I'm miles [C]away [F]riding all the [C]while
 I’ll [D7]think of you mean mama I’ll [G7]think of you and [C]smile
 {end_of_verse}
+
+
+

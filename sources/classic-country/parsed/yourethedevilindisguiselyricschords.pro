@@ -1,6 +1,9 @@
 {meta: title You're The Devil In Disguise}
 {meta: artist Elvis Presley}
 {meta: composer Bill Giant, Bernie Baum, Florence Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file yourethedevilindisguiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You look like an angel walk like an angel
@@ -38,3 +41,7 @@ You look like an angel walk like [C]an angel
 You're the devil in [C]disguise
 Oh yes you [Am]are  
 {end_of_verse}
+
+
+
+

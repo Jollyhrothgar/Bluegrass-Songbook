@@ -1,6 +1,9 @@
 {meta: title Climbing Up The Mountain}
 {meta: artist Don Gibson}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file climbingupthemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](I'm climbin' up the mountain I'm climbin' up the mountain)
@@ -38,3 +41,8 @@ And I'll [G]reach the other [D7]side by and [G]by
 {start_of_verse: Verse 6}
 I'm climbin' and I'll reach the other [D7]side by and [G]by
 {end_of_verse}
+
+
+
+
+

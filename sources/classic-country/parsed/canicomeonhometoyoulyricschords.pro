@@ -1,6 +1,9 @@
 {meta: title Can I Come On Home To You}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file canicomeonhometoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I could apologize [F]but it might be too late for [C]that
@@ -28,3 +31,6 @@ And I'll walk [C]barefoot on the brimstone [F]just to prove I can be [C]true [Am
 But [C]after I go to hell [G7]can I come on home to [Am]you
 Baby [C]after I go to hell [G7]can I come on home to [F]you [C]
 {end_of_verse}
+
+
+

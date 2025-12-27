@@ -1,6 +1,9 @@
 {meta: title Especially You}
 {meta: artist Don Williams}
 {meta: composer Rick Baresdorf}
+{meta: x_source classic-country}
+{meta: x_source_file especiallyyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see the [G7]rainbow in [F]your [C]eyes
@@ -38,3 +41,7 @@ When you’re [Dm]near I feel clear [F]off the [C]ground
 [Dm]Reach for my arms and I will give [Em]you the [C]stars
 There is [Dm]nothing that’s [F]holding us [G7]down
 {end_of_verse}
+
+
+
+

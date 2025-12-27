@@ -1,5 +1,8 @@
 {meta: title I'm Glad You're Better}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file imgladyourebetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walk by the [D7]same spot [G]where we walked that [C]night
@@ -19,3 +22,5 @@ We [D7]both stood much too close to the [G]flame
 How I [D7]cry at the sound of your [G]name
 Don't think I'll [D7]make it I'm glad you're [G]better
 {end_of_verse}
+
+

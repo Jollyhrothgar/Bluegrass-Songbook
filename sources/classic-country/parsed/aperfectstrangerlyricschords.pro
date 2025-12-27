@@ -1,6 +1,9 @@
 {meta: title A Perfect Stranger}
 {meta: artist Faron Young}
 {meta: composer Lorene Allen and Kenny Starr}
+{meta: x_source classic-country}
+{meta: x_source_file aperfectstrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From the start I took the sweet love that she [C]gave me
@@ -40,3 +43,8 @@ And that's [D7]somethin' that I know I didn't [G]do
 {start_of_verse: Verse 6}
 And that's [D7]somethin' that I know I didn't [G]do
 {end_of_verse}
+
+
+
+
+

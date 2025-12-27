@@ -1,6 +1,9 @@
 {meta: title Crime Of Passion}
 {meta: artist Ricky Van Shelton}
 {meta: composer Walt Aldridge and Mac McAnally}
+{meta: x_source classic-country}
+{meta: x_source_file crimeofpassionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She had a ragtop El Dorado [F]tuck and roll [C]pleat
@@ -67,3 +70,12 @@ When she took me by the [F]hand
 It was the [F]crime of [C]passion
 It's just a [F]crime of [C]passion
 {end_of_verse}
+
+
+
+
+
+
+
+
+

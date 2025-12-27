@@ -1,5 +1,8 @@
 {meta: title Whiskey Whiskey Take My Mind}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeywhiskeytakemymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whiskey whiskey take my [F]mind
@@ -63,3 +66,11 @@
 [F]She won't ever [C]leave
 [F]She won't ever [C]leave
 {end_of_verse}
+
+
+
+
+
+
+
+

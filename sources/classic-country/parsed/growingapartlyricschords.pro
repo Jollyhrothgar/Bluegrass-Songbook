@@ -1,6 +1,9 @@
 {meta: title Growing Apart}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file growingapartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When we first started on our way through love
@@ -22,3 +25,5 @@ We had a mountain of our very own
 [G]We've just been waiting for something [Em]to give
 [C]And we've been [D7]standing in [G]line
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title We Don't Have To Do This}
 {meta: artist Tanya Tucker}
 {meta: composer Gary Burr and Victoria Shaw}
+{meta: x_source classic-country}
+{meta: x_source_file wedonthavetodothislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If [Em]any[D7]one had [G]told me [Em]things would [D7]get this [G]far
@@ -38,3 +41,8 @@ No we don't have to [G]do this we don't [C]have to [D7]say good[G]bye
 {start_of_verse: Verse 5}
 [C]We don't have to [G]do this we don't [C]have to [D7]say good[G]bye
 {end_of_verse}
+
+
+
+
+

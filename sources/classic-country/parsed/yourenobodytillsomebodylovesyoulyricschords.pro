@@ -1,6 +1,9 @@
 {meta: title You're Nobody Till Somebody Loves You}
 {meta: artist Jimmy Dean}
 {meta: composer Russ Morgan, James Cavanaugh, Larry Stock}
+{meta: x_source classic-country}
+{meta: x_source_file yourenobodytillsomebodylovesyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're nobody till [E7]somebody loves [A7]you
@@ -26,3 +29,5 @@
 [F]Oh you're nobody [D7]till somebody [C]loves [A7]you
 [Dm]So find yourself [G7]somebody [C]to [C][F]love
 {end_of_verse}
+
+

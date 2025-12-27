@@ -1,5 +1,8 @@
 {meta: title The Wind Blows Every Day In Oklahoma with chords}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thewindblowseverydayinoklahomalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the wind blows every [F]day in Okla[C]homa 
@@ -28,3 +31,6 @@ The [F]sun shines every [G7]day in Tenne[C]ssee
 The snow falls every [F]day in A[C]laska 
 And [F]I'll hurt [G7]till you come back to [C]me
 {end_of_verse}
+
+
+

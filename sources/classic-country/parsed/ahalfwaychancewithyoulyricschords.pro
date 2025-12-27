@@ -1,5 +1,8 @@
 {meta: title A Half Way Chance With You}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file ahalfwaychancewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If half of all the things you say were [F]true instead of lies
@@ -28,3 +31,6 @@ If [F]some of all the tears that fall were [C]yours and not all mine
 If [C]things were only turned around and [F]you were feeling blue
 Then [G7]in my heart I'd feel I had a half way chance with [C]you
 {end_of_verse}
+
+
+

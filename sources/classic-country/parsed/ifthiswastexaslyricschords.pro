@@ -1,6 +1,9 @@
 {meta: title If This Was Texas}
 {meta: artist Billy Mata}
 {meta: composer Jesse Shofner}
+{meta: x_source classic-country}
+{meta: x_source_file ifthiswastexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What happened to the [C]boy from El [G]Paso [D7]
@@ -40,3 +43,8 @@ And [C]I'll be there to [D7]watch the garden [G]grow
 {start_of_verse: Verse 5}
 Yes [C]I'll be there to [D7]watch the garden [G]grow
 {end_of_verse}
+
+
+
+
+

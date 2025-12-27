@@ -1,5 +1,8 @@
 {meta: title Women I've Never Had}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file womeniveneverhadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I like to play my [G7]music and have good [C]times 
@@ -28,3 +31,6 @@ Hey I don't mean to [G7]ever do anybody no [C]wrong
 [F]I do things that make some people [C]mad 
 And I like to have [G7]women I've never [C]had 
 {end_of_verse}
+
+
+

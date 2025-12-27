@@ -1,5 +1,8 @@
 {meta: title I'm Glad I'm Not Him}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file imgladimnothimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My buddy Jim has [F]loved a lot and [C]broke a lot of [G7]vows
@@ -26,3 +29,6 @@ If [F]I were Jim I’d [C]laugh in her face [F]find someone to [C]take her place
 [F]And I wouldn’t cry if [C]I were him but I’m [G7]glad that I’m not [C]him
 [G7]Glad that I’m not [C]him
 {end_of_verse}
+
+
+

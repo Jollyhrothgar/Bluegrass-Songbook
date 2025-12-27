@@ -1,6 +1,9 @@
 {meta: title Why}
 {meta: artist Tracy Byrd}
 {meta: composer Larry Bastian, Dewayne Blackwell, Bud Lee}
+{meta: x_source classic-country}
+{meta: x_source_file whylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where in a barroom [G7]when last night
@@ -37,3 +40,7 @@ And I can [G7]answer every question but [C]why
 {start_of_verse: Verse 4}
 I can [G7]answer every question but [C]why
 {end_of_verse}
+
+
+
+

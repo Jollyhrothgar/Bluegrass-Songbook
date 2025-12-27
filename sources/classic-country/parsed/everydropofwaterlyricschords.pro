@@ -1,6 +1,9 @@
 {meta: title Every Drop Of Water}
 {meta: artist Ricky Skaggs}
 {meta: composer Steve Seskin and Allen Shamblin}
+{meta: x_source classic-country}
+{meta: x_source_file everydropofwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Life is kinda like a roller coaster
@@ -41,3 +44,7 @@ Let [Am]tears of joy and [G]sorrow lead you [C]home
 Every drop of [D7]water shapes the [G]stone
 Life is kinda like a roller coaster up and down over and over [C]again[G]
 {end_of_verse}
+
+
+
+

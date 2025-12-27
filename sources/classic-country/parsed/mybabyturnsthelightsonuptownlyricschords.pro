@@ -1,6 +1,9 @@
 {meta: title My Baby Turns The Lights On Uptown}
 {meta: artist Porter Wagoner}
 {meta: composer Joyce Allsup}
+{meta: x_source classic-country}
+{meta: x_source_file mybabyturnsthelightsonuptownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She has always [G7]turned the lights on for [C]me
@@ -36,3 +39,7 @@ Cause [A7]now the lights she turns on[D7]  for me are blue
 I [C]wonder what my baby has [G]found
 When she goes to turn the [D7]lights on [G]uptown
 {end_of_verse}
+
+
+
+

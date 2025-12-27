@@ -1,6 +1,9 @@
 {meta: title I’ll Be Lucky Someday}
 {meta: artist Bob Wills}
 {meta: composer Lee Martin, Dick McBride, Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file illbeluckysomedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Feeling low feeling [G7]blue
@@ -43,3 +46,8 @@ She [C]went on her merry [F]way
 [C]But I just won't worry
 [G7]I'll be lucky some[C]day [C7]
 {end_of_verse}
+
+
+
+
+

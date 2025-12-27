@@ -1,6 +1,9 @@
 {meta: title Love Have Mercy On Us}
 {meta: artist Dolly Parton and Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file lovehavemercyonuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wasn't [D7]looking for [G]you when I [C]found you
@@ -37,3 +40,7 @@ Have [C]mercy on us don't let [D7]it [C]be [G]wrong
 And [G]now that you're mine may [C]love treat us [G]kind
 Oh love have [D7]mercy on [C]us  and our [G]love
 {end_of_verse}
+
+
+
+

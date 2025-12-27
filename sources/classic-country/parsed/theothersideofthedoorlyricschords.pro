@@ -1,6 +1,9 @@
 {meta: title The Other Side Of The Door}
 {meta: artist Hank Locklin}
 {meta: composer Fred Tobias and Leon Carr}
+{meta: x_source classic-country}
+{meta: x_source_file theothersideofthedoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we say goodnight I leave my [G7]hope
@@ -27,3 +30,6 @@ To spend my years to spend my [C]life
 [F]On the other side of the door with [C]you my love
 [G7]On the other side of the door with you my [C]love
 {end_of_verse}
+
+
+

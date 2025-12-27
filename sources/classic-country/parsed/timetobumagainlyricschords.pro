@@ -1,6 +1,9 @@
 {meta: title Time To Bum Again}
 {meta: artist Waylon Jennings}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file timetobumagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Woman you get meaner [C]every day
@@ -48,3 +51,9 @@ And it's [D7]time to bum [G]again
 Woman you've stirred up the [C]wild wild wind 
 And it's [D7]time to bum [G]again
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Two Strangers Passing In The Night}
 {meta: artist Mel Tillis}
 {meta: composer Kent Westberry and Hal Harbour}
+{meta: x_source classic-country}
+{meta: x_source_file justtwostrangerspassinginthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Here we [C]are for [G7]one night [C]only 
@@ -37,3 +40,7 @@ Cause [C]we'll just have a memory [F]come the morning [Dm]light
 {start_of_verse: Verse 5}
 Of two [F]strangers [C]passing [G7]in the [C]night
 {end_of_verse}
+
+
+
+

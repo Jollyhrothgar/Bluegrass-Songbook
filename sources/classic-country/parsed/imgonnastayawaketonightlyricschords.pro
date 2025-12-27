@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Stay Awake Tonight}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew, Tommy Blake, Charles Jiles, W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnastayawaketonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I called you on the phone 
@@ -43,3 +46,8 @@ What my [F]dream would be about
 I'm gonna [G7]stay awake tonight 
 To keep from [C]dreaming
 {end_of_verse}
+
+
+
+
+

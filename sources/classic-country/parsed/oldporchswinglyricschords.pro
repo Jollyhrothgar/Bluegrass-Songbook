@@ -1,6 +1,9 @@
 {meta: title Old Porch Swing}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen & Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file oldporchswinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Its hung there on the front porch
@@ -75,3 +78,17 @@ In that [G7]swing  that old porch [C]swing
 {start_of_verse: Verse 3}
 Its held four generations
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

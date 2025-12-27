@@ -1,6 +1,9 @@
 {meta: title Bonaparte's Retreat}
 {meta: artist Willie Nelson}
 {meta: composer Redd Stewart &amp; Pee Wee King}
+{meta: x_source classic-country}
+{meta: x_source_file bonapartesretreatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I met a girl I loved in a town way down in [G]Texas
@@ -25,3 +28,7 @@ And I heard her say please don't you ever go away
 {start_of_verse: Verse 5}
 repeat
 {end_of_verse}
+
+
+
+

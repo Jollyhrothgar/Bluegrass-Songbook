@@ -1,6 +1,9 @@
 {meta: title Fool Hearted Memory}
 {meta: artist George Strait}
 {meta: composer Byron Hill and Alan R. Mevis}
+{meta: x_source classic-country}
+{meta: x_source_file foolheartedmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Nickels and dimes  [G7]memories and [Em]wine
@@ -26,3 +29,5 @@ She was his girl  [G7]his only [Em]world
 [Am]He fills the jukebox then [D7]plays that same ole song
 [Am]He fills his glass and then he [D7]turns her memory on
 {end_of_verse}
+
+

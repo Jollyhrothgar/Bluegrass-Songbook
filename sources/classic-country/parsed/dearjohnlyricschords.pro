@@ -1,6 +1,9 @@
 {meta: title Dear John}
 {meta: artist Hank Williams}
 {meta: composer Aubrey Gass and Tex Ritter}
+{meta: x_source classic-country}
+{meta: x_source_file dearjohnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well when I woke up this mornin'
@@ -110,3 +113,28 @@ But your wife has done been in
 And that's all she wrote Dear John
 [G7]I've sent your saddle [C]home
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

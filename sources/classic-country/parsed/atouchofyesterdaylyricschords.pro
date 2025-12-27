@@ -1,6 +1,9 @@
 {meta: title A Touch Of Yesterday}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file atouchofyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd beg and [E7]steal [F]if I could [D7]feel
@@ -27,3 +30,6 @@ Oh what I'd [E7]give [F]if I could [D7]live
 Oh what I'd [E7]give [F]if I could [D7]live
 [C]A touch of [F]yes[G7]ter[C]day
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tell Me My Lying Eyes Are Wrong}
 {meta: artist George Jones}
 {meta: composer Dallas Frazier and Sanger Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file tellmemylyingeyesarewronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The night shift got off [C]early because of major [G]repairs
@@ -24,3 +27,5 @@ Tell [G]me that your old used to be didn't [C]bring you home at [G]dawn
 Sweetheart tell me my [D7]lying eyes are [G]wrong
 Sweetheart tell me my [D7]lying eyes are [G]wrong
 {end_of_verse}
+
+

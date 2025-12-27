@@ -1,6 +1,9 @@
 {meta: title Without You Here}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Royce Porter}
+{meta: x_source classic-country}
+{meta: x_source_file withoutyouherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her ship set sail from the docks of Miami
@@ -53,3 +56,9 @@ It's no [F]place to be
 This dream vacation is a bad situation I'm in [C]misery
 In the [G7]sea of tears without you [C]here
 {end_of_verse}
+
+
+
+
+
+

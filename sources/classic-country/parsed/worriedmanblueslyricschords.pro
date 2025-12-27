@@ -1,6 +1,9 @@
 {meta: title Worried Man Blues}
 {meta: artist Mel Tillis}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file worriedmanblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It takes a worried man to sing a worried song
@@ -76,3 +79,17 @@ This [C]train I ride is twenty one coaches [G]long
 I'm [D7]worried now but I won't be worried [G]long
 I'm [D7]worried now but I won't be worried [G]long
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

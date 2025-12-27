@@ -1,6 +1,9 @@
 {meta: title It Is No Secret}
 {meta: artist Tennessee Ernie Ford}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file itisnosecretlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It [D7]is [G7]no [C]secret what [D7]God can [G]do
@@ -36,3 +39,7 @@ What He's done for [D7]others He'll do for [G]you
 [G7]With arms wide [C]open He'll pardon [G]you
 It is no [D7]secret what God can [G]do
 {end_of_verse}
+
+
+
+

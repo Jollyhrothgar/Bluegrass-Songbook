@@ -1,6 +1,9 @@
 {meta: title Last Guard}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Richard O'Brien}
+{meta: x_source classic-country}
+{meta: x_source_file lastguardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I like the last guard cause it's [F]usually [G7]quite
@@ -48,3 +51,9 @@ And I [F]ride back to [C]camp in the [G7]dawn's golden [C]light
 The [F]cattle are [C]sleeping it’s [G7]been a good [C]night
 And I [F]ride back to [C]camp in the [G7]dawn's golden [C]light
 {end_of_verse}
+
+
+
+
+
+

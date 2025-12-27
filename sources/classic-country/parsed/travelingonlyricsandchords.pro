@@ -1,6 +1,9 @@
 {meta: title Traveling On}
 {meta: artist Faron Young}
 {meta: composer Audrey Grisman}
+{meta: x_source classic-country}
+{meta: x_source_file travelingonlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Traveling on in the good ol way
@@ -33,3 +36,6 @@ Traveling on to a country so [G7]fair
 Traveling on [C]where a mansion is [F]waiting
 Traveling [C]on to a [G7]beautiful [C]home
 {end_of_verse}
+
+
+

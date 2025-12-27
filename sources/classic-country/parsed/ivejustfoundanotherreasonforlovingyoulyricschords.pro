@@ -1,6 +1,9 @@
 {meta: title I've Just Found Another Reason For Loving You}
 {meta: artist Charley Pride}
 {meta: composer Joe Keene and Charles Isbell}
+{meta: x_source classic-country}
+{meta: x_source_file ivejustfoundanotherreasonforlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somehow you know just what it takes to please [C]me
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]And I've just [G]found another [D7]reason for loving [G]you
 {end_of_verse}
+
+
+
+

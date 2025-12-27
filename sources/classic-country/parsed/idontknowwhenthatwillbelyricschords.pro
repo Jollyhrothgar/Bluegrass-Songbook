@@ -1,5 +1,8 @@
 {meta: title I Don't Know When That Will Be}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file idontknowwhenthatwillbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ll walk away [F]from your heart someday
@@ -21,3 +24,5 @@ Though [C]I don’t [G7]know when that will [C]be
 [C]I’ll be like you and [F]find someone [Fm]new
 Though [C]I don’t [G7]know when that will [C]be
 {end_of_verse}
+
+

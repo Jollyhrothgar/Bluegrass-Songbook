@@ -1,5 +1,8 @@
 {meta: title Little Baby In A Manger (I Love You)}
 {meta: artist Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file littlebabyinamangeriloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Little Baby in the manger I love [D7]you
@@ -32,3 +35,7 @@ Lying there to earth a stranger I love [G]you
 Wise men saw the star and answered [G7]I love [C]you
 Shepherds heard the [G]angels saying [A7]I  [D7]love [G]you
 {end_of_verse}
+
+
+
+

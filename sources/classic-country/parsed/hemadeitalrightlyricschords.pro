@@ -1,5 +1,8 @@
 {meta: title He Made It Alright}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file hemadeitalrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 He Made It Alright   
@@ -108,3 +111,18 @@ Al[F]right (He made it alright)
 He made it alright (He made it [Dm]alright)
 [G7]Alri[F]ght
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

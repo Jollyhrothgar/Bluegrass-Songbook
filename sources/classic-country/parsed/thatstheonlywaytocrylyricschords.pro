@@ -1,6 +1,9 @@
 {meta: title That's The Only Way To Cry}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and Cliff Massey}
+{meta: x_source classic-country}
+{meta: x_source_file thatstheonlywaytocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That's the only way to [F]cry  [G7]that's the only way to [C]cry
@@ -23,3 +26,6 @@ When you're in love like you and [F]I  [G7]that's the only way to [C]cry
 {start_of_verse: Verse 4}
 When you're in love like you and I  [F]that's [G7]the only way to cry [C]cry
 {end_of_verse}
+
+
+

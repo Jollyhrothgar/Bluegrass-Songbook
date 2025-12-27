@@ -1,6 +1,9 @@
 {meta: title But For The Grace Of God}
 {meta: artist Pat Boone}
 {meta: composer Jack Lebsock}
+{meta: x_source classic-country}
+{meta: x_source_file butforthegraceofGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A tramp on the street homeless and weak
@@ -75,3 +78,16 @@ The steel of my soul could have weakened at best
 [G]As a child when she holds
 [A7]A bird with a broken [D7]wing
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

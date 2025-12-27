@@ -1,6 +1,9 @@
 {meta: title Hands Can Say A Lot Beneath The Table}
 {meta: artist Johnny Bush}
 {meta: composer Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file handscansayalotbeneaththetablelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The man who sits [C7]across from me don't [F]know it
@@ -33,3 +36,7 @@ When lips can't say what they want you to [G7]know
 {start_of_verse: Verse 5}
 And your hands just told me [G7]all I need to [C]know
 {end_of_verse}
+
+
+
+

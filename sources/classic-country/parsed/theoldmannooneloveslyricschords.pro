@@ -1,6 +1,9 @@
 {meta: title The Old Man No One Loves}
 {meta: artist George Jones}
 {meta: composer Wyman Asbill}
+{meta: x_source classic-country}
+{meta: x_source_file theoldmannooneloveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a bar room down in Georgia sits an [C]old man 
@@ -50,3 +53,9 @@ The [A7]tales he tells are taller than the [D7]sky
 The [G]old man no one [G7]loves could tell some [C]big ones 
 And everybody laughs and says you [D7]know that old man [G]lies 
 {end_of_verse}
+
+
+
+
+
+

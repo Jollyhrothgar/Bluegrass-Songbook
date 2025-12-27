@@ -1,6 +1,9 @@
 {meta: title Broken Hearts Will Haunt Your Soul}
 {meta: artist Ray Price}
 {meta: composer Jelly Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file brokenheartswillhauntyoursoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Each time you think a man loves you 
@@ -43,3 +46,8 @@ Don’t [C]be a fool it never pays
 [D7]For my revenge I paid ten fold
 Your broken heart now haunts my [G]soul
 {end_of_verse}
+
+
+
+
+

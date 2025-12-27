@@ -1,5 +1,8 @@
 {meta: title But Not Today}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file butnottodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today out of the clear blue
@@ -27,3 +30,5 @@ I may [C]learn to give it all up
 I may drink wine from our lovie cup
 I may find a way [G7]someday but not [C]today
 {end_of_verse}
+
+

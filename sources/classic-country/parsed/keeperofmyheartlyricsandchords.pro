@@ -1,5 +1,8 @@
 {meta: title Keeper Of My Heart}
 {meta: artist Isla Grant}
+{meta: x_source classic-country}
+{meta: x_source_file keeperofmyheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your the rock I always lean on when [G7]things I do go [C]wrong
@@ -32,3 +35,7 @@ You're my [G]hero your my [D7]everything your the [C]keeper of my [G]heart
 {start_of_verse: Verse 4}
 You're my hero your my everything your the [D7]keeper of my [G]heart
 {end_of_verse}
+
+
+
+

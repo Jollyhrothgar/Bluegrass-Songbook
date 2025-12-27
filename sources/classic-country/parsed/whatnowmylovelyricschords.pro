@@ -1,5 +1,8 @@
 {meta: title What Now My Love}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file whatnowmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What now my love now that you left me
@@ -39,3 +42,9 @@ If I should [F]live or [G7]die
 [C]What now my love now there is nothing
 Only my [Dm]last [C]goodbye only my [F]l-ast [C][G7]goodbye
 {end_of_verse}
+
+
+
+
+
+

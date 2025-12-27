@@ -1,6 +1,9 @@
 {meta: title Tanqueray}
 {meta: artist Vern Gosdin}
 {meta: composer Jim Vest, Vern Gosdin, Mac Vicory, Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file tanqueraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once again I slip back in the gin and [G7]settle in
@@ -38,3 +41,7 @@ Take me away Tanque[C]ray
 Each [G7]time that I need her gets sweeter and sweeter
 Take me away Tanque[C]ray
 {end_of_verse}
+
+
+
+

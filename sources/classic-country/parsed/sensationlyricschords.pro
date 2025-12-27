@@ -1,6 +1,9 @@
 {meta: title Sensation}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file sensationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sensation  sensation  I’ve gotta sen[F]sation new to [C]me
@@ -40,3 +43,7 @@ Because it’s [C]lovin’ lovin’
 Is [G7]what makes me feel so [C]good
 [G7]Ooh ooh ooh [C]ooh  [G7]ooh ooh ooh [C]ooh 
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Are The Seeds Still In The Barn}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file aretheseedsstillinthebarnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Is it almost the end of the [C]season
@@ -32,3 +35,7 @@ And are the [G]seeds [D7]still in the [G]barn
 {start_of_verse: Verse 5}
 [C]Yes are the [G]seeds [D7]still in the [G]barn
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ancient History}
 {meta: artist Johnny Cash}
 {meta: composer Wayne P. Walker and Irene Stanton}
+{meta: x_source classic-country}
+{meta: x_source_file ancienthistorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just walk on out the door it's all [D7]over
@@ -29,3 +32,6 @@ In the book of heartaches that you'll leave [D7]behind
 Cause [G]I've found out I'm better off [D7]without you
 You're [C]ancient history [D7]to this heart of [G]mine
 {end_of_verse}
+
+
+

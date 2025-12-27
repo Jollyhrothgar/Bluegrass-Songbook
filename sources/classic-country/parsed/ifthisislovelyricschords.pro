@@ -1,6 +1,9 @@
 {meta: title If This Is Love}
 {meta: artist Jack Greene}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file ifthisislovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This morning my [G7]mind looked [C]around and couldn't find 
@@ -31,3 +34,6 @@ Let me fall out of [G7]love to[C]day
 Oh [F]if this is all [C]there is to love 
 Let me fall out of [G7]love to[C]day
 {end_of_verse}
+
+
+

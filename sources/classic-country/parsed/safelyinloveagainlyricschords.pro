@@ -1,6 +1,9 @@
 {meta: title Safely In Love Again}
 {meta: artist Faron Young}
 {meta: composer Ned Miller and Susan Miller}
+{meta: x_source classic-country}
+{meta: x_source_file safelyinloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought I’d remember 
@@ -51,3 +54,9 @@ Oh well I’m safely in love again
 {start_of_verse: Verse 6}
 [F]This time I [G7]fell in love with [C]you
 {end_of_verse}
+
+
+
+
+
+

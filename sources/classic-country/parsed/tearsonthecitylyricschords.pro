@@ -1,6 +1,9 @@
 {meta: title Tears On The City}
 {meta: artist Billy Walker}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file tearsonthecitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tears of the [Dm]city [G7]now fill poor [C]Liza's eyes
@@ -33,3 +36,7 @@ She got a [G7]big surprise from all of those [C]city lies
 Tears of the [Dm]city [G7]now fill poor [C]Liza's heart
 Smart little [G7]Liza wasn't very [C]smart
 {end_of_verse}
+
+
+
+

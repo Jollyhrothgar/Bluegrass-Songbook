@@ -1,6 +1,9 @@
 {meta: title Counting My Teardrops}
 {meta: artist Johnny Tillotson}
 {meta: composer Johnny Tillotson and Paul Tannen}
+{meta: x_source classic-country}
+{meta: x_source_file countingmyteardropslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll keep [F]counting teardrops [G7]till you’re back [C]again
@@ -26,3 +29,6 @@ And my dreams have gone to pieces seems [C]I just can't win
 Since you've been gone I [C7]don't know [F]what I'll do
 Cause my dreams were all built around [G7]dreams that'll never come [C]true
 {end_of_verse}
+
+
+

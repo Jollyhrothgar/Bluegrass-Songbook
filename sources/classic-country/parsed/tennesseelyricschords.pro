@@ -1,5 +1,8 @@
 {meta: title Tennessee}
 {meta: artist Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now there are folks who like to brag about where they [D7]came from
@@ -49,3 +52,9 @@ As they play it up in Nashville every[C]day
 Let's give old Tennessee credit for [F]music
 As they [G7]play it in that old Hillbilly [C]way
 {end_of_verse}
+
+
+
+
+
+

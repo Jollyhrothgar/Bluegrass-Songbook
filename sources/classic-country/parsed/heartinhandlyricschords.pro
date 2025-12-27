@@ -1,6 +1,9 @@
 {meta: title Heart In Hand}
 {meta: artist Brenda Lee}
 {meta: composer Jackie DeShannon and Sharon Sheeley}
+{meta: x_source classic-country}
+{meta: x_source_file heartinhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Here [C]I [Dm][Am]stand----------heart [C][G7]in [Dm][Am]hand
@@ -26,3 +29,7 @@
 [Am]Here I [G7][Dm]stand------I've [Am][C]got my heart in my [Dm]hand
 [G7]Looking like a [Am][C]fool----left [F]behind [G7]by [C]you
 {end_of_verse}
+
+
+
+

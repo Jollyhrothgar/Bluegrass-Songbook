@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Keep On Loving Him}
 {meta: artist Tammy Wynette}
 {meta: composer Norro Wilson and Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnakeeponlovinghimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He ain't no saint I [F]know he'll never [C]be
@@ -40,3 +43,8 @@ So as long as I have [C]breath in me I'm gonna [G7]keep on loving [C]him
 {start_of_verse: Verse 4}
 So as [F]long as I have [C]breath in me I'm gonna [G7]keep on loving [C]him
 {end_of_verse}
+
+
+
+
+

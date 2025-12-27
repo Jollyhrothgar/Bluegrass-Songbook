@@ -1,6 +1,9 @@
 {meta: title My Heart Is Broken In Three}
 {meta: artist Slim Whitman}
 {meta: composer Ray Glasser}
+{meta: x_source classic-country}
+{meta: x_source_file myheartisbrokeninthreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart is [G7]broken in [C]three
@@ -37,3 +40,7 @@ I [F]can’t untangle this [C]sweetheart triangle
 Which one was [G7]made just for [C]me
 Oh gee my [G7]heart is broken in [C]three
 {end_of_verse}
+
+
+
+

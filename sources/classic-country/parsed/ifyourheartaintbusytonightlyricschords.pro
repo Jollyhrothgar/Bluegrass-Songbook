@@ -1,6 +1,9 @@
 {meta: title If Your Heart Ain't Busy Tonight}
 {meta: artist Tanya Tucker}
 {meta: composer Chris Waters and Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file ifyourheartaintbusytonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If your heart ain't busy tonight
@@ -44,3 +47,9 @@ So [A7]all of you can fall in love with all of  [D7]me
 [G]If your heart ain't busy tonight
 [C]Maybe it would like to get with [G]mine
 {end_of_verse}
+
+
+
+
+
+

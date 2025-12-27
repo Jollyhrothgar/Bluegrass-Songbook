@@ -1,5 +1,8 @@
 {meta: title Right After The Dance}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file rightafterthedancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I would if I could and if I got the [C]chance 
@@ -28,3 +31,6 @@ And [D7]maybe you'll say oh yes I [G]do
 Well I'll be the teacher if you'll take a [C]chance
 And [D7]we'll head for the preacher right after the [G]dance
 {end_of_verse}
+
+
+

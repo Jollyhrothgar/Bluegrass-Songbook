@@ -1,6 +1,9 @@
 {meta: title Daytime Friends}
 {meta: artist Kenny Rogers}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file daytimefriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]And he'll tell her  [F]he's [C]working late [F]again
@@ -42,3 +45,7 @@ They don't [C]want to hurt the [F]other
 So they love [C]in the [F]nighttime
 And shake hands in the light of [C]day
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title It's Time You Learned About Goodbye}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file itstimeyoulearnedaboutgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've been on the wrong side of the [C]front door too [G]often
@@ -43,3 +46,8 @@ And a chance for you to [D7]cry
 [C]It's time you [D7]learned about [G]goodbye
 [C]It's time you [D7]learned about [G]goodbye
 {end_of_verse}
+
+
+
+
+

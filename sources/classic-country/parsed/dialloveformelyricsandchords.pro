@@ -1,6 +1,9 @@
 {meta: title Dial L.O.V.E. For Me Lyrics chords}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file dialloveformelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dial L.O.V.E. for me
@@ -51,3 +54,8 @@ Dial L.O.V.E. for me
 [G7]For the gals that’s unassisted that’s why my number’s [C]listed
 [D7]Under L.O.V.E. [G7]in you [C]book
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We'll Stick Together}
 {meta: artist Kitty Wells}
 {meta: composer Bill Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file wellsticktogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cause we stuck together through the [F]lean lean years
@@ -36,3 +39,7 @@ The [C]lean and hungry years were filled with [G7]strife
 Now [C]we're still together in the [F]green green years
 And [C]we'll stick together for the [G7]rest of our [C]life
 {end_of_verse}
+
+
+
+

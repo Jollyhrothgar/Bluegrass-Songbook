@@ -1,5 +1,8 @@
 {meta: title Joseph Built The Cradle}
 {meta: artist Joni Harms}
+{meta: x_source classic-country}
+{meta: x_source_file josephbuiltthecradlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can hear his hammer tapping
@@ -61,3 +64,11 @@ Joseph built the cradle that [G7]rocked the [C]world
 Yes Joseph [F]built the [C]cradle 
 That [G7]rocked the [C]world
 {end_of_verse}
+
+
+
+
+
+
+
+

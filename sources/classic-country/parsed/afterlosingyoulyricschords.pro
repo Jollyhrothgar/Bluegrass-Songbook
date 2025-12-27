@@ -1,6 +1,9 @@
 {meta: title After Losing You}
 {meta: artist Jim Ed Brown}
 {meta: composer Lee McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file afterlosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All the places we [C]used to go [D7]all the things we used to [G][C]d--o
@@ -29,3 +32,6 @@ I thought no one could come between [C]us
 You've put me down I went to [C]pieces 
 [D7]After losing [G]you
 {end_of_verse}
+
+
+

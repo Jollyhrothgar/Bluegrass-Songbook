@@ -1,6 +1,9 @@
 {meta: title I Believe He's The Son Of God}
 {meta: artist Melba Montgomery}
 {meta: composer Melba Montgomery and Carl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file ibelievehesthesonofGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 I Believe He's The Son Of God
@@ -51,3 +54,8 @@ Yes they [C]laughed and pierced His sides
 And they [F]cursed Him while He [C]died
 Still He asked they be for[G7]given and set [C]free
 {end_of_verse}
+
+
+
+
+

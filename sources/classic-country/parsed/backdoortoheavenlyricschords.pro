@@ -1,6 +1,9 @@
 {meta: title Back Door To Heaven}
 {meta: artist Sonny James}
 {meta: composer Carole Smith and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file backdoortoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]We took the back door to [G]heaven
@@ -42,3 +45,9 @@ When you cried then I became
 {start_of_verse: Verse 5}
 [D7]When heavenly love taught our hearts how [G]to [G][C]care
 {end_of_verse}
+
+
+
+
+
+

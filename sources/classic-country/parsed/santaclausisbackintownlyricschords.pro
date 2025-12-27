@@ -1,6 +1,9 @@
 {meta: title Santa Claus Is Back In Town}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Leiber and Mike Stoller}
+{meta: x_source classic-country}
+{meta: x_source_file santaclausisbackintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Christmas [C]Christmas [G]Christmas
@@ -42,3 +45,9 @@ And the snow is falling on the [G]ground
 Well you [D7]be a real good little baby       
 [C]Santa Claus is back in [G]town
 {end_of_verse}
+
+
+
+
+
+

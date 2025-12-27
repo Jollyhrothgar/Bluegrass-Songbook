@@ -1,6 +1,9 @@
 {meta: title I Haven't Got The Heart}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Happy Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file ihaventgottheheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I was free from you my darling I would start my life anew
@@ -31,3 +34,8 @@ Just suppose and I should leave you take another for my own
 Well I'm ashamed down deep inside that I have ever been untrue
 [G7]But I haven't got the heart to say I'm not in love with [C]you
 {end_of_verse}
+
+
+
+
+

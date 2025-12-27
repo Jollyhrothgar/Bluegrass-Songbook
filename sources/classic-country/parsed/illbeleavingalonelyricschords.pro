@@ -1,6 +1,9 @@
 {meta: title I'll Be Leaving Alone}
 {meta: artist Charlie Pride}
 {meta: composer Wayland Holyfield and Dickey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file illbeleavingalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes I'll buy you a drink if [F]you'd like me [C]to 
@@ -29,3 +32,6 @@ Ain't making it easy for [G7]me to say [C]no
 She's the [C]mother of my [C7]children I'm the [F]rock she leans [D7]on
 So [C]thank you but no thank you I'll be [G7]leaving [C]alone
 {end_of_verse}
+
+
+

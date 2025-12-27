@@ -1,6 +1,9 @@
 {meta: title The Girl I Love}
 {meta: artist Carl Smith}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlilovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The girl I love wears faded [F]cotton [C]dresses
@@ -34,3 +37,7 @@ And friend there’s never [G7]been nobody [C]else
 Tag:
 [F]And friend there’s never [G7]been nobody [C]else
 {end_of_verse}
+
+
+
+

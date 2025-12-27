@@ -1,6 +1,9 @@
 {meta: title Always Be Kind To Your Mother}
 {meta: artist The Coon Ridge Ramblers}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file alwaysbekindtoyourmotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Always be [F]kind to your [C]mother
@@ -36,3 +39,7 @@ But someday we’ll [G7]enter with[C]in
 A mansion with [F]God up in [C]glory
 Then [G7]I’ll be with mother [C]again
 {end_of_verse}
+
+
+
+

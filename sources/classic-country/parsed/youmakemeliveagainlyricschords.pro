@@ -1,6 +1,9 @@
 {meta: title You Make Me Live Again}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker and Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file youmakemeliveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I once lost my heart and I swore
@@ -35,3 +38,8 @@ I hope this is one heart I [G7]win
 [F]You're all that I think of you be my true [C]love
 [G7]You make me live [C]again
 {end_of_verse}
+
+
+
+
+

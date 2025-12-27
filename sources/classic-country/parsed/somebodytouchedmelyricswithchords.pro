@@ -1,6 +1,9 @@
 {meta: title Somebody Touched Me}
 {meta: artist The Cathedrals}
 {meta: composer Savannah Foust}
+{meta: x_source classic-country}
+{meta: x_source_file somebodytouchedmelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many years he walked in darkness
@@ -56,3 +59,10 @@ I was in [F]darkness when Jesus [C]found [Am]me
 But since He [D7]touched [G7]me thank God I'm [C]free
 But I'm [D7]now [C]I'm [F]free thank God I'm [C]free
 {end_of_verse}
+
+
+
+
+
+
+

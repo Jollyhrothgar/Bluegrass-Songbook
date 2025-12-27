@@ -1,6 +1,9 @@
 {meta: title Mr. Mistletoe}
 {meta: artist Lynn Anderson}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file mrmistletoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mr. Mistletoe every[F]where you go 
@@ -44,3 +47,8 @@ Mr. [C]Mistletoe [G7]and people in [C]love [G7]
 {start_of_verse: Verse 5}
 Mr. [C]Mistletoe [G7]and people in [F]love[C]
 {end_of_verse}
+
+
+
+
+

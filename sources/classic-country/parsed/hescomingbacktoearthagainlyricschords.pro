@@ -1,6 +1,9 @@
 {meta: title He's Coming Back To Earth Again}
 {meta: artist Reno and Smiley}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file hescomingbacktoearthagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walked into a [C]church one [G]day
@@ -43,3 +46,8 @@ To [C]claim His [A7]children [D7]here
 And if we [G]will a[C]bide in [G]Him
 He'll take us [A7]home where [D7]there's no [G]fear
 {end_of_verse}
+
+
+
+
+

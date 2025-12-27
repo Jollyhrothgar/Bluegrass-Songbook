@@ -1,5 +1,8 @@
 {meta: artist Elvis Presley}
 {meta: composer Steve Tyrell and Mark James}
+{meta: x_source classic-country}
+{meta: x_source_file itsonlylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see the sunlight in her [F]hair
@@ -36,3 +39,7 @@ It's only [C]love but I know I'll get by
 Take my [F]heart and my pride and just [G7]throw it [F]aside
 It's only [C]love
 {end_of_verse}
+
+
+
+

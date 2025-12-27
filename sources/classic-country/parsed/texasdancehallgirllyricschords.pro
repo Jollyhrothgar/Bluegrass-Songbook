@@ -1,6 +1,9 @@
 {meta: title Texas Dance Hall Girl with chords}
 {meta: artist Ernest Tubb}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file texasdancehallgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's the first one on the dance floor 
@@ -37,3 +40,7 @@ She's a [F]sad and lonely [C]Texas [G7]dance hall [C]girl
 {start_of_verse: Verse 4}
 She's just a [F]sad and lonely [C]Texas [G7]dance hall [C]girl
 {end_of_verse}
+
+
+
+

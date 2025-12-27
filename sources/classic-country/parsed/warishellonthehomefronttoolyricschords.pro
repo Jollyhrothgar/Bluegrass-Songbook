@@ -1,6 +1,9 @@
 {meta: title War Is Hell On The Homefront Too}
 {meta: artist T.G. Sheppard}
 {meta: composer Curly Putman, Bucky Jones, Dan Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file warishellonthehomefronttoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was July hot in Georgia in 1942   
@@ -65,3 +68,9 @@ I can’t fight this fire alone
 [F]Stay with me until it’s gone
 [G7]Ooh war is hell on the homefront [C]too
 {end_of_verse}
+
+
+
+
+
+

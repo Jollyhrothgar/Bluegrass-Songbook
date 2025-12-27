@@ -1,6 +1,9 @@
 {meta: title Your Sweet Lies}
 {meta: artist Tammy Wynette}
 {meta: composer David Chamberlain and James Vest}
+{meta: x_source classic-country}
+{meta: x_source_file yoursweetlieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You know you can have me [C]anytime you [G]want me
@@ -24,3 +27,5 @@ I [G]believe you one more [C]time because [G]I love yo[C]u
 And your [G]sweet lies just turned [A7]down [D7]my sheets [G]again [C]  [G]
 [C]Hum hum [G]hum hum hum hum [D7]hum hum hum [G]hum [C]  [G]
 {end_of_verse}
+
+

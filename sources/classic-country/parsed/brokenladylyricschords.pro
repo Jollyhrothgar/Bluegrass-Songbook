@@ -1,6 +1,9 @@
 {meta: title Broken Lady}
 {meta: artist Gatlin Brothers}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file brokenladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's a broken [C]lady [G]waiting to be [C]mended
@@ -29,3 +32,6 @@ Like a [G]potter would [C]mend a broken [G]vase
 A broken [C]lady [G]waiting to be [C]mended
 And have what's [G]left of the [D7]pieces put back in [C]pla[G]ce
 {end_of_verse}
+
+
+

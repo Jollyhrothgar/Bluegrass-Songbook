@@ -1,6 +1,9 @@
 {meta: title If You Won't Tell On Me}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwonttellonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ol' heart the way our [G7]true love has been [C]doin'
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]No if [C]you won't tell on me I [G7]won't tell on [C]you
 {end_of_verse}
+
+
+
+

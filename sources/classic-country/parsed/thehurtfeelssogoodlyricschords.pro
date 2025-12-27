@@ -1,5 +1,8 @@
 {meta: title The Hurt Feels So Good}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file thehurtfeelssogoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The [G7]hurt feels so good [C]now
@@ -42,3 +45,8 @@
 [C]What the pain was is gone now
 [G7]And the hurt feels so [C]good
 {end_of_verse}
+
+
+
+
+

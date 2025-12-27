@@ -1,6 +1,9 @@
 {meta: title I'm Stoned}
 {meta: artist Alabama}
 {meta: composer Randy Owens and Teddy Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file imstonedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sitting here and drinking hey that's my favorite [G7]song
@@ -30,3 +33,6 @@
 [F]Not caring if she ever comes [Am][C]h-ome
 [Dm]I've had no [G7]sleep sad songs I'm [C]stoned
 {end_of_verse}
+
+
+

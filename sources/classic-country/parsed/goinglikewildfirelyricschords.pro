@@ -1,6 +1,9 @@
 {meta: title Going Like Wildfire}
 {meta: artist Mac Wiseman}
 {meta: composer George E. Krise}
+{meta: x_source classic-country}
+{meta: x_source_file goinglikewildfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your charms are closing in on my just like a prairie [D7]fire
@@ -43,3 +46,8 @@ No matter where or how I've done [A7]there you [D7]are
 [G]Sweeping on and getting closer darling can't you [C]see
 You're [G]going [D7]like wildfire with [G]me
 {end_of_verse}
+
+
+
+
+

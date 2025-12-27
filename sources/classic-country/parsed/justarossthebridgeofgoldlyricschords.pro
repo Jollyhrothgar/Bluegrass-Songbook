@@ -1,5 +1,8 @@
 {meta: title Just Across the Bridge of Gold}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file justarossthebridgeofgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As the twilight shadows deepen
@@ -56,3 +59,10 @@ I am asking God's forgiveness
 [C]Out beyond that blue [F]horizon
 [G7]Just across the bridge of [C]gold
 {end_of_verse}
+
+
+
+
+
+
+

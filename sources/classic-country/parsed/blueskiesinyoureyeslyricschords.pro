@@ -1,6 +1,9 @@
 {meta: title Blue Skies In Your Eyes}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Ruth Blankenship and Ed Butner}
+{meta: x_source classic-country}
+{meta: x_source_file blueskiesinyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m longing tonight for those [G7]blues eyes so bright
@@ -29,3 +32,6 @@ Those [F]blue skies are shining [C]deep in your eyes
 [C]Say you’ll forgive me and [G7]love me again
 Tell me your love is still [C]true
 {end_of_verse}
+
+
+

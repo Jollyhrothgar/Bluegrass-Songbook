@@ -1,6 +1,9 @@
 {meta: title Get Some Loving Done}
 {meta: artist Conway Twitty}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file getsomelovingdonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I gotta get up and get some [C]loving [G]done 
@@ -40,3 +43,8 @@ We’re gonna get [G]up and get [D7]some loving [G]done
 {start_of_verse: Verse 5}
 Get up and get me [C]some loving [G]done
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I've Got Jesus In My Soul}
 {meta: artist Johnny Cash}
 {meta: composer Tom Ross and Joel Sonnier}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotJesusinmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve got Jesus in my [C7]soul
@@ -46,3 +49,8 @@ And it [F]shook me right out of my [C]sleep
 As His love entered in it washed away my [Am]sin
 And I [C]praise Him [G7]down on my [C]knees
 {end_of_verse}
+
+
+
+
+

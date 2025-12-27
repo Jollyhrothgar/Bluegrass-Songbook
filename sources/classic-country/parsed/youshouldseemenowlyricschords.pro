@@ -1,6 +1,9 @@
 {meta: title You Should See Me Now}
 {meta: artist Cal Smith}
 {meta: composer Chuck Howard and Darrell Thomas Puckett}
+{meta: x_source classic-country}
+{meta: x_source_file youshouldseemenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I re[D7]member [G]loving you and [D7]how you felt so good
@@ -23,3 +26,5 @@ I tried to [C]fight it but I’ve thrown [G]in the towel
 If you think I was hurtin’ [C]then you should [D7]see me [G]now
 If you think I was hurtin’ [C]then you should [D7]see me [G]now
 {end_of_verse}
+
+

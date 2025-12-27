@@ -1,6 +1,9 @@
 {meta: title Today All Over Again}
 {meta: artist Reba McEntire}
 {meta: composer Bobby Harden and Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file todayalloveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is this how it is when it's [F]over 
@@ -40,3 +43,8 @@ To[C]day all [G7]over [Am]agai[F]n
 {start_of_verse: Verse 6}
 To[C]day all [G7]over [C]again
 {end_of_verse}
+
+
+
+
+

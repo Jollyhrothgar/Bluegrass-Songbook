@@ -1,6 +1,9 @@
 {meta: title It Couldn't Have Been Any Better}
 {meta: artist Johnny Duncan with Janie Fricke}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file itcouldnthavebeenanybetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She just sat there and she [F]brushed her [Dm]hair
@@ -57,3 +60,10 @@
 [F]We couldn't have climbed any [Dm]higher
 [D7]If we'd been to the top of the [G7]world
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Young At Heart}
 {meta: artist Connie Francis}
 {meta: composer Carolyn Leigh and Johnny Richards}
+{meta: x_source classic-country}
+{meta: x_source_file youngatheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Fairy [C]tales can come true it can happen to you
@@ -43,3 +46,8 @@ And if [A#7]you should [A7]survive to a [G7]hundred and [A7]five
 [C]And here is the best part [Dm]you have a head [G7]start
 [C]If you are among the very [Dm]young [G7]at [Am]heart[C]
 {end_of_verse}
+
+
+
+
+

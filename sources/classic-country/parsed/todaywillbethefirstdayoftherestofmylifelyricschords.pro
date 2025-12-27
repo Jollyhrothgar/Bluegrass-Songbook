@@ -1,6 +1,9 @@
 {meta: title Today Will Be The First Day Of The Rest Of My Life}
 {meta: artist LaWanda Lindsey}
 {meta: composer Buddy Alan and Jim Shaw}
+{meta: x_source classic-country}
+{meta: x_source_file todaywillbethefirstdayoftherestofmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm walkin' in fields of clover watchin' clouds go driftin' over
@@ -49,3 +52,10 @@ I loved him and I left him though it wasn't my idea you know it
 Though it took a little while I soon remembered how to [G]smile
 And [D7]today will be the first day of the [C]rest of my [G]life
 {end_of_verse}
+
+
+
+
+
+
+

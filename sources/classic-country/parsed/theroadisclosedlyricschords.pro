@@ -1,6 +1,9 @@
 {meta: title The Road Is Closed}
 {meta: artist Ernest Tubb}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file theroadisclosedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Since that unfaithful day I let you [C]down
@@ -33,3 +36,7 @@ I'd [D7]like to come home but the road is [G]closed
 {start_of_verse: Verse 5}
 I'd [D7]like to come home but the road is [G]closed
 {end_of_verse}
+
+
+
+

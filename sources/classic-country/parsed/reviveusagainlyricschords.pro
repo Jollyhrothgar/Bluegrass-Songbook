@@ -1,6 +1,9 @@
 {meta: title Revive Us Again}
 {meta: artist Willie Nelson}
 {meta: composer William P. Mackay and John J. Husband}
+{meta: x_source classic-country}
+{meta: x_source_file reviveusagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We praise Thee O God for the Son of Thy love
@@ -29,3 +32,6 @@ Revive us again fill each heart with Thy love
 [F][C]Hallelujah [C]Thine the glory hallelujah [G7][C][F]amen
 [F][C]Hallelujah [C]Thine the glory revive [F]us [C][G7]again
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Second Choice}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file secondchoicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm always second choice I'm never first with [C]you
@@ -28,3 +31,6 @@ Oh [D7]how it hurts to see you out with someone [G]new
 But I'll wait around while you play around and have your [C]fun
 Maybe [D7]someday you'll make second choice your one and only [G]one
 {end_of_verse}
+
+
+

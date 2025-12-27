@@ -1,6 +1,9 @@
 {meta: title Weakness In A Man}
 {meta: artist Roy Drusky}
 {meta: composer Jerry A Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file weaknessinamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Honey how you've changed it makes me wonder
@@ -48,3 +51,9 @@ So don't forsake the vows you made
 [D7]No don't mistake my tenderness
 [G]For any sign of weakness in your man
 {end_of_verse}
+
+
+
+
+
+

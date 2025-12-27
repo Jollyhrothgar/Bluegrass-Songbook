@@ -1,6 +1,9 @@
 {meta: title As Easy as Our Blessings}
 {meta: artist Tracy Lawrence}
 {meta: composer Mark Nesler and Tony Martin}
+{meta: x_source classic-country}
+{meta: x_source_file aseasyasourblessingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Lately I've been [G7]having more [F]nights that I can't sleep
@@ -35,3 +38,7 @@ Our troubles as easy as our [C]bless[D7]ing[F]s
 Our troubles as easy as our [C]bless[D7]ing[F]s
 As easy as our [C]bless[D7]ing[F]s [C]
 {end_of_verse}
+
+
+
+

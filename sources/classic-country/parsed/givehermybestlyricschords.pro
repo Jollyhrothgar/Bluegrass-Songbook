@@ -1,6 +1,9 @@
 {meta: title Give Her My Best}
 {meta: artist Gene Watson}
 {meta: composer Debbie Hullett}
+{meta: x_source classic-country}
+{meta: x_source_file givehermybestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Exclusive invitations were sent to those endear
@@ -29,3 +32,6 @@ A condo by the ocean a town car in the drive
 [F]If you see her please tell her [F][C]congratulat-ions
 [C]And oh yes give her [G7]my best cause I never [C]did
 {end_of_verse}
+
+
+

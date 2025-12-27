@@ -1,5 +1,8 @@
 {meta: title Too Soon To Know}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file toosoontoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Too Soon To Know
@@ -27,3 +30,6 @@ My [C7]heart's been broken [F]into many [Dm]pieces
 My [C7]heart's been broken [F]into many [Dm]pieces
 [C]And it's too [G7]soon to [C]know
 {end_of_verse}
+
+
+

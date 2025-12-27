@@ -1,6 +1,9 @@
 {meta: title Hands On The Wheel}
 {meta: artist Willie Nelson}
 {meta: composer Bill Callery}
+{meta: x_source classic-country}
+{meta: x_source_file handsonthewheellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At a time when the world seems to be [C]spinning 
@@ -38,3 +41,7 @@ It's [A7]the way I feel about [D7]you
 [D7]I looked to the stars tried all [C]of the [G]bars 
 And [A7]I've nearly gone up in [D7]smoke
 {end_of_verse}
+
+
+
+

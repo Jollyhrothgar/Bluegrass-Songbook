@@ -1,6 +1,9 @@
 {meta: title The Good Lord Must Have Sent You}
 {meta: artist Faron Young}
 {meta: composer Faron Young and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file thegoodlordmusthavesentyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the good Lord must have sent [G7]you down from [C]heaven
@@ -22,3 +25,5 @@ And [F]all of my wishes came [C]true
 [F]I wouldn't want a million [C]dollars 
 All my prayers and [G7]wishes dear would be are [C]you
 {end_of_verse}
+
+

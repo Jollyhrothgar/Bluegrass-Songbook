@@ -1,5 +1,8 @@
 {meta: title Answer To The Galveston Rose}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file answertothegalvestonroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm writing this answer to the [F]Galveston [C]Rose
@@ -42,3 +45,8 @@
 [C]With God's help I'll repay for the [F]sorrow and [C]tears
 [G7]That I brought to my Galveston [C]Rose
 {end_of_verse}
+
+
+
+
+

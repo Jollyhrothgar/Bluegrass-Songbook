@@ -1,5 +1,8 @@
 {meta: title Only Time Will Tell}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file onlytimewilltelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Only time will tell if [C]I get over [G]you
@@ -32,3 +35,6 @@ And it's [G]too soon yet to tell
 {start_of_verse: Verse 3}
 [C]If I get [G]over you [D7]only time will [G]tell
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Down The Road Of Life}
 {meta: artist Jeff Scroggins and Colorado}
+{meta: x_source classic-country}
+{meta: x_source_file downtheroadoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wandering [E7]down the [F]road of [C]life
@@ -28,3 +31,6 @@ Don't know [E7]what I'm [F]searching [C]for
 [C]Wandering [E7]down the [F]road of [C]life
 [G7]Wandering what's over the [C]hill
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Almost Persuaded}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file almostpersuadedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night all alone in [C7]a [F]barroom 
@@ -36,3 +39,7 @@ To [C]let strange lips lead me [G7]on
 [C]Al-most [F][C7]persuaded 
 But your [C]sweet love made me [G7]stop and go [C]home
 {end_of_verse}
+
+
+
+

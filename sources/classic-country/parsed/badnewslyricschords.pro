@@ -1,6 +1,9 @@
 {meta: title Bad News}
 {meta: artist Boxcar Willie}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file badnewslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well bad news travels like wild fire
@@ -71,3 +74,17 @@ And they had to let me [C7]go
 Good news travels slow
 And they call me old wild fire everywhere I [C7]go
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

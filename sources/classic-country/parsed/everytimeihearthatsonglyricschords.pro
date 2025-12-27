@@ -1,5 +1,8 @@
 {meta: title Everytime I Hear That Song}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeihearthatsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've heard cowboys should [Am]never [Dm]cry
@@ -32,3 +35,6 @@ I [G7]think of someone who is [C]gone[G7]
 And the [C]hurting starts [Am]coming on real [Dm]strong
 Every[G7]time I hear that [C]song
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Give My Life A Second Look}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file igivemylifeasecondlooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]California Caroline 
@@ -34,3 +37,6 @@ Put me [F]on a shelf like some old [C]book[Am]
 [Dm]I give my life a second [G7]look 
 [F]I give my [G7]life a second [C]look
 {end_of_verse}
+
+
+

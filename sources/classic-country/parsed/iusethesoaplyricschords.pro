@@ -1,6 +1,9 @@
 {meta: title I Use The Soap}
 {meta: artist Tanya Tucker}
 {meta: composer David Gates}
+{meta: x_source classic-country}
+{meta: x_source_file iusethesoaplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I use the soap to wash the [Em]dirt off my face
@@ -46,3 +49,9 @@ La la la la la la [G]la la la la [D7]la la la
 [G]I write with pencil so that I can [Em]erase
 [C]But what's to do when someone's [Am]taking my place with [D7]you with [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Feel Sorry For Me}
 {meta: artist Connie Smith}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file dontfeelsorryformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've still got my memories of [F]you 
@@ -27,3 +30,6 @@ So [C]don't feel [G7]sorry for [C]me
 And in my dreams I'll always see [F]the you that used to be
 So [C]don't feel [G7]sorry for [C]me 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Stranger Shake Hands with a Fool}
 {meta: artist Bill Carter}
 {meta: composer Cal Veale}
+{meta: x_source classic-country}
+{meta: x_source_file strangershakehandswithafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Friends all tried to warm me that she’d [G7]let me down
@@ -41,3 +44,8 @@ Well [F]stranger shake [G7]hands with a [C]fool
 [F]Stranger shake [G7]hands with a [C]fool
 Well [F]stranger shake [G7]hands with a [C]fool
 {end_of_verse}
+
+
+
+
+

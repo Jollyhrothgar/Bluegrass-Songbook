@@ -1,6 +1,9 @@
 {meta: title A Ghost Of A Chance}
 {meta: artist Moe Bandy}
 {meta: composer Steve Collom}
+{meta: x_source classic-country}
+{meta: x_source_file aghostofachancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the back of my mind you're [F]calling my [C]name
@@ -27,3 +30,6 @@ So I'm still holding on to a [G7]ghost of a [C]chance
 My dreams and your memories are [F]all that I [C]have
 So I'm still holding on to a [G7]ghost of a [F]chance [C]
 {end_of_verse}
+
+
+

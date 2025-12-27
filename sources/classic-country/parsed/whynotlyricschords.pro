@@ -1,6 +1,9 @@
 {meta: title Why Not}
 {meta: artist Everly Brothers}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file whynotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Why Not
@@ -36,3 +39,8 @@ Is that the reason you won't [F]date [G7]me
 Why Not
 The Everly Brothers
 {end_of_verse}
+
+
+
+
+

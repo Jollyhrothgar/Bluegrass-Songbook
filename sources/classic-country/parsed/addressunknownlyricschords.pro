@@ -1,6 +1,9 @@
 {meta: title Address Unknown}
 {meta: artist Marty Robbins}
 {meta: composer Vaughn Horton, Gene Autry, Denver Darling}
+{meta: x_source classic-country}
+{meta: x_source_file addressunknownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I waited each day for your letter
@@ -36,3 +39,7 @@ I [F]know you're no longer my [C]own
 The [F]moment it came I wrote 'neath my [C]name
 These [G7]heartbreaking words  address [C]unknown
 {end_of_verse}
+
+
+
+

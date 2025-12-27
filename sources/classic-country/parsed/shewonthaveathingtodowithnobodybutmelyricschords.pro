@@ -1,6 +1,9 @@
 {meta: title She Won't Have A Thing To Do With Nobody But Me}
 {meta: artist Alabama}
 {meta: composer Dean Dillon, Buzz Rabin, Flash Gordon}
+{meta: x_source classic-country}
+{meta: x_source_file shewonthaveathingtodowithnobodybutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The way she's walkin'
@@ -39,3 +42,8 @@ With [C]nobody nobody [D7]nobody nobody but [G]me
 Now she won't have a [Em]thing to do
 With [C]nobody nobody [D7]nobody nobody but [G]me
 {end_of_verse}
+
+
+
+
+

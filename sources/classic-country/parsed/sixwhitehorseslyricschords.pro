@@ -1,6 +1,9 @@
 {meta: title Six White Horses}
 {meta: artist Tommy Cash}
 {meta: composer Larry Murray}
+{meta: x_source classic-country}
+{meta: x_source_file sixwhitehorseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mmm some folks drink and some folks smoke 
@@ -60,3 +63,15 @@ Goodbye [F]Robert  [G7]they took you away before you sang your [C]song
 Goodbye [F]John and [G7]goodbye Martin and goodbye [F]Bobby
 Well [G7]they took you away before you sang your [C]song
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Moving Along}
 {meta: artist Patsy Cline}
 {meta: composer Johnny Starr}
+{meta: x_source classic-country}
+{meta: x_source_file immovingalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm chasing the blues right out of my mind
@@ -32,3 +35,7 @@ I'm moving on [C]I'm a leaving [D7]town [G]today
 {start_of_verse: Verse 5}
 I'm [C]leaving [D7]this town [G]today
 {end_of_verse}
+
+
+
+

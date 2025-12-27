@@ -1,5 +1,8 @@
 {meta: title The Only Trouble With Me}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file theonlytroublewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I received my big promotion [Dm]down at the [Am]lumber [D7]yard
@@ -49,3 +52,9 @@ Oh the [G7]only trouble with me is [C]you [A7]
 {start_of_verse: Verse 7}
 Yeah the [D7]only trouble with [G7]me is [C]you
 {end_of_verse}
+
+
+
+
+
+

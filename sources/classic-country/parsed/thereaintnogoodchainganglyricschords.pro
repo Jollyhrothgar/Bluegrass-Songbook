@@ -1,6 +1,9 @@
 {meta: title There Ain’t No Good Chain Gang}
 {meta: artist Waylon Jennings}
 {meta: composer Hal Bynum and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file thereaintnogoodchainganglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bet it ain't raining back home
@@ -46,3 +49,6 @@ They're teaching us a lesson a day we're learning pretty well too
 We've already learned a whole lot of stuff already
 Things like
 {end_of_verse}
+
+
+

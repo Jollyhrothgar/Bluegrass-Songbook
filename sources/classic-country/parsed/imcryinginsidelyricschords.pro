@@ -1,6 +1,9 @@
 {meta: title I'm Crying Inside}
 {meta: artist Don Gibson}
 {meta: composer Charles McCormick and George W. McCormick}
+{meta: x_source classic-country}
+{meta: x_source_file imcryinginsidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I may laugh when you [C]say things [G]honey
@@ -29,3 +32,6 @@ But I'm [D7]only trying to laugh these blues [G]away
 I may be smiling [C]on the [G]outside
 Yes I'm [C]crying yes I'm [D7]crying in[G]side
 {end_of_verse}
+
+
+

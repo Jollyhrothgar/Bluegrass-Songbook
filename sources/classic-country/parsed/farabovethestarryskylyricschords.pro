@@ -1,6 +1,9 @@
 {meta: title Far Above The Starry Sky}
 {meta: artist Doyle Lawson}
 {meta: composer J.T. Sisk}
+{meta: x_source classic-country}
+{meta: x_source_file farabovethestarryskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Far [G7]above the starry [C]sky
@@ -44,3 +47,9 @@ Though I’ll never know a [G7]sigh
 {start_of_verse: Verse 7}
 Far [G7]above the starry [C]sky  
 {end_of_verse}
+
+
+
+
+
+

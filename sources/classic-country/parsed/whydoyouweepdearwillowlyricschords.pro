@@ -1,6 +1,9 @@
 {meta: title Why Do You Weep Dear Willow}
 {meta: artist Carl Story}
 {meta: composer Gona Blankenship and Lynn Davis}
+{meta: x_source classic-country}
+{meta: x_source_file whydoyouweepdearwillowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see a weeping [F]willow 
@@ -43,3 +46,8 @@ Why [C]do your branches hang [G7]low
 Could it [C]be you know my [F]secret
 That [C]other [G7]trees don't [C]know
 {end_of_verse}
+
+
+
+
+

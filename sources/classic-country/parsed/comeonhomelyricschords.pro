@@ -1,6 +1,9 @@
 {meta: title Come On Home}
 {meta: artist Tammy Wynette}
 {meta: composer Jack Rhodes and George Richey}
+{meta: x_source classic-country}
+{meta: x_source_file comeonhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Go on with your new love have a [F]good good [C]time
@@ -22,3 +25,5 @@
 [F]Come on home come on home come on [A#7]home
 [F]It's all right so [C]come on [F][A#7]h-om-e
 {end_of_verse}
+
+

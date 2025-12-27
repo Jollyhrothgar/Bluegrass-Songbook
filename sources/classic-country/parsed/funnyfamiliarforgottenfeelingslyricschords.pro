@@ -1,6 +1,9 @@
 {meta: title Funny Familiar Forgotten Feelings}
 {meta: artist Don Gibson}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file funnyfamiliarforgottenfeelingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]And then those funny [B7]familiar [Em]forgotten [A7]feelings
@@ -25,3 +28,6 @@
 [G]Before those funny [A#7]familiar [Em]forgotten [A7]feelings
 [D7]Stopped walking all over my [G][C]mind
 {end_of_verse}
+
+
+

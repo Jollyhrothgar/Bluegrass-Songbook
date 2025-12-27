@@ -1,6 +1,9 @@
 {meta: title If You Call That Gone Goodbye}
 {meta: artist Ernest Tubb}
 {meta: composer Rex Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoucallthatgonegoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you call that gone goodbye ain't nobody gonna [D7]cry
@@ -22,3 +25,5 @@
 [F]Now I don't know or [G7]care just where you're [C]going
 [D7]But if you call that [G7]gone [C]goodbye
 {end_of_verse}
+
+

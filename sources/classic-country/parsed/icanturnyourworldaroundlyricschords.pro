@@ -1,6 +1,9 @@
 {meta: title I Can Turn Your World Around}
 {meta: artist Connie Smith}
 {meta: composer Jack Rhodes, Billie Jo Spears, Henry Ebner}
+{meta: x_source classic-country}
+{meta: x_source_file icanturnyourworldaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every time our worlds meet I start [C]crying
@@ -33,3 +36,7 @@ Maybe [D7]then I can turn your world [G]around
 {start_of_verse: Verse 4}
 I pray that [D7]then I can turn your world [G]around
 {end_of_verse}
+
+
+
+

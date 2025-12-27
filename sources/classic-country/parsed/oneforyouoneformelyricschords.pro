@@ -1,6 +1,9 @@
 {meta: title One For You One For Me}
 {meta: artist George Morgan}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file oneforyouoneformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're breaking up now after all these [D7]years
@@ -33,3 +36,7 @@ One for [G7]you and one for [C]me
 {start_of_verse: Verse 4}
 One for [G7]you and one for [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Christmas Carols By The Old Corral}
 {meta: artist Tex Ritter}
 {meta: composer John Lange}
+{meta: x_source classic-country}
+{meta: x_source_file Christmascarolsbytheoldcorrallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They'll be singing gonna be [D7]singing
@@ -31,3 +34,6 @@
 [G7]Christmas carols by the old [C]corral
 [D7]Christmas [G7]carols by the old [C]corral
 {end_of_verse}
+
+
+

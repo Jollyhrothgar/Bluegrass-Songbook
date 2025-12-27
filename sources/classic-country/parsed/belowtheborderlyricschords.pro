@@ -1,6 +1,9 @@
 {meta: title Below The Border}
 {meta: artist Johnny Rodriguez}
 {meta: composer Bobby Keel, Buck Moore, Jerry Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file belowtheborderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you still got memories of [F]Dallas
@@ -33,3 +36,6 @@ You don't [C]know what you've missed
 If you [F]haven't been kissed 
 [G7]Below the border down in old Mexi[C]co
 {end_of_verse}
+
+
+

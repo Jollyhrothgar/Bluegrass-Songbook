@@ -1,6 +1,9 @@
 {meta: title There's A Song On The Jukebox}
 {meta: artist Mickey Gilley}
 {meta: composer Billy Sherrill and Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file theresasongonthejukeboxlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want a drink and here's a twenty and [C]bring my change in dimes 
@@ -27,3 +30,6 @@ Here [G]she comes and Lord she's smiling cause [C]she just heard that song
 I want a drink and here's a twenty and [C]bring my change in dimes 
 [D7]There's a song on the jukebox I’ve gotta hear a thousand [G]times
 {end_of_verse}
+
+
+

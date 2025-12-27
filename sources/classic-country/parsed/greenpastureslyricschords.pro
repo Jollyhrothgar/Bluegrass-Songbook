@@ -1,6 +1,9 @@
 {meta: title Green Pastures}
 {meta: artist Ricky Skaggs}
 {meta: composer Van Hoose}
+{meta: x_source classic-country}
+{meta: x_source_file greenpastureslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Trouble and trials often betray [C]those
@@ -36,3 +39,7 @@
 [G]Even the Lord will be in that [C]number
 [G]When we shall reach [D7]that heavenly [G]shore
 {end_of_verse}
+
+
+
+

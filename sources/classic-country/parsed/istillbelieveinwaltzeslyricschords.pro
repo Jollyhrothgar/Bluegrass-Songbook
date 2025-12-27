@@ -1,6 +1,9 @@
 {meta: title I Still Believe In Waltzes}
 {meta: artist Conway Twitty}
 {meta: composer Bob Morrison, Jim McBride, Michael D. Hughes}
+{meta: x_source classic-country}
+{meta: x_source_file istillbelieveinwaltzeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I pushed him away and tearfully said
@@ -43,3 +46,8 @@ I'm just a wife I'm just a momma
 [C]I've always liked happy endings somebody’s dream coming [Am]true
 [G7]I still believe in waltzes and [F]dancing the [G7]last one with [C]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Overdue}
 {meta: artist Tammy Wynette}
 {meta: composer John Virgin and Jamey Ryan}
+{meta: x_source classic-country}
+{meta: x_source_file loveoverduelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It seems I'm always settin' myself [C]up for a [G]fall
@@ -33,3 +36,7 @@ And I keep payin' [D7]for love over[G]due
 {start_of_verse: Verse 4}
 Yes I keep payin' [D7]for love over[G]due
 {end_of_verse}
+
+
+
+

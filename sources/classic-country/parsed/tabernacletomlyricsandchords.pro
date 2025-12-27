@@ -1,6 +1,9 @@
 {meta: title Tabernacle Tom}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file tabernacletomlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Youngstown tabernacle stood [C]amongst some giant oak [G]trees
@@ -57,3 +60,10 @@ Ol' tabernacle Tom had a bell to [D7]ring
 [G]Tabernacle Tom had a [C]job to be [G]done
 Thank God the world's been blessed with men like [D7]tabernacle [G]Tom
 {end_of_verse}
+
+
+
+
+
+
+

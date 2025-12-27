@@ -1,6 +1,9 @@
 {meta: title You Can Have Her}
 {meta: artist Charlie Rich}
 {meta: composer William S. Cook}
+{meta: x_source classic-country}
+{meta: x_source_file youcanhaveherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can have her I don't want [F]her 
@@ -50,3 +53,9 @@ She didn't [C]loved me [G7]anyway
 She only [C]wanted someone to play [F]with 
 All I [C]wanted was [G7]love to [C]stay
 {end_of_verse}
+
+
+
+
+
+

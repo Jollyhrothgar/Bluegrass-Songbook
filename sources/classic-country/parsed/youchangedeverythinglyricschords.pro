@@ -1,6 +1,9 @@
 {meta: title You Changed Everything}
 {meta: artist Norma Jean}
 {meta: composer Hank Cochran and Jeannie Seely}
+{meta: x_source classic-country}
+{meta: x_source_file youchangedeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You changed [F]everything about me but my name
@@ -26,3 +29,6 @@ You changed everything about me but my [C]name
 {start_of_verse: Verse 4}
 You changed [G7]everything about me but my [C]name
 {end_of_verse}
+
+
+

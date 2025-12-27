@@ -1,5 +1,8 @@
 {meta: title Hello Happiness Goodbye Loneliness}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file hellohappinessgoodbyelonelinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello happiness goodbye [F]loneliness
@@ -28,3 +31,6 @@
 [C]Bad times are gonna go and the good times are gonna [F]roll
 [C]My little darling's gonna [G7]soon be [C]here
 {end_of_verse}
+
+
+

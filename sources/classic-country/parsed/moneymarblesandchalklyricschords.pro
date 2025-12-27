@@ -1,6 +1,9 @@
 {meta: title Money Marbles And Chalk}
 {meta: artist Rex Allen}
 {meta: composer Pop Eckler}
+{meta: x_source classic-country}
+{meta: x_source_file moneymarblesandchalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now there's an old [F]sayin' that's [C]been all around
@@ -31,3 +34,6 @@ Because my money won't [F]spend
 And my [C]marbles they won't roll
 And my [G7]chalk just won't write any[C]more
 {end_of_verse}
+
+
+

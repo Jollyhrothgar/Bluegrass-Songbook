@@ -1,5 +1,8 @@
 {meta: title Give Me A Little Old Fashioned Love}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file givemealittleoldfashionedlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Give me a little old [G7]fashioned [C]love 
@@ -42,3 +45,8 @@ The [D7]kind that lingers through the [G]years
 The kind that's [G7]made by God up [C]above 
 Just [D7]give me a little old fashioned [G]love
 {end_of_verse}
+
+
+
+
+

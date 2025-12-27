@@ -1,5 +1,8 @@
 {meta: title I'm Not Looking Back Anymore}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file imnotlookingbackanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the years we shared together are so [G7]great in memory 
@@ -49,3 +52,9 @@ Tomorrow [E7]is another [A7]day
 And I’m [D7]not looking [G7]back any[C]more
 No I’m [D7]not looking [G7]back any[C]more
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Standing In The Shadows}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file standingintheshadowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know that I'm not great and some [F]say I imi[C]tate
@@ -48,3 +51,8 @@ I start singing another of your [C]great songs
 [F]That's the time that I [C]know although you're gone 
 Your [G7]music will live on and on and [C]on
 {end_of_verse}
+
+
+
+
+

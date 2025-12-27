@@ -1,5 +1,8 @@
 {meta: title The Lighthouse}
 {meta: artist The Gibson Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file thelighthouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a lighthouse on a hillside that [F]overlooks the [C]sea
@@ -38,3 +41,7 @@ For Jesus is the lighthouse and [D7]from the rocks of [G7]sin
 He has [C]shown a light around me that [F]I can clearly [C]see
 If it wasn't for the lighthouse tell me [G7]where would this ship [C]be
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title You Never Really Wanted Me}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file youneverreallywantedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]You never really wanted me now I can [F]see yes I can [C]see
@@ -23,3 +26,5 @@ Now the [F]time is gone and [C]there's nothing left to [D7]say
 [F]Standin' there please don't [C]cry for [A#7]me
 After [C]all you've never [G7]cried for me be[C]fore
 {end_of_verse}
+
+

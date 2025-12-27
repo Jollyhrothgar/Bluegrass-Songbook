@@ -1,6 +1,9 @@
 {meta: title Back in Baby's Arms}
 {meta: artist Patsy Cline}
 {meta: composer Bob Montgomery and Allen Toussaint}
+{meta: x_source classic-country}
+{meta: x_source_file backinbabysarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm back in baby's [G7]arms
@@ -36,3 +39,7 @@
 [Am]I'm back where [G7]I [Em]belong
 [G7]Back in baby's [C]arms
 {end_of_verse}
+
+
+
+

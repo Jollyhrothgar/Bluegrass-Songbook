@@ -1,6 +1,9 @@
 {meta: title Cajun Moon}
 {meta: artist Ricky Skaggs}
 {meta: composer Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file cajunmoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The moon is full and my heart is high
@@ -58,3 +61,13 @@ Her mama's smiling as we slip from the room
 Pick ups and wagons 'round the river road shack
 [G7]Bonfires draw in a crowd out [C]back
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

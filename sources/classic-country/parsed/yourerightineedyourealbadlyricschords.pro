@@ -1,6 +1,9 @@
 {meta: title You're Right I Need You Real Bad}
 {meta: artist Stonewall Jackson}
 {meta: composer George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file yourerightineedyourealbadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you think I want to please you
@@ -33,3 +36,8 @@ For you to be returning
 {start_of_verse: Verse 6}
 Repeat all
 {end_of_verse}
+
+
+
+
+

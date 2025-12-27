@@ -1,6 +1,9 @@
 {meta: title First Fool In Line}
 {meta: artist Don Williams}
 {meta: composer Byron Hill and Tammi Kidd}
+{meta: x_source classic-country}
+{meta: x_source_file firstfoolinlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know I shouldn't love you from the way we said good[Am]bye
@@ -33,3 +36,7 @@ I'll be the [F]first [G7]fool in [C]line
 {start_of_verse: Verse 5}
 I'll be the [F]first [G7]fool in [C]line
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title This Ain't A Home No More}
 {meta: artist Leona Williams}
 {meta: composer Redd Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file thisaintahomenomorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You made a solemn promise to [Am]change the things you [F]do
@@ -28,3 +31,6 @@ I'm takin' both the children and I'm [Am]walkin' out the [F]door
 We just got [G7]tired of waitin' this ain't a home no [C]more
 We just got [G7]tired of waitin' this ain't a home no [C]more
 {end_of_verse}
+
+
+

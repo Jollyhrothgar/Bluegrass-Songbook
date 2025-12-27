@@ -1,6 +1,9 @@
 {meta: title In My Way}
 {meta: artist Elvis Presley}
 {meta: composer Fred Wise and Ben Weisman}
+{meta: x_source classic-country}
+{meta: x_source_file inmywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I may not [Em]be here to[Am]morrow
@@ -17,3 +20,4 @@ But I'll be [F]true to [G7]you in my [C]way
 Yes I'll be [F]true to [G7]you in my [C]way
 Repeat 
 {end_of_verse}
+

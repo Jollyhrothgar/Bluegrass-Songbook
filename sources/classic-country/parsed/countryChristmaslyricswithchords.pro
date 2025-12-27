@@ -1,6 +1,9 @@
 {meta: title Country Christmas}
 {meta: artist Faron Young}
 {meta: composer Bill Emerson and Jody Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file countryChristmaslyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In our little country settlement there's [C]harmony a-[G]ringing
@@ -30,3 +33,6 @@ Than to have a good old gospel singing [D7]country Christmas [G]time
 And [G]show our love for [D7]Jesus as we [G]pray
 [D7]Jesus as we [G]pray 
 {end_of_verse}
+
+
+

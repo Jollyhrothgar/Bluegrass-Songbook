@@ -1,6 +1,9 @@
 {meta: title Pathway Of Teardrops}
 {meta: artist Rhonda Vincent}
 {meta: composer Wayne P. Walker and Webb Pierce, June Hazlewood}
+{meta: x_source classic-country}
+{meta: x_source_file pathwayofteardropslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The pathway of [E7]teardrops will [F]show you the [D7]way
@@ -22,3 +25,5 @@ Now I'm [D7]sending this message to [G7]you
 [C]The pathway of [E7]teardrops will [F]show you the [D7]way
 If you [C]ever want to [G7]come back to [F]m-[C]e
 {end_of_verse}
+
+

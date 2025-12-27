@@ -1,5 +1,8 @@
 {meta: title I Wanna Go With You}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file iwannagowithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm begging to you and I [C]wanna go with [G]you
@@ -28,3 +31,6 @@ I'm counting the days when I'll be with [D7]you
 Our hearts are en[G]twined they're [C]blessed with the [G]future
 A safe journey home [D7]I'm waiting for [G]you
 {end_of_verse}
+
+
+

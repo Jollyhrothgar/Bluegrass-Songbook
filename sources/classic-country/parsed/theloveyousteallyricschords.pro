@@ -1,6 +1,9 @@
 {meta: title The Love You Steal}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Ted Edlin}
+{meta: x_source classic-country}
+{meta: x_source_file theloveyousteallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a girl at the [A7]door please [D7]go answer it dear
@@ -36,3 +39,6 @@ I [G7]know you’ll forgive though your [C]young heart is sore
 Maybe [F]someday if we pray God will [C]hear our [A7]appeal
 Through His [D7]mercy and [G7]wisdom we won’t need love you [F]stea[C]l
 {end_of_verse}
+
+
+

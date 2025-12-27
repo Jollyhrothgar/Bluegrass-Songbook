@@ -1,5 +1,8 @@
 {meta: title Nothing Between Us But Love}
 {meta: artist Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file nothingbetweenusbutlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s nothing but a heartbeat [C]between us
@@ -28,3 +31,6 @@ When there’s [Am]nothing [D7]between us but [G]love
 And [C]let’s treasure the [D7]feeling of [Bm]being to[E7]gether
 When there’s [Am]nothing [D7]between us but [G]love
 {end_of_verse}
+
+
+

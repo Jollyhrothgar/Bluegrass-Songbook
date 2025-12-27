@@ -1,5 +1,8 @@
 {meta: title I'm Setting You Free}
 {meta: artist Wilburn Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file imsettingyoufreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now listen here honey [G7]you been doing me [C]wrong
@@ -35,3 +38,7 @@ And I ain't said [D7]nothing for so doggone [G]long
 But I don't like the way [G7]you been treating [C]me
 So early [D7]tomorrow I'm setting you [G]free
 {end_of_verse}
+
+
+
+

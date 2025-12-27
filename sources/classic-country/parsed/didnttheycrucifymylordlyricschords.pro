@@ -1,5 +1,8 @@
 {meta: title Didn't They Crucify My Lord}
 {meta: artist Carl Story}
+{meta: x_source classic-country}
+{meta: x_source_file didnttheycrucifymylordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh didn't they crucify my Lord
@@ -40,3 +43,7 @@ Oh they crucified You Jesus
 And He never said a harmful word
 He only hung [G7]His head and [C]died
 {end_of_verse}
+
+
+
+

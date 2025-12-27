@@ -1,6 +1,9 @@
 {meta: title Penny Arcade}
 {meta: artist Roy Orbison}
 {meta: composer Sammy King}
+{meta: x_source classic-country}
+{meta: x_source_file pennyarcadelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A light shone in the night somewhere [F]ahead 
@@ -50,3 +53,8 @@ Yes it [F]played and it played [G7]played all the time
 Roll up and [F]spend your [C]last  
 Roll up and [F]spend your last [C]dime 
 {end_of_verse}
+
+
+
+
+

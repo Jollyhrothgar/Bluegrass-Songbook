@@ -1,5 +1,8 @@
 {meta: title I Will Forever Hate Roses}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file iwillforeverhateroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I used to love it when [C]roses would come
@@ -41,3 +44,8 @@ Now [C]you're movin' on as this chapter [G]closes
 And [C]I will for[G]ever hate [D7]ros[G]es
 Yes [C]I will for[G]ever hate [D7]ros[C]es [G]
 {end_of_verse}
+
+
+
+
+

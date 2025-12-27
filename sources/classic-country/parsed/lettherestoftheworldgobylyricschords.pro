@@ -1,6 +1,9 @@
 {meta: title Let The Rest Of The World Go By}
 {meta: artist Jimmy Dean}
 {meta: composer Jimmy Kern, J.K. Brennan, Ernest Ball}
+{meta: x_source classic-country}
+{meta: x_source_file lettherestoftheworldgobylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With someone like you a pal so good and [G7]true
@@ -22,3 +25,5 @@
 [F]Some place that's known to [C]God [Am]alone
 [D7]Just a spot to call our [G7]own
 {end_of_verse}
+
+

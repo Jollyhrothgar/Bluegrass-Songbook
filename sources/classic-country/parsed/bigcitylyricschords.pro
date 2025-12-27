@@ -1,6 +1,9 @@
 {meta: title Big City}
 {meta: artist Wynn Stewart}
 {meta: composer C. Shamley}
+{meta: x_source classic-country}
+{meta: x_source_file bigcitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Big city you mean more to her than [G]me
@@ -51,3 +54,10 @@ She was just a simple country girl
 [D7]But she chose a different way of life
 And I had to let her [G]go
 {end_of_verse}
+
+
+
+
+
+
+

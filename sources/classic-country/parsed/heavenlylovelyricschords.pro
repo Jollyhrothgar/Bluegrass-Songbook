@@ -1,6 +1,9 @@
 {meta: title Heavenly Love}
 {meta: artist The Blackwood Brothers}
 {meta: composer Dick Glasser and Nick Boldi}
+{meta: x_source classic-country}
+{meta: x_source_file heavenlylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heavenly love was all that could help [C]me
@@ -29,3 +32,6 @@
 [C]Giving me light in darkness of [G]night
 [D7]Heavenly love heavenly [G][C][G]love
 {end_of_verse}
+
+
+

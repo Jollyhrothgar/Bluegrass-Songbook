@@ -1,6 +1,9 @@
 {meta: title You Sure Got This Ol' Redneck Feelin' Blue}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Buzz Rabin}
+{meta: x_source classic-country}
+{meta: x_source_file yousuregotthisolredneckfeelinbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I recall some [D7]barroom brawls that I [C]got myself in [G]to
@@ -33,3 +36,7 @@ Yeah you [G]sure got [Em]this ol' [Am]redneck [D7]feelin' [G]blue
 {start_of_verse: Verse 4}
 [Em]Woman yeah you [Am]sure have this ol' [D7]redneck feelin' [C]blue[Am]   [G]
 {end_of_verse}
+
+
+
+

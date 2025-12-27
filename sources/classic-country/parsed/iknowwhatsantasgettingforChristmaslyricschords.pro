@@ -1,6 +1,9 @@
 {meta: title I Know What Santa's Getting For Christmas}
 {meta: artist Burl Ives}
 {meta: composer Garth Brooks and Kent Blazy}
+{meta: x_source classic-country}
+{meta: x_source_file iknowwhatsantasgettingforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know what [A7]Santa's gettin' for [D7]Christmas
@@ -56,3 +59,10 @@ I [F]think it's time to spread the [Am]Christmas [A7]cheer
 I know what [Am]Santa's gettin' for [C]Christ[D7]mas
 I'm gonna [G7]come wrapped in a big red [C]bow
 {end_of_verse}
+
+
+
+
+
+
+

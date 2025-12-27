@@ -1,6 +1,9 @@
 {meta: title Indian Love Call}
 {meta: artist Slim Whitman}
 {meta: composer Otto Harbach, Oscar Hammerstein II, Rudolf Friml}
+{meta: x_source classic-country}
+{meta: x_source_file indianlovecalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ooo  [G7]ooo  [C]ooo  ooo  [G7]ooo  [C]ooo
@@ -28,3 +31,7 @@
 {start_of_verse: Verse 5}
 [F]You'll belong to [G7]me I'll belong to [C]you
 {end_of_verse}
+
+
+
+

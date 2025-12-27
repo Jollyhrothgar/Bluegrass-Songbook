@@ -1,6 +1,9 @@
 {meta: title How Good A Bad Woman Feels}
 {meta: artist Gene Watson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file howgoodabadwomanfeelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought I wanted an angel and what I got was just [G7]that
@@ -33,3 +36,8 @@ Time is one thing we can [G7]steal
 Kiss me and hold me as tight as you can
 I'd forgotten how good a bad woman [C]feels
 {end_of_verse}
+
+
+
+
+

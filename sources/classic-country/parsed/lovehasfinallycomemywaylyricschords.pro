@@ -1,6 +1,9 @@
 {meta: title Love Has Finally Come My Way}
 {meta: artist Faron Young}
 {meta: composer Lee Pockriss and Paul Vance}
+{meta: x_source classic-country}
+{meta: x_source_file lovehasfinallycomemywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a thrill of your kiss that started [F]all this
@@ -30,3 +33,5 @@ I want the whole [G7]wide world to know
 That [C]love has [F]finally [G7]come my [C]way
 Yes love has [F]finally [G7]come my [C]way
 {end_of_verse}
+
+

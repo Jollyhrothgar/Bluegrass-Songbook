@@ -1,6 +1,9 @@
 {meta: title Easy Come Easy Go}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Aaron Barker}
+{meta: x_source classic-country}
+{meta: x_source_file easycomeeasygolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Says she's had [F]enough of me 
@@ -47,3 +50,9 @@ Easy [G7]come girl easy [C]go
 [G7]Vaya con dios good[C]bye 
 Easy [G7]come easy [C]go
 {end_of_verse}
+
+
+
+
+
+

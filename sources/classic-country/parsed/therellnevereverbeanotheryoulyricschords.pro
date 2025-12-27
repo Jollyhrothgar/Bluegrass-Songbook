@@ -1,6 +1,9 @@
 {meta: title There Will Never Ever Be Another You}
 {meta: artist Connie Smith}
 {meta: composer Jimmy Holder}
+{meta: x_source classic-country}
+{meta: x_source_file therellnevereverbeanotheryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’ll always be [C7]another tear 
@@ -29,3 +32,5 @@ Though [C]love may come and [C7]love may go
 There’ll [C]never ever [G7]be another [C]you[F]  [C]
 [F]No there will [C]never ever [G7]be another [F]you[C]
 {end_of_verse}
+
+

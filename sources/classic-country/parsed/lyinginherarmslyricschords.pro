@@ -1,6 +1,9 @@
 {meta: title Lying In Her Arms}
 {meta: artist John Conlee}
 {meta: composer Paul Kennerley and John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file lyinginherarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I was [G]lying in her arms not a [D7]word I said was [G]true
@@ -31,3 +34,7 @@ I'm [G]lying in her arms cause that's [D7]where I want to [G]be [D7]
 {start_of_verse: Verse 5}
 Yes I'm [G]lying in her arms cause that's [D7]where I want to [C]be[G]
 {end_of_verse}
+
+
+
+

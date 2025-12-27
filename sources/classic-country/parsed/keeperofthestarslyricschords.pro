@@ -1,6 +1,9 @@
 {meta: title Keeper Of The Stars}
 {meta: artist Tracy Byrd}
 {meta: composer Danny Mayo, Karen Staley, Dickey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file keeperofthestarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was no [G7]accident  [Am]me finding [F]you
@@ -29,3 +32,6 @@ I tip my [F]hat  [G7]to the keeper of the [Em]stars
 I hold every[F]thing  [G7]when I hold you in my [Em]arms
 [F]And I've got all I'll ever [Dm]need  [G7]thanks to the keeper of the [F]st-ar[C]s
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Okie From Muskogee Is Coming Home}
 {meta: artist Merle Haggard}
 {meta: composer Freddy Powers and Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file theokiefrommuskogeeiscominghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well me and Roy Nichols 
@@ -29,3 +32,6 @@ And always have the urge to [F]roam
 I’m coming home so I can find me a flight this morning [C]man 
 And the [G7]Okie from Muskogee is coming [C]home
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title September In The Rain}
 {meta: artist Brenda Lee}
 {meta: composer Harry Warren and Al Dubin}
+{meta: x_source classic-country}
+{meta: x_source_file septemberintherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The leaves of brown came tumbling down [F]remember
@@ -34,3 +37,8 @@ Ah that Sep[A#7]tember [G7]in the [C]rain
 {start_of_verse: Verse 5}
 [F]Just gimme Sep[A#7]tember in the [G7]cold cold [C]rain
 {end_of_verse}
+
+
+
+
+

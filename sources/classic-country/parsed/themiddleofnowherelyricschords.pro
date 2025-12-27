@@ -1,6 +1,9 @@
 {meta: title The Middle Of Nowhere}
 {meta: artist George Strait}
 {meta: composer Shawn Camp and John S. Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file themiddleofnowherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Way out here you can see for [G7]miles
@@ -50,3 +53,9 @@ That I'm [G7]out here in the middle of [C]nowhere
 Yeah I'm [G7]out here in the middle of [C]nowhere
 Yeah I'm [G7]out here in the middle of [C]nowhere
 {end_of_verse}
+
+
+
+
+
+

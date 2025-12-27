@@ -1,6 +1,9 @@
 {meta: title When You Fall As Hard As I Did}
 {meta: artist Billy Walker}
 {meta: composer Ricci Mareno and Gordon Galbraith}
+{meta: x_source classic-country}
+{meta: x_source_file whenyoufallashardasididlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just sit and count the [Dm]pieces 
@@ -39,3 +42,6 @@ Cause when you [C]fall as hard as [F]I did
 When you fall as hard as [F]I did
 [G7]Something's gotta [C]break
 {end_of_verse}
+
+
+

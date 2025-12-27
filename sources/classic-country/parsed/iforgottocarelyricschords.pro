@@ -1,6 +1,9 @@
 {meta: title I Forgot To Care}
 {meta: artist Jean Shepard}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file iforgottocarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You forgot to call [F]me up you left [C]me sittin' [G7]there
@@ -23,3 +26,5 @@
 [C]You forgot [F]quite a lot and [G7]I forgot to [F][C]car---e  [G7][C]mmm
 [C]You forgot [F]quite a lot and [G7]I forgot to [C][F][C]car---e
 {end_of_verse}
+
+

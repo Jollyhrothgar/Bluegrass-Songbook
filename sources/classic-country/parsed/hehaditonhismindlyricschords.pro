@@ -1,6 +1,9 @@
 {meta: title He Had It On His Mind}
 {meta: artist Roy Drusky}
 {meta: composer Vic McAlpin and Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file hehaditonhismindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](All the time he had it on his [C]mind)
@@ -37,3 +40,8 @@ When [G7]all the time he had it on his [C]mind
 {start_of_verse: Verse 6}
 Yes [G7]all the time he had it on his [C]mind
 {end_of_verse}
+
+
+
+
+

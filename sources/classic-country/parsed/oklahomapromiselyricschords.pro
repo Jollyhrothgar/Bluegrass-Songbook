@@ -1,5 +1,8 @@
 {meta: title Oklahoma Promise}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file oklahomapromiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As the darkness turns to morning [F]on the Oklahoma [C]plains
@@ -35,3 +38,7 @@ And the [F]women never [D7]really suited [G7]me
 I've come [F]home to keep an [G7]Oklahoma [C]promise that I'd [F]made
 When the [C]only love that [G7]sets my mind at [F]ease [C]
 {end_of_verse}
+
+
+
+

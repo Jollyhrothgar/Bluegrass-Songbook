@@ -1,6 +1,9 @@
 {meta: title Why Don't You Tell Me}
 {meta: artist J.D. Crowe & the New South}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file whydontyoutellmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can tell by the look in your eyes
@@ -43,3 +46,8 @@ And if you still want me you [D7]know
 [G]Why do you keep me in [C]doubt
 [G]Why don't you [D7]tell me [G]so
 {end_of_verse}
+
+
+
+
+

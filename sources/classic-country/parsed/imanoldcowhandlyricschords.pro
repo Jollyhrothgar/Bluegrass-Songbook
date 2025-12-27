@@ -1,6 +1,9 @@
 {meta: title I'm an Old Cowhand}
 {meta: artist Sons Of Pioneers}
 {meta: composer Johnny Mercer}
+{meta: x_source classic-country}
+{meta: x_source_file imanoldcowhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yipee-yi-[F]o-kie-[C]yay   yipee-yi-[F]o-kie-[C]yay
@@ -57,3 +60,12 @@ Oooo[G7]eeeeoooooeeeeeeoooooaaaaae[C]eee[F]ooooo[C]o
 {start_of_verse: Verse 10}
 Yipee-yi-[F]o-kie-[C]yay   yipee-yi-[F]o-kie-[C]yay
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title If I Didn't Have You In My World}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file ifididnthaveyouinmyworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I didn't have you [C7]in my [F]world
@@ -39,3 +42,8 @@
 {start_of_verse: Verse 5}
 [C7]If I didn't have you in my [F]world
 {end_of_verse}
+
+
+
+
+

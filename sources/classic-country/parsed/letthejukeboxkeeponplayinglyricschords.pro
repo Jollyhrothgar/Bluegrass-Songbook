@@ -1,5 +1,8 @@
 {meta: title Let The Jukebox Keep On Playing}
 {meta: artist Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file letthejukeboxkeeponplayinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh let that jukebox keep on playing
@@ -32,3 +35,8 @@ It's [C]you I'm dreaming [G]of
 Let my baby keep on saying
 She's a [C]lonesome gal in [G]town
 {end_of_verse}
+
+
+
+
+

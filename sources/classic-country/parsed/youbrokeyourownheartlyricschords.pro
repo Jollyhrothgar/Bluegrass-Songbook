@@ -1,5 +1,8 @@
 {meta: title You Broke Your Own Heart}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file youbrokeyourownheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You broke your own heart
@@ -60,3 +63,14 @@ And from [F]tears your eyes are [C]blind
 You broke your own heart
 When you [G7]tried to break [C]mine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

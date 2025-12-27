@@ -1,6 +1,9 @@
 {meta: title Just The Other Side Of Nowhere}
 {meta: artist Johnny Cash}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file justtheothersideofnowherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I come from just the other side of nowhere
@@ -51,3 +54,7 @@ Who's [G7]left who ever done me [C]any loving way but [Am]wrong
 And [F]tell 'em that the pride of [G7]just 
 The other side of nowhere's going [C]home
 {end_of_verse}
+
+
+
+

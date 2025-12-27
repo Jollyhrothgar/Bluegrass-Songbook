@@ -1,6 +1,9 @@
 {meta: title Come On Ring Those Bells}
 {meta: artist Dixie Melody Boys}
 {meta: composer Andrew Culverwell}
+{meta: x_source classic-country}
+{meta: x_source_file comeonringthosebellslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody likes to take a [Am]holiday
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 4}
 [D7]Jesus we remember this Your [G][Am]Birthday
 {end_of_verse}
+
+
+
+
+
+

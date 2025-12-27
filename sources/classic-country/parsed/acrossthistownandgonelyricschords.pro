@@ -1,6 +1,9 @@
 {meta: title Across This Town And Gone Lyrics with Chords}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Gene Price}
+{meta: x_source classic-country}
+{meta: x_source_file acrossthistownandgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's time to leave so let me go [C]I've just been wasting [G]time
@@ -34,3 +37,7 @@ I'll be halfway across this town and [G]gone
 [D7]Before one teardrop hits the ground
 I'll be halfway across this town and [G]gone
 {end_of_verse}
+
+
+
+

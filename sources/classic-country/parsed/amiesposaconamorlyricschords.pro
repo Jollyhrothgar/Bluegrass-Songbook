@@ -1,6 +1,9 @@
 {meta: title A Mi Esposa Con Amor (To My Wife With Love)}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole F. Smith}
+{meta: x_source classic-country}
+{meta: x_source_file amiesposaconamorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On our wedding day we knelt by candle light
@@ -52,3 +55,12 @@ Troubles melt away with true love every day
 {start_of_verse: Verse 8}
 [C]A mi esposa con [G]amor
 {end_of_verse}
+
+
+
+
+
+
+
+
+

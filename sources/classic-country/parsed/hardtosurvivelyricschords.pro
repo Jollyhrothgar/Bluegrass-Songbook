@@ -1,5 +1,8 @@
 {meta: title Hard To Survive}
 {meta: artist Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file hardtosurvivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I find it hard to survive when you treat me like you [D7]do
@@ -40,3 +43,8 @@ When it's [D7]hard to survive loving [G]you
 I'll just keep those memories of [C]you
 [D7]Hard to survive loving [G]you
 {end_of_verse}
+
+
+
+
+

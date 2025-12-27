@@ -1,6 +1,9 @@
 {meta: title One Life}
 {meta: artist Kenny Rogers}
 {meta: composer Marc Beeson and Tim Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file onelifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If there's a [F]way of makin' time stand [C]still [F]for [C]good
@@ -37,3 +40,7 @@ But I've [C]only got [F]one life to [G7]love someone like [Am]you
 {start_of_verse: Verse 5}
 And I've [C]only got [F]one life [G7]and I give it all to [Am]you
 {end_of_verse}
+
+
+
+

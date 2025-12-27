@@ -1,6 +1,9 @@
 {meta: title I'm Telling Me A Lie}
 {meta: artist Gene Watson}
 {meta: composer Joe Ed Gough and Curtis Winston}
+{meta: x_source classic-country}
+{meta: x_source_file imtellingmealielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well these memories of mine don't seem to [G7]know you're gone
@@ -33,3 +36,7 @@ And then I [G7]know my dear I'm telling me a [C]lie
 {start_of_verse: Verse 5}
 And then I [G7]know my dear I'm telling me a [C]lie
 {end_of_verse}
+
+
+
+

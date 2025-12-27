@@ -1,6 +1,9 @@
 {meta: title Password}
 {meta: artist Kitty Wells}
 {meta: composer James Herman Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file passwordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Password please use [D7]the [G]password
@@ -34,3 +37,7 @@
 [C]Password love is [D7]the [G]password
 [C]Just say the words of [D7]love and come on [G]in
 {end_of_verse}
+
+
+
+

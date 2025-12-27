@@ -1,5 +1,8 @@
 {meta: title A Million Miles To The City}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file amillionmilestothecitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yeah I remember it now we were kids [F]back then living down on the [C]farm
@@ -44,3 +47,9 @@
 [F]It's a million miles to [C]the city from the [G7]hills and the valleys we [C]know
 [F]It's a million miles to [C]the city and some [G7]day we all wanna [C]go
 {end_of_verse}
+
+
+
+
+
+

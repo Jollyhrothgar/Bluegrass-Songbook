@@ -1,6 +1,9 @@
 {meta: title I've Got That Old Time Religion In My Heart}
 {meta: artist Wilburn Brothers}
 {meta: composer Hurdis Milsap}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotthatoldtimereligioninmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm glad Jesus came glory to His [F]name
@@ -22,3 +25,5 @@
 [C]You'll find perfect piece joy shall never [F]cease
 [C]You shall a [G7]life crown [C]win
 {end_of_verse}
+
+

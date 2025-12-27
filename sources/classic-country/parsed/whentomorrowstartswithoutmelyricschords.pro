@@ -1,6 +1,9 @@
 {meta: title When Tomorrow Starts Without Me}
 {meta: artist Tony Booth}
 {meta: composer Eric Horner}
+{meta: x_source classic-country}
+{meta: x_source_file whentomorrowstartswithoutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everyone has their appointed [A#7]time
@@ -55,3 +58,10 @@
 [A#7]Safe in the arms of [F]Jesus
 [C]Tomorrow starts without me
 {end_of_verse}
+
+
+
+
+
+
+

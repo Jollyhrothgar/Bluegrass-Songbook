@@ -1,6 +1,9 @@
 {meta: title Waitin' Down The Road}
 {meta: artist Don Gibson}
 {meta: composer E.C. McCarthy}
+{meta: x_source classic-country}
+{meta: x_source_file waitindowntheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear this lonely heart of mine is [F]skipping beats of time
@@ -29,3 +32,6 @@ I’m [D7]jealous of the one who’s meeting [G7]you
 So I’m [C]warning you this time that [F]you’re all mine all mine
 And this [G7]waitin’ down the road won’t [C]do
 {end_of_verse}
+
+
+

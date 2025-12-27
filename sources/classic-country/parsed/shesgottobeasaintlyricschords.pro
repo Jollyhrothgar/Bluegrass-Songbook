@@ -1,6 +1,9 @@
 {meta: title She's Got To Be A Saint}
 {meta: artist Ray Price}
 {meta: composer Joe Paulini and Mike DiNapoli}
+{meta: x_source classic-country}
+{meta: x_source_file shesgottobeasaintlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm out late every night doing things that ain't right 
@@ -67,3 +70,14 @@ And I'll go on my [G]way
 When I'm down in the dumps and she nurses my lumps
 How she cries for [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

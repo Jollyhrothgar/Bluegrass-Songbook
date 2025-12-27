@@ -1,6 +1,9 @@
 {meta: title As Right Now}
 {meta: artist Alabama}
 {meta: composer Teddy Gentry and Greg Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file asrightnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're still the lady of my dreams
@@ -27,3 +30,5 @@ And [C]I will never love someone so much
 As right [G]now   as right [C]now
 As right [G]now   as right [C]now  [D7]as right [G]now
 {end_of_verse}
+
+

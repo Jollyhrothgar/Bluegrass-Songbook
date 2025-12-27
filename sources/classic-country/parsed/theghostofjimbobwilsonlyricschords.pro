@@ -1,6 +1,9 @@
 {meta: title The Ghost Of Jim Bob Wilson}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file theghostofjimbobwilsonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jim Bob Wilson passed away in [C]192[G]8
@@ -43,3 +46,8 @@ All the [D7]rest of her life she gave no [C]man a second [G]glance
 She watched her fine young son grow up and [C]smiled unto hers[G]elf
 The ghost of Jim Bob [C]Wilson is [D7]alive and doing [G]well
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's All Right With Me}
 {meta: artist George Strait}
 {meta: composer Jackson Leap}
+{meta: x_source classic-country}
+{meta: x_source_file itsallrightwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's alright with me if [G7]it's alright with [C]you
@@ -47,3 +50,8 @@ When the [F]car won't start the [C]rain won't stop
 And [F]all of the bills are [C]due
 It's alright with me if [G7]it's alright with [C]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title How Long Is Forever}
 {meta: artist Ray Price}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file howlongisforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I fell too hard and much too deep in [G7]love with you
@@ -29,3 +32,6 @@ How long until one night you [C]won't come home again
 How long is for[C7]ever this [F]time
 How [G7]long until I'm all alone [C]again
 {end_of_verse}
+
+
+

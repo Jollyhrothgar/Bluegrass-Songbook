@@ -1,6 +1,9 @@
 {meta: title Dixie On My Mind}
 {meta: artist Hank Williams Jr.}
 {meta: composer Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file dixieonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Dixie On My Mind 
@@ -50,3 +53,9 @@ Now I [F]just don't fit in and I'll [C]never be back again
 But I'm busted here and [F]I got Dixie on my [C]mind
 Lord I'm stuck up here and [F]I got Dixie on my [C]mind 
 {end_of_verse}
+
+
+
+
+
+

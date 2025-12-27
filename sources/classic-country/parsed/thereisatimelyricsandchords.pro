@@ -1,6 +1,9 @@
 {meta: title There Is A Time}
 {meta: artist Alan Jackson}
 {meta: composer Rodney Dillard and Mitchell Jayne}
+{meta: x_source classic-country}
+{meta: x_source_file thereisatimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]There is a time for love and laughter
@@ -50,3 +53,9 @@ When time is [C]young and so are [Am]we
 The woods are [C]greener over [Am]yonder
 The path is [F]new [E7]the world is [Am]free
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Accidentally On Purpose}
 {meta: artist George Jones}
 {meta: composer George Jones and Darrell Edwards}
+{meta: x_source classic-country}
+{meta: x_source_file accidentallyonpurposelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the papers I [F]saw you this [C]morning
@@ -29,3 +32,6 @@ That [D7]I was just a fool with the [G7]heart of a clown
 Acci[C]dentally [F]you were [C]mistaken that night
 Acci[G7]dentally on purpose for [C]spite
 {end_of_verse}
+
+
+

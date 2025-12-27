@@ -1,6 +1,9 @@
 {meta: title Another Month Another Week Another Day}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Sylvia Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file anothermonthanotherweekanotherdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You’re gonna love me less tomorrow
@@ -45,3 +48,9 @@ Another month another [D7]week another [G]day
 {start_of_verse: Verse 5}
 Another month another [D7]week another [G]day
 {end_of_verse}
+
+
+
+
+
+

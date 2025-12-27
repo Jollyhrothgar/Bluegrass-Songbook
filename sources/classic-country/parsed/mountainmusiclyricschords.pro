@@ -1,5 +1,8 @@
 {meta: title Mountain Music}
 {meta: artist Alabama}
+{meta: x_source classic-country}
+{meta: x_source_file mountainmusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh play me  some mountain [C]music
@@ -43,3 +46,9 @@ Repeat #1
 {start_of_verse: Verse 7}
 Repeat #1
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Keep Your Promise Willie Thomas}
 {meta: artist Hank Snow}
 {meta: composer Jack Fulton and Louis Steele}
+{meta: x_source classic-country}
+{meta: x_source_file keepyourpromisewilliethomaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Keep your promise Willie [G]Thomas
@@ -30,3 +33,6 @@ So I'll [C]keep my promise Willie [G]Thomas
 And [D7]there'll be spring cause with the birds I'll sing my love again to [G]you
 [C]Keep your promise Willie [G]Thomas
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Harbor Lights}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file harborlightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw the harbor [G7]lights
@@ -25,3 +28,5 @@ But [D7]you were on the ship and I was on the [G7]shore
 For all the while my heart is [C]whispering
 Some other [G7]harbor lights will steal your love from [C]me
 {end_of_verse}
+
+

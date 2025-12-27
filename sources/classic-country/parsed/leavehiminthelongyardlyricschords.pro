@@ -1,6 +1,9 @@
 {meta: title Leave Him In The Longyard}
 {meta: artist Slim Dusty}
 {meta: composer Kelly Dixon}
+{meta: x_source classic-country}
+{meta: x_source_file leavehiminthelongyardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes he's looking kind of jaded
@@ -60,3 +63,9 @@ Repeat last verse x2
 {start_of_verse: Verse 6}
 [G7]Leave him there and we will turn him out [C]today
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Shout Hooray}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file ishouthooraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I shout hoo[G]ray I'm on my way I'm going home
@@ -25,3 +28,6 @@ I shout [D7]hooray I'm on my way I'm going [G]home
 {start_of_verse: Verse 4}
 I shout [D7]hooray I'm on my way I'm going [G]home
 {end_of_verse}
+
+
+

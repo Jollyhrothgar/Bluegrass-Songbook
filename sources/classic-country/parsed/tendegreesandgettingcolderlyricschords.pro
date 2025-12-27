@@ -1,6 +1,9 @@
 {meta: title Ten Degrees And Getting Colder}
 {meta: artist J.D. Crowe}
 {meta: composer Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file tendegreesandgettingcolderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was standing by the highway with a sign that just said mother
@@ -37,3 +40,7 @@ His feet are almost frozen and the [D7]sun is sinking [G7]low
 Please pull off on the shoulder if [D7]you're going Milwaukee [G7]way
 [C]It's ten degrees and getting colder down by [G7]Boulder dam [C]today
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title She Reminded Me Of You}
 {meta: artist Mickey Gilley}
 {meta: composer Wayland D. Holyfield and Peter James McCann}
+{meta: x_source classic-country}
+{meta: x_source_file sheremindedmeofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I almost hung up when you [F]answered 
@@ -50,3 +53,9 @@ All the [G7]love that we once [C]knew
 All the little things you [F]used to do
 She [G7]reminded me of [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Keep Putting Off Getting Over You}
 {meta: artist Don Williams}
 {meta: composer Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file ikeepputtingoffgettingoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I keep your [C]picture on my [Am]dresser
@@ -43,3 +46,8 @@ Oh [C]I keep puttin' off [F]gettin' over you
 [Am]I just can't believe [F]you and I are through
 [G7]So I keep puttin' off gettin' over [Am]you
 {end_of_verse}
+
+
+
+
+

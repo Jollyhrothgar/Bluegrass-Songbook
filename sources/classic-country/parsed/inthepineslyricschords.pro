@@ -1,6 +1,9 @@
 {meta: title In The Pines}
 {meta: artist Dolly Parton}
 {meta: composer Alan Riggs}
+{meta: x_source classic-country}
+{meta: x_source_file inthepineslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the pines in the pines
@@ -43,3 +46,9 @@ I asked my captain
 [F]For the time of [C]day
 [G7]He said he throwed his watch [C]away
 {end_of_verse}
+
+
+
+
+
+

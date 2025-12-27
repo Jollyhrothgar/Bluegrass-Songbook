@@ -1,6 +1,9 @@
 {meta: title Danny Boy}
 {meta: artist Ray Price}
 {meta: composer Fred Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file dannyboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh Danny boy the pipes the pipes are [F]calling
@@ -29,3 +32,6 @@
 [C]For you will [F]bend and tell me that you love [C]me
 [G7]Then I will sleep in peace until you come to [C]me
 {end_of_verse}
+
+
+

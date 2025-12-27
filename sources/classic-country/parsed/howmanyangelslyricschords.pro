@@ -1,6 +1,9 @@
 {meta: title How Many Angels}
 {meta: artist Charley Pride}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file howmanyangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]I did not mean to hurt your [C]feelings
@@ -50,3 +53,9 @@
 [C]Oh don't you realize you [F]can't live without her
 [C]How many [G7]angels do you [C]know
 {end_of_verse}
+
+
+
+
+
+

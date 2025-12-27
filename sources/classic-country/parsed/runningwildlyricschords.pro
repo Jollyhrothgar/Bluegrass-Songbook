@@ -1,6 +1,9 @@
 {meta: title Running Wild}
 {meta: artist Tom T Hall}
 {meta: composer Tom T. Hall and Alan Pace}
+{meta: x_source classic-country}
+{meta: x_source_file runningwildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the shadow of the [C]sa[G]ddle running [C]wild and running [G]free
@@ -29,3 +32,6 @@ Call 'em mus[A]tangs [C]call 'em [D7]free
 In the [G]shadow of the [C]sa[G]ddle
 Let 'em [C]run boys [D7]let 'em [G]be
 {end_of_verse}
+
+
+

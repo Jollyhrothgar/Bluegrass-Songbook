@@ -1,6 +1,9 @@
 {meta: title Thank God For The U.S.A.}
 {meta: artist Jim and Jesse}
 {meta: composer Albert E. Brumley Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file thankGodfortheUSAlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Thank God for the [G7]U.S.[C]A.
@@ -75,3 +78,13 @@ Life and [G7]our liber[C]ty
 Thank [F]God for the right to be an [C]American
 Thank God for the [G7]U.S.[C]A.
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Happy Birthday Darlin'}
 {meta: artist Conway Twitty}
 {meta: composer Chuck Howard}
+{meta: x_source classic-country}
+{meta: x_source_file happybirthdaydarlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]    [Am]     Hello darlin' [F]    [C]happy birthday
@@ -38,3 +41,7 @@ But I hope I'll make you [F]happy with [Dm]every[G7]thing I [C]take
 Happy birthday [F]darlin' I've no [G7]presents no fancy [C]cake
 But I hope I'll make you [F]happy with [Dm]every[G7]thing I [C]take
 {end_of_verse}
+
+
+
+

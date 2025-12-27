@@ -1,6 +1,9 @@
 {meta: title The Real Thing}
 {meta: artist George Strait}
 {meta: composer Chip Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file therealthinglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was on a bus comin' back to us from [F]Atlanta in '53[C]
@@ -47,3 +50,8 @@ You're gonna pull my string make it the [G7]real thing for [C]me
 {start_of_verse: Verse 4}
 You're gonna pull my string make it the [G7]real thing for [C]me
 {end_of_verse}
+
+
+
+
+

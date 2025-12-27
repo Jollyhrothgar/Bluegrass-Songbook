@@ -1,6 +1,9 @@
 {meta: title One Window Four Walls}
 {meta: artist Marty Robbins}
 {meta: composer Melissa Cordell and Ann Russell}
+{meta: x_source classic-country}
+{meta: x_source_file onewindowfourwallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I once had my [F]freedom and my [G7]life before [C]me
@@ -43,3 +46,8 @@
 [C]One window four walls [C7]and the door that won't [F]open
 [G7]The warden takes care of the [C]key
 {end_of_verse}
+
+
+
+
+

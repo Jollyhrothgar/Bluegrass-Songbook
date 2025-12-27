@@ -1,5 +1,8 @@
 {meta: title Angels Are Hard To Find}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file angelsarehardtofindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I'm singing you this [F]message up to [C]heaven
@@ -40,3 +43,9 @@ But you know [C]Lord  [G7]angels are hard to [C]find
 {start_of_verse: Verse 6}
 [F]One like that right there [C]Lord  [G7]angels are hard to [C]find
 {end_of_verse}
+
+
+
+
+
+

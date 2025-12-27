@@ -1,6 +1,9 @@
 {meta: title El Rancho De Rio Lyrics Chords}
 {meta: artist Jim Reeves}
 {meta: composer Tom Perryman}
+{meta: x_source classic-country}
+{meta: x_source_file elranchoderiolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m a happy go lucky vaquero from the ran[D7]cho 
@@ -45,3 +48,7 @@ Like the ring she’ll soon be [D7]wearing
 Gonna settle down today 
 And then we’ll celebrate a big [G]fiesta 
 {end_of_verse}
+
+
+
+

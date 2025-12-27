@@ -1,6 +1,9 @@
 {meta: title Maple Sugar Sweetheart}
 {meta: artist Mac Wiseman}
 {meta: composer Ward Allen and Henry Hank Lariviere}
+{meta: x_source classic-country}
+{meta: x_source_file maplesugarsweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I left her in the mountains in the golden summertime
@@ -29,3 +32,6 @@ With a [D7]heart as pure as gold and in [G]dreams her face I see
 Soon I'll be returning and the wedding bells will chime
 I'll [D7]make her mine forever when it's [G]maple [D7]sugar [G]time
 {end_of_verse}
+
+
+

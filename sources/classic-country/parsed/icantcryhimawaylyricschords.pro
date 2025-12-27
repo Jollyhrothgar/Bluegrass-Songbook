@@ -1,6 +1,9 @@
 {meta: title I Can't Cry Him Away}
 {meta: artist Jean Shepard}
 {meta: composer Neal Merritt}
+{meta: x_source classic-country}
+{meta: x_source_file icantcryhimawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every jukebox that I see holds a memory for [C]me
@@ -34,3 +37,7 @@
 [C]I go to my lonely room and I cry there in the gloom
 [D7]But I still can't seem to cry him [G]away
 {end_of_verse}
+
+
+
+

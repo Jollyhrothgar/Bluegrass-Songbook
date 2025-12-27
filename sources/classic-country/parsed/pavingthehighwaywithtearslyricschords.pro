@@ -1,6 +1,9 @@
 {meta: title Paving The Highway With Tears}
 {meta: artist Hank Snow}
 {meta: composer Ed G. Nelson and Steve Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file pavingthehighwaywithtearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm travelin' down a [D7]lonesome road of [G]sorrow
@@ -29,3 +32,6 @@ You'll [A7]find me if you follow the [D7]teardrops on the trail
 [G]Without you dear [D7]I'll just go on [G]forever
 [D7]Paving the highway with [G]tears
 {end_of_verse}
+
+
+

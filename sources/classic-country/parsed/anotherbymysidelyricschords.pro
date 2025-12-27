@@ -1,6 +1,9 @@
 {meta: title Another By My Side}
 {meta: artist The Lonesome River Band}
 {meta: composer Ronnie Bowman and Darryl Webb}
+{meta: x_source classic-country}
+{meta: x_source_file anotherbymysidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sit and wonder why you ever left me
@@ -51,3 +54,12 @@ I was lonesome and so blue till I found somebody new
 You left me here behind I used to sit and cry
 [C]And think about you darling all the time
 {end_of_verse}
+
+
+
+
+
+
+
+
+

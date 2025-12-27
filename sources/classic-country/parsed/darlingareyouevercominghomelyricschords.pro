@@ -1,6 +1,9 @@
 {meta: title Darling Are You Ever Coming Home}
 {meta: artist Connie Smith}
 {meta: composer Hank Cochran - Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file darlingareyouevercominghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once again it's twelve o'clock  you're still [C]gone
@@ -22,3 +25,5 @@ Oh [D7]darling are you ever coming [G]home
 But [G]I've run out of answers you've been gone so [C]long
 Oh [D7]darling are you ever coming [G]home
 {end_of_verse}
+
+

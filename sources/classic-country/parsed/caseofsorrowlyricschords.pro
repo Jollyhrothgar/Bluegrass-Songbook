@@ -1,6 +1,9 @@
 {meta: title Case of Sorrow}
 {meta: artist The Survivors}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file caseofsorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got to [G7]get together with my heart in [C]mind
@@ -33,3 +36,7 @@ With a [G]sleepy wake up [G7]smile to make it [C]right
 {start_of_verse: Verse 5}
 With a [G]sleepy wake up [G7]smile to make it [C]right
 {end_of_verse}
+
+
+
+

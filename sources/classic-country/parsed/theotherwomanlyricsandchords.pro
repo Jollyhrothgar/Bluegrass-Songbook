@@ -1,6 +1,9 @@
 {meta: title The Other Woman}
 {meta: artist Loretta Lynn}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file theotherwomanlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm the other [D7]woman the other woman in your husband's [G]life
@@ -28,3 +31,6 @@ And [A7]you know who was first to cheat on [D7]who
 I [G]just accepted love from him you [D7]never wanted
 The other woman didn't steal from [G]you
 {end_of_verse}
+
+
+

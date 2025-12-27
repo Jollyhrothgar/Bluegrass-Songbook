@@ -1,5 +1,8 @@
 {meta: title Sand In My Shoes}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file sandinmyshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You ask me why I wander why I'm [C]always on the [G]roam
@@ -32,3 +35,7 @@ I keep moving just to dodge the [D7]blues
 I'd [G]love to stay awhile with you a [C]wedding ring we'd [G]choose
 But I've go sand burnin' [D7]sand in my [G]shoes
 {end_of_verse}
+
+
+
+

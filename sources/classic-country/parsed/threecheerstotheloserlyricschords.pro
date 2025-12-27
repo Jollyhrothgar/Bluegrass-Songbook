@@ -1,6 +1,9 @@
 {meta: title Three Cheers To The Loser}
 {meta: artist Wynn Stewart}
 {meta: composer Carl Belew}
+{meta: x_source classic-country}
+{meta: x_source_file threecheerstotheloserlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now gather around me blues I'd like to make a [G7]toast
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Oh three cheers for the loser that's [C]me
 {end_of_verse}
+
+
+
+

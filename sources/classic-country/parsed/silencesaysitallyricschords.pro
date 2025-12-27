@@ -1,6 +1,9 @@
 {meta: title Silence Says It All}
 {meta: artist Martin Delray}
 {meta: composer James A. Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file silencesaysitallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He closed the door to his old truck and [G7]slowly crossed the [C]lawn
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [F]Ohh [C]sometimes [G7]silence says it [C]all
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Fire Gets Higher}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file firegetshigherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the dress you were wearing it's [D7]hanging on the door
@@ -32,3 +35,7 @@ And the [D7]fire gets higher each time we [G]kiss
 {start_of_verse: Verse 5}
 And the [D7]fire gets higher each time we [G]kiss
 {end_of_verse}
+
+
+
+

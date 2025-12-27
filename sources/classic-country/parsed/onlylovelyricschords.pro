@@ -1,6 +1,9 @@
 {meta: title Only Love}
 {meta: artist Don Williams}
 {meta: composer Roger Cook, John Prine, Sandy Mason}
+{meta: x_source classic-country}
+{meta: x_source_file onlylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You may live alone and close your [F]eyes  some folks [C]do 
@@ -36,3 +39,7 @@ Only love love only only [F]love  comes [C]true
 [G7]Nothing else you see there's nothing [F]else 
 Only [C]love  [G7]on-[F]ly [C]love
 {end_of_verse}
+
+
+
+

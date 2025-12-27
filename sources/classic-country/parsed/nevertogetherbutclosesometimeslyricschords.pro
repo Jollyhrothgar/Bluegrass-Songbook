@@ -1,6 +1,9 @@
 {meta: title Never Together But Close Sometimes}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file nevertogetherbutclosesometimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s a song in [D7]your eye as [G]blue as the [C]sky
@@ -54,3 +57,10 @@ They’re [G]never together but they’re [D7]close some[G]times
 {start_of_verse: Verse 5}
 Are never together but they’re [D7]close some[G]times
 {end_of_verse}
+
+
+
+
+
+
+

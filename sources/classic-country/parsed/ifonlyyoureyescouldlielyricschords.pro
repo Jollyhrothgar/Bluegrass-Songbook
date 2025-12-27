@@ -1,6 +1,9 @@
 {meta: title If Only Your Eyes Could Lie}
 {meta: artist George Jones}
 {meta: composer John Charles Jarrard and Robert Lee McDill}
+{meta: x_source classic-country}
+{meta: x_source_file ifonlyyoureyescouldlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl I can tell that you're thinking of [F]leaving
@@ -33,3 +36,7 @@ And your [F]lovin' arms make me [C]think you're still mi[Am]ne
 {start_of_verse: Verse 4}
 Oh girl if [G7]only your eyes could [F]l-i[C]e
 {end_of_verse}
+
+
+
+

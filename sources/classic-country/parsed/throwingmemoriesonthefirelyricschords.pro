@@ -1,6 +1,9 @@
 {meta: title Throwing Memories On The Fire}
 {meta: artist Cal Smith}
 {meta: composer Bobby Bond}
+{meta: x_source classic-country}
+{meta: x_source_file throwingmemoriesonthefirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bone tired [G][C]uninspired [C]a-hellava way to [G]feel
@@ -33,3 +36,7 @@
 [C]And you’re out looking I know for [G]something
 [D7]I hope to God that you ain’t [G][C]found
 {end_of_verse}
+
+
+
+

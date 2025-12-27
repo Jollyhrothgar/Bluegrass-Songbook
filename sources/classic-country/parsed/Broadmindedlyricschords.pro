@@ -1,6 +1,9 @@
 {meta: title Broadminded}
 {meta: artist Tammy Wynette}
 {meta: composer Jimmy Payne and Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file Broadmindedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every night I catch you sleepin' with a smile on your [F]face
@@ -27,3 +30,6 @@
 [Am]A broadminded [F]narrow minded [C]man
 [Am]A broadminded [F]narrow minded [C]man
 {end_of_verse}
+
+
+

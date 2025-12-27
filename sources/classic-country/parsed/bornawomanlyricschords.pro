@@ -1,6 +1,9 @@
 {meta: title Born A Woman}
 {meta: artist Jean Shepard}
 {meta: composer Martha Sharp}
+{meta: x_source classic-country}
+{meta: x_source_file bornawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was born a [D7]woman I'm glad it happened that [G]way
@@ -29,3 +32,6 @@ Because to be his [D7]woman no price is too great to [G]pay
 Yes I was born a [D7]woman I'm glad it happened that [G]way
 Yes I was born a [D7]woman I'm glad it happened that [G]way
 {end_of_verse}
+
+
+

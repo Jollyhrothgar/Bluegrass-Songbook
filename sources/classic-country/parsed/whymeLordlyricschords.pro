@@ -1,5 +1,8 @@
 {meta: title Why Me Lord}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file whymeLordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Why me Lord what have I [G7]ever [C]done
@@ -39,3 +42,8 @@ Help me [D7]Jesus my soul's in your [G]hand
 {start_of_verse: Verse 5}
 [D7]Jesus my soul's in your [G][Am][C]h-a-n-d
 {end_of_verse}
+
+
+
+
+

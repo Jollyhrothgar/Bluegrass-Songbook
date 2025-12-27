@@ -1,6 +1,9 @@
 {meta: title We Go Good Together}
 {meta: artist Jean Shepard}
 {meta: composer Gene Dobbins and Rayburn Anthony}
+{meta: x_source classic-country}
+{meta: x_source_file wegogoodtogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I'm standin' [F]by your side the [G7]fire of love is [C]burnin'
@@ -43,3 +46,8 @@ We go good together we [E7]don't see stormy weather
 Our love grows even stronger [E7]we'll love together [Am]longer
 There's [G7]happiness in love this [C]way
 {end_of_verse}
+
+
+
+
+

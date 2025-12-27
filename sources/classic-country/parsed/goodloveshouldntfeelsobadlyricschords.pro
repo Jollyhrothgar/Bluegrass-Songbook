@@ -1,5 +1,8 @@
 {meta: title Good Love Shouldn't Feel So Bad}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file goodloveshouldntfeelsobadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Damn the [C]way you always bring me [F]down 
@@ -40,3 +43,8 @@ So [G7]tell me why the hell we tried so [C]long [G7]
 {start_of_verse: Verse 5}
 So [G7]tell me why the hell we tried so [C]long
 {end_of_verse}
+
+
+
+
+

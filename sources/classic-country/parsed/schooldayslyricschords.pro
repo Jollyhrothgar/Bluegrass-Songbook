@@ -1,6 +1,9 @@
 {meta: title School Days}
 {meta: artist Charlie Rich}
 {meta: composer Gus Edwards and Will Cobb}
+{meta: x_source classic-country}
+{meta: x_source_file schooldayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]School days [D7]school days 
@@ -28,3 +31,6 @@ I was your [G]bashful  [C]barefoot [G]beau
 {start_of_verse: Verse 4}
 [C]Yeah just a swinging couple [G]kids
 {end_of_verse}
+
+
+

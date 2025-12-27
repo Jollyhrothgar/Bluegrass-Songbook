@@ -1,6 +1,9 @@
 {meta: title You Call Everybody Darling}
 {meta: artist Faron Young}
 {meta: composer Sam Martin, Ben Trace, Albert Trace, Clem Watts}
+{meta: x_source classic-country}
+{meta: x_source_file youcalleverybodydarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You call everybody darling 
@@ -39,3 +42,8 @@ Then love won't come a [G7]knocking at your [C]door
 And as the years go [E7]by you'll [G]sit and wonder [E7]why 
 [A7]Nobody calls you [D7]darling [G]anymore
 {end_of_verse}
+
+
+
+
+

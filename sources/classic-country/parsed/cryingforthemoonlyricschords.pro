@@ -1,6 +1,9 @@
 {meta: title Crying For The Moon}
 {meta: artist Slim Whitman}
 {meta: composer Richards}
+{meta: x_source classic-country}
+{meta: x_source_file cryingforthemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’ll waste a lifetime [F]crying for the [C]moon
@@ -28,3 +31,6 @@ We’ll be happy [G7]too while you’re crying for the [C]moon
 You’ll be sad and [G7]blue I’ll have someone new
 While you’re crying for the [C]moon
 {end_of_verse}
+
+
+

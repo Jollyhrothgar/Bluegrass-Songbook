@@ -1,6 +1,9 @@
 {meta: title If You Want Me To I'll Go}
 {meta: artist Don Gibson}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwantmetoillgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Well the [C]rain just touched the [E7]flower in the [A7]meadow
@@ -26,3 +29,6 @@ Well [F]honey if you [G7]want me to I'll [C]go
 {start_of_verse: Verse 4}
 Yeah [F]honey if you [G7]want me to I'll [C]go [F]   [C]
 {end_of_verse}
+
+
+

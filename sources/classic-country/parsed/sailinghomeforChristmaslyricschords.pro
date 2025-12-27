@@ -1,6 +1,9 @@
 {meta: title Sailing Home For Christmas}
 {meta: artist Doug Stone}
 {meta: composer Lewis Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file sailinghomeforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They looked out their [Em]windows at the [C]ocean that [G]surrounds them
@@ -46,3 +49,9 @@ They'[C]ll be sailing home for Chri[G]stmas sa[D7]iling hom[Em]e for Christmas
 [D7]They'll be [C]sailing home for Christmas [G]sailing [D7]home for [Em]Christmas
 [G]Sailing home for [D7]Christmas in their [C]dreams[G]
 {end_of_verse}
+
+
+
+
+
+

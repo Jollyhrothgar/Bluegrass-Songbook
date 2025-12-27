@@ -1,6 +1,9 @@
 {meta: title Honk If You Honky Tonk}
 {meta: artist George Strait}
 {meta: composer Dean Dillon, Ken Mellons, John Northrup}
+{meta: x_source classic-country}
+{meta: x_source_file honkifyouhonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I got a bumper sticker on the back of my truck
@@ -46,3 +49,9 @@ But if you [G]do [C]don’t you love to
 But if you [G]do [C]don’t you love to
 [G]Honk if you [D7]honky [G]tonk
 {end_of_verse}
+
+
+
+
+
+

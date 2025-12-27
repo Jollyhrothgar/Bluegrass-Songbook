@@ -1,6 +1,9 @@
 {meta: title Where The Blue And Lonely Go}
 {meta: artist Roy Drusky}
 {meta: composer Jimmy Warren, Alvaro Verissimo,}
+{meta: x_source classic-country}
+{meta: x_source_file wheretheblueandlonelygolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Where the blue and lonely go
@@ -36,3 +39,7 @@ Where the [C]music's loud and clear
 It's the [F]only place I [G7]know
 Where the [F]blue and [G7]lonely [C]go [F]  [C]
 {end_of_verse}
+
+
+
+

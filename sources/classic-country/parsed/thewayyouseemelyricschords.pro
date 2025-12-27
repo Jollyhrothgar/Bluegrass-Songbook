@@ -1,5 +1,8 @@
 {meta: title The Way You See Me}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file thewayyouseemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Birds flying south [C]to the one I [G]love
@@ -32,3 +35,7 @@ But if you tell my darling [G]you flowed from my [Em]eyes
 {start_of_verse: Verse 5}
 [G]She'd see me the [D7]way you see [G]me
 {end_of_verse}
+
+
+
+

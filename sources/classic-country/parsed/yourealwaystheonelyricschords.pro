@@ -1,6 +1,9 @@
 {meta: title You're Always The One}
 {meta: artist Ferlin Husky}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file yourealwaystheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When my world around me [B7]crumbles when [C]in darkness I [G]stumble
@@ -33,3 +36,7 @@ Who [D7]do I [G]turn [Em]to you're [A7]al-[D7]ways the [G]one
 {start_of_verse: Verse 4}
 You're [A7]al-[D7]ways the [C]on[G]e
 {end_of_verse}
+
+
+
+

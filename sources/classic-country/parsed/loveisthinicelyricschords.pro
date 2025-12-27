@@ -1,6 +1,9 @@
 {meta: title Love Is Thin Ice}
 {meta: artist Barbara Mandrell}
 {meta: composer Geoff Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file loveisthinicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love is thin [G7]ice it's so [F]easy to fall right [C]in
@@ -45,3 +48,8 @@ Then you [C]better be [A#7]careful when [A7]love starts calling
 {start_of_verse: Verse 4}
 You better [Dm]take my ad[G7]vice love is thin [C]ice
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Buried Treasure}
 {meta: artist Kenny Rogers}
 {meta: composer Barry Gibb, Maurice Gibb, Robin Gibb}
+{meta: x_source classic-country}
+{meta: x_source_file buriedtreasurelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I'm walkin' behind this plow I keep turnin' over memories
@@ -36,3 +39,7 @@ Precious [F]memories of a love that lived and [C]died
 You couldn't be the simple wife you had to lead the cheatin' life
 And you [Dm]led me down the [F]road I hate to [C]ride
 {end_of_verse}
+
+
+
+

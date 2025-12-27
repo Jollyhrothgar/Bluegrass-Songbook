@@ -1,6 +1,9 @@
 {meta: title Don't Look At My Shadow}
 {meta: artist Manassa}
 {meta: composer Stephen Stills}
+{meta: x_source classic-country}
+{meta: x_source_file dontlookatmyshadowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]New York City years ago [A7]tourist in the rain
@@ -57,3 +60,9 @@ It's been a [Em]long long long way
 it's been [A7]twenty years ago
 I'm [C]thinking about my [D7]past quite [G]amusing
 {end_of_verse}
+
+
+
+
+
+

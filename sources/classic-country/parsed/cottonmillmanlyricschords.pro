@@ -1,6 +1,9 @@
 {meta: title Cotton Mill Man}
 {meta: artist Jim and Jesse}
 {meta: composer Joe Langston}
+{meta: x_source classic-country}
+{meta: x_source_file cottonmillmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born in the shadow of a cotton mill smokestack
@@ -67,3 +70,12 @@ To [F]be a sweaty [G7]cotton mill [C]man
 [F]Lord don't let my [G7]son grow up
 To [F]be a sweaty [G7]cotton mill [C]man
 {end_of_verse}
+
+
+
+
+
+
+
+
+

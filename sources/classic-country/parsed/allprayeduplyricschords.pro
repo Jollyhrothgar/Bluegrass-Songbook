@@ -1,6 +1,9 @@
 {meta: title All Prayed Up}
 {meta: artist Vince Gill}
 {meta: composer Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file allprayeduplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm all prayed up I'm [C]ready to meet my [G]Savior
@@ -48,3 +51,9 @@ Heaven's doors gonna swing wide [D7]open when I [G]die
 I'm all prayed up my [C]faith will never [G]waiver
 Heaven's doors gonna swing wide [D7]open when I [G]die
 {end_of_verse}
+
+
+
+
+
+

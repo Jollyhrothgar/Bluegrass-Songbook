@@ -1,6 +1,9 @@
 {meta: title What Do They Know}
 {meta: artist Tanya Tucker}
 {meta: composer Richard Ross and Donny Kees}
+{meta: x_source classic-country}
+{meta: x_source_file whatdotheyknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say life goes [C]on  [D7]I’ll find true love [G]again
@@ -26,3 +29,6 @@ I feel like [Em]someone took a knife [D7]and cut my life in [Am]two
 {start_of_verse: Verse 4}
 They’re not trying to live [Am]without you  so [D7]what do they [G]know
 {end_of_verse}
+
+
+

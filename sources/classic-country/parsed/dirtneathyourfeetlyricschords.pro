@@ -1,5 +1,8 @@
 {meta: title Dirt 'Neath Your Feet}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file dirtneathyourfeetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I picked up your heart from the [G7]ashes
@@ -28,3 +31,6 @@ But I [F]find I'm just dirt 'neath your [C]feet
 [C]Showing how you proven in dis[G7]creet
 Like dirt 'neath your feet you turned me [C]down
 {end_of_verse}
+
+
+

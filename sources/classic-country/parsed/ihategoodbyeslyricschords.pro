@@ -1,6 +1,9 @@
 {meta: title I Hate Goodbyes}
 {meta: artist Bobby Bare}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file ihategoodbyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Softly close the door behind [G]you
@@ -32,3 +35,7 @@ Gently break the tie that binds you
 [G]First it's always then [C]it's [Am]never
 [G]And the Lord [D7]knows how I hate [G][C]good-byes
 {end_of_verse}
+
+
+
+

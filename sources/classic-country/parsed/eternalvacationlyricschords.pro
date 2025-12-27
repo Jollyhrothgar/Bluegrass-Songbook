@@ -1,5 +1,8 @@
 {meta: title Eternal Vacation}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file eternalvacationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some people are taking vacations [C]traveling both far and [G]near
@@ -28,3 +31,6 @@
 [G]For me the gates will swing open and [C]I'll have a mansion [G]within
 [C]There I will rest up in [G]heaven a rest that [D7]never will [G]end
 {end_of_verse}
+
+
+

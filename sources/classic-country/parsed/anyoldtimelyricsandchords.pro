@@ -1,6 +1,9 @@
 {meta: title Any Old Time}
 {meta: artist George Strait}
 {meta: composer Jeff Dayton and Katheryn Nicoll}
+{meta: x_source classic-country}
+{meta: x_source_file anyoldtimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Any old time when you get lonely
@@ -29,3 +32,6 @@ Or how [D#7]far away you may [D7]be
 Any old [G]time [C]you can [B7]find [Em]me
 Drop in a dime [D7]and there I'll [G]be
 {end_of_verse}
+
+
+

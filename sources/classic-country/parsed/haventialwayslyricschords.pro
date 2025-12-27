@@ -1,6 +1,9 @@
 {meta: title Haven't I Always}
 {meta: artist Johnny Bush}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file haventialwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who will take you back again [F]   [G7]
@@ -22,3 +25,5 @@ Haven't [C]I always[G7]
 [C]Who forgive for all your sins [F]   [G7]
 Haven't I [C]always
 {end_of_verse}
+
+

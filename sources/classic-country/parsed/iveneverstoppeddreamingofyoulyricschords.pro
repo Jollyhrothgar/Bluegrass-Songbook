@@ -1,6 +1,9 @@
 {meta: title I've Never Stopped Dreaming Of You}
 {meta: artist Reba McEntire}
 {meta: composer Jerry Wallace, Terry Skinner, Lonnie Ledford}
+{meta: x_source classic-country}
+{meta: x_source_file iveneverstoppeddreamingofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I've for[G]gotten your number I hadn't [C]called in a while
@@ -40,3 +43,8 @@ But I've [Am]never stopped [D7]dreaming of [G]you[D7]
 {start_of_verse: Verse 5}
 But I've [Am]never stopped [D7]dreaming of [G]you
 {end_of_verse}
+
+
+
+
+

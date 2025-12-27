@@ -1,6 +1,9 @@
 {meta: title The Last Time I Called Somebody Darlin'}
 {meta: artist Roy Drusky}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thelasttimeicalledsomebodydarlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Thinkin' of you wonderin' who 
@@ -43,3 +46,8 @@ My [A7]heart reminds my lips that I'm not [D7]free
 The last time I [G7]called somebody [C]darlin'
 Was the [G]last time you [D7]held me close to [G]you
 {end_of_verse}
+
+
+
+
+

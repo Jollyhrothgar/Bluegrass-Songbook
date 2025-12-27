@@ -1,5 +1,8 @@
 {meta: title Take Your Memory With You}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file takeyourmemorywithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Take Your Memory With You
@@ -35,3 +38,7 @@ Won't you leave before the heartache starts to [D7]show
 [F]So I won't have to [G7]miss you
 [F]Take your memory [G7]with you when you [C]go
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Where Do I Go From Here}
 {meta: artist Jim Reeves}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file wheredoigofromherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where do I go from here what fate is drawing [G7]near
@@ -22,3 +25,5 @@ And [C]help me on my [G7]way
 [G7]Abiding faith and peace of mind
 And [F]I won't ask Where do [G7]I go from [C]here
 {end_of_verse}
+
+

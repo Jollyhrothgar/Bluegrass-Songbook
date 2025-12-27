@@ -1,5 +1,8 @@
 {meta: title The Right Combination}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file therightcombinationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I be[F]lieve we have the right combi[C]nation 
@@ -35,3 +38,7 @@ Our [G7]love and happiness both seem so [C]strong
 I be[F]lieve we have a firm foun[C]dation 
 That [G7]our love can build and last forever [C]on
 {end_of_verse}
+
+
+
+

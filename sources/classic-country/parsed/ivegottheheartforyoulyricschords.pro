@@ -1,6 +1,9 @@
 {meta: title I've Got The Heart For You}
 {meta: artist Keith Whitley}
 {meta: composer Larry Boone and John Greenebaum}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottheheartforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I [G]ain't got the money 
@@ -60,3 +63,11 @@ If you're [G]looking for the real thing
 [Am]I've got the [D7]heart for [G]you
 [Am]I've got the [D7]heart for [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+

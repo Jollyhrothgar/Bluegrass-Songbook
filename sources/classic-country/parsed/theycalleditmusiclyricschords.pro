@@ -1,6 +1,9 @@
 {meta: title They Called It Music}
 {meta: artist The Gibson Brothers}
 {meta: composer Eric Gibson and Joe Newberry}
+{meta: x_source classic-country}
+{meta: x_source_file theycalleditmusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We went upon the mountain to hear the old man [F]pray
@@ -46,3 +49,8 @@ It was [G7]music singing deep down in the mines
 In the [F]dark and lonesome prison cells and [G7]behind battle lines
 They called it [C]music
 {end_of_verse}
+
+
+
+
+

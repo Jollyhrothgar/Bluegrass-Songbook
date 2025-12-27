@@ -1,6 +1,9 @@
 {meta: title Hurt Me Bad In A Real Good Way}
 {meta: artist Patty Loveless}
 {meta: composer Rafe Van Hoy and Deborah Allen}
+{meta: x_source classic-country}
+{meta: x_source_file hurtmebadinarealgoodwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Would've [F]never found [C]you if he had [F]wanted to [C]stay
@@ -39,3 +42,8 @@ Was only moving me on [F]to this [G7]para[C]dise
 {start_of_verse: Verse 6}
 [F]Oh he [C]hurt me [Am]bad [F]in a [G7]real good [C]way
 {end_of_verse}
+
+
+
+
+

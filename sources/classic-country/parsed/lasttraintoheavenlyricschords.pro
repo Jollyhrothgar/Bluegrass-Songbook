@@ -1,6 +1,9 @@
 {meta: title Last Train To Heaven}
 {meta: artist Boxcar Willie}
 {meta: composer Jan B. Shuster and Guy Henry Workman}
+{meta: x_source classic-country}
+{meta: x_source_file lasttraintoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll ride that [F]last train to heaven
@@ -76,3 +79,13 @@ When the [F]final whistle [C]blows
 [G7]I'll ride that last train to heaven
 When the [F]final whistle [C]blows
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When The Rooster Leaves The Yard}
 {meta: artist Lefty Frizzel}
 {meta: composer Eddie Pleasant and A.C. Solberg}
+{meta: x_source classic-country}
+{meta: x_source_file whentheroosterleavestheyardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I took a job away from home to [C7]make my income [F]grow
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Yes I’m wondering what goes on when the rooster leaves the [C]yard
 {end_of_verse}
+
+
+
+

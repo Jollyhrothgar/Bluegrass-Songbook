@@ -1,6 +1,9 @@
 {meta: title There's A Fire In The Night}
 {meta: artist Alabama}
 {meta: composer Bob Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file theresafireinthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Runnin' scared wonderin' what I'm doin' so [Em]far from home
@@ -30,3 +33,6 @@ She took me to her [Em]room oh you know it felt so [G]right
 It keeps growing [C]higher the flame of de[G]sire
 By the dark of the [C]moon [Em]oh there's a [D7]fire in the [G]night
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Lord's Way Of Saying Goodnight}
 {meta: artist Hank Snow}
 {meta: composer Walter Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file thelordswayofsayinggoodnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](It's the Lord's way of [D7]saying [G]goodnight)
@@ -33,3 +36,7 @@
 [C]And when daylight [F]is gone let [G]the darkness creep [E7]on
 [A7]It's the Lord's way of saying [D7]goodnight [G](goodnight)
 {end_of_verse}
+
+
+
+

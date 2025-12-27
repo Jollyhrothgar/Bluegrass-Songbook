@@ -1,5 +1,8 @@
 {meta: title The Man You Want Me To Be}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file themanyouwantmetobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why can't you have a [F]little faith [C]confidentially
@@ -24,3 +27,5 @@ Just prove your [F]love and devotion
 [C]That's the strength I need
 Then I [G7]might be the man that you want me to [C]be
 {end_of_verse}
+
+

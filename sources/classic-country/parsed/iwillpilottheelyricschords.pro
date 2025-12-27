@@ -1,5 +1,8 @@
 {meta: title I Will Pilot Thee}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file iwillpilottheelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes when my faith would [D7]falter
@@ -50,3 +53,10 @@ Tag:
 {start_of_verse: Verse 6}
 [A7]Take My [G]hand and [D7]trust in [G]Me
 {end_of_verse}
+
+
+
+
+
+
+

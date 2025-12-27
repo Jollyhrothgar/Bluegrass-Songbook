@@ -1,5 +1,8 @@
 {meta: title A Castle in the Sky}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file acastleintheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I dreamed that we were livin' in [C]A castle in the [G]sky
@@ -28,3 +31,6 @@
 [C]Be faithful don't forsake me never leave and say [G]goodbye
 [D7]Like you left me in my castle in the [G]sky
 {end_of_verse}
+
+
+

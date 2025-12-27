@@ -1,5 +1,8 @@
 {meta: title It Won't Hurt}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file itwonthurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It won't hurt when I [C]fall down from this [G]barstool
@@ -39,3 +42,8 @@ But even [G]whiskey cannot [D7]ease you're hurtin' [G]me
 {start_of_verse: Verse 6}
 [C]Even [G]whiskey cannot [D7]ease you're hurtin' [G]me
 {end_of_verse}
+
+
+
+
+

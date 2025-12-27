@@ -1,5 +1,8 @@
 {meta: title Heart Trouble}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file hearttroublelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The way you treat me baby
@@ -76,3 +79,18 @@ Behind you everywhere
 [C]Well you've [G]got heart  [C]trouble  coming [G]on
 [C]Yeah you got [G]heart  trouble  [C]coming [G]on
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

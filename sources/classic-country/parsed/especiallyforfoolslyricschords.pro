@@ -1,6 +1,9 @@
 {meta: title Especially For Fools}
 {meta: artist Billy Walker}
 {meta: composer Jerry Organ and Wayne Walker}
+{meta: x_source classic-country}
+{meta: x_source_file especiallyforfoolslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can feel the blues around me everyday that we’re apart [C7]
@@ -29,3 +32,6 @@ Especially for fools like [C]me
 [G7]There should be a stool especially for fools
 Especially for fools like [C]me
 {end_of_verse}
+
+
+

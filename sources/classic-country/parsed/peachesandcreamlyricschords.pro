@@ -1,6 +1,9 @@
 {meta: title Peaches And Cream}
 {meta: artist Cowboy Copas}
 {meta: composer Vic McAlpin, Lloyd Copas, Alicia Evelyn}
+{meta: x_source classic-country}
+{meta: x_source_file peachesandcreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everything about [A7]my little ole gal 
@@ -51,3 +54,9 @@ She's the [A7]sweetest gal and I'm not bragging
 [G7]She's peaches and [C]cream
 Don't need no [A7]sugar she's [G7]peaches and [C]cream
 {end_of_verse}
+
+
+
+
+
+

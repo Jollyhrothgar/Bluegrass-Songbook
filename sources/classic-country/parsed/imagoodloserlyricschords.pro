@@ -1,5 +1,8 @@
 {meta: title I'm A Good Loser}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file imagoodloserlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yeah I'm a good [F]loser born to be that [C]way
@@ -35,3 +38,7 @@ This dog ain't [F]never had his [C]day
 Yeah I'm a g[F]ood loser so do[C]n't worry 'bout[F] my pride
 [C]Please don't look [F]back you can't [G7]see my hurt [C]inside
 {end_of_verse}
+
+
+
+

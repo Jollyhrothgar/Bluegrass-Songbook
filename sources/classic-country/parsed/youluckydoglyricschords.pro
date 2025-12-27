@@ -1,6 +1,9 @@
 {meta: title You Lucky Dog}
 {meta: artist Billy Walker}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file youluckydoglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes you took her off my hands you lucky [G7]dog
@@ -33,3 +36,7 @@ For [G7]another soon to be the lucky [C]dog
 {start_of_verse: Verse 4}
 Oh but I'm a [G7]wishing I was you you lucky [C]dog
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Cause I Love You}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file causeiloveyou1lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll sweep out your chimney yes and I will bring you flowers
@@ -36,3 +39,7 @@ And I'll be there to cheer you till the [D7]sun comes shining through
 If we're ever parted I will keep the tie that binds us
 And I'll never let it break cause I love [G]you
 {end_of_verse}
+
+
+
+

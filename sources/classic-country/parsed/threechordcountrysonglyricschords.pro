@@ -1,6 +1,9 @@
 {meta: title Three Chord Country Song}
 {meta: artist Red Steagall}
 {meta: composer Danny and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file threechordcountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't you dare put a quarter in the [D7]jukebox 
@@ -29,3 +32,6 @@ And [C]it's not that I don't care for rock and [D7]roll
 But [G]tonight I'm in the mood for country [D7]music 
 Just a [C]heart breaking [D7]three chord country [G]song
 {end_of_verse}
+
+
+

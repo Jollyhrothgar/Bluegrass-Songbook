@@ -1,6 +1,9 @@
 {meta: title Plenty Of Time}
 {meta: artist Connie Smith}
 {meta: composer Clay McLean}
+{meta: x_source classic-country}
+{meta: x_source_file plentyoftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got up on [E7]Sunday morning went [Am]to the church at ten
@@ -37,3 +40,7 @@ Now [C]my chance is [D7]over earth's [G]days have left [Em]behind
 [Am]You and I [D7]with plenty of [G]time [Em]
 Now [Am]I've got nothing [D7]but plenty of [G]time
 {end_of_verse}
+
+
+
+

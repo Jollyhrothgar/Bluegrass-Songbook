@@ -1,6 +1,9 @@
 {meta: title Don't Waste It On The Blues}
 {meta: artist Gene Watson}
 {meta: composer Sandy Ramos and Jerry Vandiver}
+{meta: x_source classic-country}
+{meta: x_source_file dontwasteitontheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know there's nothing [A7]worse than a [Dm]bad [G7]goodbye
@@ -34,3 +37,7 @@
 [F]If you look up you'll [B7]see the stars are [C]just too bright to [A7]refuse
 [Dm]It's a good night for love [G7]don't waste it on the [C]blues
 {end_of_verse}
+
+
+
+

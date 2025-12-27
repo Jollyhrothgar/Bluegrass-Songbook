@@ -1,6 +1,9 @@
 {meta: title Build My Mansion}
 {meta: artist Gene Watson}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file buildmymansionlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh build my [F]mansion next door to [C]Jesus
@@ -41,3 +44,8 @@ Just so my [G7]mansion sits near the [C]throne
 It doesn't [F]matter who lives [C]around me
 Just so my [G7]mansion sits near God’s [C]throne 
 {end_of_verse}
+
+
+
+
+

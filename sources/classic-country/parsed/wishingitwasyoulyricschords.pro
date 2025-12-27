@@ -1,6 +1,9 @@
 {meta: title Wishing It Was You}
 {meta: artist Connie Francis}
 {meta: composer Joy Byers and Clyde Lovern Otis}
+{meta: x_source classic-country}
+{meta: x_source_file wishingitwasyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Tomo[C]rrow when I'm [E7]walking down the [A7]aisle
@@ -34,3 +37,7 @@ In my [C]heart I'll be [G7]wishing it was [C]you[Am]   [DM]
 [G7]In my [C]heart (in my heart)
 I'll be [G7]wishing (I'll be wishing) it was [C]you[F]  [C]
 {end_of_verse}
+
+
+
+

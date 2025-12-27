@@ -1,6 +1,9 @@
 {meta: title Many Tears Ago}
 {meta: artist Marty Robbins}
 {meta: composer Jenny Lou Carson}
+{meta: x_source classic-country}
+{meta: x_source_file manytearsagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many tears ago you said [G7]you loved me
@@ -29,3 +32,6 @@ When you said goodbye and went [G7]away
 [C]Oh how well this aching heart [G7]remembers
 Many many tears ago [C]today
 {end_of_verse}
+
+
+

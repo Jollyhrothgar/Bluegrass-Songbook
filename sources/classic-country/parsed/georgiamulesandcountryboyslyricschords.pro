@@ -1,6 +1,9 @@
 {meta: title Georgia Mules And Country Boys}
 {meta: artist The Osborne Brothers}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file georgiamulesandcountryboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Georgia mules and [G]country boys are [D7]fading fast [G]away
@@ -51,3 +54,10 @@ Remembe[A7]ring mules and corn fields of my [D7]past
 {start_of_verse: Verse 6}
 That Georgia [C]mules and [G]Country boys are [D7]fading fast [G]away
 {end_of_verse}
+
+
+
+
+
+
+

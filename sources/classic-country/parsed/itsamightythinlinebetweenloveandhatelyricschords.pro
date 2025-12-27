@@ -1,6 +1,9 @@
 {meta: title It's A Mighty Thin Line Between Love And Hate}
 {meta: artist Johnny Paycheck}
 {meta: composer Johnny Paycheck and Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file itsamightythinlinebetweenloveandhatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love you so much it never [F]entered my [C]mind
@@ -30,3 +33,6 @@ If you think I'll take you back again
 Don't hold your [F]breath while you [C]wait
 Cause it's a migh[D7]ty thin [G]line [A7]between [D7]love and [G]hate
 {end_of_verse}
+
+
+

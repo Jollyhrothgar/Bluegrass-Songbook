@@ -1,6 +1,9 @@
 {meta: title Easy Rocking Chair}
 {meta: artist Eddy Arnold}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file easyrockingchairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rock away my troubles rock away my [F]cares
@@ -29,3 +32,6 @@ Oh [C]I found peace and comfort in that [D7]easy rocking [G7]chair
 I [C]feel just as wealthy as a [F]millionaire
 When [C]I get back to Dixie in [G7]that easy rocking [C]chair
 {end_of_verse}
+
+
+

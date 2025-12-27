@@ -1,5 +1,8 @@
 {meta: title When Jesus Comes Calling For Me}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file whenJesuscomescallingformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was a child I recall and old [G7]man [C]everybody loved old [Am]Zeke
@@ -39,3 +42,8 @@ I'm just sittin' here watchin' for [G7]Jesus [C]rocking as my old chair [Am]crea
 [C]Some sweet day I'll fly [G7]away when [C]Jesus comes [G7]calling for [Am]me [G7]
 When [C]He comes [G7]calling for [Am]me
 {end_of_verse}
+
+
+
+
+

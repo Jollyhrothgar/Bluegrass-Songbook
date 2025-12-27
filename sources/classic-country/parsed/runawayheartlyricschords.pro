@@ -1,6 +1,9 @@
 {meta: title Runaway Heart}
 {meta: artist Reba McEntire}
 {meta: composer Paul Harrison}
+{meta: x_source classic-country}
+{meta: x_source_file runawayheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I'm [C]rolling I'm tumb[Dm]ling I'm [C]falling [F]apart
@@ -39,3 +42,8 @@ In [Dm]his [G7]runaway [C]heart [F]
 {start_of_verse: Verse 6}
 In [Dm]his [G7]runaway [C]heart
 {end_of_verse}
+
+
+
+
+

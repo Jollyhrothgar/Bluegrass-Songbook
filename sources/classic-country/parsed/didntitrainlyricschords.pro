@@ -1,6 +1,9 @@
 {meta: title Didn't It Rain}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Wild Bill Emerson and Jody Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file didntitrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The good Lord went to Noah and He [C]told him about the [G]flood
@@ -50,3 +53,9 @@ Forty days and [A7]nights didn't it [D7]rain
 Oh didn't it [G]rain children didn't it rain rain [Em]rain
 [G]Forty days and nights [D7]didn't it [G]rain
 {end_of_verse}
+
+
+
+
+
+

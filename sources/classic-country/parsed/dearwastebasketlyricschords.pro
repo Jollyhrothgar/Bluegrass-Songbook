@@ -1,6 +1,9 @@
 {meta: title Dear Wastebasket}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare and Curtis Leach}
+{meta: x_source classic-country}
+{meta: x_source_file dearwastebasketlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been writin' Mary Lou [F]letters every [G7]day
@@ -27,3 +30,6 @@ If [C]you see her say I need her [D7]like I'll always [G7]do
 [C]She won't read my [C7]letters [F]so I write to [Fm]you
 [C]Dear wastebasket [F]care of [G7]Mary [C]Lou
 {end_of_verse}
+
+
+

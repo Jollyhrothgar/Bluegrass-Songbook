@@ -1,6 +1,9 @@
 {meta: title Hungry For Love}
 {meta: artist Patsy Cline}
 {meta: composer Eddie Miller & W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file hungryforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm hungry for love
@@ -48,3 +51,11 @@ Your letters aren't enough
 My arms will welcome you home [F]dear
 I'm [G7]hungry for [C]love
 {end_of_verse}
+
+
+
+
+
+
+
+

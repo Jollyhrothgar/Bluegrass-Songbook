@@ -1,6 +1,9 @@
 {meta: title Foolaid}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Cecil Harrelson and Carmon Holland}
+{meta: x_source classic-country}
+{meta: x_source_file foolaidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you've lost a love that you can't live [C]without it seems
@@ -33,3 +36,7 @@ This [D7]miracle magic liquid [C]called fool[G]aid
 {start_of_verse: Verse 4}
 This [D7]miracle magic liquid [C]called fool[G]aid
 {end_of_verse}
+
+
+
+

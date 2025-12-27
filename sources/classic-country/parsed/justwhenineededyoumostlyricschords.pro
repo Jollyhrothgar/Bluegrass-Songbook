@@ -1,6 +1,9 @@
 {meta: title Just When I Needed You Most}
 {meta: artist Dolly Parton}
 {meta: composer Randy Van Warmer}
+{meta: x_source classic-country}
+{meta: x_source_file justwhenineededyoumostlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You packed in the morning I stared out the window
@@ -47,3 +50,9 @@ Now most every morning I stare out the window
 {start_of_verse: Verse 5}
 [C]Y-o-u [G]left me [D7]just when I needed you [G]most
 {end_of_verse}
+
+
+
+
+
+

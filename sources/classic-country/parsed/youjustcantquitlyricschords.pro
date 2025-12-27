@@ -1,5 +1,8 @@
 {meta: title You Just Can't Quit}
 {meta: artist Ricky Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file youjustcantquitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the whole world puts you [C]down
@@ -42,3 +45,9 @@ But I don't [D7]mind I just can't [G]quit
 {start_of_verse: Verse 7}
 [D7]I just can't [G]quit 
 {end_of_verse}
+
+
+
+
+
+

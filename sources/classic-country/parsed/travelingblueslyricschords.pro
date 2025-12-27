@@ -1,5 +1,8 @@
 {meta: title Traveling Blues}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file travelingblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had a dream last night I thought my good gal had gone
@@ -36,3 +39,8 @@ I'm going away leaving today I'm gonna bring my baby back
 If [F]that eight wheel driver don't jump the railroad [C]track
 I take her [G7]from that man gonna bring her home if I [C]can
 {end_of_verse}
+
+
+
+
+

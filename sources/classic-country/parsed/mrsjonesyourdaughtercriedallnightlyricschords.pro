@@ -1,6 +1,9 @@
 {meta: title Mrs. Jones Your Daughter Cried All Night}
 {meta: artist Bobby Bare}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file mrsjonesyourdaughtercriedallnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I bought a ring and [B7]gave it to your [C]daughter Mrs. [G]Jones
@@ -36,3 +39,7 @@ You [A7]wouldn't give your blessings to our [D7]love
 You [G]said she should stop [B7]seeing me and [C]maybe you are [G]right
 But Mrs. Jones your [D7]daughter cried all [G]night
 {end_of_verse}
+
+
+
+

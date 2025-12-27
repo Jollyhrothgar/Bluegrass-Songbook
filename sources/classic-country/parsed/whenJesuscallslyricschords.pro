@@ -1,6 +1,9 @@
 {meta: title When Jesus Calls}
 {meta: artist Ernest Tubb}
 {meta: composer Willie Phelps}
+{meta: x_source classic-country}
+{meta: x_source_file whenJesuscallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When Jesus calls I wanna be [C7]ready
@@ -36,3 +39,7 @@ I wanna be [F]ready when Jesus [C]calls
 The [F]time is [C]nearing when we'll be hearing
 That trumpet blow [G7]when Jesus [C]calls
 {end_of_verse}
+
+
+
+

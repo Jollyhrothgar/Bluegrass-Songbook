@@ -1,6 +1,9 @@
 {meta: title I Just Can't Leave Your Love Alone}
 {meta: artist Crystal Gayle}
 {meta: composer Joe Sample and Will Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcantleaveyourlovealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]You let me [E7]down all over town
@@ -29,3 +32,6 @@ Then every night [Em]you get it [E7]right
 [C]And after [A7]you [D7]what will I do
 [F]I just can't leave your [E7]love [Am]alone
 {end_of_verse}
+
+
+

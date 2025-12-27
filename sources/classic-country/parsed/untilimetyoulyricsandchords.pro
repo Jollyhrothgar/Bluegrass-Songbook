@@ -1,5 +1,8 @@
 {meta: title Until I Met You}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file untilimetyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never knew [F]that I  could [G7]be so in [C]love
@@ -28,3 +31,6 @@ I [G7]thanked you for this paradise that [D7]you have gave to [G7]me
 [C]I never knew [F]that I  could [G7]fall so in [C]love
 Until I met [F]you  [G7]until I met [C]you 
 {end_of_verse}
+
+
+

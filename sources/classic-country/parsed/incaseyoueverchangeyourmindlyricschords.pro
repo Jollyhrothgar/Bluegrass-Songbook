@@ -1,6 +1,9 @@
 {meta: title In Case You Ever Change Your Mind}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file incaseyoueverchangeyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll be waiting till the end of [G]time
@@ -48,3 +51,9 @@ And [D7]long to hold the love you left [G]behind
 {start_of_verse: Verse 6}
 [D7]Just In case you [C]ever change your [G]mind
 {end_of_verse}
+
+
+
+
+
+

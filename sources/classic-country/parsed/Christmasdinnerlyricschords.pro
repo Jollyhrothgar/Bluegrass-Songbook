@@ -1,5 +1,8 @@
 {meta: title Christmas Dinner}
 {meta: artist Tennessee Ernie Ford}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasdinnerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now there's a big fat turkey or [D7]maybe a ham
@@ -56,3 +59,10 @@ Let's [D7]all do the same for [G7]there's thanks to be said
 Enter our [E7]hearts and [F]cast out [D7]sin [G7]
 Bring [C]peace on earth good[G7]will to [C]men
 {end_of_verse}
+
+
+
+
+
+
+

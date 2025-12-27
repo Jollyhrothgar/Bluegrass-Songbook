@@ -1,6 +1,9 @@
 {meta: title Sadie}
 {meta: artist Doc Watson}
 {meta: composer T. Michael Coleman and Bob Hilliard}
+{meta: x_source classic-country}
+{meta: x_source_file sadielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]High on the hill sits a [F]whippoor[C]will
@@ -43,3 +46,8 @@ Sadie Sadie [D7]oh what a [G7]girl
 [C]Sadie Sadie [F]oh what a [C]lady
 [F]Sadie [C]Sadie [G7]Sadie you're my [C]world
 {end_of_verse}
+
+
+
+
+

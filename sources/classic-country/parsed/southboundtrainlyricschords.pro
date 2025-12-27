@@ -1,6 +1,9 @@
 {meta: title Southbound Train}
 {meta: artist Travis Tritt}
 {meta: composer Travis Tritt and Charlie Daniels}
+{meta: x_source classic-country}
+{meta: x_source_file southboundtrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well she was born in a north woods town 
@@ -73,3 +76,12 @@ Soakin' up the sunshine havin' a ball
 She'll be the first to tell you that she owes it all 
 To ridin' on a southbound [G]train
 {end_of_verse}
+
+
+
+
+
+
+
+
+

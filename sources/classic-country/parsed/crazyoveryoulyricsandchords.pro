@@ -1,6 +1,9 @@
 {meta: title Crazy Over You}
 {meta: artist Ricky Van Shelton}
 {meta: composer Radney Foster and Bill Lloyd}
+{meta: x_source classic-country}
+{meta: x_source_file crazyoveryoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can't you tell by the spell that I'm under
@@ -41,3 +44,8 @@ And every[C]body in town knows I'm [G7]crazy over [C]you
 {start_of_verse: Verse 5}
 Everybody in town knows I'm [F]crazy over [C]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Song Of The Wind}
 {meta: artist Jean Shepard}
 {meta: composer Bob Milsap}
+{meta: x_source classic-country}
+{meta: x_source_file songofthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I see the shadows as they come to welcome the [Am]night
@@ -33,3 +36,7 @@ For [C]he is a dreamer who [D7]follows the songs of the [G]wind
 {start_of_verse: Verse 5}
 Yes [C]he is a dreamer who [D7]follows the songs of the [G]wind
 {end_of_verse}
+
+
+
+

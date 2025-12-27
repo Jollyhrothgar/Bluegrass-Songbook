@@ -1,5 +1,8 @@
 {meta: title Breakdown}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file breakdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The clubs are all closed and the [C]ladies are [G]leavin'
@@ -30,3 +33,6 @@ All [C]alone all the way on your [G]own who's to say
 That you've [D7]thrown it away for a song
 [G]Boy you've [D7]sure come a long way from [G]home
 {end_of_verse}
+
+
+

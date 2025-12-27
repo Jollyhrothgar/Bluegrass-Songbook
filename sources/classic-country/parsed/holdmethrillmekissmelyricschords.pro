@@ -1,6 +1,9 @@
 {meta: title Hold Me Thrill Me Kiss Me}
 {meta: artist Jim Ed Brown}
 {meta: composer Harry Noble}
+{meta: x_source classic-country}
+{meta: x_source_file holdmethrillmekissmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hold me hold me [C]never let me [D7]go
@@ -41,3 +44,8 @@
 [G]You're gonna miss me miss [C]me if we ever [D7]part
 [G]So kiss me kiss me [C]make me tell you [D7]I'm in love with [G]you
 {end_of_verse}
+
+
+
+
+

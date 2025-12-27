@@ -1,6 +1,9 @@
 {meta: title Ain't Nothin' Like A Woman}
 {meta: artist Dottie West}
 {meta: composer Marvin Thomas and Mark Leggett}
+{meta: x_source classic-country}
+{meta: x_source_file aintnothinlikeawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look at you sitting all alone tonight
@@ -48,3 +51,8 @@ So [C]you hit rock bottom you’ve [C7]taken that drop
 [F]Well I’ve got something to put you back on top
 There ain’t [C]nothing like a woman to [G7]take a woman off of your [C]mind
 {end_of_verse}
+
+
+
+
+

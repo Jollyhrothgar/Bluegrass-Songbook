@@ -1,5 +1,8 @@
 {meta: title Sing Me Back Home}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file singmebackhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The warden led [D7]a prisoner 
@@ -35,3 +38,6 @@ I [G]heard him tell [D7]the warden
 Just [C]before he reached [G]my cell
 Let my guitar playing [D7]friend do [G]my request
 {end_of_verse}
+
+
+

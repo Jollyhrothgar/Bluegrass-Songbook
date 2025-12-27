@@ -1,6 +1,9 @@
 {meta: title Next In Line}
 {meta: artist Conway Twitty}
 {meta: composer Wayne Kemp and Curtis Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file nextinlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]See her there at the table  watch her tear at the label
@@ -29,3 +32,6 @@ And just [C]look what he's done to her [G7]pride
 And if she should change her mind give up the music and [C]the wine
 I'll be standing by to be [G7]the next in [C]line
 {end_of_verse}
+
+
+

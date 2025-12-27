@@ -1,6 +1,9 @@
 {meta: title Ten Rounds With Jose Cuervo}
 {meta: artist Tracy Byrd}
 {meta: composer Michael Heeney, Casey Beathard, Marla Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file tenroundswithjosecuervolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walked in and the [F]band just started
@@ -42,3 +45,7 @@ One round with [F]Jose Cuervo [C]   [G7]
 I went [C]two rounds with [F]Jose Cuervo [C]  [G7]
 [C]Three rounds with [F]Jose Cuervo[C]
 {end_of_verse}
+
+
+
+

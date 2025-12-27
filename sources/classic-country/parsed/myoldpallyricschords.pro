@@ -1,6 +1,9 @@
 {meta: title My Old Pal}
 {meta: artist Merle Haggard}
 {meta: composer Elsie McWilliams and Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file myoldpallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm thinking of you tonight old [G7]pal
@@ -43,3 +46,8 @@ New Friends you can find every [C]day
 But [F]they can't fill the places or ever [C]be 
 [D7]Like the old pals of [C][G7]yesterday
 {end_of_verse}
+
+
+
+
+

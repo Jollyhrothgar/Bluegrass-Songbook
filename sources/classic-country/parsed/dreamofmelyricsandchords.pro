@@ -1,6 +1,9 @@
 {meta: title Dream Of Me}
 {meta: artist Vern Gosdin}
 {meta: composer Buddy Cannon, Jimmy Darrell, Raleigh Squires}
+{meta: x_source classic-country}
+{meta: x_source_file dreamofmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My life on the road girl [C]it’s been hard on me and [G]you
@@ -32,3 +35,7 @@ Dream of [C]me and [G]I'll be [D7]dreaming of [G]you
 Dream of [C]me [D7]every time you get to feelin' [G]blue
 Dream of [C]me and [G]I'll be [D7]dreaming of [G]you
 {end_of_verse}
+
+
+
+

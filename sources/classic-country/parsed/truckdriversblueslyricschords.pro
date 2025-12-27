@@ -1,6 +1,9 @@
 {meta: title Truck Driver's Blues}
 {meta: artist Ferlin Husky}
 {meta: composer Ted Daffan}
+{meta: x_source classic-country}
+{meta: x_source_file truckdriversblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Feeling tired and weary from my head down to my shoes
@@ -25,3 +28,6 @@ I’m feeling sad and lonely from my head down to my shoes
 [C]Feeling sad and lonely from my head down to my [G]shoes
 [D7]I’ve got a low down feeling  truck driver’s [G]blues
 {end_of_verse}
+
+
+

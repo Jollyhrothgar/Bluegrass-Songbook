@@ -1,6 +1,9 @@
 {meta: title It's My Pleasure}
 {meta: artist Eddy Arnold}
 {meta: composer Ollie Jones}
+{meta: x_source classic-country}
+{meta: x_source_file itsmypleasurelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's my [C]pleasure just to please [C7]you
@@ -36,3 +39,7 @@ It's [F]my pleasure and I'm glad to
 If [C]you let me make you [Dm]happy
 [G7]It's my [C]pleasure[F]  [C]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Angel Angelina}
 {meta: artist George Strait}
 {meta: composer David Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file angelangelinalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Angel oh my angel Ange[Em]lina
@@ -32,3 +35,6 @@ Angel oh my angel Ange[Em]lina
 {start_of_verse: Verse 4}
 [A7]You'll be stayin' [Am]right here [D7]in my [G]arms
 {end_of_verse}
+
+
+

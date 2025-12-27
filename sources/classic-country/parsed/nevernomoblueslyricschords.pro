@@ -1,6 +1,9 @@
 {meta: title Never No Mo' Blues}
 {meta: artist Lefty Frizzell}
 {meta: composer Jimmie Rodgers and Elsie McWilliams}
+{meta: x_source classic-country}
+{meta: x_source_file nevernomoblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just as blue as I can be
@@ -36,3 +39,7 @@ Now whether I'm right or wrong
 And then I'll [G7]hush this crazy song
 That I [F]never will [G7]sing no [C]mo' no [G7]mo'[C]
 {end_of_verse}
+
+
+
+

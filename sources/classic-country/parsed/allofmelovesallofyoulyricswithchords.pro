@@ -1,5 +1,8 @@
 {meta: title All Of Me Loves All Of You}
 {meta: artist Freddy Hart}
+{meta: x_source classic-country}
+{meta: x_source_file allofmelovesallofyoulyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](All of [G7]me loves all of you all the [C]time)
@@ -36,3 +39,7 @@ May [C]when my interest [G7]at the [C]start
 Fill my [F]eyes but not my heart
 All of [G7]me loves all of you all the [C]time
 {end_of_verse}
+
+
+
+

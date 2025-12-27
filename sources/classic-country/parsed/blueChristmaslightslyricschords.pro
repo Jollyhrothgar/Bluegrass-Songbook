@@ -1,6 +1,9 @@
 {meta: title Blue Christmas Lights}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file blueChristmaslightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Excuse me Miss but do [C]you have any..
@@ -23,3 +26,5 @@ Pardon me but do you [C]have any..
 [D7]Give me blue Christmas lights for my Christmas [G]tree
 [D7]I'll have a blue Christmas cause you're not here with [G]me
 {end_of_verse}
+
+

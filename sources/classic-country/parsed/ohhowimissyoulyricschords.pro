@@ -1,5 +1,8 @@
 {meta: title Oh How I Miss You}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file ohhowimissyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh how I miss you  since you went [C]away 
@@ -21,3 +24,5 @@ I miss your blue eyes your sweet smiling [C]face
 Don't think I'm fooling  when these words I [C]say
 [D7]Oh how I miss you since you went [G]away
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Goodbye Little Darling}
 {meta: artist Johnny Cash}
 {meta: composer Gene Autry and Johnny Marvin}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyelittledarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Goodbye little [C]darling we're [G]parting
@@ -22,3 +25,5 @@
 [G]Will you dream a dream of me wherever you may [C]be
 [G]Goodbye little [D7]darling [G]goodbye
 {end_of_verse}
+
+

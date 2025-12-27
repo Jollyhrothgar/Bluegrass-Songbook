@@ -1,6 +1,9 @@
 {meta: title Harry And Joe}
 {meta: artist Don Williams}
 {meta: composer Len Handler and A.J. Gundell}
+{meta: x_source classic-country}
+{meta: x_source_file harryandjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Harry and [G7]Joe move [Am]south with their [C]wives
@@ -49,3 +52,9 @@
 [C]So they'll get through [F]today [G7]Harry and [C]Joe
 [F]They get [G7]through each day Harry and [C]Joe
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lead Me To Calvary}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Willie Woodruff}
+{meta: x_source classic-country}
+{meta: x_source_file leadmetocalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]King [G7]of my [C]life I [F]crown [G7]Thee [C]now
@@ -33,3 +36,7 @@ Daily my [Em]cross [Am]for [Dm]Thee[G7]
 {start_of_verse: Verse 4}
 [G]Lead me to [G7]Calva[C]ry
 {end_of_verse}
+
+
+
+

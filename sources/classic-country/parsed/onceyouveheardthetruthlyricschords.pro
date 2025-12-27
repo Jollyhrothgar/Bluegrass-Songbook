@@ -1,6 +1,9 @@
 {meta: title Once You've Heard The Truth}
 {meta: artist Randy Travis}
 {meta: composer Leslie Satcher and Chuck Jones}
+{meta: x_source classic-country}
+{meta: x_source_file onceyouveheardthetruthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was just like every other morning
@@ -35,3 +38,7 @@ No you won't forget the [A#7]sound  [F]once you've heard the [C]truth
 It was just like every other [G7]morn[C]ing
 The sun was shining it was [G7]storm[C]ing
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Another You}
 {meta: artist Johnny Tillotson}
 {meta: composer Johnny Tillotson and Lucille Cosenza}
+{meta: x_source classic-country}
+{meta: x_source_file anotheryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know there'll never ever [D7]be another [G]you
@@ -33,3 +36,7 @@ I know there'll [G]never ever [D7]be another
 [G]Never ever [C]be another [G]never ever [D7]be another [G]you
 Never ever [C]be another [G]never ever [D7]be another [G]you
 {end_of_verse}
+
+
+
+

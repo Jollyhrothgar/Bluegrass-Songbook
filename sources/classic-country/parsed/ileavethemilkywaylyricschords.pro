@@ -1,5 +1,8 @@
 {meta: title I Leave The Milky Way}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file ileavethemilkywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling we [G7]can’t live [C]forever
@@ -37,3 +40,7 @@ That [D7]filled every moment we [G7]spent
 [C]I leave you what money can’t [F]buy dear
 In my [G7]last will and testa[C]ment
 {end_of_verse}
+
+
+
+

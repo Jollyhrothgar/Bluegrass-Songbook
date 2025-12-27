@@ -1,6 +1,9 @@
 {meta: title Go And Wash Those Dirty Feet}
 {meta: artist Johnny Horton}
 {meta: composer Fred Horton and Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file goandwashthosedirtyfeetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was a little boy [G7]bare-footed I'd like to [C]go
@@ -29,3 +32,6 @@
 [C]But if I'm brushin' off instead momma would make my bottom [F]red
 [C]Go and wash those dirty feet [G7]before you go to [C]bed
 {end_of_verse}
+
+
+

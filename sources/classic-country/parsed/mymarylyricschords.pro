@@ -1,5 +1,8 @@
 {meta: title My Mary}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file mymarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I take a trip every evening  [F]journey down a memory [C]lane
@@ -26,3 +29,6 @@ I can [C]feel her hand in mine  as I [F]sit alone [D7]tonight
 I can [C]feel her hand in mine as I [F]sit alone [D7]tonight
 [G7]Dreaming of the hours I've spent with [F]my [C]M-ary
 {end_of_verse}
+
+
+

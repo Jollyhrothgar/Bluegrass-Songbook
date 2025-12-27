@@ -1,5 +1,8 @@
 {meta: title Milky White Way}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file milkywhitewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Yes I'm gonna walk [C]on that milky white [F]way
@@ -44,3 +47,9 @@ well well well well
 [C]That's when we walk on that milky white [F]way
 [G7]Oh Lord some of these [C]days
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Give Up}
 {meta: artist Tony Booth}
 {meta: composer Dale Vest, Tommy Overstreet, Juanita Hainsworth}
+{meta: x_source classic-country}
+{meta: x_source_file illgiveuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If someday you try me [Am]on and [F]I don't fit like a [G7]glove 
@@ -29,3 +32,6 @@ I'll [G7]give up when you [F]give up on [C]me
 When I'm [C]no longer the cause [F]in which you be[Fm]lieve
 I'll [C]give up when you [G7]give up on [F]me[C]
 {end_of_verse}
+
+
+

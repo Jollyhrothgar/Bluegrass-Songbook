@@ -1,6 +1,9 @@
 {meta: title No Place Like Home}
 {meta: artist Randy Travis}
 {meta: composer Paul Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file noplacelikehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's my easy chair just sittin' there [F]I've spent a lot of [C]time[F]
@@ -33,3 +36,7 @@ Just [C]look into these baby blues [F]and tell me it's [D7]okay
 [F]I love that [G7]smile it [C]drives me [F]wild no [C]love [G7]won't die [C]today
 There's no [F]place like [C]hom[Am]e there's [F]no [G7]place like [C]home
 {end_of_verse}
+
+
+
+

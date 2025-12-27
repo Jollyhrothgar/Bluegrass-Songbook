@@ -1,6 +1,9 @@
 {meta: title We've Got Everything But Love}
 {meta: artist Barbara Mandrell}
 {meta: composer Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file wevegoteverythingbutlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You make sure you never say an unkind word 
@@ -46,3 +49,8 @@ repeat last verse
 [G7]We've got everything but [C]love
 [G7]We've got everything but [C]love
 {end_of_verse}
+
+
+
+
+

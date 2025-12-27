@@ -1,6 +1,9 @@
 {meta: title The Movies}
 {meta: artist Statler Brothers}
 {meta: composer Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file themovieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's lots of things in this old world [E7]fancy cars and pretty girls
@@ -58,3 +61,10 @@ The [F]movies are great medicine [C]thank you Thomas [Am]Edison
 For [D7]giving us the [G7]best years of our [C]lives (Roy [A7]Rogers)
 You [D7]gave us the [G7]best years of our [C]lives
 {end_of_verse}
+
+
+
+
+
+
+

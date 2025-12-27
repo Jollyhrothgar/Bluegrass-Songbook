@@ -1,6 +1,9 @@
 {meta: title Remember The Alamo}
 {meta: artist George Strait}
 {meta: composer Wayne Kirkpatrick and Gordon Kennedy}
+{meta: x_source classic-country}
+{meta: x_source_file Rememberthealamolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl you were always [F]my yellow rose 
@@ -35,3 +38,6 @@ That you loved me [Dm]so
 Don't [F]forget where it [C]started [Dm] 
 Don't [F]forget where it [C]started [F]remember the Ala[C]mo
 {end_of_verse}
+
+
+

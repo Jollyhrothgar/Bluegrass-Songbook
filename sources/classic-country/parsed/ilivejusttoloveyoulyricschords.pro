@@ -1,6 +1,9 @@
 {meta: title I Live Just To Love You}
 {meta: artist Faron Young}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file ilivejusttoloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can't you tell by the [G7]look in these eyes of [C]mine
@@ -25,3 +28,5 @@
 [C]So as long as I live I'll give all I can [G7]give
 [C]Cause I live [F]just to love [C]you
 {end_of_verse}
+
+

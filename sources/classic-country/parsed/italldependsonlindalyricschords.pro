@@ -1,6 +1,9 @@
 {meta: title It All Depends On Linda}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare and Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file italldependsonlindalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd buy the world if my Linda wants to [G7]be a rich man's [C]wife 
@@ -25,3 +28,5 @@ Oh it [C]all depends on [F]Linda my [C]sweet little [F]Linda
 Yes it [C]all depends on [F]Linda my [G7]fate is in her [C]tender little [F]hands 
 Oh it [C]all depends on [F]Linda my [G7]hope is in your [C]hands
 {end_of_verse}
+
+

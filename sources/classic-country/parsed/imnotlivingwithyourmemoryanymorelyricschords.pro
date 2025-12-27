@@ -1,6 +1,9 @@
 {meta: title I'm Not Living With Your Memory Anymore}
 {meta: artist Johnny Rodriguez}
 {meta: composer Tom T. Hall and Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file imnotlivingwithyourmemoryanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm not living with your memory any[F]more
@@ -30,3 +33,6 @@ Don’t get [F]mad and don’t get even don’t [C]do anything at all
 It’s like [F]holding to the echo of your [C]footsteps on the [F]floor
 I'm not [G7]living with your memory any[C]more
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Life's Little Ups And Downs}
 {meta: artist Ricky Van Shelton}
 {meta: composer Margaret A. Rich}
+{meta: x_source classic-country}
+{meta: x_source_file lifeslittleupsanddownslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know how to tell her 
@@ -46,3 +49,7 @@ And I'm so glad that it's [C]mine
 She wears a [G7]gold ring on her [F]finger 
 I'm so glad that it's [C]mine
 {end_of_verse}
+
+
+
+

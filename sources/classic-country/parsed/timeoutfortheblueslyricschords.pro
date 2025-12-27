@@ -1,6 +1,9 @@
 {meta: title Time Out For The Blues}
 {meta: artist Lefty Frizzell}
 {meta: composer Dan Hart and Buddy Starcher}
+{meta: x_source classic-country}
+{meta: x_source_file timeoutfortheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the mail don't come  and the phone don't [D7]ring
@@ -29,3 +32,6 @@
 [C]That's all I have  that's part of you
 [G]I'm gonna [D7]take time  time out for the [G]blues
 {end_of_verse}
+
+
+

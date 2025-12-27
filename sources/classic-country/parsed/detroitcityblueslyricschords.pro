@@ -1,6 +1,9 @@
 {meta: title Detroit City Blues}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file detroitcityblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Detroit City [F]it was the finest in this [C]world
@@ -30,3 +33,6 @@
 [G7]Just be a real good sport
 [F]And everything will turn out [C]fine
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Too Much Love Is Spoiling You}
 {meta: artist Ray Price}
 {meta: composer Fred Carter}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchloveisspoilingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gave you everything that you asked [F]for
@@ -26,3 +29,5 @@
 [C7]It may be wrong but I know I'll never change [F]it
 [G7]It's my fault if too much love is spoiling [C]you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Never More Than I}
 {meta: artist Charley Pride}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file nevermorethanilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He'll buy you lots of [F]pretty things [G7]fancy clothes and [C]fancy rings
@@ -26,3 +29,6 @@ But he will never [F]love you [G7]never more than [C]I
 {start_of_verse: Verse 4}
 But he will never [F]love you [G7]never more than [C]I
 {end_of_verse}
+
+
+

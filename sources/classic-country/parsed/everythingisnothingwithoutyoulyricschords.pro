@@ -1,5 +1,8 @@
 {meta: title Everything Is Nothing Without You}
 {meta: artist Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file everythingisnothingwithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Little kittens [C]baby ducks and [D7]puppies
@@ -32,3 +35,7 @@ That [C]everything is [D7]nothing without [G]you
 {start_of_verse: Verse 4}
 [C]Everything is [D7]nothing without [G]you
 {end_of_verse}
+
+
+
+

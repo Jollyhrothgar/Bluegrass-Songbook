@@ -1,6 +1,9 @@
 {meta: title Only Love Can Break A Heart}
 {meta: artist Gene Pitney}
 {meta: composer Hal David and Burt Bacharach}
+{meta: x_source classic-country}
+{meta: x_source_file onlylovecanbreakaheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Only love can [D7]break a heart [C]only love can [D7]mend it [G7]again
@@ -20,3 +23,5 @@ Try to for[C]give me and [A7]let's keep the [D]two [D7]of us [D]one
 [C]Only love can [D7]break a heart [C]only love can [D7]mend it [G7]again [F]   [E7]
 [C]Only love can [D7]break a heart [C]only love can [D7]mend it [G7]again
 {end_of_verse}
+
+

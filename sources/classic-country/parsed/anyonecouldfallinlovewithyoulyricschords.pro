@@ -1,6 +1,9 @@
 {meta: title Anyone Could Fall In Love With You}
 {meta: artist Elvis Presley}
 {meta: composer Bennie Benjamin, Sol Marcus, Luchi DeJesus}
+{meta: x_source classic-country}
+{meta: x_source_file anyonecouldfallinlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Any[Em]one could [C]fall in love with [E7]you  [Am]
@@ -34,3 +37,7 @@ And [D7]I love you my [G]darling [Dm]    [E7]
 Anyone could [Am]fall in love with you 
 And [D7]I love you my [G]darling
 {end_of_verse}
+
+
+
+

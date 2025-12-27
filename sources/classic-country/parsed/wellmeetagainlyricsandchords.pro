@@ -1,6 +1,9 @@
 {meta: title We'll Meet Again}
 {meta: artist David Houston}
 {meta: composer Ross Parker and Hugh Charles}
+{meta: x_source classic-country}
+{meta: x_source_file wellmeetagainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We'll meet [B7]again don't know [E7]where
@@ -29,3 +32,6 @@ Don't know [A7]when but I know
 We'll meet again [D7]some sunny [G]day
 Repeat last verse
 {end_of_verse}
+
+
+

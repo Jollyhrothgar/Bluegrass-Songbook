@@ -1,6 +1,9 @@
 {meta: title My Favorite Lies}
 {meta: artist George Jones}
 {meta: composer George Jones and Jack Ripley}
+{meta: x_source classic-country}
+{meta: x_source_file myfavoritelieslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just a [C]few of my [D7]favorite [G]lies
@@ -34,3 +37,7 @@ If she came back [G7]today I would [C]turn her away
 These are a [G]few of my [D7]favorite [G]lies
 Just a [C]few of my [D7]favorite [C]l--ie[G]s
 {end_of_verse}
+
+
+
+

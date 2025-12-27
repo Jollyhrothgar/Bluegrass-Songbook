@@ -1,6 +1,9 @@
 {meta: title I Can Almost Hear Her Wings}
 {meta: artist Randy Travis}
 {meta: composer Buck Moore, Eddie Lee, Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file icanalmosthearherwingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Many nights I've [D7]stood here by [C]this [G]window
@@ -29,3 +32,6 @@
 [C]When I close my eyes and lay [G]beside [Em]her
 [G]I'll swear I can [D7]almost hear her [G]wings
 {end_of_verse}
+
+
+

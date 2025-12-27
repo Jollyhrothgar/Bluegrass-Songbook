@@ -1,6 +1,9 @@
 {meta: title Just One Look}
 {meta: artist Anne Murray}
 {meta: composer Gergory Carroll and Doris Payne}
+{meta: x_source classic-country}
+{meta: x_source_file justonelooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just one look and I fell so hard hard [Am]hard
@@ -42,3 +45,8 @@
 [C]Yeah just one look [F]that's all it [G7]took
 [C]Just one look [F]that's all it [G7]took
 {end_of_verse}
+
+
+
+
+

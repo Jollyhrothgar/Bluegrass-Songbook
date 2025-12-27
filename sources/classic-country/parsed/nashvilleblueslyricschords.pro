@@ -1,6 +1,9 @@
 {meta: title Nashville Blues}
 {meta: artist The Everly Brothers}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file nashvilleblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A letter just came from Nashville 
@@ -28,3 +31,5 @@ And [G]dig all the cool spots there
 I'm [D7]achin’ to be in old Tennessee
 [G]I've got the [D7]Nashville [G]blues
 {end_of_verse}
+
+

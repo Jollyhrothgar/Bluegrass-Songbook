@@ -1,6 +1,9 @@
 {meta: title Where I Ought To Be}
 {meta: artist Skeeter Davis}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file whereioughttobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got your wedding invitation [A#7]    [G]
@@ -43,3 +46,8 @@ Threw it way out in [D7]sea [F]  [D7]
 And I [Am]had an awful [D7]feeling [F]  [D7]
 That's just where I ought to [G]be[C]  [G]
 {end_of_verse}
+
+
+
+
+

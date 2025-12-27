@@ -1,6 +1,9 @@
 {meta: title Where Do I Go From Here}
 {meta: artist Don Williams}
 {meta: composer Albert Hamilton, James Varner}
+{meta: x_source classic-country}
+{meta: x_source_file wheredoigofromherelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Eugene Hamilton and Herman Weems
@@ -46,3 +49,8 @@ Oh [C]where do you [F]go
 [C]Where do you [F]go [C]where do you [F]go from [G7]here
 Tell me [C]where do I [F]go [C]where can I [F]go [C]where can I [F]go from [G7]here
 {end_of_verse}
+
+
+
+
+

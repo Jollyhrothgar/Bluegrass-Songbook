@@ -1,6 +1,9 @@
 {meta: title That Rain Makin' Baby Of Mine}
 {meta: artist Johnny Bush}
 {meta: composer Dallas Frazier and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file thatrainmakinbabyofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been leaning on the wine
@@ -36,3 +39,6 @@ Has anybody seen that [G7]rain making baby of [C]mine
 {start_of_verse: Verse 3}
 Has anybody seen that [G7]rain making baby of [C]mine [F]  [C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rock My Cradle Once Again}
 {meta: artist Hank Williams Sr.}
 {meta: composer John Bond and Billy Folger}
+{meta: x_source classic-country}
+{meta: x_source_file rockmycradleonceagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Far away from friends and loved ones
@@ -43,3 +46,10 @@ Though the years pass on in sorrow
 Gathered round him all his buddies
 [G7]Raised his head we heard him [C]say
 {end_of_verse}
+
+
+
+
+
+
+

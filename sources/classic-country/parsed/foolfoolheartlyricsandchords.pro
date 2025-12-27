@@ -1,6 +1,9 @@
 {meta: title Fool Fool Heart}
 {meta: artist Tanya Tucker}
 {meta: composer Rick Peoples and Roger Brown}
+{meta: x_source classic-country}
+{meta: x_source_file foolfoolheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fool  [Am]fool  [G7]heart  look at you all [B7]broken [G7][C]apart
@@ -33,3 +36,7 @@
 [C]You just wouldn't [C7]believe that he'd ever [F]leave
 [G7]Fool fool [C]heart
 {end_of_verse}
+
+
+
+

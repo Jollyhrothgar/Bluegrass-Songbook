@@ -1,6 +1,9 @@
 {meta: title A Love So Beautiful}
 {meta: artist Roy Orbison}
 {meta: composer Jeff Lynne and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file alovesobeautifullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The summer sun looked down on [Em]our love long [F]ago
@@ -23,3 +26,5 @@ A [F]love so [Em]beauti[Am]ful we [A#7]let it [F]slip [G7]away away
 A [F]love so [Em]beauti[Am]ful [F]in [G7]every [Em]way
 A [G7]love so [Em]beauti[Am]ful we [A#7]let it [F]slip [G7]away
 {end_of_verse}
+
+

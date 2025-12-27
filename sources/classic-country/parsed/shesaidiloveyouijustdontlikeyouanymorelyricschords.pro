@@ -1,5 +1,8 @@
 {meta: title She Said I Love You I Just Don’t Like You Anymore}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file shesaidiloveyouijustdontlikeyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She said I [D7]love you I just don’t like you [G]anymore
@@ -50,3 +53,10 @@ The [D7]thought you’d even want to love [G]another
 {start_of_verse: Verse 7}
 She said I [D7]love you I just don’t like you [G]anymore 
 {end_of_verse}
+
+
+
+
+
+
+

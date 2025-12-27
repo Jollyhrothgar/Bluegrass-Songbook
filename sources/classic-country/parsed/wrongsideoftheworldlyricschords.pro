@@ -1,6 +1,9 @@
 {meta: title Wrong Side Of The World}
 {meta: artist Johnny Bush}
 {meta: composer Eddie Rager and Jody Atkins}
+{meta: x_source classic-country}
+{meta: x_source_file wrongsideoftheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She dances to [C]close to the boys [D7]downtown
@@ -45,3 +48,8 @@ Instead of just [C]anybody's [D7]girl
 But [C]dreams don't come [G]true
 On the [C]wrong [D7]side of the [G]world
 {end_of_verse}
+
+
+
+
+

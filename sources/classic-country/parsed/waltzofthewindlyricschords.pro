@@ -1,6 +1,9 @@
 {meta: title Waltz Of The Wind}
 {meta: artist Hank Williams}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file waltzofthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You were there in my arms [F]alone in the [C]moonlight
@@ -29,3 +32,6 @@ And [F]there in the [C]moonlight [G7]I knew
 So [C]I'll say goodbye [F]dear till [C]tomorrow
 Till we dance to the [G7]waltz of the [C]wind
 {end_of_verse}
+
+
+

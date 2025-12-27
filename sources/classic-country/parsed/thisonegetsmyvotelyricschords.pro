@@ -1,6 +1,9 @@
 {meta: title This One Gets My Vote}
 {meta: artist Stonewall Jackson}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file thisonegetsmyvotelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just found out [C]where you go [G]each and every night
@@ -27,3 +30,6 @@ For the [C]saddest heart that's [G]ever beat [D7]this one gets my [G]vote
 {start_of_verse: Verse 4}
 For the [C]saddest heart that's [G]ever beat [D7]this one gets my [G]vote
 {end_of_verse}
+
+
+

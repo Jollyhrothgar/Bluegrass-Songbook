@@ -1,6 +1,9 @@
 {meta: title High Tone Woman}
 {meta: artist George Strait}
 {meta: composer Leslie Satcher and Tim Rouillier}
+{meta: x_source classic-country}
+{meta: x_source_file hightonewomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I been watchin' you watchin' her 
@@ -49,3 +52,9 @@ I've never seen an [C]uptown [G7]well read [C]thoroughbred
 [G7]Oh no I've never seen an [C]uptown [G7]well read [C]thoroughbred
 [G7]High-tone [C]woman [G7]sink as low as [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Catfish Bates}
 {meta: artist Don Williams}
 {meta: composer Alex Harvey}
+{meta: x_source classic-country}
+{meta: x_source_file catfishbateslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They call me Catfish [F]Bates
@@ -57,3 +60,9 @@
 [F]And I'm a gonna take him home with [G7]me
 [F]And I'm a gonna take him [G7]home with me [C]tonight
 {end_of_verse}
+
+
+
+
+
+

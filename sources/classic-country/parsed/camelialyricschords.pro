@@ -1,5 +1,8 @@
 {meta: title Camelia}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file camelialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From where I stand I can see all the lights in the [D7]city
@@ -28,3 +31,6 @@
 [G7]Constantly tormented knowing you're just partly [C]mine
 [D7]Camelia I hate you and love you at the same [G][C][G]t-i-m-e
 {end_of_verse}
+
+
+

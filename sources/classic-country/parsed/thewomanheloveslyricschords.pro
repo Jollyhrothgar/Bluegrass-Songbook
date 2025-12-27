@@ -1,6 +1,9 @@
 {meta: title The Woman He Loves}
 {meta: artist Alabama}
 {meta: composer Troy Seals and Eddie Setser}
+{meta: x_source classic-country}
+{meta: x_source_file thewomanheloveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can tell a lot about a man by the woman he [F]loves
@@ -41,3 +44,8 @@ Yeah you can [C]tell a lot about a [G7]man by the woman he [C]loves
 [Dm]Yeah you can [C]tell a lot about a [G7]man by the woman he [C]loves
 He loves [G7]he always [C]loves
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Rose From The Bride's Bouquet}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Jimmy Dickens, Clarke VanHess, Marty Hale}
+{meta: x_source classic-country}
+{meta: x_source_file arosefromthebridesbouquetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went to a wedding one [F]fine summer [C]day
@@ -29,3 +32,6 @@ A sweet tender love word a [Dm]lingering [G7]kiss
 [C]I bathed it with teardrops [F]to hide it [C]away
 My sweet little rose from [G7]the bride's [C]bouquet
 {end_of_verse}
+
+
+

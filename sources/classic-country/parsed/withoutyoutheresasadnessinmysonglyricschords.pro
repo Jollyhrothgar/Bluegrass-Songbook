@@ -1,6 +1,9 @@
 {meta: title Without You There's A Sadness In My Song}
 {meta: artist Vern Gosdin}
 {meta: composer Cathy Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file withoutyoutheresasadnessinmysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At times I feel I can [F]call you my [C]own
@@ -30,3 +33,6 @@ All things must [D7]come to pass [G7]
 {start_of_verse: Verse 4}
 [F]Yes without you [Em]there's a [Dm]sadness [G7]in my [C]song
 {end_of_verse}
+
+
+

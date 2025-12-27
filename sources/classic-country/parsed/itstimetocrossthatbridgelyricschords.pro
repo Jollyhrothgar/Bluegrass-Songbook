@@ -1,6 +1,9 @@
 {meta: title It’s Time To Cross That Bridge}
 {meta: artist Faron Young}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file itstimetocrossthatbridgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's time to cross that [G7]bridge that we talked [C]about
@@ -29,3 +32,6 @@ Said we'd [G]cross that bridge if ever comes the [D7]time
 But every [G]day I find that more [G7]and more I need [C]you
 And when I'm [G]holding her it's [D7]you that's on my [G]mind
 {end_of_verse}
+
+
+

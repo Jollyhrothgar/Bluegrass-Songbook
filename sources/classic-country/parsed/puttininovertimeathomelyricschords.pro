@@ -1,6 +1,9 @@
 {meta: title Puttin' In Overtime At Home}
 {meta: artist Kenny Rogers}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file puttininovertimeathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If they call for me and wonder where I [F]am
@@ -37,3 +40,7 @@ Cause I'm [G7]puttin' in a little bit of overtime at [C]home
 {start_of_verse: Verse 5}
 I'll be [G7]puttin' in a little bit of overtime at [C]home
 {end_of_verse}
+
+
+
+

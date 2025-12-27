@@ -1,6 +1,9 @@
 {meta: title Christmas All Year Long}
 {meta: artist Sawyer Brown}
 {meta: composer Mac McAnally}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasallyearlonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can tell by the [F]way [G7]the kids are [C]all [G7][F]grinning
@@ -36,3 +39,7 @@
 [C]I wish it was [F]Christmas [G7]all [C]year [G7][F]long
 [C]I wish it was [F]Christmas all [G7]year [C]long
 {end_of_verse}
+
+
+
+

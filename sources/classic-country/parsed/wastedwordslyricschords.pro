@@ -1,6 +1,9 @@
 {meta: title Wasted Words}
 {meta: artist Ray Price}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file wastedwordslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wasted words about an old love [F]affair
@@ -27,3 +30,6 @@ But it's [G7]so hard to face it when I [F]know I can't have [C]you
 Wasted words about an old love [F]affair
 [G7]You don't love me you don't [C]care 
 {end_of_verse}
+
+
+

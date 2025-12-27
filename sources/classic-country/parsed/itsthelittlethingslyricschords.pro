@@ -1,6 +1,9 @@
 {meta: title It's The Little Things}
 {meta: artist Sonny James}
 {meta: composer Arlie Duff}
+{meta: x_source classic-country}
+{meta: x_source_file itsthelittlethingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The way you fix my tie [F]in the [C]morning 
@@ -33,3 +36,7 @@ It's the [C]little things that [G7]make me love you [C]so
 {start_of_verse: Verse 5}
 [F]It's the [C]little things that [G7]make me love you [C]so
 {end_of_verse}
+
+
+
+

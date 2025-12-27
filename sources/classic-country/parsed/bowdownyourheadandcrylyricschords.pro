@@ -1,6 +1,9 @@
 {meta: title Bow Down Your Head And Cry}
 {meta: artist Charlie Walker}
 {meta: composer Aaron Allan}
+{meta: x_source classic-country}
+{meta: x_source_file bowdownyourheadandcrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As I went [D7]down to the [G]river poor boy to [C]watch the ships go [G]by
@@ -35,3 +38,8 @@ I only killed a man who's just a fixin' [D7]to kill [G]me
 Bow down your head and cry (poor boy) [C]bow down your head and [G]cry
 Stop thinking of that woman you love bow down your [D7]head and [G]cry
 {end_of_verse}
+
+
+
+
+

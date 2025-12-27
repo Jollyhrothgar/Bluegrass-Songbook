@@ -1,6 +1,9 @@
 {meta: title Safe In The Love Of My Man}
 {meta: artist Jean Shepard}
 {meta: composer Martha Sharp}
+{meta: x_source classic-country}
+{meta: x_source_file safeintheloveofmymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know a girl who has [G7]a nice [C]apartment
@@ -36,3 +39,7 @@
 [C]If there's something I [E7]can't handle [F]I know my baby [C]can
 [G7]I'm glad I'm safe in the love of my [C]man
 {end_of_verse}
+
+
+
+

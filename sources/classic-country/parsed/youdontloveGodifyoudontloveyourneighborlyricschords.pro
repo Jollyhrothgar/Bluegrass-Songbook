@@ -1,6 +1,9 @@
 {meta: title You Don't Love God If You Don't Love Your Neighbor}
 {meta: artist Rhonda Vincent}
 {meta: composer Carl Story}
+{meta: x_source classic-country}
+{meta: x_source_file youdontloveGodifyoudontloveyourneighborlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are many people who will say they're Christians
@@ -51,3 +54,11 @@ If you [G7]gossip about him if you never have [C]mercy
 {start_of_verse: Verse 6}
 Then you don't love your neighbor and you [G7]don't love [C]God
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If The Phone Doesn't Ring}
 {meta: artist Jimmy Buffett}
 {meta: composer Jimmy Buffett, Will Jennings, Michael Utley}
+{meta: x_source classic-country}
+{meta: x_source_file ifthephonedoesntringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are oceans of [Em]feelings [F]between [C]us
@@ -59,3 +62,10 @@ It's [Em]me it's [F]me
 If it [C]takes all the [Em]future we'll [F]live through the [C]past
 If the [Am]phone doesn't [G7]ring it's [C]me
 {end_of_verse}
+
+
+
+
+
+
+

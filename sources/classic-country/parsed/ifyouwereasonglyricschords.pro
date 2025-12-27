@@ -1,6 +1,9 @@
 {meta: title If You Were A Song}
 {meta: artist Ray Price}
 {meta: composer Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwereasonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Soft your fingers wipe away the [F]pain
@@ -39,3 +42,7 @@ If you were a song I'd play you over [G7]and over [C]again
 {start_of_verse: Verse 4}
 If you were a song I'd play you over [G7]and over [C]again
 {end_of_verse}
+
+
+
+

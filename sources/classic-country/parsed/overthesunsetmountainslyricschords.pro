@@ -1,6 +1,9 @@
 {meta: title Over The Sunset Mountains By and By}
 {meta: artist The Statler Brothers}
 {meta: composer John W. Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file overthesunsetmountainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Over The Sunset Mountains
@@ -38,3 +41,8 @@ Into the arms of [D7]Jesus
 {start_of_verse: Verse 5}
 [Dm]Jesus my [G7]Savior and [F]m-[C]e
 {end_of_verse}
+
+
+
+
+

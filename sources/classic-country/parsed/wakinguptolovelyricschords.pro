@@ -1,6 +1,9 @@
 {meta: title Waking Up To Love}
 {meta: artist Jimmy Dean}
 {meta: composer Bob Crewe and Kenny Nolan}
+{meta: x_source classic-country}
+{meta: x_source_file wakinguptolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I wanna [C]be waking up to love with [F]you
@@ -40,3 +43,7 @@
 [D7]All my lifetime looking [G7]to see [F]my baby you and [C]me
 [F]Waking up to loving eyes face to face [C]in paradise [A7]just you just [D7]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can Tell}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Abe Mulkey}
+{meta: x_source classic-country}
+{meta: x_source_file icantelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't tell by the sun the [D7]time of the day
@@ -34,3 +37,7 @@ There's a love another [G]love for I [D7]feel I'm losin' [G]you
 But I can tell by your [G7]kisses there [C]must be someone new
 There's a love another [G]love for I [D7]feel I'm losin' [G]you
 {end_of_verse}
+
+
+
+

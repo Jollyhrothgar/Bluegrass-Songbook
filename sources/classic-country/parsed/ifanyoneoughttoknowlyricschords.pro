@@ -1,6 +1,9 @@
 {meta: title If Anyone Ought To Know}
 {meta: artist Merle Haggard}
 {meta: composer Bonnie Owens and Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ifanyoneoughttoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sittin’ in a road side tavern 
@@ -35,3 +38,6 @@ Of things like hurt and mise[G]ry
 It oughta be [D7]me
 [C]Lord in heaven [D7]knows it oughta be [G]me
 {end_of_verse}
+
+
+

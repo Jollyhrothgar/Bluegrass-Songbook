@@ -1,6 +1,9 @@
 {meta: title Spirit Of Christmas}
 {meta: artist Lynn Anderson}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file spiritofChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh hear the chimes ringing it's [F]Christmas [Dm]again
@@ -33,3 +36,7 @@ For [Dm]love is the [G7]spirit of [C]Christmas
 {start_of_verse: Verse 5}
 [Dm]Love is the [G7]spirit of Christ[F]mas[C] 
 {end_of_verse}
+
+
+
+

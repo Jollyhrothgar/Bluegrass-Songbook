@@ -1,6 +1,9 @@
 {meta: title On The Rock Where Moses Stood}
 {meta: artist Norma Jean}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file ontherockwheremosesstoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am standing on the rock where Moses stood
@@ -47,3 +50,9 @@ I am standing on the [G7]promises of [C]God
 {start_of_verse: Verse 6}
 I am standing on the [G7]promises of [C]God
 {end_of_verse}
+
+
+
+
+
+

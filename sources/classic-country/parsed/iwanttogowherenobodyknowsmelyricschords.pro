@@ -1,6 +1,9 @@
 {meta: title I Want To Go (Where Nobody Knows Me)}
 {meta: artist George Hamilton IV}
 {meta: composer Dick Flood}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttogowherenobodyknowsmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The same old house the [F]same old street 
@@ -43,3 +46,8 @@ I want to go [F]where nobody [C]knows me
 [C]I want to go [F]where there are no [C]memories
 [F]Maybe some[C]day I'll [G7]forget about [C]you
 {end_of_verse}
+
+
+
+
+

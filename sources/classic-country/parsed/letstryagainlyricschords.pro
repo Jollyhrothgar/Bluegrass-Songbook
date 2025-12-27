@@ -1,6 +1,9 @@
 {meta: title Let's Try Again}
 {meta: artist Janie Fricke}
 {meta: composer Danny Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file letstryagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You don't want to be alone [F]you say you're always [Dm]blue
@@ -33,3 +36,7 @@ If we're still in [G7]love then let's try [C]again[F]  [C]
 {start_of_verse: Verse 5}
 If we're still in [Dm]love [G7]then let's try [C]again
 {end_of_verse}
+
+
+
+

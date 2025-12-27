@@ -1,6 +1,9 @@
 {meta: title It's Such A Pretty World Today}
 {meta: artist Wynn Stewart}
 {meta: composer Dale Noe}
+{meta: x_source classic-country}
+{meta: x_source_file itssuchaprettyworldtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's such a pretty [C]world to[G]day look at the [D7]sunshine
@@ -16,3 +19,4 @@ It's such [G]a pretty [C]world to[G]day look at the [D7]sunshine
 [C]Today and [A7]every [D7]day since I met [G]you
 repeat
 {end_of_verse}
+

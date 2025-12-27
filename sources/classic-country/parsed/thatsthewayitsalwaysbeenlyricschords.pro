@@ -1,5 +1,8 @@
 {meta: title That's The Way It's Always Been}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file thatsthewayitsalwaysbeenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Leave the door open and the [G7]fly comes in
@@ -38,3 +41,7 @@ May I [G7]be forgiven if I'm [C]guidin' you [A#7]wrong
 [F]Sing for your supper [C]remember on the other end
 Of the spoon the guy's working for song
 {end_of_verse}
+
+
+
+

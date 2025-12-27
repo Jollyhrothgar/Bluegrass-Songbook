@@ -1,6 +1,9 @@
 {meta: title Hey Little Girl}
 {meta: artist Elvis Presley}
 {meta: composer Bill Giant, Bernie Baum, Florenece Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file heylittlegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey [F]little girl you [C]sure are cute [F]to [C]me
@@ -25,3 +28,5 @@
 [F]Get ready honey let's [C]go just one more [F]time
 [C]All right
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can Still Believe In You}
 {meta: artist Tammy Wynette}
 {meta: composer Mike Kosser and Steve Pippin}
+{meta: x_source classic-country}
+{meta: x_source_file icanstillbelieveinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The weatherman [D7]promised me a [C]bright [D7]sunshiny [G]day
@@ -22,3 +25,5 @@ Thank God that I can [B7]still believe in [Em]you
 [Em]And through the trials [C]of time I know [G]your love is [Em]true
 [C]And I thank [G]God that I can [D7]still believe in [G]you
 {end_of_verse}
+
+

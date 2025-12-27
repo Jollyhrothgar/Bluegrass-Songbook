@@ -1,6 +1,9 @@
 {meta: title Baby}
 {meta: artist Ferlin Husky}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file babylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby  [G7]sweet sweet [C]baby
@@ -22,3 +25,5 @@
 [G]Baby  [G7]baby baby baby [C]baby
 [G]Baby come on back and [D7]call me baby [G]too
 {end_of_verse}
+
+

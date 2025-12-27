@@ -1,6 +1,9 @@
 {meta: title I Don't Want No Stranger Sleepin' In My Bed}
 {meta: artist George Jones}
 {meta: composer Bill Emerson and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file idontwantnostrangersleepininmybedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't want no stranger's [F]footsteps in my [C]bedroom
@@ -40,3 +43,8 @@ I don't want no stranger [G7]sleepin' in my [C]bed
 {start_of_verse: Verse 4}
 No I don't want no stranger [G7]sleepin' in my [C]bed
 {end_of_verse}
+
+
+
+
+

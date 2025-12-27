@@ -1,6 +1,9 @@
 {meta: title The Number He Gave Me Was Mine}
 {meta: artist Vern Gosdin}
 {meta: composer Dennis Knutson and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file thenumberhegavemewasminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was pouring my heart out to a stranger at the bar
@@ -28,3 +31,6 @@ She [C]knows how to hold you [G]like no woman [Em]can
 {start_of_verse: Verse 4}
 [C]Ah the number [G]he gave me  [D7]was [G]mine
 {end_of_verse}
+
+
+

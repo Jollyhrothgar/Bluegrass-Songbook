@@ -1,5 +1,8 @@
 {meta: title It's Sure Been Fun}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file itssurebeenfunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've made girls laugh  [G7]I'm made 'em [C]cry
@@ -36,3 +39,7 @@
 {start_of_verse: Verse 4}
 [F]When it's all said and [G7]done you know it's all been [C]fun
 {end_of_verse}
+
+
+
+

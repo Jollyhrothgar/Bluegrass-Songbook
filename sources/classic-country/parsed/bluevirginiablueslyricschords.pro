@@ -1,6 +1,9 @@
 {meta: title Blue Virginia Blues}
 {meta: artist Larry Sparks}
 {meta: composer Pete Gobel and Larry Drumm}
+{meta: x_source classic-country}
+{meta: x_source_file bluevirginiablueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have you ever been to Richmond in November
@@ -64,3 +67,11 @@ There's [C]ain’t no blue like [F]blue Virginia [C]blues
 {start_of_verse: Verse 7}
 [F]Oh there's [C]ain’t no blue like [F]blue Virginia [C]blues
 {end_of_verse}
+
+
+
+
+
+
+
+

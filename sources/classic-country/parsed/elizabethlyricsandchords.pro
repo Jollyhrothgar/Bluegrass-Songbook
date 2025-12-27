@@ -1,6 +1,9 @@
 {meta: title Elizabeth Lyrics with Chords}
 {meta: artist Statler Brothers}
 {meta: composer Jimmy Fortune}
+{meta: x_source classic-country}
+{meta: x_source_file elizabethlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh Elizabeth    [Am]I long to [F]see your [G7]pretty [C]face
@@ -42,3 +45,8 @@ Don't know if I could ever live my [C7]life without [F]you
 Oh [C]Elizabeth  [G7]I'm sure missing [C]you
 Oh Eliz - a [G7]- [C]beth
 {end_of_verse}
+
+
+
+
+

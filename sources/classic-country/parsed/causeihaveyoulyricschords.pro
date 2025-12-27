@@ -1,6 +1,9 @@
 {meta: title Cause I Have You}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and Don Sessions}
+{meta: x_source classic-country}
+{meta: x_source_file causeihaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A flower needs the earth to make it [C]grow
@@ -29,3 +32,6 @@ But you [A7]changed all that the day you came [D7]along
 For a [G]true love song needs inspiration [C]too 
 And [D7]I have all I need cause I have [G]you
 {end_of_verse}
+
+
+

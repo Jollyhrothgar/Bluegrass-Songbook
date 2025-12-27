@@ -1,6 +1,9 @@
 {meta: title I'd Have To Be Crazy}
 {meta: artist Willie Nelson}
 {meta: composer Steven Fromholz}
+{meta: x_source classic-country}
+{meta: x_source_file idhavetobecrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd have to be crazy to stop all my singing
@@ -55,3 +58,10 @@ To [F]fall out of love with [C]you
 I'd have to be crazy plumb out of my [G7]mind
 To [F]fall out of love with [C]you
 {end_of_verse}
+
+
+
+
+
+
+

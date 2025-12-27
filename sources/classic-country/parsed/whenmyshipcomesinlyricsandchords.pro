@@ -1,6 +1,9 @@
 {meta: title When My Ship Comes In}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file whenmyshipcomesinlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]No sun on the [G]Rockies [D7]not even the [C]light of [G]day
@@ -46,3 +49,7 @@ It won't be long before my [C]ship comes in (comes [G]in
 She'll find me waitin' when my [C]ship comes in (comes [G]in)
 [D7]When my ship comes [G]in 
 {end_of_verse}
+
+
+
+

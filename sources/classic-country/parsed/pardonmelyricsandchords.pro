@@ -1,6 +1,9 @@
 {meta: title Pardon Me}
 {meta: artist The Cox Family}
 {meta: composer Jesse McReynolds and Jim McReynolds}
+{meta: x_source classic-country}
+{meta: x_source_file pardonmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pardon me but I think you're the [D7]one love
@@ -50,3 +53,9 @@ That I've been waiting on for so [G]long
 Pardon me could we walk in the [D7]moonlight
 Just to sit there and find right or [G]wrong
 {end_of_verse}
+
+
+
+
+
+

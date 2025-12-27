@@ -1,5 +1,8 @@
 {meta: title You Better Be Better To Me}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file youbetterbebettertomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I said to your heart [C]heart you [D7]better be better to [G]me
@@ -28,3 +31,6 @@ And [A7]more and more you keep making me [D7]blue
 I [G]said to your arms [C]arms you [D7]better be better to [G]me
 [C]And hold me [D7]closer to [G]you
 {end_of_verse}
+
+
+

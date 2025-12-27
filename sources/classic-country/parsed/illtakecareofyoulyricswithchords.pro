@@ -1,6 +1,9 @@
 {meta: title I'll Take Care Of You}
 {meta: artist Kenny Rogers}
 {meta: composer John D. Souther}
+{meta: x_source classic-country}
+{meta: x_source_file illtakecareofyoulyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Times are [F]hard and [C]rents are [F]high
@@ -35,3 +38,7 @@ As [A7]you know I love you
 {start_of_verse: Verse 5}
 [Am]Darling [Em]I'll take [G7]care of [C]you
 {end_of_verse}
+
+
+
+

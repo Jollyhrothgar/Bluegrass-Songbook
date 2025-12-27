@@ -1,5 +1,8 @@
 {meta: title Death Is Only A Dream}
 {meta: artist Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file deathisonlyadreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sadly we sing and with tremulous [F]breath
@@ -45,3 +48,8 @@
 [F]How happy the [C]waking
 [G7]For death is only a [C]dream
 {end_of_verse}
+
+
+
+
+

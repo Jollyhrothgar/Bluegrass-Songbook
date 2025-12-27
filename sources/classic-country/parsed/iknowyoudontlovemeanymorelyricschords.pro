@@ -1,6 +1,9 @@
 {meta: title I Know You Don’t Love Me Anymore}
 {meta: artist Wilburn Brothers}
 {meta: composer Doyle Wilburn and Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file iknowyoudontlovemeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you don't [G7]love me any[C]more 
@@ -33,3 +36,6 @@ Someone [C]else has won your heart
 Now you [F]plan a brand new [C]start
 I know you don't [G7]love me any[C]more
 {end_of_verse}
+
+
+

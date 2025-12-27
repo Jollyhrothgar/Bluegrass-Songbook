@@ -1,6 +1,9 @@
 {meta: title Within My Memories}
 {meta: artist Glen Campbell}
 {meta: composer Mac Davis and Freddy Weller}
+{meta: x_source classic-country}
+{meta: x_source_file withinmymemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many miles have come between us 
@@ -41,3 +44,6 @@ Search[G7]ing for the winter rose
 To [C]press between the dreams you have with [F]me
 [Dm]Soft and warm with[G7]in my memo[C]ry 
 {end_of_verse}
+
+
+

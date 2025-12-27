@@ -1,6 +1,9 @@
 {meta: title One Man Band}
 {meta: artist Moe Bandy}
 {meta: composer Ken Bell, Bud McGuire, Linda Epstein}
+{meta: x_source classic-country}
+{meta: x_source_file onemanbandlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She don’t need bright lights or [G]dancing past midnight
@@ -35,3 +38,6 @@ When it’s [G]all said and done and the evening is through
 [Am]I’ll be the one she’s coming home to
 That [C]ring that you see on her [D7]hand is one man [G]band
 {end_of_verse}
+
+
+

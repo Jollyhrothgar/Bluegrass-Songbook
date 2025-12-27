@@ -1,6 +1,9 @@
 {meta: title Nothing Sure Looked Good on You}
 {meta: artist Gene Watson}
 {meta: composer Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file nothingsurelookedgoodonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You found your greener pastures in a mansion on a [C]hill
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]Yes when we were [D7]down to [G]nothing [C]nothing [G]sure looked [D7]good on [G]you
 {end_of_verse}
+
+
+
+

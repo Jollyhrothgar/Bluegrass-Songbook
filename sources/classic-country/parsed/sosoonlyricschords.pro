@@ -1,6 +1,9 @@
 {meta: title So Soon}
 {meta: artist Wanda Jackson}
 {meta: composer Mel Tillis and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file sosoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You promised love [D7]that never would [G]end
@@ -19,3 +22,5 @@ My darling [D7]have you forgotten so [G]soon
 {start_of_verse: Verse 3}
 My darling [D7]have you forgotten so [G]soon
 {end_of_verse}
+
+

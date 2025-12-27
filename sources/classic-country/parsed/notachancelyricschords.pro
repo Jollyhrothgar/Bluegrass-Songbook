@@ -1,5 +1,8 @@
 {meta: title Not A Chance}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file notachancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh if you could only [D7]see me
@@ -40,3 +43,8 @@ In the day or late at [G]night
 Maybe then you would [D7]believe me
 When I say everything's all [G]right
 {end_of_verse}
+
+
+
+
+

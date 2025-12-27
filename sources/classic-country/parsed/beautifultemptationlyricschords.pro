@@ -1,6 +1,9 @@
 {meta: title Beautiful Temptation}
 {meta: artist Freddie Hart}
 {meta: composer Jim Foster}
+{meta: x_source classic-country}
+{meta: x_source_file beautifultemptationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Beautiful temptation you're so [C]fine
@@ -20,3 +23,5 @@
 {start_of_verse: Verse 3}
 [D7]I see love all over you you beautiful [G]temptation
 {end_of_verse}
+
+

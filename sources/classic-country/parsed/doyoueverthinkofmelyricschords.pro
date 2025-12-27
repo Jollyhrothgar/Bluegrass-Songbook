@@ -1,6 +1,9 @@
 {meta: title Do You Ever Think Of Me}
 {meta: artist Willie Nelson}
 {meta: composer John Casper, Harry Kerr, Earl Burtrett}
+{meta: x_source classic-country}
+{meta: x_source_file doyoueverthinkofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you find another's arms around you
@@ -31,3 +34,6 @@ And in your [G]heart unfeeling
 When someone's heart you're steeling
 Do you [D7]ever think of [G]me
 {end_of_verse}
+
+
+

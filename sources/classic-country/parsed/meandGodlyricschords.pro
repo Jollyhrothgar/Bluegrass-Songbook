@@ -1,5 +1,8 @@
 {meta: title Me And God}
 {meta: artist Josh Turner and Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file meandGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There ain't nothing that can't be done by me and God
@@ -37,3 +40,8 @@ We're a [F]team   [G7]me and [C]God
 He [F]rules the [G7]world with the [C]staff and the [Am]rod
 We're a [F]team   [G7]me and [C]God
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title How Many Tears From Now}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file howmanytearsfromnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How many tears from now before I [D7]kiss you
@@ -28,3 +31,6 @@ Un[A7]til there is no spark of loves [D7]regret
 Oh [G]dear how many years will I [D7]remember
 How many tears from now till I [G]forget
 {end_of_verse}
+
+
+

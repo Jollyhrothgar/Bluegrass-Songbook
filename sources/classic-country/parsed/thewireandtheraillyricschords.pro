@@ -1,6 +1,9 @@
 {meta: title The Wire And The Rail}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Dale Burson}
+{meta: x_source classic-country}
+{meta: x_source_file thewireandtheraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The call came for young fearless [C]riders
@@ -71,3 +74,12 @@ Who [C]braved the [A7]dangers of the [D7]trail
 They [C]faded [D7]into [G]histo[C]ry
 With the coming of the [D7]wire and the [G]rail
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'll Come Running}
 {meta: artist Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file illcomerunninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you ever want somebody to love
@@ -37,3 +40,9 @@ I don't care who was wrong or who was right
 Yeah I'll be around if your new love turns you down
 [C]And I'll come running to you
 {end_of_verse}
+
+
+
+
+
+

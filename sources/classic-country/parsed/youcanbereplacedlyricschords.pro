@@ -1,6 +1,9 @@
 {meta: title You Can Be Replaced}
 {meta: artist Tammy Wynette}
 {meta: composer Bill Anderson and Jerry Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file youcanbereplacedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody new  is loving you
@@ -23,3 +26,5 @@ I'll miss you [F]so  but none the [C]less
 You can be re[G7]placed  by loneli[C]ness
 You can be re[G7]placed  by loneli[C]ness
 {end_of_verse}
+
+

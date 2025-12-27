@@ -1,6 +1,9 @@
 {meta: title One Night Stands}
 {meta: artist Hank Williams Jr.}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file onenightstandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The night life has its glamor when you're [F]lonely
@@ -47,3 +50,9 @@ Seeing all [D7]the lonely people just staring at the [G7]band
 {start_of_verse: Verse 6}
 [F]Wrapped inside their feelings  [G7]playing one night [C]stands 
 {end_of_verse}
+
+
+
+
+
+

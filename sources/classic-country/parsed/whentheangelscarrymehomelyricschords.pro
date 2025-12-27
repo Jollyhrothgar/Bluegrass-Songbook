@@ -1,6 +1,9 @@
 {meta: title When the Angels Carry Me Home}
 {meta: artist Lester Flatt}
 {meta: composer Charlie Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file whentheangelscarrymehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll fly away to heaven and I won't fall
@@ -51,3 +54,12 @@ I'll see Jesus waiting for me in heaven
 I want to see Jesus first of all
 [D7]When the angels carry me [G]home
 {end_of_verse}
+
+
+
+
+
+
+
+
+

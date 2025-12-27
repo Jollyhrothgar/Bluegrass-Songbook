@@ -1,6 +1,9 @@
 {meta: title If You Haven't You Can't Feel The Way I Do}
 {meta: artist Jean Shepard}
 {meta: composer Bill Carver}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouhaventyoucantfeelthewayidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you ever lost someone [G7]just like I lost [C]you
@@ -29,3 +32,6 @@ Don't [C]tell me it's silly to sit here and [G]cry
 Have you ever lost [G]someone [G7]just like I lost [C]you
 If you haven't you [G]can't feel the [D7]way that I [G]do
 {end_of_verse}
+
+
+

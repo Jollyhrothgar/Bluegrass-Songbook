@@ -1,6 +1,9 @@
 {meta: title Where Is Your Heart Tonight}
 {meta: artist Don Gibson}
 {meta: composer Boudleaux Bryant, Benny Martin, Robert Castellow}
+{meta: x_source classic-country}
+{meta: x_source_file whereisyourhearttonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where [E7]is your [Am]heart to[D7]night
@@ -22,3 +25,5 @@ You're [G7]in a little [D7]dream world all your [G7]own
 And [C]now [E7]though I'm [Am]holding you [D7]tight
 I'm [G7]wondering dear where is your heart [C]tonight
 {end_of_verse}
+
+

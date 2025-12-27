@@ -1,6 +1,9 @@
 {meta: title Get Up In Jesus' Name}
 {meta: artist Lee Ann Womack}
 {meta: composer Michael Curtis and Marty Raybon}
+{meta: x_source classic-country}
+{meta: x_source_file getupinJesusnamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Get up get up get up in Jesus' [A#7]name
@@ -45,3 +48,8 @@ Oh at the gate called beautiful
 [F]Don't go down defeated while [C]victory's here to [F]claim
 [A#7]Get up [F]get up get [G7]up in Jesus' [C]name
 {end_of_verse}
+
+
+
+
+

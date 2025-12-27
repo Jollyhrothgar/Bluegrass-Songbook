@@ -1,6 +1,9 @@
 {meta: title His Grace Reaches Me}
 {meta: artist The Blackwood Brothers}
 {meta: composer Jewell M. Gleason}
+{meta: x_source classic-country}
+{meta: x_source_file hisgracereachesmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Deeper than the [Em]ocean and [F]wider than the [C]sea
@@ -33,3 +36,6 @@
 [F]And I'm happy in my [Fm]soul
 [C]Just to know that [G7]His grace reaches [C]me [D7](reaches [C]me)
 {end_of_verse}
+
+
+

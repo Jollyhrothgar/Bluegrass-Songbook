@@ -1,5 +1,8 @@
 {meta: title If I Were You}
 {meta: artist Terri Clark}
+{meta: x_source classic-country}
+{meta: x_source_file ifiwereyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 If I Were You       
@@ -51,3 +54,9 @@ And I [D7]know someone who'd gladly take your [G]place [D7]
 {start_of_verse: Verse 6}
 [D7]If I were [G]you
 {end_of_verse}
+
+
+
+
+
+

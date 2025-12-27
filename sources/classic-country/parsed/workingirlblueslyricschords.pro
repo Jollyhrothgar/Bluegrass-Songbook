@@ -1,6 +1,9 @@
 {meta: title Workin' Girl Blues}
 {meta: artist Leona Williams}
 {meta: composer Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file workingirlblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a big job gettin' by tryin' to be a wife
@@ -37,3 +40,6 @@ Gotta buy my kids a brand new pair of [C]shoes
 I may [G7]pick a little tune in the tavern
 And [F]sing a little bit of these working girl [C]blues
 {end_of_verse}
+
+
+

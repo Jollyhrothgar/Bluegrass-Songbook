@@ -1,6 +1,9 @@
 {meta: title Somewhere My Love}
 {meta: artist Kenny Rogers}
 {meta: composer Paul Webster and Maurice Jarre}
+{meta: x_source classic-country}
+{meta: x_source_file somewheremylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somewhere my love there will be songs to [D7]sing
@@ -20,3 +23,5 @@ Somewhere a hill blossoms in green and [D7]gold
 Till then my sweet think of me now and [D7]then
 [Am]God speed my [D7]love [Am]till you are mine [G][D7]again
 {end_of_verse}
+
+

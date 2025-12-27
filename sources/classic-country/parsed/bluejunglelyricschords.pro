@@ -1,6 +1,9 @@
 {meta: title Blue Jungle}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard and Freddy Powers}
+{meta: x_source classic-country}
+{meta: x_source_file bluejunglelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Daylight Monday morning turning off the Great White [D7]Way
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [C]It’s a [D7]blue jungle with you [G]gone
 {end_of_verse}
+
+
+
+

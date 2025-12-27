@@ -1,6 +1,9 @@
 {meta: title Rosie (Do You Wanna Talk It Over)}
 {meta: artist Red Steagall}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file rosiedoyouwannatalkitoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know I'm not the first man 
@@ -71,3 +74,11 @@ Has it [Dm]gone too far
 For [G7]us to work things [C]out
 Rosie don't you wanna talk it [F]ove[C]r
 {end_of_verse}
+
+
+
+
+
+
+
+

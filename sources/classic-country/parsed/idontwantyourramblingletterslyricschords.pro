@@ -1,6 +1,9 @@
 {meta: title I Don't Want Your Rambling Letters}
 {meta: artist Stanley Brothers}
 {meta: composer N. Nath, Gene C. Redd and Ray Starr}
+{meta: x_source classic-country}
+{meta: x_source_file idontwantyourramblingletterslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't want your [G7]rambling [C]letters
@@ -36,3 +39,7 @@ Don't want your [F]picture in a [C]frame
 All I [F]want is you in [C]person
 Won't you [G7]let me change your [C]name
 {end_of_verse}
+
+
+
+

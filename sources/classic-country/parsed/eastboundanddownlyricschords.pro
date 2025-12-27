@@ -1,6 +1,9 @@
 {meta: title Eastbound And Down}
 {meta: artist Jerry Reed}
 {meta: composer Jerry Reed and Dick Feller}
+{meta: x_source classic-country}
+{meta: x_source_file eastboundanddownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Eastbound And Down
@@ -43,3 +46,9 @@ Just [A7]put that hammer down and give it [B7]hell
 Eastbound And Down
 Recorded Jerry Reed
 {end_of_verse}
+
+
+
+
+
+

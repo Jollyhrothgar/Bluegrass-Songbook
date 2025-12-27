@@ -1,6 +1,9 @@
 {meta: title The Pain Of Loving You}
 {meta: artist Emmylou Harris}
 {meta: composer Dolly Parton/Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file thepainoflovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the pain of [D7]loving [G]you
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [D7]Oh the pain of loving [G]you
 {end_of_verse}
+
+
+
+
+

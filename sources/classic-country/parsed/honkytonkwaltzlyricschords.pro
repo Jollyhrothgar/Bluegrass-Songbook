@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Waltz}
 {meta: artist Kitty Wells}
 {meta: composer Billy Wallace}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkwaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The lights are dim and low in the [C]tavern 
@@ -29,3 +32,6 @@ Now you're [D7]gone and I'll suffer [G]alone
 I'm so blue tonight while another holds you [C]tight 
 And I [G]listen to the [D7]honky tonk [G]waltz
 {end_of_verse}
+
+
+

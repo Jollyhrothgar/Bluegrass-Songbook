@@ -1,6 +1,9 @@
 {meta: title The Lord's Last Supper}
 {meta: artist Reno and Smiley}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file thelordslastsupperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Lord's last supper served in [C]honor of our King
@@ -43,3 +46,8 @@ A world He [A7]loves so lost in [D7]sin
 The blessed [G]promise that He [C]left for you and me
 I'll go but [D7]soon I'll come [G]again
 {end_of_verse}
+
+
+
+
+

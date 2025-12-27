@@ -1,6 +1,9 @@
 {meta: title Make Me An Offer}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Hugh X. Lewis and Benny Jay}
+{meta: x_source classic-country}
+{meta: x_source_file makemeanofferlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So you'd like to step into my shoes 
@@ -57,3 +60,10 @@ You [C]must be out of your mind
 [C]Make me an [D7]offer 
 And I'll be glad to [G]change
 {end_of_verse}
+
+
+
+
+
+
+

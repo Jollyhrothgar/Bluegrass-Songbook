@@ -1,6 +1,9 @@
 {meta: title Best Worst Thing}
 {meta: artist Curtis Potter}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file bestworstthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look at me and tell me that [D7]you love me
@@ -33,3 +36,7 @@ And it's the [F]best [G7]worst thing I'll ever [C]do
 {start_of_verse: Verse 5}
 Yes it's the [F]best [G7]worst thing I'll ever [C]do
 {end_of_verse}
+
+
+
+

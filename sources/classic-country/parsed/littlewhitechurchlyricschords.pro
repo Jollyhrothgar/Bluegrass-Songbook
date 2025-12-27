@@ -1,6 +1,9 @@
 {meta: title Little White Church}
 {meta: artist Jim and Jesse}
 {meta: composer Karen Fairchild, Kimberly Schlapman}
+{meta: x_source classic-country}
+{meta: x_source_file littlewhitechurchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the church in the valley oh that little white [C]church
@@ -66,3 +69,14 @@ They are waiting and watching up yonder
 {start_of_verse: Verse 10}
 ,2
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

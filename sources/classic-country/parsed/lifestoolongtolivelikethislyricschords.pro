@@ -1,6 +1,9 @@
 {meta: title Life's Too Long (To Live Like This)}
 {meta: artist Ricky Skaggs}
 {meta: composer Don Cook, John Jarvis, Dan Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file lifestoolongtolivelikethislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Drive time [F]traffic in the [C]pouring [G]rain
@@ -42,3 +45,8 @@
 [G]Come [F]here baby give your [C]man a [D7]kiss
 [G]Life's too [C]long to [D7]live like [G]this
 {end_of_verse}
+
+
+
+
+

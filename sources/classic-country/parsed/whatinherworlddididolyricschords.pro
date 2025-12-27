@@ -1,6 +1,9 @@
 {meta: title What in Her World Did I Do}
 {meta: artist Eddy Arnold}
 {meta: composer Don Wayne and Bobby Fischer}
+{meta: x_source classic-country}
+{meta: x_source_file whatinherworlddididolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Morning sunlight falling softly on her [D7]face
@@ -37,3 +40,8 @@ What in her world did I do
 What in her world did I do
 [D7]To deserve this heaven her love takes me to
 {end_of_verse}
+
+
+
+
+

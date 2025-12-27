@@ -1,6 +1,9 @@
 {meta: title Let the World Keep on a Turning}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file lettheworldkeeponaturninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let the world keep on a turning 
@@ -49,3 +52,10 @@ That [C]our love is safely locked inside our [F]hearts
 Let the fire keep on a [D7]burning
 Let our [G7]love keep on a growing to the [C]sky
 {end_of_verse}
+
+
+
+
+
+
+

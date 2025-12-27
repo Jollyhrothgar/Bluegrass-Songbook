@@ -1,6 +1,9 @@
 {meta: title Cross the Brazos at Waco}
 {meta: artist Billy Walker}
 {meta: composer Kay Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file crossthebrazosatwacolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the Chisolm Trail it was midnight
@@ -80,3 +83,16 @@ Carmella had [C7]left him [F]alone
 But today someone brought a [C]message
 She had [G7]been seen in old San [C]Antone
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

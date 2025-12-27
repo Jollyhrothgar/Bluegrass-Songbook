@@ -1,6 +1,9 @@
 {meta: title 16th Avenue}
 {meta: artist Lacy J. Dalton}
 {meta: composer Thom Schuyler}
+{meta: x_source classic-country}
+{meta: x_source_file 16thavenuelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From the corners of the country from the [D7]cities and the [G]farms
@@ -36,3 +39,7 @@ But a [Em]lot of lives were [C]changed there on that [G]little one-way [D7]stree
 Cause [Em]they walked away from [C]everything just to see [G]a dream come [C]true
 So [G]God bless the boys who [Em]make the noise on [C]16th [G][D7]Av-enue
 {end_of_verse}
+
+
+
+

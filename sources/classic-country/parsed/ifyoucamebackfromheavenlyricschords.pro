@@ -1,6 +1,9 @@
 {meta: title If You Came Back From Heaven}
 {meta: artist Lorrie Morgan}
 {meta: composer Richard Landis and Lorrie Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoucamebackfromheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wouldn't know what to say I wouldn't know [F]what to do
@@ -45,3 +48,9 @@ And I [C]hope God knows if [Fm]He let you go I'd [Dm]never [G7]send you [C]back
 {start_of_verse: Verse 5}
 And I hope God knows if [Fm]He let you go I'd [Dm]never [G7]send you [C]back
 {end_of_verse}
+
+
+
+
+
+

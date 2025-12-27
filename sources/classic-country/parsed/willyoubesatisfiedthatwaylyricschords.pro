@@ -1,6 +1,9 @@
 {meta: title Will You Be Satisfied That Way}
 {meta: artist Carl Smith}
 {meta: composer Jimmie Skinner}
+{meta: x_source classic-country}
+{meta: x_source_file willyoubesatisfiedthatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We've been together for so [D7]long
@@ -22,3 +25,5 @@ You left a heart that's beating [G]slow
 Somewhere somehow [G7]you'll have to [C]pay
 [D7]Will you be satisfied that [G]way
 {end_of_verse}
+
+

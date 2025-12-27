@@ -1,6 +1,9 @@
 {meta: title Memory Is A Flower}
 {meta: artist George Jones}
 {meta: composer George Jones and Jimmy Day}
+{meta: x_source classic-country}
+{meta: x_source_file memoryisaflowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Memory is a flower you [C]once wore in your [G]hair
@@ -22,3 +25,5 @@ Memory is a costume whose [C]gift won't set me [G]free
 Memory is a lost love [C]forever gone a[G]stray
 [D7]You will be my last memory on my dying [G]day
 {end_of_verse}
+
+

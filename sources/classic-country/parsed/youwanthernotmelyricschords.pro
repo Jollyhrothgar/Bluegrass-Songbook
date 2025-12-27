@@ -1,6 +1,9 @@
 {meta: title You Want Her Not Me}
 {meta: artist Kitty Wells}
 {meta: composer Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file youwanthernotmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your touch tells me [F]all I need to [C]know
@@ -29,3 +32,6 @@
 [C]Our love's nothing more than a [F]memory
 [C]Since I found out you [G7]want her not [C]me
 {end_of_verse}
+
+
+

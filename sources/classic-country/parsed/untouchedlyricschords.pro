@@ -1,6 +1,9 @@
 {meta: title Untouched}
 {meta: artist Mel Tillis}
 {meta: composer Carl Knight, Charles Pendleton, Abe Rotwein}
+{meta: x_source classic-country}
+{meta: x_source_file untouchedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I love you so please [C]go on home [G7]untouched the way you [C]came
@@ -27,3 +30,6 @@
 [C]I love you so [G7]please go on home untouched the way you [C]came
 [F]I love you so please go [C]on home [G7]untouched the way you [C]came
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Jambalaya}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file jambalayalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Goodbye Joe me gotta go me oh my [D7]oh
@@ -35,3 +38,7 @@
 [D7]Pick guitar fill fruit jar and be gay-o
 [G]Son of a gun we'll have big fun on the bayou
 {end_of_verse}
+
+
+
+

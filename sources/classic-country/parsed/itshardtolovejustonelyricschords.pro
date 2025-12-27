@@ -1,6 +1,9 @@
 {meta: title It's Hard To Love Just One}
 {meta: artist Jim Reeves}
 {meta: composer Fabor Robinson and Slim Willet}
+{meta: x_source classic-country}
+{meta: x_source_file itshardtolovejustonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's hard to love just [G7]one 
@@ -50,3 +53,9 @@ When so many hearts beat as [C]mine
 I tried to keep my love for [G7]you 
 But there's too many others on my [C]mind
 {end_of_verse}
+
+
+
+
+
+

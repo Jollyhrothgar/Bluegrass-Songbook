@@ -1,6 +1,9 @@
 {meta: title Somebody's Gonna Do It Tonight}
 {meta: artist Bob Luman}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysgonnadoittonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody's gonna do it to[F]night
@@ -41,3 +44,7 @@ And [C]say all the things that I wish I had said
 While he's [F]holding what's left of my [Dm]world[G7]
 It shoulda have been [C]me
 {end_of_verse}
+
+
+
+

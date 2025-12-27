@@ -1,6 +1,9 @@
 {meta: title I Feel Closer To Heaven Everyday}
 {meta: artist Rhonda Vincent}
 {meta: composer Thelma Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file ifeelclosertoheaveneverydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a new feeling [F]abiding within [C]me
@@ -40,3 +43,8 @@ I feel closer to [G7]heaven every[C]day
 {start_of_verse: Verse 4}
 I feel closer to [G7]heaven every[C]day
 {end_of_verse}
+
+
+
+
+

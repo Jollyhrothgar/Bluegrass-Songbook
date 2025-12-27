@@ -1,6 +1,9 @@
 {meta: title I'm Not Leaving (I'm Just Getting Out of Your Way)}
 {meta: artist Ray Price}
 {meta: composer Hank Cochran, Royce Donald Porter, Dean Rutherford}
+{meta: x_source classic-country}
+{meta: x_source_file imnotleavingimjustgettingoutofyourwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m not doing what I’m doing [C7]for me I’m [F]doing it for you
@@ -33,3 +36,6 @@ And [C]there’ll never be a day that you can’t [C7]find me
 For those [F]nights you’ll wish I’d stayed
 I’m [C]not leaving [G7]I’m just getting out of your [C]way
 {end_of_verse}
+
+
+

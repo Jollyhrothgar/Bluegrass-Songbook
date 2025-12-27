@@ -1,6 +1,9 @@
 {meta: title Make No Mistake She's Mine}
 {meta: artist Ronnie Milsap}
 {meta: composer Kim Carnes}
+{meta: x_source classic-country}
+{meta: x_source_file makenomistakeshesminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don’t call her [D7]up any[G]more [D7]
@@ -34,3 +37,7 @@ With [G]her in your arms her in your [C]arms [G]   [D7]
 [G]Don’t call her [D7]up any[G]more[D7]   [G]don't call her [D7]up 
 Don't call her [G]up 
 {end_of_verse}
+
+
+
+

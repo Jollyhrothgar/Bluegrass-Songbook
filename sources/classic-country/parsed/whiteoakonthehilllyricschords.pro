@@ -1,6 +1,9 @@
 {meta: title White Oak On The Hill}
 {meta: artist Boone Creek Grass}
 {meta: composer Mike Todd}
+{meta: x_source classic-country}
+{meta: x_source_file whiteoakonthehilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a white oak on the hill at my [C]old clinch mountain [G]home
@@ -33,3 +36,7 @@ And give me the strength to straighten [D7]up and go [G]on
 {start_of_verse: Verse 4}
 And give me the strength to straighten [D7]up and go [G]on 
 {end_of_verse}
+
+
+
+

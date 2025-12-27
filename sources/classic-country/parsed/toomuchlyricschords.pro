@@ -1,6 +1,9 @@
 {meta: title Too Much}
 {meta: artist Elvis Presley}
 {meta: composer Bernard Weinman and Lee Rosenberg}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well honey I love you too much
@@ -81,3 +84,17 @@ Now you got [D7]me started
 Don't you leave broken [C]hearted
 Cause I love you too [G]much
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Turn Around}
 {meta: artist Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file turnaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you're all alone and blue
@@ -25,3 +28,5 @@ When you feel that love will [C]last
 And you like to [F]live your [C]past
 Turn [G7]around I'll be following [C][F][C]you
 {end_of_verse}
+
+

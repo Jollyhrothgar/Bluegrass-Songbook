@@ -1,6 +1,9 @@
 {meta: title If Kisses Could Talk}
 {meta: artist Vernon Oxford}
 {meta: composer Everett Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file ifkissescouldtalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If kisses could talk   oh [C7]things they would [F]say
@@ -15,3 +18,4 @@
 [C]If kisses could talk  [C7]that's just what they'd [F]do
 [G7]They'd  go telling on [C]you
 {end_of_verse}
+

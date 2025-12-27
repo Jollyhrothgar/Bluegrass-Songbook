@@ -1,6 +1,9 @@
 {meta: title Fox on the Run}
 {meta: artist George Jones}
 {meta: composer Tony Hazzard}
+{meta: x_source classic-country}
+{meta: x_source_file foxontherunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She walks through the [D7]corn leading down [Am]to the [C]river
@@ -39,3 +42,7 @@ She took all the love [D7]that a poor [Am]boy could give [C]her
 And [Am]left me to [D7]die like a [C]fox on the [G]run
 Like a [C]fox  (like a fox  like a fox)  on the [G]run
 {end_of_verse}
+
+
+
+

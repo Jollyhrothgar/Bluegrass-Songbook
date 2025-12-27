@@ -1,5 +1,8 @@
 {meta: title Turn Me Loose}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file turnmelooselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You better t-[Am]urn me [D7]loose 
@@ -39,3 +42,8 @@ Turn me [Am]loose you know I'll [D7]make it any[G]way
 {start_of_verse: Verse 6}
 Turn me [Am]loose you know I'll [D7]make it any[G]way  
 {end_of_verse}
+
+
+
+
+

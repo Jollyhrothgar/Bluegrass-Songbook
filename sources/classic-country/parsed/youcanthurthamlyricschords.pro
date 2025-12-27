@@ -1,6 +1,9 @@
 {meta: title You Can't Hurt Ham}
 {meta: artist Ricky Skaggs}
 {meta: composer Gordon Kennedy and Ricky Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file youcanthurthamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bill Monroe out on the road
@@ -110,3 +113,22 @@ No frigerate no expire date
 No frigerate no expire date
 [D7]You know you can't hurt [G]ham
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

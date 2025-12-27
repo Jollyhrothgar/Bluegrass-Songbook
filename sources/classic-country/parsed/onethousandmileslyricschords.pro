@@ -1,5 +1,8 @@
 {meta: title One Thousand Miles}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file onethousandmileslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Runway four flight 209 
@@ -47,3 +50,9 @@ All this plane ride holds for [G7]me
 All this plane ride holds for [G7]me 
 [F]Is a thousand miles of mise[C]ry
 {end_of_verse}
+
+
+
+
+
+

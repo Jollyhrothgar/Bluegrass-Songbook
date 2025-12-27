@@ -1,5 +1,8 @@
 {meta: title It’s A Great Life If You Don’t Weaken}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file itsagreatlifeifyoudontweakenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's a great life if you don't [A7]weaken 
@@ -53,3 +56,11 @@ I'm a [F]country boy trying to get [C]along
 It's a great life if you don't [A7]weaken 
 But [D7]w-ho [G7]wants to be [C]strong
 {end_of_verse}
+
+
+
+
+
+
+
+

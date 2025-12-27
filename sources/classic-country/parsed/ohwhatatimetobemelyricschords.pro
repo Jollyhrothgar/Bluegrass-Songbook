@@ -1,6 +1,9 @@
 {meta: title Oh What A Time To Be Me}
 {meta: artist Randy Travis}
 {meta: composer Don Schlitz and Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file ohwhatatimetobemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm [C]sorry you're [G7]feeling so [A7]lonely I [D7]know how hard it can [G7]be
@@ -50,3 +53,9 @@ There's [C]somebody [G7]else that she's [A7]giving it to and [D7]oh what a [G7]t
 {start_of_verse: Verse 5}
 Yeah it's safe to [G7]say it's a [A7]bad day for you but [D7]oh what a [G7]time to be [C]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Cheater's Kit}
 {meta: artist Tommy Overstreet}
 {meta: composer Rory Bourke, Gene Dobbins, Johnny Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file cheaterskitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been watching you watching [F]Mary [C]at the [Dm]office
@@ -66,3 +69,11 @@ To [F]cover up your [G7]cheatin' [C]cracks[F]  [C]
 [F]Alcohol and a [C]place to fall
 When [G7]she won't take you [C]back[F]
 {end_of_verse}
+
+
+
+
+
+
+
+

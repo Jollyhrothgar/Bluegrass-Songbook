@@ -1,5 +1,8 @@
 {meta: title You Tore My Heaven All To Hell}
 {meta: artist Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file youtoremyheavenalltohelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everything that ever mattered I [F]watched it slowly [C]die
@@ -28,3 +31,7 @@ Cause last [F]night my angel met the devil and I know him too [C]well
 {start_of_verse: Verse 4}
 [F]Yes last [C]night you [F]tore my [C]heaven [G7]all to [C]hell
 {end_of_verse}
+
+
+
+

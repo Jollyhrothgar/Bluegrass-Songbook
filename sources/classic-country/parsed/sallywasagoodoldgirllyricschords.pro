@@ -1,6 +1,9 @@
 {meta: title Sally Was A Good Old Girl}
 {meta: artist Fats Domino}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file sallywasagoodoldgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sally used to carry my books to school 
@@ -76,3 +79,15 @@ If you wanted a kiss or a little bit of squeeze
 The girl's made for love and not [D7]made to tease 
 Sally was a good old [G]girl 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

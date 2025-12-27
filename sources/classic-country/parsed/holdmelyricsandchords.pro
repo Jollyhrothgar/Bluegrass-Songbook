@@ -1,6 +1,9 @@
 {meta: title Hold me}
 {meta: artist Barbara Mandrell}
 {meta: composer G. Ray}
+{meta: x_source classic-country}
+{meta: x_source_file holdmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hold me  [F]let me be a little [C]girl again
@@ -38,3 +41,8 @@ And [G7]have you hold [C]me
 [E7]I only want to hide [F]and rest awhile
 And [G7]have you hold [C]me
 {end_of_verse}
+
+
+
+
+

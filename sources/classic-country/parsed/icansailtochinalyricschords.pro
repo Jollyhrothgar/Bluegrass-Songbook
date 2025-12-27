@@ -1,6 +1,9 @@
 {meta: title I Can Sail To China}
 {meta: artist John Conlee}
 {meta: composer John Grazier}
+{meta: x_source classic-country}
+{meta: x_source_file icansailtochinalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You put me on a cloud with your first kiss
@@ -43,3 +46,9 @@ I can [G]sail to China on the [D7]tears I've cried for [G]you
 {start_of_verse: Verse 6}
 [C]I can [G]sail to China on the [D7]tears I've cried for [G]you
 {end_of_verse}
+
+
+
+
+
+

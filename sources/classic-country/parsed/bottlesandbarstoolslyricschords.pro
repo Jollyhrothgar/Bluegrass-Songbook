@@ -1,6 +1,9 @@
 {meta: title Bottles And Barstools}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file bottlesandbarstoolslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Goodbye was a very easy [F]word for you to [D7]say
@@ -40,3 +43,8 @@
 [C]They tell me [D7]that friends in [Dm]need are truly friends [D7]indeed
 [G7]And bottles and barstools have never failed me [C]yet
 {end_of_verse}
+
+
+
+
+

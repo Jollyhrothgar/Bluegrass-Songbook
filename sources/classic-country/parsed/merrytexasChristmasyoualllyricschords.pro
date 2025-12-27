@@ -1,6 +1,9 @@
 {meta: title Merry Texas Christmas You All}
 {meta: artist Gene Autry}
 {meta: composer Leon Harris and Bob Miller}
+{meta: x_source classic-country}
+{meta: x_source_file merrytexasChristmasyoualllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We have no jingle [G7]bells or sleigh
@@ -55,3 +58,9 @@ Merry [G7]Texas Christmas you [C]all
 Merry [G7]Texas Christmas you [C]all 
 Merry [G7]Texas Christmas you [C]all
 {end_of_verse}
+
+
+
+
+
+

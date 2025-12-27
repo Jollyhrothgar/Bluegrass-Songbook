@@ -1,5 +1,8 @@
 {meta: title Tennessee Tears}
 {meta: artist Pee Wee King}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseetearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My eyes are tired of crying Tennessee [D7]tears
@@ -39,3 +42,7 @@
 [G]I know I shed a million Tennessee [D7]tears
 [G]Tennessee tears over you
 {end_of_verse}
+
+
+
+

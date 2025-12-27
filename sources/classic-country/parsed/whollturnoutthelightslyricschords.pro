@@ -1,6 +1,9 @@
 {meta: title Who'll Turn Out The Lights}
 {meta: artist Mel Street}
 {meta: composer Wayne Kemp and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file whollturnoutthelightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder who’ll turn out the lights in [F]your world [C]tonight
@@ -24,3 +27,5 @@ Is he touching that old switch that I’ve touched so many [G7]times
 Is he [C]turning on the woman I [F]could never satis[C]fy
 I wonder [F]who‘ll turn out the [C]lights in [G7]your world [C]tonight
 {end_of_verse}
+
+

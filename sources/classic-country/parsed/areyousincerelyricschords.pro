@@ -1,6 +1,9 @@
 {meta: title Are You Sincere}
 {meta: artist Faron Young}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file areyousincerelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Are you sincere [Em]when you say [F]I love [G7]you
@@ -23,3 +26,5 @@
 [F]I'd like to know which way to [C]go
 [G7]Will our love grow are you [C]sincere
 {end_of_verse}
+
+

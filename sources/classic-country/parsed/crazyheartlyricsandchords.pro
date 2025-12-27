@@ -1,6 +1,9 @@
 {meta: title Crazy Heart}
 {meta: artist The Lonesome River Band}
 {meta: composer Sharon Rose Higgins and Billy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file crazyheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like the wild west wind so un[D7]certain
@@ -40,3 +43,8 @@ Your crazy heart is driving me [G]insane
 {start_of_verse: Verse 4}
 Your crazy [D7]heart is driving me [G]insane
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title If You Were Me}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouweremelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you were me and I were you
@@ -39,3 +42,8 @@ Of all the times you've been untrue
 [C]Just tell me now what would you [G7]do
 [C]If you were me and I were you
 {end_of_verse}
+
+
+
+
+

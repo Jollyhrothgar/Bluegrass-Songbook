@@ -1,6 +1,9 @@
 {meta: title Why Did I Wait So Long}
 {meta: artist Ricky Skaggs}
 {meta: composer Shawn Lane}
+{meta: x_source classic-country}
+{meta: x_source_file whydidiwaitsolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God spoke to me a [G7]hundred [C]times
@@ -42,3 +45,8 @@
 {start_of_verse: Verse 5}
 [C]Why did [G7]I wait so [C]long
 {end_of_verse}
+
+
+
+
+

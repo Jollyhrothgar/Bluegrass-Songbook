@@ -1,6 +1,9 @@
 {meta: title My Deceitful Heart}
 {meta: artist Ricky Skaggs}
 {meta: composer Shorty Long and John Speca}
+{meta: x_source classic-country}
+{meta: x_source_file mydeceitfulheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My deceitful heart keeps [D7]changin' its [G]mind
@@ -44,3 +47,9 @@ But I don't think my love
 [D7]Each time I fall in love it's soon that I [G]find
 [D7]My fickle heart [C]longs [D7]to be [G]free
 {end_of_verse}
+
+
+
+
+
+

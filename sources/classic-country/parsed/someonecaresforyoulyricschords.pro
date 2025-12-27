@@ -1,6 +1,9 @@
 {meta: title Someone Cares For You}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file someonecaresforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I leave home for work each day and [G7]face that same ol' [C]grind
@@ -26,3 +29,6 @@ If you [C]haven't guessed by [D7]now that someone's [G]me
 {start_of_verse: Verse 3}
 Darling [C]you can tell the [D7]world that someone's [G]me
 {end_of_verse}
+
+
+

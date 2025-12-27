@@ -1,6 +1,9 @@
 {meta: title My Dream Boat Is Drifting}
 {meta: artist Eddy Arnold}
 {meta: composer May Newberry}
+{meta: x_source classic-country}
+{meta: x_source_file mydreamboatisdriftinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My dreamboat is drifting
@@ -22,3 +25,5 @@ My [G]dreamboat is drifting
 [C]Bringing you [G]home [D7]to [G]me
 repeat 
 {end_of_verse}
+
+

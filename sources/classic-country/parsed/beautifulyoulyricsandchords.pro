@@ -1,6 +1,9 @@
 {meta: title Beautiful You}
 {meta: artist The Oak Ridge Boys}
 {meta: composer David Hanner}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Please  don't cry  oh [C]my  you're so [G]blue
@@ -22,3 +25,5 @@ Beautiful [E7]yo-[A7]---[D7]u our love will always grow
 [G]Please  don't cry  oh [C]my  what will you [G]do
 Take [D7]me to help you beautiful [G]you
 {end_of_verse}
+
+

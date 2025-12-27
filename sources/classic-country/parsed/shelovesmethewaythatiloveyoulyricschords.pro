@@ -1,6 +1,9 @@
 {meta: title She Loves Me The Way That I Love You}
 {meta: artist Charley Pride}
 {meta: composer Bobby Barker}
+{meta: x_source classic-country}
+{meta: x_source_file shelovesmethewaythatiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's the closest thing to [C]happiness I [G]found since [D7]losing [G]you
@@ -27,3 +30,6 @@ Cause [D7]she loves me the way that I love [G]you
 No she won't erase your [G7]footprints but in [C]time she'll fill your shoes
 Cause [D7]she loves me the way that I love [G]you
 {end_of_verse}
+
+
+

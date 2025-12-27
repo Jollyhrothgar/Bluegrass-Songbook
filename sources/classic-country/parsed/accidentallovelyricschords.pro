@@ -1,6 +1,9 @@
 {meta: title Accidental Love}
 {meta: artist Mel Street}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file accidentallovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd say my meeting her was [F]accidental love
@@ -46,3 +49,9 @@ It was [F]ac[G7]cidental [C]love purely [F]ac[G7]cidental [C]love
 We never [F]planned to do it we just [C]ran into it  
 It was [G7]accidental [C]love
 {end_of_verse}
+
+
+
+
+
+

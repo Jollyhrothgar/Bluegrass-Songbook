@@ -1,5 +1,8 @@
 {meta: title Paralyze My Mind}
 {meta: artist Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file paralyzemymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come on woman and [G7]paralyze my [C]mind
@@ -43,3 +46,9 @@ While I [C]let that woman [G7]paralyze my [C]mind
 {start_of_verse: Verse 7}
 Come on woman and [G7]paralyze my [C]mind
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Place And Time}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file theplaceandtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought it all over so [C]here’s my answer [G]dear
@@ -21,3 +24,5 @@ In my heart I’ll hold you [D7]there
 So [G]whisper you love me and [C]always will be [G]mine
 And [C]hold me and [G]kiss me it’s the [D7]place and the [G]time
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Gotta Get You Near Me Blues}
 {meta: artist Buddy Holly}
 {meta: composer Bob Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file gottagetyounearmeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm so blue I’m [F]thinking of [D7]you
@@ -36,3 +39,7 @@ That's no [D7]good to me without the [G7]one that I love
 [C]So hurry here to me [F]darling can't you [D7]see
 I've [G7]got those gotta get you near me [C]blues
 {end_of_verse}
+
+
+
+

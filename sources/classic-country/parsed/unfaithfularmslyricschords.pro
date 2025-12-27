@@ -1,5 +1,8 @@
 {meta: title Unfaithful Arms}
 {meta: artist Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file unfaithfularmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your unfaithful arms will be [C7]empty [F]someday
@@ -25,3 +28,6 @@
 {start_of_verse: Verse 4}
 [F]Yes I'll always love [C]you though I know that [G7]you have unfaithful [C][F]arms
 {end_of_verse}
+
+
+

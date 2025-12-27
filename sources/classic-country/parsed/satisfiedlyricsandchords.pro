@@ -1,6 +1,9 @@
 {meta: title Satisfied}
 {meta: artist Gene Watson}
 {meta: composer Martha Carson}
+{meta: x_source classic-country}
+{meta: x_source_file satisfiedlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you may ask me if I'm happy
@@ -60,3 +63,10 @@ Got that [C]old time [G]religion
 That is why [D7]I’m satis[G]fied 
 Yes that is why [D7]I’m satis[G]fied
 {end_of_verse}
+
+
+
+
+
+
+

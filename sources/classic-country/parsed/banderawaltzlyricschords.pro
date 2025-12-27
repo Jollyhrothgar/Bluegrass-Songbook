@@ -1,6 +1,9 @@
 {meta: title Bandera Waltz}
 {meta: artist Slim Whitman}
 {meta: composer Ollie Marie Adams}
+{meta: x_source classic-country}
+{meta: x_source_file banderawaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I Danced With An [F]An - [C]gel
@@ -25,3 +28,5 @@ She Loves [D7]Me She Loves Me What Else Could [G7]It Be
 [C]She's Gone And Left Me [F]With A [C]Love That Was [Dm]False
 I'll [G7]Re-member Bandera And The Bandera [C]Waltz
 {end_of_verse}
+
+

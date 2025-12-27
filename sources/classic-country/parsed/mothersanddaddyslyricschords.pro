@@ -1,6 +1,9 @@
 {meta: title Mothers And Daddys}
 {meta: artist Mickey Gilley}
 {meta: composer Roger Murrah and Jim McBride}
+{meta: x_source classic-country}
+{meta: x_source_file mothersanddaddyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whatever happened to [Dm]mother's and daddy's
@@ -43,3 +46,8 @@ Mothers and daddys on [Dm]two different shores
 [C]Just get together all [G7]through the weekend
 [F]Christmas and the [G7]Fourth of [C]July
 {end_of_verse}
+
+
+
+
+

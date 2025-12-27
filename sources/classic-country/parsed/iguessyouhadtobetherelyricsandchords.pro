@@ -1,6 +1,9 @@
 {meta: title I Guess You Had To Be There}
 {meta: artist Gene Watson}
 {meta: composer Dave Lindsey and Edwin Rowell}
+{meta: x_source classic-country}
+{meta: x_source_file iguessyouhadtobetherelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wish that [D7]I could [G]tell you what it [D7]means to know her [G]love
@@ -33,3 +36,7 @@ But [C]words just can't [G]describe her [D7]I guess you had to be [G]there
 {start_of_verse: Verse 4}
 No [C]words just can't [G]describe her [D7]I guess you had to be [G]there
 {end_of_verse}
+
+
+
+

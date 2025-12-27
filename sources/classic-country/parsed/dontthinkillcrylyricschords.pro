@@ -1,6 +1,9 @@
 {meta: title Don't Think I'll Cry}
 {meta: artist Ricky Skaggs}
 {meta: composer Wayland Patton}
+{meta: x_source classic-country}
+{meta: x_source_file dontthinkillcrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My tears would fall each time you'd leave [C]me
@@ -35,3 +38,7 @@ I'll find another love a [D7]waiting when we're [G]through
 {start_of_verse: Verse 4}
 I'll find another love a [D7]waiting when we're [G]through
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Texas Playboy Rag}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file texasplayboyraglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Oh mister [G]fiddling man [C]please strike up the [A7]band
@@ -28,3 +31,6 @@
 [C]Carry me back [A7]to Texas
 [D7]With that Texas playboy [G]rag
 {end_of_verse}
+
+
+

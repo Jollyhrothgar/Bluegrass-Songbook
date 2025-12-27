@@ -1,6 +1,9 @@
 {meta: title The Conversion Of Ronnie Jones}
 {meta: artist Merle Haggard}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file theconversionofronniejoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ronnie Jones decided to settle down 
@@ -75,3 +78,13 @@ Nobody'd ever heard her say [C]before
 {start_of_verse: Verse 11}
 Sometimes we know [G7]not what we pray [C]for
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

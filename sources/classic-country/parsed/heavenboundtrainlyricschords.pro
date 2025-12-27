@@ -1,5 +1,8 @@
 {meta: title Heaven Bound Train}
 {meta: artist Carl Story}
+{meta: x_source classic-country}
+{meta: x_source_file heavenboundtrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heaven bound train heaven bound train 
@@ -42,3 +45,8 @@ I'm on that heaven bound [D7]train
 [G]Heaven bound train heaven bound train 
 I'm on that [D7]heaven bound [G]train
 {end_of_verse}
+
+
+
+
+

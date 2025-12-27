@@ -1,6 +1,9 @@
 {meta: title New York City}
 {meta: artist The Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file newyorkcitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She came to me shortly after [D7]Christmas
@@ -47,3 +50,9 @@ Two [Am]angels in hell in New York [D7]City
 But [F]I can't [G7]think about that [C]now
 [F]I can't [G7]think about that [C]now
 {end_of_verse}
+
+
+
+
+
+

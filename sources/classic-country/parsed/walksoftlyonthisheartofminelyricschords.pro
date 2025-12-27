@@ -1,6 +1,9 @@
 {meta: title Walk Softly On This Heart Of Mine}
 {meta: artist Kentucky Headhunters}
 {meta: composer Jake}
+{meta: x_source classic-country}
+{meta: x_source_file walksoftlyonthisheartofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say your sorry once again dear
@@ -37,3 +40,8 @@ Tag:
 {start_of_verse: Verse 5}
 [F]Walk softly [G7]on this heart of [C]mine
 {end_of_verse}
+
+
+
+
+

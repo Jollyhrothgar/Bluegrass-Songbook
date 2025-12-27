@@ -1,6 +1,9 @@
 {meta: title I've Always Been Honky Tonk Crazy}
 {meta: artist Keith Whitley}
 {meta: composer Dean Dillon and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file ivealwaysbeenhonkytonkcrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Woman [C]you better get up and [F]run while you [D7]can
@@ -34,3 +37,7 @@ I [F]only feel [G7]right doing [C]wrong
 Cause [F]when I get [A7]honky tonk [D7]crazy
 I [F]only feel [G7]right doing [C]wrong
 {end_of_verse}
+
+
+
+

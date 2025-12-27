@@ -1,6 +1,9 @@
 {meta: title He Took Your Place}
 {meta: artist Porter Wagoner}
 {meta: composer Lester Flatt & Earl Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file hetookyourplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Upon the cruel tree of [F]Calvary
@@ -36,3 +39,7 @@ We'll [C]fly to Heaven's open [G7]door
 The [C]crown of life He gives on that great [F]day
 With [C]Him we'll [G7]live forever [C]more
 {end_of_verse}
+
+
+
+

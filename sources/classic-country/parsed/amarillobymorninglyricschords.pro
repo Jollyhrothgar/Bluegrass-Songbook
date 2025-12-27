@@ -1,6 +1,9 @@
 {meta: title Amarillo By Morning}
 {meta: artist George Strait}
 {meta: composer Paul Fraser and Terry Stafford}
+{meta: x_source classic-country}
+{meta: x_source_file amarillobymorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Amarillo by [Em]morning [F]up from San [C]Antone
@@ -26,3 +29,5 @@ I ain't [C]rich but [Em]Lord I'm [F]free
 [C]Amarillo by [G7]morning [F]Amarillo's [G7]where I'll [C]be
 Amarillo by [G7]morning [F]Amarillo's [G7]where I'll [C]be
 {end_of_verse}
+
+

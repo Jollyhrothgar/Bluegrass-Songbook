@@ -1,5 +1,8 @@
 {meta: title I'll Try}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file illtrylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here we [G7]are [F]   [G7]talkin' bout [C]forever [G7]   [F]  [G7]
@@ -43,3 +46,9 @@ I'll [C]try [G7]   [F]  to be [G7]true to you I’ll [C]try[G7]   [F]  [G7]
 I’ll [C]try [G7]   [F]  to always [G7]love you
 I’ll [C]t—[G7]---[F]r-[G7]---[C]y
 {end_of_verse}
+
+
+
+
+
+

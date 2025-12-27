@@ -1,5 +1,8 @@
 {meta: title Today My World Slipped Away}
 {meta: artist Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file todaymyworldslippedawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We made it final [F]today 
@@ -39,3 +42,8 @@ Cause [Dm]today my [G7]world slipped [C]away
 {start_of_verse: Verse 5}
 Cause [Dm]today my [G7]world slipped [C]away 
 {end_of_verse}
+
+
+
+
+

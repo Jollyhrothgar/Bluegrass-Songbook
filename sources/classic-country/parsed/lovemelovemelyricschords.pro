@@ -1,5 +1,8 @@
 {meta: title Love Me Love Me}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file lovemelovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've searched so long for love [F]and [C]understanding
@@ -28,3 +31,6 @@ So darling l-ove me love [F]me
 [C]L-ove me love [F]me
 And [C]I'll give [G7]all my love to [C]you
 {end_of_verse}
+
+
+

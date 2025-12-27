@@ -1,6 +1,9 @@
 {meta: title Hook In My Heart}
 {meta: artist Charley Pride}
 {meta: composer Kevin M. Wicker}
+{meta: x_source classic-country}
+{meta: x_source_file hookinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m just an ordinary average guy
@@ -58,3 +61,11 @@ You [C]got me where you want [G7]me
 {start_of_verse: Verse 9}
 You got a [C]hook in my heart you got a hook in my heart
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Call Me Shorty}
 {meta: artist Mickey Gilley}
 {meta: composer Charles Matthews}
+{meta: x_source classic-country}
+{meta: x_source_file callmeshortylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I smoke a big cigar I drive a Cadillac car
@@ -28,3 +31,5 @@ I'm a really in the [C]know
 I got a way with the [G7]women
 And they [F]give me all their [C]dough
 {end_of_verse}
+
+

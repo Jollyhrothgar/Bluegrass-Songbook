@@ -1,6 +1,9 @@
 {meta: title Thanks For Nothing}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Gene Dobbins and Rayburn Anthony}
+{meta: x_source classic-country}
+{meta: x_source_file thanksfornothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [E7]I thank you from the [A7]bottom of my [D7]broken heart
@@ -27,3 +30,6 @@ Thanks for [Dm]nothin' that's [G7]what you gave to [C]me
 Thanks for [Dm]nothin' that's [G7]what you gave to [C]me
 Thank you baby
 {end_of_verse}
+
+
+

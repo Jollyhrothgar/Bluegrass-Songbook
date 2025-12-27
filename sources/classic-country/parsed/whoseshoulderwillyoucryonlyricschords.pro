@@ -1,6 +1,9 @@
 {meta: title Whose Shoulder Will You Cry On}
 {meta: artist Kitty Wells}
 {meta: composer Billy Wallace and Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file whoseshoulderwillyoucryonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Once you [C]were my life [G7]and [F]breath 
@@ -22,3 +25,5 @@ They're just [C]pain and some are [G7]lies
 That's made [C]a wreck of me from that chain I've been set [F]free
 Now whose [Am][C]sho-ho-oulder [G7]will you cry [C]on
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Out On The Texas Plains}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file outonthetexasplainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We headed west as sparsest guest [F]after the last [C]domain
@@ -85,3 +88,14 @@ And [A#7]shook the ground [G7]beneath
 The [F]plains were [C]full of buffalo
 As [G7]far as the eye could [C]see
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

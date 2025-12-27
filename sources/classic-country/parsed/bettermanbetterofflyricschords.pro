@@ -1,6 +1,9 @@
 {meta: title Better Man Better Off}
 {meta: artist Tracy Lawrence}
 {meta: composer Brett Jones and Stan Davis}
+{meta: x_source classic-country}
+{meta: x_source_file bettermanbetterofflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The hardest thing I'll ever do 
@@ -41,3 +44,7 @@ Ain't lookin' back
 [G7]I know when the hurtin' stops I'll be a better man better [C]off
 [G7]A better man better off a whole lot better [C]off
 {end_of_verse}
+
+
+
+

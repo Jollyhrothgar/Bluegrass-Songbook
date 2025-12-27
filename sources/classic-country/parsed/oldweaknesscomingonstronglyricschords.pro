@@ -1,6 +1,9 @@
 {meta: title Old Weakness (Coming On Strong)}
 {meta: artist Tanya Tucker}
 {meta: composer Bob DiPiero and Gary Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file oldweaknesscomingonstronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Two in the morning too hot to sleep
@@ -59,3 +62,13 @@ Just when I believe I could leave it alone
 [D7]I feel an old-ol-ol-ol weakness I feel an old-ol-ol weakness
 [G]I feel an old weakness coming on strong
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

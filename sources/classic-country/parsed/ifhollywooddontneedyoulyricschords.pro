@@ -1,6 +1,9 @@
 {meta: title If Hollywood Don't Need You}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file ifhollywooddontneedyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you know I’m not much good [D7]at writing [Em]letters
@@ -45,3 +48,8 @@ Well I [G]hope you make the big [C]time
 But if Hollywood don’t need [C]you
 [D7]Honey I still [Em]do
 {end_of_verse}
+
+
+
+
+

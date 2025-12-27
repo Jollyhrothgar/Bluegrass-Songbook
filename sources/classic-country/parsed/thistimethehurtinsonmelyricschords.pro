@@ -1,6 +1,9 @@
 {meta: title This Time The Hurtin's on Me}
 {meta: artist Faron Young}
 {meta: composer Dallas Frazier and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file thistimethehurtinsonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Back when your patience had time to forgive [F]me
@@ -22,3 +25,5 @@
 [C]The chance of the lifetime is the one that I [F]wasted
 [C]The dream that I shattered is [G7]falling on [C]me
 {end_of_verse}
+
+

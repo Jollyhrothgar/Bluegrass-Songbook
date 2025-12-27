@@ -1,5 +1,8 @@
 {meta: title I Can't See Me Without You}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file icantseemewithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is it day is it night  am I [F]losing my [C]sight
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 Now I can't see [G7]me without [C]you
 {end_of_verse}
+
+
+
+

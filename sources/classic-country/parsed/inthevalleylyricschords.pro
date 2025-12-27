@@ -1,5 +1,8 @@
 {meta: title In The Valley}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file inthevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm as sad as the willow that [C]weeps in the valley
@@ -21,3 +24,5 @@ Come [G]back to this poor cowboy's [D7]arms
 [G]I will weep like the willow that [C]weeps in the valley
 I'll be [G]lonesome [D7]until you [G]return
 {end_of_verse}
+
+

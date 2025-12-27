@@ -1,6 +1,9 @@
 {meta: title With You It's The Money}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file withyouitsthemoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]With you it’s the money it’s never been love
@@ -43,3 +46,8 @@ With you it’s the money it’s [C]never been [G]love
 [D7]With me it’s you I’m always thinking of
 With you it’s the money it’s [C]never been [G]love
 {end_of_verse}
+
+
+
+
+

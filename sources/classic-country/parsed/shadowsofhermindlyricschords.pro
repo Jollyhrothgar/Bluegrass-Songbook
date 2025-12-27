@@ -1,5 +1,8 @@
 {meta: title Shadows Of Her Mind}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file shadowsofhermindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met her sadly in the [C]slowly fallin' [G]rain crying softly
@@ -32,3 +35,6 @@ As I [C]search for what I [D7]know I'll never [G]find
 For the [C]answer I was [D7]seeking was a [G]secret she's still [Em]keeping
 Hidden [C]somewhere in the [Am]silence of the [D7]shadows of her [G]mind 
 {end_of_verse}
+
+
+

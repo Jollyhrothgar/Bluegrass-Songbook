@@ -1,6 +1,9 @@
 {meta: title I'm Your Woman}
 {meta: artist Jeanne Pruett}
 {meta: composer Bud Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file imyourwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a ship in a storm
@@ -34,3 +37,7 @@ I'm your woman [F]you're my [C]man [F]  [C]
 I'm you're woman [F]you're my [C]man [F]  [C]
 I'm you're woman [F]you're my [C]man [F]  [C]
 {end_of_verse}
+
+
+
+

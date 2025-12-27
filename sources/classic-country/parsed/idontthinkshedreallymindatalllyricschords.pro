@@ -1,6 +1,9 @@
 {meta: title I Don't Think She'd Really Mind At All}
 {meta: artist Gene Watson}
 {meta: composer A.L. Owens &amp; Dennis Knutson}
+{meta: x_source classic-country}
+{meta: x_source_file idontthinkshedreallymindatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got her right where I don't want [C]her
@@ -29,3 +32,6 @@
 [C]And if tonight she did not hear my footsteps in the [G]hall
 [D7]I don't think she'd really mind at [G]all
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Only This Moment Is Mine}
 {meta: artist Daniel O'Donnell}
 {meta: composer Teresa Mary O'Donnell}
+{meta: x_source classic-country}
+{meta: x_source_file onlythismomentisminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There're so [C]many things we'd change
@@ -52,3 +55,8 @@ Or [F]turn back the [C]hands of [Dm]time [G7]
 [C]Yesterday is history [F]tomorrow is a mystery
 And [C]I know that only this [G7]moment is [C]mine
 {end_of_verse}
+
+
+
+
+

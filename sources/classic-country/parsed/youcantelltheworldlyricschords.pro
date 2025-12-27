@@ -1,6 +1,9 @@
 {meta: title You Can Tell The World}
 {meta: artist Charley Pride}
 {meta: composer Country Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file youcantelltheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm farther from your arms than [F]ever
@@ -29,3 +32,6 @@ And [C]if you never make it back [F]into my arms
 And [C]even though I know that you don't [F]love me
 [G7]You can tell the world I'll always [C]care
 {end_of_verse}
+
+
+

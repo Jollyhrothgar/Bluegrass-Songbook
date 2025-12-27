@@ -1,6 +1,9 @@
 {meta: title If I Ever Need A Lady I'll Call You}
 {meta: artist Claude Gray}
 {meta: composer Gene Crysler}
+{meta: x_source classic-country}
+{meta: x_source_file ifieverneedaladyillcallyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You don't smoke and you don't swear 
@@ -38,3 +41,7 @@ Cause if [G7]I ever need a lady I'll call [C]you
 {start_of_verse: Verse 4}
 Yes [G7]if I ever need a lady I'll call [C]you 
 {end_of_verse}
+
+
+
+

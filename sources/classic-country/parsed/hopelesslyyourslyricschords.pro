@@ -1,6 +1,9 @@
 {meta: title Hopelessly Yours}
 {meta: artist George Jones}
 {meta: composer Don Cook, Curly Putman, Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file hopelesslyyourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love you I hate [D7]you forget you [C]but I'm afraid [D7]to
@@ -32,3 +35,7 @@ But [C]one thing's for [D7]certain in spite [G]of this [C]hurting
 I’ll always be [D7]hopelessly [G]yours 
 [D7]Hopelessly [G]yours 
 {end_of_verse}
+
+
+
+

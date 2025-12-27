@@ -1,6 +1,9 @@
 {meta: title Anywhere Is Home When You're With Me}
 {meta: artist Rhonda Vincent}
 {meta: composer George Doering and Ellen Doering}
+{meta: x_source classic-country}
+{meta: x_source_file anywhereishomewhenyourewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I spent some time in the hills [C]of old [G]Kentucky
@@ -37,3 +40,7 @@
 [D7]Cause anywhere is home when you're with [G]me
 [D7]Cause anywhere is home when you're with [G][C]me
 {end_of_verse}
+
+
+
+

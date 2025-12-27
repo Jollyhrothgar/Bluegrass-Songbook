@@ -1,5 +1,8 @@
 {meta: title He's Taking It Hard She's Taking It Easy}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file hestakingithardshestakingiteasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's taking it hard she's taking it [G]easy
@@ -25,3 +28,6 @@
 {start_of_verse: Verse 4}
 [C]He's taking it hard she's taking it [G]easy
 {end_of_verse}
+
+
+

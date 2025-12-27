@@ -1,6 +1,9 @@
 {meta: title I'd Fight The World}
 {meta: artist Ray Price}
 {meta: composer Hank Cochran and Joe Allison}
+{meta: x_source classic-country}
+{meta: x_source_file idfighttheworldlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I don't care what anybody thinks of [C]me
@@ -22,3 +25,5 @@
 [F]I'd do these things [G7]with no fear of [C]tomorrow
 [F]I'd fight the world [G7]before I'd ever let you [C]go
 {end_of_verse}
+
+

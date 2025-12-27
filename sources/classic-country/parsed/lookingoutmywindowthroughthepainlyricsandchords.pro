@@ -1,6 +1,9 @@
 {meta: title Looking Out My Window Through The Pain}
 {meta: artist George Strait}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file lookingoutmywindowthroughthepainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I watched from my window as she [F]slipped from the [C]house
@@ -29,3 +32,6 @@ And it [G7]hurts to know she's hung upon [F]some guy [G7]from yester[C]day
 Once [F]again she's chasing memories and I'm [C]losing everything
 But I love her so I'll wait for her [G7]looking out my window through the [C]pain
 {end_of_verse}
+
+
+

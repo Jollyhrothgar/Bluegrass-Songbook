@@ -1,6 +1,9 @@
 {meta: title You are my flower}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer A. P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file youaremyflowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When summertime is gone
@@ -31,3 +34,8 @@ So wear a happy smile
 Forget the tears
 [G]But don't forget to smile
 {end_of_verse}
+
+
+
+
+

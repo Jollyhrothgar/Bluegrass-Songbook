@@ -1,5 +1,8 @@
 {meta: title Suffer In Silence}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file sufferinsilencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [G7]think I should speak to you [C]stranger
@@ -21,3 +24,5 @@
 [G7]You're the reason for all of your [C]sorrows
 [G7]So just suffer in silence and [C]smile
 {end_of_verse}
+
+

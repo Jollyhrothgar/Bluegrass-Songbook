@@ -1,6 +1,9 @@
 {meta: title Christmas Country Style}
 {meta: artist Statler Brothers}
 {meta: composer Jimmy Fortune}
+{meta: x_source classic-country}
+{meta: x_source_file Christmascountrystylelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Light the candles on the [F]mantelpiece
@@ -40,3 +43,8 @@ So take your coat off and [F]stay a little while
 {start_of_verse: Verse 4}
 [G7]We'll have a Christmas [F]Coun[G7]try [C]Style
 {end_of_verse}
+
+
+
+
+

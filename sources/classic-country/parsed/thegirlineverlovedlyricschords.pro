@@ -1,6 +1,9 @@
 {meta: title The Girl I Never Loved}
 {meta: artist Elvis Presley}
 {meta: composer Randy Starr}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlineverlovedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The girl I never loved will [Dm]never know I [G7]cared
@@ -16,3 +19,4 @@ Oh I'm [C]lonely I'm so [E7]lonely cause it's [Am]her I'm thinking [D7]of
 But she'll [C]always be the [Dm]girl I never [G7]loved
 Never [G]lo-[C]ved never loved
 {end_of_verse}
+

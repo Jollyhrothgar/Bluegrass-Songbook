@@ -1,5 +1,8 @@
 {meta: title What Am I Gonna Do}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file whatamigonnadolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can make it for a day or two without [Am]you 
@@ -24,3 +27,6 @@ And probably be alright till [G]morning
 But what am I gonna do
 With the [D7]rest of my [G]life
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Take Away Jesus}
 {meta: artist Carroll Roberson}
+{meta: x_source classic-country}
+{meta: x_source_file takeawayJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Take Away Jesus
@@ -44,3 +47,9 @@ I've got a mansion that time can not [G]scar
 {start_of_verse: Verse 5}
 [D7]Take away Jesus and I'd be a miserable [G]man 
 {end_of_verse}
+
+
+
+
+
+

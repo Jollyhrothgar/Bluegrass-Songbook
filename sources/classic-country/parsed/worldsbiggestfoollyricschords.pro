@@ -1,6 +1,9 @@
 {meta: title World's Biggest Fool}
 {meta: artist Rhonda Vincent}
 {meta: composer Byron Hill and Darrell Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file worldsbiggestfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm not that lonely anymore
@@ -54,3 +57,9 @@ One of [D7]us is the world's biggest [G]fool
 Oh yeah I think I’ve discovered the [A7]truth
 One of [D7]us is the world's biggest [G]fool
 {end_of_verse}
+
+
+
+
+
+

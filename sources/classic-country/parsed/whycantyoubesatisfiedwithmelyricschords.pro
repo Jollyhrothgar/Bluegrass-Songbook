@@ -1,6 +1,9 @@
 {meta: title Why Can't You Be Satisfied With Me}
 {meta: artist Carl Smith}
 {meta: composer Wayne P. Walker, Carl Perkins, Carl Mann}
+{meta: x_source classic-country}
+{meta: x_source_file whycantyoubesatisfiedwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re a good girl that’s true 
@@ -51,3 +54,10 @@ The girl you used to be
 What makes you do the things you do
 Why can’t [F]you be [G7]satisfied with [C]me [G7]
 {end_of_verse}
+
+
+
+
+
+
+

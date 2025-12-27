@@ -1,6 +1,9 @@
 {meta: title Always Never The Same}
 {meta: artist George Strait}
 {meta: composer Marv Green and Terry McBride}
+{meta: x_source classic-country}
+{meta: x_source_file alwaysneverthesamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I know why I'm intri[C]gued
@@ -30,3 +33,6 @@ Always never the [C]same
 [G7]Always never the [C]same
 [G7]Always never the [C]same
 {end_of_verse}
+
+
+

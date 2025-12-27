@@ -1,6 +1,9 @@
 {meta: title What If We Were Running Out Of Love}
 {meta: artist Tanya Tucker}
 {meta: composer Linda Hargrove}
+{meta: x_source classic-country}
+{meta: x_source_file whatifwewererunningoutoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody's wonderin' how this [F]world will get around
@@ -48,3 +51,9 @@ But [D7]that won't stop this world from goin' [G7]round
 [G7]What if we were running out of [C]love
 [G7]What if we were running out of [C]love
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Diamonds In The Sand}
 {meta: artist Jim Reeves}
 {meta: composer Steve Gibson and Taffy Kikillus}
+{meta: x_source classic-country}
+{meta: x_source_file diamondsinthesandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Diamond diamonds in the [A#7]sand
@@ -21,3 +24,5 @@
 {start_of_verse: Verse 3}
 [Am]It's indeed like the [D7]diamonds in the [G]sand
 {end_of_verse}
+
+

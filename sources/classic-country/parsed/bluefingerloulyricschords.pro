@@ -1,6 +1,9 @@
 {meta: title Blue Finger Lou}
 {meta: artist Anne Murray}
 {meta: composer Alan O'Day}
+{meta: x_source classic-country}
+{meta: x_source_file bluefingerloulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I heard you playing now you stole my heart away
@@ -70,3 +73,14 @@ Yes I do
 [C]Blue Finger Lou my [D7]woogie wants to boogie with [G]you
 [C]Blue Finger Lou my [D7]woogie wants to boogie with [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

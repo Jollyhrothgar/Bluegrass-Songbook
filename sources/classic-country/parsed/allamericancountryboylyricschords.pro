@@ -1,6 +1,9 @@
 {meta: title All American Country Boy}
 {meta: artist Alan Jackson}
 {meta: composer Charlie Craig and Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file allamericancountryboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I work a forty hour week and I earn my keep 
@@ -54,3 +57,9 @@ Cause I'm a [G]all American country [C]boy
 {start_of_verse: Verse 5}
 I'm [D7]just a country [G]boy    [D7]good ol' country [G]boy
 {end_of_verse}
+
+
+
+
+
+

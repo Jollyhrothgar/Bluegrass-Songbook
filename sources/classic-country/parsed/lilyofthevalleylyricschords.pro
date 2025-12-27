@@ -1,5 +1,8 @@
 {meta: title Lily Of The Valley}
 {meta: artist Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file lilyofthevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]He's my [C]lily of the valley
@@ -38,3 +41,7 @@ He's the [C]lily of the valley
 The [F]Bright and Morning [C]Star
 He's the fairest of [G7]10,000 to my [C]soul
 {end_of_verse}
+
+
+
+

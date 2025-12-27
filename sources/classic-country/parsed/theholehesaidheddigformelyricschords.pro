@@ -1,6 +1,9 @@
 {meta: title The Hole He Said He'd Dig For Me}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Marian Turner and Z.Z. Zillion}
+{meta: x_source classic-country}
+{meta: x_source_file theholehesaidheddigformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With this bank book in your hand and [F]your arms around me
@@ -29,3 +32,6 @@ But if only he could come back now and [G7]see
 His [C]castle now would be on momma’s [F]stone just two by three
 By the [C]hole he said he’d [G7]dig he would dig for [C]me
 {end_of_verse}
+
+
+

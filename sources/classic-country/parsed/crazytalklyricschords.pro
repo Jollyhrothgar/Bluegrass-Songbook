@@ -1,6 +1,9 @@
 {meta: title Crazy Talk}
 {meta: artist Brenda Lee}
 {meta: composer Mel Tillis and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file crazytalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time I see you comin'  a [F]walkin' down the [C]street
@@ -32,3 +35,6 @@ Diddle diddle wapa pa pa [G7]do  crazy talk means I love [C]you
 Crazy talk crazy talk  wap a diddle diddle [F]woo
 Crazy talk crazy [C]talk  [G7]crazy talk means I love [C]you 
 {end_of_verse}
+
+
+

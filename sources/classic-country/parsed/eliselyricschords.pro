@@ -1,6 +1,9 @@
 {meta: title Elise}
 {meta: artist Don Williams}
 {meta: composer Graham Lyle and Tom McGuiness}
+{meta: x_source classic-country}
+{meta: x_source_file eliselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sitting in the barroom [F]ordering [G7]another [C]beer
@@ -48,3 +51,11 @@
 {start_of_verse: Verse 6}
 [F]Elise [G7]Elise come and sing your song with [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+

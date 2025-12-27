@@ -1,6 +1,9 @@
 {meta: title I Believe In You}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Frank Brunson}
+{meta: x_source classic-country}
+{meta: x_source_file ibelieveinyoulyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I heard the other [D7]day 
@@ -34,3 +37,5 @@ Honey I want you to hang [C]around here
 And be with old Jerry just one more day
 Cause I [G]believe oh I [A7]believe [D7]I believe in [G]you [C]yes I be[G]lieve
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title White Dove}
 {meta: artist The Stanley Brothers}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file whitedovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the deep rolling hills of old [F]Virginia
@@ -43,3 +46,8 @@ The [C]willows will [G7]hang their [C]heads
 I'll live my life in [F]sorrow
 Since [C]mother and [G7]daddy are [C]dead
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title When The Bloom Is On The Sage}
 {meta: artist Sons of the Pioneers}
+{meta: x_source classic-country}
+{meta: x_source_file whenthebloomisonthesagelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When it's roundup time in Texas and the [G7]bloom is on the sage
@@ -35,3 +38,7 @@ Just a-[Dm]swayin' sweatin' swearin' listenin’ [G7]to a cowhand's [E7]song
 How it [A7]beckons and I reckon I would [D7]work for any wage
 To be [C]free again just to [F]be again where the [G7]bloom is on the [C]sage
 {end_of_verse}
+
+
+
+

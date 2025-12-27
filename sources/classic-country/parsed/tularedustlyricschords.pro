@@ -1,5 +1,8 @@
 {meta: title Tulare Dust}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file tularedustlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tulare dust in a [F]farm boy's nose
@@ -35,3 +38,7 @@ And [G7]help make a living in the [C]Tulare dust
 Standing in the field by the [F]railroad track
 [D7]Cursing this strap on my [G7]cotton sack
 {end_of_verse}
+
+
+
+

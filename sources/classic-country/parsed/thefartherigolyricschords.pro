@@ -1,6 +1,9 @@
 {meta: title The Farther I Go}
 {meta: artist Kenny Rogers}
 {meta: composer Kin Vassy and David McKechnie}
+{meta: x_source classic-country}
+{meta: x_source_file thefartherigolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I took a boat [D7]I took a [G]plane
@@ -50,3 +53,10 @@ But the [C]farther I go the [D7]closer you [G]get
 {start_of_verse: Verse 6}
 The [C]farther I go the [D7]closer you [G]get
 {end_of_verse}
+
+
+
+
+
+
+

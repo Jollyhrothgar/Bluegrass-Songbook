@@ -1,5 +1,8 @@
 {meta: title The Way It Was In '51}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file thewayitwasin51lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sixty-Six was still a narrow two-lane highway
@@ -38,3 +41,8 @@ Country music hadn't gone to New York City yet
 [F]Yeah Hank and Lefty crowded every [C]jukebox
 [G7]Oh Lord that's the way it was in fifty [C]one
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Your Love Shines Through}
 {meta: artist Mickey Gilley}
 {meta: composer Wayland D. Holyfield and Gary Tolbert Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file yourloveshinesthroughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes it’s more than [C]amazing to me
@@ -47,3 +50,8 @@ Your [D7]love shines [G]through
 {start_of_verse: Verse 5}
 Your [D7]love shines [G]through 
 {end_of_verse}
+
+
+
+
+

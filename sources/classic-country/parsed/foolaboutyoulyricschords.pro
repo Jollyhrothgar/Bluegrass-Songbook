@@ -1,6 +1,9 @@
 {meta: title Fool About You}
 {meta: artist Hank Williams}
 {meta: composer Ralph C. Hutcheson}
+{meta: x_source classic-country}
+{meta: x_source_file foolaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like a hog a rootin' up under a fence
@@ -41,3 +44,10 @@ I'll tell you right now Lord my bucket's 'bout full
 I've [C7]been a fool about [F]you for way too [C]long
 I've been a fool about [G7]you but now I'm gonna get [C]gone
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Whistle My Love}
 {meta: artist George Morgan}
 {meta: composer Eddie Pola and George Wyle}
+{meta: x_source classic-country}
+{meta: x_source_file whistlemylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whistle my love [F]and I will come to [C]you
@@ -24,3 +27,5 @@ And [D7]every friendly breeze that blows [G7]will bring it my way
 [G7]I'll always [C]find you as [G7]long as your love is [C]true
 [G7]I'll always [C]find you as [G7]long as your love is [C]true
 {end_of_verse}
+
+

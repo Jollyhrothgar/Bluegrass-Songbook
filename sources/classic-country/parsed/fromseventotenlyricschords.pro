@@ -1,6 +1,9 @@
 {meta: title From Seven To Ten}
 {meta: artist Conway Twitty}
 {meta: composer Troy Seals and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file fromseventotenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wait here for me I'll get the key
@@ -38,3 +41,7 @@ And [F]we're feeling like [C]stealing again
 Loving from [G7]seven till [C]ten
 Loving from [G7]seven till [C]ten
 {end_of_verse}
+
+
+
+

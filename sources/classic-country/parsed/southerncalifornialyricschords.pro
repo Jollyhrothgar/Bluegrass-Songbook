@@ -1,6 +1,9 @@
 {meta: title Southern California}
 {meta: artist George Jones}
 {meta: composer George Richey, Billy Sherrill, Roger Dale Bowling}
+{meta: x_source classic-country}
+{meta: x_source_file southerncalifornialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You always said someday you'd go to live
@@ -48,3 +51,7 @@ Of the girl that I still love I wonder if she ever thinks of me
 But the weather's good
 In [C]Southern Cali[G]fornia
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You'd Still Find A Way To Cheat On Me}
 {meta: artist Jean Shepard}
 {meta: composer Jack Rhodes, Billie Jo Spears, Henry Ebner}
+{meta: x_source classic-country}
+{meta: x_source_file youdstillfindawaytocheatonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I could lock you in a deep [C]darken [G]dungeon
@@ -29,3 +32,6 @@ Every dawn finds you down on your [D7]knees
 Your [G]lips say you're sorry [C]but your mind [G]knows
 You'll still find a [D7]way to cheat on [G]me
 {end_of_verse}
+
+
+

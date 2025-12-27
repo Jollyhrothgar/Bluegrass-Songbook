@@ -1,5 +1,8 @@
 {meta: title Face Of A Fighter}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file faceofafighterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]These lines in my [D7]face  caused from [G]worry
@@ -28,3 +31,6 @@
 [C]Mine is the face of [G]fighter
 [D7]But my heart has just lost the [G]fight
 {end_of_verse}
+
+
+

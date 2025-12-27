@@ -1,6 +1,9 @@
 {meta: title Third Rate Romance}
 {meta: artist Johnny Duncan}
 {meta: composer Russell Smith}
+{meta: x_source classic-country}
+{meta: x_source_file thirdrateromancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sittin' at a tiny table in a ritzy restau[D7]rant
@@ -37,3 +40,6 @@ And he said [B7]yes I have but [Em]only a time or [C]two
 Third rate romance [D7]low rent rendez[G]vous
 Third rate romance [D7]low rent rendez[G]vous
 {end_of_verse}
+
+
+

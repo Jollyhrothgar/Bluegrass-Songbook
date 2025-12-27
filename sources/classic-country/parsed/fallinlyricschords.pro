@@ -1,6 +1,9 @@
 {meta: title Fallin'}
 {meta: artist Wanda Jackson}
 {meta: composer Howard Greenfield and Neil Sedaka}
+{meta: x_source classic-country}
+{meta: x_source_file fallinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got the feelin' I'm fallin' like a star up in the blue
@@ -46,3 +49,10 @@ I [C]thought that love could never touch me yeah I was ridin' high
 But then my [F]ivory tower toppled and it tumbled from the [C]sky
 I got the feelin' I'm a [G7]fallin' love you're the reason [C]why
 {end_of_verse}
+
+
+
+
+
+
+

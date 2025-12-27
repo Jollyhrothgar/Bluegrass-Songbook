@@ -1,6 +1,9 @@
 {meta: title My Big Iron Skillet}
 {meta: artist Wanda Jackson}
 {meta: composer Bryan Creswell and Wilda Creswell}
+{meta: x_source classic-country}
+{meta: x_source_file mybigironskilletlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You’re out doing wrong again it's [C]plain for all to [Am]see
@@ -29,3 +32,6 @@
 [C]If you live through the fight we're gonna have when you [Am]get home
 [D7]You'll wake up and find yourself [G]alone
 {end_of_verse}
+
+
+

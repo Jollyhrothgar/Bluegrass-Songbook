@@ -1,6 +1,9 @@
 {meta: title I Fell Apart}
 {meta: artist Gene Watson}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file ifellapartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes I'm down and might be here [F]forever
@@ -27,3 +30,6 @@
 [F]Yes you're all that held me together
 [C]And when you turn loose [G7]I fell [C]apart
 {end_of_verse}
+
+
+

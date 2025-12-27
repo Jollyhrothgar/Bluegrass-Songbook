@@ -1,6 +1,9 @@
 {meta: title Ladies Choice}
 {meta: artist Ricky Nelson}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file ladieschoicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Went to a dance one night 
@@ -55,3 +58,10 @@ For the [C]ladies [G7]choice was [C]me [F]yeah
 The [C]ladies [G7]choice was [C]me
 [F]Mmm the [C]ladies [G7]choice was [C]me
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Good Lord Giveth (And Uncle Sam Taketh Away)}
 {meta: artist Webb Pierce}
 {meta: composer Sylvia Fisher and Michael Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file thegoodlordgivethandunclesamtakethawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the good Lord giveth and Uncle Sam taketh away
@@ -32,3 +35,6 @@ I guess I'll have to live from day to day
 [C]Go on welfare and get food [G]stamps
 [D7]Cause the good Lord giveth and Uncle Sam taketh [G]away
 {end_of_verse}
+
+
+

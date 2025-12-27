@@ -1,6 +1,9 @@
 {meta: title White Houses}
 {meta: artist Charley Pride}
 {meta: composer Johnny Cunningham}
+{meta: x_source classic-country}
+{meta: x_source_file whitehouseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Got it [C]bad and you know that ain’t good
@@ -48,3 +51,7 @@ My [F]senses are gone and [Dm]I can’t do nothing at [G7]all
 [Am]She’s got me [Em]thinking of [Am]hanging my guns on the [Dm]wall
 And the [F]funniest thought [G7]I don’t mind it at [C]all
 {end_of_verse}
+
+
+
+

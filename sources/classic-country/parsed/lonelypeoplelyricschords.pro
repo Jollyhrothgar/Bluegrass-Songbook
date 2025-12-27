@@ -1,6 +1,9 @@
 {meta: title Lonely People}
 {meta: artist Eddy Arnold}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file lonelypeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Late at night a disc jockey plays a [D7]sad song by request
@@ -25,3 +28,5 @@ Just [C]look at the lonely people in this [G]world
 What a happy [G7]world this could [C]be
 For there's too many [D7]lonely people just like [G]me
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title When You're A Man On Your Own}
 {meta: artist George Strait}
 {meta: composer Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file whenyoureamanonyourownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They don't have words to [G7]say how blue I'm [C]feelin'
@@ -26,3 +29,6 @@ It's a mighty lonesome [F]feeling [G7]when you're a man on your [C]own
 {start_of_verse: Verse 4}
 Yeah it's a mighty lonesome [F]feeling [G7]when you're a man on your [C]own
 {end_of_verse}
+
+
+

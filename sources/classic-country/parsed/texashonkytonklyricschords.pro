@@ -1,5 +1,8 @@
 {meta: title Texas Honky Tonk}
 {meta: artist Justin Trevino}
+{meta: x_source classic-country}
+{meta: x_source_file texashonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The jukebox in the corner is playing Whiskey River
@@ -51,3 +54,9 @@ But [F]it's become my [G7]home since you've been [C]gone
 {start_of_verse: Verse 6}
 Yes [F]it's become my [G7]home since you've been [C]gone
 {end_of_verse}
+
+
+
+
+
+

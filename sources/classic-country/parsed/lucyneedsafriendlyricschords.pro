@@ -1,6 +1,9 @@
 {meta: title Lucy Needs A Friend}
 {meta: artist Cal Smith}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file lucyneedsafriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She comes in here each evening 
@@ -57,3 +60,10 @@ Someone to share her [G]lonely days
 And her story has no [D7]end 
 Lucy needs a [G]friend
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title With Your Love}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file withyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]With your love  here [B7]beside me
@@ -30,3 +33,7 @@ Here to [C]guide me  how can [D7]I  go wrong
 With your [G]love (with your love) 
 With your [C]love with your [G]love
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Everybody Knows}
 {meta: artist Jimmy Dean}
 {meta: composer Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file everybodyknowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Every[G]body [D7]knows now everybody [C]know[G]s
@@ -35,3 +38,6 @@ Why my heart [G]cries
 Everybody [D7]knows how your love for him [C]grows 
 As our love [G]dies
 {end_of_verse}
+
+
+

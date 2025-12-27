@@ -1,5 +1,8 @@
 {meta: title Strong Chains of Love}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file strongchainsoflovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Your sweet loving arms are strong chains that bind [G]me
@@ -23,3 +26,6 @@ Please don't ever [Am]release me  from your [D7]strong chains of [G]love
 {start_of_verse: Verse 4}
 Please don't ever [Am]release me  from your [D7]strong chains of [G]love 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title After Texas}
 {meta: artist Darrell McCall}
 {meta: composer Bucky Jones and James Martin Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file aftertexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where do you go after [D7]Texas 
@@ -52,3 +55,9 @@ What do you do after [G]Texas
 You’re just foo[G7]ling yourself if [C]you think there’s something [Am]else
 Cause [D7]there ain’t nothing left after [G]Texas
 {end_of_verse}
+
+
+
+
+
+

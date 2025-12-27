@@ -1,6 +1,9 @@
 {meta: title Back In The Swing Of Things Again}
 {meta: artist Red Steagall}
 {meta: composer David Wills and Bob Moulds}
+{meta: x_source classic-country}
+{meta: x_source_file backintheswingofthingsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m [G7]high as a kite on life these [C]days
@@ -29,3 +32,6 @@ Hey I’m [G7]back in the swing of things [C]again
 I feel good knock on [C7]wood [F]I’m a different [D7]man
 Hey I’m [G7]back in the swing of things [C]again
 {end_of_verse}
+
+
+

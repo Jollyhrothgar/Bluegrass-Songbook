@@ -1,6 +1,9 @@
 {meta: title Nobody Knows Nobody Cares}
 {meta: artist Randy Travis}
 {meta: composer Rosetta Tharpe}
+{meta: x_source classic-country}
+{meta: x_source_file nobodyknowsnobodycareslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Nobody knows how lonely my road
@@ -50,3 +53,9 @@ Nobody knows nobody cares
 My only comfort and my only strength
 Is [D7]Jesus walking by my side all the [G]way
 {end_of_verse}
+
+
+
+
+
+

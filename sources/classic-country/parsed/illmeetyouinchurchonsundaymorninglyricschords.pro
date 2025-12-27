@@ -1,5 +1,8 @@
 {meta: title I'll Meet You In Church On Sunday Morning}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file illmeetyouinchurchonsundaymorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On Sunday when the church bells start [C]ringin'
@@ -42,3 +45,8 @@ And we'll [G]all kneel down and [D7]pray
 We'll [G]pray to our Lord up in [C]heaven
 To [G]guide us safe [D7]home on our [G]way
 {end_of_verse}
+
+
+
+
+

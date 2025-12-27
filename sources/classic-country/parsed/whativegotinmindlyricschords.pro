@@ -1,6 +1,9 @@
 {meta: title What I've Got In Mind}
 {meta: artist Billie Jo Spears}
 {meta: composer Kenny O'dell}
+{meta: x_source classic-country}
+{meta: x_source_file whativegotinmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a million things that [F]we could do this [G7]evenin'
@@ -38,3 +41,7 @@ Is makin' [C]love to you
 Oh to [G7]tell the truth what I've got in mind 
 Is makin' [C]love to you
 {end_of_verse}
+
+
+
+

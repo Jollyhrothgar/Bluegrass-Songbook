@@ -1,6 +1,9 @@
 {meta: title Cold Brown Bottle}
 {meta: artist Tony Booth}
 {meta: composer Joe Gough}
+{meta: x_source classic-country}
+{meta: x_source_file coldbrownbottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You ease my mind so [C]memories won't [D7]bring me down [G]again
@@ -33,3 +36,7 @@ Oh brown [A7]bottle do your [C]magic one more [G]time
 {start_of_verse: Verse 5}
 Oh brown [A7]bottle do your [C]magic one more [G]time
 {end_of_verse}
+
+
+
+

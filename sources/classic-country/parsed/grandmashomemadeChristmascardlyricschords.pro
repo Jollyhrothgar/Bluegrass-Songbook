@@ -1,5 +1,8 @@
 {meta: title Grandma's Homemade Christmas Card}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file grandmashomemadeChristmascardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The family once received a homemade Christmas [F]card
@@ -21,3 +24,5 @@
 [Am]It's the only Christmas card that [Dm]we keep from year to [C]year
 [G7]Yeah [C]grandma's homemade Christmas card is [F]always [C][G7][C]here
 {end_of_verse}
+
+

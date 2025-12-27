@@ -1,6 +1,9 @@
 {meta: title To Make Love Sweeter For You}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Glenn Sutton and Jerry Kennedy}
+{meta: x_source classic-country}
+{meta: x_source_file tomakelovesweeterforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'd like to send an orchid at the start of every [D7]day
@@ -26,3 +29,6 @@ I'll do my best in [C]every way to [G7]make love sweeter for [C]you
 {start_of_verse: Verse 4}
 [D7]Oh I'll do my best in [C]every way to [G7]make love sweeter for [C]you
 {end_of_verse}
+
+
+

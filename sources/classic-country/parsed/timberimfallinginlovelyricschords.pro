@@ -1,6 +1,9 @@
 {meta: title Timber I'm Falling In Love}
 {meta: artist Patty Loveless}
 {meta: composer Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file timberimfallinginlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The right time [F]the right place 
@@ -35,3 +38,6 @@
 [C]Timber [F]I'm [G7]falling in [C]love[F]  [C]
 Timber [F]I'm [G7]falling in [C]love[F]  [C]
 {end_of_verse}
+
+
+

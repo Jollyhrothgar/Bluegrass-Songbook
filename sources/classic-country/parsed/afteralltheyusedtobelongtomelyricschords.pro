@@ -1,5 +1,8 @@
 {meta: title After All They Used To Belong To Me}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file afteralltheyusedtobelongtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess I'll get a cab and go by [C]my house [G]today
@@ -22,3 +25,5 @@ This other man holds my life [G7]and my son calls [C]him daddy [G]tonight
 But how can I complain cause after all they used to [D7]all belong to [G]me
 How can I complain cause after all they used to [D7]all belong to [G]me
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title My Woman My Woman My Wife}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file mywomanmywomanmywifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hands that are strong but wrinkled         F                    G7 Doing work that never [Em]gets done
@@ -36,3 +39,7 @@ If I've [F]earned any here in this [G7]life
 Cause [C]God  I believe she [F]deserves it    
 My [C]woman   my [G7]woman  my [C]wife
 {end_of_verse}
+
+
+
+

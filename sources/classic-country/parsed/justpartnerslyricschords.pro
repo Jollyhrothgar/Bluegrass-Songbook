@@ -1,6 +1,9 @@
 {meta: title Just Partners}
 {meta: artist Ernest Tubb}
 {meta: composer Rex Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file justpartnerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why not be just partners for a while
@@ -50,3 +53,11 @@ We'll be the best of friends
 [C]And partners to the [A7]end
 [D7]I couldn't bear [G7]another broken [C]heart
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Cross The River}
 {meta: artist Garth Brooks}
 {meta: composer Dan Peek}
+{meta: x_source classic-country}
+{meta: x_source_file dontcrosstheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]There's a little girl out [D7]lying on her own
@@ -55,3 +58,10 @@ Don't try denying living [G]on the other side
 Don't try denying living [G]on the other side
 All your [D7]life    you were [C]on your own
 {end_of_verse}
+
+
+
+
+
+
+

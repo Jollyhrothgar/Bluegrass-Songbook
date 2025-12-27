@@ -1,6 +1,9 @@
 {meta: title Listen They're Playing My Song}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Charlie Williams and Glen Garrison}
+{meta: x_source classic-country}
+{meta: x_source_file listentheyreplayingmysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down the street a [F]baby just [C]cried when he woke up all [G7]alone
@@ -18,3 +21,4 @@
 [C]Thunder just warned oh [F]it's coming a [C]storm listen they're [G7]playing my [C]song
 [G7]Listen they're playing my [C]song
 {end_of_verse}
+

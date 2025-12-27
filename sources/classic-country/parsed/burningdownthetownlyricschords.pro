@@ -1,6 +1,9 @@
 {meta: title Burning Down The Town}
 {meta: artist Doug Stone}
 {meta: composer Wayne Perry and Joe Diffie}
+{meta: x_source classic-country}
+{meta: x_source_file burningdownthetownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hope the clouds are gathering
@@ -62,3 +65,11 @@ Is out [D7]burning down the [G]town
 I'm [C]on my knees [G]begging please
 To [D7]send some rain down[G]town
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title For Tears To Come}
 {meta: artist Moe Bandy}
 {meta: composer Steve Collom}
+{meta: x_source classic-country}
+{meta: x_source_file fortearstocomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Step by [C]step you been [G]leaving
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]Yes I'll miss you for tears to [G]come
 {end_of_verse}
+
+
+
+

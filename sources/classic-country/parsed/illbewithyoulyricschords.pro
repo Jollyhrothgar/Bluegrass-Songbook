@@ -1,6 +1,9 @@
 {meta: title I'll Be With You}
 {meta: artist Doyle Lawson}
 {meta: composer Jeff Hooker}
+{meta: x_source classic-country}
+{meta: x_source_file illbewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Far [C]across these high mountains where the [Am]wild geese do fly
@@ -31,3 +34,7 @@ I'll smile [F]again on you my [C]friend
 I'll be [F]with you when the [C]sun shall rise
 I'll smile [F]again on you my [C]friend
 {end_of_verse}
+
+
+
+

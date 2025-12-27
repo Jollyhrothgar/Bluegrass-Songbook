@@ -1,6 +1,9 @@
 {meta: title Thank You Darlin'}
 {meta: artist Ricky Nelson}
 {meta: composer Jackie DeShannon and Sharon Sheeley}
+{meta: x_source classic-country}
+{meta: x_source_file thankyoudarlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Thank you thank you [Am]darling
@@ -42,3 +45,8 @@
 [C]Thank you thank you [Am]darlin'
 [C]Thank you thank you [Am]darlin'
 {end_of_verse}
+
+
+
+
+

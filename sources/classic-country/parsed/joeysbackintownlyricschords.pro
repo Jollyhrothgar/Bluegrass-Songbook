@@ -1,6 +1,9 @@
 {meta: title Joey's Back In Town}
 {meta: artist Billy Walker}
 {meta: composer Bobby Bare and Lance Guynes}
+{meta: x_source classic-country}
+{meta: x_source_file joeysbackintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I woke up this [Am]morning [C]everything seemed [Am]wrong
@@ -30,3 +33,6 @@
 [C]A-hoping she might [F]love me [C]knowing she would leave [F]me
 [C]Anytime that [F]Joey's back in [C]town
 {end_of_verse}
+
+
+

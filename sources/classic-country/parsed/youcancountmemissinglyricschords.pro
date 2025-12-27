@@ -1,6 +1,9 @@
 {meta: title You Can Count Me Missing}
 {meta: artist Mickey Gilley}
 {meta: composer John W. Gostick Jr. and Richard E. Westmoreland}
+{meta: x_source classic-country}
+{meta: x_source_file youcancountmemissinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess from now on you can count me [C]missing
@@ -35,3 +38,7 @@ Cause [G]you can count me [D7]missing from now [G]on
 {start_of_verse: Verse 5}
 Honey you can count me [D7]missing from now [G]on
 {end_of_verse}
+
+
+
+

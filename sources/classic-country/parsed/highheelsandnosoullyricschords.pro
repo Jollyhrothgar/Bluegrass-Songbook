@@ -1,5 +1,8 @@
 {meta: title High Heels And No Soul}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file highheelsandnosoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I admit that those clothes you wear are might [C]fancy
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 5}
 [D7]Yes this game of love you’re playing is getting mighty [G]old
 {end_of_verse}
+
+
+
+

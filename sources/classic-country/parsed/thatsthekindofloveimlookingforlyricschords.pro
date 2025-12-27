@@ -1,6 +1,9 @@
 {meta: title That's The Kind Of Love I'm Looking For}
 {meta: artist Carl Smith}
 {meta: composer Johnnie Masters}
+{meta: x_source classic-country}
+{meta: x_source_file thatsthekindofloveimlookingforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I wanna gal not the fickle kind to hold me [C]like a clinging [G]vine
@@ -36,3 +39,7 @@
 [G]Just kiss me morning noon and night with lips [C]that kiss like [G]dynamite
 [A7]Now that's the kind of [D7]love I'm looking [G]for
 {end_of_verse}
+
+
+
+

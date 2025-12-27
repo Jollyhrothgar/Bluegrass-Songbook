@@ -1,6 +1,9 @@
 {meta: title I Don't Wanna Play House}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file idontwannaplayhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To-day I sat [G7]a-lone at the [C]window
@@ -33,3 +36,6 @@ And if that's [C]the way it's [G7]done
 'Cause when she played [G7]house
 My [F]daddy [G7]said [C]good-bye
 {end_of_verse}
+
+
+

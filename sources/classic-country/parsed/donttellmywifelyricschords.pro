@@ -1,6 +1,9 @@
 {meta: title Don't Tell My Wife}
 {meta: artist Johnny Paycheck}
 {meta: composer Dick Overby}
+{meta: x_source classic-country}
+{meta: x_source_file donttellmywifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don’t tell my wife who wrote this song cause she might leave [G7]me
@@ -33,3 +36,7 @@ And [G7]I’m not sure of her even though she’s back [C]again
 {start_of_verse: Verse 5}
 No [G7]I’m not sure of her even though she’s back [C]again
 {end_of_verse}
+
+
+
+

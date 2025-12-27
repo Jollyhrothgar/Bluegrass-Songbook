@@ -1,6 +1,9 @@
 {meta: title I Like To Hear ‘em Preaching}
 {meta: artist Jimmy Martin}
 {meta: composer Jimmy Martin and Paul Williams}
+{meta: x_source classic-country}
+{meta: x_source_file iliketohearempreachinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I like to hear ‘em preaching [F]I like hear ‘em [C]pray
@@ -50,3 +53,9 @@ I like to hear ‘em talk about [D7]the good ol’ gospel [G7]way
 They [C]read it from the bible and [F]they all began to [C]shout
 And I’m convinced that’s one thing [G7]that we can’t live [C]without
 {end_of_verse}
+
+
+
+
+
+

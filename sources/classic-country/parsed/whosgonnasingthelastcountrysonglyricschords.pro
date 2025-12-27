@@ -1,6 +1,9 @@
 {meta: title Who's Gonna Sing The Last Country Song}
 {meta: artist Billy Parker}
 {meta: composer William Calhoun Brock Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file whosgonnasingthelastcountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the final dive and [F]smokey bar goes [C]home
@@ -33,3 +36,7 @@ When the [C]Swinging Doors [F]swingers are all [C]gone
 {start_of_verse: Verse 4}
 [F]Who’s gonna sing the last country [C]song
 {end_of_verse}
+
+
+
+

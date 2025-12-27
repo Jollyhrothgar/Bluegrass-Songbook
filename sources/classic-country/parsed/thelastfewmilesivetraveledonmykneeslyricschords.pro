@@ -1,5 +1,8 @@
 {meta: title The Last Few Miles I've Traveled On My Knees chords}
 {meta: artist Jimmy Davis}
+{meta: x_source classic-country}
+{meta: x_source_file thelastfewmilesivetraveledonmykneeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I once was young I could run the [F]fields all day [C]long
@@ -35,3 +38,7 @@ More and more I'm spending time there it [G7]seems
 [C]Summer's come and gone [F]winter's coming [C]on
 The Last few miles I've [G7]traveled on my [C]knees
 {end_of_verse}
+
+
+
+

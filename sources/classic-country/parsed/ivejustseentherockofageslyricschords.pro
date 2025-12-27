@@ -1,6 +1,9 @@
 {meta: title I've Just Seen The Rock Of Ages}
 {meta: artist Larry Sparks Brothers}
 {meta: composer John Brenton Preston}
+{meta: x_source classic-country}
+{meta: x_source_file ivejustseentherockofageslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was standing by the [A]bed[C]side
@@ -36,3 +39,7 @@ Jacob's [G7]ladder hanging [C]down
 I've just crossed the river of [A]Jor[C]dan
 Now my [G7]son I'm homeward [C]bound
 {end_of_verse}
+
+
+
+

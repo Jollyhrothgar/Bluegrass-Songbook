@@ -1,6 +1,9 @@
 {meta: title The Town That Broke My Heart}
 {meta: artist Bobby Bare}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file thetownthatbrokemyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mister I want a room at the top of your [C]hotel
@@ -36,3 +39,7 @@ I [D7]lost it all in the town that broke my [G]heart
 I want to ride that elevator to the [C]top
 I want to [D7]say goodbye to the town that broke my [G]heart
 {end_of_verse}
+
+
+
+

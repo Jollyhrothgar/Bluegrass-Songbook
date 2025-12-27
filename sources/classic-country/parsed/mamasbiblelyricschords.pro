@@ -1,6 +1,9 @@
 {meta: title Mama's Bible}
 {meta: artist Stonewall Jackson}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file mamasbiblelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mama's Bible pages [F]trimmed with [C]gold
@@ -30,3 +33,7 @@ And I can rest with ease now for [D7]I know they're not [G7]alone
 [C]Mama's Bible pages [F]trimmed with [C]gold
 Mama's Bible [F]guiding our [C]soul
 {end_of_verse}
+
+
+
+

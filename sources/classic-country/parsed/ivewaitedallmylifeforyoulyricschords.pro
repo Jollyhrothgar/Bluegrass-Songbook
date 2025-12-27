@@ -1,6 +1,9 @@
 {meta: title I've Waited All My Life For You}
 {meta: artist Reba McEntire}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file ivewaitedallmylifeforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Don't you [G]know that you're the one 
@@ -34,3 +37,6 @@ Cause I've [Am]waited [D7]all my life for [G]you [G7]
 [G]Being in love with someone [C]new
 Cause I've [Am]waited [D7]all my life for [G]you
 {end_of_verse}
+
+
+

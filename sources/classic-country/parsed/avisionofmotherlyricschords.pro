@@ -1,6 +1,9 @@
 {meta: title A Vision Of Mother}
 {meta: artist Ricky Skaggs}
 {meta: composer Ralph Stanley and Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file avisionofmotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oft' my thoughts drift back to childhood
@@ -43,3 +46,8 @@ Where my [F]loved one wait for [C]me
 I saw mother [F]in a [C]vision
 Kneeling [G7]there to pray for [C]me 
 {end_of_verse}
+
+
+
+
+

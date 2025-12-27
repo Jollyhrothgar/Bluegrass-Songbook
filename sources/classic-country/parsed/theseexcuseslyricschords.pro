@@ -1,5 +1,8 @@
 {meta: title These Excuses}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file theseexcuseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve been round good ones and bad ones 
@@ -48,3 +51,8 @@ Always [G]there always just hanging [D7]around
 Making [G]sure they can be easily [C]found
 It’s just [G]easy for [D7]feeling low [G]down
 {end_of_verse}
+
+
+
+
+

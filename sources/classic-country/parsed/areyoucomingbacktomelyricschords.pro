@@ -1,6 +1,9 @@
 {meta: title Are You Coming Back To Me}
 {meta: artist Mac Wiseman}
 {meta: composer Mac Wiseman}
+{meta: x_source classic-country}
+{meta: x_source_file areyoucomingbacktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My days and nights are lonely 
@@ -33,3 +36,6 @@ Deep down inside there's still a longing tear for [D7]you
 Those [G]unkind words were spoken dear we will just let them [C]be
 Please [D7]tell me darling are you coming back to [G]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The S.S. Lurline}
 {meta: artist Johnny Horton}
 {meta: composer Joe Nixon and Tommy Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file thesslurlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The rattle of the chain as the anchor rolls 
@@ -37,3 +40,6 @@ Spring of love has reached December
 [F]Darling I'll always [C]remember 
 Our [G7]honeymoon on the S.S. Lur[C]line
 {end_of_verse}
+
+
+

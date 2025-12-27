@@ -1,6 +1,9 @@
 {meta: title Whiskey Trip}
 {meta: artist Johnny Rodriguez}
 {meta: composer Donn Tankersley and Wayne Carson}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeytriplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can almost see me [F]now in [C]Acapulco 
@@ -36,3 +39,7 @@ I’m just like a [Am]sai[G7]ling [F]ship waitin’ for the winds to [C]blow
 Whiskey you’re a [F]friend of mine you can blow [C]away my mind
 To some other [Am]place [G7]in [F]time taking me a whiskey [C]trip
 {end_of_verse}
+
+
+
+

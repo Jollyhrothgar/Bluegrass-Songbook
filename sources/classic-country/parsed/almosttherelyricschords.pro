@@ -1,6 +1,9 @@
 {meta: title Almost There}
 {meta: artist Brenda Lee}
 {meta: composer Gloria Shayne and Jerry Keller}
+{meta: x_source classic-country}
+{meta: x_source_file almosttherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Almost there we're almost [G7]there
@@ -31,3 +34,6 @@
 [C]We're almost [Dm]there [C]where we will [Dm]share
 [C]A warm caress [Am]tenderness a [Dm]dream come [G7]true for me for [Gm]you
 {end_of_verse}
+
+
+

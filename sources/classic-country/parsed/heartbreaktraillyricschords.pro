@@ -1,6 +1,9 @@
 {meta: title Heartbreak Trail}
 {meta: artist Hank Snow}
 {meta: composer Vaughn Horton and Denver Darling}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreaktraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A cowboy [D7]returns to the scene [G]of his [D7]childhood
@@ -29,3 +32,6 @@
 [D7]Yes sir heaven [G]bless [C]her
 [G]Keep her [D7]caress her as we [G]ride the [D7]heartbreak [G][C][G]trail
 {end_of_verse}
+
+
+

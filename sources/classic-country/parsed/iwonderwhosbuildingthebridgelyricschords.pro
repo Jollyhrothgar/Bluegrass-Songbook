@@ -1,6 +1,9 @@
 {meta: title I Wonder Who's Building The Bridge}
 {meta: artist Lefty Frizzell}
 {meta: composer Roger Burch, A.L. Owens, Lou Rochelle}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwhosbuildingthebridgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I first met her she [G7]cried all of the time
@@ -30,3 +33,6 @@ That's getting her over [C]me
 I [G7]wonder who's building the bridge
 That's getting her over [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Me And My Neighbor}
 {meta: artist Conway Twitty}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file meandmyneighborlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was on my way to church one Sunday
@@ -88,3 +91,19 @@ Give me that old [D7]time [G]religion
 Give me that old time [C]religion 
 It's [G]good [D7]enough for [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

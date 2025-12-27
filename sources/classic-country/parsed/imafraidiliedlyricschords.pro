@@ -1,6 +1,9 @@
 {meta: title I'm Afraid I Lied}
 {meta: artist Jack Greene}
 {meta: composer Hank Cochran and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file imafraidiliedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know I told you I could [F]take it 
@@ -22,3 +25,5 @@ But [F]we just had to try it for both [G7]sides
 [C]We said anytime we could [F]stop it 
 [C]Well maybe you can but [G7]I'm afraid I [C]lied   [F]I [C]lied
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I Bowed on My Knees and Cried Holy}
 {meta: artist Ricky Van Shelton}
 {meta: composer Nettie Dudley Washington and E.M. Dudley Cantwell}
+{meta: x_source classic-country}
+{meta: x_source_file ibowedonmykneesandcriedholylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I dreamed I [G]went to that [D7]city called [G]Glory 
@@ -47,3 +50,9 @@ I [C]clapped my hands and sang [G]Glory (Glory)
 {start_of_verse: Verse 6}
 [D7]Glory to the Son of [G]God
 {end_of_verse}
+
+
+
+
+
+

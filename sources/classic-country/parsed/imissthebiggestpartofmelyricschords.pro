@@ -1,5 +1,8 @@
 {meta: title I Miss The Biggest Part Of Me}
 {meta: artist Isla Grant}
+{meta: x_source classic-country}
+{meta: x_source_file imissthebiggestpartofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've gone so far away and left me all [F]alone
@@ -28,3 +31,6 @@ I know you [G7]hurt the way I do [D7]each time you have to [G7]go
 And the [C]love that burns within my heart [F]forever more will [D7]stay
 I miss the [C]biggest part of me [G7]each time you go [C]away
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title All I Can Hold To}
 {meta: artist Hank Snow}
 {meta: composer Ruby Moody and Marvin Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file allicanholdtolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Another crying night will soon be over [D7]now
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]Then I would feel your burning limbs on [G]mine
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Light Up The Candles}
 {meta: artist The Bellamy Brothers}
 {meta: composer Ralph Siegel}
+{meta: x_source classic-country}
+{meta: x_source_file lightupthecandleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Light up the [G7]candles to [Am]make the whole world [C]see
@@ -55,3 +58,10 @@ It's a [G7]time to [E7]trust in smilin' [Am]eyes [C]
 Just light up a [D7]candle
 [F]Just light up all the [G7]candles in the [C]dark
 {end_of_verse}
+
+
+
+
+
+
+

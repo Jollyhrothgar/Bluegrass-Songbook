@@ -1,5 +1,8 @@
 {meta: title Men With Broken Hearts}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file menwithbrokenheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You will meet many just like [D7]me upon [G]life’s busy street
@@ -35,3 +38,7 @@ Life sometimes can be so [D7]cruel that a [G]heart will pray for death
 So help your brother along the road [C]no matter where he starts
 For the God that made [G]you made them [D7]too [G]these men [C]with broken [G]hearts 
 {end_of_verse}
+
+
+
+

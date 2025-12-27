@@ -1,5 +1,8 @@
 {meta: title Tolivar}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file tolivarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love has wings and flies through [F]windows
@@ -35,3 +38,7 @@ We would [Am]shout to every [Em]wind
 Really [Am]knowing it was [C]going
 Places [D7]we'd not seen nor [G7]been
 {end_of_verse}
+
+
+
+

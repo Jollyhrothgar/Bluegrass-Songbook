@@ -1,5 +1,8 @@
 {meta: title Too Much Water}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've been thinking about you all night long
@@ -62,3 +65,13 @@ Now's the time to let you [D7]know
 {start_of_verse: Verse 5}
 Cause there's been too many nights I've waited at [G]your door
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

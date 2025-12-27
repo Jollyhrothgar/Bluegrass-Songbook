@@ -1,6 +1,9 @@
 {meta: title House Divided}
 {meta: artist Connie Smith}
 {meta: composer Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file housedividedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We had planned our [C7]house of love [F]together
@@ -22,3 +25,5 @@ Till at [D7]last we stood there lookin' at the [G7]wall
 Every[C]body says [C7]that we belong [F]together
 Oh why must [C]two un[F]happy [C]people watch a [G7]house divided [C]fall [F]   [C]
 {end_of_verse}
+
+

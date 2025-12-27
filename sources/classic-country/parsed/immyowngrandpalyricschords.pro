@@ -1,6 +1,9 @@
 {meta: title I'm My Own Grandpa}
 {meta: artist Willie Nelson}
 {meta: composer Moe Jaffe and Dwight Latham}
+{meta: x_source classic-country}
+{meta: x_source_file immyowngrandpalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now many many years ago [D7]when I was twenty three
@@ -60,3 +63,11 @@ It sounds [C]funny I know but it [G]really is [Em]so
 It sounds [C]funny I know but it [G]really is [Em]so
 [Am]I'm my [D7]own grand[G]pa 
 {end_of_verse}
+
+
+
+
+
+
+
+

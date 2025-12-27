@@ -1,6 +1,9 @@
 {meta: title Face to Face}
 {meta: artist Slim Whitman}
 {meta: music Grant C. Tullar}
+{meta: x_source classic-country}
+{meta: x_source_file facetofacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Face to face with Christ my [D7][Am]Sav-ior
@@ -48,3 +51,9 @@ I [G]shall see Him [D7]by and [G]by
 Face to face in all His [Am]glory
 I [G]shall see Him [D7]by and [G]by
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Must You Throw Dirt In My Face}
 {meta: artist Waylon Jennings}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file mustyouthrowdirtinmyfacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What is it that brings you to this part of town 
@@ -48,3 +51,9 @@ Must you throw [D7]dirt in my [G]face
 [C]You've already put big old tears in my [G]eyes 
 Must you throw [D7]dirt in my [G]face
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hot Burning Flames}
 {meta: artist George Strait}
 {meta: composer Hank Cochran, Wayne Kemp, Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file hotburningflameslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She left me almost burned out [C]I couldn't feel a [G]thing
@@ -40,3 +43,8 @@ You turn cold gray ashes into [D7]hot burning [G]flames
 {start_of_verse: Verse 4}
 You turn cold gray ashes into [D7]hot burning [G]flames
 {end_of_verse}
+
+
+
+
+

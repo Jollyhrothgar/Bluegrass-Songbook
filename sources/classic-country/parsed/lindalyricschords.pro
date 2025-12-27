@@ -1,6 +1,9 @@
 {meta: title Linda}
 {meta: artist Jim Reeves}
 {meta: composer Jack Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file lindalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](Linda Linda wish you were mine)
@@ -46,3 +49,9 @@ I say to myself hello [G7]Linda
 If only she'd smile I'd stop her a while
 And then I would get to know [C]Linda
 {end_of_verse}
+
+
+
+
+
+

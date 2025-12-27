@@ -1,6 +1,9 @@
 {meta: title Before It Begins}
 {meta: artist Mickey Gilley}
 {meta: composer Jerry Chesnut, David Wilkins, Tommy Myracle}
+{meta: x_source classic-country}
+{meta: x_source_file beforeitbeginslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You walked right in big as sin 
@@ -48,3 +51,9 @@ Let’s stop be[G]fore it [C]begins [G]
 Oh [C]Lord how it [D7]hurts to [G]leave [C]you
 So let’s stop be[G]fore it [C]begins[G]
 {end_of_verse}
+
+
+
+
+
+

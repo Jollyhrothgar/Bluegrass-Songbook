@@ -1,6 +1,9 @@
 {meta: title Cincinnati Jail}
 {meta: artist Bobby Bare}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file cincinnatijaillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's [Am]cold as a [G7]well in [C]Cincinnati [D7]jail
@@ -42,3 +45,9 @@
 [Am]But it's cold [G]as a well [C]in Cincinnati [D7]jail
 [G7]I ain't got [C]nobody [F]I ain't got [C][G7]nobody
 {end_of_verse}
+
+
+
+
+
+

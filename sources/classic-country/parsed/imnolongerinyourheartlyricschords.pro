@@ -1,6 +1,9 @@
 {meta: title I'm No Longer In Your Heart}
 {meta: artist Norma Jean}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file imnolongerinyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How can two [C]people be in love so com[G]pletely [C]   [G]
@@ -34,3 +37,7 @@ That you wrote before we [A7]made our sacred [D7]vows
 And the [G]way you said you [C]felt the night you [G]wrote it
 Is [C]far from [G]being the [D7]way you love me [G]now
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Run}
 {meta: artist George Strait}
 {meta: composer Tony Lane and Anthony Smith}
+{meta: x_source classic-country}
+{meta: x_source_file runlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]If there's a [C]plane or a [D7]bus leavin' [Em]Dallas [D7]
@@ -45,3 +48,7 @@ So baby [C]run [Am]   [D7]
 {start_of_verse: Verse 4}
 Baby [C]run  baby [Am]run [C]   
 {end_of_verse}
+
+
+
+

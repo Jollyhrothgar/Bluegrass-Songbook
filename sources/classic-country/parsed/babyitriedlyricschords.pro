@@ -1,6 +1,9 @@
 {meta: title Baby I Tried}
 {meta: artist Jim Ed Brown}
 {meta: composer Skip Gibbs}
+{meta: x_source classic-country}
+{meta: x_source_file babyitriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You gave me just enough of [C7]you  to [F]make me want you [C]more
@@ -27,3 +30,6 @@
 [C7]I’ve been lonely for [F]so long now I’m getting used to having no [D7]pride
 [C]Give me credit [G7]for one thing   [F]baby [G7]I [C]tried
 {end_of_verse}
+
+
+

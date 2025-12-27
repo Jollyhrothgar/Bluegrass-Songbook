@@ -1,6 +1,9 @@
 {meta: title Gonna Come Back As A Country Song}
 {meta: artist Alan Jackson}
 {meta: composer Terry McBride and Chris Stapleton}
+{meta: x_source classic-country}
+{meta: x_source_file gonnacomebackasacountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let me just say for the sake of conversation [D7]
@@ -48,3 +51,9 @@ I'm [G]gonna come back [D7]as a country [G]song
 I'm [D7]hopin' when the good Lord calls me home
 I'm [G]gonna come back [D7]as a country [G]song
 {end_of_verse}
+
+
+
+
+
+

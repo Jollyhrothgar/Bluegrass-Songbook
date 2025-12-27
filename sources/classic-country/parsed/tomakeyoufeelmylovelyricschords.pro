@@ -1,6 +1,9 @@
 {meta: title To Make You Feel My Love}
 {meta: artist Garth Brooks}
 {meta: composer Bob Dylan}
+{meta: x_source classic-country}
+{meta: x_source_file tomakeyoufeelmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the rain is [G7]blowing in your face
@@ -43,3 +46,8 @@ The [F]storms are raging on the [C]rollin' sea
 [Fm]Make you happy make your [C]dreams come [Am]true
 [Dm]To make you [G7]feel my [C]love
 {end_of_verse}
+
+
+
+
+

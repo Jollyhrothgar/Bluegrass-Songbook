@@ -1,5 +1,8 @@
 {meta: title Deep River}
 {meta: artist Bill Emerson and Cliff Waldron}
+{meta: x_source classic-country}
+{meta: x_source_file deepriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re running [A#7]wild deep [C]river
@@ -32,3 +35,7 @@ I’m gonna [C]dive to your [A#7]bottom deep [C]river
 {start_of_verse: Verse 5}
 [F]No I ain’t [G7]never comin’ [C]back
 {end_of_verse}
+
+
+
+

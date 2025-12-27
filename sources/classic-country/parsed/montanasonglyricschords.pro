@@ -1,5 +1,8 @@
 {meta: title Montana Song}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file montanasonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm going to Mon[F]tana to spend the [C]winter
@@ -46,3 +49,8 @@ A [C]sweet simple girl who'd [Am]like to share
 This [F]love I've held in[G7]side me for so [F]long 
 [Dm]And help me sing my Montana [C]song ooh
 {end_of_verse}
+
+
+
+
+

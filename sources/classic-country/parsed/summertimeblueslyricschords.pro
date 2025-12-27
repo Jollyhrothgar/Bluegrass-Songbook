@@ -1,6 +1,9 @@
 {meta: title Summertime Blues}
 {meta: artist Buck Owens}
 {meta: composer Eddie Cochran and Jerry Neal Capehart}
+{meta: x_source classic-country}
+{meta: x_source_file summertimeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well there ain't no [Em]cure for the summertime [C]blues
@@ -51,3 +54,11 @@
 {start_of_verse: Verse 9}
 {comment: F G7 C}
 {end_of_verse}
+
+
+
+
+
+
+
+

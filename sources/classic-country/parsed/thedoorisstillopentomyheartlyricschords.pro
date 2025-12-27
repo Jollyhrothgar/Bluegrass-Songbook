@@ -1,6 +1,9 @@
 {meta: title The Door Is Still Open To My Heart}
 {meta: artist Dean Martin}
 {meta: composer Chuck Willis}
+{meta: x_source classic-country}
+{meta: x_source_file thedoorisstillopentomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Fm]And the [C]door is still [G7]open to my [C]h---[F]e—[C]a—[G7]rt
@@ -30,3 +33,7 @@ And I [Am]won't be satis[F]fied [Am]    [Dm]until you're here [G7]by my side
 And the [C]door is still [G7]open to my [C]h-e-[F]a-[C]rt
 [F]And the [C]door is still [G7]open to my [C]h-e-[F]a-[C]rt
 {end_of_verse}
+
+
+
+

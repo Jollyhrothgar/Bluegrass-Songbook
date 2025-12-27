@@ -1,6 +1,9 @@
 {meta: title Out Of My Bones}
 {meta: artist Randy Travis}
 {meta: composer Gary Burr, Robin Lerner, Sharon Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file outofmyboneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm in need of a [F]remedy 
@@ -51,3 +54,9 @@ And you're out of my [C]bones
 {start_of_verse: Verse 6}
 [G7]You're out of my [C]bones
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Peace Of Mind}
 {meta: artist Red Sovine}
 {meta: composer Art Bishop}
+{meta: x_source classic-country}
+{meta: x_source_file peaceofmindlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7](Peace of mind [G]will I find [D7]peace of mind [A7]will I [D7]find)
@@ -27,3 +30,6 @@
 [C]He stands so [D7]near but [G]oh so [C]far
 [G]From finding [D7]peace of [G]mind
 {end_of_verse}
+
+
+

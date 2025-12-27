@@ -1,6 +1,9 @@
 {meta: title Woman Don't Try To Sing My Song}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file womandonttrytosingmysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your eyes ain't a-[C]glowing now 
@@ -60,3 +63,10 @@ You don't [G]feel it in your [D7]bones
 Woman don't [C]try to sing my [G]song[F]  [Em]
 Don't [G]try to [D7]sing my [G]song
 {end_of_verse}
+
+
+
+
+
+
+

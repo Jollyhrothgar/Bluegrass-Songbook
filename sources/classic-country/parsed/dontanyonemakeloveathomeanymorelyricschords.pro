@@ -1,6 +1,9 @@
 {meta: title Don’t Anyone Make Love At Home Anymore}
 {meta: artist Moe Bandy}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file dontanyonemakeloveathomeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Of all the love affairs to die I [F]wagered yours and [C]mine
@@ -29,3 +32,6 @@
 [C]Don't anyone make love at home [F]anymore
 [C]Has everyone [G7]become a fool like [C]me
 {end_of_verse}
+
+
+

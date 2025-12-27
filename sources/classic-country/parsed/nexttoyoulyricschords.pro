@@ -1,6 +1,9 @@
 {meta: title Next To You}
 {meta: artist Tammy Wynette}
 {meta: composer Alan Estes and Chris Hill}
+{meta: x_source classic-country}
+{meta: x_source_file nexttoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Next to [G]you  was the [D7]only place I thought I'd ever [G]be
@@ -34,3 +37,7 @@ I [A#7]know he'll always [D]be the only [G]one for me  [D7]next to [G]you [D]   
 {start_of_verse: Verse 5}
 [D7]Next to [G]you
 {end_of_verse}
+
+
+
+

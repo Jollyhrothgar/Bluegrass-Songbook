@@ -1,6 +1,9 @@
 {meta: title Till Tomorrow}
 {meta: artist Jimmy Dean}
 {meta: composer Sheldon Harnick and Jerry Bock}
+{meta: x_source classic-country}
+{meta: x_source_file tilltomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Twilight descends [E7]everything [A7]ends
@@ -31,3 +34,7 @@
 {start_of_verse: Verse 5}
 [D7]Till [G7]tomorrow [C]comes
 {end_of_verse}
+
+
+
+

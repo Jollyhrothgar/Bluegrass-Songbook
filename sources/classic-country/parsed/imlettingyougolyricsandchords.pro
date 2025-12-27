@@ -1,6 +1,9 @@
 {meta: title I'm Letting You Go}
 {meta: artist Eddy Arnold}
 {meta: composer Billy Grammer}
+{meta: x_source classic-country}
+{meta: x_source_file imlettingyougolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm trying my [G7]best to [C]convince my[G7]self
@@ -29,3 +32,6 @@ I could [C]make you [A7]forget  and never [Dm]cry
 Your [F]heart he still [B7]holds I've [C]heartaches un[A7]told 
 I'm [D7]letting you [G7]go  good[C]bye
 {end_of_verse}
+
+
+

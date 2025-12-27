@@ -1,6 +1,9 @@
 {meta: title After The Laughter Comes The Tears}
 {meta: artist Eddy Arnold}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file afterthelaughtercomesthetearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You know [G7]that [C]after the laughter comes the [D7]tears
@@ -24,3 +27,5 @@ And my feelings never [G7]seem to be too [E7]clear
 But it's [D7]usually just for a little while
 Cause [Dm]after the [G7]laughter comes the [C]tears
 {end_of_verse}
+
+

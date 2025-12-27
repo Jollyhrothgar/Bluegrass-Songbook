@@ -1,6 +1,9 @@
 {meta: title It Was Always You}
 {meta: artist Tanya Tucker}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file itwasalwaysyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been loved [C]before there's no use [G]pretending[C]
@@ -42,3 +45,7 @@ Not [C]knowing where the road would end
 [C]Ooh it was always [G]you  [C]oh it was always [G]you [C]
 It was always [G]you  [C]yeah it was always [G]you
 {end_of_verse}
+
+
+
+

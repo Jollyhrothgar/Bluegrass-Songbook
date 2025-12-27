@@ -1,6 +1,9 @@
 {meta: title When The Roses Bloom Next Spring}
 {meta: artist Red Steagall}
 {meta: composer Fletcher Jowers}
+{meta: x_source classic-country}
+{meta: x_source_file whentherosesbloomnextspringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's an early frosty morning and the [C]campfire's burning [Am]hot
@@ -48,3 +51,9 @@ I'll be [D7]going home to Jenny when the roses bloom next [G]spring
 I miss my home in Texas and the [C]one that waits for [Am]me
 I'll be [D7]going home to Jenny when the roses bloom next [G]spring
 {end_of_verse}
+
+
+
+
+
+

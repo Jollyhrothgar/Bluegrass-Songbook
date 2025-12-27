@@ -1,5 +1,8 @@
 {meta: title Once In A Lifetime Love}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file onceinalifetimelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Some [G]people [D7]have it [B7]some people [C]don't
@@ -47,3 +50,9 @@ It [C]may go disguised [A7]right before your eyes
 It [C]may go disguised [A7]right before your eyes
 A [C]once in a [D7]lifetime [G]love
 {end_of_verse}
+
+
+
+
+
+

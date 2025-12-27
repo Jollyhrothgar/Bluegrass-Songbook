@@ -1,6 +1,9 @@
 {meta: title There's No More Love}
 {meta: artist Carl Smith}
 {meta: composer Country Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file theresnomorelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heart she’s left this town she’s turned you down 
@@ -45,3 +48,8 @@ And there’s [G]no more love
 [C]Gone her tenderness my happiness I’ll [D7]find again
 I can’t forget there’s [G]no more love
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title You Never Cross My Mind}
 {meta: artist Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file younevercrossmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I lay there every [F]night where you love [G7]me
@@ -28,3 +31,6 @@ Though I cry from time to [C]time
 You never cross my [G7]mind
 You [F]stay there [G7]all the [C]time
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Finest Gift}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file finestgiftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She can shop all over [F]town turn the gift [Am]shops upside [D7]down
@@ -35,3 +38,7 @@ Now it's [C]not in any [F]store and she could [Am]never give me [D7]more
 Then her [F]promise of the finest gift she [C]brings[F]  [Am]
 I [Dm]know her love's the [F]finest gift she [C]brings
 {end_of_verse}
+
+
+
+

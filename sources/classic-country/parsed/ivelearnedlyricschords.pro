@@ -1,6 +1,9 @@
 {meta: title I've Learned}
 {meta: artist Tammy Wynette}
 {meta: composer Nathan Russell and Jot Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file ivelearnedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Darling I've [G]learned 
@@ -43,3 +46,8 @@ I love I love I love you [C]so
 A fool so wrong to let you [A7]go 
 [D7]Yes I've [G]learned [C]   [G]
 {end_of_verse}
+
+
+
+
+

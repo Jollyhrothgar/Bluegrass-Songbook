@@ -1,6 +1,9 @@
 {meta: title Story Of A Broken Heart}
 {meta: artist Johnny Cash}
 {meta: composer Sam Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file storyofabrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hmm the story of a [D7]broken [G]heart
@@ -29,3 +32,6 @@
 [D7]The story that's told by my [G]heart [G][C]h-m-m-m
 [C]The story of a [D7]broken [G]heart
 {end_of_verse}
+
+
+

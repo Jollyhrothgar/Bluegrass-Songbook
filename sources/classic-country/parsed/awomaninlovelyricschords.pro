@@ -1,6 +1,9 @@
 {meta: title A Woman In Love}
 {meta: artist Ronnie Milsap}
 {meta: composer Curtis Wright and Doug Millett}
+{meta: x_source classic-country}
+{meta: x_source_file awomaninlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No matter [C]what you [D7]do or [G]say
@@ -55,3 +58,10 @@ You never [C]know with a [D7]woman in [G]love
 You never [C]know with a [D7]woman in [Em]love
 [C]You never [G]know with a [Em]wo-[D7]man ooo ooo woman in [G]love
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Over Forty (Not Over The Hill)}
 {meta: artist Johnny Duncan}
 {meta: composer Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file overfortynotoverthehilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She woke up this morning and fixed him his breakfast
@@ -48,3 +51,9 @@ She's just over [Dm]forty [G7]  not over the [C]hill
 {start_of_verse: Verse 6}
 She's just over [Dm]forty  [G7]  not over the [C]hill
 {end_of_verse}
+
+
+
+
+
+

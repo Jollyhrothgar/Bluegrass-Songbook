@@ -1,6 +1,9 @@
 {meta: title Keep On Lovin' You}
 {meta: artist Charly McClain}
 {meta: composer Don Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file keeponlovinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You give me [F]lovin' so easy [D7]and sometimes that ain't [C]easy
@@ -38,3 +41,7 @@ I just wanna wanna keep on [F]lovin' [C]you
 I just wanna wanna keep on [F]wanting [C]you
 I just wanna wanna keep on [F]lovin' [C]you
 {end_of_verse}
+
+
+
+

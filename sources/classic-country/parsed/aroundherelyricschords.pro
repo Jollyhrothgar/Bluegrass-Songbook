@@ -1,6 +1,9 @@
 {meta: title Around Here}
 {meta: artist George Jones}
 {meta: composer Richard Fagan and Jeff Moore}
+{meta: x_source classic-country}
+{meta: x_source_file aroundherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I couldn't help but overhear you talkin' to Mary Lou
@@ -44,3 +47,8 @@ Well [G]get to know her better before you can try to [D7]hold her near
 [G]Be polite ask her just right if you [C]wanna get lucky on a Saturday night
 Cause [G]that's the thing to [D7]do around [G]here
 {end_of_verse}
+
+
+
+
+

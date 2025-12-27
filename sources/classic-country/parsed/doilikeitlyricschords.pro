@@ -1,6 +1,9 @@
 {meta: title Do I Like It}
 {meta: artist Carl Smith}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file doilikeitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby when you hold me tight just the way you did last night
@@ -33,3 +36,7 @@ Do I [G7]like it yes I [C]like it
 {start_of_verse: Verse 5}
 Do I [G7]like it you know I [C]like it
 {end_of_verse}
+
+
+
+

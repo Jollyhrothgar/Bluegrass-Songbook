@@ -1,5 +1,8 @@
 {meta: title I'll Tell The World I Love You}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file illtelltheworldiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll tell the world I [C]love you I'll [G]tell the world I [D7]care
@@ -19,3 +22,5 @@ I'll shout it to the [C]whole wide world I'll [G]tell the [D7]world I love [G]yo
 [D7]Never a reason to [G]doubt you [D7]credit where credit is [G]due
 I'll shout it to the [C]whole wide world I'll [G]tell the [D7]world I love [G]you
 {end_of_verse}
+
+

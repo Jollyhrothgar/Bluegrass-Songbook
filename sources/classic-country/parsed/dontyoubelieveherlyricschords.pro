@@ -1,6 +1,9 @@
 {meta: title Don't You Believe Her}
 {meta: artist Ray Price}
 {meta: composer Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file dontyoubelieveherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She can give you a reason to live if she wants [G7]to
@@ -25,3 +28,6 @@ But be [C]careful for when you're not [G7]looking she [C]will
 [C7]Don't you [F]believe her [G7]I did and soon she'll be leaving [C]me
 Don't you [F]believe her [G7]if you do then soon she'll be leaving you [C]too
 {end_of_verse}
+
+
+

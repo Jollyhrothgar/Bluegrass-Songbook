@@ -1,5 +1,8 @@
 {meta: title Wait a Little Longer Please Jesus}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file waitalittlelongerpleasejesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here the labor is so hard and the [F]workers are so [C]tired
@@ -35,3 +38,7 @@ There are so many wandering out in [C]sin
 Just a little longer please [G7]Jesus 
 A few more days to get our loved ones [C]in
 {end_of_verse}
+
+
+
+

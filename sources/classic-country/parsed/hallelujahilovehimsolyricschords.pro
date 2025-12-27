@@ -1,6 +1,9 @@
 {meta: title Hallelujah I Love Him So}
 {meta: artist Brenda Lee}
 {meta: composer Ray Charles}
+{meta: x_source classic-country}
+{meta: x_source_file hallelujahilovehimsolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me tell you bout a guy [F]I [C]know
@@ -51,3 +54,8 @@
 [C]That's why [E7]I know yes I [Am]know
 [D7][F]Hallelujah I just [G7]love him [C]so
 {end_of_verse}
+
+
+
+
+

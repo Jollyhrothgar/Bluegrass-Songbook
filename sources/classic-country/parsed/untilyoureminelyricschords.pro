@@ -1,6 +1,9 @@
 {meta: title Until You're Mine}
 {meta: artist Tanya Tucker}
 {meta: composer Thom Schuyler, David Malloy, Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file untilyoureminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's something baby you don't know
@@ -51,3 +54,9 @@ Until you're [G7]mine oh until you're mine
 Un[F]til you're [G7]mine oh baby until you're mine
 Un[F]til you're [G7]mine oh until you're mine
 {end_of_verse}
+
+
+
+
+
+

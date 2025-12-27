@@ -1,6 +1,9 @@
 {meta: title Big Wind}
 {meta: artist Porter Wagoner}
 {meta: composer Wayne P. Walker, Alex Zanetis, George McCormick}
+{meta: x_source classic-country}
+{meta: x_source_file bigwindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From daylight till dusk we've been a working in the dust
@@ -51,3 +54,12 @@ It seemed I could still [G7]hear him [C]calling
 Well I can't forget yes I remember yet
 The way my daddy [G7]looked at me and [C]cried
 {end_of_verse}
+
+
+
+
+
+
+
+
+

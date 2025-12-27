@@ -1,6 +1,9 @@
 {meta: title I'm too Lonely to Smile}
 {meta: artist Kitty Wells}
 {meta: composer Hal Smith}
+{meta: x_source classic-country}
+{meta: x_source_file imtoolonelytosmilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All my life I had nothing [F]but [C]trouble 
@@ -29,3 +32,6 @@ I'm too lonely to smile [F]dear
 [C]I can't keep the tears [F]from [C]falling 
 [F]I'm too [C]lonely to smile [C][G7]anymore  
 {end_of_verse}
+
+
+

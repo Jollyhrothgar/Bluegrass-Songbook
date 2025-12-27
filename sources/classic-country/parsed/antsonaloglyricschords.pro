@@ -1,6 +1,9 @@
 {meta: title Ants On A Log}
 {meta: artist Randy Travis}
 {meta: composer Donny Kees and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file antsonaloglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Ants on a [C]log floatin' down a [G7]river
@@ -61,3 +64,10 @@ We're [F]really just along for the [G7]ride like ants on a [C]log
 {start_of_verse: Verse 5}
 Yeah we're [F]really just along for the [G7]ride like ants on a [C]log
 {end_of_verse}
+
+
+
+
+
+
+

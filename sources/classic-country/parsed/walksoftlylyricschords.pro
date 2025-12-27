@@ -1,6 +1,9 @@
 {meta: title Walk Softly}
 {meta: artist Billy Crash Craddock}
 {meta: composer Van McCoy}
+{meta: x_source classic-country}
+{meta: x_source_file walksoftlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Walk softly [G7]when you walk by [C]me  
@@ -43,3 +46,8 @@ Don't wake it [Dm]up (don't wake it up) [G7]don't wake it [C]up
 [F]Now that I've cried my love to [C]sleep 
 Don't wake it [Dm]up (don't wake it up) [G7]don't wake it [C]up
 {end_of_verse}
+
+
+
+
+

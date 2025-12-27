@@ -1,6 +1,9 @@
 {meta: title Julie}
 {meta: artist Johnny Paycheck}
 {meta: composer Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file julielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The boys are wanting me to go out [F]drinking 
@@ -33,3 +36,7 @@ So what's wrong staying [F]home with [G7]Julie
 {start_of_verse: Verse 4}
 Yes [F]Julie's has [G7]always stayed at home with [C]me
 {end_of_verse}
+
+
+
+

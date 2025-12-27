@@ -1,6 +1,9 @@
 {meta: title Between The Devil And Me}
 {meta: artist Alan Jackson}
 {meta: composer Harley Allen and Carson Chamberlain}
+{meta: x_source classic-country}
+{meta: x_source_file betweenthedevilandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This world can take you by the hand and tempt the [F]soul of any man
@@ -36,3 +39,7 @@ She's [C]all I see be[G7]tween the devil and [C]me
 The gates of hell swing open wide invitin' [F]me to step inside
 She's [C]all I see be[G7]tween the devil and [F]me[C]
 {end_of_verse}
+
+
+
+

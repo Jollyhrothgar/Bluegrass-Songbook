@@ -1,6 +1,9 @@
 {meta: title Halfway To Heaven}
 {meta: artist Jim Ed Brown}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file halfwaytoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Halfway[Am]   [G7]halfway to [C]heaven [F]
@@ -32,3 +35,7 @@ And [D7]then our heart's began [G7]to beat as one and then
 [C]Halfway[Am]   [G7]halfway to [C]heaven [F]
 [G7]I'm way up [C]here [Am]above [F]with [G7]no one to [C]love[Am]   [F]  [C]
 {end_of_verse}
+
+
+
+

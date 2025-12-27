@@ -1,6 +1,9 @@
 {meta: title I'm Not Guilty}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Abe Mulkey}
+{meta: x_source classic-country}
+{meta: x_source_file imnotguiltylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know how to hurt me
@@ -33,3 +36,6 @@ I'm not guilty I'm not un[F]true
 I spend [G7]all my time my days and nights
 Loving only [C]you
 {end_of_verse}
+
+
+

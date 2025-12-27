@@ -1,6 +1,9 @@
 {meta: title Each Day}
 {meta: artist Kitty Wells}
 {meta: composer Benny Martin and Jim Denny}
+{meta: x_source classic-country}
+{meta: x_source_file eachdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Each day I cry a little each day I die a [C]little
@@ -26,3 +29,6 @@ Each day your love grows colder
 [G]Each day I cry a little each day I die a [C]little
 [D7]And when I go I'll still be loving [G]you
 {end_of_verse}
+
+
+

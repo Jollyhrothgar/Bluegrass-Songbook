@@ -1,6 +1,9 @@
 {meta: title Careless Hands}
 {meta: artist Slim Whitman}
 {meta: composer Bob Hillard and Carl Sigman}
+{meta: x_source classic-country}
+{meta: x_source_file carelesshandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I let my heart fall [C]into careless [G]hands
@@ -22,3 +25,5 @@
 [G]If you don't change someday you'll know [C]the sorrow [Em]of
 [G]Careless hands [D7]that can't hold on to [G]love
 {end_of_verse}
+
+

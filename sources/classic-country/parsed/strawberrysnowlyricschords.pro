@@ -1,6 +1,9 @@
 {meta: title Strawberry Snow}
 {meta: artist Brenda Lee}
 {meta: composer Ronnie Self}
+{meta: x_source classic-country}
+{meta: x_source_file strawberrysnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sleep with your spoon in your pillow
@@ -27,3 +30,6 @@ Ask [A7]little children they know
 Ask [A7]little children they know
 [D7]Morning may bring Strawberry [G]Snow 
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Tell Me Why}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file tellmewhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you'd think by now my reckless days were [C]over
@@ -42,3 +45,8 @@ Tell me [Am]why you love me [D7]baby tell me [G]why
 Tell me [Am]why you love me b[D7]aby tell me w[G]hy [D7]   [Em]
 [G]Tell me [Am]why you love me b[D7]aby tell me [C]why[G]
 {end_of_verse}
+
+
+
+
+

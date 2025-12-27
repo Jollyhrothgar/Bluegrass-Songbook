@@ -1,6 +1,9 @@
 {meta: title I Can See Sunshine}
 {meta: artist Wynn Stewart}
 {meta: composer Neal Merritt and Shorty Hall}
+{meta: x_source classic-country}
+{meta: x_source_file icanseesunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gave my raincoat away
@@ -48,3 +51,9 @@ When it's a gloomy old day
 [G7]When I see love in your eyes
 [F]I can even see [C]sunshine
 {end_of_verse}
+
+
+
+
+
+

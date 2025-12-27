@@ -1,6 +1,9 @@
 {meta: title That Summer}
 {meta: artist Garth Brooks}
 {meta: composer Pat Alger, Sandy Mahl, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file thatsummerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I went to work for her that summer 
@@ -109,3 +112,17 @@ Rushin' head long in the [C]wind
 Out where only dreams had [D7]been
 Burnin' both ends of the [G]night
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

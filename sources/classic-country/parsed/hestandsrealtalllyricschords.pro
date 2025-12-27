@@ -1,6 +1,9 @@
 {meta: title He Stands Real Tall}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Cal Veale}
+{meta: x_source classic-country}
+{meta: x_source_file hestandsrealtalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Folks know I'm a [C]poor boy [G]poor as I can be
@@ -33,3 +36,7 @@ A [G]man can be a [C]big man [G]even though he's small
 {start_of_verse: Verse 5}
 [C]Find a man who's [G]loved a lot [D7]you'll find he stands real [G]tall
 {end_of_verse}
+
+
+
+

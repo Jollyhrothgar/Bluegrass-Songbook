@@ -1,6 +1,9 @@
 {meta: title Sweet Country Woman}
 {meta: artist Johnny Duncan}
 {meta: composer Sandy St.John & Chuck Thorp}
+{meta: x_source classic-country}
+{meta: x_source_file sweetcountrywomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Monday morning I'm feeling down
@@ -37,3 +40,6 @@ I call her [F]sweet [G7]country [C]woman
 Cause [F]she gives the sweetest [G7]loving
 I've ever [C]had
 {end_of_verse}
+
+
+

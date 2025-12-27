@@ -1,6 +1,9 @@
 {meta: title Any Day Now}
 {meta: artist Ronnie Milsap}
 {meta: composer Bob Hillard and Burt Bacharach}
+{meta: x_source classic-country}
+{meta: x_source_file anydaynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Any day now I [Em]will hear you say [F]goodbye
@@ -38,3 +41,8 @@ And then my tears will flow
 [C]Oh any day now love will let me [G7]down
 [C]Cause you won't be around
 {end_of_verse}
+
+
+
+
+

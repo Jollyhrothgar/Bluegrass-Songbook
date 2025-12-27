@@ -1,6 +1,9 @@
 {meta: title One Way Give And Take}
 {meta: artist Billy Walker}
 {meta: composer Tompall Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file onewaygiveandtakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Too long I've tried to do the things 
@@ -41,3 +44,8 @@ The [C]more I try to live your way
 The more my heart will [G7]break
 You [F]always lose at [G7]one way give and [C]take
 {end_of_verse}
+
+
+
+
+

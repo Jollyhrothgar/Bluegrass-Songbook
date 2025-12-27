@@ -1,6 +1,9 @@
 {meta: title Blue Dreams}
 {meta: artist Hank Snow}
 {meta: composer Cliff Carlisle}
+{meta: x_source classic-country}
+{meta: x_source_file bluedreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the moonbeams are shining and for love I am [F]pining
@@ -29,3 +32,6 @@
 [F]O'er the hills and the valleys we'll wander in our [C]dreams
 [D7]To a land [G7]of love and blue [C]dreams
 {end_of_verse}
+
+
+

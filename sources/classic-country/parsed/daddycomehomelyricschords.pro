@@ -1,6 +1,9 @@
 {meta: title Daddy Come Home}
 {meta: artist George Jones}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file daddycomehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A year and a half may not seem like much [C]time
@@ -29,3 +32,6 @@
 [G]Was mommy mean to you did I treat you [C]wrong
 [G]Daddy oh [D7]daddy come [G]home
 {end_of_verse}
+
+
+

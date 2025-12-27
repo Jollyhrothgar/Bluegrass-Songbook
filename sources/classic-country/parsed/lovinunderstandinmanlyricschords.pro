@@ -1,6 +1,9 @@
 {meta: title Lovin' Understandin' Man}
 {meta: artist Don Williams}
 {meta: composer Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file lovinunderstandinmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My baby [F]changes like the [C]weather
@@ -29,3 +32,6 @@ As long as there's [G7]life in my [C]hand
 My baby [F]knows I always [C]will be
 Her lovin' [G7]understandin' [C]man
 {end_of_verse}
+
+
+

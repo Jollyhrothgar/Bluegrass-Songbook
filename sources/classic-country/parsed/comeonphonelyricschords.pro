@@ -1,6 +1,9 @@
 {meta: title Come On Phone}
 {meta: artist Jean Shepard}
 {meta: composer Larry Henley and Johnny Slate}
+{meta: x_source classic-country}
+{meta: x_source_file comeonphonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Got me a phone in my [F]home but my hand [C]don't fit the [F]handle
@@ -29,3 +32,6 @@
 [G7]Come on phone and be a comfort to [C]me
 [F]I'd like to see you [G7]ring right off the [C]wall
 {end_of_verse}
+
+
+

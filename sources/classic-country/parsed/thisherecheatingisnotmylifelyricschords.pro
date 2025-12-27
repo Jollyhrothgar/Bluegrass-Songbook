@@ -1,6 +1,9 @@
 {meta: title This Here Cheating Is Not My Life}
 {meta: artist Leonard Berg and Julie Leekley}
 {meta: composer Leonard Berg}
+{meta: x_source classic-country}
+{meta: x_source_file thisherecheatingisnotmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a honky tonk in Dallas she was sitting all [G7]alone
@@ -41,3 +44,8 @@ But [G7]tonight I am finding this here cheating is not my [C]life
 {start_of_verse: Verse 4}
 [G7]Tonight I am finding this here cheating is not my [C]life
 {end_of_verse}
+
+
+
+
+

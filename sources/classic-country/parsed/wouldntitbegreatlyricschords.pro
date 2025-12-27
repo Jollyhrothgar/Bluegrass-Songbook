@@ -1,5 +1,8 @@
 {meta: title Wouldn't It Be Great}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file wouldntitbegreatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wouldn't it be fine if you could say
@@ -65,3 +68,11 @@ Wouldn't it be good
 {start_of_verse: Verse 7}
 [D7]Now wouldn't that be [G]great
 {end_of_verse}
+
+
+
+
+
+
+
+

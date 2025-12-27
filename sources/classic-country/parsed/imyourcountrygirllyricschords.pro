@@ -1,6 +1,9 @@
 {meta: title I'm Your Country Girl}
 {meta: artist Dottie West}
 {meta: composer Dottie West and Bill West}
+{meta: x_source classic-country}
+{meta: x_source_file imyourcountrygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say you find it easy pleasin' your country [D7]girl
@@ -38,3 +41,9 @@ You held my hand and called me dear
 {start_of_verse: Verse 7}
 [D7]Oh it really makes me happy knowin' I'm your country [G]girl
 {end_of_verse}
+
+
+
+
+
+

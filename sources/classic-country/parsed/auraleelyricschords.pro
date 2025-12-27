@@ -1,6 +1,9 @@
 {meta: title Aura Lee}
 {meta: artist Jimmy Dean}
 {meta: composer George Poulton and W.W. Fosdick}
+{meta: x_source classic-country}
+{meta: x_source_file auraleelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Aura Lee [Em]Aura Lee maid of [Fm]golden [C]hair
@@ -27,3 +30,7 @@
 [D7]Sunshine came along [G7]with thee and swallows in [C]the [D7]air
 [G7]And swallows in the [C]air
 {end_of_verse}
+
+
+
+

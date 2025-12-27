@@ -1,6 +1,9 @@
 {meta: title You Must Really Love Me}
 {meta: artist Reba McEntire}
 {meta: composer Don Schlitz and Reba McEntire}
+{meta: x_source classic-country}
+{meta: x_source_file youmustreallylovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Tell me [C]why do you put up with my foolish ways
@@ -31,3 +34,6 @@ Every [F]time I fall [C]apart you always pull me [Am]through
 You must [F]really [C]love me as [G7]much as I love [Am]you
 You must [F]really [C]love me as [G7]long as you [C]do
 {end_of_verse}
+
+
+

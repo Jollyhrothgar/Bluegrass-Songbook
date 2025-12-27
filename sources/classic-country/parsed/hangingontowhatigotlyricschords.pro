@@ -1,6 +1,9 @@
 {meta: title Hanging On To What I Got}
 {meta: artist Buck Owens}
 {meta: composer Tom Brumley, Dusty Rhodes, Billye Spears}
+{meta: x_source classic-country}
+{meta: x_source_file hangingontowhatigotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well everybody got something on their mind
@@ -59,3 +62,12 @@ Well I got something that I'm proud of
 [F]Well I'm a telling you that I'm a happy [C]man
 [G7]And I'm a hanging on to what I [C]got
 {end_of_verse}
+
+
+
+
+
+
+
+
+

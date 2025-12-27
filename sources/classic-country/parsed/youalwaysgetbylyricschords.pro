@@ -1,6 +1,9 @@
 {meta: title You Always Get By}
 {meta: artist Ray Price}
 {meta: composer Don Helms and Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file youalwaysgetbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I get so doggone tired of hearing you laugh
@@ -43,3 +46,8 @@ Just [F]when I get the nerve to speak my mind
 Them [C]tears start running up and down the spine
 You get [G7]by well baby you always get [C]by
 {end_of_verse}
+
+
+
+
+

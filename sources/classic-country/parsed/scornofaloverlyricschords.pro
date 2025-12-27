@@ -1,5 +1,8 @@
 {meta: title Scorn Of A Lover}
 {meta: artist Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file scornofaloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You told me you loved me on [F]our wedding [C]day
@@ -49,3 +52,9 @@ It's a hurt that breaks heart mind and [G7]soul
 He'll [C]poison your life with [F]deception and [C]lies
 And leave you so [G7]lonely and [C]cold
 {end_of_verse}
+
+
+
+
+
+

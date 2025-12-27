@@ -1,6 +1,9 @@
 {meta: title Living In The West}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file livinginthewestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]John Wesley Harding  [F]shot a man for snoring 
@@ -50,3 +53,9 @@ But they still live on in stories [F]and I hope they live forever
 [F]Me I lived in the [G7]east and I was [C]bored to say the [Am]least
 Cause I [F]never saw them sons of guns in barrooms starting [G7]brawls
 {end_of_verse}
+
+
+
+
+
+

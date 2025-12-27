@@ -1,6 +1,9 @@
 {meta: title Lovers Friends And Strangers}
 {meta: artist Ronnie Milsap}
 {meta: composer Kent M. Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file loversfriendsandstrangerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Looking [G7]back into the [C]world we knew
@@ -33,3 +36,7 @@ But the [G7]same fire that warms the heart can [C]burn
 {start_of_verse: Verse 4}
 [D7]Ain't it funny [G7]how the circle [C]turns
 {end_of_verse}
+
+
+
+

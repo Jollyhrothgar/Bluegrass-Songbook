@@ -1,6 +1,9 @@
 {meta: title Amigo's Guitar}
 {meta: artist Kitty Wells}
 {meta: composer John D. Loudermilk, Roy Botkin, Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file amigosguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Amigo's guitar
@@ -34,3 +37,7 @@ Up [D7]on his lonely blue [G]guitar
 [D7]Hold me close and say you [G]love me 
 While [D7]amigo plays his blue [G]guitar
 {end_of_verse}
+
+
+
+

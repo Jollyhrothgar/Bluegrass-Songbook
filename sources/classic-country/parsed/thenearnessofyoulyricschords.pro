@@ -1,6 +1,9 @@
 {meta: title The Nearness Of You}
 {meta: artist Faron Young}
 {meta: composer Ned Washington and Hoagy Carmichael}
+{meta: x_source classic-country}
+{meta: x_source_file thenearnessofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's not the [C]pale moon that [A#7]excites [C]me that [F]thrills and [Dm]delights me
@@ -29,3 +32,6 @@ Oh [G7]no [D]no [F]no it's just the [G7]nearness of [C]you
 The [Em]right to [F]hold you [G7]ever so [Em]tight
 And to [A7]feel in the [F]night the [G7]nearness of [C]you
 {end_of_verse}
+
+
+

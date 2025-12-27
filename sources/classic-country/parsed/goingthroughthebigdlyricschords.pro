@@ -1,6 +1,9 @@
 {meta: title Going Through The Big D}
 {meta: artist Mark Chesnutt}
 {meta: composer Ronnie Rogers, Mark Wright, Jon Wright}
+{meta: x_source classic-country}
+{meta: x_source_file goingthroughthebigdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Six short months we went together decided [D7]it should be [G]forever
@@ -46,3 +49,9 @@ I got the Jeep she got the two bedroom mortgage is due
 {start_of_verse: Verse 6}
 [D7]I'm goin' through the big D and don't mean [G]Dallas
 {end_of_verse}
+
+
+
+
+
+

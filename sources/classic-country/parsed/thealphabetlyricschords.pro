@@ -1,6 +1,9 @@
 {meta: title The Alphabet}
 {meta: artist Hank Snow}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file thealphabetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Hear hear hear the alphabet
@@ -85,3 +88,16 @@ Y is for Yosep by his brother was sold
 [G](Hear hear hear the alphabet
 [D7]Taken from the good book of the [G]Lord
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

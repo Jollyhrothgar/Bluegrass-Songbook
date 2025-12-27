@@ -1,5 +1,8 @@
 {meta: title Somebody's Stealing My Songs}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysstealingmysongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I’ve been livin’ in Nashville [F]2 or 3 weeks I [C]guess
@@ -56,3 +59,8 @@ If [D7]I can keep every[G7]body from stealin’ my [C]songs
 {start_of_verse: Verse 6}
 If [D7]I can keep every[G7]body from stealin’ my [C]songs
 {end_of_verse}
+
+
+
+
+

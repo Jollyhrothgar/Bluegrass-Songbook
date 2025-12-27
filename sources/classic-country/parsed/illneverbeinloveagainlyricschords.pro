@@ -1,6 +1,9 @@
 {meta: title I'll Never Be In Love Again}
 {meta: artist Don Williams}
 {meta: composer Bob Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file illneverbeinloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can write your own ticket now
@@ -43,3 +46,8 @@ My poor old [D7]heart will never [G]mend
 Oh I'll find someone [B7]to hold now and [C]then
 But I'll [G]ne-ver be [D7]in love [G]again
 {end_of_verse}
+
+
+
+
+

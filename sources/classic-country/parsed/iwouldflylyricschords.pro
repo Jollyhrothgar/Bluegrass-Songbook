@@ -1,6 +1,9 @@
 {meta: title I Would Fly}
 {meta: artist Mel Tillis}
 {meta: composer Tracy Newman}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I fail to please you 
@@ -41,3 +44,9 @@ I would [C]fly to your [G]side if you [C]called on [G]me
 That’s the [C]kind that I [G]am
 Pride be [A7]damned take all of [D7]me
 {end_of_verse}
+
+
+
+
+
+

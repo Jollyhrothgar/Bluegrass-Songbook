@@ -1,5 +1,8 @@
 {meta: title The Captive}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file thecaptivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd like to say that I could see the [F]target of my destiny
@@ -35,3 +38,7 @@ And I'll be ready for whatever road I [G7]choose
 [C]But for the moment I remain [F]captive of the human brain
 That [C]blew itself to [G7]pieces over [C]you
 {end_of_verse}
+
+
+
+

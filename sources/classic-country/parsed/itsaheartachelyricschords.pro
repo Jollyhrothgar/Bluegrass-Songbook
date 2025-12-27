@@ -1,6 +1,9 @@
 {meta: title It's A Heartache}
 {meta: artist Juice Newton}
 {meta: composer Ronnie Scott and Steve Wolfe}
+{meta: x_source classic-country}
+{meta: x_source_file itsaheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's a [C]Heartache nothing but a [Em]heartache
@@ -24,3 +27,6 @@
 {start_of_verse: Verse 4}
 Repeat all then #2 again
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Teardrops Falling In The Snow}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file teardropsfallinginthesnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Page by page our lives are [F]written  in [G7]the Master's book [C]above
@@ -28,3 +31,6 @@
 [F]But I'm sure they'll meet up [C]yonder  where God's children always [G7]go
 [C]And I always will [F]remember  [G7]teardrops falling in the [C]snow
 {end_of_verse}
+
+
+

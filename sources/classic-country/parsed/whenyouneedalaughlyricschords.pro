@@ -1,6 +1,9 @@
 {meta: title When You Need a Laugh}
 {meta: artist Patsy Cline}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file whenyouneedalaughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can't imagine how it hurts me  to have you treat me like you [C7]do
@@ -27,3 +30,6 @@ To [D7]be around the one I love  and need so [G7]desperately
 So [F]when you need a [G7]laugh   give me a [C]call
 So when [F]you need a [G7]laugh   give me a [C]call 
 {end_of_verse}
+
+
+

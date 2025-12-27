@@ -1,5 +1,8 @@
 {meta: title The Sad Lover}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file thesadloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I'm sad and I'm lonely for my darling
@@ -28,3 +31,6 @@ It was sent from a distant foreign [G7]shore
 Was a [C]letter edged in black and it [F]said alas alas
 You will [C]never see your [G7]darling any[C]more
 {end_of_verse}
+
+
+

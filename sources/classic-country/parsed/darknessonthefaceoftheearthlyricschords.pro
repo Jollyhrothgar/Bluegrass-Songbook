@@ -1,5 +1,8 @@
 {meta: title Darkness On The Face Of The Earth Karma}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file darknessonthefaceoftheearthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The morning that you left me was just another day
@@ -36,3 +39,9 @@ I [C]live within a world that had no [G]sunshine
 {start_of_verse: Verse 6}
 And now there's darkness on the face [D7]of the [G]earth
 {end_of_verse}
+
+
+
+
+
+

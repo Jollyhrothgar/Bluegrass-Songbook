@@ -1,6 +1,9 @@
 {meta: title They're Hanging Me Tonight}
 {meta: artist Marty Robbins}
 {meta: composer Jimmy Lowe and Art Wolpert}
+{meta: x_source classic-country}
+{meta: x_source_file theyrehangingmetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I hear the rain a coming [Am]down
@@ -61,3 +64,10 @@ I think about the thing I've [Am]done
 They're [F]hanging me [C]tonight 
 They're [F]hanging me [C]tonight
 {end_of_verse}
+
+
+
+
+
+
+

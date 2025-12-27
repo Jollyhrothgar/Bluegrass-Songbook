@@ -1,6 +1,9 @@
 {meta: title Terrible Tangled Web}
 {meta: artist Ray Price}
 {meta: composer Billy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file terribletangledweblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've got a way of makin' me blue 
@@ -29,3 +32,5 @@ And [D7]life's got a way of makin' me cry
 [G7]Oh what a terrible tangled web we [C]weave
 [G7]Oh what a terrible tangled web we [C]weave
 {end_of_verse}
+
+

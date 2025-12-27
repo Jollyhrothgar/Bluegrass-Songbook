@@ -1,5 +1,8 @@
 {meta: title Dang Me}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file dangmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Boo boo boo boo boo [G7]boo boo [C]bam
@@ -53,3 +56,9 @@
 [C7]Baaa boo boo [F]bam boom boo boo boo boo [G7]baa
 [C]Baaa boo boo boom bum boo boo boo boo boo
 {end_of_verse}
+
+
+
+
+
+

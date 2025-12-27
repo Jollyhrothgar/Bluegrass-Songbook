@@ -1,6 +1,9 @@
 {meta: title Lonely at the Top}
 {meta: artist Keith Whitley}
 {meta: composer Jamey Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file lonelyatthetoplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was pourin' out my troubles
@@ -50,3 +53,7 @@ But it's a [D7]bitch at the [G]bottom
 It might be lonely at the top
 But it's a [D7]bitch at the [G]bottom
 {end_of_verse}
+
+
+
+

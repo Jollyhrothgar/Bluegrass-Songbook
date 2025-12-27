@@ -1,5 +1,8 @@
 {meta: title Your Cheating Heart}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file yourcheatingheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Your cheating [C]heart [C7]will make you [F]weep
@@ -28,3 +31,6 @@ You'll toss [D7]around  and call my [G7]name
 You'll walk the [C]floor  [C7]the way I [F]do
 Your cheating [G7]heart  will tell on [C]you
 {end_of_verse}
+
+
+

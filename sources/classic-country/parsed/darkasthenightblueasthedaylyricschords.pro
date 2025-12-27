@@ -1,6 +1,9 @@
 {meta: title Dark As The Night Blue As The Day}
 {meta: artist Michael Cleveland, Dan Tymiski, Vince Gill}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file darkasthenightblueasthedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dark as the night and blue as the day
@@ -26,3 +29,6 @@ It’s dark as the night [G7]I’m blue as the [C]day
 {start_of_verse: Verse 4}
 It’s dark as the night [G7]I’m blue as the [C]day
 {end_of_verse}
+
+
+

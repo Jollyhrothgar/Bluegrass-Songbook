@@ -1,5 +1,8 @@
 {meta: title Waterloo}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file waterloolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Waterloo  Waterloo  where will you meet your [G7]Waterloo
@@ -45,3 +48,9 @@ And that's [C]where Tom Dooley [G7]met his [C]Waterloo
 Every puppy [C]has his day everybody has to [F]pay 
 Everybody [C]has to [G7]meet his [C]Waterloo
 {end_of_verse}
+
+
+
+
+
+

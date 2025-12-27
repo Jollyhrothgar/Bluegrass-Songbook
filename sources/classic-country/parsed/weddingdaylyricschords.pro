@@ -1,6 +1,9 @@
 {meta: title Wedding Day}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melton and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file weddingdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wonder how long it will [F]take 
@@ -29,3 +32,6 @@ Makes no difference when you're all [C]alone
 As I watch you walk [G7]away 
 Goodbye darling goodbye wedding [C]day 
 {end_of_verse}
+
+
+

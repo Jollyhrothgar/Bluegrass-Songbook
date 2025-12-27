@@ -1,6 +1,9 @@
 {meta: title Kissing Your Picture}
 {meta: artist Ray Price}
 {meta: composer Mel Tillis, Wayne P. Walker, Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file kissingyourpicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Kissing your picture is so [D7]cold
@@ -29,3 +32,6 @@
 [C]Living with a heartache for a friend
 [D7]Wondering if I'll ever hold you in my arms [G]again
 {end_of_verse}
+
+
+

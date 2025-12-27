@@ -1,6 +1,9 @@
 {meta: title A Toast To The Bride}
 {meta: artist Stonewall Jackson}
 {meta: composer Steve Karliski}
+{meta: x_source classic-country}
+{meta: x_source_file atoasttothebridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today's the day to laugh and [G7]shout
@@ -54,3 +57,9 @@
 [C]One minute of silence in [F]memory
 [C]Of a love that has died and [F]never can [C]be
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Was It Just The Wine}
 {meta: artist Vern Gosdin}
 {meta: composer Billy Cannon and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file wasitjustthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Did we laugh  and talk  and joke [G7]awhile  did we drink a [C]few
@@ -25,3 +28,5 @@ Did [C]I hold your body close to [G7]mine [F]
 Did we make promises [C]till the end of time
 Did we fall in [G7]love or was it just the [C]wine
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Blessed Are The Believers}
 {meta: artist Anne Murray}
 {meta: composer Randy Goodrum}
+{meta: x_source classic-country}
+{meta: x_source_file blessedarethebelieverslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rain in the sky
@@ -45,3 +48,9 @@ The long night's begun
 With dinner [Am]for one
 [D7]You said you'd never [G]go
 {end_of_verse}
+
+
+
+
+
+

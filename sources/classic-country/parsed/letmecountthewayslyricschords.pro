@@ -1,6 +1,9 @@
 {meta: title Let Me Count The Ways}
 {meta: artist Tanya Tucker}
 {meta: composer Jerry Crutchfield and Claire Cloninger}
+{meta: x_source classic-country}
+{meta: x_source_file letmecountthewayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here goes one more [G7]empty night [C]lonely lady [F]foolish pride
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [G7]Let me count the [C]ways
 {end_of_verse}
+
+
+

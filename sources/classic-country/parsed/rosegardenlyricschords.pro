@@ -1,6 +1,9 @@
 {meta: title Rose Garden}
 {meta: artist Lynn Anderson}
 {meta: composer Joe South}
+{meta: x_source classic-country}
+{meta: x_source_file rosegardenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I beg your [Am]pardon 
@@ -79,3 +82,16 @@ And you know what I'm talking [D7]about
 Along with the [Am]sunshine 
 [D7]There's gotta be a little rain [G]sometimes
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

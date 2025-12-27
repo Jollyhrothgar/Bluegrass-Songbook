@@ -1,6 +1,9 @@
 {meta: title Tiny Blue Transistor Radio}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file tinybluetransistorradiolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the [F]tiny blue [C]transistor [C][G7]radio
@@ -34,3 +37,7 @@
 [F]To the tiny [C]blue transistor [C][G7]radio
 [F]My tiny blue [C]transistor [C][G7]radio
 {end_of_verse}
+
+
+
+

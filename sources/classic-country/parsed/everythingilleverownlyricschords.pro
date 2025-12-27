@@ -1,6 +1,9 @@
 {meta: title Everything I'll Ever Own}
 {meta: artist Reba McEntire}
 {meta: composer Bob Morrison and Johnny McRae}
+{meta: x_source classic-country}
+{meta: x_source_file everythingilleverownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Funny you can [G7]hold it in your hand 
@@ -45,3 +48,8 @@ Oh what I'd [F]give what would I [G7]give
 Oh just that [Am]mo-[F]ment [G7]just everything I'll ever [Am]own [F]
 Oh [G7]just everything I'll ever [C]own [F]  [Fm]   [C]
 {end_of_verse}
+
+
+
+
+

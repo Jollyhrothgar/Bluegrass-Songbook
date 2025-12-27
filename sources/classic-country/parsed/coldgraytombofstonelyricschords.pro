@@ -1,6 +1,9 @@
 {meta: title Cold Gray Tomb of Stone}
 {meta: artist Hank Williams}
 {meta: composer Mel Foree and Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file coldgraytombofstonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Standing by a lonesome graveside 
@@ -36,3 +39,7 @@ Wandering [C]through [G]this world alone
 I wish [C]that I was [G]with my darling 
 'Neath a cold gray [D7]tomb [G]of stone
 {end_of_verse}
+
+
+
+

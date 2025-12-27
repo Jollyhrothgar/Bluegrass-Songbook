@@ -1,6 +1,9 @@
 {meta: title She Means Nothing To Me Now}
 {meta: artist Marty Robbins}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file shemeansnothingtomenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Go ahead and call her if you want [G7]to
@@ -29,3 +32,6 @@ But I'll act as long as my heart will [C]allow
 I'm just lying when I say  for in every scene I [F]play
 [G7]She means nothing to me [C]now
 {end_of_verse}
+
+
+

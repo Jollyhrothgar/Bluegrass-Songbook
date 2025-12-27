@@ -1,6 +1,9 @@
 {meta: title Down To My Last Teardrop}
 {meta: artist Tanya Tucker}
 {meta: composer Paul Davis}
+{meta: x_source classic-country}
+{meta: x_source_file downtomylastteardroplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They said your love life's in trouble in a magazine I [E7]read
@@ -50,3 +53,9 @@
 [F]Crying you a river that winds and winds and [D7]winds
 [Dm]Oh but [C]baby I'm [Am]down to my [D7]last teardrop [F]this [C]time
 {end_of_verse}
+
+
+
+
+
+

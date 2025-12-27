@@ -1,6 +1,9 @@
 {meta: title Loser Friendly}
 {meta: artist David Ball}
 {meta: composer Paul Craft, Wood Newton, Michael McGrew}
+{meta: x_source classic-country}
+{meta: x_source_file loserfriendlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The [G7]door into the tavern opens [C]easy in my hand
@@ -47,3 +50,9 @@ It's so [F]loser friendly [G7]loser [C]friendly
 {start_of_verse: Verse 5}
 [F]Friendly to a [G7]loser such as [C]me
 {end_of_verse}
+
+
+
+
+
+

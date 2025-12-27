@@ -1,6 +1,9 @@
 {meta: title When I Had A Home To Go To}
 {meta: artist Johnny Paycheck}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file whenihadahometogotolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 She loved me [C]more than life its self
@@ -22,3 +25,5 @@ And those big soft eyes are saying we can try once [G7]more
 So [C]forget the double keep the change you can call me [F]gone
 Cause while I have a home to go [C]to  [G7]this time I’m going [C]home
 {end_of_verse}
+
+

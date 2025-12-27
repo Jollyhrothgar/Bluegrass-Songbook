@@ -1,6 +1,9 @@
 {meta: title Shall We Gather at the River}
 {meta: artist Hee Haw Gospel Quartet}
 {meta: composer Robert Lowry}
+{meta: x_source classic-country}
+{meta: x_source_file shallwegatherattheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Shall we gather at the river
@@ -36,3 +39,7 @@ Soon we'll reach the shining river
 [G]Soon our happy hearts will quiver
 With the [D7]melody of [G]peace 
 {end_of_verse}
+
+
+
+

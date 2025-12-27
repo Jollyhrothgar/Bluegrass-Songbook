@@ -1,6 +1,9 @@
 {meta: title If I Didn't Have You}
 {meta: artist Randy Travis}
 {meta: composer Max D. Barnes and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file ifididnthaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I lost my heart on the [F]day we [C]met
@@ -69,3 +72,12 @@
 [F]Well I’ve already said it but I swear it’s [C]true
 [G7]I know I wouldn’t have nothin’ if I didn’t have [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

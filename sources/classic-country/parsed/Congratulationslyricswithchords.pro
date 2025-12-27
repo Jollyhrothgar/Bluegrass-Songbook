@@ -1,6 +1,9 @@
 {meta: title Congratulations}
 {meta: artist Reba McEntire}
 {meta: composer Dave Gibson and Patti Stephens}
+{meta: x_source classic-country}
+{meta: x_source_file Congratulationslyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Congratu[C]lations [G7]you made a [C]fool out of [F]me
@@ -33,3 +36,7 @@ But now the vision's [C]gone [G7]it's time to [C]face reali[F]ty
 {start_of_verse: Verse 5}
 [Fm]Congratu[C]lations [Dm]you made a [G7]fool out of [F]me[Fm]   [C]
 {end_of_verse}
+
+
+
+

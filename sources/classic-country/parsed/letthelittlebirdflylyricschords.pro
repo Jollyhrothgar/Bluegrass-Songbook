@@ -1,6 +1,9 @@
 {meta: title Let The Little Bird Fly}
 {meta: artist T.G.Sheppard}
 {meta: composer Curly Putman and Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file letthelittlebirdflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She came into my life one [Dm]spring
@@ -56,3 +59,9 @@ And if it [F]returns it will be yours [Em]forever
 [Am]And if it should [Dm]go and stay
 [G7]It was never yours [F]any[C]way
 {end_of_verse}
+
+
+
+
+
+

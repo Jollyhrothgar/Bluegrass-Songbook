@@ -1,6 +1,9 @@
 {meta: title I Miss You So}
 {meta: artist Mickey Gilley}
 {meta: composer Jimmy Henderson, Bertha Scott, Sid Robin}
+{meta: x_source classic-country}
+{meta: x_source_file imissyousolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Those happy hours
@@ -30,3 +33,6 @@ Filled to the top with [G7]tears
 Most of [G7]all I miss you [C]so
 Repeat last verse
 {end_of_verse}
+
+
+

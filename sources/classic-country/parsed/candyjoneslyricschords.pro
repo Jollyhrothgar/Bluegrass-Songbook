@@ -1,5 +1,8 @@
 {meta: title Candy Jones}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file candyjoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Candy Candy [G7]little miss Candy [C]Jones
@@ -42,3 +45,9 @@ You may have married your Candy and have a little girl that’s three
 [G7]Little miss Candy [C]Jones
 [G7]Little miss Candy [C]Jones
 {end_of_verse}
+
+
+
+
+
+

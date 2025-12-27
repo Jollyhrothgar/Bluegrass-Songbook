@@ -1,5 +1,8 @@
 {meta: title My Heart Skips A Beat}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file myheartskipsabeatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh my heart skips a beat when we walk down the [C]street
@@ -26,3 +29,6 @@ Repeat #1
 {start_of_verse: Verse 4}
 Repeat #1
 {end_of_verse}
+
+
+

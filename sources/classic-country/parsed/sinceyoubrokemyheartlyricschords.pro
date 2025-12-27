@@ -1,6 +1,9 @@
 {meta: title Since You Broke My Heart}
 {meta: artist Everly Brothers}
 {meta: composer written by Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file sinceyoubrokemyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say the [F]blues went out of [C]style
@@ -17,3 +20,4 @@ Just play a few [F]hands of soli[C]taire
 [G7]All the [F]remedies don't work for [E7]me
 [G7]Since you broke my [C]heart
 {end_of_verse}
+

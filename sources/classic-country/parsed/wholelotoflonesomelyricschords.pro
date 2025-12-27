@@ -1,6 +1,9 @@
 {meta: title Whole Lot Of Lonesome}
 {meta: artist David Allan Coe}
 {meta: composer David Allan Coe and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file wholelotoflonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You put a whole lot of lonesome in me can't you see
@@ -40,3 +43,8 @@ Then [G]you put a whole lot of [D7]lonesome in [G]me
 {start_of_verse: Verse 5}
 Yes I've got a whole lot of [D7]lonesome in [C]me[G]
 {end_of_verse}
+
+
+
+
+

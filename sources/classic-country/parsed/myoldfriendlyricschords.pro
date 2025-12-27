@@ -1,6 +1,9 @@
 {meta: title My Old Friend}
 {meta: artist Keith Whitley}
 {meta: composer Claude Putman Jr. and Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file myoldfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to get a lot of [F]pleasure from the [C]bottle
@@ -36,3 +39,7 @@ But darlin' [C]your love picked me [F]up and made me [C]see
 I [F]can't be[C]lieve my old [G7]friend would turn on [C]me
 I [F]can't be[C]lieve my old [G7]friend would turn on [F]me [C]
 {end_of_verse}
+
+
+
+

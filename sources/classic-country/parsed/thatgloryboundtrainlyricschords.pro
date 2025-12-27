@@ -1,6 +1,9 @@
 {meta: title That Glory Bound Train}
 {meta: artist Kitty Wells}
 {meta: composer Roy Acuff and Odell McLeod}
+{meta: x_source classic-country}
+{meta: x_source_file thatgloryboundtrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come and listen won't you brother 
@@ -64,3 +67,11 @@ For that Glory bound train
 Oh will you ride oh will you ride 
 Will you ride that train to Glory [G7]by and [C]by
 {end_of_verse}
+
+
+
+
+
+
+
+

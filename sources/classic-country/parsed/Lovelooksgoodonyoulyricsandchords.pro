@@ -1,6 +1,9 @@
 {meta: title Love Looks Good On You}
 {meta: artist Lefty Frizzell}
 {meta: composer Jerry Shook}
+{meta: x_source classic-country}
+{meta: x_source_file Lovelooksgoodonyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've never seen that [G7]look in your [C]eyes before
@@ -28,3 +31,6 @@ So I guess I'd better [C7]go  [F]before I let it show
 One more [C]thing love [G7]sure looks good on [C]you
 Love [G7]sure looks good on [C]you
 {end_of_verse}
+
+
+

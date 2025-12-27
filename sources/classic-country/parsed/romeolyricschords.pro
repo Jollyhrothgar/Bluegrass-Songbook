@@ -1,5 +1,8 @@
 {meta: title Romeo}
 {meta: artist Chad Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file romeolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Most sheilas think that I'm so cute [A#7]they all give me a smile
@@ -42,3 +45,8 @@ I've told you all about myself and [A#7]what a time I've had
 So [F]if you jokers want a life that's [C]fun and fancy free
 Just stay away from sheilas and [G7]live them all to [C]me
 {end_of_verse}
+
+
+
+
+

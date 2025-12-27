@@ -1,5 +1,8 @@
 {meta: title You're Heading For Heartaches}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file youreheadingforheartacheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're heading for heartaches [G7]by playing [C]around
@@ -21,3 +24,5 @@ You're heading for heartaches [G7]now that you've made up your [C]mind
 You're [C]heading for heartaches [G7]and it won't be very [C]long
 Till [G7]I have someone else to love and you left all [C]alone
 {end_of_verse}
+
+

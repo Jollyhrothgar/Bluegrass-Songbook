@@ -1,5 +1,8 @@
 {meta: title Goodbye Baby}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Goodbye [Am]baby bye bye
@@ -51,3 +54,9 @@ Take my [F]hand pretty [Am]baby bye bye
 [F](Good [Am]bye bye)
 [F](Good [Am]bye bye)
 {end_of_verse}
+
+
+
+
+
+

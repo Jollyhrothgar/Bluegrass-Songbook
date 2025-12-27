@@ -1,6 +1,9 @@
 {meta: title You're Too Young To Cry Now}
 {meta: artist Hank Thompson}
 {meta: composer Bud Fisher and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file youretooyoungtocrynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take your crush from my [A7]heart and bye now
@@ -33,3 +36,6 @@ And [G7]find an older gal
 [C]Bye with a [A7]kiss and a sigh now
 Cause [D7]baby you’re too [G7]young to [C]cry now
 {end_of_verse}
+
+
+

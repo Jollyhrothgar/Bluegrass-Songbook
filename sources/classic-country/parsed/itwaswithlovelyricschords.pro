@@ -1,6 +1,9 @@
 {meta: title It Was With Love}
 {meta: artist Buck Owens}
 {meta: composer Don Rich and Loudilla Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file itwaswithlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was with love my Savior drew me [G7]to Him 
@@ -22,3 +25,5 @@ Come follow me lay down your tools and [C]gold
 I'll love and serve my dear Redeemer [F]always 
 It [G7]was with love that Jesus saved my [C]soul
 {end_of_verse}
+
+

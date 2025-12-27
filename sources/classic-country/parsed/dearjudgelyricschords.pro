@@ -1,6 +1,9 @@
 {meta: title Dear Judge}
 {meta: artist Ernest Tubb}
 {meta: composer Billy Hughes}
+{meta: x_source classic-country}
+{meta: x_source_file dearjudgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The divorce had been granted 
@@ -29,3 +32,6 @@ And [C]gone are the dreams I once [G7]had
 To [C]me there's no other can [C7]be like my [F]mother
 But I [C]still want to [G7]be with my [C]dad 
 {end_of_verse}
+
+
+

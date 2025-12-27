@@ -1,6 +1,9 @@
 {meta: title I'll Never Shed Another Tear}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file illnevershedanothertearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I used to sit alone at night and worry [C]little [G]darling
@@ -43,3 +46,8 @@
 [G]There's nothing you can do that will ever [C]change my [G]feelings
 [D7]So I'll never shed another [G]tear
 {end_of_verse}
+
+
+
+
+

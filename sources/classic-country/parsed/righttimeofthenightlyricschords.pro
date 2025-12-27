@@ -1,6 +1,9 @@
 {meta: title Right Time Of The Night}
 {meta: artist Reba McEntire}
 {meta: composer Peter McCann}
+{meta: x_source classic-country}
+{meta: x_source_file righttimeofthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sun goes [F]down on a [C]silky [F]day
@@ -39,3 +42,8 @@ It's the [C]right [Em]time of the [F]night
 [C]The stars are winking [F]above
 It's the [C]right [Em]time of the [F]night for making [C]love
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Patanio The Pride Of The Plains}
 {meta: artist Billy Walker}
 {meta: composer Harry C. McAuliffe and Bobby Gregory}
+{meta: x_source classic-country}
+{meta: x_source_file pataniotheprideoftheplainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You look at the picture with a [G7]wondering [C]eye
@@ -85,3 +88,14 @@ It was shot through my leg boot [G7]stirrup and [C]all
 On many fine horses I've [F]since drawn the [C]reins
 But none like Patanio the pride [G7]of the [C]plains
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

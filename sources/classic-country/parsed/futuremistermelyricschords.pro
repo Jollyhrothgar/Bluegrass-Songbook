@@ -1,6 +1,9 @@
 {meta: title Future Mister Me}
 {meta: artist Randy Travis}
 {meta: composer John Lindley and Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file futuremistermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't come in here to fight [F]I didn't come to [Fm]ruin your night
@@ -26,3 +29,6 @@ All [C]alone with the [G7]future mister [F]me[C]  [G7]
 {start_of_verse: Verse 4}
 You'll be [C]alone here with the [G7]future mister [F]me [Fm]   [C]
 {end_of_verse}
+
+
+

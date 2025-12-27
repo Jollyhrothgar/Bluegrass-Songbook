@@ -1,6 +1,9 @@
 {meta: title Do Lord}
 {meta: artist Johnny Cash}
 {meta: composer Verne O. Fossett}
+{meta: x_source classic-country}
+{meta: x_source_file dolordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve got a home in Glory Land
@@ -64,3 +67,15 @@ That outshines the sun
 [F]I’ve got a home in Glory Land
 [C]That outshines the sun
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

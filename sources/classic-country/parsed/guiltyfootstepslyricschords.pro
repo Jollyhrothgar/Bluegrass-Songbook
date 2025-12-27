@@ -1,6 +1,9 @@
 {meta: title Guilty Footsteps}
 {meta: artist David Allan Coe}
 {meta: composer David A. Coe, Margaret Smith, Nova Fitzgerald}
+{meta: x_source classic-country}
+{meta: x_source_file guiltyfootstepslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The key turns [G7]in the [C]door the boards [G7]squeak on the [C]floor
@@ -36,3 +39,8 @@ When she [F]hears my guilty [G7]footsteps in the [C]hall
 {start_of_verse: Verse 5}
 Oh when she [F]hears my guilty [G7]footsteps in the [F]hal[C]l
 {end_of_verse}
+
+
+
+
+

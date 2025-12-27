@@ -1,5 +1,8 @@
 {meta: title It Takes People Like You}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file ittakespeoplelikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It takes people [Em]like you to make [F]people like [C]me
@@ -32,3 +35,7 @@ It takes [F]people like [C]you to make [G7]people like [C]me
 {start_of_verse: Verse 4}
 It takes [F]people like [C]you to make [G7]people like [C]me
 {end_of_verse}
+
+
+
+

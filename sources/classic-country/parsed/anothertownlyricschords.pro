@@ -1,5 +1,8 @@
 {meta: title Another Town}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file anothertownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lovin' [C]you was just a [G]storybook affair
@@ -49,3 +52,9 @@ Another [C]town another [G]set of swinging doors
 And somehow [B7]I'm a little bit [C]suspicious in my [A7]mind
 It's another [G]town that [C]don't need my [G]kind
 {end_of_verse}
+
+
+
+
+
+

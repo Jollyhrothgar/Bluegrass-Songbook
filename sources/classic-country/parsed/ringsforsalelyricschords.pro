@@ -1,6 +1,9 @@
 {meta: title Rings For Sale}
 {meta: artist Roger Miller}
 {meta: composer John Hadley}
+{meta: x_source classic-country}
+{meta: x_source_file ringsforsalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got rings for sale and they're all made out of nails
@@ -36,3 +39,7 @@ That I polished on the bottom of my shoe [C7]
 You can [F]give one to a [C]friend or you can [Em]bend it back a[F]gain
 And pre[C]tend I sold a [G7]shiny nail to [F]you [C]
 {end_of_verse}
+
+
+
+

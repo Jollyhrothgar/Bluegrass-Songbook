@@ -1,6 +1,9 @@
 {meta: title Loving Arms}
 {meta: artist Johnny Duncan and Janie Fricke}
 {meta: composer Tom Jans}
+{meta: x_source classic-country}
+{meta: x_source_file lovingarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you could see me now 
@@ -42,3 +45,8 @@ I've been [C]too long in the [D7]wind
 {start_of_verse: Verse 5}
 I can [C]almost feel your [D7]loving arms [G]again
 {end_of_verse}
+
+
+
+
+

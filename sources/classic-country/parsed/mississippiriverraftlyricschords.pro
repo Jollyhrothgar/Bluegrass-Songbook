@@ -1,6 +1,9 @@
 {meta: title Mississippi River Raft}
 {meta: artist J.D. Crowe}
 {meta: composer Johnson, Harrington, Teague}
+{meta: x_source classic-country}
+{meta: x_source_file mississippiriverraftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm away down [C]river from the [G]past
@@ -46,3 +49,9 @@ On the Missi[D7]ssippi River [G]raft
 On the Missi[D7]ssippi River [G]raft
 On the Missi[D7]ssippi River [G]raft
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Walk on By}
 {meta: artist Leroy Van Dyke}
+{meta: x_source classic-country}
+{meta: x_source_file walkonbylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I see you to[C]morrow [D7]on some street in [G]town
@@ -32,3 +35,7 @@ I [C]love you but we're [D7]strangers when we [G]meet
 {start_of_verse: Verse 4}
 I [C]love you but we're [D7]strangers when we [G]meet
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Highway Of Sorrow}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file highwayofsorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I once had a darling was [C]kind true and [G]sweet
@@ -28,3 +31,6 @@ I’ve lost all my true friends I’ve lost a happy [D7]home
 I’m [G]headed for destruction [C]I’m on the wrong [G]track
 Down a Highway of Sorrow [D7]there’s no turning [G]back
 {end_of_verse}
+
+
+

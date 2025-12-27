@@ -1,6 +1,9 @@
 {meta: title Amateur In Love}
 {meta: artist Slim Whitman}
 {meta: composer Lou Wayne and Jerry Christ}
+{meta: x_source classic-country}
+{meta: x_source_file amateurinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Not some other guy can [C]look into your eyes
@@ -36,3 +39,7 @@ So [A7]hold me darling won’t you please and [D7]never let me go
 And if [G]I seemed to blush just [C]take your time don’t rush
 For [G]I am just an [D7]amateur in [G]love
 {end_of_verse}
+
+
+
+

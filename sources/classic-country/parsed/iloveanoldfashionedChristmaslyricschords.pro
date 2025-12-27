@@ -1,6 +1,9 @@
 {meta: title I Love An Old Fashioned Christmas}
 {meta: artist Bobby Bare}
 {meta: composer Theodore Purvil}
+{meta: x_source classic-country}
+{meta: x_source_file iloveanoldfashionedChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love an old [F]fashioned [G]Christmas
@@ -23,3 +26,6 @@ Repeat
 {start_of_verse: Verse 4}
 [Am]Especially when [D7]I’m with [G]you
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Worried Mind}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file worriedmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've promised me love [C7]that would never [F]die 
@@ -21,3 +24,5 @@ That promise you [C]made was only a [G7]lie
 Now after you've [C]gone all [C7]alone I'll [F]pine 
 For all that I've [C]got   is [G7]a worried [C]mind
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Is It Already Time}
 {meta: artist George Strait}
 {meta: composer Aaron Baker}
+{meta: x_source classic-country}
+{meta: x_source_file isitalreadytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The [F]years have [C]been
@@ -34,3 +37,7 @@ Is it [G7]already [C]time
 [F]And we believed we had [C]forever on our [Dm]side
 Is it [G7]already [C]time
 {end_of_verse}
+
+
+
+

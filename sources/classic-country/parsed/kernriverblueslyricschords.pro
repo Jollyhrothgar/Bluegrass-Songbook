@@ -1,5 +1,8 @@
 {meta: title Kern River Blues}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file kernriverblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I’m leaving town tomorrow getting’ my breakfast [G7]in the [C]sky
@@ -36,3 +39,8 @@ Well I’m leavin’ town forever kiss an old box[G7]car good[C]bye
 Well I’m [F]leavin’ town forever kiss an old boxcar good[C]bye
 I dumped my [G7]blues out in the river before Kern River’s [C]dry
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Nothing Can Hurt You}
 {meta: artist Ricky Skaggs}
 {meta: composer John Salz}
+{meta: x_source classic-country}
+{meta: x_source_file nothingcanhurtyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a time in the [E7]morning when I feel [F]a cold [C]chill
@@ -57,3 +60,10 @@
 [F]No one can hurt [Am]you
 [Dm]Like someone  [G7]someone you [C]love
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Claudette}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file claudettelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I got a brand-new baby and I feel so good
@@ -34,3 +37,8 @@ She loves me even better than I thought she would
 I'm on my way to her house and I'm plumb out [F]of breath
 When I see her tonight I'm gonna squeeze [G7]her to death
 {end_of_verse}
+
+
+
+
+

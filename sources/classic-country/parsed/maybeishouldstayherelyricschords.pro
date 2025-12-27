@@ -1,6 +1,9 @@
 {meta: title Maybe I Should Stay Here}
 {meta: artist Alan Jackson}
 {meta: composer Robert Castleman and Melanie Castleman}
+{meta: x_source classic-country}
+{meta: x_source_file maybeishouldstayherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe I should [D7]stay here [G7]for the rest of my [C]life
@@ -29,3 +32,6 @@ If it happens natura[C]lly oh [F]yeah
 [C]So maybe we should [D7]stay here [G7]for all eterni[Am]ty
 [Fm]Oh baby we should [D7]stay here [G7]just you and [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title How Are Things In Paradise}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melson and Roy K. Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file howarethingsinparadiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How are [Em]things in [G]para[Em]dise since [C]you found a [D7]new ro[G]mance[Em]   [C]  [D7]
@@ -17,3 +20,4 @@ Is there [G]sunshine or rain are you [C]coming home [A7]again
 Oh [G]how are [Em]things in [G]paradise how are [Em]things in para[G]dise
 How are [Em]things in [G]para[Em]dise since [Am]you [D7]said good[G]bye
 {end_of_verse}
+

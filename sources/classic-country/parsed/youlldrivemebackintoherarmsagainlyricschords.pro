@@ -1,6 +1,9 @@
 {meta: title You'll Drive Me Back Into Her Arms Again}
 {meta: artist Faron Young}
 {meta: composer Merle Kilgore and Miriam Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file youlldrivemebackintoherarmsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told you if your lips stayed so cold to [G7]me
@@ -31,3 +34,7 @@ I let you take my heart  but you can't break my [F]heart
 {start_of_verse: Verse 5}
 [G7]You'll drive me back into her arms [C]again
 {end_of_verse}
+
+
+
+

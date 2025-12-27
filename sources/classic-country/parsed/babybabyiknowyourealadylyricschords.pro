@@ -1,6 +1,9 @@
 {meta: title Baby Baby (I Know You're A Lady)}
 {meta: artist Ferlin Husky}
 {meta: composer Norro Wilson and Alex Harvey}
+{meta: x_source classic-country}
+{meta: x_source_file babybabyiknowyourealadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby hear me callin' baby
@@ -28,3 +31,5 @@ But I wanna watch the sun come up with [C]you
 [G7]I know that you're a lady 
 But I wanna watch the sun come up with [C]you
 {end_of_verse}
+
+

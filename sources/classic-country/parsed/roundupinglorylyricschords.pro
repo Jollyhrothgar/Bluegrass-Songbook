@@ -1,5 +1,8 @@
 {meta: title Roundup In Glory}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file roundupinglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I get to the end of my [C]journey
@@ -28,3 +31,6 @@
 [G]Sweetest rest for our labors will be [C]given
 [G]At the roundup [D7]in glory [G]someday
 {end_of_verse}
+
+
+

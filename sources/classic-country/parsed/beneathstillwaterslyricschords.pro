@@ -1,6 +1,9 @@
 {meta: title Beneath Still Waters}
 {meta: artist Emmylou Harris}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file beneathstillwaterslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Beneath still [F]waters  [G7]there's a strong und[C]ertow
@@ -33,3 +36,7 @@ Tag:
 Beneath still [F]waters [G7] your love is[C] gone
 Beneath still[F] waters[G7] your love is[C] gone
 {end_of_verse}
+
+
+
+

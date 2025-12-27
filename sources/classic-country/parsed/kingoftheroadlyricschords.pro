@@ -1,6 +1,9 @@
 {meta: title King of the Road}
 {meta: artist The Statler Brothers}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file kingoftheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Trailer for sale [C]or rent rooms [D7]to let fifty [G]cents
@@ -29,3 +32,6 @@ No phone no pool no pets [C]I ain't got no cigarettes ah [D7]but
 [G]Two hours of [C]pushing broom buys a eight by [D7]twelve four-bit [G]room
 I'm a man of [C]means by no means [D7]King of the [G]Road
 {end_of_verse}
+
+
+

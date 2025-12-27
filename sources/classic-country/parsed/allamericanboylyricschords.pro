@@ -1,5 +1,8 @@
 {meta: title All American Boy}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file allamericanboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gather round cats and I'll [F]tell you a story
@@ -56,3 +59,9 @@ But then one day my [F]Uncle Sam he said (kn[C]ock knock) here I am
 [F]Uncle Sam needs you boy I'm a [C]gonna cut your hair off
 Ah take this rifle kid give me that guitar yeah
 {end_of_verse}
+
+
+
+
+
+

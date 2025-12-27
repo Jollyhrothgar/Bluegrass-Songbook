@@ -1,6 +1,9 @@
 {meta: title I Don't Want To Be A Memory}
 {meta: artist Lee Greenwood}
 {meta: composer James Pennington and Sonny Lemaire}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttobeamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been the one you talked to
@@ -53,3 +56,9 @@ I've [F]always tried to be
 Every[C]thing you'd ever [F]need
 [Dm]I don't wanna [G7]be a memo[C]ry
 {end_of_verse}
+
+
+
+
+
+

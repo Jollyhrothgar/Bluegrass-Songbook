@@ -1,6 +1,9 @@
 {meta: title Love Is On A Roll}
 {meta: artist Don Williams}
 {meta: composer Roger Prine and Roger Cook}
+{meta: x_source classic-country}
+{meta: x_source_file loveisonarolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't work late although I need the money
@@ -59,3 +62,13 @@ Be with my woman soft and curvy
 [A#7]A----h  [C]love is on a [G]roll
 [A#7]A----h [C]love is on a good [G]roll
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title To God To Be The Glory}
 {meta: artist The Jordanaires}
 {meta: composer James F. Hammerly, Fanny Crosby, William Doane}
+{meta: x_source classic-country}
+{meta: x_source_file toGodtobetheglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To God be the glory great [G7]things He hath [C]done
@@ -48,3 +51,7 @@ Through [G7]Jesus the [C]Son
 And [F]give Him the [C]glory
 Great [D7]things [G7]He has [C]done
 {end_of_verse}
+
+
+
+

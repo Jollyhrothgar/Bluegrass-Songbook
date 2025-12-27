@@ -1,6 +1,9 @@
 {meta: title How Much Is That Hound Dog In The Window}
 {meta: artist Homer and Jethro}
 {meta: music Bob Merrill}
+{meta: x_source classic-country}
+{meta: x_source_file howmuchisthathounddoginthewindowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Original words and music by Bob Merrill
@@ -48,3 +51,9 @@ With the basketball nose on his [C]face
 You know what a basketball [G7]nose is
 It dribbles all over the [C]place
 {end_of_verse}
+
+
+
+
+
+

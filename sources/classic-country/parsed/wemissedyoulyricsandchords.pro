@@ -1,6 +1,9 @@
 {meta: title We Missed You}
 {meta: artist Doyle Lawson}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file wemissedyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The nights were [D7]never so [G]lonely  
@@ -33,3 +36,7 @@ We [G]missed you and [D7]we're glad you've come [G]hom[C]e
 {start_of_verse: Verse 5}
 [G]We missed you and we're [D7]glad you've come [G]ho[C]me[G]
 {end_of_verse}
+
+
+
+

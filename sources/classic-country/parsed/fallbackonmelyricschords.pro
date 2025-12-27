@@ -1,6 +1,9 @@
 {meta: title Fall Back On Me}
 {meta: artist Charley Pride}
 {meta: composer Danny Dunn and Richard Root}
+{meta: x_source classic-country}
+{meta: x_source_file fallbackonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You're goin' searchin' for [C]somethin' that I [F]hope someday [G7]you'll [C]find
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]So try your [Am]wings and [D7]if you fall [F]you can fall back [G7]on [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Older And Bolder}
 {meta: artist Eddy Arnold}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file olderandbolderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many years ago when a girl said no 
@@ -62,3 +65,11 @@ And wiser than I used to [C]be
 [G7]I’m a little bit older and a little bit bolder 
 And wiser than I used to [C]be
 {end_of_verse}
+
+
+
+
+
+
+
+

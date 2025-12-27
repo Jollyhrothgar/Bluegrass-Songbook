@@ -1,6 +1,9 @@
 {meta: title Soft And Warm}
 {meta: artist Vernon Oxford}
 {meta: composer Durwood Haddock}
+{meta: x_source classic-country}
+{meta: x_source_file softandwarmlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I need your sweet love [G7]soft and [C]warm
@@ -40,3 +43,8 @@ While I'm touching you [G7]soft and [C]warm
 {start_of_verse: Verse 6}
 While I'm touching you [G7]soft and [C]warm
 {end_of_verse}
+
+
+
+
+

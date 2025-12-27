@@ -1,6 +1,9 @@
 {meta: title Freckles}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Sterling Whipple}
+{meta: x_source classic-country}
+{meta: x_source_file freckleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They'd all called her Freckles when summer was coming [C]around
@@ -45,3 +48,9 @@ And say I [C]only wanna [D7]see me through your [G]eyes
 {start_of_verse: Verse 7}
 And I'll say Freckles I [C]love you there's a [D7]rainbow on your [G]face
 {end_of_verse}
+
+
+
+
+
+

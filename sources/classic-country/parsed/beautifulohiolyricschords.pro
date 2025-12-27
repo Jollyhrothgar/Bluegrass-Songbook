@@ -1,5 +1,8 @@
 {meta: title Beautiful Ohio}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulohiolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Drifting with the current down a moonlit [G7]stream
@@ -21,3 +24,5 @@
 [A7]Beautiful O-hio in dreams [Dm]again I see
 [Dm][G7]Visions [G7]of what used to [C]be
 {end_of_verse}
+
+

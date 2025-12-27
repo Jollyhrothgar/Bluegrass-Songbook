@@ -1,6 +1,9 @@
 {meta: title Don't Be Ashamed Of Your Age}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker and Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file dontbeashamedofyouragelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don’t be a[G7]shamed of your [C]age
@@ -31,3 +34,6 @@ And what’s more [C]you’ve graduated from that [D7]old southern [A7]state
 [D7]Don’t be [G7]ashamed of your [C]age  [A7]brother
 [D7]Don’t be [G7]ashamed of your [C]age
 {end_of_verse}
+
+
+

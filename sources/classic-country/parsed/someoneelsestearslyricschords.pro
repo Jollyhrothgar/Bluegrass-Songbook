@@ -1,6 +1,9 @@
 {meta: title Someone Else's Tears}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Gerry House}
+{meta: x_source classic-country}
+{meta: x_source_file someoneelsestearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here in the silence [G7]I can hear the truth[A#7]
@@ -46,3 +49,9 @@ It's [G7]like I'm [C]drowning [F]here it's [C]like I'm drowning [F]here
 You're not [G7]cryin' over [F]me and I [Fm]need some [C]room to breathe
 It's [G7]like I'm [C]drowning [F]here in [Fm]someone else's [C]tears
 {end_of_verse}
+
+
+
+
+
+

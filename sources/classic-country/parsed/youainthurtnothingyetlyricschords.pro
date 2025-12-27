@@ -1,6 +1,9 @@
 {meta: title You Ain’t Hurt Nothing Yet}
 {meta: artist John Anderson}
 {meta: composer Al Anderson and Billy Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file youainthurtnothingyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You think your hurtin’ [F]don’t make me [C]laugh 
@@ -35,3 +38,6 @@ Fractured [C]bones [F]skins and [C]scrapes well they heal over they go [C7]away
 Until your [G7]hearts been broken you ain’t hurt nothin' [C]yet
 Until your [G7]hearts been broken you ain’t hurt nothin' ain’t hurt nothin' [C]yet
 {end_of_verse}
+
+
+

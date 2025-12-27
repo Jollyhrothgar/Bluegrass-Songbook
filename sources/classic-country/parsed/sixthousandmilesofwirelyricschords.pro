@@ -1,6 +1,9 @@
 {meta: title Six Thousand Miles Of Wire}
 {meta: artist Red Steagall}
 {meta: composer Russell D. Steagall and Danny M. Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file sixthousandmilesofwirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we first saw the plains there was [F]nothing but [C]grass
@@ -59,3 +62,10 @@ With [Dm]six thousand [G7]miles of [C]wire
 {start_of_verse: Verse 6}
 There was [Dm]six thousand [G7]miles of [C]wire
 {end_of_verse}
+
+
+
+
+
+
+

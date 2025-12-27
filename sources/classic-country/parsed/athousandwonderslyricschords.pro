@@ -1,6 +1,9 @@
 {meta: title A Thousand Wonders}
 {meta: artist Wynn Stewart}
 {meta: composer Dale Noe and Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file athousandwonderslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You don't hate me you still love [D7]me
@@ -29,3 +32,6 @@
 [G]Now did you know how much I love [C]you
 [G]It's a thousand [D7]wonders that you [G]do
 {end_of_verse}
+
+
+

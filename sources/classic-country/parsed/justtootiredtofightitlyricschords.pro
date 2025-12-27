@@ -1,6 +1,9 @@
 {meta: title Just Too Tired To Fight It}
 {meta: artist Travis Tritt}
 {meta: composer Stewart Harris and Travis Tritt}
+{meta: x_source classic-country}
+{meta: x_source_file justtootiredtofightitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here comes [G]that same old memory 
@@ -70,3 +73,11 @@ I'm [G]just too tired to [D7]fight it [C]any[G]more
 {start_of_verse: Verse 8}
 Yeah I'm just too tired to [D7]fight it [C]any[G]more
 {end_of_verse}
+
+
+
+
+
+
+
+

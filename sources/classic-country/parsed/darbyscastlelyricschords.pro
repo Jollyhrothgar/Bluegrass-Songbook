@@ -1,5 +1,8 @@
 {meta: title Darby's Castle}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file darbyscastlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]See the ruin on the [Am]hill
@@ -65,3 +68,11 @@ Split the [G]shadows where [G7]two bodies lay en[G]tangled
  But it [G]only took one [G7]night to bring it [G]down
  When Darby's castle [G7]tumbled to the [C]ground 
 {end_of_verse}
+
+
+
+
+
+
+
+

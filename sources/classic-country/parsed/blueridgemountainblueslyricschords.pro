@@ -1,6 +1,9 @@
 {meta: title Blue Ridge Mountain Blues}
 {meta: artist Mac Wiseman}
 {meta: composer Bill Clifton and Buddy Dee}
+{meta: x_source classic-country}
+{meta: x_source_file blueridgemountainblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was young and in my [D7]prime
@@ -36,3 +39,7 @@ I can hear those hound dogs [G]bay
 I’ll hunt the possum where the [C]corn tops blossom
 In the [D7]Blue Ridge far [G]away
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Please Don't Stop Loving Me}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file pleasedontstoplovingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please please  [F]don't stop loving [C]me 
@@ -33,3 +36,7 @@ For I couldn't [G7]make it [C]alone
 Tag:
 Please please [G7]don't stop loving [C]me
 {end_of_verse}
+
+
+
+

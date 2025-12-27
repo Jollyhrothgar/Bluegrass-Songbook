@@ -1,5 +1,8 @@
 {meta: title She's Not For You}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file shesnotforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pay no mind to her she only wants to [A]play
@@ -22,3 +25,5 @@ She just [F]looks for greener pastures now and [C]then
 [C]So just leave her here I'm used to feeling [A]blue
 But she's not for [G7]you  she's not for [F]y-o[C]u
 {end_of_verse}
+
+

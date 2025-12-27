@@ -1,6 +1,9 @@
 {meta: title I Want To Go With You}
 {meta: artist Eddy Arnold}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttogowithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want to go with [F]you
@@ -36,3 +39,7 @@ I want to go with [F]you
 The one your love takes me [F]to
 [G7]I want to go with [C]you
 {end_of_verse}
+
+
+
+

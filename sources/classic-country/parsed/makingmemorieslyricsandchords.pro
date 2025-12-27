@@ -1,5 +1,8 @@
 {meta: title Making Memories}
 {meta: artist Dottie West}
+{meta: x_source classic-country}
+{meta: x_source_file makingmemorieslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Making [F]memories to last a [C]lifetime
@@ -33,3 +36,7 @@ Making [F]memories to last a [C]lifetime
 Making [F]memories to last a [C]lifetime
 A [F]lifetime I'll be [G7]living without [C]you
 {end_of_verse}
+
+
+
+

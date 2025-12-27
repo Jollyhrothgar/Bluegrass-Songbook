@@ -1,5 +1,8 @@
 {meta: title Jesus Was A Capricorn}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuswasacapricornlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jesus was a Capricorn
@@ -42,3 +45,8 @@ Who [D7]they can feel better than [C]anytime they [G]please
 [C]Someone doin' somethin' dirty [G]decent folks can frown on
 If [D7]you can’t find nobody else [C]then help yourself to [G]me
 {end_of_verse}
+
+
+
+
+

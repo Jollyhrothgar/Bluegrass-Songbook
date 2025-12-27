@@ -1,6 +1,9 @@
 {meta: title What's Left Of Me}
 {meta: artist Dwight Yoakam}
 {meta: composer Dwight Yoakam and Mick Jagger}
+{meta: x_source classic-country}
+{meta: x_source_file whatsleftofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What's left of me [C]is not worth [G]much
@@ -40,3 +43,8 @@ Cause what's left of me [D7]is not [G]enough
 {start_of_verse: Verse 5}
 Yeah what's left of me [D7]is not [G]enough
 {end_of_verse}
+
+
+
+
+

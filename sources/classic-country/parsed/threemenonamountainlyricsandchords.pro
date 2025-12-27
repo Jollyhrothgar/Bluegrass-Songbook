@@ -1,6 +1,9 @@
 {meta: title Three Men On A Mountain}
 {meta: artist The Perrys}
 {meta: composer Wayne Haun and Joel Lindsey}
+{meta: x_source classic-country}
+{meta: x_source_file threemenonamountainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Three men on the [C]mountain
@@ -58,3 +61,10 @@ At the terrible [G]scene
 Three men on a [D7]mountain
 But only one Man was dying for [G]me
 {end_of_verse}
+
+
+
+
+
+
+

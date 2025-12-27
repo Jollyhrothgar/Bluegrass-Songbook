@@ -1,5 +1,8 @@
 {meta: title Happy Kind Of Sadness}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file happykindofsadnesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a happy kind of sadness [C]when I think of [G]you
@@ -33,3 +36,7 @@ Oh I laughed and made jokes about it but there'[A7]s one joke that I ain[D7]'t t
 Of how I [G]cried all the nights long if that's so [C]funny why am I so [G]blue
 It's a [C]happy kind of [G]sadness [D7]when I think of [C]yo[G]u
 {end_of_verse}
+
+
+
+

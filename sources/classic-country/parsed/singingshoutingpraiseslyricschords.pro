@@ -1,6 +1,9 @@
 {meta: title Singing Shouting Praises}
 {meta: artist The Osborne Brothers}
 {meta: composer Jake Landers}
+{meta: x_source classic-country}
+{meta: x_source_file singingshoutingpraiseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What a blessed day awaits us on that [C]hallelujah [G]shore
@@ -53,3 +56,8 @@ When the [G]saints of all the ages
 Gather around the throne up [C]there
 There'll be [G]singing shouting [Em]praises over [G]there ([C]over [G]there)
 {end_of_verse}
+
+
+
+
+

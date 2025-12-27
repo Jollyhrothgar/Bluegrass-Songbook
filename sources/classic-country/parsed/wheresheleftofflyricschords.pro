@@ -1,5 +1,8 @@
 {meta: title Where She Left Off}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file wheresheleftofflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know I miss you now that you're [A#7]really gone
@@ -38,3 +41,7 @@ I [G7]need some[C]one to [G7]take up where she left [C]off
 {start_of_verse: Verse 4}
 Don'tcha [A#7]know I'm [C]needin' someone to [G7]take up where she left [C]off
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Thanks For All The Yesterdays}
 {meta: artist Mac Wiseman}
 {meta: composer Bobby Osborne}
+{meta: x_source classic-country}
+{meta: x_source_file thanksforalltheyesterdayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Thanks for [D7]all the [C]yester[G]days
@@ -28,3 +31,6 @@ They’ll guide me when I'm lonely
 {start_of_verse: Verse 4}
 [C]Thanks for [D7]all the [C]yes[D7]ter[C]da[G]ys
 {end_of_verse}
+
+
+

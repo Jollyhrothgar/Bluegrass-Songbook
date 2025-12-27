@@ -1,6 +1,9 @@
 {meta: title One Too Many Mornings}
 {meta: artist Bill Anderson}
 {meta: composer Mike Settle}
+{meta: x_source classic-country}
+{meta: x_source_file onetoomanymorningslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I [F]woke up one too many [C]mornings
@@ -31,3 +34,6 @@ Love you [G7]never seemed to need when it was [C]there
 [C]Left me [F]lonely [D7]left me [G7]crying
 [E7]Left me no [G7]choice but to say goodbye to [C]you
 {end_of_verse}
+
+
+

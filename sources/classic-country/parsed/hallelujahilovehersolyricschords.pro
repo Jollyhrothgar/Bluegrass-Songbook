@@ -1,6 +1,9 @@
 {meta: title Hallelujah I Love Her So}
 {meta: artist Conway Twitty}
 {meta: composer Ray Charles}
+{meta: x_source classic-country}
+{meta: x_source_file hallelujahilovehersolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let me tell you bout a [C]girl I [D7]know
@@ -57,3 +60,9 @@ That's [G]why I know yes yes
 [A7]Hallelujah I just [D7]love her [G]so (hallelujah)
 [A7]Hallelujah I just [D7]love her [G]so (hallelujah)
 {end_of_verse}
+
+
+
+
+
+

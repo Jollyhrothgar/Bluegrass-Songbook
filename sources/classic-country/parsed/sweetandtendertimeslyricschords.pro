@@ -1,6 +1,9 @@
 {meta: title Sweet And Tender Times}
 {meta: artist Don Gibson}
 {meta: composer Shel Silverstein and Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file sweetandtendertimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the last song is written [D7]and the story’s told
@@ -33,3 +36,7 @@ And [D7]remember the sweet and tender [G]times
 {start_of_verse: Verse 4}
 And [D7]remember the sweet and tender [G]times
 {end_of_verse}
+
+
+
+

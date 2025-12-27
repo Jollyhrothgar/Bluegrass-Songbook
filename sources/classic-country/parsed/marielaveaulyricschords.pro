@@ -1,6 +1,9 @@
 {meta: title Marie Laveau}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein and Baxtor Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file marielaveaulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down in Louisiana where the black trees grow 
@@ -73,3 +76,15 @@ If she ever asks you to make her [C]your wife
 Man you better stay with her for the rest of your [G]life 
 Or it'll be [C](growl) [D7]another man done [G]gone  
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

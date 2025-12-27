@@ -1,6 +1,9 @@
 {meta: title Put On An Old Pair Of Shoes}
 {meta: artist Jim Ed Brown}
 {meta: composer Billy Hill}
+{meta: x_source classic-country}
+{meta: x_source_file putonanoldpairofshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Put [F]on an [C]old pair of shoes 
@@ -42,3 +45,8 @@ In all the old familiar places
 As we [G7]mend the broken laces 
 Of an [D7]old [G7]pair of [C]shoes
 {end_of_verse}
+
+
+
+
+

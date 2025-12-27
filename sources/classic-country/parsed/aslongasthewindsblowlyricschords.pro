@@ -1,6 +1,9 @@
 {meta: title As Long As The Winds Blow}
 {meta: artist Jim and Jesse}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file aslongasthewindsblowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No one can ever hold the wind
@@ -42,3 +45,9 @@ Momma it's so good to be back home
 As long as the winds blow as long as the rivers flow
 [D7]As long as the train whistles [G]scream
 {end_of_verse}
+
+
+
+
+
+

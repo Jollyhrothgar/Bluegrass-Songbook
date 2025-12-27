@@ -1,6 +1,9 @@
 {meta: title Everyone Needs Someone}
 {meta: artist Mel Tillis}
 {meta: composer Buddy Cannon and Gene Dunlap}
+{meta: x_source classic-country}
+{meta: x_source_file everyoneneedssomeonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everyone needs someone to [F]talk to
@@ -50,3 +53,9 @@ And [G7]touch somebody he [C]loves
 Happy is the man who can [F]reach out his hand
 And [G7]touch somebody he [C]loves
 {end_of_verse}
+
+
+
+
+
+

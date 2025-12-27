@@ -1,5 +1,8 @@
 {meta: title I Can Do Nothing Alone}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file icandonothingalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I plowed the fields and [G7]I planted the [C]seed
@@ -35,3 +38,7 @@ I'm [G7]weak and my Master is [C]strong
 I held the [C7]pencil but [F]He wrote this [C]song
 For I can do [G7]nothing a[C]lone
 {end_of_verse}
+
+
+
+

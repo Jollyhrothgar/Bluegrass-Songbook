@@ -1,5 +1,8 @@
 {meta: title She Was Young And She Was Pretty}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file shewasyoungandshewasprettylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was young and [F]she was [C]pretty 
@@ -46,3 +49,8 @@ When the roses [F]kissed the [C]dew
 [F]She was young and so [C]untrue
 [F]She was young and so [C]untrue
 {end_of_verse}
+
+
+
+
+

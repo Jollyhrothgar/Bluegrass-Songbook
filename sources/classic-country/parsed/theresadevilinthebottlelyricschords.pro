@@ -1,6 +1,9 @@
 {meta: title There's A Devil In The Bottle}
 {meta: artist Hank Williams Jr.}
 {meta: composer Bobby David}
+{meta: x_source classic-country}
+{meta: x_source_file theresadevilinthebottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I come home late at night [F]with my boots in my hands 
@@ -34,3 +37,7 @@ And he [C]won't re[G7]st until I'm [F]dead[C]
 [G7]There's a [C]devil living in this [F]bottle  
 And he [C]won't re[G7]st until I'm [F]dead[C]
 {end_of_verse}
+
+
+
+

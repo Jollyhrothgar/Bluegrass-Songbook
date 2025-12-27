@@ -1,6 +1,9 @@
 {meta: title Let's Pretend We're Kids Again}
 {meta: artist Wynn Stewart}
 {meta: composer Bobby Wayne and Dave Pittman}
+{meta: x_source classic-country}
+{meta: x_source_file letspretendwerekidsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As we [G7]grew up [C]together 
@@ -34,3 +37,7 @@ Let's [F]pretend that [G7]we're kids once [C]again
 Oh if we [F]can't be [G7]happy as [C]grown[Am]ups 
 Let's [F]pretend that [G7]we're children once [C]again
 {end_of_verse}
+
+
+
+

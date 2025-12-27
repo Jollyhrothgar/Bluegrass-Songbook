@@ -1,6 +1,9 @@
 {meta: title I'll Go Get The Tool Box}
 {meta: artist Stonewall Jackson}
 {meta: composer Gene Crysler}
+{meta: x_source classic-country}
+{meta: x_source_file illgogetthetoolboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I sit there with my teardrops [G7]showing just the way I [C]felt
@@ -33,3 +36,7 @@ I'll go get the [G]tool box and you can [D7]fix our broken [G]home
 {start_of_verse: Verse 4}
 Yes [C]I'll go get the [G]tool box and you can [D7]fix our broken [G]home
 {end_of_verse}
+
+
+
+

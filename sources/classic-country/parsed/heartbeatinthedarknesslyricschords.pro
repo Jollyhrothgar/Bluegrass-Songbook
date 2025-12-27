@@ -1,6 +1,9 @@
 {meta: title Heartbeat In The Darkness}
 {meta: artist Don Williams}
 {meta: composer Dave Loggins and Russell Smith}
+{meta: x_source classic-country}
+{meta: x_source_file heartbeatinthedarknesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cadillac smiles in the ladies styles 
@@ -54,3 +57,11 @@ In the [F]darkness [G7]next to [C]mine
 [F]I wanna hear a [C]heartbeat 
 [F]I wanna hear a [C]heartbeat 
 {end_of_verse}
+
+
+
+
+
+
+
+

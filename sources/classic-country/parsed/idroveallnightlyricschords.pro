@@ -1,6 +1,9 @@
 {meta: title I Drove All Night}
 {meta: artist Roy Orbison}
 {meta: composer Thomas F. Kelly and William E. Steinberg}
+{meta: x_source classic-country}
+{meta: x_source_file idroveallnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I had to escape
@@ -50,3 +53,9 @@ Is that all right I drove all [C]night
 Could [F]taste your sweet kisses your arms open wide
 This [G7]fever for you is just burning me up [F]in-si[C]de
 {end_of_verse}
+
+
+
+
+
+

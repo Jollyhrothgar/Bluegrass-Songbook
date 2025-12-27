@@ -1,6 +1,9 @@
 {meta: title I Talked About You All Over Town}
 {meta: artist Mel Tillis}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file italkedaboutyouallovertownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Yes [G7]I  [C]talked about you [G7]all over [F]tow[G7]n
@@ -34,3 +37,7 @@ But a [F]promises is a [G7]promise and I [C]broke it
 [F]Cause [G7]I  [C]talked about you [G7]all over [C]town
 [F]Yes [G7]I  [C]talked about you [G7]all over [C]town
 {end_of_verse}
+
+
+
+

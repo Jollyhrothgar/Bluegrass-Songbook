@@ -1,6 +1,9 @@
 {meta: title This Time}
 {meta: artist Dwight Yoakam}
 {meta: composer Dwight Yoakam and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file thistimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This time is the last time that I'll ever call her name
@@ -40,3 +43,8 @@ Cause [D7]this time is the last time she'll ever hurt me [G]again
 {start_of_verse: Verse 4}
 Yeah [D7]this time is the last time she'll ever hurt me [G]again
 {end_of_verse}
+
+
+
+
+

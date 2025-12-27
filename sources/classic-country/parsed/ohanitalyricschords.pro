@@ -1,6 +1,9 @@
 {meta: title Oh Anita}
 {meta: artist Charlie Waller and Randall Hylton}
 {meta: composer Randall Hylton}
+{meta: x_source classic-country}
+{meta: x_source_file ohanitalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh Anita it's so good to [C]see you
@@ -43,3 +46,8 @@ Let the [D7]darkness and the music bring us [G]closer
 Like an old love song [C]make my heart feel warm
 Let’s make [D7]this our finest moment [G]Anita
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Pick Me Ups}
 {meta: artist Jim Ed Brown}
 {meta: composer Buck Graves}
+{meta: x_source classic-country}
+{meta: x_source_file pickmeupslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You wonder why I'm gone so much and come home late at [G7]night
@@ -23,3 +26,5 @@ I'll [G]just play dumb until they come and put me in the [G7]ground
 Then [C]I won't need no [G]pick me ups cause [D7]you can't put me [G]down
 No [C]I won't need the [G]pick me ups cause [D7]you can't put me [G]down
 {end_of_verse}
+
+

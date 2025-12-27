@@ -1,6 +1,9 @@
 {meta: title Gloryland March}
 {meta: artist The Masters Family}
 {meta: composer Johnny Marks and Johnnie Masters}
+{meta: x_source classic-country}
+{meta: x_source_file glorylandmarchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There is an army that is marching onto victory
@@ -56,3 +59,11 @@ Get on your [C7]knees and [F]pray
 Have please the wrong to right and join in the [C]fight
 And [D7]get in the [G7]Gloryland [C]march
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Stairs}
 {meta: artist Reba McEntire}
 {meta: composer Pamela Brown and Dalton Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file thestairslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She looks at the clock it's a [G7]quarter past nine
@@ -49,3 +52,8 @@ That she [Dm]fell down the [G7]stairs [C]again
 [Am]Just like [Em]before she'll [F]have to pretend
 That she [Dm]fell down the [G7]stairs [C]again
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Little Ole Wine Drinker Me}
 {meta: artist Lefty Frizzell}
 {meta: composer Tommy "Snuff" Garrett, Dick Jennings, Hank Mills}
+{meta: x_source classic-country}
+{meta: x_source_file littleolewinedrinkermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm praying for [C]rain in Cali[G]fornia
@@ -33,3 +36,7 @@ I [G]say a little old [C]wine [D7]drinker [G]me
 {start_of_verse: Verse 5}
 I say a little old [C]wine [D7]drinker [G]me
 {end_of_verse}
+
+
+
+

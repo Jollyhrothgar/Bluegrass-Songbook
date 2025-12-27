@@ -1,6 +1,9 @@
 {meta: title The Yellow Rose Of Texas}
 {meta: artist Ernest Tubb}
 {meta: composer Don George}
+{meta: x_source classic-country}
+{meta: x_source_file theyellowroseoftexaslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a yellow rose in Texas that I'm gonna see
@@ -43,3 +46,8 @@ Her [G7]eyes are bright as diamonds they sparkle like the dew
 You [C]may talk about your Clementine and sing of Rosalee
 But the [F]Yellow Rose of [C]Texas is the [G7]only girl for [C]me
 {end_of_verse}
+
+
+
+
+

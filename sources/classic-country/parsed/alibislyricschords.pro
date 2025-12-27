@@ -1,6 +1,9 @@
 {meta: title Alibis}
 {meta: artist Johnny Rodriguez Lyrics with Chords}
 {meta: composer Arthur L. Killough, Jr. and Patricia R. Killough}
+{meta: x_source classic-country}
+{meta: x_source_file alibislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Alibis your ali[Em]bis
@@ -37,3 +40,7 @@ But they don't [D7]know your ali[G]bis
 Alibis you must [C]have a hundred [G]stories you’ve [C]rehearsed
 But they don't [D7]know your ali[G]bis 
 {end_of_verse}
+
+
+
+

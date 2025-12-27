@@ -1,6 +1,9 @@
 {meta: title This Land The Lord And Me}
 {meta: artist Bill Anderson}
 {meta: composer Jerry Chesnutt}
+{meta: x_source classic-country}
+{meta: x_source_file thislandthelordandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never knew my mother and the closest that I came
@@ -38,3 +41,7 @@ Who [C]lives and cares and [G]answers
 The [C]prayers of the [G]man who [C]loved this [G]land 
 The [D7]Lord and [C]me[G]
 {end_of_verse}
+
+
+
+

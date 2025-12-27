@@ -1,6 +1,9 @@
 {meta: title Days Of Sand And Shovels}
 {meta: artist Charley Pride}
 {meta: composer Bud Reneau and Doyle Marsh}
+{meta: x_source classic-country}
+{meta: x_source_file daysofsandandshovelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I noticed her the first time
@@ -71,3 +74,12 @@ Because I see her little girl
 [D]Jam was on her fingertips
 [G7]Milk was circled on her [C]lips
 {end_of_verse}
+
+
+
+
+
+
+
+
+

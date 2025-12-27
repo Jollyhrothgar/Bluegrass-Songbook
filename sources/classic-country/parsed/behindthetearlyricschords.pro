@@ -1,6 +1,9 @@
 {meta: title Behind the Tear}
 {meta: artist Sonny James}
 {meta: composer Ned Miller and Sue Miller}
+{meta: x_source classic-country}
+{meta: x_source_file behindthetearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Behind the tear there's [G7]a hurt behind the hurt a broken [C]heart
@@ -22,3 +25,5 @@ Behind that [G7]broken heart there lies a broken [C]dream
 Behind the dream there's [G7]a fool behind the fool a wasted [C]love
 You broke my [G7]heart and I'm the fool behind the [C]tear
 {end_of_verse}
+
+

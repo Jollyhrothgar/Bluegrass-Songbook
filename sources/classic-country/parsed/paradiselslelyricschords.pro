@@ -1,6 +1,9 @@
 {meta: title Paradise Isle}
 {meta: artist Johnny Duncan}
 {meta: composer Sam Koki}
+{meta: x_source classic-country}
+{meta: x_source_file paradiselslelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Stars on the water across the bay
@@ -43,3 +46,7 @@ I lost my [C]heart on paradise [G]isle
 {start_of_verse: Verse 4}
 [D7]I lost my [C]heart on paradise [G]isle
 {end_of_verse}
+
+
+
+

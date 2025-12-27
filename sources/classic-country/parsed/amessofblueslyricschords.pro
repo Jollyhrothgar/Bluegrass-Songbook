@@ -1,6 +1,9 @@
 {meta: title A Mess of Blues}
 {meta: artist Elvis Presley}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file amessofblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just got your letter baby a too bad you can't come home
@@ -21,3 +24,5 @@ I gotta [C]get myself together before I lose my mind
 I'm gonna [F]catch the next train going and leave my blues behind
 Since your [G7]gone I [F]got a mess of [C]blues
 {end_of_verse}
+
+

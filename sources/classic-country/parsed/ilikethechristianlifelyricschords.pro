@@ -1,5 +1,8 @@
 {meta: title I Like The Christian Life}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file ilikethechristianlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I [C]like the [G7]Christian [C]life
@@ -32,3 +35,7 @@
 [C]But I am [G7]happy and I [C]sing with [F]pride
 [C]I like the [G7]Christian [C]life
 {end_of_verse}
+
+
+
+

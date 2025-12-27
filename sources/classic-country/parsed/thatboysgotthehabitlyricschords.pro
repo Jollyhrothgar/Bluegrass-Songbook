@@ -1,6 +1,9 @@
 {meta: title That Boy's Got The Habit}
 {meta: artist Johnny Horton}
 {meta: composer Fred B. Horton}
+{meta: x_source classic-country}
+{meta: x_source_file thatboysgotthehabitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Me and my gal went to the woods to shoot a big fat [G7]rabbit
@@ -35,3 +38,7 @@ Every time she barks at me I hop just like a [G7]rabbit
 Don't tell these women folks a thing cause they'll be sure to [G7]blab it
 [F]When they wear your [C]diamond ring too [G7]late you've got the [C]habit
 {end_of_verse}
+
+
+
+

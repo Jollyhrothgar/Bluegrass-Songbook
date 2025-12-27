@@ -1,6 +1,9 @@
 {meta: title Close By}
 {meta: artist Patty Loveless}
 {meta: composer Bill Monroe and Winkle Van}
+{meta: x_source classic-country}
+{meta: x_source_file closebylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've gone so [D7]far away my [G]darling
@@ -29,3 +32,6 @@ And a [C]spot they've left beside
 Now we'll sleep 'til Jesus [G]calls us
 So that [D7]we can be close [G]by
 {end_of_verse}
+
+
+

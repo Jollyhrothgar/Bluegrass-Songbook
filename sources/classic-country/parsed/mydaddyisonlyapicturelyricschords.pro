@@ -1,6 +1,9 @@
 {meta: title My Daddy Is Only A Picture}
 {meta: artist Eddy Arnold}
 {meta: composer Thomas C. Dilbeck}
+{meta: x_source classic-country}
+{meta: x_source_file mydaddyisonlyapicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I asked a little[G7] boy to call his[C] daddy
@@ -22,3 +25,5 @@ But [F]I'll bet they never [C]told him  how [D7]blue and lonesome we'd [G7]be
 I try to cheer up my [C]mommy when the [G7]tears roll down her [C]face[C7]
 My [F]daddy is only a [C]picture but I'm [D7]trying to [G7]take his [C]place
 {end_of_verse}
+
+

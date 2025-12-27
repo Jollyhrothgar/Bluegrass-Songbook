@@ -1,6 +1,9 @@
 {meta: title Herman Schwartz}
 {meta: artist Stonewall Jackson}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file hermanschwartzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't believe you Herman [G7]Schwartz
@@ -55,3 +58,10 @@
 [G7]The truth ain't in you Herman Schwartz
 [C]Everybody knows you lie
 {end_of_verse}
+
+
+
+
+
+
+

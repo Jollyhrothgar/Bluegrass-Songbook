@@ -1,6 +1,9 @@
 {meta: title Starting Tonight}
 {meta: artist Alabama}
 {meta: composer Teddy Gentry, Greg Fowler, John Jarrad}
+{meta: x_source classic-country}
+{meta: x_source_file startingtonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I could [Em]design forever[G] 
@@ -37,3 +40,6 @@ I'll be [C]beside you through the [D7]storm
 You'll have a [Em]fire to [D7]keep you [C]warm
 Not just for [Am]now but from now [D7]on starting to[C]night
 {end_of_verse}
+
+
+

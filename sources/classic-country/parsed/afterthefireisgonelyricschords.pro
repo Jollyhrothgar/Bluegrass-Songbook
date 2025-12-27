@@ -1,6 +1,9 @@
 {meta: title After the Fire is Gone Lyrics chords}
 {meta: artist Free Song Lyrics and Chords}
 {meta: composer L.E. White}
+{meta: x_source classic-country}
+{meta: x_source_file afterthefireisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love is where you find it  
@@ -51,3 +54,12 @@ Oh but we [F]keep a hanging [C]on
 And there's nothing cold as ashes
 [G7]After the fire is [C]gone
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Breakin’ Up Is Breakin' My Heart}
 {meta: artist Roy Orbison}
 {meta: composer Bill Dees and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file breakinupisbreakinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder why you threw your diary [Dm]away 
@@ -29,3 +32,6 @@ The day that you found someone [C7]new my lonely [F]world just fell [Dm]apart
 {start_of_verse: Verse 4}
 Breakin' up is [G7]breakin' my [C]heart 
 {end_of_verse}
+
+
+

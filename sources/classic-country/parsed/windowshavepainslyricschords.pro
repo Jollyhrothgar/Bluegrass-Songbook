@@ -1,6 +1,9 @@
 {meta: title Windows Have Pains}
 {meta: artist Marty Robbins}
 {meta: composer Wes Buchanan}
+{meta: x_source classic-country}
+{meta: x_source_file windowshavepainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]It's [G]raining and my win[G7]dows are [C]crying
@@ -36,3 +39,7 @@ The [D7]will to live isn't getting any [G]stronger
 And only [G7]your memories r[C]emain
 Even windows have [G]pains cause they [D7]cry when it [C]rain[G]s
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title M.R.S. Degree}
 {meta: artist Crystal Gayle}
 {meta: composer Ann J. Morton and Lavon Lile}
+{meta: x_source classic-country}
+{meta: x_source_file mrsdegreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mom and Dad want me to have a college edu[D7]cation
@@ -49,3 +52,7 @@ I just want to be an MR[G]S
 [D7]I don't want a PHD
 I just want to be an MR[G]S
 {end_of_verse}
+
+
+
+

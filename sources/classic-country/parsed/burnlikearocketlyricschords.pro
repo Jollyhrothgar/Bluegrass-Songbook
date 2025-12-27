@@ -1,5 +1,8 @@
 {meta: title Burn Like A Rocket}
 {meta: artist Billy Joe Royal}
+{meta: x_source classic-country}
+{meta: x_source_file burnlikearocketlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Someone wave goodbye
@@ -45,3 +48,11 @@ One of us had to break
 {start_of_verse: Verse 8}
 [D7]Oh yes if I said I love you well [C]I don't love you [G]anymore
 {end_of_verse}
+
+
+
+
+
+
+
+

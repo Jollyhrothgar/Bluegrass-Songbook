@@ -1,6 +1,9 @@
 {meta: title Angel In Your Arms}
 {meta: artist Reba McEntire}
 {meta: composer Tom Brasfield, Terry Woodford, Clayton Ivey}
+{meta: x_source classic-country}
+{meta: x_source_file angelinyourarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Do you think I'm such a fool to believe 
@@ -48,3 +51,7 @@ Is gonna be the [C]devil in someone [D7]else's arms [G]tonight
 Yes the angel in your [D7]arms this [Em]morning[G]
 Is gonna be the [C]devil in someone [D7]else's arms [G]tonight
 {end_of_verse}
+
+
+
+

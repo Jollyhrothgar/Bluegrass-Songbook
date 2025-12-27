@@ -1,6 +1,9 @@
 {meta: title A Very Special Love Song}
 {meta: artist Charlie Rich}
 {meta: composer Billy Sherrill and Norro Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file averyspeciallovesonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Babe somewhere I know I'm gonna find it babe
@@ -30,3 +33,6 @@ And [Em]oh the [Am]whole night [D7]through singing just for you
 A [G7]very special love song for [C]you
 For you
 {end_of_verse}
+
+
+

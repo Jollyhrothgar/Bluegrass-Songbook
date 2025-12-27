@@ -1,6 +1,9 @@
 {meta: title Bumming Around Lyrics and Chords}
 {meta: artist Hank Thompson}
 {meta: composer Pete Graves}
+{meta: x_source classic-country}
+{meta: x_source_file bummingaroundlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I GOT AN OLD SLOUCH HAT GOT MY ROLL ON MY [D7]SHOULDER
@@ -49,3 +52,11 @@ I'M AS FREE AS THE BREEZE AND I DO AS I PLEASE
 [G]JUST A-BUMMING AROUND
 [D7]I GOT A MILLION FRIENDS I DON'T FEEL ANY OLDER
 {end_of_verse}
+
+
+
+
+
+
+
+

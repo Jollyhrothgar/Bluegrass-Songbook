@@ -1,5 +1,8 @@
 {meta: title Once More With Feeling}
 {meta: artist Jerry Lee Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file oncemorewithfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We're just going through the motions 
@@ -48,3 +51,9 @@ Believe each word [C]you say
 Try it once more with [D7]feeling 
 And we'll call it a [G]day
 {end_of_verse}
+
+
+
+
+
+

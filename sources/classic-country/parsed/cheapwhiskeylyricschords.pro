@@ -1,6 +1,9 @@
 {meta: title Cheap Whiskey}
 {meta: artist Patty Loveless}
 {meta: composer Jim Rushing and Emory Gordy}
+{meta: x_source classic-country}
+{meta: x_source_file cheapwhiskeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He sits all alone in his [Em]easy chair 
@@ -43,3 +46,8 @@ You [C]can't have two [G]loves in your [Em]life
 Now the [G]things that will haunt him till the day that he [C]dies
 Is the [G]smell of cheap whiskey and the [D7]sound of good[G]bye
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Beer Drinking Music}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file beerdrinkingmusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Give me some beer drinking music good country [D7]music
@@ -38,3 +41,8 @@
 [D7]Play me some beer drinking music good country music
 [G]Sing me a good beer drinking song
 {end_of_verse}
+
+
+
+
+

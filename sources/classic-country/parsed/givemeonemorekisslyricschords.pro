@@ -1,6 +1,9 @@
 {meta: title Give Me One More Kiss}
 {meta: artist Jim Reeves}
 {meta: composer Bob Center}
+{meta: x_source classic-country}
+{meta: x_source_file givemeonemorekisslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Give me one more kiss
@@ -73,3 +76,11 @@ Give me one more kiss
 [G]So darling give me one more kiss
 [D7]And I'll be on my [G]way
 {end_of_verse}
+
+
+
+
+
+
+
+

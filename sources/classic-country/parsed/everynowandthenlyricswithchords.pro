@@ -1,6 +1,9 @@
 {meta: title Every Now And Then}
 {meta: artist Garth Brooks}
 {meta: composer Buddy Mondlock and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file everynowandthenlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walked [F]down to the [G7]park last night 
@@ -43,3 +46,8 @@ And every [C]once in a while I [F]think about [G7]you
 Why sometimes [C]I catch myself [F]wondering what [C]might have been[Dm]
 Yes I [C]do think about [F]you [C]every [G7]now and [C]then
 {end_of_verse}
+
+
+
+
+

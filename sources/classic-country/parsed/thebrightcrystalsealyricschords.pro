@@ -1,6 +1,9 @@
 {meta: title The Bright Crystal Sea}
 {meta: artist The Blue Creek Boys}
 {meta: composer Ivy Sheppard}
+{meta: x_source classic-country}
+{meta: x_source_file thebrightcrystalsealyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm [F]smilin' as [C]I go [F]home to meet [C]mother
@@ -43,3 +46,8 @@ To [F]greet us up [C]there in the [D7]land of the [G7]free
 And if [F]you serve [C]God for [F]you He will be [C]waitin'
 As [F]He is for [C]me by The [G7]Bright Crystal [C]Sea
 {end_of_verse}
+
+
+
+
+

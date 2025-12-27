@@ -1,6 +1,9 @@
 {meta: title They Shined Up Rudolph's Nose}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Marks and Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file theyshineduprudolphsnoselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rudolph's nose was frosty and it didn't get much [G7]light
@@ -38,3 +41,7 @@ It'll help Santa find you no matter where you [C]are
 [C]Rudolph's nose is shining bright it looks just like a [G7]star
 It'll help Santa find you no matter where you [C]are
 {end_of_verse}
+
+
+
+

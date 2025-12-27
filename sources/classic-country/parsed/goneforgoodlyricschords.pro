@@ -1,6 +1,9 @@
 {meta: title Gone For Good}
 {meta: artist Gene Watson}
 {meta: composer Jimmy Melton}
+{meta: x_source classic-country}
+{meta: x_source_file goneforgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You used to kiss me every [D7]afternoon
@@ -48,3 +51,9 @@
 [C]We can't go like this forever it's time we [G]understood
 [G7]If we keep letting [C]things go bad [D7]they'll soon be gone for [G]good
 {end_of_verse}
+
+
+
+
+
+

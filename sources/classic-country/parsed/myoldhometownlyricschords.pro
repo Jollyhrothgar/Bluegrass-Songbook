@@ -1,6 +1,9 @@
 {meta: title My Old Hometown}
 {meta: artist Hank Locklin}
 {meta: composer Hoyt Johnson and Kermit Barrett}
+{meta: x_source classic-country}
+{meta: x_source_file myoldhometownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen Big Ben in London town the lights of gay Pa[C7]ree 
@@ -22,3 +25,5 @@ I've [F]seen the wonders of the world the rippling waters [C]fall
 I've seen the lovely Caribbean and [E7]her in Cheyenne [Am]View
 But the [F]place I'm longing [C]most to see is my [G7]old hometown and [C]you
 {end_of_verse}
+
+

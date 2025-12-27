@@ -1,6 +1,9 @@
 {meta: title I'm Lonesome For Trouble Tonight}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Doyle Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file imlonesomefortroubletonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He's nothin' but trouble but he's always on my [D7]mind
@@ -37,3 +40,8 @@ Every time we get together
 [C]Seems like nothin' comes out right
 [D7]Lord I'm lonesome for trouble [G]tonight
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Fast As You}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file fastasyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe someday I'll be strong maybe it won't be long
@@ -46,3 +49,9 @@ When your [C]turn to hurt comes around
 {start_of_verse: Verse 5}
 [D7]Maybe I'll break hearts and [F]be as fast as [C]you
 {end_of_verse}
+
+
+
+
+
+

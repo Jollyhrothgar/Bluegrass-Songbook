@@ -1,5 +1,8 @@
 {meta: title Slow Burning Memory}
 {meta: artist Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file slowburningmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You taught me how to love [C]you 
@@ -30,3 +33,6 @@ Maybe I'll get over you in [D7]time
 [G]Sl-ow burning [C]memory
 Keeps on [G]burning [D7]a hole in my [G]mind
 {end_of_verse}
+
+
+

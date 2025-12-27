@@ -1,6 +1,9 @@
 {meta: title Don't Lie}
 {meta: artist Rhonda Vincent}
 {meta: composer Chet Biggers and Frank Mandeville}
+{meta: x_source classic-country}
+{meta: x_source_file dontlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That old photograph of ours sure [F]looks out of [C]place
@@ -41,3 +44,8 @@
 [F]Don't lie  you owe [C]it to [Am]me  leave [F]me well enough [G7]alone
 [F]So just go ahead and say [G7]goodbye but don't [C]lie
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title There Was Jesus}
 {meta: artist Zach Williams}
 {meta: composer Casey M. Beathard, Jonathan L. Smith}
+{meta: x_source classic-country}
+{meta: x_source_file therewasJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time I tried to make it on my own
@@ -65,3 +68,10 @@ There was [C]Jesus
 [Dm]There was [C]Jesus (there was [G7]Jesus)
 There was [C]Jesus
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Free To Go}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file freetogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby now I understand 
@@ -53,3 +56,9 @@ And is [Am]always [C]free to [G]go
 Yeah [A7]love only pauses for a [C]while 
 And is [Am]always [C]free to [G]go
 {end_of_verse}
+
+
+
+
+
+

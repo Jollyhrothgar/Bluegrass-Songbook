@@ -1,6 +1,9 @@
 {meta: title Now Is The Hour}
 {meta: artist Marty Robbins}
 {meta: composer Maewa Kaihan, Clement Scott, Dorothy Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file nowisthehourlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]N-ow [C]is the [G]hour
@@ -29,3 +32,6 @@ Oh then [D7]remember [G]me
 [C]When [D7]you re[G]turn
 You'll [E7]find me [Am]wait-[D7]ing [G]here
 {end_of_verse}
+
+
+

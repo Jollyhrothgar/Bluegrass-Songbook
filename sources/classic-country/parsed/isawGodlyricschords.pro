@@ -1,6 +1,9 @@
 {meta: title I Saw God}
 {meta: artist Ferlin Husky}
 {meta: composer Bobbie Carroll and Wilson Faye}
+{meta: x_source classic-country}
+{meta: x_source_file isawGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw [Em]God on the [C]moun[D7]tain 
@@ -29,3 +32,6 @@ Each [G]night when I [A7]climb the [D7]stairs
 [G]How do I know I [C]see [Am]Him 
 My [G]love lies [D7]sleeping [G]there
 {end_of_verse}
+
+
+

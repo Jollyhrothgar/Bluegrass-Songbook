@@ -1,6 +1,9 @@
 {meta: title If I Could Just Get Over You}
 {meta: artist Connie Smith}
 {meta: composer Kay Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldjustgetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]See the sun how [F]bright it is this [C]mornin'
@@ -32,3 +35,7 @@ Some[C]where that moon's a [F]shinin' down on [C]lovers
 {start_of_verse: Verse 5}
 [F]Yes it's such a [C]grand world but I can't get [G7]over [C]you
 {end_of_verse}
+
+
+
+

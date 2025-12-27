@@ -1,6 +1,9 @@
 {meta: title A Mother's Way}
 {meta: artist Foster and Allen}
 {meta: composer Reg Keating}
+{meta: x_source classic-country}
+{meta: x_source_file amotherswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's just a mother's [F]way  [G7]to worry through the [C]day
@@ -44,3 +47,9 @@
 {start_of_verse: Verse 5}
 [G7]A little tenderness will go a long long [C]way
 {end_of_verse}
+
+
+
+
+
+

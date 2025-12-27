@@ -1,6 +1,9 @@
 {meta: title My Christmas Dream}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file myChristmasdreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas [Em]carols [F]frozen [G7]toes 
@@ -36,3 +39,7 @@ This is [G7]my Christmas [C]dream
 Dropping [Am]coins to [Dm]make hearts sing 
 This is [G7]my Christmas [C]dream
 {end_of_verse}
+
+
+
+

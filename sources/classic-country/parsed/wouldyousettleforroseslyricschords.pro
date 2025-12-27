@@ -1,6 +1,9 @@
 {meta: title Would You Settle For Roses}
 {meta: artist Freddie Hart}
 {meta: composer Bob Morris and Larry Farmer}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyousettleforroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd like to give you fancy [C]things  like [G]diamond rings
@@ -29,3 +32,6 @@ And a [D7]cottage for [G]two
 Would you settle for [C]roses
 And all [D7]my love for [G]you
 {end_of_verse}
+
+
+

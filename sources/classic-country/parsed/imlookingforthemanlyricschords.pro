@@ -1,6 +1,9 @@
 {meta: title I'm Looking For The Man}
 {meta: artist Gene Pitney}
 {meta: composer Melba Montgomery and Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file imlookingforthemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm looking for the man [C]looking for the man
@@ -40,3 +43,8 @@ I'm [G]looking for the [D7]man through all my [G]tears
 {start_of_verse: Verse 5}
 I'm looking for the [D7]man through all my [G]tears
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title MacArthur's Hand}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file macathurshandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]With high cheekbones and [C]dark sad eyes and [G]shaggy [D7]coarse black [G]hair
@@ -40,3 +43,8 @@ Yes I once shook the [D7]great MacArthur's [G]hand
 {start_of_verse: Verse 5}
 Yes I once shook the [C]great MacArthur's [G]hand
 {end_of_verse}
+
+
+
+
+

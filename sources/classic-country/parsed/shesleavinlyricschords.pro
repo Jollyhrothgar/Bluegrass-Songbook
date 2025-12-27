@@ -1,5 +1,8 @@
 {meta: title She's Leavin'}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file shesleavinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I think about the time that I sat [F]crying in my beer
@@ -34,3 +37,7 @@ She's [F]leavin' in the morning sing a [C]sad song for me
 But I've [F]heard that tune before she says she's [C]gotta [G7]be [Am]free
 But I [Dm]know that's not true and that's [G7]what's bothering [C]me 
 {end_of_verse}
+
+
+
+

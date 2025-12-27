@@ -1,6 +1,9 @@
 {meta: title All I Want Is Mary For Christmas Lyrics with Chords}
 {meta: artist The Lonesome River Band}
 {meta: composer Ronnie Bowman}
+{meta: x_source classic-country}
+{meta: x_source_file alliwantismaryforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Anticipation's growing with each [D7]passing day
@@ -43,3 +46,8 @@ Then I will have a happy new [G]year
 {start_of_verse: Verse 4}
 Yes let’s [D7]all have a happy new [G]year
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Somebody Bigger Than You And I}
 {meta: artist Elvis Presley}
 {meta: composer Hy Heath, Johnny Lange, Francis J. Burke}
+{meta: x_source classic-country}
+{meta: x_source_file somebodybiggerthanyouandilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who made the mountains [Em]who made the [Bm]trees
@@ -29,3 +32,6 @@
 [Em]And who gives [Bm]me faith that [C]will never [Em]die
 [G]Somebody [Em]bigger than [A7]you [D7]and [G]I
 {end_of_verse}
+
+
+

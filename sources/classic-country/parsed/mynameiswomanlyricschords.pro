@@ -1,6 +1,9 @@
 {meta: title My Name Is Woman}
 {meta: artist Jean Shepard}
 {meta: composer Dan Hoffman and David Kershenbaum}
+{meta: x_source classic-country}
+{meta: x_source_file mynameiswomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It started at the apple tree
@@ -48,3 +51,9 @@ You reach out to hold me tight
 [C]Um hum I am a [G]woman
 My name is [C]Jean and I'm your [G]woman
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Stand Beside Me Behind Me}
 {meta: artist Mel Tillis}
 {meta: composer Paul Craft}
+{meta: x_source classic-country}
+{meta: x_source_file standbesidemebehindmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stand beside me be[F]hind me so [G7]loneliness can't [C]find me
@@ -23,3 +26,5 @@ My [D7]only prayer is just that you will [G7]always reach for me
 [C]Stand beside me be[F]hind me so [G7]loneliness can't [C]find me
 [F]Without your love I [G7]know I won't last [C]long
 {end_of_verse}
+
+

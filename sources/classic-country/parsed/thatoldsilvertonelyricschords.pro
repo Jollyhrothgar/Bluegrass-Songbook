@@ -1,6 +1,9 @@
 {meta: title That Old Silvertone}
 {meta: artist Vern Gosdin}
 {meta: composer David Wayne Hearne}
+{meta: x_source classic-country}
+{meta: x_source_file thatoldsilvertonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He used to play the Opry [F]when he was on a roll
@@ -33,3 +36,7 @@ He could sure sing a [C]sad country song [G7]with that old Silver[C]tone
 {start_of_verse: Verse 5}
 [F]Yeah he could sure sing a [C]sad country song [G7]with that old Silver[C]tone
 {end_of_verse}
+
+
+
+

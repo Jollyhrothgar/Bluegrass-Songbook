@@ -1,6 +1,9 @@
 {meta: title Too Big To Fight}
 {meta: artist Ray Price}
 {meta: composer Lobo Loggins and Johnny McCollum}
+{meta: x_source classic-country}
+{meta: x_source_file toobigtofightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Would you look at what walked through the door
@@ -38,3 +41,6 @@ Yeah [C]we’ll try our luck again next week
 That [C]good ol’ boy [G7]he looks to big to [C]fight
 That good ol’ boy [G7]he looks too big to [C]fight
 {end_of_verse}
+
+
+

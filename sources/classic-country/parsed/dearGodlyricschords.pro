@@ -1,6 +1,9 @@
 {meta: title Dear God}
 {meta: artist Patsy Cline}
 {meta: composer V.F. Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file dearGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I go to [F]church on a [C]Sunday
@@ -47,3 +50,9 @@ I [F]do as I [C]please
 Then come Sunday [G7]morning
 I pray on my [C]knees
 {end_of_verse}
+
+
+
+
+
+

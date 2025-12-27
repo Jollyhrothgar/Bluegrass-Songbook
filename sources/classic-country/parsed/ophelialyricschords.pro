@@ -1,6 +1,9 @@
 {meta: title Ophelia}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Jaime Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file ophelialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Boards on the windows
@@ -43,3 +46,8 @@ That old neighborhood
 [A7]I'm still waitin' for the [D7]second coming of O[F]phelia
 [G7]Honey come back [C]home
 {end_of_verse}
+
+
+
+
+

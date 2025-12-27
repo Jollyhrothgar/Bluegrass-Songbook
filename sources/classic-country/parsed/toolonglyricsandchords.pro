@@ -1,6 +1,9 @@
 {meta: title Too Long}
 {meta: artist Tanya Tucker}
 {meta: composer Mike Donovan}
+{meta: x_source classic-country}
+{meta: x_source_file toolonglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I spend the [G]night in my room in my [C]easy chair
@@ -62,3 +65,10 @@ To [C]make believe
 Too [G]long [C]thinkin' hard [G]about you baby
 [C]Too [G]long [C]livin' on my [G]own
 {end_of_verse}
+
+
+
+
+
+
+

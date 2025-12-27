@@ -1,6 +1,9 @@
 {meta: title From The Old Mill}
 {meta: artist Red Steagall}
 {meta: composer Dale Burson and Russell D. Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file fromtheoldmilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]As I [C]change out the [G7]head on the [F]old mill [C]today
@@ -49,3 +52,9 @@ Will they [C]live by the [G7]cowboy's [C]rules
 Will they [C]live by the [G7]cowboy [C]code
 [F]Will they [C]live by the [G7]cowboy [C]code
 {end_of_verse}
+
+
+
+
+
+

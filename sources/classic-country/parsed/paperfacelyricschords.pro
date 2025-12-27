@@ -1,6 +1,9 @@
 {meta: title Paper Face}
 {meta: artist Hank Locklin}
 {meta: composer Slim Williams and Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file paperfacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I still have the [G7]photograph that you [C]gave me
@@ -29,3 +32,6 @@ It [G7]brings back memories time can't [C]erase
 Each night I hold it close to my [F]heart dear
 I [G7]say goodnight and kiss your paper [C]face
 {end_of_verse}
+
+
+

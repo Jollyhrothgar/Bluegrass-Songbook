@@ -1,6 +1,9 @@
 {meta: title My Mom And Santa Claus}
 {meta: artist George Jones}
 {meta: composer Clyde W. Beavers}
+{meta: x_source classic-country}
+{meta: x_source_file mymomandsantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I saw mommy in her night gown she was jumpin' all around
@@ -64,3 +67,11 @@ Jokes about the look in his [D7]eye
 I'll make a little bet I'll never forget
 Mommy dancin' with Santa that [G]night
 {end_of_verse}
+
+
+
+
+
+
+
+

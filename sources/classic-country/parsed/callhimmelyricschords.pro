@@ -1,6 +1,9 @@
 {meta: title Call Him Me}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Jimmy Dickens and Skip Graves}
+{meta: x_source classic-country}
+{meta: x_source_file callhimmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you ever get to feeling that you [G7]want me back again
@@ -36,3 +39,7 @@ To remind you of the wreck you left [D7]me
 You can [G]have me if you want me but ole [C]me has changed a [G]lot
 You can [C]have me if you [G]want me if you’ll [D7]only call on [G]me
 {end_of_verse}
+
+
+
+

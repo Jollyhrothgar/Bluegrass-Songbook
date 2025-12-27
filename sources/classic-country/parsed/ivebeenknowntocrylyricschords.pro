@@ -1,6 +1,9 @@
 {meta: title I've Been Known To Cry}
 {meta: artist George Jones}
 {meta: composer Eddie Hallowell}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeenknowntocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I've been [F]known to cry for kisses that you [C]gave me
@@ -36,3 +39,7 @@ All [G7]those arms that used to hold me [C]tight
 [F]Though I tell my heart that I don't [C]miss you
 I've [G7]been known to cry for you at [C]night
 {end_of_verse}
+
+
+
+

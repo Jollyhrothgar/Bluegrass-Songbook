@@ -1,6 +1,9 @@
 {meta: title Do You Remember These}
 {meta: artist Statler Brothers}
 {meta: composer Don and Harold Reid and Larry Lee}
+{meta: x_source classic-country}
+{meta: x_source_file doyouremembertheselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Saturday morning [A7]serials chapters [D7]1 through 15
@@ -61,3 +64,11 @@ Knock Knock jokes and [A7]Who's there Dewey [D7]Dewey who
 {start_of_verse: Verse 9}
 [Em]Yes [C]we do ahh [D7]do we do [G7]we remember [C]these
 {end_of_verse}
+
+
+
+
+
+
+
+

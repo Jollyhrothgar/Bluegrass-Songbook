@@ -1,6 +1,9 @@
 {meta: title Don't Break The Heart That Loves You}
 {meta: artist Connie Francis}
 {meta: composer Benny Davis and Murray Mencher}
+{meta: x_source classic-country}
+{meta: x_source_file dontbreaktheheartthatlovesyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't break the [D7]heart that loves you handle it with care
@@ -28,3 +31,6 @@ Please [C]don’t break my heart like a child breaks a little toy
 Sweet[Am]heart I'm begging of you don't [G]break the heart that [E7]loves you
 [Am]Don't break this [D7]heart of [G]mine
 {end_of_verse}
+
+
+

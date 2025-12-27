@@ -1,6 +1,9 @@
 {meta: title I Look At You}
 {meta: artist George Strait}
 {meta: composer Steve Bogard and Jeff Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file ilookatyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I can't put up with being so put down
@@ -48,3 +51,9 @@ You [C]touch my hand and the [Am]burdens start to fall
 You [Dm]ease my troubled [C]mind 
 I [F]love you [C]more each [Dm]time I look at [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That Hot Lick Fiddlin' Man}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker and Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file thathotlickfiddlinmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Oh that fiddlin' man
@@ -33,3 +36,6 @@
 [F]No one can play and make 'em [C]sway
 [D7]Like that hot [G7]lick fiddlin' [C]man
 {end_of_verse}
+
+
+

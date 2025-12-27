@@ -1,6 +1,9 @@
 {meta: title Too Much Is Not Enough}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy and Ron Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchisnotenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]My friends all [G]say that I'm losing touch
@@ -57,3 +60,10 @@ Too [Am]much is not enough of your [D7]love love love
 My friends all [G]say that you’ve got to give her up
 But I [Am]say your [D7]love is not enough
 {end_of_verse}
+
+
+
+
+
+
+

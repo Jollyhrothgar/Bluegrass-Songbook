@@ -1,6 +1,9 @@
 {meta: title Long Shadow}
 {meta: artist Moe Bandy}
 {meta: composer Don Goodman, Johnny Morris, Pal Rakes}
+{meta: x_source classic-country}
+{meta: x_source_file longshadowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The light of love [C]reaches out [G]from a burning memory
@@ -33,3 +36,7 @@ You cast a [D7]long long shadow that I’m still lying [G]in
 {start_of_verse: Verse 4}
 You cast a [C]long long [G]shadow [D7]that I’m still lying [G]in
 {end_of_verse}
+
+
+
+

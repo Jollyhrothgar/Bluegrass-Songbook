@@ -1,6 +1,9 @@
 {meta: title It's Gonna Take A Little Bit Longer}
 {meta: artist Charlie Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file itsgonnatakealittlebitlongerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby it's gonna take [C]a little bit [G]longer 
@@ -36,3 +39,7 @@ For me to ever get you off of my [D7]mind
 Baby [G]it's gonna [C]take a little bit [Em][G]long-er 
 Cause [C]I've been lovin' [D7]you a long long [G]time
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If Jesus Comes Tomorrow What Then}
 {meta: artist Vern Gosdin}
 {meta: composer Vern Gosdin and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file ifJesuscomestomorrowwhatthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If Jesus comes tomorrow to [F]spend some time with [C]you 
@@ -22,3 +25,5 @@ And somehow you knew that Jesus would soon be on His [G7]way
 Would you [C]have to beg forgiveness or could you [F]reach out and take His [C]hand
 If [F]Jesus comes [C]tomorrow  [G7]what [C]then
 {end_of_verse}
+
+

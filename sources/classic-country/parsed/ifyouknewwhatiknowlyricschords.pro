@@ -1,6 +1,9 @@
 {meta: title If You Knew What I Know}
 {meta: artist Wanda Jackson}
 {meta: composer Hal Southern and Wayne West}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouknewwhatiknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh [C]if you knew what [G]I know you'd be glad to [D7]let him [G]go
@@ -26,3 +29,6 @@ So [D7]send him back now while your heart's still [G]free
 Cause [C]if you knew what [G]I know you'd be glad to [D7]let him [G]go
 You'd be glad to [D7]let him [G]go
 {end_of_verse}
+
+
+

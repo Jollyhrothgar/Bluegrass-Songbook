@@ -1,5 +1,8 @@
 {meta: title I'm Going Home It's Christmas Time}
 {meta: artist Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file imgoinghomeitsChristmastimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The days are long (days are long) 
@@ -64,3 +67,10 @@ It's Christmas [G]time
 I'm goin' home (I'm going [D7]home) 
 It's Christmas [G]time
 {end_of_verse}
+
+
+
+
+
+
+

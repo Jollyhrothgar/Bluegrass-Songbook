@@ -1,6 +1,9 @@
 {meta: title Waitin' For The Deal To Go Down}
 {meta: artist Reba McEntire}
 {meta: composer Bobby Fisher, Charlie Black, Austin Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file waitinforthedealtogodownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh you've sold me you bold me you've told me 
@@ -48,3 +51,8 @@ Face to face you [F]promised me for[G7]ever
 But the [C]ring's still sittin' in a [F]store downtown
 And I'm still sittin' here [G7]waitin' for the deal to go [C]down
 {end_of_verse}
+
+
+
+
+

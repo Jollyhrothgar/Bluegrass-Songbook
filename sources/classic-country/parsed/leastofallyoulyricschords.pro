@@ -1,6 +1,9 @@
 {meta: title Least Of All You}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file leastofallyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who in all this [Am]world did I [F]think would be [C]untrue
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [G7](Least of all [C]you)
 {end_of_verse}
+
+
+

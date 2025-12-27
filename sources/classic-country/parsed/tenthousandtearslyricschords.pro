@@ -1,6 +1,9 @@
 {meta: title Ten Thousand Tears}
 {meta: artist Bobby Helms}
 {meta: composer Allan Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file tenthousandtearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Ten thousand [G]tears [C]I cry for [G]you
@@ -29,3 +32,6 @@ My poor heart [A7]breaks ten thousand [D7]times
 If you'll [G]return [C]love I con[G]fess
 [D7]Ten thousand [C]tears I [D7]cried for happi[G]ness
 {end_of_verse}
+
+
+

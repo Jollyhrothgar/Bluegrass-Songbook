@@ -1,6 +1,9 @@
 {meta: title Fujiyama Mama}
 {meta: artist Wanda Jackson}
 {meta: composer Earl Burrows}
+{meta: x_source classic-country}
+{meta: x_source_file fujiyamamamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been to Nagasaki Hiroshima [D7]too
@@ -58,3 +61,13 @@ Fujiyama yama Fujiyama
 [C]Cause I'm a Fujiyama mama
 [G]And I'm just about to blow my top
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

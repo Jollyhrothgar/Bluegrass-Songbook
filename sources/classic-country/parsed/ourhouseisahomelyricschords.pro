@@ -1,6 +1,9 @@
 {meta: title Our House Is A Home}
 {meta: artist Daniel O'Donnell}
 {meta: composer Soye Maurice Edward}
+{meta: x_source classic-country}
+{meta: x_source_file ourhouseisahomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's always a fire in the [F]kitchen
@@ -41,3 +44,8 @@ But the [C]one thing our [G7]house is a [C]home
 There's no fancy carpets or [F]no telephone
 But the [C]one thing our [G7]house is a [C]home
 {end_of_verse}
+
+
+
+
+

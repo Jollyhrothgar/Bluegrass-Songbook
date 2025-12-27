@@ -1,5 +1,8 @@
 {meta: title Twenty Naked Pentecostals In A Pontiac}
 {meta: artist Chris Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file twentynakedpentecostalsinapontiaclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was thumbin' my way down to Baton Rouge
@@ -80,3 +83,18 @@ We hung on and prayed everybody was saved
 When a car pulled over and a voice cried out
 [G]We'll take you where you want to go
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

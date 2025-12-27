@@ -1,6 +1,9 @@
 {meta: title Forsaken Love}
 {meta: artist Lester Flatt and Earl Scruggs}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file forsakenlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve loved you always yes I’ve been [F]true
@@ -36,3 +39,7 @@ My [G7]heart shall ever be longing for [C]you
 Oh darling believe me far over the [F]sea
 Through [G7]life or death so faithful I’ll [C]be
 {end_of_verse}
+
+
+
+

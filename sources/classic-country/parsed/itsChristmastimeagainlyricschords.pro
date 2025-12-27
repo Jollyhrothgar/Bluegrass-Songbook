@@ -1,5 +1,8 @@
 {meta: title It's Christmas Time Again}
 {meta: artist Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file itsChristmastimeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Christmas bells so sweetly they are [F]ringing
@@ -28,3 +31,6 @@ The [G7]snowflakes [C]falling [F]on my [C]window [D7]pane[G7]
 Where 'er you [C]be on [F]land or rolling [C]sea
 Come [G7]home come [C]home it's [G7]Christmas time [C]again
 {end_of_verse}
+
+
+

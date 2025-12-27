@@ -1,6 +1,9 @@
 {meta: title Yesterday's Kisses}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Wayne Wood}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdayskisseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday’s kisses are teardrops [G7]today
@@ -29,3 +32,6 @@ Darling I [D7]need you like a leaf needs a [G7]tree
 Yesterday’s [C]kisses are teardrops [G7]today
 I’ll miss you tomorrow if you go [C]away
 {end_of_verse}
+
+
+

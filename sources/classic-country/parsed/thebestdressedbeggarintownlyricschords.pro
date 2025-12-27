@@ -1,6 +1,9 @@
 {meta: title The Best Dressed Beggar In Town}
 {meta: artist Carl Smith}
 {meta: composer Houston Turner}
+{meta: x_source classic-country}
+{meta: x_source_file thebestdressedbeggarintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I got [F]on my watch and my big diamond [C]ring
@@ -44,3 +47,8 @@
 [F]I'm the best dressed beggar in [C]town
 [F]I’m the best dressed beggar in [C]town
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Emotion}
 {meta: artist Brenda Lee}
 {meta: composer Mel Tillis and Ramsey Kearney}
+{meta: x_source classic-country}
+{meta: x_source_file emotionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Emotion what are you [E7]doing
@@ -43,3 +46,8 @@
 [C]Oh can't you see what you're [Em]doing to [A7]me
 [F]Emotions [G7]please set me [C]free
 {end_of_verse}
+
+
+
+
+

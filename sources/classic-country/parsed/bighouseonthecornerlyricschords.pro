@@ -1,5 +1,8 @@
 {meta: title Big House On The Corner}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file bighouseonthecornerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can see the ad in the morning [G7]paper
@@ -22,3 +25,5 @@
 [G7]For the big house on the corner where love used to [C]live
 [G7]For the big house on the corner where love used to [C]live
 {end_of_verse}
+
+

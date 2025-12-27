@@ -1,6 +1,9 @@
 {meta: title I'm Longing For Home}
 {meta: artist Jerry Lee Lewis}
 {meta: composer O.S. Davis and Rupert Cravens}
+{meta: x_source classic-country}
+{meta: x_source_file imlongingforhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just a [G7]pilgrim and a [C]stranger
@@ -41,3 +44,7 @@ In [G7]glory some[C]day (in [F]glory some[C]day)
 I said I long to see [A7]Jesus (sweet [D7]Jesus)
 In [G7]heaven some[C]day (in [F]glory some[C]day)
 {end_of_verse}
+
+
+
+

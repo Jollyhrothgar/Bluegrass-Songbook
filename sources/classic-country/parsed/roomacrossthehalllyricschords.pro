@@ -1,6 +1,9 @@
 {meta: title Room Across The Hall}
 {meta: artist The Willis Brothers}
 {meta: composer Jack Rhodes and Porter Jordan}
+{meta: x_source classic-country}
+{meta: x_source_file roomacrossthehalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each night I stare in darkness at shadows on the [F]wall
@@ -36,3 +39,7 @@
 [C]In loneliness I wait here for your footsteps to [F]fall
 [G7]For that's when you'll be leaving the room across the [C]hall
 {end_of_verse}
+
+
+
+

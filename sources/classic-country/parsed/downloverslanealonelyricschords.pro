@@ -1,6 +1,9 @@
 {meta: title Down Lovers Lane Alone}
 {meta: artist Faron Young}
 {meta: composer Faron Young and Chuck Woods}
+{meta: x_source classic-country}
+{meta: x_source_file downloverslanealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I seem to see a shadow of heartaches and [G7]despair
@@ -29,3 +32,6 @@ And [G7]yet they tell me [C]someday I will [G7]find myself [C]again
 That [C]I will find true happiness and [C7]love I've never [F]known
 And [G7]never have to walk again down lover's lane [C]alone
 {end_of_verse}
+
+
+

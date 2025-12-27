@@ -1,6 +1,9 @@
 {meta: title Along the Road}
 {meta: artist Doc Watson}
 {meta: composer Dan Fogelberg}
+{meta: x_source classic-country}
+{meta: x_source_file alongtheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Joy at the [Am]start [Dm]fear in the journey
@@ -46,3 +49,8 @@ A part of the [Am]heart
 Gets [Dm]lost in the learning
 [F]Somewhere [G7]along the [C]road
 {end_of_verse}
+
+
+
+
+

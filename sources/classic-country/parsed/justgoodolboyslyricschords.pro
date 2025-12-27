@@ -1,6 +1,9 @@
 {meta: title Just Good Ol' Boys}
 {meta: artist Moe Bandy}
 {meta: composer Ansley Fleetwood}
+{meta: x_source classic-country}
+{meta: x_source_file justgoodolboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've been kicked out might near every bar around
@@ -50,3 +53,8 @@ And [A7]good ol' boys is all [D7]we'll ever [G]be
 {start_of_verse: Verse 5}
 Good ol' boys is [D7]all we'll ever [G]be 
 {end_of_verse}
+
+
+
+
+

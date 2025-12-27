@@ -1,6 +1,9 @@
 {meta: title Sugarfoot Rag}
 {meta: artist Porter Wagoner}
 {meta: composer Hank Garland}
+{meta: x_source classic-country}
+{meta: x_source_file sugarfootraglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gonna get out my sycamore and shine up my [F]shoes 
@@ -42,3 +45,9 @@ And [G]swing up the middle with a [D7]shoofly [G]four
 One foot two foot slew foot drag
 Swing your honey to the [D7]Sugarfoot [G]Rag 
 {end_of_verse}
+
+
+
+
+
+

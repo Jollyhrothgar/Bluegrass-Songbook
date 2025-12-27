@@ -1,6 +1,9 @@
 {meta: title Forever Was The Name Of Our Sunshine}
 {meta: artist Faron Young}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file foreverwasthenameofoursunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Happy was the feelin' that you [D7]gave me when we met
@@ -31,3 +34,6 @@ Sadness was the unexpected [C]wind that blew so hard
 Leavin' nothin' but a memory of the [D7]time
 When for[C]ever was the [D7]name of our [G]sunshine
 {end_of_verse}
+
+
+

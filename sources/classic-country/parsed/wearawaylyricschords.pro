@@ -1,6 +1,9 @@
 {meta: title Wear Away}
 {meta: artist Dottie West}
 {meta: composer Dottie West and Bill West}
+{meta: x_source classic-country}
+{meta: x_source_file wearawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wear away wear away I'm so [C]afraid
@@ -24,3 +27,5 @@
 [C]Wear away wear away I'm so afraid
 [D7]That time may wear away your love [G]someday
 {end_of_verse}
+
+

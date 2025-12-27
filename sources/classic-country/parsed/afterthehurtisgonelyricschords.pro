@@ -1,6 +1,9 @@
 {meta: title After The Hurt Is Gone}
 {meta: artist Hank Locklin}
 {meta: composer Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file afterthehurtisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]After the [G7]party is [C]over
@@ -23,3 +26,4 @@
 [G7]That my love replaced the [C]emptiness and filled the [F]space
 [C]After the [G7]hurt is [C][F]gone
 {end_of_verse}
+

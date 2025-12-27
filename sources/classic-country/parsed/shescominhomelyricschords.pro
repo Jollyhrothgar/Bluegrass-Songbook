@@ -1,6 +1,9 @@
 {meta: title She's Comin' Home}
 {meta: artist Sonny James}
 {meta: composer Harland Powell and Irvin Russ}
+{meta: x_source classic-country}
+{meta: x_source_file shescominhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She’s coming ho-[F]o-[C]me she’s coming [F]home
@@ -40,3 +43,8 @@ She’s [G7]mine again my baby’s coming [C]home [F]   [C]
 {start_of_verse: Verse 4}
 Yes she’s [G7]mine again my baby’s coming [C]home
 {end_of_verse}
+
+
+
+
+

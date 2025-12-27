@@ -1,5 +1,8 @@
 {meta: title Let Me Be The Judge}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file letmebethejudgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Just let me be the judge of what you've done and if I find
@@ -47,3 +50,9 @@ And [G]now you think it's better that we'll [D7]end our love [G]affair
 [D7]Just let me be the judge of what you've done and if I find
 You guilty I'd erase you from my [C]heart and from my [G]mind
 {end_of_verse}
+
+
+
+
+
+

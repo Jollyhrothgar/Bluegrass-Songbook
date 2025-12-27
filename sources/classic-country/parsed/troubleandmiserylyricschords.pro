@@ -1,5 +1,8 @@
 {meta: title Trouble And Misery Lyrics and Chords}
 {meta: artist Hoyt Axton}
+{meta: x_source classic-country}
+{meta: x_source_file troubleandmiserylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Me and my guitar we'd [C]sure like to [D7]be
@@ -32,3 +35,7 @@ Since I first came to [D7]Laredo [G]town
 {start_of_verse: Verse 5}
 Since I first came to [D7]Laredo [G]town
 {end_of_verse}
+
+
+
+

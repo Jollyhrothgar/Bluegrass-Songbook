@@ -1,6 +1,9 @@
 {meta: title Ninety Nine Years Is Almost Life}
 {meta: artist Lester Flatt and Earl Scruggs}
 {meta: composer Louise Cirtain and Gladys Stacey}
+{meta: x_source classic-country}
+{meta: x_source_file ninetynineyearsisalmostlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The courtroom was crowded the judge waited [D7]there
@@ -43,3 +46,8 @@ Bad company will send him to prison like [G]me
 So take a good woman and [G7]make her your [C]wife
 For ninety nine [D7]years folks is almost for [G]life
 {end_of_verse}
+
+
+
+
+

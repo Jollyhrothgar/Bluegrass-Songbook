@@ -1,6 +1,9 @@
 {meta: title Make Up Your Mind}
 {meta: artist Kitty Wells}
 {meta: composer Jack Anglin, Eddie Hill, Johnnie Wright}
+{meta: x_source classic-country}
+{meta: x_source_file makeupyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you'd make up your mind quit [C]trifling all the [G]time 
@@ -29,3 +32,6 @@ Go settle [C]down and quit your [G]trifling ways
 If [G]you'd just settle down you'd be the [C]sweetest guy in [G]town 
 I'd love you if you'd [D7]just make up your [G]mind 
 {end_of_verse}
+
+
+

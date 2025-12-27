@@ -1,6 +1,9 @@
 {meta: title I've Gotta Walk Alone}
 {meta: artist Bob Wills}
 {meta: composer John Hathcock and Weldon Allard}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottawalkalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've gotta walk alone my sweetheart's gone
@@ -39,3 +42,8 @@ All the friends I knew by two and two
 It's a long and lonesome [G7]road
 I've got to walk [C]alone
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Come Home A Drinkin'}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Peggy Sue Wells}
+{meta: x_source classic-country}
+{meta: x_source_file dontcomehomeadrinkinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you thought I'd be waitin' up when you [G7]came home last [C]night
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]So don't come home a [C]drinkin' with [G7]lovin' on your [C]mind
 {end_of_verse}
+
+
+
+

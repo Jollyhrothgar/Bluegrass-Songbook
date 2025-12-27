@@ -1,6 +1,9 @@
 {meta: title I Told My World To Go Away}
 {meta: artist Conway Twitty}
 {meta: composer Mickey Jaco}
+{meta: x_source classic-country}
+{meta: x_source_file itoldmyworldtogoawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I grew tired of the [C]world that I was [G]living in
@@ -29,3 +32,6 @@ My [D7]memory burns with unkind words I [G]said
 This world's not big enough so [G7]one of us must [C]break away and so
 I told my [D7]world to go away and she [C]di[G]d
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title All Around Cowboy}
 {meta: artist Johnny Cash}
 {meta: composer Jack W. Routh and Len Pollard}
+{meta: x_source classic-country}
+{meta: x_source_file allaroundcowboylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just a broken down cowboy all [F]down on his [C]luck
@@ -47,3 +50,8 @@ But there was [F]somethin' about winnin' that didn't last [C]forever
 But tomorrow it's bound to get [G7]better
 He'll be the all around cowboy [C]again
 {end_of_verse}
+
+
+
+
+

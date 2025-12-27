@@ -1,6 +1,9 @@
 {meta: title Young Hearts}
 {meta: artist Jim Reeves}
 {meta: composer Sid Tepper and Roy C. Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file youngheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Young hearts can be foolish  [C]and make a [D7]mistake
@@ -29,3 +32,6 @@ Young hearts can be cruel  [C]young hearts can be [D7]blind
 If [G]you can forgive me kiss me and [C]then
 [G]Our young hearts [D7]will be happy [G]again
 {end_of_verse}
+
+
+

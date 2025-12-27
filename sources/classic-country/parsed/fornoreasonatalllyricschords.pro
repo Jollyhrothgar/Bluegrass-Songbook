@@ -1,6 +1,9 @@
 {meta: title For No Reason at All}
 {meta: artist Anne Murray}
 {meta: composer Barry Mann}
+{meta: x_source classic-country}
+{meta: x_source_file fornoreasonatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I almost stop [G7]my [Dm]breathing
@@ -44,3 +47,8 @@
 [G7]For no reason [C]at [G7]all
 [C]For no reason at all
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If Practice Makes Perfect}
 {meta: artist Johnny Rodriguez}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file ifpracticemakesperfectlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How do I look leav[G7]ing
@@ -34,3 +37,7 @@ Then I'm [G]leaving you [D7]perfect this [G]time
 If [C]prac-[D7]tice makes [G]per-[C]fect
 Then I'm [G]leaving you [D7]perfect this [C]tim[G]e
 {end_of_verse}
+
+
+
+

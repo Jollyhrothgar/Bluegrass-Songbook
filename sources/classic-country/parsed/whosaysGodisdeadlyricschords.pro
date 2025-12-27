@@ -1,5 +1,8 @@
 {meta: title Who Says God Is Dead}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file whosaysGodisdeadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Whooo says God is dead whooo says God is dead
@@ -42,3 +45,8 @@ The [G]rumor has been [C]spread  [D7]who says God is [G]dead
 [D7]Who says God is [G]dead 
 [D7]Who says God is [G]dead
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Bethlehem}
 {meta: artist Jack Greene}
+{meta: x_source classic-country}
+{meta: x_source_file bethlehemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus when You [G7]came to earth so [C]long ago
@@ -32,3 +35,6 @@ You're [F]love for us brought [C]You to [G7]Bethle[C]hem
 [F]Lord we're glad You [C]came [F]praise Your holy [C]name
 You're [F]love for us brought [C]You to [G7]Bethle[C]hem
 {end_of_verse}
+
+
+

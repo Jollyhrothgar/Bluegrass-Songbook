@@ -1,6 +1,9 @@
 {meta: title What Do You Know About Heartache}
 {meta: artist Reba McEntire}
 {meta: composer Bob Morrison, Johnny McRae, Mary Welch}
+{meta: x_source classic-country}
+{meta: x_source_file whatdoyouknowaboutheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You come to [G7]me just [Am]as a [G7]friend
@@ -50,3 +53,9 @@ The [G7]love I feel for [C]you
 When you [F]don't even know about 
 The [G7]love I feel for [C]you
 {end_of_verse}
+
+
+
+
+
+

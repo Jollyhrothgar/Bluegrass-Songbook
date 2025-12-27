@@ -1,6 +1,9 @@
 {meta: title Our Family}
 {meta: artist The Bellamy Brothers}
 {meta: composer Bobby Braddock and David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file ourfamilylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They let Bubba out of prison he [D7]paid for his crime
@@ -43,3 +46,8 @@ And [Am]even with our strange relatives it's the [G7]one we [C]love the [G7]most
 [F]There may be a bunch of nuts [C]up our family tree
 Yeah [Am]we may all be crazy but it's [G7]still our fami[C]ly
 {end_of_verse}
+
+
+
+
+

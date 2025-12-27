@@ -1,6 +1,9 @@
 {meta: title Tramp On Your Street}
 {meta: artist George Jones}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file tramponyourstreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was a long time ago no shoes on my [F]feet
@@ -43,3 +46,8 @@ I walked ten miles of [G7]train track to hear Hank Williams [C]sing
 His body was worn but his spirit was [F]free
 And he sang every [G7]song looking right straight at [C]me
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Still Get To Me In My Dreams}
 {meta: artist Tammy Wynette}
 {meta: composer Arthur Leo Owens and Bill Shore}
+{meta: x_source classic-country}
+{meta: x_source_file youstillgettomeinmydreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From our first kiss in the mornin' to our [F]last kiss at [C]night
@@ -33,3 +36,7 @@ Oh but [C]darlin' you still get to [G7]me in my [C]dreams
 {start_of_verse: Verse 5}
 [F]Oh but [C]darlin' you still get to [G7]me in my [C]dreams
 {end_of_verse}
+
+
+
+

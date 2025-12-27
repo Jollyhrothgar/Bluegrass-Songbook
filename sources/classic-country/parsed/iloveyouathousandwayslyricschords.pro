@@ -1,6 +1,9 @@
 {meta: title I Love You a Thousand Ways}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Jim Beck}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyouathousandwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love you I'll prove it in days to [D7]come
@@ -37,3 +40,7 @@
 [G]I love you I'll prove it a thousand ways
 [D7]I love you I'll prove it a thousand [G]ways
 {end_of_verse}
+
+
+
+

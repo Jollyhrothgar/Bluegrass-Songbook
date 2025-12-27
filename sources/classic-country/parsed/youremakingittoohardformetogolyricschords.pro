@@ -1,6 +1,9 @@
 {meta: title You're Making It Too Hard For Me To Go}
 {meta: artist Bob Luman}
 {meta: composer Neal Merritt and Shorty Hall}
+{meta: x_source classic-country}
+{meta: x_source_file youremakingittoohardformetogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do I see a [F]teardrop starting in your [C]eye
@@ -32,3 +35,7 @@ You've made it [C]too hard [G7]for me to [C]go
 {start_of_verse: Verse 5}
 [F]You've made it [C]too hard [G7]for me to [F]go[C]
 {end_of_verse}
+
+
+
+

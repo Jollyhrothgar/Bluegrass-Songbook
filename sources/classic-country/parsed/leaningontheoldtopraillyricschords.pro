@@ -1,6 +1,9 @@
 {meta: title Leaning On The Old Top Rail}
 {meta: artist Eddy Arnold}
 {meta: composer Nick Kenny and Charles Kenny}
+{meta: x_source classic-country}
+{meta: x_source_file leaningontheoldtopraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Leaning on the [F]old top [C]rail 
@@ -16,3 +19,4 @@ Down the [G7]track by my shack he said I'll be back [D7]another [G7]day
 Leaning on the [F]old top [C]rail in the [D7]big [G7]cor-[C]ral
 Repeat 
 {end_of_verse}
+

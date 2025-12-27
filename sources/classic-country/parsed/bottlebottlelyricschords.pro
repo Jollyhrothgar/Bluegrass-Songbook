@@ -1,5 +1,8 @@
 {meta: title Bottle Bottle}
 {meta: artist Jim Ed Brown}
+{meta: x_source classic-country}
+{meta: x_source_file bottlebottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gasping for air I come up [D7]from your [G]lips
@@ -28,3 +31,6 @@ Fight off the [G7]feelings that's always [G][C]around
 Fill me with contentment [G7]an hold to my [C]hand
 And [G]bottle bottle I'll be in [D7]your [G]command
 {end_of_verse}
+
+
+

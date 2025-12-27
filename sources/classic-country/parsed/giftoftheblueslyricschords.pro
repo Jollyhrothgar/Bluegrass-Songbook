@@ -1,6 +1,9 @@
 {meta: title Gift Of The Blues}
 {meta: artist Loretta Lynn}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file giftoftheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hope you had [Em]a very very [A7][F]merry
@@ -36,3 +39,7 @@ I travel miles and miles to see my baby
 [C]But mine were all quiet [Em]the [F]contrary
 [Dm]For I received a [G7]gift of the [C]blues
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title After Loving You Lyrics Chords}
 {meta: artist Jim Reeves}
 {meta: composer Eddie Miller and John Lantz}
+{meta: x_source classic-country}
+{meta: x_source_file afterlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling after loving [F]you what else is there to [C]do
@@ -22,3 +25,5 @@ And [D7]heartaches will remain for they can't [G7]erased
 Many loves may come [F]along but they won't live up to [C]you
 I'll be no good [G7]to anyone after loving you after loving [C]you
 {end_of_verse}
+
+

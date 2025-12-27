@@ -1,6 +1,9 @@
 {meta: title Lay Down Beside Me}
 {meta: artist Kenny Rogers}
 {meta: composer Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file laydownbesidemelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've spent my [C]life  [D7]looking for [G]you
@@ -36,3 +39,7 @@ And [G]don't ever [D7]wander [G]away
 [G]Hold me so [C]close 
 And [G]don't ever [D7]wander [G]away
 {end_of_verse}
+
+
+
+

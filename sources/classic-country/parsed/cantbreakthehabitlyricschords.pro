@@ -1,6 +1,9 @@
 {meta: title Can’t Break The Habit}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard and Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file cantbreakthehabitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can kick any habit  that [C]is if I want [G]to
@@ -29,3 +32,6 @@ I can’t take the [D7]cure now  I’ve been hooked to [G]long
 I crave your [C]loving  wouldn’t quit if I [G]could
 Can’t break the [D7]habit  cause I have it to [G]good
 {end_of_verse}
+
+
+

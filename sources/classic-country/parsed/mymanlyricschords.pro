@@ -1,6 +1,9 @@
 {meta: title My Man}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill, Norro Wilson, Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file mymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My man understands he [Em]holds me in the [G]palm of his hand
@@ -41,3 +44,7 @@ He's [A7]got what I need when I need it
 And I [Am]wanna keep it [D7]like this all the [G]time
 And I [Am]wanna keep it [D7]like this all the [G]time
 {end_of_verse}
+
+
+
+

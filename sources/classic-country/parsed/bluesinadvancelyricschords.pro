@@ -1,6 +1,9 @@
 {meta: title Blues in Advance}
 {meta: artist Hank Locklin}
 {meta: composer Nell Drummond}
+{meta: x_source classic-country}
+{meta: x_source_file bluesinadvancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I get the [G7]blues as we [C]dance
@@ -25,3 +28,5 @@ There's no hope for me [C7]now
 You will [F]change dear [C]somehow
 So I get the [G7]blues in [C]advance
 {end_of_verse}
+
+

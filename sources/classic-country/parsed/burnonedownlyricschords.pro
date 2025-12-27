@@ -1,6 +1,9 @@
 {meta: title Burn One Down}
 {meta: artist Clint Black}
 {meta: composer Clint Black, Hayden Nicholas, Frankie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file burnonedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess you're off to have your fun 
@@ -52,3 +55,9 @@ Who'll light your candle up [D7]again
 {start_of_verse: Verse 6}
 You can burn one down for [C]me[G]
 {end_of_verse}
+
+
+
+
+
+

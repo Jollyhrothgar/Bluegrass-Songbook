@@ -1,6 +1,9 @@
 {meta: title Chicken Every Sunday}
 {meta: artist Norma Jean}
 {meta: composer Charlie Craig and Betty Craig}
+{meta: x_source classic-country}
+{meta: x_source_file chickeneverysundaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just because all my dresses are cotton hand-me-downs
@@ -47,3 +50,9 @@ If [D7]that's the lower class then I'm [C]glad that I [G]am
 {start_of_verse: Verse 6}
 If [D7]that's the lower class then I'm [C]glad that I [G]am
 {end_of_verse}
+
+
+
+
+
+

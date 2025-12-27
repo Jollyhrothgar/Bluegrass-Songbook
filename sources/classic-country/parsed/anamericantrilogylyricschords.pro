@@ -1,6 +1,9 @@
 {meta: title An American Trilogy}
 {meta: artist aka Dixie}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file anamericantrilogylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I wish I was in the land of cotton 
@@ -39,3 +42,8 @@ Glory [E7]glory [F][Am]hallelu------jah
 Glory [E7]glory [F][Am]hallelu------jah
 [Dm]His truth [G7]is marching [F][Am]o-n
 {end_of_verse}
+
+
+
+
+

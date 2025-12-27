@@ -1,6 +1,9 @@
 {meta: title I'll Be Alright In The Morning}
 {meta: artist Faron Young}
 {meta: composer Roy Drusky, Faron Young, Bob Stroud}
+{meta: x_source classic-country}
+{meta: x_source_file illbealrightinthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh to[G7]night I found myself forgetting [C]you
@@ -47,3 +50,9 @@ Cause [F]tonight I finally [G7]found the love that's [C]true
 {start_of_verse: Verse 4}
 Oh [F]tonight I finally [G7]found the love that's [C]true
 {end_of_verse}
+
+
+
+
+
+

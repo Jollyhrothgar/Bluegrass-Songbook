@@ -1,6 +1,9 @@
 {meta: title Cold Feet}
 {meta: artist Lefty Frizzell}
 {meta: composer Jimmy Dickens and Thelma Blackmon}
+{meta: x_source classic-country}
+{meta: x_source_file coldfeetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I met a gal when I was young and yes she won my [G7]heart
@@ -37,3 +40,8 @@ But when she sticks them feet to me I wish that I was [C]dead
 Cold [F]feet cold [C]feet 
 [G7]When she sticks them feet to me I wish that I was [C]dead
 {end_of_verse}
+
+
+
+
+

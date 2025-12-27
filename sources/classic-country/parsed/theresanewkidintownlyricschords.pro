@@ -1,6 +1,9 @@
 {meta: title There's A New Kid In Town}
 {meta: artist Alan Jackson with Keith Whitley}
 {meta: composer Curly Putman, Don Cook, Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file theresanewkidintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're looking for the King the new Me[F]ssi[C]ah
@@ -34,3 +37,6 @@ Heaven [D7]knows there's a [F]new Kid in town
 [G7]Here in Bethle[C]hem
 Repeat last verse
 {end_of_verse}
+
+
+

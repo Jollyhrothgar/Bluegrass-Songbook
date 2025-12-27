@@ -1,6 +1,9 @@
 {meta: title Mention My Name}
 {meta: artist Billy Crash Craddock}
 {meta: composer Ron Chancey}
+{meta: x_source classic-country}
+{meta: x_source_file mentionmynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You are her best friend and I know she [A7]trusts you
@@ -29,3 +32,6 @@ Tell her I [C]miss [Am]her [D7]more every [G]day
 Tell her I'm [C]sor[Am]ry [D7]but in case she [G]won't listen
 Would you at [C]least [D7]mention my [G]name
 {end_of_verse}
+
+
+

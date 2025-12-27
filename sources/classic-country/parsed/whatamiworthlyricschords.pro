@@ -1,6 +1,9 @@
 {meta: title What Am I Worth}
 {meta: artist George Jones}
 {meta: composer George Jones and Darrell Edwards}
+{meta: x_source classic-country}
+{meta: x_source_file whatamiworthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know momma loved me I reckoned that [C]dad
@@ -50,3 +53,9 @@ If I'm [D7]not worth nothing to [G]you
 I just can't find no [C]peace of mind
 With anything [D7]that I do
 {end_of_verse}
+
+
+
+
+
+

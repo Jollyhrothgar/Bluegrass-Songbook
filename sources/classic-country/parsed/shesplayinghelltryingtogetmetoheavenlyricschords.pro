@@ -1,6 +1,9 @@
 {meta: title She's Playing Hell (Trying To Get Me To Heaven)}
 {meta: artist George Strait}
 {meta: composer Dean Dillon, David Wills, Charles Quillen}
+{meta: x_source classic-country}
+{meta: x_source_file shesplayinghelltryingtogetmetoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I let it all hang out last night come [F]in hung over this [C]mornin'
@@ -31,3 +34,6 @@ But [F]I wore holes in both the knees [C]tryin' to roll them [F]sevens
 [C]She's playing hell [G7]tryin' to get me to [C]heaven
 She's playing hell [G7]tryin' to get me to [F]heav[C]en
 {end_of_verse}
+
+
+

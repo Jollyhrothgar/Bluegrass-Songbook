@@ -1,6 +1,9 @@
 {meta: title What Are We Gonna Do About Me}
 {meta: artist Vern Gosdin}
 {meta: composer Vern Gosdin and John Northrup}
+{meta: x_source classic-country}
+{meta: x_source_file whatarewegonnadoaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There we were  it was a cold and bitter [F]night
@@ -35,3 +38,7 @@ He said [F]momma and daddy [G7]what are we gonna do about [C]me
 {start_of_verse: Verse 5}
 He said [F]momma and daddy [G7]what are we gonna do about [C]me
 {end_of_verse}
+
+
+
+

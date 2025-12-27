@@ -1,5 +1,8 @@
 {meta: title I Forget You Everyday}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file iforgetyoueverydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Memories is a [Fm]gift  [C]man can't [Am]live without
@@ -21,3 +24,5 @@ And it's [D7]always just before I lose my [G]mind [D7]
 I [G]wake up every [G7]morning hurting the [C]same old [Cm]way
 But for a little [G]while I [D7]forget you everyd[G]ay
 {end_of_verse}
+
+

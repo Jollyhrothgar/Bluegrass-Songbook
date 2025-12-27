@@ -1,6 +1,9 @@
 {meta: title Willie The Weeper}
 {meta: artist Billy Walker}
 {meta: composer Freddie Hart and Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file willietheweeperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yonder comes [G7]Willie the [C]weeper 
@@ -36,3 +39,7 @@ Saddest looking [G7]sight in all the [C]town
 Had a new [G7]love but couldn't [C]keep her 
 Now mine and Willie's [G7]hearts are broken [C]down
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Get This Stranger Out Of Me}
 {meta: artist Lefty Frizzell}
 {meta: composer Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file getthisstrangeroutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Something is trying to push you  [D7]out of my [G]heart
@@ -23,3 +26,5 @@ Kiss me with fire [D7]then let [G]desire
 [C]Get this [D7]stranger out of [G]me
 [C]Get this [D7]stranger out of [G]me
 {end_of_verse}
+
+

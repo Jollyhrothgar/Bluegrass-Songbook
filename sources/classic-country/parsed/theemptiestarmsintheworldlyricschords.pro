@@ -1,5 +1,8 @@
 {meta: title The Emptiest Arms in the World}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file theemptiestarmsintheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I only call when I've had that one too [F]many
@@ -30,3 +33,7 @@ Of the [C]emptiest [G7]arms in the [C]world
 And you alone can fill this empty [F]feeling 
 Of the [C]emptiest [G7]arms in the [C]world
 {end_of_verse}
+
+
+
+

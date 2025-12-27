@@ -1,6 +1,9 @@
 {meta: title Too Close To Her (And Too Far From You)}
 {meta: artist Hank Locklin}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file tooclosetoherandtoofarfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was just lonesome [C]I was just [G]blue
@@ -33,3 +36,7 @@ But I was too [D7]close to her and too far from [G]you
 {start_of_verse: Verse 5}
 ([C]Too [Bm]far [Am]from [G]you)
 {end_of_verse}
+
+
+
+

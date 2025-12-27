@@ -1,6 +1,9 @@
 {meta: title Highway To Nowhere}
 {meta: artist Jim Reeves}
 {meta: composer Jim Hess}
+{meta: x_source classic-country}
+{meta: x_source_file highwaytonowherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm traveling the highway to [C]nowhere 
@@ -43,3 +46,8 @@ The [C]road's dark but I keep trudging [G]on
 And tomorrow I'll be back where I [C]started 
 It's the [G]highway to [D7]nowhere that I'm [G]on
 {end_of_verse}
+
+
+
+
+

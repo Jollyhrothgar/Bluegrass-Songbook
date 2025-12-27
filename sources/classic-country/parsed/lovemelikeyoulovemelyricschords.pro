@@ -1,6 +1,9 @@
 {meta: title Love Me Like You Love Me}
 {meta: artist Clay Walker}
 {meta: composer Bill LaBounty and Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file lovemelikeyoulovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Back when we led the [Em]good times roll
@@ -56,3 +59,11 @@ So [Em]soft girl don't [D7]you feel it [A7]too
 {start_of_verse: Verse 8}
 [D7]Love me like you [G]love me
 {end_of_verse}
+
+
+
+
+
+
+
+

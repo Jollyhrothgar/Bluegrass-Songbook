@@ -1,6 +1,9 @@
 {meta: title Little Miss Heartache}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and Tommy Blake}
+{meta: x_source classic-country}
+{meta: x_source_file littlemissheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You got a reputation goin' [F]all over town
@@ -56,3 +59,10 @@ Are [F]prices that you'd pay
 But [G7]still I'm so in love with you 
 My little Miss Heart[C]ache
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If You Think I’m Crazy Now}
 {meta: artist Keith Whitley}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouthinkimcrazynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I been wired since I [F]can't remember [C]when 
@@ -29,3 +32,6 @@ I can [F]still stay up [C]six days in a [G7]row
 But I [F]know the things I [C]do com[Am]pare with [C]the things I [F]did 
 If you [C]think I'm [F]crazy [C]now should've [G7]seen me when I was a [C]kid
 {end_of_verse}
+
+
+

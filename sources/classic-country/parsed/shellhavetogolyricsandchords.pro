@@ -1,6 +1,9 @@
 {meta: title She'll Have To Go}
 {meta: artist Anne Murray}
 {meta: composer Joe Allison and Audrey Allison}
+{meta: x_source classic-country}
+{meta: x_source_file shellhavetogolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Put your sweet lips a little [F]closer to the [C]phone
@@ -43,3 +46,8 @@ Let's pretend that we're together all [G7]alone
 I'll tell the [C]man to turn the jukebox way down [F]low
 And you can [C]tell your friend there [G7]with you she'll have to [C]go
 {end_of_verse}
+
+
+
+
+

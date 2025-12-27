@@ -1,5 +1,8 @@
 {meta: title I Owe It All To Jesus}
 {meta: artist Jimmy Swaggart}
+{meta: x_source classic-country}
+{meta: x_source_file ioweitalltoJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I owe it all to [F]Jesus  [G7]I owe it all to [C]Jesus
@@ -48,3 +51,8 @@ To [G7]help someone in need [C]today
 Any good that's found in [F]me
 [G7]It's just because of Calva[C]ry [F]
 {end_of_verse}
+
+
+
+
+

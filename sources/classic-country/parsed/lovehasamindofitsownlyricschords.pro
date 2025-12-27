@@ -1,6 +1,9 @@
 {meta: title Love Has A Mind Of Its Own}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file lovehasamindofitsownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd love to forget every [F]time that you kissed [C]me
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Oh love has a mind of its [C]own
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Barroom Habits}
 {meta: artist Conway Twitty}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file barroomhabitslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the kids came out to play last Sunday morning
@@ -33,3 +36,6 @@ When you come home it's like a bad [C]dream
 I follow you round trying to keep the place [F]clean
 You better quit [C]bringing those barroom [G7]habits home to [C]mama
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When He Calls}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file whenhecallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When darkness fills the [F]valley 
@@ -31,3 +34,6 @@ In His kingdom [C]He welcomes [F]everyone
 I shall not [C]fear no more earthly [F]peril 
 For [C]He will [G7]carry me [C]home 
 {end_of_verse}
+
+
+

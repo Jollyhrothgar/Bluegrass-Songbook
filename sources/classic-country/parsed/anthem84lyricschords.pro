@@ -1,5 +1,8 @@
 {meta: title Anthem 84}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file anthem84lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're looking for a [F]fighter who'll [C]defend you
@@ -28,3 +31,6 @@ You were young and strong and [F]God was on your [C]side
 But the vision slowly [F]faded like a [C]wonder from your eyes
 You [G7]traded your compassion for your [C]pride
 {end_of_verse}
+
+
+

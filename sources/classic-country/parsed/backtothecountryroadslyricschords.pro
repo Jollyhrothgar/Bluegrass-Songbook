@@ -1,6 +1,9 @@
 {meta: title Back To The Country Roads}
 {meta: artist Charley Pride}
 {meta: composer Richard Jarvis}
+{meta: x_source classic-country}
+{meta: x_source_file backtothecountryroadslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can see the [C]sadness in your [G]eyes
@@ -35,3 +38,7 @@ The [C]whippoorwills [D7]sing me to [G]sleep
 {start_of_verse: Verse 4}
 The [C]whippoorwills [D7]sing me to [G]sleep
 {end_of_verse}
+
+
+
+

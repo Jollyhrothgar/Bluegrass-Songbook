@@ -1,6 +1,9 @@
 {meta: title Give Me Your Hand}
 {meta: artist Doyle Lawson}
 {meta: composer Jimmy Martin and Paul Williams}
+{meta: x_source classic-country}
+{meta: x_source_file givemeyourhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As an army we're marching toward heaven
@@ -43,3 +46,8 @@ Just as long as for God you may [G7]stand
 If your [C]heart today is as my heart
 You're my brother so [G7]give me your [C]hand
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title My Uncle Used To Love Me But She Died}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file myuncleusedtolovemebutshediedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My uncle used to love but she [F]died
@@ -56,3 +59,10 @@ Three sixty-five for a [G7]dollar bill of groceries
 I'll [C]have me a car of my own someday but till then I [D7]need a ride 
 My uncle used to love me but she [G]died
 {end_of_verse}
+
+
+
+
+
+
+

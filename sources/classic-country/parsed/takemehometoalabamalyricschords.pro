@@ -1,6 +1,9 @@
 {meta: title Take Me Home To Alabama}
 {meta: artist Vern Gosdin}
 {meta: composer Hank Cochran, Mack Vickery, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file takemehometoalabamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take me home to Ala[G7]bama
@@ -39,3 +42,7 @@ Take me home to Ala[G7]bama
 Where the [F]heart of Dixie [C]waits for [G7]me
 And the [F]heart of Dixie [C]beats [G7]for [C]me
 {end_of_verse}
+
+
+
+

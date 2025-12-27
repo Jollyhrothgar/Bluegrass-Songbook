@@ -1,6 +1,9 @@
 {meta: title Tonight We're Calling It A Day}
 {meta: artist Charlie Walker}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file tonightwerecallingitadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just for tonight pretend you haven't [C]told me
@@ -26,3 +29,6 @@ But you have other plans and I'm [C]not in them
 {start_of_verse: Verse 4}
 [D7]Tonight we're calling it a [G]day
 {end_of_verse}
+
+
+

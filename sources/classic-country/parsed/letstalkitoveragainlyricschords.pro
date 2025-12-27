@@ -1,6 +1,9 @@
 {meta: title Let's Talk It Over Again}
 {meta: artist Hank Williams Jr.}
 {meta: composer Lamar Morris, Warren Keith, Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file letstalkitoveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In our home there were never the [G7]angry words said
@@ -33,3 +36,7 @@ Let's talk it [G7]over [C]again
 {start_of_verse: Verse 5}
 [F]Let's talk it [G7]over [C]again
 {end_of_verse}
+
+
+
+

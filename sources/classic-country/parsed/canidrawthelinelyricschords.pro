@@ -1,6 +1,9 @@
 {meta: title Can I Draw The Line}
 {meta: artist Carl Butler}
 {meta: composer Carl Butler and Mildred Burk}
+{meta: x_source classic-country}
+{meta: x_source_file canidrawthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We meet here in secret on the dark side of [F]town
@@ -29,3 +32,6 @@ As temptations come back to fool me [G7]again
 I'm trying to [C]treat you like an old friend of [F]mine
 But with heaven so [C]near me [G7]can I draw the [C]line
 {end_of_verse}
+
+
+

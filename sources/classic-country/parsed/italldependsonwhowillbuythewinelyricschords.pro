@@ -1,6 +1,9 @@
 {meta: title It All Depends On Who Will Buy The Wine}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Billy B. Mize}
+{meta: x_source classic-country}
+{meta: x_source_file italldependsonwhowillbuythewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The kind of life you’re living since you left [F]me
@@ -29,3 +32,6 @@
 [C]You'll never know whos lips you'll soon be [F]kissing
 [G7]And it all depends on who will buy the [C]wine
 {end_of_verse}
+
+
+

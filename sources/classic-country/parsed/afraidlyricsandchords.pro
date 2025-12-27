@@ -1,6 +1,9 @@
 {meta: title Afraid}
 {meta: artist Eddy Arnold}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file afraidlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Afraid [C]to tell you [F]how much I [C]care
@@ -22,3 +25,5 @@
 [C]A heart gets [F]careless when vows are [C]made
 [G7]I want to love you but I’m so [C]afraid
 {end_of_verse}
+
+

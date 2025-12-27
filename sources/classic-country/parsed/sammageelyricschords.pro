@@ -1,6 +1,9 @@
 {meta: title Sam Magee}
 {meta: artist Johnny Horton}
 {meta: composer Jimmie Driftwood}
+{meta: x_source classic-country}
+{meta: x_source_file sammageelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a valley by the ol' North [F]Pole
@@ -44,3 +47,8 @@ He sang ho [C]ho this is [G7]mighty like the [C]south
 {start_of_verse: Verse 6}
 (He sang ho ho this is [G7]mighty like the [C]south)
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Belles Of Southern Bell}
 {meta: artist Del Reeves}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file bellesofsouthernbelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a Southern Bell Telephone Company in our [G7]town
@@ -43,3 +46,9 @@ I just sorta got an eye for the finer things in [C]life
 Oh I'm watchin' the Belles Of Southern Bell go [G7]by 
 Swingin' their hips an' rollin' their pretty [C]eyes
 {end_of_verse}
+
+
+
+
+
+

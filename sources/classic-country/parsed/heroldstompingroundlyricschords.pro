@@ -1,6 +1,9 @@
 {meta: title Her Old Stompin' Ground}
 {meta: artist Tracy Lawrence}
 {meta: composer Paul Nelson and Kenny Beard}
+{meta: x_source classic-country}
+{meta: x_source_file heroldstompingroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know she'll be back [Em]no matter where she's been
@@ -42,3 +45,8 @@ Her old stompin' [G]ground
 She [Am]always comes [G]around[D7]
 Her old stompin' [C]ground[G]
 {end_of_verse}
+
+
+
+
+

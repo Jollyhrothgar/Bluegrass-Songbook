@@ -1,6 +1,9 @@
 {meta: title Find Out What's Happening}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file findoutwhatshappeninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby you know me well you know I mean what I say
@@ -37,3 +40,8 @@ Find out what's happening before [G]long oh yeah
 If you [D7]don't find out what's happening
 [C]You're gonna find out that I've [G]gone now oh yeah
 {end_of_verse}
+
+
+
+
+

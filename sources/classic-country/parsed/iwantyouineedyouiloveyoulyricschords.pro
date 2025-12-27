@@ -1,6 +1,9 @@
 {meta: title I Want You I Need You I Love You}
 {meta: artist Elvis Presley}
 {meta: composer Maurice Myself and Ira Kosloff}
+{meta: x_source classic-country}
+{meta: x_source_file iwantyouineedyouiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hold me close hold me [Am]tight
@@ -39,3 +42,7 @@ I thought I could live without [F]romance
 But now [Am]I know [D7]that
 [G7]I will [Em]go on [Am]loving you [G7][D7]etern-ally
 {end_of_verse}
+
+
+
+

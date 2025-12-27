@@ -1,6 +1,9 @@
 {meta: title Further On Up the Road}
 {meta: artist Johnny Cash}
 {meta: composer Bruce Sringsteen}
+{meta: x_source classic-country}
+{meta: x_source_file furtheronuptheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Where the road is dark and the seed is [C]sown
@@ -36,3 +39,7 @@
 [Am]One sunny [G7]mornin'  we'll [Am]rise I [G7]know
 [F]And I'll meet you further [G7]on  up the [Am]road
 {end_of_verse}
+
+
+
+

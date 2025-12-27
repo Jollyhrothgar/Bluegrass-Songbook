@@ -1,6 +1,9 @@
 {meta: title Drink Up And Go Home}
 {meta: artist Carl Perkins}
 {meta: composer Johnny Bond and Joe Maphis}
+{meta: x_source classic-country}
+{meta: x_source_file drinkupandgohomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You sat there a crying  crying in your beer
@@ -36,3 +39,7 @@ Lost my wife and [A7]family  no one to call [D7]friend
 [G]Don't tell me your [C]troubles  I got enough of my [G]own
 Be thankful you're [C]living  [D7]drink up and go [G]home
 {end_of_verse}
+
+
+
+

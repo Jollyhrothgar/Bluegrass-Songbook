@@ -1,6 +1,9 @@
 {meta: title I Gambled My Heart}
 {meta: artist Buddy Holly}
 {meta: composer Bob Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file igambledmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you've loved someone and then found you've [G7]lost
@@ -29,3 +32,6 @@
 [F]Someday you'll know why I'm so blue
 [G7]When you've gambled your heart and you've lost it [C]too
 {end_of_verse}
+
+
+

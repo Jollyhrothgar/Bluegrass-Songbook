@@ -1,6 +1,9 @@
 {meta: title My House}
 {meta: artist Randy Travis}
 {meta: composer Paul Overstreet and Al Gore}
+{meta: x_source classic-country}
+{meta: x_source_file myhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My house is no mansion but it [F]still holds my treasures
@@ -33,3 +36,7 @@ And my house is [C]filled with the [G7]things that I [C]love
 {start_of_verse: Verse 4}
 Yes my house is [C]filled with the [G7]things that I [C]love
 {end_of_verse}
+
+
+
+

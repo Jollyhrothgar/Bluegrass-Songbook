@@ -1,6 +1,9 @@
 {meta: title You'd Be Home By Now}
 {meta: artist Leona Williams}
 {meta: composer Ron Williams, Terry Collins, Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file youdbehomebynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you stopped off again tonight downtown at [F]Frankie’s
@@ -29,3 +32,6 @@ When they close the door you’ll make it home [G7]somehow
 And then you’ll [C]try to make me think you know the [F]answer
 But if you knew [C]everything then [G7]you’d be home by [C]now
 {end_of_verse}
+
+
+

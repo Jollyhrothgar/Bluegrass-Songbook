@@ -1,6 +1,9 @@
 {meta: title Petunia The Gardener's Daughter}
 {meta: artist Elvis Presley}
 {meta: composer Sid Tepper and Roy C. Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file petuniathegardenersdaughterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've gotta gal oh what a pal[F]
@@ -55,3 +58,9 @@ And [D7]make Petunia's [G7]two lips
 (My [D7]ever loving [G7]two lips)
 Make [D7]Petunia's [G7]two lips [C]mine
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Blue House Painted White}
 {meta: artist Porter Wagoner}
 {meta: composer Sonny Burns, Buddy Word, Walt Breeland}
+{meta: x_source classic-country}
+{meta: x_source_file bluehousepaintedwhitelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The party’s all over they’re dimming the [C]lights
@@ -29,3 +32,6 @@ The [A7]silence tells me she’s not here [D7]anymore
 I [G]guess it’s by habit I call her name through the [C]night 
 But [D7]to me there’s no answer in my blue house painted [G]white
 {end_of_verse}
+
+
+

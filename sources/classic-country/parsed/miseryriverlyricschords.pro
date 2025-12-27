@@ -1,6 +1,9 @@
 {meta: title Misery River}
 {meta: artist Doyle Lawson}
 {meta: composer Glenn Worf}
+{meta: x_source classic-country}
+{meta: x_source_file miseryriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Oh Misery [C]River  [F]won't you take me [C]along
@@ -53,3 +56,11 @@ Let me [F]wash my wounds in your [C]water
 {start_of_verse: Verse 9}
 [F]Carry me back [G7]home where I [C]belong
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't It Make You Lonely}
 {meta: artist Conway Twitty}
 {meta: composer Jackson Lee Leap}
+{meta: x_source classic-country}
+{meta: x_source_file dontitmakeyoulonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Couples walking in the park
@@ -43,3 +46,9 @@ Wonder how you spend your time
 {start_of_verse: Verse 6}
 [C]Ah don't it make [D7]you lonely lonely like [G]me
 {end_of_verse}
+
+
+
+
+
+

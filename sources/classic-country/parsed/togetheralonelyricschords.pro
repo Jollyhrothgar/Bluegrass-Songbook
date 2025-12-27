@@ -1,6 +1,9 @@
 {meta: title Together Alone}
 {meta: artist George Jones}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file togetheralonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She watches movies but he don't
@@ -30,3 +33,6 @@ To[C]ge[G7]ther a[F]lone to[C]ge[G7]ther a[F]lone
 They're not [G7]unlike so [Am]many I've [F]known
 [C]Toge[G7]ther [C]alone  toge[G7]ther  [C]alone  toge[G7]ther [C]alone
 {end_of_verse}
+
+
+

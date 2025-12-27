@@ -1,6 +1,9 @@
 {meta: title Who'll Help Me Get Over You}
 {meta: artist Loretta Lynn}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file whollhelpmegetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I helped you get over your [G]old love
@@ -34,3 +37,7 @@ Now [C]my heart is breaking in [D7]two
 [C]Who'll help me get over my [G]heartache 
 [D7]Who'll help me get over [G]you
 {end_of_verse}
+
+
+
+

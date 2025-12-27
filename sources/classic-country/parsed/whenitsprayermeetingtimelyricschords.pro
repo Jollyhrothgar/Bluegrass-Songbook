@@ -1,5 +1,8 @@
 {meta: title When It’s Prayer Meeting Time}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file whenitsprayermeetingtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When it's prayer meeting time in the [G7]hollow
@@ -28,3 +31,6 @@ I will follow that old golden [Em]rule
 For it [C]taught me to pray and to live for the [F]day
 When we'll [C]meet in that [G7]hollow back [C]home
 {end_of_verse}
+
+
+

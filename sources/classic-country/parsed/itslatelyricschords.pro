@@ -1,6 +1,9 @@
 {meta: title It's Late}
 {meta: artist Ricky Nelson}
 {meta: composer Dorsey Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file itslatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's Late [it's late] we gotta [C]get on [G]home
@@ -35,3 +38,7 @@ It's late [it's late] we gotta [C]get on [G]home
 It's late [it's late] we been [D7]gone too [G]long
 Repeat last 4 verses 
 {end_of_verse}
+
+
+
+

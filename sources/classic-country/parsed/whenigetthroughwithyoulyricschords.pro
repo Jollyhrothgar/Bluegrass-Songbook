@@ -1,6 +1,9 @@
 {meta: title When I Get Through With You}
 {meta: artist Patsy Cline}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file whenigetthroughwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You won't ever [G7]look at Sue [C]again
@@ -41,3 +44,8 @@ You'll love me [C]true
 {start_of_verse: Verse 1}
 [D7]You won't ever [G7]look at Sue [C]again
 {end_of_verse}
+
+
+
+
+

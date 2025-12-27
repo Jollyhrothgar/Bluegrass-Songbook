@@ -1,6 +1,9 @@
 {meta: title Jimbo Jenkins}
 {meta: artist Jim Reeves}
 {meta: composer Jim Reeves and Bobby Garrett}
+{meta: x_source classic-country}
+{meta: x_source_file jimbojenkinslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a funny little man in my hometown 
@@ -92,3 +95,15 @@ You'll [G]find him in the Hall of Fame
 [C]The Hall of Fame's his favorite chair 
 [A7]Sitting on the [D7]courthouse square 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's Too Late}
 {meta: artist Buddy Holly}
 {meta: composer Chuck Willis}
+{meta: x_source classic-country}
+{meta: x_source_file itstoolatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's too late  she's [C]gone [F]  [C]
@@ -34,3 +37,7 @@ And tell [G7]me it's not too [C]late
 I need your lovin'  please don't make me weep
 And tell [G7]me it's not too [C]late ([F]not to [C]late)
 {end_of_verse}
+
+
+
+

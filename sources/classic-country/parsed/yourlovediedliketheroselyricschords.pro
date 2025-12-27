@@ -1,6 +1,9 @@
 {meta: title Your Love Died Like The Rose}
 {meta: artist The Johnson Mountain Boys}
 {meta: composer Dudley Dale Connell}
+{meta: x_source classic-country}
+{meta: x_source_file yourlovediedliketheroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The rose that I planted with [F]such tender [C]care
@@ -33,3 +36,7 @@ Your love bloomed and [G7]died like the [C]rose
 {start_of_verse: Verse 5}
 Your love bloomed and [G7]died like the [C]rose
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Stars On The Water}
 {meta: artist Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file starsonthewaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down in Louisiana  bayous by and by
@@ -77,3 +80,19 @@ Pretty soon you got stars on the water
 Pretty soon you got stars on the water
 You got [Em]stars on the water let [G]it rain
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

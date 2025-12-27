@@ -1,6 +1,9 @@
 {meta: title Tumbleweed Christmas Tree}
 {meta: artist Red Steagall}
 {meta: composer Andy Wilkinson}
+{meta: x_source classic-country}
+{meta: x_source_file tumbleweedChristmastreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was a rough year for a rough neck's children 
@@ -63,3 +66,11 @@ And I was just six going on seven [F]but being poor was an education
 [F]But I’d trade every fancy present [C]I ever had or ever will get
 [G7]For the night of the [F]tumbleweed [G7]Christmas [C]tree
 {end_of_verse}
+
+
+
+
+
+
+
+

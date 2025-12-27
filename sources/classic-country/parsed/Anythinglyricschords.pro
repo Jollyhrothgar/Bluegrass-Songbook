@@ -1,6 +1,9 @@
 {meta: title Anything}
 {meta: artist Randy Travis}
 {meta: composer Ronny Scaife and Phil Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file Anythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd do anything if you'd just let me hold you
@@ -47,3 +50,10 @@ I'd [G]walk upon my hands up the stairway to heaven
 I'd [G]climb the highest mountain or swim the deepest ocean
 [D7]Anything to make you [G]mine 
 {end_of_verse}
+
+
+
+
+
+
+

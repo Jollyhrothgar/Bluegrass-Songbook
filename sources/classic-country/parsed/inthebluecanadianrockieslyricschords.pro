@@ -1,6 +1,9 @@
 {meta: title In The Blue Canadian Rockies}
 {meta: artist Jim Reeves}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file inthebluecanadianrockieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the [D7]blue Canadian [G]Rockies
@@ -27,3 +30,6 @@
 [D7]For those blue Canadian [G]Rockies
 [D7]And the girl I love so [G]true
 {end_of_verse}
+
+
+

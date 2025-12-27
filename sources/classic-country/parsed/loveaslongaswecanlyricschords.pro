@@ -1,6 +1,9 @@
 {meta: title Love As Long As We Can}
 {meta: artist Dottie West}
 {meta: composer Dottie West, Bill Davis, Byron Metcalf}
+{meta: x_source classic-country}
+{meta: x_source_file loveaslongaswecanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I won't ask you to [Bm]say you'll [Dm]stay with me for[G]ever
@@ -43,3 +46,7 @@ Let's [C]love and love as [D7]long as we [G]can
 Let's [C]love and love as [D7]long as we [G]can
 Let's [C]love and love as [D7]long as we [G]can
 {end_of_verse}
+
+
+
+

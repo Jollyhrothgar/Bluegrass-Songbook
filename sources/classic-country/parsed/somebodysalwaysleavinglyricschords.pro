@@ -1,6 +1,9 @@
 {meta: title Somebody's Always Leaving}
 {meta: artist Stonewall Jackson}
 {meta: composer Jack Schneider and Claude Southall}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysalwaysleavinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Momma died when [A#7]I was borned that [C]July
@@ -43,3 +46,8 @@ This bed sheet makes a [A#7]rope that's what I'm [C]makin'
 When they [F]find me I'm quite [G7]sure there'll be no [C]weepin'
 Somebody's [A#7]always [C]leavin' somebody's [A#7]always [C]leavin'
 {end_of_verse}
+
+
+
+
+

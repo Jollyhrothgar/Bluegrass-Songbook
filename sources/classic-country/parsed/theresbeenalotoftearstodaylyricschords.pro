@@ -1,5 +1,8 @@
 {meta: title There's Been a Lot of Tears Today}
 {meta: artist Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file theresbeenalotoftearstodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's been a lot of [D7]tears to[G]day
@@ -29,3 +32,6 @@ There's been a lot of [D7]tears to[G]day
 There's [G]been a lot of [Am]tears [C]so many tears
 There's [G7]been a lot of [D7]tears to[G]day
 {end_of_verse}
+
+
+

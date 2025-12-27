@@ -1,6 +1,9 @@
 {meta: title The Other Shoe}
 {meta: artist Marsha Thornton}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file theothershoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's not like you to be so sweet to [C]me
@@ -31,3 +34,6 @@ And I'm [D7]waiting for the other[C]
 And I'm [D7]waiting for the other[C]
 Yes I'm [D7]waiting for the other shoes to [G]fall
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Never Close My Heart to You}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Floyd Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file illneverclosemyhearttoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could close my [A7]heart the [D7]way I close my eyes
@@ -22,3 +25,5 @@ But [F]I can’t close my heart like a [C]window when it rains
 [C]Darling I [A7]love you and if you [D7]want me yes or no
 I’ll [G7]never close my heart to [C]you
 {end_of_verse}
+
+

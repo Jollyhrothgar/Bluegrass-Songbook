@@ -1,6 +1,9 @@
 {meta: title Lonely Days And Nights More Lonely}
 {meta: artist Tammy Wynette}
 {meta: composer Tom Moore and Danny Hurd}
+{meta: x_source classic-country}
+{meta: x_source_file lonelydaysandnightsmorelonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lonely days and nights more lonely
@@ -24,3 +27,5 @@ And [G7]nights more [F]lonely
 [G7]Till my love comes back to [Am]me
 [G7]Till my love comes back to [C]me
 {end_of_verse}
+
+

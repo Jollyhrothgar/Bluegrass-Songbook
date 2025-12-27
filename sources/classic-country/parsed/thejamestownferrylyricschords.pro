@@ -1,6 +1,9 @@
 {meta: title The Jamestown Ferry}
 {meta: artist Tanya Tucker}
 {meta: composer Mack Vickery and Bobby Borchers}
+{meta: x_source classic-country}
+{meta: x_source_file thejamestownferrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He just caught the Jamestown Ferry it's not a hot day in [Em]January
@@ -36,3 +39,7 @@
 [G]A case of gone was all he carried as [C]he got on the Jamestown [G]Ferry
 [C]And he said that gone [D7]was all he'd ever [G]be
 {end_of_verse}
+
+
+
+

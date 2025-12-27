@@ -1,6 +1,9 @@
 {meta: title When The Cottonwoods Are Yellow}
 {meta: artist Red Steagall}
 {meta: composer Andy Wilkinson}
+{meta: x_source classic-country}
+{meta: x_source_file whenthecottonwoodsareyellowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The works is almost over
@@ -76,3 +79,12 @@ I'll [F]settle up my [C]wages [F]saddle up my [C]roan
 When the [F]cottonwoods are [C]yellow
 And the [G7]wagons headed [F]hom[C]e
 {end_of_verse}
+
+
+
+
+
+
+
+
+

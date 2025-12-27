@@ -1,6 +1,9 @@
 {meta: title Willie's Guitar}
 {meta: artist John Anderson}
 {meta: composer John Phillips and Ray Stephenson}
+{meta: x_source classic-country}
+{meta: x_source_file williesguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The [C]hole in [F]old Willie [D7]Nelson's [G7]guitar
@@ -22,3 +25,5 @@ That [C]our days are few  [D7]ever since I lost [G7]you
 And [C]nobody knows how we've [F]held together for so [Fm]long
 [Dm]Me and my [G7]old [C]guitar  [Dm]me and old [G7]Willie's [C]guitar
 {end_of_verse}
+
+

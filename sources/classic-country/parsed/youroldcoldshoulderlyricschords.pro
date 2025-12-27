@@ -1,6 +1,9 @@
 {meta: title Your Old Cold Shoulder}
 {meta: artist Crystal Gayle}
 {meta: composer Richard C. Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file youroldcoldshoulderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There [D7]ain’t nothing [G]colder than [C]your old cold [G]shoulder
@@ -26,3 +29,6 @@ You [D7]say it’s not [G]over [C]over and [G]over
 {start_of_verse: Verse 4}
 [C]But your old cold [G]shoulder [D7]tells me it [G]is
 {end_of_verse}
+
+
+

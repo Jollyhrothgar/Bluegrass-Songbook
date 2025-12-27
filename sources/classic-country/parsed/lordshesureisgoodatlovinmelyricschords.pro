@@ -1,6 +1,9 @@
 {meta: title Lord She Sure Is Good At Lovin' Me}
 {meta: artist Ricky Skaggs}
 {meta: composer Paul Overstreet and Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file lordshesureisgoodatlovinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Lord she sure is [C]good [G7]at lovin' [G7][C]me
@@ -37,3 +40,8 @@
 {start_of_verse: Verse 6}
 [F]Lord she sure is [C]good [G7]at lovin' [C]me
 {end_of_verse}
+
+
+
+
+

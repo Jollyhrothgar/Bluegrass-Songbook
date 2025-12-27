@@ -1,6 +1,9 @@
 {meta: title God Takes Good Care Of Me}
 {meta: artist Debra Talley}
 {meta: composer Henry Slaughter}
+{meta: x_source classic-country}
+{meta: x_source_file Godtakesgoodcareofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God takes real good [D7]care of me
@@ -48,3 +51,8 @@ God takes good care [G7]of [C]me[A7]
 {start_of_verse: Verse 6}
 [D7]God takes good care [G7]of [C]me
 {end_of_verse}
+
+
+
+
+

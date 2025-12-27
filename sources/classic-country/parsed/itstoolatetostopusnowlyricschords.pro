@@ -1,6 +1,9 @@
 {meta: title It's Too Late To Stop Us Now}
 {meta: artist Mel Street}
 {meta: composer Bob McDill and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file itstoolatetostopusnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let the phone just keep on [G7]ringing [F]
@@ -57,3 +60,10 @@ Let's [C]pretend that we don't [F]hear a [G7]sound
 [C]Tell the world to wait till [G7]morning [F]
 It's too [G7]late to stops us [C]now
 {end_of_verse}
+
+
+
+
+
+
+

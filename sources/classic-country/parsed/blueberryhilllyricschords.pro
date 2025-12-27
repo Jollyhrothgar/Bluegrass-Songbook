@@ -1,6 +1,9 @@
 {meta: title Blueberry Hill}
 {meta: artist Fats Domino}
 {meta: composer Al Lewis, Larry Stock, Vincent Rose}
+{meta: x_source classic-country}
+{meta: x_source_file blueberryhilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I found my [C]thrill on Blueberry [G]Hill
@@ -20,3 +23,5 @@ Were [A7]never to [D7]be
 [G]Though we're [C]apart you're part of me [G]still
 For you were my [D7]thrill on Blueberry [G]Hill
 {end_of_verse}
+
+

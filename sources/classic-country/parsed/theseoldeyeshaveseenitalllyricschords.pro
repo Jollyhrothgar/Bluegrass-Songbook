@@ -1,6 +1,9 @@
 {meta: title These Old Eyes Have Seen It All}
 {meta: artist George Jones}
 {meta: composer Curly Putman and Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file theseoldeyeshaveseenitalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The old mans hair was white and his eyes looked tired
@@ -52,3 +55,9 @@ And [F]I know it won’t be [G7]very long until [C]I hear my Jesus [F]call
 {start_of_verse: Verse 7}
 Son [G7]these old eyes have seen it [C]all 
 {end_of_verse}
+
+
+
+
+
+

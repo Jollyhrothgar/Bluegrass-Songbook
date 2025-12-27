@@ -1,6 +1,9 @@
 {meta: title Country Memories}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file countrymemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I [C]hear the [E7]bullfrogs singing bass on the [A7]pond
@@ -30,3 +33,6 @@
 [C]I’ve got my [D7]country [G]memories
 [A7]I’ve got my [D7]country [G]memories
 {end_of_verse}
+
+
+

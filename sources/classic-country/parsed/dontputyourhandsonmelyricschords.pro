@@ -1,6 +1,9 @@
 {meta: title Don't Put Your Hands On Me}
 {meta: artist Norma Jean}
 {meta: composer Lorene Mann}
+{meta: x_source classic-country}
+{meta: x_source_file dontputyourhandsonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't look me in the eyes and say you [C]love me
@@ -33,3 +36,7 @@ I [C]know it won't be the last time and I [G]don't guess it was the first
 {start_of_verse: Verse 4}
 [D7]Don't put your hands on me after they been on [G]her
 {end_of_verse}
+
+
+
+

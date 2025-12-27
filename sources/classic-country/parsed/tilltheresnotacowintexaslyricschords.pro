@@ -1,6 +1,9 @@
 {meta: title Till There's Not A Cow In Texas}
 {meta: artist Red Steagall}
 {meta: composer Written by Glenn Sutton and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file tilltheresnotacowintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You ask me just how long I'm gonna love you
@@ -47,3 +50,9 @@ Till they [C]drain that Brazos river down in [F]Waco
 {start_of_verse: Verse 5}
 [G7]Honey I'm gonna love you from now [C]on
 {end_of_verse}
+
+
+
+
+
+

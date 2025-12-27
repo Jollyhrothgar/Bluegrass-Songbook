@@ -1,6 +1,9 @@
 {meta: title Homesick}
 {meta: artist Norma Jean}
 {meta: composer Billy Cole}
+{meta: x_source classic-country}
+{meta: x_source_file homesicklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh [C]I'm so [G]homesick
@@ -30,3 +33,6 @@ And I [G]don't know what to [D7]do
 Can't [G]sleep can't [G7]eat just [C]roam the street
 Home[G]sick [D7]to be with [G]you
 {end_of_verse}
+
+
+

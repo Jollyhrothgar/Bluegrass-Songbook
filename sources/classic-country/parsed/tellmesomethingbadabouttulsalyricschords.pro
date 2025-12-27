@@ -1,6 +1,9 @@
 {meta: title Tell Me Something Bad About Tulsa}
 {meta: artist George Strait}
 {meta: composer Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file tellmesomethingbadabouttulsalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love is so [Em]beautiful when [Am]every[C]thing is [Em]fine
@@ -43,3 +46,8 @@ Tell me something bad about [Dm]Tulsa
 So I [F]won't have to [C]go back
 Be[Dm]lieving I [G7]belong there [C]again
 {end_of_verse}
+
+
+
+
+

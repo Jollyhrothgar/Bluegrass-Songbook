@@ -1,6 +1,9 @@
 {meta: title Hey Lonesome}
 {meta: artist The Bluegrass Album Band}
 {meta: composer Jimmy Martin and Sam Humphrey}
+{meta: x_source classic-country}
+{meta: x_source_file heylonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey lonesome who [F]broke your heart in[C]to
@@ -42,3 +45,9 @@ And here is [C]all I've got to [G7]say
 [C]Hey lonesome who [F]broke your heart in[C]to
 Hey lonesome who [G7]left you with the [C]blues
 {end_of_verse}
+
+
+
+
+
+

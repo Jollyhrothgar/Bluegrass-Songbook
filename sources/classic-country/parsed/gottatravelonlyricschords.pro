@@ -1,6 +1,9 @@
 {meta: title Gotta Travel On}
 {meta: artist Jimmy Dean}
 {meta: composer Paul Clayton}
+{meta: x_source classic-country}
+{meta: x_source_file gottatravelonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've laid around and played around this old town too long
@@ -46,3 +49,11 @@ I wanna see my honey wanna see her bad
 [C]I've laid around and played around this old town too long
 Summer's almost gone [C7]yes [F]winter's comin' [C]on
 {end_of_verse}
+
+
+
+
+
+
+
+

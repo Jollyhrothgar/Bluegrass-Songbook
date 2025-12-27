@@ -1,5 +1,8 @@
 {meta: title I Could Cry}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file icouldcrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I could [C]cry cause I [D7]fell in love with [G]you 
@@ -28,3 +31,6 @@ How I'll [C]cry dear I [D7]wish you only [G]knew
 I could cry [C]my very heart out just hoping you'll be [G]true
 Yes I'll [D7]cry for what else is there to [G]do
 {end_of_verse}
+
+
+

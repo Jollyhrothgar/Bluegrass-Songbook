@@ -1,5 +1,8 @@
 {meta: title Living Legend}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file livinglegendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Was it bitter then with our backs against the [C]wall
@@ -29,3 +32,6 @@ But soon we gathered like a [C]storm
 [F]Say if she came again today would you still answer to the [C]call
 [G7]Tell the truth my friend don't it matter any[C]more 
 {end_of_verse}
+
+
+

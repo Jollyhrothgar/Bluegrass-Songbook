@@ -1,6 +1,9 @@
 {meta: title Friday Night Fever}
 {meta: artist George Strait}
 {meta: composer Dean Dillon, Blake Mevis, Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file fridaynightfeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love the sound of a jukebox playing
@@ -57,3 +60,11 @@ And she knows what's wrong with me [D7]tonight
 Our love keeps us together
 And she knows what's wrong with me [D7]tonight
 {end_of_verse}
+
+
+
+
+
+
+
+

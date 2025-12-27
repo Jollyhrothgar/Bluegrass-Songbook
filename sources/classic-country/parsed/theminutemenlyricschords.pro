@@ -1,6 +1,9 @@
 {meta: title The Minute Men (Are Turning In Their Graves)}
 {meta: artist Stonewall Jackson}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file theminutemenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They march in lines and carry signs pro[C]testers one and [G]all
@@ -43,3 +46,8 @@ Washington and Jefferson are [A7]crying tears of [D7]shame
 To [G]see these men who'd [C]rather live as [G]slaves
 The [C]Minute Men are [D7]turning in their [G]graves
 {end_of_verse}
+
+
+
+
+

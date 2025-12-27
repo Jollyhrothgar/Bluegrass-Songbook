@@ -1,6 +1,9 @@
 {meta: title Useless}
 {meta: artist Ferlin Husky}
 {meta: composer Bill Carlisle}
+{meta: x_source classic-country}
+{meta: x_source_file uselesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Useless to worry [C]useless to [G]care
@@ -22,3 +25,5 @@ But I [G]can't stand the thought of
 You makin' [C]love to someone [G]new
 I know it's useless to [D7]love you but I [G]do
 {end_of_verse}
+
+

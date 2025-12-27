@@ -1,6 +1,9 @@
 {meta: title House Of Love}
 {meta: artist Dottie West}
 {meta: composer Kenny O'Dell}
+{meta: x_source classic-country}
+{meta: x_source_file houseoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Why don't you [C]and I build a house of [A7]love
@@ -22,3 +25,5 @@
 [F]Why [G7]don't [C]you and I  [G7]build a house of [C]love
 [F]Let's [G7]just [C]you and [G7]I  build a house [C]of [C][F]love
 {end_of_verse}
+
+

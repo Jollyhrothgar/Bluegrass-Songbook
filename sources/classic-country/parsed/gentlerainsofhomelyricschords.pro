@@ -1,6 +1,9 @@
 {meta: title Gentle Rains Of Home}
 {meta: artist George Morgan}
 {meta: composer Jean Chapel}
+{meta: x_source classic-country}
+{meta: x_source_file gentlerainsofhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I let these restless feet start [F]walking
@@ -43,3 +46,8 @@ And the way grows darker [Am]with each depth you [G7]row
 When you [C]feel the storms of [F]life in all [C]their fury 
 You long to feel the [G7]gentle rains of [C]home
 {end_of_verse}
+
+
+
+
+

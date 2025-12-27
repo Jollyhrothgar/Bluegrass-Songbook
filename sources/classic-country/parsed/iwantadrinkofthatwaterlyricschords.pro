@@ -1,5 +1,8 @@
 {meta: title I Want A Drink Of That Water}
 {meta: artist Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file iwantadrinkofthatwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want a drink of that water that the Man turned into wine 
@@ -39,3 +42,8 @@ I want a drink of that [Em]water the [D7]Man turned into [G]wine
 {start_of_verse: Verse 4}
 I want a drink of that [Em]water the [D7]Man turned into [G]wine
 {end_of_verse}
+
+
+
+
+

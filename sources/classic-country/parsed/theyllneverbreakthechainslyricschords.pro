@@ -1,6 +1,9 @@
 {meta: title They'll Never Break The Chains}
 {meta: artist Mel Tillis}
 {meta: composer Gene Simmons}
+{meta: x_source classic-country}
+{meta: x_source_file theyllneverbreakthechainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No [G7]they'll [C]never break the chains of love that bind us
@@ -40,3 +43,8 @@ And they'll [Dm]never break the [G7]chains of love that [C]bind us
 Do dit do do dit do dit do do dit do do [F]do
 Do [G7]dit do do dit do dit do do dit do do [C]do 
 {end_of_verse}
+
+
+
+
+

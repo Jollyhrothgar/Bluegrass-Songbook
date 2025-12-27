@@ -1,6 +1,9 @@
 {meta: title Going To The River}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Antoine Domino}
+{meta: x_source classic-country}
+{meta: x_source_file goingtotheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm goin' to the river gonna [D7]jump overboard and [G]drown
@@ -19,3 +22,5 @@ Well if you see my momma tell [D7]her good-bye for [G]me
 If [C]you see my momma tell her good-bye for [G]me
 Because I'm tired of livin' [D7]livin' in mise[G]ry
 {end_of_verse}
+
+

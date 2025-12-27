@@ -1,6 +1,9 @@
 {meta: title Cuba Rhumba}
 {meta: artist Hank Snow}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file cubarhumbalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now if you're gonna cruise be sure that you'll choose [D7]Havana
@@ -29,3 +32,6 @@
 [G]And then you'll walk in a trance and just wanna dance to [D7]Rhumba
 [G]Yes the Cuba Rhumba will have you under its spell
 {end_of_verse}
+
+
+

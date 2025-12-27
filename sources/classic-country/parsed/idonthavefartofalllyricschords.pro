@@ -1,6 +1,9 @@
 {meta: title I Don't Have Far To Fall}
 {meta: artist Skip Ewing}
 {meta: composer Donald R. Ewing II and Donald R. Sampson}
+{meta: x_source classic-country}
+{meta: x_source_file idonthavefartofalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight as I lay holding you [F]you whisper
@@ -37,3 +40,7 @@ If [Dm]I'm not in love [G7]I don't have far to [C]fall
 {start_of_verse: Verse 4}
 If [Dm]I'm not in love [G7]I don't have far to [C]fall
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I’ll Catch You When You Fall}
 {meta: artist Charlie Walker}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file illcatchyouwhenyoufalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It seems like years and a million tears 
@@ -52,3 +55,11 @@ You're not fooling [C7]me at [F]all
 When you're feeling bad your old country [G7]lad 
 Is gonna catch you when you [C]fall
 {end_of_verse}
+
+
+
+
+
+
+
+

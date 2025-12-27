@@ -1,5 +1,8 @@
 {meta: title All Those Years}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file allthoseyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come on in and take your [F]coat off 
@@ -37,3 +40,7 @@ Was all gone in just a [G7]day
 Makes it [F]hard to try to [C]find a brand new [G7]way
 After all those [C]years
 {end_of_verse}
+
+
+
+

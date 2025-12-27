@@ -1,5 +1,8 @@
 {meta: title Everything From Jesus To Jack Daniels}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file everythingfromJesustojackdanielslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You wake up in the morning drink a [C]beer and take a Valium
@@ -56,3 +59,10 @@ It's the [D7]all new American [G]diet
 Trying [C]everything from Jesus to Jack [G]Daniels
 You get [C]on it and you're [G]on it for the [D7]rest of your [G]life
 {end_of_verse}
+
+
+
+
+
+
+

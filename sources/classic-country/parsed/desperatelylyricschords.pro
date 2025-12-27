@@ -1,6 +1,9 @@
 {meta: title Desperately}
 {meta: artist Don Williams}
 {meta: composer Jamie O'Hara and Kevin Welch}
+{meta: x_source classic-country}
+{meta: x_source_file desperatelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart is out of control
@@ -41,3 +44,5 @@ But I am and there's [G7]nothing I can [C]do
 When you're not [F]here with [C]me
 I get a little bit [G7]crazy
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title This Dream's On Me}
 {meta: artist Gene Watson}
 {meta: composer Fredrick G. Koller}
+{meta: x_source classic-country}
+{meta: x_source_file thisdreamsonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said you dreamed of candle[C7]light
@@ -47,3 +50,9 @@ Close your eyes I'll take you [C7]where
 {start_of_verse: Verse 7}
 This [G7]dreams on [C]me
 {end_of_verse}
+
+
+
+
+
+

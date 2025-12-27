@@ -1,5 +1,8 @@
 {meta: title All The Love I Ever Had}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file alltheloveieverhadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One time you know I [G7]loved you [C]true
@@ -28,3 +31,6 @@ A thousand times my [G7]poor soul [C]died
 You have treated me so [F]bad
 You killed [C]all the [G7]love I ever [C]had
 {end_of_verse}
+
+
+

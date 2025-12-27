@@ -1,6 +1,9 @@
 {meta: title Nothing Takes The Place Of You}
 {meta: artist Asleep at the Wheel}
 {meta: composer Toussaint McCall and Pat Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file nothingtakestheplaceofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I moved your pictures [Am]from my walls
@@ -30,3 +33,6 @@ Because [D7]without you oh without you nothin' [G7]seems the same
 Because [F]nothin' oh but [G7]nothin' takes the place of [C]you
 Oh [F]nothin' oh but [G7]nothin' takes the place of [C]you
 {end_of_verse}
+
+
+

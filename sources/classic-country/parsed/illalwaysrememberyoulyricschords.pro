@@ -1,6 +1,9 @@
 {meta: title I'll Always Remember You}
 {meta: artist George Strait}
 {meta: composer Dean Dillon, Bubba Strait, George Strait}
+{meta: x_source classic-country}
+{meta: x_source_file illalwaysrememberyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It all started back in 198[Am]1
@@ -59,3 +62,10 @@ You've [C]pulled me through some hard times
 Hope I've [G]pulled you through a few
 And just [Am]know that [C]I'll al[D7]ways remember [G]you
 {end_of_verse}
+
+
+
+
+
+
+

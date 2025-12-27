@@ -1,6 +1,9 @@
 {meta: title Weekend Blues}
 {meta: artist Jimmy Dean}
 {meta: composer Steven Harvey and Martin Seligson}
+{meta: x_source classic-country}
+{meta: x_source_file weekendblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My Friday nights are lonely
@@ -43,3 +46,8 @@ I spend my nights just longing
 [G]If you'll come back there'll never be
 [D7]Another weekend [G]blues
 {end_of_verse}
+
+
+
+
+

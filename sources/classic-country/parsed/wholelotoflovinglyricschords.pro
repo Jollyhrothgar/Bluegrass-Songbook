@@ -1,6 +1,9 @@
 {meta: title Whole Lot Of Loving}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file wholelotoflovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got a whole lotta loving for [C]you
@@ -31,3 +34,6 @@ I got a whole lotta  to [C]do
 A [G]whole lotta  to [C]do
 And I'm [G]so [D7]glad to see [G]you
 {end_of_verse}
+
+
+

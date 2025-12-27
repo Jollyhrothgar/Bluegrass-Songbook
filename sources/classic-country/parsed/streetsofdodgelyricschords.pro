@@ -1,6 +1,9 @@
 {meta: title Streets Of Dodge}
 {meta: artist Johnny Horton}
 {meta: composer Fred B. Horton and Bryan Westfield Mintz}
+{meta: x_source classic-country}
+{meta: x_source_file streetsofdodgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Only a saddle [Am]for my bed [C]heaven as my [Am]lodge
@@ -43,3 +46,9 @@ Only a saddle [Am]for my bed and [C]heaven as my [Am]lodge
 [C]I lost [Am]everything [C]there on the streets of [Am]Dodge 
 [C]There on the [F]streets of [C]Dodge 
 {end_of_verse}
+
+
+
+
+
+

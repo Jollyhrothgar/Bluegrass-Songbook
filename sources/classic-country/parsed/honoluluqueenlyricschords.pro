@@ -1,6 +1,9 @@
 {meta: title Honolulu Queen}
 {meta: artist Norma Jean}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file honoluluqueenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As the steamer pulls away through ol’ [C]San Francisco Bay
@@ -29,3 +32,6 @@ I was [A7]in his arms but she was in his [D7]dreams
 But I [G]wonder if he'll find a [C]love as true as mine
 In the [D7]arms of his Honolulu [G]queen
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Silent Night}
 {meta: artist Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file silentnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Silent night holy night 
@@ -27,3 +30,5 @@ Silent night holy night
 [G7]Jesus Lord at Thy [C]birth
 Jesus Lord at [G7]Thy [C]birth
 {end_of_verse}
+
+

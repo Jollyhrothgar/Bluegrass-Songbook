@@ -1,5 +1,8 @@
 {meta: title Little Old Band of Gold}
 {meta: artist Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file littleoldbandofgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]This [C]little old band of gold is the one my mother [F]wore
@@ -19,3 +22,5 @@
 {start_of_verse: Verse 3}
 Repeat
 {end_of_verse}
+
+

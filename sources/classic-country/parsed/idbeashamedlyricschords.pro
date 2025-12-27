@@ -1,5 +1,8 @@
 {meta: title I'd Be Ashamed}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file idbeashamedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I picked up the phone to give you a call 
@@ -50,3 +53,9 @@ Ah ah [D7]ah oh [C]yeah I'd be a[G]shamed
 {start_of_verse: Verse 6}
 Ah ah [D7]ah oh [C]yeah I'd be a[G]shamed
 {end_of_verse}
+
+
+
+
+
+

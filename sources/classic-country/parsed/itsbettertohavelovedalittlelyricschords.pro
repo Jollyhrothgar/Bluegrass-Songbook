@@ -1,6 +1,9 @@
 {meta: title It's Better To Have Loved A Little}
 {meta: artist Hank Thompson}
 {meta: composer Joe South}
+{meta: x_source classic-country}
+{meta: x_source_file itsbettertohavelovedalittlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hate to see it end so sudden
@@ -51,3 +54,10 @@ And [A7]when I think of you I’ll [D7]smile
 [C]Better to have loved a [G]little
 [D7]Than never to have loved at [G]all
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Open Field}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file openfieldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have you ever been [Am]troubled you [F]feel so [G7]alone
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [F]Walk with Him talk [G7]with Him you'll get [C]by
 {end_of_verse}
+
+
+
+

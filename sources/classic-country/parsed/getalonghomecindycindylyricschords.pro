@@ -1,5 +1,8 @@
 {meta: title Get Along Home Cindy Cindy}
 {meta: artist Ricky Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file getalonghomecindycindylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I was a apple 
@@ -56,3 +59,10 @@ She called me sugar [G7]plum
 She [C]threw her arms [F]around me 
 I [G7]thought my [F]time had [C]come 
 {end_of_verse}
+
+
+
+
+
+
+

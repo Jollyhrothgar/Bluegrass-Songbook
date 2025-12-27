@@ -1,5 +1,8 @@
 {meta: title Look For Me}
 {meta: artist Marvin Rainwater}
+{meta: x_source classic-country}
+{meta: x_source_file lookformelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]When your [C]hopes and your [F]plans and your [E7]dreams fall [F][Am]through
@@ -33,3 +36,7 @@
 [C]Look for me I’ll [G7]be waiting for [C]you
 [G7]Look for me I’ll be waiting for [C]you
 {end_of_verse}
+
+
+
+

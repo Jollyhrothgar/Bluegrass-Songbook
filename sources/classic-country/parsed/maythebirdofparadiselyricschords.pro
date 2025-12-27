@@ -1,6 +1,9 @@
 {meta: title May The Bird Of Paradise}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Neal Merritt}
+{meta: x_source classic-country}
+{meta: x_source_file maythebirdofparadiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One fine day as I was [G7]walking down the [C]street
@@ -46,3 +49,8 @@ May an elephant caress you with his [G7]toes
 May your wife [C]be plagued with [C7]runners in her [F]hose
 May the bird [C]of paradise [G7]fly up your [C]nose
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Fool's Gold}
 {meta: artist Lee Greenwood}
 {meta: composer Russ Freeman}
+{meta: x_source classic-country}
+{meta: x_source_file foolsgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]If I [C]only knew then [F]what I know [C]now
@@ -47,3 +50,8 @@ And turned it into
 And [Am]now all I hear is you [D7]sayin' goodbye[Am]
 [F]Starin' at an empty [C]hand full of [F]fool's [C]gold [F]
 {end_of_verse}
+
+
+
+
+

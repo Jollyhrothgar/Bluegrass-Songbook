@@ -1,5 +1,8 @@
 {meta: title Put Me Out Of My Memory}
 {meta: artist Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file putmeoutofmymemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello bottle well it’s just me and [C]you
@@ -28,3 +31,6 @@ And put me out of [D7]my [G]mem-ory
 {start_of_verse: Verse 3}
 [D7]Yes put me out of my [G]mem-ory
 {end_of_verse}
+
+
+

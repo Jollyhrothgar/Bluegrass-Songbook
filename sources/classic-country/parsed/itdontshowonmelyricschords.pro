@@ -1,5 +1,8 @@
 {meta: title It Don't Show On Me}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file itdontshowonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can't know the [F]feeling [G7]inside me that is [C]stealing
@@ -24,3 +27,6 @@ You can't [F]know cause it [G7]don't show on [C]me
 [F]Abused unused [C]refused [F]misused that [G7]I got from [C]you
 But you can't know the [F]feeling cause it [C]just don't [G7]show on [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Be Cruel}
 {meta: artist Elvis Presley}
 {meta: composer by Otis Blackwell}
+{meta: x_source classic-country}
+{meta: x_source_file dontbecruellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You know I can be found sitting home all alone
@@ -50,3 +53,11 @@ Don't be [Am]cruel ooh ooh [D7]to a heart that's [G]true
 I don't [C]want no other [D7]love
 [C]Baby it's just [D7]you I'm thinking [G]of
 {end_of_verse}
+
+
+
+
+
+
+
+

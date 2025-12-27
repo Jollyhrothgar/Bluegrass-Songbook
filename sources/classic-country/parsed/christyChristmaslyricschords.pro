@@ -1,6 +1,9 @@
 {meta: title Christy Christmas}
 {meta: artist Brenda Lee}
 {meta: composer Marty Symes and Tony Starr}
+{meta: x_source classic-country}
+{meta: x_source_file christyChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Santa's got a brand new [G7]helper you're the [C]first one [G7]to be [C]told
@@ -36,3 +39,7 @@ There will [D7]be someone else with Santa when [G7]he comes to visit you
 [C]Christy Christmas they'll [F]make into a toy
 [G7]And all you children soon can play with Santa's little [C]boy
 {end_of_verse}
+
+
+
+

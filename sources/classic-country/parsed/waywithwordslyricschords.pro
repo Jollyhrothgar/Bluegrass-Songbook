@@ -1,6 +1,9 @@
 {meta: title Way With Words}
 {meta: artist Carl Smith}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file waywithwordslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seems like I'm always leaving but I can never get gone
@@ -34,3 +37,8 @@ My bags stay packed and ready behind the big chair by the phone
 And those bedtime stories that you tell most everyone I've [F]heard
 But [G7]danged if you ain't got a way with [C]words
 {end_of_verse}
+
+
+
+
+

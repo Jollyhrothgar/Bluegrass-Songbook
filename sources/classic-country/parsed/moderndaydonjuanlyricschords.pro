@@ -1,6 +1,9 @@
 {meta: title Modern Day Don Juan}
 {meta: artist Buddy Holly}
 {meta: composer Don Guess and Jack Neal}
+{meta: x_source classic-country}
+{meta: x_source_file moderndaydonjuanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I ain't nothing [C]but a man in [G]love
@@ -27,3 +30,6 @@
 [C]The girls they say I'm their only [G]one
 [D7]They even say I'm a [C]modern Don [G]Juan
 {end_of_verse}
+
+
+

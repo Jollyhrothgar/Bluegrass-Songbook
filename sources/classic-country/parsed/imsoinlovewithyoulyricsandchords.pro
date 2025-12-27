@@ -1,6 +1,9 @@
 {meta: title I'm So In Love With You}
 {meta: artist Wilburn Brothers}
 {meta: composer Sonny James and John Skye}
+{meta: x_source classic-country}
+{meta: x_source_file imsoinlovewithyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I'm so in love with [G]you
@@ -29,3 +32,6 @@ I [C]never [D7]dreamed there'd be a love like [G]this you see
 Then you were [D7]sent to me I'm so in love with [G]you
 [D7]I'm so in love with [G]you
 {end_of_verse}
+
+
+

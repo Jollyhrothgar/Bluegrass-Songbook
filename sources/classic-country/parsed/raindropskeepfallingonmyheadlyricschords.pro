@@ -1,6 +1,9 @@
 {meta: title Raindrops Keep Falling on My Head}
 {meta: artist B J Thomas}
 {meta: composer Burt Bacharach and Hal David}
+{meta: x_source classic-country}
+{meta: x_source_file raindropskeepfallingonmyheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Raindrops keep falling on my head
@@ -34,3 +37,7 @@ But [C7]that doesn't mean my eyes will [F]soon be turning [Em]red
 [A7]Crying's not for me  cause  I'm never [Em]gonna stop [A7]the rain by [Dm]complaining
 [G7]Because I'm [C]free  [G7]nothings worrying [C]me
 {end_of_verse}
+
+
+
+

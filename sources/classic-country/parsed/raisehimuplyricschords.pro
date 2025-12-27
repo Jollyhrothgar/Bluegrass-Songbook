@@ -1,6 +1,9 @@
 {meta: title Raise Him Up}
 {meta: artist Randy Travis}
 {meta: composer Rivers Rutherford and Robb Royer}
+{meta: x_source classic-country}
+{meta: x_source_file raisehimuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I first met His momma [Bm]she was just nineteen
@@ -57,3 +60,9 @@ With a [G]Father's love
 But you gotta [C]raise Him [G]up ([C]raise Him [G]up)
 [C]Raise Him [G]up ([C]raise Him [G]up)
 {end_of_verse}
+
+
+
+
+
+

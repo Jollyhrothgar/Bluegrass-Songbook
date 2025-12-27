@@ -1,6 +1,9 @@
 {meta: title Nine Pound Hammer}
 {meta: artist Jimmy Dean}
 {meta: composer Merle Travis}
+{meta: x_source classic-country}
+{meta: x_source_file ninepoundhammerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little to [F]heavy  for my [C]size
@@ -34,3 +37,7 @@ Out of number nine coal boy [C]boy
 Well roll on buddy with a load of [F]coal 
 Well how you [C]roll roll [G7]roll when the wheels won't [C]go
 {end_of_verse}
+
+
+
+

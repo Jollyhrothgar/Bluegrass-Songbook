@@ -1,6 +1,9 @@
 {meta: title We're Putting It Back Together}
 {meta: artist George Jones}
 {meta: composer Danny Walls and Sammy Lyons}
+{meta: x_source classic-country}
+{meta: x_source_file wereputtingitbacktogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our world was falling apart 
@@ -41,3 +44,7 @@ But it's [G7]gonna be different this [C]time
 {start_of_verse: Verse 4}
 We're [G7]puttin' it back together to make it [C]last
 {end_of_verse}
+
+
+
+

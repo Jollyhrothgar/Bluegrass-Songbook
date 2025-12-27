@@ -1,6 +1,9 @@
 {meta: title Think Of What You’ve Done}
 {meta: artist Ricky Skaggs}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file thinkofwhatyouvedonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is it [F]true that I've lost [C]you
@@ -36,3 +39,7 @@ Am [G7]I not the only [C]one
 After all [F]this pain and [C]sorrow
 Darling [G7]think of what you've [C]done 
 {end_of_verse}
+
+
+
+

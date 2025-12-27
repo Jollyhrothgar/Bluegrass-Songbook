@@ -1,6 +1,9 @@
 {meta: title Let Me Fly Low}
 {meta: artist Charlie Waller}
 {meta: composer Iris Hall}
+{meta: x_source classic-country}
+{meta: x_source_file letmeflylowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sad is the feeling [C]dreadful the [G]grieving
@@ -47,3 +50,9 @@ Please tell the angels to [D7]let me fly [G]low
 {start_of_verse: Verse 6}
 Please tell the angels to [D7]let me fly [G]low
 {end_of_verse}
+
+
+
+
+
+

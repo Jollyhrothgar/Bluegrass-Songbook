@@ -1,5 +1,8 @@
 {meta: title You Gave Me A Mountain}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file yougavemeamountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Born in the heat of the [Am]desert
@@ -42,3 +45,8 @@ A mountain I [F]may never [C]climb
 And it isn't a hill [F]any [C]longer
 You gave me a [F]mountain this [C]time
 {end_of_verse}
+
+
+
+
+

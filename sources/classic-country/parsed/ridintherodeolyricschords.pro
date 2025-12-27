@@ -1,6 +1,9 @@
 {meta: title Ridin' The Rodeo}
 {meta: artist Vince Gill}
 {meta: composer Vince Gill and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file ridintherodeolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Drivin' all night too many miles to [F]go
@@ -42,3 +45,8 @@ That's the [C]life of a cowboy [G7]ridin' the rode[C]o
 {start_of_verse: Verse 5}
 Yeah that's the [C]life of a cowboy [G7]ridin' the rode[C]o
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can't Lose Something (I Never Had)}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew, Tommy Blake, W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file icantlosesomethingineverhadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I said I'd forget you 
@@ -43,3 +46,8 @@ To see you go should make me [F]glad
 For I can't lose [C]something 
 [G7]That I've never [C]had
 {end_of_verse}
+
+
+
+
+

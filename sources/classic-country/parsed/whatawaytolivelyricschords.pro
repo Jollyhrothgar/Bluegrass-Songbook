@@ -1,6 +1,9 @@
 {meta: title What A Way To Live}
 {meta: artist Willie Nelson}
 {meta: composer Willie Nelson and Hank Craig}
+{meta: x_source classic-country}
+{meta: x_source_file whatawaytolivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each night I make the rounds
@@ -43,3 +46,8 @@ A face among the crowd
 [F]So much like hers it [C]makes my heart stand [G7]still [F]   [G7]
 What a way to [C]live
 {end_of_verse}
+
+
+
+
+

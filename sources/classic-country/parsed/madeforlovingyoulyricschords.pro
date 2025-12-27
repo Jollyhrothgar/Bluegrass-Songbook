@@ -1,6 +1,9 @@
 {meta: title Made For Loving You}
 {meta: artist Doug Stone}
 {meta: composer Claude "Curly" Putman Jr., Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file madeforlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every[C]body sings a [D7]different kind of [G]song
@@ -27,3 +30,6 @@ See the [G]way we fit I'm [D7]made for loving [G]you
 Girl I've spent my life [G7]making my way to [C]you [A7]
 See the [G]way we fit I'm [D7]made for loving [G]you
 {end_of_verse}
+
+
+

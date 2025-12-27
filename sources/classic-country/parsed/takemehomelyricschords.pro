@@ -1,6 +1,9 @@
 {meta: title Take Me Home}
 {meta: artist Bobby Bare}
 {meta: composer Jack Clement and Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file takemehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've been from Boston to LA
@@ -44,3 +47,9 @@ Take me [C]home I [D7]don't wanna roam no [G]more
 {start_of_verse: Verse 5}
 Take me [C]home 
 {end_of_verse}
+
+
+
+
+
+

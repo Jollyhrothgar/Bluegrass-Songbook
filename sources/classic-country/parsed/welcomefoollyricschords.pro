@@ -1,6 +1,9 @@
 {meta: title Welcome Fool}
 {meta: artist Mark Chesnutt}
 {meta: composer Dave Loggins}
+{meta: x_source classic-country}
+{meta: x_source_file welcomefoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're here to sit and [G7]talk
@@ -45,3 +48,7 @@
 {start_of_verse: Verse 4}
 [G7]Welcome fool to the stool next to [C]me
 {end_of_verse}
+
+
+
+

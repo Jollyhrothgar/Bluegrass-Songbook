@@ -1,6 +1,9 @@
 {meta: title I'll Pin A Note On Your Pillow}
 {meta: artist Billy Joe Royal}
 {meta: composer Carol W. Berzas, Don Goodman, Nelson Larkin}
+{meta: x_source classic-country}
+{meta: x_source_file illpinanoteonyourpillowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's just not working we've both known for sometime 
@@ -33,3 +36,7 @@ But I'll pin a [G]note on your pillow or you [D7]might not even notice I'm [G]go
 {start_of_verse: Verse 4}
 I'm [C]gone  I'll pin a [G]note on your pillow or you [D7]might not even notice I'm [G]gone
 {end_of_verse}
+
+
+
+

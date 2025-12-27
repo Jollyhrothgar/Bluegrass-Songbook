@@ -1,6 +1,9 @@
 {meta: title Far Side Banks Of Jordan}
 {meta: artist Johnny Cash}
 {meta: composer Terry Smith}
+{meta: x_source classic-country}
+{meta: x_source_file farsidebanksofjordanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I believe my steps are growing wearier each [D7]day
@@ -36,3 +39,7 @@ I’ll be [C]waiting drawing pictures in the [G]sand
 And [D7]when I see you coming I will rise up with a [G]shout
 And come [C]running through the [G]shallow waters [D7]reaching for your [G]hand
 {end_of_verse}
+
+
+
+

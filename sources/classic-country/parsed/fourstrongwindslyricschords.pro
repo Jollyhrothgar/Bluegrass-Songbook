@@ -1,6 +1,9 @@
 {meta: title Four Strong Winds}
 {meta: artist Bobby Bare}
 {meta: composer Ian Tyson}
+{meta: x_source classic-country}
+{meta: x_source_file fourstrongwindslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Four Strong Winds That Blow [F]Lonely
@@ -41,3 +44,7 @@
 Tag:
 [F]I'll Look For You If [Dm]I'm Ever [G7]Back This [F]Way
 {end_of_verse}
+
+
+
+

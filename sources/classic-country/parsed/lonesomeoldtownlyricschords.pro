@@ -1,6 +1,9 @@
 {meta: title Lonesome Old Town}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomeoldtownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In this lonesome lonesome old [G7]town
@@ -40,3 +43,8 @@ In another lonesome old [C]town
 {start_of_verse: Verse 4}
 In [G7]another lonesome old [C]town
 {end_of_verse}
+
+
+
+
+

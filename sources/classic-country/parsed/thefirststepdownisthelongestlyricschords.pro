@@ -1,6 +1,9 @@
 {meta: title The First Step Down Is The Longest}
 {meta: artist The Wilburn Brothers}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file thefirststepdownisthelongestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The [F]first step down is the [C]longest 
@@ -33,3 +36,6 @@ You're on the bottom now [G7]and it didn't take [C]long
 The [F]first step down is the [C]longest 
 On your way down the [G7]ladder of dis[C]grace
 {end_of_verse}
+
+
+

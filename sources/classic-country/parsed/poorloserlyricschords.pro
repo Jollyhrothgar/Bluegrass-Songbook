@@ -1,6 +1,9 @@
 {meta: title Poor Loser}
 {meta: artist Ricky Nelson}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file poorloserlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why did you have to [G7]take my heart and [C]break it
@@ -48,3 +51,9 @@ Cause I'm a [C]poor loser when it [G7]comes to losing [C]you
 Yes I'm a poor loser when it [G7]comes to losing [C]you
 Well I'm a poor loser when it [G7]comes to losing [C]you
 {end_of_verse}
+
+
+
+
+
+

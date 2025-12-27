@@ -1,6 +1,9 @@
 {meta: title The Cat Came Back}
 {meta: artist Sonny James}
 {meta: composer Harry S. Miller}
+{meta: x_source classic-country}
+{meta: x_source_file thecatcamebacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The cat came back the cat came back
@@ -71,3 +74,15 @@ Not a soul aboard the train lived to tell the tale
 I thought he [G7]was a goner but the cat came [C]back
 Cause [D7]he wouldn't [D7][C][G]stay [D7][C][G]away
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

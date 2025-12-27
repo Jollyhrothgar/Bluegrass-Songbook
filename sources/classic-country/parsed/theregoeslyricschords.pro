@@ -1,5 +1,8 @@
 {meta: title There Goes}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file theregoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There you were [C]standin' in the [D7]shadows
@@ -46,3 +49,8 @@ There goes your [G]tantalizing [C]smile
 There goes my [D7]heart falling for [G]you
 [C]Yeah there goes my [D7]heart falling for [G]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's A Good Thing I Don't Love You}
 {meta: artist Doug Stone}
 {meta: composer Keith Palmer and Bobby Barker}
+{meta: x_source classic-country}
+{meta: x_source_file itsagoodthingidontloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I brush by you in a [C]crowd
@@ -43,3 +46,9 @@ It's a [C]good thing I don't [D7]love you any[G]more
 {start_of_verse: Verse 7}
 Yes it's a [C]good thing I don't [D7]love you any[G]more 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Roarin' Again}
 {meta: artist Wilburn Brothers}
 {meta: composer Don Ellis, Gene Reed, Freda Reed}
+{meta: x_source classic-country}
+{meta: x_source_file roarinagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Spent all last night in a [F]honky tonk 
@@ -50,3 +53,9 @@ Oh roarin' again [F]roarin' again
 [C]All the time of knowin' when the [F]rooster started crowin'
 I'll be [C]sorry I've been [G7]roarin' [C]again
 {end_of_verse}
+
+
+
+
+
+

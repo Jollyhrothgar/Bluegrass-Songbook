@@ -1,6 +1,9 @@
 {meta: title You Only See What You Want To See}
 {meta: artist Jack Scott}
 {meta: composer Hal David and Paul Hampton}
+{meta: x_source classic-country}
+{meta: x_source_file youonlyseewhatyouwanttoseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No matter what I do I never [Am]satisfy you
@@ -39,3 +42,7 @@ Please let [F]them see [G7]what they ought to [C]see
 The kind of [F]love [G7]that I have in [C]me
 The kind of [F]love [G7]that I have in [C]me
 {end_of_verse}
+
+
+
+

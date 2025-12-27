@@ -1,6 +1,9 @@
 {meta: title Together Again}
 {meta: artist Ray Price}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file togetheragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Together a[C]gain my tears have stopped [F]falling
@@ -20,3 +23,5 @@ You're back in my [G7]arms now where you [C]belong
 And nothing else [G7]matters we're together [C]again[F]  [C]
 [F]Nothing else [G7]matters we're together [C]again [F]
 {end_of_verse}
+
+

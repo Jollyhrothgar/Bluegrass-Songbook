@@ -1,6 +1,9 @@
 {meta: title Lonely Mound Of Clay}
 {meta: artist The Louvin Brothers}
 {meta: composer Roy Acuff}
+{meta: x_source classic-country}
+{meta: x_source_file lonelymoundofclaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Beside a new made grave [C]heartbroken
@@ -43,3 +46,8 @@ Why [G]didn't you take me [D7]away
 So [G]I could have been there beside [C]her
 All [G]alone beneath that [D7]lonely mound of [G]clay
 {end_of_verse}
+
+
+
+
+

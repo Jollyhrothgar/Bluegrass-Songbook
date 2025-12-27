@@ -1,5 +1,8 @@
 {meta: title Don't Walk Away}
 {meta: artist Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file dontwalkawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't walk away from me [G7]darlin'
@@ -32,3 +35,7 @@ Oh [G7]darlin' please don't walk [C]away
 {start_of_verse: Verse 4}
 My [G7]darlin' tell me that you'll [C]stay
 {end_of_verse}
+
+
+
+

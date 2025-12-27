@@ -1,5 +1,8 @@
 {meta: title I Don't Care If You Love Me Anymore}
 {meta: artist The Mavericks}
+{meta: x_source classic-country}
+{meta: x_source_file idontcareifyoulovemeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I work all night and day to try to [G7]please you
@@ -47,3 +50,9 @@ I don't [F]care if you [G7]love me any[C]more
 I don't [F]care if you [G7]love me any[C]more
 I don't [F]care if you [G7]love me any[C]more
 {end_of_verse}
+
+
+
+
+
+

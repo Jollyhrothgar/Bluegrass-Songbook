@@ -1,6 +1,9 @@
 {meta: title Fallin' As Fast As I Can}
 {meta: artist Billy Walker}
 {meta: composer Rory Bourke, Gene Dubois, Johnny Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file fallinasfastasicanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](Fallin' as [G7]fast as I [C]can)
@@ -39,3 +42,8 @@ And [G7]as I looked into her eyes they seem to say to [C]me
 {start_of_verse: Verse 5}
 Yes I'm [F]fallin' as [G7]fast as I [C]can
 {end_of_verse}
+
+
+
+
+

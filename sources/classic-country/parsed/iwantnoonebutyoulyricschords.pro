@@ -1,6 +1,9 @@
 {meta: title I Want No One But You}
 {meta: artist Buck Owens}
 {meta: composer Red Simpson and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file iwantnoonebutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't want to be a movie star with riches and [G7]things
@@ -23,3 +26,5 @@
 [F]And tell me that you love [G7]me cause I want no one but [C]you
 [F]Oh no I [G7]want no one but [C]you
 {end_of_verse}
+
+

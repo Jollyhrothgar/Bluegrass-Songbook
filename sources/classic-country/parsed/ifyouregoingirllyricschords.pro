@@ -1,6 +1,9 @@
 {meta: title If You're Goin' Girl}
 {meta: artist Don Gibson}
 {meta: composer Bobby Bond}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouregoingirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're goin' girl  in the [F]summertime
@@ -22,3 +25,5 @@ Oh it'd [F]be too much  for me to under[C]stand
 If I [G7]ever drink  warm red [C]wine again[F]
 I'd [C]find myself a reaching [G7]  for your [C]hand
 {end_of_verse}
+
+

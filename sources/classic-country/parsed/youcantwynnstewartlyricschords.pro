@@ -1,6 +1,9 @@
 {meta: title You Can't Wynn Stewart}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and William Miller}
+{meta: x_source classic-country}
+{meta: x_source_file youcantwynnstewartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's all mine she don't belong to [C]you
@@ -43,3 +46,8 @@
 [D7]She'll bring you bad luck Buck it's more than I can Bare [G]Bobby
 [C]I guess you [D7]can't Wynn [G]Stewart
 {end_of_verse}
+
+
+
+
+

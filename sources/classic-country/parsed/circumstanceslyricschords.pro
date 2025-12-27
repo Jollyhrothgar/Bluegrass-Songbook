@@ -1,6 +1,9 @@
 {meta: title Circumstances}
 {meta: artist Billy Walker}
 {meta: composer Ronnie Self}
+{meta: x_source classic-country}
+{meta: x_source_file circumstanceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That lonely night we got carried away with each [G7]other
@@ -29,3 +32,6 @@ Circumstances was it charms or just [C]the wine
 Would it happen again if we had enough [F]chances
 Or would we even want [C]each other under [G7]different [C]circumstances
 {end_of_verse}
+
+
+

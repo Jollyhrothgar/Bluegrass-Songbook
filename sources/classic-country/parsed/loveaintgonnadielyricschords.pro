@@ -1,6 +1,9 @@
 {meta: title Love Ain’t Gonna Die}
 {meta: artist Mel Tillis}
 {meta: composer Sharon Higgins}
+{meta: x_source classic-country}
+{meta: x_source_file loveaintgonnadielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Love ain't [C]gonna die I'm [G7]gonna have to [C]kill it
@@ -37,3 +40,8 @@ Love ain't [C]gonna die I'm [G7]gonna have to [C]kill it
 {start_of_verse: Verse 5}
 [F]Love ain't [C]gonna die I'm [G7]gonna have to [C]kill it
 {end_of_verse}
+
+
+
+
+

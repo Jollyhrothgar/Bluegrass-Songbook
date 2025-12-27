@@ -1,6 +1,9 @@
 {meta: title Taking The Place Of My Man}
 {meta: artist Loretta Lynn}
 {meta: composer Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file takingtheplaceofmymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You ask why I'm [D7]wastin' myself on the [G]wine
@@ -29,3 +32,6 @@ That a [C]drink and some talk is as [A7]far as I [D7]go
 I'll be [G]nobody's [D7]woman till he [G]holds me [C]again
 This bottle is [G]takin' the [D7]place of my [G]man
 {end_of_verse}
+
+
+

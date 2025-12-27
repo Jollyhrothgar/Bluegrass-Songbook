@@ -1,6 +1,9 @@
 {meta: title Whiskey}
 {meta: artist Tom T. Hall}
 {meta: composer Jerry Vann}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You always made me [Dm]fly  [G7]far above the world so [C]high
@@ -26,3 +29,7 @@ And I watched you spread your [Dm]wings  [G7]and sail away with all my [C]dreams
 I think you let me [F]f-ly just so you could see me [C]fall
 You took my friends you took me [F]too  [G7]whiskey I gave it all to [C]you
 {end_of_verse}
+
+
+
+

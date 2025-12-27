@@ -1,5 +1,8 @@
 {meta: title After The Love Slips Away}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file aftertheloveslipsawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say our [Em]loving has [F]died down to [C]nothing
@@ -39,3 +42,8 @@ Cause [C]no compro[Em]mising will [F]make it feel [C]better
 {start_of_verse: Verse 6}
 Oh [Am]after the [G7]love slips [F]awa[C]y
 {end_of_verse}
+
+
+
+
+

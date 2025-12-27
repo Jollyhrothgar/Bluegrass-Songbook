@@ -1,5 +1,8 @@
 {meta: title Tennessee Border}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseeborderlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Her eyes were blue her hair was [D7]auburn
@@ -30,3 +33,6 @@ And she broke this heart [D7]of mine
 Her [G]mama said "No"  she's my only [D7]daughter
 But we got married on the Tennessee [G]border
 {end_of_verse}
+
+
+

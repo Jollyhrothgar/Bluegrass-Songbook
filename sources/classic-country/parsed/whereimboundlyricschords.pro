@@ -1,6 +1,9 @@
 {meta: title Where I'm Bound}
 {meta: artist Patty Loveless}
 {meta: composer Daryl Burgess and Tom Britt}
+{meta: x_source classic-country}
+{meta: x_source_file whereimboundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Can you [C]hear it cross the [G]valley 
@@ -47,3 +50,9 @@ From the corner [D7]of my [G]eye
 {start_of_verse: Verse 7}
 As goodbye as I [D7]fly to where I'm [C]bound[G]
 {end_of_verse}
+
+
+
+
+
+

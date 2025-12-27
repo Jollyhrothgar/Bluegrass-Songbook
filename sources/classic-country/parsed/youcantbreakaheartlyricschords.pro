@@ -1,6 +1,9 @@
 {meta: title You Can't Break A Heart}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Joe Andrews}
+{meta: x_source classic-country}
+{meta: x_source_file youcantbreakaheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can’t break a heart without [F]killing a [D7]soul
@@ -22,3 +25,5 @@ But [D7]you played around and [G7]proved yourself untrue
 So [C]now it’s all over and [F]our love has grown [D7]cold
 You [G7]can’t break a heart without killing a [C]soul
 {end_of_verse}
+
+

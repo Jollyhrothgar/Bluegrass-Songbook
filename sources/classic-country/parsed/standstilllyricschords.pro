@@ -1,6 +1,9 @@
 {meta: title Stand Still}
 {meta: artist Charlie Walker}
 {meta: composer Bob Tanner}
+{meta: x_source classic-country}
+{meta: x_source_file standstilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Stand still don't move I'm [G7]looking at an [C]angel
@@ -16,3 +19,4 @@ And [A7]I'll awake to find I'm dreaming and so all [D7]alone
 And that [G]angel my [D7]darling is [G]you
 Repeat
 {end_of_verse}
+

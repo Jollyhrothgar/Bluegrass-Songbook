@@ -1,6 +1,9 @@
 {meta: title I'm Sending You Red Roses}
 {meta: artist Jimmy Wakely}
 {meta: composer Wally Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file imsendingyouredroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm sending you red roses to tell you that my love is [F]true
@@ -22,3 +25,5 @@ And [F]each thorn may tell a story of the [C]heartache I've been [G7]through
 [C]I'm sending you red roses although we're oceans [F]apart
 [C]Just remember when they fade dear that [G7]you'll always have my [C]heart
 {end_of_verse}
+
+

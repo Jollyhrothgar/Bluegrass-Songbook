@@ -1,6 +1,9 @@
 {meta: title Love Hope and Faith}
 {meta: artist Daniel O'Donnell}
 {meta: composer Stephen Taylor and Heather Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file lovehopeandfaithlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]We all [G]need a path of [Em]life to walk [D7]along
@@ -36,3 +39,7 @@ We need Love Hope and Faith together as [G]one[D7]
 And with [G]Love Hope and [Em]Faith the [G]way will be [D7]shown
 When you've got Love Hope and Faith we're never [G]alone[D7]
 {end_of_verse}
+
+
+
+

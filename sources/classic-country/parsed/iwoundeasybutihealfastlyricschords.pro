@@ -1,6 +1,9 @@
 {meta: title I Wound Easy (But I Heal Fast)}
 {meta: artist Tammy Wynette}
 {meta: composer Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file iwoundeasybutihealfastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're late again tonight and I [D7]know the reason [G7]why
@@ -28,3 +31,6 @@ Oh [C]tonight my heart is breaking but I [C7]know this hurt won't [F]last
 Oh tonight my heart is breaking but I [C7]know this hurt won't [F]last
 [C]I wound easy [G7]but I heal [C]fast
 {end_of_verse}
+
+
+

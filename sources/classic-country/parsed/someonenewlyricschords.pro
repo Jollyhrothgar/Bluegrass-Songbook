@@ -1,6 +1,9 @@
 {meta: title Someone New}
 {meta: artist Keith Whitley}
 {meta: composer Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file someonenewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She ain't wearing tight blue [D7]jeans anymore
@@ -42,3 +45,8 @@ While [D7]she's making plans
 {start_of_verse: Verse 5}
 Oh I [C]can’t believe I’m [D7]gonna be a [G]dad
 {end_of_verse}
+
+
+
+
+

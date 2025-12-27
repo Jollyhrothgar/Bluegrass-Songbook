@@ -1,6 +1,9 @@
 {meta: title Got You On My Mind}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Joe Thomas and Howard Biggs}
+{meta: x_source classic-country}
+{meta: x_source_file gotyouonmymindlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Got you on my mind [F]feeling kinda sad and [C]low
@@ -25,3 +28,6 @@
 [F]Got you on my mind feeling kinda sad and [C]low
 [G7]Wondering where you are wondering why you had to [C]go
 {end_of_verse}
+
+
+

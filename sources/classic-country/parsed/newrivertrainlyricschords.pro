@@ -1,6 +1,9 @@
 {meta: title New River Train}
 {meta: artist Bill Monroe}
 {meta: composer Maggie Andrews}
+{meta: x_source classic-country}
+{meta: x_source_file newrivertrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling you can't love one
@@ -85,3 +88,14 @@ Riding on that new river [G7]train
 [C]Same old train that [F]brought me here
 And [C]soon gonna [G7]carry me [C]away
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

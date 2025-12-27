@@ -1,6 +1,9 @@
 {meta: title I Couldn't Wait Forever}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton and Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file icouldntwaitforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I couldn't wait forever did [F]you expect me to
@@ -26,3 +29,6 @@ I couldn't wait [C]forever [G7]forever's just too [C]long
 {start_of_verse: Verse 4}
 [F]I couldn't wait [C]forever [G7]forever's just too [C]long
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title House Of The Rising Sun}
 {meta: artist Conway Twitty}
 {meta: composer Alan Price}
+{meta: x_source classic-country}
+{meta: x_source_file houseoftherisingsunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There [Em]is a [G]house in [A7]New [C]Orleans
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [B7]In the House of Rising [G]Sun
 {end_of_verse}
+
+
+
+

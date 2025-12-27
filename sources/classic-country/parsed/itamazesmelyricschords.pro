@@ -1,6 +1,9 @@
 {meta: title It Amazes Me}
 {meta: artist Charley Pride}
 {meta: composer Wayland Holyfield and Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file itamazesmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Anytime the [C]world is gettin' to [G]me
@@ -31,3 +34,6 @@
 [C]Two loving [G]hearts in [D7]sweet loving [C]times
 [G]Sweet loving times
 {end_of_verse}
+
+
+

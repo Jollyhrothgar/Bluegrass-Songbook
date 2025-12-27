@@ -1,5 +1,8 @@
 {meta: title The Barn Dance}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file thebarndancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One night as I was sleepin' 
@@ -70,3 +73,12 @@ And the [F]muskrat rambled [C]on
 The ol' cow did a cow-cow boogie 
 And the [D7]rooster crowed the [G7]song
 {end_of_verse}
+
+
+
+
+
+
+
+
+

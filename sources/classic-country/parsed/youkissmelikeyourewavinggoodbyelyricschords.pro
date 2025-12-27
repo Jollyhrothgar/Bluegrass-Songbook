@@ -1,6 +1,9 @@
 {meta: title You Kiss Me Like You're Waving Goodbye}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and Buddy Cagle}
+{meta: x_source classic-country}
+{meta: x_source_file youkissmelikeyourewavinggoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was a fool to ever [F]think that you
@@ -43,3 +46,8 @@ You'll [C]never stay here [F]in my arms
 And you [F]kiss me 
 Like you're [G7]waving good[C]bye
 {end_of_verse}
+
+
+
+
+

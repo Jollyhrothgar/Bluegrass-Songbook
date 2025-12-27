@@ -1,6 +1,9 @@
 {meta: title Ring On Your Finger}
 {meta: artist George Morgan}
 {meta: composer Donald D. Davis}
+{meta: x_source classic-country}
+{meta: x_source_file ringonyourfingerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody [C7]else put a [F]ring on your [D7]finger
@@ -22,3 +25,5 @@ He’s [G7]taken my love [C]away
 [C]Somebody [C7]else put a [F]ring on your [D7]finger
 He’s [G7]stolen my love [C]away
 {end_of_verse}
+
+

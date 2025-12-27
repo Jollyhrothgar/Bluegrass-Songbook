@@ -1,6 +1,9 @@
 {meta: title I Believe}
 {meta: artist George Strait}
 {meta: composer Bubba Strait, Dean Dillon, George Strait}
+{meta: x_source classic-country}
+{meta: x_source_file ibelievelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The nights as clear as a [Am]big desert [F]sky [G7]
@@ -38,3 +41,8 @@ I be[C]lieve[Am]   [F]  [G7]
 The [C]rivers flow now that [Am]used to be [F]dry [G7]
 As [C]people all over the [Am]world start to [F]cry [G7]but I be[C]lieve 
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Love Away Your Troubles For Awhile}
 {meta: artist Charly McClain}
 {meta: composer Bob Morrison and Johnny McRae}
+{meta: x_source classic-country}
+{meta: x_source_file illloveawayyourtroublesforawhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can tell your day ain't [C]been no bed of [G]roses
@@ -31,3 +34,6 @@ I'll turn that old frown into the [C]smile uh [A7]huh
 I'll love [D7]away your troubles for [G]awhi[Em]le
 I'll love [D7]away your troubles for [C]awhi[G]le
 {end_of_verse}
+
+
+

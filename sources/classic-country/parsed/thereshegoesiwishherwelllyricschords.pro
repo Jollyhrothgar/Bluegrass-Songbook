@@ -1,6 +1,9 @@
 {meta: title There She Goes I Wish Her Well}
 {meta: artist Don Gibson}
 {meta: composer and recorded by Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file thereshegoesiwishherwelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well there she goes  walking [C]away  I wish her [G]well
@@ -28,3 +31,6 @@ There she [D7]goes I wish her [G]well
 {start_of_verse: Verse 4}
 There she goes  walking [C]away  I wish her [G]well
 {end_of_verse}
+
+
+

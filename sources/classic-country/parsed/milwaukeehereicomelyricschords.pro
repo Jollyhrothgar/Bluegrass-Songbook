@@ -1,6 +1,9 @@
 {meta: title Milwaukee Here I Come}
 {meta: artist George Jones}
 {meta: composer Lee Fykes}
+{meta: x_source classic-country}
+{meta: x_source_file milwaukeehereicomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm gonna get on that old turpike and [F]I'm gonna [C]ride
@@ -47,3 +50,9 @@ I'm a gonna leave this town [D7]till you de[G7]cide
 {start_of_verse: Verse 6}
 Oh [F]Milwaukee [C]here I come from [G7]Nashville Tenne[C]ssee
 {end_of_verse}
+
+
+
+
+
+

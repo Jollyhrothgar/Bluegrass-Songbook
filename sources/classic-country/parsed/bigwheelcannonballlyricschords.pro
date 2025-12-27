@@ -1,6 +1,9 @@
 {meta: title Big Wheel Cannonball}
 {meta: artist Dick Curless}
 {meta: composer Vaughn Horton}
+{meta: x_source classic-country}
+{meta: x_source_file bigwheelcannonballlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This great and mighty nation will sing forever [F]more
@@ -44,3 +47,8 @@
 [G7]Don't look for any halo round the Big Wheel [C]Cannonball
 [G7]Don't look for any halo round the Big Wheel [C]Cannonball
 {end_of_verse}
+
+
+
+
+

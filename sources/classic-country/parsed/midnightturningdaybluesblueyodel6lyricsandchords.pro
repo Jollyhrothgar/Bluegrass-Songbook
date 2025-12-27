@@ -1,6 +1,9 @@
 {meta: title Midnight Turning Day Blues (Blue Yodel #6)}
 {meta: artist Merle Haggard}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file midnightturningdaybluesblueyodel6lyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One of these mornings I'm sure gonna leave this town [C7]
@@ -38,3 +41,8 @@ I [F]got the blues like midnight moon shining bright as [C]day
 I [G7]wish a tornado  would blow my blues [C]away
 Yodel le-te-[G7]o le-te-o [C]lete    
 {end_of_verse}
+
+
+
+
+

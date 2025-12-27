@@ -1,6 +1,9 @@
 {meta: title Hillbilly Rock}
 {meta: artist Marty Stuart}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file hillbillyrocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It comes from Mississippi and down in Alabam
@@ -63,3 +66,14 @@ Tag:
 [D7]Doing a little thing called the Hillbilly [G]Rock
 [D7]Doing a little thing called the Hillbilly [G]Rock
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Smoke Along the Track}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file smokealongthetracklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One day the train was passin' [C]I caught it comin' [G]by
@@ -44,3 +47,9 @@ Goodbye so long It's comin' I just heard that whistle blow G C G
 It'll be here in a minute you'll wave and I'll look back D7 G
 I'm gonna leave you cryin' in the smoke along the track
 {end_of_verse}
+
+
+
+
+
+

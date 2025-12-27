@@ -1,6 +1,9 @@
 {meta: title Young Dallas Cowboy}
 {meta: artist David Allan Coe}
 {meta: composer David A. Coe and Deborah Coe}
+{meta: x_source classic-country}
+{meta: x_source_file youngdallascowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've hiked through the sage brush I [F]ran up some [C]rails
@@ -51,3 +54,10 @@ Be proud of this [G7]young Dallas [C]Cowboy
 Yeah I'm proud I'm a [G7]young Dallas [C]Cowboy
 Be proud of those [G7]young Dallas [C]Cowboys
 {end_of_verse}
+
+
+
+
+
+
+

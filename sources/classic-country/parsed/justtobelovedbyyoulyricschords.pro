@@ -1,6 +1,9 @@
 {meta: title Just To Be Loved By You}
 {meta: artist Charley Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file justtobelovedbyyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes it's true that I've known others
@@ -32,3 +35,6 @@ Ever since the day I found you
 {start_of_verse: Verse 4}
 [C]Just to be [D7]loved by [G]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Life In The Old Farm Town}
 {meta: artist Bill Emerson}
 {meta: composer Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file lifeintheoldfarmtownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun's burning [C7]down on [F]this cold hard [C]ground
@@ -37,3 +40,7 @@ And they [F]sold his forty acres and his [G7]plow
 That's [F]life  in the [G7]old farm [C]town
 That's [F]life in the [G7]old farm [F]town [C]
 {end_of_verse}
+
+
+
+

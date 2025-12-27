@@ -1,5 +1,8 @@
 {meta: title A Little Old Fashioned Karma}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file alittleoldfashionedkarmalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's just a little fashioned karma coming down 
@@ -20,3 +23,5 @@ It's [C]just a little old fashioned [G7]karma coming [C]down
 {start_of_verse: Verse 3}
 repeat
 {end_of_verse}
+
+

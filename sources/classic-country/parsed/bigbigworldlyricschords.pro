@@ -1,6 +1,9 @@
 {meta: title Big Big World}
 {meta: artist Bob Luman}
 {meta: composer Fred Burch, Gerald Nelson, Red West}
+{meta: x_source classic-country}
+{meta: x_source_file bigbigworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]9-1-27 Avenue
@@ -27,3 +30,6 @@ It's a [C]big big [G]city it's a [C]big big [G]world
 How's a [C]boy gonna [G]find a [C]little bitty [G]girl
 In this [C]big big [G]world
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title One Less Heartache}
 {meta: artist Jean Shepard}
 {meta: composer Demetriss Tapp and Robert Tubert}
+{meta: x_source classic-country}
+{meta: x_source_file onelessheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My friends tell me I'm losing you
@@ -39,3 +42,8 @@
 [G7]I never want another chance to be with [C]you
 [D7]It's one last heartache I'll have to [G]bear
 {end_of_verse}
+
+
+
+
+

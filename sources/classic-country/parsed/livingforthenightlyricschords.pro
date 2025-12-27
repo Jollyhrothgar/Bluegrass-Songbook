@@ -1,6 +1,9 @@
 {meta: title Living For The Night}
 {meta: artist George Strait}
 {meta: composer Dean Dillon, Bubba Strait, George Strait}
+{meta: x_source classic-country}
+{meta: x_source_file livingforthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everyday is a lifetime without [Em]you
@@ -48,3 +51,9 @@ I'm livin' for the [C]night
 {start_of_verse: Verse 7}
 Everyday is a lifetime without you[F]
 {end_of_verse}
+
+
+
+
+
+

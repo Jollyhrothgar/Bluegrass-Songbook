@@ -1,6 +1,9 @@
 {meta: title I Still Believe}
 {meta: artist Lee Greenwood}
 {meta: composer Doug Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file istillbelievelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes it's easy and sometimes it's not 
@@ -54,3 +57,10 @@ Cause [C]lady [D7]I still be[G]lieve
 {start_of_verse: Verse 6}
 Oh [C]lady [D7]I still be[G]lieve
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Jenny Lou}
 {meta: artist Sonny James}
 {meta: composer Mark W. McIntyre and William Olofson}
+{meta: x_source classic-country}
+{meta: x_source_file jennyloulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was put here by a [F]jury
@@ -62,3 +65,11 @@ Will they go blaming her taunting and shaming [F]her
 What'll they do to her what'll they do to [F]her 
 [G7]After I'm gone [C]away
 {end_of_verse}
+
+
+
+
+
+
+
+

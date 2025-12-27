@@ -1,6 +1,9 @@
 {meta: title For All the Right Reasons}
 {meta: artist Conway Twitty}
 {meta: composer Billy Ray Reynolds and Marie Barrett Hartford}
+{meta: x_source classic-country}
+{meta: x_source_file foralltherightreasonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When warm feelings
@@ -41,3 +44,8 @@ When you're as close
 [F]For all the right reasons
 [C]I love you
 {end_of_verse}
+
+
+
+
+

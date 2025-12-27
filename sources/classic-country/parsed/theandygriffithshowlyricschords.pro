@@ -1,6 +1,9 @@
 {meta: title The Andy Griffith Show}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file theandygriffithshowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]That old [C]evening news is sure [G]depressing
@@ -51,3 +54,9 @@ Oh and [C]maybe it was [D7]unreal but [G]when this old world [Em]blows
 I hope [C]I end up on the [D7]Andy Griffith [G]Show
 I wish [C]life was like the [D7]Andy Griffith [G]Show
 {end_of_verse}
+
+
+
+
+
+

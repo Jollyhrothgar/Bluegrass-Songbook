@@ -1,5 +1,8 @@
 {meta: title No Earthly Good}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file noearthlygoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come hear me good brothers come [F]heed one and [C]all
@@ -56,3 +59,10 @@ But how can you share it where [D7]you got your [G7]head
 These [C]hands that reach out for a hand [F]if you [C]would
 So heavenly minded you're no [G7]earthly [C]good
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title In A Mississippi Cotton Picking Delta Town}
 {meta: artist Charley Pride}
 {meta: composer Harold Dorman, Wiley Gann}
+{meta: x_source classic-country}
+{meta: x_source_file inamississippicottonpickingdeltatownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a Mississippi cotton picking [G7]Delta town 
@@ -50,3 +53,9 @@ One dusty street to [C]walk up and down
 Nothing much to see but a [F]starving hound 
 In a [G7]Mississippi cotton picking Delta [C]town
 {end_of_verse}
+
+
+
+
+
+

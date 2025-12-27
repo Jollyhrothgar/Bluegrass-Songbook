@@ -1,6 +1,9 @@
 {meta: title A Rose And A Baby Ruth}
 {meta: artist George Hamilton IV}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file aroseandababyruthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Doo doo doo [C]doo doo [G]doo doo doo [C]doo doo
@@ -32,3 +35,7 @@ I could have sent you an [G]orchid of some kind
 [C]I'll kiss you too then [G]I'll hand to [E7]you  
 This [A7]rose and a [D7]Baby [G]Ruth
 {end_of_verse}
+
+
+
+

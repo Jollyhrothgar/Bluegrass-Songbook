@@ -1,6 +1,9 @@
 {meta: title Famous Last Words Of A Fool}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Rex Houston}
+{meta: x_source classic-country}
+{meta: x_source_file famouslastwordsofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told her I wouldn't miss her at all as she [C7]walked to the [F]door[Dm]
@@ -34,3 +37,7 @@ You [G7]won't break my heart and [Dm]I don't love [G7]you
 You [G7]won't break my heart and [Dm]I don't love [G7]you
 [D7]Famous last [G7]words of a [C]fool
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If I Had Last Night To Live Over}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadlastnighttoliveoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I had last [C7]night to live [F]over
@@ -22,3 +25,5 @@ Oh [D7]but too late my mistakes I have [G7]seen
 [C]If I had last [C7]night to live [F]over
 Darlin' I [C]know I'd [G7]never lose you this [C]way
 {end_of_verse}
+
+

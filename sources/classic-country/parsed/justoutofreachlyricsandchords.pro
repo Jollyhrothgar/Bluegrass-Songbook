@@ -1,6 +1,9 @@
 {meta: title Just Out of Reach}
 {meta: artist Patsy Cline}
 {meta: composer Virgil F. Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file justoutofreachlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love that runs away from me
@@ -37,3 +40,8 @@ Dreams that hurt me in my sleep
 [C]Too far away from lips so sweet and warm
 [D7]Just out of reach of my two open [G]arms
 {end_of_verse}
+
+
+
+
+

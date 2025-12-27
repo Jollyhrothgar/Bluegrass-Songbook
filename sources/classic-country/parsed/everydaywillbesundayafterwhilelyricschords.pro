@@ -1,6 +1,9 @@
 {meta: title Everyday Will Be Sunday After While}
 {meta: artist Webb Pierce}
 {meta: composer Sylvia Fisher and Leon Miller}
+{meta: x_source classic-country}
+{meta: x_source_file everydaywillbesundayafterwhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everyday will be Sunday [D7]after [G][C][G]while
@@ -44,3 +47,9 @@
 {start_of_verse: Verse 6}
 [D7]Everyday will be Sunday after [G]while
 {end_of_verse}
+
+
+
+
+
+

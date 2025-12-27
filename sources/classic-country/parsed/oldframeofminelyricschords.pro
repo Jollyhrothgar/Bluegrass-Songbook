@@ -1,5 +1,8 @@
 {meta: title Old Frame Of Mine}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file oldframeofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard the best way to get over an [A]old [F]love
@@ -32,3 +35,7 @@ That [C]picture in my [G7]old frame of [C]mind
 {start_of_verse: Verse 5}
 [F]Like the [C]picture in my [G7]old frame of [C]mind
 {end_of_verse}
+
+
+
+

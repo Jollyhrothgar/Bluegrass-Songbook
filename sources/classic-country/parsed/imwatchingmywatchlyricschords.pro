@@ -1,6 +1,9 @@
 {meta: title I'm Watching My Watch}
 {meta: artist Johnny Tillotson}
 {meta: composer Robert Sherman and George Weiss}
+{meta: x_source classic-country}
+{meta: x_source_file imwatchingmywatchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm watching my [G]watch it's a [C]heartache after [A7]ten
@@ -28,3 +31,6 @@ That the [Dm]one who stole your [G7]heart away is [C]gone
 {start_of_verse: Verse 4}
 Watching my [G]watch [C]watching my [G]watch [C]watching my [G]watch
 {end_of_verse}
+
+
+

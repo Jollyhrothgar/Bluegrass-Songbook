@@ -1,6 +1,9 @@
 {meta: title My Heart Has A Mind Of Its Own}
 {meta: artist Reba McEntire}
 {meta: composer Howard Greenfield and Jack Keller}
+{meta: x_source classic-country}
+{meta: x_source_file myhearthasamindofitsownlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told this [G7]heart of mine our love would [F]never be
@@ -28,3 +31,6 @@ I say I'll [G7]let you go but then my [F]heart says no
 I guess my [G7]heart has a mind of its [C]own [F]  [C]
 I guess my [G7]heart has a mind of its [C]own[F]  [C]
 {end_of_verse}
+
+
+

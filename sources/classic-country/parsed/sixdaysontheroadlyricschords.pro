@@ -1,5 +1,8 @@
 {meta: title Six Days on the Road}
 {meta: artist Dave Dudley}
+{meta: x_source classic-country}
+{meta: x_source_file sixdaysontheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I pulled outa Pittsburgh a [D7]rollin' down that Eastern [G]Seaboard
@@ -36,3 +39,7 @@ My [C]hometown's a comin' in [D7]sight if you [G]think I'm a happy you're [C]rig
 Six [G]days on the road and I'm a [D7]gonna make it home [G]tonight
 Six days on the road and I'm a [D7]gonna make it home [G]tonight
 {end_of_verse}
+
+
+
+

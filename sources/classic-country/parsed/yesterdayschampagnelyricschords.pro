@@ -1,6 +1,9 @@
 {meta: title Yesterday's Champagne}
 {meta: artist Bobby Helms}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdayschampagnelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You look the same you’re just as [D7]sweet as [G]ever
@@ -25,3 +28,6 @@ Each time we kiss I feel like [D7]yesterday’s cham[G]pagne
 The bubble [Em]in your eyes are gone though [C]you may try in [G]vain
 Each time we kiss I feel like [D7]yesterday’s cham[G]pagne
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Hard Hearted}
 {meta: artist Jim and Jesse}
+{meta: x_source classic-country}
+{meta: x_source_file hardheartedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hard hearted [G]heart breaker
@@ -35,3 +38,7 @@ Just [A7]keep on breaking hearts and you will [D7]see
 [C]Hard hearted [G]heart breaker
 [D7]How many hearts have you broken [G]today
 {end_of_verse}
+
+
+
+

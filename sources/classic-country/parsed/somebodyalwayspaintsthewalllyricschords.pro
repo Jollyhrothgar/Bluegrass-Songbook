@@ -1,6 +1,9 @@
 {meta: title Somebody Always Paints The Wall}
 {meta: artist George Jones}
 {meta: composer John Dennis Knutson and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file somebodyalwayspaintsthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If my old truck was a horse I'd have to shoot it
@@ -49,3 +52,9 @@ Somebody always paints the [C]wall
 Seems like every time I [G7]make my mark
 Somebody always paints the [C]wall
 {end_of_verse}
+
+
+
+
+
+

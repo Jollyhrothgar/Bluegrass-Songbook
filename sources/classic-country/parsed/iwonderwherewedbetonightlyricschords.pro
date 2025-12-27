@@ -1,6 +1,9 @@
 {meta: title I Wonder Where We'd Be Tonight}
 {meta: artist Vern Gosdin}
 {meta: composer Jim Sales and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwherewedbetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Time is sure passing slow  [F]Lord it's only half past [C]ten 
@@ -26,3 +29,6 @@ And if we were still hanging on I [G7]wonder where we'd be [C]tonight
 {start_of_verse: Verse 4}
 I just can't get you off my mind God [G7]I wonder where you are [C]tonight
 {end_of_verse}
+
+
+

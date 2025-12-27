@@ -1,6 +1,9 @@
 {meta: title Don't Leave Me In The Nighttime}
 {meta: artist Moe Bandy}
 {meta: composer Don Schlitz and Paul Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file dontleavemeinthenighttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh baby don't leave me in the [C][F]nighttime
@@ -78,3 +81,13 @@
 [F]Just tell me that you love me for a [C]lifetime
 [G7]And you'll never ever go [C]away
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

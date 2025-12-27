@@ -1,6 +1,9 @@
 {meta: title Yesterday All Day Long Today}
 {meta: artist Norma Jean}
 {meta: composer Clark Bentley}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdayalldaylongtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I awoke this morning I looked [F]around and you were [C]back
@@ -29,3 +32,6 @@ You [F]love me in that [G7]same familiar [C]way
 But I [F]know you’re [C]only make believe [F]my mind's gonna [C]stray
 Cause it's been yesterday [G7]all day long [C]today
 {end_of_verse}
+
+
+

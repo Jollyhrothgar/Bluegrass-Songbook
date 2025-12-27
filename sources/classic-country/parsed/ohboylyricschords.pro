@@ -1,6 +1,9 @@
 {meta: title Oh Boy}
 {meta: artist Buddy Holly}
 {meta: composer Norman Petty, Bill Tilgman, Sonny West}
+{meta: x_source classic-country}
+{meta: x_source_file ohboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All of my love all of my kissing 
@@ -50,3 +53,9 @@ You don't know what you've been a missing
 [C]Oh boy  when you're with me  oh [G]boy                         
 The world will see that [D7]you were meant for [G]me 
 {end_of_verse}
+
+
+
+
+
+

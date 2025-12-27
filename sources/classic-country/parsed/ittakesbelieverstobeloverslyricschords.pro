@@ -1,6 +1,9 @@
 {meta: title It Takes Believers To Be Lovers}
 {meta: artist Mickey Gilley}
 {meta: composer Mark Wright, Bill Kenner, Warren Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file ittakesbelieverstobeloverslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody said it would [G7]never [C]work
@@ -45,3 +48,8 @@ It takes [C]believers to [G7]keep it to[F]gether
 It takes [C]believers to be [G7]lovers for[F]ever
 It takes [C]believers to be lovers for[F]ever
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Yours Love}
 {meta: artist Dolly Parton}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file yourslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]May the fruit of my toil  be yours [D7]love
@@ -27,3 +30,6 @@ As [D7]life from me slips  be yours [G]love
 And from this moment on may a love that is [C]strong
 That [D7]lives on and on  be yours [G]love
 {end_of_verse}
+
+
+

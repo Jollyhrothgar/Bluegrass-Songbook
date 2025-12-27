@@ -1,6 +1,9 @@
 {meta: title All American Girl}
 {meta: artist Statler Brothers}
 {meta: composer Don and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file allamericangirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]She’s got a [C]Texas smile you can see for a mile and a [D7]Georgia tan
@@ -40,3 +43,8 @@ She [F]lays in the sun and [D7]never swims so [G7]she won’t lose her curl
 {start_of_verse: Verse 6}
 [F]She’s yours she’s [C]mine [F]she’s one of a [C]kind [G7]All American [C]Girl
 {end_of_verse}
+
+
+
+
+

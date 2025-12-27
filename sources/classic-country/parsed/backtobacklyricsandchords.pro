@@ -1,6 +1,9 @@
 {meta: title Back To Back}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file backtobacklyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Behind every good man [F]stands a good [C]woman
@@ -36,3 +39,7 @@ We'd be the [F]last to turn to one [C]another
 Back to [F]back we face each [C]other 
 [F]But I know we'll [C]make it [G7]together on our [C]own
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Just Want To Be Alone}
 {meta: artist Bobby Helms}
 {meta: composer Bill Irwin}
+{meta: x_source classic-country}
+{meta: x_source_file ijustwanttobealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So if [D7]I'm [C]not in your [G]arms not kissing your [D7]lips
@@ -33,3 +36,7 @@ While [D7]I wait to be in your arms [C]where [D7]I want to [G]be
 So if [D7]I'm [C]not in your [G]arms not kissing your [D7]lips
 I just want to be [C]alon[G]e
 {end_of_verse}
+
+
+
+

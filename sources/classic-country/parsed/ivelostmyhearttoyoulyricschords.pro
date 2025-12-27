@@ -1,5 +1,8 @@
 {meta: title I've Lost My Heart To You}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file ivelostmyhearttoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I won't forget[Em]    [Am]   the night that we met
@@ -28,3 +31,6 @@ I found it's true so [Am]true[F]
 {start_of_verse: Verse 4}
 [F]Oh [C]baby it's [Am]true [F]I've lost my [G7]heart to [C]you
 {end_of_verse}
+
+
+

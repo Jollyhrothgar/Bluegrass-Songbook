@@ -1,6 +1,9 @@
 {meta: title Can't Hang Up The Phone}
 {meta: artist Stonewall Jackson}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file canthangupthephonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You just called up to say it's [G7]over as of today
@@ -33,3 +36,7 @@ Cause I just [G7]can't can't hang up the [C]phone
 {start_of_verse: Verse 4}
 No I just [G7]can't can't hang up the [C]phone
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Thinking About Leaving}
 {meta: artist Dwight Yoakam}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file thinkingaboutleavinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to think love was the [G7]soft rope meant to tie me [C]down
@@ -34,3 +37,7 @@ But I've been [C]thinking about leaving [G7]long enough to change my [C]mind
 {start_of_verse: Verse 5}
 And I've been thinking about leaving [G7]long enough to change my [C]mind
 {end_of_verse}
+
+
+
+

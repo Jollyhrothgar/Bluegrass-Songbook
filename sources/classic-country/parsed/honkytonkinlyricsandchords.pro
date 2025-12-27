@@ -1,5 +1,8 @@
 {meta: title Honky Tonkin'}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkinlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you are sad and lonely and have no place to go
@@ -55,3 +58,15 @@ We'll go Honky Tonkin' [D7]'round this [G]town
 {start_of_verse: Verse 1}
 [G]When you are sad and lonely and have no place to go
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

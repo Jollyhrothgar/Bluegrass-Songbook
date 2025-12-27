@@ -1,5 +1,8 @@
 {meta: title Peggy Sue}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file peggysuelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you knew [C]Peggy Sue then [G]you'd know why [C]I feel [G]blue
@@ -40,3 +43,9 @@ Oh well I [D7]love you gal and I [C]need you Peggy [G]Sue
 Oh [C]Peggy my Peggy [G]Sue
 Oh well I [D7]love you gal I [C]want you Peggy [G]Sue
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lonely Thing Called Me}
 {meta: artist Roy Drusky}
 {meta: composer Phil Parr and Herby Treece}
+{meta: x_source classic-country}
+{meta: x_source_file lonelythingcalledmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart is yours I just use it to love [D7]you
@@ -29,3 +32,6 @@
 [C]My life is yours but without you it would [D7]be
 [G7]Just a part of a lonely thing called [C]me
 {end_of_verse}
+
+
+

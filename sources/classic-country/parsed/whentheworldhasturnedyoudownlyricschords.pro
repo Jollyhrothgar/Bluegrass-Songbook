@@ -1,6 +1,9 @@
 {meta: title When The World Has Turned You Down}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file whentheworldhasturnedyoudownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been many months dear since we [F]parted
@@ -43,3 +46,8 @@ When your [G7]friends can't be found I'll be [C]there
 When your heart is sad and weary and no longer want to [F]roam
 [G7]When you have no place to go please come on [C]home
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Star}
 {meta: artist Emmylou Harris}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file lovestarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love Star oh star of love have you [D7]forgotten me 
@@ -22,3 +25,5 @@ And [A7]no one knows how much I cry when [D7]I'm all [Am]alone for a [D7]love of
 [G]Love Star they say for every heart a [D7]love star shines 
 So please please [Am]shine for mine and [D7]let me find my [G]love 
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title My Imagination Running Wild}
 {meta: artist Faron Young}
 {meta: composer Billy Deaton}
+{meta: x_source classic-country}
+{meta: x_source_file myimaginationrunningwildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just like all the other times [G7]as we [C]entered
@@ -30,3 +33,6 @@ Then you left with him and all [C7]my fears were [F]happening
 And my [C]poor imagination [F]just [G7]ran [C]wild 
 And my poor imagination [G7][F]just ran [C]wild
 {end_of_verse}
+
+
+

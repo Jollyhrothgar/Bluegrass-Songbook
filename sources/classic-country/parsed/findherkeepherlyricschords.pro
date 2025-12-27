@@ -1,5 +1,8 @@
 {meta: title Find Her Keep Her}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file findherkeepherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It can surely be a lonely world out [G7]there
@@ -28,3 +31,6 @@
 [C]That it's finders  [A7]keepers
 [D7]When you find [G7]her  nothing can keep you [C]apart
 {end_of_verse}
+
+
+

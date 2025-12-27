@@ -1,6 +1,9 @@
 {meta: title At The Cross}
 {meta: artist Hank Williams}
 {meta: composer Isaac Watts and Ralph C Hudson}
+{meta: x_source classic-country}
+{meta: x_source_file atthecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Was it for crimes that I have done
@@ -36,3 +39,7 @@ The depth of love I [G7]owe
 [C]Here Lord I give myself to you
 That all [G7]that I can [C]do
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title From Graceland To The Promised Land}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file fromgracelandtothepromisedlandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From the Sun years of the [Am]Fifties and the [C]birth of rock and [G]roll
@@ -21,3 +24,5 @@
 [Am]His life was two days longer [C]than the one who gave him [G]life
 [D7]And he almost knew the number of the [G]days
 {end_of_verse}
+
+

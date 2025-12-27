@@ -1,6 +1,9 @@
 {meta: title Do You Live What You Preach}
 {meta: artist Doyle Lawson}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file doyoulivewhatyoupreachlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many prophets are here as a [F]witness for [C]God
@@ -43,3 +46,8 @@ In the presence of God could you [G7]stand
 Jesus [C]knows every deed good or [Am]bad from your [C]birth
 Do you live what you [G7]preach in your [C]church
 {end_of_verse}
+
+
+
+
+

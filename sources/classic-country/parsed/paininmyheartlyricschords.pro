@@ -1,6 +1,9 @@
 {meta: title Pain In My Heart}
 {meta: artist The Osborne Brothers}
 {meta: composer Bobby Osborne and Larry Richardson}
+{meta: x_source classic-country}
+{meta: x_source_file paininmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I first I met you right from the [D7]start
@@ -29,3 +32,6 @@ With a [C]pain in my heart and [G]blues on my mind
 [G]Can you be mine with another man’s [D7]name
 You know that I love you and I’m not to [G]blame
 {end_of_verse}
+
+
+

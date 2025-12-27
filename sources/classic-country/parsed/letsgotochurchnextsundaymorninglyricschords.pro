@@ -1,6 +1,9 @@
 {meta: title Let's Go To Church Next Sunday Morning}
 {meta: artist Slim Whitman}
 {meta: composer Steve Allen}
+{meta: x_source classic-country}
+{meta: x_source_file letsgotochurchnextsundaymorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let's go to church next Sunday morning
@@ -29,3 +32,6 @@ We'll stand and sing on [D7]Sunday morning
 [G]Let's go to church next Sunday [E7]morning
 [Am]Let's go through [D7]life side by [G]side
 {end_of_verse}
+
+
+

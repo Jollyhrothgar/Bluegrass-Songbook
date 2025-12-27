@@ -1,6 +1,9 @@
 {meta: title Give Us One More Chance}
 {meta: artist George Morgan}
 {meta: composer Mac Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file giveusonemorechancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Put away your suitcase 
@@ -65,3 +68,11 @@ Give us one more [F]chance
 Try it one more [F]time
 [G7]That's what love is all [C]about
 {end_of_verse}
+
+
+
+
+
+
+
+

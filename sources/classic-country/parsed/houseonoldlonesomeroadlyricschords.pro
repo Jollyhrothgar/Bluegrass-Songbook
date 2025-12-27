@@ -1,6 +1,9 @@
 {meta: title House On Old Lonesome Road}
 {meta: artist Conway Twitty}
 {meta: composer Dave Gibson and Bernard Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file houseonoldlonesomeroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every night it's the same old grind
@@ -76,3 +79,15 @@ Now everything there is just gathering dust
 Been doing my best to forget about her
 [F]But she's driving [G7]me out of my [C]mind
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

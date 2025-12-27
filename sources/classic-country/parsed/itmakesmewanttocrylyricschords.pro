@@ -1,6 +1,9 @@
 {meta: title It Makes Me Want To Cry}
 {meta: artist Charlie Rich}
 {meta: composer Eddie Rabbitt, Dick Heard, Van Trevor}
+{meta: x_source classic-country}
+{meta: x_source_file itmakesmewanttocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I wake up in the [Dm]morning and I [G7]watch you [C]sleeping there
@@ -25,3 +28,5 @@ But if [C7]that's how I must [F]love you [G7]then I'll stay here by your [C]side
 [F]Dreaming of a [D7]love the love you [G7]denied but it makes me wanna [C]cry
 Baby it [G7]makes me wanna [C]cry it [G7]makes me wanna [C]cry
 {end_of_verse}
+
+

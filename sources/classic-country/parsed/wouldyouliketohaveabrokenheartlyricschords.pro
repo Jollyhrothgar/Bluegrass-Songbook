@@ -1,6 +1,9 @@
 {meta: title Would You Like To Have A Broken Heart}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Rusty Gabbard}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyouliketohaveabrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Would you like to [G7]have a broken [C]heart
@@ -31,3 +34,6 @@ Maybe you can [G7]fix it up [C]again
 Then my [C]heart belongs to you
 Would you like to [G7]have a broken [C]heart
 {end_of_verse}
+
+
+

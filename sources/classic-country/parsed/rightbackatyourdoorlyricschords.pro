@@ -1,5 +1,8 @@
 {meta: title Right Back At Your Door}
 {meta: artist Charlie Walker}
+{meta: x_source classic-country}
+{meta: x_source_file rightbackatyourdoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I'm walking all [C]alone 
@@ -28,3 +31,6 @@ You don't [A7]love me you'd never let me [D7]stay
 Though I [G]know you'll turn me down once [C]more
 I'll [D7]always wind up right back at your [G]door
 {end_of_verse}
+
+
+

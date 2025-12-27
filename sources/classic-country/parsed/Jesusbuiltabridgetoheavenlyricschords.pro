@@ -1,6 +1,9 @@
 {meta: title Jesus Built A Bridge To Heaven}
 {meta: artist Rhonda Vincent}
 {meta: composer Glen Duncan and Mark Grant}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusbuiltabridgetoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jesus built a bridge to heaven
@@ -73,3 +76,14 @@ With three [D7]nails and two [G]crossties
 [C]Jesus built a bridge to [G]heaven
 With three [D7]nails and two [G]crossties
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

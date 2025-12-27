@@ -1,6 +1,9 @@
 {meta: title I Just Need You For Tonight}
 {meta: artist Billy Crash Craddock}
 {meta: composer Jerry Wallace, Terry Skinner, Ken Bell}
+{meta: x_source classic-country}
+{meta: x_source_file ijustneedyoufortonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh she looked just like an angel  
@@ -59,3 +62,10 @@ Change of [Am]love don't work out right
 I don't [D7]want your love forever
 I just need you for [C]tonigh[G]t
 {end_of_verse}
+
+
+
+
+
+
+

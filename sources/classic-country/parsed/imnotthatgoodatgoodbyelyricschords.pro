@@ -1,6 +1,9 @@
 {meta: title I'm Not That Good At Goodbye}
 {meta: artist Jean Shepard}
 {meta: composer Bob McDill and Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file imnotthatgoodatgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't want to talk it [C]over one more [G]time
@@ -33,3 +36,7 @@ You know that [G]I'm not that [D7]good at [G]goodbye
 {start_of_verse: Verse 4}
 [C]You know that [G]I'm not that [D7]good at [G]goodbye
 {end_of_verse}
+
+
+
+

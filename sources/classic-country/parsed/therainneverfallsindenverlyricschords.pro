@@ -1,6 +1,9 @@
 {meta: title The Rain Never Falls In Denver}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file therainneverfallsindenverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the rain never falls [Em]in [F]Denver
@@ -35,3 +38,7 @@
 [Em]Oh the rain never falls in [F]Denver
 [C]Since you came along [A#7]and brought your love [F]into this life of [C]mine
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title He Holds The Lantern}
 {meta: artist Tex Morton}
 {meta: composer Alan L. Grey, Arthur Terker, Roy Jordan}
+{meta: x_source classic-country}
+{meta: x_source_file heholdsthelanternlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know the best hearted [C]fellow 
@@ -50,3 +53,9 @@ But moving those big muscles is [G]what he ain't done yet
 But he's sure respected her and to [C]show he's not neglectin' her
 He holds the [G]lantern while his [D7]mother chops the [G]wood
 {end_of_verse}
+
+
+
+
+
+

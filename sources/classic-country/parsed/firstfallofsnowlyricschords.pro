@@ -1,6 +1,9 @@
 {meta: title First Fall Of Snow}
 {meta: artist Hank Williams}
 {meta: composer Lorene Rose}
+{meta: x_source classic-country}
+{meta: x_source_file firstfallofsnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I talked with a stranger so sad [C7]and [F]forlorn
@@ -36,3 +39,7 @@ He couldn't [G7]know I was crying [C]inside
 He smiled as we parted cause he [C7]didn't [F]know
 That we lost our [C]baby at the [G7]first fall of [C]snow
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Heart's Bouquet}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Jimmy Dickens and Gordon Hall}
+{meta: x_source classic-country}
+{meta: x_source_file myheartsbouquetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was just a very young fellow 
@@ -53,3 +56,8 @@ I loved her [G]then and I love her
 Still cross my [C]heart I always [G]will
 She's my darling she's my [D7]heart's bou[G]quet
 {end_of_verse}
+
+
+
+
+

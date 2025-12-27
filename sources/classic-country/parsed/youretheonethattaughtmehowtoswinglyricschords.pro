@@ -1,5 +1,8 @@
 {meta: title You're The One That Taught Me How To Swing}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file youretheonethattaughtmehowtoswinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You were not content with me [C]when I was like I used to be
@@ -40,3 +43,8 @@ Yes [G]you're the one that [D7]taught me how to [G]swing
 Yes you're the one that [D7]taught me how to [G]swing 
 [D7]Taught me how to [G]swing
 {end_of_verse}
+
+
+
+
+

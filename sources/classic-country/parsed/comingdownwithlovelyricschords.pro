@@ -1,6 +1,9 @@
 {meta: title Coming Down With Love}
 {meta: artist Charley Pride}
 {meta: composer James Bullington}
+{meta: x_source classic-country}
+{meta: x_source_file comingdownwithlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My mind has been in a constant whirl
@@ -46,3 +49,8 @@ Since the day that I met you girl
 [F]Baby it's the feeling that I just can't [C]fight
 [G7]I'm coming down with [C]love
 {end_of_verse}
+
+
+
+
+

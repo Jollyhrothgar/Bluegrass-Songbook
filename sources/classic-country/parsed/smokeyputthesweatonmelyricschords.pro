@@ -1,5 +1,8 @@
 {meta: title Smokey Put The Sweat On Me}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file smokeyputthesweatonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've known some women in every state
@@ -54,3 +57,8 @@ They call [F]her Smokey she's a little bit of evil
 [C]Smokey put the [G7]sweat on [C]me
 [F]Oh [C]Smokey put the [G7]sweat on [C]me
 {end_of_verse}
+
+
+
+
+

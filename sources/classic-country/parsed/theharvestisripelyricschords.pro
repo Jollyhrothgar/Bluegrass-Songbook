@@ -1,5 +1,8 @@
 {meta: title The Harvest Is Ripe}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file theharvestisripelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The harvest is ripe and the [C]labors are [G]few
@@ -40,3 +43,7 @@ The time is near at hand for [A7]you and for [D7]me
 So [G]give your heart to Jesus be a [C]Christian brave and [G]true
 For the harvest is ripe and the [D7]labors are [G]few
 {end_of_verse}
+
+
+
+

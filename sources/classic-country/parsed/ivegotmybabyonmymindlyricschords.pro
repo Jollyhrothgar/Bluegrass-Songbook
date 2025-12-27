@@ -1,5 +1,8 @@
 {meta: title I’ve Got My Baby On My Mind}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotmybabyonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Staring out the [F]window in a [C]dream  
@@ -28,3 +31,6 @@ And softly she walks across my [G7]heart
 [C]Thinking about those [F]lips that taste like [C]wine
 [F]I’ve got my [G7]baby on my [C]mind
 {end_of_verse}
+
+
+

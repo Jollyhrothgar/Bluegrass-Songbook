@@ -1,6 +1,9 @@
 {meta: title I'd Rather Have Jesus}
 {meta: artist Jim Reeves}
 {meta: composer Rhea F. Miller - George B. Shea}
+{meta: x_source classic-country}
+{meta: x_source_file idratherhavejesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd rather have Jesus than [C]silver or [G]gold
@@ -43,3 +46,8 @@ And be [D7]held in sin's dread [G][C]s-way
 I'd rather have Jesus than [G][C]anything
 This world [D7]affords [G]today
 {end_of_verse}
+
+
+
+
+

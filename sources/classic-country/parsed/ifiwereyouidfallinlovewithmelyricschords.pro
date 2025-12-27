@@ -1,6 +1,9 @@
 {meta: title If I Were You I'd Fall In Love With Me}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file ifiwereyouidfallinlovewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You look too good to sit there lookin' [D7]lonely
@@ -33,3 +36,7 @@ Then if [D7]I were you I'd fall in love with [G]me
 {start_of_verse: Verse 5}
 Then if [D7]I were you I'd fall in love with [G]me
 {end_of_verse}
+
+
+
+

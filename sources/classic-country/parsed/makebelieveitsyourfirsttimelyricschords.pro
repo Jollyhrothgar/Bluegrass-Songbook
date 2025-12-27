@@ -1,6 +1,9 @@
 {meta: title Make Believe It's Your First Time}
 {meta: artist Charly McClain}
 {meta: composer Bob Morrison and Johnny Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file makebelieveitsyourfirsttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]We've tried our [Am]hand [D7]at love [G]before [Em]
@@ -34,3 +37,7 @@ And [D7]I'll make believe it's [G]mine
 Make believe it's your [Am]first time
 And [D7]I'll make believe it's [G]mine
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My World Is Caving In}
 {meta: artist Leroy Van Dyke}
 {meta: composer Red Kirk}
+{meta: x_source classic-country}
+{meta: x_source_file myworldiscavinginlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The car's not in its place outback
@@ -43,3 +46,9 @@ I [C]feel my world cavin' [G]in
 {start_of_verse: Verse 7}
 I [C]feel my world cavin' [G]in
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Beginning To Feel Like Home}
 {meta: artist Anne Murray}
 {meta: composer Colleen Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file beginningtofeellikehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well a chillin' [B7]wind has filled the [D7][Em]town
@@ -34,3 +37,7 @@
 {start_of_verse: Verse 5}
 [C]Just when it was [Am]beginning to [D7]feel like [G]home
 {end_of_verse}
+
+
+
+

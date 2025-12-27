@@ -1,6 +1,9 @@
 {meta: title You're Heavy On My Mind Today}
 {meta: artist Jack Greene}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file youreheavyonmymindtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're heavy on my mind today [G7]
@@ -40,3 +43,8 @@ You're [C]heavy on my [G7]mind [C]today
 {start_of_verse: Verse 5}
 [F]You're [C]heavy on my [G7]mind [C]today
 {end_of_verse}
+
+
+
+
+

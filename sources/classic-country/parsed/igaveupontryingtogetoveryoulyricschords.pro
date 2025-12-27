@@ -1,5 +1,8 @@
 {meta: title I Gave Up On Trying To Get Over You}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file igaveupontryingtogetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everything's the way that you [Dm]left it baby
@@ -46,3 +49,9 @@ Then I made a decision to [Dm]live with your memory
 {start_of_verse: Verse 6}
 I [G7]gave up on trying to get [C]over you
 {end_of_verse}
+
+
+
+
+
+

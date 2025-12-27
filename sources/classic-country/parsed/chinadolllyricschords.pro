@@ -1,6 +1,9 @@
 {meta: title China Doll Lyrics Chords}
 {meta: artist Slim Whitman}
 {meta: composer Gerald Cannan and Jane Cannan}
+{meta: x_source classic-country}
+{meta: x_source_file chinadolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm tired of crying  and [C7]all your [F]lying
@@ -43,3 +46,8 @@
 [C]And never grieve me
 [G7]My China [C]doll
 {end_of_verse}
+
+
+
+
+

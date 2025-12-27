@@ -1,6 +1,9 @@
 {meta: title A Handful Of Dust}
 {meta: artist Don Williams}
 {meta: composer Tony Arata}
+{meta: x_source classic-country}
+{meta: x_source_file ahandfulofdustlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -49,3 +52,9 @@ A [F]handful of [C]dust
 [F]True love makes [C]priceless the [G7]worth[Am]less 
 When[F]ever it is [C]added to these [G7]handfuls of [C]dust
 {end_of_verse}
+
+
+
+
+
+

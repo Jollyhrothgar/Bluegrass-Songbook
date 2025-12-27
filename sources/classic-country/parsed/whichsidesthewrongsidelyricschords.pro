@@ -1,6 +1,9 @@
 {meta: title Which Side’s The Wrong Side}
 {meta: artist The Wilburn Brothers}
 {meta: composer Loretta Lynn and Lorene Allen}
+{meta: x_source classic-country}
+{meta: x_source_file whichsidesthewrongsidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've heard you've been saying things [G7]about my part of [C]town
@@ -22,3 +25,5 @@ It's true we have factories here you [G7]don't have on your [C]side
 I [C]think sometimes the parts incline to [C7]call the kettle [F]black
 Who's got the right to [C]say which side is the [G7]wrong side of the [C]tracks
 {end_of_verse}
+
+

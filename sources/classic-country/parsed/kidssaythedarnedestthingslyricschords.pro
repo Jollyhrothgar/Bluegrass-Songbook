@@ -1,6 +1,9 @@
 {meta: title Kids Say The Darnedest Things}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file kidssaythedarnedestthingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Kids say the darnedest [Dm]things
@@ -59,3 +62,11 @@ And [G]it sure wasn't [G7]love
 Have you ever [D]listened close to the games they [D7]play
 Or the [G]little songs they [G7]sing
 {end_of_verse}
+
+
+
+
+
+
+
+

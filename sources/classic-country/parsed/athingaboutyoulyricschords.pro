@@ -1,6 +1,9 @@
 {meta: title A Thing About You}
 {meta: artist Emmylou Harris}
 {meta: composer Tom Petty}
+{meta: x_source classic-country}
+{meta: x_source_file athingaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm not much on mystery
@@ -43,3 +46,6 @@ It don't matter what you do
 [C]I  I  I  got a [D7]thing about [G]you
 [G]Thing about [F]you got a [C]thing about [G]you
 {end_of_verse}
+
+
+

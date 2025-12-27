@@ -1,6 +1,9 @@
 {meta: title Strawberry Roan}
 {meta: artist Marty Robbins}
 {meta: composer Curley Flectcher, Fred Howard, Nat Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file strawberryroanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was hanging around town just spending my [G7]time
@@ -65,3 +68,9 @@ I'll bet all my money the man ain't [G7]alive
 That'll stay with Old Strawberry
 When he makes his high [C]dive
 {end_of_verse}
+
+
+
+
+
+

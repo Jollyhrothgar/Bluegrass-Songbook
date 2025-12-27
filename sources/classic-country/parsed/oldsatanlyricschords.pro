@@ -1,6 +1,9 @@
 {meta: title Old Satan}
 {meta: artist Larry Sparks}
 {meta: composer Jim Eanes and Lora Lowry}
+{meta: x_source classic-country}
+{meta: x_source_file oldsatanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Living in the world of mass confusion
@@ -50,3 +53,9 @@ I’ve been locked out in the [F]cold
 But I don’t [C]aim to give ol’ Satan
 Any [G7]claim upon my [C]soul
 {end_of_verse}
+
+
+
+
+
+

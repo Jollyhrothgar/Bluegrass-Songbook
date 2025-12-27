@@ -1,5 +1,8 @@
 {meta: title I Can't Go On Living This Way}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file icantgoonlivingthiswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well my life's in such a mess and I don't know what to say
@@ -34,3 +37,7 @@ Well my life's in such a mess and I don't know what to say
 But they haunt me every day
 [D7]And I can't go on a living this [G]way
 {end_of_verse}
+
+
+
+

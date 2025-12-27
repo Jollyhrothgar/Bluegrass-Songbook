@@ -1,5 +1,8 @@
 {meta: title Help Me Not To Complain}
 {meta: artist The Oak Ridge Boys}
+{meta: x_source classic-country}
+{meta: x_source_file helpmenottocomplainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Oh [C]Lord oh [Am]Lord help me [D7]not [F]to [G7]com[C]plai[F]n
@@ -18,3 +21,5 @@ Tis so [C]many I [Em]pray for [F]those broken and lame
 Oh [C]Lord oh [Am]Lord help me [D7]not [F]to [G7]com[C]plain[Am]   [C]
 [F]Oh [C]Lord oh [Am]Lord help me [D7]not [F]to [G7]com[G]plain[C]
 {end_of_verse}
+
+

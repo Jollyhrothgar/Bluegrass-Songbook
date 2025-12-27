@@ -1,5 +1,8 @@
 {meta: title I'll Always Be Blue}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file illalwaysbebluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll always be blue when I think of things we used to [G7]do
@@ -21,3 +24,5 @@ I'll always be sad when I remember the good times we [C]had
 I'll cry when I see all those love letters [C7]you wrote to [F]me
 When I think of [C]you every [D7]minute I'll [G7]always be [C]blue
 {end_of_verse}
+
+

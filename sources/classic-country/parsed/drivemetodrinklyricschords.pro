@@ -1,6 +1,9 @@
 {meta: title Drive Me To Drink}
 {meta: artist George Jones}
 {meta: composer Mike Huffman and Gene Dobbins}
+{meta: x_source classic-country}
+{meta: x_source_file drivemetodrinklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight do me a favor
@@ -49,3 +52,9 @@ Tag:           C
 Well if you're gonna drive me crazy baby
 [G7]Drive me to [C]drink
 {end_of_verse}
+
+
+
+
+
+

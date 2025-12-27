@@ -1,6 +1,9 @@
 {meta: title She And I}
 {meta: artist Alabama}
 {meta: composer Dave Loggins}
+{meta: x_source classic-country}
+{meta: x_source_file sheandilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She and [D7]I live in our own little world
@@ -35,3 +38,7 @@ Ah but just because we aren't [Am]often seen socially
 [G]People think we've got something to [E7]hide
 But [D7]all our friends know we're [A7]just a little old fashioned she and [D7]I
 {end_of_verse}
+
+
+
+

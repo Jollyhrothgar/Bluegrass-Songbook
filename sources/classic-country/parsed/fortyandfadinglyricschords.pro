@@ -1,6 +1,9 @@
 {meta: title Forty And Fading}
 {meta: artist Ray Price}
 {meta: composer Buck A. Moore, Jim Mundy, Donald G. Tucker and}
+{meta: x_source classic-country}
+{meta: x_source_file fortyandfadinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He looked in the mirror while he was shaving this [D7]morning
@@ -44,3 +47,8 @@
 [C]He may look like forty and [G]fading
 [D7]But inside he's still [G]23
 {end_of_verse}
+
+
+
+
+

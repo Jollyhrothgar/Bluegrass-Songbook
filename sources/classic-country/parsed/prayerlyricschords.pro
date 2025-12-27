@@ -1,6 +1,9 @@
 {meta: title Prayer}
 {meta: artist Eddy Arnold}
 {meta: composer Alfred Bryan and Edward Lisbona}
+{meta: x_source classic-country}
+{meta: x_source_file prayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Prayer is a song we [Em]all can sing 
@@ -29,3 +32,6 @@ For [Am]those who are in de[D7]spair
 [Em]And when your [G]heart kneels [Em]down to [A7]pray 
 God will [D7]hear your [G]prayer
 {end_of_verse}
+
+
+

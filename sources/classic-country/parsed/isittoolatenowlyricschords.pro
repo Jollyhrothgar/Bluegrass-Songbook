@@ -1,5 +1,8 @@
 {meta: title Is It Too Late Now}
 {meta: artist Earl Scruggs and Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file isittoolatenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is it too late now to tell you that I [F]love you 
@@ -35,3 +38,7 @@ Or [G7]is there still a chance for me some[C]how
 Oh they tell me now that you have found [F]another
 [G7]Darlin' please don't say it's too late [C]now
 {end_of_verse}
+
+
+
+

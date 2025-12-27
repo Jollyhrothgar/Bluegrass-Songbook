@@ -1,6 +1,9 @@
 {meta: title Roses Are Red}
 {meta: artist Don Gibson}
 {meta: composer Don Gibson and Hall Houpe}
+{meta: x_source classic-country}
+{meta: x_source_file rosesareredlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Roses are red and the [F]violets are [D7]blue
@@ -29,3 +32,6 @@ Be[G7]cause these same roses [F]remind [G7]me of [C]you
 God took you away to His [F]heaven my [D7]love
 And [G7]made you an angel [C]above
 {end_of_verse}
+
+
+

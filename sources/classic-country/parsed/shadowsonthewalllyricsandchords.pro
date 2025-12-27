@@ -1,6 +1,9 @@
 {meta: title Shadows On The Wall}
 {meta: artist Jean Shepard}
 {meta: composer Tommy Reiff and Ronnie Badger}
+{meta: x_source classic-country}
+{meta: x_source_file shadowsonthewalllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though the door was open wide not a sound came from [F]inside
@@ -29,3 +32,6 @@
 [C]Nothing seems to heal the wound guess that I'm forever [F]doomed
 [G7]To be haunted by the shadows on the [C]wall
 {end_of_verse}
+
+
+

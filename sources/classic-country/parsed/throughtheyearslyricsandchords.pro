@@ -1,6 +1,9 @@
 {meta: title Through The Years}
 {meta: artist Charley Pride}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file throughtheyearslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seems like only yester[F]day we fell in [C]love
@@ -33,3 +36,7 @@ And each step has drawn us [G7]closer through the [C]years
 {start_of_verse: Verse 5}
 And each step has drawn us [G7]closer through the [C]years
 {end_of_verse}
+
+
+
+

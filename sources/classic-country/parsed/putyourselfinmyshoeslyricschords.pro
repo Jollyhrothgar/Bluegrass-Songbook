@@ -1,6 +1,9 @@
 {meta: title Put Yourself In My Shoes}
 {meta: artist Clint Black}
 {meta: composer Clint Black, Hayden Nicholas, Shake Russell}
+{meta: x_source classic-country}
+{meta: x_source_file putyourselfinmyshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your mind is made up you won't [A7]even try 
@@ -60,3 +63,10 @@ We [C]have our differences we're [B7]still the same
 And maybe things wouldn't [A7]seem the same
 If you could [D]see what you [D7]mean to [G]me
 {end_of_verse}
+
+
+
+
+
+
+

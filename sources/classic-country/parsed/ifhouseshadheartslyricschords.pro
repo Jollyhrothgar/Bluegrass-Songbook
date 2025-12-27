@@ -1,6 +1,9 @@
 {meta: title If Houses Had Hearts}
 {meta: artist Wynn Stewart}
 {meta: composer Charlie Williams and Joe Nixon}
+{meta: x_source classic-country}
+{meta: x_source_file ifhouseshadheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If houses had hearts and feelings like people [D7]do
@@ -26,3 +29,5 @@
 [G]It's a place to be happy if two people [C]try
 [Am]If houses [D7]had feelings [Am](houses had [D7]feelings) then our house would [G]cry
 {end_of_verse}
+
+

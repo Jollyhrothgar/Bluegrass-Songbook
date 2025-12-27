@@ -1,6 +1,9 @@
 {meta: title Children}
 {meta: artist Johnny Cash}
 {meta: composer Joe South}
+{meta: x_source classic-country}
+{meta: x_source_file childrenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Children children children run and jump and [G7]play
@@ -41,3 +44,7 @@ I [F]wish we could all behave like little [C]children
 [G7]God's little [C]children [G7]sweet precious [C]children
 [G7]Pretty dirty [C]children [G7]little bitty [C]children  
 {end_of_verse}
+
+
+
+

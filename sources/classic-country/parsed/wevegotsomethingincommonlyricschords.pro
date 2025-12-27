@@ -1,6 +1,9 @@
 {meta: title We've Got Something In Common}
 {meta: artist Faron Young}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file wevegotsomethingincommonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We've got something in common oh Mr. [G7]Carpet on the floor
@@ -32,3 +35,7 @@ And we've got [G7]something in common you and [C]me
 We're so close and that's [C7]how it should [F]be
 And we've got [G7]something in common you and [C]me
 {end_of_verse}
+
+
+
+

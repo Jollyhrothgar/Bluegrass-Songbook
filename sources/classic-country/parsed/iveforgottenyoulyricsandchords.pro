@@ -1,6 +1,9 @@
 {meta: title I've Forgotten You}
 {meta: artist Rhonda Vincent}
 {meta: composer Angelo Petraglia, Brett James, Hillary Lindsey, Troy Verges}
+{meta: x_source classic-country}
+{meta: x_source_file iveforgottenyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's snowing in Miami and it's [Dm]hailing in L.A.
@@ -50,3 +53,10 @@ I don't [G7]miss it like you think I do  I've forgotten [F]you
 How you held me and it [C]felt like it's what you were born to [G7]do
 If I lie enough it might come [F]true I've forgotten [C]you
 {end_of_verse}
+
+
+
+
+
+
+

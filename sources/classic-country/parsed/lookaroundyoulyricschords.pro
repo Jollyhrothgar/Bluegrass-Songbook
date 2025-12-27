@@ -1,6 +1,9 @@
 {meta: title Look Around You}
 {meta: artist Don Williams}
 {meta: composer Buck Lindsey and Bill Joor}
+{meta: x_source classic-country}
+{meta: x_source_file lookaroundyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How do you like it bein' [F]lonely
@@ -29,3 +32,6 @@ Look [F]around [C]you [F]see where you've [C]been
 Look [F]around [C]you if [F]you need a [C]friend
 [F]I might be the [C]one who makes your [G7]loneliness [C]end
 {end_of_verse}
+
+
+

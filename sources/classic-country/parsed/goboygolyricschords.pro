@@ -1,6 +1,9 @@
 {meta: title Go Boy Go}
 {meta: artist Carl Smith}
 {meta: composer Floyd Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file goboygolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Go boy go love is easy made
@@ -43,3 +46,8 @@ And [D7]when she’s near whisper dear
 Don’t you lose your gal cause you’re too slow
 [G7]And when you get the signal [F]go boy [C]go
 {end_of_verse}
+
+
+
+
+

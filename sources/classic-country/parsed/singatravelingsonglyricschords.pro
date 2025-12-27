@@ -1,6 +1,9 @@
 {meta: title Sing A Traveling Song}
 {meta: artist Johnny Cash}
 {meta: composer Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file singatravelingsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey little girl with [E7]tears in your eyes
@@ -28,3 +31,5 @@ A man that wants his friends and [Am]neighbors a [D7]child and a [G7]home
 [F]What's right for others just [C]ain't right for me
 The time has come to [G7]sing a traveling [C]song
 {end_of_verse}
+
+

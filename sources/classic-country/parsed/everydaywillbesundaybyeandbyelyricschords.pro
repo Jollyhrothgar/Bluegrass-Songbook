@@ -1,6 +1,9 @@
 {meta: title Every Day Will Be Sunday Bye And Bye}
 {meta: artist Statler Brother}
 {meta: composer Bob Miller}
+{meta: x_source classic-country}
+{meta: x_source_file everydaywillbesundaybyeandbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh bye and bye (bye and bye) bye and bye (bye and bye) 
@@ -59,3 +62,10 @@ And every [C]day (every day) will be Sunday [G7]bye and [C]bye
 {start_of_verse: Verse 5}
 Bye and bye 
 {end_of_verse}
+
+
+
+
+
+
+

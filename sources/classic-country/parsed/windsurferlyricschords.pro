@@ -1,6 +1,9 @@
 {meta: title Windsurfer}
 {meta: artist Roy Orbison}
 {meta: composer Bill Dees and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file windsurferlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wind-surfer [C][G][C]Wind-surfer
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]Wind-surfer [G][D7][G]Wind-surfer
 {end_of_verse}
+
+
+
+

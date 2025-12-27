@@ -1,6 +1,9 @@
 {meta: title I Know My Name Is There}
 {meta: artist Heaven's Mountain Band}
 {meta: composer Ernest Stoneman}
+{meta: x_source classic-country}
+{meta: x_source_file iknowmynameistherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My name is [F]in the [C]book of Life
@@ -36,3 +39,7 @@ My [G7]name I know is [C]there (is there)
 I know (I know) I [F]know (my name is there)
 My [C]name is [G7]written [C]there
 {end_of_verse}
+
+
+
+

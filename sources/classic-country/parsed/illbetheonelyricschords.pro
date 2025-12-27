@@ -1,6 +1,9 @@
 {meta: title I'll Be The One}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid, Harold Reid, Debo Reid}
+{meta: x_source classic-country}
+{meta: x_source_file illbetheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll be the one the one [E7]standing in the [Am]shadows
@@ -43,3 +46,8 @@ No [F]matter [G7]what you've [C]done
 And [G7]when you [C]need you just need [E7]someone to [Am]hold you
 You [F]know I'll [G7]be the [C]one
 {end_of_verse}
+
+
+
+
+

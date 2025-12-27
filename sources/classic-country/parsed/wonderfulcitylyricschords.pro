@@ -1,6 +1,9 @@
 {meta: title Wonderful City}
 {meta: artist Ernest Tubb}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file wonderfulcitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm waiting watching and [C7]longing that [F]beautiful sight to [C]behold
@@ -27,3 +30,6 @@ With the [F]saints to have gone [C]before [Am]us to that [D7]beautiful home so [
 My [C]whole heart is set upon [C7]heaven where [F]my Savior's face I shall [C]see
 And [F]live in the light of His [C]glo[Am]ry through[D7]out all [G7]eterni[C]ty
 {end_of_verse}
+
+
+

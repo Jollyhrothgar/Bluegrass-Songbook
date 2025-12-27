@@ -1,6 +1,9 @@
 {meta: title Don't Ask For Tomorrow}
 {meta: artist Sonny James}
 {meta: composer Bob Tubert and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file dontaskfortomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Take [G]today and [D7]hold it [G]fast
@@ -36,3 +39,7 @@ Oh don’t [D7]waste it on goodbye
 Don’t [D7]ask for [G]tomorrow
 Don’t [D7]ask for [G]tomorrow
 {end_of_verse}
+
+
+
+

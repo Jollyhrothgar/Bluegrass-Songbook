@@ -1,5 +1,8 @@
 {meta: title My Cathedral}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file mycathedrallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My [G7]cathedral  [C]has a ceiling of [G7]blue
@@ -28,3 +31,6 @@
 [C]No other cathedral is so [F]beautiful
 [C]For God made my [G7]cathedral for [C]me
 {end_of_verse}
+
+
+

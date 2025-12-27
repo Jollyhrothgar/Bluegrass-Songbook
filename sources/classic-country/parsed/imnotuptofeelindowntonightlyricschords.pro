@@ -1,6 +1,9 @@
 {meta: title I'm Not Up to Feelin' Down Tonight}
 {meta: artist Johnny Rodriguez}
 {meta: composer David Anthony, Johnny Rodriguez, Jim Wix}
+{meta: x_source classic-country}
+{meta: x_source_file imnotuptofeelindowntonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m not up to feelin’ down to[F]night
@@ -37,3 +40,7 @@ What [C]it comes down to is I’m not up to [G7]feelin’ down [C]tonight
 {start_of_verse: Verse 4}
 What it comes down to is I’m not up to [G7]feelin’ down [C]tonight
 {end_of_verse}
+
+
+
+

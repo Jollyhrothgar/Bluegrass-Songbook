@@ -1,5 +1,8 @@
 {meta: title Don't Cuss The Fiddle}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file dontcussthefiddlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I scandalized my brother while admittin' 
@@ -62,3 +65,10 @@ Like he'd done every face in that [C]saloon
 I [G7]know that it sounds silly 
 But I think that I just stole somebody's [C]song
 {end_of_verse}
+
+
+
+
+
+
+

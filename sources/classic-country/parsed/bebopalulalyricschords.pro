@@ -1,6 +1,9 @@
 {meta: title Be-Bop-A-Lula}
 {meta: artist Everly Brothers}
 {meta: composer Tex Davis and Gene Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file bebopalulalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Recorde[A]d by the Everly Brothers
@@ -46,3 +49,9 @@ She's the only woman [G7]that I wanna know
 {start_of_verse: Verse 1}
 Recorde[A]d by the Everly Brothers
 {end_of_verse}
+
+
+
+
+
+

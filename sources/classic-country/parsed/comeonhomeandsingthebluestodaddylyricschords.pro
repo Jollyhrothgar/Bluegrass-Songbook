@@ -1,6 +1,9 @@
 {meta: title Come On Home And Sing The Blues To Daddy}
 {meta: artist Bobby Bare}
 {meta: composer Ray Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file comeonhomeandsingthebluestodaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear say your new romance has [G7]faded
@@ -29,3 +32,6 @@
 [G7]Come on home and sing the blues to daddy
 [C]Tell it all to one who understands
 {end_of_verse}
+
+
+

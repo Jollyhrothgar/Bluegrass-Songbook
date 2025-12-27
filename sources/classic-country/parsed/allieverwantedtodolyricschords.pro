@@ -1,6 +1,9 @@
 {meta: title All I Ever Wanted To Do}
 {meta: artist Mel Tillis}
 {meta: composer Jim Owen}
+{meta: x_source classic-country}
+{meta: x_source_file allieverwantedtodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You think you took her from [Bm]me
@@ -48,3 +51,11 @@ I never wanted her much anyway
 {start_of_verse: Verse 2}
 [G]Was kiss her lips in the early morn
 {end_of_verse}
+
+
+
+
+
+
+
+

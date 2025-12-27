@@ -1,5 +1,8 @@
 {meta: title Just For The Sake Of The Thrill}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file justforthesakeofthethrilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never knew anybody like you be[F]fore
@@ -37,3 +40,7 @@ Like it or not you give all that you've got for [F]free
 [F]Just for the [G7]sake of the [Am]thrill
 [F]Just for the [G7]sake of the [C]thrill
 {end_of_verse}
+
+
+
+

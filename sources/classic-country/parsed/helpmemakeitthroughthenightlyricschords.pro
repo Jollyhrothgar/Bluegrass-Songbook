@@ -1,5 +1,8 @@
 {meta: title Help Me Make It Through The Night}
 {meta: artist Sammi Smith}
+{meta: x_source classic-country}
+{meta: x_source_file helpmemakeitthroughthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take the ribbon from my hair  [C]    [G]
@@ -38,3 +41,8 @@ Help me make it through the [G]night
 [Am]I don't want to be [D7]alone
 Help me make it though the [G]night
 {end_of_verse}
+
+
+
+
+

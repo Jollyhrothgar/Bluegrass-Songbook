@@ -1,5 +1,8 @@
 {meta: title Jilted Love}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file jiltedlovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight my head bowed down in sorrow
@@ -34,3 +37,8 @@ In that far off home up yonder
 [C]Was there she told me that she loved me
 [G7]And someday would be my [C]bride
 {end_of_verse}
+
+
+
+
+

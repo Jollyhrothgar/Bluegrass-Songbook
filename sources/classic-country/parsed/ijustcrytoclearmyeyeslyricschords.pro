@@ -1,6 +1,9 @@
 {meta: title I Just Cry To Clear My Eyes}
 {meta: artist Freddie Hart}
 {meta: composer Becki Bluefield, Finley Duncan, Chuck Reed}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcrytoclearmyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my two lips touch the glass
@@ -39,3 +42,8 @@
 [F]Your love belongs to someone new
 [G7]But it don't hurt me I just cry to clear my [C]eyes
 {end_of_verse}
+
+
+
+
+

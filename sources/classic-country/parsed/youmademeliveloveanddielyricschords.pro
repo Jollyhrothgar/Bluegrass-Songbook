@@ -1,6 +1,9 @@
 {meta: title You Made Me Live Love And Die}
 {meta: artist Willie Nelson}
 {meta: composer Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file youmademeliveloveanddielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I cried and cried my heart out but what good does it [A7]do
@@ -22,3 +25,5 @@
 [A7]I'll say farewell to this old world this is my last goodbye
 [D7]You made me live you made me love and now you'll make me [G][C]die
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I Don't Love You Anymore}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file idontloveyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't love you [F]any-more [C]not the way [F]I did [C]before
@@ -31,3 +34,6 @@ You drained my heart of all its love with [D7]every sweet [G7]caress
 I keep [C]saying [F]o'er and [C]o'er I don't [F]love you [C]anymore
 Trouble is I don't [G7]love you any [C]less
 {end_of_verse}
+
+
+

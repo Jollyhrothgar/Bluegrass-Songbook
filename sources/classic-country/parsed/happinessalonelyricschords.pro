@@ -1,5 +1,8 @@
 {meta: title Happiness Alone}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file happinessalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I think I'll go back [G7]down to New [Dm]Orleans 
@@ -45,3 +48,8 @@ I guess [C]me and the [G7]neighbors will [F]see
 If the [C]one thing that [G7]I couldn't do [Dm]without her 
 She couldn't [G7]do without [C]me
 {end_of_verse}
+
+
+
+
+

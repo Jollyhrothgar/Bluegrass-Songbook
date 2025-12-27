@@ -1,6 +1,9 @@
 {meta: title I Saw My Castles Fall Today}
 {meta: artist Ray Price}
 {meta: composer Rex Griffin and Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file isawmycastlesfalltodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw my castles fall [G7]today
@@ -29,3 +32,6 @@
 [C]I'll say goodbye to all my [G7]dreams
 [C]I saw my castles fall today
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Whiskey If You Were A Woman}
 {meta: artist Highway 101}
 {meta: composer Mary W. Francis, Johnny MacRae, Bob Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeyifyouwereawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's told me a [F]million times he's sor[G7]ry
@@ -34,3 +37,7 @@ I'd [F]drive you from his [G7]tangled mind for [C]good
 [F]Oh [C]whiskey [F]if you were a [C]woman  [F]
 I'd [Dm]drive you from his [G7]tangled mind for [C]good
 {end_of_verse}
+
+
+
+

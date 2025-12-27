@@ -1,6 +1,9 @@
 {meta: title Shopping For Dresses}
 {meta: artist Merle Haggard}
 {meta: composer Jimmie Dickens and Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file shoppingfordresseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down through the ages men have died for their [F]women
@@ -29,3 +32,6 @@
 [C]Maybe someday I'll find me a lady to wear [F]them
 [C]And my shopping will be [G7]done for a [C]while
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Who'll Turn Out The Lights In Your World Tonight}
 {meta: artist Ronnie Milsap}
 {meta: composer Wayne Kemp and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file whollturnoutthelightsinyourworldtonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder [F]who'll turn out the [C]lights in [G7]your world [C]tonight
@@ -34,3 +37,7 @@ I wonder [F]who'll turn out the [C]lights in [G7]your world [C]tonight
 {start_of_verse: Verse 4}
 I wonder [F]who'll turn out the [C]lights in [G7]your world [C]tonight
 {end_of_verse}
+
+
+
+

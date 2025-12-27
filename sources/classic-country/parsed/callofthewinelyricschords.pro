@@ -1,5 +1,8 @@
 {meta: title Call Of The Wine}
 {meta: artist Landon Dodd}
+{meta: x_source classic-country}
+{meta: x_source_file callofthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It wakes me every morning just as plain as [F]day
@@ -40,3 +43,8 @@
 [F]My poor heart keeps achin' all the time
 [G7]And today I heard the call of the [C]wine
 {end_of_verse}
+
+
+
+
+

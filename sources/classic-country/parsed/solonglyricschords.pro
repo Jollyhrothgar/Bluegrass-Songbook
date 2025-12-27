@@ -1,6 +1,9 @@
 {meta: title So Long}
 {meta: artist Ricky Nelson}
 {meta: composer Donald R. Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file solonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been so long so very [E7]long
@@ -34,3 +37,7 @@ Oh [Am]what a bitter lesson to [C]learn
 [D7]Baby say so long to [C]you
 [D7]So [C]long
 {end_of_verse}
+
+
+
+

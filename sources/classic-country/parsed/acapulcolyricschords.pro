@@ -1,6 +1,9 @@
 {meta: title Acapulco}
 {meta: artist Johnny Duncan}
 {meta: composer Larry Collins and Mary Leath}
+{meta: x_source classic-country}
+{meta: x_source_file acapulcolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's raining on the west coast snowing in Topeka
@@ -50,3 +53,9 @@ There's no [G7]snow in Old Monte[C]rey
 There's no ice down in No[F]gales
 I say oh [G7]Lord there's gotta be a better [C]way
 {end_of_verse}
+
+
+
+
+
+

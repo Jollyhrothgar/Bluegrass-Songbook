@@ -1,6 +1,9 @@
 {meta: title Spring Fever}
 {meta: artist Loretta Lynn}
 {meta: composer Dorothy Fields and Shirl Milete}
+{meta: x_source classic-country}
+{meta: x_source_file springfeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night he took me in his arms and [D7]held me tenderly
@@ -31,3 +34,6 @@ I said I guess it's [C]spring fever in the middle of [G]winter
 That makes the warm of [D7]glowing love
 But I just couldn't tell him it was [G]someone new
 {end_of_verse}
+
+
+

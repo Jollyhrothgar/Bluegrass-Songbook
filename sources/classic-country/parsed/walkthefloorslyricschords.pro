@@ -1,5 +1,8 @@
 {meta: title Walk The Floor}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file walkthefloorslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Since you went away I've had the [C]blues 
@@ -28,3 +31,6 @@ Haven't slept a wink [D7]since you've been [G]gone
 [G]Only God knows what I'm going [C]through 
 [D7]Walk the floor and worry over [G]you
 {end_of_verse}
+
+
+

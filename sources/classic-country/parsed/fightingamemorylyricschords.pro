@@ -1,6 +1,9 @@
 {meta: title Fighting A Memory}
 {meta: artist Wilburn Brothers}
 {meta: composer Danny Walls}
+{meta: x_source classic-country}
+{meta: x_source_file fightingamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here I [C]sit fighting a [G]memory 
@@ -36,3 +39,7 @@ And it looks like the [D7]memory's gonna [G]win
 Here I [C]sit fighting a [G]memory 
 And I'm crying thinking [D7]about you once [G]again
 {end_of_verse}
+
+
+
+

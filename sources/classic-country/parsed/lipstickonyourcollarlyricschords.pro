@@ -1,6 +1,9 @@
 {meta: title Lipstick On Your Collar}
 {meta: artist Connie Francis}
 {meta: composer George Goehring and Edna Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file lipstickonyourcollarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you left me all [Em]alone at [C]the record [D7]hop
@@ -33,3 +36,7 @@ Couse [C]lipstick on you [G]collar [D7]told a tale on [G]you yeah
 {start_of_verse: Verse 4}
 Boy [D7]told a tale on [G]you man [D7]told a tale on [G]you
 {end_of_verse}
+
+
+
+

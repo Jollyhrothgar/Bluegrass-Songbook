@@ -1,6 +1,9 @@
 {meta: title Stop Sneakin' Around}
 {meta: artist Ricky Nelson}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file stopsneakinaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I hear that you've been [C]sneakin' around on [G]me
@@ -52,3 +55,9 @@ Cause [G]one of these days I'll [D7]up and walk a[G]way
 Well I hear that you've been [D7]sneakin' around on [G]me
 Well I hear that you've been [D7]sneakin' around on [G]me 
 {end_of_verse}
+
+
+
+
+
+

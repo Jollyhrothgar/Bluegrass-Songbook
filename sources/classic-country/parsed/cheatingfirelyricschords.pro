@@ -1,6 +1,9 @@
 {meta: title Cheating Fire}
 {meta: artist Conway Twitty}
 {meta: composer Russ Allison, Donald Miller, Dave Hall}
+{meta: x_source classic-country}
+{meta: x_source_file cheatingfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cheating fire  [F]gonna burn [C]higher
@@ -36,3 +39,7 @@ Still we lay here in the ashes [G7]unconcerned
 Every [C]night the same old thing we [F]just pour fuel on the [C]flame
 Before this cheating fire goes out [G7]someone's gonna get [C]burned
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Anna}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file annalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Anna  stand beside [G7]me 
@@ -50,3 +53,9 @@ We have [C]brought four children strong and [D7]fine
 We're [C]singing the last [D7]verse of summer [G]time
 Yes we're [C]singing the last [D7]verse of summer [G]time
 {end_of_verse}
+
+
+
+
+
+

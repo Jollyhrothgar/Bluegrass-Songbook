@@ -1,6 +1,9 @@
 {meta: title My Kind Of Woman My Kind Of Man}
 {meta: artist Vince Gill with Patty Loveless}
 {meta: composer Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file mykindofwomanmykindofmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You don't need diamonds or [C]big fancy [G]cars
@@ -33,3 +36,7 @@ You're [C]my kind of [G]woman you're [D7]my kind of [G]man
 {start_of_verse: Verse 4}
 You're [C]my kind of [G]woman and you're [D7]my kind of [C]man[G]
 {end_of_verse}
+
+
+
+

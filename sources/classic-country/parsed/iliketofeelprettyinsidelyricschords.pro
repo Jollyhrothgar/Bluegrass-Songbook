@@ -1,5 +1,8 @@
 {meta: title I Like To Feel Pretty Inside}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file iliketofeelprettyinsidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A mink wears a mink coat the [F]whole year [C]around
@@ -44,3 +47,8 @@ I like to like me when [F]I close my [C]eyes
 I like to feel [G7]pretty in[C]side
 [F]Oh I [C]like to feel [G7]pretty in[C]side
 {end_of_verse}
+
+
+
+
+

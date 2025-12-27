@@ -1,6 +1,9 @@
 {meta: title Ten Feet Away}
 {meta: artist Keith Whitley}
 {meta: composer Billy Sherrill, Troy Seals, Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file tenfeetawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Alone at a corner [Em]table
@@ -51,3 +54,9 @@ Imagine [G]her in my arms with that [D7]look on her face
 [Em]Lyin' somewhere in some [C]shadowy [D7]place
 It was [G]love [C]just [D7]ten feet [G]away
 {end_of_verse}
+
+
+
+
+
+

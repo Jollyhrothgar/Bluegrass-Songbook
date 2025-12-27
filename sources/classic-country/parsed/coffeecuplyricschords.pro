@@ -1,6 +1,9 @@
 {meta: title Coffee Cup}
 {meta: artist Jim Ed Brown}
 {meta: composer Tommy Williamson}
+{meta: x_source classic-country}
+{meta: x_source_file coffeecuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Coffee cup coffee cup talk to me
@@ -54,3 +57,12 @@ Tell me she's not really gone
 {start_of_verse: Verse 8}
 [D7]Coffee cup [G]talk to me (coffee cup [D7]talk to [G]me)
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title What Am I Gonna Do About You}
 {meta: artist Reba McEntire}
 {meta: composer Doug Gilmore, Bob Simon, Jim Allison}
+{meta: x_source classic-country}
+{meta: x_source_file whatamigonnadoaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The kid down the street mows the grass every week
@@ -40,3 +43,7 @@ But I still can't believe that we're [C]through
 So [Am]tell me [G]what in the world am [D7]I gonna do about [C]you
 What am I [D7]gonna do about [G]you
 {end_of_verse}
+
+
+
+

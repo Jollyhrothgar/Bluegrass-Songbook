@@ -1,6 +1,9 @@
 {meta: title My Baby Lied To Me}
 {meta: artist George Morgan}
 {meta: composer George Morgan and Mary Lee}
+{meta: x_source classic-country}
+{meta: x_source_file mybabyliedtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I got a phone call from my honeybee
@@ -56,3 +59,9 @@ So I [G]know my baby [D7]lied to [G]me
 {start_of_verse: Verse 5}
 I know my baby lied to me
 {end_of_verse}
+
+
+
+
+
+

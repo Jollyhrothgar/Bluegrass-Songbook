@@ -1,6 +1,9 @@
 {meta: title Future Ex-Mrs. Jones}
 {meta: artist Norma Jean}
 {meta: composer Dolores Tolbert}
+{meta: x_source classic-country}
+{meta: x_source_file futureex-mrsjoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The next time you come home with lipstick [F]fresh from that blonde
@@ -33,3 +36,7 @@ You'll be [C]looking at the future [G7]ex-Mrs. [C]Jones
 {start_of_verse: Verse 4}
 You'll be looking at the future [G7]ex-Mrs. [C]Jones
 {end_of_verse}
+
+
+
+

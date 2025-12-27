@@ -1,6 +1,9 @@
 {meta: title Inside of my Guitar}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy and Jim Stafford}
+{meta: x_source classic-country}
+{meta: x_source_file insideofmyguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Inside of my Guitar
@@ -41,3 +44,8 @@ And we'll make [Em]love and [Am]dance beneath the [C]strings
 [C]And there's a [Em]place I want to [Am]know you
 [G7]Inside of my [C]guitar
 {end_of_verse}
+
+
+
+
+

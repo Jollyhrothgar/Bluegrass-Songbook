@@ -1,5 +1,8 @@
 {meta: title Little Man}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file littlemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember walking round the [G7]court square sidewalks
@@ -72,3 +75,11 @@ He [C]broke the ground where we [G7]grew our garden
 Bout the [C]little man [F]  the [C]little man
 [F]Long live the [C]little man [F]  God bless the [C]little man
 {end_of_verse}
+
+
+
+
+
+
+
+

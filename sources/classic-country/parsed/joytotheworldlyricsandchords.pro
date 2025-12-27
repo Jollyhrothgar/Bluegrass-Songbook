@@ -1,6 +1,9 @@
 {meta: title Joy To The World}
 {meta: artist Stonewall Jackson}
 {meta: composer Hoyt Axton}
+{meta: x_source classic-country}
+{meta: x_source_file joytotheworldlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jeremiah was a bullfrog he was a good friend of mine
@@ -46,3 +49,9 @@ Singin' joy [D7]to the [G]world [D7]all the boys and [G]girls
 Joy to the fishes in the [C]big blue sea
 [G]Joy to [D7]you and [G]me
 {end_of_verse}
+
+
+
+
+
+

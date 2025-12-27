@@ -1,6 +1,9 @@
 {meta: title Someone Who Remembers}
 {meta: artist Lee Greenwood}
 {meta: composer Rory Bourke, Kerry Chater, Glen Ballard}
+{meta: x_source classic-country}
+{meta: x_source_file someonewhorememberslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're the last one I [C]thought I'd see
@@ -52,3 +55,9 @@ Even though so [G]much has [D7]changed
 The [Em]feeling stays the [Am]same
 [D7]For someone who [G]remembers
 {end_of_verse}
+
+
+
+
+
+

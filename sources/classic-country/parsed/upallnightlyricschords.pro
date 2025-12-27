@@ -1,6 +1,9 @@
 {meta: title Up All Night}
 {meta: artist Tracy Lawrence}
 {meta: composer Mark Nesler and Tony Martin}
+{meta: x_source classic-country}
+{meta: x_source_file upallnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yeah I'm a little tired I'm a little wired[F]   [C]
@@ -56,3 +59,10 @@ But I've been up all [G]night
 {start_of_verse: Verse 6}
 [G]I've been up all night[F]  [C]  [G]
 {end_of_verse}
+
+
+
+
+
+
+

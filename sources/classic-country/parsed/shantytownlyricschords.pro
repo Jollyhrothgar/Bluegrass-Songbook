@@ -1,5 +1,8 @@
 {meta: title Shantytown}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file shantytownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](I live down in [D7]Shantytown
@@ -41,3 +44,7 @@ And if you live on such [D7]solid ground
 Whatcha doin' down in Shanty[G]town 
 [D7]Whatcha doin' down in Shanty[G]town
 {end_of_verse}
+
+
+
+

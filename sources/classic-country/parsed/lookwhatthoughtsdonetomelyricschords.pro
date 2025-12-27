@@ -1,6 +1,9 @@
 {meta: title Look What Thoughts Done To Me}
 {meta: artist Carl Smith}
 {meta: composer Buddy Bain}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhatthoughtsdonetomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought I knew [C]every[G]thing I [D7]thought you'd wear my weddin' [G]ring
@@ -20,3 +23,5 @@ But [D7]now I [G]see our [C]love can't [G]be [C]look what [G]thoughts [D7]done t
 [G]I learned too late what [C]thoughts can [G]do I [D7]thought I'd won but I lost [G]you
 And [D7]now I [G]live in [C]mise[G]ry [C]look what [G]thoughts [D7]done to [G]me
 {end_of_verse}
+
+

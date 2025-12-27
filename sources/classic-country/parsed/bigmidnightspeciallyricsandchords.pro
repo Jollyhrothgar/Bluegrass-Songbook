@@ -1,6 +1,9 @@
 {meta: title Big Midnight Special}
 {meta: artist Carl Smith}
 {meta: composer Wilma Lee Cooper}
+{meta: x_source classic-country}
+{meta: x_source_file bigmidnightspeciallyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Big midnight [C]special shine your light on [G]me
@@ -42,3 +45,9 @@
 [G]Big midnight [C]special shine your light on [G]me
 [D7]Big midnight special shine your ever lovin' light on [G]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm The Wreck Of Number Two}
 {meta: artist Kitty Wells}
 {meta: composer Wayne Manning}
+{meta: x_source classic-country}
+{meta: x_source_file imthewreckofnumbertwolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]As you leave to meet the girl who's [C]now your number [F]one
@@ -38,3 +41,8 @@ Look at [C]me [F]I'm the [C]wreck of [G7]number [C]two
 {start_of_verse: Verse 6}
 Here I am [F]I'm the [C]wreck of [G7]number [C]two
 {end_of_verse}
+
+
+
+
+

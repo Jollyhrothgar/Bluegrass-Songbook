@@ -1,6 +1,9 @@
 {meta: title Jesus Knows}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusknowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus [D7]knows (yes He knows) [G7]everybody’s lonely (He [C]knows)
@@ -42,3 +45,8 @@
 [G7]All about sorrow [C](He knows) all about [G7]heartaches (He [C]knows)
 [G7]All about suffering (He [C]knows)
 {end_of_verse}
+
+
+
+
+

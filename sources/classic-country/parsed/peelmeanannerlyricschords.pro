@@ -1,6 +1,9 @@
 {meta: title Peel Me A Nanner}
 {meta: artist Roy Drusky}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file peelmeanannerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There I was in all [F]of my [C]innocence
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]You sure made a monkey out of [C]me
 {end_of_verse}
+
+
+
+
+

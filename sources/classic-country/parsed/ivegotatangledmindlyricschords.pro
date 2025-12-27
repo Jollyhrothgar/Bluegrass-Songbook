@@ -1,6 +1,9 @@
 {meta: title I've Got a Tangled Mind}
 {meta: artist Hank Snow}
 {meta: composer Ted Daffan and Herman Shoss}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotatangledmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got a tangled mind I've got a [G7]broken [C]heart
@@ -27,3 +30,6 @@
 [G]I've got a broken heart
 [D7]I've got a tangled [G]mind
 {end_of_verse}
+
+
+

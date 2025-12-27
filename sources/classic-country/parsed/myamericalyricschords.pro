@@ -1,6 +1,9 @@
 {meta: title My America}
 {meta: artist Red Steagall}
 {meta: composer Danny Steagall and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file myamericalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She lies asleep in the snow capped peaks [C7]of the Tetons and Yellow[F]stone
@@ -39,3 +42,7 @@ With a good horse between my [C]knees
 The sweet [F]smell of rain on her [G7]sun baked plains 
 With a good horse between my [C]knees
 {end_of_verse}
+
+
+
+

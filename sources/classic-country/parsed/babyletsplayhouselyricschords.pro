@@ -1,6 +1,9 @@
 {meta: title Baby Let's Play House (I Wanna Play House With You)}
 {meta: artist Buddy Holly}
 {meta: composer Arthur Neal Gunter}
+{meta: x_source classic-country}
+{meta: x_source_file babyletsplayhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby baby baby baby baby baby baby babe
@@ -41,3 +44,8 @@ Baby baby baby baby baby baby baby babe
 [F]Baby baby baby baby baby baby baby babe
 [G7]Come back baby I wanna play house with [C]you
 {end_of_verse}
+
+
+
+
+

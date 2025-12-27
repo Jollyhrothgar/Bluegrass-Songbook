@@ -1,6 +1,9 @@
 {meta: title We Sure Can Love Each Other}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file wesurecanloveeachotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We sure can love each other when we try 
@@ -23,3 +26,5 @@ And I know [B7]we'll [A]need each [A7]other till we [D7]die
 [F]Cause we [C]sure can love each [G7]other when we [C]try
 [F]Yes we [C]sure can love each [G7]other when we [F]try [C]
 {end_of_verse}
+
+

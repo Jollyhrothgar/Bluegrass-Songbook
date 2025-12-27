@@ -1,6 +1,9 @@
 {meta: title Why}
 {meta: artist Norma Jean}
 {meta: composer Dave Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file whylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Why why why can't you u[C]nderstand
@@ -45,3 +48,7 @@ Means that you're [G]mine [D7]
 Though you still [G]think you're free
 Your heart [D7]belongs to me till the end of [G]time
 {end_of_verse}
+
+
+
+

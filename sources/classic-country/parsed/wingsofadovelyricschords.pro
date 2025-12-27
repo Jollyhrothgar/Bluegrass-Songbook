@@ -1,6 +1,9 @@
 {meta: title Wings of a Dove}
 {meta: artist Charlie Pride}
 {meta: composer Bob Ferguson}
+{meta: x_source classic-country}
+{meta: x_source_file wingsofadovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On the wings of a snow white dove 
@@ -36,3 +39,7 @@ He sent His pure sweet [C]love
 A sign from [G]above 
 On the [D7]wings of a [G]dove 
 {end_of_verse}
+
+
+
+

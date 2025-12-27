@@ -1,6 +1,9 @@
 {meta: title I Can't Get Over You To Save My Life}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file icantgetoveryoutosavemylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night my best friend drove me home
@@ -36,3 +39,9 @@ I can't get over you to save my [C]life
 He knows I'll mmmm and die
 I can't get over you to save my [C]life
 {end_of_verse}
+
+
+
+
+
+

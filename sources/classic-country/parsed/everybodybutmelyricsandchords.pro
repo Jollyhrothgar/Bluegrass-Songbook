@@ -1,6 +1,9 @@
 {meta: title Everybody But Me}
 {meta: artist Ricky Nelson}
 {meta: composer Dave Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file everybodybutmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7](Everybody [G]everybody [D7]everybody)
@@ -34,3 +37,8 @@ Everybody is [C]goin' [G]steady
 {start_of_verse: Verse 6}
 [C]Everybody [D7]everybody but [G]me ([C]everybody but [G]me)
 {end_of_verse}
+
+
+
+
+

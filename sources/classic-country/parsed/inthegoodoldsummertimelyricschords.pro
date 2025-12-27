@@ -1,6 +1,9 @@
 {meta: title In The Good Old Summertime}
 {meta: artist Connie Francis}
 {meta: composer Harry Shields}
+{meta: x_source classic-country}
+{meta: x_source_file inthegoodoldsummertimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the good old summertime  
@@ -41,3 +44,10 @@ And [F]that's a very good [C]sign
 That she's your tootsey wootsey
 In the [D7]good old [C][G7]summertime
 {end_of_verse}
+
+
+
+
+
+
+

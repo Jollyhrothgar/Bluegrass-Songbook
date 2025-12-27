@@ -1,6 +1,9 @@
 {meta: title Your Time Hasn't Come Yet Baby}
 {meta: artist Elvis Presley}
 {meta: composer Jeol Hirschhorn and Al Kasha}
+{meta: x_source classic-country}
+{meta: x_source_file yourtimehasntcomeyetbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your time hasn't [Dm]come yet [F]baby 
@@ -55,3 +58,10 @@ When it [C]does your [G7]heart will [C]know
 [F]But when it [C]does your [G7]heart will [C]know
 [F]But when it [C]does your [G7]heart will [C]know
 {end_of_verse}
+
+
+
+
+
+
+

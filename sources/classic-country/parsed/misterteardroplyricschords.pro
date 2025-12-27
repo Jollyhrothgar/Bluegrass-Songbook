@@ -1,5 +1,8 @@
 {meta: title Mister Teardrop}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file misterteardroplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey there mister [Am]teardrop
@@ -29,3 +32,5 @@ And they [A7]see through my [D7]disguise
 [D7]Why do you keep [G]falling
 [Am]Go away so [D7]I can smile [G]again
 {end_of_verse}
+
+

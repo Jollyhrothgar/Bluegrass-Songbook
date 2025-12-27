@@ -1,5 +1,8 @@
 {meta: title Who's Gonna Shoe Your Pretty Little Feet}
 {meta: artist Everly Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file whosgonnashoeyourprettylittlefeetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mmmm mmmm mmmm mmmm mmmm mmmm mmmm [G7]mmmm mmmm [C]mmmm 
@@ -36,3 +39,8 @@ Mama's gonna glove your little [G7]hand
 And [C]I'm gonna kiss your ruby red lips
 Mmmm [G7]mmmm mmmm [C]mmmm
 {end_of_verse}
+
+
+
+
+

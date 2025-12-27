@@ -1,6 +1,9 @@
 {meta: title The Life Story Of Hank Williams}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Louis Innis and Hawkshaw Hawkins}
+{meta: x_source classic-country}
+{meta: x_source_file thelifestoryofhankwilliamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The life of Hank Williams on [F]earth it was [C]brief
@@ -67,3 +70,8 @@ Was loaded with laughter sorry and [G7]grief
 De[C]voted his life to [F]bring people [C]joy
 Only a few knew Hank [G7]was a sick [C]boy
 {end_of_verse}
+
+
+
+
+

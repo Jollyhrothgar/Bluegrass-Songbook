@@ -1,6 +1,9 @@
 {meta: title Battle Of Bull Run}
 {meta: artist Johnny Horton}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file battleofbullrunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun shown bright and clear that day [F]we all left Washing[C]ton
@@ -49,3 +52,10 @@ Remember yes remember long the [F]Battle of Bull [C]Run
 We said we'll run 'em to Atlanta and to [F]Galveston [C]Bay
 But they ran us back to Washington and [F]Philadelphi[C]a and [F]Philadelphi[C]a
 {end_of_verse}
+
+
+
+
+
+
+

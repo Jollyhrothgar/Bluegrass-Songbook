@@ -1,6 +1,9 @@
 {meta: title Hillbilly Music}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Vaughn Horton}
+{meta: x_source classic-country}
+{meta: x_source_file hillbillymusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hillbilly [F]fever goin' [C]round
@@ -31,3 +34,6 @@ Mmm this country [G7]music's goin' [C]round
 Yeah this country [G7]music's goin' [C]round
 Yeah rock 'n' roll [G7]music's goin' [C]round
 {end_of_verse}
+
+
+

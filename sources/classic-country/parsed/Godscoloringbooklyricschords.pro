@@ -1,6 +1,9 @@
 {meta: title God's Coloring Book}
 {meta: artist Charley Pride}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file Godscoloringbooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]To[D7]day as I was walking in the [C]fields just down the [G]way
@@ -43,3 +46,9 @@ And each new [G]day is but a new page in [D7]God's coloring [G]book
 {start_of_verse: Verse 7}
 Yes each new day is but a new page in [D7]God's coloring [C]boo[G]k
 {end_of_verse}
+
+
+
+
+
+

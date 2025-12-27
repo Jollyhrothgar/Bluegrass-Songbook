@@ -1,6 +1,9 @@
 {meta: title If I Lose}
 {meta: artist Ricky Skaggs}
 {meta: composer Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file ifiloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never thought I'd need you but now I find I'm [F]wrong
@@ -36,3 +39,7 @@
 [F]If I lose a hundred dollars while I'm tryin' to win a dime
 [G7]My baby she's got money all the [C]time
 {end_of_verse}
+
+
+
+

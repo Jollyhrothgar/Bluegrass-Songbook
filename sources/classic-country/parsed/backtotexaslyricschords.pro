@@ -1,6 +1,9 @@
 {meta: title Back To Texas}
 {meta: artist Tracy Byrd}
 {meta: composer Thomas Damphier and Stacy Beyer}
+{meta: x_source classic-country}
+{meta: x_source_file backtotexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I left Houston round [D7]two a.m. 
@@ -49,3 +52,8 @@ I [Am]can't go back to [C]Texas without [G]you
 [Am]I can't go back t[C]o Texas 
 I [Am]can't go back to [C]Texas without [G]you
 {end_of_verse}
+
+
+
+
+

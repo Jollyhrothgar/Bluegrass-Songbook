@@ -1,6 +1,9 @@
 {meta: title Coast Of Colorado}
 {meta: artist Skip Ewing}
 {meta: composer Max D. Barnes and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file coastofcoloradolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know leavin' me is killin' [F]you     
@@ -33,3 +36,7 @@ And even when that [F]happens  [G7]if you're not back I [Am]know
 {start_of_verse: Verse 4}
 Still be waiting [Dm]for you  [G7]on the coast of [C]Colorado 
 {end_of_verse}
+
+
+
+

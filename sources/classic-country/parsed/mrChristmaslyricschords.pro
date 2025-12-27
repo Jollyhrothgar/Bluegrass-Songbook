@@ -1,6 +1,9 @@
 {meta: title Mr. Christmas}
 {meta: artist Joe Diffie}
 {meta: composer Lee Bogan and Joe Diffie}
+{meta: x_source classic-country}
+{meta: x_source_file mrChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey look comin' [Am]down the [D7]way
@@ -41,3 +44,8 @@ Mr. [G]Christmas (glad you’re back in [C]town)
 I said [D7]Mr. [G]Christmas (got some [E7]goodies [Am]on his [D7]sleigh)
 Mr. [G]Christmas
 {end_of_verse}
+
+
+
+
+

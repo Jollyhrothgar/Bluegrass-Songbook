@@ -1,5 +1,8 @@
 {meta: title I Do Believe}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file idobelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In my own way I'm a believer
@@ -47,3 +50,9 @@ But not in voices I can't hear
 [G7]That I should live life at its fullest
 [C]Just as long as I am here
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Believe In You}
 {meta: artist Don Williams}
 {meta: composer Roger Cook and Sam Hogin}
+{meta: x_source classic-country}
+{meta: x_source_file ibelieveinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't believe in superstars  
@@ -112,3 +115,28 @@ The rising cost of getting by
 But I believe [C]in love  I believe in old [G]folks
 I believe [D7]in children  and I believe in [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

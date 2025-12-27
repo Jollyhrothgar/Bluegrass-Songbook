@@ -1,6 +1,9 @@
 {meta: title Oh Carolina}
 {meta: artist Vince Gill}
 {meta: composer Mark D. Sanders, Jim Elliott, Randy Albright}
+{meta: x_source classic-country}
+{meta: x_source_file ohcarolinalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The sunrise through the evergreens [Em]another [G]day is [C]born
@@ -28,3 +31,5 @@ Oh [D7]oh Caro[Em]lina [D7]how [C]could you [D7]let her [G]go
 [C]Oh Caro[G]li[Em]na [C]I would have [D7]never [Em]gone
 [C]I would have [D7]never [G]gone
 {end_of_verse}
+
+

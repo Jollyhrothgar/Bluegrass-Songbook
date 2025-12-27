@@ -1,6 +1,9 @@
 {meta: title A Shoulder To Cry On}
 {meta: artist Charlie Pride}
 {meta: composer Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ashouldertocryonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came here because I [G7]knew I’d be [C]welcomed 
@@ -34,3 +37,7 @@ And I need a [G7]sho-ul-[F]der to cry [C]on
 [F]I need to know there’s someone who still l[C]oves me 
 And I need a [G7]sho-ul-[F]der to cry [C]on   
 {end_of_verse}
+
+
+
+

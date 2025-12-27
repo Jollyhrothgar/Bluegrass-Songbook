@@ -1,6 +1,9 @@
 {meta: title Gonna Wrap My Heart In Ribbons}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson, Johnny Hatchcock, Weldon Allard}
+{meta: x_source classic-country}
+{meta: x_source_file gonnawrapmyheartinribbonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m gonna wrap my heart in ribbons and [G7]hang it on your Christmas [C]tree
@@ -33,3 +36,7 @@ Gonna wrap my heart in [G]ribbons and [D7]hang it on your Christmas [G]tree
 {start_of_verse: Verse 4}
 [C]Gonna wrap my heart in [G]ribbons and [D7]hang it on your Christmas [G]tree
 {end_of_verse}
+
+
+
+

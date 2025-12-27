@@ -1,6 +1,9 @@
 {meta: title On My Father's Side}
 {meta: artist The Village Singers}
 {meta: composer Felecia Shiflett}
+{meta: x_source classic-country}
+{meta: x_source_file onmyfatherssidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just a young boy in the temple one [C]day
@@ -65,3 +68,12 @@ On my [C]mother’s side I’ll be [G]crucified
 But on my Father’s side in three days I’ll [D7]arise 
 And I’ll sit by my Father’s [G]side
 {end_of_verse}
+
+
+
+
+
+
+
+
+

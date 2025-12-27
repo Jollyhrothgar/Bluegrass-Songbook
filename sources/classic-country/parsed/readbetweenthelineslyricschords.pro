@@ -1,6 +1,9 @@
 {meta: title Read Between The Lines}
 {meta: artist Stonewall Jackson}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file readbetweenthelineslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can never seem to [F]tell you how much I [C]love you
@@ -26,3 +29,6 @@ Yes I need [G7]you to always read between the [C]lines
 {start_of_verse: Verse 4}
 Yes I need [G7]you to always read between the [C]lines
 {end_of_verse}
+
+
+

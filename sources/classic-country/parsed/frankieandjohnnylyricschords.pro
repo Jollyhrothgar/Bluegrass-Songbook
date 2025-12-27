@@ -1,6 +1,9 @@
 {meta: title Frankie And Johnny}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file frankieandjohnnylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now Frankie and Johnny were sweethearts
@@ -64,3 +67,11 @@ This story has no end
 This [C]story just goes to show that there ain't no good in [G]man
 He was her [D7]man but he done her [G]wrong
 {end_of_verse}
+
+
+
+
+
+
+
+

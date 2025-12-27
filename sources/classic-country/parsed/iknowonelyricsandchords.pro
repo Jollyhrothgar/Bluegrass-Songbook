@@ -1,6 +1,9 @@
 {meta: title I Know One}
 {meta: artist Charlie Pride}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file iknowonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When All Your Loves Have Ended
@@ -28,3 +31,6 @@ You Never Know You Might Be [F]Lonely
 [C]After Your Heart's Been Broken And It Needs A [C7]Place To [F]Run
 If You'll Take A Fool Who [C]Loves You - ou [G7]I Know [C]One
 {end_of_verse}
+
+
+

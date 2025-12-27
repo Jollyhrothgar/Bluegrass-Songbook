@@ -1,5 +1,8 @@
 {meta: title Times Were Good}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file timesweregoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Times [F]were good [C]while they lasted
@@ -32,3 +35,7 @@ But the [F]good times didn't [G7]last long [C]enough
 {start_of_verse: Verse 5}
 No the [F]good times didn't [G7]last long [C]enough
 {end_of_verse}
+
+
+
+

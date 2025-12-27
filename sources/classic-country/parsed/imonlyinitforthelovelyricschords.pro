@@ -1,6 +1,9 @@
 {meta: title I'm Only In It For The Love}
 {meta: artist John Conlee}
 {meta: composer Deborah Allen, Leon Brooks, Rafe G. Van Hoy}
+{meta: x_source classic-country}
+{meta: x_source_file imonlyinitforthelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's something you got that really gets me going
@@ -46,3 +49,11 @@ I want you to know you got my full attention
 {start_of_verse: Verse 8}
 [C]I'm only in it for the [G]love
 {end_of_verse}
+
+
+
+
+
+
+
+

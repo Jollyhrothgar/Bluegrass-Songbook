@@ -1,6 +1,9 @@
 {meta: title The Eastern Gate}
 {meta: artist Jimmie Davis}
 {meta: composer Isaiah G. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file theeasterngatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I will meet you in the morning 
@@ -29,3 +32,6 @@ Just inside the Eastern Gate over [G7]there
 I will meet you I will [C]meet you
 I will meet you in the [G7]morning over [C]there
 {end_of_verse}
+
+
+

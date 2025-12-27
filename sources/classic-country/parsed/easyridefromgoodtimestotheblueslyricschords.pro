@@ -1,6 +1,9 @@
 {meta: title Easy Ride From Good Times To The Blues}
 {meta: artist Seldom Scene}
 {meta: composer Herb Pederson}
+{meta: x_source classic-country}
+{meta: x_source_file easyridefromgoodtimestotheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's an [C]easy ride from [G7]good times to the [C]blues
@@ -58,3 +61,9 @@ It's an [C]easy ride from [G7]good times to the [F]blues[G7]
 {start_of_verse: Verse 6}
 It's an [C]easy ride from [G7]good times to the [C]blues
 {end_of_verse}
+
+
+
+
+
+

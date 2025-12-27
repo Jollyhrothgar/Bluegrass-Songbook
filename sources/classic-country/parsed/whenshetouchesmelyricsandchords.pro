@@ -1,6 +1,9 @@
 {meta: title When She Touches Me}
 {meta: artist Johnny Duncan}
 {meta: composer Carolyn Varga}
+{meta: x_source classic-country}
+{meta: x_source_file whenshetouchesmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's mean to me [E7]she's so bad to [F]me
@@ -35,3 +38,7 @@ But then she [Am]touches me the [Dm]way she touches [G7]me
 [C]Nothing else [F]matter[C]s
 Nothing else [F]matter[C]s
 {end_of_verse}
+
+
+
+

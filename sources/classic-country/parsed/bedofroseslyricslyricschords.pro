@@ -1,6 +1,9 @@
 {meta: title Bed Of Roses}
 {meta: artist Kenny Rogers}
 {meta: composer Rex Benson and Steve Gillette}
+{meta: x_source classic-country}
+{meta: x_source_file bedofroseslyricslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're that one special [C]woman
@@ -48,3 +51,9 @@ And [C]then I'll [G]lay me down [D7]right by your [G]side
 {start_of_verse: Verse 6}
 And [C]then I'll [G]lay me down [D7]right by your [G]side
 {end_of_verse}
+
+
+
+
+
+

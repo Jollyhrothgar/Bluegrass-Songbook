@@ -1,6 +1,9 @@
 {meta: title Blue Railroad Train}
 {meta: artist Delmore Brothers}
 {meta: composer Lionel Alton Delmore and Rabon Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file bluerailroadtrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blue railroad train going down the railroad tracks
@@ -31,3 +34,6 @@ I [F]hobo here I hobo there I've traveled these states [C]around
 Blue railroad train a good old pal to me
 You [F]take me where I want to go and my transportation's [C]free
 {end_of_verse}
+
+
+

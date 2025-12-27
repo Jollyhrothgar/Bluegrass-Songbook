@@ -1,5 +1,8 @@
 {meta: title So You Think You've Got Troubles}
 {meta: artist Marvin Rainwater}
+{meta: x_source classic-country}
+{meta: x_source_file soyouthinkyouvegottroubleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So you think you've got troubles
@@ -68,3 +71,12 @@ Well [C]brother you [G7]ain't heard nothing [C]yet
 So I put me a bar in the back of my car
 And [G7]drive myself to [C]drink
 {end_of_verse}
+
+
+
+
+
+
+
+
+

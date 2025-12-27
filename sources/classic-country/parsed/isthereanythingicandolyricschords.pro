@@ -1,6 +1,9 @@
 {meta: title Is There Anything I Can Do}
 {meta: artist Lefty Frizzell}
 {meta: composer Bruce Delaney and Abe Mulkey}
+{meta: x_source classic-country}
+{meta: x_source_file isthereanythingicandolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tears in your [G7]eyes  [F]tug at my [G7]heart
@@ -26,3 +29,6 @@ Is there [F]any-[G7]thing I can [C]do
 {start_of_verse: Verse 4}
 Is there [F]any-[G7]thing I can [C]do
 {end_of_verse}
+
+
+

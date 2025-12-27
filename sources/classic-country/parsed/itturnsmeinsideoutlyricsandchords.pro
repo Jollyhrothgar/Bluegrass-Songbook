@@ -1,6 +1,9 @@
 {meta: title It Turns Me Inside Out}
 {meta: artist Conway Twitty}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file itturnsmeinsideoutlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a way I'm glad it's over
@@ -52,3 +55,11 @@ Give me [F]time and I can make it on my [C]own
 Yes in a way I'm glad it's [Em]over
 In [Dm]another way it [G7]turns me inside [C]out
 {end_of_verse}
+
+
+
+
+
+
+
+

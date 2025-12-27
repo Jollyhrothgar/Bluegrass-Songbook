@@ -1,5 +1,8 @@
 {meta: title I'll Be With You}
 {meta: artist Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file illbewithyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the morning [F]I'll be [C]with you
@@ -39,3 +42,8 @@ I'll be with you [G7]till the [C]end
 {start_of_verse: Verse 4}
 I'll be with you [G7]till the [C]end
 {end_of_verse}
+
+
+
+
+

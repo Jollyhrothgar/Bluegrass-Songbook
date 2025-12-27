@@ -1,6 +1,9 @@
 {meta: title Wife's Little Pleasures}
 {meta: artist John Anderson}
 {meta: composer Buck Moore, Tony Stampley, Mentor Williams}
+{meta: x_source classic-country}
+{meta: x_source_file wifeslittlepleasureslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've always been a two fisted [F]drinker
@@ -41,3 +44,8 @@ And her [C]new life [G7]with some other [C]guy[G7]
 I'm [C]workin' for her life of [F]leisure
 And her [C]new life [G7]with some other [F]gu[C]y
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Almost All The Time}
 {meta: artist George Morgan}
 {meta: composer Eddie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file almostallthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ever since the day he took [G7]your love from me
@@ -29,3 +32,6 @@ I [F]tell my[G7]self I must for[C]get
 Almost [G7]all the time
 And [F]oh how I've [G7]tried but [C]haven't yet
 {end_of_verse}
+
+
+

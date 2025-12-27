@@ -1,6 +1,9 @@
 {meta: title I'll Never Leave My God Alone}
 {meta: artist Wilburn Brothers}
 {meta: composer Lorene Mann}
+{meta: x_source classic-country}
+{meta: x_source_file illneverleavemyGodalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not for love and [Em]not for [C]money
@@ -29,3 +32,6 @@ I want something [Em]more en[C]during
 [C]I will give my [Em]life to [C]Him
 [F]I'll never leave my [G7]God a[C]lone
 {end_of_verse}
+
+
+

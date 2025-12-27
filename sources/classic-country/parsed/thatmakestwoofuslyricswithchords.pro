@@ -1,6 +1,9 @@
 {meta: title That Makes Two Of Us}
 {meta: artist Reba McEntire}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file thatmakestwoofuslyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]So you [C]like Sunday picnics 
@@ -41,3 +44,8 @@ We're like birds of a [Em]feather
 True love brings to[Dm]gether [A#7]a precious [G7]few of us
 That makes [C]two of us [G7]
 {end_of_verse}
+
+
+
+
+

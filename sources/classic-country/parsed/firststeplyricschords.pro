@@ -1,6 +1,9 @@
 {meta: title First Step}
 {meta: artist Tracy Byrd}
 {meta: composer Doug Crider and Verlon Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file firststeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The [G7]lights were hot and the beer was not 
@@ -39,3 +42,7 @@ The first [C]step is the [G7]two-step then we'll [C]talk
 {start_of_verse: Verse 4}
 The [G7]first step is the two-step then we'll [C]talk
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Only Make You Happy When I Cry}
 {meta: artist Justin Trevino}
+{meta: x_source classic-country}
+{meta: x_source_file ionlymakeyouhappywhenicrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You must really love to tear me [F]down
@@ -32,3 +35,7 @@ Seems [Dm]I only make you [G7]happy when I [C]cry
 {start_of_verse: Verse 5}
 Seems I [G7]only make you happy when I [C]cry 
 {end_of_verse}
+
+
+
+

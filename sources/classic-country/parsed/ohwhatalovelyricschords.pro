@@ -1,6 +1,9 @@
 {meta: title Oh What A Love}
 {meta: artist Tanya Tucker}
 {meta: composer Hank Cochran and Jerry Laseter}
+{meta: x_source classic-country}
+{meta: x_source_file ohwhatalovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What a love we could [G7]have
@@ -41,3 +44,7 @@ If we could [F]learn [G7]to live like [C]that
 [G7]Oh what a [C]love we could [G7]have
 If we could [F]learn [G7]to live like [C]that
 {end_of_verse}
+
+
+
+

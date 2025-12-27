@@ -1,6 +1,9 @@
 {meta: title Baby Face}
 {meta: artist Brenda Lee}
 {meta: composer Harry Akst and Benny Davis}
+{meta: x_source classic-country}
+{meta: x_source_file babyfacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby face you've got the cutest little baby [D7]face
@@ -33,3 +36,8 @@ Baby face I'm up in heaven
 {start_of_verse: Verse 5}
 Repeat last verse
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Listen To My Heart}
 {meta: artist David Ball}
 {meta: composer Allen Shamblin and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file listentomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If only words could make you mine
@@ -33,3 +36,7 @@ I've got so much to [Dm]tell [G7]you just listen to my [C]heart
 {start_of_verse: Verse 5}
 [Am]Alone together [D7]in the [G7]dark just listen to my [F]heart[G7]   [C]
 {end_of_verse}
+
+
+
+

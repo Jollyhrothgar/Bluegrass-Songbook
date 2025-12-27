@@ -1,6 +1,9 @@
 {meta: title Thoughts Of A Fool}
 {meta: artist Carl Smith}
 {meta: composer Mel Tillis and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file thoughtsofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had a love  [F]and it was all [C]mine
@@ -31,3 +34,7 @@ That's the thoughts of a [F]f--ool  [G7]thinking out [C]loud
 Except I [D7]don't know how I'm gonna live without [G7]her
 I had a [C]love  [F]and it was all [C]mine
 {end_of_verse}
+
+
+
+

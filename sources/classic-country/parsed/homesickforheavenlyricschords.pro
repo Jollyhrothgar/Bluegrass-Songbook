@@ -1,6 +1,9 @@
 {meta: title Homesick For Heaven}
 {meta: artist Ricky Skaggs}
 {meta: composer Kelly Willard}
+{meta: x_source classic-country}
+{meta: x_source_file homesickforheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately I've been [D7]longing for [G]heaven
@@ -47,3 +50,9 @@ Cause I'm homesick [D7]where ever I [G]roam
 {start_of_verse: Verse 6}
 Oh [C]yes I'm [G]homesick [D7]where ever I [C]ro-[G]am
 {end_of_verse}
+
+
+
+
+
+

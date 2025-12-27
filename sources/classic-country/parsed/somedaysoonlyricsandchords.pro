@@ -1,6 +1,9 @@
 {meta: title Someday Soon}
 {meta: artist Moe Bandy}
 {meta: composer Ian Tyson}
+{meta: x_source classic-country}
+{meta: x_source_file somedaysoonlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a young girl [Em]that I know she [C]just turned twenty-[G]one
@@ -43,3 +46,9 @@ Someday [Am]soon she’ll go [D7]with me someday [G]soon
 {start_of_verse: Verse 5}
 Someday [Am]soon she’ll go [D7]with me someday [G]soon
 {end_of_verse}
+
+
+
+
+
+

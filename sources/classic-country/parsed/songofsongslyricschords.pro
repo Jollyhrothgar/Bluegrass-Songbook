@@ -1,6 +1,9 @@
 {meta: title Song Of Songs}
 {meta: artist Boxcar Willie}
 {meta: composer Vern Stovall, Bill Palmer & Lloene Martin}
+{meta: x_source classic-country}
+{meta: x_source_file songofsongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How I love that old melody they're [C]playing
@@ -48,3 +51,9 @@ And [D7]placed in the Country Music Hall Of [G]Fame
 Tag:
 And [D7]placed in the Country Music Hall Of [G]Fame 
 {end_of_verse}
+
+
+
+
+
+

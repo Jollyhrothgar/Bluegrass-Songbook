@@ -1,6 +1,9 @@
 {meta: title Believe}
 {meta: artist Brooks And Dunn}
 {meta: composer Craig Wiseman and Ronnie Dunn}
+{meta: x_source classic-country}
+{meta: x_source_file believe1lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Old man Wrigley lived in that white house, 
@@ -17,7 +20,7 @@ I[G] asked him what he meant
 H[D]e looked at me and smiled
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 s[G]aid I raise my hands. 
 B[D/F]ow my head 
 I[C]'m finding more and more truth 
@@ -44,7 +47,7 @@ I[G]'d be that sweet old man
 W[D]ho looked me in the eye 
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 s[G]aid I raise my hands. 
 B[D/F]ow my head 
 I[C]'m finding more and more truth 
@@ -53,7 +56,7 @@ T[Am]hey[Em7] tell me that there's more to life
 T[C]ha[D]n just what I can see 
 {end_of_chorus}
 
-{start_of_bridge}
+{start_of_bridge: Bridge}
 I[Em] can't quote the book 
 T[B7]he chapter or the verse 
 Y[D6]ou can't tell me it all ends 
@@ -65,7 +68,7 @@ N[Em7]o this can't be
 N[C]o [D]this can't be all there is.
 {end_of_bridge}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 L[G]ord I raise my hands. 
 B[D/F]ow my head 
 a[C]nd I'm finding more and more truth 
@@ -78,3 +81,9 @@ I[Em] be[A7]lieve - oh I...
 {start_of_verse: Verse 3}
 I[G] b[F]elieve (I be- lieve) 
 {end_of_verse}
+
+
+
+
+
+

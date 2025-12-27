@@ -1,6 +1,9 @@
 {meta: title Always Always}
 {meta: artist Dolly Parton}
 {meta: composer Joyce McCord}
+{meta: x_source classic-country}
+{meta: x_source_file alwaysalwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling will you love [F]me [C]forever
@@ -26,3 +29,5 @@ In [G7]return for your love [F]I’ll be true as stars [C]above
 And the [G7]love that I feel will [F]forever be so [C]real
 [C][F]Always  [C][G7]always
 {end_of_verse}
+
+

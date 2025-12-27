@@ -1,6 +1,9 @@
 {meta: title You've Got The Touch}
 {meta: artist Alabama}
 {meta: composer Lisa Palas, Will Robinson, John Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotthetouchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Lying be[F]side you watching you [C]sleeping
@@ -45,3 +48,9 @@ You've got the [C]moves you move me so [F]much you've got the [C]touch
 {start_of_verse: Verse 5}
 You've got the [C]moves you move me so [F]much you've got the [C]touch 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Wild And Blue}
 {meta: artist John Anderson}
 {meta: composer John Scott Sherrill [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file wildandbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Way across town a phone rings off the wall
@@ -38,3 +41,9 @@ With no [D7]place to go why don't you come [G]home
 I'll be right here baby waiting for you
 I [D7]know you've been wild and [G]blue
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Daddy And Home}
 {meta: artist Tanya Tucker}
 {meta: composer Jimmie Rodgers and Elsie McWilliams}
+{meta: x_source classic-country}
+{meta: x_source_file daddyandhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am dreaming tonight of [D7]an old southern town
@@ -48,3 +51,9 @@ I [A7]long for [D7]you and for [G]home
 [C]I've had my way but [G]now I'll [E7]stay 
 I [A7]long for [D7]you and for [G]home
 {end_of_verse}
+
+
+
+
+
+

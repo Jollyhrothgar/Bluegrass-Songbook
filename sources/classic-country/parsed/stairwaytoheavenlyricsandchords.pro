@@ -1,6 +1,9 @@
 {meta: title Stairway To Heaven}
 {meta: artist Slim Whitman}
 {meta: composer Herman Church}
+{meta: x_source classic-country}
+{meta: x_source_file stairwaytoheavenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God built a stairway [C7]to [F]heaven
@@ -33,3 +36,7 @@ The [C]steps we must [G7]mold with our [C]love
 {start_of_verse: Verse 5}
 The steps we must [G7]mold with our [C]love
 {end_of_verse}
+
+
+
+

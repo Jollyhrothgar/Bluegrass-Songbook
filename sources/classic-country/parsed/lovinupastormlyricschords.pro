@@ -1,6 +1,9 @@
 {meta: title Lovin' Up A Storm}
 {meta: artist Eddy Arnold}
 {meta: composer Eddy Arnold and Thelma Blackmon}
+{meta: x_source classic-country}
+{meta: x_source_file lovinupastormlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Lovin' Up A Storm
@@ -38,3 +41,8 @@ No one [C]else could stand the [A7]weather but we're [D7]lovin' [G7]up a [C]stor
 {start_of_verse: Verse 6}
 No one else could stand the [A7]weather but we're [D7]lovin' [G7]up a [C]storm
 {end_of_verse}
+
+
+
+
+

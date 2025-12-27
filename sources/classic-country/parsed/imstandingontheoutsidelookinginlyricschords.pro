@@ -1,5 +1,8 @@
 {meta: title I'm Standing On The Outside Looking In}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file imstandingontheoutsidelookinginlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm standing on the outside looking [D7]in now
@@ -42,3 +45,8 @@ For [C]when a person cheats he cannot [G]win
 All that I can say now is I'm [D7]sorry
 That I'm standing on the outside looking [G]in
 {end_of_verse}
+
+
+
+
+

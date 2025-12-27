@@ -1,6 +1,9 @@
 {meta: title Sunset And Vine}
 {meta: artist Waylon Jennings}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file sunsetandvinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I left the old farm down in [G7]Texas
@@ -40,3 +43,8 @@ And I'd [G7]never seen Sunset and [C]Vine
 {start_of_verse: Verse 6}
 I wish I'd [G7]never seen Sunset and [C]Vine
 {end_of_verse}
+
+
+
+
+

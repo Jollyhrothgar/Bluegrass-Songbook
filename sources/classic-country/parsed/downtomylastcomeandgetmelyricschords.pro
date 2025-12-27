@@ -1,6 +1,9 @@
 {meta: title Down To My Last Come And Get Me}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file downtomylastcomeandgetmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I sit in this ginmill an [G7]empty in my hand
@@ -33,3 +36,7 @@ But I wonder if I'm worth the come and [G7]get me any[C]more
 {start_of_verse: Verse 4}
 Well I wonder if I'm worth the come and [G7]get me any[C]more
 {end_of_verse}
+
+
+
+

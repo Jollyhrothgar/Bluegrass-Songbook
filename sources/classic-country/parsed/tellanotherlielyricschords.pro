@@ -1,5 +1,8 @@
 {meta: title Tell Another Lie}
 {meta: artist Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file tellanotherlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Tell another lie tell another [C]lie 
@@ -35,3 +38,7 @@ You [C]didn't mean [G7]one single [C]word
 But some [G7]day you'll be crying just like [C]me 
 When [G7]someone tells the same lies to [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Home On The Range}
 {meta: artist Gene Autry}
 {meta: composer Gene Autry, Dan Kelley, Brewster Highley}
+{meta: x_source classic-country}
+{meta: x_source_file homeontherangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh give me a home where the [C]buffalo roam
@@ -29,3 +32,6 @@ Where the deer and the [A7]antelope [D7]play
 Where [G]seldom is heard a discouraging [C]word
 And the [G]skies are not [D7]cloudy all [G]day
 {end_of_verse}
+
+
+

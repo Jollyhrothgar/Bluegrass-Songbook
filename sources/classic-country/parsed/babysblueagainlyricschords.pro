@@ -1,6 +1,9 @@
 {meta: title Baby's Blue Again}
 {meta: artist Bill Anderson}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file babysblueagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord you know [F]she's packing up her [C]clothes
@@ -31,3 +34,6 @@
 [C]So Lord we know what [F]baby's going [C]through
 [Am]And it [Em]looks like [Dm]baby's blue [C][G7]again
 {end_of_verse}
+
+
+

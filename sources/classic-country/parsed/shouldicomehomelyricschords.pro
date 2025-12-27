@@ -1,6 +1,9 @@
 {meta: title Should I Come Home (or Should I Go Crazy)}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file shouldicomehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wonder if you've [C]had the time it [D7]takes to think it [G]over
@@ -29,3 +32,6 @@ I'm begging you [Am]please make up your [D7]mind
 If you love me then think it all [G]over 
 So Make up your [Am]mind  or [D7]I'll lose [G]mine
 {end_of_verse}
+
+
+

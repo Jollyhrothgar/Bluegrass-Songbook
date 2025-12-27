@@ -1,6 +1,9 @@
 {meta: title I Did My Part}
 {meta: artist Randy Travis}
 {meta: composer Don Schlitz and Billy Livsey}
+{meta: x_source classic-country}
+{meta: x_source_file ididmypartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I did my [C]part I tried my [F]best
@@ -47,3 +50,9 @@
 [Dm]But I'll know [G7]full well  I did my [F]part
 [Dm]I know full [G7]well I did my [C]part
 {end_of_verse}
+
+
+
+
+
+

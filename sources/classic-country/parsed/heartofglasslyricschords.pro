@@ -1,5 +1,8 @@
 {meta: title Heart Of Glass}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file heartofglasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh heart of glass  I keep on mending [F]you
@@ -22,3 +25,5 @@ Oh heart of glass  I keep on mending [F]you
 How many more heartaches now must she put us [F]through
 Until she [C]stops heart of [G7]glass breaking [C]you
 {end_of_verse}
+
+

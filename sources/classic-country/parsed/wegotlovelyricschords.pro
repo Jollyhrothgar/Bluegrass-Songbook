@@ -1,6 +1,9 @@
 {meta: title We Got Love}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file wegotlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You you got [D7]me we got [C]somethin' [D7]everybody else can [G]see [D7]
@@ -27,3 +30,6 @@ Cause [G]love makes us [D7]strong as [C]long as we've got [D7]love we can't go [
 What we've [G]got there's plenty [D7]of
 I've got [C]you you've got [D7]me we got [G]love
 {end_of_verse}
+
+
+

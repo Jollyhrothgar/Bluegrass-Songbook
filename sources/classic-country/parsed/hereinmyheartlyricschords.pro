@@ -1,6 +1,9 @@
 {meta: title Here In My Heart}
 {meta: artist Randy Travis}
 {meta: composer David Jones}
+{meta: x_source classic-country}
+{meta: x_source_file hereinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If [C]I'd have been all [A7]you ever [D7]wanted
@@ -34,3 +37,7 @@
 [A7]Darling you could be anywhere in the world [D7]tonight
 [G7]But I'd still have you here [F]in [Em]my [C][Dm]heart
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can’t Go On}
 {meta: artist Fats Domino}
 {meta: composer Antoine Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file icantgoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rosalie come back to me
@@ -39,3 +42,8 @@ Rosa[C]lie please come [G]home
 I [D7]might as well confess 
 I'm blue and all [G]alone
 {end_of_verse}
+
+
+
+
+

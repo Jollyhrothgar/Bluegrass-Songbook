@@ -1,6 +1,9 @@
 {meta: title Way Back}
 {meta: artist John Conlee}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file waybacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Way [C]back when we were [F]lovers
@@ -35,3 +38,7 @@ We've got to find a way back [F]  [G7]
 [C]We've got to find a way back [F]  [G7]
 [C]We've got to find a way back [F]  [G7]   [C]
 {end_of_verse}
+
+
+
+

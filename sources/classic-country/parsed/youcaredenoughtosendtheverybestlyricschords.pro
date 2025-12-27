@@ -1,5 +1,8 @@
 {meta: title You Cared Enough To Send The Very Best}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file youcaredenoughtosendtheverybestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Among the cards I opened [G7]today was one from [C]you
@@ -31,3 +34,7 @@ It was signed best wishes I love you
 {start_of_verse: Verse 5}
 [F]I'm glad [C]you cared enough to [F]send the [G7]very [C]best
 {end_of_verse}
+
+
+
+

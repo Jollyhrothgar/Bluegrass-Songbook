@@ -1,6 +1,9 @@
 {meta: title Everloving}
 {meta: artist Ricky Nelson}
 {meta: composer D. Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file everlovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everloving [F]oooh ever[G7]loving
@@ -39,3 +42,9 @@ Cause you’re the only one I ever [G]lo--[G7]ov--[G]ov--[G7]oved
 {start_of_verse: Verse 6}
 [C]Everloving [F]I'll be ever[G7]loving [C]you [F]ooh [C]yea [G7]yeah
 {end_of_verse}
+
+
+
+
+
+

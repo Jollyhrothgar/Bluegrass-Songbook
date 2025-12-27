@@ -1,5 +1,8 @@
 {meta: title Wings In The Morning}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file wingsinthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wings in the morning and [D7]license to fly
@@ -56,3 +59,10 @@ Straight to the portals of [G]nevermore die
 Nevermore pain in them [C]old aching bones
 [D7]Wings in the morning to carry us [G]home
 {end_of_verse}
+
+
+
+
+
+
+

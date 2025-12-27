@@ -1,5 +1,8 @@
 {meta: title Dreary Day}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file drearydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm sittin' at my window I'm feeling kind of low
@@ -40,3 +43,8 @@ Another dreary [F]day another dreary [C]day
 Another dreary [F]day another dreary [C]day
 Another dreary [F]day another dreary [C]day
 {end_of_verse}
+
+
+
+
+

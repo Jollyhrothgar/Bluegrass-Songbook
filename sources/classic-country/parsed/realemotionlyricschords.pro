@@ -1,6 +1,9 @@
 {meta: title Real Emotion}
 {meta: artist Anne Murray}
 {meta: composer Alan O'Day}
+{meta: x_source classic-country}
+{meta: x_source_file realemotionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nothing much happens to me
@@ -57,3 +60,9 @@ You don't have to fake it
 [G7]With real emotion
 There ain't no substitute for your real [C]emotion
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Stand by Your Man}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file standbyyourmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes its hard to be a [G7]woman
@@ -27,3 +30,5 @@ Stand by your [E]man
 [C]Keep giving [G7]all the love [E7]you can
 [F]Stand [G7]by your [C]man
 {end_of_verse}
+
+

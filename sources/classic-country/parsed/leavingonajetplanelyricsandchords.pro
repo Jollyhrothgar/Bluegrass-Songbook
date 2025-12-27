@@ -1,6 +1,9 @@
 {meta: title Leaving On A Jet Plane}
 {meta: artist Jean Shepard}
 {meta: composer John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file leavingonajetplanelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My bags are packed I'm [C]ready to [D7]go
@@ -62,3 +65,10 @@ I'm [G]leaving [C]on a jet plane
 {start_of_verse: Verse 6}
 Hate to [G]go
 {end_of_verse}
+
+
+
+
+
+
+

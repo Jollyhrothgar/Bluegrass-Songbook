@@ -1,6 +1,9 @@
 {meta: title Elvira}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file elviralyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Elvira  Elvira  my heart's on fire [G7]for [C]Elvira
@@ -40,3 +43,9 @@ That girl can sho'nuff make my little light [G7]shine
 [C]I get a funny feeling up [C7]and down my [F]spine
 [C]Cause I know that my [G7]Elvira's [C]mine
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Ichabot Crane}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file ichabotcranelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll tell you a story of a love and his flame
@@ -70,3 +73,16 @@ I'm a heading right home and I'm jumping in bed
 Across Sleepy Hollow your memory will follow
 And [C]follow and follow this [D7]Ichabot [G]Crane
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Are You Teasing Me}
 {meta: artist Carl Smith}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file areyouteasingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we're all alone dear and I'm in your [G7]arms
@@ -29,3 +32,6 @@
 [C]Tell me darling while our love is still [G7]young
 [C]Are you teasing me
 {end_of_verse}
+
+
+

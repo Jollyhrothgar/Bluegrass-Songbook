@@ -1,6 +1,9 @@
 {meta: title What Are Memories Made Of}
 {meta: artist Billy Crash Craddock}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file whatarememoriesmadeoflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What are memories [F]made of[G7]
@@ -36,3 +39,7 @@ What are memories [F]made of[G7]
 [C]Memories are made of [F]love my [Fm]love
 [C]And mine are [Dm]all [G7]made of [Am]you[F]  [G7]   [C]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title To Feel That Way At All}
 {meta: artist Patty Loveless}
 {meta: composer Jim Lauderdale and Jack Tempchin}
+{meta: x_source classic-country}
+{meta: x_source_file tofeelthatwayatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He brings her flowers they talk for [Am]hours 
@@ -34,3 +37,7 @@ I was [F]lucky to [Fm]feel that way at [C]all
 The way he needs her the way he [Am]wants her 
 It's a [F]miracle to [Fm]feel that way at [C]all
 {end_of_verse}
+
+
+
+

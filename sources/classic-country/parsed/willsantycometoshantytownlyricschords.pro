@@ -1,6 +1,9 @@
 {meta: title Will Santy Come To Shanty Town}
 {meta: artist Eddy Arnold}
 {meta: composer Steve Nelson, Ed G. Nelson, Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file willsantycometoshantytownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Will [C]Santy come to Shanty town to a poor little boy like [D7]me
@@ -29,3 +32,6 @@
 [C]Now if I say my prayers each day when Christmas rolls [D7]around
 [G7]Will Santy come to Shanty [C]town
 {end_of_verse}
+
+
+

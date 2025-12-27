@@ -1,6 +1,9 @@
 {meta: title Statue Of A Fool}
 {meta: artist Ricky Van Shelton}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file statueofafoollyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere there should [Am]be 
@@ -26,3 +29,5 @@ That [D7]concealed is a broken heart [G7]inside
 [G]Then inscribe the [C]world's greatest [Am]fool 
 And [Dm]name [Em]it [Dm]af-[G7]ter [G]m--[A]e  after [C]me
 {end_of_verse}
+
+

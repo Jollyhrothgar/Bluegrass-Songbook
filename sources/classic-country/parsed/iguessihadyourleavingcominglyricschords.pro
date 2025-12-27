@@ -1,6 +1,9 @@
 {meta: title I Guess I Had Your Leaving Coming}
 {meta: artist Vern Gosdin}
 {meta: composer Buddy Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file iguessihadyourleavingcominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]I broke your [C]heart I [Dm]made you [C]cry
@@ -43,3 +46,8 @@ I [G7]guess I had your leaving [C]coming
 I [G7]guess I had your leaving coming  to [C]me  
 I [G7]guess I had your leaving [C]coming  
 {end_of_verse}
+
+
+
+
+

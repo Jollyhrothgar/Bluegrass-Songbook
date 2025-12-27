@@ -1,6 +1,9 @@
 {meta: title Coca Cola Cowboy chords}
 {meta: artist Mel Tillis}
 {meta: composer James S. Pinkard,Jr., Irving Dain}
+{meta: x_source classic-country}
+{meta: x_source_file cocacolacowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I called collect on the [G]phone
@@ -33,3 +36,6 @@ You got a [Am]sexy smile and [D7]Robert Redford [D7][G]hair
 But you [G]walked across my heart like it was [C]Texas
 And you [Am]taught me how to [D7]say I just don't [G]care
 {end_of_verse}
+
+
+

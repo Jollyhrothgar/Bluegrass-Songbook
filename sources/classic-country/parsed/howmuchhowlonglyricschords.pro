@@ -1,5 +1,8 @@
 {meta: title How Much How Long}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file howmuchhowlonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How much how [G7]long can a heart [F]go on [C]taking
@@ -21,3 +24,5 @@
 [G7]Will sleep come when night falls [F]or will you just lay there [C]thinking
 [F]How much how [C]long before your heart [G7]stops [C]breaking
 {end_of_verse}
+
+

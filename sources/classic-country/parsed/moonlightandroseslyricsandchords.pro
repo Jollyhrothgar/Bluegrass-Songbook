@@ -1,6 +1,9 @@
 {meta: title Moonlight and Roses}
 {meta: artist Jim Reeves}
 {meta: composer Ben Black, Neil Moret aka (Chas. N. Daniels)}
+{meta: x_source classic-country}
+{meta: x_source_file moonlightandroseslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Recorded by Jim Reeves
@@ -34,3 +37,7 @@ My heart reposes
  Moon-light and [C]roses
  [F]Bring memories of  [C][G7]you 
 {end_of_verse}
+
+
+
+

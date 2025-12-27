@@ -1,5 +1,8 @@
 {meta: title All The Tea In China}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file alltheteainchinalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I always start to singin' every time [F]you pull the string [C]in
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [F]For all the tea [C]in China  [G7]I can't [C]go
 {end_of_verse}
+
+
+
+

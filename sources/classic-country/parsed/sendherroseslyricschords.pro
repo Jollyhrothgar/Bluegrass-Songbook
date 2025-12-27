@@ -1,6 +1,9 @@
 {meta: title Send Her Roses}
 {meta: artist Don Williams}
 {meta: composer Pat McLaughlin}
+{meta: x_source classic-country}
+{meta: x_source_file sendherroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They got a road out in Alaska now I [G7]hear that you can go there
@@ -44,3 +47,7 @@ I've been having me a whirl with a [G7]pretty girl
 And she [F]told me she liked my [C]lovin'
 repeat last verse
 {end_of_verse}
+
+
+
+

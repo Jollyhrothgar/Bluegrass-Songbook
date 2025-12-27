@@ -1,6 +1,9 @@
 {meta: title Love And Wealth}
 {meta: artist Charlie Louvin}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file loveandwealthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling I am all alone in our [C]little mountain [G]home
@@ -40,3 +43,8 @@ But my broken heart will [C]last [D7]eternal[G]ly
 {start_of_verse: Verse 5}
 [D7]Let me wish you love and [G]wealth
 {end_of_verse}
+
+
+
+
+

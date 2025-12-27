@@ -1,6 +1,9 @@
 {meta: title It's Better Than Going Home Alone}
 {meta: artist Moe Bandy}
 {meta: composer Guy Coleman and Truman Stearbes}
+{meta: x_source classic-country}
+{meta: x_source_file itsbetterthangoinghomealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The smoke in this [G7]barroom burns my [C]eyes
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]But it's better than going home [C]alone
 {end_of_verse}
+
+
+
+

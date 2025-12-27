@@ -1,6 +1,9 @@
 {meta: title In The Baggage Coach Ahead}
 {meta: artist Mac Wiseman}
 {meta: composer Gussie L. Davis}
+{meta: x_source classic-country}
+{meta: x_source_file inthebaggagecoachaheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a dark stormy [Am]night as the [C]train rattled [Am]on
@@ -37,3 +40,7 @@ Baby's [B7]face brings [C]pictures of a [Dm]cherished [F]one that's dead
 The baby's crying [C]can't waken [A7]her
 In the [D7]baggage [G7]coach [C]ahead
 {end_of_verse}
+
+
+
+

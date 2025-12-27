@@ -1,6 +1,9 @@
 {meta: title Holding Her and Loving You}
 {meta: artist Earl Thomas Conley}
 {meta: composer Walt Aldridge and Tom Brasfield}
+{meta: x_source classic-country}
+{meta: x_source_file holdingherandlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's the third hardest [C]thing I'll ever [G]do  [C]
@@ -38,3 +41,7 @@ Is holding [G]her  [D7]and loving [G]you
 Girl the hardest thing I've [C]ever had to [G]do   [C]
 Is holding [G]her  [D7]and loving [G]you
 {end_of_verse}
+
+
+
+

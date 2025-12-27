@@ -1,6 +1,9 @@
 {meta: title Old Time Rock and Roll}
 {meta: artist Bob Seger}
 {meta: composer George Jackson and Tom Jones}
+{meta: x_source classic-country}
+{meta: x_source_file oldtimerockandrolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just take those old records off the shelf
@@ -64,3 +67,11 @@ Still like that old time rock and roll
 [G7]I reminisce about the days of old
 [C]With that old time rock and roll
 {end_of_verse}
+
+
+
+
+
+
+
+

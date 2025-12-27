@@ -1,5 +1,8 @@
 {meta: title Each Beat Of My Heart Lyrics Chords}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file eachbeatofmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each beat of my heart tells me I [G7]love [C]you
@@ -28,3 +31,6 @@ You will [F]return and we'll make a new [G7]start
 Should I find [C]fun with one of my [F]old loves
 Or should I [C]believe [G7]each beat of my [C]heart
 {end_of_verse}
+
+
+

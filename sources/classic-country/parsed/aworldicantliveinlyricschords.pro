@@ -1,6 +1,9 @@
 {meta: title A World I Can’t Live In}
 {meta: artist Jan Howard}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file aworldicantliveinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once more I've [D7]said that I'll [G]leave you 
@@ -27,3 +30,6 @@ And you don't mean to [D7]treat me un[G]kind
 [C]Yours is a [D7]world I can't [G]live in 
 [C]But with[G]out you I [C]can't live in [G]mine
 {end_of_verse}
+
+
+

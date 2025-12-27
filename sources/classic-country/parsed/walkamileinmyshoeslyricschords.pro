@@ -1,6 +1,9 @@
 {meta: title Walk A Mile In My Shoes}
 {meta: artist Elvis Presley}
 {meta: composer Joe South}
+{meta: x_source classic-country}
+{meta: x_source_file walkamileinmyshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I could be you and you could be me for just one [A7]hour
@@ -40,3 +43,8 @@ Walk a mile in my shoes [C]walk a mile in my shoes
 And before you abuse [D7]criticize and accuse
 Walk a mile in my [G]shoes
 {end_of_verse}
+
+
+
+
+

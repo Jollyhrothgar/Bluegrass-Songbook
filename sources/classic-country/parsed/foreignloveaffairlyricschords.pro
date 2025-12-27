@@ -1,6 +1,9 @@
 {meta: title Foreign Love Affair}
 {meta: artist Hank Locklin}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file foreignloveaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wonder how many poor boys like [D7]me
@@ -25,3 +28,6 @@
 [C]Foreign love [D7]affair distant lands [G]apart
 [C]Foreign love [D7]affair many broken [G]hearts
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title When We Live Again}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file whenweliveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When we [C]live again 
@@ -30,3 +33,6 @@ And [G]let's not [C]lose the day the progress [D7]love has made
 Let's plan to love again [A7]dear 
 [D7]When we live [C]agai[G]n
 {end_of_verse}
+
+
+

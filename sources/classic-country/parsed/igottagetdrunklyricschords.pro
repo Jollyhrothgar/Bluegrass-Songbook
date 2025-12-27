@@ -1,5 +1,8 @@
 {meta: title I Gotta Get Drunk}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file igottagetdrunklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I gotta get drunk and I sure do dread it 
@@ -44,3 +47,10 @@ Cause I [F]know just what I'm gonna [C]do
 I'll start to spend my money calling everybody honey
 And I'll [D7]wind up singing the [G7]blues
 {end_of_verse}
+
+
+
+
+
+
+

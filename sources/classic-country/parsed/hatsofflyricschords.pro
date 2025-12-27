@@ -1,6 +1,9 @@
 {meta: title Hats Off}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Ronnie Rogers, Teddy Gentryand Greg Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file hatsofflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The stage is set tonight [C]down in [D7]Nashville     
@@ -57,3 +60,10 @@ Hats off to hard [D7]riding [C]cowboys
 Hats off to hard [D7]riding [C]cowboys
 Wanted  [D7]dead or [G]alive
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title One Way Street}
 {meta: artist Heidi Hauge}
+{meta: x_source classic-country}
+{meta: x_source_file onewaystreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You came like the wind and captured my heart
@@ -48,3 +51,9 @@ As we [G]walk life's [D7]eternal one way [G]street
 {start_of_verse: Verse 6}
 As we walk life's [D7]eternal one way [G]street
 {end_of_verse}
+
+
+
+
+
+

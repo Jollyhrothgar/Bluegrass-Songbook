@@ -1,6 +1,9 @@
 {meta: title Heartache Big As Texas}
 {meta: artist Ricky Van Shelton}
 {meta: composer Royce Porter and David Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file heartachebigastexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]heartache big as [D7]Texas 
@@ -48,3 +51,9 @@ Deep in the [G7]heart of [A7]me
 Well there's a [C]heartache big as [D7]Texas 
 Deep in the [G7]heart of [C]me
 {end_of_verse}
+
+
+
+
+
+

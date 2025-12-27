@@ -1,6 +1,9 @@
 {meta: title Driving Nails In My Coffin}
 {meta: artist Ernest Tubb}
 {meta: composer Jerry Irby}
+{meta: x_source classic-country}
+{meta: x_source_file drivingnailsinmycoffinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My sweetheart is gone and I'm so lonesome
@@ -29,3 +32,6 @@ I'm just driving nails in my coffin
 [C]I'm just driving nails in my coffin
 [G7]Driving those nails over [C]you
 {end_of_verse}
+
+
+

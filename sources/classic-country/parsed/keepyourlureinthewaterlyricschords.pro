@@ -1,6 +1,9 @@
 {meta: title Keep Your Lure In The Water}
 {meta: artist Randy Travis}
 {meta: composer Michael Curtis and Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file keepyourlureinthewaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Keep your lure in the water don't just [Em]sit by the [E7]shore
@@ -47,3 +50,9 @@ Keep your [C]lure in the water in the [G7]waters of [C]life
 {start_of_verse: Verse 7}
 Yeah keep your lure in the water in the [G7]waters of [C]life
 {end_of_verse}
+
+
+
+
+
+

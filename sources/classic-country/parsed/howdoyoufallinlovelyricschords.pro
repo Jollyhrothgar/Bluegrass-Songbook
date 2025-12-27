@@ -1,6 +1,9 @@
 {meta: title How Do You Fall In Love}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Teddy Gentry, Greg Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file howdoyoufallinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How do you [G7]fall in [F]love 
@@ -45,3 +48,8 @@ So only [G7]you will [C]know
 And there will be [G7]highs and [F]lows 
 So only [G7]you will [C]know
 {end_of_verse}
+
+
+
+
+

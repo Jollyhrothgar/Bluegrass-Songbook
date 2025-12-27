@@ -1,6 +1,9 @@
 {meta: title The Weak And The Strong}
 {meta: artist Jean Shepard}
 {meta: composer Red Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file theweakandthestronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This just couldn't [G7]last the way some things [C]do
@@ -29,3 +32,6 @@
 [C7]Why fear tongues [F]of evil once doomed by their [C]own
 [G7]For life has its pick of the weak and the [C]strong
 {end_of_verse}
+
+
+

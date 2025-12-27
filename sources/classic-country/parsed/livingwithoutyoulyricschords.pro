@@ -1,6 +1,9 @@
 {meta: title Living Without You}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file livingwithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Before you left [C]I set myself some [G]cryin' time aside
@@ -26,3 +29,6 @@ Too much to [D7]carry too much to [G]bear[C]  [G]
 {start_of_verse: Verse 4}
 Living with[D7]out you is too much to [G]bear[C]  [G]
 {end_of_verse}
+
+
+

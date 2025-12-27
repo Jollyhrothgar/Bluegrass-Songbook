@@ -1,5 +1,8 @@
 {meta: title Three Nights A Week}
 {meta: artist Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file threenightsaweeklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Three nights a week you're [F]gone
@@ -28,3 +31,6 @@
 [F]Three nights a week I’m alone
 [G7]Baby won't you please stay [C]home
 {end_of_verse}
+
+
+

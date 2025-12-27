@@ -1,5 +1,8 @@
 {meta: title Love Is The Way}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file loveisthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Deep in the heart of the [F]infinite darkness
@@ -38,3 +41,8 @@ And [C]God is the reason and [G7]love is the [C]way
 Life is the question and [F]life is the answer
 And [C]God is the reason and [G7]love is the [C]way 
 {end_of_verse}
+
+
+
+
+

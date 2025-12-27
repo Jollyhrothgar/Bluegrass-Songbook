@@ -1,6 +1,9 @@
 {meta: title I Almost Lost My Mind}
 {meta: artist Hank Snow}
 {meta: composer Ivory Joe Hunter}
+{meta: x_source classic-country}
+{meta: x_source_file ialmostlostmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I lost my baby  I almost lost my mind
@@ -25,3 +28,6 @@ Now I can tell you people the news was not so good
 Now [F]I can tell you people the news was not so [C]good
 She said your [G7]baby's done and quit you  this time she's gone for [C]good
 {end_of_verse}
+
+
+

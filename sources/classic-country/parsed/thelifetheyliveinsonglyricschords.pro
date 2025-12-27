@@ -1,6 +1,9 @@
 {meta: title The Life They Live In Song}
 {meta: artist Kitty Wells}
 {meta: composer Raymond F. Scrivner}
+{meta: x_source classic-country}
+{meta: x_source_file thelifetheyliveinsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All the songs they sing these day are [C]about the trifling [G]ways
@@ -36,3 +39,7 @@
 [G]But I'll trust the love you [C]give darling you could never [G]live
 [D7]The worthless kind of life they live in [G]song
 {end_of_verse}
+
+
+
+

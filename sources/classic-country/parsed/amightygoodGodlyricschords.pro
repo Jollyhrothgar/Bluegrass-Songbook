@@ -1,6 +1,9 @@
 {meta: title A Mighty Good God}
 {meta: artist Aaron Tippin}
 {meta: composer Aaron Tippin and Thea Tippin}
+{meta: x_source classic-country}
+{meta: x_source_file amightygoodGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I say Lord He’s a mighty good God
@@ -71,3 +74,16 @@ When the temptation gets too strong
 [C]I say Lord He’s a mighty good God
 [G7]Look at all the presents that He’s laid upon [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

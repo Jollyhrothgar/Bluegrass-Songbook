@@ -1,6 +1,9 @@
 {meta: title I Lived A Lifetime In A Day}
 {meta: artist Marty Robbins}
 {meta: composer Marion Worth}
+{meta: x_source classic-country}
+{meta: x_source_file ilivedalifetimeinadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I met you I knew I couldn't [F]keep you
@@ -29,3 +32,6 @@ If I've sinned then the price I'll gladly [G7]beg
 [C]To my lonely life you brought the [F]sunshine
 For with [C]you I lived a [G7]lifetime in a [C]day
 {end_of_verse}
+
+
+

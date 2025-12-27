@@ -1,6 +1,9 @@
 {meta: title I Believed In You Darling}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file ibelievedinyoudarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh you said that you loved me that your heart would be true
@@ -33,3 +36,7 @@ But now you've gone and [D7]left me I'm so [G]blue
 {start_of_verse: Verse 4}
 But now you've gone and [D7]left me I'm so [G]blue
 {end_of_verse}
+
+
+
+

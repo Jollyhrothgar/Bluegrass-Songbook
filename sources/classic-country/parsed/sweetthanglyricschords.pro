@@ -1,6 +1,9 @@
 {meta: title Sweet Thang}
 {meta: artist Jimmy Dean}
 {meta: composer Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file sweetthanglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I slipped out of the house about sundown 
@@ -55,3 +58,11 @@ And she said
 {start_of_verse: Verse 2}
 And you can bet your bottom dollar
 {end_of_verse}
+
+
+
+
+
+
+
+

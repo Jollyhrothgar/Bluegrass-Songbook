@@ -1,6 +1,9 @@
 {meta: title Dreams Of A Dreamer}
 {meta: artist Gene Watson}
 {meta: composer David H. "Jug" Brown}
+{meta: x_source classic-country}
+{meta: x_source_file dreamsofadreamerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lost my pickup in a card game in New [F]Orleans
@@ -34,3 +37,7 @@
 [F]Them old memories that's tearing up my [C]mind
 [G7]Are the dreams of a dreamer gone [C]blind
 {end_of_verse}
+
+
+
+

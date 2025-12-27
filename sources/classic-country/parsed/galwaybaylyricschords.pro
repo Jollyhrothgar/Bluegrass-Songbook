@@ -1,6 +1,9 @@
 {meta: title Galway Bay}
 {meta: artist Johnny Paycheck}
 {meta: composer Arthur Colaham}
+{meta: x_source classic-country}
+{meta: x_source_file galwaybaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you ever go across the sea to [D7]Ireland
@@ -33,3 +36,7 @@ In [D7]that dear land across the Irish [G]sea
 {start_of_verse: Verse 5}
 So I can [D7]watch the sun go down on Galway [G]Bay  
 {end_of_verse}
+
+
+
+

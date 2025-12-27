@@ -1,6 +1,9 @@
 {meta: title I Will Glory In The Cross}
 {meta: artist Barbara Mandrell}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file iwillgloryinthecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I boast not of works or [F]tell of good deeds
@@ -36,3 +39,7 @@ Lest His [F]suffering all be in [C]vain [G7]
 I will [C]weep no more for the [F]cross that He [Fm]bore
 I will [C]glory [G7]in the [C]cross
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Momma Tried}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file mamatriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The first thing I remember [C]knowing was a [G]lonesome whistle [C]blowing
@@ -33,3 +36,7 @@ She [G]tried to raise me [D7]right but I [G]refused
 {start_of_verse: Verse 5}
 Repeat chorus
 {end_of_verse}
+
+
+
+

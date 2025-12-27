@@ -1,6 +1,9 @@
 {meta: title Till I Gain Control Again}
 {meta: artist Emmylou Harris}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file tilligaincontrolagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just like the sun [D7]over the mountain [G]top
@@ -36,3 +39,7 @@
 [C]I only hope that you can hold me [G]now
 [D7]Till I can gain control [G]again
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Couldn't Do Nothin' Right}
 {meta: artist David Allan Coe}
 {meta: composer Karen Brooks and Gary Nunn}
+{meta: x_source classic-country}
+{meta: x_source_file couldntdonothinrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The lamp is broken on the [G7]mantle
@@ -49,3 +52,9 @@ You were [Am]right babe [F]  I couldn’t [G7]never do nothing [C]right any[Am]t
 I couldn’t [G7]never do nothing [C]right [F] 
 I couldn’t [G7]never do nothing [C]right  
 {end_of_verse}
+
+
+
+
+
+

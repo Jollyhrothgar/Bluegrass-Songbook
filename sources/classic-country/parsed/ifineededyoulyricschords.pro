@@ -1,6 +1,9 @@
 {meta: title If I Needed You}
 {meta: artist Don Williams}
 {meta: composer Townes Van Zandt}
+{meta: x_source classic-country}
+{meta: x_source_file ifineededyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I needed you would you come to me 
@@ -43,3 +46,10 @@ A treasure [C]for the [D7]poor to [G]find
 [G]If I needed you would you come to me 
 Would you come to [C]me for to [D7]ease my [G]pain
 {end_of_verse}
+
+
+
+
+
+
+

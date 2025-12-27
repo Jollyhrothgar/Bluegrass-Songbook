@@ -1,5 +1,8 @@
 {meta: title You're A Hero To Me}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file youreaherotomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You left us behind to fight the fight
@@ -44,3 +47,7 @@ Passing our old hangout today
 [F]Without you where would we [G7]be
 [F]You're a [G7]hero to [C]me
 {end_of_verse}
+
+
+
+

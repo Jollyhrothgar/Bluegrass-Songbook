@@ -1,6 +1,9 @@
 {meta: title Pfft You Were Gone}
 {meta: artist Buck Owens}
 {meta: composer Susan Heather}
+{meta: x_source classic-country}
+{meta: x_source_file pfftyouweregonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down here on the farm the [F]weather gets [C]messy
@@ -69,3 +72,12 @@ You met another and [G7]phht you were [C]gone
 I searched the world over and I thought [F]I found true [C]love
 You met another and [G7]phht you were [C]gone
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't You Say Nothing At All}
 {meta: artist Stonewall Jackson}
 {meta: composer Adam Ross and Ronald Kramer}
+{meta: x_source classic-country}
+{meta: x_source_file dontyousaynothingatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well listen to me [C]mister I [D7]just came in here for a [G]drink
@@ -38,3 +41,7 @@
 [E7]So if you can't say something good about her
 [A7]Don't you say [D7]nothing at [G]all
 {end_of_verse}
+
+
+
+

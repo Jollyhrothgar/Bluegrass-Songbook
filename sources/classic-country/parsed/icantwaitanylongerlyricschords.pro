@@ -1,6 +1,9 @@
 {meta: title I Can't Wait Any Longer}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson and Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file icantwaitanylongerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I can't wait any longer [C]baby I mean I can't wait any longer
@@ -35,3 +38,7 @@ Who do I have to [Dm]lie to [F]so I can lie with [C]you
 [F](I can't wait I can't wait [C]doo doo doo doo) 
 [F]I can't wait any longer [C]I want you now
 {end_of_verse}
+
+
+
+

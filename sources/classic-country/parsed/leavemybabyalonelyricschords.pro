@@ -1,6 +1,9 @@
 {meta: title Leave My Baby Alone}
 {meta: artist Wanda Jackson}
 {meta: composer Harlan Howard and Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file leavemybabyalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't you be a tellin' my [C]baby [G]lies
@@ -53,3 +56,10 @@ You better leave my [D7]baby a[G]lone
 You better leave my [D7]baby a[G]lone
 You better leave my [D7]baby a[G]lone
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Things That Lovers Do}
 {meta: artist Stonewall Jackson}
 {meta: composer Hugh X. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file thingsthatloversdolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She takes one day a week to call her own
@@ -44,3 +47,8 @@ It [F]all boils down to who's been cheatin' [C]who
 But [Dm]he's just doing [G7]things that lovers [C]do
 [Dm]We're just doing [G7]things that lovers [C]do
 {end_of_verse}
+
+
+
+
+

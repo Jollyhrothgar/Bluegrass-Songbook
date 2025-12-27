@@ -1,5 +1,8 @@
 {meta: title The Angel Of Death}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file theangelofdeathlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the great book of John you're [F]warned of the [C]day
@@ -28,3 +31,6 @@
 [C]Can you truthfully say with [F]your dying [C]breath
 [G7]That you're ready to meet the angel of [C]death
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hand In Hand With Jesus}
 {meta: artist Skeeter Davis}
 {meta: composer Johnson Oatman and L.D. Huffstutler}
+{meta: x_source classic-country}
+{meta: x_source_file handinhandwithJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once from my poor [Em]sin sick [G]soul
@@ -33,3 +36,7 @@ Hand in hand with [D7]Je-[G]sus
 {start_of_verse: Verse 4}
 Hand in hand with [D7]Je-[G]sus
 {end_of_verse}
+
+
+
+

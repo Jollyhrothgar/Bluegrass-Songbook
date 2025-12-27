@@ -1,5 +1,8 @@
 {meta: title Caught Between The Rock And A Soft Place}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file caughtbetweentherockandasoftplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Mary helps me make it through the [C]hard times
@@ -32,3 +35,7 @@ Now I'm [G7]caught between a [F]rock and a [C]soft place
 {start_of_verse: Verse 4}
 [F]Either way I [G7]win either way I [F]lose[C]
 {end_of_verse}
+
+
+
+

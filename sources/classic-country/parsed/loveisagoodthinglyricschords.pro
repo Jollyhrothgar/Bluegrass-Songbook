@@ -1,6 +1,9 @@
 {meta: title Love Is A Good Thing}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file loveisagoodthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl you give your precious love to [D7]me 
@@ -28,3 +31,5 @@ Bring on [D7]gladness let us sing [F]love is a go-od [C]thing
 Love is a [D7]good thing let us sing [F]love is a go-od [C]thing
 Yeah love is a good [D7]thing let us sing [F]love is a go-od [C]thing
 {end_of_verse}
+
+

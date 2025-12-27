@@ -1,6 +1,9 @@
 {meta: title Put A Nickel In The Jukebox}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Ruth Wallis}
+{meta: x_source classic-country}
+{meta: x_source_file putanickelinthejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Put a nickel in the [G]jukebox and [C]let that [D7]record [G]spin
@@ -26,3 +29,6 @@ And [C]let it spin for love I’ve lost and [G]things that might have [D7]been
 I [G]should have [C]known right [G]from the start I [G7]had no chance to [C]win
 Put a nickel in the [G]jukebox and [C]let that [D7]record [G]spin
 {end_of_verse}
+
+
+

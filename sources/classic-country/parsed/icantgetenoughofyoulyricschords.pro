@@ -1,5 +1,8 @@
 {meta: title I Can't Get Enough Of You}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file icantgetenoughofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I took my pack of cigarettes and put them [F]down
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [G7]I can't get enough of [C]you
 {end_of_verse}
+
+
+
+

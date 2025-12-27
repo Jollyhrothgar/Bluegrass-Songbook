@@ -1,6 +1,9 @@
 {meta: title If I Give My Soul}
 {meta: artist Johnny Cash}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file ifigivemysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down a dangerous road I have come [C]to where I'm [G]standing
@@ -36,3 +39,7 @@
 [G]If I give my soul and [C]she knows I really mean [G]it
 [C]If I give my soul [G]to Jesus will she [D7]take me back [G]again
 {end_of_verse}
+
+
+
+

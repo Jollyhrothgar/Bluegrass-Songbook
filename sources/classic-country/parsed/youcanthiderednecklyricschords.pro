@@ -1,6 +1,9 @@
 {meta: title You Can't Hide Redneck}
 {meta: artist Tracy Lawrence}
 {meta: composer Casey Beathard and Daniel Demay}
+{meta: x_source classic-country}
+{meta: x_source_file youcanthiderednecklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well [G]Billy Joe McAllister [C]junior showed [G]up at the reunion[C]
@@ -44,3 +47,7 @@ No you [D7]can't hide [G]redneck [C]in a big old [G]grouch
 [C]No you can't hide [Am]redneck [D7]you might as well be [G]proud
 [C]Might as well be [G]proud
 {end_of_verse}
+
+
+
+

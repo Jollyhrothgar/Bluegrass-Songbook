@@ -1,6 +1,9 @@
 {meta: title Pennies From Heaven}
 {meta: artist Randy Travis}
 {meta: composer Arthur Johnston and Johnny Burke}
+{meta: x_source classic-country}
+{meta: x_source_file penniesfromheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every time it [Am]rains it rains
@@ -30,3 +33,6 @@ There'll be [C]pennies from Heaven
 For [A7]you [D7]and [G]me
 Repeat
 {end_of_verse}
+
+
+

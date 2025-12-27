@@ -1,6 +1,9 @@
 {meta: title What Were You Doing Last Night}
 {meta: artist Jim Reeves}
 {meta: composer recorded by Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file whatwereyoudoinglastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What were you doing when I saw [F]you last [C]night 
@@ -19,3 +22,5 @@ Did he mention a [G7]diamond darling I wish I [C]knew
 {start_of_verse: Verse 3}
 Repeat
 {end_of_verse}
+
+

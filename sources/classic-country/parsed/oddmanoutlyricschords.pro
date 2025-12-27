@@ -1,6 +1,9 @@
 {meta: title Odd Man Out}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file oddmanoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](Odd man [C]out odd man out)
@@ -31,3 +34,7 @@ I wanna [G7]congratulate the [C]winner
 Since he walked in (since [G7]he walked in)
 I'm [F]odd man [C]out
 {end_of_verse}
+
+
+
+

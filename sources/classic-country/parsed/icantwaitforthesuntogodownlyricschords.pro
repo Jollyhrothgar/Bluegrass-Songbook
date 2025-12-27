@@ -1,6 +1,9 @@
 {meta: title I Can't Wait For The Sun To Go Down}
 {meta: artist Faron Young}
 {meta: composer Martha Carson, Chet Atkins, Sid Kessel}
+{meta: x_source classic-country}
+{meta: x_source_file icantwaitforthesuntogodownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't wait for the sun to go down to get you under the [G7]moon
@@ -27,3 +30,6 @@ I can't wait for the [C]sun to go down to [G7]get you under the [C]moon
 Promise me all my dreams will come true in [F]June
 I can't wait for the [C]sun to go down to [G7]get you under the [C]moon
 {end_of_verse}
+
+
+

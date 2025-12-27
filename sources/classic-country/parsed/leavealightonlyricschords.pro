@@ -1,6 +1,9 @@
 {meta: title Leave A Light On}
 {meta: artist Garth Brooks}
 {meta: composer Randy Goodrum and Tommy Simms}
+{meta: x_source classic-country}
+{meta: x_source_file leavealightonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [F]lost my [C]way but [F]found [G7]tod[C]ay
@@ -47,3 +50,8 @@ Till the last tear is [A7]cried
 (Leave a light on) leave a [G7]light on
 (Leave a light on) leave a [D7]light on for [G7]me
 {end_of_verse}
+
+
+
+
+

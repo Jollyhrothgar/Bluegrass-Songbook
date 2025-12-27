@@ -1,6 +1,9 @@
 {meta: title I Gotta Know}
 {meta: artist Elvis Presley}
 {meta: composer Paul Evans and Matt Williams}
+{meta: x_source classic-country}
+{meta: x_source_file igottaknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Get up in the mornin' feelin' mighty weak
@@ -55,3 +58,9 @@ I gotta [G]know gotta [C]know gotta [G]know
 {start_of_verse: Verse 5}
 [C]I gotta [G]know gotta [C]know gotta [G]know
 {end_of_verse}
+
+
+
+
+
+

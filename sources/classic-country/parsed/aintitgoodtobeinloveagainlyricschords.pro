@@ -1,6 +1,9 @@
 {meta: title Ain't It Good To Be In Love Again}
 {meta: artist Connie Smith}
 {meta: composer Dewayne Orender}
+{meta: x_source classic-country}
+{meta: x_source_file aintitgoodtobeinloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't it good to be in [F]love again [G7]don't it make you wanna [C]smile
@@ -36,3 +39,7 @@ Maybe this time it's [Dm]forever [D7]but I'll take a little [G7]while
 Don't it make the yellow [F]sunshine [G7]grow brighter up [C]above
 It feels so good to be in [Dm]love again [G7]ain't it good to be in [C]love
 {end_of_verse}
+
+
+
+

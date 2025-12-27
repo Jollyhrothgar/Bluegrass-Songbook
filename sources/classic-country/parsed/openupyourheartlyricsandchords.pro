@@ -1,5 +1,8 @@
 {meta: title Open Up Your Heart}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file openupyourheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Open up your heart and let my love come [G7]in 
@@ -32,3 +35,7 @@ When you [C]open up your heart and let my [G7]love come [C]in
 {start_of_verse: Verse 5}
 [F]When you [C]open up your heart and let my [G7]love come [C]in
 {end_of_verse}
+
+
+
+

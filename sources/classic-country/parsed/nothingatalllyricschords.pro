@@ -1,6 +1,9 @@
 {meta: title Nothing At All}
 {meta: artist Wilburn Brothers}
 {meta: composer Fred Powers and Harold Donny}
+{meta: x_source classic-country}
+{meta: x_source_file nothingatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you only [F]care for things [C]money can buy
@@ -29,3 +32,6 @@ Without [G7]love you’ve got nothing at [C]all
 [F]Nothing at all [C]nothing at all
 Without [G7]love you’ve got nothing at [C]all
 {end_of_verse}
+
+
+

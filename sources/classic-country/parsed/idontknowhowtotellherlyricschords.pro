@@ -1,6 +1,9 @@
 {meta: title I Don’t Know How To Tell Her}
 {meta: artist Gene Watson}
 {meta: composer B. Fischer and Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file idontknowhowtotellherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know how to tell her that she's [F]changed
@@ -29,3 +32,6 @@ Lord knows some day she'll realize the [F]truth
 She's never done without my love [F]before
 I [G7]don't know how to tell her she don't love me [C]anymore
 {end_of_verse}
+
+
+

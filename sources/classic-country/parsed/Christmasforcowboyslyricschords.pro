@@ -1,5 +1,8 @@
 {meta: artist John Denver}
 {meta: composer Steve Weisberg}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasforcowboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Tall in the [C]saddle we [G7]spend Christmas [Am]Day
@@ -32,3 +35,7 @@ It's [F]Christmas for [C]cowboys [G7]wide open [C]plains
 {start_of_verse: Verse 5}
 It's [F]Christmas for [C]cowboys [G7]wide open [C]plains
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sweet Little Jesus Boy}
 {meta: artist Anne Murray}
 {meta: composer Robert MacGimsey}
+{meta: x_source classic-country}
+{meta: x_source_file sweetlittleJesusboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweet little Jesus Boy
@@ -50,3 +53,9 @@
 [Em]Sweet little Holy [A7]Child
 [G]We didn't know [D7]who You [G]were
 {end_of_verse}
+
+
+
+
+
+

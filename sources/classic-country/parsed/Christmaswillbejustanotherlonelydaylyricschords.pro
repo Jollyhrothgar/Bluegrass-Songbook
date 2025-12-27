@@ -1,6 +1,9 @@
 {meta: title Christmas Will Be Just Another Lonely Day}
 {meta: artist Brenda Lee}
 {meta: composer Lee Jackson and Patti Seymour}
+{meta: x_source classic-country}
+{meta: x_source_file Christmaswillbejustanotherlonelydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's Christmas Eve and snow is on the ground
@@ -35,3 +38,7 @@ And [F]Christmas will be [G7]just another lonely [C]day
 [G7]Another lonely [C]day
 [G7]Another lonely [C]day
 {end_of_verse}
+
+
+
+

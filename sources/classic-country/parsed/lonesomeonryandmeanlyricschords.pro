@@ -1,6 +1,9 @@
 {meta: title Lonesome On'ry And Mean}
 {meta: artist Waylon Jennings}
 {meta: composer Steve Young}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomeonryandmeanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a Greyhound bus Lord I'm [F]traveling this [C]morning
@@ -22,3 +25,5 @@
 [F]I pray do Lord do right by [C]me
 [A]I'm tired of looking [F]lonesome  on'ry and [C]mean
 {end_of_verse}
+
+

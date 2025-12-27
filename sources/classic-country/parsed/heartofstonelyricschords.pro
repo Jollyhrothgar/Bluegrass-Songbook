@@ -1,6 +1,9 @@
 {meta: title Heart Of Stone}
 {meta: artist Dwight Yoakam}
 {meta: composer Dwight Yoakam and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file heartofstonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This heart of [F]stone sure is [C]missing you
@@ -40,3 +43,8 @@ But broke while [G7]trying to pretend that it was [C]strong
 {start_of_verse: Verse 4}
 But broke while [G7]trying to pretend that it was [C]strong
 {end_of_verse}
+
+
+
+
+

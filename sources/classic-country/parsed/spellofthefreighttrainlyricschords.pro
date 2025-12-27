@@ -1,6 +1,9 @@
 {meta: title Spell Of The Freight Train}
 {meta: artist Charlie Pride}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file spellofthefreighttrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The wild birds are [G7]flyin' [F]high wide and [C]free
@@ -22,3 +25,5 @@ My brother is a [G7]doctor and [F]me I'm a [C]fool
 The spell of the [G7]freight train [F]is stronger than [C]wine
 That same lonesome [G7]whistle that [F]chills my darlin's [G7]heart is callin' [C]mine
 {end_of_verse}
+
+

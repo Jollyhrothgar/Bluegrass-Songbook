@@ -1,6 +1,9 @@
 {meta: title Root Of All Evil}
 {meta: artist Jean Shepard}
 {meta: composer Jeri Jones}
+{meta: x_source classic-country}
+{meta: x_source_file rootofallevillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've heard that old story ever since time [C]began
@@ -23,3 +26,5 @@
 [G]Give her just a friendly smile hear her troubles for a [C]while
 [G]For the cause of [D7]her trouble was a [G]man
 {end_of_verse}
+
+

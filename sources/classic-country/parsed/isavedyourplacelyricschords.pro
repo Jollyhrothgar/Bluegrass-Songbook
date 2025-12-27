@@ -1,6 +1,9 @@
 {meta: title I Saved Your Place}
 {meta: artist Gene Watson}
 {meta: composer Steve Spurgin}
+{meta: x_source classic-country}
+{meta: x_source_file isavedyourplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each night I fluff your pillow [G7]up beside [C]me
@@ -28,3 +31,6 @@ When he's holding you you [G7]may not need a [C]fool who really [F]loves you
 But [G7]if you ever do I saved your [C]place
 But [G7]if you ever do I saved your [C]place
 {end_of_verse}
+
+
+

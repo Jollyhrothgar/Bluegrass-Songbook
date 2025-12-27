@@ -1,6 +1,9 @@
 {meta: title You Never Will Be True}
 {meta: artist Ray Price}
 {meta: composer Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file youneverwillbetruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've waited up to tell you dear
@@ -50,3 +53,9 @@ Now I know you [C]can't
 [F]If loving you would help at all
 [C]By now you'd be a [G7]saint
 {end_of_verse}
+
+
+
+
+
+

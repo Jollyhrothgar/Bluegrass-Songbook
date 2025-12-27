@@ -1,6 +1,9 @@
 {meta: title Some Sweet Day}
 {meta: artist The Everly Brothers}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file somesweetdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some sweet [G7]day [C]some sweet [G7]day
@@ -52,3 +55,9 @@ And then [G7]you’ll tell me that you’re [C]my [D7]love
 [G7]Some sweet [C]day
 [G7]Some sweet [C]day
 {end_of_verse}
+
+
+
+
+
+

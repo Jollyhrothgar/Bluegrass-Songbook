@@ -1,5 +1,8 @@
 {meta: title I'll Tell the World That I Love You}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file illtelltheworldthatiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Alone I’m scheming as moonlight’s [C]beaming 
@@ -49,3 +52,9 @@ The golden [A7]sun will still shine [D7]through
 For every [G]dark cloud you’ll find a [C]rainbow 
 I’ll tell the [D7]world that I love [G]you
 {end_of_verse}
+
+
+
+
+
+

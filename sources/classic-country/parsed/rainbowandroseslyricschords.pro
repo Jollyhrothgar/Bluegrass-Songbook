@@ -1,6 +1,9 @@
 {meta: title Rainbow and Roses}
 {meta: artist Billy Walker}
 {meta: composer Barbara Lewis and Don Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowandroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There’s [C]nothing quite as [G7]pretty as a [C]rainbow after a summer [Dm]rain [G7]
@@ -36,3 +39,7 @@ You’re all the [G7]world to [C]me
 [C]You’re my [Em]rainbow and [Dm]roses 
 You’re all the [G7]world to [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Another Night}
 {meta: artist Ricky Skaggs}
 {meta: composer Jack Adkins}
+{meta: x_source classic-country}
+{meta: x_source_file anothernightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The wind is blowin' around my cabin 
@@ -51,3 +54,12 @@ Can I tell [C]them of [D7]their mother's [G]wrong
 I'm all alone and so downhearted
 Since my [C]true love [D7]ain't [G]around
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Blue Steel}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file bluesteellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I was feelin' mighty lonesome
@@ -42,3 +45,8 @@ Old memories keep comin' back
 [C]And that old steel guitar it [G]cried
 [D7]And it kept on playin' the [G]blues
 {end_of_verse}
+
+
+
+
+

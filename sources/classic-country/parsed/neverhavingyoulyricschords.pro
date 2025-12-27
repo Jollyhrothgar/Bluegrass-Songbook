@@ -1,5 +1,8 @@
 {meta: title Never Having You}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file neverhavingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess I'll go through life never [D7]having you
@@ -43,3 +46,9 @@ I'm a [A7]lunatic and you are [D7]so super cool
 I [G]know I'll go through life never [D7]having you
 I guess I'll go out of this world never [G]having you
 {end_of_verse}
+
+
+
+
+
+

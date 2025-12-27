@@ -1,6 +1,9 @@
 {meta: title Because It's Christmas Time Lyrics with Chords}
 {meta: artist Buck Owens}
 {meta: composer Red Simpson and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file becauseitsChristmastimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now is the time for [G7]sleigh bells to ring 
@@ -43,3 +46,8 @@ Now is the time hang your [C]stocking on the nail
 Now is the time let us [F]sing Jingle Bells 
 [C]Because it's [G7]Christmas [C]time 
 {end_of_verse}
+
+
+
+
+

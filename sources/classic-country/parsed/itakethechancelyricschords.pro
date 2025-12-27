@@ -1,6 +1,9 @@
 {meta: title I Take The Chance}
 {meta: artist Jim Ed Brown}
 {meta: composer Charles &amp; Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file itakethechancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I take the [C]chance to [D7]lose my soul my [C]life my [G]pride 
@@ -27,3 +30,6 @@ I know I'd [D7]lose it all if I was seen with [G]you
 I take the [C]chance to [D7]lose my soul my [C]life my [G]pride 
 I take the [C]chance  [D7]to be with [G]you
 {end_of_verse}
+
+
+

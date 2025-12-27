@@ -1,5 +1,8 @@
 {meta: title Sad Sad Music}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file sadsadmusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There should be music [F]  sad sad [C]music[F]
@@ -34,3 +37,7 @@ As you [C]walk away without looking [G7]back
 But this [C]silence that you [G7]left is all that I [C]have
 [F]There should be [C]music
 {end_of_verse}
+
+
+
+

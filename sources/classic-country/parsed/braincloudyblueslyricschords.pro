@@ -1,6 +1,9 @@
 {meta: title Brain Cloudy Blues}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Tommy Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file braincloudyblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My brain is cloudy my [C]soul is upside [G]down
@@ -31,3 +34,6 @@ If you don't think [C]I'm leaving you can count the days I'm [G]gone
 Cause you're gonna [C]need you're gonna [G]need my [C]help [G]someday
 And you're [D7]going to be sorry oh you [C]treat me this [G]way
 {end_of_verse}
+
+
+

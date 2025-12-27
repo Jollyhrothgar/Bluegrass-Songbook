@@ -1,5 +1,8 @@
 {meta: title I Wish It Could Be Christmas All Year Long}
 {meta: artist Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file iwishitcouldbechristmasallyearlonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's Christmas time the [C]chapel bells are [G]ringing
@@ -26,3 +29,6 @@ A time for joy for happiness and [D7]song
 [G]We give thanks today but who [C]thinks of [G]tomorrow
 How I wish it could be [D7]Christmas all year [G]long
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Donald And June}
 {meta: artist Don Williams}
 {meta: composer Craig Bickhardt}
+{meta: x_source classic-country}
+{meta: x_source_file donaldandjunelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Donald and June enjoyed their [Dm]brief honey[G7]moon
@@ -41,3 +44,8 @@ Then [C]things wouldn't [Am]be what they [Bm]are[G7]
 {start_of_verse: Verse 6}
 Donald and June enjoyed their [Dm]brief honey[G7]moon[C]
 {end_of_verse}
+
+
+
+
+

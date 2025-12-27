@@ -1,6 +1,9 @@
 {meta: title I've Lost You}
 {meta: artist Elvis Presley}
 {meta: composer Ken Howard and Alan Blaikley}
+{meta: x_source classic-country}
+{meta: x_source_file ivelostyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lying by your [D7]side I watch you [Em]sleep[G]ing
@@ -64,3 +67,11 @@ I can't reach you anymore
 We [C]ought to talk it over now
 But [D7]reason [G]can't stand in for [D7]feeling [G]low
 {end_of_verse}
+
+
+
+
+
+
+
+

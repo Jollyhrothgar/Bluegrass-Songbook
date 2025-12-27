@@ -1,5 +1,8 @@
 {meta: title Daddy Won't Be Home Anymore}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file daddywontbehomeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I look around the little [F]house
@@ -47,3 +50,9 @@
 [F]No the children just don't [C]understand
 [F]Why daddy won't be home [C]anymore
 {end_of_verse}
+
+
+
+
+
+

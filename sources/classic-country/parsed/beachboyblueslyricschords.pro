@@ -1,6 +1,9 @@
 {meta: title Beach Boy Blues}
 {meta: artist Elvis Presley}
 {meta: composer Roy Bennett and Sid Tepper}
+{meta: x_source classic-country}
+{meta: x_source_file beachboyblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a poor Hawaiian [G7]beach boy a [C]long way from the [G7]beach
@@ -31,3 +34,6 @@ But [F]I'm a kissing cousin to a [C]ripe pine[A7]apple [Dm]
 Yeah [F]I'm a kissing cousin to a [C]ripe pine[A7]apple [Dm]
 [G7]I'm in the [C]can 
 {end_of_verse}
+
+
+

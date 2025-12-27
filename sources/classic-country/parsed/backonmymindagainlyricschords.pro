@@ -1,6 +1,9 @@
 {meta: title Back On My Mind Again}
 {meta: artist Ronnie Milsap}
 {meta: composer Conrad Pierce and Charles Quillen}
+{meta: x_source classic-country}
+{meta: x_source_file backonmymindagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I took some time to clear my [Am]mind
@@ -43,3 +46,8 @@
 [C]Cause just when [G7]I think I'm [C]through loving [F]you
 [C]You're back on [G7]my mind [C]again
 {end_of_verse}
+
+
+
+
+

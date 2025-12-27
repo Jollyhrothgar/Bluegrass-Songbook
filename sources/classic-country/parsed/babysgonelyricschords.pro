@@ -1,6 +1,9 @@
 {meta: title Baby's Gone}
 {meta: artist Cal Smith}
 {meta: composer Conway Twitty and Bill Parks}
+{meta: x_source classic-country}
+{meta: x_source_file babysgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My hand is trembling as the key [C]unlocks the [G]door
@@ -32,3 +35,7 @@
 [G7]As she searched her mind to try to find just where our love went [C]wrong
 [G]But it’s ended and [C]it’s over and baby’s [G]gone
 {end_of_verse}
+
+
+
+

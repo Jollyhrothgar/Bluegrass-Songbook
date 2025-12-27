@@ -1,6 +1,9 @@
 {meta: title I'd Lie To You For Your Love}
 {meta: artist The Bellamy Brothers}
 {meta: composer Frankie Miller, Jeff Barry, Howard Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file idlietoyouforyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I watched you walk into the room
@@ -51,3 +54,9 @@ I can tell you what you wanna hear
 {start_of_verse: Verse 7}
 [C]That's the [G]truth
 {end_of_verse}
+
+
+
+
+
+

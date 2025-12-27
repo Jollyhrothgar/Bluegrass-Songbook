@@ -1,6 +1,9 @@
 {meta: title Joe's Been A Gettin' There}
 {meta: artist Johnny Horton}
 {meta: composer Marijohn Wilkin and Grady Martin}
+{meta: x_source classic-country}
+{meta: x_source_file joesbeenagettintherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There was a Yankee [F]Colonel in 186[C]2
@@ -57,3 +60,10 @@ Joe's been a gettin' there [G7]all this [C]time
 Joe's been a gettin' there [F]Joe's been a [C]flyin'
 Joe's been a gettin' there [G7]beatin' his [C]time
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You'll Be All Right}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash and June Carter Cash}
+{meta: x_source classic-country}
+{meta: x_source_file youllbeallrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I see you've lost your [G7]honey bee
@@ -30,3 +33,6 @@ And [C]then you'll [G7]be all [C]right
 You cry just a [F]little bit and [C]die just a [F]little bit
 And [C]then you'll [G7]be all [C]right
 {end_of_verse}
+
+
+

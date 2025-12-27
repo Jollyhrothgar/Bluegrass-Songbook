@@ -1,6 +1,9 @@
 {meta: title Misery Known As Heartache}
 {meta: artist Stonewall Jackson}
 {meta: composer Juanita Wair and Jimmy Fox}
+{meta: x_source classic-country}
+{meta: x_source_file miseryknownasheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I gather up the [F]pieces of my [C]heart dear
@@ -29,3 +32,6 @@ For the [G7]love that you believe is [C]true
 For that [F]misery known as heartache may be [C]lurking
 In his [G7]heart to leap out and torture [C]you
 {end_of_verse}
+
+
+

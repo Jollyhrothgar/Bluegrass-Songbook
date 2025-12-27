@@ -1,6 +1,9 @@
 {meta: title Getting Used To Being Loved Again}
 {meta: artist Gene Watson}
 {meta: composer Gene Dobbins and Glenn Ray}
+{meta: x_source classic-country}
+{meta: x_source_file gettingusedtobeinglovedagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll get reacquainted with some [D7]feelings I once knew
@@ -30,3 +33,6 @@ It's looking like this heart of mine is [D7]finally on the mend
 Am I [Dm]getting used to [G7]being loved [C]again
 I guess I'm [Dm]getting used to [G7]being loved [C]again
 {end_of_verse}
+
+
+

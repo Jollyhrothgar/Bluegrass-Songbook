@@ -1,6 +1,9 @@
 {meta: title Ooby Dooby}
 {meta: artist Roy Orbison}
 {meta: composer Wade Moore and Dick Penner}
+{meta: x_source classic-country}
+{meta: x_source_file oobydoobylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey baby jump over here
@@ -41,3 +44,10 @@ How to do the ooby dooby [C7]baby let's go
 Ooby [F]dooby ooby dooby ooby [C]dooby ooby dooby
 Ooby [G7]dooby ooby dooby ooby [F]dooby dooby do [C]wah do wah do wah
 {end_of_verse}
+
+
+
+
+
+
+

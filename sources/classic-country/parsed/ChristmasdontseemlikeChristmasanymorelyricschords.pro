@@ -1,6 +1,9 @@
 {meta: title Christmas Don't Seem Like Christmas Anymore}
 {meta: artist Ferlin Husky}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file ChristmasdontseemlikeChristmasanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We used to be happy at [F]Christmas
@@ -23,3 +26,5 @@ There's [C]no use to pretend life for [Fm]me is at an end
 And [C]Christmas don't seem like [G7]Christmas any[C]more
 No Christmas don't seem like [G7]Christmas any[C]more
 {end_of_verse}
+
+

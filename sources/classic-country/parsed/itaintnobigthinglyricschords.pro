@@ -1,6 +1,9 @@
 {meta: title It Ain't No Big Thing}
 {meta: artist Elvis Presley}
 {meta: composer Shorty Hall, Alice Joy Merritt, Neal Merritt}
+{meta: x_source classic-country}
+{meta: x_source_file itaintnobigthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your losing interest in me [F]and it's [C]showin'
@@ -32,3 +35,6 @@
 {start_of_verse: Verse 4}
 [G7]No it ain't no big thing but it's [C]growing
 {end_of_verse}
+
+
+

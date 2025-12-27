@@ -1,6 +1,9 @@
 {meta: title Nothing's Changed Here}
 {meta: artist Dwight Yoakam}
 {meta: composer Dwight Yoakam and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file nothingschangedherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear you walking [F]  across the [C]floor
@@ -40,3 +43,7 @@ I start every day the [C]same
 Yeah nothing's changed here [G7]without you[F] 
 I start every day the [C]same
 {end_of_verse}
+
+
+
+

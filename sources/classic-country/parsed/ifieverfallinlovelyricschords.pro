@@ -1,5 +1,8 @@
 {meta: title If I Ever Fall In Love}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file ifieverfallinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You do little things to [F]me
@@ -47,3 +50,9 @@ I'm gonna fall in love with [C]you
 If I ever fall in [G7]love
 I'm gonna fall in love with [C]you
 {end_of_verse}
+
+
+
+
+
+

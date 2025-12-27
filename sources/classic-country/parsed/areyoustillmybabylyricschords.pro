@@ -1,5 +1,8 @@
 {meta: title Are You Still My Baby}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file areyoustillmybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got such a thrill the first time that I met you
@@ -27,3 +30,6 @@ I just couldn't stand it [C7]if you did be[F]tray me
 So what I [C]really wanna know is [G7]are you still my [C]baby ([G7]my ba[C]by)
 [G7]My [C]baby  
 {end_of_verse}
+
+
+

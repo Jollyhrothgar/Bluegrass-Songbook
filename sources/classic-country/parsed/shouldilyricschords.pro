@@ -1,6 +1,9 @@
 {meta: title Should I}
 {meta: artist Daniel O'Donnell}
 {meta: composer John Hegarty and Daniel O'Donnell}
+{meta: x_source classic-country}
+{meta: x_source_file shouldilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Should I [C]tell you I love you with flowers
@@ -80,3 +83,13 @@ Or [Fm]should I just hold your hand [C]gently
 And [G7]tell you how much I love [C]you
 Should I tell you I [G7]love you with [C]flowers
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

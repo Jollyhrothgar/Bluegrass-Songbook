@@ -1,6 +1,9 @@
 {meta: title She’s Mine}
 {meta: artist George Jones}
 {meta: composer George Jones and Jack Ripley}
+{meta: x_source classic-country}
+{meta: x_source_file shesminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I won't say that I'm the only one who loves [D7]her
@@ -41,3 +44,9 @@ But since her mother left our world
 She's been daddy's little [C]girl
 She's a [G]baby I'm her [D7]daddy and she's [G]mine
 {end_of_verse}
+
+
+
+
+
+

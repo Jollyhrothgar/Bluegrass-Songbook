@@ -1,6 +1,9 @@
 {meta: title Stranger In My Place}
 {meta: artist Anne Murray}
 {meta: composer Kenny Rogers and Kin Vassy}
+{meta: x_source classic-country}
+{meta: x_source_file strangerinmyplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see the town where we were [C7]born 
@@ -34,3 +37,6 @@ I can see where [G7]I have fallen [Am]short
 [F]No love on your [C]face
 But I just can't see a [G7]stranger in my [C][F]pla-ce
 {end_of_verse}
+
+
+

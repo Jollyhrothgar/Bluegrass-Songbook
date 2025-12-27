@@ -1,6 +1,9 @@
 {meta: title Every Day I Have To Cry Some}
 {meta: artist Bob Luman}
 {meta: composer Arthur Alexander}
+{meta: x_source classic-country}
+{meta: x_source_file everydayihavetocrysomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There was a little girl I'd [Am]planned to marry
@@ -43,3 +46,8 @@ Every day I have to [Am]cry some
 Dry the water from my [Am]eyes some
 [D7]Every day I have to [G]cry
 {end_of_verse}
+
+
+
+
+

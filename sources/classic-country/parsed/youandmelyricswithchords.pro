@@ -1,6 +1,9 @@
 {meta: title You and Me with chords}
 {meta: artist Kitty Wells/Red Foley}
 {meta: composer Johnny Wright and Jack Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file youandmelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You and me together [F]life's a [C]pleasure 
@@ -36,3 +39,7 @@ But without [G7]your love I'd want to [C]flee
 And I feel the same [F]about you [C]darling 
 We [G7]belong together you and [C]me
 {end_of_verse}
+
+
+
+

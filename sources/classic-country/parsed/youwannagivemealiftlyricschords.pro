@@ -1,5 +1,8 @@
 {meta: title You Wanna Give Me A Lift}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file youwannagivemealiftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm game for just about anything
@@ -32,3 +35,7 @@ You wanna [G]give me a lift but this ole [D7]gal ain't a going that [G]far
 {start_of_verse: Verse 4}
 You wanna give me a lift but this ole [D7]gal ain't a going that [G]far
 {end_of_verse}
+
+
+
+

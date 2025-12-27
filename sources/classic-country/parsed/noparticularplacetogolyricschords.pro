@@ -1,6 +1,9 @@
 {meta: title No Particular Place To Go}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Chuck Berry}
+{meta: x_source classic-country}
+{meta: x_source_file noparticularplacetogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Riding along in my automobile
@@ -37,3 +40,6 @@ Ah but the safety belt it wouldn't [G]budge
 Cruisin' and playin' my [D7]radio [C]
 With no [D7]particular place to [G]go
 {end_of_verse}
+
+
+

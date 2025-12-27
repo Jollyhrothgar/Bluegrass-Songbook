@@ -1,6 +1,9 @@
 {meta: title Just Like Old Times}
 {meta: artist Charlie Rich}
 {meta: composer Spooner Oldham and Don Schroeder}
+{meta: x_source classic-country}
+{meta: x_source_file justlikeoldtimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I walked [G7]where we used to [C]walk
@@ -30,3 +33,6 @@ And the [F]choir is [G7]singin' our [E7]favorite [Am]song
 [F]Yes it [C]seems [G7]just like old [C]times
 [F]Oh yes it [C]seems [G7]just like old [F]tim[C]es
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title History Of Love}
 {meta: artist Ricky Nelson}
 {meta: composer Dave Burgess and Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file historyoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One day I read in a history book of [F]love [G7]so long [C]ago
@@ -25,3 +28,5 @@ And we're [C]goin' down in the history [F]histo[G7]ry of [C]love
 Goin' down in the history [F]history of [C]love
 [F]History of [C]love
 {end_of_verse}
+
+

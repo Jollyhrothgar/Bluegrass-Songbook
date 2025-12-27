@@ -1,6 +1,9 @@
 {meta: title Same Old Story}
 {meta: artist Hank Williams Jr.}
 {meta: composer Lamar Morris, Warren Keith, Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file sameoldstorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey there lonely girl can I [Am]sit with you
@@ -33,3 +36,7 @@ And the [D7]world has one more broken heart [G]tonight
 {start_of_verse: Verse 4}
 And the [D7]world has one more broken heart [G]tonight
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We Must Look In The Mirror}
 {meta: artist Roy Drusky}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file wemustlookinthemirrorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's like [C]heaven for me to [D7]be near [G]you
@@ -25,3 +28,6 @@
 [D7]For we must look in the mirror [C]tomorrow
 [D7]At our sorrow and at [G]ourselves
 {end_of_verse}
+
+
+

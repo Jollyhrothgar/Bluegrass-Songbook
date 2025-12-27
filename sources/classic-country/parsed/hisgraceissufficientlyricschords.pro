@@ -1,6 +1,9 @@
 {meta: title His Grace Is Sufficient}
 {meta: artist The Booth Brothers}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file hisgraceissufficientlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Many [C]times I'm tried and tested
@@ -43,3 +46,7 @@ And what joy [G7]fills my [C]soul
 Just to [E7]know just to [Am]know
 [F]That His [C]grace [Am]is su[D7]fficient [G7]for [F]me[Dm]   [C]
 {end_of_verse}
+
+
+
+

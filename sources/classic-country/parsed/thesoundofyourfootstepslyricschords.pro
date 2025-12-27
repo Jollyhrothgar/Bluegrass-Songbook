@@ -1,6 +1,9 @@
 {meta: title The Sound Of Your Footsteps}
 {meta: artist The Wilburn Brothers}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file thesoundofyourfootstepslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear footsteps  [Am]walking [D7]out on [G]me
@@ -31,3 +34,7 @@ And the [C]sound of your [G]footsteps
 [C]I hear footsteps [G]they won't let me be
 [C]They're your footsteps  [Am]walking [D7]out on [G]me
 {end_of_verse}
+
+
+
+

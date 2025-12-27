@@ -1,6 +1,9 @@
 {meta: title A World Of Our Own}
 {meta: artist Sonny James}
 {meta: composer Tom Springfield}
+{meta: x_source classic-country}
+{meta: x_source_file aworldofourownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Close the door light the light we're staying [F]home [C]tonight
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]When we live in a world of our [C]own
 {end_of_verse}
+
+
+
+

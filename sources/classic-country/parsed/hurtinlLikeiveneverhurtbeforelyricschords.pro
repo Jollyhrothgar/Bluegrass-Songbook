@@ -1,5 +1,8 @@
 {meta: title Hurtin' Like I've Never Hurt Before}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file hurtinlLikeiveneverhurtbeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I'm [A7]hurtin' like I've [D7]never hurt be[G]fore
@@ -36,3 +39,8 @@ Oh if [C]this is love please [D7]give it back to [G]him
 {start_of_verse: Verse 5}
 Yes I'm [A7]hurtin' like I've [D7]never hurt be[G]fore
 {end_of_verse}
+
+
+
+
+

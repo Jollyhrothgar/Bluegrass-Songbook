@@ -1,6 +1,9 @@
 {meta: title Is It That Time Again}
 {meta: artist George Strait}
 {meta: composer Dean Dillon, Buddy Cannon, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file isitthattimeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Is it that [C]time again [G7]closin' time closin' in
@@ -36,3 +39,7 @@ This [D7]man is goin' [F]out out of his [Fm]mind
 Since she left me [C]behind [Em]   [Dm]
 Since [G7]she left me [C]behind [Am]   [Dm]
 {end_of_verse}
+
+
+
+

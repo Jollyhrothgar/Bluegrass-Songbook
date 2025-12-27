@@ -1,6 +1,9 @@
 {meta: title Dreaming With Tears In My Eyes}
 {meta: artist JImmy Rodgers}
 {meta: composer Waldo O'Neal and Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file dreamingwithtearsinmyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart is [F]longing for [C]you dear
@@ -43,3 +46,8 @@ When [F]sunny and blue are the [C]skies
 While [F]shadows and loneliness [C]linger
 I'm [D7]dreaming with [G7]tears in my [C]eyes
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title An Old Farm For Sale}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file anoldfarmforsalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The curtains are drawn they're not st[C]arched anymo[A7]re 
@@ -33,3 +36,7 @@ Reads an [D7]old farm for [G]sale
 Why even the trees look [C]neglected and [A7]frail 
 Just an [D7]old farm for [G]sale
 {end_of_verse}
+
+
+
+

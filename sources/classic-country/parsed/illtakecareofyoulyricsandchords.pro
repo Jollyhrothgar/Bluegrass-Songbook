@@ -1,6 +1,9 @@
 {meta: title I'll Take Care Of You}
 {meta: artist Ronnie Milsap}
 {meta: composer Royce Glenn Sutton and Archie Jordan}
+{meta: x_source classic-country}
+{meta: x_source_file illtakecareofyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll [Am]take [Dm]care of [G7]you
@@ -43,3 +46,8 @@ Don't [Am]be sad [Dm]don't be [G7]blue
 [E7]Just count on me your [Am]whole life through
 [Dm]Cause I'll take [G7]care of [C]you
 {end_of_verse}
+
+
+
+
+

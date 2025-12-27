@@ -1,5 +1,8 @@
 {meta: title Please Sing Satin Sheets For Me}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file pleasesingsatinsheetsformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was playing in Charleston south in [F]Alabama
@@ -47,3 +50,9 @@ And that [C]l-ady of [G7]mine lived every [C]word
 Satin Sheets to lie on [F]satin pillows to cry on
 [C]Still I'm not happy don't you [G7]see...
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Who Put The Leaving In Your Eyes}
 {meta: artist Dottie West}
 {meta: composer Jim Owen}
+{meta: x_source classic-country}
+{meta: x_source_file whoputtheleavinginyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There you are standing at [C]the window [D7]again
@@ -41,3 +44,8 @@
 [D7]I see the leaving in your [G]eyes
 [D7]Who put the leaving in your [G]eyes
 {end_of_verse}
+
+
+
+
+

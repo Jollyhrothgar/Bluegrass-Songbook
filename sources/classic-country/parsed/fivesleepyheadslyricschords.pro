@@ -1,6 +1,9 @@
 {meta: title Five Sleepy Heads}
 {meta: artist Elvis Presley}
 {meta: composer Sid Tepper and Roy C. Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file fivesleepyheadslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There were five sleepyheads 
@@ -29,3 +32,6 @@ Then I [G7]heard not a [C]peep
 There were [F]five sleepy[C]heads 
 Now they're [G7]all fast [C]asleep
 {end_of_verse}
+
+
+

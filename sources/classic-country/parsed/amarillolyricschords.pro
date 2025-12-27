@@ -1,6 +1,9 @@
 {meta: title Amarillo}
 {meta: artist Emmylou Harris}
 {meta: composer Rodney Crowell and Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file amarillolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My baby never was a cheating kind
@@ -45,3 +48,8 @@ If someone hadn't played the window up [D7]above
 Oh he'd still be mine today but he heard those fiddles play
 One look and then I knew this must be [G]love
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Easy Come Easy Go}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file easycomeeasygolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it's true what you say [G7]in your [C]letter 
@@ -28,3 +31,6 @@ Ain't [G7]no future in the past broken [C]hearts and all that [C7]jazz
 [F]No tears of mine are gonna [C]flow 
 I'll have another love tomorrow easy [G7]come easy [C]go
 {end_of_verse}
+
+
+

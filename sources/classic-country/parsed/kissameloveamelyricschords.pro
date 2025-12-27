@@ -1,6 +1,9 @@
 {meta: title Kiss A Me Love A Me}
 {meta: artist Wynn Stewart}
 {meta: composer Dale Noe}
+{meta: x_source classic-country}
+{meta: x_source_file kissameloveamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Kiss-a me when I'm feeling [G7]blue 
@@ -38,3 +41,7 @@ Oh [C]kiss a me [G7]love a me [C]love
 Oh kiss a me [G7]love a me [C]love 
 Oh kiss a me [G7]love a me [C]love
 {end_of_verse}
+
+
+
+

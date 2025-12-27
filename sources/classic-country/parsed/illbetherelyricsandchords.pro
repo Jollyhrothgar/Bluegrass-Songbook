@@ -1,6 +1,9 @@
 {meta: title I'll Be There}
 {meta: artist Elvis Presley}
 {meta: composer Bobby Darin}
+{meta: x_source classic-country}
+{meta: x_source_file illbetherelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll be there when [F]all your dreams are [C]broken
@@ -27,3 +30,6 @@ Don't you [Am]worry [Dm]darling [G7]I'll be [C]there
 Don't you [Am]worry [Dm]darling [G7]I'll be [C]there 
 [C]Don't you [Am]worry [Dm]darling [G7]I'll be [C]there
 {end_of_verse}
+
+
+

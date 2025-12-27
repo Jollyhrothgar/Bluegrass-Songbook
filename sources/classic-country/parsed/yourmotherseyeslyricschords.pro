@@ -1,5 +1,8 @@
 {meta: title Your Mother's Eyes}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file yourmotherseyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My children come sit here and hold [G7]to daddy's [C]hands
@@ -27,3 +30,6 @@
 [C]Since I'm not the only man [G7]in your mother's [C]eyes
 [G7]Since I'm not the only man in your mother's [C][F]e-yes
 {end_of_verse}
+
+
+

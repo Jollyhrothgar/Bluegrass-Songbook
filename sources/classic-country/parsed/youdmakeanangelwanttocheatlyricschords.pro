@@ -1,6 +1,9 @@
 {meta: title You'd Make An Angel Want To Cheat}
 {meta: artist The Kendalls}
 {meta: composer Bob Morrison, Bill Zerface, Jim Zerface}
+{meta: x_source classic-country}
+{meta: x_source_file youdmakeanangelwanttocheatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do do do do do do do do do [F]do
@@ -46,3 +49,9 @@
 [F]I should have known that when I felt this shiver in my [C]soul
 [G7]That you’d be too good at doing what you [C]do
 {end_of_verse}
+
+
+
+
+
+

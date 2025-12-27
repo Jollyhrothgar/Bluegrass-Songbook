@@ -1,6 +1,9 @@
 {meta: title You Don't Care What Happens To Me}
 {meta: artist Ray Price}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file youdontcarewhathappenstomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling I love you so and it's kind of hard to [C]know
@@ -29,3 +32,6 @@ I [A7]know that you're glad to be [D7]free
 Give me one [G]goodbye kiss cause we can't go on like [C]this
 Oh [D7]you don't care what happens to [G]me
 {end_of_verse}
+
+
+

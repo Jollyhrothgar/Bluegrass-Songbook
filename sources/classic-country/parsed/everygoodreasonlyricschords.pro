@@ -1,6 +1,9 @@
 {meta: title Every Good Reason}
 {meta: artist Charlie Walker}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file everygoodreasonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have every good reason to [G7]leave you 
@@ -29,3 +32,6 @@ After the way you've hurt me [C]so
 But [A7]every good reason [D7]I have for leavin' 
 Never [F]seems to be [G7]enough for me to [C]go
 {end_of_verse}
+
+
+

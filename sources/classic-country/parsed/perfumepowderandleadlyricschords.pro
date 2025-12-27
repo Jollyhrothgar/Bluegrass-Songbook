@@ -1,6 +1,9 @@
 {meta: title Perfume Powder And Lead}
 {meta: artist Lonesome River Band}
 {meta: composer Tommy Morse}
+{meta: x_source classic-country}
+{meta: x_source_file perfumepowderandleadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We were married in the spring she didn't want for anything
@@ -43,3 +46,8 @@ As their bodies lay [D7]entangled in our [G]bed
 He was the [C]sheriffs only son to me she [G]was the only one
 I smelled the perfume the [D7]powder and the [G]lead
 {end_of_verse}
+
+
+
+
+

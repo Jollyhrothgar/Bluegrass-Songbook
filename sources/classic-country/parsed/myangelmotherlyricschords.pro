@@ -1,5 +1,8 @@
 {meta: title My Past Brought Me To You}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file myangelmotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm writing this song about a [F]girl that I [C]know
@@ -27,3 +30,6 @@ Mother that's the [F]sweetest name of them [C]all
 You're an angel on earth to me you are [C7]worth
 More than [D7]anything [G7]else in this [C]world
 {end_of_verse}
+
+
+

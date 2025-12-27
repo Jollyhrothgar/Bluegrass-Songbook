@@ -1,6 +1,9 @@
 {meta: title If It Ain't Love}
 {meta: artist Tammy Wynette}
 {meta: composer Mark Nesler}
+{meta: x_source classic-country}
+{meta: x_source_file ifitaintlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One sided love affairs you can bet I've had my share
@@ -38,3 +41,7 @@ If it ain't [D7]love what a [C]remarkable [D7]disguise
 If it ain't [Em]love someone's sure [C]foolin' me
 If it ain't [G]love  [D7]it sure ought to [G]be
 {end_of_verse}
+
+
+
+

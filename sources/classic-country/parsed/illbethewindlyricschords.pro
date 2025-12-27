@@ -1,6 +1,9 @@
 {meta: title I'll Be The Wind}
 {meta: artist Garth Brooks}
 {meta: composer Mark Irwin and Josh Kear}
+{meta: x_source classic-country}
+{meta: x_source_file illbethewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]You let him lock you away in his prison of [G]sadness
@@ -44,3 +47,8 @@ I'll be your [G]midnight friend and we'll fly [Em]away
 To [F]spread your wings [C]again 
 I'll be the [G]wind
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Wandering Soul}
 {meta: artist George Jones}
 {meta: composer George Jones and Bill Dudley}
+{meta: x_source classic-country}
+{meta: x_source_file wanderingsoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh lend me a hand [C]please Lord and guide [G]me
@@ -29,3 +32,6 @@ A sheep that has [D7]strayed so far from the [G]fold
 Just tarrying along in the [C]clutch of old [G]Satan
 But I'm hoping someday [D7]you'll save my [G]soul
 {end_of_verse}
+
+
+

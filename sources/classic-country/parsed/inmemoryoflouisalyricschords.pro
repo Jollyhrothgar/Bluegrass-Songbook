@@ -1,6 +1,9 @@
 {meta: title In Memory Of Louisa}
 {meta: artist Sonny James}
 {meta: composer Bob Tubert and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file inmemoryoflouisalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]In [C]memory [G7]of [C]Louisa I save each [F]tear [Dm]I [G7]cry
@@ -20,3 +23,4 @@
 [F]Since [G7]my Louisa's [F][C]gone
 [G7]My Louisa's [C]gone
 {end_of_verse}
+

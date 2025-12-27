@@ -1,5 +1,8 @@
 {meta: title Stony Mountain West Virginia}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file stonymountainwestvirginialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stony Mountain [G7]West Vir[C]ginia
@@ -49,3 +52,9 @@ Is a [F]place I long to [C]be
 Stony [F]Mountain West Vir[C]ginia
 That's where my darling [G7]waits for [C]me
 {end_of_verse}
+
+
+
+
+
+

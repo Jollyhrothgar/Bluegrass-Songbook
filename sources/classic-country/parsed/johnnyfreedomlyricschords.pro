@@ -1,6 +1,9 @@
 {meta: title Johnny Freedom}
 {meta: artist Johnny Horton}
 {meta: composer Jule Styne and George David Weiss}
+{meta: x_source classic-country}
+{meta: x_source_file johnnyfreedomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When our country [D7]was a [G]baby [D7]and the [G]Redcoats [D7]had their [G]way
@@ -44,3 +47,8 @@ He's the spirit of [C]America our [Am]country's pride and [D7]joy
 Hats off to [G]Johnny Freedom [C]Johnny Freedom 
 [D7]That's our that's our that's our [G]boy 
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title That's Okay}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file thatsokaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]That's okay it's [C]alright 
@@ -39,3 +42,6 @@ When I'm [D7]feeling like a [G]fool
 {start_of_verse: Verse 4}
 [C]When I'm [D7]feeling like a [G]fool
 {end_of_verse}
+
+
+

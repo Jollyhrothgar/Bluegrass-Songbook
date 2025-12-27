@@ -1,6 +1,9 @@
 {meta: title Heart We Did All We Could}
 {meta: artist Jean Shepard}
 {meta: composer Ned Miller}
+{meta: x_source classic-country}
+{meta: x_source_file heartwedidallwecouldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well there he goes he hardly knows [C]the heart he's [G]breaking
@@ -23,3 +26,5 @@
 [D7]Heart we did all that we [G]could
 [D7]Heart we did all that we [G]could
 {end_of_verse}
+
+

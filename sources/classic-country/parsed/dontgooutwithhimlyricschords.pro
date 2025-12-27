@@ -1,6 +1,9 @@
 {meta: title Don't Go Out With Him}
 {meta: artist Tanya Tucker}
 {meta: composer Radney M. Foster and Bill Lloyd}
+{meta: x_source classic-country}
+{meta: x_source_file dontgooutwithhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby your heart is in serious danger
@@ -45,3 +48,7 @@ I'll be your [D7]only one
 [G]Baby you’re headed for a brand new heartache
 [Em]Don't go out with her
 {end_of_verse}
+
+
+
+

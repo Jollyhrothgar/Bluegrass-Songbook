@@ -1,6 +1,9 @@
 {meta: title I’ll Be Somewhere Listening For My Name}
 {meta: artist Bill Anderson}
 {meta: composer V.O. Stamps - J.B. Coats}
+{meta: x_source classic-country}
+{meta: x_source_file illbesomewherelisteningformynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When my Savior calls I will answer
@@ -50,3 +53,11 @@ I'll be [D7]somewhere listening for my [G]name
 When my Savior calls I will answer
 I'll be [D7]somewhere listening for my [G]name
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Someone I Used to Know}
 {meta: artist Rhonda Vincent}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file justsomeoneiusedtoknowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a [C]picture that I [G]carry
@@ -23,3 +26,5 @@ I don't tell them how lost I am [C]without you
 And I say [G]just some[D7]one I used to [G]know
 Yes I say just some[D7]one I used to [G]know
 {end_of_verse}
+
+

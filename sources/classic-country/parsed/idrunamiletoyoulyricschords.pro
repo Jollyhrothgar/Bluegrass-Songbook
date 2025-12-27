@@ -1,6 +1,9 @@
 {meta: title I'd Run A Mile To You}
 {meta: artist Lynn Anderson}
 {meta: composer Glenn Sutton and Mac Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file idrunamiletoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know exactly [G7]where our love went [C]wrong
@@ -32,3 +35,6 @@ If you'd take a step toward [C]me
 If you'd [F]take a step toward [C]me 
 [G7]I'd run a mile to [C]you
 {end_of_verse}
+
+
+

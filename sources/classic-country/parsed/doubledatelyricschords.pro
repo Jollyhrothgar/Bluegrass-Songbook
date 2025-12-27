@@ -1,5 +1,8 @@
 {meta: title Double Date}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file doubledatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Me and my [Em]buddy went [C]on a double [D7]date 
@@ -26,3 +29,6 @@ He got my loving [Em]baby and [C]introduced his [D7]friend
 [C]Now my baby's gone I'm all alone 
 [C][D7]A--ll [D7]because [G]of [C]a [G]double date [C]of a [G]double date 
 {end_of_verse}
+
+
+

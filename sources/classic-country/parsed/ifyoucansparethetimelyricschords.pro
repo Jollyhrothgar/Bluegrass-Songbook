@@ -1,6 +1,9 @@
 {meta: title If You Can Spare The Time}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Guidry Tassin}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoucansparethetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if you've got the time honey [F]I've got lots of folding money
@@ -29,3 +32,6 @@ Well if you've got the time honey [F]I've got lots of folding money
 Just [C]as long as you will help me spend it [F]everything will be just splendid
 [C]Well I'll quit spendin' money [G7]when you run out of [C]time
 {end_of_verse}
+
+
+

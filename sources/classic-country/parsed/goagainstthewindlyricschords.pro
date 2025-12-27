@@ -1,5 +1,8 @@
 {meta: title Go Against The Wind}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file goagainstthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Met a girl out in [C]Monterey
@@ -41,3 +44,8 @@ I never [B7]stopped to wonder why [G]
 {start_of_verse: Verse 5}
 [C]Screamin'  through the [G]night
 {end_of_verse}
+
+
+
+
+

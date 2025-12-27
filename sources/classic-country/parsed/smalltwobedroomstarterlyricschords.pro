@@ -1,6 +1,9 @@
 {meta: title Small Two Bedroom Starter}
 {meta: artist Reba McEntire}
 {meta: composer Harry Shannon and Mitch Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file smalltwobedroomstarterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The house stood empty [C]on a [G]corner 
@@ -72,3 +75,12 @@ Owner [C]leaving [G]town you better [D7]hurry down [G]today
 Small two bedroom starter 
 Waitin' [D7]for a brand new [G]owner
 {end_of_verse}
+
+
+
+
+
+
+
+
+

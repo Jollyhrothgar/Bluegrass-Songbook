@@ -1,6 +1,9 @@
 {meta: title Does Your Heart Beat For Me}
 {meta: artist Patsy Cline}
 {meta: composer Russ Morgan, Arnold Johnson, Mitchell Parish}
+{meta: x_source classic-country}
+{meta: x_source_file doesyourheartbeatformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Though we [D7]said goodbye [Am]when [D7]the moon was [Am]high
@@ -22,3 +25,5 @@
 [E7]When you're lonesome my [A7]sweetheart
 [Em]Does your [D7]heart beat  for [G]me
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Who Am I}
 {meta: artist Elvis Presley}
 {meta: composer Charles Goodman}
+{meta: x_source classic-country}
+{meta: x_source_file whoamilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I think of how He [G7]came so far from [C]glory
@@ -42,3 +45,7 @@ For who am [C]I
 But to that old rugged cross He'd [G7]go
 For who [F]am [C]I
 {end_of_verse}
+
+
+
+

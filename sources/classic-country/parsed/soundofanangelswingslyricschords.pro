@@ -1,5 +1,8 @@
 {meta: title Sound Of An Angel’s Wings}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file soundofanangelswingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jenny was the girl that I [F]once called my [C]own
@@ -31,3 +34,6 @@ And [C]again I heard the [F]sound of an [G7]angel's [C]wings
 And the [C]last thing I heard was the [F]sound of an [G7]angel's [C]wings
 And the last thing I heard was the [F]sound of an [G7]angel's [C]wings
 {end_of_verse}
+
+
+

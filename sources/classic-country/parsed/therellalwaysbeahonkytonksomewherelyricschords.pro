@@ -1,6 +1,9 @@
 {meta: title There'll Always Be A Honky Tonk Somewhere}
 {meta: artist Randy Travis}
 {meta: composer Johnny McRae and Steve Clark}
+{meta: x_source classic-country}
+{meta: x_source_file therellalwaysbeahonkytonksomewherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There may not be a Super Bowl in [F]208[C]3
@@ -39,3 +42,7 @@ And a [C]lady looking lonely from a [C7]losing love [F]affair
 Yeah there'll [C]always be a [G7]honky tonk some[C]where
 [F]Yeah there'll [C]always be a [G7]honky tonk some[C]where
 {end_of_verse}
+
+
+
+

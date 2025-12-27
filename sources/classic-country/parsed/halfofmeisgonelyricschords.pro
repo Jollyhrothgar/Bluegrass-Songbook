@@ -1,6 +1,9 @@
 {meta: title Half of Me is Gone}
 {meta: artist George Jones}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file halfofmeisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walked a thousand miles last night and never left my [D7]room
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [D7]Without you baby half of me is [G]gone
 {end_of_verse}
+
+
+
+
+

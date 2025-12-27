@@ -1,6 +1,9 @@
 {meta: title The Devil Ain't a Lonely Woman's Friend}
 {meta: artist Red Steagall}
 {meta: composer Dallas Frazier and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file thedevilaintalonelywomansfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Barely past f[Am]ourteen Ginger M[C]ae met up with S[Am]hane
@@ -50,3 +53,9 @@ And the state of Tenne[G7]ssee ain’t the [D7]promised land
 Memphis [G7]Tennessee or [D7]Jer[A7]usa[B7]lem 
 And the [G7]devil ain’t a [D7]lonely woman’s friend   
 {end_of_verse}
+
+
+
+
+
+

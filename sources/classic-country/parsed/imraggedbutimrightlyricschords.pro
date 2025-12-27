@@ -1,6 +1,9 @@
 {meta: title I'm Ragged But I'm Right}
 {meta: artist Johnny Cash}
 {meta: composer George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file imraggedbutimrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I’ve come here to tell you folks I'm ragged but I'm [G7]right
@@ -35,3 +38,7 @@ Tag
 [F]I'm a rambler I'm a gambler and I [C]lead every [A7]life
 [D7]But I tell you folks I'm [G7]ragged but I'm [C]right
 {end_of_verse}
+
+
+
+

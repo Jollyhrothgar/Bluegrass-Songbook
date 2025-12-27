@@ -1,5 +1,8 @@
 {meta: title Funny How Time Slips Away}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file funnyhowtimeslipsawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well hello there [C]my it's been a long long [G]time
@@ -21,3 +24,5 @@
 [G7]But remember what I tell [C]you that in time you're gonna [A7]pay
 [D7]And it's surprising [Am]how time  [D7]slips  [G]away
 {end_of_verse}
+
+

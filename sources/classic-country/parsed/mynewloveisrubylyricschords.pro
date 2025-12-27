@@ -1,6 +1,9 @@
 {meta: title My New Love Is Ruby}
 {meta: artist George Morgan}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file mynewloveisrubylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know the [G7]name of [C]your new love
@@ -29,3 +32,6 @@ You never told me but [G7]then never [C]mind
 For [F]I have my new love my [C]warm love 
 My [Am]sweet love [C]Ruby [G7]Ruby red [C]wine
 {end_of_verse}
+
+
+

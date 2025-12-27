@@ -1,5 +1,8 @@
 {meta: title Kneel And Let The Lord Take Your Load}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file kneelandletthelordtakeyourloadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When days are filled with trouble and temptation [C]is so [G]great
@@ -28,3 +31,6 @@
 [G]No matter what they say the [C]Lord will find a [G]way
 [D7]Kneel and let the Lord take your [G]load
 {end_of_verse}
+
+
+

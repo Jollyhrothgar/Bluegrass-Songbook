@@ -1,6 +1,9 @@
 {meta: title This Song Is For You}
 {meta: artist Merle Haggard}
 {meta: composer Freddy Powers and Mary Powers}
+{meta: x_source classic-country}
+{meta: x_source_file thissongisforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This song is for you  you know who you are
@@ -46,3 +49,10 @@ Before I run [G7]completely out of [C]love
 {start_of_verse: Verse 3}
 You can't stay in love with a [G7]memory
 {end_of_verse}
+
+
+
+
+
+
+

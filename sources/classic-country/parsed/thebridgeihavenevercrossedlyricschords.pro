@@ -1,6 +1,9 @@
 {meta: title The Bridge I Have Never Crossed}
 {meta: artist Ferlin Husky}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file thebridgeihavenevercrossedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All my life I've [C]traveled o'er the [G]country
@@ -43,3 +46,8 @@
 [G]For a true love I'd [C]gladly pay the [G]cost
 [D7]But that's the one bridge I have never [G]crossed
 {end_of_verse}
+
+
+
+
+

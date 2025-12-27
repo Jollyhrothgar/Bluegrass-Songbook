@@ -1,6 +1,9 @@
 {meta: title Have I Told You Lately That I Love You}
 {meta: artist Jim Reeves}
 {meta: composer Scott Wiseman}
+{meta: x_source classic-country}
+{meta: x_source_file haveitoldyoulatelythatiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have I told you lately that I love [G7]you
@@ -44,3 +47,8 @@ I'm no [G7]good without you [C]anyhow
 [C7]Dear have I [F]told you lately that I love [C]you
 Well [G7]darling I'm telling you [C]now
 {end_of_verse}
+
+
+
+
+

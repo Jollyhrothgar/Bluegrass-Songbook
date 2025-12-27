@@ -1,6 +1,9 @@
 {meta: title Meet Me Under The Mistletoe}
 {meta: artist Randy Travis}
 {meta: composer Joe Collins and Mark Irwin}
+{meta: x_source classic-country}
+{meta: x_source_file meetmeunderthemistletoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Meet me under the mistletoe midnight Christmas [D7]Eve
@@ -40,3 +43,8 @@ The presents that we bought will have to [C]wait beneath the [A7]tree
 {start_of_verse: Verse 4}
 Meet me under the [Em]mistletoe [A7]midnight [D7]Christmas [G]Eve
 {end_of_verse}
+
+
+
+
+

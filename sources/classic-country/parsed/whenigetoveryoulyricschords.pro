@@ -1,6 +1,9 @@
 {meta: title When I Get Over You}
 {meta: artist Billy Crash Craddock}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file whenigetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I (when I when I) get over you[G7]   [C]
@@ -36,3 +39,7 @@ If I get over [C]you
 {start_of_verse: Verse 5}
 When I (when I when I)  
 {end_of_verse}
+
+
+
+

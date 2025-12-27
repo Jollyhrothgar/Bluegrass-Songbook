@@ -1,6 +1,9 @@
 {meta: title It's Goodbye And So Long To You}
 {meta: artist Mac Wiseman and The Osborne Brothers}
 {meta: composer Harold Breau and Raymond Contere}
+{meta: x_source classic-country}
+{meta: x_source_file itsgoodbyeandsolongtoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can send me pretty flowers you can send me valentines
@@ -36,3 +39,7 @@ Call me on the tele[G7]phone I won't be home
 Keep your old love letters I'm all through with you
 It's goodbye and so long to [C]you
 {end_of_verse}
+
+
+
+

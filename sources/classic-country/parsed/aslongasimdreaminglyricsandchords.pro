@@ -1,6 +1,9 @@
 {meta: title As Long as I'm Dreaming Lyrics and Chords}
 {meta: artist Hank Snow}
 {meta: composer Vaughn Horton}
+{meta: x_source classic-country}
+{meta: x_source_file aslongasimdreaminglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As long as I'm [F]dream-[C]ing you'll be in my [G7]arms dear
@@ -22,3 +25,5 @@ You'll never grow lonesome you'll never grow [C]old
 I'll build you a castle at the [C7]end of the [F]rainbow
 And as long as I'm [C]dreaming I'll [G7]build it of [C]gold
 {end_of_verse}
+
+

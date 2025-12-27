@@ -1,6 +1,9 @@
 {meta: title Pedro Gonzales Tennessee Lopez}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer J. King and Jimmy Rule}
+{meta: x_source classic-country}
+{meta: x_source_file pedrogonzalestennesseelopezlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A hillbilly boy from [G7]Mexico
@@ -51,3 +54,9 @@ With his [C]hillbilly fiddle and his tambourine
 He's the [F]jumpiness Mexican jumping bean
 He's [G7]Pedro Gonzales Tennessee [C]Lopez
 {end_of_verse}
+
+
+
+
+
+

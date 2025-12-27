@@ -1,6 +1,9 @@
 {meta: title Kentucky Gambler}
 {meta: artist Merle Haggard}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file kentuckygamblerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wanted more from life than four kids and a [C]wife
@@ -55,3 +58,10 @@ And lady luck she'll lead you on
 [C]And it seems to [G]me a gambler loses [D7]much more than he [G]wins
 [D7]Much more than he [G]wins
 {end_of_verse}
+
+
+
+
+
+
+

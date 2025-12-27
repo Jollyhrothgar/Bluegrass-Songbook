@@ -1,6 +1,9 @@
 {meta: title Easy For You To Say}
 {meta: artist Emmylou Harris}
 {meta: composer Jack W. Routh and Randy Sharp}
+{meta: x_source classic-country}
+{meta: x_source_file easyforyoutosaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]These things happen
@@ -53,3 +56,9 @@ That's easy for [F]you to [C]say
 {start_of_verse: Verse 5}
 [G7]That's easy for [F]you to [C]say
 {end_of_verse}
+
+
+
+
+
+

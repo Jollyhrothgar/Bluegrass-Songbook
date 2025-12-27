@@ -1,5 +1,8 @@
 {meta: title Strange Empty World}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file strangeemptyworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Last [C]night my dreams were shattered into [F]pieces
@@ -28,3 +31,6 @@ But the [D7]night will bring the teardrops and the [G7]emptiness
 [C]I'd do anything to [F]win your love [C]again
 I'm in a strange empty [G7]world without [F]yo[C]u
 {end_of_verse}
+
+
+

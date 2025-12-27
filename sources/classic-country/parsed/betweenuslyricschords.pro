@@ -1,6 +1,9 @@
 {meta: title Between Us}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file betweenuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let's start by stopping long enough to [C]talk things [G]over
@@ -33,3 +36,7 @@ An honest love is a [G]love that will [C]sur[G]vive
 {start_of_verse: Verse 4}
 An honest love is a [D7]love that will [G]survive
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Gotta Find A Way}
 {meta: artist Billy Walker}
 {meta: composer Hank Cochran and Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file gottafindawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I [D7]open my eyes and you're [G]on my mind
@@ -48,3 +51,9 @@ Watching time go by and leaving [C]me behind
 [D7]Gotta find a way to get you [G]off my mind
 [D7]Gotta find a way to get you [G]off my mind
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Happy Trails}
 {meta: artist Roy Rogers and Dale Evans}
+{meta: x_source classic-country}
+{meta: x_source_file happytrailslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Happy trails to you until we meet [G7]again
@@ -16,3 +19,4 @@ Who cares about the clouds when we're [F]together
 Just [A7]sing a song and bring the sunny [G7][D7]weather
 Happy [C]trails to [A7]you till we [Dm]meet [C][G7]a-gain 
 {end_of_verse}
+

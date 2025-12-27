@@ -1,5 +1,8 @@
 {meta: title I Love To Sing}
 {meta: artist Vernon Oxford}
+{meta: x_source classic-country}
+{meta: x_source_file ilovetosinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love to sing sing sing I love to [F]sing
@@ -35,3 +38,7 @@
 [C]I love to sing sing sing  I love to [F]sing
 [C]Singing a [G7]song I [C]understand
 {end_of_verse}
+
+
+
+

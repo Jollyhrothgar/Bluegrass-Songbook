@@ -1,6 +1,9 @@
 {meta: title Mad Mad World}
 {meta: artist Ricky Nelson}
 {meta: composer Dorsey Burnette and Joe Osborn}
+{meta: x_source classic-country}
+{meta: x_source_file madmadworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody's runnin' in a mad [F]mad [C]world
@@ -42,3 +45,8 @@
 [G7]If only I could be like [C]him
 [G7]If only I could be like [C]him
 {end_of_verse}
+
+
+
+
+

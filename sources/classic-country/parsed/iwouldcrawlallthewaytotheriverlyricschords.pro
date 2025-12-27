@@ -1,5 +1,8 @@
 {meta: title I Would Crawl All The Way To The River}
 {meta: artist The Oak Ridge Boys}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldcrawlallthewaytotheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A long time ago there was a man
@@ -49,3 +52,9 @@ I would [C]crawl all the way to the [F]sea
 Just to [C]watch Him walk on the [F]water
 And [C]lay His [G7]loving hand on [C]me
 {end_of_verse}
+
+
+
+
+
+

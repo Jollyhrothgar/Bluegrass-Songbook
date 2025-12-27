@@ -1,5 +1,8 @@
 {meta: title Ol' Blue}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file olbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They called him for odd jobs like hauling off garbage 
@@ -42,3 +45,8 @@ And [F]all the dirty work they wouldn’t [C]do
 He plowed in their gardens and cleaned out their ditches
 When [F]things needed fixing they call on Ol’ [G7]Blue
 {end_of_verse}
+
+
+
+
+

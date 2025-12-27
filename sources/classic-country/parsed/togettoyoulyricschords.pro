@@ -1,5 +1,8 @@
 {meta: title To Get To You}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file togettoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I would walk out on my friends to get to [G7]you
@@ -29,3 +32,5 @@ Just because I know just how much you want me [C]to
 You're the only thing that can bring my [C7]world in [F]view
 Every [C]breath I take every [G7]move I make is to get to [C]you
 {end_of_verse}
+
+

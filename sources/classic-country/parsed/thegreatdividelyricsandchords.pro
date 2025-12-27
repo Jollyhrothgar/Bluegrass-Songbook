@@ -1,6 +1,9 @@
 {meta: title The Great Divide}
 {meta: artist Reba McEntire}
 {meta: composer Michael Heeney and Jackson Leap}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatdividelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I could [G7]swear this king size bed keeps gettin' [C]wider
@@ -33,3 +36,7 @@ We can't [C]rebuild the bridge we [G7]burned between our [C]hearts
 {start_of_verse: Verse 5}
 The [F]great [G7]di-[C]vide ain't in Colo[F]rad[C]o
 {end_of_verse}
+
+
+
+

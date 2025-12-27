@@ -1,6 +1,9 @@
 {meta: title A Little Bit Lonesome}
 {meta: artist Hank Locklin}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file alittlebitlonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A little bit lonesome a little bit [C]blue 
@@ -29,3 +32,6 @@ What have I [G]done what did I [D7]do what did I [G]say
 A little bit [G]lonesome a little bit [C]blue
 Oh baby come [G]home your daddy's so [D7]low and lonesome for [G]you
 {end_of_verse}
+
+
+

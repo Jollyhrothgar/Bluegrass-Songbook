@@ -1,6 +1,9 @@
 {meta: title Ain't No Trick It Takes Magic}
 {meta: artist Lee Greenwood}
 {meta: composer Jim Hurt and Steve Pippin}
+{meta: x_source classic-country}
+{meta: x_source_file aintnotrickittakesmagiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't no big deal to [F]lose  I [Dm]keep [G7]telling [C]myself
@@ -50,3 +53,9 @@ I'll find somebody else
 [F]You'd think that even [Em]a fool like [Am]me
 [Dm]Could have found [Em]true love in [F]my [Gm]life
 {end_of_verse}
+
+
+
+
+
+

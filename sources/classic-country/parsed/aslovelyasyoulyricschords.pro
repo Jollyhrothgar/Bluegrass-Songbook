@@ -1,6 +1,9 @@
 {meta: title As Lovely As You}
 {meta: artist Alan Jackson}
 {meta: composer John Pennell}
+{meta: x_source classic-country}
+{meta: x_source_file aslovelyasyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A big moon is risin' so [C]bright in the [G]sky
@@ -34,3 +37,7 @@ I [C]love [D7]you [Em]more than I can [Bm]show you
 {start_of_verse: Verse 5}
 [D7]In my [G]heart
 {end_of_verse}
+
+
+
+

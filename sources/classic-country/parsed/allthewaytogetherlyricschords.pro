@@ -1,6 +1,9 @@
 {meta: title All The Way Together}
 {meta: artist Sonny James}
 {meta: composer Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file allthewaytogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All the [Em]way [C]together we’ll go [F]all [C]the [D7]way
@@ -22,3 +25,5 @@
 [F]Yes darling [G7]you’ll go all [C]the way with [Am]me
 [F]And I’ll go all the [G7]way with [C]you
 {end_of_verse}
+
+

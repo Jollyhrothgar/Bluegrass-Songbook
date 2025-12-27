@@ -1,6 +1,9 @@
 {meta: title Onward Christian Soldiers}
 {meta: artist Tommy Overstreet}
 {meta: composer Sabine Baring-Gould and Arthur S. Sullivan}
+{meta: x_source classic-country}
+{meta: x_source_file onwardchristiansoldierslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Onward Christian [G7]soldiers marching as to [C]war
@@ -30,3 +33,7 @@ With the cross of [Am]Jes[G7]us [D7]going [G7]on be[C]fore
 [C]Onward Christian [G7]soldiers marching as to [C]war
 With the cross of [Am]Jes[G7]us [D7]going [G7]on be[C]fore
 {end_of_verse}
+
+
+
+

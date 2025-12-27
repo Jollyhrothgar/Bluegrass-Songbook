@@ -1,6 +1,9 @@
 {meta: title I Ain't Broke But I'm Badly Bent}
 {meta: artist Dan Tyminski}
 {meta: composer Fred Carter}
+{meta: x_source classic-country}
+{meta: x_source_file iaintbrokebutimbadlybentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm going back to the country
@@ -42,3 +45,9 @@ I ain't [D7]broke but I'm badly [G]bent
 Well now I [C]know just where it [G]went
 I ain't [D7]broke but brother I'm badly [G]bent
 {end_of_verse}
+
+
+
+
+
+

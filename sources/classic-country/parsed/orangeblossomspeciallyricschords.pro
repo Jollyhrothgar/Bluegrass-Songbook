@@ -1,6 +1,9 @@
 {meta: title Orange Blossom Special}
 {meta: artist Johnny Cash}
 {meta: composer E.T. Rouce}
+{meta: x_source classic-country}
+{meta: x_source_file orangeblossomspeciallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look yonder coming a-coming down that railroad [C7]track 
@@ -25,3 +28,6 @@ Hey talk about her rambling she's the fastest train on the [C7]line
 Hey [F]talk about her traveling  she's the fastest train on the [C]line 
 It's that [G7]Orange Blossom Special  rolling down the seaboard [C]line 
 {end_of_verse}
+
+
+

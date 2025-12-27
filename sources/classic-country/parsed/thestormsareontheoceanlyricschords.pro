@@ -1,6 +1,9 @@
 {meta: title The Storms Are On The Ocean}
 {meta: artist Connie Smith}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file thestormsareontheoceanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm going [C]away for to [G]leave you love
@@ -48,3 +51,9 @@ If I prove [D7]false to [G]thee
 This [C]world may lose its [G]motion love
 If I prove [D7]false to [G]thee
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Need Jesus}
 {meta: artist Rhonda Vincent}
 {meta: composer Willie Henderson and Willie Henderson Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file ineedJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I need [G7]Jesus  [F]you need Him [C]too
@@ -25,3 +28,5 @@ When you're in trouble [A#7]don't know what to [F]do
 Well call on [C]Jesus [Am]Jesus [D7]Jesus He'll [G7]carry you [C]through
 ([F]He'll carry you [C]through)
 {end_of_verse}
+
+

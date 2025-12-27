@@ -1,5 +1,8 @@
 {meta: title A Thousand Miles From Nowhere}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file athousandmilesfromnowherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I'm a [C]thousand miles from no[Am]where
@@ -59,3 +62,12 @@ Oh [F]I   [G7]I
 I'm a [C]thousand miles from no[Am]where
 I'm a [C]thousand miles from no[Am]where
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Too Many Tears To Make Love Strong}
 {meta: artist Don Williams}
 {meta: composer Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file toomanytearstomakelovestronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's comin' all apart babe [C]   [D7]with every tearin' [G]word
@@ -33,3 +36,6 @@ I'd [C]need another [D7]lifetime
 But I'll [G]never last that [C]long
 It takes [Am]too many [D7]tears to make love [G]strong
 {end_of_verse}
+
+
+

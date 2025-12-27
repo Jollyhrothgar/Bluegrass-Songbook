@@ -1,6 +1,9 @@
 {meta: title She's Gone Gone Gone}
 {meta: artist Lefty Frizzel}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file shesgonegonegonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She said if I ever deceived [C]her
@@ -35,3 +38,7 @@ She's [D7]one second farther from [G]me
 {start_of_verse: Verse 5}
 repeat chorus
 {end_of_verse}
+
+
+
+

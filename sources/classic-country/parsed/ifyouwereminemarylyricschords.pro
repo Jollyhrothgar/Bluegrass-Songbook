@@ -1,6 +1,9 @@
 {meta: title If You Were Mine Mary}
 {meta: artist Eddy Arnold}
 {meta: composer Chip Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwereminemarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you were mine Mary know what I'd do
@@ -23,3 +26,5 @@
 [F]I'd take my [C]heart [Am]Mary  and [F]with all my [G7]love
 [C]I'd give it to you
 {end_of_verse}
+
+

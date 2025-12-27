@@ -1,5 +1,8 @@
 {meta: title Each Time}
 {meta: artist Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file eachtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Each time I see your picture  
@@ -28,3 +31,6 @@ And the [G7]burning desire [C]remains
 For each time I see your [G]picture 
 I [D7]loose my heart [G]again
 {end_of_verse}
+
+
+

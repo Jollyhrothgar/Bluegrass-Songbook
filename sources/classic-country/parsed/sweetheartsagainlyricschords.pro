@@ -1,6 +1,9 @@
 {meta: title Sweethearts Again}
 {meta: artist The Osborne Brothers}
 {meta: composer Bob Gallion}
+{meta: x_source classic-country}
+{meta: x_source_file sweetheartsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll never love another it's [C]true
@@ -29,3 +32,6 @@
 [C]Let's be sweethearts [G]again
 [D7]Darling [D7][G]just [Am]you [D7][C]and [G][C]me
 {end_of_verse}
+
+
+

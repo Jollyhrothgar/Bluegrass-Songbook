@@ -1,6 +1,9 @@
 {meta: title I Don't Claim to be an Angel}
 {meta: artist Kitty Wells}
 {meta: composer Johnny Wright and Jack Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file idontclaimtobeanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You'll hear talk around town  of [C]things I used to [G]do
@@ -29,3 +32,6 @@ But when I met you darling that all came to an [D7]end
 [G]Never doubt my love dear whatever [C]you may [G]do
 I don't claim to be an angel but my [D7]love for you is [G]true
 {end_of_verse}
+
+
+

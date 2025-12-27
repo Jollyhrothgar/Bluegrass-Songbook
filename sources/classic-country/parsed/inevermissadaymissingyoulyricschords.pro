@@ -1,6 +1,9 @@
 {meta: title I Never Miss A Day Missing You}
 {meta: artist Moe Bandy}
 {meta: composer Carl Belew and Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file inevermissadaymissingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never take a drink or go out [C]dancin'
@@ -33,3 +36,7 @@ And I [D7]never miss a day missing [G]you
 {start_of_verse: Verse 4}
 No I [D7]never miss a day missing [G]you
 {end_of_verse}
+
+
+
+

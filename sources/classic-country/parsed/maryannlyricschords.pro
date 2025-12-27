@@ -1,6 +1,9 @@
 {meta: title Mary Ann}
 {meta: artist Jimmy Martin}
 {meta: composer Johnny Stills and Lonnie Treat}
+{meta: x_source classic-country}
+{meta: x_source_file maryannlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a girl on my [C]mind I can't get [G]over
@@ -35,3 +38,7 @@ There'll always be a place in my [D7]heart for Mary [G]Ann
 It's no [C]matter if I live to be a [G]hundred
 There'll always be a place in my [D7]heart for Mary [G]Ann
 {end_of_verse}
+
+
+
+

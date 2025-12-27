@@ -1,6 +1,9 @@
 {meta: title Think It Over}
 {meta: artist Buck Owens}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file thinkitoverlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I awoke this morning you were [D7]gone
@@ -29,3 +32,6 @@ Think it over don't [C]let love fade away
 Leave your pride [C]meet me half way
 [D7]Think it over don't let it end this [G]way
 {end_of_verse}
+
+
+

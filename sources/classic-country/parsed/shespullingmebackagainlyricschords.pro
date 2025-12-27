@@ -1,6 +1,9 @@
 {meta: title She's Pulling Me Back Again}
 {meta: artist Mickey Gilley}
 {meta: composer Jerry Foster & Jerry Rice}
+{meta: x_source classic-country}
+{meta: x_source_file shespullingmebackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's pulling me back again
@@ -29,3 +32,6 @@ Right [C]now I [F]need your [C]love to [G7]hold on [C]to
 [F]Take me [C]in your arms right [F]now
 Hold me [G7]tight
 {end_of_verse}
+
+
+

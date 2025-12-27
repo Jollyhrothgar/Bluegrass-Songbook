@@ -1,6 +1,9 @@
 {meta: title Drinking And Dreaming}
 {meta: artist Waylon Jennings}
 {meta: composer Troy Seals and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file drinkinganddreaminglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody's looking for some way in
@@ -53,3 +56,12 @@ She's got my body but my heart and soul
 All I got is a job that I don't like
 [F]And a woman that don't [C]understand
 {end_of_verse}
+
+
+
+
+
+
+
+
+

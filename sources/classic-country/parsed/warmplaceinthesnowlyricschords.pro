@@ -1,6 +1,9 @@
 {meta: title Warm Place In The Snow}
 {meta: artist John Anderson}
 {meta: composer Bill Rice, Sharon Vaughn, John W. Ryles}
+{meta: x_source classic-country}
+{meta: x_source_file warmplaceinthesnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]chilling wind [D7]right outside my [G7]window
@@ -33,3 +36,7 @@ Oh I [C]think I've found a [G7]warm place in the [C]snow
 {start_of_verse: Verse 5}
 Oh I think I've found a [G7]warm place in the [C]snow 
 {end_of_verse}
+
+
+
+

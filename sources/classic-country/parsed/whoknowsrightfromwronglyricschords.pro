@@ -1,6 +1,9 @@
 {meta: title Who Knows Right From Wrong}
 {meta: artist Porter Wagoner}
 {meta: composer Pearl Butler}
+{meta: x_source classic-country}
+{meta: x_source_file whoknowsrightfromwronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nothing is [F]colder than a heart that's gone [C]wrong
@@ -30,3 +33,7 @@
 [C]Nothing is [F]colder than a heart that's gone [C]wrong
 [G7]For when you love someone who knows right from [C]wrong
 {end_of_verse}
+
+
+
+

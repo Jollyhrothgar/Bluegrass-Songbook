@@ -1,5 +1,8 @@
 {meta: title I Know And You Know}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file iknowandyouknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I know and they know and you’ll know it [G7]too
@@ -39,3 +42,7 @@ The things that you’re doing the places you [C]go
 [C]But I know cause they know and they told me [G7]so
 The things that you’re doing the places you [C]go
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Easy On The Eyes Lyrics Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Cy Coben and Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file easyontheeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re my loving honey
@@ -97,3 +100,21 @@ You’re the queen of turtle doving
 [C]And grab myself a [A7]prize
 [D7]Cause you’re [G7]so easy easy on the [C]eyes
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

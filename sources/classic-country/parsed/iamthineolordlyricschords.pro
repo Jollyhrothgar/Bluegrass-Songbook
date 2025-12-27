@@ -1,6 +1,9 @@
 {meta: title I Am Thine O Lord}
 {meta: artist Jimmy Dean}
 {meta: composer Fanny Crosby and William Doane}
+{meta: x_source classic-country}
+{meta: x_source_file iamthineolordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am [G7]Thine O Lord I have [C]heard Thy voice
@@ -43,3 +46,8 @@ To the [F]cross where [Dm]Thou hast [G7]died
 Draw me [C]nearer nearer [F]nearer blessed [Dm]Lord
 To Thy [C]precious [G7]bleeding [C]side
 {end_of_verse}
+
+
+
+
+

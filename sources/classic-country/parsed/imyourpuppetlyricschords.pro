@@ -1,6 +1,9 @@
 {meta: title I'm Your Puppet}
 {meta: artist Mickey Gilley}
 {meta: composer Dan Penn and Spooner Oldham}
+{meta: x_source classic-country}
+{meta: x_source_file imyourpuppetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just pull my [Dm]string 
@@ -52,3 +55,10 @@ I'm your [C]puppet[Dm]   [C]  mmm [F]I'm your [C]puppet
 Hold my [Dm]string and I'll [Em]do any[Dm]thing
 I'm your [C]puppet[Dm]   [C]  [F]I'm your [C]puppet
 {end_of_verse}
+
+
+
+
+
+
+

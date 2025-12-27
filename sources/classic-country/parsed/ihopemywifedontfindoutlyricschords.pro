@@ -1,6 +1,9 @@
 {meta: title I Hope My Wife Don't Find Out}
 {meta: artist Red Sovine}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file ihopemywifedontfindoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I finally found a woman that I [D7]care for
@@ -33,3 +36,6 @@ I [G]finally found somebody
 Who [C]makes my life worthwhile
 And [D7]I sure hope my wife don't find [G]out
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Cold Gray Light Of Gone}
 {meta: artist Vince Gill}
 {meta: composer Otto Kitsinger}
+{meta: x_source classic-country}
+{meta: x_source_file coldgraylightofgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I woke up this morning [F]long before the [C]dawn 
@@ -40,3 +43,8 @@ Oh there's nothin' quite as lonely as the [G7]cold gray light of [C]gone
 {start_of_verse: Verse 4}
 No there's nothin' quite as lonely as the [G7]cold gray light of [C]gone
 {end_of_verse}
+
+
+
+
+

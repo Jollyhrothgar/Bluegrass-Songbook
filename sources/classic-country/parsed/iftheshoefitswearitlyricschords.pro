@@ -1,6 +1,9 @@
 {meta: title If The Shoe Fits Wear It}
 {meta: artist Gene Watson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file iftheshoefitswearitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You brush off the truth as if it was a salt on the [F]table
@@ -29,3 +32,7 @@ You're [G7]really not putting me on I can see through your [C]tears
 {start_of_verse: Verse 2}
 If the shoe fits  wear [G7]it
 {end_of_verse}
+
+
+
+

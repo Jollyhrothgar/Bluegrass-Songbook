@@ -1,6 +1,9 @@
 {meta: title Cross My Heart And Hope To Die}
 {meta: artist Elvis Presley}
 {meta: composer Ben Weisman and Sid Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file crossmyheartandhopetodielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can explain about [F]last [C]night 
@@ -32,3 +35,6 @@ Cross my [G7]heart I hope to [F]die [C]well I wouldn't [F]tell you no [C]lie
 I wouldn't [F]tell you no [C]lie no no no no no no 
 I wouldn't [F]tell you no [C]lie
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Guide Me Home My Georgia Moon}
 {meta: artist Mel Tillis}
 {meta: composer Joe Babcock}
+{meta: x_source classic-country}
+{meta: x_source_file guidemehomemygeorgiamoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Guide me [D7]home my Georgia [G]moon
@@ -37,3 +40,8 @@
 {start_of_verse: Verse 5}
 [C]Guide me home my Georgia [G]moon
 {end_of_verse}
+
+
+
+
+

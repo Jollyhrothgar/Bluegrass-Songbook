@@ -1,5 +1,8 @@
 {meta: title The Riddle}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file theriddlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here’s the riddle 
@@ -29,3 +32,5 @@ One more riddle
 What has [A7]one heart that [D7]beats faithfu[G]lly
 For your [C]love you [D7]guessed it's [G]me
 {end_of_verse}
+
+

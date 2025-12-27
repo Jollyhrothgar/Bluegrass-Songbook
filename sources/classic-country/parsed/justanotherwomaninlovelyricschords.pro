@@ -1,6 +1,9 @@
 {meta: title Just Another Woman In Love}
 {meta: artist Anne Murray}
 {meta: composer Patti Ryan and Wanda Mallett}
+{meta: x_source classic-country}
+{meta: x_source_file justanotherwomaninlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm strong I'm sure I'm in [Em]control a lady with a [Am]plan
@@ -43,3 +46,7 @@ You touch me and I'm [Am]weak I'm a feather in the [D7]wind
 And I can't wait to [B7]feel you touching me [Em]again 
 [G]With you I'm [Am]just another woman [D7]just another woman in [G]love 
 {end_of_verse}
+
+
+
+

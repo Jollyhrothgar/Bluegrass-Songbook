@@ -1,6 +1,9 @@
 {meta: title Oakie Boogie}
 {meta: artist The Baylor Brothers}
 {meta: composer Johnny Tyler}
+{meta: x_source classic-country}
+{meta: x_source_file oakieboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now listen here friends and I gotta tell you
@@ -43,3 +46,8 @@ About a brand new boogie that you gotta listen to
 Now you [F]do the Oakie Boogie Oklahoma [C]style
 That [G7]mean Oakie Boogie is bound to drive you [C]wild
 {end_of_verse}
+
+
+
+
+

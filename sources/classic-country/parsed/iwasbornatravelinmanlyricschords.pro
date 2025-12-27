@@ -1,5 +1,8 @@
 {meta: title I Was Born A Travelin' Man}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file iwasbornatravelinmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've lived where I [C]wanna be 
@@ -41,3 +44,7 @@ The [Dm]thousand miles and [G7]places that I've [C]been
 [Am]And leaving her hurt as much as [Em]telling her
 [Dm]That I was [G7]born a travelin' [C]man
 {end_of_verse}
+
+
+
+

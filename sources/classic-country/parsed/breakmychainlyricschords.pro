@@ -1,6 +1,9 @@
 {meta: title Break My Chain}
 {meta: artist Ricky Nelson}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file breakmychainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh won't you break my chain a don't [F]turn me [C]down
@@ -23,3 +26,5 @@ You've been [C]spending my cash talking that trash all over [F]town
 Won't you break my [C]chain [G7]don't turn me [C]down [F]  [C]
 Don't turn me down[F]  [C]  oh baby don't turn me down [F]  [C]
 {end_of_verse}
+
+

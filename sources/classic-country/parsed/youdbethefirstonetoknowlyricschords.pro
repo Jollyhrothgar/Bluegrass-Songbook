@@ -1,5 +1,8 @@
 {meta: title You'd be the First One to Know}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file youdbethefirstonetoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it's true what they say that [F]I'll leave any [C]day
@@ -28,3 +31,6 @@ I [D7]think you'd know from the [G7]start
 [C]So we'll tell them they're wrong [F]cause I love you [C]so
 And if you weren't in my heart you'd be the first [G7]one to [C]know
 {end_of_verse}
+
+
+

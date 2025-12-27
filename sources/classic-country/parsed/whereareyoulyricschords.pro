@@ -1,5 +1,8 @@
 {meta: title Where Are You}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file whereareyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where is the sun
@@ -24,3 +27,5 @@ Where are the arms
 [C]That made me feel so welcome at the [G]door
 Where [Am]are you  [D7]where are [G]you
 {end_of_verse}
+
+

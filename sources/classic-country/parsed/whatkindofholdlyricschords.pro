@@ -1,6 +1,9 @@
 {meta: title What Kind Of Hold}
 {meta: artist David Ball}
 {meta: composer Tommy Polk and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file whatkindofholdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I try to run but stumbled 
@@ -40,3 +43,7 @@ Oh tell me [C]what kind of hold [G7]do you have on [C]me
 {start_of_verse: Verse 4}
 [F]Oh tell me [C]what kind of hold [G7]do you have on [C]me
 {end_of_verse}
+
+
+
+

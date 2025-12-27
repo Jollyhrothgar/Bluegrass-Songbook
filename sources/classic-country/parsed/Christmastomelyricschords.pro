@@ -1,6 +1,9 @@
 {meta: title Christmas To Me}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file Christmastomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Christ[D7]mas to [G]me is [C]wherever [D7]she might [G]be
@@ -34,3 +37,7 @@ Christ[D7]mas to [G]me [C]is the new[D7]born ba[G]by
 Christ[D7]mas to [G]you [C]may it ne[D7]ver be [G]blue
 [C]And may all your [G]dreams come [Em]true Merry [A7]Christ[D7]mas to [G]you
 {end_of_verse}
+
+
+
+

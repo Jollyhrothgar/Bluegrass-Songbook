@@ -1,5 +1,8 @@
 {meta: title Just The Other Side Of Nowhere}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file justtheothersideofnowherelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I come from just the other side of [Am]nowhere
@@ -51,3 +54,8 @@ Fadin' from the [Am]neon night time glow here
 {start_of_verse: Verse 4}
 [G7]Just the other side of nowhere going [F]hom[C]e
 {end_of_verse}
+
+
+
+
+

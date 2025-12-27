@@ -1,6 +1,9 @@
 {meta: title Darling You Know I Wouldn't Lie}
 {meta: artist Cal Smith}
 {meta: composer Wayne Kemp and Red Lane [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file darlingyouknowiwouldntlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I am late again [C7]for the last [F]time
@@ -30,3 +33,6 @@
 [C]And darling you [G7]know I wouldn't [C]lie
 [G7]And [C]darling you [G7]know I wouldn't [C]lie
 {end_of_verse}
+
+
+

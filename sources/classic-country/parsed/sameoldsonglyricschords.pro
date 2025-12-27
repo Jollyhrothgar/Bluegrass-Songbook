@@ -1,6 +1,9 @@
 {meta: title Same Old Song}
 {meta: artist Lee Greenwood}
 {meta: composer Jerry Crutchfield and Lee Greenwood}
+{meta: x_source classic-country}
+{meta: x_source_file sameoldsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The [C]devil in disguise and [Am]before your very eyes
@@ -46,3 +49,8 @@ It's the [G7]same old song   [Dm]oooh oooh oooh
 [G7]Dancing to the same old song   [Dm]oooh oooh oooh
 [G7]Dancing to the same old [Dm]song
 {end_of_verse}
+
+
+
+
+

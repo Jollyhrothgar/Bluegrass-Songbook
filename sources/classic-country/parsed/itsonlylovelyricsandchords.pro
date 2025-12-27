@@ -1,6 +1,9 @@
 {meta: title It's Only Love}
 {meta: artist Vern Gosdin}
 {meta: composer Tim Krekel}
+{meta: x_source classic-country}
+{meta: x_source_file itsonlylovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve heard that word before
@@ -55,3 +58,11 @@ What’s so special about that word
 [Am]So common and so often heard
 [F]That could give someone like me the nerve to say [C]always
 {end_of_verse}
+
+
+
+
+
+
+
+

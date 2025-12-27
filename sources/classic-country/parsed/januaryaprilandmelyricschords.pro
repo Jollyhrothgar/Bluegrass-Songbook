@@ -1,6 +1,9 @@
 {meta: title January April And Me}
 {meta: artist Curtis Potter}
 {meta: composer Billy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file januaryaprilandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the nineteen-fifty-seven blue and green two door [G7]sedan
@@ -55,3 +58,10 @@ Sure we're gonna be happy sure
 [C]Say goodbye to January [G7]April and [C]me
 [G7]January April and [C]me
 {end_of_verse}
+
+
+
+
+
+
+

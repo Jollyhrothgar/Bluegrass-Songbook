@@ -1,5 +1,8 @@
 {meta: title If You Don't Like Hank Williams}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudontlikehankwilliamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I dig Bobby Dylan and I dig Johnny [G7]Cash
@@ -35,3 +38,7 @@ And they're doin' it the best way that they [G7]can
 You're the only one that you are screwin'
 When you put down what you don't under[C]stand
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Ole Slew Foot}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file oleslewfootlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]High on the mountain tell me what you see
@@ -50,3 +53,12 @@ We'll shoot him in the bottom just to [C]listen to him [G]yell
 Better get your rifle boys before it's too late
 'Cause a bear's got a little pig and [C]headed thru the [G]gate
 {end_of_verse}
+
+
+
+
+
+
+
+
+

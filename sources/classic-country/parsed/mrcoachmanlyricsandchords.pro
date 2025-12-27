@@ -1,6 +1,9 @@
 {meta: title Mr. Coachman}
 {meta: artist Ronnie Reno}
 {meta: composer Ronnie Reno and Wayne Carson Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file mrcoachmanlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mr. Coachman [F]  I'm a railroad [C]rider[F]
@@ -44,3 +47,9 @@ Hey Mr. [C]Coachman [F]take my ticket and [C]set me free
 {start_of_verse: Verse 5}
 [G7]Mr. [C]Coachman [F]  Mr. [C]Coachman [F]  hey Mr. [C]Coachman
 {end_of_verse}
+
+
+
+
+
+

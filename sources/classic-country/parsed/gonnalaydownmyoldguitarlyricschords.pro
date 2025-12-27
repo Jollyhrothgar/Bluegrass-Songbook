@@ -1,6 +1,9 @@
 {meta: title Gonna Lay Down My Old Guitar}
 {meta: artist Louvin Brothers}
 {meta: composer Alton Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file gonnalaydownmyoldguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gonna lay down my [G7]old [C]guitar
@@ -36,3 +39,7 @@ I'm telling this world [G7]goodbye
 I'm telling the world and my dear [C]little girl
 I'll soon tell [G7]them all [C]goodbye
 {end_of_verse}
+
+
+
+

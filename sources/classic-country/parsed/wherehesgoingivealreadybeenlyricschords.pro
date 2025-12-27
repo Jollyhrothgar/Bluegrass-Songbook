@@ -1,6 +1,9 @@
 {meta: title Where He's Going I've Already Been}
 {meta: artist Hank Williams Jr.}
 {meta: composer Earl Montgomery, Hank Williams Jr, Daryl Cartee}
+{meta: x_source classic-country}
+{meta: x_source_file wherehesgoingivealreadybeenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I don't envy him at [C]all when I [D7]see him by your [G]side
@@ -34,3 +37,6 @@ Where he's going with [F]you I've [C]already been
 But [G]I will never [D7]go back there [C]again[G]
 [D7]Never [G]again
 {end_of_verse}
+
+
+

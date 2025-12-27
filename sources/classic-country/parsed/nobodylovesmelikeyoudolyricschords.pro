@@ -1,6 +1,9 @@
 {meta: title Nobody Loves Me Like You Do}
 {meta: artist Anne Murray}
 {meta: composer James P. Dunne and Pam Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file nobodylovesmelikeyoudolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like [G7]a candle [F]burnin' [Dm][D7]bright
@@ -42,3 +45,8 @@
 [C]Nobody [F]loves me [G7]like [F]you [C]do
 [F]Nobody loves [G7]me like [F]you [C]do
 {end_of_verse}
+
+
+
+
+

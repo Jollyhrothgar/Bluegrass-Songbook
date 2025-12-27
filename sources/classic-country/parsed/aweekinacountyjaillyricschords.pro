@@ -1,5 +1,8 @@
 {meta: title A Week In A County Jail}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file aweekinacountyjaillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Doo do do  doo do do doo do oooh wooo
@@ -71,3 +74,13 @@ In [C]thirty minutes I was outta [D7]state
 {start_of_verse: Verse 11}
 [G]Doo do do  doo do do doo do doo dooo
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

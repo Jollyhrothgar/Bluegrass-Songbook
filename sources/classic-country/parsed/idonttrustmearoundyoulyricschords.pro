@@ -1,6 +1,9 @@
 {meta: title I Don't Trust Me Around You}
 {meta: artist Dolly Parton}
 {meta: composer Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file idonttrustmearoundyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You're standing much too close to me [C]again
@@ -38,3 +41,7 @@ I don't [G7]trust me around [C]you
 {start_of_verse: Verse 4}
 No [F]I don't [G7]trust me around [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Thank Him For Sending Me You}
 {meta: artist Buck Owens}
 {meta: composer Ike Cargill}
+{meta: x_source classic-country}
+{meta: x_source_file ithankhimforsendingmeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say that all [G7]good things come [C]down from [G]above
@@ -33,3 +36,7 @@ And I thank Him for [D7]sending me [G]you
 {start_of_verse: Verse 5}
 Yes I thank Him for [D7]sending me [G]you
 {end_of_verse}
+
+
+
+

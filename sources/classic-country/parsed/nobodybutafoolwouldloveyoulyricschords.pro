@@ -1,6 +1,9 @@
 {meta: title Nobody But A Fool Would Love You}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file nobodybutafoolwouldloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Nobody but a fool would love you after the way you've done [C]me
@@ -36,3 +39,7 @@ And knowing I still [F]do just shows me [C]up for [G7]what I [C]am
 [F]Who'd lie awake all night crying till you were out of [C]sight
 [G7]Loving you with all of her might nobody but a [C]fool
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We Must Have Been Out Of Our Minds}
 {meta: artist Vern Gosdin}
 {meta: composer Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file wemusthavebeenoutofourmindslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We said our goodbye long [F]ago
@@ -29,3 +32,6 @@ Oh we [C]must have been out [G7]of our [C]minds
 They [C]both turned out to be the wrong [F]kind
 Oh we [C]must have been out [G7]of our [C]minds
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Sad Songs And Waltzes}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file sadsongsandwaltzeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm writing a [G7]song all a[C]bout you 
@@ -22,3 +25,5 @@ Though my [C]record may say it [F]no one will play it
 Cause [C]sad songs and [G7]waltzes aren't selling this [C]year
 Repeat last verse
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Until at Last I'm Home}
 {meta: artist Jamie Dailey and Darrin Vincent}
 {meta: composer Brad Price, Darrin Vincent, Jim Britton}
+{meta: x_source classic-country}
+{meta: x_source_file untilatlastimhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart was cold and dark no [G7]joy or peace with[C]in
@@ -21,3 +24,5 @@ And I will give you rest and [G7]life eterna[C]lly
 And on His bosom I ride [C]until He takes me [F]home
 [C]Until at [F]last [C]I'm[A#7]    hom[F]e
 {end_of_verse}
+
+

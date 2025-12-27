@@ -1,6 +1,9 @@
 {meta: title You're Gonna Need a Man}
 {meta: artist Johnny Duncan}
 {meta: composer Bobby Goldsboro}
+{meta: x_source classic-country}
+{meta: x_source_file youregonnaneedamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]So you [G]say your [Em]love has [Am]gone and [D7]you'll [G]forget him[Am]   [D7]
@@ -42,3 +45,7 @@ Someone who'll [G]dry your eyes each [C]time
 You'll cry [G]one who'll under[Em]stand
 [C]Yes in [G]time you'll [Em]find [Am]you're gonna [D7]need a [G]man
 {end_of_verse}
+
+
+
+

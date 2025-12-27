@@ -1,6 +1,9 @@
 {meta: title Peter Cottontail}
 {meta: artist Gene Autry}
 {meta: composer Walter E. Rollins and Steve Nelon}
+{meta: x_source classic-country}
+{meta: x_source_file petercottontaillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here comes Peter Cottontail [C]hoppin' down the bunny trail
@@ -36,3 +39,8 @@ That [A7]he's hiding every[D7]where
 {start_of_verse: Verse 6}
 [D7]Hippity hoppity happy Easter [G]day
 {end_of_verse}
+
+
+
+
+

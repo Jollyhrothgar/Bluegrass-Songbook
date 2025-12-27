@@ -1,6 +1,9 @@
 {meta: title Blue Darlin'}
 {meta: artist Leona Williams}
 {meta: composer Leslie Lyle}
+{meta: x_source classic-country}
+{meta: x_source_file bluedarlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was a fool broke every [C7]rule blue [F]darlin'
@@ -26,3 +29,6 @@ Blue [C]darlin' you're the [G7]only only [C]one
 {start_of_verse: Verse 4}
 Blue darlin' you're the [G7]only only [C]one
 {end_of_verse}
+
+
+

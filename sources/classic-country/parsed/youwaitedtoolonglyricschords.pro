@@ -1,6 +1,9 @@
 {meta: title You waited too long}
 {meta: artist Roy Rogers}
 {meta: composer Fred Rose, Gene Autry, Ray Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file youwaitedtoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You waited too long to [C]say that you're [Am]sorry
@@ -29,3 +32,6 @@ To [A7]someone who's love is [D7]true
 [G]You waited too long to [C]say that you're [Am]sorry
 [D7]Now I feel sorry for [G]you
 {end_of_verse}
+
+
+

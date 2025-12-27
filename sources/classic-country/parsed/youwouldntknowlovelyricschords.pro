@@ -1,6 +1,9 @@
 {meta: title You Wouldn't Know Love}
 {meta: artist Ray Price}
 {meta: composer Hank Cockran and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file youwouldntknowlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You wouldn't know love if it [D7]looked you in the [G]eye
@@ -30,3 +33,7 @@ You wouldn't know [G]love if it [D7]looked you in the [G]eye
 {start_of_verse: Verse 5}
 [C]You wouldn't know [G]love if it [D7]looked you in the [G]eye
 {end_of_verse}
+
+
+
+

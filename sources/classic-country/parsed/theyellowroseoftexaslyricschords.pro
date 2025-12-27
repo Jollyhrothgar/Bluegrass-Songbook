@@ -1,6 +1,9 @@
 {meta: title The Yellow Rose of Texas}
 {meta: artist Michael Martin Murphey}
 {meta: composer Don George}
+{meta: x_source classic-country}
+{meta: x_source_file theyellowroseoftexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a yellow rose in Texas that I am going to see
@@ -43,3 +46,8 @@ She's the sweetest rose of color this cowboy ever knew
 [G]You may talk about your dearest maids and sing of Rosalie
 [C]But the yellow rose [G]of Texas beats the [D7]belles of [G]Tennessee
 {end_of_verse}
+
+
+
+
+

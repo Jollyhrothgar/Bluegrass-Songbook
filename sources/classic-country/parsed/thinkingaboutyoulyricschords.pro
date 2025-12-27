@@ -1,5 +1,8 @@
 {meta: title Thinking About You}
 {meta: artist Earl Scruggs and Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file thinkingaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now as I sigh the hours [C]away
@@ -35,3 +38,7 @@
 [C]When I meet you up in heaven
 [D7]We'll have life eternal [G]there
 {end_of_verse}
+
+
+
+

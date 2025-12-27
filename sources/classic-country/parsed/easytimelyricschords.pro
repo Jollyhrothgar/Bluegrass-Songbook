@@ -1,6 +1,9 @@
 {meta: title Easy Time}
 {meta: artist Eddy Raven}
 {meta: composer Eddy Raven and David Powelson}
+{meta: x_source classic-country}
+{meta: x_source_file easytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I realize that we don't talk [Dm]enough
@@ -32,3 +35,7 @@ Lying here in [G]love doing easy [C]time
 Doing easy [G]time doing easy [C]time
 Lying in this [G]love doing easy [C]time
 {end_of_verse}
+
+
+
+

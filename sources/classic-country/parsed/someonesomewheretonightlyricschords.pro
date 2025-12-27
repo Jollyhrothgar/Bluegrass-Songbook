@@ -1,6 +1,9 @@
 {meta: title Someone Somewhere Tonight}
 {meta: artist Kenny Rogers}
 {meta: composer Davis Raines and Walt Wilkins}
+{meta: x_source classic-country}
+{meta: x_source_file someonesomewheretonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someone somewhere tonight is taking their [G7]first steps
@@ -48,3 +51,9 @@ So [Dm]babe [G7]lie down beside me
 {start_of_verse: Verse 6}
 You [F]always [C]will
 {end_of_verse}
+
+
+
+
+
+

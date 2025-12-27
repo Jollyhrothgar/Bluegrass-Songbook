@@ -1,6 +1,9 @@
 {meta: title Two Empty Arms}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file twoemptyarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The one that I love just walked right out on [G7]me
@@ -34,3 +37,7 @@ Oh please come back to me [C]and my two [G7]empty [C]arms
 Tag:
 [F]Oh please come back to me [C]and my two [G7]empty [C]arms
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Shotgun Willie}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file shotgunwillielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Shotgun Willie sits around in his underwear
@@ -30,3 +33,7 @@ Made a [G7]lotta money selling sheets on the family [C]plan
 [F]Bitin' on a bullet and pullin' out all of his [C]hair
 [G7]Shotgun Willie's got all his family [C]there
 {end_of_verse}
+
+
+
+

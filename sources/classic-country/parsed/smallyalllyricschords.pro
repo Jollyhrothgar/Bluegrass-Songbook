@@ -1,6 +1,9 @@
 {meta: title Small Y'all}
 {meta: artist Randy Travis}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file smallyalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey you think he's got an attitude
@@ -62,3 +65,11 @@ Don't it make you feel [C]small y'all
 Don't it make you feel [G7]ashamed of yourselves
 Don't it make you feel [C]small y'all
 {end_of_verse}
+
+
+
+
+
+
+
+

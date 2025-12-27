@@ -1,6 +1,9 @@
 {meta: title I Do My Swinging At Home}
 {meta: artist Charlie Rich}
 {meta: composer Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file idomyswingingathomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nobody loves a [F]drink any more than [C]me
@@ -30,3 +33,6 @@ I [C]might do a lotta [F]talking but [E7]soon you'll see me [F]walking
 [C]I do a lotta [G7]swinging a [C]lotta love song [F]singing
 [C]But I do my [G7]swinging at [F]ho-[C]me
 {end_of_verse}
+
+
+

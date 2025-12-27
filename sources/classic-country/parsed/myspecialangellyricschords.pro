@@ -1,6 +1,9 @@
 {meta: title My Special Angel}
 {meta: artist Bobby Helms}
 {meta: composer Jimmy Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file myspecialangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Angel  angel  [Am]whoa-oh-oh-oh [G7]whoa
@@ -52,3 +55,10 @@ And [D7]I'm in heaven [G7]again
 {start_of_verse: Verse 8}
 Angel [Am]angel [G7]whoa-oh-oh-oh oh oh oh [C]oh
 {end_of_verse}
+
+
+
+
+
+
+

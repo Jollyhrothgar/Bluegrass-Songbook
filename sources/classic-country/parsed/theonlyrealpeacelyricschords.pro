@@ -1,6 +1,9 @@
 {meta: title The Only Real Peace}
 {meta: artist The Hemphills}
 {meta: composer Joel Hemphill}
+{meta: x_source classic-country}
+{meta: x_source_file theonlyrealpeacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Life is a few days of trouble a wise man once [Dm]said
@@ -29,3 +32,6 @@ The [D7]only real peace that I have dear Lord is in [C]you
 With all life’s frustrations I need you [C7]and I know I [F]do
 Cause the [Dm]only real [G7]peace that I [Dm]have dear [G7]Lord is in [C]you
 {end_of_verse}
+
+
+

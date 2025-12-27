@@ -1,6 +1,9 @@
 {meta: title The Sounds Of Goodbye}
 {meta: artist George Morgan}
 {meta: composer Eddie Rabbit and Dick Heard}
+{meta: x_source classic-country}
+{meta: x_source_file thesoundsofgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Restless footsteps [G7]walking down the [F]hallway in the [G7]middle of the [C]night [G7]   [F]  [G7]
@@ -52,3 +55,10 @@ Then [F]the violent rush of [Em]teardrops to my [Dm]eyes
 I’ve [F]got a lonely [Em]feeling [Dm]that I’m hearing[G7] 
 The [C]sounds of goodbye[G7]   [F]  the [C]sounds of goodbye[G7]   [F]  [G7]
 {end_of_verse}
+
+
+
+
+
+
+

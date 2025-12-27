@@ -1,6 +1,9 @@
 {meta: title For A Minute There}
 {meta: artist Vern Gosdin}
 {meta: composer Beverly Gosdin and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file foraminutetherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought that you and I [C]were [G]forever
@@ -24,3 +27,5 @@
 [C]For a Minute there I felt my world was [G]ending
 [D7]For a minute there I thought you said [G]goodbye
 {end_of_verse}
+
+

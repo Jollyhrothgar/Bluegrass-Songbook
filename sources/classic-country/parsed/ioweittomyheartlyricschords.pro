@@ -1,6 +1,9 @@
 {meta: title I Owe It To My Heart}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file ioweittomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder if you'll be the type
@@ -28,3 +31,5 @@ I owe it to my heart to find
 [F]Or all at once will they grow cold
 [C]I've got to know I [G7]owe it to my [C]heart
 {end_of_verse}
+
+

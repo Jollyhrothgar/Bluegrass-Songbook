@@ -1,6 +1,9 @@
 {meta: title Just Your Conscience}
 {meta: artist George Morgan}
 {meta: composer Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file justyourconsciencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That voice you [G7]hear inside is just your [C]conscience [C7]
@@ -27,3 +30,6 @@ That voice you [G7]hear my dear is just your [C]conscience
 {start_of_verse: Verse 4}
 That voice you [G7]hear my dear is just your [C]conscience
 {end_of_verse}
+
+
+

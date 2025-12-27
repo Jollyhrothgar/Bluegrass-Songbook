@@ -1,5 +1,8 @@
 {meta: title Mr. Moon}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file mrmoonlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can I depend on your light pretty [G7]moon
@@ -32,3 +35,6 @@
 [F]For helping our romance I'll thank you in advance
 [G7]And I'll see you tonight Mr. [C]Moon
 {end_of_verse}
+
+
+

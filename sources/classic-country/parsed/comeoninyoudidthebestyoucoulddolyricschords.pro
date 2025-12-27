@@ -1,6 +1,9 @@
 {meta: title Come On In You Did The Best You Could Do}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Rick Giles and George Green}
+{meta: x_source classic-country}
+{meta: x_source_file comeoninyoudidthebestyoucoulddolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I dreamed I was dying in [C]Texas
@@ -69,3 +72,12 @@
 {start_of_verse: Verse 10}
 Repeat last verse x2
 {end_of_verse}
+
+
+
+
+
+
+
+
+

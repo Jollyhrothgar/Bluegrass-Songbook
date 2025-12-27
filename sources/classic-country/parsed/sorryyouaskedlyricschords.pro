@@ -1,5 +1,8 @@
 {meta: title Sorry You Asked}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file sorryyouaskedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You'll be sorry you [F]asked me the [C]reason
@@ -61,3 +64,11 @@ I had to go hire a [A#7]lawyer and [F]all
 But I know that was [A#7]mostly her [F]family's idea
 I [G7]could her them tell her what to say every time I [C]called
 {end_of_verse}
+
+
+
+
+
+
+
+

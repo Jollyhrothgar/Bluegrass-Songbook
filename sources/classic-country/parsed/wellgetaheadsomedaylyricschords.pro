@@ -1,5 +1,8 @@
 {meta: title We'll Get Ahead Someday}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file wellgetaheadsomedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We'll get ahead someday [C]we'll get ahead [G]someday
@@ -36,3 +39,8 @@ If the [C]sun comes up [G]and we both [C]cuts down [G]we'll [D7]get ahead [G]som
 tag:
 If the [C]sun comes up [G]and we both [C]cuts down [G]we'll [D7]get ahead [G]someday
 {end_of_verse}
+
+
+
+
+

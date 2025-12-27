@@ -1,6 +1,9 @@
 {meta: title Pancho and Lefty}
 {meta: artist Willie Nelson and Merle Haggard}
 {meta: composer Townes Van Zandt}
+{meta: x_source classic-country}
+{meta: x_source_file panchoandleftylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Living on the road my friend
@@ -85,3 +88,14 @@ Out of [F]kindness I [Am]suppose
 [Am]They only let him [F]go so [G7]long
 Out of [F]kindness I [Am]suppose
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tennessee Blues}
 {meta: artist J.D. Crowe}
 {meta: composer Bobby Charles}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I had my way I'd [C]leave here to[G]day 
@@ -45,3 +48,9 @@ The Tennessee [G]Blues  [C]
 [G]A [G7]place I could [C]lose [G]   [D7]
 The Tennessee [G]Blues 
 {end_of_verse}
+
+
+
+
+
+

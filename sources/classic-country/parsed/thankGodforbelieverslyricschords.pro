@@ -1,6 +1,9 @@
 {meta: title Thank God For Believers}
 {meta: artist Mark Chesnutt}
 {meta: composer Roger Springer, Mark Springer, Tim Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file thankGodforbelieverslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I came home again [Am]three sheets to the [G7]wind
@@ -39,3 +42,7 @@
 {start_of_verse: Verse 4}
 [C]Heaven knows how much I need [G7]her thank God for [Am]believers
 {end_of_verse}
+
+
+
+

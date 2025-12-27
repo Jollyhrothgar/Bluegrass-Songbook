@@ -1,5 +1,8 @@
 {meta: title Rainy Day In June}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file rainydayinjunelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I need some [G7]sunshine [Am]on my [F]face
@@ -56,3 +59,10 @@
 [C]Any[G7]thing more [Am]than what I've [F]got
 [C]On this [G7]rainy day in [C]June[G7]
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Getting Over You Again}
 {meta: artist Ray Price}
 {meta: composer Warren Robb and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file gettingoveryouagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here you are again just when your [C]memory
@@ -29,3 +32,6 @@ I [D7]hope I don't go through getting over you [G]again
 [G]Here you are again and I still love [C]you
 I [D7]hope I don't go through getting over you [G]again
 {end_of_verse}
+
+
+

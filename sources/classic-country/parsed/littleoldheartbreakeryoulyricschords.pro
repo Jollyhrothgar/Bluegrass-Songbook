@@ -1,5 +1,8 @@
 {meta: title Little Old Heartbreaker You}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file littleoldheartbreakeryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who's that making everybody [F]cry includin' [Dm]me
@@ -32,3 +35,7 @@ To that [G7]little old heartbreaker [C]you
 {start_of_verse: Verse 5}
 To that [G7]little old heartbreaker [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Common Man}
 {meta: artist John Conlee}
 {meta: composer Sammy Johns}
+{meta: x_source classic-country}
+{meta: x_source_file commonmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As the maid poured wine and we began to [C]dine 
@@ -57,3 +60,10 @@ My [G]dog ain't got a pedigree if [D7]I have my [G]say
 Gonna [C]stay that way cause [G]high browed people lose their [D7]sanity 
 And a [G]common [D7]man is what I'll [G]be 
 {end_of_verse}
+
+
+
+
+
+
+

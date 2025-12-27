@@ -1,6 +1,9 @@
 {meta: title If Crying Would Make You Here}
 {meta: artist Webb Pierce}
 {meta: composer Wayne Walker and Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file ifcryingwouldmakeyouherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If cry-ing [E7]would [F]make you [C]here
@@ -24,3 +27,5 @@ The stars for me no longer [G7]shine
 [C]If cry-ing [E7]would [F]make you [C]here
 I would cry tears [G7]enough to make you [C]mine
 {end_of_verse}
+
+

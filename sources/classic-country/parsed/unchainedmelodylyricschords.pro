@@ -1,6 +1,9 @@
 {meta: title Unchained Melody}
 {meta: artist The Righteous Brothers}
 {meta: composer Hy Zaret and Alex North}
+{meta: x_source classic-country}
+{meta: x_source_file unchainedmelodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh my [Am]love my [F]darling 
@@ -22,3 +25,5 @@ God [F]speed your love [G7]to  [C]me
 [F]Lonely rivers [G]sigh wait [F]for me wait [Eb]for me
 [F]I'll be coming [G7]home wait for [C]me
 {end_of_verse}
+
+

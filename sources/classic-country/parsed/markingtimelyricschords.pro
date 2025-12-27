@@ -1,6 +1,9 @@
 {meta: title Marking Time}
 {meta: artist Roy Drusky}
 {meta: composer Vic McAlpin and Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file markingtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your face reveals a love you think is [F]real
@@ -33,3 +36,7 @@ Though you may love her so
 [F]When she closes her eyes do you ever [C]realize
 [F]She's marking time with [G7]you but loving [C]me
 {end_of_verse}
+
+
+
+

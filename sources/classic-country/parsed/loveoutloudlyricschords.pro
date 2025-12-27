@@ -1,6 +1,9 @@
 {meta: title Love Out Loud}
 {meta: artist Earl Thomas Conley}
 {meta: composer Thom Schuyler}
+{meta: x_source classic-country}
+{meta: x_source_file loveoutloudlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't brag about you to [C]everyone I [D7]meet
@@ -47,3 +50,8 @@ I'm [G]just no good at [C]love [D7]out [G]loud
 [D7]Love out [G]loud
 [D7]Love out [G]loud
 {end_of_verse}
+
+
+
+
+

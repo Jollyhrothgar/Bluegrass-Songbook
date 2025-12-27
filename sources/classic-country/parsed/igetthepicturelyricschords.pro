@@ -1,6 +1,9 @@
 {meta: title I Get The Picture}
 {meta: artist Keith Whitley}
 {meta: composer Don Cook and Fred Koller}
+{meta: x_source classic-country}
+{meta: x_source_file igetthepicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The moving van is waitin' for the rain to stop
@@ -52,3 +55,10 @@ I get the [C]picture
 {start_of_verse: Verse 7}
 [G7]I get the [C]picture
 {end_of_verse}
+
+
+
+
+
+
+

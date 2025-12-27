@@ -1,4 +1,7 @@
 {meta: artist Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file clockslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Old brown clock ticking [C]on my shelf
@@ -41,3 +44,8 @@ Nothing golden [G]never stays
 [G]Gentle sunshine through the [C]curtain lace
 [G]Some of which shining on [C]your sweet face
 {end_of_verse}
+
+
+
+
+

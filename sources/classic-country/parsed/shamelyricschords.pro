@@ -1,6 +1,9 @@
 {meta: title Shame}
 {meta: artist John Conlee}
 {meta: composer Jim McBride}
+{meta: x_source classic-country}
+{meta: x_source_file shamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We could lie and say that our love [C]died without a [G]reason
@@ -33,3 +36,7 @@ Done to each [G]other [D7]and the good name of [Em]love
 {start_of_verse: Verse 5}
 [C]Done to each [G]other [D7]and the good name of [G]love
 {end_of_verse}
+
+
+
+

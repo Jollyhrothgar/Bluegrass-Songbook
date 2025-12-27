@@ -1,5 +1,8 @@
 {meta: title Same Fool}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file samefoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm just the same fool the old fool 
@@ -47,3 +50,9 @@ The [C]last fool you [D7]fooled be[G]fore
 No not the [C]way that you [D7]fooled 
 [C]All those other [D7]fools no [G]more
 {end_of_verse}
+
+
+
+
+
+

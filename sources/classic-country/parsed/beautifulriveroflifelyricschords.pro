@@ -1,5 +1,8 @@
 {meta: title Beautiful River Of Life}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulriveroflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Beautiful River Of Life
@@ -40,3 +43,10 @@ This is a beautiful [F]river (sister) [C]this is a [G7]beautiful [C]dream
 {start_of_verse: Verse 6}
 Beautiful [G7]river of [C]life
 {end_of_verse}
+
+
+
+
+
+
+

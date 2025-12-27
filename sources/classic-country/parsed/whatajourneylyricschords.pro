@@ -1,5 +1,8 @@
 {meta: title What A Journey}
 {meta: artist Paul Williams and The Victory Trio}
+{meta: x_source classic-country}
+{meta: x_source_file whatajourneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What a journey what a [G7]journey it's [C]been 
@@ -37,3 +40,8 @@ What a journey what a [G7]journey it's [C]been
 The Journey's been long and I'm [F]nearing the [C]end 
 What a journey what a [G7]journey it's [C]been 
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Take Another Swing At Me}
 {meta: artist Randy Travis}
 {meta: composer Paul Craft}
+{meta: x_source classic-country}
+{meta: x_source_file takeanotherswingatmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I know I sent you [C]packin' but now I want you [A7]back again
@@ -38,3 +41,8 @@ So [G7]come on [C]honey come home and spend my [A7]money
 [F]Come back mama and [G7]take another swing at [C]me
 [G7]Take another swing at [C]me
 {end_of_verse}
+
+
+
+
+

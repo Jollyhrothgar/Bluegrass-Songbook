@@ -1,5 +1,8 @@
 {meta: title There She Goes}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file thereshegoeslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There she goes she's walking [F]away
@@ -23,3 +26,5 @@ If [C]I hadn't lied [D7]I'd be the one
 And I guess that it [F]shows
 She's walking [G7]away there she [C]goes
 {end_of_verse}
+
+

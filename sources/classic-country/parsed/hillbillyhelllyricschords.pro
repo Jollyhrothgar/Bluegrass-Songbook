@@ -1,6 +1,9 @@
 {meta: title Hillbilly Hell}
 {meta: artist Bobby Bare}
 {meta: composer Bob McDill &amp; Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file hillbillyhelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My friends and my [F]mother  [G7]they all like my [F]songs
@@ -24,3 +27,5 @@ Another day a [F]watching  [G7]the Cadillac's go [F]past
 I hope the folks back home will under[G7]stand
 It's gonna [F]take a little [G7]longer than I [C]planned
 {end_of_verse}
+
+

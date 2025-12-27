@@ -1,6 +1,9 @@
 {meta: title I Went Down A Beggar But I Came Up A Millionaire}
 {meta: artist Paul Williams}
 {meta: composer Gerald Sweatman}
+{meta: x_source classic-country}
+{meta: x_source_file iwentdownabeggarbuticameupamillionairelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to be a beggar I [F]had no silver or [C]gold 
@@ -33,3 +36,7 @@ I went down a begg[Am]ar but I [C]came up a [G7]million[C]aire
 {start_of_verse: Verse 4}
 Yes I went down a begg[Am]ar but I [C]came up a [G7]million[C]aire 
 {end_of_verse}
+
+
+
+

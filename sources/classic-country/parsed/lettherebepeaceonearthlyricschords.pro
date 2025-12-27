@@ -1,6 +1,9 @@
 {meta: title Let There Be Peace On Earth}
 {meta: artist Vince Gill}
 {meta: composer Sy Miller and Jill Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file lettherebepeaceonearthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let there be [F]peace on earth and [C]let it [Am]begin with [Dm]me  [G7]
@@ -29,3 +32,6 @@ Let me [D7]walk with [G7]my brother in [Am]perfect harmo[G7]ny
 To [Am]take each moment and live each moment in peace eterna[Dm]lly
 [C]Let there be [F]peace on [C]earth and [Dm]let it [G7]begin with [C]me
 {end_of_verse}
+
+
+

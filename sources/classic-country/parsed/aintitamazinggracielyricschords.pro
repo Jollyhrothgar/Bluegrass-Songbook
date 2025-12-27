@@ -1,6 +1,9 @@
 {meta: title Ain't It Amazing Gracie}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Glen Garrison}
+{meta: x_source classic-country}
+{meta: x_source_file aintitamazinggracielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been all over the world but no other [C]girl
@@ -49,3 +52,9 @@
 [G]Ever thrilled me the [D7]way that you [G]do
 [D7]Ain't it amazing how I love [G]you
 {end_of_verse}
+
+
+
+
+
+

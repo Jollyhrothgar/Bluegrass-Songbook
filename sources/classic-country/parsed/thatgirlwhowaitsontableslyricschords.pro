@@ -1,6 +1,9 @@
 {meta: title That Girl Who Waits On Tables}
 {meta: artist Ronnie Milsap}
 {meta: composer Bob Parker}
+{meta: x_source classic-country}
+{meta: x_source_file thatgirlwhowaitsontableslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I watch her picking up [F]their tips off the [C]tables
@@ -34,3 +37,7 @@ That girl who waits on [C]tables used to [G7]wait for me at [C]home
 tag
 That girl who waits on [C]tables used to [G7]wait for me at [C]home
 {end_of_verse}
+
+
+
+

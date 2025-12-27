@@ -1,6 +1,9 @@
 {meta: title Bedtime}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Charlie Black and Austin Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file bedtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When she [G]walks in the room
@@ -34,3 +37,7 @@ The way she's [G]looking at me it easy to see what's on [C]her [D7]mind
 Good night it's gonna be [C]good night
 [G]Loves running deep there's [D7]no time to sleep its [C]bed[G]time
 {end_of_verse}
+
+
+
+

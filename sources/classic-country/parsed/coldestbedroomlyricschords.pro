@@ -1,6 +1,9 @@
 {meta: title Coldest Bedroom}
 {meta: artist Vern Gosdin}
 {meta: composer J. Sins}
+{meta: x_source classic-country}
+{meta: x_source_file coldestbedroomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a cold chill running through my bones [F]tonight
@@ -51,3 +54,9 @@ I turned the TV on the weather record highs
 In the country tonight
 [C]The coldest bedroom in the [G7]whole wide world [C][F]tonight
 {end_of_verse}
+
+
+
+
+
+

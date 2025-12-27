@@ -1,6 +1,9 @@
 {meta: title If We Want Love To Last}
 {meta: artist Conway Twitty}
 {meta: composer L.E. White}
+{meta: x_source classic-country}
+{meta: x_source_file ifwewantlovetolastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody I know is a [F]looking for [C]love
@@ -57,3 +60,10 @@ But they [F]don't know how they [C]give it
 Everybody is a looking for [F]more out of [C]life
 But they don't know [G7]how they live [C]it
 {end_of_verse}
+
+
+
+
+
+
+

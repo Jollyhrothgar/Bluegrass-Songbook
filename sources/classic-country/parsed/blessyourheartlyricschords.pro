@@ -1,6 +1,9 @@
 {meta: title Bless Your Heart}
 {meta: artist Freddie Hart}
 {meta: composer Jack Lebsock and Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file blessyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bless your hea-[C7]rt for [F]loving me
@@ -22,3 +25,5 @@ I know I've been [C]given a taste of [G7]heaven
 Right here on [F]earth
 Bless your [C]hea-rt
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Howdy Neighbor Howdy}
 {meta: artist Porter Wagoner}
 {meta: composer James Morris}
+{meta: x_source classic-country}
+{meta: x_source_file howdyneighborhowdylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Howdy neighbor howdy get [C]out and come right [G]in
@@ -46,3 +49,11 @@ We'll make a bowl of gravy to [D7]sop your biscuits [G]in
 Boil a pot of coffee and [C]bake a big fat [G]hen
 Cook another country ham to [D7]feed a hungry [G]man
 {end_of_verse}
+
+
+
+
+
+
+
+

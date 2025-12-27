@@ -1,6 +1,9 @@
 {meta: title Ting-A-Ling}
 {meta: artist Buddy Holly}
 {meta: composer Ahmet Ertegun}
+{meta: x_source classic-country}
+{meta: x_source_file tingalinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Recor[A]ded by Buddy Holly
@@ -46,3 +49,7 @@ Yeah [C]I'm just a poor young boy
 And these [F]girl's 'bout to drive me wild
 The [C]way they rock and roll and hold [G7]me angel [C]child
 {end_of_verse}
+
+
+
+

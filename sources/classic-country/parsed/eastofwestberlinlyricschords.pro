@@ -1,5 +1,8 @@
 {meta: title East Of West Berlin}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file eastofwestberlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It hurts to know she's out there somewhere east of West [C]Berlin
@@ -25,3 +28,6 @@
 [F]They won't let her out and they won't let [D7]me in
 [G7]It hurts to know she's out there somewhere east of West [C]Berlin
 {end_of_verse}
+
+
+

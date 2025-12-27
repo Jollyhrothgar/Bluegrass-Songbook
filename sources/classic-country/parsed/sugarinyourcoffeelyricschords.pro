@@ -1,6 +1,9 @@
 {meta: title Sugar In Your Coffee}
 {meta: artist Bill Anderson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file sugarinyourcoffeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I came downstairs and found the mornin' [D7]paper by my plate
@@ -36,3 +39,7 @@ Or baby would you rather [G]that I hold you close
 Do you want fingertips to touch you and [C]kisses on your cheek
 Do you want [D7]sugar in your coffee or lovin' warm and [G]sweet
 {end_of_verse}
+
+
+
+

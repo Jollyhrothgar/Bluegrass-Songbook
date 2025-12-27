@@ -1,6 +1,9 @@
 {meta: title Good Morning Self}
 {meta: artist Jim Reeves}
 {meta: composer Jimmy Key}
+{meta: x_source classic-country}
+{meta: x_source_file goodmorningselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Good morning self  how do you [D7]feel this [G]morning
@@ -27,3 +30,6 @@ And I heard those things you [D7]said as she [G]left
 You're the [C]only one to blame but we [G]both must share the [C]pain
 You know it's [G]true she said we're [D7]through good morning [G]self 
 {end_of_verse}
+
+
+

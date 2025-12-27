@@ -1,6 +1,9 @@
 {meta: title Heart Mender}
 {meta: artist Crystal Gayle}
 {meta: composer Richard Leigh and Milton Blackford}
+{meta: x_source classic-country}
+{meta: x_source_file heartmenderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I should have [Em]known that love would [Dm]make me [G7]blue
@@ -32,3 +35,7 @@ How I need a [Dm]heart [G7]mender to mend my [C]heart
 How I need a [Dm]heart [G7]mender [C]someone went and broke my [Am]heart
 How I need a [Dm]heart [G7]mender to mend my [C]heart
 {end_of_verse}
+
+
+
+

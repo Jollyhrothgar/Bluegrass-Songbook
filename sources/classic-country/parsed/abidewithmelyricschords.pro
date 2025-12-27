@@ -1,6 +1,9 @@
 {meta: title Abide With Me}
 {meta: artist Jimmy Dean}
 {meta: composer H.F. Lyte and W.H. Monk}
+{meta: x_source classic-country}
+{meta: x_source_file abidewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A-[G7]bide with [C]me fast [F]falls the [G7]even[C]tide
@@ -22,3 +25,5 @@ Shine through the [F]gloom [C]and [D7]point me to the [G7]skies
 [C]Heaven’s [G7]morning [C]breaks[C7]  and [F]earth’s vain shadows [Dm]flee 
 [G7]In life in [C]death O [F]Lord [C]abide [G7]with [C]me
 {end_of_verse}
+
+

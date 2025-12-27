@@ -1,6 +1,9 @@
 {meta: title I’m Blue Again}
 {meta: artist Patsy Cline}
 {meta: composer W.S. Stevenson, Clyde C. Beam, Charles L. Jiles}
+{meta: x_source classic-country}
+{meta: x_source_file imblueagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm blue again my friends [C7]all said I'd [F]be
@@ -22,3 +25,5 @@
 [C]I'm blue again my [C7]heart is filled with [F]tears
 [G7]I'm blue again as I think of wasted [C]years
 {end_of_verse}
+
+

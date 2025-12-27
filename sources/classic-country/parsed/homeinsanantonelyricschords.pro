@@ -1,6 +1,9 @@
 {meta: title Home in San Antone}
 {meta: artist Bob Wills}
 {meta: composer Floyd Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file homeinsanantonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Haven't got a worry haven't got [F]a care
@@ -29,3 +32,6 @@ Traveled over the country on my merry [F]way
 [C]And we'll buy a highchair in a year or [F]so
 [C]For our little Home [G7]In San [C]Antone
 {end_of_verse}
+
+
+

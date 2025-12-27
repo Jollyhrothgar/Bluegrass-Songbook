@@ -1,6 +1,9 @@
 {meta: title Homecoming}
 {meta: artist Bobby Bare}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file homecominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess I should have written dad to let you know that I was coming home [C7]
@@ -43,3 +46,8 @@ Well dad I gotta go we got a dance to work in Cartersville tonight[C7]
 Now [C]you be good and don't be chasing all those pretty women that you know [C7]
 And [C]by the way if you see Barbara [G7]Walker tell her that I said [C]hello
 {end_of_verse}
+
+
+
+
+

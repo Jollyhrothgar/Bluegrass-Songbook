@@ -1,6 +1,9 @@
 {meta: title Dancing With The Angels}
 {meta: artist New Grass Revival}
 {meta: composer Peter Rowan}
+{meta: x_source classic-country}
+{meta: x_source_file dancingwiththeangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dancing With The An[Em]gel[D7]s  [Em]
@@ -59,3 +62,11 @@ All is forgiven lay [D7]down your weary [G]load
 {start_of_verse: Verse 6}
 Dancing with the An[Em]gels [D7]while the lions [G]roar
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title First Christmas Morn}
 {meta: artist Charley Pride}
 {meta: composer Sue Lane}
+{meta: x_source classic-country}
+{meta: x_source_file firstChristmasmornlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A star in the East leading [F]Wise Men to [Fm]Him
@@ -36,3 +39,7 @@ Could [F]this be the [G7]day a [C]new world begins
 Has [C]mankind been blest with a [F]port from all [Fm]storms
 [C]On this [G7]first Christmas [C]morn
 {end_of_verse}
+
+
+
+

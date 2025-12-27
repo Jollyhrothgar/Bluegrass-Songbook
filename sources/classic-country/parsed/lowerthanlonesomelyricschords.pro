@@ -1,5 +1,8 @@
 {meta: title Lower Than Lonesome}
 {meta: artist Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file lowerthanlonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lower than lonesome is [F]down at the bottom of the [C]mine
@@ -34,3 +37,7 @@ Lower than lone[Am]some is [F]breaking this [G7]heart of [C]mine
 {start_of_verse: Verse 5}
 Lower than lone[Am]some is [F]breaking this [G7]heart of [C]mine
 {end_of_verse}
+
+
+
+

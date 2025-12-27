@@ -1,5 +1,8 @@
 {meta: title Santa Can't Stay}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file santacantstaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A cold tear fall from his eyes
@@ -66,3 +69,13 @@ Little Bobby he stares down
 {start_of_verse: Verse 8}
 [G]Momma said [D7]Santa can't [G]stay
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

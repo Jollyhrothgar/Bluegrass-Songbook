@@ -1,5 +1,8 @@
 {meta: title We're All In This Thing Alone}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file wereallinthisthingalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Hey there)  [C]you know she [G]left me
@@ -35,3 +38,7 @@ My eyes all red from [G]tears [D7]aren't really [G]blue
 In a [G]boat on a [D7]plane in a [Dm]train in a [Em]house by the [C]phone
 (Hey there) we're [G]all in [D7]this thing [G]alone
 {end_of_verse}
+
+
+
+

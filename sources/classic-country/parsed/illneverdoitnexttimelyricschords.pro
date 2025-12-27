@@ -1,6 +1,9 @@
 {meta: title I'll Never Do It Next Time}
 {meta: artist Carl Smith}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file illneverdoitnexttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll never [C]be [G]someone you'll see
@@ -27,3 +30,6 @@ And [G]I'll never [D7]do it next [G]time
 There'll be no cryin' or [C]sayin' goodbye
 And [G]I'll never [D7]do it next [C]time[G]
 {end_of_verse}
+
+
+

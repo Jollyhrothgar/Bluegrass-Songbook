@@ -1,6 +1,9 @@
 {meta: title I Will Take Care Of You}
 {meta: artist George Morgan}
 {meta: composer Lorene Mann and Bob Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file iwilltakecareofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Though times are hard life's road is rough
@@ -33,3 +36,7 @@ And I will [D7]never [G]be un[C]tr[Am]ue
 {start_of_verse: Verse 5}
 [D7]I will take care of [G]you
 {end_of_verse}
+
+
+
+

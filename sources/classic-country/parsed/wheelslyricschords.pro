@@ -1,6 +1,9 @@
 {meta: title Wheels}
 {meta: artist Emmylou Harris}
 {meta: composer Chris Hillman and Gram Parsons}
+{meta: x_source classic-country}
+{meta: x_source_file wheelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]We've all got [C]whe[C7]els to [F]take ourselves [C]away
@@ -33,3 +36,7 @@ So come on [C]wheels [F]take me home [C]today
 {start_of_verse: Verse 4}
 [F]Come on [C]wheels [G7]take this boy [F]away hey [C]hey
 {end_of_verse}
+
+
+
+

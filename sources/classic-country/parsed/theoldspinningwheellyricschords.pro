@@ -1,6 +1,9 @@
 {meta: title The Old Spinning Wheel}
 {meta: artist Slim Whitman}
 {meta: composer W.T. Hill}
+{meta: x_source classic-country}
+{meta: x_source_file theoldspinningwheellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's an old spinning wheel in the [D7]parlor
@@ -22,3 +25,5 @@ As the organ softly singing Old Black [D7]Joe
 There's [G]an old spinning wheel in the [D7]parlor
 Spinning dreams of the long long [G]ago
 {end_of_verse}
+
+

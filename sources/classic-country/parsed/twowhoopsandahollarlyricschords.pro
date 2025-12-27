@@ -1,6 +1,9 @@
 {meta: title Two Whoops And A Hollar}
 {meta: artist Jean Shepard}
 {meta: composer Joe Franklin}
+{meta: x_source classic-country}
+{meta: x_source_file twowhoopsandahollarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How come a man can fight and cuss and [C]smoke and drink and [G]chew
@@ -38,3 +41,8 @@ The [C]women ought to rule [G]the world cause the men ain't [D7]worth
 I hope [G]they croak it ain't no joke they're the [D7]lowest thing in [G]town
 They're the [C]lowest [D7]thing in [G]town
 {end_of_verse}
+
+
+
+
+

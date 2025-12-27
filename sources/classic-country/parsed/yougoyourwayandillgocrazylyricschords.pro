@@ -1,6 +1,9 @@
 {meta: title You Go Your Way (And I'll Go Crazy)}
 {meta: artist Ricky Van Shelton}
 {meta: composer Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file yougoyourwayandillgocrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Go on if you want to 
@@ -49,3 +52,9 @@ To [D7]lose your memo[G]ry
 {start_of_verse: Verse 6}
 You go [D7]your way and I'll go [C]craz[G]y
 {end_of_verse}
+
+
+
+
+
+

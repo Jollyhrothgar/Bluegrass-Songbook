@@ -1,6 +1,9 @@
 {meta: title You Can Share My Blanket}
 {meta: artist J.D. Crowe}
 {meta: composer Steven F. Brines and James B. Smoak}
+{meta: x_source classic-country}
+{meta: x_source_file youcansharemyblanketlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you say you love me I don’t [F]know what you mean
@@ -43,3 +46,8 @@ I’ll [G7]never know a love without an [C]end
 But if you [G7]really think we can then [C]you can share my [Am]blanket
 [F]And we’ll [G7]see what happens [C]then
 {end_of_verse}
+
+
+
+
+

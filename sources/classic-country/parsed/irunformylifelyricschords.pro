@@ -1,6 +1,9 @@
 {meta: title I Run For My Life}
 {meta: artist Jim Ed Brown}
 {meta: composer Bob Tubert and Margie Bowes}
+{meta: x_source classic-country}
+{meta: x_source_file irunformylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen the travel folders where to go and what to [C7]do
@@ -31,3 +34,7 @@ I'm just [F]going around in [C]circles as I [G7]run for my [C]life
 {start_of_verse: Verse 5}
 I'm just [F]going around in [C]circles as I [G7]run for my [C]life
 {end_of_verse}
+
+
+
+

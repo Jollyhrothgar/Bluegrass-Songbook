@@ -1,6 +1,9 @@
 {meta: title Never Been To Heaven}
 {meta: artist Mel Street}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file neverbeentoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She walks into the room and every [F]head turns [C]
@@ -34,3 +37,7 @@ It's as [Am]close to heaven [F]as I've ever [G7]been
 [F]I've never been to [C]heaven [G7]but I've sure been [C]close
 [F]I've never been to [C]heaven [G7]but I've sure been [C]close
 {end_of_verse}
+
+
+
+

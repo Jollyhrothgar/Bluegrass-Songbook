@@ -1,5 +1,8 @@
 {meta: title Could You Love Me Like You Used To Lyrics Lyrics Chords}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file couldyoulovemelikeyouusedtolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Could you love me like you used to
@@ -21,3 +24,5 @@
 {start_of_verse: Verse 3}
 Repeat
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Blue Love}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file bluelovelyricshords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today you wed a new love
@@ -18,3 +21,4 @@ That someday you'd find a new [C]love
 And [F]leave behind your blue [C]love
 My life was [G7]only meant for [C]misery 
 {end_of_verse}
+

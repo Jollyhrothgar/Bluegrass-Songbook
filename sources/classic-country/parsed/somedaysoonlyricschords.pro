@@ -1,6 +1,9 @@
 {meta: title Someday Soon}
 {meta: artist Suzy Bogguss}
 {meta: composer Ian Tyson}
+{meta: x_source classic-country}
+{meta: x_source_file somedaysoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a young man [Am]that I know whose [F]age is twenty-[C]one
@@ -43,3 +46,9 @@ Someday [Dm]soon going [G7]with him someday [C]soon
 {start_of_verse: Verse 5}
 Someday [Dm]soon going [G7]with him someday [C]soon
 {end_of_verse}
+
+
+
+
+
+

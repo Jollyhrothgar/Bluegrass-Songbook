@@ -1,5 +1,8 @@
 {meta: title My First Country Song}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file myfirstcountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I think that I just wrote my [D7]first country song
@@ -38,3 +41,7 @@ I've had this lonesome hurtin' feeling all night [G]long
 I didn't know I love her [C]and now she's gone
 [D7]I think that I just wrote my first country [G]song
 {end_of_verse}
+
+
+
+

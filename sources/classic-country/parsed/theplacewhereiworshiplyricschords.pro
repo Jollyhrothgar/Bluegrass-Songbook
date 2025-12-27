@@ -1,5 +1,8 @@
 {meta: title The Place Where I Worship}
 {meta: artist R.W. Hammonds}
+{meta: x_source classic-country}
+{meta: x_source_file theplacewhereiworshiplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the place where I worship is the wide open spaces
@@ -32,3 +35,6 @@ There’s a [F]carpet of green and a sky [C]blue roof above
 Oh the place where I worship is the wide open spaces
 [D7]Built by the [G7]hand of the [C]Lord
 {end_of_verse}
+
+
+

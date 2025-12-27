@@ -1,5 +1,8 @@
 {meta: title You're Next To Nothing}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file yourenexttonothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Now you're next to [G]nothing when you [D7]could be next to [G]her)
@@ -33,3 +36,7 @@
 [C]Then you betrayed her yes you stretched her love too far
 [G]Now you're next to nothing [D7]when you could be next to [G]her
 {end_of_verse}
+
+
+
+

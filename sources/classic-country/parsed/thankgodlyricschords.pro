@@ -1,6 +1,9 @@
 {meta: title Thank God}
 {meta: artist Hank Williams Sr}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file thankgodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a road that's straight and narrow
@@ -72,3 +75,15 @@ They need a helping hand
 Paved with all the tribulations
 Of the [A7]martyrs that have [D7]gone
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

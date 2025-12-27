@@ -1,6 +1,9 @@
 {meta: title Things I Lost In You}
 {meta: artist Conway Twitty}
 {meta: composer Mickey Jaco}
+{meta: x_source classic-country}
+{meta: x_source_file thingsilostinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's over I've known [C7]it for a long [F]time
@@ -22,3 +25,5 @@
 [C]Ah but it's over I found someone [C7]who really [F]cares
 [C]And I found in her [G7]the things I lost in [C]you
 {end_of_verse}
+
+

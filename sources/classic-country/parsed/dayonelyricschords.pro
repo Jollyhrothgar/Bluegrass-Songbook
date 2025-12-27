@@ -1,6 +1,9 @@
 {meta: title Day One}
 {meta: artist Randy Travis}
 {meta: composer Max D. Barnes and James Yeary}
+{meta: x_source classic-country}
+{meta: x_source_file dayonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Cold house [C]just before [D7]dawn
@@ -33,3 +36,7 @@ Day [Am]one of [D7]learning to live [G]with[D7]out [G]you
 {start_of_verse: Verse 4}
 Day [Am]one of [D7]learning to live [G]with[D7]out [G]you
 {end_of_verse}
+
+
+
+

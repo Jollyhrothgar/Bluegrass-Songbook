@@ -1,6 +1,9 @@
 {meta: title Who Knows You Best}
 {meta: artist George Morgan}
 {meta: composer Roy Drusky, Vic McAlpin, Marie Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file whoknowsyoubestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are two sides to [G7]every [C]story
@@ -33,3 +36,7 @@ So I [G7]wonder who knows you the [C]best
 {start_of_verse: Verse 5}
 Yes I [G7]wonder who knows you the [C]best
 {end_of_verse}
+
+
+
+

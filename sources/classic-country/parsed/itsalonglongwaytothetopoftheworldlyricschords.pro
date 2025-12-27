@@ -1,6 +1,9 @@
 {meta: title It's A Long Long Way To The Top Of The World}
 {meta: artist Jim and Jesse}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file itsalonglongwaytothetopoftheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a long long [C7]way to the top [F]of the [C]world
@@ -38,3 +41,8 @@ But it's only a [G7]short fall back [C]down
 {start_of_verse: Verse 5}
 But it's only a [G7]short fall back [C]down
 {end_of_verse}
+
+
+
+
+

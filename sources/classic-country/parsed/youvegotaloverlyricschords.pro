@@ -1,6 +1,9 @@
 {meta: title You've Got A Lover}
 {meta: artist Ricky Skaggs}
 {meta: composer Shake Russell}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotaloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The clubs are all [Am]closed and there's [C]nowhere [D7]to go
@@ -36,3 +39,7 @@ I'll be [G]looking for [C]an [D7]an-swer
 [C]There will be others yes [D7]I understand
 Will they [G]love me  like [D7][C]you can 
 {end_of_verse}
+
+
+
+

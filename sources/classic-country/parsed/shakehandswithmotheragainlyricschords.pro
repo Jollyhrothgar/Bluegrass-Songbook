@@ -1,6 +1,9 @@
 {meta: title Shake Hands With Mother Again}
 {meta: artist Wilburn Brothers}
 {meta: composer W.A. Berry}
+{meta: x_source classic-country}
+{meta: x_source_file shakehandswithmotheragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I should be living when Jesus comes
@@ -29,3 +32,6 @@ Up [F]there on the golden [C]strand
 When I can hear Jesus my Savior say
 Shake hands with [G7]mother [C]again
 {end_of_verse}
+
+
+

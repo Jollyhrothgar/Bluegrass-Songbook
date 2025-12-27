@@ -1,5 +1,8 @@
 {meta: title I Stayed Long Enough}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file istayedlongenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Accidentally in your [F]arms and that's all it [C]took
@@ -20,3 +23,5 @@
 [F]I stayed [C]long enough to [G7]fall in love with [C]you
 [F]I stayed [C]long enough to [G7]fall in love with [C][F]y-ou
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title That's All You Gotta Do}
 {meta: artist Brenda Lee}
 {meta: composer Jerry Reed Hubbard}
+{meta: x_source classic-country}
+{meta: x_source_file thatsallyougottadolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Anytime you're feeling low [Am]and you got no place to go
@@ -36,3 +39,7 @@ Because baby I want you to be my loving [G7]man
 [C]Tell me just how you feel [Am]tell me that your love is real
 [F]And I'll give my heart to you [G7]baby that's all you gotta [C]do
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Pretending I Don’t Care}
 {meta: artist Rhonda Vincent}
 {meta: composer Jimmy Martin and Paul M. Williams}
+{meta: x_source classic-country}
+{meta: x_source_file pretendingidontcarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My days are so [C]lonely my nights are so [G]blue
@@ -40,3 +43,8 @@ Like you I'm pre[D7]tending that I don't [G]care
 {start_of_verse: Verse 4}
 Like you I'm pre[D7]tending that I don't [G]care
 {end_of_verse}
+
+
+
+
+

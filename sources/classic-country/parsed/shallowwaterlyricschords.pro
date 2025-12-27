@@ -1,6 +1,9 @@
 {meta: title Shallow Water}
 {meta: artist Randy Travis}
 {meta: composer Tom Kimmel}
+{meta: x_source classic-country}
+{meta: x_source_file shallowwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I will not drown in shallow water
@@ -62,3 +65,11 @@ And will not [D7]rest until I'm [G]free
 I will not [D7]rest until I'm [G]free   
 [D7]Until I'm [G]free
 {end_of_verse}
+
+
+
+
+
+
+
+

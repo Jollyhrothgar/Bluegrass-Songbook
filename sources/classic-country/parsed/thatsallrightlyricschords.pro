@@ -1,6 +1,9 @@
 {meta: title That's All Right}
 {meta: artist Elvis Presley}
 {meta: composer Arthur Crudup}
+{meta: x_source classic-country}
+{meta: x_source_file thatsallrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well that's all right mama that's all right for you
@@ -27,3 +30,6 @@ That's all [G7]right now mama anyway you [C]do
 I need your [F]lovin' that's all [C]right
 That's all [G7]right now mama anyway you [C]do
 {end_of_verse}
+
+
+

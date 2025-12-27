@@ -1,5 +1,8 @@
 {meta: title If We Make It Through December}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ifwemakeitthroughdecemberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If We Make It Through [C]December every thing's gonna be alright I [G]know
@@ -27,3 +30,5 @@
 [Am]Maybe even California
 [D7]If We [Am]Make It Through [D7]December we'll be [G]fine
 {end_of_verse}
+
+

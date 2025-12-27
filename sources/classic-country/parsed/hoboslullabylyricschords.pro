@@ -1,6 +1,9 @@
 {meta: title Hobo's Lullaby}
 {meta: artist Emmylou Harris}
 {meta: composer Goebel Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file hoboslullabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Go to sleep you weary [F]hobo
@@ -36,3 +39,7 @@ Lift your head and smile at [F]trouble
 Can't you hear the steel rail [F]humming
 [G7]That's a hobo's [C]lullaby
 {end_of_verse}
+
+
+
+

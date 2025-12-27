@@ -1,6 +1,9 @@
 {meta: title You're Learning}
 {meta: artist Emmylou Harris}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file yourelearninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You are [C]learning what it's like to sit and [G]cry
@@ -28,3 +31,6 @@
 {start_of_verse: Verse 3}
 [D7]Yes you're [G]learning
 {end_of_verse}
+
+
+

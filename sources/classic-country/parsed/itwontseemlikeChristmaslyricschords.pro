@@ -1,5 +1,8 @@
 {meta: title It Won't Seem Like Christmas}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file itwontseemlikeChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody's busy decorating [C]Christmas [G]trees
@@ -22,3 +25,5 @@
 [G]Oh but it won't seem [D7]like Christmas to [G]me
 [C]No it [G]won't seem like [D7]Christmas to [G][C]m-e
 {end_of_verse}
+
+

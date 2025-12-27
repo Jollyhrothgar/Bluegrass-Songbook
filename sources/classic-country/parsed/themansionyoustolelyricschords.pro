@@ -1,5 +1,8 @@
 {meta: title The Mansion You Stole}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file themansionyoustolelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The mansion I own   has [F]captured your [C]heart
@@ -26,3 +29,6 @@ But someday my [D7]darling I know that you'll [G7]see
 A house without [C]love can [F]make you so [C]cold
 And you will be [G7]lonely in the mansion you [C]stole
 {end_of_verse}
+
+
+

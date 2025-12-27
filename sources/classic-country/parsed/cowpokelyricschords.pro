@@ -1,6 +1,9 @@
 {meta: title Cowpoke}
 {meta: artist Don Walser}
 {meta: composer David Houston and Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file cowpokelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]woo hoo doo woo woo hoo ooo woo [Am]ooo
@@ -47,3 +50,11 @@
 {start_of_verse: Verse 9}
 [C]woo hoo doo woo woo hoo ooo woo [Am]ooo
 {end_of_verse}
+
+
+
+
+
+
+
+

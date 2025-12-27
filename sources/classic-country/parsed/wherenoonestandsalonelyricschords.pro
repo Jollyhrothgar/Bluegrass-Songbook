@@ -1,6 +1,9 @@
 {meta: title Where No One Stands Alone}
 {meta: artist Loretta Lynn}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file wherenoonestandsalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I stood in the night [G7]with my head bowed [C]low
@@ -29,3 +32,6 @@ From [G7]here to the great [C7][C]unknown
 [F]Take my [C]hand  let [G7]me [F]stand 
 Where [C]no one [G7]stands [C]alone
 {end_of_verse}
+
+
+

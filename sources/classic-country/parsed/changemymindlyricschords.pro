@@ -1,6 +1,9 @@
 {meta: title Change My Mind}
 {meta: artist Waylon Jennings}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file changemymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I should get a look of [A#7]leavin' in my [G7]eyes
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [A#7]Put your arms round me [G7]woman change my [C]mind
 {end_of_verse}
+
+
+

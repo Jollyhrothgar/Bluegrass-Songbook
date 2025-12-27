@@ -1,6 +1,9 @@
 {meta: title One Of These Days}
 {meta: artist Emmylou Harris}
 {meta: composer Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file oneofthesedayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I won't have to chop no wood
@@ -40,3 +43,7 @@ Got to shake it [C]off my [G]back [D7]one of these [G]days
 Tag:
 There's gonna be [C]peace of mind for [G]me  one [D7]of these [G]days
 {end_of_verse}
+
+
+
+

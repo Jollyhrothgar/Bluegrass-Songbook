@@ -1,5 +1,8 @@
 {meta: title No More You And Me}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file nomoreyouandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today something told me not [F]to call [C]you
@@ -30,3 +33,6 @@ There'll [F]be only [C]misery
 Cause you and him me and [C][F]loneliness 
 But no [G7]more you and [C]me
 {end_of_verse}
+
+
+

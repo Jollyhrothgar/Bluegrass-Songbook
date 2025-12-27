@@ -1,6 +1,9 @@
 {meta: title Rose Of Love}
 {meta: artist Red Sovine}
 {meta: composer Jack Rhodes and John Fitzmorris}
+{meta: x_source classic-country}
+{meta: x_source_file roseoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a rose vine clinging [D7]tightly by my [G]window
@@ -29,3 +32,6 @@
 [C]I feel your thorns deep in [G]my heart with [D7]pain so hard to [G]hide
 [C]Oh rose of love oh [G]rose of love [G][D7]goodbye
 {end_of_verse}
+
+
+

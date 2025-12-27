@@ -1,6 +1,9 @@
 {meta: title Baby It's So Hard To Be Good}
 {meta: artist Ernest Tubb}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file babyitssohardtobegoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I make a promise a [F]day to my [C]baby I break the [F]promise a day some[C]how
@@ -30,3 +33,6 @@ And baby it's so [G7]hard to be [C]good
 But when you [F]get my age you [C]want on last [F]page 
 And baby it's so [G7]hard to be [C]good
 {end_of_verse}
+
+
+

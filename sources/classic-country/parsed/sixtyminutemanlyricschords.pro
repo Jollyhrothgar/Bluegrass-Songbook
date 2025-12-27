@@ -1,6 +1,9 @@
 {meta: title Sixty Minute Man}
 {meta: artist Hank Thompson}
 {meta: composer William Ward}
+{meta: x_source classic-country}
+{meta: x_source_file sixtyminutemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Listen here girls I'm a-[F]tellin’ you what they [C]call me loving [C7]Dan 
@@ -30,3 +33,6 @@ We [F]rock 'em roll 'em all night [Am]long I'm a-[C]sixty [G7]minute [C]man
 {start_of_verse: Verse 3}
 Oh [Am]yeah [C]sixty [G7]minute [C]man
 {end_of_verse}
+
+
+

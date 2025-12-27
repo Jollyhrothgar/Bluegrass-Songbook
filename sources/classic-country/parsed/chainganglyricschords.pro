@@ -1,6 +1,9 @@
 {meta: title Chain Gang}
 {meta: artist Freddie Hart}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file chainganglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Chain [C]gang chain [C]gang)
@@ -83,3 +86,15 @@
 [G7]Work like a dog on a chain [C]gang
 [G7]Work like a dog on a chain [C]gang
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

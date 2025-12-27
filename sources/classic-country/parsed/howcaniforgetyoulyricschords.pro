@@ -1,6 +1,9 @@
 {meta: title How Can I Forget You}
 {meta: artist Faron Young}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file howcaniforgetyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You told me to forget I love you   but you never told me [F]how
@@ -22,3 +25,5 @@ So [G7]darling stop and tell me how can I [C]forget
 [C]You've made me love you from the first day  the first day that we've [F]met
 So [G7]darling stop and tell me how can I [C]forget 
 {end_of_verse}
+
+

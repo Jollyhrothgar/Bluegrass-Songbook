@@ -1,6 +1,9 @@
 {meta: title The Borderline}
 {meta: artist Alabama}
 {meta: composer Gus Kahn and Walter Donaldson}
+{meta: x_source classic-country}
+{meta: x_source_file theborderlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]In a cloud of dust cross Texas [C]south of San Antone
@@ -53,3 +56,9 @@ The heroes never [A#7]turn or look [C]back
 They just [F]ride [A#7]through the sands of [C]time
 On the border[A#7]line
 {end_of_verse}
+
+
+
+
+
+

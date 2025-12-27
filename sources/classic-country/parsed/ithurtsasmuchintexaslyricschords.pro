@@ -1,6 +1,9 @@
 {meta: title It Hurts As Much In Texas}
 {meta: artist George Jones}
 {meta: composer Dennis Knutson and A. L. Owens}
+{meta: x_source classic-country}
+{meta: x_source_file ithurtsasmuchintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey we broke up in Nashville on a cold and rainy [D7]night
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]Yeah it hurts as much in Texas as it did in [G]Tennessee
 {end_of_verse}
+
+
+
+

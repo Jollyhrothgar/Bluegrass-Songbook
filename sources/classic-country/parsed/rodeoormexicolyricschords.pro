@@ -1,6 +1,9 @@
 {meta: title Rodeo Or Mexico}
 {meta: artist Garth Brooks}
 {meta: composer Paul Kennerley, Bryan Kennedy, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file rodeoormexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For a change I headed [F]south [A#7]across the [C]border
@@ -47,3 +50,9 @@ Rode[C]o--[F]o or [C]Mexico they [A#7]both can keep a [F]cowboy satis[G7]fied
 Rode[C]o--[F]o or [C]Mexico the [A#7]only way I [F]know how to de[G7]cide
 Is just to get on and [C]ride
 {end_of_verse}
+
+
+
+
+
+

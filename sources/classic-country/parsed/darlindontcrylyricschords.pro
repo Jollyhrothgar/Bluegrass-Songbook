@@ -1,6 +1,9 @@
 {meta: title Darlin' Don't Cry}
 {meta: artist Slim Whitman}
 {meta: composer Jerry Christ}
+{meta: x_source classic-country}
+{meta: x_source_file darlindontcrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darlin’ you know [F]I love you so
@@ -33,3 +36,7 @@ Look in my [C]eyes darlin’ [G7]darlin’ don’t [C]cry
 {start_of_verse: Verse 4}
 [G7]Darlin’ don’t [C]cry
 {end_of_verse}
+
+
+
+

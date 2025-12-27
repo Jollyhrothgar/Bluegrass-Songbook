@@ -1,6 +1,9 @@
 {meta: title Without Regreat I'd Love You Again and Chords}
 {meta: artist Faron Young}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file withoutregretidloveyouagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I had known the day I met you
@@ -34,3 +37,6 @@ Without regret  [G7]I'd love you [C]again
 {start_of_verse: Verse 3}
 Without regret  [G7]I'd love you [F]agai[C]n
 {end_of_verse}
+
+
+

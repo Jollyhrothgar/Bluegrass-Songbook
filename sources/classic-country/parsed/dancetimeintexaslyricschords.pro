@@ -1,6 +1,9 @@
 {meta: title Dance Time In Texas}
 {meta: artist George Strait}
 {meta: composer Peter Rowan}
+{meta: x_source classic-country}
+{meta: x_source_file dancetimeintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Its dance time in Texas and we're [F]striking up the [G7]band
@@ -32,3 +35,7 @@ Its dance time in Texas and we're [F]striking up the [G7]band
 Its dance time in Texas where the [F]wine and music [G7]flows
 [C]We'll do that Texas two step and that [G7]ol' cotton Eye [C]Joe
 {end_of_verse}
+
+
+
+

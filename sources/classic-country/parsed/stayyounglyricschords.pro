@@ -1,6 +1,9 @@
 {meta: title Stay Young}
 {meta: artist Don Williams}
 {meta: composer Graham Lyle and Benny Gallagher}
+{meta: x_source classic-country}
+{meta: x_source_file stayyounglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh don’t you lose that [F]light in your [C]eyes
@@ -36,3 +39,7 @@ You’ve got [C]everything [G7]that you [F]need
 Stay [C]young with your [G7]rock n [F]rollin’
 All the [C]best things in [G7]life are [F]free
 {end_of_verse}
+
+
+
+

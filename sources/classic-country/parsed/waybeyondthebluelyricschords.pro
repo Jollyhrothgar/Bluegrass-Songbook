@@ -1,6 +1,9 @@
 {meta: title Way Beyond The Blue}
 {meta: artist Alan Jackson}
 {meta: composer Mark D. Sanders, Randy Albright, Lisa Silver}
+{meta: x_source classic-country}
+{meta: x_source_file waybeyondthebluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't know I've been told
@@ -34,3 +37,7 @@ I'll be loving yo[D7]u  way beyond the [G]blue
 Way beyond the bl[D7]ue  way beyond the [G]blue
 I'll be loving yo[D7]u  way beyond the [G]blue
 {end_of_verse}
+
+
+
+

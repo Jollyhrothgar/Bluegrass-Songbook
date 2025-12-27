@@ -1,6 +1,9 @@
 {meta: title Take It From Me}
 {meta: artist Gene Watson}
 {meta: composer Joel Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file takeitfrommelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm not a [F]wise man but [G7]I've learned a [C]lot
@@ -33,3 +36,6 @@ And [Dm]then for the lovin' she [Fm]needs
 She'll find [C]somebody [E7]new who's sure to [Am]take her from [D7]you
 As [F]sure as you [G7]took her from [C]me
 {end_of_verse}
+
+
+

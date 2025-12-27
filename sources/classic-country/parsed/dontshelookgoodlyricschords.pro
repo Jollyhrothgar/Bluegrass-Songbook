@@ -1,6 +1,9 @@
 {meta: title Don’t She Look Good}
 {meta: artist Bill Anderson}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file dontshelookgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was on her way out of your life when I found her
@@ -57,3 +60,12 @@ And [G7]don't she look good when she [C]smiles
 But don't she look great in a new dress I bought [C]her
 And [G7]don't she look good when she [C]smiles
 {end_of_verse}
+
+
+
+
+
+
+
+
+

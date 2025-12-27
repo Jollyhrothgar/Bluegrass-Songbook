@@ -1,5 +1,8 @@
 {meta: title The Hands You're Holding Now}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file thehandsyoureholdingnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The hands you're holdin' now if you [F]remember
@@ -35,3 +38,7 @@ But [C]there's just the smallest chance you may be [G7]wrong
 [C]Until you sure I hope you'll never let [F]go
 Of the hands [C]that you've been [G7]holdin' for so [C]long
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ain't Gonna Be Your Day}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene Martin}
+{meta: x_source classic-country}
+{meta: x_source_file aintgonnabeyourdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I woke up this morning stumbled across the [D7]floor
@@ -56,3 +59,10 @@ No it ain’t gonna be your day boy it ain’t gonna be your [D7]day
 As they turn me away St. Peter would say it ain’t gonna be your [G]day
 [D7]When they turn me away St. Peter would say it ain’t gonna be your [G]day
 {end_of_verse}
+
+
+
+
+
+
+

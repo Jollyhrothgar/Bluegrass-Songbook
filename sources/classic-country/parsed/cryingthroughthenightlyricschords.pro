@@ -1,6 +1,9 @@
 {meta: title Crying Through The Night}
 {meta: artist Wanda Jackson}
 {meta: composer Morton Devand}
+{meta: x_source classic-country}
+{meta: x_source_file cryingthroughthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The wind is cold and overhead the sky has lost it's [G7]light
@@ -22,3 +25,5 @@ I'll keep watching through the day and crying through the [C]night
 [C]Come back my love come back my love until you come [G7]inside 
 I'll keep watching through the day and crying through the [C]night
 {end_of_verse}
+
+

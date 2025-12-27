@@ -1,6 +1,9 @@
 {meta: title Ghost Riders In The Sky}
 {meta: artist Johnny Cash}
 {meta: composer Stan Jones}
+{meta: x_source classic-country}
+{meta: x_source_file ghostridersintheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]An old cowboy went riding out one dark and windy [C]day
@@ -52,3 +55,12 @@ Yipie [C]i-oh  Yipie [Am]i-ay   [F]ghost riders in the [Am]sky
 [F]Ghost riders in the [Am]sky  
 [F]Ghost riders in the [Am]sky
 {end_of_verse}
+
+
+
+
+
+
+
+
+

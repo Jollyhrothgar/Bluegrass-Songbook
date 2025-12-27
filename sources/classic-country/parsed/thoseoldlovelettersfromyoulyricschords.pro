@@ -1,5 +1,8 @@
 {meta: title Those Old Love Letters From You}
 {meta: artist Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file thoseoldlovelettersfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I came upon a bundle of [C]letters one [G]day
@@ -35,3 +38,7 @@ Why did I read those old love [C]letters
 Why [G]did I keep those old love [C]letters
 Those [G]old love [D7]letters from [G]you 
 {end_of_verse}
+
+
+
+

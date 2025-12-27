@@ -1,6 +1,9 @@
 {meta: title Whirlwinds Of My Mind and Chords}
 {meta: artist Faron Young}
 {meta: composer Samuel Manning}
+{meta: x_source classic-country}
+{meta: x_source_file whirlwindsofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The tenderness of spring took [F]my hand and walked with [C]me
@@ -64,3 +67,11 @@ And [F]to an autumn [G7]love I couldn't [C]bind
 And as each whirlwind dies much [F]too late I [C]realize
 I've nothing but the [G7]whirlwinds of my [C]mind
 {end_of_verse}
+
+
+
+
+
+
+
+

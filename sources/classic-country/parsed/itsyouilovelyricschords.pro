@@ -1,6 +1,9 @@
 {meta: title It’s You I Love}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file itsyouilovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know I love you want you to love me [G7]too
@@ -36,3 +39,7 @@
 [F]Even in the rain we'll go hand in hand
 [C]Come here it's [G7]me it's you I [C]love
 {end_of_verse}
+
+
+
+

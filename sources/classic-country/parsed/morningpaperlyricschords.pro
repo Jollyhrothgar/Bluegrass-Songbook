@@ -1,6 +1,9 @@
 {meta: title Morning Paper}
 {meta: artist Billy Walker}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file morningpaperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heart oh heart I know it's [F]ended
@@ -38,3 +41,8 @@ Cause [G7]it destroyed this heart of [C]mine
 Heart oh heart I know it's [F]ended 
 [G7]The morning paper told us [C]all
 {end_of_verse}
+
+
+
+
+

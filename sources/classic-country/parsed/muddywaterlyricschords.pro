@@ -1,6 +1,9 @@
 {meta: title Muddy Water}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file muddywaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Out into the moonlight [G7]I could never fail
@@ -32,3 +35,6 @@ Like the [Dm]buffalo she just keeps moving [G7]on
 Like the [Dm]water rollin' out with the [G7]tide 
 She was here and [C]gone
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title One Heart}
 {meta: artist George Hamilton IV}
 {meta: composer Carl Wells}
+{meta: x_source classic-country}
+{meta: x_source_file oneheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One heart[F]   [G]is all I can [C]give
@@ -26,3 +29,6 @@ It's yours till I [D7]die take my one [G]heart
 {start_of_verse: Verse 4}
 Yours till I [D7]die please take my one [G]heart
 {end_of_verse}
+
+
+

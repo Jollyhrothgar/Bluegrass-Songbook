@@ -1,6 +1,9 @@
 {meta: title Poison Love}
 {meta: artist Mel Tillis}
 {meta: composer Elmer Laird}
+{meta: x_source classic-country}
+{meta: x_source_file poisonlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All your poison love has stained 
@@ -37,3 +40,8 @@ All my pleas and prayers have been in vain
 [G7]For you and you alone dear
 [C]And my better judgment tells me to say no
 {end_of_verse}
+
+
+
+
+

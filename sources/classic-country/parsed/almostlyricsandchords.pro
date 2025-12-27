@@ -1,6 +1,9 @@
 {meta: title Almost}
 {meta: artist George Morgan}
 {meta: composer Vic McAlpin and Jack Toombs}
+{meta: x_source classic-country}
+{meta: x_source_file almostlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C][G7]Al-most you [G7]fell in love with [C]me 
@@ -33,3 +36,6 @@ My [C]dreams just won't come [C7]true
 And there's [F]nothing I can [C]do
 [F]Oh how close we [G7]were [C]almost 
 {end_of_verse}
+
+
+

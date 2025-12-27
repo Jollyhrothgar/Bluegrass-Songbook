@@ -1,6 +1,9 @@
 {meta: title The Loving Gift}
 {meta: artist Kenny Rogers}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file thelovinggiftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You gave me a [D7]blanket to [C]keep me from the [G]cold
@@ -30,3 +33,6 @@ Just [C]living with the [G]loving gift you [D7]gave me
 Cause [G]you gave me a [D7]blanket to [C]keep me from the [G]cold
 [C]And you gave me a [D7]bab[G]y
 {end_of_verse}
+
+
+

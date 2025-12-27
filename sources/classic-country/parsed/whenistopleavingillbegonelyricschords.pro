@@ -1,6 +1,9 @@
 {meta: title When I Stop Leaving I’ll Be Gone}
 {meta: artist Charley Pride}
 {meta: composer Kent M. Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file whenistopleavingillbegonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How do some folks [C]stay in [G]love 
@@ -37,3 +40,7 @@ Sometimes I think it's all done with [C]mirrors
 {start_of_verse: Verse 4}
 [D7]When I stop leaving I'll be [G]gone
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title No Love Line}
 {meta: artist Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file nolovelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We were [Em]seventeen and [C]learning love [G]together
@@ -36,3 +39,7 @@ I've been riding [C]riding [G]riding on this no love [D7]line
 Riding [C]riding [G]riding on this no love [D7]line
 [G]Riding [C]riding [G]riding on this [D7]no love [G]line
 {end_of_verse}
+
+
+
+

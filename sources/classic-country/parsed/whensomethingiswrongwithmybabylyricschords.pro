@@ -1,6 +1,9 @@
 {meta: title When Something Is Wrong With My Baby}
 {meta: artist Sonny James}
 {meta: composer David Porter and Isaac Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file whensomethingiswrongwithmybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Something is wrong with my [Dm]baby
@@ -39,3 +42,8 @@ When something is wrong with my [Am]baby
 [C]When something is wrong with my [Dm]baby 
 [C]Something is [G7]wrong with [C]me
 {end_of_verse}
+
+
+
+
+

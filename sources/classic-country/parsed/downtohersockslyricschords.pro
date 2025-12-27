@@ -1,5 +1,8 @@
 {meta: title Down To Her Socks}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file downtohersockslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Slowly she sank to her [C]knees on the [G]floor
@@ -41,3 +44,8 @@ And her feet were the [D7]last ones to [G]know
 Yes he loved her right down to her [C]socks and no [G]further
 And her feet were the [D7]last ones to [C]kno[G]w
 {end_of_verse}
+
+
+
+
+

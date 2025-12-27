@@ -1,6 +1,9 @@
 {meta: title My Baby's Not Here}
 {meta: artist Norma Jean}
 {meta: composer Clyde Beam, Charles Jiles, W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file mybabysnotherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Well my baby's not [G]here in town tonight
@@ -43,3 +46,7 @@ And I'm [D7]hoping soon that he'll return to [G]me
 {start_of_verse: Verse 3}
 And I'm [D7]hoping soon that he'll return to [G]me
 {end_of_verse}
+
+
+
+

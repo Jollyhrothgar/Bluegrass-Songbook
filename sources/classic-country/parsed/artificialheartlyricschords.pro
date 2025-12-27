@@ -1,6 +1,9 @@
 {meta: title Artificial Heart}
 {meta: artist Ricky Skaggs}
 {meta: composer John Hall and Johanna Hall}
+{meta: x_source classic-country}
+{meta: x_source_file artificialheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can see it coming signs appear to me
@@ -46,3 +49,9 @@ Artificial heart one that does its [Em]part
 With [Am]just a little beating now and [C]then 
 [D7]Arti[G]ficial [D7]heart would be too smart to [C]fall [D7]in love [G]again  
 {end_of_verse}
+
+
+
+
+
+

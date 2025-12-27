@@ -1,6 +1,9 @@
 {meta: title Away Out There}
 {meta: artist Bob Wills}
 {meta: composer Bob Nolan}
+{meta: x_source classic-country}
+{meta: x_source_file awayouttherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A lonely spot I know where no man will [G7]go 
@@ -47,3 +50,8 @@ Going to [C]take me [G7]away from [C]here
 [F]Ee oo ee dle dee dee ho oo lay dee ee [C]dee 
 [G7]Ee   [F]oo   [G7]ee dle dee dee ho ho lay dee ee [C]dee
 {end_of_verse}
+
+
+
+
+

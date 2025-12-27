@@ -1,6 +1,9 @@
 {meta: title When It Comes To You}
 {meta: artist John Anderson}
 {meta: composer Mark Knopfler}
+{meta: x_source classic-country}
+{meta: x_source_file whenitcomestoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]If we can't get along we oughta be apart
@@ -43,3 +46,8 @@ How come I always get a hard time [G7]honey when it comes to [Am]you
 Saying [D7]things that you didn't have [Am]to
 How come I always get a hard time [G7]honey when it comes to [Am]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If Not For You}
 {meta: artist Jack Greene}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file ifnotforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If anything [F]I am or hope to [C]be
@@ -34,3 +37,7 @@ But what would I [G7]do (what would I do) if not for [C]you
 {start_of_verse: Verse 5}
 [F]But what would I [C]do (what would I [G7]do) if not for [F]you[C]
 {end_of_verse}
+
+
+
+

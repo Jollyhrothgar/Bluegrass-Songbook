@@ -1,6 +1,9 @@
 {meta: title Heaven Came Down And Glory Filled My Soul}
 {meta: artist The Speer Family}
 {meta: composer John Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file heavencamedownandgloryfilledmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]O what a wonderful wonderful day
@@ -43,3 +46,7 @@ And my [G]night was turned to [Em]day
 {start_of_verse: Verse 4}
 Heaven came [Em]down and [Am]glory [D7]filled my [G]soul 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Long And Lonesome Ride To Dalhart}
 {meta: artist Red Steagall}
 {meta: composer Michael Martin Murphey}
+{meta: x_source classic-country}
+{meta: x_source_file longandlonesomeridetodalhartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There was snow on the Spanish peaks that morning
@@ -79,3 +82,13 @@ When it’s [F]time for getting [G7]down to winter [C]ground
 {start_of_verse: Verse 8}
 I took the long lonesome ride to Dalhart
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

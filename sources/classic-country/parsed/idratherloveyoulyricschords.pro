@@ -1,6 +1,9 @@
 {meta: title I'd Rather Love You}
 {meta: artist Charlie Pride}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file idratherloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If tonight could be our last [C]night [G]together
@@ -22,3 +25,5 @@ Than never know your [D7]love at [G]all
 Yes I'd rather love [C]and lose [G]you
 Than never know your [D7]love at [G]all
 {end_of_verse}
+
+

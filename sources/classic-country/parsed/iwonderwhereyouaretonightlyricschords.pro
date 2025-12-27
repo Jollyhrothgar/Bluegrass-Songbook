@@ -1,6 +1,9 @@
 {meta: title I Wonder Where You Are Tonight}
 {meta: artist Porter Wagoner}
 {meta: composer Johnny Bond}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwhereyouaretonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm sad my heart is [F]weary  
@@ -29,3 +32,6 @@ Upon my window pane [G7]tonight
 And [C]though your love was even [F]colder  
 I [G7]wonder where you are [C]tonight
 {end_of_verse}
+
+
+

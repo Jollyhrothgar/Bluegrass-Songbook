@@ -1,5 +1,8 @@
 {meta: title Nothing Left To Lose}
 {meta: artist Chuck Cusimano}
+{meta: x_source classic-country}
+{meta: x_source_file nothinglefttoloselyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I lost the will to [Am]live when [Dm]you walked out the [G7]door
@@ -34,3 +37,7 @@ Since [C]I've lost [Am]you there's [Dm]nothing [G7]left to [C]lose [F]  [C]  [G7
 {start_of_verse: Verse 5}
 Since [C]I've lost [Am]you there's [Dm]nothing [G7]left to [C]lose
 {end_of_verse}
+
+
+
+

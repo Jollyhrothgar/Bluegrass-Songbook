@@ -1,6 +1,9 @@
 {meta: title Some Kind Of A Woman}
 {meta: artist Cal Smith}
 {meta: composer Jimmy Peppers and Tommy Cash}
+{meta: x_source classic-country}
+{meta: x_source_file somekindofawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tempted by the devil to give up the love
@@ -43,3 +46,8 @@ So why should I go looking for another
 [G7]Yes I've got me some kind of a [C]woman
 [D7]And that's why I go on home to be her [G][C]ma-n
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Greenville Trestle High}
 {meta: artist Ricky Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file thegreenvilletrestlehighlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember as a boy how in [F]wonderment and [C]joy
@@ -42,3 +45,8 @@ Lately not many trains go [G7]by
 Hard [C]times across the land mean no [F]work for a railroad [C]man
 And the Greenville Trestle now [G7]don't seem so [C]high
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'm Doing This For Your Sake}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file mdoingthisforyoursakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someone else's arms will hold you my darlin' baby [C7]girl
@@ -21,3 +24,5 @@ Cause [D7]home is where the heart is and [G7]with you my heart will stay
 Be[C]cause I love you so much [F]why I can't make you pay
 So I'm doing this for [C]your sake [G7]I'm giving you [F]away[C]
 {end_of_verse}
+
+

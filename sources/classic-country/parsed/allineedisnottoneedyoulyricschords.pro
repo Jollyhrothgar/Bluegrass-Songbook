@@ -1,6 +1,9 @@
 {meta: title All I Need Is Not To Need You}
 {meta: artist Patty Loveless}
 {meta: composer William Robinson, Tim Nichols, Randy Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file allineedisnottoneedyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't need to go crazy [F]runnin' round [G7]town till [C]dawn
@@ -48,3 +51,9 @@ At least for [G7]now
 {start_of_verse: Verse 6}
 All I need is [G7]not to need [C]you
 {end_of_verse}
+
+
+
+
+
+

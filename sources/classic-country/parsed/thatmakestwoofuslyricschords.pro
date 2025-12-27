@@ -1,6 +1,9 @@
 {meta: title That Makes Two Of Us}
 {meta: artist Merle Haggard}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file thatmakestwoofuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For two cents you'd up and leave [C]that's what you [G]say
@@ -33,3 +36,7 @@ And that makes [D7]two of us  we both want to be [G]free
 {start_of_verse: Verse 4}
 And that makes [D7]two of us  we both want to be [G]free
 {end_of_verse}
+
+
+
+

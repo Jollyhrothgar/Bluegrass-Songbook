@@ -1,6 +1,9 @@
 {meta: title A Rose Is A Rose Is A Rose}
 {meta: artist Jimmy Dean}
 {meta: composer Ricci Mareno and Gordon Galbraith}
+{meta: x_source classic-country}
+{meta: x_source_file aroseisaroseisaroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Though they say she's not your [C]kind 
@@ -34,3 +37,7 @@ A [G]rose is a [D7]rose is a [G]rose
 [E7]Cause no matter where it [C]goes 
 A [G]rose is a [D7]rose is a [G]rose
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I've Got A Picture Of Us On My Mind}
 {meta: artist Loretta Lynn}
 {meta: composer Bobby L. Harden}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotapictureofusonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a hot dusty bar room in [C]town
@@ -37,3 +40,7 @@
 [G]I can't picture [D7]myself with [F]anyone [C]else
 [G]I've got a picture [D7]of us on [C]my [G]mind
 {end_of_verse}
+
+
+
+

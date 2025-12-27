@@ -1,6 +1,9 @@
 {meta: title One More Last Chance}
 {meta: artist Vince Gill}
 {meta: composer Gary Nicholson and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file onemorelastchancelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was standing at the front door 
@@ -61,3 +64,8 @@ Give me just a [F]one more [C]last chance
 Give me just a [F]one more [C]last chance 
 [G7]Before you say we're [C]through
 {end_of_verse}
+
+
+
+
+

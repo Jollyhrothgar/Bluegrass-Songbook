@@ -1,6 +1,9 @@
 {meta: title Tweedle Dee}
 {meta: artist Connie Francis}
 {meta: composer Winfield Scott}
+{meta: x_source classic-country}
+{meta: x_source_file tweedledeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tweedle tweedle tweedle dee
@@ -58,3 +61,10 @@ Humy de bum bum
 [G7]Tweedlee tweedlee tweedlee [C]dee
 [G7]Hmm tweedlee tweedlee tweedlee [C]dee
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can Feel You Drifting}
 {meta: artist Kenny Rogers}
 {meta: composer Bat McGrath and Billy Kirsch}
+{meta: x_source classic-country}
+{meta: x_source_file icanfeelyoudriftinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You took me out so far and I can't swim to [C]shore
@@ -35,3 +38,7 @@
 [C]I can feel you drifting  I can feel you [G]drifting
 [C]You’re out of [G]reach
 {end_of_verse}
+
+
+
+

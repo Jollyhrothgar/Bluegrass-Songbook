@@ -1,6 +1,9 @@
 {meta: title I Used To Love You}
 {meta: artist The Everly Brothers}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file iusedtoloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I used to [C]love you [Am]not so long [G]ago
@@ -32,3 +35,6 @@
 [G]And in my [C]misery [G]I let you torture [C]me
 [G]I used to love you [A7]but I don't [D7]love you [G]anymore
 {end_of_verse}
+
+
+

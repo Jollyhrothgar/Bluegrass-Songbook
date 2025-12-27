@@ -1,6 +1,9 @@
 {meta: title Jackson}
 {meta: artist Johnny Cash}
 {meta: composer Billy Ed Wheeler and Gaby Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file jacksonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We got married in a fever hotter than a pepper sprout
@@ -37,3 +40,7 @@ We've been talking bout Jackson [C7]ever since the fire went out
 I'm going to [F]Jackson and that’s a [C]fact
 Yeah we’re going to [F]Jackson  [G7]ain’t never coming [C]back
 {end_of_verse}
+
+
+
+

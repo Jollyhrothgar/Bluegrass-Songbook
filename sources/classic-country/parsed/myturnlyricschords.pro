@@ -1,6 +1,9 @@
 {meta: title My Turn}
 {meta: artist Reba McEntire}
 {meta: composer Jay Huguely and Len Chiriacka}
+{meta: x_source classic-country}
+{meta: x_source_file myturnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Turn out the light [F]turn yourself over to [C]me
@@ -29,3 +32,6 @@ You've been turning me on all night [G7]long now it's [C]my turn
 You just [C]turn yourself over to [G7]me while I [C]turn my feelings [F]free
 You've been [C]turning me on all night [G7]long now it's [C]my turn
 {end_of_verse}
+
+
+

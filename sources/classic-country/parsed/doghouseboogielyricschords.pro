@@ -1,6 +1,9 @@
 {meta: title Dog House Boogie}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Boothe Woodall and Hawkshaw Hawkins}
+{meta: x_source classic-country}
+{meta: x_source_file doghouseboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know a new boogie that can't be beat
@@ -33,3 +36,6 @@ She shakes around like a thrashing [C7]machine
 [C]The dog house boogie (the dog house boogie)
 [G7]Everybody's doing the dog house boogie [C]now 
 {end_of_verse}
+
+
+

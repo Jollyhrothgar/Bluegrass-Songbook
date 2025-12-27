@@ -1,6 +1,9 @@
 {meta: title In My Dreams}
 {meta: artist Johnny Lee}
 {meta: composer Don Cook and Rafe Vanhoy}
+{meta: x_source classic-country}
+{meta: x_source_file inmydreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]I never quite got [G7]over you
@@ -44,3 +47,7 @@ Ain't it [C]funny how a [G7]fool can [Am]see the [G7]light
 {start_of_verse: Verse 4}
 [F]In my [C]dreams
 {end_of_verse}
+
+
+
+

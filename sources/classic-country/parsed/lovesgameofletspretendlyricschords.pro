@@ -1,5 +1,8 @@
 {meta: title Love's Game Of Let's Pretend}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file lovesgameofletspretendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your ribbon in the [E7]summer breeze [F]entwined in curls of [C]gold
@@ -28,3 +31,6 @@
 [C]Though each vow [E7]you cast away you [F]were mine in childhood [C]days
 [G7]When I wed you in love's game of let's [C]pretend
 {end_of_verse}
+
+
+

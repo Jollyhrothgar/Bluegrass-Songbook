@@ -1,5 +1,8 @@
 {meta: title Walking Piece of Heaven}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file walkingpieceofheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What's that round your [C]head is it a [G]halo
@@ -24,3 +27,5 @@ You must be a walking piece of [G]heaven
 Or [D7]is it love that makes me see these [G]things
 Or [D7]is it love that makes me see these [G]things
 {end_of_verse}
+
+

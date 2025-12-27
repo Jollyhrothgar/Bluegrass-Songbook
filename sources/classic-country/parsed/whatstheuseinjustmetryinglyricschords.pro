@@ -1,5 +1,8 @@
 {meta: artist Mel Tillis}
 {meta: composer Jim Owen}
+{meta: x_source classic-country}
+{meta: x_source_file whatstheuseinjustmetryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I tried so hard to make you [F]love me
@@ -32,3 +35,7 @@ What's the[G7] use in just me[C] tryin'
 {start_of_verse: Verse 4}
 What's the [G7]use in just me [C]tryin'
 {end_of_verse}
+
+
+
+

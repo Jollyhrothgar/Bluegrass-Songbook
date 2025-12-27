@@ -1,5 +1,8 @@
 {meta: title Golden Rocket}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file goldenrocketlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From old Montana down to Alabama
@@ -54,3 +57,8 @@ When I kissed my baby in the station door
 That whistle blew like it never before
 On the Golden Rocket that rolled my blues away
 {end_of_verse}
+
+
+
+
+

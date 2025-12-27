@@ -1,6 +1,9 @@
 {meta: title Baby Let's Lay Down And Dance}
 {meta: artist Garth Brooks}
 {meta: composer Kent Blazy, Garth Brooks, Steve Dorff,}
+{meta: x_source classic-country}
+{meta: x_source_file babyletslaydownanddancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I get this [D7]feeling that I [G]can't explain
@@ -52,3 +55,9 @@ What would you [Am]say to me if I said
 Girl I know it's [Am]crazy 
 But [C]baby let's lay down and [G]dance
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Thought About You Lord}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file ithoughtaboutyoulordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought about trees
@@ -67,3 +70,13 @@ I thought about life
 [C]I thought about You [G]Lord
 [D7]I thought about [G]You
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

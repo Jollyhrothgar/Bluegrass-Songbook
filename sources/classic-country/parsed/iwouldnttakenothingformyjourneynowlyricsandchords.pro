@@ -1,6 +1,9 @@
 {meta: title I Wouldn’t Take Nothing For My Journey Now}
 {meta: artist Ricky Van Shelton}
 {meta: composer Jimmie Davis and Charles R. Goodman}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldnttakenothingformyjourneynowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's nothing in this world that can [G7]ever take the place of God's [C]Love
@@ -46,3 +49,8 @@ If I [C]could still I wouldn't take [G7]nothing for my journey [C]now
 {start_of_verse: Verse 4}
 If I could still I wouldn't take [G7]nothing for my journey [C]now
 {end_of_verse}
+
+
+
+
+

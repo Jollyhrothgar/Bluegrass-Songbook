@@ -1,5 +1,8 @@
 {meta: title Mother Is Gone}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file motherisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a little pine grove by the old [C]home
@@ -35,3 +38,7 @@ Way up in [D7]heaven [D7][G]above
 And my [G]heart's so sad for the words I read [C]there
 The [G]words were [D7]mother is [G]gone
 {end_of_verse}
+
+
+
+

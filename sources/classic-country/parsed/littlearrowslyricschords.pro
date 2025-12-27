@@ -1,6 +1,9 @@
 {meta: title Little Arrows Lyrics Chords}
 {meta: artist Slim Whitman}
 {meta: composer Albert Hammond and Mike Hazlewood}
+{meta: x_source classic-country}
+{meta: x_source_file littlearrowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a boy a little boy shooting arrows in the [D7]blue
@@ -54,3 +57,10 @@ When [D7]you're in love you'll find those little arrows [G]everywhere
 Little arrows that will hit you once and hit you once [C]again
 Little [D7]arrows that hit everybody every now and [G]then
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ole Lonesome George The Basset}
 {meta: artist Tom T. Hall}
 {meta: composer Dixie Hall}
+{meta: x_source classic-country}
+{meta: x_source_file olelonesomegeorgethebassetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ole lonesome George the basset lived in [C]Brentwood Tenne[G]ssee
@@ -29,3 +32,6 @@ He [C]barked and growled and [G]jumped around and [A7]made the rappers [D7]ring
 He [G]left the people cheering for [C]another curtain [G]call
 And [C]so ole lonesome [G]George became the [D7]show dog after [G]all mhm
 {end_of_verse}
+
+
+

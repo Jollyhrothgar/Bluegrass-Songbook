@@ -1,6 +1,9 @@
 {meta: title Don't Keep It A Secret}
 {meta: artist Bob Wills}
 {meta: composer Don Larkin and Joe Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file dontkeepitasecretlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If your love for me has [B7]died
@@ -28,3 +31,5 @@
 [C]If all your love for me is [D7]gone
 [G]Don’t keep it a [D7]secret from [G]me
 {end_of_verse}
+
+

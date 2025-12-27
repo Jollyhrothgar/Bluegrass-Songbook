@@ -1,6 +1,9 @@
 {meta: title I Washed My Face In The Morning Dew}
 {meta: artist Don Gibson}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file iwashedmyfaceinthemorningdewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The first strange town I [F]was ever [C]in 
@@ -51,3 +54,9 @@ So I [F]washed my face in the morning [C]dew
 [C]And my journey [G7]will be [C]done 
 And my journey [G7]will be [C]done 
 {end_of_verse}
+
+
+
+
+
+

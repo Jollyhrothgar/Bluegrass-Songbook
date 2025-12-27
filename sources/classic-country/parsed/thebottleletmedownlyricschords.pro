@@ -1,5 +1,8 @@
 {meta: title The Bottle Let Me Down}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file thebottleletmedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each night I leave the barroom when it's over
@@ -30,3 +33,8 @@ And lately I've been turning [G7]everyday
 But the wind don't take effect the way it used to
 And I'm hurting in an old familiar [C]way
 {end_of_verse}
+
+
+
+
+

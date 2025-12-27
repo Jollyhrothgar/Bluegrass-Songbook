@@ -1,6 +1,9 @@
 {meta: title Look What Trouble Left Behind}
 {meta: artist Bob Wills}
 {meta: composer Margaret Crownover and Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhattroubleleftbehindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look what trouble left behind 
@@ -30,3 +33,5 @@ We'll [G7]have to say goodbye
 [F]A broken heart and a torn up mind
 [G7]That's what I get for loving [C]you
 {end_of_verse}
+
+

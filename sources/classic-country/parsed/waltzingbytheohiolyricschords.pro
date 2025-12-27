@@ -1,6 +1,9 @@
 {meta: title Waltzing By The Ohio}
 {meta: artist George Morgan}
 {meta: composer George Morgan and Harry Beasley Smith}
+{meta: x_source classic-country}
+{meta: x_source_file waltzingbytheohiolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was waltzing by the [C]Ohio  [G]River of dreams
@@ -33,3 +36,7 @@ With the [D7]girl of my dreams in his [G]arms
 {start_of_verse: Verse 3}
 (Waltzing [C]waltzing by the [G]Ohio)
 {end_of_verse}
+
+
+
+

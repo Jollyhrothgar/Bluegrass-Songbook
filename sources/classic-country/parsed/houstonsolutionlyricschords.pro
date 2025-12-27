@@ -1,6 +1,9 @@
 {meta: title Houston Solution}
 {meta: artist Ronnie Milsap}
 {meta: composer Paul Overstreet and Don Schlitz}
+{meta: x_source classic-country}
+{meta: x_source_file houstonsolutionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got some friends down in [G7]Houston who [C]know me quite well
@@ -34,3 +37,7 @@ I've got a [G]Houston [D7]solution in [Em]mind
 I've got a [G]Houston [D7]solution in [G]mind
 I've got a Houston [C]solut[G]ion 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It’s A Little Too Late To Do The Right Thing Now}
 {meta: artist Tanya Tucker}
 {meta: composer Roger Murrahand- Pat Terry}
+{meta: x_source classic-country}
+{meta: x_source_file itsalittletoolatetodotherightthingnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I was up all night a wondering what to do
@@ -41,3 +44,8 @@ Tag:
 [F]I may be wrong but I don't want out
 [C]Well it's a little too late to do [G7]the right thing [C]now
 {end_of_verse}
+
+
+
+
+

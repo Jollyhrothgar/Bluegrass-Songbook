@@ -1,6 +1,9 @@
 {meta: title Without You}
 {meta: artist Johnny Tillotson}
 {meta: composer Faye Bradshaw}
+{meta: x_source classic-country}
+{meta: x_source_file withoutyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You made me happy you made me sing
@@ -33,3 +36,6 @@ I dream [F]about you and I always will
 And I [C]know know it's [G7]true that [C]I I must go [F]through
 All my [C]life all my [G7]life without [C]you
 {end_of_verse}
+
+
+

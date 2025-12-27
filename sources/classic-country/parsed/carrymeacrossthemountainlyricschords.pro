@@ -1,6 +1,9 @@
 {meta: title Carry Me Across The Mountain}
 {meta: artist Dan Tyminski}
 {meta: composer John Pennell, William P. Smith, Jeffery White}
+{meta: x_source classic-country}
+{meta: x_source_file carrymeacrossthemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every day is a [C]gamble if [G]you really want to make it [F]through
@@ -40,3 +43,8 @@ And [G]every year I visit here to [D7]thank her for that [G]day
 [C]Heal my broken my [G]body death not be my fate
 [C]Carry me across the [G]mountain don't give up on [F]me[C]
 {end_of_verse}
+
+
+
+
+

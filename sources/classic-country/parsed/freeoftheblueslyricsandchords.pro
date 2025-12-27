@@ -1,6 +1,9 @@
 {meta: title Free of the Blues}
 {meta: artist Webb Pierce}
 {meta: composer D. C. Mullins and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file freeoftheblueslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gone are all my [D7]miseries that were caused by [G]memories
@@ -22,3 +25,5 @@ No more bitter [C]tears for me [D7]since the blues have set me [G]free
 [G]Gone are all my [D7]miseries that were caused by [G]memories
 No more bitter [C]tears for me [D7]since the blues have set me [G]free
 {end_of_verse}
+
+

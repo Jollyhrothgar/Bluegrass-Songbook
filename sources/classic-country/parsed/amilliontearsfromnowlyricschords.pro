@@ -1,6 +1,9 @@
 {meta: title A Million Tears From Now}
 {meta: artist Jimmy Dean}
 {meta: composer Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file amilliontearsfromnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Although you [F]said good[C]bye and [G7]left me hear to cry
@@ -22,3 +25,5 @@ But [D7]I will never change be[G7]cause I love you so
 Is your [C]heart [F]made of [C]stone will [G7]I still be alone
 And missing you a million tears from [C]now
 {end_of_verse}
+
+

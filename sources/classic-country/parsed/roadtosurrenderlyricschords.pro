@@ -1,6 +1,9 @@
 {meta: title Road To Surrender}
 {meta: artist Randy Travis}
 {meta: composer Angela Russell, Buffy Lawson, Gary Duffey}
+{meta: x_source classic-country}
+{meta: x_source_file roadtosurrenderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dear Lord I've heard you know  
@@ -54,3 +57,9 @@ Is on the [D7]road to su[G]rrender
 Oh [C]Lord this [G]weary [C]broken [G]sinner
 Is [C]on the [D7]road to su[G]rrender
 {end_of_verse}
+
+
+
+
+
+

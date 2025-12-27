@@ -4,11 +4,18 @@ Process a song submission from a GitHub issue.
 
 Reads the issue body from ISSUE_BODY environment variable,
 extracts the ChordPro content, and saves it to sources/manual/parsed/
+
+Adds submission provenance metadata:
+  {meta: x_source manual}
+  {meta: x_submitted_by github:username}
+  {meta: x_submitted 2025-12-26}
+  {meta: x_submission_issue 26}
 """
 
 import os
 import re
 import sys
+from datetime import date
 from pathlib import Path
 
 
@@ -46,6 +53,35 @@ def extract_metadata(issue_body: str) -> dict:
     return metadata
 
 
+def add_submission_metadata(content: str, author: str, issue_number: str) -> str:
+    """Add submission provenance metadata to ChordPro content.
+
+    Inserts metadata after existing meta lines but before first section.
+    """
+    lines = content.split('\n')
+
+    # Find insertion point (after existing meta lines)
+    insert_idx = 0
+    for i, line in enumerate(lines):
+        if line.startswith('{meta:') or line.startswith('{title:') or line.startswith('{artist:'):
+            insert_idx = i + 1
+
+    # Build metadata lines
+    today = date.today().isoformat()
+    metadata = [
+        '{meta: x_source manual}',
+        f'{{meta: x_submitted_by github:{author}}}',
+        f'{{meta: x_submitted {today}}}',
+        f'{{meta: x_submission_issue {issue_number}}}',
+    ]
+
+    # Insert metadata
+    for j, meta_line in enumerate(metadata):
+        lines.insert(insert_idx + j, meta_line)
+
+    return '\n'.join(lines)
+
+
 def generate_filename(title: str) -> str:
     """Generate a safe filename from the song title."""
     # Remove special characters, keep only alphanumeric
@@ -56,10 +92,11 @@ def generate_filename(title: str) -> str:
 
 
 def main():
-    # Get issue body from environment
+    # Get issue info from environment
     issue_body = os.environ.get('ISSUE_BODY', '')
     issue_number = os.environ.get('ISSUE_NUMBER', 'unknown')
     issue_title = os.environ.get('ISSUE_TITLE', '')
+    issue_author = os.environ.get('ISSUE_AUTHOR', 'unknown')
 
     if not issue_body:
         print("Error: ISSUE_BODY environment variable is empty")
@@ -70,6 +107,9 @@ def main():
     if not chordpro:
         print("Error: Could not find ChordPro content in issue body")
         sys.exit(1)
+
+    # Add submission provenance metadata
+    chordpro = add_submission_metadata(chordpro, issue_author, issue_number)
 
     # Extract metadata from issue body
     metadata = extract_metadata(issue_body)

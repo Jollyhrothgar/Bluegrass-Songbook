@@ -1,6 +1,9 @@
 {meta: title Passin' Through}
 {meta: artist David Houston}
 {meta: composer David Houston and Richard Blakeslee}
+{meta: x_source classic-country}
+{meta: x_source_file passinthroughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Passin' through passin' through
@@ -51,3 +54,10 @@
 [D7]Tell the people that you saw me passin' [G]through
 [D7]Tell the people that you saw me passin' [G]through
 {end_of_verse}
+
+
+
+
+
+
+

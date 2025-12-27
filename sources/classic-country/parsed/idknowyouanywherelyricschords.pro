@@ -1,6 +1,9 @@
 {meta: title I'd Know You Anywhere}
 {meta: artist Justin Trevino}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file idknowyouanywherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your lips look hard and cold now 
@@ -46,3 +49,9 @@ And I'd [C]know you [D7]any[G]where
 And I [C]guess I still [G]love you 
 So I'd [C]know you [D7]any[G]where
 {end_of_verse}
+
+
+
+
+
+

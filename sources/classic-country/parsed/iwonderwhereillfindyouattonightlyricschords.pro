@@ -1,6 +1,9 @@
 {meta: title I Wonder Where I'll Find You At Tonight}
 {meta: artist Leona Williams}
 {meta: composer Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwhereillfindyouattonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wonder if I'll [D7]find you in some [C]honky tonkin' [G]bar
@@ -42,3 +45,8 @@ I wonder where I'd [D7]find you at [G]tonight
 {start_of_verse: Verse 5}
 Oh I wonder where I'll [D7]find you at [C]tonigh[G]t
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Sermon On The Mount}
 {meta: artist Merle Haggard}
 {meta: composer Hank Williams and Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file thesermononthemountlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A man sat on a mountainside a [C]carpenter by trade
@@ -22,3 +25,5 @@ He'll lead us to the [G]kingdom and He'll promise you and [D7]me
 [G]So take the straight and narrow and [C]do good things that count
 Make up your mind to [G]live by the [D7]sermon on the [G]mount
 {end_of_verse}
+
+

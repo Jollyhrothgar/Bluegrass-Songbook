@@ -1,5 +1,8 @@
 {meta: title May The Force Be With You Always}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file maytheforcebewithyoualwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There is a force that [C]moves our lives [G]from place to place
@@ -21,3 +24,5 @@ The force is bigger [C]than the little [G]plans we made
 If we are part of [C]something bigger [G]we can face the [C]dark
 May the force be with you [G]always [D7]sweet[G]heart
 {end_of_verse}
+
+

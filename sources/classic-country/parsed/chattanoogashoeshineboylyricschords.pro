@@ -1,6 +1,9 @@
 {meta: title Chattanooga Shoeshine Boy}
 {meta: artist Red Foley}
 {meta: composer Harry Stone and Jack Stapp}
+{meta: x_source classic-country}
+{meta: x_source_file chattanoogashoeshineboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have you ever passed the corner of fourth and grand
@@ -43,3 +46,8 @@ He opens up for business when the clock strikes nine
 [F]Everybody gets a little rise and shine with a great big bundle of [C]joy
 [G7]He pops a boogie-woogie rag the Chattanooga Shoeshine [C]Boy
 {end_of_verse}
+
+
+
+
+

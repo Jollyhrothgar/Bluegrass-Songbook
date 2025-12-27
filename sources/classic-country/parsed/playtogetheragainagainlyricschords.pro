@@ -1,6 +1,9 @@
 {meta: title Play Together Again Again}
 {meta: artist Johnny Bush}
 {meta: composer Buck Owens, Jerry Abbott, Charles Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file playtogetheragainagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Play together again [F]again let me [G7]dance her across my [C]mind
@@ -26,3 +29,6 @@ Play together a[C]gain [F]again [G7]bring back yester[C]day
 {start_of_verse: Verse 3}
 [G7]Play together [C]again [F]again
 {end_of_verse}
+
+
+

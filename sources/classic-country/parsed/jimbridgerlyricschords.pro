@@ -1,6 +1,9 @@
 {meta: title Jim Bridger}
 {meta: artist Johnny Horton}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file jimbridgerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Once there was a mountain man who couldn't write his name
@@ -43,3 +46,8 @@ As long as there's the USA don't let his memory [A]die
 (That he was making history never once occurred to [D7]him)
 But I [E7]doubt if we'd been here if it weren't for men like [A]Jim
 {end_of_verse}
+
+
+
+
+

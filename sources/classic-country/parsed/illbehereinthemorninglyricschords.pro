@@ -1,6 +1,9 @@
 {meta: title I'll Be Here In The Morning}
 {meta: artist Don Williams}
 {meta: composer Townes Van Zandt}
+{meta: x_source classic-country}
+{meta: x_source_file illbehereinthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]There's no [C]stronger wind than the one 
@@ -39,3 +42,7 @@ I'll [C]stay as long as the cuckoo wails and the [F]lonesome blue jay [C]cries
 [G7]Close your eyes I'll be here in the [F]morning
 [G7]Close your eyes I'll [F]be here for a [Am]while
 {end_of_verse}
+
+
+
+

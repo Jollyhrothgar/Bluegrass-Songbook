@@ -1,6 +1,9 @@
 {meta: title Heaven's Bright Shore}
 {meta: artist Alison Krauss}
 {meta: composer A. Kennedy}
+{meta: x_source classic-country}
+{meta: x_source_file heavensbrightshorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Out on the hills of glory land
@@ -74,3 +77,17 @@ Tag:
 Just singing His praise through [Am]endless [G7]days 
 On Heaven’s bright [C]shore
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Here Today Here Tomorrow}
 {meta: artist Leroy Van Dyke}
 {meta: composer Kent Blazy and Jim Dowell}
+{meta: x_source classic-country}
+{meta: x_source_file heretodayheretomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say your [Bm]love [C]has been the leaving kind[Bm]
@@ -29,3 +32,6 @@ There's [Am]nothing [Bm]we can [C]do without your [G]love
 As I'll be [G]here [Bm]today [C]and here [Bm]tomorrow
 And [C]every [Am]night for the [D7]rest of your [G]life
 {end_of_verse}
+
+
+

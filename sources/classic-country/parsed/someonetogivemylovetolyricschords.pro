@@ -1,6 +1,9 @@
 {meta: title Someone To Give My Love To}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file someonetogivemylovetolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I could search from now till the [E7]end of [F]time 
@@ -36,3 +39,7 @@ I find happiness is loving [F]you
 Then beyond forever I'll wait for [F]you 
 [C]Someone to give my love [G]to 
 {end_of_verse}
+
+
+
+

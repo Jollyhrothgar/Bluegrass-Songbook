@@ -1,6 +1,9 @@
 {meta: title Slowly Passin' Time}
 {meta: artist John Conlee}
 {meta: composer Rory Bourke, Tommy Rocco, Charlie Black}
+{meta: x_source classic-country}
+{meta: x_source_file slowlypassintimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We both had our dreams when we [G7]left this sleepy little [C]town behind
@@ -33,3 +36,7 @@ And [F]me and you are together in a [C]porch swing state of mind[F]
 {start_of_verse: Verse 4}
 We're just [G7]loving each other to the rhythm of [C]slow passing time
 {end_of_verse}
+
+
+
+

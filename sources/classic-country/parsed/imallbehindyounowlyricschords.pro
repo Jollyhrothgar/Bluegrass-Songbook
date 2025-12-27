@@ -1,6 +1,9 @@
 {meta: title I'm All Behind You Now}
 {meta: artist George Strait}
 {meta: composer Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file imallbehindyounowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Leavin' me [C]behind is all [G]behind you now
@@ -33,3 +36,7 @@ I'm [D7]all behind you [G]now
 {start_of_verse: Verse 5}
 Yeah it tears me up to [Am]know deep down I'm [D7]all behind you [G]now
 {end_of_verse}
+
+
+
+

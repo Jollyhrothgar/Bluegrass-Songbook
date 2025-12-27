@@ -1,6 +1,9 @@
 {meta: title Here I Am}
 {meta: artist Chad Morgan}
 {meta: composer Jerry Reed}
+{meta: x_source classic-country}
+{meta: x_source_file hereiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They tell me you've been looking for someone to hold you tight
@@ -29,3 +32,5 @@ Your every wish is my command here I [G7]am I've got the wedding [C]band in my h
 I bought it [F]all especially for the [C]girls who could be true
 So [D7]if you wanting matrimony well [G7]here I'm the bloke for [C]you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Why In Heaven's Name}
 {meta: artist George Morgan}
 {meta: composer Steve Nelson, Ed Nelson, Jr., Ed Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file whyinheavensnamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You treat me so shamefully you always make me [D7]blue
@@ -22,3 +25,5 @@
 [C]If I say goodbye today tomorrow I'd be [D7]blue
 [G7]So why in heaven's name do I love a little devil like [C]you
 {end_of_verse}
+
+

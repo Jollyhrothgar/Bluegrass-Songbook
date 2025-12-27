@@ -1,5 +1,8 @@
 {meta: title Rain and Snow}
 {meta: artist Del McCoury}
+{meta: x_source classic-country}
+{meta: x_source_file rainandsnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I married me a wife she [F]give me trouble all my [G]life
@@ -28,3 +31,6 @@
 [F]Rain and snow ooh oh [G]Lord
 [F]Left me out in the cold rain and [G]snow
 {end_of_verse}
+
+
+

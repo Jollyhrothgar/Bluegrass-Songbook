@@ -1,6 +1,9 @@
 {meta: title Ain't You Ashamed}
 {meta: artist Jean Shepard}
 {meta: composer Ricky Riddle and Mac Donald}
+{meta: x_source classic-country}
+{meta: x_source_file aintyouashamedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh you sit there and smile and [C]you hold him by the [G]hand
@@ -29,3 +32,6 @@ You lured him away from me [A7]with your sweet lies and [D7]song
 Your [G]kinds a dime a dozen and you [C]think that love's a [G]game
 Look into the mirror woman [D7]ain't you [G]ashamed
 {end_of_verse}
+
+
+

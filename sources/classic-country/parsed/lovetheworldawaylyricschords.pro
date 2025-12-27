@@ -1,5 +1,8 @@
 {meta: title Love The World Away}
 {meta: artist Kenny Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file lovetheworldawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every now and [F]then
@@ -43,3 +46,9 @@ repeat #2
 {start_of_verse: Verse 7}
 [F]And love the [G7]world [C]away
 {end_of_verse}
+
+
+
+
+
+

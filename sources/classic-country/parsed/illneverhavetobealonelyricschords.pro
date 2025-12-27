@@ -1,6 +1,9 @@
 {meta: title I'll Never Have To Be Alone}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file illneverhavetobealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One of these days yes I know I'm gonna find me a [G7]girl
@@ -22,3 +25,5 @@
 [C]And that'll be the day I'll be sittin’ on the top of the [G7]world
 [F]Me and my [G7]girl then [F]maybe  [G7]baby  I'll [F]never have to be [C][G7]alone
 {end_of_verse}
+
+

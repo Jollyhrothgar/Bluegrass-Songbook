@@ -1,6 +1,9 @@
 {meta: title Don't It Make My Brown Eyes Blue}
 {meta: artist Crystal Gayle}
 {meta: composer Richard Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file dontitmakemybrowneyesbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't know [Am]when  [Dm]I've been so [G7]blue
@@ -31,3 +34,6 @@ And [F]don't it make my [Em]brown eyes
 [F]Don't it make my [Em]brown eyes
 [F]Don't it make my brown eyes [C]blue
 {end_of_verse}
+
+
+

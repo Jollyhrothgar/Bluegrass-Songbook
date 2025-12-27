@@ -1,5 +1,8 @@
 {meta: title Family Ties Won't Be Broken In Heaven}
 {meta: artist The Singing Cookies}
+{meta: x_source classic-country}
+{meta: x_source_file familytieswontbebrokeninheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down here we say goodbye to our [F]loved ones
@@ -36,3 +39,7 @@ There will be no goodbyes
 To bring [F]tears to our eyes
 Cause the [C]circle won't be [G7]broken any[C]more
 {end_of_verse}
+
+
+
+

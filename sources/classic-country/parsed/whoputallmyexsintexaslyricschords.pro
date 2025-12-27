@@ -1,6 +1,9 @@
 {meta: title Who Put All My Ex's In Texas}
 {meta: artist Willie Nelson}
 {meta: composer Eddie Rabbitt, Larry Lee, Tony Moon}
+{meta: x_source classic-country}
+{meta: x_source_file whoputallmyexsintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who put my Alice in [A7]Dallas
@@ -47,3 +50,9 @@ In [D7]Houston Fort Worth and Corpus Christi [G7]too
 {start_of_verse: Verse 5}
 [D7]Who took all my [G7]gals away from [C]me
 {end_of_verse}
+
+
+
+
+
+

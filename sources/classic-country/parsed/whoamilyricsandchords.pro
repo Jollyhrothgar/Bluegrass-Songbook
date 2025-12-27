@@ -1,6 +1,9 @@
 {meta: title Who I Am}
 {meta: artist Alan Jackson}
 {meta: composer Harley Allen and Mel Besher}
+{meta: x_source classic-country}
+{meta: x_source_file whoamilyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I know you hate my drinking and the way I [F]talk some[C]times 
@@ -33,3 +36,7 @@ You do the [C]best [F]you [C]can [G7]with who I [C]am
 {start_of_verse: Verse 4}
 [F]You do the [C]best [F]you [C]can [G7]with who I [C]am
 {end_of_verse}
+
+
+
+

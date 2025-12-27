@@ -1,6 +1,9 @@
 {meta: title Where Do I Go}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and Bob Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file wheredoigolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd like to say that I'm okay 
@@ -48,3 +51,9 @@ When I [G7]get to where I'm [C]going
 [F]Where do I [C]go 
 When I [G7]get to where I'm [C]going
 {end_of_verse}
+
+
+
+
+
+

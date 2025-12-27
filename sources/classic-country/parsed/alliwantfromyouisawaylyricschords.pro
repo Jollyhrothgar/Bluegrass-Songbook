@@ -1,6 +1,9 @@
 {meta: title All I Want From You Is Away}
 {meta: artist Loretta Lynn}
 {meta: composer Bobby Harden}
+{meta: x_source classic-country}
+{meta: x_source_file alliwantfromyouisawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At first I kinda liked it being here with [F]you
@@ -29,3 +32,6 @@
 [F]You'll always be just what you are no matter what [D7]I say
 [G7]All I want from you is [C][F]away
 {end_of_verse}
+
+
+

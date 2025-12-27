@@ -1,5 +1,8 @@
 {meta: title Pinto The Wonder Horse Is Dead}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file pintothewonderhorseisdeadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I read it in the paper just [F]about a week ago
@@ -46,3 +49,9 @@ The [F]dusty trails are gone now but it [C]hurts to hear it [F]said
 {start_of_verse: Verse 5}
 Pinto the [F]wonder horse is [C]dead
 {end_of_verse}
+
+
+
+
+
+

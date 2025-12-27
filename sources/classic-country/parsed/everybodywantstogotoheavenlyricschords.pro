@@ -1,5 +1,8 @@
 {meta: title Everybody Wants To Go To Heaven}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file everybodywantstogotoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody wants to go to heaven but [C]nobody wants to [D7]die
@@ -33,3 +36,7 @@ So I long for the day when I'll have new birth
 [C]Everybody wants to go to heaven but nobody wants to [G]die
 [C]Lord I wanna go to heaven  but I don't wanna [G]die
 {end_of_verse}
+
+
+
+

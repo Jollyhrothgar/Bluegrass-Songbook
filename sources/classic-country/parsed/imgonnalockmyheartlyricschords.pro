@@ -1,6 +1,9 @@
 {meta: title I’m Gonna Lock My Heart}
 {meta: artist Eddy Arnold}
 {meta: composer Jimmy Eaton and Terry Shand}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnalockmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna lock my heart and throw away the key 
@@ -39,3 +42,8 @@ So the love-bug can't [G7]get in
 I'm gonna park my romance right along [C]the curve
 Hang a sign upon my heart please don't [F]disturb 
 {end_of_verse}
+
+
+
+
+

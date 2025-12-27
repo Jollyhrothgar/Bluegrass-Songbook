@@ -1,6 +1,9 @@
 {meta: title Flowers On The Wall}
 {meta: artist the Statler Brothers}
 {meta: composer Lewis Dewitt}
+{meta: x_source classic-country}
+{meta: x_source_file flowersonthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I keep hearing you're concerned about my [Am]happiness
@@ -45,3 +48,10 @@ Playing solitaire till dawn with a deck of fifty-one
 Tag:
 [F]Don't tell [G7]me  [F]I've nothing to [G7]do
 {end_of_verse}
+
+
+
+
+
+
+

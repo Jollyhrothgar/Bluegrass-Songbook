@@ -1,6 +1,9 @@
 {meta: title Senor Santa Claus}
 {meta: artist Jim Reeves}
 {meta: composer Lawton Williams}
+{meta: x_source classic-country}
+{meta: x_source_file senorsantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear Senor Santa Claus I [F]think I tell you [C]what
@@ -37,3 +40,7 @@
 [F]If I get peso [C]to buy ring [G7]for my Lolita's [C]hand
 [F]If I get peso [C]to buy ring [G7]for my Lolita's [C]hand
 {end_of_verse}
+
+
+
+

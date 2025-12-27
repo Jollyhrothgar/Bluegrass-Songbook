@@ -1,6 +1,9 @@
 {meta: title A Picture Of Jesus}
 {meta: artist Nancy Moore}
 {meta: composer Dixie Hall and Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file apictureofJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On a journey through the [D7]mountains of [G]Virginia
@@ -51,3 +54,10 @@ There was [D7]just a patch of sunlight on the [G]floor [G7]
 [C]Pictures on the wall famous [G]people one and all
 A [D7]picture of Jesus on the [G]wall
 {end_of_verse}
+
+
+
+
+
+
+

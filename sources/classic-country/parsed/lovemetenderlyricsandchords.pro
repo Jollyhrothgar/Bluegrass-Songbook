@@ -1,6 +1,9 @@
 {meta: title Love Me Tender}
 {meta: artist Marty Robbins}
 {meta: composer Vera Matson and Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file lovemetenderlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love me tender [D7]love me sweet [G7]never let me [C]go
@@ -22,3 +25,5 @@
 [E7]Love me [Am]tender love [C]me true [F]all my [Fm]dreams [C]fulfilled
 [A7]For my [D7]darlin' I love you [G7]and I always [C]will
 {end_of_verse}
+
+

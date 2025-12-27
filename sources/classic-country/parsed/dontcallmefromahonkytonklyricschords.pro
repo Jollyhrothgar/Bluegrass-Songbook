@@ -1,6 +1,9 @@
 {meta: title Don't Call Me From a Honky Tonk}
 {meta: artist Tony Booth}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file dontcallmefromahonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You call and say you're lonesome you [G7]want me back [C]again
@@ -33,3 +36,7 @@ Don't [D7]call me from a honky tonk and think you'll change my [G]mind
 {start_of_verse: Verse 4}
 Don't [D7]call me from a honky tonk and think you'll change my [G]mind
 {end_of_verse}
+
+
+
+

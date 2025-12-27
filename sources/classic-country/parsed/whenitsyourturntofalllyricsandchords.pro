@@ -1,6 +1,9 @@
 {meta: title When It's Your Turn To Fall}
 {meta: artist Johnny Rodriguez}
 {meta: composer Maryland W. Francis, Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file whenitsyourturntofalllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Someday you’ll know  what I’m going [D7]through
@@ -22,3 +25,5 @@
 [G7]You’ll bend till you break  you [C]might even [Am]crawl
 [D7]It’s whatever it takes  when it’s your turn to [G]fall
 {end_of_verse}
+
+

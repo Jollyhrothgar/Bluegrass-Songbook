@@ -1,6 +1,9 @@
 {meta: title Your Memory Sure Gets Around}
 {meta: artist Merle Haggard}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file yourmemorysuregetsaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been down in the valley and on the highest hill
@@ -33,3 +36,7 @@ Cause your memory sure gets [G]around
 {start_of_verse: Verse 4}
 [D7]Cause your memory sure gets [G]around
 {end_of_verse}
+
+
+
+

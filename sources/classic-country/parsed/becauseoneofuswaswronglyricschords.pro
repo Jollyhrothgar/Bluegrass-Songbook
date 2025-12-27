@@ -1,6 +1,9 @@
 {meta: title Because One Of Us Was Wrong}
 {meta: artist Porter Wagoner}
 {meta: composer Tom Paxton and Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file becauseoneofuswaswronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm sorry I was [G7]weak enough to step out on [C]you
@@ -27,3 +30,6 @@ Because one of us was [C]wrong don't mean the [G7]other one was [C]right
 {start_of_verse: Verse 4}
 Because [F]one of us was [C]wrong don't mean the [G7]other one was [C]right
 {end_of_verse}
+
+
+

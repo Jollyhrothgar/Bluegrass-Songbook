@@ -1,5 +1,8 @@
 {meta: title A Change In The Air}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file achangeintheairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's somethin' talkin' in the wind [F]whispering through the [C]trees
@@ -32,3 +35,7 @@ And [Dm]tonight I feel a [G7]change in the [Am]air[F]
 {start_of_verse: Verse 5}
 Yes I [Dm]surely feel a [G7]change in the [C]air
 {end_of_verse}
+
+
+
+

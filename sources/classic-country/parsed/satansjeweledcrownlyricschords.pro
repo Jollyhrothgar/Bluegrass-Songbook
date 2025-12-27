@@ -1,6 +1,9 @@
 {meta: title Satan's Jeweled Crown}
 {meta: artist Emmylou Harris}
 {meta: composer Edgar Edens}
+{meta: x_source classic-country}
+{meta: x_source_file satansjeweledcrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now if I were a [G7]queen and a ruler of [C]nations
@@ -29,3 +32,6 @@ Satan's jewel [G7]crown I've worn it so [C]long
 His love set me [G7]free He made me His [C]own
 And helped me cast [G7]off Satan's jewel [C]crown
 {end_of_verse}
+
+
+

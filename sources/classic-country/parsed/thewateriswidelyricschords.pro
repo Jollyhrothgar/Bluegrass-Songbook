@@ -1,6 +1,9 @@
 {meta: title The Water Is Wide}
 {meta: artist Rhonda Vincent}
 {meta: composer Jean Paul Cabrieres}
+{meta: x_source classic-country}
+{meta: x_source_file thewateriswidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The water is wide [F]I can't cross [C]o'er
@@ -33,3 +36,7 @@ And both shall [C]row  [G7]my love and [C]I
 {start_of_verse: Verse 4}
 And both shall row  [G7]my love and [C]I
 {end_of_verse}
+
+
+
+

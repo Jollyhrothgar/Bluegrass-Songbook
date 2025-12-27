@@ -1,5 +1,8 @@
 {meta: title Good Friends Good Whiskey Good Loving}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file goodfriendsgoodwhiskeygoodlovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One thing's for sure we're [D7]all just passing [G]through
@@ -33,3 +36,7 @@ My good [G]friends my good whis[D7]key and good [G]loving
 Take my [C]money take my rings I'd trade it [G]all for just three [C]things
 My good [G]friends my good whis[D7]key and your good [G]loving
 {end_of_verse}
+
+
+
+

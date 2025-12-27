@@ -1,5 +1,8 @@
 {meta: title Black Rider}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file blackriderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Black Rider Black [C7]Rider
@@ -21,3 +24,5 @@
 [G7]If you don't ride Black Rider
 [C]I'll keep these Black Rider blues
 {end_of_verse}
+
+

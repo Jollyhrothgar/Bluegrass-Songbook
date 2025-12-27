@@ -1,6 +1,9 @@
 {meta: title These Things Shall Pass}
 {meta: artist Johnny Cash}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file thesethingsshallpasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]These things shall pass and some great [C]morning 
@@ -29,3 +32,6 @@ And [A7]steel is strong because it knew the hammer and white [D7]heat
 These [G]things shall pass and life be [C]sweeter 
 When love and [G]faith are strong they [D7]cannot long [G]endure 
 {end_of_verse}
+
+
+

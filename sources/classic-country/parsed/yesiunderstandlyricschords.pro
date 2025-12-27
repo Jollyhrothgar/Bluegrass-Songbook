@@ -1,6 +1,9 @@
 {meta: title Yes I Understand}
 {meta: artist Patsy Cline}
 {meta: composer C.C. Beam, C.L. Jiles, W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file yesiunderstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I understand that [D7]I'm to set you [G]free
@@ -39,3 +42,7 @@ And if I live a hundred [C]years
 [G]I'll find some way to hide these tears
 I [D7]understand and so I'll let you [G]go
 {end_of_verse}
+
+
+
+

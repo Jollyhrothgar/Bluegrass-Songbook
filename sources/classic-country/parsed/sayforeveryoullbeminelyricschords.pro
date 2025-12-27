@@ -1,6 +1,9 @@
 {meta: title Say Forever You'll Be Mine}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file sayforeveryoullbeminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Say forever you'll be [G]mine
@@ -45,3 +48,9 @@ That we'll be happy all the [C]time
 But forever I am [D7]yours 
 Say forever you'll be [G]mine
 {end_of_verse}
+
+
+
+
+
+

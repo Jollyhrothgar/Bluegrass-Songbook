@@ -1,6 +1,9 @@
 {meta: title Smoke Smoke Smoke That Cigarette Lyrics Chords}
 {meta: artist Hank Thompson}
 {meta: composer Merle Travis}
+{meta: x_source classic-country}
+{meta: x_source_file smokesmokesmokethatcigarettelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I'm a fellar with a heart of gold
@@ -79,3 +82,11 @@ Tell [G]Saint Peter at the Golden Gate
 That you [C]hate to make him [G]wait
 You've just gotta have [D7]another ciga[G]rette
 {end_of_verse}
+
+
+
+
+
+
+
+

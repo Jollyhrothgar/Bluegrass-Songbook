@@ -1,6 +1,9 @@
 {meta: title If You Really Want Me To I'll Go (I Don’t Want To Get Over You)}
 {meta: artist Waylon Jennings}
 {meta: composer Delbert McClinton}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoureallywantmetoillgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you really want me to I'll [D7]go
@@ -43,3 +46,9 @@
 {start_of_verse: Verse 6}
 [C]If you really [D7]want me to I'll [G]go
 {end_of_verse}
+
+
+
+
+
+

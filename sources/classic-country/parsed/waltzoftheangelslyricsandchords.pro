@@ -1,6 +1,9 @@
 {meta: title Waltz of the Angels}
 {meta: artist George Jones}
 {meta: composer Jack Rhodes and Dick Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file waltzoftheangelslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Waltz Of The Angels I hear each [C]time
@@ -29,3 +32,6 @@ A writer of love songs way up in the [D7]sky
 The maker of [G]roses of love sweet and [C]true
 And the Waltz Of The [G]Angels He [D7]wrote just for [G]you
 {end_of_verse}
+
+
+

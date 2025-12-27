@@ -1,5 +1,8 @@
 {meta: title I've Had All The Hurt I Can Take}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file ivehadallthehurticantakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well finally [F]you've gone and [C]done it
@@ -32,3 +35,7 @@ I've had all the [G7]hurt I can [C]take
 {start_of_verse: Verse 5}
 [F]I've had all the [G7]hurt I can [C]take
 {end_of_verse}
+
+
+
+

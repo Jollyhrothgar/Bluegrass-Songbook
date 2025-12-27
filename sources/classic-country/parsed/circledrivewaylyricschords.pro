@@ -1,6 +1,9 @@
 {meta: title Circle Driveway}
 {meta: artist Don Williams}
 {meta: composer Joseph Paul Allen}
+{meta: x_source classic-country}
+{meta: x_source_file circledrivewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wish I had a circle driveway
@@ -39,3 +42,10 @@ Cause I don’t want the kids to see me cry
 {start_of_verse: Verse 1}
 [G]I wish I had a circle driveway
 {end_of_verse}
+
+
+
+
+
+
+

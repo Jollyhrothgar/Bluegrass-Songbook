@@ -1,6 +1,9 @@
 {meta: title Fool's Paradise}
 {meta: artist Buddy Holly}
 {meta: composer Horace Linsley, Norman Petty, Sonny LeGlaire}
+{meta: x_source classic-country}
+{meta: x_source_file foolsparadiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You took me up to heaven when you took me in your arms
@@ -37,3 +40,7 @@ When you told me that you loved me I gave my heart to you
 [G7]Lost with you (lost with you) in a fool's [C]paradise
 [G7]Lost with you (lost with you) in a fool's [C]paradise
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Want A Son}
 {meta: artist Kenny Rogers}
 {meta: composer Marty Panzer and Steve Dorff}
+{meta: x_source classic-country}
+{meta: x_source_file iwantasonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want a [F]son
@@ -40,3 +43,6 @@ He'd have a [F]friend [G7]and we'd [Em]have fun
 I'd love to [C]have a girl
 Or [G7]I would love to have a [C]son
 {end_of_verse}
+
+
+

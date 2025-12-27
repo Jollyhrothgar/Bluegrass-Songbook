@@ -1,6 +1,9 @@
 {meta: title All American Dream}
 {meta: artist Moe Bandy}
 {meta: composer Dan Mitchell and Kent Blazy}
+{meta: x_source classic-country}
+{meta: x_source_file allamericandreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I drink Kentucky whiskey I [F]love California [C]wine
@@ -34,3 +37,7 @@ As long as we're believers in the [G7]all American [C]Dream
 There ain't a thing we can't do [F]nothing we can't [C]do
 As long as we're believers in the [G7]all American [C]Dream
 {end_of_verse}
+
+
+
+

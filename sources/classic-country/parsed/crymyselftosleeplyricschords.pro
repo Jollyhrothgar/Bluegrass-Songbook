@@ -1,6 +1,9 @@
 {meta: title Cry Myself to Sleep}
 {meta: artist Louving Brothers}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file crymyselftosleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just kissed the one I love [G7]for the last [C]time
@@ -22,3 +25,5 @@ Just before she said [G7]goodbye she called me [C]darling
 I [F]thought I'd die when she said she still loved [C]me
 Think I'll [G7]go somewhere and cry myself to [C]sleep
 {end_of_verse}
+
+

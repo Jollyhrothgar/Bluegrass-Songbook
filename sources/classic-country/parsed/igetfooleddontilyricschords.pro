@@ -1,6 +1,9 @@
 {meta: title I Get Fooled Don't I}
 {meta: artist Sonny James}
 {meta: composer Carole Smith and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file igetfooleddontilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each time you promise you'll be [Dm]true 
@@ -23,3 +26,5 @@ This time I say it's good[F]bye
 But I get [C]fool-[G7]ed  [C]don't I 
 [F]Yes I get [C]fool-[G7]ed  [C]don't I
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title A Blanket Of Stars}
 {meta: artist Vernon Oxford}
 {meta: composer Jimmy Everett Corbin[3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file ablanketofstarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A blanket of stars covers her shoulders
@@ -35,3 +38,8 @@ A blanket of stars makes her a fairy
 [C]A blanket of stars covers her shoulders
 [G7]And then her eyes pray as her yearning lips [C]meet
 {end_of_verse}
+
+
+
+
+

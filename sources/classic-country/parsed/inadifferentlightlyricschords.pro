@@ -1,6 +1,9 @@
 {meta: title In A Different Light}
 {meta: artist Doug Stone}
 {meta: composer Bucky Jones, Dickey Lee, Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file inadifferentlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Every [C]morning I [G7]watch you walk [Am]into the [Em]office
@@ -43,3 +46,7 @@ In my [C]m-i[G7]-n-d you're a [F]beautiful [C]sight
 I see [F]you in a [C]different [Dm]light
 Just the [F]way I saw [G7]you last [C]night
 {end_of_verse}
+
+
+
+

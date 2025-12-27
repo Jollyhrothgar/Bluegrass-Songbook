@@ -1,6 +1,9 @@
 {meta: title I Am Resolved}
 {meta: artist Jamie Dailey and Darrin Vincent}
 {meta: composer Lewis Hartsough and Gary Lanier}
+{meta: x_source classic-country}
+{meta: x_source_file iamresolvedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am resolved no [F]longer to linger
@@ -39,3 +42,8 @@ I am resolved to [F]follow the Savior
 I will [F]hasten to Him [C]hasten so glad and [G7]free
 [C]Jesus [F]greatest highest [C]I will [G7]come to [C]Thee
 {end_of_verse}
+
+
+
+
+

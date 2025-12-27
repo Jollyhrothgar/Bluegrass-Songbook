@@ -1,6 +1,9 @@
 {meta: title Is That A Tear}
 {meta: artist Tracy Lawrence}
 {meta: composer John Jarrard and Kenny Beard}
+{meta: x_source classic-country}
+{meta: x_source_file isthatatearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The last thing I expected was to [F]get her call [C]tonight
@@ -34,3 +37,7 @@ Or is [F]that a tear I [G7]hear in her [C]voice
 {start_of_verse: Verse 5}
 Oh is [F]that a tear oh is [G7]that a tear I hear in her [C]voice
 {end_of_verse}
+
+
+
+

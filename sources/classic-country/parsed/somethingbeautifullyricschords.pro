@@ -1,6 +1,9 @@
 {meta: title Something Beautiful}
 {meta: artist Slim Whitman}
 {meta: composer Moneen Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file somethingbeautifullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You were good to me you were warm with [G7]me
@@ -39,3 +42,8 @@ And holding hands and all the way you love [G7]me
 To be content [C]with less than you and [F]happiness
 At least I'll [C]always have something beautiful [G7]to [C]remember
 {end_of_verse}
+
+
+
+
+

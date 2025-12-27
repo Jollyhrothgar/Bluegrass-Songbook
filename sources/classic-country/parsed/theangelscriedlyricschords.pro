@@ -1,6 +1,9 @@
 {meta: title The Angels Cried}
 {meta: artist Alan Jackson}
 {meta: composer Harley Allen and Deborah Nims}
+{meta: x_source classic-country}
+{meta: x_source_file theangelscriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]They [G7]came from near they [D7]came from far
@@ -42,3 +45,8 @@ And the [G7]ange[F]ls [C]cried
 And the [G7]ang[F]els [C]cried
 And the [G7]ange[F]ls [C]cried
 {end_of_verse}
+
+
+
+
+

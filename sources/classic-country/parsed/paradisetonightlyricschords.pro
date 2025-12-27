@@ -1,6 +1,9 @@
 {meta: title Paradise Tonight}
 {meta: artist Mickey Gilley}
 {meta: composer Bill Kenner and Mark Wright}
+{meta: x_source classic-country}
+{meta: x_source_file paradisetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honestly I can't believe the [Am]magic you do
@@ -51,3 +54,10 @@ And I [F]took you in my arms  [G7]now I'm going home with you
 [C]I'm gonna wake up in your [F]arms tomo[G7]rrow
 [C]Thank you for taking me to [F]para[G7]dise to[C]night
 {end_of_verse}
+
+
+
+
+
+
+

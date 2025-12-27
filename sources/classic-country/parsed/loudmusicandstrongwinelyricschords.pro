@@ -1,5 +1,8 @@
 {meta: title Loud Music And Strong Wine}
 {meta: artist Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file loudmusicandstrongwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The devil lives inside the heart of my [F]woman
@@ -28,3 +31,6 @@ And this left over love is all that’s [G7]mine
 I’ll [C]build my world around all she can [F]offer
 While she’s a [C]prisoner of loud [G7]music and strong [C]wine
 {end_of_verse}
+
+
+

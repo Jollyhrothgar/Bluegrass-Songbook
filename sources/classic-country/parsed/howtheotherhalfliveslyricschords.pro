@@ -1,6 +1,9 @@
 {meta: title How The Other Half Lives}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and Fuzzy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file howtheotherhalfliveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll just sit [C]back and watch you [G]leave
@@ -22,3 +25,5 @@
 [G]My today’s and [C]tomorrows I would [G]give
 [D7]When you give up the way the other half [G]lives
 {end_of_verse}
+
+

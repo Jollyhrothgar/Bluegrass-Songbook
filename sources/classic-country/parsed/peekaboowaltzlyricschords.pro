@@ -1,6 +1,9 @@
 {meta: title Peek A Boo Waltz}
 {meta: artist Redd Stewart}
 {meta: composer Elizabeth Breaux, Pee Wee King, Redd Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file peekaboowaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Peek a boo peek a boo oh the fun that we knew
@@ -29,3 +32,6 @@ My [F]broken heart's wondering [C]why
 All my [F]life I must search dear for [C]you
 For without you there's [G7]no peek a [C]boo
 {end_of_verse}
+
+
+

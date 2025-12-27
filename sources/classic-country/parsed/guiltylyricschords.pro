@@ -1,6 +1,9 @@
 {meta: title Guilty}
 {meta: artist Statler Brothers}
 {meta: composer Harold Reid and Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file guiltylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If she's guilty [F]so am [C]I if she's forgotten how to [G7]cry
@@ -33,3 +36,7 @@
 [C]If she [F]gets lonely [C]don't [G7]know [Am]why
 [C]If she's [G7]guilty so am [C]I
 {end_of_verse}
+
+
+
+

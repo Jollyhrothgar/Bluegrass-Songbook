@@ -1,6 +1,9 @@
 {meta: title Lovin' You Is Worth It}
 {meta: artist Barbara Mandrell}
 {meta: composer Carmol Taylor and Quinton Claunch}
+{meta: x_source classic-country}
+{meta: x_source_file lovinyouisworthitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I work hard and I work [F]over time and [C]I'm still deep in debt
@@ -29,3 +32,7 @@ We've come this far [F]together so it's [C]together [G7]all the [C]way
 {start_of_verse: Verse 5}
 We've come this far [F]together so it's [C]together [G7]all the [F]wa[C]y
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Almost In Love}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file almostinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can tell by your glance we're [F]about to take the chance
@@ -33,3 +36,7 @@ Or [G7]touch you where no one else would [C]dare
 {start_of_verse: Verse 4}
 I'm [G7]afraid that we're almost in [C]love
 {end_of_verse}
+
+
+
+

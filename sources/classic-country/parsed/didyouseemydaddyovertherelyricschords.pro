@@ -1,6 +1,9 @@
 {meta: title Did You See My Daddy Over There Lyrics and Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Bill Showmet}
+{meta: x_source classic-country}
+{meta: x_source_file didyouseemydaddyovertherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A little boy tugged gently 
@@ -63,3 +66,10 @@ I [F]know 'twould make her glad
 If [C]you had seen my dad
 [F]Did you see my [G7]daddy over [C]there 
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Band Keeps Playing}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thebandkeepsplayinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You walked in with me but you walked out with someone [F]else
@@ -28,3 +31,6 @@ You [F]walked right out on me while [C]they played our favorite [G7]song
 And [C]before you reached the door  my teardrops hit the [F]floor
 My world [G7]stopped  but the band keeps playing [C]on
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's A Long Long Way To Georgia}
 {meta: artist Don Gibson}
 {meta: composer Dub Murray and Ralph Siegel}
+{meta: x_source classic-country}
+{meta: x_source_file itsalonglongwaytogeorgialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They've opened the [F]door to my [C]cell
@@ -30,3 +33,6 @@
 [F]But I'm [G7]goin' [C]home to [G7][F]stay
 [C]Georgia
 {end_of_verse}
+
+
+

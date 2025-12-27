@@ -1,6 +1,9 @@
 {meta: title King Lear}
 {meta: artist Cal Smith}
 {meta: composer Mel Holt}
+{meta: x_source classic-country}
+{meta: x_source_file kinglearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s an old man in town named O’Leary but we call him [C]Lear
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [D7]And we’re thankful for good old King [G]Lear
 {end_of_verse}
+
+
+
+
+

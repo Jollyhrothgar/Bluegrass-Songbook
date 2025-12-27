@@ -1,5 +1,8 @@
 {meta: title Whenever I Start to Fall in Love}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file wheneveristarttofallinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Nearly got over you last [C]time
@@ -58,3 +61,10 @@ I [G7]don't know if [Am]I ever can
 I always stop and [Dm]think of us
 [G7]Whenever I start to [C]fall in love [G7]   [C]
 {end_of_verse}
+
+
+
+
+
+
+

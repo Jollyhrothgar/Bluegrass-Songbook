@@ -1,6 +1,9 @@
 {meta: title If I Miss You Again Tonight}
 {meta: artist Tommy Overstreet}
 {meta: composer Ricci Mareno, Charlie Black, Marianne Mareno}
+{meta: x_source classic-country}
+{meta: x_source_file ifimissyouagaintonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If I [C]miss you again tonight[G7]
@@ -30,3 +33,6 @@ If I [C]miss you just one more time [G7]
 Girl I'll [E7]know that it's true I'm [Am]still lovin' [C]you
 And [F]how will I face it[Fm]   [Dm]   [G7]if I miss you [C]tonight
 {end_of_verse}
+
+
+

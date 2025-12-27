@@ -1,6 +1,9 @@
 {meta: title Horseshoe Bend}
 {meta: artist Tanya Tucker}
 {meta: composer Bobby Borchers and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file horseshoebendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's been a [C]Saturday everyday
@@ -54,3 +57,9 @@ And I'll keep praying [G7]someday he'll come [C]home
 And a whole month of [F]Sundays
 [C]And I get sadder [G7]every day he's [C]gone
 {end_of_verse}
+
+
+
+
+
+

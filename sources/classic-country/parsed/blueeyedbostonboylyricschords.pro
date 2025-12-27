@@ -1,5 +1,8 @@
 {meta: title Blue Eyed Boston Boy}
 {meta: artist Dwight McCall}
+{meta: x_source classic-country}
+{meta: x_source_file blueeyedbostonboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He was [D7]just a Blue Eyed [C]Boston Boy
@@ -61,3 +64,11 @@ She'll only find he's [G]dead
 While [D7]mother at home is [C]awaiting her son
 She'll only find he's [G]dead
 {end_of_verse}
+
+
+
+
+
+
+
+

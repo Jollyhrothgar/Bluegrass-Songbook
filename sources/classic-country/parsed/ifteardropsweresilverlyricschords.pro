@@ -1,6 +1,9 @@
 {meta: title If Teardrops Were Silver}
 {meta: artist Connie Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file ifteardropsweresilverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If heartache was laughter then I'd be a [D7]clown
@@ -23,3 +26,5 @@ But [A7]hurting is the one thing that I do so [D7]well
 And if teardrops were [G]silver oh [D7]how I'd [G]shine 
 [C]If teardrops were [G]silver oh [D7]how I'd [G]shine
 {end_of_verse}
+
+

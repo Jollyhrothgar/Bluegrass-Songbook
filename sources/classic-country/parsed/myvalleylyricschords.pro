@@ -1,5 +1,8 @@
 {meta: title My Valley}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file myvalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My valley was [D7]void and [G]empty 
@@ -28,3 +31,6 @@ And [C]from His [G]abundance He supplies every [D7]need
 [G]There’s peace in my valley that only God can [C]bring
 And now and [G]forever in my [D7]valley He is [G]King
 {end_of_verse}
+
+
+

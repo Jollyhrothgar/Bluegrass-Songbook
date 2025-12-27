@@ -1,5 +1,8 @@
 {meta: title The Harm You've Done}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file theharmyouvedonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never dreamed I'd have a cryin' [G7]time
@@ -28,3 +31,6 @@ I [G7]guess you'll never know the harm you've [C]done
 You've [F]never heard me cry oh Lord don't [C]let me see the dawn
 And [G7]so you'll never know the harm you've [C]done
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let Me Hear You Say I Love You}
 {meta: artist Faron Young}
 {meta: composer Charles Underwood}
+{meta: x_source classic-country}
+{meta: x_source_file letmehearyousayiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let me [D7]hear you say I love you one more [G]time [D7]
@@ -30,3 +33,7 @@ Let me [C]hear you [D7]say I love you one more [G]time
 {start_of_verse: Verse 5}
 Darlin' let me [C]hear you [D7]say I love you one more [G]time
 {end_of_verse}
+
+
+
+

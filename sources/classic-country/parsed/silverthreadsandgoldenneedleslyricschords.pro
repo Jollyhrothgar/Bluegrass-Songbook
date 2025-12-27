@@ -1,5 +1,8 @@
 {meta: title Silver Threads and Golden Needles}
 {meta: artist Linda Ronstadt}
+{meta: x_source classic-country}
+{meta: x_source_file silverthreadsandgoldenneedleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't want your lonely mansion with a tear in every [C]room
@@ -21,3 +24,5 @@ And I dare not drown my sorrows in the [C]warm glow of your [F]wine
 [D7]You can't buy my love [G]with money cause I never was that [C]kind
 Silver threads and golden [G]needles cannot [F]mend this heart of [G]mine
 {end_of_verse}
+
+

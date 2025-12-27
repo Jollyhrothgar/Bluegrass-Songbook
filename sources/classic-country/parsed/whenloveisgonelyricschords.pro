@@ -1,6 +1,9 @@
 {meta: title When Love Is Gone}
 {meta: artist Bobby Bare}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file whenloveisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Spring could come you'd never show it 
@@ -37,3 +40,6 @@ The [G7]bridges have been burned
 [F]All your lucky days are over
 [C]That's the way you [G7]feel when love is [F]g-on[C]e
 {end_of_verse}
+
+
+

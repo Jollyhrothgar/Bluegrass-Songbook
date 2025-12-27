@@ -1,6 +1,9 @@
 {meta: title Yes Or No}
 {meta: artist Sonny James}
 {meta: composer Bob Tubert and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file yesornolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes or no what [D7]will it be is it him [G]or is it me
@@ -23,3 +26,5 @@ Please tell me [C]you won't go [D7]will let be yes or [G]no
 Please tell me [C]you won't go [D7]will let be yes or [G]no
 Please tell me [C]you won't go [D7]will let be yes or [G]no
 {end_of_verse}
+
+

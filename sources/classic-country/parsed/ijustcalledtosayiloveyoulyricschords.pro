@@ -1,6 +1,9 @@
 {meta: title I Just Called to Say I Love You}
 {meta: artist Jason Allen}
 {meta: composer Stevie Wonder}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcalledtosayiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No New Year's Day [G7]to cele[C]brate [G7]
@@ -47,3 +50,9 @@ And I [Dm]mean it from the [G7]bottom of my [C]heart
 {start_of_verse: Verse 7}
 Girl and I [Dm]mean it from the [G7]bottom of my [C]heart
 {end_of_verse}
+
+
+
+
+
+

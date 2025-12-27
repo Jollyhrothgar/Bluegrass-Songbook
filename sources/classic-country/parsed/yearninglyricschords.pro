@@ -1,6 +1,9 @@
 {meta: title Yearning}
 {meta: artist George Jones}
 {meta: composer Eddie Eddings}
+{meta: x_source classic-country}
+{meta: x_source_file yearninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yearning to be with the [F]one I can't [C]agree with
@@ -29,3 +32,6 @@ I thought you were fooling from [D7]the [G7]start
 Now I'm [C]yearning to kiss you oh [F]darling how I miss [C]you
 I [F]wish that we could [G7]make amends [C]sweetheart
 {end_of_verse}
+
+
+

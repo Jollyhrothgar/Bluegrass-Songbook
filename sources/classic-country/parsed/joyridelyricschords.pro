@@ -1,6 +1,9 @@
 {meta: title Joyride}
 {meta: artist Jack Greene}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file joyridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Joyride
@@ -34,3 +37,7 @@ And the [C]pain that you'll be going [G]through
 But [C]they'll be on the [D7]bill [G]when you pay for the [C]thrill
 Of the [G]joyride he's [D7]taking on [C]yo-[G]u
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Out In New Mexico}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file outinnewmexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was in the town of Griffin [G7]in the year of '8[C]3 
@@ -35,3 +38,7 @@ To all you good-lookin' people this much I have to say
 Go back to your friends and loved ones tell others not to go 
 To the God-forsaken country they [G7]call New Mexi[C]co
 {end_of_verse}
+
+
+
+

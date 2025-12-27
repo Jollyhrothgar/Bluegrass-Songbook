@@ -1,5 +1,8 @@
 {meta: title You Can't Make Nothing Out Of That But Love}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file youcantmakenothingoutofthatbutlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I love you and I don't care who knows [D7]it
@@ -29,3 +32,6 @@
 [G]And you can't make nothing [D7]out of that but [G]love
 [D7]No you can't make nothing out of that but [G]love
 {end_of_verse}
+
+
+

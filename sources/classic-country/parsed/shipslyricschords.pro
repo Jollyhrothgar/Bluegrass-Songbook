@@ -1,6 +1,9 @@
 {meta: title Ships}
 {meta: artist Patty Loveless}
 {meta: composer Gretchen Peters}
+{meta: x_source classic-country}
+{meta: x_source_file shipslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Eddie had a few days comin'
@@ -76,3 +79,13 @@ But they're [Am]two young [G]lovers
 Just [Am]holdin' each [G]other 
 [C]Watchin’ their [D7]ship come [G]in
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You're At Your Best When You Lie}
 {meta: artist Norma Jean}
 {meta: composer Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file youreatyourbestwhenyoulielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hurt me as [D7]much as you [G]want to
@@ -29,3 +32,6 @@ You [C]could talk the [D7]birds from the [G]sky
 You can [C]do any[D7]thing that [C]you want to [G]do
 But [C]you're at your [D7]best when you [G]lie
 {end_of_verse}
+
+
+

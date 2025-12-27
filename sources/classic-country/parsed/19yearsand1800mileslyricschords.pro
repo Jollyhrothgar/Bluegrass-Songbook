@@ -1,6 +1,9 @@
 {meta: title 19 Years And 1800 Miles}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file 19yearsand1800mileslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello Faye I'm [C]glad you called I [D7]know it's been a [G]long while
@@ -40,3 +43,7 @@ We'll [G]go to bed and [C]I’ll turn my back and [D7]sadly whisper [G]goodnight
 And grieve [C]myself to death to [G]know that I'm not [C]man enough 
 To [D7]quench my woman's [G]fire
 {end_of_verse}
+
+
+
+

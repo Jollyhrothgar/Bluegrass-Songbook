@@ -1,6 +1,9 @@
 {meta: title Forever And Ever Amen}
 {meta: artist Randy Travis}
 {meta: composer Don Schlitz and Paul Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file foreverandeveramenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You may think that [F]I'm talkin' [C]foolish
@@ -63,3 +66,11 @@ Just [F]listen to how this [Am]song [D7]ends
 [D7]Forever and [C]ever forever and [F]ever 
 Forever and [C]ever [G7]ame[C]n
 {end_of_verse}
+
+
+
+
+
+
+
+

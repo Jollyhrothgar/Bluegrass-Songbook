@@ -1,6 +1,9 @@
 {meta: title I've Been There Before}
 {meta: artist Ray Price}
 {meta: composer Bobby Gosh and T.H. Kidd}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeentherebeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I [C]know [G]her very [C]well
@@ -21,3 +24,5 @@
 {start_of_verse: Verse 3}
 [D7]Yes I've been there [G]before
 {end_of_verse}
+
+

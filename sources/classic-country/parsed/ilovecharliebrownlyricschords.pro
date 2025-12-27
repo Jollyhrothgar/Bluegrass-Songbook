@@ -1,6 +1,9 @@
 {meta: title I Love Charlie Brown}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file ilovecharliebrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They tell me Homer Jones [G7]was out a hunting [C]bear
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]It don't worry me cause I love Charlie [G]Brown
 {end_of_verse}
+
+
+
+

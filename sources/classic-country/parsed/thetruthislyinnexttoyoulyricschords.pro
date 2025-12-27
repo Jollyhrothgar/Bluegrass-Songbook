@@ -1,6 +1,9 @@
 {meta: title The Truth Is Lyin' Next To You}
 {meta: artist Randy Travis}
 {meta: composer Kent M. Robbins and Susan Longacre}
+{meta: x_source classic-country}
+{meta: x_source_file thetruthislyinnexttoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody said I'd leave you 
@@ -53,3 +56,9 @@ Don't need a neon moon to [F]make my night [C]shine
 And [Dm]if you need some lovin' [G7]proof 
 Just [F]reach out the [G7]truth is lyin' next to [C]you [F]  [G7]
 {end_of_verse}
+
+
+
+
+
+

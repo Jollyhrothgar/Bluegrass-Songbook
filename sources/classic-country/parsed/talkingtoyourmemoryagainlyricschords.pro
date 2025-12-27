@@ -1,6 +1,9 @@
 {meta: title Talking To Your Memory Again}
 {meta: artist Cal Smith}
 {meta: composer Charlie Craig and Betty Craig}
+{meta: x_source classic-country}
+{meta: x_source_file talkingtoyourmemoryagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Faded is the picture that I got out and looked at [C]today
@@ -28,3 +31,6 @@ And then I’ll say just how lonesome I’ve really [C]been
 You’re where my arms can’t reach you and baby it’s driving me [C]insane
 And I’m [G]up here in the attic [D7]talking to your memory [G]again 
 {end_of_verse}
+
+
+

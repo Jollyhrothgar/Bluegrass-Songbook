@@ -1,6 +1,9 @@
 {meta: title Whispering Scandal}
 {meta: artist Hank Locklin}
 {meta: composer Willa Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file whisperingscandallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The honeymoon is over the [C]lovely weeks have has passed
@@ -22,3 +25,5 @@ I will never cease to [G]love you you will always have my [D7]name
 [G]As long as you believe in me every[C]thing will turn out fine
 Whispering [G]scandal will [D7]never change my [G]mind
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Texas When I Die}
 {meta: artist Tanya Tucker}
 {meta: composer Ed Bruce, Bobby Borchers and Patsy Bruce}
+{meta: x_source classic-country}
+{meta: x_source_file texaswhenidielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I die I may not go [C]to heaven
@@ -22,3 +25,5 @@ I'd ride through all of Hell and half of [C]Texas
 Beer just ain't as cold in old [C]Milwaukee
 [G]My body's here but my [D7]soul's in San [G]Antone
 {end_of_verse}
+
+

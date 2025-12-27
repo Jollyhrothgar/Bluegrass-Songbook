@@ -1,6 +1,9 @@
 {meta: title Wherever She Is}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson, Jim Martin, Bobby Tomberlin}
+{meta: x_source classic-country}
+{meta: x_source_file whereversheislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She [Dm]always spoke of [G7]going back to [C]Texas 
@@ -40,3 +43,8 @@ I’ve got a [Am]new phone number a [F]new email and an [G7]unlisted driveway
 Wherever she [Dm]is I just [G7]hope she stays [Am]there
 Girl if you’re [Dm]listening some[G7]where  stay [C]there
 {end_of_verse}
+
+
+
+
+

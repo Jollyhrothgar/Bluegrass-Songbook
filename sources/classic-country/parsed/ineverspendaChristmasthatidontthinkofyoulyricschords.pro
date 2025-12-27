@@ -1,6 +1,9 @@
 {meta: title I Never Spend A Christmas That I Don't Think Of You}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file ineverspendaChristmasthatidontthinkofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The year you were [Bm]Snow Queen at the [C]high school Christmas [G]ball
@@ -28,3 +31,6 @@ And we [C]never thought that [G]someday this [C]would seem so long [D7]ago
 And [C]I never spend a [G]Christmas that [C]I don't [D7]think of [G]you
 I'll [C]never spend a [G]Christmas [C]I won't [D7]be loving [G]you
 {end_of_verse}
+
+
+

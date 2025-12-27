@@ -1,5 +1,8 @@
 {meta: title Little Blossom}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file littleblossomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh dear I'm so tired and so [F]lonesome
@@ -49,3 +52,9 @@ He [G7]lifted her fair golden [C]head
 A moment the baby's lips [F]trembled
 Then [G7]poor little blossom was [C]dead 
 {end_of_verse}
+
+
+
+
+
+

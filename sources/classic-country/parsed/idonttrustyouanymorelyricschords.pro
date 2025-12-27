@@ -1,6 +1,9 @@
 {meta: title I Don't Trust You Anymore}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Abe Mulkey}
+{meta: x_source classic-country}
+{meta: x_source_file idonttrustyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't [G7]trust you any[C]more
@@ -51,3 +54,10 @@ Now I don't [G7]trust you any[C]more
 {start_of_verse: Verse 7}
 Now I don't [G7]trust you any[C]more
 {end_of_verse}
+
+
+
+
+
+
+

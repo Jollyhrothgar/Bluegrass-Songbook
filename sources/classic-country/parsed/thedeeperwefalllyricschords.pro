@@ -1,6 +1,9 @@
 {meta: title The Deeper We Fall}
 {meta: artist Johnny Lee}
 {meta: composer Wayland Holyfield and Gary Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file thedeeperwefalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]It was magic when I [C]met you 
@@ -33,3 +36,7 @@ And the [C]deeper the love the [F]sweeter it gets
 {start_of_verse: Verse 5}
 [G7]Deeper we [C]fall  [G7]deeper we [C]fall
 {end_of_verse}
+
+
+
+

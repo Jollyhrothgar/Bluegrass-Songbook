@@ -1,6 +1,9 @@
 {meta: title Take Your Shoes Off Moses}
 {meta: artist The Stanley Brothers}
 {meta: composer J.D. Jarvis}
+{meta: x_source classic-country}
+{meta: x_source_file takeyourshoesoffmoseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well God spoke to Moses at the burning bush
@@ -43,3 +46,8 @@ Take your shoes off Moses you're on holy ground
 Take your shoes off Moses you're on Holy ground
 For I am the [D7]Lord thy [G]God
 {end_of_verse}
+
+
+
+
+

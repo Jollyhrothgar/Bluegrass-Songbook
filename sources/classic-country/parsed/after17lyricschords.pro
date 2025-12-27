@@ -1,5 +1,8 @@
 {meta: title After 17}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file after17lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her right hand closed the [G7]front porch door 
@@ -56,3 +59,9 @@ And [F]try and figure out what [G7]this life really [D7]means
 Her right hand closed the [G7]front porch door
 And [F]suddenly a [G7]child no [C]more
 {end_of_verse}
+
+
+
+
+
+

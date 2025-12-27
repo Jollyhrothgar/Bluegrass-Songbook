@@ -1,5 +1,8 @@
 {meta: title The Wind Changes}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file thewindchangeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes the wind changes and one mornin' early
@@ -49,3 +52,9 @@ A good wind'll be [D7]blowin' for [G]me
 Yes the wind changes and one mornin' early
 A good wind'll be [D7]blowin' for [G]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Blame It On Mexico}
 {meta: artist George Strait}
 {meta: composer Darrell Statler}
+{meta: x_source classic-country}
+{meta: x_source_file blameitonmexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]In a [C]bar in [Am]Acuna called Ma [F]Crosby's
@@ -57,3 +60,10 @@ Say [G7]too much guitar music tequila salt and [C]lime
 Blame it on Mexico but she's the [Dm]reason
 That I [F]fell in love [G7]again for my last [C]time
 {end_of_verse}
+
+
+
+
+
+
+

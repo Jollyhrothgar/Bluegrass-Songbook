@@ -1,6 +1,9 @@
 {meta: title I'm Over You}
 {meta: artist Keith Whitley}
 {meta: composer Tim Nichols and Zack Turner}
+{meta: x_source classic-country}
+{meta: x_source_file imoveryoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where there’s a cloud don't mean there’s rain
@@ -47,3 +50,8 @@ When I'm over [C]you
 {start_of_verse: Verse 4}
 [C]I'm over you I'm over you
 {end_of_verse}
+
+
+
+
+

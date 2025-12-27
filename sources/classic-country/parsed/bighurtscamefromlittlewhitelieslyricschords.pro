@@ -1,6 +1,9 @@
 {meta: title Big Hurts Came From Little White Lies}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file bighurtscamefromlittlewhitelieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mighty oaks from [F]little acorns [C]grow
@@ -28,3 +31,6 @@
 [C]Big hurts [G7]can come from little white [C]lies
 [F]Big hurts can [C]come [G7]from little white [C]lies
 {end_of_verse}
+
+
+

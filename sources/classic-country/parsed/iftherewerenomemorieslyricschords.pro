@@ -1,6 +1,9 @@
 {meta: title If There Were No Memories}
 {meta: artist John Anderson}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file iftherewerenomemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If there were no wishes  [F]perhaps I wouldn't [C]want
@@ -19,3 +22,5 @@ And if there were no [C]memories I [G7]wouldn't have to [C]forget
 {start_of_verse: Verse 3}
 [C7]Yes if [F]there were no [C]memories  [G7]maybe I could [C][F]for-get
 {end_of_verse}
+
+

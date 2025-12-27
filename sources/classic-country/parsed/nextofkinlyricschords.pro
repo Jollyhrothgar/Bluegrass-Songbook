@@ -1,5 +1,8 @@
 {meta: title Next Of Kin}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file nextofkinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]New suit new tie big ol’ tears in my momma’s [G7]eyes
@@ -47,3 +50,9 @@ You’ll have to call my next of [G]kin
 Yeah if [D7]you walk out I won’t be breathing in
 You’ll have to call my next of [G]kin
 {end_of_verse}
+
+
+
+
+
+

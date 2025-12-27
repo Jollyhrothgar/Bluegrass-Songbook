@@ -1,5 +1,8 @@
 {meta: title There's A Gonna Come A Day}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file theresagonnacomeadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a gonna come a day you're gonna sit and cry
@@ -40,3 +43,10 @@ You're gonna open your big blue eyes but it's gonna be too late
 [G]There's a gonna come a day you're gonna sit and cry
 [C]There's a gonna come a day you're gonna sit and [G]cry
 {end_of_verse}
+
+
+
+
+
+
+

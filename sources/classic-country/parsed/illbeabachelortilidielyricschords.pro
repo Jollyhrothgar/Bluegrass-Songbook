@@ -1,5 +1,8 @@
 {meta: title I'll Be A Bachelor 'Til I Die}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file illbeabachelortilidielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll take you to the picture show and babe I'll hold your hand
@@ -28,3 +31,6 @@ I've seen what matrimony done to better men than m[C7]e
 I don't [F]mind keeping company with the [C]apple of my eye
 But keep that marrying out of your head I'll be a [G7]bachelor till I [C]die
 {end_of_verse}
+
+
+

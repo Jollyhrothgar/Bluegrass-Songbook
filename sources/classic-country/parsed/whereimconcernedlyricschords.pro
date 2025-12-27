@@ -1,6 +1,9 @@
 {meta: title Where I'm Concerned}
 {meta: artist Gene Watson}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file whereimconcernedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Well [G]I appreciate your call [A7]no I hardly miss her at all
@@ -36,3 +39,7 @@ So [A7]what if I don't sleep in our bed
 {start_of_verse: Verse 5}
 [C]Where I'm con[D7]cerned don't be con[G]cerned
 {end_of_verse}
+
+
+
+

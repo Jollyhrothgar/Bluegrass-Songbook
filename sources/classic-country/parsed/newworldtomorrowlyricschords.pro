@@ -1,5 +1,8 @@
 {meta: artist Faron Young}
 {meta: composer Wayne Cargile}
+{meta: x_source classic-country}
+{meta: x_source_file newworldtomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm makin' plans for the new [G7]world [C]tomorrow
@@ -22,3 +25,5 @@
 [C]For in [F]the world [C]of tomorrow [G7]there's no [C]you
 [F]For in [C]the world of [G7]tomorrow there's no [C]you
 {end_of_verse}
+
+

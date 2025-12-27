@@ -1,6 +1,9 @@
 {meta: title The Party Ain't Over Yet}
 {meta: artist Patty Loveless}
 {meta: composer John David}
+{meta: x_source classic-country}
+{meta: x_source_file thepartyaintoveryetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a [A#7]troubled [F]wind  [C]  a blowin' [A#7]through my [F]crazy [C]life
@@ -49,3 +52,9 @@ The [F]party ain't [G7]over [C]yet
 Hey hey the [F]party ain't [G7]over [C]yet[A#7]    [F]
 [C]No no the [F]party ain't [G7]over [C]yet
 {end_of_verse}
+
+
+
+
+
+

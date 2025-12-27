@@ -1,5 +1,8 @@
 {meta: title I Pay With Every Breath}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file ipaywitheverybreathlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here am [G7]I  so sad and [C]lonely
@@ -21,3 +24,5 @@ Now I [G7]care  but it's too [C]late
 She's [C7]gone and now that tears [F]are falling
 And I [C]pay with [G7]every breath I [C]take
 {end_of_verse}
+
+

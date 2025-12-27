@@ -1,6 +1,9 @@
 {meta: title Soldier's Last Letter}
 {meta: artist Ernest Tubb}
 {meta: composer Sgt. Henry Stewart and Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file soldierslastletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the postman delivered a [G7]letter
@@ -43,3 +46,8 @@ She prayed Lord above hear my [C]plea
 And protect all the sons that are fighting [D7]tonight
 And dear [G7]God keep America [C]free
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Wanted Man}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash and Bob Dylan}
+{meta: x_source classic-country}
+{meta: x_source_file wantedmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wanted man in California wanted man in [Am]Buffalo
@@ -37,3 +40,6 @@
 [Am]Wanted man in Mississippi wanted man in ol' Cheyenne
 [D7]Wherever you might look tonight you might see this wanted [G]man
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Our Past Is In My Way}
 {meta: artist Jean Shepard}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file ourpastisinmywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Our past is always present [C]where my future is [G]concerned
@@ -22,3 +25,5 @@
 [G]What I was speak so much louder [C]than what I am [G]today
 [C]And I cannot face the [G]future for our [D7]past is in my [G]way
 {end_of_verse}
+
+

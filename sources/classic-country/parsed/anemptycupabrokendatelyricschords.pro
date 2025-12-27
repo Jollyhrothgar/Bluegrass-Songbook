@@ -1,6 +1,9 @@
 {meta: title An Empty Cup A Broken Date}
 {meta: artist Buddy Holly}
 {meta: composer Norman Petty and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file anemptycupabrokendatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]One lonely [C]night (one lonely [F]night) 
@@ -37,3 +40,7 @@ My love is [C]gone (my love is [F]gone)
 I've hit the [C]bottom [G7]now I'm all [C]alone
 [F](all [C]alone)
 {end_of_verse}
+
+
+
+

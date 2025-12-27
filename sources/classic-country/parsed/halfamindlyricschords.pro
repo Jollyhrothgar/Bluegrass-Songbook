@@ -1,6 +1,9 @@
 {meta: title Half A Mind}
 {meta: artist Ernest Tubb}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file halfamindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't [D7]love you like [G]I used to [G7]do 
@@ -22,3 +25,5 @@ But [C]now's the time I need [G]to [G7]know
 [C]I've got half a mind to [G]leave [Em]you
 But [D7]only half the heart to [G]go
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title 'Til I Was A Daddy Too}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file tiliwasadaddytoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Do you re[G]call [C]  when I was six
@@ -57,3 +60,8 @@ I [Am]guess I didn't know what a daddy goes [D7]through
 I [Am]guess I didn't know what a daddy goes [D7]through
 'Til I was a daddy [G]too
 {end_of_verse}
+
+
+
+
+

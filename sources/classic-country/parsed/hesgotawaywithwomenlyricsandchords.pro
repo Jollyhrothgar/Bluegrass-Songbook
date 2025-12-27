@@ -1,6 +1,9 @@
 {meta: title He's Got A Way With Women}
 {meta: artist Bob Luman}
 {meta: composer Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file hesgotawaywithwomenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm not known to be a [F]talker
@@ -30,3 +33,6 @@ He's got a [C]way with women
 [F]He's got a [C]way with women 
 [G7]He got away with [F]mine[C]
 {end_of_verse}
+
+
+

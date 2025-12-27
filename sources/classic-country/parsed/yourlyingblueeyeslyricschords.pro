@@ -1,6 +1,9 @@
 {meta: title Your Lying Blue Eyes}
 {meta: artist John Anderson}
 {meta: composer Ken McDuffie}
+{meta: x_source classic-country}
+{meta: x_source_file yourlyingblueeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your lying blue eyes used to [C7]charm me
@@ -40,3 +43,8 @@ But this morning over coffee
 {start_of_verse: Verse 5}
 [F]Your lying [C]blue eyes [G7]just told on [C]you
 {end_of_verse}
+
+
+
+
+

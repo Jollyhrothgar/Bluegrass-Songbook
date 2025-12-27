@@ -1,6 +1,9 @@
 {meta: title She Can't Say That Anymore}
 {meta: artist John Conlee}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file shecantsaythatanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]I never thought I'd live to see the day 
@@ -41,3 +44,8 @@ She's breaking in a new routine for the [Em]man who walks the floor
 [Em]Now she can't [B7]say that any[Em]more 
 Now she can't [B7]say that any[Em]more 
 {end_of_verse}
+
+
+
+
+

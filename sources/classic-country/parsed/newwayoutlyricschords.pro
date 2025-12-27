@@ -1,6 +1,9 @@
 {meta: title New Way Out}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Randy Sharp}
+{meta: x_source classic-country}
+{meta: x_source_file newwayoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know [D7]how hard she'll take it [Am]
@@ -42,3 +45,7 @@ And no one's ever hurt in anger
 New way [D7]out and [Am]harsh [D7]words are never spoken
 Is there any new way [G]out 
 {end_of_verse}
+
+
+
+

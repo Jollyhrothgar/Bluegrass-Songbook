@@ -1,5 +1,8 @@
 {meta: title Summer Of Roses}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file summerofroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A short time I have to [F]be with you my love
@@ -21,3 +24,5 @@ I bring you one [G7]springtime of [C]robins
 To soften the fall of your [C]snow[Am]flakes 
 When I [D7]bring you your [G7]winter of [C]snow
 {end_of_verse}
+
+

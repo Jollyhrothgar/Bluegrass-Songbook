@@ -1,6 +1,9 @@
 {meta: title From Now On I Won't Be Hanging Around}
 {meta: artist The Earls Of Leicester}
 {meta: composer Gladys Stacey, Wayne Walker,}
+{meta: x_source classic-country}
+{meta: x_source_file fromnowoniwontbehangingaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From now on I won't be hanging [G7]around
@@ -36,3 +39,7 @@ From now on I won't be hanging [C]around
 I've taken all I can go [F]find another [D7]man
 From [G7]now on I won't be hanging [C]around
 {end_of_verse}
+
+
+
+

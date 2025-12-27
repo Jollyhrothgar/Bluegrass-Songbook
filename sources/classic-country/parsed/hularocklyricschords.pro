@@ -1,6 +1,9 @@
 {meta: title Hula Rock}
 {meta: artist Hank Snow}
 {meta: composer Dusty Rose and Betty Rose}
+{meta: x_source classic-country}
+{meta: x_source_file hularocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hawa-ii's [C][F]calling
@@ -52,3 +55,12 @@ Rocking and a rolling in Waikiki rocking and a rolling in Waikiki
 {start_of_verse: Verse 10}
 [C]Hawa-ii's [C][F]calling
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I've Been Down That Road Before}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeendownthatroadbeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now friend if you'll just listen to me 
@@ -67,3 +70,8 @@ And not to pick no scraps no [C]more
 Boys it's a [D7]lot easier on the head and eyes
 Cause I've been down that road [G]before
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Reach Out To Jesus}
 {meta: artist Elvis Presley}
 {meta: composer Ralph Carmichael}
+{meta: x_source classic-country}
+{meta: x_source_file reachouttoJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is your burden [F]heavy as you [E7]bear it all [Am]alone
@@ -33,3 +36,7 @@ I said to [F]reach out to [C]Jesus He's [Dm]reach-ing [G7]out to [C]you
 [C]When you get [F]discouraged just [E7]remember what to [Am]do
 [F]Reach out to [C]Jesus He's [Dm]reach-ing [G7]out to [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's Just Not Christmas}
 {meta: artist Ronnie Milsap}
 {meta: composer Bill Swindell, Tina Swindell,}
+{meta: x_source classic-country}
+{meta: x_source_file itsjustnotChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I won't be [Em]trying out for [F]mistletoe
@@ -54,3 +57,9 @@ If [F]I can't [G7]spend it with [C]you
 [Dm]Nooo it's just not [C]Christmas
 If [F]I can't [G7]spend it with [C]you
 {end_of_verse}
+
+
+
+
+
+

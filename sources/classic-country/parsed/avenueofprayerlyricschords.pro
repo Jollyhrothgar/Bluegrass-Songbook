@@ -1,6 +1,9 @@
 {meta: title Avenue Of Prayer}
 {meta: artist Pat Boone}
 {meta: composer Tharon Guffey and Murl Guffey}
+{meta: x_source classic-country}
+{meta: x_source_file avenueofprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh dear friend this sinful [C]world is lost and [G]dying
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]Are you traveling down the avenue of [G][C]prayer
 {end_of_verse}
+
+
+
+

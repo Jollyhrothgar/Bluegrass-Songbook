@@ -1,6 +1,9 @@
 {meta: title One Too Many Times}
 {meta: artist Gene Watson}
 {meta: composer Tony Booth}
+{meta: x_source classic-country}
+{meta: x_source_file onetoomanytimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sadness all that's a teardrop [F]fall from your baby's [G7]eyes
@@ -33,3 +36,7 @@ You can [C]blame it on your [F]one too many [C]times
 {start_of_verse: Verse 4}
 You can blame it on your [F]one too many [C]times 
 {end_of_verse}
+
+
+
+

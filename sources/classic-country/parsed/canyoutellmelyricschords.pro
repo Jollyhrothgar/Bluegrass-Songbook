@@ -1,5 +1,8 @@
 {meta: title Can You Tell Me}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file canyoutellmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Can you [C]tell me when the rains will be [G]ending
@@ -39,3 +42,8 @@ Or [D7]do you think my love has gone to [G]stay
 {start_of_verse: Verse 4}
 Oh [D7]tell me that my love's not gone to [G]stay
 {end_of_verse}
+
+
+
+
+

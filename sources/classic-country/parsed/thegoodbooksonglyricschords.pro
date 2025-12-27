@@ -1,6 +1,9 @@
 {meta: title The Good Book Song}
 {meta: artist Hank Locklin}
 {meta: composer Karl Davis}
+{meta: x_source classic-country}
+{meta: x_source_file thegoodbooksonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Won't you let the good book make you good [D7]give it a try today
@@ -36,3 +39,7 @@ Both [C]young and old will join in some to [D7]make you feel so proud
 The [C]good book's a guide book this we know [D7]in it we should believe
 [G7]Heaven's blessings ask and you shall [C]receive 
 {end_of_verse}
+
+
+
+

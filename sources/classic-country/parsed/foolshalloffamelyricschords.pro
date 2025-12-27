@@ -1,6 +1,9 @@
 {meta: title Fools Hall Of Fame}
 {meta: artist Johnny Cash}
 {meta: composer Danny Wolfe}
+{meta: x_source classic-country}
+{meta: x_source_file foolshalloffamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if I live to be a hundred
@@ -33,3 +36,7 @@ Why didn’t someone try to tell me
 {start_of_verse: Verse 5}
 [F]Don’t leave me [G7]here in shame  in the fools hall of [C]fame
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Born Yesterday}
 {meta: artist Everly Brothers}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file bornyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Living in the city where the [G]walls have ears
@@ -47,3 +50,8 @@
 [G]They lost their love today [Em]they threw it all away
 [Am]They act as if they were born [D7]yesterday
 {end_of_verse}
+
+
+
+
+

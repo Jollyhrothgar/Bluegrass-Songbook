@@ -1,5 +1,8 @@
 {meta: title Play Guitar Play}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file playguitarplaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Play guitar play  take me back  to yesterday
@@ -27,3 +30,6 @@ Another town  another [G7]crowd   [F]Lord I wonder if they [C]know
 [F]Got to climb that distant [C]hill
 [F]I wonder if they think of [C]me
 {end_of_verse}
+
+
+

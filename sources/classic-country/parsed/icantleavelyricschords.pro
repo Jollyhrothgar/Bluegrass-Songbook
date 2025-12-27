@@ -1,5 +1,8 @@
 {meta: title I Can't Leave}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file icantleavelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I told you I was leavin' you a long time [D7]ago
@@ -28,3 +31,5 @@
 [G]But I'll be here if you do or if you [C]don't
 [G]Cause I can't leave no matter how [C]hard I [G]try
 {end_of_verse}
+
+

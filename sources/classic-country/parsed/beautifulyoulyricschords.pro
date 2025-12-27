@@ -1,6 +1,9 @@
 {meta: title Beautiful You}
 {meta: artist Gene Watson}
 {meta: composer Joe Gough}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every dream I have is [C]filled with beautiful [G]you
@@ -37,3 +40,8 @@
 [C]And I give thanks everyday that [G]my sunshine’s here to [C]stay
 [G]Girl I'm in love yes [D7]I'm in love with beautiful [G]you
 {end_of_verse}
+
+
+
+
+

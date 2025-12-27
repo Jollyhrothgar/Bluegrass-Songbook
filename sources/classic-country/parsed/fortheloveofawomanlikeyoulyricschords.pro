@@ -1,6 +1,9 @@
 {meta: title For The Love Of A Woman Like You}
 {meta: artist Faron Young}
 {meta: composer Jack Rhodes and Gertrude Cox}
+{meta: x_source classic-country}
+{meta: x_source_file fortheloveofawomanlikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I had a kingdom I would give [F]up my [C]throne
@@ -29,3 +32,6 @@ I'd [F]live like a gypsy [C]contented just to [G7]roam
 [C]I would wait for a lifetime to [F]hear you say I [C]do
 For the [G7]love of woman like [C]you 
 {end_of_verse}
+
+
+

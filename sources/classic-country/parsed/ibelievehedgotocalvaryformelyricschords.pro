@@ -1,6 +1,9 @@
 {meta: title I Believe He'd Go To Calvary For Me}
 {meta: artist Jimmie Davis}
 {meta: composer David Ingles}
+{meta: x_source classic-country}
+{meta: x_source_file ibelievehedgotocalvaryformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Try if you [D7]can to [G]imagine
@@ -35,3 +38,7 @@ I [G]believe He'd go to [D7]Calvary for [G]me
 {start_of_verse: Verse 5}
 I believe He'd go to [D7]Calvary for [C]me[G]
 {end_of_verse}
+
+
+
+

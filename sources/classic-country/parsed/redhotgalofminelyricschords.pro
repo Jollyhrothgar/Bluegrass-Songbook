@@ -1,6 +1,9 @@
 {meta: title Red Hot Gal Of Mine and chord}
 {meta: artist Bob Wills}
 {meta: composer Strickland and Mayo}
+{meta: x_source classic-country}
+{meta: x_source_file redhotgalofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Look north or south [C]east or west [G]I pretend I [C]have the best
@@ -29,3 +32,6 @@ I’m [G]telling you about that [D7]red hot gal of [G]mine
 [G]She’s got these she’s got those she dresses up from [C]head to toe
 [G]I’m telling you about that [D7]red hot gal of [G]mine
 {end_of_verse}
+
+
+

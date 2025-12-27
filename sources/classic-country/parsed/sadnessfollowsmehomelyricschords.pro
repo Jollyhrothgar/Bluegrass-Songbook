@@ -1,5 +1,8 @@
 {meta: title Sadness Follows Me Home}
 {meta: artist Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file sadnessfollowsmehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I go where the crowd is big and loud
@@ -28,3 +31,6 @@ All that's [C]waiting is [D7]gloom
 In those [G]five shabby [C]rooms
 Cause [G]sadness [D7]follows me [C]home[G]
 {end_of_verse}
+
+
+

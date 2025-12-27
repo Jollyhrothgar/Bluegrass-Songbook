@@ -1,6 +1,9 @@
 {meta: title I've Been Everywhere}
 {meta: artist Hank Snow}
 {meta: composer Geoff Mack}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeeneverywherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was totin' my pack
@@ -87,3 +90,14 @@ Tag
 I know some place you haven't been
 [G7]I've been [C]every-where
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

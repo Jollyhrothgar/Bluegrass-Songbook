@@ -1,6 +1,9 @@
 {meta: title That's All She Wrote}
 {meta: artist Ricky Nelson}
 {meta: composer Keith Colley and Nance Mantz}
+{meta: x_source classic-country}
+{meta: x_source_file thatsallshewrotelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello Mr. [Am]mailman [F]thank you for the [G7]letter
@@ -48,3 +51,9 @@
 [G7]That's all she [C]wrote
 [G7]That's all she [C]wrote
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Snowshoe Thompson}
 {meta: artist Johnny Horton}
 {meta: composer Paul Howard and Buddy Ebsen}
+{meta: x_source classic-country}
+{meta: x_source_file snowshoethompsonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In 1855 in old [G7]California
@@ -43,3 +46,8 @@
 [F]He lived a life of danger bringin' mountain people news
 [C]Cause Snow Shoe Thompson [G7]packed the mail on [C]through
 {end_of_verse}
+
+
+
+
+

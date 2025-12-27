@@ -1,6 +1,9 @@
 {meta: title Beautiful Lies}
 {meta: artist Jean Sheppard}
 {meta: composer Jack Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file beautifullieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Beautiful lies beautiful [C]lies 
@@ -36,3 +39,7 @@ When [D7]you hold and tell me those beautiful [G]lies
 I can't help but listen and then I [C]realize 
 The [D7]words you have spoken are beautiful [G]lies
 {end_of_verse}
+
+
+
+

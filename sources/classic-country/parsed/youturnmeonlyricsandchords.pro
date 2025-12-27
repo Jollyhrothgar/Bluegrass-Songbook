@@ -1,6 +1,9 @@
 {meta: title You Turn Me On}
 {meta: artist Alabama}
 {meta: composer Randy Owen and Theodore Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file youturnmeonlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know how to [Am]turn me [G7]on
@@ -32,3 +35,5 @@ And on and on
 So why don't you just turn me on
 Cause you know how to turn me on
 {end_of_verse}
+
+

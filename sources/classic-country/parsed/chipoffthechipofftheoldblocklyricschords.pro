@@ -1,5 +1,8 @@
 {meta: title Chip Off The Chip Off The Old Block}
 {meta: artist Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file chipoffthechipofftheoldblocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jones sounded just like Hank coming over that [G7]radio
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [G7]Oh I’m a chip off the chip off the old [C]block
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If You're Not Gone Too Long}
 {meta: artist Loretta Lynn}
 {meta: composer Wanda Ballman}
+{meta: x_source classic-country}
+{meta: x_source_file ifyourenotgonetoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna wipe these teardrops from my eyes
@@ -41,3 +44,6 @@ Tomorrow you'll be gone I know
 [G]I'll be true to you honey while you're [A7]gone
 [D7]If you're not gone too [G]long
 {end_of_verse}
+
+
+

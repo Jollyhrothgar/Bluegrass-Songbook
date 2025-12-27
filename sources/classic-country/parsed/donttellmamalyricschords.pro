@@ -1,6 +1,9 @@
 {meta: title Don't Tell Mama}
 {meta: artist Gary Allan}
 {meta: composer Kim Williams, Jerry Laseter, Buddy Brock}
+{meta: x_source classic-country}
+{meta: x_source_file donttellmamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was headed north on Highway Five 
@@ -46,3 +49,8 @@ I [G7]met the Lord with whiskey on my [C]breath
 {start_of_verse: Verse 5}
 Don't tell mama I was [F]drinking
 {end_of_verse}
+
+
+
+
+

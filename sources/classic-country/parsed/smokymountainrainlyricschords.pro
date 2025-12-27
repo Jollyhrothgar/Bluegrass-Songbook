@@ -1,6 +1,9 @@
 {meta: title Smoky Mountain Rain}
 {meta: artist Ronnie Milsap}
 {meta: composer Rhonda Kye Fleming and Dennis Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file smokymountainrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]I thumbed my way from L.A. back to [C]Knoxville
@@ -48,3 +51,8 @@ I keep on [C]calling her [D7]name
 I can't go on [C]hurting this [D7]way
 She's [C]somewhere in the [D7]smoky mountain [G]rain
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Didn't He Shine}
 {meta: artist Wanda Jackson}
 {meta: composer Bob McDill and Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file didntheshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]To a world of [D7]fear and [Em]darkness 
@@ -44,3 +47,8 @@ All the [G]people [Bm]called Him [C]Jes[G]us
 Didn't He [C]sh-[D7]i-n-[G]e didn't He shine (didn't He shine)
 Didn't He [D7]sh-i-n-e didn't He [C]shin[D7]e (didn't He [G]shine)
 {end_of_verse}
+
+
+
+
+

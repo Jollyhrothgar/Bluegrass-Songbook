@@ -1,6 +1,9 @@
 {meta: title At The End Of Nowhere}
 {meta: artist Slim Whitman}
 {meta: composer Zeke Clements}
+{meta: x_source classic-country}
+{meta: x_source_file attheendofnowherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At the end of [A#7]no-w[F]here there will I [C]be 
@@ -29,3 +32,6 @@ And empty [G7]kisses from lips un[C]true
 I keep your [A#7]memo[F]ries till reckoning [C]day 
 At the end of [G7]nowhere sadly you’ll [C]pay
 {end_of_verse}
+
+
+

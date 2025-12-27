@@ -1,6 +1,9 @@
 {meta: title You’ve Got Something On Your Mind}
 {meta: artist Mickey Gilley}
 {meta: composer Dave Gibson, Norro Wilson, Roger Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotsomethingonyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is there something on your [F]m-i[C]-n-[F]d
@@ -49,3 +52,9 @@ I'd love to [A7]be the one you're [D7]needing
 [G7]You've got something on your [F]mind
 [Em]Something [D7]on your [C]mind
 {end_of_verse}
+
+
+
+
+
+

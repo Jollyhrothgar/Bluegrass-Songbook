@@ -1,6 +1,9 @@
 {meta: title Yesterday's Roses}
 {meta: artist Marty Robbins}
 {meta: composer Fred Rose and Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdaysroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Roses  [C7]pressed in a [F]bible
@@ -29,3 +32,6 @@
 [F]I'll always treasure yesterday's [C]roses
 [G7]Telling a story that never came [C]true
 {end_of_verse}
+
+
+

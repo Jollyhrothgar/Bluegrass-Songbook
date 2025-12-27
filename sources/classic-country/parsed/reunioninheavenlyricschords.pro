@@ -1,5 +1,8 @@
 {meta: title Reunion In Heaven}
 {meta: artist Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file reunioninheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So often down here we’ll have [C]a [G]reunion
@@ -28,3 +31,6 @@ With the Blessed Redeemer [A7]forever we’ll [D7]see
 And a crown he will [G]give on that great [C]judgment [G]morning
 What a happy reunion in [D7]heaven will [G]be
 {end_of_verse}
+
+
+

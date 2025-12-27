@@ -1,6 +1,9 @@
 {meta: title Christmas Without You}
 {meta: artist Dolly Parton and Kenny Rogers}
 {meta: composer Dolly Parton and Steve Goldstein}
+{meta: x_source classic-country}
+{meta: x_source_file Christmaswithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas [F]without you white [G7]Christmas and [C]I'm [Am]blue
@@ -50,3 +53,9 @@
 [C]You know that I need you you know that I want [G7]you
 [F]I love you [C]I want you [F]I need you I [C]do
 {end_of_verse}
+
+
+
+
+
+

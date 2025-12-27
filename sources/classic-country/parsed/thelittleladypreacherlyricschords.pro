@@ -1,5 +1,8 @@
 {meta: title The Little Lady Preacher}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file thelittleladypreacherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the little lady preacher from the [F]Limestone [C]Church
@@ -56,3 +59,10 @@ Lord if I judge 'em let me give 'em lots of [G7]room
 I [F]know Luther Short and he's a hard old boy to [C]change
 And I've often sat and wondered who it was [G7]converted [C]whom
 {end_of_verse}
+
+
+
+
+
+
+

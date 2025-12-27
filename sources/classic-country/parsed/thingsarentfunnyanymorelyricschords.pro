@@ -1,5 +1,8 @@
 {meta: title Things Aren't Funny Anymore}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file thingsarentfunnyanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We used to [F]laugh a lot  [G7]we never [C]cried
@@ -19,3 +22,5 @@ Maybe we laughed too [F]soon  [G7]things aren't funny any[C]more
 I'd know just where to [F]turn  to turn it all on [C]once more
 Maybe we laughed too [F]soon  [G7]things aren't funny any[C]more
 {end_of_verse}
+
+

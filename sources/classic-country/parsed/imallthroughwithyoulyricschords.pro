@@ -1,6 +1,9 @@
 {meta: title I'm All Through With You}
 {meta: artist Ricky Nelson}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file imallthroughwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You know you [G]won my heart baby right at the start
@@ -62,3 +65,11 @@ That [A7]I'm all [D7]through with [G]you
 [A7]I'm all [D7]through with [G]you
 [A7]I'm all [D7]through with [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+

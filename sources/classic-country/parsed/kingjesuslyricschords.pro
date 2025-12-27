@@ -1,6 +1,9 @@
 {meta: title King Jesus}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Maurice Delamont}
+{meta: x_source classic-country}
+{meta: x_source_file kingjesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All the armies of the [C]world will someday [G]gather
@@ -23,3 +26,5 @@ At the dawning of that great eternal [D7]day
 And there'll [G]be no sounds of [C]crying in the [G]ghetto
 For all grief and pain and [D7]death shall pass [G]away
 {end_of_verse}
+
+

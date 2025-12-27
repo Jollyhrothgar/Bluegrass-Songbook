@@ -1,5 +1,8 @@
 {meta: title Why Does The Lady Cry}
 {meta: artist Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file whydoestheladycrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Through the window of the toy-shop I [G7]saw them
@@ -23,3 +26,5 @@ As they [F]walked on their way
 There we [C]echoes left behind
 [F]Daddy why [G7]does the lady [C]cry
 {end_of_verse}
+
+

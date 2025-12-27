@@ -1,5 +1,8 @@
 {meta: artist Hank Thompson}
 {meta: composer Merle Travis and Cliffie Stone}
+{meta: x_source classic-country}
+{meta: x_source_file threetimessevenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm three times seven baby I [D7]do as I doggone please
@@ -37,3 +40,7 @@ I'm a [C]three times seven I'm [D7]gonna have my fun
 Well I [F]just won't tame I'm [C]gonna be the same 
 Till I'm [G7]three times twenty-[C]one
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Gotta Get Over This}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Dan White}
+{meta: x_source classic-country}
+{meta: x_source_file igottagetoverthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gotta get [Dm]over this [F]this hurt is [G7]lasting much too [C]long
@@ -38,3 +41,8 @@
 [C]I gotta get [Dm]over this [F]this hurt is [G7]lasting much too [C]long
 [Dm]I gotta get [F]over this get back on [G7]the track where I [C]belong
 {end_of_verse}
+
+
+
+
+

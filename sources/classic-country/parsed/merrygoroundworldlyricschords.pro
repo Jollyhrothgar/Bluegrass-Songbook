@@ -1,6 +1,9 @@
 {meta: title Merry-Go-Round World}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Sylvia Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file merrygoroundworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Once she [C]loved me and [G7]gave me her [C]all
@@ -35,3 +38,7 @@ And I'm the [C]fool that [G7]caused it [C]all
 {start_of_verse: Verse 5}
 Yes I'm the fool that [G7]caused it [C]all
 {end_of_verse}
+
+
+
+

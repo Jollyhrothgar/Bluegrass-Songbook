@@ -1,6 +1,9 @@
 {meta: title Gunsmoke Trail}
 {meta: artist Tex Ritter}
 {meta: composer Glenn Spencer and Rex Koury}
+{meta: x_source classic-country}
+{meta: x_source_file gunsmoketraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gunsmoke trail oh tell me of days gone [C]by
@@ -27,3 +30,6 @@
 [C]Bet if heaven ever let you you could tell a rugged [C7]tale
 [D7]That's why I hate to see you fade gunsmoke [G]trail [C](gunsmoke [G]trail)
 {end_of_verse}
+
+
+

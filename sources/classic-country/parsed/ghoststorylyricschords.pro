@@ -1,6 +1,9 @@
 {meta: title Ghost Story}
 {meta: artist Don Williams}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file ghoststorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I see how he travels
@@ -49,3 +52,10 @@ He [G7]must have been going [C]insane
 Well I've finally learned how to hold you [D7]together
 When somebody mentions his [G]name
 {end_of_verse}
+
+
+
+
+
+
+

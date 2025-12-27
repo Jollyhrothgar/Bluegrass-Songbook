@@ -1,6 +1,9 @@
 {meta: title I'll Remember You}
 {meta: artist Elvis Presley}
 {meta: composer Kui Lee}
+{meta: x_source classic-country}
+{meta: x_source_file illrememberyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll remember [Em]you
@@ -31,3 +34,7 @@ I will re[C]member [Em]too
 {start_of_verse: Verse 5}
 I'll remember you
 {end_of_verse}
+
+
+
+

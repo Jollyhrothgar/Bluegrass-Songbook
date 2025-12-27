@@ -1,6 +1,9 @@
 {meta: title You Don't Have To Live With It}
 {meta: artist Ed Bruce}
 {meta: composer Earl T. Conley, Rick Farrell, Steve Clark}
+{meta: x_source classic-country}
+{meta: x_source_file youdonthavetolivewithitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I didn't come in here for free advice
@@ -60,3 +63,8 @@ Don't have [C]to live [D7]with it I [G]do
 Oh you ain't got a [Am]clue
 You don't have [C]to live [D7]with it I [G]do
 {end_of_verse}
+
+
+
+
+

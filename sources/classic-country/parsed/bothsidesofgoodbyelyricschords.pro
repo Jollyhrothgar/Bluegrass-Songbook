@@ -1,6 +1,9 @@
 {meta: title Both Sides of Goodbye}
 {meta: artist Ray Price}
 {meta: composer Kim Williams and Jackson Leap}
+{meta: x_source classic-country}
+{meta: x_source_file bothsidesofgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you pack your clothes tonight  don't pack up all the [F]blame
@@ -29,3 +32,6 @@ And [G7]I know there ain't no easy [C]side
 I've loved and I've been loved  but not at the same [F]time
 I've [G7]been on both sides of [C]goodbye 
 {end_of_verse}
+
+
+

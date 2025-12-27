@@ -1,6 +1,9 @@
 {meta: title I Don't See What I Saw}
 {meta: artist Kitty Wells}
 {meta: composer William Baker}
+{meta: x_source classic-country}
+{meta: x_source_file idontseewhatisawlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Not so long ago you were true as the [C]setting [G]sun
@@ -33,3 +36,6 @@
 [G]Then you did things I never thought you'd do
 [D7]I don't see what I saw when I seen what I saw in [G]you
 {end_of_verse}
+
+
+

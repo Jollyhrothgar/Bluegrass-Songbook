@@ -1,6 +1,9 @@
 {meta: title Spirit Of A Boy Wisdom Of A Man}
 {meta: artist Randy Travis}
 {meta: composer Trey Bruce and Glen Burtnick}
+{meta: x_source classic-country}
+{meta: x_source_file spiritofaboywisdomofamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was six[F]teen tender and [C]tough
@@ -36,3 +39,7 @@ The [F]spirit of a boy or the [C]wisdom of a man
 [F]With so much [C]riding on the [G7]choice at [Am]hand [G7]
 The spirit of a [F]boy or the [G7]wisdom of a [C]man
 {end_of_verse}
+
+
+
+

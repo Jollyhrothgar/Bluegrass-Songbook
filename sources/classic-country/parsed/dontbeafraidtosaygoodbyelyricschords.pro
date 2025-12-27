@@ -1,5 +1,8 @@
 {meta: title Don't Be Afraid To Say Goodbye}
 {meta: artist Johnny Rodriguez Lyrics with Chords}
+{meta: x_source classic-country}
+{meta: x_source_file dontbeafraidtosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've never heard you say you [C]love me
@@ -40,3 +43,8 @@
 [G]If it don't [C]work out don't you [G]worry[C]
 [G]Don't be [C]afraid to say good[G]bye
 {end_of_verse}
+
+
+
+
+

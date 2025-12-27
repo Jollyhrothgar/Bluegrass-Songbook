@@ -1,6 +1,9 @@
 {meta: title The Wreck Of The Old 97}
 {meta: artist Johnny Cash}
 {meta: composer Bob Johnson and Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file thewreckoftheold97lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They give him his orders at Monroe [C]Virginia
@@ -36,3 +39,7 @@ From [G]this time on and [D7]learn
 Never speak [G]harsh words to your true loving [C]husband
 [G]He may leave you and [D7]never [G]return
 {end_of_verse}
+
+
+
+

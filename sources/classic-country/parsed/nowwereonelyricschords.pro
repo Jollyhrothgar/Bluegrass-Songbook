@@ -1,6 +1,9 @@
 {meta: title Now We're One}
 {meta: artist Buddy Holly}
 {meta: composer Bobby Darin}
+{meta: x_source classic-country}
+{meta: x_source_file nowwereonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]And now we're one and I love you so
@@ -51,3 +54,8 @@ We don't have to run and hide
 [G7]Now that we are married baby
 [F]We don't have to worry now we're [C]one
 {end_of_verse}
+
+
+
+
+

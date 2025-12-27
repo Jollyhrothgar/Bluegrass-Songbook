@@ -1,6 +1,9 @@
 {meta: title Before I Die}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Woody Mullis and Trey Matthews}
+{meta: x_source classic-country}
+{meta: x_source_file beforeidielyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Before I [C]die I wanna [F]hit the Mississippi in a [G7]boat I've yet to [C]buy
@@ -51,3 +54,11 @@ It's [Am]time I put some [G7]livin' in these [F]dreams [Em]    [Dm]
 {start_of_verse: Verse 7}
 Before I [C]die I wanna [F]hit the Mississippi in a [G7]boat I've yet to [C]buy 
 {end_of_verse}
+
+
+
+
+
+
+
+

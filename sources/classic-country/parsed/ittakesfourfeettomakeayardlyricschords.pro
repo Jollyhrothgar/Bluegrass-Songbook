@@ -1,6 +1,9 @@
 {meta: title It Takes Four Feet To Make A Yard}
 {meta: artist Carl Smith}
 {meta: composer Larry Lee and Glenn D. Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file ittakesfourfeettomakeayardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Billy hand the shovel to me 
@@ -52,3 +55,8 @@ Oh Lord it's [C]hard  without them it's [G]hard
 Don't know why I bother keeping up this [D7]place
 It takes four feet to make a [G]yard
 {end_of_verse}
+
+
+
+
+

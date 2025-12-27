@@ -1,6 +1,9 @@
 {meta: title I Got A Lot Of Hurting Done Today}
 {meta: artist Connie Smith}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file igotalotofhurtingdonetodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today I read the phone book and I memorized some [G7]lines
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]I got a lot of hurting done [C]today
 {end_of_verse}
+
+
+
+

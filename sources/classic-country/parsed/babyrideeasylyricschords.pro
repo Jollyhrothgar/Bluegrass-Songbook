@@ -1,6 +1,9 @@
 {meta: title Baby Ride Easy}
 {meta: artist Johnny Cash}
 {meta: composer Richard Dobson}
+{meta: x_source classic-country}
+{meta: x_source_file babyrideeasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I drove a truck and [C]I were a waitress
@@ -50,3 +53,9 @@ And [D7]your cooking ain't [G]greasy
 We'll chuck the chuck [C]wagon and [D7]we'll ride [G]away
 We'll chuck the chuck [C]wagon and [D7]we'll ride [G]away
 {end_of_verse}
+
+
+
+
+
+

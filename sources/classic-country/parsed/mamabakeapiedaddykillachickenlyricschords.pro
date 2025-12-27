@@ -1,5 +1,8 @@
 {meta: title Mama Bake A Pie (Daddy Kill A Chicken)}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file mamabakeapiedaddykillachickenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]People staring at me as they wheel 
@@ -66,3 +69,12 @@ The war is just a waste of [C]time
 Mama bake a [F]pie daddy kill a [C]chicken
 Your son is coming home 11:3[F]5 Wednesday [C]night
 {end_of_verse}
+
+
+
+
+
+
+
+
+

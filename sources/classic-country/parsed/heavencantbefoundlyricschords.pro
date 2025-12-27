@@ -1,5 +1,8 @@
 {meta: title Heaven Can't Be Found}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file heavencantbefoundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I looked over at my pillow but your [G7]face [C]wasn't [G]there
@@ -26,3 +29,6 @@ I've [D7]looked all over hell but heaven can't be [G]found
 And I don't know if I can go on [G7]without [C]breaking [G]down
 Oh I've [D7]looked all over hell but my heaven can't be [G]found
 {end_of_verse}
+
+
+

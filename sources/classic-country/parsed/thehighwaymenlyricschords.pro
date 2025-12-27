@@ -1,6 +1,9 @@
 {meta: title The Highwaymen}
 {meta: artist Willie Nelson, Johnny Cash, Kris Kristofferson and Waylon Jennings}
 {meta: composer Jimmy Webb}
+{meta: x_source classic-country}
+{meta: x_source_file thehighwaymenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I was a [G7]highwayman along the [F]coach roads I did [Am]ride
@@ -47,3 +50,8 @@
 [C]And I'll be back again and [G7]again
 [Am]And again [G7]and again [F]and [Em]again [Dm]and [C][G7][F]again
 {end_of_verse}
+
+
+
+
+

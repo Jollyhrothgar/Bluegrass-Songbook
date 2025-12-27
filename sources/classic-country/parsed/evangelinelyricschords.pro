@@ -1,6 +1,9 @@
 {meta: title Evangeline}
 {meta: artist Emmylou Harris}
 {meta: composer Robbie Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file evangelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She stands on the banks of the mighty Mississippi
@@ -57,3 +60,13 @@ They used to waltz on the banks of the mighty Mississippi
 They used to waltz on the banks of the mighty Mississippi
 [G7]Loving the whole night through
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

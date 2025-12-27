@@ -1,6 +1,9 @@
 {meta: title Little Georgia Rose}
 {meta: artist The Seldom Scene}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file littlegeorgiaroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Way [C]down in the blue ridge [G]mountain
@@ -43,3 +46,8 @@ I watched her do her little [D7]part
 [G]She smiled at me when [C]I would tell [G]her
 That she was [D7]my sweet[G]heart
 {end_of_verse}
+
+
+
+
+

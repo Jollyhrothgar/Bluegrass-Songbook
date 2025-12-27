@@ -1,5 +1,8 @@
 {meta: title Let Me Call You Sweetheart}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file letmecallyousweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me call [F]you [C]sweetheart 
@@ -28,3 +31,6 @@ In your [F]eyes so [D7][A7]blue
 Let me call [F]you [C]sweetheart 
 I'm in [F]love [G7]with [C]you
 {end_of_verse}
+
+
+

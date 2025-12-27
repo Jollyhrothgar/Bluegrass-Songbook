@@ -1,5 +1,8 @@
 {meta: title I'm All The Man}
 {meta: artist Travis Tritt}
+{meta: x_source classic-country}
+{meta: x_source_file imallthemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Girl I know you see me as a [C]man who's strong 
@@ -54,3 +57,10 @@ I'm [D7]all the man I'll ever need to [G]be [C]
 I should [G]just thank God in heaven 
 I'm [D7]all the man I'll ever need to [G]be
 {end_of_verse}
+
+
+
+
+
+
+

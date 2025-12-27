@@ -1,6 +1,9 @@
 {meta: title The Box}
 {meta: artist Randy Travis}
 {meta: composer Buck A. Moore and Randy Bruce Traywick}
+{meta: x_source classic-country}
+{meta: x_source_file theboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On the top shelf in the closet
@@ -49,3 +52,9 @@ But that was long before we found the [G]box
 We all [D7]thought his heart was made of solid rock
 But that was long before we found the [G]box
 {end_of_verse}
+
+
+
+
+
+

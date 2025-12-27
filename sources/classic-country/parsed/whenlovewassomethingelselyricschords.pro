@@ -1,6 +1,9 @@
 {meta: title When Love Was Something Else}
 {meta: artist Conway Twitty}
 {meta: composer Scott Anders and Roger Alan Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file whenlovewassomethingelselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While she stands there [F]staring in a [C]mirror
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]When their love was something [C]else
 {end_of_verse}
+
+
+
+

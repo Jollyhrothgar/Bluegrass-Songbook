@@ -1,6 +1,9 @@
 {meta: title These Chains}
 {meta: artist Kenny Rogers}
 {meta: composer Kim Carnes and Dave Ellington}
+{meta: x_source classic-country}
+{meta: x_source_file thesechainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]These [C]chains won't keep me from [D7]bein' a [G]free man
@@ -57,3 +60,10 @@ Doin' what [C]I can to [G]get out of here
 And these chains won't [C]keep me from [G]seein' my freedom
 Changin' my [C]name and startin’ over [G]again
 {end_of_verse}
+
+
+
+
+
+
+

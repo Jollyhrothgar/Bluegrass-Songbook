@@ -1,6 +1,9 @@
 {meta: title My Baby Don't Love Me Anymore}
 {meta: artist Johnny Paycheck}
 {meta: composer Aubrey Mayhew and Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file mybabydontlovemeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Teardrops scattered all over the floor
@@ -38,3 +41,7 @@ I know my baby don’t love me any[C]more
 {start_of_verse: Verse 4}
 [G7]I know my baby don’t love me any[C]more
 {end_of_verse}
+
+
+
+

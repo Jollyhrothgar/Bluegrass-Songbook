@@ -1,6 +1,9 @@
 {meta: title Allison Miranda}
 {meta: artist Garth Brooks}
 {meta: composer Danny Roberts, Bobby Wood, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file allisonmirandalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a two lane north of Casper is [F]where this all begins
@@ -53,3 +56,9 @@ Was just for [C]dreamers and thieves
 But [F]that was before she [Am]came 
 [Dm]Allison [Em]Miran[F]d--[G7]a was her [C]name
 {end_of_verse}
+
+
+
+
+
+

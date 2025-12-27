@@ -1,6 +1,9 @@
 {meta: title Mean Woman With The Green Eyes}
 {meta: artist Charlie Walker}
 {meta: composer Sheb Wooley}
+{meta: x_source classic-country}
+{meta: x_source_file meanwomanwiththegreeneyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It takes a mean woman with the [E7]green eyes 
@@ -36,3 +39,7 @@ I’m gonna get my suitcase down and [G]then I’ll pack my cloths
 And leave my mean woman with the [E7]green eyes
 [A7]My ****[D7]*** what a [G]gal
 {end_of_verse}
+
+
+
+

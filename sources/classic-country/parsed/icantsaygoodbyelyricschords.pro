@@ -1,6 +1,9 @@
 {meta: title I Can't Say Goodbye}
 {meta: artist Marty Robbins}
 {meta: composer Joe Byers and Rink Hardin}
+{meta: x_source classic-country}
+{meta: x_source_file icantsaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cause I'm with you again [G7]and I can't say [F]good-bye
@@ -23,3 +26,5 @@ But I'm [C]with you again and I [G7]can't say [C]goodbye
 {start_of_verse: Verse 3}
 [G7]I'm with [C]you again [G7]and I can't [C]say goodbye
 {end_of_verse}
+
+

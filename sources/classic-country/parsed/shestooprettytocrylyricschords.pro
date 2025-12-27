@@ -1,6 +1,9 @@
 {meta: title She's Too Pretty To Cry}
 {meta: artist Johnny Rodriguez}
 {meta: composer Averal Ann Aldridge and George Soul}
+{meta: x_source classic-country}
+{meta: x_source_file shestooprettytocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She don’t know that I’m not sleeping
@@ -39,3 +42,7 @@ Lord turn my heart around I don’t want to [F]let her down
 She’s too [G7]good to be blue [F]she’s too [G7]pretty to [E7]c-r-[F]y
 [G7]Pretty to [C]cry
 {end_of_verse}
+
+
+
+

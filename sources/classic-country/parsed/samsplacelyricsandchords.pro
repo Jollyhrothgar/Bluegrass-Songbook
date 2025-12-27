@@ -1,6 +1,9 @@
 {meta: title Sam's Place}
 {meta: artist Buck Owens}
 {meta: composer Red Simpson and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file samsplacelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a place down the street we call Sam's [D7]Place
@@ -24,3 +27,5 @@ You can hear 'em pickin' twenty blocks [G]away
 They're playin' country music down at Sam's [D7]Place
 From the setting sun until the break of [G]day
 {end_of_verse}
+
+

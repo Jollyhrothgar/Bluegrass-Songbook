@@ -1,6 +1,9 @@
 {meta: title Captain Santa Claus}
 {meta: artist Bobby Helms}
 {meta: composer Don Reid and Arthur Altman}
+{meta: x_source classic-country}
+{meta: x_source_file captainsantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The [G7]word had spread from [C]town to town
@@ -37,3 +40,7 @@ And not one chimney [F]did they miss every [D7]stocking got its [G7]share
 Now children dance with [C]glee around the [F]tree each time they're told
 The [C]tale of Captain Santa Claus and his [G7]reindeer space [C]patrol
 {end_of_verse}
+
+
+
+

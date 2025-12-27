@@ -1,6 +1,9 @@
 {meta: title He Stopped Loving Her Today}
 {meta: artist George Jones}
 {meta: composer Bobby Braddock and Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file hestoppedlovinghertodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He said I'll love you 'til I die
@@ -55,3 +58,11 @@ This time he's over her for good
 {start_of_verse: Verse 9}
 Repeat Chorus
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Every Step Of The Way}
 {meta: artist Ferlin Husky}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file everystepofthewaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every step of the way every minute of the [C]day
@@ -30,3 +33,7 @@ The seasons change but not my heart
 {start_of_verse: Verse 5}
 [D7]Yes I will love you every step of the [G][C]w-a-y
 {end_of_verse}
+
+
+
+

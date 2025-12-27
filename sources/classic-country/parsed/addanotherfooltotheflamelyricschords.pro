@@ -1,6 +1,9 @@
 {meta: title Add Another Fool To The Flame}
 {meta: artist Jody Nix}
 {meta: composer Carl Jackson and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file addanotherfooltotheflamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know you’ve burned some [C]bridges in this [D7]town
@@ -34,3 +37,7 @@
 [G7]Yes I know [C]that I’ll get burned but the pleasure’s worth the [Am]pain
 [C]Just add another [D7]fool to the [G]flame
 {end_of_verse}
+
+
+
+

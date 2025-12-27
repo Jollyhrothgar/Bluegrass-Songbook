@@ -1,6 +1,9 @@
 {meta: title You Don't Have Time For Me}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file youdonthavetimeformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You have time for the gay affairs
@@ -19,3 +22,4 @@ Then have you [C]stopped to think about
 [C]Time for those who will let you down
 But [G]you don't oh [D7]you don't have time for [C]me [G]
 {end_of_verse}
+

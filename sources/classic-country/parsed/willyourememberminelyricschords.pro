@@ -1,6 +1,9 @@
 {meta: title Will You Remember Mine}
 {meta: artist Willie Nelson}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file willyourememberminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweet is a [Em]song when the [Bm]song is [G]love
@@ -43,3 +46,8 @@ And [C]thought of [Am]days [G]when you were [Em]near
 [C]Now when you hold [Bm]another's [Em]hand
 [Am]Will you [D7]remember [G]mine
 {end_of_verse}
+
+
+
+
+

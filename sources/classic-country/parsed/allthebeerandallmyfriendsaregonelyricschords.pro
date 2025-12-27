@@ -1,6 +1,9 @@
 {meta: title All The Beer And All My Friends Are Gone}
 {meta: artist Moe Bandy}
 {meta: composer Bill Anderson and Mary Lou Turner}
+{meta: x_source classic-country}
+{meta: x_source_file allthebeerandallmyfriendsaregonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](When all the beer and [G7]all my friends are [C]gone)
@@ -37,3 +40,8 @@ And not once did you [G7]even cross my [C]mind
 {start_of_verse: Verse 5}
 When all the beer and [G7]all my friends are [C]gone
 {end_of_verse}
+
+
+
+
+

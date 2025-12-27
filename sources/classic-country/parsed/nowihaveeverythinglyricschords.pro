@@ -1,6 +1,9 @@
 {meta: title Now I Have Everything}
 {meta: artist Wanda Jackson}
 {meta: composer Charlie Yandell and Gerald Ingles}
+{meta: x_source classic-country}
+{meta: x_source_file nowihaveeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Now I have [G7]every[C]thing
@@ -37,3 +40,8 @@ But [F]now I have [G7]every[C]thing
 {start_of_verse: Verse 5}
 And [F]now I have [G7]every[C]thing
 {end_of_verse}
+
+
+
+
+

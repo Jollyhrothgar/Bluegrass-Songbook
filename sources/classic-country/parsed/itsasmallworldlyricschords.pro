@@ -1,6 +1,9 @@
 {meta: title It’s A Small World}
 {meta: artist Slim Whitman}
 {meta: composer Richard M. Sherman and Robert B. Sherman}
+{meta: x_source classic-country}
+{meta: x_source_file itsasmallworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a world of laughter a [G7]world of tears 
@@ -37,3 +40,7 @@ Though the mountains divide
 And the [F]oceans are wide 
 It's a [G7]small world after [C]all
 {end_of_verse}
+
+
+
+

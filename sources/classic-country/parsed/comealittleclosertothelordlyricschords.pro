@@ -1,6 +1,9 @@
 {meta: title Come A Little Closer To The Lord}
 {meta: artist Jimmie Davis}
 {meta: composer Charles Goodman and Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file comealittleclosertothelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come a little closer [F]just a little closer
@@ -61,3 +64,11 @@ Your [C]head will override me [F]and your days are brightness
 {start_of_verse: Verse 6}
 [D7]Come a little [G7]closer to the [C]Lord
 {end_of_verse}
+
+
+
+
+
+
+
+

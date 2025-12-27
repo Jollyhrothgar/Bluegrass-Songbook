@@ -1,5 +1,8 @@
 {meta: title Don't Do The Things He'd Do}
 {meta: artist Wanda Jackdson}
+{meta: x_source classic-country}
+{meta: x_source_file dontdothethingsheddolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't say goodnight   like he would [G7]do
@@ -28,3 +31,6 @@
 [C]Love must be [F]strong  enough to [C]last
 [G7]So I'll forget  about the [C]past
 {end_of_verse}
+
+
+

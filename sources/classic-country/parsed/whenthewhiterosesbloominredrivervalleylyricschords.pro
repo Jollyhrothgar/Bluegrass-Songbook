@@ -1,5 +1,8 @@
 {meta: title When The White Roses Bloom In Red River Valley}
 {meta: artist Dale Evans}
+{meta: x_source classic-country}
+{meta: x_source_file whenthewhiterosesbloominredrivervalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the white roses bloom down in [F]Red River Valley
@@ -21,3 +24,5 @@ Good[F]bye my darl[G7]ing [C]one kiss [G7]before I [C]go
 When the [C]white roses bloom down in [F]Red River Valley
 I'll [C]come back and make your [G7]every dream come [C]true
 {end_of_verse}
+
+

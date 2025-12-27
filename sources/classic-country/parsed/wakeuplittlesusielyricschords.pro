@@ -1,6 +1,9 @@
 {meta: title Wake Up Little Susie}
 {meta: artist The Everly Brothers}
 {meta: composer Boudleaux and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file wakeuplittlesusielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wake up little Susie wake up [Eb]    [F]   [Eb]
@@ -42,3 +45,8 @@ Wake up little [C]Susie  [G7]wake up little [C]Susie  w-ell
 {start_of_verse: Verse 5}
 [G7]Wake up little [C]Susie  
 {end_of_verse}
+
+
+
+
+

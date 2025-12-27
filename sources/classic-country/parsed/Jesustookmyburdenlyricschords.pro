@@ -1,5 +1,8 @@
 {meta: title Jesus Took My Burden}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file Jesustookmyburdenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I a poor lost sinner before the Lord did [D7]fall
@@ -42,3 +45,8 @@ My load of grief and heartache seemed more than I could [G]bear
 Twas then I heard a whisper you [G7]to the Lord [C]belong
 Then Jesus took my [G]burden and [D7]left me with a [G]song
 {end_of_verse}
+
+
+
+
+

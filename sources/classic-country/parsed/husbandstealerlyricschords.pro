@@ -1,6 +1,9 @@
 {meta: title Husband Stealer}
 {meta: artist Barbara Mandrell}
 {meta: composer Gary S. Paxton and Steve Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file husbandstealerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Husband [Dm]stea[C]ler I sure do [F]need him
@@ -41,3 +44,8 @@ And [Dm]break his heart but [F]I can't wait and [C]see
 [Dm]You break his heart but [F]I can't [G7]wait and [C]see
 Husband [F]stea[C]ler
 {end_of_verse}
+
+
+
+
+

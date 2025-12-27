@@ -1,6 +1,9 @@
 {meta: title Depend On You}
 {meta: artist Tanya Tucker}
 {meta: composer Parker McGee}
+{meta: x_source classic-country}
+{meta: x_source_file dependonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Broken glass lies on the [Em]bedroom floor
@@ -41,3 +44,8 @@ And I've [C]always been the [D7]kind that didn't [Em]count on much
 [C]Yeah I thought I could [D7]depend on [G]you ooh yeah [Em]mhm
 Yes I [C]thought I could [D7]depend on [G]you honey yeah
 {end_of_verse}
+
+
+
+
+

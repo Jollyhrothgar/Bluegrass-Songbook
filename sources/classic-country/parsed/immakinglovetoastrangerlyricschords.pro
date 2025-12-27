@@ -1,6 +1,9 @@
 {meta: title I'm Making Love To A Stranger}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file immakinglovetoastrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm making love to a [G7]stranger
@@ -29,3 +32,6 @@ And [G7]though you let me [D7]hold you tender[G7]ly
 [C]I'm making love to a [G7]stranger
 A stranger to a love that used to [C]be
 {end_of_verse}
+
+
+

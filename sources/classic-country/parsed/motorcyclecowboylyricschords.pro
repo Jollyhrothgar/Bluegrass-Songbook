@@ -1,5 +1,8 @@
 {meta: title Motorcycle Cowboy}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file motorcyclecowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I married me a hippy ran away with a stringy haired blonde
@@ -30,3 +33,7 @@ I'm her motorcycle cowboy she's my stringy haired blonde
 [F]I married me a hippy ran away with a stringy haired [C]blonde
 [G7]Now were both gold and happy fishing on our own golden [C]pond
 {end_of_verse}
+
+
+
+

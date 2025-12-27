@@ -1,6 +1,9 @@
 {meta: title Time And Time Again}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash and Maybelle Carter}
+{meta: x_source classic-country}
+{meta: x_source_file timeandtimeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish my heart was stone cause you're hard on flesh and bone
@@ -27,3 +30,6 @@ You [F]come back and I take you back but you’re [C]like the shifting sand
 And like the [G7]sand you shift right through my hands
 [F]Time and time [C]again I got you [F]time and time [C]again
 {end_of_verse}
+
+
+

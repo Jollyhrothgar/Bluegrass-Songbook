@@ -1,6 +1,9 @@
 {meta: title All My Hard Times}
 {meta: artist Roy Drusky}
 {meta: composer Joe South}
+{meta: x_source classic-country}
+{meta: x_source_file allmyhardtimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All of my [F]hard times  [G7]soon will be [C]over 
@@ -42,3 +45,9 @@ And now I feel like a newborn [F]man
 [C]All of my [F]hard times  [G7]soon will be [C]over 
 All of my [F]hard times  [G7]soon will be [C]over
 {end_of_verse}
+
+
+
+
+
+

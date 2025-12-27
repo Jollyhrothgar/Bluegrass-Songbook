@@ -1,6 +1,9 @@
 {meta: title I've Convinced Everybody But Me}
 {meta: artist George Strait}
 {meta: composer Kim Williams, Buddy Cannon, David Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file iveconvincedeverybodybutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The guys down at the job all wanna [F]know
@@ -45,3 +48,9 @@ I've [G7]convinced everybody but [C]me
 {start_of_verse: Verse 5}
 Yes I've [G7]convinced everybody but [C]me
 {end_of_verse}
+
+
+
+
+
+

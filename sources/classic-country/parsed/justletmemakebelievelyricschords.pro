@@ -1,6 +1,9 @@
 {meta: title Just Let Me Make Believe}
 {meta: artist Roy Orbison}
 {meta: composer Ronald Blackwell}
+{meta: x_source classic-country}
+{meta: x_source_file justletmemakebelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]If your [G]love for me is [B7]just temporary
@@ -30,3 +33,7 @@ So if [G]your sweet kiss is [B7]just for the moment
 {start_of_verse: Verse 5}
 Just let me [D7]make believe a [C]while[G]
 {end_of_verse}
+
+
+
+

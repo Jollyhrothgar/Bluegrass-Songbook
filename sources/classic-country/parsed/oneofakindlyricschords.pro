@@ -1,6 +1,9 @@
 {meta: title One Of A Kind}
 {meta: artist Ray Price}
 {meta: composer Lee Dresser}
+{meta: x_source classic-country}
+{meta: x_source_file oneofakindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've met a great many men in [Dm]my life time [G7]
@@ -45,3 +48,9 @@ Yes [C]Jesus was [G7]one of a [C]kind [F]
 ([C]Jesus was [G7]one of a [C]kind)
 Oh Jesus was [G7]one of a [C]kind
 {end_of_verse}
+
+
+
+
+
+

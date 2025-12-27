@@ -1,5 +1,8 @@
 {meta: title Wings Upon Your Horns Lyrics Chords}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file wingsuponyourhornslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Before you first made love to me you called me your wife to be
@@ -28,3 +31,6 @@ Don't tell me that I'm no saint I'm the first to know I ain't
 [G]You're the first to ever make me fall in love [C]and then not take [G]me
 [D7]The night I let you hang my wings upon your [G]horns
 {end_of_verse}
+
+
+

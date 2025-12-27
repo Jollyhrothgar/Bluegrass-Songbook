@@ -1,6 +1,9 @@
 {meta: title Bartender}
 {meta: artist Ernest Tubb}
 {meta: composer Loretta Lynn and Maggie Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file bartenderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please listen to me bartender I've got [F]somethin' on my [C]mind
@@ -28,3 +31,6 @@ You could [G7]end up like all the rest with a [C]barroom for your home
 {start_of_verse: Verse 4}
 I [F]know you're right [C]bartender [G7]goodnight I'm goin' [C]home
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Wanderin' Boy's Last Letter}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file wanderinboyslastletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm writing this [F]letter to [C]you tonight mom 
@@ -28,3 +31,6 @@ Mom [G7]forgive me the pain I've caused [C]you
 The time must be [F]near the [C]parson is here
 And he's [G7]prayin' like you used to [C]do
 {end_of_verse}
+
+
+

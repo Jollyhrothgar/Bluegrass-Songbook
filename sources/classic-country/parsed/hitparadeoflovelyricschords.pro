@@ -1,6 +1,9 @@
 {meta: title Hit Parade of Love}
 {meta: artist Jimmy Martin}
 {meta: composer Jimmy Martin and Wade Birchfield}
+{meta: x_source classic-country}
+{meta: x_source_file hitparadeoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From what I've been a hearing dear you've really got it [F]made
@@ -47,3 +50,9 @@ But [C]if I do get there soon I'd really have it [F]made
 {start_of_verse: Verse 5}
 [G7]Then I'll know I'm number one your hit pa[C]rade
 {end_of_verse}
+
+
+
+
+
+

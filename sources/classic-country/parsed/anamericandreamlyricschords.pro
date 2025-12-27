@@ -1,6 +1,9 @@
 {meta: title An American Dream}
 {meta: artist Nitty Gritty Dirt Band}
 {meta: composer Rodney J. Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file anamericandreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I beg your pardon momma what did you [F]say
@@ -57,3 +60,10 @@
 [F]I feel a tropical vacation this year
 [G7]Might be the answer to this Hillbilly [C]beer
 {end_of_verse}
+
+
+
+
+
+
+

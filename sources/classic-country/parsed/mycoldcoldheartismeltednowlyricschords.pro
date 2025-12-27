@@ -1,6 +1,9 @@
 {meta: title My Cold Cold Heart Is Melted Now}
 {meta: artist Kitty Wells}
 {meta: composer Hank Williams and Johnny Masters}
+{meta: x_source classic-country}
+{meta: x_source_file mycoldcoldheartismeltednowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My cold cold heart  [G7]is melted [C]now
@@ -29,3 +32,6 @@
 [G]Your lonely face  [G7]in dreams I [C]see
 [D7]My cold cold heart has told on [G]me
 {end_of_verse}
+
+
+

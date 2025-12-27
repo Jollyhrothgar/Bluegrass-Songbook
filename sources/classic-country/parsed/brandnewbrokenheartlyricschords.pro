@@ -1,6 +1,9 @@
 {meta: title Brand New Broken Heart}
 {meta: artist Jimmy Martin}
 {meta: composer Larry Sparks and H. Smith}
+{meta: x_source classic-country}
+{meta: x_source_file brandnewbrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Life to me is just a [D7]heartache
@@ -34,3 +37,7 @@ And a [D7]brand new broken [G]heart
 [C]All I have is just a [G]memory
 And a [D7]brand new broken [G]heart
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Set My Foot Down}
 {meta: artist Buddy Holly}
 {meta: composer Charles Holley}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnasetmyfootdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you say you're mine but baby you don't show it
@@ -26,3 +29,6 @@ Gonna [G7]stop your strut baby till [F]you say you're [C]through
 {start_of_verse: Verse 4}
 Repeat
 {end_of_verse}
+
+
+

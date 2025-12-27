@@ -1,6 +1,9 @@
 {meta: title You're The Best Break This Old Heart Ever Had}
 {meta: artist Ed Bruce}
 {meta: composer Waylon Holyfield and Randy Hatch}
+{meta: x_source classic-country}
+{meta: x_source_file yourethebestbreakthisoldhearteverhadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh there were others
@@ -41,3 +44,8 @@ Never thought I'd ever [F]love again like that
 {start_of_verse: Verse 5}
 [Am]You're the [Dm]best [Am]break [C]this [F]old [G7]heart ever [C]had
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Mysteries Of Life}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file mysteriesoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So many beautiful stories are [F]told
@@ -35,3 +38,7 @@ He [G7]made the flowers the birds and the [C]bees
 And why He permits all these troubles and [F]strife
 That [G7]is just one of the Mysteries Of [C]Life
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When The Bloom Is Off The Rose}
 {meta: artist Rhonda Vincent}
 {meta: composer Roger Brown}
+{meta: x_source classic-country}
+{meta: x_source_file whenthebloomisofftheroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the bloom is off the [F]rose 
@@ -48,3 +51,9 @@ Darling [C]will [G7]you still be [C]mine [G7]
 When the dew turns frosty [F]white 
 Darling [C]will [G7]you still be [C]mine
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Need Somebody Bad}
 {meta: artist Jack Greene}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file ineedsomebodybadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord I need somebody bad [C]tonight
@@ -27,3 +30,6 @@ Cause [G]I just [D7]lost somebody [D7][G]good
 Yes [G]Lord I need somebody bad [C]tonight
 Cause [G]I just [D7]lost somebody [G]good
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Think About the Good Times}
 {meta: artist Lee Greenwood}
 {meta: composer Sidney Barnes and Jerome Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file thinkaboutthegoodtimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey now I know that you're leaving [D7]today
@@ -69,3 +72,17 @@ And laughing with the friends we know and
 [C]And when you're [Am]gone far [D7]away
 [G]I'll just smile and think about the good times
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

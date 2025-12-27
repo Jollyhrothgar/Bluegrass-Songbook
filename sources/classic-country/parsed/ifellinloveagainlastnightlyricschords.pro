@@ -1,6 +1,9 @@
 {meta: title I Fell In Love Again Last Night}
 {meta: artist The Forester Sisters}
 {meta: composer Paul Overstreet and Thom Schuyler}
+{meta: x_source classic-country}
+{meta: x_source_file ifellinloveagainlastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I fell in love again last [G7][F]night 
@@ -44,3 +47,8 @@ I fell in [G7]love again last [F]night
 In [G7]love again last [F]night
 I fell in [G7]love again last [C]night
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title You Can't Fall in Love When You're Crying}
 {meta: artist Lee Greenwood}
+{meta: x_source classic-country}
+{meta: x_source_file youcantfallinlovewhenyourecryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She gently brushed my arm as she walked [G7]by me
@@ -42,3 +45,8 @@ Cause I know you [C]can't fall in love when you're [F]cryin'[C]
 [C]If I said I [E7]loved you I'd be [F]lyin'[C]
 Cause the [Dm]memory of [G7]yesterday is [Dm]still [G7]in my [C]mind
 {end_of_verse}
+
+
+
+
+

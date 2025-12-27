@@ -1,6 +1,9 @@
 {meta: title It Makes You Happy}
 {meta: artist Lynn Anderson}
 {meta: composer Gene Hood}
+{meta: x_source classic-country}
+{meta: x_source_file itmakesyouhappylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somehow it seems you [F]always keep me [C]cryin'
@@ -35,3 +38,7 @@ I [C]beg you give me [F]just one happy [C]hour
 {start_of_verse: Verse 5}
 [F]It makes you [C]happy to [G7]know you make me [C]blue
 {end_of_verse}
+
+
+
+

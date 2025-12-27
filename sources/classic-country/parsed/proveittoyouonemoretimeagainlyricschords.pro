@@ -1,5 +1,8 @@
 {meta: title Prove It To You One More Time Again}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file proveittoyouonemoretimeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nobody blames you  don't get me [F]wrong
@@ -28,3 +31,6 @@ If we got a choice and we got a chance then we gotta [F]try
 [E7]I just hope to God that I still [F]got the heart to take it
 [G]Prove it to you [G7]one more time [C]again
 {end_of_verse}
+
+
+

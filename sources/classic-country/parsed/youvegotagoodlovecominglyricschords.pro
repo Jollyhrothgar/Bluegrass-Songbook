@@ -1,6 +1,9 @@
 {meta: title You've Got A Good Love Coming}
 {meta: artist Conway Twitty}
 {meta: composer Danny Morrison, Jeff Silbar, Van Stephenson}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotagoodlovecominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look out there's a [Dm]sunny day [G7]
@@ -38,3 +41,8 @@ Cause [C]you've got a good love [Dm]coming[G7]
 [Am]You've got a [C]good love [Dm]coming
 [C]You've got a good love [Dm]coming to [F]you tonight[C]  [Dm]
 {end_of_verse}
+
+
+
+
+

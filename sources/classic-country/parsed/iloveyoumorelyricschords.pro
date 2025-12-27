@@ -1,6 +1,9 @@
 {meta: title I Love You More}
 {meta: artist Jim Reeves}
 {meta: composer Martin Greene and Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyoumorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love you more than every [C]wave that breaks [D7]upon
@@ -22,3 +25,5 @@ For [C]every star that shines tonight my love for [G]you is just as [D7]bright
 [G]I love you more forever [C]I'll be true to [D7]you
 [G]I know you'll always [C]love me true for-ev-er [G][D7]more
 {end_of_verse}
+
+

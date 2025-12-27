@@ -1,5 +1,8 @@
 {meta: title Tennessee 1949}
 {meta: artist Larry Sparks}
+{meta: x_source manual}
+{meta: x_source_file tennessee1949.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse}
 [A]I wonder if it's [D]rainin' in the [A]mountains
@@ -15,7 +18,7 @@ Do old men sit and talk about the [A]old days
 The way they did in [E]nineteen forty- [A]-nine
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 Oh [A7]Oh, Oh [D]how I'd like to be
 [A]Back in the hills of [E]Tennessee[E7]
 [A]Oh [A7]Oh, Oh [D]it would be so fine
@@ -33,7 +36,7 @@ I barely can remember what she [A]looks like
 Thirty years a- [E]-go she was my [A]dream
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 Oh [A7]Oh, Oh [D]how I'd like to be
 [A]Back in the hills of [E]Tennessee[E7]
 [A]Oh [A7]Oh, Oh [D]it would be so fine
@@ -47,9 +50,15 @@ And [D]now I'm searching pictures in my [A]memory
 For Tennessee in [E]nineteen forty- [A]-nine
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 Oh [A7]Oh, Oh [D]how I'd like to be
 [A]Back in the hills of [E]Tennessee[E7]
 [A]Oh [A7]Oh, Oh [D]it would be so fine
 If [A]I could just go [E]back to nineteen [A]forty-nine
 {end_of_chorus}
+
+
+
+
+
+

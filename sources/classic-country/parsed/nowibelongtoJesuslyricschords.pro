@@ -1,6 +1,9 @@
 {meta: title Now I Belong To Jesus}
 {meta: artist Faron Young}
 {meta: composer Norman Clayton}
+{meta: x_source classic-country}
+{meta: x_source_file nowibelongtoJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus my [E7]Lord will [F]love me [G7]forever
@@ -29,3 +32,6 @@ Jesus belongs to [C]me
 Not for the [C7]years of [F]time alone
 [G7]But for eterni[F]ty[C]
 {end_of_verse}
+
+
+

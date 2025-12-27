@@ -1,6 +1,9 @@
 {meta: title Tiny Broken Heart}
 {meta: artist Alison Krauss with Dan Tyminski}
 {meta: composer Eddie Hill, Charlie Louvin, Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file tinybrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He was just a little farm lad so busy at [C]play
@@ -43,3 +46,8 @@ And give them all the toys [C]that dear Santa [D7]gave
 And [G]give them all my pennies in my little piggy [C]bank
 [G]Pennies that my darling [D7]help me [G]save
 {end_of_verse}
+
+
+
+
+

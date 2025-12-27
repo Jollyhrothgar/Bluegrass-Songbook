@@ -1,6 +1,9 @@
 {meta: title Carroll County Accident}
 {meta: artist Porter Wagoner}
 {meta: composer Bob Ferguson}
+{meta: x_source classic-country}
+{meta: x_source_file carrollcountyaccidentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Carroll County's pointed out as [G7]kind of square
@@ -51,3 +54,9 @@ The truth about the Carroll County [G7]accident
 Cause the county ordered dad a marble [C]monument
 I [G7]lost him in the Carroll County [C]accident
 {end_of_verse}
+
+
+
+
+
+

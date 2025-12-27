@@ -1,6 +1,9 @@
 {meta: title Tie A Yellow Ribbon Round The Old Oak Tree}
 {meta: artist Dolly Parton}
 {meta: composer Russell Brown and Irwin Levine}
+{meta: x_source classic-country}
+{meta: x_source_file tieayellowribbonroundtheoldoaktreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm coming home I've done my [Em]time 
@@ -38,3 +41,7 @@ If [Dm]I don't see a [Fm]yellow ribbon [Dm]round the old [G7]oak [C]tree
 Now the [Dm]whole dang bus is [Fm]cheering and I [C]can't believe I [A7]see 
 A [Dm]hundred yellow [Fm]ribbons tied round the old [Dm]oak [C][G7]tree
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Bury Me Till I'm Ready}
 {meta: artist Johnny Paycheck}
 {meta: composer John Moffat}
+{meta: x_source classic-country}
+{meta: x_source_file dontburymetillimreadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't bury [D7]me till I'm [G]ready
@@ -67,3 +70,12 @@ I ain’t gonna list the things that I won’t [D7]do
 Might as [C]well get it straight I’m [G]still in good shape
 Until I’m gone you can [D7]bet I’m gonna do what I [G]want to
 {end_of_verse}
+
+
+
+
+
+
+
+
+

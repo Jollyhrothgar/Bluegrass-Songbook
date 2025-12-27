@@ -1,6 +1,9 @@
 {meta: title A Place For The Lonesome}
 {meta: artist Charley Pride}
 {meta: composer James Bullington}
+{meta: x_source classic-country}
+{meta: x_source_file aplaceforthelonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a place just down the street for the lonesome
@@ -40,3 +43,8 @@ I thought I had a [F]true [C]love a [F]love that [C]would never [G7]end
 {start_of_verse: Verse 5}
 Gypsy woman will [G7]she be home [C]again
 {end_of_verse}
+
+
+
+
+

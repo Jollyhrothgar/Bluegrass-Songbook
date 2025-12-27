@@ -1,6 +1,9 @@
 {meta: title You Lied To Me}
 {meta: artist Tracy Byrd}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file youliedtomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You looked at me as only you can [C]look at me
@@ -33,3 +36,7 @@ You [G]said I'd for[D7]get you but you [G]lied to me
 {start_of_verse: Verse 5}
 Oh you said I'd for[D7]get you but you [G]lied to me
 {end_of_verse}
+
+
+
+

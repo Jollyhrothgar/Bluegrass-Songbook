@@ -1,6 +1,9 @@
 {meta: title Alibis}
 {meta: artist Tracy Lawrence}
 {meta: composer Randy Boudreaux and Tom Snow}
+{meta: x_source classic-country}
+{meta: x_source_file alibislyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She knows every [Am]move that a [F]man could make[G7]
@@ -38,3 +41,7 @@ Her [C]feeling's once [Am]came from the [F]heart
 [C]One day I [Am]gave her a [C]wedding ring[Am]
 And [Dm]one night I [F]tore all those [G7]feeling's apart
 {end_of_verse}
+
+
+
+

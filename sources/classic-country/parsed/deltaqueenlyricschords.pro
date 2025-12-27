@@ -1,6 +1,9 @@
 {meta: title Delta Queen}
 {meta: artist Ronnie Milsap}
 {meta: composer Kye Fleming and Dennis Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file deltaqueenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see her comin' '[D7]round the bend
@@ -47,3 +50,9 @@ For [F]me and my [G7]Delta [C]Queen
 {start_of_verse: Verse 5}
 [G7]Delta [C]Queen
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Love Can Make Or Break A Heart}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file lovecanmakeorbreakaheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh love can make or break a [G7]heart
@@ -48,3 +51,8 @@ True love finally came my way
 {start_of_verse: Verse 4}
 [G7]Oh love can make or break a [C]heart
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Afraid I'll Want To Love Her One More Time}
 {meta: artist Billy Crash Craddock}
 {meta: composer David Wilkins}
+{meta: x_source classic-country}
+{meta: x_source_file afraidillwanttoloveheronemoretimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't let my eyes [F]look upon her [C]body
@@ -33,3 +36,7 @@ And I'm [C]afraid I'll want to [F]love her [G7]one more [C]time
 {start_of_verse: Verse 4}
 [F]Yes I'm [C]afraid I'll want to [F]love her [G7]one more [C]time
 {end_of_verse}
+
+
+
+

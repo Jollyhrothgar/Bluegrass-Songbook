@@ -1,6 +1,9 @@
 {meta: title Matamoros}
 {meta: artist Billy Walker}
 {meta: composer Kay Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file matamoroslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In old Mexico I stand on the square in Mata[C]moros
@@ -43,3 +46,8 @@ I know [C]of the stories they’ll tell in the dim lit casinos
 They’ll [G]speak of the fight with the gringo that night in Matoa[C]moros
 And [D7]wonder what happened for he never returned any[G]more
 {end_of_verse}
+
+
+
+
+

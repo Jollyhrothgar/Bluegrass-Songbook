@@ -1,6 +1,9 @@
 {meta: title Good Intentions}
 {meta: artist Randy Travis}
 {meta: composer Merle Haggard, Randy Travis, Marvin Coe}
+{meta: x_source classic-country}
+{meta: x_source_file goodintentionslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Momma always prayed that I'd be a [F]better man than [C]daddy
@@ -42,3 +45,8 @@ But [F]momma my [G7]intentions were the [C]best
 {start_of_verse: Verse 5}
 But [F]momma my [G7]intentions were the [C]best
 {end_of_verse}
+
+
+
+
+

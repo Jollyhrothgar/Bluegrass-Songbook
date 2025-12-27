@@ -1,6 +1,9 @@
 {meta: title Son Run To The Spring}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file sonruntothespringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Daddy was working on the pipeline [C]up in [G]Pittsburg
@@ -50,3 +53,9 @@
 [G]Now she's gone where there'll [C]always be good cool [G]water
 [D7]And she'll never thirst for anything [C]no [G]more
 {end_of_verse}
+
+
+
+
+
+

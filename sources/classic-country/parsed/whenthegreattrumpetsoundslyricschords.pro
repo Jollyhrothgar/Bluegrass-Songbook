@@ -1,6 +1,9 @@
 {meta: title When The Great Trumpet Sounds}
 {meta: artist The Oak Ridge Boys}
 {meta: composer James L. Hendrix}
+{meta: x_source classic-country}
+{meta: x_source_file whenthegreattrumpetsoundslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the great trumpet sounds when the great trumpet sounds
@@ -29,3 +32,6 @@ Will I be [D7]washing out my robe in the [G]blood of the lamb
 Will I be [C]out of the mortal [G]to immortali[Em]ty
 Tell me [G]where will I [D7]be when it [G]sounds [C]oh [G]yes
 {end_of_verse}
+
+
+

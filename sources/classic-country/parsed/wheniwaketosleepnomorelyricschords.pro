@@ -1,6 +1,9 @@
 {meta: title When I Wake To Sleep No More}
 {meta: artist Ralph Stanley}
 {meta: composer Marion Easterling}
+{meta: x_source classic-country}
+{meta: x_source_file wheniwaketosleepnomorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What a glad thought some wonderful morning 
@@ -84,3 +87,21 @@ To [D7]sleep no [G]more (to sleep [C]no [G]more)
 When I wake up when I wake up
 To sleep no more (to sleep no [D7]more) 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

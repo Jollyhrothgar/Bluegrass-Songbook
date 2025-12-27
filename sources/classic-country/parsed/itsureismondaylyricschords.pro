@@ -1,6 +1,9 @@
 {meta: title It Sure Is Monday}
 {meta: artist Mark Chesnutt}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file itsureismondaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With the alarm clock ting-a-ling ringin' in my head
@@ -46,3 +49,10 @@ And then I caught a little nap stretched out in my truck bed
 {start_of_verse: Verse 8}
 [C]Yeah it's all over now and it [G7]sure is [C]Monday
 {end_of_verse}
+
+
+
+
+
+
+

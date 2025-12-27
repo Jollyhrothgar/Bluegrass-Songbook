@@ -1,6 +1,9 @@
 {meta: title Someday You'll Call My Name}
 {meta: artist Hank Williams}
 {meta: composer Jean Branch and Eddie Hill}
+{meta: x_source classic-country}
+{meta: x_source_file somedayyoullcallmynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someday you'll call my name and I won't [F]answer
@@ -29,3 +32,6 @@ When you'll [D7]need someone who will [G7]care
 [C]Someday you'll call my name and I won't [F]answer
 For [C]someday you'll [G7]find that I'm not [C]there
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title In Santa's Bag}
 {meta: artist Ferlin Husky}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file insntasbaglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]In Santa's [G]bag there's lots of toys for [C]little girls and little boys
@@ -29,3 +32,6 @@ On [D7]Christmas day in the [G]morning
 On [D7]Christmas day in the [G]morning on [A7]Christmas [D7]day in the [G]morning
 [A7]Christmas [D7]day in the [G]morning
 {end_of_verse}
+
+
+

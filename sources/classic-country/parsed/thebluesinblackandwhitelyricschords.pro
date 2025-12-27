@@ -1,6 +1,9 @@
 {meta: title The Blues In Black And White}
 {meta: artist Randy Travis}
 {meta: composer Wayland Holyfield and Verlon Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file thebluesinblackandwhitelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The writing was [A#7]on the [A7]wall baby 
@@ -40,3 +43,8 @@ The [D7]blues in [G7]black and [C]white [A#7]    [A7]
 {start_of_verse: Verse 6}
 The [D7]blues in [G7]black and [C]white
 {end_of_verse}
+
+
+
+
+

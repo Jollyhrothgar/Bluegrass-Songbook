@@ -1,6 +1,9 @@
 {meta: title Small Steps}
 {meta: artist Doug Stone}
 {meta: composer Gary Burr and Kenny Edwards}
+{meta: x_source classic-country}
+{meta: x_source_file smallstepslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last [Em]night was a [Bm]big su[D7]ccess [G]
@@ -49,3 +52,9 @@ They [Am]still get me [D7]right where I [G]wanna go
 {start_of_verse: Verse 7}
 [C]Before you know it I'll be [D7]over [C]you[D7]   [G]
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Thank God I've Got You}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file thankGodivegotyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got union dues and taxes and a [Em]mortgage due this month
@@ -40,3 +43,8 @@ I [F]just stop and [G7]thank God I've got [C]you
 {start_of_verse: Verse 5}
 I [F]just stop and [G7]thank God I've got [C]you
 {end_of_verse}
+
+
+
+
+

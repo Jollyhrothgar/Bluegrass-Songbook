@@ -1,6 +1,9 @@
 {meta: title Country Music Has Gone To Town}
 {meta: artist Norma Jean}
 {meta: composer Jimmie Driftwood}
+{meta: x_source classic-country}
+{meta: x_source_file countrymusichasgonetotownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh they say that country music's gone to [D7]town
@@ -47,3 +50,9 @@ Oh they [G]say that country [D7]music's gone to [G]town
 {start_of_verse: Verse 4}
 Oh they say that country [D7]music's gone to [G]town
 {end_of_verse}
+
+
+
+
+
+

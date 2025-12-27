@@ -1,6 +1,9 @@
 {meta: title We'll Sweep Out The Ashes}
 {meta: artist Emmylou Harris}
 {meta: composer Joyce Allsup}
+{meta: x_source classic-country}
+{meta: x_source_file wellsweepouttheasheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We know it's wrong  to let this fire burn be[F]tween us
@@ -29,3 +32,6 @@ And we'll sweep out the [C]ashes
 [F]We'll sweep out the [C]ashes
 [F]We'll sweep out the [G7]ashes in the [C]morning
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ages And Ages Ago}
 {meta: artist Slim Whitman}
 {meta: composer Gene Autry, Fred Rose, Ray Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file agesandagesagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I  remember [G7]when I made you [C]cry 
@@ -22,3 +25,5 @@ How [D7]wrong I was to let you [G7]go
 I've [C]lived a life [G7]time since we've been [C]apart
 It seems like [G7]ages and ages [C]ago
 {end_of_verse}
+
+

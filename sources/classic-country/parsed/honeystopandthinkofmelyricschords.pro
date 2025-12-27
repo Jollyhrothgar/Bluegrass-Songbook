@@ -1,6 +1,9 @@
 {meta: title Honey Stop and Think Of Me}
 {meta: artist Faron Young}
 {meta: composer Bob Belyeu and Charles Wright}
+{meta: x_source classic-country}
+{meta: x_source_file honeystopandthinkofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When that ol' moon is a-shinin' bright
@@ -39,3 +42,9 @@ When you want someone to make love to you
 {start_of_verse: Verse 6}
 [G7]So honey stop and think of me oh [C]stop
 {end_of_verse}
+
+
+
+
+
+

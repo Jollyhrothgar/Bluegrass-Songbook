@@ -1,6 +1,9 @@
 {meta: title Jesus Christ What A Man}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Billy Joe Shaver and Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file JesusChristwhatamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've heard all the [C]songs you're [G]singing today 
@@ -36,3 +39,7 @@ But you haven't [C]lived till you've [G]heard Roy Acuff
 [C]Sing me some songs about [G]Jesus my [Em]Savior 
 [C]Jesus [D7]Christ there was a [G]man
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Too Hard To Say I’m Sorry}
 {meta: artist Charley Pride}
 {meta: composer Jack Clement and Jack D. Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file toohardtosayimsorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just two words [C]were all that she would [G]ask of me
@@ -29,3 +32,6 @@ I guess I'll [D7]do the things that [G]fools do
 I'll stand and watch my dreams go [C]down the drain in my [G]stubborn way
 And as they sink I'll [D7]say I'm [G]sorry
 {end_of_verse}
+
+
+

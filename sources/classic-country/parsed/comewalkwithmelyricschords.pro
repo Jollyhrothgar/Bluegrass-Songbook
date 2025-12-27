@@ -1,6 +1,9 @@
 {meta: title Come Walk With Me}
 {meta: artist Joe Val}
 {meta: composer Burkett Graves}
+{meta: x_source classic-country}
+{meta: x_source_file comewalkwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come walk with me down lover’s [G7]lane
@@ -22,3 +25,5 @@ And dream of a [F]past that wouldn’t have [G7]last
 So come walk with [C]me down lovers [G7]lane
 Then I’ll go away for[C]ever
 {end_of_verse}
+
+

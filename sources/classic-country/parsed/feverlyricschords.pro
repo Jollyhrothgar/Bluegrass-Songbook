@@ -1,6 +1,9 @@
 {meta: title Fever}
 {meta: artist Elvis Presley}
 {meta: composer Eddie J. Cooley and John Davenport}
+{meta: x_source classic-country}
+{meta: x_source_file feverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Never know how much I [C]love you  [Dm]never know how much I [Am]care
@@ -47,3 +50,9 @@ Fever  [C]till you sizzle [E7]what a lovely way to [Am]burn
 [E7]What a lovely way to [Am]burn
 [E7]What a lovely way to [Am]burn
 {end_of_verse}
+
+
+
+
+
+

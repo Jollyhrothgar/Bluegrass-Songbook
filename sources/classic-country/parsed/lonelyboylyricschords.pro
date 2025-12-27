@@ -1,6 +1,9 @@
 {meta: title Lonely Boy}
 {meta: artist Billy Crash Craddock}
 {meta: composer Paul Anka}
+{meta: x_source classic-country}
+{meta: x_source_file lonelyboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm just a lonely boy lonely and [D7]blue
@@ -29,3 +32,6 @@ I'll make her happy just wait and [G]see
 I've prayed so hard to the heavens [D7]above
 That I'm gonna find me someone to [G]love[F]  [G]  [F]  [G]  [F]  [G]
 {end_of_verse}
+
+
+

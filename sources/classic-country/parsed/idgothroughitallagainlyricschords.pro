@@ -1,6 +1,9 @@
 {meta: title I'd Go Through It All Again}
 {meta: artist Carl Smith}
 {meta: composer Marijohn Wilkin and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file idgothroughitallagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As I sit here [C]alone just thinking [G]of you
@@ -33,3 +36,6 @@ Yes the [G]pain was small com[C]pared to life with[G]out you
 And I'd go [D7]through it all again 
 Just to [C]hold [D7]you in my [G]arms
 {end_of_verse}
+
+
+

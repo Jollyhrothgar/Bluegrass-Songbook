@@ -1,5 +1,8 @@
 {meta: title Maybe If I Close My Eyes}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file maybeificlosemyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe if I [F]close my eyes [G7]it will go [C]away
@@ -22,3 +25,5 @@ Be [G7]reasonable at my age and [F]faithful to the [C]fact
 But when I love I [F]really love yes [G7]I'll go all the [C]way
 But maybe if I [F]close my eyes [G7]it will go [C]away
 {end_of_verse}
+
+

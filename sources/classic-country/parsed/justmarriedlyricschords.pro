@@ -1,6 +1,9 @@
 {meta: title Just Married Lyrics chords}
 {meta: artist Marty Robbins}
 {meta: composer Al Allen}
+{meta: x_source classic-country}
+{meta: x_source_file justmarriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just married this mornin' how [C]happy they [D7]are
@@ -40,3 +43,7 @@ Just married written on the window of their [G]car
 It broke my heart to see [C]them drive [D7]away
 I lost the one I love [G]today
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title To Be In Love With Her}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file tobeinlovewithherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some people say that she's [E7]really no good
@@ -28,3 +31,6 @@ Dis[G7]appointments of the past
 [C]It leaves [Em]happy and [G7]makes me so [A7]proud
 To [Dm]be in [G7]love with [C]her
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Love You Honey}
 {meta: artist Patsy Cline}
 {meta: composer Eddie Miller & W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyouhoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down in Dallas near the Palace
@@ -39,3 +42,9 @@ Most [D7]of all I love your [G]automobile
 {start_of_verse: Verse 7}
 Most [D7]of all I love your [G]automobile 
 {end_of_verse}
+
+
+
+
+
+

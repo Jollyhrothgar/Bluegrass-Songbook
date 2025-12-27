@@ -1,6 +1,9 @@
 {meta: title Old Soldier}
 {meta: artist Lacy J. Dalton}
 {meta: composer Mary McFadden and Lacy J. Dalton}
+{meta: x_source classic-country}
+{meta: x_source_file oldsoldierlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw him last Friday on a big [C]concert [G]stage
@@ -41,3 +44,8 @@ You can tell an old soldier by the [D7]look in his [G]eyes
 You can tell [C]an old soldier by the look in his [G]eyes
 Seen so many [D7]battles when he sings we all [G]cry
 {end_of_verse}
+
+
+
+
+

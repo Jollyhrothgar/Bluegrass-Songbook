@@ -1,6 +1,9 @@
 {meta: title It's Raining Here This Morning}
 {meta: artist The Osborne Brothers}
 {meta: composer Grandpa Jones}
+{meta: x_source classic-country}
+{meta: x_source_file itsrainingherethismorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh it's raining raining raining here this [C]morning
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 7}
 [D7]As the Mississippi flows on to the [G]sea
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Never Stand In Your Way}
 {meta: artist Billy Walker}
 {meta: composer Fred Rose and Hy Heath}
+{meta: x_source classic-country}
+{meta: x_source_file illneverstandinyourwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you found someone [C7]new
@@ -24,3 +27,5 @@
 [F]But I'll never let it [D7]show
 [G7]Darling I'll never stand in your [C]way
 {end_of_verse}
+
+

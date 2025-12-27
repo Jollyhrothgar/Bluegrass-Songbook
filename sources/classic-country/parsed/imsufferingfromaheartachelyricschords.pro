@@ -1,6 +1,9 @@
 {meta: title I'm Suffering From A Heartache}
 {meta: artist Johnny Tillotson}
 {meta: composer Johnny Tillotson and Paul Tannen}
+{meta: x_source classic-country}
+{meta: x_source_file imsufferingfromaheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never thought that I could care the way I cared for [F]you
@@ -29,3 +32,6 @@
 [F]Oh I guess I must be crazy to love you like I [C]do
 [G7]And I'm suffering from a heartache caused by [C]you
 {end_of_verse}
+
+
+

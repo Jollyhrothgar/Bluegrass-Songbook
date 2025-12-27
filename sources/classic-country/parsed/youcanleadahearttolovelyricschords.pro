@@ -1,6 +1,9 @@
 {meta: title You Can Lead A Heart To Love}
 {meta: artist Tammy Wynette}
 {meta: composer Joe Chambers, Larry Jenkins, Mike Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file youcanleadahearttolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was [C]love at first sight when I [G]looked into his eyes
@@ -57,3 +60,10 @@ You can [D7]lead a heart to love but you can't make it fall
 You can [G]push and you can pull beat your [Em]head against the [C]wall
 You can [G]lead a heart to love [D7]but you can't make it [G]fall
 {end_of_verse}
+
+
+
+
+
+
+

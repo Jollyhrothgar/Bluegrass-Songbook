@@ -1,6 +1,9 @@
 {meta: title Lessons In Love}
 {meta: artist Hank Locklin}
 {meta: composer Peter Graves}
+{meta: x_source classic-country}
+{meta: x_source_file lessonsinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You may think you’re mighty wise
@@ -20,3 +23,4 @@ But you gotta run when the cards are down
 Cause you never learned your [D7]lesson in [G]love
 Repeat 
 {end_of_verse}
+

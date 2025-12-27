@@ -1,6 +1,9 @@
 {meta: title Don't Let True Love Slip Away}
 {meta: artist Tony Booth}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file dontlettrueloveslipawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who's gonna [F]love you after [Em]I've gone [C]away
@@ -23,3 +26,5 @@ So don't take it [F]lightly true [G7]love's the staff of [C]life
 If [F]you [C]let [F]true [C]love [G7]slip [C]away
 So [F]don't [C]let [F]true [C]love [G7]slip [C]away
 {end_of_verse}
+
+

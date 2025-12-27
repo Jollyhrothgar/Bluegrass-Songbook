@@ -1,6 +1,9 @@
 {meta: title Thankful For Your Love}
 {meta: artist Stonewall Jackson}
 {meta: composer Webb Pierce and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file thankfulforyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]After all I've [C]done you still love [G]me
@@ -29,3 +32,6 @@ You still show that [C]I'm your only [G]one
 Putting up with me I know takes [C]everything
 But don't [G]think that I'm not [D7]thankful for your [G]love
 {end_of_verse}
+
+
+

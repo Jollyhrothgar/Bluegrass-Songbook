@@ -1,6 +1,9 @@
 {meta: title Along The Mississippi}
 {meta: artist Charley Pride}
 {meta: composer Donn Tankersley and Bob Robison}
+{meta: x_source classic-country}
+{meta: x_source_file alongthemississippilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When we were young [F]along the Missi[C]ssippi 
@@ -40,3 +43,8 @@ And [G7]wonder if you're [F]coming back [C]again
 {start_of_verse: Verse 5}
 And [G7]wonder if you're [F]coming back [Am]again[F]  [C]
 {end_of_verse}
+
+
+
+
+

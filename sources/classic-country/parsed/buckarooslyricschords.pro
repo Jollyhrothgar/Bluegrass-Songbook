@@ -1,6 +1,9 @@
 {meta: title Buckaroos}
 {meta: artist Kenny Rogers}
 {meta: composer Kim Carnes and Dave Ellingson}
+{meta: x_source classic-country}
+{meta: x_source_file buckarooslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been riding all night just to get here
@@ -62,3 +65,10 @@ We're ridin' [F]shotgun with the [G7]devil we're the [C]buckaroos
 We're ridin' [F]shotgun with the [G7]devil we're the [C]buckaroos
 We're ridin' [F]shotgun with the [G7]devil we're the [C]buckaroos
 {end_of_verse}
+
+
+
+
+
+
+

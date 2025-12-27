@@ -1,6 +1,9 @@
 {meta: title Don't Say A Word}
 {meta: artist Dottie West}
 {meta: composer Geoff Stephens and Les Reed}
+{meta: x_source classic-country}
+{meta: x_source_file dontsayawordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't say a word [E7]just kiss [F]me
@@ -27,3 +30,6 @@
 [C]And when you're gone please miss [F]me
 [F#m]Miss me [Dm]miss me with [G7]all of [C]your [C][F]heart
 {end_of_verse}
+
+
+

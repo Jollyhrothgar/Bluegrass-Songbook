@@ -1,6 +1,9 @@
 {meta: title Just A Foolish Notion}
 {meta: artist Curtis Potter}
 {meta: composer Dallas Frazier and Buddy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file justafoolishnotionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ever since you left me I've been waiting for your [G7]call
@@ -29,3 +32,6 @@
 [C]I wouldn't let myself believe your love had let me [F]go
 [C]It was just a foolish [G7]notion now I [C]know
 {end_of_verse}
+
+
+

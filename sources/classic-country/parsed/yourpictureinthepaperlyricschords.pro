@@ -1,6 +1,9 @@
 {meta: title Your Picture In The Paper}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file yourpictureinthepaperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw your picture in the [C]paper Sunday [G]morning
@@ -33,3 +36,6 @@ But [G]now you've made your bed and I [C]hope you lie well [G]in it
 And I hope you'll both be happy you see [D7]I still lie well [G]too
 I saw your picture in the [C]paper Sunday [G]morning
 {end_of_verse}
+
+
+

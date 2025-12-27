@@ -1,6 +1,9 @@
 {meta: title World I Used To Know}
 {meta: artist Eddy Arnold}
 {meta: composer Rod McKuen}
+{meta: x_source classic-country}
+{meta: x_source_file worldiusedtoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some day some old familiar [Em]rain [F]
@@ -28,3 +31,5 @@ Then I'll be leaving you be[Em]hind
 But till that [Em]day  [F]I'll be your [C]man 
 Then love [F]away [C]your [G7]troubles if I [C]can [F]   [C]
 {end_of_verse}
+
+

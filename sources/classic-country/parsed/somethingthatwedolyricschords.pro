@@ -1,6 +1,9 @@
 {meta: title Something That We Do}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file somethingthatwedolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I remember well the day we wed I can see that [C]picture in my [G]head
@@ -48,3 +51,9 @@ Love [C]isn't just those [G]words we said it's [Am]something [D7]that we [G]do
 There's [C]no request too [G]big or small we [Am]give ourselves we [G]give our all
 [Am]Love isn't someplace [G]that we fall it's [Am]something [D7]that we [G]do
 {end_of_verse}
+
+
+
+
+
+

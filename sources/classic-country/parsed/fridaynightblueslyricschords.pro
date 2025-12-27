@@ -1,6 +1,9 @@
 {meta: title Friday Night Blues}
 {meta: artist John Conlee}
 {meta: composer Sonny Throckmorton and Rafe Vanhoy}
+{meta: x_source classic-country}
+{meta: x_source_file fridaynightblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He's been working all week he's got mental fatigue
@@ -57,3 +60,10 @@ As he kicks off his shoes for the six o-clock news
 [D7]Oh and there ain't a lady that I ever knew
 [Am7]Who didn't need [D7]her a night on the [G]town
 {end_of_verse}
+
+
+
+
+
+
+

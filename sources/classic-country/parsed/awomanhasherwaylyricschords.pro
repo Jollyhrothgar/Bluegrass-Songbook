@@ -1,6 +1,9 @@
 {meta: title A Woman Has Her Way}
 {meta: artist Clint Black}
 {meta: composer Clint Black, Jerry Williams, David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file awomanhasherwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a world of confusion I [F]followed my [C]heart 
@@ -29,3 +32,6 @@ Love a [F]lady a [C]lifetime you [D7]still might not [G7]see
 There's [F]no use in [C]trying you won't [F]have any [C]say
 But a [F]man has his [C]will but a [D7]woman [G7]has her [C]way
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title San Antonio Champagne}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file sanantoniochampagnelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was queen of the social world [F]in San An[D7]tone
@@ -33,3 +36,7 @@ But [G7]you can’t mix El Paso wine with San Antonia [C]champagne
 {start_of_verse: Verse 5}
 You [G7]can’t mix El Paso wine with San Antonia [C]champagne
 {end_of_verse}
+
+
+
+

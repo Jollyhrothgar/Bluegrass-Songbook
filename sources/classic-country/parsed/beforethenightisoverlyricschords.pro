@@ -1,6 +1,9 @@
 {meta: title Before The Night Is Over}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file beforethenightisoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can tell by the way you're a little bit [C]lonely just like Jerry Lee
@@ -35,3 +38,6 @@ So we [G]will will come together as close as [C]fingers in a [E7]glove
 And [G]before the night is [D7]over I said [G]before the night is [C]over
 Hey girl [G]before the night is [D7]over you’re gonna be in [C]lov[G]e
 {end_of_verse}
+
+
+

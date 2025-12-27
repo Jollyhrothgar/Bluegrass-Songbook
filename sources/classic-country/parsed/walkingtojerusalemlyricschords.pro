@@ -1,6 +1,9 @@
 {meta: title Walking To Jerusalem}
 {meta: artist Tracy Byrd}
 {meta: composer Sam Hogin and Mark D. Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file walkingtojerusalemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I dressed up in my best my [G7]Ropers and my vest
@@ -53,3 +56,8 @@ By the [G7]time you tell me I'm the one
 And [C]walking [G7]to Jerusa[C]lem
 And walking [G7]to Jerusa[C]lem  walking [G7]to Jerusa[C]lem
 {end_of_verse}
+
+
+
+
+

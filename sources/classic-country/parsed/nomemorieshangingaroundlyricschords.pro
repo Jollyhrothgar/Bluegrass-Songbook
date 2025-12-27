@@ -1,6 +1,9 @@
 {meta: title No Memories Hanging Around}
 {meta: artist Bobby Bare & Roseanne Cash}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file nomemorieshangingaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You don't want no more [D7]heartaches
@@ -38,3 +41,7 @@ The days just come and [D7]disappear
 {start_of_verse: Verse 5}
 [C]We don't need no [D7]memories hanging [G]round
 {end_of_verse}
+
+
+
+

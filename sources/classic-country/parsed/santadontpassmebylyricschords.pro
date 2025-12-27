@@ -1,6 +1,9 @@
 {meta: title Santa Don't Pass Me By}
 {meta: artist Freddy Fender}
 {meta: composer Murphy M. Maddux Jr. and Huey Meaux}
+{meta: x_source classic-country}
+{meta: x_source_file santadontpassmebylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna hitch a ride with old Saint Nick
@@ -31,3 +34,7 @@ We'll have lots of toys for girls and boys
 {start_of_verse: Verse 4}
 [D7]Yes I'll be home for Christmas if there's room on Santa's [G]sleigh
 {end_of_verse}
+
+
+
+

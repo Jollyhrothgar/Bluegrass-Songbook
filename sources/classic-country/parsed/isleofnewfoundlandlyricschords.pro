@@ -1,5 +1,8 @@
 {meta: title Isle Of Newfoundland}
 {meta: artist Singers For Fishermen}
+{meta: x_source classic-country}
+{meta: x_source_file isleofnewfoundlandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the cold Canadian waters [F]north from the coast of Maine
@@ -42,3 +45,7 @@ This little isle called [C]Newfoundland [G7]oh I'd sure love to see it [C]again
 {start_of_verse: Verse 4}
 To [F]live again in [C]Newfoundland my [G7]home of childhood [C]times
 {end_of_verse}
+
+
+
+

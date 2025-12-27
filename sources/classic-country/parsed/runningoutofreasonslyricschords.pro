@@ -1,6 +1,9 @@
 {meta: title Running Out Of Reasons}
 {meta: artist Mickey Gilley}
 {meta: composer J. W. Gostick and R.E. Westmoreland}
+{meta: x_source classic-country}
+{meta: x_source_file runningoutofreasonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby you don't love me [G7]perhaps you don't care
@@ -26,3 +29,6 @@ But I'm running out of [C]reasons [G7]to want you back [C]again
 {start_of_verse: Verse 4}
 [F]Yes I'm running out of [C]reasons [G7]to want you back [C]again
 {end_of_verse}
+
+
+

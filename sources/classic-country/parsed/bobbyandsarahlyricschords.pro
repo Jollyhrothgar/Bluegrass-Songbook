@@ -1,6 +1,9 @@
 {meta: title Bobby And Sarah}
 {meta: artist Rhonda Vincent}
 {meta: composer Irl Hees}
+{meta: x_source classic-country}
+{meta: x_source_file bobbyandsarahlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It started out a dream young Bobby 17
@@ -34,3 +37,5 @@ Now Bobby's got a wife he's happy with his life
 [C]Now there's Joe and little Mary
 [G7]He couldn't turn her [C]down
 {end_of_verse}
+
+

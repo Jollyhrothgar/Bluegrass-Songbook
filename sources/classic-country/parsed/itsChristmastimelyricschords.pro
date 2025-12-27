@@ -1,5 +1,8 @@
 {meta: title It's Christmas Time}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file itsChristmastimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]It's Christmas time [C]blissful time 
@@ -43,3 +46,9 @@ Snow[G7]flakes are [C]falling [G7]hills and meadows are [C]white
 It's [F]Christmas time [C]blissful time 
 It's Christmas [G7]time a[C]gain
 {end_of_verse}
+
+
+
+
+
+

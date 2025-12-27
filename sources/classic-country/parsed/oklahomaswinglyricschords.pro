@@ -1,6 +1,9 @@
 {meta: title Oklahoma Swing}
 {meta: artist Reba McEntire}
 {meta: composer Tim Dubois and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file oklahomaswinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a redhead from my hometown that [C]loves to let her hair down
@@ -47,3 +50,9 @@ Sit [F]back and we're gonna [C]show ya
 {start_of_verse: Verse 5}
 Yeah [D7]how to do that [G]Oklahoma [C]swing
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Just One Drink Away}
 {meta: artist Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file justonedrinkawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I moved down to Houston
@@ -48,3 +51,8 @@ So bring me one more tonic
 Cause I'm always just one [C]drink away
 From [G7]loving you [C]again
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Last Train To Glory}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Walter Carter}
+{meta: x_source classic-country}
+{meta: x_source_file lasttraintoglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It came last [C]night as I was [G]sleeping[C]
@@ -54,3 +57,10 @@ Get on [Em]board it's the [D7]last train to [C]glory
 {start_of_verse: Verse 6}
 [Am]Lay your burdens [C]down [D7] get on [G]board
 {end_of_verse}
+
+
+
+
+
+
+

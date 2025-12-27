@@ -1,5 +1,8 @@
 {meta: title Pretend You Just Don't Know Me}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file pretendyoujustdontknowmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The next time that you see me please don't even [C]speak
@@ -26,3 +29,6 @@ And [A7]if we ever meet again I'll [D7]beg for another start
 [G]I didn't mean to cheat on her but I cheated just the [C]same
 To pretend I just don't [G]know her is like [D7]forgetting my own [G]name
 {end_of_verse}
+
+
+

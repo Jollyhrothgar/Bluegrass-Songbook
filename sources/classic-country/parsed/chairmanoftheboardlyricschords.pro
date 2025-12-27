@@ -1,6 +1,9 @@
 {meta: title Chairman Of The Board}
 {meta: artist Red Sovine}
 {meta: composer Jerry Crutchfield and Buck Maxwell}
+{meta: x_source classic-country}
+{meta: x_source_file chairmanoftheboardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I dreamed this heart of mine was [G7]chairman of the [C]board
@@ -39,3 +42,8 @@
 [C7]Love can be kind love can be [F]cruel
 [C]Love can fool a hurt and [G7]love can hurt a [C]fool
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Day To Day (Tear To Tear)}
 {meta: artist Jean Shepard}
 {meta: composer Johnny Russell and Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file daytodayteartotearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All my friends told me someday [F]you'd leave [C]me
@@ -31,3 +34,7 @@
 {start_of_verse: Verse 5}
 [G7]Yes I just live from day to day tear to [C]tear
 {end_of_verse}
+
+
+
+

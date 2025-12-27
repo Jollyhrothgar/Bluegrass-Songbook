@@ -1,6 +1,9 @@
 {meta: title Congratulations}
 {meta: artist Faron Young}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file congratulationslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can tell that you're already growing tired [F]of me
@@ -29,3 +32,6 @@ How [D7]does it feel to be the Queen of [G7]Misery
 [C]If you started out to break this heart inside of [F]me
 Congratulations [G7]to you dear you're doing [C]fine
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Living Too Close To The Ground}
 {meta: artist Everly Brothers}
 {meta: composer Terry Slater}
+{meta: x_source classic-country}
+{meta: x_source_file livingtooclosetothegroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Listen and [G7]hear each word [C]stop
@@ -37,3 +40,6 @@ Her [D7]heart was the [G7]image of [F]mine
 Ah but [C]my wings just [G7]couldn't be [A7]found
 I was [F]living too [G7]close to the [C]ground
 {end_of_verse}
+
+
+

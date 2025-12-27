@@ -1,5 +1,8 @@
 {meta: title This Lonesome Old Feeling}
 {meta: artist Larry Sparks}
+{meta: x_source classic-country}
+{meta: x_source_file thislonesomeoldfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My [C7]heart is [F]breakin’ and there's tears in my [C]eyes
@@ -32,3 +35,7 @@ With no love of my [G7]own now that you're [C]gone
 {start_of_verse: Verse 4}
 With no love of my [G7]own now that you're [C]gone
 {end_of_verse}
+
+
+
+

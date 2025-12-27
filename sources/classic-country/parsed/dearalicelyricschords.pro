@@ -1,6 +1,9 @@
 {meta: title Dear Alice}
 {meta: artist Johnny Lee}
 {meta: composer Lewis Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file dearalicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear Alice [F]I got your [C]letter yesterday
@@ -36,3 +39,7 @@ No you [Em]didn't want to [F]be
 [Dm]You didn't want to [G7]be my [F]wife[Fm]
 I love [C]you   goodbye
 {end_of_verse}
+
+
+
+

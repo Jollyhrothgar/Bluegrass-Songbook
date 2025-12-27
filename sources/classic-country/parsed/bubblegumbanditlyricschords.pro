@@ -1,6 +1,9 @@
 {meta: title Bubblegum Bandit}
 {meta: artist Jim Ed Brown}
 {meta: composer Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file bubblegumbanditlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7](He's the bubblegum [G]bandit)
@@ -61,3 +64,12 @@ Bubblegum bandit (bubblegum bandit)
 Bubble gum bubble gum bandit
 [D7]He's the bubblegum [G]bandit
 {end_of_verse}
+
+
+
+
+
+
+
+
+

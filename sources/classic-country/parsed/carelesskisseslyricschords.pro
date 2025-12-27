@@ -1,5 +1,8 @@
 {meta: title Careless Kisses}
 {meta: artist Red Foley}
+{meta: x_source classic-country}
+{meta: x_source_file carelesskisseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your careless kisses your careless [F]kisses
@@ -28,3 +31,6 @@
 [C]Who share your kisses your careless [F]kisses
 [C]That's [G7]causing me to care less for [C]you
 {end_of_verse}
+
+
+

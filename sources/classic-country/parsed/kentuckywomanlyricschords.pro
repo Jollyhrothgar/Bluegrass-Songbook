@@ -1,6 +1,9 @@
 {meta: title Kentucky Woman}
 {meta: artist Waylon Jennings}
 {meta: composer Neil Diamond}
+{meta: x_source classic-country}
+{meta: x_source_file kentuckywomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Kentucky [C]woman she shines with her own [G]kind of light [C]  [D7]   [G]
@@ -27,3 +30,6 @@ Repeat last verse
 {start_of_verse: Verse 4}
 Kentucky [C]wo[G]man Kentucky [C]wo[G]man
 {end_of_verse}
+
+
+

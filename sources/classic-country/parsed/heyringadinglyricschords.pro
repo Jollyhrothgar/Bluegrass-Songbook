@@ -1,6 +1,9 @@
 {meta: title Hey Ring-A-Ding}
 {meta: artist Connie Francis}
 {meta: composer Eddie Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file heyringadinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey ring-a-ding [D7]what are you doing this [G]evening
@@ -35,3 +38,7 @@
 [G]Hey ring-a-ding [D7]let it [G]be [C]now
 [G]Hey ring-a-ding [D7]let it [G]be [G][C]now
 {end_of_verse}
+
+
+
+

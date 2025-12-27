@@ -1,6 +1,9 @@
 {meta: title Till I Found You}
 {meta: artist Marty Stuart}
 {meta: composer Paul Kennerly and Hank DeVito}
+{meta: x_source classic-country}
+{meta: x_source_file tillifoundyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was a young man I thought I knew everything
@@ -37,3 +40,9 @@ I used to get around some I thought I'd seen everything
 [F]Baby it's [G7]true  till I found [C]you
 [F]Baby it's [G7]true till I found [C]you
 {end_of_verse}
+
+
+
+
+
+

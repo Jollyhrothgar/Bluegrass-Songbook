@@ -1,5 +1,8 @@
 {meta: title Blame It On The Times}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file blameitonthetimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As you sit there in your [F]loneliness  [C]confused as you must [G7]be
@@ -28,3 +31,6 @@
 [C]So if at last [F]I'm seeing  [C]after so long being [G7]blind
 [F]I suppose you'll have to [G7]blame it on the [C]times
 {end_of_verse}
+
+
+

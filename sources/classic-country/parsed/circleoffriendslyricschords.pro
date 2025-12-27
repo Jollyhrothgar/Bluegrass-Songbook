@@ -1,6 +1,9 @@
 {meta: title Circle Of Friends}
 {meta: artist Leona Williams}
 {meta: composer Naomi Martin}
+{meta: x_source classic-country}
+{meta: x_source_file circleoffriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did you hear the story of [D7]Jean and John [G]Jones
@@ -43,3 +46,8 @@ When they got with the [C]couple next [G]door
 It [C]came out real [G]neat [C]rich and [G]complete   
 With exactly two [D7]tables of [G]four 
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Better Class Of Losers}
 {meta: artist Randy Travis}
 {meta: composer Randy Travis and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file betterclassofloserslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gettin' out of this high rise [C]penthouse [G]suite
@@ -44,3 +47,8 @@ And who [A7]buy their coffee beans already [D7]ground
 {start_of_verse: Verse 5}
 Yes a better class of [D7]loser just suits me [G]fine
 {end_of_verse}
+
+
+
+
+

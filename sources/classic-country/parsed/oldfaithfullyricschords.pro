@@ -1,5 +1,8 @@
 {meta: title Old Faithful}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file oldfaithfullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I always [C]called her Old [G]Faithful
@@ -34,3 +37,7 @@ And old [C]faithful ain’t [D7]faithful [G]anymore
 {start_of_verse: Verse 4}
 And old [C]faithful ain’t [D7]faithful [G]anymore
 {end_of_verse}
+
+
+
+

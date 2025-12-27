@@ -1,6 +1,9 @@
 {meta: title Time Changes Everything}
 {meta: artist Bob Wills}
 {meta: composer Tommy Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file timechangeseverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There Was a time When I Thought of no [G7]other 
@@ -36,3 +39,7 @@ I can't say we won't love [C]again
 You have gone your way and [C7]I'll go [F]mine
 Cause [C]Time changes eve [D7]- ry [C][G7]thing
 {end_of_verse}
+
+
+
+

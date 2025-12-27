@@ -1,6 +1,9 @@
 {meta: title Live And Let Live And Be Happy}
 {meta: artist George Morgan}
 {meta: composer Dexter Sanger and William Ellis}
+{meta: x_source classic-country}
+{meta: x_source_file liveandletliveandbehappylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Live and let live and be happy
@@ -66,3 +69,11 @@ And you'll be happier [C]too
 [G7]Live and let live and be happy
 And you'll be happier [C]too
 {end_of_verse}
+
+
+
+
+
+
+
+

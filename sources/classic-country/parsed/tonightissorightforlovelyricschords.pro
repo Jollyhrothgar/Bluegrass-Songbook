@@ -1,6 +1,9 @@
 {meta: title Tonight Is So Right For Love}
 {meta: artist Elvis Presley}
 {meta: composer Sid Wayne and Abner Silver}
+{meta: x_source classic-country}
+{meta: x_source_file tonightissorightforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hold me tight the [G7]moon's so bright 
@@ -37,3 +40,7 @@ And how real they would [G7]seem a midsummer night's [C]dream
 Hold me tight the [G7]moon's so bright 
 [D7]Tonight is [G7]right for [C]love
 {end_of_verse}
+
+
+
+

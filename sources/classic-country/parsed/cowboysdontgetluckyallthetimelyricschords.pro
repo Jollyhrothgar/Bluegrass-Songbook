@@ -1,6 +1,9 @@
 {meta: title Cowboys Don't Get Lucky All The Time}
 {meta: artist Gene Watson}
 {meta: composer Dallas Harms}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysdontgetluckyallthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He met her in a honky tonk
@@ -49,3 +52,9 @@ Tag:
 [G7]And the moral of this story
 [C]Is cowboys don’t get lucky all the time
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title A Whole Lot Of Love}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file awholelotoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We live on a [C]farm in Tennes[Am]see
@@ -56,3 +59,10 @@ We have the sun of mornings [C]and the moon of nights
 [G]It rains but [C]not too much
 We [G]got a [D7]whole lot of [G]love
 {end_of_verse}
+
+
+
+
+
+
+

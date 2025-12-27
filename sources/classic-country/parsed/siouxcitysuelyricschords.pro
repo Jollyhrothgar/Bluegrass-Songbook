@@ -1,6 +1,9 @@
 {meta: title Sioux City Sue}
 {meta: artist Moe Bandy}
 {meta: composer Ray Freedman and Dick Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file siouxcitysuelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sioux City Sue [D7]Sioux City Sue
@@ -46,3 +49,8 @@ As my sweet Sioux City [C]Sue
 {start_of_verse: Verse 4}
 There [G7]ain't no gal as true as my sweet Sioux City [C]Sue
 {end_of_verse}
+
+
+
+
+

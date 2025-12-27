@@ -1,5 +1,8 @@
 {meta: title Don't Get Along With The Blues}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file dontgetalongwiththeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I woke up this [D7]morning [C]holding my [G]head
@@ -26,3 +29,5 @@ I [C]can't feel at [D7]home without [G]you
 And I [C]don't get [D7]along with the [G]blues
 Repeat last verse
 {end_of_verse}
+
+

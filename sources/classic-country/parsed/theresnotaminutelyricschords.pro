@@ -1,6 +1,9 @@
 {meta: title There's Not A Minute}
 {meta: artist Ricky Nelson}
 {meta: composer Clint Ballard and Fred Tobias}
+{meta: x_source classic-country}
+{meta: x_source_file theresnotaminutelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the morning when I wake and see your [G7]picture
@@ -31,3 +34,6 @@
 [G7]There's [F]not a minute [Em]that it [Dm]doesn't [C]hurt
 [G7]There's [F]not a minute [Em]that it [Dm]doesn't [C]hurt
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title 18 Wheels Humming Home Sweet Home}
 {meta: artist Mac Wiseman}
 {meta: composer Jim Fagan}
+{meta: x_source classic-country}
+{meta: x_source_file 18wheelshumminghomesweethomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With raindrops on my [G7]windshield and [F]teardrops on my [C]steering wheel
@@ -40,3 +43,8 @@ With [F]18 wheels a [G7]humming home sweet [C]home
 {start_of_verse: Verse 5}
 With [F]18 wheels a [G7]humming home sweet [C]home
 {end_of_verse}
+
+
+
+
+

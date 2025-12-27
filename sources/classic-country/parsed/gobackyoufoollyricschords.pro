@@ -1,6 +1,9 @@
 {meta: title Go Back You Fool}
 {meta: artist Faron Young}
 {meta: composer Donald Robertson and Hal Blair}
+{meta: x_source classic-country}
+{meta: x_source_file gobackyoufoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re heading down a lonely road that [F]someday you’ll [C]regret
@@ -29,3 +32,6 @@ If [F]you don’t believe in what I say [C]just look at [G7]me
 I [C]passed the door to heaven in [F]search of [C]paradise
 Go back you fool  [G7]take another fools [C]advice
 {end_of_verse}
+
+
+

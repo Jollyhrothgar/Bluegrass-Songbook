@@ -1,5 +1,8 @@
 {meta: title Sea Of Heartbreak}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file seaofheartbreaklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The lights in the [Em]harbor  [C]don't shine for [D7]me
@@ -41,3 +44,9 @@ Memories of your [G]caress  so divine  how I [C]wish
 You were mine again [G]my dear  I'm on a sea of [D7]tears
 A sea of [G]heartbreak
 {end_of_verse}
+
+
+
+
+
+

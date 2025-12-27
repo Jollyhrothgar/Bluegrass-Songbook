@@ -1,6 +1,9 @@
 {meta: title Holly Leaves And Christmas Trees}
 {meta: artist Elvis Presley}
 {meta: composer Glen Dale Spreen and Bobby G. West}
+{meta: x_source classic-country}
+{meta: x_source_file hollyleavesandChristmastreeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere in  in the [Dm]distant night
@@ -27,3 +30,5 @@ The [G7]sound of snow be[C]neath my feet
 [F]Holly leaves and [G7]Christmas trees
 [F]Use to mean so [C]much to me
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Just To Satisfy The Weakness In A Man}
 {meta: artist Loretta Lynn}
 {meta: composer Carol Jones}
+{meta: x_source classic-country}
+{meta: x_source_file justtosatisfytheweaknessinamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I realize how difficult it is for you to take me as I [Dm]am
@@ -36,3 +39,7 @@ Oh you know it seems so funny that the story should end as it [Dm]began
 But my one big mistake in life was lettin' down [G7]my strength
 Just to satisfy the weakness in a [C]man
 {end_of_verse}
+
+
+
+

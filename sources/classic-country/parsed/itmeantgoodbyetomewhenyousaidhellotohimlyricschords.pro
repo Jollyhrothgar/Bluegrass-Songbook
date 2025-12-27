@@ -1,6 +1,9 @@
 {meta: title It Meant Goodbye To Me When You Said Hello To Him}
 {meta: artist Merle Haggard}
 {meta: composer Lefty Frizzell and Abe Mulkey}
+{meta: x_source classic-country}
+{meta: x_source_file itmeantgoodbyetomewhenyousaidhellotohimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hmm hmm [G7]hmm   hmm hmm hmm  hmm hmm hmm  hmm hmm [C]hmm
@@ -29,3 +32,6 @@ Is there anywhere to go where a broken heart won't show
 [G7]Cause it meant goodbye to me when she said hello to [C]him
 [G7]Hmm hmm hmm   hmm hmm hmm  hmm hmm hmm  hmm hmm [C]hmm
 {end_of_verse}
+
+
+

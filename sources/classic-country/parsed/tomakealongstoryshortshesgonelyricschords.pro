@@ -1,6 +1,9 @@
 {meta: title To Make A Long Story Short (She's Gone)}
 {meta: artist Willie Nelson}
 {meta: composer Willie Nelson and Fred Foster}
+{meta: x_source classic-country}
+{meta: x_source_file tomakealongstoryshortshesgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I see nothing to be [D7]gained by ex[G]planations
@@ -23,3 +26,5 @@ I [G]won't try to give the reasons why I [C]miss her so
 To make a [G]long story [D7]short she's [G]gone
 To make a long story [D7]short she's [G]gone
 {end_of_verse}
+
+

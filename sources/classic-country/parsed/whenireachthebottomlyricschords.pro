@@ -1,6 +1,9 @@
 {meta: title When I Reach The Bottom}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Lorene Allen}
+{meta: x_source classic-country}
+{meta: x_source_file whenireachthebottomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You want me to come down to your level 
@@ -56,3 +59,9 @@ So [F]when I reach the [C]bottom
 But [F]when I reach the [C]bottom 
 [G7]You'd better be [C]there
 {end_of_verse}
+
+
+
+
+
+

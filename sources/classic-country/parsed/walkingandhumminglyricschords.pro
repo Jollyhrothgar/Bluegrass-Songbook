@@ -1,6 +1,9 @@
 {meta: title Walking And Humming}
 {meta: artist Ferlin Husky}
 {meta: composer Clyde Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file walkingandhumminglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I feel so alone as I [F]walk from my [C]home
@@ -36,3 +39,7 @@ You [F]just feel like [G7]walking
 [F]And keep on a [C]humming
 Hum [F]hum hum [C]hummm 
 {end_of_verse}
+
+
+
+

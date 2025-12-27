@@ -1,5 +1,8 @@
 {meta: title Love Don’t Grow On Trees}
 {meta: artist Johnny Burke}
+{meta: x_source classic-country}
+{meta: x_source_file lovedontgrowontreeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How could I have ever just let you walk [G7]away
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [G7]Lord I found out the hard way that love don't grow on [C]trees
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Can't Forget About You}
 {meta: artist Alabama}
 {meta: composer Teddy Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file cantforgetaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The walls of my mind  [G7]are closin' [C]in
@@ -34,3 +37,7 @@ Breakin' my [D7]mind in three quarter time makin' me [G]blue
 Can't forget about [G7]you can't forget about [C]you
 [D7]I never stop hearing the music after the [G]song is through
 {end_of_verse}
+
+
+
+

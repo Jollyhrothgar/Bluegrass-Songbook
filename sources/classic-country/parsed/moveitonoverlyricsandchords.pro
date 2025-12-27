@@ -1,5 +1,8 @@
 {meta: title Move It On Over}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file moveitonoverlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Came in last night about a half past ten
@@ -56,3 +59,9 @@ So shove it on over (move it on over)
 Sweep it on over (move it on over)
 Move over cold dog cause a hot dog's moving in
 {end_of_verse}
+
+
+
+
+
+

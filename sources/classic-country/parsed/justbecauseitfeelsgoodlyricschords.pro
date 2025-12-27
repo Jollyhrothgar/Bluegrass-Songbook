@@ -1,6 +1,9 @@
 {meta: title Just Because It Feels Good}
 {meta: artist Ronnie Milsap}
 {meta: composer Waylon D. Holyfield, Robert Lee McDill}
+{meta: x_source classic-country}
+{meta: x_source_file justbecauseitfeelsgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One more round of [D7]drinks is on the [G]table
@@ -40,3 +43,8 @@ But [G]just [D7]because it [Em]feels [C]good [G]that don't [D7]make it [G]right
 {start_of_verse: Verse 5}
 [C]No [G]just [D7]because it [Em]feels [C]good [G]that don't [D7]make it [G]right
 {end_of_verse}
+
+
+
+
+

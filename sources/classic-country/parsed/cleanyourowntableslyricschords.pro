@@ -1,6 +1,9 @@
 {meta: title Clean Your Own Tables}
 {meta: artist Stonewall Jackson}
 {meta: composer Chip Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file cleanyourowntableslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now clean your own tables boys pour your own beer
@@ -46,3 +49,11 @@ And some say I should take more pride in what I am
 [G7]Yeah drink to a use to be barmaid
 [C]And clean your own tables this time
 {end_of_verse}
+
+
+
+
+
+
+
+

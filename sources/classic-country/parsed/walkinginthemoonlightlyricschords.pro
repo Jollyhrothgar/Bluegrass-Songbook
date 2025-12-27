@@ -1,6 +1,9 @@
 {meta: title Walking In The Moonlight}
 {meta: artist Don Gibson}
 {meta: composer Johnnie Masters and Muriel Deason Wright}
+{meta: x_source classic-country}
+{meta: x_source_file walkinginthemoonlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [F]never liked to [C]be alone [G7]I like compa[C]ny
@@ -41,3 +44,10 @@
 [C]Walking in the moonlight [G7]talking in the moonlight 
 [C]Spooning in the moonlight a [G7]pretty little girl with [C]me
 {end_of_verse}
+
+
+
+
+
+
+

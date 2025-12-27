@@ -1,6 +1,9 @@
 {meta: title The Only Girl I Can’t Forget}
 {meta: artist Carl Smith}
 {meta: composer Del & Ellen Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file theonlygirlicantforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I saw her yesterday just [C]for a little [G]while 
@@ -29,3 +32,6 @@ I've [A7]convinced [D7]everyone but me
 [G]I've mastered my [C]emotions now and [G]yet 
 She's [C]still the only girl [D7]I can't [G]forget 
 {end_of_verse}
+
+
+

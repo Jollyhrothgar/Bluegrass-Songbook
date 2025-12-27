@@ -1,6 +1,9 @@
 {meta: title I Ain't Afraid Of Dying}
 {meta: artist John Anderson}
 {meta: composer Dean Dillon and John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file iaintafraidofdyinglyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the name of [Am]progress
@@ -44,3 +47,8 @@
 [F]Will [G7]believe that's [C]right
 Repeat #3,4,3,4
 {end_of_verse}
+
+
+
+
+

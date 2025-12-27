@@ -1,6 +1,9 @@
 {meta: title Lawdy Miss Clawdy}
 {meta: artist Elvis Presley}
 {meta: composer Lloyd Price}
+{meta: x_source classic-country}
+{meta: x_source_file lawdymissclawdylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well lawdy lawdy lawdy Miss Clawdy
@@ -36,3 +39,7 @@ Girl I [C]won't be coming no more
 Goodbye [G]little darling 
 [D7]Down the road I'll [G]go
 {end_of_verse}
+
+
+
+

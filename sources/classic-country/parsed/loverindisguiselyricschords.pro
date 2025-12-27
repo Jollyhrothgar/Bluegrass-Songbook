@@ -1,6 +1,9 @@
 {meta: title Lover In Disguise}
 {meta: artist George Strait}
 {meta: composer Blake Mevis and Jim Dowell}
+{meta: x_source classic-country}
+{meta: x_source_file loverindisguiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]There's a [C]secret that I know bout [Em]the lady I love so
@@ -39,3 +42,7 @@ She's a [G7]lover in dis[Am]guise
 {start_of_verse: Verse 4}
 [F]She's a [G7]lover in dis[Am]guise  [F]she's a [G7]lover in dis[Am]guise
 {end_of_verse}
+
+
+
+

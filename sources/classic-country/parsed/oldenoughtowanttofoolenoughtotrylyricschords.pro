@@ -1,5 +1,8 @@
 {meta: title Old Enough To Want To (Fool Enough To Try)}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file oldenoughtowanttofoolenoughtotrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hope that gleam that [Am]you have in your [C]eyes
@@ -26,3 +29,6 @@ I'm old enough to [C]want to [G7]and fool enough to [C]try
 {start_of_verse: Verse 4}
 [F]I'm old enough to [C]want to [G7]and fool enough to [C]try
 {end_of_verse}
+
+
+

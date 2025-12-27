@@ -1,6 +1,9 @@
 {meta: title Step Into My Soul}
 {meta: artist Johnny Paycheck}
 {meta: composer Johnny Paycheck and Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file stepintomysoullyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you could step into my soul 
@@ -36,3 +39,7 @@ Where you [C7]long for just a [F]smile
 Yes I'm what you could [C]turn into 
 If [G7]you let your memories run [Am]wild [G7]   [C]
 {end_of_verse}
+
+
+
+

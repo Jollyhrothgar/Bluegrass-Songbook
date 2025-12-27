@@ -1,6 +1,9 @@
 {meta: title I Heard A Heart Break}
 {meta: artist Jim Reeves}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file iheardaheartbreaklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard the pitter patter  of a slow winter rain
@@ -27,3 +30,6 @@
 [C]For I knew in my heart you'd [G]never be [C]mine
 [G]And I heard [D7]a heart break last [G]night
 {end_of_verse}
+
+
+

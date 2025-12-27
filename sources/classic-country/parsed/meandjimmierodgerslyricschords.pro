@@ -1,6 +1,9 @@
 {meta: title Me And Jimmie Rodgers}
 {meta: artist Ray Price}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file meandjimmierodgerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Me and Jimmie [C]Rodgers used to [D7]ride 
@@ -76,3 +79,13 @@ Cause buddy you're a [G]pal of mine
 [D7]Marilyn come over here hold me close to you
 And kiss me one last [G]time 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

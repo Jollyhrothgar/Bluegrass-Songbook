@@ -1,6 +1,9 @@
 {meta: title Pushing Up Daisies}
 {meta: artist Garth Brooks}
 {meta: composer John Hadley, Kevin Welch, Gary Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file pushingupdaisieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I tell you the [F]way that I [C]feel
@@ -45,3 +48,8 @@ There's [F]two dates in time that they'll [C]carve on your stone
 In that [Am]little dash [G7]there in be[F]tween
 That [Am]little dash [G7]there in be[C]tween
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Yesterday Just Passed My Way Again}
 {meta: artist Lefty Frizzell}
 {meta: composer Sanger D. Schafer, Darlene Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdayjustpassedmywayagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't believe your lips are touching [C]mine
@@ -20,3 +23,5 @@
 [C]And you're loving me as if the world might end
 [D7]Yesterday just passed my way [G]again
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Too Much Noise}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchnoiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There's a [Am]hell raisin' [C]cowboy in your [F]truck drivin' [C]heart
@@ -28,3 +31,6 @@ Now you've [Em]just got your[F]self to be [G7]true to
 And it [Dm]hurts but there's [F]no one to [Am]blame
 But [Dm]all of that [G7]noise on your [C]brain
 {end_of_verse}
+
+
+

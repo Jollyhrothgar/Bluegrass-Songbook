@@ -1,6 +1,9 @@
 {meta: title Hoppy's Gone}
 {meta: artist Roger Miller}
 {meta: composer John T.Slate, Larry J. Henley}
+{meta: x_source classic-country}
+{meta: x_source_file hoppysgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hang it up boys
@@ -35,3 +38,7 @@ Hang it up boys
 Rock-a-bye [Am]yesterday
 Winds [C]blow and cradles will [G]fall
 {end_of_verse}
+
+
+
+

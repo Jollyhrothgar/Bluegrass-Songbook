@@ -1,6 +1,9 @@
 {meta: title King And Queen}
 {meta: artist Gene Pitney}
 {meta: composer Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file kingandqueenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When they count all the [G7]tears that we [C]cried
@@ -33,3 +36,7 @@ Then [F]king and queen [G7]we'll surely [C]be
 {start_of_verse: Verse 4}
 Then [F]king and queen [G7]we'll surely [C]be
 {end_of_verse}
+
+
+
+

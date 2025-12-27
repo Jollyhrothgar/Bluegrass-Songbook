@@ -1,5 +1,8 @@
 {meta: title We've Got A Good Thing Going}
 {meta: artist Norma Jean}
+{meta: x_source classic-country}
+{meta: x_source_file wevegotagoodthinggoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby I think it’s time we [D7]did some talking
@@ -32,3 +35,6 @@ Right in the middle of [C]sweet love song
 [D7]Got a good thing going [G]wrong   [C]mmmm
 [D7]Got a good thing going [G]wrong
 {end_of_verse}
+
+
+

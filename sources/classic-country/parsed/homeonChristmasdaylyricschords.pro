@@ -1,5 +1,8 @@
 {meta: title Home On Christmas Day}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file homeonChristmasdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Christmas time is coming 
@@ -40,3 +43,8 @@ Here at [G]home on [D7]Christmas [G]day
 Things are gonna be [C]hummin' 
 Here at [G]home on [D7]Christmas [G]day
 {end_of_verse}
+
+
+
+
+

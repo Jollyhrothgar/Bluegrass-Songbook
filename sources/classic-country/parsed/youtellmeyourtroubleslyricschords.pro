@@ -1,6 +1,9 @@
 {meta: title You Tell Me Your Troubles}
 {meta: artist Johnny Paycheck}
 {meta: composer Dale Morris and Clyde Mattocks}
+{meta: x_source classic-country}
+{meta: x_source_file youtellmeyourtroubleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The barroom is closing its time to go [D7]home
@@ -29,3 +32,6 @@ I'll tell you just how she left me be[D7]hind
 For misery loves [C]company and we're two of a [G]kind
 So tell me your [C]troubles [D7]and I'll tell you [G]mine
 {end_of_verse}
+
+
+

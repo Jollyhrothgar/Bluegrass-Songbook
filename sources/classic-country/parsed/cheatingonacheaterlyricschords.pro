@@ -1,5 +1,8 @@
 {meta: title Cheating On A Cheater}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file cheatingonacheaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How long did you think that you could get by
@@ -67,3 +70,13 @@ If [A7]someone ain't treating you [D7]right
 [C]Cheating on a cheater don't feel like [G]cheating
 Or I [A7]wouldn't be [D7]feeling this [G]good
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ain't You Even Gonna Cry}
 {meta: artist Charlie Louvin}
 {meta: composer Johnny Russell}
+{meta: x_source classic-country}
+{meta: x_source_file aintyouevengonnacrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ain't you even gonna [C]cry
@@ -41,3 +44,8 @@ You may never see me many [C]anymore
 You may never see me [C]anymore
 [D7]Ain't you even gonna [G]cry
 {end_of_verse}
+
+
+
+
+

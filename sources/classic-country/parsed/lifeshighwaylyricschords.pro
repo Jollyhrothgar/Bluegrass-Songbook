@@ -1,5 +1,8 @@
 {meta: title Life's Highway}
 {meta: artist Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file lifeshighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sun is up time's at [Em]hand
@@ -49,3 +52,9 @@ There's a [Am]stir across the [C]land
 And so [Am]begins another [C]day
 [D7]On life's [G]highway
 {end_of_verse}
+
+
+
+
+
+

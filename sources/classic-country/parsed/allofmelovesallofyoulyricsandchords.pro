@@ -1,6 +1,9 @@
 {meta: title All Of Me (Loves All Of You)}
 {meta: artist George Strait}
 {meta: composer Kim Williams and David Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file allofmelovesallofyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All of me loves [A7]all of you
@@ -35,3 +38,7 @@ Loves you [G]through and through[Am]   [D7]
 {start_of_verse: Verse 4}
 [Am]All of me loves [D7]all of [G]you
 {end_of_verse}
+
+
+
+

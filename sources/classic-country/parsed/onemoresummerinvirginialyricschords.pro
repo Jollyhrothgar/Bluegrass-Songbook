@@ -1,6 +1,9 @@
 {meta: title One More Summer In Virginia}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file onemoresummerinvirginialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's things I've never done 
@@ -44,3 +47,7 @@ I've got friends to [Em]thank a [Am]wife to [C]hold
 Let me [G7]spend just one more summer 
 In Virginia before I [C]die
 {end_of_verse}
+
+
+
+

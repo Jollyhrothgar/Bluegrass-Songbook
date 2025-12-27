@@ -1,6 +1,9 @@
 {meta: title A Loser's Cathedral}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file aloserscathedrallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a place you can go [D7]when you're [G]lonely 
@@ -32,3 +35,7 @@ But I [D7]never get that blue and I owe it all to [Em]you
 [G]To a loser's [C]cathedral a chapel for [G]tears
 A loser's [C]cathedral and you're [D7]always welcome [G]there
 {end_of_verse}
+
+
+
+

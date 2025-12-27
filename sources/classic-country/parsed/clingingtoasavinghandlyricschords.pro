@@ -1,6 +1,9 @@
 {meta: title Clinging To A Saving Hand}
 {meta: artist Connie Smith}
 {meta: composer Bill Mack}
+{meta: x_source classic-country}
+{meta: x_source_file clingingtoasavinghandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sing me a [F]song of praise and [C]glory 
@@ -37,3 +40,9 @@ Help this wandering child to understand
 That's when I close my eyes in [Am]sleep [F]eternal 
 I'll be [C]clinging to a [F]saving [C]hand
 {end_of_verse}
+
+
+
+
+
+

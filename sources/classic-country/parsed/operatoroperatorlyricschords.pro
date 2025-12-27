@@ -1,6 +1,9 @@
 {meta: title Operator Operator}
 {meta: artist Eddy Raven}
 {meta: composer Larry Willoughby and Janet Willoughby}
+{meta: x_source classic-country}
+{meta: x_source_file operatoroperatorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I thought it over how it's come to this
@@ -52,3 +55,12 @@ I must have lost all my common sense
 I must have lost all my common sense
 [C]Chasin' a dream runnin' through my [G]mind
 {end_of_verse}
+
+
+
+
+
+
+
+
+

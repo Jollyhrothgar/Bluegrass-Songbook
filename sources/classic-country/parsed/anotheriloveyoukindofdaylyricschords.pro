@@ -1,6 +1,9 @@
 {meta: title Another I Love You Kind Of Day}
 {meta: artist Charley Pride}
 {meta: composer John Schweers and Dennis Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file anotheriloveyoukindofdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wake up time to [F]open your [C]eyes
@@ -33,3 +36,7 @@ It's [F]another [C]I love you [G7]kind of night is on it's [C]way
 {start_of_verse: Verse 4}
 It's [F]another [C]I love you [G7]kind of night is on it's [F]w--[G7]a--[C]y 
 {end_of_verse}
+
+
+
+

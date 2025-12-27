@@ -1,6 +1,9 @@
 {meta: title Slipping Away}
 {meta: artist Jean Shepard}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file slippingawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Monday's promise  is [C]Tuesday's [G]lie 
@@ -40,3 +43,9 @@ We've got the grapes  [D7]but never the [G]wine
 {start_of_verse: Verse 2}
 And I can feel it  [C]slipping [G]away 
 {end_of_verse}
+
+
+
+
+
+

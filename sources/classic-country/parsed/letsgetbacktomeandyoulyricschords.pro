@@ -1,5 +1,8 @@
 {meta: title Let's Get Back To Me And You}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file letsgetbacktomeandyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm always on the road you're always [C]all alone
@@ -40,3 +43,8 @@ Honey [G]let's get [D7]back to me and [G]you
 {start_of_verse: Verse 4}
 Well honey get on [D7]back to me and [G]you
 {end_of_verse}
+
+
+
+
+

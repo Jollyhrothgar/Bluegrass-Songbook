@@ -1,6 +1,9 @@
 {meta: title The Other Woman}
 {meta: artist Ray Price}
 {meta: composer Don Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file theotherwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't accuse me of being without [F]feelings  
@@ -29,3 +32,6 @@ But the [D7]other woman soothes my wounded [G7]pride
 [C]But more important I feel wanted [F]again
 I can't [C]give up the other [G7]woman in my [C]life
 {end_of_verse}
+
+
+

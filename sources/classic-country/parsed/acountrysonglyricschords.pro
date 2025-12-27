@@ -1,6 +1,9 @@
 {meta: title A Country Song}
 {meta: artist Bill Anderson}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file acountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't know that losing her [G7]would be so hard to [C]take
@@ -36,3 +39,8 @@ Or that just one little flash of her
 [F]Could make my day go [C]wrong
 [G7]Kinda makes me wanna sing a country [C]song
 {end_of_verse}
+
+
+
+
+

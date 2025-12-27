@@ -1,6 +1,9 @@
 {meta: title Treat Me Nice}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Leiber and Mike Stoller}
+{meta: x_source classic-country}
+{meta: x_source_file treatmenicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I walk through that door baby be polite
@@ -31,3 +34,7 @@ If you [G7]want my love then [C]take my [D7]advice  [G7]treat me [C]nice
 [F]Scratch my back and [C]run your pretty
 [D7]Fingers through my [G7]hair
 {end_of_verse}
+
+
+
+

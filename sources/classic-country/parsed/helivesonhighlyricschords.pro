@@ -2,6 +2,9 @@
 {meta: artist Slim Whitman}
 {meta: composer Baylus B. Mc Kin ney}
 {meta: music Queen Liliuokalani}
+{meta: x_source classic-country}
+{meta: x_source_file helivesonhighlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Christ the Savior came from Heaven’s glory 
@@ -30,3 +33,6 @@ There is [C]life there is joy [D7]and [G]victory
 [C]He lives on high He lives on [G]high
 [D7]Someday He’s coming [G]again
 {end_of_verse}
+
+
+

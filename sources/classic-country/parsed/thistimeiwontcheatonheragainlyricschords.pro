@@ -1,6 +1,9 @@
 {meta: title This Time I Won't Cheat On Her Again}
 {meta: artist Moe Bandy}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thistimeiwontcheatonheragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear that you just [G7]told your new [C]forever where to [F]go
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]This time I won't cheat on her [C]again
 {end_of_verse}
+
+
+
+

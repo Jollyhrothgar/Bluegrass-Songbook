@@ -1,5 +1,8 @@
 {meta: title I've Always Been Crazy}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file ivealwaysbeencrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've always been crazy and the trouble that it's put me through
@@ -28,3 +31,6 @@ Nobody knows if it's something to bless or to [C]blame
 So far I ain't found a rhyme [D7]or a reason to change
 I've always been crazy but it's kept me from going [G]insane
 {end_of_verse}
+
+
+

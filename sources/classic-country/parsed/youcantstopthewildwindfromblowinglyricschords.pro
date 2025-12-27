@@ -1,6 +1,9 @@
 {meta: title You Can't Stop The Wild Wind From Blowing}
 {meta: artist Bobby Bare}
 {meta: composer Curly Putman and Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file youcantstopthewildwindfromblowinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -34,3 +37,7 @@ Let us live just [A#7]for tonight [F]don't think of [G7]tomorrow
 For [F]soon I'll be [G7]going and you [C]can't stop the [A#7]wild wind from [C]blowing
 No you can't stop the [A#7]wild wind from [C]blowing
 {end_of_verse}
+
+
+
+

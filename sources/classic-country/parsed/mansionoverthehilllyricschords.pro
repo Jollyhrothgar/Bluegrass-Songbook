@@ -1,6 +1,9 @@
 {meta: title Mansion Over the Hilltop}
 {meta: artist Elvis Presley}
 {meta: composer Ira P. Stanphill}
+{meta: x_source classic-country}
+{meta: x_source_file mansionoverthehilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm satisfied with just a [F]cottage [C]below
@@ -29,3 +32,6 @@ In that bright [G7]land where we'll never grow [C]old
 [C7]And some day [F]yonder we will never more [C]wander
 But walk on [G7]streets that are purest [C]gold
 {end_of_verse}
+
+
+

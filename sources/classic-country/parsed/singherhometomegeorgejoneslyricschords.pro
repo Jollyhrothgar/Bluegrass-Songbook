@@ -1,6 +1,9 @@
 {meta: title Sing Her Home To Me George Jones}
 {meta: artist Moe Bandy}
 {meta: composer Bobby P. Barker}
+{meta: x_source classic-country}
+{meta: x_source_file singherhometomegeorgejoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]George you wouldn't know my woman if she [G7]passed you on the street
@@ -33,3 +36,7 @@ So [G7]sing her home to me George [C]Jones
 {start_of_verse: Verse 4}
 Please [G7]sing her home to me George [C]Jones
 {end_of_verse}
+
+
+
+

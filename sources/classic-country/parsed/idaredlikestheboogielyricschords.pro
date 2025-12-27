@@ -1,6 +1,9 @@
 {meta: title Ida Red Likes The Boogie}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Dean Moore}
+{meta: x_source classic-country}
+{meta: x_source_file idaredlikestheboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now everybody's learning how to do the boogie woogie
@@ -33,3 +36,6 @@ She [C]doesn't one-step or two-step or do the minuet
 But she [G]does a better boogie dancin' [D7]than anyone [G]yet
 And I'm a fool [D7]for Ida [G]Red 
 {end_of_verse}
+
+
+

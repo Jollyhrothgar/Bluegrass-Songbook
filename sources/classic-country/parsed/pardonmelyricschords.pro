@@ -1,6 +1,9 @@
 {meta: title Pardon Me}
 {meta: artist Moe Bandy}
 {meta: composer Becky Hobbs and Candy Parton}
+{meta: x_source classic-country}
+{meta: x_source_file pardonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The band was playing that old [F]love song
@@ -53,3 +56,9 @@ Haven't we [G7]loved somewhere [C]before
 {start_of_verse: Verse 5}
 [D7]Haven't we [G7]loved somewhere [C]before
 {end_of_verse}
+
+
+
+
+
+

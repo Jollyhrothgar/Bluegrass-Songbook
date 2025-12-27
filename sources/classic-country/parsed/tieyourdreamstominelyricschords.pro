@@ -1,6 +1,9 @@
 {meta: title Tie Your Dreams to Mine}
 {meta: artist Marty Robbins}
 {meta: composer Tim DuBois, Sam Lorber,}
+{meta: x_source classic-country}
+{meta: x_source_file tieyourdreamstominelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tie your dreams to mine  see how high [F]we can [C]climb
@@ -36,3 +39,7 @@ If you'll tie your [G7]dreams to [C]mine
 One [C]step at a time leave [F]the world [C]behind  
 If you'll tie your [G7]dreams to [C]mine
 {end_of_verse}
+
+
+
+

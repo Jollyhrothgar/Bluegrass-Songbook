@@ -1,6 +1,9 @@
 {meta: title Too Late}
 {meta: artist Ray Price}
 {meta: composer Jimmy Wakely}
+{meta: x_source classic-country}
+{meta: x_source_file toolatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Too late too late to ask [F]forgiveness 
@@ -36,3 +39,7 @@ I [G7]should have known you'd never [G7][C]try
 But [C]you can't change your way of [F]living 
 I [G7]know that there's no use to [C]cry
 {end_of_verse}
+
+
+
+

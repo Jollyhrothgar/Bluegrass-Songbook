@@ -1,5 +1,8 @@
 {meta: title Crowd Around the Corner}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file crowdaroundthecornerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Those [Am]stormy years leave [Em]deep and endless
@@ -64,3 +67,13 @@ Softer than those [G7]strands of silver-[C]gray
 {start_of_verse: Verse 11}
 And sweeter than the [G7]things we've seen [Am]today
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

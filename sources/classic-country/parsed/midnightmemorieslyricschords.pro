@@ -1,6 +1,9 @@
 {meta: title Midnight Memories}
 {meta: artist Vernon Oxford}
 {meta: composer Dewayne Orender and Johnny Young}
+{meta: x_source classic-country}
+{meta: x_source_file midnightmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Midnight [F]memories of [C]you
@@ -37,3 +40,7 @@ About these [C]midnight [G7]memories of [C]you
 {start_of_verse: Verse 4}
 [F]About these [C]midnight [G7]memories of [C]you
 {end_of_verse}
+
+
+
+

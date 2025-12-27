@@ -1,6 +1,9 @@
 {meta: title In the Garden}
 {meta: artist Loretta Lynn}
 {meta: composer Austin C. Miles and Robert Hebble}
+{meta: x_source classic-country}
+{meta: x_source_file inthegardenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I come to the garden alone
@@ -29,3 +32,6 @@ He speaks and the sound of His voice
 [C7]And the joy we share as [F]we tarry [Fm]there
 [C]None other has [G7]ever [C]known
 {end_of_verse}
+
+
+

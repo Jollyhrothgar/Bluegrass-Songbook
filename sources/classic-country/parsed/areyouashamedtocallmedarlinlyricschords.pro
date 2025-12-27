@@ -1,6 +1,9 @@
 {meta: title Are You Ashamed To Call Me Darlin'}
 {meta: artist Lonesome River Band}
 {meta: composer Dick Charles and Jimmy Wakely}
+{meta: x_source classic-country}
+{meta: x_source_file areyouashamedtocallmedarlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You said our love was all that mattered
@@ -50,3 +53,9 @@ Are you ashamed to call me darlin'
 [G]You broke my heart and left me lonely
 [D7]Are you ashamed to call me [G]dear
 {end_of_verse}
+
+
+
+
+
+

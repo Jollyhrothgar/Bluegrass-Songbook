@@ -1,6 +1,9 @@
 {meta: title Down In The Willow Garden}
 {meta: artist The Osborne Brothers}
 {meta: composer Charlie Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file downinthewillowgardenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down in the willow [Em]garden
@@ -43,3 +46,8 @@
 [G]For I did murder that dear little [Em]girl
 [G]Whose name [D7]was Rose [G]Connelly
 {end_of_verse}
+
+
+
+
+

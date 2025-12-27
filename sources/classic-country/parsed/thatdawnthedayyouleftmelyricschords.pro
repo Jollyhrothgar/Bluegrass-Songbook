@@ -1,6 +1,9 @@
 {meta: title That Dawn The Day You Left Me}
 {meta: artist High Country}
 {meta: composer Mintum}
+{meta: x_source classic-country}
+{meta: x_source_file thatdawnthedayyouleftmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So early [C]on that [G]morning the moon still [C]way up [G]high
@@ -36,3 +39,7 @@ How could I have [C]turned [G]away from the troubles that we [D7]had
 Those words you spoke now [G]ring so true just [C]like you said they [G]would
 Too late that dawn the day you left [C]I finally [D7]under[G]stood
 {end_of_verse}
+
+
+
+

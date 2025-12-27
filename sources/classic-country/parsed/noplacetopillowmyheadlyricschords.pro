@@ -1,6 +1,9 @@
 {meta: title No Place To Pillow My Head}
 {meta: artist Lester Flatt}
 {meta: composer Lester Flatt and Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file noplacetopillowmyheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once I was happy with a [C]heartbeat no [G]care
@@ -43,3 +46,8 @@ No place to pillow my [D7]head
 The [G]days seems so sad and the [C]nights are so [G]long 
 Since daddy and [D7]mother are [G]dead
 {end_of_verse}
+
+
+
+
+

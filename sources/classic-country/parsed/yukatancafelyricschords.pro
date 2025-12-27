@@ -1,6 +1,9 @@
 {meta: title Yukatan Cafe}
 {meta: artist Anne Murray}
 {meta: composer Adam Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file yukatancafelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]There's a [Am]big fan that's slowly [D7]turnin' in a [Am]Yucatan [D7]Cafe 
@@ -34,3 +37,7 @@ Or maybe it's [D7]love at last has come to [G]me
 {start_of_verse: Verse 5}
 Maybe it's [D7]love at last has come to [G]me
 {end_of_verse}
+
+
+
+

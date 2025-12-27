@@ -1,6 +1,9 @@
 {meta: title Jesus Loves Me}
 {meta: artist Brenda Lee}
 {meta: composer William B. Bradbury, Anna B. Warner, Reba Ware}
+{meta: x_source classic-country}
+{meta: x_source_file jesuslovesmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus loves me this I know
@@ -33,3 +36,8 @@ Wanting as a friend to give
 Little ones to Him belong
 [F]They are [C]weak but He [G7]is [C]strong
 {end_of_verse}
+
+
+
+
+

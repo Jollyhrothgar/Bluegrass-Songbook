@@ -1,6 +1,9 @@
 {meta: title Drive In Show}
 {meta: artist Eddie Cochran}
 {meta: composer Fred Dexter}
+{meta: x_source classic-country}
+{meta: x_source_file driveinshowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come on baby to a drive-in [C]show
@@ -50,3 +53,9 @@
 [G]I'll be over pick you up at [C]eight
 [G]This will be our [D7]very first [G]date
 {end_of_verse}
+
+
+
+
+
+

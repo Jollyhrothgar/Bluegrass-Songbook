@@ -1,5 +1,8 @@
 {meta: title Long Way Home}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file longwayhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't look inside don't look [Dm]there
@@ -33,3 +36,7 @@ Yeah you'll [F]know [G7]that it's a long way [C]home
 You'll find [F]out [G7]it's a long way [C]home
 There ain't no [Dm]doubt [G7]that it's a long way [F]home[C]
 {end_of_verse}
+
+
+
+

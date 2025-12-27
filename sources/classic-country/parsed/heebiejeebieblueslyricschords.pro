@@ -1,5 +1,8 @@
 {meta: title Heebie Jeebie Blues}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file heebiejeebieblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes you’re wishy washy you never want me around
@@ -24,3 +27,6 @@ I wish I was a Romeo but loose and fancy free
 [C7]I had you pretty baby a-chasin’ after me
 [G7]But every time you leave me I get the heebie jeebie [C]blues
 {end_of_verse}
+
+
+

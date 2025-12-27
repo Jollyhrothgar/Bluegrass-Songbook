@@ -1,6 +1,9 @@
 {meta: title I've Just Told Mama Goodbye}
 {meta: artist Hank Williams}
 {meta: composer Curley Kinsey and Slim Sweet}
+{meta: x_source classic-country}
+{meta: x_source_file ivejusttoldmamagoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each year on [G7]mother's [C]day
@@ -36,3 +39,7 @@ And knelt [F]beside her [C]bed
 I [F]heard her say I'll meet you [C]someday
 Where the white roses [G7]turn to [C]red
 {end_of_verse}
+
+
+
+

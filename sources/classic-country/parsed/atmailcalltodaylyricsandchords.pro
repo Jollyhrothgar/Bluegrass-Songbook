@@ -1,6 +1,9 @@
 {meta: title At Mail Call Today}
 {meta: artist Slim Whitman}
 {meta: composer Gene Autry and Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file atmailcalltodaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At mail call today love your last letter [D7]came
@@ -20,3 +23,5 @@ But now that it's over what [G7]more can I [C]say
 Good luck and God bless you wher[G7]ever you [C]stay
 [D7]My world for me ended at mail call [G]today
 {end_of_verse}
+
+

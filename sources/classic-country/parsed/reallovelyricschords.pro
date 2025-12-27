@@ -1,6 +1,9 @@
 {meta: title Real Love}
 {meta: artist Dolly Parton}
 {meta: composer David Malloy, Randy McCormick, Spady Brannan}
+{meta: x_source classic-country}
+{meta: x_source_file reallovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say that it's a matter of [C]trusting
@@ -50,3 +53,9 @@ We got [G]real love not [Em]infatuation [G]real love our [Em]heart's celebration
 [G]Real love not an [Em]imitation [G]real love you're [Em]my destination
 [C]Baby you and me we got [D7]everything we need
 {end_of_verse}
+
+
+
+
+
+

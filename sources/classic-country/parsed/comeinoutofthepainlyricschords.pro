@@ -1,6 +1,9 @@
 {meta: title Come In Out Of The Pain}
 {meta: artist Doug Stone}
 {meta: composer Don Pfrimmer and Frank Myers}
+{meta: x_source classic-country}
+{meta: x_source_file comeinoutofthepainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I'd be [G]lyin' if I said [D7]I never [C]prayed for [G]this
@@ -34,3 +37,7 @@ So [D7]don't just stand there [G]girl [C]come in [D7]out of the [G]pain
 Let me [D7]dry your [C]tears [D7]  ([G]come in [D7]out of the [C]pain)
 [G]Girl I've loved [D7]you for [C]years and [D7]years and [G]years
 {end_of_verse}
+
+
+
+

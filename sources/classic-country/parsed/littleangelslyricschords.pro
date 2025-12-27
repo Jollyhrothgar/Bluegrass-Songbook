@@ -1,6 +1,9 @@
 {meta: title Little Angels}
 {meta: artist Rhonda Vincent}
 {meta: composer Ronny Light, Janice Clare, Lina Richard}
+{meta: x_source classic-country}
+{meta: x_source_file littleangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One summer day a [F]stranger walked up to [C]me and said
@@ -40,3 +43,8 @@ Please [G7]don't let other strangers hurt one more little [C]angel
 {start_of_verse: Verse 5}
 Please [G7]don't let other strangers hurt one more little [C]angel
 {end_of_verse}
+
+
+
+
+

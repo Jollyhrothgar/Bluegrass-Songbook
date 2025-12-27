@@ -1,5 +1,8 @@
 {meta: title When God Comes and Gathers His Jewels}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file whengodcomesandgathershisjewelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The ceremony was [C]over
@@ -35,3 +38,7 @@ All [D7]his treasures of diamonds and [G]gold
 You'll meet her up there up in heaven so [C]fair
 When [D7]God comes and gathers his [G]jewels
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title White House Blues}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file whitehouseblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]McKinley hollered McKinley squalled
@@ -30,3 +33,7 @@ Roosevelt's in the White House he's doing his best
 [C]McKinley's in the graveyard he's [G]taking his rest
 He's gone [D7]for a long [G]time
 {end_of_verse}
+
+
+
+

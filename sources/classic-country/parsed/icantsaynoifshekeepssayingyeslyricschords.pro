@@ -1,5 +1,8 @@
 {meta: title I Can't Say No If She Keeps Saying Yes}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file icantsaynoifshekeepssayingyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She wants to feel her [C]body close to [G]mine
@@ -28,3 +31,6 @@ She belongs to a friend of mine [A7]that’s why I haven’t [D7]yet
 But [G]I’m not super [C]human I don’t [G]guess
 And I can’t say no if [D7]she keeps saying [C]yes [G]
 {end_of_verse}
+
+
+

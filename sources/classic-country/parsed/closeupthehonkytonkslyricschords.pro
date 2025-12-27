@@ -1,6 +1,9 @@
 {meta: title Close Up The Honky Tonks}
 {meta: artist Buck Owen}
 {meta: composer Red Simson}
+{meta: x_source classic-country}
+{meta: x_source_file closeupthehonkytonkslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's in some honky tonk tonight I [C]know
@@ -29,3 +32,6 @@
 [C]Close up the honky tonks  throw away the key
 [D7]Then maybe the one I love will come back to [G]me
 {end_of_verse}
+
+
+

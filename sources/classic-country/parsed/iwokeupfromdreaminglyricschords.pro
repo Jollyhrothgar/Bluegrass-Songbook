@@ -1,6 +1,9 @@
 {meta: title I Woke Up From Dreaming}
 {meta: artist George Jones}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file iwokeupfromdreaminglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We both have a [C]morning cup of [G]coffee
@@ -35,3 +38,7 @@ When [G]I woke up from [D7]dream[G]ing
 {start_of_verse: Verse 4}
 Then I woke up from [D7]dream[C]ing[G]
 {end_of_verse}
+
+
+
+

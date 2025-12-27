@@ -1,6 +1,9 @@
 {meta: title Crawling Man Lyrics Chords}
 {meta: artist Loretta Lynn}
 {meta: composer David Wilkins}
+{meta: x_source classic-country}
+{meta: x_source_file crawlingmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walk on out the [F]door I left it [C]open
@@ -44,3 +47,7 @@
 [G7]Yeah there's anything I can't stand
 [C]It's a crawling man
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Let Me Love You Just A Little}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file letmeloveyoujustalittlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just because the moon is bright
@@ -32,3 +35,7 @@ Maybe love you just a [G]little
 {start_of_verse: Verse 5}
 Repeat
 {end_of_verse}
+
+
+
+

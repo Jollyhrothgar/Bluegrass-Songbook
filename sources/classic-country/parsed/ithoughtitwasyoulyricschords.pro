@@ -1,6 +1,9 @@
 {meta: title I Thought It Was You}
 {meta: artist Doug Stone}
 {meta: composer Gary Harrison and Tim Mensy}
+{meta: x_source classic-country}
+{meta: x_source_file ithoughtitwasyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I called your name out [G7]loud to a [F]stranger yes[C]terday[G7]
@@ -38,3 +41,7 @@ Now I must look like a [C]fool [G7]I thought it was [C]you
 [F]I thought [G7]it was [C]you
 [F]Why couldn't it be [C]you 
 {end_of_verse}
+
+
+
+

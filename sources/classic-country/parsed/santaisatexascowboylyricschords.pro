@@ -1,6 +1,9 @@
 {meta: title Santa Is A Texas Cowboy}
 {meta: artist Red Sovine}
 {meta: composer Roy Hall}
+{meta: x_source classic-country}
+{meta: x_source_file santaisatexascowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Did you [C]know that Santa Clause is a Texas [G7]cowboy
@@ -45,3 +48,9 @@ When he [G7]starts from the Rio Grande
 Did you [C]know that Santa Clause is a Texas [F]cowboy
 And he [G7]sings along with a ho ho hod[C]a
 {end_of_verse}
+
+
+
+
+
+

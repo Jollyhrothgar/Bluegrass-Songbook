@@ -1,5 +1,8 @@
 {meta: title I'm A Getting Ready To Go}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file imagettingreadytogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I get down on my knees every day and I pray
@@ -40,3 +43,7 @@ And [G7]I'm a gettin' ready to [C]go
 [F]This ole world's just my [C]dressin' room 
 And [G7]I'm a gettin' ready to [C]go
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title She Can't Give It Away}
 {meta: artist Barbara Fairchild}
 {meta: composer Curly Putman and Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file shecantgiveitawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She stands there in the doorway
@@ -51,3 +54,9 @@ But [C]now she can't [D7]give it [G]away
 {start_of_verse: Verse 6}
 [C]Now she can't [D7]give it [G]away
 {end_of_verse}
+
+
+
+
+
+

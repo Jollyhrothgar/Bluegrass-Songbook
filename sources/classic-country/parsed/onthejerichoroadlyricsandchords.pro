@@ -1,6 +1,9 @@
 {meta: title On The Jericho Road}
 {meta: artist Merle Haggard}
 {meta: composer Don S. McCrossan}
+{meta: x_source classic-country}
+{meta: x_source_file onthejerichoroadlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As we travel along (as we travel along)
@@ -54,3 +57,9 @@ Each sorrow He'll [C]share (each sorrow He'll share)
 There's never a [G7]care (there's never a care)
 For Jesus is [C]there on the [F]Jericho [C]Road
 {end_of_verse}
+
+
+
+
+
+

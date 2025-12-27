@@ -1,6 +1,9 @@
 {meta: title Sorrow’s Tearing Down The House}
 {meta: artist Porter Wagoner}
 {meta: composer Mel Tillis and Kent Westberry}
+{meta: x_source classic-country}
+{meta: x_source_file sorrowstearingdownthehouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I met you [G7]and we [C]married we [F]planned our future [C]well
@@ -22,3 +25,5 @@ First [G7]came the weekly parties that [C]never seemed to end
 [C]I guess that [G7]I'm as [C]much to blame and [F]while we share the [C]guilt
 [F]Sorrow's tearing [C]down the house that [G7]happiness once [C]built
 {end_of_verse}
+
+

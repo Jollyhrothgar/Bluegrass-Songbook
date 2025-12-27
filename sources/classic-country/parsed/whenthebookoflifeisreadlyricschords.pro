@@ -1,5 +1,8 @@
 {meta: title When The Book Of LIfe Is Read}
 {meta: artist Hank Williams Sr}
+{meta: x_source classic-country}
+{meta: x_source_file whenthebookoflifeisreadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In Life's many battles that you [C]will have to [G]fight
@@ -28,3 +31,6 @@ And when our work is over [A7]heaven with Him we'll [D7]share
 There's [G]be no pain or sorrow  no [C]tears will ever be [G]shed
 When we stand there in God's Kingdom and The [D7]Book Of Life Is [G]Read
 {end_of_verse}
+
+
+

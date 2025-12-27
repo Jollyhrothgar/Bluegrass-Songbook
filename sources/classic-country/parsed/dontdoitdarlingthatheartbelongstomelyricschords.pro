@@ -1,5 +1,8 @@
 {meta: title Don't Do It Darling (That Heart Belongs To Me)}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file dontdoitdarlingthatheartbelongstomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are so many flirty guys with flirty flirty ways ([C7]ahhhhhhh) 
@@ -30,3 +33,5 @@ Oh [F]sure they'll try to buy your love with riches such as these
 (such as these don’t do it)
 [C]Don't do it darlin' [G7]your heart belongs to [C]me  
 {end_of_verse}
+
+

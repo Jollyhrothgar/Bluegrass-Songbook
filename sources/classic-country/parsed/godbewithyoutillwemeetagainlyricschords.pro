@@ -1,6 +1,9 @@
 {meta: title God Be With You Till We Meet Again}
 {meta: artist Jim Reeves}
 {meta: composer J.E. Rankin and W.G. Tomer}
+{meta: x_source classic-country}
+{meta: x_source_file godbewithyoutillwemeetagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]God be with you till we meet [G][D7]again 
@@ -29,3 +32,6 @@ Till we [G]m-eet at Jesus [D7]feet
 Till we [G]m-eet till we [C]m-eet 
 God be [G]with you till we [D7]meet [G]again
 {end_of_verse}
+
+
+

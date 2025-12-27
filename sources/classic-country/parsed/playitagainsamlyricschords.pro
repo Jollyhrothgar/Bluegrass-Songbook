@@ -1,6 +1,9 @@
 {meta: title Play It Again Sam}
 {meta: artist Mel Tillis}
 {meta: composer Charles Wadley}
+{meta: x_source classic-country}
+{meta: x_source_file playitagainsamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was born and raised in the south
@@ -46,3 +49,9 @@ That lives and grows there inside of you and we’ll look [C]back someday
 When we get [D7]old and gray  we’re gonna [C]smile and say  
 Play it [G]again Sam  [D7]play it [C]a--gain [G]Sam
 {end_of_verse}
+
+
+
+
+
+

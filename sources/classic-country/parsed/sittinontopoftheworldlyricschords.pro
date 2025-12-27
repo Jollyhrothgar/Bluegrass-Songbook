@@ -1,5 +1,8 @@
 {meta: artist Bob Wills}
 {meta: composer Lonnie Carter and Walter Jacobs}
+{meta: x_source classic-country}
+{meta: x_source_file sittinontopoftheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All the summer all of fall
@@ -28,3 +31,6 @@ Gonna catch me a [C]freight train work’s done got [G]hard
 Though she’s gone I don’t [D7]worry
 Cause I’m [G]sittin’ on [D7]top of the [G]world
 {end_of_verse}
+
+
+

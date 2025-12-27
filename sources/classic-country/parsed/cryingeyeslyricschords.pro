@@ -1,5 +1,8 @@
 {meta: title Crying Eyes}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file cryingeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Could you just tell [F]me how you're [C]feeling
@@ -28,3 +31,6 @@ Folks drift apart [F]and say [C]goodbye
 [F]When you [G7]touch me I'm [F][C]believ-ing
 You really don't want me to [C][G7]go-o-o
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If You Think You're Lonely}
 {meta: artist Ray Price}
 {meta: composer Linda Buell, Carl Rupp, Larry Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouthinkyourelonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's just me  by myself and [C7]I'm sure missing [F]you
@@ -29,3 +32,6 @@ Cause I'm just as [G7]lonesome as lonesome can [C]be
 And your love's the only  [C7]love that I [F]need
 If you think you're [G7]lonely you should be here with [C]me
 {end_of_verse}
+
+
+

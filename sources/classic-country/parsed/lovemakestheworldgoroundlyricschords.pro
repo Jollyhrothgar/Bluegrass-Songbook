@@ -1,6 +1,9 @@
 {meta: title Love Makes The World Go Round}
 {meta: artist The Everly Brothers}
 {meta: composer Bob Merrill}
+{meta: x_source classic-country}
+{meta: x_source_file lovemakestheworldgoroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love makes the world go round
@@ -31,3 +34,8 @@ High in some silent star
 Making the Earth whirl softly
 [C]Love makes the world go round
 {end_of_verse}
+
+
+
+
+

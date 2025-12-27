@@ -1,6 +1,9 @@
 {meta: title Who Do I Think I Am}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce, Max Powell, Jerry Lane}
+{meta: x_source classic-country}
+{meta: x_source_file whodoithinkiamlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]W-ho do I [G7]th-ink I [C]am
@@ -27,3 +30,6 @@ What made me think that she couldn't forget [G7]me
 {start_of_verse: Verse 4}
 [F]W-ho do I [G7]th-ink I [C]am
 {end_of_verse}
+
+
+

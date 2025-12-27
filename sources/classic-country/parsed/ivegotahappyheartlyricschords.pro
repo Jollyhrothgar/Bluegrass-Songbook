@@ -1,6 +1,9 @@
 {meta: title I've Got A Happy Heart}
 {meta: artist Susan Raye}
 {meta: composer Buck Owens and Pat Levely}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotahappyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Happiness is something that we all need plenty [G7]of
@@ -29,3 +32,6 @@
 [C]Just find someone to live for and to love and then you'll [F]see
 [G7]Why I've got this happy heart inside of [C]me
 {end_of_verse}
+
+
+

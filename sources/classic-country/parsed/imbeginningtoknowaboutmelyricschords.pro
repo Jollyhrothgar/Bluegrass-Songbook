@@ -1,6 +1,9 @@
 {meta: title I'm Beginning To Know About Me}
 {meta: artist Wilburn Brothers}
 {meta: composer Jimmy Dickens and Larry Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file imbeginningtoknowaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm beginning to [G7]know (beginning to know) know about [C]me
@@ -26,3 +29,6 @@ I'm beginning to [G7]know (beginning to know) know about [C]me
 {start_of_verse: Verse 4}
 I'm beginning to [G7]know (beginning to know) know about [C]me
 {end_of_verse}
+
+
+

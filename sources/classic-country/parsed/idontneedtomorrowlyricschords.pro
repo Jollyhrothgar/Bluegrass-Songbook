@@ -1,6 +1,9 @@
 {meta: title I Don't Need Tomorrow}
 {meta: artist Jack Greene}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file idontneedtomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't need [G]tomorrow [D7]I had yester[G]day
@@ -26,3 +29,6 @@ But [C]I don't need [G]tomorrow [D7]I had yester[G]day
 [G]Tomorrow might be the day a new love comes my [G7]way
 But [C]I don't need [G]tomorrow [D7]I had yester[G]day 
 {end_of_verse}
+
+
+

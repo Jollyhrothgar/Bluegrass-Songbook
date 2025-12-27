@@ -1,6 +1,9 @@
 {meta: title Uncle Pen}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file unclepenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the people would come from far away
@@ -50,3 +53,9 @@ High on the hill and [D7]above the [G]town
 Uncle Pen played the fiddle and oh how it would ring
 You could hear it talk you could [D7]hear it [G]sing
 {end_of_verse}
+
+
+
+
+
+

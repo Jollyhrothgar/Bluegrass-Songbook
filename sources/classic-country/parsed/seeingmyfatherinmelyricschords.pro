@@ -1,6 +1,9 @@
 {meta: title Seeing My Father In Me}
 {meta: artist Paul Overstreet}
 {meta: composer Paul Overstreet and Taylor Dunn}
+{meta: x_source classic-country}
+{meta: x_source_file seeingmyfatherinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night we brought the children by to [G7]visit their [C]grandpa 
@@ -53,3 +56,9 @@ I'm starting to [F]see [G7]my father in [C]me
 {start_of_verse: Verse 5}
 And I'm happy to [F]see [G7]my father in [C]me 
 {end_of_verse}
+
+
+
+
+
+

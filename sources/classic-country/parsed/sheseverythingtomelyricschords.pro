@@ -1,6 +1,9 @@
 {meta: title She's Everything To Me}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file sheseverythingtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her [Dm]name is like a prayer when I'm in [C]need
@@ -36,3 +39,7 @@ She [Dm]brings daylight to the [G7]darkness of my [C]world
 Without her love to [F]guide me there's no [C]tellin' what I'd [F]be
 Her [Dm]precious [Em]love is [F]every[G7]thing to [C]me
 {end_of_verse}
+
+
+
+

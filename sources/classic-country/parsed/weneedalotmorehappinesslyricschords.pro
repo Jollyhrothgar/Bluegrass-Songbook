@@ -1,6 +1,9 @@
 {meta: title We Need A Lot More Happiness}
 {meta: artist Wilburn Brothers}
 {meta: composer Joe Keene}
+{meta: x_source classic-country}
+{meta: x_source_file weneedalotmorehappinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We need a lot more [C]happiness
@@ -57,3 +60,10 @@ We need a [D7]lot more happi[G]ness
 Need a [G]lot more laughin' and a [C]little less cryin'
 We need a [D7]lot more happi[G]ness
 {end_of_verse}
+
+
+
+
+
+
+

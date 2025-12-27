@@ -1,6 +1,9 @@
 {meta: title You Can Check On Me}
 {meta: artist Stonewall Jackson}
 {meta: composer Gene Crysler}
+{meta: x_source classic-country}
+{meta: x_source_file youcancheckonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My show signs on the air at six and I get off at [G7]nine
@@ -22,3 +25,5 @@ I play each request for you and someone else to [C]hear
 Out there somewhere you'll hear these words and know I've seen the [F]light
 I'll [G7]be at home when you come in I taped the show [C]tonight
 {end_of_verse}
+
+

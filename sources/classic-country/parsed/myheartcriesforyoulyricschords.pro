@@ -1,5 +1,8 @@
 {meta: title My Heart Cries For You}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file myheartcriesforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you're in Arizona I'll follow [D7]you
@@ -35,3 +38,7 @@ Tag: D7 GMy heart cries for you please come back to me
 Tag:
 My heart [D7]cries for you please come back to [G]me
 {end_of_verse}
+
+
+
+

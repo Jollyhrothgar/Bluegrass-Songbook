@@ -1,6 +1,9 @@
 {meta: title Turn The Record Over}
 {meta: artist Vernon Oxford}
 {meta: composer Everett Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file turntherecordoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Turn the record over let me [C]hear the other side
@@ -33,3 +36,7 @@ So [D7]I can forget we are [G7]apart
 {start_of_verse: Verse 5}
 [G7]Until I dance her right out of my [C]heart
 {end_of_verse}
+
+
+
+

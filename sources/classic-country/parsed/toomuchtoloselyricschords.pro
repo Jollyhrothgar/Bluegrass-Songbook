@@ -1,6 +1,9 @@
 {meta: title Too Much To Lose}
 {meta: artist Carl Belew}
 {meta: composer Tommy Blake, Lester Vanadore, Carl Belew}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchtoloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll love you forever [C7]and if you must [F]go
@@ -22,3 +25,5 @@ Did your heart tell you [F]go or [D7]did you grow tired of [G7]me
 [C]You never would leave me [C7]if I had to [F]choose
 For I [C]realize now [G7]that you're too much to [C]lose
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Song}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis and Buck Peddy}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonksonglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got me a room in a cheap hotel
@@ -40,3 +43,8 @@ My head was a spinnin' and I didn't feel well
 [G7]I picked up my pillow and I covered up my head
 [C]But the band kept a playin' and [G7]a shakin' my [C]bed
 {end_of_verse}
+
+
+
+
+

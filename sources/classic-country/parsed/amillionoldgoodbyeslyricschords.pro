@@ -1,6 +1,9 @@
 {meta: title A Million Old Goodbyes}
 {meta: artist Mel Tillis}
 {meta: composer Steve Gibb, Bobby Russell, Buzz Cason}
+{meta: x_source classic-country}
+{meta: x_source_file amillionoldgoodbyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a plane  out to[G7]night
@@ -42,3 +45,8 @@ And I [Am]swear to you I’m gonna take that [Em]flight
 [Dm]Way beyond a [G7]million old good[C]byes
 [Dm]Way beyond a [G7]million old good[C]byes
 {end_of_verse}
+
+
+
+
+

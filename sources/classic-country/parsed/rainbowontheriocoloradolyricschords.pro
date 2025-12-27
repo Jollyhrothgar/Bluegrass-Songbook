@@ -1,6 +1,9 @@
 {meta: title Rainbow On The Rio Colorado}
 {meta: artist Slim Whitman}
 {meta: composer Gene Autry and Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowontheriocoloradolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a rainbow on the [F]Rio Colo[C]rado
@@ -28,3 +31,6 @@ And it calls me to my [G7]western Texas [C]home
 {start_of_verse: Verse 4}
 Yes it calls me to my [G7]western Texas [C]home
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lonely Little Robin}
 {meta: artist Jim Ed Brown}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file lonelylittlerobinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a lonely little robin in a tree by my [G7]door
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]Like a lonely little robin I'm waiting for [C]you
 {end_of_verse}
+
+
+
+
+

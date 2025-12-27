@@ -1,5 +1,8 @@
 {meta: artist Waylon Jennings}
 {meta: composer Jimmy Buffett}
+{meta: x_source classic-country}
+{meta: x_source_file hewenttoparislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He went to Paris lookin' for answers to [C]questions that bothered him [G]so
@@ -45,3 +48,7 @@ But I [C]had a good [D7]life all the [G]way
 {start_of_verse: Verse 5}
 He went to Paris lookin' for answers to [C]questions that [D7]bothered him [G]so
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Everyone Has Someone They Can't Forget}
 {meta: artist Conway Twitty}
 {meta: composer Naomi Martin and Marty Yonts}
+{meta: x_source classic-country}
+{meta: x_source_file everyonehassomeonetheycantforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She gently opens up her [G7]scrapbook  [F][C]and a faded rose falls [C]out
@@ -28,3 +31,6 @@
 [C]Everyone has [G7]someone they can’t [D7][F]forget
 [C]Everyone has [G7]someone they can’t [C][F]forget
 {end_of_verse}
+
+
+

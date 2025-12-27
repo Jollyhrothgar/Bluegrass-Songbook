@@ -1,6 +1,9 @@
 {meta: title Where Do I Go From Here (A Trucker's Song)}
 {meta: artist Alan Jackson}
 {meta: composer Robert Castleman and Stephen Foster}
+{meta: x_source classic-country}
+{meta: x_source_file wheredoigofromhereatruckerssonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Well I [G]came from [G7]Alabama [C]with a [G]banjo on my [D7]knee
@@ -50,3 +53,9 @@ And [G]when I find Suzanna [C]I'll [G]fall down [D7]on the [G]ground
 And if I do not find [C]her then [G]I should surely [D7]die
 And [G]when I'm dead and buried [C]Suz[G]anna [D7]don't you [G]cry
 {end_of_verse}
+
+
+
+
+
+

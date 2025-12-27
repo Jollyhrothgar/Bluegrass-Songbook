@@ -1,5 +1,8 @@
 {meta: title Let's Make Sure We Kiss Goodbye}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file letsmakesurewekissgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Kiss me like you'll [F]never see my [G7]face again[F]
@@ -45,3 +48,8 @@ Oh let's [F]make sure we [G7]kiss good[Am]bye[C]
 {start_of_verse: Verse 4}
 Oh let's [F]make sure we [G7]kiss good[C]bye
 {end_of_verse}
+
+
+
+
+

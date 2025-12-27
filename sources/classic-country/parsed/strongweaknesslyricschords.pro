@@ -1,6 +1,9 @@
 {meta: title Strong Weakness}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file strongweaknesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got a strong weakness baby I'm gone on your [F]sweet[C]ness
@@ -34,3 +37,7 @@ I got a strong weakness
 I got a strong weakness
 Baby I got a strong [C]weakness
 {end_of_verse}
+
+
+
+

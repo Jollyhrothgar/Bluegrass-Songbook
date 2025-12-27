@@ -1,6 +1,9 @@
 {meta: title Let It Snow}
 {meta: artist Christmas song lyrics}
 {meta: composer Sammy Cahn and Jule Styne}
+{meta: x_source classic-country}
+{meta: x_source_file letitsnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the weather outside [G7]is [C]frightful
@@ -32,3 +35,7 @@ And my dear we're still [G7]good-bye-ing
 But as [Dm]long as you [A7]love me [Dm]so
 Let it [G7]snow let it snow let it [C]snow
 {end_of_verse}
+
+
+
+

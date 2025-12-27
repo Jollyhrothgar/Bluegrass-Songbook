@@ -1,6 +1,9 @@
 {meta: title Cry Softly Lonely One}
 {meta: artist Roy Orbison}
 {meta: composer Don Gant and Joe Melson}
+{meta: x_source classic-country}
+{meta: x_source_file crysoftlylonelyonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Cry softly lonely one it's over it's said it's [Am]done
@@ -28,3 +31,6 @@
 [C]You can [D7]run [C]to me come [D7]to me you can [G]cry to [C]me
 [G]Tonight and [D7]forever lonely [G]one
 {end_of_verse}
+
+
+

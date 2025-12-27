@@ -1,6 +1,9 @@
 {meta: title I'm Too Good To Be Better Than Nothing Again}
 {meta: artist Leona Williams}
 {meta: composer Julie Jones, Eddie London, Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file imtoogoodtobebetterthannothingagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She turned you down again tonight that’s why you’re [F]call[C]ing
@@ -33,3 +36,7 @@ I’m too good to be better than [D7]nothing [G]again
 {start_of_verse: Verse 4}
 Yes I’m too good to be better than [D7]nothing [G]again
 {end_of_verse}
+
+
+
+

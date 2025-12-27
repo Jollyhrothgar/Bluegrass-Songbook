@@ -1,5 +1,8 @@
 {meta: title I'm Gonna Break Your Heart}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnabreakyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a time to laugh and [F]there's a time to [C]cry
@@ -27,3 +30,6 @@ But [F]love just died go [C]on and cry I'm [G7]gonna break your [C]heart
 {start_of_verse: Verse 4}
 But [F]love just died go [C]on and cry I'm [G7]gonna break your [C]heart
 {end_of_verse}
+
+
+

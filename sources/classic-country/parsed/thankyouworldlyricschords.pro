@@ -1,6 +1,9 @@
 {meta: title Thank You World}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file thankyouworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wanna thank you world for letting me belong
@@ -59,3 +62,11 @@ Without a place here in this world I [Em]know that I'd be lost
 {start_of_verse: Verse 9}
 [C]Thank you world for letting me con[D7]tribute to the [G]cause
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Hate Love}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file ihatelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hate tele[G]phones [C]especially when I'm [D7]waiting for your [G]call
@@ -34,3 +37,8 @@ And I hate [D7]love more than [C]anything else in [D7]life I hate [G]love
 I hate teardrops [C]especially just [D7]before they start to [G]fall
 And I hate [D7]love more than [C]anything else in [D7]life I hate [G]love
 {end_of_verse}
+
+
+
+
+

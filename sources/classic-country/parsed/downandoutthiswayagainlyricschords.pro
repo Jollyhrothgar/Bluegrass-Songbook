@@ -1,6 +1,9 @@
 {meta: title Down And Out This Way Again}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file downandoutthiswayagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My life is not the [F]life you were [G7]accustomed to
@@ -27,3 +30,6 @@ If you’re [G7]ever down and out this way [C]again
 I’ll be right here where you [C7]left me and [F]you just might need a [D7]friend
 If you’re [G7]ever down and out this way [F]agai[C]n
 {end_of_verse}
+
+
+

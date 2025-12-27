@@ -1,6 +1,9 @@
 {meta: title I Almost Forgot}
 {meta: artist Tammy Wynette}
 {meta: composer Karen Ruth Staley}
+{meta: x_source classic-country}
+{meta: x_source_file ialmostforgotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So we meet again  [G7]how long has it [C]been
@@ -33,3 +36,7 @@ Till your memory [D7]reminded my [G]heart [C]
 {start_of_verse: Verse 5}
 Till your [G]memory [D7]reminded my [C]hea[G]rt
 {end_of_verse}
+
+
+
+

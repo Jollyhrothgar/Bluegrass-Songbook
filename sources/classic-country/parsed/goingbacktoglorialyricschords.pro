@@ -1,6 +1,9 @@
 {meta: title Going Back To Gloria}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Bill Dees}
+{meta: x_source classic-country}
+{meta: x_source_file goingbacktoglorialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Going back to Gloria the girl I'm dreaming [D7]of
@@ -28,3 +31,5 @@
 [G]Going back to Gloria Gloria my love
 [D7]Gloria my [G]love
 {end_of_verse}
+
+

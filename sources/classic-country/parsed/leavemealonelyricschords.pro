@@ -1,6 +1,9 @@
 {meta: title Leave Me Alone}
 {meta: artist Jean Shepard}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file leavemealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't want you anymore I found somebody [G7]new
@@ -39,3 +42,8 @@
 [C7]Find yourself somebody new I did while you were [F]gone
 [G7]So do me a favor and leave me [C]alone
 {end_of_verse}
+
+
+
+
+

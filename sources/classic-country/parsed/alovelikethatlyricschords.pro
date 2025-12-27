@@ -1,5 +1,8 @@
 {meta: title A Love Like That}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file alovelikethatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I've been [F]wonderin' [G7]what I've been [C]missin' 
@@ -68,3 +71,12 @@ And I need a [G7]love like [C]that
 Yeah a truck needs a [G7]highway a [C]train needs a [F]track 
 And I need a [G7]love like [C]that
 {end_of_verse}
+
+
+
+
+
+
+
+
+

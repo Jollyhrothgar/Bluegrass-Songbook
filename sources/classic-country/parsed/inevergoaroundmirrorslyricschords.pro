@@ -1,6 +1,9 @@
 {meta: title I Never Go Around Mirrors}
 {meta: artist Gene Watson}
 {meta: composer Sanger D. Shafer &amp; Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file inevergoaroundmirrorslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't stand to see a good man go to [F]waste
@@ -33,3 +36,7 @@ Cause [C]I've got a [G7]heartache to [C]hide
 {start_of_verse: Verse 5}
 Tag: And it tears me up [G7]to see a grown man [C]cry
 {end_of_verse}
+
+
+
+

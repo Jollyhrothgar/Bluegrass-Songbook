@@ -1,5 +1,8 @@
 {meta: title Tormented Heart}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file tormentedheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no wings on you girl 
@@ -29,3 +32,5 @@ And it would [C]surely be a sin
 To [F]love this much [C]again
 Cause I've got a [G7]tormented [C]heart
 {end_of_verse}
+
+

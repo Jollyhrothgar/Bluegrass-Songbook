@@ -1,6 +1,9 @@
 {meta: title Tempted}
 {meta: artist Tammy Wynette}
 {meta: composer Al Turney}
+{meta: x_source classic-country}
+{meta: x_source_file temptedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes love [D7]can hurt you [G]bad
@@ -25,3 +28,6 @@ And I'm tempted to [D7]fall in love [G]again
 Tempted  [C]tempted  [G]tempted to fall in love [D7]again
 [G]Tempted  [C]tempted  I'm [G]tempted to fall [D7]in love [G]again
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Little Joe The Wrangler}
 {meta: artist Marty Robbins}
 {meta: composer Howard Thorpe}
+{meta: x_source classic-country}
+{meta: x_source_file littlejoethewranglerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little Joe the wrangler will [F]wrangle [C]nevermore
@@ -78,3 +81,13 @@
 [C]Beneath his horse his life was gone his [F]spur had rung its [C]knell
 [G7]Was our little Texas stray poor wrangler [C]Joe
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

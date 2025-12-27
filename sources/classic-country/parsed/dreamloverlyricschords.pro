@@ -1,6 +1,9 @@
 {meta: title Dream Lover}
 {meta: artist Tanya Tucker}
 {meta: composer Bobby Darin}
+{meta: x_source classic-country}
+{meta: x_source_file dreamloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every night I hope and pray  a dream lover will come my [Em]way
@@ -43,3 +46,10 @@
 {start_of_verse: Verse 6}
 Dream lover just dream dream lover all my loving sweet dream dream lover
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That's Where I Draw The Line}
 {meta: artist Randy Travis}
 {meta: composer Roger Brown and Trey Bruce}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhereidrawthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Hope you didn't burn too many [C]bridges 
@@ -54,3 +57,10 @@ That's [C]where I [G7]draw the [C]line
 {start_of_verse: Verse 6}
 [F]That's [C]where I [G7]draw the [C]line
 {end_of_verse}
+
+
+
+
+
+
+

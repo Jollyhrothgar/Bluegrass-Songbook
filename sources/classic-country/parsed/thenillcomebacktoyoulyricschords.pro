@@ -1,6 +1,9 @@
 {meta: title Then I'll Come Back To You}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Guidry Tassin}
+{meta: x_source classic-country}
+{meta: x_source_file thenillcomebacktoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If there ever is a sand storm out on the [C7]deep blue [F]sea
@@ -29,3 +32,6 @@ And [C]I lose my senses then [G7]I’ll come home to [C]you
 If I [C]ever find a flower that [C7]doesn’t like the [F]dew
 And [C]Easter comes on Wednesday then [G7]I’ll come home to [C]you
 {end_of_verse}
+
+
+

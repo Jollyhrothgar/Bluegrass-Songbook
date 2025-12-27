@@ -1,6 +1,9 @@
 {meta: title Fireball Mail}
 {meta: artist Roy Acuff}
 {meta: composer Floyd Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file fireballmaillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here she comes look at her roll
@@ -29,3 +32,6 @@ Get that curve out of the [G7]way
 Watch her fly look at her [C]sail
 Let her by by [G7]by the fireball [C]mail
 {end_of_verse}
+
+
+

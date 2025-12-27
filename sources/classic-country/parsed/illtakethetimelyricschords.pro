@@ -1,5 +1,8 @@
 {meta: title I’ll Take The Time}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file illtakethetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometime when all the time in the world is [F]mine
@@ -33,3 +36,7 @@ When I’ve run my course and took my tolls
 And [F]the pace of life has made me old
 I’ll [G7]take the time to miss you [C]too
 {end_of_verse}
+
+
+
+

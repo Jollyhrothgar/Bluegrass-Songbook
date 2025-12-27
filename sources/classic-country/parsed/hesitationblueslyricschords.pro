@@ -1,6 +1,9 @@
 {meta: title Hesitation Blues}
 {meta: artist Willie Nelson}
 {meta: composer Billy Smythe and Scott Middleton}
+{meta: x_source classic-country}
+{meta: x_source_file hesitationblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woke up this morning looking for my shoes
@@ -29,3 +32,6 @@ If the blues overtake me I´ll [C7]jump in and drown
 Lordy tell me [F]how long will I have to [C]wait
 Can I get to you [G7]now must I hesi[C]tate
 {end_of_verse}
+
+
+

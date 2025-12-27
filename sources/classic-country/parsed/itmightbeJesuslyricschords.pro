@@ -1,6 +1,9 @@
 {meta: title It Might Be Jesus}
 {meta: artist Statler Brother}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file itmightbeJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One was standing on the corner with a [G7]tin cup in his hand
@@ -54,3 +57,10 @@ It might be [G7]Jesus it might be [C]Him
 {start_of_verse: Verse 6}
 It might be [F]Jesus it might [C]Jesus 
 {end_of_verse}
+
+
+
+
+
+
+

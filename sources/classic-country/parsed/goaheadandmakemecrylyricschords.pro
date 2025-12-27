@@ -1,6 +1,9 @@
 {meta: title Go Ahead And Make Me Cry Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Leslie Lyle}
+{meta: x_source classic-country}
+{meta: x_source_file goaheadandmakemecrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Go ahead and make me cry go ahead and make me [D7]blue
@@ -22,3 +25,5 @@ Even [A7]though you broke my heart it's [D7]yours to tear apart
 Go ahead and make me [G]live go ahead and let me [D7]die
 This is all I have to give go ahead and make me [G]cry
 {end_of_verse}
+
+

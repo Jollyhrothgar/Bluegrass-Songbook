@@ -1,5 +1,8 @@
 {meta: title Sing That Kind Of Song}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file singthatkindofsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sing me a [F]song about [C]heartache 
@@ -28,3 +31,6 @@ Put in [A7]all of the [D7]loneliness
 And [G]sing me a [C]song bout a [G]love affair gone [C]wrong
 Make me [G]cry sing [F]that kind of [G]song 
 {end_of_verse}
+
+
+

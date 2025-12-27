@@ -1,5 +1,8 @@
 {meta: title Flesh and Blood}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file fleshandbloodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Beside a Singing Mountain [F]Stream
@@ -56,3 +59,7 @@ And grow from all these seed
 [F]Flesh And Blood need Flesh And [C]Blood
 [F]And you're the one I [C]need
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Wish I Could Fall in Love Again}
 {meta: artist Jan Howard}
 {meta: composer Harlan Howard and Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file iwishicouldfallinloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I could fall in love [F]again
@@ -22,3 +25,5 @@
 [C]And I wish I could fall in love [F]again
 [G7]Then maybe I'd fall out of love with [C]you
 {end_of_verse}
+
+

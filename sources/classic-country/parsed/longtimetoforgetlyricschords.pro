@@ -1,6 +1,9 @@
 {meta: title Long Time To Forget}
 {meta: artist George Jones}
 {meta: composer Carl Belew and W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file longtimetoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It will take a long time to forget you my [D7]dear
@@ -54,3 +57,10 @@ It will [G]take a long time [D7]to [G]forget
 {start_of_verse: Verse 5}
 It will take a long time [D7]to [G]forget 
 {end_of_verse}
+
+
+
+
+
+
+

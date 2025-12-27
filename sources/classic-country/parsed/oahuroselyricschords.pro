@@ -1,5 +1,8 @@
 {meta: title Oahu Rose}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file oahuroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard you crying to the whispering [C]trade winds
@@ -21,3 +24,5 @@ Until [D7]eternity is a long time [G]ago)
 Until the [C]pale moon is a tropical [G]sunset
 I'll never [D7]fail you my lovely Oahu [G]rose[D7]   [G]
 {end_of_verse}
+
+

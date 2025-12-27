@@ -1,6 +1,9 @@
 {meta: title Whole Lotta Love On The Line}
 {meta: artist Charley Pride}
 {meta: composer Aaron Tippin and Donni Kees}
+{meta: x_source classic-country}
+{meta: x_source_file wholelottaloveonthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've called from every run [F]down phone booth in Atlanta [C]Georgia
@@ -30,3 +33,6 @@
 [F]Don't hang up the phone [C]cause everything ain’t [F]gone
 [C]Think about it baby [G7]there's a whole lotta love on the [C]line
 {end_of_verse}
+
+
+

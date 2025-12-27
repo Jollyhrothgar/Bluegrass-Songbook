@@ -1,5 +1,8 @@
 {meta: title Meet Me In Heaven}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file meetmeinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We saw houses falling from the sky 
@@ -40,3 +43,8 @@ Will you [C]meet [F]me in [C]Heaven [C][G7]someday
 In sweet [F]ecstasy while the ages [F][C]roll 
 Will you [C]meet [F]me in [C]Heaven [C][G7]someday 
 {end_of_verse}
+
+
+
+
+

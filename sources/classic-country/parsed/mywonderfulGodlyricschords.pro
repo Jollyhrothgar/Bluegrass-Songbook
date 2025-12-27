@@ -1,5 +1,8 @@
 {meta: title My Wonderful God}
 {meta: artist The Oak Ridge Boys}
+{meta: x_source classic-country}
+{meta: x_source_file mywonderfulGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God is so wonderful [F]kind is [C]He
@@ -25,3 +28,6 @@ He will encourage when [F]I'm in despair
 {start_of_verse: Verse 4}
 [C]Oh my [G7]wonderful [C]God 
 {end_of_verse}
+
+
+

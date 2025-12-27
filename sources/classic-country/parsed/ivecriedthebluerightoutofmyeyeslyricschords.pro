@@ -1,6 +1,9 @@
 {meta: title I've Cried The Blue Right Out Of My Eyes}
 {meta: artist Crystal Gayle}
 {meta: composer Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file ivecriedthebluerightoutofmyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Oh I've hurt enough for the both of [G]us 
@@ -43,3 +46,8 @@ Or don't you [D7]realize
 Since you've left my side darlin' I've [Am]cried
 The [D7]blue right out of my [G]eyes
 {end_of_verse}
+
+
+
+
+

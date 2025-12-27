@@ -1,6 +1,9 @@
 {meta: title I've Been Walkin'}
 {meta: artist Ernest Tubb}
 {meta: composer Gladys Flatt and Josh Graves}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeenwalkinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I couldn't sleep last night and started [C]walkin'
@@ -36,3 +39,7 @@ And I ain't even left my [G]house
 Well [D7]I've been walkin' nearly all night long
 And I ain't even left my [G]house
 {end_of_verse}
+
+
+
+

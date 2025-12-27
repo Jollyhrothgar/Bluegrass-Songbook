@@ -1,6 +1,9 @@
 {meta: title This Kind Of Love Ain't Meant For Sunday}
 {meta: artist Carl Smith}
 {meta: composer Jimmy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file thiskindofloveaintmeantforsundaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Folks are on their way to church
@@ -39,3 +42,6 @@ Cause our [D7]kind of love ain't meant for Sunday [G]school
 So I'll lay here and pray for her
 Cause [D7]our love ain't meant for Sunday [G]school
 {end_of_verse}
+
+
+

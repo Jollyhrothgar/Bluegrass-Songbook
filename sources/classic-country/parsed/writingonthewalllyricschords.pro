@@ -1,6 +1,9 @@
 {meta: title Writing On The Wall}
 {meta: artist George Jones}
 {meta: composer Freddy Weller and Bobby Fischer}
+{meta: x_source classic-country}
+{meta: x_source_file writingonthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She was holding back the tears
@@ -37,3 +40,7 @@ It said we love you [C]daddy most of [D7]all
 {start_of_verse: Verse 4}
 [D7]I saw the writing on the [G]wall
 {end_of_verse}
+
+
+
+

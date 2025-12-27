@@ -1,6 +1,9 @@
 {meta: title A Tear Fell}
 {meta: artist Billy Crash Craddock}
 {meta: composer Eugene Randolph and Dorian Burton}
+{meta: x_source classic-country}
+{meta: x_source_file atearfelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A fool am I a [Dm]fool am I [G7]in [C]love
@@ -27,3 +30,6 @@ A tear fell when you told me that the flame in your heart [F]died
 Darling have I [C]lost you like [G7]these teardrops from my [C]eyes
 A fool am I a [Dm]fool am I [G7]in [C]love
 {end_of_verse}
+
+
+

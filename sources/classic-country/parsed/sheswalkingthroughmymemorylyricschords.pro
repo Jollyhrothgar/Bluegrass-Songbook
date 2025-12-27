@@ -1,6 +1,9 @@
 {meta: title She's Walking Through My Memory}
 {meta: artist Doyle Lawson}
 {meta: composer Leroy Drumm and Pete Goble}
+{meta: x_source classic-country}
+{meta: x_source_file sheswalkingthroughmymemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somewhere in my thoughts there lives a [C]lady
@@ -33,3 +36,7 @@ And [G]yet I die a [D7]little more each [G]day
 {start_of_verse: Verse 5}
 She lets me die a [D7]little more each [C]day [G]
 {end_of_verse}
+
+
+
+

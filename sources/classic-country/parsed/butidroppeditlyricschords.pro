@@ -1,6 +1,9 @@
 {meta: title But I Dropped It}
 {meta: artist Conway Twitty}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file butidroppeditlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was a man with a world in his hand [F]but I dropped it
@@ -24,3 +27,6 @@ He took my [G7]girl he put my world right in his [C]pocket[F]  [C]
 {start_of_verse: Verse 4}
 He took my [G7]girl he put my world right in his [C]pocket
 {end_of_verse}
+
+
+

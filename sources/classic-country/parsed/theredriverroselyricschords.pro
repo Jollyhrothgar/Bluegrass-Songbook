@@ -1,6 +1,9 @@
 {meta: title The Red River Rose}
 {meta: artist Red Steagall}
 {meta: composer Ken Alford, Danny Steagall, Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file theredriverroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a fence line north of Estelline the strangest sight I'd ever seen
@@ -50,3 +53,9 @@ We [A]light a fire and [C]watch the snowflakes [G7]fall
 [C]I'm glad it's [F]me that old [Em]tumble[F]weed chose to [G7]find Red River [Am]Rose 
 I love my [G7]Red River [C]Rose
 {end_of_verse}
+
+
+
+
+
+

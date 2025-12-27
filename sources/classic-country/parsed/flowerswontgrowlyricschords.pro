@@ -1,6 +1,9 @@
 {meta: title Flowers Won't Grow}
 {meta: artist Don Williams}
 {meta: composer Bob McDill and Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file flowerswontgrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Could it be our [C]love [D7]wasn't planted [G]deep enough
@@ -29,3 +32,6 @@ The [Em]ground must be [G]tended but we [C]left it [D7]alone
 The [G]seeds that we scattered are [C]all parched and [G]blown
 [Em]Flowers won't [G]grow in [D7]gardens of [G]stone
 {end_of_verse}
+
+
+

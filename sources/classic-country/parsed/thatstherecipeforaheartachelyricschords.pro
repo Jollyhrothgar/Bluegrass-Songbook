@@ -1,6 +1,9 @@
 {meta: title That’s The Recipe For A Heartache}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file thatstherecipeforaheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take a little cheatin’ here and a little cheatin’ there
@@ -64,3 +67,11 @@ If [G]misery is your [A7]favorite cup
 Just lead this life and lose your wife
 That’s the [D7]recipe for a [G]heartache
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Night Is The Longest Time Of Day}
 {meta: artist Mel Tillis}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file nightisthelongesttimeofdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]When the [G]daylight is gone and you've [Am]got no place to go
@@ -28,3 +31,6 @@ So spend your night loving not [Am]crying your life away
 Cause the [G]night is the [D7]longest time of [G]day
 Cause the night is the [D7]longest time of [G]day
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Little Girl Gone}
 {meta: artist Donna Fargo}
+{meta: x_source classic-country}
+{meta: x_source_file littlegirlgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here I am like a stranger in the house I grew up [C]in
@@ -46,3 +49,8 @@
 [C]And it just took a little while for me to get my head [G]together
 [D7]Growing up's the hardest thing I've ever [G]done
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Kentucky Borderline}
 {meta: artist Rhonda Vincent}
 {meta: composer Terry Herd and Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file kentuckyborderlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She pulled out of Mobile in the pouring rain
@@ -56,3 +59,10 @@ Listenin' to her engine keepin' [G]time
 {start_of_verse: Verse 5}
 [D7]Kentucky border[G]line
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Would You Recognize Jesus}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyourecognizeJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you've never fed the hungry 
@@ -65,3 +68,9 @@ Jesus could be [C]riding in a '[D7]49 [G]Ford
 {start_of_verse: Verse 5}
 Jesus could be [C]riding in a '[D7]49 [G]Ford
 {end_of_verse}
+
+
+
+
+
+

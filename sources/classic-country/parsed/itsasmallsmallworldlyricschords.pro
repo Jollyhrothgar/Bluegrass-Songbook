@@ -1,6 +1,9 @@
 {meta: title It's A Small Small World}
 {meta: artist The Statler Brothers}
 {meta: composer Gary Eugene Scruggs and Thomas James Schuyler}
+{meta: x_source classic-country}
+{meta: x_source_file itsasmallsmallworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a small small world [F]fancy meetin' [C]you
@@ -64,3 +67,11 @@ It's a [Am]small [G7]small [F]world
 You can say that [C]again
 It's a [G7]small small [C]world
 {end_of_verse}
+
+
+
+
+
+
+
+

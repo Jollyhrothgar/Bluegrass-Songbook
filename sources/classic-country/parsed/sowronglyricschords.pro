@@ -1,5 +1,8 @@
 {meta: title So Wrong}
 {meta: artist Patsy Cline}
+{meta: x_source classic-country}
+{meta: x_source_file sowronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've been [C]so wrong for [D7]so long 
@@ -36,3 +39,8 @@ I was [C]so wrong for [D7]so long
 But [Dm]I've seen the light and darlin’ [G7]I'll make it right 
 I was [C]wrong [Fm]    [C]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rodeo}
 {meta: artist Garth Brooks}
 {meta: composer Larry Bastian}
+{meta: x_source classic-country}
+{meta: x_source_file rodeolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]His eyes are cold and restless his [F]wounds have almost [C]healed
@@ -57,3 +60,9 @@ And the joy and the pain and they [G7]call the thing rod[C]eo
 It's the broncs and the blood it's the steers and the mud
 And they [G7]call the thing rod[C]eo
 {end_of_verse}
+
+
+
+
+
+

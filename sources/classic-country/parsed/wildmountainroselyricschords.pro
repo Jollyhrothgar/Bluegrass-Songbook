@@ -1,6 +1,9 @@
 {meta: title Wild Mountain Rose}
 {meta: artist Conway Twitty}
 {meta: composer L.E. White, Betty Jo White, Charles Haney}
+{meta: x_source classic-country}
+{meta: x_source_file wildmountainroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]High on the mountain where the wild flowers grow
@@ -50,3 +53,11 @@ And I'm to blame for the scarlet light that's burning
 Now down in the valley where the lonely wind blows
 [D7]I lost the love of my wild mountain [G]Rose
 {end_of_verse}
+
+
+
+
+
+
+
+

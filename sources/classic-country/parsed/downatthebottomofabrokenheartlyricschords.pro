@@ -1,5 +1,8 @@
 {meta: title Down At The Bottom of A Broken Heart}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file downatthebottomofabrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was sitting on top of the world
@@ -51,3 +54,9 @@ Well I took my love for my Sally Ann
 [F]Yeah it's cold lonely and dark
 [G7]Way down at the bottom of a broken [C]heart
 {end_of_verse}
+
+
+
+
+
+

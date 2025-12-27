@@ -1,5 +1,8 @@
 {meta: title After You Leave Me}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file afteryouleavemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]After you leave me who'll kiss [C]away my [G]tears
@@ -35,3 +38,7 @@ After you leave me who'll cheer my lonely years
 No one but you, dear, can make my life worthwhile
 After you leave me I won't wanna smile
 {end_of_verse}
+
+
+
+

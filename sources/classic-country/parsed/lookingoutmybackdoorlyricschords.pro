@@ -1,6 +1,9 @@
 {meta: title Looking Out My Back Door}
 {meta: artist Buddy Alan}
 {meta: composer John Cameron Fogerty}
+{meta: x_source classic-country}
+{meta: x_source_file lookingoutmybackdoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just got home from Illinois [Em]lock the front door oh boy
@@ -36,3 +39,7 @@ All the trouble is Illinois [Em]lock the front door oh boy
 [G]Bother me tomorrow [Em]today I'll find no sorrow
 [C]Doot doot [G]doot looking [D7]out my back [G]door
 {end_of_verse}
+
+
+
+

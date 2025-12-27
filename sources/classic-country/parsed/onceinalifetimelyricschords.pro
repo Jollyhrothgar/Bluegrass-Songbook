@@ -1,6 +1,9 @@
 {meta: title Once In A Lifetime}
 {meta: artist Patty Loveless}
 {meta: composer Eric Kaz and Marcia Zwilling}
+{meta: x_source classic-country}
+{meta: x_source_file onceinalifetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]All my [C]life I [Em]tried to [Am]find 
@@ -45,3 +48,8 @@ And [C]nobo[F]dy [C]else [G7]will [Am]do
 ([F]No[A7]body) [C]nobo[F]dy [C]else [G7]will [C]do 
 ([F]No[A7]body) [C]nobo[F]dy [C]else [G7]will [C]do 
 {end_of_verse}
+
+
+
+
+

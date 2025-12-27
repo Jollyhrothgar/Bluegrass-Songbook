@@ -1,6 +1,9 @@
 {meta: title Tell Laura I Love Her}
 {meta: artist the Everly Brothers}
 {meta: composer Ray Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file telllaurailoveherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tommy and Laura were [C]lovers    
@@ -54,3 +57,10 @@ Tell Laura not [G]to cry my love for [Am]her
 {start_of_verse: Verse 8}
 My [Am]love for her  [D7]will never [G]die
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title She'll Leave You With A Smile}
 {meta: artist George Strait}
 {meta: composer Jackson Leap}
+{meta: x_source classic-country}
+{meta: x_source_file shellleaveyouwithasmilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I can [G]see you're falling [C]for her 
@@ -36,3 +39,7 @@ She's a [G]woman she's a [D7]child
 She's a [Em]heartache [C]when she [G]leaves you[C] 
 But she'll [G]leave you [D7]with a [G]smile[C]  [G]  [D7]   [G]
 {end_of_verse}
+
+
+
+

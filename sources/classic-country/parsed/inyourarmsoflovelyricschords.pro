@@ -1,6 +1,9 @@
 {meta: title In Your Arms Of Love}
 {meta: artist Wynn Stewart}
 {meta: composer Buck Owens and Gene Price}
+{meta: x_source classic-country}
+{meta: x_source_file inyourarmsoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Save me from loneliness [G7]rescue me with your [C]love
@@ -30,3 +33,7 @@
 [C7]I'll be satisfied as long as you keep [F]me
 [C]Wrapped [G7]tightly in your arms of [C]love
 {end_of_verse}
+
+
+
+

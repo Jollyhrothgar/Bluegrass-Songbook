@@ -1,5 +1,8 @@
 {meta: title Just Like A Fool}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file justlikeafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just like a fool I asked him if he'd go with us [G7]tonight
@@ -26,3 +29,6 @@
 [C7]There wasn't anything to do or anything to [F]say
 [G7]So like a fool I watched you walk [C]away
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Guess You Had To Be There}
 {meta: artist Lorrie Morgan}
 {meta: composer Jon Robbin and Barbara Lloyd}
+{meta: x_source classic-country}
+{meta: x_source_file iguessyouhadtobetherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello honey how was [C7]your day well [F]you're sure in a good mood tonight
@@ -47,3 +50,9 @@ I guess you had to [F]be there [G7]
 {start_of_verse: Verse 6}
 I guess you had to [F]be [Fm]there [Em]   [Dm]   [C]
 {end_of_verse}
+
+
+
+
+
+

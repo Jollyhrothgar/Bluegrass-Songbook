@@ -1,6 +1,9 @@
 {meta: title Downfall Of Me}
 {meta: artist Sonny James}
 {meta: composer Ted Riedel}
+{meta: x_source classic-country}
+{meta: x_source_file downfallofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Missing your loving [Am]touch 
@@ -30,3 +33,6 @@ Loving you constant[Am]ly
 Has been the [D7]downfall of [G]me
 Repeat last verse
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Atlanta Anymore}
 {meta: artist Gene Watson}
 {meta: composer Charlie Craig and Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file atlantaanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Inside a suit coat pocket in the back of his closet today
@@ -50,3 +53,11 @@ Cause she folded up the pages and slipped them back into the envelope
 He wrote it and she mailed it
 [D7]He won't be in Atlanta [G]anymore
 {end_of_verse}
+
+
+
+
+
+
+
+

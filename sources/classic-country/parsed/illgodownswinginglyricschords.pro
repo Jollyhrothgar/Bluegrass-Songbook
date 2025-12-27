@@ -1,5 +1,8 @@
 {meta: title I’ll Go Down Swinging}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file illgodownswinginglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The one I love don't [C]want me hanging [G]round
@@ -29,3 +32,7 @@ Where there's lights and laughter booze and blonds
 {start_of_verse: Verse 2}
 [C]Cause if I gotta go  I'll go down [G]swinging
 {end_of_verse}
+
+
+
+

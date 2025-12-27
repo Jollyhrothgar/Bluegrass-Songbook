@@ -1,6 +1,9 @@
 {meta: title How Do You Ask}
 {meta: artist Billy Walker}
 {meta: composer Fred Foster and Dale Ward}
+{meta: x_source classic-country}
+{meta: x_source_file howdoyouasklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How do you ask someone to [C]love you
@@ -29,3 +32,6 @@ But [A7]if you can teach me I’m willing to [D7]learn
 How do you ask someone to [C]love you
 When the [D7]one you love don't feel the same [G]way
 {end_of_verse}
+
+
+

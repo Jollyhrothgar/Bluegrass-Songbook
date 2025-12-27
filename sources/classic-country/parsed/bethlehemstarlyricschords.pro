@@ -1,6 +1,9 @@
 {meta: title Bethlehem Star}
 {meta: artist Slim Whitman}
 {meta: composer E.S. Tillotson and W. Moore}
+{meta: x_source classic-country}
+{meta: x_source_file bethlehemstarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wrapped in the silence of midnight
@@ -29,3 +32,6 @@ Ye who have strayed into darkness
 [C]Token in[F]side [A7]symbol di[D7]vine
 [F]Pro[F]mise [C]fulfilled [A7]word of our [D7]Lord [G7]made [C]true
 {end_of_verse}
+
+
+

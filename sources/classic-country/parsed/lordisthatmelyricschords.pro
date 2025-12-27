@@ -1,6 +1,9 @@
 {meta: title Lord Is That Me}
 {meta: artist Jack Greene}
 {meta: composer Dallas Frazier and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file lordisthatmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can see a [G7]long line of [Am]cars with their [G7]headlights [C]on [G7]
@@ -43,3 +46,9 @@ Lord is that [F]me if it is have [E7]mercy  [C]have mercy [G7]on [C]me
 {start_of_verse: Verse 5}
 [C]I can see that [G7]long line of [Am]cars with their [G7]headlights [C]on
 {end_of_verse}
+
+
+
+
+
+

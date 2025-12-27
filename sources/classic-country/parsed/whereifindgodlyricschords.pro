@@ -1,6 +1,9 @@
 {meta: title Where I Find God}
 {meta: artist Larry Fleet}
 {meta: composer John Larry Fleet Jr. and Connie Rae Harrington}
+{meta: x_source classic-country}
+{meta: x_source_file whereifindgodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]That night I hit rock bottom  sittin’ [C]on an old [G]barstool
@@ -52,3 +55,8 @@ Me and Him just ridin’ around
 Yeah [C]sometimes whether I’m [Em]lookin’ [D7]for Him or [C]not
 That’s where I find [G]God
 {end_of_verse}
+
+
+
+
+

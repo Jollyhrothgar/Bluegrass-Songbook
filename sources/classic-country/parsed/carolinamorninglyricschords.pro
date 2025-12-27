@@ -1,6 +1,9 @@
 {meta: title Carolina Morning}
 {meta: artist The Paul Roberts Band}
 {meta: composer Don Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file carolinamorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s a Carolina [Am]Morning
@@ -55,3 +58,10 @@ I got you and [C]Carolina in my [G]soul[C]
 [G]And the breeze writes a [Am]wind song
 [C]Named it [D7]Carolina [G]Fall[C]
 {end_of_verse}
+
+
+
+
+
+
+

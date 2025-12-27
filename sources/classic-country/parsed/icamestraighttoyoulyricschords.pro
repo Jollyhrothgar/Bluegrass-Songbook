@@ -1,6 +1,9 @@
 {meta: title I Came Straight To You}
 {meta: artist Charlie Pride}
 {meta: composer Kevin Welch and John B. Jarvis}
+{meta: x_source classic-country}
+{meta: x_source_file icamestraighttoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well all I've got is [G7]what I've [C]got 
@@ -48,3 +51,10 @@ Like a moonbeam across the water [F]girl
 [G7]I came straight to [C]you  
 [G7]Came straight to [C]you  
 {end_of_verse}
+
+
+
+
+
+
+

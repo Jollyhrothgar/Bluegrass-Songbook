@@ -1,6 +1,9 @@
 {meta: title Casey Jones Was His Name}
 {meta: artist Hank Snow}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file caseyjoneswashisnamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A long time ago in a town in Tennessee
@@ -43,3 +46,8 @@ Clickety-clack clickety-clack [A7]braving rain and [D7]snow
 [G]Everyone knew three-eighty two was his [C]train
 [D7]Casey Jones was his [G]name
 {end_of_verse}
+
+
+
+
+

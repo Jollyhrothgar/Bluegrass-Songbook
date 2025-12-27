@@ -1,6 +1,9 @@
 {meta: title Lay Some Happiness On Me}
 {meta: artist Wilburn Brothers}
 {meta: composer Jean Chapel and Bob Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file laysomehappinessonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lay some happiness [C]on [G]me 
@@ -50,3 +53,9 @@ So the brighter side [D7]you'll see
 [G]No more loneliness [C]to [G]be 
 Lay some happiness [D7]on [G]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title A House Without Love}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ahousewithoutlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For years we both have lived on pride [D7]dear
@@ -28,3 +31,6 @@ We wanted wealth to call our [D7]own
 And [G]now we've reached the hour of [D7]parting
 A House Without Love is not a [G]home
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Who Cares}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file whocareslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I walk [C]down this old lonely street
@@ -36,3 +39,8 @@ All I [C]want is you all I know is you
 But some how our love just can't [F]be
 Oh [C]who cares yes [G7]who cares for [C]me
 {end_of_verse}
+
+
+
+
+

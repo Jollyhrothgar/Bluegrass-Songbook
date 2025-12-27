@@ -1,6 +1,9 @@
 {meta: title If The World Had A Front Porch}
 {meta: artist Tracy Lawrence}
 {meta: composer Kenny Beard, Paul Nelson, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file iftheworldhadafrontporchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was where my momma sat on that old [G7]swing with her [C]crochet
@@ -44,3 +47,8 @@ If the [F]world had a [C]front porch [G7]like we did back [C]then
 [F]Wouldn't be [C]gone with the [Am]wind
 If the [F]world had a [C]front porch [G7]like did back [C]then
 {end_of_verse}
+
+
+
+
+

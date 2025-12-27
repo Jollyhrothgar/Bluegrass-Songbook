@@ -1,6 +1,9 @@
 {meta: title Troubles Wall To Wall}
 {meta: artist Bobby Helms}
 {meta: composer Bobby Helms and Bob Hall}
+{meta: x_source classic-country}
+{meta: x_source_file troubleswalltowalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I climb the stairs up to my [C]lonely room
@@ -36,3 +39,7 @@ I've got [D7]troubles wall to [G]wall
 Yes I've got [D7]troubles wall to [C]wall
 (Troubles wall to [G]wall)
 {end_of_verse}
+
+
+
+

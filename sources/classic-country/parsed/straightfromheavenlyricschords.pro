@@ -1,6 +1,9 @@
 {meta: title Straight From Heaven}
 {meta: artist Slim Whitman}
 {meta: composer Jim Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file straightfromheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Straight from [C]heaven   [F]taking your [C]love
@@ -22,3 +25,5 @@
 [F]And when you hold me so I pray you'll never [C]know
 [G7]You're straight [C]from [C][F]heaven
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title He'll Be A Friend}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file hellbeafriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well God told Noah to build an ark He [G7]said it's gonna rain gonna be [C]dark
@@ -33,3 +36,7 @@ But Samson prayed and his bounds were gone
 [C]God showed Samson what to do and it's the same God that stands by [F]you
 [C]If you need a friend He'll guide you [G7]He'll be a friend to [C]you
 {end_of_verse}
+
+
+
+

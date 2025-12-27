@@ -1,6 +1,9 @@
 {meta: title I Just Can't Go On Dying Like This}
 {meta: artist George Strait}
 {meta: composer George Strait and Bubba Strait}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcantgoondyinglikethislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm driving in my car alone
@@ -37,3 +40,7 @@ But I [C]just can't go on [G7]dying like [C]this
 {start_of_verse: Verse 4}
 [F]Lord knows I [C]just can't go on [G7]dying like [F]this[C]
 {end_of_verse}
+
+
+
+

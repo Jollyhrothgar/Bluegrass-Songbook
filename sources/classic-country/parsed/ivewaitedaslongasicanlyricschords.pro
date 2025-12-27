@@ -1,6 +1,9 @@
 {meta: title I've Waited As Long As I Can}
 {meta: artist Tony Rice}
 {meta: composer Hylo Brown}
+{meta: x_source classic-country}
+{meta: x_source_file ivewaitedaslongasicanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've waited for you and I've [C]always been true 
@@ -50,3 +53,9 @@ And long for the day you take my [D7]hand
 I [G]asked again last night for your [C]love so divine 
 I've [G]waited as [D7]long as I [G]can
 {end_of_verse}
+
+
+
+
+
+

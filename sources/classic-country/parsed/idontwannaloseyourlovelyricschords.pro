@@ -1,6 +1,9 @@
 {meta: title I Don't Wanna Lose Your Love}
 {meta: artist Crystal Gayle}
 {meta: composer Joey Carbone}
+{meta: x_source classic-country}
+{meta: x_source_file idontwannaloseyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You look at me and I can see the [F]feelings gone
@@ -33,3 +36,6 @@ I don't wanna lose your love[G7]
 How could you [A#7]go and stop what [A7]we have started
 [Dm]Baby I don't [G7]wanna be [C]alone
 {end_of_verse}
+
+
+

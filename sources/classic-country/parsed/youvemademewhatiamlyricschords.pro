@@ -1,6 +1,9 @@
 {meta: title You've Made Me What I Am}
 {meta: artist Loretta Lynn}
 {meta: composer Oliver Doolittle}
+{meta: x_source classic-country}
+{meta: x_source_file youvemademewhatiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say that I'm no angel oh I [D7]know it much too [G]well
@@ -29,3 +32,6 @@ When you [A7]know you're the reason I hang my head in sha[D7]me
 Oh you [G]tell me to [D7]forget you and to [C]stop my hangin' [G]round
 I'd be ashamed if I were you you've [D7]made me what I [G]am
 {end_of_verse}
+
+
+

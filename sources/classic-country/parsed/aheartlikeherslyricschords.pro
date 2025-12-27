@@ -1,6 +1,9 @@
 {meta: title A Heart Like Hers}
 {meta: artist George Strait}
 {meta: composer Mark Nesler and Tony Martin}
+{meta: x_source classic-country}
+{meta: x_source_file aheartlikeherslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time that [Am]someone walks [Em]in  [G7]
@@ -41,3 +44,7 @@ Could [G7]break a heart like [C]hers
 {start_of_verse: Verse 4}
 How could [F]anybody [G7]break a heart like [C]hers
 {end_of_verse}
+
+
+
+

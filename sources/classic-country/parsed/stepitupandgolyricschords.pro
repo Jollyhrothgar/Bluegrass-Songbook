@@ -1,6 +1,9 @@
 {meta: title Step It Up And Go}
 {meta: artist The Everly Brothers}
 {meta: composer Jimmy Howard}
+{meta: x_source classic-country}
+{meta: x_source_file stepitupandgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nickel is a nickel dime is dime
@@ -66,3 +69,15 @@ Well you [G7]can't stand back you gotta [F]step it up and [C]go
 [F]Woh-oo-[C]oh [F]woh-oo-[C]oh  [F]woh-oo-[C]oh [F]woh-oo-[C]oh
 [F]Woh-oo-[C]oh [F]woh-oo-[C]oh  [F]woh-oo-[C]oh [F]woh-oo-[C]oh
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

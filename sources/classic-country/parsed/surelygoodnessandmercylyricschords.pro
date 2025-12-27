@@ -1,6 +1,9 @@
 {meta: title Surely Goodness And Mercy}
 {meta: artist The Blackwood Brothers}
 {meta: composer John W. Peterson and Alred B. Smith}
+{meta: x_source classic-country}
+{meta: x_source_file surelygoodnessandmercylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Surely goodness and mercy shall follow me
@@ -39,3 +42,9 @@ Surely goodness and mercy shall follow me
 {start_of_verse: Verse 7}
 [Dm]All the days all [G7]the days of [C]my [C][F]life
 {end_of_verse}
+
+
+
+
+
+

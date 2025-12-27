@@ -1,6 +1,9 @@
 {meta: title True Love Ways}
 {meta: artist Buddy Holly}
 {meta: composer Buddy Holly and Norman Petty}
+{meta: x_source classic-country}
+{meta: x_source_file truelovewayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Just you know [G]why[C]  why [D7]you and [G]I  [C]
@@ -22,3 +25,5 @@ Will bring us [A#7]joys to share with [D7]those who [A7]really [D7]care
 Sometimes we'll [G]sigh [C]  some[D7]times we'll [G]cry [C]
 And [D7]we'll know [G]why just [Em]you and [Am]I know [D7]true love [G]ways
 {end_of_verse}
+
+

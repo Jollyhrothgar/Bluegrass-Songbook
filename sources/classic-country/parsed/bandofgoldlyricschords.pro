@@ -1,6 +1,9 @@
 {meta: title Band Of Gold}
 {meta: artist Charly McClain}
 {meta: composer Ronald Dunbar and Edith Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file bandofgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now that you're gone all that's left is a [G7]band of gold
@@ -43,3 +46,8 @@ All that's left of the [F]dream I hold is a band of gold
 And the [Em]memory of what [Dm]love could be
 If [C]you were still [Dm]here with [C]me
 {end_of_verse}
+
+
+
+
+

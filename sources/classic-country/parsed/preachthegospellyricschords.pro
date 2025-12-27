@@ -1,5 +1,8 @@
 {meta: title Preach The Gospel}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file preachthegospellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Preach preach preach preach the gospel
@@ -74,3 +77,12 @@ I'd be [D7]getting on his [G]toes
 Regardless of who it [G]hurts
 Pray that God [D7]will have His [G]way
 {end_of_verse}
+
+
+
+
+
+
+
+
+

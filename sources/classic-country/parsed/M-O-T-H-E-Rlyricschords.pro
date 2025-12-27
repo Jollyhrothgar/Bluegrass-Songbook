@@ -1,6 +1,9 @@
 {meta: title M-O-T-H-E-R Lyrics Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Theodore Morse and Howard Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file M-O-T-H-E-Rlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]M is for the million things she [Dm]g-ave [G7]me
@@ -23,3 +26,4 @@
 [F]Put them all together they spell [Am][C]moth-er
 [F]A word that means the [G7]world to [C]me
 {end_of_verse}
+

@@ -1,5 +1,8 @@
 {meta: title Key To The Kingdom}
 {meta: artist The Whites}
+{meta: x_source classic-country}
+{meta: x_source_file keytothekingdomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I woke up this morning
@@ -84,3 +87,14 @@ I've gotta key to the kingdom
 I've got a key to the kingdom
 When the [A#7]world can't [C]do me no [G]harm
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

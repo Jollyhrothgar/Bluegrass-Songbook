@@ -1,6 +1,9 @@
 {meta: title Women Make A Fool Out Of Me}
 {meta: artist Ernest Tubb}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file womenmakeafooloutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love the women and I love 'em all the [C7]same
@@ -29,3 +32,6 @@ When I take a girl to dinner she hangs around my [C7]neck
 [G7]She always pays the taxi while she even pays the [C]check
 The women make a [G7]fool out of [C]me
 {end_of_verse}
+
+
+

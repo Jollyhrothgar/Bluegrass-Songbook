@@ -1,6 +1,9 @@
 {meta: title Live With Jesus}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Paul Kennerly}
+{meta: x_source classic-country}
+{meta: x_source_file livewithJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seen a lot of trouble at my door
@@ -37,3 +40,8 @@ Hard times is all I see
 [F]I've lost the ones that are [C]dear to me
 But I'm gonna live with [G7]Jesus in the [C]end
 {end_of_verse}
+
+
+
+
+

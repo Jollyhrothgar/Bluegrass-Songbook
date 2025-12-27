@@ -1,6 +1,9 @@
 {meta: title Brother Jukebox}
 {meta: artist Keith Whitley}
 {meta: composer Paul Craft}
+{meta: x_source classic-country}
+{meta: x_source_file brotherjukeboxlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Brother jukebox [F]sister [C]wine
@@ -40,3 +43,8 @@ You're the [C]only fami[G7]ly I've got [C]left
 {start_of_verse: Verse 6}
 [F]You're the [C]only fami[G7]ly I've got [C]left
 {end_of_verse}
+
+
+
+
+

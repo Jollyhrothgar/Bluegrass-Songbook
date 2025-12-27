@@ -1,6 +1,9 @@
 {meta: title Truly Truly True}
 {meta: artist Roy Orbison}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file trulytrulytruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love [Dm]you I do 
@@ -30,3 +33,7 @@ Truly [C]true
 [G7]I love you [C]truly truly [Am]true 
 [Dm]Truly [G7]true
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Barrooms To Bedrooms}
 {meta: artist David Wills}
 {meta: composer Seymour S. Rosenberg and David Wills}
+{meta: x_source classic-country}
+{meta: x_source_file barroomstobedroomslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take a minute and [F]think what you're [C]doing
@@ -29,3 +32,6 @@
 [C]So let me love you and I'll take [C7]you from the life that you [F]know
 [C]From barrooms to [G7]bedrooms I'm taking [F]you [C]home
 {end_of_verse}
+
+
+

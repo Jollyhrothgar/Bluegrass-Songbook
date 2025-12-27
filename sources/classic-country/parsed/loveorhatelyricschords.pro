@@ -1,6 +1,9 @@
 {meta: title Love Or Hate}
 {meta: artist Kitty Wells}
 {meta: composer Jack Anglin, Jim Anglin, Johnny Wright}
+{meta: x_source classic-country}
+{meta: x_source_file loveorhatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's no surprise [F]that we are [C]parting
@@ -36,3 +39,7 @@
 [F]Between us there can be no [C]friendship
 [G7]It's either love or it's [C]hate
 {end_of_verse}
+
+
+
+

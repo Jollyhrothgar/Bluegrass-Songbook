@@ -1,5 +1,8 @@
 {meta: title Tennessee Flat Top}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseeflattoplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a little cabaret in a South Texas border [G7]town
@@ -30,3 +33,5 @@ And hung around the cabaret until the doors were [C]locked
 Was a little dark haired boy who played the Tennessee flat top [C]box
 And he would [F]play
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Lies Can't Hide What's On My Mind}
 {meta: artist Melba Montgomery}
 {meta: composer Melba Montgomery and Carl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file liescanthidewhatsonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The nights I spend in [F]old familiar [C]places
@@ -29,3 +32,6 @@ And it scares away each [G7]new love that I'd [C]find
 My lips can say I [F]love you to [C]another
 [F]But the [C]lies can't [G7]hide what's on my [C]mind
 {end_of_verse}
+
+
+

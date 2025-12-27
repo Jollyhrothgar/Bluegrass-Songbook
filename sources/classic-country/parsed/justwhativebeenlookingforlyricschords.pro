@@ -1,6 +1,9 @@
 {meta: title Just What I've Been Looking For}
 {meta: artist Dottie West}
 {meta: composer Kenny O'Dell}
+{meta: x_source classic-country}
+{meta: x_source_file justwhativebeenlookingforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're just what I've been looking [F]for
@@ -48,3 +51,9 @@
 [D7]You're just what I've been looking [F]for
 [G7]Just what I had in [C]mind
 {end_of_verse}
+
+
+
+
+
+

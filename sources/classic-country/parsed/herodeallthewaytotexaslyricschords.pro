@@ -1,6 +1,9 @@
 {meta: title He Rode All The Way To Texas}
 {meta: artist Dolly Parton}
 {meta: composer John Starling}
+{meta: x_source classic-country}
+{meta: x_source_file herodeallthewaytotexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A light shines from my window
@@ -47,3 +50,10 @@ But the real men never do admit
 {start_of_verse: Verse 7}
 [G7]He's letting you know that he's the moving [C]kind
 {end_of_verse}
+
+
+
+
+
+
+

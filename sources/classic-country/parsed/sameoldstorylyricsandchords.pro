@@ -1,6 +1,9 @@
 {meta: title Same Old Story}
 {meta: artist Garth Brooks}
 {meta: composer Tony Arata}
+{meta: x_source classic-country}
+{meta: x_source_file sameoldstorylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While they dance how she [G7]holds him 
@@ -30,3 +33,6 @@ Same old [C]story[Em]   [Am]that [C]everybody [Em]knows
 [G7]One letting [C]go [A#7]    [Am]
 [G7]Same old [C]story
 {end_of_verse}
+
+
+

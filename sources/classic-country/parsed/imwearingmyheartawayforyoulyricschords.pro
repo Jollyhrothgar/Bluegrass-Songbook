@@ -1,6 +1,9 @@
 {meta: title I'm Wearing My Heart Away For You}
 {meta: artist George Jones}
 {meta: composer Darrell Edwards and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file imwearingmyheartawayforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I'm wearing my heart away for [G]you
@@ -33,3 +36,7 @@
 [C]My arms are cold while you hold someone [D7]new
 [G]And I'm wearing my heart away for you
 {end_of_verse}
+
+
+
+

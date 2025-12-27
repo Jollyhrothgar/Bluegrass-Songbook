@@ -1,6 +1,9 @@
 {meta: title Dallas}
 {meta: artist Connie Smith}
 {meta: composer Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file dallaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dallas I'll be coming home it [F]won't be very [C]long
@@ -29,3 +32,6 @@
 [C]The plane leaves in the morning and it's [F]heading straight to [C]Dallas
 [G7]Dallas I'll be coming home to [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rise and Shine}
 {meta: artist Tommy Cash}
 {meta: composer Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file riseandshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little children do not worry cause you still got lots of [Dm]time
@@ -29,3 +32,6 @@ Makes no [G7]difference what they tell you stand right [F]up and have your [C]sa
 Cause the good Lord said he loved you and to him you'll strictly [Dm]find
 Even [G7]though the world may use you turn around [F]and rise and [C]shine
 {end_of_verse}
+
+
+

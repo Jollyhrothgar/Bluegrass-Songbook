@@ -1,5 +1,8 @@
 {meta: title I've Learned To Take The Hurting}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file ivelearnedtotakethehurtinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've learned to take the hurting that [G7]goes with loving you
@@ -34,3 +37,7 @@ Yes I've learned to take the [C]hurting that [G7]goes with loving [C]you
 {start_of_verse: Verse 4}
 [F]Yes I've learned to take the [C]hurting that [G7]goes with loving [C]you
 {end_of_verse}
+
+
+
+

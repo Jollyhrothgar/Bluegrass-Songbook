@@ -1,6 +1,9 @@
 {meta: title Just Another Man}
 {meta: artist Glen Campbell}
 {meta: composer Joe Allison and Glen Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file justanothermanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd like to [A]stay with you a [F]while  [C]but I have [A]promises to [F]keep
@@ -32,3 +35,7 @@ So [F]I'll do what [Dm]I [G7]can
 [C]But if you [A]should not let me [F]go  [C]and if you [A]want me as I [F]am
 [Dm]And for a [G7]while I'll be a [Am]God instead of [Dm]just [G7]another [C]man
 {end_of_verse}
+
+
+
+

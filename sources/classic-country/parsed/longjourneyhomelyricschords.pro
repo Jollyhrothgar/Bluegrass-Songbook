@@ -1,5 +1,8 @@
 {meta: title Long Journey Home}
 {meta: artist The Bluegrass Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file longjourneyhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I lost all my money but a two-dollar bill
@@ -46,3 +49,9 @@ And I'm on my [G7]long journey [C]home
 {start_of_verse: Verse 4}
 And I'm on my [G7]long journey [C]home
 {end_of_verse}
+
+
+
+
+
+

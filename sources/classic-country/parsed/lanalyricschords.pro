@@ -1,6 +1,9 @@
 {meta: title Lana}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melson and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file lanalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ling-a ling-a-ling-a ling-a ling-a-ling
@@ -36,3 +39,7 @@ While we're [C]apart oh my [Am]heart
 All it can [F]say is [G7]L-a-n-a [C]L-a-n-a [Am]L-a-n-a [F]L-a-n-a [G7]hey
 Oh [C]hu hu hu hu [Am]Lana [F]hu hu hu hu [G7]Lana
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title As Far as It Goes}
 {meta: artist George Strait}
 {meta: composer Anthony George Chalk and Howard Russell Smith}
+{meta: x_source classic-country}
+{meta: x_source_file asfarasitgoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lately I've found myself [F]fallin' 
@@ -46,3 +49,8 @@ I'm [C]gonna love you [F]one day past forever
 {start_of_verse: Verse 5}
 [Dm]But that's as [G7]far as it [C]goes
 {end_of_verse}
+
+
+
+
+

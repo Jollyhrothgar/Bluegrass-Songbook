@@ -1,6 +1,9 @@
 {meta: title I'm Not Mad Just Hurt}
 {meta: artist Hank Thompson}
 {meta: composer Lila Derushe and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file imnotmadjusthurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey my little be-bop can't you [C]see
@@ -57,3 +60,10 @@ So I won't say shame [D7]shame on you
 [G]At the art of love your so [C]expert
 Baby I'm [G]not mad  [D7]just [G]hurt
 {end_of_verse}
+
+
+
+
+
+
+

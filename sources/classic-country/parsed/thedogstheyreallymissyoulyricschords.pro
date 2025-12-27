@@ -1,6 +1,9 @@
 {meta: title The Dogs They Really Miss You}
 {meta: artist The Austin Lounge Lizards}
 {meta: composer Hank Card}
+{meta: x_source classic-country}
+{meta: x_source_file thedogstheyreallymissyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know the day you left you said let's never talk [F]again 
@@ -64,3 +67,11 @@ But the [C7]dogs are really [F]blue
 Because they really [C]miss you
 And you [G7]know that I do [F]too wa-wa-wa-[C]ooooh
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title You're Not That Easy To Forget}
 {meta: artist Doug Stone}
+{meta: x_source classic-country}
+{meta: x_source_file yourenotthateasytoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I did not [G7]call to [C]fight 
@@ -59,3 +62,10 @@ You're not easy [F]to [G7]for[C]get
 To [Dm]tell you the [Em]truth
 You're not easy [F]to [G7]for[C]get
 {end_of_verse}
+
+
+
+
+
+
+

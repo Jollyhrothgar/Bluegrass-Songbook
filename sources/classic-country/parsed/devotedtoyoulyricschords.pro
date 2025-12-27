@@ -1,5 +1,8 @@
 {meta: title Devoted To You}
 {meta: artist Everly Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file devotedtoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling you can [G7]count on [C]me 
@@ -35,3 +38,7 @@ I’m [C]so de[G7]voted to [C]you
 [F]I’ll never give you [C]reason to cry 
 [G7]I’d be unhappy if you were blue 
 {end_of_verse}
+
+
+
+

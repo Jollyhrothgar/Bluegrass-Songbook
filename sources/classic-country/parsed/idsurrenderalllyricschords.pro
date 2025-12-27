@@ -1,6 +1,9 @@
 {meta: title I'd Surrender All}
 {meta: artist Randy Travis}
 {meta: composer Randy Travis and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file idsurrenderalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wake up [G7]to the silence in a [C]room
@@ -40,3 +43,8 @@ Now I'm staring out the window praying
 {start_of_verse: Verse 5}
 [Dm]If you would [G7]only call  I'd surrender [C]all
 {end_of_verse}
+
+
+
+
+

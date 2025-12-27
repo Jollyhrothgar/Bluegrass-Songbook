@@ -1,6 +1,9 @@
 {meta: title Down Deep Inside}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Jimbeau Hinson and Michael Foster}
+{meta: x_source classic-country}
+{meta: x_source_file downdeepinsidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know you're [Em]scared
@@ -53,3 +56,8 @@ Feel the way your heart beats
 Down deep inside down deep in[G]side
 Down [C]deep in[G]side
 {end_of_verse}
+
+
+
+
+

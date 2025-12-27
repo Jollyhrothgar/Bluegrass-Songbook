@@ -1,6 +1,9 @@
 {meta: title She Ain't Your Ordinary Girl}
 {meta: artist Alabama}
 {meta: composer Robert Jason}
+{meta: x_source classic-country}
+{meta: x_source_file sheaintyourordinarygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She ain't your ordinary [Em]she ain't your ordinary [C]girl [G]
@@ -67,3 +70,12 @@ She ain't your ordinary
 She ain't your ordinary 
 [Em]She ain't your ordinary [C]girl[G]
 {end_of_verse}
+
+
+
+
+
+
+
+
+

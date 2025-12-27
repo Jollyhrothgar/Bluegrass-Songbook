@@ -1,6 +1,9 @@
 {meta: title What's Wrong With Me}
 {meta: artist Charlie Walker}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file whatswrongwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What’s wrong with me [D7]how could I hurt you
@@ -33,3 +36,7 @@ And [F]two hearts are [G7]broken not [C]one
 {start_of_verse: Verse 4}
 [F]Two hearts are [G7]broken not [C]one
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Playing For Keeps}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file playingforkeepslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm playing for keeps
@@ -35,3 +38,7 @@ That could love me [C]true
 But no [D7]one else 
 Can thrill me like you [G7]do
 {end_of_verse}
+
+
+
+

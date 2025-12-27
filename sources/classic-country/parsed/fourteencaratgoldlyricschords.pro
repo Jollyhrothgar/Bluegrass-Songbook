@@ -1,6 +1,9 @@
 {meta: title Fourteen Carat Gold}
 {meta: artist Hank Locklin}
 {meta: composer Sy Sandler and Eddie Zack}
+{meta: x_source classic-country}
+{meta: x_source_file fourteencaratgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A chain of steel a wall of stone could not keep me from [G7]you
@@ -22,3 +25,5 @@ If there's a ring upon her finger never fan the [C]flame
 I'm ready now to pay the price of [C7]loving much too [F]bold
 [G7]A girl who wears a yellow band of fourteen karat [C]gold
 {end_of_verse}
+
+

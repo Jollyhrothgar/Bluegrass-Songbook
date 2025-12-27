@@ -1,5 +1,8 @@
 {meta: title Just About Time}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file justabouttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Having a [C]hard time [G7]feeling [C]blue [F]trying [C]to [G7]get over [C]you
@@ -26,3 +29,5 @@
 [G7]But just about the time I think about leaving I start missing [C]you
 [F]Having a [C]hard time [G7]feeling [C]blue [F]trying [C]to [G7]get over [C]you
 {end_of_verse}
+
+

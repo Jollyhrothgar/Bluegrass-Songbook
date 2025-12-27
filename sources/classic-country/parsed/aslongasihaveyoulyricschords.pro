@@ -1,6 +1,9 @@
 {meta: title As Long As I Have You}
 {meta: artist Elvis Presley}
 {meta: composer Ben Weisman and Fred Wise}
+{meta: x_source classic-country}
+{meta: x_source_file aslongasihaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let the stars fade [Am]and fall
@@ -43,3 +46,9 @@ As [Dm]long as [G7]I have [C]you
 {start_of_verse: Verse 7}
 As [Dm]long as [G7]I have [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Fly Away}
 {meta: artist Johnny Cash}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file illflyawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some glad morning when this life is [C7]over
@@ -51,3 +54,12 @@ To a land where joy shall never end
 To a home on God's celestial shore
 [G7]I'll fly [C]away
 {end_of_verse}
+
+
+
+
+
+
+
+
+

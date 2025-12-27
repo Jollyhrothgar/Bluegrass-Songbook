@@ -1,6 +1,9 @@
 {meta: title Blues Plus Booze}
 {meta: artist Stonewall Jackson}
 {meta: composer Earl Brown}
+{meta: x_source classic-country}
+{meta: x_source_file bluesplusboozelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just last night my love [G7]said she was [C]leaving
@@ -29,3 +32,6 @@ Not a [F]right combination for anyone to [C]choose
 [F]Nobody knows the feeling till he's been in my [C]shoes
 Blues plus [F]booze means I [C]lose 
 {end_of_verse}
+
+
+

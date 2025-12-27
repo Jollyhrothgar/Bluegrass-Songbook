@@ -1,6 +1,9 @@
 {meta: title Mary's Little Boy Child}
 {meta: artist Jim Reeves}
 {meta: composer Jester Hairston}
+{meta: x_source classic-country}
+{meta: x_source_file maryslittleboychildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Long time ago in [F]Bethlehem so [G7]the Holy Bible [C]says
@@ -39,3 +42,8 @@
 [F]Trumpets sound [G7]and [C]angels sing listen [F]what they [G7]say
 [C]That man will live for [F]evermore [C]because [G7]of Christmas [C]Day
 {end_of_verse}
+
+
+
+
+

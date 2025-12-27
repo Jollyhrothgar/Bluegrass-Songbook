@@ -1,6 +1,9 @@
 {meta: title When the Snow is on the Roses}
 {meta: artist Sonny James}
 {meta: composer Curry Kusic, Eddie Snyder, James Last}
+{meta: x_source classic-country}
+{meta: x_source_file whenthesnowisontheroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now the Golden [F]sun can see us [C]kiss
@@ -26,3 +29,5 @@ When the [G7]bluebirds flown [C]away
 In my arms we'll both [F]remember 
 All the [G7]love we share [C]today
 {end_of_verse}
+
+

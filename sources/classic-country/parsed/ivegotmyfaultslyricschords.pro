@@ -1,5 +1,8 @@
 {meta: title I've Got My Faults}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotmyfaultslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just a man no more or no less
@@ -37,3 +40,9 @@ What you see is just what you'll get
 {start_of_verse: Verse 5}
 [G7]I've got my faults but I do have my [C]way
 {end_of_verse}
+
+
+
+
+
+

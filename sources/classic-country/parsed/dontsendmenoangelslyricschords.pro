@@ -1,6 +1,9 @@
 {meta: title Don't Send Me No Angels}
 {meta: artist George Jones}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file dontsendmenoangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the storm clouds gather [F]and I'm losing my [C]way
@@ -29,3 +32,6 @@ I promise that I'll love her till I've walked my last[G7] mile
 When your [C]trumpets are sounding and [F]you've played my [C]song
 Don't send me no angels [G7]cause I've got my [C]own
 {end_of_verse}
+
+
+

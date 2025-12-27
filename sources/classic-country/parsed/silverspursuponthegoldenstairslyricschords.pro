@@ -1,6 +1,9 @@
 {meta: title Silver Spurs Upon The Golden Stairs}
 {meta: artist Gene Autry}
 {meta: composer Cindy Walker and Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file silverspursuponthegoldenstairslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you wanna clink your silver spurs upon [F]the golden [C]stairs
@@ -41,3 +44,8 @@
 [C]You can’t be the devil’s rooter gotta [F]be a square [C]shooter
 [G7]If you wanna clink your silver spurs upon the golden [C]stairs
 {end_of_verse}
+
+
+
+
+

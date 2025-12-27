@@ -1,6 +1,9 @@
 {meta: title What Do I Do With Me}
 {meta: artist Tanya Tucker}
 {meta: composer David Lewis, Royce Porter, David Chamberlain}
+{meta: x_source classic-country}
+{meta: x_source_file whatdoidowithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What do I do now that I'm on my [C]own
@@ -28,3 +31,6 @@
 [C]Without you [D7]what do I do [G]with [D7]me
 [C]Without you [D7]what do I do with [G]me
 {end_of_verse}
+
+
+

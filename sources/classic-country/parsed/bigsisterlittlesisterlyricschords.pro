@@ -1,6 +1,9 @@
 {meta: title Big Sister Little Sister}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Frances Heighton}
+{meta: x_source classic-country}
+{meta: x_source_file bigsisterlittlesisterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](Give up to the [C]baby that's [G7]what they'd always [C]say)
@@ -32,3 +35,7 @@
 [F]Give up to the [C]baby and I [G7]lose every [C]time
 [F]Now they're [C]saying big [G7]sister is losin' her [C][F]mind
 {end_of_verse}
+
+
+
+

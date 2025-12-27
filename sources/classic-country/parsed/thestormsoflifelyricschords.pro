@@ -1,6 +1,9 @@
 {meta: title The Storms of Life}
 {meta: artist Randy Travis}
 {meta: composer Max D. Barnes and Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file thestormsoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a dirty piece of cardboard that [F]reads Montgomery Ward
@@ -37,3 +40,7 @@ Well I've [F]left my soul out in the rain
 {start_of_verse: Verse 4}
 Yeah the [G7]storms of life are washing me [C]away
 {end_of_verse}
+
+
+
+

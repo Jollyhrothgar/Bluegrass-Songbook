@@ -1,5 +1,8 @@
 {meta: title Buck}
 {meta: artist Keith Whitley Conley}
+{meta: x_source classic-country}
+{meta: x_source_file bucklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say country [F]music's in a [C]mess
@@ -46,3 +49,9 @@ It [F]sure would be good [C]luck let's bring back [F]Buck
 {start_of_verse: Verse 6}
 Oh it sure would be good [C]luck let's bring back [F]Buck
 {end_of_verse}
+
+
+
+
+
+

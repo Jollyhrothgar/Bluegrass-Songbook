@@ -1,6 +1,9 @@
 {meta: title Ever Since We Said I Do}
 {meta: artist Norma Jean}
 {meta: composer Red Lane and Johnny Slate}
+{meta: x_source classic-country}
+{meta: x_source_file eversincewesaididolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You spent a small fortune [F]trying to win my [C]hand
@@ -33,3 +36,7 @@ For ever since we said I [F]do  [G7]there's so many things you [C]don't
 {start_of_verse: Verse 4}
 For ever since we said I [F]do  [G7]there's so many things you [C]don't
 {end_of_verse}
+
+
+
+

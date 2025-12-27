@@ -1,5 +1,8 @@
 {meta: title I Can't Keep You In Love With Me}
 {meta: artist Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file icantkeepyouinlovewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It must have been an awful thing that someone did to [C]you
@@ -28,3 +31,6 @@
 [C]And when you're holding me no sweeter love could ever be
 [D7]But when I'm gone somehow I can't keep you in love with [G]me
 {end_of_verse}
+
+
+

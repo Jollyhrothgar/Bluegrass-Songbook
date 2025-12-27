@@ -1,6 +1,9 @@
 {meta: title I Live in the Past}
 {meta: artist Bill Monroe}
 {meta: composer Virginia Stauffer}
+{meta: x_source classic-country}
+{meta: x_source_file iliveinthepastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The days are so lonely [C7]the nights are so [F]long
@@ -29,3 +32,6 @@ Of when you still [C]love me and I thought it would [G7]last
 But life is so [C]short [C7]and time moves so [F]fast
 I'll never for[C]get you [G7]as I live in the [C]past
 {end_of_verse}
+
+
+

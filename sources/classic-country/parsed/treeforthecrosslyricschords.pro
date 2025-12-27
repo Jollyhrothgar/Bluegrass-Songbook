@@ -1,6 +1,9 @@
 {meta: title Tree For The Cross}
 {meta: artist Stonewall Jackson}
 {meta: composer N. Barfield and Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file treeforthecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The tree for the cross was [F]standing
@@ -37,3 +40,7 @@ Yes the [C]hands that formed and [F]fashioned the tree
 Would be [C]nailed to the same to [G7]save you and [C]me
 They were nailed to the same to [G7]save you and [F]me[C]
 {end_of_verse}
+
+
+
+

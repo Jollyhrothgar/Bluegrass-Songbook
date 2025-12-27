@@ -1,6 +1,9 @@
 {meta: title Lord I've Tried Everything But You}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Carl Knight}
+{meta: x_source classic-country}
+{meta: x_source_file lordivetriedeverythingbutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess I've tried about everything
@@ -39,3 +42,7 @@ Well I almost came your way one time
 {start_of_verse: Verse 4}
 [G7]Oh Lord I've tried everything [F]but [C]you
 {end_of_verse}
+
+
+
+

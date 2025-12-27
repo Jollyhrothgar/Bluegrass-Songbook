@@ -1,6 +1,9 @@
 {meta: title Oh Christmas Candle}
 {meta: artist Doyle Lawson}
 {meta: composer Tom T. Hall and Dixie Hall}
+{meta: x_source classic-country}
+{meta: x_source_file ohChristmascandlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh Christmas candle please light up the way
@@ -37,3 +40,6 @@ Be with my loved ones and breathe in the air
 [C]Starlight that glistened on [G]snow covered hills
 When Christmas [D7]was holy and [G]still
 {end_of_verse}
+
+
+

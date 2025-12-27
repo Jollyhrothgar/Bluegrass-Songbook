@@ -1,6 +1,9 @@
 {meta: title Love Of The Common People}
 {meta: artist Waylon Jennings}
 {meta: composer Ronnie Wilkins and John Hurley}
+{meta: x_source classic-country}
+{meta: x_source_file loveofthecommonpeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Living on free food tickets
@@ -54,3 +57,8 @@ Where [C]you can [G]live in the love of the [C]common [D7]people
 [G]Daddy's gonna buy you a [C]dream to [D7]cling to
 [G]Mama's gonna love you just as [C]much as she [D7]can as she [G]can
 {end_of_verse}
+
+
+
+
+

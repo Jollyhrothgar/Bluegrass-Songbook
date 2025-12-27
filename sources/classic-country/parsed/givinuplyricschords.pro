@@ -1,6 +1,9 @@
 {meta: title Givin' Up}
 {meta: artist Wilburn Brothers}
 {meta: composer Johnny Russell and Vince Finneran}
+{meta: x_source classic-country}
+{meta: x_source_file givinuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At least a thousand times I've tried leavin' 
@@ -40,3 +43,8 @@ Heartaches trouble and mise[D7]ry
 {start_of_verse: Verse 5}
 I'm givin' [D7]up givin' up to [G]you
 {end_of_verse}
+
+
+
+
+

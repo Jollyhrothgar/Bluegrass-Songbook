@@ -1,6 +1,9 @@
 {meta: title No One Could Ever Take Me From You}
 {meta: artist Charley Pride}
 {meta: composer Hal Bynum}
+{meta: x_source classic-country}
+{meta: x_source_file noonecouldevertakemefromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darlin' no one could ever [G7]take me from [C]you
@@ -29,3 +32,6 @@ And darlin' [C]no one could ever [G7]take me from [C]you
 Whatever life may [F]bring you'll be a [C]part of every[F]thing
 And darlin' [C]no one could ever [G7]take me from [F]you[C]
 {end_of_verse}
+
+
+

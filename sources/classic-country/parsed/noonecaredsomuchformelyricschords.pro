@@ -1,6 +1,9 @@
 {meta: title No One Cared So Much For Me}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Jim Hill}
+{meta: x_source classic-country}
+{meta: x_source_file noonecaredsomuchformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's no other name so sweet as Jes[D7]us 
@@ -24,3 +27,5 @@ There's no friend so [A7]precious to [D7]me
 Who would [G]carry [D7]carry a [G]cross up to Calva[C]ry
 No one [G]ever cared so [A7]much [D7]for [G]me 
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title It's Out Of My Hands}
 {meta: artist Randy Travis}
 {meta: composer John Lindley and Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file itsoutofmyhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll just turn away there's no [D7]need to watch her [G]leaving
@@ -43,3 +46,8 @@
 [C]It was all up to [G]me but I [C]just couldn't [G]see
 [D7]Now it's out of my [G]hands
 {end_of_verse}
+
+
+
+
+

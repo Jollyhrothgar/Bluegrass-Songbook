@@ -1,5 +1,8 @@
 {meta: title Lonesome Roads}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomeroadslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where did I go wrong[F]    
@@ -32,3 +35,7 @@ Poor ole worthless [G7]me is the only friend I ever [C]made
 {start_of_verse: Verse 4}
 Poor ole worthless [G7]me is the only friend I ever [C]made
 {end_of_verse}
+
+
+
+

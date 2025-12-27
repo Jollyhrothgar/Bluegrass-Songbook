@@ -1,5 +1,8 @@
 {meta: title A Little Time Out}
 {meta: artist Wilburn Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file alittletimeoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A little time out a little time out
@@ -54,3 +57,10 @@ I'm gonna take a little time out for love
 Won't you [G7]give my plans a little shove
 Take a little time out for [C]me
 {end_of_verse}
+
+
+
+
+
+
+

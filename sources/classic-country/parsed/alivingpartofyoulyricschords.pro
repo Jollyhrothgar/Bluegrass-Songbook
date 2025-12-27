@@ -1,6 +1,9 @@
 {meta: title A Living Part of You}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file alivingpartofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On my k[E7]nees where o[Am]nly You can h[D7]ear
@@ -30,3 +33,6 @@ With my [G]time getting closer and my [C]days getting [A7]few
 Lord [G]make my heart a [Am]living [D7]part of [G]You [D7]
 Lord [G]make my heart a [Am]living [D7]part of [G]You
 {end_of_verse}
+
+
+

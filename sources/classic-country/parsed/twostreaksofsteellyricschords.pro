@@ -1,6 +1,9 @@
 {meta: title Two Streaks Of Steel}
 {meta: artist Waylon Jennings}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file twostreaksofsteellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Two streaks of steel [C]stretching [D7]cross the [G]land
@@ -32,3 +35,6 @@ No reason now for [C]me to [D7]wanna [G]stay
 [C]Then all my [D7]troubles will be [G]gone
 Whoo whoo
 {end_of_verse}
+
+
+

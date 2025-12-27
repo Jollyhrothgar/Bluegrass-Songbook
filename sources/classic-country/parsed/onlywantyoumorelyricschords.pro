@@ -1,5 +1,8 @@
 {meta: title Only Want You More}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file onlywantyoumorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey girl hey girl you [F]warned me to [C]go
@@ -41,3 +44,8 @@ Would [C]only make me [G7]want you [C]more
 Yeah all the things you told me about what lay in [F]store
 Yeah they [C]only make me [G7]want you [C]more
 {end_of_verse}
+
+
+
+
+

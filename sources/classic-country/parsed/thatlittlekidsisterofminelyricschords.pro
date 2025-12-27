@@ -1,6 +1,9 @@
 {meta: title That Little Kid Sister Of Mine}
 {meta: artist Eddy Arnold}
 {meta: composer Fred Rose and Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file thatlittlekidsisterofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was only seven
@@ -20,3 +23,4 @@ A [F]star and so he [C]sent for
 That little kid [G7]sister of [C]mine
 Repeat 
 {end_of_verse}
+

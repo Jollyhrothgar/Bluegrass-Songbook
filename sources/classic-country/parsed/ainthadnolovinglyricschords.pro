@@ -1,6 +1,9 @@
 {meta: title Ain’t Had No Loving}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file ainthadnolovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain’t done one [E7]single thing this [A7]morning
@@ -34,3 +37,7 @@ And I [C]ain’t gonna get no [G7]loving till you come [C]home
 Ain’t had no [E7]loving [F]since you’ve been [D7]gone
 And I [C]ain’t gonna get no [G7]loving till you come [C]home
 {end_of_verse}
+
+
+
+

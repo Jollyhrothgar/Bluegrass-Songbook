@@ -1,6 +1,9 @@
 {meta: title Like Water Into Wine}
 {meta: artist Patty Loveless}
 {meta: composer Gretchen Peters}
+{meta: x_source classic-country}
+{meta: x_source_file likewaterintowinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby open up that bottle  [Am]   come and lay down by my [F]side
@@ -37,3 +40,8 @@ We're [D7]just like water baby  [Dm]just like water into [C]wine
 {start_of_verse: Verse 6}
 [D7]Just like water [Dm]  like water into [C]wine
 {end_of_verse}
+
+
+
+
+

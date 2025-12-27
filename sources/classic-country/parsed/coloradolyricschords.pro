@@ -1,6 +1,9 @@
 {meta: title Colorado}
 {meta: artist Merle Haggard}
 {meta: composer David C. Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file coloradolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a place where Mother Nature's got [C]it all [G]together
@@ -29,3 +32,6 @@ I [D7]spend a lot of time there in [G]my [D7]mind
 And if [G]God doesn't [G7]live in [C]Colorado
 I'll [D7]bet that's where he spends most of his [G]time
 {end_of_verse}
+
+
+

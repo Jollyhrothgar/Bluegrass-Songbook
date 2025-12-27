@@ -1,6 +1,9 @@
 {meta: title His And Hers}
 {meta: artist Vernon Oxford}
 {meta: composer Paul Craft}
+{meta: x_source classic-country}
+{meta: x_source_file hisandherslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the carport two cars his and [G7]hers
@@ -27,3 +30,6 @@ What a pity we [C7]say to see [F]marriage today
 Why [G7]did it have to be mine and [C]yours
 Why [G7]did it have to be mine and [F]yours[C]
 {end_of_verse}
+
+
+

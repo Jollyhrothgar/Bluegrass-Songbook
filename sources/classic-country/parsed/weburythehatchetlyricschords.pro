@@ -1,6 +1,9 @@
 {meta: title We Bury The Hatchet}
 {meta: artist Garth Brooks}
 {meta: composer Wade Kimes and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file weburythehatchetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Hey all the [G]neighbor’s lights came on last [C]night
@@ -50,3 +53,9 @@ We bury the [G]hatchet
 [C]Oh we bury the [G]hatchet 
 [D7]But leave the handle stickin' [G]out
 {end_of_verse}
+
+
+
+
+
+

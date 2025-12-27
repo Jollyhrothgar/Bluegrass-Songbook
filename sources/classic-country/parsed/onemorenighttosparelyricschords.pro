@@ -1,6 +1,9 @@
 {meta: title One More Night To Spare}
 {meta: artist Vernon Oxford}
 {meta: composer Bob Ferguson}
+{meta: x_source classic-country}
+{meta: x_source_file onemorenighttosparelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's my fault maybe [C]anyhow [G]baby
@@ -29,3 +32,6 @@ It [C]might be love in a blossom tied if [G]you'll just give it [D7]room
 If [G]you'll just shut up [C]we'll both [G]cut up
 Cause I've got [D7]one more night to [G]spare 
 {end_of_verse}
+
+
+

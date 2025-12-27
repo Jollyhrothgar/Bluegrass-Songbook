@@ -1,6 +1,9 @@
 {meta: title Alone With You}
 {meta: artist Faron Young}
 {meta: composer Roy Drusky, Lester Vanadore, Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file alonewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How I'd love to be around you 
@@ -39,3 +42,6 @@ How I'd love to be around you when
 [C]Could be a real beginning
 [G]How I'd love to [D7]be alone with [G]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title What God Has Done}
 {meta: artist Marty Robbins}
 {meta: composer Martin Robbinson and Ronny Robbinson}
+{meta: x_source classic-country}
+{meta: x_source_file whatgodhasdonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What God has done is not a hidden [F][C7]secret
@@ -29,3 +32,6 @@ Great is the [F]work [G7]done by his mighty [C]hand
 In heaven or [F]earth there's [G7]no one who is [F][C7][C]greater
 And in his [C]love [G7]forever we shall [C]stand
 {end_of_verse}
+
+
+

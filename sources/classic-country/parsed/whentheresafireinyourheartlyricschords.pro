@@ -1,6 +1,9 @@
 {meta: title When There's A Fire In Your Heart}
 {meta: artist Tammy Wynette}
 {meta: composer Merle Kilgore and Spencer Williams}
+{meta: x_source classic-country}
+{meta: x_source_file whentheresafireinyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When there's a fire in your heart
@@ -84,3 +87,19 @@ Cause you'll come running back to [G]me
 Break the glass sound the alarm
 Call on me  I'll be [D7]there
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

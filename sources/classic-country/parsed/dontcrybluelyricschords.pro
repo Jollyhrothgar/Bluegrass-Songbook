@@ -1,6 +1,9 @@
 {meta: title Don't Cry Blue}
 {meta: artist Lonesome River Band}
 {meta: composer Malcolm McKinney}
+{meta: x_source classic-country}
+{meta: x_source_file dontcrybluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard them engines runnin' on the [Em]road away from [C]home
@@ -54,3 +57,10 @@ Don't [D7]cry cry Bl-[G]ue
 {start_of_verse: Verse 5}
 Don't [C]cry cry [D7]Blue don’t [G]cry
 {end_of_verse}
+
+
+
+
+
+
+

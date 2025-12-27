@@ -1,6 +1,9 @@
 {meta: title Your Love Had Taken Me That High}
 {meta: artist Conway Twitty}
 {meta: composer Jack Dunham and Galen Raye}
+{meta: x_source classic-country}
+{meta: x_source_file yourlovehadtakenmethathighlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's no need in goin' over all the [C]things that took me under
@@ -29,3 +32,6 @@ To the peaks of mountains [C]reaching to the [G]sky
 You took [C]me inside of [D7]love a sight that [G]I have never [Em]seen before
 Did [C]you know your love had [D7]taken me that [G]high
 {end_of_verse}
+
+
+

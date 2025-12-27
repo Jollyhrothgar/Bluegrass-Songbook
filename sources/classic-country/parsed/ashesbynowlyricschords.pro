@@ -1,6 +1,9 @@
 {meta: title Ashes by Now}
 {meta: artist Emmylou Harris}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file ashesbynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This morning is Monday where are you now
@@ -50,3 +53,12 @@ Drunk on a sidewalk to hide from the night
 [Am]Just like a wild fire you're running all over [C]town
 [Am]As much as you burn me baby I should be ashes by [C]now
 {end_of_verse}
+
+
+
+
+
+
+
+
+

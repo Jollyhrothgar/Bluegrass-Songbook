@@ -1,5 +1,8 @@
 {meta: title Have A Little Faith}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file havealittlefaithlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your best friend [B]your best girl [C]just made a big [A7]mess of your world
@@ -30,3 +33,6 @@ But [C]two lovin' arms to [B]hug your neck
 [D7]She'll be there with [G7]love to pull you [C]through
 Just [D7]have a little faith and [G7]love will come to [C]you
 {end_of_verse}
+
+
+

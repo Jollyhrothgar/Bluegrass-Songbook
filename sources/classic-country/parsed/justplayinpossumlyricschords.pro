@@ -1,6 +1,9 @@
 {meta: title Just Playin' Possum}
 {meta: artist Alan Jackson}
 {meta: composer Jim McBride, Alan Jackson, Gary Overton}
+{meta: x_source classic-country}
+{meta: x_source_file justplayinpossumlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I parked my car round [G]back I've got the shades pulled [C]down
@@ -35,3 +38,7 @@ Just playin' [G]possum  [D7]and laying [G]low
 {start_of_verse: Verse 4}
 Tell 'em Jones [C]he's a playin' [G]possum [D7]and he's a layin' [G]low
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Montana Cowgirl}
 {meta: artist Emmylou Harris}
 {meta: composer Ray Park}
+{meta: x_source classic-country}
+{meta: x_source_file montanacowgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For many long years I've played a lone hand
@@ -35,3 +38,8 @@ I'll see you again in a little while
 [F]You're calling me back to old [C]Montana
 [G7]Back to those hills where I [C]belong
 {end_of_verse}
+
+
+
+
+

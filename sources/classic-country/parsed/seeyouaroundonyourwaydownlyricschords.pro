@@ -1,6 +1,9 @@
 {meta: title See You Around On Your Way Down}
 {meta: artist Waylon Jennings}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file seeyouaroundonyourwaydownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He offers you [Em]so many things that [F]I can't give
@@ -31,3 +34,7 @@ See you [Dm]around [G7]on your way [C]down
 {start_of_verse: Verse 5}
 I'll see you [Dm]around girl [G7]on your way [C]down
 {end_of_verse}
+
+
+
+

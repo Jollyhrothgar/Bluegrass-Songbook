@@ -1,6 +1,9 @@
 {meta: title Wrong}
 {meta: artist Waylon Jennings}
 {meta: composer Steve Seskin & Andre Pessis}
+{meta: x_source classic-country}
+{meta: x_source_file wronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was a picture perfect [D7]wedding
@@ -54,3 +57,11 @@ The sky was always [D7]blue
 Thought my dreams had all come true
 [G]Wrong   
 {end_of_verse}
+
+
+
+
+
+
+
+

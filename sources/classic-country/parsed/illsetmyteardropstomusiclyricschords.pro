@@ -1,6 +1,9 @@
 {meta: title I'll Set My Teardrops To Music}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Lynn Russwurm}
+{meta: x_source classic-country}
+{meta: x_source_file illsetmyteardropstomusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll [Am]set my teardrops to [D7]music
@@ -48,3 +51,9 @@
 [C]When I set my teardrops to music
 [G]To be strung on the [D7]strings of my [G]soul
 {end_of_verse}
+
+
+
+
+
+

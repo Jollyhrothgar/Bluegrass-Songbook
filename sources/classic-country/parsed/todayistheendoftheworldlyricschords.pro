@@ -1,6 +1,9 @@
 {meta: title Today Is The End Of The World}
 {meta: artist Sonny James}
 {meta: composer Carole Smith and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file todayistheendoftheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The sun is [Bm]shining birds [Am]are singing [D7]in [G]schoolyards
@@ -36,3 +39,7 @@
 [C]What good is [D7]living my [G]love is [Em]leaving
 [Am]Today is the end [D7]of the [G]world
 {end_of_verse}
+
+
+
+

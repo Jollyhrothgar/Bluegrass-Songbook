@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Hardwood Floor}
 {meta: artist Johnny Horton}
 {meta: composer Tex Atchinson, Eddie Hazlewood, Harrell}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkhardwoodfloorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the fiddles are squeakin' the guitars are speaking
@@ -69,3 +72,12 @@ On a honky tonk hardwood floor
 You keep'a [C]havin' your fun you lucky son of a [G]gun
 On a [D7]honky tonk hardwood [G]floor
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If You Ever Change Your Mind}
 {meta: artist Ray Price}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoueverchangeyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl it [F]can’t go on like [C]this [F] 
@@ -31,3 +34,6 @@ But if [C]there’s no one [F]selling dreams in [C]town [F]
 I’ll be [C]here if you [G7]ever change your [Am]mind [D7]
 I’ll be [C]here if you [G7]ever change your [C]mind
 {end_of_verse}
+
+
+

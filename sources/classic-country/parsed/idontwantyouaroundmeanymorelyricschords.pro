@@ -1,6 +1,9 @@
 {meta: title I Don't Want You Around Me Anymore}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton and Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file idontwantyouaroundmeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You think you're so smart you [F]think I should throw my heart 
@@ -29,3 +32,6 @@ The [C]world would be a standin' at your [D7]door [G7]
 But [C]I I won't be there cause [F]I no longer care
 And [C]I don't want you [G7]around me any[C]more
 {end_of_verse}
+
+
+

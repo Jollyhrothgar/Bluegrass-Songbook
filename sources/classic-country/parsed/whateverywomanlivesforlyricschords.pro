@@ -1,6 +1,9 @@
 {meta: title What Every Woman Lives For}
 {meta: artist Elvis Presley}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file whateverywomanlivesforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She may say she [G7]needs [Am]fancy bangles and beads[G7]
@@ -33,3 +36,6 @@ What [G7]every woman lives [F]for
 Is to [C]give her [G7]love to a [A7]man 
 And I [D7]hope that [G7]man is [C]me [F]  [C]
 {end_of_verse}
+
+
+

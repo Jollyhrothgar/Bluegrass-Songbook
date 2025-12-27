@@ -1,5 +1,8 @@
 {meta: title Sea Dream}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file seadreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pretty lady [F]look at [C]me
@@ -35,3 +38,7 @@ I'm a sailor [G7]from the [C]sea
 I can take you [F]any[C]where
 You can join me [G7]do you [C]dare
 {end_of_verse}
+
+
+
+

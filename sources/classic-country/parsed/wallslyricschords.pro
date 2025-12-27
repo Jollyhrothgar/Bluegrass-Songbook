@@ -1,5 +1,8 @@
 {meta: title Walls}
 {meta: artist Charley Pride}
+{meta: x_source classic-country}
+{meta: x_source_file wallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He comes in each evening [F]where the music is [C]loud
@@ -35,3 +38,7 @@ And keeps to [Am]himself  in [F]a blue collared [G7]crowd
 [F]He once had a future [Am]he had it [F]all
 Built his [C]world around a woman  [G7]but now he will [C]fall
 {end_of_verse}
+
+
+
+

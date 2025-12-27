@@ -1,6 +1,9 @@
 {meta: title Till You Come Back Again Lyrics and Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file tillyoucomebackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A lonely room  a window [G7]pane
@@ -29,3 +32,6 @@ My phone may [G]ring but my [D7]heart won’t sing
 Till you come [G]back again
 Repeat last verse
 {end_of_verse}
+
+
+

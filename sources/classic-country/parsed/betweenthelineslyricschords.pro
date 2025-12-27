@@ -1,6 +1,9 @@
 {meta: title Between The Lines}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Jim Eanes}
+{meta: x_source classic-country}
+{meta: x_source_file betweenthelineslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got your letter it came [C]today
@@ -29,3 +32,6 @@ Each night I [A7]pray dear you’ll under[D7]stand
 That I still [G]love you and call you [C]mine
 I’ll always [G]read dear [D7]between the [G]lines
 {end_of_verse}
+
+
+

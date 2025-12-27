@@ -1,6 +1,9 @@
 {meta: title Judge Of Hearts}
 {meta: artist Conway Twitty}
 {meta: composer Conway Twitty and Jack Nance}
+{meta: x_source classic-country}
+{meta: x_source_file judgeofheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please [G7]please judge of [C]hearts [F]
@@ -37,3 +40,6 @@ I [G7]swear to be [C]true [F]
 I [G7]said all that [C]I can say [F]
 Now it's [G7]all up to [C]you
 {end_of_verse}
+
+
+

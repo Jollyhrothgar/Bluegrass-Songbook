@@ -1,6 +1,9 @@
 {meta: title How Can I Be Sure}
 {meta: artist Ernest Tubb}
 {meta: composer Rex Griffin and Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file howcanibesurelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You only want to break my heart once [A7]more
@@ -29,3 +32,6 @@
 [G7]And foolish me I'll still be here with open arms for [C]you
 [D7]For how can I be sure you'll stay [G]away
 {end_of_verse}
+
+
+

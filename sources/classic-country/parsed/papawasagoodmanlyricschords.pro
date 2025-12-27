@@ -1,6 +1,9 @@
 {meta: title Papa Was A Good Man}
 {meta: artist Charlie Rich}
 {meta: composer Hal Bynum}
+{meta: x_source classic-country}
+{meta: x_source_file papawasagoodmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It rained all the way to Cinci[G7]nnati
@@ -36,3 +39,6 @@ The [F]whiskey's tryin' to ruin him but I [D7]know the Lord won't [G7]let it
 [F]Then we sang Amazing Grace and [C]Bringing In The [Am]Sheaves
 Rock of [C]Ages [F]Rock of [C]Ages [G7]cleft for [C]me [F]  [C]
 {end_of_verse}
+
+
+

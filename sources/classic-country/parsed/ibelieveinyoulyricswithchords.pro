@@ -1,6 +1,9 @@
 {meta: title I Believe in You}
 {meta: artist Norma Jean}
 {meta: composer Dick Overbey}
+{meta: x_source classic-country}
+{meta: x_source_file ibelieveinyoulyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sitting here in the [C7]quite of the [F]day
@@ -40,3 +43,8 @@ Yes [G7]Lord I believe in [C]You
 {start_of_verse: Verse 5}
 Yes [G7]Lord I believe in [F]Yo[C]u
 {end_of_verse}
+
+
+
+
+

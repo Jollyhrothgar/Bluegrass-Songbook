@@ -1,6 +1,9 @@
 {meta: title Hello Jesus}
 {meta: artist The Reno Brothers}
 {meta: composer Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file helloJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello Jesus I love Your Momma
@@ -40,3 +43,8 @@ I need the love [D7]You've always [G]had
 {start_of_verse: Verse 6}
 I need the love [D7]You've always [G]had
 {end_of_verse}
+
+
+
+
+

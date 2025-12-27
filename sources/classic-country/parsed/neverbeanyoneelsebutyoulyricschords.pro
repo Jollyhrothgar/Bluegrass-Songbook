@@ -1,6 +1,9 @@
 {meta: title Never Be Anyone Else But You}
 {meta: artist Ricky Nelson}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file neverbeanyoneelsebutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There'll never be [F]anyone else but [G7]you for [C]me
@@ -34,3 +37,7 @@
 {start_of_verse: Verse 5}
 [F]Mm [G7]mm [C]mm  [F]mm [G7]mm [C]mm
 {end_of_verse}
+
+
+
+

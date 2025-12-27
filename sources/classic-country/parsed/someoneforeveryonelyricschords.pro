@@ -1,5 +1,8 @@
 {meta: title Someone For Everyone}
 {meta: artist Bobby Helms}
+{meta: x_source classic-country}
+{meta: x_source_file someoneforeveryonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say that some-time some-where   
@@ -23,3 +26,5 @@ Then I [C]found you oh yes I found [G]you
 You're [C]some-one [D7]for [C][G]every-one
 [D7]Every-one but [G]me
 {end_of_verse}
+
+

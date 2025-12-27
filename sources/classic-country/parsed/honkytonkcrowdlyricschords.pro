@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Crowd}
 {meta: artist John Anderson}
 {meta: composer Larry Cordle and Lionel Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkcrowdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Honky Tonk Crowd
@@ -49,3 +52,9 @@ And the [G]breakfast they eat after [B7]closing time
 {start_of_verse: Verse 6}
 Yeah I sure like hanging [D7]around the honky tonk [G]crowd
 {end_of_verse}
+
+
+
+
+
+

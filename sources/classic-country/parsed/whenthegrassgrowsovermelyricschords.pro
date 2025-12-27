@@ -1,5 +1,8 @@
 {meta: title When The Grass Grows Over Me}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file whenthegrassgrowsovermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll be over you when the [D7]grass grows over [G]me
@@ -29,3 +32,6 @@ And [A7]as you look down at the cold cold ground I'm sleeping [D7]in
 Don't [G]expect to hear me say that I still love you [C]then
 'Cause I'll be [G]over you when the [D7]grass grows over [G]me
 {end_of_verse}
+
+
+

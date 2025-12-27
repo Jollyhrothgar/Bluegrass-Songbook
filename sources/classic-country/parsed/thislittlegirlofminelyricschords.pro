@@ -1,6 +1,9 @@
 {meta: title This Little Girl Of Mine}
 {meta: artist Everly Brothers}
 {meta: composer Ray Charles}
+{meta: x_source classic-country}
+{meta: x_source_file thislittlegirlofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This little girl of mine
@@ -69,3 +72,14 @@ When the fellas start whistling well I don't mind
 And that's [G]why [C]why [G]why [C]why
 Oh [G]yeah  I [D7]love that little girl of [G]mine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

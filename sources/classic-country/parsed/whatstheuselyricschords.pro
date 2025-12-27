@@ -1,6 +1,9 @@
 {meta: title What's The Use}
 {meta: artist Jack Greene}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file whatstheuselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What's the use to try and start [F]all [C]over
@@ -21,3 +24,5 @@ Let's pre[G]tend that you and I are [F]stran[C]gers
 [D7]What's the [G]us[Em]e  it's [Am]gone for [D7]you and [G]me
 [D7]What's the [G]us[Em]e  it's [Am]gone for [D7]you and [C]me[G]
 {end_of_verse}
+
+

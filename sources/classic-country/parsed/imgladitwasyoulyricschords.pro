@@ -1,6 +1,9 @@
 {meta: title I'm Glad It Was You}
 {meta: artist Charlie Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file imgladitwasyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was such a lonely [F]man
@@ -39,3 +42,7 @@
 {start_of_verse: Verse 4}
 [F]Yes darling I'm so [G7]glad that it was [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title For Goodness Sake It's Love Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file forgoodnesssakeitslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well [G7]I'll [C]declare [F]of all the [C]things[F] 
@@ -27,3 +30,6 @@ For [C]goodness sake it's [F]love and it's [G7]lookin' at [C]me
 Well [G7]I'll [C]declare [F]of all the [C]things[F] 
 For [C]goodness sake it's [F]love and it's [G7]lookin' at [C]me
 {end_of_verse}
+
+
+

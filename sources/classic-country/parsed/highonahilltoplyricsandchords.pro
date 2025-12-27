@@ -1,6 +1,9 @@
 {meta: title High On A Hilltop}
 {meta: artist Merle Haggard}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file highonahilltoplyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]High on a hilltop over [F]looking the [C]city
@@ -29,3 +32,6 @@
 [C]And give me the power to [F]believe that [C]someday
 [G7]High on a hilltop together we'll [C]pray
 {end_of_verse}
+
+
+

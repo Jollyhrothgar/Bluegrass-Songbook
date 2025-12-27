@@ -1,6 +1,9 @@
 {meta: title Hurt Lyrics chords}
 {meta: artist Marty Robbins}
 {meta: composer Jamie Crane and Al Jacobs}
+{meta: x_source classic-country}
+{meta: x_source_file hurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm  [C]hurt to think that you [Em]lied to me 
@@ -20,3 +23,5 @@ I could [F]never know  [G7]never hurt [C]you
 [F]Even though you've hurt me like [C]no one else can do 
 I could [F]never know [G7]never hurt [C]you 
 {end_of_verse}
+
+

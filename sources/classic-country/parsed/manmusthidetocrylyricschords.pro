@@ -1,5 +1,8 @@
 {meta: title Man Must Hide To Cry}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file manmusthidetocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 by Stonewall Jackson
@@ -29,3 +32,7 @@ by Stonewall Jackson
 {start_of_verse: Verse 5}
 [G7]Yes I dropped by to say goodbye but a man must hide to [C]cry
 {end_of_verse}
+
+
+
+

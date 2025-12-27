@@ -1,6 +1,9 @@
 {meta: title Crystal Fallin' Rain}
 {meta: artist Ronnie Milsap}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file crystalfallinrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When everyone [Dm]you [G7]love [C]hurts you in [Am]return
@@ -29,3 +32,6 @@
 [Dm]And if you have a need for loving just press your lips against the pane
 [G7]And know somewhere I'll be kissing you through the crystal falling [C]rain
 {end_of_verse}
+
+
+

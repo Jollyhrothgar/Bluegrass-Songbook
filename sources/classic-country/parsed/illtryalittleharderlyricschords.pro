@@ -1,5 +1,8 @@
 {meta: title I’ll Try A Little Harder}
 {meta: artist Donna Fargo}
+{meta: x_source classic-country}
+{meta: x_source_file illtryalittleharderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I'll try a little bit harder [C]if you [F]will
@@ -36,3 +39,7 @@ We were on the [C]same side one time weren't [F]we
 Why [C]would we how [F]could we  
 We [C]could not pretend [G7]for so [C]long
 {end_of_verse}
+
+
+
+

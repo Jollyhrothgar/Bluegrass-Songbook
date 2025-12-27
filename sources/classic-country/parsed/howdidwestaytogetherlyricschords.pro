@@ -1,6 +1,9 @@
 {meta: title How Did We Stay Together}
 {meta: artist The Everly Brothers}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file howdidwestaytogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know they call you foolish
@@ -30,3 +33,7 @@ And destroy your trust in me
 [D7]They say that's handing you a [C]line
 [G]How did we stay [D7]together all this [G]time
 {end_of_verse}
+
+
+
+

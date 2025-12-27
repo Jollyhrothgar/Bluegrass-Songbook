@@ -1,5 +1,8 @@
 {meta: title Greatest Gift Of All}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file greatestgiftofalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Love is the [C]greatest  the [G7]greatest gift of [C]all
@@ -26,3 +29,6 @@ For that [C]feeling that comes from [F]loving
 Love is the [C]greatest love [F]is the [C]greatest
 [F]Love is the [C]greatest [G7]gift of [C][F]a--ll
 {end_of_verse}
+
+
+

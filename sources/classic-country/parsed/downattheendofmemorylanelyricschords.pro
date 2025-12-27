@@ -1,6 +1,9 @@
 {meta: title Down At The End Of Memory Lane}
 {meta: artist Jimmie Davis}
 {meta: composer Jimmie Davis and Robert Anthony Jones}
+{meta: x_source classic-country}
+{meta: x_source_file downattheendofmemorylanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down at the end of [F]Memory lane
@@ -29,3 +32,6 @@ I loved her with all my heart and [G7]soul
 But [C]she left me for another [F]without a thought or care
 And [C]she left me in this [G7]world alone and [C]cold
 {end_of_verse}
+
+
+

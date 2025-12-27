@@ -1,5 +1,8 @@
 {meta: title Only A Shadow of Your Love}
 {meta: artist Daniel O'Donnell}
+{meta: x_source classic-country}
+{meta: x_source_file onlyashadowofyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The love I have for you my Lord
@@ -39,3 +42,8 @@ Your [G7]light in me will [C]shine
 {start_of_verse: Verse 5}
 Your [G7]light in me will [C]shine
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Jesus Don't Give Up On Me}
 {meta: artist Hank Williams Jr.}
 {meta: composer Jack Clement and Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusdontgiveuponmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jesus I know I've [C]neglected to [G]do
@@ -29,3 +32,6 @@ Forgiveness and patience [C]that's all I [E7]need
 [G]I might be worth saving I'm [C]trying to [E7]be 
 [C]Jesus oh [G]Jesus don't [D7]give up on [G]me
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title It Was Time For Me To Move On Anyway}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file itwastimeformetomoveonanywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You slipped in and really caught me by surprise
@@ -56,3 +59,10 @@ You're takin' it [C]away
 [F]But that's [C]okay [Am]
 It was [C]time for me to [G7]move on any[C]way
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Drop Some Silver In The Jukebox}
 {meta: artist Dick Curless}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file dropsomesilverinthejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walked into a tavern it was cheap and [G7]small
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 6}
 [G7]Drop some silver in the jukebox and we'll [C]drink
 {end_of_verse}
+
+
+
+
+
+

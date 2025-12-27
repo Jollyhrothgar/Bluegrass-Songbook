@@ -1,6 +1,9 @@
 {meta: title But I Was Lying}
 {meta: artist Wanda Jackson}
 {meta: composer Joe Allison and Audrey Allison}
+{meta: x_source classic-country}
+{meta: x_source_file butiwaslyinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I said congratulations and I [G7]hope you're happy
@@ -23,3 +26,5 @@ And when I said I'll see you [G7]soon let's together
 I wasn't [C]lying I hope you're [G]crying
 Tears of [D7]joy the day that you come back to [G]me
 {end_of_verse}
+
+

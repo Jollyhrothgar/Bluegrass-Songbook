@@ -1,6 +1,9 @@
 {meta: title I Love The Sound Of A Whistle}
 {meta: artist Boxcar Willie}
 {meta: composer Michael S. Breid}
+{meta: x_source classic-country}
+{meta: x_source_file ilovethesoundofawhistlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 I Love The Sound Of A Whistle
@@ -37,3 +40,8 @@ And the outward sound of a southern bound screaming through the [C]night
 I Love The Sound Of A Whistle
 Recorded Boxcar Willie
 {end_of_verse}
+
+
+
+
+

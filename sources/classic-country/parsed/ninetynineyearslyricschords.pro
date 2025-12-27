@@ -1,5 +1,8 @@
 {meta: title Ninety Nine Years}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file ninetynineyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My mama always told me better than to [D7]play with a loaded gun
@@ -41,3 +44,7 @@ And the [C]freedom I hold [G]dear
 Just a [D7]thousand bars a big brick wall 
 And a sentence of ninety-nine [G]years
 {end_of_verse}
+
+
+
+

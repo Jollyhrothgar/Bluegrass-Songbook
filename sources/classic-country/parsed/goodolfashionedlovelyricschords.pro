@@ -1,6 +1,9 @@
 {meta: title Good Ol' Fashioned Love}
 {meta: artist Tracy Byrd}
 {meta: composer Mark Nesler and Tony Martin}
+{meta: x_source classic-country}
+{meta: x_source_file goodolfashionedlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The kind of love that [F]I've been looking [C]for [F]
@@ -36,3 +39,7 @@ I want a [C]well [Em]made [Am]out of [G7]style [F]good ol' [G7]fashioned [C]love
 {start_of_verse: Verse 5}
 I want a [F]well [Em]made [Am]out of [G7]style [F]good ol' [G7]fashioned [G]love[F]  [C]
 {end_of_verse}
+
+
+
+

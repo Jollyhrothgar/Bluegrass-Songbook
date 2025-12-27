@@ -1,6 +1,9 @@
 {meta: title Christmas Memories}
 {meta: artist Alabama}
 {meta: composer Randy Albright, John Grenebaum and Becky Hobbs}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a blanket of snow coverin' [Dm]up the old road 
@@ -32,3 +35,6 @@ They come [Am]back to [Em]me and [F]keep me [E7]warm in[Am]side
 Still those [F]Christmas memo[Dm]ries oh they [F]mean so much to [Dm]me
 Those [F]Christmas memo[Dm]ries  [G7]make me [C]cry
 {end_of_verse}
+
+
+

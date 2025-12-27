@@ -1,6 +1,9 @@
 {meta: title The Keeper of the Key}
 {meta: artist Wanda Jackson}
 {meta: composer Wynn Stewart and Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file thekeeperofthekeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You have gone and yet  [F]I'm still your [C]prisoner
@@ -29,3 +32,6 @@ Oh [D7]darling please come back to [G7]me
 We'll [F]lock our hearts together for a [C]lifetime 
 [F]And God will be the [G7]keeper of the [C]key
 {end_of_verse}
+
+
+

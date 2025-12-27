@@ -1,6 +1,9 @@
 {meta: title I'm Hurtin'}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Joe Melson}
+{meta: x_source classic-country}
+{meta: x_source_file imhurtinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Dumby-dumby-dum [Em]oo-yay-yeah)
@@ -64,3 +67,12 @@ Whoa whoa whoa whoa)
 [G](Dumby-dumby-dum [Em]oo-yay-yeah)
 [C](Oh oh [D7]I'm [G]hurtin')
 {end_of_verse}
+
+
+
+
+
+
+
+
+

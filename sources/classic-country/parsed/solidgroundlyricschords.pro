@@ -1,6 +1,9 @@
 {meta: title Solid Ground}
 {meta: artist Ricky Skaggs}
 {meta: composer Gary Owens}
+{meta: x_source classic-country}
+{meta: x_source_file solidgroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One man built his house in the sand
@@ -30,3 +33,7 @@ Yeah we've got the high ground when troubled waters rise
 When the floods of tribulation came you can understand
 [G7]Why one house remained and the other one did [C]not
 {end_of_verse}
+
+
+
+

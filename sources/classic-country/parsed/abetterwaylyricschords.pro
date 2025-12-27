@@ -1,6 +1,9 @@
 {meta: title A Better Way}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo}
+{meta: x_source classic-country}
+{meta: x_source_file abetterwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We spent the night in a [C]hobo town like a [G]pair of run[C]aways
@@ -45,3 +48,8 @@ The [G]roads you take don't [C]let you see I don't [D7]love you anymore
 And [G]if you find a [C]broken heart some[G]where along the [C]way
 [G]Don't you dare [C]pick it up it'll [D7]mend itself some[G]day
 {end_of_verse}
+
+
+
+
+

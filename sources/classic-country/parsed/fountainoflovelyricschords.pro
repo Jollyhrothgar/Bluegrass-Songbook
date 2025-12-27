@@ -1,6 +1,9 @@
 {meta: title Fountain Of Love}
 {meta: artist Elvis Presley}
 {meta: composer Bill Giant and Geoff Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file fountainoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One thought of you my heart begins churning
@@ -20,3 +23,5 @@ Repeat
 {start_of_verse: Verse 3}
 [D7]We'll live on [G7]our fountain of [C]love
 {end_of_verse}
+
+

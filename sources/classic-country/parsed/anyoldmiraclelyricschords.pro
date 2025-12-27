@@ -1,6 +1,9 @@
 {meta: title Any Old Miracle}
 {meta: artist Vern Gosdin}
 {meta: composer James Walton Aldridge Jr., Donald Ray Fritts, Gary Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file anyoldmiraclelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It [D7]may be [G]late and I [C]sure do hate to bother [G]You
@@ -32,3 +35,6 @@ Be sure you send the right one [G]down
 If I need to get [C]over her I’ll need some help from [G]you 
 Please send that special [Am]miracle [D7]any old miracle won’t [G]do
 {end_of_verse}
+
+
+

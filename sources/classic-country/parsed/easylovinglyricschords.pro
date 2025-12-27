@@ -1,5 +1,8 @@
 {meta: title Easy Loving}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file easylovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Easy loving  so [F]sexy [C]looking
@@ -21,3 +24,5 @@
 [C]Easy loving  [F]seeing's [C]believing
 [F]Life with you's like [C]living  in [G7]a beautiful [C]dream
 {end_of_verse}
+
+

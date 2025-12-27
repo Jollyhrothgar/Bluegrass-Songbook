@@ -1,6 +1,9 @@
 {meta: title A Heartache for a Keepsake}
 {meta: artist Faron Young}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file aheartacheforakeepsakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A heartache for a keepsake
@@ -43,3 +46,8 @@ I'm looking out my window
 [G7]A heartache for a keepsake
 [C]It became mine just today
 {end_of_verse}
+
+
+
+
+

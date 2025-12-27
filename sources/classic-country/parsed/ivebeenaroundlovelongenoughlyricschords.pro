@@ -1,6 +1,9 @@
 {meta: title I've Been Around Love Long Enough}
 {meta: artist Tony Booth}
 {meta: composer Glenn Sutton and Katie Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeenaroundlovelongenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's in your eyes it's in your touch [G7]in everything you [C]do 
@@ -33,3 +36,7 @@ I've been around love [G]long enough to [D7]know when love is [G]gone
 {start_of_verse: Verse 5}
 [C]I've been around love [G]long enough to [D7]know when love is [G]gone
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Can't Break It To My Heart}
 {meta: artist Tracy Lawrence}
 {meta: composer Earl Clark, Elbert West, Kirk Roth, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file cantbreakittomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've never felt as helpless [Dm]as I do today
@@ -33,3 +36,7 @@ Yes I've [F]got it through my head I just can't [G7]break it to my [C]heart
 {start_of_verse: Verse 5}
 Oh I've [F]got it through my head I just can't [G7]break it to my [C]heart
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It Never Will Be Over For Me}
 {meta: artist Tony Booth}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file itneverwillbeoverformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're standing there ex[F]plaining that it's [C]over
@@ -28,3 +31,6 @@ And it never will [G7]be over for [C]me
 Good[F]bye can't make our love a memo[C]ry
 And it never will [G7]be over for [C]me
 {end_of_verse}
+
+
+

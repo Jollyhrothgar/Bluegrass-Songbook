@@ -1,6 +1,9 @@
 {meta: title A Memory Away}
 {meta: artist Gene Watson}
 {meta: composer Warren Robb and David Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file amemoryawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I woke up this [D7]morning [Em]thinking about those [G]times
@@ -33,3 +36,7 @@ Your love is just a memory away
 {start_of_verse: Verse 4}
 [C]You're always just a [D7]memory a[G]way
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Daisy Mae}
 {meta: artist Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file daisymaelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh Daisy Mae [C]oh Daisy Mae
@@ -28,3 +31,6 @@ I’ll get away till we [C]have that final day
 [G]Well laying jokes aside you’ll [C]make a wonderful bride
 And [G]I’ll be proud of [D7]you my Daisy [G]Mae
 {end_of_verse}
+
+
+

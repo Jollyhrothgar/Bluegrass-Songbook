@@ -1,6 +1,9 @@
 {meta: title I Must Have Done Something Bad}
 {meta: artist George Jones}
 {meta: composer Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file imusthavedonesomethingbadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I must have done something bad [C7]sometime in my [F]life
@@ -34,3 +37,7 @@ Why you had me [C]fooled all [G7]alone
 [C]I gave you all that I had then I [C7]searched around for [F]more
 And now I've got [C]nothing at [G7]all and you're [C]gone
 {end_of_verse}
+
+
+
+

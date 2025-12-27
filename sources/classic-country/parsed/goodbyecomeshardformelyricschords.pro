@@ -1,6 +1,9 @@
 {meta: title Goodbye Comes Hard For Me}
 {meta: artist Merle Haggard}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyecomeshardformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just remembered something that [C7]I forgot to [F]do
@@ -27,3 +30,6 @@
 [C7]My face is wet I've cried I guess I loved you now you're [F]free
 [C]When it's goodbye to [G7]all our love goodbye comes hard for [C]me
 {end_of_verse}
+
+
+

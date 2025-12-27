@@ -1,6 +1,9 @@
 {meta: title What’s Gonna Happen To Me}
 {meta: artist Mac Wiseman}
 {meta: composer Fred Rose and Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file whatsgonnahappentomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The flowers of love came to wither and [G7]die
@@ -29,3 +32,6 @@ You’ll still be a sweet memo[C]ry
 It’s hard to go on knowing [F]that you don’t care
 Oh [G7]what’s gonna happen to [C]me
 {end_of_verse}
+
+
+

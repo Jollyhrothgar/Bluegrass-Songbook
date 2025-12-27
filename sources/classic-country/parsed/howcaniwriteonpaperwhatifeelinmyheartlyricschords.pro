@@ -1,6 +1,9 @@
 {meta: title How Can I Write On Paper What I Feel In My Heart}
 {meta: artist Jim Reeves}
 {meta: composer Don Carter, Danny Harrison, George Kent, Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file howcaniwriteonpaperwhatifeelinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With pen in hand I try to write this note to [G7]you
@@ -22,3 +25,5 @@
 [C7]So many things were left unsaid I don't know where to [F]start
 [G7]How can I write on paper what I feel in my [C]heart
 {end_of_verse}
+
+

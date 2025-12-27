@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Live (As Long As I Can)}
 {meta: artist Charlie Walker}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnaliveaslongasicanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna live just as [D7]long as I [G]can
@@ -40,3 +43,8 @@ I'm gonna [G]live just as [D7]long as I [G]can
 {start_of_verse: Verse 4}
 Yeah I'm gonna live just as [D7]long as I [G]can
 {end_of_verse}
+
+
+
+
+

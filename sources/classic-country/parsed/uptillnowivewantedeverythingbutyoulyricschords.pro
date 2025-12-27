@@ -1,5 +1,8 @@
 {meta: title Up Till Now I've Wanted Everything But You}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file uptillnowivewantedeverythingbutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Up till now I've wanted [D7]everything but [G]you
@@ -25,3 +28,6 @@ And [G]the face looks like a stranger to my tortured [D7]mind
 It [G]seems I've spent the past few years never knowing [C]you 
 Up to [G]now I've wanted [D7]everything but [G]you
 {end_of_verse}
+
+
+

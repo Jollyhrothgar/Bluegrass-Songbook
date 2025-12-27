@@ -1,6 +1,9 @@
 {meta: title I'm Biting My Fingernails And Thinking Of You}
 {meta: artist Ernest Tubb and Loretta Lynn}
 {meta: composer Ernest Tubb, Ernie Benedict, Roy West, Lenny Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file imbitingmyfingernailsandthinkingofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bitin' my fingernails [F]thinkin' of you
@@ -36,3 +39,7 @@ I'm [G7]bitin' my fingernails and thinkin' dear of [C]you
 Just got a feelin' [F]maybe we're through
 [G7]Bitin' my fingernails and thinkin' dear of [C]you
 {end_of_verse}
+
+
+
+

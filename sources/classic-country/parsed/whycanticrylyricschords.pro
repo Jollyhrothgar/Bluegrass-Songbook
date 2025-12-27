@@ -1,5 +1,8 @@
 {meta: title Why Can't I Cry}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file whycanticrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Life comes down so [C]heavy  [A7]sometimes I can't [D7]bear it on my [G]shoulders
@@ -26,3 +29,6 @@ Why why can't I [C]cry like you [G]do when I [D7]need to
 [G]Why why can't I [C]cry when I [G]need to
 And God knows I [D7]need to oh so [G]bad
 {end_of_verse}
+
+
+

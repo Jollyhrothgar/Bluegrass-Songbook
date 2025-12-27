@@ -1,6 +1,9 @@
 {meta: title With Body And Soul}
 {meta: artist Bill Monroe}
 {meta: composer Virginia Stauffer}
+{meta: x_source classic-country}
+{meta: x_source_file withbodyandsoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]See the [F]train comin’ [G]around the bend
@@ -41,3 +44,9 @@ Body and [F]soul [G]body and [C]soul
 {start_of_verse: Verse 5}
 That's how she loved me with [D7]body and [G]soul
 {end_of_verse}
+
+
+
+
+
+

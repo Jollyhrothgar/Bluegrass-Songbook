@@ -1,6 +1,9 @@
 {meta: title Remember The Alamo}
 {meta: artist Johnny Cash}
 {meta: composer Jane Bowers}
+{meta: x_source classic-country}
+{meta: x_source_file rememberthealamolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]And a hundred and eighty were challenged by [G7]Travis to [C]die
@@ -40,3 +43,8 @@ We'll never surrender and ever with [G7]liberty [C]be
 [F]Hey Santa Anna we're killing your soldiers [Em]below
 That [F]men wherever they go [C]will [G7]remember the [C]Alamo
 {end_of_verse}
+
+
+
+
+

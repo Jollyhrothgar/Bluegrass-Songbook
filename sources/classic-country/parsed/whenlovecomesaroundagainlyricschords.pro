@@ -1,6 +1,9 @@
 {meta: title When Love Comes Around Again}
 {meta: artist George Strait}
 {meta: composer Donnie Kees, Jeff Silvey, Monty Holmes}
+{meta: x_source classic-country}
+{meta: x_source_file whenlovecomesaroundagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]There's [C]things you don't know 'til you know
@@ -52,3 +55,7 @@ When [G7]love comes around [C]again
 Yeah that's [G7]all it's gonna take and you'll fall [F]right back in
 When [G7]love comes around [C]again
 {end_of_verse}
+
+
+
+

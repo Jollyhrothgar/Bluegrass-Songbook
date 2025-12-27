@@ -1,6 +1,9 @@
 {meta: title Keeper Of My Heart}
 {meta: artist Sonny James}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file keeperofmyheartlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some men try to go on living [C]their lives [G]alone
@@ -29,3 +32,6 @@ It could never belong to someone [A7]new [D7]
 Till the [G]end of my life and [C]after we must part
 You will [D7]still be the keeper of my [C]heart
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Born With The Blues}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file bornwiththeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dad was my hero  God called him [F]away
@@ -35,3 +38,7 @@
 [C]In debt from the start  I’m still paying my [F]dues
 [C]Crazy and [G7]lonely  and born with the [C]blues
 {end_of_verse}
+
+
+
+

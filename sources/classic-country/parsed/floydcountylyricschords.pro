@@ -1,5 +1,8 @@
 {meta: title Floyd County}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file floydcountylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a sad day in Floyd [F]County Mr. [C]Jones
@@ -49,3 +52,9 @@ I guess this [C]place just won't [G7]never be the [C]same
 And at the [C]grave his woman [F]cries and she [C]moans
 [F]Cause it's a [C]sad day in Floyd [G7]County Mr. [C]Jones
 {end_of_verse}
+
+
+
+
+
+

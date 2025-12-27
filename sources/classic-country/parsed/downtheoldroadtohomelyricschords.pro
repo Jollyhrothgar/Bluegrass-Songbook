@@ -1,6 +1,9 @@
 {meta: title Down The Old Road To Home}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers and Carey Harvey}
+{meta: x_source classic-country}
+{meta: x_source_file downtheoldroadtohomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm [F]thinking of you while here all [C]alone
@@ -32,3 +35,7 @@
 [F]For I'm lonesome and blue for some place [B7]to roam
 [C]And I wish it could be down that [G7]old road to [C]home
 {end_of_verse}
+
+
+
+

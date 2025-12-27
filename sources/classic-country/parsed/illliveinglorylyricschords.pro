@@ -1,6 +1,9 @@
 {meta: title I'll Live in Glory}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Tamika Farris}
+{meta: x_source classic-country}
+{meta: x_source_file illliveinglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd like to stay here longer then man's allotted days
@@ -36,3 +39,7 @@ I'll tell and sing love's story and it’s [A7]there on [D7]high
 There [G]with my dear Redeemer [Em]no more to [G]die
 Oh yes I'll live in [Em]glory [D7]by and [G]by
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Ask Your Heart}
 {meta: artist Sonny James}
 {meta: composer Sonny James and John Skye}
+{meta: x_source classic-country}
+{meta: x_source_file justaskyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just ask your [D7]heart (darling ask your heart) 
@@ -41,3 +44,8 @@ Ask your [D7]heart (darling ask your heart)
 And it will [G]tell you (it will tell you)
 It will [D7]tell you that I love you love you [G]so          
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Should We Tell Him}
 {meta: artist Everly Brothers}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file shouldwetellhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mmm mmm [F]should we tell him
@@ -47,3 +50,9 @@ To [G7]let him go on trusting isn't [C]fair
 Mmm mmm [F]should we tell him  
 Should we [G7]tell him that his girl doesn't [C]care
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Twas The Dawn Of A Beautiful Day}
 {meta: artist Eddy Arnold}
 {meta: composer Glenn Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file twasthedawnofabeautifuldaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Twas the dawn of a beautiful [C]beautiful [G]day
@@ -36,3 +39,7 @@ He [A7]made all things new when He [D7]set my heart free
 Twas the [G]dawn of a beautiful [C]beautiful [G]day
 When [A7]Jesus came [D7]into my [G]heart
 {end_of_verse}
+
+
+
+

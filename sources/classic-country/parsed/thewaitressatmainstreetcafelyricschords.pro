@@ -1,6 +1,9 @@
 {meta: title The Waitress At Main Street Cafe}
 {meta: artist Bobby Bare}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file thewaitressatmainstreetcafelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know they all [G7]know that I [C]love her 
@@ -43,3 +46,8 @@ She [C]says she will [G7]take off that [C]apron
 Yes the girl that I married is [C]working [Am]
 She's the [F]waitress at [G7]Main Street [C]Cafe
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Barefoot Santa Claus}
 {meta: artist Sonny James}
 {meta: composer Robert F. Tubert and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file barefootsantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Barefoot barefoot Santa Claus
@@ -73,3 +76,12 @@ Barefoot barefoot Santa Claus
 [D7]Happy in his big red [G]suit
 [D7]Happy in his big red [G]suit
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Now And Then}
 {meta: artist Don Williams}
 {meta: composer Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file nowandthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now and then a loser [Am]wins
@@ -46,3 +49,9 @@
 [G]But now and [G7]then [C]miracles still [Cm]happen
 [G]Oh I know they [Em]do  [C]cause I [D7]found [G]you
 {end_of_verse}
+
+
+
+
+
+

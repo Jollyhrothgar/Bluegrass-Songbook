@@ -1,6 +1,9 @@
 {meta: title Mama Kiss The Hurt Away}
 {meta: artist Dottie West}
 {meta: composer Dottie West and Bill West}
+{meta: x_source classic-country}
+{meta: x_source_file mamakissthehurtawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mama kiss the [D7]hurt a[C]way 
@@ -42,3 +45,8 @@ But oh then one day Jenny [C]stole his love away
 But I guess I'm too big for [C]mama to say 
 [D7]Let mama kiss the [G]hurt away
 {end_of_verse}
+
+
+
+
+

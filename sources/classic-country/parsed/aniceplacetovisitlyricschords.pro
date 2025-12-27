@@ -1,6 +1,9 @@
 {meta: title A Nice Place To Visit}
 {meta: artist George Hamilton IV}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file aniceplacetovisitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've seen the way you handle other [C]guys
@@ -37,3 +40,7 @@ But I'd [D7]sure hate to [G]live there
 [C]It'd be a nice place to [G]visit
 But I'd [D7]sure hate to [G]live there
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Changes Coming On}
 {meta: artist Alabama}
 {meta: composer Dean Dillon, Buddy Cannon, Jimmy Darrell}
+{meta: x_source classic-country}
+{meta: x_source_file changescomingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Long [G7]hair was not in [C]style
@@ -47,3 +50,8 @@
 [Em]I can feel changes comin' [C]on
 [Em]I can feel changes comin' [C]on
 {end_of_verse}
+
+
+
+
+

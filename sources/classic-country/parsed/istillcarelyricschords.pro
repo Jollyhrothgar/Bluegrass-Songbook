@@ -1,6 +1,9 @@
 {meta: title I Still Care}
 {meta: artist Mickey Gilley}
 {meta: composer Jack Jessup}
+{meta: x_source classic-country}
+{meta: x_source_file istillcarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some old love [C]letters [G]read one or two
@@ -33,3 +36,7 @@ I [D7]know I still [G]care
 {start_of_verse: Verse 5}
 I [D7]know I still [G]care
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title What Would My Mama Say}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file whatwouldmymamasaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You don't know what it's about but you go out and [F]try
@@ -39,3 +42,8 @@ So [F]what would my [G7]mama [C]say
 {start_of_verse: Verse 4}
 What would my [G7]mama [C]say
 {end_of_verse}
+
+
+
+
+

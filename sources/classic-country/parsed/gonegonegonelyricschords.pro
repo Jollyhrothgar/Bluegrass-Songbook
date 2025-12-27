@@ -1,6 +1,9 @@
 {meta: title Gone Gone Gone}
 {meta: artist Charlie Pride}
 {meta: composer Jerry Crutchfield and Buck Maxwell}
+{meta: x_source classic-country}
+{meta: x_source_file gonegonegonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The day you walked [C]away you left the [G]hurt behind
@@ -29,3 +32,6 @@ I [C]walk among the flowers that bloom [G]here in the sun
 And [G]if my room has [C]bars it's not that [G]I've done wrong
 [F]It's just my mind is gone  [D7]gone  [G]gone
 {end_of_verse}
+
+
+

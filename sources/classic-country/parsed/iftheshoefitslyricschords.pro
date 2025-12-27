@@ -1,6 +1,9 @@
 {meta: title If The Shoe Fits}
 {meta: artist Waylon Jennings}
 {meta: composer Harlan Howard and Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file iftheshoefitslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My friends all say that you're deceiving [F]me
@@ -33,3 +36,7 @@ If the [G7]truth hurts then the shoe fits just [C]right
 {start_of_verse: Verse 4}
 If the [G7]truth hurts then the shoe fits just [C]right 
 {end_of_verse}
+
+
+
+

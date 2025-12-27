@@ -1,6 +1,9 @@
 {meta: title Laid Back And Wasted}
 {meta: artist David Allan Coe}
 {meta: composer Dale Murphy}
+{meta: x_source classic-country}
+{meta: x_source_file laidbackandwastedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Laid back and wasted driven to drinking 
@@ -41,3 +44,8 @@ I'll give you the [G]blues
 [D7]Don't ever doubt it I'll live without it 
 I'll give you the [G]blues
 {end_of_verse}
+
+
+
+
+

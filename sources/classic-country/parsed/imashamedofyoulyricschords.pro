@@ -1,6 +1,9 @@
 {meta: title I'm Ashamed Of You}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file imashamedofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heart I'm ashamed of you [F]lips I'm ashamed of you
@@ -36,3 +39,7 @@ Cause [D7]if there is you'd better do it [G7]now
 [C]Arms I'm ashamed of you [F]aching the way you do
 [C]I'm ashamed of you but mostly [G7]I'm ashamed of [C]me
 {end_of_verse}
+
+
+
+

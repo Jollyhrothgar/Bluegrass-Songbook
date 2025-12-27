@@ -1,6 +1,9 @@
 {meta: title Callin' Your Name}
 {meta: artist Ricky Skaggs}
 {meta: composer Larry Cordle and Chris Austin}
+{meta: x_source classic-country}
+{meta: x_source_file callinyournamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm callin' callin' callin' your name
@@ -34,3 +37,7 @@ Now I'm holdin' holdin' barely holdin' on
 [F]Callin' callin' callin' your name
 [C]Callin' callin' [G7]callin' your [C]name
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The King Is Gone So Are You}
 {meta: artist George Jones}
 {meta: composer Roger Ferris}
+{meta: x_source classic-country}
+{meta: x_source_file thekingisgonesoareyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I broke the seal on a Jim Beam decanter that looks like [D7]Elvis
@@ -56,3 +59,10 @@ Yabba Dabba [G]Doo the [C]King is [G]gone and [D7]so are [G]you
 Last night I broke the seal on a Jim Beam decanter that looks like [D7]Elvis
 I [C]soaked the label [Am]off  [D7]a Flintstone Jelly Bean [G]jar
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Legend Of The Robin's Red Breast}
 {meta: artist Cowboy Copas}
 {meta: composer Preston Blanche and Bradley Kincaid}
+{meta: x_source classic-country}
+{meta: x_source_file legendoftherobinsredbreastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh have you heard this story it [C]happened long [G]ago
@@ -44,3 +47,9 @@
 [C]It breathes the blessed [G]teaching of [D7]God's own holy [G]word
 [C]A lesson taught in [G]meekness by a [D7]lowly little [G]bird
 {end_of_verse}
+
+
+
+
+
+

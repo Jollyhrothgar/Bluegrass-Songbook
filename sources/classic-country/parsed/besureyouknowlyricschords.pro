@@ -1,6 +1,9 @@
 {meta: title Be Sure You Know}
 {meta: artist George Morgan}
 {meta: composer Vic Alpin and Jack Toombs}
+{meta: x_source classic-country}
+{meta: x_source_file besureyouknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Be sure you know your love for me has [G7]died
@@ -29,3 +32,6 @@
 [C]Like me you'll be all by yourself [G7]to cry
 [C]Be sure you know before you say goodbye
 {end_of_verse}
+
+
+

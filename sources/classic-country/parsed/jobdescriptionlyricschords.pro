@@ -1,5 +1,8 @@
 {meta: title Job Description}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file jobdescriptionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Well I [G]know sometimes you find it hard to [C]understand 
@@ -61,3 +64,11 @@ And the miles back home to [G]you
 [Em]Well I just [C]sing for the people count the [D7]money 
 And the miles back home to [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+

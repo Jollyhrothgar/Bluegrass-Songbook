@@ -1,6 +1,9 @@
 {meta: title I'll Make It All Up To You}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file illmakeitalluptoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's true so true  I didn't [F]do right by [C]you
@@ -31,3 +34,7 @@ When we [F]met I thought we'd [C]b-e so happy  [G7]we'd be so [C]true
 But [F]when we met I thought we'd b-e so [G7]happy 
 [D7]But now you say that we're [G7]through
 {end_of_verse}
+
+
+
+

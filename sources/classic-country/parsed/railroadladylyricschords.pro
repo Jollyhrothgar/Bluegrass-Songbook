@@ -1,6 +1,9 @@
 {meta: title Railroad Lady}
 {meta: artist Lefty Frizzell}
 {meta: composer Jimmy Buffett and Jerry Jeff Walker}
+{meta: x_source classic-country}
+{meta: x_source_file railroadladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's a [F]railroad lady just a [C]little bit shady
@@ -47,3 +50,9 @@ Now she's [G7]trying just trying to get home [C]again
 {start_of_verse: Verse 6}
 On a [G7]bus to Kentucky and [F]home [G7]once [C]again
 {end_of_verse}
+
+
+
+
+
+

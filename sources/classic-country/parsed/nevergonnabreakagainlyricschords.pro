@@ -1,6 +1,9 @@
 {meta: title Never Gonna Break Again}
 {meta: artist Tracy Byrd}
 {meta: composer Mark Nesler and Tony Martin}
+{meta: x_source classic-country}
+{meta: x_source_file nevergonnabreakagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seeing you sittin' alone [G7]stranded with your heart broke down
@@ -40,3 +43,7 @@ And when [Dm]I build trust [G7]it's [Am]built to stand fast
 Oh everything [F]I start I [C]see it to the end
 If you let me [Dm]fix your heart it's [G7]never gonna break [F]again
 {end_of_verse}
+
+
+
+

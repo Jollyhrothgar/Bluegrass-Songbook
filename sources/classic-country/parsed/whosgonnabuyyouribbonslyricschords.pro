@@ -1,6 +1,9 @@
 {meta: title Who's Gonna Buy You Ribbons}
 {meta: artist Jim Ed Brown}
 {meta: composer Paul Clayton}
+{meta: x_source classic-country}
+{meta: x_source_file whosgonnabuyyouribbonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't no use to [E7]sit and cry [Am]now [F]darling
@@ -38,3 +41,8 @@ Wonder [C]who's gonna buy you [G7]ribbons when I'm [C]gone
 {start_of_verse: Verse 6}
 Wonder who's gonna buy you [G7]ribbons when I'm [C]gone
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Walk Right Back}
 {meta: artist Nanci Griffith}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file walkrightbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want you to tell me why you walked out on me 
@@ -35,3 +38,7 @@ Walk right back to me this minute
 {start_of_verse: Verse 5}
 [G7]I’m so lonesome [C]I’m so lonesome [G7]I’m so lonesome every [C]day
 {end_of_verse}
+
+
+
+

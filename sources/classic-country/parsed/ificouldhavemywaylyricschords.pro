@@ -1,6 +1,9 @@
 {meta: title If I Could Have My Way}
 {meta: artist John Anderson}
 {meta: composer Fred F. Carter Jr. and John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldhavemywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I could have my [C]way  [D7]you wouldn't worry one more [G]day
@@ -25,3 +28,6 @@ So we have to do the [C]best we [Am]can  [D7]with the love that comes our [G]way
 I would bring you [C]flowers  [D7]and shining stars [G]above
 If I could have my [C]way  [D7]I would bring you [G]love
 {end_of_verse}
+
+
+

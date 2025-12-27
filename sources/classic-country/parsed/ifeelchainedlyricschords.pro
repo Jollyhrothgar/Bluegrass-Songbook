@@ -1,6 +1,9 @@
 {meta: title I Feel Chained}
 {meta: artist Vernon Oxford}
 {meta: composer Bob McDill and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file ifeelchainedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rain beats on the window as we [F]sat by the [C]fire
@@ -48,3 +51,9 @@
 [G7]But I know that I’ll never break [C]away
 [G7]Yeah I know that I’ll never break [C]away
 {end_of_verse}
+
+
+
+
+
+

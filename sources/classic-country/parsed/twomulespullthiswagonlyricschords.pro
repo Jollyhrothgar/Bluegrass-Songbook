@@ -1,6 +1,9 @@
 {meta: title Two Mules Pull This Wagon}
 {meta: artist Loretta Lynn}
 {meta: composer Johnny Russell}
+{meta: x_source classic-country}
+{meta: x_source_file twomulespullthiswagonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you come home most every night as [C]grouchy as can [G]be
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]Yeah you seem [G]to forget big boy that [D7]two mules pull this [G]wagon
 {end_of_verse}
+
+
+
+

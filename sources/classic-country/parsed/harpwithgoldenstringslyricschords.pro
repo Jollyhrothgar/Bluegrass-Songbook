@@ -1,6 +1,9 @@
 {meta: title Harp With Golden Strings}
 {meta: artist Loretta Lynn}
 {meta: composer Mac McCarty and Jimmie Keath}
+{meta: x_source classic-country}
+{meta: x_source_file harpwithgoldenstringslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love to hear those good old songs they sing unto the Lord
@@ -33,3 +36,7 @@ I hear songs of ever kind that gives my heart a thrill
 {start_of_verse: Verse 5}
 [C]I'm gonna trade my old [G]guitar for a harp [A7]with golden [G][D7]strings
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sweet Betsy From Pike}
 {meta: artist Johnny Cash}
 {meta: composer Jimmie Driftwood}
+{meta: x_source classic-country}
+{meta: x_source_file sweetbetsyfrompikelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now don't you remember Sweet [D7]Betsy from [G]Pike
@@ -43,3 +46,8 @@ But Ike gettin' jealous [A7]obtained a [D7]divorce
 [G]Betsy well satisfied [C]said with a [G]shout
 Good-bye you big lummox I'm [D7]glad you backed [G]out
 {end_of_verse}
+
+
+
+
+

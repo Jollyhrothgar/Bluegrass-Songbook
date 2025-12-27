@@ -1,6 +1,9 @@
 {meta: title I'm Not A Candle In The Wind}
 {meta: artist Bobby Bare}
 {meta: composer Mary Sharon Rice and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file imnotacandleinthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Neath your feet you feel [D7]the world is [G]shaking
@@ -29,3 +32,6 @@
 [G]Should you need [D7]someone who'll never harm [G]you
 [Em]I'm a [C]warm [G]fire burning not a [D7]candle in the [G]wind
 {end_of_verse}
+
+
+

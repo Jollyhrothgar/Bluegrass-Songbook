@@ -1,6 +1,9 @@
 {meta: title Banks Of The Ohio}
 {meta: artist Johnny Cash}
 {meta: composer Maybelle Carter}
+{meta: x_source classic-country}
+{meta: x_source_file banksoftheohiolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I asked my love to take a [D7]walk
@@ -67,3 +70,12 @@ In no others arms [G]entwined
 Down beside where [G7]the waters [C]flow
 Down by the [G]banks  of [D7]the [G]Ohio
 {end_of_verse}
+
+
+
+
+
+
+
+
+

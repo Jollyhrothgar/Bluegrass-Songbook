@@ -1,5 +1,8 @@
 {meta: title First Train Heading South}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file firsttrainheadingsouthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't know my baby loved me so 
@@ -49,3 +52,9 @@ As I [G7]ride this first train I caught heading [C]south
 Now [F]I pack my bags and then I'll [C]go 
 And [G7]catch the first train I see heading [C]south
 {end_of_verse}
+
+
+
+
+
+

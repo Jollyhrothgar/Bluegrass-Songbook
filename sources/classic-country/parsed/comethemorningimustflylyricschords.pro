@@ -1,6 +1,9 @@
 {meta: title Come The Morning I Must Fly}
 {meta: artist Johnny Lee}
 {meta: composer Danny Epps and Bettye Holman}
+{meta: x_source classic-country}
+{meta: x_source_file comethemorningimustflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll be leaving in the [Dm]morning 
@@ -43,3 +46,8 @@ That old sun will soon be [F]rising
 Then I'll be just a [Dm]memory 
 [F]Come the [G7]morning I must [C]fly
 {end_of_verse}
+
+
+
+
+

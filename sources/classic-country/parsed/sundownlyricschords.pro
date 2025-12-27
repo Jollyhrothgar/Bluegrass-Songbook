@@ -1,5 +1,8 @@
 {meta: title Sundown}
 {meta: artist Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file sundownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can see her lying back in her satin dress
@@ -43,3 +46,7 @@ If I [A]find you been creeping round my back [C]stairs
 Sometimes I think it's a [F]sin
 When I [A]feel like I'm winning when I'm losing [C]again 
 {end_of_verse}
+
+
+
+

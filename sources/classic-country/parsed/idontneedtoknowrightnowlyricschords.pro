@@ -1,6 +1,9 @@
 {meta: title I Don't Need To Know Right Now}
 {meta: artist Johnny Paycheck}
 {meta: composer David Astri and Charles Deskin}
+{meta: x_source classic-country}
+{meta: x_source_file idontneedtoknowrightnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've seen the [C]glow of the [G7]candle in your [C]eyes
@@ -30,3 +33,6 @@ And [F]maybe I'll [E7]never [C]see you again
 But I [Dm]don't need to [G7]know that right now
 But I [Dm]don't need to [G7]know that right [F]now[C]
 {end_of_verse}
+
+
+

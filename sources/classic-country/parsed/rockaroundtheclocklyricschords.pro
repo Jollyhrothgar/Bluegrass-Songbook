@@ -1,5 +1,8 @@
 {meta: title Rock Around The Clock}
 {meta: artist Bill Haley}
+{meta: x_source classic-country}
+{meta: x_source_file rockaroundtheclocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One two three o'clock four o'clock rock 
@@ -56,3 +59,11 @@ We're gonna rock around the clock tonight
 We're gonna rock rock rock 'til broad daylight
 We're gonna rock gonna rock around the clock tonight
 {end_of_verse}
+
+
+
+
+
+
+
+

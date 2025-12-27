@@ -1,6 +1,9 @@
 {meta: title There's No Wings On My Angel}
 {meta: artist Eddy Arnold}
 {meta: composer Cy Coben, Irving Melsher, Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file theresnowingsonmyangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no [C7]wings [F]on my angel cause [C]she's not from [G7]heaven [G7][C]above
@@ -17,3 +20,4 @@ I [F]know love is blind but still I can [C]see
 That [G]my love for [D7]her means [G]sweet [Dm][G7]misery
 [G7]There's [C]no [C7]wings [F]on my angel but [C]she's still an [G7]angel to [C]me
 {end_of_verse}
+

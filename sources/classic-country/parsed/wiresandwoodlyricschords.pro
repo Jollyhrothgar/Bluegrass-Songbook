@@ -1,6 +1,9 @@
 {meta: title Wires And Wood}
 {meta: artist Johnny Staats}
 {meta: composer Timothy C. Bays, Ron G. Sowell}
+{meta: x_source classic-country}
+{meta: x_source_file wiresandwoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 John Middelton Van Meter, Jon Peter Wikstrom
@@ -38,3 +41,8 @@ And pour it all [G7]out  through wires and [C]wood
 {start_of_verse: Verse 5}
 When the spirit is [G7]singing  through wires and [C]wood
 {end_of_verse}
+
+
+
+
+

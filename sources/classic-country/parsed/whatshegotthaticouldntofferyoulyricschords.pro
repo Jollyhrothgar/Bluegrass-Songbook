@@ -1,6 +1,9 @@
 {meta: title What's He Got (That I Couldn't Offer You)}
 {meta: artist Billy Walker}
 {meta: composer Vern Stovall and Buddy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file whatshegotthaticouldntofferyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do his arms hold you tighter than [G7]mine
@@ -28,3 +31,6 @@ Be sure you know before you [C7]say we are [F]through
 What's he [C]got that I [G7]couldn't offer [C]you [F]
 What's he [C]got that I [G7]couldn't offer [C]you
 {end_of_verse}
+
+
+

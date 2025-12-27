@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Walk And Talk With My Lord}
 {meta: artist Norma Jean}
 {meta: composer Martha Carson}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnawalkandtalkwithmylordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I heard a voice from heaven
@@ -43,3 +46,8 @@ I'm gonna [F]walk walk and talk with my [C]Lord
 He's a lily of the valley He's bright as morning [Am]star
 I'm gonna [C]walk walk and [G7]talk with my [C]Lord
 {end_of_verse}
+
+
+
+
+

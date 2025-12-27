@@ -1,6 +1,9 @@
 {meta: title The Love I Have For You}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file theloveihaveforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 The Love I Have For You
@@ -35,3 +38,7 @@ You'll [C]be a[F]bove it think nothing [G7]of it if I [C]told you so
 If that's the game you play then I'll just [G7]walk away
 I'll never [C]let you know
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title By and By}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file byandbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well children by and by [F]when the morning [C]comes
@@ -40,3 +43,8 @@ And we'll understand Him [G7]better by and [C]by
 {start_of_verse: Verse 6}
 And we'll understand Him [G7]better by and [F]by[C]
 {end_of_verse}
+
+
+
+
+

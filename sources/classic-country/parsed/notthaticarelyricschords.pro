@@ -1,6 +1,9 @@
 {meta: title Not That I Care}
 {meta: artist Wilburn Brothers}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file notthaticarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So you saw her last [D7]night with her new [G]love 
@@ -29,3 +32,6 @@ Too much [C]smoke what I [D7]need is some [G]air
 By the [C]way did she ask you about [G]me 
 I just wonder [D7]not that I [G]care
 {end_of_verse}
+
+
+

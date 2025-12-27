@@ -1,6 +1,9 @@
 {meta: title Have This Love On Me}
 {meta: artist Bobby Helms}
 {meta: composer Johnny Russell}
+{meta: x_source classic-country}
+{meta: x_source_file havethisloveonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There you stand holding her like you know you shouldn't [D7]do 
@@ -31,3 +34,6 @@ Oh [D7]oh have this laugh on [G]me
 {start_of_verse: Verse 4}
 [C](Have this laugh on [G]me)
 {end_of_verse}
+
+
+

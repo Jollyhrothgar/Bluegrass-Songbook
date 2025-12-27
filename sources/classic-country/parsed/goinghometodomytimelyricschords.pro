@@ -1,6 +1,9 @@
 {meta: title Going Home To Do My Time}
 {meta: artist Cal Smith}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file goinghometodomytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The barroom crowd is thinning out it [C]must be getting [G]late
@@ -29,3 +32,6 @@
 [G]We both tried but it’s no good our [C]love’s dead on the [G]vine
 [C]Yet I must pay for [G]loving you by going [D7]home to do my [G]time
 {end_of_verse}
+
+
+

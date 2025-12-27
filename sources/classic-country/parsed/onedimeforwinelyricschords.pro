@@ -1,6 +1,9 @@
 {meta: title One Dime For Wine}
 {meta: artist Porter Wagoner}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file onedimeforwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From a small country town to a [F]big and lonely [C]city
@@ -27,3 +30,6 @@ And I [G7]realized that lowly man is [C]me
 {start_of_verse: Verse 4}
 [F]One dime for [C]wine mister [G7]one dime for [C]wine
 {end_of_verse}
+
+
+

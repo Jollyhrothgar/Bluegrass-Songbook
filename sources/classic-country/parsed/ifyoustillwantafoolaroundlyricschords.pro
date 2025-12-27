@@ -1,6 +1,9 @@
 {meta: title If You Still Want A Fool Around}
 {meta: artist Charley Pride}
 {meta: composer Kent M. Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoustillwantafoolaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a fool moon out tonight I could be with you
@@ -65,3 +68,11 @@ If you still want to [F]fool [C]around
 If you still want to [F]fool [C]around
 If you still want to [F]fool [C]around
 {end_of_verse}
+
+
+
+
+
+
+
+

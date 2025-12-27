@@ -1,6 +1,9 @@
 {meta: title You Know I Love You}
 {meta: artist Kenny Rogers}
 {meta: composer Mike Settle}
+{meta: x_source classic-country}
+{meta: x_source_file youknowiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the morning sun  streaks across my [D7]room 
@@ -39,3 +42,7 @@ Now this [C]traveling life is the only one I [G]know
 {start_of_verse: Verse 5}
 Repeat chorus
 {end_of_verse}
+
+
+
+

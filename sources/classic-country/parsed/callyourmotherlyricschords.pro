@@ -1,5 +1,8 @@
 {meta: title Call Your Mother}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file callyourmotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you get a chance would you please call your [F]mother
@@ -41,3 +44,8 @@
 [C]When you get a chance would you please call your [F]mother
 [C]And give my best [G7]regards to your good old [C]dad
 {end_of_verse}
+
+
+
+
+

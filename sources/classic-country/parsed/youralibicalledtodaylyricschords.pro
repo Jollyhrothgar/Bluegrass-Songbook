@@ -1,6 +1,9 @@
 {meta: title Your Alibi Called Today}
 {meta: artist Norma Jean}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file youralibicalledtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Your alibi called [C]today
@@ -26,3 +29,6 @@ Though I want you [F]to my [D7]pride won't let you [G7]stay
 I [F]hope you'll [G7]never know this feeling honey
 Why did your alibi call [C]today
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Afraid To Sleep}
 {meta: artist Roy Orbison}
 {meta: composer Jack Adkins, Buddy Blue, William E. Gilmore}
+{meta: x_source classic-country}
+{meta: x_source_file afraidtosleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The night is still the wind is [Am]chilled
@@ -21,3 +24,5 @@
 [D7]So I'll close my eyes [G]and go ahead [C]and [D7]dream
 [C]Sweet [D7]dreams [C]sweet [D7]dreams
 {end_of_verse}
+
+

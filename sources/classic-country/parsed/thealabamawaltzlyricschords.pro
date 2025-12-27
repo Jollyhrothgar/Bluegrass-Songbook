@@ -1,5 +1,8 @@
 {meta: title The Alabama Waltz}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file thealabamawaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was sad and blue I was [C]down-hearted too
@@ -21,3 +24,5 @@ We [G]danced to the [D7]Alabama [G]Waltz
 [G]There in your arms with [C]all of your charms
 We [G]danced to the [D7]Alabama [G]Waltz
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Blowing Smoke}
 {meta: artist David Ball}
 {meta: composer Billy Spencer, David Ball, Tommy Polk}
+{meta: x_source classic-country}
+{meta: x_source_file blowingsmokelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Beneath this neon haze [D7]here in this honky [G]tonk
@@ -45,3 +48,9 @@ Well I [G]say I've burned her memory but I know [D7]I'm just blowing [G]smoke
 {start_of_verse: Verse 5}
 Well I say I've burned her memory but I know [D7]I'm just blowing [G]smoke
 {end_of_verse}
+
+
+
+
+
+

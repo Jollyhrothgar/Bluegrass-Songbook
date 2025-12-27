@@ -1,6 +1,9 @@
 {meta: title The Last Letter}
 {meta: artist Jack Greene}
 {meta: composer Rex Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file thelastletterlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why do you treat me as if I were only a [G7]friend
@@ -29,3 +32,6 @@ And of the promises that you are breaking so [C]free
 But to this old world I'll soon say my [C7]farewell at [F]last
 [G7]I will be gone when you read this last letter from [C]me
 {end_of_verse}
+
+
+

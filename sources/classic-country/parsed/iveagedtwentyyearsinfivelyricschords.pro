@@ -1,6 +1,9 @@
 {meta: title I've Aged Twenty Years In Five}
 {meta: artist George Jones}
 {meta: composer Bob Parrish and Curtis Gordon}
+{meta: x_source classic-country}
+{meta: x_source_file iveagedtwentyyearsinfivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I look in the [G7]mirror this [C]morning
@@ -45,3 +48,8 @@ Till I [G7]erase twenty [D7]years in [G7]five
 {start_of_verse: Verse 6}
 [Em]Yes I'll [G7]erase twenty [D7]years in [C]five 
 {end_of_verse}
+
+
+
+
+

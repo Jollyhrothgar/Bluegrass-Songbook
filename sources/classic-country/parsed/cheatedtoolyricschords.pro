@@ -1,5 +1,8 @@
 {meta: title Cheated Too}
 {meta: artist Wilma Lee Cooper}
+{meta: x_source classic-country}
+{meta: x_source_file cheatedtoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Cheated in the past by another one who made me [G7]blue
@@ -29,3 +32,7 @@ And then we’ll never have to say that I’ve been cheated [C]too [C7]
 [F]Cheated in the past by another one who made me [G7]blue
 Now you see I know what heartaches are cause I’ve been cheated [C]too
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Let The Stars Get In Your Eyes}
 {meta: artist Ray Price}
 {meta: composer Slim Willet}
+{meta: x_source classic-country}
+{meta: x_source_file dontletthestarsgetinyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't Let The Stars Get In Your Eyes
@@ -46,3 +49,11 @@ So please keep your heart while we're apart
 [G]Don't Let The Stars Get In Your Eyes
 [D7]Don't let the moon break your heart
 {end_of_verse}
+
+
+
+
+
+
+
+

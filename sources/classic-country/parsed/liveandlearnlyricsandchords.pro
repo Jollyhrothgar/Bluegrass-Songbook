@@ -1,5 +1,8 @@
 {meta: title Live And Learn}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file liveandlearnlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I've tried livin' it risky relied on woman and whiskey
@@ -32,3 +35,7 @@ To [Dm]find out if it's [F]right or if it's [Em]wrong you live and [Am]learn
 {start_of_verse: Verse 5}
 [E7]You live and [Am]learn
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bleep You}
 {meta: artist Cal Smith}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file bleepyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You interrupt  each sentence I [G7]start
@@ -34,3 +37,6 @@ I’m really [C]leaving and if you think I’m teasing
 You’re bleeping [C]around  and [C7]your bleep bleep [F]lies
 Are driving me [C]crazy so bleep you ol’ woman [G7]bleep you good[C]bye
 {end_of_verse}
+
+
+

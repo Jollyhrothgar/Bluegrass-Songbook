@@ -1,5 +1,8 @@
 {meta: title I'm Wastin' My Tears On You}
 {meta: artist Tex Ritter}
+{meta: x_source classic-country}
+{meta: x_source_file imwastinmytearsonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You call me your own and then you [C]leave me [A7]alone
@@ -35,3 +38,7 @@ Though I knew [A7]better even then I couldn't set you [D7]free
 Now [G]you know how I feel so let's [C]face the new [A7]deal
 I'm [D7]wasting my tears on [G]you
 {end_of_verse}
+
+
+
+

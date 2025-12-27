@@ -1,6 +1,9 @@
 {meta: title True Love Lasts Forever}
 {meta: artist Sonny James}
 {meta: composer Carole Smith and Edgar Clayton}
+{meta: x_source classic-country}
+{meta: x_source_file truelovelastsforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]True [Em]love [C]lasts [Dm]forever  
@@ -40,3 +43,8 @@ And [F]we’ve got an [G7]everlasting [C]kind
 {start_of_verse: Verse 6}
 Yes [F]we’ve got an [G7]everlasting [F]kin[C]d
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Can Say That Again}
 {meta: artist Johnny Rodriguez}
 {meta: composer Sam Gay and Lance Strode}
+{meta: x_source classic-country}
+{meta: x_source_file youcansaythatagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Shadows of candle lit lover’s dance slowly [D7]against the wall
@@ -36,3 +39,7 @@ I’ll [C]never grow weary of [D7]hearing those sweet words from [G]you
 Don’t let this night ever [C]end  just hold me [D7]closer 
 I [C]love you I love you [D7]my love you can say that [G]again
 {end_of_verse}
+
+
+
+

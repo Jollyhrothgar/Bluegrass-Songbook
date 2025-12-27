@@ -1,6 +1,9 @@
 {meta: title You'll Never Be Sorry}
 {meta: artist The Bellamy Brothers}
 {meta: composer Don Schlitz, David Bellamy, Howard Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file youllneverbesorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You'll never be [G7]sorry if you let me [C]love you
@@ -39,3 +42,8 @@ You'll never be [G7]sorry if you let me [C]love you
 {start_of_verse: Verse 4}
 You'll never be [G7]sorry if you let me [C]love you
 {end_of_verse}
+
+
+
+
+

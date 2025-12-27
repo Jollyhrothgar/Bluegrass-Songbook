@@ -1,6 +1,9 @@
 {meta: title Just Married}
 {meta: artist Faron Young}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file justmarriedlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if I seem a little daffy it's because I'm so happy
@@ -58,3 +61,10 @@ We started out doin' it [G7]right
 She's a rink tum doodie and a rootie tootie
 And we just got married last [C]night
 {end_of_verse}
+
+
+
+
+
+
+

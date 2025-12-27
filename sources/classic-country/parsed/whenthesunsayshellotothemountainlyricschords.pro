@@ -1,6 +1,9 @@
 {meta: title When The Sun Says Hello To The Mountain}
 {meta: artist Jim Ed Brown}
 {meta: composer Harry Pease and Larry Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file whenthesunsayshellotothemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the sun says [F]hello to the [C]mountains
@@ -31,3 +34,6 @@ When the [G7]night says hello to the [C]dawn
 I’m alone with my [F]dreams on the [C]hillside
 I can [G7]still hear your voice although you’re [C]gone
 {end_of_verse}
+
+
+

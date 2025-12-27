@@ -1,6 +1,9 @@
 {meta: title Judy}
 {meta: artist Elvis Presley}
 {meta: composer Teddy Redell}
+{meta: x_source classic-country}
+{meta: x_source_file judylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say you found somebody new
@@ -22,3 +25,5 @@ Oh please come back I promise always to be [C]true
 Oh [D7]Judy there'll never be anyone else dear but [G]you
 Oh [D7]Judy there'll never be anyone else dear but [G]you
 {end_of_verse}
+
+

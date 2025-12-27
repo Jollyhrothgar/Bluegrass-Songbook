@@ -1,6 +1,9 @@
 {meta: title Blue Mood}
 {meta: artist Webb Pierce}
 {meta: composer Warner McPherson, Stanley Kincaid, Art Demmas}
+{meta: x_source classic-country}
+{meta: x_source_file bluemoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I'm in a [G7]blue mood and you've caused it [C]all
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 5}
 Repeat last verse
 {end_of_verse}
+
+
+
+

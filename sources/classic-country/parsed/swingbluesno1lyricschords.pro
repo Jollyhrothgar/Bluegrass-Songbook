@@ -1,5 +1,8 @@
 {meta: title Swing Blues No. 1}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file swingbluesno1lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord my baby's got something
@@ -27,3 +30,5 @@ Clear into Wichita [C]Falls
 If I [G7]don't see my baby
 I won't be able to walk at [C]all
 {end_of_verse}
+
+

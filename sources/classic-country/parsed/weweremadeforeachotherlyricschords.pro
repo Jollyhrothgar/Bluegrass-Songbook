@@ -1,6 +1,9 @@
 {meta: title We Were Made For Each Other}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file weweremadeforeachotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We were made for each [C]other 
@@ -36,3 +39,7 @@ Long as winter brings the [C]snowflakes
 There will never be [C]another 
 [D7]I'll be yours [G]eternally
 {end_of_verse}
+
+
+
+

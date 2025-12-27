@@ -1,6 +1,9 @@
 {meta: title All That She Could Take}
 {meta: artist Tony Booth}
 {meta: composer Guyanne Mccall and Justin Trevino}
+{meta: x_source classic-country}
+{meta: x_source_file allthatshecouldtakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She doesn't wear her wedding [G7]band
@@ -38,3 +41,6 @@ That's not [C]where I want to be
 This time she's had [G7]all that she could [C]take
 This time she's had [G7]all that she could [F]take[C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Day is Done}
 {meta: artist Peter, Paul and Mary}
 {meta: composer Peter Yarrow}
+{meta: x_source classic-country}
+{meta: x_source_file dayisdonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tell me why you're crying my [Am]son
@@ -54,3 +57,10 @@
 {start_of_verse: Verse 6}
 [D7]Day is done day [G]is done day is [D7]done day is [G]done
 {end_of_verse}
+
+
+
+
+
+
+

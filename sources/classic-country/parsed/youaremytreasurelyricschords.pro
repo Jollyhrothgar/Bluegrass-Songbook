@@ -1,6 +1,9 @@
 {meta: title You Are My Treasure}
 {meta: artist Jack Greene}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file youaremytreasurelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You are my treasure and my darling I [G7]possess
@@ -37,3 +40,7 @@ The world's greater [Am]treasure the treasure of [G7]happiness
 Your [F]smiles are my pearls and your ruby [E7]lips are beyond [Am]compare
 Your eyes are my [D7]diamonds and my gold is the gold in your [G7]hair
 {end_of_verse}
+
+
+
+

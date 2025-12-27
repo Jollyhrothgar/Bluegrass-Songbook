@@ -1,6 +1,9 @@
 {meta: title Slightly Used Woman}
 {meta: artist Tammy Wynette}
 {meta: composer Tommy Boyce, Melvin Powers, Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file slightlyusedwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down the street on the right there's a [C]house painted [G]white
@@ -28,3 +31,6 @@ Maybe [G]somewhere a [G7]slightly used [C]someone
 Will [G]ignore all his [D7]deep finger[G]prints [C]
 He’ll [G]ignore all his [D7]deep finger[C]pri-n[G]ts
 {end_of_verse}
+
+
+

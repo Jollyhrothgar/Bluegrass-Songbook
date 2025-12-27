@@ -1,6 +1,9 @@
 {meta: title You Took Him Off My Hands}
 {meta: artist Patsy Cline}
 {meta: composer Harlan Howard, Wynn Stewart, Skeets McDonald}
+{meta: x_source classic-country}
+{meta: x_source_file youtookhimoffmyhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You took him off my [G7]hands when you stepped [C]in
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [C]You took him [G]off my [E7]hands [C]now please take him [D7]off my [G]mind
 {end_of_verse}
+
+
+

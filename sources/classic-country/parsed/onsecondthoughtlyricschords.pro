@@ -1,5 +1,8 @@
 {meta: title On Second Thought}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file onsecondthoughtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just lost the one [D7]in life that was my [G]everything
@@ -25,3 +28,6 @@ And on [G]second thought [D7]I guess I never [C][G]did
 {start_of_verse: Verse 4}
 And on [G]second thought [D7]I guess I never [G]did
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hard Times}
 {meta: artist Johnny Rodriguez}
 {meta: composer Arlo Guthrie, Darryl McDaniels, Joseph Simmons,}
+{meta: x_source classic-country}
+{meta: x_source_file hardtimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hard times ain't half as bad as bad [C]times
@@ -43,3 +46,8 @@
 [C]Hard times no money bad times no honey
 [G]Hard times ain't half as bad as bad [G][D7]times
 {end_of_verse}
+
+
+
+
+

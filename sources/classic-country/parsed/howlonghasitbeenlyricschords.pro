@@ -1,6 +1,9 @@
 {meta: title How Long Has It Been}
 {meta: artist Jim Reeves}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file howlonghasitbeenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh how long has it been  since you talked with the [C7]Lord
@@ -33,3 +36,6 @@
 [Am]How long has it [D7]been
 [C]Since you knew that [G7]He cared for [C]you
 {end_of_verse}
+
+
+

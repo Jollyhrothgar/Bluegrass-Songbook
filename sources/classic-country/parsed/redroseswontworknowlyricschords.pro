@@ -1,6 +1,9 @@
 {meta: title Red Roses (Won't Work Now)}
 {meta: artist Reba McEntire}
 {meta: composer Jimbeau Hinson and Dori Murphy}
+{meta: x_source classic-country}
+{meta: x_source_file redroseswontworknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Red roses [G7]just won't work [C]now
@@ -40,3 +43,7 @@ But that's the [Am]one thing I'll [G7]always [F]doubt
 {start_of_verse: Verse 5}
 No [C]darling red roses [G7]just won't work [C]now
 {end_of_verse}
+
+
+
+

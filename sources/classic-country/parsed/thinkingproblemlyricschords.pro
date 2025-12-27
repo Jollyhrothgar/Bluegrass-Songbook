@@ -1,5 +1,8 @@
 {meta: title Thinking Problem}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file thinkingproblemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes I admit I've got [F]a thinking problem
@@ -48,3 +51,9 @@ Tag:
 I'll start [G7]loving her 
 But I don't know where [C]to stop
 {end_of_verse}
+
+
+
+
+
+

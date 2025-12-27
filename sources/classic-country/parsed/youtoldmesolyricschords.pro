@@ -1,5 +1,8 @@
 {meta: title You Told Me So}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file youtoldmesolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wh-o is that stranger dear  [F]one standing so near
@@ -30,3 +33,6 @@ Well are my [C]e-yes playing tricks on me
 Oh you [C]wouldn't need me 
 You wouldn't [G7]grieve me you told me [C]so [F]  [C]
 {end_of_verse}
+
+
+

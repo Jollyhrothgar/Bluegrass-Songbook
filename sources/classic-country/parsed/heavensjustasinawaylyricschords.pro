@@ -1,6 +1,9 @@
 {meta: title Heaven's Just A Sin Away}
 {meta: artist The Kendalls}
 {meta: composer Jerry Gillespie}
+{meta: x_source classic-country}
+{meta: x_source_file heavensjustasinawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heaven's just a sin away oh oh just a sin [C]away
@@ -17,3 +20,4 @@
 [G]Heaven's just a sin away oh oh just a sin [C]away
 [G]Heaven help me when I say  I [D7]think I'm giving [G]in
 {end_of_verse}
+

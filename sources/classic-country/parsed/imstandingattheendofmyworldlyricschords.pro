@@ -1,6 +1,9 @@
 {meta: title I'm Standing At The End Of My World}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file imstandingattheendofmyworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm standing at the end of my [G7]world
@@ -29,3 +32,6 @@
 [C]Just dreaming of the things that might have [F]been
 [C]If we live each new born [G7]day as if the [C]last
 {end_of_verse}
+
+
+

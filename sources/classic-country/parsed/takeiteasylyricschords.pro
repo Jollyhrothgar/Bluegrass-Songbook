@@ -1,6 +1,9 @@
 {meta: title Take It Easy}
 {meta: artist Crystal Gayle}
 {meta: composer Delbert McClinton}
+{meta: x_source classic-country}
+{meta: x_source_file takeiteasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Take it [C]easy lovin' [F]me
@@ -40,3 +43,8 @@ Take it [C]e-a-[G7]s-y lovin' [C]me
 {start_of_verse: Verse 4}
 [F]Take it [G7]easy lovin' [F]me[C]
 {end_of_verse}
+
+
+
+
+

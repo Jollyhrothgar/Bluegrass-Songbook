@@ -1,6 +1,9 @@
 {meta: title She Still Comes Around}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file shestillcomesaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know I am not a model husband  although I'd like to [C]be
@@ -30,3 +33,6 @@ To [G]love what's [D7]left of [G]me
 [C]Though I let her down she still [G]comes [C]around
 To [G]love what's [D7]left of [G]me
 {end_of_verse}
+
+
+

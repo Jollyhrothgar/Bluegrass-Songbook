@@ -1,6 +1,9 @@
 {meta: title Let's Meet By The River}
 {meta: artist The Spencers}
 {meta: composer Kevin Layne Spencer}
+{meta: x_source classic-country}
+{meta: x_source_file letsmeetbytheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've read of the [G]city John saw coming [C]down from God out of [G]Heaven
@@ -43,3 +46,8 @@ Let's meet by the [G]river over [Em]on that [D7]beautiful [G]shore [C]   [G]
 {start_of_verse: Verse 4}
 [C]Let's meet by the [G]river over [Em]on that [D7]beautiful [G]shore  [C]that beautiful [G]shore
 {end_of_verse}
+
+
+
+
+

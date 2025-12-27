@@ -1,6 +1,9 @@
 {meta: title With You By My Side}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file withyoubymysidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7](With you by my [G]side)
@@ -47,3 +50,9 @@ With you by my [G]side
 To [C]think I [D7]might have [G]passed you by
 [A7]Just takes me breath [D7]away
 {end_of_verse}
+
+
+
+
+
+

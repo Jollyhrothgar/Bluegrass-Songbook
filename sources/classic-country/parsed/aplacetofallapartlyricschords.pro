@@ -1,6 +1,9 @@
 {meta: title A Place To Fall Apart}
 {meta: artist Merle Haggard}
 {meta: composer Willie Nelson, Merle Haggard, Freddy Powers}
+{meta: x_source classic-country}
+{meta: x_source_file aplacetofallapartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll Probably [C]Never See You [G]Eye To Eye [D7]Again
@@ -43,3 +46,8 @@ Looking For A [D7]Place To Fall [G]Apart
 I [C]Need To Be Somewhere Hiding When I Feel The Teardrops [G]Start
 Looking For A [D7]Place To Fall A [G]part
 {end_of_verse}
+
+
+
+
+

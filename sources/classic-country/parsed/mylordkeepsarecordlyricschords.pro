@@ -1,6 +1,9 @@
 {meta: title My Lord Keeps A Record}
 {meta: artist Jimmy Martin}
 {meta: composer Carl Story and}
+{meta: x_source classic-country}
+{meta: x_source_file mylordkeepsarecordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What a wonderful beautiful [F]picture I [C]have 
@@ -40,3 +43,9 @@ When I stand at the [G7]Saviors right [C]hand
 My Lord keeps a record
 Of the [F]moments I'm living down [C]here 
 {end_of_verse}
+
+
+
+
+
+

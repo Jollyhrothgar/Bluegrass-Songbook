@@ -1,6 +1,9 @@
 {meta: title Rings Of Gold}
 {meta: artist Waylon Jennings}
 {meta: composer Gene Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file ringsofgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember when you [Dm]said 
@@ -22,3 +25,5 @@ Plans we made just [Dm]yesterday
 Now they've crumbled into [F]dust 
 [G7]Rings of gold have turned to [C]rust
 {end_of_verse}
+
+

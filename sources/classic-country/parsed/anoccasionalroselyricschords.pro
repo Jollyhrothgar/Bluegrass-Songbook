@@ -1,6 +1,9 @@
 {meta: title An Occasional Rose}
 {meta: artist Marty Robbins}
 {meta: composer Dave Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file anoccasionalroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's so hard to fight a memory
@@ -55,3 +58,10 @@ Even though my heart [G7]knows
 I can take the thorns if [G7]there's
 Just an occasional [C]rose
 {end_of_verse}
+
+
+
+
+
+
+

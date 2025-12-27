@@ -1,5 +1,8 @@
 {meta: title A Faded Rose A Broken Heart}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file afadedroseabrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm waiting by the garden wall
@@ -34,3 +37,8 @@ I've tried to smile but all in vain
 [C]When you recall the one you left
 [G7]A faded rose a broken [C]heart
 {end_of_verse}
+
+
+
+
+

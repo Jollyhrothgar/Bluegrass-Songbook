@@ -1,6 +1,9 @@
 {meta: title I Hope You're Feeling Me}
 {meta: artist Charley Pride}
 {meta: composer Jim Rushing - Bobby David}
+{meta: x_source classic-country}
+{meta: x_source_file ihopeyourefeelingmelyricschord.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No one could hold me no one could control [F]me
@@ -41,3 +44,8 @@ Oh I [C]hope you're feeling [G7]me like I'm feeling [C]you
 Tag:
 Yes I hope you're feeling [G7]me like I'm feeling [C]you
 {end_of_verse}
+
+
+
+
+

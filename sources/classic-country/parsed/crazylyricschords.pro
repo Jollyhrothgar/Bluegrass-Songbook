@@ -1,6 +1,9 @@
 {meta: title Crazy}
 {meta: artist Kenny Rogers}
 {meta: composer Richard Marx; Kenneth R. Ii. Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file crazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl there are no words [Em]to [Am]say
@@ -43,3 +46,7 @@
 [G7]And for the rest of my [Am]life
 [Dm]All I need is [C]you
 {end_of_verse}
+
+
+
+

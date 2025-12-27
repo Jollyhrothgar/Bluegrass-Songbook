@@ -1,6 +1,9 @@
 {meta: title Ashes In The Wind}
 {meta: artist Moe Bandy}
 {meta: composer Hank Cockran}
+{meta: x_source classic-country}
+{meta: x_source_file ashesinthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a fire still burning in my memory
@@ -37,3 +40,9 @@ Was our love so hot that we got blinded
 {start_of_verse: Verse 6}
 [F]It gets all [C]scattered up [G7]like ashes in the [C]wind
 {end_of_verse}
+
+
+
+
+
+

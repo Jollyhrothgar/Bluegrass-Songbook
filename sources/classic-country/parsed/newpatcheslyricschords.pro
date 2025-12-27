@@ -1,6 +1,9 @@
 {meta: title New Patches}
 {meta: artist Mel Tillis}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file newpatcheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now and then an [F]old friend tries to [C]help me
@@ -33,3 +36,7 @@ I still love someone I've [G7]known a long long [C]time
 {start_of_verse: Verse 4}
 I still love someone I've [G7]known a long long [C]time
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Please Help Me I'm Falling}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file pleasehelpmeimfallinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Please help me I'm falling [C]in love with [G]you
@@ -26,3 +29,6 @@ Please help me I'm [G]falling [D7]in love with [G]you
 Tag:
 [C]Please help me I'm [G]falling in [D7]love with [G]you 
 {end_of_verse}
+
+
+

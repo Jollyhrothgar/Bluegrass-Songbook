@@ -1,6 +1,9 @@
 {meta: title Lay Back Lover}
 {meta: artist Dottie West}
 {meta: composer Rafe Van Hoy and Steve Pippin}
+{meta: x_source classic-country}
+{meta: x_source_file laybackloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Why don't we [C]lay back lover 
@@ -53,3 +56,9 @@ So come on lay back lover
 And hold on to each [F]other
 And let [C]love take [G7]over from [C]here
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title She Needs Me}
 {meta: artist Ricky Van Shelton}
 {meta: composer Chuck Cannon and Jimmy Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file sheneedsmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She’s inde[G]pendent she knows [C]what she wants
@@ -33,3 +36,7 @@ When she needs [G]love [C]sweet [G]love [D7]she needs [G]me
 {start_of_verse: Verse 5}
 [C]Yeah when she needs [G]love [C]sweet [G]love [D7]she needs [G]me
 {end_of_verse}
+
+
+
+

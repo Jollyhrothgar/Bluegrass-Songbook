@@ -1,6 +1,9 @@
 {meta: title Divorce Or Destroy}
 {meta: artist Hank Williams Jr.}
 {meta: composer Billy Deaton}
+{meta: x_source classic-country}
+{meta: x_source_file divorceordestroylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We've lived to[F]gether for a [C]long time 
@@ -33,3 +36,7 @@ And in my [C]heart there's no [F]love left for [C]you
 {start_of_verse: Verse 4}
 Yes in my heart there's no [F]love left for [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Is Her Love Any Better Than Mine}
 {meta: artist Jeanne Pruett}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file isherloveanybetterthanminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is her [G]love any [D7]better than [G]mine
@@ -30,3 +33,7 @@ Is her [G]love any [D7]better than [G]mine
 {start_of_verse: Verse 5}
 [C]Is her [G]love any [D7]better than [C]mine[G]
 {end_of_verse}
+
+
+
+

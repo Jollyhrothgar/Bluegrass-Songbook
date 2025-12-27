@@ -1,6 +1,9 @@
 {meta: title Cincinnati Lou}
 {meta: artist Hank Thompson}
 {meta: composer Merle Travis and Shug Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file cincinnatiloulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I got a little gal called Cincinnati Lou
@@ -43,3 +46,8 @@ You've been around you've seen the rest
 You're [C]gonna say Cincinnati Lou's the [G]best
 I [D7]must confess Cincinnati [G]Lou
 {end_of_verse}
+
+
+
+
+

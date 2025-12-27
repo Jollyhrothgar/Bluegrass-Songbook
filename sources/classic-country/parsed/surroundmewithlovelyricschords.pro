@@ -1,6 +1,9 @@
 {meta: title Surround Me With Love}
 {meta: artist Charly McClain}
 {meta: composer Norris D. Wilson &amp; Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file surroundmewithlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes when life's poison arrows [Dm]shoot me to the ground 
@@ -33,3 +36,6 @@ Surround me with love I need [C7]you beside me
 [F]Whatever comes you [Fm]know I can take it 
 [C]Just as long as [Dm]you sur[G7]round me with [C]love 
 {end_of_verse}
+
+
+

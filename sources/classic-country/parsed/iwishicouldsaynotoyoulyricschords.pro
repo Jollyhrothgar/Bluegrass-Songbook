@@ -1,6 +1,9 @@
 {meta: title I Wish I Could Say No To You}
 {meta: artist Cal Smith}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file iwishicouldsaynotoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I should have known from the start you [C7]would cause me to [F]grieve
@@ -17,3 +20,4 @@ I had hoped that [C]someday you would stop hurting [G7]me
 Now I'm faced with the [C]truth and [C7]I don't know what to [F]do
 I know I [C]should I wish I [G7]could say no to [C]you [F]   [C]
 {end_of_verse}
+

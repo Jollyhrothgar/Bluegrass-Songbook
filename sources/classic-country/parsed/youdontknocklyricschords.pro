@@ -1,6 +1,9 @@
 {meta: title You Don't Knock}
 {meta: artist Don Gibson}
 {meta: composer Wesley Westbrook and Cedar Walton}
+{meta: x_source classic-country}
+{meta: x_source_file youdontknocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You don't knock you just walk on in the door to heaven's [C]inn
@@ -26,3 +29,5 @@
 [C]The door's wide open just a waitin' for your soul
 [G]You don't knock [D7]you just walk on [G]in
 {end_of_verse}
+
+

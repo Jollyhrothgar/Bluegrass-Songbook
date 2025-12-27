@@ -1,6 +1,9 @@
 {meta: title There Ain't No Future In This}
 {meta: artist Reba McEntire}
 {meta: composer Sharon Vaughn and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file thereaintnofutureinthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Honey [G]I know you [D7]tried when you [G]loved me tonight
@@ -29,3 +32,6 @@ So if [G]she's still the [D7]one
 When it's [G]all said and [C]done
 Oh [G]there ain't no [D7]future in [G]this
 {end_of_verse}
+
+
+

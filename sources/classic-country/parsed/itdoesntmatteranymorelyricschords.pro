@@ -1,6 +1,9 @@
 {meta: title It Doesn't Matter Anymore}
 {meta: artist Wanda Jackson}
 {meta: composer Paul Anka}
+{meta: x_source classic-country}
+{meta: x_source_file itdoesntmatteranymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There you go and baby here am I
@@ -32,3 +35,7 @@ I've done everything and now I keep on tryin'
 {start_of_verse: Verse 5}
 [G7]No sugar you won't matter [C]anymore
 {end_of_verse}
+
+
+
+

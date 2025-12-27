@@ -1,6 +1,9 @@
 {meta: title Pickin' Up The Pieces}
 {meta: artist Ferlin Husky}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file pickinupthepieceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Pickin' up the pieces of my [G]heart
@@ -37,3 +40,8 @@ You go and leave my [D7]broken heart [G]behind
 {start_of_verse: Verse 5}
 You’ve got me [D7]pickin' up the pieces of my [G]heart
 {end_of_verse}
+
+
+
+
+

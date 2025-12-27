@@ -1,6 +1,9 @@
 {meta: title Rainbows Are Back In Style}
 {meta: artist Slim Whitman}
 {meta: composer Dave Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowsarebackinstylelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rainbows are getting back in [D7]style
@@ -43,3 +46,8 @@ But since I [D7]met you I can't forget you the rainbows are back in [G]style
 {start_of_verse: Verse 4}
 [C]But since I [D7]met you I can't forget you the rainbows are back in [G]style
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Baby Me Baby}
 {meta: artist Gene Watson}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file babymebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby me [G7]baby you know I've had a bad [C]day
@@ -26,3 +29,6 @@ Baby me [G7]baby as only you can [C]do
 {start_of_verse: Verse 4}
 Just baby me [G7]baby as only you can [C]do
 {end_of_verse}
+
+
+

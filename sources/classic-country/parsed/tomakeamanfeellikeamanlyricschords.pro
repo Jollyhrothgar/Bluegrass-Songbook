@@ -1,5 +1,8 @@
 {meta: title To Make A Man Feel Like A Man}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file tomakeamanfeellikeamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The man I've got loves to be loved on 
@@ -49,3 +52,7 @@ You gotta [G7]show him you're a [C]woman
 To make a man feel like a [F]man 
 You gotta [G7]show him you're a [C]woman
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title After The Heartache}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file aftertheheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]After the hear[D7]tache  [G]will I still have the [G7]blues
@@ -19,3 +22,5 @@ Will time [D7]erase  [G]all the sweet memor[G7]ies
 After I'm [D7]losing you  [G]what will I [G7]do
 [C]After the [D7]heartache is [G]through
 {end_of_verse}
+
+

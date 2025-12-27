@@ -1,6 +1,9 @@
 {meta: title 1460 Elder Street}
 {meta: artist Red Sovine}
 {meta: composer Bun Wilson and Doc Richardson}
+{meta: x_source classic-country}
+{meta: x_source_file 1460elderstreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was waiting for a [F]ship to [C]Vietnam
@@ -43,3 +46,8 @@
 [C]Could it be the ones [F]who killed him now are [C]sharing
 [F]Our private hell [G7]at 1460 Elder [C]Street
 {end_of_verse}
+
+
+
+
+

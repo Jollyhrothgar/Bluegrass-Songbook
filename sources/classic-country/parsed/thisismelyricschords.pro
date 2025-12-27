@@ -1,6 +1,9 @@
 {meta: title This Is Me}
 {meta: artist Randy Travis}
 {meta: composer Tom Shapiro and Thom McHugh}
+{meta: x_source classic-country}
+{meta: x_source_file thisismelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lately I get the feelin' there's a [F]feelin' that your holdin' [C]in [F]
@@ -35,3 +38,7 @@ Hey this is [C]me  [G7]you're not talkin' [C]to
 {start_of_verse: Verse 4}
 [F]Hey this is [C]me  [G7]you're not talking [C]to [F]  [C]
 {end_of_verse}
+
+
+
+

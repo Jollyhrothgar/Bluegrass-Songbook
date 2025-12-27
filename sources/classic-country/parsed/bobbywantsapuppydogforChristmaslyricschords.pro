@@ -1,5 +1,8 @@
 {meta: title Bobby Wants A Puppy Dog For Christmas}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file bobbywantsapuppydogforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bobby wants a puppy dog for Christmas
@@ -35,3 +38,7 @@ Butch and Susie won't be here for Christmas
 [C]But Bobby wants a puppy dog for Christmas
 [G7]And that's the only song we hear him [C]sing
 {end_of_verse}
+
+
+
+

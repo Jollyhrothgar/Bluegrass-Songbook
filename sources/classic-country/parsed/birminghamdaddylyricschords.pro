@@ -1,5 +1,8 @@
 {meta: title Birmingham Daddy}
 {meta: artist Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file birminghamdaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yonder comes a train a Frisco train
@@ -36,3 +39,6 @@ I can't leave her [G]alone
 Yes a [D7]red-headed momma
 I sure can't leave her [G]alone
 {end_of_verse}
+
+
+

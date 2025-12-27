@@ -1,6 +1,9 @@
 {meta: title Window Shopping}
 {meta: artist Hank Williams}
 {meta: composer Marcel Joseph}
+{meta: x_source classic-country}
+{meta: x_source_file windowshoppinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're window shopping
@@ -19,3 +22,4 @@ To [D7]anyone who's fool enough [G7]to fall
 You [F]don't want real love
 [C]You're window [G7]shopping that's [C]all
 {end_of_verse}
+

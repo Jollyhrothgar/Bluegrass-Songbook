@@ -1,6 +1,9 @@
 {meta: title Does My Ring Hurt Your Finger}
 {meta: artist Charlie Pride}
 {meta: composer Jack Clement, Jan Crutchfield, Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file doesmyringhurtyourfingerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Does my ring hurt your finger
@@ -36,3 +39,7 @@ So [G7]it want fit so [C]tight
 Does my ring hurt your [G]finger
 When [D7]you go out at [G]night
 {end_of_verse}
+
+
+
+

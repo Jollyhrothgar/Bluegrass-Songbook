@@ -1,6 +1,9 @@
 {meta: title Angry Words}
 {meta: artist Stonewall Jackson}
 {meta: composer Hugh X. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file angrywordslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It hurts down deep when [F]angry words are [C]spoken
@@ -27,3 +30,5 @@ We're [G7]not angels or else we'd all have [C]wings
 [F]Above all angry words I hope [C]you realize 
 That I [G7]love you if that means any[C]thing
 {end_of_verse}
+
+

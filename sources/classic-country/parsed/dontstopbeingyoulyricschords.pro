@@ -1,6 +1,9 @@
 {meta: title Don't Stop Being You}
 {meta: artist The Country Gentlemen}
 {meta: composer Randall Hylton}
+{meta: x_source classic-country}
+{meta: x_source_file dontstopbeingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I love your [G]hair and your [C]pretty [G]eyes
@@ -40,3 +43,8 @@ Promise [G]me you [D7]won't stop being [G]you
 {start_of_verse: Verse 6}
 [C]Promise [G]me you [D7]won't stop being [G]you
 {end_of_verse}
+
+
+
+
+

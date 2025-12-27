@@ -1,6 +1,9 @@
 {meta: title Little Old Heartache Maker Me}
 {meta: artist Charlie Walker}
 {meta: composer Bobby Bond}
+{meta: x_source classic-country}
+{meta: x_source_file littleoldheartachemakermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I left a little girl out in Frisco 
@@ -51,3 +54,9 @@ Just that little old heartache maker [C]me
 {start_of_verse: Verse 5}
 [G7]Yeah just that little old heartache maker [C]me
 {end_of_verse}
+
+
+
+
+
+

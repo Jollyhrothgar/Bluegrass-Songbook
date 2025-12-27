@@ -1,6 +1,9 @@
 {meta: title Baby Don't Be Looking In My Mind}
 {meta: artist Waylon Jennings}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file babydontbelookinginmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby don't be [G7]looking in [C]my mind 
@@ -33,3 +36,7 @@ But [C]baby don't be [G7]looking in my [C]mind
 {start_of_verse: Verse 4}
 Baby don't be [G7]looking in my [C]mind
 {end_of_verse}
+
+
+
+

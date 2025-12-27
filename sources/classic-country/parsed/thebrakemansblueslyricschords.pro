@@ -1,6 +1,9 @@
 {meta: title The Brakeman's Blues}
 {meta: artist Lefty Frizzell}
 {meta: composer Jimmie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file thebrakemansblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Portland Maine is just the same as sunny Tenne[G7]ssee
@@ -25,3 +28,6 @@ Well where was your momma when the train left the [G7]shed
 [C]Where was your momma when the train left the [G]shed
 [D7]Standin' in my front door wishin' to God I was [G]dead
 {end_of_verse}
+
+
+

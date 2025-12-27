@@ -1,6 +1,9 @@
 {meta: title You're So Close To Me}
 {meta: artist Johnny Cash}
 {meta: composer Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file youresoclosetomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're so close to me
@@ -59,3 +62,10 @@ You're so close to me
 I am [D7]you you are [C]me
 You're so close to [G]me
 {end_of_verse}
+
+
+
+
+
+
+

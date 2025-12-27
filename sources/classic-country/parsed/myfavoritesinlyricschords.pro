@@ -1,6 +1,9 @@
 {meta: title My Favorite Sin}
 {meta: artist Stonewall Jackson}
 {meta: composer Hugh X. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file myfavoritesinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I still wake up in a cold [D7]sweat on the hottest [G]night
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [C]Honey loving you [D7]is still my favorite [G]sin
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We Got Love}
 {meta: artist David Houston}
 {meta: composer Gene Davis}
+{meta: x_source classic-country}
+{meta: x_source_file wegotlovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You got me I got [G7]you we [C]got [G7]love
@@ -37,3 +40,7 @@ They're just jealous because they know we're happy
 [F]There's a ring on your hand you're my girl and I'm your man
 [C]You got me I [G7]got you we got [C]love
 {end_of_verse}
+
+
+
+

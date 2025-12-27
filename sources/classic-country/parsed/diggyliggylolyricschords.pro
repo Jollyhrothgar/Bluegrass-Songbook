@@ -1,6 +1,9 @@
 {meta: title Diggy Liggy Lo}
 {meta: artist Buck Owens}
 {meta: composer Jimmy D. Miller}
+{meta: x_source classic-country}
+{meta: x_source_file diggyliggylolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Diggy Liggy Li and Diggy Liggy Lo
@@ -48,3 +51,11 @@ Moved out where the bayou flows
 Her pop was cold and the coffee chaud
 [G]For Diggy Liggy Li and Diggy Liggy Lo
 {end_of_verse}
+
+
+
+
+
+
+
+

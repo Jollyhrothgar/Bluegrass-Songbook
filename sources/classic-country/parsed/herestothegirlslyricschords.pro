@@ -1,6 +1,9 @@
 {meta: title Here's To The Girls}
 {meta: artist Faron Young}
 {meta: composer Carl Belew and Van Givens}
+{meta: x_source classic-country}
+{meta: x_source_file herestothegirlslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here's to the girls who serve the drinks in all the [G7]bars
@@ -38,3 +41,8 @@ Yeah they’ll laugh with you and dance with you
 {start_of_verse: Verse 5}
 [F]She's a girl who plays the [G7]same sad song on the jukebox all the [C]time
 {end_of_verse}
+
+
+
+
+

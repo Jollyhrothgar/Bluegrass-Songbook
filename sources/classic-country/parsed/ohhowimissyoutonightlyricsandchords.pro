@@ -1,6 +1,9 @@
 {meta: title Oh How I Miss You Tonight}
 {meta: artist Jim Reeves}
 {meta: composer Benny Davis, Joe Burke, Mark Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file ohhowimissyoutonightlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh how I miss you tonight 
@@ -25,3 +28,6 @@ Each moment that we're apart
 I'd [F]rather be lonely [C]and wait for you [A7]only 
 Sweetheart  [D7]how I miss [G7]you [C]tonight 
 {end_of_verse}
+
+
+

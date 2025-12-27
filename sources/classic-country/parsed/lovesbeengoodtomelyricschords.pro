@@ -1,6 +1,9 @@
 {meta: title Loves Been Good To Me}
 {meta: artist Tom T. Hall}
 {meta: composer Rod Mckuen}
+{meta: x_source classic-country}
+{meta: x_source_file lovesbeengoodtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have been a [Am]rover  [D7]I have walked [G]alone
@@ -36,3 +39,7 @@ Hiked a hundred [Am]highways  [D7]never found a [G]home
 Still in all I'm [Bm]happy the [C]reason is you see
 [G]Once in a while  [C]along the way  [G]loves been [D7]good to [G]me [C]   [G]    
 {end_of_verse}
+
+
+
+

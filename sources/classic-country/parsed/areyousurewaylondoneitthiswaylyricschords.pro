@@ -1,6 +1,9 @@
 {meta: title Are You Sure Waylon Done It This Way}
 {meta: artist Clint Black}
 {meta: composer Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file areyousurewaylondoneitthiswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord it's the [G7]same old thing [C]fiddle and guitar 
@@ -40,3 +43,7 @@ No I [G7]don't think ol' Waylon done 'em this a [C]way
 [G7]Heard somebody yodel and a hobo moan 
 [C]Jimmy he's dead he's been a long time [G7]gone yeah[C]
 {end_of_verse}
+
+
+
+

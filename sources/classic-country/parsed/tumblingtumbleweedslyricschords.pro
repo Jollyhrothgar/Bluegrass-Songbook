@@ -1,6 +1,9 @@
 {meta: title Tumbling Tumbleweed}
 {meta: artist Bob Nolan}
 {meta: composer Bob Nolan}
+{meta: x_source classic-country}
+{meta: x_source_file tumblingtumbleweedslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a roaming cowboy  [F]riding all day [C]long
@@ -30,3 +33,6 @@ I [Dm]know  [G7]when night has [C]gone that a [Am]new  [B7]world's born at [Em]d
 [F]Here on the range I [C]belong
 [G7]Drifting along with the tumbling [C]tumbleweeds
 {end_of_verse}
+
+
+

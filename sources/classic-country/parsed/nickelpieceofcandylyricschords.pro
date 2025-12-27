@@ -1,6 +1,9 @@
 {meta: title Nickel Piece Of Candy}
 {meta: artist Jim Reeves}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file nickelpieceofcandylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you were a little girl and live across the [D7]street
@@ -43,3 +46,8 @@ Used to make your dreams come [D7]true
 [G]You’d hold my hand and tell [C]me
 [G]Someday [D7]I’ll love [G]you
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Carolina Country Morning}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file carolinacountrymorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a shadow across the [F]moon tonight
@@ -35,3 +38,7 @@ It's [F]another Caro[G7]lina country [C]morning
 Good morning [G7]sunshine [Am]memories and good [F]times[Am]
 Carolina [F]I'm knocking at your [C]door
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title What Would Your Memories Do}
 {meta: artist Vern Gosdin}
 {meta: composer Hank Cochran and Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file whatwouldyourmemoriesdolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What would your [F]memories [G7]do
@@ -33,3 +36,7 @@ Oh [C]what would your [G7]memories [F]do
 {start_of_verse: Verse 4}
 Oh [C]what would your [G7]memories [F]do [C]
 {end_of_verse}
+
+
+
+

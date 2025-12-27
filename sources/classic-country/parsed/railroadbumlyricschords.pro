@@ -1,5 +1,8 @@
 {meta: title Railroad Bum}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file railroadbumlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to be a railroad bum a living on the [G7]go
@@ -29,3 +32,5 @@ A railroad bum but I'm not [C]anymore
 Singing hi le hi lo he li le li lo I used to [G7]be 
 A railroad bum but I'm not [C]anymore
 {end_of_verse}
+
+

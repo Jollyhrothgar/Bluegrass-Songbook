@@ -1,6 +1,9 @@
 {meta: title She Don't Love Me All The Time}
 {meta: artist Johnny Paycheck}
 {meta: composer Tommy Dodson and Glen Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file shedontlovemeallthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She stands at the [G7]kitchen sink 
@@ -62,3 +65,11 @@ But she couldn't find a thing that she could [F]buy
 Yes [G7]she loves me more than anything 
 [F]She just don't [G7]love me all the [C]time
 {end_of_verse}
+
+
+
+
+
+
+
+

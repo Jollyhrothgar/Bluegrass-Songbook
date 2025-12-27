@@ -1,6 +1,9 @@
 {meta: title All By Myself}
 {meta: artist Hank Williams Jr.}
 {meta: composer Eric Carmen}
+{meta: x_source classic-country}
+{meta: x_source_file allbymyselflyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was young I never needed anyone
@@ -35,3 +38,7 @@ All by my[Em]self don't wanna be
 [A#7]And makin' [A7]love was just for [Dm]fun [G7]those days are [C]gone
 [G7]Those days are [C]gone
 {end_of_verse}
+
+
+
+

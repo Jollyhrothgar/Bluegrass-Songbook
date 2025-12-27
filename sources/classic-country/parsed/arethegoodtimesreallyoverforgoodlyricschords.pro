@@ -1,5 +1,8 @@
 {meta: title Are The Good Times Really Over For Good}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file arethegoodtimesreallyoverforgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish a buck was still silver and it was back when the country was [F]strong
@@ -32,3 +35,6 @@
 [G7]The best of the free life is still yet to come
 [C]And the good times ain't really over for good
 {end_of_verse}
+
+
+

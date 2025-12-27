@@ -1,6 +1,9 @@
 {meta: title Go Cry Your Heart Out}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file gocryyourheartoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well there ain’t no use to try cause we said our last [D7]goodbye
@@ -33,3 +36,7 @@ You’ve got to pay for your mistakes
 [G]Now you tell me you’ll be blue you say that I’ll be lonely [D7]too
 [G]While you cry your heart out I guess that I’ll be crying too
 {end_of_verse}
+
+
+
+

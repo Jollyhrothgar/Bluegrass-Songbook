@@ -1,6 +1,9 @@
 {meta: title Devil's Little Angel}
 {meta: artist Ralph Stanley}
 {meta: composer Don Kelley}
+{meta: x_source classic-country}
+{meta: x_source_file devilslittleangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Devil's little Angel please leave me [G7]alone
@@ -33,3 +36,7 @@ For God don't make [C]Angels true [G7]love can't [C]find
 {start_of_verse: Verse 5}
 [F]For God don't make [C]Angels true [G7]love can't [C]find
 {end_of_verse}
+
+
+
+

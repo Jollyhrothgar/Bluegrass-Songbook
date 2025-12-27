@@ -1,5 +1,8 @@
 {meta: title We'll Walk Along Together}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file wellwalkalongtogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You go to your church and [C]I’ll go to [G]mine
@@ -42,3 +45,8 @@ But we’ll help each other [A7]ov-[D7]er
 [G]You go to your church and [C]I’ll go to [G]mine
 But let’s walk along [D7]toge[G]ther
 {end_of_verse}
+
+
+
+
+

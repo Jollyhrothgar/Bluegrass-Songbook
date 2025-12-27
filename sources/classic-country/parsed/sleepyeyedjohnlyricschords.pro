@@ -1,5 +1,8 @@
 {meta: artist Johnny Horton}
 {meta: composer Tex Atchinson}
+{meta: x_source classic-country}
+{meta: x_source_file sleepyeyedjohnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well away down yonder on the Candy Creek 
@@ -70,3 +73,12 @@ Sleepy eyed John better [G7]tie your shoe
 [C]Sleepy eyed John you better get your bitches on
 Try to get to heaven fore the [G7]devil gets to [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Jesus Is All I Need}
 {meta: artist Gene Watson}
 {meta: composer Bobbie Bost}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusisallineedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was alone so [F]afraid
@@ -46,3 +49,8 @@ Holding my hand and guiding my [F]feet
 [F]Without His love I’m [C]incomplete
 [G7]Jesus is all I [C]need
 {end_of_verse}
+
+
+
+
+

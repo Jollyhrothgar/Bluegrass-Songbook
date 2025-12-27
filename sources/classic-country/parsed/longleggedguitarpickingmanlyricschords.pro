@@ -1,6 +1,9 @@
 {meta: title Long Legged Guitar Picking Man}
 {meta: artist Johnny Cash}
 {meta: composer Marshall Grant}
+{meta: x_source classic-country}
+{meta: x_source_file longleggedguitarpickingmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm gonna start out walkin' just you wait and see
@@ -29,3 +32,6 @@ I give my love in everything but [G7]you still what you are
 You’re just a [C]big-mouthed woman you’re a long legged guitar pickin' [G]man
 Well [D7]we can work this out uh-[C]huh yes ma'am I think we [G]can
 {end_of_verse}
+
+
+

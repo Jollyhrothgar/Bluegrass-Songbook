@@ -1,6 +1,9 @@
 {meta: title Ain't Gonna Work Tomorrow}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Lester Flatt, Earl Scruggs, A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file aintgonnaworktomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I’m gonna leave this country
@@ -50,3 +53,9 @@ Oh I ain't gonna work tomorrow
 [F]Lord I ain't gonna work [C]tomorrow
 [G7]For it may be a rainy [C]day
 {end_of_verse}
+
+
+
+
+
+

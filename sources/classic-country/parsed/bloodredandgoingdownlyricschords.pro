@@ -1,6 +1,9 @@
 {meta: title Blood Red and Going Down}
 {meta: artist Tanya Tucker}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file bloodredandgoingdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]That Georgia sun was blood red and going down
@@ -46,3 +49,10 @@ And daddy left them both [D7]soaking up the sawdust on the [G]floor
 [G]That Georgia sun was blood red and going down
 That Georgia sun was blood [F]red and going [G]down
 {end_of_verse}
+
+
+
+
+
+
+

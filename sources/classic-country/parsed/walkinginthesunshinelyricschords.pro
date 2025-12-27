@@ -1,5 +1,8 @@
 {meta: title Walking In The Sunshine}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file walkinginthesunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walking in the sunshine 
@@ -49,3 +52,12 @@ As if there's nothing [C]wrong
 {start_of_verse: Verse 3}
 Think about a good time
 {end_of_verse}
+
+
+
+
+
+
+
+
+

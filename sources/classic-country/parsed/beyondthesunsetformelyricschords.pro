@@ -1,5 +1,8 @@
 {meta: title Beyond The Sunset For Me}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file beyondthesunsetformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My soul is now thrilling with joy He is filling
@@ -45,3 +48,8 @@ The [F]sunset will shine as the light of the day
 {start_of_verse: Verse 4}
 Beyond the [G7]sunset for [C]me
 {end_of_verse}
+
+
+
+
+

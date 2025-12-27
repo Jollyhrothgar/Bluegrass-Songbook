@@ -1,6 +1,9 @@
 {meta: title Shouldn't It Be Easier Than This}
 {meta: artist Charley Pride}
 {meta: composer Rick Giles and John Jarrad}
+{meta: x_source classic-country}
+{meta: x_source_file shouldntitbeeasierthanthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A month ago I [F]walked out your [C]door
@@ -48,3 +51,9 @@ Shouldn't it be [F]easier than [C]this
 If [F]goodbye was the [C]answer the [G7]question [Am]is 
 [C]Shouldn't it be [G7]easier than [F]this[C]
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Couldn't Love Have Picked A Better Place To Die}
 {meta: artist Gene Watson}
 {meta: composer Curly Putman and Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file couldntlovehavepickedabetterplacetodielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Of all the people in this world [F]why you and [D7]I
@@ -26,3 +29,6 @@ Couldn't [G7]love have picked a better place to [C]die
 {start_of_verse: Verse 4}
 Oh couldn't [G7]love have picked a better place to [C]die
 {end_of_verse}
+
+
+

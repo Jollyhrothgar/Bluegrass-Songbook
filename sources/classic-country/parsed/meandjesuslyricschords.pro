@@ -1,5 +1,8 @@
 {meta: title Me and Jesus}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file meandjesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Me and Jesus got our own thing [C7]going
@@ -37,3 +40,8 @@ repeat #1
 {start_of_verse: Verse 6}
 repeat #1
 {end_of_verse}
+
+
+
+
+

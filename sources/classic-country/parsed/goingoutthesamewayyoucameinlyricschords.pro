@@ -1,5 +1,8 @@
 {meta: title Going Out The Same Way You Came In}
 {meta: artist Big Tom McBride}
+{meta: x_source classic-country}
+{meta: x_source_file goingoutthesamewayyoucameinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh we're going out the same way we came [G7]in
@@ -43,3 +46,9 @@ repeat last verse
 {start_of_verse: Verse 7}
 [G7]Yeah you're going out the same way you came [C]in
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Who Will Buy The Wine}
 {meta: artist Charlie Walker}
 {meta: composer Billy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file whowillbuythewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not long ago you held our babies [F]bottle
@@ -29,3 +32,6 @@ Your kind of love just might as well be [G7]blind
 You'll [C]never know whose lips you'll soon be [F]kissing
 And it [G7]all depends on who will buy the [C]wine
 {end_of_verse}
+
+
+

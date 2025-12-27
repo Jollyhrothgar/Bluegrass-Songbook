@@ -1,6 +1,9 @@
 {meta: title Come On Home Boy}
 {meta: artist George Hamilton IV}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file comeonhomeboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He got a letter saying guess you don't remember [C]me
@@ -50,3 +53,9 @@ Your [D7]momma's mighty blue from missing [G]you
 {start_of_verse: Verse 5}
 Yeah your [D7]momma's mighty blue from missing [G]you
 {end_of_verse}
+
+
+
+
+
+

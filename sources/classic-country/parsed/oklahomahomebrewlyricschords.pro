@@ -1,6 +1,9 @@
 {meta: title Oklahoma Home Brew}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Bill Penix}
+{meta: x_source classic-country}
+{meta: x_source_file oklahomahomebrewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gimme champagne I [A7]won't complain if [D7]that's the best you can do
@@ -23,3 +26,5 @@ A [B]misty whiskey from a [Em]Scottish still a [D7]bonded bourbon from a [G7]Lou
 But when I go first [F]class [A7]fill my glass with [D7]Okla[G7]homa home [C]brew
 [D7]Okla[G7]homa home [C]brew
 {end_of_verse}
+
+

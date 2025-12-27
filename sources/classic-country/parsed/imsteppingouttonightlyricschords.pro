@@ -1,6 +1,9 @@
 {meta: title I'm Stepping Out Tonight}
 {meta: artist Porter Wagoner}
 {meta: composer Gene Mooney}
+{meta: x_source classic-country}
+{meta: x_source_file imsteppingouttonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All week long I've had the blues
@@ -75,3 +78,16 @@ I'm gonna try with all of my might
 [G7]I'm a steppin' out [Am][C]tonight
 [C]I'm a steppin' out [C][G7]tonight
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

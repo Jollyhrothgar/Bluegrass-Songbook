@@ -1,6 +1,9 @@
 {meta: title For My Baby}
 {meta: artist Cal Smith}
 {meta: composer Clyde Otis and Brook Benton}
+{meta: x_source classic-country}
+{meta: x_source_file formybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you see me smile I'm smiling for my baby
@@ -37,3 +40,8 @@ Now when you see us strolling down the avenue
 [C]Cause everything [F][G7]I do    I do it for [C]my [G7]baby
 [F]Yes I'm doin' for my [C]baby    [F][G7]well I'm sighin' for my [C]baby
 {end_of_verse}
+
+
+
+
+

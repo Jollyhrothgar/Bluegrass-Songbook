@@ -1,6 +1,9 @@
 {meta: title With Pen In Hand}
 {meta: artist Ferlin Husky}
 {meta: composer Bobby Goldsboro}
+{meta: x_source classic-country}
+{meta: x_source_file withpeninhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]With pen in [G7]hand you [Dm]signed your [G7]name 
@@ -41,3 +44,8 @@ And with your [G]heart on fire will you have [Em]no desire to kiss [D7]me
 Then [G]sign your name and [Em]I'll be on my [D7]way 
 [Am]I'll be on my [D7]way 
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Dark And Thorny Is The Desert}
 {meta: artist Ralph Stanley}
 {meta: composer Dudley Dale Connell and Don Rigsby}
+{meta: x_source classic-country}
+{meta: x_source_file darkandthornyisthedesertlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dark and thorny is the desert
@@ -36,3 +39,7 @@ Lie the fields of endless [C]res[G]t
 Love and joy and peace forever
 Reign and trium[D7]ph in your [G]breast
 {end_of_verse}
+
+
+
+

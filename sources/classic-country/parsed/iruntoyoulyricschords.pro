@@ -1,5 +1,8 @@
 {meta: title I Run To You}
 {meta: artist Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file iruntoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I run to you when I'm [C][F]lone-ly 
@@ -44,3 +47,8 @@ Each step I take [G7]leads to you [C][F]only
 {start_of_verse: Verse 4}
 [C]When I need [Em][G]l-ove  I [D7]run to [G]you 
 {end_of_verse}
+
+
+
+
+

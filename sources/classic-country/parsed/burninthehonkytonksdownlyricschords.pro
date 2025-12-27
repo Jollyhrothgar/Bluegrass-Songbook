@@ -1,6 +1,9 @@
 {meta: title Burnin' The Honky Tonks Down}
 {meta: artist Alan Jackson}
 {meta: composer Billy Burnette and Shawn Camp}
+{meta: x_source classic-country}
+{meta: x_source_file burninthehonkytonksdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's burnin' the honky tonks down
@@ -47,3 +50,8 @@ Burnin' the honky tonks [G7]down
 [C]Smoke's been rising [F]all over town
 She's [C]burnin' the [G7]honky tonks [C]down
 {end_of_verse}
+
+
+
+
+

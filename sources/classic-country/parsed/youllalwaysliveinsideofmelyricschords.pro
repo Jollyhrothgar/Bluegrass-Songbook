@@ -1,6 +1,9 @@
 {meta: title You'll Always Live Inside Of Me}
 {meta: artist David Allan Coe}
 {meta: composer David A. Coe and Bobby Charles}
+{meta: x_source classic-country}
+{meta: x_source_file youllalwaysliveinsideofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You could sail across the [F]water
@@ -36,3 +39,7 @@ You'll always live inside of [F]me girl
 No one else will ever [F]take your [Dm]place
 [G7]You'll always live inside of [C]me
 {end_of_verse}
+
+
+
+

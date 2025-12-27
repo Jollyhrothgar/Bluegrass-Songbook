@@ -1,6 +1,9 @@
 {meta: title Tears Broke Out On Me}
 {meta: artist Eddy Arnold}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file tearsbrokeoutonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I haven't been well in the [G7]last two days 
@@ -43,3 +46,8 @@ And I came down with the [C]miseries
 A fever of blues about [F]hundred and three
 And [G7]that's when the tears broke out on [C]me
 {end_of_verse}
+
+
+
+
+

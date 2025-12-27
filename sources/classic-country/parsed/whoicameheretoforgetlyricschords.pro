@@ -1,6 +1,9 @@
 {meta: title Who I Came Here To Forget}
 {meta: artist Vern Gosdin}
 {meta: composer Dennis Knutson and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file whoicameheretoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was cold in California she was [F]cruel in Tennessee
@@ -33,3 +36,7 @@ Now I [C]thank my lucky [C7]stars for the [F]moment that we [D7]met
 {start_of_verse: Verse 4}
 Ah [G7]you’re the reason I forgot who I came here to [C]forget
 {end_of_verse}
+
+
+
+

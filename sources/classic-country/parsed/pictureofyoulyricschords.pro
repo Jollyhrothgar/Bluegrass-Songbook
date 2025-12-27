@@ -1,6 +1,9 @@
 {meta: title Picture Of You}
 {meta: artist Charlie Rich}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file pictureofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]It's [G]only a [E7]face in a [Am]frame 
@@ -29,3 +32,6 @@ And [D7]pour out a toast to the [G]past[Em]   [D7]
 [G]Here's to a [A#m]love that we [Am]knew 
 Here's [G]to [C]a [D7]picture of [C]you [B7]   [A7]   [G]
 {end_of_verse}
+
+
+

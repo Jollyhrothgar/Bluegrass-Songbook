@@ -1,6 +1,9 @@
 {meta: title I'll Be Better Off}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file illbebetterofflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll miss you I'll confess 
@@ -26,3 +29,5 @@ You [G]completely ruined my mind
 So when you're [C]gone maybe [A7]I'll find
 I'll [D7]be better off when you're gone [G]away
 {end_of_verse}
+
+

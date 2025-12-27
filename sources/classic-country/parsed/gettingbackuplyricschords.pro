@@ -1,6 +1,9 @@
 {meta: title Getting Back Up}
 {meta: artist Tracy Lawrence}
 {meta: composer Bobby Pinson and Marla Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file gettingbackuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My heart is spent my pride bent[C] 
@@ -53,3 +56,8 @@ When you're [G]falling [D7]out of [Em]love
 Well it's not the [C]fall that's so [D7]hard 
 It's the getting back [G]up
 {end_of_verse}
+
+
+
+
+

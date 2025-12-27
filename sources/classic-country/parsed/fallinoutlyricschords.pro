@@ -1,6 +1,9 @@
 {meta: title Fallin’ Out}
 {meta: artist Waylon Jennings}
 {meta: composer Denny Lile}
+{meta: x_source classic-country}
+{meta: x_source_file fallinoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We fell into a fallin’ out
@@ -52,3 +55,8 @@ Songbirds are callin’ [G]slip away darlin’
 If there’s anyway [D7]show me [C]how
 Just to tell you I [G]love you
 {end_of_verse}
+
+
+
+
+

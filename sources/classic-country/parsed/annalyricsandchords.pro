@@ -1,6 +1,9 @@
 {meta: title Anna}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
 {meta: composer Fred Burch}
+{meta: x_source classic-country}
+{meta: x_source_file annalyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This old house is falling [Dm]down
@@ -25,3 +28,6 @@ I [G]miss my love I wanna [C]go
 {start_of_verse: Verse 4}
 I [D7]miss my [G]Anna
 {end_of_verse}
+
+
+

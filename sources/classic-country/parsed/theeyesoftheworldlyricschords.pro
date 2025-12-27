@@ -1,6 +1,9 @@
 {meta: title The Eyes Of The World}
 {meta: artist George Morgan}
 {meta: composer Joe Allison and Marion Worth}
+{meta: x_source classic-country}
+{meta: x_source_file theeyesoftheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We know this [C7]love that we're [F]stealing 
@@ -27,3 +30,6 @@ We [C]would be [D7]committing a [G7]sin
 But [C]we need the [C7]love that [F]surrounds us 
 So the [C]eyes of the [G7]world can't come [F]in [C]
 {end_of_verse}
+
+
+

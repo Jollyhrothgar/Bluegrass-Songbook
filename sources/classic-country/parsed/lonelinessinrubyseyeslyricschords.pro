@@ -1,5 +1,8 @@
 {meta: title Loneliness In Ruby's Eyes}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file lonelinessinrubyseyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say she came [G7]all the way from [Am]Dallas
@@ -37,3 +40,7 @@ In the [A]loneliness [F]of Ruby's [C]eyes
 In the [A]loneliness [F]of Ruby's [C]eyes
 In the [A]loneliness [F]of Ruby's [C]eyes
 {end_of_verse}
+
+
+
+

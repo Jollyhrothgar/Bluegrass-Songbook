@@ -1,6 +1,9 @@
 {meta: title Nobody Gets Off In This Town}
 {meta: artist Garth Brooks}
 {meta: composer Dewayne Blackwell and Larry Bastian}
+{meta: x_source classic-country}
+{meta: x_source_file nobodygetsoffinthistownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nobody gets off in this town
@@ -39,3 +42,6 @@ I'd [F]go for a drink but this [C]county is [A7]dry
 [D7]Nobody gets [G7]off in this [C]square old [B7]merry-go-[A#7]roun[A7]d
 No [D7]nobody gets [G7]off in this [C]town
 {end_of_verse}
+
+
+

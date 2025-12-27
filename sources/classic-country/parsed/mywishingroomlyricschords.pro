@@ -1,6 +1,9 @@
 {meta: title My Wishing Room}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file mywishingroomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love is I love [G7]things for [Am]you
@@ -32,3 +35,7 @@ He's ever touched [Am]you [C]
 [F]We're so happy [C]lovin' 
 Darlin' [G7]in my wishing [F]room [C]
 {end_of_verse}
+
+
+
+

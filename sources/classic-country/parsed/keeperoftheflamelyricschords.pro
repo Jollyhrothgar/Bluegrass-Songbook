@@ -1,6 +1,9 @@
 {meta: title Keeper Of The Flame}
 {meta: artist Eddy Raven}
 {meta: composer Steve Harris and Jerry McBee}
+{meta: x_source classic-country}
+{meta: x_source_file keeperoftheflamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I ran into an [G7]old friend the other [C]night
@@ -44,3 +47,8 @@ Oh and [F]I still feel the [Fm]same
 {start_of_verse: Verse 6}
 You've [C]always been the [G7]keeper of the [C]flame
 {end_of_verse}
+
+
+
+
+

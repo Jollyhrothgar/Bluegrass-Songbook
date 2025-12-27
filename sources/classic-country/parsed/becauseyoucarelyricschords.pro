@@ -1,6 +1,9 @@
 {meta: title Because You Care}
 {meta: artist Wilburn Brothers}
 {meta: composer Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file becauseyoucarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Because you care my life means more to [F]me
@@ -22,3 +25,5 @@ On my [D7]lips there'll be a silent [G7]prayer
 Then with a [C]smile I'll face each new [F]tomorrow
 There'll be no [G7]sorrow just because you [C]care
 {end_of_verse}
+
+

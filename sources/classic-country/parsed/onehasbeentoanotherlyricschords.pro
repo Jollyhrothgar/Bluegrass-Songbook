@@ -1,6 +1,9 @@
 {meta: title One Has Been To Another}
 {meta: artist Lefty Frizzell}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file onehasbeentoanotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now he's gone and you're a has been just like [F]me
@@ -22,3 +25,5 @@
 [F]Lets pick up the pieces try it once again
 [G7]As one has been to another we'll find a [C]way
 {end_of_verse}
+
+

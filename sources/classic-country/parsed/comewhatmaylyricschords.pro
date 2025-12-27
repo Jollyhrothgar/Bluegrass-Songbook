@@ -1,6 +1,9 @@
 {meta: title Come What May}
 {meta: artist Elvis Presley}
 {meta: composer Frank Tableporter}
+{meta: x_source classic-country}
+{meta: x_source_file comewhatmaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am yours and you are mine come what [D7]may
@@ -28,3 +31,6 @@ And [D7]I'll be here with you come what [G]may
 And [D7]I'll be here with you come what [G]may
 And [D7]I'll be here with you come what [G]may
 {end_of_verse}
+
+
+

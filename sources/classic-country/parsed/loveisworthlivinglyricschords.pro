@@ -1,6 +1,9 @@
 {meta: title Love Is Worth Living}
 {meta: artist Dolly Parton and Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file loveisworthlivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know what you're [D7]thinkin' when [G7]you look at me
@@ -33,3 +36,7 @@ Love is worth [C]living when [G7]you love like we [C]do
 {start_of_verse: Verse 5}
 [F]Love is worth [C]living when [G7]you love like we [F]do[C]
 {end_of_verse}
+
+
+
+

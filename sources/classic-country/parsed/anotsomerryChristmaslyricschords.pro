@@ -1,6 +1,9 @@
 {meta: title A Not So Merry Christmas}
 {meta: artist Bobby Vee}
 {meta: composer Dick Glasser}
+{meta: x_source classic-country}
+{meta: x_source_file anotsomerryChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A not [Am]so Merry [C]Christmas I’m [D7]gonna spend this [G7]year
@@ -22,3 +25,5 @@ Mistletoe and holly night time [Fm]chill with [G7]snow
 [C]And now you’re gone so far away too [Fm]far away to [D7]hear
 And a [C]not so Merry Christmas I’m gonna [Fm]spend [G7]this [C]year
 {end_of_verse}
+
+

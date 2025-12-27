@@ -1,6 +1,9 @@
 {meta: title Something's Wrong}
 {meta: artist Tony Booth}
 {meta: composer Gene Price}
+{meta: x_source classic-country}
+{meta: x_source_file somethingswronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]When there's [C]no peace of [G7]mind something's [C]wrong
@@ -37,3 +40,8 @@ And [F]there's nothing left to [G7]say but something's [C]wrong
 {start_of_verse: Verse 5}
 When there's no peace of [G7]mind something's [C]wrong
 {end_of_verse}
+
+
+
+
+

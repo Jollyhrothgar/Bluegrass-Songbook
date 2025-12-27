@@ -1,6 +1,9 @@
 {meta: title Erase the Miles}
 {meta: artist Russell Moore and IIIrd Tyme Out}
 {meta: composer Carl E. Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file erasethemileslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do you miss me in Caro[F]lina
@@ -41,3 +44,8 @@ And somehow erase [G7]all the [C]miles
 [F]Wish I could hold [G7]you for[C]ever
 And somehow erase [G7]all the [C]miles
 {end_of_verse}
+
+
+
+
+

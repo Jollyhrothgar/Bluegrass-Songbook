@@ -1,6 +1,9 @@
 {meta: title Have I Stayed Away Too Long}
 {meta: artist Willie Nelson}
 {meta: composer Frank Loesser}
+{meta: x_source classic-country}
+{meta: x_source_file haveistayedawaytoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have I stayed [G7]away too [C]long 
@@ -29,3 +32,6 @@ My beautiful [G7]dreams gone [C]wrong
 If [F]I came home tonight would you still [C]be my [F]darling
 Or have I [C]stayed away [G7]too [C]long 
 {end_of_verse}
+
+
+

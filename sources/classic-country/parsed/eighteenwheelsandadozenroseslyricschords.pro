@@ -1,6 +1,9 @@
 {meta: title Eighteen Wheels And A Dozen Roses}
 {meta: artist Kathy Mattea}
 {meta: composer Gene Nelson and Paul Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file eighteenwheelsandadozenroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Charlie's got a gold watch
@@ -45,3 +48,8 @@ Ten more [Em]miles on his [A7]four day [D7]run
 And he'll [G]spend the rest if his [C]life 
 With the [D7]one that he [G]loves
 {end_of_verse}
+
+
+
+
+

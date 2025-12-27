@@ -1,6 +1,9 @@
 {meta: title You Never Miss A Real Good Thing}
 {meta: artist Crystal Gayle}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file younevermissarealgoodthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sitting on my bed a thinking
@@ -43,3 +46,6 @@ You never want a drink of [F]water
 You never miss a real [G7]good thing
 [F]Till he [G7]says [C]good-bye
 {end_of_verse}
+
+
+

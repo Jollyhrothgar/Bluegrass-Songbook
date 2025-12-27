@@ -1,5 +1,8 @@
 {meta: title Far Better Than This}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file farbetterthanthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some of these days (some of these days)
@@ -106,3 +109,23 @@ I'm sure it will be (I'm sure it will be)
 [D7]Far better than [G]this (far [C]better than [G]this)
 [C]Far better than [G]this
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm A Rattlesnakin' Daddy}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Marvin Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file imarattlesnakindaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a rattlesnakin' daddy I rattle where ever I please
@@ -31,3 +34,6 @@ Cause I'm a [F]rattlesnake daddy from [C]Tenn-ess-ee
 Now when you hear me [G7]rattle
 You better [C]get down on your k-ne-es  [G7]o-h [C]Lord
 {end_of_verse}
+
+
+

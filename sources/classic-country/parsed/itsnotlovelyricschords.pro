@@ -1,6 +1,9 @@
 {meta: title It's Not Love}
 {meta: artist Merle Haggard}
 {meta: composer Hank Cochran and Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She was always there each [G7]time I needed [C]you 
@@ -29,3 +32,6 @@ but [C]it keeps [G]love from driving me [D7]mad
 And [G]I don't have to [G7]wonder who she's [C]had
 No it's [G]not love  [D7]but it's not [G]bad
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Memory That Bad}
 {meta: artist The Malpass Brothers}
 {meta: composer Chris Malpass}
+{meta: x_source classic-country}
+{meta: x_source_file memorythatbadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm surprised [Em]you'd even call
@@ -47,3 +50,9 @@ I thought [Dm]you'd forgot a [G7]memory like [C]that
 {start_of_verse: Verse 7}
 Thought [Dm]you'd forgot a [G7]memory like [C]that
 {end_of_verse}
+
+
+
+
+
+

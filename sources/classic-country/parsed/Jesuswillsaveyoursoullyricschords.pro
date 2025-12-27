@@ -1,6 +1,9 @@
 {meta: title Jesus Will Save Your Soul}
 {meta: artist Don Reno}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuswillsaveyoursoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As I go along I'm [C]singing this [G]song
@@ -46,3 +49,8 @@ Then some [G]beautiful day
 With [C]Him you as shall [G]stay
 Where sorrows [D7]are never [G]told
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Love You More Than You Know}
 {meta: artist Ricky Nelson}
 {meta: composer Dave Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyoumorethanyouknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love you more more than you know
@@ -76,3 +79,15 @@ I love you more more than you know
 [G7]Now every day I love you
 [C]I love you much more than you know
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

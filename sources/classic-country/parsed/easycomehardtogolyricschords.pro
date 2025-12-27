@@ -1,6 +1,9 @@
 {meta: title Easy Come Hard To Go}
 {meta: artist Mickey Gilley}
 {meta: composer Pat Alger and Rick Beresford}
+{meta: x_source classic-country}
+{meta: x_source_file easycomehardtogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Easy[Em]   [F] loving he[G7]r was alwa[C]ys ea[Em]sy
@@ -43,3 +46,9 @@ Leaving [F]always [E7]hurts some[Am]one
 {start_of_verse: Verse 7}
 [F]Easy [C]come but [G7]hard to [C]go
 {end_of_verse}
+
+
+
+
+
+

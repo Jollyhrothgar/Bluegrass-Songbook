@@ -1,6 +1,9 @@
 {meta: title Jimmy Brown The News Boy}
 {meta: artist Lester Flatt and Earl Scuggs}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file jimmybrownthenewsboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sell the morning paper sir
@@ -66,3 +69,15 @@ To sell the Gospel [C]News
 [C]I sell the morning paper sir
 My name is Jimmy [G7]Brown
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

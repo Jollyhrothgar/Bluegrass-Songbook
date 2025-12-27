@@ -1,5 +1,8 @@
 {meta: title I Wish I'd Never}
 {meta: artist Carl Belew}
+{meta: x_source classic-country}
+{meta: x_source_file iwishidneverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look at the pretty way she walks
@@ -26,3 +29,5 @@ Oh I [Dm]love to watch [G7]her I wish I'd [C]never
 [G7]I wish I'd [C]never
 Repeat last verse
 {end_of_verse}
+
+

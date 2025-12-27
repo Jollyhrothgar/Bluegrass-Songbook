@@ -1,6 +1,9 @@
 {meta: title Return To Me}
 {meta: artist Marty Robbins}
 {meta: composer Carmen Lombardo and Denny DiMinno}
+{meta: x_source classic-country}
+{meta: x_source_file returntomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Return to [C]me oh my dear I'm so [Dm]lonely
@@ -28,3 +31,6 @@ Return to [C]me for my heart wants you [Dm]only
 {start_of_verse: Verse 4}
 [G7]Hurry back hurry home to my arms to my lips and my [C]heart
 {end_of_verse}
+
+
+

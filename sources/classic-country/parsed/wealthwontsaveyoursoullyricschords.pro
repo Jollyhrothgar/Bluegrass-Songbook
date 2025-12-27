@@ -1,5 +1,8 @@
 {meta: title Wealth Won't Save Your Soul}
 {meta: artist Hank Williams Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file wealthwontsaveyoursoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As we journey along on [F]life's wicked [C]road
@@ -22,3 +25,5 @@ For no [C]matter how much earthly [F]wealth you get [C]hold
 My friend it won't save your [G7]poor wicked [C]soul
 My friend it won't save your [G7]poor wicked [C]soul
 {end_of_verse}
+
+

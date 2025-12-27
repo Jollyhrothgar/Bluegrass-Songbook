@@ -1,6 +1,9 @@
 {meta: title He Did It All For Me}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Powell Sager and Duane Allen}
+{meta: x_source classic-country}
+{meta: x_source_file hediditallformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once a man whom we know as the [G7]Son of [Am]God
@@ -23,3 +26,5 @@ Each drop of [E7]blood was shed for even [Am]me
 Oh praise the [C]Lord He did [G7]all for [C]me [Am]
 Oh praise the [C]Lord He did it [G7]all for [C]me
 {end_of_verse}
+
+

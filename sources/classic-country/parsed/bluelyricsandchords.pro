@@ -1,6 +1,9 @@
 {meta: title Blue}
 {meta: artist LeAnn Rimes}
 {meta: composer Bill Mack Smith}
+{meta: x_source classic-country}
+{meta: x_source_file bluelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blue oo oo oo [B]oo  oh so lonesome for [E7]you
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 5}
 [A7]Why can't you be [D7]blue over [G]me
 {end_of_verse}
+
+
+
+

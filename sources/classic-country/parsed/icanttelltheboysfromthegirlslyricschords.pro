@@ -1,6 +1,9 @@
 {meta: title I Can’t Tell The Boys From The Girls}
 {meta: artist Earl Scruggs}
 {meta: composer Bob Leftridge and Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file icanttelltheboysfromthegirlslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've been a [C]bachelor all my [G]life
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 5}
 [D]And I can't tell the boys from [G]the [G][D]girls
 {end_of_verse}
+
+
+
+
+
+

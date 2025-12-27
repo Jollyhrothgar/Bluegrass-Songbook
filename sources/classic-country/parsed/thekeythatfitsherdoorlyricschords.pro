@@ -1,6 +1,9 @@
 {meta: title The Key That Fits Her Door}
 {meta: artist Jack Greene}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file thekeythatfitsherdoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't seem to [F]lose a [C]key that [G7]fits her [C]door
@@ -26,3 +29,6 @@ But [D7]passion whispers make a left and [G7]see her just once more
 At an [F]address I keep hidden cause our [C]moments are for[F]bidden
 But I can't [C]seem to [F]lose a [C]key that [G7]fits her [C]door
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Anyplace You Want To Go}
 {meta: artist Porter Wagoner}
 {meta: composer Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file anyplaceyouwanttogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Crushed velvet drapes the walls of the [G7]room
@@ -38,3 +41,8 @@ Cruise along the Amazon [F]where the deep blue waters flow
 {start_of_verse: Verse 5}
 [G7]Anyplace we want to [C]go
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title From Cradle To Cross To Crown}
 {meta: artist The Bluegrass Cardinals}
 {meta: composer Don Parmley}
+{meta: x_source classic-country}
+{meta: x_source_file fromcradletocrosstocrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was born in a manger a [F]small tiny [C]stranger
@@ -45,3 +48,8 @@ For the [Am]light of God's [G7]love shining [C]down
 As it [F]shines I can see the [C]pathway be[Am]fore me
 From [C]cradle to [G7]cross to [C]crown[G7]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You're The First Time I've Thought About Leaving}
 {meta: artist Reba McEntire}
 {meta: composer Dickey Lee and Kerry Chater}
+{meta: x_source classic-country}
+{meta: x_source_file yourethefirsttimeivethoughtaboutleavinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've seen you smile more than I thought you [Am]would
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]I've never known someone like [G]you
 {end_of_verse}
+
+
+
+

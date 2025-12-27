@@ -1,6 +1,9 @@
 {meta: title Daughter Of The Vine}
 {meta: artist Vernon Oxford}
 {meta: composer Benny Williams}
+{meta: x_source classic-country}
+{meta: x_source_file daughterofthevinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A blind man can see darkness and [F]when the shadows [C]fall
@@ -40,3 +43,8 @@ As I cling to the [G7]daughter of the [C]vine
 {start_of_verse: Verse 6}
 As I cling to the [G7]daughter of the [C]vine
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title What's Going On In Your World}
 {meta: artist George Strait}
 {meta: composer Royce Porter, David Chamberlain, Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file whatsgoingoninyourworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What's going [D7]on in [G]your world [C]I hope that [Em]you're doing [Am]fine[C]
@@ -26,3 +29,6 @@ So [D7]what's going [Am]on in [D7]your world it [Am]sure is [D7]lonesome in [G]m
 {start_of_verse: Verse 4}
 [C]What's going [Am]on in [D7]your world it [Am]sure is [D7]lonesome in [G]mine[D7]   [Am]   [D7]   [G]
 {end_of_verse}
+
+
+

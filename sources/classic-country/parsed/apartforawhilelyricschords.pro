@@ -1,5 +1,8 @@
 {meta: title Apart For A While}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file apartforawhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Apart for a while not forever [F]alone
@@ -26,3 +29,5 @@
 [C]God is not dead so death’s out of [F]style
 [C]Together [G7]again apart for a [C]while
 {end_of_verse}
+
+

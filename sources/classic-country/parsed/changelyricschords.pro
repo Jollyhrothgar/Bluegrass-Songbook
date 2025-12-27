@@ -1,6 +1,9 @@
 {meta: title Change}
 {meta: artist Garth Brooks}
 {meta: composer Tony Arata and Wayne Tester}
+{meta: x_source classic-country}
+{meta: x_source_file changelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Bm]One hand reaches out [G]and pulls a [D7]lost soul from [C]harm
@@ -44,3 +47,9 @@ I [G]do this so this [D7]world will know that it will not [G]change me
 {start_of_verse: Verse 5}
 What I do is so this [D7]world will know that it will not [G]change me
 {end_of_verse}
+
+
+
+
+
+

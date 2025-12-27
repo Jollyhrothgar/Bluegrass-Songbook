@@ -1,6 +1,9 @@
 {meta: title In The Ghetto}
 {meta: artist Elvis Presley}
 {meta: composer Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file intheghettolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As the snow flies  
@@ -53,3 +56,11 @@ And his momma cries
 {start_of_verse: Verse 9}
 And his momma cries
 {end_of_verse}
+
+
+
+
+
+
+
+

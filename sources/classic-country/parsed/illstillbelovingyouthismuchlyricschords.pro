@@ -1,6 +1,9 @@
 {meta: title I'll Still Be Loving You This Much}
 {meta: artist Tammy Wynette}
 {meta: composer Curly Putman and Bobby Borchers}
+{meta: x_source classic-country}
+{meta: x_source_file illstillbelovingyouthismuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The ring you proudly [C]wear on your left [G]hand
@@ -38,3 +41,7 @@ When the [C]moon turns to [D7]blood and [G]Jesus comes [Em]again
 I'll [G]still be [D7]lovin' you this [G]much
 I'll still be [D7]lovin' you this [G]much
 {end_of_verse}
+
+
+
+

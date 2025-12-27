@@ -1,6 +1,9 @@
 {meta: title Man From Bowling Green}
 {meta: artist Johnny Paycheck}
 {meta: composer Troy Seals and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file manfrombowlinggreenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She road a slow train to the city she was young and she was [F]pretty
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [F]Yes she [C]loved that guitar man [G7]from Bowling [C]Green
 {end_of_verse}
+
+
+
+
+

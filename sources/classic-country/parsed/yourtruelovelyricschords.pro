@@ -1,6 +1,9 @@
 {meta: title Your True Love}
 {meta: artist Ricky Nelson}
 {meta: composer Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file yourtruelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]True love (your love) true love (your love)
@@ -40,3 +43,9 @@ We [A7]all need something to have and hold
 {start_of_verse: Verse 7}
 [F]True love baby [G7]that's what you give [C]me
 {end_of_verse}
+
+
+
+
+
+

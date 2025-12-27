@@ -1,6 +1,9 @@
 {meta: title From Your Knees}
 {meta: artist Randy Travis}
 {meta: composer Leslie Winn Satcher}
+{meta: x_source classic-country}
+{meta: x_source_file fromyourkneeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He tore down the [D7]work of [G]17 [D7]years brick by [G]brick
@@ -50,3 +53,8 @@ His [G]house was still standing he'd [C]fight for his home
 Brother [G]you would [B7]not be[Em]lieve oh [G]you would [B7]not be[Em]lieve[A7]
 [C]What you can [D7]see from your [G]knees
 {end_of_verse}
+
+
+
+
+

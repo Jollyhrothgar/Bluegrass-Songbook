@@ -1,5 +1,8 @@
 {meta: title High and Dry}
 {meta: artist Joe Sun}
+{meta: x_source classic-country}
+{meta: x_source_file highanddrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I finally come to my senses and you were gone [F]home
@@ -36,3 +39,7 @@ Spoken:
 [C]This room full of dust and memories [G7]of us is high and [C]dry
 [F]High and dry [C]high and [G7]dry
 {end_of_verse}
+
+
+
+

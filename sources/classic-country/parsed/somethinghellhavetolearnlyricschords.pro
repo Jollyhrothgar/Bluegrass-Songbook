@@ -1,6 +1,9 @@
 {meta: title Something He'll Have To Learn}
 {meta: artist Johnny Paycheck}
 {meta: composer Johnny Paycheck, Aubrey Mayhew, Gary Adams}
+{meta: x_source classic-country}
+{meta: x_source_file somethinghellhavetolearnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You seem to [C]take great [G]pride 
@@ -44,3 +47,8 @@ But his hatred for [C]me would [G]burn
 [C]So what I know [G]about you 
 Is [D7]something he'll have to [G]learn
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Truth Is I Lied}
 {meta: artist Gene Watson}
 {meta: composer Bill Anderson and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file thetruthisiliedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I said it was over [F]I said we were [C]through
@@ -35,3 +38,7 @@ And I [C]meant it when I [Am]said it but the [G7]truth is I [C]lied
 {start_of_verse: Verse 5}
 Oh I meant it when I [Am]said it but the [G7]truth is I [C]lied
 {end_of_verse}
+
+
+
+

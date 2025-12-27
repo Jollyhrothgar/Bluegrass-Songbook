@@ -1,6 +1,9 @@
 {meta: title All The Gold in California}
 {meta: artist Gatlin Brothers}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file allthegoldincalifornialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 All The Gold in California 
@@ -38,3 +41,8 @@ Cause [F]everything that [C]glitters  [G7]is not [C]gold
 All The Gold in California 
 Recorded the Gatlin Brothers
 {end_of_verse}
+
+
+
+
+

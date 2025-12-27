@@ -1,5 +1,8 @@
 {meta: title Twenty Years}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file twentyyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well look yonder [A#7]Henry here comes the [C]sheriff 
@@ -47,3 +50,9 @@ Has proved to be the [G7]ruin of [C]you
 Yeah the [F]lies she swore in that [C]district court 
 Has proved to be the [G7]ruin of [C]you
 {end_of_verse}
+
+
+
+
+
+

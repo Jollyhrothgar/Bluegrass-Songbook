@@ -1,6 +1,9 @@
 {meta: title Plant Your Fields}
 {meta: artist Dan Seals}
 {meta: composer Donny Lowery and Wendy Waldman}
+{meta: x_source classic-country}
+{meta: x_source_file plantyourfieldslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My father said [D7]some things you [Em]learn
@@ -42,3 +45,8 @@ You plant your fields [Am]fields [Em]again
 You plant your fields [Am]fields [Em]again
 You plant your fields [Am]fields [Em]again
 {end_of_verse}
+
+
+
+
+

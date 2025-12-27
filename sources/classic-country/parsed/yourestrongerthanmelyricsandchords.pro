@@ -1,6 +1,9 @@
 {meta: title You're Stronger Than Me}
 {meta: artist George Strait}
 {meta: composer Hank Cochran and Jimmy Key}
+{meta: x_source classic-country}
+{meta: x_source_file yourestrongerthanmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you are sincere when [F]you say you don't [G7]care
@@ -33,3 +36,7 @@ If the [C]love that we knew [F]don't bother [G7]you
 {start_of_verse: Verse 5}
 [F]Darling you're [G7]stronger than [C]me 
 {end_of_verse}
+
+
+
+

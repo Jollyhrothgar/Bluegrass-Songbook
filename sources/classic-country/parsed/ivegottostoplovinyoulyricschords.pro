@@ -1,6 +1,9 @@
 {meta: title I've Got To Stop Lovin' You}
 {meta: artist Leona Williams}
 {meta: composer Dave Kirby and Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottostoplovinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've got to [C]stop [G7]loving [Am]you [C]like I [F]do [Am]   [Dm]
@@ -44,3 +47,8 @@ I've got to stop loving [C]you [F]   [C]   [G7]
 If it's the last think I [G7]do
 I've got to stop loving [C]you
 {end_of_verse}
+
+
+
+
+

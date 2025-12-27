@@ -1,6 +1,9 @@
 {meta: title Don't Put Her Down You Helped Put Her There}
 {meta: artist Courtney Granger}
 {meta: composer Hazel Dickens}
+{meta: x_source classic-country}
+{meta: x_source_file dontputherdownyouhelpedputhertherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't put her down you [G7]helped put her [C]there
@@ -53,3 +56,10 @@ Don't put her down you [G7]helped put her [C]there
 Well if [F]she acts that way it's cause [C]you had your day
 Don't put her down you [G7]helped put her [C]there
 {end_of_verse}
+
+
+
+
+
+
+

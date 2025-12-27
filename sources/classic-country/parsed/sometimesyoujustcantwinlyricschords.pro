@@ -1,6 +1,9 @@
 {meta: title Sometimes You Just Can't Win}
 {meta: artist George Jones}
 {meta: composer Smokey Stover}
+{meta: x_source classic-country}
+{meta: x_source_file sometimesyoujustcantwinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
  [C]Just  when the sun [F]shines the [C]brightest
@@ -33,3 +36,6 @@
  You can't [F]believe your eyes
  [C]Sometimes you just can't [G7]win
 {end_of_verse}
+
+
+

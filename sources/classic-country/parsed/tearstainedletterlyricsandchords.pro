@@ -1,5 +1,8 @@
 {meta: title Tear Stained Letter}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file tearstainedletterlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna [C]write a tear stained letter 
@@ -48,3 +51,8 @@ On the answer that you choose
 It will be a most important piece 
 Of [D7]personal private [G]news 
 {end_of_verse}
+
+
+
+
+

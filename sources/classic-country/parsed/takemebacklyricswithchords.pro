@@ -1,6 +1,9 @@
 {meta: title Take Me Back}
 {meta: artist Charly McClain}
 {meta: composer Larry Rogers, Red Williams, Charly McClain}
+{meta: x_source classic-country}
+{meta: x_source_file takemebacklyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I'm feeling down 
@@ -44,3 +47,7 @@ I [G7]promise I won't hurt you any[C]more
 Take me take me [Dm]back
 [G7]Baby we'll make it like it was [C]before 
 {end_of_verse}
+
+
+
+

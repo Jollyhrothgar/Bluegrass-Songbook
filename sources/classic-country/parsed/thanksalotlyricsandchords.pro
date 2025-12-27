@@ -1,5 +1,8 @@
 {meta: title Thanks A Lot with chords}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file thanksalotlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Thanks thanks [Em]a lot
@@ -28,3 +31,6 @@ Now all I've [Em]got is a broken [G]heart
 We loved a little and you laughed a [C]lot
 Then you were [G]gone  [D7]honey thanks a [G]lot
 {end_of_verse}
+
+
+

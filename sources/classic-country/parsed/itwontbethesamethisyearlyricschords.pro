@@ -1,5 +1,8 @@
 {meta: title It Won't Be The Same This Year}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file itwontbethesamethisyearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's time to pack our [F]bags and hit the [C]highway
@@ -42,3 +45,8 @@ Silent night has been [D7]sung
 And [F]Christmas is finally [D7]here
 It [Dm]won't be the [G7]same this [C]year
 {end_of_verse}
+
+
+
+
+

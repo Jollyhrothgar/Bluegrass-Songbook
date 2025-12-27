@@ -1,6 +1,9 @@
 {meta: title If I Know Me}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Pamela Belford}
+{meta: x_source classic-country}
+{meta: x_source_file ifiknowmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We both said some things I [Am]know we never mea[F]nt
@@ -34,3 +37,7 @@ And I'll come [Em]running back to [F]you [G7]if I know [C]me
 If I [G7]know [C]me [Am]   [F]
 And I [G7]know [C]me
 {end_of_verse}
+
+
+
+

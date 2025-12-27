@@ -1,6 +1,9 @@
 {meta: title When I Take My Vacation In Heaven}
 {meta: artist Johnny Cash}
 {meta: composer Herbert Buffum and R.E. Winsett}
+{meta: x_source classic-country}
+{meta: x_source_file whenitakemyvacationinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are those who are taking vacations
@@ -46,3 +49,11 @@ There I'll rest from my burdens forever
 Seeking out the lost sheep on a mountain
 [D7]Bringing wanderers [G7]back to the [C]fold
 {end_of_verse}
+
+
+
+
+
+
+
+

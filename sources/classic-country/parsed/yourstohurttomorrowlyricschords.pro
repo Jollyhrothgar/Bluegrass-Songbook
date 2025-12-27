@@ -1,6 +1,9 @@
 {meta: title Yours To Hurt Tomorrow}
 {meta: artist Conway Twitty}
 {meta: composer Peggy Forman}
+{meta: x_source classic-country}
+{meta: x_source_file yourstohurttomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hold her close and try to do the [C]things you never [G]did
@@ -29,3 +32,6 @@ But [A7]if you show just a little love she [D7]wouldn't be here tonight
 She's found [G]warmer lips to kiss her loving [C]arms to hold her [A7]tight
 [C]She'll be [G]yours to hurt tomorrow but she's [D7]mine to love [G]tonight
 {end_of_verse}
+
+
+

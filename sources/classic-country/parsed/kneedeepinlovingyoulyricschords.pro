@@ -1,6 +1,9 @@
 {meta: title Knee Deep In Loving You}
 {meta: artist Tanya Tucker}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file kneedeepinlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm knee deep in loving [F]you
@@ -52,3 +55,9 @@ I done got [G7]deeper than I wanted [C]to huh
 It'll probably drown me before I'm [F]through
 But I done got [C]knee deep [G7]in loving [F]you[C]
 {end_of_verse}
+
+
+
+
+
+

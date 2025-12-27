@@ -1,5 +1,8 @@
 {meta: title Jesus Put A Yodel In My Soul}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusputayodelinmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]My life was empty without a [C]goal
@@ -28,3 +31,6 @@ Yodel-ay-ee [G7]yodel-ay-ee yodel-ay-ee-[C]dee
 Jesus Jesus [D7]Jesus set me free
 [G7]Yodel-ay-ee yodel-ay-ee yodel-ay-ee-[C]dee
 {end_of_verse}
+
+
+

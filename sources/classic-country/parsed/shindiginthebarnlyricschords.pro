@@ -1,5 +1,8 @@
 {meta: title Shindig In The Barn}
 {meta: artist Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file shindiginthebarnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello ma this here's your boy a [G7]talkin' 
@@ -57,3 +60,11 @@ Cause there's gonna be a [G7]shindig in the [C]barn
 A [F]fiddle playin' [C]guitar pickin' [G7]do-si-do 
 And [C]heel a kickin' regular ol' [G7]shindig in the [C]barn
 {end_of_verse}
+
+
+
+
+
+
+
+

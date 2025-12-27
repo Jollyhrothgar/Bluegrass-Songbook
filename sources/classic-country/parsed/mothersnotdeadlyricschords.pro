@@ -1,6 +1,9 @@
 {meta: title Mother's Not Dead}
 {meta: artist Bill Monroe}
 {meta: composer Ralph Edmond Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file mothersnotdeadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mothers not dead she's only a [D7]sleeping
@@ -36,3 +39,7 @@ Just patiently waiting for Jesus to [G]come
 The birds will be singing while Mother is [D7]sleeping
 They will sing o'er as the grave sinks [G]away
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Is Where You Find It}
 {meta: artist Hank Thompson}
 {meta: composer Alvin Stanley, Red Mansel and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file loveiswhereyoufinditlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well there ain’t no cure for a broken heart
@@ -57,3 +60,10 @@ I’ll [C]still be doing [G]fine
 Cause [C]love is where you [G]find it
 And I’m [D7]gonna look for [G]mine
 {end_of_verse}
+
+
+
+
+
+
+

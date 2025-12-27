@@ -1,6 +1,9 @@
 {meta: title The Last Mountain}
 {meta: artist Jimmie Davis}
 {meta: composer Bob Wills and Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file thelastmountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've climbed a lot of hills
@@ -37,3 +40,7 @@ This is the last mountain that I'll [G7]ever have to [C]climb
 {start_of_verse: Verse 4}
 This is the last mountain that I'll [G7]ever have to [C]climb
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Ain't Got The Time}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file aintgotthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can tell your heart's been broken in two you are looking for a shoulder
@@ -32,3 +35,7 @@ Ain't got the [G]time  [C]ain't got the [G]time
 {start_of_verse: Verse 4}
 [C]Ain't got the [G]time  [C]ain't got the [G]time
 {end_of_verse}
+
+
+
+

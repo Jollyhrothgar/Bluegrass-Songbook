@@ -1,5 +1,8 @@
 {meta: title Rock Me To Sleep}
 {meta: artist Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file rockmetosleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey how are you doing out in [F]Oklahoma
@@ -39,3 +42,8 @@ Someone [C]hold me and [G7]rock me to [C]sleep
 {start_of_verse: Verse 4}
 Someone hold me and [G7]rock me to [C]sleep
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Without You Baby}
 {meta: artist Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file withoutyoubabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The day you went away snow was [G7]on the way
@@ -25,3 +28,6 @@ So many [F]plums I'll get without you [C]baby
 {start_of_verse: Verse 4}
 [G7]Without you [C]baby [G7]without you [C]baby [G7]without you [C]baby
 {end_of_verse}
+
+
+

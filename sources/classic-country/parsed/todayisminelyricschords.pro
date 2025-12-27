@@ -1,6 +1,9 @@
 {meta: title Today Is Mine}
 {meta: artist Slim Whitman}
 {meta: composer Blanche Kerr Brock and Virgil P. Brock}
+{meta: x_source classic-country}
+{meta: x_source_file todayisminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today is mine tomorrow may not [G7]come
@@ -31,3 +34,6 @@ My race of life may end at set of [C]sun
 Shall I then hear the [C7]Master say well [F]done 
 Today is [C]mine [G7]tomorrow may not [C]come
 {end_of_verse}
+
+
+

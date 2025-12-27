@@ -1,6 +1,9 @@
 {meta: title I Die Ten Thousand Times A Day}
 {meta: artist Merle Haggard}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file idietenthousandtimesadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I come home and I [G7]sat down by the [C]door
@@ -22,3 +25,5 @@
 [C]If I've hurt you it's just because I love you much too [F]much
 [C]I guess I [G7]die ten thousand times [F]a [C]d-ay
 {end_of_verse}
+
+

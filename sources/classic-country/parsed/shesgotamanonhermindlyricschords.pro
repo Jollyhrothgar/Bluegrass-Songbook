@@ -1,6 +1,9 @@
 {meta: title She's Got A Man On Her Mind}
 {meta: artist Conway Twitty}
 {meta: composer Curtis Wright and Billy Spencer}
+{meta: x_source classic-country}
+{meta: x_source_file shesgotamanonhermindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]See that [D7]far away [C]look on her face
@@ -57,3 +60,10 @@ Why he's [Am]even got her [G]thinking 'bout [C]settlin' [D7]down
 [G]She's got all the [D7]symptoms she's [Em]showing [D7]all the [C]signs
 [G]She's got a [D7]man on her [Em]mind
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Dagger Through The Heart}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file daggerthroughtheheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh you’re out there tonight [F]with [C]another
@@ -39,3 +42,8 @@ It's like a dagger [G7]through the [C]heart
 {start_of_verse: Verse 5}
 Like a dagger [G7]through the [F]heart through the [C]heart
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Old Lamplighter}
 {meta: artist Jim Ed Brown}
 {meta: composer Charles Tobias and Nat Simon}
+{meta: x_source classic-country}
+{meta: x_source_file theoldlamplighterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He made the [F]night a little [C]brighter
@@ -64,3 +67,14 @@ He made the [F]night a little [C]brighter
 [E7]Wherever he would [Am]go
 The [F]old lamp [C]lighter of long [G7]long [C]ago 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

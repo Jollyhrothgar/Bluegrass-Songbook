@@ -1,6 +1,9 @@
 {meta: title Let the Walls Come Down}
 {meta: artist Kris Kristofferson}
 {meta: composer Steve Bruton, Glen A. Clark, Danny Timms}
+{meta: x_source classic-country}
+{meta: x_source_file letthewallscomedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On a [C]cold dark corner in [G]town an [C]old soul standin' his [G]ground
@@ -31,3 +34,7 @@ When it all comes down when it's up to [G]you
 Let the walls come down let it all come [D7]true
 When it all comes down it's up to me and [G]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tweedle O'Twill}
 {meta: artist Jim Reeves}
 {meta: composer Fred Rose and Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file tweedleotwilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tweedle O'twill puffing  on corn silks  Tweedle O'twill  whittling [D7]wood
@@ -22,3 +25,5 @@ Taking it [G]easy  [G7]out where it's [C]breezy   better be still  [G]Tweedle [G
 Tweedle O'twill  swatting a horsefly  Tweedle O'twill tickling his [D7]nose
 Birds of a [G]feather  [G7]flocking [C]together  getting a thrill  [G]Tweedle [G][D7]O'twill
 {end_of_verse}
+
+

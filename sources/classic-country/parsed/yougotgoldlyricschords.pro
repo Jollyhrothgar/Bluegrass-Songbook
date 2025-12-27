@@ -1,6 +1,9 @@
 {meta: title You Got Gold}
 {meta: artist John Prine}
 {meta: composer Keith Sykes and John Prine}
+{meta: x_source classic-country}
+{meta: x_source_file yougotgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Is there ever enough space between us 
@@ -70,3 +73,14 @@ You got [C]wheels  turning inside of [G]you
 You got [C]wheels  turning inside of [G]you
 Well I got [D7]wheels  turning inside me [G]too
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

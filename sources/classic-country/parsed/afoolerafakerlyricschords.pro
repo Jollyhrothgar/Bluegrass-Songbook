@@ -1,6 +1,9 @@
 {meta: title A Fooler A Faker}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Billy Gray}
+{meta: x_source classic-country}
+{meta: x_source_file afoolerafakerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're a fooler a faker a [C]little heart[G]breaker
@@ -30,3 +33,6 @@ Un[A7]til the picture you hung high came a [D7]tumbling from the wall
 I [C]knew someday you'd [D7]get your motor [G]stalled
 Don't be a [D7]fooler a [G]faker you [D7]little heart[G]breaker
 {end_of_verse}
+
+
+

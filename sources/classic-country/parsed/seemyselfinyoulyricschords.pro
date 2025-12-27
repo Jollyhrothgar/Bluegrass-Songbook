@@ -1,6 +1,9 @@
 {meta: title See Myself In You}
 {meta: artist Randy Travis}
 {meta: composer Tom Kimmel and Tom Prasada}
+{meta: x_source classic-country}
+{meta: x_source_file seemyselfinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I met you on the [Am]corner would I [F]know you as you [C]are[G7]
@@ -26,3 +29,6 @@ If you [Am]called me would I [Em]hear you do I [F]know what [C]I would [G7]do
 If you [C]held me like my [Am]father would I [F]see my[G7]self in [C]you [G7]
 If you [C]held me like my [Am]mother would I [G7]see myself in [C]you
 {end_of_verse}
+
+
+

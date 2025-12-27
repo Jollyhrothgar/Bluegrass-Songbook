@@ -1,6 +1,9 @@
 {meta: title Am I That Easy to Forget Lyrics chords}
 {meta: artist Jim Reeves}
 {meta: composer Carl Belew and W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file amithateasytoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say you found somebody new
@@ -29,3 +32,6 @@ But I don't love no one but [C]you
 How can you leave without [G]regret
 [D7]Am I that easy to for[G]get   
 {end_of_verse}
+
+
+

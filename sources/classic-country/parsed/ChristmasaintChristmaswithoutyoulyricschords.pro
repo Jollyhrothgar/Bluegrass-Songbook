@@ -1,6 +1,9 @@
 {meta: title Christmas Ain't Christmas Without You}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file ChristmasaintChristmaswithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard no Christmas [C]carols as I [A7]walked down the [D7]street
@@ -22,3 +25,5 @@ No Christmas ain't [C]Christmas since [A7]you went [D7]away
 [G]Yes you [G7]turned my [C]whole world [Am]blue
 [D7]Christmas ain't Christmas dear without [G]you
 {end_of_verse}
+
+

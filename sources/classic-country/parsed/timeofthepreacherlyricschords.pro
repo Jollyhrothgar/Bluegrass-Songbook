@@ -1,5 +1,8 @@
 {meta: title Time Of The Preacher}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file timeofthepreacherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was a time of the [F]preacher  when the story [C]began
@@ -15,3 +18,4 @@ And he saddled his [G7]pony  and he went for a [C]ride
 It was a time of the [F]preacher  in the year of O [C]one
 Now the preaching is [G7]over  and the lesson's [C]begun
 {end_of_verse}
+

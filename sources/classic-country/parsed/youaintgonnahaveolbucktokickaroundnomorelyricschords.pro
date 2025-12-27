@@ -1,5 +1,8 @@
 {meta: title You Ain't Gonna Have Ol' Buck To Kick Around No More}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file youaintgonnahaveolbucktokickaroundnomorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh you ain't gonna [D7]have ol' Buck to kick around [G]no more
@@ -39,3 +42,8 @@ They say true love's undying that it lives on and on
 {start_of_verse: Verse 4}
 [D7]No you ain't gonna have ol' Buck to kick around no [G]more
 {end_of_verse}
+
+
+
+
+

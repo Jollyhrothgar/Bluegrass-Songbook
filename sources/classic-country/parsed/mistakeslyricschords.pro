@@ -1,6 +1,9 @@
 {meta: title Mistakes}
 {meta: artist Don Williams}
 {meta: composer Richard Feldman}
+{meta: x_source classic-country}
+{meta: x_source_file mistakeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]People [G7]tell me boy [Am]you're [F]crazy 
@@ -36,3 +39,7 @@ Don't need your [F]well thought out [C][G7]advise
 Though I thank you all [F]for being [C]kind 
 I can make [F]mistakes [G7]myself just [C]fine
 {end_of_verse}
+
+
+
+

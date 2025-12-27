@@ -1,6 +1,9 @@
 {meta: title All At Once It's Forever Lyrics chords}
 {meta: artist Faron Young}
 {meta: composer Billy Deaton, Hilda Young, Cile Davis}
+{meta: x_source classic-country}
+{meta: x_source_file allatonceitsforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All at [C]once it's [D7]forever
@@ -34,3 +37,7 @@
 [D7]Forever started when I started losin' [G]you
 [D7]Forever started when I started losin' [G]you
 {end_of_verse}
+
+
+
+

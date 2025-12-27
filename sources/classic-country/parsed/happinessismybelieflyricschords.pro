@@ -1,6 +1,9 @@
 {meta: title Happiness Is My Belief}
 {meta: artist Bob Luman}
 {meta: composer Jean Chapel}
+{meta: x_source classic-country}
+{meta: x_source_file happinessismybelieflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Happiness happiness [F]is my belief
@@ -59,3 +62,10 @@ Do you really [F]believe me (yes [C]sir)
 Now you really [F]believe me (yeah)
 I [C]couldn't be happier [G7]than I [C]am
 {end_of_verse}
+
+
+
+
+
+
+

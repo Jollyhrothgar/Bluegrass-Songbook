@@ -1,6 +1,9 @@
 {meta: title Somebody's Gonna Lose}
 {meta: artist Ricky Van Shelton}
 {meta: composer Larry Butler and Mark Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysgonnaloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody's staying out much longer than they [Am]should
@@ -48,3 +51,9 @@ To [G]lose it all or [G7]change
 Somebody's shining up their walking [F]shoes
 [D7]And when they [C]do  [G7]somebody's gonna [C]lose
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Just Like Your Daddy}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file justlikeyourdaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Grow up big and [D7]strong just like your [G]daddy
@@ -46,3 +49,8 @@ Look [C]in your momma's [D7]eyes listen closely [G]to me
 Don't [C]leave her all [D7]alone she's [G]all you'll ever [Em]own
 Don't [C]walk out on your [D7]love just like your [G]daddy
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title And So Will You My Love}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file andsowillyoumylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The music stopped the crowd is thinning now
@@ -29,3 +32,6 @@ The street is dark here while I walk along
 [D7]Except forever  and you my [G]love
 [D7]And so will you my love  my [G]love
 {end_of_verse}
+
+
+

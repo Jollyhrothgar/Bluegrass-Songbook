@@ -1,6 +1,9 @@
 {meta: title Burden Of Love}
 {meta: artist Mel Tillis}
 {meta: composer Jim Rister}
+{meta: x_source classic-country}
+{meta: x_source_file burdenoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Add one more day [G7]to the life we planned [C]together
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]Make this burden [G7]of love a little [C]lighter
 {end_of_verse}
+
+
+
+

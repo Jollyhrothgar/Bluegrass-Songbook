@@ -1,5 +1,8 @@
 {meta: title Taste Of Life}
 {meta: artist Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file tasteoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Taste Of Life
@@ -46,3 +49,9 @@ In the sweet (in the sweet) by and [F]by (by and by)
 We shall [C]meet on that [G7]beautiful [C]shore
 [F]We shall [C]meet on that [G7]beautiful [F]shore[C]
 {end_of_verse}
+
+
+
+
+
+

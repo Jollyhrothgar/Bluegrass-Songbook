@@ -1,6 +1,9 @@
 {meta: title We Won't Be Home Until Then}
 {meta: artist The Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file wewontbehomeuntilthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The many [G7]years have [C]come and [G]gone
@@ -33,3 +36,7 @@ No and [G]we won't [D7]be home until [G]then [D7]   [G]   [C]
 {start_of_verse: Verse 5}
 [G]We won't [D7]be home until [G]then
 {end_of_verse}
+
+
+
+

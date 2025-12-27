@@ -1,6 +1,9 @@
 {meta: title Warmth of the Wine}
 {meta: artist Johnny Bush}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file warmthofthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll open the [Em]bottle that [F]closes the [G7]past
@@ -33,3 +36,7 @@ My [F]cold glass of love is the [G7]warmth of the wine
 {start_of_verse: Verse 5}
 Out of the [Am]cold in the [G7]warmth of the [C]wine 
 {end_of_verse}
+
+
+
+

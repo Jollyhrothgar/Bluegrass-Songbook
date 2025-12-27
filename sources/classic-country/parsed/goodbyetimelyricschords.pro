@@ -1,6 +1,9 @@
 {meta: title Goodbye Time}
 {meta: artist Conway Twitty}
 {meta: composer Roger Murrah and James D. Hicks}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's your life  [F]you say you need a [C]change
@@ -27,3 +30,6 @@ If we had known  [F]our love would come to [C]this
 [G7]And if it's to [C]late  for [Am]love to change your [F]mind
 [G7]Then it's goodbye [C]time
 {end_of_verse}
+
+
+

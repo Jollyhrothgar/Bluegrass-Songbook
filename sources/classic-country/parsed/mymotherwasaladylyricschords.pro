@@ -1,6 +1,9 @@
 {meta: title My Mother Was A Lady}
 {meta: artist Marty Robbins}
 {meta: composer E.B Marks Jr. and Joseph Stern}
+{meta: x_source classic-country}
+{meta: x_source_file mymotherwasaladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two drummers they were seated in a grand hotel one day
@@ -38,3 +41,7 @@ You may have a sister who needs protection [C]now
 I've come to this great city to [C7]find my brother [F]dear
 You would not dare [C]insult me sir if [G7]brother Jack were [C]here
 {end_of_verse}
+
+
+
+

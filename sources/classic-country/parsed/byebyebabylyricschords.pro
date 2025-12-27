@@ -1,6 +1,9 @@
 {meta: title Bye Bye Baby}
 {meta: artist Jimmy Dean}
 {meta: composer Leo Robin and Jule Styne}
+{meta: x_source classic-country}
+{meta: x_source_file byebyebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bye bye [G7]baby [F]bye [C]bye 
@@ -35,3 +38,7 @@ Gone now [G7]those happy and [F]gay [C]nights
 Dead [C]men don't [A7]cry dear 
 [D7]Bye bye [G7]baby [F]bye [C]bye
 {end_of_verse}
+
+
+
+

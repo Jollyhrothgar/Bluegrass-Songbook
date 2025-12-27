@@ -1,6 +1,9 @@
 {meta: title I Can't Be Satisfied}
 {meta: artist Bob Wills}
 {meta: composer William Lee Conley Broonzy}
+{meta: x_source classic-country}
+{meta: x_source_file icantbesatisfiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Listen here my baby what I want you to do
@@ -41,3 +44,7 @@ Now look here boy's I ain't that rich
 [C]And I can't be satisfied (can't be satisfied)
 [G7]And I can't mistreat you not to please nobody's [C]mind
 {end_of_verse}
+
+
+
+

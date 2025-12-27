@@ -1,6 +1,9 @@
 {meta: title The Fool}
 {meta: artist Bobby Bare}
 {meta: composer Lee Hazlewood and Naomi Ford}
+{meta: x_source classic-country}
+{meta: x_source_file thefoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gather round me buddies 
@@ -27,3 +30,6 @@ That told his [D7]baby good[G]bye
 {start_of_verse: Verse 4}
 That told his [D7]baby good[C]bye[G]
 {end_of_verse}
+
+
+

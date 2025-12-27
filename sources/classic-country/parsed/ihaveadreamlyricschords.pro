@@ -1,6 +1,9 @@
 {meta: title I Have a Dream}
 {meta: artist Cristy Lane}
 {meta: composer Benny S. Andersson and Bjoern K. Ulvaeus}
+{meta: x_source classic-country}
+{meta: x_source_file ihaveadreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have a [G7]dream a song to [C]sing
@@ -50,3 +53,9 @@ I'll cross the [G7]stream I have a [C]dream
 {start_of_verse: Verse 4}
 I'll cross the [G7]stream I have a [C]dream
 {end_of_verse}
+
+
+
+
+
+

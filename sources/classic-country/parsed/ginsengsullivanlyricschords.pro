@@ -1,6 +1,9 @@
 {meta: title Ginseng Sullivan}
 {meta: artist Tony Rice}
 {meta: composer Norman Blake}
+{meta: x_source classic-country}
+{meta: x_source_file ginsengsullivanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]About three miles from the Battelle yard
@@ -55,3 +58,8 @@ Or [Dm]thumb the road [G7]alone
 So I [C]guess I'll never [F]make it back to [C]home
 My muddy water [F]Mississippi [G7]delta [C]home
 {end_of_verse}
+
+
+
+
+

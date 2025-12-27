@@ -1,6 +1,9 @@
 {meta: title Lord Help Me Be As Thou}
 {meta: artist Slim Whitman}
 {meta: composer John Crist/Quarles}
+{meta: x_source classic-country}
+{meta: x_source_file lordhelpmebeasthoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I should fail to do my best
@@ -29,3 +32,6 @@ To always [G7]help weak souls [C]along
 Lord help me [F]ever be as [C]Thou
 Lord hold my hand  [G7]and show me [C]how
 {end_of_verse}
+
+
+

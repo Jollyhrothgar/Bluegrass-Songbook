@@ -1,6 +1,9 @@
 {meta: title I Was There}
 {meta: artist Dwight Yoakam}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file iwastherelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was there (I was there) I was there (I was there)
@@ -51,3 +54,12 @@ And then turned into a [D7]runaway [G]wildfire
 I was there when it ran into a raging river
 And then turned into a [D7]runaway [G]wildfire
 {end_of_verse}
+
+
+
+
+
+
+
+
+

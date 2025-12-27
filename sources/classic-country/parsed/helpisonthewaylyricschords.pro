@@ -1,6 +1,9 @@
 {meta: title Help Is On The Way}
 {meta: artist Doyle Lawson}
 {meta: composer Michael E. Reed Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file helpisonthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A woman in the [G7]Bible days her [C]last meal was almost gone    
@@ -34,3 +37,7 @@ Just hold [D7]on a little longer [C]help is [D7]on the [G]way
 Help won’t help [G7]tomorrow if [C]you give up today
 Just hold [D7]on a little longer [C]help is [D7]on the [G]way
 {end_of_verse}
+
+
+
+

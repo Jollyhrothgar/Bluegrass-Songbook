@@ -1,6 +1,9 @@
 {meta: title Dallas}
 {meta: artist Alan Jackson}
 {meta: composer Keith Stegall and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file dallaslyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dallas packed her suitcase and [C]drove off 
@@ -39,3 +42,7 @@ Oh if [C]Dallas was [D7]in Tenne[G]ssee
 Dallas packed her suitcase [C]drove off 
 In the brand new car I [G]brought her
 {end_of_verse}
+
+
+
+

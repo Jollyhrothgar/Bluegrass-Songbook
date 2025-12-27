@@ -1,6 +1,9 @@
 {meta: title Heaven Everyday}
 {meta: artist Mel Tillis}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file heaveneverydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If an angel wears  a housewife's [F]dress
@@ -29,3 +32,6 @@ Because of [F]all the [G7]love you [C]give
 [F]Your smile drives [G7]all my cares [C]away
 And makes life [F]heaven [C][G7]everyday
 {end_of_verse}
+
+
+

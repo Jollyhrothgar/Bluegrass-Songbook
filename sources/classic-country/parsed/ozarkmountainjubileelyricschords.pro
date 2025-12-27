@@ -1,6 +1,9 @@
 {meta: title Ozark Mountain Jubilee}
 {meta: artist The Oak Ridge Boys}
 {meta: composer S. Anders and R. Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file ozarkmountainjubileelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear the rooster crowing it's [Em]a frosty [C]morning 
@@ -40,3 +43,8 @@ We'll [B7]have our own [C]Ozark [D7]Mountain [G]Jubilee
 {start_of_verse: Verse 5}
 [C]Ozark [D7]Mountain [G]Jubilee
 {end_of_verse}
+
+
+
+
+

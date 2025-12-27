@@ -1,6 +1,9 @@
 {meta: title Tied To A Stone}
 {meta: artist George Jones}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file tiedtoastonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up this morning and prayed to God oh let this be a [F]dream
@@ -35,3 +38,7 @@ Than to go on [G7]this way day after day tied to a [C]stone
 [F]I'd rather be lonely and face life [C]alone
 Than to go on [G7]this way day after day tied to a [C]stone
 {end_of_verse}
+
+
+
+

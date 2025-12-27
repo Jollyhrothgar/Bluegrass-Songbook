@@ -1,6 +1,9 @@
 {meta: title I Never Shall Forget The Day}
 {meta: artist The Statler Brothers}
 {meta: composer G.T. Speer}
+{meta: x_source classic-country}
+{meta: x_source_file inevershallforgetthedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Long years ago [F]when out in [C]sin
@@ -47,3 +50,9 @@ I'll sing and shout it for He’s [F]everything to [C]me
 {start_of_verse: Verse 4}
 I'll sing and shout it for He’s [F]everything to [C]me
 {end_of_verse}
+
+
+
+
+
+

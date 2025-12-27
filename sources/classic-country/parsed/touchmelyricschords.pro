@@ -1,5 +1,8 @@
 {meta: title Touch Me}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file touchmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Touch me touch the hand of a man 
@@ -42,3 +45,10 @@ At someone who's lost everything [C7]he can [F]lose
 And then touch me and you'll [G7]know 
 How you'd feel with the [C]blues 
 {end_of_verse}
+
+
+
+
+
+
+

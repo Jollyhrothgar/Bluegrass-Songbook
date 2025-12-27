@@ -1,5 +1,8 @@
 {meta: title Me and Bobby McGee}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file meandbobbymcgeelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Busted flat in Baton Rouge headin' for the trains
@@ -54,3 +57,11 @@ Well I'd trade all my tomorrows for a single [C]yesterday
 And feeling good was good [G7]enough for me
 Good enough for me and my Bobby [C]McGee
 {end_of_verse}
+
+
+
+
+
+
+
+

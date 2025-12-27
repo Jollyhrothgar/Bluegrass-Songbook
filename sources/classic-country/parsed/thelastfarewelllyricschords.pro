@@ -1,6 +1,9 @@
 {meta: title The Last Farewell}
 {meta: artist Roy Drusky}
 {meta: composer Ronald Arthur Webster and Roger Whittaker}
+{meta: x_source classic-country}
+{meta: x_source_file thelastfarewelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a ship lies rigged and [G7]ready in the [C]harbor
@@ -49,3 +52,8 @@ More [Dm]dearly than the [G7]spoken word can [C]tell[Dm]
 For [G7]you are [Em]beauti[Am]ful [Dm]I have loved you [G7]dearly
 More [Dm]dearly than the [G7]spoken word can [C]tell
 {end_of_verse}
+
+
+
+
+

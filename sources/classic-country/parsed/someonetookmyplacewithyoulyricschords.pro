@@ -1,6 +1,9 @@
 {meta: title Someone Took My Place With You}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Lester Flatt, Earl Scruggs, Gurney Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file someonetookmyplacewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now someone took my place with [D7]you
@@ -36,3 +39,7 @@
 [G]Now I'm found here alone and [D7]blue
 [G]Cause someone took my place with you
 {end_of_verse}
+
+
+
+

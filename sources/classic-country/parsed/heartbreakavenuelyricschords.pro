@@ -1,6 +1,9 @@
 {meta: title Heartbreak Avenue}
 {meta: artist Carl Smith}
 {meta: composer Mel Foree}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakavenuelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m alone in a house made of [G7]sorrow 
@@ -29,3 +32,6 @@ There’s [D7]no use to hope that they’ll come [G7]true
 But if [C]you change your mind you can [G7]find me
 I’ll be waiting on Heartbreak Ave[C]nue
 {end_of_verse}
+
+
+

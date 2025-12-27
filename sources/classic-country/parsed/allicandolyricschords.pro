@@ -1,5 +1,8 @@
 {meta: title All I Can Do}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file allicandolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's all I can do to keep from fallin' in love with you
@@ -49,3 +52,9 @@ All I can do to keep from [G7]lettin' it [C]show
 Yeah that's all I can do to keep from fallin' in love with you
 All I can do to keep from [G7]tellin' you [C]so
 {end_of_verse}
+
+
+
+
+
+

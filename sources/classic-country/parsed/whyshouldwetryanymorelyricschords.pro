@@ -1,6 +1,9 @@
 {meta: title Why Should We Try Anymore}
 {meta: artist Hank Williams}
 {meta: composer Marcel Joseph}
+{meta: x_source classic-country}
+{meta: x_source_file whyshouldwetryanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What's the use to deny we've been [F]living [C]a lie
@@ -29,3 +32,6 @@ On the past let's close [G7]the door
 And [C]smile don't regret but [F]live and [C]forget
 There's no use to [G7]try [C]anymore
 {end_of_verse}
+
+
+

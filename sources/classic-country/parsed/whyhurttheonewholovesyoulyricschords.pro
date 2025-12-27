@@ -1,6 +1,9 @@
 {meta: title Why Hurt The One Who Loves You}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Bill Dees}
+{meta: x_source classic-country}
+{meta: x_source_file whyhurttheonewholovesyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you really [A7]love me and you [Dm]say that you [G7]do 
@@ -34,3 +37,7 @@ When [C]you really [A7]need me and you [Dm]want me for a [Em]friend
 I'll [F]walk away from you and [C]darling [Em]when I [Am]do 
 You'll wonder [Dm]why [G7]why [F]why why why hurt the [G7]one who loves [C]you
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Light In Your Eyes}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file thelightinyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Honey when the [C]light's not in your [G]eyes[C]
@@ -33,3 +36,7 @@ My [C]world is in the [D7]light there in your [G]eyes
 It's so hard for [C]me to rea[G]lize
 It [C]depends upon the [D7]light there in your [G]eyes
 {end_of_verse}
+
+
+
+

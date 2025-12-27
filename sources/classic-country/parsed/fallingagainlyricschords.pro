@@ -1,6 +1,9 @@
 {meta: title Falling Again}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file fallingagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I should [F]take my time I [C]know take it [F]easy take it [C]slow
@@ -29,3 +32,6 @@ Oh and [C]heaven help me [G7]here I [C]go [F]again
 Oh I [C]just get over [G7]one heartache and [F][C]then
 [C]Here I go like a fool [G7]falling [C]again
 {end_of_verse}
+
+
+

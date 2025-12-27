@@ -1,6 +1,9 @@
 {meta: title Soft Lips}
 {meta: artist Hank Thompson}
 {meta: composer Walt McCoy}
+{meta: x_source classic-country}
+{meta: x_source_file softlipslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Soft lips that feel so [C]divine 
@@ -24,3 +27,5 @@ My heart would [F]break don't you see
 If you [C]ever took from [A7]me
 The [D7]thrill of [G7]your soft [C]lips
 {end_of_verse}
+
+

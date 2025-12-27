@@ -1,6 +1,9 @@
 {meta: title If You Only Knew}
 {meta: artist Reba McEntire}
 {meta: composer Jane Mariash and Diana Rae}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouonlyknewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So here you [F]are again [G7]standing at my [C]door
@@ -52,3 +55,9 @@ You'd put your anger down turn [G7]around and go back [C]home
 You'd put your [F]anger down turn [G7]around 
 And go back [C]home    [G7]if you only [C]knew
 {end_of_verse}
+
+
+
+
+
+

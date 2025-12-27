@@ -1,6 +1,9 @@
 {meta: title Yellow Moon}
 {meta: artist Don Williams}
 {meta: composer Richard Brannan}
+{meta: x_source classic-country}
+{meta: x_source_file yellowmoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The moon [F]is on the rise it stares at me [C]tonight
@@ -31,3 +34,6 @@ There’s a yellow moon [Am]hanging in a starry [F]sky
 [C]Wherever you [F]are [G7]it’s watching over [Am]you 
 Oh [F]shine on [G7]shine on yellow [C]moon
 {end_of_verse}
+
+
+

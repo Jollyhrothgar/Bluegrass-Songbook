@@ -1,6 +1,9 @@
 {meta: title I Got Religion Last Saturday Night}
 {meta: artist Webb Pierce}
 {meta: composer Ted Daffan and Michael Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file igotreligionlastsaturdaynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been working hard the [F]whole week long
@@ -29,3 +32,6 @@ Folks you better wonder what the [F]future may bring
 I may be ragged well that's [F]alright
 [G7]But I got religion last Saturday [C]night
 {end_of_verse}
+
+
+

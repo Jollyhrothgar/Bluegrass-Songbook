@@ -1,6 +1,9 @@
 {meta: title King Of Fools}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens, Red Simpson, Dusty Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file kingoffoolslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I believe every lying word you told to [G7]me
@@ -29,3 +32,6 @@ The king with the castle filled with [C]gloom
 A king whose treasures are just memories of [F]you
 Long live the [C]king  the [G7]lonely king of [C]fools
 {end_of_verse}
+
+
+

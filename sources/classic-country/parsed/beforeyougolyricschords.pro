@@ -1,6 +1,9 @@
 {meta: title Before You Go}
 {meta: artist Buck Owens}
 {meta: composer Don Rich and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file beforeyougolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh you say that you're going away and leave me
@@ -29,3 +32,6 @@ And that I'm sorry for the quarrels that we [G]had
 If you leave you're gonna tear my world to [C]pieces
 So take it [G]slow be sure you [D7]know before you [G]go
 {end_of_verse}
+
+
+

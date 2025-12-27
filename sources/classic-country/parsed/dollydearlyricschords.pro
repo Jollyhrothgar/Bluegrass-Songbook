@@ -1,5 +1,8 @@
 {meta: title Dolly Dear}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file dollydearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dolly is the sweetest [F]gal in [C]town
@@ -63,3 +66,11 @@ You’re the sweetest little honey
 And I’d part from all my money
 Just to [G7]have you always [C]near
 {end_of_verse}
+
+
+
+
+
+
+
+

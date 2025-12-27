@@ -1,5 +1,8 @@
 {meta: title Girl You Sure Know How To Say Goodbye}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file girlyousureknowhowtosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Girl you sure know [G7]how to say good[C]bye
@@ -32,3 +35,7 @@ You said I was a person you could [G7]trust
 [C]You told me that you love me in a [F]way that couldn't [C]die
 [F]Girl you sure know [C]how to [G7]say good[C]bye
 {end_of_verse}
+
+
+
+

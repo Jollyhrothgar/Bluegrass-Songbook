@@ -1,6 +1,9 @@
 {meta: title If I Ever Stop Hurtin'}
 {meta: artist Ernest Tubb}
 {meta: composer Billy Hughes}
+{meta: x_source classic-country}
+{meta: x_source_file ifieverstophurtinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I ever stop hurtin' I'm gonna [F]try one more time
@@ -29,3 +32,6 @@ If I [G7]ever get over this [C]girl that's on my mind
 I'm gonna keep looking for a [F]girl who's true and kind
 If I [G7]ever stop hurtin' I'm gonna try one more [C]time
 {end_of_verse}
+
+
+

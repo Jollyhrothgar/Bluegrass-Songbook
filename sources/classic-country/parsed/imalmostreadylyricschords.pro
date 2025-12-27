@@ -1,6 +1,9 @@
 {meta: title I'm Almost Ready}
 {meta: artist Leona Williams}
 {meta: composer Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file imalmostreadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm [C]almost [G]ready 
@@ -48,3 +51,9 @@ To let you [C]loose and find [D7]another heart to [G]steal
 To let you [C]loose and find [D7]another heart to [G]steal
 To let you [C]loose and find [D7]another heart to [G]steal
 {end_of_verse}
+
+
+
+
+
+

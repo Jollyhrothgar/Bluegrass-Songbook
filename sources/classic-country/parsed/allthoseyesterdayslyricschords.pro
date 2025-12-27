@@ -1,6 +1,9 @@
 {meta: title All Those Yesterdays}
 {meta: artist Ernest Tubb}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file allthoseyesterdayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What will I do with [C]all those [G]yesterdays
@@ -22,3 +25,5 @@
 [G]But when nighttime falls and [C]memories come to [G]play
 [D7]What will I do with all those [G]yesterdays
 {end_of_verse}
+
+

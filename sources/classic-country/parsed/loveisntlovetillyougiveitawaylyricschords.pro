@@ -1,6 +1,9 @@
 {meta: title Love Isn't Love (Till You Give It Away)}
 {meta: artist Reba McEntire}
 {meta: composer Ricci Mareno and Bobby Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file loveisntlovetillyougiveitawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A smile's not a smile till it [Dm]wrinkles your face
@@ -41,3 +44,8 @@ No [C]love isn't [G7]love till you give it [C]away
 Love in your heart wasn't [F]put there to [Dm]stay
 No [C]love isn't [G7]love till you give it [C]away
 {end_of_verse}
+
+
+
+
+

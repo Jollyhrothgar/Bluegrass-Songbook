@@ -1,6 +1,9 @@
 {meta: title O'Leary's Cow}
 {meta: artist Johnny Horton}
 {meta: composer Ray Winkler, Leroy Morris, Dave Stone}
+{meta: x_source classic-country}
+{meta: x_source_file olearyscowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]October eighteen seventy one 
@@ -50,3 +53,9 @@ But [G7]O'Lear'y's cow still caught the [C]blame
 [Am]The world couldn't help but be amazed 
 How one little cow started such a [C]blaze
 {end_of_verse}
+
+
+
+
+
+

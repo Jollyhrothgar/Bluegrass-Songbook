@@ -1,5 +1,8 @@
 {meta: title Here Comes That Rainbow Again}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file herecomesthatrainbowagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The scene was a small roadside cafe
@@ -42,3 +45,8 @@ With the [G7]smell of the rain on the [C]wind
 [F]Ain't it just like a [C]human
 [G7]Here comes that rainbow [C]again
 {end_of_verse}
+
+
+
+
+

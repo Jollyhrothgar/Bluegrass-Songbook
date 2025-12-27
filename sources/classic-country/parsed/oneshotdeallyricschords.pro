@@ -1,6 +1,9 @@
 {meta: title One Shot Deal}
 {meta: artist John Anderson}
 {meta: composer Bob DiPiero and John S. Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file oneshotdeallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The way you talked you know I thought
@@ -46,3 +49,9 @@ I can't help it if I [C]lose control
 Just think about the [D7]way that I feel 
 Was it just a [G]one shot deal
 {end_of_verse}
+
+
+
+
+
+

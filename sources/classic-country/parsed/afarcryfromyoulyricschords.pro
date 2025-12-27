@@ -1,6 +1,9 @@
 {meta: title A Far Cry From You}
 {meta: artist Connie Smith}
 {meta: composer Stephen F. Earle and Jimbeau Hinson}
+{meta: x_source classic-country}
+{meta: x_source_file afarcryfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blinded by the tears the [F]day you [C]left
@@ -36,3 +39,7 @@ I must've cried a river [F]of re[C]grets
 It's water under[G7]neath the bridge 
 And that's a far cry from [C]you 
 {end_of_verse}
+
+
+
+

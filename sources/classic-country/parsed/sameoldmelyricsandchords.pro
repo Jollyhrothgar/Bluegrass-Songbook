@@ -1,6 +1,9 @@
 {meta: title Same Old Me}
 {meta: artist Ray Price}
 {meta: composer Frank Owens}
+{meta: x_source classic-country}
+{meta: x_source_file sameoldmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I saw you with your new love [C]today
@@ -29,3 +32,6 @@ And the [D7]same old heart still bein' [G]true
 And the same two lips they still belong to [C]you
 And the [D7]same old me keeps loving [G]you
 {end_of_verse}
+
+
+

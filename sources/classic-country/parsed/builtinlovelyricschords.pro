@@ -1,5 +1,8 @@
 {meta: title Built In Love}
 {meta: artist Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file builtinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everything in our new home is all built-[F]in 
@@ -26,3 +29,6 @@ Let me [G7]feel it in your arms our built-in [C]love
 {start_of_verse: Verse 4}
 Oh let me [G7]feel it in your arms our built-in [C]love
 {end_of_verse}
+
+
+

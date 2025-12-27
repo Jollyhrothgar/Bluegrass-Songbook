@@ -1,5 +1,8 @@
 {meta: title Much Beyond Compare}
 {meta: artist Johnny Tillotson}
+{meta: x_source classic-country}
+{meta: x_source_file muchbeyondcomparelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you'd smile at me oh oh oh 
@@ -35,3 +38,7 @@ The [D7]love I have for you
 Do I love you [C]this I swear
 You're [G]much [D7]beyond [G]compare[C]  [G]
 {end_of_verse}
+
+
+
+

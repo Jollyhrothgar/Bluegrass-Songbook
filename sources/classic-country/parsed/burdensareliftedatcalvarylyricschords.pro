@@ -1,6 +1,9 @@
 {meta: title Burdens Are Lifted At Calvary}
 {meta: artist Bill and Gloria Gaither}
 {meta: composer John M. Moore}
+{meta: x_source classic-country}
+{meta: x_source_file burdensareliftedatcalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Days are filled with sorrow and [G7]care
@@ -40,3 +43,8 @@ Every heartache and [C]tear
 {start_of_verse: Verse 4}
 [G7]Jesus is very [C]near
 {end_of_verse}
+
+
+
+
+

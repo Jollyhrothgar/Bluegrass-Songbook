@@ -1,6 +1,9 @@
 {meta: title Last In A Long Lonesome Line}
 {meta: artist Patty Loveless}
 {meta: composer Bob DiPiero and Jeffrey Steele}
+{meta: x_source classic-country}
+{meta: x_source_file lastinalonglonesomelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I appear to be [D7]holdin' on [G]tight
@@ -41,3 +44,8 @@ Of the [G]last in a [D7]long lonesome [G]line
 {start_of_verse: Verse 6}
 [C]I'm the [G]last of the last in a [D7]long lonesome [C]line[G]
 {end_of_verse}
+
+
+
+
+

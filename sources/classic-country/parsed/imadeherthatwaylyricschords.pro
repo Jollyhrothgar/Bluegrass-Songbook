@@ -1,6 +1,9 @@
 {meta: title I Made Her That Way}
 {meta: artist George Jones}
 {meta: composer George Jones and Dale Ward}
+{meta: x_source classic-country}
+{meta: x_source_file imadeherthatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]See that girl over [D7]there by the [G]jukebox
@@ -30,3 +33,6 @@
 [G]I know a [D7]little I made her [G]that [C]way
 [G]I know a [D7]little I made her [C]that [G]way
 {end_of_verse}
+
+
+

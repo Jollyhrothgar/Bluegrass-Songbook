@@ -1,6 +1,9 @@
 {meta: title Don't Think It Ain't Been Fun Dear}
 {meta: artist Lefty Frizzel}
 {meta: composer Elizabeth Jane Cozza, Jimmy Beck, Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file dontthinkitaintbeenfundearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't think it ain't been fun dear cause it ain't
@@ -43,3 +46,8 @@ Don't think you can make me jealous with a brand new man
 [C]I see you with somebody new and [G]then I wanna [E7]faint
 [A7]Don't think it ain't been fun dear [D7]cause it [G]ain't
 {end_of_verse}
+
+
+
+
+

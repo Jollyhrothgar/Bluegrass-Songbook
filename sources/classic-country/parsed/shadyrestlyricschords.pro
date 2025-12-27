@@ -1,6 +1,9 @@
 {meta: title Shady Rest}
 {meta: artist Mel Street}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file shadyrestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh she was twenty-one she [F]liked to have her [G7]fun and she was [C]restless [F]  [G7]
@@ -38,3 +41,6 @@ We [F]found a home [G7]away from home at [C]Shady Rest
 [F](Shady Rest [C]Shady Rest) nobody's gonna know
 [F](Shady Rest [C]Shady Rest)
 {end_of_verse}
+
+
+

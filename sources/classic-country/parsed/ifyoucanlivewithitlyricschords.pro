@@ -1,5 +1,8 @@
 {meta: title If You Can Live With It}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoucanlivewithitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You say you've found another  [C]another you love better
@@ -28,3 +31,6 @@ If you can face your [G7]conscience  I can face my [D7]pride
 If you can live [G7]with it  I can live with[C]out it
 Cause I did the [G7]only thing I could do  [D7]baby I [G7]tried
 {end_of_verse}
+
+
+

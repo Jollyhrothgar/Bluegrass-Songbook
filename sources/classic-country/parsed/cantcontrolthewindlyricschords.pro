@@ -1,6 +1,9 @@
 {meta: title Can't Control The Wind}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Anderson, Roger Pirtle, Pat Lovely}
+{meta: x_source classic-country}
+{meta: x_source_file cantcontrolthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was [G7]a boy [Am]daddy was [C]my guiding [F]light
@@ -38,3 +41,8 @@
 {start_of_verse: Verse 6}
 [F]No I can't control the wind [G7]but I can adjust the [C]sail
 {end_of_verse}
+
+
+
+
+

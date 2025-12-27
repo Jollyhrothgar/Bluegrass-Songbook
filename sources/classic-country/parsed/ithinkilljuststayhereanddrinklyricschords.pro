@@ -1,5 +1,8 @@
 {meta: title I Think I’ll Just Stay Here And Drink}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ithinkilljuststayhereanddrinklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Could be holding you [C]tonight
@@ -28,3 +31,6 @@ Since loving you don't feel no [G]pain
 My mind ain't nothing but a total [D7]blank
 I think I'll just stay here and [G]drink
 {end_of_verse}
+
+
+

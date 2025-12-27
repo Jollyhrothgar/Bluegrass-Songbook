@@ -1,6 +1,9 @@
 {meta: title Just As Long As I Have You}
 {meta: artist Don Williams}
 {meta: composer Dave Loggins and J.D. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file justaslongasihaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I love to wander on a sandy shore
@@ -34,3 +37,7 @@ I've just got to have you to make my life complete
 [G7]I'll go anywhere you want cause with you is where I belong
 [C]Just as long as I have you
 {end_of_verse}
+
+
+
+

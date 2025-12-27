@@ -1,6 +1,9 @@
 {meta: title No Man Should Hurt As Bad As I Do}
 {meta: artist George Morgan}
 {meta: composer Jan Crutchfield and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file nomanshouldhurtasbadasidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No man should hurt as bad as I do
@@ -52,3 +55,9 @@ I've got pain that I ain't even [D7]got to
 No man should [D7]hurt as bad as [G]I do
 No man should [D7]hurt as bad as [G]I do
 {end_of_verse}
+
+
+
+
+
+

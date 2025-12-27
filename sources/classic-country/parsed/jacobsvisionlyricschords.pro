@@ -1,5 +1,8 @@
 {meta: title Jacob's Vision}
 {meta: artist Ricky Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file jacobsvisionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hallelujah to Jesus who died on the tree
@@ -40,3 +43,10 @@ I went from the heavens they reel and they rock
 [C]Hallelujah to Jesus who died on the tree
 [G7]To raise up this ladder of mercy for [C]me
 {end_of_verse}
+
+
+
+
+
+
+

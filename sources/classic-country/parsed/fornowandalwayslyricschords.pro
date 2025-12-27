@@ -1,6 +1,9 @@
 {meta: title For Now and Always}
 {meta: artist Hank Snow}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file fornowandalwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For now and always
@@ -70,3 +73,12 @@ Pretty little sweetheart
 Pretty little sweetheart
 I [D7]love [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

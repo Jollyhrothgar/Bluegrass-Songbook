@@ -1,6 +1,9 @@
 {meta: title The Man Upstairs}
 {meta: artist Patsy Cline}
 {meta: composer Gerry Manners, Dorinda Morgan, Harold Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file themanupstairslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you talked to the Man upstairs
@@ -56,3 +59,13 @@ He [A7]will always see you [D7]through
 {start_of_verse: Verse 9}
 If you'll [C]talked to the Man [G][D7]upstairs 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

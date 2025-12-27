@@ -1,6 +1,9 @@
 {meta: title How To Lose A Good Woman}
 {meta: artist Jim Ed Brown}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file howtoloseagoodwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Forget about her [C]birthday
@@ -37,3 +40,7 @@
 {start_of_verse: Verse 4}
 [D7]That's how to lose a good [G]woman
 {end_of_verse}
+
+
+
+

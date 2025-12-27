@@ -1,6 +1,9 @@
 {meta: title Breaking In Another Heart}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray, B. Auge, Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file breakinginanotherheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re breaking in another heart to take the place of [D7]mine
@@ -22,3 +25,5 @@ The [F]heart that you are [C]breaking in will be [F]as true [G7]as [C]mine
 [C]It’s hard to start my life again but what else can [D7]I do
 You’re [F]breaking in [C]another heart but [F]mine you’ve [G7]broke [C]into 
 {end_of_verse}
+
+

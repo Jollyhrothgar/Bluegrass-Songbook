@@ -1,6 +1,9 @@
 {meta: title Jesus Cares What Happens To Me}
 {meta: artist The Osborne Brothers}
 {meta: composer Bobby Osborne}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuscareswhathappenstomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once I thought no one cared if I lived or died
@@ -33,3 +36,7 @@ He [G]lifted my burdens and set my soul free
 {start_of_verse: Verse 5}
 [C]Yes Jesus [G]cares what [D7]happens to [G]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Blue Lights And Bubbles}
 {meta: artist John Anderson}
 {meta: composer Ken McDuffie}
+{meta: x_source classic-country}
+{meta: x_source_file bluelightsandbubbleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blue lights and bubbles will help me with my troubles
@@ -33,3 +36,7 @@ I need [C]blue lights and bubbles to [G7]get me over [C]you
 {start_of_verse: Verse 5}
 Yeah I need blue lights and bubbles to [G7]get me over [C]you
 {end_of_verse}
+
+
+
+

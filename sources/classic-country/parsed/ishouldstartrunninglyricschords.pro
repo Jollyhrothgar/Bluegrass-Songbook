@@ -1,6 +1,9 @@
 {meta: title I Should Start Running}
 {meta: artist Red Sovine}
 {meta: composer Paul Belvins}
+{meta: x_source classic-country}
+{meta: x_source_file ishouldstartrunninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here you [Dm]are in my [G7]arms again 
@@ -29,3 +32,6 @@ Here you [Dm]are in my [G7]arms again
 Before you [Dm]break my heart again 
 [G7]I should start [C]running
 {end_of_verse}
+
+
+

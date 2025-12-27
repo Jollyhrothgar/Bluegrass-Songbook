@@ -1,6 +1,9 @@
 {meta: title Dreams of Yesterday}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file dreamsofyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can still recall my [D7]mother [Em]standing on the [Bm]porch
@@ -54,3 +57,9 @@
 [Bm]Times are changing don’t get [Em]carried away
 [C]Gotta hold on to [G]the dreams of [G][D7]yesterday
 {end_of_verse}
+
+
+
+
+
+

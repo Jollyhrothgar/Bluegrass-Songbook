@@ -1,6 +1,9 @@
 {meta: title Lamp Lighting Time In The Valley}
 {meta: artist Marty Robbins}
 {meta: composer Harold Goodman, Sam C. Hart, Joe Lyons, Curt Poulton, Dean Upson}
+{meta: x_source classic-country}
+{meta: x_source_file lamplightingtimeinthevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a lamp shining [F]bright in a [C]cabin
@@ -36,3 +39,7 @@ And in dreams I go back to my [G7]home
 I [C]can see that old lamp [F]in the [C]window
 It [G7]will guide me where ever I [C]roam
 {end_of_verse}
+
+
+
+

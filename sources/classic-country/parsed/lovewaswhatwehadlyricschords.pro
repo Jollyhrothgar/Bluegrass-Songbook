@@ -1,6 +1,9 @@
 {meta: title Love Was What We Had}
 {meta: artist Jim Ed Brown and Helen Cornelius}
 {meta: composer Willis Graham}
+{meta: x_source classic-country}
+{meta: x_source_file lovewaswhatwehadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What we had [G7]were country walls
@@ -38,3 +41,7 @@ What we had [G7]was setting sun
 [C]Love was what we [Am]had
 [C]Love was what we [Am]had
 {end_of_verse}
+
+
+
+

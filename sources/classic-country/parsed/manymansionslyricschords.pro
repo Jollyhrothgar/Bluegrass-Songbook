@@ -1,6 +1,9 @@
 {meta: title Many Mansions}
 {meta: artist Moe Bandy}
 {meta: composer Carol Ann Etheridge, Mark D. Sanders, Alice Randall}
+{meta: x_source classic-country}
+{meta: x_source_file manymansionslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hope is a thing with feathers that perches on the [Em]soul
@@ -32,3 +35,6 @@
 [G]Where I’ve seen [D7]lives still [G]by winters bitter [C]chill
 [G]In my Fathers house there’s [D7]a mansion for [G]me
 {end_of_verse}
+
+
+

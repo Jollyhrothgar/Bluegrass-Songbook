@@ -1,5 +1,8 @@
 {meta: title What’s Forever For}
 {meta: artist Anne Murray}
+{meta: x_source classic-country}
+{meta: x_source_file whatsforeverforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been [Dm]looking at [C]people 
@@ -44,3 +47,8 @@ If they're [F]not even trying to keep it [G7]alive
 [C]And if love [Dm]never [C]lasts [Dm]forever 
 [C]Tell me what's [G7]forever [C]for
 {end_of_verse}
+
+
+
+
+

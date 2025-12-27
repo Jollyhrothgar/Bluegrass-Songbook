@@ -1,6 +1,9 @@
 {meta: title Withered Roses}
 {meta: artist George Morgan}
 {meta: composer Paul Koy}
+{meta: x_source classic-country}
+{meta: x_source_file witheredroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I found some withered [D7]roses 
@@ -43,3 +46,8 @@ And beg your love di[G]vine
 But their scent which now has [D7]vanished 
 Was your love sweetheart [G]mine
 {end_of_verse}
+
+
+
+
+

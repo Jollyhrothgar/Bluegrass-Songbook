@@ -1,6 +1,9 @@
 {meta: title You Turned The Lights On}
 {meta: artist Jack Greene}
 {meta: composer Haze Jones}
+{meta: x_source classic-country}
+{meta: x_source_file youturnedthelightsonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You turned the [C]lights on [G7]all over my [F]worl[C]d
@@ -37,3 +40,8 @@ My future was no [G7]brighter than my [C]past
 {start_of_verse: Verse 5}
 [F]You turned the [C]lights on [G7]all over my [F]worl[C]d
 {end_of_verse}
+
+
+
+
+

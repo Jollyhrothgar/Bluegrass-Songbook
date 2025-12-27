@@ -1,6 +1,9 @@
 {meta: title If I Were A Carpenter}
 {meta: artist Don Williams}
 {meta: composer Tim Hardin}
+{meta: x_source classic-country}
+{meta: x_source_file ifiwereacarpenterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I were a [F]carpenter [C]and you were a [G]lady
@@ -35,3 +38,9 @@ Would you marry me [F]anyway  [C]would you have my [G]baby
 {start_of_verse: Verse 6}
 Would you marry me [F]anyway  [C]would you have my [G]baby
 {end_of_verse}
+
+
+
+
+
+

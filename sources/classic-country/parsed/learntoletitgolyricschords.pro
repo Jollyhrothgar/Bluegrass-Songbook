@@ -1,6 +1,9 @@
 {meta: title Learn To Let It Go}
 {meta: artist Don Williams}
 {meta: composer Rory Bourke and Mike Reid}
+{meta: x_source classic-country}
+{meta: x_source_file learntoletitgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a young man sits by the river 
@@ -52,3 +55,9 @@ You've got to [F]learn to let it go [C]when love lets you down
 [F]With a love that's [G7]gonna bring you [C]around 
 [F]Only [C]love is gonna [G7]bring you [C]around
 {end_of_verse}
+
+
+
+
+
+

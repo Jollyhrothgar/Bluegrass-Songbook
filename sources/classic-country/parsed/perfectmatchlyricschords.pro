@@ -1,6 +1,9 @@
 {meta: title Perfect Match}
 {meta: artist Barbara Mandrell}
 {meta: composer Glenn Sutton and Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file perfectmatchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I look across my morning cup of [Dm]coffee
@@ -55,3 +58,10 @@ Like [F]two ole birds on the [G7]eggs of happiness
 {start_of_verse: Verse 7}
 Yes you and me [G7]together we're a [C]perfect match
 {end_of_verse}
+
+
+
+
+
+
+

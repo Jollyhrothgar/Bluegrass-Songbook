@@ -1,6 +1,9 @@
 {meta: title You Called Me Another Woman's Name}
 {meta: artist Norma Jean}
 {meta: composer Vic McAlpin and Lester Vanadore}
+{meta: x_source classic-country}
+{meta: x_source_file youcalledmeanotherwomansnamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Last night you called me another woman's [G]name
@@ -26,3 +29,6 @@ It brought [D7]tears to my eyes when you called me by her [G]name
 Old memories locked inside you came [C]out in your dream
 Cause [D7]last night you called me another woman's [G]name
 {end_of_verse}
+
+
+

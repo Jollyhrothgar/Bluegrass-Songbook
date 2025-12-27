@@ -1,5 +1,8 @@
 {meta: title Here's A Quarter Call Someone Who Cares}
 {meta: artist Travis Tritt}
+{meta: x_source classic-country}
+{meta: x_source_file heresaquartercallsomeonewhocareslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say you were wrong to ever [C]leave me [G]alone
@@ -36,3 +39,7 @@ Here's a quarter call [D7]someone who [G]cares
 {start_of_verse: Verse 4}
 [C]Yeah here's a [G]quarter call [D7]someone who [C]care[G]s
 {end_of_verse}
+
+
+
+

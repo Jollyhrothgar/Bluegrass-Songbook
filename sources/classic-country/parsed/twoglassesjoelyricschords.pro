@@ -1,6 +1,9 @@
 {meta: title Two Glasses Joe}
 {meta: artist Ernest Tubb}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file twoglassesjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Set up two glasses Joe
@@ -51,3 +54,10 @@ And will till I [G]die
 [A7]So fill three glasses Joe
 [D7]And leave me here alone to [G]cry
 {end_of_verse}
+
+
+
+
+
+
+

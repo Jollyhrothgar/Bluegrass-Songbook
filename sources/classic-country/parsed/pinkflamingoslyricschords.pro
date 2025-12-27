@@ -1,6 +1,9 @@
 {meta: title Pink Flamingos}
 {meta: artist Tracy Byrd}
 {meta: composer Wood Newton and Micki Furhman}
+{meta: x_source classic-country}
+{meta: x_source_file pinkflamingoslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was a rebel in my younger years
@@ -50,3 +53,8 @@ We got [G]pink flamingos in the [C]front yard
 It [A7]just doesn't get any [D7]better than this
 We got [G]pink flamingos[C]   [G]pink flamingos[C]   [G]pink flaming[C]ooo[G]s
 {end_of_verse}
+
+
+
+
+

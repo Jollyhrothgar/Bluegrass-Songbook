@@ -1,6 +1,9 @@
 {meta: title I Don't Mind If I Do}
 {meta: artist George Strait}
 {meta: composer Don Sampson and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file idontmindifidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Weather man says it's [C7]rainin' again
@@ -32,3 +35,6 @@ And since [C]you want me [Am]to  [Dm]I don't [G7]mind if I [C]do
 {start_of_verse: Verse 3}
 [G7]Just as [C]long as it's you baby  [Dm]I don't [G7]mind if I [C]do
 {end_of_verse}
+
+
+

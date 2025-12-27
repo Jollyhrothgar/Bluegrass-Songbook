@@ -1,6 +1,9 @@
 {meta: title If You’ll Be A Baby To Me}
 {meta: artist Hank Williams}
 {meta: composer Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoullbeababytomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll be your baby and I don't mean [F]maybe
@@ -20,3 +23,5 @@ And [G7]keep the [C]home-fires burning
 [C]Baby I'll be your [F]baby
 If [G7]you'll be a baby [C]to me
 {end_of_verse}
+
+

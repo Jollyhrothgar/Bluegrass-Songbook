@@ -1,5 +1,8 @@
 {meta: title God Loves His Children}
 {meta: artist Earl Scruggs and Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file Godloveshischildrenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was a stranger brother out in sin
@@ -49,3 +52,9 @@ He will protect you any[D7]where you [G7]go
 Just [C]call upon Him He will get you there
 God will protect you brot[F]her [C]an[G7]y-w[C]here
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Told You So}
 {meta: artist Randy Travis}
 {meta: composer Randy Bruce Traywick}
+{meta: x_source classic-country}
+{meta: x_source_file itoldyousolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Suppose I called you up tonight and told you that I loved [Em]you
@@ -45,3 +48,8 @@ And asking me to take [C]you [G7]in
 I [C]told you so but you [Em]had to [F]go
 Now I [Dm]found somebody new and you will [G7]never break my heart in two [C]again
 {end_of_verse}
+
+
+
+
+

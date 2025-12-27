@@ -1,6 +1,9 @@
 {meta: title Christmas Time's A Coming}
 {meta: artist Bill Anderson}
 {meta: composer Tex Logan}
+{meta: x_source classic-country}
+{meta: x_source_file Christmastimesacominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas time's a coming 
@@ -64,3 +67,11 @@ Can't you hear them bells ringing ringing
 [C]Christmas time's a coming 
 And [G7]I know I'm going [C]home
 {end_of_verse}
+
+
+
+
+
+
+
+

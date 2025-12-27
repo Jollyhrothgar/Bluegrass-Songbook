@@ -1,6 +1,9 @@
 {meta: title Thistlehair The Christmas Bear}
 {meta: artist Alabama}
 {meta: composer Donny Lowery}
+{meta: x_source classic-country}
+{meta: x_source_file thistlehairtheChristmasbearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The city's full of manger scenes 
@@ -79,3 +82,12 @@ To [G7]all the children of the world
 Every little boy and girl
 Out [F]there  [G7]loves Thistle[C]hair
 {end_of_verse}
+
+
+
+
+
+
+
+
+

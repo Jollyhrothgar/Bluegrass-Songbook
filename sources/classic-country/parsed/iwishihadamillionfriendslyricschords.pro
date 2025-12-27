@@ -1,5 +1,8 @@
 {meta: title I Wish I Had A Million Friends}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file iwishihadamillionfriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wish I had a [F]million [G]friends
@@ -42,3 +45,8 @@ Who were [C]thoughtful [D7]kind and [G]true
 I wish I had a [F]million [G]friends
 And I [C]wish they were [D7]all like [G]you
 {end_of_verse}
+
+
+
+
+

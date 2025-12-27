@@ -1,6 +1,9 @@
 {meta: title The Mountain Of Everlasting Life}
 {meta: artist Ferlin Husky}
 {meta: composer Dallas Frazier and Al Owens}
+{meta: x_source classic-country}
+{meta: x_source_file themountainofeverlastinglifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody lost it go ahead and keep [G7]it
@@ -48,3 +51,9 @@
 [G7]Somebody lost it go ahead and keep it
 [C]Finders is keepers and the loser has to [F]cry
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sin City}
 {meta: artist J.D. Crowe}
 {meta: composer Gram Parsons and Chris Hillman}
+{meta: x_source classic-country}
+{meta: x_source_file sincitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This old towns filled with [D7]sin it'll [G]swallow you [C]in
@@ -34,3 +37,7 @@ Won't [G]keep out the [D7]Lord's burnin' [G]rain
 On the [C]31st [D7]floor a [G]gold plated [C]door
 Won't [G]keep out the [D7]Lord's burnin' [C]rai[G]n
 {end_of_verse}
+
+
+
+

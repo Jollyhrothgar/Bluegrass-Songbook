@@ -1,5 +1,8 @@
 {meta: title What's The Matter With Me}
 {meta: artist Carl Belew}
+{meta: x_source classic-country}
+{meta: x_source_file whatsthematterwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What's the matter with me
@@ -37,3 +40,7 @@ Oh I'll never [D7]know
 What's the [G]matter with [C]you
 [D7]Or what's the matter with [G]me
 {end_of_verse}
+
+
+
+

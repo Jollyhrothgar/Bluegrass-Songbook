@@ -1,6 +1,9 @@
 {meta: title I Ain't Got Nobody}
 {meta: artist Bob Wills}
 {meta: composer Dave Peyton, Roger Graham, Spencer Williams}
+{meta: x_source classic-country}
+{meta: x_source_file iaintgotnobodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a sayin’ goin’ round
@@ -34,3 +37,8 @@ It’s awful hard to love someone
 {start_of_verse: Verse 6}
 Repeat last verse
 {end_of_verse}
+
+
+
+
+

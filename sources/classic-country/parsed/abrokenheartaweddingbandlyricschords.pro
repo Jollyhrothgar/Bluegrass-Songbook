@@ -1,6 +1,9 @@
 {meta: title A Broken Heart A Wedding Band}
 {meta: artist Stonewall Jackson}
 {meta: composer Joel Price}
+{meta: x_source classic-country}
+{meta: x_source_file abrokenheartaweddingbandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One more kiss [G7]before you [C]go there'll be no harm in [F]that I [C]know
@@ -29,3 +32,6 @@ How can I ever face this world [G7]alone
 Sure as the [C]sun's [G7]up in the [C]sky I don't care if I [F]live or [C]die
 All I've got's a broken [G7]heart a wedding [C]band
 {end_of_verse}
+
+
+

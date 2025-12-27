@@ -1,6 +1,9 @@
 {meta: title Hula Love}
 {meta: artist Buddy Knox}
 {meta: composer Dave Alldred, Jimmy Bowen, Buddy Knox, Donnie H. Lanier}
+{meta: x_source classic-country}
+{meta: x_source_file hulalovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the Isle of Filalilla out [G7]Hawaii way
@@ -48,3 +51,8 @@ And he sang h[F]ula Hawaii hula
 {start_of_verse: Verse 5}
 Hula [F]hula [C]love hula [F]hula [C]love
 {end_of_verse}
+
+
+
+
+

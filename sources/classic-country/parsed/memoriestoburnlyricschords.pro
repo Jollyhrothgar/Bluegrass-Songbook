@@ -1,6 +1,9 @@
 {meta: title Memories to Burn}
 {meta: artist Gene Watson}
 {meta: composer Warren Robb & Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file memoriestoburnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lady Lately You've Been Getting  Under My [Dm]Skin
@@ -31,3 +34,6 @@ If [C]You're Just Making Memories You'll Have To Wait Your [Dm]Turn
 Well If You're Making Memories You'll Have To Wait Your [Dm]Turn
 [F]'Cause I've Got [G7]Memories To [C]Burn
 {end_of_verse}
+
+
+

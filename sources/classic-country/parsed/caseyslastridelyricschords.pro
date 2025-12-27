@@ -1,5 +1,8 @@
 {meta: title Casey's Last Ride}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file caseyslastridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Casey joins the hollow sound of [G7]silent people walking down
@@ -42,3 +45,8 @@ Now she said now that you've a family of your [C]own
 Still she said it's so blessed and good to feel your [G7]body
 Lord she said Casey it's a shame to be [C]alone
 {end_of_verse}
+
+
+
+
+

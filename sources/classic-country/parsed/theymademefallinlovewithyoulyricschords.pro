@@ -1,6 +1,9 @@
 {meta: title They Made Me Fall In Love With You}
 {meta: artist Faron Young}
 {meta: composer Ted Edlin and Frank Duke}
+{meta: x_source classic-country}
+{meta: x_source_file theymademefallinlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who put the gold in your hair and the smile on your face
@@ -68,3 +71,15 @@ And the goodness in your heart so [G7]true
 I want to thank someone for all the things they’ve done
 Because they made me fall in love with [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

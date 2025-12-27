@@ -1,6 +1,9 @@
 {meta: title Any Bar In Birmingham}
 {meta: artist Don Rigsby}
 {meta: composer Larry Shell, Tim Stafford, Kim E. Williams}
+{meta: x_source classic-country}
+{meta: x_source_file anybarinbirminghamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Righteous reverend Ronnie [G7]Shaw 
@@ -49,3 +52,9 @@ Any bar in Birming[F]ham
 [G7]Any bar in Birming[F]ham
 [G7]Any bar in Birming[F]ham
 {end_of_verse}
+
+
+
+
+
+

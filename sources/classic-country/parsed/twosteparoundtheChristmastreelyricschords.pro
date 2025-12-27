@@ -1,6 +1,9 @@
 {meta: title Two Step Around The Christmas Tree}
 {meta: artist Michael Martin Murphey}
 {meta: composer Suzy Bogguss and Doug Crider}
+{meta: x_source classic-country}
+{meta: x_source_file twosteparoundtheChristmastreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a wondrous sight and a joyful sound
@@ -55,3 +58,11 @@ There's a jolly man in a bright red suit
 {start_of_verse: Verse 8}
 [G7]Roll back the rug so we can two step 'round the Christmas [C]tree
 {end_of_verse}
+
+
+
+
+
+
+
+

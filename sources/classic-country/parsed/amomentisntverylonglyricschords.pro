@@ -1,6 +1,9 @@
 {meta: title A Moment Isn’t Very Long}
 {meta: artist Faron Young}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file amomentisntverylonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday as I talked with a [G7]friend in town 
@@ -28,3 +31,6 @@ For a moment maybe I could for[F]get you
 But a [C]moment [G7]isn't very [C]long
 No a moment [G7]isn't very [C]long
 {end_of_verse}
+
+
+

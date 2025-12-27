@@ -1,6 +1,9 @@
 {meta: title What They All Call Love}
 {meta: artist Vince Gill}
 {meta: composer Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file whattheyallcalllovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 What They All Call Love
@@ -38,3 +41,8 @@ For we [C]both [G]know a place where our [C]souls have em[G]braced
 {start_of_verse: Verse 6}
 Oh I [C]think it's what they [D7]all call [C]love[G]
 {end_of_verse}
+
+
+
+
+

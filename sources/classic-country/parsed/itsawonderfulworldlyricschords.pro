@@ -1,6 +1,9 @@
 {meta: title It's A Wonderful World}
 {meta: artist Elvis Presley}
 {meta: composer Sid Tepper and Roy C. Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file itsawonderfulworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Young as a circus parade it's a wonderful [G7]world
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [Dm]It's a wonderful wonderful [G7]wonderful wonderful [C]world
 {end_of_verse}
+
+
+

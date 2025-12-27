@@ -1,6 +1,9 @@
 {meta: title Follow Me Back to Louisville}
 {meta: artist Don Williams}
 {meta: composer Bill Davidson}
+{meta: x_source classic-country}
+{meta: x_source_file followmebacktolouisvillelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Follow me [C]back to Louis[G7]ville [C]  [G7]
@@ -49,3 +52,8 @@ And I'll [G7]see by the [D7]light in your [Em]eye
 [G7]Follow me [C]back to Louis[G7]ville [C]
 [G7]Follow me [C]back to Louis[G7]ville [C]
 {end_of_verse}
+
+
+
+
+

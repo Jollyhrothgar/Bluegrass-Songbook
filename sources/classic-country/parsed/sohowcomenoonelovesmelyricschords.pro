@@ -1,5 +1,8 @@
 {meta: title So How Come No One Loves Me}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file sohowcomenoonelovesmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say that everyone [C]needs [G]someone 
@@ -32,3 +35,7 @@ So how come [D7]no one loves [G]me
 {start_of_verse: Verse 4}
 So how come [D7]no one loves [G]me
 {end_of_verse}
+
+
+
+

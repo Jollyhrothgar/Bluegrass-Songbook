@@ -1,6 +1,9 @@
 {meta: title That’s What I Get For Loving You}
 {meta: artist Ray Price}
 {meta: composer Don Helms and Estille E. Merriman}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatigetforlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Eyes that stay awake until the day is [D7]dawning
@@ -43,3 +46,8 @@ And that's what I get for loving [G]you
 I know my heart is only [D7]waiting
 And that's what I get for loving [G]you
 {end_of_verse}
+
+
+
+
+

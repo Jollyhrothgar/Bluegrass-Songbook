@@ -1,5 +1,8 @@
 {meta: title My Dream Came True}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file mydreamcametruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One look at [Am]you one [F]night with [G7]you
@@ -34,3 +37,7 @@ Oh my [C]darling my [Am]darling
 Oh my darling my [Am]darling
 [F]You're my [G7]dream come [C]true
 {end_of_verse}
+
+
+
+

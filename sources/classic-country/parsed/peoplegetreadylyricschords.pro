@@ -1,6 +1,9 @@
 {meta: title People Get Ready}
 {meta: artist The Everly Brothers}
 {meta: composer Curtis Mayfield}
+{meta: x_source classic-country}
+{meta: x_source_file peoplegetreadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]People get [Em]ready there's a [C]train a [G]coming
@@ -20,3 +23,5 @@ There's no hiding [Em]place against the [C]kingdom's [G]throne
 People get [Em]ready there's a [C]train a [G]coming
 You don't need a [Em]ticket you just [C]thank the [G]Lord
 {end_of_verse}
+
+

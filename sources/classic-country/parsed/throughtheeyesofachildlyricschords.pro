@@ -1,5 +1,8 @@
 {meta: title Through the Eyes of a Child}
 {meta: artist Patsy Cline}
+{meta: x_source classic-country}
+{meta: x_source_file throughtheeyesofachildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I Could See The World Through The Eyes [F]Of A [C]Child
@@ -28,3 +31,6 @@ I Could [Dm7]See All The [D7]Good Things In Life I've Never [G7]Had
 If [C]I Could See The World Through The Eyes [F]Of A [C]Child
 What A Wonderful [G7]World This Would [C]Be
 {end_of_verse}
+
+
+

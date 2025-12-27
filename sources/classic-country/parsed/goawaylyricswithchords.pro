@@ -1,6 +1,9 @@
 {meta: title Go Away}
 {meta: artist Ray Price}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file goawaylyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Go away can't you see I'm [G7]crying
@@ -22,3 +25,5 @@ But [D7]this foolish heart of mine might just weaken and give [G7]in
 So [C]go away I feel much safer [C7]when you're [F]gone
 Cause [G7]you're the one who [C]made me cry now let [F]me cry [C][G7]alone
 {end_of_verse}
+
+

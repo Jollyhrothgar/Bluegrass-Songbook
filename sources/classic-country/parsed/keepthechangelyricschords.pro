@@ -1,6 +1,9 @@
 {meta: title Keep The Change}
 {meta: artist George Jones}
 {meta: composer Billy Sherrill, Carmol Taylor, Monroe Fields}
+{meta: x_source classic-country}
+{meta: x_source_file keepthechangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was so good when he loved you
@@ -48,3 +51,10 @@ And I know she must have hurt you
 [D7]Once we have each [G]other
 [C]Change [D7]to m--e and keep the [G]change
 {end_of_verse}
+
+
+
+
+
+
+

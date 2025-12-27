@@ -1,6 +1,9 @@
 {meta: title Silence Is Golden}
 {meta: artist Bobby Bare}
 {meta: composer Jackson Brown}
+{meta: x_source classic-country}
+{meta: x_source_file silenceisgoldenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Silence is [G7]golden my [C]love 
@@ -28,3 +31,6 @@ That [C]you and [G7]I will never [C]part
 [F]Silence [C]please just [G7]let me hold you [C]dear 
 Silence is [G7]golden my [C]love
 {end_of_verse}
+
+
+

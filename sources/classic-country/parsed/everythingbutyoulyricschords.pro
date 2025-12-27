@@ -1,6 +1,9 @@
 {meta: title Everything But You}
 {meta: artist Willie Nelson}
 {meta: composer Hank Cochran and Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file everythingbutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a new car and it [G7]drives just like a [C]dream
@@ -29,3 +32,6 @@ Which [G7]reminds me there's a payment [C]overdue [C7]
 And they [F]say that I'm a man who's got [C]everything
 Yeah I've got [G7]everything  everything but [C]you 
 {end_of_verse}
+
+
+

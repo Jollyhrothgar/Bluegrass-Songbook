@@ -1,6 +1,9 @@
 {meta: title If You Think You're Lonely}
 {meta: artist Johnny Paycheck}
 {meta: composer Linda Buell, Carl Rupp, Larry Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouthinkyourelonelylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes it's me tonight alone and [G7]I'm sure missing [C]you
@@ -33,3 +36,7 @@ If you think you're [D7]lonely you should be here with [G]me
 {start_of_verse: Verse 5}
 Yes if you think you're [D7]lonely you should be here with [C]m-[G]e
 {end_of_verse}
+
+
+
+

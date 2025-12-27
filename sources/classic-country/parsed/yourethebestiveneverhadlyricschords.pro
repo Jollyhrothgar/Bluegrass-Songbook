@@ -1,5 +1,8 @@
 {meta: title You're The Best I've Never Had}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file yourethebestiveneverhadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At seven[G7]teen in [Am]faded [C]jeans [F]I was yours and you were [C]mine[G7]
@@ -27,3 +30,5 @@ You're the [G7]best I never [C]had [G7]   [Am]   [G7]
 [C]After [G7]all these years [C]you still [F]bring the [C]tears 
 You're the [G7]best I never [C]had
 {end_of_verse}
+
+

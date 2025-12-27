@@ -1,6 +1,9 @@
 {meta: title Till Something Better Comes Along}
 {meta: artist Charlie Walker}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file tillsomethingbettercomesalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't believe she [Em]loves me as [G]much as [D7]she lets [G]on 
@@ -22,3 +25,5 @@ I [D7]couldn't change the things I'd really like to [G]change [D7]
 By going [G]back the only [B7]thing I'd gain is [C]time 
 Because till [G]something better [D7]comes along she's [C]min[G]e
 {end_of_verse}
+
+

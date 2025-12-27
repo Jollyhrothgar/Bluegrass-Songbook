@@ -1,6 +1,9 @@
 {meta: title I’ll Be Walking The Floor This Christmas}
 {meta: artist Ernest Tubb}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file illbewalkingthefloorthisChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll be walking the floor this [F]Christmas
@@ -36,3 +39,7 @@ Deco[C]rating my [G7]tree with [C]tears
 I'll be walking the floor this [F]Christmas
 Like I’ve [C]done for [G7]so many [C]years
 {end_of_verse}
+
+
+
+

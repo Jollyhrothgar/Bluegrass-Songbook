@@ -1,6 +1,9 @@
 {meta: title Do What You Do Do Well}
 {meta: artist Sonny James}
 {meta: composer Ned Miller}
+{meta: x_source classic-country}
+{meta: x_source_file dowhatyoudodowelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He couldn't move a mountain 
@@ -58,3 +61,13 @@ And a mighty few words to say
 {start_of_verse: Verse 11}
 repeat chorus
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

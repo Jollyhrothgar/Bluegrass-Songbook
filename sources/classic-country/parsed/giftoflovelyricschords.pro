@@ -1,6 +1,9 @@
 {meta: title Gift Of Love}
 {meta: artist David Ball}
 {meta: composer Frank Dycus and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file giftoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard that nothing in life is free
@@ -48,3 +51,9 @@ An angle from a [D7]dream has set me free
 [G]An angle from a [D7]dream has set me free
 [A7]With a gift of [D7]love she gave to [G]me
 {end_of_verse}
+
+
+
+
+
+

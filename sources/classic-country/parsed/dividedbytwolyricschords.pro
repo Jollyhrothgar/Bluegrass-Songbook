@@ -1,6 +1,9 @@
 {meta: title Divided By Two}
 {meta: artist Kitty Wells}
 {meta: composer Red Wortham}
+{meta: x_source classic-country}
+{meta: x_source_file dividedbytwolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You slipped around [F]you played a [C]game 
@@ -36,3 +39,7 @@ After we've said I [G7]do
 The [C]vows that I made were [F]only for [C]one 
 Yours were [G7]divided by [C]two
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ann}
 {meta: artist Glen Campbell}
 {meta: composer Billy Ed Wheeler}
+{meta: x_source classic-country}
+{meta: x_source_file annlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know I'll never meet another hunk of woman like my [D7]Ann
@@ -41,3 +44,8 @@ And I feel like a dried up gourd in a holler
 {start_of_verse: Verse 6}
 [C]Oh no thanks Lord  [D7]I'll just keep [G]Ann
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Two Voices Two Shadows Two Faces}
 {meta: artist Jean Shepard}
 {meta: composer Ned Miller, Sue Miller, Kurt Hertha}
+{meta: x_source classic-country}
+{meta: x_source_file twovoicestwoshadowstwofaceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say you don't love her my [D7]darling
@@ -29,3 +32,6 @@
 [D7]Two voices two shadows two faces
 [G]Afraid to come out in the light
 {end_of_verse}
+
+
+

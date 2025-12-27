@@ -1,5 +1,8 @@
 {meta: title Nothing But Sweet Lies}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file nothingbutsweetlieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I watched as he held her and kissed her goodnight
@@ -28,3 +31,6 @@ It's only sweet lies she once told to [G]me
 [D7]Down with the others who never could see
 It's only sweet lies she once told to [G]me
 {end_of_verse}
+
+
+

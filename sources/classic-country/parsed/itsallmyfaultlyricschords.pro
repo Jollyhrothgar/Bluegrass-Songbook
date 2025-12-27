@@ -1,6 +1,9 @@
 {meta: title It's All My Fault}
 {meta: artist Terry Baucom}
 {meta: composer Doyle Lawson and Paul Humphries}
+{meta: x_source classic-country}
+{meta: x_source_file itsallmyfaultlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I left Minnesota on a cold December day
@@ -32,3 +35,6 @@ I wanna go back to the place where I last saw your face
 [G7]And the tears I cried and the heartaches are all my [C]fault
 [G7]Now the tears I cried and the heartaches are all my [C]fault
 {end_of_verse}
+
+
+

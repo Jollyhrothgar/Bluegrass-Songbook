@@ -1,6 +1,9 @@
 {meta: title If I'd Left It Up To You}
 {meta: artist Johnny Rodriguez}
 {meta: composer Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ifidleftituptoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You made plans to leave a [C]thousand time I [G]know
@@ -22,3 +25,5 @@
 [C]I wish I'd found a way to let you go [G]somehow
 [D7]If I'd left it up to you it would all be over [G]now
 {end_of_verse}
+
+

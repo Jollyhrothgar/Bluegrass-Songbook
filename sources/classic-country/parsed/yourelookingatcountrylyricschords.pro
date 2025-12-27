@@ -1,5 +1,8 @@
 {meta: title You're Looking At Country Lyrics Chords}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file yourelookingatcountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I like my loving done country style
@@ -52,3 +55,9 @@ I said a country boy
 [D7]If your eyes are on me
 [G]You're looking at country
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hey Miss Ruby}
 {meta: artist Conway Twitty}
 {meta: composer Conway Twitty and Jack Nance}
+{meta: x_source classic-country}
+{meta: x_source_file heymissrubylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got a gal Miss Ruby is her name (Ruby Ruby hey Miss Ruby)
@@ -45,3 +48,9 @@ Hey Miss Ruby don't you hear me calling you (Ruby Ruby hey Miss Ruby)
 {start_of_verse: Verse 7}
 Yeah Little Miss Ruby whoa Little Miss Ruby
 {end_of_verse}
+
+
+
+
+
+

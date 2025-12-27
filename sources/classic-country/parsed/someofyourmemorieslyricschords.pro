@@ -1,6 +1,9 @@
 {meta: title Some Of Your Memories}
 {meta: artist Wilburn Brothers}
 {meta: composer Johnny Russell and Vince Finneran}
+{meta: x_source classic-country}
+{meta: x_source_file someofyourmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can never remember the joy we once [G7]knew
@@ -28,3 +31,6 @@ I can't free myself from this [C7]prison of memories that [F]bind
 Some of your [C]memories [G7]hurt me all of the [C]time [F]
 Some of your [C]memories [G7]hurt me all of the [C]ti[F]me[C]
 {end_of_verse}
+
+
+

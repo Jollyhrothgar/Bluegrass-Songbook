@@ -1,5 +1,8 @@
 {meta: title Love That Can't Be}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file lovethatcantbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why does a man [F]hurt like [C]me
@@ -21,3 +24,5 @@ No [G7]answer to heartaches [F]they're in this as can [C]be
 And fools keep on [C7]comin' [F]it looks like to me
 [C]All for the [Am]sake of a [G7]love that can't [F]b--[C]e
 {end_of_verse}
+
+

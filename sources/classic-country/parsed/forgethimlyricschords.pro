@@ -1,6 +1,9 @@
 {meta: title Forget Him}
 {meta: artist Tommy Overstreet}
 {meta: composer Ricci Mareno and Charlie Black}
+{meta: x_source classic-country}
+{meta: x_source_file forgethimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see the look in your [F]eyes 
@@ -39,3 +42,7 @@ But he'll let you [C]down
 [G7]He'll break your heart if you [C]let him
 [G7]Baby please [C]forget him 
 {end_of_verse}
+
+
+
+

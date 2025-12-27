@@ -1,6 +1,9 @@
 {meta: title One Broken Heart}
 {meta: artist Ray Price}
 {meta: composer Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file onebrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One [A7]fallen leaf don’t mean it’s [D7]autumn 
@@ -22,3 +25,5 @@ You [D7]use him as a stepping stone [G7]into another’s heart
 To [A7]each new love a lot of pain [D7]is all you’ll ever bring
 It [G7]caused to you one broken heart just don’t mean a [C]thing
 {end_of_verse}
+
+

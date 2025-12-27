@@ -1,6 +1,9 @@
 {meta: title The Darker The Night The Better I See}
 {meta: artist The Gibson Brothers}
 {meta: composer Joe Newberry}
+{meta: x_source classic-country}
+{meta: x_source_file thedarkerthenightthebetteriseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve [G7]honky [C]tonked most [G7]all my [C]life
@@ -47,3 +50,9 @@ Cause the darker the [C]night the darker the [G7]night the better I [C]see
 {start_of_verse: Verse 5}
 [F]You heard me [C]right the darker the [G7]night the better I [C]see
 {end_of_verse}
+
+
+
+
+
+

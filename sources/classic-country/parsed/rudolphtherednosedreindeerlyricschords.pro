@@ -1,6 +1,9 @@
 {meta: title Rudolph The Red Nosed Reindeer}
 {meta: artist Gene Autry}
 {meta: composer Johnny Marks}
+{meta: x_source classic-country}
+{meta: x_source_file rudolphtherednosedreindeerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rudolph the red-nosed reindeer
@@ -38,3 +41,9 @@ As they shouted out with [G7]glee
 Rudolph the red-nosed reindeer
 You'll go down in [C]history
 {end_of_verse}
+
+
+
+
+
+

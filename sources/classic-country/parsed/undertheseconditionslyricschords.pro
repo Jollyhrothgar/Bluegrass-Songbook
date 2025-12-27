@@ -1,6 +1,9 @@
 {meta: title Under These Conditions}
 {meta: artist George Strait}
 {meta: composer Troy Seals, Ronnie McDowell, Joe Meador}
+{meta: x_source classic-country}
+{meta: x_source_file undertheseconditionslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh how I [D7]wish  [C]you could read my [G]mind
@@ -29,3 +32,6 @@ We're dealing with [C]emotions that's [A7]running wild to[D7]night
 A [C]man needs a [G]woman a [C]women needs a [G]man
 And under these [C]conditions [D7]hearts get out of [G]hand
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Without A Song}
 {meta: artist Willie Nelson}
 {meta: composer Billy Rose, Edward Eliscu, Vincent Youmans}
+{meta: x_source classic-country}
+{meta: x_source_file withoutasonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Without a [C]song the day would [F]never end
@@ -43,3 +46,8 @@ I'll never [C]know what makes the [F]grass so tall
 [A]I only [C]know [Am]there ain't no [Dm]love at all 
 [G7]Without a [C]song
 {end_of_verse}
+
+
+
+
+

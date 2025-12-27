@@ -1,6 +1,9 @@
 {meta: title Rest Awhile}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file restawhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Does anyone know of a girl who might [F]like
@@ -57,3 +60,10 @@ I'm [D7]sorry that I had to call you [G7]collect
 Your warm friendly town don't want my kind [F]around
 [G7]I guess I won't stop and rest awhile  and rest [C]awhile
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title One Night With You}
 {meta: artist Elvis Presley}
 {meta: composer Dave Bartholomew, Pearl King, Anita Steiman}
+{meta: x_source classic-country}
+{meta: x_source_file onenightwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]One night with [C]you
@@ -38,3 +41,9 @@ Is what I'm now praying [G7]for
 ,3,
 1
 {end_of_verse}
+
+
+
+
+
+

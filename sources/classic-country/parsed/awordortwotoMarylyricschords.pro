@@ -1,6 +1,9 @@
 {meta: title A Word Or Two To Mary}
 {meta: artist Charley Pride}
 {meta: composer Vance Bulla and Peter Cotton}
+{meta: x_source classic-country}
+{meta: x_source_file awordortwotoMarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A word or two to Mary please [F]write a letter for [C]me
@@ -40,3 +43,8 @@ And write a word or two to Mary [G7]as they [C]grow
 {start_of_verse: Verse 6}
 And write a word or two to [G7]Mary as they [C]grow
 {end_of_verse}
+
+
+
+
+

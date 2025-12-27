@@ -1,6 +1,9 @@
 {meta: title Stranger In My Arms}
 {meta: artist George Strait}
 {meta: composer Curtis Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file strangerinmyarmslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]stranger in my [G7]arms tonight
@@ -28,3 +31,6 @@ There's a [F]stranger [G7]in my arms [C]tonight
 {start_of_verse: Verse 4}
 There's a [F]stranger [G7]in my arms [C]tonight
 {end_of_verse}
+
+
+

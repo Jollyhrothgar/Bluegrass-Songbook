@@ -1,6 +1,9 @@
 {meta: title Love Me And Make It All Better}
 {meta: artist Jack Greene}
 {meta: composer Eddie Rabbitt}
+{meta: x_source classic-country}
+{meta: x_source_file lovemeandmakeitallbetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love me and make it all [Dm]better 
@@ -36,3 +39,7 @@ Cause all my [G7]doubt in you
 Kiss [A7]away [D7]these burning tears [Fm]
 Say you [G7]love me [C]again[F]   [C]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Why Do I Love You So}
 {meta: artist Johnny Tillotson}
 {meta: composer Clifford Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file whydoiloveyousolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ooo ooo ooo ooo [Em]ooo  [C]ooo ooo ooo ooo [D7]ooo
@@ -39,3 +42,9 @@
 [G]Ooo ooo ooo ooo [Em]ooo  [C]ooo ooo ooo ooo [D7]ooo
 [G]Ooo ooo [Em]ooo ooo [C]ooo [D7]ooo ooo [G]ooo [D7][G][C]o----o----o
 {end_of_verse}
+
+
+
+
+
+

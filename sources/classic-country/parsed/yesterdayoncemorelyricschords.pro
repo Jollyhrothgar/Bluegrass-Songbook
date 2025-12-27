@@ -1,6 +1,9 @@
 {meta: title Yesterday Once More}
 {meta: artist Moe Bandy}
 {meta: composer Jim Mundy and Peggy White}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdayoncemorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I love to [F]hear Hank Williams [C]sing
@@ -40,3 +43,8 @@ And there'll be Peace In The [D7]Valley [G7]someday
 {start_of_verse: Verse 6}
 Take me back to [G7]yesterday once [C]more
 {end_of_verse}
+
+
+
+
+

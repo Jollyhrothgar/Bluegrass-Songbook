@@ -1,6 +1,9 @@
 {meta: title Papa Noel}
 {meta: artist Brenda Lee}
 {meta: composer Roy Bodkin}
+{meta: x_source classic-country}
+{meta: x_source_file papanoellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey Beau let's go and get pirogue and push-pole down the bayou
@@ -43,3 +46,8 @@ See Ol' Quelqu'un and Mamoun [G7]Bébé and [C]Jo-Jo
 See Jolivet oh my sweet pet and get me some sugar
 Oh Santa Claus will come tonight [G7]down on the [C]bayou
 {end_of_verse}
+
+
+
+
+

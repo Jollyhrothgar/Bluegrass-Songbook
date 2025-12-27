@@ -1,6 +1,9 @@
 {meta: title I Just Had A Bar Of Soap}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Larry Kingston and Pete Drake}
+{meta: x_source classic-country}
+{meta: x_source_file ijusthadabarofsoaplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro: 
@@ -56,3 +59,10 @@ I'm [G7]gonna wash my big mouth out with [C]soap
 No Joe thanks [F]please no drinks
 I [G7]just had a bar of [C]soap
 {end_of_verse}
+
+
+
+
+
+
+

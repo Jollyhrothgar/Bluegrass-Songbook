@@ -1,6 +1,9 @@
 {meta: title Home Of The Blues}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash, Lily McAlpin, Glenn D. Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file homeoftheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Just around the corner [G7]there's [C]heartache
@@ -40,3 +43,8 @@ Oh [F]but the place is filled with the sweetest [C]memories
 {start_of_verse: Verse 5}
 Yeah you're gonna [F]find me at the Home [G7]of the [C]Blues
 {end_of_verse}
+
+
+
+
+

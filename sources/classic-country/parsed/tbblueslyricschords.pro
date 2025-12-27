@@ -1,6 +1,9 @@
 {meta: title T.B. Blues}
 {meta: artist Merle Haggard}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file tbblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My good gal's trying to make a fool out of me[C7]
@@ -37,3 +40,8 @@ I've got that old TB I can't eat a bite[C7]
 Got that [F]old TB I can't eat a [C]bite
 Got me [G7]worried so I can't even sleep at [C]night
 {end_of_verse}
+
+
+
+
+

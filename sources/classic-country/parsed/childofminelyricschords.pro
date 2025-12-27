@@ -1,6 +1,9 @@
 {meta: title Child Of Mine}
 {meta: artist Anne Murray}
 {meta: composer Gerry Goffin and Carole King}
+{meta: x_source classic-country}
+{meta: x_source_file childofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G][C]Although you see the world different than [D7]me
@@ -37,3 +40,7 @@
 [C]Child of mine [D7]child of [G]mine
 [C]Oh yes sweet darling so [D7]glad you are a child of [G]mine
 {end_of_verse}
+
+
+
+

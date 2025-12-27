@@ -1,6 +1,9 @@
 {meta: title I'd Like To Help You Out}
 {meta: artist Wanda Jackson}
 {meta: composer Larry Lee}
+{meta: x_source classic-country}
+{meta: x_source_file idliketohelpyououtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just as I expected here you are back at my door
@@ -34,3 +37,7 @@ I'd [G7]like to help you out mate which way did you come [C]in
 {start_of_verse: Verse 5}
 I'd [G7]like to help you out mate which way did you come [C]in
 {end_of_verse}
+
+
+
+

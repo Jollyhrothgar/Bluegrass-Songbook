@@ -1,5 +1,8 @@
 {meta: title If We Forget God}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file ifweforgetGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If we forget God  [F]Satan will [C]rule
@@ -33,3 +36,7 @@ And sin will cover the [D7]land and the [G7]sea
 If [C]we forget God  [F]Satan will [C]rule
 If we forget [G7]God our nation is [C]doomed [F]  [C]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Much Too Young To Die}
 {meta: artist Ray Price}
 {meta: composer Rusty Gabbard}
+{meta: x_source classic-country}
+{meta: x_source_file muchtooyoungtodielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh love me now will you honey time won’t wait for love nor money
@@ -29,3 +32,6 @@ Love me now cause I’m [G7]much too young to [C]die
 Take my [C]love don’t abuse it be my death if you refuse it
 Love me now cause I’m [G7]much too young to [C]die
 {end_of_verse}
+
+
+

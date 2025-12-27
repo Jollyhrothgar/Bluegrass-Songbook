@@ -1,6 +1,9 @@
 {meta: title The Man And Me And You}
 {meta: artist Gene Watson}
 {meta: composer Jeff Bates &amp; Kenny Beard}
+{meta: x_source classic-country}
+{meta: x_source_file themanandmeandyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wake up darling I've gotta [G7]go 
@@ -44,3 +47,7 @@ While I'm [C]working for the [G7]man and me and [C]you
 Down the [F]road of life [C]and highway [F]too 
 I'm just [C]working for the [G7]man and me and [C]you
 {end_of_verse}
+
+
+
+

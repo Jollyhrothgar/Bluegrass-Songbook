@@ -1,6 +1,9 @@
 {meta: title When Am I Ever Gonna Settle Down}
 {meta: artist Bobby Bare}
 {meta: composer John Lomax and Artie Large}
+{meta: x_source classic-country}
+{meta: x_source_file whenamievergonnasettledownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've walked the streets of [F]small Texas [C]towns
@@ -29,3 +32,6 @@ She didn't move me [Am]so I moved [G7]on
 For a [C]young man I [F]guess I've been [C]around
 But [F]when am I [C]ever [G7]gonna settle [Am]down [F]  [C]
 {end_of_verse}
+
+
+

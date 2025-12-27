@@ -1,5 +1,8 @@
 {meta: title It May Be Silly But Ain't It Fun}
 {meta: artist Little Jimmy Dickens}
+{meta: x_source classic-country}
+{meta: x_source_file itmaybesillybutaintitfunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I used to think that making love was foolish as could [D7]be
@@ -42,3 +45,8 @@ It beats picture shows and carnivals all rolled up into [G]one
 You hug awhile and you kiss awhile and you say I love you [D7]hon
 It may be silly but ain't it [G]fun
 {end_of_verse}
+
+
+
+
+

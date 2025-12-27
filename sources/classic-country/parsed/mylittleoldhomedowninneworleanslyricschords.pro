@@ -1,6 +1,9 @@
 {meta: title My Little Old Home Down In New Orleans}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file mylittleoldhomedowninneworleanslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never knew that the place I grew
@@ -37,3 +40,6 @@ In the sunny south where the black oil flows
 [G]And soon I'll be in the land of my [C]dreams
 [G]That's my little ole home [D7]down in New [G]Orleans
 {end_of_verse}
+
+
+

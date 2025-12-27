@@ -1,6 +1,9 @@
 {meta: title Don't Call Him a Cowboy}
 {meta: artist Conway Twitty}
 {meta: composer Debbie Hupp, Johnny MacRae, and Bob Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file dontcallhimacowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So you came from New York city
@@ -50,3 +53,9 @@ Until you've seen him [C]ride
 Cause a Stetson [G7]hat and those fancy boots
 Don't tell ya what's [C]inside no
 {end_of_verse}
+
+
+
+
+
+

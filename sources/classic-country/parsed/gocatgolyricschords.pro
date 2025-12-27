@@ -1,6 +1,9 @@
 {meta: title Go Cat Go}
 {meta: artist Norma Jean}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file gocatgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You don't want a home and a [F]family
@@ -33,3 +36,6 @@ But [F]that jukebox hurts my ears
 So [C]hit the road and [G7]go cat [C]go
 So hit the road and [G7]go cat [C]go
 {end_of_verse}
+
+
+

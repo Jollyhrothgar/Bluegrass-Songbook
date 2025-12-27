@@ -1,5 +1,8 @@
 {meta: title Country Boy}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file countryboylyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Country [F]boy ain't got no [C]shoes
@@ -82,3 +85,20 @@ When you get your rabbit you'll skin his hide
 [F]Country boy you got a lot to [C]lose
 [F]Country boy [G7]how I wish that I was in your [C]shoes
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

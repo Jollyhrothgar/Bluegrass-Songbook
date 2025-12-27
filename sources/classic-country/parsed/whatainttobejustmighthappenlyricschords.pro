@@ -1,6 +1,9 @@
 {meta: title What Ain't To Be Just Might Happen}
 {meta: artist Dolly Parton}
 {meta: composer Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file whatainttobejustmighthappenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've learned to live my life just a little bit lighter
@@ -43,3 +46,8 @@ Just turns your [G7]hair gray while you're [C]young
 Love can make you sing start [F]your hands a [C]clapping
 [F]What is to be will [C]be what ain't to [G7]be just might [C]happen
 {end_of_verse}
+
+
+
+
+

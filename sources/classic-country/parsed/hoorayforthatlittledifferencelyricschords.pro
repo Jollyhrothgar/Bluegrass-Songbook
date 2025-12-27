@@ -1,6 +1,9 @@
 {meta: title Hooray For That Little Difference}
 {meta: artist Johnny Horton}
 {meta: composer Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file hoorayforthatlittledifferencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well a long time ago in a foreign land
@@ -43,3 +46,8 @@ We got preacher gangsters and petty thieves
 [C]For that little difference
 [D7]I think it's here to [G]stay
 {end_of_verse}
+
+
+
+
+

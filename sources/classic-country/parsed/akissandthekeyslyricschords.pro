@@ -1,6 +1,9 @@
 {meta: title A Kiss And The Keys}
 {meta: artist Red Sovine}
 {meta: composer Bernard Spurlock}
+{meta: x_source classic-country}
+{meta: x_source_file akissandthekeyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Give me a kiss and the [G7]keys that's what ole Johnny [C]said
@@ -48,3 +51,9 @@
 {start_of_verse: Verse 7}
 [F]I'll be true [C]till I bring back your [G7]kiss and the [C]keys
 {end_of_verse}
+
+
+
+
+
+

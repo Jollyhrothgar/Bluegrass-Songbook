@@ -1,6 +1,9 @@
 {meta: title Miss Memory}
 {meta: artist Bobby Helms}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file missmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Miss memory [Am]   [D7]   [G]miss memory)[Am]   [D7]
@@ -30,3 +33,6 @@ Since [C]I [D7]found miss [G]memory ([C]I found miss [G]memory)
 And [G]I'm never [Em]lonely [Am]I'm never [D7]lonely
 Since [C]I [D7]found miss [G]memory ([C]I found miss [G]memory)
 {end_of_verse}
+
+
+

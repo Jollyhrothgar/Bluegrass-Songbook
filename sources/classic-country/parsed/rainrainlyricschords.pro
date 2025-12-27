@@ -1,6 +1,9 @@
 {meta: title Rain Rain}
 {meta: artist Wynn Stewart}
 {meta: composer Bobby Miller}
+{meta: x_source classic-country}
+{meta: x_source_file rainrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rain rain it keeps a falling down
@@ -48,3 +51,11 @@ Well I ain't got no money can't meet my honey
 Rain rain keeps on a falling
 [G]Beating on my tin roof falling on the ground
 {end_of_verse}
+
+
+
+
+
+
+
+

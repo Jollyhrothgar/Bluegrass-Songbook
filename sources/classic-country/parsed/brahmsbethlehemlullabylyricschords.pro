@@ -1,6 +1,9 @@
 {meta: title Brahms Bethlehem Lullaby}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid, Harold Reid, Jimmy Fortune}
+{meta: x_source classic-country}
+{meta: x_source_file brahmsbethlehemlullabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Long ago there was born In the City of [D7]David 
@@ -27,3 +30,6 @@ They will [C]guard Thee at [G]rest Thou shalt [D7]wake on her [G]breast
 Angels [C]sang at His [G]birth lulla[D7]by peace on [G]earth
 Angels [C]sang at His [G]birth lulla[D7]by peace on [G]earth
 {end_of_verse}
+
+
+

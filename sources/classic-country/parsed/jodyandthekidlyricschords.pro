@@ -1,6 +1,9 @@
 {meta: title Jody And The Kid}
 {meta: artist Roy Drusky}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file jodyandthekidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She would meet me in the morning on my way down to the river
@@ -43,3 +46,8 @@ And it makes the old folks smile to see her tag along beside me
 [Dm]But it gets a [G7]little lonesome when I [Dm]hear somebody [G7]saying
 [Dm]Looky yonder there goes [G7]Jody and the [C]kid
 {end_of_verse}
+
+
+
+
+

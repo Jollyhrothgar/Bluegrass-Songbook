@@ -1,6 +1,9 @@
 {meta: title Billy Christian}
 {meta: artist Statler Brothers}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file billychristianlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]If you're listenin' Billy Christian come on [G]home 
@@ -38,3 +41,9 @@ Does [D7]Billy Christian know he's welcome [G]home
 {start_of_verse: Verse 5}
 Go on [D7]home Billy Christian if you [G]care
 {end_of_verse}
+
+
+
+
+
+

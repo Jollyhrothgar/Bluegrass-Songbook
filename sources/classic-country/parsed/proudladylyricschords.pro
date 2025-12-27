@@ -1,6 +1,9 @@
 {meta: title Proud Lady}
 {meta: artist Bob Luman}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file proudladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They do their Sunday driving [F]out in the ritzy section
@@ -50,3 +53,8 @@ She's a [Dm]proud [F]lady
 And that [C]Sunday [G7]love he's making 
 Don't make him feel so [C]poor
 {end_of_verse}
+
+
+
+
+

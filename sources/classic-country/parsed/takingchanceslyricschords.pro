@@ -1,6 +1,9 @@
 {meta: title Taking Chances}
 {meta: artist Eddy Arnold}
 {meta: composer Lester Vanadore}
+{meta: x_source classic-country}
+{meta: x_source_file takingchanceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Taking chances with this heart each time I hold [C]you
@@ -22,3 +25,5 @@ Taking chances with these lips each time I tell [C]you
 [G]Knowing I might lose when you go to [C]choose
 [D7]But yet I stay around just taking [G]chances
 {end_of_verse}
+
+

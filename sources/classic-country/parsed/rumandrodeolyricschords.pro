@@ -1,5 +1,8 @@
 {meta: title Rum And Rodeo}
 {meta: artist Heather Myles}
+{meta: x_source classic-country}
+{meta: x_source_file rumandrodeolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walk through the door and never [F]realize
@@ -42,3 +45,8 @@ Too much rum and [F]rodeo
 You never spend one [F]night alone
 [G7]You got no home to [F]call your [C]own
 {end_of_verse}
+
+
+
+
+

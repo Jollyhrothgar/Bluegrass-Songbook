@@ -1,6 +1,9 @@
 {meta: title Loser Makin' Good}
 {meta: artist Red Sovine}
 {meta: composer Shirl Milete}
+{meta: x_source classic-country}
+{meta: x_source_file losermakingoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm a loser makin' good I always knew I [Dm]would
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [F]Just say here goes [G7]a loser a makin' [C]good
 {end_of_verse}
+
+
+
+

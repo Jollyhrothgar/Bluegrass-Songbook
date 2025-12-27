@@ -1,6 +1,9 @@
 {meta: title I Can't Control My Heart}
 {meta: artist Hank Snow}
 {meta: composer Mario DiNapoli and Lee Morris}
+{meta: x_source classic-country}
+{meta: x_source_file icantcontrolmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Though I should say goodbye to you 
@@ -47,3 +50,9 @@ But [C]you alone it's beating
 With [A7]all my soul 
 I [D7]can't control my [G]heart
 {end_of_verse}
+
+
+
+
+
+

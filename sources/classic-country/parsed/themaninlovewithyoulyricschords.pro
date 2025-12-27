@@ -1,6 +1,9 @@
 {meta: title The Man In Love With You}
 {meta: artist George Strait}
 {meta: composer Steve Dorff and Gary Hurju}
+{meta: x_source classic-country}
+{meta: x_source_file themaninlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm not the [Em]hero who will [Gm]always save the [C]day[C7]
@@ -34,3 +37,7 @@ I'll [Dm]always [C]be the [F]man in [D7]love [G7]with [C]you
 [Ebm]Someone [Db]there to [Eb]help you [F]make it [Bbm]through [Eb7]
 I'll [Ebm]always [Db]be the [A]man in [Ab7]love with [Db]you
 {end_of_verse}
+
+
+
+

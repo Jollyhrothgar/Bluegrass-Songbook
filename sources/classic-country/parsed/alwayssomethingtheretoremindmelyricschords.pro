@@ -1,6 +1,9 @@
 {meta: title Always Something There To Remind Me}
 {meta: artist Brenda Lee}
 {meta: composer Hal David and Burt Bacharach}
+{meta: x_source classic-country}
+{meta: x_source_file alwayssomethingtheretoremindmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walk along the city [C7]streets you used to [F]walk along with [Fm]me
@@ -33,3 +36,5 @@
 [C]When there is always [F]something there to remind [C]me
 [F]Always something there to remind [C]me
 {end_of_verse}
+
+

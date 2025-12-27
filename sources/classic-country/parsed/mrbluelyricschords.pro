@@ -1,6 +1,9 @@
 {meta: title Mr. Blue}
 {meta: artist Garth Brooks}
 {meta: composer Dewayne Blackwell}
+{meta: x_source classic-country}
+{meta: x_source_file mrbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Our guardian star lost all it's [Fm]glow 
@@ -43,3 +46,7 @@ I'm [G7]painting it [Em]too [G7]   [F]but I'm [G7]painting it [C]blue [Am]
 [Dm]Call me [G7]Mr. [C]Blue [Em]
 [Dm]Call [G7]me mister [C]blue
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Whatever's Left}
 {meta: artist Faron Young}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file whateversleftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She never was [D7]much when it [G]came to pre[G7]tendin'
@@ -45,3 +48,8 @@ Cause [C]whatever's [D7]left goes to [G]me
 Yes [C]that's when you [D7]best give your [G]soul to some[Em]body
 Cause [C]whatever's [D7]left goes to [G]me
 {end_of_verse}
+
+
+
+
+

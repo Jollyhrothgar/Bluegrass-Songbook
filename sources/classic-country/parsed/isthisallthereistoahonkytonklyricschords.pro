@@ -1,6 +1,9 @@
 {meta: title Is This All There Is To A Honky Tonk}
 {meta: artist Tony Booth}
 {meta: composer Robert Duncan and Donald Tunison}
+{meta: x_source classic-country}
+{meta: x_source_file isthisallthereistoahonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each and every night she sits [F]waiting
@@ -42,3 +45,8 @@ Is this all there is to a [F]honky tonk
 Just [G7]barstools and cheap California red [C]wine
 Just [G7]barstools and cheap California red [C]wine
 {end_of_verse}
+
+
+
+
+

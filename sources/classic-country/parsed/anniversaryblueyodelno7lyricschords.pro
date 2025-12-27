@@ -1,6 +1,9 @@
 {meta: title Anniversary Blue Yodel No. 7}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file anniversaryblueyodelno7lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was a stranger passing through your town
@@ -38,3 +41,8 @@ I'm just tellin' you the hard luck I've had
 [D7]Cause the blues ain't nothing
 [G]But a good man feeling bad
 {end_of_verse}
+
+
+
+
+

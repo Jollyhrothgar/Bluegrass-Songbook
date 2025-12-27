@@ -1,6 +1,9 @@
 {meta: title First And The Last Time}
 {meta: artist Jana Kramer}
 {meta: composer Skip Black, Jana Kramer, Jon Mark Nite}
+{meta: x_source classic-country}
+{meta: x_source_file firstandthelasttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've always had [C]one foot in and [F]one foot out [G7]door
@@ -35,3 +38,6 @@ That you [C]need me like you need [F]sunrise
 Like it's the first and the last 
 Like it’s the first and last [C]time
 {end_of_verse}
+
+
+

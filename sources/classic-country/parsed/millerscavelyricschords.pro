@@ -1,5 +1,8 @@
 {meta: title Millers Cave}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file millerscavelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Way down in  the [D7]state of [G]Georgia
@@ -42,3 +45,8 @@
 [G7]Most wanted man [C]in the state of [G]Georgia
 [D7]But they'll never find me cause I'm lost in Miller's [G]Cave
 {end_of_verse}
+
+
+
+
+

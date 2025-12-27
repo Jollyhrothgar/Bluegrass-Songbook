@@ -1,6 +1,9 @@
 {meta: title She Knows What She's Crying About}
 {meta: artist George Jones}
 {meta: composer John Riggs}
+{meta: x_source classic-country}
+{meta: x_source_file sheknowswhatshescryingaboutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You may think she ain't been true all those [F]things she's telling [C]you
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Yes she knows what she's crying [C]about
 {end_of_verse}
+
+
+
+

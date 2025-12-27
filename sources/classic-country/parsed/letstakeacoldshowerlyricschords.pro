@@ -1,6 +1,9 @@
 {meta: title Let's Take A Cold Shower}
 {meta: artist Vernon Oxford}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file letstakeacoldshowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someone told someone and [F]someone told [C]you
@@ -29,3 +32,6 @@ You can’t hear a word I’m saying in the mood that you’re [G7]in
 A [C]stone wall between us and [F]my so called [C]friends 
 Let’s take a cold shower and [G7]start over a[C]gain
 {end_of_verse}
+
+
+

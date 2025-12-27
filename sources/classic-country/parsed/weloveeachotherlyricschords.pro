@@ -1,6 +1,9 @@
 {meta: title We Love Each Other}
 {meta: artist Charlie Rich}
 {meta: composer Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file weloveeachotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They ask me how we do it and I [Am]tell them we [D7]love each other
@@ -29,3 +32,7 @@ When they [G]ask me how we do it I just [Am]tell them
 We [D7]love each other [G]so [E7]   [Am]
 We [G]love [D7]each other [G]so 
 {end_of_verse}
+
+
+
+

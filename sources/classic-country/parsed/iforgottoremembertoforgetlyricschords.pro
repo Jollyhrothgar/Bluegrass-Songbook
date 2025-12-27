@@ -1,6 +1,9 @@
 {meta: title I Forgot To Remember To Forget}
 {meta: artist Johnny Cash}
 {meta: composer Stan Kesler and Carl Feathers}
+{meta: x_source classic-country}
+{meta: x_source_file iforgottoremembertoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I forgot to remember to forget [D7]her
@@ -18,3 +21,4 @@ But something sure is [G]wrong
 Cause I'm so blue and [C]lonely
 I [G]forgot to [D7]remember to [G]forget
 {end_of_verse}
+

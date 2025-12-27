@@ -1,6 +1,9 @@
 {meta: title Love Love Love}
 {meta: artist Carl Smith}
 {meta: composer Ted Jarrett}
+{meta: x_source classic-country}
+{meta: x_source_file lovelovelovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I cry when you don't call
@@ -43,3 +46,8 @@ If you're trusting me well I'll do you right
 So [F]tell everybody I want the whole world to [C]know
 That I just love love love love love you [G7]I love you [C]so
 {end_of_verse}
+
+
+
+
+

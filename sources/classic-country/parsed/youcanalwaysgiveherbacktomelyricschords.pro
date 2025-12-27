@@ -1,6 +1,9 @@
 {meta: title You Can Always Give Her Back To Me}
 {meta: artist Wynn Stewart}
 {meta: composer Bobby Wayne and Sonny Ferguson}
+{meta: x_source classic-country}
+{meta: x_source_file youcanalwaysgiveherbacktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You've got a [C]problem cause you [F]now have my old [C]used-to-be
@@ -26,3 +29,6 @@ Yes you can [F]always [G7]give her back to [C]me
 {start_of_verse: Verse 4}
 You can [F]always [G7]give her back to [C]me
 {end_of_verse}
+
+
+

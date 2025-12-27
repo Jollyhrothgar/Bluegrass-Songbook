@@ -1,6 +1,9 @@
 {meta: title Warm Woman And Cold Champagne}
 {meta: artist Johnny Duncan}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file warmwomanandcoldchampagnelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I spent a lot of lonely nights when [C]she walked out the door
@@ -35,3 +38,7 @@ So give me [D7]warm women and lots of cold cham[G]pagne
 {start_of_verse: Verse 4}
 Just give me [D7]warm women and lots of cold cham[G]pagne
 {end_of_verse}
+
+
+
+

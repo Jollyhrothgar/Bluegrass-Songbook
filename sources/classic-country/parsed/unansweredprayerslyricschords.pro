@@ -1,6 +1,9 @@
 {meta: title Unanswered Prayers}
 {meta: artist Garth Brooks}
 {meta: composer Pat Alger, Larry Bastian, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file unansweredprayerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just the other night at a [F]hometown football game
@@ -46,3 +49,8 @@ Some of [C]God's greatest [Am]gifts [Dm]are un[G]answered
 Some of [C]God's greatest [Am]gifts are all too [Dm]often un[G]answered
 Some of [C]God's greatest [Am]gifts [Dm]are un[G]answered [C]prayers [F]  [G]  [C]
 {end_of_verse}
+
+
+
+
+

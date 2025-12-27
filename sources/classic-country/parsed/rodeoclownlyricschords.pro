@@ -1,5 +1,8 @@
 {meta: title Rodeo Clown}
 {meta: artist Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file rodeoclownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well they paved the road to Hollywood with promises and [D7]lies
@@ -48,3 +51,9 @@ Lord I'd rather be a rodeo [G]clown
 I'd rather help somebody up than put somebody [D7]down
 What I'd give to be a rodeo [G]clown
 {end_of_verse}
+
+
+
+
+
+

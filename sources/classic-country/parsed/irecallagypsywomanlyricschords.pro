@@ -1,6 +1,9 @@
 {meta: title I Recall A Gypsy Woman}
 {meta: artist Don Williams}
 {meta: composer Bob McDill and Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file irecallagypsywomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Silver coins that [C]jingle [G]jangle  fancy shoes that dance in [D7]time
@@ -25,3 +28,6 @@
 [C]I recall  a gypsy [G]woman  silver spangles in her [D7]eyes
 [G]Ivory [C]skin  against [G]the moonlight and the [D7]taste of life's sweet [G]wine
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Bubbling Over}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file bubblingoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're the one that puts the sparkle [F]in my [C]eyes
@@ -32,3 +35,6 @@ Oh and I'm [F]so happy loving you that [C]anyone can [F]see
 That I'm [C]bubbling ov-[F]er [C]bubbling ov-[F]er
 [C]Bubbling ov-er be[G7]cause you love [C]me
 {end_of_verse}
+
+
+

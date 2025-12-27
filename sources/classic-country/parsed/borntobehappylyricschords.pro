@@ -1,6 +1,9 @@
 {meta: title Born To Be Happy}
 {meta: artist Hank Snow}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file borntobehappylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Born to be happy but [G7]always so [C]sad
@@ -22,3 +25,5 @@ Born to be [G]happy but [D7]lost without [G]you
 [G]Born to be lucky but I [G7]always [C]lose
 Born to be [G]happy but [D7]lost without [G]you
 {end_of_verse}
+
+

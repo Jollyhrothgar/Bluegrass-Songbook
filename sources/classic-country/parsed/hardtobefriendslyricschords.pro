@@ -1,6 +1,9 @@
 {meta: title Hard To Be Friends}
 {meta: artist Kris Kristofferson}
 {meta: composer Larry Murray}
+{meta: x_source classic-country}
+{meta: x_source_file hardtobefriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's so hard to be friends
@@ -35,3 +38,7 @@ Too [G7]late too [F]late to be [C]mended
 It's so hard to be friends
 When it was so [F]easy to be [C]lovers
 {end_of_verse}
+
+
+
+

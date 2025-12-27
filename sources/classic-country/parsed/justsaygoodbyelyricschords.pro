@@ -1,6 +1,9 @@
 {meta: title Just Say Goodbye}
 {meta: artist Ricky Van Shelton}
 {meta: composer Byron Hill and Joe Chambers}
+{meta: x_source classic-country}
+{meta: x_source_file justsaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you won't see me on my knees
@@ -46,3 +49,8 @@ You got no reason for telling [F]lies
 [C]If you wanna go just [G7]say good[C]bye
 If you wanna go just [G7]say good[C]bye
 {end_of_verse}
+
+
+
+
+

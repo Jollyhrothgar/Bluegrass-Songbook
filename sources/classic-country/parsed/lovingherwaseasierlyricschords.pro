@@ -1,6 +1,9 @@
 {meta: title Loving Her Was Easier}
 {meta: artist Bobby Bare}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file lovingherwaseasierlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have seen the morning burning [F]golden on the mountain in the [C]sky
@@ -24,3 +27,5 @@ I [F]don't know the answer to the easy way she opened every door in my [C]mind
 But dreaming was as easy as [F]believing it was never gonna [C]end
 And loving her was easier than [G7]anything I'll ever do [C]again
 {end_of_verse}
+
+

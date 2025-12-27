@@ -1,6 +1,9 @@
 {meta: title It's Me Again Lord}
 {meta: artist J.D. Crowe}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file itsmeagainlordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Troubles come and [C]I can't find an [G]answer
@@ -36,3 +39,7 @@ It's me again Lord I've got a problem I can't [D7]solve
 Well [G]I don't mean to worry you but [C]here I am facing something new 
 And [G]I need help that only comes from You  [D7]it's me again [G]Lord 
 {end_of_verse}
+
+
+
+

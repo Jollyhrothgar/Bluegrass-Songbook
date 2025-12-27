@@ -1,6 +1,9 @@
 {meta: title Home Improvement}
 {meta: artist George Strait}
 {meta: composer Dana Hunt and Tim Rouillier}
+{meta: x_source classic-country}
+{meta: x_source_file homeimprovementlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The walls that surround us are slowly crumbling down
@@ -39,3 +42,7 @@ Let the neighbors think we moved away or forgot to pay the rent
 There ain't nothing wrong with this old house
 It just needs a little home im[C]provement
 {end_of_verse}
+
+
+
+

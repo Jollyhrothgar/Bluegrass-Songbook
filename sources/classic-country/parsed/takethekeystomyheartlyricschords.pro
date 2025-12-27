@@ -1,6 +1,9 @@
 {meta: title Take The Keys To My Heart}
 {meta: artist Garth Brooks}
 {meta: composer Pamela Wolfe, Benita Hill, Tommy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file takethekeystomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've been [C]out on this highway of heartache
@@ -41,3 +44,8 @@ Drop the [C]keys to my [F]heart and I'll drive you [C]home
 Baby make my motor yearn I [A#7]long to [F]feel that rubber burn
 Take the [C]keys to my [F]heart and drive it [C]home   [F]drive it [C]home
 {end_of_verse}
+
+
+
+
+

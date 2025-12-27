@@ -1,5 +1,8 @@
 {meta: title Down Along The Bayou Country}
 {meta: artist Ricky Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file downalongthebayoucountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was down along the Bayou country
@@ -76,3 +79,18 @@ You see I robbed a bank and shot a [G7]man
 Their gonna hang me tomorrow I wish I could borrow
 My life to live over [C]again
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

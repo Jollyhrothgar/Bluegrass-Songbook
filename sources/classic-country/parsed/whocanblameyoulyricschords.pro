@@ -1,6 +1,9 @@
 {meta: title Who Can Blame You}
 {meta: artist Alison Krauss}
 {meta: composer Ron Block}
+{meta: x_source classic-country}
+{meta: x_source_file whocanblameyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who can blame you though your [G7]heart's untrue
@@ -48,3 +51,9 @@ Though your [F]heart is un[G7]true who can [C]blame you
 [G7]You turn your [C]head from the [G7]tears I've shed
 Though your [F]heart is un[G7]true who can [C]blame you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If I Cried Every Time You Hurt Me}
 {meta: artist Wanda Jackson}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file ificriedeverytimeyouhurtmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I'd cried   every time  [C7]you hurt [F]me 
@@ -29,3 +32,6 @@ My [G7]tears won't flow and my head won't [C]bow
 If I'd cry every [C7]time you hurt [F]me 
 I'd be [G7]cryin' all the [C]time
 {end_of_verse}
+
+
+

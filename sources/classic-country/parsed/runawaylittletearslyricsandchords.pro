@@ -1,6 +1,9 @@
 {meta: title Run Away Little Tears}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file runawaylittletearslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Run away little [C]tears   [D7]you've been locked up too [G]long
@@ -30,3 +33,8 @@ Run away little [C]tears  [D7]our baby's [G]gone
 {start_of_verse: Verse 6}
 Run away little [C]tears  [D7]our baby's [G]gone
 {end_of_verse}
+
+
+
+
+

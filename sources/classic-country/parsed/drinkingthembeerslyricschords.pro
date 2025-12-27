@@ -1,6 +1,9 @@
 {meta: title Drinking Them Beers}
 {meta: artist Tompall Glaser}
 {meta: composer Bill Chappell}
+{meta: x_source classic-country}
+{meta: x_source_file drinkingthembeerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I had a little talk with myself
@@ -51,3 +54,9 @@ Wasting time yours and mine
 And [D7]wasted time can make a man grow old
 A man grow [G]old
 {end_of_verse}
+
+
+
+
+
+

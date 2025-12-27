@@ -1,6 +1,9 @@
 {meta: title It's Still There}
 {meta: artist Charlie Walker}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file itsstilltherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's still there it's still [F]there
@@ -48,3 +51,8 @@ It's not [C]fair cause [G7]you're not [C]here
 It's still there it's still [F]there
 All the [C]pain of losing you [G7]it's still [C]there
 {end_of_verse}
+
+
+
+
+

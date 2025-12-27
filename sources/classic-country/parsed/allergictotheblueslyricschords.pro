@@ -1,6 +1,9 @@
 {meta: title Allergic To The Blues}
 {meta: artist Randy Travis}
 {meta: composer Alan Jackson and Jim McBride}
+{meta: x_source classic-country}
+{meta: x_source_file allergictotheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I hid your car keys honey [C]yes I hid your suitcase
@@ -35,3 +38,7 @@ So 'till [G]they find some injection to [C]calm that love rejection
 {start_of_verse: Verse 4}
 [D7]I'm allergic to the [G]blues
 {end_of_verse}
+
+
+
+

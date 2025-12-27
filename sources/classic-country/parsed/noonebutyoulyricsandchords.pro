@@ -1,6 +1,9 @@
 {meta: title No One But You}
 {meta: artist Kitty Wells and Red Foley}
 {meta: composer Eddie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file noonebutyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now when I'm by myself dear [F]who do I want near
@@ -29,3 +32,6 @@ And [C]then I'll have you for my very [G7]own
 I'm [C]not plannin' to be hasty [F]but maybe someday baby
 I'll have [C]you [G7]no one but [C]you
 {end_of_verse}
+
+
+

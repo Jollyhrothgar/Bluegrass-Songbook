@@ -1,5 +1,8 @@
 {meta: title I’ll Take Care Of You}
 {meta: artist Kathy Mattea}
+{meta: x_source classic-country}
+{meta: x_source_file illtakecareofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If this life should lead you down a lonely [F]road
@@ -21,3 +24,5 @@ I'll take care of you every night and every [F]day
 Hand in hand together every step along the [F]way
 Without [C]a doubt [D7]darling you will [G7]know
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Somewhere Between Love And Tomorrow}
 {meta: artist Roy Clark}
 {meta: composer Bud Reneau and Thomas Lazaros}
+{meta: x_source classic-country}
+{meta: x_source_file somewherebetweenloveandtomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You gave your love [C][G7]completely 
@@ -36,3 +39,7 @@ After [F]all the [G7]love [C]we [G7]knew
 But [C]somewhere between [Em]love [F]and [C]tomorrow 
 [G7]I fell in love with [C]you
 {end_of_verse}
+
+
+
+

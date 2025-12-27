@@ -1,5 +1,8 @@
 {meta: title A Message From The Trade Winds}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file amessagefromthetradewindslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The lights were burning low and Mister Midnight [C]made his [G]way
@@ -28,3 +31,6 @@
 [G]But instead I'll ask each little star to guide your [C]ship back [G]home
 [A7]So keep on shining though [D7]I'm pining silvery [G]moon
 {end_of_verse}
+
+
+

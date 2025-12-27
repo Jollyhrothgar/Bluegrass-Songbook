@@ -1,6 +1,9 @@
 {meta: title Homecoming '63}
 {meta: artist Keith Whitley}
 {meta: composer Dean Dillon and Royce Porter}
+{meta: x_source classic-country}
+{meta: x_source_file homecoming63lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Homecoming '63 I was [Am]so proud you went with me
@@ -40,3 +43,7 @@ You went [Am]home with the love you gave to me
 Turned me [D7]on to ecstasy 
 [G7]Homecoming '6[C]3
 {end_of_verse}
+
+
+
+

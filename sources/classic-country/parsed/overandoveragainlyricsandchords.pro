@@ -1,6 +1,9 @@
 {meta: title Over And Over Again}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file overandoveragainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Over and over I've [C]said that we’re all through
@@ -22,3 +25,5 @@ And told my heart forget what might have [D7]been
 No matter [C]what I'd do I can't [G]get over you
 I love you [D7]over and over [G]again
 {end_of_verse}
+
+

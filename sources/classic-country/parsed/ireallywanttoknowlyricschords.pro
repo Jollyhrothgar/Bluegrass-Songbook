@@ -1,6 +1,9 @@
 {meta: title I Really Want To Know}
 {meta: artist Faron Young}
 {meta: composer Wanda Alley}
+{meta: x_source classic-country}
+{meta: x_source_file ireallywanttoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once your love was [F]mine and that was [G7]not too long [C]ago
@@ -30,3 +33,6 @@
 [F]Cause love can be a searchin' [C]thing
 [D7]And I really [G7]want to [C]know
 {end_of_verse}
+
+
+

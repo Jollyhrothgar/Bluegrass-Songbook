@@ -1,6 +1,9 @@
 {meta: title Winds Of Yesterday}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file windsofyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes at night [F]when I'm all [C]alone 
@@ -37,3 +40,7 @@ I remember the words to each [G7]song
 When the winds of [F]yester[C]day [G7]blow on [C]me 
 When the winds of [F]yester[C]day [G7]blow on [C]me 
 {end_of_verse}
+
+
+
+

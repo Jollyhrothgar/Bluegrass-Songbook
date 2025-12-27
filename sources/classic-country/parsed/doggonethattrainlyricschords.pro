@@ -1,5 +1,8 @@
 {meta: title Doggone That Train}
 {meta: artist Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file doggonethattrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I took my girl to the depot put her on a north bound [C7]train
@@ -30,3 +33,6 @@
 [C]May-be [G7]someday [C]she'll [C7]catch a southbound [F]train
 [G7]And come back to me [C]again
 {end_of_verse}
+
+
+

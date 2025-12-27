@@ -1,6 +1,9 @@
 {meta: title God’s Plan}
 {meta: artist Daniel O’Donnell}
 {meta: composer Derek Andrew Ryan}
+{meta: x_source classic-country}
+{meta: x_source_file godsplanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We all set out to [C]find true [G]love
@@ -36,3 +39,7 @@ It's [C]all part of God's [G]plan my love
 We'll [D7]weather the storms in [Em]each other's [C]arms
 [Am]Living for[D7]ever God's [C]plan[G]  [Am]   [G]
 {end_of_verse}
+
+
+
+

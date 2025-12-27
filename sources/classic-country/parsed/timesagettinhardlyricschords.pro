@@ -1,6 +1,9 @@
 {meta: title Time's A Gettin' Hard Lyrics and Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Red Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file timesagettinhardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Time's a gettin' [F]hard boys [G7]money's gettin' [C]scarce
@@ -36,3 +39,9 @@ Say goodbye to [F]everyone [G7]goodbye to every[C]one
 Take my true love [F]by her hand [G7]lead her through the [C]town
 Say goodbye to [F]everyone [G7]goodbye to every[C]one
 {end_of_verse}
+
+
+
+
+
+

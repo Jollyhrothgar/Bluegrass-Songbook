@@ -1,6 +1,9 @@
 {meta: title Keeping Up With The Joneses}
 {meta: artist Faron Young}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file keepingupwiththejoneseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the Joneses [G7]bought a new house we [C]did too
@@ -34,3 +37,7 @@ Don't you [F]wish that the [G7]Joneses would [C]cry
 Yes we [F]had to keep [G7]up with the [C]Joneses 
 [F]Oh don’t you [C]wish that the [G7]Joneses would [C]cry
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Going Home}
 {meta: artist Hank Williams}
 {meta: composer Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file imgoinghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my work here is o'er
@@ -39,3 +42,7 @@ When my life here is o'er I'm going [G7]home
 [C]Won't it be so sweet to [F]rest at Jesus' [C]feet
 When my life here is [G7]o'er I'm going [C]home
 {end_of_verse}
+
+
+
+

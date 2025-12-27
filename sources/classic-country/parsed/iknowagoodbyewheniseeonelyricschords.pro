@@ -1,6 +1,9 @@
 {meta: title I Know A Goodbye When I See One}
 {meta: artist Wilburn Brothers}
 {meta: composer Glenn A. Worf}
+{meta: x_source classic-country}
+{meta: x_source_file iknowagoodbyewheniseeonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There at first we seemed so right for each [D7]other
@@ -34,3 +37,7 @@ And you sure look like a [D7]goodbye to [G]me
 {start_of_verse: Verse 4}
 And [C]when I look into your eyes [D7]goodbye is all I [G]see
 {end_of_verse}
+
+
+
+

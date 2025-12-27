@@ -1,6 +1,9 @@
 {meta: title I'd Like To Sleep Till I Get Over You}
 {meta: artist Freddie Hart}
 {meta: composer Roger Bowling}
+{meta: x_source classic-country}
+{meta: x_source_file idliketosleeptilligetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I'd like to [C]sleep till [G7]I get [C]over [G7]you
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 5}
 [F]I'd like to [C]sleep till [G7]I get over [C][F]you
 {end_of_verse}
+
+
+
+

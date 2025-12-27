@@ -1,5 +1,8 @@
 {meta: title Silence In The Wind}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file silenceinthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now the storm is almost [F]over
@@ -66,3 +69,14 @@ Has love gone beyond our finding
 [F]There's a silence in the [C]wind
 [F]There's a silence in the [C]wind
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

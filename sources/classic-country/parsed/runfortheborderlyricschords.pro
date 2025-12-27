@@ -1,6 +1,9 @@
 {meta: title Run For The Border}
 {meta: artist Johnny Rodriguez}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file runfortheborderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A hundred dollars over the border
@@ -71,3 +74,12 @@ Jose will never under[C]stand
 Better find a [F]place to hide 
 On the [G7]other side of the Rio [C]Grande
 {end_of_verse}
+
+
+
+
+
+
+
+
+

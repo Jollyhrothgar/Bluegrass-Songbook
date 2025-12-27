@@ -1,5 +1,8 @@
 {meta: title Did You Darling}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file didyoudarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A friend told me [G7]that he saw [C]you
@@ -21,3 +24,5 @@
 [F]I love you too much to believe a careless [C]rumor
 [G7]Still I wonder darling did [C]you
 {end_of_verse}
+
+

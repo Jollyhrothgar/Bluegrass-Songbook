@@ -1,6 +1,9 @@
 {meta: title Four Poster Bed}
 {meta: artist Brenda Lee}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file fourposterbedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was just some boards of rough cut pine 
@@ -133,3 +136,28 @@ To that [D7]big four poster [G]bed
 Cause only love has ever touched
 That [D7]big four poster [G]bed
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

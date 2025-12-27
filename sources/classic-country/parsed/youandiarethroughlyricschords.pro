@@ -1,6 +1,9 @@
 {meta: title You And I Are Through}
 {meta: artist Buddy Holly}
 {meta: composer Bob Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file youandiarethroughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You said that you were [B7]leaving me
@@ -52,3 +55,10 @@ You [G]loved me but I [B7]just don't care
 About the [E7]new love that I'll share
 [A7]And you and [D7]I are [G]through
 {end_of_verse}
+
+
+
+
+
+
+

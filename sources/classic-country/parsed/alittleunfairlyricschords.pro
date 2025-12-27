@@ -1,6 +1,9 @@
 {meta: title A Little Unfair}
 {meta: artist Lefty Frizzell}
 {meta: composer Hank Cochran and Chuck Howard}
+{meta: x_source classic-country}
+{meta: x_source_file alittleunfairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You want me to love just you while you love your [D7]share
@@ -32,3 +35,6 @@
 [C]You want me to wait for you till you decide to [D7]care
 [G7]Ain't that being a little [C]unfair
 {end_of_verse}
+
+
+

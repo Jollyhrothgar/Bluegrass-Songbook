@@ -1,5 +1,8 @@
 {meta: title Backwoods Barbie}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file backwoodsbarbielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I grew up poor and ragged just a simple country [C]girl
@@ -40,3 +43,8 @@
 [C]I'm just a backwoods [G]Barbie just [D7]asking for a [C]chance
 [G]Just a backwoods Barbie
 {end_of_verse}
+
+
+
+
+

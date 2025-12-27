@@ -1,6 +1,9 @@
 {meta: title Unforgotten Man}
 {meta: artist Wynn Stewart}
 {meta: composer Cliff Massey and Tommy Crelila}
+{meta: x_source classic-country}
+{meta: x_source_file unforgottenmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She remembers his first kiss  [G7]the night of the [C]dance
@@ -25,3 +28,5 @@
 [G]Cause I'm the one in her [D7]dreams I'm her unforgotten [G7][G]man
 [C]Yes I'm the [G]one in her dreams [D7]I'm her unforgotten [G][F][D]man
 {end_of_verse}
+
+

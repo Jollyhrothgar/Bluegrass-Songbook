@@ -1,6 +1,9 @@
 {meta: title Christmas In Your Arms}
 {meta: artist Alabama}
 {meta: composer Bill Anderson and Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasinyourarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All my friends are asking me [F]where I plan to spend the holi[C]days
@@ -38,3 +41,7 @@ As long as I spend Christmas in your [C]arms
 I don't [Gm]care where I spend [G7]Christmas 
 As long as I spend Christmas in your [C]arms
 {end_of_verse}
+
+
+
+

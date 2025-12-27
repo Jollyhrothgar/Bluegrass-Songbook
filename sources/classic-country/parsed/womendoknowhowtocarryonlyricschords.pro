@@ -1,6 +1,9 @@
 {meta: title Women Do Know How To Carry On}
 {meta: artist Waylon Jennings}
 {meta: composer Waylon Jennings and Bobby Emmons}
+{meta: x_source classic-country}
+{meta: x_source_file womendoknowhowtocarryonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Women Do Know How To Carry On
@@ -40,3 +43,8 @@ They'll be right back putting me and [F]make up on
 [C]They'll be right back putting me and [F]make up on
 [C]Women do know [G7]how to carry [C]on
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It Ain't That Way}
 {meta: artist George Hamilton IV}
 {meta: composer Dale Siegenthaler}
+{meta: x_source classic-country}
+{meta: x_source_file itaintthatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd like to think the world's a better place
@@ -48,3 +51,9 @@ But it ain't that [G7]way no it ain't that [C]way
 Maybe if we all join hands and pray
 It'll be that [G7]way it'll be that [C]way
 {end_of_verse}
+
+
+
+
+
+

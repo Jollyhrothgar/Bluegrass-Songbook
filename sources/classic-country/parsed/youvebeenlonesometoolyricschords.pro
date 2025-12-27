@@ -1,6 +1,9 @@
 {meta: title You've Been Lonesome Too}
 {meta: artist Alan Jackson}
 {meta: composer Hank Williams and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file youvebeenlonesometoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If your heart has known such pain
@@ -57,3 +60,10 @@ There's [C7]no one else for [F]you
 Then you can't ever [C]hide from fate
 Yes you've been [G7]lonesome [C]too
 {end_of_verse}
+
+
+
+
+
+
+

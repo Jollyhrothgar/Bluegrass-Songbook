@@ -1,5 +1,8 @@
 {meta: title Pay No Attention To Alice}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file paynoattentiontoalicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Spoken:
@@ -44,3 +47,8 @@ I know [G]Ben down at the Shell [D7]Station he'll get it [G]out
 I [G]swear woman you're gonna [D7]burn down the house
 [G]Pay no attention to [C]Alice she's [G]drunk all the time
 {end_of_verse}
+
+
+
+
+

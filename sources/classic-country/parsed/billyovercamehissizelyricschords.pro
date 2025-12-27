@@ -1,5 +1,8 @@
 {meta: title Billy Overcame His Size}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file billyovercamehissizelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Billy never made the football team
@@ -65,3 +68,13 @@ But on the other hand his brother Bill
 [C]When he died to save those other [G7]men
 [C]Billy overcame his size
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Caught In The Middle Of Two Hearts}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file caughtinthemiddleoftwoheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve been [D7]living a [G]double life
@@ -36,3 +39,7 @@ Well I knew it was [D7]over at a [G]glance
 [C]Caught in the [D7]middle of [G]two hearts
 One will break and [D7]I know I’m to [G]blame
 {end_of_verse}
+
+
+
+

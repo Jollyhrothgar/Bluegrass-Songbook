@@ -1,6 +1,9 @@
 {meta: title A Little Good News}
 {meta: artist Anne Murray}
 {meta: composer Charles Black, Rory Bourke, and Thomas Rocco}
+{meta: x_source classic-country}
+{meta: x_source_file alittlegoodnewslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I rolled out this morning kids had the morning news show [F]on
@@ -43,3 +46,8 @@ And how we [Am]cleaned up the air how everybody learned to [F]care
 [C]Nobody fired a shot in anger nobody had to die in [F]vain
 [C]We sure could use a [G7]little good news [C]today
 {end_of_verse}
+
+
+
+
+

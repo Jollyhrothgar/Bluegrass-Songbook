@@ -1,6 +1,9 @@
 {meta: title We're Gonna Make It All The Way}
 {meta: artist Barbara Mandrell}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file weregonnamakeitallthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They said I'd never [D7]settle down they [C]warned you of my [G]past
@@ -36,3 +39,8 @@ We're gonna walk on our [G]right side [C]live and love every [G]day
 {start_of_verse: Verse 6}
 Yes we're [A7]gonna [D7]make it all the [G]way
 {end_of_verse}
+
+
+
+
+

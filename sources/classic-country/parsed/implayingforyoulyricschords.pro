@@ -1,6 +1,9 @@
 {meta: title I'm Playing For You}
 {meta: artist Ronnie Milsap}
 {meta: composer Keith Stegall and Lewis Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file implayingforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The show is over the [F]footlights are dim
@@ -40,3 +43,8 @@ I'm [C]playing for [Am]you [G7]I'm playing for [C]you
 {start_of_verse: Verse 6}
 [F]I'm playing for [C]you  [F]I'm playing for [C]you
 {end_of_verse}
+
+
+
+
+

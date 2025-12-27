@@ -1,6 +1,9 @@
 {meta: title As If I Didn't Know}
 {meta: artist Lee Greenwood}
 {meta: composer Mel Tillis and Hal Bynum}
+{meta: x_source classic-country}
+{meta: x_source_file asifididntknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't have to [F]read be[G7]tween the [C]lines
@@ -41,3 +44,8 @@ I'll keep on [C]loving you as if [G7]I didn't [C]know
 [Am]I'll go on pre[F]tending that our [C]love is never [F]ending[G]
 I'll keep on [C]loving you as if [G7]I didn't [C]know[F]  [C]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Want To Be Wanted}
 {meta: artist Brenda Lee}
 {meta: composer Kim Gannon, Giuseppe Spotti, Alberto Testa}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttobewantedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Wanted [Em]wanted) [Am]   [D7]
@@ -31,3 +34,6 @@ Someone I [C]know I'd love to spend a [Em]million [G]years [F]with
 [G]Where is this [Em]someone somewhere [Am]meant [D7]for [G]me
 (Someone [Em]somewhere) [Am]meant [D7]for [G]me
 {end_of_verse}
+
+
+

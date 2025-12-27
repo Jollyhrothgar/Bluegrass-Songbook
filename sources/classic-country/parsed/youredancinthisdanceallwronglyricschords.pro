@@ -1,6 +1,9 @@
 {meta: title You're Dancin' This Dance All Wrong}
 {meta: artist George Strait}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file youredancinthisdanceallwronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]As I [C]waltz in the arms of [Dm]somebody new
@@ -36,3 +39,7 @@ Keep [Fm]dancin' this [G7]dance all [C]wrong
 [F]I'm finding I'm [G7]falling as the [Dm]music plays [G7]on
 Keep [Fm]dancin' this [G7]dance all [C]wrong
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Just Don't Understand}
 {meta: artist Willie Nelson}
 {meta: composer Willie Nelson, Kent Westberry, Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file ijustdontunderstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd be the last one to tell you that you shouldn't [G7]go
@@ -29,3 +32,6 @@
 [C7]But that's all over now there's nothing left [F]to do
 [C]But do you mind too [G7]much if I don't [C]understand
 {end_of_verse}
+
+
+

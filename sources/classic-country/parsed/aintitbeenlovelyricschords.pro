@@ -1,6 +1,9 @@
 {meta: title Ain't It Been Love}
 {meta: artist Vern Gosdin}
 {meta: composer Fred Koller and Jack Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file aintitbeenlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't it been good [F]what we had [C]together
@@ -33,3 +36,7 @@ Oh what a [F]feeling knowing you [C]need me
 {start_of_verse: Verse 4}
 [F]Ain't it been [C]good ain't it been [G7]real ain't it been [C]love
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Bottle The Glass And Me}
 {meta: artist Jerry Wallace}
 {meta: composer Gloria McMurtry}
+{meta: x_source classic-country}
+{meta: x_source_file thebottletheglassandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello bottle hello [F]glass nice to see [C]you once again
@@ -26,3 +29,6 @@ So [F]end this lonely [C]party the [G7]bottle the glass and [C]me
 {start_of_verse: Verse 4}
 So [F]end this lonely [C]party the [G7]bottle the glass and [F]m-[C]e
 {end_of_verse}
+
+
+

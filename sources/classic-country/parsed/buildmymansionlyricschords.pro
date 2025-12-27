@@ -1,6 +1,9 @@
 {meta: title Build My Mansion}
 {meta: artist The Kingsmen}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file buildmymansionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have no castles no [F]earthly [C]kingdom
@@ -27,3 +30,6 @@ Just so my [G7]mansion sits near the [C]throne
 Just [G7]so my mansion sits near the [C]throne
 (Sits [F]near the [C]throne)
 {end_of_verse}
+
+
+

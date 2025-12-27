@@ -1,5 +1,8 @@
 {meta: title Going Going Gone}
 {meta: artist Marty Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file goinggoinggonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just another [C]stranger in a [G]lonesome town
@@ -39,3 +42,8 @@ I've lived a [C]life that's [D7]going going [G]gone
 {start_of_verse: Verse 4}
 Oh I've lived a [C]life that's [D7]going going [G]gone
 {end_of_verse}
+
+
+
+
+

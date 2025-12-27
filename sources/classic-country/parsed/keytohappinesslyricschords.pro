@@ -1,6 +1,9 @@
 {meta: title Key To Happiness}
 {meta: artist Melba Montgomery}
 {meta: composer Paul Wayne and Estel Spurlock}
+{meta: x_source classic-country}
+{meta: x_source_file keytohappinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Will your key to happi[D7]ness fit the gates of [G]heaven
@@ -29,3 +32,6 @@ And [D7]soon we find we're sinking deep in [G]sin
 Heaven [C]holds happiness too much to [G]measure
 But will your key to happiness [D7]let you [G]in
 {end_of_verse}
+
+
+

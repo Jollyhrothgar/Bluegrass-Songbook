@@ -1,6 +1,9 @@
 {meta: title I Live For Him He Died For Me}
 {meta: artist Doyle Lawson}
 {meta: composer Louis Thomas Botkin, Kevin R. Denny, Mike Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file iliveforhimhediedformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have a friend [G7]whose name is [C]Jesus
@@ -34,3 +37,7 @@ I [F]live for [C]Him [G7]He died for [C]me
 [C7]Shed His [F]blood said Father [Am]forgive them
 I [F]live for [C]Him [G7]He died for [C]me
 {end_of_verse}
+
+
+
+

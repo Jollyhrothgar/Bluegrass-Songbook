@@ -1,6 +1,9 @@
 {meta: title High Tech Redneck}
 {meta: artist George Jones}
 {meta: composer Byron Hill and Zack Turner}
+{meta: x_source classic-country}
+{meta: x_source_file hightechrednecklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He got 13 channels of wrestling
@@ -49,3 +52,10 @@ A thousand watts of power and he keeps it cracked up
 [D7]And if it comes on just a little too late
 [G]With his VCR's he can get it on tape
 {end_of_verse}
+
+
+
+
+
+
+

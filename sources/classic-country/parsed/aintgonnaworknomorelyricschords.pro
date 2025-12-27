@@ -1,5 +1,8 @@
 {meta: title Ain't Gonna Work No More}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file aintgonnaworknomorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I quit my job and I told my boss
@@ -42,3 +45,8 @@ Yeah [F]I'm gonna put the world on hold
 I'm gonna leave 'em with a two word note
 [G7]I ain't gonna work no [C]more
 {end_of_verse}
+
+
+
+
+

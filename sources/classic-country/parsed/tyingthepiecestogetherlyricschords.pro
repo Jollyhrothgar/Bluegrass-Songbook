@@ -1,5 +1,8 @@
 {meta: title Tying The Pieces Together}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file tyingthepiecestogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Tying the pieces to[C]gether [G7]
@@ -36,3 +39,8 @@ But [C]little by little I'm [F]losing
 {start_of_verse: Verse 6}
 [G7]Living too much in the [C]past
 {end_of_verse}
+
+
+
+
+

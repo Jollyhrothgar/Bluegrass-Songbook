@@ -1,6 +1,9 @@
 {meta: title God Is Always The Same}
 {meta: artist Jimmy Martin}
 {meta: composer Jimmy Martin and Paul Williams}
+{meta: x_source classic-country}
+{meta: x_source_file Godisalwaysthesamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard some neighbors talking
@@ -43,3 +46,8 @@ God is always the same dear brother
 Yesterday now and forever
 [G7]God is always the [C]same
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Tomorrow Night}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrownightlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tomorrow night you'll have another [D7]sweetheart
@@ -28,3 +31,6 @@ But you said tomorrow night you might be [D7]able
 [C]For I see you smiling at [D7]another
 [G7]Another love you'll have tomorrow [C]night
 {end_of_verse}
+
+
+

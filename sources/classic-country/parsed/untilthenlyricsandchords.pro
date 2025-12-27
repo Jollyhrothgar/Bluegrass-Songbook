@@ -1,6 +1,9 @@
 {meta: title Until Then}
 {meta: artist Ray Price}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file untilthenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em](Until the [C]day God [Dm]calls me [G]home)
@@ -33,3 +36,7 @@
 [D7]Along a [G]path that's [G7]winding always [C]upward
 [G]This troubled [D7]world is not my [G]final [G][C]home
 {end_of_verse}
+
+
+
+

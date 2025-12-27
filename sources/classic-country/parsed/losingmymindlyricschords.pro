@@ -1,6 +1,9 @@
 {meta: title Losing My Mind}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file losingmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m [D7]losing my mind slowly [C]losing my [G]mind
@@ -29,3 +32,6 @@ Or am I just [D7]losing my [G]mind
 [D7]Losing my mind slowly [C]losing my [G]mind
 Oh I’m slowly [D7]losing my [C]min[G]d
 {end_of_verse}
+
+
+

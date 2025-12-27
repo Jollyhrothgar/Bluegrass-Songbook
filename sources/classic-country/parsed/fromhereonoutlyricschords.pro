@@ -1,6 +1,9 @@
 {meta: title From Here On Out}
 {meta: artist Jack Greene}
 {meta: composer Hank Cochran and Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file fromhereonoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From [D7]here on [G]out I'm gonna love you like I should
@@ -26,3 +29,6 @@ There'll be a [G]change in me [D7]from here on [G]out
 {start_of_verse: Verse 3}
 [C]There'll be a [G]change in me [D7]from here on [G]out
 {end_of_verse}
+
+
+

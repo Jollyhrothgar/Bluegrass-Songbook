@@ -1,6 +1,9 @@
 {meta: title Blues in My Heart}
 {meta: artist Jim Reeves}
 {meta: composer Jenny Lou Carson and Red Foley}
+{meta: x_source classic-country}
+{meta: x_source_file bluesinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -27,3 +30,6 @@ Why even the [D7]sun's  beginning to [G]cry
 [D7]Everything's [G]wrong  [G7]since we're [C]apart 
 Wish I could [D7]lose  these blues in my [G]heart
 {end_of_verse}
+
+
+

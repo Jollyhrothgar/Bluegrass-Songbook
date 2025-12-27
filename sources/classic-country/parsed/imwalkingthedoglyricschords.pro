@@ -1,6 +1,9 @@
 {meta: title I’m Walking The Dog}
 {meta: artist Webb Pierce}
 {meta: composer Cliff Grimsley and Tex Grimsley}
+{meta: x_source classic-country}
+{meta: x_source_file imwalkingthedoglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm walking the dog and I'm never [C]blue
@@ -29,3 +32,6 @@ Until the [A7]day that I left [D7]you
 Well I'm a carefree lad [G]that seen the [C]light
 I'm walking the [G]dog all the [D7]day and all [G]night
 {end_of_verse}
+
+
+

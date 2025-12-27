@@ -1,6 +1,9 @@
 {meta: title A Loveless Marriage}
 {meta: artist Red Sovine}
 {meta: composer Red Sovine and Jewell House}
+{meta: x_source classic-country}
+{meta: x_source_file alovelessmarriagelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The vows you spoke before the [G7]altar
@@ -29,3 +32,6 @@
 [C]Take back the vows you made then [G7]darling
 [C]Of a loveless marriage we’ll be free
 {end_of_verse}
+
+
+

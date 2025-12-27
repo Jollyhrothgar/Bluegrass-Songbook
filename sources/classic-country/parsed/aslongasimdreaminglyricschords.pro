@@ -1,6 +1,9 @@
 {meta: title As long As I'm Dreaming}
 {meta: artist Tanya Tucker}
 {meta: composer Don Cook, Gary Nicholson, John Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file aslongasimdreaminglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]I haven't even let myself [C]remember  
@@ -45,3 +48,9 @@ To find a way to [D7]love you back to [Em]me
 {start_of_verse: Verse 5}
 [D7]As long as I'm [G]dreaming 
 {end_of_verse}
+
+
+
+
+
+

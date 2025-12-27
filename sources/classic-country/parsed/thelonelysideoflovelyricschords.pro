@@ -1,6 +1,9 @@
 {meta: title The Lonely Side Of Love}
 {meta: artist Patty Loveless}
 {meta: composer Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file thelonelysideoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't make these heartaches go away [F]he's always [G7]on my [C]mind
@@ -32,3 +35,6 @@ What [F]makes two people [C]fall in love
 Now [F]am I right or [C]am I wrong [F]for holding on to [C]what is gone
 [F]And what's left to [C]believe in on the [G7]lonely side of [C]love
 {end_of_verse}
+
+
+

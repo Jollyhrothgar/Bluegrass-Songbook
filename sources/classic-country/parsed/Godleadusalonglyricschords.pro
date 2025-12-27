@@ -1,6 +1,9 @@
 {meta: title God Lead Us Along}
 {meta: artist The Forbes Family}
 {meta: composer George A. Young}
+{meta: x_source classic-country}
+{meta: x_source_file Godleadusalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In shady green [G7]pastures so [Am]rich and so [C]sweet
@@ -43,3 +46,8 @@ Some through the [Am]fire but all [D7]through the [G7]blood
 [C]Some through great sorrow but [F]God gives a [C]song
 In the night [Am]season and [G7]all the day [C]long
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Funny What A Pair Of Fools Will Do}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and Van Givens}
+{meta: x_source classic-country}
+{meta: x_source_file funnywhatapairoffoolswilldolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're so good to me and I'm so bad to [F]you
@@ -31,3 +34,6 @@ Ain't it [G7]funny what a pair of fools will [C]do
 {start_of_verse: Verse 4}
 Ain't it [G7]funny what a pair of fools will [C]do
 {end_of_verse}
+
+
+

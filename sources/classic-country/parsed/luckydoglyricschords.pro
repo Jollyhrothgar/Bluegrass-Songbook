@@ -1,6 +1,9 @@
 {meta: title Lucky Dog}
 {meta: artist Keith Whitley}
 {meta: composer Verlon Thompson and Bill Caswell}
+{meta: x_source classic-country}
+{meta: x_source_file luckydoglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't stand a collar 
@@ -36,3 +39,7 @@ I [D7]used to be a homeless [G7]hound
 [C]When I found you baby one kiss drove me crazy
 There ain't no ifs or [F]maybes [G7]hey I'm a lucky [C]dog
 {end_of_verse}
+
+
+
+

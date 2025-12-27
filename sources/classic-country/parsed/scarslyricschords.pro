@@ -1,6 +1,9 @@
 {meta: title Scars}
 {meta: artist Sonny James}
 {meta: composer Jim Jones and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file scarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The tears I cry each [Dm]night 
@@ -29,3 +32,6 @@ On a heart that [F]still is [C]true
 Scars of [F]love is [Dm]all that [G7]I have 
 Left of [F]you[G7]   [C]
 {end_of_verse}
+
+
+

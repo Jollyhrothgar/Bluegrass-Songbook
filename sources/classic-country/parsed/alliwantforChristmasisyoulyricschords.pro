@@ -1,6 +1,9 @@
 {meta: title All I Want For Christmas Is You Lyrics with Chords}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file alliwantforChristmasisyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here it is Christmas Day and you're [D7]many miles away
@@ -22,3 +25,5 @@ No lips to whisper softly I love [D7]you
 Oh how [G]happy I would be to find you [D7]underneath my tree
 For all I want for Christmas dear is [G]you
 {end_of_verse}
+
+

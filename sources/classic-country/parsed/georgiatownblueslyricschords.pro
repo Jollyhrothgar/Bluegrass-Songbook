@@ -1,6 +1,9 @@
 {meta: title Georgia Town Blues}
 {meta: artist Mel Tillis}
 {meta: composer Mel Tillis and A. R. Peddy}
+{meta: x_source classic-country}
+{meta: x_source_file georgiatownblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got the Georgia town blues I got to thinking of [C]you
@@ -19,3 +22,5 @@
 {start_of_verse: Verse 3}
 repeat
 {end_of_verse}
+
+

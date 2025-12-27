@@ -1,5 +1,8 @@
 {meta: title Bar With No Beer}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file barwithnobeerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The beach comber works by the [C]ocean all day
@@ -42,3 +45,8 @@ Been locked [D7]up in the cold and left out in the [G]rain
 I've fought with the law but there's [C]one thing I fear
 To get [D7]stuck in a town in a bar with no [G]beer
 {end_of_verse}
+
+
+
+
+

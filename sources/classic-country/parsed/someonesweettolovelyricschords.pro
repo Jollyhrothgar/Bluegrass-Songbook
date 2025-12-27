@@ -1,5 +1,8 @@
 {meta: title Someone Sweet To Love}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file someonesweettolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well momma knows her child is ailing
@@ -49,3 +52,8 @@ Help me out or I'm a goner
 {start_of_verse: Verse 4}
 Oh [D7]I've gotta find me someone sweet to [G]love
 {end_of_verse}
+
+
+
+
+

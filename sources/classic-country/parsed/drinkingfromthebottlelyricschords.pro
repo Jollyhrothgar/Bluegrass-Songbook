@@ -1,6 +1,9 @@
 {meta: title Drinking From The Bottle}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file drinkingfromthebottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Drinking from the bottle and [C7]singing from the [F]heart
@@ -43,3 +46,8 @@ Crying [G7]blues in motel rooms Lord the hard times weren't that [C]hard
 And some fell in and some fell out and [C7]some just fell [F]apart
 Drinking from the [G7]bottle and singing from the [C]heart
 {end_of_verse}
+
+
+
+
+

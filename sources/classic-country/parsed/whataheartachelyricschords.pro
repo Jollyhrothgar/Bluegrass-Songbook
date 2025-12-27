@@ -1,5 +1,8 @@
 {meta: title What A Heartache}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file whataheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought I saw the promise of [F]forever in your [C]eyes
@@ -53,3 +56,9 @@ What a [C]heartache [G7]you turned out to [C]be
 {start_of_verse: Verse 5}
 Oh what a heartache [G7]you turned out to [C]be
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Texas Up Here Tennessee}
 {meta: artist Johnny Rodriguez}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file texasupheretennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I come up here from Waco on a [C]U-haul-it [Am]freight
@@ -29,3 +32,6 @@ I know [G]I can't see the [C]forest but I [A7]think I feel the [D7]trees
 Anyway [G]goin' where I guess I'm [C]always gonna [Am]be
 And I [C]declare I feel like Texas when I'm [A7]up here in [G]Tennessee
 {end_of_verse}
+
+
+

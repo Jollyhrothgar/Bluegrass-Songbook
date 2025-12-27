@@ -1,6 +1,9 @@
 {meta: title It's All Over Now}
 {meta: artist Charlie Rich}
 {meta: composer Bobby Womack and Shirley Jean Womack}
+{meta: x_source classic-country}
+{meta: x_source_file itsallovernowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been thinking it [C][F]o-ver  I can't figure out [G7]how
@@ -22,3 +25,5 @@ It's all over [G7]now  since you [D7]looked at him that [G7]way
 [C]I've been thinking it [F]o-ver [G7]hoped we could make it [C]somehow
 But after thinking it [F]o-ver [G7]I know it's all over [C]now
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title He Loved Me Once And He'll Love Me Again}
 {meta: artist Jean Shepard}
 {meta: composer Rubye Glasgow and Joan Hager}
+{meta: x_source classic-country}
+{meta: x_source_file helovedmeonceandhelllovemeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You have stolen my darling my letter began
@@ -38,3 +41,9 @@ So I’ll just keep on waiting while you live your life in sin
 You may think now he loves you but you’ll find in the end
 [C]He loved me once and he’ll love me again
 {end_of_verse}
+
+
+
+
+
+

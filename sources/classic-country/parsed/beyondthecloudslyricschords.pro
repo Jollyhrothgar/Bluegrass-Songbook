@@ -1,5 +1,8 @@
 {meta: title Beyond The Clouds}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file beyondthecloudslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]An old log house and it half-built
@@ -46,3 +49,9 @@ For [C]I can [G7]smile and [C]feel so [G]proud
 {start_of_verse: Verse 7}
 [C]I know my [G]home's [D7]beyond the [G]clouds
 {end_of_verse}
+
+
+
+
+
+

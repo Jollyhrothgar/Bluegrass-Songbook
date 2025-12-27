@@ -1,5 +1,8 @@
 {meta: title I'll Take A Back Seat For You}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file illtakeabackseatforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 {comment: G}
@@ -44,3 +47,8 @@ It's the [G]kind that keeps on [G7]giving
 And as long as I keep [C]living
 I'll [G]still take a [D7]back seat for [G]you
 {end_of_verse}
+
+
+
+
+

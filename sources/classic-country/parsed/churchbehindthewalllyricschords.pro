@@ -1,5 +1,8 @@
 {meta: title Church Behind The Wall}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file churchbehindthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do you ever get that feeling you want [F]to see an old [C]friend
@@ -34,3 +37,7 @@ We [G7]can't see the church behind the [C]wall
 Go and build a [G7]church behind the [C]wall
 Pray for the [G7]church behind the [C]wall
 {end_of_verse}
+
+
+
+

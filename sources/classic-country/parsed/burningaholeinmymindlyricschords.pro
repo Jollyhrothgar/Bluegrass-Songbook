@@ -1,6 +1,9 @@
 {meta: title Burning A Hole In My Mind}
 {meta: artist Connie Smith}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file burningaholeinmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Though it [F]happened long [G7]ago the [F]hurt just won't let [G7]go
@@ -22,3 +25,5 @@ And it's [F]burning a [G7]hole in my [C]mind
 In my [A7]mind's eye I see [D7]how you made a fool of me
 And it's [F]burning a [G7]hole in my [C]mind
 {end_of_verse}
+
+

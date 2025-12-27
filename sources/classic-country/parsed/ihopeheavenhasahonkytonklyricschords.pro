@@ -1,6 +1,9 @@
 {meta: title I Hope Heaven Has A Honky Tonk}
 {meta: artist Tracy Lawrence}
 {meta: composer Jim Carter and Sherri Stapleton}
+{meta: x_source classic-country}
+{meta: x_source_file ihopeheavenhasahonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was raised in a Christian home 
@@ -52,3 +55,9 @@ And I hope [C]heaven has a honky tonk [G7]with a five piece [C]band
 {start_of_verse: Verse 5}
 [F]I hope [C]heaven has a honky tonk [G7]with a five piece [C]band
 {end_of_verse}
+
+
+
+
+
+

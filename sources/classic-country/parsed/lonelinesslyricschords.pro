@@ -1,6 +1,9 @@
 {meta: title Loneliness}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Joe Melson}
+{meta: x_source classic-country}
+{meta: x_source_file lonelinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Loneli[Am]ness is the [D7]worst thing in the [G]world
@@ -31,3 +34,6 @@ Oh loneli[C]ness my destiny
 Yeah loneli[F]ness was I born to be
 In [G]lowdown [F]loneli[G]ness loneli[C]ness
 {end_of_verse}
+
+
+

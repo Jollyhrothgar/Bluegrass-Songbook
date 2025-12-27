@@ -1,6 +1,9 @@
 {meta: title Keep It a Secret}
 {meta: artist Slim Whitman}
 {meta: composer Jessie Mae Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file keepitasecretlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you see my darling with somebody [F]new
@@ -22,3 +25,5 @@ If you see my darling in some [F]rendezvous
 [F]Pay no attention and [C]just let it [A7]be 
 [D7]But keep it a [G7]secret from [C]me
 {end_of_verse}
+
+

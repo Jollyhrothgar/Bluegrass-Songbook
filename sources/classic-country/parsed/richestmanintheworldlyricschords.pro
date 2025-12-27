@@ -1,6 +1,9 @@
 {meta: title Richest Man In The World}
 {meta: artist Eddy Arnold}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file richestmanintheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got a [F]humpback mule a [C]plow and a tater patch
@@ -84,3 +87,14 @@ I got my [F]Lord above and a [C]good girl to love me
 I got my [F]Lord above and a [C]good girl to love me
 [G7]I'm the richest man in the [C]world
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Fadin’ In Fadin’ Out}
 {meta: artist Tommy Overstreet}
 {meta: composer Bobby Braddock and Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file fadininfadinoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I was foolin' round toolin' down Interstate 40
@@ -52,3 +55,9 @@ Then you're [C]gone
 Fadin' [F]in (fadin’ in) fadin' out (fadin’ out) 
 Then you're [C]gone
 {end_of_verse}
+
+
+
+
+
+

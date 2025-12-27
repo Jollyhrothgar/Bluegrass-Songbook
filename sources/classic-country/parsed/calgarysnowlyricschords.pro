@@ -1,6 +1,9 @@
 {meta: title Calgary Snow}
 {meta: artist Bobby Bare}
 {meta: composer Dave Hickey}
+{meta: x_source classic-country}
+{meta: x_source_file calgarysnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last Friday she said to me [D7]hey Billy Joe
@@ -65,3 +68,11 @@ I [C]can't let the [D7]rodeo [G]go
 Hurt [C]more than my [D7]pride when a [B7]bull I can't [Em]ride
 Lays me [C]low  [D7] in the Calgary [G]snow
 {end_of_verse}
+
+
+
+
+
+
+
+

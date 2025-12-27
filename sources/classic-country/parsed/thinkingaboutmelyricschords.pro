@@ -1,5 +1,8 @@
 {meta: title Thinking About Me}
 {meta: artist Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file thinkingaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't tell you [D7]all of the [G]reasons
@@ -32,3 +35,7 @@ Since [G]I started [D7]thinking about [G]me [C]
 {start_of_verse: Verse 5}
 Since [G]I started [D7]thinking about [G]me
 {end_of_verse}
+
+
+
+

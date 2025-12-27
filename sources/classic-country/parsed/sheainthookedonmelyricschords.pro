@@ -1,6 +1,9 @@
 {meta: title She Ain't Hooked On Me}
 {meta: artist Merle Haggard}
 {meta: composer Toby Keith and Scotty Emerick}
+{meta: x_source classic-country}
+{meta: x_source_file sheainthookedonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gave up on cigarettes to the day I ain't touched one [C7]yet
@@ -45,3 +48,8 @@ For years she had it real bad
 [C]I'm picking up all my bad habits [G7]again
 [F]She's letting one [C]go
 {end_of_verse}
+
+
+
+
+

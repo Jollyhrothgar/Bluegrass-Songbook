@@ -1,6 +1,9 @@
 {meta: title A Seed Before the Rose}
 {meta: artist Tommy Overstreet}
 {meta: composer Ricci Mareno and Jerry Gillespie}
+{meta: x_source classic-country}
+{meta: x_source_file aseedbeforetheroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We were both so [C]young [D7]and impatient at the [G]time
@@ -31,3 +34,6 @@ Is heartache and re[C]gret and it's [A7]clear to me
 [C]There's [D7]gotta be [G]l-o[C]ve [D7]before the tie is [G]bound
 [C]Or the rose will [Am]end [B7]with petals on the [C]ground
 {end_of_verse}
+
+
+

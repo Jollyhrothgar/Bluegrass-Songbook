@@ -1,6 +1,9 @@
 {meta: title Meant To Be}
 {meta: artist Tracy Lawrence}
 {meta: composer Flip Anderson, Rick Huckaby, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file meanttobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A crowded room a sudden glance 
@@ -46,3 +49,7 @@ That shoot [F]across the [G7]sky at night
 I give [F]everything [C]cause 
 [Dm]Some things are [G7]just meant to [C]be
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ten Thousand Drums}
 {meta: artist Johnny Horton}
 {meta: composer Mel Tillis &amp; Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file tenthousanddrumslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Waiting waiting for the [F]redcoats to [C]come
@@ -31,3 +34,6 @@ We [F]stopped ten thousand [C]drums
 [F]Throwing down their [C]drums [F]going down their [C]drums
 [F]Ten thousand [C]drums
 {end_of_verse}
+
+
+

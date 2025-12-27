@@ -1,6 +1,9 @@
 {meta: title Everybody Will Be Happy Over There}
 {meta: artist The Hee Haw Gospel Quartet}
 {meta: composer E.M. Bartlett}
+{meta: x_source classic-country}
+{meta: x_source_file everybodywillbehappyovertherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s a happy land of promise over [C]in the great [G]beyond
@@ -45,3 +48,8 @@ Everybody will be happy
 We will shout and [C]sing His [G]praises 
 Everybody will be [D7]happy over [G]there
 {end_of_verse}
+
+
+
+
+

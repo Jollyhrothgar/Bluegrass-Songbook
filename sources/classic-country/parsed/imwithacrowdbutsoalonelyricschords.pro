@@ -1,6 +1,9 @@
 {meta: title I'm With A Crowd But So Alone}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb and Carl Story}
+{meta: x_source classic-country}
+{meta: x_source_file imwithacrowdbutsoalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight with another I'm [C]dancing 
@@ -43,3 +46,8 @@ I'm [A7]afraid that I'll weaken and [D7]phone
 And I'm [C]afraid that you will be [G]gone 
 I'm with a crowd [D7]but oh so [G]alone
 {end_of_verse}
+
+
+
+
+

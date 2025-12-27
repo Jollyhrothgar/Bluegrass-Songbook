@@ -1,6 +1,9 @@
 {meta: title I Can't Even Walk (Without You Holding My Hand)}
 {meta: artist Marty Stuart}
 {meta: composer Colbert Croft and Joyce Croft}
+{meta: x_source classic-country}
+{meta: x_source_file icantevenwalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought that number one would always be [G7]me
@@ -36,3 +39,7 @@ The [D7]mountains to high and the valleys to [G]wide
 [C]Down on my knees I've [B7]learn to [C]say
 Lord I [G]can't even walk without You [D7]holding my [G]hand
 {end_of_verse}
+
+
+
+

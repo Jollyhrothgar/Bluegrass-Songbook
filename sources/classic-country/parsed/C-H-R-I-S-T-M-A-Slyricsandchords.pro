@@ -1,6 +1,9 @@
 {meta: title C-H-R-I-S-T-M-A-S}
 {meta: artist Slim Whitman}
 {meta: composer Scott Turner and Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file C-H-R-I-S-T-M-A-Slyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]C is for the Christ Child who [Am]died for us
@@ -19,3 +22,4 @@ At [C]Christmas (at Christmas) and for[G7]ever [C]more
 S is for the [E7]Savior we [Am]all a[Fm]dore
 At [C]Christmas (at Christmas) and for[G7]ever [G]more[C]
 {end_of_verse}
+

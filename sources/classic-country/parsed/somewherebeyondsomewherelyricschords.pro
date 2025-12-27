@@ -1,6 +1,9 @@
 {meta: title Somewhere Beyond Somewhere}
 {meta: artist Gene Watson}
 {meta: composer Mel Holt}
+{meta: x_source classic-country}
+{meta: x_source_file somewherebeyondsomewherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As daylight was dawning I woke up this morning
@@ -47,3 +50,9 @@ And [G7]point me to somewhere so I could be nowhere [C]behind
 {start_of_verse: Verse 6}
 And [G7]point me to somewhere so I could be nowhere [C]behind
 {end_of_verse}
+
+
+
+
+
+

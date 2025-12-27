@@ -1,5 +1,8 @@
 {meta: title Local Flowers}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file localflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have traveled [F]this world [C]over
@@ -49,3 +52,9 @@ Wildwood [G7]flowers from the [C]hill [C7]
 Where I will [F]spend my eternal [C]hours
 Lay me [G7]down with Local [C]Flowers
 {end_of_verse}
+
+
+
+
+
+

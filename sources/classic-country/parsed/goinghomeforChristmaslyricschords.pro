@@ -1,5 +1,8 @@
 {meta: title Going Home For Christmas}
 {meta: artist Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file goinghomeforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All aboard the Christmas choo choo
@@ -56,3 +59,10 @@ From the [C7]hills and from the [F]shore
 This is the day we're [C]on our way
 We're [D7]going [G7]home once [C]more
 {end_of_verse}
+
+
+
+
+
+
+

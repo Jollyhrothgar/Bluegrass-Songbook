@@ -1,6 +1,9 @@
 {meta: title Georgia Keeps Pulling On My Ring}
 {meta: artist Conway Twitty}
 {meta: composer David Wilkins and Tim Marshall}
+{meta: x_source classic-country}
+{meta: x_source_file georgiakeepspullingonmyringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweet sweet Georgia keeps [D7]pulling on my [G]ring
@@ -33,3 +36,7 @@ To have a woman just like you to be [A7]waiting when they come [D7]home
 But the [G]devil made me [G7]cheat on you one [C]too many [G]times
 And honey I'm sorry but she left [D7]heaven on my [G]mind
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Born A Fool}
 {meta: artist Jim Ed Brown}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file bornafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Born a [C]fool
@@ -27,3 +30,6 @@ I [Em]guess I'll [Dm]die a [G7]fool
 [F]For loving you com[G7]pletely
 [F]Even though I [G7]know I can't have [C]you [F]   [C]
 {end_of_verse}
+
+
+

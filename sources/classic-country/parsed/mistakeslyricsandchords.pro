@@ -1,6 +1,9 @@
 {meta: title Mistakes}
 {meta: artist Billy Walker}
 {meta: composer Kay Arnold and Kendall Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file mistakeslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember when I was the [F]world's richest [C]man
@@ -33,3 +36,7 @@ To be burdened [C]down with [G7]careless [C]mistakes
 {start_of_verse: Verse 5}
 [G7]Careless [C]mistakes
 {end_of_verse}
+
+
+
+

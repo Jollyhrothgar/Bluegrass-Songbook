@@ -1,6 +1,9 @@
 {meta: title Another Hand Shaking Goodbye}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Dallas Frazier and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file anotherhandshakinggoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No matter who I'm dreaming with [F]honey you start walking in my [C]sleep
@@ -26,3 +29,6 @@ Another [F]try another [C]cry another [G7]hand shaking good[C]bye
 {start_of_verse: Verse 4}
 Another [F]try another [C]cry another [G7]hand shaking good[C]bye
 {end_of_verse}
+
+
+

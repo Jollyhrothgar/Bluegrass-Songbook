@@ -1,6 +1,9 @@
 {meta: title I Can Feel Him Touching You All Over Me}
 {meta: artist Johnny Bush}
 {meta: composer Kent Westberry, Max D. Barnes, Harlan Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file icanfeelhimtouchingyouallovermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can [G]feel him [C]touching [D7]you all over [G]me
@@ -39,3 +42,7 @@ I can [G]feel him [C]touching [D7]you all over [G]me
 {start_of_verse: Verse 5}
 [C]I can [G]feel him [C]touching [D7]you all over [G]me
 {end_of_verse}
+
+
+
+

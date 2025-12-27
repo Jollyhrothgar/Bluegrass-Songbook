@@ -1,6 +1,9 @@
 {meta: title Your Heart Of Blue Is Showing}
 {meta: artist Marty Robbins}
 {meta: composer Bernard L. Spurlock}
+{meta: x_source classic-country}
+{meta: x_source_file yourheartofblueisshowinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't look now but your heart of blue is [G7]showin'
@@ -31,3 +34,6 @@ And [C]now you're on the [G7]shelf
 You [C]win the right to cry when you [F]cheat and alibi
 Your heart of [G7]blue is showin' through but don't look [C]now
 {end_of_verse}
+
+
+

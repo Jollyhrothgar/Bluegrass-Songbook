@@ -1,6 +1,9 @@
 {meta: title New Star Shining}
 {meta: artist Ricky Skaggs}
 {meta: composer John Hall and Johanna Hall}
+{meta: x_source classic-country}
+{meta: x_source_file newstarshininglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They didn't own a [Em]house no [F]crib no toys were [C]waiti[G7]ng
@@ -36,3 +39,7 @@ Cause that [F]new star is [Dm]shining [G7]for us [C]still[G7]
 If we [F]want to [G7]find it I [Am]know we [Em]always [D7]will
 Cause that [F]new star is [Dm]shining [G7]for us [C]still
 {end_of_verse}
+
+
+
+

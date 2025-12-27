@@ -1,6 +1,9 @@
 {meta: title All That We've Got Left}
 {meta: artist Vern Gosdin}
 {meta: composer Buddy Cannon, Rex Gosdin, Steve Smith}
+{meta: x_source classic-country}
+{meta: x_source_file allthatwevegotleftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I once held that someone special [F]didn't have to let her [C]go
@@ -33,3 +36,7 @@ We're [C]just trying to get it right with [G7]all that we've got [C]left
 {start_of_verse: Verse 4}
 We're just trying to get it right with [G7]all that we've got [C]left
 {end_of_verse}
+
+
+
+

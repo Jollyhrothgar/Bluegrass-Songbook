@@ -1,6 +1,9 @@
 {meta: title My Heart Won't Wander Very Far From You}
 {meta: artist George Strait}
 {meta: composer Arnette Cotter and Buddy Carvathe}
+{meta: x_source classic-country}
+{meta: x_source_file myheartwontwanderveryfarfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well honey don't you worry I don't need no barroom queen
@@ -43,3 +46,8 @@ My [C]heart won't wonder [G7]very far from [C]you
 No [F]I ain't seen that and [C]honey till I [Am]do
 My [C]heart won't wonder [G7]very far from [C]you
 {end_of_verse}
+
+
+
+
+

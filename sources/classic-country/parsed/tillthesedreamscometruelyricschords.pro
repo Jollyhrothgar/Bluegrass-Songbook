@@ -1,5 +1,8 @@
 {meta: title Till These Dreams Come True}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file tillthesedreamscometruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun never shines [C7]that I don't think of [F]you 
@@ -28,3 +31,6 @@ And [G7]kissing your sweet  sweet [C]lips
 I dream of calling you mine  mine all the [F]time
 And I'll [G7]keep dreaming till these dreams come [C]true
 {end_of_verse}
+
+
+

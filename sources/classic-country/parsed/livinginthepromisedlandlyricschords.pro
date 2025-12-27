@@ -1,6 +1,9 @@
 {meta: title Living In The Promiseland}
 {meta: artist Willie Nelson}
 {meta: composer David Lynn Jones}
+{meta: x_source classic-country}
+{meta: x_source_file livinginthepromisedlandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Give us your tired [C]and weak and we will make them [G]strong
@@ -40,3 +43,8 @@ And room for [D7]everyone living in the [G]Promiseland
 {start_of_verse: Verse 5}
 And room for [D7]everyone living in the [G]Promiseland
 {end_of_verse}
+
+
+
+
+

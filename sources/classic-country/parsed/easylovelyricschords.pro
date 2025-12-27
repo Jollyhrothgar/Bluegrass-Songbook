@@ -1,6 +1,9 @@
 {meta: title Easy Love}
 {meta: artist Anne Murray}
 {meta: composer Kerry Chater and Jerry Lee Chater}
+{meta: x_source classic-country}
+{meta: x_source_file easylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have loved you for a long long [A#7]time
@@ -45,3 +48,9 @@
 [Dm]Easy come easy [G7]go easy [C]love
 [Dm]Easy come easy [G7]go easy [C]love
 {end_of_verse}
+
+
+
+
+
+

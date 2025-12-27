@@ -1,5 +1,8 @@
 {meta: title Gone (That'll Be Me)}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file gonethatllbemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]That'll be me you'll [C]see walking [G]away
@@ -39,3 +42,8 @@ That'll be [G]me you'll [D7]see that'll be [G]gone
 {start_of_verse: Verse 4}
 [C]That'll be [G]me you'll [D7]see that'll be [G]gone
 {end_of_verse}
+
+
+
+
+

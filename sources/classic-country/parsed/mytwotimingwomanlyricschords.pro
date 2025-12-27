@@ -1,5 +1,8 @@
 {meta: title My Two Timing Woman}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file mytwotimingwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woke up this mornin' in a terrible mood
@@ -28,3 +31,6 @@ Then [F]tell her now sit there woman cause you [C]ain't leavin' no more
 I'm [F]gonna tame you woman till you're eatin' from my [C]hand
 It [G7]ain't that I don't love you honey it's just to make you under[C]stand
 {end_of_verse}
+
+
+

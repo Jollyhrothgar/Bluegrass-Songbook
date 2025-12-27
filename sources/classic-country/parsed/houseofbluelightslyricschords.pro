@@ -1,6 +1,9 @@
 {meta: title House of Blue Lights}
 {meta: artist Asleep at the Wheel}
 {meta: composer Don Raye and Freddy Slack}
+{meta: x_source classic-country}
+{meta: x_source_file houseofbluelightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lace up your boots and we'll truck on down
@@ -33,3 +36,7 @@ Just boogie past the welcome [C]mat
 Fall in there and we'll see some [G7]sights
 Down at the house the house the house of blue [C]lights
 {end_of_verse}
+
+
+
+

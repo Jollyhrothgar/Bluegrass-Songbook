@@ -1,6 +1,9 @@
 {meta: title Coming Around Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file comingaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Coming around
@@ -43,3 +46,9 @@ Coming around
 [C]And less and less I [D7]find my arms depending on you [G]coming [D7]around
 [G]Think I’m coming around
 {end_of_verse}
+
+
+
+
+
+

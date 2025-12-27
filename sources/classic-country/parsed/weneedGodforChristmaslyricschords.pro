@@ -1,6 +1,9 @@
 {meta: title We Need God For Christmas}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb and Alma Donaldson}
+{meta: x_source classic-country}
+{meta: x_source_file weneedGodforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Though Christmas is the [B7]time of year to be [C]happy and [G]gay
@@ -29,3 +32,6 @@ For [A7]God to protect us and the [D7]good old USA
 Let's [G]do our part with [B7]all our hearts then [C]Christmas next [G]year
 No [D7]empty chair will sadden Christmas [G]cheer
 {end_of_verse}
+
+
+

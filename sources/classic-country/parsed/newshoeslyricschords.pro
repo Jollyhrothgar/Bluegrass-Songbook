@@ -1,5 +1,8 @@
 {meta: title New Shoes}
 {meta: artist The Foghorn Stringband}
+{meta: x_source classic-country}
+{meta: x_source_file newshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh now if you're goin' down to New Orleans 
@@ -64,3 +67,11 @@ I'm gonna [F]walk [C]away from your [G7]heart
 I'm gonna [F]sing my [C]way back [G7]home
 Do-an-do-an-[C]do
 {end_of_verse}
+
+
+
+
+
+
+
+

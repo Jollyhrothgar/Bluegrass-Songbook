@@ -1,5 +1,8 @@
 {meta: title Roll Along Kentucky Moon}
 {meta: artist Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file rollalongkentuckymoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Day is done and here am I [G7]alone and you know [D7]why
@@ -26,3 +29,5 @@ G7}
 [D7]But wherever she may be oh bring her back to me
 Roll [G7]along roll along Kentucky [C]moon
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Coming Home (Song Of The Saddle)}
 {meta: artist Hank Snow}
 {meta: composer Norman Kelly}
+{meta: x_source classic-country}
+{meta: x_source_file imcominghomesongofthesaddlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don’t you weep anymore for me tonight
@@ -36,3 +39,7 @@ My [C]saddle’s haunting melo[G]dy
 I will [C]sing you my song of the [G]saddle 
 Just the way my saddle [D7]sings a song to [G]me
 {end_of_verse}
+
+
+
+

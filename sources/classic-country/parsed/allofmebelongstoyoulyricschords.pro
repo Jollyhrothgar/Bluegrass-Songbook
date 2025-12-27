@@ -1,5 +1,8 @@
 {meta: title All Of Me Belongs To You}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file allofmebelongstoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All of me belongs to you all the time
@@ -50,3 +53,12 @@ That don't miss you through and through
 {start_of_verse: Verse 9}
 [G7]All of me belongs to [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

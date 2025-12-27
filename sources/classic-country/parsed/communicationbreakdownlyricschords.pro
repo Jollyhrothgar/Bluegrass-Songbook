@@ -1,6 +1,9 @@
 {meta: title Communication Breakdown}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Bill Dees}
+{meta: x_source classic-country}
+{meta: x_source_file communicationbreakdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We never walk we never talk  
@@ -49,3 +52,10 @@ Communication [C]breakdown [G7]communication [C]breakdown
 I can [F]tell that it’s [C]over now
 [A#7]Communi[F]cation [C]breakdown [A#7]communi[F]cation [C]breakdown
 {end_of_verse}
+
+
+
+
+
+
+

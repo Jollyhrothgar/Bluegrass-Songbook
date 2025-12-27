@@ -1,5 +1,8 @@
 {meta: title American Dream}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file americandreamlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Too many lawyers in football [F]baseballs gotta [C]few
@@ -39,3 +42,8 @@ God bless you all but most of all [G7]send your money to [C]me
 {start_of_verse: Verse 5}
 [F]You're goin' crazy [C]dreamin' the [G7]American [C]dream
 {end_of_verse}
+
+
+
+
+

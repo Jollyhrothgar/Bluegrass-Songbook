@@ -1,6 +1,9 @@
 {meta: title Time}
 {meta: artist Doug Stone}
 {meta: composer Steve Nelson and Suzanna Spring}
+{meta: x_source classic-country}
+{meta: x_source_file Timelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who knows why the wind blows [D7]who knows where it ends
@@ -41,3 +44,7 @@ It just moves on [G]down the [D7]line
 And there's [C]nothing [G]left be[D7]hind but [C]time
 Nothing but [G]time
 {end_of_verse}
+
+
+
+

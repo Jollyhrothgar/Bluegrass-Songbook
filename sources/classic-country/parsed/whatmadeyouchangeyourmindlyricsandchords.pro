@@ -1,5 +1,8 @@
 {meta: title What Made You Change Your Mind}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file whatmadeyouchangeyourmindlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 What Made You Change Your Mind
@@ -34,3 +37,8 @@ It [C]seems a shame to place the blame [F]so if you'd [Am]be so [Dm]kind
 {start_of_verse: Verse 6}
 [G7]Before you [Dm]go I'd [G7]like to know what made you change your [C]mind
 {end_of_verse}
+
+
+
+
+

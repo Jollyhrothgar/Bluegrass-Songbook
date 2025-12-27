@@ -1,6 +1,9 @@
 {meta: title The Pillow That Whispers}
 {meta: artist Carl Smith}
 {meta: composer Cal Veale}
+{meta: x_source classic-country}
+{meta: x_source_file thepillowthatwhisperslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The dawn melts the darkness a [F]lonely night [C]ends 
@@ -29,3 +32,6 @@ It would be easy to lose all control [G7]now
 Cause here [F]next to me where my baby used to [C]be
 Is the pillow that [G7]whispers she's gone [C]now
 {end_of_verse}
+
+
+

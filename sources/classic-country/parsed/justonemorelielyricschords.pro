@@ -1,6 +1,9 @@
 {meta: title Just One More Lie}
 {meta: artist Sonny James}
 {meta: composer Shurl Legate}
+{meta: x_source classic-country}
+{meta: x_source_file justonemorelielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh tell me just one more [C]lie
@@ -22,3 +25,5 @@
 [G]Oh oh oh please one more [C]lie
 [D7]Just make [C]believe you love [D7]me and I won't [G]cry
 {end_of_verse}
+
+

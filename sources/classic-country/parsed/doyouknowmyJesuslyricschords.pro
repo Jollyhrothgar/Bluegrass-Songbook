@@ -1,6 +1,9 @@
 {meta: title Do You Know My Jesus}
 {meta: artist Skeeter Davis}
 {meta: composer W.F. Lakey and V.B. Ellis}
+{meta: x_source classic-country}
+{meta: x_source_file doyouknowmyJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you a heart that's [C]weary
@@ -34,3 +37,7 @@ And [G]that He will [D7]abide till the [G]end
 Have you hea-rd He[C] loves you
 And [G]that He will [D7]abide till the [G]end
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Because I Love You}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file becauseiloveyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Nights have a way of getting [F]lone[C]some
@@ -27,3 +30,6 @@ In [Am]my mind I take [D7]you every[C]where I [G]go
 I realize that while I'm gone [F]you're lonely [C]too
 But [Am]you're mine and I don't [D7]worry because I [C]love [G]you
 {end_of_verse}
+
+
+

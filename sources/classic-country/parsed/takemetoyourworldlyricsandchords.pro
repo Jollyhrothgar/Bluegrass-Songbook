@@ -1,6 +1,9 @@
 {meta: title Take Me to Your World}
 {meta: artist Tammy Wynette}
 {meta: composer Glenn Sutton and Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file takemetoyourworldlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you can find it in your heart  to just [G7]forgive
@@ -22,3 +25,5 @@ Where people [D7]say I love you and love is not a dirty [G7]word
 [C]All I want is just to be your [F]girl
 Please come and [C]get me and take [G7]me to your [C]world
 {end_of_verse}
+
+

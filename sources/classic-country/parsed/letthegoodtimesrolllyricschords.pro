@@ -1,6 +1,9 @@
 {meta: title Let The Good Times Roll}
 {meta: artist Roy Orbison}
 {meta: composer Leonard Lee and Shirley Goodman}
+{meta: x_source classic-country}
+{meta: x_source_file letthegoodtimesrolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come on baby let the good times roll
@@ -42,3 +45,8 @@ Come on baby let me thrill your soul
 [D7]Roll all night [G]long
 repeat last 2 verses
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That's Where My Baby Feels At Home}
 {meta: artist Faron Young}
 {meta: composer Wayne Kemp, Curtis Wayne, Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file thatswheremybabyfeelsathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I met her in that smoke filled bar 
@@ -41,3 +44,7 @@ Back where the wine flows free
 {start_of_verse: Verse 4}
 [G7]That's where my baby feels at [C]home
 {end_of_verse}
+
+
+
+

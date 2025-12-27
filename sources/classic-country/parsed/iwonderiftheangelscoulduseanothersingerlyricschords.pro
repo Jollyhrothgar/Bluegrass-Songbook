@@ -1,6 +1,9 @@
 {meta: title I Wonder If The Angels Could Use Another Singer}
 {meta: artist Walt Mills}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderiftheangelscoulduseanothersingerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear the sweetest singin' 
@@ -43,3 +46,7 @@ Is strong [F]maybe I could sing along
 {start_of_verse: Verse 4}
 I [G7]wonder if the [C]angels could [F]use another [C]singer
 {end_of_verse}
+
+
+
+

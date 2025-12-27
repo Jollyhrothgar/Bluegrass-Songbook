@@ -1,6 +1,9 @@
 {meta: title Love Is Strange}
 {meta: artist Buddy Holly}
 {meta: composer Ethel Smith and Mickey Baker}
+{meta: x_source classic-country}
+{meta: x_source_file loveisstrangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Love hmhmm  love is strange hmhmm
@@ -15,3 +18,4 @@ Love hmhmm  love is strange hmhmm
 [D7]Your sweet [G]loving hm[C]hmm [D7]is better than a [G]kiss yay [C]yay
 [D7]When you [G]leave me hm[C]hmm [D7]sweet kisses I'll [G]miss
 {end_of_verse}
+

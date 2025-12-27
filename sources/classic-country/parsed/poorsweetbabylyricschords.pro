@@ -1,6 +1,9 @@
 {meta: title Poor Sweet Baby}
 {meta: artist Jean Shepard}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file poorsweetbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I knew this morning as [D7]soon as the phone [G]rang
@@ -31,3 +34,6 @@
 [G]Poor sweet baby come to [C]momma
 [G]Let momma love your pain away and [D7]make ever thing all [G]right
 {end_of_verse}
+
+
+

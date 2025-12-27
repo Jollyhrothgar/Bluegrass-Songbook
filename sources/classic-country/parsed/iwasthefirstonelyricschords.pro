@@ -1,6 +1,9 @@
 {meta: title I Was The First One}
 {meta: artist Hank Thompson}
 {meta: composer Orville Proctor}
+{meta: x_source classic-country}
+{meta: x_source_file iwasthefirstonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was the first to chose her to [C]make her mine
@@ -22,3 +25,5 @@ I was the [G]first one to show her [C]those stars above
 I was the [G]first one to show her [C]those stars above
 [D7]I was the first to know her to know her [G]love
 {end_of_verse}
+
+

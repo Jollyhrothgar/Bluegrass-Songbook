@@ -1,6 +1,9 @@
 {meta: title Down In Tennessee}
 {meta: artist John Anderson}
 {meta: composer Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file downintennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I talked to your sister last night on the [F]telephone[Fm]
@@ -46,3 +49,8 @@ Without [F]you I just can't [G7]see
 I'm so [F]down in Tenne[C]ssee
 I'm [A#7]gonna be [F]down in Tenne[C]ssee
 {end_of_verse}
+
+
+
+
+

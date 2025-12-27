@@ -1,6 +1,9 @@
 {meta: title Come Back Baby}
 {meta: artist Buddy Holly}
 {meta: composer Norman Petty}
+{meta: x_source classic-country}
+{meta: x_source_file comebackbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come back baby [C]baby won't you come back
@@ -37,3 +40,7 @@ Now you know I [C]love you so
 [D7]Baby baby come to [G]me
 Whoa [D7]come back baby to [G]me
 {end_of_verse}
+
+
+
+

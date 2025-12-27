@@ -1,6 +1,9 @@
 {meta: title All Alone Am I}
 {meta: artist Brenda Lee}
 {meta: composer Arthur Altman, Manos Hadjidakis, Ioann Idis}
+{meta: x_source classic-country}
+{meta: x_source_file allaloneamilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]All alone am I ever since your [G7]goodbye
@@ -44,3 +47,9 @@ All [F]alone with [G7]just the beat of my [E7]heart
 People all [Am]around but I don't hear a [G7]sound
 Just the [F]lonely [G7]beating of my [C]heart
 {end_of_verse}
+
+
+
+
+
+

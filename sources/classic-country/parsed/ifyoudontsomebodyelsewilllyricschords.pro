@@ -1,6 +1,9 @@
 {meta: title If You Don’t Somebody Else Will}
 {meta: artist Carl Smith}
 {meta: composer Johnny Mathis, Jimmy Fautheree, Geraldine Hamilton}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudontsomebodyelsewilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I ain't gonna beg you for your love [D7]anymore
@@ -30,3 +33,6 @@ If you don't wanna be mine say so baby  somebody else [A7]will
 [D7]Somebody else will soothe me [G]better
 Somebody else will soothe me better
 {end_of_verse}
+
+
+

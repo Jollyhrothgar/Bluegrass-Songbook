@@ -1,6 +1,9 @@
 {meta: title Lonesome Old Home}
 {meta: artist Ralph Stanley}
 {meta: composer Ed Hamilton}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomeoldhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I laid down everything was so [G7]fine
@@ -43,3 +46,8 @@ No mother or dad no [C]children a-playing
 Everything was so quiet everybody was [G7]gone
 There was all that I left but a lonesome old [C]home
 {end_of_verse}
+
+
+
+
+

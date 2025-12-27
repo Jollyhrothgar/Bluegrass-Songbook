@@ -1,6 +1,9 @@
 {meta: title Till I Kissed You}
 {meta: artist Everly Brothers}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file tillikissedyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Never [Em]felt like this until I kissed [G]ya 
@@ -34,3 +37,7 @@ Mmm ya got a way about ya
 [G]Never [Em]knew what I missed till I kissed [G]ya [Em]uh-huh 
 I [G]kissed ya oh [Em]yeah
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sorrowful Angels}
 {meta: artist Patty Loveless}
 {meta: composer Tommy Conners and Leslie Satcher}
+{meta: x_source classic-country}
+{meta: x_source_file sorrowfulangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She loved him most when his eyes were gray 
@@ -43,3 +46,8 @@ True love [F]given and de[C]nied
 And while her [G7]heart was broke and [C]bleed[F]ing 
 Sorrowful [C]angels [G7]wept into their [C]wings
 {end_of_verse}
+
+
+
+
+

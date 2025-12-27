@@ -1,6 +1,9 @@
 {meta: title I'd Do It All Again}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jerry G. Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file iddoitallagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the band was on its final break
@@ -57,3 +60,10 @@ I can still yet turn 'em on
 [G7]Lord only knows if I had the time
 I'd do it all [C]again
 {end_of_verse}
+
+
+
+
+
+
+

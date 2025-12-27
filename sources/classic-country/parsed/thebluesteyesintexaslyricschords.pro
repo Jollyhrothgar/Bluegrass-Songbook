@@ -1,6 +1,9 @@
 {meta: title The Bluest Eyes In Texas}
 {meta: artist Restless Heart}
 {meta: composer Tim DuBois, Dave Robbins, Van Stephenson}
+{meta: x_source classic-country}
+{meta: x_source_file thebluesteyesintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The lonesome Texas sun was setting [C]low
@@ -48,3 +51,9 @@ The [G]bluest eyes in Texas are [Em]haunting [D7]me to[C]night
 {start_of_verse: Verse 5}
 The [G]bluest eyes in Texas are [Em]haunting [D7]me to[C]night
 {end_of_verse}
+
+
+
+
+
+

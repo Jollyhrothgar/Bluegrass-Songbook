@@ -1,6 +1,9 @@
 {meta: title Nothing Ever Hurt Me}
 {meta: artist George Jones}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file nothingeverhurtmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've had a splitting [C]headache from my eyebrows [G]to my [C]backbone
@@ -44,3 +47,7 @@
 [G]I've had a toothache [C]so severe my [G]jawbone [F]split in [E7]two
 [A7]But nothing's ever hurt [D7]me half as bad as losing [G]you
 {end_of_verse}
+
+
+
+

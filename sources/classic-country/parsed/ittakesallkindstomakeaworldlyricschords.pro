@@ -1,5 +1,8 @@
 {meta: title It Takes All Kinds To Make A World}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file ittakesallkindstomakeaworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it takes all kinds to make a [G7]world
@@ -53,3 +56,10 @@ But I [G7]guess it takes all kinds to make a [C]world
 {start_of_verse: Verse 5}
 Yes I [G7]guess it takes all kinds to make a [C]world
 {end_of_verse}
+
+
+
+
+
+
+

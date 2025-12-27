@@ -1,6 +1,9 @@
 {meta: title Home}
 {meta: artist Jim Reeves}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file homelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I've been a traveler [F]most of my [C]life
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 5}
 [G7]Whippoorwills [C]call [G7]whippoorwills [C]call
 {end_of_verse}
+
+
+
+
+
+

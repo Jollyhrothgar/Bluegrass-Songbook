@@ -1,6 +1,9 @@
 {meta: title Hide Away Blues}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file hideawayblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm leavin' you baby
@@ -37,3 +40,8 @@ I'm so sorry baby
 [D7]I've gotta meet my little baby
 [G]Down at the hideaway
 {end_of_verse}
+
+
+
+
+

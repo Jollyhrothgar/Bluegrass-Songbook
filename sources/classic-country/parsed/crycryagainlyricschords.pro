@@ -1,6 +1,9 @@
 {meta: title Cry Cry Again}
 {meta: artist Tammy Wynette}
 {meta: composer Liz Anderson and Dick Land}
+{meta: x_source classic-country}
+{meta: x_source_file crycryagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I put my little girl to bed with [D7]teardrops in her eyes
@@ -29,3 +32,6 @@ Sometimes I cry and get my way and [C]mommy's so [G]alone
 She told me once that [G7]when I'm right I [C]never should give [G]in
 So [D7]if at first I don't succeed I'll cry and cry [G]again
 {end_of_verse}
+
+
+

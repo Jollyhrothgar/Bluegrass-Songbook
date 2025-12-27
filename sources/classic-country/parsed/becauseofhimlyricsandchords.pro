@@ -1,6 +1,9 @@
 {meta: title Because Of Him}
 {meta: artist Rhonda Vincent}
 {meta: composer Colbert Croft and Joyce S. Croft}
+{meta: x_source classic-country}
+{meta: x_source_file becauseofhimlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know I’ve been saved because of Jesus
@@ -50,3 +53,9 @@ Well it feels so good since I got this feeling
 [G7]I know I’ve been saved because of [C]Him
 [G7]I know I’ve been saved because of [C]Him
 {end_of_verse}
+
+
+
+
+
+

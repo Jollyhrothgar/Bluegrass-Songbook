@@ -1,5 +1,8 @@
 {meta: title Just A Little Bit Sweet}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file justalittlebitsweetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]If you'd [G]be just a [C]little bit [G]sweet to me[D7]   [G]
@@ -43,3 +46,7 @@ Come on [G]give up all your messen' around and swingin'
 Cause you [D7]know pretty [Em]baby 
 That your [A7]daddy is still in [D7]love with [G]you
 {end_of_verse}
+
+
+
+

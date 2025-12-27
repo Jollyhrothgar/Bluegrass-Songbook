@@ -1,5 +1,8 @@
 {meta: title Family Tree}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file familytreelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woman you don't know me but [F]you can bet that I know [C]you
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 5}
 [G7]Not the woman that's burning down our family [C]tree
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Shout To The Lord}
 {meta: artist Randy Travis}
 {meta: composer Darlene Zschech}
+{meta: x_source classic-country}
+{meta: x_source_file shouttothelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My Jesus [D7]my Savior
@@ -37,3 +40,7 @@ For[G]ever I'll [Em]love You for[C]ever I'll [D7]stand
 [Em]Nothing compares to the [C]promise [D7]I have  
 [Em]Nothing compares to the [C]promise [D7]I have in [G]You 
 {end_of_verse}
+
+
+
+

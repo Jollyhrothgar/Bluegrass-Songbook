@@ -1,6 +1,9 @@
 {meta: title Starting Today}
 {meta: artist Elvis Presley}
 {meta: composer Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file startingtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Starting today
@@ -39,3 +42,9 @@ Gonna live for tomorrow
 {start_of_verse: Verse 7}
 [F]Starting [C]today
 {end_of_verse}
+
+
+
+
+
+

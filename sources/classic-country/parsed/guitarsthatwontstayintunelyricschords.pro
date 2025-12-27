@@ -1,6 +1,9 @@
 {meta: title Guitars That Won't Stay In Tune}
 {meta: artist John Anderson}
 {meta: composer Troy Seals and Eddie Setser}
+{meta: x_source classic-country}
+{meta: x_source_file guitarsthatwontstayintunelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I grew up lean and hungry I worked hard for my money
@@ -33,3 +36,7 @@ Like a [F]cold hearted [C]woman [F]whiskey in my [C]water
 {start_of_verse: Verse 4}
 [F]Guitars that [G7]won't stay in [C]tune
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You’re So Good When You’re Bad}
 {meta: artist Charlie Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file youresogoodwhenyourebadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're a lady you're an angel
@@ -39,3 +42,7 @@ You would never hurt anybody
 {start_of_verse: Verse 5}
 [D7]And I say mmm mmm you're so good when [C]you're [G]bad
 {end_of_verse}
+
+
+
+

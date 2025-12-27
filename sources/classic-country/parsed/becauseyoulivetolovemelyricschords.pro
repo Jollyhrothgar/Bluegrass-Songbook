@@ -1,6 +1,9 @@
 {meta: title Because You Live To Love Me}
 {meta: artist Jerry Wallace}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file becauseyoulivetolovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Because you live to [C]love me [D7]I love to [G]live
@@ -40,3 +43,7 @@ And [A7]carry my load with a [D7]smile
 [G]For I possess the [C]greatest gift [D7]that life can [G]give
 [E7]Because you live to [Am]love me [D7]I love to [G]live
 {end_of_verse}
+
+
+
+

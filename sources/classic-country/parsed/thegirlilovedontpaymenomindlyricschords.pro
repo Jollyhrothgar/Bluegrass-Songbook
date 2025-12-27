@@ -1,6 +1,9 @@
 {meta: title The Girl I Love Don't Pay Me No Mind}
 {meta: artist The Earls Of Leicester}
 {meta: composer Arthur Leroy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlilovedontpaymenomindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The girl I love don't pay me no mind
@@ -43,3 +46,8 @@ The girl I love don't pay me no [D7]mind
 Oh [G]sweetheart divine put your [C]little hand in [G]mine
 The girl I love don't [D7]pay me no [G]mind
 {end_of_verse}
+
+
+
+
+

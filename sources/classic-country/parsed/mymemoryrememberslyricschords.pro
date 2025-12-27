@@ -1,5 +1,8 @@
 {meta: title My Memory Remembers}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file mymemoryrememberslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember when you said you [G7]miss me
@@ -27,3 +30,5 @@ Your [C]tender touch was much too much
 [G7]And it still holds me
 Yes my memory remembers all your promi[C]ses
 {end_of_verse}
+
+

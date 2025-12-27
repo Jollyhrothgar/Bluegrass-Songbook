@@ -1,5 +1,8 @@
 {meta: title Man That's Satisfied}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file manthatssatisfiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a wonderful feeling when [D7]you come home at night
@@ -19,3 +22,5 @@ Why the [F]ways of the [Fm]world [C]just can't [A7]tempt a [D7]man [G7]that's sa
 Yes when temptation surrounds him a man well [D7]loved is just too strong
 And the [F]ways of the [Fm]world [C]just can't [A7]tempt a [D7]man [G7]that's satis[F]fie[C]d
 {end_of_verse}
+
+

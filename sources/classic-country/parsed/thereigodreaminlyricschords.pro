@@ -1,6 +1,9 @@
 {meta: title There I Go Dreamin'}
 {meta: artist Roger Miller}
 {meta: composer Dorsey Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file thereigodreaminlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I guess I better go and sit [C]down by the phone
@@ -32,3 +35,6 @@ Yeah [D7]there I go dreamin' [G]again
 I'm just a silly fool [D7]there I go dreamin' [G]again
 Yeah [D7]I’m dreaming [G]again 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Old Stuff}
 {meta: artist Garth Brooks}
 {meta: composer Bryan Kennedy, Don Roberts, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file theoldstufflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I said a little prayer [C]tonight fore I [D7]came on [G]stage[C]   [G]
@@ -58,3 +61,10 @@ Back when the [G]old [A#7]stuff was [G]new
 Hey it's still one big party you can call it whatever you [C]choose [A7]
 You make me feel like the [G]old [A#7]stuff is [G]new
 {end_of_verse}
+
+
+
+
+
+
+

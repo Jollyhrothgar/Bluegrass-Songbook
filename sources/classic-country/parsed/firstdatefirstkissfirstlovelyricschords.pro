@@ -1,6 +1,9 @@
 {meta: title First Date First Kiss First Love}
 {meta: artist Sonny James}
 {meta: composer Dan Welch and Mary Stovall}
+{meta: x_source classic-country}
+{meta: x_source_file firstdatefirstkissfirstlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]First date
@@ -48,3 +51,10 @@ I've worked hard at concealing
 But I can't hide this wonderful [C]thrill
 [F]I kept up a constant chatter
 {end_of_verse}
+
+
+
+
+
+
+

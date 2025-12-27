@@ -1,6 +1,9 @@
 {meta: title Rio Grande Waltz}
 {meta: artist Hank Locklin}
 {meta: composer Elmer Laird}
+{meta: x_source classic-country}
+{meta: x_source_file riograndewaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Near the Rio Grande mother nature’s hand 
@@ -29,3 +32,6 @@ Your [D7]water sparkles [G7]like no other one
 O’er the [C]hills and o’er the land
 Flows the Rio Grande and we [G7]love you river Rio [C]Grande
 {end_of_verse}
+
+
+

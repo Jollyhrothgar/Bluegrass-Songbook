@@ -1,6 +1,9 @@
 {meta: title Second Best}
 {meta: artist Jean Shepard}
 {meta: composer Marie Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file secondbestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you'll never love me the way I love [G7]you
@@ -29,3 +32,6 @@
 [C]And anything to keep you with me I would [G7]do
 [C]I'm glad that I can be second best to you
 {end_of_verse}
+
+
+

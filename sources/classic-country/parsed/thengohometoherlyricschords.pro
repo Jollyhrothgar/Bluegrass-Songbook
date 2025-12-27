@@ -1,6 +1,9 @@
 {meta: title Then Go Home To Her}
 {meta: artist Norma Jean}
 {meta: composer Hank Cochran and Jeannie Seely}
+{meta: x_source classic-country}
+{meta: x_source_file thengohometoherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You take me out in splendor then go [F]home to her
@@ -22,3 +25,5 @@ You take me home and then you're [F]gone home to her
 If you never will be free [F]why must all this torture be
 If [G7]you can't always be with me then go [C]home to her
 {end_of_verse}
+
+

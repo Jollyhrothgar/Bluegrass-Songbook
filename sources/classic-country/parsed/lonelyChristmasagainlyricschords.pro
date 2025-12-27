@@ -1,6 +1,9 @@
 {meta: title Lonely Christmas Again}
 {meta: artist Dave Dudley}
 {meta: composer Dave Dudley and Jimmy Key}
+{meta: x_source classic-country}
+{meta: x_source_file lonelyChristmasagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](Lonely [G7]Christmas [C]again)
@@ -34,3 +37,8 @@ But it's [G7]gone like the leaves of [Am]autumn
 {start_of_verse: Verse 5}
 [F]Lonely [G7]Christmas [F]agai[C]n
 {end_of_verse}
+
+
+
+
+

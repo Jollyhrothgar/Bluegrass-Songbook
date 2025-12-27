@@ -1,6 +1,9 @@
 {meta: title Twice The Loving}
 {meta: artist Jean Shepard}
 {meta: composer Floyd Huffman}
+{meta: x_source classic-country}
+{meta: x_source_file twicethelovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now you thought you had me hooked
@@ -41,3 +44,7 @@ I’ll go where I can get [G]twice the [E7]loving
 [C]I’m gonna get me [G]twice the [E7]loving
 [A7]Baby in [D7]half the [G]time
 {end_of_verse}
+
+
+
+

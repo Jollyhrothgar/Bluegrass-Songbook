@@ -1,6 +1,9 @@
 {meta: title Heartbroken}
 {meta: artist Cowboy Copas}
 {meta: composer Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file heartbrokenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heart[Fm]broken [C]because you're [A7]gone
@@ -26,3 +29,5 @@ When [D7]you don't care for [G7]me
 [C]Heart[Fm]broken [C]I love you [A7]still
 [D7]And it's plain to [G7]see I always [C]will
 {end_of_verse}
+
+

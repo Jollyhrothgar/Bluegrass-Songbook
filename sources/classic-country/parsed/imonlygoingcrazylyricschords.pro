@@ -1,6 +1,9 @@
 {meta: title I'm Only Going Crazy}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file imonlygoingcrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Take the [C]house take [F]our [C]dreams
@@ -27,3 +30,5 @@
 [G7]I'm only going crazy I've already made it [C]happen
 [G7]I'm only going crazy I've already made the [C]turn
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Call Me Lonesome}
 {meta: artist Jim Reeves}
 {meta: composer Rex Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file justcallmelonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I climb the stairs up to my [F]room 
@@ -29,3 +32,6 @@ Will [G7]fade into the distant [C]past
 If I must live and love [F]alone 
 Just [G7]call me lonesome from now [C]on
 {end_of_verse}
+
+
+

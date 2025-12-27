@@ -1,5 +1,8 @@
 {meta: title Dream Tide}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file dreamtidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s a ship full of memories [E7]that’s drifting [A7]tonight
@@ -42,3 +45,8 @@
 [G]Till someday with the turn of my dream [C]tide
 [D7]My darling you’ll drift back to [G]me
 {end_of_verse}
+
+
+
+
+

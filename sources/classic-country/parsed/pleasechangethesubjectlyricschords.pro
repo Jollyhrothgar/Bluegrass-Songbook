@@ -1,6 +1,9 @@
 {meta: title Please Change The Subject}
 {meta: artist Faron Young}
 {meta: composer Johnny McCollum}
+{meta: x_source classic-country}
+{meta: x_source_file pleasechangethesubjectlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You've [C]come here to [Em]my house
@@ -34,3 +37,7 @@ I'd [D7]rather not [G7]think of ol' [C]times
 {start_of_verse: Verse 5}
 I'd [D7]rather not [G7]think of ol' [C]times
 {end_of_verse}
+
+
+
+

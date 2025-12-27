@@ -1,6 +1,9 @@
 {meta: title Flat Top Gibson Guitar}
 {meta: artist Lloyd Snow}
 {meta: composer Pat Maher}
+{meta: x_source classic-country}
+{meta: x_source_file flattopgibsonguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The first day I saw him I'll never [D7]forget
@@ -49,3 +52,8 @@ And I've searched every crowd but with no luck so [C]far
 Wonder where could he [G]be and does he see [D7]me
 Still playing that old flat top Gibson [G]guitar
 {end_of_verse}
+
+
+
+
+

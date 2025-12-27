@@ -1,6 +1,9 @@
 {meta: title Before I Die}
 {meta: artist Jim Reeves}
 {meta: composer Jim Carroll}
+{meta: x_source classic-country}
+{meta: x_source_file beforeidielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No need to [D7]say you're [G]sorry no need to feel [C]ashamed
@@ -29,3 +32,6 @@ At least I lived a [G]little while [D7]before I [G]died
 [G]You'll always be a part of me though you can't be [C]mine
 At least I lived a [G]little while [D7]before I [G]died
 {end_of_verse}
+
+
+

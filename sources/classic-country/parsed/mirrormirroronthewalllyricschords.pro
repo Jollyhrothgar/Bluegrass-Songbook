@@ -1,5 +1,8 @@
 {meta: title Mirror Mirror On The Wall}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file mirrormirroronthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mirror mirror on the wall
@@ -44,3 +47,9 @@ Repeat #1
 [C]But I don't have to see
 [D7]I know it's gotta be [G]me
 {end_of_verse}
+
+
+
+
+
+

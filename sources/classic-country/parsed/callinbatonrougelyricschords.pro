@@ -1,6 +1,9 @@
 {meta: title Callin' Baton Rouge}
 {meta: artist Garth Brooks}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file callinbatonrougelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I spent last [G7]night in the arms of a [F]girl in Louisi[C]ana
@@ -45,3 +48,8 @@ Oh oh [G7]oh in Baton [C]Rouge [Am]
 My Baton [Am]Rouge [G7]
 [F]Yeah oh oh [C]oh oh
 {end_of_verse}
+
+
+
+
+

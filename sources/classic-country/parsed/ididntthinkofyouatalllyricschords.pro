@@ -1,6 +1,9 @@
 {meta: title I Didn't Think Of You At All}
 {meta: artist Gene Watson}
 {meta: composer Roger Brown}
+{meta: x_source classic-country}
+{meta: x_source_file ididntthinkofyouatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wouldn't say you're [C7]always on my [F]mind
@@ -27,3 +30,6 @@ There was a [G7]little while I didn't think of you at [C]all
 {start_of_verse: Verse 4}
 Yes for a [G7]little while I didn't think of you at [C]all 
 {end_of_verse}
+
+
+

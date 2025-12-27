@@ -1,6 +1,9 @@
 {meta: title Looking For Tomorrow}
 {meta: artist Mel Tillis}
 {meta: composer Billy Arr and David Allds}
+{meta: x_source classic-country}
+{meta: x_source_file lookingfortomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've tried so hard to get you off my [C]mind
@@ -33,3 +36,7 @@ I keep looking for [G]tomorrow [D7]and finding yester[G]day
 {start_of_verse: Verse 4}
 [C]I keep looking for [G]tomorrow [D7]and finding yester[G]day
 {end_of_verse}
+
+
+
+

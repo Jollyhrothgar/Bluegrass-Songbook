@@ -1,6 +1,9 @@
 {meta: title I Really Don't Want to Know}
 {meta: artist Eddy Arnold}
 {meta: composer Don Robertson and Howard Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file ireallydontwanttoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How many arms [F]have held [C]you
@@ -26,3 +29,6 @@ chorus
 [C]Just let [F]it remain [C]your secret but [C7]Darling I love you [F]so
 [C]No wonder  [D7]no wonder I wonder [C]though I really [G7]don't want to [C]know
 {end_of_verse}
+
+
+

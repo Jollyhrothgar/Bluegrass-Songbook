@@ -1,6 +1,9 @@
 {meta: title Her Heart Or Mine}
 {meta: artist Gene Watson}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file herheartorminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She wants so much more than I can give [G]her
@@ -33,3 +36,7 @@ I don't [C]know if I should [D7]break her heart or [G]mine
 {start_of_verse: Verse 4}
 I don't [C]know if I should [D7]break her heart or [G]mine
 {end_of_verse}
+
+
+
+

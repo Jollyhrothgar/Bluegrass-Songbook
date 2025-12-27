@@ -1,6 +1,9 @@
 {meta: title I Won't Get Over You}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene Martin}
+{meta: x_source classic-country}
+{meta: x_source_file iwontgetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you told [G7]me good[C]bye you [G7]said don’t you cry
@@ -34,3 +37,7 @@ And I know that I won’t get over [C]you
 {start_of_verse: Verse 5}
 Oh I [G7]know that I won’t get over [C]you
 {end_of_verse}
+
+
+
+

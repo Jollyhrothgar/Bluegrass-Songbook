@@ -1,6 +1,9 @@
 {meta: title Mockingbird Hill}
 {meta: artist Slim Whitman}
 {meta: composer Vaughn Horton}
+{meta: x_source classic-country}
+{meta: x_source_file mockingbirdhilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the [G7]sun in the morning peeps [C]over the hill
@@ -36,3 +39,7 @@ To [D7]wake up in the morning to the [G7]mockingbird's trill
 Tra-la-la twiddly-dee-dee there's [C]peace and [G7]goodwill
 You're [D7]welcome as the flowers on Mockingbird [G7]Hill
 {end_of_verse}
+
+
+
+

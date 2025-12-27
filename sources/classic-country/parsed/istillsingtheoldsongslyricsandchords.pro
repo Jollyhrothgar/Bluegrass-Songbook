@@ -1,5 +1,8 @@
 {meta: title I Still Sing The Old Songs}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file istillsingtheoldsongslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Grandpa I've been [F]thinking bout you [C]lately
@@ -42,3 +45,8 @@ And [F]I still pray to [G7]Jesus now and [C]then
 And [F]just like you I [G7]wish that He would [C]save me
 To [F]see the day the [Dm]South will rise [G7]again
 {end_of_verse}
+
+
+
+
+

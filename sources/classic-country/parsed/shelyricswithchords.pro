@@ -1,6 +1,9 @@
 {meta: title She}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Bill Dees}
+{meta: x_source classic-country}
+{meta: x_source_file shelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was the [Em]wind the [F]earth and [G7]sky
@@ -37,3 +40,7 @@ She was a [F]woman of the [G7]world
 [C]She was all my dreams [F]she was many things
 But [G7]she is she was she'll always [C]be a woman
 {end_of_verse}
+
+
+
+

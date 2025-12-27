@@ -1,6 +1,9 @@
 {meta: title Am I Locking Someone In}
 {meta: artist Mel Tillis}
 {meta: composer Joe Hayes and Fatima Atchley}
+{meta: x_source classic-country}
+{meta: x_source_file amilockingsomeoneinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you left I changed the locks on all the [C]doors
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]Am I locking someone in or someone [G]out
 {end_of_verse}
+
+
+
+

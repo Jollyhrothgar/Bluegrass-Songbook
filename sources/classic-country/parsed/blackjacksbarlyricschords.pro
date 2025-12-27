@@ -1,6 +1,9 @@
 {meta: title Black Jack's Bar}
 {meta: artist Porter Wagoner}
 {meta: composer Jimmie Driftwood}
+{meta: x_source classic-country}
+{meta: x_source_file blackjacksbarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was a young man I played my guitar
@@ -65,3 +68,11 @@ Sittin' in my cell with my old guitar
 [G7](I got in trouble in [C]Black Jack's Bar)
 [G7]Wonder who's a playin' in [C]Black Jack's Bar
 {end_of_verse}
+
+
+
+
+
+
+
+

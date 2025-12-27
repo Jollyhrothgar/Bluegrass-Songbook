@@ -1,5 +1,8 @@
 {meta: title I'll Never Regret Loving You}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file illneverregretlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll [G7]never regret loving [C]you [G7]
@@ -41,3 +44,9 @@ I'll [G7]never regret loving [C]you
 {start_of_verse: Verse 7}
 I'll [G7]never regret loving [C]you
 {end_of_verse}
+
+
+
+
+
+

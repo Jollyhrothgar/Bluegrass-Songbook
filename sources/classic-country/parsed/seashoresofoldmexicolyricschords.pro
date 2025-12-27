@@ -1,5 +1,8 @@
 {meta: title Seashores Of Old Mexico}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file seashoresofoldmexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I left out of Tucson with no destination in [G7]mind
@@ -46,3 +49,8 @@ Yeah she loved the gringo my red hair [C]and lingo
 That's all [C7]I needed [F]to know [C]ha [G7]ha
 Yeah [Dm]I found what I [G7]needed on the [Dm]seashores of [G7]old [C]Mexico
 {end_of_verse}
+
+
+
+
+

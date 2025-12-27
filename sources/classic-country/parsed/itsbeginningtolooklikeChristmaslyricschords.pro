@@ -1,5 +1,8 @@
 {meta: artist Johnny Mathis}
 {meta: composer Meredith Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file itsbeginningtolooklikeChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's beginning to look a [C]lot like [G]Christmas everywhere you [C]go
@@ -35,3 +38,7 @@ It's beginning to look a [C]lot like [G]Christmas soon the bells will [C]start
 And the thing that will [A7]make them ring is the [G]carol that you [E7]sing
 Right [Am]within your [G][D7]heart 
 {end_of_verse}
+
+
+
+

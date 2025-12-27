@@ -1,6 +1,9 @@
 {meta: title Without Love}
 {meta: artist Johnny Cash}
 {meta: composer Nick Lowe}
+{meta: x_source classic-country}
+{meta: x_source_file withoutlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Without love  I [C]am half [G]human 
@@ -32,3 +35,7 @@ Without [Em]love   I [D7]am not [G]whole
 Without love  I'm [C]barely on my [G]feet 
 I am [Em]dying  [D7]without [G]love
 {end_of_verse}
+
+
+
+

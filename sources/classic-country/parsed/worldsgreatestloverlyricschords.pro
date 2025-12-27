@@ -1,6 +1,9 @@
 {meta: title World's Greatest Lover}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file worldsgreatestloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's a little old fashioned  [G7]she's a little new [C]way
@@ -47,3 +50,8 @@ No I'm never gonna let her go [C]away
 {start_of_verse: Verse 5}
 She's the world's  [G7]greatest [C]lover
 {end_of_verse}
+
+
+
+
+

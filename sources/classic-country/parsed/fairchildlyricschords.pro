@@ -1,6 +1,9 @@
 {meta: title Fairchild}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file fairchildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your eyes are soft and gentle but your [D7]heart is hard and [G]cold
@@ -29,3 +32,6 @@
 [C]The morning news will tell of how they found us side by [G]side
 [D7]But it won't tell the truth [G]about our [C]accident [G][C][G]Fairchild
 {end_of_verse}
+
+
+

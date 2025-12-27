@@ -1,5 +1,8 @@
 {meta: title The Grand Tour}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file thegrandtourlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Step right up  come on in  if you'd like to take the grand tour
@@ -38,3 +41,9 @@ Taking [G]nothing but our [D7]baby and [G]my heart
 {start_of_verse: Verse 7}
 Step right up come on in
 {end_of_verse}
+
+
+
+
+
+

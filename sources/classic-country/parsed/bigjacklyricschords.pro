@@ -1,6 +1,9 @@
 {meta: title Big Jack}
 {meta: artist Charlie Rich}
 {meta: composer Wallace Rich}
+{meta: x_source classic-country}
+{meta: x_source_file bigjacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Big Jack you done me wrong
@@ -60,3 +63,15 @@ For takin' my gal and keep her all night long
 [G7]Oh no oh no oh [C]no
 [G7]Oh no oh no oh [C]no
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

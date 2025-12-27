@@ -1,6 +1,9 @@
 {meta: title I’ve Cried My Last Tear For You}
 {meta: artist Ricky Van Shelton}
 {meta: composer Chris Waters and Tony King}
+{meta: x_source classic-country}
+{meta: x_source_file ivecriedmylasttearforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you left me lonely here I [D7]thought that I would drown in tears
@@ -33,3 +36,7 @@ It's been raining pain since you walked out [C]but baby that's all over now
 {start_of_verse: Verse 4}
 [D7]Yes baby I've cried my [C]last [D7]tear for [G]you
 {end_of_verse}
+
+
+
+

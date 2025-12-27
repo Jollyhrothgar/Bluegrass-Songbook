@@ -1,5 +1,8 @@
 {meta: title Teardrops Over You}
 {meta: artist Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file teardropsoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m so lonesome [F]since you left [C]me
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [F]I’m still [C]crying [G7]teardrops over [C]you
 {end_of_verse}
+
+
+
+

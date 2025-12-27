@@ -1,6 +1,9 @@
 {meta: title She Never Stopped Loving Him}
 {meta: artist Patty Loveless}
 {meta: composer Wally Wilson and Danny Orton}
+{meta: x_source classic-country}
+{meta: x_source_file sheneverstoppedlovinghimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She [G]used to sit and stare
@@ -42,3 +45,6 @@ Then she [C]stopped and placed a [D7]rose on his [Em]stone
 Then [C]left him alone
 But she never stopped [D7]loving [G]him
 {end_of_verse}
+
+
+

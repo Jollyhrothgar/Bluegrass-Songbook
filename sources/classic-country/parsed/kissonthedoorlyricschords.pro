@@ -1,6 +1,9 @@
 {meta: title Kiss on the Door}
 {meta: artist Hank Locklin}
 {meta: composer Lawton Williams}
+{meta: x_source classic-country}
+{meta: x_source_file kissonthedoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sat there alone on your door [G7]step
@@ -29,3 +32,6 @@
 [C]I know now that you have walked out on [F]me
 [G7]So I left you a kiss on the [C]door
 {end_of_verse}
+
+
+

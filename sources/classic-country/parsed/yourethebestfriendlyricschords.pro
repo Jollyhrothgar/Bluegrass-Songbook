@@ -1,5 +1,8 @@
 {meta: title You're The Best Friend}
 {meta: artist Isla Grant}
+{meta: x_source classic-country}
+{meta: x_source_file yourethebestfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've been here beside me and [C]shared all my dreams through the [G]years
@@ -32,3 +35,7 @@ So [G]if sometimes I hurt you and the [C]things that I say makes you [G]sad [C]
 {start_of_verse: Verse 4}
 [G]Remember I love you and you're the [D7]best friend that I've ever [G]had
 {end_of_verse}
+
+
+
+

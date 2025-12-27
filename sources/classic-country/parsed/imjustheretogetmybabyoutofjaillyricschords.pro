@@ -1,6 +1,9 @@
 {meta: title I'm Just Here to Get My Baby Out of Jail}
 {meta: artist Everly Brothers}
 {meta: composer Karl Davis and Harty Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file imjustheretogetmybabyoutofjaillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm not in your town to stay
@@ -106,3 +109,24 @@ Said a lady old and grey
 I'm [G7]just here to get my baby out of [C]jail
 Yes [F]warden  I'm [G7]just here to get my baby out of [C]jail
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Farmer's Daughter}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file farmersdaughterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight there'll be [F]candlelight and [C]roses
@@ -28,3 +31,6 @@ And not be good enough to take her [F]hand
 But he says he really loves the farmer's [C]daughter  
 [G7]And I know the farmer's daughter loves the [C]man
 {end_of_verse}
+
+
+

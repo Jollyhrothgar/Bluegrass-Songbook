@@ -1,5 +1,8 @@
 {meta: title Maybe By Then}
 {meta: artist The Bellamy Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file maybebythenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess we used each other up [C]I guess it's [G]time for us to [C]go
@@ -43,3 +46,8 @@ Maybe [D7]again a light will [G]shine
 Maybe by [C]then it'll be a [G]brand new day 
 And [D7]we'll call it yours and [C]mine [G]  [C]  maybe by [G]then
 {end_of_verse}
+
+
+
+
+

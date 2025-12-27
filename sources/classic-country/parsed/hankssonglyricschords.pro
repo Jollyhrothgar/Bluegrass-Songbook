@@ -1,6 +1,9 @@
 {meta: title Hank's Song}
 {meta: artist Ferlin Husky}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file hankssonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just don't like this kind of [F]living 
@@ -43,3 +46,8 @@ Go on and set the woods on [G7]fire
 [C]From now on you'll be moaning the [F]blues 
 For [C]I'm a long [G7]gone daddy [C]now
 {end_of_verse}
+
+
+
+
+

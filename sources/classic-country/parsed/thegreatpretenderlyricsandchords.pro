@@ -1,6 +1,9 @@
 {meta: title The Great Pretender}
 {meta: artist Roy Orbison}
 {meta: composer Buck Ram}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatpretenderlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Oh [C]yes I'm the [F]great pre[C]tender
@@ -41,3 +44,8 @@ I [F]seem to [G7]be what I'm [C]not you [F]see
 I'm [C]wearing my [G7]heart like a [E7]crown
 [C]Pretending that [G7]you're still [C]around[F]  [C]
 {end_of_verse}
+
+
+
+
+

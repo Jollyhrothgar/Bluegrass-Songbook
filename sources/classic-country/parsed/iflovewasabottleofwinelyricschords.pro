@@ -1,6 +1,9 @@
 {meta: title If Love Was A Bottle Of Wine}
 {meta: artist Tommy Overstreet}
 {meta: composer Sterling Whipple}
+{meta: x_source classic-country}
+{meta: x_source_file iflovewasabottleofwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If love was a bottle of wine we'd be tryin' to buy [F]it
@@ -43,3 +46,8 @@
 [C]Yeah some people feel they can beg borrow steal or fake [F]it
 [Dm]But the only people [G7]in love are the people who make [C]it
 {end_of_verse}
+
+
+
+
+

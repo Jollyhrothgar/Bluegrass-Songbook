@@ -1,6 +1,9 @@
 {meta: title Twenty One Years Is A Mighty Long Time}
 {meta: artist The Gibson Brothers}
 {meta: composer Paul Clayton Worthington}
+{meta: x_source classic-country}
+{meta: x_source_file twentyoneyearsisamightylongtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The judge said stand up lad and dry up your [G7]tears
@@ -40,3 +43,8 @@ For twenty one [G7]years is a mighty long [C]time
 {start_of_verse: Verse 6}
 For twenty one [G7]years is a mighty long [C]time  
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Sam}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file samlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sam it's been awhile since I've [G7]seen or heard from you
@@ -32,3 +35,7 @@ That's [G7]just the way I [F]am I love you [C]Sam
 {start_of_verse: Verse 5}
 That's [G7]just the way I [F]am I love you [C]Sam [F]   [C]
 {end_of_verse}
+
+
+
+

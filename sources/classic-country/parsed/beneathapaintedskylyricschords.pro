@@ -1,6 +1,9 @@
 {meta: title Beneath A Painted Sky}
 {meta: artist Tammy Wynette}
 {meta: composer Joe Chambers and Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file beneathapaintedskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There never was a little girl more wanted than [D7]me
@@ -40,3 +43,8 @@ Oh I [G]wish that I could live again [D7]beneath the painted [G]sky
 {start_of_verse: Verse 5}
 Oh I wish was kid again [D7]beneath the painted [G]sky
 {end_of_verse}
+
+
+
+
+

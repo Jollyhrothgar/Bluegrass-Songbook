@@ -1,6 +1,9 @@
 {meta: title I Took A Memory For Lunch}
 {meta: artist Bobby Bare}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file itookamemoryforlunchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Tod[G]ay the weather was so [C]pretty 
@@ -36,3 +39,7 @@ The [D7]afternoon kept wearing [G]on
 I'm sorry that I'm late for [C]dinner 
 I [D7]took a memory to [G]lunch 
 {end_of_verse}
+
+
+
+

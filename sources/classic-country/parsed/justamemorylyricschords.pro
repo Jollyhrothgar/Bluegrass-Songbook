@@ -1,6 +1,9 @@
 {meta: title Just A Memory}
 {meta: artist Kitty Wells}
 {meta: composer Roy Botkin}
+{meta: x_source classic-country}
+{meta: x_source_file justamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here comes the [G7]reason I'm [C]lonely
@@ -29,3 +32,6 @@ But [C]there's not a [Am]cloud in the [D7]sky [G7]
 I could [C]say that they're tear[C7]drops but I'm not [F]crying
 [Dm]No it's just a [C]memory that [G7]blew in my [F]eye[C]
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title One Wife Five Kids Later}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file onewifefivekidslaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It seems like I've been [G7]married [F]all of my [C]life
@@ -32,3 +35,7 @@ And I'm still the [F]happiest [G7]man in the [C]world
 {start_of_verse: Verse 4}
 Yes I'm still the [F]happiest [G7]man in the [C]world 
 {end_of_verse}
+
+
+
+

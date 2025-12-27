@@ -1,6 +1,9 @@
 {meta: title Don't Pretend}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene Martin}
+{meta: x_source classic-country}
+{meta: x_source_file dontpretendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't pretend if you don't mean it
@@ -33,3 +36,7 @@ So don't pretend  [D7]honey I'm not [G]blind
 {start_of_verse: Verse 5}
 No don't pretend  [D7]honey I'm not [G]blind
 {end_of_verse}
+
+
+
+

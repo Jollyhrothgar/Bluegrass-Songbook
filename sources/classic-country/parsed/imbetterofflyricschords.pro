@@ -1,6 +1,9 @@
 {meta: title I'm Better Off}
 {meta: artist Johnny Paycheck}
 {meta: composer Wendy Bagwell}
+{meta: x_source classic-country}
+{meta: x_source_file imbetterofflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was a [F]little boy my [G7]mother used to [C]say
@@ -37,3 +40,8 @@
 [F]And I’m better off than I ever thought I [G7]would [F]beeeee
 [G7]Than I thought I would [C]be
 {end_of_verse}
+
+
+
+
+

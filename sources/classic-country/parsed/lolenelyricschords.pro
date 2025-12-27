@@ -1,5 +1,8 @@
 {meta: title Lolene}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file lolenelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When but a boy I [F]courted [C]Sally
@@ -42,3 +45,8 @@
 [C]And then [F]goodbye no more to see [C]you
 [F]Forever we must be [C]apart
 {end_of_verse}
+
+
+
+
+

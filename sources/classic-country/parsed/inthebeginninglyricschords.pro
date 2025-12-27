@@ -1,6 +1,9 @@
 {meta: title In The Beginning}
 {meta: artist The Statler Brothers}
 {meta: composer Fred Wise, Kay Twomey, Dorcas Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file inthebeginninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the [Am]beginning the [Em]Lord made the [C]earth
@@ -29,3 +32,6 @@ Per[F]fection was [E7]there for all [C]me[C7]n
 [F]So pray and [C]believe Him the [F]Lord's Holy [C]life
 And [F]we'll have per[G7]fection a[C]gain
 {end_of_verse}
+
+
+

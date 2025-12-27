@@ -1,6 +1,9 @@
 {meta: title Love's Endless War}
 {meta: artist Don Williams}
 {meta: composer Roger Cook}
+{meta: x_source classic-country}
+{meta: x_source_file lovesendlesswarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Hearts have been [Em]broken in the [F]game of true [Em]love
@@ -33,3 +36,8 @@ Many [F]proud hearts have [Em]foundered on [F]love's [Em]muti[C]ny
 {start_of_verse: Verse 5}
 [F]In love's [Em]endless [Am]war
 {end_of_verse}
+
+
+
+
+

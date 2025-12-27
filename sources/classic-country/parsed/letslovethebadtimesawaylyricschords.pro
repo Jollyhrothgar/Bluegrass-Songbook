@@ -1,6 +1,9 @@
 {meta: title Let's Love The Bad Times Away}
 {meta: artist Ricky Skaggs}
 {meta: composer Wayland Patton}
+{meta: x_source classic-country}
+{meta: x_source_file letslovethebadtimesawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh [F]please [C]hold me one more [G7]time like [F]you used to [C]do
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]Oh for the [C]good times let's love the [G7]bad times [C][F]away
 {end_of_verse}
+
+
+

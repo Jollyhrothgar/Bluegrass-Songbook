@@ -1,6 +1,9 @@
 {meta: title Blindfold Of Love}
 {meta: artist George Jones}
 {meta: composer Dallas Frazier and Clarence R. Selman}
+{meta: x_source classic-country}
+{meta: x_source_file blindfoldoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I keep bumping into trees
@@ -52,3 +55,7 @@ rippitippi downtown
 We're in the [D7]blindfold of [G]love 
 [D7]Rippitippi [G]downtown
 {end_of_verse}
+
+
+
+

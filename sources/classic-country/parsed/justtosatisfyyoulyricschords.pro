@@ -1,6 +1,9 @@
 {meta: title Just To Satisfy You}
 {meta: artist Waylon Jennings}
 {meta: composer Waylon Jennings and Don Bowman}
+{meta: x_source classic-country}
+{meta: x_source_file justtosatisfyyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Someone's gonna get [F]hurt before you're [G]through
@@ -29,3 +32,6 @@ To satisfy [G]you  [C]just to satisfy [G]you
 [C]How many hearts must break  how many [D7]will it [C]take
 To satisfy [G]you [C]just to satisfy [G]you
 {end_of_verse}
+
+
+

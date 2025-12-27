@@ -1,6 +1,9 @@
 {meta: title Little Shirt My Mother Made For Me}
 {meta: artist Marty Robbins}
 {meta: composer Harry Wincott}
+{meta: x_source classic-country}
+{meta: x_source_file littleshirtmymothermadeformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't forget the day that I was [G7]born
@@ -57,3 +60,10 @@ And [F]some were takin' pictures I could [C]see
 Was a good thing for me that I was [F]wearin'
 The [G7]little shirt my mother made for [C]me
 {end_of_verse}
+
+
+
+
+
+
+

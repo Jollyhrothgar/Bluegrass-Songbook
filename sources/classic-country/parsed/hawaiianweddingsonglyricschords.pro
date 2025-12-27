@@ -1,6 +1,9 @@
 {meta: title Hawaiian Wedding Song}
 {meta: artist Jim Reeves}
 {meta: composer Al Hoffman, Dick Manning, Charles King}
+{meta: x_source classic-country}
+{meta: x_source_file hawaiianweddingsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This is the moment  [C]I've waited [G]for
@@ -22,3 +25,5 @@
 [D7]On this our wedding [G]day
 [C]I do  love you  with [D7]all my [G]heart
 {end_of_verse}
+
+

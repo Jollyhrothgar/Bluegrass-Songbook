@@ -1,6 +1,9 @@
 {meta: title Teardrops in My Heart}
 {meta: artist Sons of the Pioneers}
 {meta: composer Vaughn Horton}
+{meta: x_source classic-country}
+{meta: x_source_file teardropsinmyheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You'll never know [F]I cried  [C]when I found out you'd [G7]lied
@@ -22,3 +25,5 @@ To be with [D7]you my darling is my [G7]prayer
 [C]But way down deep [F]inside  [C]I can't give up my [G7]pride
 So I'll keep riding hiding teardrops in my [C]heart
 {end_of_verse}
+
+

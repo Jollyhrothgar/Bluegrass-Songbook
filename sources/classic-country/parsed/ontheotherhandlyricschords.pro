@@ -1,6 +1,9 @@
 {meta: title On The Other Hand}
 {meta: artist Randy Travis}
 {meta: composer Don Schlitz and Paul Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file ontheotherhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On one hand I count the reasons I could [F]stay with you
@@ -29,3 +32,6 @@ But on the [F]other hand there's a golden [C]band
 [F]On one hand I could stay and be your [C]loving man
 [G7]But the reason I must go is on the other [C]hand
 {end_of_verse}
+
+
+

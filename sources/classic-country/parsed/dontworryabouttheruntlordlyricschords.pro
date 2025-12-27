@@ -1,6 +1,9 @@
 {meta: title Don't Worry About The Runt Lord}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file dontworryabouttheruntlordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look at them hogs Lord hugging that [F]feed trough
@@ -70,3 +73,13 @@ They can’t [G7]touch this poor boy’s [C]soul
 It’s for sure Lord 
 They can’t [G7]touch this poor boy’s [F]soul[C]
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

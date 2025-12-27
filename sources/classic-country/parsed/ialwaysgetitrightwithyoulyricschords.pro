@@ -1,6 +1,9 @@
 {meta: title I Always Get It Right With You}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen and Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ialwaysgetitrightwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby I ran when [G7]I should have walked
@@ -37,3 +40,8 @@ And [D7]I don't even understand mys[G]elf[G7]
 {start_of_verse: Verse 6}
 [F]Yes I [C]always  [G7] get it right with [C]you
 {end_of_verse}
+
+
+
+
+

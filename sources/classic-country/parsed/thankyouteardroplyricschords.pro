@@ -1,6 +1,9 @@
 {meta: title Thank You Teardrop}
 {meta: artist David Houston}
 {meta: composer Don Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file thankyouteardroplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Thank you [G]teardrop for [D7]falling from her [G]eyes
@@ -28,3 +31,6 @@
 [G]You saved her love for me thank you little tear
 [D7]Thank you [G]teardrop
 {end_of_verse}
+
+
+

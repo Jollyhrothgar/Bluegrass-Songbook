@@ -1,6 +1,9 @@
 {meta: title We'll Never Change}
 {meta: artist Ernest Tubb and Loretta Lynn}
 {meta: composer John Cliff}
+{meta: x_source classic-country}
+{meta: x_source_file wellneverchangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The years will [D7]see us [G]together
@@ -34,3 +37,7 @@ In our [G]hearts [D7]we'll never [G]change
 {start_of_verse: Verse 5}
 In our hearts [D7]we'll never [G]change
 {end_of_verse}
+
+
+
+

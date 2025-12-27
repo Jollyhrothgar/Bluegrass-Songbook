@@ -1,6 +1,9 @@
 {meta: title The Best Day}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Carson Chamberlain}
+{meta: x_source classic-country}
+{meta: x_source_file thebestdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We loaded up my old [D7]station wagon
@@ -65,3 +68,11 @@ This is the [D7]best day of my [G]life
 I'm the [C]luckiest man alive
 This is the [D7]best day of my [G]life
 {end_of_verse}
+
+
+
+
+
+
+
+

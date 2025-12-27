@@ -1,6 +1,9 @@
 {meta: title My Soul Is Strong}
 {meta: artist Hank Locklin}
 {meta: composer Hank Locklin and Raymond C. Davis Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file mysoulisstronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I praise the Lord  my [C]Jesus [G]came
@@ -33,3 +36,7 @@ My body is [G]weak  but [D7]my soul is [G]strong
 {start_of_verse: Verse 4}
 [C]My body is [G]weak  but [D7]my soul is [G]strong
 {end_of_verse}
+
+
+
+

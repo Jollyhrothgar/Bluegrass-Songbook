@@ -1,5 +1,8 @@
 {meta: title In The Palm Of Your Hand}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file inthepalmofyourhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I dance every time you pull the [F]string
@@ -28,3 +31,6 @@ Yes [G7]loving you is messing up my [C]mind
 But try as I may I just can't stop [F]me 
 You've got me [G7]right in the palm of your [C]hand
 {end_of_verse}
+
+
+

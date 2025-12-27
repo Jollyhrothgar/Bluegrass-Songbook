@@ -1,6 +1,9 @@
 {meta: title Long Long Ago}
 {meta: artist Marty Robbins}
 {meta: composer Thomas Haynes Bayly}
+{meta: x_source classic-country}
+{meta: x_source_file longlongagolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tell me the tales that to me [F]were so [C]dear 
@@ -29,3 +32,6 @@ Ah yes you told me you'd ne[F]ver for[C]get
 Still my heart treasures the prai[F]ses I [C]heard 
 [G7]Long long ago long [C]ago
 {end_of_verse}
+
+
+

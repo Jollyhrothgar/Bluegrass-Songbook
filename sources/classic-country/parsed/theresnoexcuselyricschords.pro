@@ -1,6 +1,9 @@
 {meta: title There's No Excuse}
 {meta: artist The Louvin Brothers}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file theresnoexcuselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh there's no excuse if you [C]don't know the [G]Savior
@@ -50,3 +53,9 @@
 [G]It don't take education and it [C]don't cost you a [G]cent
 [D7]Oh there's no excuse if you die in [G]sin
 {end_of_verse}
+
+
+
+
+
+

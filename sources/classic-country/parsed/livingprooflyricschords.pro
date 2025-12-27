@@ -1,5 +1,8 @@
 {meta: title Living Proof}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file livingprooflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna quit singing all these sad songs [G7]cause I can’t stand the [C]pain
@@ -39,3 +42,8 @@ Lord please help me do I [G]have to be the [D7]living [G]proof
 {start_of_verse: Verse 5}
 [C]Lord please help me I [G]wanna be the [D7]living [G]proof
 {end_of_verse}
+
+
+
+
+

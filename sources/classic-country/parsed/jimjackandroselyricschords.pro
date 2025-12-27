@@ -1,6 +1,9 @@
 {meta: title Jim Jack and Rose}
 {meta: artist Johnny Bush}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file jimjackandroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]These three [G7]close friends and [C]I
@@ -35,3 +38,6 @@ They’re the [C]only [F]friends I’ve [C]got
 And I'm [F]proud I've got to [C]know
 Jim Beam [F]Jack [C]Daniels and [G7]Sweet Gypsy [C]Rose
 {end_of_verse}
+
+
+

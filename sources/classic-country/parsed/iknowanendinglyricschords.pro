@@ -1,6 +1,9 @@
 {meta: title I Know An Ending}
 {meta: artist Gene Watson}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file iknowanendinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never thought that you'd be leaving me
@@ -40,3 +43,10 @@ And [F]even now it's so [G7]hard to [C]believe
 {start_of_verse: Verse 7}
 Oh at [F]least I know an [G7]ending when it [C][F]com-es
 {end_of_verse}
+
+
+
+
+
+
+

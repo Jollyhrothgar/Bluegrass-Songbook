@@ -1,6 +1,9 @@
 {meta: title It's Easy To Remember}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Lorenz Hart and Richard Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file itseasytorememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's so easy to re[C]member
@@ -29,3 +32,6 @@ Maybe I'll find [A7]someone else to [D7]care
 It's so [G]easy to re[C]member 
 And it's [G]so hard [D7]to for[G]get
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Your Love's Been A Long Time Coming}
 {meta: artist Tammy Wynette}
 {meta: composer Norro Wilson and Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file yourlovesbeenalongtimecominglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling let me spend a moment [D7]with you
@@ -30,3 +33,6 @@ It took a [C]long time a-[F]working it out
 [C]Now it's here and [F]there's no doubt
 Your [C]love's been a [F]long time [G7]coming but it's here to [F]st[C]ay
 {end_of_verse}
+
+
+

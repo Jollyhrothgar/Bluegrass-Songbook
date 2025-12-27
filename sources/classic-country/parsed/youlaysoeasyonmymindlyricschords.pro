@@ -1,6 +1,9 @@
 {meta: title You Lay So Easy On My Mind}
 {meta: artist Conway Twitty}
 {meta: composer Bobby G. Rice, Charles Fields, Donald L. Riis}
+{meta: x_source classic-country}
+{meta: x_source_file youlaysoeasyonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You lay so easy on my mind oh so [C]easy on my mind
@@ -30,3 +33,6 @@ You lay so [F]easy on my mind oh so [C]easy on my mind
 Oh there's not a thought of me that [G7]your sweet love don't reach to [C]satisfy
 Oh there's not a thought of me that [G7]your sweet love don't reach to [C]satisfy
 {end_of_verse}
+
+
+

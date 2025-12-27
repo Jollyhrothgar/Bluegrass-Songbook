@@ -1,5 +1,8 @@
 {meta: title Four Books In The Bible}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file fourbooksinthebiblelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Do you want to know what's the matter with [C]this ole sinful [G]world
@@ -42,3 +45,8 @@ As told to His disciples [A7]upon Mount Olive [D7]high
 [G]The multitude there gathered to [G7]hear this message [C]from
 Four books in the [G]bible Matthew [D7]Mark Luke and [G]John 
 {end_of_verse}
+
+
+
+
+

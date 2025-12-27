@@ -1,6 +1,9 @@
 {meta: title Promises}
 {meta: artist Randy Travis}
 {meta: composer John Lindley and Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file promiseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cheap perfume and painted faces fallin' angels fill the places
@@ -37,3 +40,7 @@ Just token [E7]promises will someday break her heart
 And for the [F]last time she'll hold me when I cry
 And while I'm [G7]sleeping she'll [F]quietly [G7]say good[C]bye
 {end_of_verse}
+
+
+
+

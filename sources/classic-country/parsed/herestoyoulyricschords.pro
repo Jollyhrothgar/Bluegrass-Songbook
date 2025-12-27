@@ -1,6 +1,9 @@
 {meta: title Here's To You}
 {meta: artist Ray Price}
 {meta: composer Ray Holt}
+{meta: x_source classic-country}
+{meta: x_source_file herestoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For all the times when I wonder [F]why you love me
@@ -29,3 +32,6 @@ And I [Dm]hope  I'll be [G7]beside you [C]when they do [C7]
 [F]For I tell myself there's [C]just no one else
 Who could [Dm]be so right for [G7]me  as [C]you
 {end_of_verse}
+
+
+

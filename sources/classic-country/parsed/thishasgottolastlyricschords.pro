@@ -1,6 +1,9 @@
 {meta: title This Has Got To Last}
 {meta: artist Johnny Duncan}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file thishasgottolastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know she never [F]promised she would [C]stay
@@ -33,3 +36,7 @@ So [C]this has got to [G7]last a long long [C]time
 {start_of_verse: Verse 5}
 So this has got to [G7]last a long long [C]time
 {end_of_verse}
+
+
+
+

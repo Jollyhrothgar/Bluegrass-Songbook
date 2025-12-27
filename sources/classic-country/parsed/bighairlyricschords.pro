@@ -1,6 +1,9 @@
 {meta: title Big Hair}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file bighairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My baby's got [C]big hair
@@ -56,3 +59,7 @@ I feel just like a Texas [G]millionaire
 My baby's got [D7]big hair
 [C]She's the one I [G]love
 {end_of_verse}
+
+
+
+

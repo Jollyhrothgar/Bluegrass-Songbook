@@ -1,6 +1,9 @@
 {meta: title Behind My Back}
 {meta: artist Hank Locklin}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file behindmybacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I feel I'm safe in saying you don't [F]love me
@@ -29,3 +32,6 @@ Don't [G7]need a ton of bricks to fall on me
 I [C]know your love is gone the [F]way you carry on
 Behind my [G7]back right in front of [C]me
 {end_of_verse}
+
+
+

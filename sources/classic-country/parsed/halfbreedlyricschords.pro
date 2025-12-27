@@ -1,6 +1,9 @@
 {meta: title Half Breed}
 {meta: artist Canadian Sweethearts}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file halfbreedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your pappy was a trader and your [C]mammy was an Indian [G]maid boy
@@ -27,3 +30,6 @@ Half breed [C]their hot on your trail boy [G]half breed but you [C]better not ru
 [G]Half breed [C]you'd better get a gun boy better get a gun and [G]stand boy
 [C]You better get a gun and [G]stand 
 {end_of_verse}
+
+
+

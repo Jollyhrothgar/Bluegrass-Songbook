@@ -1,6 +1,9 @@
 {meta: title Do What You Gotta Do}
 {meta: artist Garth Brooks}
 {meta: composer Pat Flynn}
+{meta: x_source classic-country}
+{meta: x_source_file dowhatyougottadolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes you've got to [F]take the [C]heat 
@@ -42,3 +45,8 @@ But [G7]you'll find out that sooner or later
 Nobody [G7]in this [Am]world is gonna [G7]do it for [F]you 
 [G7]Do what you gotta [C]do
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Flying With Angels}
 {meta: artist Daniel O'Donnell}
+{meta: x_source classic-country}
+{meta: x_source_file flyingwithangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What do you have friend in [F]this world [C]below
@@ -32,3 +35,7 @@ Flying with [C]angels a [F]new home to [C]share
 {start_of_verse: Verse 5}
 [F]Flying with [C]angels a [F]new home to [C]share
 {end_of_verse}
+
+
+
+

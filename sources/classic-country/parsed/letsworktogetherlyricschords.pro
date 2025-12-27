@@ -1,6 +1,9 @@
 {meta: title Let's Work Together}
 {meta: artist Dwight Yoakam}
 {meta: composer Wilbert Harrison}
+{meta: x_source classic-country}
+{meta: x_source_file letsworktogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well together we stand divided we fall
@@ -47,3 +50,8 @@ Yeah [D7]together we will stand every [C]boy every woman and [G]man
 Oh I said [D7]together we will stand every [C]boy every woman and [G]man
 Yeah [D7]together we will stand every [C]boy every woman and [G]man
 {end_of_verse}
+
+
+
+
+

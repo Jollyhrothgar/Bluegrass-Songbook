@@ -1,6 +1,9 @@
 {meta: title Heartbreak in Silhouette}
 {meta: artist Jim Reeves}
 {meta: composer Peggy Ann Manson, Allen McCoy, Carey Fraley}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakinsilhouettelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I listened to an old [G7]friend [F]describe the girl he'd [C]met
@@ -30,3 +33,6 @@ My [C]friend sat that there in [G7]silence and not [F]one word was [C]said
 Two broken [G7]hearts were [C]sharing heartbreak [F]in [C]Silhouette 
 Heartbreak [F]in [C]silhouette
 {end_of_verse}
+
+
+

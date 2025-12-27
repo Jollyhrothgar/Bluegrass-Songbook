@@ -1,6 +1,9 @@
 {meta: title Danville Girl}
 {meta: artist The Greenbriar Boys}
 {meta: composer Vince Martin}
+{meta: x_source classic-country}
+{meta: x_source_file danvillegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My pocket book was empty
@@ -43,3 +46,8 @@ And [C]walked the [D7]railroad [G]track
 And [C]there I [G]caught the next freight train
 [D7]Never to come [G]back
 {end_of_verse}
+
+
+
+
+

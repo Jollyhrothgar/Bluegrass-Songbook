@@ -1,6 +1,9 @@
 {meta: title Only You Only You}
 {meta: artist Charlie Walker}
 {meta: composer Jack Newman and Charlie Walker}
+{meta: x_source classic-country}
+{meta: x_source_file onlyyouonlyyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Only you could steal my heart away from me
@@ -36,3 +39,7 @@ Never dreamed that I’d be so in love with [G7]you
 Never [C]thought that it could be [C7]just only [F]you
 Only [C]you only [G7]you only [C]you
 {end_of_verse}
+
+
+
+

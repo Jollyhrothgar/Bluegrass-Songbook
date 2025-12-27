@@ -1,6 +1,9 @@
 {meta: title Under The Sun}
 {meta: artist Jimmy Dean}
 {meta: composer Joe Shapiro and Lou Stallman}
+{meta: x_source classic-country}
+{meta: x_source_file underthesunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Under the sun more than just the sun is shinin'
@@ -57,3 +60,10 @@ Under the sun heads of those in love is spinnin'
 [C]Under the sun heads of those in love is spinnin'
 [G7]Spinnin' for the whole wide world to [C]see
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ain't Worth The Powder}
 {meta: artist David Allan Coe}
 {meta: composer Max D. Barnes and Gib Guilbeau}
+{meta: x_source classic-country}
+{meta: x_source_file aintworththepowderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came up the hard way and fought with my back to the [F]wall
@@ -33,3 +36,7 @@ But I ain't worth the powder to [G7]blow me to hell without [C]you
 {start_of_verse: Verse 4}
 No I ain't worth the powder to [G7]blow me to hell without [F]yo[C]u
 {end_of_verse}
+
+
+
+

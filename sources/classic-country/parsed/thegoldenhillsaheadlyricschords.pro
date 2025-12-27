@@ -1,5 +1,8 @@
 {meta: title The Golden Hills Ahead}
 {meta: artist The Oak Ridge Boys}
+{meta: x_source classic-country}
+{meta: x_source_file thegoldenhillsaheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This dark and [C]troubled land [G]below
@@ -48,3 +51,11 @@ But I know the sun is shinning shinning
 But I know the sun is shining
 [D7]On the golden hills [G]ahead
 {end_of_verse}
+
+
+
+
+
+
+
+

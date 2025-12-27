@@ -1,5 +1,8 @@
 {meta: title Maybe I Should Leave}
 {meta: artist Jeannie Seely}
+{meta: x_source classic-country}
+{meta: x_source_file maybeishouldleavelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I've been thinking maybe I should [G]leave
@@ -23,3 +26,5 @@ That's the [D7]worst thing I could do
 But if [G]I keep hanging on I [C]might make myself a fool
 [D7]So maybe I should leave before you [G]do
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title He Broke Your Memory Last Night}
 {meta: artist Reba McEntire}
 {meta: composer Dickey Lee and Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file hebrokeyourmemorylastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like a rare piece of [B7]crystal like a [C]fine china [Am]cup
@@ -33,3 +36,7 @@ Then [G]he broke your memory last [C]night
 {start_of_verse: Verse 5}
 [D7]He broke your memory last [G]night
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title From This Moment On}
 {meta: artist George Morgan}
 {meta: composer Bonnie Guitar}
+{meta: x_source classic-country}
+{meta: x_source_file fromthismomentonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Suddenly you [F]touched me  [G7]and my heart could [C]see
@@ -31,3 +34,6 @@ And the history of love will [C7]make me
 [F]Gladly giving [Fm]gladly taking each [G7]others love 
 From this moment [C]on
 {end_of_verse}
+
+
+

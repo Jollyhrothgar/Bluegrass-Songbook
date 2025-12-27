@@ -1,6 +1,9 @@
 {meta: title Arms of a Fool}
 {meta: artist Mel Tillis}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file armsofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So many times you've told me that you love [G7]me
@@ -29,3 +32,6 @@
 [C]So if your new flame dies and you're still burning with [F]desire
 [C]Come on home to [G7]the arms of a [C]fool
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Down By The Riverside}
 {meta: artist Clay Walker}
 {meta: composer Kent Blazy, Kim Williams, Clay Walker}
+{meta: x_source classic-country}
+{meta: x_source_file downbythetiversidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The wind was [D7]blowing through your [Am]hair 
@@ -40,3 +43,7 @@ We [C]gave into [Em]passion for the [D7]very first time
 We [C]fumbled with [G]love till [D7]we got it [Em]right
 And we found [C]heaven  [D7]down by the [G]riverside
 {end_of_verse}
+
+
+
+

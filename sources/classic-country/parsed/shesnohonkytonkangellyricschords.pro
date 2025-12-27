@@ -1,5 +1,8 @@
 {meta: title She's No Honky-Tonk Angel}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file shesnohonkytonkangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She don't belong here she's [F]just here to [C]think
@@ -32,3 +35,7 @@ So why [F]don't she go [C]home be[G7]fore she learns [C]how
 {start_of_verse: Verse 4}
 So why [F]don't she go [C]home be[G7]fore she learns [C]how
 {end_of_verse}
+
+
+
+

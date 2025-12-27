@@ -1,6 +1,9 @@
 {meta: title He Was On To Something}
 {meta: artist Ricky Skaggs}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file hewasontosomethinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The moon ain't yellow and the moon ain't blue
@@ -64,3 +67,14 @@ That He was [C]on to something  [G7]so He made [C]you
 {start_of_verse: Verse 12}
 [F]Yeah He was [C]on to something [G7]so he made [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

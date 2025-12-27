@@ -1,6 +1,9 @@
 {meta: title Don't You See That Train}
 {meta: artist The Delmore Brothers}
 {meta: composer Alton Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file dontyouseethattrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Farewell [C]sweetie mine I [D7]hate to see you [G]go
@@ -49,3 +52,8 @@ She's leaving she's [C]leaving [G]on that [D7]train
 See that train hey hey
 And I'll never [C]see my [G]sweet[D7]heart [G]again
 {end_of_verse}
+
+
+
+
+

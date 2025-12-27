@@ -1,6 +1,9 @@
 {meta: title Fine As Wine}
 {meta: artist Billy Walker}
 {meta: composer Eddie Rabbitt and Even Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file fineaswinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She loves her rodeo man turns him [C]every way but [G]loose
@@ -36,3 +39,7 @@ Softer than the fuzz on the sweetest Georgia [D7]peach
 Warms you goin' [G]down like a [C]twenty-two year old [G]brandy
 And when she loves me Lord she's [D7]fine fine as [G]wine
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lucky Ladies}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file luckyladieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come listen all you lucky ladies
@@ -29,3 +32,6 @@ Who think you have the perfect [G7]plan
 There is [Dm]always someone [C]waiting
 To take the [Dm]love he gave to [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Little Old Wine Drinker Me}
 {meta: artist Dean Martin}
 {meta: composer Hank Mills and Dick Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file alittleoldwinedrinkermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm praying for rain [F]in [C]California
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]I say a little [G7]old wine drinker [C]me
 {end_of_verse}
+
+
+
+

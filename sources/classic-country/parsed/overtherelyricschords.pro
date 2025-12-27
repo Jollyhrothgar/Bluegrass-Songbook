@@ -1,6 +1,9 @@
 {meta: title Over There}
 {meta: artist Gene Watson}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file overtherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gotta home so much better 
@@ -91,3 +94,14 @@ All God’s [F]children will be satisfied
 Oh I [C]believe [A7]hallelujah I [D7]believe 
 That we’ll [G7]meet on the other [C]side 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

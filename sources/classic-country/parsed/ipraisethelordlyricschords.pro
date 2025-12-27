@@ -1,5 +1,8 @@
 {meta: title I Praise The Lord}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file ipraisethelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I praise the [C]Lord each [D7]day that I [G]live
@@ -33,3 +36,7 @@ The [C]more I praise the [G]Lord the [C]closer [D7]I come to [G]Him
 The [C]more I praise the [G]Lord the [C]closer [D7]I come to [G]Him
 Yes the [C]closer [D7]I come to [G]Him
 {end_of_verse}
+
+
+
+

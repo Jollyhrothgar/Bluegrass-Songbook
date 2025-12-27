@@ -1,6 +1,9 @@
 {meta: title Won't You Be Mine}
 {meta: artist Blue Highway}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file wontyoubeminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Can't you hear the night birds crying
@@ -43,3 +46,8 @@ Under[C]neath the lonesome [G]pine
 There we vowed we'd love each other
 Darling say [D7]won't you be [G]mine
 {end_of_verse}
+
+
+
+
+

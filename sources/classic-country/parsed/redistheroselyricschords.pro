@@ -1,5 +1,8 @@
 {meta: title Red Is The Rose}
 {meta: artist Mary Duff}
+{meta: x_source classic-country}
+{meta: x_source_file redistheroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come over the [Am]hills my [F]bonnie Irish [G7]lass
@@ -42,3 +45,8 @@ Red is the [Am]rose that in [F]yonder garden [G7]grows
 [F]Clear is the [C]water that [F]flows from the [G7]Boyne
 But [C]my love is [F]fair-[C]er [G7]than an[C]y
 {end_of_verse}
+
+
+
+
+

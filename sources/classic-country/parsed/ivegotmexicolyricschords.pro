@@ -1,6 +1,9 @@
 {meta: title I've Got Mexico}
 {meta: artist Eddy Raven}
 {meta: composer Edward Futch and Frank Myers}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotmexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just got tired of that [Am]same old job
@@ -36,3 +39,7 @@ I'm eating right and I'm [Am]living good
 [Em]I should have left a long [Am]time ago 
 [D7]Who needs you I got [G]Mexico
 {end_of_verse}
+
+
+
+

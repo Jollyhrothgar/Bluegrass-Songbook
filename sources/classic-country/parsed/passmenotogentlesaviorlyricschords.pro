@@ -1,6 +1,9 @@
 {meta: title Pass Me Not O Gentle Savior}
 {meta: artist Statler Brother}
 {meta: composer Francis J. Crosby and William H. Doane}
+{meta: x_source classic-country}
+{meta: x_source_file passmenotogentlesaviorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Savior [C]Savior 
@@ -22,3 +25,5 @@ Savior [C]Savior
 [G]While on [C]others Thou art [G]calling 
 [D7]Do not pass me [G]by 
 {end_of_verse}
+
+

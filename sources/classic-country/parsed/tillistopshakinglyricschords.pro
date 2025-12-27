@@ -1,6 +1,9 @@
 {meta: title Till I Stop Shaking}
 {meta: artist Billy Crash Craddock}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file tillistopshakinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lady you don't [D7]know me 
@@ -43,3 +46,8 @@ Would you [C]please let me hide in your [G]arms
 It don’t [C]matter what we're giving or [G]taking
 Just [D7]hold me (hold me) till I stop [G]shaking
 {end_of_verse}
+
+
+
+
+

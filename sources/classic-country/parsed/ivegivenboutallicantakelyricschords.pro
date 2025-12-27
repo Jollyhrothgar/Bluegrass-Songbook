@@ -1,6 +1,9 @@
 {meta: title I've Given Bout All I Can Take}
 {meta: artist Charly McClain}
 {meta: composer Susanna Clark and Jon Reid}
+{meta: x_source classic-country}
+{meta: x_source_file ivegivenboutallicantakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I burned all the letters that you never wrote
@@ -33,3 +36,6 @@ And [Em]I never [D7]was one to [C]fake
 I've just [G]given bout [D7]all I can [Em]take[G]
 Yeah I've [C]given bout [D7]all I can [Em]take[G]  [C]  [D7]   [G]
 {end_of_verse}
+
+
+

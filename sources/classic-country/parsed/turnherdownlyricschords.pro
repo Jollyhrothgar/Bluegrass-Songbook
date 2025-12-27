@@ -1,6 +1,9 @@
 {meta: title Turn Her Down}
 {meta: artist Faron Young}
 {meta: composer Ted Edlin and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file turnherdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was offered the love of a girl who is [G7]married
@@ -43,3 +46,8 @@ Turn her [G7]down and leave her [C]alone
 Turn her down [F]down as fast as you [C]can
 Turn her [G7]down and send her back [C]home
 {end_of_verse}
+
+
+
+
+

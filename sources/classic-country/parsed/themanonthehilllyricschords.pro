@@ -1,5 +1,8 @@
 {meta: title The Man On The Hill}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file themanonthehilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Will we get cold and hungry will times be very bad
@@ -28,3 +31,6 @@ But who's gonna pay the dyin' bills [A7]if we all should [D7]die
 [G]We'll leave it to the [F]man in the [C]sky when we [E7]die
 Yes we'll [G]leave it to the [D7]man in the [G]sky
 {end_of_verse}
+
+
+

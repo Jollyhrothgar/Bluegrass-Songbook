@@ -1,6 +1,9 @@
 {meta: title One Step At A Time}
 {meta: artist George Strait}
 {meta: composer Earl Clark and Luke Reed}
+{meta: x_source classic-country}
+{meta: x_source_file onestepatatimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I couldn’t help but over hear your conver[C]sation
@@ -34,3 +37,7 @@ They just [D7]walk away one step at a [G]time
 It’ll be too late when you [G7]realize [C]angels don’t [Am]fly
 They just [D7]walk away one step at a [G]time
 {end_of_verse}
+
+
+
+

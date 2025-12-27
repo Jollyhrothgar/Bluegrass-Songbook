@@ -1,6 +1,9 @@
 {meta: title Enjoy The Ride}
 {meta: artist Ricky Skaggs}
 {meta: composer Don Rollins, Tommy Conners, Vincent Williams}
+{meta: x_source classic-country}
+{meta: x_source_file enjoytheridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another day another chance
@@ -53,3 +56,10 @@
 [F]Its only life enjoy the [G7]ride
 [C]Another day another chance
 {end_of_verse}
+
+
+
+
+
+
+

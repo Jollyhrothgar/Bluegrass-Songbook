@@ -1,6 +1,9 @@
 {meta: title They Covered Up The Old Swimmin' Hole}
 {meta: artist Bobby Bare}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file theycovereduptheoldswimminholelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Boring through the mountains by-[F]passing the [C]towns
@@ -43,3 +46,8 @@ Felt good [F]to a [C]boy with [D7]mud on his [G7]feet
 And I'm [C]wishing these days I could [F]strip to my [C]soul
 And go [F]for a [C]dip in the [G7]old swimmin' [C]hole
 {end_of_verse}
+
+
+
+
+

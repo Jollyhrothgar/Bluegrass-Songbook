@@ -1,6 +1,9 @@
 {meta: title Let It Be Me}
 {meta: artist The Everly Brothers}
 {meta: composer Pierre Delance and Gilbert Becaud}
+{meta: x_source classic-country}
+{meta: x_source_file letitbemelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I bless the day I found [G7]you  
@@ -43,3 +46,8 @@ Don’t take this heaven from [G7]one
 [F]And that you’ll [C]always 
 [F]Let it be [C]me 
 {end_of_verse}
+
+
+
+
+

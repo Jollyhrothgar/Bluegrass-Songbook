@@ -1,6 +1,9 @@
 {meta: title Between Lust and Watching TV}
 {meta: artist Cal Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file betweenlustandwatchingtvlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The life that I'm seeking
@@ -80,3 +83,15 @@ I haven't been shopping but there's lots of bargains
 [C]And there would be us somewhere between [G]lust
 [D7]And sitting home watching [G]TV
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

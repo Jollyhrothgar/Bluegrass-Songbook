@@ -1,6 +1,9 @@
 {meta: title Oh So Many Years}
 {meta: artist the Everly Brothers}
 {meta: composer Frankie Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file ohsomanyyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All these many years I've loved you no one has ever [F]known
@@ -29,3 +32,6 @@
 [C]Then one sweet kiss from your dear lips will banish all my [F]fears
 [C]My darling I have loved you oh [G7]so many [C]years
 {end_of_verse}
+
+
+

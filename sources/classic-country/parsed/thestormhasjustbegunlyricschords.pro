@@ -1,5 +1,8 @@
 {meta: title The Storm Has Just Begun}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file thestormhasjustbegunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I realize the [G7]storm has just [C]begun
@@ -32,3 +35,7 @@ All I want is you to be my only [G7]one
 An[C]other night is [C7]coming and a [F]long night it will [C]be
 And I realize the [G7]storm has just [C]begun
 {end_of_verse}
+
+
+
+

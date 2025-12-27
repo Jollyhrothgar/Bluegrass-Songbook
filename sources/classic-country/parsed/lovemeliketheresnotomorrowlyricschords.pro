@@ -1,6 +1,9 @@
 {meta: title Love Me Like There's No Tomorrow}
 {meta: artist Sonny James}
 {meta: composer Arlie Duff}
+{meta: x_source classic-country}
+{meta: x_source_file lovemeliketheresnotomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love me like there's no [G][C]tomorrow
@@ -30,3 +33,6 @@
 [A7]And keep me [D7]right by your [Em][G]side
 [A7]Keep me right [D7]by your [G][C][G]side
 {end_of_verse}
+
+
+

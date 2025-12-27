@@ -1,6 +1,9 @@
 {meta: title Rockin' In The Arms Of Your Memory}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Norro Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file rockininthearmsofyourmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]The first time I [G7]saw you [Dm]you were waitin' [G7]tables at the corner [C]diner
@@ -51,3 +54,10 @@ I'm drowning in your love a little more each [C]day
 [Dm]I'm holding on for dear [G7]life
 [Dm]Rocking in the arms of your [G7]memory to[Am]night [C]
 {end_of_verse}
+
+
+
+
+
+
+

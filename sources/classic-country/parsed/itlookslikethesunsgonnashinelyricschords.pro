@@ -1,6 +1,9 @@
 {meta: title It Looks Like The Sun’s Gonna Shine}
 {meta: artist Wilburn Brothers}
 {meta: composer Andrew Eddings}
+{meta: x_source classic-country}
+{meta: x_source_file itlookslikethesunsgonnashinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh it looks like the sun's gonna shine shine shine
@@ -36,3 +39,7 @@ And it [C]looks like the [G7]sun's gonna [C]shine
 The [C]dark clouds are gone and the blue skies are mine
 And it looks like the [G7]sun's gonna [C]shine
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Till Love Comes Again}
 {meta: artist Reba McEntire}
 {meta: composer Bob Regan and Ed Hill}
+{meta: x_source classic-country}
+{meta: x_source_file tilllovecomesagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Bm]White [E7]light [A7]shadows [Am]gather [D7]round my [G]door
@@ -35,3 +38,7 @@ It's [C]darkest just [F]before the dawn
 {start_of_verse: Verse 5}
 [Am]Unill then till [D7]love comes [G]again[C]  [G]
 {end_of_verse}
+
+
+
+

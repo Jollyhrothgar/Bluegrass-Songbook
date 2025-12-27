@@ -1,6 +1,9 @@
 {meta: title Here We Go Again}
 {meta: artist Norma Jean}
 {meta: composer Dusty Rose}
+{meta: x_source classic-country}
+{meta: x_source_file herewegoagainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh well [D7]here we go [G]again
@@ -32,3 +35,6 @@ When I [C]think I’ve had enough
 And I [G]try to get tough you just [D7]smile
 Oh well here we go [G]again
 {end_of_verse}
+
+
+

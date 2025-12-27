@@ -1,6 +1,9 @@
 {meta: title Last Night At The Party}
 {meta: artist Faron Young}
 {meta: composer Roger Miller and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file lastnightatthepartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey I had a very good [F]time at a [C]party
@@ -48,3 +51,9 @@ I [D7]lost every[G7]thing at a party
 [C]Last night I [G7]really really [C]did
 Oh yeah I [G7]really really really [C]did [F]   [C]
 {end_of_verse}
+
+
+
+
+
+

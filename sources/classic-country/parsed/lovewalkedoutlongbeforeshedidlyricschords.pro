@@ -1,5 +1,8 @@
 {meta: title Love Walked Out Long Before She Did}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file lovewalkedoutlongbeforeshedidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I knew [G7]love had paid the price when her [C]kisses turned to ice
@@ -32,3 +35,7 @@ But [F]love walked out [G7]long before she [C]did
 {start_of_verse: Verse 5}
 And [F]love walked out [G7]long before she [C]did
 {end_of_verse}
+
+
+
+

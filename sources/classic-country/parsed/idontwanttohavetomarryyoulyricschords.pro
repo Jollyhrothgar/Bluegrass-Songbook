@@ -1,6 +1,9 @@
 {meta: title I Don’t Want To Have To Marry You}
 {meta: artist Jim Ed Brown and Helen Cornelius}
 {meta: composer Fred Imus and Phillip H. Sweet}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttohavetomarryyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don’t want to have marry [C]you
@@ -59,3 +62,12 @@ I don’t want have to say I [G]do
 I want our love to be [D7]free
 The [C]way God meant love to [G]be
 {end_of_verse}
+
+
+
+
+
+
+
+
+

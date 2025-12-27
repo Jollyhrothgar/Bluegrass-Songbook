@@ -1,6 +1,9 @@
 {meta: title Able Bodied Man}
 {meta: artist Charley Pride}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file ablebodiedmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm calling from the station and I [F]haven't got much time to let you [C]know
@@ -32,3 +35,6 @@ If they're [F]looking for an [G7]able bodied [C]man
 {start_of_verse: Verse 4}
 And [F]remember I'm your [G7]able bodied [C]man
 {end_of_verse}
+
+
+

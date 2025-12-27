@@ -1,6 +1,9 @@
 {meta: title Mama He's Crazy}
 {meta: artist The Judds}
 {meta: composer Kenny O'Dell}
+{meta: x_source classic-country}
+{meta: x_source_file mamahescrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mama I found someone like you said would come [C]along
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]Oh and mama he's [G]crazy [D7]he's crazy over [G]me
 {end_of_verse}
+
+
+
+

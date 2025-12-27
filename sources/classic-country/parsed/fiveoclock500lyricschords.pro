@@ -1,6 +1,9 @@
 {meta: title Five O'Clock 500}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Ron Rogers, Theodore Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file fiveoclock500lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just [F]punched the clock and boy [C]am I [G]ready
@@ -48,3 +51,8 @@ It's that [C]5 o'clock [D7]500
 [C]Five o'clock [D7]500  [C]five o'clock [D7]500 every [G]day
 Every [A]day every [C]day every [G]day
 {end_of_verse}
+
+
+
+
+

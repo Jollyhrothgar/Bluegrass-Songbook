@@ -1,6 +1,9 @@
 {meta: title Which Way Will You Choose}
 {meta: artist Randy Travis}
 {meta: composer Ron Block}
+{meta: x_source classic-country}
+{meta: x_source_file whichwaywillyouchooselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]As the world becomes entwined in the [D7]lies from Satan's [Em]mind
@@ -43,3 +46,9 @@ You got [Em]everything to [D7]gain you got [B7]everything to [Em]lose
 Which way will you choose which way will you choos[B7]e
 You got [Em]everything to [D7]gain you got [B7]everything to [Em]lose
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Girl You Came And Eased My Mind}
 {meta: artist Tommy Overstreet}
 {meta: composer Charlie Black}
+{meta: x_source classic-country}
+{meta: x_source_file girlyoucameandeasedmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl you came and eased my [D7]mind
@@ -31,3 +34,6 @@ Times when I was feeling low [D7]and my world was turning cold
 And the smile that always [G]found you there
 [C]Girl you came and eased my [D7]mind and you were [G]kind
 {end_of_verse}
+
+
+

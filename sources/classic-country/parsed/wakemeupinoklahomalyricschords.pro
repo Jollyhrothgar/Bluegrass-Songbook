@@ -1,6 +1,9 @@
 {meta: title Wake Me Up In Oklahoma}
 {meta: artist Jim Ed Brown}
 {meta: composer Tony Lindauer}
+{meta: x_source classic-country}
+{meta: x_source_file wakemeupinoklahomalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wake me up in [F]Okla[G7]homa
@@ -57,3 +60,10 @@ Momma said my [C]baby [D7]waited
 [C]Wake me up in [F]Okla[G7]homa
 [F]To the only love I [C]know[D7]
 {end_of_verse}
+
+
+
+
+
+
+

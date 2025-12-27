@@ -1,6 +1,9 @@
 {meta: title You Never Want To Love Me}
 {meta: artist Hank Locklin}
 {meta: composer Carl Belew}
+{meta: x_source classic-country}
+{meta: x_source_file youneverwanttolovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You never wanna kiss me you never wanna love [C]me
@@ -30,3 +33,6 @@
 [C]You never wanna kiss me you never wanna love me
 [G7]And you don't want nobody else [C]to
 {end_of_verse}
+
+
+

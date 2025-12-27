@@ -1,6 +1,9 @@
 {meta: title Feels Like A Saturday Night}
 {meta: artist Earl Thomas Conley}
 {meta: composer Earl T. Conley and Randy Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file feelslikeasaturdaynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I traveled all over looking for sweet paradise
@@ -54,3 +57,12 @@ Yeah I grew up loving and singing the songs of the south
 [A#7]And oh momma [F]you treat me so [C]right
 [G7]It's Monday morning but I feel like it's Saturday [C]night
 {end_of_verse}
+
+
+
+
+
+
+
+
+

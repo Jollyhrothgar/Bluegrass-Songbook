@@ -1,6 +1,9 @@
 {meta: title I Wouldn't Have Missed It For The World}
 {meta: artist Ronnie Milsap}
 {meta: composer Rhonda Kye Fleming, Charles W. Quillen, Dennis W. Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldnthavemisseditfortheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Our paths may never cross [G]again
@@ -35,3 +38,6 @@ You've made my whole life worth [Am]while with your [D7]smile
 Even though [D7]I lost you [Am]girl
 [D7]I wouldn't have missed it for the [G]world
 {end_of_verse}
+
+
+

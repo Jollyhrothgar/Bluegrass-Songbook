@@ -1,5 +1,8 @@
 {meta: title Love Keeps Hanging On}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file lovekeepshangingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately [D7]I've been [G]losin' the [D7]darkness in my [G]head
@@ -26,3 +29,6 @@ In lots of ways we've fallen off but [D7]love keeps hangin' [G]on
 I could be mistaken but [D7]our tender years are [G]gone
 In lots of ways we've fallen off but [D7]love keeps hangin' [G]on
 {end_of_verse}
+
+
+

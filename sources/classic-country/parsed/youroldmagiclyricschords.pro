@@ -1,6 +1,9 @@
 {meta: title Your Old Magic}
 {meta: artist Tanya Tucker}
 {meta: composer Tony Martin and Troy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file youroldmagiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There was a time [Em]I would have fallen for that [D7]line
@@ -36,3 +39,7 @@ Your old [C]magic just [D7]doesn't do the trick any[G]more[Em]    [D7]
 [C]I'm finally [D7]over falling [G]under your [Em]spell
 Your old [C]magic just [D7]doesn't do the trick any[G]more[Em]   [D7]   [Am]   [G]
 {end_of_verse}
+
+
+
+

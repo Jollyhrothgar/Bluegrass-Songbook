@@ -1,6 +1,9 @@
 {meta: title I Can't Remember}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson and Becki Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file icantrememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was late and [F]I was [C]sleepin' when he called
@@ -30,3 +33,6 @@ Did she say he took the car or [F]what a fool you are
 [G7]I can't remember but I can't forget he's [C]gone
 [G7]I can't remember but I can't forget he's [C]gone
 {end_of_verse}
+
+
+

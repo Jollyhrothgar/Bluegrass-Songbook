@@ -1,6 +1,9 @@
 {meta: title Fallen Leaves}
 {meta: artist Porter Wagoner}
 {meta: composer Louis M. Jones}
+{meta: x_source classic-country}
+{meta: x_source_file fallenleaveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fallen leaves that lie scattered on the [F]ground
@@ -29,3 +32,6 @@
 [F]When you leave this earth for a better home someday
 [G7]The only thing you'll take is what you gave [C]away
 {end_of_verse}
+
+
+

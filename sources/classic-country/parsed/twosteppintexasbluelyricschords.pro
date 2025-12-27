@@ -1,6 +1,9 @@
 {meta: title Two Steppin' Texas Blue}
 {meta: artist Joni Harms}
 {meta: composer Pat McManus and Joni Harms}
+{meta: x_source classic-country}
+{meta: x_source_file twosteppintexasbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm two steppin' Texas [F]blue
@@ -47,3 +50,9 @@
 [C7]I'd even waltz across this whole darned state
 [F]To dance again with you I'm [G7]two steppin' Texas [C]blue
 {end_of_verse}
+
+
+
+
+
+

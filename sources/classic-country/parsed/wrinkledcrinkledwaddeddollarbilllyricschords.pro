@@ -1,6 +1,9 @@
 {meta: title Wrinkled Crinkled Wadded Dollar Bill}
 {meta: artist Johnny Cash}
 {meta: composer Vincent Matthews}
+{meta: x_source classic-country}
+{meta: x_source_file wrinkledcrinkledwaddeddollarbilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got a lot of [C]blues on my [G]mind 
@@ -48,3 +51,9 @@ To a [G]wrinkled crinkled [D7]wadded dollar [G]bill
 No I'm not [D7]bound and I never will [C]be 
 To a [G]wrinkled crinkled [D7]wadded dollar [G]bill
 {end_of_verse}
+
+
+
+
+
+

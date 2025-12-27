@@ -1,5 +1,8 @@
 {meta: title Hank And The Hobo}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file hankandthehobolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well Willie he carried his [F]guitar on his [C]back 
@@ -35,3 +38,7 @@ They say he rode every [G7]train
 His [C]music was a legend among [F]the [C]hobo's 
 And the songs of [G7]Hank that he [C][F]s-a-ng
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Birds And The Bees}
 {meta: artist Brenda Lee}
 {meta: composer Barry Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file thebirdsandthebeeslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me tell you bout the birds and the bees
@@ -43,3 +46,8 @@ And the [G7]flowers and the trees
 And the moon up above
 And a thing called [C]love
 {end_of_verse}
+
+
+
+
+

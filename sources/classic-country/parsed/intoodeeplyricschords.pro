@@ -1,6 +1,9 @@
 {meta: title In Too Deep}
 {meta: artist George Strait}
 {meta: composer Jerry Lane and Erv Woolsey}
+{meta: x_source classic-country}
+{meta: x_source_file intoodeeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't love a strain ain't it a pain in your heart
@@ -43,3 +46,9 @@ Doing [C]all I can and I can't stand to see us fall apart
 {start_of_verse: Verse 7}
 [F]No I'm in too [G7]deep to pull out [C]now
 {end_of_verse}
+
+
+
+
+
+

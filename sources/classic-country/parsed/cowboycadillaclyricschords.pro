@@ -1,6 +1,9 @@
 {meta: title Cowboy Cadillac}
 {meta: artist Garth Brooks}
 {meta: composer Bryan Kennedy and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file cowboycadillaclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've never known one better she's a real go getter
@@ -63,3 +66,11 @@ I'm wantin' [D7]cowboy Cadi[G]llac
 She's my [D7]honkin' tonkin' everything 
 I'm wantin' cowboy Cadi[G]llac
 {end_of_verse}
+
+
+
+
+
+
+
+

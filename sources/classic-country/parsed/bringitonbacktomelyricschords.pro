@@ -1,6 +1,9 @@
 {meta: title Bring It On Back To Me}
 {meta: artist Jan Howard}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file bringitonbacktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Bring it on back bring it on back 
@@ -62,3 +65,12 @@ Honey bring it on back to [C]me
 [G7]Bring it on back bring it on back 
 Bring it on back to [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+

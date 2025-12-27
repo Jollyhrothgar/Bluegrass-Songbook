@@ -1,6 +1,9 @@
 {meta: title Southern Comfort}
 {meta: artist Conway Twitty}
 {meta: composer Jamie O'Hara}
+{meta: x_source classic-country}
+{meta: x_source_file southerncomfortlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I know a lady in [C]Alabam
@@ -46,3 +49,10 @@
 {start_of_verse: Verse 5}
 [D7]So [G]fine
 {end_of_verse}
+
+
+
+
+
+
+

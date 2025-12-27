@@ -1,6 +1,9 @@
 {meta: title Daddy What If}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file daddywhatiflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Daddy what if the [Am]sun stop shining
@@ -54,3 +57,10 @@ You [Am]better start [D7]loving me [G]again
 You love me Bobby
 You [Am]better start [D7]loving me [G]again
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title What A Fool I Was}
 {meta: artist Eddy Arnold}
 {meta: composer Stu Davis}
+{meta: x_source classic-country}
+{meta: x_source_file whatafooliwaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What a fool I was to [G7]ever let you [C]go
@@ -36,3 +39,7 @@ A [F]sweeter love than yours I'll never [C]know
 Darling [F]I was so unwise and [C]now I realize
 What a fool I was to [G7]ever let you [C]go
 {end_of_verse}
+
+
+
+

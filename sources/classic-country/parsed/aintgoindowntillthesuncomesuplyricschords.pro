@@ -1,6 +1,9 @@
 {meta: title Ain't Goin' Down (Till The Sun Comes Up)}
 {meta: artist Garth Brooks}
 {meta: composer Kent Blazy, Kim Williams, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file aintgoindowntillthesuncomesuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Six o'clock on Friday evenin' mama doesn't know she's leavin'
@@ -55,3 +58,9 @@ The stalls are clean the horses fed they say she's grounded till she's dead
 [F]Goin' round the world in a pickup truck 
 [C]Ain't goin' down till the [F]sun comes [C]up
 {end_of_verse}
+
+
+
+
+
+

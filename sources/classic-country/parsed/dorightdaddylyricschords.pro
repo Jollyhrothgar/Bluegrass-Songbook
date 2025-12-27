@@ -1,6 +1,9 @@
 {meta: title Do Right Daddy}
 {meta: artist Hank Snow}
 {meta: composer Bill Nettles}
+{meta: x_source classic-country}
+{meta: x_source_file dorightdaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I just came down from up across [E7]the zoo
@@ -31,3 +34,7 @@
 [A7]Because my little baby done turned me down
 [D7]I'm a do right daddy but I can't keep living this [G]way
 {end_of_verse}
+
+
+
+

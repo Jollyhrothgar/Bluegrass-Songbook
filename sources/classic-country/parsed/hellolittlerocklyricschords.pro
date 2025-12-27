@@ -1,6 +1,9 @@
 {meta: title Hello Little Rock}
 {meta: artist Wynn Stewart}
 {meta: composer Ronnie Mack}
+{meta: x_source classic-country}
+{meta: x_source_file hellolittlerocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I pulled into [F]Little Rock the dawn was [C]breaking
@@ -32,3 +35,6 @@ Lord that's the [C]way it's got to [F]be
 Today it's [C]hello Little Rock [G7]goodbye Tenne[C]ssee
 Today it's hello Little Rock [G7]goodbye Tenne[C]ssee
 {end_of_verse}
+
+
+

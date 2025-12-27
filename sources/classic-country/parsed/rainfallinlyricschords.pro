@@ -1,6 +1,9 @@
 {meta: title Rain Fallin'}
 {meta: artist Reba McEntire}
 {meta: composer Charlie Black}
+{meta: x_source classic-country}
+{meta: x_source_file rainfallinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rain fallin' fallin' rain 
@@ -43,3 +46,8 @@ Of the [G]rain fallin' fallin' rain
 That [B7]comes [Em]with my [D7]only [C]friend[Am] 
 It's the [D7]gently falling [G]rain
 {end_of_verse}
+
+
+
+
+

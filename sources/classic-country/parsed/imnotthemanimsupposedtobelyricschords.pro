@@ -1,6 +1,9 @@
 {meta: title I'm Not The Man I'm Supposed To Be}
 {meta: artist Lefty Frizzell}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file imnotthemanimsupposedtobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm supposed to shake his [C7]hand and walk off [F]smiling
@@ -27,3 +30,6 @@ Then I'm [C]not the man that [G7]I'm supposed to [C]be
 So if I don't shake his [C7]hand and come out [F]fighting
 Then [C]I'm not the [G7]man I'm supposed to [C]be
 {end_of_verse}
+
+
+

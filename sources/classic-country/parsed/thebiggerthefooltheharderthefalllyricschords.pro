@@ -1,5 +1,8 @@
 {meta: title The Bigger The Fool The Harder The Fall}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file thebiggerthefooltheharderthefalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey doesn't it [E7]still look easy [Am]as it did [G7]to [F]you
@@ -33,3 +36,7 @@ And [F]nobody [C]answers when you [G7]call
 Think of the [E7]crazy dreamer [Am]who believes [G7]in [F]you
 [C]The bigger the [G7]fool the harder they [C]fall
 {end_of_verse}
+
+
+
+

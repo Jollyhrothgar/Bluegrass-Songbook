@@ -1,6 +1,9 @@
 {meta: title Your Old Love Letters}
 {meta: artist Jim Reeves}
 {meta: composer Johnny Bond}
+{meta: x_source classic-country}
+{meta: x_source_file youroldloveletterslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today I burned your old love letters
@@ -35,3 +38,8 @@ The last one said that we were [G7]through
 Our love is there among the [C]embers
 Of the [G7]ashes of your letters tied in [C]blue
 {end_of_verse}
+
+
+
+
+

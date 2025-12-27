@@ -1,6 +1,9 @@
 {meta: title Why Can't I Leave Her Alone}
 {meta: artist George Strait}
 {meta: composer Ashe Underwood, Danny Wells, Mark Kerr}
+{meta: x_source classic-country}
+{meta: x_source_file whycantileaveheralonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know I don't want her I swear that's a fact
@@ -58,3 +61,10 @@ I know I don't want her I swear that's a fact
 But the [F]thought of [C]somebody else [F]rubbing her back
 Just [C]kills me
 {end_of_verse}
+
+
+
+
+
+
+

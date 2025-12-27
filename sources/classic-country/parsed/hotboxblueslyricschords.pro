@@ -1,6 +1,9 @@
 {meta: title Hot Box Blues}
 {meta: artist Boxcar Willie}
 {meta: composer Randy Leiner}
+{meta: x_source classic-country}
+{meta: x_source_file hotboxblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just riding along by the mighty Mississippi
@@ -64,3 +67,11 @@ When you [D7]cookin' like momma [G]do
 You don't need no kitchen 
 When you [D7]cookin' like momma [G]do
 {end_of_verse}
+
+
+
+
+
+
+
+

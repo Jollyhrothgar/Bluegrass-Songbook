@@ -1,6 +1,9 @@
 {meta: title I Love Thy Kingdom Lord}
 {meta: artist Tennessee Ernie Ford}
 {meta: composer Ernie Ford and Jack Fascinato}
+{meta: x_source classic-country}
+{meta: x_source_file ilovethykingdomlordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love Thy kingdom [G7]Lord
@@ -38,3 +41,7 @@ And [F]brighter [G7]bliss of [C]heaven
 {comment: F  C}
 {comment: A--men}
 {end_of_verse}
+
+
+
+

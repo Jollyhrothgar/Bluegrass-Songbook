@@ -1,6 +1,9 @@
 {meta: title I Want To Be Free}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Leiber and Mike Stoller}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttobefreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There's no [C]joy in my [G7]heart only [C]sorrow[G7]
@@ -37,3 +40,7 @@ I want to be [D7]free [G7]like the bird in the [C]tree
 I want to be [D7]free [G7]like the bird in the [C]tree 
 [F](want to be [C]free)
 {end_of_verse}
+
+
+
+

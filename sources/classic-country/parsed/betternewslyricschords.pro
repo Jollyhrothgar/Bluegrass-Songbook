@@ -1,6 +1,9 @@
 {meta: title Better News}
 {meta: artist John Anderson}
 {meta: composer John D. Anderson and Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file betternewslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I wish I [Em]had better [Am]news that she was [E7]still in love with [Am]you
@@ -33,3 +36,7 @@ Who’s happy or who’s [C]sadder when there’s [D7]tears on every face
 {start_of_verse: Verse 4}
 [Am]I wish I [Em]had better [Am]news
 {end_of_verse}
+
+
+
+

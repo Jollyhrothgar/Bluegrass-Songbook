@@ -1,6 +1,9 @@
 {meta: title Out Of A Honky Tonk}
 {meta: artist Charlie Walker}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file outofahonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Out of a honky tonk came the [C]girl I love
@@ -36,3 +39,7 @@ Out of a [D7]honky tonk walked this [G]girl
 And she gives me love like I [C]never knew
 Out of a [G]honky tonk [D7]came my whole [G]world
 {end_of_verse}
+
+
+
+

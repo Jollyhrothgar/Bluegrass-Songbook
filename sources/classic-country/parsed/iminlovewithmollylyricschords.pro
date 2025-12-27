@@ -1,6 +1,9 @@
 {meta: title I'm In Love With Molly}
 {meta: artist Ernest Tubb}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file iminlovewithmollylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I'm in love with [G7]Molly and I love Molly [C]too
@@ -34,3 +37,5 @@ She knows I like her [C]too
 But [F]my plans with her pa [C]he's been smokin' my cigars
 I [G7]wonder who she's foolin' me or [C]you
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Actions Speak Louder Than Words}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file actionsspeaklouderthanwordslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can’t eat the fruit while you're cussing the tree that it [G7]came from
@@ -49,3 +52,9 @@ Cause [G7]actions speak louder than [C]words[C7]
 And you [F]can’t eat the fruit while [C]you're cussing the tree
 Cause [G7]actions speak louder than [C]words
 {end_of_verse}
+
+
+
+
+
+

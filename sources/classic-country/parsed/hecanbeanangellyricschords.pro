@@ -1,6 +1,9 @@
 {meta: title He Can Be An Angel}
 {meta: artist Charley Pride}
 {meta: composer Donny Lowery}
+{meta: x_source classic-country}
+{meta: x_source_file hecanbeanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He'll grow up too fast his mother [G7]said
@@ -54,3 +57,9 @@
 [F]He can be an angel he can be his mother's pride and [C]joy
 [F]He's a very special little boy [G7]he is [C]love
 {end_of_verse}
+
+
+
+
+
+

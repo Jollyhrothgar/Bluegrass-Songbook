@@ -1,6 +1,9 @@
 {meta: title Things That I Don't Know}
 {meta: artist Marty Robbins}
 {meta: composer Jack Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file thingsthatidontknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've heard it said what you don't know won't make you [D7]blue
@@ -32,3 +35,6 @@ So it's not the things I know you do
 That [C]breaks my heart you see
 It's the [G]things that I don't [D7]know that's killing [G]me
 {end_of_verse}
+
+
+

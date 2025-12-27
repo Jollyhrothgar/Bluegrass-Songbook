@@ -1,5 +1,8 @@
 {meta: artist Bobby Barewritten by}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file droppingoutofsightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll be dropping out of sight for [F]awhile
@@ -25,3 +28,6 @@ I'll be [G7]dropping out of sight for [C]awhile
 {start_of_verse: Verse 4}
 I'll be [G7]dropping out of sight for [C]awhile
 {end_of_verse}
+
+
+

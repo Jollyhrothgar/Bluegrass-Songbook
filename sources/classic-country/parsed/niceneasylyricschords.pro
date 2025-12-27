@@ -1,6 +1,9 @@
 {meta: title Nice'n Easy}
 {meta: artist Johnny Duncan and Janie Fricke}
 {meta: composer Alan Bergman, Marilyn Keith Bergman, Lew Spence}
+{meta: x_source classic-country}
+{meta: x_source_file niceneasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let's take it nice and easy it's gonna be so easy[Am]
@@ -34,3 +37,7 @@ The [G]problem now of course is to simply hold our horses
 [G]Nice and [Em]easy [Am]does it nice and [Em]easy
 [G]Nice and [Em]easy [Am]does it [A7]every [G]time
 {end_of_verse}
+
+
+
+

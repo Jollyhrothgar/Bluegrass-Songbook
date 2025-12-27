@@ -1,5 +1,8 @@
 {meta: title Our Wedding Song}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file ourweddingsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh my pretty one oh my dearest one [F]soon you will [C]be
@@ -24,3 +27,6 @@ In my arms so tight in the silent night [D7]married to [G7]me
 I [F]love you darling with [C]all my heart [G7]as days or years go [C]by
 [F]Forsaking all others [C]for your [Am]love [C]until [G7]the day I [F]d-i-[C]e
 {end_of_verse}
+
+
+

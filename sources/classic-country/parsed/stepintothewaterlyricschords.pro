@@ -1,6 +1,9 @@
 {meta: title Step Into The Water}
 {meta: artist Cathedral Quartet}
 {meta: composer Kirk Talley}
+{meta: x_source classic-country}
+{meta: x_source_file stepintothewaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Step into the water wade out a little bit deeper
@@ -45,3 +48,8 @@ Oh [G]step into the water wade out a little bit deeper
 Oh [G]step into the water wade out a little bit deeper 
 [D7]Come join angels singing Praises [Am]to the [D7]Lamb of [G]God
 {end_of_verse}
+
+
+
+
+

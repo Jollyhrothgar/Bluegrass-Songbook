@@ -1,6 +1,9 @@
 {meta: title Anonymous}
 {meta: artist Garth Brooks}
 {meta: composer Tony Arata and Jonathan Shawe}
+{meta: x_source classic-country}
+{meta: x_source_file anonymouslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [F]wrote our [G7]names a [C]thousand times
@@ -36,3 +39,8 @@ Well I [G7]wrote our names a [C]thousand times
 Just to [F]see yours sitting [C]next to mine
 And I [Dm]sent you flowers [G7]card unsigned [F]
 {end_of_verse}
+
+
+
+
+

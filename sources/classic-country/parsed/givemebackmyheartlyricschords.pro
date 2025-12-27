@@ -1,6 +1,9 @@
 {meta: title Give Me Back My Heart}
 {meta: artist Jimmy Dean}
 {meta: composer Paul Anka}
+{meta: x_source classic-country}
+{meta: x_source_file givemebackmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh give me back my heart my love it's the only one I [F]own
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 6}
 [G7]Give me back my [C]heart
 {end_of_verse}
+
+
+
+
+

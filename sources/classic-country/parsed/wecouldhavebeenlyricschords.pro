@@ -1,6 +1,9 @@
 {meta: title We Could Have Been}
 {meta: artist Vince Gill}
 {meta: composer Don Cook and John Jarvis}
+{meta: x_source classic-country}
+{meta: x_source_file wecouldhavebeenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today at [F]work I [G7]overheard a [C]name
@@ -47,3 +50,9 @@ We [G7]could have [C]been
 {start_of_verse: Verse 5}
 We [G7]could have [C]been
 {end_of_verse}
+
+
+
+
+
+

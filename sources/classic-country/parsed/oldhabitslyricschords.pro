@@ -1,5 +1,8 @@
 {meta: title Old Habits}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file oldhabitslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I kicked the habit of smoking back some time [F]ago
@@ -21,3 +24,5 @@ And [G7]old habits like you are hard to [C]break
 [F]I had grown so used to you and all of your [C]ways
 And [G7]old habits like you are hard to [C]break
 {end_of_verse}
+
+

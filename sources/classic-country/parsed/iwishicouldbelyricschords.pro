@@ -1,6 +1,9 @@
 {meta: title I Wish I Could Be}
 {meta: artist The Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file iwishicouldbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I could be in [G7]Knoxville tonight
@@ -29,3 +32,6 @@ And you were lying there in [C]North Carolina sun
 [G7]Everything we [C]had was [F]still yet to be
 [G7]Carolina you sure [F]got the best of [C]me
 {end_of_verse}
+
+
+

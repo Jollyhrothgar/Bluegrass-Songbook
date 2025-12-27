@@ -1,5 +1,8 @@
 {meta: title Please Feed The Jukebox}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file pleasefeedthejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Got to go out of town but I'll be back [F]soon
@@ -47,3 +50,9 @@ Until I find my way back [F]home
 Until I find my way back [F]home
 [G7]Please feed the jukebox while I'm [C]gone
 {end_of_verse}
+
+
+
+
+
+

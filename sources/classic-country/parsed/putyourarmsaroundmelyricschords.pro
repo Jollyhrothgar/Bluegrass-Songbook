@@ -1,6 +1,9 @@
 {meta: title Put Your Arms Around Me}
 {meta: artist Hank Snow}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file putyourarmsaroundmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Put your arms around me [G7]    [C]
@@ -33,3 +36,7 @@ Lay your [F]cheek against my [C]own)
 While I [F]fall asleep my [C]darling 
 To [G7]awake in the great un[C]known
 {end_of_verse}
+
+
+
+

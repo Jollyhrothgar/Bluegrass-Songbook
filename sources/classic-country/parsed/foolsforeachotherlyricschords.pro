@@ -1,6 +1,9 @@
 {meta: title Fools For Each Other}
 {meta: artist Johnny Rodriguez}
 {meta: composer Johnny Rodriguez and Bill Boling}
+{meta: x_source classic-country}
+{meta: x_source_file foolsforeachotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't want to [C]tell you that it's [G]over
@@ -29,3 +32,6 @@ We used to be [C]fools for each [D7]other [C]crazy from the [D7]start
 [G]We used to be [C]fools for each [D7]other 
 But [C]now we're just two [D7]fools with broken [G]hearts
 {end_of_verse}
+
+
+

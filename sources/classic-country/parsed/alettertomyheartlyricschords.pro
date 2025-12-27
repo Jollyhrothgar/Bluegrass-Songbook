@@ -1,6 +1,9 @@
 {meta: title A Letter To My Heart}
 {meta: artist Jim Reeves}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file alettertomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dear heart there is [D7]something I must tell [G]you
@@ -29,3 +32,6 @@ So [D7]give her up let her go let it [D7][G]b-e
 Dear [G]heart if [D7]you won't stop beating for [C][G]h-er 
 Then dear [G]heart  [D7]stop beating for [G]me
 {end_of_verse}
+
+
+

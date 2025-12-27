@@ -1,6 +1,9 @@
 {meta: title Next Time I Fall In Love I Won't}
 {meta: artist Hank Thompson}
 {meta: composer Ned Miller}
+{meta: x_source classic-country}
+{meta: x_source_file nexttimeifallinloveiwontlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Next time I [F]fall in love [C]I won’t
@@ -40,3 +43,8 @@ Next time I [F]give away my [C]heart I bet I [G7]don’t
 {start_of_verse: Verse 4}
 [F]Next time I [G7]fall in love [C]I won't
 {end_of_verse}
+
+
+
+
+

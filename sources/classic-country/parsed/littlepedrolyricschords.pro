@@ -1,6 +1,9 @@
 {meta: title Little Pedro}
 {meta: artist David Houston}
 {meta: composer Cecil Null}
+{meta: x_source classic-country}
+{meta: x_source_file littlepedrolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was standing on the other side of [G7]Texas
@@ -48,3 +51,9 @@ Please tell her little Pedro's lonely down in Mexi[C]co
 {start_of_verse: Verse 5}
 [G7]Please tell her Little Pedro's lonely down in Mexi[C]co
 {end_of_verse}
+
+
+
+
+
+

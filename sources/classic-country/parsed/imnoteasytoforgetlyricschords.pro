@@ -1,6 +1,9 @@
 {meta: title I'm Not Easy To Forget}
 {meta: artist Keith Whitley}
 {meta: composer Curly Putman and Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file imnoteasytoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It hurts to hear me say 
@@ -44,3 +47,9 @@ Cause [D7]I'm not that easy to for[G]get
 {start_of_verse: Verse 7}
 No [D7]I'm not that easy to for[G]get
 {end_of_verse}
+
+
+
+
+
+

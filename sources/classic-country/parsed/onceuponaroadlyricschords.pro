@@ -1,6 +1,9 @@
 {meta: title Once Upon A Road}
 {meta: artist Tom T. Hall}
 {meta: composer Tom T. Hall and Dixie Hall}
+{meta: x_source classic-country}
+{meta: x_source_file onceuponaroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once upon a [F]road  when I was innocent and [C]free
@@ -34,3 +37,7 @@ There ain't nothing that we [G7]know  [F]for being once upon a [C]road
 {start_of_verse: Verse 5}
 We have little left to [G7]show  [F]for being once upon a [C]road
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Last Date}
 {meta: artist Skeeter Davis}
 {meta: composer Skeeter Davis, Floyd Cramer, Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file mylastdatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One hour and I'll be [F]meeting you
@@ -37,3 +40,7 @@ That [F]I will always love you and be [G7]true
 And when [C]you say good[G7]bye I [C]know I will [F]cry
 Cause I'll [C]know it's my [G7]last date with [C]you
 {end_of_verse}
+
+
+
+

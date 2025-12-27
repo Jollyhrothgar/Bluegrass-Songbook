@@ -1,6 +1,9 @@
 {meta: title Flame In My Heart}
 {meta: artist George Jones}
 {meta: composer George Jones and Bernard Spurlock}
+{meta: x_source classic-country}
+{meta: x_source_file flameinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You cheated on me (you cheated [G7]me)
@@ -35,3 +38,6 @@
 [C]But now I can say (but now I can say)
 [G]The flame [D7]in my heart  is [G]dying away [C](is dying [G]away)
 {end_of_verse}
+
+
+

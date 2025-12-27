@@ -1,6 +1,9 @@
 {meta: title 1010 Whippoorwill Lane}
 {meta: artist Tanya Tucker}
 {meta: composer Kerry Phillips and Jerry Leseter}
+{meta: x_source classic-country}
+{meta: x_source_file 1010whippoorwilllanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Right now all that [C]you can see is a [F]wall that stands [G7]between us
@@ -35,3 +38,7 @@ And [Am]when you're cold with [C]no one to hold remember this old [G7]flame
 [Am]When you need a [C]lover and a [F]friend [G7]remember [F]me 
 Oh [G7]remember [C]me [G7]remember [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Collection Of Failures}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Gordon Terry and Curtis Maze}
+{meta: x_source classic-country}
+{meta: x_source_file collectionoffailureslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Alone and rejected the multitude [C7]stands
@@ -22,3 +25,5 @@
 [C]Sleep walker day dreamer oh who could that [C7]be
 [F]An example [C]of fiction a [G7]description of [C]me
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Bury Me In A Jukebox}
 {meta: artist Vern Gosdin}
 {meta: composer John Northrup, Buddy Cannon, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file burymeinajukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been hanging in here every night since you've been [C]gone
@@ -38,3 +41,7 @@ Bury [D7]me in a jukebox when I [G]die
 And it takes me up to Heaven when [C]they play A-11
 Bury [D7]me in a jukebox when I [G]die
 {end_of_verse}
+
+
+
+

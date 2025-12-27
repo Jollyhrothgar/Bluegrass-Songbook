@@ -1,6 +1,9 @@
 {meta: title The Old Village Choir}
 {meta: artist Jim Ed Brown}
 {meta: composer Guy Singer}
+{meta: x_source classic-country}
+{meta: x_source_file theoldvillagechoirlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How well I remember soft [F]nights in Sep[Fm]tember
@@ -27,3 +30,6 @@ To [C]sing in the [G7]old village [C]choir
 Oh how my heart's yearning that [F]longing re[Fm]turning
 To [C]sing in the [G7]old village [C]choir
 {end_of_verse}
+
+
+

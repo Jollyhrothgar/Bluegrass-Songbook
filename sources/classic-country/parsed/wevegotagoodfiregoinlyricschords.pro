@@ -1,6 +1,9 @@
 {meta: title We've Got A Good Fire Goin'}
 {meta: artist Don Williams}
 {meta: composer Dave Loggins}
+{meta: x_source classic-country}
+{meta: x_source_file wevegotagoodfiregoinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a storm rolling over the hill and the [F]willow [G7]tree's a [C]blowin'
@@ -40,3 +43,8 @@ Oh I've [F]got a good woman and we've [G7]got a good fire [C]goin'
 {start_of_verse: Verse 5}
 Oh I've [F]got a good woman and we've [G7]got a good fire [C]goin'
 {end_of_verse}
+
+
+
+
+

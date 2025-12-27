@@ -1,6 +1,9 @@
 {meta: title Padre Of Old San Antone}
 {meta: artist Jim Reeve}
 {meta: composer Tim Spencer}
+{meta: x_source classic-country}
+{meta: x_source_file padreofoldsanantonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I strolled to an old [G7]mission [C]garden
@@ -37,3 +40,9 @@ And whispered Mi amore mi [G7]Corazonne
 Then I knew that his love was an angel
 The padre of old San [C]Antone
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Follow It}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file followitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Seems like only [Am]yesterday your [C]feet were always [D7]in your way
@@ -25,3 +28,6 @@ And [G]all the days were [C]glowing where was [D7]I
 If you [G]feel [C]love and its [G]real [C]love that you [G]feel [C]love
 Then [G]follow it (follow it) follow it [C]follow it [D7]all the [G]way
 {end_of_verse}
+
+
+

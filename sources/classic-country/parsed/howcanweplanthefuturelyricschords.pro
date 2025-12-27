@@ -1,6 +1,9 @@
 {meta: title How Can We Plan The Future}
 {meta: artist George Morgan}
 {meta: composer Larry Lee and Tony Moon}
+{meta: x_source classic-country}
+{meta: x_source_file howcanweplanthefuturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We both remember someone a love that we once [D7]knew
@@ -27,3 +30,6 @@
 [F]We’re drifting deep in clouds of doubt that we should have [D7]passed
 [G7]How can we plan the future if we [F]can’t [G7]forget the [C]past
 {end_of_verse}
+
+
+

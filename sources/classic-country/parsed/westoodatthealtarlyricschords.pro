@@ -1,6 +1,9 @@
 {meta: title We Stood At The Altar}
 {meta: artist Slim Whitman}
 {meta: composer Jessie Mae Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file westoodatthealtarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We stood at the altar a [G7]groom and a bride
@@ -26,3 +29,6 @@ We [C]stood at the altar [G7]on our wedding [C]day
 {start_of_verse: Verse 4}
 We stood at the altar [G7]on our wedding [C]day
 {end_of_verse}
+
+
+

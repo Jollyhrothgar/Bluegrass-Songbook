@@ -1,5 +1,8 @@
 {meta: title She's Not Your Baby Anymore}
 {meta: artist Ricky Van Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file shesnotyourbabyanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's not your baby any[F]more
@@ -46,3 +49,9 @@ And I'm gonna keep her don't you [C]know
 {start_of_verse: Verse 4}
 [F]Yes I [C]am
 {end_of_verse}
+
+
+
+
+
+

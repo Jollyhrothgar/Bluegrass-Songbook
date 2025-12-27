@@ -1,6 +1,9 @@
 {meta: title Tomorrow Never Comes}
 {meta: artist Loretta Lynn}
 {meta: composer Ernest Tubb and Johnny Bond}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrownevercomeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now you tell me that you love me yes you [F]tell me that you [C]care
@@ -22,3 +25,5 @@ Just to [F]see that happy [C]morning when I'd [G7]have you by my [C]side
 So tomorrow I'll be leaving yes [F]tomorrow I'll be [C]gone
 And [F]tomorrow you'll be [C]weeping but tomorrow [G7]never [C]comes
 {end_of_verse}
+
+

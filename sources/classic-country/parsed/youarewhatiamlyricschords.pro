@@ -1,6 +1,9 @@
 {meta: title You Are What I Am}
 {meta: artist J.D. Crowe}
 {meta: composer Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file youarewhatiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You make  time stand [D7]still
@@ -33,3 +36,7 @@ Every [A7]time I fall down I never get [D7]stuck
 You got the combination gal to get me right back [G7]up
 [C]You are what I [D7]am  [G7]lovin' you forever if I [C]can
 {end_of_verse}
+
+
+
+

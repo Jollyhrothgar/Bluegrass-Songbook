@@ -1,6 +1,9 @@
 {meta: title Bluebird}
 {meta: artist Anne Murray}
 {meta: composer Ron Irving}
+{meta: x_source classic-country}
+{meta: x_source_file bluebirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can be high as a bluebird flies if you'd love [G7]me
@@ -36,3 +39,7 @@ You're an angel from heaven sent down from above
 [G7]I could be high  [C]so high  [G7]high  so [C]high
 [G7]I could be high  high high  as the bluebird [C]flies
 {end_of_verse}
+
+
+
+

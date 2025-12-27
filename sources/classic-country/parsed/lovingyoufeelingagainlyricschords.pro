@@ -1,6 +1,9 @@
 {meta: title Loving You Feeling Again}
 {meta: artist Emmylou Harris}
 {meta: composer Roy Orbison and Chris Price}
+{meta: x_source classic-country}
+{meta: x_source_file lovingyoufeelingagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I saw you standing there on the street
@@ -103,3 +106,22 @@ That [Dm]loving you [G7]feeling [C]again
 That [Dm]loving you [G7]feeling [C]again
 That [Dm]loving you [G7]feeling [C]again
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

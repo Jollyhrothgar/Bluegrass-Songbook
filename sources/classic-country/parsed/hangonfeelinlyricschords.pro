@@ -1,6 +1,9 @@
 {meta: title Hang On Feelin'}
 {meta: artist Red Steagall}
 {meta: composer Richard Mainegra and Mike Kosser}
+{meta: x_source classic-country}
+{meta: x_source_file hangonfeelinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hang on [B7]feelin' [C]I'm coming down with you [G]again
@@ -36,3 +39,7 @@ This time [A7]she's more than just a [D7]friend  she's all that matters
 [G]Hang on [B7]feelin' [C]there ain't no way I'm gonna [G]let
 You [C]slip a[G]way from [D7]me a[G]gain
 {end_of_verse}
+
+
+
+

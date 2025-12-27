@@ -1,6 +1,9 @@
 {meta: title After You}
 {meta: artist Hank Williams Jr.}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file afteryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So September follows August I don't [C7]mind
@@ -29,3 +32,6 @@ After you I'll be suspicious of anything that's [G7]nice
 I don't [C]know that I'll get [E7]over you [F]but if I ever [C]do
 I'll never love this [F]much [C]again [G7]not after [F]yo[C]u
 {end_of_verse}
+
+
+

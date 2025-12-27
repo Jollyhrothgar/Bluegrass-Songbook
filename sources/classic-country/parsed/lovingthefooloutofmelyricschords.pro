@@ -1,5 +1,8 @@
 {meta: title Loving The Fool Out Of Me}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file lovingthefooloutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A fool about town a bar two bar clowns
@@ -36,3 +39,9 @@ But a fast moving crowd and a jukebox playing loud
 {start_of_verse: Verse 7}
 [D7]Yes she’s loving the fool out of [G]me
 {end_of_verse}
+
+
+
+
+
+

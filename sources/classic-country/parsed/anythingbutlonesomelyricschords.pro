@@ -1,6 +1,9 @@
 {meta: title Anything But Lonesome}
 {meta: artist Bob Luman}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file anythingbutlonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She doesn't go there [C]just to hear the [G]music
@@ -27,3 +30,6 @@ For [C]lonesome is what she's [D7]been much too [G]long
 She just wants to be [C]anything but [G]lonesome
 For [C]lonesome is what she's [D7]been much too [C]l-[D7]o-n-[G]g [C]  [G]
 {end_of_verse}
+
+
+

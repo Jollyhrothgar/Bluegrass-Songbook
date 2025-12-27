@@ -1,6 +1,9 @@
 {meta: title Miracles}
 {meta: artist Don Williams}
 {meta: composer Roger Cook}
+{meta: x_source classic-country}
+{meta: x_source_file miracleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Miracles miracles that's what life's [G7]about
@@ -35,3 +38,8 @@
 [F]We are not without [G7]and I'm so [C]happy
 [F]We are [G7]not without [F][C]we are [G7]not [C]without
 {end_of_verse}
+
+
+
+
+

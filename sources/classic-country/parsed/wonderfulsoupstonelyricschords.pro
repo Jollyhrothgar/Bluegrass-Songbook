@@ -1,6 +1,9 @@
 {meta: title Wonderful Soup Stone}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file wonderfulsoupstonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I [C]swear you could taste the [G]chicken and tomatoes
@@ -76,3 +79,13 @@ And the [D7]wonderful wonderful [G]soup stone
 We were [D7]nourished by the wonderful [G]soup stone
 Oh the [D7]wonderful wonderful [G]soup stone
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

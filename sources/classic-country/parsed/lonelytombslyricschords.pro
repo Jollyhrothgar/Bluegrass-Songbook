@@ -1,5 +1,8 @@
 {meta: title Lonely Tombs}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file lonelytombslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was strolling one day in a lonely graveyard
@@ -44,3 +47,10 @@ I then came to the place where my mother did lay
 {start_of_verse: Verse 2}
 Oh those tombs oh those tombs
 {end_of_verse}
+
+
+
+
+
+
+

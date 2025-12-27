@@ -1,5 +1,8 @@
 {meta: title Stay Away From Me}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file stayawayfrommelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Stay away from me you're causing me [C]trouble
@@ -28,3 +31,6 @@ And# Autumn leaves have turned to[D7] brown
 I loved you [G]so but I can't [C]have you 
 Stay away from [G]me  [D7]stay out of [G]town
 {end_of_verse}
+
+
+

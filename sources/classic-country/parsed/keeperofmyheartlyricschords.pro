@@ -1,6 +1,9 @@
 {meta: title Keeper Of My Heart}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Jerry Irby}
+{meta: x_source classic-country}
+{meta: x_source_file keeperofmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If again you were just [G7]mine
@@ -29,3 +32,6 @@
 [G7]All the love that once was part
 [C]Of the keeper of my heart
 {end_of_verse}
+
+
+

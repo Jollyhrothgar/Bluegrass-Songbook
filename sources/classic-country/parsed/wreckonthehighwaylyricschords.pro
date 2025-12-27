@@ -1,6 +1,9 @@
 {meta: title Wreck On The Highway}
 {meta: artist Ricky Skaggs}
 {meta: composer Dorsey Dixon [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file wreckonthehighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who did you say it was brother
@@ -51,3 +54,10 @@ But I didn't hear [D7]nobody [G]pray
 I didn't hear nobody pray dear brother
 I [C]didn't hear nobody [G]pray
 {end_of_verse}
+
+
+
+
+
+
+

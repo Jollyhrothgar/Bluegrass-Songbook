@@ -1,6 +1,9 @@
 {meta: title She Stays}
 {meta: artist Ricky Van Shelton}
 {meta: composer Andy Landis and Allen Shamblin}
+{meta: x_source classic-country}
+{meta: x_source_file shestayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She'd give anything to hear him say he loves her
@@ -55,3 +58,9 @@ And she [G]stays[Em]
 There's [C]nothing she can [D7]do but she asking him to
 So she [G]stays
 {end_of_verse}
+
+
+
+
+
+

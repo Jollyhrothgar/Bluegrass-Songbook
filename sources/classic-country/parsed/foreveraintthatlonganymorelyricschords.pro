@@ -1,6 +1,9 @@
 {meta: title Forever Ain't That Long Anymore}
 {meta: artist Rhonda Vincent}
 {meta: composer Wayne Southards and William Blake}
+{meta: x_source classic-country}
+{meta: x_source_file foreveraintthatlonganymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7][C]Somewhere tonight a woman cries [C]alone
@@ -49,3 +52,9 @@
 [Em]He watched as she just walked out the [F]door
 [G7]Forever ain't that long anymore
 {end_of_verse}
+
+
+
+
+
+

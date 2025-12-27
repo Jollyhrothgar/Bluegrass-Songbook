@@ -1,6 +1,9 @@
 {meta: title The Heart of a Clown}
 {meta: artist Gene Watson}
 {meta: composer Steve Nelson, Jack Rollins and}
+{meta: x_source classic-country}
+{meta: x_source_file theheartofaclownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I  had the [C]heart of a [G]clown
@@ -28,3 +31,6 @@ If [C]I  had the [D7]heart  of a [G]clown
 {start_of_verse: Verse 4}
 tag:  If [C]I  had the [D7]heart  of a [G]clown
 {end_of_verse}
+
+
+

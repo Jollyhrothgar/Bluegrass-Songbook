@@ -1,5 +1,8 @@
 {meta: title Roses Are Red My Love}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file rosesareredmylovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Roses are [F]red my love violets are [C]blue
@@ -50,3 +53,12 @@ Some day some [F]boy will write [G7]in her book [C]too
 [C]Roses are [F]red my love violets are [C]blue
 Sugar is [F]sweet my love [G7]but not as sweet as [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

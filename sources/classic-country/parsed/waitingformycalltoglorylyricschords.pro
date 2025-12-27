@@ -1,5 +1,8 @@
 {meta: title Waiting For My Call To Glory}
 {meta: artist Roy Acuff}
+{meta: x_source classic-country}
+{meta: x_source_file waitingformycalltoglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Waiting for my call to glory
@@ -70,3 +73,12 @@ Where I'll know the good and [G7]true
 [C]There I'll learn to love my neighbor
 Like He [G7]wanted me to [C]do
 {end_of_verse}
+
+
+
+
+
+
+
+
+

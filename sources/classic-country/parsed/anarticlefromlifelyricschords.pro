@@ -1,6 +1,9 @@
 {meta: title An Article From Life}
 {meta: artist Ferlin Husky}
 {meta: composer Jim Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file anarticlefromlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Evening sun had just gone down
@@ -46,3 +49,8 @@ In [G7]anger I took my darlings [C]life
 Read [F]about the harvest crime [C]turn to page 29
 I’m [G7]featured in an article from [C]Life
 {end_of_verse}
+
+
+
+
+

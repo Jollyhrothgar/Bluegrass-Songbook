@@ -1,5 +1,8 @@
 {meta: title Little Ways}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file littlewayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You've [G]got [D7]your [G]little ways to hurt me
@@ -54,3 +57,11 @@ One cold look from you can knock me [G]down
 {start_of_verse: Verse 5}
 Yeah your [D7]little ways can knock me to the [G]ground
 {end_of_verse}
+
+
+
+
+
+
+
+

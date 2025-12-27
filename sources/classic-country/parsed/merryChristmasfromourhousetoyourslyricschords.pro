@@ -1,5 +1,8 @@
 {meta: title Merry Christmas From Our House To Yours}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file merryChristmasfromourhousetoyourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Merry Christmas from [F]our house to [C]your house
@@ -32,3 +35,7 @@ Merry [G7]Christmas from our house to [C]yours
 {start_of_verse: Verse 4}
 Merry [G7]Christmas from our house to [C]yours
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title There's That Smile Again}
 {meta: artist Jim Reeves}
 {meta: composer Jim Reeves and Otto Davis}
+{meta: x_source classic-country}
+{meta: x_source_file theresthatsmileagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's that smile again the one I always [F]see
@@ -22,3 +25,5 @@
 [C]I only hope and pray  that you'll come back and [F]then
 [C]I'll never have to [G7]say  there's that smile [C]again
 {end_of_verse}
+
+

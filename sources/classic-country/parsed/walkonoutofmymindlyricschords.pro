@@ -1,6 +1,9 @@
 {meta: title Walk On Out Of My Mind}
 {meta: artist Waylon Jennings}
 {meta: composer Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file walkonoutofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear the echo of your footsteps
@@ -38,3 +41,9 @@ Looking for something I'll never find
 Since you [C]walked out of my [G]life and out [F]of my [G]world
 [F]Please walk on out of my [G]mind
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Closing Time Till Dawn}
 {meta: artist Red Sovine}
 {meta: composer Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file closingtimetilldawnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]With wine I try to [C]satisfy my [D7]hunger for the [G]past
@@ -30,3 +33,5 @@
 [G]Your memory marches on
 [C]Somewhere [G]in between [D7]closing time and [G][C]dawn
 {end_of_verse}
+
+

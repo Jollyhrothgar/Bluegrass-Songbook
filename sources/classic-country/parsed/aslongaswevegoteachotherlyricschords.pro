@@ -1,6 +1,9 @@
 {meta: title As Long As We've Got Each Other}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file aslongaswevegoteachotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As long as we've got each [G]other [C]to love and to [G]share
@@ -26,3 +29,6 @@ The world will [D7]pass us by and never leave a [G]tear [C]
 {start_of_verse: Verse 4}
 [G]The world will [D7]pass us by and never leave a [G]tear
 {end_of_verse}
+
+
+

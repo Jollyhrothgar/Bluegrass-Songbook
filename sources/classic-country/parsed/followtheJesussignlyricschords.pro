@@ -1,5 +1,8 @@
 {meta: title Follow The Jesus Sign}
 {meta: artist Barbara Fairchild}
+{meta: x_source classic-country}
+{meta: x_source_file followtheJesussignlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't care about your doctrine
@@ -38,3 +41,6 @@ Praise the Lord the day will come
 When we'll [F]all meet as one
 And [G7]follow the Jesus sign that leads us [C]home
 {end_of_verse}
+
+
+

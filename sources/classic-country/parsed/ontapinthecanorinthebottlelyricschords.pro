@@ -1,6 +1,9 @@
 {meta: title On Tap In The Can Or In The Bottle}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Dick Hart}
+{meta: x_source classic-country}
+{meta: x_source_file ontapinthecanorinthebottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On tap in the can or in the [D7]bottle 
@@ -41,3 +44,8 @@ Oh [G]bartender [D7]bring it to [G]me
 On tap in the can or in the [C]bottle 
 Oh [G]bartender [D7]bring it to [G]me 
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title This Morning At Nine}
 {meta: artist The Seldom Scene}
 {meta: composer Sid Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file thismorningatninelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I awoke this morning [C]from a lovely dream
@@ -36,3 +39,7 @@ I’m [D7]like a lonely prisoner serving his [G]time
 Thinking of the day the [C]days when love was true
 But [D7]you’ll wed another this morning at [G]nine
 {end_of_verse}
+
+
+
+

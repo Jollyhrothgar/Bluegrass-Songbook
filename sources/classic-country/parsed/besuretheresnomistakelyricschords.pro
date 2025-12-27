@@ -1,6 +1,9 @@
 {meta: title Be Sure There's No Mistake}
 {meta: artist Eddy Arnold}
 {meta: composer Eddy Arnold And Alton "Cook" Watson}
+{meta: x_source classic-country}
+{meta: x_source_file besuretheresnomistakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Be sure there’s no [C][G7]mistake
@@ -33,3 +36,6 @@ Does it only shine for [F]me
 Is there some old [C]memory
 Be sure there’s no [C][G7]mistake
 {end_of_verse}
+
+
+

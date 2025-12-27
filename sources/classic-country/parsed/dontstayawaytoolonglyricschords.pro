@@ -1,6 +1,9 @@
 {meta: title Don’t Stay Away Too Long}
 {meta: artist Ernest Tubb}
 {meta: composer Don Whitney and Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file dontstayawaytoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don’t stay too long cause I’m too [F]lonesome
@@ -36,3 +39,7 @@ Don’t stay too [G7]long cause I’m too [C]blue
 When you’re away I’m so [F]downhearted 
 Don’t stay too [G7]long cause I love [C]you
 {end_of_verse}
+
+
+
+

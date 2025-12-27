@@ -1,6 +1,9 @@
 {meta: title These Days I Barely Get By}
 {meta: artist George Jones}
 {meta: composer Tammy Wynette and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file thesedaysibarelygetbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up this morning [F]aching with [C]pain
@@ -33,3 +36,7 @@ Oh [C]these days I [G7]barely get [C]by
 {start_of_verse: Verse 5}
 [F]Oh these days one [G7]barely gets [C]by
 {end_of_verse}
+
+
+
+

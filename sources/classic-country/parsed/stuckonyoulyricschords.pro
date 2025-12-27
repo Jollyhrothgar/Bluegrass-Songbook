@@ -1,6 +1,9 @@
 {meta: title Stuck On You}
 {meta: artist Elvis Presley}
 {meta: composer Aaron Schroeder and Leslie McFarland}
+{meta: x_source classic-country}
+{meta: x_source_file stuckonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can shake an apple off an apple tree
@@ -46,3 +49,11 @@ I'm gonna run my fingers through your long black hair
 {start_of_verse: Verse 8}
 [D7]I'm gonna stick like glue [C]yeah yeah because I'm stuck on [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+

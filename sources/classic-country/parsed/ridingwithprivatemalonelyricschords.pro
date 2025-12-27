@@ -1,6 +1,9 @@
 {meta: title Riding With Private Malone}
 {meta: artist David Ball}
 {meta: composer Wood Newton and Thom Shepherd}
+{meta: x_source classic-country}
+{meta: x_source_file ridingwithprivatemalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was just out of the service thumbing through the classifieds
@@ -74,3 +77,12 @@ And I [C]know I wouldn’t [G7]be here if he [F]hadn’t tagged [G7]along
 {start_of_verse: Verse 10}
 That night I was [G7]rid-ing with Private [C]Malone
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Devil In Disguise}
 {meta: artist Emmylou Harris}
 {meta: composer Gram Parsons}
+{meta: x_source classic-country}
+{meta: x_source_file devilindisguiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's a [A]devil in [C]disguise you can see [A]it in her [F]eyes
@@ -42,3 +45,9 @@
 [C]She's a [A]devil in [C]disguise you can see [A]it in her [F]eyes
 [C]She's telling dirty [A]lies she's [F]a devil in disguise [C]in [F]disguise
 {end_of_verse}
+
+
+
+
+
+

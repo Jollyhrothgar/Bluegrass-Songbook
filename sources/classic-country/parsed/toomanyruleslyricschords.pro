@@ -1,6 +1,9 @@
 {meta: title Too Many Rules}
 {meta: artist Connie Francis}
 {meta: composer Don Stirling and Gary Temkin}
+{meta: x_source classic-country}
+{meta: x_source_file toomanyruleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got home last night at [G7]ten past two
@@ -47,3 +50,9 @@ I pray the [C7]stars above I [F]haven't lost your love
 {start_of_verse: Verse 6}
 Cause there are [G7]too many [C]rules
 {end_of_verse}
+
+
+
+
+
+

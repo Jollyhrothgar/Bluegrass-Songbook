@@ -1,6 +1,9 @@
 {meta: title Bluebird}
 {meta: artist Alan Jackson}
 {meta: composer Leon Russell}
+{meta: x_source classic-country}
+{meta: x_source_file bluebird1lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm lost in the night[Em]
@@ -40,3 +43,8 @@ And [Dm]I can't stand to [G]live another [C]day
 {start_of_verse: Verse 6}
 [Am]Bluebird [D7]why'd you go [G]away
 {end_of_verse}
+
+
+
+
+

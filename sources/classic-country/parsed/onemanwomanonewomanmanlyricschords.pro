@@ -1,6 +1,9 @@
 {meta: title One Man Woman One Woman Man}
 {meta: artist Jim Ed Brown}
 {meta: composer Paul Anka}
+{meta: x_source classic-country}
+{meta: x_source_file onemanwomanonewomanmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You [C]caught me fooling [G7]around with somebody [C]new
@@ -40,3 +43,8 @@ Yes you're a [D7]one man [G7]woman and you're a [D7]one [G7]woman [C]man
 Oh I'm a [D7]one man [G7]woman yes you're a [D7]one man [G7]woman
 Honey I'm a [D7]one man [G7]woman I'll be your [D7]one [G7]woman [C]man
 {end_of_verse}
+
+
+
+
+

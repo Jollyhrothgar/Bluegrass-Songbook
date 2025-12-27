@@ -1,5 +1,8 @@
 {meta: title Don't Be Afraid To Love Me}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file dontbeafraidtolovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't be [A7]afraid to [D7]love me 
@@ -35,3 +38,7 @@ To [G7]talk that's going round
 [F]Don't be afraid to [C]love [A7]me 
 [D7]Cause I'm not [G7]afraid of loving [C]you
 {end_of_verse}
+
+
+
+

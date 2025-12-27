@@ -1,6 +1,9 @@
 {meta: title Clinging Vine}
 {meta: artist Sonny James}
 {meta: composer Earl Shuman, Leon Carr, Grace Lane}
+{meta: x_source classic-country}
+{meta: x_source_file clingingvinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Cling to me clinging [C]vine just to [D7]me clinging [G]vine
@@ -30,3 +33,7 @@ Please come [D7]back and cling to me clinging [G]vine
 {start_of_verse: Verse 3}
 Please come [D7]back and cling to me clinging [G]v-[C]i-n-[G]e 
 {end_of_verse}
+
+
+
+

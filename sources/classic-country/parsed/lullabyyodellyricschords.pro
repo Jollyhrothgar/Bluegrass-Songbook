@@ -1,6 +1,9 @@
 {meta: title Lullaby Yodel}
 {meta: artist Lefty Frizzell}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file lullabyyodellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My baby I know [F]that you want [C]me 
@@ -43,3 +46,8 @@ My baby I want [F]you tonight [C]dear
 To [G7]rock you to sleep in my arms [C]dear 
 [D7]And sing [G7]lullaby's to [C]you
 {end_of_verse}
+
+
+
+
+

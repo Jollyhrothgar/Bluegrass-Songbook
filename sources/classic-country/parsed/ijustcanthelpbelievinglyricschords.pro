@@ -1,6 +1,9 @@
 {meta: title I Just Can't Help Believing}
 {meta: artist B J Thomas}
 {meta: composer Cynthia Weil and Barry Mann}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcanthelpbelievinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I just can't help believing 
@@ -45,3 +48,10 @@ And her tears are shining honey sweet with [F]love
 This time the [F]girl is gonna [G7]stay
 For more than just a [C]day
 {end_of_verse}
+
+
+
+
+
+
+

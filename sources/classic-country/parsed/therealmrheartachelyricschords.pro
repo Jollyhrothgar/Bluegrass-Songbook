@@ -1,5 +1,8 @@
 {meta: title The Real Mr. Heartache}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file therealmrheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There we were all three of us sitting side by [C]side
@@ -21,3 +24,5 @@ There we were all three of us standing side by [C]side
 And I even see a stranger that seems to [C]qualify
 So will the [D7]real Mr. Heartache please stand up and [G]cry
 {end_of_verse}
+
+

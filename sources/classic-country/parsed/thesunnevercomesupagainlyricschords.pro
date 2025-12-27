@@ -1,6 +1,9 @@
 {meta: title The Sun Never Comes Up Again}
 {meta: artist Ray Price}
 {meta: composer Dave Kirby and Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file thesunnevercomesupagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight you're saying you love [F]me
@@ -29,3 +32,6 @@
 [C]If this is our last night I'm [F]hoping
 [G7]The sun never comes up [C]again
 {end_of_verse}
+
+
+

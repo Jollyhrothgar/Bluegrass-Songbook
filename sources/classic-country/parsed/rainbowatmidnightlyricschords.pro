@@ -1,5 +1,8 @@
 {meta: title Rainbow At Midnight}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowatmidnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]After the [G7]war was [C]over
@@ -35,3 +38,7 @@ After this [G7]life is [C]over
 [G]We'll move to the land [G7]of the [C]rainbow 
 And [G]live in the [D7]starry [G]blue
 {end_of_verse}
+
+
+
+

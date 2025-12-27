@@ -1,5 +1,8 @@
 {meta: title Has It Been That Bad For You}
 {meta: artist Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file hasitbeenthatbadforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I think you hate to see me [F]smile
@@ -26,3 +29,6 @@ Repeat last verse
 {start_of_verse: Verse 4}
 [G7]Baby has it been that bad for [C]you  
 {end_of_verse}
+
+
+

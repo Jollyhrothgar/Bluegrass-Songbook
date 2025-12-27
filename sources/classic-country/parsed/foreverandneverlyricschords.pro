@@ -1,5 +1,8 @@
 {meta: title Forever And Never}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file foreverandneverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D]And I [G]can't say I'll love [A7]you for[D]ever and [G]ever
@@ -32,3 +35,6 @@ But [D7]darlin' I'm [A7]sure gonna [D]try
 And I [G]can't say I'll love [A7]you for[D]ever and [G]ever
 But [D]darlin' I'm [A7]sure gonna [D]try
 {end_of_verse}
+
+
+

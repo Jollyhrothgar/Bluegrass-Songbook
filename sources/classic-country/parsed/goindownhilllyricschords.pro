@@ -1,6 +1,9 @@
 {meta: title Goin' Down Hill}
 {meta: artist John Anderson}
 {meta: composer John Anderson and Aries Lincoln}
+{meta: x_source classic-country}
+{meta: x_source_file goindownhilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It all started at a corner table [F]sippin' on a Jack and Coke
@@ -44,3 +47,7 @@ I can't eat I can't sleep I think about you
 Goin' down[B7]hill [A#7]I'm goin' down[A7]hill
 [D7]Yeah but still I can't [G7]get my fill of [C]you
 {end_of_verse}
+
+
+
+

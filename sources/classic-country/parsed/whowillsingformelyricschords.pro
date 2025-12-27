@@ -1,6 +1,9 @@
 {meta: title Who Will Sing For Me}
 {meta: artist Lester Flatt}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file whowillsingformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Often I sing (oft I sing) for my friends (for my friends)
@@ -27,3 +30,6 @@ I [D7]wonder (I wonder) [G]who  will [D7]sing (will sing) for [G]me
 When I'm called to cross that [C]silent sea 
 Who will [G]sing (who will sing) [D7]for [G]me
 {end_of_verse}
+
+
+

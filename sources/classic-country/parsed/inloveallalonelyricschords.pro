@@ -1,6 +1,9 @@
 {meta: title In Love All Alone}
 {meta: artist Gene Watson}
 {meta: composer Randy Hatch and Jesse Shofner}
+{meta: x_source classic-country}
+{meta: x_source_file inloveallalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've learned to wake up each morning all alone
@@ -40,3 +43,8 @@ I keep myself busy thinking of ways to waste time
 {start_of_verse: Verse 5}
 [Dm]Cause I still haven't learned how to [G7]be in love all [C]alone
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lobby of Your Heart}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file lobbyofyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I didn't have to be [D7]thrown in the [G]dungeon
@@ -29,3 +32,6 @@ I'm on the doorstep yet we're so far [G]apart
 Many times I tried you wouldn't let [C]me come [G]inside
 Now I'm [D7]waiting waiting in the lobby of your [G]heart
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title American Dream}
 {meta: artist Garth Brooks}
 {meta: composer Jenny Yates and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file americandreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]And the [Am]oil fields fed our [C]family
@@ -29,3 +32,6 @@ In the [F]twilights last gleam[D7]ing
 Cause every [C]day [F]I'd [C]awaken 
 [Am]To the [Dm]Ameri[G7]can [C]dream
 {end_of_verse}
+
+
+

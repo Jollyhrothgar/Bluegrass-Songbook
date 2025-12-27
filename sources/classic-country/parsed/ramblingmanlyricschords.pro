@@ -1,5 +1,8 @@
 {meta: title Rambling Man}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ramblingmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I can settle down and be doing just fine
@@ -27,3 +30,5 @@ Cause that's the [E7]life I believe He meant for [Am]me
 And when I'm gone and at my grave you stand
 Just say [E7]God called home your rambling [Am]man
 {end_of_verse}
+
+

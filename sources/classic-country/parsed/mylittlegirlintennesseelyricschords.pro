@@ -1,6 +1,9 @@
 {meta: title My Little Girl In Tennessee}
 {meta: artist The Osborne Brothers}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file mylittlegirlintennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh that [C]little girl of mine in [G]Tennessee
@@ -43,3 +46,8 @@
 [G]Someday I'll settle down in that [C]little country [G]town
 [D7]With that little girl of mine in [G]Tennessee
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sweet Temptation}
 {meta: artist Jean Shepard}
 {meta: composer Merle Travis and Cliffie Stone}
+{meta: x_source classic-country}
+{meta: x_source_file sweettemptationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sweet temptation that's what you are to [F]me
@@ -29,3 +32,6 @@
 [G7]That you're just sweet [C]temptation a diamond in the [F]rough
 [C]You make [G7]it awful tough for [C]me
 {end_of_verse}
+
+
+

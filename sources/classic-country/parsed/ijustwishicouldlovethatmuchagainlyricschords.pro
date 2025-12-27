@@ -1,5 +1,8 @@
 {meta: title I Just Wish I Could Love That Much Again}
 {meta: artist Jan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file ijustwishicouldlovethatmuchagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've only [F]loved one time  [G7]and that [F]was long [C]ago
@@ -26,3 +29,6 @@ I just [G7]wish I could love that much [C]again
 I [F]wouldn't care [G7]if I lose or [C]win
 I just [G7]wish I could love that much [C]again
 {end_of_verse}
+
+
+

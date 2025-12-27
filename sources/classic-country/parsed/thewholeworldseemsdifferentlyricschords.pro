@@ -1,6 +1,9 @@
 {meta: title The Whole World Seems Different}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Jimmy Dickens and Donald Trobridge}
+{meta: x_source classic-country}
+{meta: x_source_file thewholeworldseemsdifferentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's the same old street in the same old town
@@ -33,3 +36,6 @@ Your [F]faded old picture still hangs in my room
 [C]Memories haunt me [F]they go on and [C]on
 The whole world seems different to [G7]me since you're [C]gone
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Stay There Till I Get There}
 {meta: artist Lynn Anderson}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file staytheretilligettherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The telephone's ringin' and it's [C]three a.m. 
@@ -50,3 +53,9 @@ And [G]we'll work it out to[D7]gether
 We'll [G]take a little walk and [C]have a little talk 
 And [G]you'll feel a [D7]whole lot [G]better
 {end_of_verse}
+
+
+
+
+
+

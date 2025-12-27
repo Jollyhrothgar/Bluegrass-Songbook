@@ -1,6 +1,9 @@
 {meta: title Your Memory Ain't What It Used To Be}
 {meta: artist Mickey Gilley}
 {meta: composer Mary Fielder, Kim Morrison and Dickey Betts}
+{meta: x_source classic-country}
+{meta: x_source_file yourmemoryaintwhatitusedtobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got through the whole day [F]without once thinking of [C]you  yes I did
@@ -33,3 +36,7 @@ I guess your [C]memory [G7]ain't what it used to [C]be
 {start_of_verse: Verse 4}
 [F]I guess your [C]memory [G7]ain't what it used to [C]be
 {end_of_verse}
+
+
+
+

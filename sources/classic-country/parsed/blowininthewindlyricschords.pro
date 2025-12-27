@@ -1,6 +1,9 @@
 {meta: title Blowin' In The Wind}
 {meta: artist Eddy Arnold}
 {meta: composer Bob Dylan}
+{meta: x_source classic-country}
+{meta: x_source_file blowininthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How many roads [F]must a man walk [C]down 
@@ -43,3 +46,8 @@ Pretending he [F]just doesn't [G7]see
 The [F]answer my [G7]friend is [C]blowin' in the [Am]wind 
 The [F]answer is [G7]blowin' in the [C]wind
 {end_of_verse}
+
+
+
+
+

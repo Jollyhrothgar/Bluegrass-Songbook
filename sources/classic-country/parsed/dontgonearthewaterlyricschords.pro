@@ -1,6 +1,9 @@
 {meta: title Don't Go Near The Water}
 {meta: artist Sammy Kershaw}
 {meta: composer Chapin Hartford and Jim Foster}
+{meta: x_source classic-country}
+{meta: x_source_file dontgonearthewaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your momma used to worry bout that big muddy river
@@ -74,3 +77,15 @@ Your momma used to worry bout that big muddy river
 [G]Didn't go near the [C]water
 [G]Didn't go [F]near the [G]water
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

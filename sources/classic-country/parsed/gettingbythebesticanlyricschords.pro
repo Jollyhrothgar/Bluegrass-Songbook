@@ -1,5 +1,8 @@
 {meta: title Getting By The Best I Can}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file gettingbythebesticanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Spilled coffee on my last clean shirt 
@@ -51,3 +54,9 @@ While [G7]I’m getting over [C]you
 [F]And I’ll get by the [C]best I can 
 While [G7]I’m getting over [C]you
 {end_of_verse}
+
+
+
+
+
+

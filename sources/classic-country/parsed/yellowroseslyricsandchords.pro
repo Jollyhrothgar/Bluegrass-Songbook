@@ -1,5 +1,8 @@
 {meta: title Yellow Roses}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file yellowroseslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello you said the day we [C7]met handing [F]me a yellow rose
@@ -42,3 +45,8 @@ You loved me at [G7]one time why did you have to [C]go
 [C7]Yellow [F]roses are you sending your [C]new love
 My bright yellow [G7]rose buds I still love you [C]so
 {end_of_verse}
+
+
+
+
+

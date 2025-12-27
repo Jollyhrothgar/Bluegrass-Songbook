@@ -1,6 +1,9 @@
 {meta: title Old Heart Rest In Pieces}
 {meta: artist Charlie Pride}
 {meta: composer Bobby Crocker, Perry Jones, Roger West}
+{meta: x_source classic-country}
+{meta: x_source_file oldheartrestinpieceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're like I'm here today to pay my last [F]respect
@@ -33,3 +36,7 @@ Old [G7]heart   rest in [C]pieces
 {start_of_verse: Verse 4}
 Old [G7]heart   rest in [C]pieces
 {end_of_verse}
+
+
+
+

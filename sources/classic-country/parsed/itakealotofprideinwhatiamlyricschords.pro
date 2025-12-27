@@ -1,5 +1,8 @@
 {meta: title I Take A Lot Of Pride In What I Am}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file itakealotofprideinwhatiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Things I learned in hobo jungle
@@ -47,3 +50,9 @@ Or if I'm working on some road gang
 [Am]I never been nobody's [D7]idol but at [Am]least I got a [D7]title
 [Am]And I take a lot [D7]of pride in what I [G]am
 {end_of_verse}
+
+
+
+
+
+

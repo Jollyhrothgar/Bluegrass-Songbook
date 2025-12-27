@@ -1,6 +1,9 @@
 {meta: title Five Minutes In The Arms Of The Right Woman}
 {meta: artist Cal Smith}
 {meta: composer Bob Montgomery and John Talley}
+{meta: x_source classic-country}
+{meta: x_source_file fiveminutesinthearmsoftherightwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I really don't know [D7]what [G]happened
@@ -34,3 +37,7 @@
 [C]Yes five minutes in the arms of the right [G]woman
 [D7]Made me the wrong man for [G]you
 {end_of_verse}
+
+
+
+

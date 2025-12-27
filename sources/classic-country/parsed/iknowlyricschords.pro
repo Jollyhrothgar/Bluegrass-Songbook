@@ -1,6 +1,9 @@
 {meta: title I Know}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Barbara George}
+{meta: x_source classic-country}
+{meta: x_source_file iknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some people say that this ole time religion
@@ -81,3 +84,18 @@ I'm packing up now getting my things together
 Now you may think that I'm a little old fashioned
 [G7]Well friend that's alright with [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title He Took My Place}
 {meta: artist Charley Pride}
 {meta: composer Ruth Hukill}
+{meta: x_source classic-country}
+{meta: x_source_file hetookmyplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There was a man more than a man
@@ -73,3 +76,14 @@ There stood a cross of [F]agony
 Nailed to that [C]cross where I should [G7]be
 He took my place at [C]Calvary
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

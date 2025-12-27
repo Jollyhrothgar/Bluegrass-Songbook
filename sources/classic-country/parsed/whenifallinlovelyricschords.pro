@@ -1,6 +1,9 @@
 {meta: title When I Fall In Love}
 {meta: artist Brenda Lee}
 {meta: composer Edward Heyman and Victor Young}
+{meta: x_source classic-country}
+{meta: x_source_file whenifallinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When [D7]I fall in [G]love it will be [Am]for[D7]ever 
@@ -32,3 +35,7 @@ And the [G]moment I can [C]feel that
 [E7]You feel that way [Am]too is 
 [G]When I fall in [Am]love [D7]with [G]you
 {end_of_verse}
+
+
+
+

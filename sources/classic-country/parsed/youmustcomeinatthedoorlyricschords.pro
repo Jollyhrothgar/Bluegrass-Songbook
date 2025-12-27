@@ -1,6 +1,9 @@
 {meta: title You Must Come In At The Door}
 {meta: artist Doc Watson}
 {meta: composer Sunny Skylar and Doc Watson}
+{meta: x_source classic-country}
+{meta: x_source_file youmustcomeinatthedoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the Baptists go by water
@@ -68,3 +71,11 @@ It’s so [F]low you can't get under it
 [C]So wide you’ll [F]never get around it
 You [G7]must come in at the [C]door
 {end_of_verse}
+
+
+
+
+
+
+
+

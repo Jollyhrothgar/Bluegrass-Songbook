@@ -1,6 +1,9 @@
 {meta: title Answer To The Last Letter}
 {meta: artist Ray Price}
 {meta: composer Rex Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file answertothelastletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just received your last letter and I feel so [G7]blue
@@ -29,3 +32,6 @@
 [C7]If you must leave me to suffer life's heartaches [F]alone
 [G7]I ask your forgiveness for all the mistakes I have [C]made
 {end_of_verse}
+
+
+

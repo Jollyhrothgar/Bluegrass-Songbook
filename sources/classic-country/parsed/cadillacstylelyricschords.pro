@@ -1,6 +1,9 @@
 {meta: title Cadillac Style}
 {meta: artist Sammy Kershaw}
 {meta: composer Mark Petersen}
+{meta: x_source classic-country}
+{meta: x_source_file cadillacstylelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I ain't Burt Reynolds and I ain't Tom Selleck
@@ -48,3 +51,9 @@ It's cause my [C]little baby loves [G7]me Cadillac [C]style
 Yeah my little baby loves [G7]me Cadillac [C]style
 Well my little baby loves [G7]me Cadillac [C]style
 {end_of_verse}
+
+
+
+
+
+

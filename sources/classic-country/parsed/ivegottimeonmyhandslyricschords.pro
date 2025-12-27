@@ -1,6 +1,9 @@
 {meta: title I've Got Time On My Hands}
 {meta: artist Don Williams}
 {meta: composer Laying Martine}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottimeonmyhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everyday of my life  [F]until forever 
@@ -29,3 +32,6 @@ No where to spend all my [C]love
 And I'll be here waiting if you [F]ever change your plans
 [G7]Cause you own this time on my [C]hands
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title What A Way To Die}
 {meta: artist Eddy Arnold}
 {meta: composer Marvin Moore and Danny Wolfe}
+{meta: x_source classic-country}
+{meta: x_source_file whatawaytodielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When my baby holds me  [G7]I feel so [C]good
@@ -18,3 +21,4 @@ But I'll let her [G]hurt me
 Come on blues and [D7]take me 
 What a way to [G]die
 {end_of_verse}
+

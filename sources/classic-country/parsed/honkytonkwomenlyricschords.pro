@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Women}
 {meta: artist Ronnie Milsap}
 {meta: composer Mick Jagger and Keith Richards}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkwomenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met a gin soaked bar-room queen in [C]Memphis
@@ -39,3 +42,9 @@ Gimme gimme gimme gimme gimme [D7]gimme them honky tonk [G]blues
 {start_of_verse: Verse 7}
 Gimme gimme gimme [D7]gimme them honky tonk [G]women
 {end_of_verse}
+
+
+
+
+
+

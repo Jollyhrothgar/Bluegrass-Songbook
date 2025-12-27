@@ -1,6 +1,9 @@
 {meta: title Give a Lonely Heart a Home}
 {meta: artist Faron Young}
 {meta: composer Cile Pitts and Janice Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file givealonelyheartahomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well could that look I see on you
@@ -43,3 +46,8 @@ So if you're looking for a way
 [F]And you can have true love from this moment on
 [G7]Just give a lonely heart a [C]home
 {end_of_verse}
+
+
+
+
+

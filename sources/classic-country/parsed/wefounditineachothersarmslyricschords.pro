@@ -1,6 +1,9 @@
 {meta: title We Found It In Each Other's Arms}
 {meta: artist Jack Greene}
 {meta: composer Hank Cochran and Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file wefounditineachothersarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]We found it [G7]in each other's [C]arms [G7]
@@ -24,3 +27,5 @@ A [F]love so sweet so [Em]wild and yet so [Dm]war[G7]m
 [F]We found it [G7]in each other's [C]arms
 [F]We found it [G7]in each other's [C]arms
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Wildfire}
 {meta: artist Tracy Byrd}
 {meta: composer Larry Cansler and Michael Murphey}
+{meta: x_source classic-country}
+{meta: x_source_file wildfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]She comes [C]down from Yellow [F]Mountain 
@@ -40,3 +43,7 @@ On [F]Wildfire [Em]we'll ride
 Get these [F]hard times [Em]right on out of our minds 
 Riding [F]W-[Em]i-l-d-[Dm]f-i[G7]-r-[C]e
 {end_of_verse}
+
+
+
+

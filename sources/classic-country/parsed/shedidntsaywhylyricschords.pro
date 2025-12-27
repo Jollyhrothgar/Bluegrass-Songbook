@@ -1,6 +1,9 @@
 {meta: title She Didn't Say Why}
 {meta: artist Ricky Skaggs}
 {meta: composer Wayland Patton}
+{meta: x_source classic-country}
+{meta: x_source_file shedidntsaywhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Well I [C]don't believe I've ever felt so [F]lonely
@@ -50,3 +53,9 @@ She just walked [C]away
 No she didn't say [G7]why she was sayin' goodbye
 She just walked [C]away
 {end_of_verse}
+
+
+
+
+
+

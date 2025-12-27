@@ -1,6 +1,9 @@
 {meta: title I Want To Be More Like Jesus}
 {meta: artist B.J. Thomas}
 {meta: composer Archie Jordan}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttobemorelikeJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What kind of man would [C]wash men's feet
@@ -36,3 +39,7 @@ And [Em]with His help I [A7]know that I [D]can
 That's [Em]why I've put my [A7]life in His [D]hands[Am]   [D]
 Oh oh [G]I want to [A7]be more like [D]Jesus
 {end_of_verse}
+
+
+
+

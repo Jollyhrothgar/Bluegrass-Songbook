@@ -1,6 +1,9 @@
 {meta: title Tell It Like It Was}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file tellitlikeitwaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I come home every night and she [G7]meets me with a [C]great big kiss
@@ -37,3 +40,8 @@ I'm saving me for [G7]you till you get [C]home
 Tell it like it was tell it like it [F]was
 Not like it [C]is cause it ain't no more [G7]tell it like it [C]was
 {end_of_verse}
+
+
+
+
+

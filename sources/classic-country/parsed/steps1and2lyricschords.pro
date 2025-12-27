@@ -1,5 +1,8 @@
 {meta: title Steps 1 and 2}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file steps1and2lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Steps 1 and 2 [F]steps 3 and 4
@@ -44,3 +47,7 @@ And [F]why I'll never know
 My [G7]path is set my minds made up
 I just knocked upon your [C]door
 {end_of_verse}
+
+
+
+

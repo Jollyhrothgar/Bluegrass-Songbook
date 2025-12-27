@@ -1,6 +1,9 @@
 {meta: title I'm Just Someone You Run From}
 {meta: artist Eddy Raven}
 {meta: composer Eddy Raven and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file imjustsomeoneyourunfromlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish you would [G7]stay here for[C]ever
@@ -33,3 +36,7 @@ Every [C]time you [G7]run back to [C]him [F]
 {start_of_verse: Verse 5}
 Every [C]time you [G7]run back to [F]him[C]
 {end_of_verse}
+
+
+
+

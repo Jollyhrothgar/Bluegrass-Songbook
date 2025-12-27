@@ -1,6 +1,9 @@
 {meta: title Could You}
 {meta: artist Hank Locklin}
 {meta: composer Hank Locklin and Jack Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file couldyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Could you ask me darling for this [C]little gold [G]band
@@ -19,3 +22,4 @@
 [G]Could you ever leave me for [C]somebody [G]new
 [D7]Oh tell me my darling could [G]you
 {end_of_verse}
+

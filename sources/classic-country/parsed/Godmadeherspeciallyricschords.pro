@@ -1,6 +1,9 @@
 {meta: title God Made Her Special}
 {meta: artist Wayne Kemp}
 {meta: composer Wayne Kemp and Danny Walls}
+{meta: x_source classic-country}
+{meta: x_source_file Godmadeherspeciallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](God made her special especially for [C]me)
@@ -33,3 +36,7 @@ Till [G7]she opens her blue eyes and tells me she's [C]mine
 There's no darkness in my world when [F]she's standin' by
 Yes [G7]God made her special and I know [C]why
 {end_of_verse}
+
+
+
+

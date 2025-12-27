@@ -1,6 +1,9 @@
 {meta: title Here I Am To Worship}
 {meta: artist Randy Travis}
 {meta: composer Tim Hughes}
+{meta: x_source classic-country}
+{meta: x_source_file hereiamtoworshiplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Light of the [D7]world You stepped [Am]down into darkness
@@ -54,3 +57,10 @@ Altogether [D7]worthy altogether [G]wonderful to [C]me
 {start_of_verse: Verse 5}
 Here I am to [G]worship
 {end_of_verse}
+
+
+
+
+
+
+

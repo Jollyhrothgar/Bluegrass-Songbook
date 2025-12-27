@@ -1,6 +1,9 @@
 {meta: title When A Soldier Knocks And Finds Nobody Home}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb, Moon Mullican, Lou Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file whenasoldierknocksandfindsnobodyhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m alone with all my sorrow
@@ -37,3 +40,8 @@ I have asked the next door neighbor
 [F]What a sorry sight to see [C]here
 [G7]When a soldier knocks and finds nobody [C]home
 {end_of_verse}
+
+
+
+
+

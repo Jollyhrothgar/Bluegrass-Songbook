@@ -1,5 +1,8 @@
 {meta: title Love Is Not For Me}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file loveisnotformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I like the women I [G7]like to hold them [C]tight
@@ -41,3 +44,9 @@ Living on the run playing the field
 [G]But I'll never [G7]marry no [C]siree
 [G]I'm for love but [D7]love is not for [G]me
 {end_of_verse}
+
+
+
+
+
+

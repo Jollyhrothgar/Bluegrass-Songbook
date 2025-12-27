@@ -1,6 +1,9 @@
 {meta: title When Are You Ever Gonna Learn}
 {meta: artist Faron Young}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file whenareyouevergonnalearnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Look in the mirror wipe the [C]guilt from your eyes
@@ -23,3 +26,5 @@ Each [G]night takes you closer to the [C]point of no return
 Buddy [D7]when are you ever gonna [G]learn
 Buddy [D7]when are you ever gonna [G]learn
 {end_of_verse}
+
+

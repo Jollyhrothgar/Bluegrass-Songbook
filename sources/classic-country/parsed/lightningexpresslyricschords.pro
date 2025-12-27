@@ -1,6 +1,9 @@
 {meta: title Lightning Express}
 {meta: artist Everly Brothers}
 {meta: composer Bradly Kincaid}
+{meta: x_source classic-country}
+{meta: x_source_file lightningexpresslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The lightning express from the depot so grand
@@ -71,3 +74,12 @@ And [F]may not live through the [C]day
 I [F]wanna reach home and kiss [C]mother goodbye
 Be[D7]fore God [G7]takes her [C]away
 {end_of_verse}
+
+
+
+
+
+
+
+
+

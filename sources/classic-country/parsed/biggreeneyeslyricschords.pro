@@ -1,5 +1,8 @@
 {meta: title Big Green Eyes}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file biggreeneyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I'm [C]blessed and I know I [G]am 
@@ -66,3 +69,12 @@ Her picture never [D7]leaves my [Em]mind
 I don't deserve a [C]love this [G]fine 
 Baby and her [C]big green [G]eyes
 {end_of_verse}
+
+
+
+
+
+
+
+
+

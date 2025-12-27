@@ -1,6 +1,9 @@
 {meta: title Divorce Sale}
 {meta: artist Tammy Wynette}
 {meta: composer Curly Putman and Greg Putman}
+{meta: x_source classic-country}
+{meta: x_source_file divorcesalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who’ll buy the table and who’ll buy the [D7]bed
@@ -29,3 +32,6 @@ Hating to break away and walk out in the [G]cold
 Two grown-ups and a [Bm]baby with [C]nothing but them[G]selves
 It’s a [C]grand divorce [A7]going gone [D7]out of business [G]sale
 {end_of_verse}
+
+
+

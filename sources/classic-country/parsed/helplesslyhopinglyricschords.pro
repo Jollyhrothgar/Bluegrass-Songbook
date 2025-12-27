@@ -1,6 +1,9 @@
 {meta: title Helplessly Hoping}
 {meta: artist J.D. Crowe}
 {meta: composer Stephen Stills}
+{meta: x_source classic-country}
+{meta: x_source_file helplesslyhopinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Helplessly hoping her [C]harlequin hovers near[G]by awaiting a [D7]word 
@@ -36,3 +39,7 @@ They [G]are two alone
 They are three together
 They are [D7]for each [C]other
 {end_of_verse}
+
+
+
+

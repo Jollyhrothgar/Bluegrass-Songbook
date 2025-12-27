@@ -1,6 +1,9 @@
 {meta: title Lookin' For Love}
 {meta: artist Johnny Lee}
 {meta: composer Wanda Mallette, Bob Morrison, Pat Ryan}
+{meta: x_source classic-country}
+{meta: x_source_file lookinforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I spent a lifetime [F]lookin' for [C]you
@@ -47,3 +50,7 @@ Of [Dm]what [Em]I'm [F]dreamin' [G7]of
 [Em]God bless the day I discovered [F]you oh [Dm]you
 [G7]Lookin' for [C]love
 {end_of_verse}
+
+
+
+

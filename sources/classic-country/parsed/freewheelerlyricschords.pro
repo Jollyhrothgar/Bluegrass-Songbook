@@ -1,6 +1,9 @@
 {meta: title Freewheeler}
 {meta: artist David Ball}
 {meta: composer Jesse Winchester}
+{meta: x_source classic-country}
+{meta: x_source_file freewheelerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I got [C]nothing and [Am]nobody 
@@ -64,3 +67,11 @@ And be [F]ready set to [C]go
 Oh and [F]if you’re gonna [C]love me 
 Then there's something [G7]you should [C]know
 {end_of_verse}
+
+
+
+
+
+
+
+

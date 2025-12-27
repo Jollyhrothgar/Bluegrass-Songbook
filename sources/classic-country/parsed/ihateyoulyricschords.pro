@@ -1,6 +1,9 @@
 {meta: title I Hate You}
 {meta: artist Ronnie Milsap}
 {meta: composer Dan Penn and Leroy Daniels}
+{meta: x_source classic-country}
+{meta: x_source_file ihateyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hate you oh how I try [C7]to hate [F]you
@@ -29,3 +32,6 @@ I get [C]bitter every [D7]time you run through my [G7]mind
 [C]Between love and hate there's a [C7]little thin [F]line
 And I'm trying to [C]hate you  [G7]right out of my [C]mind
 {end_of_verse}
+
+
+

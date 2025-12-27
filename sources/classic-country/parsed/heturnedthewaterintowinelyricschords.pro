@@ -1,5 +1,8 @@
 {meta: title He Turned the Water into Wine}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file heturnedthewaterintowinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He turned the [C]water into [G]wine
@@ -63,3 +66,12 @@ With a little bit of fish and bread
 [C]He turned the water into [G]wine
 [C]He turned the water into [G]wine
 {end_of_verse}
+
+
+
+
+
+
+
+
+

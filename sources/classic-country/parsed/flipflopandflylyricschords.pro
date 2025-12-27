@@ -1,6 +1,9 @@
 {meta: title Flip Flop And Fly}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Charles Calhoun and Lou Turner}
+{meta: x_source classic-country}
+{meta: x_source_file flipflopandflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now when I get the blues I get me a rockin' chair
@@ -38,3 +41,8 @@ Flip flop and fly I don't care if I die
 Oh [F]flip flop and fly I [C]don't care if I die
 [G7]Don't ever leave me [F]don't ever say [C]goodbye
 {end_of_verse}
+
+
+
+
+

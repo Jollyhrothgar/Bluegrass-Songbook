@@ -1,6 +1,9 @@
 {meta: title Pocket Full Of Gold}
 {meta: artist Vince Gill}
 {meta: composer Brian Allsmiller and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file pocketfullofgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He slipped the ring off his [F]finger 
@@ -43,3 +46,8 @@ Here lies a [G7]rich man
 [C]Yeah here lies a [G7]rich man 
 [F]With his pocket full of [C]gold
 {end_of_verse}
+
+
+
+
+

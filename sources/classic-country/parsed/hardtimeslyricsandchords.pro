@@ -1,6 +1,9 @@
 {meta: title Hard Times}
 {meta: artist Moe Bandy}
 {meta: composer Ed Penney, Tom Benjamin, Hugh Moffatt}
+{meta: x_source classic-country}
+{meta: x_source_file hardtimeslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She reads all the ads in the paper each [G7]day
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 6}
 [G7]She knows they'll be over some [C][F]day
 {end_of_verse}
+
+
+
+
+
+

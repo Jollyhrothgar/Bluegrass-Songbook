@@ -1,6 +1,9 @@
 {meta: title Young School Girl}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Antoine Domino}
+{meta: x_source classic-country}
+{meta: x_source_file youngschoolgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Hey little school [C]girl
@@ -36,3 +39,7 @@ Vacation time is [G7]gone
 No more watching the late show
 From now [C]on
 {end_of_verse}
+
+
+
+

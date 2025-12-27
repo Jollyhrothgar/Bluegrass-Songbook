@@ -1,6 +1,9 @@
 {meta: title I Love Only One Girl}
 {meta: artist Elvis Presley}
 {meta: composer Sid Tepper and Roy C. Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file iloveonlyonegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro: 
@@ -36,3 +39,7 @@ I love only one girl [G7]one in every [C]town
 Oh I love only one girl the [G7]one I got my [C]arms around
 I love only one girl [G7]one in every [C]town
 {end_of_verse}
+
+
+
+

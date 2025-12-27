@@ -1,6 +1,9 @@
 {meta: title Do You Know You Are My Sunshine}
 {meta: artist Statler Brothers}
 {meta: composer Harold Reid and Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file doyouknowyouaremysunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She was standing in the crowd all alone and looking pretty
@@ -47,3 +50,9 @@ And [D7]would you do it one more time for [G]me
 {start_of_verse: Verse 7}
 Do you know do you know You Are My [C]Sun-[D7]sh-i[G]ne 
 {end_of_verse}
+
+
+
+
+
+

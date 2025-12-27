@@ -1,6 +1,9 @@
 {meta: title I'm Down to My Last I Love You}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file imdowntomylastiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight I'll go and [C]find her one more [G]time
@@ -29,3 +32,6 @@
 [G]I'd give the world to keep her I've done all a man can [C]do
 [G]But I'm [C]down to [G]my last [D7]I love [G]you
 {end_of_verse}
+
+
+

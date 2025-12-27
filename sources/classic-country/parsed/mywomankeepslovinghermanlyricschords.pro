@@ -1,5 +1,8 @@
 {meta: title My Woman Keeps Loving Her Man}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file mywomankeepslovinghermanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My woman still loves me in [F]spite of my [C]ways
@@ -32,3 +35,7 @@ That's why my woman [G7]keeps loving her [C]man
 {start_of_verse: Verse 5}
 That's why my woman [G7]keeps loving her [F]m-a[C]n
 {end_of_verse}
+
+
+
+

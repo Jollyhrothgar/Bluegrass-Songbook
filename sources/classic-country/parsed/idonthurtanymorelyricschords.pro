@@ -1,6 +1,9 @@
 {meta: title I Don't Hurt Anymore}
 {meta: artist Hank Snow}
 {meta: composer Don Robertson and Jack Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file idonthurtanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't hurt [F]anymore 
@@ -36,3 +39,7 @@ The day you said we were [C]through
 But now that I find you're [D7]out of my mind
 [G7]I can't believe that it's [C]true
 {end_of_verse}
+
+
+
+

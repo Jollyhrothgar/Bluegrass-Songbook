@@ -1,6 +1,9 @@
 {meta: title Diane}
 {meta: artist Ed Bruce}
 {meta: composer Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file dianelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Diane if you're gonna [C]do him wrong [G]again
@@ -46,3 +49,8 @@ I haven't told a soul nobody [C]knows about you and [G]me
 Diane if you're gonna do him wrong [D7]again
 You might as well do the wrong again with [G]me
 {end_of_verse}
+
+
+
+
+

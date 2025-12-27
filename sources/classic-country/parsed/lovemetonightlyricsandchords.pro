@@ -1,6 +1,9 @@
 {meta: title Love Me Tonight}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file lovemetonightlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I been lonesome I been [F]empty 
@@ -37,3 +40,6 @@ I need you [C]so now  come on let [F]go now
 Kick off your [C]shoes turn out [G7]the light 
 And love me [C]tonight
 {end_of_verse}
+
+
+

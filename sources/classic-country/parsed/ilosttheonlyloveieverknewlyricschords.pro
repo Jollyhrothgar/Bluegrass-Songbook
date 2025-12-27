@@ -1,6 +1,9 @@
 {meta: title I Lost The Only Love I Ever Knew}
 {meta: artist Ray Price}
 {meta: composer Don Helms and Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ilosttheonlyloveieverknewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You ask me why my heart's so [C]sad
@@ -29,3 +32,6 @@
 [G]While the world's asleep I'll lay and [C]cry
 [G]I've lost the [D7]only love I [G]knew
 {end_of_verse}
+
+
+

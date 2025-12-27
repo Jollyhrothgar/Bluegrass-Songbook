@@ -1,6 +1,9 @@
 {meta: title Diamonds in the Stars}
 {meta: artist Ray Price}
 {meta: composer Jesses Shofner}
+{meta: x_source classic-country}
+{meta: x_source_file diamondsinthestarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Years ago I used to think 
@@ -70,3 +73,15 @@ Who didn’t know your love was bought or [C]sold
 [G7]Right here with the gold that’s in the sun 
 And the Diamonds in the [C]stars
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

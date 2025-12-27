@@ -1,6 +1,9 @@
 {meta: title You're Looking At A Happy Man}
 {meta: artist George Jones}
 {meta: composer Carmol Taylor and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file yourelookingatahappymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I jumped outta bed and I hollered hallelujah
@@ -76,3 +79,13 @@ And your [A7]lookim' at a [D7]happy [G]man
 This old [C]country boy is [G]jumpin' for [E7]joy
 And you're [A7]looking at a [D7]happy [G]man
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

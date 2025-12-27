@@ -1,6 +1,9 @@
 {meta: title Manhattan Kansas}
 {meta: artist Leona Williams}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file manhattankansaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Manhattan Kansas ain't no [F]place to have a baby
@@ -37,3 +40,7 @@ And he [A#7]made me dance [F]before the music [G7]played
 But at [C]least I didn't beg him I'd [F]rather wash my dishes
 It [C]makes me feel as [G7]if my hands are [C]clean
 {end_of_verse}
+
+
+
+

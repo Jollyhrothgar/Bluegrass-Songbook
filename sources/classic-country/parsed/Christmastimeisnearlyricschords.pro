@@ -1,6 +1,9 @@
 {meta: title Christmas Time Is Near}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file Christmastimeisnearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Snowflakes falling [C7]on the ground 
@@ -47,3 +50,9 @@ It's that [Dm]special [Em]time of [A#7]year
 {start_of_verse: Verse 5}
 [D7]Oh Christmas [G7]time is [C]near
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Old Loves Never Die}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby RIP & Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file oldlovesneverdielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't you think we've come much [C]too far [G]together
@@ -27,3 +30,6 @@ I [D7]still believe that old loves never [G]die
 If [G]you must go I [C]hope that you'll [G]remember
 I [D7]still believe that old loves never [G]die
 {end_of_verse}
+
+
+

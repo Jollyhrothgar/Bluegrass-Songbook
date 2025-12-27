@@ -1,6 +1,9 @@
 {meta: title You've Never Been In Love With You}
 {meta: artist Vern Gosdin}
 {meta: composer Tim Russell, Tony Russell, Vern Gosdin, Johnny Conn}
+{meta: x_source classic-country}
+{meta: x_source_file youveneverbeeninlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re telling me that I’ll [F]make it just fine
@@ -34,3 +37,7 @@ And the reason you don’t know I [F]care for [Dm]you
 And the reason you don’t know I [F]care for [Dm]you
 [G7]You’ve never been in love with [C]you
 {end_of_verse}
+
+
+
+

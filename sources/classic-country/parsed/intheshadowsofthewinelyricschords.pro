@@ -1,6 +1,9 @@
 {meta: title In The Shadows Of The Wine}
 {meta: artist Porter Wagoner}
 {meta: composer Dusty Rose}
+{meta: x_source classic-country}
+{meta: x_source_file intheshadowsofthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the shadows of the wine
@@ -29,3 +32,6 @@ Wilder music stronger wine
 [F]But we will meet again [C]tomorrow
 [G7]In the shadows of the [C]wine
 {end_of_verse}
+
+
+

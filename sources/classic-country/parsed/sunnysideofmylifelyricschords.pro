@@ -1,5 +1,8 @@
 {meta: title Sunny Side Of My Life}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file sunnysideofmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the sunny side of my [F]life is the [C]side you're living on
@@ -35,3 +38,7 @@ Grey skies never [F]come when I'm with [C]you
 Good times hang [F]around only [C]when you're here at home
 The sunny side of my [F]life is here with [C]you
 {end_of_verse}
+
+
+
+

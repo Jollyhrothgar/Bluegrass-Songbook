@@ -1,6 +1,9 @@
 {meta: title It's Raining All Over The World}
 {meta: artist Lefty Frizzell}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file itsrainingallovertheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s raining all [C7]over the [F]world
@@ -41,3 +44,8 @@ But [G7]I know a place where the [F]sun [C]shines
 Every [F]night by her [Fm]side with a [C]heart filled with [Am]pride
 I thank [D7]God for this [G7]woman of [C]mine
 {end_of_verse}
+
+
+
+
+

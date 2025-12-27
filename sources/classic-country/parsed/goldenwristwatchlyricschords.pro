@@ -1,6 +1,9 @@
 {meta: title Golden Wristwatch}
 {meta: artist Hank Locklin}
 {meta: composer Wally Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file goldenwristwatchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gave you my heart and you [F]broke it into
@@ -29,3 +32,6 @@ If at [F]eight or nine or ten I could [C]be with you [G7]again
 When the [C]hands are then embracing is it [F]rainbows I'll be chasing
 While your golden wristwatch [C]ticks my [G7]lonely hours [C]away
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Country Boy}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Felice and Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file countryboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I'm just a simple guy
@@ -85,3 +88,14 @@ A [F]corn-bread loving [C]country boy
 I'll be l[F]ooking over that o[C]ld gray mule
 When the [G7]sun comes up on [C]Monday
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Does It Have To End This Way}
 {meta: artist Bob Paisley and The Southern Grass}
 {meta: composer Mac Martin}
+{meta: x_source classic-country}
+{meta: x_source_file doesithavetoendthiswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the cold wind blows [C]outside my [G]window
@@ -33,3 +36,7 @@ Does it have [D7]to end this [G]way
 {start_of_verse: Verse 5}
 Does it have [D7]to end this [G]way
 {end_of_verse}
+
+
+
+

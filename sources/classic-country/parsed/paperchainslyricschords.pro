@@ -1,6 +1,9 @@
 {meta: title Paper Chains}
 {meta: artist Moe Bandy}
 {meta: composer Steve Collom}
+{meta: x_source classic-country}
+{meta: x_source_file paperchainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're man and wife on paper 
@@ -37,3 +40,7 @@ And I [C]think it's [F]time to [G7]break these paper [C]chains
 {start_of_verse: Verse 4}
 [F]Now I [C]think it's [F]time to [G7]break these paper [C]chains
 {end_of_verse}
+
+
+
+

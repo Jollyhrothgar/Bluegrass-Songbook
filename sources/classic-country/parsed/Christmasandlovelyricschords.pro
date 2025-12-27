@@ -1,6 +1,9 @@
 {meta: title Christmas And Love}
 {meta: artist Charley Pride}
 {meta: composer Lassaye Holmes}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasandlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I live [D7]in a [G]three-room shack [C]it's not much to [G]see
@@ -36,3 +39,7 @@ To [D7]cheer the whole wide [G]world
 [C]Peace on earth good[G]will toward all
 And [D7]fill their Christmas with [G]love
 {end_of_verse}
+
+
+
+

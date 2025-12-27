@@ -1,6 +1,9 @@
 {meta: title Misty}
 {meta: artist Marty Robbins}
 {meta: composer Joe Burke and Erroll Garner}
+{meta: x_source classic-country}
+{meta: x_source_file mistylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Look at [C]me I'm as [Gm]helpless as a [C]kitten up a [F]tree
@@ -49,3 +52,9 @@ I'm so [Dm]misty and [G7]so much in [C]love
 {start_of_verse: Verse 5}
 [Dm]Misty and [G7]so much in [C]love
 {end_of_verse}
+
+
+
+
+
+

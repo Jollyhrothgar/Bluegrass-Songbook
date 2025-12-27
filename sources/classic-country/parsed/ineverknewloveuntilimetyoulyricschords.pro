@@ -1,6 +1,9 @@
 {meta: title I Never Knew Love (Until I Met You)}
 {meta: artist George Morgan}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file ineverknewloveuntilimetyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come over here darling [F]lay your head on my [C]shoulder
@@ -29,3 +32,6 @@ But love [D7]had done for me all it could [G7]do
 [C]Now you're my beginning [F]and this time I'll [C]make it
 For I never [G7]knew love until I met [C]you
 {end_of_verse}
+
+
+

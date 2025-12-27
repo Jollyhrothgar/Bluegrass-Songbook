@@ -1,6 +1,9 @@
 {meta: title The Other Side Of Life}
 {meta: artist Vern Gosdin}
 {meta: composer Alan O’Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file theothersideoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Praise [C]God  [G7]I feel like [C]singing
@@ -30,3 +33,7 @@ In my [F]heart there’s a [C]song as I [G7]see the gates [C]open
 [F]Praise [C]God  [G7]I feel like [C]singing
 [F]I'm on the [C]other  [G7]side of life [C]now
 {end_of_verse}
+
+
+
+

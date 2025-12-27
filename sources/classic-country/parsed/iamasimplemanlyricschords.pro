@@ -1,6 +1,9 @@
 {meta: title I Am A Simple Man}
 {meta: artist Ricky Van Shelton}
 {meta: composer Walt Aldridge}
+{meta: x_source classic-country}
+{meta: x_source_file iamasimplemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know why you want to start with me
@@ -78,3 +81,13 @@ Three squares in my [C]fryin' pan
 Don't seem so hard to me to [G7]understand
 I am a simple [C]man
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

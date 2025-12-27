@@ -1,6 +1,9 @@
 {meta: title D-18}
 {meta: artist Norman Blake}
 {meta: composer Jerry Faires}
+{meta: x_source classic-country}
+{meta: x_source_file D18lyrics.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D]Recorded by Norman Blake
@@ -69,3 +72,12 @@ I [D7]cleaned it up and strung it hit a chord and heard that [G]tone
 It was crisp and clean rich and full all a [C]guitar ought to be
 I said [D7]thank you Mr. Martin you made this D-18 for [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+

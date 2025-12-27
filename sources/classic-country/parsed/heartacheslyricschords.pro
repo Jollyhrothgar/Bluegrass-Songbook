@@ -1,6 +1,9 @@
 {meta: title Heartaches}
 {meta: artist Patsy Cline}
 {meta: composer Al Hoffman & John Klenner}
+{meta: x_source classic-country}
+{meta: x_source_file heartacheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heartaches  [F]heartaches
@@ -29,3 +32,6 @@ Heartaches  [F]heartaches
 [Am]I should be [D7]happy with [G]someone [A7]new
 But [Am]my [D7]heart [Am]aches for [G][D7]you 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ballad Of Lucy Jordon}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file balladoflucyjordonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The mornin' sun touched lightly on the [C]eyes of Lucy [G]Jordan 
@@ -43,3 +46,8 @@ At the [C]age of 37 she'd [G]finally found forever
 As they rode along through Paris 
 With the warm wind in her [D7]hair [G]
 {end_of_verse}
+
+
+
+
+

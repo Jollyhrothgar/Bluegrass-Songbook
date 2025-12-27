@@ -1,5 +1,8 @@
 {meta: title Santa Claus And Popcorn}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file santaclausandpopcornlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Santa Claus and popcorn
@@ -49,3 +52,9 @@ Carols singing Silent Night
 [G]Christmas trees and [C]mistletoe
 [G]Jesus loves me [D7]this I [G]know
 {end_of_verse}
+
+
+
+
+
+

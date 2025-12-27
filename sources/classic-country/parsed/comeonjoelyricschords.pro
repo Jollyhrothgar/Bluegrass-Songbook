@@ -1,6 +1,9 @@
 {meta: title Come On Joe}
 {meta: artist George Strait}
 {meta: composer Tony Romeo}
+{meta: x_source classic-country}
+{meta: x_source_file comeonjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's a long hot night
@@ -57,3 +60,11 @@ Wasn't it beautiful the kind of a soul
 [D7]Hey come on [C][G7]Joe
 [G7]To carry on till we're [C]together [C][F]again
 {end_of_verse}
+
+
+
+
+
+
+
+

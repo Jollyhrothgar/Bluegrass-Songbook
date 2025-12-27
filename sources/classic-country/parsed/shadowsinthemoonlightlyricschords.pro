@@ -1,5 +1,8 @@
 {meta: title Shadows In The Moonlight}
 {meta: artist Anne Murray}
+{meta: x_source classic-country}
+{meta: x_source_file shadowsinthemoonlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We'll be shadows in the moonlight
@@ -42,3 +45,8 @@ Just wait and [G]see
 [Am]Hand and hand we'll go
 Dancing through the Milky [G]Way
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Your Love's On The Line}
 {meta: artist Earl Thomas Conley}
 {meta: composer Earl Thomas Conley and Randy Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file yourlovesonthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've never cheated [C]you've never [G]lied
@@ -34,3 +37,6 @@ And your [G]heart in a bind [C]  [D7]
 [G]How come you're feelin' so [C]proud
 When your [D7]love's on the [G]line
 {end_of_verse}
+
+
+

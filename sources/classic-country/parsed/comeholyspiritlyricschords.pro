@@ -1,6 +1,9 @@
 {meta: title Come Holy Spirit}
 {meta: artist The Heritage Singers}
 {meta: composer Gloria Gaither and William Gaither}
+{meta: x_source classic-country}
+{meta: x_source_file comeholyspiritlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come Holy Spirit I need [G7]Thee
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]Come in Your own gentle [C]way
 {end_of_verse}
+
+
+
+
+

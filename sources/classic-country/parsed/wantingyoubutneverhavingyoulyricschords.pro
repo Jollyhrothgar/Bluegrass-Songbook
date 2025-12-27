@@ -1,6 +1,9 @@
 {meta: title Wanting You But Never Having You}
 {meta: artist Jack Greene}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file wantingyoubutneverhavingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wanting you but never having [C]you 
@@ -33,3 +36,6 @@ Where does patience draw the [D7]line
 Wanting you [G]but never having [C]you
 Will soon destroy what's [G]left of [D7]my [G]mind
 {end_of_verse}
+
+
+

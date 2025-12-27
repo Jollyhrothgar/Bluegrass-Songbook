@@ -1,5 +1,8 @@
 {meta: title Cowboys Don't Cry}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysdontcrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Shoulda seen it coming  [F]shoulda known you weren’t that kind of [C]girl
@@ -21,3 +24,5 @@ For me it was a passion for [F]you it was a fashion show each [C]day
 But you never said forever so [F]I guess you never did tell me a lie [C]mmmmm
 [G7]Honey that still hurts me cowboys don’t [C]cry
 {end_of_verse}
+
+

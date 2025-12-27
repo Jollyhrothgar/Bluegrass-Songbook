@@ -1,6 +1,9 @@
 {meta: title You Have My Heart}
 {meta: artist Slim Whitman}
 {meta: composer Jerry Crist}
+{meta: x_source classic-country}
+{meta: x_source_file youhavemyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You have my [C]heart although we’re [F]far apart
@@ -26,3 +29,6 @@ Your love to [C]always share [G7]you have my [C]heart
 {start_of_verse: Verse 4}
 [G7]You have my [C]heart
 {end_of_verse}
+
+
+

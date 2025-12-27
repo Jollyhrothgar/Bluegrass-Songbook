@@ -1,6 +1,9 @@
 {meta: title Golden Guitar}
 {meta: artist Bill Anderson}
 {meta: composer Curtis Leach and Billy Gray}
+{meta: x_source classic-country}
+{meta: x_source_file goldenguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I happened to walk into a honky tonk one night down in New [F]Orleans
@@ -44,3 +47,8 @@ But he died that night life just demanded more than he could [F]give
 But this world's loss is heaven's gain and tonight he's [F]still a star
 [G7]He plays with a band of angels that's my son's golden [C]guitar
 {end_of_verse}
+
+
+
+
+

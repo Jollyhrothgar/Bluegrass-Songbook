@@ -1,5 +1,8 @@
 {meta: title My Mother}
 {meta: artist Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file mymotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My mother with love so good and [F]true
@@ -28,3 +31,6 @@
 [C]I ask in silence of One Most [F]Sublime
 [C]May all be blessed with a [G7]mother like [C]mine
 {end_of_verse}
+
+
+

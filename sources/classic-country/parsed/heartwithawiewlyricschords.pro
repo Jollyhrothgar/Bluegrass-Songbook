@@ -1,4 +1,7 @@
 {meta: artist Blackhawk}
+{meta: x_source classic-country}
+{meta: x_source_file heartwithawiewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I said I'd always be [C]around[D7]
@@ -47,3 +50,9 @@ She's got a [D7]heart with a [G]view
 {start_of_verse: Verse 5}
 [C]She's got a [D7]heart with a [G]view
 {end_of_verse}
+
+
+
+
+
+

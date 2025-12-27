@@ -1,6 +1,9 @@
 {meta: title Farmers Blues}
 {meta: artist Marty Stuart}
 {meta: composer Marty Stuart and Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file farmersblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who'll buy my wheat who'll buy my corn
@@ -39,3 +42,6 @@ When that [C]evening train goes [G]by
 I wish it could [Em]take me far [D7]away
 These farmer's [G]blues 
 {end_of_verse}
+
+
+

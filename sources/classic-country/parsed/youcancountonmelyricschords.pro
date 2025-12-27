@@ -1,5 +1,8 @@
 {meta: title You Can Count On Me}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file youcancountonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can count on me girl [C]you can count on [Am]me
@@ -29,3 +32,7 @@ To love you when your children's [Am]grown you can [D7]count on [G]me
 [G]You can count on me girl [C]you can count on [Am]me
 [G]I won't ever let you [Am]down you can [D7]count on [G]me
 {end_of_verse}
+
+
+
+

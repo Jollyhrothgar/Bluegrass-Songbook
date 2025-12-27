@@ -1,6 +1,9 @@
 {meta: title Pins And Needles}
 {meta: artist Reba McEntire}
 {meta: composer Rick Carnes, Janis Carnes, Chip Hardy}
+{meta: x_source classic-country}
+{meta: x_source_file pinsandneedleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pins and needles [C]needles and [G]pins 
@@ -36,3 +39,7 @@ I [G]think I'm [D7]gettin' [G]over you and [C]then
 Pins and [G]needles [C]pins and [G]needles
 [C]Pins and [G]needles [D7]needles and [G]pins
 {end_of_verse}
+
+
+
+

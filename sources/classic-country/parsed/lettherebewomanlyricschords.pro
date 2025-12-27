@@ -1,6 +1,9 @@
 {meta: title Let There Be Woman}
 {meta: artist George Jones}
 {meta: composer Jacqueline Wellman}
+{meta: x_source classic-country}
+{meta: x_source_file lettherebewomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Adam was lonely and [G7]God sent him [C]Eve
@@ -22,3 +25,5 @@ My world was empty so [G7]lonely and [C]blue
 [C]When you gave your love to me I [F]must have felt just like [C]Adam
 For [F]I knew what God [C]intended when He said [G7]let there be [C][F]woman
 {end_of_verse}
+
+

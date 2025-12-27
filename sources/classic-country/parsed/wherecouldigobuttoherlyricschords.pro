@@ -1,6 +1,9 @@
 {meta: title Where Could I Go (But To Her)}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file wherecouldigobuttoherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why will a [G7]man go out and [C]cheat
@@ -39,3 +42,7 @@ When I feel the [A7]urge to go [D7]wrong [G7]
 The next [C]time I'm tempted when my [F]glass is [C]emptied
 [F]Where will I [C]go [G7]I'll go [F]home[C]
 {end_of_verse}
+
+
+
+

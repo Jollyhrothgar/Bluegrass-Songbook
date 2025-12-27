@@ -1,5 +1,8 @@
 {meta: title I'm Gonna Hire A Wino To Decorate Our Home}
 {meta: artist David Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnahireawinotodecorateourhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came crawling home last night like many nights [F]before
@@ -55,3 +58,10 @@
 [C]When you and your friends get off from work and have a powerful [F]thirst
 [C]There won't be any reason [G7]why you can't stop off here [C]first
 {end_of_verse}
+
+
+
+
+
+
+

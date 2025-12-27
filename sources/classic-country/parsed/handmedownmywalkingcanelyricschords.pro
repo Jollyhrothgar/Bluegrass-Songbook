@@ -1,6 +1,9 @@
 {meta: title Hand Me Down My Walking Cane}
 {meta: artist Jerry Lee Lewis}
 {meta: composer James Bland}
+{meta: x_source classic-country}
+{meta: x_source_file handmedownmywalkingcanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hand me down my walking cane
@@ -33,3 +36,6 @@ Hand me [D7]down my walking [G]bone
 [G]We start rocking we’ll be a rolling stone
 [D7]All my sins are taken [G]away 
 {end_of_verse}
+
+
+

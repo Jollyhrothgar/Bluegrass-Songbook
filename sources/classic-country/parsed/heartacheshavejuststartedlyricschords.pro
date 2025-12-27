@@ -1,6 +1,9 @@
 {meta: title Heartaches Have Just Started}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file heartacheshavejuststartedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like a [F]baby goes for candy 
@@ -57,3 +60,10 @@ But now [C]you've run out of rope
 And when you [G7]see the backdoor swingin' 
 You'll know [F]I've run out of [C]hope
 {end_of_verse}
+
+
+
+
+
+
+

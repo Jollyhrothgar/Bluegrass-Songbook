@@ -1,6 +1,9 @@
 {meta: title I Got Over The Blues}
 {meta: artist Wilburn Brothers}
 {meta: composer Teddy Wilburn, Doyle Wilburn, Mary Cox}
+{meta: x_source classic-country}
+{meta: x_source_file igotovertheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got over the blues [F]I got over [C]you
@@ -26,3 +29,5 @@ I thought I'd never [C]trust again
 [F]My heart to [C]love again
 [F]But I found [C]peace within [G7]I got over the [C]blues
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Walk Over God's Heaven}
 {meta: artist Alison Krauss}
 {meta: composer Thomas A. Dorsey}
+{meta: x_source classic-country}
+{meta: x_source_file walkovergodsheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got shoes you got shoes
@@ -23,3 +26,4 @@ Ain't goin there
 Well I'm gonna walk I gonna talk
 All over God's Heaven Heaven
 {end_of_verse}
+

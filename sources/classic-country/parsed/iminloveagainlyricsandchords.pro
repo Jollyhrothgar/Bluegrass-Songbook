@@ -1,6 +1,9 @@
 {meta: title I'm In Love Again}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino - Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file iminloveagainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes it's me and I'm in love again
@@ -35,3 +38,9 @@ Told me you didn't want me around no more
 {start_of_verse: Verse 1}
 [C]Yes it's me and I'm in love again
 {end_of_verse}
+
+
+
+
+
+

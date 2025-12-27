@@ -1,6 +1,9 @@
 {meta: title Friends In Low Places}
 {meta: artist Garth Brooks}
 {meta: composer Dewayne Blackwell and Earl Bud Lee}
+{meta: x_source classic-country}
+{meta: x_source_file friendsinlowplaceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blame it all on my roots I showed up in boots
@@ -62,3 +65,14 @@ But you'll never hear me complain
 {start_of_verse: Verse 3}
 But you'll never hear me complain
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

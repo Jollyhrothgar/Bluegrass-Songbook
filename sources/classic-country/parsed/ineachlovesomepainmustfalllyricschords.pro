@@ -1,6 +1,9 @@
 {meta: title In Each Love Some Pain Must Fall}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file ineachlovesomepainmustfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling it's not really over [D7]it just seems to [G]be
@@ -33,3 +36,7 @@ Darling don't you [G]know in each [D7]love some pain must [G]fall
 {start_of_verse: Verse 4}
 [C]Darling don't you [G]know in each [F]love some [D7]pain must [G]fall
 {end_of_verse}
+
+
+
+

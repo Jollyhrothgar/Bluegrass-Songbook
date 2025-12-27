@@ -1,6 +1,9 @@
 {meta: title We're Over}
 {meta: artist Johnny Rodriguez}
 {meta: composer Barry Mann and Cynthia Weil}
+{meta: x_source classic-country}
+{meta: x_source_file wereoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're over
@@ -34,3 +37,7 @@ We're [C]over
 [F]And all [G7]that's left [Am]is to find a reason [Em]why [F]
 We're [Dm]over and we still can't [G7]say good[C]bye
 {end_of_verse}
+
+
+
+

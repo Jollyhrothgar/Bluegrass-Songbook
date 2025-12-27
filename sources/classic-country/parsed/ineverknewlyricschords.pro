@@ -1,6 +1,9 @@
 {meta: title I Never Knew}
 {meta: artist Roy Orbison}
 {meta: composer Sam Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file ineverknewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I  [G]never knew how [C]much I'd [D7]miss your touch 
@@ -34,3 +37,6 @@ And [C]I'm alone to cry
 Oh [G]yes it's true how [D7]I love you 
 I never [G]knew ([C]never [D7]never [G]knew)
 {end_of_verse}
+
+
+

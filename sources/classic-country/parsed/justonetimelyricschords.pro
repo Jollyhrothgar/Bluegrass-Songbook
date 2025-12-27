@@ -1,5 +1,8 @@
 {meta: title Just One Time}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file justonetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I could see you just one [D7]time
@@ -27,3 +30,6 @@
 [D7]That same old love that once was mine
 [G]Wish I could see you just one time
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When The Trains Come In}
 {meta: artist Charley Pride}
 {meta: composer Al Urban}
+{meta: x_source classic-country}
+{meta: x_source_file whenthetrainscomeinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another [G7]lonely day is almost [C]gone
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Yes I'll come back tomorrow when the trains come [C]in
 {end_of_verse}
+
+
+
+

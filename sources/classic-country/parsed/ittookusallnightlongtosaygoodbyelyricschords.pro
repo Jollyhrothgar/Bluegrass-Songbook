@@ -1,6 +1,9 @@
 {meta: title It Took Us All Night Long To Say Goodbye}
 {meta: artist Johnny Rodriguez}
 {meta: composer Bob McDill and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file ittookusallnightlongtosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It only took a minute  for [F]us to finally end [C]it
@@ -29,3 +32,6 @@ And the love we had we'll [F]never have [G7]again
 [C]But there's one ember [F]left  that [G7]must have never [C]died
 Cause it [F]took us all night [C]long to say [C][G7]good-bye
 {end_of_verse}
+
+
+

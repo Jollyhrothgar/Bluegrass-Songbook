@@ -1,6 +1,9 @@
 {meta: title Streets Of San Francisco}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file streetsofsanfranciscolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From Tampa Florida's pride and joy to California shame
@@ -40,3 +43,8 @@ Hits the [G7]streets of San Francisco walking for her [C]life
 {start_of_verse: Verse 5}
 She'll walk the [G7]Streets of San Francisco the rest of her [C]life
 {end_of_verse}
+
+
+
+
+

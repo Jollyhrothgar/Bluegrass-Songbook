@@ -1,6 +1,9 @@
 {meta: title Mary Don't You Weep For Me}
 {meta: artist Stonewall Jackson}
 {meta: composer Mel Tillis and Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file marydontyouweepformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh Mary don't you weep for [G7]me 
@@ -50,3 +53,9 @@ Oh Mary just you wait for [C]me
 The [F]battle will soon be [C]over 
 Oh [G7]Mary don't you [C]weep
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Gone On The Other Hand}
 {meta: artist Charley Pride}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file goneontheotherhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Someday I think I'll take [C]up [G]thinking 
@@ -41,3 +44,8 @@ I do on the [D7]other [G]hand
 The [C]one who said she'd stay [G]forever 
 Is [D7]gone on the other [G]hand
 {end_of_verse}
+
+
+
+
+

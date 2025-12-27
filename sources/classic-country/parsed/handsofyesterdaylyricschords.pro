@@ -1,6 +1,9 @@
 {meta: title Hands Of Yesterday}
 {meta: artist Loretta Lynn}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file handsofyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I won't get too close to you cause I [G7]remember
@@ -36,3 +39,7 @@
 [F]Mine is one caress that you'd just as soon [C]forget
 [G7]You don't wanna feel the hands of [C]yesterday
 {end_of_verse}
+
+
+
+

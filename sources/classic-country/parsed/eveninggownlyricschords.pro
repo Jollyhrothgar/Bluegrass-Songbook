@@ -1,6 +1,9 @@
 {meta: title Evening Gown}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Mick Jagger}
+{meta: x_source classic-country}
+{meta: x_source_file eveninggownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]People think that I'm [F]high class
@@ -32,3 +35,6 @@ While I'm [D7]waiting for your [F]blonde hair to turn [C]gray
 Girl I keep [D7]waiting for your [F]blonde hair to turn [C]gray
 I'll keep [F]waiting for your [G7]blonde hair to turn [C]gray
 {end_of_verse}
+
+
+

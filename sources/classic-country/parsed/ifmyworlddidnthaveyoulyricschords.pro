@@ -1,6 +1,9 @@
 {meta: title If My World Didn't Have You}
 {meta: artist Willie Nelson}
 {meta: composer Beth N. Chapman}
+{meta: x_source classic-country}
+{meta: x_source_file ifmyworlddidnthaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My world has midnight and [G7]daylight and [C]sunsets and dawn
@@ -35,3 +38,7 @@ If [Dm]my world [G7]didn't have [Am]you
 {start_of_verse: Verse 5}
 If [Dm]my world [G7]didn't have [C]you
 {end_of_verse}
+
+
+
+

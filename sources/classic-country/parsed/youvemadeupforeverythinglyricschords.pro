@@ -1,6 +1,9 @@
 {meta: title You've Made Up For Everything}
 {meta: artist Jerry Wallace}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file youvemadeupforeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You are the trip to the [E7]land that [F]was too far [Dm]away[G7]
@@ -25,3 +28,5 @@ And what more could they [F]bring
 You've made [C]up for [F]ev[G7]ery[C]thing
 [F]You've made [C]up for [F]ev[G7]ery[C]thing
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I Slipped And Fell In Love}
 {meta: artist Alan Jackson}
 {meta: composer Harley Allen and John Wiggins}
+{meta: x_source classic-country}
+{meta: x_source_file islippedandfellinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A drunk man walking down a [F]rainy [G7]street
@@ -48,3 +51,9 @@ The [F]birds and the [C]bees are sure [E7]powerful [Am]stuff
 Help I've fallen [F]and I can't get [Am]up
 [C]Whoops I slipped and [G7]fell in [C]love
 {end_of_verse}
+
+
+
+
+
+

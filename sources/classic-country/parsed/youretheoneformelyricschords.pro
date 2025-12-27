@@ -1,6 +1,9 @@
 {meta: title You're The One For Me}
 {meta: artist Wanda Jackson}
 {meta: composer Steve Rowland}
+{meta: x_source classic-country}
+{meta: x_source_file youretheoneformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey little baby [C]you're the one I [D7]love so much
@@ -43,3 +46,8 @@ When I'm sleeping [C]you're all I ever [D7]dream about
 [G]We'll be so happy I [C]know we'll ever [D7]never part
 [G]I wanna tell you that [D7]I’m the one for [G]you
 {end_of_verse}
+
+
+
+
+

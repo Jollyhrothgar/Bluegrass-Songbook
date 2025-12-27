@@ -1,6 +1,9 @@
 {meta: title Last Night I Had The Strangest Dream}
 {meta: artist Garth Brooks}
 {meta: composer Ed McCurdy}
+{meta: x_source classic-country}
+{meta: x_source_file lastnightihadthestrangestdreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I had the strangest dream
@@ -36,3 +39,7 @@ I [F]ever dreamed [C]before
 Cause I [G7]dreamed the world
 Had [C]all a[Am]greed to [Dm]put an [G7]end to [C]war
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title She’s My Mother}
 {meta: artist George Jones}
 {meta: composer Charlie Louvin, Eddie Hill, Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file shesmymotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm thinking of a little [F]lady 
@@ -36,3 +39,7 @@ The [F]first to [C]hold me to her [G7]breast
 God [F]bless her cause she is my [C]mother 
 And she'll be the [G7]last one I'll for[C]get
 {end_of_verse}
+
+
+
+

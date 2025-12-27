@@ -1,6 +1,9 @@
 {meta: title In My Robe Of White}
 {meta: artist The Bass Mountain Boys}
 {meta: composer Andrea Geniece Ingold}
+{meta: x_source classic-country}
+{meta: x_source_file inmyrobeofwhitelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In my robe of white I will fly away
@@ -47,3 +50,9 @@ In my [D7]robe of white I will fly [G]away
 {start_of_verse: Verse 4}
 In my [D7]robe of white I will fly [G]away
 {end_of_verse}
+
+
+
+
+
+

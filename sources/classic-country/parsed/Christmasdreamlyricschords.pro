@@ -1,5 +1,8 @@
 {meta: title Christmas Dream}
 {meta: artist Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasdreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I dreamed I spent my Christmas with my [F]family
@@ -29,3 +32,6 @@ We said in [G7]Jesus name and for his sake
 [C]I had a lovely Christmas with my [F]family 
 Even if it [G7]was a Christmas [C]dream
 {end_of_verse}
+
+
+

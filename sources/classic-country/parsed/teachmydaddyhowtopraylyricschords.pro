@@ -1,6 +1,9 @@
 {meta: title Teach My Daddy How To Pray with chords}
 {meta: artist Ernest Tubb}
 {meta: composer Jim Owen and James Baker}
+{meta: x_source classic-country}
+{meta: x_source_file teachmydaddyhowtopraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For a long [F]long time I thought of [C]leaving
@@ -40,3 +43,8 @@ If it's true [F]teach my [C]daddy [G7]how to [C]pray
 {start_of_verse: Verse 5}
 [G7]If it's [C]true [F]teach my [C]daddy [G7]how to [C]pray
 {end_of_verse}
+
+
+
+
+

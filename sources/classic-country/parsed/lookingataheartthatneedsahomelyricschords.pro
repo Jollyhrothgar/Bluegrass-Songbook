@@ -1,6 +1,9 @@
 {meta: title Looking At A Heart That Needs A Home}
 {meta: artist Waylon Jennings}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file lookingataheartthatneedsahomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm just a stranger in this [C]town
@@ -33,3 +36,7 @@ One who wants a gentleman [F]and accepts me like I am
 {start_of_verse: Verse 5}
 [G7]You're lookin' at a heart that needs a [C]home
 {end_of_verse}
+
+
+
+

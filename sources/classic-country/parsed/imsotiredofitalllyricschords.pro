@@ -1,5 +1,8 @@
 {meta: title I'm So Tired Of It All}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file imsotiredofitalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All my [D7]life I've been so [G]lonesome 
@@ -28,3 +31,6 @@ No [C]one will miss me after [G]all
 [C]Up there I pray I'll find con[G]tentment
 But [D7]now I'm so tired of it [G]all
 {end_of_verse}
+
+
+

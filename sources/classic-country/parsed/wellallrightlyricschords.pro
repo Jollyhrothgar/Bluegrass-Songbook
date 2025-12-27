@@ -1,6 +1,9 @@
 {meta: title Well All Right}
 {meta: artist Buddy Holly}
 {meta: composer Buddy Holly, Norman Petty, Jerry Allison, Joe Mauldin}
+{meta: x_source classic-country}
+{meta: x_source_file wellallrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well all right so I'm [F]being [G]foolish
@@ -36,3 +39,7 @@
 [C]Well all right well all [D7]right
 [G]Our lifetime [F]love [G]will be all [D7]right
 {end_of_verse}
+
+
+
+

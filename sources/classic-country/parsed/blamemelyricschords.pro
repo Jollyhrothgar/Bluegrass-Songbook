@@ -1,6 +1,9 @@
 {meta: title Blame Me}
 {meta: artist Darrell McCall}
 {meta: composer Darrell McCall and Donny Young}
+{meta: x_source classic-country}
+{meta: x_source_file blamemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blame me if you [G]want to
@@ -33,3 +36,7 @@ But I’ll just keep on keep on [D7]keep on loving [G]you
 {start_of_verse: Verse 4}
 [C]B-l-[D7]a-m-e  [G]m-[C]--[G]e
 {end_of_verse}
+
+
+
+

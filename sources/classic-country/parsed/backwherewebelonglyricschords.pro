@@ -1,6 +1,9 @@
 {meta: title Back Where We Belong}
 {meta: artist Ricky Skaggs}
 {meta: composer Jim Rushing and Keith Sewell}
+{meta: x_source classic-country}
+{meta: x_source_file backwherewebelonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Feelin' low [A#7]tension high [C]that's the way things were last [G]night
@@ -29,3 +32,6 @@ Not enough weak and [A#7]too much strong [F]back where we [C]belong
 I can [A#7]testify [F]love can kiss the tears [C]goodbye
 You've been there and [A#7]so have I [F]back where we [C]belong
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title How Big Is God}
 {meta: artist Ray Price}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file howbigisGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Though men may strife to go beyond the reap of [D7]space
@@ -29,3 +32,6 @@ To try to tell these lips can only [G]start
 He's big enough to rule his mighty [C]universe
 Yet small [G]enough to [D7]live within my [G]heart
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Mister Joe Henry's Happy Hand Clappin'}
 {meta: artist Charlie Pride}
 {meta: composer Larry Lee and Glenn D. Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file misterjoehenryshappyhandclappinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now Mister Joe Henry was a happy little man
@@ -62,3 +65,11 @@ Because of [F]Mister Joe Henry’s [C]happy hand [D7]clappin’
 Because of [F]Mister Joe Henry’s [C]happy hand [D7]clappin’
 [G7]Open air rhythm [C]band
 {end_of_verse}
+
+
+
+
+
+
+
+

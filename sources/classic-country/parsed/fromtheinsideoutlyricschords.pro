@@ -1,6 +1,9 @@
 {meta: title From The Inside Out}
 {meta: artist Tracy Lawrence}
 {meta: composer Thomas Miller and Rick Huckaby}
+{meta: x_source classic-country}
+{meta: x_source_file fromtheinsideoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was always there [Em]takin' care of me
@@ -42,3 +45,9 @@ She didn't [C]cry she didn't [Dm]shout I was [Em]blind but [C]I see [F]now
 {start_of_verse: Verse 6}
 She was [Dm]breaking from the [G7]inside [C]out
 {end_of_verse}
+
+
+
+
+
+

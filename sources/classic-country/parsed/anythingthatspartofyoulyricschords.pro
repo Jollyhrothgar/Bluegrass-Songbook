@@ -1,6 +1,9 @@
 {meta: title Anything That's Part Of You}
 {meta: artist Elvis Presley}
 {meta: composer Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file anythingthatspartofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I memorize the note you sent [Em]
@@ -28,3 +31,6 @@ No reason left for me to [C]live [Em]
 When I’d give all of someone [C]new [G]
 For [G7]anything that's part of [C]you
 {end_of_verse}
+
+
+

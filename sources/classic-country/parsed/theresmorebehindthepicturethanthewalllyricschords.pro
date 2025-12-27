@@ -1,5 +1,8 @@
 {meta: title There's More Behind The Picture Than The Wall}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file theresmorebehindthepicturethanthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was cleaning out the closet throwin' things [F]away  
@@ -41,3 +44,8 @@ Four happy lovin' faces back then we had it [F]all
 But there's [C]more behind this [G7]picture than the [F]wall  
 Than the [C]wall  
 {end_of_verse}
+
+
+
+
+

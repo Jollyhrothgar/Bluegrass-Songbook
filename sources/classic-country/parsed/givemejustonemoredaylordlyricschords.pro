@@ -1,6 +1,9 @@
 {meta: title Give Me Just One More Day Lord}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery and Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file givemejustonemoredaylordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In thy holy name won't you give me just another day
@@ -45,3 +48,11 @@ When I tell them what You can do then he'll make all donations
 [G]In thy holy name won't you give me just another day
 [D7]There's some things I need to do before I pass [G]away
 {end_of_verse}
+
+
+
+
+
+
+
+

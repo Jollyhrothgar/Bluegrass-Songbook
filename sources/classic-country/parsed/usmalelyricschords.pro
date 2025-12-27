@@ -1,6 +1,9 @@
 {meta: title U.S. Male}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Reed}
+{meta: x_source classic-country}
+{meta: x_source_file usmalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm a U.S. Male cause I was [Am]born
@@ -81,3 +84,16 @@ I'm gonna lay one on ya you're talking to the U.S. Male
 {start_of_verse: Verse 13}
 The American U.S. Male
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

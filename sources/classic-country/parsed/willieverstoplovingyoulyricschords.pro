@@ -1,6 +1,9 @@
 {meta: title Will I Ever Stop Loving You}
 {meta: artist Jim Ed Brown}
 {meta: composer Jean Chapel and Alda Calongne}
+{meta: x_source classic-country}
+{meta: x_source_file willieverstoplovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Will I ever [D7]stop loving [C]you[D7]
@@ -37,3 +40,8 @@ Will I ever [D7]stop loving [C]you[G]
 {start_of_verse: Verse 5}
 Will I [G]ever [D7]stop loving [C]yo[G]u
 {end_of_verse}
+
+
+
+
+

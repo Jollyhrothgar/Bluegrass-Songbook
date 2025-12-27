@@ -1,5 +1,8 @@
 {meta: title Empty Chair At The Christmas Table}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file emptychairattheChristmastablelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's an Empty Chair At The [F]Table
@@ -21,3 +24,5 @@ For that [A7]one still so dear to you [D7]and [G7]me
 There's an [C]Empty Chair At The [F]Table
 And a [C]light on the [G7]Christmas [C]tree
 {end_of_verse}
+
+

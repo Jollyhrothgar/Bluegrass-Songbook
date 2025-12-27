@@ -1,6 +1,9 @@
 {meta: title Bottle In The Hand Is Much Stronger Than The Man}
 {meta: artist Conway Twitty}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file bottleinthehandismuchstrongerthanthemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Will I ask my old buddy to call her on the phone
@@ -29,3 +32,6 @@ I'd go home if I was able cause this night life's gettin' old
 [C]But I'll keep up my sinful livin' and [C7]she'll go on [F]forgivin'
 [C]She knows [F]the bottle [C]in the hand is [G7]much stronger than the [C]man
 {end_of_verse}
+
+
+

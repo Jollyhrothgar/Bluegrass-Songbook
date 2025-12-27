@@ -1,6 +1,9 @@
 {meta: title Take My Hand}
 {meta: artist Mel Tillis}
 {meta: composer Sherley Price, Les Acton, Helen Acton}
+{meta: x_source classic-country}
+{meta: x_source_file takemyhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take my hand and walk with [C]me 
@@ -22,3 +25,5 @@ You're the reason that I [C]live
 I'll be yours [C]eternally 
 [D7]Take my hand and walk with [G]me
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Three Cigarettes in an Ashtray}
 {meta: artist Patsy Cline}
+{meta: x_source classic-country}
+{meta: x_source_file threecigarettesinanashtraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two [G7]cigarettes in an [C]ashtray
@@ -24,3 +27,5 @@ And his [F]love is no longer my [C]own
 And [C]I sit [A7]alone
 And watch [F]one cigarette [G7]burn [C]away
 {end_of_verse}
+
+

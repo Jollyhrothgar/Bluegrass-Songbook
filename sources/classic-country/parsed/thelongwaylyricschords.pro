@@ -1,6 +1,9 @@
 {meta: title The Long Way}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Jeff Hill}
+{meta: x_source classic-country}
+{meta: x_source_file thelongwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I met her I [G7]loved her we [C]married
@@ -29,3 +32,6 @@ But [F]this time there is no mis[C]take
 Cause [F]I took the long way a[C]round dear
 It turned out the [G7]right way to [C]take
 {end_of_verse}
+
+
+

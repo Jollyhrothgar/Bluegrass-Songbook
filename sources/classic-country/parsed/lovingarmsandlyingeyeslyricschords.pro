@@ -1,5 +1,8 @@
 {meta: title Loving Arms And Lying Eyes}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file lovingarmsandlyingeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a game you play
@@ -46,3 +49,9 @@ You've got loving [D7]arms and lying [C]eyes
 Loving [G]arms [C] and lying [G]eyes [C]
 Loving [G]arms [C] and lying [G]eyes
 {end_of_verse}
+
+
+
+
+
+

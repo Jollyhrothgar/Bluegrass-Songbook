@@ -1,5 +1,8 @@
 {meta: title Blue Eyed Girl Of Berlin}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file blueeyedgirlofberlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the blue eyed girl of Berlin
@@ -35,3 +38,6 @@ That [G7]blue eyed girl of [C]Berlin
 [F]Oh sweet momma I'm [C]gonna marry
 That [G7]blue eyed girl of [C]Berlin
 {end_of_verse}
+
+
+

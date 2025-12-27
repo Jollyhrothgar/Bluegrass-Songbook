@@ -1,6 +1,9 @@
 {meta: title Heartbeat}
 {meta: artist Buddy Holly}
 {meta: composer Buddy Holly, Norman Petty, Bob Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file heartbeatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heartbeat why do you [C]miss when my [D7]baby kisses [G]me
@@ -17,3 +20,4 @@ heartbeat why do you [C]flip then give [D7]me a skip beat [G]sign
 And [C]bring to me love [G]glo-r-[D7]y
 [G]Heartbeat why do you [C]miss when my [D7]baby kisses [G]me
 {end_of_verse}
+

@@ -1,5 +1,8 @@
 {meta: title Small Town Southern Man}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file smalltownsouthernmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Born the middle [C]son of a farmer 
@@ -82,3 +85,10 @@ Of a [G7]small town [F]southern [C]man
 [F]Raised on the [C]ways and gentle kindness 
 Of a [G7]small town [F]southern [C]man
 {end_of_verse}
+
+
+
+
+
+
+

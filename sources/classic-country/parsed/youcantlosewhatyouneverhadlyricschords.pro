@@ -1,6 +1,9 @@
 {meta: title You Can't Lose What You Never Had}
 {meta: artist Faron Young}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file youcantlosewhatyouneverhadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're standin' there accusin' me of breakin' up true love
@@ -37,3 +40,9 @@ You say I took her from you but that's not the way it was
 {start_of_verse: Verse 6}
 [D7]Cause you can't lose what you never [G]had
 {end_of_verse}
+
+
+
+
+
+

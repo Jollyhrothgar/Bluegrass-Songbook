@@ -1,5 +1,8 @@
 {meta: title My Love For You}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file myloveforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 by Hank Williams
@@ -29,3 +32,7 @@ by Hank Williams
 {start_of_verse: Verse 5}
 repeat #2
 {end_of_verse}
+
+
+
+

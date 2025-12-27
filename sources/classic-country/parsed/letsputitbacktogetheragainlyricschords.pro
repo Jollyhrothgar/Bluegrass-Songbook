@@ -1,6 +1,9 @@
 {meta: title Let’s Put It Back Together Again}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file letsputitbacktogetheragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We had it once then [F]watched it go to [C]pieces
@@ -30,3 +33,6 @@ And let’s put it [Dm]back to[G7]gether a[C]gain
 We’ll [C]make it strong e[F]nough this time that [C]won’t ever [F]end
 Let’s put it[Dm] back t[G7]ogether [C]again
 {end_of_verse}
+
+
+

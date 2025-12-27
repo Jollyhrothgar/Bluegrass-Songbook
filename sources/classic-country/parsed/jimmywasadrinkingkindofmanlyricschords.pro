@@ -1,5 +1,8 @@
 {meta: title Jimmy Was A Drinking Kind Of Man}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file jimmywasadrinkingkindofmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jimmy was a regular at the local drinking bar
@@ -43,3 +46,8 @@ He [G7]loved to hear a good hillbilly [C]band
 The scar across his face was Jimmy's [F]brand
 Cause [G7]Jimmy was a drinking kind of [C]man
 {end_of_verse}
+
+
+
+
+

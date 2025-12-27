@@ -1,6 +1,9 @@
 {meta: title What Am I Going To Do Without You}
 {meta: artist Ray Price}
 {meta: composer Larry Bastian}
+{meta: x_source classic-country}
+{meta: x_source_file whatamigoingtodowithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The lawyer spoke our minds today
@@ -57,3 +60,9 @@ When there's [Dm]no one to hang on to
 {start_of_verse: Verse 6}
 [Fm]What am I gonna [G7]do without [C]you 
 {end_of_verse}
+
+
+
+
+
+

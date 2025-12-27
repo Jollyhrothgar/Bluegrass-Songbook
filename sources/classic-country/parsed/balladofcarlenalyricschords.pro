@@ -1,6 +1,9 @@
 {meta: title Ballad Of Carlena}
 {meta: artist Billy Walker}
 {meta: composer Bobby Damron and Jay Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file balladofcarlenalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Flashing dark eyes has [G7]Carlena laughter so pleasant to [C]hear
@@ -30,3 +33,6 @@
 [F]Now I got no reason for living so I'll just ride on to [G7]Juarez
 [C]And I'll drink till I can't remember [G7]Carlena and Jose [C]Gomez
 {end_of_verse}
+
+
+

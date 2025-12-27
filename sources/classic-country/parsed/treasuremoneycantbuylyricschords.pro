@@ -1,5 +1,8 @@
 {meta: title Treasure Money Can't Buy}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file treasuremoneycantbuylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While driving one day through the [C]quiet country side
@@ -43,3 +46,8 @@ Yes He loved me and saved me and [C]I can't explain why
 And [G]these are the treasures [C]these are the [G]treasures
 That [D7]money can't [G]buy
 {end_of_verse}
+
+
+
+
+

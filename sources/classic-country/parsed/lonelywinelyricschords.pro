@@ -1,6 +1,9 @@
 {meta: title Lonely Wine}
 {meta: artist Roy Orbison}
 {meta: composer Roy Wells}
+{meta: x_source classic-country}
+{meta: x_source_file lonelywinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The night is bright and gay but I'm so [B7]blue
@@ -26,3 +29,6 @@
 [E7]And when the clouds roll by I'll come to [A7]you
 [D7]But until then I'll drink my [Am]lonely [G][D7]wine
 {end_of_verse}
+
+
+

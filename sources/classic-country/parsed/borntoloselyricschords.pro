@@ -1,6 +1,9 @@
 {meta: title Born to Lose}
 {meta: artist Eddy Arnold}
 {meta: composer Ted Daffan}
+{meta: x_source classic-country}
+{meta: x_source_file borntoloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Born [G7]to [C]lose I've [F]lived my [G7]life in [C]vain [C7]
@@ -30,3 +33,6 @@ Born to [G7]lose and now I'm losing [C]you
 Born to [G7]lose and now I'm losing [C]you
 Born to [G7]lose and now I'm losing [C]you 
 {end_of_verse}
+
+
+

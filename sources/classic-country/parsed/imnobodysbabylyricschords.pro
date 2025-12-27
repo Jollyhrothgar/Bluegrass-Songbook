@@ -1,6 +1,9 @@
 {meta: title I'm Nobody's Baby}
 {meta: artist Connie Francis}
 {meta: composer Benny Davis, Milton Ager, Lester Santly}
+{meta: x_source classic-country}
+{meta: x_source_file imnobodysbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm nobody's [D7]ba-[G7]by I wonder [C]why
@@ -19,3 +22,4 @@ Oh [Am]please send me down [G7]somebody to love
 Want someone [A7]hear my plea and [G7]take a chance with [A7]me
 Because I'm [Dm]nobody's [G7]baby [Dm]nobody's [G7]baby [Dm]nobody's [G7]baby [C]now
 {end_of_verse}
+

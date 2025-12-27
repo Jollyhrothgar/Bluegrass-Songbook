@@ -1,6 +1,9 @@
 {meta: title Along The Santa Fe Trail}
 {meta: artist Jimmy Wakely}
 {meta: composer Al Dubin, Edwina Coolidge, Will Grosz}
+{meta: x_source classic-country}
+{meta: x_source_file alongthesantafetraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Angels come to paint the desert [D7]nightly
@@ -37,3 +40,8 @@ I've [C]found you and the mountains that [D7]surround you
 Are the walls I built a[F]round you 
 Along the [G7]Santa Fe [C]Trail
 {end_of_verse}
+
+
+
+
+

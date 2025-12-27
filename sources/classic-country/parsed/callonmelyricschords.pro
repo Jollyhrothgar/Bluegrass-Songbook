@@ -1,5 +1,8 @@
 {meta: title Call On Me}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file callonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Call on me [C]call on me
@@ -40,3 +43,8 @@ If you think that life has double [C]crossed you
 [G]Honey I'll stay close to you on my [C]knees if I have to
 If you [G]need me for [D7]anything just [G]call
 {end_of_verse}
+
+
+
+
+

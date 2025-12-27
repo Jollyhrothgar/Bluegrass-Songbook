@@ -1,6 +1,9 @@
 {meta: title Hold Fast To The Right}
 {meta: artist The Nashville Bluegrass Band}
 {meta: composer James Vaughan}
+{meta: x_source classic-country}
+{meta: x_source_file holdfasttotherightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Kneel down by the [F]side of your [C]mother my boy
@@ -43,3 +46,8 @@ Wher[G7]ever your footsteps may [C]roam
 Forsake not the [F]way of sal[C]vation my boy
 That you [G7]learned from your mother at [C]home
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sea Of Regret}
 {meta: artist Ricky Skaggs}
 {meta: composer David Sloas and Kenneth Sloas}
+{meta: x_source classic-country}
+{meta: x_source_file seaofregretlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The love that you promised to me on that [G7]day
@@ -33,3 +36,7 @@ No home just a drifter on the sea of [C]regret
 {start_of_verse: Verse 5}
 [G7]No home just a drifter on the sea of [C]regret
 {end_of_verse}
+
+
+
+

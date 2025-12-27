@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Stardust Cowboy}
 {meta: artist Lefty Frizzell}
 {meta: composer Darrell Statler}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkstardustcowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In his cowboy boots [F]rhinestone suits [C]and flashy guitars
@@ -35,3 +38,6 @@ Faded Love  San Antone [G7]Rose  I Love [C]You A [F]Thousand [G7]Ways
 He'll sing it [F]loud and do his [C]best
 Oh let the honky tonk [F]stardust [C]cowboy [G7]keep on [F]sing-[C]ing
 {end_of_verse}
+
+
+

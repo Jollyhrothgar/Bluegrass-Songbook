@@ -1,6 +1,9 @@
 {meta: title Yesterday's Gone}
 {meta: artist Vern Gosdin}
 {meta: composer Wayne Bradford}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdaysgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once upon a time there [F]was [C]tomorrow
@@ -25,3 +28,5 @@ And [G7]yesterday's [C]gone
 And [G7]yesterday's [C]gone
 And yesterday's gone
 {end_of_verse}
+
+

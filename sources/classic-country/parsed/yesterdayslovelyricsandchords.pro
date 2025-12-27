@@ -1,6 +1,9 @@
 {meta: title Yesterday's Love}
 {meta: artist Slim Whitman}
 {meta: composer Tompall Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdayslovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You promised to love me [C7]with a love that's [F]sweet
@@ -22,3 +25,5 @@ Yesterday's [G7]kisses are still warm [C]today
 Yesterday's [F]memories still linger [C]on
 While yesterday's [G7]love is forever [C]gone
 {end_of_verse}
+
+

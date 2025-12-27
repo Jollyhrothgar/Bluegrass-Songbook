@@ -1,6 +1,9 @@
 {meta: title Everything's Alright}
 {meta: artist Larry Sparks}
 {meta: composer Emma Smith}
+{meta: x_source classic-country}
+{meta: x_source_file everythingsalrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you want to know [C]what happiness [G]is
@@ -29,3 +32,6 @@ Everything's [D7]alright with me and my [G]Lord
 I'm on my [C]way to a place called [G]heaven
 Everything's alright (everything's alright) [D7]everything's al[G]right
 {end_of_verse}
+
+
+

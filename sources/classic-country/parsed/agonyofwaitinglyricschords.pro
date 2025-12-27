@@ -1,5 +1,8 @@
 {meta: title Agony Of Waiting}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file agonyofwaitinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This room is like a [D7]tomb quiet and [G]still
@@ -28,3 +31,6 @@ But I [A7]wonder if you know the [D7]agony of waiting all alone
 But I [G]love you you know that or I [G7]couldn't stand the [C]pain
 And the [G]agony of [D7]waiting in [G]vain
 {end_of_verse}
+
+
+

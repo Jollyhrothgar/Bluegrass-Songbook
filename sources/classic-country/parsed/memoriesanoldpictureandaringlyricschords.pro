@@ -1,5 +1,8 @@
 {meta: title Memories An Old Picture And A Ring}
 {meta: artist Dick Curless}
+{meta: x_source classic-country}
+{meta: x_source_file memoriesanoldpictureandaringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm far away from my homeland [C7]out across the [F]sea
@@ -39,3 +42,8 @@
 [F]Something nice and sweet for him
 [C]Beside those memories [G7]and old picture and a [C]ring
 {end_of_verse}
+
+
+
+
+

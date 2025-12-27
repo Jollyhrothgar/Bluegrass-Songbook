@@ -1,6 +1,9 @@
 {meta: title Don't Take It Tonight}
 {meta: artist Ronnie Milsap}
 {meta: composer Troy Seals and Mike Reid}
+{meta: x_source classic-country}
+{meta: x_source_file donttakeittonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]There's no easy way to ask [C]you
@@ -53,3 +56,11 @@ Fell you slipping out of my life
 [Am]Oh if you're [Dm]taking your love [G7]away
 [C]Don't take it tonight
 {end_of_verse}
+
+
+
+
+
+
+
+

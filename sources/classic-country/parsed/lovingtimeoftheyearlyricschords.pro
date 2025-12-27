@@ -1,5 +1,8 @@
 {meta: title Loving Time of the Year}
 {meta: artist Travis Tritt}
+{meta: x_source classic-country}
+{meta: x_source_file lovingtimeoftheyearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Time's drawing closer it's [C]just around the corner
@@ -50,3 +53,9 @@ In this [G]loving [D7]time of the [G]year
 [C]In this [G]loving [D7]time of the [G]year
 [C]In this [G]loving [D7]time of the [G]year
 {end_of_verse}
+
+
+
+
+
+

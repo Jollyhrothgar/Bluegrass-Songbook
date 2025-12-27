@@ -1,6 +1,9 @@
 {meta: title The Man Who Owes Everyone}
 {meta: artist Willie Nelson}
 {meta: composer Dave Anderson and Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file themanwhooweseveryonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He's the man who owes everyone something [G7]from a long time [C]ago
@@ -27,3 +30,6 @@
 {start_of_verse: Verse 3}
 [D7]And the man who owes everyone smiles like he likes it that [G]way
 {end_of_verse}
+
+
+

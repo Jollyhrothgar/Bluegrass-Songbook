@@ -1,6 +1,9 @@
 {meta: title How Can I (Help You Forgive Me)}
 {meta: artist Dolly Parton and Porter Wagoner}
 {meta: composer Porter Wagoner and Tom Pick}
+{meta: x_source classic-country}
+{meta: x_source_file howcanihelpyouforgivemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As morning breaks and I awake [G7]my eyes open wide
@@ -39,3 +42,7 @@ Wild thoughts of you run through my mind
 Like [F]rivers to the sea
 How can [G7]I help you for[C]give me
 {end_of_verse}
+
+
+
+

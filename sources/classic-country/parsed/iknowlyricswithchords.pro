@@ -1,6 +1,9 @@
 {meta: title I Know}
 {meta: artist Sonny James}
 {meta: composer Sonny James and John Skye}
+{meta: x_source classic-country}
+{meta: x_source_file iknowlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know two eyes that just [Dm]adore you
@@ -33,3 +36,7 @@ And I [G7]know one sincere loving heart that's beating just for [C]you[F]  [C]
 {start_of_verse: Verse 5}
 And I [G7]know one sincere loving heart that's beating just for [C]you[F]  [C]
 {end_of_verse}
+
+
+
+

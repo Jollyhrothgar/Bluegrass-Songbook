@@ -1,6 +1,9 @@
 {meta: title A Real Close Friend}
 {meta: artist George Jones}
 {meta: composer George Jones and George Riddle}
+{meta: x_source classic-country}
+{meta: x_source_file arealclosefriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I think you know a real close friend of [G]mine
@@ -41,3 +44,9 @@ That [G]your in love with a [D7]real close friend of [G]mine
 {start_of_verse: Verse 6}
 All [D7]because of a real close friend of [G]mine
 {end_of_verse}
+
+
+
+
+
+

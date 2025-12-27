@@ -1,6 +1,9 @@
 {meta: title Backbone Job}
 {meta: artist Keith Whitley}
 {meta: composer Karen Brooks and Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file backbonejoblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm not lookin' for an occupation [C]I just wanna go [G]home
@@ -41,3 +44,8 @@ I'm lookin' for a [G]backbone job[F]  [D7]   [G]
 [D7]Just lookin' for a [G]backbone job[F]  [D7]   [G]
 [D7]I'm lookin' for a [G]backbone job[F]  [D7]   [G]
 {end_of_verse}
+
+
+
+
+

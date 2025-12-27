@@ -1,6 +1,9 @@
 {meta: title Sweet Memories}
 {meta: artist Webb Pierce}
 {meta: composer L.E. White}
+{meta: x_source classic-country}
+{meta: x_source_file sweetmemorieslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I still [Em]have [C]memories [G7]sweet memories of [C]you
@@ -35,3 +38,7 @@ Always planned but never [C]do
 [G7]That didn't [C]l-a[G7]-s-[C]t 
 I [Em]still have [C]memories [G7]sweet memories of [C]you
 {end_of_verse}
+
+
+
+

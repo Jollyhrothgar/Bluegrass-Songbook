@@ -1,5 +1,8 @@
 {meta: title Lou’s Got The Flu}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file lousgottheflulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some people bad and some people good
@@ -42,3 +45,8 @@ And Lou's got the flu and he's laid up
 [C]Lou's got the flu and he's laid [F]up
 [G7]Have to get well pretty soon [C]though
 {end_of_verse}
+
+
+
+
+

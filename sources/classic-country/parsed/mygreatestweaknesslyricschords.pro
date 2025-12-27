@@ -1,6 +1,9 @@
 {meta: title My Greatest Weakness}
 {meta: artist Bobby Helms}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file mygreatestweaknesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're my [F]weakness my greatest [C]weakness
@@ -39,3 +42,8 @@ Greatest [G7]weakness [C]yet
 Greatest [G7]weakness [C]yet 
 Greatest [G7]weakness [C]yet
 {end_of_verse}
+
+
+
+
+

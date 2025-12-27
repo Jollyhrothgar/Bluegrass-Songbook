@@ -1,6 +1,9 @@
 {meta: title I Don't Want You To Go}
 {meta: artist Tanya Tucker}
 {meta: composer Bruce Roberts and Allee Willis}
+{meta: x_source classic-country}
+{meta: x_source_file idontwantyoutogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here I am alone and I don't [C]understand 
@@ -51,3 +54,9 @@ It's [D7]crazy cause it's [C]breaking our [Bm]hearts
 [Em]Things can fall apart but I [Am]know 
 That I [D7]don't want you to [G]go
 {end_of_verse}
+
+
+
+
+
+

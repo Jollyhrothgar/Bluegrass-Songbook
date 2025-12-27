@@ -1,5 +1,8 @@
 {meta: title I Hardly Ever Sing Beer Drinking Songs}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file ihardlyeversingbeerdrinkingsongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hardly ever sing beer drinking songs
@@ -35,3 +38,7 @@ I hardly ever sing beer drinking songs
 [C]I don't lose no sleep at night [G]cause things with you are going [C]right
 [D7]And I hardly ever sing beer drinking [G]songs
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title All New Me}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file allnewmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 All New Me
@@ -26,3 +29,6 @@ Learnin' to [G7]walk alone just like a [C]child
 The all new [F]you was makin' me [C]blue
 Wait'll you [G7]see the all new [C]me [F]  [C]
 {end_of_verse}
+
+
+

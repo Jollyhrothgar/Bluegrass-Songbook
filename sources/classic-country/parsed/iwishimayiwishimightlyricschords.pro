@@ -1,6 +1,9 @@
 {meta: title I Wish I May I Wish I Might}
 {meta: artist George Morgan}
 {meta: composer Joe Allison}
+{meta: x_source classic-country}
+{meta: x_source_file iwishimayiwishimightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I may I wish I [G7]might
@@ -43,3 +46,9 @@
 [C]But I'm not wise I realize [G7]that no one else will [C]do
 [G7]I wish I may I wish I might have [C]you
 {end_of_verse}
+
+
+
+
+
+

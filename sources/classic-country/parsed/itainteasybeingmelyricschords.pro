@@ -1,6 +1,9 @@
 {meta: title It Ain’t Easy Being Me}
 {meta: artist John Anderson}
 {meta: composer Chris Knight and Craig Wiseman}
+{meta: x_source classic-country}
+{meta: x_source_file itainteasybeingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There oughta be a town somewhere [Em]named [D7]for how I [C]feel
@@ -51,3 +54,9 @@ But I [Am]don't say nothing as I [G]watch you pack
 [C]I've had to work to be the [G]jerk I've come to [A7]be
 [C]It ain't [D7]easy being [G]me
 {end_of_verse}
+
+
+
+
+
+

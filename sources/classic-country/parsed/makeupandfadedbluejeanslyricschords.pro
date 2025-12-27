@@ -1,5 +1,8 @@
 {meta: title Makeup And Faded Blue Jeans}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file makeupandfadedbluejeanslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In downtown Modesto I was workin' the Holiday [F]Inn      
@@ -41,3 +44,8 @@ I was right she could cause me to sing bad
 And fall out of love with [F]guitars
 And [C]blow all my chances at [G7]bein' a big singin' [C]star
 {end_of_verse}
+
+
+
+
+

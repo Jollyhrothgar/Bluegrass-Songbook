@@ -1,6 +1,9 @@
 {meta: title Cowgirl}
 {meta: artist Tracy Byrd}
 {meta: composer Shawn Camp and Harley Allen}
+{meta: x_source classic-country}
+{meta: x_source_file cowgirllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well my car broke down outside of town 
@@ -51,3 +54,9 @@ They [D7]don't make calves like that in [G]town [D7]
 She had a [G]big ol' hat and [E7]big blue eyes and [A7]blond curls
 With [C]calves like that [D7]you gotta be a [C]cow[G]girl
 {end_of_verse}
+
+
+
+
+
+

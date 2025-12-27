@@ -1,5 +1,8 @@
 {meta: title My Heart Has a Mind of Its Own}
 {meta: artist Connie Francis}
+{meta: x_source classic-country}
+{meta: x_source_file myhearthasamindofitsownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told this [G7]heart of mine  our love could never [F]be
@@ -27,3 +30,6 @@
 [G7]Guess my heart has a mind of its [C]own
 [G7]Guess my heart has a mind of its [C]own
 {end_of_verse}
+
+
+

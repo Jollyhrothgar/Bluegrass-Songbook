@@ -1,6 +1,9 @@
 {meta: title Just The Two Of Us}
 {meta: artist Porter Wagoner}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file justthetwoofuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No we can't control the evil that [G7]surround us
@@ -36,3 +39,7 @@ But as long as we're together that's [C]enough
 Though we have no power over those [G7]around us
 We can act as if there's just the two of [C]us
 {end_of_verse}
+
+
+
+

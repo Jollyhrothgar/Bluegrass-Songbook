@@ -1,5 +1,8 @@
 {meta: title I Lie When I Drink}
 {meta: artist Dale Watson}
+{meta: x_source classic-country}
+{meta: x_source_file iliewhenidrinklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I lie when I drink and [D7]I drink a lot
@@ -40,3 +43,8 @@ I [C]only drink [D7]when I'm missing [G]you
 {start_of_verse: Verse 4}
 I [C]only drink [D7]when I'm missing [G]you
 {end_of_verse}
+
+
+
+
+

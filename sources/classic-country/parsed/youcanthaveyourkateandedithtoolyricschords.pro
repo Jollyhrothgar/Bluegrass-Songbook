@@ -1,6 +1,9 @@
 {meta: title You Can't Have Your Kate And Edith Too}
 {meta: artist Statler Brothers}
 {meta: composer Bobby Braddock and Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file youcanthaveyourkateandedithtoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well we went out on a double [F]date
@@ -53,3 +56,10 @@ And you and Edith are in the house alone
 You can't have your [A7]Kate and Edith [D7]too
 You rascal [G7]you a-ledel-ledi-[C]hoo 
 {end_of_verse}
+
+
+
+
+
+
+

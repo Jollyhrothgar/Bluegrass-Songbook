@@ -1,6 +1,9 @@
 {meta: title I'm The Only Sane Man Left Alive}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file imtheonlysanemanleftalivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm as crazy [G7]as the [C]days are [G7]long and [C]everybody [C][G7]knows
@@ -47,3 +50,9 @@ And my mind just comes and goes
 [F]I'm the only [G7]sane man left [C]alive
 [F]I'm the only [G7]sane man left [C]alive
 {end_of_verse}
+
+
+
+
+
+

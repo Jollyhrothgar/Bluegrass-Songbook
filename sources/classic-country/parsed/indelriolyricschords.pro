@@ -1,6 +1,9 @@
 {meta: title In Del Rio}
 {meta: artist Billy Walker}
 {meta: composer Billy Walker and Ray Wix}
+{meta: x_source classic-country}
+{meta: x_source_file indelriolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a village not far from [G7]the border of old [C]Mexico
@@ -37,3 +40,8 @@ She's [C]standing there laughing while I lie [G7]here unable to [C]move
 In Del Rio Del Rio a town that's as [F]cruel as can be
 Del Rio Del Rio is this the [G7]last place I'll [C]see
 {end_of_verse}
+
+
+
+
+

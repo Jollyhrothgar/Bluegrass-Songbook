@@ -1,6 +1,9 @@
 {meta: title Kaw-liga}
 {meta: artist Charlie Pride}
 {meta: composer Hank Williams and Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file kaw-ligalyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Kaw-liga was a wooden Indian standing by the door
@@ -52,3 +55,12 @@ And wishes he was still an old pine [Am]tree
 {start_of_verse: Verse 3}
 He always wore his Sunday feathers and held a tomahawk
 {end_of_verse}
+
+
+
+
+
+
+
+
+

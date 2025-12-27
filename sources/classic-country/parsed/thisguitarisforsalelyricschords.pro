@@ -1,6 +1,9 @@
 {meta: title This Guitar Is For Sale}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein and Fred Koller}
+{meta: x_source classic-country}
+{meta: x_source_file thisguitarisforsalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This [D7]guitar is for [G]sale [G7]I'll let her go [C]cheap[Em]   [Am]
@@ -46,3 +49,8 @@ But hard times and [G]trouble [G7]been dogging our [C]tail[Em]   [Am]
 So if [C]you got the [D7]dough buddy [C]take her and [D7]go
 This guitar is for [G]sale
 {end_of_verse}
+
+
+
+
+

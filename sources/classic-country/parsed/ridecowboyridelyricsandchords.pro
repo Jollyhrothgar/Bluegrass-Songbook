@@ -1,6 +1,9 @@
 {meta: title Ride Cowboy Ride}
 {meta: artist Marty Robbins}
 {meta: composer Lee Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file ridecowboyridelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Ride cowboy ride don't ride too [C]slow
@@ -77,3 +80,14 @@
 [F]Ride cowboy ride on through the [C]blue
 [G7]Ride cowboy ride she'll be waiting for [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

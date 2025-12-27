@@ -1,6 +1,9 @@
 {meta: title Never Say Yes}
 {meta: artist Elvis Presley}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file neversayyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look out now I'm [G7]running [C]wild 
@@ -55,3 +58,9 @@ Here today to[G7]morrow [C]gone
 {start_of_verse: Verse 5}
 [G7]No no never say [C]yes
 {end_of_verse}
+
+
+
+
+
+

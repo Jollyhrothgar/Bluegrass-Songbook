@@ -1,6 +1,9 @@
 {meta: title You And Me Together}
 {meta: artist Tammy Wynette}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file youandmetogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well we found a life together
@@ -41,3 +44,7 @@ And [D7]that's one thing we [G]wouldn't miss
 {start_of_verse: Verse 4}
 [C]You and me [G]together [D7]all the [G]time
 {end_of_verse}
+
+
+
+

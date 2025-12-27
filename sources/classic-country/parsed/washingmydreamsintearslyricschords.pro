@@ -1,6 +1,9 @@
 {meta: title Washing My Dreams In Tears}
 {meta: artist Carl Smith}
 {meta: composer Speedy Krise}
+{meta: x_source classic-country}
+{meta: x_source_file washingmydreamsintearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh once my heart was light and gay and [F]didn’t [C]realize
@@ -43,3 +46,8 @@
 [G7]I’m washin’ all [C]my dreams in tears [G7]to rid my [C]misery
 [F]And hangin’ them [C]out on the line [G7]that you handed [C]me
 {end_of_verse}
+
+
+
+
+

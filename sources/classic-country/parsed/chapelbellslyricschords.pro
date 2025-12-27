@@ -1,6 +1,9 @@
 {meta: title Chapel Bells}
 {meta: artist Norma Jean}
 {meta: composer Chickie King}
+{meta: x_source classic-country}
+{meta: x_source_file chapelbellslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Chapel bells were ringing [G7]as we walk down the isle
@@ -22,3 +25,5 @@ Chapel bells are singing they make me wonder [C]why
 That I was once so happy [C7]but now I'm oh so [F]sad
 [G7]They're ringing for another that stole the love I [C]had
 {end_of_verse}
+
+

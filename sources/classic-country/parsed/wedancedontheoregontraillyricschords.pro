@@ -1,6 +1,9 @@
 {meta: title We Danced On The Oregon Trail}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Richard O'Brien}
+{meta: x_source classic-country}
+{meta: x_source_file wedancedontheoregontraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We crossed the Plat River the [F]wagons were [C]full
@@ -65,3 +68,11 @@ Then as [F]Ben played his [G7]fiddle and [C]Will played his [D7]harp
 We [C]danced on the [G7]Oregon [Am]Trail
 We [C]danced at the [G7]end of the [C]trail
 {end_of_verse}
+
+
+
+
+
+
+
+

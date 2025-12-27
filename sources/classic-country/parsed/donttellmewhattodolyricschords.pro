@@ -1,6 +1,9 @@
 {meta: title Don't Tell Me What To Do}
 {meta: artist Pam Tillis}
 {meta: composer Harlan Howard and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file donttellmewhattodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We tried and we [C]tried but it's [D7]over
@@ -33,3 +36,6 @@ I'm no [C]longer your [Am]concern
 [D7]Don't tell me what to do
 I'll love you forever if I [G]want to
 {end_of_verse}
+
+
+

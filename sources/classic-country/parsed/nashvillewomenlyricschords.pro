@@ -1,6 +1,9 @@
 {meta: title Nashville Women}
 {meta: artist Waylon Jennings}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file nashvillewomenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it wasn't for the powder and the fine tooth comb
@@ -33,3 +36,7 @@ A [F]long legged good looking thing you don’t have to [C]talk
 I can [G7]tell that you're from Nashville
 You do boogie woogie wiggle when you [C]walk
 {end_of_verse}
+
+
+
+

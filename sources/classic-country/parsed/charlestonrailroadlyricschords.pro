@@ -1,6 +1,9 @@
 {meta: title Charleston Railroad}
 {meta: artist Bobby Bare}
 {meta: composer Jerry Dean Smith}
+{meta: x_source classic-country}
+{meta: x_source_file charlestonrailroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Charleston Railroad [G7]Tavern
@@ -43,3 +46,8 @@ Sitting up till I'm [C]blind
 She left on that [F]5-0-9
 [G7]Eastern standard [C]blue time
 {end_of_verse}
+
+
+
+
+

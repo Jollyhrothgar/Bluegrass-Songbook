@@ -1,5 +1,8 @@
 {meta: title Pan American}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file panamericanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have heard your stories about your fast [F]trains
@@ -28,3 +31,6 @@ When she [G7]passes that Nashville tower you can hear that whistle [C]whine
 Stick your head right out the window and feel that southern [F]breeze
 You’re [G7]on that Pan American on her way to New Or[C]leans
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Changin' My Mind}
 {meta: artist Bobby Bare}
 {meta: composer Al Gorgoni}
+{meta: x_source classic-country}
+{meta: x_source_file changinmyindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I keep changin' [Dm]my [G7]mind
@@ -45,3 +48,8 @@ Then I'm very sure I'm not the kind
 [Dm]Just can make up [G7]my mind
 [C]I keep changin' my mind
 {end_of_verse}
+
+
+
+
+

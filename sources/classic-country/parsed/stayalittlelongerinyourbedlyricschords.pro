@@ -1,6 +1,9 @@
 {meta: title Stay A Little Longer In Your Bed}
 {meta: artist Billy Crash Craddock}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file stayalittlelongerinyourbedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could step back into time for just a [Em]moment
@@ -43,3 +46,8 @@ Whose [F]favorite parts could always be re-[Fm]read
 I'd [C]find your laughter in between the [D7]covers of the dawn
 And [F]stay a little [G7]longer in your [C]bed
 {end_of_verse}
+
+
+
+
+

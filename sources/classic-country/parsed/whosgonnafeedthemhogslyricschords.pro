@@ -1,5 +1,8 @@
 {meta: title Who's Gonna Feed Them Hogs}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file whosgonnafeedthemhogslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met him in a [C]hospital [D7]about a year [G]ago
@@ -49,3 +52,9 @@ Would you bring [C]me some coffee and a [D7]hot ham sandwich [G]please
 They [G]can't get out and [C]roam around like [D7]my old hunting [G]dogs
 Here I am in [C]this dang bed and [D7]who's gonna feed them [G]hogs
 {end_of_verse}
+
+
+
+
+
+

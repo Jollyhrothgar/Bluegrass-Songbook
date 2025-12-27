@@ -1,6 +1,9 @@
 {meta: title I Made A Mistake And I'm Sorry}
 {meta: artist Ray Price}
 {meta: composer Braverman}
+{meta: x_source classic-country}
+{meta: x_source_file imadeamistakeandimsorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I made a mistake and I'm [F]sorry
@@ -22,3 +25,5 @@
 [F]I wouldn't be here along a grieving
 [G7]Crying my eyes out for [C]you
 {end_of_verse}
+
+

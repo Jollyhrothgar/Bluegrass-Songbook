@@ -1,6 +1,9 @@
 {meta: title Back In Your Arms Again}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Rusty Golden}
+{meta: x_source classic-country}
+{meta: x_source_file backinyourarmsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The [Am]call that I [F]made [Em]tonight 
@@ -47,3 +50,8 @@ I need your [F]love [G7]all I can [C]get
 Whatever it [F]takes you [G7]know I'll be [Am]there
 [G7]Back in your [F]arms  [G7]back in your [C]arms[F]  [G7]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Have Another Cup of Coffee}
 {meta: artist Cal Smith}
 {meta: composer Bill Brock}
+{meta: x_source classic-country}
+{meta: x_source_file illhaveanothercupofcoffeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll just have a cup of [D7]coffee then I'll [G]go
@@ -23,3 +26,5 @@
 [C]Just the way you used to be inside my [G]arms
 [C]I'll have another half of cup then I'll [G]go
 {end_of_verse}
+
+

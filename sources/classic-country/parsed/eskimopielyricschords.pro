@@ -1,5 +1,8 @@
 {meta: title Eskimo Pie}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file eskimopielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can talk about your frauleins and your [C]pretty geisha [G]girls
@@ -42,3 +45,8 @@ She lives south of the north-pole and I know the reason [G]why
 She's my Eskimo baby and I'll love her till I [C]die
 She's my [G]Eskimo baby she's my [D7]Eskimo [G]pie
 {end_of_verse}
+
+
+
+
+

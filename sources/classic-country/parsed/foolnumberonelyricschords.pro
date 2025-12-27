@@ -1,6 +1,9 @@
 {meta: title Fool Number One}
 {meta: artist Brenda Lee}
 {meta: composer Kathryn R. Fulton}
+{meta: x_source classic-country}
+{meta: x_source_file foolnumberonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Am I [G7]Fool #1 or am I Fool [C]#2
@@ -22,3 +25,5 @@ So I [G7]guess that I'm the biggest fool of [C]all
 I [F]suppose that the number is far from being [C]small
 And I'll [G7]bet that I'm the biggest fool of [C]all
 {end_of_verse}
+
+

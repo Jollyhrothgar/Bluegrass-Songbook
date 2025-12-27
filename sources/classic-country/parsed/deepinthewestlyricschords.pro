@@ -1,6 +1,9 @@
 {meta: title Deep In The West}
 {meta: artist Waylon Jennings}
 {meta: composer Shake Russell}
+{meta: x_source classic-country}
+{meta: x_source_file deepinthewestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Deep in the west where the [G7]tall mountains grow I've gone [F]home
@@ -30,3 +33,6 @@
 [G7]Said together we're one divided we're [C]through
 [G7]Divided we're [F]through
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Blue Eyed Love}
 {meta: artist Tommy Overstreet}
 {meta: composer Sam Cooke}
+{meta: x_source classic-country}
+{meta: x_source_file blueeyedlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I wake up in the morning
@@ -48,3 +51,8 @@ For me to get [G]enough
 It'll [C]take at least a [D7]life time
 For me to get [G]enough
 {end_of_verse}
+
+
+
+
+

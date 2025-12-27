@@ -1,6 +1,9 @@
 {meta: title Game Of Triangles}
 {meta: artist Bobby Bare}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file gameoftriangleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every triangle has three sides it's [G]true
@@ -38,3 +41,8 @@
 {start_of_verse: Verse 5}
 [D7]Yes the game of triangles is [C]a heart breaking [G]game
 {end_of_verse}
+
+
+
+
+

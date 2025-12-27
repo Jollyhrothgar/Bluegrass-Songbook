@@ -1,6 +1,9 @@
 {meta: title Card Carryin' Fool}
 {meta: artist Randy Travis}
 {meta: composer Byron Hill and Tim Bays}
+{meta: x_source classic-country}
+{meta: x_source_file cardcarryinfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It takes all kinds to keep this world in place
@@ -41,3 +44,8 @@ Is be your [G7]registered certified card carryin' [C]fool
 Yeah [A7]when it comes down to it [D7]all I wanna do
 Is be your [G7]registered certified card carryin' [C]fool
 {end_of_verse}
+
+
+
+
+

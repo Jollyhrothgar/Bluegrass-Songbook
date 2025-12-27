@@ -1,6 +1,9 @@
 {meta: title Standing Somewhere In The Shadows}
 {meta: artist Mac Wiseman}
 {meta: composer Kenneth Downie}
+{meta: x_source classic-country}
+{meta: x_source_file standingsomewhereintheshadowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the world is crumbling [C]around you
@@ -32,3 +35,6 @@ He's the [D7]only one who cares and under[G]stands
 Standing somewhere in the [C]shadows you will [G]find Him
 And you'll [D7]know Him by the nail prints in His [G]hands
 {end_of_verse}
+
+
+

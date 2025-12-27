@@ -1,6 +1,9 @@
 {meta: title Love Song For You}
 {meta: artist Hank Locklin}
 {meta: composer Neal Merritt}
+{meta: x_source classic-country}
+{meta: x_source_file lovesongforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am writing this [E7]song for [A7]you 
@@ -29,3 +32,6 @@ If [D7]I'd'a lived it without knowing [G7]you
 Though I [C]don't even [E7]know the [A7]key 
 I [F]am writing this [G7]love song for [C]you
 {end_of_verse}
+
+
+

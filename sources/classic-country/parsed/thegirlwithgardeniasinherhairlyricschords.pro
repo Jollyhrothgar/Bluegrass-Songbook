@@ -1,6 +1,9 @@
 {meta: title The Girl With Gardenias In Her Hair}
 {meta: artist Marty Robbins}
 {meta: composer Bob Tubert and Joy Byers}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlwithgardeniasinherhairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]One starry night in a little town in [E7]old Mexico
@@ -27,3 +30,6 @@ Some call me fool they say I'm chasing [Am]only a dream
 But I [A7]know one day I'll turn and suddenly [Dm]she'll be there
 And [Am]I'll spend my life with the [E7]girl with gardenias in her [Am]hair
 {end_of_verse}
+
+
+

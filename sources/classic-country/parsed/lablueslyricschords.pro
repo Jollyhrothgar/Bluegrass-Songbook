@@ -1,5 +1,8 @@
 {meta: title L.A. Blues}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file lablueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got off the [D7]airplane '[F]long about [G7]7:30 in L.[C]A.
@@ -49,3 +52,10 @@ If [F]you don't fall in the [G7]ocean before I [C]do
 L.A. [F]blues L.A. [C]blues [Am]you want me to be like you
 Ha ha there ain't no [C]way
 {end_of_verse}
+
+
+
+
+
+
+

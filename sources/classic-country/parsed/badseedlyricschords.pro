@@ -1,6 +1,9 @@
 {meta: title Bad Seed}
 {meta: artist Glen Campbell}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file badseedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't been in Little [F]Rock but two weeks [C]and here I am [F]now
@@ -41,3 +44,8 @@ Bad seed won't [F]grow just [C]anywhere
 {start_of_verse: Verse 5}
 Hmm let me tell you honey [F]I'm the bad [C]seed
 {end_of_verse}
+
+
+
+
+

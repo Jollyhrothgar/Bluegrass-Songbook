@@ -1,6 +1,9 @@
 {meta: title Tall Tall Trees}
 {meta: artist Roger Miller}
 {meta: composer George Jones and Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file talltalltreeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you wanna drive a big limou[D7]sine
@@ -38,3 +41,8 @@ I'm a [D7]fool fool fool for [G]you
 {start_of_verse: Verse 6}
 Hey I'm a [D7]fool fool fool for [G]you   
 {end_of_verse}
+
+
+
+
+

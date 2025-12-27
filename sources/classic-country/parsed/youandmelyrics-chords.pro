@@ -1,6 +1,9 @@
 {meta: title You And Me}
 {meta: artist Johnny Cash}
 {meta: composer Roger Bowling and Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file youandmelyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't it [G]good babe [C]you and [G]me
@@ -40,3 +43,8 @@ We knew we [G]could babe [C]you and [G]me
 {start_of_verse: Verse 4}
 [C]Just as [G]long as we [D7]had you and [G]me
 {end_of_verse}
+
+
+
+
+

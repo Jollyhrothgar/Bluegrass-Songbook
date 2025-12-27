@@ -1,6 +1,9 @@
 {meta: title Always Think Of You}
 {meta: artist Billy Walker}
 {meta: composer Kurt Baumann, Ray Pulley, Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file alwaysthinkofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The breeze of [E7]summer the [F]stars in the [C]blue
@@ -29,3 +32,6 @@ For [D7]all my world is loving [G7]you
 [C]Though summer will be [E7]autumn [F]neverthe[C]less
 My [G7]heart will always think of [C]you
 {end_of_verse}
+
+
+

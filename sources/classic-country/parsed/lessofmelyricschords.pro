@@ -1,6 +1,9 @@
 {meta: title Less Of Me}
 {meta: artist The Statler Brothers}
 {meta: composer Glen Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file lessofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me be a little [F]kinder let me [C]be a little [G7]blinder
@@ -27,3 +30,6 @@ Think a [F]little more of others and a [G7]little less of [C]me
 Let me be a little [F]meeker with the [C]brother that is [G7]weaker
 Think a [F]little more of others and a [G7]little less of [C]me
 {end_of_verse}
+
+
+

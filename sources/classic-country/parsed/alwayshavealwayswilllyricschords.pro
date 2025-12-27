@@ -1,6 +1,9 @@
 {meta: title Always Have Always Will}
 {meta: artist Janie Frickie}
 {meta: composer Johnny Mears}
+{meta: x_source classic-country}
+{meta: x_source_file alwayshavealwayswilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It seems funny I remember your [C]number
@@ -43,3 +46,8 @@
 [C]But I love you still always [Dm]have always [G7]will
 [Dm]Always have always [G7]will love [C]you
 {end_of_verse}
+
+
+
+
+

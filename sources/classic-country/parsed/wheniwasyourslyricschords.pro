@@ -1,6 +1,9 @@
 {meta: title When I Was Yours}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley and Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file wheniwasyourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a lonely room waiting [C]for the night to [G]fall
@@ -33,3 +36,6 @@ Then I'll be [D7]yours and you'll be [G]mine
 Yes I will go back to a better [C]place and a sweeter [G]time
 When I was [D7]yours and you were [G][C]m-i-n-e
 {end_of_verse}
+
+
+

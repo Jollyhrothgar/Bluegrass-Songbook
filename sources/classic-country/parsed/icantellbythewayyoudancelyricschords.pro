@@ -1,6 +1,9 @@
 {meta: title I Can Tell By the Way You Dance}
 {meta: artist Vern Gosdin}
 {meta: composer Sandy Pinkard and Rob Strandlund}
+{meta: x_source classic-country}
+{meta: x_source_file icantellbythewayyoudancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I can [C]see [F]every time I [G7]look into your [C]eyes
@@ -38,3 +41,7 @@ I don't [C]care if [F]everybody [G7]knows the way I [C]feel
 I can [C]tell by the way you [F]dance 
 That you're gonna love [G7]me [C]tonight
 {end_of_verse}
+
+
+
+

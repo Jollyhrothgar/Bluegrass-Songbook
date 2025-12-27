@@ -1,6 +1,9 @@
 {meta: title Diary Of My Mind}
 {meta: artist George Jones}
 {meta: composer John Starks and Sadie Starks}
+{meta: x_source classic-country}
+{meta: x_source_file diaryofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can bring you [C]back anytime I [G]want to
@@ -47,3 +50,9 @@ You're right [C]there in the [D7]diary of my [G]mind
 {start_of_verse: Verse 6}
 You're still [C]here in the [D7]diary of my [G]mind
 {end_of_verse}
+
+
+
+
+
+

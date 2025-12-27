@@ -1,6 +1,9 @@
 {meta: title Do You Think Of Me}
 {meta: artist Anne Murray}
 {meta: composer Sandy Ross}
+{meta: x_source classic-country}
+{meta: x_source_file doyouthinkofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you close your eyes to kiss her do you think of me
@@ -31,3 +34,7 @@ Or do you [Am]find you cry because you [D7]just was thinking of [G]me
 {start_of_verse: Verse 5}
 Or do you [Am]find you cry because you [D7]just was thinking of [G]me
 {end_of_verse}
+
+
+
+

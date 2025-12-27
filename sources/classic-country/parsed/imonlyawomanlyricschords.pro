@@ -1,6 +1,9 @@
 {meta: title I'm Only A Woman}
 {meta: artist Tammy Wynette}
 {meta: composer Dottie West}
+{meta: x_source classic-country}
+{meta: x_source_file imonlyawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When you [C]look at me [Em]as if to say you [Am]need me
@@ -33,3 +36,7 @@ So [F]please till you're [G7]free leave me [C]alone
 {start_of_verse: Verse 5}
 Oh [F]please till you're [G7]free leave me [F]alon[C]e
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Give Mother My Crown}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Walter Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file givemothermycrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She labored so hard in [F]this world [C]below 
@@ -29,3 +32,6 @@ I wanna be with Jesus on [D7]eternity [G7]shore
 But [C]if I've a crown coming when [C7]rewards go [F]around
 [C]Please blessed Jesus [G7]give mother my [C]crown
 {end_of_verse}
+
+
+

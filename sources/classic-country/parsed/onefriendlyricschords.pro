@@ -1,5 +1,8 @@
 {meta: title One Friend}
 {meta: artist Dan Seals}
+{meta: x_source classic-country}
+{meta: x_source_file onefriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I always thought you were [F]the [C]best 
@@ -66,3 +69,12 @@ But I [Am]could move a [Em]mountain
 If [C]I'd had only one [F]friend [C]left
 I'd [F]want [G7]it to [F][C]be [C][G7]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

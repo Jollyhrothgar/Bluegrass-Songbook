@@ -1,6 +1,9 @@
 {meta: title Take Me Back To Texas}
 {meta: artist Red Steagall}
 {meta: composer David Price}
+{meta: x_source classic-country}
+{meta: x_source_file takemebacktotexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take me [F]back to Texas 
@@ -50,3 +53,8 @@ Tulsa brings back [G7]bad memo[C]ries
 {start_of_verse: Verse 4}
 Tulsa brings back [G7]bad memo[C]ries[F]  [C]
 {end_of_verse}
+
+
+
+
+

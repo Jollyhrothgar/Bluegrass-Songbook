@@ -1,6 +1,9 @@
 {meta: title Paying For That Back Street Affair}
 {meta: artist Kitty Wells}
 {meta: composer Billy Wallace and Jimmy Rule}
+{meta: x_source classic-country}
+{meta: x_source_file payingforthatbackstreetaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I thought that you were true when I [C]fell in love with [G]you
@@ -29,3 +32,6 @@
 [C]But still I must go on while the gossips spread our [D7]wrong
 [G]I'm paying for that [D7]back street [G]affair
 {end_of_verse}
+
+
+

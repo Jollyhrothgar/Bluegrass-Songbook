@@ -1,5 +1,8 @@
 {meta: title Let My Life Be A Light}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file letmylifebealightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let me live blessed Lord in the [C]light of Thy [G]word
@@ -42,3 +45,8 @@ May I help struggling ones to the [D7]fold
 Spreading [G]cheer everywhere to the [C]sad and the [G]lone
 Let my life be a [D7]light to some [G]soul
 {end_of_verse}
+
+
+
+
+

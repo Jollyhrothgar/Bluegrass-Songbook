@@ -1,5 +1,8 @@
 {meta: title Tribute To The Grand Ole Opry}
 {meta: artist Lorrie Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file tributetothegrandoleoprylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Tribute To The Grand Ole Opry
@@ -38,3 +41,7 @@ How the [G]great one is planned
 The [C]best show in the land
 On the [G]stage of the [D7]Grand Ole O[G]pry
 {end_of_verse}
+
+
+
+

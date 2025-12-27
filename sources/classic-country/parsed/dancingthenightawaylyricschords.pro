@@ -1,6 +1,9 @@
 {meta: title Dancing The Night Away}
 {meta: artist Tanya Tucker}
 {meta: composer Russell Smith and James H. Brown}
+{meta: x_source classic-country}
+{meta: x_source_file dancingthenightawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Standing beside the ocean looking across the water
@@ -56,3 +59,12 @@ Everything is beautiful here but I still don't feel like I oughta
 [F]Let me see you dance let me see you [Dm]dance
 [G7]Oh baby let me see you [C]dance
 {end_of_verse}
+
+
+
+
+
+
+
+
+

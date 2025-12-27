@@ -1,6 +1,9 @@
 {meta: title What We Used To Hang On To Is Gone}
 {meta: artist Hank Williams Jr.}
 {meta: composer Kent Westberry and Scott Turner}
+{meta: x_source classic-country}
+{meta: x_source_file whatweusedtohangontoisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We might as well [G7]throw in the towel [C]and call it quits
@@ -31,3 +34,7 @@ Now that [C]what we [F]used to [C]hang on [G7]to is [C]gone
 {start_of_verse: Verse 5}
 Now that what we [F]used to [C]hang on [G7]to is [C]gone
 {end_of_verse}
+
+
+
+

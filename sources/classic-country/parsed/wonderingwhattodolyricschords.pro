@@ -1,6 +1,9 @@
 {meta: title Wondering What To Do}
 {meta: artist Eddy Arnold}
 {meta: composer Snooks Homesley and Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file wonderingwhattodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All I did last night was walk the [F]floor
@@ -29,3 +32,6 @@ For I [G7]know that you will still be [C]gone
 Don’t you know the sorrow I’m going [F]through
 [G7]Wondering wondering what to [C]do
 {end_of_verse}
+
+
+

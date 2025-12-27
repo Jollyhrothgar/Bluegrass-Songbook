@@ -1,5 +1,8 @@
 {meta: title Nashville Is A Groovy Little Town}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file nashvilleisagroovylittletownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My plane sat down in Nashville at a [F]quarter after [C]two
@@ -53,3 +56,10 @@ You remember all those tranquilizers [F]that I used to [C]take
 So when [C]you start crying here's the best one-[F]liner I have [C]found
 What [F]else you got yes [C]Nashville is a [G7]groovy little [C]town
 {end_of_verse}
+
+
+
+
+
+
+

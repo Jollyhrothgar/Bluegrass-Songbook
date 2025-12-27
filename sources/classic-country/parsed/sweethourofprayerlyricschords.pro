@@ -1,6 +1,9 @@
 {meta: title Sweet Hour Of Prayer}
 {meta: artist Hank Snow}
 {meta: composer William B. Bradbury and William Walford}
+{meta: x_source classic-country}
+{meta: x_source_file sweethourofprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweet hour of prayer sweet hour of [C]prayer
@@ -29,3 +32,6 @@ And [C]since he bids me seek his [G]face
 I'll [G]cast on him my every [C]care 
 And [G]wait for thee sweet hour [D7]of [G]prayer
 {end_of_verse}
+
+
+

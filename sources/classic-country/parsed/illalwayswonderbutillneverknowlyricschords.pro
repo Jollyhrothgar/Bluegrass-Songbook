@@ -1,6 +1,9 @@
 {meta: title I'll Always Wonder (But I'll Never Know)}
 {meta: artist Sonny James}
 {meta: composer Arlie Duff}
+{meta: x_source classic-country}
+{meta: x_source_file illalwayswonderbutillneverknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll always wonder [G7]but I'll never [C]know
@@ -27,3 +30,6 @@
 [C]I'll always [G7]wonder but I'll never [C]know
 [G7]I'll never [C]know
 {end_of_verse}
+
+
+

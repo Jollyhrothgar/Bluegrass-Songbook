@@ -1,5 +1,8 @@
 {meta: title I Didn't Think I Loved You}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file ididntthinkilovedyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't think I [G7]loved you now I [C]do
@@ -25,3 +28,6 @@ Well I [C]didn't think I [G7]loved you now I [C]do
 {start_of_verse: Verse 4}
 Well I didn't think I [G7]loved you now I [C]do
 {end_of_verse}
+
+
+

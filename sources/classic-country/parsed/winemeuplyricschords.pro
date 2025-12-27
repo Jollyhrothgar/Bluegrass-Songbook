@@ -1,6 +1,9 @@
 {meta: title Wine Me Up}
 {meta: artist Tanya Tucker}
 {meta: composer Faron Young and Billy Deaton}
+{meta: x_source classic-country}
+{meta: x_source_file winemeuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm the center of attention in this bar room
@@ -33,3 +36,7 @@ Cause I [G]don't care [D7]cause I'll be back to [C]wine me up [G]again
 {start_of_verse: Verse 4}
 Well I don't care [D7]cause I'll be back to [C]wine me up [G]again
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Love You More In Memory}
 {meta: artist Charley Pride}
 {meta: composer L.E. White}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyoumoreinmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just out[C]side my [G]window there's a [C]sound that I can't [G]stand
@@ -26,3 +29,6 @@ But I [C]still love you more in [G]memory than [C]he can [D7]holding you [G]tigh
 {start_of_verse: Verse 4}
 But I [C]still love you more in [G]memory than [C]he can [D7]holding you [G]tight
 {end_of_verse}
+
+
+

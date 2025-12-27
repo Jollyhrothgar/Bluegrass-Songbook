@@ -1,6 +1,9 @@
 {meta: title River Of Tears}
 {meta: artist Slim Whitman}
 {meta: composer Valencia Dawson}
+{meta: x_source classic-country}
+{meta: x_source_file riveroftearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it takes a million tears to start a [F]river
@@ -32,3 +35,6 @@ Cause to[D7]morrow will be like yester[G7]day
 If it [C]takes a million tears to start a [F]river
 Then a [G7]million tears will soon be on their [C]way
 {end_of_verse}
+
+
+

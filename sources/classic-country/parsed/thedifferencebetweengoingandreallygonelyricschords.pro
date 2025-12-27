@@ -1,6 +1,9 @@
 {meta: title The Difference Between Going And Really Gone}
 {meta: artist Cal Smith}
 {meta: composer Jimmie Helms and Grant Townsley}
+{meta: x_source classic-country}
+{meta: x_source_file thedifferencebetweengoingandreallygonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]By our house runs the highway only [C]forty feet [G]away
@@ -28,3 +31,6 @@
 {start_of_verse: Verse 4}
 [C]Yes I help create [G]the difference between [D7]going and really [G]gone
 {end_of_verse}
+
+
+

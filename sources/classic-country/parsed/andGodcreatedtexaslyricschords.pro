@@ -1,5 +1,8 @@
 {meta: title And God Created Texas}
 {meta: artist Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file andGodcreatedtexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God had a piece of heaven left [F]over
@@ -35,3 +38,7 @@ Then put the fiddle in a masters [G7]hand
 And when he [C]stars all alone and [F]plays the Rose of San [C]Antone
 Then [G7]He let the course of nature complete the [C]plan
 {end_of_verse}
+
+
+
+

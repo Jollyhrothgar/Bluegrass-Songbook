@@ -1,5 +1,8 @@
 {meta: title Nine Little Reindeer}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file ninelittlereindeerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A long long time ago as all you folks should know
@@ -43,3 +46,7 @@ There's one little two little three little reindeer
 Peace [Em]on earth good[Dm]will to [C]all
 And a [G]very [D7]merry [G]Christmas
 {end_of_verse}
+
+
+
+

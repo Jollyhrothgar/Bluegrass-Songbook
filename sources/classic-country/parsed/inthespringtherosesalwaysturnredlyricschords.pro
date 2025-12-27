@@ -1,5 +1,8 @@
 {meta: title In The Spring The Roses Always Turn Red}
 {meta: artist Dorsey Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file inthespringtherosesalwaysturnredlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the spring the roses always turn [C]red
@@ -49,3 +52,9 @@ But [D7]not if you don't have some place to lay your weary [G]head
 Now my woman she don't cry [C]anymore
 She got [D7]use to dusty highways ragged clothes and living [G]poor
 {end_of_verse}
+
+
+
+
+
+

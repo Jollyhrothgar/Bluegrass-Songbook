@@ -1,6 +1,9 @@
 {meta: title Speaking Of The Angel}
 {meta: artist Gene Watson}
 {meta: composer Shawn Camp and Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file speakingoftheangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a den of noise there's silence when you're [G7]nursing on a whiskey [C]glass
@@ -33,3 +36,7 @@ Speaking of the [C]ang-[Am]el is [G7]enough to make me [C]cry
 {start_of_verse: Verse 4}
 Speaking of the [C]ang-[Am]el is [G7]enough to make me [C]cry
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Maybe You Should Know}
 {meta: artist Kenny Rogers}
 {meta: composer Peter McCann}
+{meta: x_source classic-country}
+{meta: x_source_file maybeyoushouldknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seems to me that [E7]we've been friends for[Am]ever
@@ -33,3 +36,7 @@ Or [Dm]maybe I should [G7]tell you [Em]maybe I should [Am]tell you
 {start_of_verse: Verse 5}
 Maybe I should [G7]tell you [C]now
 {end_of_verse}
+
+
+
+

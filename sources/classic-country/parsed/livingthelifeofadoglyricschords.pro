@@ -1,5 +1,8 @@
 {meta: artist Johnny Paycheck}
 {meta: composer Aubrey Mayhew and Billy Eldridge}
+{meta: x_source classic-country}
+{meta: x_source_file livingthelifeofadoglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came home last night just a little [F]late
@@ -54,3 +57,9 @@ I'm [G7]living the life of a [C]dog
 {start_of_verse: Verse 5}
 Yes I'm [G7]living the life of a [C]dog
 {end_of_verse}
+
+
+
+
+
+

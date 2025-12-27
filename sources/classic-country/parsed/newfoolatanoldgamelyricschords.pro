@@ -1,6 +1,9 @@
 {meta: title New Fool At An Old Game}
 {meta: artist Reba McEntire}
 {meta: composer Steve Bogard, Rick Giles, Sheila Stephen}
+{meta: x_source classic-country}
+{meta: x_source_file newfoolatanoldgamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You sure know what you're [C]doing [F] holding me [C]this way[F]
@@ -31,3 +34,6 @@ A kid out of [Em]schoo[F]l tryin' to find [G7]my way
 And I don't know the [F]rul[Dm]es so teach me [Em]how to pl[Am]ay
 I'm just a new [Dm]foo[Fm]l at an old [C]game
 {end_of_verse}
+
+
+

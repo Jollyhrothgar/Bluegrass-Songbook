@@ -1,5 +1,8 @@
 {meta: title Deep Part Of Your Heart}
 {meta: artist Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file deeppartofyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes it takes time to understand
@@ -38,3 +41,7 @@ Our Lord's the biggest part
 [D7]Loving Him from the deep part of your [G]heart
 [D7]Loving Him from the deep part of your [G]heart
 {end_of_verse}
+
+
+
+

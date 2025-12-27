@@ -1,6 +1,9 @@
 {meta: title New Faces in the Field}
 {meta: artist Russell Moore and IIIrd Tyme Out}
 {meta: composer Denise Draper, Harley Allen, Steve Hood}
+{meta: x_source classic-country}
+{meta: x_source_file newfacesinthefieldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Highway sun said the [Em]Georgia Line [F]was twenty miles [Dm]away 
@@ -38,3 +41,7 @@ As the [Am]memories return and my [Dm]eyes begin to burn
 As the [Am]memories return and my [Dm]eyes begin to burn 
 [C]This old [F]place has new [G7]faces in the [C]field
 {end_of_verse}
+
+
+
+

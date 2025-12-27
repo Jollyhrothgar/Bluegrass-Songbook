@@ -1,6 +1,9 @@
 {meta: title Someone Like You}
 {meta: artist Emmylou Harris}
 {meta: composer Bob McDill and Dickey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file someonelikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Others have [D7]touched me [C]soft in the [D7]night
@@ -34,3 +37,8 @@ I have been [D7]lonely [C]and I have been [D7]loved
 {start_of_verse: Verse 5}
 I was just [D7]waitin' I was just [C]waitin' for [D7]someone like [G]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Body And Mind}
 {meta: artist Norma Jean}
 {meta: composer Bob Wilkins}
+{meta: x_source classic-country}
+{meta: x_source_file bodyandmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh my body's with you but my mind is on [F]him
@@ -22,3 +25,5 @@
 [F]I can't stop and put things back the way they have been
 [G7]While my body's with you and my mind is on [C]him
 {end_of_verse}
+
+

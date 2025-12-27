@@ -1,6 +1,9 @@
 {meta: title One Night Fever}
 {meta: artist Mel Tills}
 {meta: composer Bob Morrison and Johnny McRae}
+{meta: x_source classic-country}
+{meta: x_source_file onenightfeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]One night [C]fever
@@ -37,3 +40,8 @@ To make believe you're [F]going [C]shopping while [G7]I make believe I'm [C]blin
 {start_of_verse: Verse 5}
 [F]One night [C]fever
 {end_of_verse}
+
+
+
+
+

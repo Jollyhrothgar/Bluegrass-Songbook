@@ -1,5 +1,8 @@
 {meta: title Woman Of Hurt}
 {meta: artist Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file womanofhurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woman of hurt how can you [A#7]live
@@ -29,3 +32,6 @@ If I leave you [C]now even if I'll sur[A#7]vive
 I'll have no [F]memories worth keeping [G7]alive
 From a woman of [C]hurt [A#7]woman of [C]hurt
 {end_of_verse}
+
+
+

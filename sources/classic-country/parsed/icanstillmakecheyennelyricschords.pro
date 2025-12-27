@@ -1,6 +1,9 @@
 {meta: title I Can Still Make Cheyenne}
 {meta: artist George Strait}
 {meta: composer Aaron Baker and Erv Woolsey}
+{meta: x_source classic-country}
+{meta: x_source_file icanstillmakecheyennelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her telephone rang bout a [F]quarter till nine
@@ -54,3 +57,8 @@ Gotta [C]go now baby if I [G7]hurry I can still make [F]Cheyenne[G7]
 With a [C]cowboy like him it could be [G7]anything
 And [F]she always expected the [G7]worst in the back of her [C]mind
 {end_of_verse}
+
+
+
+
+

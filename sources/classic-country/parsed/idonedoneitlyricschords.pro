@@ -1,6 +1,9 @@
 {meta: title I Done Done It}
 {meta: artist Wynn Stewart}
 {meta: composer Billy Barton}
+{meta: x_source classic-country}
+{meta: x_source_file idonedoneitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I done [C]done it  I done [G]done it  I done done [C]it
@@ -30,3 +33,7 @@
 [G]I done [C]done it  I done [G]done it  I done done [C]it
 [D7]I've already fallen [G]in love with [C]her  [D7]and I'd do it [G]again
 {end_of_verse}
+
+
+
+

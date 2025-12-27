@@ -1,6 +1,9 @@
 {meta: title There’s A Whole Lot About A Woman A Man Don’t Know}
 {meta: artist Jack Greene}
 {meta: composer Bill Eldridge, Gary Stewart, Walter Haynes}
+{meta: x_source classic-country}
+{meta: x_source_file theresawholelotaboutawomanamandontknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a whole lot about a [D7]woman a man don't [G]know
@@ -31,3 +34,7 @@ But there's a [G]whole lot about a [D7]woman a man don't [G]know
 I'm still trying to understand her as I [C]stand and watch her go
 But there's a [G]whole lot about a [D7]woman a man don't [G]know
 {end_of_verse}
+
+
+
+

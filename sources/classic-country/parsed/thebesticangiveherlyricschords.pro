@@ -1,6 +1,9 @@
 {meta: title The Best I Can Give Her}
 {meta: artist Willie Nelson}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file thebesticangiveherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the midst of a crowd where the music is [D7]loud
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [C]I’m ashamed but it’s the best [D7]I can give [G]her
 {end_of_verse}
+
+
+

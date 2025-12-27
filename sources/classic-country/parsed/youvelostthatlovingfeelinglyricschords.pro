@@ -1,6 +1,9 @@
 {meta: title You've Lost That Loving Feeling}
 {meta: artist Elvis Presley}
 {meta: composer Barry Mann, Cynthia Weil, Phil Spector}
+{meta: x_source classic-country}
+{meta: x_source_file youvelostthatlovingfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You never [A]close your eyes anymore when I kiss your [C]lips
@@ -38,3 +41,8 @@ Bring back that [Dm]loving feeling [G7]whoa that [C]loving feeling
 Bring back that [Dm]lovin' feeling cause it's [A]gone gone gone 
 And I can't go on whoa [C]oh
 {end_of_verse}
+
+
+
+
+

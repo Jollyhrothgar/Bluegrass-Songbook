@@ -1,5 +1,8 @@
 {meta: title Holy Woman}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file holywomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I see you in the mornin' with your [C]spirit to the [G]sky
@@ -31,3 +34,7 @@ Cause you [C]held me in the darkness and you [G]led me to the light
 Holy [C]woman I will build a shinin' monument to [G]you  [C]wait and [G]see
 I'm only [D7]human can you fill the holy emptiness in [G]me
 {end_of_verse}
+
+
+
+

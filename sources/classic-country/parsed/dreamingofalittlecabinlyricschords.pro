@@ -1,6 +1,9 @@
 {meta: title Dreaming Of A Little Cabin}
 {meta: artist Mac Wiseman}
 {meta: composer Wade Mainer}
+{meta: x_source classic-country}
+{meta: x_source_file dreamingofalittlecabinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In dreams of yesterday I wander back [C]to my little cabin [G]door
@@ -23,3 +26,5 @@ She [G]gently put her arms around me and [C]kissed her little boy once [G]more
 And I knew it was the same sweet mother 
 That had kissed me many [D7]times be[G]fore
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title In The Early Morning Rain}
 {meta: artist Elvis Presley}
 {meta: composer Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file intheearlymorningrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the early morning [G7]rain  [Dm]with a [G7]dollar in my [C]hand
@@ -34,3 +37,7 @@ So I best be on my [G7]way  [Dm]in the [G7]early morning [C]rain
 So I best be on my [Dm]way  [G7]in the early morning [C]rain
 So I best be on my [Dm]way  [G7]in the early morning [C]rain
 {end_of_verse}
+
+
+
+

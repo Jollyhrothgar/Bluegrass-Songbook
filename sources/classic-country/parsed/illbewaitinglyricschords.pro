@@ -1,6 +1,9 @@
 {meta: title I’ll Be Waiting}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson and Moneen Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file illbewaitinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Packed my things and [G7]went [C]away a thousand years [F]ago [C]today
@@ -49,3 +52,11 @@ Still waiting neath the ground where she's asleep
 {start_of_verse: Verse 9}
 I'll be waiting [F]till your [C]heart tells you [G7]come [C]home
 {end_of_verse}
+
+
+
+
+
+
+
+

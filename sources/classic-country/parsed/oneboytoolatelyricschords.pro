@@ -1,6 +1,9 @@
 {meta: title One Boy Too Late}
 {meta: artist Ricky Nelson}
 {meta: composer Tony Powers and Ellie Greenwich}
+{meta: x_source classic-country}
+{meta: x_source_file oneboytoolatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tell her you need [Dm]her tell [G7]her you love [C]her
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 5}
 [G7]So tell her now [C]tell her [A7]now [Dm]tell her now  [G7]before I [C]do
 {end_of_verse}
+
+
+
+

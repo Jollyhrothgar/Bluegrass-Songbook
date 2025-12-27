@@ -1,6 +1,9 @@
 {meta: title Brand New Dance}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file brandnewdancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darlin' you're tired I can see in your eyes
@@ -65,3 +68,12 @@ What's in our hearts maybe we should part
 [F]Yes we'll start a brand [G7]new dance between old [C]friends
 [F]We'll start a brand [G7]new dance between old [C]friends
 {end_of_verse}
+
+
+
+
+
+
+
+
+

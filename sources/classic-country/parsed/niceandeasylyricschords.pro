@@ -1,6 +1,9 @@
 {meta: title Nice And Easy}
 {meta: artist Charlie Rich}
 {meta: composer Alan Bergman, Marilyn Keith, Lew Spence}
+{meta: x_source classic-country}
+{meta: x_source_file niceandeasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's take it nice and easy it's gonna be so [Dm]easy
@@ -37,3 +40,8 @@ And [C]nice and [Am]easy [C]does it [G7]every [C]time
 Cause nice and easy does it nice and [Am]easy does it
 And [C]nice and [Am]easy [C]does it [G7]every [C]time
 {end_of_verse}
+
+
+
+
+

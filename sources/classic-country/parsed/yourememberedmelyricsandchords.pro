@@ -1,5 +1,8 @@
 {meta: title You Remembered Me}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file yourememberedmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You remembered [Am]me  when you were far [C]away
@@ -26,3 +29,6 @@ A [F]quarrel came by mis[C]chance [D7]now you belong to someone [G7]else
 [C]But you [G7]can't for[Am]get [C]our [Am]used to [C]be
 There's an [D7]ember aglow it's sweet just to know you [G7]remem[D7]bered [C]me
 {end_of_verse}
+
+
+

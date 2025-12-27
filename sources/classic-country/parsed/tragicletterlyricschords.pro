@@ -1,6 +1,9 @@
 {meta: title Tragic Letter}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Herman Willis}
+{meta: x_source classic-country}
+{meta: x_source_file tragicletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear I read the letter that you [F]left me
@@ -36,3 +39,7 @@ Yes dear I read the letter that you [F]left me
 A broken heart heartache's nothin' but [F]blue days
 Just [G7]left here with tears dear to [C]flow
 {end_of_verse}
+
+
+
+

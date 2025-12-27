@@ -1,6 +1,9 @@
 {meta: title Good Ones And Bad Ones}
 {meta: artist George Jones}
 {meta: composer Joe Chambers and Larry Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file goodonesandbadoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some come from heaven and some crawl from hell
@@ -49,3 +52,10 @@ Till you leave 'em or you [C7]lose her for [F]good
 And by then it's too late you just mark [G7]it up to fate
 Either way you end up a [C]fool
 {end_of_verse}
+
+
+
+
+
+
+

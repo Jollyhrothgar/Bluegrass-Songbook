@@ -1,6 +1,9 @@
 {meta: title Gonna Get Back Home Somehow}
 {meta: artist Elvis Presley}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file gonnagetbackhomesomehowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hear that old train whistle howling in the night
@@ -33,3 +36,6 @@ Reminds me of that lonely feeling when I said goodbye
 [G7]I’m leaving now leaving now leaving n--ow
 I’m gonna get back home [C]somehow
 {end_of_verse}
+
+
+

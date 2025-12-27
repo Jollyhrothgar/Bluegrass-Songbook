@@ -1,6 +1,9 @@
 {meta: title Stairway To The Sky}
 {meta: artist Ray Price}
 {meta: composer Lee Dress}
+{meta: x_source classic-country}
+{meta: x_source_file stairwaytotheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gonna get a hammer gonna get some nails
@@ -35,3 +38,6 @@ Oh [C]say hello [G7]to the [C]Lord
 I'm gonna walk right up those [G7]stairs
 Oh [C]say hello [G7]to the [C]Lord
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Coastline Charlie}
 {meta: artist Dick Curless}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file coastlinecharlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's hard for me to remember back 
@@ -62,3 +65,9 @@ And [G7]Coastline Charlie's what they call me [C]now
 And [G7]Coastline Charlie is what they call me [C]now
 And [G7]Coastline Charlie is what they call me [C]now
 {end_of_verse}
+
+
+
+
+
+

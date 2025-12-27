@@ -1,6 +1,9 @@
 {meta: title Wonderland Of Love}
 {meta: artist George Strait}
 {meta: composer Curtis Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file wonderlandoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What kind of world would it [F]be for [C]you without me
@@ -37,3 +40,7 @@ A wonderland of [C]love
 {start_of_verse: Verse 4}
 Wonder[A#7]land of [C]love
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Honky Tonk Side Of Me}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file thehonkytonksideofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Working all day get [C]out to make hay while the [G]sun shines
@@ -32,3 +35,6 @@ You know I [G]love to go tonking [D7]got to go tonking [G]tonking  tonking
 [D7]Nothing can't tame the [C]honking tonk side of [G]me
 [D7]Nothing can't tame the [C]honking tonk side of [G]me
 {end_of_verse}
+
+
+

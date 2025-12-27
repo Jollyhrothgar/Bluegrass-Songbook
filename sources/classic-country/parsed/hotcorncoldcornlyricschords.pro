@@ -1,6 +1,9 @@
 {meta: title Hot Corn Cold Corn}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Dave Akeman¸ Lester Flatt, Earl Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file hotcorncoldcornlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Hot Corn Cold Corn
@@ -50,3 +53,10 @@ Well yonder comes the preacher and the children are a crying
 Hot Corn Cold Corn
 Recorded Lester Flatt and Earl Scruggs
 {end_of_verse}
+
+
+
+
+
+
+

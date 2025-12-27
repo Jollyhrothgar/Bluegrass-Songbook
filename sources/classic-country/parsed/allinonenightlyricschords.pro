@@ -1,5 +1,8 @@
 {meta: title All In One Night}
 {meta: artist Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file allinonenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All in one night I caught a [Em]star and [F]touched the moon
@@ -35,3 +38,7 @@ My [F]heart is [G7]yours to [C]own
 [G7]An answered prayer came [C]true
 All in that [G7]night when I found [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Achy Breaky Heart}
 {meta: artist Boxcar Willie}
 {meta: composer Don Von Tress}
+{meta: x_source classic-country}
+{meta: x_source_file achybreakyheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you can tell the world you never was my girl
@@ -50,3 +53,9 @@ I just don't think it'd under[G7]stand
 And if you tell my heart my achy breaky heart
 It might blow up and kill this [C]man
 {end_of_verse}
+
+
+
+
+
+

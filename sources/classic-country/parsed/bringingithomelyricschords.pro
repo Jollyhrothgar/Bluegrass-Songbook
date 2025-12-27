@@ -1,6 +1,9 @@
 {meta: title Bringing It Home}
 {meta: artist George Jones}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file bringingithomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm tired of traveling down this rocky old road
@@ -40,3 +43,8 @@ Whoa I'm bringing it yes I'm bringing [D7]it
 Hum yes I'm [G]bringing it hear me talking I said I'm bringing [C]it
 This old [G]heart's been away too [D7]long and I'm bringing it [G]home
 {end_of_verse}
+
+
+
+
+

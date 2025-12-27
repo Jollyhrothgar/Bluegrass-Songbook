@@ -1,6 +1,9 @@
 {meta: title She Loves Me She Don't Love You}
 {meta: artist George Strait}
 {meta: composer Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file shelovesmeshedontloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well now I can see you're dancin' every dance with her
@@ -40,3 +43,8 @@ Cause she just told me it's true she loves me s[C]he don't love you
 {start_of_verse: Verse 4}
 [G7]Cause she just told me it's true she loves me she don't love [C]you
 {end_of_verse}
+
+
+
+
+

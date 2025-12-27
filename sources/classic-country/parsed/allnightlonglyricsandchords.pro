@@ -1,6 +1,9 @@
 {meta: title All Night Long}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Don Chapel}
+{meta: x_source classic-country}
+{meta: x_source_file allnightlonglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Move closer to me don't [F]slip out of my arms
@@ -29,3 +32,6 @@ This [D7]hunger for you will go [G7]on
 [C]You tell me that you love me [F]all through the day
 Now keep it that [G7]way all night [C]long
 {end_of_verse}
+
+
+

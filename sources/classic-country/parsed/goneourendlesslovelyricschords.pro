@@ -1,6 +1,9 @@
 {meta: title Gone Our Endless Love}
 {meta: artist Billy Walker}
 {meta: composer Billy Walker and Darrell Glenn}
+{meta: x_source classic-country}
+{meta: x_source_file goneourendlesslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gone our endless [Am]love ending in [F]tears
@@ -32,3 +35,7 @@ Gone our endless [Am]love ending in [F]tears
 I still love you [G7]so much
 We let magic slip [C]away
 {end_of_verse}
+
+
+
+

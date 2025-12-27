@@ -1,6 +1,9 @@
 {meta: title I Can Count On You}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Roger Murrah and Randle E. Van Warmer}
+{meta: x_source classic-country}
+{meta: x_source_file icancountonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can say the word and [G]warm the [D7]day
@@ -35,3 +38,7 @@ I can [Em]count on you
 [C]I can [D7]count on [G]you 
 [C]I can [D7]count on [G]you
 {end_of_verse}
+
+
+
+

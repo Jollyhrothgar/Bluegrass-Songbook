@@ -1,6 +1,9 @@
 {meta: title Blue Snowfall}
 {meta: artist George Morgan}
 {meta: composer Dave Coleman}
+{meta: x_source classic-country}
+{meta: x_source_file bluesnowfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a [Am]blue  [Em]snowfall [Am]for you're not here with [C]me
@@ -26,3 +29,7 @@
 [Am]In these [Em]blue  [Am]moments I'm wondering if [C]you
 [F]See the [A#7]blue snowfall [Dm]and if you miss me [C]too
 {end_of_verse}
+
+
+
+

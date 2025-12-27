@@ -1,6 +1,9 @@
 {meta: title Country Music All Around The World}
 {meta: artist Roy Drusky}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file countrymusicallaroundtheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Country music's all [G7]around the world
@@ -54,3 +57,10 @@ The universal language of the [F]universe
 {start_of_verse: Verse 6}
 [G7]Somethin' everybody under[C]stands
 {end_of_verse}
+
+
+
+
+
+
+

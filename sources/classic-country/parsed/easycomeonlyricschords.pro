@@ -1,5 +1,8 @@
 {meta: title Easy Come On}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file easycomeonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody called the lady Easy
@@ -42,3 +45,8 @@ Easy come on take it easy come on [D7]here we go again
 Cause it's easy come to anyone with [D7]money love and friends  
 [G7]When they're gone the jokes are on your[C]self
 {end_of_verse}
+
+
+
+
+

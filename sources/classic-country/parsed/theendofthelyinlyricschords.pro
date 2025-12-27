@@ -1,6 +1,9 @@
 {meta: title The End Of The Lyin'}
 {meta: artist Alabama}
 {meta: composer Robert Byrne and Alan Schulman}
+{meta: x_source classic-country}
+{meta: x_source_file theendofthelyinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You took me for a [C]fool
@@ -47,3 +50,8 @@ And I can't [G]stand [F]no more [C]denyin' [D7]
 It's all [F]o-[Em]ver but the [A7]cryin'
 [C]Honey it's the [D7]end of the [G]line  [C]   [Dm]    [C]
 {end_of_verse}
+
+
+
+
+

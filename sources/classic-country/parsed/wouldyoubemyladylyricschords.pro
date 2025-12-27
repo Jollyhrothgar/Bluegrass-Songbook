@@ -1,5 +1,8 @@
 {meta: title Would You Be My Lady}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyoubemyladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Would you [F]hold onto my hand [G7]when I get [C]lonely
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 5}
 [F]Would you always [G7]have a place for me to [C]lay my body [F]down
 {end_of_verse}
+
+
+
+

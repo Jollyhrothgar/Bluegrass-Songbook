@@ -1,6 +1,9 @@
 {meta: title Somewhere In Texas}
 {meta: artist Ray Price}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file somewhereintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The city lights gave me that rambling [Dm]fever
@@ -33,3 +36,7 @@ And [G7]Texas is calling me [C]home
 {start_of_verse: Verse 4}
 And [G7]Texas is calling me [C]home
 {end_of_verse}
+
+
+
+

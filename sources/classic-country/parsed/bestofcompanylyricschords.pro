@@ -1,6 +1,9 @@
 {meta: title Best Of Company}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file bestofcompanylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What makes a [G7]woman leave a [C]man the way that you left [G7]me
@@ -23,3 +26,5 @@ I [G7]think about you every [C]day and wish that you were [G7]here
 I might as [G7]well face up and [C]smile our [C7]love can never [F]be
 But I [G7]guess it happens [C]every day in the [F]best of [G7]fami[C]ly 
 {end_of_verse}
+
+

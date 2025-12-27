@@ -1,6 +1,9 @@
 {meta: title Calgary}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson and Michael Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file calgarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I rolled into town it was [C]raining 
@@ -31,3 +34,6 @@ Just to [D7]see you with another [G]man [C]
 I didn't [G]come all the way to [Em]Calga[G]ry 
 Just to [D7]see you with another [G]man
 {end_of_verse}
+
+
+

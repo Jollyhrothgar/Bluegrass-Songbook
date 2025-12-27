@@ -1,5 +1,8 @@
 {meta: title The Way That I Love You Lyrics with Chords}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thewaythatiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When a man loves a [C]woman 
@@ -25,3 +28,6 @@ When a man loves a [G]woman  [D7]the way that I love [G]you
 {start_of_verse: Verse 3}
 [C]When a man loves a [G]woman  [D7]the way that I love [G]you
 {end_of_verse}
+
+
+

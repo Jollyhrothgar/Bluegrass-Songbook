@@ -1,5 +1,8 @@
 {meta: title Am I Standing In Your Way}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file amistandinginyourwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If he ever gets to you I [F]know he'll ignite the [C]flame
@@ -24,3 +27,5 @@
 [F]Is it all [C]over do you [F]still love [C]me
 [G7]Or am I standing in your [C]way
 {end_of_verse}
+
+

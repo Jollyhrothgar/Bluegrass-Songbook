@@ -1,5 +1,8 @@
 {meta: title What We Need Is A Brand New World}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file whatweneedisabrandnewworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s so much turmoil in this [F]world
@@ -47,3 +50,9 @@ How [C]much farther can we [G7]go
 [F]So many people are [G7]disturbed
 [F]What we need oh [G7]Lord is a brand new [C]world
 {end_of_verse}
+
+
+
+
+
+

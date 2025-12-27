@@ -1,6 +1,9 @@
 {meta: title Love Looks Good On You}
 {meta: artist Jimmy Dean}
 {meta: composer Chips Moman and Paul Richy}
+{meta: x_source classic-country}
+{meta: x_source_file lovelooksgoodonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's good to see you you're looking [G7]fine
@@ -34,3 +37,7 @@
 [F]Love looks good on [C]you but how does [G7]blue look on [C]me
 [F]Love looks good on [C]you but how does [G7]blue look on [C]me
 {end_of_verse}
+
+
+
+

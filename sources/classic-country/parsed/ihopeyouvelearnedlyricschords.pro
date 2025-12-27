@@ -1,6 +1,9 @@
 {meta: title I Hope You've Learned}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Carrigan and Eugene Butler}
+{meta: x_source classic-country}
+{meta: x_source_file ihopeyouvelearnedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been away for just a year 
@@ -36,3 +39,7 @@ And brokenhearted you'll [D7]return
 But listen [G]darling [C]please don't [G]wait 
 For maybe [D7]then will be too [G]late
 {end_of_verse}
+
+
+
+

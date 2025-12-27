@@ -1,6 +1,9 @@
 {meta: title Ain't Nobody's Business}
 {meta: artist Hank Williams Jr.}
 {meta: composer Porter Grainger and Everett Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file aintnobodysbusinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One day [Bm]I have ham and [E7]bacon
@@ -25,3 +28,6 @@ One day [Bm]I might take a [E7]notion
 [Am]To go right [C]down and [F]jump in the [D7]ocean
 And it [C]ain't no[Am]body's business [D7]   [G7]if I [C]do
 {end_of_verse}
+
+
+

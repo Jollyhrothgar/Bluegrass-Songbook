@@ -1,6 +1,9 @@
 {meta: title Let's Pretend}
 {meta: artist Hank Snow}
 {meta: composer Bob Nolan}
+{meta: x_source classic-country}
+{meta: x_source_file letspretendlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On a quiet summer [C]day long [G]ago and far away
@@ -29,3 +32,6 @@ Let's [D7]pretend that we're up there just you and [G]I
 Let's [C]pretend that no one knew where [G]to find us in the blue
 Let's [D7]pretend that dreams come true as years go [G]by
 {end_of_verse}
+
+
+

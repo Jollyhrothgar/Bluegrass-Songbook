@@ -1,6 +1,9 @@
 {meta: title Dream}
 {meta: artist Roy Orbison}
 {meta: composer Johnny Mercer}
+{meta: x_source classic-country}
+{meta: x_source_file dreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dream when you're feeling [B7]blue
@@ -22,3 +25,5 @@
 [F]Things  [Fm]never are as [C]bad as they [A7]seem
 [D7]So [G7]dream [C]dream [G7]dream
 {end_of_verse}
+
+

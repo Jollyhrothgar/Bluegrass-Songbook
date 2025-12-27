@@ -1,6 +1,9 @@
 {meta: title Enough For You Lyrics and Chords}
 {meta: artist Ray Price}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file enoughforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've lived enough to know that love's not everything you [C]need
@@ -23,3 +26,5 @@
 [D7]It's just a shame to know I'm not enough for [G]you
 [D7]It's just a shame to know I'm not enough for [G]you
 {end_of_verse}
+
+

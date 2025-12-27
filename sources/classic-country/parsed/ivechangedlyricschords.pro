@@ -1,6 +1,9 @@
 {meta: title I've Changed}
 {meta: artist Carl Smith}
 {meta: composer Danny Dill}
+{meta: x_source classic-country}
+{meta: x_source_file ivechangedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said you’d make me over but I [F]thought that you loved me
@@ -22,3 +25,5 @@ And I’m [G7]glad cause I’ve been sad and [C]blue
 For while you made me over you [F]forgot to love me too
 So I’ve [C]changed but [G7]now I’m not in love with [C]you
 {end_of_verse}
+
+

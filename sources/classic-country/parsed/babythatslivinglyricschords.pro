@@ -1,6 +1,9 @@
 {meta: title Baby That's Living}
 {meta: artist Eddy Arnold}
 {meta: composer Jean Chapel}
+{meta: x_source classic-country}
+{meta: x_source_file babythatslivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to cry and then I forgot how and that's [G7]living
@@ -34,3 +37,6 @@ Got the sun and the moon and the stars above and that's [C]living
 [F]Roses is blooming all over the place CI've got bouquets for the human race
 That's [G7]living baby that's [C]living
 {end_of_verse}
+
+
+

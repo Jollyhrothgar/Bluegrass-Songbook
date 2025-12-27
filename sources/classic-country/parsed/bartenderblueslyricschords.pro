@@ -1,6 +1,9 @@
 {meta: title Bartender Blues}
 {meta: artist George Jones}
 {meta: composer James Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file bartenderblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm just a [G7]bartender
@@ -49,3 +52,8 @@ To [D7]keep me from going [D7][G]astray
 And a [G]honky tonk [G7]angel to [C]hold me [A7]tight
 To [D7]keep me from slipping [G]away
 {end_of_verse}
+
+
+
+
+

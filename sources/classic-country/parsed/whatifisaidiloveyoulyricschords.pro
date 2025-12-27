@@ -1,6 +1,9 @@
 {meta: title What If I Said I Love You}
 {meta: artist Marty Robbins}
 {meta: composer Charlie Black and Tommy Rocco}
+{meta: x_source classic-country}
+{meta: x_source_file whatifisaidiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Do you mean what you say you're still leaving today
@@ -37,3 +40,9 @@ Packing bags and goodbyes with no tears in your eyes
 {start_of_verse: Verse 6}
 [C]What if I said I [D7]love you just one more [G]time
 {end_of_verse}
+
+
+
+
+
+

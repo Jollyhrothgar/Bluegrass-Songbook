@@ -1,6 +1,9 @@
 {meta: title They'll Never Take His Love From Me}
 {meta: artist Leona Williams}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file theyllnevertakehislovefrommelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If today the sun should set on all my [F]hopes and cares
@@ -30,3 +33,6 @@ And [C]even on the day he said he took [F]another bride
 I said they'd [G7]never never take his love from [C]me
 No they'll [G7]never never take his love from [C]me
 {end_of_verse}
+
+
+

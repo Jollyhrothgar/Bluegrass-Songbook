@@ -1,5 +1,8 @@
 {meta: title How Do We Know This Is Love}
 {meta: artist Wilburn Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file howdoweknowthisislovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How do we know [F]this is [G7]love
@@ -52,3 +55,10 @@ All of our whole life [C]through
 {start_of_verse: Verse 8}
 Good[C]bye good [G7]luck to [C]you
 {end_of_verse}
+
+
+
+
+
+
+

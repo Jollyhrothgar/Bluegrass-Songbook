@@ -1,5 +1,8 @@
 {meta: title Fool That I Am}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file foolthatiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Fool that I am I still [D7]love you fool that I am I still [G]want you
@@ -15,3 +18,4 @@ My friends all [D7]say that I’m a fool to go [G]on wanting you
 But fool that I am there’s still a [D7]burning 
 Yet I’m glad to stay this fool that I [G]am
 {end_of_verse}
+

@@ -1,5 +1,8 @@
 {meta: title I'm For Love}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file imforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mothers against drunk drivers the pope is against the [C]pill
@@ -46,3 +49,9 @@ Report #4
 [C]I'm all for turning off the news and turning down the [G]light
 [D7]And I'm for nothing else but me and you [G]tonight
 {end_of_verse}
+
+
+
+
+
+

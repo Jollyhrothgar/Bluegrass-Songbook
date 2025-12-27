@@ -1,6 +1,9 @@
 {meta: title Tell Me What I Want To Hear}
 {meta: artist Jean Shepard}
 {meta: composer Jack Rhodes and Gertrude Cox}
+{meta: x_source classic-country}
+{meta: x_source_file tellmewhatiwanttohearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling please don't make [F]me [C]wonder
@@ -29,3 +32,6 @@ That I [D7]feel when you are [G7]near
 [C]Whisper love words and sing [F]me love [C]songs
 Tell me [G7]what I want to [C]hear
 {end_of_verse}
+
+
+

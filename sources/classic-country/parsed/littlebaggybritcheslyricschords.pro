@@ -1,5 +1,8 @@
 {meta: title Little Baggy Britches}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file littlebaggybritcheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All the neighbors call him Jimmy when his mom and me are [G7]around
@@ -28,3 +31,6 @@ Always [G7]busy gosh where is he in his funny little [C]clothes
 You can catch him with a cookie in his mouth most any[G7]time
 Well they call him baggy britches but I’m glad to call him [C]mine
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title No Tears Tonight}
 {meta: artist Webb Pierce}
 {meta: composer Max Powell and Don Carter}
+{meta: x_source classic-country}
+{meta: x_source_file notearstonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There'll be no [F]tears tonight [C]for I've found [G7]somebody [C]new
@@ -27,3 +30,6 @@ And it [C]made me [F]true [G7]I would have [C]died for you
 There'll be no [F]tears tonight [C]for I’ve found [G7]somebody [C]new
 There'll be no [F]tears tonight [C]for I’ve found [G7]somebody [C]new
 {end_of_verse}
+
+
+

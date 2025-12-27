@@ -1,5 +1,8 @@
 {meta: title Gotta Sell Them Chickens}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file gottasellthemchickenslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well my pappy told me as I was sittin' on his knee 
@@ -91,3 +94,15 @@ Just tell them how to make a [C]batch
 Just sell them chickens [G]before they die
 And the [D7]eggs before they [G]hatch 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

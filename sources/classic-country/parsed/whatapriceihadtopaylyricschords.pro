@@ -1,6 +1,9 @@
 {meta: title What A Price I Had To Pay}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino, Murphy Maddux, Jack Jessup}
+{meta: x_source classic-country}
+{meta: x_source_file whatapriceihadtopaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh what a price I had to [C]pay  [D7]for loving [G]you
@@ -29,3 +32,7 @@ You heard my story I sing my [C]song
 So [G]goodbye baby I'm gone
 Oh what a price I had to [C]pay  [D7]for loving [G]you
 {end_of_verse}
+
+
+
+

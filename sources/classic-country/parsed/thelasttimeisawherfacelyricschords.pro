@@ -1,6 +1,9 @@
 {meta: title The Last Time I Saw Her Face}
 {meta: artist Glen Campbell}
 {meta: composer Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file thelasttimeisawherfacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The last time I saw her [Dm]face
@@ -36,3 +39,6 @@
 [F]Resting on the [G7]frozen ground the seeds [F]of love lie cold and [G7]still
 [F]Beneath a battered [G7]marking stone it lies [C]forgotten
 {end_of_verse}
+
+
+

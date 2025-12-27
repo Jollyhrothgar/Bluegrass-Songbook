@@ -1,6 +1,9 @@
 {meta: title If You Were A Bluebird}
 {meta: artist Emmylou Harris}
 {meta: composer Butch Hancock}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwereabluebirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you were a bluebird you'd be a sad one
@@ -29,3 +32,6 @@ I'd help you pass [C]by ways that had dissatisfied you
 If I was a [G]highway well I'd be [D7]stretching 
 [C]I'd be fetching you [G]home
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Down At The Old Corral}
 {meta: artist Randy Travis}
 {meta: composer Roger Brown and Luke Reed}
+{meta: x_source classic-country}
+{meta: x_source_file downattheoldcorrallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It [C]seems no matter how far I may [D7]roam
@@ -37,3 +40,8 @@ Down at the old [C]corral [G7]
 {start_of_verse: Verse 4}
 Down at the old [C]corral [G7]down at the old [C]corral
 {end_of_verse}
+
+
+
+
+

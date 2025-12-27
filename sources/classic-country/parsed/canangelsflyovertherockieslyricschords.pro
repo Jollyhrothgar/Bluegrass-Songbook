@@ -1,6 +1,9 @@
 {meta: title Can Angels Fly Over The Rockies}
 {meta: artist Burl Ives}
 {meta: composer Lyle Moraine}
+{meta: x_source classic-country}
+{meta: x_source_file canangelsflyovertherockieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While they camped for the [G7]night 
@@ -32,3 +35,6 @@ And its [A7]heights are all [D7]covered with [G]snow[E7]
 If she's [C]willing to try she'll be [G]safe in the [E7]sky
 For our [A7]Father would [D7]not let her [G]go
 {end_of_verse}
+
+
+

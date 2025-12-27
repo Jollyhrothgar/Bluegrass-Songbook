@@ -1,6 +1,9 @@
 {meta: title Through The Years}
 {meta: artist Kenny Rogers}
 {meta: composer Marty Panzer and Stephen Dorff}
+{meta: x_source classic-country}
+{meta: x_source_file throughtheyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't remember [Em]when you weren't [Am]there
@@ -48,3 +51,7 @@ We'd [Dm]always work things [Em]out
 I've [Am]learned what life's [F]about by loving [Dm]you
 [F]Through [G7]the [C]years
 {end_of_verse}
+
+
+
+

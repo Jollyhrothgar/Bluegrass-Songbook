@@ -1,6 +1,9 @@
 {meta: title Girls In Disgrace}
 {meta: artist Jean Shepard}
 {meta: composer Dan Welch and Mary McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file girlsindisgracelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So faithfully you promised me we'd marry [C7]in the [F]spring
@@ -29,3 +32,6 @@
 [C]You constantly reveal to me that [C7]you could never [F]be
 [G7]The kind of man to understand girls in disgrace like [C]me
 {end_of_verse}
+
+
+

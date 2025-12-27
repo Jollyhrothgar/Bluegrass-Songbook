@@ -1,6 +1,9 @@
 {meta: title Smell The Flowers}
 {meta: artist Tanya Tucker}
 {meta: composer Jerry Reed Hubbard}
+{meta: x_source classic-country}
+{meta: x_source_file smelltheflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Yester[C]day oh how [F]many do you [D7]wish you could re[C]live
@@ -29,3 +32,6 @@ Take the [G7]time my friend and sing a [C]happy tune
 Oh how [A7]precious every mile so take a [Dm]minute learn to [F]smile
 My [Dm]friend let's stop a [G7]while and smell the [C]flowers
 {end_of_verse}
+
+
+

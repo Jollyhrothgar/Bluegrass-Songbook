@@ -1,6 +1,9 @@
 {meta: title Galveston}
 {meta: artist Glen Campbell}
 {meta: composer Jimmy Webb}
+{meta: x_source classic-country}
+{meta: x_source_file galvestonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 {comment: F }
@@ -28,3 +31,6 @@ Before [D7]I d[G]ry the tears she's [C]crying[Am]
 Before I [Em]watch your sea birds [C]flying [Bm]in the [Am]sun
 At Galves[E7]ton  [C] at Galvest[G]on
 {end_of_verse}
+
+
+

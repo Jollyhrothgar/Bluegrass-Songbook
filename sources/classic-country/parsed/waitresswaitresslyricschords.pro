@@ -1,6 +1,9 @@
 {meta: title Waitress Waitress}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file waitresswaitresslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Waitress waitress pretty little waitress [C]get my order [G]right
@@ -36,3 +39,7 @@ You belong on a cover of a magazine or better yet in my [D7]arms
 [G]Waitress waitress pretty little waitress [C]say when you'll be [G]through
 And no matter how late I'll be here a-waiting [D7]just outside for [G]you
 {end_of_verse}
+
+
+
+

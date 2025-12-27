@@ -1,6 +1,9 @@
 {meta: title Senses}
 {meta: artist Ray Price}
 {meta: composer Larry Bastian and Eugene Ellsworth}
+{meta: x_source classic-country}
+{meta: x_source_file senseslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One chance taken from the [G7]hands of [C]time
@@ -38,3 +41,8 @@ I close my [Dm]eyes and [Am]you come to my [G7]senses [C]again
 {start_of_verse: Verse 6}
 I close my [Dm]eyes and [Am]you come to my [G7]senses [C]again
 {end_of_verse}
+
+
+
+
+

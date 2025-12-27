@@ -1,5 +1,8 @@
 {meta: title Be True To Yourself}
 {meta: artist The Traditional Grass}
+{meta: x_source classic-country}
+{meta: x_source_file betruetoyourselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Be true to yourself little [F]darlin’
@@ -35,3 +38,7 @@ Be true to yourself little [F]darlin’
 If you’re [C]not happy here go find [F]another
 And [C]I’ll pretend that [G7]we had never [C]met
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We Three (My Echo My Shadow And Me)}
 {meta: artist Brenda Lee}
 {meta: composer Dick Robertson, Nelso Cogane, Sammy Mysels}
+{meta: x_source classic-country}
+{meta: x_source_file wethreemyechomyshadowandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]We [C]three we're all [G]alone 
@@ -43,3 +46,7 @@ We [C]three we'll wait for [G]you
 [C]Even till [B7]etern[A]-it[A7]y
 My [D7]echo my [G7]shadow and [C]me
 {end_of_verse}
+
+
+
+

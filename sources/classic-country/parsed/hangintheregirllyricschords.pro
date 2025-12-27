@@ -1,5 +1,8 @@
 {meta: title Hang In There Girl}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file hangintheregirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hang in there [C7]girl don't let go of me girl Lord [F]I need [Dm]you
@@ -21,3 +24,5 @@
 [G7]Hang in there girl you're all I've got in the world to hang [F]on [G7]to
 [F]Hang in there [C]girl
 {end_of_verse}
+
+

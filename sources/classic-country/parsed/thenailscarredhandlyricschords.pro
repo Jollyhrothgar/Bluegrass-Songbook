@@ -1,6 +1,9 @@
 {meta: title The Nail Scarred Hand}
 {meta: artist Carl Smith}
 {meta: composer B.B. McKinney}
+{meta: x_source classic-country}
+{meta: x_source_file thenailscarredhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have you failed in your plan of your storm caused life
@@ -63,3 +66,14 @@ Place your [G7]hand in the nail scarred [C]hand
 Are you weary and worn from its toil and strife
 Place your [G7]hand in the nail scarred [C]hand
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title In His World}
 {meta: artist Emmylou Harris}
 {meta: composer Leigh Reynolds and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file inhisworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Every [C]night I [G7]dream [C]about [F]him
@@ -45,3 +48,7 @@ I don't [C]want to [G7]live with[Am]out [G7]him
 [F]In his [C]world oh he [G7]tells me that he [Am]loves [G7]me
 [F]That's where [C]my heart wants [G7]to [F]be[G7]   [C]
 {end_of_verse}
+
+
+
+

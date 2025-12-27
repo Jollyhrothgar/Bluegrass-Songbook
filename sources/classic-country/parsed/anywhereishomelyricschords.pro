@@ -1,6 +1,9 @@
 {meta: title Anywhere is Home}
 {meta: artist Hank Locklin}
 {meta: composer Bill Walker}
+{meta: x_source classic-country}
+{meta: x_source_file anywhereishomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Earthly wealth  and fame  may [C]never come to [G]me
@@ -22,3 +25,5 @@ Till the morn  shall dawn  [A7]up there eternal [D7]day
 Looking unto  Him  to [C]keep me in his [G]care
 Anywhere  is home  if [D7]Christ my Lord is [G]there
 {end_of_verse}
+
+

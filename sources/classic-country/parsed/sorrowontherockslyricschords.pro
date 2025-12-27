@@ -1,6 +1,9 @@
 {meta: title Sorrow On The Rocks}
 {meta: artist Porter Wagoner}
 {meta: composer Tony Moon}
+{meta: x_source classic-country}
+{meta: x_source_file sorrowontherockslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just pour me sorrow on the rocks [G7]bartender 
@@ -62,3 +65,13 @@ And I'm [G7]sorry that I done her [C]wrong
 I'm trying to drown [G7]my troubles 
 So make it a double [F]mhm [G7]mhm [C]mhm
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

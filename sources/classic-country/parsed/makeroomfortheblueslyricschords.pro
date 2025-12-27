@@ -1,6 +1,9 @@
 {meta: title Make Room For The Blues}
 {meta: artist The Del McCoury Band}
 {meta: composer Hank DeVito and Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file makeroomfortheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s all over now but the [G7]crying
@@ -33,3 +36,6 @@ While she’s [C]waving goodbye
 [F]Wipe the tears from your [D7]eyes
 Then [G7]straighten up and make room for the [C]blues
 {end_of_verse}
+
+
+

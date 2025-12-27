@@ -1,6 +1,9 @@
 {meta: title When All I Need Is You}
 {meta: artist Faron Young}
 {meta: composer Fern Weatherup}
+{meta: x_source classic-country}
+{meta: x_source_file whenallineedisyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've turned away [C]too many times [A7]from love I offered [D7]you
@@ -28,3 +31,6 @@ For [C]you need [D7]more than [G]I can [Em]give when [Am]all I [D7]need is [G]yo
 {start_of_verse: Verse 4}
 [C]You need [D7]more than [G]I can [Em]give when [Am]all I [D7]need is [G]you
 {end_of_verse}
+
+
+

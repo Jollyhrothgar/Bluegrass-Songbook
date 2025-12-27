@@ -1,5 +1,8 @@
 {meta: title Unclouded Day}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file uncloudeddaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh they tell me of a home far [F]beyond the [C]skies
@@ -47,3 +50,10 @@ In that lovely land of unclouded day
 {start_of_verse: Verse 8}
 repeat chorus
 {end_of_verse}
+
+
+
+
+
+
+

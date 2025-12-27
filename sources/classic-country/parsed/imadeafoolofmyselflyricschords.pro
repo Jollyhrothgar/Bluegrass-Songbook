@@ -1,6 +1,9 @@
 {meta: title I Made A Fool Of Myself}
 {meta: artist Faron Young}
 {meta: composer Faron Young and Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file imadeafoolofmyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I made a fool of myself last night
@@ -49,3 +52,11 @@ Saw you look at someone else
 {start_of_verse: Verse 8}
 [G7]And I'm [C]alone
 {end_of_verse}
+
+
+
+
+
+
+
+

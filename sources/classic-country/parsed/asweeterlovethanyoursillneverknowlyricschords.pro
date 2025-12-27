@@ -1,6 +1,9 @@
 {meta: title A Sweeter Love Than Yours I’ll Never Know}
 {meta: artist Smiling Jim Eanes}
 {meta: composer Drusilla Adams and Bill Church}
+{meta: x_source classic-country}
+{meta: x_source_file asweeterlovethanyoursillneverknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ll never find a sweeter love
@@ -43,3 +46,8 @@ Oh why did [F]I ever let you [C]go
 In this world I can never find
 A sweeter love than [G7]yours I’ll never [C]know
 {end_of_verse}
+
+
+
+
+

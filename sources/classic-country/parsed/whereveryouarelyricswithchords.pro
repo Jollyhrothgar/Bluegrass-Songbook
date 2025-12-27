@@ -1,6 +1,9 @@
 {meta: title Wherever You Are}
 {meta: artist Johnny Paycheck}
 {meta: composer Johnny Paycheck and Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file whereveryouarelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]When you [G]hear this song wher[C]ever you are [G]think of me 
@@ -27,3 +30,6 @@ And I [D7]hope this song reminds you [C]I still love you [G]so
 If he should close you out [G7]remember my [C]arms are 
 Always [D7]open cause I still love you wher[C]ever you ar[G]e
 {end_of_verse}
+
+
+

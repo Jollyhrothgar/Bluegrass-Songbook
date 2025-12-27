@@ -1,6 +1,9 @@
 {meta: title Reconsider Leaving Me}
 {meta: artist Darrell McCall}
 {meta: composer Sam Bardin}
+{meta: x_source classic-country}
+{meta: x_source_file reconsiderleavingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why did you have to take my heart and [G7]leave me with my mind
@@ -33,3 +36,7 @@ So [G7]baby maybe you could reconsider leaving [C]me
 {start_of_verse: Verse 4}
 So [G7]baby maybe you could reconsider leaving [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You've Been On My Mind}
 {meta: artist Emmylou Harris}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file youvebeenonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Guess it's time for me [F]to say how it [G7]is that I feel [C]today
@@ -27,3 +30,6 @@
 [C]Guess it's time for [F]me to go but [G7]as it is I'll never [C]know
 [F]Just what it is that I long [G7]for so and you been on my [C]mind
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Having Second Thoughts}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file havingsecondthoughtslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Having second thoughts about you since we [Dm]parted
@@ -28,3 +31,5 @@
 [Dm]This I thought I'd never do
 [G7]Oh I'm missin' you having second thoughts [C]about [C][F]you
 {end_of_verse}
+
+

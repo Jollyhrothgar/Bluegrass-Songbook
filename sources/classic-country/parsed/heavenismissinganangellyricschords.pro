@@ -1,6 +1,9 @@
 {meta: title Heaven Is Missing An Angel}
 {meta: artist George Strait}
 {meta: composer Doug Powell and Jerome Earnest}
+{meta: x_source classic-country}
+{meta: x_source_file heavenismissinganangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Heaven Is Missing An Angel
@@ -51,3 +54,10 @@ Like a [C]star that falls from the sky right out of thin [Am]air
 [Dm]Right here with [C]me [Dm]
 [Am]You’re right [C]here
 {end_of_verse}
+
+
+
+
+
+
+

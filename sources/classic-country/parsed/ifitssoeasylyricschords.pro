@@ -1,6 +1,9 @@
 {meta: title If It's So Easy}
 {meta: artist The Bellamy Brothers}
 {meta: composer Richard C. Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file ifitssoeasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 If It's So Easy
@@ -43,3 +46,9 @@ It does so [G]easy [D7]that’s why [C]I’m so [D7]scared this [G]time
 {start_of_verse: Verse 7}
 It does so [G]easy [D7]that’s why [C]I’m so [D7]scared this [C]time[D7]   [G]
 {end_of_verse}
+
+
+
+
+
+

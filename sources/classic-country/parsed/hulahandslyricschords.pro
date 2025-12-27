@@ -1,6 +1,9 @@
 {meta: title Hula Hands}
 {meta: artist Randy Travis}
 {meta: composer William Beasley, Dorothy Beasley, J.T. Adams}
+{meta: x_source classic-country}
+{meta: x_source_file hulahandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lovely hula hands graceful as a bird in [Dm][G7]motion
@@ -30,3 +33,5 @@
 [G7]Say to me again I love you lovely hula [C]hands
 [F]Kah Li ma na [C]ni'ea
 {end_of_verse}
+
+

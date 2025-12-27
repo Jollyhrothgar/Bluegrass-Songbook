@@ -1,6 +1,9 @@
 {meta: title If You'd Like Some Lovin'}
 {meta: artist David Ball}
 {meta: composer Tommy Polk and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudlikesomelovinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you'd like some [F]lovin' [G7]I've got all you'll ever [C]need
@@ -32,3 +35,7 @@ If you'd like some [F]lovin' [G7]you'll find it here with [C]me [F]  [C]
 {start_of_verse: Verse 5}
 If you'd like some [F]lovin' [G7]you'll find it here with [C]me  [F]  [C]
 {end_of_verse}
+
+
+
+

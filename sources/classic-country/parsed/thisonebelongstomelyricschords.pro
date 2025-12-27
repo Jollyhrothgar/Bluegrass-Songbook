@@ -1,6 +1,9 @@
 {meta: title This One Belongs To Me}
 {meta: artist Jack Greene}
 {meta: composer D.L. King and John Swayne}
+{meta: x_source classic-country}
+{meta: x_source_file thisonebelongstomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ten years old and trembling as I faced that angry [F]man
@@ -51,3 +54,9 @@ I'll tend to [F]him [C]until he's [F]gone [G7]this one belongs to [C]me
 {start_of_verse: Verse 5}
 I'll stay with [F]him [C]until he's [F]gone [G7]this one belongs to [C]me 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Etiquette Blues}
 {meta: artist Chad Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file etiquetteblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m the bloke what wrote the book on etiquette
@@ -49,3 +52,9 @@ Never cut spaghetti up in pieces
 [C]Bog in first and never wait lick the gravy off your [A7]plate
 [D7]Oh thank you for your very kind [C][G7]attention
 {end_of_verse}
+
+
+
+
+
+

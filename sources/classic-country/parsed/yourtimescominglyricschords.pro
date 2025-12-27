@@ -1,6 +1,9 @@
 {meta: title Your Time’s Coming}
 {meta: artist Faron Young}
 {meta: composer Kris Kristofferson and Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file yourtimescominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I knew she belonged to someone else at the time
@@ -75,3 +78,13 @@ Cool it while you can your time's [G]coming
 {start_of_verse: Verse 8}
 I said [D7]cool it while you can cause your time's [G]coming
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

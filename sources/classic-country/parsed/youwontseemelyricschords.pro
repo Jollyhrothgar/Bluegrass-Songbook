@@ -1,6 +1,9 @@
 {meta: title You Won't See Me}
 {meta: artist Anne Murray}
 {meta: composer John Lennon and Paul McCartney}
+{meta: x_source classic-country}
+{meta: x_source_file youwontseemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I call you [A7]up your [C]line's en[G]gaged
@@ -43,3 +46,8 @@ Yes it [G7]seems so [C]long since you’ve been [G]gone
 And I just can’t go [A7]on if [C]you won’t see [G]me
 [C]You won’t see [G]me
 {end_of_verse}
+
+
+
+
+

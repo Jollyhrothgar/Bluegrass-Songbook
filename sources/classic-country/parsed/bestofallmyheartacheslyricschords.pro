@@ -1,6 +1,9 @@
 {meta: title Best Of All My Heartaches Lyrics Chords}
 {meta: artist Kitty Wells}
 {meta: composer Tom Tall}
+{meta: x_source classic-country}
+{meta: x_source_file bestofallmyheartacheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The best of all my heartaches is [G7]you
@@ -29,3 +32,6 @@ I [D7]treasure this one more than all the [G7]rest
 And [C]I don't ever want to [G7]forget you
 Of all the heartaches I have known you are the [C]best
 {end_of_verse}
+
+
+

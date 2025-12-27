@@ -1,6 +1,9 @@
 {meta: title Three Steps To The Phone}
 {meta: artist George Hamilton IV}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file threestepstothephonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's only three steps to the [C]phone
@@ -31,3 +34,6 @@ Then [D7]our world of love fell [G]apart[D7]
 Now it's [G]only three steps to the [C]phone
 But I'm [D7]millions of miles from your [G]heart
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Would You Be Ready}
 {meta: artist Buck Owens}
 {meta: composer Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyoubereadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There are lots of hard times Christians living [C]round us every [G]day
@@ -29,3 +32,6 @@ Would you be ready to [A7]follow in His [D7]way
 Would [G]He take you by the hand or would He [C]have you turn [G]away
 Would you be ready if [D7]Jesus came [G]today
 {end_of_verse}
+
+
+

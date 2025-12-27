@@ -1,5 +1,8 @@
 {meta: title Please Leave My Darling Alone}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file pleaseleavemydarlingalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please leave my [G7]darling [C]alone
@@ -21,3 +24,5 @@
 [F]She was never untrue until she met [C]you
 [G7]Now please leave my darling [C]alone
 {end_of_verse}
+
+

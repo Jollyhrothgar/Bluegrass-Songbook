@@ -1,6 +1,9 @@
 {meta: title Just How Bad Do You Wanna Be Good}
 {meta: artist Mel Tillis}
 {meta: composer Judy Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file justhowbaddoyouwannabegoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just how bad just how [D7]bad do you wanna be [G]good
@@ -49,3 +52,8 @@ Would you do [G]what your heart says do
 Or [C]would you do what your body wants to
 If you have to [G]decide just how [D7]bad do you wanna be [G]good
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Somebody Lied}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Arthur Smith}
+{meta: x_source classic-country}
+{meta: x_source_file somebodyliedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't claim to be so smart I'm [C]dumb as can [G]be
@@ -29,3 +32,6 @@ And that somebody gal is [D7]you
 I tried and [G]tried but all in [C]vain
 Somebody [G]lied  to [D7]me [G]again
 {end_of_verse}
+
+
+

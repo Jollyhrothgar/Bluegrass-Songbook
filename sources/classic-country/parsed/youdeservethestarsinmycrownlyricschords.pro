@@ -1,6 +1,9 @@
 {meta: title You Deserve The Stars In My Crown}
 {meta: artist Waylon Jennings}
 {meta: composer Roger Murrah and Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file youdeservethestarsinmycrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 You Deserve The Stars In My Crown
@@ -39,3 +42,8 @@ And [Dm]I do [G7]believe
 And [Dm]I do [G7]believe 
 [F]You deserve the [G7]stars in my [C]crown
 {end_of_verse}
+
+
+
+
+

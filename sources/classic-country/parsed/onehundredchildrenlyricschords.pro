@@ -1,5 +1,8 @@
 {meta: title One Hundred Children}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file onehundredchildrenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One hundred children brave boys and girls
@@ -49,3 +52,9 @@ They come from nations all over the world
 One [C]hundred children [G]marching along
 One [C]hundred [G]children [D7]singing their [G]song
 {end_of_verse}
+
+
+
+
+
+

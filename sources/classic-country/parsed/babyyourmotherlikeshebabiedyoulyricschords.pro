@@ -1,6 +1,9 @@
 {meta: title Baby Your Mother (Like She Babied You)}
 {meta: artist Ernest Tubb}
 {meta: composer Dolly Morse and Joe Burke}
+{meta: x_source classic-country}
+{meta: x_source_file babyyourmotherlikeshebabiedyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby your mother [G7]like she babied you
@@ -15,3 +18,4 @@ The [C]debt of love you [C7]owe her [F]you can't never pay
 And [C]baby your mother [F]like she babied [D7]you
 [G7]Back in your baby [C]days
 {end_of_verse}
+

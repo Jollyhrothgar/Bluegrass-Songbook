@@ -1,6 +1,9 @@
 {meta: title Stuck Right In The Middle Of Your Love}
 {meta: artist Charly McClain}
 {meta: composer Bob Morrison and Johnny McRae}
+{meta: x_source classic-country}
+{meta: x_source_file stuckrightinthemiddleofyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Saw the fire flashin' [Am]in your eyes
@@ -44,3 +47,9 @@ Baby [G7]stuck right in the middle of your [C]love[F]   [C]
 Here I [F]am baby [G7]stuck right in the middle of your [C]love[F]   [C]
 Yeah here I [F]am baby [G7]stuck right in the middle of your [C]love
 {end_of_verse}
+
+
+
+
+
+

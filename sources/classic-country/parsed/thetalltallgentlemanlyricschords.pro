@@ -1,5 +1,8 @@
 {meta: title The Tall Tall Gentleman}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file thetalltallgentlemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It happened in the hills a [G7]long time ago
@@ -63,3 +66,11 @@ The [F]tall tall gentleman on the [C]big black stallion
 {start_of_verse: Verse 8}
 [F]No one ever knew his [C]name
 {end_of_verse}
+
+
+
+
+
+
+
+

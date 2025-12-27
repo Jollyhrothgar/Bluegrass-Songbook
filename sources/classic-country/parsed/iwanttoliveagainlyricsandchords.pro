@@ -1,6 +1,9 @@
 {meta: title I Want To Live Again}
 {meta: artist Norma Jean}
 {meta: composer Fuzzy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttoliveagainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]We stopped living when our [C]love died and [G7]I wanna live [C]again
@@ -33,3 +36,7 @@ And yet we stay together we [C]just keep hanging on
 It's wrong to live together when [C7]our love has reached an [F]end
 We stopped living when [C]our love died [G7]and I wanna live [C]again
 {end_of_verse}
+
+
+
+

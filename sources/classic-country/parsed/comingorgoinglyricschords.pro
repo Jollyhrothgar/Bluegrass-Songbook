@@ -1,6 +1,9 @@
 {meta: title Coming Or Going}
 {meta: artist Jean Shepard}
 {meta: composer Shirley Wood}
+{meta: x_source classic-country}
+{meta: x_source_file comingorgoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From this day on I ain't a gonna love nobody
@@ -34,3 +37,7 @@ When you leave me that's the only time I'm happy
 [C]If you left for good the only thing I'd miss is a confusion
 [G]Are you comin' [D7]or goin' this [G]time
 {end_of_verse}
+
+
+
+

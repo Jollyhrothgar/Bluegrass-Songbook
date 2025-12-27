@@ -1,5 +1,8 @@
 {meta: title The Promise}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file thepromiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You [G]gave me back my soul again by [A7]showing me
@@ -35,3 +38,7 @@ You'll [C]know there's someone [D7]so in love with [G]you
 Cause darling [G]time changes [C]everything [G]but it won't change [C]me
 I [G]love you oh I [D7]love you
 {end_of_verse}
+
+
+
+

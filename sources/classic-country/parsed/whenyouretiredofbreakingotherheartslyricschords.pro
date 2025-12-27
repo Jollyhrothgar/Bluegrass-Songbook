@@ -1,6 +1,9 @@
 {meta: title When You're Tired of Breaking Other Hearts}
 {meta: artist Hank Williams}
 {meta: composer Hank Williams and Curley Williams}
+{meta: x_source classic-country}
+{meta: x_source_file whenyouretiredofbreakingotherheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you're tired of breaking [E7]other [A7]hearts
@@ -15,3 +18,4 @@
 [G]When you're tired [E7]of breaking other [A7]hearts
 [D7]Won't you come back again and break [G]mine
 {end_of_verse}
+

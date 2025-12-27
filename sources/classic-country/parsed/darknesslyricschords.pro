@@ -1,5 +1,8 @@
 {meta: title Darkness}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file darknesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oooh ooh ooh [E7]ooh ooh ooh [F]ooh ooh oh [G7]oh
@@ -38,3 +41,9 @@ I [D7]walk a little faster then I start to [G7]run
 {start_of_verse: Verse 1}
 [C]Oooh ooh ooh [E7]ooh ooh ooh [F]ooh ooh oh [G7]oh
 {end_of_verse}
+
+
+
+
+
+

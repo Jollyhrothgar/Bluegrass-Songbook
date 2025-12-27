@@ -1,6 +1,9 @@
 {meta: title How Cold Hearted Can You Get}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson &amp; Billy Gray}
+{meta: x_source classic-country}
+{meta: x_source_file howcoldheartedcanyougetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While you're honky tonking around all you [C]do is run me down
@@ -36,3 +39,7 @@ All [D7]the lies you've told one me [G]you'll regret someday
 [G]Now I guess you'll say to him it [C]was all my fault again
 Now we're [D7]parted how cold hearted can you [G]get
 {end_of_verse}
+
+
+
+

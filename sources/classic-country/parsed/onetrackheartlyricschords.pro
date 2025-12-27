@@ -1,6 +1,9 @@
 {meta: title One Track Heart}
 {meta: artist Elvis Presley}
 {meta: composer Bernie Baum, Bill Giant, Florence Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file onetrackheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just like an old grandfather's clock that won't stop running
@@ -39,3 +42,8 @@ You'll find that I'm the kind who sticks to what I do
 There'll be [F]no end to loving you baby we'll [Am]never be [F]apart
 Cause I'm a [Am]one track [F]mind and a [G7]one track [C]heart
 {end_of_verse}
+
+
+
+
+

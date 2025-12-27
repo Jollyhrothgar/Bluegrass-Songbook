@@ -1,6 +1,9 @@
 {meta: title That's My Kind Of Woman}
 {meta: artist George Strait}
 {meta: composer Tammy Hyler, Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file thatsmykindofwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She can [F]drive a truck and [G7]rope and [C]ride[F]  [Am]   [G7]
@@ -46,3 +49,9 @@ But [C]find me [F]   and [C]that'll be all [F]  [C]  [G7]
 [F]That's my [C]kind of woman the [F]girl I [G7]want for [C]me
 She can [F]drive a truck and [G7]rope and [C]ride
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Bridge I Didn’t Burn}
 {meta: artist Ricky Van Shelton}
 {meta: composer Tracy Byrd, Frank Dycus, Billy Yates}
+{meta: x_source classic-country}
+{meta: x_source_file abridgeididntburnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can feel the need and know it won't be [F]long
@@ -29,3 +32,6 @@ But [C]tonight I'll take a walk  [G7]across the bridge I didn't [C]burn
 It's [C]like I never had a choice where [F]loving her is concerned
 So [C]tonight I'll take a walk  [G7]across the bridge I didn't [C]burn
 {end_of_verse}
+
+
+

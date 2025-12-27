@@ -1,6 +1,9 @@
 {meta: title How Blue}
 {meta: artist Reba McEntire}
 {meta: composer Hugh Moffatt}
+{meta: x_source classic-country}
+{meta: x_source_file howbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]How [C]blue (how blue) can you [F]make me
@@ -42,3 +45,8 @@ How [C]blue (how [G7]blue) can I [C]feel
 How can I go on loving [F]you when you're [D7]gone
 How [C]blue (how [G7]blue) can I [C]feel
 {end_of_verse}
+
+
+
+
+

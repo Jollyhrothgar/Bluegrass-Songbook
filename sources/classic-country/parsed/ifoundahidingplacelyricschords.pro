@@ -1,6 +1,9 @@
 {meta: title I Found A Hiding Place}
 {meta: artist Bill Monroe}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file ifoundahidingplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]High on that lonesome road to heavens blessed abode
@@ -73,3 +76,10 @@ I feel no tempt shout (I feel no tempt shout)
 Oh in the solid rock (oh in the [F]solid [C]rock)
 I found a [G7]hiding [C]place (I found a [F]hiding [C]place) 
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Wonderful World Of Christmas}
 {meta: artist Elvis Presley}
 {meta: composer Charles Tobias and Al Frisch}
+{meta: x_source classic-country}
+{meta: x_source_file thewonderfulworldofChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The wonderful world of [D7]Christmas
@@ -30,3 +33,6 @@ Shall [D7]remain everyday in our [G]hearts
 Open [C]up your [G]hearts to [C]all 
 The [G]wonderful [C]world of [G]Christmas
 {end_of_verse}
+
+
+

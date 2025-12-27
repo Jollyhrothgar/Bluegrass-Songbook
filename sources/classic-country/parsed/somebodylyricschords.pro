@@ -1,6 +1,9 @@
 {meta: title Somebody}
 {meta: artist Rhonda Vincent}
 {meta: composer Al Anderson and Robert E. Orrall}
+{meta: x_source classic-country}
+{meta: x_source_file somebodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You think [F]love is nothing but [C]trouble
@@ -48,3 +51,9 @@ That [F]maybe she's [G7]trying to [C]tell you
 That [F]maybe she's [G7]trying to [C]tell you
 [F]Somebody will [G7]always be [C]there
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Do I Have To Say Goodbye}
 {meta: artist Crystal Gayle}
 {meta: composer Jim McBride and Peter McCann}
+{meta: x_source classic-country}
+{meta: x_source_file doihavetosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve tried [D7]talking to [Em]you
@@ -44,3 +47,7 @@ If [D7]I were to [G]walk a[Em]way [G]would you see me leave
 What does a [D7]woman [Em]say to make a man believe
 Can [C]we talk tonight or [Am]do I have to [D7]say good[G]bye
 {end_of_verse}
+
+
+
+

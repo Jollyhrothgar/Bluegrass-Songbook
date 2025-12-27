@@ -1,5 +1,8 @@
 {meta: title Don't Make Me Go}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file dontmakemegolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You take my hand and smile at [C]me 
@@ -36,3 +39,6 @@ What's this lovesick heart to [C]do
 When it cries for only [G]you 
 Hold me [D7]close I love you so don't make me [G]go
 {end_of_verse}
+
+
+

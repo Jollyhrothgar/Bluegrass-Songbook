@@ -1,6 +1,9 @@
 {meta: title Robbie's Song For Jesus}
 {meta: artist Anne Murray}
 {meta: composer Robbie MacNeill}
+{meta: x_source classic-country}
+{meta: x_source_file robbiessongforJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wake up with no will to carry [F]on
@@ -41,3 +44,8 @@ We [C]can go a long way [E7]loving as we go
 [D7]I never met the [G7]morning [F]till I met [C]you[F]
 [E7]Da da da da [F]da da da [Em]da [Dm]da [C]da
 {end_of_verse}
+
+
+
+
+

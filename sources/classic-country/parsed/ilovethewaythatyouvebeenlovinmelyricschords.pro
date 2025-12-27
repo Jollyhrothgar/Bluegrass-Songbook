@@ -1,6 +1,9 @@
 {meta: title I Love The Way That You've Been Lovin' Me}
 {meta: artist Roy Drusky}
 {meta: composer Ricci Mareno and Gordon Galbraith}
+{meta: x_source classic-country}
+{meta: x_source_file ilovethewaythatyouvebeenlovinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([D7]I love the way that [G7]you've been lovin' [C]me)
@@ -38,3 +41,8 @@ I [D7]love the way that [G7]you've been lovin' [C]me
 [A7]I never want to be [Dm]free
 I [D7]love the way that [G7]you've been lovin' [C]me
 {end_of_verse}
+
+
+
+
+

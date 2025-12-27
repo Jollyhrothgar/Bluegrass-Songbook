@@ -1,6 +1,9 @@
 {meta: title On The Wings Of Love}
 {meta: artist Buck Owens}
 {meta: composer recorded by Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file onthewingsoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna be ridin' on the wings of love out there somewhere up above 
@@ -41,3 +44,8 @@ Gonna have a twinkle [C]in my [G]eye on the [D7]wings of [G]love
 So until the end of time till the stars fall from the sky
 I'll be yours and [C]you'll be [G]mine on the [D7]wings of [G]love
 {end_of_verse}
+
+
+
+
+

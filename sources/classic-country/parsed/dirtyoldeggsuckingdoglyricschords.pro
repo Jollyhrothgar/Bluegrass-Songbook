@@ -1,6 +1,9 @@
 {meta: title Dirty Old Egg Sucking Dog}
 {meta: artist Johnny Cash}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file dirtyoldeggsuckingdoglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well he's not very [E7]handsome to look [A7]at  
@@ -29,3 +32,6 @@ You're [D7]always a hangin' [G]around
 But you'd better [E7]stay out of my [A7]henhouse 
 You [D7]dirty old egg suckin' [G]hound
 {end_of_verse}
+
+
+

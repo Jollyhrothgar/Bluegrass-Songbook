@@ -1,6 +1,9 @@
 {meta: title Go Away}
 {meta: artist Lorrie Morgan}
 {meta: composer Stephony Smith, Cathy Majeski, Sunny Russ}
+{meta: x_source classic-country}
+{meta: x_source_file goawaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Touche [F]touche
@@ -49,3 +52,9 @@ Go away no wait a [C]minute
 [F]I'm all confused but I admit [G7]it
 Go way  no wait a [C]minute
 {end_of_verse}
+
+
+
+
+
+

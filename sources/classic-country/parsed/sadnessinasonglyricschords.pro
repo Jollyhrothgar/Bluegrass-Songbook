@@ -1,6 +1,9 @@
 {meta: title Sadness In A Song}
 {meta: artist Stonewall Jackson}
 {meta: composer Wayne P. Walker and Irene Stanton}
+{meta: x_source classic-country}
+{meta: x_source_file sadnessinasonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Oh the [G7]sadness in a [C]song
@@ -37,3 +40,8 @@ When the only one you love has [G7]gone
 {start_of_verse: Verse 6}
 [F]Oh the [G7]sadness in a [C]song
 {end_of_verse}
+
+
+
+
+

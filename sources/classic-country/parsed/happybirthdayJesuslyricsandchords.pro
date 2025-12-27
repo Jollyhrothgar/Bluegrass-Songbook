@@ -1,5 +1,8 @@
 {meta: title Happy Birthday Jesus}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file happybirthdayJesuslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Snowflakes falling to the ground
@@ -45,3 +48,9 @@ Presents beneath the tree so green
 [C]Happy happy birthday [G]Jesus
 [D7]God's own Son born Christmas [G]day
 {end_of_verse}
+
+
+
+
+
+

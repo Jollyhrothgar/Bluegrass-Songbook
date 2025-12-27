@@ -1,6 +1,9 @@
 {meta: title I Grew Up}
 {meta: artist Jim Reeves}
 {meta: composer H.R. Friedman}
+{meta: x_source classic-country}
+{meta: x_source_file igrewuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was but a tiny tot my folks I dis[G7]obeyed
@@ -31,3 +34,6 @@ Remember what I told to you and [C7]heed all my ad[F]vice
 Let me tell you [C]what'll become of [Am]you 
 You'll [G7]grow up to be quite [C]nice 
 {end_of_verse}
+
+
+

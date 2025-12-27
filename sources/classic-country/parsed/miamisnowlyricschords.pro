@@ -1,6 +1,9 @@
 {meta: title Miami Snow}
 {meta: artist Hank Snow}
 {meta: composer Cindy Walker and Chet Atkins}
+{meta: x_source classic-country}
+{meta: x_source_file miamisnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When there's icicles hangin' on the green palm trees
@@ -41,3 +44,8 @@ Then [C]I'll stop [G7]loving [C]you
 When the Grand Ole Opry stars stop [F]playing their guitars
 Then [C]I'll stop [G7]loving [C]you
 {end_of_verse}
+
+
+
+
+

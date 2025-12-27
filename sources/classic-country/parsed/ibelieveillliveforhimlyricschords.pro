@@ -1,6 +1,9 @@
 {meta: title I Believe I'll Live For Him}
 {meta: artist Statler Brother}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file ibelieveillliveforhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I believe He died for me so I [F]believe I'll live for [C]Him
@@ -41,3 +44,8 @@ I believe He died for [F]me so I be[G7]lieve I'll live for [C]Him
 Wherever He will take me is b[F]etter than where I've b[C]een
 I believe He died for [F]me so I be[G7]lieve I'll live for [C]Him
 {end_of_verse}
+
+
+
+
+

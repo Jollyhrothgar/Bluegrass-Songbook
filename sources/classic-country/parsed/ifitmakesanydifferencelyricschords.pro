@@ -1,6 +1,9 @@
 {meta: title If It Makes Any Difference}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file ifitmakesanydifferencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]If it [G]makes any difference 
@@ -45,3 +48,8 @@ Knowing [G]how I made you feel [G7] it feels about so [C]tall
 I'm sorry and I [G]love you  
 If it [D7]makes any difference at [G]all
 {end_of_verse}
+
+
+
+
+

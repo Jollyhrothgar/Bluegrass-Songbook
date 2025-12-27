@@ -1,6 +1,9 @@
 {meta: title You Could Know as Much About a Stranger}
 {meta: artist Gene Watson}
 {meta: composer Nadine Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file youcouldknowasmuchaboutastrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Our bodies lay here side by side
@@ -29,3 +32,5 @@
 [C]You know the color of my eyes you know the things that I [D7]despise
 [G]But you could know as much [D7]about a [G]stranger
 {end_of_verse}
+
+

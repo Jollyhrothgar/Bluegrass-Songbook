@@ -1,5 +1,8 @@
 {meta: title Make Me One More Memory}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file makemeonemorememorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take my heart my soul my [F]heaven
@@ -32,3 +35,7 @@ And make me [C]one more [G7]mem-o[C]ry
 {start_of_verse: Verse 4}
 [F]Make me [C]one more [G7]memo-[C]ry
 {end_of_verse}
+
+
+
+

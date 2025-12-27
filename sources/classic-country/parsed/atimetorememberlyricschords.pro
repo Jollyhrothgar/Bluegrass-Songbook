@@ -1,6 +1,9 @@
 {meta: title A Time To Remember}
 {meta: artist Bob Luman}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file atimetorememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One moment lives [E7]forever [F]somewhere in my mind
@@ -27,3 +30,6 @@ But [D7]traces of the past remains from [G7]things we [F]used to [Em]do  [G7]
 [C]A touch of you still lin[E7]gers in [F]everything I do
 [G7]A time to remember a [F]moment for [G7]me and [C]you
 {end_of_verse}
+
+
+

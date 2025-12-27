@@ -1,5 +1,8 @@
 {meta: title Katy Daley}
 {meta: artist Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file katydaleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With her old man she came from Temporary
@@ -42,3 +45,8 @@ Come on down the mountain Katy [G7]do
 Can't you hear us callin' Katy Daley
 We want to drink your good old mountain [C]dew
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I've Got A Thing About Trains}
 {meta: artist Johnny Cash}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotathingabouttrainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Train [D7]train [G]train I've got a [D7]thing about [G]trains
@@ -44,3 +47,9 @@ Train [D7]train [G]train [C]you're fading from the [G]scene
 And [C]I'm gonna mourn your [G]passing train [D7]train [G]train
 I've got a [D7]thing about [G]trains
 {end_of_verse}
+
+
+
+
+
+

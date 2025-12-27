@@ -1,6 +1,9 @@
 {meta: title Just Enough To Start Me Dreamin'}
 {meta: artist Eddy Arnold}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file justenoughtostartmedreaminlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You started a [G7]flame [F]I can't drown
@@ -26,3 +29,6 @@ And [G7]that's just enough to start me [F]drea[G7]min' [C]again
 {start_of_verse: Verse 4}
 And [G7]that's just enough to start me [F]dream[G7]in' a[C]gain
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just One More Soul}
 {meta: artist Greater Vision}
 {meta: composer Rodney Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file justonemoresoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The preachers are [C]weary the [G7]singers are [C]tired
@@ -51,3 +54,9 @@
 {start_of_verse: Verse 5}
 [G7]If it rescues just one more [C]soul
 {end_of_verse}
+
+
+
+
+
+

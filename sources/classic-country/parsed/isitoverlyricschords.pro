@@ -1,6 +1,9 @@
 {meta: title Is It Over}
 {meta: artist Ronnie Milsap}
 {meta: composer Charles W. Quillen and Michael Barry Reid}
+{meta: x_source classic-country}
+{meta: x_source_file isitoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is it over are [Am]really over him
@@ -41,3 +44,8 @@ Come on [Dm]over we’ll [G7]let our love [C]begin
 [C]Is it over[Am]   come on [C]over
 Let our love [Am]begin  [C]is it [Am]over
 {end_of_verse}
+
+
+
+
+

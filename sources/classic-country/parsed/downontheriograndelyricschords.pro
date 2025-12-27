@@ -1,5 +1,8 @@
 {meta: title Down On The Rio Grande}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file downontheriograndelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I remember the palm trees swaying
@@ -54,3 +57,11 @@ Oh I'd [Em]give anything to be
 Oh I'd [Em]give anything to be 
 [A7]Down on the Rio [D7]Grande
 {end_of_verse}
+
+
+
+
+
+
+
+

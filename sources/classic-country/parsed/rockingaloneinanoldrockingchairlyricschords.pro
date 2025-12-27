@@ -1,6 +1,9 @@
 {meta: title Rocking Alone in an Old Rocking Chair}
 {meta: artist Everly Brothers}
 {meta: composer Allen L. Carvell}
+{meta: x_source classic-country}
+{meta: x_source_file rockingaloneinanoldrockingchairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sitting alone in an [G7]old rocking chair 
@@ -43,3 +46,8 @@ The ones who forgot her she [C]loves just the same
 And I think of angels as [F]I see her there 
 [G7]Rocking alone in an old rocking [C]chair
 {end_of_verse}
+
+
+
+
+

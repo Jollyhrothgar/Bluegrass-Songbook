@@ -1,6 +1,9 @@
 {meta: title Empty Hours}
 {meta: artist Carl Smith}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file emptyhourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you count the times you've lied
@@ -37,3 +40,8 @@ Count the dreams that won't come true
 [F]Then you'll know the times I've [G7]cried
 [F]And you'll know [G7]how I spend my empty [C]hours
 {end_of_verse}
+
+
+
+
+

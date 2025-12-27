@@ -1,6 +1,9 @@
 {meta: title New Cut Road}
 {meta: artist Bobby Bare}
 {meta: composer Guy Clark}
+{meta: x_source classic-country}
+{meta: x_source_file newcutroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Coalman Bonner was a fiddle playing fool
@@ -64,3 +67,11 @@ Watched um [D7]all go to Texas in a covered wagon
 He pulled out his fiddle and he [A]rosined up his bow
 And he [G]played a little tune down a new cut road
 {end_of_verse}
+
+
+
+
+
+
+
+

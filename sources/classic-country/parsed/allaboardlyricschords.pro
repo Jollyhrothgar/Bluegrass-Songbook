@@ -1,6 +1,9 @@
 {meta: title All Aboard}
 {meta: artist Del McCoury}
 {meta: composer Eugene Patrick Ellsworth,}
+{meta: x_source classic-country}
+{meta: x_source_file allaboardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]I can feel the wheels turning underneath my [Dm]feet
@@ -74,3 +77,15 @@
 {start_of_verse: Verse 13}
 [Dm]I can feel the wheels turning underneath [Em]my feet
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

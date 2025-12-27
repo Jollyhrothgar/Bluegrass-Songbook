@@ -1,6 +1,9 @@
 {meta: title Who Walks In When I Walk Out}
 {meta: artist Bob Wills}
 {meta: composer Ralph Freed, Al Goodhart, Al Hoffman}
+{meta: x_source classic-country}
+{meta: x_source_file whowalksinwheniwalkoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who walks in when I walk out
@@ -26,3 +29,6 @@ Now who walks in when I walk out
 Who gives you that hi [D7]baby
 Who is it who got me jealous of [G]you
 {end_of_verse}
+
+
+

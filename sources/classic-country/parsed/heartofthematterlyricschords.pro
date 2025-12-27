@@ -1,6 +1,9 @@
 {meta: title Heart Of The Matter}
 {meta: artist Cal Smith}
 {meta: composer Don Schlitz and Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file heartofthematterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I won't [G7]ask you what's the [C]matter
@@ -29,3 +32,6 @@
 [F]And when it comes right to the [C]heart of the [F]matter
 [C]The heart's all that [G7]matters at [C]all
 {end_of_verse}
+
+
+

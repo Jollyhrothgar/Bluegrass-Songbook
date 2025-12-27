@@ -1,5 +1,8 @@
 {meta: title Running Bear}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file runningbearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the bank of a river
@@ -63,3 +66,12 @@ With a [G7]love big as the [C]sky
 Running Bear [F]loved little White [C]Dove
 With a [G7]love that couldn't [C]die
 {end_of_verse}
+
+
+
+
+
+
+
+
+

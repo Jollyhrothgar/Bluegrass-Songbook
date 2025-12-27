@@ -1,6 +1,9 @@
 {meta: title Beyond The Last Mile}
 {meta: artist Ray Price}
 {meta: composer Rex Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file beyondthelastmilelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm watching the clock tick the [C7]hours [F]away
@@ -29,3 +32,6 @@
 [C7]My footsteps won't falter I'll walk with a [F]smile
 [G7]For I know you'll be waiting beyond the last [C]mile
 {end_of_verse}
+
+
+

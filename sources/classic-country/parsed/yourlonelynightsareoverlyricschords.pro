@@ -1,6 +1,9 @@
 {meta: title Your Lonely Nights Are Over}
 {meta: artist George Morgan}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file yourlonelynightsareoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your lonely nights are over for there's someone [G7]new
@@ -36,3 +39,7 @@ I kept thinkin' about you of your eyes and your [C]smile
 I decided I love you and came back [F]yesterday
 Now I find that your [C]teardrops [F]washed [G7]your love from me [C]away
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Six Pack To Go}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file sixpacktogolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey Mr Bartender [F]please don't be so [C]slow
@@ -21,3 +24,5 @@ I've got time for [A7]one more round and a [D7]six [G7]pack to [C]go
 Well I [C]don't have enough to pay my rent but I ain't [F]gonna worry [C]though
 I've got time for [A7]one more round and a [D7]six [G7]pack to [C]go 
 {end_of_verse}
+
+

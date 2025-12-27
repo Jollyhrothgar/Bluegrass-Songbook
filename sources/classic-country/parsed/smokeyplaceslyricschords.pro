@@ -1,6 +1,9 @@
 {meta: title Smokey Places}
 {meta: artist Billy Walker}
 {meta: composer Abner Spector}
+{meta: x_source classic-country}
+{meta: x_source_file smokeyplaceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Meeting in smoky [G7]places hiding in shadowy [C]corners
@@ -25,3 +28,6 @@ Sharing love stolen in [G7]the night in smoky [C]places
 [F]We're dancing where no one knows our [C]faces
 Sharing love stolen in [G7]the night in smoky [C]places
 {end_of_verse}
+
+
+

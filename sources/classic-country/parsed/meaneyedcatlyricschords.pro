@@ -1,5 +1,8 @@
 {meta: title Mean Eyed Cat}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file meaneyedcatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gave my woman half my money at the general store  
@@ -42,3 +45,8 @@ I was broke as I could [C]be
 But when I come back I gotta buy another [F]ticket
 Gonna [G7]bring her back with [C]me  
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Dyin' A Little Each Day}
 {meta: artist Statler Brothers}
 {meta: composer Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file imdyinalittleeachdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Just [C]another cold day and a [F]warm can of [C]beans
@@ -33,3 +36,7 @@ So I'm dyin' a [G7]little each [C]day[G7]
 {start_of_verse: Verse 5}
 I'm [C]dyin' a [G7]little each [C]day
 {end_of_verse}
+
+
+
+

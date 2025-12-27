@@ -1,6 +1,9 @@
 {meta: title North South East Or West}
 {meta: artist Jimmy Dean}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file northsoutheastorwestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]North south [F]east or west [G7]where can I [C]forget her best
@@ -33,3 +36,7 @@ But [C]cold would make me [F]think about [G7]the love I wanted [C]so
 North south [F]east or west [G7]which way should I [C]go
 [G7]Lord I just don't [C]know
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Satin Sheets}
 {meta: artist The Bellamy Brothers}
 {meta: composer Willis Allan Ramsey}
+{meta: x_source classic-country}
+{meta: x_source_file satinsheetslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wish I was a millionaire  I'd [D7]play rock music and grow long hair
@@ -42,3 +45,8 @@ I'd give 'em [C]satin sheets to keep 'em [G]off the streets
 [D7]Great Jehova  [G]you'll come over
 As [D7]soon as you see me boogie woogie 'cross the silver [G]screen
 {end_of_verse}
+
+
+
+
+

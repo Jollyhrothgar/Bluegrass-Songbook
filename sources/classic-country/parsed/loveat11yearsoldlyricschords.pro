@@ -1,5 +1,8 @@
 {meta: title Love At 11 Years Old}
 {meta: artist Lloyd Snow}
+{meta: x_source classic-country}
+{meta: x_source_file loveat11yearsoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I fell in love at 11 years old 
@@ -63,3 +66,11 @@ Like I did at eleven years [C]old
 [F]Can anyone truthfully [C]say it's forgotten
 This [G7]love at eleven years [C]old
 {end_of_verse}
+
+
+
+
+
+
+
+

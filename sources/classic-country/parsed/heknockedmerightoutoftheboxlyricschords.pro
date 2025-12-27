@@ -1,6 +1,9 @@
 {meta: title He Knocked Me Right Out Of The Box}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file heknockedmerightoutoftheboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He knocked me right out of the [F]box
@@ -40,3 +43,8 @@ He [G7]knocked me right out of the [C]box
 {start_of_verse: Verse 4}
 He [G7]knocked me right out of the [C]box
 {end_of_verse}
+
+
+
+
+

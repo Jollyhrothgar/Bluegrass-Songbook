@@ -1,5 +1,8 @@
 {meta: title It Only Happened Yesterday}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file itonlyhappenedyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It only happened yesterday [C7]and [F]already I miss you my [C]dear
@@ -15,3 +18,4 @@ Alone am I  [G7]alone I'll be  yes [F]these lonely nights have got the best of [
 [F]I'm on my knees  [C]I'm begging please  [G7]forgive me for [C]yesterday
 [F]I'm on my knees  [C]I'm begging please  [G7]forgive me for [C]yesterday
 {end_of_verse}
+

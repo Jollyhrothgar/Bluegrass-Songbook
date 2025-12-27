@@ -1,5 +1,8 @@
 {meta: title No One Is Sweeter Than You}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file nooneissweeterthanyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just a tiny bit of loving 
@@ -39,3 +42,8 @@ If [G]I should ever lose you
 My [C]heart would break in [G]two
 Darling no one is [D7]sweeter than [G]you
 {end_of_verse}
+
+
+
+
+

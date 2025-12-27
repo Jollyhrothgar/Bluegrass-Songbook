@@ -1,6 +1,9 @@
 {meta: title I've Loved Him Much Longer Than You}
 {meta: artist Jean Shepard}
 {meta: composer Rory Bourke and Gayle Barnhill}
+{meta: x_source classic-country}
+{meta: x_source_file ivelovedhimmuchlongerthanyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My husband doesn't know [F]I'm making [G7]this phone [C]call
@@ -34,3 +37,7 @@
 [F]And if he had [G7]to choose [C]I know that you'd [F]lose
 [C]I've loved [G7]him much longer than [C][F]you
 {end_of_verse}
+
+
+
+

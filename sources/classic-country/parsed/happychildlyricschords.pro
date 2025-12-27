@@ -1,6 +1,9 @@
 {meta: title Happy Child}
 {meta: artist Jimmy Dean}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file happychildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got a little bit of everything I [C]need
@@ -49,3 +52,9 @@
 [C]One of His youngun’s
 [D7]I'm the good Lord's happy [G]child
 {end_of_verse}
+
+
+
+
+
+

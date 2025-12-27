@@ -1,6 +1,9 @@
 {meta: title Hand Prints On The Wall}
 {meta: artist Kenny Rogers}
 {meta: composer Nelson Blanchard, Scott Innes, Claude Parish}
+{meta: x_source classic-country}
+{meta: x_source_file handprintsonthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The wait turned into hours [F]before you came my [C]way
@@ -34,3 +37,7 @@ So [C]don't be afraid to [Em]take that step I'll [F]catch you when you [Fm]fall
 So [C]don't be afraid to [Em]take that step I'll [F]catch you when you [Fm]fall
 [F]I don't mind if you [C]leave behind a [F]few hand prints [G7]on the [C]wall
 {end_of_verse}
+
+
+
+

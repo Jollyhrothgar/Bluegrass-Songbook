@@ -1,6 +1,9 @@
 {meta: title Over Under And Around}
 {meta: artist Reba McEntire}
 {meta: composer Mark Miller and Robert Randall}
+{meta: x_source classic-country}
+{meta: x_source_file overunderandaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]You've been treatin' me like a [C]candle
@@ -31,3 +34,6 @@ I ain't [A#7]under your [F]spell no [C]more
 I've been [A#7]around [F]here too [C]long
 I've been [A#7]over under [F]around and now I'm [C]gone 
 {end_of_verse}
+
+
+

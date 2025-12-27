@@ -1,6 +1,9 @@
 {meta: title Deep Blue Sea}
 {meta: artist Jimmy Dean}
 {meta: composer Steven Harvey and Martin Seligson}
+{meta: x_source classic-country}
+{meta: x_source_file deepbluesealyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Deep [F]blue [C]sea [G7]Willie [C]deep [F]blue [C]sea
@@ -43,3 +46,8 @@ Storms [F]are [C]coming hear the wind blow [G7]free
 [C]Deep [F]blue [C]sea [G7]Willie [C]deep [F]blue [C]sea
 It was Willie what got drowned in [G7]the deep blue [C]sea
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Nothing Between}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file nothingbetweenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nothing between  lost [F]love and [C]lonely 
@@ -28,3 +31,6 @@ With no happiness [G7]anyplace to be [C]seen
 You're still here with me  [F]though many miles separate [C]us
 Your heart and [G7]mine has nothing [C]between
 {end_of_verse}
+
+
+

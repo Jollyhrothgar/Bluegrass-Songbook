@@ -1,6 +1,9 @@
 {meta: title You Were Never Mine To Lose}
 {meta: artist Doug Stone}
 {meta: composer Kim Williams, Ron Harbin, Doug Stone}
+{meta: x_source classic-country}
+{meta: x_source_file youwereneverminetoloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw an old friend on my new job and he [D7]asked me about [Dm]you 
@@ -34,3 +37,7 @@ Darling you were [G7]never mine to [C]lose [F]no
 {start_of_verse: Verse 5}
 Darling you were nev[G7]er mine to [C]lose[F]  [C]
 {end_of_verse}
+
+
+
+

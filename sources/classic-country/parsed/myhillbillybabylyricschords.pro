@@ -1,5 +1,8 @@
 {meta: title My Hillbilly Baby}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file myhillbillybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My hillbilly baby the sweetest gal in [D7]town
@@ -28,3 +31,6 @@ You can bet I'll see her when the sun goes [G]down
 [C]Someday I will marry her I [G]hope I'm not too [E7]late
 [A7]But until she's older oh I guess I'll have to [D7]wait
 {end_of_verse}
+
+
+

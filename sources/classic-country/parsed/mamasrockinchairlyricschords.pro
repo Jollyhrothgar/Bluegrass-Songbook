@@ -1,6 +1,9 @@
 {meta: title Mama's Rockin' Chair}
 {meta: artist John Conlee}
 {meta: composer Johnny McRae and Tim Mensy}
+{meta: x_source classic-country}
+{meta: x_source_file mamasrockinchairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I think of my childhood [C]days
@@ -39,3 +42,6 @@ We sailed the ocean we [C]climbed the Eifel Tower
 We went a [G]million miles an hour
 We traveled [D7]everywhere [C]  in mama's [G]rocking chair
 {end_of_verse}
+
+
+

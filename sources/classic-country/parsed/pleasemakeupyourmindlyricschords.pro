@@ -1,5 +1,8 @@
 {meta: title Please Make Up Your Mind Chords}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file pleasemakeupyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I agree with you baby it [F]makes you mad
@@ -46,3 +49,7 @@ There just ain't nobody knows [F]what I go through
 Would [G7]you please make up your mind 
 What in the confounded cat hair do you [C]want me to do
 {end_of_verse}
+
+
+
+

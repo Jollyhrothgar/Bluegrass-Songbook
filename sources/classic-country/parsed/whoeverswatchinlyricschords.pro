@@ -1,6 +1,9 @@
 {meta: title Whoever's Watchin'}
 {meta: artist Reba McEntire}
 {meta: composer Kevin Welch and Gary Morris}
+{meta: x_source classic-country}
+{meta: x_source_file whoeverswatchinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm not wastin' my [C]time on earthly [G]longin' 
@@ -52,3 +55,11 @@ Whoever's [F]watchin' must be [C]watchin' over [G]me
 {start_of_verse: Verse 7}
 Whoever's [F]watchin' must be [C]watchin' over [G]me [F]  [C]  [G]yeah
 {end_of_verse}
+
+
+
+
+
+
+
+

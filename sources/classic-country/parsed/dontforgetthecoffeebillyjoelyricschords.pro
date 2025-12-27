@@ -1,5 +1,8 @@
 {meta: title Don’t Forget The Coffee Billy Joe}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file dontforgetthecoffeebillyjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It snowed the night [F]before and it had [C]frozen on the ground
@@ -46,3 +49,9 @@ You catch a [F]ride when you get [C]to the blacktop [F]road
 {start_of_verse: Verse 6}
 Now pay attention son don't forget the [F]coffee Billy [C]Joe
 {end_of_verse}
+
+
+
+
+
+

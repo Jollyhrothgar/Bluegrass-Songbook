@@ -1,5 +1,8 @@
 {meta: title Ring of Fire}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file ringoffirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love  is a [C]burning [G]thing
@@ -41,3 +44,7 @@ And it burns  burns  burns
 The [D7]ring of [G]fire
 The [D7]ring of [G]fire
 {end_of_verse}
+
+
+
+

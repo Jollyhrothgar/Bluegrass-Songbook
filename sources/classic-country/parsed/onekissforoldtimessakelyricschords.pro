@@ -1,6 +1,9 @@
 {meta: title One Kiss For Old Times Sake}
 {meta: artist Eddy Arnold}
 {meta: composer Kenny Young and Artie Resnick}
+{meta: x_source classic-country}
+{meta: x_source_file onekissforoldtimessakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](I want you I [Em]need you I [Am]love you [D7]please grant me [G]this)
@@ -34,3 +37,8 @@ Oh my [Am]darling [D7]please grant me [G]this
 One kiss for old time's sake just like it [D7]used to be
 One kiss for old time's sake could bring you back to [G]me
 {end_of_verse}
+
+
+
+
+

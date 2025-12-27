@@ -1,6 +1,9 @@
 {meta: title So Afraid}
 {meta: artist Faron Young}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file soafraidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Looking in your eyes and finding only a reflection there of [D7]me
@@ -20,3 +23,4 @@ The thought of losing you can bring such [C]fear to m-[A7]e
 If [D7]I could be behind your eyes then I might realize I'm wrong to [G]be
 So [C]afraid (so [D7]afraid) so [G]afraid (so afraid) so [C]afraid of [D7]losing [G]you
 {end_of_verse}
+

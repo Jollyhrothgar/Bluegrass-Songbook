@@ -1,6 +1,9 @@
 {meta: title No Sign Of Living}
 {meta: artist Dottie West}
 {meta: composer Jessi Colter}
+{meta: x_source classic-country}
+{meta: x_source_file nosignoflivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No [D7]sign of [G]living 
@@ -31,3 +34,6 @@ In my house [G]today [C]   [G]
 There's [C]no sign of [G]living 
 [D7]In my house [G]today[C]  [G]
 {end_of_verse}
+
+
+

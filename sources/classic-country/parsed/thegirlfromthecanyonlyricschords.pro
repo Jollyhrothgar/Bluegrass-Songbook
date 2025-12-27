@@ -1,6 +1,9 @@
 {meta: title The Girl From The Canyon}
 {meta: artist Keith Whitley}
 {meta: composer Jonathan Edwards}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlfromthecanyonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The girl from the canyon smiled a smile that brought me home
@@ -40,3 +43,8 @@ The [F]girl from the canyon took and [Dm]healed my wounds in[Am]stead
 {start_of_verse: Verse 5}
 She [F]was the [A#7]only [C]one
 {end_of_verse}
+
+
+
+
+

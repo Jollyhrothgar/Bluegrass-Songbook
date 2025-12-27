@@ -1,6 +1,9 @@
 {meta: title Just For What I Am}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file justforwhatiamlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blue ain't just a word [C]it's a [G]feeling 
@@ -29,3 +32,6 @@ Someone who won't [C]expect me to be [A7]like their old [D7]memory
 [G]Just for what they [C]see [D7]just for being [G]me
 I want someone to [C]love me [D7]just for what I [G]am
 {end_of_verse}
+
+
+

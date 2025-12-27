@@ -1,6 +1,9 @@
 {meta: title I'll Never Take You Back Again}
 {meta: artist Slim Whitman}
 {meta: composer Harry Peterson and Jane Wood}
+{meta: x_source classic-country}
+{meta: x_source_file illnevertakeyoubackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You’re asking me to take you back if I still care for [C]you
@@ -31,3 +34,6 @@ That’s [D7]something I should know
 I [G]gave my heart to you before now see the shape it’s [C]in
 You’re wrong for me and [G]so I’ll never [D7]take you back [G]again
 {end_of_verse}
+
+
+

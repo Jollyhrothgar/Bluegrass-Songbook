@@ -1,6 +1,9 @@
 {meta: title Alright I'm Wrong}
 {meta: artist Dwight Yoakam}
 {meta: composer Pete Anderson and Craig Cisco}
+{meta: x_source classic-country}
+{meta: x_source_file alrightimwronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well alright alright alright alright girl I'm [D7]wrong
@@ -56,3 +59,9 @@ Well alright you made your point
 I didn't plan to [C]stay this long
 So [G]alright alright alright [D7]alright girl I'm [G]wrong
 {end_of_verse}
+
+
+
+
+
+

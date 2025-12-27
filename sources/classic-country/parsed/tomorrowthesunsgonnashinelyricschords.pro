@@ -1,5 +1,8 @@
 {meta: title Tomorrow The Sun’s Gonna Shine}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrowthesunsgonnashinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tomorrow the sun’s gonna [D7]shine 
@@ -32,3 +35,7 @@ And tomorrow the sun’s gonna [G]shine
 {start_of_verse: Verse 4}
 Yes [D7]tomorrow the sun is gonna [G]shine 
 {end_of_verse}
+
+
+
+

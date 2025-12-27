@@ -1,6 +1,9 @@
 {meta: title From A Boxcar Door}
 {meta: artist Boxcar Willie}
 {meta: composer Lecil Travis Martin}
+{meta: x_source classic-country}
+{meta: x_source_file fromaboxcardoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've seen the 'gators and the skeeters
@@ -107,3 +110,21 @@ You know big or small I'll see [D7]you all
 From a boxcar [G]door
 Yeah [D7]big or small I'll see you all from a boxcar [G]door
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

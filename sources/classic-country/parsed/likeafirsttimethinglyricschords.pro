@@ -1,6 +1,9 @@
 {meta: title Like A First Time Thing}
 {meta: artist Ray Price}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file likeafirsttimethinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Softly as a gentle summer [G7]rain
@@ -36,3 +39,6 @@
 [C]And I still can't help [E7]feeling once [Dm]again
 [G7]It's like a first time [C]thing
 {end_of_verse}
+
+
+

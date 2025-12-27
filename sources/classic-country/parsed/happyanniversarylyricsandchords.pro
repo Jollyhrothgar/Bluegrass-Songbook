@@ -1,6 +1,9 @@
 {meta: title Happy Anniversary}
 {meta: artist Roy Rogers}
 {meta: composer Bill Eldridge and G. Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file happyanniversarylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My darling [C]Happy [G][D7]Anniversary
@@ -34,3 +37,7 @@ Once again thanks [D7]for the [G]memory
 My darling [C]Happy [G][D7]Anniversary
 My darling [C]Happy [G][D7]Anniversary
 {end_of_verse}
+
+
+
+

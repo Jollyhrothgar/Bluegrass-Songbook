@@ -1,6 +1,9 @@
 {meta: title It's A Long Way Down From Riches To Rags}
 {meta: artist Billy Walker}
 {meta: composer Billy Walker, Mary Ann Meier, Edna Henderson}
+{meta: x_source classic-country}
+{meta: x_source_file itsalongwaydownfromrichestoragslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a long way [C]down from riches to [G]rags
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [D7]It's [C]a [D7]long way d-o-w-n from riches to [G]rags
 {end_of_verse}
+
+
+

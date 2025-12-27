@@ -1,6 +1,9 @@
 {meta: title Where Do I Put Her Memory}
 {meta: artist Charley Pride}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file wheredoiputhermemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve taken down all [F]of her [C]pictures
@@ -50,3 +53,9 @@ When it’s [F]always in my [C]mind
 I can’t chase it [E7]erase it I just [Am]have to face [F]it
 It’s gonna [C]be there a [G7]long long [C]time
 {end_of_verse}
+
+
+
+
+
+

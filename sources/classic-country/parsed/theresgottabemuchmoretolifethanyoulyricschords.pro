@@ -1,6 +1,9 @@
 {meta: title There's Gotta Be Much More To Life Than You}
 {meta: artist Hank Williams Jr.}
 {meta: composer Steve Karliski}
+{meta: x_source classic-country}
+{meta: x_source_file theresgottabemuchmoretolifethanyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born long [F]before I ever [C]met you
@@ -33,3 +36,7 @@ When [G7]you are more than [F]life [G7]itself to [C]me
 {start_of_verse: Verse 5}
 When [G7]you are more than [F]life [G7]itself to [C]me
 {end_of_verse}
+
+
+
+

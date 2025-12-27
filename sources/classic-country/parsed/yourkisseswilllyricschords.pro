@@ -1,6 +1,9 @@
 {meta: title Your Kisses Will}
 {meta: artist Crystal Gayle}
 {meta: composer Van Stephenson}
+{meta: x_source classic-country}
+{meta: x_source_file yourkisseswilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes when I get in this [C]mood
@@ -25,3 +28,6 @@ Your [Am]love's the only thing I [D7]know
 [G]Cause all I need is [C]you babe to [Am]love to [D7]laugh to [G]feel
 And [C]when nothin' [D7]else can [G]warm me [Em]up I [C]know your [D7]kisses [G]will
 {end_of_verse}
+
+
+

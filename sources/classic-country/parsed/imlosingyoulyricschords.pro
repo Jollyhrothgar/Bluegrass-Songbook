@@ -1,6 +1,9 @@
 {meta: title I'm Losing You}
 {meta: artist Doug Stone}
 {meta: composer Monty Criswell and Tim Schoepf}
+{meta: x_source classic-country}
+{meta: x_source_file imlosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm losing you [G7]a little at a time
@@ -43,3 +46,8 @@ Is [G7]barely hangin' on I'm [C]losing you
 [G7]Every day I find[F] 
 I'm [C]losing you I'm [F]losing [C]you
 {end_of_verse}
+
+
+
+
+

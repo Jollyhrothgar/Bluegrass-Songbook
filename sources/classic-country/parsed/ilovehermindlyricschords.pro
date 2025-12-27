@@ -1,6 +1,9 @@
 {meta: title I Love Her Mind}
 {meta: artist The Bellamy Brothers}
 {meta: composer David M. Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file ilovehermindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Forget about her eyes that [C]dance around like [D7]diamonds in the [G]night [C]  [D7]
@@ -33,3 +36,6 @@ Let me [D7]say it two more [G]times [C]  [D7]
 The way she [G]uses it to love me  [D7]I love her [G]mind [C]  [D7]
 Because she [G]uses it to love me  [D7]I love her [G]mind
 {end_of_verse}
+
+
+

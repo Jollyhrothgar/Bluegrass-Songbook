@@ -1,6 +1,9 @@
 {meta: title Detour}
 {meta: artist Hank Thompson}
 {meta: composer Paul Westmoreland}
+{meta: x_source classic-country}
+{meta: x_source_file detourlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Headed down life's crooked road 
@@ -59,3 +62,12 @@ Lot of things I never knowed
 And because of me not knowing I now [D7]pine
 Trouble got in the [G]trail 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

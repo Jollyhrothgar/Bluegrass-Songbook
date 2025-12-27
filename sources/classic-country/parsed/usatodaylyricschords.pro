@@ -1,5 +1,8 @@
 {meta: title USA Today}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file usatodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I heard that you've been [F]wonderin'
@@ -59,3 +62,11 @@ On the cover [C]of the USA [F]Today
 Picture of the [Dm]loneliest man they [F]claim
 In the [G7]USA to[C]day
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Blue Rose Of The Rio Lyrics and Chords}
 {meta: artist Hank Snow}
 {meta: composer Rusty Keefer and Ruth Keefer}
+{meta: x_source classic-country}
+{meta: x_source_file blueroseoftheriolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blue rose of the Rio I can see her [D7]now
@@ -22,3 +25,5 @@ Blue rose of the Rio my answer is [G]you
 [G]Must I wish for manana that will never come [D7]true
 Blue rose of the Rio my answer is [G]you
 {end_of_verse}
+
+

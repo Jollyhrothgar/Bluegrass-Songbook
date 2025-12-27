@@ -1,6 +1,9 @@
 {meta: title The Roadmaster}
 {meta: artist Freddy Weller}
 {meta: composer Dewey Lindon Oldham Jr. and Freddy Weller}
+{meta: x_source classic-country}
+{meta: x_source_file theroadmasterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm a roadmaster baby I [D7]spend my life on the [G]road 
@@ -40,3 +43,7 @@ I'll [C]take anything from [Am]eighteen to eighty
 When the [G]full moon's shinin' and the [D7]roadmaster's on the [G]road [C]
 When the [G]full moon's shinin' and the [D7]roadmaster's on the [G]road 
 {end_of_verse}
+
+
+
+

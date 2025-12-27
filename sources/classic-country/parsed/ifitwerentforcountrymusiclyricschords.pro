@@ -1,6 +1,9 @@
 {meta: title If It Weren't For Country Music}
 {meta: artist Clinton Gregory}
 {meta: composer Alan Syms}
+{meta: x_source classic-country}
+{meta: x_source_file ifitwerentforcountrymusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sit here by the jukebox in this country bar
@@ -48,3 +51,9 @@ And if it weren't for country music I'd go [C]crazy
 Yes the [G7]future's looking bright cause I'm finally feeling right
 And if it weren't for country music I'd go [C]crazy
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Fire I Can't Put Out}
 {meta: artist George Strait}
 {meta: composer Darrel Staedtler}
+{meta: x_source classic-country}
+{meta: x_source_file afireicantputoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm finding out how hot an [F]old flame can burn
@@ -33,3 +36,7 @@ You'll always be a [G7]fire I can't put [Am]out  [F]
 {start_of_verse: Verse 5}
 You'll always be a [G7]fire I can't put [C]out
 {end_of_verse}
+
+
+
+

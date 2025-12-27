@@ -1,6 +1,9 @@
 {meta: title Crying Again}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Rafe Van Hoy and Don Cook}
+{meta: x_source classic-country}
+{meta: x_source_file cryingagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You told me that our love was [C]forever
@@ -29,3 +32,6 @@ Crying [F]again like we've nearly always [C]been
 Crying again [F]I wonder when I won't [C]be 
 [G7]Crying [C]again
 {end_of_verse}
+
+
+

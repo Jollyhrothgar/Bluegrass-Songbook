@@ -1,6 +1,9 @@
 {meta: title I’m Wasting Good Paper}
 {meta: artist George Jones}
 {meta: composer George Jones and Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file imwastinggoodpaperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know I shouldn't do this but I will [G7]anyway
@@ -22,3 +25,5 @@ And [F]just like the [G7]others in the [C]trash it will [G7]fall
 I [C]know you won't be wearing [C7]this name I now [F]sign
 I'm [G7]just wasting good paper a stamp and my [C]time
 {end_of_verse}
+
+

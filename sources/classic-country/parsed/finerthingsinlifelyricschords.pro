@@ -1,6 +1,9 @@
 {meta: title Finer Things In Life}
 {meta: artist Red Steagall}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file finerthingsinlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was born and raised in [G7]Natchez 
@@ -56,3 +59,10 @@ In [F]life is lovin' [C]me
 Yes the lady thinks the [G7]finest thing 
 In [F]life is lovin' [C]me
 {end_of_verse}
+
+
+
+
+
+
+

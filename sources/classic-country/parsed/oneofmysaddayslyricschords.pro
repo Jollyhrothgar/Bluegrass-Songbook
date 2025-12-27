@@ -1,5 +1,8 @@
 {meta: artist Faron Young}
 {meta: composer Cile Davis}
+{meta: x_source classic-country}
+{meta: x_source_file oneofmysaddayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you miss a smile on my face today pay no [D7]attention
@@ -28,3 +31,6 @@ This is just one of my sad [C]days
 Wish I didn't have to hurry nice to see [G7]you don't worry
 This is just one of my sad [C]days
 {end_of_verse}
+
+
+

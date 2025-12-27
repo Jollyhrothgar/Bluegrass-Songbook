@@ -1,6 +1,9 @@
 {meta: title You Should Be Layin' In Her Arms}
 {meta: artist Charly McClain}
 {meta: composer Bob Morrison and Johnny McRae}
+{meta: x_source classic-country}
+{meta: x_source_file youshouldbelayininherarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord knows I need to [F]hear the things 
@@ -51,3 +54,8 @@ Oh it's [F]such a lovely line
 You should be [C]layin' in her arms 
 Instead of [F]lyin' [G7]here in [C]mine 
 {end_of_verse}
+
+
+
+
+

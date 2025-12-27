@@ -1,6 +1,9 @@
 {meta: title I Can't Have A Merry Christmas}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Bill Lancaster}
+{meta: x_source classic-country}
+{meta: x_source_file icanthaveamerryChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't have a Merry Christmas  Mary without [G7]you
@@ -27,3 +30,6 @@
 {start_of_verse: Verse 4}
 [G7]I can't have a Merry Christmas  Mary without [C]you
 {end_of_verse}
+
+
+

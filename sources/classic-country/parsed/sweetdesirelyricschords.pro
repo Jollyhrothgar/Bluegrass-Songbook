@@ -1,6 +1,9 @@
 {meta: title Sweet Desire}
 {meta: artist The Kendalls}
 {meta: composer Jeannie Kendall}
+{meta: x_source classic-country}
+{meta: x_source_file sweetdesirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sweet desire gave me [C][F]away
@@ -36,3 +39,7 @@ Warmed my heart so I just had [F]to [C]stay
 Tempting feelings just lead me [C][F]astray
 And sweet desire gave me [C][G7]away
 {end_of_verse}
+
+
+
+

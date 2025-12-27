@@ -1,5 +1,8 @@
 {meta: title Just In Time}
 {meta: artist The Kingsmen}
+{meta: x_source classic-country}
+{meta: x_source_file justintimelyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was going [C]down for the [G]last time no one heard my [F]cr[G]y
@@ -32,3 +35,7 @@ God [G]knows how [C]long I [G]drifted when I saw the [C]old life[G]line
 {start_of_verse: Verse 4}
 [C]I thank [G]God He found me [D7]just in [G]time
 {end_of_verse}
+
+
+
+

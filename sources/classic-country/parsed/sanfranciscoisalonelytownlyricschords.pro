@@ -1,6 +1,9 @@
 {meta: title San Francisco Is A Lonely Town}
 {meta: artist Charlie Rich}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file sanfranciscoisalonelytownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Two happy [C]people [F]  on a [C]Greyhound bus
@@ -35,3 +38,7 @@ And while the [F]Greyhound keeps on [E7]rolling
 {start_of_verse: Verse 5}
 [C]San Francis[Am]co [G7]  is a lonely [C]town
 {end_of_verse}
+
+
+
+

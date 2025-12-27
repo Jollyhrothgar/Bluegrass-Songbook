@@ -1,6 +1,9 @@
 {meta: title Cheating Wife Again}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file cheatingwifeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She kisses a stranger turns out the [G7]lights
@@ -40,3 +43,8 @@ But tonight she’s knows that she will be a [G7]cheating wife [C]again
 {start_of_verse: Verse 6}
 Yes tonight she’s knows that she will be a [G7]cheating wife [C]again
 {end_of_verse}
+
+
+
+
+

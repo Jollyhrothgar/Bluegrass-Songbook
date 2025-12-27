@@ -1,6 +1,9 @@
 {meta: title I Told Them All About You}
 {meta: artist David Houston}
 {meta: composer Cliff Friend}
+{meta: x_source classic-country}
+{meta: x_source_file itoldthemallaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told the whippoorwill told the daffodil
@@ -62,3 +65,15 @@ That you said worthwhile
 [G7]Yes I told them all about [C]you
 [G7]Yes I told them all about [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Take Me As I Am (Or Let Me Go)}
 {meta: artist Dottie West}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file takemeasiamorletmegolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Why must you always try to make me [C]over
@@ -29,3 +32,6 @@
 [G]But I won't be a stand in for an old [C]love
 [D7]Take me as I am or let me [G]go
 {end_of_verse}
+
+
+

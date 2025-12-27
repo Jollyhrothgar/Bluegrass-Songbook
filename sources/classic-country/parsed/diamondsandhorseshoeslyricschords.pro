@@ -1,6 +1,9 @@
 {meta: title Diamonds And Horseshoes}
 {meta: artist Jerry Wallace}
 {meta: composer Bert Pellish and Mitchell Tableporter}
+{meta: x_source classic-country}
+{meta: x_source_file diamondsandhorseshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](Diamonds and horseshoes [C]diamonds and [Am]horseshoes)
@@ -38,3 +41,8 @@
 {start_of_verse: Verse 5}
 [F](Diamonds and [C]horseshoes)
 {end_of_verse}
+
+
+
+
+

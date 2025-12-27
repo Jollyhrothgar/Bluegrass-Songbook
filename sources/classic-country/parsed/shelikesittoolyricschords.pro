@@ -1,6 +1,9 @@
 {meta: title She Likes It Too}
 {meta: artist Alan Jackson}
 {meta: composer Zack Turner and Tim Nichols}
+{meta: x_source classic-country}
+{meta: x_source_file shelikesittoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got my first motorcycle when [F]I turned six[C]teen
@@ -52,3 +55,10 @@ I [C]know what I like and [G7]she likes it [C]too
 I know what I like and [G7]she likes it [C]too
 Yeah I know what I like and [G7]she likes it [C]too
 {end_of_verse}
+
+
+
+
+
+
+

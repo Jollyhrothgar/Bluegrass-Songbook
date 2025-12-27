@@ -1,5 +1,8 @@
 {meta: title The Storm}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file thestormlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That kiss you gave [G7]me this [C]morning 
@@ -33,3 +36,7 @@ And [F]defend our [G7]love from the [C]storm
 I'd [F]rise and challenge [G7]the oncoming [C]waves 
 And [F]defend our [G7]love from the [C]storm
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Candy And Roses}
 {meta: artist Carl Smith}
 {meta: composer Jim Mundy}
+{meta: x_source classic-country}
+{meta: x_source_file candyandroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Candy and roses [F]everybody knows [C]is
@@ -57,3 +60,10 @@
 [F]If you love your woman and want a happy [C]home
 [G7]Give her candy and roses for a [C]start
 {end_of_verse}
+
+
+
+
+
+
+

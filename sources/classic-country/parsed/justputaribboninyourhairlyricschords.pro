@@ -1,6 +1,9 @@
 {meta: title Just Put A Ribbon In Your Hair}
 {meta: artist Doug Stone}
 {meta: composer Robert Burns and Donald Huber}
+{meta: x_source classic-country}
+{meta: x_source_file justputaribboninyourhairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bobby wants a ten [G7]speed [Am] English [C]racer
@@ -49,3 +52,9 @@ Just put a [G7]ribbon in your [C]hair
 (Just put a [Am]ribbon in your [Dm]hair) 
 Put a [G7]ribbon in your [C]hair
 {end_of_verse}
+
+
+
+
+
+

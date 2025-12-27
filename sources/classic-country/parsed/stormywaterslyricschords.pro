@@ -1,6 +1,9 @@
 {meta: title Stormy Waters}
 {meta: artist Doyle Lawson}
 {meta: composer Henry Donohue}
+{meta: x_source classic-country}
+{meta: x_source_file stormywaterslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stormy waters all around me waves are rough and rolling high
@@ -61,3 +64,8 @@ When I see (when I look and see)
 To the rock of ages (rock of ages)
 [G7]Cleft for [C]me (for [F]even [C]me)
 {end_of_verse}
+
+
+
+
+

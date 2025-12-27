@@ -1,6 +1,9 @@
 {meta: title My Own Little World}
 {meta: artist Wynn Stewart}
 {meta: composer Bob Morris and Larry Farmer}
+{meta: x_source classic-country}
+{meta: x_source_file myownlittleworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some folks are happy [Dm]  others are sad
@@ -26,3 +29,6 @@ Cause I'm [C]happy here in my [F]own little [G7]world with [C]you
 {start_of_verse: Verse 4}
 [F]Cause I'm [C]happy here in my [F]own little [G7]world with [C]you
 {end_of_verse}
+
+
+

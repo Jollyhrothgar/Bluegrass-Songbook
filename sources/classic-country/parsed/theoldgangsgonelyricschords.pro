@@ -1,6 +1,9 @@
 {meta: title The Old Gang's Gone}
 {meta: artist Mel Tillis}
 {meta: composer Bobby Cisco and Bill Guess}
+{meta: x_source classic-country}
+{meta: x_source_file theoldgangsgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The old gang's [F]gone 
@@ -57,3 +60,10 @@ I'm the [G7]only one that's [C]left
 And I guess that it's about [F]time 
 I [G7]moved on out [C]myself
 {end_of_verse}
+
+
+
+
+
+
+

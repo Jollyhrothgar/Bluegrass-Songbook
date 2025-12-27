@@ -1,6 +1,9 @@
 {meta: title Thinking Bout You Babe}
 {meta: artist Billy Walker}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file thinkingboutyoubabelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got into a barroom fight
@@ -42,3 +45,9 @@ A thinking bout the other guy
 A thinking bout the other guy
 [D7]Who was welcome at your door
 {end_of_verse}
+
+
+
+
+
+

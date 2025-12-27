@@ -1,6 +1,9 @@
 {meta: title We Made A Mistake}
 {meta: artist Kitty Wells}
 {meta: composer Joel Chunn and Jimmie Lou Lane}
+{meta: x_source classic-country}
+{meta: x_source_file wemadeamistakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We made a mistake dear by [C]playing a cheating [G]game
@@ -36,3 +39,7 @@ It's all my fault she's wearing your [D7]name
 He's [G]taking my place where [C]I should be to[G]day
 We made a mistake dear and [D7]now we have to [G]pay
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'd Rather Die Young}
 {meta: artist Johnny Cash}
 {meta: composer Beasley Smith, Billy Vaughn, Randy Wood}
+{meta: x_source classic-country}
+{meta: x_source_file idratherdieyounglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd rather die young than [F]grow old without [C]you 
@@ -27,3 +30,6 @@ So don't ever leave me [D7]whatever you [G7]do
 To [C]see someone's picture [F]where my picture [C]hung 
 Believe me my darling I'd [G7]rather die [C]young 
 {end_of_verse}
+
+
+

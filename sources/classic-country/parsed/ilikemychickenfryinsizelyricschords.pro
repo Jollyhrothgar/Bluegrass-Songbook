@@ -1,5 +1,8 @@
 {meta: title I Like My Chicken Fryin' Size}
 {meta: artist Merle Travis}
+{meta: x_source classic-country}
+{meta: x_source_file ilikemychickenfryinsizelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I like my chicken [A7]fryin' size [D7]when they’re hangin’ [G7]around my [C]pen
@@ -28,3 +31,6 @@ Young and tender not so [A7]wise like [D7]some old stewing [G7]hen
 [C]Because she's done seen a [F]lot of [D7]ever rooster in the [G7]flock
 So I [F]like my chicken [C]fryin' [D7]size when [G7]I get my skillet [C]hot
 {end_of_verse}
+
+
+

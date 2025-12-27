@@ -1,6 +1,9 @@
 {meta: title He's Standing By}
 {meta: artist Red Sovine}
 {meta: composer Mildred A. Burk, Ross Burk, Red Sovine}
+{meta: x_source classic-country}
+{meta: x_source_file hesstandingbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear a song  although [F]the night is [C]silent 
@@ -33,3 +36,7 @@ He loves me so  I [G7]know He's standing [C]by
 {start_of_verse: Verse 4}
 He loves me so  I [G7]know He's standing [C]by
 {end_of_verse}
+
+
+
+

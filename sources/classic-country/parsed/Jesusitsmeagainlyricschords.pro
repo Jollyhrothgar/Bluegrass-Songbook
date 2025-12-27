@@ -1,6 +1,9 @@
 {meta: title Jesus It's Me Again}
 {meta: artist Charlie Pride}
 {meta: composer Dick Damron}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusitsmeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately Lord [C] I almost feel like [G]dyin'
@@ -40,3 +43,8 @@ Spoken:
 {start_of_verse: Verse 5}
 [C]Yes asking you [G]please again  [D7]reach out your [G]hand
 {end_of_verse}
+
+
+
+
+

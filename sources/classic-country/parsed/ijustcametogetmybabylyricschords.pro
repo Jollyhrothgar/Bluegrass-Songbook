@@ -1,6 +1,9 @@
 {meta: title I Just Came To Get My Baby}
 {meta: artist Faron Young}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcametogetmybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I didn't come in here to cause you no [F]trouble
@@ -29,3 +32,6 @@ And would you believe she can't stand the taste of [G7]beer
 Well I [C]just don't know what's come over my [F]baby
 And I just [G7]came to get my baby out of [C]here
 {end_of_verse}
+
+
+

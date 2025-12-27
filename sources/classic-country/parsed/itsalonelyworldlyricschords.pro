@@ -1,6 +1,9 @@
 {meta: title It's A Lonely World}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb and Redd Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file itsalonelyworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a lonely world when you're all [F]alone
@@ -28,3 +31,5 @@
 [C]It's a lonely world when you're all [F]alone
 [G7]And that's the way my world is since you're [C]gone
 {end_of_verse}
+
+

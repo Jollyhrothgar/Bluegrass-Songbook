@@ -1,6 +1,9 @@
 {meta: title I Still Wish The Very Best For You}
 {meta: artist Anne Murray}
 {meta: composer Brent Titcomb}
+{meta: x_source classic-country}
+{meta: x_source_file istillwishtheverybestforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you know I'm really [C]bad at writing [G]letters
@@ -41,3 +44,8 @@ Baby I want you to know that I still wish the [D7]very best for [G]you
 Cause I still wish the [D7]very best for [C]you
 [G]Cause I still wish the [D7]very best for [G]you [C]  [G]
 {end_of_verse}
+
+
+
+
+

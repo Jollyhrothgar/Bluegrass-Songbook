@@ -1,5 +1,8 @@
 {meta: title I'm Dreaming Of You}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file imdreamingofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Dreaming dreaming [G7]dreaming)
@@ -34,3 +37,7 @@ Please say you'll be [C]mine till the end of [G7]time
 I'm dreaming of [C]you 
 (Dreaming [F]dreaming dreaming of [C]you)
 {end_of_verse}
+
+
+
+

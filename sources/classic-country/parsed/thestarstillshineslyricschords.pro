@@ -1,6 +1,9 @@
 {meta: title The Star Still Shines}
 {meta: artist Sonny James}
 {meta: composer Gloria Shayne and Noel Regney}
+{meta: x_source classic-country}
+{meta: x_source_file thestarstillshineslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]If dark [G]clouds [D7]cover your [G]Christmas sky
@@ -31,3 +34,7 @@ Always [G]believe the [Am]Star [D7]still [G]shines
 {start_of_verse: Verse 5}
 [C]Always [G]believe the [Am]Star [D7]still [G]shines
 {end_of_verse}
+
+
+
+

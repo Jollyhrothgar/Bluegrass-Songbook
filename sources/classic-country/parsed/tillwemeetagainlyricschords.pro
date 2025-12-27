@@ -1,6 +1,9 @@
 {meta: title Till We Meet Again}
 {meta: artist Connie Francis}
 {meta: composer Raymond Egan and Richard Whiting}
+{meta: x_source classic-country}
+{meta: x_source_file tillwemeetagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7](Till we [G7]meet a[C]gain)[G7]
@@ -26,3 +29,6 @@ So [F]wait and pray each [C]night for [Am]me
 So [F]wait and pray each [C]night for [Am]me
 [D7]Till we [G7]meet a[C]gain
 {end_of_verse}
+
+
+

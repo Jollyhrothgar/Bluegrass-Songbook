@@ -1,5 +1,8 @@
 {meta: title Hooked On Music}
 {meta: artist Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file hookedonmusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it was New Years Eve I was 14 at the time
@@ -67,3 +70,14 @@ I been [G7]hooked on music hooked on music from that moment [C]on
 {start_of_verse: Verse 12}
 I been [G7]hooked on music hooked on music from that moment [C]on
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

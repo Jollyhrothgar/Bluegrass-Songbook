@@ -1,6 +1,9 @@
 {meta: title Blue Is Not A Word}
 {meta: artist George Strait}
 {meta: composer Joel Sonier and Judy Ball}
+{meta: x_source classic-country}
+{meta: x_source_file blueisnotawordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've never once in my [Em]life [F]met someone like [Dm]you
@@ -22,3 +25,5 @@ You [C]fill me so [Em]completely [F]through every[Am]thing you [Dm]do
 [C]I'm so glad I've [Em]found you [F]you've made my [Am]dreams come [Dm]true
 [G7]Blue is not a word at all as long as I'm with [C]you
 {end_of_verse}
+
+

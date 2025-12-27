@@ -1,6 +1,9 @@
 {meta: title Stolen Love}
 {meta: artist Charlie Louvin}
 {meta: composer Johnny Harrison, Nell Harrison, Betty Harrison}
+{meta: x_source classic-country}
+{meta: x_source_file stolenlovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You stole his [C]love and left be[G]hind dear
@@ -29,3 +32,6 @@ Stealing leads to a life of [D7]sin
 You [C]stole his love from [G]another
 Your stolen love I [D7]know someday will [G]end
 {end_of_verse}
+
+
+

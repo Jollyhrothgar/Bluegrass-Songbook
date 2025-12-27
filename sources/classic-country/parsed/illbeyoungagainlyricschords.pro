@@ -1,5 +1,8 @@
 {meta: title I’ll Be Young Again}
 {meta: artist Paul Williams and the Victory Trio}
+{meta: x_source classic-country}
+{meta: x_source_file illbeyoungagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This old body is [C]getting tired and [G]feeble
@@ -32,3 +35,7 @@ I’ll be [G]young again [D]when I get over [G]there
 {start_of_verse: Verse 4}
 [C]I’ll be [G]young again [D]when I get over [C]there over [G]there
 {end_of_verse}
+
+
+
+

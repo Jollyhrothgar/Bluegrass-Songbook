@@ -1,6 +1,9 @@
 {meta: title A Beautiful Mistake}
 {meta: artist Eddy Raven}
 {meta: composer Eddy Raven and Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file abeautifulmistakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As a woman [F]you were [G7]warm and full of [F][C]wonder
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [Dm]Oh you were just a [G7]beautiful [C]mistake
 {end_of_verse}
+
+
+
+

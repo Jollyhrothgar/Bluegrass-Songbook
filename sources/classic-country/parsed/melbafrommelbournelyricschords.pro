@@ -1,5 +1,8 @@
 {meta: title Melba From Melbourne}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file melbafrommelbournelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I got a silly notion to go out across the [F]ocean
@@ -42,3 +45,8 @@ Then I left Melba [F]from Melbourne she made my heart [C]yearn
 [F]She wouldn't leave there I couldn't stay [C]there
 So [G7]Melba could never be [C]mine
 {end_of_verse}
+
+
+
+
+

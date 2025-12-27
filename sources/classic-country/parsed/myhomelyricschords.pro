@@ -1,6 +1,9 @@
 {meta: title My Home}
 {meta: artist Heirline}
 {meta: composer Michael Wayne Smith}
+{meta: x_source classic-country}
+{meta: x_source_file myhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 My Home
@@ -55,3 +58,9 @@ My [G]home my home a [D7]place I long to [G]be
 My home my home a [D7]place I long to [C]be
 Well that's my [G]home
 {end_of_verse}
+
+
+
+
+
+

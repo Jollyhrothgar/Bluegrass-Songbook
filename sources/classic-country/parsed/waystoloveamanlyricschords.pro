@@ -1,6 +1,9 @@
 {meta: title Ways To Love A Man}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file waystoloveamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There are so many [C]ways to love a [G]man 
@@ -26,3 +29,5 @@ My [B7]child my home my soul and my [C]mind
 [G]I'll know that I can [C]hold him yes I [C][G]can 
 If I [G]know all the [C]ways to love a [G]man
 {end_of_verse}
+
+

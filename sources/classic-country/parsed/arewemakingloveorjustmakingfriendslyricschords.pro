@@ -1,6 +1,9 @@
 {meta: title Are We Making Love Or Just Making Friends}
 {meta: artist Moe Bandy}
 {meta: composer Steve Collom}
+{meta: x_source classic-country}
+{meta: x_source_file arewemakingloveorjustmakingfriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's not working the way [F]that I planned [G7]it
@@ -33,3 +36,7 @@ Are we making [G7]love or just making [C]friends
 {start_of_verse: Verse 4}
 [F]Are we making [G7]love or just making [C]friends
 {end_of_verse}
+
+
+
+

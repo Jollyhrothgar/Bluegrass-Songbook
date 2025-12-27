@@ -1,6 +1,9 @@
 {meta: title This One's Gonna Hurt You}
 {meta: artist Marty Stuart}
 {meta: composer Marty Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file thisonesgonnahurtyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby close that suitcase let's turn this [C]thing [G]around
@@ -32,3 +35,7 @@ Cause [D7]this one's gonna hurt you for a long long [G]time
 You can walk away from [C]true love [G]leave your feelings [C]all be[G]hind
 Cause [D7]this one's gonna hurt you for a long long [G]time
 {end_of_verse}
+
+
+
+

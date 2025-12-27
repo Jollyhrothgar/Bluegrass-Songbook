@@ -1,6 +1,9 @@
 {meta: title I'll Meet You By The River}
 {meta: artist Chuck Wagon Gang}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file illmeetyoubytheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Over on the bright Elysian [C]shore
@@ -58,3 +61,9 @@ After all the sorrow and the strife
 [F]I'll meet you by the river (meet you by the river)
 [C]Some sweet day (some [G7]happy [C]day)
 {end_of_verse}
+
+
+
+
+
+

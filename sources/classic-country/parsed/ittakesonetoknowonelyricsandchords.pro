@@ -1,6 +1,9 @@
 {meta: title It Takes One To Know One}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Bill Dees}
+{meta: x_source classic-country}
+{meta: x_source_file ittakesonetoknowonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby my baby you accuse me
@@ -43,3 +46,8 @@ And it takes one to know one
 [G]It takes one to know [Em]one
 [C]Yes it takes [D7]one to know one [G]every [G][C]time
 {end_of_verse}
+
+
+
+
+

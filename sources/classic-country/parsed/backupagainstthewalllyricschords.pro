@@ -1,6 +1,9 @@
 {meta: title Back Up Against The Wall}
 {meta: artist Travis Tritt}
 {meta: composer James Cobb and Buddy Buie}
+{meta: x_source classic-country}
+{meta: x_source_file backupagainstthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was dealin' up and down the highway 
@@ -81,3 +84,14 @@ And my [C]back is up against the [G]wall
 Yeah I [D7]gotta run you see I'm under the gun 
 And my [C]back is up against the [G]wall
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

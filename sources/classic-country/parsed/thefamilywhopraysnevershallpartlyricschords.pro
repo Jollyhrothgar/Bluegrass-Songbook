@@ -1,6 +1,9 @@
 {meta: title The Family Who Prays Never Shall Part}
 {meta: artist The Louvin Brothers}
 {meta: composer Ira and Charlie Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file thefamilywhopraysnevershallpartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Family who prays will [C]never be [G]parted
@@ -36,3 +39,7 @@ Filling their hearts with his envy and [D7]hate
 Heading their [G]pathways [C]down to [G]destruction
 Leaving their children like [D7]orphans to [G]stray
 {end_of_verse}
+
+
+
+

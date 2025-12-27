@@ -1,5 +1,8 @@
 {meta: title We Thank Thee}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file wethanktheelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We thank Thee each morning for a [C]newborn [D7]day
@@ -35,3 +38,8 @@ Oh [G]Lord [D7]we thank [G]Thee
 {start_of_verse: Verse 3}
 Oh yes we thank Thee Lord for every flower that blooms
 {end_of_verse}
+
+
+
+
+

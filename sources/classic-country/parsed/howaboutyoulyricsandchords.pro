@@ -1,6 +1,9 @@
 {meta: title How About You}
 {meta: artist Patty Loveless}
 {meta: composer Chris Waters and Chuck Jones}
+{meta: x_source classic-country}
+{meta: x_source_file howaboutyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When it comes to lovin' has it always let you down
@@ -37,3 +40,7 @@ I think you know just what I'm getting [C]at oh yeah you know
 [Am]Ooh[G7] I need [F]somethin' to hold [G7]on to how about [C]you
 [G7]How about [C]you
 {end_of_verse}
+
+
+
+

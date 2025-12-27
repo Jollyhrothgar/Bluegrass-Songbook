@@ -1,6 +1,9 @@
 {meta: title On The Jericho Road}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Don S. McCrossan}
+{meta: x_source classic-country}
+{meta: x_source_file onthejerichoroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As you travel along on the Jericho [D7]Road
@@ -29,3 +32,6 @@
 [C]Each burden you'll bear each sorrow He'll [G]share
 [D7]There's never a care precious Jesus is [G]there
 {end_of_verse}
+
+
+

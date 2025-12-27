@@ -1,6 +1,9 @@
 {meta: title Come Back Darling}
 {meta: artist Lester Flatt and Earl Scruggs}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file comebackdarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight as I sit by my [C]window
@@ -50,3 +53,9 @@ I [G]miss you each day and each [D7]night
 Oh [G]come back to me little [C]darlin’
 [G]Don’t leave me [D7]alone all my [G]life
 {end_of_verse}
+
+
+
+
+
+

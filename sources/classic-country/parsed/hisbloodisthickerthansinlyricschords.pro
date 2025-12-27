@@ -1,5 +1,8 @@
 {meta: title His Blood is Thicker than Sin}
 {meta: artist Lauren Mascitti}
+{meta: x_source classic-country}
+{meta: x_source_file hisbloodisthickerthansinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am unworthy to say I’m His [D7]daughter
@@ -43,3 +46,7 @@ Because Your [D7]blood is [C]thicker than [G]sin [C]  [G]
 Yes a [Am]sinner like me can [C]declare victory 
 Because Your [D7]blood is [C]thicker than [G]sin
 {end_of_verse}
+
+
+
+

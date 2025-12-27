@@ -1,6 +1,9 @@
 {meta: title Different Drum}
 {meta: artist Linda Ronstadt}
 {meta: composer Michael Nesmith}
+{meta: x_source classic-country}
+{meta: x_source_file differentdrumlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You and I [F]travel to the [G7]beat of a [C]different drum
@@ -51,3 +54,10 @@ So [C]goodbye [F]I'll be [G7]leaving I [C]see no sense
 In this [F]crying and [G7]grieving we’ll [C]both live a lot longer
 [F]If you [G7]live without [C]me
 {end_of_verse}
+
+
+
+
+
+
+

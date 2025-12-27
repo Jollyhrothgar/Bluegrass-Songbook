@@ -1,6 +1,9 @@
 {meta: title When Mama Sang}
 {meta: artist George Jones}
 {meta: composer Bob Warren and Danny Walls}
+{meta: x_source classic-country}
+{meta: x_source_file whenmamasanglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mama didn't [C]have special [G]trainin'
@@ -41,3 +44,8 @@ Now in heaven's choir she [D7]has a special [G]place
 {start_of_verse: Verse 5}
 When mama sang the [C]angels stopped to [G]listen
 {end_of_verse}
+
+
+
+
+

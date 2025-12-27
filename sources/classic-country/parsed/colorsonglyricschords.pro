@@ -1,6 +1,9 @@
 {meta: title Color Song}
 {meta: artist Jean Shepard}
 {meta: composer Fred Wise, Dewey Bergman, Milton Leeds}
+{meta: x_source classic-country}
+{meta: x_source_file colorsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]White's for the wedding that [F]I'll never [C]see
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G7]Life lost its [C]color when I [G7]lost my [C]love
 {end_of_verse}
+
+
+
+

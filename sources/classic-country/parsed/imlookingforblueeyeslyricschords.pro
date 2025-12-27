@@ -1,5 +1,8 @@
 {meta: title I'm Looking For Blue Eyes}
 {meta: artist Jessi Colter}
+{meta: x_source classic-country}
+{meta: x_source_file imlookingforblueeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm looking for Blue [A]Eyes [F]has anyone seen [C]him
@@ -25,3 +28,6 @@
 {start_of_verse: Verse 4}
 [A]I'm looking [F]for Blue Eyes has anyone seen [C]him
 {end_of_verse}
+
+
+

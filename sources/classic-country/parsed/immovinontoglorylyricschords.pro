@@ -1,5 +1,8 @@
 {meta: title I'm Movin' On To Glory}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file immovinontoglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a mighty train a comin' you’ll hear it bye and bye
@@ -37,3 +40,7 @@ When those eight wheels drive us ‘cross that bridge horizon up on high
 [G]When your last long journey has ended with the angels you are [C]there
 [G]You'll thank God you have your [D7]ticket and the ticket was a [G]prayer
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If You Love Him Love Him Right}
 {meta: artist Tammy Wynette}
 {meta: composer Carmol Taylor and Quinton Claunch}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoulovehimlovehimrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So many times I've [D7]heard a man's [G]trouble
@@ -32,3 +35,6 @@ If you [G]love him and love him [Am]right
 If you love him and love him [Am]right
 [D7]He'll stay at [G]home[C]  [G]
 {end_of_verse}
+
+
+

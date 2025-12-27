@@ -1,6 +1,9 @@
 {meta: title You And Your Sweet Love}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file youandyoursweetlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wish you only knew all the days [C]I've made it [G]through
@@ -31,3 +34,6 @@ Oh never try to tell me that it [C]wasn't God [G]above
 That sent me you [D7]and your sweet [G]love
 He sent me you and [F]your sweet [G]love
 {end_of_verse}
+
+
+

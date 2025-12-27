@@ -1,5 +1,8 @@
 {meta: title Medals For Mothers}
 {meta: artist Wilburn Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file medalsformotherslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I dreamed mother walked up the heavenly stairs
@@ -28,3 +31,6 @@ For [G7]all of the deeds they have [C]done
 If there's medals for [F]mothers
 [C]Mama you'll [G7]win [C]everyone
 {end_of_verse}
+
+
+

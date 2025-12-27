@@ -1,6 +1,9 @@
 {meta: title A Vision Of Jesus}
 {meta: artist Doyle Lawson}
 {meta: composer Johnnie Masters and Don Shaw}
+{meta: x_source classic-country}
+{meta: x_source_file avisionofJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While kneeling by my [G7]bed one night to say a sinner’s [C]prayer
@@ -35,3 +38,9 @@ To me He said don’t [G7]be alarmed as He was standing [C]there
 {start_of_verse: Verse 5}
 [F]To me He said with [C]outstretched arms my [G7]child I hear your [C]prayer 
 {end_of_verse}
+
+
+
+
+
+

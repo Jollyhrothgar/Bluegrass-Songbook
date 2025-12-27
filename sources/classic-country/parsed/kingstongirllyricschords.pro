@@ -1,6 +1,9 @@
 {meta: title Kingston Girl}
 {meta: artist Marty Robbins}
 {meta: composer Don Winters}
+{meta: x_source classic-country}
+{meta: x_source_file kingstongirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just another [F]night and day 
@@ -41,3 +44,7 @@ And when I see [F]Kingston Bay
 [G7]I'll see my Kingston [C]woman
 [G7]I'll see my Kingston [C]girl[G7]   [C]  [G7]   [C]
 {end_of_verse}
+
+
+
+

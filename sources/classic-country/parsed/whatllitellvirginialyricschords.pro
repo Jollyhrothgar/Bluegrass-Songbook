@@ -1,6 +1,9 @@
 {meta: title What'll I Tell Virginia}
 {meta: artist Johnny Rodriguez}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file whatllitellvirginialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s an awful surprise to [F]open your [C]eyes 
@@ -62,3 +65,11 @@ When I get [G7]home from Mexi[C]co
 Oh [F]what’ll I tell [C]Virginia
 When I get [G7]home from Mexi[C]co
 {end_of_verse}
+
+
+
+
+
+
+
+

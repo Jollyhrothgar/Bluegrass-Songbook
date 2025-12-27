@@ -1,6 +1,9 @@
 {meta: title There He Goes}
 {meta: artist Patsy Cline}
 {meta: composer Eddie Miller, Durwood Haddock, W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file therehegoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There he goes he's walking [F]away
@@ -22,3 +25,5 @@ Oh [F]if I hadn't cheated and I hadn't [C]lied
 I love him [C]still and I guess that it [F]shows
 He's walking [G7]away there he [C]goes
 {end_of_verse}
+
+

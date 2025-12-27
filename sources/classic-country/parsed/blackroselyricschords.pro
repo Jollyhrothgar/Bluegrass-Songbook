@@ -1,6 +1,9 @@
 {meta: title Black Rose}
 {meta: artist Waylon Jennings}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file blackroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Way down in Vir[C]ginia 
@@ -50,3 +53,9 @@ The [G]second time I done it on my [D7]own
 [G]Lord put a handle on a [C]simple handed man
 And [D7]help me leave that black rose [G]alone
 {end_of_verse}
+
+
+
+
+
+

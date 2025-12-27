@@ -1,6 +1,9 @@
 {meta: title Let's Leave The Lights On Tonight}
 {meta: artist Johnny Rodriguez}
 {meta: composer Bob McDill and Rory Bourke}
+{meta: x_source classic-country}
+{meta: x_source_file letsleavethelightsontonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We were two broken hearts in the darkness we both [F]pretend
@@ -57,3 +60,10 @@ We’ll be just you and [F]I
 Somehow it all feels so [G7]ri-ght
 Let’s leave the lights on [C]tonight
 {end_of_verse}
+
+
+
+
+
+
+

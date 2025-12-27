@@ -1,6 +1,9 @@
 {meta: title On The Sunny Side Of The Street}
 {meta: artist Brenda Lee}
 {meta: composer Dorothy Fields and Jimmy McHugh}
+{meta: x_source classic-country}
+{meta: x_source_file onthesunnysideofthestreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Grab your [C]coat and get your [E7]hat
@@ -47,3 +50,9 @@ I used to walk in the shade
 {start_of_verse: Verse 5}
 [Dm]On the [G7]sunny side of the [C]street
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title While You Sleep}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file whileyousleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't say I [E7]love you quite [Am]enough I know[C]
@@ -33,3 +36,7 @@ I pray the [C]Lord our [Dm]hearts to [F]keep [G7]while you [Am]sleep[G7]   [F]
 {start_of_verse: Verse 5}
 I pray the [C]lord our [Dm]hearts to [F]keep [G7]while you [C]sleep
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Born To Run}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file borntorunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I never did crawl and I [C]never did toe that [G]line
@@ -49,3 +52,8 @@
 [C]Just to [G]feel free and [C]be [G]someone
 [C]I was born to [G]be fast I was [D7]born to [G]run
 {end_of_verse}
+
+
+
+
+

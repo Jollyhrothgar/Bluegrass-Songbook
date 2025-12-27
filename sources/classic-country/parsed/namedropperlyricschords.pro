@@ -1,6 +1,9 @@
 {meta: title Name Dropper}
 {meta: artist Jean Shepard}
 {meta: composer Glenn Martin and Jeannie Seely}
+{meta: x_source classic-country}
+{meta: x_source_file namedropperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've never been the [C]kind of girl [G]known for droppin' names
@@ -51,3 +54,9 @@ I'm a gonna be a name dropper [C]name dropper
 I'm a gonna be a [G]name dropper [C]name dropper
 And I [G]hope I never [D7]hear your name no [G]more
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Dissatisfied}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file dissatisfiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Lord I never will forget the day I was [G]born
@@ -36,3 +39,8 @@
 [D7]Till I saw my gal coming Lord I had a lot of [G]fun
 [D7]Now I'm satisfied at last I'm [G]satisfied
 {end_of_verse}
+
+
+
+
+

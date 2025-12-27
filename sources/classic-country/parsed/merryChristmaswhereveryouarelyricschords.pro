@@ -1,6 +1,9 @@
 {meta: title Merry Christmas Wherever You Are}
 {meta: artist George Strait}
 {meta: composer Mack Vickery and Jerry Laseter}
+{meta: x_source classic-country}
+{meta: x_source_file merryChristmaswhereveryouarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had no [G7]reason [C]for shopping this [F]season
@@ -34,3 +37,7 @@ And [F]you'll always [Dm]be in my heart
 {start_of_verse: Verse 5}
 [F]Merry [C]Christmas [G7]wherever you [C]are
 {end_of_verse}
+
+
+
+

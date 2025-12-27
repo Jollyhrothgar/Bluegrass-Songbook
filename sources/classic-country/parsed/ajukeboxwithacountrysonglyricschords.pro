@@ -1,6 +1,9 @@
 {meta: title A Jukebox With a Country Song}
 {meta: artist Doug Stone}
 {meta: composer Gene Nelson and Ronald A. Santaniello}
+{meta: x_source classic-country}
+{meta: x_source_file ajukeboxwithacountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]After three good [G7]years to[C]gether we [F]had our first big [C]fight
@@ -56,3 +59,10 @@ I need a jukebox with a [F]country [C]song
 {start_of_verse: Verse 6}
 I guess I [G7]don't belong without a jukebox and a [F]country [C]song
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Just Steal Away And Pray}
 {meta: artist The Osborne Brothers}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file ijuststealawayandpraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just steal away [D7]somewhere and [G]pray
@@ -33,3 +36,7 @@ And I [G]ask my blessed Lord to lead the [D7]way
 I just [G]steal away I just [C]steal away
 I just [G]steal away some[D7]where and [C]pra[G]y
 {end_of_verse}
+
+
+
+

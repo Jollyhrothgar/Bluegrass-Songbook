@@ -1,6 +1,9 @@
 {meta: title Never No More}
 {meta: artist Patsy Cline}
 {meta: composer Rita Ross, Alan Block and Don Hecht}
+{meta: x_source classic-country}
+{meta: x_source_file nevernomorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Never no more will I be all alone
@@ -41,3 +44,9 @@ Who makes me happy when I'm [C]blue
 {start_of_verse: Verse 7}
 Repeat last verse
 {end_of_verse}
+
+
+
+
+
+

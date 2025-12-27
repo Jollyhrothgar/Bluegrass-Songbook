@@ -1,6 +1,9 @@
 {meta: title Queen Of The House}
 {meta: artist Jody Miller}
 {meta: composer Roger Miller and Mary Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file queenofthehouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Up every [F]day at six  [G7]bacon and [C]eggs to fix
@@ -34,3 +37,6 @@ But some d[C]ays I’m mighty[F] glad we send the kids t[G7]o his mom an[C]d dad
 It’s the day that [F]makes me glad [G7]I’m 
 Queen of the [C]house
 {end_of_verse}
+
+
+

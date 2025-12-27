@@ -1,6 +1,9 @@
 {meta: title The Old Man And His Horn}
 {meta: artist Gene Watson}
 {meta: composer Dallas Harms}
+{meta: x_source classic-country}
+{meta: x_source_file theoldmanandhishornlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The old man [G7]told his [C]story about the [G7]years gone [C]by
@@ -47,3 +50,9 @@ He [F]said goodbye then [C]shuffled [G7]out the [C]door
 {start_of_verse: Verse 6}
 He [F]said goodbye then [C]shuffled [G7]out the [C]door
 {end_of_verse}
+
+
+
+
+
+

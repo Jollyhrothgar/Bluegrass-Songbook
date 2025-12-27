@@ -1,6 +1,9 @@
 {meta: title That New Old Fashioned Love}
 {meta: artist Jimmy Dean}
 {meta: composer Gary Sanford Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file thatnewoldfashionedlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love that [D7]new old fashioned [G7]love you give to [C]me
@@ -36,3 +39,7 @@
 [D7]I need that new old [G7]fashioned love you give to [C]me
 [D7]That new old fashioned [G7]love you give to [C]me
 {end_of_verse}
+
+
+
+

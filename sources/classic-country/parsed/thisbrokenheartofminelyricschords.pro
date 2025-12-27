@@ -1,5 +1,8 @@
 {meta: title This Broken Heart Of Mine}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file thisbrokenheartofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pictures [F]for my souvenirs old love [C]letters stained with tears
@@ -28,3 +31,6 @@ Still you [G7]left me and the truest love [C]behind
 Someone [F]else with many charms took you [C]from my lovin' arms
 But they can't [G7]take you from this broken heart of [C]mine
 {end_of_verse}
+
+
+

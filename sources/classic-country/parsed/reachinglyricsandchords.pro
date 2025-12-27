@@ -1,5 +1,8 @@
 {meta: title Reaching}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file reachinglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh how I'd love to [G7]touch the [C]one I love so [G]much
@@ -28,3 +31,6 @@ I'm jealous but that you'll never [D7]see
 [G]Please tell her [G7]today you're [C]coming home to [G]stay
 I'll wait but I'll keep [D7]reaching [G]desperately
 {end_of_verse}
+
+
+

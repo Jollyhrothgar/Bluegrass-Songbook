@@ -1,6 +1,9 @@
 {meta: title Five Minutes}
 {meta: artist Lorrie Morgan}
 {meta: composer Beth Nielsen Chapman}
+{meta: x_source classic-country}
+{meta: x_source_file fiveminuteslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You look so [Em]disbelieving at my [F]suitcase by the [C]door
@@ -49,3 +52,9 @@
 {start_of_verse: Verse 5}
 [F]You've still got [C]five minutes [G7]to figure it [C]out
 {end_of_verse}
+
+
+
+
+
+

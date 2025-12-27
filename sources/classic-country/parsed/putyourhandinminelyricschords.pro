@@ -1,6 +1,9 @@
 {meta: title Put Your Hand In Mine}
 {meta: artist Tracy Byrd}
 {meta: composer Jimmy Barber and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file putyourhandinminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He sat up on the [G7]bed [F]and he watched me [C]packing
@@ -69,3 +72,11 @@ And put your [G7]hand in [C]mine
 Would you reach out to me [Dm]one more [F]time 
 Put your [G7]hand in [C]mine
 {end_of_verse}
+
+
+
+
+
+
+
+

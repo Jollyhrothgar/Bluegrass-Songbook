@@ -1,6 +1,9 @@
 {meta: title I'll Have a New Body I'll Have a New Life}
 {meta: artist Hank Williams}
 {meta: composer Luther G. Presley}
+{meta: x_source classic-country}
+{meta: x_source_file illhaveanewbodyillhaveanewlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On the resurrection morning when all dead in Christ shall rise
@@ -41,3 +44,9 @@ Oh dear brother are you living for that day when Christ shall come
 {start_of_verse: Verse 2}
 I'll have a new home of glory eternal
 {end_of_verse}
+
+
+
+
+
+

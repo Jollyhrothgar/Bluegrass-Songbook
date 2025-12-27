@@ -1,6 +1,9 @@
 {meta: title Jesus Is Knocking at the Door}
 {meta: artist Lifebreakthrough}
 {meta: composer Hubert Aniban Dapliyan}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusisknockingatthedoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You may be feeling empty
@@ -62,3 +65,11 @@ And let Jesus [C]in
 Would you please [Dm]answer the [G7]call 
 And let Jesus [C]in
 {end_of_verse}
+
+
+
+
+
+
+
+

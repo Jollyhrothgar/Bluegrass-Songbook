@@ -1,6 +1,9 @@
 {meta: title Helping Her Get Over Him}
 {meta: artist Jim Ed Brown}
 {meta: composer Charles Rogers and Jim Ed Brown}
+{meta: x_source classic-country}
+{meta: x_source_file helpinghergetoverhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She was more than any woman I had [C]dreamed of
@@ -29,3 +32,6 @@ That I'm only [D7]helpin' her get over [G]him
 {start_of_verse: Verse 4}
 Yes I'm only [D7]helpin' her get over [G]him
 {end_of_verse}
+
+
+

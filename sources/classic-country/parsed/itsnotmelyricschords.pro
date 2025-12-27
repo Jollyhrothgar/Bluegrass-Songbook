@@ -1,6 +1,9 @@
 {meta: title It's Not Me}
 {meta: artist Stonewall Jackson}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's not me [D7]that you speak to when you're talking in your [G]sleep
@@ -23,3 +26,5 @@ You're in love and [G7]any fool can [C]see
 Your heart is [G]breaking for [D7]someone it's not [G]me
 [C]Your heart is [G]breaking for [D7]someone it's not [G]me
 {end_of_verse}
+
+

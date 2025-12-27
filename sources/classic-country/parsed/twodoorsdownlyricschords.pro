@@ -1,6 +1,9 @@
 {meta: title Two Doors Down}
 {meta: artist Dwight Yoakam}
 {meta: composer Dwight Yoakam and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file twodoorsdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Two doors [G]down there's a [D7]jukebox that [G]plays all night long
@@ -41,3 +44,8 @@ For the [A7]hours I've spent there each [D7]night
 Two doors [G]down I'll be [D7]forgotten [G]but until [C]then
 Two doors [G]down there's a memory that [D7]won't ever [C]end[G]
 {end_of_verse}
+
+
+
+
+

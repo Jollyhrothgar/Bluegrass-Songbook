@@ -1,5 +1,8 @@
 {meta: title My Angel Judy}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file myangeljudylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You came down out of heaven   to make me happy [G7]dear
@@ -28,3 +31,6 @@
 [G7]My arms could never hold another
 [C]Cause my love is only for you
 {end_of_verse}
+
+
+

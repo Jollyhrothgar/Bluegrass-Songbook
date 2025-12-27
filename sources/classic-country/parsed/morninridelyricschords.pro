@@ -1,6 +1,9 @@
 {meta: title Mornin' Ride}
 {meta: artist Lee Greenwood}
 {meta: composer Jeffrey M. Tweel and Steve Bogard}
+{meta: x_source classic-country}
+{meta: x_source_file morninridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a quiet time in the early dawn
@@ -50,3 +53,9 @@ While the world is still brand spankin' new
 Oh I [C]know how beautiful the [G]day will [C]be
 When she [Em]takes a mornin' [D7]ride with [G]me
 {end_of_verse}
+
+
+
+
+
+

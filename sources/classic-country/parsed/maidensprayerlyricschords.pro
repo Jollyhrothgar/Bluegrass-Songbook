@@ -1,6 +1,9 @@
 {meta: title Maiden's Prayer}
 {meta: artist Willie Nelson}
 {meta: composer Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file maidensprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Twilight falls evening shadows [F]find
@@ -25,3 +28,5 @@ Stars on high seemed to know she's [F]there
 In her heart [C]is a song and [F]there it [C]belongs
 Her undying [G7]song of [C]love
 {end_of_verse}
+
+

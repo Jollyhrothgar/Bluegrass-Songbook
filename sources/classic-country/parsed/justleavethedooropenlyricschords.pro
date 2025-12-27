@@ -1,5 +1,8 @@
 {meta: title Just Leave The Door Open}
 {meta: artist Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file justleavethedooropenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You only came [D7]back of force of [G]habit
@@ -30,3 +33,7 @@ That you can [G]hear my [C]footsteps fade [G]away
 {start_of_verse: Verse 5}
 And you can hear my [C]footsteps fade [G]away
 {end_of_verse}
+
+
+
+

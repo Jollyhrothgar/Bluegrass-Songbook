@@ -1,5 +1,8 @@
 {meta: title Guitars Cadillacs}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file guitarscadillacslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Girl you taught me how to hurt real bad 
@@ -43,3 +46,8 @@ It's the only thing that keeps me hanging [G]on
 [D7]It's the only thing that keeps me hanging [G]on
 [D7]It's the only thing that keeps me hanging [G]on
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Running Blind}
 {meta: artist Randy Travis}
 {meta: composer Roger Ferris}
+{meta: x_source classic-country}
+{meta: x_source_file runningblindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At a quick shop somewhere west of [F]Albuquer[C]que
@@ -47,3 +50,9 @@ If you're [G7]only running [C]blind
 Oh their [F]ain't no use in [C]running 
 If you're [G7]only running [C]blind
 {end_of_verse}
+
+
+
+
+
+

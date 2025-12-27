@@ -1,6 +1,9 @@
 {meta: title No Future For Me In Our Past}
 {meta: artist George Jones}
 {meta: composer Leigh Dillard and Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file nofutureformeinourpastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Word is around he walked out on [F]you 
@@ -33,3 +36,7 @@ There's no [C]future for me [G7]in our [C]past
 {start_of_verse: Verse 4}
 [F]There's no [C]future for me [G7]in our [C]past
 {end_of_verse}
+
+
+
+

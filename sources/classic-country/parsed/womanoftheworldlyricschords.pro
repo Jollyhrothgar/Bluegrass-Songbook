@@ -1,6 +1,9 @@
 {meta: title Woman Of The World}
 {meta: artist Loretta Lynn}
 {meta: composer Sharon Higgins}
+{meta: x_source classic-country}
+{meta: x_source_file womanoftheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You came from the city streets to my little country [G7]town
@@ -29,3 +32,6 @@ Woman [C]of the world [G7]leave my world [C]alone
 [C]There's a place I know where you should go for that's where you [F]belong
 Woman [C]of the world [G7]leave my world [C]alone
 {end_of_verse}
+
+
+

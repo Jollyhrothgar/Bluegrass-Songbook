@@ -1,6 +1,9 @@
 {meta: title We Go Together}
 {meta: artist George Jones}
 {meta: composer Norro Wilson, Danny Walls, Sammy Lyons}
+{meta: x_source classic-country}
+{meta: x_source_file wegotogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The places where we used to meet we go [D7]together
@@ -36,3 +39,7 @@
 [C]We go together like the moon and June just like the fork needs the [G]spoon
 [D7]Just like the song that needs the tune we go [G]together
 {end_of_verse}
+
+
+
+

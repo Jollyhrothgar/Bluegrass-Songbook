@@ -1,6 +1,9 @@
 {meta: title No Other Baby}
 {meta: artist Bobby Helms}
 {meta: composer Dick Bishop and Bob Watson}
+{meta: x_source classic-country}
+{meta: x_source_file nootherbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't want no [F]other baby but [C]you
@@ -31,3 +34,7 @@ If you really want me then baby [F]won't you hear my [C]plea
 I don't want no [F]other baby but [C]you
 [G7]Ain't no other baby thrills me like you [C]do
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Neon Rose}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file neonroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's a rose where roses never [Dm]grow
@@ -31,3 +34,6 @@ She's my [Dm]sunshine [G7]lady  [Dm]maybe just a [G7]little bit shady
 [C]Someday I'll take her where real [Dm]roses grow
 But [G7]until then she'll be my precious loving neon [C]rose
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Dear Little Boy Of Mine}
 {meta: artist George Morgan}
 {meta: composer Keirn Brennan and Ernest Ball}
+{meta: x_source classic-country}
+{meta: x_source_file dearlittleboyofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Boy [Em]of [G]mine [Bm]joy of mine
@@ -21,3 +24,5 @@ I'll hear you [G7]say you're [C]home to stay
 [Am]Dear little [D7]boy of [G]mine
 [D7]Dear little boy of [G]mine
 {end_of_verse}
+
+

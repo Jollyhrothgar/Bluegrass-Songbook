@@ -1,6 +1,9 @@
 {meta: title Don't Leave Me Now}
 {meta: artist Elvis Presley}
 {meta: composer Aaron Schroeder and Ben Weisman}
+{meta: x_source classic-country}
+{meta: x_source_file dontleavemenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't leave me now now that [C7]I need [F]you
@@ -22,3 +25,5 @@ Like a book on a shelf
 Come fill these [C]arms that [C7]long to [F]hold you
 Don't close your [G7]eyes to my plea oh don't you leave me [C]now
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Ever Sell Your Saddle}
 {meta: artist Randy Travis}
 {meta: composer Tim Kribble and Brian Whiteside}
+{meta: x_source classic-country}
+{meta: x_source_file donteversellyoursaddlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Daddy [F]should've been a [C]preacher man cause [F]everybody loved to hear him speak
@@ -45,3 +48,9 @@ Don't ever sell your [C]saddle [F]cause [C]life's a [G7]long long [F]ride
 {start_of_verse: Verse 5}
 Don't ever sell your [C]saddle [F]cause [C]life's a [G7]long long [F]ride[C]
 {end_of_verse}
+
+
+
+
+
+

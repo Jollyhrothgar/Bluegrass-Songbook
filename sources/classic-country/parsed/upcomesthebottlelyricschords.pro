@@ -1,5 +1,8 @@
 {meta: title Up Comes The Bottle}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file upcomesthebottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Up comes the bottle and down goes the [G]man 
@@ -34,3 +37,7 @@ I can't help him but I can [C]understand
 When up comes the [D7]bottle 
 And [G]down down [D7]down goes the [G]man
 {end_of_verse}
+
+
+
+

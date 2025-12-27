@@ -1,6 +1,9 @@
 {meta: title I'll Even Love You}
 {meta: artist Statler Brothers}
 {meta: composer Phil Coulter and Bill Martin}
+{meta: x_source classic-country}
+{meta: x_source_file illevenloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you're lying there in bed late at night and all [C]alone
@@ -34,3 +37,7 @@
 [C]I'll even [G]love you  [D7]better than I did [G]then
 [C]I'll even [G]love you  [D7]better than I did [G]then
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Saturday Satan Sunday Saint}
 {meta: artist Ernest Tubb}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file saturdaysatansundaysaintlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Saturday satan Sunday [Am]saint
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 5}
 [F]Come Monday morning and he's back to a life of [C]sin
 {end_of_verse}
+
+
+
+
+
+

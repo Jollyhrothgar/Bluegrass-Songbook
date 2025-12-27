@@ -1,6 +1,9 @@
 {meta: title Now It's Every Night}
 {meta: artist Norma Jean}
 {meta: composer Joe Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file nowitseverynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One night a week out on the town 
@@ -57,3 +60,10 @@ But [F]looks like that it might
 It started out as [C]once a week 
 But [G7]now it's every [C]night
 {end_of_verse}
+
+
+
+
+
+
+

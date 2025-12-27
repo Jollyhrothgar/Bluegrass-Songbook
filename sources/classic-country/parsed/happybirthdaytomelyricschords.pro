@@ -1,6 +1,9 @@
 {meta: title Happy Birthday To Me}
 {meta: artist Hank Locklin}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file happybirthdaytomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today has been my birthday and [C]tonight I should be [G]glad
@@ -29,3 +32,6 @@
 [G]I unwrapped the tiny package [C]that I bought [G]myself
 [D7]Then I sang happy birthday to [G]me
 {end_of_verse}
+
+
+

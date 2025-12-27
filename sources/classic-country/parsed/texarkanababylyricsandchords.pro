@@ -1,6 +1,9 @@
 {meta: title Texarkana Baby}
 {meta: artist Eddy Arnold}
 {meta: composer Cottonseed Clark and Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file texarkanababylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's my Texarkana baby do I love her lowdy law
@@ -37,3 +40,6 @@ She's got [F]a perfect figure that'll stop you where you [C]are
 Why [F]every time I look at her I think of my [C]guitar
 [G7]She's my Texarkana [C]baby
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Forget To Thank The Lord}
 {meta: artist John Anderson}
 {meta: composer John Anderson and John Rich}
+{meta: x_source classic-country}
+{meta: x_source_file dontforgettothankthelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see sad sad face in [A#7]faraway places [F]scattered all around the [C]world
@@ -74,3 +77,14 @@ And at the end of the [Am]day  [G7]don’t forget to thank the [C]Lord
 {start_of_verse: Verse 7}
 At the end of the [Am]day don’t [G7]forget to thank the [C]Lord
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

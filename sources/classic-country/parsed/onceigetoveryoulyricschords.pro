@@ -1,6 +1,9 @@
 {meta: title Once I Get Over You}
 {meta: artist Ronnie Milsap}
 {meta: composer John Betis and Archie Jordan}
+{meta: x_source classic-country}
+{meta: x_source_file onceigetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My friends call day after [F]day
@@ -40,3 +43,8 @@ Is [G7]something [F]I wish I [C]knew
 {start_of_verse: Verse 6}
 [F]Once I get [G7]over [C]you
 {end_of_verse}
+
+
+
+
+

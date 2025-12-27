@@ -1,5 +1,8 @@
 {meta: title Shame On The Rain}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file shameontherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Shame on the rain [C]for making me twice as [G]blue
@@ -22,3 +25,5 @@ I have my [C]share of sorrow and [G]pain
 Look what a [D7]day it is shame on the [G]rain
 Look what a [D7]day it is shame on the [G]rain
 {end_of_verse}
+
+

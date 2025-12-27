@@ -1,5 +1,8 @@
 {meta: title Candy In The Window}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file candyinthewindowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't kiss my lips and say goodbye it [F]makes me want you more
@@ -32,3 +35,7 @@ Take care sweetheart and keep in touch [F]if you can spare the time
 {start_of_verse: Verse 5}
 [G7]Sweet candy in the window of my [C]mind
 {end_of_verse}
+
+
+
+

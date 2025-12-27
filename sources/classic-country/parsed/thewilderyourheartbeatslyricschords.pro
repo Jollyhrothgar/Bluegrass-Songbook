@@ -1,6 +1,9 @@
 {meta: title The Wilder Your Heart Beats}
 {meta: artist Jim Reeves}
 {meta: composer John Meredith}
+{meta: x_source classic-country}
+{meta: x_source_file thewilderyourheartbeatslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I found out since we've been datin'
@@ -69,3 +72,10 @@ Each time I kiss and hold you tight
 The whole world says [G7]now that's alright
 The wilder your heart beats the sweeter you [C]love
 {end_of_verse}
+
+
+
+
+
+
+

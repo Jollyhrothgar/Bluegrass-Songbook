@@ -1,6 +1,9 @@
 {meta: title Lonesome Hearted Blues}
 {meta: artist Reno Brothers}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomeheartedblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blu--[F]es [G]lonesome hearted blues
@@ -50,3 +53,9 @@ I'm [C]fixin' to leave this old [G]town
 Blu--[F]es [G]lonesome hearted blues
 And I [D7]ain't gonna let 'em get me [G]down
 {end_of_verse}
+
+
+
+
+
+

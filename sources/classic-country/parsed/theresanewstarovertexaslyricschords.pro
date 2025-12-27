@@ -1,6 +1,9 @@
 {meta: title There’s A New Star Over Texas}
 {meta: artist Vince Gill}
 {meta: composer Leslie Satcher and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file theresanewstarovertexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a blue moon that's dancing across Texas
@@ -30,3 +33,6 @@ There's a [C]new star that's shining across Texas
 Only [G7]Heaven could take away from [C]me
 Only [G7]Heaven could take away from [C]me
 {end_of_verse}
+
+
+

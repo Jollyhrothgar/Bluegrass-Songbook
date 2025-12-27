@@ -1,6 +1,9 @@
 {meta: title Half Of This Half Of That}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and Don Sessions}
+{meta: x_source classic-country}
+{meta: x_source_file halfofthishalfofthatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't leave me half of [G]this and [D7]half of that and all [G]alone
@@ -26,3 +29,6 @@ Like our [A7]house is half paid for we’ve paid half a [D7]loan
 Oh [G]please let me talk to you don't hang up the [C]phone
 Don't leave me half of [G]this and [D7]half of that and all [G][C]a-lone
 {end_of_verse}
+
+
+

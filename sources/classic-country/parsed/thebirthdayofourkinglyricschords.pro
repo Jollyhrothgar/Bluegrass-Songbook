@@ -1,6 +1,9 @@
 {meta: title The Birthday Of Our King}
 {meta: artist Larry Sparks}
 {meta: composer Bill Castle}
+{meta: x_source classic-country}
+{meta: x_source_file thebirthdayofourkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On this wondrous holy night
@@ -43,3 +46,8 @@ So [G7]let the hallelujahs ring
 [F]Lift your voices now and sing
 [G7]It is the first day of our [C]King
 {end_of_verse}
+
+
+
+
+

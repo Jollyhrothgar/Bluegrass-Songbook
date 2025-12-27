@@ -1,5 +1,8 @@
 {meta: title Forever Young}
 {meta: artist Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file foreveryounglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]May God bless and keep you always
@@ -45,3 +48,8 @@ May your heart always be joyful
 [G7]Forever young forever [Am]young
 [C]May you [G7]stay   forever [C]young
 {end_of_verse}
+
+
+
+
+

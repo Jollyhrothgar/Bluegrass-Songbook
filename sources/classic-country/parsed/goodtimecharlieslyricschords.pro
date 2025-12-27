@@ -1,6 +1,9 @@
 {meta: title Good Time Charlie's}
 {meta: artist George Strait}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file goodtimecharlieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Oh I know a [C]place called Good Time Charley's
@@ -41,3 +44,8 @@ Old Good Time [C]Charley's [G7]anytime you [C]can
 [G7]You're always [C]welcome don't forget to drop [F]in
 Old Good Time [C]Charley's [G7]anytime you [C]can
 {end_of_verse}
+
+
+
+
+

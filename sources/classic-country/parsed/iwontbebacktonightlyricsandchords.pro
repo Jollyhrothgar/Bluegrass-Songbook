@@ -1,6 +1,9 @@
 {meta: title I Won't Be Back Tonight}
 {meta: artist Bob Wills}
 {meta: composer Artie Glenn}
+{meta: x_source classic-country}
+{meta: x_source_file iwontbebacktonightlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I won’t be back tonight or [F]ever
@@ -29,3 +32,6 @@
 [C]And I won’t be back tonight or [F]ever
 [G7]When I leave this time it’s from now [C]on
 {end_of_verse}
+
+
+

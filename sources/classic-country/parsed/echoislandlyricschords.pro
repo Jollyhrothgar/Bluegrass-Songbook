@@ -1,6 +1,9 @@
 {meta: title Echo Island}
 {meta: artist Marty Robbins}
 {meta: composer Charley Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file echoislandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love is lost on [C]Echo [G]Island
@@ -29,3 +32,6 @@
 [C]On the Island there's an [G]echo
 [D7]Softly saying I love [G]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Just Don’t Like Loving You}
 {meta: artist The Malpass Brothers}
 {meta: composer Christopher Malpass}
+{meta: x_source classic-country}
+{meta: x_source_file ijustdontlikelovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walked into the living room 
@@ -50,3 +53,9 @@ If [D7]I don't pack my bags and go [G]tonight
 {start_of_verse: Verse 6}
 I just don't like [D7]loving you any[G]more
 {end_of_verse}
+
+
+
+
+
+

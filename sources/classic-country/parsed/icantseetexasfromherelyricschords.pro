@@ -1,5 +1,8 @@
 {meta: title I Can't See Texas From Here}
 {meta: artist George Strait}
+{meta: x_source classic-country}
+{meta: x_source_file icantseetexasfromherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I come and go as I please
@@ -39,3 +42,7 @@ I'm [F]tryin' not to show this frown
 Cause [C]I can't see [G7]Texas [C]I can't see [A7]Texas
 [D7]I can't see [G7]Texas from [C]here
 {end_of_verse}
+
+
+
+

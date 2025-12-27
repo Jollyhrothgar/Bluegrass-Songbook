@@ -1,5 +1,8 @@
 {meta: title A Full Time Job}
 {meta: artist Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file afulltimejoblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want a full-time job making love to you 
@@ -35,3 +38,7 @@ A [G]nickel or [D7]a [G]dime
 As long as you would [C]let me 
 Get in a little bit of [D7]overtime 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Can I Come Home To You}
 {meta: artist Bill Anderson}
 {meta: composer Jan Crutchfield and Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file canicomehometoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey if I'll [Em]be a good boy
@@ -26,3 +29,5 @@ If I cross [Em]my heart [F]and I hope to die
 [C]Then will you forgive me I'm [F]begging you to[C]  [G7]   [C]
 Can I come [G7]home to [F]you[C]
 {end_of_verse}
+
+

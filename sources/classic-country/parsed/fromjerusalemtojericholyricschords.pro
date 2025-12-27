@@ -1,6 +1,9 @@
 {meta: title From Jerusalem To Jericho}
 {meta: artist Hank Williams Sr.}
 {meta: composer Anna Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file fromjerusalemtojericholyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From Jerusalem to Jericho along that lonely road
@@ -57,3 +60,10 @@ Tell me who was this neighbor kind and [G7]true
 From Jerusalem to Jericho we're traveling [C]everyday
 And [F]many are the [C]fallen ones that [G7]lie along the [C]way
 {end_of_verse}
+
+
+
+
+
+
+

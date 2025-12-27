@@ -1,6 +1,9 @@
 {meta: title It Wouldn't Kill Me}
 {meta: artist Ricky Van Shelton}
 {meta: composer Larry Boone, Paul Nelson, Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file itwouldntkillmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night after [G7]dinner as I [F]read the evening [C]paper
@@ -47,3 +50,8 @@ How she makes my [Em]life so [F]right
 It wouldn't [C]kill me 
 [Dm]Like it [F]would if she [G7]ever said [C]goodbye
 {end_of_verse}
+
+
+
+
+

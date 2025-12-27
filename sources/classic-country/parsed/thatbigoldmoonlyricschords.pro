@@ -1,5 +1,8 @@
 {meta: title That Big Old Moon}
 {meta: artist Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file thatbigoldmoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That [F]big old [G7]moon up there holds nothing for [C]me
@@ -30,3 +33,8 @@ I don't see that [G7]man no more I can only see [C]you
 [C]That [F]big old [G7]moon up there holds nothing for [C]me
 [F]But a lot of [G7]lonely nights and the blue memo[C]ries
 {end_of_verse}
+
+
+
+
+

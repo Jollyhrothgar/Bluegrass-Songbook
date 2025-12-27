@@ -1,6 +1,9 @@
 {meta: title I Can't Tell My Heart}
 {meta: artist Faron Young}
 {meta: composer Marvin McCullough}
+{meta: x_source classic-country}
+{meta: x_source_file icanttellmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't tell my heart that you don't love [G7]me 
@@ -29,3 +32,6 @@ But [D7]instead of this I pray I'll win your [G7]love
 [C]So I can't tell my heart that you don't love [G7]me
 I'll just fool my heart the way that you fooled [C]me
 {end_of_verse}
+
+
+

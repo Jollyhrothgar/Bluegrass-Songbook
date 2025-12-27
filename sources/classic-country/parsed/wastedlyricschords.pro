@@ -1,6 +1,9 @@
 {meta: title Wasted}
 {meta: artist Wanda Jackson}
 {meta: composer Wanda Jackson and Tommy Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file wastedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wasted lonely [F]nights was[G7]ted times I致e c[C]ried
@@ -30,3 +33,6 @@ Was[C]ted years and [F]years [G7]wasted tears and [C]tears
 Wasted love that was to [F]be now 
 [G7]All I have is wasted memo[C]ries 
 {end_of_verse}
+
+
+

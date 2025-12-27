@@ -1,6 +1,9 @@
 {meta: title Burn Me Down}
 {meta: artist Marty Stuart}
 {meta: composer Don Sessions and Eddie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file burnmedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your lips hold a wild [Am]desire
@@ -36,3 +39,7 @@
 [F]I go crazy when your around
 [C]So touch me turn me on [G7]and burn me [C]down
 {end_of_verse}
+
+
+
+

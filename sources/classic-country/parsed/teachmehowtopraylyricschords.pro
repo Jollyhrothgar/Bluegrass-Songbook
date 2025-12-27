@@ -1,6 +1,9 @@
 {meta: title Teach Me How To Pray}
 {meta: artist Jim Reeves}
 {meta: composer Kathryn Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file teachmehowtopraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([F]Daddy my [C]dad[Am]dy [D7]teach me [G7]how to [C]pray)
@@ -31,3 +34,7 @@ For daddy his [G7]daddy had forgotten how to [C]pray
 {start_of_verse: Verse 5}
 [F](Daddy my [C]dad[Am]dy [D7]teach me [G7]how to [C]pray)
 {end_of_verse}
+
+
+
+

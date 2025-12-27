@@ -1,6 +1,9 @@
 {meta: title I'm Alone}
 {meta: artist Jean Shepard}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file imalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Staring through my window pane
@@ -47,3 +50,9 @@ A drop of rain clings to the glass
 {start_of_verse: Verse 6}
 [G7]Yes I'm [C]alone
 {end_of_verse}
+
+
+
+
+
+

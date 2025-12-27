@@ -1,5 +1,8 @@
 {meta: title Keep Me From Cryin' Today}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file keepmefromcryintodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hold me and [Em]love me [C]and tell m[Em]e
@@ -26,3 +29,6 @@ And [G7]keep me from cryin' [C]today
 Let's [F]save our goodbyes for to[C]morrow[Am]
 And [G7]keep me from cryin' to[C]day
 {end_of_verse}
+
+
+

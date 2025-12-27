@@ -1,5 +1,8 @@
 {meta: title Sweet Baby Mine}
 {meta: artist Isla Grant}
+{meta: x_source classic-country}
+{meta: x_source_file sweetbabyminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a sweet memo[C]ry  that I keep in my [G]mind
@@ -47,3 +50,9 @@ Still in my [D7]heart you'll always be sweet baby [G]mine [G7]
 {start_of_verse: Verse 4}
 [G]Still in my [D7]heart you'll always be sweet baby [G]mine
 {end_of_verse}
+
+
+
+
+
+

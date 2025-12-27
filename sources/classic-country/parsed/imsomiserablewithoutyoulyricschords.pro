@@ -1,6 +1,9 @@
 {meta: title I'm So Miserable Without You}
 {meta: artist Billy Walker}
 {meta: composer Eugene Strasser and George Winters}
+{meta: x_source classic-country}
+{meta: x_source_file imsomiserablewithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I thought that I could trust you I would find you let me [G7]down
@@ -36,3 +39,7 @@ No [G7]moments with small hope of love was [C]found
 I keep trying [F]to forget you and to bring the curtain [C]down
 I’m so [G7]miserable without you it’s like having you [C]around
 {end_of_verse}
+
+
+
+

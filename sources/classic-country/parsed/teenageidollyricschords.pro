@@ -1,6 +1,9 @@
 {meta: title Teenage Idol}
 {meta: artist Ricky Nelson}
 {meta: composer Jack Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file teenageidollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Some people [C]call me a teenage [Am]idol
@@ -36,3 +39,7 @@ I [D7]guess I'll always be just a rolling [G7]stone
 [C]If I find fortune and fame and lots of people know my [F]name
 [D7]That won't mean a thing if I'm all [G7]alone
 {end_of_verse}
+
+
+
+

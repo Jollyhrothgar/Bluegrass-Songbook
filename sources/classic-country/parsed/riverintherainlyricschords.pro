@@ -1,5 +1,8 @@
 {meta: title River In The Rain}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file riverintherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]River in the [F]rain 
@@ -34,3 +37,7 @@ River I've never seen the [C]sea
 {start_of_verse: Verse 2}
 But sometimes in a time of [F]trouble 
 {end_of_verse}
+
+
+
+

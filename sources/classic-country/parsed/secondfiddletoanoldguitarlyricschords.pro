@@ -1,6 +1,9 @@
 {meta: title Second Fiddle To An Old Guitar}
 {meta: artist Jean Shepard}
 {meta: composer Betty Amos and Guy Willis}
+{meta: x_source classic-country}
+{meta: x_source_file secondfiddletoanoldguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once we were so happy you [F]were my very [C]own
@@ -34,3 +37,7 @@ And I'm tired of playing [C]second fiddle to [G7]an old [C]guitar
 I've talked and preached and fought with you and [F]tried most [C]everything
 If you keep a picking an old guitar [G7]then I'm a gonna [C]sing
 {end_of_verse}
+
+
+
+

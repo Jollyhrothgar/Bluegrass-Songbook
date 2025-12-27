@@ -1,5 +1,8 @@
 {meta: title Don't Cry For Me When I'm Gone}
 {meta: artist Becky Hobbs}
+{meta: x_source classic-country}
+{meta: x_source_file dontcryformewhenimgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't cry for me when I'm gone
@@ -40,3 +43,8 @@ Oh don't [G]cry for [D7]me when I'm [G]gone
 [C]So don't [G]cry for [D7]me when I'm [C]gone
 When I'm [G]gone
 {end_of_verse}
+
+
+
+
+

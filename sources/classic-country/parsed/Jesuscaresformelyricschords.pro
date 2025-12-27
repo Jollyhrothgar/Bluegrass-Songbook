@@ -1,6 +1,9 @@
 {meta: title Jesus Cares For Me}
 {meta: artist Wanda Jackson}
 {meta: composer Aaron Brown and Larry Lee}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuscaresformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was living down in the valley [F]couldn't handle my own [C]affairs
@@ -35,3 +38,7 @@ That's how I know that [C]Jesus [G7]cares for [C]me
 {start_of_verse: Verse 4}
 That's [F]how I know that [C]Jesus [G7]cares for [C]me
 {end_of_verse}
+
+
+
+

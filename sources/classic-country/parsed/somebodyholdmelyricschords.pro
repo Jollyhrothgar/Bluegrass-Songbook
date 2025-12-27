@@ -1,6 +1,9 @@
 {meta: title Somebody Hold Me}
 {meta: artist Narvel Felts}
 {meta: composer Sue Richards and Ava Aldridge}
+{meta: x_source classic-country}
+{meta: x_source_file somebodyholdmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here she comes and just look at the way she's [F]smiling
@@ -28,3 +31,6 @@ I've come to say goodbye
 But I wish it was me [F]standing by her side
 Somebody [C]hold me [G7]until she passes [F]b--[C]y
 {end_of_verse}
+
+
+

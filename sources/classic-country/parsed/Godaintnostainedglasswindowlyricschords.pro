@@ -1,6 +1,9 @@
 {meta: title God Ain't No Stained Glass Window}
 {meta: artist Johnny Cash}
 {meta: composer Mark Germino}
+{meta: x_source classic-country}
+{meta: x_source_file Godaintnostainedglasswindowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]There's so [G7]much I don't [C]know
@@ -44,3 +47,8 @@ I [C]know that God ain't no [G7]stained glass [F]window
 {start_of_verse: Verse 5}
 No He [F]never [G7]keeps His window [C]closed
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Teenage Wedding}
 {meta: artist Mel Tillis}
 {meta: composer Wayne P. Walker and Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file teenageweddinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rosalie's gonna get married [C]papa's gonna be sur[G]prised
@@ -18,3 +21,4 @@
 To the [D7]rhythm of shuffling [G]beat
 Repeat 
 {end_of_verse}
+

@@ -1,6 +1,9 @@
 {meta: title My Real World of Make Believe}
 {meta: artist Doyle Lawson}
 {meta: composer Buddy Cannon and Michael Wayne Smotherman}
+{meta: x_source classic-country}
+{meta: x_source_file myrealworldofmakebelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love the way the sunrise [C7]catches in your [F]eyes
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [C]In my [G7]real world of make [C][F]believe
 {end_of_verse}
+
+
+
+

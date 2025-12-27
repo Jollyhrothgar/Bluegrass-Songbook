@@ -1,6 +1,9 @@
 {meta: title I Didn't Jump The Fence}
 {meta: artist Cal Smith}
 {meta: composer Gene Crysler}
+{meta: x_source classic-country}
+{meta: x_source_file ididntjumpthefencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mr. angry neighbor yes I [G7]know just how you [C]feel
@@ -29,3 +32,6 @@
 [C]Sure I've held your darling but Mister where's your [F]sense
 [C]She's the one [G7]got lonely  I didn't jump the [C]fence
 {end_of_verse}
+
+
+

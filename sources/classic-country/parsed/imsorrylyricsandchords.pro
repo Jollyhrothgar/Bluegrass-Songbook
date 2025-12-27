@@ -1,5 +1,8 @@
 {meta: title I'm Sorry}
 {meta: artist John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file imsorrylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's cold here in the city it [Am]always seems that way
@@ -35,3 +38,7 @@ I'm [C]sorry for the [D7]chains I put on [G]you
 But [C]more than anything [D7]else I'm sorry for my[Em]self[D7]   [C]  [Am]
 For [D7]living without [G]you 
 {end_of_verse}
+
+
+
+

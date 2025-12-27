@@ -1,6 +1,9 @@
 {meta: title When You're Lonely}
 {meta: artist Ricky Skaggs}
 {meta: composer Lester Flatt and Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file whenyourelonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I'm thinking of you little darling
@@ -43,3 +46,8 @@ And have no one to care for [D7]you
 [G]Remember the heart you have broken
 And the [D7]one that has loved you so [G]true
 {end_of_verse}
+
+
+
+
+

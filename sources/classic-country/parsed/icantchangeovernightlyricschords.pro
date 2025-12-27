@@ -1,6 +1,9 @@
 {meta: title I Can't Change Overnight}
 {meta: artist George Jones}
 {meta: composer George Jones and Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file icantchangeovernightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't [C]change over[D7]night from loving [G]you
@@ -33,3 +36,7 @@ Where my [D7]feet touch the ground and that's [G]where I'll call home
 Though you say to [C]forget the love that [G]we once knew
 I can't [C]change over[D7]night from loving [C]y-o[G]u
 {end_of_verse}
+
+
+
+

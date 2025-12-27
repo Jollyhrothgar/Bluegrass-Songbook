@@ -1,6 +1,9 @@
 {meta: title All Day Sucker}
 {meta: artist Lynn Anderson}
 {meta: composer Liz Anderson and Casey Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file alldaysuckerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got up at six this morning and I polished up the sun
@@ -47,3 +50,9 @@ I'm an all day sucker when it comes to [G]you
 {start_of_verse: Verse 5}
 I'm an [D7]all day sucker when it comes to [G]you
 {end_of_verse}
+
+
+
+
+
+

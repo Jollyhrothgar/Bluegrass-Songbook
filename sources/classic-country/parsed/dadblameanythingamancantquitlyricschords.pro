@@ -1,5 +1,8 @@
 {meta: title Dad Blame Anything A Man Can't Quit}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file dadblameanythingamancantquitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a two pack a day man smoke like a fiend
@@ -39,3 +42,10 @@ I'm a brand new newly-wed married again
 {start_of_verse: Verse 1}
 [C]I'm a two pack a day man smoke like a fiend
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That's What Sells The Wine}
 {meta: artist Hank Thompson}
 {meta: composer Marshall T. Massy and Gabe Tucker}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatsellsthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She sits alone at a [D7]table  stares into a glass of [G]wine
@@ -34,3 +37,7 @@ But that’s what plays the [D7]jukebox  that’s what sells the [G]wine
 {start_of_verse: Verse 4}
 And that’s what plays the [D7]jukebox  that’s what sells the [G]wine
 {end_of_verse}
+
+
+
+

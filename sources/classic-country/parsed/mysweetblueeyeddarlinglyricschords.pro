@@ -1,6 +1,9 @@
 {meta: title My Sweet Blue Eyed Darling}
 {meta: artist The Lonesome River Band}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file mysweetblueeyeddarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're my sweet blue-eyed darling
@@ -43,3 +46,8 @@ And today I need an answer
 [C]All I ask of you my [G]darling
 [C]Is to love [D7]me good and be [G]true
 {end_of_verse}
+
+
+
+
+

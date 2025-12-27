@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Love You Too}
 {meta: artist Buddy Holly}
 {meta: composer Joe Mauldin, Norman Petty, Niki Sullivan}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnaloveyoutoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -64,3 +67,11 @@ Cause I'm [C]gonna [D7]love you [G]too
 [C]I'm gonna do my best to hook you
 [A7]After all that's said and [D7]done
 {end_of_verse}
+
+
+
+
+
+
+
+

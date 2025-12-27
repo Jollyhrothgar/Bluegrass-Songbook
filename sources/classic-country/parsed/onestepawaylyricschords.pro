@@ -1,5 +1,8 @@
 {meta: title One Step Away}
 {meta: artist Jeannie Seely}
+{meta: x_source classic-country}
+{meta: x_source_file onestepawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm just [C]one tear away from [D7]crying
@@ -38,3 +41,8 @@ And [G7]one step away from coming [C]home
 {start_of_verse: Verse 6}
 I'm just [G7]one step away from coming [C]home
 {end_of_verse}
+
+
+
+
+

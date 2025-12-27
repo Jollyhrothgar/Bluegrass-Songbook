@@ -1,5 +1,8 @@
 {meta: title Everybody In The Whole World Holding Hands}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file everybodyinthewholeworldholdinghandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wish every boy and every [C]girl could [D7]feel the arms of [G]love
@@ -26,3 +29,6 @@
 [C]With everybody in [D7]the whole world holding [G]hands
 [C]Oh how green will grow the [G]grass
 {end_of_verse}
+
+
+

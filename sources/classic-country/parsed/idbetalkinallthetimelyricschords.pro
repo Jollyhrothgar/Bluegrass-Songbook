@@ -1,6 +1,9 @@
 {meta: title I'd Be Talkin' All The Time}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Larry Kingston and Chuck Howard}
+{meta: x_source classic-country}
+{meta: x_source_file idbetalkinallthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I talked about the [C]good times 
@@ -43,3 +46,9 @@ I'd be [D7]talkin' (talkin') talkin' all the [G]time
 {start_of_verse: Verse 5}
 Honey I'd be [D7]talkin' (talkin') talkin' all the [G]time
 {end_of_verse}
+
+
+
+
+
+

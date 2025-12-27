@@ -1,6 +1,9 @@
 {meta: title The Man Who Shot Liberty Valance}
 {meta: artist Gene Pitney}
 {meta: composer Burt F. Bacharach and Hal David}
+{meta: x_source classic-country}
+{meta: x_source_file themanwhoshotlibertyvalancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When Liberty [Am]Valance rode to [F]town
@@ -60,3 +63,8 @@
 [C]The man [Em]who shot [Am]Liberty [Em]Valance he [Em][Am]shot [Am]Liberty [Em]Valance
 [F]He was the bravest of them [C]all
 {end_of_verse}
+
+
+
+
+

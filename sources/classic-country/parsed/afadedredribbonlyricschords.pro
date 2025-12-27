@@ -1,6 +1,9 @@
 {meta: title A Faded Red Ribbon}
 {meta: artist Lester Flatt and Earl Scruggs}
 {meta: composer Dennis Bassham}
+{meta: x_source classic-country}
+{meta: x_source_file afadedredribbonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A lock of your hair and a faded red ribbon
@@ -27,3 +30,6 @@ Will [C]make you [G7]unhappy for the rest of your [C]life
 Listen here boys if you have a sweetheart
 Show her you [G7]love her and make her your [C]wife
 {end_of_verse}
+
+
+

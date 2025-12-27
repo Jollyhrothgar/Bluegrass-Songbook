@@ -1,6 +1,9 @@
 {meta: title I Passed By Your Window}
 {meta: artist George Morgan}
 {meta: composer Jack Lawrence and Paul Weston}
+{meta: x_source classic-country}
+{meta: x_source_file ipassedbyyourwindowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I passed by your window and what did I see
@@ -36,3 +39,7 @@ To [G7]see you kiss would hurt like [C]sin
 I'll walk in the shadows [F]down memory lane
 But I [G7]won't pass your window [C]again
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title His True Love Said Goodbye}
 {meta: artist Johnny Tillotson}
+{meta: x_source classic-country}
+{meta: x_source_file histruelovesaidgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw a [G7]little [C]sparrow
@@ -29,3 +32,6 @@ Don't [F]leave me like the [C]sparrow[F]
 His [C]true love [F]said good[C]bye
 His true love [F]said good[C]bye
 {end_of_verse}
+
+
+

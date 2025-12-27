@@ -1,6 +1,9 @@
 {meta: title I Guess I'm Getting Over You}
 {meta: artist Hank Thompson}
 {meta: composer Al Blasingame and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file iguessimgettingoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess I'm getting over you [F]cause less and less I [C]cry
@@ -36,3 +39,7 @@ I [G7]guess I'm getting over [C]you
 Because my heart is healing [F]now
 I [G7]guess I’m getting over [C]you
 {end_of_verse}
+
+
+
+

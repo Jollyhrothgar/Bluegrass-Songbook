@@ -1,6 +1,9 @@
 {meta: title Treat Yourself Right}
 {meta: artist Vernon Oxford}
 {meta: composer Harlan Howard and Don Harris}
+{meta: x_source classic-country}
+{meta: x_source_file treatyourselfrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now if you’ve got a heartache and it’s beyond control
@@ -43,3 +46,8 @@ Every time a train rolls out another train rolls in
 Treat yourself [G7]right (treat yourself right)
 Get loaded [C]tonight Lord
 {end_of_verse}
+
+
+
+
+

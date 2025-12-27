@@ -1,5 +1,8 @@
 {meta: title Walls Can Fall}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file wallscanfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I once stood [F]in the darkness [C]I [F]couldn't see a [C]light
@@ -32,3 +35,7 @@ You can [C]build 'em [F]strong and [C]tall but [G7]walls can [C]fall
 {start_of_verse: Verse 4}
 You can build 'em [F]strong and [C]tall but [G7]walls can [C]fall
 {end_of_verse}
+
+
+
+

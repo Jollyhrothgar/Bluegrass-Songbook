@@ -1,6 +1,9 @@
 {meta: title Taos New Mexico}
 {meta: artist Waylon Jennings}
 {meta: composer Bob Ferguson}
+{meta: x_source classic-country}
+{meta: x_source_file taosnewmexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To Taos  Pueblo  out in New [G7]Mexico
@@ -54,3 +57,12 @@ There's a place you really ought to [C]go
 There's a legend that it's true [G7]I know 
 In Taos New [C]Mexico
 {end_of_verse}
+
+
+
+
+
+
+
+
+

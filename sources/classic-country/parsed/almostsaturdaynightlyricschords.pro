@@ -1,6 +1,9 @@
 {meta: title Almost Saturday Night}
 {meta: artist Ricky Nelson}
 {meta: composer John C. Fogerty}
+{meta: x_source classic-country}
+{meta: x_source_file almostsaturdaynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Outside my [F]window [C]I can hear the [Am]radio 
@@ -35,3 +38,8 @@ Let her [F]steal my heart [C]away and you [G7]know I'm goin'
 When you [C]hear that loco[Am]motion getting ready to [Em]ride
 Cause it's [G7]almost Saturday [C]night
 {end_of_verse}
+
+
+
+
+

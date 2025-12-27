@@ -1,5 +1,8 @@
 {meta: title Timber I’m Falling}
 {meta: artist Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file timberimfallinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Timber I'm falling true love is calling
@@ -21,3 +24,5 @@ If they will give me their [A7]daughter's [D7]hand
 [G]Well you've got the honey I've got the money 
 Two dollars cash and [D7]the preacher [G]man
 {end_of_verse}
+
+

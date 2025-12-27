@@ -1,6 +1,9 @@
 {meta: title But For Love Lyrics Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Terry Cashman, Gene Pistilli, T.P. West}
+{meta: x_source classic-country}
+{meta: x_source_file butforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So it's raining [F]again  [G7]and the wind's up in a [C]roar
@@ -29,3 +32,6 @@
 [F]And my [G7]heart cries to me  but for love I'd be [C]gone
 [G7]But for love I'd be [C]gone
 {end_of_verse}
+
+
+

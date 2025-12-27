@@ -1,6 +1,9 @@
 {meta: title Wouldn't That Be Something}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard and Freddy Powers}
+{meta: x_source classic-country}
+{meta: x_source_file wouldntthatbesomethinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wouldn't that be [D7]something
@@ -55,3 +58,10 @@ Wouldn't that be [D7]something wouldn't that be [G]something
 Wouldn't that be [D7]something 
 Now wouldn't that be [G]something
 {end_of_verse}
+
+
+
+
+
+
+

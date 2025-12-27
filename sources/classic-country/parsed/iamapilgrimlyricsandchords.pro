@@ -1,6 +1,9 @@
 {meta: title I Am A Pilgrim}
 {meta: artist Slim Whitman}
 {meta: composer Merle Travis}
+{meta: x_source classic-country}
+{meta: x_source_file iamapilgrimlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m a [D7]pilgrim and I’m a [G]stranger
@@ -47,3 +50,9 @@ I can tarry I can tarry but a [G]night
 {start_of_verse: Verse 5}
 I can [D7]tarry I can tarry but a [G]night
 {end_of_verse}
+
+
+
+
+
+

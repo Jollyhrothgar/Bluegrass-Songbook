@@ -1,6 +1,9 @@
 {meta: title I Just Thought I'd Call To Say I Love You}
 {meta: artist Slim Whitman}
 {meta: composer Dave Burgess and Biff Collie}
+{meta: x_source classic-country}
+{meta: x_source_file ijustthoughtidcalltosayiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I left this morning [G7]you were sleeping
@@ -38,3 +41,7 @@ I had to [C]tell you [G7]one more [C]time
 Yes I just thought I’d call to say I [F]love you
 I had to [C]tell you [G7]one more [C]time
 {end_of_verse}
+
+
+
+

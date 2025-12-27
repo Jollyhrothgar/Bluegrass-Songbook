@@ -1,6 +1,9 @@
 {meta: title Wild Horses}
 {meta: artist Garth Brooks}
 {meta: composer Bill Shore and Bud Lee}
+{meta: x_source classic-country}
+{meta: x_source_file wildhorseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]From a [C]phone booth in Cheyenne 
@@ -33,3 +36,6 @@ Wild [F]horses just stay [Em]wild
 And her [F]heart is all I'll [Fm]break
 [C]Wild horses keep [Am]dragging [G7]me a[C]way 
 {end_of_verse}
+
+
+

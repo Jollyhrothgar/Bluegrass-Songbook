@@ -1,6 +1,9 @@
 {meta: title Sleep}
 {meta: artist Porter Wagoner}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file sleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sleep [C]sweet and [G]deep
@@ -33,3 +36,7 @@ Before the eternal [C]sadness moved [D7]in
 Let me rest and dream [G][D7]awhile
 Let me rest and dream [G][D7]awhile
 {end_of_verse}
+
+
+
+

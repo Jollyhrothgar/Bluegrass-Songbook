@@ -1,6 +1,9 @@
 {meta: title These Lonely Hands Of Mine}
 {meta: artist Mel Tillis}
 {meta: composer Lamar Morris and Charles Norrell}
+{meta: x_source classic-country}
+{meta: x_source_file theselonelyhandsofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Any girl who hangs out in a [F]honky [C]tonk
@@ -33,3 +36,7 @@ Cause she's [F]holding these [G7]lonely hands of [C]mine
 {start_of_verse: Verse 4}
 [F]Holding these [G7]lonely hands of [C]mine
 {end_of_verse}
+
+
+
+

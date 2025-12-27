@@ -1,6 +1,9 @@
 {meta: title A Thing Called Saddness}
 {meta: artist Ray Price}
 {meta: composer Chuck Howard}
+{meta: x_source classic-country}
+{meta: x_source_file athingcalledsadnesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been here since you've been gone
@@ -38,3 +41,9 @@ It follows me all over town
 [C7]A thing called [F]sadness not much of a [C]friend
 [F]When you [G7]walked out   it walked [C]in
 {end_of_verse}
+
+
+
+
+
+

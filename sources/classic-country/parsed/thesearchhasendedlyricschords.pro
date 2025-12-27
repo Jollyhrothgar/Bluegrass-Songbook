@@ -1,6 +1,9 @@
 {meta: title The Search Has Ended Lyrics Chords}
 {meta: artist Jim Reeves}
 {meta: composer Ray Baker}
+{meta: x_source classic-country}
+{meta: x_source_file thesearchhasendedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've searched the wide world [D7]over
@@ -35,3 +38,7 @@
 {start_of_verse: Verse 5}
 [G7]The search is [C]ended
 {end_of_verse}
+
+
+
+

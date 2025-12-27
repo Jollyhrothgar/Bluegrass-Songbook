@@ -1,6 +1,9 @@
 {meta: title Give Me Heaven}
 {meta: artist Jimmy Newman}
 {meta: composer Randy Lee}
+{meta: x_source classic-country}
+{meta: x_source_file givemeheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Treat me mean and treat me bad 
@@ -43,3 +46,8 @@ But don't [F]ever say goodbye
 Oh don't [C]forget 
 To give me [G7]heaven once in [C]awhile
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Moanin'}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file moaninlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Moanin' my life [Em]slowly [Bm]away
@@ -42,3 +45,8 @@ Keeps me [A7]moanin' [D7]for [G]you
 [G]Since I found your [Bm]letter baby [C]sayin' so [G]long
 I've been [A7]moanin' [D7]for [G]you
 {end_of_verse}
+
+
+
+
+

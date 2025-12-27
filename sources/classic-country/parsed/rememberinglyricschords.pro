@@ -1,6 +1,9 @@
 {meta: title Remembering}
 {meta: artist Charlie Walker}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file rememberinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Re[F]membering rememberin’ alone and so [C]blue
@@ -29,3 +32,6 @@ But [F]my foolish achin’ heart keeps [G7]rememberin’ you
 Re[F]memberin’ rememberin’ and wondering if [C]you
 Are [G7]lonesome and blue [F]rememberin’ [C]too
 {end_of_verse}
+
+
+

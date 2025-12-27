@@ -1,6 +1,9 @@
 {meta: title They'd Have To Carry Me Away}
 {meta: artist Buck Owens}
 {meta: composer Dennis Knutson, A.L. "Doodle" Owens}
+{meta: x_source classic-country}
+{meta: x_source_file theydhavetocarrymeawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro: 
@@ -42,3 +45,8 @@ The men in white would come tonight  [G7]they’d have to carry me [C]away[Am]  
 {start_of_verse: Verse 5}
 The men in white would come to[G7]night  they’d have to carry me [C]away[Am]    [C]
 {end_of_verse}
+
+
+
+
+

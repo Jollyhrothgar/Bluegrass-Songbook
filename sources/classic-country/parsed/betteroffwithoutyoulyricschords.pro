@@ -1,6 +1,9 @@
 {meta: title Better Off Without You}
 {meta: artist Emmylou Harris}
 {meta: composer Marshall Chapman, Dennis Walker, Fontaine Brown}
+{meta: x_source classic-country}
+{meta: x_source_file betteroffwithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Room 16 the Palms [F]Motel
@@ -53,3 +56,9 @@
 [F]Better off without [C]you
 [G7]Better off without you in my [C]life
 {end_of_verse}
+
+
+
+
+
+

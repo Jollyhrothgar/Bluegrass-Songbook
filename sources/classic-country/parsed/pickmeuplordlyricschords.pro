@@ -1,6 +1,9 @@
 {meta: title Pick Me Up Lord}
 {meta: artist Wanda Jackson}
 {meta: composer Don McHan}
+{meta: x_source classic-country}
+{meta: x_source_file pickmeuplordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pick me up Lord wash the [D7]dirt off my face
@@ -36,3 +39,7 @@ And [D7]Lord You're the [G7]only one who [C]cares
 Pick me up Lord [D7]set me straight again
 When [G7]I start to falter let me [F]hold to Your [C]hand
 {end_of_verse}
+
+
+
+

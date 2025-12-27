@@ -1,5 +1,8 @@
 {meta: title Words Of Love}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file wordsoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hold me close and  [D7]tell me how you [G]feel
@@ -26,3 +29,6 @@ The [D7]words I want to [G]hear
 [D7]Mm mm [G]mmm  [D7]mm
 [G]Mm  [D7]mm  [G]mm 
 {end_of_verse}
+
+
+

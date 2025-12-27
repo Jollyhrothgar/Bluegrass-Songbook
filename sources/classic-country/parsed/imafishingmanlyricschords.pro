@@ -1,5 +1,8 @@
 {meta: title I'm A Fishing Man}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file imafishingmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With the flash of a spoon and a river runt wiggle
@@ -75,3 +78,15 @@ Well over on the lake in a shady little nook
 [F]But I’m a fishing man out on the [C]lake
 [F]All you need is a line and [G7]a pole that’ll never [C]break
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title He Taught Me To Yodel}
 {meta: artist Margo Smith}
 {meta: composer Tom Emerson, Paul Roberts, Esther Van Sciver}
+{meta: x_source classic-country}
+{meta: x_source_file hetaughtmetoyodellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I went across to Switzerland 
@@ -61,3 +64,14 @@ If you listen close [D7]to me
 This is how to yodel [C]yodel-oh-ee-dee
 [G][D7]Diddly-odel-oh-ee-dee-yodel-oh-dee
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

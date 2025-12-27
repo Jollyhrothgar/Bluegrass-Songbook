@@ -1,6 +1,9 @@
 {meta: title How's The Weather In Tennessee}
 {meta: artist Eddy Arnold}
 {meta: composer Jim Weatherly and John Durrill}
+{meta: x_source classic-country}
+{meta: x_source_file howstheweatherintennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How's the weather back in [C]Tennessee
@@ -36,3 +39,7 @@
 [E7]Well does it ever warm your [D7]memories
 [C]So how's the weather back in [G]Tennessee
 {end_of_verse}
+
+
+
+

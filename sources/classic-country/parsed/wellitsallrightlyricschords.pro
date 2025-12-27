@@ -1,6 +1,9 @@
 {meta: title Well It's All Right}
 {meta: artist Connie Smith}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file wellitsallrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's all right it's all right
@@ -57,3 +60,10 @@ Long as I've got my Lord beside me well it's all [G7]right
 Long as I've [C]got His hand to hold long as [F]He's a watching o'er my [C]soul
 Long as everything's in His control well [G7]it's all [C]right
 {end_of_verse}
+
+
+
+
+
+
+

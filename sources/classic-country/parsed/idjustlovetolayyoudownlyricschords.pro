@@ -1,6 +1,9 @@
 {meta: title I'd Just Love To Lay You Down}
 {meta: artist Conway Twitty}
 {meta: composer Johnny Mac Rae}
+{meta: x_source classic-country}
+{meta: x_source_file idjustlovetolayyoudownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a lot of ways of saying 
@@ -116,3 +119,27 @@ Just having you around
 Oh Darling how I'd
 [G7]Love to lay ya [C]down
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

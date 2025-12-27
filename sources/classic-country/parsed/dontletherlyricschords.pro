@@ -1,6 +1,9 @@
 {meta: title Don't Let Her}
 {meta: artist Carl Smith}
 {meta: composer Max Powell, Eddie Crandell, Jo Armstrong}
+{meta: x_source classic-country}
+{meta: x_source_file dontletherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lips don't speak another word eyes don't even look at [C]her
@@ -31,3 +34,6 @@
 [C]Arms will let you reach for her then push you [G]away
 [D7]Heart she'll only torture you by teasing us this [G]way
 {end_of_verse}
+
+
+

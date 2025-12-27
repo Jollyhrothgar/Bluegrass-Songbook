@@ -1,6 +1,9 @@
 {meta: title Stoned Again}
 {meta: artist Norma Jean}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file stonedagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Momma he came home [C]stoned again last [F]night
@@ -32,3 +35,7 @@ When they [Dm]hear me say that [G7]man is stoned [C]again
 [G7]Stoned again it's the shame the shape he's in
 Momma momma that man is stoned [C]again
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Heart To Heart}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley and Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file hearttoheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heart to heart [D7]we'll hold [G]together 
@@ -30,3 +33,6 @@ Oh the [Em]words that we have [G]spoken
 Will be a [C]promise never [G]broken
 Heart to heart hand in [D7]hand with [G]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Border Of The Blues}
 {meta: artist Hank Locklin}
 {meta: composer Lawton Williams and Frankie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file borderoftheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I stopped into our old hang out
@@ -32,3 +35,6 @@ My heart was on the border of the [G]blues
 {start_of_verse: Verse 3}
 [D7]My heart was on the border of the [G]blues
 {end_of_verse}
+
+
+

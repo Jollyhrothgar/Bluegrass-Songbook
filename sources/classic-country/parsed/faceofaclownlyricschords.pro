@@ -1,6 +1,9 @@
 {meta: title Face Of A Clown}
 {meta: artist Ferlin Husky}
 {meta: composer Carolyn Penick}
+{meta: x_source classic-country}
+{meta: x_source_file faceofaclownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's hard for me to smile I feel like crying [F]yet I always manage to [C]grin
@@ -18,3 +21,4 @@ You [F]won't have a pleasure of [C]know-[Am]ing
 The [C]hurt behind the [G7]face of a [C]clown
 The hurt behind the [G7]face of a [C]clown
 {end_of_verse}
+

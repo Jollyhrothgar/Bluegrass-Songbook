@@ -1,6 +1,9 @@
 {meta: title A Memory That’s All You’ll Ever Be To Me}
 {meta: artist Ernest Tubb}
 {meta: composer Norman Owens and Lance Guynes}
+{meta: x_source classic-country}
+{meta: x_source_file amemorythatsallyoulleverbetomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re the shadow that haunts me every [F]moment
@@ -22,3 +25,5 @@ I’m a prisoner to a memo[G7]ry
 And I [F]know oh yes I know our love has [C]ended
 A memory that’s all you’ll [G7]ever be to [C]me
 {end_of_verse}
+
+

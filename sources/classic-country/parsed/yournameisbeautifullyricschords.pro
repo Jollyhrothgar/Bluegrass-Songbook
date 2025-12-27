@@ -1,5 +1,8 @@
 {meta: title Your Name is Beautiful}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file yournameisbeautifullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your name is beautiful  an angel's name by far 
@@ -24,3 +27,6 @@ And shout it over  [A7]the rooftops for all the world to [D7]hear
 [G]Your name is beautiful  you make it sound divine
 Life will be [D7]beautiful  when your name is [G]mine
 {end_of_verse}
+
+
+

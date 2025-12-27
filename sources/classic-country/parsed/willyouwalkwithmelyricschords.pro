@@ -1,6 +1,9 @@
 {meta: title Will You Walk With Me}
 {meta: artist Mary Duff}
 {meta: composer Isla Grant}
+{meta: x_source classic-country}
+{meta: x_source_file willyouwalkwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Will you walk with me
@@ -58,3 +61,10 @@ Will you [C]walk with me give me hope once again
 When my [F]eyes grow dim will you let me see 
 Dear [C]Lord will you [G7]walk with [C]me
 {end_of_verse}
+
+
+
+
+
+
+

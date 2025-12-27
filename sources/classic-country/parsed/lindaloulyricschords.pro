@@ -1,5 +1,8 @@
 {meta: title Linda Lou}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file lindaloulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Linda Lou  honest true
@@ -42,3 +45,9 @@ To [A7]be with you when shadows steal and know well never [D7]part
 Linda Lou  honest [G]true
 I’m in [A7]love with you [D7]alone sweet Linda [G]Lou
 {end_of_verse}
+
+
+
+
+
+

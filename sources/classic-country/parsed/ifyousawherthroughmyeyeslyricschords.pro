@@ -1,5 +1,8 @@
 {meta: title If You Saw Her Through My Eyes}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file ifyousawherthroughmyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now you may see her cheeks to red her lips a burning [G7]flame
@@ -26,3 +29,6 @@
 [G7]But if you knew what she’s been through and all because of me
 [C]And if you saw her through my eyes you'd see her differently
 {end_of_verse}
+
+
+

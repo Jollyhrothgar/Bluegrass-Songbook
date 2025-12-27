@@ -1,6 +1,9 @@
 {meta: title I’m Not Through Loving You Yet}
 {meta: artist Conway Twitty}
 {meta: composer Conway Twitty and L.E. White}
+{meta: x_source classic-country}
+{meta: x_source_file imnotthroughlovingyouyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You came to me  and you threw me  with a simple [C]goodbye
@@ -22,3 +25,5 @@ To make the plans  that we made come [D7]true
 Now [G]you are tired  of trying  and soon I'll [C]regret
 That I couldn’t [G]hold you  I’m not through [D7]loving you [G]yet
 {end_of_verse}
+
+

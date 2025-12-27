@@ -1,6 +1,9 @@
 {meta: title A Few More Years}
 {meta: artist White River Bluegrass}
 {meta: composer Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file afewmoreyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A few more years shall [G7]roll
@@ -36,3 +39,7 @@
 [F]Wash me in Thy precious blood
 [C]And take my sins [G7]all [C]away
 {end_of_verse}
+
+
+
+

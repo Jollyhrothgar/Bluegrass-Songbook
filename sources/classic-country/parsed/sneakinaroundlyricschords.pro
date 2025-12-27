@@ -1,6 +1,9 @@
 {meta: title Sneakin' Around}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file sneakinaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Saturday [F]evenin' your [C]honey and [F]you
@@ -50,3 +53,9 @@ Ain't [F]no good can [C]come from your [G7]sneakin' [C]around
 You [C]build it all [G7]up and you [F]tear it all [C]down
 Ain't [F]no good can [C]come from your [G7]sneakin' [C]around
 {end_of_verse}
+
+
+
+
+
+

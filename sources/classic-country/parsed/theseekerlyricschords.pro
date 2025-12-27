@@ -1,5 +1,8 @@
 {meta: title The Seeker}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file theseekerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am a seeker a poor sinful creature 
@@ -43,3 +46,11 @@ So let its water wash my sins away
 Cause I am a seeker you are a keeper
 You [C]are the [G]leader won't you [D7]show me the [G]way
 {end_of_verse}
+
+
+
+
+
+
+
+

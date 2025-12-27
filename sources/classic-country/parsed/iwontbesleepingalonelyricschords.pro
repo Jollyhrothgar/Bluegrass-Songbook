@@ -1,6 +1,9 @@
 {meta: title I Won't Be Sleeping Alone}
 {meta: artist Gene Watson}
 {meta: composer Charles Stewart and Jerry Abbott}
+{meta: x_source classic-country}
+{meta: x_source_file iwontbesleepingalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I believe that today [G7]is a new [C]day
@@ -23,3 +26,5 @@ I'll have more [D7]than her memory holding me [G7]tight
 [F]I won't be [G7]sleeping [C]alone
 [F]I won't be [G7]sleeping [C]alone
 {end_of_verse}
+
+

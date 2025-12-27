@@ -1,6 +1,9 @@
 {meta: title My Little Red Wagon}
 {meta: artist Hank Thompson}
 {meta: composer Rex Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file mylittleredwagonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Won't you [A7]ride in my Little Red [D7]Wagon
@@ -29,3 +32,6 @@ Then we'll [A7]coast down the hill you and [D7]me
 Won't you [A7]ride in my Little Red [D7]Wagon
 For [G7]you are my sweetheart to [C]be
 {end_of_verse}
+
+
+

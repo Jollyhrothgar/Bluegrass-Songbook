@@ -1,6 +1,9 @@
 {meta: title Hangin' In And Hangin' On}
 {meta: artist David Ball}
 {meta: composer Gary Nicholson, Terry McBride,}
+{meta: x_source classic-country}
+{meta: x_source_file hangininandhanginonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hangin’ in and hangin’ [F]on
@@ -47,3 +50,8 @@ With some faith and some [G7]trust
 There's still a future for [F]us
 Hangin’ [G7]in and hangin’ [C]on
 {end_of_verse}
+
+
+
+
+

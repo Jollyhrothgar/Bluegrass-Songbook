@@ -1,6 +1,9 @@
 {meta: title Daddy When Is Mommy Coming Home}
 {meta: artist Ernest Tubb}
 {meta: composer Troy L. Martin and Ernest Martin}
+{meta: x_source classic-country}
+{meta: x_source_file daddywhenismommycominghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They were separated one [F]year ago that [C]day
@@ -36,3 +39,7 @@
 [C]I wonder if she knows that we're so all [D7]alone
 [G7]Daddy when is mommy coming [C]home
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Man And Wife Time}
 {meta: artist Jim Ed Brown}
 {meta: composer Buzz Rabin and Dave Pittman}
+{meta: x_source classic-country}
+{meta: x_source_file manandwifetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another day is over hard work and play comes to an [D7]end
@@ -30,3 +33,6 @@ Reassuring telling me time has handled with [F]care what we share
 And [C]heaven can't offer more than [D7]what I find at [F]man and [C]wife time
 [F]Man and [C]wife time [F]man and wife [C]time
 {end_of_verse}
+
+
+

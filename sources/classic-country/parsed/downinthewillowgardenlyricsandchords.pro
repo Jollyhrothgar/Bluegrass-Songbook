@@ -1,6 +1,9 @@
 {meta: title Down In The Willow Garden}
 {meta: artist The Everly Brothers}
 {meta: composer Charlie Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file downinthewillowgardenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down in the [C]willow [G]gar[Em]den where [G]me and my love did [Em]meet
@@ -22,3 +25,5 @@ My father [C]sits at his [G]cabin [Em]door [G]wiping his tear dimmed [Em]eyes
 My [Em]race is run be[G]neath the [Em]sun the sca[G]ffold now waits for [Em]me
 For [G]I did [C]murder that [G]dear little [Em]girl whose [G]name was [D7]Rose Conne[Em]lly
 {end_of_verse}
+
+

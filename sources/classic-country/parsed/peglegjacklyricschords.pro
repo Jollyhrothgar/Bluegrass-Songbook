@@ -1,6 +1,9 @@
 {meta: title Peg Leg Jack}
 {meta: artist Tex Morton}
 {meta: composer Carson Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file peglegjacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ol' Peg Leg Jack went out one night to get a little [F]gin
@@ -81,3 +84,13 @@ He grabbed him a ship and he [D7]sailed from [G7]shore
 [C]Sailed away just as fast as [F]sin
 And [C]that was the last that [G7]they seen of [C]him
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

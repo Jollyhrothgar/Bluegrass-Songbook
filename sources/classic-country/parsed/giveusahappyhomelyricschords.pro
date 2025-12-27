@@ -1,6 +1,9 @@
 {meta: title Give Us A Happy Home}
 {meta: artist Ricky Skaggs}
 {meta: composer Wayland Patton and Michael White}
+{meta: x_source classic-country}
+{meta: x_source_file giveusahappyhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's been wounded already in the [F]struggle of [G7]life
@@ -57,3 +60,10 @@
 [F]Put mommy [C]and daddy back together [D7]again and give us a [G7]happy [Am]home
 [D7]Please give [G7]us a [Em][Am]happy [C][G7][D7]home
 {end_of_verse}
+
+
+
+
+
+
+

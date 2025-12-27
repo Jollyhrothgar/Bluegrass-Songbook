@@ -1,6 +1,9 @@
 {meta: title You're Playing Hard To Forget}
 {meta: artist Eddy Raven}
 {meta: composer Elroy Kahanek and Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file youreplayinghardtoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You moved out last Monday [Dm]morning
@@ -26,3 +29,6 @@ Cause [F]you're playing [G7]hard to for[C]get
 {start_of_verse: Verse 4}
 [F]You're playing [G7]hard to for[C]get
 {end_of_verse}
+
+
+

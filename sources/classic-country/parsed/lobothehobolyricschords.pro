@@ -1,5 +1,8 @@
 {meta: title Lobo The Hobo}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file lobothehobolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Lobo the Hobo you ought to hear him play
@@ -39,3 +42,8 @@ I [D7]ain’t never coming back but then again I [G]might
 {start_of_verse: Verse 6}
 [D7]I’ll be picking the blues till the freight train’s outta [G]sight
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Everything She Touches Gets The Blues}
 {meta: artist Porter Wagoner}
 {meta: composer Whitney Bower and Eugene Kinsey}
+{meta: x_source classic-country}
+{meta: x_source_file everythingshetouchesgetstheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My b-aby [F]left me this [C]morning
@@ -27,3 +30,6 @@
 Tag:
 [G7]Everything she touches is the [C]blues
 {end_of_verse}
+
+
+

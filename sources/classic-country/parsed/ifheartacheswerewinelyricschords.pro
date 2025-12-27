@@ -1,6 +1,9 @@
 {meta: title If Heartaches Were Wine}
 {meta: artist Stonewall Jackson}
 {meta: composer Kent Westberry and Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file ifheartacheswerewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If hurt was a tavern [C7]then I'd have a [F]home
@@ -23,3 +26,5 @@ I'd [D7]always be too drunk to know that [G7]our love is over
 If [G7]heartaches were wine I'd be drunk all the [C]time
 If [G7]heartaches were wine I'd be drunk all the [C]time
 {end_of_verse}
+
+

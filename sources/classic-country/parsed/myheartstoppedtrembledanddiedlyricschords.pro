@@ -1,5 +1,8 @@
 {meta: title My Heart Stopped Trembled And Died}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file myheartstoppedtrembledanddiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came [F]back to tell you I'm [C]sorry
@@ -28,3 +31,6 @@ And ask you if you would be my [G7]bride
 Then I [F]saw the rings on your [C]finger
 My heart stopped [G7]trembled and it [C]died
 {end_of_verse}
+
+
+

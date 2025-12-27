@@ -1,6 +1,9 @@
 {meta: title Twelve Bar Blues}
 {meta: artist John Anderson}
 {meta: composer Mac McAnally}
+{meta: x_source classic-country}
+{meta: x_source_file twelvebarblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm lookin' for my woman 
@@ -39,3 +42,6 @@ And [C]I've got the [F]twelve [G7]bar [C]blues
 Since she was [G7]down a& Club 13 Lord 
 And [C]I've got the [F]twelve [G7]bar [C]blues
 {end_of_verse}
+
+
+

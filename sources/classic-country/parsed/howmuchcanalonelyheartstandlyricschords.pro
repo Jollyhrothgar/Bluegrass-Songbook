@@ -1,6 +1,9 @@
 {meta: title How Much Can A Lonely Heart Stand}
 {meta: artist Skeeter Davis}
 {meta: composer Sandra Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file howmuchcanalonelyheartstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Just how much can a lonely heart [C]stand
@@ -30,3 +33,7 @@ Just how [F]much can a lonely heart [C]stand
 {start_of_verse: Verse 5}
 Just how [F]much can a lonely heart [C]stand
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Keep On Loving You}
 {meta: artist Ray Price}
 {meta: composer Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file illkeeponlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If the world keeps on turning 
@@ -45,3 +48,8 @@ I will always be [C]faithful
 And I'm sure that [D7]you will too
 [G7]And I'll keep of loving [C]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Mr. and Mrs. Snowman}
 {meta: artist Hank Thompson}
 {meta: composer Lyle Gaston and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file mrandmrssnowmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mr. and [D7]Mrs. [G]Snowman [C]out on my front [G]lawn
@@ -32,3 +35,6 @@ We’ll [D7]be back together when the snowflakes fall
 [C]I’m so glad to [G]see you there [D7]together on Christmas [G]night
 [C]Mr. and Mrs. [G]Snowman [D7]together on Christmas [G]night
 {end_of_verse}
+
+
+

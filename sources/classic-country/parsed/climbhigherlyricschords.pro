@@ -1,6 +1,9 @@
 {meta: title Climb Higher}
 {meta: artist Gene Watson}
 {meta: composer Bobbie Bost}
+{meta: x_source classic-country}
+{meta: x_source_file climbhigherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been low  [G7]and I've been high
@@ -46,3 +49,9 @@ Follow [C]me where [G7]tears are wiped [C]away
 {start_of_verse: Verse 6}
 [F]Follow [C]me where [G7]tears are wiped [C]away
 {end_of_verse}
+
+
+
+
+
+

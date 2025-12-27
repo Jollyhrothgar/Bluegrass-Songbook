@@ -1,6 +1,9 @@
 {meta: title I Won't Mention it Again}
 {meta: artist Ray Price}
 {meta: composer Cam Mullins}
+{meta: x_source classic-country}
+{meta: x_source_file iwontmentionitagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I know you're [G]tired  of being all [F]I ever [C][G7]wanted
@@ -22,3 +25,5 @@ In my [Am]heart the leaves are [D7]falling  love is [G]cold
 [D7]And everything [G]that once was warm [F]and new is [G7]gone [C]now
 Leaving [Am]noth-ing [D7]but this [Am]hun-ger [D7]in my [G]soul
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I Walk Alone}
 {meta: artist Marty Robbins}
 {meta: composer Herbert W. Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file iwalkalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walk alone  where once we [F]wandered
@@ -29,3 +32,6 @@ I know that I'm your very [G7]own
 Till you return  [C]I'll stay the same [F]dear
 I'll still be [C]true  and [G7]walk [C]alone
 {end_of_verse}
+
+
+

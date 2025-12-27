@@ -1,6 +1,9 @@
 {meta: title It's Wrong To Love You But I Do}
 {meta: artist Cowboy Copas}
 {meta: composer Lloyd Copas and Jean Branch}
+{meta: x_source classic-country}
+{meta: x_source_file itswrongtoloveyoubutidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm sure it isn't right dear I feel [F]a sense of [C]shame
@@ -29,3 +32,6 @@
 [C7]But how can I hide [F]what I feel [D7]inside
 [G7]I know it's wrong to love you but I [C]do
 {end_of_verse}
+
+
+

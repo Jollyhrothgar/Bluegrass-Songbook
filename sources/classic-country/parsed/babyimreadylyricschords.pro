@@ -1,6 +1,9 @@
 {meta: title Baby I'm Ready}
 {meta: artist Ricky Van Shelton}
 {meta: composer Floyd Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file babyimreadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well tonight's my night to really howl
@@ -57,3 +60,10 @@ Than [D7]bacon and eggs at the Moonlight Diner
 So [D7]let's go tearin' it upside down
 Well if [G]you're waitin' on me [D7]baby I'm [G]ready
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Yoyos Bozos Bimbos And Heroes}
 {meta: artist Waylon Jennings}
 {meta: composer Roger Murrah and Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file yoyosbozosbimbosandheroeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]In a [C]world full of [G7]sadness and [C]laughter [G7]
@@ -45,3 +48,9 @@ The [G7]difference between [F]yoyos [G7]bozos and [F]bimbos and [C]heroes[G7]   
 {start_of_verse: Verse 5}
 The difference between [F]yoyos [G7]bozos and [F]bimbos and [C]heroes [G7]   [C]
 {end_of_verse}
+
+
+
+
+
+

@@ -1,4 +1,7 @@
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file thistrainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well this train don't [G7]carry no liars  this [C]train
@@ -47,3 +50,8 @@ This train is bound for glory  this [G7]train
 [F]Nobody rides it but the [G7]righteous and the [C]holy
 This train is [G7]bound for glory  this [C]train
 {end_of_verse}
+
+
+
+
+

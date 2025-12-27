@@ -1,6 +1,9 @@
 {meta: title Lonesome Letter Blues}
 {meta: artist Rex Allen}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomeletterblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]L O N E [F]S O M E got the [C]lonesome lonesome letter [G7]blues
@@ -37,3 +40,9 @@ Got the [C]lonesome lonesome [G7]letter [C]blues
 {start_of_verse: Verse 7}
 I’ve [G7]got the lonesome [F]lonesome [G7]letter [C]blues
 {end_of_verse}
+
+
+
+
+
+

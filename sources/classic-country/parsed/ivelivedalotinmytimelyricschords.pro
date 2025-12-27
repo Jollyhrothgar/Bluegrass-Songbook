@@ -1,6 +1,9 @@
 {meta: title I've Lived A Lot In My Time}
 {meta: artist Jim Reeves}
 {meta: composer Jack Rhodes, Dick Reynolds, Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file ivelivedalotinmytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I once had a mansion and [F]lived in my [C]glory
@@ -29,3 +32,6 @@ And wonderful peace I did [G7]find
 [C]Someday I'll journey to Eden's [F]green [C]pastures
 Yes I've lived a [G7]lot in my [C]time
 {end_of_verse}
+
+
+

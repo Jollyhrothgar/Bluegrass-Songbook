@@ -1,6 +1,9 @@
 {meta: title Be Mine}
 {meta: artist Waylon Jennings}
 {meta: composer Kimmie Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file beminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When the [C]green green spring is waiting for the [F]sun to shine
@@ -34,3 +37,7 @@ How [C]long until your [G7]love will be [C]mine [G7]
 Be [C]mine   be [F]mine[Fm]
 How [C]long until your [G7]love will be [C]mine
 {end_of_verse}
+
+
+
+

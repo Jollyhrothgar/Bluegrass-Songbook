@@ -1,6 +1,9 @@
 {meta: title Mama Come Get Your Baby Boy}
 {meta: artist Eddy Arnold}
 {meta: composer Leon Merritt and Alvin Alton}
+{meta: x_source classic-country}
+{meta: x_source_file mamacomegetyourbabyboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I was a happy boy [F]free as I could be
@@ -43,3 +46,8 @@ Mama  [F]mama  [C]mama come get your baby [G7]boy
 [F]You know this gal’s done cooked my goose
 [C]Mama come [G7]get your baby [C]boy
 {end_of_verse}
+
+
+
+
+

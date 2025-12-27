@@ -1,5 +1,8 @@
 {meta: title Maybe You'll See Santa Claus}
 {meta: artist Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file maybeyoullseesantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Before you go to [F]sleep to[G7]night
@@ -53,3 +56,9 @@ Cross your fingers [C]just for luck
 [Dm]Maybe [G7]you'll see [C]Santa Claus
 [Dm]Maybe [G7]you'll see [C]Santa Claus
 {end_of_verse}
+
+
+
+
+
+

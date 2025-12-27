@@ -1,6 +1,9 @@
 {meta: title Cold Winds Blow}
 {meta: artist Bobby Helms}
 {meta: composer Harold Lowry}
+{meta: x_source classic-country}
+{meta: x_source_file coldwindsblowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Big and little towns are [A#7]all the same to [C]me
@@ -32,3 +35,6 @@ I had to [F]walk alone [G7]tonight I [C]know my daddy was [F]right
 Rain falls and [A#7]cold winds blow on [C]me
 Rain falls and [A#7]cold winds blow on [C]me
 {end_of_verse}
+
+
+

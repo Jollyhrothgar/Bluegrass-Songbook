@@ -1,6 +1,9 @@
 {meta: title Down To My Last Broken Heart}
 {meta: artist Janie Fricke}
 {meta: composer Chick Rains}
+{meta: x_source classic-country}
+{meta: x_source_file downtomylastbrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I've been down to my [F]last dime down to my last [C]dance    
@@ -35,3 +38,7 @@ Cause I think I'm [G7]down to my last broken [C]heart
 {start_of_verse: Verse 4}
 Yes I think I'm [G7]down to my last broken [C][F]hea-rt
 {end_of_verse}
+
+
+
+

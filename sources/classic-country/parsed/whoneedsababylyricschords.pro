@@ -1,5 +1,8 @@
 {meta: title Who Needs A Baby}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file whoneedsababylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I ask myself [F]who needs a baby they [C]sometimes cry
@@ -25,3 +28,6 @@ I [F]ask myself [C]who needs a [Am]baby  [F]baby [G7]I need [C]you
 {start_of_verse: Verse 4}
 I [F]ask myself [C]who needs a [Am]baby  [F]baby [G7]I need [C]you
 {end_of_verse}
+
+
+

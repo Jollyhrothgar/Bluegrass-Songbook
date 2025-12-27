@@ -1,6 +1,9 @@
 {meta: title In the Highways}
 {meta: artist Anita Carter}
 {meta: composer Maybelle Carter}
+{meta: x_source classic-country}
+{meta: x_source_file inthehighwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the highways in the hedges
@@ -60,3 +63,10 @@ I'll be [G7]somewhere working for my [C]Lord
 {start_of_verse: Verse 5}
 I'll be [G7]somewhere working for my [C]Lord
 {end_of_verse}
+
+
+
+
+
+
+

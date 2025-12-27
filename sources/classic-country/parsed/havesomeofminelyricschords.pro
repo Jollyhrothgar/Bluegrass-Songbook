@@ -1,5 +1,8 @@
 {meta: title Have Some Of Mine}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file havesomeofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve got plenty so [G7]have some of [C]mine
@@ -31,3 +34,7 @@ But if [C]there’s not enough teardrops to [F]fall from your eyes
 I’ve [C]got plenty so [G7]have some of [C]mine
 I’ve got plenty so [G7]have some of [C]mine
 {end_of_verse}
+
+
+
+

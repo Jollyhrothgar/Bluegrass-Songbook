@@ -1,6 +1,9 @@
 {meta: title Doorstep To Heaven}
 {meta: artist Carl Smith}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file doorsteptoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met her we fell in love [G7]and we [C]parted
@@ -29,3 +32,6 @@
 [G]One step would take me to [G7]the arms of my sweet [C]angel
 [G]But the door of [D7]jealousy won't let me [G]in
 {end_of_verse}
+
+
+

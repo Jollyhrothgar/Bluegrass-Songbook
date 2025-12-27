@@ -1,6 +1,9 @@
 {meta: title Christmas Shopping}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Charles Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasshoppinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got ten toy soldiers for Billy Joe 
@@ -71,3 +74,12 @@ I got a [C]pair a'roller skates for [G]Jane
 And baby if we ever have any more kiss 
 Christmas [A7]shoppin's gonna [D7]drive me [G]insane
 {end_of_verse}
+
+
+
+
+
+
+
+
+

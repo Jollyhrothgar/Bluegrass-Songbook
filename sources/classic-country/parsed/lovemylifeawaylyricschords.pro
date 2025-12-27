@@ -1,5 +1,8 @@
 {meta: title Love My Life Away}
 {meta: artist Gene Pitney}
+{meta: x_source classic-country}
+{meta: x_source_file lovemylifeawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yeah I want to love my life away
@@ -49,3 +52,9 @@
 [C]I wanna love love love
 [G7]Love my life away with [C]you
 {end_of_verse}
+
+
+
+
+
+

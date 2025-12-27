@@ -1,6 +1,9 @@
 {meta: title There's Something Lonely In This House}
 {meta: artist Connie Smith}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file theressomethinglonelyinthishouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That sad song on the radio [G7]didn't help at all
@@ -33,3 +36,7 @@ And that [F]something [G7]lonely is [C]me
 {start_of_verse: Verse 4}
 Oh that [F]something [G7]lonely is [C]me
 {end_of_verse}
+
+
+
+

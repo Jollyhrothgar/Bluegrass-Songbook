@@ -1,6 +1,9 @@
 {meta: title The Greatest}
 {meta: artist Kenny Rogers}
 {meta: composer Don Schlitz}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little boy in a baseball hat 
@@ -72,3 +75,15 @@ But even [G7]I didn't know I [F]could pitch like [C]that
 Says I am the greatest that is understood
 But even [G7]I didn't know I [F]could pitch that [C]good
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title It Sure Can Get Cold In Des Moines}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file itsurecangetcoldindesmoineslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Iowa weather was [G7]thirteen [C]below
@@ -42,3 +45,8 @@ The [F]bellhop said yeah man [C]that's cold that's [G7]cold
 I [F]went back to my room and I [C]wrote down this [Am]song
 [C]Oh it sure can get cold [G7]in Des [C]Moines
 {end_of_verse}
+
+
+
+
+

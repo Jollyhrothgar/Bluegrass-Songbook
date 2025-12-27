@@ -1,6 +1,9 @@
 {meta: title There's No One Like You}
 {meta: artist Mickey Gilley}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file theresnoonelikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You are the [G7]happy in my [C]happiness
@@ -40,3 +43,8 @@ But [G7]never failed to try
 {start_of_verse: Verse 5}
 [F]For there's [G7]just no one like [C]you
 {end_of_verse}
+
+
+
+
+

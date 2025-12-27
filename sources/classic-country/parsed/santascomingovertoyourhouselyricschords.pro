@@ -1,6 +1,9 @@
 {meta: title Santa's Coming Over to Your House}
 {meta: artist Brooks and Dunn}
 {meta: composer Don Cook and Kix Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file santascomingovertoyourhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It seemed like just another Christmas Eve
@@ -45,3 +48,8 @@ I [A7]know cause he [D7]just left [G]mine
 {start_of_verse: Verse 4}
 Yeah I [A7]know cause he [D7]just left [G]mine
 {end_of_verse}
+
+
+
+
+

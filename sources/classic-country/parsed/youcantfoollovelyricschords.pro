@@ -1,6 +1,9 @@
 {meta: title You Can't Fool Love}
 {meta: artist Lacy J. Dalton}
 {meta: composer Steve Davis and Mark Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file youcantfoollovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wide as a [Am]river [G7]deep as the [F]sea
@@ -39,3 +42,8 @@ And baby I ain't [Am]never [G7]gonna give you [F]up
 [C]Cause you [G7]can't fool [C]love
 [F]No [C]no no you [G7]can't fool [Am]love[C]
 {end_of_verse}
+
+
+
+
+

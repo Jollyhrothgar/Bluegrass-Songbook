@@ -1,6 +1,9 @@
 {meta: title Send Me Back My Love}
 {meta: artist Jim Reeves}
 {meta: composer Leo Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file sendmebackmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say to send your letters back 
@@ -57,3 +60,10 @@ And [G7]stars that shine [C]above
 [F]Send me back please send me [C]back
 [G7]Send me back my [C]love
 {end_of_verse}
+
+
+
+
+
+
+

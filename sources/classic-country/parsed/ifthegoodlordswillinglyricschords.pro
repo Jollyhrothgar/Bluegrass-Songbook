@@ -1,6 +1,9 @@
 {meta: title If The Good Lord's Willing}
 {meta: artist Johnny Cash}
 {meta: composer Jerry Reed Hubbard}
+{meta: x_source classic-country}
+{meta: x_source_file ifthegoodlordswillinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If the good Lord's [G7]willin' and the creek stays down
@@ -38,3 +41,6 @@ Just as [C]sure as there ever was a preacher man
 I'll be [F]there with a ring for your hand
 If the good [G7]Lord's willin' and the creek don't [C]rise
 {end_of_verse}
+
+
+

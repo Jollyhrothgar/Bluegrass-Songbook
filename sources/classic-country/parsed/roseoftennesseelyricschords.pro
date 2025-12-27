@@ -1,6 +1,9 @@
 {meta: title Rose Of Tennessee}
 {meta: artist Cowboy Copas}
 {meta: composer Robert Foster and Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file roseoftennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a flower that is blooming down in [G7]old Tennessee
@@ -29,3 +32,6 @@ So I'll [D7]just wonder on dear with the [G7]memory of you
 But I [C]hope you'll be happy and [G7]always carefree
 In my heart dear forever you're my Rose of Tenne[C]ssee
 {end_of_verse}
+
+
+

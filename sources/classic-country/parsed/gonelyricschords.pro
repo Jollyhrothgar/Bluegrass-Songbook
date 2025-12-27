@@ -1,6 +1,9 @@
 {meta: title Gone}
 {meta: artist Ferlin Husky}
 {meta: composer Smokey Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file gonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Since you've gone the [F]moon the [C]sun
@@ -25,3 +28,5 @@ The [F]love that I've [C]tasted
 [G7]I was [C]wrong
 [G7]Now you've [C]gone 
 {end_of_verse}
+
+

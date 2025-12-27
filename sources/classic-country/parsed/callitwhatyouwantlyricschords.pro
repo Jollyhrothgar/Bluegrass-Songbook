@@ -1,5 +1,8 @@
 {meta: title Call It What You Want}
 {meta: artist Ricky Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file callitwhatyouwantlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Play it hard make it soft make it sound kinda sleazy
@@ -39,3 +42,7 @@ It's [G7]rock 'n roll to [C]me
 It's [G7]rock'n roll to [C]me
 It's [G7]rock'n roll to [C]me
 {end_of_verse}
+
+
+
+

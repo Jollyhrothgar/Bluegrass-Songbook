@@ -1,6 +1,9 @@
 {meta: title Letter After Letter}
 {meta: artist Mel Tillis}
 {meta: composer Glen Campbell and Jerry Goldis}
+{meta: x_source classic-country}
+{meta: x_source_file letterafterletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Words put down on paper just don't seem to [D7]say
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]And wish that you were here with me [G]today
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You're A Part Of Me}
 {meta: artist Charly McClain}
 {meta: composer Kim Carnes}
+{meta: x_source classic-country}
+{meta: x_source_file youreapartofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd like to [G7]live out all my [Am]dreams
@@ -50,3 +53,8 @@ Take me [C]away [F]  take me [C]away
 Take me [C]away[F]   oh take me [C]away[F]
 Take me [C]away
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title On Solid Ground}
 {meta: artist Rhonda Vincent}
 {meta: composer Terry Herd and Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file onsolidgroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darlin' we've been through some [G7]hard times and regrets I've [C]had a few
@@ -47,3 +50,9 @@ Baby from now [G7]on I'll be standing on solid [C]ground
 {start_of_verse: Verse 5}
 You can count on it [G7]baby I'll be standing on solid [C]ground
 {end_of_verse}
+
+
+
+
+
+

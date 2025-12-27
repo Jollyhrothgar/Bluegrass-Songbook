@@ -1,6 +1,9 @@
 {meta: title I'll Never Let Go Of You}
 {meta: artist George Jones}
 {meta: composer George Jones and George Riddle}
+{meta: x_source classic-country}
+{meta: x_source_file illneverletgoofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll never let [F]go of you not your sweet loving [C]touch
@@ -22,3 +25,5 @@ My life means [G7]everything while I'm holding to [C]you
 Your nearness [F]makes me feel that my troubles are [C]few
 If I'll live [G7]forever I'll never let go of [C]you
 {end_of_verse}
+
+

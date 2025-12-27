@@ -1,6 +1,9 @@
 {meta: title Cadillac Jack Favor}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file cadillacjackfavorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He's Cadillac Jack Favor and the name rings true
@@ -57,3 +60,10 @@ Yeah it's the world's most crooked picture
 And when it comes to being [C]framed 
 [G]Cadillac Jack Favor should be [D7]in the Hall of [G]Fame
 {end_of_verse}
+
+
+
+
+
+
+

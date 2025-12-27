@@ -1,6 +1,9 @@
 {meta: title To You and Yours from Me and Mine}
 {meta: artist George Hamilton IV}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file toyouandyoursfrommeandminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wedding bells are ringing [G7]on two sides of [C]town tonight
@@ -29,3 +32,6 @@ May [F]you find in him the [G7]faith you lost in [C]me
 And although I don't love her yet [F]perhaps I will in time
 Best of [G7]luck to you and yours from me and [C]mine
 {end_of_verse}
+
+
+

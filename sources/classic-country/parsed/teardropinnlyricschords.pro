@@ -1,6 +1,9 @@
 {meta: title Teardrop Inn}
 {meta: artist Fastlane}
 {meta: composer Mike Wells}
+{meta: x_source classic-country}
+{meta: x_source_file teardropinnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He told her he couldn't make it home for [Dm]dinner
@@ -33,3 +36,7 @@ Than to see you [Dm]in the arms of [F]Tina at the Teardrop [C]Inn
 {start_of_verse: Verse 4}
 Than to see you [Dm]in the arms of [F]Tina at the Teardrop [C]Inn
 {end_of_verse}
+
+
+
+

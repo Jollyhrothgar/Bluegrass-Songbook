@@ -1,6 +1,9 @@
 {meta: title I Still Sing The Old Songs}
 {meta: artist Tanya Tucker}
 {meta: composer David A. Coe}
+{meta: x_source classic-country}
+{meta: x_source_file istillsingtheoldsongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Grandpa I've been [C]thinking bout you [G]lately
@@ -43,3 +46,8 @@ And I [C]still pray to [D7]Jesus now and [G]then
 And [C]just like you I [D7]wish that He would [G]save me
 To [C]see the day the south will rise [D7]again
 {end_of_verse}
+
+
+
+
+

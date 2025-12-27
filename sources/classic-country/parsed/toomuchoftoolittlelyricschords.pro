@@ -1,6 +1,9 @@
 {meta: title Too Much Of Too Little}
 {meta: artist George Strait}
 {meta: composer Curtis Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchoftoolittlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well here we sit at a [G7]table for [C]two[F]  [C]
@@ -26,3 +29,6 @@ I gave her [C]too much of too [D7]little too [G]long
 {start_of_verse: Verse 4}
 I gave her [C]too much of too [D7]little too [G]long
 {end_of_verse}
+
+
+

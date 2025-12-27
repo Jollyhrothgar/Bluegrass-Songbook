@@ -1,6 +1,9 @@
 {meta: title Don't Ask Why}
 {meta: artist Alan Jackson}
 {meta: composer Bill LaBounty and Roy Freeland}
+{meta: x_source classic-country}
+{meta: x_source_file dontaskwhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ask me any [F]kind of question 
@@ -37,3 +40,7 @@ But when [C]somebody [Dm]loves you
 And you [C]know that it's [F]true [C]don't [F]ask [C]why
 Don't [F]ask [C]why
 {end_of_verse}
+
+
+
+

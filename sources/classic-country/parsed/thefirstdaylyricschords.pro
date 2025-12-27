@@ -1,6 +1,9 @@
 {meta: title The First Day}
 {meta: artist Jack Greene}
 {meta: composer Roy Baham}
+{meta: x_source classic-country}
+{meta: x_source_file thefirstdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is the [F]first [G7]day of the rest of our [C]lives
@@ -22,3 +25,5 @@ I'm [C]thankful that in [G7]time we [A7]rea-[D7]lize
 Our [G7]yesterdays have made our hearts [C]see eye to eye
 This is the [G7]first day [D7]of the rest of our [G7]lives
 {end_of_verse}
+
+

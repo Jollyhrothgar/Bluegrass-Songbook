@@ -1,6 +1,9 @@
 {meta: title On The Other Side}
 {meta: artist Johnny Rodriguez}
 {meta: composer Linda Hardgrove}
+{meta: x_source classic-country}
+{meta: x_source_file ontheothersidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yesterday is gone [C]tomorrow has come
@@ -34,3 +37,7 @@ Friends I used to fear [C]now I hold them dear
 [C]How many [D7]times [G]have I closed the [Em]door
 And [C]hoped your love was [D7]on the other [G]side
 {end_of_verse}
+
+
+
+

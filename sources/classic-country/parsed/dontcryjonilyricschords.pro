@@ -1,5 +1,8 @@
 {meta: title Don't Cry Joni}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file dontcryjonilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Joni was the girl who lived next [D7]door
@@ -66,3 +69,12 @@
 [C]It's been five years since you've been gone
 [D7]Jimmy I married your best friend [G]John
 {end_of_verse}
+
+
+
+
+
+
+
+
+

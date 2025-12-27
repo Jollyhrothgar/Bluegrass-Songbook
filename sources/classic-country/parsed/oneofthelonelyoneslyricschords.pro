@@ -1,6 +1,9 @@
 {meta: title One Of The Lonely Ones}
 {meta: artist Roy Orbison}
 {meta: composer William Dees and Roy K. Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file oneofthelonelyoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm cold inside the [F]day just died
@@ -32,3 +35,6 @@ I'd [C]rather be deaf and [F]dumb
 [Dm]Than to [G7]be what [C]I've be[Am]come
 [F]One of the [G7]lonely [G]ones[C]
 {end_of_verse}
+
+
+

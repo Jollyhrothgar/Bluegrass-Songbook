@@ -1,6 +1,9 @@
 {meta: title Ride Away}
 {meta: artist Slim Whitman}
 {meta: composer Ben Gadus}
+{meta: x_source classic-country}
+{meta: x_source_file rideawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ride away ride away with a [G7]song in your [C]heart
@@ -47,3 +50,9 @@ That your [G7]love can never be [C]real
 {start_of_verse: Verse 7}
 Ride [G7]away ride away your love can never be [C]real
 {end_of_verse}
+
+
+
+
+
+

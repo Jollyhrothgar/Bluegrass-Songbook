@@ -1,6 +1,9 @@
 {meta: title Maggie's Dream}
 {meta: artist Don Williams}
 {meta: composer Dave Loggins and Lisa Silver}
+{meta: x_source classic-country}
+{meta: x_source_file maggiesdreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Maggie's up each morning at four [C]am
@@ -41,3 +44,8 @@ But when the business starts to slow down she plays the saddest [C]tunes
 And she [F]stares off down the [C]highway and she [F]wonders where it [C]goes
 Nobody to go home to and it's almost time to [D7]close
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Handful Of Dreams}
 {meta: artist Faron Young}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file handfulofdreamschordslyrics.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm not [G7]too [Am]concerned if I'm [F]no [Em]big [Dm]success
@@ -29,3 +32,6 @@
 [F]With a good woman's love and a little baby I [G7]feel like a [C]king
 [F]I would have [G7]everything my handful of [C]dreams
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Reckless}
 {meta: artist Alabama}
 {meta: composer Jeff Stevens and Michael Clark}
+{meta: x_source classic-country}
+{meta: x_source_file recklesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's roll the windows down turn the [F]radio up 
@@ -52,3 +55,8 @@ Roll the [C]windows [F]down
 [G7]I'd rather be [C]reckless 
 [G7]I'd rather be [C]reckless 
 {end_of_verse}
+
+
+
+
+

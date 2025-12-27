@@ -1,6 +1,9 @@
 {meta: title You Don't Even Know Who I Am}
 {meta: artist Patty Loveless}
 {meta: composer Gretchen Peters}
+{meta: x_source classic-country}
+{meta: x_source_file youdontevenknowwhoiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]She left the [C]car in the driveway 
@@ -48,3 +51,9 @@ So what do you care if [F]you go[C]
 You don't even know who [Am]I am[G7] 
 So what do you care if [F]you go[C]
 {end_of_verse}
+
+
+
+
+
+

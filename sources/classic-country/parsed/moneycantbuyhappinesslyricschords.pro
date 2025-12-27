@@ -1,6 +1,9 @@
 {meta: title Money Can't Buy Happiness}
 {meta: artist Hank Williams Jr.}
 {meta: composer Steve Karliski}
+{meta: x_source classic-country}
+{meta: x_source_file moneycantbuyhappinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Money can't help you to find real happiness you say
@@ -29,3 +32,6 @@ Well now [C]money can't [F]buy you [C]happiness but [G7]neither can poor ole [C]
 Money can't [F]buy you [C]happiness but [G7]neither can poor ole [C]me
 [G7]Neither can poor ole [C]me  [G7]neither can poor ole [C]me [F]   [C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Haven't You Heard}
 {meta: artist Jeannie C. Riley}
 {meta: composer Red Lane and Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file haventyouheardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Haven't you hea[F]rd daddy's gone [C]crazy
@@ -31,3 +34,6 @@ And either way [F]I am the [C]loser
 And [F]I've been [C]crying [F]all night [C]long 
 Mister [G7]haven't you [F]hear[C]d
 {end_of_verse}
+
+
+

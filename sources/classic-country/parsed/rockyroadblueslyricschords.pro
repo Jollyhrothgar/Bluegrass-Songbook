@@ -1,6 +1,9 @@
 {meta: title Rocky Road Blues}
 {meta: artist Dwight Yoakum}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file rockyroadblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord the road is rocky but it won't be rocky long
@@ -43,3 +46,9 @@ I'm not so [G7]lonesome I just don't want to be [C]alone
 Lord the [F]road is rocky but it won't be rocky [C]long
 Cause [G7]another man has got my woman and [C]gone
 {end_of_verse}
+
+
+
+
+
+

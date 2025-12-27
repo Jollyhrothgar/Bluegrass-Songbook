@@ -1,6 +1,9 @@
 {meta: title City of New Orleans}
 {meta: artist Willie Nelson}
 {meta: composer Steve Goodman}
+{meta: x_source classic-country}
+{meta: x_source_file cityofneworleanslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Riding on the [G7]city of New [C]Orleans
@@ -70,3 +73,11 @@ Halfway home and [G7]we'll be there by [C]morning
 [G7]I'm the [C]train they call the [G7]city of New [Am]Orleans
 I'll be [A7]gone five hundred [G7]miles when the day is [C]done
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Wanting To}
 {meta: artist Marty Robbins}
 {meta: composer Ronny Robbins and Karen Russel}
+{meta: x_source classic-country}
+{meta: x_source_file imwantingtolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There'll be times when I can't [F]get away to be with [G7]you
@@ -30,3 +33,6 @@ When I'm not [F]loving you I'm wanting [G7]to
 Oh you [C]know when I'm not loving [G7]you I'm wanting [C]to
 You know when I'm not [G7]loving you I'm [F]wanting [C]t-o
 {end_of_verse}
+
+
+

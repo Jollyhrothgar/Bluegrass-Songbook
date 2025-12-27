@@ -1,6 +1,9 @@
 {meta: title Another Lonely Night}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew, Tommy Blake, W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file anotherlonelynightlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I'd knew what [F]made a love go wrong that seems so [C]right
@@ -31,3 +34,6 @@ Another lonely [F]night I want you more and [G7]more
 And [F]blues and I have room to share another lonely [C]night
 And [F]blues and I have room to share another lonely [C]night
 {end_of_verse}
+
+
+

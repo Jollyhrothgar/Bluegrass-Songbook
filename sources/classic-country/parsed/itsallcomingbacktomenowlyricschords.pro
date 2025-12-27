@@ -1,6 +1,9 @@
 {meta: title It's All Coming Back To Me Now}
 {meta: artist Keith Whitley}
 {meta: composer Curly Putman, Don Cook, Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file itsallcomingbacktomenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That innocent [Em]look in her [F]green eyes
@@ -31,3 +34,6 @@ But my [F]mind can't [G7]forget
 What my [Dm]heart won't [F]allow
 It's [Dm]all coming [G7]back to me [C]now
 {end_of_verse}
+
+
+

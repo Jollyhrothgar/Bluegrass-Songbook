@@ -1,6 +1,9 @@
 {meta: title Be Good To My Little Baby Girl}
 {meta: artist The Bluegrass Cardinals}
 {meta: composer Randall Hylton}
+{meta: x_source classic-country}
+{meta: x_source_file begoodtomylittlebabygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Be good to my [D7]little baby [G]girl
@@ -54,3 +57,9 @@ She’s [D7]warm and she’s sweet
 Lord she [C]means the world to me
 Be [G]good to my [D7]little baby [G]girl
 {end_of_verse}
+
+
+
+
+
+

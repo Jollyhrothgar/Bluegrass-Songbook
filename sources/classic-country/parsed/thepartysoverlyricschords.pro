@@ -1,5 +1,8 @@
 {meta: title The Party’s Over}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file thepartysoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Turn out the lights [D7]the party's [G]over
@@ -41,3 +44,9 @@ They say that [D7]all good things must end
 Call it [G]a night  the [C]party's over
 And tomorrow starts the [D7]same old thing [G]again
 {end_of_verse}
+
+
+
+
+
+

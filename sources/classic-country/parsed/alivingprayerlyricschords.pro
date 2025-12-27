@@ -1,6 +1,9 @@
 {meta: title A Living Prayer}
 {meta: artist Alison Krauss}
 {meta: composer Ron Block}
+{meta: x_source classic-country}
+{meta: x_source_file alivingprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In this world I walk a[D7]lone 
@@ -27,3 +30,6 @@ A living [G]prayer [D7]my God to [G]Thee
 [D7]Take my [G]life and let me [C]be  
 A living [G]prayer [D7]my God to [G]Thee 
 {end_of_verse}
+
+
+

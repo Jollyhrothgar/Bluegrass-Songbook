@@ -1,5 +1,8 @@
 {meta: title Daylight Strangers Midnight Friends}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file daylightstrangersmidnightfriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A lovely little cafe [F]on the other side of [Dm]town
@@ -28,3 +31,6 @@ Lying in the shadow [F]of an unfamiliar [Dm]room
 [C]And every time’s the last time [F]time and time [Dm]again 
 [C]Daylight strangers [G7]and midnight [C]friends
 {end_of_verse}
+
+
+

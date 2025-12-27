@@ -1,6 +1,9 @@
 {meta: title Summertime Fever}
 {meta: artist Tracy Byrd}
 {meta: composer Marty Brown and Stan Webb}
+{meta: x_source classic-country}
+{meta: x_source_file summertimefeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I went to the doctor to tell him the [C]news 
@@ -45,3 +48,8 @@ From your [A7]skin right down to your [D7]bones
 Suntan oil so you don’t [C]blister 
 [G]Everybody's got that [D7]summertime [G]fever
 {end_of_verse}
+
+
+
+
+

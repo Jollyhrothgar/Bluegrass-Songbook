@@ -1,6 +1,9 @@
 {meta: title Think It Over}
 {meta: artist Buddy Holly}
 {meta: composer Petty Norman and Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file thinkitoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Think it over what you just said
@@ -41,3 +44,9 @@ Think it over and you will see
 {start_of_verse: Verse 7}
 [G]Think it over (over and over)
 {end_of_verse}
+
+
+
+
+
+

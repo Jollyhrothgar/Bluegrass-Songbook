@@ -1,6 +1,9 @@
 {meta: title Another Broken Heart}
 {meta: artist Bill Clifton}
 {meta: composer Bill Clifton and Buddy Dee}
+{meta: x_source classic-country}
+{meta: x_source_file anotherbrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They stood on the beach one evening
@@ -50,3 +53,9 @@ Only a playing a [G7]part
 Just [C]another boy's life ruined
 Just [F]another [G7]broken [C]heart
 {end_of_verse}
+
+
+
+
+
+

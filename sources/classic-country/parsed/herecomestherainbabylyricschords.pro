@@ -1,6 +1,9 @@
 {meta: title Here Comes The Rain Baby}
 {meta: artist Roy Orbison}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file herecomestherainbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here comes the rain [G7]baby
@@ -27,3 +30,6 @@ You know I [G7]tried to keep the rain from [C]falling
 It's not the rain in the [C7]skies it's the [F]rain in my [Dm]eyes
 [G7]That won't ever stop falling [C]baby
 {end_of_verse}
+
+
+

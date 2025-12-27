@@ -1,6 +1,9 @@
 {meta: title In Pictures}
 {meta: artist Alabama}
 {meta: composer Bobby Boyd and Joe Doyle}
+{meta: x_source classic-country}
+{meta: x_source_file inpictureslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I've got her photograph [C]on a stand by my [F]bed
@@ -38,3 +41,8 @@
 [C]Is something I've seldom heard
 [Dm]Oh it hurts me so to [G7]watch my baby [C]grow up [F]in [C][G7][C]pictures
 {end_of_verse}
+
+
+
+
+

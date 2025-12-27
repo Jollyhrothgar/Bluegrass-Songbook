@@ -1,6 +1,9 @@
 {meta: title Just Enough Love For One Woman}
 {meta: artist Don Williams}
 {meta: composer Dave Kirby and Danny Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file justenoughloveforonewomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got just enough love for one [Dm]woman
@@ -49,3 +52,10 @@ I'm happy around you so glad that I've found you
 [Dm]I've got just enough love for one woman
 [F]And that one [G7]woman is [C]you
 {end_of_verse}
+
+
+
+
+
+
+

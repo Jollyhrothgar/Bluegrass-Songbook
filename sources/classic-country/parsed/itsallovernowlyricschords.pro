@@ -1,6 +1,9 @@
 {meta: title It's All Over Now}
 {meta: artist John Anderson}
 {meta: composer Bobby Womack and Shirley Jean Womack}
+{meta: x_source classic-country}
+{meta: x_source_file itsallovernowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well baby used to stay out all night long
@@ -43,3 +46,8 @@ Because I [D7]used to love her
 Because I [D7]used to love her
 [C]But it's all over [G]now
 {end_of_verse}
+
+
+
+
+

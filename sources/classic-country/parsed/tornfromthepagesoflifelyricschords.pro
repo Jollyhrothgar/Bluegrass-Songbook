@@ -1,5 +1,8 @@
 {meta: title Torn From The Pages Of Life}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file tornfromthepagesoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to think money could [F]buy any[C]thing
@@ -39,3 +42,8 @@ These are the lessons I've [F]learned the hard [C]way
 Torn from the [F]pages of [C]life
 Torn from the [G7]pages of [C]life
 {end_of_verse}
+
+
+
+
+

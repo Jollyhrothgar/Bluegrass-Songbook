@@ -1,6 +1,9 @@
 {meta: title Wild And Wicked World}
 {meta: artist Ray Price}
 {meta: composer J.D. Miller}
+{meta: x_source classic-country}
+{meta: x_source_file wildandwickedworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s a wild and wicked world you live [F]in
@@ -29,3 +32,6 @@
 [C]Cause you may fall in love with [F]somebody
 [G7]Who’s living in your wild and wicked [C]world
 {end_of_verse}
+
+
+

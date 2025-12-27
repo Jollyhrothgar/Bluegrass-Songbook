@@ -1,6 +1,9 @@
 {meta: title Thank God For Kids}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file thankGodforkidslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it weren't for kids have you ever [F]thought
@@ -50,3 +53,9 @@ To [C]thank the Lord for His guiding [G7]light
 And [F]pray they turn out [G7]right
 Thank God for [C]kids
 {end_of_verse}
+
+
+
+
+
+

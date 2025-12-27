@@ -1,6 +1,9 @@
 {meta: title Love Is Everything}
 {meta: artist George Strait}
 {meta: composer Casey Beathard and Pat Mclaughlin}
+{meta: x_source classic-country}
+{meta: x_source_file loveiseverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Love is [C]everything[Am]
@@ -60,3 +63,9 @@ Yeah [Dm]love's the king[G7]
 Love is [C]everything[Am]   [Dm]   [G7]
 Love is [C]everything[Am]   [Dm]   [G7]   [C]
 {end_of_verse}
+
+
+
+
+
+

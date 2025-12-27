@@ -1,6 +1,9 @@
 {meta: title Beautiful Lady}
 {meta: artist Jack Greene}
 {meta: composer Charles F. Craig and Gayron C. Lytle}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you are a lady and [F]why you are [C]here
@@ -29,3 +32,6 @@ Feeling compassion of a [G7]woman [C]denied
 Come let me hold you and [F]love you [C]away
 Beautiful lady I [G7]want you to [C]stay
 {end_of_verse}
+
+
+

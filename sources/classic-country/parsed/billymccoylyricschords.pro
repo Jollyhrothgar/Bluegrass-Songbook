@@ -1,6 +1,9 @@
 {meta: title Billy McCoy}
 {meta: artist Jim Ed Brown}
 {meta: composer Melvin Schmidt[3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file billymccoylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where is my Billy my Billy [G]McCoy
@@ -53,3 +56,9 @@
 [D7]Heading for ole [G]New Orleans [Em]uhuh
 [G]Heading for ole [D7]New [G]Orleans
 {end_of_verse}
+
+
+
+
+
+

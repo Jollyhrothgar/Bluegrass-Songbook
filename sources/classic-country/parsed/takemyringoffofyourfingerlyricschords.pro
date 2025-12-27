@@ -1,6 +1,9 @@
 {meta: title Take My Ring Off of Your Finger}
 {meta: artist Carl Smith}
 {meta: composer Benny Joy and Hugh X. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file takemyringoffofyourfingerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just take my ring off of your [F]finger
@@ -29,3 +32,6 @@ Every night   you're [F]unfaithful
 Darling tell them you're not [F]married
 But [G7]don't ask me to set [C]you free
 {end_of_verse}
+
+
+

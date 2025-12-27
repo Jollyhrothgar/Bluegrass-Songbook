@@ -1,6 +1,9 @@
 {meta: title Hangover Tavern}
 {meta: artist Hank Thompson}
 {meta: composer Johnny Lowe, Mary Lowe, Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file hangovertavernlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh Lordy me [D7]I [C]feel so bad this [G]mornin'
@@ -56,3 +59,11 @@ To keep the sunshine out
 {start_of_verse: Verse 9}
 [A7]Hangover [D7]Tavern here I [G]come
 {end_of_verse}
+
+
+
+
+
+
+
+

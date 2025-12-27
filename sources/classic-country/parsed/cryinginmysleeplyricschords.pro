@@ -1,5 +1,8 @@
 {meta: title Crying In My Sleep}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file cryinginmysleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lips so warm can turn so cold
@@ -68,3 +71,15 @@ Looking for the one who shares my love
 {start_of_verse: Verse 13}
 [D7]Crying in my [G]sleep
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title One Last Time}
 {meta: artist Jimmy Dean}
 {meta: composer Gary Oakes}
+{meta: x_source classic-country}
+{meta: x_source_file onelasttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One last time  one last [C]time  let me [G]kiss you 
@@ -40,3 +43,8 @@ Let me [D7]love you one last [G]time
 {start_of_verse: Verse 4}
 [C]Let me [G]hold you let me [D7]love you one last [C]t-ime[G]
 {end_of_verse}
+
+
+
+
+

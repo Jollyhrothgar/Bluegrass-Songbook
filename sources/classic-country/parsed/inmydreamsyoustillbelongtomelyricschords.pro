@@ -1,5 +1,8 @@
 {meta: title In My Dreams You Still Belong To Me}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file inmydreamsyoustillbelongtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now at last you've gone and left [G7]me 
@@ -35,3 +38,7 @@ Just like you used to [G7]be
 And [C]though I've lost you to [F]another 
 In my [C]dreams you [G7]still belong to [C]me
 {end_of_verse}
+
+
+
+

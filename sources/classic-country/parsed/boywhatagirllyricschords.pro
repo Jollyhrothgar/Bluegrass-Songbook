@@ -1,6 +1,9 @@
 {meta: title Boy What A Girl}
 {meta: artist Hawkshaw Hawkins Jr.}
 {meta: composer Ronnie Aaron Boswell and Harold F. Hawkins II}
+{meta: x_source classic-country}
+{meta: x_source_file boywhatagirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Well I [C]guess they can [F]just call me one [G7]lucky guy
@@ -35,3 +38,7 @@ There's [F]something special [G7]about her that makes me [C]stand out [G7]in a [
 Isn't she [F]something [G7]boy what a [F]girl  [G7]man what a [C]woman
 Boy what a [F]girl [G7]man what a [C]woman
 {end_of_verse}
+
+
+
+

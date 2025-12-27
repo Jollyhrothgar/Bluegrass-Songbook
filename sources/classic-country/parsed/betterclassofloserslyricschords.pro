@@ -1,6 +1,9 @@
 {meta: title Better Class Of Losers}
 {meta: artist Ray Price}
 {meta: composer Harlan Howard and Ron Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file betterclassofloserslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I said I'm through with honky tonks they only bring me [C]down
@@ -22,3 +25,5 @@ It's all been downhill for me since baby walked [C]away
 I'm a looking for an answer but all that I've seen [C]here
 [D7]Is the same old lonely phony [G]atmosphere
 {end_of_verse}
+
+

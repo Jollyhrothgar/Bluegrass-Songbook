@@ -1,5 +1,8 @@
 {meta: title Bob's Got A Swing Band In Heaven Song}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file bobsgotaswingbandinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They thrilled all the folks down in [C]Texas
@@ -40,3 +43,7 @@ Oh [D7]how Joe Franks bass fills all the [G]holes
 The angels love to sing with Elvin's [C]sweet guitar
 And [G]Gimble's fiddle waits [D7]beside the [G]throne
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Treat Me Kind}
 {meta: artist Norma Jean}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file justtreatmekindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You think you've got it made cause you're [F]with me [C]tonight
@@ -26,3 +29,6 @@ I'm a fool for any man [G7]who will just treat me [C]kind
 {start_of_verse: Verse 4}
 I'm a fool for any man [G7]who will just treat me [C]kind
 {end_of_verse}
+
+
+

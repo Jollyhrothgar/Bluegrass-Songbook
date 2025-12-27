@@ -1,5 +1,8 @@
 {meta: title Bad Love Story}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file badlovestorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once again you tried to show me what my eyes [F]refused to [C]see
@@ -33,3 +36,7 @@ Where the [G7]lady still don't love me any[C]more
 It's a [F]shame the way the same old ending [C]still tears me apart
 Where the [G7]lady still don't love me any[C]more
 {end_of_verse}
+
+
+
+

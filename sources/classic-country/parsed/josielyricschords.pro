@@ -1,5 +1,8 @@
 {meta: title Josie}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file josielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been chasin' after Josie since the [F]day I could [C]run
@@ -42,3 +45,8 @@ But [F]someday I'll maybe chase her down [C]again
 [F]How much did you lose between the laughter and the [C]tears
 [G7]Gettin' back the [F]bitter for the [C]sweet
 {end_of_verse}
+
+
+
+
+

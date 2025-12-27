@@ -1,6 +1,9 @@
 {meta: title My Babe}
 {meta: artist Ricky Nelson}
 {meta: composer Willie Dixon}
+{meta: x_source classic-country}
+{meta: x_source_file mybabelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well my babe don't stand no kissing my babe
@@ -38,3 +41,7 @@ When she's around she's so darn [F]cooling
 Well my babe [G7]true little baby my [C]babe
 Well my babe [G7]true little baby my [C]babe
 {end_of_verse}
+
+
+
+

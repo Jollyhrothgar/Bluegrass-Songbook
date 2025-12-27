@@ -1,6 +1,9 @@
 {meta: title I Quit}
 {meta: artist Vince Gill}
 {meta: composer Max D. Barnes and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file iquitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When your said you were [D7]leaving 
@@ -41,3 +44,8 @@ If I [D7]can't have you I [G]quit
 I'm [C]done I'm through that's [G]it 
 If I [D7]can't have you I [G]quit
 {end_of_verse}
+
+
+
+
+

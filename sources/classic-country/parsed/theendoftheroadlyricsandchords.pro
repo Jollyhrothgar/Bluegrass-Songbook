@@ -1,5 +1,8 @@
 {meta: title The End Of The Road}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file theendoftheroadlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I come to the end of the long long road
@@ -42,3 +45,8 @@ To the [G]land of eterni[D7]ty
 When I [G]come to the [D7]end of [G]life's long [C]road
 The [G]face of my [D7]Lord I'll [G]see
 {end_of_verse}
+
+
+
+
+

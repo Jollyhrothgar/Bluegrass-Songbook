@@ -1,5 +1,8 @@
 {meta: title My Wedding Ring}
 {meta: artist Jean Shepard}
+{meta: x_source classic-country}
+{meta: x_source_file myweddingringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You ask me how long [D7]I've been [G]drinking 
@@ -21,3 +24,5 @@ And the baby boy that has his daddy's [D7]name
 And the [C]baby looks just like his [G]daddy 
 But another woman [D7]wears my wedding [G]ring
 {end_of_verse}
+
+

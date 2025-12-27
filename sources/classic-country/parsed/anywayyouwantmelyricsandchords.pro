@@ -1,6 +1,9 @@
 {meta: title Anyway You Want Me}
 {meta: artist Gene Watson}
 {meta: composer Leo Ofman}
+{meta: x_source classic-country}
+{meta: x_source_file anywayyouwantmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You come in to hear me sing
@@ -32,3 +35,6 @@ I will sing and you will dance
 [D7][C]Anytime you [G]need me [C]I'll be [D7]here for [G]you
 [C]I'll be [D7]here for [G]you
 {end_of_verse}
+
+
+

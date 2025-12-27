@@ -1,6 +1,9 @@
 {meta: title Thank You For Being You}
 {meta: artist Mel Tillis}
 {meta: composer Kent Westberry and Hal Harbour}
+{meta: x_source classic-country}
+{meta: x_source_file thankyouforbeingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thank you for the sunshine that you put into my [C]skies
@@ -28,3 +31,6 @@
 [G]Oh but most of [C]all I wanted [D7]to thank you for being [G]you
 [C]Yes most of all [D7]I wanted to thank you for being [G]you
 {end_of_verse}
+
+
+

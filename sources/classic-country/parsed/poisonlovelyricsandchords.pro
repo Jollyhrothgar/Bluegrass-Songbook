@@ -1,6 +1,9 @@
 {meta: title Poison Love}
 {meta: artist Hank Snow}
 {meta: composer Elmer Laird}
+{meta: x_source classic-country}
+{meta: x_source_file poisonlovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All your poison love has stained the life blood in my heart and soul [G7]dear
@@ -29,3 +32,6 @@
 [G7]All my pleas and prayers have been in vain for you and you alone dear
 [C]And you know that you are guilty of the shame
 {end_of_verse}
+
+
+

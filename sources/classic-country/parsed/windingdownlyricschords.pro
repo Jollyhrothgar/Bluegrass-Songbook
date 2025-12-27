@@ -1,5 +1,8 @@
 {meta: title Winding Down}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file windingdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As past times go I [G7]guess I've seen some [Am]good
@@ -54,3 +57,10 @@ So they'll [G7]go home feeling [C]right
 You better [F]leave 'em up 
 So they'll [G7]go home feeling [C]right
 {end_of_verse}
+
+
+
+
+
+
+

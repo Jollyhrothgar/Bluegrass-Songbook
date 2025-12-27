@@ -1,6 +1,9 @@
 {meta: title If I Ever Fall In Love With A Honky Tonk Girl}
 {meta: artist Faron Young}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file ifieverfallinlovewithahonkytonkgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know that cheating river runs [F]by everybody's [C]door
@@ -34,3 +37,7 @@ If I [F]ever fall in [G7]love with a honky-tonk [C]girl
 [F]You'll be the one oh you'll be the [C]one
 If I [F]ever fall in [G7]love with a honky-tonk [C]girl
 {end_of_verse}
+
+
+
+

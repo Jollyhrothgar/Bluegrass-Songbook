@@ -1,6 +1,9 @@
 {meta: title Lonesome Rodeo Cowboy}
 {meta: artist George Strait}
 {meta: composer Clay Blaker}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomerodeocowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I own this horse and saddle and [F]that old Cadi[C]llac
@@ -37,3 +40,7 @@ I shoulda [F]quit this thing a long [C]time ago but I [D7]guess I never [G7]will
 So I [C]keep on movin' from shore to shore [F]hopin' to change my [C]luck
 My [F]good old days are all a [C]memory but I [G7]just can't give it [C]up
 {end_of_verse}
+
+
+
+

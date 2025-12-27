@@ -1,6 +1,9 @@
 {meta: title A Texas Honky Tonk}
 {meta: artist Darrell McCall}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file atexashonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight she's with him and [C]they're drinking cham[Am]pagne
@@ -26,3 +29,6 @@ Maybe [D7]now and then she'll think of me in a Texas honky [G]tonk
 {start_of_verse: Verse 4}
 Maybe [D7]now and then she'll think of me in a Texas honky [G]tonk
 {end_of_verse}
+
+
+

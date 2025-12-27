@@ -1,6 +1,9 @@
 {meta: title Annie Over}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray, Hank Thompson, Don Clay}
+{meta: x_source classic-country}
+{meta: x_source_file annieoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Annie Over 
@@ -34,3 +37,7 @@ I’ll try again maybe I’ll win your love once [G]more
 [G]Annie Over here comes my [D7]heart
 Is this the end our love depends on what you [G]decide
 {end_of_verse}
+
+
+
+

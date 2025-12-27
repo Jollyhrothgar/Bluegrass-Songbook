@@ -1,5 +1,8 @@
 {meta: title The Longer You Wait}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file thelongeryouwaitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The longer you wait to [Dm]leave me
@@ -32,3 +35,7 @@ The [G7]longer I'll hurt when you're [C]gone
 {start_of_verse: Verse 4}
 The [G7]longer I'll hurt when you're [C]gone
 {end_of_verse}
+
+
+
+

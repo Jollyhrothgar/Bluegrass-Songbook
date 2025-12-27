@@ -1,6 +1,9 @@
 {meta: title Our Love}
 {meta: artist George Morgan}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file ourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I believe that our love is a [G7]true love
@@ -22,3 +25,5 @@ In the [D7]arms of so many be[G7]fore
 I be[C]lieve that our love is the [G7]one love
 That will go on and on forever [C]more
 {end_of_verse}
+
+

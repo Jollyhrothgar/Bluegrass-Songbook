@@ -1,6 +1,9 @@
 {meta: title Written In Stone}
 {meta: artist Randy Travis}
 {meta: composer Don Schlitz and Mac McAnally}
+{meta: x_source classic-country}
+{meta: x_source_file writteninstonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna take you down to the riverside
@@ -70,3 +73,9 @@ I want you to [Dm]know what I feel for [A#7]you
 Is written in [C]stone
 [A#7]Written in [C]stone it's [A#7]written in [C]stone
 {end_of_verse}
+
+
+
+
+
+

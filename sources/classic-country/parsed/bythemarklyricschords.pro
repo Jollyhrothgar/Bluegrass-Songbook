@@ -1,6 +1,9 @@
 {meta: title By The Mark}
 {meta: artist Jamie Dailey and Darrin Vincent}
 {meta: composer David Todd Rawlings and Gillian Howard Welch}
+{meta: x_source classic-country}
+{meta: x_source_file bythemarklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I cross over I will [G7]shou[C]t and [G7]sing
@@ -42,3 +45,9 @@ By the [G7]mark [C]where the [F]nails have [C]been
 I will know my Savior when I come to Him
 By the [G7]mark [C]where the [F]nails have [C]been
 {end_of_verse}
+
+
+
+
+
+

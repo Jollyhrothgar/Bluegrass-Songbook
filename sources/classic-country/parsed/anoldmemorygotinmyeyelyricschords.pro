@@ -1,6 +1,9 @@
 {meta: title An Old Memory Got In My Eye}
 {meta: artist Ferlin Husky}
 {meta: composer Jerry Foster}
+{meta: x_source classic-country}
+{meta: x_source_file anoldmemorygotinmyeyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was doing fine until I saw her [D7]yesterday
@@ -37,3 +40,7 @@
 {start_of_verse: Verse 4}
 [C]Yes an [G]old memo-ry [D7]got in my [G]eye
 {end_of_verse}
+
+
+
+

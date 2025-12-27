@@ -1,6 +1,9 @@
 {meta: title Love Didn't Drive My Good Woman Wild}
 {meta: artist Darrell McCall}
 {meta: composer Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file lovedidntdrivemygoodwomanwildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The jukebox is playing her [C]favorite [G]song
@@ -33,3 +36,7 @@ But love sure would’ve helped [D7]to keep her [G]home
 {start_of_verse: Verse 5}
 Yes love sure would’ve helped [D7]to keep her [G]home
 {end_of_verse}
+
+
+
+

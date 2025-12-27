@@ -1,5 +1,8 @@
 {meta: title I'll Not Turn Back}
 {meta: artist The Kingsmen}
+{meta: x_source classic-country}
+{meta: x_source_file illnotturnbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm ready to leave this [C]world of [G]sorrow
@@ -37,3 +40,9 @@ I'll rest in the shade of
 {start_of_verse: Verse 7}
 (the tree of life)
 {end_of_verse}
+
+
+
+
+
+

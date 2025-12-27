@@ -1,6 +1,9 @@
 {meta: title Barbara}
 {meta: artist George Morgan}
 {meta: composer A.L. Owens}
+{meta: x_source classic-country}
+{meta: x_source_file barbaralyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had walked through a [Am]forest of [Em]redwood [Dm]trees
@@ -29,3 +32,6 @@
 [Am]Barbara [Em]Barbara
 [D7]Don’t let your [C]love be anybody’s [G7]but [C]mine
 {end_of_verse}
+
+
+

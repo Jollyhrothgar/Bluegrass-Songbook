@@ -1,6 +1,9 @@
 {meta: title Keep It Between The Lines}
 {meta: artist Ricky Van Shelton}
 {meta: composer Russell Smith and Kathy Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file keepitbetweenthelineslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was sittin' beside me in the [F]passenger seat
@@ -58,3 +61,10 @@ So keep your [F]hands [G7]on the [C]wheel
 Take your [F]time [C]  [Dm]  and [G7]keep it between the [C]lines
 Just take your [F]time and [G7]keep it between the [C]lines
 {end_of_verse}
+
+
+
+
+
+
+

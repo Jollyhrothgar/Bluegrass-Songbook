@@ -1,5 +1,8 @@
 {meta: title I'm Not Coming Home Anymore}
 {meta: artist Hank Williams Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file imnotcominghomeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you get home there you will [C]find
@@ -40,3 +43,7 @@ Oh there ain't no use to cry
 So [G]you go your way to [C]you may life be kind 
 For [G]I'm not coming [D7]home any[G]more
 {end_of_verse}
+
+
+
+

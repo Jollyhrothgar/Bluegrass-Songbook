@@ -1,6 +1,9 @@
 {meta: title You've Got The Ways Of A Woman In Love}
 {meta: artist Johnny Cash}
 {meta: composer Charlie Rich and Bill Justis}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotthewaysofawomaninlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've cut out your dancing
@@ -39,3 +42,8 @@ You've got the ways  of [D7]a woman in [G]love
 I walk by your house at night
 In the hopes that I [D7]might see
 {end_of_verse}
+
+
+
+
+

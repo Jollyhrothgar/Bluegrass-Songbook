@@ -1,6 +1,9 @@
 {meta: title Galaxy Song}
 {meta: artist Clint Black}
 {meta: composer Eric Idle and John Duprez}
+{meta: x_source classic-country}
+{meta: x_source_file galaxysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Just re[G]member that you're [D7]standing on a [G]planet that's evolving
@@ -43,3 +46,8 @@ How [E7]amazingly unlikely is your [Am]birth
 And[C] pray that there's intelligent life [G]somewhere up in [E7]space
 Cause I'm [A7]afraid that we've been [D7]cheated here on [G]Earth
 {end_of_verse}
+
+
+
+
+

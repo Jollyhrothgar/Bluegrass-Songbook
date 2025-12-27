@@ -1,6 +1,9 @@
 {meta: title Yellow Creek}
 {meta: artist John Anderson}
 {meta: composer Ken McDuffie}
+{meta: x_source classic-country}
+{meta: x_source_file yellowcreeklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Oh those [C]Yellow Creek waters bathed the sons and daughters
@@ -43,3 +46,8 @@ Of an [F]Indian nation called the Chero[Am]kee
 Through the [F]blood stained years they [C]walk the trail of [Am]tears
 [C]Crying for their home [F]down on Yellow [Am]Creek
 {end_of_verse}
+
+
+
+
+

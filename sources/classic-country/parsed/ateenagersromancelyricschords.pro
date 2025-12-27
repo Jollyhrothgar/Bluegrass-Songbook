@@ -1,6 +1,9 @@
 {meta: title A Teenager's Romance}
 {meta: artist Ricky Nelson}
 {meta: composer David Gillam}
+{meta: x_source classic-country}
+{meta: x_source_file ateenagersromancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bah bah bah bup bah bah bah [Em]dup
@@ -36,3 +39,7 @@ A teenager's romance is red hot or [G]blue
 You're either in misery or [G7]high on a [C]crest
 A teenager's [D7]romance is like all the [G]rest
 {end_of_verse}
+
+
+
+

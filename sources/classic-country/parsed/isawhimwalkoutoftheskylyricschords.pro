@@ -1,6 +1,9 @@
 {meta: title I Saw Him Walk Out Of The Sky}
 {meta: artist Doyle Lawson}
 {meta: composer Dee Gaskin}
+{meta: x_source classic-country}
+{meta: x_source_file isawhimwalkoutoftheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve been searching so long for the words to describe 
@@ -41,3 +44,8 @@ When I saw Him [D7]walk out of the [G]sky
 It’s a dream I will treasure as long as I live 
 When I saw Him [D7]walk out of the [G]sky
 {end_of_verse}
+
+
+
+
+

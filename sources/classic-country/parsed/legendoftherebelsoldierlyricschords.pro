@@ -1,5 +1,8 @@
 {meta: title Legend Of The Rebel Soldier}
 {meta: artist Charlie Moore}
+{meta: x_source classic-country}
+{meta: x_source_file legendoftherebelsoldierlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a dreary Yankee prison
@@ -43,3 +46,8 @@ Oh parson tell me quickly
 Will my soul pass through the [G]Southland
 Then the [D7]Rebel Soldier [G]Died
 {end_of_verse}
+
+
+
+
+

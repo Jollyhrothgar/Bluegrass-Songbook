@@ -1,6 +1,9 @@
 {meta: title Mommy Please Stay Home With Me}
 {meta: artist Eddy Arnold}
 {meta: composer Eddy Arnold, Wally Fowler &amp; J. Graydon Hall}
+{meta: x_source classic-country}
+{meta: x_source_file mommypleasestayhomewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A mother went out on [F]a [C]party
@@ -57,3 +60,10 @@
 [C]Do not ignore your [F]baby's [C]pleading
 [G7]Please mommy please stay home with [C]me
 {end_of_verse}
+
+
+
+
+
+
+

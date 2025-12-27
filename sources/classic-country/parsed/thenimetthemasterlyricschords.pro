@@ -1,6 +1,9 @@
 {meta: title Then I Met The Master}
 {meta: artist Dottie West}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file thenimetthemasterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I  met the [G]Master now [D7]I am one of His [G]own
@@ -29,3 +32,6 @@ A [D7]new day broke through all [G]around me [G7]
 [C]I  met the [G]Master now [D7]I am one of His [G]own 
 Yes [C]I  met the [G]Master now [D7]I am one of His [G]own
 {end_of_verse}
+
+
+

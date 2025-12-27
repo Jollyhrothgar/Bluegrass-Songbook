@@ -1,6 +1,9 @@
 {meta: title You Must Not Be Drinking Enough}
 {meta: artist Earl Thomas Conley}
 {meta: composer Daniel Kortchmar}
+{meta: x_source classic-country}
+{meta: x_source_file youmustnotbedrinkingenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can [F]see that you haven't [G7]recovered 
@@ -54,3 +57,10 @@ Aye aye aye [F]aye  ask yourself [C]why
 You still want to hold her 
 You [F]must not be [G7]drinking [C]enough
 {end_of_verse}
+
+
+
+
+
+
+

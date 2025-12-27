@@ -1,6 +1,9 @@
 {meta: title Stay On His Mind}
 {meta: artist Jeanne Pruett}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file stayonhismindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A man always [F]looks at a [G7]woman
@@ -36,3 +39,7 @@ No [F]matter what he may [Fm]find
 He'll leave you [C]alone and he'll come back [G7]home 
 If you'll stay on his [C]mind
 {end_of_verse}
+
+
+
+

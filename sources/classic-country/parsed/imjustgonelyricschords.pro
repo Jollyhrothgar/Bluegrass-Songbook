@@ -1,6 +1,9 @@
 {meta: title I'm Just Gone}
 {meta: artist Bill Anderson}
 {meta: composer Buzz Rabin}
+{meta: x_source classic-country}
+{meta: x_source_file imjustgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I could count the miles be[C]tween us now and [G]say
@@ -35,3 +38,7 @@ We're as close as [C]we were [G]then
 We're as close as [C]we've ever [G]been
 [D7]I'm just [C]gone[G]
 {end_of_verse}
+
+
+
+

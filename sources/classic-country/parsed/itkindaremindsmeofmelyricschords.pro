@@ -1,5 +1,8 @@
 {meta: title It Kinda Reminds Me Of Me}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file itkindaremindsmeofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today I was lonely so [F]I took a [C]walk
@@ -28,3 +31,6 @@
 [C]I've heard it said that [F]a fool never [C]learns
 [G7]It kinda reminds me of [C]me
 {end_of_verse}
+
+
+

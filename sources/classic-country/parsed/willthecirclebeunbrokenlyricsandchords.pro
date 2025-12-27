@@ -1,6 +1,9 @@
 {meta: title Will The Circle Be Unbroken}
 {meta: artist Eddy Arnold}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file willthecirclebeunbrokenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There are loved ones in the glory
@@ -43,3 +46,8 @@ By and [C]by  by and [G]by
 [D7]In a [G]better home awaiting
 In the sky Lord [D7]in the [G]sky
 {end_of_verse}
+
+
+
+
+

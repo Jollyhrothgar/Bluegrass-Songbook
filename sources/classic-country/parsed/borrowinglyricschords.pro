@@ -1,6 +1,9 @@
 {meta: title Borrowing}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Eddie Nesbitt}
+{meta: x_source classic-country}
+{meta: x_source_file borrowinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I’m only borrowing a [F]heart that isn’t [C]mine
@@ -29,3 +32,6 @@ And [D7]even though I hold your hand I’ll [G7]never hold your heart
 The [C]words I whisper in your ear to [F]you don’t mean a [C]thing
 Be[F]cause tonight I’m [C]only [G7]borrow[C]ing 
 {end_of_verse}
+
+
+

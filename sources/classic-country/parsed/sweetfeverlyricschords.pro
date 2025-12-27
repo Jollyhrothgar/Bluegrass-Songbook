@@ -1,6 +1,9 @@
 {meta: title Sweet Fever}
 {meta: artist Don Williams}
 {meta: composer Bob McDill and Dickey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file sweetfeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been feelin' funny [F]shakin' like a [C]leaf
@@ -42,3 +45,9 @@ Sun lights up my morning [F]moon lights up my [C]night
 And I light up when your name comes up 
 I [G7]feel all funny [C]inside
 {end_of_verse}
+
+
+
+
+
+

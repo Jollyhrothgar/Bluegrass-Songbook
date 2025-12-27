@@ -1,6 +1,9 @@
 {meta: title In A Heart Like Mine}
 {meta: artist Randy Travis}
 {meta: composer Donny Kees and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file inaheartlikeminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]In a heart like mine with a steady [G]beat
@@ -54,3 +57,9 @@ Put a quart or two with a melody
 [F]I could live on the music till the [C]end of time
 [G]With a love like yours and a [D7]heart like [G]mine
 {end_of_verse}
+
+
+
+
+
+

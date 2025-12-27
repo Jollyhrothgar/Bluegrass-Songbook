@@ -1,6 +1,9 @@
 {meta: title When Your World Stops Turning}
 {meta: artist Sonny James}
 {meta: composer Bob Tubert, Gene Strasser, George Winters}
+{meta: x_source classic-country}
+{meta: x_source_file whenyourworldstopsturninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh oh [F]what do you do when your [C]world stops turning
@@ -38,3 +41,7 @@ And the [G7]torch starts burning [C]again[C7]
 Oh oh [F]what do you do when your [C]hearts starts hurtin'
 To [G7]start your world turning [C]again[G7]
 {end_of_verse}
+
+
+
+

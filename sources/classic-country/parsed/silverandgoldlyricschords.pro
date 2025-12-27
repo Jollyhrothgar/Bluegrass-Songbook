@@ -1,6 +1,9 @@
 {meta: title Silver and Gold}
 {meta: artist Dolly Parton}
 {meta: composer Carl Perkins, Greg Perkins, Stan Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file silverandgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I met an old man walking down the street
@@ -66,3 +69,15 @@ But you can live in a world where you'll never grow old
 And things can't be [G7]bought there with silver and [C]gold
 And time can't be [G7]bought back with silver and [C]gold
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Won't It Be Wonderful There}
 {meta: artist George Jones}
 {meta: composer James Rowe}
+{meta: x_source classic-country}
+{meta: x_source_file wontitbewonderfultherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When with the Savior we enter [C]the glory [G]land
@@ -43,3 +46,8 @@ Won't it be wonderful there
 [G]Joyously singing with [C]heart-bells [G]a-ringing
 [D7]Won't it be wonderful [G]there
 {end_of_verse}
+
+
+
+
+

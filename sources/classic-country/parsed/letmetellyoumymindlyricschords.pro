@@ -1,6 +1,9 @@
 {meta: title Let Me Tell You My Mind}
 {meta: artist Waylon Jennings}
 {meta: composer Harold Gay and Walt Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file letmetellyoumymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some quiet morning with me [F]let me [G]tell you [D7]my [G]mind
@@ -30,3 +33,5 @@
 [C]Oh oh [D7]baby let me tell you [G]my [Em]mind
 [C]Oh oh [D7]baby let me tell you my [G]mind
 {end_of_verse}
+
+

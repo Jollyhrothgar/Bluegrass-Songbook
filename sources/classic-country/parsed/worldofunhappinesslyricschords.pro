@@ -1,6 +1,9 @@
 {meta: title World Of Unhappiness}
 {meta: artist Bob Luman}
 {meta: composer Rita Welty}
+{meta: x_source classic-country}
+{meta: x_source_file worldofunhappinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woman I'm tired of [F]bendin' like a branch
@@ -41,3 +44,7 @@ World of un[F]happiness [G7]filled with emp[C]tiness
 In your world of un[F]happiness [G7]caused by [C]me
 World of un[F]happiness [G7]caused by [C]me 
 {end_of_verse}
+
+
+
+

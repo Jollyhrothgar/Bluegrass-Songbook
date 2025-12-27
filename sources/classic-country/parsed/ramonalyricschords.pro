@@ -1,6 +1,9 @@
 {meta: title Ramona}
 {meta: artist Jim Reeves}
 {meta: composer Wolfe L. Gilbert and Mabel Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file ramonalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ramona I hear the mission [Am]bells above [D7]
@@ -23,3 +26,5 @@ I [C]dread the [A7]dawn when I [G]awake to find you [E7]gone
 [Am]Ramona I [D7]need you my [G]own
 [C]Ramon[G]a
 {end_of_verse}
+
+

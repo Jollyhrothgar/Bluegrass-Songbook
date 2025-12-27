@@ -1,6 +1,9 @@
 {meta: title Summer's Comin'}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file summerscominlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Nothin' on earth that'll get me hummin' 
@@ -66,3 +69,11 @@ Till the sun don't [G]shine
 [D7]For my day in the sun I've been workin' 
 Till the sun don't [G]shine
 {end_of_verse}
+
+
+
+
+
+
+
+

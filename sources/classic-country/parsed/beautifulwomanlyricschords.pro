@@ -1,6 +1,9 @@
 {meta: title Beautiful Woman}
 {meta: artist Don Williams}
 {meta: composer Graham Lyle}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been talking to a beautiful woman  [F]all night long
@@ -46,3 +49,9 @@ Baby what you're doing to [G7]me
 [C]I've been talking to a beautiful woman  [F]
 [C]And I don't know if I'm coming or going  [F]    [C]
 {end_of_verse}
+
+
+
+
+
+

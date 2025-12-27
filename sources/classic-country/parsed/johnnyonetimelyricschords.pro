@@ -1,6 +1,9 @@
 {meta: title Johnny One Time}
 {meta: artist Brenda Lee}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file johnnyonetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So he told you that you're the dream
@@ -55,3 +58,10 @@ Would soon become another [D7]trinket
 On his [C]bracelet of broken [G]hearts
 Did he tell you that the morning [C]sun
 {end_of_verse}
+
+
+
+
+
+
+

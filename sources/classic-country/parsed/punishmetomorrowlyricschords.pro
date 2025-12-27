@@ -1,6 +1,9 @@
 {meta: title Punish Me Tomorrow}
 {meta: artist Carl and Pearl Butler}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file punishmetomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know it’s wrong to love her
@@ -53,3 +56,10 @@ When I miss her sweet [C]caress
 When love will be [D7]a memory
 And haunt my [G]loneliness
 {end_of_verse}
+
+
+
+
+
+
+

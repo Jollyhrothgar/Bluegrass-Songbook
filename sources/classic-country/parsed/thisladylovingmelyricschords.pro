@@ -1,6 +1,9 @@
 {meta: title This Lady Loving Me}
 {meta: artist Carl Smith}
 {meta: composer Eddie Raven}
+{meta: x_source classic-country}
+{meta: x_source_file thisladylovingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This lady loving me don’t ask for [F]much
@@ -36,3 +39,7 @@ She would love with [C]all my no good and my [G7]lies
 [F]Lord knows I don’t deserve to [C]be
 In the arms of this [G7]lady loving [C]me
 {end_of_verse}
+
+
+
+

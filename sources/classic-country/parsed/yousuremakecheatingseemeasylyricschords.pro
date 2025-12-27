@@ -1,6 +1,9 @@
 {meta: title You Sure Make Cheating Seem Easy}
 {meta: artist Gene Watson}
 {meta: composer Warren Robb and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file yousuremakecheatingseemeasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You caught me when my [C]arms were [G]empty
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]And I'm taking it easy [G]tonight
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Mind Is On You}
 {meta: artist Reba McEntire}
 {meta: composer Don Schlitz and Dave Loggins}
+{meta: x_source classic-country}
+{meta: x_source_file mymindisonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]We had a [C]fight a lovers' [F]quarrel [C]
@@ -70,3 +73,11 @@ And they're all [F]wonderin' what [C]I'm gonna [Dm]do
 And my [F]mind is [G7]on [C]you [F] my mind is [C]on you
 [F]My mind is [C]on you 
 {end_of_verse}
+
+
+
+
+
+
+
+

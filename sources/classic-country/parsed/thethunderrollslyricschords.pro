@@ -1,6 +1,9 @@
 {meta: title The Thunder Rolls}
 {meta: artist Garth Brooks}
 {meta: composer Pat Alger and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file thethunderrollslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Three thirty [Dm]in the morning not a soul in [F]sight
@@ -39,3 +42,7 @@ Another love grows [F]cold on [G]a sleepless [E7]night
 As the storm blows [F]on [G]out of [Am]control
 Deep in her [F]heart [G]the thunder [Am]rolls
 {end_of_verse}
+
+
+
+

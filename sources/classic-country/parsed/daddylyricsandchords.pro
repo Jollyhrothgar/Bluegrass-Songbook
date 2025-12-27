@@ -1,5 +1,8 @@
 {meta: title Daddy}
 {meta: artist Donna Fargo}
+{meta: x_source classic-country}
+{meta: x_source_file daddylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm finally gonna write you that letter
@@ -83,3 +86,17 @@ That a girl belongs at home on the farm
 [C]Cause every night I hear an old southbound train whistle [G]a-blowing
 [D7]And daddy it's calling me [G][C]h-ome
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Go Rest High On That Mountain}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file goresthighonthatmountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know your life
@@ -35,3 +38,7 @@ Love for the Father [D7]and the [G]Son
 [C]Go to Heaven a [G]shouting
 Love for the [D7]Father and the [G]Son
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Everything I Had Going For Me Is Gone}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file everythingihadgoingformeisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gonna sit here and feel sorry for myself
@@ -33,3 +36,7 @@ Everything I had going [G7]for me is [C]gone
 {start_of_verse: Verse 5}
 [F]Everything I had going [G7]for me is [C]gone
 {end_of_verse}
+
+
+
+

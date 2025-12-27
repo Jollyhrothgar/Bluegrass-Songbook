@@ -1,5 +1,8 @@
 {meta: title Lead Me On}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file leadmeonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once I made a promise
@@ -31,3 +34,8 @@ I’ll be wrong in what I’m doing
 If you want me I’ll go with you
 [D7]But you’ll have to lead me [G]on
 {end_of_verse}
+
+
+
+
+

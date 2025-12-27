@@ -1,6 +1,9 @@
 {meta: title By The Time I Get To Phoenix}
 {meta: artist Glen Campbell}
 {meta: composer Jim Webb}
+{meta: x_source classic-country}
+{meta: x_source_file bythetimeigettophoenixlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]By the time I get to Phoenix she'll be [C]rising
@@ -23,3 +26,5 @@ And she'll [F]cry just to think [G7]I'd really leave [Em]her
 Though [Am]time and time [Dm]I try to tell her [C]so
 [F]She just didn't [Dm]know  [E7]I would really [A7]go
 {end_of_verse}
+
+

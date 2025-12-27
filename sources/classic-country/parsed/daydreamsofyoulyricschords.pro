@@ -1,6 +1,9 @@
 {meta: title Daydreams of You}
 {meta: artist Russell Moore and IIIrd Tyme Out}
 {meta: composer Russell Moore}
+{meta: x_source classic-country}
+{meta: x_source_file daydreamsofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I still [D7]see your [C]face
@@ -28,3 +31,5 @@ I'm [C]dreaming of so
 Day[C]dreams of [G]you [F]  day[C]dreams of [G]you[F]
 Sweet [C]dreams of [G]you [F]  day[C]dreams of [G]you[F]   [C]  [G]
 {end_of_verse}
+
+

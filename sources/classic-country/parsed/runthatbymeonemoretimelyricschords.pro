@@ -1,6 +1,9 @@
 {meta: title Run That By Me One More Time}
 {meta: artist Ray Price}
 {meta: composer Fred Foster, Arthur Hancock and Jimmy Lambert}
+{meta: x_source classic-country}
+{meta: x_source_file runthatbymeonemoretimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Run that by me one more [D7]time 
@@ -47,3 +50,9 @@ Tell me that you always will be [C]true dear
 {start_of_verse: Verse 4}
 Run that [D7]by me one more [G]time 
 {end_of_verse}
+
+
+
+
+
+

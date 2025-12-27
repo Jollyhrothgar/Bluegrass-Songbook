@@ -1,6 +1,9 @@
 {meta: title Dancin' All Around It}
 {meta: artist Alan Jackson}
 {meta: composer Carson Chamberlain, Brian Tabor, Michael White}
+{meta: x_source classic-country}
+{meta: x_source_file dancinallarounditlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]She said [C]I don't usually dance [Em]this close to [F]strangers
@@ -39,3 +42,8 @@ If there's a [Em]heaven here on [F]earth I think we [C]found it
 If this ain't [C]love we're [G7]dancin' all [F]around it
 [G7]She said [C]I don't usually dance this [Em]close to [F]strangers
 {end_of_verse}
+
+
+
+
+

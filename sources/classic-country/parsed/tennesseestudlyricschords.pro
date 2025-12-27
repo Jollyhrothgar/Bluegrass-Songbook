@@ -1,6 +1,9 @@
 {meta: title Tennessee Stud}
 {meta: artist Eddy Arnold}
 {meta: composer Jimmie Driftwoodintro:Well there never was a hoss like the Tennessee stud}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseestudlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Along about eighteen twenty five
@@ -78,3 +81,13 @@ The [C]color of the sun and his [A7]eyes were [D7]green
 [G]He had the nerve and he [F]had the [G]blood 
 And there never was a horse like the [D7]Tennessee [G]stud
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

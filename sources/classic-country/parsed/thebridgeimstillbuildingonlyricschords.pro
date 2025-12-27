@@ -1,6 +1,9 @@
 {meta: title The Bridge I'm Still Building On}
 {meta: artist Vern Gosdin}
 {meta: composer Buddy Cannon, Vern Gosdin, John Northrup}
+{meta: x_source classic-country}
+{meta: x_source_file thebridgeimstillbuildingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Settin’ alone by the telephone [Am]wishing you would call
@@ -34,3 +37,7 @@ Have you already [Am]burned the bridge [D7]that I’m still building [G]on
 {start_of_verse: Verse 5}
 Have you already [Am]burned the bridge [D7]that I’m still building [G]on
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Raindrops}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melson}
+{meta: x_source classic-country}
+{meta: x_source_file raindropslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([D7]Rain[G]drops [D7]rain[G]drops)
@@ -33,3 +36,7 @@ I [D7]did what you asked I loved you so
 But I [A7]knew in my heart it wouldn't be long
 [D7]Till I'd look up and you'd be gon[G]e
 {end_of_verse}
+
+
+
+

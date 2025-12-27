@@ -1,6 +1,9 @@
 {meta: title Country Pride}
 {meta: artist Mel Street}
 {meta: composer Betty Carol}
+{meta: x_source classic-country}
+{meta: x_source_file countrypridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well go ahead and call me a country boy
@@ -47,3 +50,9 @@ And I [G7]thank You Lord for all this country [C]pride
 {start_of_verse: Verse 6}
 I [G7]thank You Lord for all this country [C]pride
 {end_of_verse}
+
+
+
+
+
+

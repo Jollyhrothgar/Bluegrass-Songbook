@@ -1,6 +1,9 @@
 {meta: title Come Home Daddy}
 {meta: artist Crystal Gayle}
 {meta: composer Terrye Newkirk}
+{meta: x_source classic-country}
+{meta: x_source_file comehomedaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been pining away I guess you could say I'm a [F]fool for your [D7]love
@@ -34,3 +37,7 @@ You just don't understand I need a man I can't [F]hold a memo[D7]ry
 {start_of_verse: Verse 5}
 [G7]Aw come home daddy make sweet sweet love to [C]me 
 {end_of_verse}
+
+
+
+

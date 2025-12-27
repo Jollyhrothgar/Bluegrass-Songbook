@@ -1,6 +1,9 @@
 {meta: title I Just Cry}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sleepless nights a worried [C]mind
@@ -36,3 +39,7 @@ All the [G]time [D7] all the [G]time
 I just [D7]cry cry cry cry
 All the [G]time [D7] all the [G]time
 {end_of_verse}
+
+
+
+

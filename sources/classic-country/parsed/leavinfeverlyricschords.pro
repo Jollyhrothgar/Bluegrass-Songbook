@@ -1,6 +1,9 @@
 {meta: title Leavin' Fever}
 {meta: artist Jean Shepard}
 {meta: composer Tommy Cash and Lorrie Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file leavinfeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve got leavin’ fever guess I [C7]caught it from you [F]baby
@@ -30,3 +33,6 @@ I’ve got leavin’ fever [C]baby
 [D7]I’ve got the feeling and [G7]I’ve got it hard 
 I’ve got leavin’ fever [C]baby
 {end_of_verse}
+
+
+

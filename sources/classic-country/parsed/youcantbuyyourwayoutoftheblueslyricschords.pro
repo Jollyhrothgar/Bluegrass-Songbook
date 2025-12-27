@@ -1,6 +1,9 @@
 {meta: title You Can't Buy Your Way Out Of The Blues}
 {meta: artist George Strait}
 {meta: composer Larry Cordle and Mike Anthony}
+{meta: x_source classic-country}
+{meta: x_source_file youcantbuyyourwayoutoftheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd been workin' at forgettin' since you [D7]said goodbye
@@ -48,3 +51,9 @@ No you [D7]can't buy your way out of the [G]blues
 [D7]Love luck just [G]can't be bought and paid for and that's the [C]truth
 No you [D7]can't buy your way out of the [G]blues
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I've Had You}
 {meta: artist Cal Smith}
 {meta: composer Troy Seals and Will Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file ivehadyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I'm never [F]loved again [G7]that's al[C]right
@@ -23,3 +26,5 @@ Just for[C]give me if my [C7]pain's been showing [F]through [Am]
 [C]But I can't help it cause tonight he'll have [F]everything
 [C]Yes tonight he'll have it [F]all cause [G7]he'll have [C]you
 {end_of_verse}
+
+

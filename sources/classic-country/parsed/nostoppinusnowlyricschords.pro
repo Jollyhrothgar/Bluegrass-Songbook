@@ -1,5 +1,8 @@
 {meta: title No Stoppin' Us Now}
 {meta: artist Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file nostoppinusnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no stoppin' us [F]now 
@@ -35,3 +38,8 @@ There's no holdin' [C]back and [G7]there's no end in [C]sight
 {start_of_verse: Verse 6}
 [F]There's no holdin' [C]back and [G7]there's no end in [C]sight
 {end_of_verse}
+
+
+
+
+

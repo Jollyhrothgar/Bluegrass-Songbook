@@ -1,6 +1,9 @@
 {meta: title Burning an Old Memory}
 {meta: artist Jeannie Seely}
 {meta: composer Larry Boone, Gene Nelson, Paul Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file burninganoldmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to [G]love him [C]that ain't no [G]lie
@@ -40,3 +43,8 @@ I'm [G]burning that ol’ memory with a [A7]brand [D7]new [G]flame
 {start_of_verse: Verse 5}
 I'm burning that ol’ memory with a [A7]brand [D7]new [G]flame 
 {end_of_verse}
+
+
+
+
+

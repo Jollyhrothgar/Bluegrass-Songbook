@@ -1,6 +1,9 @@
 {meta: title Don't You Ever Get Tired}
 {meta: artist Ray Price}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file dontyouevergettiredlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You make my eyes run over all the [C]time
@@ -29,3 +32,6 @@ For you [C]haven't let me wear one in [A7]such a long long [D7]while
 Still I [G]keep comming back how can this [C]be
 Don't you [D7]ever get tired of hurtin' [G]me
 {end_of_verse}
+
+
+

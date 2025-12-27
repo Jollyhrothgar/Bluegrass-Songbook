@@ -1,5 +1,8 @@
 {meta: title After All}
 {meta: artist Joni Harms}
+{meta: x_source classic-country}
+{meta: x_source_file afteralllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]After all we've been [F]through [C]together
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 3}
 [F]No there's no one for [C]me but [G7]you after [C][F]a--ll
 {end_of_verse}
+
+
+
+

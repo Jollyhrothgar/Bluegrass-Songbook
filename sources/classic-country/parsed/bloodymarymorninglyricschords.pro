@@ -1,5 +1,8 @@
 {meta: title Bloody Mary Morning}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file bloodymarymorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it's a Bloody Mary [C]morning
@@ -60,3 +63,14 @@ Cause I'm leaving baby somewhere in [G]LA
 [G]Well it's a Bloody Mary [C]morning
 Baby left me without warning sometime in the [D7]night
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

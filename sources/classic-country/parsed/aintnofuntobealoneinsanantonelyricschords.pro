@@ -1,6 +1,9 @@
 {meta: title Ain't No Fun To Be Alone In San Antone}
 {meta: artist Gene Watson}
 {meta: composer Buddy Cannon and Luke Reed}
+{meta: x_source classic-country}
+{meta: x_source_file aintnofuntobealoneinsanantonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's another Saturday night down in San [D7]Antonio
@@ -33,3 +36,7 @@ But [D7]then you left me all alone down in San [G]Antonio
 {start_of_verse: Verse 4}
 You know it [D7]ain't no fun to be alone down in San [G]Antone
 {end_of_verse}
+
+
+
+

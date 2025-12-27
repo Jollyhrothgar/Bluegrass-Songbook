@@ -1,6 +1,9 @@
 {meta: title Well Here We Are Again}
 {meta: artist The Statler Brothers}
 {meta: composer Richard Rodgers and Stephen Sondheim}
+{meta: x_source classic-country}
+{meta: x_source_file wellhereweareagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well here we are again
@@ -52,3 +55,12 @@ Or was is worth the same
 {start_of_verse: Verse 8}
 [F]Well here we are [C]again
 {end_of_verse}
+
+
+
+
+
+
+
+
+

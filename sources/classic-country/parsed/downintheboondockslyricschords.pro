@@ -1,6 +1,9 @@
 {meta: title Down In The Boondocks}
 {meta: artist Billy Joe Royal}
 {meta: composer Joe South}
+{meta: x_source classic-country}
+{meta: x_source_file downintheboondockslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down in the boondocks [C]down in the boondocks
@@ -42,3 +45,8 @@ I love her she loves me but [C]I don't fit in her society
 [D7]Lord have mercy on a [C]boy from down in the [G]boondocks
 [D7]Lord have mercy on a [C]boy from down in the [G]boondocks
 {end_of_verse}
+
+
+
+
+

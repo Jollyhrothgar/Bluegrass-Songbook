@@ -1,5 +1,8 @@
 {meta: title Hello Love Goodbye}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file hellolovegoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night was [G7]a one night love [C]affair
@@ -42,3 +45,8 @@
 [F]Never fail don’t make friends that [C]way
 [F]Hello love [C]goodbye bye  [C][F]goodbye
 {end_of_verse}
+
+
+
+
+

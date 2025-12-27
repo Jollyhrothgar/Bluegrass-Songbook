@@ -1,6 +1,9 @@
 {meta: title All I Can Handle At Home}
 {meta: artist Moe Bandy}
 {meta: composer Jim Owen}
+{meta: x_source classic-country}
+{meta: x_source_file allicanhandleathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Came in here to do some drinkin' [F]not what you're thinkin'
@@ -40,3 +43,8 @@ It [C]wouldn't be any help to you [F]even if I wanted to
 {start_of_verse: Verse 4}
 I got all I can [G7]handle at [C]home
 {end_of_verse}
+
+
+
+
+

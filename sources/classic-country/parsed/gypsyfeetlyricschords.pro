@@ -1,6 +1,9 @@
 {meta: title Gypsy Feet}
 {meta: artist Jim Reeves}
 {meta: composer Nellie Smith and Leona Butrum}
+{meta: x_source classic-country}
+{meta: x_source_file gypsyfeetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gypsy feet will wander gypsy feet will [G7]stray
@@ -29,3 +32,6 @@ Hearts like mine are crumbled beneath your gypsy [C]feet
 If [C]I could tame your restless heart would [F]make my life complete
 But I can't put an [C]anchor [G7]on those gypsy [C]feet
 {end_of_verse}
+
+
+

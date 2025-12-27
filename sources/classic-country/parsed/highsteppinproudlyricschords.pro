@@ -1,6 +1,9 @@
 {meta: title High Steppin’ Proud}
 {meta: artist Tom T. Hall}
 {meta: composer Hillman Hall}
+{meta: x_source classic-country}
+{meta: x_source_file highsteppinproudlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was a high [F]steppin' proud man one [C]time
@@ -36,3 +39,7 @@ Beckon to your every wish and your every [C]need
 Oh I know it won't be long before [F]I break those [C]vows
 And once again become a man [G7]high steppin' [C]proud
 {end_of_verse}
+
+
+
+

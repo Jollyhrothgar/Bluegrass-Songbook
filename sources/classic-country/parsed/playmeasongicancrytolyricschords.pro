@@ -1,6 +1,9 @@
 {meta: title Play Me A Song I Can Cry To}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file playmeasongicancrytolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I set in with a band [C]down in [G]Dallas
@@ -40,3 +43,8 @@ Play me a [C]song I can cry [G]to
 {start_of_verse: Verse 5}
 [C]Play me a [D7]song that sounds like [G]tears
 {end_of_verse}
+
+
+
+
+

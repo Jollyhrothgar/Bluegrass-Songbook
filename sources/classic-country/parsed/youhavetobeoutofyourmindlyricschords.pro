@@ -1,6 +1,9 @@
 {meta: title You Have To Be Out Of Your Mind}
 {meta: artist Norma Jean}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file youhavetobeoutofyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say love is the thing makes the [F]world go around
@@ -33,3 +36,7 @@ And you [G7]have to be out of your [C]mind
 {start_of_verse: Verse 4}
 And you [G7]have to be out of your [C]mind
 {end_of_verse}
+
+
+
+

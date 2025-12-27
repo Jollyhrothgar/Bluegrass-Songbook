@@ -1,6 +1,9 @@
 {meta: title Blue Rain Coming Down}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melson and Roy K. Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file blueraincomingdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Silently I hear the [F]sound of the [G7]blue rain come [C]down
@@ -31,3 +34,7 @@ To[C]morrow will be filled with the lonely
 I [F]remember you [A#7]all alone walking [G7]on 
 And [A#7]crying losing [C]you in the blue [F]blue rain 
 {end_of_verse}
+
+
+
+

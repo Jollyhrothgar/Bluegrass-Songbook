@@ -1,6 +1,9 @@
 {meta: title All My Roads Lead Back To You}
 {meta: artist Ronnie Milsap}
 {meta: composer Donald Tolle}
+{meta: x_source classic-country}
+{meta: x_source_file allmyroadsleadbacktoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walked down some dusty [C]highways  I've [G]loved more than just a [D7]few
@@ -36,3 +39,7 @@ All my [A7]roads lead back to [D7]you
 [G]It's made no [C]difference [G]where I go  or [C]what I do
 [G]All my roads [D7]lead back to [G]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Is The Answer}
 {meta: artist Kitty Wells}
 {meta: composer Bill Phillips and Wayne Manning}
+{meta: x_source classic-country}
+{meta: x_source_file loveistheanswerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love love love is the [F]answer
@@ -59,3 +62,12 @@ You can do your part by holding to the Golden Rule
 Love love love is the [F]answer
 [G7]Answer everybody's looking [C]for
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Lady Like You}
 {meta: artist Glen Campbell}
 {meta: composer Keith R. Stegall and James D. Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file aladylikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I [F]am [C]just an [F]ordinary [C]man
@@ -44,3 +47,9 @@ Was chosen to be [G7]blessed with a [C]lady [F]like [C]you
 {start_of_verse: Verse 7}
 A [F]lady like [C]you
 {end_of_verse}
+
+
+
+
+
+

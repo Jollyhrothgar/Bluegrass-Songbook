@@ -1,5 +1,8 @@
 {meta: title No Tomorrow In Sight}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file notomorrowinsightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The children are sleeping [G7]our talk can begin 
@@ -35,3 +38,7 @@ To [D7]carry us through the long [G7]nights
 The [F]clock's striking midnight [C]yesterday's gone 
 And [G7]there's no tomorrow in [C]sight
 {end_of_verse}
+
+
+
+

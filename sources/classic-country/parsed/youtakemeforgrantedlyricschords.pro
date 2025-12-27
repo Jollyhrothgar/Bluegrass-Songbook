@@ -1,5 +1,8 @@
 {meta: title You Take Me For Granted}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file youtakemeforgrantedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My legs and my feet 
@@ -30,3 +33,7 @@ Not [G]knowing if [D7]I've done my [G]part
 As sure as the sunshine's  I'll be [C]a lifetime 
 Not [G]knowing if [D7]I've done my [G]part
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Leave The Leaving Up To Me}
 {meta: artist Leona Williams}
 {meta: composer Justin Trevino and Levi Mullen}
+{meta: x_source classic-country}
+{meta: x_source_file dontleavetheleavinguptomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re telling me it’s over and there’s nothing left to [C7]say
@@ -33,3 +36,7 @@ Just [F]don’t leave the [G7]leaving up to [C]me
 {start_of_verse: Verse 4}
 No [F]don’t leave the [G7]leaving up to [C]me
 {end_of_verse}
+
+
+
+

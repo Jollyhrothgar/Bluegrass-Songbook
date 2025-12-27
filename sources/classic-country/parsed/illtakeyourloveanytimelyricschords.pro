@@ -1,6 +1,9 @@
 {meta: title I'll Take Your Love Anytime}
 {meta: artist Don Williams}
 {meta: composer Tommy Rocco, Charlie Black, Austin Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file illtakeyourloveanytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have seen this old cold world go gold [G7]and silver [C]crazy
@@ -40,3 +43,8 @@ Some people live to fill their pockets
 [F]If money buys them [C]happiness that's [A#7]alright to them [F]I [C]guess
 [F]Money sure can [C]buy a lot but it [A#7]can't buy [G7]what I've [C]got
 {end_of_verse}
+
+
+
+
+

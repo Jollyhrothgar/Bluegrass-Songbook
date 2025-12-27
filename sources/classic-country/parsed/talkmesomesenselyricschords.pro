@@ -1,6 +1,9 @@
 {meta: title Talk Me Some Sense}
 {meta: artist Bobby Bare}
 {meta: composer Keith Colley and Nancie Mantz}
+{meta: x_source classic-country}
+{meta: x_source_file talkmesomesenselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Talk me some [Dm]sense [G7]talk me some [C]sense
@@ -36,3 +39,7 @@ Put a [Dm]song of love and [G7]laughter on your [C]face
 Talk me some [Dm]sense [G7]talk me some [C]sense
 Cause the [Dm]way you're talkin' [G7]now is a dis[C]grace
 {end_of_verse}
+
+
+
+

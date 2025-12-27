@@ -1,5 +1,8 @@
 {meta: title She's My Ever Loving Machine}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file shesmyeverlovingmachinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well friends you know once I was [G7]took in
@@ -63,3 +66,11 @@ Her hips are on wires [C]attached to a wheel
 And her spine is a coil that [F]I now and then oil
 She's [G7]my ever loving [C]machine
 {end_of_verse}
+
+
+
+
+
+
+
+

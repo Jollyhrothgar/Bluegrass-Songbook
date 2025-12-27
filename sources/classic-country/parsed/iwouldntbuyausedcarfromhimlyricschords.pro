@@ -1,6 +1,9 @@
 {meta: title I Wouldn't Buy A Used Car From Him}
 {meta: artist Norma Jean}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldntbuyausedcarfromhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes it's true that he and I were [F]sweethearts
@@ -36,3 +39,7 @@ I [G7]wouldn't buy a used car from [F]him
 [G7]Those kind will always get you in the [F]end
 [G7]I wouldn't buy a used car from [C]him
 {end_of_verse}
+
+
+
+

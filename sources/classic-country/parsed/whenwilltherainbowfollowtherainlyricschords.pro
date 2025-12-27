@@ -1,6 +1,9 @@
 {meta: title When Will The Rainbow Follow The Rain}
 {meta: artist Carl Smith}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file whenwilltherainbowfollowtherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You came along but now you're gone
@@ -34,3 +37,7 @@
 [G7]Then turned me loose [C]on lonesome [G]street
 [D7]When will the [C]rainbow follow the [G]rain
 {end_of_verse}
+
+
+
+

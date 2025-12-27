@@ -1,6 +1,9 @@
 {meta: title One Thin Dime}
 {meta: artist Reba McEntire}
 {meta: composer Michael Heeney and Jackson Leap}
+{meta: x_source classic-country}
+{meta: x_source_file onethindimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your mind's made [F]up you're gonna [C]leave
@@ -50,3 +53,9 @@ One thin [D7]dime is all you [G7]need and I'll be [C]there
 These arms of [F]mine yeah they're always [C]ope[A7]n
 One thin [D7]dime is all you [G7]need and I'll be [C]there
 {end_of_verse}
+
+
+
+
+
+

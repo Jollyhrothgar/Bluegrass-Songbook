@@ -1,6 +1,9 @@
 {meta: title Where Is The Christ In Christmas}
 {meta: artist Slim Whitman}
 {meta: composer Dallas Daughtry, Pete Drake, Jody Lavender}
+{meta: x_source classic-country}
+{meta: x_source_file whereistheChristinChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Streets full of shoppers [C]bright window [Am]displays
@@ -41,3 +44,8 @@ Turn back the years to the [C]old holi[Am]days
 [C]Let there be Christ in [G]Christ[Em]mas 
 [A7]Christmas [D7]belongs to [G]Him
 {end_of_verse}
+
+
+
+
+

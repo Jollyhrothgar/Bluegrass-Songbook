@@ -1,6 +1,9 @@
 {meta: title Rootie Tootie}
 {meta: artist Hank Williams}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file rootietootielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Met my future wife today
@@ -49,3 +52,8 @@ When she signs that dotted line
 [C]Yipsy doodle (Rootie Tootie)
 [G7]Rootie Tootie she's my Friday [C]gal
 {end_of_verse}
+
+
+
+
+

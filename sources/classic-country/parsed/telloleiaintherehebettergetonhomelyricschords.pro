@@ -1,6 +1,9 @@
 {meta: title Tell Ole I Ain't Here He Better Get On Home}
 {meta: artist Moe Bandy}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file telloleiaintherehebettergetonhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I was playing the pinball praying for a ten ball
@@ -41,3 +44,9 @@ She [G7]let her fingers do the walking till she's found out where you're [C]at
 {start_of_verse: Verse 6}
 [G7]Tell ole I ain't here he better get on [C]home
 {end_of_verse}
+
+
+
+
+
+

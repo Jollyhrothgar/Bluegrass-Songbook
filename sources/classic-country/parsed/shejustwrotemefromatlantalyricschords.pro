@@ -1,6 +1,9 @@
 {meta: title She Just Wrote Me From Atlanta}
 {meta: artist Nat Stuckey}
 {meta: composer Vincent Matthews}
+{meta: x_source classic-country}
+{meta: x_source_file shejustwrotemefromatlantalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She wrote to tell me she [F]likes At[C]lanta
@@ -65,3 +68,11 @@ I'll lay [G7]some words on [C]her
 She won't ever forget
 [G7]Where's that [C]ticket office 
 {end_of_verse}
+
+
+
+
+
+
+
+

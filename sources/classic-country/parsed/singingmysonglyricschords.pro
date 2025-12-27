@@ -1,6 +1,9 @@
 {meta: title Singing My Song}
 {meta: artist Tammy Wynette}
 {meta: composer Glenn Sutton and Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file singingmysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here's a song I love to [D7]sing 
@@ -27,3 +30,6 @@ But [F]it makes him come home [D7]at [C]night
 And when he's [F]home I makes [C]sure he's never [F]alone
 And that's  [C]why I keep [G7]singing my [C]song
 {end_of_verse}
+
+
+

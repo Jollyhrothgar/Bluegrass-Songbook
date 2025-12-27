@@ -1,6 +1,9 @@
 {meta: title Till the Rivers All Run Dry}
 {meta: artist Don Williams}
 {meta: composer Wayon Holyfield and Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file tilltheriversallrundrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Till the rivers [C]all run [G]dry 
@@ -36,3 +39,7 @@ Till the sun falls [D7]from the [G]sky
 Till life on earth [C]is [G]through 
 [D7]I'll be [C]needing [G]you
 {end_of_verse}
+
+
+
+

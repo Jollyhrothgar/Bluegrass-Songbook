@@ -1,6 +1,9 @@
 {meta: title Never Be One}
 {meta: artist Alabama}
 {meta: composer Teddy Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file neverbeonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Drift off and [D7]dream in your [C]paper doll [G]world
@@ -29,3 +32,6 @@ The [D7]two's are [C]tumbling on [G]in
 Daddy's little [G7]girl is growing [C]up in the [Am]world
 You'll [C]never be [D7]one a[G]gain [Am]     [D7]       
 {end_of_verse}
+
+
+

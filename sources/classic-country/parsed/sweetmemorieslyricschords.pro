@@ -1,6 +1,9 @@
 {meta: title Sweet Memories}
 {meta: artist Hank Locklin}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file sweetmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My world is like a river 
@@ -32,3 +35,6 @@ Clinging [D7]to your [G]memory
 [D7]Sweet [G]memories  [B7]sweet [Em]memories
 [G]Memories of the [D7]sweetest love I [G]know
 {end_of_verse}
+
+
+

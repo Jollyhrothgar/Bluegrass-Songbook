@@ -1,6 +1,9 @@
 {meta: title For Christmas}
 {meta: artist Ray Price}
 {meta: composer Jo Logan}
+{meta: x_source classic-country}
+{meta: x_source_file forChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For Christmas  I want a stocking filled with memories
@@ -22,3 +25,5 @@ I want to hear the sounds [C]Silent Night)
 For Christmas I want a star to be my guiding light 
 Leading me home upon this [G7]Christmas night  for [C]Christmas
 {end_of_verse}
+
+

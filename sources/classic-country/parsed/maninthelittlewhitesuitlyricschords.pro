@@ -1,6 +1,9 @@
 {meta: title Man In The Little White Suit}
 {meta: artist Charlie Walker}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file maninthelittlewhitesuitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Smoking cigarettes by the carton drinking [C]coffee by the pound
@@ -40,3 +43,8 @@ Then be a fool I [D7]am because of [G]you
 {start_of_verse: Verse 4}
 Yeah I’m sitting here waiting for the [D7]man in the little white [G]suit
 {end_of_verse}
+
+
+
+
+

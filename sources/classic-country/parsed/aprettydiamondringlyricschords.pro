@@ -1,6 +1,9 @@
 {meta: title A Pretty Diamond Ring}
 {meta: artist T.G. Sheppard}
 {meta: composer Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file aprettydiamondringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He put his arms around her he gave her a pretty diamond [G7]ring
@@ -36,3 +39,8 @@ What a [F]tangled web we weave when we [C]practice to deceive
 What a [F]tangled web we weave when we [C]practice to deceive 
 [G7]There's no such thing as a perfect [C]life
 {end_of_verse}
+
+
+
+
+

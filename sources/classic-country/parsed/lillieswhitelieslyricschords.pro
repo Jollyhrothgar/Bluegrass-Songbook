@@ -1,6 +1,9 @@
 {meta: title Lillie's White Lies}
 {meta: artist Johnny Bush}
 {meta: composer Wood Newton and Billy Ray Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file lillieswhitelieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I know I’m not the best looking guy in the world
@@ -37,3 +40,7 @@ Guess I was blinded by [D7]Lillie's white [G]lies
 {start_of_verse: Verse 4}
 Guess I was blinded by [D7]Lillie's white [C]l-ie[G]s
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Cold Windy City Of Chicago}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file coldwindycityofchicagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In this cold windy city of Chi[C]cago 
@@ -46,3 +49,9 @@ Till the [G]cold windy [D7]city of Chi[G]cago
 {start_of_verse: Verse 6}
 Till the cold windy [D7]city of Chi[G]cago
 {end_of_verse}
+
+
+
+
+
+

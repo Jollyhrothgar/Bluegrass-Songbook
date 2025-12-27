@@ -1,6 +1,9 @@
 {meta: title How Long Must You Keep Me A Secret}
 {meta: artist Leroy Van Dyke}
 {meta: composer Barry Mann and Larry Kolber}
+{meta: x_source classic-country}
+{meta: x_source_file howlongmustyoukeepmeasecretlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You hold me close you kiss my lips you call me [G7]darlin'
@@ -33,3 +36,7 @@ Oh [Am]darlin' [D7]when are you [G7]gonna be [C]free
 {start_of_verse: Verse 4}
 [D7]When are we [G7]gonna be [C]free
 {end_of_verse}
+
+
+
+

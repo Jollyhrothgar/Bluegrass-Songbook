@@ -1,6 +1,9 @@
 {meta: title Let's Walk Away Strangers}
 {meta: artist Carl Smith}
 {meta: composer Mel Tillis and Benny Joy}
+{meta: x_source classic-country}
+{meta: x_source_file letswalkawaystrangerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's walk away strangers pretend we've never met
@@ -29,3 +32,6 @@ Let's walk away strangers pretend we've never met
 [C]Let's walk away strangers pretend we've never met
 [F]Forget me lover [C]and I'll [G7]forget [C]you
 {end_of_verse}
+
+
+

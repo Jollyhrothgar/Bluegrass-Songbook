@@ -1,6 +1,9 @@
 {meta: title This Stranger (My Little Girl)}
 {meta: artist Loretta Lynn}
 {meta: composer Ruby VanNoy, Ann Burns, Barbara Fairchild}
+{meta: x_source classic-country}
+{meta: x_source_file thisstrangermylittlegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today for her it's [F]only been [G7]thirteen years of [C]livin'
@@ -36,3 +39,7 @@ And how when somethin' [F]troubled her [D7]she'd always run to [G7]me
 [G7]Can she feel my love for her [C]pulling against her [F]world
 I [G7]love her so this stranger  my little [C]girl
 {end_of_verse}
+
+
+
+

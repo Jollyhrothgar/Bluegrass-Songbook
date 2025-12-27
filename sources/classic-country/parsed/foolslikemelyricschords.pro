@@ -1,6 +1,9 @@
 {meta: title Fools Like Me}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jack Clement and Murphy Maddux}
+{meta: x_source classic-country}
+{meta: x_source_file foolslikemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody tells me love is [G7]blind
@@ -29,3 +32,6 @@
 [C]Maybe baby I'm not wise enough to [F]see
 [C]But where would love [G7]be without fools like [C]me
 {end_of_verse}
+
+
+

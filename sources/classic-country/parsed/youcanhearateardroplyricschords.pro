@@ -1,6 +1,9 @@
 {meta: title You Can Hear A Teardrop}
 {meta: artist Johnny Paycheck}
 {meta: composer Mack Vickery and John Wiggins}
+{meta: x_source classic-country}
+{meta: x_source_file youcanhearateardroplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your kisses have been tasting like goodbye
@@ -26,3 +29,6 @@ And it's so [C]quiet you can [F]hear a [C]teardrop
 {start_of_verse: Verse 4}
 It's so quiet you can [F]hear my [C]teardrop
 {end_of_verse}
+
+
+

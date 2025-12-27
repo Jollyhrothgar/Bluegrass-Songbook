@@ -1,6 +1,9 @@
 {meta: title Woman Without Love}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file womanwithoutlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Her eyes tell the story so well she tries hard to [D7]hide
@@ -42,3 +45,9 @@ But a [D7]woman is nothing at [G]all
 Yeah a man without love's only half of a [C]man 
 But a [D7]woman is nothing at [G][C]a-ll
 {end_of_verse}
+
+
+
+
+
+

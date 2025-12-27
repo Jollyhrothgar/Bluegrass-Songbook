@@ -1,6 +1,9 @@
 {meta: title Husband Hunting}
 {meta: artist Lynn Anderson}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file husbandhuntinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm lonely and I'm lookin' for a husband
@@ -50,3 +53,9 @@ Then that's where I'll look for my [F]man
 It's a [Dm]payday and he's nowhere to be [G7]found
 So I'm husband hunting [C]again
 {end_of_verse}
+
+
+
+
+
+

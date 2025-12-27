@@ -1,6 +1,9 @@
 {meta: title I Don't Love You Much}
 {meta: artist Emmylou Harris}
 {meta: composer Guy Clark}
+{meta: x_source classic-country}
+{meta: x_source_file idontloveyoumuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't love you much do I
@@ -55,3 +58,12 @@ Just [F]watch me light up when you walk [G7]in
 I don't love you much do I
 [F]Remember how I kissed you in the [G7]hall
 {end_of_verse}
+
+
+
+
+
+
+
+
+

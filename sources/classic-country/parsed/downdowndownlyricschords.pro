@@ -1,6 +1,9 @@
 {meta: title Down Down Down}
 {meta: artist Buck Owens}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file downdowndownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm goin' down down down goin' [C]down down down
@@ -40,3 +43,8 @@ Since you [D7]left I'm a goin' down down [G]down
 {start_of_verse: Verse 4}
 Since you [D7]left I'm a goin' down down [G]down
 {end_of_verse}
+
+
+
+
+

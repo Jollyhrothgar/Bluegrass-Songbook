@@ -1,6 +1,9 @@
 {meta: title Heaven Is Just A Touch Away}
 {meta: artist Cal Smith}
 {meta: composer Carl Knight, Charles Pendleton, Abe Potwein}
+{meta: x_source classic-country}
+{meta: x_source_file heavenisjustatouchawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I awake and there [D7]you are beside [G]me
@@ -23,3 +26,5 @@ And I want [A7]to let you know in so many different [D7]ways
 And [D7]heaven is just a touch [G]away
 [C]Oh and [D7]heaven is just a touch [G]away
 {end_of_verse}
+
+

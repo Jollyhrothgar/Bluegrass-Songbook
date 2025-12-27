@@ -1,6 +1,9 @@
 {meta: title Mommy Look Santa Is Crying}
 {meta: artist Stonewall Jackson}
 {meta: composer Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file mommylooksantaiscryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mommy look old [C]Santa is [G]crying
@@ -36,3 +39,7 @@ Just a while ago he was [C]smiling from ear to [G]ear
 Until I told him [C]all that I [G]wanted
 Was my [C]daddy home for [D7]Christmas this [G]year
 {end_of_verse}
+
+
+
+

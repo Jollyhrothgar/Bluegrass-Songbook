@@ -1,6 +1,9 @@
 {meta: title Take Me To Heaven}
 {meta: artist Tanya Tucker}
 {meta: composer Richard Mainegra and Susan Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file takemetoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you love to make love like I love it 
@@ -28,3 +31,5 @@ But [Dm]tomorrow please [G7]take me with [C]you
 Ooh [G7]take me to heaven [F]tonight my [G7]love 
 But [Dm]tomorrow please [G7]take me with [C]you
 {end_of_verse}
+
+

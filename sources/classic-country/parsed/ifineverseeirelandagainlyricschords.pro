@@ -1,6 +1,9 @@
 {meta: title If I Never See Ireland Again}
 {meta: artist Red Steagall}
 {meta: composer Steve Spurgin}
+{meta: x_source classic-country}
+{meta: x_source_file ifineverseeirelandagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Molly stood crying her [G7]tears falling down 
@@ -68,3 +71,11 @@ To [F]carry me [C]safely to that [G7]far away [Am]shore
 [C]Where I’ll [F]have a new life to [G7]begin 
 If I [F]never see [G7]Ireland [C]again
 {end_of_verse}
+
+
+
+
+
+
+
+

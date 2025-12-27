@@ -1,5 +1,8 @@
 {meta: title They Always Remind Me Of You}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file theyalwaysremindmeofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Honky tonk music and [C]soft dim [Am]lights
@@ -39,3 +42,8 @@ They [D7]always remind me of [G]you
 {start_of_verse: Verse 4}
 They [D7]always remind me of [G]you
 {end_of_verse}
+
+
+
+
+

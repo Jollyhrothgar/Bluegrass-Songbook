@@ -1,6 +1,9 @@
 {meta: title Make Me Over}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file makemeoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Change of our [C]plans put my [G]life in your [D7]hands I’m a [G]cake you can bake
@@ -23,3 +26,5 @@ But if I’m not [Am]right  [D7]make me [G]over
 And you won’t even [Am]plan  [D7]to make me [G]over 
 Though you don’t even [Am]plan  [D7]to make me [G]over 
 {end_of_verse}
+
+

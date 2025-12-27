@@ -1,6 +1,9 @@
 {meta: title Good Woman Blues}
 {meta: artist Mel Tillis}
 {meta: composer Ken McDuffie}
+{meta: x_source classic-country}
+{meta: x_source_file goodwomanblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My name you will find on the tail of my shirt
@@ -43,3 +46,8 @@ Well sunny California I can hear you call
 [G]I strike like the lightning and bringing good news
 [C]Always a-singing these good [D7]woman [G]blues
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lefty's Old Guitar}
 {meta: artist J.D. Crowe & the New South}
 {meta: composer Dave Maggard}
+{meta: x_source classic-country}
+{meta: x_source_file leftysoldguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't make much [D7]music these [G]days
@@ -50,3 +53,9 @@ I'm a simple star of [D7]Lefty's old [G]guitar
 Tag:
 Oh I'm proud to be [D7]Lefty's old [G]guitar
 {end_of_verse}
+
+
+
+
+
+

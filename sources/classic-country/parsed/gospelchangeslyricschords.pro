@@ -1,6 +1,9 @@
 {meta: title Gospel Changes}
 {meta: artist John Denver}
 {meta: composer Jack Williams}
+{meta: x_source classic-country}
+{meta: x_source_file gospelchangeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Prodigal Son He'd [G7]been away a [Am]while
@@ -47,3 +50,9 @@ Now we've [Am]got new names and [F]faces [E7]this time a [Am]round
 {start_of_verse: Verse 6}
 Gospel [C]Changes Lord [G7]still goin' [C]down
 {end_of_verse}
+
+
+
+
+
+

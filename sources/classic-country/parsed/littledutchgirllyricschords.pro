@@ -1,6 +1,9 @@
 {meta: title Little Dutch Girl}
 {meta: artist George Morgan}
 {meta: composer Mel Tillis and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file littledutchgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Far across the sea in the land of the [F]windmill
@@ -15,3 +18,4 @@ We [F]walked through the fields of [C]red and yellow tulips
 But the [F]time came for leaving now my [C]poor heart is grievin'
 [G7]Cause it holds a memory of a [F]Little Dutch [C]Girl
 {end_of_verse}
+

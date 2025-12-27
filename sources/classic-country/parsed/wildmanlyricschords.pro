@@ -1,6 +1,9 @@
 {meta: title Wild Man}
 {meta: artist Ricky Van Shelton}
 {meta: composer Richard C. Giles and Susan Longacre}
+{meta: x_source classic-country}
+{meta: x_source_file wildmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Running down the road same old same old
@@ -36,3 +39,7 @@ My [C]momma always said son don't you let it [G7]get out of [C]hand
 [F]If I go crazy now and then baby you've got to understand
 Oh I'm a [C]wild man [F]yeah that's [C]what I am [F]I’m a wild [C]man
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Make Believe}
 {meta: artist Ricky Nelson}
 {meta: composer Johnny Rivers}
+{meta: x_source classic-country}
+{meta: x_source_file illmakebelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll make believe [F]that I don't [C]miss you
@@ -48,3 +51,9 @@ You're on my [C]mind [G7]both night and [C]day
 I think of you [F]both night and [C]day
 You're on my mind [G7]both night and [C]day
 {end_of_verse}
+
+
+
+
+
+

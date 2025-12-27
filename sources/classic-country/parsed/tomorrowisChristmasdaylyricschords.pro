@@ -1,6 +1,9 @@
 {meta: title Tomorrow Is Christmas Day}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrowisChristmasdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Looky there who's a comin' see 
@@ -47,3 +50,9 @@ For [C]tomorrow is [G7]Christmas [C]day [F]hey [C]tomorrow is [G7]Christmas [C]d
 {start_of_verse: Verse 6}
 [F]Hey [C]tomorrow is [G7]Christmas [C]day
 {end_of_verse}
+
+
+
+
+
+

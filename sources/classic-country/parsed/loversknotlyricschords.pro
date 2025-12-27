@@ -1,6 +1,9 @@
 {meta: title Lover's Knot}
 {meta: artist Anne Murray}
 {meta: composer Richard Supa}
+{meta: x_source classic-country}
+{meta: x_source_file loversknotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here we are tangled up again
@@ -42,3 +45,8 @@ Baby un[F]tie untie the lover's [C]knot
 Baby untie un[F]tie the lover's [C]knot
 Baby untie un[F]tie the lover's [C]knot
 {end_of_verse}
+
+
+
+
+

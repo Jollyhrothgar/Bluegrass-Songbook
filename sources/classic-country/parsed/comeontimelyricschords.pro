@@ -1,6 +1,9 @@
 {meta: title Come On Time}
 {meta: artist Willie Nelson}
 {meta: composer Buddy Cannon and Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file comeontimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Time is my friend my friend
@@ -41,3 +44,6 @@ It [G]looks like you're [D7]winning the [G]race
 Come on time [C]come on time
 It [G]looks like you're [D7]winning the [G]race
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If I Make It Through Tonight}
 {meta: artist Billy Parker}
 {meta: composer Jeannie Seely and Virginia Gail Talley}
+{meta: x_source classic-country}
+{meta: x_source_file ifimakeitthroughtonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You just told me [G7]that it's [C]over 
@@ -48,3 +51,9 @@ If I [G7]make it through the [C]night
 For to[F]morrow's still [C]another day
 If I [G7]make it through the [F]nigh[C]t
 {end_of_verse}
+
+
+
+
+
+

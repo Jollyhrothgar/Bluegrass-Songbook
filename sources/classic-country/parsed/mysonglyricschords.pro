@@ -1,5 +1,8 @@
 {meta: title My Song}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file mysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've heard songs about a broken hearted couple who have fought
@@ -35,3 +38,9 @@ I sit here by myself and cry and cry and cry and cry
 She filled my life with happy now the happiness is gone
 [F]Oh I'll try to soothe my sorrow in the verses of my [C]song
 {end_of_verse}
+
+
+
+
+
+

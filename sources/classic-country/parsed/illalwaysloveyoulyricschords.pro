@@ -1,5 +1,8 @@
 {meta: title I'll Always Love You}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file illalwaysloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll always love you like I used to love you 
@@ -35,3 +38,7 @@ When your blue eyes made me [G7]fall
 When the rest are gone I'll still own 
 The sweetest of them [C]all
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Spirit In The Sky}
 {meta: artist The Bellamy Brothers}
 {meta: composer Norman Greenbaum}
+{meta: x_source classic-country}
+{meta: x_source_file spiritintheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I die and they lay me to rest
@@ -49,3 +52,9 @@ Gonna [D7]go to the place that's the [G]best
 {start_of_verse: Verse 6}
 Gonna [D7]go to the place that's the [G]best
 {end_of_verse}
+
+
+
+
+
+

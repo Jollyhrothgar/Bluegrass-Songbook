@@ -1,6 +1,9 @@
 {meta: title I Still Dream About You}
 {meta: artist Tammy Wynette}
 {meta: composer Agnes Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file istilldreamaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder if you [F]wonder
@@ -40,3 +43,8 @@ And I [C]still dream [G7]about you now and [C]then
 {start_of_verse: Verse 4}
 [F]Yes I [C]still dream [G7]about you now and [C]then
 {end_of_verse}
+
+
+
+
+

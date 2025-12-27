@@ -1,6 +1,9 @@
 {meta: title When I Sing For Him}
 {meta: artist Dolly Parton}
 {meta: composer Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file whenisingforhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I sing [C]for him oh praise God's holy [G]name 
@@ -22,3 +25,5 @@ When I [C]move to my new home [G]hallelujah
 Oh the [C]angels will be singing hallelujah [C][G]amen 
 When I [G]sing for Him  [D7]when I [C]sing for [G]Him
 {end_of_verse}
+
+

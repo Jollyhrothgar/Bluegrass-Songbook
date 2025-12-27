@@ -1,6 +1,9 @@
 {meta: title I Am Bound For The Promised Land}
 {meta: artist Hank Williams}
 {meta: composer M. Durham and Samuel Stennett}
+{meta: x_source classic-country}
+{meta: x_source_file iamboundforthepromisedlandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On Jordan's stormy [G7]banks I [C]stand
@@ -57,3 +60,10 @@ I’m [C]bound for the promised [G7]land
 Oh who will come and go [C]with me
 I am bound for the [G7]promised [C]land
 {end_of_verse}
+
+
+
+
+
+
+

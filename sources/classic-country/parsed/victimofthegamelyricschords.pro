@@ -1,6 +1,9 @@
 {meta: title Victim Of The Game}
 {meta: artist Garth Brooks}
 {meta: composer Mark D. Sanders and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file victimofthegamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it took a little time 
@@ -64,3 +67,11 @@ I can really feel the [C]flame
 Starrin' [D7]in the [G]mirror 
 At a [D7]victim of the [G]game
 {end_of_verse}
+
+
+
+
+
+
+
+

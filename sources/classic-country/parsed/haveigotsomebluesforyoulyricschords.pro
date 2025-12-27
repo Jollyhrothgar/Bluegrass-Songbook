@@ -1,6 +1,9 @@
 {meta: title Have I Got Some Blues For You}
 {meta: artist Charley Pride}
 {meta: composer David Chamberlain}
+{meta: x_source classic-country}
+{meta: x_source_file haveigotsomebluesforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The one you love stopped by to see me [C]today 
@@ -33,3 +36,7 @@ But she [G]told me she'd [D7]found somebody [G]new
 {start_of_verse: Verse 4}
 Have I got some [D7]blues for [G]you
 {end_of_verse}
+
+
+
+

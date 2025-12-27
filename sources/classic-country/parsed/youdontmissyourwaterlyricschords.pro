@@ -1,6 +1,9 @@
 {meta: title You Don't Miss Your Water}
 {meta: artist Jerry Lee Lewis}
 {meta: composer William Bell}
+{meta: x_source classic-country}
+{meta: x_source_file youdontmissyourwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the beginning honey you really loved me
@@ -26,3 +29,6 @@ You don't miss your [C]water [F]till your well runs [C]dry
 {start_of_verse: Verse 4}
 [F]Yes you don't miss your [C]water [F]till your well runs [C]dry [F]   [C]
 {end_of_verse}
+
+
+

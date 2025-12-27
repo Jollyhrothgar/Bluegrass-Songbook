@@ -1,6 +1,9 @@
 {meta: title Two Lonely Hearts Out Of Hand}
 {meta: artist Vern Gosdin}
 {meta: composer Buddy Cannon, Robert John Jones, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file twolonelyheartsoutofhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was sittin’ all alone [C]when you came strollin’ in
@@ -35,3 +38,7 @@ Lost in the love we’re feeling
 {start_of_verse: Verse 5}
 [F]Two [C]lonely [G7]hearts [D7]out of [C]hand  out of [G]hand
 {end_of_verse}
+
+
+
+

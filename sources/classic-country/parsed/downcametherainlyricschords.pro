@@ -1,6 +1,9 @@
 {meta: title Down Came The Rain}
 {meta: artist Bill Anderson}
 {meta: composer Eddie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file downcametherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You told me that you'd love me
@@ -43,3 +46,9 @@ You left me without warning
 [C7]Still calling your [F]name
 [C]And down [G7]down down came the [C]rain
 {end_of_verse}
+
+
+
+
+
+

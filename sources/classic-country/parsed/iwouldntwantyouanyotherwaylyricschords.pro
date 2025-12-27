@@ -1,6 +1,9 @@
 {meta: title I Wouldn't Want You Any Other Way}
 {meta: artist Wanda Jackson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldntwantyouanyotherwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't put my [F]finger on this [C]love of ours[G7]
@@ -32,3 +35,6 @@ And [C]I wouldn't want you [G7]any other [C]way
 I could [F]ask for nothing [C]more[G7]
 And [C]I wouldn't want you [G7]any other [C]way
 {end_of_verse}
+
+
+

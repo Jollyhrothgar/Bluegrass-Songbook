@@ -1,6 +1,9 @@
 {meta: title Help Thou My Unbelief}
 {meta: artist Ray Price}
 {meta: composer Suzy Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file helpthoumyunbelieflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]The [G]wondrous gift that Jesus offers [Am]me  [D7]
@@ -28,3 +31,6 @@ I would know the mira[E7]cle of sweet [Am]relief
 [C]Lord I [G]do believe help Thou my [D7]unbe[G]lief
 [D7]Lord I do be[G]lieve [D]I do be[G]lieve
 {end_of_verse}
+
+
+

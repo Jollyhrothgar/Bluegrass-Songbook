@@ -1,5 +1,8 @@
 {meta: title I Need A Thing Called Love}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file ineedathingcalledlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](I need a thing called [C]love)
@@ -39,3 +42,8 @@ Walking with your nose in the [F]air [G7]
 {start_of_verse: Verse 5}
 [G7]I need a thing called [C]love
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When I'm Gone}
 {meta: artist Sonny James}
 {meta: composer Sonny James and John Skye}
+{meta: x_source classic-country}
+{meta: x_source_file whenimgonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh who will take my place in your [F]heart when I'm [D7]gone
@@ -29,3 +32,6 @@ When I'm [G7]gone gonna take your new love [C]to the places where we go
 Oh [C]you know I'll set you free [F]but I'll hang around to [D7]see
 Who'll [G7]take the place of me when I'm [C]gone
 {end_of_verse}
+
+
+

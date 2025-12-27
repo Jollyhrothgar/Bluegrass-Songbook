@@ -1,5 +1,8 @@
 {meta: title He Walks Beside Me}
 {meta: artist Isla Grant}
+{meta: x_source classic-country}
+{meta: x_source_file hewalksbesidemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He walks be[F]side me and He will [C]guide me
@@ -47,3 +50,9 @@ Jesus will [G7]show me the [C]way
 {start_of_verse: Verse 4}
 Jesus will [G7]show me the [F]w-a[C]-y
 {end_of_verse}
+
+
+
+
+
+

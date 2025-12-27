@@ -1,6 +1,9 @@
 {meta: title You're Part Of Me}
 {meta: artist Roger Miller}
 {meta: composer F. Price and Ray Presley}
+{meta: x_source classic-country}
+{meta: x_source_file yourepartofmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You'll always be a part of me
@@ -33,3 +36,6 @@ You'll always be a part of me at [A7]least in [D7]memory
 You'll always be the day for [G]me
 [C]Because they say tomorrow never [G]comes [D7]you're part of [G]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Always Get Lucky With You}
 {meta: artist George Jones}
 {meta: composer Merle Haggard, Freddy Powers, Gary Church}
+{meta: x_source classic-country}
+{meta: x_source_file ialwaysgetluckwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've had good luck     and bad luck   and [F]no luck  it's true
@@ -24,3 +27,5 @@ There's been [C]good days and bad days
 But [F]when the day is through
 I'll [C]always get [G7]lucky with [C]you
 {end_of_verse}
+
+

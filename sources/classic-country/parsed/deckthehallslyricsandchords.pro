@@ -1,3 +1,6 @@
+{meta: x_source classic-country}
+{meta: x_source_file deckthehallslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Deck the halls with [G7]boughs of [C]holly
@@ -40,3 +43,8 @@ Fa la la [Am]la la la [G7]la la la
 [C]Heedless [G7]of wind and [C]weather
 [F]Fa la la la [C]la la [G7]la la [C]la
 {end_of_verse}
+
+
+
+
+

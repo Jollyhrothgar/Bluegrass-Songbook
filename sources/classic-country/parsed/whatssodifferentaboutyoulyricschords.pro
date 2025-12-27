@@ -1,6 +1,9 @@
 {meta: title What's So Different About You}
 {meta: artist John Anderson}
 {meta: composer Fred F. Carter Jr. and John David Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file whatssodifferentaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tell me what it is you do to me whenever you're around
@@ -31,3 +34,7 @@ Tell me [Am]what it is that's [C]different about [G]you
 And [Cm]girl I [Bm]wish I [Am]knew [Cm]what's [Bm]so [Am]different [D7]about [G]you
 And [Cm]girl I [Bm]wish I [Am]knew [Cm]what's [Bm]so [Am]different [D7]about [G]you
 {end_of_verse}
+
+
+
+

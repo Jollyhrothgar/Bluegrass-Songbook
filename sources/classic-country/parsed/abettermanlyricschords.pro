@@ -1,6 +1,9 @@
 {meta: title A Better Man}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file abettermanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What do you say when it's [Dm]over
@@ -47,3 +50,9 @@ And I'm [F]leav[Em]ing [G7]here a better [C]man
 {start_of_verse: Verse 7}
 Yes I'm [F]leav[Em]ing [G7]here a better [C]man
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Wasted Days And Wasted Nights}
 {meta: artist Freddie Fender}
 {meta: composer Wayne Duncan and Freddy Fender}
+{meta: x_source classic-country}
+{meta: x_source_file wasteddaysandwastednightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Wasted days and wasted [C]nights I have left for you be[G7]hind
@@ -22,3 +25,5 @@ I was so [D7]lonely prayed for you only my [G7]love
 Why should I keep loving [C]you when I know that you're not [G7]true            
 And why should I call your name when you're to blame for making me [C]blue
 {end_of_verse}
+
+

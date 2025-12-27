@@ -1,5 +1,8 @@
 {meta: title A Lonesome Road to Travel}
 {meta: artist Joe Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file alonesomeroadtotravellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I bid farewell to my [C]home so dear
@@ -46,3 +49,9 @@ From [G]this lonesome [C]lonesome [G]road
 {start_of_verse: Verse 6}
 From this lonesome [C]lonesome [G]road
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I've Been So Wrong For So Long}
 {meta: artist Jeanne Pruett}
 {meta: composer Bud Reneau and Hal Bynum}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeensowrongforsolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been so wrong for [F]so long
@@ -27,3 +30,6 @@ I don't [Am]know if I've [D7]ever been [G7]right
 I've been [C]so wrong for [F]so long
 But I'm [C]beggin' you to [G7]take me back [C]tonight
 {end_of_verse}
+
+
+

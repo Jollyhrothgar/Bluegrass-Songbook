@@ -1,6 +1,9 @@
 {meta: title Those Memories Of You}
 {meta: artist Emmylou Harris}
 {meta: composer Alan O'Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file thosememoriesofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Those memories of you [F]still haunt [G]me
@@ -41,3 +44,8 @@ Until the [C]day [D7]they lay me [G]down
 Tag:
 Until the [C]day [D7]they lay me [G]down
 {end_of_verse}
+
+
+
+
+

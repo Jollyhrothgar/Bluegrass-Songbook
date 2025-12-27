@@ -1,6 +1,9 @@
 {meta: title Help Me}
 {meta: artist Kris Kristofferson}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file helpmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord help me walk another [G7]mile just one more mile
@@ -33,3 +36,7 @@ With a [G7]humble heart on bended knee I'm begging You please  [C]help me
 {start_of_verse: Verse 4}
 With a [G7]humble heart on bended knee I'm begging You please  [G]help [C]
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Love To Remember}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file lovetorememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your love's as fresh in my memory as [C]this morning's [G]sunrise
@@ -28,3 +31,6 @@ Each night that I spend with [D7]you
 I [C]still feel your soft touch I can [G]still feel your [C]warm love
 [G]You give me [D7]love to [C]remem[G]ber
 {end_of_verse}
+
+
+

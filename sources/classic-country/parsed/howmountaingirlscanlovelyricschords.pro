@@ -1,6 +1,9 @@
 {meta: title How Mountain Girls Can Love}
 {meta: artist Ricky Skaggs}
 {meta: composer Ruby Rakes}
+{meta: x_source classic-country}
+{meta: x_source_file howmountaingirlscanlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Get down boys go back [G]home 
@@ -42,3 +45,9 @@ You whispered to me as I held you close
 [C]Treat her right never [G]wrong 
 [D7]How mountain girls can [G]love
 {end_of_verse}
+
+
+
+
+
+

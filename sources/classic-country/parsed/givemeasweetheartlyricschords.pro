@@ -1,6 +1,9 @@
 {meta: title Give Me A Sweetheart}
 {meta: artist The Everly Brothers}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file givemeasweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Grow me a [F]heart that won't [C]cheat
@@ -27,3 +30,6 @@
 [F]Give me a touch that is tender and so true
 [C]Give me a sweetheart [G7]give me [C]you
 {end_of_verse}
+
+
+

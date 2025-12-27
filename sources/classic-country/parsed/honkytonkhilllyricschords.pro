@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Hill}
 {meta: artist Lefty Frizzell}
 {meta: composer A.L. Owens and Sanger D. Schafer}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkhilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just outside the [F]law [G]around some where’s [D7]Arkansas
@@ -40,3 +43,8 @@ Now [G]poppa’s lovin’ [F]momma and [G]sending momma [D7]flowers
 And [G]I’m the new half [C]owner of a [G]place called [D7]Honky Tonk [G]Hill
 Now I’m the new half [C]owner of a [G]place called [D7]Honky Tonk [G]Hill
 {end_of_verse}
+
+
+
+
+

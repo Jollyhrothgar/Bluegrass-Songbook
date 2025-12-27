@@ -1,6 +1,9 @@
 {meta: title A Pair Of Wings For Me}
 {meta: artist Carl Smith}
 {meta: composer Dallas Frazier and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file apairofwingsformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never have deserved her all I've ever done was hurt her
@@ -33,3 +36,7 @@ She forgave me and stayed with me
 [F]And if I should live to see the angels carry her [C]away
 [G7]Lord let them bring a pair of wings for [C]me
 {end_of_verse}
+
+
+
+

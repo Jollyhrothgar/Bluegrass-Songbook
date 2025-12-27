@@ -1,5 +1,8 @@
 {meta: title Walking The Floor Over You}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file walkingtheflooroveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You left me and [E7]you went [A7]away
@@ -34,3 +37,7 @@ Now someday you [E7]may be lonesome [A7]too
 {start_of_verse: Verse 5}
 Repeat Chorus
 {end_of_verse}
+
+
+
+

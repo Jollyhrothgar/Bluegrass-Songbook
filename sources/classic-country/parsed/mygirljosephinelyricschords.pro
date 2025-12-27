@@ -1,6 +1,9 @@
 {meta: title My Girl Josephine}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file mygirljosephinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello Josephine how do you do
@@ -26,3 +29,6 @@ Hello Josephine how do you do
 Do you remember me [C]baby like I remember [G]you
 You used to laugh at [D7]me [C]and holler woo woo [G]woo
 {end_of_verse}
+
+
+

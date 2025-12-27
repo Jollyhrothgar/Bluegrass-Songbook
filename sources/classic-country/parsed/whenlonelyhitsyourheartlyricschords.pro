@@ -1,5 +1,8 @@
 {meta: title When Lonely Hits Your Heart}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file whenlonelyhitsyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here I am a [C]doin' things I [D7]said I'd never [G]do
@@ -28,3 +31,6 @@ The [D7]same ol' pain goes on and on it's [A7]more than I can [D7]stand
 To [G]him it just don't [C]matter but it's [D7]tearin' me [G]apart
 That's [C]how it is when [D7]lonely hits your [G]heart
 {end_of_verse}
+
+
+

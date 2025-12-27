@@ -1,6 +1,9 @@
 {meta: title I Don't Wanna}
 {meta: artist Patsy Cline}
 {meta: composer Eddie Miller, W.S. Stevenson, Durwood Haddock}
+{meta: x_source classic-country}
+{meta: x_source_file idontwannalyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't wanta walk unless I'm walkin' with [D7]you
@@ -43,3 +46,8 @@ Don't wanta give unless I'm givin' to [G]you
 Don't wanta be lonesome don't wanta be [C]blue
 Baby [D7]that's how much I love [C]you
 {end_of_verse}
+
+
+
+
+

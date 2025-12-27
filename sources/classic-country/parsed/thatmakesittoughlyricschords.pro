@@ -1,5 +1,8 @@
 {meta: title That Makes It Tough}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file thatmakesittoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]That makes it [C]tough whoa so [G]tough
@@ -23,3 +26,5 @@ Mm mm mm mm [C]whoa oh
 [G]When you [A7]say you don't [D7]care for me no [G]more [C]  [G]  [D7]
 [C]Mm mm mm [A7]mm mm mm [D7]mm mm mm [G]mm
 {end_of_verse}
+
+

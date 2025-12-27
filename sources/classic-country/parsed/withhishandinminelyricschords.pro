@@ -1,6 +1,9 @@
 {meta: title With His Hand In Mine}
 {meta: artist Jean Shepard}
 {meta: composer Larry Butler, Ruth Butler, Lorene Allen}
+{meta: x_source classic-country}
+{meta: x_source_file withhishandinminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There are times for no reason I [G7]feel so [C]alone
@@ -22,3 +25,5 @@
 [G]I could ask for nothin' [G7]more than [C]him [D7]there beside [G]me
 [C]I'll join [G]him in [C]sweet sweet [G]sleep with [Am]his [D7]hand in [G][C]mine
 {end_of_verse}
+
+

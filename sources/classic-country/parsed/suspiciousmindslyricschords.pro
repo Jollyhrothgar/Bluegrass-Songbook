@@ -1,6 +1,9 @@
 {meta: title Suspicious Minds}
 {meta: artist Elvis Presley}
 {meta: composer Mark James}
+{meta: x_source classic-country}
+{meta: x_source_file suspiciousmindslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We’re caught in a trap I can't walk [C]out
@@ -64,3 +67,12 @@
 [C]We're caught in a trap and I can't walk out
 [D7]Because I [C]love you too much [G]baby
 {end_of_verse}
+
+
+
+
+
+
+
+
+

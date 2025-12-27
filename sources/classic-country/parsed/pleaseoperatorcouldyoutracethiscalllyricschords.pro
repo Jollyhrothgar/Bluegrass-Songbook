@@ -1,6 +1,9 @@
 {meta: title Please Operator (Could You Trace This Call)}
 {meta: artist Garth Brooks}
 {meta: composer Dewayne Blackwell}
+{meta: x_source classic-country}
+{meta: x_source_file pleaseoperatorcouldyoutracethiscalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Please operator could [C]you trace this call
@@ -55,3 +58,10 @@ Find [F]out where I'm drinkin' which [G7]dirty beer hall
 And [F]send a cab driver to [C]call for me [Am]here
 [C]I’ll be beside myself [G7]pouring down [C]beer
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Feel Good}
 {meta: artist Tracy Byrd}
 {meta: composer Bob DiPiero}
+{meta: x_source classic-country}
+{meta: x_source_file youfeelgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]I like [G]sleeping in the nude 
@@ -37,3 +40,6 @@ Baby [G]you [A7]feel [G]good
 I wanna [Em]make you feel exactly what I [C]feel inside
 Yeah [G]you [A7]feel [G]good
 {end_of_verse}
+
+
+

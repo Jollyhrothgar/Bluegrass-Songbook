@@ -1,6 +1,9 @@
 {meta: title Blue Must Be The Color Of The Blues}
 {meta: artist Willie Nelson}
 {meta: composer Lawton Williams and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file bluemustbethecoloroftheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Up above me are the skies
@@ -28,3 +31,5 @@
 [C]That I sing since you are [G]gone
 [C]Blue must be the [D7]color of the [G]blues
 {end_of_verse}
+
+

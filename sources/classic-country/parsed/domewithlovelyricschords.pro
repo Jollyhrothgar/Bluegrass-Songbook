@@ -1,6 +1,9 @@
 {meta: title Do Me With Love}
 {meta: artist Janie Fricke}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file domewithlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Words are cheap and I love yous are [F]free
@@ -44,3 +47,8 @@
 [F]So do me with [C]love do me with [G7]love
 [C]Or don't do me at all
 {end_of_verse}
+
+
+
+
+

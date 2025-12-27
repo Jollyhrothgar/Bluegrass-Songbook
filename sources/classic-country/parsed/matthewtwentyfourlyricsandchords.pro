@@ -1,6 +1,9 @@
 {meta: title Matthew Twenty Four}
 {meta: artist Kitty Wells}
 {meta: composer Lonnie Glosson}
+{meta: x_source classic-country}
+{meta: x_source_file matthewtwentyfourlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I believe the time is coming
@@ -37,3 +40,6 @@ I believe the good old [C]Bible
 From [F]beginning to the [C]end
 Just compare today with [G7]Matthew [C]twenty-four
 {end_of_verse}
+
+
+

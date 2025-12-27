@@ -1,5 +1,8 @@
 {meta: title Ramblin' Kind}
 {meta: artist Tommy Cash}
+{meta: x_source classic-country}
+{meta: x_source_file ramblinkindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I don't [C]want to disa[G7]ppoint you [Am]I hate to [F]see you [G7]cry
@@ -35,3 +38,7 @@ I'm the ramblin' kind running free wild and [Am]blind
 Like the [F]wind I'm the [G7]ramblin' kin[C]d
 Like the [F]wind I'm the [G7]ramblin' kind[Am]
 {end_of_verse}
+
+
+
+

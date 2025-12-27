@@ -1,6 +1,9 @@
 {meta: title Even If I Have To Steal}
 {meta: artist Mel Street}
 {meta: composer Ralph L. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file evenifihavetosteallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Even if I have to [F]steal your love I [C]want you
@@ -39,3 +42,8 @@ Heaven help me my [G7]heart is in your [C]hands
 Even if I have to [F]steal your love I [C]want you
 Heaven help me my [G7]heart is in your [F]h-and[C]s
 {end_of_verse}
+
+
+
+
+

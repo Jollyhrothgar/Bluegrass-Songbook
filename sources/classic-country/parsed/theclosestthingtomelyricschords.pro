@@ -1,6 +1,9 @@
 {meta: title The Closest Thing To Me}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file theclosestthingtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was searching for something 
@@ -31,3 +34,5 @@ The [F]day she set me free
 The [G7]closest thing to me 
 Was the hardest to [C]see
 {end_of_verse}
+
+

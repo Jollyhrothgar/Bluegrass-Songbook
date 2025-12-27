@@ -1,6 +1,9 @@
 {meta: title Hearts Made of Stone}
 {meta: artist Red Foley}
 {meta: composer Rudy Jackson and Eddie Ray}
+{meta: x_source classic-country}
+{meta: x_source_file heartsmadeofstonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hearts made of [C]s-tone will never [G]break
@@ -32,3 +35,7 @@ And all of your [D7]l-ove is there to [G]take
 But they'll say no no no no no no no no everybody [C]knows
 I thought you [D7]knew hearts were made of [G]stone
 {end_of_verse}
+
+
+
+

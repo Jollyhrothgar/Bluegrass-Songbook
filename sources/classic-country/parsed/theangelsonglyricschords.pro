@@ -1,6 +1,9 @@
 {meta: title The Angel Song}
 {meta: artist Slim Whitman}
 {meta: composer Gene Autry and Cliff Massey}
+{meta: x_source classic-country}
+{meta: x_source_file theangelsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the angels turn the lights on in [C]heaven tonight
@@ -26,3 +29,6 @@ And [D7]hang out the stars in the [G]blue
 {start_of_verse: Verse 4}
 And [D7]hang out the stars in the [G]blue
 {end_of_verse}
+
+
+

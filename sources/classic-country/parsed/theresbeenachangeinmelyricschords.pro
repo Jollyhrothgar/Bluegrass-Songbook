@@ -1,6 +1,9 @@
 {meta: title There's Been A Change In Me}
 {meta: artist Eddy Arnold}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file theresbeenachangeinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was very young my mother often [G7]said
@@ -43,3 +46,8 @@ I'm gonna marry her and settle down [C]someday
 And if I'm true [G]to her then I'll [E7]agree 
 [A7]Ha Ha  there's been a [D7]change in [G]me
 {end_of_verse}
+
+
+
+
+

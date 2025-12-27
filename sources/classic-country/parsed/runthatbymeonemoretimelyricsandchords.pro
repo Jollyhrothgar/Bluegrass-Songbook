@@ -1,6 +1,9 @@
 {meta: title Run That By Me One More Time}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file runthatbymeonemoretimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Run that by me one more time
@@ -58,3 +61,9 @@ I hope you don't expect me to [G7]believe that line
 And I know a lie when I hear one
 Would [G7]you run that [F]by me one more [C]time
 {end_of_verse}
+
+
+
+
+
+

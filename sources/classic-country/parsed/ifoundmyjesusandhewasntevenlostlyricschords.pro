@@ -1,6 +1,9 @@
 {meta: title I Found My Jesus And He Wasn't Even Lost}
 {meta: artist Carl Smith}
 {meta: composer Lytle Moe}
+{meta: x_source classic-country}
+{meta: x_source_file ifoundmyjesusandhewasntevenlostlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walked away from my Lord [F]many [C]times
@@ -29,3 +32,6 @@ And He never gave up [F]believing in [C]me
 [C]Love was the reason He [F]died on that [C]cross
 [F]I found my [C]Jesus and He [G7]wasn't even [C]lost
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Dozen Pair Of Boots}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file dozenpairofbootslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It looks everywhere I go always [F]get myself in [C]trouble
@@ -49,3 +52,9 @@ My Levi's float on San Francisco [G7]Bay
 And I [F]left the Stetson hanging in a [C]hallway down in Dallas
 And a dozen pair of [G7]boots along the [C]way
 {end_of_verse}
+
+
+
+
+
+

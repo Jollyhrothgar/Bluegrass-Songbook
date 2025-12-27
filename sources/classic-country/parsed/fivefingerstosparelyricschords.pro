@@ -1,6 +1,9 @@
 {meta: title Five Fingers To Spare}
 {meta: artist Connie Smith}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file fivefingerstosparelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love for [D7]you has been so strong like a [G]fool I've gone along
@@ -30,3 +33,6 @@ The times you said how much you [C]care
 And I [D7]counted all of them on the fingers of one hand
 And [C]I still have five [D7]fingers to [G]spare
 {end_of_verse}
+
+
+

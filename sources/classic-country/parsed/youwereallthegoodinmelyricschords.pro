@@ -1,6 +1,9 @@
 {meta: title You Were All The Good In Me}
 {meta: artist Charley Pride}
 {meta: composer Shirley Worth}
+{meta: x_source classic-country}
+{meta: x_source_file youwereallthegoodinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Before there ever [F]came the time that [C]I could [G7]rea[C]lize
@@ -33,3 +36,7 @@ But you were [F]all the [C]good there [G7]ever was in [C]me
 {start_of_verse: Verse 5}
 Yes you were [F]all the [C]good there [G7]ever was in [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Heap Of Good Lovin'}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Steve Nelson and Jean Javitz}
+{meta: x_source classic-country}
+{meta: x_source_file heapofgoodlovinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It [G7]will [A7]take a heap of loving a heap of turtle dovin’
@@ -32,3 +35,6 @@ Till your [A7]love for me increases while I try to patch the [D7]pieces
 Of the heart you broke so [A7]careless[D7]ly warn your [G7]kisses in the oven
 It’ll [C]take a heap of lovin’ if you [D7]want a heap of [G7]love from [C]me
 {end_of_verse}
+
+
+

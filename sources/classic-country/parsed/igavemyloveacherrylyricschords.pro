@@ -1,5 +1,8 @@
 {meta: title I Gave My Love A Cherry (aka The Riddle Song)}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file igavemyloveacherrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gave my love a [F]cherry  that had no [C]stone
@@ -25,3 +28,6 @@ A [F]baby when it's s[Am]leeping  [F]has no [G7]cry-[C]ing
 {start_of_verse: Verse 4}
 I [F]gave my love a [Am]baby  [F]with no [G7]cry-[C]ing 
 {end_of_verse}
+
+
+

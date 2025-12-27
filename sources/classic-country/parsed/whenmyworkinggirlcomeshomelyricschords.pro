@@ -1,6 +1,9 @@
 {meta: title When My Working Girl Comes Home}
 {meta: artist Moe Bandy}
 {meta: composer Carl Belew and Van Givens}
+{meta: x_source classic-country}
+{meta: x_source_file whenmyworkinggirlcomeshomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't have to tell you it's not [F]easy
@@ -47,3 +50,9 @@ When my working girl comes [G7]home and works on [C]me
 {start_of_verse: Verse 6}
 When my working girl comes [G7]home and works on [C]me
 {end_of_verse}
+
+
+
+
+
+

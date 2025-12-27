@@ -1,6 +1,9 @@
 {meta: title Whose Heart are You Breaking Now}
 {meta: artist Ray Price}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file whoseheartareyoubreakingnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was the one that you fooled [D7]yesterday 
@@ -29,3 +32,6 @@ Whose heart are you breaking [G]now
 [G]You're smiling now but some day you will [D7]pay 
 Whose heart are you breaking [G]now
 {end_of_verse}
+
+
+

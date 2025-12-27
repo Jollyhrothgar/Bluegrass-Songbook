@@ -1,6 +1,9 @@
 {meta: title Till Then}
 {meta: artist Hank Thompson}
 {meta: composer Eddie Seiler, Guy Wood, Sol Marcus}
+{meta: x_source classic-country}
+{meta: x_source_file tillthenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Till [G]then [Em]oh darling [Am]please wait for [D7]me
@@ -43,3 +46,8 @@ Till [G]then we'll [Em]call on [Am]each memo[D7]ry
 Till [Am]then [C]when I will [B7]hold you [E7]again
 Please [Am]wait [D7]till [G]then
 {end_of_verse}
+
+
+
+
+

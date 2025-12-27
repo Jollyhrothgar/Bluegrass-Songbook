@@ -1,6 +1,9 @@
 {meta: title Cry Not For Me}
 {meta: artist Patsy Cline}
 {meta: composer Donn Hecht and Jack Moon}
+{meta: x_source classic-country}
+{meta: x_source_file crynotformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Cry not for [Am]me my love [D7]when I am [G]far away[Em]
@@ -22,3 +25,5 @@ Unless the [Am]petals fade and fall [D7]apart[Am]
 [D7]Cry not for [Am]me sweetheart [D7]but if a [G]tear should start
 Cry not my [D7]broken heart cry not for [G]me [C]  [G]
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Neons And Nylons}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file neonsandnylonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All day long I work a job I [F]hate just to survive
@@ -29,3 +32,6 @@ A [F]honky tonk's my [G7]home away from [C]home
 Makes me [F]think of [G7]romancing those [C]pretty girls and dancing
 [F]Neons and [G7]nylons really turn me [C]on
 {end_of_verse}
+
+
+

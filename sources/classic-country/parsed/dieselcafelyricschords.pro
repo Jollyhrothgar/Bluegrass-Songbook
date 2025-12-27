@@ -1,6 +1,9 @@
 {meta: title Diesel Cafe}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file dieselcafelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the coffee is thirty [F]weight
@@ -55,3 +58,10 @@ Cause there’s something for [F]everyone
 And the diesel [G7]cafe lulls me [C]away
 I spend every [G7]passing day at the diesel [C]cafe
 {end_of_verse}
+
+
+
+
+
+
+

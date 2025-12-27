@@ -1,6 +1,9 @@
 {meta: title In His Arms I'm Not Afraid}
 {meta: artist The Isaacs}
 {meta: composer Homer Eanes}
+{meta: x_source classic-country}
+{meta: x_source_file inhisarmsimnotafraidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not afraid to [F]bid this world good[C]bye 
@@ -40,3 +43,8 @@ In His arms [G7]I'm not a[C]fraid
 {start_of_verse: Verse 4}
 In His arms [G7]I'm not a[C]fraid
 {end_of_verse}
+
+
+
+
+

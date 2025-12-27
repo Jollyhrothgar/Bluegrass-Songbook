@@ -1,6 +1,9 @@
 {meta: title I Know You’re Married}
 {meta: artist Dolly Parton}
 {meta: composer Don Reno and Mack Magaha}
+{meta: x_source classic-country}
+{meta: x_source_file iknowyouremarriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know I love you and I always will
@@ -30,3 +33,7 @@ A broken heart will have to pay [G7]the [C]cost
 [C]You know I love you and I always will
 I know you're married but I love [G7]you [C]still
 {end_of_verse}
+
+
+
+

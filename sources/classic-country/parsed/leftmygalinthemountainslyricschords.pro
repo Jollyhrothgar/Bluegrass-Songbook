@@ -1,6 +1,9 @@
 {meta: title Left My Gal In The Mountains}
 {meta: artist Hank Thompson}
 {meta: composer Carson J. Robison}
+{meta: x_source classic-country}
+{meta: x_source_file leftmygalinthemountainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I left my gal in the mountains I [C7]left her standing in the rain
@@ -31,3 +34,6 @@ Then I woke up this morning [C7]laying in Atlanta jail
 [F]I'm so sad and [C]lonely cause [G7]I'll never see my gal no [C]more
 [G7]I'll never see my gal no [C]more
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Someone I Can't Forget}
 {meta: artist Charley Pride}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file someoneicantforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I hurt [D7]long enough then I won't [G]hurt no more
@@ -26,3 +29,6 @@ I [C]say there's [G]still someone [D7]I can't for[G]get
 {start_of_verse: Verse 3}
 [C]Yes there's [G]still someone [D7]I can't [C]for--[G]get
 {end_of_verse}
+
+
+

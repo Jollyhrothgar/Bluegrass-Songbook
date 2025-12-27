@@ -1,6 +1,9 @@
 {meta: title You're Wanting Me To Stop Loving You}
 {meta: artist Charley Pride}
 {meta: composer Al Urban}
+{meta: x_source classic-country}
+{meta: x_source_file yourewantingmetostoplovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have done everything [F]I can to please [C]you
@@ -29,3 +32,6 @@
 [C]But I'm afraid that this is [F]one time I can't help [C]you
 [F]Cause you're [C]wanting me to [G7]stop loving [C][F]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A World Without You}
 {meta: artist Marty Stuart}
 {meta: composer Marty Stuart and Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file aworldwithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There was a time I [C]held you in my [G]arms
@@ -29,3 +32,6 @@
 [G]Existing day after day [G7]trying hard to find my [C]way
 [G]While learning [D7]to live in a world [C]without [G]you
 {end_of_verse}
+
+
+

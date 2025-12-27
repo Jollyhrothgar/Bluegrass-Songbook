@@ -1,5 +1,8 @@
 {meta: title 24th Hour}
 {meta: artist Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file 24thhourlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There are twenty-three hours that I can't get [D7]by
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [D7]Yes it's right about now that I miss you [G]so
 {end_of_verse}
+
+
+
+

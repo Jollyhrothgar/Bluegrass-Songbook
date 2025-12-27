@@ -1,6 +1,9 @@
 {meta: title I'll Give You Something To Drink About}
 {meta: artist George Jones}
 {meta: composer Hank Cochran, Mack Vickery, Jerry Leseter}
+{meta: x_source classic-country}
+{meta: x_source_file illgiveyousomethingtodrinkaboutlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I stumbled in this morning
@@ -46,3 +49,8 @@ tag
 You'll have a [D7]good excuse to pour down that juice
 I'll give you something to [G]drink about
 {end_of_verse}
+
+
+
+
+

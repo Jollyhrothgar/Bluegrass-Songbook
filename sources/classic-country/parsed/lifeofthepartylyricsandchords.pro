@@ -1,6 +1,9 @@
 {meta: title Life Of The Party}
 {meta: artist Randy Travis}
 {meta: composer Allen Shamblin and Billy Kirsch}
+{meta: x_source classic-country}
+{meta: x_source_file lifeofthepartylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm the life of the party[G7]
@@ -27,3 +30,6 @@ Dies a little every [C]night[G7]   [Am]
 Yeah the [C]life of the [Dm]party[G7]
 Dies a little every [F]night[C]
 {end_of_verse}
+
+
+

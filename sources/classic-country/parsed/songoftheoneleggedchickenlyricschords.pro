@@ -1,5 +1,8 @@
 {meta: title Song Of The One Legged Chicken}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file songoftheoneleggedchickenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do you like true [F]stories [C]I do
@@ -36,3 +39,7 @@ That's why I've [F]sung you this [C]song
 The [F]song about the one legged [C]chicken
 Who [D7]lives on the [G7]floor in my [C]barn
 {end_of_verse}
+
+
+
+

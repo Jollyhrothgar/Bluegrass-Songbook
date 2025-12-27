@@ -1,6 +1,9 @@
 {meta: title I Betcha Didn’t Know}
 {meta: artist Buck Owens}
 {meta: composer Lamar Morris}
+{meta: x_source classic-country}
+{meta: x_source_file ibetchadidntknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I betcha didn't know I betcha didn't [C]know 
@@ -50,3 +53,9 @@ That [G]I was gonna love you [D7]so
 I [G]betcha didn't know I betcha didn't [C]know 
 I [G]ain't never gonna [D7]let you [G]go
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When I Get To The End Of The Way}
 {meta: artist Granpa Jones}
 {meta: composer Charles D. Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file whenigettotheendofthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sands have been washed in the [F]footprints
@@ -49,3 +52,8 @@
 [C]Then the toils of the road will seem [F]nothing
 [G7]When I get to the end of the [C]way
 {end_of_verse}
+
+
+
+
+

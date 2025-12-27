@@ -1,6 +1,9 @@
 {meta: title Greener Than The Grass We Laid On}
 {meta: artist Tanya Tucker}
 {meta: composer David Alan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file greenerthanthegrasswelaidonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He painted quite a [D7]picture for the [C]girls in my home [G]town
@@ -45,3 +48,8 @@
 [C]That old highway was his [F]home
 [D7]Do-do-do-do-do-do [C][G]do-do-do
 {end_of_verse}
+
+
+
+
+

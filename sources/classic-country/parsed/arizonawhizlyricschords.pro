@@ -1,6 +1,9 @@
 {meta: title Arizona Whiz}
 {meta: artist Cal Smith}
 {meta: composer Max D. Barnes and Harlan Sander}
+{meta: x_source classic-country}
+{meta: x_source_file arizonawhizlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The campus crowd was noisy as [C]we waited for the [G]show
@@ -41,3 +44,8 @@ You could almost see the scars [D7]on the Arizona [G]Whiz
 Folks I’d like to say this song’s for you [C]but to tell it like it [G]is
 If you don’t mind this one’s for [D7]the Arizona [G]Whiz
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title That Song Is Driving Me Crazy}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file thatsongisdrivingmecrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That song is driving me crazy I gotta hear it again
@@ -21,3 +24,5 @@ First time I heard it I was with some [C7]friends
 It's a [F]simple little song you can [Fm]sing along with an [C]old time melo[A7]dy
 So would you [D7]play that crazy little [G7]song again for [C]me
 {end_of_verse}
+
+

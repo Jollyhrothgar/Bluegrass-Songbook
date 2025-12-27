@@ -1,6 +1,9 @@
 {meta: title Where Do We Go From Here}
 {meta: artist Sonny James}
 {meta: composer Bob Tubert and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file wheredowegofromherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All the [F]sad songs all the [C]bad words all the [F]hurts and all the [A#7]tears
@@ -28,3 +31,6 @@ This is [Em]all that's [F]left of [Dm]us [A#7]where do we go from [C]here
 All our [F]memories now are [C]bitter our sweet [F]days now lonely [A#7]years
 This is [Em]all that's [F]left of [Dm]us [A#7]where do we [C]go from [F]here
 {end_of_verse}
+
+
+

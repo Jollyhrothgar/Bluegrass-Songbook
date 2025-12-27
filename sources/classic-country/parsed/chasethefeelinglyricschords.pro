@@ -1,5 +1,8 @@
 {meta: title Chase the Feeling}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file chasethefeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It takes one to know one baby I know how you feel
@@ -53,3 +56,10 @@ Let [C]it take the joy you love and turn it to despair
 {start_of_verse: Verse 5}
 And you got [C]loaded again[G] 
 {end_of_verse}
+
+
+
+
+
+
+

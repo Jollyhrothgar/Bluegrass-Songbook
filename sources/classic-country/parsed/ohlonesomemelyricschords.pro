@@ -1,5 +1,8 @@
 {meta: title Oh Lonesome Me}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file ohlonesomemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody's going out and having [G7]fun
@@ -29,3 +32,7 @@ I've thought of [C7]everything from A to [F]Z  [G7]oh lonesome [C]me
 {start_of_verse: Verse 5}
 [G7]Oh lonesome [C]me
 {end_of_verse}
+
+
+
+

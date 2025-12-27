@@ -1,6 +1,9 @@
 {meta: title I Wish You Would Leave Me Alone}
 {meta: artist Vernon Oxford}
 {meta: composer Charlie Craig}
+{meta: x_source classic-country}
+{meta: x_source_file iwishyouwouldleavemealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're only staying for [D7]awhile
@@ -33,3 +36,7 @@ Then I [G7]wish you would leave me [C]alone
 {start_of_verse: Verse 5}
 Yes I [G7]wish you would leave me [C]alone
 {end_of_verse}
+
+
+
+

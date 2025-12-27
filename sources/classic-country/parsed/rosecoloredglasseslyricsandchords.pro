@@ -1,6 +1,9 @@
 {meta: title Rose Colored Glasses}
 {meta: artist Ray Price}
 {meta: composer Fred Carter}
+{meta: x_source classic-country}
+{meta: x_source_file rosecoloredglasseslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A perfect kind of love is what you want from [D7]me
@@ -22,3 +25,5 @@ Cause you only want to see the brighter [G]side
 You're wearing rose colored glasses cause someone hurt you [C]so
 And [D7]rose colored glasses help you [G]hide
 {end_of_verse}
+
+

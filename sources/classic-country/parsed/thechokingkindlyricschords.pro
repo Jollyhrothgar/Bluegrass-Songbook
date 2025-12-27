@@ -1,6 +1,9 @@
 {meta: title The Choking Kind}
 {meta: artist Waylon Jennings}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file thechokingkindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I only meant to love you don't you [Dm]know it babe
@@ -22,3 +25,5 @@ If [F]you don't like the [G7]peaches walk on [C]by the tree
 Find what you want and keep it treat it [Dm]sweet and kind
 But [F]let it breathe don't [G7]make your love the [C]choking kind
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm In Love With Everything}
 {meta: artist Faron Young}
 {meta: composer Billy Deaton, Clyde Pitts, Virginia King}
+{meta: x_source classic-country}
+{meta: x_source_file iminlovewitheverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every day with you is a new day 
@@ -48,3 +51,9 @@ And [G7]my everything is [C]you
 [Am]Cause I'm in love with [F]everything 
 And [G7]my everything is [C]you
 {end_of_verse}
+
+
+
+
+
+

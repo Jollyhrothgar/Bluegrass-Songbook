@@ -1,5 +1,8 @@
 {meta: title You're Out Doing What I'm Here Doing Without}
 {meta: artist Gene Watson}
+{meta: x_source classic-country}
+{meta: x_source_file youreoutdoingwhatimheredoingwithoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've been staying out late almost every [D7]night
@@ -32,3 +35,7 @@ And you [G]don't even care when you think that I'm a little put [C]out
 And I [G]think that you're out doing [D7]what I'm here doing [G]without
 Well I know that you're out doing [D7]what I'm here doing [G]without
 {end_of_verse}
+
+
+
+

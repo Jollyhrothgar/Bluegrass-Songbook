@@ -1,6 +1,9 @@
 {meta: title Let's Talk About Love}
 {meta: artist Jimmy Dean}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file letstalkaboutlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let's talk about love  all [C]day [G]long
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]Can we [D7]talk about love love love all the livelong [G]day
 {end_of_verse}
+
+
+
+

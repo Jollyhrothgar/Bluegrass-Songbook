@@ -1,5 +1,8 @@
 {meta: title Angels And Alcohol}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file angelsandalcohollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can't mix [D7]angels [C]   and alco[G]hol
@@ -28,3 +31,6 @@ An angel once [D7]loved me I [C]traded it [G]all
 I let the [D7]bottle drive my [C]life into a [G]wall
 You can't mix [D7]angels  and [C]alcohol[G]
 {end_of_verse}
+
+
+

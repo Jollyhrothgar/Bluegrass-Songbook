@@ -1,6 +1,9 @@
 {meta: title Imagine That}
 {meta: artist Patsy Cline}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file imaginethatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Imagine me still loving [C7]you
@@ -36,3 +39,7 @@ It [F]just don't matter what you might [D7]do
 Cause I'm still waiting and loving [G7]you
 Imagine [C]that  [F]ain't that a [C]laugh
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Call Me The Breeze}
 {meta: artist David Allan Coe}
 {meta: composer John J. Cale}
+{meta: x_source classic-country}
+{meta: x_source_file callmethebreezelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They call me the breeze I keep blowin' down the road
@@ -31,3 +34,7 @@ I might go [D7]out to California [C]might go down to Georgia I don't [G]know
 Yeah they [C]call me the breeze I keep blowin' down the [G]road
 I ain't [D7]got me nobody [C]I don't carry me no [G]load
 {end_of_verse}
+
+
+
+

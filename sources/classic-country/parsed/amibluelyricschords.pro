@@ -1,6 +1,9 @@
 {meta: title Am I Blue}
 {meta: artist Ricky Nelson}
 {meta: composer Harry Akst and Grant Clarke}
+{meta: x_source classic-country}
+{meta: x_source_file amibluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh am I blue am I [G7]blue 
@@ -22,3 +25,5 @@ But now I'm the sad and lonely [Am]one
 Was I [C]gay I should [G7]say now she's [C]gone 
 And we're [G7]through am I [C]blue
 {end_of_verse}
+
+

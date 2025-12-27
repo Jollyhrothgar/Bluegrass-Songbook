@@ -1,6 +1,9 @@
 {meta: title Maybe I Should Have Been Listening}
 {meta: artist Gene Watson}
 {meta: composer Buzz Rabin}
+{meta: x_source classic-country}
+{meta: x_source_file maybeishouldhavebeenlisteninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here you are back on my mind where you stay quite a [F]lot
@@ -23,3 +26,5 @@ I just keep finding you with me and I don't know [F]why
 [C]Maybe I should've been [G7]listening when you said [C]goodbye
 Maybe I should've been [G7]listening you said [C][F]good-bye
 {end_of_verse}
+
+

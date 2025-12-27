@@ -1,6 +1,9 @@
 {meta: title Good}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file goodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was a waitress in a barroom [G7]no future in [C]sight
@@ -29,3 +32,6 @@ And regardless of my [G]chances I [D7]know that I'll [G7]never be
 [C]Good like he wanted me but [F]good is what I'll never be
 And [C]now I know that [G7]he's gone for [C]good
 {end_of_verse}
+
+
+

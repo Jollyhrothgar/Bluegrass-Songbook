@@ -1,5 +1,8 @@
 {meta: title Wayfaring Stranger}
 {meta: artist Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file wayfaringstrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I am a poor wayfaring stranger
@@ -28,3 +31,6 @@ I know dark clouds will gather round me
 [Am]I'm only going over Jordan
 [Dm]I'm only going over [Am]home
 {end_of_verse}
+
+
+

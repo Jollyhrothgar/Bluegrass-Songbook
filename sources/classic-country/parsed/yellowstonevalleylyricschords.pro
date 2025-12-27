@@ -1,6 +1,9 @@
 {meta: title Yellowstone Valley}
 {meta: artist Red Steagall}
 {meta: composer Robert Boatman and Luke Reed}
+{meta: x_source classic-country}
+{meta: x_source_file yellowstonevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We’d heard of the ranges of the [C]Yellowstone [G]Valley
@@ -69,3 +72,12 @@ There’s [D7]nothing as [Em]blu[D7]e as the Yellowstone [G]sky
 [D7]Nothing [C]compares [D7]to the Yellow[G]stone Valley
 There’s [D7]nothing as [Em]blu[D7]e as the Yellowstone [G]sky
 {end_of_verse}
+
+
+
+
+
+
+
+
+

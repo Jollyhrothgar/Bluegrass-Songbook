@@ -1,6 +1,9 @@
 {meta: title Devilish Love Light}
 {meta: artist Johnny Horton}
 {meta: composer Fabor Robison and Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file devilishlovelightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I like that devilish [G7]moonlight in my [C]darlin’s eyes
@@ -33,3 +36,7 @@ Cause I like that devilish [G7]love light in her [C]eyes
 {start_of_verse: Verse 5}
 Cause I like that devilish [G7]love light in her [C]eyes
 {end_of_verse}
+
+
+
+

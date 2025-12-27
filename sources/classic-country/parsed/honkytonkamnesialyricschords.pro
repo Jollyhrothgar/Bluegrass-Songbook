@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Amnesia}
 {meta: artist Moe Bandy}
 {meta: composer Arthur Leo Owens and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkamnesialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She’d be hurt if she knew I was [C]drinking
@@ -33,3 +36,7 @@ And [G]sometimes it [D7]lasts all night [G]long
 {start_of_verse: Verse 4}
 [C]And [G]sometimes it [D7]lasts all night [G]long 
 {end_of_verse}
+
+
+
+

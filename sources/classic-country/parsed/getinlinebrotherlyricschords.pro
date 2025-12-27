@@ -1,6 +1,9 @@
 {meta: title Get In Line Brother}
 {meta: artist Lester Flatt}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file getinlinebrotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh listen to me sinners don't you want to go
@@ -43,3 +46,8 @@ Get in line brother if you wanna go home
 Then you'll be singing this old time song
 Get in line brother if you [D7]wanna go [G]home
 {end_of_verse}
+
+
+
+
+

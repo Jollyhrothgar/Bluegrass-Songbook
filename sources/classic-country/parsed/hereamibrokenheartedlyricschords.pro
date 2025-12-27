@@ -1,6 +1,9 @@
 {meta: title Here Am I Broken Hearted}
 {meta: artist Ferlin Husky}
 {meta: composer Buddy DeSylva, Lew Brown, Ray Henderson}
+{meta: x_source classic-country}
+{meta: x_source_file hereamibrokenheartedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There she is [C]my old gal 
@@ -30,3 +33,5 @@ It's [A7]bad enough that I lost her
 [G]Happy girl [A7]lucky boy
 [G]And here am I [D7]broken heart[G]ed
 {end_of_verse}
+
+

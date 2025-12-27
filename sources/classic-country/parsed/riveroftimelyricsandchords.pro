@@ -1,6 +1,9 @@
 {meta: title River Of Time}
 {meta: artist John Conlee}
 {meta: composer Jim Rushing and Larry Cordle}
+{meta: x_source classic-country}
+{meta: x_source_file riveroftimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Early one morning a new day was [C]dawning
@@ -65,3 +68,11 @@ It's the [C]dearest of dreams
 In the [G]great scheme of things
 [D7]Going down the river of [G]tim[C]e [G]
 {end_of_verse}
+
+
+
+
+
+
+
+

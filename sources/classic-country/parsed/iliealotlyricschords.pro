@@ -1,6 +1,9 @@
 {meta: title I Lie a Lot}
 {meta: artist Ray Price}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file iliealotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I say that I don’t miss you [F]when they ask me if I [D7]do
@@ -28,3 +31,6 @@ I’m not home because I’m blue
 [C7]There’s just [F]nothing I want to [D7]do
 Oh I [F]lie a lot  [G7]if they ask about [C]you
 {end_of_verse}
+
+
+

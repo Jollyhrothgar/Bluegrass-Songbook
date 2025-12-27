@@ -1,6 +1,9 @@
 {meta: title Why Don't You Leave Me Alone}
 {meta: artist Chet Atkins}
 {meta: composer Bill Stephens}
+{meta: x_source classic-country}
+{meta: x_source_file whydontyouleavemealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why don’t you [G7]leave me [C]alone
@@ -40,3 +43,7 @@ The [F]things you do to me
 Were [C]never meant to [F]be
 So [C]why don’t you [G7]leave me [C]alone
 {end_of_verse}
+
+
+
+

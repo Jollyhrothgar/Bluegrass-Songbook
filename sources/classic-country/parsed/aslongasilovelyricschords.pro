@@ -1,6 +1,9 @@
 {meta: title As Long As I Love}
 {meta: artist Dottie West}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file aslongasilovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hurt is no [C]stranger to [G]me
@@ -30,3 +33,6 @@
 [C]Yes I'll hurt for as long [G]as I love [C]you
 [G]And I'll love you for [C]as long as I [G]live
 {end_of_verse}
+
+
+

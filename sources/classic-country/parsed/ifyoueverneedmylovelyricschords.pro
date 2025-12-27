@@ -1,6 +1,9 @@
 {meta: title If You Ever Need My Love}
 {meta: artist Jack Greene}
 {meta: composer Lindy Leigh and Marie Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoueverneedmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you ever need my [D7]love I’ll be [G]there
@@ -37,3 +40,8 @@ If you ever need my [D7]love I’ll be [G]there
 {start_of_verse: Verse 5}
 If you ever need my [D7]love I’ll be [G]there
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Best To You}
 {meta: artist Bob Nolan}
 {meta: composer Isham Jones and Gene Willadsen}
+{meta: x_source classic-country}
+{meta: x_source_file mybesttoyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]My [C]best to you may your [F]dreams come [G7]true
@@ -29,3 +32,6 @@ Sent from up above with an [C]angel's love
 So here's to [C7]you may your [F]skies be [Fm]blue
 And your [C]love blessed that's [G7]my best to [C]you
 {end_of_verse}
+
+
+

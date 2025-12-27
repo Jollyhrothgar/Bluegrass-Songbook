@@ -1,6 +1,9 @@
 {meta: title The End Of Time}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file theendoftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You said good bye I [Em]thought I'd for[C]get you
@@ -26,3 +29,5 @@ And I [C]wonder will you ever think [G]about me[Em]
 Oh I [G]guess I'll always [C]have you on my [G]mind [Em]
 And I [G]know I'll love you [C]till the end of [G]time
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Many Christmases Ago}
 {meta: artist Marty Robbins}
 {meta: composer Phoebe Binkley and Bob Binkley}
+{meta: x_source classic-country}
+{meta: x_source_file manyChristmasesagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There were shepherds in the [F]field that [C]night
@@ -40,3 +43,8 @@
 [G7]Born of mother Mary so gentle and [C]mild
 [F]Many many Christmases [C]ago
 {end_of_verse}
+
+
+
+
+

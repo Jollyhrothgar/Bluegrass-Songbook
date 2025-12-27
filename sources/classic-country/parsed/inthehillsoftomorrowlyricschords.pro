@@ -1,6 +1,9 @@
 {meta: title In The Hills Of Tomorrow}
 {meta: artist Eddy Arnold}
 {meta: composer Eddy Arnold, Owen Bradley, Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file inthehillsoftomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll tell you a story an old [F]fashion [C]story
@@ -29,3 +32,6 @@
 [C]Travel on travel on to the [F]hills of [C]tomorrow
 [G7]Where we'll meet in the sweet by and [C]by
 {end_of_verse}
+
+
+

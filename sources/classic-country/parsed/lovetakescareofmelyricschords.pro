@@ -1,6 +1,9 @@
 {meta: title Love Takes Care Of Me}
 {meta: artist Jack Greene}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file lovetakescareofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cause your love [F]takes good care of [C]me
@@ -24,3 +27,5 @@ And when the [C]rain falls and the [F]wind blows
 And the [C]storm is on the [F]sea
 I'll be [C]safe your [G7]love takes good care of [C]me
 {end_of_verse}
+
+

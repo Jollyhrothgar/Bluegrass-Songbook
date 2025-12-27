@@ -1,5 +1,8 @@
 {meta: title Country Is}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file countryislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Country is  [F]sitting on the [C]back porch 
@@ -28,3 +31,6 @@ Country [F]is  a having the [C]good times
 Country [C]is  [F]walking in the [C]moonlight 
 [F]Country [C]is  [G7]all in your [C]heart
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title In And Out Of Every Heart In Town}
 {meta: artist Ernest Tubb}
 {meta: composer Hugh Ashley}
+{meta: x_source classic-country}
+{meta: x_source_file inandoutofeveryheartintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've been [G7]in and out of every heart in [C]town
@@ -26,3 +29,5 @@ You're [G7]in and out of every heart you [C]see
 The only heart you haven't broke you haven't [F]found
 You've been [G7]in and out of every heart in [C]town
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title This Weary Heart You Stole Away}
 {meta: artist Ricky Skaggs}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file thiswearyheartyoustoleawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wait for you dear all night [C]long
@@ -43,3 +46,8 @@ You [D7]slept your troubles all [G]away
 Get ready now to love [C]again
 This [D7]weary heart you stole [G]away
 {end_of_verse}
+
+
+
+
+

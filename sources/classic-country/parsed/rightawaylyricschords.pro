@@ -1,5 +1,8 @@
 {meta: title Right Away}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file rightawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Right away [C7]I lost my [F]pride [D7]
@@ -21,3 +24,5 @@ If [Am]you should leave [D7]I'd never try to [G7]call
 But [F]oh how so wrong I could [C]be 
 Oh [F]please won't [G7]you come back to [F]m-[C]e
 {end_of_verse}
+
+

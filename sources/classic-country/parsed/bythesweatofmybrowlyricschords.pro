@@ -1,6 +1,9 @@
 {meta: title By The Sweat Of My Brow}
 {meta: artist Hank Locklin}
 {meta: composer Jack Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file bythesweatofmybrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m making my living by the [C7]sweat of my [F]brow
@@ -29,3 +32,6 @@ Wear [G7]mail order clothes that I [F]pay for on [C]time
 I’ve worked hard and stayed honest and I’ve [C7]got by till [F]now
 A [G7]making my living by the [F]sweat of my [C]brow
 {end_of_verse}
+
+
+

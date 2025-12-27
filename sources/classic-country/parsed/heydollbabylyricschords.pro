@@ -1,6 +1,9 @@
 {meta: title Hey Doll Baby}
 {meta: artist The Everly Brothers}
 {meta: composer Titus Turner}
+{meta: x_source classic-country}
+{meta: x_source_file heydollbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey doll baby can we have a little talk together
@@ -67,3 +70,15 @@ Hey doll baby there's a coat hangin' in my closet
 Hey doll baby hey doll baby
 [F]Hey doll baby [G7]listen to [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Open Thy Merciful Arms}
 {meta: artist Eddy Arnold}
 {meta: composer Don Whiston}
+{meta: x_source classic-country}
+{meta: x_source_file openthymercifularmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One of Thy [C7]children is [F]coming [C]home 
@@ -29,3 +32,6 @@ Though we be [C7]weary we [F]soon will [C]rest
 [C]Oh what a joy to be [F]traveling [C]home 
 [G7]Open Thy merciful [C]arms
 {end_of_verse}
+
+
+

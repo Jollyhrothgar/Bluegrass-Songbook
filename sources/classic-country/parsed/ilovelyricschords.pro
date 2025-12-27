@@ -1,5 +1,8 @@
 {meta: title I Love}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file ilovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I Love [F]little baby [C]ducks
@@ -30,3 +33,5 @@
 [G7]Music when it's good and [C]life
 [F]And [G7]I  love you [C]too
 {end_of_verse}
+
+

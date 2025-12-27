@@ -1,5 +1,8 @@
 {meta: title What A Price To Pay}
 {meta: artist Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file whatapricetopaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How great is my debt oh Savior
@@ -45,3 +48,11 @@ Do you most holy and righteous
 How could I repay just a fraction
 [D7]Of what you suffered for [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+

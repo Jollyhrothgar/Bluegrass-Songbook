@@ -1,6 +1,9 @@
 {meta: title Rain Rain}
 {meta: artist George Jones}
 {meta: composer Roger Miller, George Jones, J.P. Richardson}
+{meta: x_source classic-country}
+{meta: x_source_file rainrainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rain rain keeps a falling down
@@ -29,3 +32,6 @@ Why don't you come back [D7]another day
 I ain't got a penny I ain't a getting any
 Love until the rain goes [G]away
 {end_of_verse}
+
+
+

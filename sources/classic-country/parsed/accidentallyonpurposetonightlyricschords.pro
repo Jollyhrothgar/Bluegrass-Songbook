@@ -1,6 +1,9 @@
 {meta: title Accidentally On Purpose Tonight}
 {meta: artist Moe Bandy}
 {meta: composer Pat Bunch and Peggy White}
+{meta: x_source classic-country}
+{meta: x_source_file accidentallyonpurposetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You'll just [G]happen to be where you'll [C]run into me
@@ -29,3 +32,6 @@ We've started a love affair we [C]never meant to [G]start
 We can't meet on purpose and we [D7]know the reason why
 So [C]meet me acci[G]dentally on [D7]purpose [G]tonight
 {end_of_verse}
+
+
+

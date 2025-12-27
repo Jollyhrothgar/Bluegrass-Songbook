@@ -1,6 +1,9 @@
 {meta: title Dixie Highway}
 {meta: artist Alan Jackson}
 {meta: composer Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file dixiehighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was [C]born on the Dixie [G]Highway
@@ -111,3 +114,18 @@ No sweeter [A7]place [D7]you'll ever [G]find
 No sweeter [A7]place [D7]you'll ever [G]find
 No sweeter [A7]place [D7]you'll ever [G]find
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

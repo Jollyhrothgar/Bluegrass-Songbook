@@ -1,5 +1,8 @@
 {meta: title Brand On My Heart}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file brandonmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My troubled old heart dear is beating with [D7]pain
@@ -35,3 +38,7 @@
 [G7]If you'll just forgive me we'll make a new [C]start
 [G]And no more will I carry [D7]you're brand on my [G]heart
 {end_of_verse}
+
+
+
+

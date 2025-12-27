@@ -1,6 +1,9 @@
 {meta: title He Was A Friend of Mine}
 {meta: artist Bobby Bare}
 {meta: composer Harlan Howard and Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file hewasafriendofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He  [D7]was a friend of [G]mine  [D7]he  was a friend of [G]mine
@@ -53,3 +56,13 @@ The one who had died without a cent
 [G]He  [D7]was a friend of [G]mine
 [D7]He  was a friend of [G]mine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

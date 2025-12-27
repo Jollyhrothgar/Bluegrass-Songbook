@@ -1,6 +1,9 @@
 {meta: title It's a Sin to Tell a Lie}
 {meta: artist Slim Whitman}
 {meta: composer Billy Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file itsasintotellalielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Be sure it's true when you say I love you
@@ -29,3 +32,6 @@ If you break my [E7]heart I'll [F]die
 So be sure it's true when you [C]say I love [A7]you
 It's a [D7]sin to [G7]tell a [C]lie
 {end_of_verse}
+
+
+

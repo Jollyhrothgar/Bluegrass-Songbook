@@ -1,5 +1,8 @@
 {meta: title I Know You're Lonesome While Waiting For Me}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file iknowyourelonesomewhilewaitingformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had a dream dear last night of the letters you [F]write
@@ -21,3 +24,5 @@
 [F]Darling I will be true I'll be so good to you
 [C]I know you're lonesome [G7]while waiting for [C]me
 {end_of_verse}
+
+

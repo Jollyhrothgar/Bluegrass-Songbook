@@ -1,6 +1,9 @@
 {meta: title Today's Lonely Fool}
 {meta: artist Tracy Lawrence}
 {meta: composer Kenny Beard and Stan Davis}
+{meta: x_source classic-country}
+{meta: x_source_file todayslonelyfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What would you say if I [F]told you I was [C]sorry[F]
@@ -45,3 +48,7 @@ That yesterday's jealous [G7]man is today's lonely [C]fool
 [F]I'm [G7]today's lonely [C]fool [F]
 [G7]Today's lonely [C]fool[F]  [G7]   [C]
 {end_of_verse}
+
+
+
+

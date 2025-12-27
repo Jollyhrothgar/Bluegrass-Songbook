@@ -1,6 +1,9 @@
 {meta: title Last Song I'm Ever Gonna Sing}
 {meta: artist The Everly Brothers}
 {meta: composer Jerry Allison and Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file lastsongimevergonnasinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is [F]the last song I'm ever gonna [C]sing
@@ -42,3 +45,8 @@
 [G7]Oh I'm never gonna be a [C]star
 [G7]Oh I'm never gonna be a [C]star
 {end_of_verse}
+
+
+
+
+

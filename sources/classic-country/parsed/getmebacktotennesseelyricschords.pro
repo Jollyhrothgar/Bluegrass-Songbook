@@ -1,6 +1,9 @@
 {meta: title Get Me Back To Tennessee}
 {meta: artist Dave Dudley}
 {meta: composer Randall Jay Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file getmebacktotennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Get me back to [G7]Tennessee I'm [F]homesick
@@ -43,3 +46,8 @@
 [G7]Get me back to Tennessee I'm [F]homesick
 [D7]I'll ride [G7]anything eastern [F]bound
 {end_of_verse}
+
+
+
+
+

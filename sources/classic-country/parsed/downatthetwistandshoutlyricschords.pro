@@ -1,5 +1,8 @@
 {meta: title Down At The Twist And Shout}
 {meta: artist Mary Chapin Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file downatthetwistandshoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Saturday night and the moon is out
@@ -73,3 +76,9 @@ When it [G]lifts me up I'm gonna find my feet
 When I [G]hear that fiddle wanna beg for more
 Gonna [D7]dance to a band from a-Louisiana [G]tonight
 {end_of_verse}
+
+
+
+
+
+

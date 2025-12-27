@@ -1,5 +1,8 @@
 {meta: title Livin' On Love}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file livinonlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Two young [G]people without a [D7]thing  
@@ -47,3 +50,8 @@ It doesn't take [G]much when you get [D7]enough livin' on [G]love
 {start_of_verse: Verse 4}
 [C]No it doesn't take [G]much when you get [D7]enough livin' on [G]love
 {end_of_verse}
+
+
+
+
+

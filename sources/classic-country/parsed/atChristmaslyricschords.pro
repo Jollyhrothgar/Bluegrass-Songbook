@@ -1,6 +1,9 @@
 {meta: title At Christmas}
 {meta: artist Sara Evans}
 {meta: composer Toby Lightman and Shane Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file atChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's my favorite time of year
@@ -43,3 +46,7 @@ Here's a toast to the joy it's bringing
 {start_of_verse: Verse 4}
 [F]Nothing is better than all of us together at [C]Christmas
 {end_of_verse}
+
+
+
+

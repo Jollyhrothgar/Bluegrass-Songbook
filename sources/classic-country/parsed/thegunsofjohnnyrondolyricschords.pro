@@ -1,6 +1,9 @@
 {meta: title The Guns Of Johnny Rondo}
 {meta: artist Faron Young}
 {meta: composer Joe Lubin, Gerald Day, Harry Surman}
+{meta: x_source classic-country}
+{meta: x_source_file thegunsofjohnnyrondolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sixteen [F]tried sixteen died at the hands of Johnny [C]Rondo
@@ -51,3 +54,9 @@ Johnny [C]Rondo
 {start_of_verse: Verse 7}
 [A#7]Johnny [C]Rondo [A#7]Johnny [C]Rondo [A#7]Johnny [C]Rondo
 {end_of_verse}
+
+
+
+
+
+

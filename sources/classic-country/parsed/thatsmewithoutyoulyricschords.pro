@@ -1,5 +1,8 @@
 {meta: title That's Me Without You}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file thatsmewithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A night with no [C7]moonlight a [F]day with no [C]sun
@@ -42,3 +45,8 @@ A [D7]well with no water a show with no [G7]cast
 A [C]coat with no [C7]buttons a [F]church with no [C]pew
 [F]A boy with no [G7]sweetheart that's me without [C]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Love For You}
 {meta: artist Webb Pierce}
 {meta: composer Warner McPherson}
+{meta: x_source classic-country}
+{meta: x_source_file myloveforyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Castles are [F]made high and [C]mighty
@@ -28,3 +31,6 @@ But [F]I'll never be un[C]faithful
 For you can trust in [F]my love for [C]you
 Put your trust in [F]my love for [C]you
 {end_of_verse}
+
+
+

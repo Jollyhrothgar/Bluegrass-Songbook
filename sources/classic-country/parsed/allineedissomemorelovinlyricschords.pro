@@ -1,6 +1,9 @@
 {meta: title All I Need Is Some More Lovin'}
 {meta: artist George Morgan}
 {meta: composer John Julias Daume}
+{meta: x_source classic-country}
+{meta: x_source_file allineedissomemorelovinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All I need is some more lovin' from a [F]pretty girl like [D7]you
@@ -29,3 +32,6 @@ I [D7]can't forget the day we said I [G7]do
 Now you've [C]gone away forever and [F]you've torn my heart [D7]into
 All I [G7]need is some more lovin' dear from [C]you
 {end_of_verse}
+
+
+

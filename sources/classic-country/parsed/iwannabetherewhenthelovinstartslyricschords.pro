@@ -1,6 +1,9 @@
 {meta: title I Wanna Be There When The Lovin' Starts}
 {meta: artist Mel Street}
 {meta: composer Curly Putman, Sonny Throckmorton, Don Cook}
+{meta: x_source classic-country}
+{meta: x_source_file iwannabetherewhenthelovinstartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody's gonna get love at my house [F]tonight
@@ -31,3 +34,6 @@ I wanna be there when the lovin' [C]starts
 Turn the [G7]stereo on I'm on my way home
 I wanna be there when the lovin' [C]starts
 {end_of_verse}
+
+
+

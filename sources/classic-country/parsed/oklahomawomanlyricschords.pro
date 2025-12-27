@@ -1,5 +1,8 @@
 {meta: title Oklahoma Woman}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file oklahomawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ribbon of concrete stretching out far before [C]me
@@ -49,3 +52,8 @@ Well it's starting to rain
 [D7]Oh Lord I can't wait to get home
 [G]And put my two arms around her
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Pickin' Time}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file pickintimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got cotton in the bottom [G7]land
@@ -48,3 +51,8 @@
 [C]The Lord'll wait till pickin' time
 [G7]The Lord'll wait till pickin' [C]time
 {end_of_verse}
+
+
+
+
+

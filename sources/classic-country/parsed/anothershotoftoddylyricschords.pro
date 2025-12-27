@@ -1,6 +1,9 @@
 {meta: title Another Shot Of Toddy}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Bill Penix}
+{meta: x_source classic-country}
+{meta: x_source_file anothershotoftoddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I had an old hen and she had a [G7]wooden leg
@@ -50,3 +53,9 @@ Send [C]her to the cellar for to [G7]get another jug
 [C]Your mouth fly open every [F]time you bend your arm
 Another [G7]shot of toddy wouldn't do you no [C]harm
 {end_of_verse}
+
+
+
+
+
+

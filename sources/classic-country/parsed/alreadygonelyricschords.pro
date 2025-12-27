@@ -1,6 +1,9 @@
 {meta: title Already Gone}
 {meta: artist Tanya Tucker}
 {meta: composer Jack Tempchin and Robb Strandlund}
+{meta: x_source classic-country}
+{meta: x_source_file alreadygonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I heard some people [G7]talking just the [F]other day
@@ -39,3 +42,8 @@ But I'm [C]al-[G7]ready [F]gone and I'm [C]feel-[G7]ing [F]strong
 I will [C]si--[G7]-ng this victory [F]song  
 Cause I'm [C]al-[G7]ready [F]gone yes I'm [C]al-[G7]ready [F]go
 {end_of_verse}
+
+
+
+
+

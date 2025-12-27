@@ -1,6 +1,9 @@
 {meta: title The Red Strokes}
 {meta: artist Garth Brooks}
 {meta: composer Jenny Yates, James Garver, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file theredstrokeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Moonlight on canvas midnight and wine
@@ -55,3 +58,10 @@ Burning the [D7]night like the [C]dawn
 [G]Steam on the window salt in a kiss
 [Em]Two hearts have never [C]pounded like [G]this
 {end_of_verse}
+
+
+
+
+
+
+

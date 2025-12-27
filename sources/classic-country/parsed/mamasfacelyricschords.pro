@@ -1,6 +1,9 @@
 {meta: title Mama's Face}
 {meta: artist Cal Smith}
 {meta: composer Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file mamasfacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My mama loved my [D7]dad for fifty [G]years
@@ -43,3 +46,8 @@ And [C]though it's hard to let 'em go Lord I know I'd let 'em go [G]again
 If [D7]I could just have been there
 And seen my mama's face when dad walked [G]in
 {end_of_verse}
+
+
+
+
+

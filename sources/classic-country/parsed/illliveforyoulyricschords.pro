@@ -1,6 +1,9 @@
 {meta: title I'll Live For You}
 {meta: artist Jean Shepard}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file illliveforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't be free to marry [F]you we both know [C]that
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G7]Yes I'll try to make you happy in my own [C]way
 {end_of_verse}
+
+
+
+

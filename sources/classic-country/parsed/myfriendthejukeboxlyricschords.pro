@@ -1,5 +1,8 @@
 {meta: title My Friend The Jukebox}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file myfriendthejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every night I come to see this [G7]friend of mine
@@ -32,3 +35,7 @@ Lord I [G7]wish that I could take my friend the jukebox home with [C]me
 {start_of_verse: Verse 4}
 Yes I [G7]wish that I could take my friend the jukebox home with [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let It Show}
 {meta: artist The Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file letitshowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]If you [G]feel in your [F]heart that [G]love's a[F]bout to [E7]start
@@ -41,3 +44,8 @@ Don't let it [Am]go you let him [D7]know and let it [G]show[C]  [G]
 {start_of_verse: Verse 6}
 [D7]Let it [G]show
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Sweet Caroline}
 {meta: artist Neil Diamond}
+{meta: x_source classic-country}
+{meta: x_source_file sweetcarolinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where it began  [C]I can’t begin to know it
@@ -31,3 +34,7 @@
 [G]Sweet Caro[C]line  good times never seemed so [D7]good
 [G]Sweet Caro[C]line  to believe there never [D7]would
 {end_of_verse}
+
+
+
+

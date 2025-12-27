@@ -1,6 +1,9 @@
 {meta: title First In Line}
 {meta: artist Elvis Presley}
 {meta: composer Aaron Schroeder and Ben Weisman}
+{meta: x_source classic-country}
+{meta: x_source_file firstinlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When they gave out eyes like [Em]diamonds
@@ -41,3 +44,8 @@ I'm [F]yours oh please [C]be mine[C7]
 My [F]darling  say I'm your [C]darling  [Am]
 The [D7]first and the [G7]last in [C]line
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Little Baby}
 {meta: artist Buddy Holly}
 {meta: composer Buddy Holly, C.W. Kendall, Norman Petty}
+{meta: x_source classic-country}
+{meta: x_source_file littlebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little baby baby [F]me
@@ -40,3 +43,8 @@ Woh woh woh-woh
 [G7]You be my little baby
 [F]And baby [C]me
 {end_of_verse}
+
+
+
+
+

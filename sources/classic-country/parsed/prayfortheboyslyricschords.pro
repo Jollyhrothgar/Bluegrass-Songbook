@@ -1,6 +1,9 @@
 {meta: title Pray For The Boys The Bad}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Carter Stanley and Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file prayfortheboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't for[C]get to often pray for the [G]boys so far away
@@ -36,3 +39,7 @@ They have gone to fill your place out [D7]there
 They're [G]on the battle line in de[C]fense of yours and [G]mine
 Hold 'em up to God [D7]in humble [G]prayer
 {end_of_verse}
+
+
+
+

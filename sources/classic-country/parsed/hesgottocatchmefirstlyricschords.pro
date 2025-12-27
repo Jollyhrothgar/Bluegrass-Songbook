@@ -1,5 +1,8 @@
 {meta: title He's Got To Catch Me First}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file hesgottocatchmefirstlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh there's a great big jealous man looking for [C]me
@@ -37,3 +40,7 @@
 [D7]Yeah he's really out to get me
 [G]But I know he's got to catch me first
 {end_of_verse}
+
+
+
+

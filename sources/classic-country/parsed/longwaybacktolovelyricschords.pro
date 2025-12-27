@@ -1,6 +1,9 @@
 {meta: title Long Way Back To Love}
 {meta: artist Roy Drusky}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file longwaybacktolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I tried to tell you that some[F]day his love would end
@@ -29,3 +32,6 @@ But it's a [C]long way back to [Dm]love[G7]
 It's a [C]long way back to [Dm]love[G7]
 [Dm]All the way back [G7]through a broken [C]heart
 {end_of_verse}
+
+
+

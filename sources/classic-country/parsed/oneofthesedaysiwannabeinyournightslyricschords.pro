@@ -1,5 +1,8 @@
 {meta: title One Of These Days I Wanna Be In Your Nights}
 {meta: artist Charlie Pride}
+{meta: x_source classic-country}
+{meta: x_source_file oneofthesedaysiwannabeinyournightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One of these days days days [C]I wanna be in your [G]nights
@@ -46,3 +49,9 @@ One of these days I [D7]wanna be in your [G]nights
 {start_of_verse: Verse 4}
 One of these days I [D7]wanna be in your [G]nights
 {end_of_verse}
+
+
+
+
+
+

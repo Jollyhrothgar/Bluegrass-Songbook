@@ -1,6 +1,9 @@
 {meta: title He Thinks I Still Care}
 {meta: artist Connie Francis}
 {meta: composer Dickey Lee and Steve Duffy}
+{meta: x_source classic-country}
+{meta: x_source_file hethinksistillcarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He thinks I [G7]still [C]care
@@ -34,3 +37,7 @@
 [C]He thinks I [G7]still [C]care
 [G7]He thinks I [F]still [C]c-are
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title All I Ever Need Is You}
 {meta: artist Kenny Rogers}
 {meta: composer Jimmy Holiday and Eddie Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file allieverneedisyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes when I'm down and all [E7]alone
@@ -37,3 +40,7 @@ Through [Am]ups and downs of every single [C7]day
 [F]And I won't sleep at night until you [C]say  [Am]honey
 [D7]All I ever [G7]need is [C]you
 {end_of_verse}
+
+
+
+

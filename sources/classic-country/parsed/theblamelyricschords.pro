@@ -1,6 +1,9 @@
 {meta: title The Blame}
 {meta: artist Highway 101}
 {meta: composer Cactus Moser and Gene Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file theblamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess I could say you [C]never [D7]held me [G]close
@@ -33,3 +36,7 @@ It's not [C]whether you win or [G]lose  [D7]it’s how you lay the [G]blame
 {start_of_verse: Verse 4}
 It's not [C]whether you win or [G]lose  [D7]it’s how you lay the [G]blame [D7]    [G]
 {end_of_verse}
+
+
+
+

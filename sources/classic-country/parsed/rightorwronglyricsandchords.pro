@@ -1,5 +1,8 @@
 {meta: title Right or Wrong}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file rightorwronglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Right or [A7]w-rong I'll always love [D7]you
@@ -18,3 +21,5 @@
 {start_of_verse: Verse 3}
 Repeat all
 {end_of_verse}
+
+

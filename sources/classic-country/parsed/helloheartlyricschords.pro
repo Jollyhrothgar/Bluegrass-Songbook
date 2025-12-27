@@ -1,6 +1,9 @@
 {meta: title Hello Heart}
 {meta: artist George Jones}
 {meta: composer Melba Montgomery and Billy Yates}
+{meta: x_source classic-country}
+{meta: x_source_file helloheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello heart well I'm glad you came a [F]knocking
@@ -40,3 +43,8 @@ Oh where you [C]been good to see you [G7]again hello [C]heart
 {start_of_verse: Verse 4}
 Where you been good to see you [G7]again hello [C]heart
 {end_of_verse}
+
+
+
+
+

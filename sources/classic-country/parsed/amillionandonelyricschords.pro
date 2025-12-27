@@ -1,6 +1,9 @@
 {meta: title A Million And One}
 {meta: artist Billy Walker}
 {meta: composer Yvonne Devaney}
+{meta: x_source classic-country}
+{meta: x_source_file amillionandonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How many [F][C7]teardrops
@@ -43,3 +46,8 @@ Will never come [C]true
 A million and one [G7]dreams
 A million and [C]two
 {end_of_verse}
+
+
+
+
+

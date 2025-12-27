@@ -1,5 +1,8 @@
 {meta: title I Just Dropped By}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file ijustdroppedbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I just dropped [C]by [E7]to see the [G7]house [C]I used to [F]live in
@@ -29,3 +32,6 @@ And [G7]I'm aware of how the neighbors like to [C]pry[C7]   [Dm]   [G7]
 [C]But you can [E7]tell them all [G7]today [C]a most [F]unhappy man
 Was in the [C]neighborhood [G7]and he just thought he'd [C]drop by
 {end_of_verse}
+
+
+

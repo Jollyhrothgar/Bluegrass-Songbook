@@ -1,6 +1,9 @@
 {meta: title Never Say Goodbye}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Larry Kolber and Jack Keller}
+{meta: x_source classic-country}
+{meta: x_source_file neversaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lift your head and dry your tears
@@ -32,3 +35,6 @@ And I [A7]hope you'll say the same when I am [D7]gone
 Just [G]one more kiss and let me hold you [C]close dear [A7]
 We'll [D7]never say goodbye just say so [G]long
 {end_of_verse}
+
+
+

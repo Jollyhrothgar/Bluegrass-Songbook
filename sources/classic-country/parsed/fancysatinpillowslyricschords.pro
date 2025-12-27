@@ -1,6 +1,9 @@
 {meta: title Fancy Satin Pillows}
 {meta: artist Wanda Jackson}
 {meta: composer Jerry Crutchfield and Dee Moeller}
+{meta: x_source classic-country}
+{meta: x_source_file fancysatinpillowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Fancy satin pillows that you bought
@@ -42,3 +45,9 @@ I must admit they're very nice
 [D7]Means more than all the fancy satin pillows
 [G]You could ever buy for me
 {end_of_verse}
+
+
+
+
+
+

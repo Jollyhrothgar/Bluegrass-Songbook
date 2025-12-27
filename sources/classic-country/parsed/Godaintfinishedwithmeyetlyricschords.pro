@@ -1,6 +1,9 @@
 {meta: title God Ain't Finished With Me Yet}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file Godaintfinishedwithmeyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You look at me like I ain’t got the right 
@@ -64,3 +67,11 @@ So please don’t for[F]get
 Just [G7]try to be patient
 God ain’t finished with me [C]yet
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Your Heart Is Too Crowded}
 {meta: artist Ray Price}
 {meta: composer Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file yourheartistoocrowdedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your heart is too crowded with your [C]new love by your [D7]side
@@ -29,3 +32,6 @@ I [C]use to be the only one [G]I was your sweetheart
 [G]Your heart is too crowded with your [C]new love by your [D7]side
 That you can't see my heart cries to [G]die
 {end_of_verse}
+
+
+

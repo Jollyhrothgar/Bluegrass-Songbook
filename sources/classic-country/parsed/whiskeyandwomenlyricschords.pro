@@ -1,5 +1,8 @@
 {meta: title Whiskey And Women}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeyandwomenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got this weakness for whiskey and women
@@ -54,3 +57,10 @@ Specially bein' [C]alone
 Yes [G7]it's gonna take more than whiskey and women 
 To make me forget that we're [C]through
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title An Empty Mansion}
 {meta: artist Wilburn Brothers}
 {meta: composer C.A. Luttrell and Mrs. J.B. Karnes}
+{meta: x_source classic-country}
+{meta: x_source_file anemptymansionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I labor and toil as I [F]look for a [C]home
@@ -29,3 +32,6 @@ At the end of life's trouble some [G7]way
 Many [C]friends and dear loved ones will [F]welcome me [C]there
 Near the door of that [G7]mansion some[C]day
 {end_of_verse}
+
+
+

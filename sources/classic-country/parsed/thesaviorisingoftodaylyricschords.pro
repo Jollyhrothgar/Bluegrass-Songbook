@@ -1,5 +1,8 @@
 {meta: title The Savior I Sing Of Today}
 {meta: artist Glen Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file thesaviorisingoftodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I had just [B7]one song one [C]song to [A7]sing
@@ -27,3 +30,6 @@
 [Dm]This Savior [G7]I sing of [Em]today
 [Dm]My Savior I [G7]sing of [C]today
 {end_of_verse}
+
+
+

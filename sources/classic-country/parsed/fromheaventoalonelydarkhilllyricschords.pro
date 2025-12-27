@@ -1,6 +1,9 @@
 {meta: title From Heaven To A Lonely Dark Hill}
 {meta: artist Carl Story}
 {meta: composer Don McHan and Carl Story}
+{meta: x_source classic-country}
+{meta: x_source_file fromheaventoalonelydarkhilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One day on a [F]bright April [C]morning
@@ -29,3 +32,6 @@ For Christ had His place to ful[G7]fill
 From a [C]lovely bright [F]mansion in [C]Heaven
 To a [G7]cross on a lonely dark [C]hill
 {end_of_verse}
+
+
+

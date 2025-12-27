@@ -1,6 +1,9 @@
 {meta: title Let's Fall To Pieces Together}
 {meta: artist George Strait}
 {meta: composer Tommy Rocco, Dickey Lee, Johnny Russell}
+{meta: x_source classic-country}
+{meta: x_source_file letsfalltopiecestogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pardon me you left your [C]tears on the [G]jukebox
@@ -38,3 +41,7 @@ Right [G]here in [D7]each other's [G]arms  [D7]
 [G]Let's fall to [G7]pieces to[F]get[C]her
 Right [G]here in [D7]each other's [C]arms[G]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tell Your Children}
 {meta: artist Porter Wagoner}
 {meta: composer E.J. Carter and Maybelle Carter}
+{meta: x_source classic-country}
+{meta: x_source_file tellyourchildrenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([C]Tell your children and your children's [F]children
@@ -36,3 +39,7 @@ Now Daniel prophesied in all His [F]wisdom
 [C]He will stand upon the Mount of [F]Olives
 Sal[G7]vation to a dying world to [C]bring)
 {end_of_verse}
+
+
+
+

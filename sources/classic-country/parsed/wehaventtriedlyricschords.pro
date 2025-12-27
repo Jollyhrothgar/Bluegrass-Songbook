@@ -1,6 +1,9 @@
 {meta: title We Haven't Tried}
 {meta: artist Gene Pitney}
 {meta: composer Melba Montgomery and Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file wehaventtriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](And the [C]reason we're not in [G]love today is [D7]because we haven't [G]tried)
@@ -34,3 +37,7 @@ So if we should lose in [G]love again we can [D7]say we haven't [G]tried [D7]
 Once [G]more we're together like always [G7]giving life to love that [C]died
 So if we should lose in [G]love again we can [D7]say we haven't [G]tried
 {end_of_verse}
+
+
+
+

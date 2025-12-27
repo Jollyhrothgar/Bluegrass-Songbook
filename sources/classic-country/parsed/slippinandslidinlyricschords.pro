@@ -1,6 +1,9 @@
 {meta: title Slippin' And Slidin'}
 {meta: artist Buddy Holly}
 {meta: composer Eddie Bocage, Albert Collins,}
+{meta: x_source classic-country}
+{meta: x_source_file slippinandslidinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Slippin' and a-slidin' peepin' and a-hidin'
@@ -37,3 +40,6 @@ Been told a long time [C]ago
 [G7]I've been told baby [F]you've been bold
 I won't [C]be your [G7]fool no [C]more
 {end_of_verse}
+
+
+

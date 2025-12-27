@@ -1,6 +1,9 @@
 {meta: title Too Far}
 {meta: artist Loretta Lynn}
 {meta: composer Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file toofarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I gave you [C]everything I thought 
@@ -29,3 +32,5 @@ A little girl a tiny [A#7]baby girl and I [F]know she will look like [C]you
 And she'll be loved just the [C7]same way that you [F]are[Fm]
 Sometimes a [C]girl in [G7]love will go too [C]far [A#7]    [C]
 {end_of_verse}
+
+

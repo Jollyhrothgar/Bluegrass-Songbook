@@ -1,6 +1,9 @@
 {meta: title You've Got Me (Right Where You Want Me)}
 {meta: artist Connie Smith}
 {meta: composer George Richey and Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotmerightwhereyouwantmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling could I just have one moment with you
@@ -23,3 +26,5 @@
 [D7]And I want me right where I [G]am
 [D7]I want me right where I [G][C]a--m
 {end_of_verse}
+
+

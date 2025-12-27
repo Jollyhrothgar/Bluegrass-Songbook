@@ -1,6 +1,9 @@
 {meta: title Here Comes The Hurt Again}
 {meta: artist Mickey Gilley}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file herecomesthehurtagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here comes the [C]hurt again [D7]you'd think I'd [G]learn
@@ -26,3 +29,6 @@ Here comes the [C]hurt again [D7]but I'm used to the [G]pain
 {start_of_verse: Verse 4}
 Here comes the [C]hurt again [D7]but I'm used to the [G]pain
 {end_of_verse}
+
+
+

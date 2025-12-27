@@ -1,6 +1,9 @@
 {meta: title Whatcha Gonna Do Now}
 {meta: artist Buck Owens}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file whatchagonnadonowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Back in the country a [C]few years [G]ago
@@ -54,3 +57,11 @@ And then I saw a gleam that [D7]I ain't never saw [G]before
 Whatcha gonna do now uh [C]wow how you do know [D7]how
 Whatcha gonna do [G]now
 {end_of_verse}
+
+
+
+
+
+
+
+

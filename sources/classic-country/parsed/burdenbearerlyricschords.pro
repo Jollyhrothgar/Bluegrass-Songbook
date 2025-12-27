@@ -1,6 +1,9 @@
 {meta: title Burden Bearer}
 {meta: artist Doyle Lawson}
 {meta: composer Tammy Jones Robinette}
+{meta: x_source classic-country}
+{meta: x_source_file burdenbearerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll take these burdens and lay them at His feet
@@ -47,3 +50,9 @@ The Burden Bearer will [D7]help your troubled [G]soul
 {start_of_verse: Verse 6}
 The Burden Bearer will [D7]help your troubled [G]soul
 {end_of_verse}
+
+
+
+
+
+

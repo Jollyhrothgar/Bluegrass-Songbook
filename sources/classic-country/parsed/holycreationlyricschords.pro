@@ -1,5 +1,8 @@
 {meta: title Holy Creation}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file holycreationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So many questions  so many [C]answers
@@ -35,3 +38,7 @@ Singing her [D7]love songs  soft as her [G]smile  [G7]
 Tender [C]affection  under the [G]rainbow
 Holy [D7]creation  mother and [G]child  [D7]
 {end_of_verse}
+
+
+
+

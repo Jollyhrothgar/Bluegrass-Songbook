@@ -1,5 +1,8 @@
 {meta: title The Animal Of Man}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file theanimalofmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]His footprints can be [F]found 
@@ -28,3 +31,6 @@ He's an old man been [C]forgotten
 He's a military [G7]band 
 He's the animal of [C]man
 {end_of_verse}
+
+
+

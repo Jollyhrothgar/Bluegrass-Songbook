@@ -1,5 +1,8 @@
 {meta: title More Than A Poor Boy Can Give}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file morethanapoorboycangivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There goes an old love the [G7]keeper of my [C]heart
@@ -24,3 +27,5 @@ Without her [C7]love I've no [F]reason left to [C]live
 She wanted more than a [G7]poor boy could [C]give
 Yes she wanted more than a [G7]poor boy could [C]give
 {end_of_verse}
+
+

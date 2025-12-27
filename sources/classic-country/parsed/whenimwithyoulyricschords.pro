@@ -1,5 +1,8 @@
 {meta: title When I'm With You}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file whenimwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I could write about the way you make me feel 
@@ -36,3 +39,7 @@ So if I could write about the way you make me feel
 But [G]my nights are never blue
 And [D7]I don't mind the rain when I'm with [G]you 
 {end_of_verse}
+
+
+
+

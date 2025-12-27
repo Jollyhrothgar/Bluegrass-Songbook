@@ -1,5 +1,8 @@
 {meta: title Mother The Queen Of My Heart}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file motherthequeenofmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had a [G7]home down in [C]Texas
@@ -56,3 +59,10 @@ I knew I was [C7]wrong from the [F]start
 I'll never forget that [C]promise
 To my Mother [G7]the queen of my [C]heart
 {end_of_verse}
+
+
+
+
+
+
+

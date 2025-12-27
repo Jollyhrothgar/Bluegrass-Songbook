@@ -1,6 +1,9 @@
 {meta: title Last Best Place}
 {meta: artist Rhonda Vincent}
 {meta: composer Christi Baker, Shari Baker, Steve Leslie}
+{meta: x_source classic-country}
+{meta: x_source_file lastbestplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am a pilgrim passing [G7]through
@@ -44,3 +47,9 @@ But for [C]me God's em[G7]brace [F]last [C]best [Am]place [G7]
 {start_of_verse: Verse 7}
 I will [C]sing by His [G7]grace in the [F]last [G7]best [C]place
 {end_of_verse}
+
+
+
+
+
+

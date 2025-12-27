@@ -1,6 +1,9 @@
 {meta: title Cold Dark Waters}
 {meta: artist Porter Wagoner}
 {meta: composer Don Owens}
+{meta: x_source classic-country}
+{meta: x_source_file colddarkwaterslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In tomorrow's newspaper you'll [G7]read about [C]me 
@@ -33,3 +36,7 @@ In the [C]cold dark [G7]waters [C]below
 {start_of_verse: Verse 5}
 [F]In the [C]cold dark [G7]waters [C]below
 {end_of_verse}
+
+
+
+

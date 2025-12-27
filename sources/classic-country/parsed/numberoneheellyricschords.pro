@@ -1,6 +1,9 @@
 {meta: title Number One Heel}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Bonnie Owens}
+{meta: x_source classic-country}
+{meta: x_source_file numberoneheellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I’m the number one heel in the [C]country
@@ -36,3 +39,7 @@ I’m the [G]top of the list it’s plain to [D7]see
 And you’re [G]the number one fool that still loves [C]me
 Number [G]one heel is [D7]all I’ll ever [G]be
 {end_of_verse}
+
+
+
+

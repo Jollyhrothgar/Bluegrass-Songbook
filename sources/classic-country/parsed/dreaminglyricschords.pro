@@ -1,6 +1,9 @@
 {meta: title Dreaming}
 {meta: artist Cowboy Copas}
 {meta: composer Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file dreaminglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dreaming of the arms that held me oh so [F]tight
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]That is what I'll always [C]do
 {end_of_verse}
+
+
+
+
+

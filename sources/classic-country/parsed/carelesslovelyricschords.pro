@@ -1,6 +1,9 @@
 {meta: title Careless Love}
 {meta: artist Fats Domino}
 {meta: composer Spencer Williams, Bill Handy, Martha Koening and Charles Grean}
+{meta: x_source classic-country}
+{meta: x_source_file carelesslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love oh [D7]love oh careless [G]love
@@ -31,3 +34,6 @@ You said that you [G]love me
 And it didn't mean a [C]thing
 It was [G]love oh [D7]love oh careless [G]love
 {end_of_verse}
+
+
+

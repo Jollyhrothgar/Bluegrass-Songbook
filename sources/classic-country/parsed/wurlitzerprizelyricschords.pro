@@ -1,6 +1,9 @@
 {meta: title Wurlitzer Prize (I Don’t Want To Get Over You)}
 {meta: artist Waylon Jennings}
 {meta: composer Chips Moman and Bobby Emmons}
+{meta: x_source classic-country}
+{meta: x_source_file wurlitzerprizelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm not here to forget you I'm here to recall
@@ -48,3 +51,11 @@ I haunt the same places we used to go
 I don't want [Am]to get over you
 [D7]I don't want to get over [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+

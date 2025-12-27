@@ -1,5 +1,8 @@
 {meta: title Hundred Proof Heartache Lyrics Chords}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file hundredproofheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a hundred proof heartache and a case of the [G7]blues
@@ -29,3 +32,7 @@ You made your home the tavern down the street
 [G7]I've got a hundred proof heartache my world keeps turnin' round
 [C]This hundred proof heartache's got me down
 {end_of_verse}
+
+
+
+

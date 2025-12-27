@@ -1,5 +1,8 @@
 {meta: title Anywhere The Wind Blows}
 {meta: artist The Country Gazette}
+{meta: x_source classic-country}
+{meta: x_source_file anywherethewindblowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Anywhere the wind blows
@@ -70,3 +73,12 @@ To keep your love at [D7]home
 [C]Yet you’re still a [Em]rolling [C]stone
 Spending [D7]too much time [C]alone[Em]    [C]   [D7]    [G]
 {end_of_verse}
+
+
+
+
+
+
+
+
+

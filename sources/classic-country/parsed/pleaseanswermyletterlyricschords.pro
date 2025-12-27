@@ -1,5 +1,8 @@
 {meta: title Please Answer My Letter}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file pleaseanswermyletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While I'm writing this [G7]letter to [C]you dear
@@ -35,3 +38,7 @@ And [F]tell me to come back to [C]you
 For I [F]know no one can ever take [C]your place
 Cause you are so [G7]kind and so [C]true
 {end_of_verse}
+
+
+
+

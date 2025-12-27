@@ -1,6 +1,9 @@
 {meta: title I'll Never Get Over You}
 {meta: artist Sonny James}
 {meta: composer Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file illnevergetoveryoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got over Marie I got [F]over Sherrie
@@ -35,3 +38,7 @@ A [F]little peace of mind
 But I'll [C]never get [G7]over [C]you 
 (never get [F]over [C]you)
 {end_of_verse}
+
+
+
+

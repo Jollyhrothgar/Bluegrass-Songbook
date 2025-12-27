@@ -1,6 +1,9 @@
 {meta: title Don't You Want To Be A Lover Tonight}
 {meta: artist Tanya Tucker}
 {meta: composer Sterling Whipple}
+{meta: x_source classic-country}
+{meta: x_source_file dontyouwanttobealovertonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's the time of night when lovers head for [F]home
@@ -36,3 +39,7 @@ Oh [Dm]come with me and [G7]be a lover [C]tonight
 Don't you want to be a lover [F]tonight
 Oh [Dm]come with me and [G7]be a lover [C]tonight
 {end_of_verse}
+
+
+
+

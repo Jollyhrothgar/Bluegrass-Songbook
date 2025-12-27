@@ -1,6 +1,9 @@
 {meta: title Boxcar’s My Home}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene Martin}
+{meta: x_source classic-country}
+{meta: x_source_file boxcarsmyhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Boxcar's my home [F]railroad my [C]friend 
@@ -29,3 +32,6 @@ It's been that way since I don't know [G7]when
 I'm [C]here today [F]tomorrow I'm [C]gone 
 Where I hang my hat is [G7]where I call [C]home 
 {end_of_verse}
+
+
+

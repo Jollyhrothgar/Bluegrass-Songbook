@@ -1,6 +1,9 @@
 {meta: title I Bought The Shoes That Just Walked Out On Me}
 {meta: artist Wynn Stewart}
 {meta: composer Red Simpson and Steve Stone}
+{meta: x_source classic-country}
+{meta: x_source_file iboughttheshoesthatjustwalkedoutonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A tavern girl that's what you were the [C7]day I [F]found you
@@ -33,3 +36,7 @@ And I bought the shoes that [G7]just walked out on [C]me
 {start_of_verse: Verse 4}
 [F]And I bought the shoes that [G7]just walked out on [C]me
 {end_of_verse}
+
+
+
+

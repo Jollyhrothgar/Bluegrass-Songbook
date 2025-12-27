@@ -1,6 +1,9 @@
 {meta: title Lorena}
 {meta: artist Johnny Cash}
 {meta: composer Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file lorenalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The years creep slowly by [C]Lorena 
@@ -22,3 +25,5 @@ I hardly feel the cold [C]Lorena
 We'll sing those songs again [C]Lorena 
 [D7]You'll be in my arms at [G]last
 {end_of_verse}
+
+

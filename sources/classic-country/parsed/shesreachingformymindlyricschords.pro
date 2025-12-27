@@ -1,6 +1,9 @@
 {meta: title She's Reaching For My Mind}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file shesreachingformymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My broken heart it's not [C7]enough to [F]keep her satis[D7]fied
@@ -26,3 +29,6 @@ My [C]broken heart is not enough my God to [F]keep that woman satis[D7]fied
 [F]Lord I know she's [G7]reaching for my [C]mind  [F]
 She's reaching for [C]somethin' God I hope she finds it
 {end_of_verse}
+
+
+

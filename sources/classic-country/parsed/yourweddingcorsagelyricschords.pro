@@ -1,6 +1,9 @@
 {meta: title Your Wedding Corsage}
 {meta: artist Ray Price}
 {meta: composer Dick Gregory}
+{meta: x_source classic-country}
+{meta: x_source_file yourweddingcorsagelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your wedding [C7]corsage is [F]wilting
@@ -29,3 +32,6 @@ And [D7]all of the flowers are [G7]falling apart
 [C]Your wedding [C7]corsage is [F]wilting
 [G7]While my heart is breaking [C]into
 {end_of_verse}
+
+
+

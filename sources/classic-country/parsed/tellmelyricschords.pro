@@ -1,5 +1,8 @@
 {meta: title Tell Me}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file tellmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you no longer care then [G7]tell me
@@ -25,3 +28,6 @@ Let the teardrops start but tell me
 {start_of_verse: Verse 4}
 [G7]Let the teardrops start but [C]tell me [G7]tell me [C]tell me
 {end_of_verse}
+
+
+

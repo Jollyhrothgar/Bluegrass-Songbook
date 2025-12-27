@@ -1,6 +1,9 @@
 {meta: title Heckle And Jeckle}
 {meta: artist George Jones}
 {meta: composer Max D. Barnes and Max T. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file heckleandjecklelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you and me baby know what [F]love's all about
@@ -48,3 +51,9 @@ We're [F]like [C]Heckle and Jeckle [F]Jeckle and Hyde
 Just like Laurel and Hardy [F]Bartles and James
 [G7]One without the other baby just ain't the [C]same
 {end_of_verse}
+
+
+
+
+
+

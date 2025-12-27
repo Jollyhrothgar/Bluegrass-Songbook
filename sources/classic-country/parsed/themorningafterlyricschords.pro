@@ -1,6 +1,9 @@
 {meta: title The Morning After}
 {meta: artist Jerry Wallace}
 {meta: composer Jean Chapel}
+{meta: x_source classic-country}
+{meta: x_source_file themorningafterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Distant echoes of sounds of laugh[G7]ter
@@ -54,3 +57,10 @@ The morning after love has [C]gone
 {start_of_verse: Verse 5}
 [G7]The morning after love has [C]gone
 {end_of_verse}
+
+
+
+
+
+
+

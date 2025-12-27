@@ -1,6 +1,9 @@
 {meta: title A Thing Called Love}
 {meta: artist Jimmy Dean}
 {meta: composer Jerry Reed Hubbard}
+{meta: x_source classic-country}
+{meta: x_source_file athingcalledlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Six foot six he stood on the ground
@@ -51,3 +54,12 @@ Then I thank [Dm]God that this world's been [G7]blessed with a word called [C]lo
 Weighed two hundred and thirty five pounds
 But I saw that [Dm]giant of a man brought [G7]down to his knees by [C]love
 {end_of_verse}
+
+
+
+
+
+
+
+
+

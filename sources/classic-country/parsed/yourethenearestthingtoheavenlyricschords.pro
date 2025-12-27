@@ -1,6 +1,9 @@
 {meta: title You're The Nearest Thing To Heaven}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash, Hoyt Johnson, Jimmy Atkins}
+{meta: x_source classic-country}
+{meta: x_source_file yourethenearestthingtoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have sailed the peaceful waters of the ocean deep and blue
@@ -43,3 +46,8 @@ I have [G7]searched for happiness so long and [C]far
 But my search for love was through the [F]day that I found you
 Cause you're the [C]nearest thing to [G7]heaven yes you [C]are
 {end_of_verse}
+
+
+
+
+

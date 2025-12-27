@@ -1,6 +1,9 @@
 {meta: title I Can't Take It No Longer}
 {meta: artist Hank Williams Jr.}
 {meta: composer Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file icanttakeitnolongerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No I can't take it no [F]longer I'm goin' outta my [C]mind
@@ -33,3 +36,7 @@ I can't take it no [F]longer I can't take it no [C]longer
 {start_of_verse: Verse 5}
 I can't take it no [F]longer I can't take it no [C]longer
 {end_of_verse}
+
+
+
+

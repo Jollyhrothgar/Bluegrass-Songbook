@@ -1,5 +1,8 @@
 {meta: title I Know I'll Have A Better Day Tomorrow}
 {meta: artist Reba McEntire}
+{meta: x_source classic-country}
+{meta: x_source_file iknowillhaveabetterdaytomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I can't make it through this [F]world by [C]myself
@@ -30,3 +33,6 @@ And I know I'll [C]have a better [G7]day to[C]morrow
 {start_of_verse: Verse 4}
 [F]I know I'll [C]have a better [G7]day to[C]morrow
 {end_of_verse}
+
+
+

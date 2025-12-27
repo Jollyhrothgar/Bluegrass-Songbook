@@ -1,6 +1,9 @@
 {meta: title I Think I'll Take A Walk}
 {meta: artist Charley Pride}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file ithinkIlltakeawalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I think I'll take a boat and sail the [F]ocean
@@ -29,3 +32,6 @@ And [G7]walk about a million miles from [C]here
 I [F]have a notion to just be a [C]rambler
 I [G7]think I'll take a walk and disa[C]ppear
 {end_of_verse}
+
+
+

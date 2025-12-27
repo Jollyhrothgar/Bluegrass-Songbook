@@ -1,5 +1,8 @@
 {meta: title Before My Time}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file beforemytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know that hearts were loving 
@@ -64,3 +67,12 @@ They'd wish for love like [C]yours
 And they would wish for love like [D7]mine
 Before my [G]time  [D7]before my [G]time
 {end_of_verse}
+
+
+
+
+
+
+
+
+

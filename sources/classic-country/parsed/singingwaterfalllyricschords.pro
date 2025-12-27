@@ -1,6 +1,9 @@
 {meta: title Singing Waterfall}
 {meta: artist Hank Williams Sr.}
 {meta: composer Fred Rose and Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file singingwaterfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a singing waterfall in the [F]mountains far [C]away    
@@ -30,3 +33,6 @@ And we'd listen to the waters as they [D7]rippled soft and [G7]low
 And [C]since she's gone to Heaven [F]I miss her most of [C]all
 To[F]night my darling's [C]sleeping by the [G7]singing water[C]fall
 {end_of_verse}
+
+
+

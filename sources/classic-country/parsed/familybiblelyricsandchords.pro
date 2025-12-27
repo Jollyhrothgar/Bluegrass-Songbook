@@ -1,6 +1,9 @@
 {meta: title Family Bible Lyrics and Chords}
 {meta: artist Ernest Tubb}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file familybiblelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a family [C]Bible on the [G]table 
@@ -36,3 +39,7 @@ When from the family Bible dad would [G]read
 And I can hear my mother [C]softly [G]singing 
 Rock of ages [C]rock of [G]ages [D7]cleft for [G]me
 {end_of_verse}
+
+
+
+

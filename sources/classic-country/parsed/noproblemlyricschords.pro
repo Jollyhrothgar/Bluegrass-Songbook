@@ -1,6 +1,9 @@
 {meta: title No Problem}
 {meta: artist Don Williams}
 {meta: composer Don Schlitz and Billy Livsey}
+{meta: x_source classic-country}
+{meta: x_source_file noproblemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nobody's [Am]life is perfect [F]nobody [G7]wins' em all
@@ -37,3 +40,7 @@ If [Dm]that's the biggest [C]problem I've [F]got [G7]no [C]problem
 No problem nobody's [Am]life is perfect
 [F]Nobody [G7]wins' em all no [C]problem
 {end_of_verse}
+
+
+
+

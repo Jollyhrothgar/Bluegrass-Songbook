@@ -1,6 +1,9 @@
 {meta: title Foolish Heart}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo and Evan York}
+{meta: x_source classic-country}
+{meta: x_source_file foolishheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Foo[F]lish [C]heart you made me [G7]weep
@@ -40,3 +43,8 @@ Foolish [G7]heart don't set me [C]free [F]  [C]
 {start_of_verse: Verse 5}
 Foolish [G7]heart don't set me [C]free[F]  [C]
 {end_of_verse}
+
+
+
+
+

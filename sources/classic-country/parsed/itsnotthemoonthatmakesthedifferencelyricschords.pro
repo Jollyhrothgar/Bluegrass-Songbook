@@ -1,6 +1,9 @@
 {meta: title It's Not the Moon That Makes the Difference}
 {meta: artist Wynn Stewart}
 {meta: composer Leon Tassin and Willie B. Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotthemoonthatmakesthedifferencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s so many tales about the moon and [F]all its loveli[C]ness 
@@ -25,3 +28,5 @@ When I’m [C]not with you I’m all alone like a [F]sailboat in a [C]storm
 It’s not the [F]moon that makes the [C]difference
 It’s the [G7]one that’s in your [C]arms
 {end_of_verse}
+
+

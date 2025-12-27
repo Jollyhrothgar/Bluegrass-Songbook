@@ -1,6 +1,9 @@
 {meta: title Don't You Want To Be My Girl}
 {meta: artist Jim Reeves}
 {meta: composer Nellie Smith and Leona Butrum}
+{meta: x_source classic-country}
+{meta: x_source_file dontyouwanttobemygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Poor little doll you're too young for tears
@@ -40,3 +43,8 @@ I'll [A7]let the world see that you've got me [D7]hooked
 {start_of_verse: Verse 5}
 Yes don't you want to be [D7]my [G]girl
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It Gets More Like Monday Everyday}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Don McMillan}
+{meta: x_source classic-country}
+{meta: x_source_file itgetsmorelikemondayeverydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Monday morning [B7]takes a little [C]longer
@@ -33,3 +36,7 @@ It gets [G]more and more [D7]like Monday every[G]day
 {start_of_verse: Verse 4}
 It gets more and more [D7]like Monday every[G]day
 {end_of_verse}
+
+
+
+

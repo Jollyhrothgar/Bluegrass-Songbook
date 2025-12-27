@@ -1,6 +1,9 @@
 {meta: title Singing His Praise}
 {meta: artist Kitty Wells}
 {meta: composer J.R. Owens}
+{meta: x_source classic-country}
+{meta: x_source_file singinghispraiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Since my soul has been redeemed and from [F]sin I am made [C]clean
@@ -41,3 +44,9 @@ Oh [F]halle[C]lujah I'm singin' His praise [G7]along the [C]way
 {start_of_verse: Verse 7}
 I'm singin' His praise [G7]along the [C]way
 {end_of_verse}
+
+
+
+
+
+

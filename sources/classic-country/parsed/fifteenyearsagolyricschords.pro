@@ -1,6 +1,9 @@
 {meta: title Fifteen Years Ago}
 {meta: artist Conway Twitty}
 {meta: composer Raymond A. Smith}
+{meta: x_source classic-country}
+{meta: x_source_file fifteenyearsagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw a man today who [G7]said he talked to [C]you
@@ -31,3 +34,6 @@ I'm as [C]broken up in[F]side as if it's [C]been a week or [F]so
 It takes a [C]mighty long [F]time to get a [C]real love off your [F]mind
 I know I've [C]tried since [G7]fifteen years [C]ago
 {end_of_verse}
+
+
+

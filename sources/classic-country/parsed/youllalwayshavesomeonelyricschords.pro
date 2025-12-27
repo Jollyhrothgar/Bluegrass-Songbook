@@ -1,6 +1,9 @@
 {meta: title You'll Always Have Someone}
 {meta: artist Willie Nelson}
 {meta: composer Hank Cochran and Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file youllalwayshavesomeonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Discontent you must [F]be  [C]leaving love leaving [F]me
@@ -33,3 +36,6 @@ And [C]when your world's slowing [F]down
 [C]You'll need someone [F]around
 Let that [C]someone [G7]always be [C]me 
 {end_of_verse}
+
+
+

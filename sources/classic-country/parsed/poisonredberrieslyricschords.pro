@@ -1,6 +1,9 @@
 {meta: title Poison Red Berries}
 {meta: artist Johnny Rodriguez}
 {meta: composer Mickey Newberry}
+{meta: x_source classic-country}
+{meta: x_source_file poisonredberrieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Poison Red Berries 
@@ -34,3 +37,7 @@ Seldom if [Am]e-ver [D7]does she cross my [G7]mind
 [C]Yesterday's [C7]gone Lord [F]it's better [C]forgotten
 Like the poison red [Am]berries that [G7]clings to the [C]mind
 {end_of_verse}
+
+
+
+

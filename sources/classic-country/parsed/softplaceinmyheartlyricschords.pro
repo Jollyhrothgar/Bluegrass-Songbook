@@ -1,6 +1,9 @@
 {meta: title Soft Place in My Heart}
 {meta: artist Buddy Holly}
 {meta: composer Bob Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file softplaceinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a [F]soft [C]place in my [G7]heart for you
@@ -31,3 +34,8 @@ But [D7]if you decide you [G7]want me back again
 Just come [F]back [C]dear and I'll no [G7]longer be so blue
 I've got a soft place in my heart my darling for [C]you
 {end_of_verse}
+
+
+
+
+

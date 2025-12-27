@@ -1,5 +1,8 @@
 {meta: title My Bucket's Got A Hole In It}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file mybucketsgotaholeinitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yeah my bucket's got a hole in [F]it 
@@ -91,3 +94,15 @@ Yeah my bucket's got a hole in [C]it
 Yeah my bucket's got a hole in [G7]it 
 I can't buy no [C]beer 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

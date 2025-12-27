@@ -1,6 +1,9 @@
 {meta: title An Old Memory (Found Its Way Back Home Again)}
 {meta: artist Rhonda Vincent}
 {meta: composer Melba Montgomery and Jerry Salley}
+{meta: x_source classic-country}
+{meta: x_source_file anoldmemoryfounditswaybackhomeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought I had driven you out of my [C]mind
@@ -44,3 +47,10 @@ It shows up just like a bad penny
 {start_of_verse: Verse 6}
 [C]Yeah an old [G]memory found it's way [D7]back home [G]again
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Way to Survive}
 {meta: artist Gene Watson}
 {meta: composer Hank Cochran and Moneen Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file awaytosurvivelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I look at your picture too [D7]often 
@@ -33,3 +36,7 @@ But for [G7]me it's a way to sur[C]vive
 {start_of_verse: Verse 4}
 But for [G7]me it's a way to sur[C]vive
 {end_of_verse}
+
+
+
+

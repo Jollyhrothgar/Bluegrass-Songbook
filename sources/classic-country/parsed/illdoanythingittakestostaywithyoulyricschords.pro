@@ -1,6 +1,9 @@
 {meta: title I'll Do Anything It Takes To Stay With You}
 {meta: artist Jean Shepard}
 {meta: composer Curly Putman, Larry Butler, Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file illdoanythingittakestostaywithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I talk too much just tell [G7]me I'll be [C]silent
@@ -29,3 +32,6 @@
 [C]You can put me cross the table or [F]completely across the [C]room
 [F]I'll do [C]anything it [G7]takes to stay with [C]you
 {end_of_verse}
+
+
+

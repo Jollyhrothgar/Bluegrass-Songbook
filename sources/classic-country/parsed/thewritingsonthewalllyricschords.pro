@@ -1,6 +1,9 @@
 {meta: title The Writing's On The Wall}
 {meta: artist Jim Reeves}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file thewritingsonthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The writing's on the wall
@@ -42,3 +45,10 @@ That I won't stand in your way
 {start_of_verse: Verse 3}
 Every time I call you
 {end_of_verse}
+
+
+
+
+
+
+

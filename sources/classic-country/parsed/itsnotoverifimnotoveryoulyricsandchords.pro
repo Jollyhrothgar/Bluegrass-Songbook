@@ -1,6 +1,9 @@
 {meta: title It's Not Over (If I'm Not Over You)}
 {meta: artist Reba McEntire}
 {meta: composer Larry Kingston and Mark Wright}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotoverifimnotoveryoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You can [C]tell every[G7]one love is [F]over and [C]done
@@ -35,3 +38,7 @@ It's not [C]over if I'm [G7]not over [C]you
 You may [F]be over [G7]me but [C]can't you [F]see
 It's not [C]over if I'm [G7]not over [F]you[C]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Let Smokey Mountain Smoke Get In Your Eyes}
 {meta: artist The Osborne Brothers}
 {meta: composer Cecil Allen Null}
+{meta: x_source classic-country}
+{meta: x_source_file dontletsmokeymountainsmokegetinyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't let Smokey mountain [F]smoke get in your [C]eyes
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]If Smokey mountain smoke gets in your [C]eyes
 {end_of_verse}
+
+
+
+
+

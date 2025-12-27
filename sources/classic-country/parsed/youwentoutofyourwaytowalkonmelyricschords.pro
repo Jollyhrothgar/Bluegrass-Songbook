@@ -1,6 +1,9 @@
 {meta: title You Went Out Of Your Way (To Walk On Me)}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Paul Craft}
+{meta: x_source classic-country}
+{meta: x_source_file youwentoutofyourwaytowalkonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You set your sights on someone who belonged to [C]someone [G]else
@@ -26,3 +29,6 @@ You went [G]out [C]of your way to walk on [G]me
 {start_of_verse: Verse 3}
 Oh [A7]baby you went [G]out [C]of your way to walk on [G]me  walk on baby
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Touch My Heart}
 {meta: artist Charlie Pride}
+{meta: x_source classic-country}
+{meta: x_source_file touchmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Touch my heart feel the hurt the pain [C7]and [F]misery
@@ -30,3 +33,6 @@ I've [G7]tried but can't seem to shake her [C]memory
 Touch my heart feel the hurt the [C7]pain and [F]misery
 Then [G7]tell me again what love can do for [C]me
 {end_of_verse}
+
+
+

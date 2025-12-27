@@ -1,6 +1,9 @@
 {meta: title Young And Beautiful}
 {meta: artist Elvis Presley}
 {meta: composer Abner Silver and Aaron Schroeder}
+{meta: x_source classic-country}
+{meta: x_source_file youngandbeautifullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're so [Am]young  [Dm]and beauti[G7]ful
@@ -29,3 +32,6 @@ Oh take this [F]heart [Dm]I offer you
 Then you'll [Am]be  [Dm]forever [G7]young
 [G7]And beautiful to [C]me
 {end_of_verse}
+
+
+

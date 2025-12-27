@@ -1,6 +1,9 @@
 {meta: title Special Kind Of Man}
 {meta: artist Ray Price}
 {meta: composer Ray Hildebrand}
+{meta: x_source classic-country}
+{meta: x_source_file specialkindofmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If you're [C]looking for a way to spend the day
@@ -64,3 +67,11 @@ Held [G7]open by a special kind of [C]man [G7]
 [F]And if He [C]will there's a door
 Held [G7]open by a special kind of [C]man
 {end_of_verse}
+
+
+
+
+
+
+
+

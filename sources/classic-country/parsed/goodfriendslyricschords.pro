@@ -1,6 +1,9 @@
 {meta: title Good Friends}
 {meta: artist Reba McEntire}
 {meta: composer Chris Gantry and Len Chera}
+{meta: x_source classic-country}
+{meta: x_source_file goodfriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Feeling one another's joy and [G7]sorrow 
@@ -31,3 +34,6 @@ Where [D7]life will take us who can tell
 [Dm]Guess it's time to [G7]say farewell my [C]frien[Am]d  [Dm]   [G7]
 [C]Good [Am]friends [Dm]you'll never [G7]forget your [C]good [Am]friends
 {end_of_verse}
+
+
+

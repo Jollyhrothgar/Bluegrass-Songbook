@@ -1,5 +1,8 @@
 {meta: title Don't Let Her See Me Cry}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file dontletherseemecrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Want you tell telephone me 
@@ -32,3 +35,6 @@ And [G7]don't let her see me [C]cry
 [C]And just for me say goodbye 
 And [G7]don't let her see me [C]cry
 {end_of_verse}
+
+
+

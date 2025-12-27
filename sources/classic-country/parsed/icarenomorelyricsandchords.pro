@@ -1,6 +1,9 @@
 {meta: title I Care No More}
 {meta: artist Webb Pierce}
 {meta: composer Jesse Ashlock}
+{meta: x_source classic-country}
+{meta: x_source_file icarenomorelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My love is gone my pride has gone I care no [G7]more
@@ -20,3 +23,5 @@
 [C]It never should have happened and it won't no [G7]more
 [C]My love is gone my pride is gone I care no more
 {end_of_verse}
+
+

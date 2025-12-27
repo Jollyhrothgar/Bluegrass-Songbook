@@ -1,5 +1,8 @@
 {meta: title I Give All My Love To You}
 {meta: artist Rhonda Vincent with Russell Moore}
+{meta: x_source classic-country}
+{meta: x_source_file igiveallmylovetoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never thought I'd find the love I'd [C]searched for all my [G]life
@@ -32,3 +35,7 @@ These [C]vows we speak [B7]before us I give [Am]all my [D7]love to [G]you
 {start_of_verse: Verse 5}
 These [C]vows we speak [B7]before us I give [Am]all my [D7]love to [G]you
 {end_of_verse}
+
+
+
+

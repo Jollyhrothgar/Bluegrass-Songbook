@@ -1,6 +1,9 @@
 {meta: title You Made Me Feel}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Michael McDonald}
+{meta: x_source classic-country}
+{meta: x_source_file youmademefeellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Almost a [Am]lifetime a [D7]going nowhere 
@@ -47,3 +50,9 @@ And [A7]that's just how [D7]you made me [G]feel
 {start_of_verse: Verse 5}
 [A7]Just how [D7]you made me [G]feel
 {end_of_verse}
+
+
+
+
+
+

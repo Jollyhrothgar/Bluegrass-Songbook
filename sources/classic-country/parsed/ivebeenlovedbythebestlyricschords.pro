@@ -1,6 +1,9 @@
 {meta: title I've Been Loved By The Best}
 {meta: artist Don Williams}
 {meta: composer Bob McDill and Paul Harrison}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeenlovedbythebestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling if [G7]you ever leave [F]me 
@@ -37,3 +40,6 @@ Why [F]bother with the [G7]rest
 With [F]you I have been [C]blessed
 I won't [F]take nothing [G7]less  I've been loved by the [C]best
 {end_of_verse}
+
+
+

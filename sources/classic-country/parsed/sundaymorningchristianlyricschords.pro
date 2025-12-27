@@ -1,6 +1,9 @@
 {meta: title Sunday Morning Christian}
 {meta: artist Cal Smith}
 {meta: composer Harlan Howard and Lawrence Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file sundaymorningchristianlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mr. Jones this car you sold [D7]me isn't all that I [G]desired
@@ -31,3 +34,6 @@ But tomorrow will be [C]Monday you'll [D7]revert back to your [G]ways
 Gouging kicking cheating shoving with no thoughts of God or [D7]loving
 Don't let me stand in your way  surely God will forgive you next [G]Sunday
 {end_of_verse}
+
+
+

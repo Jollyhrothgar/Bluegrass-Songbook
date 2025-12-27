@@ -1,6 +1,9 @@
 {meta: title We're On Our Way}
 {meta: artist Sonny James}
 {meta: composer Bob Tubert and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file wereonourwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're on our [Em]way and [F]life is so [C]wonderful 
@@ -36,3 +39,7 @@ Just as [C]long as we get there [F]again [Fm]love
 That's [C]all [Am]we [Dm]need we're [G7]on our [C]way[G7]
 That's [C]all [Am]we [Dm]need [G7]on our [C]way
 {end_of_verse}
+
+
+
+

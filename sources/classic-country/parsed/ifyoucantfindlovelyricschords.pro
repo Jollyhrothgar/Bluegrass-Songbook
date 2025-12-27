@@ -1,6 +1,9 @@
 {meta: title If You Can't Find Love}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Pete McCann}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoucantfindlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't expect you to [F]remember
@@ -43,3 +46,8 @@ When you [Dm]dream of love [G7]I'll be your [C]man
 When you [Dm]dream of love [G7]I'll be your [C]man
 When you [Dm]dream of love [G7]I'll be your [C]man
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Maybe Then I'll Be Over You}
 {meta: artist Vern Gosdin}
 {meta: composer Bobby K. Boyd}
+{meta: x_source classic-country}
+{meta: x_source_file maybethenillbeoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I still love you though I should [G7]hate you
@@ -34,3 +37,7 @@ Maybe [C]then [G7]I’ll be over [C]you
 When they [F]lay me six feet [C]und[Am]er
 Surely [C]then [G7]I’ll be over [C]you
 {end_of_verse}
+
+
+
+

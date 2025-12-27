@@ -1,5 +1,8 @@
 {meta: title Come On And Sing}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file comeonandsinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come on and sing girls sing boys
@@ -49,3 +52,9 @@ Why [C]don't just [G7]sing and be [C]glad
 Come on and sing girls [F]sing boys
 This [C]old world may [G7]not last [C]long
 {end_of_verse}
+
+
+
+
+
+

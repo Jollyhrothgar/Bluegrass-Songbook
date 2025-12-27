@@ -1,6 +1,9 @@
 {meta: title His Eye Is On The Sparrow}
 {meta: artist Statler Brothers}
 {meta: composer Civilla Durfee Martin and Charles Hutchinson Gabriel}
+{meta: x_source classic-country}
+{meta: x_source_file hiseyeisonthesparrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Why should I feel discouraged [C]why should the shadows [G]come
@@ -37,3 +40,8 @@ His [C]eye is on the [G]sp-[D7]ar-[C]row and I [G]know He [D7]watches [G]me
 And I know He [C]watches I [G]know He [C]watches  
 I [G]know He [D7]watches [G]me  
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Farthest Thing From My Mind}
 {meta: artist Ray Price}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file farthestthingfrommymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was everything in life [F]I’ve ever dreamed [C]of
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [C]It was the farthest thing  [G7]from her [C]mind
 {end_of_verse}
+
+
+
+

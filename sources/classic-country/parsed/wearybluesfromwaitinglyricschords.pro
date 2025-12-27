@@ -1,5 +1,8 @@
 {meta: title Weary Blues From Waiting}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file wearybluesfromwaitinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Weary bl-ues  [F]from [C]waiting
@@ -35,3 +38,7 @@ Lord I've been [D7]waiting too [G7]long
 These [C]blues have got [F]me [C]crying
 Oh sweet mamma [G7]please come [C]home
 {end_of_verse}
+
+
+
+

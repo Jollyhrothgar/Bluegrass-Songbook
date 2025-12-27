@@ -1,6 +1,9 @@
 {meta: title I'd Like To Make That Same Mistake Again}
 {meta: artist Porter Wagoner}
 {meta: composer Damon Black}
+{meta: x_source classic-country}
+{meta: x_source_file idliketomakethatsamemistakeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My old friends say you were [F]my big [C]mistake
@@ -35,3 +38,7 @@
 {start_of_verse: Verse 4}
 [G7]Oh I'd like to make that same mistake [C]again
 {end_of_verse}
+
+
+
+

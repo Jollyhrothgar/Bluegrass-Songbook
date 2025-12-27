@@ -1,6 +1,9 @@
 {meta: title Anywhere On Earth You Are}
 {meta: artist Alan Jackson}
 {meta: composer Danny O'Keefe and Tim Krekel}
+{meta: x_source classic-country}
+{meta: x_source_file anywhereonearthyouarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I've been ridin' [C]these blue highways
@@ -43,3 +46,8 @@ Is be [Dm]any[Em]---[F]where [G7]on [F]earth you [C]are
 Right [G7]now [Em]all I want to [F]do
 Is be [Dm]any[Em]---[F]where [G7]on [F]earth you [C]are
 {end_of_verse}
+
+
+
+
+

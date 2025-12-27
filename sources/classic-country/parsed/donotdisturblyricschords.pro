@@ -1,6 +1,9 @@
 {meta: title Do Not Disturb}
 {meta: artist Elvis Presley}
 {meta: composer Bill Giant, Bernie Baum, Florence Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file donotdisturblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let's take the [C]phone off the [D]hook[G] 
@@ -42,3 +45,8 @@ Let's [C]stay like [D]this
 [G]Mmm mmm mmm mmm mmm [D]mmm 
 [G]Mmm mmm mmm mmm mmm [D]mmm
 {end_of_verse}
+
+
+
+
+

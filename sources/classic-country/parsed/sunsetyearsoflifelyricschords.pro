@@ -1,6 +1,9 @@
 {meta: title Sunset Years of Life}
 {meta: artist Slim Dusty and Joy McKean}
 {meta: composer Joe Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file sunsetyearsoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mom and dad's been married [F]50 years [C]today 
@@ -43,3 +46,8 @@ Heaven blessed them through the [D7]years as man and [G7]wife
 Not one [C]moment of regret and there's [F]lots to live for [C]yet 
 Yes they're living in the [G7]sunset years of [C]life
 {end_of_verse}
+
+
+
+
+

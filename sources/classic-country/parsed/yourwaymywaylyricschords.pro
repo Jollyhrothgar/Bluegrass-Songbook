@@ -1,6 +1,9 @@
 {meta: title Your Way My Way}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file yourwaymywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know how to tell the [D7]story
@@ -22,3 +25,5 @@ And I [F]wish there was [C]some way to make [D7]amend [G7]
 But [C]there's your way my way and the [D7]right way
 Let's [F]try to find [G7]the right way [C]again
 {end_of_verse}
+
+

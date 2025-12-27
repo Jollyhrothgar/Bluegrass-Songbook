@@ -1,5 +1,8 @@
 {meta: title Run Along Blues}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file runalongblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Run along blues and don't you [G7]bother [C]me 
@@ -30,3 +33,6 @@ I know you'll be back cause I'm in [F]misery
 {start_of_verse: Verse 4}
 Run along blues and don't you [G7]bother [C]me
 {end_of_verse}
+
+
+

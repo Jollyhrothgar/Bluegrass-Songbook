@@ -1,6 +1,9 @@
 {meta: title Country State Of Mind}
 {meta: artist Hank Williams Jr.}
 {meta: composer Hank Williams Jr. and Roger Alan Wade}
+{meta: x_source classic-country}
+{meta: x_source_file countrystateofmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That hot old summer sun
@@ -59,3 +62,9 @@ I'm just a laid up here in a [G7]country state of [C]mind
 {start_of_verse: Verse 5}
 yodle-he-hoo  odle-[G7]he-hoo  od-[C]leee
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Gone Home}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Carlisle}
+{meta: x_source classic-country}
+{meta: x_source_file gonehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All of my friends that I[C] loved yester[G]day
@@ -52,3 +55,8 @@ They [G]left one by one as their [C]work here was [G]done
 Gone [D7]home (they have gone home)
 Gone [G]home (they have gone home)
 {end_of_verse}
+
+
+
+
+

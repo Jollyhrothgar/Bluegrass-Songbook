@@ -1,5 +1,8 @@
 {meta: title Age of Worry}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file ageofworrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're living in an age of [F]worry 
@@ -41,3 +44,9 @@ A living in a time of [C]stress
 Disappointments all around [F]us 
 And very little [C]happiness 
 {end_of_verse}
+
+
+
+
+
+

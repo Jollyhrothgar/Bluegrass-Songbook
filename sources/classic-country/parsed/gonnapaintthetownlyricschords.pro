@@ -1,6 +1,9 @@
 {meta: title Gonna Paint The Town}
 {meta: artist The Stanley Brothers}
 {meta: composer Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file gonnapaintthetownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's from the hills of Ken[C]tucky
@@ -50,3 +53,9 @@ Every[G]thing's turned upside [D7]down
 But [G]when I find that [C]gal of mine
 We're [D7]really gonna paint the [G]town
 {end_of_verse}
+
+
+
+
+
+

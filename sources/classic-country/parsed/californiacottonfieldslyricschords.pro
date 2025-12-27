@@ -1,6 +1,9 @@
 {meta: title California Cottonfields}
 {meta: artist Merle Haggard}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file californiacottonfieldslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My drifting memory [D7]goes back to the [F]spring of [C]'43
@@ -43,3 +46,8 @@ Some [G]just came to shake my [D7]daddy's [G]hand
 [G]California was [D7]his dream a paradise [F]for he had [C]seen
 [G]Pictures in [D7]magazines that told him [G]so
 {end_of_verse}
+
+
+
+
+

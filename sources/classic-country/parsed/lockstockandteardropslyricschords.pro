@@ -1,6 +1,9 @@
 {meta: title Lock Stock And Teardrops}
 {meta: artist Don Gibson}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file lockstockandteardropslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Someday I won't come runnin' when you [G7]call
@@ -26,3 +29,6 @@ Lock stock and [C]teardrops I'll be [G]gone
 {start_of_verse: Verse 4}
 Lock stock and [C]teardrops I'll be [G]gone
 {end_of_verse}
+
+
+

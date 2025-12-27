@@ -1,6 +1,9 @@
 {meta: title The Rock I’m Leaning On}
 {meta: artist Vern Gosdin}
 {meta: composer Christopher C Rider, V.L.Haywood}
+{meta: x_source classic-country}
+{meta: x_source_file therockimleaningonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I wake up in the morning 
@@ -35,3 +38,7 @@ Oh but now you’re the [D7]rock I’m leaning [G]on
 The rock that I am leaning on
 Was [C]always in his [G]way
 {end_of_verse}
+
+
+
+

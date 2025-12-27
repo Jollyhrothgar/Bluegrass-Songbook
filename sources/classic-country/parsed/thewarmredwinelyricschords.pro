@@ -1,6 +1,9 @@
 {meta: title The Warm Red Wine}
 {meta: artist George Jones}
 {meta: composer Cindy Walker [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file thewarmredwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Put a nickel in the jukebox and [F]let it [C]play 
@@ -29,3 +32,6 @@ Is no more a prison than [G7]mine
 I’m a [C]prisoner of drink and can [F]never [C]es-cape 
 From the chains of the [G7]warm red [C]wine
 {end_of_verse}
+
+
+

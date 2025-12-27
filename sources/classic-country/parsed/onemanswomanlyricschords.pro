@@ -1,6 +1,9 @@
 {meta: title One Man's Woman}
 {meta: artist Kenny Rogers}
 {meta: composer Steve Glassmeyer}
+{meta: x_source classic-country}
+{meta: x_source_file onemanswomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's got [Em]dinner on the [D7]table at [C]seven
@@ -40,3 +43,7 @@ And right [B7]now she's [Em]occupied
 Well she's [C]one man's [G]woman and one [D7]man is on the [G]side
 Yes she's [C]one man's [G]woman and one [D7]man is on the [G]side[C]
 {end_of_verse}
+
+
+
+

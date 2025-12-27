@@ -1,6 +1,9 @@
 {meta: title Our Kind Of Love}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Shake Russell}
+{meta: x_source classic-country}
+{meta: x_source_file ourkindoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Long ago with a younger [F]partner 
@@ -44,3 +47,8 @@ They're [F]together every[G7]where they [C]go
 [F]It's our kind of [C]love I'll [Am]bet 
 They're [F]together every[G7]where they [C]go
 {end_of_verse}
+
+
+
+
+

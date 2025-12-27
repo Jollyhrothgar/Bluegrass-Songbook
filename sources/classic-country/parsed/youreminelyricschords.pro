@@ -1,6 +1,9 @@
 {meta: title You're Mine}
 {meta: artist Jack Greene}
 {meta: composer George Jones and Jack Ripley}
+{meta: x_source classic-country}
+{meta: x_source_file youreminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I won't say that I'm the only one who [D7]loves you
@@ -29,3 +32,6 @@ Wish that I could take that someone all for [G]mine
 But it seems you [D7]can't for[G]get you [C]never will and yet
 As [D7]far as my heart’s concerned you're [G]mine
 {end_of_verse}
+
+
+

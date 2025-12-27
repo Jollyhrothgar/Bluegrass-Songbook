@@ -1,6 +1,9 @@
 {meta: title I Married You For Love}
 {meta: artist Jean Shepard}
 {meta: composer Jack Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file imarriedyouforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was counting all my riches as I sat alone [G7]today
@@ -22,3 +25,5 @@ I [F]want you more than life [C]itself I [G7]married you for [C]love
 I [C]worry so if you're not by my side it's [F]you I'm thinking [C]of
 I [F]want you more than life [C]itself I [G7]married you for [C]love
 {end_of_verse}
+
+

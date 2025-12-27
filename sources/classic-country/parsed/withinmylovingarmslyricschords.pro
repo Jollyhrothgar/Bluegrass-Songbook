@@ -1,5 +1,8 @@
 {meta: title Within My Loving Arms}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file withinmylovingarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come into my loving [F]arms and for[C]get it
@@ -25,3 +28,6 @@ If you will [C]stay with me [G7]within my loving [C]arms
 {start_of_verse: Verse 4}
 [F]If you will [C]stay with me [G7]within my loving [C]arms
 {end_of_verse}
+
+
+

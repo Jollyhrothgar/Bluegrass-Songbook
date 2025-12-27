@@ -1,6 +1,9 @@
 {meta: title Happy Journey}
 {meta: artist Hank Locklin}
 {meta: composer Fred Jay, Nicola Wilke, Charles Nowa}
+{meta: x_source classic-country}
+{meta: x_source_file happyjourneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Happy journey and auf [G7]wiederseh'n
@@ -22,3 +25,5 @@
 [C7]Happy journey [F]happy journey darling [C]till that [G7]day
 [C]When you'll be [F]coming [G7]back to [C]me
 {end_of_verse}
+
+

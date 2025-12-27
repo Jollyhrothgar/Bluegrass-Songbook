@@ -1,6 +1,9 @@
 {meta: title Old Records}
 {meta: artist Kitty Wells/Red Foley}
 {meta: composer Merle Kilgore and Arthur Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file oldrecordslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Old records bring back [Am]memories [D7]pictures bring back [G]tears
@@ -29,3 +32,7 @@ I [Am]didn't know I didn't [D7]know you'd fade away
 [G]But old records bring back [Am]memories [D7]pictures bring back [G]tears
 [E7]Do you ever [Am]think of me [D7]after all these [G]years
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Somebody Nobody Knows}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file somebodynobodyknowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Alone in a barroom a young girl is [C7]sitting 
@@ -42,3 +45,8 @@ He's somebody nobody [C]knows
 [F]Somebody's dying [C]alone 
 In a [G7]city where nobody [C]cares
 {end_of_verse}
+
+
+
+
+

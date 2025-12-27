@@ -1,6 +1,9 @@
 {meta: title Till The Storm Passes By}
 {meta: artist Statler Brothers}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file tillthestormpassesbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the dark of the midnight have I oft hid my [D7]face
@@ -35,3 +38,7 @@
 [D7]Keep me safe till the storm passes [G]by
 [D7]Keep me safe till the storm [C]passes [G]b--y
 {end_of_verse}
+
+
+
+

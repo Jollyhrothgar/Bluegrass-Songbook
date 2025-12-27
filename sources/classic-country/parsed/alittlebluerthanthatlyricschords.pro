@@ -1,6 +1,9 @@
 {meta: title A Little Bluer Than That}
 {meta: artist Alan Jackson}
 {meta: composer Mark Irwin and Irene Kelley}
+{meta: x_source classic-country}
+{meta: x_source_file alittlebluerthanthatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well tonight if you turn your radio on
@@ -47,3 +50,9 @@ It may [G7]sound like me but I'm a little bluer than [C]that
 {start_of_verse: Verse 6}
 You may [G7]think of me but I'm a little bluer than [F]that[C]
 {end_of_verse}
+
+
+
+
+
+

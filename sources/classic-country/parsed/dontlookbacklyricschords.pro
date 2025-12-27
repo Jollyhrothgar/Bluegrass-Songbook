@@ -1,6 +1,9 @@
 {meta: title Don't Look Back}
 {meta: artist Wynn Stewart}
 {meta: composer Dave Burgess and James Best}
+{meta: x_source classic-country}
+{meta: x_source_file dontlookbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I stand along the shadows and here's the reason [G7]why
@@ -29,3 +32,6 @@ You'll never know my sorrow and you'll never know I [C]cried
 [C7]No-o-o [F]don't look back at me and see me [C]crying
 [G7]Cause teardrops are the one thing I can't [C]hide
 {end_of_verse}
+
+
+

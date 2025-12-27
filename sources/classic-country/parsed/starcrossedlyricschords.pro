@@ -1,5 +1,8 @@
 {meta: title Star Crossed}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file starcrossedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I met her in a shootin’ gallery [F]speedin' like a [C]goose
@@ -42,3 +45,8 @@ I got too [G7]much rock and roll to be a [C]wife
 I can't [F]live without the lightnin' and I'm [C]scared of growin' older
 So I'm [G7]bound to keep on runnin' for my [F]life
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Mother Called My Name In Prayer}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file mothercalledmynameinprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Many years ago when a [C]lad at mother’s [G]knee
@@ -28,3 +31,6 @@ I heard her call my name in [D7]prayer
 [G]As she bowed upon her knees before [C]her old [G]bedside
 I heard her call my name [D7]in [G]prayer
 {end_of_verse}
+
+
+

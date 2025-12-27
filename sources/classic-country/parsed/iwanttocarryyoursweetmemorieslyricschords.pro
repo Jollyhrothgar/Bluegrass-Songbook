@@ -1,6 +1,9 @@
 {meta: title I Want To Carry Your Sweet Memories}
 {meta: artist Statler Brothers}
 {meta: composer Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttocarryyoursweetmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wanna [C]carry your sweet [D7]memories to my [G]grave
@@ -54,3 +57,10 @@ And [C]find that I can [D7]live my life [G]anew
 And [C]I erase each [Dm]thought that I might [Em]want you back again
 And [C]I remember [D7]all you put me [G]through
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Now That I Have Accepted Your Love}
 {meta: artist Red Steagall}
 {meta: composer Richard O'Brien and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file nowthatihaveacceptedyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know that I haven’t been living 
@@ -44,3 +47,8 @@ I hope [C]my name is praised when You [G]tally the [Em]strays
 Now [C]that I have [D7]accepted Your [G]love
 Repeat last verse   Yes tonight… 
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Mrs. Santa Claus}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file mrssantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now everybody's heard of Mrs. [G7]Santa Claus
@@ -48,3 +51,9 @@ And [G7]Santa will be home on Christmas [C]day
 Y[F]ou know-ho-ho we love you Mr[C]s. Santa Claus
 And [G7]Santa will be home on Christmas [C]day
 {end_of_verse}
+
+
+
+
+
+

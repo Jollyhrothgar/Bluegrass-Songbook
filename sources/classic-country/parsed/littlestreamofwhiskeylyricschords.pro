@@ -1,5 +1,8 @@
 {meta: title Little Stream Of Whiskey}
 {meta: artist Doc Watson}
+{meta: x_source classic-country}
+{meta: x_source_file littlestreamofwhiskeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just a mile west of the water tank [C]on a cold November day
@@ -35,3 +38,7 @@ Where the handouts grow on [G]bushes and [D7]they sleep out ever' night
 Won't [G]have to wash my overhauls nor [C]even change my socks
 And the little stream of [G]whiskey comes [D7]flowing down the [G]rocks
 {end_of_verse}
+
+
+
+

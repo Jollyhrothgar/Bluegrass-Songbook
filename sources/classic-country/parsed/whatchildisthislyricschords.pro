@@ -1,6 +1,9 @@
 {meta: title What Child Is This}
 {meta: artist John Denver}
 {meta: composer William Dix}
+{meta: x_source classic-country}
+{meta: x_source_file whatchildisthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]What child is this who laid to [D7]rest
@@ -43,3 +46,8 @@
 [G]Haste haste to bring Him [D7]laud
 [Em]The Babe the [B7]Son of [Em]Mary
 {end_of_verse}
+
+
+
+
+

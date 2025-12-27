@@ -1,6 +1,9 @@
 {meta: title Nothing In The World}
 {meta: artist Charlie Rich}
 {meta: composer Margaret A. Rich}
+{meta: x_source classic-country}
+{meta: x_source_file nothingintheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The room is [G7]smoky [C]that's why I'm [G7]crying
@@ -22,3 +25,5 @@ But she has [Dm]nothing nothing in the [G7]world to do with [C]me
 [F]I'd like to call her just to ask her how it [Em]feels to be [Am]free
 But she has [Dm]nothing nothing in the [G7]world to do with [C]me
 {end_of_verse}
+
+

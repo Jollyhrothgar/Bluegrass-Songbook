@@ -1,5 +1,8 @@
 {meta: title Ever Since You Went Away}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file eversinceyouwentawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]And they [D7]try to tell me time will heal my broken [G]heart
@@ -32,3 +35,7 @@ You [A7]never loved me from the [D7]start
 You [G]won so I must pay the [C]cost
 Yes they [D7]try to tell me time will heal my broken [G]heart
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Another Sleepless Night}
 {meta: artist Anne Murray}
 {meta: composer Rory Bourke and Charlie Black [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file anothersleeplessnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The nights have been so lonely  [Dm]since you went away
@@ -31,3 +34,7 @@ Still it [C]looks like an[Dm]other sleepless night
 Oh but darling [C]that's alright
 J[F]ust as long as [G7]you are holding me [C]tight
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Luckiest Heartache In Town}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Billy Gray}
+{meta: x_source classic-country}
+{meta: x_source_file luckiestheartacheintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got the [C]luckiest [D7]heartache in [G]town
@@ -29,3 +32,6 @@ But it [D7]turned out I was featured as a [G]clown
 Still I'll walk away in [F]pride cause I'm [Am]low down deep [E7]inside
 I've got a [D7]luckiest heartache in [G]town
 {end_of_verse}
+
+
+

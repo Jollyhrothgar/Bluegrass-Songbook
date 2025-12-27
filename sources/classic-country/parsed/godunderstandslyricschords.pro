@@ -1,5 +1,8 @@
 {meta: title God Understands}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file godunderstandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God understands He [C7]knows all about [F]us
@@ -28,3 +31,6 @@ Be washed and be [C]cleansed in the blood of the [G7]Lamb
 He's trusted and [C]tried so cast [C7]Him your [F]worries
 He knows all [C]about us [G7]God [C]understands
 {end_of_verse}
+
+
+

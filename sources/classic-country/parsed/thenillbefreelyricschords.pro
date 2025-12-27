@@ -1,6 +1,9 @@
 {meta: title Then I'll Be Free}
 {meta: artist Don Gibson}
 {meta: composer Don Bowman and Ray Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file thenillbefreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]All I gotta [C]do is forget about you
@@ -27,3 +30,6 @@ Oh [F]free to do [G7]what I wanna [F]do
 Not sit at home and think [G7]about you
 Oh [F]I can find me [G7]someone new then I'll be [C]free
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bombed Boozed And Busted}
 {meta: artist Joe Sun}
 {meta: composer Dennis Knutson and Joe Sun}
+{meta: x_source classic-country}
+{meta: x_source_file bombedboozedandbustedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I get bombed [G7]boozed and [C]busted [F]a-living on a honky tonk [C]time
@@ -28,3 +31,6 @@
 {start_of_verse: Verse 4}
 Repeat #3
 {end_of_verse}
+
+
+

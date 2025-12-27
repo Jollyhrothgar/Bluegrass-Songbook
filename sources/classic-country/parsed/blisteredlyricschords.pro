@@ -1,6 +1,9 @@
 {meta: title Blistered}
 {meta: artist Johnny Cash}
 {meta: composer Billy Edd Wheeler}
+{meta: x_source classic-country}
+{meta: x_source_file blisteredlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got great big blisters on my bloodshot eyes from lookin'
@@ -33,3 +36,6 @@ She done got me oh yeah
 She done [G]tore my soul apart put big [C]blisters on my heart
 What a [D7]mighty crazy cookin' way to [G]go
 {end_of_verse}
+
+
+

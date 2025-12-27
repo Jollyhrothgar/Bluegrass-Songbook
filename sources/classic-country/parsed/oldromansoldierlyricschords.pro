@@ -1,6 +1,9 @@
 {meta: title Old Roman Soldier}
 {meta: artist Gene Watson}
 {meta: composer David Cooper}
+{meta: x_source classic-country}
+{meta: x_source_file oldromansoldierlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They trade for thirty pieces of silver
@@ -34,3 +37,7 @@ I stood at the [D7]foot of the [G]tree
 I'm an [C]old roman [G]soldier
 I stood at the [D7]foot of the [G]tree
 {end_of_verse}
+
+
+
+

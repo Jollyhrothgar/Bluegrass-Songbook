@@ -1,6 +1,9 @@
 {meta: title First Time Burned}
 {meta: artist Johnny Rodriguez}
 {meta: composer Jimmy Ray McBride}
+{meta: x_source classic-country}
+{meta: x_source_file firsttimeburnedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I loved you so much the first time [D7]around
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [C]Yes I’d do [G]anything for you [C]but love [D7]you [G]again
 {end_of_verse}
+
+
+
+

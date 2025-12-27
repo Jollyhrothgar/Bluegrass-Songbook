@@ -1,6 +1,9 @@
 {meta: title I Don't Need You}
 {meta: artist Kenny Rogers}
 {meta: composer Rick Christian}
+{meta: x_source classic-country}
+{meta: x_source_file idontneedyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't need you I don't need [Em]friendship
@@ -46,3 +49,9 @@ And I [F]know you don't [C]need me[G7]   [C]
 And we don't [F]need each other [C]baby [Dm]
 We don't [G7]need each other baby or do [C]we
 {end_of_verse}
+
+
+
+
+
+

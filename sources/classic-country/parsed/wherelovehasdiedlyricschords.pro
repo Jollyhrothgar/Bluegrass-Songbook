@@ -1,6 +1,9 @@
 {meta: title Where Love Has Died}
 {meta: artist Waylon Jennings}
 {meta: composer Jim Owen}
+{meta: x_source classic-country}
+{meta: x_source_file wherelovehasdiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If my years were less if my shoes were [D7]new
@@ -43,3 +46,8 @@
 [D7]We keep living and never tried
 [G]In some old house where love has died
 {end_of_verse}
+
+
+
+
+

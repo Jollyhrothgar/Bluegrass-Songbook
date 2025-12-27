@@ -1,6 +1,9 @@
 {meta: title Only Daddy That'll Walk The Line}
 {meta: artist Waylon Jennings}
 {meta: composer Ivy J. Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file onlydaddythatllwalkthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody knows you've been stepping on my toes
@@ -48,3 +51,9 @@ You got the [C]only daddy that'll walk the line
 Tag:
 You got the [C]only daddy that'll walk the line
 {end_of_verse}
+
+
+
+
+
+

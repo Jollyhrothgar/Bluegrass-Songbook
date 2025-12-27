@@ -1,6 +1,9 @@
 {meta: title Tips of My Fingers}
 {meta: artist Eddy Arnold}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file tipsofmyfingerslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I reached out my arms and [C]I touched [G]you  
@@ -31,3 +34,6 @@ But I let you slip right [C]through my [G]hands
 Yes I let you slip [D7]right through [G]hands
 I held your love on the tips [C]of my [G]fingers
 {end_of_verse}
+
+
+

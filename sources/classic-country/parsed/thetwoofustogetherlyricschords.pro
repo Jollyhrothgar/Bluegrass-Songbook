@@ -1,6 +1,9 @@
 {meta: title The Two Of Us Together}
 {meta: artist Don Gibson}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file thetwoofustogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The two of us to[D7]gether 
@@ -33,3 +36,7 @@ You [F]said that you could live without me
 {start_of_verse: Verse 4}
 Are we in [F]love or we [G7]just two [C]fools
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Midnight Angel}
 {meta: artist Rhonda Vincent}
 {meta: composer Bobby Osborne, Brian Vincent, Pete Goble}
+{meta: x_source classic-country}
+{meta: x_source_file midnightangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Midnight Angel
@@ -36,3 +39,8 @@ Recorded Rhonda Vincent
 {start_of_verse: Verse 5}
 [G7]For my midnight angel to come [C]home
 {end_of_verse}
+
+
+
+
+

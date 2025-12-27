@@ -1,6 +1,9 @@
 {meta: title Worry}
 {meta: artist Johnny Tillotson}
 {meta: composer Chip Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file worrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Worry the nights away [F]worry all through the day
@@ -23,3 +26,5 @@ Is [C]worry the nights away [F]worry all through the day
 I [C]worry [G7]I'm so in love with [F]you[C]
 (That's why I [G7]worry) I'm so in love with [F]you[C]
 {end_of_verse}
+
+

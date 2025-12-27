@@ -1,5 +1,8 @@
 {meta: title Lonely Coming Down}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file lonelycomingdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up this [D7]morning in a [C]strange [G]place 
@@ -32,3 +35,7 @@ As I felt the [F]lonely coming [G]down
 {start_of_verse: Verse 4}
 As I felt the [F]lonely coming [G]down
 {end_of_verse}
+
+
+
+

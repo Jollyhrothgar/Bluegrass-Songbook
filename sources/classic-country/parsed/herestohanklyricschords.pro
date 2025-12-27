@@ -1,5 +1,8 @@
 {meta: title Here's To Hank}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file herestohanklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once lived a man that was an [G7]inspiration
@@ -21,3 +24,5 @@
 [F]Success has smiled down on my head and to all my sincere thanks
 [G7]ET, Wes Rose and George D Hay he's gone but here's to [C]Hank
 {end_of_verse}
+
+

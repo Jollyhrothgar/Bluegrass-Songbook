@@ -1,5 +1,8 @@
 {meta: title Your Memory's Gone To Rest}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file yourmemorysgonetorestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your picture's in the closet covered [C]with a sheet 
@@ -45,3 +48,9 @@ Your memory's [C]finally gone to [G]rest
 Now the house is empty oh thank [D7]God 
 Your memory's [C]finally gone to [G]rest
 {end_of_verse}
+
+
+
+
+
+

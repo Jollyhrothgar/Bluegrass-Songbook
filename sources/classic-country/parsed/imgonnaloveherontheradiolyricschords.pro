@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Love Her On The Radio}
 {meta: artist Charlie Pride}
 {meta: composer Howard Thomas Brasfield and Lyman C. McAnally}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnaloveherontheradiolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna love her on the radio
@@ -36,3 +39,7 @@
 [G7]I'll get her back the only way I k-now
 [C]I'm gonna love her on the rad-i-o
 {end_of_verse}
+
+
+
+

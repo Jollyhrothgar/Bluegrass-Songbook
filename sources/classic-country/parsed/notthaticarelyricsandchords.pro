@@ -1,6 +1,9 @@
 {meta: title Not That I Care}
 {meta: artist Ricky Van Shelton}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file notthaticarelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]So you [C]saw her last [G7]night with her [C]new love
@@ -33,3 +36,7 @@ I just [C]wonder [G7]not that I [C]care [F]
 {start_of_verse: Verse 5}
 I just [C]wonder [G7]not that I [C]care
 {end_of_verse}
+
+
+
+

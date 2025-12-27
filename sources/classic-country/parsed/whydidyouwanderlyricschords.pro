@@ -1,6 +1,9 @@
 {meta: title Why Did You Wander}
 {meta: artist Ricky Skaggs}
 {meta: composer Lester Flatt and Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file whydidyouwanderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh why oh why did you [C]wander
@@ -50,3 +53,9 @@
 [G]When you know that we always were [C]happy
 [G]All alone in our [D7]old mountain [G]home
 {end_of_verse}
+
+
+
+
+
+

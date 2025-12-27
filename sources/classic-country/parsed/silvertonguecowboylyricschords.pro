@@ -1,6 +1,9 @@
 {meta: title Silver Tongue Cowboy}
 {meta: artist Carl Smith}
 {meta: composer Glenn E. Ashworth and Dana Sigmon}
+{meta: x_source classic-country}
+{meta: x_source_file silvertonguecowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In any saloon in any town Texas
@@ -50,3 +53,9 @@ You [G7]better get going while you still [C]can
 Cause the [F]riding gets rougher and [C]going gets tougher
 Cause [G7]one day you'll find out you're just a silver haired [C]man
 {end_of_verse}
+
+
+
+
+
+

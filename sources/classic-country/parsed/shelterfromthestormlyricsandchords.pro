@@ -1,6 +1,9 @@
 {meta: title Shelter From The Storm}
 {meta: artist Glen Campbell}
 {meta: composer Becky Thurman and Geoff Thurman}
+{meta: x_source classic-country}
+{meta: x_source_file shelterfromthestormlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Lord in the [C]silence I [D7]kneel down at your [G7]feet
@@ -54,3 +57,8 @@ The quiet to [G7]melt my heart of [C]stone
 The [Am]confidence that leads me [B7]home
 You are my [A7]shelter from the [E7]storm
 {end_of_verse}
+
+
+
+
+

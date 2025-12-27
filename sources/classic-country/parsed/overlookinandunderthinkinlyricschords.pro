@@ -1,6 +1,9 @@
 {meta: title Overlookin' And Underthinkin'}
 {meta: artist Don Williams}
 {meta: composer Don Williams, Joe Allen, Deon Lay}
+{meta: x_source classic-country}
+{meta: x_source_file overlookinandunderthinkinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You turned your head at [F]things that I was [C]doin'
@@ -32,3 +35,6 @@ And [F]somehow set me [C]free
 [F]Over[C]lookin' [F]and under[C]thinkin'
 [G7]Overlookin' lovin' you when [F]you were lovin' [C]me
 {end_of_verse}
+
+
+

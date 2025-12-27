@@ -1,6 +1,9 @@
 {meta: title Lying Time Again chords}
 {meta: artist Mel Tillis}
 {meta: composer Chance Walker}
+{meta: x_source classic-country}
+{meta: x_source_file lyingtimeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it’s lying time [C]again 
@@ -36,3 +39,7 @@ Where she’s cried herself to [C]sleep
 Lord the stories never [C]end 
 [D7]And it’s lying time [G]again 
 {end_of_verse}
+
+
+
+

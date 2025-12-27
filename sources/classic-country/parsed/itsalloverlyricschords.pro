@@ -1,6 +1,9 @@
 {meta: title It's All Over}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file itsalloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Arms wouldn't you like to [G7]hold her
@@ -27,3 +30,6 @@ But it's all [C]ov[D7]er [C]ov[G]er
 [A7]All except the loneliness that [D7]gets to you somehow
 [C]Ov[D7]er [C]ove[G]r might as [C]well admit that [D7]it's all over [G]now
 {end_of_verse}
+
+
+

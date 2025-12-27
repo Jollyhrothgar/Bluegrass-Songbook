@@ -1,6 +1,9 @@
 {meta: title I Wonder What The Weather's Like In Charleston}
 {meta: artist Bill Anderson}
 {meta: composer Moneen Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwhattheweatherslikeincharlestonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Though you never talked of always you were [D7]gentle
@@ -29,3 +32,6 @@ I [C]hope somehow you [D7]know I under[G]stand
 I [C]hope it doesn't rain today in [G]Charleston
 For I [D7]want you always walkin' in the [G]sun
 {end_of_verse}
+
+
+

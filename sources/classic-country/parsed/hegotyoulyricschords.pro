@@ -1,6 +1,9 @@
 {meta: title He Got You}
 {meta: artist Ronnie Milsap}
 {meta: composer Ralph Murphy and Bobby Wood}
+{meta: x_source classic-country}
+{meta: x_source_file hegotyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He got the sunshine [Am]I got the rain
@@ -37,3 +40,7 @@ He got [C]you baby [Am]he got [C]you
 [Am]He got [C]you baby baby [Am]baby 
 He got [C]you he [Am]got you baby [C]oh 
 {end_of_verse}
+
+
+
+

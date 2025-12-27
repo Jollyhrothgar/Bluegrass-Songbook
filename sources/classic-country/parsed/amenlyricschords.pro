@@ -1,6 +1,9 @@
 {meta: title Amen}
 {meta: artist Johnny Cash}
 {meta: composer Jester Hairston}
+{meta: x_source classic-country}
+{meta: x_source_file amenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Amen amen amen [F]a-[C]men [G7]a-m[C]en)
@@ -28,3 +31,6 @@ Hallelujah (amen [F]a-[C]men [G7]a-m[C]en)
 Sing it children (amen) sing amen (amen) 
 Amen one more time amen [F]a-[C]men [G7]a-m[C]en
 {end_of_verse}
+
+
+

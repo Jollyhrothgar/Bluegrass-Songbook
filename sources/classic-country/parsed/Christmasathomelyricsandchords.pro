@@ -1,5 +1,8 @@
 {meta: title Christmas At Home}
 {meta: artist Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasathomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Flying home for Christmas it’s been planned for several [C]months
@@ -35,3 +38,7 @@
 [G]All the plays and happy times are faces all [C]aglow
 [Em]As I pray to God [C]for blessings on our [D7]Christmas time at [G]home
 {end_of_verse}
+
+
+
+

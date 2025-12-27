@@ -1,5 +1,8 @@
 {meta: title Rock And Roll Ruby}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file rockandrollrubylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I took my Ruby juking on the out-skirts of town 
@@ -56,3 +59,10 @@ She's my [F]rock'n'roll Ruby rock'n'roll
 When [G7]Ruby starts a-rocking 
 It satisfies my [C]soul 
 {end_of_verse}
+
+
+
+
+
+
+

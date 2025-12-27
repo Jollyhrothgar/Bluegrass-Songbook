@@ -1,6 +1,9 @@
 {meta: title Somewhere I Wanna Go}
 {meta: artist Tracy Byrd}
 {meta: composer Mark Nesler, Tony Martin, Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file somewhereiwannagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here's the thing about your [D7]memory
@@ -56,3 +59,7 @@ The nights we just sat [D7]up (somewhere I wanna [Em]go)
 Somewhere I wanna [C]go
 Make it somewhere I wanna [G]go
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sometime Sunshine}
 {meta: artist Jim Ed Brown}
 {meta: composer Jim Coleman and Johnny Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file sometimesunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She opens [F]my door and crosses [C]the floor
@@ -34,3 +37,7 @@ She's my [F]some-time [C]sunshine
 [F]When she turns her [G7]good love on me
 [F]She's my [C]sometimes  [F]in her [G7]times of [C]need
 {end_of_verse}
+
+
+
+

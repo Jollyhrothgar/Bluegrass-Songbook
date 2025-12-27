@@ -1,6 +1,9 @@
 {meta: title Let Me Whisper Darling One More Time}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson and Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file letmewhisperdarlingonemoretimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me whisper [F]darling one more [C]time
@@ -34,3 +37,7 @@ The night's almost over but I'm not ready to let you go  please
 {start_of_verse: Verse 4}
 [C]Let me whisper [G7]darling one more [C]time
 {end_of_verse}
+
+
+
+

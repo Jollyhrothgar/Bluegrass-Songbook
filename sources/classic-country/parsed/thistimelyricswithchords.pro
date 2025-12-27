@@ -1,6 +1,9 @@
 {meta: title This Time}
 {meta: artist Johnny Lee}
 {meta: composer Jon Lisner}
+{meta: x_source classic-country}
+{meta: x_source_file thistimelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This time we're [C]really breaking up
@@ -36,3 +39,7 @@ This time we're [C]really breaking up
 [E7]This time [Am]I find that I’m
 [D7]Really losing [G]you
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'm Dynamite}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file imdynamitelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know you see that don't touch [D7]sign all over [G]me
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [D7]I'm dynamite so please don't light the [G]fuse
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Only Worse}
 {meta: artist Randy Travis}
 {meta: composer Kent M. Robbins and John Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file onlyworselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just dropped in cause [G7]I could use a friend
@@ -51,3 +54,8 @@ When the bottom [F]drops out
 The [C]only way I [G7]know to say how bad [Am]her leavin' [F]hurts
 It's kinda like a [C]heartache [G7]  only [F]worse  only [C]worse
 {end_of_verse}
+
+
+
+
+

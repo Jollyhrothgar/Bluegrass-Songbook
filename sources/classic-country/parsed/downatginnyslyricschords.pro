@@ -1,6 +1,9 @@
 {meta: title Down At Ginny's}
 {meta: artist Tony Booth}
 {meta: composer Guyanne McCall and Justin Trevino}
+{meta: x_source classic-country}
+{meta: x_source_file downatginnyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ginny's ain't no place to be when you're [F]lonely
@@ -35,3 +38,7 @@ Worried that the beverages could [G7]haunt you you still choose to [C]stay
 {start_of_verse: Verse 4}
 Down at Ginny's forgetting [G7]might be just one drink [C]away
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Send My Love To Me}
 {meta: artist Webb Pierce}
 {meta: composer Audrey Grisham}
+{meta: x_source classic-country}
+{meta: x_source_file sendmylovetomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight I hear Hawaiian [D7]echoes calling [G]me
@@ -29,3 +32,6 @@ Blue [D7]waves take me back to the [G]shore
 Hand in hand neath the [C]palms we'll [G]stroll in the sand
 Just [D7]as we did long [G]ago
 {end_of_verse}
+
+
+

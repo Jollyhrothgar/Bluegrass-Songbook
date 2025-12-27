@@ -1,6 +1,9 @@
 {meta: title Lonely Blue Boy}
 {meta: artist Conway Twitty}
 {meta: composer Fred Wise and Ben Wiseman}
+{meta: x_source classic-country}
+{meta: x_source_file lonelyblueboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My name should be trouble  [E7]my name should be [Am]woo
@@ -30,3 +33,7 @@ Well [G7]lonely lonely [F]blue boy is my [C]name
 {start_of_verse: Verse 5}
 Remember [G7]lonely lonely [F]blue boy is my [C]name
 {end_of_verse}
+
+
+
+

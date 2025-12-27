@@ -1,6 +1,9 @@
 {meta: title Someone Borrowed Someone Blue}
 {meta: artist Eddy Raven}
 {meta: composer Steve Dean, Frank Myers, David Hungate}
+{meta: x_source classic-country}
+{meta: x_source_file someoneborrowedsomeonebluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You didn't [Em]fall in love to be [Am]alone[D7]
@@ -44,3 +47,8 @@ Someone [Am]borrowed someone [C]blue [D7]from [G]me
 {start_of_verse: Verse 5}
 [Em]Someone [Am]borrowed someone [C]blue [D7]from [G]me
 {end_of_verse}
+
+
+
+
+

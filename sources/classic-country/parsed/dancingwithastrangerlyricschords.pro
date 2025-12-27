@@ -1,6 +1,9 @@
 {meta: title Dancing With A Stranger}
 {meta: artist Kitty Wells}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file dancingwithastrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While you're dancing with a [D7]stranger
@@ -29,3 +32,6 @@
 [C]Now you have left me for this [G]stranger
 [D7]And she's in my place by your [G]side
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Me Today Her Tomorrow}
 {meta: artist Dottie West}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file metodayhertomorrowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ever since the day that we first met
@@ -35,3 +38,8 @@ One day a week is all I ever [G]get
 [G]I want to give you me [C]forever
 But one [D7]day a week is all you want to [G]give
 {end_of_verse}
+
+
+
+
+

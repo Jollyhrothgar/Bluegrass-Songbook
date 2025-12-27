@@ -1,6 +1,9 @@
 {meta: title When The Fire Comes Down From Heaven}
 {meta: artist Hank Williams Sr.}
 {meta: composer Milton Estes, John W. Fowler, Tommy Harrell, Paul M. Kinsey}
+{meta: x_source classic-country}
+{meta: x_source_file whenthefirecomesdownfromheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Way back in the days of Noah
@@ -91,3 +94,20 @@ And [D7]the dead lay all [G]around
 And the [G]Good Book tells of fires
 That will [C]fill the earth some [G]day
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

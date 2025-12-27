@@ -1,5 +1,8 @@
 {meta: title The City}
 {meta: artist Gene Watson}
+{meta: x_source classic-country}
+{meta: x_source_file thecitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm looking for that city 
@@ -29,3 +32,6 @@ And [G]I will praise Him though endless ages
 Oh hallelujah [D7]Jesus is His [G]name   
 Oh hallelujah [D7]Jesus is His [G]name  
 {end_of_verse}
+
+
+

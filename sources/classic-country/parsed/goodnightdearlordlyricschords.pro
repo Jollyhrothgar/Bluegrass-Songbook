@@ -1,6 +1,9 @@
 {meta: title Good Night Dear Lord}
 {meta: artist Red Foley}
 {meta: composer Paul Tripp and Maurice Krumbein}
+{meta: x_source classic-country}
+{meta: x_source_file goodnightdearlordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The setting [F]sun has [C]gone [F]away
@@ -31,3 +34,6 @@ Good [F]night dear [Em]Lord [C] let me [F]see a [G7]new day [C]dawn
 Good [F]night dear [Em]Lord [C] let [F]me see You in the [C]morning
 [G7]Good [C]night
 {end_of_verse}
+
+
+

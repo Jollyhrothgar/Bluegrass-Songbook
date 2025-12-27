@@ -1,6 +1,9 @@
 {meta: title Broken Engagement}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker, Max Powell, Mary Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file brokenengagementlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They were standing in the [G7]moonlight
@@ -36,3 +39,7 @@
 [C]In that far up home up [G7]yonder
 [C]There our love won’t end this way
 {end_of_verse}
+
+
+
+

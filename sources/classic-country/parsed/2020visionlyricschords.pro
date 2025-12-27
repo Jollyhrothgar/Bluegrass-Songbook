@@ -1,6 +1,9 @@
 {meta: title 20 20 Vision}
 {meta: artist Ronnie Milsap}
 {meta: composer Geoff Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file 2020visionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My life was right in front of me [F]but now she's gone
@@ -23,3 +26,5 @@ Well I've [G7]got 20 20 [Dm]vision [G7]but only looking [C]back
 I've [G7]got 20 20 [Dm]vision [G7]but only looking [C]back
 I've [G7]got 20 20 [Dm]vision [G7]but only looking [C]back
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Nothing From Nothing}
 {meta: artist Brenda Lee}
 {meta: composer Billy Preston and Bruce Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file nothingfromnothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nothing from [E7]nothing leaves [Am]nothing
@@ -36,3 +39,7 @@ Yeah nothing from [E7]nothing leaves [Am]nothing
 [Am]Nothing from [G7]nothing [C]leaves [F]nothing
 And ya gotta have [D7]something [G7]if ya wanna be with [C]me 
 {end_of_verse}
+
+
+
+

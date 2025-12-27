@@ -1,5 +1,8 @@
 {meta: title Take My Hand Precious Lord}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file takemyhandpreciouslordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my way grows drear 
@@ -27,3 +30,5 @@ At the river I [C]stand
 Guide my feet hold my [F]hand
 Take my [C]hand precious Lord [G7]lead me [C]home
 {end_of_verse}
+
+

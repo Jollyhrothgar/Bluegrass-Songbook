@@ -1,6 +1,9 @@
 {meta: title After Yesterday}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer John Gluck and Diane Lampert}
+{meta: x_source classic-country}
+{meta: x_source_file afteryesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]After yesterday you broke this heart of [F]mine
@@ -36,3 +39,7 @@
 [C]Send along one of your [F]photographs
 [C]Then I [G7]will always think of [C]you
 {end_of_verse}
+
+
+
+

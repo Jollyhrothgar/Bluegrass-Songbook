@@ -1,6 +1,9 @@
 {meta: title Sleepin' With The Radio On}
 {meta: artist Charly McClain}
 {meta: composer Steve Davis}
+{meta: x_source classic-country}
+{meta: x_source_file sleepinwiththeradioonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart [G7]beats with the [C]lonely rain
@@ -54,3 +57,9 @@ You're on my [Dm]mind and I [G7]can't forget you
 [Em]Sleepin' with the radio [Am]on
 You're on my [Dm]mind and I [G7]can't forget [Em]you [Am]
 {end_of_verse}
+
+
+
+
+
+

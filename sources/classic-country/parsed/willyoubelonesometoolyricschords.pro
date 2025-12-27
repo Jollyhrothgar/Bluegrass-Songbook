@@ -1,6 +1,9 @@
 {meta: title Will You Be Lonesome Too}
 {meta: artist J.D. Crowe}
 {meta: composer Alton Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file willyoubelonesometoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How would you like be lonesome 
@@ -57,3 +60,9 @@ When someone is through with [D7]you
 [D7]Wonder if you're lonesome [G]too
 [D7]Wonder if you're lonesome [G]too
 {end_of_verse}
+
+
+
+
+
+

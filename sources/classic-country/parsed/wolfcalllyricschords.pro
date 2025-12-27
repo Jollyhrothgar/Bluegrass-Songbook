@@ -1,6 +1,9 @@
 {meta: title Wolf Call}
 {meta: artist Elvis Presley}
 {meta: composer Bill Giant, Bernie Baum, Florenece Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file wolfcalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Flip flop with kay-eye what a cutie pie I see
@@ -19,3 +22,4 @@ Just a little kiss'll put me in a whirl
 [C]Why do you try to [F]stall
 [C]Now don't tell me you don't [G7]fall for that wolf [C]call
 {end_of_verse}
+

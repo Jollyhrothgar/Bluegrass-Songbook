@@ -1,6 +1,9 @@
 {meta: title Another Story}
 {meta: artist Ernest Tubb}
 {meta: composer Arlie Duff}
+{meta: x_source classic-country}
+{meta: x_source_file anotherstorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No Regrets No Hard Feelings its [C]over
@@ -22,3 +25,5 @@ And Suddenly a Smile Will Cross My [D7]Face
 If She [G]Asks Me What's So Funny Then I'll Tell [C]Her
 Another [G]Story  Another [D7]Time  Another [G]Place
 {end_of_verse}
+
+

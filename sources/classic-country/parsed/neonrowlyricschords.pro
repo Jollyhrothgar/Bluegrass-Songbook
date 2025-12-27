@@ -1,6 +1,9 @@
 {meta: title Neon Row}
 {meta: artist George Strait}
 {meta: composer Donny Kees and Jimmy Jay}
+{meta: x_source classic-country}
+{meta: x_source_file neonrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You've been [C]out again tonight [G7]with the girls out on the [C]town
@@ -50,3 +53,9 @@ They wore the night before to neon [C]row [F]
 [C]Puttin' back on the clothes 
 They wore the [G7]night before to neon [C]row
 {end_of_verse}
+
+
+
+
+
+

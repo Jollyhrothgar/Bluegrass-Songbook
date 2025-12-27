@@ -1,6 +1,9 @@
 {meta: title All Night Blue}
 {meta: artist Billy Crash Craddock}
 {meta: composer Ava Aldridge and Cindy Richardson}
+{meta: x_source classic-country}
+{meta: x_source_file allnightbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've got a life [F]somewhere without me
@@ -52,3 +55,9 @@ Remembering [F]you
 It's an [G7]all [F]night [C]blue[Dm]
 [C]Wondering [F]who's loving [G7]you all [C]night [G7]   [F]   [C]blue
 {end_of_verse}
+
+
+
+
+
+

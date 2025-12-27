@@ -1,6 +1,9 @@
 {meta: title Come A Little Bit Closer}
 {meta: artist Johnny Duncan and Janie Fricke}
 {meta: composer Tommy Boyce, Bobby Hart, Wes Farrell}
+{meta: x_source classic-country}
+{meta: x_source_file comealittlebitcloserlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a little cafe just the [F]other side of the [C]border
@@ -40,3 +43,8 @@ Tag:
 [G7]Come a little bit closer [C]you're my kind of man [F]so big and so [G7]strong
 [C]Come a little bit closer [F]I'm all alone and [G7]the night is so [C]long
 {end_of_verse}
+
+
+
+
+

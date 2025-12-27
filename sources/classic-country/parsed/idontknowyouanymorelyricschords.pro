@@ -1,6 +1,9 @@
 {meta: title I Don't Know You (Anymore)}
 {meta: artist Tommy Overstreet}
 {meta: composer Ricci Mareno and Charlie Black}
+{meta: x_source classic-country}
+{meta: x_source_file idontknowyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No I don't [G7]know you any[F]more
@@ -42,3 +45,8 @@ Something's [F]wrong
 I can [C]feel it when I hold you baby
 No I don't [G7]know you any[F]more[C]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Golden Ring}
 {meta: artist George Jones}
 {meta: composer Bobby Braddock and Rafe VanHoy}
+{meta: x_source classic-country}
+{meta: x_source_file goldenringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a pawn shop in Chicago on a sunny summer day
@@ -50,3 +53,9 @@ Tag :
 In a pawn shop in Chicago on a sunny summer day
 A [G7]couple gazes at the wedding [F]rings there on [C]display 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Heart's Highway}
 {meta: artist Lefty Frizzel}
 {meta: composer Eddie Miller and Alice Harper}
+{meta: x_source classic-country}
+{meta: x_source_file heartshighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Through your heart there runs a highway
@@ -23,3 +26,5 @@
 [C]So I'll just keep a-traveling down [F]this highway paved with [D7]blues
 [G7]Cause I'm just another love passing [C]through
 {end_of_verse}
+
+

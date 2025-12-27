@@ -1,6 +1,9 @@
 {meta: title Don't Just Stand There}
 {meta: artist Carl Smith}
 {meta: composer Cherokee Jack Mealey and Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file dontjuststandtherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you feel like you’re in love [G7]don't just stand [C]there
@@ -39,3 +42,7 @@
 [E7]You gotta give that gal a [C]ring
 [G7]When you feel like you’re in love don't just stand [C]there
 {end_of_verse}
+
+
+
+

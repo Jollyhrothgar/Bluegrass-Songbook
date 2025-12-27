@@ -1,6 +1,9 @@
 {meta: title I Took Her For A Fool}
 {meta: artist Cal Smith}
 {meta: composer Randall J. Colemus}
+{meta: x_source classic-country}
+{meta: x_source_file itookherforafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm setting in this honky tonk down to my last [D7]dime
@@ -29,3 +32,6 @@
 [G]I kicked myself a million times for treating her so [C]bad
 [G]I took her for a fool so she [D7]took me for all I [G]had
 {end_of_verse}
+
+
+

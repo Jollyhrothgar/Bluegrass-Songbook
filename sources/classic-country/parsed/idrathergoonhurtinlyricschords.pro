@@ -1,5 +1,8 @@
 {meta: title I'd Rather Go On Hurtin'}
 {meta: artist Joe Sun}
+{meta: x_source classic-country}
+{meta: x_source_file idrathergoonhurtinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It would be so easy to [F]just pick up this [C]phone
@@ -39,3 +42,7 @@ I'd [F]rather go on [C]hurtin' than [F]go on [G7]hurtin' [C]you
 Go on hurtin' [Am]go on hurtin'
 I'd [F]rather go on [C]hurtin' than [F]go on [G7]hurtin' [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Jesus Has Broad Shoulders}
 {meta: artist Wilburn Brothers}
 {meta: composer Teddy O'Neal}
+{meta: x_source classic-country}
+{meta: x_source_file myJesushasbroadshoulderslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I took a long long walk [G7]by the [C]river 
@@ -43,3 +46,8 @@ His [G7]back is stronger than [C]mine
 He [F]was there the first time I called [C]Him 
 He'll be there anyplace [C][G7]anytime
 {end_of_verse}
+
+
+
+
+

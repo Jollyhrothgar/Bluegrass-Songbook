@@ -1,5 +1,8 @@
 {meta: title Aristocrat}
 {meta: artist Tex Morton}
+{meta: x_source classic-country}
+{meta: x_source_file aristocratlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen some horses in my time but never [F]one to buck
@@ -49,3 +52,9 @@ He's thrown them in the east [F]thrown then in the west
 [C]Seen him throw them high [F]seen him lay 'em flat
 But I've yet to meet the fella who [G7]could ride Aristo[C]crat
 {end_of_verse}
+
+
+
+
+
+

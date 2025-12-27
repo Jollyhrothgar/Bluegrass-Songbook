@@ -1,6 +1,9 @@
 {meta: title Ten Thousand Angels}
 {meta: artist Loretta Lynn}
 {meta: composer Ray Overholt}
+{meta: x_source classic-country}
+{meta: x_source_file tenthousandangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He could have [C]called ten thousand [G]angels
@@ -33,3 +36,7 @@ They [C]led Him through the streets in [G]shame
 They spat upon the Savior so [D7]pure and free from [G]sin
 They said [Am]crucify Him [D7]He's to [G]blame
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Moondreams}
 {meta: artist Buddy Holly}
 {meta: composer Norman Petty}
+{meta: x_source classic-country}
+{meta: x_source_file moondreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Strange things take place in my [B7]moondreams
@@ -23,3 +26,5 @@ Will [A7]do until you can [D7]share all my dreams
 [A7]Moondreams  [D7]moondreams
 [A7]Moondreams [D7]brought by moonbeams in the [G]sky
 {end_of_verse}
+
+

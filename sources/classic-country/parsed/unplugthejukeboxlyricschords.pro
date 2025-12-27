@@ -1,6 +1,9 @@
 {meta: title Unplug the Jukebox}
 {meta: artist Billy Walker}
 {meta: composer Ken Holloway and Bruce Haynes}
+{meta: x_source classic-country}
+{meta: x_source_file unplugthejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Unplug the [F]jukebox  I don't need it [C]anymore
@@ -37,3 +40,9 @@ Since Jesus [G7]came in and [F]mended my broken [C]heart
 {start_of_verse: Verse 5}
 Tag: Unplug the [G7]jukebox I don't [F]need it [C]anymore
 {end_of_verse}
+
+
+
+
+
+

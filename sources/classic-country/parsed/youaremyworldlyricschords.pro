@@ -1,5 +1,8 @@
 {meta: title You Are My World}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file youaremyworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You are my world [C]  the very [G]life of me
@@ -21,3 +24,5 @@ You're my [D7]goal you're my [C]desti[G]ny
 You're my lo[G7]ve and you'll [C]always be
 My heart and [G]soul [D7]a living [C]part of [G]me 
 {end_of_verse}
+
+

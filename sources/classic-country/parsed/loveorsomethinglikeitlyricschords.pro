@@ -1,6 +1,9 @@
 {meta: title Love Or Something Like It}
 {meta: artist Kenny Rogers}
 {meta: composer Kenny Rogers and Steve Glassmeyer}
+{meta: x_source classic-country}
+{meta: x_source_file loveorsomethinglikeitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Show me a bar with a good looking woman 
@@ -42,3 +45,8 @@ Love or something [Am]like it's got a [C]hold [G7]on [C]me
 Something's got a hold on [F]me it's [G7]cheap but it ain't [C]free
 Love or something [Am]like it's got a [C]hold [G7]on [C]me
 {end_of_verse}
+
+
+
+
+

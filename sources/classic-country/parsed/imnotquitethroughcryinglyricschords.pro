@@ -1,6 +1,9 @@
 {meta: title I'm Not Quite Through Crying}
 {meta: artist Statler Brothers}
 {meta: composer Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file imnotquitethroughcryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Perhaps I outta m[D7]ingle with the c[G]rowd just a little bit more
@@ -49,3 +52,8 @@ And I'm not quite through [C]crying over [G]you not [Em]quite
 [G]I'm not quite through [D7]crying over [G]you just [Em]about
 [G]I'm not quite through [D7]crying over [G]you
 {end_of_verse}
+
+
+
+
+

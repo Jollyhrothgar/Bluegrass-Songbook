@@ -1,6 +1,9 @@
 {meta: title I Still Belong To You}
 {meta: artist Lynn Anderson}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file istillbelongtoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've thought of [G7]leaving [Am]you a [G7]note [F]but every time I [C]start
@@ -26,3 +29,6 @@ I hurt inside [G7]but what is pride it [C]won't keep me [F]warm at night
 {start_of_verse: Verse 4}
 It takes your love to [Am]make me live [F]I still be[G7]long to [C]you
 {end_of_verse}
+
+
+

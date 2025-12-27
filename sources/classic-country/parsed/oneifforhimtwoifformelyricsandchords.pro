@@ -1,6 +1,9 @@
 {meta: title One If For Him Two If For Me}
 {meta: artist David Houston}
 {meta: composer Gene Davis}
+{meta: x_source classic-country}
+{meta: x_source_file oneifforhimtwoifformelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'll [C]drive by your house [G7]sometime [C]tonight
@@ -22,3 +25,5 @@ One if for [C]him  [G7]two if for [C]me
 So have a [F]light in your [G7]window [C]so I can [F]see
 One if for [C]him  [G7]two if for [F]me [C]
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Say You Lied}
 {meta: artist J.D. Crowe}
 {meta: composer Howard Russell Smith}
+{meta: x_source classic-country}
+{meta: x_source_file sayyouliedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was a fool to say I didn’t love you
@@ -54,3 +57,10 @@ And you [C]locked my heart [D7]outside
 {start_of_verse: Verse 5}
 You said you didn’t [D7]love me please say you [G]lied
 {end_of_verse}
+
+
+
+
+
+
+

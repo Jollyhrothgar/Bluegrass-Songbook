@@ -1,5 +1,8 @@
 {meta: title I May Smoke Too Much}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file imaysmoketoomuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once my future was as shiny as the seat of my [G7]pants are today
@@ -29,3 +32,6 @@ But you [C]bet your butt I'm gonna live before I [G7]die
 And I may [C]smoke too much [G7]drink too much [C]every blessed [F]thing too much
 It's a [C]low down life but it [G7]ain't gonna pass me [C]by
 {end_of_verse}
+
+
+

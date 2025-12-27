@@ -1,6 +1,9 @@
 {meta: title Reminiscing}
 {meta: artist Buddy Holly}
 {meta: composer King Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file reminiscinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just sittin' here reminiscin'
@@ -30,3 +33,5 @@ You know I'm thinkin' of
 [F]Well it's you I'm thinkin' [C]of
 [F]Mm-mm-mm mm-mm-[C]mm
 {end_of_verse}
+
+

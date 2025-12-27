@@ -1,6 +1,9 @@
 {meta: title Seattle}
 {meta: artist Connie Smith}
 {meta: composer Ernie Sheldon, Jack Keller, Hugo Montenegro}
+{meta: x_source classic-country}
+{meta: x_source_file seattlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The bluest skies [G7]you've [Am]ever [F]seen [C]are in [G7][Am][G7]Seattle
@@ -43,3 +46,8 @@
 {start_of_verse: Verse 4}
 [F]In [C]Seattle [Am]oh [F]in [C]Seattle in [Am]Seattle [C]oh [Am]in [C]Seattle
 {end_of_verse}
+
+
+
+
+

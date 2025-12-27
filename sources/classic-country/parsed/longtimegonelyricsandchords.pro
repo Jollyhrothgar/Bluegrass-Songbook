@@ -1,6 +1,9 @@
 {meta: title Long Time Gone}
 {meta: artist Wilburn Brothers}
 {meta: composer Dave Dudley and Danny Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file longtimegonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess you think you broke my heart
@@ -29,3 +32,6 @@ And he was crying for his [Dm]love
 I'm sorry that he's all alone
 But for me I'm glad I'll [G7]be a long time [C]gone 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Happiness Goes Off}
 {meta: artist Cal Smith}
 {meta: composer A.L. Owens and Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file myhappinessgoesofflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My [C]happiness goes [G]off 
@@ -53,3 +56,10 @@ By the kind of dress she [D7]wears
 My [C]happiness goes [G]off
 Each time the [D7]neon signs come [G]on
 {end_of_verse}
+
+
+
+
+
+
+

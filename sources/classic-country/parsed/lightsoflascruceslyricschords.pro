@@ -1,4 +1,7 @@
 {meta: artist Ted Scanlon}
+{meta: x_source classic-country}
+{meta: x_source_file lightsoflascruceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We drove out of [G7]Redding for [C]home
@@ -41,3 +44,8 @@ Where the [F]life and the ladies are [C]true
 Where [F]ever we go with our [C]dances and [A7]shows
 Hey we [D7]saved the [G7]last dance for [C]you [G7]
 {end_of_verse}
+
+
+
+
+

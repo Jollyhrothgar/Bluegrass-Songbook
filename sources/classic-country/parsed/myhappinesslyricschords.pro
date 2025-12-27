@@ -1,5 +1,8 @@
 {meta: title My Happiness}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file myhappinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Evening shadows make [F]me blue when each weary day is [C]through
@@ -21,3 +24,5 @@ A [F]million years it seems have gone by since we shared our [C]dreams
 [C]Whether the skies are grey [F]or blue any place on earth will [C]do
 Just as long as [G7]I'm with you my [C]happiness
 {end_of_verse}
+
+

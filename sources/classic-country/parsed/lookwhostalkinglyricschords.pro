@@ -1,5 +1,8 @@
 {meta: title Look Who's Talking}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhostalkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look who's talking  [F]look and you will [C]see
@@ -26,3 +29,6 @@
 [C]Now look who's talking  [F]with teardrops in our [C]eyes
 [F]Two broken hearts that [C]lies destroyed [G7]saying [C]goodbye
 {end_of_verse}
+
+
+

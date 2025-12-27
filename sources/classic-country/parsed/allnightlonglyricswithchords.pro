@@ -1,6 +1,9 @@
 {meta: title All Night Long}
 {meta: artist Dottie West}
 {meta: composer Richard Mainegra and Milton Blackford}
+{meta: x_source classic-country}
+{meta: x_source_file allnightlonglyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's gonna be a beautiful evenin'
@@ -44,3 +47,9 @@ Later maybe take in a movie
 [Am]And put on our favorite lovin' song
 [D7]And turn out the [G]light
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Last Love Song}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file thelastlovesonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know it's over 
@@ -31,3 +34,6 @@ Then what we had was never quite the [G7]same
 I wish I could [C]find eyes that won't cry 
 Lips that won't [Dm]lie  [G7]and a love that won't [C]die
 {end_of_verse}
+
+
+

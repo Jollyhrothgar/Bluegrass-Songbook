@@ -1,6 +1,9 @@
 {meta: title I'd Still Want You}
 {meta: artist Hank Williams}
 {meta: composer Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file idstillwantyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I could shame you till you hide your face
@@ -67,3 +70,11 @@ Cause if all these lies were [D7]true
 I know I'd still want [G]you
 [D7]Cry oh [G]lord
 {end_of_verse}
+
+
+
+
+
+
+
+

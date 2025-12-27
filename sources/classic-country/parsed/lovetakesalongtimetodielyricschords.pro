@@ -1,6 +1,9 @@
 {meta: title Love Takes A Long Time To Die}
 {meta: artist Ronnie Milsap}
 {meta: composer Geoff Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file lovetakesalongtimetodielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's not [Em]over when you [Am]stop crying[C]
@@ -28,3 +31,6 @@ And it's not [Em]finally done when [Am]you just walk [C]away from someone
 [F]Cause love takes a [G7]long time it [Em]takes such a [Am]long time 
 [Dm]Love takes a [G7]long time to [C]die
 {end_of_verse}
+
+
+

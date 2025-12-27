@@ -1,6 +1,9 @@
 {meta: title Enough To Lie}
 {meta: artist Ray Price}
 {meta: composer Jeannie Seely}
+{meta: x_source classic-country}
+{meta: x_source_file enoughtolielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You don't listen even when  I beg [G7]you not to [C]leave
@@ -22,3 +25,5 @@ If [A7]sometimes I wasn't here when you came [D7]home
 You [G]know I know where you go  [G7]but you don't try to [C]hide
 Cause you don't even [G]care [D7]enough to [G]lie
 {end_of_verse}
+
+

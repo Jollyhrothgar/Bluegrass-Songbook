@@ -1,6 +1,9 @@
 {meta: title Is Anything Too Hard For God}
 {meta: artist The Whisnants}
 {meta: composer Marcia B. Henry and Niles Borop}
+{meta: x_source classic-country}
+{meta: x_source_file isanythingtoohardforGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's [C]out of your hands you've [F]done all you [C]can do
@@ -34,3 +37,7 @@ Is [C]anything [G7]too hard for [C]God
 [F]Are there situa[C]tions He's [E7]not the Master [Am]of
 Is [C]anything [G7]too hard for [C]God
 {end_of_verse}
+
+
+
+

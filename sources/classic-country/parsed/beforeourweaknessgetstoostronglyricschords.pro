@@ -1,6 +1,9 @@
 {meta: title Before Our Weakness Gets Too Strong}
 {meta: artist Porter Wagoner}
 {meta: composer Louis Owens}
+{meta: x_source classic-country}
+{meta: x_source_file beforeourweaknessgetstoostronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What are we doing [D7]in this place [G]alone
@@ -33,3 +36,7 @@ Let's go [G]home before our [D7]weakness gets too [G]strong
 {start_of_verse: Verse 4}
 [C]Let's go [G]home before our [D7]weakness gets too [G]strong
 {end_of_verse}
+
+
+
+

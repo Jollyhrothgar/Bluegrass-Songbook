@@ -1,6 +1,9 @@
 {meta: title Fountain Of Glory}
 {meta: artist Billy Parker}
 {meta: composer Jess R. Hudson}
+{meta: x_source classic-country}
+{meta: x_source_file fountainofglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take a [F]drink from the fountain of [C]Glory [F]
@@ -39,3 +42,8 @@ Filled by [C]Jesus with His [Am]spirit of [Dm]His precious [C]love
 Take a [F]drink from the fountain of [C]Glory[F]
 Filled by [C]Jesus with His [Am]spirit of [Dm]His [G7]precious [F]lov[C]e
 {end_of_verse}
+
+
+
+
+

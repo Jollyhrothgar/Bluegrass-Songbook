@@ -1,6 +1,9 @@
 {meta: title Ivy Rose}
 {meta: artist George Hamilton IV}
 {meta: composer Al Hoffman and Dick Manning}
+{meta: x_source classic-country}
+{meta: x_source_file ivyroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ivy Rose [D7]Ivy [G]Rose I'm in [Am]love with [D7]you
@@ -40,3 +43,8 @@ I'll be yours when [B7]tonight is a [C]memor[Am]y
 {start_of_verse: Verse 6}
 Ivy Rose you will [D7]always be [G]mine
 {end_of_verse}
+
+
+
+
+

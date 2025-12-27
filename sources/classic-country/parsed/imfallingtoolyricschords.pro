@@ -1,6 +1,9 @@
 {meta: title I’m Falling Too}
 {meta: artist Skeeter Davis}
 {meta: composer Hal Blair and Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file imfallingtoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say that you're falling  [C]but what can I [G]do
@@ -22,3 +25,5 @@ Our love's a [C]temptation [G]but we just can't [D7]win
 You ask me to [G]help you but what can I [C]do
 I can't help you [G]darling  [D7]cause I'm falling [G]too
 {end_of_verse}
+
+

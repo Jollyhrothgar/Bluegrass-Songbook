@@ -1,6 +1,9 @@
 {meta: title Something Old Something New}
 {meta: artist Eddy Arnold}
 {meta: composer Cy Coben and Charles Grean}
+{meta: x_source classic-country}
+{meta: x_source_file somethingoldsomethingnewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Something [C]old something [C7]new 
@@ -30,3 +33,6 @@ Something [C]old something new
 Something [G7]borrowed and [C]blue  
 Repeat
 {end_of_verse}
+
+
+

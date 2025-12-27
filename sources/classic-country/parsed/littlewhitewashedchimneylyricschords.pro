@@ -1,6 +1,9 @@
 {meta: title Little White Washed Chimney}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Bill Clifton}
+{meta: x_source classic-country}
+{meta: x_source_file littlewhitewashedchimneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where the Mississippi flowing by the [F]sunny southern shores
@@ -29,3 +32,6 @@ Where the old folks they want me home own [G7]again
 To the [C]little old log cabin with the [F]grapevine o'er the door
 And the [G7]little white washed chimney at the [C]end
 {end_of_verse}
+
+
+

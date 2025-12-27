@@ -1,6 +1,9 @@
 {meta: title Before The Ring On Your Finger Turns Green}
 {meta: artist Dottie West}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file beforetheringonyourfingerturnsgreenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's just leadin' you on [G]honey he'll be gone
@@ -34,3 +37,8 @@ Before the [D7]ring on your finger turns [G]green
 {start_of_verse: Verse 4}
 Before the [D7]ring on your finger turns [G]green
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Merry Go Round}
 {meta: artist Moe Bandy}
 {meta: composer Pat Bunch and Pearly Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkmerrygoroundlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She stood there with tears in [F]her beautiful eyes
@@ -40,3 +43,8 @@ Is [Dm]riding a [G7]honky tonk merry go [C]round
 {start_of_verse: Verse 5}
 [Dm]Is riding a [G7]honky tonk merry go [C]round
 {end_of_verse}
+
+
+
+
+

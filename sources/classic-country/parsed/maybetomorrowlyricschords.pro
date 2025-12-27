@@ -1,6 +1,9 @@
 {meta: title Maybe Tomorrow}
 {meta: artist David Ball}
 {meta: composer and recorded by David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file maybetomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I hate to say goodbye don't you [C]know
@@ -41,3 +44,8 @@
 [C]Maybe tomorrow I'll settle down some [G]place
 [C]Maybe tomorrow maybe [D7]tomorrow not [G]today
 {end_of_verse}
+
+
+
+
+

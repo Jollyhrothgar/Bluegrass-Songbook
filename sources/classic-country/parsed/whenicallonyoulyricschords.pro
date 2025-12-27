@@ -1,6 +1,9 @@
 {meta: title When I Call On You}
 {meta: artist Slim Whitman}
 {meta: composer Dee Clark}
+{meta: x_source classic-country}
+{meta: x_source_file whenicallonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the stars [G7]shine at [C]night
@@ -22,3 +25,5 @@ That's [Dm]when I [G7]call on [C]you
 When I [Dm]wondering if you're thinking of me too[A7]
 That's [Dm]when I [G7]call on [C]you
 {end_of_verse}
+
+

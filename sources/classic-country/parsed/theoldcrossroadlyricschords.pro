@@ -1,6 +1,9 @@
 {meta: title The Old Cross Road}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file theoldcrossroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]O my brother take this warning
@@ -51,3 +54,12 @@ To shun the [D7]one that goes down [G]below
 You'll be lost in sin forever
 You'll never [D7]reach the Promised [G]Land
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If I Knew}
 {meta: artist Buck Owens}
 {meta: composer Ed King and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file ifiknewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I knew what made the world go round 
@@ -28,3 +31,5 @@ Then I'd [C]know  [G7]why I love [C]you
 [F]If I knew what made the north wind blow
 Then I'd [C]know  [G7]why I love [C]you
 {end_of_verse}
+
+

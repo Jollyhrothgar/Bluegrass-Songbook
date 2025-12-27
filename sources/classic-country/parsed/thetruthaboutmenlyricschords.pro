@@ -1,6 +1,9 @@
 {meta: title The Truth About Men}
 {meta: artist Tracy Byrd}
 {meta: composer Paul Overstreet, Tim Johnson, Rory Lee}
+{meta: x_source classic-country}
+{meta: x_source_file thetruthaboutmenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We don't like to go out shoppin' we [F]don't care what's on [C]sale
@@ -50,3 +53,9 @@ We ain't [F]wrong we ain't [C]sorry and it's [G7]probably gonna happen
 Sure it's gonna happen you know it's gonna happen [C]again
 And that's the [G7]truth about [C]men  
 {end_of_verse}
+
+
+
+
+
+

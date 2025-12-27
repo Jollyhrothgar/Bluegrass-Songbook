@@ -1,5 +1,8 @@
 {meta: title The Hills Of Caroline}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file thehillsofcarolinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born in Guilford [F]county 
@@ -40,3 +43,8 @@ In the [C]hills [G7]of Caro[C]line
 Just bury me right next to [F]Hattie 
 In the [C]hills [G7]of Caro[C]line
 {end_of_verse}
+
+
+
+
+

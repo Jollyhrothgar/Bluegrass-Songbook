@@ -1,6 +1,9 @@
 {meta: title Girl At The Crossroads Bar}
 {meta: artist Larry Sparks}
 {meta: composer Bill Bryson}
+{meta: x_source classic-country}
+{meta: x_source_file girlatthecrossroadsbarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walked out tonight for a ramble round
@@ -36,3 +39,7 @@ Keep your love at home with your lovely [G7]wife
 You're better [F]off than you think you [C]are
 And you won't find love [G7]at the crossroad [C]bar
 {end_of_verse}
+
+
+
+

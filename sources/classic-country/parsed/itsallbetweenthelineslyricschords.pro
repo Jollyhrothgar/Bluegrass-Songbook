@@ -1,6 +1,9 @@
 {meta: title It's All Between the Lines}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Owen Perry}
+{meta: x_source classic-country}
+{meta: x_source_file itsallbetweenthelineslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have this [G7]letter that you [F]wr-ote [C]me
@@ -29,3 +32,6 @@
 [C]Words can't [G7]hide a love grown [F]c-old [C]dear
 [G7]Darling it's all between the [C]lines
 {end_of_verse}
+
+
+

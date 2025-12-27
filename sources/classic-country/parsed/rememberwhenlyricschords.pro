@@ -1,5 +1,8 @@
 {meta: title Remember When}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file rememberwhenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Remember [G]when [Em]   I was [C]young and so were [D7]you
@@ -48,3 +51,9 @@ And we'll remember [G]when [Em]   [C]  [D7]
 Remember [G]when [Em]   [C]  [D7]
 Remember [G]when
 {end_of_verse}
+
+
+
+
+
+

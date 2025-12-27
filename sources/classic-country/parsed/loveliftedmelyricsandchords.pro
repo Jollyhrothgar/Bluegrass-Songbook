@@ -1,6 +1,9 @@
 {meta: title Love Lifted Me}
 {meta: artist Kenny Rogers}
 {meta: composer James Rowe and Howard Smith}
+{meta: x_source classic-country}
+{meta: x_source_file loveliftedmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll write myself a simple song 
@@ -45,3 +48,8 @@ You know [C]love [Em]lift[G7]ed [C]me
 [F]When [Em]I  [Dm]was [C]down and [Am]out 
 You know [C]love [Em]lift[G7]ed [C]me  
 {end_of_verse}
+
+
+
+
+

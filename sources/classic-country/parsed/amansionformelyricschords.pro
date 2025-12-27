@@ -1,6 +1,9 @@
 {meta: title A Mansion For Me}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file amansionformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's folks building homes as [F]sweet as can [C]be
@@ -46,3 +49,8 @@ Built by my Lord beyond [G7]Calvary
 But my little [C]hut I'll [F]just let it [C]be
 Lord Jesus is building [G7]a mansion for [C]me                 
 {end_of_verse}
+
+
+
+
+

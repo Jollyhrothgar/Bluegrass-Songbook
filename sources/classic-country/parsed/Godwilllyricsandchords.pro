@@ -1,6 +1,9 @@
 {meta: title God Will}
 {meta: artist Patty Loveless}
 {meta: composer Lyle Lovett}
+{meta: x_source classic-country}
+{meta: x_source_file Godwilllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who keeps on trusting you [F]when you been [C]cheatin'
@@ -37,3 +40,8 @@ That's the [F]difference be[G7]tween God and [F]me[C]
 [F]God does but [C]I don't [F]God will but [C]I won't
 That's the [F]difference be[G7]tween God and [C]me[F]  [C]
 {end_of_verse}
+
+
+
+
+

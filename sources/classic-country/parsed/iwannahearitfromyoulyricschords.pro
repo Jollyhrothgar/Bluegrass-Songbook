@@ -1,6 +1,9 @@
 {meta: title I Wanna Hear It From You}
 {meta: artist Eddy Raven}
 {meta: composer Rick Giles and Nancy Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file iwannahearitfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I believe there's [A#7]something [F]you ain't [C]told me[A#7]
@@ -52,3 +55,9 @@ So tell me the [F]truth [G7]baby
 After [C]all that we've been [A#7]through
 If it's [Am]gonna be good[F]bye I wanna [G7]hear it from [C]you[F]
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Expressing My Love}
 {meta: artist Bobby Helms}
 {meta: composer Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file expressingmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A million words could [G7]never make a [C]start
@@ -22,3 +25,5 @@ I love you I [G7]love each one will [C]say
 I'll spend my [F]day[G7]s finding new [C]ways
 Letting me [F]know in my [G7]heart I love you [C]so
 {end_of_verse}
+
+

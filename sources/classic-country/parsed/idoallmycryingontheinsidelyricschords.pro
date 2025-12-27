@@ -1,6 +1,9 @@
 {meta: title I Do All My Crying (On The Inside)}
 {meta: artist Doug Stone}
 {meta: composer Kim Williams, Randy Boudreaux, Stan Davis}
+{meta: x_source classic-country}
+{meta: x_source_file idoallmycryingontheinsidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For the [Dm]first time [G7]tonight she's walked [C]out
@@ -38,3 +41,7 @@ When she walks by I'm [Em]standing tall
 [F]She won't see one [Dm]tear drop fall from my [D7]eyes
 Cause [C]I do all my [G7]crying on the [F]insid[C]e
 {end_of_verse}
+
+
+
+

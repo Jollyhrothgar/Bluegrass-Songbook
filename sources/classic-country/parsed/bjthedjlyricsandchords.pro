@@ -1,6 +1,9 @@
 {meta: title B.J. The D.J.}
 {meta: artist Stonewall Jackson}
 {meta: composer Hugh X. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file bjthedjlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 {comment: B.J. THE D.J.}
@@ -133,3 +136,31 @@ Only [G7]twenty-four
 A wreck at ninety miles an hour
 He'll spin the hits no [C]more
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

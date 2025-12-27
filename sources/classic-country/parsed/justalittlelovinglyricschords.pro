@@ -1,6 +1,9 @@
 {meta: title Just a Little Loving}
 {meta: artist Eddy Arnold}
 {meta: composer Zeke Clements and Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file justalittlelovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just a little [E7]lovin' will go a long [A7]way
@@ -36,3 +39,7 @@
 [E7]Put your arms around me then I'll be your [A7]slave
 [D7]Cause just a little lovin' will go a long [G]way
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Well Of His Mercy}
 {meta: artist Connie Smith}
 {meta: composer Wayne Manning}
+{meta: x_source classic-country}
+{meta: x_source_file wellofhismercylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Most [C]of my [G]life had been filled [C]with de[G]spair
@@ -36,3 +39,8 @@ As I drink at the well of His [D7]mer[G]cy
 {start_of_verse: Verse 6}
 Found the strength at the well of His [D7]mer[G]cy
 {end_of_verse}
+
+
+
+
+

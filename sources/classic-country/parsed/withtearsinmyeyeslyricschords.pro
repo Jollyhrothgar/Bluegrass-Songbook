@@ -1,6 +1,9 @@
 {meta: title With Tears in My Eyes}
 {meta: artist Hank Williams}
 {meta: composer Paul Howard}
+{meta: x_source classic-country}
+{meta: x_source_file withtearsinmyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With tears in my eyes dear  I begged you to [F]stay
@@ -29,3 +32,6 @@ You couldn't [G7]forgive me so you went [C]away
 I made a mistake dear by [C7]telling you [F]lies
 Now I lay [G7]awake dear with tears in my [C]eyes
 {end_of_verse}
+
+
+

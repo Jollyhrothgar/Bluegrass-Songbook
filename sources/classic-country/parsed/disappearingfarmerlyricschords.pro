@@ -1,6 +1,9 @@
 {meta: title Disappearing Farmer}
 {meta: artist John Anderson}
 {meta: composer James Cowan and Sandy Pinkard}
+{meta: x_source classic-country}
+{meta: x_source_file disappearingfarmerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember Grand[G7]pa standing [F]over by the [C]gate
@@ -36,3 +39,7 @@ Like it [F]strips the topsoil from the ground where the [C]corn grew yesterday
 Makes him a [F]disappearing farmer cause his [C]dreams rode with that wind
 And all he knows is [G7]dominoes and some [F]close old wrinkled [C]friends
 {end_of_verse}
+
+
+
+

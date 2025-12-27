@@ -1,6 +1,9 @@
 {meta: title Your Conscience}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Robert Lumpkins}
+{meta: x_source classic-country}
+{meta: x_source_file yourconsciencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well when you go to bed at night is [C7]your conscience fr[F]ee
@@ -29,3 +32,6 @@ When I [C]think of you I sit alone and [G7]cry
 It’s only [C]fair that you should say [C7]that we are [F]through
 In your [C]heart does your [G7]conscience bother [C]you
 {end_of_verse}
+
+
+

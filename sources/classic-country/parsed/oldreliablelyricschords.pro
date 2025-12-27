@@ -1,6 +1,9 @@
 {meta: title Old Reliable}
 {meta: artist Tammy Wynette}
 {meta: composer Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file oldreliablelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Easily you said goodbye to me so [Em]easily 
@@ -39,3 +42,7 @@ And [G]ole reliable [D7]takes you back one more [G]time
 When your [B7]world falls [Em]apart you fall back to [C]mine
 And [G]ole reliable [D7]takes you back one more [G]time
 {end_of_verse}
+
+
+
+

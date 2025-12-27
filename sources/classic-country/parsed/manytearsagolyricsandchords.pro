@@ -1,6 +1,9 @@
 {meta: title Many Tears Ago}
 {meta: artist Connie Francis}
 {meta: composer Winfield Scott}
+{meta: x_source classic-country}
+{meta: x_source_file manytearsagolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They said your cheating heart [B7]will make me cry
@@ -44,3 +47,8 @@ I know [G]it's too late for a [B7]brand new start
 [A7]I should've listened when they [D7]told me so
 [A7]Many many [D7]tears [G]ago
 {end_of_verse}
+
+
+
+
+

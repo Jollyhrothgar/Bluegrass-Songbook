@@ -1,6 +1,9 @@
 {meta: title When Two Worlds Collide}
 {meta: artist Jim Reeves}
 {meta: composer Bill Anderson and Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file whentwoworldscollidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your world was so different from [Em]mine don't you [A7]see
@@ -22,3 +25,5 @@ That's what [D7]happens when two worlds [G7][G]collide
 Two [G]hearts lie in [G7]shambles and oh [A7]how they've cried
 That's what [D7]happens when two worlds [G]collide
 {end_of_verse}
+
+

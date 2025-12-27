@@ -1,6 +1,9 @@
 {meta: title Mr. Man In The Moon}
 {meta: artist Patty Loveless}
 {meta: composer Wally Wilson and Mike Henderson}
+{meta: x_source classic-country}
+{meta: x_source_file mrmaninthemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mr. Man in the Moon are [Em]you really blue
@@ -36,3 +39,8 @@ Then your [C]heart must be [D7]broken like [G]mine
 {start_of_verse: Verse 6}
 Then your [C]heart must be [D7]broken like [G]mine
 {end_of_verse}
+
+
+
+
+

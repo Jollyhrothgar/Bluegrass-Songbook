@@ -1,6 +1,9 @@
 {meta: title Let Old Mother Nature Have Her Way}
 {meta: artist Carl Smith}
 {meta: composer Loys Southerland and Louis Clark}
+{meta: x_source classic-country}
+{meta: x_source_file letoldmothernaturehaveherwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now Darling this is my Desire
@@ -46,3 +49,8 @@ Well There ain't no Use to Stay so far Away
 I Feel just Like a Grownup Man
 Mother Nature Says now that's the Way
 {end_of_verse}
+
+
+
+
+

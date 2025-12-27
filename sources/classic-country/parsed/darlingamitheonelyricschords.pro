@@ -1,6 +1,9 @@
 {meta: title Darling Am I The One}
 {meta: artist Carl Smith}
 {meta: composer Floyd Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file darlingamitheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Am I the one who'll always hold you
@@ -63,3 +66,12 @@ I hope that [G7]feeling's wrong
 For [F]you to answer yes or [C]no
 Tell me [G7]darling am I the [C]one
 {end_of_verse}
+
+
+
+
+
+
+
+
+

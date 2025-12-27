@@ -1,6 +1,9 @@
 {meta: title Put A Light In The Window}
 {meta: artist Jim Reeves}
 {meta: composer Rhoda Roberts and Kenny Jacobson}
+{meta: x_source classic-country}
+{meta: x_source_file putalightinthewindowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a house on the corner
@@ -52,3 +55,11 @@ You’re the pretty little gal
 {start_of_verse: Verse 7}
 [D7]Tonight's the night I'm gonna make you [G]mine
 {end_of_verse}
+
+
+
+
+
+
+
+

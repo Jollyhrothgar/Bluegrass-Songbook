@@ -1,6 +1,9 @@
 {meta: title Tears Of The Lonely}
 {meta: artist Don Williams}
 {meta: composer Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file tearsofthelonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Faded [Am]pictures [F]yellow from [G7]time 
@@ -27,3 +30,6 @@ Another [Am]night time [F]that just never [G7]ends
 Tears [G7]of the [Am]lonely [F]keep falling all the [G7]time 
 [C]Tears [G7]of the [Am]lonely [G7]never [C]dry 
 {end_of_verse}
+
+
+

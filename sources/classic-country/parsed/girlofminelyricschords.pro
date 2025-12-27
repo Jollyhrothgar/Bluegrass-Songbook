@@ -1,6 +1,9 @@
 {meta: title Girl Of Mine}
 {meta: artist Elvis Presley}
 {meta: composer Les Reed and Barry Mason}
+{meta: x_source classic-country}
+{meta: x_source_file girlofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you're asleep beside me I watch you lying [Am]there
@@ -34,3 +37,6 @@ And in my [Dm]arms together we'll [G]make sweet [C]love tonight
 Down life's golden [G]road and you'll always [D7]know I love you girl of [G]mine
 Girl of [C]mine [G]
 {end_of_verse}
+
+
+

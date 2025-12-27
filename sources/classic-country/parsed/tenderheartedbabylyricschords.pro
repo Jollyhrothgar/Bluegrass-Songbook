@@ -1,6 +1,9 @@
 {meta: title Tender Hearted Baby}
 {meta: artist George Hamilton IV}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file tenderheartedbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Tender Hearted Baby
@@ -36,3 +39,8 @@ Recorded George Hamilton IV
 {start_of_verse: Verse 5}
 Cause [G7]I'm gonna have to tell her good[C]bye
 {end_of_verse}
+
+
+
+
+

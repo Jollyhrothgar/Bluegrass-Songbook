@@ -1,5 +1,8 @@
 {meta: title They've Got The Church Outnumbered}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file theyvegotthechurchoutnumberedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you pick up the paper 
@@ -51,3 +54,9 @@ Have [C]took the silent [G]stage
 They've got [C]the church [G]outnumbered
 It [D7]makes you want to [G]pray
 {end_of_verse}
+
+
+
+
+
+

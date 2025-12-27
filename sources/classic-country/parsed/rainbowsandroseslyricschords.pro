@@ -1,6 +1,9 @@
 {meta: title Rainbows And Roses}
 {meta: artist Roy Drusky}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowsandroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A rainbow always shows up [G7]when a storm is through
@@ -33,3 +36,7 @@ And bring the [F]rainbows and the [G7]roses back [C]again
 {start_of_verse: Verse 4}
 And bring the [F]rainbows and the [G7]roses back [C]again
 {end_of_verse}
+
+
+
+

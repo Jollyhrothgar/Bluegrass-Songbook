@@ -1,6 +1,9 @@
 {meta: title I Taught Her Everything She Knows}
 {meta: artist Alabama}
 {meta: composer Teddy Gentry, Greg Fowler, John Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file itaughthereverythingsheknowslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Uhm don't she look [D7]good on the [C]floor movin' so [G7]slow [D7]   [C] uhm
@@ -50,3 +53,9 @@ So [Am]why is she lookin' at him like I ain't [G7]enough
 I wonder if I didn't teach her a little too [C]much[Am]
 Cause [G7]I taught her every[D7]thing she knows about [C]love
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Big One}
 {meta: artist George Strait}
 {meta: composer Gerry House and Devon O'Day}
+{meta: x_source classic-country}
+{meta: x_source_file thebigonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Without a warning you're [G7]outta control
@@ -40,3 +43,7 @@ But I [C]never felt this feeling with [F]anybody else so
 [F]Oh yeah [C]this is the big one
 [G7]I'm fallin' in [C]love
 {end_of_verse}
+
+
+
+

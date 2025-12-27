@@ -1,6 +1,9 @@
 {meta: title There Goes My Heart}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file theregoesmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There goes my heart breaking in [G7]two
@@ -46,3 +49,8 @@ There goes my [C]heart
 [F]So when you [C]go here come the [G7]blues 
 There goes my [C]heart
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Daddy Was A Railroad Man}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file daddywasarailroadmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My daddy was a [G7]railroad [C]man worked as a [G7]section [C]hand
@@ -29,3 +32,6 @@ He was a [G7]railroad [C]man my [G7]daddy was a railroad [C]man
 {start_of_verse: Verse 4}
 My daddy was a [G7]railroad [C]man my [G7]daddy was a railroad [C]man
 {end_of_verse}
+
+
+

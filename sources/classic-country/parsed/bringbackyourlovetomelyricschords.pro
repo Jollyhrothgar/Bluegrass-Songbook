@@ -1,5 +1,8 @@
 {meta: title Bring Back Your Love To Me}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file bringbackyourlovetomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bring back bring back
@@ -50,3 +53,12 @@ If you'll just come back home
 I'm begging [C]you 
 [G7]Bring back you love to [C]me 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

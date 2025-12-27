@@ -1,6 +1,9 @@
 {meta: title Silver Medals And Sweet Memories}
 {meta: artist The Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file silvermedalsandsweetmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just a picture [G7]on a [C]table just some [F]letters momma [C]saved
@@ -33,3 +36,7 @@ Silver [Am]medals and [G7]sweet memo[C]ries
 {start_of_verse: Verse 4}
 Silver [Am]medals and [G7]sweet memo[C]ries
 {end_of_verse}
+
+
+
+

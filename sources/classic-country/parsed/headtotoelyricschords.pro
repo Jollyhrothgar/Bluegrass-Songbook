@@ -1,6 +1,9 @@
 {meta: title Head To Toe}
 {meta: artist Bill Anderson}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file headtotoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your hair is soft  [F]your eyes are bright
@@ -36,3 +39,7 @@ Head to toe  [F]can't you see I love you
 I told you  [F]now you know 
 [G7]I love you  [C]head to toe
 {end_of_verse}
+
+
+
+

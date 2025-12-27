@@ -1,6 +1,9 @@
 {meta: title The Way I Am}
 {meta: artist Merle Haggard}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file thewayiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wish I was down on some blue [F]bayou
@@ -34,3 +37,7 @@ But I just [C]dream keep [G7]on being the way [C]I am
 Tag:
 [F]I just [C]dream keep [G7]on being the [C]way I am   
 {end_of_verse}
+
+
+
+

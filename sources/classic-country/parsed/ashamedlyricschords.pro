@@ -1,5 +1,8 @@
 {meta: title Ashamed}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file ashamedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm so ashamed [C]of my eyes cause they still cry for [E7]you
@@ -16,3 +19,4 @@
 [F](And now my heart confesses it still wants you [C]too)
 [G7]I'm so ashamed of them all for [F]loving [C][F][Em]you
 {end_of_verse}
+

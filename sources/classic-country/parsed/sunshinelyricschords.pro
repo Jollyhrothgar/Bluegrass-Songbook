@@ -1,6 +1,9 @@
 {meta: title Sunshine}
 {meta: artist Don Gibson}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file sunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sunshine you may find my window but you can't find [F]me
@@ -24,3 +27,5 @@ Sunshine can't you see I'm not alone don't bother [F]me
 Sunshine as far as I'm not concerned I'm where I wanna [F]be
 [G7]Sunshine as far as you're concerned don't be concerned for [C]me
 {end_of_verse}
+
+

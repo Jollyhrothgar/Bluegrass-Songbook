@@ -1,6 +1,9 @@
 {meta: title It's Just A Matter Of Time}
 {meta: artist Charley Pride}
 {meta: composer Brook Benton, Belford Hendricks, Clyde Otis}
+{meta: x_source classic-country}
+{meta: x_source_file itsjustamatteroftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someday  someway  you'll [F]realize that you've been [C]blind
@@ -39,3 +42,8 @@
 [F]That my love was a true love
 [D7]It's just a matter of [C]time
 {end_of_verse}
+
+
+
+
+

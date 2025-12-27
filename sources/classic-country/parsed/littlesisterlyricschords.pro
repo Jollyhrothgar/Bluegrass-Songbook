@@ -1,6 +1,9 @@
 {meta: title Little Sister}
 {meta: artist Elvis Presley}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file littlesisterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little sister don't you little sister don't you
@@ -51,3 +54,10 @@ And say it's very nice and then you [C]run
 {start_of_verse: Verse 5}
 [G7]Little sister don't you [F]do what your [G7]big sister [C]done
 {end_of_verse}
+
+
+
+
+
+
+

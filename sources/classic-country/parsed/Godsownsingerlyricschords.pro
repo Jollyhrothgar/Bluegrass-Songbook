@@ -1,6 +1,9 @@
 {meta: title God's Own Singer}
 {meta: artist J.D. Crowe}
 {meta: composer Bernie Leadon}
+{meta: x_source classic-country}
+{meta: x_source_file Godsownsingerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Straight backed chair [G7]and a [C]table where he [G7]sits when he's [F]able
@@ -35,3 +38,7 @@ God's own [G7]singer of [C]songs is going [G7]home
 {start_of_verse: Verse 5}
 [C]God's own [G7]singer of [C]songs is going h-[D7]o-m-[A7]e
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title White Fences And Evergreen Trees}
 {meta: artist Ferlin Husky}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file whitefencesandevergreentreeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could paint [F]pictures I'd [G7]paint one for [C]you
@@ -29,3 +32,6 @@
 [C]Faith blew [F]away in [G7]yesterday's [C]breeze
 [F]And we lost our white [G7]fences and [F]evergreen [C]trees
 {end_of_verse}
+
+
+

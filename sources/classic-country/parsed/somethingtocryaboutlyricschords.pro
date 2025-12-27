@@ -1,6 +1,9 @@
 {meta: title Something To Cry About}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file somethingtocryaboutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say your heart is in [G]ruins 
@@ -49,3 +52,9 @@ Is a [F]hole [C]where my [D7]heart used to [G]be
 [F]You think you've got [C]something to [G]cry about
 [F]You think you've got [C]something to [G]cry about
 {end_of_verse}
+
+
+
+
+
+

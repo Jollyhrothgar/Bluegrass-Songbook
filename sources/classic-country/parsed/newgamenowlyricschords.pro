@@ -1,6 +1,9 @@
 {meta: title New Game Now}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson and Danny Timms}
+{meta: x_source classic-country}
+{meta: x_source_file newgamenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The moment I entered the [F]world of your vision
@@ -50,3 +53,9 @@ I [F]cast my [C]fortunes with [G7]you
 [A]I see the [F]dream comin' [C]true
 [F]I got that [G7]feelin' in[C]side
 {end_of_verse}
+
+
+
+
+
+

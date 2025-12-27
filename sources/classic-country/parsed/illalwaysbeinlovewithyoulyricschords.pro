@@ -1,6 +1,9 @@
 {meta: title I'll Always Be In Love With You}
 {meta: artist Bob Wills}
 {meta: composer Lew Walker}
+{meta: x_source classic-country}
+{meta: x_source_file illalwaysbeinlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll always be in love with [G7]you
@@ -33,3 +36,6 @@
 [F]But my confession's in this song
 [C]I'll always be in [G7]love with [C]you
 {end_of_verse}
+
+
+

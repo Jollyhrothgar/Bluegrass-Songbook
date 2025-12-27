@@ -1,6 +1,9 @@
 {meta: title More Than A Name On The Wall}
 {meta: artist Statler Brothers}
 {meta: composer John Rimel and Jimmy Fortune}
+{meta: x_source classic-country}
+{meta: x_source_file morethananameonthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw her from a distance  as she [F]walked up to the [C]wall
@@ -33,3 +36,7 @@ But [F]Lord could you tell him he's more than a [G7]name on the [C]wall
 {start_of_verse: Verse 5}
 [F]Lord could you tell him he's more than a [G7]name on the [C]wall
 {end_of_verse}
+
+
+
+

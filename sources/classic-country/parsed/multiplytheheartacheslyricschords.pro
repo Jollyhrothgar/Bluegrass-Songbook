@@ -1,6 +1,9 @@
 {meta: title Multiply The Heartaches}
 {meta: artist George Jones}
 {meta: composer Kathy Dee}
+{meta: x_source classic-country}
+{meta: x_source_file multiplytheheartacheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I thought two happy hearts would [F]someday beat as one
@@ -26,3 +29,6 @@ Subtract one [G7]love and multiply the [C]heartaches
 {start_of_verse: Verse 3}
 Subtract one [G7]love and multiply the [C]heartaches
 {end_of_verse}
+
+
+

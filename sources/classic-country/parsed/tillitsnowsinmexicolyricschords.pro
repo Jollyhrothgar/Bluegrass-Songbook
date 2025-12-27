@@ -1,6 +1,9 @@
 {meta: title Till It Snows In Mexico}
 {meta: artist Reba McEntire}
 {meta: composer Gordon Payne and Roger LaVoie}
+{meta: x_source classic-country}
+{meta: x_source_file tillitsnowsinmexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rollin' up in Oklahoma people cross my mind[C]
@@ -41,3 +44,8 @@ And I'm [D7]gonna love you till it snows in Mexi[G]co
 [C]Cause darling when God made our love He [G]threw away the [C]mold
 And I'm [D7]gonna love you till it snows in Mexi[G]co
 {end_of_verse}
+
+
+
+
+

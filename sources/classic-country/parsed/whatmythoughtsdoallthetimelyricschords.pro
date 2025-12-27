@@ -1,5 +1,8 @@
 {meta: title What My Thoughts Do All The Time}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file whatmythoughtsdoallthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's that look upon your face 
@@ -29,3 +32,6 @@ I'll soon be doing what my [G7]thoughts do all the [C]time
 If desire takes full control of my [F]body and my [C]soul
 I'll soon be doing what my [G7]thoughts do all the [C]time
 {end_of_verse}
+
+
+

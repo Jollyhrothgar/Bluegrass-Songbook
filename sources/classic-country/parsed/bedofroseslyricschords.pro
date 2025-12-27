@@ -1,6 +1,9 @@
 {meta: title Bed Of Roses}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file bedofroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was called a scarlet [F]woman by the [C]people
@@ -43,3 +46,8 @@ Where I was taught to be a [G7]man
 This [C]bed of [F]Rose's where I'm [C]living
 Is the only kind of [G7]life I under[C]stand  [G7]
 {end_of_verse}
+
+
+
+
+

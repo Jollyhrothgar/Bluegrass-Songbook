@@ -1,6 +1,9 @@
 {meta: title Forgive Me}
 {meta: artist Hank Thompson}
 {meta: composer Jack Yellen and Milton Ager}
+{meta: x_source classic-country}
+{meta: x_source_file forgivemelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Forgive Me
@@ -38,3 +41,8 @@ Now I'm [G7]paying with the broken heart [C]instead
 {start_of_verse: Verse 6}
 Now I'm [G7]paying with the broken heart [C]instead
 {end_of_verse}
+
+
+
+
+

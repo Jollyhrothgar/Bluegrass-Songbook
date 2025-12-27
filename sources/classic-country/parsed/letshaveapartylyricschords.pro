@@ -1,6 +1,9 @@
 {meta: title Let’s Have A Party}
 {meta: artist Elvis Presley}
 {meta: composer Jessie Mae Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file letshaveapartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some people like to rock some people like to roll
@@ -53,3 +56,11 @@ And let's [G7]have a party [C]tonight
 {start_of_verse: Verse 6}
 Let's [G7]have a party [C]tonight
 {end_of_verse}
+
+
+
+
+
+
+
+

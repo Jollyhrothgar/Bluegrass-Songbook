@@ -1,6 +1,9 @@
 {meta: title Christmas Means Jesus To Me}
 {meta: artist The Isaacs}
 {meta: composer Joe Isaacs}
+{meta: x_source classic-country}
+{meta: x_source_file ChristmasmeansJesustomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mary and [Em]Joseph were [F]traveling one [Dm]night
@@ -47,3 +50,9 @@ For [F]they found the [C]promise [G7]He's the King of all [C]Kings
 {start_of_verse: Verse 6}
 [G7]Christmas means Jesus sweet Jesus to [F]me [C]
 {end_of_verse}
+
+
+
+
+
+

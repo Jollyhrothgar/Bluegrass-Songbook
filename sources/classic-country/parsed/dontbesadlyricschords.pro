@@ -1,5 +1,8 @@
 {meta: title Don't Be Sad}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file dontbesadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well don't be sad cause you [C]got what you [G]wanted
@@ -41,3 +44,8 @@ Cause you [G]got what you [D7]wanted all [G]along
 {start_of_verse: Verse 4}
 [C]Yes you [G]got what you [D7]wanted all [G]along
 {end_of_verse}
+
+
+
+
+

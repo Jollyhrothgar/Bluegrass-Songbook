@@ -1,6 +1,9 @@
 {meta: title Cowboy Carry Me Home}
 {meta: artist Mel Tillis}
 {meta: composer Sid Wayne and Roger Howell}
+{meta: x_source classic-country}
+{meta: x_source_file cowboycarrymehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey I was [F]playing guitar in a [Am]west Texas bar
@@ -51,3 +54,9 @@ We’ll [C]turn out the lights and unplug the phone
 You can [A#7]sing to me cling to me [C]cowboy carry me [F]home
 Repeat last verse  
 {end_of_verse}
+
+
+
+
+
+

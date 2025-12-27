@@ -1,6 +1,9 @@
 {meta: title You'll Never Know}
 {meta: artist Jim Reeves}
 {meta: composer Mack Gordon and Harry Warren}
+{meta: x_source classic-country}
+{meta: x_source_file youllneverknowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You'll never know just how much   I love [Dm]you
@@ -33,3 +36,6 @@ If there is some other way to prove that I love [F]you
 I [C]swear I don't know [D7]how
 [Dm]You'll never [G7]know if you [D7]don't [G7]know [C]now
 {end_of_verse}
+
+
+

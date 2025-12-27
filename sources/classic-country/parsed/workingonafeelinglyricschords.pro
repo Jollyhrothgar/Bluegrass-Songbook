@@ -1,6 +1,9 @@
 {meta: title Working On A Feeling}
 {meta: artist Tommy Cash}
 {meta: composer Red Lane, Royce Porter, Tom McKeon}
+{meta: x_source classic-country}
+{meta: x_source_file workingonafeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love is all around us this we must [Am]believe
@@ -42,3 +45,9 @@ Working on a feeling yes I am [G7]and it feels like a [C]love
 Working on a feeling a mighty good feeling
 Working on a feeling yes I am [G7]and it feels like a [C]love
 {end_of_verse}
+
+
+
+
+
+

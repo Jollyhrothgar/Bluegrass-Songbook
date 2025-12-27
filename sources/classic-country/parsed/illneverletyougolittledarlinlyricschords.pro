@@ -1,6 +1,9 @@
 {meta: title I'll Never Let You Go (Little Darlin')}
 {meta: artist Elvis Presley}
 {meta: composer Jimmy Wakely}
+{meta: x_source classic-country}
+{meta: x_source_file illneverletyougolittledarlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll [F]never let you go little [C]darlin' 
@@ -22,3 +25,5 @@ I'm so [G7]sorry cause I made you [C]cry I made you cry
 And I'll [F]never let you go cause I [C]love you baby
 So [G7]please don't ever say good[C]bye
 {end_of_verse}
+
+

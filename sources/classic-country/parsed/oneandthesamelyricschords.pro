@@ -1,6 +1,9 @@
 {meta: title One And The Same}
 {meta: artist George Morgan}
 {meta: composer George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file oneandthesamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's something about the way she skips [Em]across the room
@@ -57,3 +60,10 @@ I know I'll find once again
 [Dm]My little girl that [G7]woman [Dm]
 [G7]Are one and the [C]same
 {end_of_verse}
+
+
+
+
+
+
+

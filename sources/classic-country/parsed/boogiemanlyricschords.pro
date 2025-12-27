@@ -1,6 +1,9 @@
 {meta: title Boogie Man}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Will Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file boogiemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Next to Louisiana on the Texas side
@@ -52,3 +55,9 @@ He'll have [D7]you doin' things that you [G7]didn't know you knew
 So [F]don't you [G7]don't you be afraid no [F]don't ya
 [G7]Don't you be afraid of the [C]Boogie Man no
 {end_of_verse}
+
+
+
+
+
+

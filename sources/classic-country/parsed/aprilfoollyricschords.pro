@@ -1,6 +1,9 @@
 {meta: title April Fool}
 {meta: artist Bobby Helms}
 {meta: composer John Lilly}
+{meta: x_source classic-country}
+{meta: x_source_file aprilfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]April fool I'm just an [B7]April fool
@@ -44,3 +47,9 @@ I'm just an April [G]fool[C]
 {start_of_verse: Verse 5}
 [D7]I'm just an April [G]fool[C]  [G]
 {end_of_verse}
+
+
+
+
+
+

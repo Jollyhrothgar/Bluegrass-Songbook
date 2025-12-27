@@ -1,6 +1,9 @@
 {meta: title God Is Good}
 {meta: artist Paul Overstreet}
 {meta: composer Paul Overstreet and Don Moen}
+{meta: x_source classic-country}
+{meta: x_source_file Godisgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]God is [C]good all the [Am]time 
@@ -82,3 +85,10 @@ His [G7]light will shine
 God is [F]good 
 He’s so [G7]good all the [C]time[F]  [C]
 {end_of_verse}
+
+
+
+
+
+
+

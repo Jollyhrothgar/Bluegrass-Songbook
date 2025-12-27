@@ -1,6 +1,9 @@
 {meta: title Big Love Big Heartache}
 {meta: artist Elvis Presley}
 {meta: composer Dolores Fuller, Lee Morris, Stanley Barkan}
+{meta: x_source classic-country}
+{meta: x_source_file biglovebigheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Big love [Em]big heartache [G]big love [Em]big heartache [G]big love [Em]big heartache)
@@ -31,3 +34,7 @@ Will [C]be [D7]here to [G]stay
 [G](Big love [Em]big heartache [G]big love [Em]big heartache)
 Your [G]love yes your [Em]big love will [C]be [D7]here to [G]stay
 {end_of_verse}
+
+
+
+

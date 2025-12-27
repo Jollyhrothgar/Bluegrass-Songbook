@@ -1,6 +1,9 @@
 {meta: title I Can't Seem To Say Goodbye}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file icantseemtosaygoodbyelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gone is the sunshine we [F]knew once [C]before
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [G7]But I can't seem to say [C]goodbye
 {end_of_verse}
+
+
+

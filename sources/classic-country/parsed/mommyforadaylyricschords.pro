@@ -1,6 +1,9 @@
 {meta: title Mommy For A Day}
 {meta: artist Kitty Wells}
 {meta: composer Harlan Howard and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file mommyforadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I go to see my little [F]girl each Sunday [C]afternoon
@@ -29,3 +32,6 @@ And [F]that her daddy [C]wanted things this [G7]way
 We [C]kiss goodbye and my heart [F]breaks to walk away [C]alone
 To [F]have to be a [C]Mommy [G7]For A [C]Day
 {end_of_verse}
+
+
+

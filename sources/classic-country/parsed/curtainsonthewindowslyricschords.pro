@@ -1,6 +1,9 @@
 {meta: title Curtains On The Windows}
 {meta: artist Billy Walker}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file curtainsonthewindowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came home kind [F]of [C]unexpected
@@ -39,3 +42,8 @@
 [F]There were curtains on the windows shadows on the [C]curtains
 [G7]Has my baby gone [C][F]wrong
 {end_of_verse}
+
+
+
+
+

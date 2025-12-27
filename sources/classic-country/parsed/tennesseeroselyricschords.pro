@@ -1,5 +1,8 @@
 {meta: title Tennessee Rose}
 {meta: artist Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseeroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's a sweet dream
@@ -43,3 +46,10 @@ That [Am]you will [G7]always be [C]mine
 {start_of_verse: Verse 8}
 Repeat last
 {end_of_verse}
+
+
+
+
+
+
+

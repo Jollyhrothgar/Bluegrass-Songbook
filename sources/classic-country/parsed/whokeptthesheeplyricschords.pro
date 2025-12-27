@@ -1,5 +1,8 @@
 {meta: title Who Kept The Sheep}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file whokeptthesheeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The shepherds afar [G7]left their flocks by [C]night
@@ -22,3 +25,5 @@ The [G7]shepherds that [C]came had a [G7]vigil to [C]keep
 But [F]who kept the [C]sheep [G7]who kept the [C]sheep
 [F]Who kept the [C]sheep [G7]who kept the [C]sheep
 {end_of_verse}
+
+

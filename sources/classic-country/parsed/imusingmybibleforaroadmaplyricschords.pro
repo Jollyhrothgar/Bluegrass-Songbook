@@ -1,6 +1,9 @@
 {meta: title I’m Using My Bible For A Road Map}
 {meta: artist Mac Wiseman}
 {meta: composer Don Reno and Charles Schroeder}
+{meta: x_source classic-country}
+{meta: x_source_file imusingmybibleforaroadmaplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm using my Bible for a road [C]map 
@@ -22,3 +25,5 @@ I'm using my Bible for a road [C]map
 The twelve disciples are my road [C]signs 
 And [D7]Jesus will take me safely [G]through 
 {end_of_verse}
+
+

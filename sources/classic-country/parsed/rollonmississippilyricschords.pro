@@ -1,6 +1,9 @@
 {meta: title Roll On Mississippi}
 {meta: artist Charley Pride}
 {meta: composer Dennis W. Morgan and Rhonda Kye Fleming}
+{meta: x_source classic-country}
+{meta: x_source_file rollonmississippilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walking along whistling a [Am]song bare foot and [F]fancy [C]free
@@ -40,3 +43,7 @@ Roll on Missi[F]ssip[G7]pi carry me [Am]home
 Now [F]I can see I’ve [D7]been away too [G7]long
 Roll [C]on Missi[F]ssippi roll [C]on
 {end_of_verse}
+
+
+
+

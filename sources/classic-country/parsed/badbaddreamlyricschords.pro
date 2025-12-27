@@ -1,5 +1,8 @@
 {meta: title Bad Bad Dream}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file badbaddreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somehow I'm not gettin' through to you
@@ -28,3 +31,6 @@ I had a bad bad dream last night
 [D7]Another's arms were holdin' you another's lips were kissin' you
 [G]I had a bad bad dream last night
 {end_of_verse}
+
+
+

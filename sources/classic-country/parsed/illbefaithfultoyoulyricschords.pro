@@ -1,6 +1,9 @@
 {meta: title I'll Be Faithful To You}
 {meta: artist Don Williams}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file illbefaithfultoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can see your heart is [F]aching
@@ -36,3 +39,7 @@ Where a promise won't hold [C][G7]tr--ue
 Here's a vow you can be [F]sure [C]of
 I'll be [G7]faithful to [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Against The Grain}
 {meta: artist Garth Brooks}
 {meta: composer Larry Cordle, Bruce Bouton, Carl Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file againstthegrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Folks call me a maverick guess I ain't too diplomatic
@@ -48,3 +51,9 @@ Go [C]bustin' in like old [D]John Wayne
 Nothin' ventured nothin' [D]gained 
 Some[F]times you've got to [A#7]go against the [C]grain
 {end_of_verse}
+
+
+
+
+
+

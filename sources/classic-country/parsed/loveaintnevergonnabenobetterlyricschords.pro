@@ -1,6 +1,9 @@
 {meta: title Love Ain't Never Gonna Be No Better}
 {meta: artist Webb Pierce}
 {meta: composer Cecil Null and Rusty Adams}
+{meta: x_source classic-country}
+{meta: x_source_file loveaintnevergonnabenobetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now love ain't never gonna be no better than it [G7]is right now
@@ -26,3 +29,6 @@ Cause [G7]love ain't never gonna be no better than it is right [C]now
 {start_of_verse: Verse 4}
 Cause [G7]love ain't never gonna be no better than it is right [C]now
 {end_of_verse}
+
+
+

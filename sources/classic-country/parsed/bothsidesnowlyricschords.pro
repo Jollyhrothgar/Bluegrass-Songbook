@@ -1,6 +1,9 @@
 {meta: title Both Sides Now}
 {meta: artist Anne Murray}
 {meta: composer Joni Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file bothsidesnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bows and [F]flows of [C]angel hair and ice cream [Em]castles in [F]the [C]air
@@ -41,3 +44,9 @@ From up and down and still somehow
 {start_of_verse: Verse 2}
 [C]I've looked at clouds from [F]both sides [C]now
 {end_of_verse}
+
+
+
+
+
+

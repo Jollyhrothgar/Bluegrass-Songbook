@@ -1,6 +1,9 @@
 {meta: title Lovin' Pains}
 {meta: artist Bill Anderson}
 {meta: composer Ned Miller}
+{meta: x_source classic-country}
+{meta: x_source_file lovinpainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lovin' [G7]pains wrapped around me like a [C]chain
@@ -42,3 +45,9 @@ I'm [G7]falling in love [C]again
 [C]Lovin' [G7]pains wrapped around me like a [C]chain
 I will never be the [G7]same because of lovin' [C]pains
 {end_of_verse}
+
+
+
+
+
+

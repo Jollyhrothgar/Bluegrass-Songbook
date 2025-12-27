@@ -1,6 +1,9 @@
 {meta: title Don Juan}
 {meta: artist Billy Crash Craddock}
 {meta: composer Laying Martine}
+{meta: x_source classic-country}
+{meta: x_source_file donjuanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I was dancin' with my baby on a Saturday night
@@ -51,3 +54,9 @@ You better be [G7]gone Don [C]Juan
 {start_of_verse: Verse 6}
 What do you mean you thought she was my sister
 {end_of_verse}
+
+
+
+
+
+

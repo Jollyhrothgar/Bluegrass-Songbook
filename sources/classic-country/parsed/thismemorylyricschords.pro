@@ -1,5 +1,8 @@
 {meta: title This Memory}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file thismemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a memory that I treasure 
@@ -42,3 +45,8 @@ And the sweet love that's not [F]free
 This memory of all [C]memories
 Be[G7]longs to you and [C]me
 {end_of_verse}
+
+
+
+
+

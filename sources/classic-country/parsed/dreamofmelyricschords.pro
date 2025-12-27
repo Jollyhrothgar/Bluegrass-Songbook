@@ -1,6 +1,9 @@
 {meta: title Dream Of Me}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Buddy Cannon, Jimmy D Null, Raleigh J Squires}
+{meta: x_source classic-country}
+{meta: x_source_file dreamofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My life on the road girl has [C]always been hard on me and [G]you
@@ -30,3 +33,7 @@
 [C]So [D7]dream of me  every time you get to feeling [G]blue
 [C]Dream of me  [D7]and I'll be dreaming of [G]you
 {end_of_verse}
+
+
+
+

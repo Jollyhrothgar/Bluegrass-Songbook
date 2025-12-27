@@ -1,6 +1,9 @@
 {meta: title The Old Blind Fiddler}
 {meta: artist Johnny Paycheck}
 {meta: composer Billy Sherrill, Carmol Taylor, Shirley Tackitt}
+{meta: x_source classic-country}
+{meta: x_source_file theoldblindfiddlerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was just a kid I'd go to [F]town on Satur[C]day
@@ -36,3 +39,7 @@ And [C]he shook my hand and [F]told me
 [G7]Son I knew we'd meet again some [C]day
 And once [F]again I heard the [G7]old blind fiddler [F]pl[G7]-a-[C]y
 {end_of_verse}
+
+
+
+

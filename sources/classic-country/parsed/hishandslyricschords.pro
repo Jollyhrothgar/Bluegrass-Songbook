@@ -1,6 +1,9 @@
 {meta: title His Hands}
 {meta: artist Eddy Arnold}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file hishandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]His [D7]hands paint the flowers 
@@ -50,3 +53,9 @@ I've [C]obeyed the wrong commands
 I'm going [F]back to the [G]chapel 
 In [D7]search of His [G]hands
 {end_of_verse}
+
+
+
+
+
+

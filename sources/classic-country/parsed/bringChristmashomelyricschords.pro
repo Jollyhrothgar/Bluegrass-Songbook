@@ -1,6 +1,9 @@
 {meta: title Bring Christmas Home}
 {meta: artist Lee Greenwood}
 {meta: composer Greg James and Susan Longacre}
+{meta: x_source classic-country}
+{meta: x_source_file bringChristmashomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A candle's in the [C]window a [D7]wreath is on the [G]door
@@ -31,3 +34,6 @@ To [C]show me what [G]Christmas is [Am]for [D7]
 The [G]angels on the [C]tree [G] there's [Am]even a trace of snow
 [G]But it's [D7]not really [Em]Christmas [Am]Eve till [G]you bring [D7]Christmas [G]home
 {end_of_verse}
+
+
+

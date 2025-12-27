@@ -1,6 +1,9 @@
 {meta: title Dallas}
 {meta: artist Willie Nelson}
 {meta: composer Dan Stovall and Dewey Groom}
+{meta: x_source classic-country}
+{meta: x_source_file dallaslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's like a [D7]beautiful lady with a Mona Lisa smile [G]Dallas
@@ -31,3 +34,6 @@ Whose [C]subjects seem to thrive on everything that swings
 {start_of_verse: Verse 4}
 [D7]I could tell you more but I got to catch that plane for [G]Dallas 
 {end_of_verse}
+
+
+

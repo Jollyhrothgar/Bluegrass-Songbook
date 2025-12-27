@@ -1,6 +1,9 @@
 {meta: title Shouting On The Hills Of Glory}
 {meta: artist Ricky Skaggs}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file shoutingonthehillsofglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There'll be shouting on the hills of glory
@@ -50,3 +53,9 @@ There'll shouting on the [D7]hills of [G]God
 There'll be shouting on the hills of glory
 There'll be shouting on the [D7]hills of [G]God
 {end_of_verse}
+
+
+
+
+
+

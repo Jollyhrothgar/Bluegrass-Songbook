@@ -1,6 +1,9 @@
 {meta: title Two Hearts}
 {meta: artist Vince Gill}
 {meta: composer Leslie Satcher and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file twoheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a man drinkin' [F]whiskey in a [C]barroom
@@ -45,3 +48,8 @@ Will [F]two hearts make [G7]one to[C]night
 {start_of_verse: Verse 4}
 Will [F]two hears make [G7]one to[C]night
 {end_of_verse}
+
+
+
+
+

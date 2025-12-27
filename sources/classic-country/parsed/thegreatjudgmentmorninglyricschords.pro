@@ -1,6 +1,9 @@
 {meta: title The Great Judgment Morning}
 {meta: artist Roy Acuff}
 {meta: composer Leander L. Pickett}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatjudgmentmorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I dreamed that the great judgment [C]morning 
@@ -85,3 +88,14 @@ As the [G]lost were told of their [D7]fate
 They [G]cried for the rocks and the [C]mountains
 They [G]prayed but their [D7]prayers were too [G]late
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

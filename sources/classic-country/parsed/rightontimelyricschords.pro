@@ -1,6 +1,9 @@
 {meta: title Right On Time}
 {meta: artist Randy Travis}
 {meta: composer Sharon Vaughn and Al Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file rightontimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's not my nature to be [Dm]patient 
@@ -40,3 +43,8 @@ It [Dm]took a while to [Em]get here [F]but I'm [G7]right on [C]time
 {start_of_verse: Verse 5}
 It [Dm]took a while to [Em]get here [F]but I'm [G7]right on [C]time
 {end_of_verse}
+
+
+
+
+

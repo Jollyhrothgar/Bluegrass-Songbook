@@ -1,6 +1,9 @@
 {meta: title One Year Two Months And Eleven Days}
 {meta: artist Ronnie Reno}
 {meta: composer Ronnie Reno and Wayne Carson}
+{meta: x_source classic-country}
+{meta: x_source_file oneyeartwomonthsandelevendayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up this [G7]morning thinking about [C]you
@@ -43,3 +46,8 @@
 [G7]I don't know who I thought I [Am]was [F]fooling
 [C]After a year [G7]two months and eleven [C]days
 {end_of_verse}
+
+
+
+
+

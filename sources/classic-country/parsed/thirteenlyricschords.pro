@@ -1,6 +1,9 @@
 {meta: title Thirteen}
 {meta: artist Johnny Cash}
 {meta: composer written by Glenn Danzig}
+{meta: x_source classic-country}
+{meta: x_source_file thirteenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Bad luck wind been [D7]blowing at my [Am]back
@@ -44,3 +47,9 @@
 {start_of_verse: Verse 5}
 [D7]They just gave me the [C]number when I was [Am][G]young
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Slip Into My Mind}
 {meta: artist Cal Smith}
 {meta: composer Curly Putman and Walter Haynes}
+{meta: x_source classic-country}
+{meta: x_source_file youslipintomymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You slip into my mind so easy [F]baby
@@ -22,3 +25,5 @@ You slip into my mind so easy [F]baby
 With a million thoughts of things I should be [F]doing
 [G7]You slip into my mind so easy [C]baby
 {end_of_verse}
+
+

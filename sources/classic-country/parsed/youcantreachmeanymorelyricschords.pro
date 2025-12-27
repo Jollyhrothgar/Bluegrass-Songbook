@@ -1,6 +1,9 @@
 {meta: title You Can't Reach Me Anymore}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton and Dorothy Jo Hope}
+{meta: x_source classic-country}
+{meta: x_source_file youcantreachmeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You [F]can't [C]reach me [G7]any[C]more
@@ -37,3 +40,8 @@ And you [F]can't [C]reach me [G7]any[C]more
 {start_of_verse: Verse 6}
 [C7]Oh oh [F]oh no [C]you [F]can't [C]reach me [G7]any[C]more
 {end_of_verse}
+
+
+
+
+

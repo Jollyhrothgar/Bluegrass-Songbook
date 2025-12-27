@@ -1,6 +1,9 @@
 {meta: title Backslider's Prayer}
 {meta: artist Ty England}
 {meta: composer Bob Regan and Mark D. Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file backslidersprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He said I know this ain't the time or place but [Am]Lord I need to [A7]talk
@@ -41,3 +44,7 @@ If I could [G]only gain a foot[C]hold up [D7]there on your high [Em]road
 [D7]Lord if [C]you hear me [G]help me I'll do [C]anything you [G]tell me to
 [C]All I've got to [G]offer you is this [D7]backslider's [G]prayer
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tombstone Every Mile}
 {meta: artist Dick Curless}
 {meta: composer Dan Fulkerson}
+{meta: x_source classic-country}
+{meta: x_source_file tombstoneeverymilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All you big and burly men who roll the trucks along
@@ -46,3 +49,8 @@ When you're talking to a trucker that's been hauling goods
 [G]There'd be a tombstone [D7]every [G]mile
 [C]Count 'em off there'd [G]be a tomb-stone [D7]every [G]mile
 {end_of_verse}
+
+
+
+
+

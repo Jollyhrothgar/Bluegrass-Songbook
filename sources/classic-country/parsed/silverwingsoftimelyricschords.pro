@@ -1,4 +1,7 @@
 {meta: artist Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file silverwingsoftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]The evening [C]sun is sinking moving [G7]homeward
@@ -27,3 +30,6 @@ Who learned the [Am]love of God and other [E7]things
 Now love he [C]knew that twelve times warmed his [G7]winter
 Has flown [Am]away on [E7]time's bright silver [C]wings
 {end_of_verse}
+
+
+

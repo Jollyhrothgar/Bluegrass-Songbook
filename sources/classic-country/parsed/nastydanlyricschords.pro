@@ -1,6 +1,9 @@
 {meta: title Nasty Dan}
 {meta: artist Johnny Cash}
 {meta: composer Jerry Moss}
+{meta: x_source classic-country}
+{meta: x_source_file nastydanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nasty Dan was the meanest man I [F]ever knew
@@ -33,3 +36,5 @@ In his nasty old house with his nasty ol' wife and his nasty ol' kid
 In [G7]nasty happi[C]ness
 Nasty [F]Dan he's a nasty [C]man hard to under[G7]stand that Nasty [C]Dan
 {end_of_verse}
+
+

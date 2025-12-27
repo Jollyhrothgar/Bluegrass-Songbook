@@ -1,5 +1,8 @@
 {meta: title This Time I’ve Hurt Her More Than She Loves Me}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file thistimeivehurthermorethanshelovesmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She wore that falling out of love look 
@@ -50,3 +53,12 @@ Tag: D7
 Lord this time I've hurt her more
 Than she loves [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+

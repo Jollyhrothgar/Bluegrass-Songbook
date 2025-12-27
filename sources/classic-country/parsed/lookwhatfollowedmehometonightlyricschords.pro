@@ -1,6 +1,9 @@
 {meta: title Look What Followed Me Home Tonight}
 {meta: artist George Morgan}
 {meta: composer Gary Walker and Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhatfollowedmehometonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look what followed me home tonight momma can't I [G7]keep it
@@ -33,3 +36,7 @@ Look what followed me home tonight momma can't I [C]keep it
 {start_of_verse: Verse 5}
 [G7]Please momma can't I [C]keep it
 {end_of_verse}
+
+
+
+

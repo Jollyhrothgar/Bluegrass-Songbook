@@ -1,6 +1,9 @@
 {meta: title Kiss The World Goodbye}
 {meta: artist Ray Price}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file kisstheworldgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never had no [F]regrets boys [G7]not for nothing I've [C]done
@@ -29,3 +32,6 @@
 [F]I'm gonna leave whatever's left of my luck to the [C]losers
 [G7]And bend them down and kiss the world [C]goodbye
 {end_of_verse}
+
+
+

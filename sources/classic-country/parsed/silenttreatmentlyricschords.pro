@@ -1,5 +1,8 @@
 {meta: title Silent Treatment}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file silenttreatmentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You proved to me that [Dm]I don't need 
@@ -40,3 +43,7 @@ Give me that [F]silent [C]treatment
 [D7]It's working on [G]me on [Dm]me on [C]me
 It's [D7]working working on [G]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Makes The World Go Around}
 {meta: artist Kitty Wells}
 {meta: composer Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file lovemakestheworldgoaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love makes the world go around and [G]around and around
@@ -40,3 +43,8 @@ Oh [D7]yes love makes the world go [G]around
 {start_of_verse: Verse 4}
 Oh [D7]yes love makes the world go [G]around
 {end_of_verse}
+
+
+
+
+

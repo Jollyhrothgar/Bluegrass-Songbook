@@ -1,6 +1,9 @@
 {meta: title You’ve Been Fooling Me Baby}
 {meta: artist Flatt and Scruggs}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file youvebeenfoolingmebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don’t want you mean momma
@@ -43,3 +46,8 @@ Now I hear the train a comin’
 When I thought you were an angel
 [G7]Just sent down from the [C]skies
 {end_of_verse}
+
+
+
+
+

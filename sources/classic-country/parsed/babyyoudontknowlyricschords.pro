@@ -1,6 +1,9 @@
 {meta: title Baby You Don't Know}
 {meta: artist Ricky Nelson}
 {meta: composer Dave Burgess and Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file babyyoudontknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby you don't know what you're doing to [Em]me
@@ -29,3 +32,6 @@ Baby you don't [G]know [D7]how you put me [G]down
 (Baby you don't know) you don't [Em]know 
 (Baby you don't know) you don't [G]know 
 {end_of_verse}
+
+
+

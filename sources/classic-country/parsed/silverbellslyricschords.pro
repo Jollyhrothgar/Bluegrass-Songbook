@@ -1,6 +1,9 @@
 {meta: title Silver Bells}
 {meta: artist Brenda Lee}
 {meta: composer J. Livingston and Ray Evans}
+{meta: x_source classic-country}
+{meta: x_source_file silverbellslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]City sidewalks busy [Em]sidewalks  
@@ -33,3 +36,6 @@ Silver bells silver [F]bells
 Ring-a-ling hear them [F]ring  
 [G7]Soon it will be Christmas [C]day  
 {end_of_verse}
+
+
+

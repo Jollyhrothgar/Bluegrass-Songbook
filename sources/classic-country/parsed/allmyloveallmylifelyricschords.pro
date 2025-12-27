@@ -1,6 +1,9 @@
 {meta: title All My Love All My Life Lyrics and Chords}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Al Matson}
+{meta: x_source classic-country}
+{meta: x_source_file allmyloveallmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All my love all my [Am]life
@@ -29,3 +32,6 @@
 [C]Just as long as I live I will give all my [F]love
 [G7]All my life just to [C]you
 {end_of_verse}
+
+
+

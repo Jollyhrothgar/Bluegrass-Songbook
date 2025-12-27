@@ -1,5 +1,8 @@
 {meta: title Falling}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file fallinglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm falling I'm [F]falling [Dm]  falling in [G7]love [G]with [G7]you
@@ -21,3 +24,5 @@ If you still [Dm]love me [C]  say that you [Dm]love me [F]
 Don't leave me [Dm]now [G7]now that I'm falling for [C]yo--[G7]u
 I'm [C]falling I'm [Cm]falling falling in [Dm]lo--[Fm]ve falling in [Dm]lo--[G7]ve with [C]you
 {end_of_verse}
+
+

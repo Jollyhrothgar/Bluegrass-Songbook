@@ -1,6 +1,9 @@
 {meta: title Gonna Ease My Worried Mind}
 {meta: artist Vernon Oxford}
 {meta: composer Owen W. Priester, Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file gonnaeasemyworriedmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm going downtown and get a jug of wine
@@ -33,3 +36,7 @@ They say ever dog gonna have its day
 {start_of_verse: Verse 5}
 [G7]Gonna do it up right gonna ease my worried [C]mind
 {end_of_verse}
+
+
+
+

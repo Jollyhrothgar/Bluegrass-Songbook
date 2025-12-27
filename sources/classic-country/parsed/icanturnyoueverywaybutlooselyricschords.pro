@@ -1,6 +1,9 @@
 {meta: title I Can Turn You Every Way But Loose}
 {meta: artist Dottie West}
 {meta: composer Dottie West and Bill West}
+{meta: x_source classic-country}
+{meta: x_source_file icanturnyoueverywaybutlooselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You lived it up turned me down
@@ -36,3 +39,7 @@ While I still love you love you so
 [F]Cause honey I just want you to [C]know
 [G7]I can turn you every way but [C]loose
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rose in Paradise}
 {meta: artist Waylon Jennings}
 {meta: composer Jim McBride and Stewart Harris}
+{meta: x_source classic-country}
+{meta: x_source_file roseinparadiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was a flower for the [F]taking 
@@ -50,3 +53,9 @@ Its [G7]beauty cuts just like a [C]knife
 They say that it even grows in the winter [F]time
 And [G7]blooms in the dead of the [C]night
 {end_of_verse}
+
+
+
+
+
+

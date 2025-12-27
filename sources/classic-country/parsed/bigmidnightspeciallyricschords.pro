@@ -1,5 +1,8 @@
 {meta: title Big Midnight Special}
 {meta: artist Wilma Lee Cooper}
+{meta: x_source classic-country}
+{meta: x_source_file bigmidnightspeciallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Big midnight [F]special shine your light on [C]me
@@ -65,3 +68,15 @@ But he knows I'm a [G7]waiting till it brings him home [C]again
 [C]Big midnight [F]special shine your light on [C]me
 Big midnight [G7]special shine your ever loving light on [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

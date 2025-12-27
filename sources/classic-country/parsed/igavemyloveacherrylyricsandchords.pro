@@ -1,5 +1,8 @@
 {meta: title I Gave My Love A Cherry}
 {meta: artist Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file igavemyloveacherrylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gave my love a [F]cherry without a [C]stone
@@ -21,3 +24,5 @@ A [G7]chicken when it's [C]pipping it [Am]has no [Dm]bone
 A [G7]ring when it's [C]rolling it [Am]has no [D7]end[G7]
 A [C]baby when it's [Am]sleeping has [F]no [Dm]cry[C]in'
 {end_of_verse}
+
+

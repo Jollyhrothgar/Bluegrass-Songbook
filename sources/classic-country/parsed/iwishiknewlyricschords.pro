@@ -1,6 +1,9 @@
 {meta: title I Wish I Knew}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Hazel Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file iwishiknewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I knew why I love you like I do
@@ -41,3 +44,10 @@ Your kisses thrill me so when I hold you close
 When we’re apart there’s an aching in my heart
 [G7]Nearly lose my mind I wish I knew [C]why
 {end_of_verse}
+
+
+
+
+
+
+

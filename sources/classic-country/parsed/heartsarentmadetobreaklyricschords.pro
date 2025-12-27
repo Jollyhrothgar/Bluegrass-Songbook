@@ -1,6 +1,9 @@
 {meta: title Hearts Aren't Made To Break}
 {meta: artist Lee Greenwood}
 {meta: composer Roger Murrah and Steve Dean}
+{meta: x_source classic-country}
+{meta: x_source_file heartsarentmadetobreaklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Oh it [C]tears me up when [G7]you go all to [F]pieces
@@ -40,3 +43,8 @@ Cause [Dm]hearts aren't made to [G7]break they're made to [C]love
 {start_of_verse: Verse 4}
 Oh [Dm]hearts aren't made to [G7]break they're made to [C]love
 {end_of_verse}
+
+
+
+
+

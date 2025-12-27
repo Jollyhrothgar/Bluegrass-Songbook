@@ -1,5 +1,8 @@
 {meta: title Let Me Be There}
 {meta: artist Tanya Tucker}
+{meta: x_source classic-country}
+{meta: x_source_file letmebetherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wherever you go wherever you may [F]wander in your [C]life
@@ -32,3 +35,7 @@ All I [C]ask you [G7]is let me be [C]there
 {start_of_verse: Verse 5}
 [F]All I [C]ask you [G7]is let me be [C]there
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title You Love Everybody But You}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file youloveeverybodybutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God was right [G7]giving you the [F]gift of love
@@ -29,3 +32,6 @@ We [G7]know you're [F]lonely
 You [C]love every[F]body but [C]you
 You love every[F]body but [C]you
 {end_of_verse}
+
+
+

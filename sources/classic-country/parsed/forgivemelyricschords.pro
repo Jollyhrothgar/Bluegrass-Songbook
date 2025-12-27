@@ -1,6 +1,9 @@
 {meta: title Forgive Me}
 {meta: artist Sonny James}
 {meta: composer Milton Ager and Jack Kellen}
+{meta: x_source classic-country}
+{meta: x_source_file forgivemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Forgive me please [F]forgive [C]me
@@ -29,3 +32,6 @@
 [G7]I’m sorry forgive me my dear
 [F]And let’s be [G7]sweethearts [C]again
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Back In Your Own Backyard}
 {meta: artist Brenda Lee}
 {meta: composer Al Johnson, Billy Rose, Dave Dreyer}
+{meta: x_source classic-country}
+{meta: x_source_file backinyourownbackyardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](You can go to the east you can go to the [F]west
@@ -38,3 +41,8 @@
 {start_of_verse: Verse 5}
 [F](Happiness lies right under your eyes) in [D7]your own [C][G7]backyard
 {end_of_verse}
+
+
+
+
+

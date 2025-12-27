@@ -1,6 +1,9 @@
 {meta: title What Happened To Our Love}
 {meta: artist Moe Bandy}
 {meta: composer Sanger D. Shafer and Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file whathappenedtoourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I wandered through my mind 
@@ -35,3 +38,7 @@ I'd [G]give the world if we could start [D7]over a[G]gain
 {start_of_verse: Verse 5}
 I'd give the world if we could start [D7]over a[G]gain
 {end_of_verse}
+
+
+
+

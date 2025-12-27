@@ -1,6 +1,9 @@
 {meta: title If You Do Dear}
 {meta: artist Carl Smith}
 {meta: composer B. Miller}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudodearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do you miss me wanna [G7]kiss me 
@@ -41,3 +44,8 @@ Are you [C]longing for me [F]only
 If you [C]do dear then it’s [G7]true dear 
 That you [C]love me
 {end_of_verse}
+
+
+
+
+

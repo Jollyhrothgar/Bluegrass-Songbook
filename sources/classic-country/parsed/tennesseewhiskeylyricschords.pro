@@ -1,5 +1,8 @@
 {meta: title Tennessee Whiskey Lyrics Chords}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseewhiskeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I used to spend my [C]nights in [G]a barroom
@@ -28,3 +31,6 @@ You're as sweet as strawberry [D7]wine
 You're as [G]warm as [G7]a glass [C]of brandy
 And I stay [G]stoned on your [D7]love all the [G]time
 {end_of_verse}
+
+
+

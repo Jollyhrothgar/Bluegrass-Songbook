@@ -1,5 +1,8 @@
 {meta: title I Was Doing Her Wrong}
 {meta: artist Charlie Walker}
+{meta: x_source classic-country}
+{meta: x_source_file iwasdoingherwronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Waitress would you bring me one more shot of your best gin
@@ -32,3 +35,7 @@ She’s doing me [G7]wrong and he’s loving her [C]right
 {start_of_verse: Verse 4}
 She’s doing me [G7]wrong and he’s still loving her [C]right
 {end_of_verse}
+
+
+
+

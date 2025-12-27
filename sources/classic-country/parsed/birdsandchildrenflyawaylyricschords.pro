@@ -1,6 +1,9 @@
 {meta: title Birds And Children Fly Away}
 {meta: artist Cal Smith}
 {meta: composer Daniel Hoffman and Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file birdsandchildrenflyawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I stood with mom and [C]poppa [D7]as the bus pulled in that [G]day
@@ -41,3 +44,8 @@ And I can still hear poppa say
 [C]Birds and children fly away that’s the Master’s plan you [G]know
 [C]Children are God’s [G]gift to make love [D7]grow
 {end_of_verse}
+
+
+
+
+

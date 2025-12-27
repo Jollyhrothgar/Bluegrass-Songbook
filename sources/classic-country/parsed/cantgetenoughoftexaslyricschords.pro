@@ -1,6 +1,9 @@
 {meta: title Can't Get Enough of Texas}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Thomas Dilbeck}
+{meta: x_source classic-country}
+{meta: x_source_file cantgetenoughoftexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can’t get enough of [F]Texas its [C]range I love to [G7]ride
@@ -29,3 +32,6 @@ And [F]when that Texas moon gives out and I [C]hear a sweet guitar
 [C]I found myself a [F]sweetheart way [C]down near San An[G7]tone
 [C]Can’t get enough of [F]Texas from [G7]now on it’s my [C]home
 {end_of_verse}
+
+
+

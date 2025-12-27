@@ -1,6 +1,9 @@
 {meta: title The Neon And The Rain}
 {meta: artist Freddie Hart}
 {meta: composer Gene Crysler}
+{meta: x_source classic-country}
+{meta: x_source_file theneonandtherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I sit beneath the steerin' wheel a gun [G7]in my right [C]hand
@@ -29,3 +32,6 @@
 [F]I'd like to run and yet I know my pride is proud I [C]came
 [G7]To pay them what I owe them in the neon and the [C]rain
 {end_of_verse}
+
+
+

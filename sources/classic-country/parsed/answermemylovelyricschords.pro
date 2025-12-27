@@ -1,6 +1,9 @@
 {meta: title Answer Me My Love Lyrics and Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Carl Sigman, Gerhard Winkler, Fred Rauch}
+{meta: x_source classic-country}
+{meta: x_source_file answermemylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Answer me [G7]oh my love 
@@ -30,3 +33,6 @@ But if you still think [Cm]about me
 [Dm]Please answer [G7]me my [C]love
 Repeat last verse
 {end_of_verse}
+
+
+

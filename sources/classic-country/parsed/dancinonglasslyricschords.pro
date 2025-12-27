@@ -1,6 +1,9 @@
 {meta: title Dancin' On Glass}
 {meta: artist Doug Stone}
 {meta: composer Charles Robinson and Jeff Lysyczyn}
+{meta: x_source classic-country}
+{meta: x_source_file dancinonglasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't [G]talk about it  [C]not even your [D7]best [G]friend 
@@ -31,3 +34,6 @@ It' happened so [G]fast me and [C]you'd go together so [Bm]soon[Am]
 But we're [D7]dancing on [G]glass me and [C]you we're so [Bm]smooth[Am]
 But we're [D7]dancing on [G]glass
 {end_of_verse}
+
+
+

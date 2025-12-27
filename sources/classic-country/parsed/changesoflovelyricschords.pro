@@ -1,6 +1,9 @@
 {meta: title Changes Of Love}
 {meta: artist Earl Thomas Conley}
 {meta: composer Earl T. Conley and Randy Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file changesoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Been staring through the window at a couple on the street
@@ -44,3 +47,8 @@ Won't let you [G]choose
 It's a [C]shame when the [G]changes of [Em]lov[D7]e 
 Won't let you [G]choose
 {end_of_verse}
+
+
+
+
+

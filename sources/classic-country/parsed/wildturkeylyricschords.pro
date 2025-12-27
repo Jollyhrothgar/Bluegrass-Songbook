@@ -1,6 +1,9 @@
 {meta: title Wild Turkey}
 {meta: artist Lacy J. Dalton}
 {meta: composer Hugh Moffatt and Pebe Sebert}
+{meta: x_source classic-country}
+{meta: x_source_file wildturkeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had one lover in all my life [F]he left me [G7]high and [C]dry
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [A7]But I'll be damned if I go [D7]home with a Wild Turkey like [C]you
 {end_of_verse}
+
+
+
+

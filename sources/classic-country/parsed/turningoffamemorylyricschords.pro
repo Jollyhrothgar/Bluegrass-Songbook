@@ -1,5 +1,8 @@
 {meta: title Turning Off a Memory}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file turningoffamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can find me in a [F]dim lighted [C]bar-room
@@ -28,3 +31,6 @@ As quickly as [D7]time will [G7]allow
 [C]I'm turning [F]off [C]a memory
 And the wine seems to [G7]help [C]me somehow
 {end_of_verse}
+
+
+

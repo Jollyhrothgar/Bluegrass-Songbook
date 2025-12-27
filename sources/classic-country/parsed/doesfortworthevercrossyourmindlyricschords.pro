@@ -1,6 +1,9 @@
 {meta: title Does Fort Worth Ever Cross Your Mind}
 {meta: artist George Strait}
 {meta: composer Sanger D. Shafer and Darlene Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file doesfortworthevercrossyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cold Fort Worth beer just ain't no [G7]good for jealous
@@ -34,3 +37,7 @@ Does Fort Worth ever cross your [C]mind
 [G7]Does Fort Worth ever does Fort Worth ever
 Does Fort Worth ever cross your [C]mind
 {end_of_verse}
+
+
+
+

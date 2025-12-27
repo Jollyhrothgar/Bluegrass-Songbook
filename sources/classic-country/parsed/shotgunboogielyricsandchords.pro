@@ -1,6 +1,9 @@
 {meta: title Shotgun Boogie}
 {meta: artist Cal Smith}
 {meta: composer Ernie Ford}
+{meta: x_source classic-country}
+{meta: x_source_file shotgunboogielyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There it stands in the corner with the barrel so straight
@@ -61,3 +64,12 @@ He said no brush hunter's gonna get my daughter
 [C]Shotgun Boogie I wanted weddin' [G]bells
 [D7]I'll be back little gal when your [C]pappy runs out of [G]shells
 {end_of_verse}
+
+
+
+
+
+
+
+
+

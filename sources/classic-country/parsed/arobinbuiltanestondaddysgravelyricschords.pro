@@ -1,6 +1,9 @@
 {meta: title A Robin Built A Nest On Daddy’s Grave}
 {meta: artist Ralph Stanley}
 {meta: composer Earl Sykes}
+{meta: x_source classic-country}
+{meta: x_source_file arobinbuiltanestondaddysgravelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Springtime is coming in the mountains
@@ -47,3 +50,9 @@ And a robin built a [D7]nest on daddy’s [G]grave
 {start_of_verse: Verse 5}
 And a robin built a [D7]nest on daddy’s [G]grave
 {end_of_verse}
+
+
+
+
+
+

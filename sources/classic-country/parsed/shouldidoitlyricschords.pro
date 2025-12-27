@@ -1,6 +1,9 @@
 {meta: title Should I Do It}
 {meta: artist Tanya Tucker}
 {meta: composer Laying Martine}
+{meta: x_source classic-country}
+{meta: x_source_file shouldidoitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I swore when he hurt me so 
@@ -64,3 +67,11 @@ Should I do it should I play
 [C]Is it crazy is it right 
 [D7]I really wanna love him [G]tonight
 {end_of_verse}
+
+
+
+
+
+
+
+

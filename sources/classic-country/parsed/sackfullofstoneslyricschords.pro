@@ -1,6 +1,9 @@
 {meta: title Sack Full Of Stones}
 {meta: artist Travis Tritt}
 {meta: composer Travis Tritt and Marty Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file sackfullofstoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to be the kind of guy I could laugh as well as [F]cry
@@ -42,3 +45,8 @@ Is dragging [C]around a heart that's heavy as a [G7]sack full of [C]stones
 But by far the biggest curse of being left [F]alone
 Is dragging [C]around a [F]heart that's [C]heavy as a [G7]sack full of [C]stones
 {end_of_verse}
+
+
+
+
+

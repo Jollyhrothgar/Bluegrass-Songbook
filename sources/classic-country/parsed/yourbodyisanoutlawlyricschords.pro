@@ -1,6 +1,9 @@
 {meta: title Your Body Is An Outlaw}
 {meta: artist Mel Tillis}
 {meta: composer Buzz Rabin}
+{meta: x_source classic-country}
+{meta: x_source_file yourbodyisanoutlawlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't help it if I'm crazy
@@ -29,3 +32,6 @@ And to [F]feel you feeling [C]me
 In the satisfying [C][F]shadow
 Of what is and [G7]has to [C]be
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If You Only Knew}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouonlyknewlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You wouldn't walk away so proud and [G7]tall
@@ -40,3 +43,7 @@ If you only [G7]knew who's in love with [C]you
 If you only [G7]knew who's in love with [C]you
 If you only [G7]knew who's in love with [C]you[F]  [C]
 {end_of_verse}
+
+
+
+

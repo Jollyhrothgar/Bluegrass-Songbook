@@ -1,6 +1,9 @@
 {meta: title Little Things}
 {meta: artist Willie Nelson}
 {meta: composer Willie and Shirley Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file littlethingslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hope I won't dis[E7]turb you with this [Am]call 
@@ -33,3 +36,7 @@ These were some [G]little things that I [D7]thought you'd like to [G]know
 {start_of_verse: Verse 5}
 [Am]These were some [G]little things that I [D7]thought you'd like to [G]know
 {end_of_verse}
+
+
+
+

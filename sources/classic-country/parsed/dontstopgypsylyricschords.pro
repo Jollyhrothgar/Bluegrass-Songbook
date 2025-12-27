@@ -1,6 +1,9 @@
 {meta: title Don't Stop Gypsy}
 {meta: artist Ricky Skaggs}
 {meta: composer Larry Cordle}
+{meta: x_source classic-country}
+{meta: x_source_file dontstopgypsylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Don't stop [C][F][C]Gypsy
@@ -35,3 +38,6 @@
 [Am]That it just wouldn’t work [F]anyway
 [G7]You’ll never stop Gypsy oh and leave her again [C]today
 {end_of_verse}
+
+
+

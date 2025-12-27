@@ -1,6 +1,9 @@
 {meta: title Walk the Way the Wind Blows}
 {meta: artist Kathy Mattea}
 {meta: composer Tim O'Brien}
+{meta: x_source classic-country}
+{meta: x_source_file walkthewaythewindblowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Up along the hallway
@@ -43,3 +46,8 @@ But like the leaves that wither
 [G7]I think I'll just go out alone
 And walk my blues [C]away
 {end_of_verse}
+
+
+
+
+

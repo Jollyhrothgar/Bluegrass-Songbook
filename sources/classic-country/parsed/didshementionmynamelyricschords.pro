@@ -1,6 +1,9 @@
 {meta: title Did She Mention My Name}
 {meta: artist Bill Anderson}
 {meta: composer Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file didshementionmynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's so nice to meet an old friend and [C]pass the time of day
@@ -30,3 +33,6 @@ Won't you [G]say hello from someone there'll [C]be no need to explain
 And by the [D7]way did she mention my [G]name
 Oh by the [D7]way did she mention my [G]name 
 {end_of_verse}
+
+
+

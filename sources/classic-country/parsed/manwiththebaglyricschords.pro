@@ -1,6 +1,9 @@
 {meta: title Man With The Bag}
 {meta: artist Lee Ann Womack}
 {meta: composer Dudley Brooks, Hal Stanley, Irving Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file manwiththebaglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Old Mr. [A7]Kringle is [Bm]soon gonna [C]jingle
@@ -50,3 +53,8 @@ The [D7]best and the merriest you [G]ever did have
 Waiting [Am]for the [D7]man with the [G]bag
 Better watch out now
 {end_of_verse}
+
+
+
+
+

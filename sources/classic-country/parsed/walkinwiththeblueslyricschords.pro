@@ -1,6 +1,9 @@
 {meta: title Walkin' With The Blues}
 {meta: artist Sonny James}
 {meta: composer Carole Smith and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file walkinwiththeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Walkin' with the [C]blues  
@@ -34,3 +37,7 @@ Loving you was bad [Am]news
 [G]Loving you was bad [Am]news  
 [D7]Walkin' with the [G]blues [C]  [G]
 {end_of_verse}
+
+
+
+

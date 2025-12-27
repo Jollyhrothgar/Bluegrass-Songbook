@@ -1,6 +1,9 @@
 {meta: title Cobblestone Mountain}
 {meta: artist The Ozark Mountain Daredevils}
 {meta: composer Steve Cash}
+{meta: x_source classic-country}
+{meta: x_source_file cobblestonemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Cobblestone mountain it was [C]made by [G]hand
@@ -44,3 +47,8 @@ From the [C]magic and [G]mortar in a [C]cobblestone [G]land
 [C]Magic and [G]mortar in a [C]cobblestone [G]land
 [C]Magic and [G]mortar in a [C]cobblestone [G]land
 {end_of_verse}
+
+
+
+
+

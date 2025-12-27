@@ -1,6 +1,9 @@
 {meta: title I Want You To Meet My Friend}
 {meta: artist Tom T Hall}
 {meta: composer Tom T. Hall and Dixie Hall}
+{meta: x_source classic-country}
+{meta: x_source_file iwantyoutomeetmyfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You ask me [C]why I seem so [G]happy
@@ -43,3 +46,8 @@ I want you to [D7]meet my [G]friend
 [C]But if you are looking for comfort [G]within
 I want you to [D7]meet my [G]friend
 {end_of_verse}
+
+
+
+
+

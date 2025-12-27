@@ -1,6 +1,9 @@
 {meta: title Once More With Feeling}
 {meta: artist Willie Nelson}
 {meta: composer Shirley Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file oncemorewithfeelinglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once more with [F]feeling [G7]once more with [C][F]feel-ing
@@ -22,3 +25,5 @@ Won't you hold me till the [A7]night fades into [D7]day
 [C]Once more with [F]feeling [G7]once more with [C][F]feel-ing
 Hold me close don't let this [G7]feeling go [C][F]a-way
 {end_of_verse}
+
+

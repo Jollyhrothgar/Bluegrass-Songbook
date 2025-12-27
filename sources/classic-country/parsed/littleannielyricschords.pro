@@ -1,6 +1,9 @@
 {meta: title Little Annie}
 {meta: artist The Lilly Brothers}
 {meta: composer Stephen Foster}
+{meta: x_source classic-country}
+{meta: x_source_file littleannielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once more Little Annie I must [F]leave you 
@@ -43,3 +46,8 @@ And the wild flowers scatter o’er the [G7]plains
 I will [C]watch for the leaves to [F]return to the trees
 And I’ll be [G7]waiting when the springtime comes [C]again
 {end_of_verse}
+
+
+
+
+

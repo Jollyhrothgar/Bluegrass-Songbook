@@ -1,6 +1,9 @@
 {meta: title Rose Of El Paso}
 {meta: artist Mel Tillis}
 {meta: composer Sam Weedman}
+{meta: x_source classic-country}
+{meta: x_source_file roseofelpasolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dear Clementine the weather’s fine 
@@ -65,3 +68,11 @@ The [F]eyes of Texas are [C]upon you
 When the work is done [F]hurry home
 Your [C]El Paso Rose is waiting [G]for you
 {end_of_verse}
+
+
+
+
+
+
+
+

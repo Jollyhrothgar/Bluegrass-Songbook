@@ -1,6 +1,9 @@
 {meta: title Out Loud}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file outloudlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told him there was no need in him staying
@@ -29,3 +32,6 @@ And [F]what I'd do if only he would [G7]stay
 Out [F]loud I told him how I [C]needed him
 Out [F]loud I [G7]told him just that [C]way
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title One And One And One}
 {meta: artist Gene Watson}
 {meta: composer Buddy Cannon and John Northrup}
+{meta: x_source classic-country}
+{meta: x_source_file oneandoneandonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The first time I laid eyes on you it was [C]love for me
@@ -33,3 +36,7 @@ So [D7]let me be the one to say good[G]bye
 {start_of_verse: Verse 4}
 Honey [D7]let me be the one to say good[G]bye
 {end_of_verse}
+
+
+
+

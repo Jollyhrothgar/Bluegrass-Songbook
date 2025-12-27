@@ -1,6 +1,9 @@
 {meta: title What a Time We Will Have Over There}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Richard R. Reid and Vivian L. Reid}
+{meta: x_source classic-country}
+{meta: x_source_file whatatimewewillhaveovertherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What a time we will have when we [C]cross the misty foam
@@ -37,3 +40,7 @@ What a [C]time we will have when we [F]see Jesus Christ
 What a [C]time what a [F]time what a [C]time what a [F]time
 What a [C]time we will [G7]have over [C]there 
 {end_of_verse}
+
+
+
+

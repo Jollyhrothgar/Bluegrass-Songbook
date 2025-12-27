@@ -1,6 +1,9 @@
 {meta: title She Took It Like A Man}
 {meta: artist Confederate Railroad}
 {meta: composer Paul Norris Nelson Jr., Danny Bear Mayo, Karen R. Staley}
+{meta: x_source classic-country}
+{meta: x_source_file shetookitlikeamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hated like the devil  to [D7]tell her we were through
@@ -33,3 +36,7 @@ I guess [C]all in all she [D7]took it like a [G]man
 {start_of_verse: Verse 4}
 I guess [C]all in all she [D7]took it like a [G]man
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title He Bought My Soul At Calvary}
 {meta: artist Slim Whitman}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file heboughtmysoulatcalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a cross for everyone to bear
@@ -29,3 +32,6 @@ I know the [F]Lord will always be my [C]guide
 [G7]I breathe His [C]name each time I see the [F]tree
 On one He [C]bought my [G7]soul at Calva[C]ry
 {end_of_verse}
+
+
+

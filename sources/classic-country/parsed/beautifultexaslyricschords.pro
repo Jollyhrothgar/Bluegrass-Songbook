@@ -1,6 +1,9 @@
 {meta: title Beautiful Texas}
 {meta: artist Hank Thompson}
 {meta: composer Wilbert Lee O'Daniels}
+{meta: x_source classic-country}
+{meta: x_source_file beautifultexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We've all read of the beautiful stories
@@ -57,3 +60,10 @@ Or [C7]down where the sea breezes [F]blow
 But you're still in beautiful [C]Texas
 The [D7]most beautiful [G7]place that I [C]know
 {end_of_verse}
+
+
+
+
+
+
+

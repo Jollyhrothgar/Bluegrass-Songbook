@@ -1,6 +1,9 @@
 {meta: title Old Faithful And True Love}
 {meta: artist Cowboy Copas}
 {meta: composer Charles Singleton and Rose Marie McCoy}
+{meta: x_source classic-country}
+{meta: x_source_file oldfaithfulandtruelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got that old faithful and true 
@@ -42,3 +45,7 @@ And nothing but [C]faithful and true love
 Can't love [D7]nobody but you
 No matter how hard I [G]try
 {end_of_verse}
+
+
+
+

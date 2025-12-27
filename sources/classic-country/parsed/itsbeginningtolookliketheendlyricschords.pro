@@ -1,6 +1,9 @@
 {meta: title It's Beginning To Look Like The End}
 {meta: artist Vern Gosdin}
 {meta: composer Larry Bastian}
+{meta: x_source classic-country}
+{meta: x_source_file itsbeginningtolookliketheendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Our ties have quit binding and [C]we're finding out [G]now
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]Yes it's beginning to look [C]like [D7]the [G]end
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title One Row At A Time}
 {meta: artist Merle Haggard}
 {meta: composer Red Lane and Dottie West}
+{meta: x_source classic-country}
+{meta: x_source_file onerowatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The southeast Georgia red clay dust is [F]ground into my [C]blue jeans
@@ -26,3 +29,6 @@ Working my [F]way back [C]home  [G7]one row at a [C]time
 {start_of_verse: Verse 4}
 Working my [F]way back [C]home  [G7]one row at a [C]time
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Live In My Heart}
 {meta: artist Mel Tillis}
 {meta: composer Jerry House}
+{meta: x_source classic-country}
+{meta: x_source_file liveinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Live in my [F]heart [C]pay me [G7]no [C]rent
@@ -36,3 +39,9 @@
 [C]Live in my [F]heart [C]pay me [G7]no [C]rent
 [F]Live in my heart and [C]wonder where [G7]loneliness [C]went
 {end_of_verse}
+
+
+
+
+
+

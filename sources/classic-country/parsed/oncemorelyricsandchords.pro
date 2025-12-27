@@ -1,5 +1,8 @@
 {meta: title Once More}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file oncemorelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once more to be with you dear 
@@ -21,3 +24,5 @@ Just for tonight to hold you [D7]tight
 Once [G]more  I'd [G7]give a [C]fortune 
 If I could [G]see you  [D7]once [G]more
 {end_of_verse}
+
+

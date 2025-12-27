@@ -1,6 +1,9 @@
 {meta: title Harbor For A Lonely Heart}
 {meta: artist Sammy Kershaw}
 {meta: composer Jenny Yates and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file harborforalonelyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One day she [C]saw with eyes wide [G]open 
@@ -48,3 +51,9 @@ She [Am]drifts for a [C]harbor for a [D7]lonely [G]heart
 Held in unseen [C]hands 
 Lord she [Am]drifts for a [C]harbor for a [D7]lonely [G]heart
 {end_of_verse}
+
+
+
+
+
+

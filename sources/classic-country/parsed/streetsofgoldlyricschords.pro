@@ -1,6 +1,9 @@
 {meta: title Streets Of Gold}
 {meta: artist Vern Gosdin}
 {meta: composer Jody Emerson, William M. Emerson, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file streetsofgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lions will lay down by the lambs everyone will get [F]along
@@ -36,3 +39,7 @@
 [F]You can bet there’ll be no crime up there on the streets of gold
 [C]Shining gold
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Real Lady's Man}
 {meta: artist Vince Gill}
 {meta: composer Carl Jackson and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file realladysmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the taste of [C]wine and [G]liquor 
@@ -42,3 +45,9 @@ Re[C]member the [G]promise you [C]wear on your left [Em]hand
 Re[C]member the [G]promise you [C]wear on your left [Em]hand
 [C]Cheatings no [G]companion for a [D7]real lady's [G]man
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Big Fool Of The Year}
 {meta: artist Hank Williams Jr.}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file bigfooloftheyearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All the big fools in town [C]got to[G]gether 
@@ -28,3 +31,6 @@ For to [G]love you after all you've [C]made me [G]suffer
 Surely [C]makes me the [D7]big fool of the [G]year
 You have [C]made me the [D7]big fool of the [G]year
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title God Is Everywhere}
 {meta: artist The Blackwood Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file Godiseverywherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wake up in the morning the [G7]sun is shining [C]bright
@@ -33,3 +36,7 @@
 [F]On His holy word [C]God is [C][G7]everywhere
 [F]He's a [C]beacon [G7]and He's [C]everywhere
 {end_of_verse}
+
+
+
+

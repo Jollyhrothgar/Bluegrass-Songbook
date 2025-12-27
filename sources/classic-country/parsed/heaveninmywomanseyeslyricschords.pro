@@ -1,6 +1,9 @@
 {meta: title Heaven In My Woman's Eyes}
 {meta: artist Tracy Byrd}
 {meta: composer Mark Nesler}
+{meta: x_source classic-country}
+{meta: x_source_file heaveninmywomanseyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's cold this time of year 
@@ -62,3 +65,11 @@ With[D7]out the heaven in my woman's [G]eyes
 Life on earth would sure be hell 
 With[D7]out the heaven in my woman's [G]eyes
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Beautiful Garden Of Prayer}
 {meta: artist Faron Young}
 {meta: composer James H. Fillmore, Eleanor A. Schroll}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulgardenofprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a garden where Jesus [F]is [C]waiting
@@ -22,3 +25,5 @@
 [F]There my Savior awaits and He opens the gates
 [C]To the beautiful [G7]garden of [C]prayer
 {end_of_verse}
+
+

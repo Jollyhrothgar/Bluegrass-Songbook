@@ -1,6 +1,9 @@
 {meta: title I Could Have Gone Right}
 {meta: artist Stonewall Jackson}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file icouldhavegonerightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born a good boy my [F]folks just loved me [C]so
@@ -29,3 +32,7 @@ tag:
 [C]Oh mama please forgive me the [F]shame is all my [C]own
 [F]I could have gone [C]right just as easy as I [G7]went [C]wrong
 {end_of_verse}
+
+
+
+

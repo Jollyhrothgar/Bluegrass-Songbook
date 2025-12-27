@@ -1,6 +1,9 @@
 {meta: title Warm Love}
 {meta: artist Don Gibson}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file warmlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well at first I didn’t [C]think that you’re [G]leaving 
@@ -30,3 +33,7 @@ And your leaving has left a [D7]mighty lonesome [G]fool
 Cause I [C]love you more than [G]need
 And your leaving has left a [D7]mighty lonesome [C]foo[G]l
 {end_of_verse}
+
+
+
+

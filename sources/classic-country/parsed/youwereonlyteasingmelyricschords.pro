@@ -1,6 +1,9 @@
 {meta: title You Were Only Teasing Me}
 {meta: artist Ernest Tubb}
 {meta: composer T. Texas Tyler and Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file youwereonlyteasingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I held you in my arms
@@ -42,3 +45,8 @@ And you said that you'd be true
 [G7]You'd break my heart
 [C]And then you'd say we're through
 {end_of_verse}
+
+
+
+
+

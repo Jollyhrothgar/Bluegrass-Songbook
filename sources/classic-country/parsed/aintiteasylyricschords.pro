@@ -1,6 +1,9 @@
 {meta: title Ain't It Easy}
 {meta: artist Johnny Bush}
 {meta: composer Charlie Craig and Moe Lytle}
+{meta: x_source classic-country}
+{meta: x_source_file aintiteasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She swears she don't but I [Em]know she does
@@ -43,3 +46,8 @@ Ain't it [F]easy ain't it [C]eas[Am]y
 Ain't it [F]easy ain't it [C]eas[Am]y
 [F]Believin' the [G7]lyin' eyes of [C]love
 {end_of_verse}
+
+
+
+
+

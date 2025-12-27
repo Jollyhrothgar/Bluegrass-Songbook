@@ -1,6 +1,9 @@
 {meta: title A Place For Girls Like You}
 {meta: artist Faron Young}
 {meta: composer Red Hayes and Sonny Burns}
+{meta: x_source classic-country}
+{meta: x_source_file aplaceforgirlslikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fate has planned a place for girls [G7]like you 
@@ -43,3 +46,8 @@ Who [F]never can be [C]true
 And [F]you'll find out that fate has [C]planned 
 A [G7]place for girls like [C]you
 {end_of_verse}
+
+
+
+
+

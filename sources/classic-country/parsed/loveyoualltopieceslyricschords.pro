@@ -1,5 +1,8 @@
 {meta: title Love You All to Pieces}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file loveyoualltopieceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While driving down the highway sudden[F]ly I got to thinking
@@ -42,3 +45,8 @@ I’m [C]gonna make it better than it’s [G7]been
 I’m gonna [C]love you [F]love you all to pieces
 And [C]love you back [G7]together [C]again
 {end_of_verse}
+
+
+
+
+

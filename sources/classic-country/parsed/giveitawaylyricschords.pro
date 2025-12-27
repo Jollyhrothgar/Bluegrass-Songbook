@@ -1,6 +1,9 @@
 {meta: title Give It Away}
 {meta: artist George Strait}
 {meta: composer Written by Bill Anderson, Buddy Cannon, Jamey Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file giveitawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was stormin' through the house that day
@@ -69,3 +72,12 @@ I've got furnished house a diamond ring
 And a lonely broken heart full of [F]love
 And I can't even give it [C]away
 {end_of_verse}
+
+
+
+
+
+
+
+
+

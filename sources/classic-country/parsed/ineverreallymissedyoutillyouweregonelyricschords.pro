@@ -1,6 +1,9 @@
 {meta: title I Never Really Missed You (Till You Were Gone)}
 {meta: artist Tommy Overstreet}
 {meta: composer Johnny Cunningham and Chris Dodson}
+{meta: x_source classic-country}
+{meta: x_source_file ineverreallymissedyoutillyouweregonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each morning when I'd wake up
@@ -30,3 +33,5 @@ Oh I [C]never [E7]really [F]missed you till you were [C]gon[G7]e ([Am]gon[C]e)
 Too [F]late I learned that [C]what I had 
 Was what I [F]wanted [G7]all [C]along
 {end_of_verse}
+
+

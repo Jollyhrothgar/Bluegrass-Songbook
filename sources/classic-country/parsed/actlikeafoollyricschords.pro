@@ -1,5 +1,8 @@
 {meta: title Act Like A Fool}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file actlikeafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You make me act [D7]like a [G]fool
@@ -42,3 +45,8 @@ You treat me [Em]mean and [D7]cold and [G]cruel
 You make me do [Em]things [C]that I hate to [G]do
 [C]Why do you [G]make me [D7]act like a [G]fool
 {end_of_verse}
+
+
+
+
+

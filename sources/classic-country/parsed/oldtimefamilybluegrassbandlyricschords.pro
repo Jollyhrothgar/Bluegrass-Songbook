@@ -1,6 +1,9 @@
 {meta: title Old Time Family Bluegrass Band}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Mike Hufman}
+{meta: x_source classic-country}
+{meta: x_source_file oldtimefamilybluegrassbandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We catch our memories wandering through the past from time to time
@@ -47,3 +50,9 @@ In an old time family [G7]bluegrass [C]band
 {start_of_verse: Verse 6}
 Yes an old time family [G7]bluegrass [C]band
 {end_of_verse}
+
+
+
+
+
+

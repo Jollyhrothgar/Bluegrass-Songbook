@@ -1,6 +1,9 @@
 {meta: title Tic Toc}
 {meta: artist Ricky Van Shelton}
 {meta: composer Troy Johnson and Brett Beavers}
+{meta: x_source classic-country}
+{meta: x_source_file tictoclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Lately we've been sleeping a little [C]farther apart
@@ -43,3 +46,8 @@ Ding dong you won't belong [G7]time is running out
 {start_of_verse: Verse 5}
 And we can’t [G7]let love wind up winding [C]down
 {end_of_verse}
+
+
+
+
+

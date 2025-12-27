@@ -1,6 +1,9 @@
 {meta: title Miss Molly}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file missmollylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh have you seen Miss [D7]Molly her [G]cheeks are rosy [D7]red
@@ -29,3 +32,6 @@ Now listen dear Miss [D7]Molly I've told [G]you this [D7]before
 Oh oh oh [C]me oh my Miss Molly [G]I'm in love with [D7]you
 [G]Oh me oh my Miss [C]Molly won't you [D7]say you love me [G]too
 {end_of_verse}
+
+
+

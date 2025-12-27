@@ -1,6 +1,9 @@
 {meta: title Crumbs From The Table}
 {meta: artist Connie Smith}
 {meta: composer Barbara Miller}
+{meta: x_source classic-country}
+{meta: x_source_file crumbsfromthetablelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord bless your [D7]children who walk [G]in [C]perfection
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]For strength needed to [C]follow [G]Th-ee
 {end_of_verse}
+
+
+
+

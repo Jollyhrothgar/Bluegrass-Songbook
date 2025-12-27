@@ -1,5 +1,8 @@
 {meta: title I'm a Long Gone Daddy}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file imalonggonedaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All you want to do is sit around and pout
@@ -60,3 +63,14 @@ I'm taking everything except my ball and chain
 [F]I'm leaving now I'm leaving [C]now
 [G7]I'm a long gone daddy I don't need you [C]anyhow
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

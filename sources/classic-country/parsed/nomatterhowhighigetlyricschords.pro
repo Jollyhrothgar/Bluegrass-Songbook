@@ -1,6 +1,9 @@
 {meta: title No Matter How High I Get}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Joey Scarbury and Even Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file nomatterhowhighigetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was a young boy I [C]would dream about [G]life 
@@ -55,3 +58,10 @@ You'll always be number one I'll settle for [D7]number two
 You've [G]always been there for me [C]baby I must con[G]fess 
 I'll always look up to you no [D7]matter how high I [G]get
 {end_of_verse}
+
+
+
+
+
+
+

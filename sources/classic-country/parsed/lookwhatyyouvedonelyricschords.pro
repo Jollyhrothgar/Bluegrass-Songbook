@@ -1,6 +1,9 @@
 {meta: title Look What You’ve Done}
 {meta: artist Marty Robbins}
 {meta: composer Frank Edward Wilson, Terri Mcfadden, John L. Footman}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhatyyouvedonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her eyes are [G7]blue the words are [C]true
@@ -36,3 +39,7 @@ And I'm in a [D7]prison [G7]look what you've [C]done
 And [F]within' my mind I [E7]know the time will [F]come
 I'll have to [C]hurt her [G7]look what you've [C]done
 {end_of_verse}
+
+
+
+

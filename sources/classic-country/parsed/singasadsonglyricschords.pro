@@ -1,5 +1,8 @@
 {meta: title Sing A Sad Song}
 {meta: artist Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file singasadsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sing me a [G7]song of [C7][C]sad-ness
@@ -29,3 +32,6 @@
 [C]And then I'll have to [F]go
 [C]Sing a sad song [G7]and sing it for [C][F]m--e
 {end_of_verse}
+
+
+

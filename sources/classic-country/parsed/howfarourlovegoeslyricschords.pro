@@ -1,6 +1,9 @@
 {meta: title How Far Our Love Goes}
 {meta: artist T.G.Sheppard}
 {meta: composer Curly Putman, Jan Crutchfield, Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file howfarourlovegoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby just relax and let my hands under your [E7]head
@@ -27,3 +30,6 @@ Let me know it fits that [D7]strong
 [G]Darlin' reach across and turn the lights way down [E7]low
 And [C]there'll be no doubt we finally [D7]know how far our love [C]goe[G]s
 {end_of_verse}
+
+
+

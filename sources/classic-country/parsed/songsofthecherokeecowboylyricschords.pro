@@ -1,6 +1,9 @@
 {meta: title Songs Of The Cherokee Cowboy}
 {meta: artist Willie Nelson}
 {meta: composer Curtis Potter and Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file songsofthecherokeecowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the neon lights come on
@@ -50,3 +53,7 @@ Show them a [G7]way to sur[C]vive
 [G7]Songs of the Cherokee cowboy
 Showed them a [F]way [G7]to sur[C]vive
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Crawdad Song}
 {meta: artist Doc Watson}
+{meta: x_source classic-country}
+{meta: x_source_file crawdadsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you get a line and I'll get a pole honey
@@ -48,3 +51,8 @@ You get a line and I'll get a pole [G7]babe
 We'll [F]go down to the crawdad hole 
 [C]Honey [G7]baby [C]mine
 {end_of_verse}
+
+
+
+
+

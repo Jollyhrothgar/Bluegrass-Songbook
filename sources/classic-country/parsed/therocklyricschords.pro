@@ -1,5 +1,8 @@
 {meta: title The Rock}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file therocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you wake up in the morning and you [F]wonder
@@ -33,3 +36,7 @@ Tag:
 Honey I was your rock (just your old rock)
 Now [G7]I'm rolling [C]away
 {end_of_verse}
+
+
+
+

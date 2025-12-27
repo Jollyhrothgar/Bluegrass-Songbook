@@ -1,5 +1,8 @@
 {meta: title Brown To Blue}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file browntobluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Brown To Blue
@@ -40,3 +43,7 @@ The judge pronounced the words the way you [C]wanted him to do
 And [D7]changed your name from Brown to Jones
 And mine from Brown to [G]Blue   
 {end_of_verse}
+
+
+
+

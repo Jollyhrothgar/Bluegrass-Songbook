@@ -1,6 +1,9 @@
 {meta: title Rock And Roll Hotel}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file rockandrollhotellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you ever get down to Nashville way
@@ -46,3 +49,10 @@ You got your own private studio with 99 tracks
 [D7]With goodies to sell at the Rock and Roll [G]Hotel
 [D7]We're going to hell to the Rock and Roll [G]Hotel
 {end_of_verse}
+
+
+
+
+
+
+

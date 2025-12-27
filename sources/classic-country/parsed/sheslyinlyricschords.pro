@@ -1,6 +1,9 @@
 {meta: title She's Lyin'}
 {meta: artist Lee Greenwood}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file sheslyinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]As her key unlocks the front [C]door
@@ -39,3 +42,7 @@
 [Dm]Instead of me I'd rather be the one [G7]that she's been lyin' with [G]tonight
 [G7]She's [C]lying
 {end_of_verse}
+
+
+
+

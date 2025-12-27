@@ -1,6 +1,9 @@
 {meta: title She's Always Right}
 {meta: artist Clay Walker}
 {meta: composer Phil Barnhart, Ed Hill, Richie McDonald}
+{meta: x_source classic-country}
+{meta: x_source_file shesalwaysrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's perfect for a cotton dress 
@@ -49,3 +52,7 @@ With a [D7]little push and a hand to help
 A [C]quiet comfort on a [G]troubled [Am]night 
 Right [G]beside me [C]yeah she's always [G]right
 {end_of_verse}
+
+
+
+

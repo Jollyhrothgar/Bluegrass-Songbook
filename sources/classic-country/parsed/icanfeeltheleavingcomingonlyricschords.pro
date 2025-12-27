@@ -1,6 +1,9 @@
 {meta: title I Can Feel The Leaving Coming On}
 {meta: artist Cal Smith}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file icanfeeltheleavingcomingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I didn’t sleep to good last night 
@@ -41,3 +44,7 @@ And I can feel the leaving coming [G]on
 {start_of_verse: Verse 5}
 And [D7]I can feel the leaving coming [G]on 
 {end_of_verse}
+
+
+
+

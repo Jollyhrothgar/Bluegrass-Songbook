@@ -1,6 +1,9 @@
 {meta: title God Will}
 {meta: artist Connie Smith}
 {meta: composer John D. Loudermilk and Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file Godwilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God will walk with me down the [F]streets
@@ -32,3 +35,6 @@
 {start_of_verse: Verse 4}
 [G7]When no one will God [C]will
 {end_of_verse}
+
+
+

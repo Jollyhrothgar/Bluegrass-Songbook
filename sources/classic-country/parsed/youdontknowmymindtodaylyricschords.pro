@@ -1,6 +1,9 @@
 {meta: title You Don't Know My Mind Today}
 {meta: artist Harland Howard}
 {meta: composer Jimmie Skinner}
+{meta: x_source classic-country}
+{meta: x_source_file youdontknowmymindtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey you don't know my mind I'm lonesome all the [F]time
@@ -30,3 +33,6 @@
 [G7]Little baby you don't know my mind [C]today
 [G7]Honey baby you don't know my mind [C]today
 {end_of_verse}
+
+
+

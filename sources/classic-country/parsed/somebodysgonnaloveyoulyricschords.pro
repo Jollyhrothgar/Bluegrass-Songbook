@@ -1,6 +1,9 @@
 {meta: title Somebody's Gonna Love You}
 {meta: artist Lee Greenwood}
 {meta: composer Don Cook and Rafe VanHoy}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysgonnaloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lonely lady living [Em]down the hall
@@ -47,3 +50,8 @@ Some[C]body's gonna [G]touch you [C]it's just a matter of [Em]time
 And if you're ever [C]gonna try love again 
 [D7]It might as well be [G]mine
 {end_of_verse}
+
+
+
+
+

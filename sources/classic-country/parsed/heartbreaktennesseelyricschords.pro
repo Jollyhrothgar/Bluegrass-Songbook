@@ -1,6 +1,9 @@
 {meta: title Heartbreak Tennessee}
 {meta: artist Johnny Paycheck}
 {meta: composer Jack H. Clement}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreaktennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There are things to do in Knoxville 
@@ -33,3 +36,6 @@ They're all I've got to [A7]keep me [D7]company
 Smallest city [G]in the nation we're the entire [C]population
 In the [G]town  of [D7]Heartbreak [G]Tennessee 
 {end_of_verse}
+
+
+

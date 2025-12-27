@@ -1,6 +1,9 @@
 {meta: title Morals Of A Man}
 {meta: artist Stonewall Jackson}
 {meta: composer John Virgin}
+{meta: x_source classic-country}
+{meta: x_source_file moralsofamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was a good girl from a family well [Dm]respected[G7]
@@ -30,3 +33,6 @@ For she [C]has no one left [C7]except her [F]baby
 Yes she learned well the [G7]morals of a [C]man
 [F]Yes she knows well the [G7]morals of a [C]man
 {end_of_verse}
+
+
+

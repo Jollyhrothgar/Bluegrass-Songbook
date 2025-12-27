@@ -1,6 +1,9 @@
 {meta: title We're Only Here For A Little While}
 {meta: artist Billy Dean}
 {meta: composer Wayland Holyfield and Richard Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file wereonlyhereforalittlewhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gonna hold who needs holding
@@ -57,3 +60,9 @@ Though it means an [D7]extra [G7]mile
 [C]Pray what needs praying [F]say what needs [C]saying
 Cause we're [F]only [C]here for a [G7]little [C]while
 {end_of_verse}
+
+
+
+
+
+

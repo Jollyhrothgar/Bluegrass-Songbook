@@ -1,6 +1,9 @@
 {meta: title I’ll Be Back A-Sunday}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Jimmy Dickens and Gordon Hall}
+{meta: x_source classic-country}
+{meta: x_source_file illbebackasundaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My little pea-patch sweetheart you're cute as pumpkin [D7]seed
@@ -61,3 +64,14 @@
 [D7]Oh I'll be back a-Sunday-Sunday I'll be back a-Sunday
 [G7]Don't you fret and fume my pet 'cause I'll be back [C]a-Sunday
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

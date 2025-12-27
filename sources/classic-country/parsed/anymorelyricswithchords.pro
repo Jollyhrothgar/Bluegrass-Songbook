@@ -1,6 +1,9 @@
 {meta: title Anymore}
 {meta: artist Travis Tritt}
 {meta: composer Travis Tritt and Jill Colucci}
+{meta: x_source classic-country}
+{meta: x_source_file anymorelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't [G]hide the way I feel 
@@ -52,3 +55,9 @@ And I'm [C]tired of pre[D7]tending
 {start_of_verse: Verse 7}
 Any[G]more [C]  any[G]more
 {end_of_verse}
+
+
+
+
+
+

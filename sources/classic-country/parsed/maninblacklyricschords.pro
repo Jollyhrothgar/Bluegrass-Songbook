@@ -1,5 +1,8 @@
 {meta: title Man In Black}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file maninblacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you wonder why I always dress in black
@@ -58,3 +61,10 @@ And tell the world that every thing's [D7]OK
 But I'll [F]try to carry [C]off a little [F]darkness on [C]my back
 Till things are brighter [G7]I'm the man [C]in black
 {end_of_verse}
+
+
+
+
+
+
+

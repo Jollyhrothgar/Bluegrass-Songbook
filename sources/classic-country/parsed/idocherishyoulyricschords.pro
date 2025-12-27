@@ -1,6 +1,9 @@
 {meta: title I Do Cherish You}
 {meta: artist Mark Wills}
 {meta: composer Dan Hill and Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file idocherishyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All I am all I'll [Dm]be
@@ -42,3 +45,7 @@ I've waited [Am]so long to [G7]say this to [Am]you
 [Dm]If you're [C]asking do I love you this [G7]much  I [C]do
 [Am]Oh I [F]do [C]
 {end_of_verse}
+
+
+
+

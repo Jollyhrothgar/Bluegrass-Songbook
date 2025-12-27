@@ -1,6 +1,9 @@
 {meta: title It's My Time}
 {meta: artist Dolly Parton}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file itsmytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gather round girls you [D7]I grew up [G]with
@@ -39,3 +42,8 @@ Come here boys I first kissed on the mouth with
 [D7]It's my time to cry oh [G]oh oh
 [C]It's my [G]turn to cry [D7]hmm-hmm it's my [G]time
 {end_of_verse}
+
+
+
+
+

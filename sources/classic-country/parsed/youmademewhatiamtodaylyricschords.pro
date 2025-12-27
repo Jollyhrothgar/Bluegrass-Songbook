@@ -1,5 +1,8 @@
 {meta: title You Made Me What I Am Today}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file youmademewhatiamtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You made me what I [F]am [C]today
@@ -42,3 +45,8 @@ Have all come [F]true
 I'm a king on a [C]throne with [F]treasures [C]unknown
 And it's [G7]all because of [C]you
 {end_of_verse}
+
+
+
+
+

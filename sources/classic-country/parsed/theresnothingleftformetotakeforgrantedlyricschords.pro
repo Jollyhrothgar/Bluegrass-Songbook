@@ -1,6 +1,9 @@
 {meta: title There's Nothing Left For Me To Take For Granted}
 {meta: artist John Anderson}
 {meta: composer John Anderson and Lionel Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file theresnothingleftformetotakeforgrantedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's nothing left for [F]me to take for [C]granted
@@ -43,3 +46,8 @@ Everything I [G7]held onto is [C]gone
 Nothing came up [F]from the seeds we [C]planted
 I guess the things we [G7]wished upon were [C]wrong
 {end_of_verse}
+
+
+
+
+

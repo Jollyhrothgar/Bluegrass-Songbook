@@ -1,6 +1,9 @@
 {meta: title I'll Be Gone}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Billy Smith, Alicia Smith, Evelyn Smith}
+{meta: x_source classic-country}
+{meta: x_source_file illbegonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm packing my bags and [C]sailing to [G]Bombay
@@ -43,3 +46,8 @@ I'll be gone a long long time
 [G]Cause you don't care for me
 [D7]I'll be gone a long long long [G]time
 {end_of_verse}
+
+
+
+
+

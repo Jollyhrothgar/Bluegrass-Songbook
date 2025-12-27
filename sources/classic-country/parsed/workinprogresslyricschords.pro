@@ -1,5 +1,8 @@
 {meta: title Work In Progress}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file workinprogresslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Okay I forgot about the trash
@@ -65,3 +68,10 @@ Just be [C]patient [G7]I'm a work in [C]progress
 {start_of_verse: Verse 6}
 [F]Oh honey just be [C]patient now [G7]I'm a work in [C]progress
 {end_of_verse}
+
+
+
+
+
+
+

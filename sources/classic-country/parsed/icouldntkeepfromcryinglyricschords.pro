@@ -1,6 +1,9 @@
 {meta: title I Couldn't Keep From Crying}
 {meta: artist Marty Robbins}
 {meta: composer Roy Turk and Fred Ahlert}
+{meta: x_source classic-country}
+{meta: x_source_file icouldntkeepfromcryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw you walking by his side
@@ -39,3 +42,6 @@ And [C]I  [G7]couldn't keep from [C]crying
 [F]From two lips I know I'll miss
 And [C]I  [G7]couldn't keep from [C]crying
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Barbara Allen}
 {meta: artist Everly Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file barbaraallenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Twas in the merry month of May 
@@ -63,3 +66,11 @@ And [F]could not grow no [C]higher
 And [F]there they died in a [C]true [Am]love-knot
 The [C]rosebush and [G7]the [C]brier
 {end_of_verse}
+
+
+
+
+
+
+
+

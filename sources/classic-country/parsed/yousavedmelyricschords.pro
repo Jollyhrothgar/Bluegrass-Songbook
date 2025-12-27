@@ -1,6 +1,9 @@
 {meta: title You Saved Me}
 {meta: artist Patty Loveless}
 {meta: composer Curtis Wright}
+{meta: x_source classic-country}
+{meta: x_source_file yousavedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For so long I've [C]been on my [G]own
@@ -29,3 +32,6 @@ Then you [G]saved [Em]me and [C]my wounded [D7]pride
 [G]Freed [B7]me from those [C]sad memories
 Your [Bm]love reached [Em]out and [Am]sav[D7]ed [G]me
 {end_of_verse}
+
+
+

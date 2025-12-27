@@ -1,5 +1,8 @@
 {meta: title Candy Apple Red}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file candyappleredlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He came speeding through the town [G7]each day at [C]sundown
@@ -42,3 +45,8 @@ If he [G7]doesn't slow it down a bit he's [F]gonna end up [C]dead
 And the [F]sheriff's daughter said she'd rather end up [C]dead
 Than to [G7]live without her candy apple [C]red
 {end_of_verse}
+
+
+
+
+

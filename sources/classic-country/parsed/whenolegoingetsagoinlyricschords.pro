@@ -1,6 +1,9 @@
 {meta: title When Ole Goin' Gets A Goin'}
 {meta: artist Ernest Tubb}
 {meta: composer Eddie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file whenolegoingetsagoinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My hand holds a bottle of [F]wine in [C]Oklahoma
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G7]And when ole goin' gets a goin' ole goin' ain't comin' [C]back
 {end_of_verse}
+
+
+
+

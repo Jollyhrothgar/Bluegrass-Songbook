@@ -1,6 +1,9 @@
 {meta: title As Of Now}
 {meta: artist Melba Montgomery}
 {meta: composer Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file asofnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As of now I'm startin' my life over
@@ -47,3 +50,9 @@ And [G7]hope he don't turn out to be like [C]you
 {start_of_verse: Verse 6}
 And [G7]hope he don't turn out to be like [C]you
 {end_of_verse}
+
+
+
+
+
+

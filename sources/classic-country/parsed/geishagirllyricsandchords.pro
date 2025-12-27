@@ -1,6 +1,9 @@
 {meta: title Geisha Girl}
 {meta: artist Hank Locklin}
 {meta: composer Lawton Williams}
+{meta: x_source classic-country}
+{meta: x_source_file geishagirllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you ever heard a love song that you [G7]didn't [C]understand
@@ -22,3 +25,5 @@ And wondered how much [G]beauty in this whole world can there [D7]be
 My [G]dreams are all worth dreaming and it [G7]makes my life worth [C]while
 To see my pretty [G]Geisha girl dressed in [D7]Oriental [G]style
 {end_of_verse}
+
+

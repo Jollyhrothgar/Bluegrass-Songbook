@@ -1,6 +1,9 @@
 {meta: title If God Can Forgive You So Can I}
 {meta: artist Jack Greene}
 {meta: composer Charlie Gore and Bulford Abner}
+{meta: x_source classic-country}
+{meta: x_source_file ifGodcanforgiveyousocanilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went to church this morning  and heard [F]you say a [C]prayer
@@ -31,3 +34,6 @@ You [C]had been forgiven  I [F]felt it in my [C]heart
 [C]When you went away dear  I thought that I would [F]die
 If God can [C]forgive you  [G7]so can [C]I
 {end_of_verse}
+
+
+

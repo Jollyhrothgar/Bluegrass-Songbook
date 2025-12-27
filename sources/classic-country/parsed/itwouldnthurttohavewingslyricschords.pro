@@ -1,6 +1,9 @@
 {meta: title It Wouldn't Hurt To Have Wings}
 {meta: artist Mark Chesnutt}
 {meta: composer Jerry Foster, Ronny LaVoie, Johnny Morris}
+{meta: x_source classic-country}
+{meta: x_source_file itwouldnthurttohavewingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Don't get me wrong I'm doin' [G7]alright
@@ -44,3 +47,9 @@
 {start_of_verse: Verse 5}
 [F]No it sure wouldn't [G7]hurt to have [C]wings
 {end_of_verse}
+
+
+
+
+
+

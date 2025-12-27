@@ -1,6 +1,9 @@
 {meta: title You Can't Judge A Good Book By Its Cover}
 {meta: artist Statler Brothers}
 {meta: composer Claude Boone}
+{meta: x_source classic-country}
+{meta: x_source_file youcantjudgeagoodbookbyitscoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can’t judge a book by its [C]cover
@@ -34,3 +37,7 @@ Till you’ve [D7]read the story through and [G]through
 You can’t judge a book by its [C]cover
 Till you’ve [D7]read what’s written on each [G]page
 {end_of_verse}
+
+
+
+

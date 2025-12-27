@@ -1,6 +1,9 @@
 {meta: title I'll Break Out Again Tonight}
 {meta: artist Darrell McCall}
 {meta: composer Arthur Leo Owens & Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file illbreakoutagaintonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Slowly the long day turns to night
@@ -35,3 +38,8 @@ So I'll be home to tuck the babies [C]in
 They can chain my body but not my [G7]mind
 And I'll break out again [C]tonight
 {end_of_verse}
+
+
+
+
+

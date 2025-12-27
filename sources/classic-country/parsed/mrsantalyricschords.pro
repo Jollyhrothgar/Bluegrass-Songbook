@@ -1,6 +1,9 @@
 {meta: title Mr. Santa}
 {meta: artist Suzy Bogguss}
 {meta: composer Pat Ballard}
+{meta: x_source classic-country}
+{meta: x_source_file mrsantalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mr. Santa [F]bring me some [E7]toys
@@ -39,3 +42,6 @@
 Mr. Santa bring me please please please
 [F]Mr. Santa [G7]don't forget [C]me
 {end_of_verse}
+
+
+

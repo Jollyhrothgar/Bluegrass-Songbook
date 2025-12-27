@@ -1,6 +1,9 @@
 {meta: title You Babe}
 {meta: artist Merle Haggard}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file youbabelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes this ol' world's a [C]drag it really pulls me [G]down
@@ -36,3 +39,7 @@
 [C]Mmm hmm hmm mmm hmm hmm hmm mmm hmm hmm hmm mmm
 [G]Lovin' you babe you babe [C]mmm hmm hmm mmm [G]hmm
 {end_of_verse}
+
+
+
+

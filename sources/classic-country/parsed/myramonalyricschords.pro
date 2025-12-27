@@ -1,5 +1,8 @@
 {meta: title My Ramona}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file myramonalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody's talking [F]bad about [G7]Ramona
@@ -35,3 +38,7 @@ And I'll be [F]proud of her just [C]like I was [G7]before
 She [C]never was the kind to like those [G7]crowded bars
 And [C]Ramona won't be [G7]seen there any[C]more
 {end_of_verse}
+
+
+
+

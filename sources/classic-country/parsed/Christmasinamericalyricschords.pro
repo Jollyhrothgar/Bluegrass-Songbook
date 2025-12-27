@@ -1,6 +1,9 @@
 {meta: title Christmas in America}
 {meta: artist Kenny Rogers}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasinamericalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Merry Christmas Merry Christmas [C][G7]America
@@ -55,3 +58,10 @@ And help us see our brother’s needs
 [F]Christmas in [C]America [Am]the [Dm]sweetest day [C]on [C][G7]earth
 [G7]Hallelujah hallelujah [C]America
 {end_of_verse}
+
+
+
+
+
+
+

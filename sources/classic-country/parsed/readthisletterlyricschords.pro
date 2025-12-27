@@ -1,5 +1,8 @@
 {meta: title Read This Letter}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file readthisletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody read this letter for me 
@@ -28,3 +31,6 @@ Tomorrow he'll put an end to my [G7]dreams
 You tell my darling once more you are free 
 Won't somebody read this letter for [C]me
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title As Long As You Keep Clinging To My Mind}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file aslongasyoukeepclingingtomymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As long as [F]I keep clinging [G7]on to your [C]memory
@@ -25,3 +28,6 @@ And my [F]memory keeps [G7]calling out for [C]more
 {start_of_verse: Verse 4}
 As [F]long as you keep [G7]clinging to my [C]mind
 {end_of_verse}
+
+
+

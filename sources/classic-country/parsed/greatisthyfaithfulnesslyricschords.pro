@@ -1,6 +1,9 @@
 {meta: title Great Is Thy Faithfulness}
 {meta: artist Gary Morris}
 {meta: composer Thomas O. Chisholm and William M. Runyan}
+{meta: x_source classic-country}
+{meta: x_source_file greatisthyfaithfulnesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Great is thy [F]faithfulness [G7]O God my [C]Father
@@ -44,3 +47,8 @@ Summer and [F]winter and [G7]springtime and [C]harvest
 [F]Great is Thy [C]faithfulness 
 [F]Great is Thy [C]faithfulness [G]Lord [G7]unto [C]me
 {end_of_verse}
+
+
+
+
+

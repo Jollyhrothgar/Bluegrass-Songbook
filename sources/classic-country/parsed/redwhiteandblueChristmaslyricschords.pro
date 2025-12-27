@@ -1,6 +1,9 @@
 {meta: title Red White And Blue Christmas}
 {meta: artist Jack Greene & Jeannie Seely}
 {meta: composer Jimmy Bilbrey, Candi Carpenter, Mark H. Houser}
+{meta: x_source classic-country}
+{meta: x_source_file redwhiteandblueChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Eighteen years old and six feet [F]tall
@@ -57,3 +60,9 @@ The de[F]fenders of the [G7]red white and [C]blue[G7]   [Am]
 {start_of_verse: Verse 7}
 The de[F]fenders of the [G7]red white and [C]blue
 {end_of_verse}
+
+
+
+
+
+

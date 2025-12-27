@@ -1,6 +1,9 @@
 {meta: title Here Today Gone Tomorrow}
 {meta: artist Rhonda Vincent}
 {meta: composer The Easter Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file heretodaygonetomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I keep watching for the dawn of [C]tomorrow
@@ -22,3 +25,5 @@ And are [G]making plans to move to my new [D7]home
 Soon those [G]eastern skies will bloom with clouds of [C]glory
 And the [G]sounding of His [D7]trumpets will be [G]gone
 {end_of_verse}
+
+

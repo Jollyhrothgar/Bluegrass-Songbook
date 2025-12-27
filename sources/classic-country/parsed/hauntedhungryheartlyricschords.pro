@@ -1,6 +1,9 @@
 {meta: title Haunted Hungry Heart}
 {meta: artist Slim Whitman}
 {meta: composer Cecil Harris, Arlie Carter, Jimmy Heap}
+{meta: x_source classic-country}
+{meta: x_source_file hauntedhungryheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm starving for your love but [C]I'm so [G]afraid
@@ -29,3 +32,6 @@
 [G]I begged you to stay we [C]quarreled you went [G]away
 [D7]Now I'm left with this haunted hungry [G]heart
 {end_of_verse}
+
+
+

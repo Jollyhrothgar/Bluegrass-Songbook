@@ -1,6 +1,9 @@
 {meta: title You Can't Make A Heel Toe The Mark}
 {meta: artist Wanda Jackson}
 {meta: composer Ray Pennington and Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file youcantmakeaheeltoethemarklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They warned me not to fall in love [C]with you 
@@ -33,3 +36,7 @@ And you [D7]can't make a heel toe the [G]mark
 {start_of_verse: Verse 4}
 And you [D7]can't make a heel toe the [G]mark
 {end_of_verse}
+
+
+
+

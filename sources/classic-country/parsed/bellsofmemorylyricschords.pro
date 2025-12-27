@@ -1,6 +1,9 @@
 {meta: title Bells Of Memory}
 {meta: artist Slim Whitman}
 {meta: composer Will Callahan and Lee Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file bellsofmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I hear those bells [G7]of [C]memory
@@ -29,3 +32,6 @@
 [C]If you’ll love me now as you loved me then
 [D7]Bells of memory will ring [G]again
 {end_of_verse}
+
+
+

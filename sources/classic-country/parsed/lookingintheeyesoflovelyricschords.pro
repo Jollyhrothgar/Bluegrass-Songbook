@@ -1,6 +1,9 @@
 {meta: title Looking In The Eyes Of Love}
 {meta: artist Patty Loveless}
 {meta: composer Tricia Walker and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file lookingintheeyesoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wonder should I tell you bout 
@@ -41,3 +44,8 @@ Now that [C]I've found [Am]you I'm [C]looking [G]in the [D7]eyes of [G]love
 Now that [C]I've found [Am]you I'm [C]looking [G]in the [D7]eyes of [G]love
 Now that [C]I've found [Am]you I'm [C]looking [G]in the [D7]eyes of [G]love
 {end_of_verse}
+
+
+
+
+

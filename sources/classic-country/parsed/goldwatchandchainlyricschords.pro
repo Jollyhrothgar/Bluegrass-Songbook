@@ -1,6 +1,9 @@
 {meta: title Gold Watch And Chain}
 {meta: artist Emmylou Harris}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file goldwatchandchainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Oh I'll pawn you my gold watch and chain [C]love
@@ -54,3 +57,10 @@
 {start_of_verse: Verse 5}
 [G7]Only say that you love me [C]again
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Gold And Silver}
 {meta: artist Sonny James}
 {meta: composer Shirley Legate}
+{meta: x_source classic-country}
+{meta: x_source_file goldandsilverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gold and silver [F]have I none [G7]I can give you [C]mo-[F]r-e
@@ -37,3 +40,8 @@ I know we're gonna [G7]live on [C]love
 [C]Gold and silver [F]have I none [G7]I can give you [C]mo-[F]r-e
 [C]Gold and silver [F]have I none [G7]I can give you [C]l-[F]o-[C]o-[G7]v-e[C]
 {end_of_verse}
+
+
+
+
+

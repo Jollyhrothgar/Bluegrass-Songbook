@@ -1,5 +1,8 @@
 {meta: title It's Just You (I Could Love You Always)}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file itsjustyouicouldloveyoualwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Please tell me that you wanted [D7]only me
@@ -21,3 +24,5 @@ There’s no [D]sweeter face it’s just [C]you I [D7]could love [G]always
 So [G]there’s no one that can ever [D7]take your place
 There’s no [D]sweeter face it’s just [C]you I [D7]could love [G]always
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Love Song For Jackie}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file lovesongforjackielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He stopped at the bar on his [F]way to the [C]bandstand
@@ -38,3 +41,7 @@ He can't live without you [G7]any fool can [C]see [C7]
 Don't hurt him Jackie you don't know how much he loves you
 Go back to him just don't ever tell him [G7]that you left him for [F]me  [C]
 {end_of_verse}
+
+
+
+

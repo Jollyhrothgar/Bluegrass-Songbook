@@ -1,6 +1,9 @@
 {meta: title Daddy Loved Trains}
 {meta: artist Keith Whitley}
 {meta: composer Don Cook and Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file daddylovedtrainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Daddy didn't [F]see me take my [G7]first steps as a [C]child
@@ -43,3 +46,8 @@ The [F]steel rails controlled him like whiskey in his [G7]brain
 [C]Number two [F]diesel fuel [G7]flowed through his [C]veins
 [F]Momma loved [C]daddy but [G7]daddy loved [C]trains
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title West Texas Waltz}
 {meta: artist Emmylou Harris}
 {meta: composer Butch Hancock}
+{meta: x_source classic-country}
+{meta: x_source_file westtexaswaltzlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]When you're [G]ready for steady to go dancin' romancin'
@@ -51,3 +54,7 @@ Just as soon as the dancin' is [G]through
 And if [C]anybody asks you why just tell it's because
 You been [G]dancin' like the dickens [D7]to the West Texas [G]Waltz
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Want To Be Like Jesus}
 {meta: artist Larry Sparks}
 {meta: composer John Smith}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttobelikeJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some wanna be a prophet of the Lord
@@ -41,3 +44,8 @@ I wanna [D7]be like [G]Jesus
 Walking in the light always in the right
 I wanna [D7]be like [G]Jesus
 {end_of_verse}
+
+
+
+
+

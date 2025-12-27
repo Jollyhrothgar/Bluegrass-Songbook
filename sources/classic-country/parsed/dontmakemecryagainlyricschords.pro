@@ -1,6 +1,9 @@
 {meta: title Don't Make Me Cry Again}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Billy Gray}
+{meta: x_source classic-country}
+{meta: x_source_file dontmakemecryagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don’t make me [G7]cry again by coming back [C]again
@@ -26,3 +29,5 @@
 [G7]Let’s not renew my love [D7]for you
 [G7]Don’t make me cry [C]again
 {end_of_verse}
+
+

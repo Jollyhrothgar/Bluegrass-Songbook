@@ -1,5 +1,8 @@
 {meta: title Dream Your Heartaches Away}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file dreamyourheartachesawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Little [D7]boy [G]blue close your eyes and [D7]go to [G]sleep
@@ -21,3 +24,5 @@ So [C]little boy [D7]blue dream your heartaches [G]away
 [C]Tomorrow will [D7]be a better [G]day
 So [C]little boy [D7]blue dream your heartaches [G]away
 {end_of_verse}
+
+

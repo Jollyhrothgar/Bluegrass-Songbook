@@ -1,6 +1,9 @@
 {meta: title Love Letters}
 {meta: artist Elvis Presley}
 {meta: composer Edward Heyman and Victor Young}
+{meta: x_source classic-country}
+{meta: x_source_file loveletterslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love letters straight from your [Am]heart
@@ -28,3 +31,6 @@ Love letters [G7]straight from your [C]heart
 {start_of_verse: Verse 4}
 Love letters [G7]straight from your [C]heart
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Kiss Me Quick}
 {meta: artist Elvis Presley}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file kissmequicklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Kiss me quick while we still have this [D7]feeling
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 5}
 [D7]Kiss me quick because I love you [G]so
 {end_of_verse}
+
+
+
+
+
+

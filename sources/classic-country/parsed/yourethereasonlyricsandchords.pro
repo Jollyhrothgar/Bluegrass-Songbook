@@ -1,5 +1,8 @@
 {meta: title You're The Reason}
 {meta: artist Lloyd Snow}
+{meta: x_source classic-country}
+{meta: x_source_file yourethereasonlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I wake from dreaming that [G7]you walked out on [C]me
@@ -32,3 +35,7 @@ You're the [D7]best thing that's ever happened in my [G]life
 {start_of_verse: Verse 4}
 You're the [D7]best thing that's ever happened in my [G]life
 {end_of_verse}
+
+
+
+

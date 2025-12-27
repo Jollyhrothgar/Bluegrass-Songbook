@@ -1,6 +1,9 @@
 {meta: title She Sure Makes Leaving Look Easy}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file shesuremakesleavinglookeasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She seems so [G7]carefree [C]as she moves [G7]about
@@ -30,3 +33,6 @@ She [Dm]seems to get [A7]lighter with [F]each step she [Bm]takes
 [G7]She sure makes leaving look [C]easy
 Repeat last verse 
 {end_of_verse}
+
+
+

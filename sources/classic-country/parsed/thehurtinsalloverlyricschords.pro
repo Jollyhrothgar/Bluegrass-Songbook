@@ -1,6 +1,9 @@
 {meta: title The Hurtin's All Over}
 {meta: artist Connie Smith}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file thehurtinsalloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now the hurtin's all [F]over  [G7]all over [C]me
@@ -33,3 +36,7 @@ It [F]started in my [G7]heart and it [C]spread all [G7]over me
 Father [C]time did his [F]part took the [G7]hurt out of [C]my heart
 Now the hurtin's all [F]over  [G7]all over [C]me
 {end_of_verse}
+
+
+
+

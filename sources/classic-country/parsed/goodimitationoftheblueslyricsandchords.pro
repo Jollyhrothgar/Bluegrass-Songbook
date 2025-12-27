@@ -1,6 +1,9 @@
 {meta: title Good Imitation Of The Blues}
 {meta: artist Alan Jackson}
 {meta: composer Patrick Brayer}
+{meta: x_source classic-country}
+{meta: x_source_file goodimitationoftheblueslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You [G]called it [F]quits and [C]hung up the phone
@@ -29,3 +32,6 @@ You [G]threatened to [F]leave [C]one too many times
 And [G]now that you're [F]gone I'm [C]gonna be walkin' on
 With this [G]good imi[D7]tation of the [G]blues
 {end_of_verse}
+
+
+

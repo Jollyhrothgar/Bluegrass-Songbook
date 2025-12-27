@@ -1,6 +1,9 @@
 {meta: title Let's Make A Memory}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melson and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file letsmakeamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come a little closer don't you tell me no sir 
@@ -65,3 +68,15 @@ We've got a love that'll last for
 Now and forever we [D7]will be 
 Making [G]memories
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

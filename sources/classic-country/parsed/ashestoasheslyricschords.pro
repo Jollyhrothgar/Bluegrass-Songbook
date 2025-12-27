@@ -1,6 +1,9 @@
 {meta: title Ashes To Ashes}
 {meta: artist Gene Watson}
 {meta: composer Joe Chambers and Larry Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file ashestoasheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your memory is something that I never [C7]could seem to [F]lose
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [A#7]Here lies a man that don't rest in [C]peace
 {end_of_verse}
+
+
+
+

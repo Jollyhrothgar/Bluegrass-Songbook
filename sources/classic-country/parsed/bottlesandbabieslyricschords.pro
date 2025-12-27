@@ -1,6 +1,9 @@
 {meta: title Bottles And Babies}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file bottlesandbabieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now the bottles are empty and the [G7]babies are [C]gone
@@ -38,3 +41,9 @@ I say each weekend no never again
 {start_of_verse: Verse 7}
 [G7]Now the bottles are empty and babies [F]are [C]gone
 {end_of_verse}
+
+
+
+
+
+

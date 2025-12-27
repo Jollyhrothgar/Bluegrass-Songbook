@@ -1,6 +1,9 @@
 {meta: title If He's Moving In I’m Moving Out}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Bobby Miller}
+{meta: x_source classic-country}
+{meta: x_source_file ifhesmovinginimmovingoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If he moves in I’m moving  [F]out of your heart
@@ -29,3 +32,6 @@ Will [D7]he support your fickle heart [G7]after I’m gone
 [C]So please make up your mind and [F]let there be no doubt 
 [G7]For if he’s moving in I’m moving [C]out
 {end_of_verse}
+
+
+

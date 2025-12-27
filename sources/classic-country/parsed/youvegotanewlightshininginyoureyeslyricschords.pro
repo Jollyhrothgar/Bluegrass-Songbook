@@ -1,5 +1,8 @@
 {meta: title You've Got A New Light Shining In Your Eyes}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotanewlightshininginyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've got a new light [C]shinin' in your [D7]eyes
@@ -32,3 +35,7 @@ You've got a [G7]new light s[C]hining in your e[G]yes
 {start_of_verse: Verse 5}
 You've got a [G7]new light [C]shining in your [G]eyes
 {end_of_verse}
+
+
+
+

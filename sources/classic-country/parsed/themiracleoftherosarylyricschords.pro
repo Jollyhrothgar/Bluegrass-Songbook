@@ -1,6 +1,9 @@
 {meta: title The Miracle Of The Rosary}
 {meta: artist Elvis Presley}
 {meta: composer Lee Denson}
+{meta: x_source classic-country}
+{meta: x_source_file themiracleoftherosarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh blessed mother we pray to [C]Thee
@@ -16,3 +19,4 @@
 [G]Now and at the [D7]hour of our [D7][G]death
 [G]And give thanks once [Em]again for the [C]miracle of your [G][D7]rosary
 {end_of_verse}
+

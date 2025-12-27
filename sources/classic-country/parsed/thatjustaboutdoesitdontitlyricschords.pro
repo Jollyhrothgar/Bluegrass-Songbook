@@ -1,6 +1,9 @@
 {meta: title That Just About Does it Don't it}
 {meta: artist Vern Gosdin}
 {meta: composer Vern}
+{meta: x_source classic-country}
+{meta: x_source_file thatjustaboutdoesitdontitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every night you go to bed [G7]crying
@@ -38,3 +41,8 @@ It's time we realized this time it's [F]over
 That just about does it  don't [G7]it
 That'll just about kill it   won't [C]it
 {end_of_verse}
+
+
+
+
+

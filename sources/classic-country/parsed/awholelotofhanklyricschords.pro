@@ -1,5 +1,8 @@
 {meta: title A Whole Lot Of Hank}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file awholelotofhanklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm an outlaw [F]from the south got country in my [C]mouth
@@ -33,3 +36,6 @@
 [Am]And there's a little bit of Cherokee Indian in my [C]eyes
 [G7]There's a whole lot Hank underneath this hat of [C]mine
 {end_of_verse}
+
+
+

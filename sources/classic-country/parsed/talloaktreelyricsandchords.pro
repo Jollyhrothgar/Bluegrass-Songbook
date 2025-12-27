@@ -1,6 +1,9 @@
 {meta: title Tall Oak Tree}
 {meta: artist Bobby Bare}
 {meta: composer Dorsey Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file talloaktreelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There was a tall oak tree [C]
@@ -48,3 +51,7 @@ Up a clear blue [G]sky[C]
 [G]There was a [C]tall oak [G]tree[C]
 [G]There was a [C]tall oak [G]tree[C]  [G]
 {end_of_verse}
+
+
+
+

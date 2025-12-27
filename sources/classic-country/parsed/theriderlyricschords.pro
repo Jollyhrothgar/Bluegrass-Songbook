@@ -1,6 +1,9 @@
 {meta: title The Rider}
 {meta: artist Lefty Frizzell}
 {meta: composer Wanda Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file theriderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Riding riding fast at midnight
@@ -43,3 +46,8 @@ So [C]cold and weary of the [G]saddle
 He's [C]resting now forever in the [G]sunshine
 The [D7]angels must have let the stranger [G]in
 {end_of_verse}
+
+
+
+
+

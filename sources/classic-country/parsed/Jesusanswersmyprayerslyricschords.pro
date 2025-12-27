@@ -1,6 +1,9 @@
 {meta: title Jesus Answers My Prayers}
 {meta: artist Reno and Smiley}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusanswersmyprayerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my life is in despair
@@ -29,3 +32,6 @@ When [D7]no one else seems to [G7]care
 I [C]fall on my knees and pray to Him there
 And Jesus [G7]answers my [C]prayers
 {end_of_verse}
+
+
+

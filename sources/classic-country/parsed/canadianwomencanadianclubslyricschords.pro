@@ -1,5 +1,8 @@
 {meta: title Canadian Women Canadian Clubs}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file canadianwomencanadianclubslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess you're surprised to see me back in [Dm]Louisville
@@ -46,3 +49,9 @@ Canadian [C]women [G7]Canadian [C]clubs
 {start_of_verse: Verse 5}
 Canadian women Lord [G7]Canadian [C]clubs
 {end_of_verse}
+
+
+
+
+
+

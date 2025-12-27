@@ -1,6 +1,9 @@
 {meta: title Denver Nites}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Ray Stafford}
+{meta: x_source classic-country}
+{meta: x_source_file denverniteslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Denver [Dm]is a [Em]mile high [A7]city
@@ -69,3 +72,12 @@ With [Dm]you here [G7]in my [C]arms [G7]
 [C]Denver [Dm]nites are [Em]bright as [A7]day
 With [Dm]you here [G7]in my [C]arms 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

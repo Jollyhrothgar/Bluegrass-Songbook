@@ -1,6 +1,9 @@
 {meta: title Teardrops On Your Letter}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Henry Glover}
+{meta: x_source classic-country}
+{meta: x_source_file teardropsonyourletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Teardrops on a [F]letter that [C]I got from [F]you
@@ -30,3 +33,6 @@ Cause I [F]love you I'm thinking of you
 [D7]So I'm coming [G7]home to [C]you
 [D7]Yes I'm coming [G7]home to [C]you
 {end_of_verse}
+
+
+

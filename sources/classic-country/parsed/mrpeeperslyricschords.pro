@@ -1,6 +1,9 @@
 {meta: title Mr. Peepers}
 {meta: artist Bill Anderson}
 {meta: composer Mark Raymond Charron}
+{meta: x_source classic-country}
+{meta: x_source_file mrpeeperslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As she rode in the car behind a black limousine
@@ -59,3 +62,10 @@ Those were [F]ugliest two women you ever laid your eyes [C]on
 [F]Dull friends [G7]is in the eye of the be[C]holder
 Mr. [F]Peepers was [G7]anything [F]but [C]dull  
 {end_of_verse}
+
+
+
+
+
+
+

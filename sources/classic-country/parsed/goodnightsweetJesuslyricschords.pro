@@ -1,6 +1,9 @@
 {meta: title Goodnight Sweet Jesus}
 {meta: artist Perry Como}
 {meta: composer James Curry}
+{meta: x_source classic-country}
+{meta: x_source_file goodnightsweetJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Good[D7]night Sweet [G]Jesus
@@ -44,3 +47,9 @@ Good[A7]night [D7]good[G]night
 Good[D7]night Dear [G]Jesus
 Good[D7]night good[G]night
 {end_of_verse}
+
+
+
+
+
+

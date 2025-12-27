@@ -1,6 +1,9 @@
 {meta: title The Heart of Worship}
 {meta: artist Randy Travis}
 {meta: composer Matt Redman}
+{meta: x_source classic-country}
+{meta: x_source_file theheartofworshiplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the music [D7]fades and all is stripped [Am]away
@@ -50,3 +53,9 @@ And it's [Am]all about [G]You it's [Am]all about [D7]You Jes[G]us
 I'm sorry Lord for the [D7]things I've made it
 When it's [Am]all about [G]You it's [Am]all about [D7]You Jes[G]us
 {end_of_verse}
+
+
+
+
+
+

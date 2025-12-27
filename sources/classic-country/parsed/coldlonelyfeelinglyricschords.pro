@@ -1,6 +1,9 @@
 {meta: title Cold Lonely Feeling}
 {meta: artist Tammy Wynette}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file coldlonelyfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who [F]could've told me [C]that you've been with her [G7]one more [C]time
@@ -32,3 +35,6 @@ Though [F]nobody [C]told me but [F]a cold lonely [C]feeling
 No [F]nobody [C]told me but [F]a cold lonely [C]feeling
 [F]Like dying that [G7]came over [C][F]m-e
 {end_of_verse}
+
+
+

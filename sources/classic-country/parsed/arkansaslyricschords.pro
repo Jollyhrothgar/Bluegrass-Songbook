@@ -1,6 +1,9 @@
 {meta: title Arkansas}
 {meta: artist Wilburn Brothers}
 {meta: composer Damon Black}
+{meta: x_source classic-country}
+{meta: x_source_file arkansaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though the brambles took the cabin I was born in
@@ -31,3 +34,6 @@ Do the [F]young men still fiddle with the [C]thought of growing rich
 And [F]slowly turn to old folks sitting [C]whittling on a [Am]stick
 Arkan[C]sas 
 {end_of_verse}
+
+
+

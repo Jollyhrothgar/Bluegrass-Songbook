@@ -1,6 +1,9 @@
 {meta: title A Big Hunk O' Love}
 {meta: artist Elvis Presley}
 {meta: composer Aaron Schroeder and Sid Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file abighunkolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey baby I ain't asking much of you
@@ -31,3 +34,6 @@ If you give me just one sweet kiss
 Oh no no no no no no [C]baby I ain't asking much of [G]you
 Just a [D7]big-a big-a [C]hunk o' love will [G]do  
 {end_of_verse}
+
+
+

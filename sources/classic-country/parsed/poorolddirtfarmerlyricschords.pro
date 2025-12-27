@@ -1,6 +1,9 @@
 {meta: title Poor Old Dirt Farmer}
 {meta: artist Levon Helm}
 {meta: composer Tracy Schwarz}
+{meta: x_source classic-country}
+{meta: x_source_file poorolddirtfarmerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the poor old dirt farmer he's [G7]lost all his [C]corn
@@ -36,3 +39,7 @@ He can’t grow no corn cause he [G7]ain't got a [C]loan
 He ain't got a [G7]loan can’t grow no [C]corn
 He [G7]ain't got no [C]loan
 {end_of_verse}
+
+
+
+

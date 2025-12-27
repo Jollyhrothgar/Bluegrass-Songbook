@@ -1,6 +1,9 @@
 {meta: title Do You Expect A Reward From God}
 {meta: artist Kitty Wells}
 {meta: composer Johnnie Bailes and Walter Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file doyouexpectarewardfromGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If through this world of sin you travel
@@ -29,3 +32,6 @@ If we [C]live for Him He'll give us that [G]reward
 But if in sin you daily wander
 Do you expect a [D7]reward from [G]God
 {end_of_verse}
+
+
+

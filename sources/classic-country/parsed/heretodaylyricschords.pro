@@ -1,6 +1,9 @@
 {meta: title Here Today}
 {meta: artist Jim Ed Brown}
 {meta: composer Jim Ed Brown, Maxine Brown, Wally Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file heretodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here today and gone [F]tomorrow
@@ -29,3 +32,6 @@
 [F]You're here today and gone tomorrow
 [C]And my loving you [G7]is just a [C]fantasy
 {end_of_verse}
+
+
+

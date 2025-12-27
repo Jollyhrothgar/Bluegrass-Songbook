@@ -1,6 +1,9 @@
 {meta: title Texas Fiddle Song}
 {meta: artist Leona Williams}
 {meta: composer Leona Williams and Ron Williams}
+{meta: x_source classic-country}
+{meta: x_source_file texasfiddlesonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I get this goin' fever every [C]time I hear a [G]tune
@@ -23,3 +26,5 @@ Ain't [G]nothing fancy mind you just a [C]place where good folks [G]go
 You can [C]hear the boot heels [G]start to click 
 When [D7]they play the Cotton Eyed [G]Joe
 {end_of_verse}
+
+

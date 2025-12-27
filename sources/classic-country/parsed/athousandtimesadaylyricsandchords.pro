@@ -1,5 +1,8 @@
 {meta: title A Thousand Times A Day}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file athousandtimesadaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I d-i-e a [D7]thousand times a [G]day
@@ -21,3 +24,5 @@
 [G]Please won’t you come [D7]back don’t stay [G]away
 [C]Don’t make me die [D7]a thousand times a [G]day
 {end_of_verse}
+
+

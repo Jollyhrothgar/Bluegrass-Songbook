@@ -1,6 +1,9 @@
 {meta: title Beyond The Shadow Of A Doubt}
 {meta: artist Jim Reeves}
 {meta: composer Ted Daffan and Theda Daffan}
+{meta: x_source classic-country}
+{meta: x_source_file beyondtheshadowofadoubtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You are my guiding [C]star
@@ -22,3 +25,5 @@
 [G]Call my name and I'll be [C]there
 [D7]Beyond the shadow of a [G]doubt
 {end_of_verse}
+
+

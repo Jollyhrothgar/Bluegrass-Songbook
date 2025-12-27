@@ -1,5 +1,8 @@
 {meta: title Love Me Over Again}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file lovemeoveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Likely as not  [F]there's been better [C]weather
@@ -28,3 +31,6 @@ Turn on your [G7]smile  for [F]me for [C]a while
 Take me a [G7]way  from [F]where I have [C]been
 I know you [Dm]love me  but [Em]love me over [C]a gain
 {end_of_verse}
+
+
+

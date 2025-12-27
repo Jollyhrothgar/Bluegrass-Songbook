@@ -1,6 +1,9 @@
 {meta: title After All This Time}
 {meta: artist Kenny Rogers}
 {meta: composer Steve Dorff and Peter Beckett}
+{meta: x_source classic-country}
+{meta: x_source_file afterallthistimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We used to think our [Am]love would be a [G7]fantasy
@@ -58,3 +61,10 @@ After all this [C]time
 {start_of_verse: Verse 6}
 [G7]After all this [C]time
 {end_of_verse}
+
+
+
+
+
+
+

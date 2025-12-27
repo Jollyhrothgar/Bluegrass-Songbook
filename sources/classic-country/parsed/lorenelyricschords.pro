@@ -1,5 +1,8 @@
 {meta: title Lorene}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file lorenelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lo-[Em]rene  [G]Lorene [C]write me a [G]letter
@@ -32,3 +35,7 @@ Lo-[G]rene I [C]feel I have [G]lost you
 {start_of_verse: Verse 5}
 Lo-[Em]rene  Lo[G]rene
 {end_of_verse}
+
+
+
+

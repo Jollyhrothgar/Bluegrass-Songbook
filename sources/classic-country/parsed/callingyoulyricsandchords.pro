@@ -1,5 +1,8 @@
 {meta: title Calling You}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file callingyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you've strayed from the fold
@@ -51,3 +54,8 @@ When your soul is burdened down
 [C]Lead you to that promise [G]land
 [C]Can't you hear the [D7]Blessed Savior calling [G]you
 {end_of_verse}
+
+
+
+
+

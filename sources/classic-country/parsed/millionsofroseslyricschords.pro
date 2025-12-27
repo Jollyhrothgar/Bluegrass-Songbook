@@ -1,6 +1,9 @@
 {meta: title Millions Of Roses}
 {meta: artist Eddy Arnold}
 {meta: composer Sylvia Dee and Arthur Kent}
+{meta: x_source classic-country}
+{meta: x_source_file millionsofroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](Millions of roses) every single [C]day[F]  [Em]   [Dm]   [G7]
@@ -28,3 +31,6 @@ Would [C]be sending [C7]you a big bou[F]quet[Am]   [Dm]
 Of [G7]millions of [Em]ros[Am]es  [G7]millions of [Em]ros[Am]es 
 [G7]Every single [C]day
 {end_of_verse}
+
+
+

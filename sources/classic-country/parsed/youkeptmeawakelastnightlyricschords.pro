@@ -1,5 +1,8 @@
 {meta: title You Kept Me Awake Last Night Lyrics and Chords}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file youkeptmeawakelastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You kept me [G7]awake last [C]night
@@ -28,3 +31,6 @@
 [C]And I know the same thing will happen [G]tonight
 [D7]You kept me [C]awake last [G]night
 {end_of_verse}
+
+
+

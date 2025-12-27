@@ -1,5 +1,8 @@
 {meta: title Children}
 {meta: artist Joe South}
+{meta: x_source classic-country}
+{meta: x_source_file childrenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Children  go and run and jump and [D7]play
@@ -45,3 +48,8 @@ Why [C]must we all behave like [G]children
 [D7]Lost lonely [G]children young [D7]carefree [G]children
 [D7]Growing young [G]children lost [D7]lonely [G]children
 {end_of_verse}
+
+
+
+
+

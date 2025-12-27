@@ -1,6 +1,9 @@
 {meta: title Memory Killer}
 {meta: artist Charlie Walker}
 {meta: composer Glenn D. Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file memorykillerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Give me another glass of [C]memory killer [G]make it a [D7]double please
@@ -31,3 +34,8 @@ Her [G]memory is a [C]gettin' bigger it's [G]almost got [D7]the best of [G]me
 [G]Give me another glass of [C]memory killer [G]make it a [D7]double please
 Her [G]memory is a [C]gettin' bigger it's [G]almost got [D7]the best of [G]me
 {end_of_verse}
+
+
+
+
+

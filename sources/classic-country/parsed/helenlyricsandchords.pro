@@ -1,6 +1,9 @@
 {meta: title Helen}
 {meta: artist Cal Smith}
 {meta: composer Jim Mundy}
+{meta: x_source classic-country}
+{meta: x_source_file helenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Helen’s got a good job down at [D7]Kroger’s
@@ -47,3 +50,9 @@ But [F]if I keep on [G7]playin’ with her [C]feelin’s
 {start_of_verse: Verse 6}
 Cause [F]Helen loves me [G7]when nobody [C]don’t
 {end_of_verse}
+
+
+
+
+
+

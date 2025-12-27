@@ -1,5 +1,8 @@
 {meta: title My Tennessee Baby}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file mytennesseebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My Tennessee Baby with that Tennessee [G7]smile
@@ -28,3 +31,6 @@ But [F]you’ll have to agree that [C]Texas knows her [G7]stuff
 My Tennessee baby I’m just a Texas [G7]guy
 But I could love you baby under any old [C]sky
 {end_of_verse}
+
+
+

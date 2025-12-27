@@ -1,6 +1,9 @@
 {meta: title Cold Empty Arms Lyrics Chords}
 {meta: artist Slim Whitman}
 {meta: composer Jerry Crist}
+{meta: x_source classic-country}
+{meta: x_source_file coldemptyarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I dream each night that you are here
@@ -26,3 +29,5 @@ Oh please sweetheart come back to me
 [C]I swear my dear that's what I'll do
 [G]These cold empty [D7]arms are all for [G]you
 {end_of_verse}
+
+

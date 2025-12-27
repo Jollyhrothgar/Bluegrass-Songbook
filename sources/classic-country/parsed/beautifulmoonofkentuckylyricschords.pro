@@ -1,6 +1,9 @@
 {meta: title Beautiful Moon Of Kentucky}
 {meta: artist Jim and Jesse}
 {meta: composer Jim McReynolds}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulmoonofkentuckylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s a beautiful moon shining [C]down on Kentucky
@@ -36,3 +39,7 @@ To return from ol’ sunny Tenne[D7]ssee
 Neath the [G]beautiful moon shining [C]down on Kentucky
 To[G]morrow that’s [D7]where I will [G]be
 {end_of_verse}
+
+
+
+

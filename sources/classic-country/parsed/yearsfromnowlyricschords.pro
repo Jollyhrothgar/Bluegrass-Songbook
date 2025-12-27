@@ -1,6 +1,9 @@
 {meta: title Years From Now}
 {meta: artist Don Williams}
 {meta: composer Roger Cook and Charles Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file yearsfromnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Years [G7]from [F]now [G7]I'll want you [C]years [G7]from [F]now
@@ -20,3 +23,5 @@
 [C]Holding [G7]you [F]years [G7]from now wanting [C]you years [E7]from [Am]now
 [C]Loving you [F]years [Em]from now [Dm]as I love [G7]you [C]tonight
 {end_of_verse}
+
+

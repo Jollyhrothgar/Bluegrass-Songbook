@@ -1,5 +1,8 @@
 {meta: title Till The Best Comes Along}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file tillthebestcomesalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I ain't the best looking [C]guy in the [G]world
@@ -33,3 +36,7 @@ But will I do till the [D7]best comes [G]along
 Well I won't be depressed if [C]I ain't the [G]best
 But will I do till the [D7]best comes [G]along
 {end_of_verse}
+
+
+
+

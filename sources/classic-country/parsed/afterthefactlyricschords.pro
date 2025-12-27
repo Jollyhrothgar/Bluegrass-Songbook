@@ -1,6 +1,9 @@
 {meta: title After The Fact}
 {meta: artist Kris Kristofferson}
 {meta: composer Stephen Bruton}
+{meta: x_source classic-country}
+{meta: x_source_file afterthefactlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The rad[G7]io says more [C]rain today 
@@ -36,3 +39,7 @@ You know that [G7]losing hurts the same old [C]way
 After the [F]fact of [Am]losing [C]love
 [F]Losing [C]love [F]losing [C]love
 {end_of_verse}
+
+
+
+

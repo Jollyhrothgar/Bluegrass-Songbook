@@ -1,6 +1,9 @@
 {meta: title Your One And Only}
 {meta: artist Ricky Van Shelton}
 {meta: composer Even Stevens and Hillary Kanter}
+{meta: x_source classic-country}
+{meta: x_source_file youroneandonlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're the last one I think of when I [F]lay down to [C]sleep
@@ -44,3 +47,8 @@ So can't you see you were meant for me
 You're the only one for me
 So [G7]why can't I be your one and [C]only
 {end_of_verse}
+
+
+
+
+

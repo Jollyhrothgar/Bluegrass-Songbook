@@ -1,6 +1,9 @@
 {meta: title Then I'll Stop Loving You}
 {meta: artist Jim Ed Brown}
 {meta: composer Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file thenillstoplovingyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If there's water in the desert sand out in the sea
@@ -22,3 +25,5 @@ The [D7]earth is not above us the [G]stars are not below
 Today can't be tomorrow old things can't be new
 I can't [C]live without a [G]heartbeat and I [D7]can't stop loving [G]you 
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Say You'll Stay Until Tomorrow}
 {meta: artist Slim Whitman}
 {meta: composer Roger Greenaway and Barry Mason}
+{meta: x_source classic-country}
+{meta: x_source_file sayyoullstatuntiltomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Say you'll stay until [C]tomorrow
@@ -53,3 +56,10 @@ Though it hurts deep inside
 [G]Though I know it's over and we're [C]through
 [G]Say you'll stay [D7]until tomorrow I need [G]you
 {end_of_verse}
+
+
+
+
+
+
+

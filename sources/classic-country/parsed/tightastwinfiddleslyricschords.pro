@@ -1,6 +1,9 @@
 {meta: title Tight As Twin Fiddles}
 {meta: artist Vern Gosdin}
 {meta: composer Hank Cochran and Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file tightastwinfiddleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I grew up on western [D7]swing
@@ -33,3 +36,7 @@ That we're [G]tight as twin [C]fiddles in a [D7]Bob Will’s [G]band
 {start_of_verse: Verse 4}
 We're tight as twin [C]fiddles in a [D7]Bob Wills [G]band
 {end_of_verse}
+
+
+
+

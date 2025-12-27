@@ -1,5 +1,8 @@
 {meta: title California Zephyr}
 {meta: artist Hank Williams Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file californiazephyrlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From the Great Salt Lakes of Utah to Cali[F]fornia's golden [C]shore
@@ -30,3 +33,6 @@ While [C]she's circlin' through the canyons
 Can't you [F]see that mountain [C]stream
 It's the California Zephyr the [G7]Union Pacific [C]Queen
 {end_of_verse}
+
+
+

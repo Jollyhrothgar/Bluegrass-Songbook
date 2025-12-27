@@ -1,5 +1,8 @@
 {meta: title Heartbreaking Baby}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakingbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heart breaking baby what makes you want to [D7]roam
@@ -24,3 +27,5 @@
 [G]I'm glad you didn't run to far
 [D7]Heart breaking baby I'm on my [G]way
 {end_of_verse}
+
+

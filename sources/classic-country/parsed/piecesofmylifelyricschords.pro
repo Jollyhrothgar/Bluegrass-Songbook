@@ -1,6 +1,9 @@
 {meta: title Pieces Of My Life}
 {meta: artist Charlie Rich}
 {meta: composer Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file piecesofmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A water glass full of whiskey
@@ -53,3 +56,10 @@ But I [G]guess I threw the [D7]best parts [G]away
 [C]Lord the [D7]pieces of my [G]life[Em]
 [G]I threw the [D7]best part [Em]away
 {end_of_verse}
+
+
+
+
+
+
+

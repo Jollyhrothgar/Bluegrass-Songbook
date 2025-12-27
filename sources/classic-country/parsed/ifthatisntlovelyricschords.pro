@@ -1,6 +1,9 @@
 {meta: title If That Isn't Love}
 {meta: artist Elvis Presley}
 {meta: composer Joyce Reba Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file ifthatisntlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He left the [D7]splendor of [G]heaven
@@ -24,3 +27,5 @@ Even in death [D7]He [G]remembered
 He spoke with love and [C]compassion
 Then He [G]took him to [G][D7]para-dise
 {end_of_verse}
+
+

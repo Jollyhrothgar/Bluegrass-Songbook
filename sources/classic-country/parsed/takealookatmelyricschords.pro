@@ -1,6 +1,9 @@
 {meta: title Take A Look At Me}
 {meta: artist Mel Tillis}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file takealookatmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Goodnight all you [G7]angel band [Am]Lord let sleep hold [Em]to my hand
@@ -29,3 +32,6 @@ I know as [F]much about [Em]tomorrow as I [Dm]learned about [G7]today
 [C]So I'll go my [G7]merry way and [Am]when there's nothing [Em]left to say
 [F]Guess I'll just go on [C]out and play Lord [G7]take a look at [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Go Your Way}
 {meta: artist Alan Jackson}
 {meta: composer Troy Jones, David Lee, Tony Lane}
+{meta: x_source classic-country}
+{meta: x_source_file yougoyourwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All your pretty [G7]bags are packed
@@ -54,3 +57,10 @@ Had a good thing but [F]now it's [C]long gone [G7]baby
 {start_of_verse: Verse 5}
 [G7]Yeah I'll go [C]crazy
 {end_of_verse}
+
+
+
+
+
+
+

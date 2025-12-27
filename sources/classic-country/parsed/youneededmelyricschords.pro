@@ -1,5 +1,8 @@
 {meta: title You Needed Me}
 {meta: artist Anne Murray}
+{meta: x_source classic-country}
+{meta: x_source_file youneededmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I cried a tear you wiped it [Dm]dry
@@ -44,3 +47,9 @@ Somehow you needed me
 Tag:
 You [G7]needed me you needed [C]me
 {end_of_verse}
+
+
+
+
+
+

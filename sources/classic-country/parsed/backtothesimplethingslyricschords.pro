@@ -1,6 +1,9 @@
 {meta: title Back To The Simple Things}
 {meta: artist Don Williams}
 {meta: composer Jennifer Hanson, Mark Nesler, Marty Dodson}
+{meta: x_source classic-country}
+{meta: x_source_file backtothesimplethingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It' so [G]easy to get all [Bm]caught up
@@ -49,3 +52,8 @@ The [Em]heart of me loves yesterday
 So [Bm]pardon me now while I make
 [C]My way back [D7]to the simple [G]things
 {end_of_verse}
+
+
+
+
+

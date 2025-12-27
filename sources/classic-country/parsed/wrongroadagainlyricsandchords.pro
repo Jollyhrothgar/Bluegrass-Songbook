@@ -1,6 +1,9 @@
 {meta: title Wrong Road Again}
 {meta: artist Cal Smith}
 {meta: composer Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file wrongroadagainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't seem to [F]learn not to [C]love you
@@ -36,3 +39,7 @@ Going back where I've [G7]already [C]been
 Even knowing [F]where it will [C]end
 Here I go down that [G7]wrong road [C]again
 {end_of_verse}
+
+
+
+

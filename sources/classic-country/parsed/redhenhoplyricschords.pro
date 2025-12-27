@@ -1,6 +1,9 @@
 {meta: title Red Hen Hop}
 {meta: artist Louvin Brothers}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file redhenhoplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a little red hen lives down the street
@@ -37,3 +40,7 @@ Said I never seen the beast since the day I was hatched
 [F]Momma never told me what the red-hen hop has [C]got
 I'll do the [G7]red-hen hop till the day they throw me in the [C]pot
 {end_of_verse}
+
+
+
+

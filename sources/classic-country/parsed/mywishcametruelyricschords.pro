@@ -1,6 +1,9 @@
 {meta: title My Wish Came True}
 {meta: artist Elvis Presley}
 {meta: composer Ivory Joe Hunter}
+{meta: x_source classic-country}
+{meta: x_source_file mywishcametruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My wish came true
@@ -36,3 +39,7 @@ Started [C7]beating [F]fast
 T'was then I [C]knew
 I found [G7]true love at [C]last
 {end_of_verse}
+
+
+
+

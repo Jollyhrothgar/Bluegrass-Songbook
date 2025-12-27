@@ -1,6 +1,9 @@
 {meta: title Blue Little Girl}
 {meta: artist Connie Smith}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file bluelittlegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once I had everything going for me like I [D7]planned
@@ -32,3 +35,7 @@ But [D7]my world is blue and I'm just a blue little [G]girl
 Yes it's a [C]blue world a crazy blue hazy blue [G]world
 [D7]I broke his heart and now I'm just a blue little [G]girl
 {end_of_verse}
+
+
+
+

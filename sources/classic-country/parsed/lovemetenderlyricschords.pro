@@ -1,5 +1,8 @@
 {meta: title Love Me Tender}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file lovemetenderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love me tender love me [D7]sweet
@@ -49,3 +52,9 @@ Love me [E7]tender [Am]love me [C]true
 For my [A7]darling I love [D7]you
 [G7]And I always [C]will
 {end_of_verse}
+
+
+
+
+
+

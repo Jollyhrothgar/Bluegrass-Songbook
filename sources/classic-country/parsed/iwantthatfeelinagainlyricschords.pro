@@ -1,5 +1,8 @@
 {meta: title I Want That Feelin' Again}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file iwantthatfeelinagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want that [G7]feelin' [C]again I want that [G7]feelin' [C]again
@@ -42,3 +45,8 @@ I had it [G7]once and it [C]got away and I want that [G7]feelin' [C]again
 I want that feelin' again I want that feelin' again
 I had it once and it got away and I [G7]want that feelin' [C]again
 {end_of_verse}
+
+
+
+
+

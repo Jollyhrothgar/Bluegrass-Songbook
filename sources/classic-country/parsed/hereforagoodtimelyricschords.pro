@@ -1,6 +1,9 @@
 {meta: title Here For A Good Time}
 {meta: artist George Strait}
 {meta: composer Dean Dillon, Bubba Strait, George Strait}
+{meta: x_source classic-country}
+{meta: x_source_file hereforagoodtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm not gonna lay around and whine and moan
@@ -42,3 +45,7 @@ Pour me some [C]moonshine
 [G7]I ain't here for a [F]long time
 [G7]I'm here for a [C]good time
 {end_of_verse}
+
+
+
+

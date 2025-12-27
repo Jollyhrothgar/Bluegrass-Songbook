@@ -1,6 +1,9 @@
 {meta: title The Trail Of The Lonesome Pine}
 {meta: artist Rex Allen}
 {meta: composer Harry Carroll and Ballard Macdonald}
+{meta: x_source classic-country}
+{meta: x_source_file thetrailofthelonesomepinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]In the Blue Ridge [D7]Mountains of [G7]Virginia
@@ -39,3 +42,8 @@ On the [C7]trail of the lonesome [F]pine
 (We found [A7]love in the [D7]moonlight 
 On the [G7]trail [C7]of the lonesome [F]pine)
 {end_of_verse}
+
+
+
+
+

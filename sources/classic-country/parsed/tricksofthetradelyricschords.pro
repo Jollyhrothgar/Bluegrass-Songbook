@@ -1,6 +1,9 @@
 {meta: title Tricks Of The Trade}
 {meta: artist Porter Wagoner}
 {meta: composer Gene Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file tricksofthetradelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Tricks of the trade tricks of the trade
@@ -41,3 +44,9 @@
 It's just the tricks of the trade (tricks of the trade)
 [G]Tricks of the trade I’ve learned from you
 {end_of_verse}
+
+
+
+
+
+

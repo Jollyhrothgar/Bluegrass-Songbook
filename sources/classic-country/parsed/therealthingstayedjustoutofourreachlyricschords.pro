@@ -1,6 +1,9 @@
 {meta: title The Real Thing (Stayed Just Out Of Our Reach)}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file therealthingstayedjustoutofourreachlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This time we got close girl [G7]
@@ -35,3 +38,6 @@ We learned from our mistakes girl
 You gotta give as well as take girl
 For the real thing stays just out of [C]reach
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Wayfaring Stranger}
 {meta: artist Don Edwards}
+{meta: x_source classic-country}
+{meta: x_source_file wayfaringstrangerlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I am a poor wayfarin' stranger
@@ -43,3 +46,8 @@ I am just [Am]goin' over Jordan
 I am just [Dm]goin[Em]' over [Am]home
 I am just [Dm]goin[Em]' goin' over [Am]home
 {end_of_verse}
+
+
+
+
+

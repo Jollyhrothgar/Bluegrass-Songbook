@@ -1,6 +1,9 @@
 {meta: title Be Nice To Everybody}
 {meta: artist Jean Sheppard}
 {meta: composer Charlie Williams and Scott Turner}
+{meta: x_source classic-country}
+{meta: x_source_file benicetoeverybodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There you go drivin' in your [G]big long car
@@ -48,3 +51,9 @@ You're gonna [D7]need 'em again coming [G]down
 You're gonna [D7]need 'em again comin' [G]down
 You're gonna [D7]need 'em again comin' [G]down
 {end_of_verse}
+
+
+
+
+
+

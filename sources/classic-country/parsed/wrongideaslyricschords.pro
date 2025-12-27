@@ -1,6 +1,9 @@
 {meta: title Wrong Ideas}
 {meta: artist Brenda Lee}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file wrongideaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well alright you can sit down [D7]but just for a minute
@@ -31,3 +34,7 @@ Well maybe just a minute or [G7]so  [C]but then you'll really have to go
 {start_of_verse: Verse 5}
 No [D7]darling don't go gettin' any wrong [G]ideas
 {end_of_verse}
+
+
+
+

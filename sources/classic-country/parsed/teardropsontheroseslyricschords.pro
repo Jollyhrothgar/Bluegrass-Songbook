@@ -1,6 +1,9 @@
 {meta: title Teardrops On The Roses}
 {meta: artist George Morgan}
 {meta: composer Jenny Lou Carson and Johnny Lange}
+{meta: x_source classic-country}
+{meta: x_source_file teardropsontheroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't mind the teardrops on the [C7]roses that I [F]sent you
@@ -22,3 +25,5 @@ Saying [Am]love like ours should [D7]never die and [G7]I'll be true
 Don't [C]mind the teardrops on the [C7]roses that I [F]sent you
 I didn't [C]mean to show [G7]my broken heart this [C]way
 {end_of_verse}
+
+

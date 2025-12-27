@@ -1,6 +1,9 @@
 {meta: title Just For Old Time Sake}
 {meta: artist Jim Ed Brown}
 {meta: composer Hank Hunter and Jack Keller}
+{meta: x_source classic-country}
+{meta: x_source_file justforoldtimesakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh [G7]darling just [C]for old time [F]sake
@@ -36,3 +39,7 @@ Turn back [G7]the hands of [C]time
 [A7]Pretend that you're still [Dm]mine
 [C]Just for [G7]old time [C]sake
 {end_of_verse}
+
+
+
+

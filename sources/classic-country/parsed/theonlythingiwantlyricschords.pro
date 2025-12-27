@@ -1,5 +1,8 @@
 {meta: title The Only Thing I Want}
 {meta: artist Cal Smith}
+{meta: x_source classic-country}
+{meta: x_source_file theonlythingiwantlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't want another drink [C]bartender
@@ -28,3 +31,6 @@ The only thing that I know is that she's [D7]gone
 [G]I don't want to face a world without [C]her
 The only thing I [D7]want just went [G]home
 {end_of_verse}
+
+
+

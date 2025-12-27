@@ -1,6 +1,9 @@
 {meta: title Flat River Mo}
 {meta: artist Ferlin Husky}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file flatrivermolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Flat River [G7]Mo [C] Flat River Mo
@@ -41,3 +44,7 @@ If I [C]ain't got the money to [F]pay
 I'm gonna [C]walk every step of the [F]way
 Cause I gotta [C]go[G7]  back to Flat River [C]Mo
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Train That Carried My Girl From Town}
 {meta: artist Doc Watson}
+{meta: x_source classic-country}
+{meta: x_source_file thetrainthatcarriedmygirlfromtownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There goes the train that carried my girl from town
@@ -48,3 +51,10 @@ Cause she got her hand in [G7]my money [C]sack
 Hey that [G7]train that [C]carried my girl from town
 Hey [G7]hey hey [C]hey
 {end_of_verse}
+
+
+
+
+
+
+

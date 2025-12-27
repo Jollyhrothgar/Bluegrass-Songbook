@@ -1,6 +1,9 @@
 {meta: title My Home Ain't In The Hall Of Fame}
 {meta: artist J.D. Crowe}
 {meta: composer Joe Dolce}
+{meta: x_source classic-country}
+{meta: x_source_file myhomeaintinthehalloffamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My home ain't [F]in the hall of [C]fame
@@ -40,3 +43,8 @@ I'm gonna the old back [G7]forty  [E7]for my [C]home
 {start_of_verse: Verse 4}
 Hey I'll [F]keep the old back [G7]forty  [E7]for my [C]home
 {end_of_verse}
+
+
+
+
+

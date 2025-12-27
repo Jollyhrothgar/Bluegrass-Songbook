@@ -1,6 +1,9 @@
 {meta: title House Without Windows}
 {meta: artist Roy Orbison}
 {meta: composer Charles Tobias and Lee Pockriss}
+{meta: x_source classic-country}
+{meta: x_source_file housewithoutwindowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna [G7]move into a house without [C]windows 
@@ -33,3 +36,6 @@ In my house without windows
 In my house without [F]windows
 And without [C]love[Am]   [C]
 {end_of_verse}
+
+
+

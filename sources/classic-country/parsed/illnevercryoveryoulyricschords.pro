@@ -1,5 +1,8 @@
 {meta: title I’ll Never Cry Over You}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file illnevercryoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You left me in sorrow you drifted [G7]away
@@ -42,3 +45,8 @@
 [G7]I’ll just go my way and I’ll smile everyday
 [C]And I’ll never cry over you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Christmas Everyday}
 {meta: artist Kenny Rogers}
 {meta: composer Pete McCann}
+{meta: x_source classic-country}
+{meta: x_source_file Christmaseverydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was born so far [F]away  so [G7]the story’s [C]told
@@ -31,3 +34,7 @@
 [F]Christmas star shines [C]once a year  [G7]then it fades [C]away
 [F]Keep the spirit [Em]in your [Am]heart and [D7]its Christmas [C][F][G7]everyday
 {end_of_verse}
+
+
+
+

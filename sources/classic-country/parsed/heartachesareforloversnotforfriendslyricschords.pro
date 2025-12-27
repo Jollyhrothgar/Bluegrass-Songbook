@@ -1,6 +1,9 @@
 {meta: title Heartaches Are For Lovers Not For Friends}
 {meta: artist Webb Pierce}
 {meta: composer Sylvia Dee, Webb Pierce, Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file heartachesareforloversnotforfriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heartaches are for [D7]lovers not for [G]friends
@@ -32,3 +35,7 @@ And [C]heartaches are for [D7]lovers not for [G]friends
 {start_of_verse: Verse 5}
 [C]Heartaches are for [D7]lovers not for [G]friends
 {end_of_verse}
+
+
+
+

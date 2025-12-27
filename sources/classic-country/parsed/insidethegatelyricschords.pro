@@ -1,6 +1,9 @@
 {meta: title Inside The Gate}
 {meta: artist The Wilburns}
 {meta: composer J.D. Sumner}
+{meta: x_source classic-country}
+{meta: x_source_file insidethegatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh how happy I will be when life's [C]journey here is [G]run
@@ -89,3 +92,15 @@ Forever[Am]more (just inside the gate)
 When we all get to heaven what a day of [A7]rejoicing that will [D7]be
 Yes all it [G]takes I’ll hear Him [C]say when I [Em]step in[A7]side the [C]gate[G]
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

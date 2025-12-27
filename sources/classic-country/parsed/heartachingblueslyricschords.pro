@@ -1,6 +1,9 @@
 {meta: title Heart Aching Blues}
 {meta: artist Ray Price}
 {meta: composer Jimmy Fields, Ray Pulley, Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file heartachingblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I tried so [D7]hard to lose these heart aching [G]blues
@@ -15,3 +18,4 @@ And no matter how [D7]hard I try I’m still all [G]alone
 Instead of [D7]someone new I’m still in [G]love with you
 And with empty [D7]arms I choose these heart aching [G]blues
 {end_of_verse}
+

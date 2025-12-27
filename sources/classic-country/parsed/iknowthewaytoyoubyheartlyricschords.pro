@@ -1,6 +1,9 @@
 {meta: title I Know The Way To You By Heart}
 {meta: artist Vern Gosdin}
 {meta: composer Tony Laiolo}
+{meta: x_source classic-country}
+{meta: x_source_file iknowthewaytoyoubyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]As a [C]boy I believed it was [F]best just to leave
@@ -45,3 +48,8 @@ I know the way to you [G7]I know the way to you
 I know the way to you [G7]I know the way to you 
 [F]I know the [G7]way to you by [C]heart
 {end_of_verse}
+
+
+
+
+

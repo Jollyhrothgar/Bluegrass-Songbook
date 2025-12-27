@@ -1,6 +1,9 @@
 {meta: title In The Dallas Morning News}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file inthedallasmorningnewslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard a nasty rumor you were seeing someone new
@@ -33,3 +36,7 @@ But it’s right there in the Dallas Morning [C]News
 {start_of_verse: Verse 4}
 Yes it’s [G7]right there in the Dallas Morning [C]News
 {end_of_verse}
+
+
+
+

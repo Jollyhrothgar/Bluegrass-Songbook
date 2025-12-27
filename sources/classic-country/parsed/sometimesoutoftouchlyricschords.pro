@@ -1,6 +1,9 @@
 {meta: title Sometimes Out Of Touch}
 {meta: artist Alabama}
 {meta: composer Teddy Gentry, Greg Fowler, Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file sometimesoutoftouchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There were times I stood my [C]ground 
@@ -46,3 +49,7 @@ But [E7]never out of [Am]love[C]  [F]
 But [C]never out of [Dm]love
 [G7]But never out of [C]love
 {end_of_verse}
+
+
+
+

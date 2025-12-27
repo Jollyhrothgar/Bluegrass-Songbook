@@ -1,6 +1,9 @@
 {meta: title If You Were Mine}
 {meta: artist Jim Reeves}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwereminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Count the raindrops in a rainstorm 
@@ -93,3 +96,20 @@ And [C]here's what you would [D7]find
 It's just equal to the love
 I'd know if you were only [G]mine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

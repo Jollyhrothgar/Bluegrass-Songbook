@@ -1,6 +1,9 @@
 {meta: title Good Ole Boys Like Me}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file goodoleboyslikemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was a [D7]kid Uncle [C]Remus would [G]put me [C]to [D7]bed
@@ -53,3 +56,9 @@ So [C]what do you do with [D7]good ole boys like [G]me
 {start_of_verse: Verse 5}
 Yeah [C]what do you do with [D7]good ole boys like [G]me
 {end_of_verse}
+
+
+
+
+
+

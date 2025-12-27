@@ -1,5 +1,8 @@
 {meta: title It Scares Me}
 {meta: artist Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file itscaresmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There isn't anyone 
@@ -34,3 +37,6 @@ The [C]thought of someone new
 {start_of_verse: Verse 4}
 [G7]Oh oh how it [C]scares me
 {end_of_verse}
+
+
+

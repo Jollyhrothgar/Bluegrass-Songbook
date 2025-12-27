@@ -1,5 +1,8 @@
 {meta: title Cottage In The Pine}
 {meta: artist Dick Curless}
+{meta: x_source classic-country}
+{meta: x_source_file cottageinthepinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm dreaming today of a home far [F]away
@@ -24,3 +27,6 @@
 [F]Ooo [C]hoo oooo hooo [F]hear the soft wind [C]cry
 [F]Ooo [C]hoo oooo hooo [G7]I'll be there by and [C]by
 {end_of_verse}
+
+
+

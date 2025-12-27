@@ -1,6 +1,9 @@
 {meta: title When Jesus Beckons Me Home}
 {meta: artist Eddy Arnold}
 {meta: composer Gene Arnold[3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file whenjesusbeckonsmehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What will my answer be what can I [C]say
@@ -29,3 +32,6 @@ Does [G]He roll the [D7]dark clouds [G]away
 [G]What will my answer be what can I [C]say
 When [G]Jesus [D7]beckons me [G]home
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Through The Eyes Of Love}
 {meta: artist Gene Watson with Rhonda Vincent}
 {meta: composer Jack Clement and Mitt Addington}
+{meta: x_source classic-country}
+{meta: x_source_file throughtheeyesoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This heart of mine [D7]be-[G]longs to you
@@ -31,3 +34,6 @@ I see with you [F]a world of [C]dreams come true
 [F]Because I'm [C]looking thro-[G]ugh the eyes of [C]love
 [D7]Don't let me [G]down
 {end_of_verse}
+
+
+

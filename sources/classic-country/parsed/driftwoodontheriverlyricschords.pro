@@ -1,6 +1,9 @@
 {meta: title Driftwood On The River}
 {meta: artist Ernest Tubb}
 {meta: composer John Klenner and Bob Miller}
+{meta: x_source classic-country}
+{meta: x_source_file driftwoodontheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just drift-wood on the river floating down the [G7]tide
@@ -36,3 +39,7 @@ I feel sorry for the one I must [C]forget
 And instead of being someone with the world to [F]win
 I'm just [G7]drift-wood on the river of [C]regret
 {end_of_verse}
+
+
+
+

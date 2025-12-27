@@ -1,5 +1,8 @@
 {meta: title Talk Of The School}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file talkoftheschoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We were going [Em]steady [C]until he came [D7]along
@@ -25,3 +28,6 @@ It's the [G]talk of the [Em]school [C]talk of the [D7]school
 {start_of_verse: Verse 4}
 [C]Talk of the [D7]school  oo[G]oh
 {end_of_verse}
+
+
+

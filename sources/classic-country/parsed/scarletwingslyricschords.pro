@@ -1,6 +1,9 @@
 {meta: title Scarlet Wings}
 {meta: artist Hank Locklin}
 {meta: composer Damon Black}
+{meta: x_source classic-country}
+{meta: x_source_file scarletwingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just overheard him [C]calling you an [G]angel
@@ -33,3 +36,7 @@ While his angel’s [C]leaving [G]out on [D7]scarlet [G]wings
 {start_of_verse: Verse 4}
 While his angel’s [C]leaving [G]out on [D7]scarlet [G]wings
 {end_of_verse}
+
+
+
+

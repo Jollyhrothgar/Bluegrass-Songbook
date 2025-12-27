@@ -1,6 +1,9 @@
 {meta: title When Did Right Become Wrong}
 {meta: artist Merle Haggard}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file whendidrightbecomewronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It used to be [D7]right that you [G]love me
@@ -31,3 +34,6 @@ For [C]you know I can't even [G]touch you
 And when did [D7]right become [G]wro[C]ng 
 [G]When did [D7]right become [G]wrong
 {end_of_verse}
+
+
+

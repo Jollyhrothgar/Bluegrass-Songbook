@@ -1,6 +1,9 @@
 {meta: title Crazy Every Time}
 {meta: artist Tracy Byrd}
 {meta: composer Casey Beathard, Billy Currington, Dan Demay}
+{meta: x_source classic-country}
+{meta: x_source_file crazyeverytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we heard that train a comin' 
@@ -61,3 +64,10 @@ I [F]disregard all reason I don't look for hidden meanin'
 Between me and that cold water 
 [G7]I bet there was fifty feet of [C]air
 {end_of_verse}
+
+
+
+
+
+
+

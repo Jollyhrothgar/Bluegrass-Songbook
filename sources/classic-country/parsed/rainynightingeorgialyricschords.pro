@@ -1,6 +1,9 @@
 {meta: title Rainy Night In Georgia}
 {meta: artist Conway Twitty}
 {meta: composer Tony Joe White}
+{meta: x_source classic-country}
+{meta: x_source_file rainynightingeorgialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hovering by my suitcase
@@ -56,3 +59,12 @@ And you know what I feel [C]alright
 Heavy raindrops falling
 [F]Seems I hear your voice a-calling it’s [C]alright
 {end_of_verse}
+
+
+
+
+
+
+
+
+

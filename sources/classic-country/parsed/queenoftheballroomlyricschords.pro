@@ -1,6 +1,9 @@
 {meta: title Queen of the Ballroom}
 {meta: artist Buddy Holly}
 {meta: composer Don Guess}
+{meta: x_source classic-country}
+{meta: x_source_file queenoftheballroomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're the queen of the ballroom
@@ -38,3 +41,8 @@ You have all the men at your feet
 [G7]Queen of the ballroom
 [C]Queen of the ballroom floor
 {end_of_verse}
+
+
+
+
+

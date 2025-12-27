@@ -1,5 +1,8 @@
 {meta: title My Baby's Gone}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file mybabysgonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hold back the rushing minutes make the wind lie [F]still
@@ -36,3 +39,7 @@ and wait for day to come
 Dry all the raindrops and hold back the [F]sun 
 [G7]My world has ended my baby's [C]gone
 {end_of_verse}
+
+
+
+

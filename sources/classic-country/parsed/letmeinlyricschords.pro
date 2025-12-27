@@ -1,6 +1,9 @@
 {meta: title Let Me In}
 {meta: artist Porter Wagoner}
 {meta: composer Gene Crysler}
+{meta: x_source classic-country}
+{meta: x_source_file letmeinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A little boy knocked at the warden's door of [D7]Sing Sing then in tears
@@ -29,3 +32,6 @@ And [D7]here I am at Sing Sing 8-3-9-6-8 lives [G]here
 [C]I can break your little rocks put a [G]hammer in my hand
 I [D7]just gotta be near daddy mister warden please let me [G]in
 {end_of_verse}
+
+
+

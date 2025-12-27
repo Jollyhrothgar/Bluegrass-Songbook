@@ -1,6 +1,9 @@
 {meta: title You Don't Seem To Miss Me}
 {meta: artist Patty Loveless}
 {meta: composer Jim Lauderdale}
+{meta: x_source classic-country}
+{meta: x_source_file youdontseemtomissmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a long way off from [F]where I should be [C]going
@@ -41,3 +44,8 @@ But [G7]you don't seem to [C]miss me
 I can't wait to [F]see your face
 But [G7]you don't seem to [C]miss me
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Big One}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file abigonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look around any old crowded bar
@@ -59,3 +62,9 @@ And it's a [C]big one
 It's a big one I'll tell ya it's a big one
 Oh [G7]brother it's a big [C]one
 {end_of_verse}
+
+
+
+
+
+

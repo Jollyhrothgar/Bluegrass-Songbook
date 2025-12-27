@@ -1,6 +1,9 @@
 {meta: title Sally Jo}
 {meta: artist Ricky Skaggs}
 {meta: composer Doug Kershaw and Rusty Kershaw}
+{meta: x_source classic-country}
+{meta: x_source_file sallyjolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got me in bed and covered up my head
@@ -47,3 +50,10 @@ Sally Jo where did you [C]g-[Dm]-o Sally [G]Jo
 Sally Jo [C]Sally [Dm]Jo
 Hear my [G]plea [Dm]come back to [G]me
 {end_of_verse}
+
+
+
+
+
+
+

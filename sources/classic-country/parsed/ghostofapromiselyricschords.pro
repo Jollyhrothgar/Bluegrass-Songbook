@@ -1,5 +1,8 @@
 {meta: title Ghost Of A Promise}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file ghostofapromiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was April in [C]Georgia [D7]the robins were [G]singing
@@ -35,3 +38,7 @@ I’ve [C]climbed every mountain I [G]searched every valley
 And the [G]ghost of her [C]promise [D7]is haunting me [G]always
 I’ll search ‘[D7]til I make her [G]mine
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Left Over Biscuits}
 {meta: artist The Lost and Found}
 {meta: composer Harold Douglas Handy}
+{meta: x_source classic-country}
+{meta: x_source_file leftoverbiscuitslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Left over biscuits [A7]left over ham
@@ -40,3 +43,8 @@ Left over coffee [A7]left over tea
 {start_of_verse: Verse 4}
 [D7]Now I'm all alone cause she done left over [G]me
 {end_of_verse}
+
+
+
+
+

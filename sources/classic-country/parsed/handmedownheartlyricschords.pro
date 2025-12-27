@@ -1,6 +1,9 @@
 {meta: title Hand Me Down Heart}
 {meta: artist Clay Walker}
 {meta: composer Lonnie Wilson and Zack Turner}
+{meta: x_source classic-country}
+{meta: x_source_file handmedownheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby I ain't gonna lie [F]this ain't my first ride
@@ -47,3 +50,7 @@ But baby it'll love you [F]true
 So if you don't mind a [C]hand me down heart 
 [G7]I've got one for [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hello I Love You}
 {meta: artist Crystal Gayle}
 {meta: composer Roger Cook and Charles Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file helloiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You [G7]take the [F]darkness [C]out [G7]of my [F]night[C]
@@ -25,3 +28,5 @@ Until the morning light shines[C]
 [G7]You are my [F]sunshine [C]  [G7]shine on [C]again[F]
 [G7]Hello I [F]love you [C]  [G7]hello [C]again
 {end_of_verse}
+
+

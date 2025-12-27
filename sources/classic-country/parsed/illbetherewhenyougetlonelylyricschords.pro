@@ -1,6 +1,9 @@
 {meta: title I'll Be There When You Get Lonely}
 {meta: artist Ray Price}
 {meta: composer Dave Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file illbetherewhenyougetlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you get lonely [Bm]at the close of day
@@ -44,3 +47,8 @@ Just close your [C]eyes [G]and say a [Em]prayer
 [A7]And I'll [D7]be [E7]there
 [A7]Oh I'll [D7]be [G]there
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Infinity}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file infinitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]With [G]wings of freedom [G7]flying in your [C]eyes 
@@ -28,3 +31,6 @@ But [G]loves not like old [G7]dogs and soldiers
 {start_of_verse: Verse 4}
 And in[C]fini[D7]ty is [G]forever
 {end_of_verse}
+
+
+

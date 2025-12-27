@@ -1,6 +1,9 @@
 {meta: title Eileen}
 {meta: artist Slim Whitman}
 {meta: composer Sylvia Fine and Max Liebman}
+{meta: x_source classic-country}
+{meta: x_source_file eileenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a town on the sea by the [C]Castle Doonee
@@ -55,3 +58,11 @@ His [D7]ghost in the wind singing soft this [G]refrain
 {start_of_verse: Verse 9}
 Ei[C]leen my [G]Eileen oh [Am]wait for me [D7]wait Ei[G]leen
 {end_of_verse}
+
+
+
+
+
+
+
+

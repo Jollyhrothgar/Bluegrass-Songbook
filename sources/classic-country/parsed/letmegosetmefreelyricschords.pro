@@ -1,5 +1,8 @@
 {meta: title Let Me Go (Set Me Free)}
 {meta: artist Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file letmegosetmefreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your lips warm me like wine and [G7]your love is oh so sweet
@@ -32,3 +35,6 @@ To leave [G]your arms I'd rather die
 But I'm no [G7]good for you that's why
 Let me [G]love you one more [D7]time then let me [G]go
 {end_of_verse}
+
+
+

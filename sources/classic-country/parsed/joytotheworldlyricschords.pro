@@ -1,6 +1,9 @@
 {meta: title Joy To The World}
 {meta: artist George Strait}
 {meta: composer Isaac Watts and George F. Handel}
+{meta: x_source classic-country}
+{meta: x_source_file joytotheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Joy to the world the [G7]Lord is [C]come
@@ -37,3 +40,7 @@ And [C]wonders wonders [G7]of His [C]love
 {start_of_verse: Verse 5}
 And wonders wonders [G7]of His [C]love
 {end_of_verse}
+
+
+
+

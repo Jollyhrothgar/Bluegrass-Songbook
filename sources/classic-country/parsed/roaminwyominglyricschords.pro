@@ -1,6 +1,9 @@
 {meta: title Roamin' Wyoming}
 {meta: artist Randy Travis}
 {meta: composer Roger Brown and Luke Reed}
+{meta: x_source classic-country}
+{meta: x_source_file roaminwyominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm [C]roamin' Wy[G]oming 
@@ -41,3 +44,8 @@ And [Am]hopin' that my [D7]roamin' leads me [A7]home [D7]to [G]you
 I keep [C]roamin' Wy[D7]omin[E7]g
 And [Am]hopin' that my [D7]roamin' leads me [A7]home [D7]to [G]you
 {end_of_verse}
+
+
+
+
+

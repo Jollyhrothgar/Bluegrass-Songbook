@@ -1,5 +1,8 @@
 {meta: title I Was A Fool}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file iwasafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don’t lose my blues when I pretend you’re with [G7]me
@@ -31,3 +34,7 @@ That I’ve lost my love but that’s the way it [C]goes
 When I think of you my empty arms remind [G7]me 
 That [F]my one true love [G7]has [C]gone 
 {end_of_verse}
+
+
+
+

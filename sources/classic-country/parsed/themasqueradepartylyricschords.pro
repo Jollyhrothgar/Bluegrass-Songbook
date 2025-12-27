@@ -1,6 +1,9 @@
 {meta: title The Masquerade Party}
 {meta: artist Carl Belew}
 {meta: composer Fred Burch and Benny Joy}
+{meta: x_source classic-country}
+{meta: x_source_file themasqueradepartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was going to a [C]masquerade [G]party
@@ -27,3 +30,6 @@ And the [D7]devil gave my angel back to [G]me
 Now we're [C]dancing like the way up in [G]heaven
 Cause the [D7]devil gave my angel back to [G]me
 {end_of_verse}
+
+
+

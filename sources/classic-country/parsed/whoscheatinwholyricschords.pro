@@ -1,6 +1,9 @@
 {meta: title Who's Cheatin' Who}
 {meta: artist Alan Jackson}
 {meta: composer Jerry Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file whoscheatinwholyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everywhere you look [C]you can write a book
@@ -50,3 +53,9 @@ Who [G]don't even care any[D7]more
 It makes you wonder [G]who's doin' right with [C]someone tonight
 And [G]whose car is [D7]parked next [G]door
 {end_of_verse}
+
+
+
+
+
+

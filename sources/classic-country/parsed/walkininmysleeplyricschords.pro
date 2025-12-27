@@ -1,5 +1,8 @@
 {meta: title Walkin’ In My Sleep}
 {meta: artist Bill Clifton}
+{meta: x_source classic-country}
+{meta: x_source_file walkininmysleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now if you see that girl of mine 
@@ -56,3 +59,10 @@ Walkin’ in my [D7]sleep
 Up and down that Dixie Line
 I’m walkin’ in my [G]sleep
 {end_of_verse}
+
+
+
+
+
+
+

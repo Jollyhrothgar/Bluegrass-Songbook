@@ -1,6 +1,9 @@
 {meta: title Come Sit By The River}
 {meta: artist Bluegrass Martins}
 {meta: composer Charles Roehrig}
+{meta: x_source classic-country}
+{meta: x_source_file comesitbytheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can see that you're [G7]ready to go [C]home
@@ -62,3 +65,11 @@ And the [C]grass was so green and the [G7]water so [C]blue
 Of when I was a boy playing [F]here on the [Dm]shore
 And the [C]grass was so green and the [G7]water so [C]blue
 {end_of_verse}
+
+
+
+
+
+
+
+

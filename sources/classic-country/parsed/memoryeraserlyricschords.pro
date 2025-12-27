@@ -1,5 +1,8 @@
 {meta: title Memory Eraser}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file memoryeraserlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I need a [C]memory [G]eraser
@@ -37,3 +40,7 @@ To [Am]erase your memo[D7]ries from my [G]mind
 Yes I need a [C]memory [G]eraser
 I can't [Am]find it in this [D7]bottle of red red [G]wine
 {end_of_verse}
+
+
+
+

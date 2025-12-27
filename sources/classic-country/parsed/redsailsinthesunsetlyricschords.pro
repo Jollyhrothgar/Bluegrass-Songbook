@@ -1,5 +1,8 @@
 {meta: title Red Sails in the Sunset}
 {meta: artist Connie Francis}
+{meta: x_source classic-country}
+{meta: x_source_file redsailsinthesunsetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Red sails in the sunset  [F]way out on the [C]sea
@@ -20,3 +23,5 @@ Red sails at the sunset  [F]way out on the [C]sea
 Oh carry my [G7]love one  home safely to [C]me 
 Oh carry my [G7]love one  home safely to [C]me
 {end_of_verse}
+
+

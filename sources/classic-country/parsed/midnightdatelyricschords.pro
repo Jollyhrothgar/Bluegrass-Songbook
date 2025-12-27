@@ -1,5 +1,8 @@
 {meta: title Midnight Date}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file midnightdatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello [F]darling
@@ -44,3 +47,8 @@
 [F]Just give me time to hang this phone [G7]up
 [C]We'll have a [F]midnight [C]date
 {end_of_verse}
+
+
+
+
+

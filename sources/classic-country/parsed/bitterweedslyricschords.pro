@@ -1,6 +1,9 @@
 {meta: title Bitterweeds}
 {meta: artist Larry Sparks}
 {meta: composer Sonya Wood and Barbara Wilkinson}
+{meta: x_source classic-country}
+{meta: x_source_file bitterweedslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]Wild flowers grew out her [D7]backdoor
@@ -71,3 +74,12 @@ I guess she always [Em]knew
 [G]Bitterweeds were [D7]all she had
 To look forward [Em]to
 {end_of_verse}
+
+
+
+
+
+
+
+
+

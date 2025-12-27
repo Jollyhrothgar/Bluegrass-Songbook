@@ -1,6 +1,9 @@
 {meta: title My Ecstasy}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file myecstasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish the world could feel 
@@ -43,3 +46,9 @@ Sweetheart you'll [Dm]always be [G7]my ecsta[C]sy
 {start_of_verse: Verse 5}
 Sweetheart you'll [Dm]always be [G7]my ecsta[C]sy
 {end_of_verse}
+
+
+
+
+
+

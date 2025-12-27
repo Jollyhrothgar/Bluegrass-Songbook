@@ -1,6 +1,9 @@
 {meta: title I Must Be Getting Over You}
 {meta: artist Lefty Frizzell}
 {meta: composer Lawrence E. Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file imustbegettingoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The silence of [F]two AM [G7]no longer tortures [C]me
@@ -31,3 +34,7 @@ Oh I must be getting [C]over you or [G7]else I've lost my [C]mind
 {start_of_verse: Verse 5}
 [F]Oh I must be getting [C]over you or [G7]else I've lost my [C]mind
 {end_of_verse}
+
+
+
+

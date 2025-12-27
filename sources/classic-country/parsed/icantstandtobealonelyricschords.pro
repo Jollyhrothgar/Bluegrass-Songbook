@@ -1,6 +1,9 @@
 {meta: title I Can't Stand To Be Alone}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file icantstandtobealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The party's almost over and [F]soon you'll have to [C]go
@@ -24,3 +27,5 @@ I [F]traded her love for a thrill she [C]knew our love was [G7]over
 I'll [C]have to face the loneliness I [F]know when you are [C]gone
 That's [F]why you've got to [C]stay with me I can't stand to [G7]be a[C]lone
 {end_of_verse}
+
+

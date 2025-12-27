@@ -1,6 +1,9 @@
 {meta: title Woman in the Back of My Mind}
 {meta: artist Mel Tillis}
 {meta: composer Ronal McCown and Roger Jauden}
+{meta: x_source classic-country}
+{meta: x_source_file womaninthebackofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see my wife working ironing my shirts
@@ -43,3 +46,8 @@ And things work out in [F]time
 But I'd like to say I'm [G7]sorry some day
 To the woman in the back of my [C]mind
 {end_of_verse}
+
+
+
+
+

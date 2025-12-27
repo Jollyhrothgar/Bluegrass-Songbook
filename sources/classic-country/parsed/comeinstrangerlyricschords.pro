@@ -1,5 +1,8 @@
 {meta: title Come In Stranger}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file comeinstrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She said come in stranger it's [G7]good to have you [C]home
@@ -36,3 +39,7 @@
 [F]Stay long enough so that the one I [C]love
 [G7]Is not a stranger to [C]me
 {end_of_verse}
+
+
+
+

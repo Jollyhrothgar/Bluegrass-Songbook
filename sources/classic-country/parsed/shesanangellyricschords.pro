@@ -1,6 +1,9 @@
 {meta: title She's An Angel}
 {meta: artist Moe Bandy}
 {meta: composer Harlan Howard and Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file shesanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That's not really her she's not herself [F]tonight
@@ -26,3 +29,6 @@ For your girl once was my girl [C7]before I did her [F]wrong
 {start_of_verse: Verse 4}
 [G7]She's an angel she just left her wings at [C]home
 {end_of_verse}
+
+
+

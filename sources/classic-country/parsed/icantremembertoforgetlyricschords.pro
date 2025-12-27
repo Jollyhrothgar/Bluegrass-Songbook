@@ -1,6 +1,9 @@
 {meta: title I Can't Remember To Forget}
 {meta: artist Bob Luman}
 {meta: composer Billy Graham}
+{meta: x_source classic-country}
+{meta: x_source_file icantremembertoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]We [G]said [Em]goodbye in a [C]soft spring [Am]rain
@@ -40,3 +43,8 @@ I [D7]can't remember to [G]forget
 {start_of_verse: Verse 5}
 I [D7]can't remember to [G]forget[C]   [G]
 {end_of_verse}
+
+
+
+
+

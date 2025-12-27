@@ -1,6 +1,9 @@
 {meta: title That's When It's Coming Home To You}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Ernest Tubb and Lois Snapp}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhenitscominghometoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For a million of [C]lies that you [G]told me
@@ -44,3 +47,9 @@ And the millions of tears I’ve shed over [D7]you
 It’s [G]all been so unfair [C]but someday I won’t care
 And [G]that’s when it’s [D7]coming home to [G]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,4 +1,7 @@
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file shouldicomebackhometyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Friends of mine keep writing me about [F]you
@@ -27,3 +30,6 @@
 [C]Give me a chance to start my life all [F]over
 [C]Just tell me should [G7]I come back home to [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You're The Perfect Picture}
 {meta: artist Doug Supernaw}
 {meta: composer Bob McDill and Bucky E. Jones}
+{meta: x_source classic-country}
+{meta: x_source_file youretheperfectpicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come on in close the door have I [C]seen you here before
@@ -33,3 +36,7 @@ Cause you're the perfect [G]picture to [D7]fit my frame of [G]mind
 {start_of_verse: Verse 4}
 [C]Yes you're the perfect [G]picture to [D7]fit my frame of [G]mind
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'm Gonna Get Together With Your Memory Tonight}
 {meta: artist Charlie Walker}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnagettogetherwithyourmemorytonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some old friends came by [G7]said come on let’s go
@@ -32,3 +35,7 @@ And I’m [F]gonna get together with your [C]memory tonight
 {start_of_verse: Verse 4}
 Yes I’m [G7]gonna get together with your memory [C]tonight
 {end_of_verse}
+
+
+
+

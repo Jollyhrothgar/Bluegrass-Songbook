@@ -1,6 +1,9 @@
 {meta: title Size Seven Round}
 {meta: artist George Jones and Lacy J. Dalton}
 {meta: composer Monroe Fields and Gary N. Lumpkin}
+{meta: x_source classic-country}
+{meta: x_source_file sizesevenroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With all my love my [G7]dreams and [C]plans
@@ -29,3 +32,6 @@ This circle [G7]joins us heart and [C]soul
 And it won't let our [F]love grow [C]cold
 Size seven round  [G7]and made of [C]gold
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Live You}
 {meta: artist Charley Pride}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file iliveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't just love you I live [F]you
@@ -24,3 +27,5 @@ If I had ten lifetimes every one I'd [F]give you
 No I don't just [C]love you
 No I don't just [G7]love you I live [C]you
 {end_of_verse}
+
+

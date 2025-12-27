@@ -1,6 +1,9 @@
 {meta: title Baby Girl}
 {meta: artist Ricky Skaggs}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file babygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Little [C]girl (little girl) baby [G]girl
@@ -41,3 +44,8 @@ Sent from [D7]heaven our little baby [G]girl
 [G]Like an angel to me and [C]I know that He
 Sent from [D7]heaven our little baby [G]girl
 {end_of_verse}
+
+
+
+
+

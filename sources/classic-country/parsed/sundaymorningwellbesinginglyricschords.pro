@@ -1,6 +1,9 @@
 {meta: title Sunday Morning We'll Be Singing}
 {meta: artist Jim Ed Brown}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file sundaymorningwellbesinginglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Widow [F]Johnson took a [C]night job
@@ -54,3 +57,9 @@ Inside the [F]church we'll have a [C]turn to testify
 And tell a lie just like we did the week [G7]before
 [F]Outside the hand of [C]hell is [G7]knocking on our [C]door
 {end_of_verse}
+
+
+
+
+
+

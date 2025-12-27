@@ -1,6 +1,9 @@
 {meta: title Everything I Own}
 {meta: artist Crystal Gayle}
 {meta: composer David Gates}
+{meta: x_source classic-country}
+{meta: x_source_file everythingiownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You sheltered me from [Am]harm kept me [F]warm kept me [C]war-[G7]m
@@ -47,3 +50,9 @@ Just to [F]have you back [C]again
 {start_of_verse: Verse 5}
 Just to [F]touch you once [C]again
 {end_of_verse}
+
+
+
+
+
+

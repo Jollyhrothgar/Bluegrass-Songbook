@@ -1,5 +1,8 @@
 {meta: title I Can't Get You Off Of My Mind}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file icantgetyouoffofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I can't get you [G7]off of my [C]mind
@@ -32,3 +35,6 @@ Lord I've [C]tried and I've tried
 And [F]all night long I've [C]cried
 But I can't get you [G7]off of my [C]mind
 {end_of_verse}
+
+
+

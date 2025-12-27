@@ -1,6 +1,9 @@
 {meta: title Stone By Stone}
 {meta: artist Vernon Oxford}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file stonebystonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As night time falls these old four walls become a [G7]prison
@@ -29,3 +32,6 @@ And now I’m sitting by [C7]myself and live [F]forever
 What a [G7]fool (what a fool) what a [C]fool (what a fool)
 What a [G7]fool (what a fool) what a [C]fool (what a fool)
 {end_of_verse}
+
+
+

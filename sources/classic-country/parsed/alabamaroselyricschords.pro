@@ -1,6 +1,9 @@
 {meta: title Alabama Rose}
 {meta: artist Bobby Bare}
 {meta: composer Wanda Alley}
+{meta: x_source classic-country}
+{meta: x_source_file alabamaroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]One [G]night I went to [F]town and met a [C]girl from [G]Alabama
@@ -30,3 +33,6 @@ But [G]she must know no [C]matter where she [G]goes my dreams go with her
 Cause I still love my [F]Ala[C]bama [G]Rose
 God knows I love my [F]Ala[C]bama [G]Rose
 {end_of_verse}
+
+
+

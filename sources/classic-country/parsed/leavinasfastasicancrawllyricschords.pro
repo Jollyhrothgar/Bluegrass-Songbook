@@ -1,6 +1,9 @@
 {meta: title Leavin' As Fast As I Can Crawl}
 {meta: artist Johnny Rodriguez}
 {meta: composer Linda Hargrove}
+{meta: x_source classic-country}
+{meta: x_source_file leavinasfastasicancrawllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Would you like to take a picture of me [C]leavin'
@@ -33,3 +36,7 @@ And I'm [G]leavin' as [D7]fast as I can [G]crawl
 {start_of_verse: Verse 5}
 [C]Yes I'm [G]leavin' as [D7]fast as I can [G]crawl
 {end_of_verse}
+
+
+
+

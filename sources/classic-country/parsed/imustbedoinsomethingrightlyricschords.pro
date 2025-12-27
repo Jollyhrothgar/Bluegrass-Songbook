@@ -1,6 +1,9 @@
 {meta: title I Must Be Doin' Something Right}
 {meta: artist Roy Drusky}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file imustbedoinsomethingrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I can't give [G]her all the things that I [G7]wish that I could [C]give
@@ -28,3 +31,6 @@ Cause He [C]blessed this house with [G]love
 {start_of_verse: Verse 4}
 Yes I [G]know I must be [D7]doing something [C]right[Am]   [G]
 {end_of_verse}
+
+
+

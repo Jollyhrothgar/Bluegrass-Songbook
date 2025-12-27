@@ -1,6 +1,9 @@
 {meta: title Chiseled In The Wall}
 {meta: artist Moe Bandy}
 {meta: composer Thomas Ward Snyder}
+{meta: x_source classic-country}
+{meta: x_source_file chiseledinthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The year was 1965 and I [F]was just [C]eighteen
@@ -33,3 +36,7 @@ Now they’re [D7]just another name that’s [G7]chiseled in the [C]wall
 {start_of_verse: Verse 4}
 They’re [D7]just another name that’s [G7]chiseled in the [C]wall
 {end_of_verse}
+
+
+
+

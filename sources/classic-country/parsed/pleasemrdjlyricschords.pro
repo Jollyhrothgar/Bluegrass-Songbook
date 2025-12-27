@@ -1,5 +1,8 @@
 {meta: title Please Mr. D.J.}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file pleasemrdjlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello Mr. D.J. won't you [F]play a song for me
@@ -21,3 +24,5 @@ And [G7]send it out to someone who broke my heart [C]today
 Oh [C]please Mr. D.J. [F]play that song I've heard you play
 And [G7]send it out to someone who broke my heart [C]today
 {end_of_verse}
+
+

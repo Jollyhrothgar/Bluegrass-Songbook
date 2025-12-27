@@ -1,6 +1,9 @@
 {meta: title Is Goodbye That Easy To Say}
 {meta: artist Charlie Rich}
 {meta: composer Marijohn Wilkin and Benny Joy}
+{meta: x_source classic-country}
+{meta: x_source_file isgoodbyethateasytosaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Good[Em]bye good[Am]bye[D7])
@@ -35,3 +38,8 @@ Is good[G]bye that [D7]easy to [G]say
 {start_of_verse: Verse 6}
 Is goodbye that [D7]easy to [C]say [G]
 {end_of_verse}
+
+
+
+
+

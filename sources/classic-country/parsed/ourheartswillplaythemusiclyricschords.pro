@@ -1,5 +1,8 @@
 {meta: title Our Hearts Will Play The Music}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file ourheartswillplaythemusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't like to do things [F]I don't like to do 
@@ -26,3 +29,5 @@ Our hearts will play the music for the [A]songs our lips will [C]sing
 Our hearts will play the music for the [A]songs our lips will [C]sing
 Our hearts will play the music for the [A]songs our lips will [C]sing
 {end_of_verse}
+
+

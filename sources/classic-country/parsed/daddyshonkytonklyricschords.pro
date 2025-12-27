@@ -1,6 +1,9 @@
 {meta: title Daddy's Honky Tonk}
 {meta: artist Moe Bandy}
 {meta: composer Bobby Keel, Buck Moore, Gordon Evans}
+{meta: x_source classic-country}
+{meta: x_source_file daddyshonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Momma is a God fearin' [D7]woman
@@ -63,3 +66,14 @@ She smoked her first joint and did it right
 When she smoked her first joint she did it right
 [G7]Momma burned down Daddy's honky tonk last [C]night
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

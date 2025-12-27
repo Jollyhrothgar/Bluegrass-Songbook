@@ -1,6 +1,9 @@
 {meta: title She's A Lady Down On Love}
 {meta: artist Alabama}
 {meta: composer Randy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file shesaladydownonlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's her first night on the town  since she was just [Em]18 
@@ -38,3 +41,7 @@ She needs [Em]somebody  to [F]gently pick her [C]up
 [Am]She's got her [Em]freedom  but she'd rather [F]be [C]bound 
 To a [F]man who would love her  [G7]and never let her [C]down
 {end_of_verse}
+
+
+
+

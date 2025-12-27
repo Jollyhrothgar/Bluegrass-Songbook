@@ -1,6 +1,9 @@
 {meta: title Jealous Loving Heart}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb and Talmadge Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file jealouslovingheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't ever kiss no one but me
@@ -43,3 +46,10 @@ Just say you love me too dear
 [G]Don't ever kiss no one but me
 [D7]If you do dear you'll break my heart
 {end_of_verse}
+
+
+
+
+
+
+

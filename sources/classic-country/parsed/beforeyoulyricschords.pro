@@ -1,6 +1,9 @@
 {meta: title Before You}
 {meta: artist George Morgan}
 {meta: composer Lorene Mann}
+{meta: x_source classic-country}
+{meta: x_source_file beforeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Before you what did I [Am]do
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 Repeat
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title A Picture Of Your Mother}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file apictureofyourmotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My little girl and I lost [F]mamma just three years [C]ago
@@ -28,3 +31,6 @@ Then [F]write a million for the things that [C]she denied [G7]herself
 [C]Draw a rose the kind of which [F]there'll never be [C]another
 And [F]when you finish you [C]will have a [G7]picture of your [C]mother
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Darlin’ Brown Eyes}
 {meta: artist Ralph Stanley}
 {meta: composer Osburn Thorpe and Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file darlinbrowneyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The moon was shining last night
@@ -47,3 +50,9 @@ You’re my [G7]little darlin’ brown [C]eyes
 {start_of_verse: Verse 5}
 You’re my [G7]little darlin’ brown [C]eyes
 {end_of_verse}
+
+
+
+
+
+

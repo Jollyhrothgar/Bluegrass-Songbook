@@ -1,6 +1,9 @@
 {meta: title I Can't Get Over Missing You}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Hazel Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file icantgetovermissingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I miss some loving that I used to get from you
@@ -36,3 +39,7 @@ I miss your arms that used to hold me so tight
 [C]I wish you'd find us dreaming it really wasn't [F]true
 [C]I can't get [G7]over missing [C]you
 {end_of_verse}
+
+
+
+

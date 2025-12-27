@@ -1,6 +1,9 @@
 {meta: title When It's Roundup Time In Heaven}
 {meta: artist Cliff Carlisle}
 {meta: composer Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file whenitsrounduptimeinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh they tell me of a place and they [F]tell me of a [C]day
@@ -36,3 +39,7 @@ And [G7]our troubles on earth are [C]o’er
 All the friends that death has [D7]severed 
 Shall gather on that golden [G7]shore
 {end_of_verse}
+
+
+
+

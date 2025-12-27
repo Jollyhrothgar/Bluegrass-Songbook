@@ -1,6 +1,9 @@
 {meta: title I'd Rather Be Sorry}
 {meta: artist Ray Price}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file idratherbesorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you hurt me you won't be [G7]the first or the [C]last 
@@ -43,3 +46,8 @@ If I'm [C]right or I'm [D7]wrong loving [G7][G]you
 But I'd [C]rather be [D7]sorry for [G]something I've [C]done 
 Than for [G]something that [D7]I didn't [G]do
 {end_of_verse}
+
+
+
+
+

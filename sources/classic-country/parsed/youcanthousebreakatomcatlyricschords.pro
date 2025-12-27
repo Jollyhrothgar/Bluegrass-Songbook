@@ -1,6 +1,9 @@
 {meta: title You Can't Housebreak A Tom Cat}
 {meta: artist Cal Smith}
 {meta: composer Gary Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file youcanthousebreakatomcatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby you tried chaining me down from getting my kicks
@@ -47,3 +50,9 @@ You can't [C]housebreak a [G]tomcat with tom[D7]cattin' on his [G]mind
 {start_of_verse: Verse 5}
 You can't [C]housebreak a [G]tomcat with tom[D7]cattin' on his [G]mind
 {end_of_verse}
+
+
+
+
+
+

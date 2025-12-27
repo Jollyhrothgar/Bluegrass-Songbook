@@ -1,6 +1,9 @@
 {meta: title Burnin' the Roadhouse Down}
 {meta: artist Steve Wariner with Garth Brooks}
 {meta: composer Rick Carnes and Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file burnintheroadhousedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the crowd is getting restless
@@ -64,3 +67,11 @@ When [C]Sunday rolls around
 But [G]that's all right it's [E7]Saturday night
 And we're [G]burnin' the [D7]roadhouse [G]down
 {end_of_verse}
+
+
+
+
+
+
+
+

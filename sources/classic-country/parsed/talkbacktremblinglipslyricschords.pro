@@ -1,6 +1,9 @@
 {meta: title Talk Back Trembling Lips}
 {meta: artist George Jones}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file talkbacktremblinglipslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Talk back trembling lips shaky legs don't just stand [G]there
@@ -36,3 +39,7 @@ I pretend it couldn't matter [D7]less
 [C]Talk back trembling lips burning eyes don't start [G]crying
 [D7]Heart don't let her know that you're [C]break-ing [D7]in [G]two  
 {end_of_verse}
+
+
+
+

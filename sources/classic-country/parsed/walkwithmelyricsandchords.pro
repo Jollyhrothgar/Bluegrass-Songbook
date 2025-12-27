@@ -1,6 +1,9 @@
 {meta: title Walk With Me}
 {meta: artist Randy Travis}
 {meta: composer Les Bohan and Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file walkwithmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walk with me through the [F]darkness
@@ -55,3 +58,10 @@ Walk with [C]me  [G7]until I reach the [C]light
 Walk with [Am]me through the [F]darkness
 Walk with [C]me  [G7]until I reach the [C]light
 {end_of_verse}
+
+
+
+
+
+
+

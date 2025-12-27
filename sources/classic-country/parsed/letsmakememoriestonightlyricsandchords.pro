@@ -1,6 +1,9 @@
 {meta: title Let's Make Memories Tonight}
 {meta: artist Billy Walker}
 {meta: composer Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file letsmakememoriestonightlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This is our last night [D7]together
@@ -29,3 +32,6 @@
 [G7]Then we’ll make this night last [C]forever
 [G]Darling let’s make [D7]memories [G]tonight
 {end_of_verse}
+
+
+

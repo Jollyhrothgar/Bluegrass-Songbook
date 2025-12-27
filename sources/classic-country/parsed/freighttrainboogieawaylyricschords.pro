@@ -1,6 +1,9 @@
 {meta: title Freight Train Boogie}
 {meta: artist Willie Nelson}
 {meta: composer Doc Watson}
+{meta: x_source classic-country}
+{meta: x_source_file freighttrainboogieawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Casey Jones he was a mighty man
@@ -58,3 +61,16 @@ The kind of music he could understand
 {start_of_verse: Verse 2}
 But now he's resting in the promised land
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

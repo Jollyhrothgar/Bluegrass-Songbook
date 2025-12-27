@@ -1,6 +1,9 @@
 {meta: title Leona}
 {meta: artist Stonewall Jackson}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file leonalyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Leona Leona you tell [F]him you're [C]through
@@ -29,3 +32,6 @@
 [C]For me there's no difference I've [F]known for so [C]long
 [F]That some day you'd [C]leave me and [G7]now you are [C]gone
 {end_of_verse}
+
+
+

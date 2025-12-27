@@ -1,6 +1,9 @@
 {meta: title Won't You Come On Back}
 {meta: artist Fats Domino}
 {meta: composer Antoine Domino, Tim Gillis, Marion Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file wontyoucomeonbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You said you was going away I said I didn't mind
@@ -47,3 +50,10 @@ So won't you come on back baby please come back
 [C]Baby come on home  I'm all [G]alone
 [D7]I'm all alone  I'm all [G]alone
 {end_of_verse}
+
+
+
+
+
+
+

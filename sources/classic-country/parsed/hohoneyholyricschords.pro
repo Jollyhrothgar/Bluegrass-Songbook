@@ -1,6 +1,9 @@
 {meta: title Ho Honey Ho}
 {meta: artist Red Allen}
 {meta: composer Bob Osborne and Tommy Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file hohoneyholyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Apples in the summer time
@@ -43,3 +46,8 @@ Going when I'm gone
 See my Candy darling
 [F]Ho honey [C]ho
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Can't Live That Fast}
 {meta: artist Lefty Frizzell}
 {meta: composer Joel Johnson and Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file justcantlivethatfastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey I was out last night started a fight
@@ -36,3 +39,7 @@ Noon the next day before I come in
 And the morning never bothered me after the night [G7]before
 But I [C]just can't live that [G7]fast any[C]more
 {end_of_verse}
+
+
+
+

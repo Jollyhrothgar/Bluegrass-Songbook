@@ -1,5 +1,8 @@
 {meta: title A Long Time Ago}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file alongtimeagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You used to [D7]hold me you used to kiss me a long long time [G]ago
@@ -33,3 +36,8 @@ A long long time [G]ago
 As we're introduced again you said that we were old friends
 But you [D7]used to hold me you used to kiss me a long long time [G]ago
 {end_of_verse}
+
+
+
+
+

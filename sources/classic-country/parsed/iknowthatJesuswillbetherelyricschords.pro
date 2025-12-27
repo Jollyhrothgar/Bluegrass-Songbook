@@ -1,6 +1,9 @@
 {meta: title I Know That Jesus Will Be There}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Cecil Harrelson and Linda G. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file iknowthatJesuswillbetherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my body [F]breathes its [C]last breath
@@ -36,3 +39,7 @@ For I [D7]know that they will bring me to the [G]right hand of God's [G7]throne
 The [C]path was long and [C7]narrow but each [F]step I took with care
 When life's [G7]troubles are over I know that Jesus will be [C]there
 {end_of_verse}
+
+
+
+

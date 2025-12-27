@@ -1,5 +1,8 @@
 {meta: title Love Don't Hurt Every Time}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file lovedonthurteverytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love don't [D7]hurt every [G]time
@@ -26,3 +29,6 @@ So [C]don't turn [B7]away from these [Em]arms of [A7]mine
 So [C]don't turn [B7]away from these [Em]arms of [A7]mine
 [C]Love [Am]don't [D7]hurt every [G]time
 {end_of_verse}
+
+
+

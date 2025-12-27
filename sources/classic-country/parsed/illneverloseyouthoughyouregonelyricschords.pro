@@ -1,5 +1,8 @@
 {meta: title I'll Never Lose You Though You're Gone}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file illneverloseyouthoughyouregonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You took away the sunshine when you left me
@@ -35,3 +38,7 @@ What you’ve done to me is more than [G7]wrong
 [C]Someday you should [C7]see and [F]need to call on [C]me
 You know I’ll never [G7]lose you though you’re [C]gone
 {end_of_verse}
+
+
+
+

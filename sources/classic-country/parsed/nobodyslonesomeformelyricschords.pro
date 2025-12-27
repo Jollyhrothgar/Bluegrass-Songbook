@@ -1,5 +1,8 @@
 {meta: title Nobody's Lonesome For Me}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file nobodyslonesomeformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody's lonesome for somebody else
@@ -68,3 +71,14 @@ It [D7]looks to me like I been [A7]cheated out of my [D7]rib
 [G]Everybody's lonesome for somebody else
 [D7]No-bod-o-dy's lonesome for [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

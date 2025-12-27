@@ -1,6 +1,9 @@
 {meta: title Where No Cabins Fall}
 {meta: artist Rhonda Vincent}
 {meta: composer Nolan Jeffress}
+{meta: x_source classic-country}
+{meta: x_source_file wherenocabinsfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As my mind wanders back to the quaint little shack
@@ -57,3 +60,13 @@ We would [F]praise the redeemer on [C]high
 {start_of_verse: Verse 10}
 In that land where no [G7]cabins [C]fall
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

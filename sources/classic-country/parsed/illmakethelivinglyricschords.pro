@@ -1,6 +1,9 @@
 {meta: title I'll Make The Living}
 {meta: artist Jim Ed Brown}
 {meta: composer Carl Belew and Van Givens}
+{meta: x_source classic-country}
+{meta: x_source_file illmakethelivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey I think that it's [F]just about time
@@ -32,3 +35,7 @@ So [C]let's stop this fussin' and [F]do some forgivin'
 {start_of_verse: Verse 5}
 [G7]I'll make the living if you'll make the living worth[C]while
 {end_of_verse}
+
+
+
+

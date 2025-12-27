@@ -1,6 +1,9 @@
 {meta: title Old Photographs}
 {meta: artist Charley Pride}
 {meta: composer Al Urban}
+{meta: x_source classic-country}
+{meta: x_source_file oldphotographslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here is one  that we took one Sunday [F]afternoon 
@@ -33,3 +36,7 @@ But [G7]old photographs sure get to [C]me
 {start_of_verse: Verse 4}
 Yes [G7]old photographs sure get to [C]me
 {end_of_verse}
+
+
+
+

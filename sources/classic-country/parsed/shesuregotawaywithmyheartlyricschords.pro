@@ -1,6 +1,9 @@
 {meta: title She Sure Got Away With My Heart}
 {meta: artist John Anderson}
 {meta: composer Walt Aldridge and Tom Brasfield}
+{meta: x_source classic-country}
+{meta: x_source_file shesuregotawaywithmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]She's got a [G]way with walkin'[Em]    [Am]she's got a [G]way with talkin' [Em]
@@ -34,3 +37,7 @@ She [D7]makes me so doggone proud
 The girl [Am]sure got [D7]away with my [G]heart 
 The girl [Am]sure got [D7]away with my [G]heart
 {end_of_verse}
+
+
+
+

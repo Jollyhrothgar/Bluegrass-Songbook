@@ -1,6 +1,9 @@
 {meta: title When I'm Gone You'll Soon Forget}
 {meta: artist Gene Autry}
 {meta: composer James Edward Haley}
+{meta: x_source classic-country}
+{meta: x_source_file whenimgoneyoullsoonforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I'm gone you'll soon forget me
@@ -32,3 +35,7 @@ You regret the day you met me
 [F]I will leave you now forever
 [G7]When I'm gone you'll soon [C]forget
 {end_of_verse}
+
+
+
+

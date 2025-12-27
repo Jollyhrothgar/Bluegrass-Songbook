@@ -1,6 +1,9 @@
 {meta: title Tall Pines}
 {meta: artist Laurie Lewis}
 {meta: composer Damon Black}
+{meta: x_source classic-country}
+{meta: x_source_file tallpineslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once in my youth I stood [F]on a [C]mountain
@@ -58,3 +61,10 @@ The farther I walked
 [C]Tall pines tall [F]pines
 [C]I've come [G7]home to sleep beneath [F]your [C][G7]pines
 {end_of_verse}
+
+
+
+
+
+
+

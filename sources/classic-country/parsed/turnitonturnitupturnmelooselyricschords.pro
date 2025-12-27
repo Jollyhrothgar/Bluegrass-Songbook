@@ -1,6 +1,9 @@
 {meta: title Turn It On Turn It Up Turn Me Loose}
 {meta: artist Dwight Yoakam}
 {meta: composer Wayland Patton and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file turnitonturnitupturnmelooselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm back again for [G7]another night
@@ -43,3 +46,8 @@ Hey [C]Mister turn it on turn it [G7]up turn me [C]loose
 {start_of_verse: Verse 4}
 Hey Mister turn it on turn it [G7]up turn me [C]loose
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Mama Sold Roses}
 {meta: artist Gene Watson}
 {meta: composer Dallas Harms}
+{meta: x_source classic-country}
+{meta: x_source_file mamasoldroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mama sold roses in the [F]year [C]'49
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [F]Buy one for the [C]lady  [G7]they only cost a [C]dime
 {end_of_verse}
+
+
+
+
+

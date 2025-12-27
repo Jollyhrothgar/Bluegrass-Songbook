@@ -1,6 +1,9 @@
 {meta: title A Dozen More Like You}
 {meta: artist Charlie Walker}
 {meta: composer Don Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file adozenmorelikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -38,3 +41,7 @@ But I [D7]never do get used to being [C]always sick at [G]heart
 I wouldn’t take a million [C]dollars for the thread of [G]love I’m hanging to
 But I wouldn’t give a nickel for a dozen [D7]more just like [G]you
 {end_of_verse}
+
+
+
+

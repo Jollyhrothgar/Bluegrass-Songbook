@@ -1,5 +1,8 @@
 {meta: title I Sleep With Her Memory Every Night}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file isleepwithhermemoryeverynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Me and little Martha  is [C]all that's left at [G]home
@@ -19,3 +22,5 @@ Yes I sleep with her [D7]memory every [G]night
 That baby knows when daddy's sad so [C]she hugs me extra [G]tight
 Yes I sleep with her [D7]memory every [G]night
 {end_of_verse}
+
+

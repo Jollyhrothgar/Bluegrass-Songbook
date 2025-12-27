@@ -1,6 +1,9 @@
 {meta: title Enough Of A Woman}
 {meta: artist Tammy Wynette}
 {meta: composer Leon Ashley and Margie Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file enoughofawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When he needs [F]arms to hold him  mine [G7]are always [C]there
@@ -20,3 +23,5 @@
 [C]I understand him like a mother and love him like a [F]lover
 [C]I [F]wanna be    [G7]enough of a woman to [C]please [F]my [G7]man
 {end_of_verse}
+
+

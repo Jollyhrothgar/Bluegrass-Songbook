@@ -1,6 +1,9 @@
 {meta: title I'm A Stranger Here}
 {meta: artist Mac Wiseman}
 {meta: composer Brownie McGhee, Sonny Terry,}
+{meta: x_source classic-country}
+{meta: x_source_file imastrangerherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm traveling down life's sorrowful pathway
@@ -43,3 +46,8 @@ Traveling [G7]through this world [C]alone
 I have no [F]promise of [C]tomorrow
 No place on [G7]earth to call my [C]home 
 {end_of_verse}
+
+
+
+
+

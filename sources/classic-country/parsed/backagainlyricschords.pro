@@ -1,6 +1,9 @@
 {meta: title Back Again}
 {meta: artist George Morgan}
 {meta: composer Wayne P. Walker and Jay Coleman}
+{meta: x_source classic-country}
+{meta: x_source_file backagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We started out together chasing dreams of things to [F]be
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]I'll hear a knock upon the door and you'll be back [C]again
 {end_of_verse}
+
+
+
+

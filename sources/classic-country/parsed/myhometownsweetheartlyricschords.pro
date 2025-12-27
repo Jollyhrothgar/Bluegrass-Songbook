@@ -1,6 +1,9 @@
 {meta: title My Hometown Sweetheart}
 {meta: artist Eddy Arnold}
 {meta: composer Sylvia Dee and Arthur Kent}
+{meta: x_source classic-country}
+{meta: x_source_file myhometownsweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](He's going [C]home yes he's going back)
@@ -37,3 +40,7 @@ I have missed her [G7]cherry lips cherry smile
 [C]Missed her kiss [A7]all the while
 [D7]Been as lonesome as can [Dm]be
 {end_of_verse}
+
+
+
+

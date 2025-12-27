@@ -1,6 +1,9 @@
 {meta: title Barbara Don't Let Me Be the Last to Know}
 {meta: artist Mel Street}
 {meta: composer Bob McDill and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file barbaradontletmebethelasttoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Barbara put your coffee down I need to [G7]talk to [C]you
@@ -33,3 +36,7 @@ So don't let me [D7]be the last to [G]know
 {start_of_verse: Verse 4}
 Please don't let me [D7]be the last to [G]know
 {end_of_verse}
+
+
+
+

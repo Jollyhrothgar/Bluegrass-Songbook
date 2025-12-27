@@ -1,6 +1,9 @@
 {meta: title Alabama Clay}
 {meta: artist Garth Brooks}
 {meta: composer Ronny Scaife and Larry Cordle}
+{meta: x_source classic-country}
+{meta: x_source_file alabamaclaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]First time he [G7]saw the ground get [Am]busted [C]
@@ -48,3 +51,9 @@ repeat last verse
 {start_of_verse: Verse 7}
 His neck is [F]red as Alabama [C]clay
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Don't Mind Goin' Under}
 {meta: artist Charlie Walker}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file idontmindgoinunderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess you heard about my fling with [G7]Ruby by now
@@ -33,3 +36,7 @@ I [G7]don't mind goin' under if it'll get me over [C]you
 {start_of_verse: Verse 4}
 No I [G7]don't mind goin' under if it'll get me over [C]you
 {end_of_verse}
+
+
+
+

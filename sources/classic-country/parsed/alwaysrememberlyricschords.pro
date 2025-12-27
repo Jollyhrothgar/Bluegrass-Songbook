@@ -1,6 +1,9 @@
 {meta: title Always Remember}
 {meta: artist Bill Anderson}
 {meta: composer Jerry Bradley and Patsy Lawley}
+{meta: x_source classic-country}
+{meta: x_source_file alwaysrememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Always remember [F]I [Am]love [Dm]you
@@ -34,3 +37,7 @@
 [C]So always remember [F]I [Am]love [Dm]you
 [F]I [Em]love [Dm]you [G7]just [C]you
 {end_of_verse}
+
+
+
+

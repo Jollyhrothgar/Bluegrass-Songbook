@@ -1,6 +1,9 @@
 {meta: title I Guess That Comes From Being Poor}
 {meta: artist Norma Jean}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file iguessthatcomesfrombeingpoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I still get a tear in my [C]eye
@@ -43,3 +46,8 @@ A welcome mat is always at my [D7]door
 But [C]I give all I can and I'll give more
 I [D7]guess that comes from being [G]poor
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Gone (Like)}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file gonelikelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's taken to [C]walkin'  alone in [G]evening
@@ -46,3 +49,9 @@ Gone like the [D7]love that  they [C]once gave so [G]free[G7]
 {start_of_verse: Verse 6}
 [G]Gone like the [D7]love that  they [C]once gave so [G]free
 {end_of_verse}
+
+
+
+
+
+

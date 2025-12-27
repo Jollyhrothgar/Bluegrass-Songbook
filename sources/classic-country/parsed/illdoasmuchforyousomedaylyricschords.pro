@@ -1,6 +1,9 @@
 {meta: title I'll Do As Much For You Someday}
 {meta: artist Slim Whitman}
 {meta: composer Steve Nelson and Ed G. Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file illdoasmuchforyousomedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Will you try and see my old sweetheart [C]who lives across the way
@@ -29,3 +32,6 @@ If [A7]she would only listen I'd [D7]prove that someone lied
 Tell [G]her she's my one and only one it's [C]always been that way
 [D7]I'll do as much for you some[G]day
 {end_of_verse}
+
+
+

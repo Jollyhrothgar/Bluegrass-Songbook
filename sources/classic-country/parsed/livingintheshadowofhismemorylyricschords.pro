@@ -1,6 +1,9 @@
 {meta: title Living In The Shadow Of His Memory}
 {meta: artist Webb Pierce}
 {meta: composer Audrey Grisham, Sylvia Fisher, Leon Miller}
+{meta: x_source classic-country}
+{meta: x_source_file livingintheshadowofhismemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The one you love has [F]gone to e[C]ternity
@@ -35,3 +38,7 @@ But you keep [G]living in the [G7]shadow of his [C]memory
 {start_of_verse: Verse 5}
 Yes you keep [G]living in the [G7]shadow of his [C]memory
 {end_of_verse}
+
+
+
+

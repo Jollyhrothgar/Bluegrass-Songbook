@@ -1,6 +1,9 @@
 {meta: title The Air Conditioner Song}
 {meta: artist Bobby Bare}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file theairconditionersonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the sound of the thing is not a ring
@@ -29,3 +32,6 @@ Of [G7]sweethearts that I never [C]saw
 Who [F]sang You Are My [C]Sunshine
 In [D7]Newport [G7]Arkan[C]sas
 {end_of_verse}
+
+
+

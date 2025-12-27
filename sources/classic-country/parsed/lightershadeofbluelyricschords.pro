@@ -1,6 +1,9 @@
 {meta: title Lighter Shade Of Blue}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file lightershadeofbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've walked out so many times
@@ -28,3 +31,5 @@ Could it [A7]be a sign I'm gettin' over [D7]you
 [C]You'll come back and find me gone
 [D7]Each time I turn a lighter shade of [G]blue[C]  [D7]   [G]
 {end_of_verse}
+
+

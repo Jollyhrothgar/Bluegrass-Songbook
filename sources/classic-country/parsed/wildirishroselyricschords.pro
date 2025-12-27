@@ -1,6 +1,9 @@
 {meta: title Wild Irish Rose}
 {meta: artist George Jones}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file wildirishroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They sent him to Asia to [C]fight in a [G]war
@@ -43,3 +46,8 @@ But his [C]soul's in a place [G]where a real hero [D7]goes
 Now [G]he's got something [B7]better much [Em]better God [C]knows
 Than a [G]half empty [Em]bottle of [D7]Wild Irish [G][C]R-ose
 {end_of_verse}
+
+
+
+
+

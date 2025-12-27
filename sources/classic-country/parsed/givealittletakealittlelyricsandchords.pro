@@ -1,5 +1,8 @@
 {meta: title Give A Little Take A Little}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file givealittletakealittlelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Give a little take a little take a little kiss from [D7]me
@@ -32,3 +35,6 @@
 [G]So come into my arms let's share each other's charms
 [D7]Let's give a little take a little [G]love
 {end_of_verse}
+
+
+

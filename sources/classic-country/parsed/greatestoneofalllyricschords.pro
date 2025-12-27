@@ -1,6 +1,9 @@
 {meta: title Greatest One Of All}
 {meta: artist Gene Pitney}
 {meta: composer George Riddle}
+{meta: x_source classic-country}
+{meta: x_source_file greatestoneofalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Although the heartaches one can know in a [F]lifetime
@@ -29,3 +32,6 @@ Was a [D7]guilt from you reminding me you're [G7]gone
 You must [C]surely be the world's champion heart [F]breaker
 Cause [G7]you left me the greatest one of [C]all
 {end_of_verse}
+
+
+

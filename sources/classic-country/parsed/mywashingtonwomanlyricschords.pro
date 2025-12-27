@@ -1,6 +1,9 @@
 {meta: title My Washington Woman}
 {meta: artist Kenny Rogers}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file mywashingtonwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The wages of an unskilled [F]working man [G7]never paid enough
@@ -38,3 +41,7 @@ My [C]Washington woman [F]sends me a letter every [G7]once in a while
 All at [C]once the room grows [F]cold with a [C]feeling of jealou[F]sy
 And there's a [C]silence between my [G7]Arkansas woman and [C]me
 {end_of_verse}
+
+
+
+

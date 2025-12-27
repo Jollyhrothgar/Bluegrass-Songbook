@@ -1,6 +1,9 @@
 {meta: title Such a Night}
 {meta: artist Elvis Presley}
 {meta: composer Lincoln Chase}
+{meta: x_source classic-country}
+{meta: x_source_file suchanightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was a night oo oo what a night
@@ -66,3 +69,10 @@ Yes [F]before that dawn and [G7]before that dawn
 Oo oo oo oo oo oo oo oo oo oo
 Such a [C]night
 {end_of_verse}
+
+
+
+
+
+
+

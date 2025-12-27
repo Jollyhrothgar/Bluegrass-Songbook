@@ -1,6 +1,9 @@
 {meta: title Leave Me Alone With The Blues}
 {meta: artist Hank Williams}
 {meta: composer Joe Pope}
+{meta: x_source classic-country}
+{meta: x_source_file leavemealonewiththeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Better pack up your suitcase and [F]leave in a [C]hurry
@@ -43,3 +46,8 @@ For I [F]know that you'll never be [C]true
 If you can't treat me right then get [F]out of my [C]life
 Go and leave me [G7]alone with the [C]blues
 {end_of_verse}
+
+
+
+
+

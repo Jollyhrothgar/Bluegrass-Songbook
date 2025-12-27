@@ -1,6 +1,9 @@
 {meta: title Ain't Love Good}
 {meta: artist Jean Shepard}
 {meta: composer Ben Peters and Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file aintlovegoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't love good ain't love so good for you
@@ -43,3 +46,8 @@ It can [F]warm you on the coldest [C]night
 You opened up my eyes and you made me rea[Am]lize
 Just how [C]good love [G7]is ain't love [F]goo[C]d
 {end_of_verse}
+
+
+
+
+

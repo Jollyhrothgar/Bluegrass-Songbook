@@ -1,6 +1,9 @@
 {meta: title So Let's Rock}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file soletsrocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was a baby momma rocked me in my cradle
@@ -56,3 +59,12 @@ Let’s [F]roll roll keep that rolling [C]rhythm
 I’ve been rocking and rolling for a long [G7]long time
 And I [F]still love to rock and [C]roll
 {end_of_verse}
+
+
+
+
+
+
+
+
+

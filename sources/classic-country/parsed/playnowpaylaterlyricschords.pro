@@ -1,6 +1,9 @@
 {meta: title Play Now Pay Later}
 {meta: artist Faron Young}
 {meta: composer Clyde Pitts, Len Pitts, Cile Davis}
+{meta: x_source classic-country}
+{meta: x_source_file playnowpaylaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another night has found me on the [G7]road to wrong again
@@ -29,3 +32,6 @@ My heart begs me to turn the other [C]way
 Play now [G7]pay later
 Is the [F]game that I am [G7]playin' worth the price I'll have to [C]pay
 {end_of_verse}
+
+
+

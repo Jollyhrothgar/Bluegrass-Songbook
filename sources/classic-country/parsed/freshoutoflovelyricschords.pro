@@ -1,6 +1,9 @@
 {meta: title Fresh Out Of Love}
 {meta: artist Wynn Stewart}
 {meta: composer Bill Brown and Harry Cunningham}
+{meta: x_source classic-country}
+{meta: x_source_file freshoutoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes I can walk with you and even talk with [G7]you
@@ -28,3 +31,6 @@
 {start_of_verse: Verse 3}
 [A7]Yes I'm just [D7]blue enough [G7]I'm just fresh out of [C]love
 {end_of_verse}
+
+
+

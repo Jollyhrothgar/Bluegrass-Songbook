@@ -1,6 +1,9 @@
 {meta: title Sky Full Of Angels}
 {meta: artist Reba McEntire}
 {meta: composer Burton Collins, Clay Mills, Lisa Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file skyfullofangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Preacher man talking about the end of time
@@ -56,3 +59,13 @@ I've got a sky full of angels watching [F]over [C]me
 I ain't afraid of nothing because I believe
 I've got a sky full of angels watching [F]over [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

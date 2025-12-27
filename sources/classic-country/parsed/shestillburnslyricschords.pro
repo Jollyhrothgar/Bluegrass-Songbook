@@ -1,6 +1,9 @@
 {meta: title She Still Burns}
 {meta: artist Mel Tillis}
 {meta: composer Sam Weedman}
+{meta: x_source classic-country}
+{meta: x_source_file shestillburnslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She said goodbye to thirty  [C]some years ago
@@ -35,3 +38,7 @@ How does a [G]woman [D7]now a-[Em]days find the [G]time to [D7]burn all [G]night
 {start_of_verse: Verse 4}
 How does a woman [D7]now a-[Em]days find the [G]time to [D7]burn all [G]night
 {end_of_verse}
+
+
+
+

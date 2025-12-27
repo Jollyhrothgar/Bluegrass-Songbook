@@ -1,6 +1,9 @@
 {meta: title You Gotta Dig A Little Deeper}
 {meta: artist Doyle Lawson}
 {meta: composer Carl H. Caldwell and Barry M. Scott}
+{meta: x_source classic-country}
+{meta: x_source_file yougottadigalittledeeperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Weeeeeeeeeeell 
@@ -67,3 +70,11 @@ If you wanna keep her [D7]keep her satis[G]fied
 {start_of_verse: Verse 6}
 [C]Keep her [D7]satis[G]fied
 {end_of_verse}
+
+
+
+
+
+
+
+

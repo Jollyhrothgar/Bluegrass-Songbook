@@ -1,6 +1,9 @@
 {meta: title Touch The Morning}
 {meta: artist Don Gibson}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file touchthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take the time to touch the [F]morning
@@ -50,3 +53,9 @@ Whoa you'll wish you had [C]someday
 Take the time to touch the [F]morning
 [G7]Before it slips [C]away
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can’t Take Another Heartache}
 {meta: artist John Anderson}
 {meta: composer Roger Murrah and Scott Anders}
+{meta: x_source classic-country}
+{meta: x_source_file icanttakeanotherheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lips tell me she was lying
@@ -46,3 +49,9 @@ And I’m [G7]so afraid it’s [C]too late
 I can [F]feel the hurt it’s [C]starting
 I can’t [G7]take another [C]heartache
 {end_of_verse}
+
+
+
+
+
+

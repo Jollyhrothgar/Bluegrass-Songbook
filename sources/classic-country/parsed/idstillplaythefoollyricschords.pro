@@ -1,6 +1,9 @@
 {meta: title I'd Still Play The Fool}
 {meta: artist Conway Twitty}
 {meta: composer Ben Weisman and Edna Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file idstillplaythefoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though you told me lies and [Am]left when I [C]cried
@@ -27,3 +30,6 @@
 [G7]I'd still play the [C]fool [Am]to the bitter [C]end
 [Am]If I had it to do  [G7][D7]all over [C]again
 {end_of_verse}
+
+
+

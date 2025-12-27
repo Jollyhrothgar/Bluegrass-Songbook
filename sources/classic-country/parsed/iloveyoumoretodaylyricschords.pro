@@ -1,6 +1,9 @@
 {meta: title I Love You More Today}
 {meta: artist Cal Smith}
 {meta: composer L.E. White}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyoumoretodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love you more [C]today than he can from now [G]on
@@ -26,3 +29,5 @@
 [C]I love you more today than he can from now [G]on
 [C]I love you more today than he can from now [G]on
 {end_of_verse}
+
+

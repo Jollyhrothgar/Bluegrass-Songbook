@@ -1,6 +1,9 @@
 {meta: title I Thought I'd Heard It All}
 {meta: artist Ricky Van Shelton}
 {meta: composer Don Pfrimmer, Philip Douglas, Deryl Dodd}
+{meta: x_source classic-country}
+{meta: x_source_file ithoughtidhearditalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard you cry [C]yourself to sleep 
@@ -56,3 +59,10 @@ Well I thought I'd heard it [G]all
 Oh I [D7]realize the [Am]worst is yet to [D7]come 
 I [C]thought I'd heard it [G]all
 {end_of_verse}
+
+
+
+
+
+
+

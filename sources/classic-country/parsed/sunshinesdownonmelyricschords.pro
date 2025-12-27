@@ -1,6 +1,9 @@
 {meta: title Sun Shines Down On Me}
 {meta: artist Connie Smith}
 {meta: composer Larry Lee}
+{meta: x_source classic-country}
+{meta: x_source_file sunshinesdownonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes when I'm alone at [G7]night
@@ -54,3 +57,10 @@
 {start_of_verse: Verse 6}
 [Am]The sun shines down [D7]on [G]me
 {end_of_verse}
+
+
+
+
+
+
+

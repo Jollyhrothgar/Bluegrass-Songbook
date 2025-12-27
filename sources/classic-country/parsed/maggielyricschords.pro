@@ -1,5 +1,8 @@
 {meta: title Maggie}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file maggielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder today through the [F]hills Maggie
@@ -32,3 +35,7 @@ When [C]you and [G7]I were [C]young
 {start_of_verse: Verse 5}
 When you and [G7]I were [C]young
 {end_of_verse}
+
+
+
+

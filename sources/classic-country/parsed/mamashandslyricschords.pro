@@ -1,6 +1,9 @@
 {meta: title Mama's Hands}
 {meta: artist George Jones}
 {meta: composer Larry Kingston and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file mamashandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My daddy's hands held [F]tens and two's [G7]while mom's were holding [C]me
@@ -23,3 +26,5 @@ But her [F]voice is strong as she [C]thanks God  [D7]for the bygone [G7]days
 That everything I am [F]today I owe [G7]to mama's [C]hands 
 Everything I [F]am today I owe [G7]to mama's [C]hands
 {end_of_verse}
+
+

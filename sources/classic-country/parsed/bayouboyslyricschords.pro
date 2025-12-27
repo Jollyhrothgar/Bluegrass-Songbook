@@ -1,6 +1,9 @@
 {meta: title Bayou Boys}
 {meta: artist Eddy Raven}
 {meta: composer Eddy Raven, Troy Seals, Frank Myers}
+{meta: x_source classic-country}
+{meta: x_source_file bayouboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Passion in the backseat [D7]parked out in the cane
@@ -38,3 +41,7 @@ We [C]raised a lot of [G]hell we [D7]made a lot of [G]noise
 [C]Everybody [G]knew we were [D7]Bayou [G]boys
 [C]Everybody [G]knew we were [D7]Bayou [G]boys
 {end_of_verse}
+
+
+
+

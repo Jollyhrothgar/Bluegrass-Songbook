@@ -1,6 +1,9 @@
 {meta: title Life Goes On}
 {meta: artist Johnny Cash}
 {meta: composer Jack Clement and Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file lifegoesonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My baby left me [C]just the other [G]day
@@ -29,3 +32,6 @@
 [C]For after night there comes the dawn
 [G]Yes time [D7]goes by  and life goes [G]on
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Loaded With Love}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Henry Glover and Lucky Millinder}
+{meta: x_source classic-country}
+{meta: x_source_file loadedwithlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I stay so loaded with love when you're not around
@@ -29,3 +32,6 @@ So loaded with love I can't sleep at night
 Because it's [F]you my darling [C]I'm thinking [A7]of
 Who [D7]always keeps me [G7]loaded with [C]love
 {end_of_verse}
+
+
+

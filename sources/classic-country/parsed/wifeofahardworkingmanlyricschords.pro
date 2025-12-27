@@ -1,6 +1,9 @@
 {meta: title Wife Of A Hard Working Man}
 {meta: artist Jean Shepard}
 {meta: composer Steve Hale}
+{meta: x_source classic-country}
+{meta: x_source_file wifeofahardworkingmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We had less than a good start on the [C]day the rice was [G]thrown
@@ -20,3 +23,5 @@ I'm [G]glad that I'm the [C]woman of a hard workin' [G]man
 The warmest touch I've ever known was from his [C]two calloused hands
 I'm [G]glad that I'm the [C]woman of a hard hard workin' [G]man
 {end_of_verse}
+
+

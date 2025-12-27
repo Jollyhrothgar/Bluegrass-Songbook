@@ -1,6 +1,9 @@
 {meta: title For Better Or For Worse Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson, Jan Crutchfield, Moneen Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file forbetterorforworselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The wedding bells have [D7]barely stopped their [G]ringing
@@ -28,3 +31,6 @@ For better or for worse [D7]but not for [G]long
 {start_of_verse: Verse 4}
 For better or for worse [D7]but not for [G]long
 {end_of_verse}
+
+
+

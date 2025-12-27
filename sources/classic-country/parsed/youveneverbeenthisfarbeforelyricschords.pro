@@ -1,5 +1,8 @@
 {meta: title You've Never Been This Far Before}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file youveneverbeenthisfarbeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can almost hear the stillness as it [C]yields to the sounds
@@ -42,3 +45,8 @@ Love you [D7]more bum bum bum
 And I [G]hope that you'll believe me cause [D7]I know 
 You've never been this far [G]before bum bum bum
 {end_of_verse}
+
+
+
+
+

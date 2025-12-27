@@ -1,6 +1,9 @@
 {meta: title All By My Lonesome}
 {meta: artist Charley Pride}
 {meta: composer Terry Clayton and Billy Yates}
+{meta: x_source classic-country}
+{meta: x_source_file allbymylonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All by my lonesome heart broke and [C]then some
@@ -40,3 +43,8 @@ I'm next to [D7]no one all by my [G]lonesome
 {start_of_verse: Verse 4}
 I'm next to [D7]no one all by my [G]lonesome
 {end_of_verse}
+
+
+
+
+

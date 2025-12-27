@@ -1,6 +1,9 @@
 {meta: title Just A Girl I Used To Know}
 {meta: artist Charley Pride}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file justagirliusedtoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a [F]picture that I [C]carry 
@@ -30,3 +33,6 @@ I don't talk about the [C7]nights I [F]cried about her
 I say she's [C]just a [G7]girl I used to [C]know 
 Just a [G7]girl I used to [C]know
 {end_of_verse}
+
+
+

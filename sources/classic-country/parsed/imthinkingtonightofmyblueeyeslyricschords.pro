@@ -1,5 +1,8 @@
 {meta: title I'm Thinking Tonight Of My Blue Eyes}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file imthinkingtonightofmyblueeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm thinking tonight of my blues [C]eyes
@@ -35,3 +38,7 @@ Won't [D7]you come dear and shed just one [G]tear
 And say to the strangers around [C]you
 Of your [D7]heart you have broken last [G]year
 {end_of_verse}
+
+
+
+

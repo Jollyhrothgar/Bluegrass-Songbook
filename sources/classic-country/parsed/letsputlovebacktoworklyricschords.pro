@@ -1,6 +1,9 @@
 {meta: title Let's Put Love Back To Work}
 {meta: artist Ricky Skaggs}
 {meta: composer Larry Cordle and Mark Collie}
+{meta: x_source classic-country}
+{meta: x_source_file letsputlovebacktoworklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's put love back to work to heal the pain and [G7]hurt
@@ -42,3 +45,9 @@ Let's get back on the job
 [F]And see that life is all that it should [Dm]be
 [G7]Let's put love back to work and make it work for you and [C]me
 {end_of_verse}
+
+
+
+
+
+

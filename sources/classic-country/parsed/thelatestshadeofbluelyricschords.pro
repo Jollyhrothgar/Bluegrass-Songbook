@@ -1,6 +1,9 @@
 {meta: title The Latest Shade Of Blue}
 {meta: artist Connie Smith}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file thelatestshadeofbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just when it [D7]starts to get [G]better
@@ -41,3 +44,8 @@
 [C]Till I think of [D7]you and [C]change [G]into
 [D7]The latest shade of [G]blue
 {end_of_verse}
+
+
+
+
+

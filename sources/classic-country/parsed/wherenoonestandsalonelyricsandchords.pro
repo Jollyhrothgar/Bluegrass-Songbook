@@ -1,6 +1,9 @@
 {meta: title Where No One Stands Alone}
 {meta: artist Elvis Presley}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file wherenoonestandsalonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I stood in the [G7]night with my [C]head [F]bowed [C]low
@@ -22,3 +25,5 @@ From [G7]here to the great un[C]known [C7]
 [F]Take my [C]hand [G7]let me [F]stand where [C]no one [G7]stands a[C]lone
 [F]Take my [C]hand [G7]let me [F]stand where [C]no one [G7]stands a[C]lone
 {end_of_verse}
+
+

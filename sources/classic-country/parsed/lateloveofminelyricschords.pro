@@ -1,5 +1,8 @@
 {meta: title Late Love Of Mine}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file lateloveofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The ceremony's [F]beginning  
@@ -39,3 +42,8 @@ The [C]late [G7]love of [C]mine
 {start_of_verse: Verse 5}
 [F]The late [G7]love of [F]min[C]e
 {end_of_verse}
+
+
+
+
+

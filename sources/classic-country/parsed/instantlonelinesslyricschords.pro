@@ -1,6 +1,9 @@
 {meta: title Instant Loneliness}
 {meta: artist Charlie Pride}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file instantlonelinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My watch says three A.M. I know she's waiting up again
@@ -47,3 +50,11 @@ In the hallway there's a toy and a picture of the baby
 {start_of_verse: Verse 8}
 [F]Yes this instant [G7]loneliness is hurting [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+

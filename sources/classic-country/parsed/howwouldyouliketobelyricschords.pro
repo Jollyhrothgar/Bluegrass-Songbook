@@ -1,6 +1,9 @@
 {meta: title How Would You Like To Be}
 {meta: artist Elvis Presley}
 {meta: composer Ben Raleigh and Mark Barkan}
+{meta: x_source classic-country}
+{meta: x_source_file howwouldyouliketobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How would you like to be a little [G7]circus clown
@@ -51,3 +54,9 @@ And you could dance with [G7]me every time I [C]call
 Oh [G7]ho  [C]tra la la la la la [G7]la 
 Oh ho ha [C]ha tra [G7]la la la la la [C]la
 {end_of_verse}
+
+
+
+
+
+

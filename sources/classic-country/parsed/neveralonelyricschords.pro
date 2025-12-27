@@ -1,6 +1,9 @@
 {meta: title Never Alone}
 {meta: artist Wilburn Brothers}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file neveralonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Never [G7]alone but always [C]lonely
@@ -27,3 +30,6 @@ I see your [C]face it's every [F]place we used to [C]go
 I'm never [G7]alone but always [C]lonely
 Never [G7]alone but always [C]lonely
 {end_of_verse}
+
+
+

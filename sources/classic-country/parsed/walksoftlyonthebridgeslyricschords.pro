@@ -1,6 +1,9 @@
 {meta: title Walk Softly On The Bridges}
 {meta: artist Tammy Wynette}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file walksoftlyonthebridgeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't be careless [F]with your [C]darling
@@ -22,3 +25,5 @@ When temptation [F]flirts and [C]whispers
 If you weaken [F]you'll be [C]cheating
 [F]On your [C]own heart [G7]like I did [C]mine
 {end_of_verse}
+
+

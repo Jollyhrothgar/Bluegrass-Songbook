@@ -1,6 +1,9 @@
 {meta: title Pursuing Happiness}
 {meta: artist Norma Jean}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file pursuinghappinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know that my surroundings aren't the [Dm]very best
@@ -33,3 +36,7 @@ I'm sinking fast but no one hears my [Dm]S O S
 {start_of_verse: Verse 5}
 [G7]I'm just pursuing happi[C]ness
 {end_of_verse}
+
+
+
+

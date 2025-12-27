@@ -1,6 +1,9 @@
 {meta: title Heavenly}
 {meta: artist Wynn Stewart}
 {meta: composer Chris Roberts, Earl Ball, Steve Stone}
+{meta: x_source classic-country}
+{meta: x_source_file heavenlylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't think you [F]were [G7]but now I know you [C]are
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [F]Being loved by [G7]you is so [C]heavenly
 {end_of_verse}
+
+
+
+

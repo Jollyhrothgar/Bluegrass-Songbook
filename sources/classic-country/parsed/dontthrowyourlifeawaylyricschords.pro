@@ -1,6 +1,9 @@
 {meta: title Don't Throw Your Life Away}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Billy Wallace}
+{meta: x_source classic-country}
+{meta: x_source_file dontthrowyourlifeawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say you'll never be my [G7]wife caused you've done wrong in [C]life
@@ -29,3 +32,6 @@ My [F]loving you I'm not sorry [G7]for
 If [C]your loves not meant for [G7]me than wrong I'll always [C]be
 Just let me love you don't [G7]throw your life [C]away
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Talk It All Over With Him}
 {meta: artist J.D. Crowe}
 {meta: composer John Neal}
+{meta: x_source classic-country}
+{meta: x_source_file talkitalloverwithhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna sit down and rest gently [C]lean on His [G]breast
@@ -43,3 +46,8 @@ I'll talk it all [A7]over with [D7]Him
 [G]I'll meet old Peter and Paul but the [C]best of it [G]all
 I'll talk it [D7]all over with [G]Him
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Who Am I To Say}
 {meta: artist The Statler Brothers}
 {meta: composer Kim Reid}
+{meta: x_source classic-country}
+{meta: x_source_file whoamitosaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wish I had a dollar [D7]for every time I was [C]unkind
@@ -34,3 +37,7 @@ She [C]might be in my [G]arms tonight  [D7]but who am I so [G]say
 Tag:
 She [C]should be in my [G]arms tonight  [D7]but who am I to [G]say
 {end_of_verse}
+
+
+
+

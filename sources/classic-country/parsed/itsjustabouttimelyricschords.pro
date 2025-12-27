@@ -1,5 +1,8 @@
 {meta: title It's Just About Time}
 {meta: artist The Kingsmen}
+{meta: x_source classic-country}
+{meta: x_source_file itsjustabouttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The signs of the times are all around
@@ -44,3 +47,8 @@ It's just about [Em]time to [D7]cross to the other [G]side
 {start_of_verse: Verse 4}
 It's just about [Em]time to [D7]cross to the other [G]side
 {end_of_verse}
+
+
+
+
+

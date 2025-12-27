@@ -1,6 +1,9 @@
 {meta: title Blue Melodies}
 {meta: artist George Strait}
 {meta: composer Keith Gattis and Wyatt Earp}
+{meta: x_source classic-country}
+{meta: x_source_file bluemelodieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I don't know [G]how [G7] to write you a [C]song
@@ -38,3 +41,8 @@ Then it's just a [G]sad song [D7] that's too sad to [Em]sing [C]
 {start_of_verse: Verse 6}
 [C]Oh it's just a [G]sad song [D7] that's too sad to [G]sing
 {end_of_verse}
+
+
+
+
+

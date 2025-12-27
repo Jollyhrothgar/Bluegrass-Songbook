@@ -1,6 +1,9 @@
 {meta: title It's The World Gone Crazy}
 {meta: artist Glen Campbell}
 {meta: composer Waylon Jennings and Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file itstheworldgonecrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's the world's gone crazy cotillion
@@ -56,3 +59,13 @@ So I'm singin' my song to the deaf man
 [C]It's the world's gone crazy cotillion
 [G7]The ladies are dancin' alone
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

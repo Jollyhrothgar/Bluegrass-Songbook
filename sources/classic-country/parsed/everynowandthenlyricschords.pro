@@ -1,6 +1,9 @@
 {meta: title Every Now And Then}
 {meta: artist Mel Tillis}
 {meta: composer Buddy Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file everynowandthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A list of things that I would do to [D7]get you back again
@@ -29,3 +32,6 @@ But I hope at least I [G7]get to see you [F]every now and then
 And I'd hate to think of [G7]going through life [F]never more to see
 The [G7]girl who was so close to me [C]before
 {end_of_verse}
+
+
+

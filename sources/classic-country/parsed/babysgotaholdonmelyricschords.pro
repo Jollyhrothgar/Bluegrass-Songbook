@@ -1,6 +1,9 @@
 {meta: title Baby's Got A Hold On Me}
 {meta: artist Nitty Gritty Dirt Band}
 {meta: composer Jeffrey Hanna, Robert Carpenter, Josh Leo}
+{meta: x_source classic-country}
+{meta: x_source_file babysgotaholdonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sitting on the front porch trying to keep still
@@ -49,3 +52,10 @@ There's a full moon shining on a Carolina night
 [G7]Got a hold on  got a hold on me
 [C]Got a hold on baby's got [G7]a hold on [C]me
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title My Mother Must Have Been A Girl Like You}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file mymothermusthavebeenagirllikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're so kind and understanding [A7]about everything I [D7]do
@@ -28,3 +31,6 @@
 [C]I know that God in heaven has a [A7]special place for [D7]you
 [G7]I know my mother must have been a girl like [C]you
 {end_of_verse}
+
+
+

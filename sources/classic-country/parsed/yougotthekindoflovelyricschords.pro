@@ -1,5 +1,8 @@
 {meta: title You Got The Kind Of Love}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file yougotthekindoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You got the kind of love that grabs a hold and [D7]just keeps hanging [G]on
@@ -32,3 +35,7 @@ You got the [G]kind of love that grabs a hold and [D7]just keeps hanging [G]on
 {start_of_verse: Verse 4}
 You got the kind of love that grabs a hold and [D7]just keeps hanging [G]on
 {end_of_verse}
+
+
+
+

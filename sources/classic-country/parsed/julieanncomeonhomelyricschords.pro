@@ -1,6 +1,9 @@
 {meta: title Julie Ann Come On Home}
 {meta: artist Doyle Lawson}
 {meta: composer Leroy Drumm and Pete Goble}
+{meta: x_source classic-country}
+{meta: x_source_file julieanncomeonhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Julie Anne what are you doing
@@ -66,3 +69,13 @@ Dress yourself in silk and satin
 But don't say you're gonna leave me
 [C]It's more than I can [G]bear
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

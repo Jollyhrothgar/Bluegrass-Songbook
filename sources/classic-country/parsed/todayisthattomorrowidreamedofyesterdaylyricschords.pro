@@ -1,6 +1,9 @@
 {meta: title Today Is That Tomorrow (I Dreamed Of Yesterday)}
 {meta: artist Lefty Frizzell}
 {meta: composer Joe Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file todayisthattomorrowidreamedofyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now [G7]today is that tomorrow that I dreamed of yester[C]day
@@ -29,3 +32,6 @@ It [F]hurts so to dream your [C]lover isn’t true
 I [F]dreamed you’d leave tomorrow and [C]go away to stay
 Now [G7]today is that tomorrow I dreamed of yester[C]day
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Don't Think Twice}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file dontthinktwicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you ever think of coming back [C]don't think twice
@@ -35,3 +38,7 @@ It didn't take my heart too long to [C]realize
 Cause the door is always open just [C]walk on through
 [G]There'll always be somebody [D7]waiting here for [G]you
 {end_of_verse}
+
+
+
+

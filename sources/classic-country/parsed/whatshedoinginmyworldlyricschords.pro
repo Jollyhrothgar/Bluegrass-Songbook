@@ -1,5 +1,8 @@
 {meta: title What's He Doing in My World}
 {meta: artist Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file whatshedoinginmyworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What's he doing in my world 
@@ -31,3 +34,6 @@ So if it's [C]true he's just a [D7]friend
 Explain those [G]kisses you gave [C]him
 And [D7]what's he doing in my [G]world
 {end_of_verse}
+
+
+

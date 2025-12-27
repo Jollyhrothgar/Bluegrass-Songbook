@@ -1,5 +1,8 @@
 {meta: title Don't Flirt With Me}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file dontflirtwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh don’t you flirt with me you little [C]mystery
@@ -26,3 +29,6 @@
 [G]Go hang your head in shame let me forget your [C]name
 [G]I know your little [D7]game don't flirt with [G]me
 {end_of_verse}
+
+
+

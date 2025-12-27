@@ -1,6 +1,9 @@
 {meta: title Open Up Your Heart}
 {meta: artist Roger Miller}
 {meta: composer Buddy Killen and Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file openupyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Open up your [C]heart 
@@ -22,3 +25,5 @@ Don't be [C]afraid
 After all what are we [C]after 
 [D7]Don't let it all pass you [G]by 
 {end_of_verse}
+
+

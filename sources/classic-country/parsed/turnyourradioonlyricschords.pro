@@ -1,5 +1,8 @@
 {meta: title Turn Your Radio On}
 {meta: artist the Statler Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file turnyourradioonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come and listen in [C]to a radio [G]station 
@@ -34,3 +37,6 @@ Turn your radio on heaven's glo-ry [D7]share
 Turn the lights down low and [G]listen to the Master's [C]radio
 Get in touch with God turn your [D7]radio [G]on
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Never Be Lonesome With You}
 {meta: artist Cal Smith}
 {meta: composer John Dillingham}
+{meta: x_source classic-country}
+{meta: x_source_file illneverbelonesomewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweetheart I love [D7]you I need [G]you I want [C]you
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [D7]I'll never be lonesome with [G]you
 {end_of_verse}
+
+
+

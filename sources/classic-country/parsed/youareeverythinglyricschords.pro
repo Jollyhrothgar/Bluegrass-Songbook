@@ -1,6 +1,9 @@
 {meta: title You Are Everything}
 {meta: artist Patty Loveless}
 {meta: composer Guy Clark and Keith Sykes}
+{meta: x_source classic-country}
+{meta: x_source_file youareeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You are so [D7]good to me 
@@ -34,3 +37,7 @@ Yes you are [D7]everything you are everything to [G]me
 {start_of_verse: Verse 5}
 Yes you are [D7]everything you are everything to [Dm]me [C]  [G]
 {end_of_verse}
+
+
+
+

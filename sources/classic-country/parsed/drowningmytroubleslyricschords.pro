@@ -1,6 +1,9 @@
 {meta: title Drowning My Troubles}
 {meta: artist Johnny Bush}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file drowningmytroubleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two eyes in a mirror [F]staring back at [C]me
@@ -27,3 +30,5 @@ But I'll [C]keep drowning my [A7]troubles
 Cause [D7]they're learning [G7]how to [C]swim
 Repeat last verse
 {end_of_verse}
+
+

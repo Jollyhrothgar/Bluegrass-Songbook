@@ -1,6 +1,9 @@
 {meta: title Just Like That}
 {meta: artist Tracy Lawrence}
 {meta: composer Cleo Anderson and Michael Brown}
+{meta: x_source classic-country}
+{meta: x_source_file justlikethatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I had a real good [D7]time just my buddies and [G]me
@@ -37,3 +40,7 @@ I ain't never had a feelin' like [D7]this just like [G]that
 {start_of_verse: Verse 5}
 Oh [C]no I ain't never had a feelin' like [D7]this just like [G]that
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Running Into Memories Of You}
 {meta: artist Lefty Frizzell}
 {meta: composer Mel Tillis, Wayne P. Walker, Benny Joy}
+{meta: x_source classic-country}
+{meta: x_source_file runningintomemoriesofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Funny I keep [F]runnin' [G7]funny I keep [F]runnin'
@@ -37,3 +40,8 @@ I thought of fools that whisper love [F]
 [G7]Funny I keep [F]runnin' [G7]funny I keep [F]runnin'
 [G7]Runnin' into memories of [C]you
 {end_of_verse}
+
+
+
+
+

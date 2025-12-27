@@ -1,6 +1,9 @@
 {meta: title Dasher With The Light Upon His Tail}
 {meta: artist Kitty Wells}
 {meta: composer Warner H. McPherson}
+{meta: x_source classic-country}
+{meta: x_source_file dasherwiththelightuponhistaillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did you ever wonder how Santa gets his light to [D7]see
@@ -37,3 +40,8 @@
 [C]Oh dash away dash away dash away dash away over hill and [G]dam
 [C]The reindeer laughs so merrily at [D7]Dasher with the light upon his [G]tail
 {end_of_verse}
+
+
+
+
+

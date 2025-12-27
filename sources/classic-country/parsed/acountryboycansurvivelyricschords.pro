@@ -1,5 +1,8 @@
 {meta: title A Country Boy Can Survive}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file acountryboycansurvivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The preacher man says its the [Dm]end of time
@@ -78,3 +81,12 @@ And a [C]country boy [Dm]can sur[G]vive
 [Dm]Country boy [C]can sur[G]vive
 [Dm]Country folks [C]can sur[G]vive
 {end_of_verse}
+
+
+
+
+
+
+
+
+

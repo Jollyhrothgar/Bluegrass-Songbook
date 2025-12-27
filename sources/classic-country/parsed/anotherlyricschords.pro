@@ -1,6 +1,9 @@
 {meta: title Another}
 {meta: artist Roy Drusky}
 {meta: composer Vic McAlpin and Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file anotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You didn't love me long [F]until the thrill was gone
@@ -22,3 +25,5 @@ Of loving you today and losing you [G7]tomorrow
 I'd [C]warned him but he called it jealou[F]sy 
 [G7]So let him be another and another and another just like [C]me
 {end_of_verse}
+
+

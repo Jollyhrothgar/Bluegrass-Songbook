@@ -1,5 +1,8 @@
 {meta: title Darkest Day}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file darkestdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling when you told [G7]me you were [C]leaving
@@ -28,3 +31,6 @@ It [D7]seems that my world is to an [G]end
 Oh [G]why don't that old [G7]sun shine [C]bright
 [G]Today's the darkest [D7]day of my [G]life
 {end_of_verse}
+
+
+

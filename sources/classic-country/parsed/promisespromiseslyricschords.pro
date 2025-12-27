@@ -1,6 +1,9 @@
 {meta: title Promises Promises}
 {meta: artist Norma Jean}
 {meta: composer Wiley Smith and Carlyle Hughey}
+{meta: x_source classic-country}
+{meta: x_source_file promisespromiseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've promised you would be true to me
@@ -49,3 +52,8 @@ That's all I ever get
 Promises promises [C]that's all I ever get
 That's all I ever get
 {end_of_verse}
+
+
+
+
+

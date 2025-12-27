@@ -1,5 +1,8 @@
 {meta: title Missing Her Is Easier This Way}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file missingheriseasierthiswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know they think I’m setting home [F]drowning in my [C]tears
@@ -29,3 +32,6 @@ But the [D7]future looks much brighter [G7]beneath this neon light
 [C]Missing her is [G7]easier this [C]way [C7]    [F]
 [C]Missing her is [G7]easier this [C]way
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Why Don't You Spend The Night}
 {meta: artist Ronnie Milsap}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file whydontyouspendthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How did it get so late where did the night [Am]go to
@@ -29,3 +32,6 @@ Why don't you spend the night somehow it seems so [C]right
 [G]It's such a long way home and you'd only be [C]alone
 [D7]Ah come on now why don't you spend the [G]night
 {end_of_verse}
+
+
+

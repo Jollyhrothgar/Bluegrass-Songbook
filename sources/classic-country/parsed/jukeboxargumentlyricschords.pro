@@ -1,6 +1,9 @@
 {meta: title Jukebox Argument}
 {meta: artist Mickey Gilley}
 {meta: composer Gary Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file jukeboxargumentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well my best friend and his woman
@@ -57,3 +60,10 @@ And he played [C]Cheating Heart and Lying Eyes
 And she played [G7]I’ll Get Over You
 And he played Born To [C]Lose
 {end_of_verse}
+
+
+
+
+
+
+

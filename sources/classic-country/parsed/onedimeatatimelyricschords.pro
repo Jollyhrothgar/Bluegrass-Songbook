@@ -1,6 +1,9 @@
 {meta: title One Dime At A Time}
 {meta: artist Ernest Tubb}
 {meta: composer Jerry Chesnut and Dottie Bruce}
+{meta: x_source classic-country}
+{meta: x_source_file onedimeatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My whole life saving's a two [C]dollar [G]bill 
@@ -29,3 +32,6 @@ Play that same old song about the love gone wrong till closing [D7]time
 Two dollars ought [G]to do me if you'll buy [C]the [G]wine
 And I put it in the jukebox a [D7]dime at a [G]time
 {end_of_verse}
+
+
+

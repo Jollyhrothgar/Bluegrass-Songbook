@@ -1,6 +1,9 @@
 {meta: title Love Is Burnin'}
 {meta: artist Brenda Lee}
 {meta: composer Donny Kees and Frank Myers}
+{meta: x_source classic-country}
+{meta: x_source_file loveisburninlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the morning that I met you baby I could feel the heat
@@ -47,3 +50,8 @@ Well [F]I mean what I'm saying I ain't blowin' no [C]smoke
 Ain't blowin' smoke
 This [G7]time love is burnin' [F]burnin' [G7]out of [C]control
 {end_of_verse}
+
+
+
+
+

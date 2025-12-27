@@ -1,6 +1,9 @@
 {meta: title Lonesome Night}
 {meta: artist Ricky Skaggs}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a [F]lonesome night I’m far from [C]home
@@ -40,3 +43,8 @@ She begged me not to leave her there
 {start_of_verse: Verse 4}
 [G7]She thinks I’ve [F]turned her [C]down
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tired of Losing You}
 {meta: artist Rhonda Vincent}
 {meta: composer Tom T. Hall and Dixie Hall}
+{meta: x_source classic-country}
+{meta: x_source_file tiredoflosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have this dream to dream I [C7]dream most [F]every night
@@ -33,3 +36,7 @@ I’m tired of [G7]losing you all over [C]again
 {start_of_verse: Verse 4}
 [F]I’m tired of [C]losing you [G7]all over [C]again 
 {end_of_verse}
+
+
+
+

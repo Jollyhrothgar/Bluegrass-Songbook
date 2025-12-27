@@ -1,6 +1,9 @@
 {meta: title That's Where I Want To Be}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare and Lance Guynes}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhereiwanttobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I saw you last night with [F]your new love
@@ -27,3 +30,6 @@ Oh [F]every time you start your heart to [C]missing
 [G7]He’s just where I want to [C]be
 [F]He’s just where [G7]I want to [C]be
 {end_of_verse}
+
+
+

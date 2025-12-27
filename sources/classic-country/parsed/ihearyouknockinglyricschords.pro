@@ -1,6 +1,9 @@
 {meta: title I Hear You Knocking}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Pearl King}
+{meta: x_source classic-country}
+{meta: x_source_file ihearyouknockinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You went away and left me a long time ago
@@ -37,3 +40,8 @@ You wouldn't be going from door to door
 [F]I hear you knocking
 [C]Go back where you been
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Nowhere To Run}
 {meta: artist Johnny Paycheck}
 {meta: composer F. Myers}
+{meta: x_source classic-country}
+{meta: x_source_file nowheretorunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All around is the [Am]sound of tender [F]hearts [G7]breaking
@@ -33,3 +36,7 @@ I’d [F]like to hide away from [G7]life but there’s nowhere to [C]run
 {start_of_verse: Verse 5}
 I’d [F]like to hide away from [G7]life but there’s nowhere to [C]run
 {end_of_verse}
+
+
+
+

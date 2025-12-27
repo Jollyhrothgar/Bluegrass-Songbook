@@ -1,6 +1,9 @@
 {meta: title God put a rainbow in the Clouds}
 {meta: artist Chuck Wagon Gang}
 {meta: composer Andrew Jenkins and Irene Spain}
+{meta: x_source classic-country}
+{meta: x_source_file Godputarainbowinthecloudslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When God shut Noah in the grand old [C]ark
@@ -43,3 +46,8 @@
 [G7]Well it looked like the sun [C]wouldn't shine [G]anymore
 [D7]God put a rainbow in the [G]cloud
 {end_of_verse}
+
+
+
+
+

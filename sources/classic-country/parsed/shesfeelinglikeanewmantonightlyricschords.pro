@@ -1,6 +1,9 @@
 {meta: title She's Feeling Like A New Man Tonight}
 {meta: artist Billy Walker}
 {meta: composer Gene Dobbins, Rayburn Anthony, Tony Austin}
+{meta: x_source classic-country}
+{meta: x_source_file shesfeelinglikeanewmantonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's [G7]feeling like a new man tonight
@@ -35,3 +38,7 @@ She's [G7]feeling like a new man [C]tonight
 {start_of_verse: Verse 5}
 Yes she's [G7]feeling like a new man [C]tonight
 {end_of_verse}
+
+
+
+

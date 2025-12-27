@@ -1,6 +1,9 @@
 {meta: title A Bad Goodbye}
 {meta: artist Clint Black}
 {meta: composer Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file abadgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been bound [C]to leave you we've [D7]known that for [C]awhile
@@ -42,3 +45,7 @@ Where we [Em]are and one more [A7]try
 And any [Am]way I look I've [Em]only seen that 
 I can't [Am]leave you [C]with a [D7]bad good[G]bye
 {end_of_verse}
+
+
+
+

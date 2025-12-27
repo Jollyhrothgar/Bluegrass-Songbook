@@ -1,6 +1,9 @@
 {meta: title You'll Never Know What You're Missin'}
 {meta: artist Ricky Nelson}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file youllneverknowwhatyouremissinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you ever wanted to steal a kiss have you ever wanted to [G7]try
@@ -43,3 +46,9 @@ Cause you'll [C]never know what you're [D7]missin' till you [G]try [C]till you [
 {start_of_verse: Verse 6}
 Cause you'll [C]never know what you're [D7]missin' till you [G]try [C]till you [G]try
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Milk Cow Blues}
 {meta: artist Bob Wills}
 {meta: composer Kokomo Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file milkcowblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I woke up this mornin' and I looked out doors
@@ -30,3 +33,6 @@ If you don't think I'm leavin' you can count the days I'm gone
 Cause you're gonna [C]need you're gonna need my help some [G]day
 Yeah you're [D7]going to be sorry [C]you treat me this [G]way
 {end_of_verse}
+
+
+

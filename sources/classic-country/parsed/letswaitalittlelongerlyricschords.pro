@@ -1,6 +1,9 @@
 {meta: title Let's Wait A Little Longer}
 {meta: artist Ernest Tubb}
 {meta: composer Billy Sherrill and Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file letswaitalittlelongerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can see you're not happy the way you've been actin'
@@ -47,3 +50,9 @@ So let's wait a little [G]longer then we'll [C]see
 {start_of_verse: Verse 7}
 Yes let's [F]wait a little [G]longer then we'll [C]see
 {end_of_verse}
+
+
+
+
+
+

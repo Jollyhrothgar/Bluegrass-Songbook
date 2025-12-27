@@ -1,6 +1,9 @@
 {meta: title Turning Away}
 {meta: artist Crystal Gayle}
 {meta: composer Tim Krekel}
+{meta: x_source classic-country}
+{meta: x_source_file turningawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]None of your friends come near you
@@ -51,3 +54,10 @@ Yeah see you [G]turnin' away turnin' away from [Em]love
 Yeah see you [G]turnin' away turnin' away from [Em]love
 Yeah see you [G]turnin' away turnin' away from [Em]love
 {end_of_verse}
+
+
+
+
+
+
+

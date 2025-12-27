@@ -1,6 +1,9 @@
 {meta: title Tempted}
 {meta: artist Marty Stuart}
 {meta: composer Marty Stuart and Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file temptedlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a girl trying to [C]steal my [D7]heart and I'm [G]tempted
@@ -34,3 +37,7 @@ Tempted and [D7]tried [G]deep down [C]inside
 Tempted and [D7]tried [G]deep down [C]inside
 [G]I can't [D7]deny I'm [G]tempted
 {end_of_verse}
+
+
+
+

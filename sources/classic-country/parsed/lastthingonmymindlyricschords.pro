@@ -1,6 +1,9 @@
 {meta: title Last Thing On My Mind}
 {meta: artist Dolly Parton}
 {meta: composer Tom Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file lastthingonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It’s a lesson too late [C]for the [G]learning
@@ -54,3 +57,9 @@
 [G]I didn’t mean to be unkind
 [D7]You know that was the last thing on my [G]mind
 {end_of_verse}
+
+
+
+
+
+

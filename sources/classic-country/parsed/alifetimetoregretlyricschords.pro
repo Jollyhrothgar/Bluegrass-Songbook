@@ -1,6 +1,9 @@
 {meta: title A Lifetime To Regret}
 {meta: artist George Jones}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file alifetimetoregretlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I'm all alone and broken [F]hearted
@@ -29,3 +32,6 @@ For I'm just like a fish caught in a [G7]net
 I [C]lost the love that made my life worth [F]livin'
 [G7]I've got a lifetime to [C]regret
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title But That's All Right}
 {meta: artist Waylon Jennings}
 {meta: composer Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file butthatsallrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gave my heart I gave my all
@@ -25,3 +28,6 @@ I'd be [C]glad you [G7]changed your [C]mind
 Yes that's all right
 I looked around [G7]and found true [C]love
 {end_of_verse}
+
+
+

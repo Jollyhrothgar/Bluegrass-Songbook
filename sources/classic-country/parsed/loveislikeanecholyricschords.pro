@@ -1,6 +1,9 @@
 {meta: title Love Is Like An Echo}
 {meta: artist Vern Gosdin}
 {meta: composer Rayburn Anthony, Patsy Littrell, Stan Plumlee}
+{meta: x_source classic-country}
+{meta: x_source_file loveislikeanecholyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey you been sayin'
@@ -53,3 +56,9 @@ Love is [F]like an [C]echo
 Love is [F]like an [C]echo   
 Love is [F]like an [C]echo   
 {end_of_verse}
+
+
+
+
+
+

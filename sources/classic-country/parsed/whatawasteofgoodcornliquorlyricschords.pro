@@ -1,6 +1,9 @@
 {meta: title What A Waste Of Good Corn Liquor}
 {meta: artist Mac Wiseman}
 {meta: composer Slim Gordon and Bill Long}
+{meta: x_source classic-country}
+{meta: x_source_file whatawasteofgoodcornliquorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have lost my blue-eyed darling
@@ -52,3 +55,8 @@ All the [C]revenuers snickered
 Cause she [F]melted in the [C]liquor
 And they had to bury poor [G7]Lilly by the [C]jug
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Blue For You}
 {meta: artist Sonny James}
 {meta: composer John Skye}
+{meta: x_source classic-country}
+{meta: x_source_file blueforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Lonesome for you through the day (lonesome for you through the [G]day)
@@ -34,3 +37,7 @@ Long to see you smiling say
 [G]No one else can take your place when the day is [D7]through
 [G]Darling I'm so blue for you
 {end_of_verse}
+
+
+
+

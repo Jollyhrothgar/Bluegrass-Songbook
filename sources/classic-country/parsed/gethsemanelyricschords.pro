@@ -1,6 +1,9 @@
 {meta: title Gethsemane}
 {meta: artist Carl Smith}
 {meta: composer Billy Smith and W.B. Waldrop}
+{meta: x_source classic-country}
+{meta: x_source_file gethsemanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a hillside so lonely knelt [F]Jesus one [C]day
@@ -29,3 +32,6 @@
 [C]There's a new highway to glory the [F]road that Jesus [C]trod
 [G7]With a halo we're traveling the pathway to [C]God
 {end_of_verse}
+
+
+

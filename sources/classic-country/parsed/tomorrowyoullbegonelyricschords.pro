@@ -1,5 +1,8 @@
 {meta: title Tomorrow You'll Be Gone}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrowyoullbegonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What can I [F]do when they [C]ask me about you
@@ -35,3 +38,7 @@ The [G7]tears that fall will be within my [C]heart
 [C]How I wish that [F]you were mine to [C]treasure from now on
 But [G7]it's too late tomorrow you'll be [C]gone
 {end_of_verse}
+
+
+
+

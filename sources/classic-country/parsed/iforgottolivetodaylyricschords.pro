@@ -1,6 +1,9 @@
 {meta: title I Forgot To Live Today}
 {meta: artist Hank Locklin}
 {meta: composer Dickey Lee and Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file iforgottolivetodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My key turns in the lock and I [Em]open my front door
@@ -49,3 +52,8 @@ And [F]swear that tomorrow I'll make [G7]everything right
 And [F]I remember who I love [E7]more than all the [Am]stars above
 Cause [D7]I forgot to [G7]live [C]today [D7]I forgot to [G7]live [C]today
 {end_of_verse}
+
+
+
+
+

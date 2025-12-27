@@ -1,6 +1,9 @@
 {meta: title You Had A Call}
 {meta: artist Faron Young}
 {meta: composer Danny Overby}
+{meta: x_source classic-country}
+{meta: x_source_file youhadacalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did you find a box of [C]your [D7]favorite [G]flowers
@@ -29,3 +32,6 @@
 [G]True love knows no master [C]and it can't tell wrong [D7]from [G]right
 [C]That’s why you had a [G]call from a [D7]broken heart last [G][C]night
 {end_of_verse}
+
+
+

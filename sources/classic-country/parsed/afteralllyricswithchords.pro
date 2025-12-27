@@ -1,6 +1,9 @@
 {meta: title After All}
 {meta: artist Wynn Stewart}
 {meta: composer Joe Hulsey}
+{meta: x_source classic-country}
+{meta: x_source_file afteralllyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’ve got that sweet temptation [G7]in your [C]talk
@@ -39,3 +42,7 @@ We’re going out tonight we’re gonna dine [C]and dance
 We’re gonna say hello to a new [F]romance
 You’re the [C]one for [G7]me after [C]all
 {end_of_verse}
+
+
+
+

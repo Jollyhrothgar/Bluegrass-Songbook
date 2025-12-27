@@ -1,6 +1,9 @@
 {meta: title It’s Not The Wind}
 {meta: artist Kenny and Amanda Smith}
 {meta: composer Bobby Harrison}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From the start of our life together
@@ -50,3 +53,9 @@ It's not the [C]breeze that's [D7]making me [G]blue
 It's no one else but you my darling
 Yes my [D7]darling it's over [G]you
 {end_of_verse}
+
+
+
+
+
+

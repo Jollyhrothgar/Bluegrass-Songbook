@@ -1,6 +1,9 @@
 {meta: title She's Got That Oklahoma Look}
 {meta: artist Carl Smith}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file shesgotthatoklahomalooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was following the [G7]rodeos in [C]Texas
@@ -33,3 +36,7 @@ Ain't a [D7]question in my [G7]mind I'm in [C]love
 {start_of_verse: Verse 4}
 Ain't a [D7]question in my [G7]mind I'm in [C]love
 {end_of_verse}
+
+
+
+

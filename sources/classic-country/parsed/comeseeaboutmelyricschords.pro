@@ -1,6 +1,9 @@
 {meta: title Come See About Me}
 {meta: artist Cal Smith}
 {meta: composer Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file comeseeaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody listen I'm a voice in the distance crying
@@ -42,3 +45,9 @@ I am a baby my mother ain't no lady
 I am your maker the giver and the taker
 [G7]Come see about [C]me
 {end_of_verse}
+
+
+
+
+
+

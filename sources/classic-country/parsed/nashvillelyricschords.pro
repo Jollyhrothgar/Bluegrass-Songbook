@@ -1,5 +1,8 @@
 {meta: title Nashville}
 {meta: artist Ray Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file nashvillelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've climbed up the Eiffel tower floated [Em]down the river [C]Nile
@@ -39,3 +42,8 @@ Oh I gotta get that jet back home to [Dm]Nashville  [G7]Nashville Tenne[C]ssee
 {start_of_verse: Verse 6}
 [Dm]Nash[G7]ville Tenne[C]ssee  [Dm]Nash[G7]ville Tenne[C]ssee
 {end_of_verse}
+
+
+
+
+

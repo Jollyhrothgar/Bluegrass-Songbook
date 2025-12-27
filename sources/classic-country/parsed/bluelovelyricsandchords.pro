@@ -1,6 +1,9 @@
 {meta: title Blue Love Lyrics and Chords}
 {meta: artist Hank Williams}
 {meta: composer Floyd Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file bluelovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a B-lue [G7]Love in my [C]heart
@@ -39,3 +42,8 @@ What can I do love with my [G7]heart
 I'm like a [C]weepin [F]willow while we're [C]apart
 I got a B-lue [G7]Love in my [C]heart
 {end_of_verse}
+
+
+
+
+

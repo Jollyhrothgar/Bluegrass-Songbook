@@ -1,5 +1,8 @@
 {meta: title I Could Love You More}
 {meta: artist Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file icouldloveyoumorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could love you more than anybody else could love you
@@ -36,3 +39,8 @@ Sweeter things better than anyone you [G7]know
 I could [C]hold you tighter than any other arms could hold [F]you
 But [C]I'll cry louder than [G7]anyone when you [C]go
 {end_of_verse}
+
+
+
+
+

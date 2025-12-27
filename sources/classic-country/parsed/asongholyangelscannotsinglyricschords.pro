@@ -1,6 +1,9 @@
 {meta: title A Song Holy Angels Cannot Sing}
 {meta: artist Jimmy Swaggart}
 {meta: composer Gordon Jensen}
+{meta: x_source classic-country}
+{meta: x_source_file asongholyangelscannotsinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Amazing [G7]Grace [F]how sweet the [C]sound[F]  [C]
@@ -37,3 +40,8 @@ I once was [G7]lost [F]but now I’m [C]found [F]  [C]
 {start_of_verse: Verse 6}
 I once was [G7]lost [F]but now I’m [C]found 
 {end_of_verse}
+
+
+
+
+

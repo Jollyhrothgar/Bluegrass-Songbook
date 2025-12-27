@@ -1,6 +1,9 @@
 {meta: title Doggone It Baby I'm In Love}
 {meta: artist Carl Smith}
 {meta: composer Arrett Keefer and Jack Amway}
+{meta: x_source classic-country}
+{meta: x_source_file doggoneitbabyiminlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love knocks once and never later
@@ -57,3 +60,10 @@ And it's [G7]getting the best of me
 [G7]And I'll go and fetch the preacher
 Dog-gone it baby I'm in [C]love
 {end_of_verse}
+
+
+
+
+
+
+

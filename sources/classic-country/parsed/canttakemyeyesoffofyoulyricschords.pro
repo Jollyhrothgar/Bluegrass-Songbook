@@ -1,6 +1,9 @@
 {meta: title Can't Take My Eyes Off Of You}
 {meta: artist Brenda Lee}
 {meta: composer Bob Crewe and Bob Gaudio}
+{meta: x_source classic-country}
+{meta: x_source_file canttakemyeyesoffofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're just too good to be true
@@ -63,3 +66,11 @@ Your just too [D7]good to be true
 {start_of_verse: Verse 9}
 Can't [G7]take my [Dm]eyes [G7]off of [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Loving You Too Well}
 {meta: artist Ricky Skaggs}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file lovingyoutoowelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've held you close ten [G7]thousand times
@@ -36,3 +39,7 @@ This [C]story I must [G]tell
 The worst mistake I’ve ever made
 Was [D7]loving you too [G]well
 {end_of_verse}
+
+
+
+

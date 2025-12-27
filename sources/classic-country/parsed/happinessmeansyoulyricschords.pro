@@ -1,6 +1,9 @@
 {meta: title Happiness Means You}
 {meta: artist Kitty Wells}
 {meta: composer Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file happinessmeansyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Happiness means [F]you dear our life's [C]complete
@@ -40,3 +43,8 @@ Cause we both [G7]know dear happiness means [C]you
 {start_of_verse: Verse 4}
 Yes we both [G7]know dear happiness means [C]you
 {end_of_verse}
+
+
+
+
+

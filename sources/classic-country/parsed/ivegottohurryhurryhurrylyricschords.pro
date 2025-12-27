@@ -1,6 +1,9 @@
 {meta: title I've Got To Hurry Hurry Hurry}
 {meta: artist Ray Price}
 {meta: composer Louise Ulrich}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottohurryhurryhurrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I got the cutest baby that you ever did [C7]see
@@ -42,3 +45,10 @@ I gotta hurry up cause the parson’s a-waitin’
 [G7]I gotta hurry on over with all my might
 [C]Cause tonight she’ll be my [G7]darling [C]wife
 {end_of_verse}
+
+
+
+
+
+
+

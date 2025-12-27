@@ -1,6 +1,9 @@
 {meta: title Glad I Waited Just For You}
 {meta: artist Reba McEntire}
 {meta: composer Royce Porter and Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file gladiwaitedjustforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Use to be use to be love was [Bm]mean to m[E7]e
@@ -28,3 +31,6 @@ Of [Am]making me glad I [D7]waited just for [G]you
 Gotta say (gotta say) your love's [Bm]got a wa[E7]y
 Of [Am]making me glad I [D7]waited just for [G]you
 {end_of_verse}
+
+
+

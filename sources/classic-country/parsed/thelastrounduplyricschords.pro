@@ -1,6 +1,9 @@
 {meta: title The Last Round Up}
 {meta: artist Sons of the Pioneers}
 {meta: composer Billy Hill}
+{meta: x_source classic-country}
+{meta: x_source_file thelastrounduplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm heading for the last roundup
@@ -26,3 +29,6 @@ I'm [G7]heading for the last [C]roundup
 {start_of_verse: Verse 4}
 Git [F]along little [Fm]doggie git [C]along
 {end_of_verse}
+
+
+

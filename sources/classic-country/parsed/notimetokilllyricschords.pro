@@ -1,6 +1,9 @@
 {meta: title No Time To Kill}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file notimetokilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no time to kill between the cradle and the grave
@@ -53,3 +56,9 @@ If you don't look ahead nobody [G7]will there's no time to [C]kill
 {start_of_verse: Verse 5}
 [F]No time to [C]kill [F]no time to [C]kill ([F]no time to [C]kill)
 {end_of_verse}
+
+
+
+
+
+

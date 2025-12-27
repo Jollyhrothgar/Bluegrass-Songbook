@@ -1,5 +1,8 @@
 {meta: title Bring Yourself Home}
 {meta: artist Norma Jean}
+{meta: x_source classic-country}
+{meta: x_source_file bringyourselfhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Forever and ever two [G7]words I’ve learned not to [C]use
@@ -34,3 +37,6 @@
 [D7]Nothing’s been broken than my love can’t mend
 [G]So bring yourself back home again
 {end_of_verse}
+
+
+

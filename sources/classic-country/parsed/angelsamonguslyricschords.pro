@@ -1,6 +1,9 @@
 {meta: title Angels Among Us}
 {meta: artist Alabama}
 {meta: composer Don Goodman and Becky Hobbs}
+{meta: x_source classic-country}
+{meta: x_source_file angelsamonguslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was walkin' home from school on a [Em]cold winter [C]day
@@ -52,3 +55,9 @@ And [C]guide us with a [D7]light of [G]love
 {start_of_verse: Verse 5}
 To [C]guide us with a [D7]light of [G]love
 {end_of_verse}
+
+
+
+
+
+

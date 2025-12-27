@@ -1,6 +1,9 @@
 {meta: title An Eye For An Eye}
 {meta: artist Ray Price}
 {meta: composer Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file aneyeforaneyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just because you lost your heart did you lose your [C]conscience [G]too
@@ -29,3 +32,6 @@ Your making me [D7]pay for another man’s [G]crime
 An eye for an [C]eye a heart for a [G]heart
 You didn’t have [D7]one so you took [G]mine
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sam Hill}
 {meta: artist Jimmy Dean}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file samhilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a certain hill outside of town called Sam [Am]Hill
@@ -47,3 +50,9 @@ And we're [C]wondering what in [G7]Sam Hill's going [C]on
 {start_of_verse: Verse 7}
 What in [G7]Sam Hill's going [C]on
 {end_of_verse}
+
+
+
+
+
+

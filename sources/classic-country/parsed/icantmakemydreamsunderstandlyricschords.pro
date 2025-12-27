@@ -1,6 +1,9 @@
 {meta: title I Can't Make My Dreams Understand}
 {meta: artist Wanda Jackson}
 {meta: composer Buck Bryant and James West}
+{meta: x_source classic-country}
+{meta: x_source_file icantmakemydreamsunderstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I kiss him good[C]night and tell him I [G]love him 
@@ -29,3 +32,6 @@ To [A7]dream about you when [D7]with him I belong
 I've [G]made vows to [C]God and I've made vows to [G]man
 But I [D7]just can't make my dreams under[G]stand
 {end_of_verse}
+
+
+

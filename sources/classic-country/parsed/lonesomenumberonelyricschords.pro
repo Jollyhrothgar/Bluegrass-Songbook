@@ -1,5 +1,8 @@
 {meta: title Lonesome Number One}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomenumberonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lonesome  [G7]number [C]one 
@@ -28,3 +31,6 @@ I [G]surely must be [D7]lonesome number [G]one
 [G]Although no [G7]titles have I [C]won 
 I [G]surely must be [D7]lonesome number [G]one
 {end_of_verse}
+
+
+

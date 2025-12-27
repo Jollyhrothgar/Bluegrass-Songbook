@@ -1,6 +1,9 @@
 {meta: title Freedom To Stay}
 {meta: artist Waylon Jennings}
 {meta: composer Bill Hoover}
+{meta: x_source classic-country}
+{meta: x_source_file freedomtostaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I tied my ban[D7]dana [C]took my pack from the [G]floor
@@ -29,3 +32,6 @@ I could [C]ramble [D7]a thousand miles or [G]more
 You gave me the [D7]freedom [C]to go my own [G]way
 But you gave me much [D7]more [C]you gave me the freedom to [G]stay
 {end_of_verse}
+
+
+

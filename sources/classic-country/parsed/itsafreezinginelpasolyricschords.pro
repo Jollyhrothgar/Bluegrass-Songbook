@@ -1,6 +1,9 @@
 {meta: title It's A Freezing In El Paso}
 {meta: artist Bobby Bare}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file itsafreezinginelpasolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can [G7]hear her footsteps walkin' by my [Am]bedside Lord she's leavin'
@@ -29,3 +32,6 @@ All the [D7]sweet things here are dyin' on the [G7]vine
 Wish that [F]woman could have [G7]took it when the [C]hard times came [Am]around[C]
 Wish her [F]winter hadn't [G7]spoil my summer[C]time
 {end_of_verse}
+
+
+

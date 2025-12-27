@@ -1,5 +1,8 @@
 {meta: title I Saw The Light}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file isawthelightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wandered so aimless life filled with [C7]sin
@@ -50,3 +53,12 @@ Now I have traded the wrong for the right
 Then Jesus came like a stranger in the night
 [G7]Praise the Lord I saw the [C]light
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title They Rage On}
 {meta: artist Dan Seals}
 {meta: composer Bob McDill and Dan Seals}
+{meta: x_source classic-country}
+{meta: x_source_file theyrageonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's a small town girl with no [G7]room to grow
@@ -52,3 +55,10 @@ Against the lives that this world [C]gave them
 Hoping somethings there to [G7]save them
 They rage [F]on [C]rage [F]on 
 {end_of_verse}
+
+
+
+
+
+
+

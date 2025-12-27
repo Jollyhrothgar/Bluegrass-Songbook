@@ -1,6 +1,9 @@
 {meta: title Two Of A Kind}
 {meta: artist Roy Orbison}
 {meta: composer Bob Montgomery and Earl Sinks}
+{meta: x_source classic-country}
+{meta: x_source_file twoofakindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say we're [Dm]searching for [G7]love we'll never [C]find 
@@ -20,3 +23,5 @@ And when we [Dm]pass them by [G7]with your hand in [C]mine
 And when we [Dm]pass them by [G7]with your hand in [C]mine 
 [A7]Then they'll just [Dm]smile and say [G7]they're two of a [C]kind [F]  [C]
 {end_of_verse}
+
+

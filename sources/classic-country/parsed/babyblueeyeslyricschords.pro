@@ -1,6 +1,9 @@
 {meta: title Baby Blue Eyes}
 {meta: artist Lester Flatt}
 {meta: composer Jim Eanes}
+{meta: x_source classic-country}
+{meta: x_source_file babyblueeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder if [G7]I'll ever [C]forget you
@@ -43,3 +46,8 @@ And visions of [F]eyes as blue as the [G7]sky
 And that's why each [C]night [G7]there's tears on my [C]pillow
 I'm dreaming of your [G7]two baby blue [C]eyes
 {end_of_verse}
+
+
+
+
+

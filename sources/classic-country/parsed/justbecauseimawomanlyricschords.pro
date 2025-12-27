@@ -1,5 +1,8 @@
 {meta: title Just Because I’m A Woman}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file justbecauseimawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can see you're disappointed by the way you look at [G7]me
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 5}
 [F]My mistakes are no [C]worse than yours just [G7]because I'm a [C]woman
 {end_of_verse}
+
+
+
+

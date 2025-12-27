@@ -1,6 +1,9 @@
 {meta: title Another Heart For You To Break}
 {meta: artist Dottie West}
 {meta: composer Carl Belew, Clyde Pitts, Jeannie Seely}
+{meta: x_source classic-country}
+{meta: x_source_file anotherheartforyoutobreaklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [G7]wish I [C]had another heart for you [C7]to [F]break
@@ -16,3 +19,4 @@
 [C]I wish I had another [G7]heart for you to [C]break
 [F]I wish I [C]had another [G7]heart for you to [C][F]break
 {end_of_verse}
+

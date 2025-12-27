@@ -1,6 +1,9 @@
 {meta: title Living Together Alone}
 {meta: artist Conway Twitty}
 {meta: composer Sandy Burnett and Joe McClure}
+{meta: x_source classic-country}
+{meta: x_source_file livingtogetheralonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't believe the life we live
@@ -23,3 +26,5 @@ And [F]yet we still go [C]on  [G7]livin' together [C]alone
 {start_of_verse: Verse 3}
 And [F]yet we still go [C]on  [G7]livin' together [C]alone
 {end_of_verse}
+
+

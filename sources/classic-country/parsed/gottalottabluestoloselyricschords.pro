@@ -1,6 +1,9 @@
 {meta: title Gotta Lotta Blues To Lose Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Jimmy Gatele}
+{meta: x_source classic-country}
+{meta: x_source_file gottalottabluestoloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gotta lotta [F]blues to [C]lose guess by now you've [F]heard the [C]news
@@ -26,3 +29,6 @@ Just a [F]walkin' [Em]around in this [Dm]lonely ol' [C]town gotta lotta [G7]blue
 {start_of_verse: Verse 4}
 I gotta lotta [G7]blues to [C]lose I gotta lotta [G7]blues to [C]lose
 {end_of_verse}
+
+
+

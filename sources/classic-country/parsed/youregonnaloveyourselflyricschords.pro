@@ -1,6 +1,9 @@
 {meta: title You're Gonna Love Yourself}
 {meta: artist Brenda Lee}
 {meta: composer Donnie Ray Fritts}
+{meta: x_source classic-country}
+{meta: x_source_file youregonnaloveyourselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heaven knows that [B7]some man [Em]has abused [G7][G]you
@@ -35,3 +38,7 @@
 {start_of_verse: Verse 5}
 [C]Yes every [D7]morning from now [G]on
 {end_of_verse}
+
+
+
+

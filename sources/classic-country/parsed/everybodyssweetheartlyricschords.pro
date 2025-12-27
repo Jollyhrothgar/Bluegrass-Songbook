@@ -1,5 +1,8 @@
 {meta: title Everybody's Sweetheart}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file everybodyssweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I [F]told my baby do what you wanna [C]do
@@ -44,3 +47,9 @@ She's [D7]everybody's sweetheart [G7]everybody's sweetheart but [C]mine[Am]
 {start_of_verse: Verse 6}
 She's [D7]everybody's sweetheart [G7]everybody's sweetheart but [C]mine
 {end_of_verse}
+
+
+
+
+
+

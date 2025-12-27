@@ -1,6 +1,9 @@
 {meta: title Are You Mine}
 {meta: artist Ernest Tubb and Loretta Lynn}
 {meta: composer Don Grashey, Jim Amaded and Myrna Lorrie}
+{meta: x_source classic-country}
+{meta: x_source_file areyouminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Are You Mine all life through
@@ -80,3 +83,17 @@ Will you kiss me when I'm blue
 Will you whisper I love [G7]you
 And make all my dreams come [C]true
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

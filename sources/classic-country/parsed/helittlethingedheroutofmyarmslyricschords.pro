@@ -1,6 +1,9 @@
 {meta: title He Little Thinged Her Out Of My Arms}
 {meta: artist Jack Greene}
 {meta: composer Hank Cockran}
+{meta: x_source classic-country}
+{meta: x_source_file helittlethingedheroutofmyarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I brought her a mansion [F]he gave her some flowers
@@ -26,3 +29,6 @@ He [C]little thinged her [G7]out of my [F]arms
 {start_of_verse: Verse 4}
 [C]He little thinged her [G7]out of my [F]ar-[C]ms
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Letter From Home}
 {meta: artist Johnny Cash}
 {meta: composer Maybelle Carter and Dixie Dean}
+{meta: x_source classic-country}
+{meta: x_source_file aletterfromhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A cowpoke rode in [D7]one hot dusty [G]day 
@@ -43,3 +46,8 @@ No time for the letter from [D7]home
 [G]The cowboy lay dead with [C]his letter [G]unread
 Too late for the [D7]letter from [G]home
 {end_of_verse}
+
+
+
+
+

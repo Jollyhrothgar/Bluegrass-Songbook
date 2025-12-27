@@ -1,5 +1,8 @@
 {meta: title I Was Born About Ten Thousands Years Ago}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file iwasbornabouttenthousandsyearsagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw old pharaoh's daughter bring [C]Moses from the water
@@ -75,3 +78,13 @@ There ain't nothing in this world that I don't [D7]know
 I [G]saw Peter Paul and Moses playing [C]ring around the roses
 I'll [G]lick the guy that [D7]says it isn't [G]so
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

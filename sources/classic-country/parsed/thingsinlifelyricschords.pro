@@ -1,6 +1,9 @@
 {meta: title Things In Life}
 {meta: artist Ricky Skaggs}
 {meta: composer Don Stover}
+{meta: x_source classic-country}
+{meta: x_source_file thingsinlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look up look down this lonesome [F]road
@@ -36,3 +39,7 @@ It’s a lonesome grave to [C]rest
 And you take one last look at my [F]face
 You can say I done my [C]best  
 {end_of_verse}
+
+
+
+

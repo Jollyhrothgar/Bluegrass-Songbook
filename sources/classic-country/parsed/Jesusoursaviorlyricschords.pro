@@ -1,5 +1,8 @@
 {meta: title Jesus Our Savior}
 {meta: artist John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusoursaviorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Proclaimed by the Angels Ho[F]sanna on [C]high
@@ -32,3 +35,7 @@ Let’s all [Am]remember the [F]littlest [C]one
 {start_of_verse: Verse 5}
 Yes Jesus our Savior was [F]born on this [C]day
 {end_of_verse}
+
+
+
+

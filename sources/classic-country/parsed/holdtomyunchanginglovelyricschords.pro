@@ -1,5 +1,8 @@
 {meta: title Hold To My Unchanging Love}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file holdtomyunchanginglovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you're tempted by a woman
@@ -35,3 +38,9 @@ Hold to my unchanging love
 {start_of_verse: Verse 2}
 Hold to my unchanging love
 {end_of_verse}
+
+
+
+
+
+

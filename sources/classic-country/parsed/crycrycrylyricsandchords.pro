@@ -1,6 +1,9 @@
 {meta: title Cry Cry Cry Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Shirley Wood}
+{meta: x_source classic-country}
+{meta: x_source_file crycrycrylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At last I found the way to free m[C]yself from you
@@ -29,3 +32,6 @@ I [A7]cry each time I think about the [D7]times I cried for you
 [G]I'm sure that I'll get over you as [C]time goes by
 Cause [D7]I found three ways to ease the pain cry cry [G]cry
 {end_of_verse}
+
+
+

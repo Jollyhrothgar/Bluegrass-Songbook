@@ -1,5 +1,8 @@
 {meta: title Kneel At The Feet Of Jesus}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file kneelatthefeetofJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I guess I been hanging around too long
@@ -34,3 +37,6 @@ Just one thing before you carry me away
 [F]It's just about time I was moving [C]along
 [G7]I'm gonna kneel at the feet of Jesus in the [C]morning
 {end_of_verse}
+
+
+

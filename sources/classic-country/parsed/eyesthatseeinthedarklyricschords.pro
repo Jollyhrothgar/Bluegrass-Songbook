@@ -1,6 +1,9 @@
 {meta: title Eyes That See In The Dark}
 {meta: artist Kenny Rogers}
 {meta: composer Barry Gibb and Maurice Gibb}
+{meta: x_source classic-country}
+{meta: x_source_file eyesthatseeinthedarklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're not meant to be [F]alone I'll share your [Dm]dream
@@ -52,3 +55,9 @@ Am I the [C]light of [F]someone you need [G7]more of
 Let me [C]be that [F]love you can be [G7]sure of
 Is it [C]only [F]my imagi[G7]nation I got [C]you
 {end_of_verse}
+
+
+
+
+
+

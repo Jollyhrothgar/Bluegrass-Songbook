@@ -1,5 +1,8 @@
 {meta: title It Seems Like Yesterday}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file itseemslikeyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It seems like yesterday [D7]when I heard you say
@@ -15,3 +18,4 @@ And [C]if you only [Am]knew [D7]how much I miss you
 [G7]You'd never say we were [C]through
 repeat
 {end_of_verse}
+

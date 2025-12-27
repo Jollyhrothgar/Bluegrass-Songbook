@@ -1,6 +1,9 @@
 {meta: title The Chair}
 {meta: artist George Strait}
 {meta: composer Hank Cochran and Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file thechairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well excuse me but I think you've got my [Am]chair
@@ -32,3 +35,6 @@ That [Am]wasn't my [D7]chair after [G]all
 Oh [C]I like you [Bm]too and to [Am]tell you the [E7]truth 
 That [Am]wasn't my [D7]chair after [G]all
 {end_of_verse}
+
+
+

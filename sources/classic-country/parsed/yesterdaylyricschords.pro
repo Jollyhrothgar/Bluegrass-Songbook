@@ -1,6 +1,9 @@
 {meta: title Yesterday}
 {meta: artist Roy Drusky}
 {meta: composer Carl Belew and Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](Yester[C]day)
@@ -30,3 +33,7 @@ Those [G7]spoken words your fallin' tears and [F]yester[C]day
 {start_of_verse: Verse 5}
 Those [G7]spoken words your fallin' tears and [F]yester[C]day
 {end_of_verse}
+
+
+
+

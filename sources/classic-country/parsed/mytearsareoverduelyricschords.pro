@@ -1,6 +1,9 @@
 {meta: title My Tears Are Overdue}
 {meta: artist Porter Wagoner}
 {meta: composer Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file mytearsareoverduelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you want to see [G7]somebody cry their heart [C]out
@@ -27,3 +30,6 @@ Just remember [G7]love I had then threw [C]away
 If you're [F]not afraid my [G7]misery [F]might rub off on [C]you
 Just hang around my tears [G7]are [C]overdue
 {end_of_verse}
+
+
+

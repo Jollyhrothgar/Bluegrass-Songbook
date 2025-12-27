@@ -1,6 +1,9 @@
 {meta: title If I'm Dreaming Just Let Me Dream}
 {meta: artist Brenda Lee}
 {meta: composer Charlie Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file ifimdreamingjustletmedreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Please don't tell me if you're not [C]real
@@ -34,3 +37,7 @@ If I'm your [D7]prisoner don't set me [G]free
 Your red hot kisses warm me like [C]steam
 Cause so if I'm [D7]dreaming just let me [G]dream
 {end_of_verse}
+
+
+
+

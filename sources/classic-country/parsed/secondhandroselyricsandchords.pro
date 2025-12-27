@@ -1,6 +1,9 @@
 {meta: title Second Hand Rose}
 {meta: artist Ferlin Husky}
 {meta: composer Harlan Howard, Grant Clarke, James Hanley}
+{meta: x_source classic-country}
+{meta: x_source_file secondhandroselyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Second hand shoes second hand clothes 
@@ -36,3 +39,7 @@ I'll [G7]take rose you can have all the [C]rest
 [G7]They all think they're pretty smart 
 But rose don't have a second hand [C]heart
 {end_of_verse}
+
+
+
+

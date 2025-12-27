@@ -1,6 +1,9 @@
 {meta: title Barstool Mountain}
 {meta: artist Moe Bandy}
 {meta: composer Wayne Carson, Donn Tankersley}
+{meta: x_source classic-country}
+{meta: x_source_file barstoolmountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've finally found a place where I can take [Am]it
@@ -22,3 +25,5 @@
 [G]I know that I'll be right back here [Am]tomorrow
 [C]Too weak to sober [D7]up and face the [G]truth
 {end_of_verse}
+
+

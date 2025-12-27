@@ -1,5 +1,8 @@
 {meta: title Emotion Devotion}
 {meta: artist Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file emotiondevotionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To want and [F]need you here with [C]me
@@ -27,3 +30,5 @@ No [F]daily papers to [C]corrode
 [F]I long for you lonely [A#7]long[F]in' for [C]me
 [F]Knowin' that love [A#7]demands [F]reali[C]ty
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Feminine Touch}
 {meta: artist Johnny Paycheck}
 {meta: composer Larry Kingston and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file femininetouchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I delivered the [G7]orders from [C]your last Stanley [F]Party
@@ -30,3 +33,6 @@ I've turned inside things for a [G7]crutch
 Have [C]lost the [G7]feminine [C]touch
 [F]Girl I sure [C]miss your [G7]feminine [F]tou[C]ch
 {end_of_verse}
+
+
+

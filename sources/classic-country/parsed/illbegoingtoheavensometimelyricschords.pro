@@ -1,6 +1,9 @@
 {meta: title I'll Be Going To Heaven Sometime}
 {meta: artist Doyle Lawson}
 {meta: composer Howard Watts}
+{meta: x_source classic-country}
+{meta: x_source_file illbegoingtoheavensometimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Are you going to be a [C]saint on that [G]shore
@@ -50,3 +53,9 @@
 [G]God is leading the way and I can't go [C]astray
 [G]I'll be going to [D7]Heaven [G]sometime
 {end_of_verse}
+
+
+
+
+
+

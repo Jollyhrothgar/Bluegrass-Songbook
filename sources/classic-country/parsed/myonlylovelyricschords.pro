@@ -1,6 +1,9 @@
 {meta: title My Only Love}
 {meta: artist Statler Brothers}
 {meta: composer Jimmy Fortune}
+{meta: x_source classic-country}
+{meta: x_source_file myonlylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You and I were [F]meant for one [C]another
@@ -29,3 +32,6 @@ And I just [F]thank the Lord above for you each [G7]day
 I can't believe [F]the way I feel  you're so special you're so [C]real
 And [F]I know you'll always be [G7]my only [C]love
 {end_of_verse}
+
+
+

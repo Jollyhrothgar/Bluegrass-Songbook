@@ -1,6 +1,9 @@
 {meta: title In Time}
 {meta: artist Eddy Arnold}
 {meta: composer J. O. Bellah, Jr., Barbara Cross}
+{meta: x_source classic-country}
+{meta: x_source_file intimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In time I guess I will return the [C]smile of someone [G]new
@@ -22,3 +25,5 @@
 [G]In time another's lips may try to thrill [C]me through and [G]through
 [C]But I won't fall in love [G]because my heart [D7]will be with [G]you
 {end_of_verse}
+
+

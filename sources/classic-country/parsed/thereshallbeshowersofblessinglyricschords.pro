@@ -1,6 +1,9 @@
 {meta: title There Shall Be Showers Of Blessing}
 {meta: artist Jimmy Dean}
 {meta: composer Daniel W. Whittle and James McGranahan}
+{meta: x_source classic-country}
+{meta: x_source_file thereshallbeshowersofblessinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There shall be showers of blessing [D7]this is the promise of [G]love
@@ -22,3 +25,5 @@
 [G]Showers of blessing showers of blessing we [D7]need
 [G]Mercy drops [C]round us are [G]falling but [D7]for the showers we [G]plead
 {end_of_verse}
+
+

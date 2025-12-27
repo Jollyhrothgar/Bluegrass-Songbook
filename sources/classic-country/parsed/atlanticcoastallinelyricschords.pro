@@ -1,6 +1,9 @@
 {meta: title Atlantic Coastal Line}
 {meta: artist Charley Pride}
 {meta: composer Mel Tillis and Fred Burch}
+{meta: x_source classic-country}
+{meta: x_source_file atlanticcoastallinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody calls [G7]me Bo
@@ -61,3 +64,9 @@
 [F]Ridin' the [G7]Atlantic Coastal [C]Line
 [F]Ridin' the [G7]Atlantic Coastal [C]Line
 {end_of_verse}
+
+
+
+
+
+

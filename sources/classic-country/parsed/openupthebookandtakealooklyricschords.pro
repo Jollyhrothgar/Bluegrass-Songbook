@@ -1,6 +1,9 @@
 {meta: title Open Up The Book And Take A Look}
 {meta: artist Ferlin Husky}
 {meta: composer Ferlin Husky, Lester Vanadore,}
+{meta: x_source classic-country}
+{meta: x_source_file openupthebookandtakealooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's all [F]written [C]there
@@ -50,3 +53,9 @@ Open up the Book and [G7]take a [C]look
 It's all [F]written [C]there
 Open up the Book and [G7]take a [C]look
 {end_of_verse}
+
+
+
+
+
+

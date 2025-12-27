@@ -1,6 +1,9 @@
 {meta: title I’m Always On A Mountain When I Fall}
 {meta: artist Merle Haggard}
 {meta: composer D. Kerran and C. Howard}
+{meta: x_source classic-country}
+{meta: x_source_file imalwaysonamountainwhenifalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Most of my life I've almost been a [Dm]winner 
@@ -35,3 +38,7 @@ Tag:
 [Em]Losing wouldn't be so bad at [F]all 
 But I'm [Dm]always on a [G7]mountain when I [C]fall
 {end_of_verse}
+
+
+
+

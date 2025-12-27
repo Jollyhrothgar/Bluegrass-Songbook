@@ -1,5 +1,8 @@
 {meta: title Satan's River}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file satansriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Satan's got river deep and wide 
@@ -36,3 +39,8 @@ He's got folks a [D7]swimming in the warm smooth [G]tide
 [G7]Yes Satan's got a [C]river and it's so deep and [G]wide
 He's got folks a [D7]swimming in the warm smooth [G]tide
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Got Lucky}
 {meta: artist Elvis Presley}
 {meta: composer By Ben Weisman, Fred Wise, Dolores Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file igotluckylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Never found a four leaf [Em]clover to [F]bring good luck to [Dm]me
@@ -30,3 +33,6 @@ And then I'll [C]know that my good luck is [F]really here to [G7]stay
 Oh I got [C]lucky [Am]yes I got [F]lucky [G7]when I found [C]you
 [G7]Oh I got [C]lucky [Am]yes I got [F]lucky [G7]when I found [C]you
 {end_of_verse}
+
+
+

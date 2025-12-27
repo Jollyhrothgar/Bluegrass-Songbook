@@ -1,6 +1,9 @@
 {meta: title Before You Learned To Fly}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Donnie Lanier}
+{meta: x_source classic-country}
+{meta: x_source_file beforeyoulearnedtoflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I remember [D7]days when [G]cotton was the [C]finest dress 
@@ -49,3 +52,10 @@ Yes I’m [C]on my way to [D7]Dallas
 {start_of_verse: Verse 8}
 To [Em]find someone who’s [D7]never learned to [G]fly
 {end_of_verse}
+
+
+
+
+
+
+

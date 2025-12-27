@@ -1,6 +1,9 @@
 {meta: title Perfect Mountain}
 {meta: artist Don Gibson}
 {meta: composer Gene Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file perfectmountainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gonna find a perfect [F]mountain  [G7]gonna stay until I [C]die
@@ -40,3 +43,10 @@ Drink of mother nature's [G7]fountain let my worries roll on [C]by [F]
 {start_of_verse: Verse 6}
 [C]Let my worries [G7]roll on [C]by [F]   [C]
 {end_of_verse}
+
+
+
+
+
+
+

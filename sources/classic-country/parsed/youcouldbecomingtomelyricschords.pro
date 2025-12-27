@@ -1,6 +1,9 @@
 {meta: title You Could Be Coming To Me}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file youcouldbecomingtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear stories and rumors going [F]round about [Dm]you
@@ -29,3 +32,6 @@ Then you [G7]know where you could [C]be
 If you don't [F]like what you're [C]becoming 
 You could be [G7]coming to [C]me
 {end_of_verse}
+
+
+

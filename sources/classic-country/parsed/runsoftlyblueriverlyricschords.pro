@@ -1,5 +1,8 @@
 {meta: title Run Softly Blue River}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file runsoftlyblueriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -40,3 +43,8 @@ Run softly while she sleeps and [G7]dreams for a [C]time
 (Run softly Blue River [D7]my darlin's [G]asleep)  
 (Run softly Blue River [D7]run cool and [G]deep)
 {end_of_verse}
+
+
+
+
+

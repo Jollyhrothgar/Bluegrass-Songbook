@@ -1,6 +1,9 @@
 {meta: title Famous Last Words}
 {meta: artist Wanda Jackson}
 {meta: composer Yvonne Devaney}
+{meta: x_source classic-country}
+{meta: x_source_file famouslastwordslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I'm the girl who says that [G7]love was not for [C]me
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]When I fell in love I lost at my own [G]game
 {end_of_verse}
+
+
+
+

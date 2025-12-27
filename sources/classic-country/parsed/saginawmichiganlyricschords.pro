@@ -1,6 +1,9 @@
 {meta: title Saginaw Michigan}
 {meta: artist Lefty Frizzell}
 {meta: composer Bill Anderson and Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file saginawmichiganlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was born   [D7]in Saginaw [G]Michigan  
@@ -44,3 +47,8 @@ It [C]serves him right and no one here is missing [G]him
 Least of [D7]all the newly weds of Saginaw [G]Michigan
 The happiest man [D7]and wife in Saginaw [G]Michigan
 {end_of_verse}
+
+
+
+
+

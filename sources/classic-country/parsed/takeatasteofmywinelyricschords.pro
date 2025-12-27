@@ -1,6 +1,9 @@
 {meta: title Take A Taste Of My Wine}
 {meta: artist Buck Owens}
 {meta: composer Bob Morris and Larry Scott}
+{meta: x_source classic-country}
+{meta: x_source_file takeatasteofmywinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come a little closer be a little bolder
@@ -56,3 +59,10 @@ Come a little closer be a little bolder
 [D7]Come and take a taste of my [G]wine
 [D7]Come and take a taste of my [G]wine
 {end_of_verse}
+
+
+
+
+
+
+

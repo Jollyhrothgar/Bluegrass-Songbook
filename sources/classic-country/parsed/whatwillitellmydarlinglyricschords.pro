@@ -1,6 +1,9 @@
 {meta: title What Will I Tell My Darling}
 {meta: artist Faron Young}
 {meta: composer Jerry Crutchfield and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file whatwillitellmydarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](What) [D7]what will I tell my [G]darling
@@ -33,3 +36,7 @@ And [G]say whose [D7]darling are [G]you
 {start_of_verse: Verse 4}
 (What will [D7]I tell my [G]darling)
 {end_of_verse}
+
+
+
+

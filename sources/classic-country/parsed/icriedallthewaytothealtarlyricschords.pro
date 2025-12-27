@@ -1,6 +1,9 @@
 {meta: title I Cried All The Way To The Altar}
 {meta: artist Patsy Cline}
 {meta: composer Bobbie Flournoy}
+{meta: x_source classic-country}
+{meta: x_source_file icriedallthewaytothealtarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I cried all the way [G7]to the [C]altar
@@ -33,3 +36,6 @@
 [G]I cried all the [G7]way to the [C]altar
 [D7]Now too late I know that we were wrong to [G]part
 {end_of_verse}
+
+
+

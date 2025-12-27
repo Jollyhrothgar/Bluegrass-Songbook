@@ -1,5 +1,8 @@
 {meta: title Smiling In The Morning}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file smilinginthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was smiling in the morning
@@ -46,3 +49,8 @@ And [G7]crying in the after[C]noon
 She was [F]smiling in the morning
 And [G7]crying in the after[C]noon
 {end_of_verse}
+
+
+
+
+

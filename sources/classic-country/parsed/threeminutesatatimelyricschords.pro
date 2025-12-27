@@ -1,6 +1,9 @@
 {meta: title Three Minutes At A Time}
 {meta: artist Gene Watson}
 {meta: composer Tim Mensey and Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file threeminutesatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With a pocket full of quarters and [C7]time on my [F]hands
@@ -34,3 +37,7 @@ I'm [C]getting by [G7]three minutes at a [C]time
 I drop a quarter in the [C7]jukebox and for a [F]while you're still [Fm]mine
 I'm [C]getting by [G7]three minutes at a [F]tim[C]e
 {end_of_verse}
+
+
+
+

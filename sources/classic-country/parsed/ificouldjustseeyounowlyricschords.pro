@@ -1,6 +1,9 @@
 {meta: title If I Could Just See You Now}
 {meta: artist Alabama}
 {meta: composer Jeff Cook and Linne Black}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldjustseeyounowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your love for me is gone but my [Em]love for you lives on
@@ -37,3 +40,8 @@ If [D7]I could just see you [G]now
 {start_of_verse: Verse 6}
 If [D7]I could just see you [G]now
 {end_of_verse}
+
+
+
+
+

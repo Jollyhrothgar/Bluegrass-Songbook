@@ -1,6 +1,9 @@
 {meta: title Working My Way Through A Heartache Lyrics Chords}
 {meta: artist Marty Robbins}
 {meta: composer Buddy Mize and Charles Field}
+{meta: x_source classic-country}
+{meta: x_source_file workingmywaythroughaheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I get up every morning and start my daily [G7]routine
@@ -29,3 +32,6 @@ I'm [G7]working my way working my way through a [C]heartache
 But I know if I fail then I'm gone [C7]so I've gotta [F]hang on
 I'm not [C]doing too well [G7]working my way through a [C]heartache
 {end_of_verse}
+
+
+

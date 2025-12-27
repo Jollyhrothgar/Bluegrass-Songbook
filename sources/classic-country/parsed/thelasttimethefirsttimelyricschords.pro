@@ -1,6 +1,9 @@
 {meta: title The Last Time The First Time}
 {meta: artist George Strait}
 {meta: composer Robert Kelly}
+{meta: x_source classic-country}
+{meta: x_source_file thelasttimethefirsttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm seeing you for the [D7]last [G]time
@@ -34,3 +37,7 @@ It's the [G]last time the [D7]first time
 The [G]first time it's the [C]last time
 The [G]last time the [D7]first time for [G]me
 {end_of_verse}
+
+
+
+

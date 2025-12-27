@@ -1,5 +1,8 @@
 {meta: title Treat Her Right}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file treatherrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I know that she loves you but she once love me [F]too
@@ -28,3 +31,6 @@ Now here's someone who knows who's broken heart still [F]shows
 [C]Because she loved me so I didn't think she'd [F]go
 [G7]But take a fools advice and treat her [C]right
 {end_of_verse}
+
+
+

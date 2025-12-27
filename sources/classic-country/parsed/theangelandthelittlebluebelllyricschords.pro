@@ -1,6 +1,9 @@
 {meta: title The Angel And The Little Blue Bell}
 {meta: artist Brenda Lee}
 {meta: composer Fred A. McCrae}
+{meta: x_source classic-country}
+{meta: x_source_file theangelandthelittlebluebelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At Christmas [D7]time in the [G]steeple [C]high
@@ -43,3 +46,8 @@ She [D7]changed the little blue bell to the [G]purest gold
 With the richest [C]tone to [G]hold and [C]hold 
 [G]Proud little thing  [D7]just hear him r-in[G]g
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Give Me Love}
 {meta: artist Jean Shepard}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file justgivemelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don’t wish the world belonged to me
@@ -43,3 +46,8 @@ That I have [F]someone who loves me [C]so
 Just give me love and I’ll be [G7]happy 
 Just [C]give me love [F]please give me [C]love
 {end_of_verse}
+
+
+
+
+

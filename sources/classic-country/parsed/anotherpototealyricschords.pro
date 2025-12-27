@@ -1,6 +1,9 @@
 {meta: title Another Pot O' Tea}
 {meta: artist Anne Murray}
 {meta: composer Paul Grady}
+{meta: x_source classic-country}
+{meta: x_source_file anotherpototealyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Put on [D7]another pot o' [G]tea
@@ -33,3 +36,7 @@ So put [D7]another pot o' [G]tea
 Cause I'm in love with the Irish [D7]accent to your sto[C]ry
 And I [G]need a rosa[C]ry  
 {end_of_verse}
+
+
+
+

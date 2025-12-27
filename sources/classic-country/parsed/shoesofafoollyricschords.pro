@@ -1,6 +1,9 @@
 {meta: title Shoes Of A Fool}
 {meta: artist Charlie Walker}
 {meta: composer Jim Coleman and Jimmy Day}
+{meta: x_source classic-country}
+{meta: x_source_file shoesofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]See them walking down the street
@@ -43,3 +46,7 @@ Just [D7]up and clicked her heels and walked [G7]away
 Right across that barroom floor
 [D7]Those are the [G7]shoes of a [C]fool
 {end_of_verse}
+
+
+
+

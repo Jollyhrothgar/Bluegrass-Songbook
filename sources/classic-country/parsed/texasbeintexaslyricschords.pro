@@ -1,6 +1,9 @@
 {meta: title Texas Bein' Texas}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Richard Hampton}
+{meta: x_source classic-country}
+{meta: x_source_file texasbeintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A golden sunrise brightens up an [C]ashen morning [Am]sky
@@ -62,3 +65,11 @@ It's [C]just Texas bein' [D7]Texas and she's [G]mine
 From the lazy days of summer to the [C]chill of winter [Am]time
 It's [C]just Texas bein' [D7]Texas and she's [G]mine
 {end_of_verse}
+
+
+
+
+
+
+
+

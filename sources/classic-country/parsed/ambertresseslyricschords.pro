@@ -1,6 +1,9 @@
 {meta: title Amber Tresses}
 {meta: artist Doyle Lawson}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file ambertresseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Far away in some deep [F]valley [C]where the merry sunbeams [G7]play
@@ -35,3 +38,9 @@ And she wore beneath her [F]bonnet [G7]amber tresses tied in [C]blue
 {start_of_verse: Verse 5}
 And she wore beneath her [F]bonnet [G7]amber tresses tied in [C]blue 
 {end_of_verse}
+
+
+
+
+
+

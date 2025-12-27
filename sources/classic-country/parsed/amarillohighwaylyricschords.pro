@@ -1,6 +1,9 @@
 {meta: title Amarillo Highway}
 {meta: artist Bobby Bare}
 {meta: composer Terry Allen}
+{meta: x_source classic-country}
+{meta: x_source_file amarillohighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm a high straight in Plainview side bet in Idalou
@@ -48,3 +51,9 @@ Is speedin' up ol' 87 of that hard-ass Amarillo [C]highway
 Yeah I'm a panhandlin' man handlin'
 Post holin' high rollin' dust bowlin' [F]daddy
 {end_of_verse}
+
+
+
+
+
+

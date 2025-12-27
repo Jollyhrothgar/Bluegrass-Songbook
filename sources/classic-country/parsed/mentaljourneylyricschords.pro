@@ -1,6 +1,9 @@
 {meta: title Mental Journey}
 {meta: artist David Houston}
 {meta: composer Margie Singleton and Leon Ashley}
+{meta: x_source classic-country}
+{meta: x_source_file mentaljourneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I've ever planted flowers in your [Am]garden
@@ -29,3 +32,6 @@ And my [F]thoughts may wander [G7]back from time to [C]time
 [F]Don't be [G7]alarmed cause I [C]mean you no [Am]harm
 I'm just [F]walkin' with the [G7]memories of my [C]mind
 {end_of_verse}
+
+
+

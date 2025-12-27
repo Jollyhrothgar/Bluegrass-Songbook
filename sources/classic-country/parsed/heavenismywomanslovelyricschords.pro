@@ -1,6 +1,9 @@
 {meta: title Heaven Is My Woman's Love}
 {meta: artist Tommy Overstreet}
 {meta: composer S. K. Dobbins}
+{meta: x_source classic-country}
+{meta: x_source_file heavenismywomanslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heaven is my woman's [D7]love
@@ -50,3 +53,9 @@ Gently reaching out for [G]me
 All she wants is what I [D7]am
 Searching not for what I'll [G]be
 {end_of_verse}
+
+
+
+
+
+

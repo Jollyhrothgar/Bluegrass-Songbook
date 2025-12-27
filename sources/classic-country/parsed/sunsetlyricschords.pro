@@ -1,6 +1,9 @@
 {meta: title Sunset}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Joe Melson}
+{meta: x_source classic-country}
+{meta: x_source_file sunsetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see her when the sun is high 
@@ -43,3 +46,8 @@ I'm [G]holding her [C]tight
 It's sunset and now I'm with my baby 
 And [G]she is [D7]mine [A#7]to--[C]night
 {end_of_verse}
+
+
+
+
+

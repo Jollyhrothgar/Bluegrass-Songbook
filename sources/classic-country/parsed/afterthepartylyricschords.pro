@@ -1,6 +1,9 @@
 {meta: title After The Party}
 {meta: artist Gene Watson}
 {meta: composer Joe Eddie Gough}
+{meta: x_source classic-country}
+{meta: x_source_file afterthepartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How does it [C]feel in the [D7]morning [G]after the [C]party
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [C]Just ease the [G]pain of [D7]living a [G][C]l--ie
 {end_of_verse}
+
+
+

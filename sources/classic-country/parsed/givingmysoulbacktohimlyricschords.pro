@@ -1,6 +1,9 @@
 {meta: title Giving My Soul Back To Him}
 {meta: artist Russell Moore and IIIrd Tyme Out}
 {meta: composer Billy Smith and Hazel Smith}
+{meta: x_source classic-country}
+{meta: x_source_file givingmysoulbacktohimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's love there's love in His sweet word
@@ -36,3 +39,7 @@ There's [G7]peace there's peace to [C]feel within
 There's life there's life He [F]gave this world
 So I'm [C]giving my [G7]soul back to [C]Him
 {end_of_verse}
+
+
+
+

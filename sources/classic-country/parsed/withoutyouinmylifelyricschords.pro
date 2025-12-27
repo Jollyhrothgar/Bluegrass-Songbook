@@ -1,6 +1,9 @@
 {meta: title Without You In My Life}
 {meta: artist Kenny Rogers}
 {meta: composer Lionel Richie and Thomas McClary}
+{meta: x_source classic-country}
+{meta: x_source_file withoutyouinmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Life's winding [G7]roads may be [Am]lonely[Em]
@@ -53,3 +56,11 @@ Without [Dm]you [G7] in my [C]life
 {start_of_verse: Verse 6}
 [G7]In my [C]life  [G7] in my [C]life [G7] in my [C]life
 {end_of_verse}
+
+
+
+
+
+
+
+

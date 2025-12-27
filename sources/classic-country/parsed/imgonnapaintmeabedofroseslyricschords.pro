@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Paint Me A Bed Of Roses}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard and Bobby Whitson}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnapaintmeabedofroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In our bedroom there's a portrait
@@ -32,3 +35,7 @@ Put some flowers on the ground
 [F]Yeah I'm gonna paint me a bed of [C]roses
 [G7]Where love and passion never [C]die
 {end_of_verse}
+
+
+
+

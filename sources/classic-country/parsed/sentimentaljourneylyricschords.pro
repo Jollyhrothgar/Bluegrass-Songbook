@@ -1,5 +1,8 @@
 {meta: title Sentimental Journey}
 {meta: artist Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file sentimentaljourneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna take a sentimental journey 
@@ -28,3 +31,6 @@ Why did I [A7]decide to [D7]roam
 I'm gonna [G]take a sentimental [C]journey 
 [G]Sentimental [D7]journey [G]home
 {end_of_verse}
+
+
+

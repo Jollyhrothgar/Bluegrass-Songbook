@@ -1,6 +1,9 @@
 {meta: title Don’t Monkey With Another Monkey’s Monkey}
 {meta: artist Johnny Paycheck}
 {meta: composer Dale Morris}
+{meta: x_source classic-country}
+{meta: x_source_file dontmonkeywithanothermonkeysmonkeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was up in Virginia at a [F]place called Pappa [C]Joe's
@@ -39,3 +42,8 @@ Well don't monkey with another monkey's monkey
 [C]We were really turning it on and [F]boy I was having some [C]fun
 [G7]And that's when I discovered I was a holding that gorilla man's [C]hon
 {end_of_verse}
+
+
+
+
+

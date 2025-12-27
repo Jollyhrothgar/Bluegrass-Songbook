@@ -1,6 +1,9 @@
 {meta: title If It Ain't Strong Enough}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file ifitaintstrongenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd swim the wide Missouri with a rope tied around my neck
@@ -54,3 +57,9 @@ There ain't [D7]no such thing called [G]love
 If that ain't strong enough 
 There ain't [D7]no such thing called [G]love
 {end_of_verse}
+
+
+
+
+
+

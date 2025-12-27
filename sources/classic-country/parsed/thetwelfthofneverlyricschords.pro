@@ -1,6 +1,9 @@
 {meta: title The Twelfth Of Never}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Livingston}
+{meta: x_source classic-country}
+{meta: x_source_file thetwelfthofneverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You ask how much I need [Am]you must [F]I [C]explain
@@ -24,3 +27,6 @@ Oh [Am]until the twelfth of [F]never [C]and [F]that's a [G7]long long [C]time
 {start_of_verse: Verse 4}
 [Am]Until the twelfth of [F]never [C]and [F]that's a [G7]long long [C]time
 {end_of_verse}
+
+
+

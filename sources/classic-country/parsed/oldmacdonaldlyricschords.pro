@@ -1,6 +1,9 @@
 {meta: title Old MacDonald}
 {meta: artist Elvis Presley}
 {meta: composer Randy Starr}
+{meta: x_source classic-country}
+{meta: x_source_file oldmacdonaldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Old MacDonald [C]had a [G]farm [G][D7]ee-i-ee-i-o
@@ -38,3 +41,6 @@ An oink oink here and [C]oink oink [G]there and I can [D7]promise [G]you
 If [C]those animals ever get [G]out of line [D7]we'll have a mulligan [G]stew
 [D7]How about [G]you
 {end_of_verse}
+
+
+

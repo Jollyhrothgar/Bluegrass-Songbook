@@ -1,6 +1,9 @@
 {meta: title Long Black Limousine}
 {meta: artist Merle Haggard}
 {meta: composer Bobby George and Vern Stovall}
+{meta: x_source classic-country}
+{meta: x_source_file longblacklimousinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a long line of mourners [C]headed down our [G]street
@@ -29,3 +32,6 @@ With a chauffeur at the wheel dressed [D7]up fine
 I'll [G]never love another my [C]heart and all [G]my dreams
 Ride with you in that [D7]long black [G]limousine
 {end_of_verse}
+
+
+

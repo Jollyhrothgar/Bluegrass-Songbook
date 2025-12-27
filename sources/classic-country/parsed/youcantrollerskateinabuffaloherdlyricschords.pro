@@ -1,5 +1,8 @@
 {meta: title You Can't Roller Skate In A Buffalo Herd}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file youcantrollerskateinabuffaloherdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can't rollerskate in a buffalo herd
@@ -66,3 +69,12 @@ You can't drive around with a tiger in your car
 [G]You can't rollerskate in a buffalo herd
 [D7]But you can be happy if [G]you've a mind to
 {end_of_verse}
+
+
+
+
+
+
+
+
+

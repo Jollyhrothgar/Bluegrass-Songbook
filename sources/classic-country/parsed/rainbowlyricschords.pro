@@ -1,6 +1,9 @@
 {meta: title Rainbow}
 {meta: artist Marty Robbins}
 {meta: composer Oakie Jones}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did you ever find your[C]self out chasing [G]rainbows
@@ -22,3 +25,5 @@ I've been stepping over [G7]dollars just for [C]dimes
 Did you ever find yourself chasing [G]rainbows
 When that [D7]pot of gold was right there all the [G]time
 {end_of_verse}
+
+

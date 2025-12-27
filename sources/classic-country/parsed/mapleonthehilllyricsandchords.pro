@@ -1,6 +1,9 @@
 {meta: title Maple on the Hill}
 {meta: artist Hank Locklin}
 {meta: composer Addison Cole}
+{meta: x_source classic-country}
+{meta: x_source_file mapleonthehilllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here upon the quiet country village stood the [C]maple on the [G]hill
@@ -29,3 +32,6 @@ Will you keep this final [A7]promise that you [D7]gave
 [G]While you linger there in silence thinking [C]only of the [G]past
 May your teardrops kiss the [D7]flowers on my [G]grave
 {end_of_verse}
+
+
+

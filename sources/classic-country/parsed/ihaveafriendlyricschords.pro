@@ -1,6 +1,9 @@
 {meta: title I Have A Friend}
 {meta: artist Cowboy Copas}
 {meta: composer Tommy Hill and Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file ihaveafriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have a friend a wonderful friend
@@ -51,3 +54,9 @@ I looked for my God my God I could not see
 He paid for me on Calvary's tree
 [G7]He is my [C]friend [F]ooh [C]yes
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Baby She's Gone}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file babyshesgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My baby-baby-baby she's gone from me
@@ -41,3 +44,7 @@ What to do what to do
 Well may [G7]baby she's [D7]gone
 I [C]guess she's [G7]gone to [C]stay
 {end_of_verse}
+
+
+
+

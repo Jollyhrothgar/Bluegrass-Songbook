@@ -1,5 +1,8 @@
 {meta: title A World Of Blue}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file aworldofbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Green green leaves falling [F]down 
@@ -36,3 +39,7 @@ Must mean that I'm living [G7]in a world of [C]blue
 {start_of_verse: Verse 4}
 Must mean that I'm living [G7]in a world of [C]blue
 {end_of_verse}
+
+
+
+

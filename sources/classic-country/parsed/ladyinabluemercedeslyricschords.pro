@@ -1,6 +1,9 @@
 {meta: title Lady In A Blue Mercedes}
 {meta: artist Johnny Duncan and Janie Fricke}
 {meta: composer Daniel Darst and Gary Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file ladyinabluemercedeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was a windy day down Malibu way 
@@ -70,3 +73,13 @@ Parked her car [G7]down by the [C]sea
 She stepped into the sand and took me by the [G]hand 
 And we [D7]traveled away in my [G]dreams 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

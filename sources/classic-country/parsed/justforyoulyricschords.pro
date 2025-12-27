@@ -1,6 +1,9 @@
 {meta: title Just For You}
 {meta: artist Wanda Jackson}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file justforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I gave up all my friends just for [D7]you
@@ -22,3 +25,5 @@
 [G]I gave so much with no return I guess [G7]my heart will never [C]learn
 [D7]Cause I still wait and I still yearn just for [G][C]y-ou
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Memories Always Linger On}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Zeb Turner and Carl Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file memoriesalwayslingeronlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought my life would [F]start a[C]new
@@ -29,3 +32,6 @@ You're molded in my [G7]heart
 Will [C]be I know un[F]til I [C]die
 Yet we're so [G7]far a[C]part
 {end_of_verse}
+
+
+

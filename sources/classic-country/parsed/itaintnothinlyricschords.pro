@@ -1,6 +1,9 @@
 {meta: title It Ain't Nothin'}
 {meta: artist Keith Whitley}
 {meta: composer Tony Haselden}
+{meta: x_source classic-country}
+{meta: x_source_file itaintnothinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My boss is the boss's son 
@@ -57,3 +60,9 @@ It ain't [G]nothin'[D7]
 It ain't [G]nothin'[Am]   [D7]
 It ain't [G]nothin'
 {end_of_verse}
+
+
+
+
+
+

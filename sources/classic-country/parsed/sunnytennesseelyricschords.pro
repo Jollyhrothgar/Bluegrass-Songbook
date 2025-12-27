@@ -1,5 +1,8 @@
 {meta: title Sunny Tennessee}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file sunnytennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've [E7]been all around this [A7]big wide world
@@ -31,3 +34,6 @@ We'll go [D7]see that preacher man just you and [G]me
 I gotta [E7]get there right away not [A7]tomorrow but today
 So [D7]take me back to sunny Tenne[G]ssee
 {end_of_verse}
+
+
+

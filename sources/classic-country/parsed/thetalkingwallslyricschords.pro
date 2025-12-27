@@ -1,6 +1,9 @@
 {meta: title The Talking Walls}
 {meta: artist Jim Reeves}
 {meta: composer Mattie O'Neil}
+{meta: x_source classic-country}
+{meta: x_source_file thetalkingwallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the shades of twilight close the [C]day
@@ -29,3 +32,6 @@
 [G]Every step we made my heart [C]recalls
 [D7]You are there behind the talking [G]walls
 {end_of_verse}
+
+
+

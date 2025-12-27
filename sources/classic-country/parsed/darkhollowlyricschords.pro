@@ -1,6 +1,9 @@
 {meta: title Dark Hollow}
 {meta: artist Mac Wiseman}
 {meta: composer Bill Browning}
+{meta: x_source classic-country}
+{meta: x_source_file darkhollowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd rather be in [G7]some dark [C]hollow
@@ -30,3 +33,6 @@ Take me far on [F]down the [C]track
 I'm going [C7]away I'm [F]leaving today
 I'm [C]going but I’m [G7]never coming [C]back
 {end_of_verse}
+
+
+

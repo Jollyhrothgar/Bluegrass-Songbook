@@ -1,6 +1,9 @@
 {meta: title You're Not My Same Sweet Baby}
 {meta: artist Waylon Jennings}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file yourenotmysamesweetbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're not my [C]same [D7]sweet baby [G]lady
@@ -44,3 +47,8 @@ To [G]lay all the blame off on [C]you
 The [D7]world is all wrong girl and [C]I'm not the man
 [G]Who can change it for [C]you
 {end_of_verse}
+
+
+
+
+

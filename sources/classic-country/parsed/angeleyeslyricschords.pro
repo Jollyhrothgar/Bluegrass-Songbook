@@ -1,6 +1,9 @@
 {meta: title Angel Eyes}
 {meta: artist Waylon Jennings}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file angeleyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Angel eyes  [C]angel eyes
@@ -37,3 +40,8 @@ You can move [C]the hearts of men
 [G]Tell me what would we do 
 Without no [D7]light from angel [G]eyes
 {end_of_verse}
+
+
+
+
+

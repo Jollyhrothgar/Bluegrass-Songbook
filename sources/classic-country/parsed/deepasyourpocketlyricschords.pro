@@ -1,5 +1,8 @@
 {meta: title Deep As Your Pocket}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file deepasyourpocketlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're telling me she loves you what a laugh
@@ -32,3 +35,7 @@ Cause her [C]love for you is [G7]just deep as your [C]pocket
 {start_of_verse: Verse 4}
 Yeah her love for you is [G7]just deep as your [C]pocket
 {end_of_verse}
+
+
+
+

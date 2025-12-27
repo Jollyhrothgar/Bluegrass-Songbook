@@ -1,6 +1,9 @@
 {meta: title I Hate Myself For Falling In Love With You Lyrics and chords}
 {meta: artist Faron Young}
 {meta: composer Cliff Crawford}
+{meta: x_source classic-country}
+{meta: x_source_file ihatemyselfforfallinginlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the next time I see you I'm really gonna show [F]you
@@ -39,3 +42,8 @@
 [C]I'm gonna act like it don't even thrill me
 [G]Cause I hate myself [G7]for falling in love [C]with [C7]you
 {end_of_verse}
+
+
+
+
+

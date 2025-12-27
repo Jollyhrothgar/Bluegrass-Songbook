@@ -1,5 +1,8 @@
 {meta: title Set Me Free}
 {meta: artist Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file setmefreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't know what's wrong but I can't sleep at night
@@ -36,3 +39,9 @@ When it's time to eat I have no appetite
 But if it's love that's worrying [G7]me
 I hope you'll set me [C]free
 {end_of_verse}
+
+
+
+
+
+

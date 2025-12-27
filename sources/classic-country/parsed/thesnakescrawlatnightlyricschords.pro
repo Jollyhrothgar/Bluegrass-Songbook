@@ -1,6 +1,9 @@
 {meta: title The Snakes Crawl at Night}
 {meta: artist Charley Pride}
 {meta: composer Mel Tillis and Fred Burch}
+{meta: x_source classic-country}
+{meta: x_source_file thesnakescrawlatnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The snakes crawl at night
@@ -38,3 +41,9 @@ And they sentenced me to die right [D7]away
 But before I leave this courtroom please your honor
 There's something more that I would like [G]to say
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Road Of No Return}
 {meta: artist Ray Price}
 {meta: composer C.M. Bradley}
+{meta: x_source classic-country}
+{meta: x_source_file theroadofnoreturnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There were tears in her eyes as [C]she told me [G]goodbye
@@ -29,3 +32,6 @@ She was [C]mine through the years now I can't claim [G]her
 Now [G]another has her heart but from [C]mine she'll never [G]part
 Though she's [D7]walked down that road of no [G]return
 {end_of_verse}
+
+
+

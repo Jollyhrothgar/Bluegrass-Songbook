@@ -1,6 +1,9 @@
 {meta: title I Forgot That I Don't Live Here Anymore}
 {meta: artist Moe Bandy}
 {meta: composer Chris Waters, Michael Garvin, Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file iforgotthatidontlivehereanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Four am [C7]and raining I [F]finally found my way back [C]home
@@ -33,3 +36,7 @@ I’m [F]sorry that I [G7]woke you up I [F]forgot that I [G7]don’t live here a
 {start_of_verse: Verse 5}
 I’m [F]sorry that I [G7]woke you up I [F]forgot that I [G7]don’t live here any[C]more
 {end_of_verse}
+
+
+
+

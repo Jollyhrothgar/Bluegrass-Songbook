@@ -1,6 +1,9 @@
 {meta: title Katy Too}
 {meta: artist Johnny Cash}
 {meta: composer Jack Clement and Johnny R. Cash}
+{meta: x_source classic-country}
+{meta: x_source_file katytoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm not the goin' steady [C]kind
@@ -49,3 +52,8 @@
 [D7]Then let's squeeze in ol' Katy [G]too
 [C]Katy too Katy too let's [D7]squeeze in ol' Katy [G]too
 {end_of_verse}
+
+
+
+
+

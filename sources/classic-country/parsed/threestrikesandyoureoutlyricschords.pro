@@ -1,5 +1,8 @@
 {meta: title Three Strikes And You're Out}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file threestrikesandyoureoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now love is like a game my darling 
@@ -49,3 +52,9 @@ If you cheat the umpire throws you [G7]out
 You [C]cheated and you lied you were [F]never satisfied
 And [C]you made three [G7]strikes and now you're [C]out
 {end_of_verse}
+
+
+
+
+
+

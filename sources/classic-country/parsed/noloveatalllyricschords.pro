@@ -1,6 +1,9 @@
 {meta: title No Love At All}
 {meta: artist Waylon Jennings}
 {meta: composer Wayne C. Thompson and Johnny Christopher}
+{meta: x_source classic-country}
+{meta: x_source_file noloveatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Read in the paper nearly everyday 
@@ -59,3 +62,9 @@ A little bit of love is better than no love
 [F]Even bad love's better than no love
 And [G7]any kind of love is [F]better than [G7]no love at [C]all
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Never Be Free}
 {meta: artist Jean Shepard}
 {meta: composer Bennie Benjamin and George Weiss}
+{meta: x_source classic-country}
+{meta: x_source_file illneverbefreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Each time I [C]hold somebody [C7]new
@@ -48,3 +51,9 @@
 [G7]I'll never be [C]free  [G7]I'll never be [C]free
 [G7]I'll never be [C]free
 {end_of_verse}
+
+
+
+
+
+

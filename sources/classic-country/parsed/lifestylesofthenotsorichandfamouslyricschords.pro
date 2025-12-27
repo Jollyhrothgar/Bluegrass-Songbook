@@ -1,6 +1,9 @@
 {meta: title Lifestyles Of The Not So Rich And Famous}
 {meta: artist Tracy Byrd}
 {meta: composer Byron Hill and Wayne Tester}
+{meta: x_source classic-country}
+{meta: x_source_file lifestylesofthenotsorichandfamouslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey they're bringin' out a TV crew 
@@ -42,3 +45,7 @@ Our [F]champagne and caviar is an [D7]RC cola and a [G7]moon pie
 I'm talking bout [C]lifestyles of the [G7]not so rich and [C]famous[F]
 [C]Lifestyles of the [G7]not so rich and [C]famous
 {end_of_verse}
+
+
+
+

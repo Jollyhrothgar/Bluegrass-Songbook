@@ -1,6 +1,9 @@
 {meta: title There Ain't No Getting Over Me}
 {meta: artist Ronnie Milsap}
 {meta: composer Tom Brasfield &amp; Walt Aldridge}
+{meta: x_source classic-country}
+{meta: x_source_file thereaintnogettingovermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you can walk out on me [Am]tonight
@@ -45,3 +48,7 @@ There ain't [G7]no getting over [C]me
 [Am]Ooooh [Dm]darling
 There ain't no [G7]getting over [C]me
 {end_of_verse}
+
+
+
+

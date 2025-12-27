@@ -1,6 +1,9 @@
 {meta: title Miss The Mississippi And You}
 {meta: artist Merle Haggard}
 {meta: composer Bill Halley and Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file missthemississippiandyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm growing [Am]tired of the [F]big city [D7]lights
@@ -46,3 +49,9 @@ Memories are [C7]bringing [F]happy days of [Fm]your
 Ou [F]de le-ee ou de le-ee de [C]ou le-ee ou de le-ee
 Mississippi [G7]and [C]you
 {end_of_verse}
+
+
+
+
+
+

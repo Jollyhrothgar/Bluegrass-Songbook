@@ -1,6 +1,9 @@
 {meta: title Dancing On My Feet}
 {meta: artist Everly Brothers}
 {meta: composer Phil Everly}
+{meta: x_source classic-country}
+{meta: x_source_file dancingonmyfeetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You're [G]really quite a [Em]beauty
@@ -46,3 +49,8 @@
 [D7]But I gotta find my seat
 [G]Cause you're dancin' [C]on [D7]my feet
 {end_of_verse}
+
+
+
+
+

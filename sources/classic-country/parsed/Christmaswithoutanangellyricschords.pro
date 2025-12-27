@@ -1,5 +1,8 @@
 {meta: title Christmas Without An Angel}
 {meta: artist Dale Watson}
+{meta: x_source classic-country}
+{meta: x_source_file Christmaswithoutanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We are far apart but [F]you're still [G7]in my [C]heart
@@ -33,3 +36,7 @@ You're [Dm]bound to be [G7]blue come Christmas [C]time
 Without and [F]angel to [G7]put you in [C]hea[G7]ven [Am]
 You're [Dm]bound to be [G7]blue come Christmas [C]time
 {end_of_verse}
+
+
+
+

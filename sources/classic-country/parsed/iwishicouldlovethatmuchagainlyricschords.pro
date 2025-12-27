@@ -1,6 +1,9 @@
 {meta: title I Wish I Could Love That Much Again}
 {meta: artist Billy Walker}
 {meta: composer Vic McAlpin and Glenn D. Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file iwishicouldlovethatmuchagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I [F]wish I could [G7]love that much [C]again
@@ -23,3 +26,5 @@ No [F]matter what the [G7]price was in the [C]end
 I just [G7]wish I could love that much [C]again
 I just [G7]wish I could love that much [C]again
 {end_of_verse}
+
+

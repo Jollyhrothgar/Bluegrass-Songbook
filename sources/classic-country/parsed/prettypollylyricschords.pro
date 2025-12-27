@@ -1,6 +1,9 @@
 {meta: title Pretty Polly}
 {meta: artist The Stanley Brothers}
 {meta: composer Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file prettypollylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh Polly Pretty Polly would you take me in time
@@ -55,3 +58,11 @@ Oh went down to the jailhouse and what did he say
 He went down to the jailhouse and what did he say
 I've killed Pretty Polly and [D7]trying to get [G]away
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title You Mean So Very Much To Me}
 {meta: artist Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file youmeansoverymuchtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've been [C]lonely I've been [G7]blue
@@ -24,3 +27,6 @@ You mean so [C]much so very [G7]much to me my [C]love [F]   [C]
 A lonely [C]heartache that just won't [F]fade
 You mean so [C]much so very [G7]much to me my [C]love [F]   [C]
 {end_of_verse}
+
+
+

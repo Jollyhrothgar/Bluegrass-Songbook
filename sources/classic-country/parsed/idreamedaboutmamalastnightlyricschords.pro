@@ -1,6 +1,9 @@
 {meta: title I Dreamed About Mama Last Night}
 {meta: artist Hank Williams}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file idreamedaboutmamalastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've just been to heaven with [C]someone so [G]true
@@ -59,3 +62,11 @@ Perhaps I'll sleep the whole night through I may be different then
 [C]My dream is a treasure that I'll always [G]keep
 [D7]I dreamed about mama last [G]night
 {end_of_verse}
+
+
+
+
+
+
+
+

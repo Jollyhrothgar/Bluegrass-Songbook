@@ -1,6 +1,9 @@
 {meta: title Can't You Love Me Just A Little}
 {meta: artist Billy Walker}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file cantyoulovemejustalittlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can’t you love me just a little
@@ -43,3 +46,8 @@ Can’t you need me just a little
 [G7]That just little bit by little
 [C]You’d care more and more for me
 {end_of_verse}
+
+
+
+
+

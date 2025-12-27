@@ -1,6 +1,9 @@
 {meta: title My Dreams Lyrics chords}
 {meta: artist Faron Young}
 {meta: composer Herbert Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file mydreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When day ends and night falls
@@ -44,3 +47,11 @@ Repeat
 {start_of_verse: Verse 9}
 [G7]And darling my dreams are of [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+

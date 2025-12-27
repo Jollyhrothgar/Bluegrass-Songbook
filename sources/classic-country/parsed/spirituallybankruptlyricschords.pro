@@ -1,6 +1,9 @@
 {meta: title Spiritually Bankrupt}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file spirituallybankruptlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was an empty vessel 
@@ -78,3 +81,13 @@ Spiritually bank[Am]rupt
 Drowning in [Am]pool
 [G7]Of my own self [C]pity
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

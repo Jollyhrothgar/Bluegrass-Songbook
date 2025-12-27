@@ -1,6 +1,9 @@
 {meta: title Atlanta Blue}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file atlantabluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro: 
@@ -37,3 +40,7 @@ Just someone [D7]I used to [G]know [Am]
 Someone [D7]I never quite got [G]over
 [Am]A long [D7]long time [G]ago
 {end_of_verse}
+
+
+
+

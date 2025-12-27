@@ -1,6 +1,9 @@
 {meta: title Makes Me Wonder If I Ever Said Goodbye}
 {meta: artist Kenny Rogers}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file makesmewonderifieversaidgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She at times still comes around 
@@ -31,3 +34,6 @@ Makes me [G]wonder if I [D7]ever said good[G]bye
 {start_of_verse: Verse 4}
 [C]Makes me [G]wonder if I [D7]ever said good[G]bye
 {end_of_verse}
+
+
+

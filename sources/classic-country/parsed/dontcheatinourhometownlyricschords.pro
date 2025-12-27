@@ -1,6 +1,9 @@
 {meta: title Don't Cheat In Our Home Town}
 {meta: artist Ricky Skaggs}
 {meta: composer Ray Pennington and Roy Marcum}
+{meta: x_source classic-country}
+{meta: x_source_file dontcheatinourhometownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight my heart is beating low and [C7]my head is [F]bowed
@@ -34,3 +37,7 @@
 Tag:
 [F]So if you're gonna [C]cheat on me don't [G7]cheat in our home [C]town
 {end_of_verse}
+
+
+
+

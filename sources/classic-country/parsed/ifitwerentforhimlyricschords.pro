@@ -1,6 +1,9 @@
 {meta: title If It Weren't For Him}
 {meta: artist Vince Gill}
 {meta: composer Rosanne Cash and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file ifitwerentforhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If she'd only [F]knew what I was [C]thinking
@@ -33,3 +36,7 @@ He'd be [Em]mine [F]if it weren't for [C]him
 {start_of_verse: Verse 5}
 You'd be [Em]mine [F]if it weren't for [C]him
 {end_of_verse}
+
+
+
+

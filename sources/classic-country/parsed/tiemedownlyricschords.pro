@@ -1,5 +1,8 @@
 {meta: title Tie Me Down}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file tiemedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've dodged the flame of love 
@@ -68,3 +71,12 @@ That [F]ever could [C]slow me [G]down
 [C]She was the [G]only one 
 That [F]ever could [C]tie me [G]down
 {end_of_verse}
+
+
+
+
+
+
+
+
+

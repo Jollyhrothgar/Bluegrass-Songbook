@@ -1,6 +1,9 @@
 {meta: title How Many Times}
 {meta: artist George Morgan}
 {meta: composer T.A. Dorsey}
+{meta: x_source classic-country}
+{meta: x_source_file howmanytimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]How many [G]times have I wounded His heart
@@ -30,3 +33,5 @@ And when I reach (reach those pearly gates)
 [C]Reach (reach those pearly gates)
 [G]Reach those pearly [A7]gates He’ll let me [G]in
 {end_of_verse}
+
+

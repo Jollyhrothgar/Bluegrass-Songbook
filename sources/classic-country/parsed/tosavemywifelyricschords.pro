@@ -1,6 +1,9 @@
 {meta: title To Save My Wife}
 {meta: artist Cal Smith}
 {meta: composer Jim Owens}
+{meta: x_source classic-country}
+{meta: x_source_file tosavemywifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I live on the brink of my [G7]world caving in
@@ -29,3 +32,6 @@ Your [D7]memory keeps calling [G]back inside my [G7]mind
 I [C]know someday she'll [C7]walk out of my [F]life
 But I [G7]can't stop loving you to save my [C]wife
 {end_of_verse}
+
+
+

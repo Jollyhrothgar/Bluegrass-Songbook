@@ -1,6 +1,9 @@
 {meta: title Something's Wrong In California}
 {meta: artist Waylon Jennings}
 {meta: composer Wayne C. Thompson and Rodney Lay}
+{meta: x_source classic-country}
+{meta: x_source_file somethingswrongincalifornialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Something's wrong in [F]Californ[G7]ia I [C]can tell by the [F]letter she don't [G7]write 
@@ -22,3 +25,5 @@ I said I'd [F]send for her when I [G7]made it
 [C]Something's wrong in [F]Californ[G7]ia [C]I can tell by the [F]letter she don't [G7]write 
 [C]Gotta get back to [F]Californ[G7]ia something's just not right in Cali[C]fornia
 {end_of_verse}
+
+

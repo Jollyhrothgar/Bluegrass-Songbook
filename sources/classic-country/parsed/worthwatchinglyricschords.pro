@@ -1,6 +1,9 @@
 {meta: title Worth Watching}
 {meta: artist Johnny Lee}
 {meta: composer Trey Matthews and Tony Raymee}
+{meta: x_source classic-country}
+{meta: x_source_file worthwatchinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Fishing that old Frio River
@@ -59,3 +62,8 @@ When my [F]life flashes before my [G7]eye
 Yeah when my [F]life flashes [C]before my [Dm]eyes
 [G7]It'll be worth [C]watching
 {end_of_verse}
+
+
+
+
+

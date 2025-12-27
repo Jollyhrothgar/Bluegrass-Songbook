@@ -1,6 +1,9 @@
 {meta: title Love Is Never Easy}
 {meta: artist Reba McEntire}
 {meta: composer Bob Morrison and Johnny McRae}
+{meta: x_source classic-country}
+{meta: x_source_file loveisnevereasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love should be [F]easy [C]it's such a natural [F]thing
@@ -34,3 +37,7 @@ More precious than gold
 [F]Love is never [G7]easy but it's more [D7]precious than gold
 More precious than gold more [F]precious than gold
 {end_of_verse}
+
+
+
+

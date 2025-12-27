@@ -1,6 +1,9 @@
 {meta: title Gone At Last}
 {meta: artist Johnny Paycheck}
 {meta: composer Paul Simon}
+{meta: x_source classic-country}
+{meta: x_source_file goneatlastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The night was black the roads were icy snow was [C]fallin' drifts were [G]high
@@ -43,3 +46,9 @@ I had a long streak of a bad luck but I [D7]pray it's gone at [G]last
 Yeah gone at last gone at last gone at [C]last gone at [G]last
 I had a long streak of a bad luck but I [D7]pray it's gone at [G]last
 {end_of_verse}
+
+
+
+
+
+

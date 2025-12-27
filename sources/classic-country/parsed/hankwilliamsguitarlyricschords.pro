@@ -1,5 +1,8 @@
 {meta: title Hank Williams' Guitar}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file hankwilliamsguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walked into country [C]music's Hall of [G]Fame
@@ -42,3 +45,8 @@
 [G]Like a child that's lost [C]I heard its mournful [G]cry
 [D7]Hank I'm [G]so [D7]lonesome I could [G]die
 {end_of_verse}
+
+
+
+
+

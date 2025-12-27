@@ -1,6 +1,9 @@
 {meta: title Cry}
 {meta: artist Tanya Tucker}
 {meta: composer Frank Musker and Garth Murphy}
+{meta: x_source classic-country}
+{meta: x_source_file crylyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard her [G7]cry at night  I heard him [C]slam the door
@@ -47,3 +50,10 @@ Hang your [G7]life out to dry and make a new [C]start[D7]
 So [G7]cry baby wash out your [C]heart[D7]
 Hang your [G7]life out to dry and make a new [C]start[D7]
 {end_of_verse}
+
+
+
+
+
+
+

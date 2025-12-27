@@ -1,6 +1,9 @@
 {meta: title Independence Day}
 {meta: artist Gene Watson}
 {meta: composer Dave Lindsey and Ernie Rowell}
+{meta: x_source classic-country}
+{meta: x_source_file independencedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've always told me that I couldn't make it without [F]you
@@ -34,3 +37,7 @@
 [G7]There's sure to be [C]some fireworks over [F]what I have to [D7]say
 [G7]I'm leaving you it's Independence [C]Day
 {end_of_verse}
+
+
+
+

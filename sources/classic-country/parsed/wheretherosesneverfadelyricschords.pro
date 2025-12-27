@@ -1,5 +1,8 @@
 {meta: title Where the Roses Never Fade}
 {meta: artist Norma Jean}
+{meta: x_source classic-country}
+{meta: x_source_file wheretherosesneverfadelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 I am going [C]to a city 
@@ -50,3 +53,12 @@ They are waiting for my coming
 I am going to a city
 [G7]Where the roses never [C]fade
 {end_of_verse}
+
+
+
+
+
+
+
+
+

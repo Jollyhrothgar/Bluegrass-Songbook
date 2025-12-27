@@ -1,6 +1,9 @@
 {meta: title By The River Of The Roses}
 {meta: artist George Morgan}
 {meta: composer Joe Burke and Marty Symes}
+{meta: x_source classic-country}
+{meta: x_source_file bytheriveroftheroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I met her by the river [F]of the [C]roses
@@ -32,3 +35,7 @@ I don't know when but we'll meet again I [G7]know
 She's waiting by the river of the roses
 The sweetest girl beside of the Ala[C]mo
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let's Keep It That Way}
 {meta: artist Anne Murray}
 {meta: composer Claude Putman Jr. and Rafe G. Van Hoy}
+{meta: x_source classic-country}
+{meta: x_source_file letskeepitthatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's no need to lie 
@@ -57,3 +60,10 @@ If I did him [C]wrong
 So [G]before we forget we're [D7]not cheaters yet
 Let's [G]keep it that way
 {end_of_verse}
+
+
+
+
+
+
+

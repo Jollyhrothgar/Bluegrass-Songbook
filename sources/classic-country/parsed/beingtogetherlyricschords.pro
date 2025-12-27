@@ -1,6 +1,9 @@
 {meta: title Being Together}
 {meta: artist Gene Pitney}
 {meta: composer Melba Montgomery and Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file beingtogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Being [F]together as two [C]friends
@@ -29,3 +32,6 @@ Will end now [F]without any [G7]tears
 [C]This is what we [F]agree [C]upon
 [F]When we're [C]together  [G7]we're all [C]alone
 {end_of_verse}
+
+
+

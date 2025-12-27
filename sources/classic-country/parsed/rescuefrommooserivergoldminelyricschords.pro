@@ -1,5 +1,8 @@
 {meta: title Rescue From Moose River Gold Mine}
 {meta: artist Wilf Carter}
+{meta: x_source classic-country}
+{meta: x_source_file rescuefrommooserivergoldminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Way down in [F]old Nova [C]Scotia
@@ -70,3 +73,12 @@ With [G7]hardships of many [C]a day
 But this [F]rescue will go down [C]in history
 Of the [G7]gold mine down Moose River [C]way
 {end_of_verse}
+
+
+
+
+
+
+
+
+

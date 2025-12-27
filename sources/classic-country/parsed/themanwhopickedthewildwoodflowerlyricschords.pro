@@ -1,6 +1,9 @@
 {meta: title The Man Who Picked The Wildwood Flower}
 {meta: artist Merle Haggard}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file themanwhopickedthewildwoodflowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I only saw five [G7]people when they buried Jack [C]Dupree
@@ -36,3 +39,7 @@ Business men and [G7]Opry stars party girls and [C]bums
 And on that little mound of clay [F]bouquets begin to [C]shower
 As they paid respect to the little man who [G7]picked the Wildwood [C]Flower
 {end_of_verse}
+
+
+
+

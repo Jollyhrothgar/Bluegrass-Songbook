@@ -1,5 +1,8 @@
 {meta: title Saving My Love For You}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file savingmyloveforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I like a lotta lovin' like a lotta kissin' 
@@ -31,3 +34,6 @@ Ooh [D7]I'm savin' my love [C]baby just for [G]you
 Yeah [D7]I'm savin' my love [C]baby just for [G]you
 Mmm [D7]I'm savin' my love [C]baby just for [G]you
 {end_of_verse}
+
+
+

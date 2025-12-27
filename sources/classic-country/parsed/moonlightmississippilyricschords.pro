@@ -1,6 +1,9 @@
 {meta: title Moonlight Mississippi}
 {meta: artist Jimmy Dean}
 {meta: composer Willard Robison}
+{meta: x_source classic-country}
+{meta: x_source_file moonlightmississippilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Moonlight Mississippi [Am]is a [D7]whistle stop [G7]town
@@ -48,3 +51,9 @@ Well the trains don't stop in [C]Moonlight [F]unless they're flagged [Fm]down
 [G7]Now the trains don't stop in [C]Moonlight [F]unless they're flagged [Fm]down
 [C]Cause Moonlight [Am]Mississippi [D7]is just a [G7]whistle stop [C]town
 {end_of_verse}
+
+
+
+
+
+

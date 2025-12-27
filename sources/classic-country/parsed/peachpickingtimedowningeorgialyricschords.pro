@@ -1,6 +1,9 @@
 {meta: title Peach Picking Time Down In Georgia}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers and Clayton McMichen}
+{meta: x_source classic-country}
+{meta: x_source_file peachpickingtimedowningeorgialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When it's peach picking time down in Georgia
@@ -43,3 +46,8 @@ When the pickers picked the cotton
 [C]When it's peach picking time down in [G]Georgia
 [Am]Then it's gal [D7]picking time for [G]me
 {end_of_verse}
+
+
+
+
+

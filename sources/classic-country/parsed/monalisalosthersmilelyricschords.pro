@@ -1,6 +1,9 @@
 {meta: title Mona Lisa Lost Her Smile}
 {meta: artist David Allan Coe}
 {meta: composer Johnny Cunningham}
+{meta: x_source classic-country}
+{meta: x_source_file monalisalosthersmilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mona Lisa lost her [Am]smile
@@ -57,3 +60,10 @@ The masterpiece that we had [Am]planned
 Mona Lisa lost her s[Am]mile
 [D7]And the painter's hands are trembling [G]now
 {end_of_verse}
+
+
+
+
+
+
+

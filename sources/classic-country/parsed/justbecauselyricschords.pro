@@ -1,6 +1,9 @@
 {meta: title Just Because}
 {meta: artist Brenda Lee}
 {meta: composer Bob Shelton, Joe Shelton, Sid Robin}
+{meta: x_source classic-country}
+{meta: x_source_file justbecauselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well now just because you think you're so pretty  
@@ -69,3 +72,14 @@ Don't thing I'll still be old Santa [C][G7]Clause
 Now I'm knocking wood this time [G]I'm through for [E7]good
 [A7]Because [D7]just [G]because
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

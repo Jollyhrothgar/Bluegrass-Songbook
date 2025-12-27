@@ -1,5 +1,8 @@
 {meta: title Hear The Whistle Blow A Hundred Miles}
 {meta: artist Earl Scruggs and Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file hearthewhistleblowahundredmileslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You could [D7]hear the whistle blow a hundred [G]miles
@@ -32,3 +35,7 @@ I'm [D7]five hundred miles away from [G]home
 {start_of_verse: Verse 5}
 You could [D7]hear the whistle blow a hundred [G]miles
 {end_of_verse}
+
+
+
+

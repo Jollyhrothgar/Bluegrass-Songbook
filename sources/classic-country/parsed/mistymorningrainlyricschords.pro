@@ -1,6 +1,9 @@
 {meta: title Misty Morning Rain}
 {meta: artist Ray Price}
 {meta: composer Don Chapel}
+{meta: x_source classic-country}
+{meta: x_source_file mistymorningrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She asked me would I do her one last [F]favor
@@ -47,3 +50,9 @@ When we [F]say goodbye in [G7]misty morning [C]rain
 {start_of_verse: Verse 5}
 When we [F]say goodbye in [G7]misty morning [C]rain
 {end_of_verse}
+
+
+
+
+
+

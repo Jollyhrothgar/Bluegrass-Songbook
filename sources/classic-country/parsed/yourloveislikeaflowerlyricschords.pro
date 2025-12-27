@@ -1,6 +1,9 @@
 {meta: title Your Love Is Like A Flower}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer E. Lilly, Lester Flatt, Earl Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file yourloveislikeaflowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was long long ago in the [C]moonlight
@@ -43,3 +46,8 @@ In the [G]spring time blossom so [D7]fair
 In the [G]fall when it withers [C]away dear
 And they [G]tell me that's the [D7]way of your [G]love
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Texas}
 {meta: artist George Strait}
 {meta: composer Steven Jones and Phillip White}
+{meta: x_source classic-country}
+{meta: x_source_file texaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]There wouldn't be [D7]no Ala[C]mo
@@ -48,3 +51,9 @@ If it wasn't for [C]Texas
 If it wasn't for [Am]Texas
 If it wasn't for [F]Texa[C]s
 {end_of_verse}
+
+
+
+
+
+

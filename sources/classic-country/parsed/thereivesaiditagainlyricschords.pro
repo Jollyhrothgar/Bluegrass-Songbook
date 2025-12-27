@@ -1,6 +1,9 @@
 {meta: title There I’ve Said It Again}
 {meta: artist Merle Haggard}
 {meta: composer Redd Evans and Dave Mann}
+{meta: x_source classic-country}
+{meta: x_source_file thereivesaiditagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love you there's [Dm]nothing to hide
@@ -43,3 +46,8 @@ But [C]one thing I [A7]want you to know
 I [G]love you and I [E7]will till the end
 [A7]There I've [D7]said it [G]again
 {end_of_verse}
+
+
+
+
+

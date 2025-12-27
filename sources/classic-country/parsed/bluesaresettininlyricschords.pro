@@ -1,6 +1,9 @@
 {meta: title Blues Are Settin' In Lyrics Chords}
 {meta: artist Kitty Wells}
 {meta: composer Bill Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file bluesaresettininlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lonely nights and blues are settin' in
@@ -37,3 +40,6 @@ Darlin' I won't like it but I'll stay
 You're not here to make my life complete
 [G7]Lonely nights and blues are settin' [C]in
 {end_of_verse}
+
+
+

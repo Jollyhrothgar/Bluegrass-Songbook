@@ -1,5 +1,8 @@
 {meta: title Be A Little Quieter}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file bealittlequieterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you left you said you [F]would not be [C]returning
@@ -29,3 +32,6 @@ Each [C]night I'm looking [F]forward to your [C]visit
 But won't you be a little [G7]quieter if you [C]can
 I wish you'd be a little [G7]quieter if you [C]can
 {end_of_verse}
+
+
+

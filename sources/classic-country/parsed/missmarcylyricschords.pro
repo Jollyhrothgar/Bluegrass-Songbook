@@ -1,6 +1,9 @@
 {meta: title Miss Marcy}
 {meta: artist Johnny Horton}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file missmarcylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Billy boy Billy [Am]boy [F]sit on the [C]porch   
@@ -60,3 +63,11 @@ Miss Marcy well [F]she’s dying [C]too
 {start_of_verse: Verse 9}
 Billy boy Billy [Am]boy [F]sit on the [C]porch   
 {end_of_verse}
+
+
+
+
+
+
+
+

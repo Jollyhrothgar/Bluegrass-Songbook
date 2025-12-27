@@ -1,6 +1,9 @@
 {meta: title It's The Last Time I'll Ever Cheat On You}
 {meta: artist Justin Trevino}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file itsthelasttimeillevercheatonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up in a [F]strange place this [C]morning
@@ -33,3 +36,6 @@ And if God lets me [C]live
 And you can [F]find you can [F][C]forgive
 It's the [C]last time I'll [G7]ever cheat on [C]you
 {end_of_verse}
+
+
+

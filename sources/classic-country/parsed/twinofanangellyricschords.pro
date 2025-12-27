@@ -1,5 +1,8 @@
 {meta: title Twin Of An Angel}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file twinofanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Oh the [C]twin of an [G7]angel must be [F]y--ou  must be [C]you
@@ -26,3 +29,6 @@ I only hope He didn't send you here just on [G7]borrowed time
 Oh the [C]twin of an [G7]angel must be [C]you
 [F]Oh the [C]twin of an [G7]angel must be [F]y--ou  must be [C]you
 {end_of_verse}
+
+
+

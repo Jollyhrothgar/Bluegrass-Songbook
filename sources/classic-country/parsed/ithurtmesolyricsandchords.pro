@@ -1,6 +1,9 @@
 {meta: title It Hurt Me So}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Charlie Rich and Bill Justis}
+{meta: x_source classic-country}
+{meta: x_source_file ithurtmesolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It hurt me [C]so (it hurt me so)
@@ -44,3 +47,8 @@ It hurt me [C]so [G7]
 (You’ll never [C]know you’ll never [G7]know) 
 It hurt me [C]so ([F]it hurt me [C]so)
 {end_of_verse}
+
+
+
+
+

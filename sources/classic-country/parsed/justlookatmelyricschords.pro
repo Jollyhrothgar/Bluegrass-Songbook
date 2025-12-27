@@ -1,6 +1,9 @@
 {meta: title Just Look At Me}
 {meta: artist George Strait}
 {meta: composer Curtis Wayne and Gerald Smith}
+{meta: x_source classic-country}
+{meta: x_source_file justlookatmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One [G7]look at [C]you  [C7]and just look at [F]me
@@ -27,3 +30,6 @@ One look at [Dm]you  [G7]and just look at [C]me  [F]   [C]
 [G7]I’m still your [C]fool  [C7]yes I'll always [F]be
 One look at [Dm]you  [G7]and just look at [C]me [F]   [C]
 {end_of_verse}
+
+
+

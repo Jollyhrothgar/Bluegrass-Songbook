@@ -1,6 +1,9 @@
 {meta: title Bonnie B}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Charles Underwood}
+{meta: x_source classic-country}
+{meta: x_source_file bonnieblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well Bonnie Bonnie B she's like a real queen [F]bee
@@ -37,3 +40,6 @@ When she [G7]walks down the hallway all the cats all [C]drool
 [G7]A turned up nose that makes a cat wanna flip
 [C]Flip over Bonnie Bonnie [F]B Bonnie [C]B Bonnie [F]Bonnie Bonnie [C]B
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title A Fool And His Love Are Soon Parted}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file afoolandhislovearesoonpartedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I took your love for granted [C]every time I [G]took it
@@ -32,3 +35,7 @@ Ask a [G]fool who knows [D7]my love is [G]gone
 {start_of_verse: Verse 4}
 [C]Ask a [G]fool who knows [D7]my love is [G]gone
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Abilene}
 {meta: artist Buck Owens}
 {meta: composer Lester Brown, John D. Loudermilk, Bob Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file abilenelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Abilene  [E7]Abilene  prettiest [F]town I've ever [C]seen
@@ -30,3 +33,7 @@ In [C]Abilene  [F]sweet [C]Abilene
 [C]Abilene  [E7]Abilene  prettiest [F]town I've ever [C]seen
 [D7]Women there don't treat [G7]you mean in Abilene  [C]my [C][F]Abilene
 {end_of_verse}
+
+
+
+

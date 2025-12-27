@@ -1,6 +1,9 @@
 {meta: title Forty Hour Week}
 {meta: artist Alabama}
 {meta: composer Don Schlitz, Dave Loggins, Lisa Silver}
+{meta: x_source classic-country}
+{meta: x_source_file fortyhourweeklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are people in this country
@@ -72,3 +75,11 @@ With a spirit you can't replace with no [F]machine-e-e
 [C]Hello [C][F]Amer-i-ca
 Let me [F]thank you [G7]for your [C]time
 {end_of_verse}
+
+
+
+
+
+
+
+

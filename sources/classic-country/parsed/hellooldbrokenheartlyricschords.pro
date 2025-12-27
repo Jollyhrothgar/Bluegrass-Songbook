@@ -1,6 +1,9 @@
 {meta: title Hello Old Broken Heart}
 {meta: artist Jean Shepard}
 {meta: composer Joe Allison and Audrey Allison}
+{meta: x_source classic-country}
+{meta: x_source_file hellooldbrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello old broken heart I see [F]you're back once [C]more
@@ -22,3 +25,5 @@
 [C]Get lost old broken heart I [F]wish you'd let me [C]go
 [F]But no matter what [C]happens I [G7]still love him [C]so
 {end_of_verse}
+
+

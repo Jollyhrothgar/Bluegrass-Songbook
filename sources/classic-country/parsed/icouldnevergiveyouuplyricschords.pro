@@ -1,5 +1,8 @@
 {meta: title I Could Never Give You Up}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file icouldnevergiveyouuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't you ever doubt my love cause you [F]fit me like a glove
@@ -31,3 +34,7 @@ And I [C]could never give you [G7]up for someone [C]else
 If you ever have to go honey [F]please don't let me go
 Cause I [C]could never give you [G7]up for someone [C]else
 {end_of_verse}
+
+
+
+

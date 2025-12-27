@@ -1,6 +1,9 @@
 {meta: title Bluegrass Lady}
 {meta: artist Billy Walker}
 {meta: composer John F. Riggs and Billy M. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file bluegrassladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby don’t get to friendly I’m just [D7]passing [G]through 
@@ -37,3 +40,8 @@ You’re gonna wake up cold and lonely cause baby here’s [D7]what you’ll [G]
 And I’ll say bye [A#7]bye [D7]Bluegrass Lady bye [G]bye
 And you’ll cry [A#7]cry [D7]Bluegrass Lady you’ll [G]cry
 {end_of_verse}
+
+
+
+
+

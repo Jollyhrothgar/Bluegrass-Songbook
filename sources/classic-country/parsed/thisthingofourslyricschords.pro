@@ -1,6 +1,9 @@
 {meta: title This Thing Of Ours}
 {meta: artist Ray Price}
 {meta: composer Larry B. Bastian and Craig Morris}
+{meta: x_source classic-country}
+{meta: x_source_file thisthingofourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Just [G]look at you lying [C]there
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [C]This thing of [E7]ours
 {end_of_verse}
+
+
+
+
+

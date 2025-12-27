@@ -1,6 +1,9 @@
 {meta: title I Just Can't Get Her Out of My Mind}
 {meta: artist Johnny Rodriguez}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcantgetheroutofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Never before has a woman ever haunted [F]me
@@ -22,3 +25,5 @@
 [C]Somebody please put her out of my [F]misery
 [G7]Cause I just can't get her out of my [C]mind
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm On My Way}
 {meta: artist Red Steagall}
 {meta: composer Rebb Firman and Laura Powers}
+{meta: x_source classic-country}
+{meta: x_source_file imonmywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m on my way  to [F]Bethle[C]hem  
@@ -61,3 +64,11 @@ He [F]broke the bonds of [G7]death for [C]men
 {start_of_verse: Verse 6}
 I’m [F]on  I’m [G7]on  my [C]way
 {end_of_verse}
+
+
+
+
+
+
+
+

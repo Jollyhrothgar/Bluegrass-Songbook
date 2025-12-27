@@ -1,6 +1,9 @@
 {meta: title I Leaned Over Backwards For You}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file ileanedoverbackwardsforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've [G7]turned the other cheek so [C]often
@@ -29,3 +32,6 @@ Run [D7]along to your somebody [G7]new
 After [C]he breaks your heart you'll [F]remember
 How I leaned over [G7]backwards for [C]you
 {end_of_verse}
+
+
+

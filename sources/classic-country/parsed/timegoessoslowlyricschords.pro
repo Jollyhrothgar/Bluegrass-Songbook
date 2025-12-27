@@ -1,5 +1,8 @@
 {meta: title Time Goes So Slow}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file timegoessoslowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you have a loved one and [C7]she's not with [F]you
@@ -22,3 +25,5 @@ Oh what a heartache  I [C7]try not to [F]show
 Please won't you come back to [C]me
 For [G7]time goes so [C]slow
 {end_of_verse}
+
+

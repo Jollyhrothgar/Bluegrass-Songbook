@@ -1,6 +1,9 @@
 {meta: title I Will}
 {meta: artist Ferlin Husky}
 {meta: composer Roy Drusky and Lester Vanadore}
+{meta: x_source classic-country}
+{meta: x_source_file iwilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you think I'll be [F]lonely [C]you think I'll be [F]blue
@@ -25,3 +28,5 @@ From now [D7]until eternity I swear by stars [G7]above
 [C]You think that if you'll ask [F]me to I'll [C]come back [F]again 
 Yes I [G7]will you know I [C]will
 {end_of_verse}
+
+

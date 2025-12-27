@@ -1,6 +1,9 @@
 {meta: title As Any Fool Can See}
 {meta: artist Tracy Lawrence}
 {meta: composer Paul Nelson and Kenny Beard}
+{meta: x_source classic-country}
+{meta: x_source_file asanyfoolcanseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately she's been [C]picking fights 
@@ -46,3 +49,7 @@ And [Am]it's too late but [C]what keeps killing [D7]me
 Is knowing [F]I've been blind 
 [D7]As any fool can [G]see
 {end_of_verse}
+
+
+
+

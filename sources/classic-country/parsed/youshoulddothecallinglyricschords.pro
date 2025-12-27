@@ -1,6 +1,9 @@
 {meta: title You Should Do The Calling}
 {meta: artist Faron Young}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file youshoulddothecallinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You refer to her as just the other [D7]woman
@@ -33,3 +36,7 @@ Ask her what she [D7]ever saw in [Em]me
 {start_of_verse: Verse 4}
 [G]Yes you should do the [D7]callin' not [C]me[G]
 {end_of_verse}
+
+
+
+

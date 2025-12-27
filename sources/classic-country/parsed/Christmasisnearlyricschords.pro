@@ -1,5 +1,8 @@
 {meta: title Christmas Is Near}
 {meta: artist Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasisnearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Holly in the window the fireplace burning [D7]bright
@@ -33,3 +36,7 @@ Snowflakes a falling Christmas time is [G]near
 Out in the country about this time of [D7]year
 Everybody's happy Christmas time is [G]near
 {end_of_verse}
+
+
+
+

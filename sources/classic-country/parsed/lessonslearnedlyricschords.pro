@@ -1,5 +1,8 @@
 {meta: title Lessons learned}
 {meta: artist Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file lessonslearnedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You travel down [C]life’s high[G]way
@@ -33,3 +36,7 @@ Lessons [G]learned [D7]because of [G]you
 [D7]It all works [G]out I [C]guess you [G]knew
 The lessons learned [D7]because of [G]you
 {end_of_verse}
+
+
+
+

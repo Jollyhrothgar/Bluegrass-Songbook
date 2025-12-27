@@ -1,6 +1,9 @@
 {meta: title She's Got A Single Thing In Mind}
 {meta: artist Conway Twitty}
 {meta: composer Walt Aldridge}
+{meta: x_source classic-country}
+{meta: x_source_file shesgotasinglethinginmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She can't find the words to break [Am]it to me
@@ -34,3 +37,7 @@ She's got a [F]single thing in [C]mind
 So watch her [C]untie the ties that [Am]bind
 She's got a [F]single thing in [C]mind
 {end_of_verse}
+
+
+
+

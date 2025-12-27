@@ -1,6 +1,9 @@
 {meta: title Islands In The Stream}
 {meta: artist Kenny Rogers}
 {meta: composer Barry Gibb, Maurice Ernest Gibb}
+{meta: x_source classic-country}
+{meta: x_source_file islandsinthestreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby when I met you there was peace unknown
@@ -51,3 +54,8 @@ Sail away with [C]me to another [F]world
 And we re[C]ly on each other uh huh
 From one [F]lover to another uh [C]huh
 {end_of_verse}
+
+
+
+
+

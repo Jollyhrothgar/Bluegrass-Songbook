@@ -1,6 +1,9 @@
 {meta: title Somebody Touched Me}
 {meta: artist The Stanley Brothers}
 {meta: composer Leon Bowles and Tim Frye}
+{meta: x_source classic-country}
+{meta: x_source_file somebodytouchedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While I was praying (somebody touched me)
@@ -50,3 +53,9 @@ Glory glory glory somebody touched me
 Glory glory glory somebody touched me
 Must've been the [D7]hand of the [G]Lord
 {end_of_verse}
+
+
+
+
+
+

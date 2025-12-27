@@ -1,6 +1,9 @@
 {meta: title Can I Sleep in Your Arms}
 {meta: artist Willie Nelson}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file canisleepinyourarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can I sleep in your [G7]arms tonight [C]lady
@@ -29,3 +32,6 @@ It's so cold lying here all [G7]alone
 And [C]I have no holds to hold on [F]you
 [C]I assure you I'll do [G7]you no [C]wrong
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Guess the Lord Must Be in New York City}
 {meta: artist Harry Nilison}
+{meta: x_source classic-country}
+{meta: x_source_file iguessthelordmustbeinnewyorkcitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ll say goodbye to all my sorrow
@@ -25,3 +28,6 @@ I’m so tired of gettin’ nowhere
 Seein’ my prayers goin’ unan[G7]swered
 I guess the Lord must be in New York [C]City
 {end_of_verse}
+
+
+

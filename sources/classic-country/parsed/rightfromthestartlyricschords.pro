@@ -1,6 +1,9 @@
 {meta: title Right From The Start}
 {meta: artist Earl Thomas Conley}
 {meta: composer Billy Herzig and Randy Watkins}
+{meta: x_source classic-country}
+{meta: x_source_file rightfromthestartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The first time that I [Am]met you I was [G]sure as sure it could [Am]be
@@ -44,3 +47,9 @@ And [Bm]this time my [C]heart was [D7]sure
 [G]Right [Bm]from the [Am]start    [D7]I [G]had this [Bm]feeling in [Am]my [D7]heart
 [Em]Baby [Bm]I knew [Am]you were [D7]right for [Bm]the [G][D7][Em]part
 {end_of_verse}
+
+
+
+
+
+

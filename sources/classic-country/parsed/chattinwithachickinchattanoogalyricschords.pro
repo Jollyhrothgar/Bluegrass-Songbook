@@ -1,6 +1,9 @@
 {meta: title Chattin' With A Chick In Chattanooga}
 {meta: artist Hank Snow}
 {meta: composer Hank Snow, Edna Farnworth, Neil Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file chattinwithachickinchattanoogalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Chattin' with a chick in Chattanooga
@@ -38,3 +41,7 @@ In Chattanooga Tenne[C]ssee
 [G7]Chattin' with a chick in Chattanooga
 In Chattanooga Tenne[C]ssee
 {end_of_verse}
+
+
+
+

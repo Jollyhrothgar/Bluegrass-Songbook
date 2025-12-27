@@ -1,6 +1,9 @@
 {meta: title Carolina Moon}
 {meta: artist Jimmy Dean}
 {meta: composer Benny Davis and Joe Bruke}
+{meta: x_source classic-country}
+{meta: x_source_file carolinamoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The moon was shining bright in [F]Carolina
@@ -23,3 +26,5 @@ How I'm hoping tonight you'll [F]go
 [C]Tell her that I'm blue and [F]lonely 
 [C]Dreamy Car-olina [C][G7]moon
 {end_of_verse}
+
+

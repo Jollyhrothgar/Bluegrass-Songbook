@@ -1,6 +1,9 @@
 {meta: title Too Many Teardrops Too Late}
 {meta: artist Jean Shepard}
 {meta: composer Dave Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file toomanyteardropstoolatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're too many [D7]teardrops too [G7][G]l-a-te
@@ -47,3 +50,9 @@ If I took you back again
 [G]Then I'd still be a loving you
 [D7]But you're too many teardrops to [G]late
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title River}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Bill Dees}
+{meta: x_source classic-country}
+{meta: x_source_file riverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Roly-oly on now [F]river [C]roly-oly on your [F]way
@@ -37,3 +40,8 @@ Go steal a dream from the dawn
 [C]Hey now [F]river [C]go down [F]river
 Don't [C]slow down [F]river [D7]bring a [G7]dream to [C]me
 {end_of_verse}
+
+
+
+
+

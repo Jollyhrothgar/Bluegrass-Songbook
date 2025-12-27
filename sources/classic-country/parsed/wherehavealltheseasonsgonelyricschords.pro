@@ -1,6 +1,9 @@
 {meta: title Where Have All The Seasons Gone}
 {meta: artist Bobby Bare}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file wherehavealltheseasonsgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear mom and dad [F]I'm writing you to [C]say I found a job
@@ -49,3 +52,10 @@ He said [G7]don't you worry papa things are [C]cool
 That was [F]yesterday now [C]tell me
 Where have [G7]all the seasons [F]gone[C]
 {end_of_verse}
+
+
+
+
+
+
+

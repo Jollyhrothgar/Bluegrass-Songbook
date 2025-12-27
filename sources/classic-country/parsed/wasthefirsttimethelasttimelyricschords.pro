@@ -1,5 +1,8 @@
 {meta: title Was The First Time The Last Time}
 {meta: artist Johnny Mac}
+{meta: x_source classic-country}
+{meta: x_source_file wasthefirsttimethelasttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night as I [G7]watched while you [C]waited
@@ -42,3 +45,8 @@
 [C]But each day I [G7]can't help but [C]wonder
 [F]Was that last time [G7]the first time you [C]lied
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Rain Don't Ever Stop In Oklahoma}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file theraindonteverstopinoklahomalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We left southern California she [C]cried for several days
@@ -28,3 +31,6 @@ Where the [D7]grass grows stirrup high most all year [G]long
 But I can't see their [G7]beauty with my [C]eyes this full of tears
 I guess the [D7]rain won't ever stop in Okla[G]homa
 {end_of_verse}
+
+
+

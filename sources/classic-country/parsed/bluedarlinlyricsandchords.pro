@@ -1,6 +1,9 @@
 {meta: title Blue Darlin'}
 {meta: artist Don Gibson}
 {meta: composer Leslie Lyle[3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file bluedarlinlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was a fool broke every rule [G7]blue [C]darlin'
@@ -22,3 +25,5 @@
 [G]My heart would cry if [G7]ever I should lose [C]you
 [G]Blue darlin' you're the [D7]only only [G]one
 {end_of_verse}
+
+

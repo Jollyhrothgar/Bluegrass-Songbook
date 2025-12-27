@@ -1,6 +1,9 @@
 {meta: title Breezin' Along With The Breeze}
 {meta: artist Ferlin Husky}
 {meta: composer Haven Gillespie and Brook Benton}
+{meta: x_source classic-country}
+{meta: x_source_file breezinalongwiththebreezelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm just breezin' along with the [B7]breeze
@@ -33,3 +36,7 @@ Trailin' the [A7]rail [D7]roamin' the [G]sea  [D7]
 [E7]Breezin' [A7]along [D7]with the [C]breeze
 (Breezin' [G]along with the [Em]breeze)
 {end_of_verse}
+
+
+
+

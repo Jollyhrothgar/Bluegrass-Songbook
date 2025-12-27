@@ -1,6 +1,9 @@
 {meta: title Child Of The Fifties}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file childofthefiftieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I grew up a [C]child of the [G]fifties
@@ -48,3 +51,9 @@ Cause it [D7]might be as close as I [G]get
 The heaven you gave I will [C]treasure and [Am]save
 Cause it [D7]might be as close as I [G]get
 {end_of_verse}
+
+
+
+
+
+

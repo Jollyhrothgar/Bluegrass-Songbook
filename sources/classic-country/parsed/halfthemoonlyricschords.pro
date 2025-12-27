@@ -1,6 +1,9 @@
 {meta: title Half The Moon}
 {meta: artist Tanya Tucker}
 {meta: composer Hugh Prestwood}
+{meta: x_source classic-country}
+{meta: x_source_file halfthemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Half the [Dm]moon is [C]shining [F]tonight [G7]half the moon is pitch [C]black
@@ -28,3 +31,6 @@ You must [Dm]have taken [C]half of its [F]light [G7]to find the road that you're
 [C]And makes that [Dm]missing [C]half the [G7]moon hard to [C]find [Dm]oh
 [C]And makes that [Dm]missing [C]half the [G7]moon hard to [C]find
 {end_of_verse}
+
+
+

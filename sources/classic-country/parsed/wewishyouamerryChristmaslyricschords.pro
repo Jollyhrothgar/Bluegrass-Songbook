@@ -1,3 +1,6 @@
+{meta: x_source classic-country}
+{meta: x_source_file wewishyouamerryChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We wish you [C]a Merry Christmas
@@ -34,3 +37,8 @@ We [G]won’t go until [B7]we get [Em]some
 Good tidings [D7]we [Em]bring [A7]to [D7]you and your kin
 We [G]wish [D7]you [Em]a Merry [D7]Christmas [C][G]and a [D7]Happy [G]New Year
 {end_of_verse}
+
+
+
+
+

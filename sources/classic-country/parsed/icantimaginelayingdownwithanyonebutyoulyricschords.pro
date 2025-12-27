@@ -1,6 +1,9 @@
 {meta: title I Can't Imagine Laying Down With Anyone But You}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Don Schlitz}
+{meta: x_source classic-country}
+{meta: x_source_file icantimaginelayingdownwithanyonebutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's all that I can [F]do to make [G7]it through another [C]day
@@ -31,3 +34,7 @@
 {start_of_verse: Verse 5}
 [F]No I can't imagine [C]layin' down with [G7]anyone but [C]you
 {end_of_verse}
+
+
+
+

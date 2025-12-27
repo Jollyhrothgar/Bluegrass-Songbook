@@ -1,6 +1,9 @@
 {meta: title Me and the I.R.S.}
 {meta: artist Johnny Paycheck}
 {meta: composer Don J. Scaife, Gladys Johns Scaife}
+{meta: x_source classic-country}
+{meta: x_source_file meandtheirslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m gonna tell the man at the IRS this old boy [C]hell I’ve had [G]enough
@@ -43,3 +46,8 @@ They spend studying the sex habits of the South American Swamp Rat
 And keep us all in beer for the next hundred years blood suckers
 Did you ever see Dracula in a grey flannel suit look up you will
 {end_of_verse}
+
+
+
+
+

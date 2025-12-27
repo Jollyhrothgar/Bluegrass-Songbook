@@ -1,5 +1,8 @@
 {meta: title With His Hand on My Shoulder}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file withhishandonmyshoulderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]With his hand on my shoulder I [C]sail a sea of [G]sin
@@ -28,3 +31,6 @@ But to prove that I deserve this home [A7]I have to sail this [D7]sea
 The waves of sin sometimes are high and the spray [C]might touch my [G]clothes
 With his hand on my shoulder it [D7]will never touch my [G]soul
 {end_of_verse}
+
+
+

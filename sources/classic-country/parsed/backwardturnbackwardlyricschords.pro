@@ -1,6 +1,9 @@
 {meta: title Backward Turn Backward}
 {meta: artist Slim Whitman}
 {meta: composer Dave Coleman}
+{meta: x_source classic-country}
+{meta: x_source_file backwardturnbackwardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Backward turn [E7]backward oh [F]tired in your [Fm]plight
@@ -22,3 +25,5 @@
 [E7]Bring back that [F]wonderful moment [Fm]divine
 [F]The moment she [C]whispered [G7]she’d always be [C]mine
 {end_of_verse}
+
+

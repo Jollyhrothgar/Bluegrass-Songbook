@@ -1,6 +1,9 @@
 {meta: title Angels Rock Me To Sleep}
 {meta: artist The Bluegrass Cardinals}
 {meta: composer Thomas Ramsey and Marion W. Easterling}
+{meta: x_source classic-country}
+{meta: x_source_file angelsrockmetosleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My heart is sad my [C]soul is [G]weary
@@ -55,3 +58,8 @@ And the [C]Savior shall [G]call (and the Savior shall call)
 Angels rock me to sleep (angels rock me to sleep) 
 In the [D7]cradle of [G]love
 {end_of_verse}
+
+
+
+
+

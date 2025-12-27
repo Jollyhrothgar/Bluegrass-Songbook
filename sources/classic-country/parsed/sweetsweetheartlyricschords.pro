@@ -1,6 +1,9 @@
 {meta: title Sweet Sweetheart}
 {meta: artist Jeanne Pruett}
 {meta: composer Carole King and Gerry Goffin}
+{meta: x_source classic-country}
+{meta: x_source_file sweetsweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're a sweet sweetheart you [F]been a real good [C]friend
@@ -30,3 +33,6 @@ What this message [G7]means [F]any ol' fool can [C]see
 [F]And the thing that makes [C]me feel so good
 You [G7]mean it just for [C]me
 {end_of_verse}
+
+
+

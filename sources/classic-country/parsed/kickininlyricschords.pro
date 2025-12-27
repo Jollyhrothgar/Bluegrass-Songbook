@@ -1,6 +1,9 @@
 {meta: title Kickin' In}
 {meta: artist Buck Owens}
 {meta: composer Roger Allan Murrah and Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file kickininlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There goes her [G7]memory kickin' in
@@ -37,3 +40,7 @@ It's that [C]same old hurt again
 That makes me [G7]crazy now and then
 It's her [F]memory kickin' [C]in
 {end_of_verse}
+
+
+
+

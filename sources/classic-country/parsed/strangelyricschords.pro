@@ -1,6 +1,9 @@
 {meta: title Strange}
 {meta: artist Patsy Cline}
 {meta: composer Mel Tillis & Fred Burch}
+{meta: x_source classic-country}
+{meta: x_source_file strangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Strange  how you stopped loving [Em]me
@@ -36,3 +39,7 @@ Well I guess that I was just your [G7]puppet
 To [Em]think I thought you really loved [A7]me
 But look what thoughts [D7]can bring
 {end_of_verse}
+
+
+
+

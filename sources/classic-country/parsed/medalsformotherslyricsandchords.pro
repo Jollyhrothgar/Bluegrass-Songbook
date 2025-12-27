@@ -1,6 +1,9 @@
 {meta: title Medals For Mothers}
 {meta: artist The Osborne Brothers}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file medalsformotherslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If there's medals for [F]mothers
@@ -26,3 +29,6 @@ A medal of honor was pinned on her there
 {start_of_verse: Verse 4}
 [G7]Momma you'll win every [C]one
 {end_of_verse}
+
+
+

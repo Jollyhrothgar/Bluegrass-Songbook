@@ -1,5 +1,8 @@
 {meta: title I Created A Monster}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file icreatedamonsterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A livin' doll moved in next door to [G7]me
@@ -35,3 +38,7 @@
 [F]I really love her goin' out of my [C]mind
 [G7]I created a monster call me [C]Frankenstein
 {end_of_verse}
+
+
+
+

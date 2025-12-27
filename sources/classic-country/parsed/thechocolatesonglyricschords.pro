@@ -1,6 +1,9 @@
 {meta: title The Chocolate Song}
 {meta: artist Charlie Walker}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file thechocolatesonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Boys love girls and girls love pearls
@@ -64,3 +67,11 @@ Chocolate cake and [D7]chocolate pie
 Choca-loca yum-yum how I wish I had some
 I'll love chocolate [G]till I die
 {end_of_verse}
+
+
+
+
+
+
+
+

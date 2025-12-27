@@ -1,6 +1,9 @@
 {meta: title I'll Pick Pretty Flowers}
 {meta: artist Wendy Lewis}
 {meta: composer Judith Elaine Pagter}
+{meta: x_source classic-country}
+{meta: x_source_file illpickprettyflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As I sit here recalling [C]the days of my [G]youth
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 5}
 [C]I’ll pick pretty [D7]flowers for [G]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Blue Kentucky Girl}
 {meta: artist Loretta Lynn}
 {meta: composer Johnny Mullins}
+{meta: x_source classic-country}
+{meta: x_source_file bluekentuckygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You left me for the [F]bright lights of the [C]town
@@ -29,3 +32,6 @@ How [D7]bright is it shinin in your [G7][G]world
 Some [C]mornings when you [F]wake up all [C]alone
 Just come on [D7]home to your [G7]blue Kentucky [C]girl
 {end_of_verse}
+
+
+

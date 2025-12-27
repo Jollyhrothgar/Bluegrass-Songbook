@@ -1,6 +1,9 @@
 {meta: title I Just Love The Way You Tell A Lie}
 {meta: artist Don Gibson}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file ijustlovethewayyoutellalielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What an awful thing you’ve done dear [G7]just for a little [C]fun
@@ -29,3 +32,6 @@
 [C]Then you cuddle [F]up to me [C]and say you [G7]want to be my [C]bride
 [G7]I just love the way you tell a [C]lie
 {end_of_verse}
+
+
+

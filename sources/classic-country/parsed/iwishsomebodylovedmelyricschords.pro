@@ -1,5 +1,8 @@
 {meta: title I Wish Somebody Loved Me}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file iwishsomebodylovedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish somebody loved me just [F]enough to say they care
@@ -28,3 +31,6 @@ And [C]if you shouldn't want my love why should I wanna [G7]live
 The [C]road of life and love sweetheart has [F]been unkind and cruel
 I [C]wish some[G7]body loved me somebody just like [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We Belong Together}
 {meta: artist Rhonda Vincent}
 {meta: composer Ken Wesley}
+{meta: x_source classic-country}
+{meta: x_source_file webelongtogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We belong together you and [G]me
@@ -26,3 +29,6 @@ Still [A7]we can’t give up the love we’ve [D7]found
 {start_of_verse: Verse 4}
 Yes [D7]we belong together  but we’re [G]not
 {end_of_verse}
+
+
+

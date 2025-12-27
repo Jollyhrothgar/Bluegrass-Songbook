@@ -1,6 +1,9 @@
 {meta: title Ain't It Funny The Way Love Can Do Ya}
 {meta: artist David Allan Coe}
 {meta: composer Guy Clark, Susanna Clark, David A. Coe}
+{meta: x_source classic-country}
+{meta: x_source_file aintitfunnythewaylovecandoyalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She had good intentions and I had the same
@@ -31,3 +34,6 @@ Or [A7]ever find reasons for leaving each other [D7]alone  but we did
 [C]Next we were lovers now we're [D7]strangers again
 [C]Ain't it funny the [D7]way love can [G]do ya  [C]but it [G]did
 {end_of_verse}
+
+
+

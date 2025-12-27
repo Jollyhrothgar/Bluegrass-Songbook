@@ -1,6 +1,9 @@
 {meta: title I'd Rather Have A Broken Heart}
 {meta: artist Wanda Jackson}
 {meta: composer Thelma Blackmon}
+{meta: x_source classic-country}
+{meta: x_source_file idratherhaveabrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'd rather [C]have a broken heart 
@@ -43,3 +46,8 @@ I'm gonna [F]stop before I start
 I'd rather [C]have 
 I'd rather [G7]have a broken [C]heart
 {end_of_verse}
+
+
+
+
+

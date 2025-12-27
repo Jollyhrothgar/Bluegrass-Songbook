@@ -1,6 +1,9 @@
 {meta: title There is Power in the Blood}
 {meta: artist Marty Robbins}
 {meta: composer Allen Hall, Lewis Jones, Todd Smith, Nicol Sponberg}
+{meta: x_source classic-country}
+{meta: x_source_file thereispowerinthebloodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Would you be free from your [C]burden of [G]sin
@@ -40,3 +43,8 @@ There is power  power  [C]wonder working [G]power
 In the blood  [D7]of the Lamb  there is power  [G]power
 [C]Wonder-working [G]power in the [D7]precious blood of the [G]Lamb
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title How Green Was The Grazin' Back Then}
 {meta: artist Red Steagall}
 {meta: composer Richard Eldon O'Brien and Russell D. Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file howgreenwasthegrazinbackthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The norther came quickly the [Em]clouds filled the [Am]sky
@@ -48,3 +51,9 @@ Oh how [Dm]green was the [G7]grazin' back [C]then
 In our [F]minds we were all [G7]trailing the [C]longhorn to [Am]Dodge
 How [Dm]green was the [G7]grazin' back [C]then
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Facing The Wall}
 {meta: artist Charlie Walker}
 {meta: composer Hank Mills and Charlie Walker}
+{meta: x_source classic-country}
+{meta: x_source_file facingthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Facing the w-all [C]feeling [G]lonely
@@ -36,3 +39,7 @@ But it offers me a place to cry [D7]unseen
 [G]Facing the w-all [C]feeling [G]lonely
 I can't face the room with [D7]all these shattered [G]dreams
 {end_of_verse}
+
+
+
+

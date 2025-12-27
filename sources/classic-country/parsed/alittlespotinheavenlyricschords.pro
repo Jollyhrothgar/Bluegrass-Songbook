@@ -1,5 +1,8 @@
 {meta: title A Little Spot In Heaven}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file alittlespotinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't ask you Lord to lighten up my [G7]burden
@@ -35,3 +38,7 @@ And as time went on the love in my heart [C]grew
 If it isn't asking too much Lord then save [F]me 
 Just a little [C]spot in [G7]Heaven close to [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Old Kentucky Home}
 {meta: artist Boxcar Willie}
 {meta: composer Stephen C. Foster}
+{meta: x_source classic-country}
+{meta: x_source_file myoldkentuckyhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the sun shines bright on my [F]old Kentucky [C]home
@@ -68,3 +71,12 @@ For my old Kentucky [G7]home far [C]away
 {start_of_verse: Verse 8}
 For my old Kentucky [G7]home far [C]away
 {end_of_verse}
+
+
+
+
+
+
+
+
+

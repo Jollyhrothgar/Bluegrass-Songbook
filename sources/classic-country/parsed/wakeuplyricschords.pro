@@ -1,5 +1,8 @@
 {meta: title Wake Up}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file wakeuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wake up don't just lay there like cold granite [G][C]stone 
@@ -39,3 +42,8 @@ Wake up and please darling hold me if [C]you [G]would
 {start_of_verse: Verse 4}
 [C]Don't just [G]lay there like you've [D7]gone away for [G]good
 {end_of_verse}
+
+
+
+
+

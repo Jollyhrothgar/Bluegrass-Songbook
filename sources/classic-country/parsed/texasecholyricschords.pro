@@ -1,5 +1,8 @@
 {meta: title Texas Echo}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file texasecholyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -48,3 +51,10 @@ Intro:
 {start_of_verse: Verse 6}
 Aoo aoo [F]aoo aoo aoo [C]ooo [Am]ooo [D7]ooo [G7]ooo [C]ooo
 {end_of_verse}
+
+
+
+
+
+
+

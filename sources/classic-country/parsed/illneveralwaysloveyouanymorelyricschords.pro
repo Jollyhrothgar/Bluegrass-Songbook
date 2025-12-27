@@ -1,6 +1,9 @@
 {meta: title I'll Never Always Love You Anymore}
 {meta: artist Curtis Potter}
 {meta: composer Mel Holt}
+{meta: x_source classic-country}
+{meta: x_source_file illneveralwaysloveyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your heart strayed off but now it's back [F]knocking at my hearts door
@@ -29,3 +32,6 @@ Your [D7]promises are tempting me
 And [G7]yet I have for[C]given and forgotten once [F]before
 And [G7]I’ll never always love you any[C]more
 {end_of_verse}
+
+
+

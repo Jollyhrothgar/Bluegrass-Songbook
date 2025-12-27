@@ -1,6 +1,9 @@
 {meta: title God Sent An Angel}
 {meta: artist Doyle Lawson}
 {meta: composer Doyle Lawson, Leroy Drumm, Pete Goble}
+{meta: x_source classic-country}
+{meta: x_source_file Godsentanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was troubled in my mind and had [C7]reached my darkest time 
@@ -47,3 +50,9 @@ For I had never [G7]known Him at [C]all
 He was [F]dressed all in white and [C]surrounded by light
 Oh thank God for the [G7]love shown to [C]m-[F]-e[C] 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Whatever Happened To Us}
 {meta: artist George Jones}
 {meta: composer Donald R. Sampson and Donald R. Kees}
+{meta: x_source classic-country}
+{meta: x_source_file whateverhappenedtouslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Looking through this worn out book of [C]pictures 
@@ -34,3 +37,7 @@ Whatever happened to [C]us
 Lately I've been missing you so [C]much 
 [D7]Whatever happened to [G]us
 {end_of_verse}
+
+
+
+

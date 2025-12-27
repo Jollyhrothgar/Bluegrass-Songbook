@@ -1,6 +1,9 @@
 {meta: title Just Walking in the Rain}
 {meta: artist Jim Reeves}
 {meta: composer Bob Riley, Johnny Bragg, Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file justwalkingintherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just walking in the rain getting soak and wet
@@ -36,3 +39,9 @@ Torturing my [G7]heart by trying to [C]forget
 Just walking in the rain so alone and blue
 All because my [G7]heart still remembers [C]you
 {end_of_verse}
+
+
+
+
+
+

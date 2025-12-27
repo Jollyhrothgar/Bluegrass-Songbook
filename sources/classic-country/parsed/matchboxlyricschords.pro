@@ -1,5 +1,8 @@
 {meta: title Matchbox}
 {meta: artist Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file matchboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm sitting here wondering would a matchbox hold my clothes [G7]
@@ -30,3 +33,7 @@ I [D7]ain't got no matches but I got a long way to [G]go
 Yeah I'm [C]sitting here wondering would a matchbox hold my [G]clothes
 I [D7]ain't got no matches but I got a long way to [G]go
 {end_of_verse}
+
+
+
+

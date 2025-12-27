@@ -1,5 +1,8 @@
 {meta: title Living On Memories Of You}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file livingonmemoriesofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My days are as [F]dark as my [C]nights 
@@ -29,3 +32,6 @@ Oh your [F]memory just won't turn me [C]lo-o-[F]se
 And I'm [C]living on [G7]memories of [C]you 
 [F]Yes I'm [C]living on [G7]memories of [C]you
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title State Of Mind}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file stateofmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Got a big leather suitcase [G7]all I own's in[F]side
@@ -44,3 +47,9 @@ A [G7]melody can bring back a [F]memory
 [C]Take you to another [G7]place in time
 [Dm]Completely change your [G7]state of [C]mind
 {end_of_verse}
+
+
+
+
+
+

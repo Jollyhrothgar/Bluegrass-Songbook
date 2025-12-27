@@ -1,6 +1,9 @@
 {meta: title It's Gotta Be Love}
 {meta: artist Reba McEntire}
 {meta: composer Jerry Wallace and Terry Skinner}
+{meta: x_source classic-country}
+{meta: x_source_file itsgottabelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's gotta be [C]lov[G7]e that [Am]keeps us to[C]gether[F]
@@ -39,3 +42,7 @@ It's gotta be [C]lov[G7]e it [Am]must last for[C]ever
 [F]Or I won't let the fire [G7]start
 It's gotta be [C]love
 {end_of_verse}
+
+
+
+

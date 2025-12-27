@@ -1,6 +1,9 @@
 {meta: title Taking It Easy Here}
 {meta: artist Ernest Tubb}
 {meta: composer Ernie Lee}
+{meta: x_source classic-country}
+{meta: x_source_file takingiteasyherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now some folks think I'm lazy 
@@ -66,3 +69,10 @@ Taking it easy here my friend [G7]taking it easy [C]here
 I don't pass through this [G]world but once 
 So I'm [D7]taking it easy [G]here
 {end_of_verse}
+
+
+
+
+
+
+

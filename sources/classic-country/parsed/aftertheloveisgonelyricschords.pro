@@ -1,6 +1,9 @@
 {meta: title After The Love Is Gone}
 {meta: artist Hank Snow}
 {meta: composer Lee Morris}
+{meta: x_source classic-country}
+{meta: x_source_file aftertheloveisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm leaving you he said well so long was her [C]reply
@@ -27,3 +30,6 @@
 {start_of_verse: Verse 4}
 [C]No there's no more living [G]together [D7]after the love is [G]gone
 {end_of_verse}
+
+
+

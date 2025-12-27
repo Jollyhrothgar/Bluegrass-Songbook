@@ -1,6 +1,9 @@
 {meta: title I'm As Free As The Breeze}
 {meta: artist Ernest Tubb}
 {meta: composer Rex Alsie Griffin and Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file imasfreeasthebreezelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm as free as the breeze [Am]happy as you please
@@ -47,3 +50,9 @@ While you're [D7]singing the [G7]blues in the [C]rain
 {start_of_verse: Verse 5}
 While you're [D7]singing the [G7]blues in the [C]rain
 {end_of_verse}
+
+
+
+
+
+

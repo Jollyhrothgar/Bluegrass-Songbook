@@ -1,6 +1,9 @@
 {meta: title If I Get Home On Christmas Day}
 {meta: artist Elvis Presley}
 {meta: composer Tony McAulay}
+{meta: x_source classic-country}
+{meta: x_source_file ifigethomeonChristmasdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I get [Em]home on [F]Christmas [Dm]day [Em]
@@ -41,3 +44,8 @@ If [D7]I get home on [G7]Christmas [G]day [C]
 I'll take you in my [Em]arms and there you'll [Am]stay
 If [D7]I get home on [G7]Christmas [G]day [F]  [Fm]   [C]
 {end_of_verse}
+
+
+
+
+

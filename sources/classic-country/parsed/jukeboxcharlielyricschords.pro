@@ -1,6 +1,9 @@
 {meta: title Jukebox Charlie}
 {meta: artist Johnny Paycheck}
 {meta: composer Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file jukeboxcharlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello Joe  same [C]as [G]usual 
@@ -32,3 +35,7 @@ Jukebox [C]Charlie yeah that’s my [G]name
 Cause I’m well known throughout the honky tonk [D7]crowd
 Oh you’re [C]right Joe  it’s a crying [G]shame
 {end_of_verse}
+
+
+
+

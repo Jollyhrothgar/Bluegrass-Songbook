@@ -1,6 +1,9 @@
 {meta: title An Affair To Remember}
 {meta: artist Ray Price}
 {meta: composer Harold Adamson, Leo McCarey, Harry Warren}
+{meta: x_source classic-country}
+{meta: x_source_file anaffairtorememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our love [D#m]affair is a [G7]wondrous [A#7]thing
@@ -25,3 +28,5 @@
 [Dm]A love [G7]affair to [Fm]remember
 [C]To remember
 {end_of_verse}
+
+

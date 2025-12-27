@@ -1,5 +1,8 @@
 {meta: title To Daddy}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file todaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mama never seemed to miss the finer things of life
@@ -52,3 +55,11 @@ Being took for granted was a thing that she accepted
 She never meant to come back home
 [D7]If she did she never did say so to [C]daddy goodbye to [G]daddy
 {end_of_verse}
+
+
+
+
+
+
+
+

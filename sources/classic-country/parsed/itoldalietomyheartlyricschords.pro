@@ -1,5 +1,8 @@
 {meta: title I Told A Lie To My Heart}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file itoldalietomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told my [G7]heart I didn't love [C]you
@@ -28,3 +31,6 @@
 [F]Lonely years of tears and [C]sorrow
 [G7]I Told A Lie To My [C]Heart
 {end_of_verse}
+
+
+

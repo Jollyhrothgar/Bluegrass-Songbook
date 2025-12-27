@@ -1,6 +1,9 @@
 {meta: title I Don’t Have A Prayer Without You}
 {meta: artist Jeff and Sheri Easter}
 {meta: composer Bruce Haymes}
+{meta: x_source classic-country}
+{meta: x_source_file idonthaveaprayerwithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I feel [Bm]like there’s no way [Em]out
@@ -51,3 +54,8 @@ Won’t You [Bm]please hold me [Em]tight
 Make my heart [Am]true[G]  
 Cause [C]I don’t have a [D7]prayer without [G]You
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ballin' The Jack}
 {meta: artist Brenda Lee}
 {meta: composer Jim Burris and Chris Smith}
+{meta: x_source classic-country}
+{meta: x_source_file ballinthejacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well put your two knees close [A7]up tight
@@ -29,3 +32,6 @@
 [F]Swing your [D7]foot way round then [G7]you bring it [A7]back
 [D7]That's [E7]what I [F]call [G7]ballin' the [C]jack
 {end_of_verse}
+
+
+

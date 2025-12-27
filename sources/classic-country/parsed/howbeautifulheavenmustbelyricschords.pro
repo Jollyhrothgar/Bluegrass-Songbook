@@ -1,6 +1,9 @@
 {meta: title How Beautiful Heaven Must Be}
 {meta: artist George Jones}
 {meta: composer A.P. Bland and A.S. Bridgewater}
+{meta: x_source classic-country}
+{meta: x_source_file howbeautifulheavenmustbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We read of a place that's called heaven
@@ -43,3 +46,8 @@ The angels so sweetly are singing
 [C]Fair haven of rest for the [Am]weary
 [G7]How beautiful heaven must [C]be
 {end_of_verse}
+
+
+
+
+

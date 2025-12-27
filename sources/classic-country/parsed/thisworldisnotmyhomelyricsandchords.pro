@@ -1,6 +1,9 @@
 {meta: title This World Is Not My Home}
 {meta: artist Merle Haggard}
 {meta: composer Albert Edward Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file thisworldisnotmyhomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This world is not my home [F]I'm just a-passin' [C]through
@@ -40,3 +43,8 @@ And I can't feel at home in this [G7]world any[C]more
 {start_of_verse: Verse 5}
 No I can't feel at home in this [G7]world any[C]more
 {end_of_verse}
+
+
+
+
+

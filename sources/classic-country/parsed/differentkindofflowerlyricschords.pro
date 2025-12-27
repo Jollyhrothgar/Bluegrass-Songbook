@@ -1,6 +1,9 @@
 {meta: title Different Kind Of Flower}
 {meta: artist Ray Price}
 {meta: composer Gary Sefton}
+{meta: x_source classic-country}
+{meta: x_source_file differentkindofflowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She came down from Boston to be closer to her mother 
@@ -36,3 +39,7 @@ But touching her was loving her and how was I to [G7]know
 That [F]she’d be the kind of flower calloused [C]hands would never [F]hold
 While I was [G7]reaching for her body she was reaching for my [C]soul 
 {end_of_verse}
+
+
+
+

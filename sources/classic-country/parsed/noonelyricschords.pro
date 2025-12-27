@@ -1,6 +1,9 @@
 {meta: title No One}
 {meta: artist Brenda Lee}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file noonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No one ever kissed me the way that you [E7]do  [F]
@@ -23,3 +26,5 @@ For [D7]no one [G7]no one but [C]you (no one [G7]no one)
 [G7]I'll keep on caring [C]my [B7]whole [A#7]life [A7]through
 For [D7]no one [G7]no one but [C]you ([F]no [C]one)
 {end_of_verse}
+
+

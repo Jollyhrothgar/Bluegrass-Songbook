@@ -1,6 +1,9 @@
 {meta: title Billy Billy Bayou}
 {meta: artist Jim Reeves}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file billybillybayoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Back about eighteen hundred and some 
@@ -63,3 +66,14 @@ He wound up married cause he did [G7]neither [C]one
 No name suited him Jim Jack or Joe
 They just called him [G7]Billy [C]Bayou
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

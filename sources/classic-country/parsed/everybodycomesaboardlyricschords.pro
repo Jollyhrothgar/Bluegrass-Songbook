@@ -1,6 +1,9 @@
 {meta: title Everybody Comes Aboard}
 {meta: artist Elvis Presley}
 {meta: composer Bill Giant, Bernie Baum, Florenece Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file everybodycomesaboardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Everybody come [C]aboard the Showboat tonight
@@ -46,3 +49,7 @@ What a great [A7]night you've got in store
 You're gonna [D7]keep coming back for more
 [G7]Hey everyone let's go on with the [C]show
 {end_of_verse}
+
+
+
+

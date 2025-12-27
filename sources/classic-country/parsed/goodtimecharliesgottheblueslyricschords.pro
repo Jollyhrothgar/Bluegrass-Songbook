@@ -1,6 +1,9 @@
 {meta: title Good Time Charlie's Got The Blues}
 {meta: artist Cal Smith}
 {meta: composer Danny O'Keefe}
+{meta: x_source classic-country}
+{meta: x_source_file goodtimecharliesgottheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody's gone away
@@ -42,3 +45,8 @@ I got my pills to ease the pain
 [G7]Good time Charlie's got the [C]blues
 [G7]No Charlie's got the [C]blues
 {end_of_verse}
+
+
+
+
+

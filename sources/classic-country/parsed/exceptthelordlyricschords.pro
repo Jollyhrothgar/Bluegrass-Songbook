@@ -1,6 +1,9 @@
 {meta: title Except The Lord}
 {meta: artist Red Sovine}
 {meta: composer Mildred A. Burk, Ross Burk, Red Sovine}
+{meta: x_source classic-country}
+{meta: x_source_file exceptthelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Except the Lord build the house except the [C]Lord build the house
@@ -40,3 +43,8 @@ The [G]watchman [D7]wake up but in [G]vain
 {start_of_verse: Verse 4}
 The watchman [D7]wake up but in [C]vai[G]n
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Gotta Talk To Your Heart}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file igottatalktoyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've gotta talk to your heart you've got no right to make me [D7]cry
@@ -38,3 +41,8 @@ And [G]I'll prove they're wrong you'll [D7]see
 I've gotta try to change your mind give me just a little time
 I've gotta talk to your [G]heart
 {end_of_verse}
+
+
+
+
+

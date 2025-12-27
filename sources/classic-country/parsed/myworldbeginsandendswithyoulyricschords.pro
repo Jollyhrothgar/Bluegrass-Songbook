@@ -1,6 +1,9 @@
 {meta: title My World Begins And Ends With You}
 {meta: artist Kenny Rogers}
 {meta: composer Steve Pippin and Larry Keith}
+{meta: x_source classic-country}
+{meta: x_source_file myworldbeginsandendswithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My world was [F#m]no more than a [B7]dream
@@ -35,3 +38,7 @@ Cause my [Am]world [Bm]begins and [C]ends [D7]with [G]you
 {start_of_verse: Verse 5}
 My [Am]world [D7]ends with [G]you
 {end_of_verse}
+
+
+
+

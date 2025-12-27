@@ -1,6 +1,9 @@
 {meta: title I Hurt}
 {meta: artist Johnny Lee}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file ihurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darkness falls the [F]night has come [C]I have no place to hide[Em]
@@ -26,3 +29,5 @@ If time can [F]change the healing power
 [Dm]Then why do willows [G7]weep
 Oh I [C]hurt
 {end_of_verse}
+
+

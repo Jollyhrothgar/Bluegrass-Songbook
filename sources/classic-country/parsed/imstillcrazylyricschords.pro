@@ -1,6 +1,9 @@
 {meta: title I'm Still Crazy}
 {meta: artist Vern Gosdin}
 {meta: composer Slev Gosdin, Vern Gosdin, Buddy Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file imstillcrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I woke up one morning with a note [C]upon my [G]chest
@@ -36,3 +39,7 @@
 [C]Had to be out of my mind to think that I'd soon be over [Em]you
 [F]I'm still [C]crazy but I'm not over [G]you
 {end_of_verse}
+
+
+
+

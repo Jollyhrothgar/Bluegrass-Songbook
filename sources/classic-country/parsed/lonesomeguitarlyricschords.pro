@@ -1,6 +1,9 @@
 {meta: title Lonesome Guitar}
 {meta: artist Big Tom And The Travelers}
 {meta: composer J. McCauley}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomeguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Alana tonight as I lay in this dark prison [G7]cell
@@ -41,3 +44,8 @@ As I [G7]gaze at your picture and bless you for waiting so [C]long
 And my heart is with you Alana [C7]wherever you [F]are
 As I [G7]whisper your name to the string of a Lonesome [C]Guitar
 {end_of_verse}
+
+
+
+
+

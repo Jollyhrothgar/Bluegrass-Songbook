@@ -1,6 +1,9 @@
 {meta: title Whisper My Name}
 {meta: artist Randy Travis}
 {meta: composer Trey Bruce}
+{meta: x_source classic-country}
+{meta: x_source_file whispermynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard a freight train [F]out across the [C]way
@@ -41,3 +44,8 @@ When I heard [C]you  [G7]whisper my [C]name
 I heard angels [F]rise in [C]prai[Am]se
 When I heard [C]you  [G7]whisper my [F]nam[C]e
 {end_of_verse}
+
+
+
+
+

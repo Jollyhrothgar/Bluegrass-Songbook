@@ -1,5 +1,8 @@
 {meta: title Yesterday's Wine}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdayswinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Miracles appear in the [F]strangest of [C]places
@@ -35,3 +38,7 @@ Aging with [G7]time  like yesterday's [C]wine
 Yesterday's wine  we're [F]yesterday's [C]wine
 Aging with [G7]time  like yesterday's [C]wine
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Till The Pain Outwears The Shame}
 {meta: artist Loretta Lynn}
 {meta: composer Wiley Smith}
+{meta: x_source classic-country}
+{meta: x_source_file tillthepainoutwearstheshamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's common knowledge every[C]body knows I [G]love you
@@ -29,3 +32,6 @@ We've [A7]let a spark of stolen love [D7]become a burning flame
 Well I'm [G]begging you to go but when you [C]do I know
 I'll be [G]hurtin' [C]till the [G]pain out[D7]wears the [G]shame
 {end_of_verse}
+
+
+

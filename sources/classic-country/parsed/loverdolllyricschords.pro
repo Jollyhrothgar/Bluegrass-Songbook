@@ -1,6 +1,9 @@
 {meta: title Lover Doll}
 {meta: artist Elvis Presley}
 {meta: composer Sid Wayne and Abner Silver}
+{meta: x_source classic-country}
+{meta: x_source_file loverdolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lover [Am]doll  [C]lover [Am]doll
@@ -67,3 +70,12 @@ Lover doll lover [Am]doll
 Let me be your [G7]lover [C]boy
 Let me be your [G7]lover [C]boy
 {end_of_verse}
+
+
+
+
+
+
+
+
+

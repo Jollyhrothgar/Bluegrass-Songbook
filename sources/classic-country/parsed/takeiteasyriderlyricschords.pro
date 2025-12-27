@@ -1,5 +1,8 @@
 {meta: title Take It Easy Rider}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file takeiteasyriderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take it easy rider you can [F]make it easy rider
@@ -56,3 +59,10 @@ There's no [G7]one to stop you doesn't it look [F]easy [G7]rider [C]now
 Take it easy rider you can [F]make it easy rider
 There's no [G7]one to stop you doesn't it look [F]easy [G7]rider [C]now
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I've Forgotten You}
 {meta: artist Hank Snow}
 {meta: composer Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file iveforgottenyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've forgotten [F]you I know that's [C]true
@@ -24,3 +27,5 @@ I don't [G7]remember your little [C]lies
 [C7]I've forgotten [F]you I know that's [C]true
 But I can't [G7]explain to you these teardrops [C]in my eyes 
 {end_of_verse}
+
+

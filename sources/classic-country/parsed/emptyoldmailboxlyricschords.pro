@@ -1,6 +1,9 @@
 {meta: title Empty Old Mailbox}
 {meta: artist Don Rigsby}
 {meta: composer Tom T. Hall and Dixie Hall}
+{meta: x_source classic-country}
+{meta: x_source_file emptyoldmailboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Empty old mailbox down [D7]there by the [G]road
@@ -43,3 +46,8 @@ It's empty as promises [D7]given by [G]you
 [G]Darling please write me don't [C]waste precious [G]time
 Or you'll have an empty old [D7]mailbox like [G]mine
 {end_of_verse}
+
+
+
+
+

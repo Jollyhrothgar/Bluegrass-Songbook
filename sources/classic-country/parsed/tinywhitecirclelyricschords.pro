@@ -1,6 +1,9 @@
 {meta: title Tiny White Circle}
 {meta: artist Leona Williams}
 {meta: composer Vera Lakey}
+{meta: x_source classic-country}
+{meta: x_source_file tinywhitecirclelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see your staring [F]at this ring I’m [C]wearing
@@ -33,3 +36,7 @@ And this [C]tiny circle is a [G7]prison made of [C]gold [F]
 {start_of_verse: Verse 5}
 This [C]tiny circle is a [G7]prison made of [C]gold
 {end_of_verse}
+
+
+
+

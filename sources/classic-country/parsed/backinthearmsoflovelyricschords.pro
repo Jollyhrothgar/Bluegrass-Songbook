@@ -1,6 +1,9 @@
 {meta: title Back in the Arms of Love}
 {meta: artist Jack Greene}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file backinthearmsoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Back in the arms [G]of love forever home to [D7]stay
@@ -22,3 +25,5 @@
 [G]Back in the arms of love where skies are crystal [D7]blue
 [C]And every day is [D7]spring because of [G]you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Baby It's Yours}
 {meta: artist Wynn Stewart}
 {meta: composer Cheryl Hickman}
+{meta: x_source classic-country}
+{meta: x_source_file babyitsourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you want my kind of love [D7]baby it's [G7]yours
@@ -33,3 +36,7 @@ If you want a [F]love that's [C]true then I will [Am]give it to you
 {start_of_verse: Verse 4}
 [Am]Yours [D7]just say the [G7]word and baby it's [C]yours baby it's yours
 {end_of_verse}
+
+
+
+

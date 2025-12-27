@@ -1,6 +1,9 @@
 {meta: title Do You Hear What I Hear}
 {meta: artist Sonny James}
 {meta: composer Gloria Shayne and Noel Regney}
+{meta: x_source classic-country}
+{meta: x_source_file doyouhearwhatihearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Do you hear [G7]what I [C]hear)
@@ -57,3 +60,11 @@ The [Am]child the child [C]sleeping in the night
 [G7]He will [C]bring us [G7]goodness and [Em]light
 [G7]He will [C]bring us [G7]goodness and [C]light 
 {end_of_verse}
+
+
+
+
+
+
+
+

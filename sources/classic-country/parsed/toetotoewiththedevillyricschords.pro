@@ -1,6 +1,9 @@
 {meta: title Toe To Toe With The Devil}
 {meta: artist Vern Gosdin}
 {meta: composer Vern Gosdin and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file toetotoewiththedevillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the river of temptation is flowing deep and wide
@@ -36,3 +39,7 @@ You've got to stand toe to toe with the devil
 [C]You got to fight him everyday get down on your knees and [F]pray
 [C]If you want to meet your [G7]Maker face to [C]face
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Southern Fried}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file southernfriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When that old sun goes down across the [D7]Dixie Land   [G]look out
@@ -40,3 +43,8 @@ Take me back to [G]Dixie [E7]Lord I [A7]wanna get [D7]southern [G]fried
 I said [C]take me back to [E7]Dixie [C]cook me [E7]extra crispy  
 [C]Lay me out and pro[D7]nounce me southern [G]fried
 {end_of_verse}
+
+
+
+
+

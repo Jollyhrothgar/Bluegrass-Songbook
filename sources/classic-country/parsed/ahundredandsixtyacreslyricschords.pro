@@ -1,6 +1,9 @@
 {meta: title A Hundred and Sixty Acres}
 {meta: artist Marty Robbins}
 {meta: composer David Kapp}
+{meta: x_source classic-country}
+{meta: x_source_file ahundredandsixtyacreslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got a hundred and sixty acres in the valley
@@ -41,3 +44,8 @@ On the [D7]hundred and sixty acres that I [G]love
 Got an old paint hoss I'm the [C]guy who's [G]boss
 On the [D7]hundred and sixty acres that I [G]love
 {end_of_verse}
+
+
+
+
+

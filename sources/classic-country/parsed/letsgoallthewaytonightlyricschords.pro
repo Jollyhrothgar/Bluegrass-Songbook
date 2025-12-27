@@ -1,6 +1,9 @@
 {meta: title Let's Go All The Way Tonight}
 {meta: artist Mel Tillis}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file letsgoallthewaytonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Darling [F]let's go all [G7]the way [C]tonight
@@ -32,3 +35,6 @@
 [G7]Darling [F]let's go all [G7]the way [C]tonight
 [F]Let's go all [G7]the way [C]tonight
 {end_of_verse}
+
+
+

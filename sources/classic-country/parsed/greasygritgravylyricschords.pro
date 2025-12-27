@@ -1,6 +1,9 @@
 {meta: title Greasy Grit Gravy}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file greasygritgravylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Momma momma me oh [G7]my
@@ -71,3 +74,12 @@ Big fat pie and mobo [C]beans
 Make you wanna split your [F]jeans
 Eating [G7]greasy grit gravy and gizzard [C]greens
 {end_of_verse}
+
+
+
+
+
+
+
+
+

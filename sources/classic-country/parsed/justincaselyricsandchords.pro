@@ -1,6 +1,9 @@
 {meta: title Just In Case}
 {meta: artist Ronnie Milsap}
 {meta: composer Hugh Moffatt}
+{meta: x_source classic-country}
+{meta: x_source_file justincaselyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's [F]over [G7]I know you're [C]going away
@@ -30,3 +33,6 @@ And I don't care [C7]if you'll ever [F]come back again
 But [G7]I'll be here just in case you [C]do
 Yeah [G7]I'll be here just in case you [C]do
 {end_of_verse}
+
+
+

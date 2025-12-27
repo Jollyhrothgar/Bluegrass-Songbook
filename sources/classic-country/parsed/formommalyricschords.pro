@@ -1,6 +1,9 @@
 {meta: title For Momma}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file formommalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a Christmas [D7]memory [G]I recall so [G7]well
@@ -50,3 +53,9 @@ Keeping [D7]Christmas [Em]secrets [D7]was [G]always [D7]lots of [Em]fun
 [D7]So for [G]everything you've [D7]done for me and [G]still do today 
 [C]Merry Christmas [D7]Momma I love [G]you
 {end_of_verse}
+
+
+
+
+
+

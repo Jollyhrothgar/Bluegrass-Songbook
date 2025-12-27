@@ -1,6 +1,9 @@
 {meta: title Excuse Me For Living}
 {meta: artist Freddie Hart}
 {meta: composer Hugh X. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file excusemeforlivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I quit going to the places you and I used to [G7]go
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G7]Excuse me for living if this is living without [C]you
 {end_of_verse}
+
+
+
+

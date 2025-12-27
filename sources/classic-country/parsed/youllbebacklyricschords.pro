@@ -1,6 +1,9 @@
 {meta: title You’ll Be Back}
 {meta: artist The Statler Brothers}
 {meta: composer Wayland Holyfield and Johnny Russell}
+{meta: x_source classic-country}
+{meta: x_source_file youllbebacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All my friends ask what they can do 
@@ -29,3 +32,6 @@ You'll be [F]back and it won't even seem like you're [C]gone
 No I [F]won't be a[C]lone
 Cause you'll be [G7]back every night in my [C]dreams
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Last Night Every Night}
 {meta: artist Reba McEntire}
 {meta: composer Bob Morrison, Jim Zerface, Bill Zerface}
+{meta: x_source classic-country}
+{meta: x_source_file lastnighteverynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I watch you as you wake and rub your eyes
@@ -44,3 +47,8 @@ I [C]wish you didn't have to leave
 If [A7]you just knew how much I need last [G]nig[D7]ht every [G]night
 Repeat last verse  
 {end_of_verse}
+
+
+
+
+

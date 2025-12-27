@@ -1,6 +1,9 @@
 {meta: title Takin' It Easy}
 {meta: artist Lacy J. Dalton}
 {meta: composer Billy Sherrill, Mark Sherrill, Lacy J. Dalton}
+{meta: x_source classic-country}
+{meta: x_source_file takiniteasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wanna go where the warm winds blow me
@@ -52,3 +55,11 @@ I wanna run through the sand and the sun
 I wanna run through the sand and the sun
 [G]Leavin' it all behind
 {end_of_verse}
+
+
+
+
+
+
+
+

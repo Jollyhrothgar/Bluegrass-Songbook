@@ -1,6 +1,9 @@
 {meta: title Angel Of The Morning}
 {meta: artist Juice Newton}
 {meta: composer Chip Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file angelofthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There'll be no [C]strings to bind your [D7]hands
@@ -45,3 +48,7 @@
 [G]Just call me [C]angel of the [D7]morning [D7][C]Angel
 [G]Just touch my [C]cheek before you [D7]leave me [G][C]dar---ling
 {end_of_verse}
+
+
+
+

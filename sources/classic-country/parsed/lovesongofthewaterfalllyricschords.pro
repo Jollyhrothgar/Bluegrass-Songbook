@@ -1,6 +1,9 @@
 {meta: title Love Song Of The Waterfall}
 {meta: artist Slim Whitman}
 {meta: composer Bernard Barnes and Carl Winge}
+{meta: x_source classic-country}
+{meta: x_source_file lovesongofthewaterfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C][F][C]Ooh...do-do-do-ooh-ooh
@@ -34,3 +37,7 @@
 [C][F]Ooh...do-do-do-ooh-ooh
 [G7]A love song of the [C]waterfall
 {end_of_verse}
+
+
+
+

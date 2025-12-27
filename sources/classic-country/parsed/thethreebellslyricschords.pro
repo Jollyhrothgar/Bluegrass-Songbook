@@ -1,6 +1,9 @@
 {meta: title The Three Bells}
 {meta: artist Jim Ed Brown}
 {meta: composer Bert Reinsford and Jean Villard}
+{meta: x_source classic-country}
+{meta: x_source_file thethreebellslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a village hidden deep in the valley
@@ -55,3 +58,11 @@ A soul winged it's way to heaven
 [C]Lead us not into temptation may his soul find the [G7]salvation
 [F]Of Thy great [G7]eternal [C]love
 {end_of_verse}
+
+
+
+
+
+
+
+

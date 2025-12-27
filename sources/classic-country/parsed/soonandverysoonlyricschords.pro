@@ -1,6 +1,9 @@
 {meta: title Soon And Very Soon}
 {meta: artist Ronnie Milsap}
 {meta: composer Andrae Crouch}
+{meta: x_source classic-country}
+{meta: x_source_file soonandverysoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Soon and very soon [F]we are [C]going to see the King
@@ -28,3 +31,6 @@ Hal[C7]lelu-[F]jah hallelu[Fm]jah we're [C]going to [G7]see the [C]King
 We're going to [G7]see the [C]King 
 Going to [G7]see the [C]King
 {end_of_verse}
+
+
+

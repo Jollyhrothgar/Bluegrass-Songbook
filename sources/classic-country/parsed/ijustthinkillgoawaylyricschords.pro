@@ -1,6 +1,9 @@
 {meta: title I Just Think I'll Go Away}
 {meta: artist Keith Whitley}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file ijustthinkillgoawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It makes no difference where I [G7]wander
@@ -47,3 +50,9 @@ I just think I'll go [C]away
 {start_of_verse: Verse 5}
 [G7]I just think I'll go [F]away[C] 
 {end_of_verse}
+
+
+
+
+
+

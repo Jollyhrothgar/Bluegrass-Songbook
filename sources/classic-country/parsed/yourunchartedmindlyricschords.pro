@@ -1,6 +1,9 @@
 {meta: title Your Uncharted Mind}
 {meta: artist Gene Watson}
 {meta: composer Mel Holt}
+{meta: x_source classic-country}
+{meta: x_source_file yourunchartedmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I had the combination
@@ -60,3 +63,12 @@ How we ever got together I don't [C]know
 Oh there has to be some [G7]answers
 Somewhere in your uncharted [C][F]m-ind
 {end_of_verse}
+
+
+
+
+
+
+
+
+

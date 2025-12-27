@@ -1,6 +1,9 @@
 {meta: title The Gun The Gold And The Girl}
 {meta: artist Billy Walker}
 {meta: composer Harlan Howard and Buddy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file thegunthegoldandthegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I had to have the [D7]gun to get the [G]gold
@@ -45,3 +48,10 @@
 [G]I had to have the [D7]gun to get the [G]gold
 [D7]And I had to have the gold to get the [G]girl
 {end_of_verse}
+
+
+
+
+
+
+

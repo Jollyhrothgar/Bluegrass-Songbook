@@ -1,6 +1,9 @@
 {meta: title We're Not Talking Anymore}
 {meta: artist Curtis Potter}
 {meta: composer Mel Holt}
+{meta: x_source classic-country}
+{meta: x_source_file werenottalkinganymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who seems to never miss a chance to make the other one feel [D7]small
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]And that’s why we’re not talking [C]anymore
 {end_of_verse}
+
+
+
+

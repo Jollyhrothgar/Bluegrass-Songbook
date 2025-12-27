@@ -1,6 +1,9 @@
 {meta: title Speak To Me}
 {meta: artist Carl Belew}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file speaktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Is there anybody here) as lonely as [G7]I am
@@ -27,3 +30,6 @@ Is there anybody here (is there anybody here)
 As lonely as [F]I am 
 [G7]Speak to me talk to me [C]speak to me
 {end_of_verse}
+
+
+

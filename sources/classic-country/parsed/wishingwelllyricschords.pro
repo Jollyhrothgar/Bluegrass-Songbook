@@ -1,6 +1,9 @@
 {meta: title Wishing Well}
 {meta: artist Wanda Jackson}
 {meta: composer Billy Graham}
+{meta: x_source classic-country}
+{meta: x_source_file wishingwelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm goin' fishing in the [D7]wishing well 
@@ -48,3 +51,9 @@ And save my wishes up for [G]wedding bells
 I'm [D7]going fishing in the [G]wishing well 
 I'm [D7]going fishing in the [G]wishing well
 {end_of_verse}
+
+
+
+
+
+

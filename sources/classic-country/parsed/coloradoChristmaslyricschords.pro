@@ -1,6 +1,9 @@
 {meta: title Colorado Christmas}
 {meta: artist Nitty Gritty Dirt Band}
 {meta: composer Steve Goodman}
+{meta: x_source classic-country}
+{meta: x_source_file coloradoChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lookin' out the window of this Hollywood [Dm]hotel
@@ -51,3 +54,10 @@ Of Christmas joy
 {start_of_verse: Verse 8}
 [G7]It's a quiet Christmas mornin' in the Colorado [C]snow
 {end_of_verse}
+
+
+
+
+
+
+

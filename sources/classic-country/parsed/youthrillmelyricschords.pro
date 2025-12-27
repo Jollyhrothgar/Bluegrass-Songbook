@@ -1,6 +1,9 @@
 {meta: title You Thrill Me}
 {meta: artist The Everly Brothers}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file youthrillmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You thrill me
@@ -48,3 +51,9 @@ You do you do you do you do
 [G7]Whenever I'm with [C]you
 [G7]You thrill me through and [C]through
 {end_of_verse}
+
+
+
+
+
+

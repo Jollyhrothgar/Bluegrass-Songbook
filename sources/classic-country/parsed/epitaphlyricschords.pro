@@ -1,6 +1,9 @@
 {meta: title Epitaph (Black And Blue)}
 {meta: artist Kris Kristofferson}
 {meta: composer Jessi Colter}
+{meta: x_source classic-country}
+{meta: x_source_file epitaphlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Her close friends have [G]gathered 
@@ -37,3 +40,7 @@ Who [C]dreamed pretty [G]dreams
 Oh [G]why was she [D7]born [C]
 [D7]So black and [C]blue
 {end_of_verse}
+
+
+
+

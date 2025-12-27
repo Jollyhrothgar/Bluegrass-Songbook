@@ -1,6 +1,9 @@
 {meta: title What She Don't Know Won't Hurt Her}
 {meta: artist Gene Watson}
 {meta: composer Dave Lindsey and Ernie Rowell}
+{meta: x_source classic-country}
+{meta: x_source_file whatshedontknowwonthurtherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My woman thinks I wouldn't cheat on [F]her when we're [C]apart
@@ -33,3 +36,7 @@ What she don't know won't [C]hurt her [G7]but it's destroying [C]me
 {start_of_verse: Verse 4}
 [F]What she don't know won't [C]hurt her [G7]but Lord it's killing [C]me
 {end_of_verse}
+
+
+
+

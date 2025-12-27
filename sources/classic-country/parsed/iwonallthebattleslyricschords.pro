@@ -1,6 +1,9 @@
 {meta: title I Won All The Battles}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone and Paul Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file iwonallthebattleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We argued over whether [Am]I could buy that Chevy
@@ -56,3 +59,8 @@ But I [G7]still lost the [Am]war
 Well I [C]may have won those [Am]battles[F] 
 But [G7]I still lost the [C]war
 {end_of_verse}
+
+
+
+
+

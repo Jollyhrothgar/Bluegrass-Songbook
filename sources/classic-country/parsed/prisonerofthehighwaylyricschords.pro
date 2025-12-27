@@ -1,6 +1,9 @@
 {meta: title Prisoner of the Highway}
 {meta: artist Ronnie Milsap}
 {meta: composer Mike Reid}
+{meta: x_source classic-country}
+{meta: x_source_file prisonerofthehighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Diesel powers 18 wheels to [C]rolling
@@ -54,3 +57,9 @@ Don't you know I'm a  prisoner of the [G7]highway
 Call me a prisoner of the [G7]highway
 [D7]Prison by the freedom of the [Am]road
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Feel That I've Known You Forever}
 {meta: artist Elvis Presley}
 {meta: composer Doc Pomus and Alan Jeffrys}
+{meta: x_source classic-country}
+{meta: x_source_file ifeelthativeknownyouforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your lips  your [F]eyes  your [C]soft  sweet [F]sights
@@ -20,3 +23,5 @@
 {start_of_verse: Verse 3}
 repeat
 {end_of_verse}
+
+

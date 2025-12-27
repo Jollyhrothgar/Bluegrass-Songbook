@@ -1,5 +1,8 @@
 {meta: title Hills Of Home}
 {meta: artist Hazel Dickens}
+{meta: x_source classic-country}
+{meta: x_source_file hillsofhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There ain’t much that’s left here [F]that ain’t all run [C]down
@@ -39,3 +42,8 @@ There are some things memories [G7]can’t bring [C]home
 {start_of_verse: Verse 5}
 Yes they’ve seen their share of leaving [G7]in their [C]time
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: artist Bob Wills}
 {meta: composer Claude Nichols}
+{meta: x_source classic-country}
+{meta: x_source_file sheskillingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went to see my sweetie last night
@@ -86,3 +89,14 @@ Oh killing me (oh killing me)
 I'm telling you that gal of mine
 Oh [D7]Lord she's [G7]killing [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Till The End}
 {meta: artist Vern Gosdin}
 {meta: composer Cathy Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file tilltheendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I never see your [G7]loving face [C]again  
@@ -23,3 +26,5 @@ And there I'll stay forever and [G7]I'll prove to you [C]again
 I'll go on [Dm]loving you till [G7]the [C]end  
 I'll go on [Dm]loving you till [G7]the [C]end  
 {end_of_verse}
+
+

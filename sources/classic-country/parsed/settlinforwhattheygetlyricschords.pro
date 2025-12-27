@@ -1,6 +1,9 @@
 {meta: title Settlin' For What They Get}
 {meta: artist Mark Chesnutt}
 {meta: composer Willard Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file settlinforwhattheygetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From the table to the jukebox is just a few short [F]steps
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Tryin' to find what they want and settlin' for what they [C]get
 {end_of_verse}
+
+
+
+

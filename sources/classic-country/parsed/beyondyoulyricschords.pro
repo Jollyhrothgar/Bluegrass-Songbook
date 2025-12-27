@@ -1,6 +1,9 @@
 {meta: title Beyond You}
 {meta: artist Crystal Gayle}
 {meta: composer Bill Gatzimos and Crystal Gayle}
+{meta: x_source classic-country}
+{meta: x_source_file beyondyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Nobody [D7]holds me [C]like you [G]can 
@@ -36,3 +39,7 @@ Being with[D7]out you I´ll be [G]thinking about [C]you
 [Em]Being with[D7]out you I´ll be [G]thinking [C]about you 
 [G]Gotta reach be[D7]yond dear be[G]yond you
 {end_of_verse}
+
+
+
+

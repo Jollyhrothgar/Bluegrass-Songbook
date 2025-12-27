@@ -1,5 +1,8 @@
 {meta: title Mama's Been On Her Knees}
 {meta: artist Glorya Neu Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file mamasbeenonherkneeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She raised up her family with me all alone
@@ -36,3 +39,7 @@ She's made the difference for [D7]me mama's been on her [G]knees
 {start_of_verse: Verse 4}
 [C]She's made the difference for [G]m--[D7]e mama's been on her [G]knees
 {end_of_verse}
+
+
+
+

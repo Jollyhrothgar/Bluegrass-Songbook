@@ -1,6 +1,9 @@
 {meta: title Pete's Music City}
 {meta: artist Alabama}
 {meta: composer Monty Powell}
+{meta: x_source classic-country}
+{meta: x_source_file petesmusiccitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well northern Georgia [C]highway 41
@@ -43,3 +46,8 @@ We [Em]never bought nothing but we [C]sure did [D7]play
 The [G]music was loud and the [C]girls were [G]pretty
 There was [Em]always a magic down at [C]Pete's Music [G]City
 {end_of_verse}
+
+
+
+
+

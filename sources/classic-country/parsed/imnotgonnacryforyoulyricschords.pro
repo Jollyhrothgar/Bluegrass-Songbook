@@ -1,6 +1,9 @@
 {meta: title I'm Not Gonna Cry For You}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo}
+{meta: x_source classic-country}
+{meta: x_source_file imnotgonnacryforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am not gonna [G]cry for you 
@@ -34,3 +37,7 @@ Darling I won't be there at your [C]door
 Not gonna [G]cry for you 
 Not gonna cry for you any[C]more
 {end_of_verse}
+
+
+
+

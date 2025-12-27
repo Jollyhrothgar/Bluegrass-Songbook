@@ -1,6 +1,9 @@
 {meta: title Southern Rains}
 {meta: artist Mel Tillis}
 {meta: composer Roger Alan Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file southernrainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes my soul gets weary and my [C]mind begins to [G]wonder
@@ -43,3 +46,8 @@ But I can [G]pray for help and [D7]hope from southern [C]ra-in
 [G]You may not believe my story and [C]you may say I'm [A7]insane
 But they're the [G]closest thing to [D7]home those southern [C]rains
 {end_of_verse}
+
+
+
+
+

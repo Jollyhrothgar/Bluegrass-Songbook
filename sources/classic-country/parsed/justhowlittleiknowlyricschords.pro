@@ -1,6 +1,9 @@
 {meta: title Just How Little I Know}
 {meta: artist Gene Watson}
 {meta: composer Jim Rushing and Wayland Patton}
+{meta: x_source classic-country}
+{meta: x_source_file justhowlittleiknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember my granddaddy carvin' on a block of pine
@@ -49,3 +52,8 @@ Cause the longer I live the more I learn
 {start_of_verse: Verse 4}
 How little I [F]know[Fm]   [C]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Tied Around Your Finger}
 {meta: artist Jean Shepard}
 {meta: composer John Jones and Patsy Jones}
+{meta: x_source classic-country}
+{meta: x_source_file imtiedaroundyourfingerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Put me [G7]where you [C]want me I'll stay [F]until you [C]call
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]I'm [G7]tied around [C]your finger  [Am]so [Dm]you won't [G7]forget [C][F]me
 {end_of_verse}
+
+
+

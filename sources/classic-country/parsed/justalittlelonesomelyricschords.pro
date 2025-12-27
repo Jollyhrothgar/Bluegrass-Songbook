@@ -1,6 +1,9 @@
 {meta: title Just A Little Lonesome}
 {meta: artist Bobby Helms}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file justalittlelonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Always just a little lonesome[G7]   
@@ -29,3 +32,6 @@ But [C]in my heart I know it's [B7]true
 I'll [C]always be a little [G]lonesome 
 [A7]Always I'll always be a [D7]little [G]blue
 {end_of_verse}
+
+
+

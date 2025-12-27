@@ -1,6 +1,9 @@
 {meta: title Cheating's a Sin Lyrics and Chords}
 {meta: artist Kitty Wells}
 {meta: composer Billy Wallace}
+{meta: x_source classic-country}
+{meta: x_source_file cheatingsasinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're in the arms of [G7]another where you've no right to [C]be
@@ -29,3 +32,6 @@ Just speak for your-own [G7]self I know how I [C]feel
 I'll [F]carry your mem'ry though our love must [C]end
 You're cheating [G7]on me dear and cheating's a [C]sin
 {end_of_verse}
+
+
+

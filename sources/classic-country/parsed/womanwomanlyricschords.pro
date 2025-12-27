@@ -1,6 +1,9 @@
 {meta: title Woman Woman}
 {meta: artist Jim Glaser}
 {meta: composer Jim Glaser and Jimmy Payne}
+{meta: x_source classic-country}
+{meta: x_source_file womanwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Something's wrong be[Em]tween us that your [F]laughter cannot [G7]hide
@@ -37,3 +40,8 @@ I [C]hate to have to [Em]say it but that [F]looks all over [Fm]you
 [F]Have you got [C]cheating on your [F]m-i[G7]nd
 On your [C]mind
 {end_of_verse}
+
+
+
+
+

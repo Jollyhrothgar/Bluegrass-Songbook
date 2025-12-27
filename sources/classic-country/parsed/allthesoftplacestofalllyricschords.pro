@@ -1,6 +1,9 @@
 {meta: title All The Soft Places To Fall}
 {meta: artist Merle Haggard}
 {meta: composer Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file allthesoftplacestofalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Most of my life I've been runnin' around 
@@ -61,3 +64,10 @@ And we're [D7]lookin' for a home life
 With clean smellin' sheets 
 And all the soft places to [G]fall
 {end_of_verse}
+
+
+
+
+
+
+

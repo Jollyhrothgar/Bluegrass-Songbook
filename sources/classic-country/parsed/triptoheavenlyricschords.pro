@@ -1,5 +1,8 @@
 {meta: title Trip To Heaven}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file triptoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just took a trip to [G7]heaven 
@@ -52,3 +55,10 @@ I didn't even have to [C]die
 I just took a trip to [G7]heaven 
 I didn't even have to [C][F]d-ie
 {end_of_verse}
+
+
+
+
+
+
+

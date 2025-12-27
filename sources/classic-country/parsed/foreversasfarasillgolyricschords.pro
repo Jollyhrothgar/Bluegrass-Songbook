@@ -1,6 +1,9 @@
 {meta: title Forever's As Far As I'll Go}
 {meta: artist Alabama}
 {meta: composer Mike Reid}
+{meta: x_source classic-country}
+{meta: x_source_file foreversasfarasillgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll admit I could feel it the  first [G7]time that we [C]touched
@@ -29,3 +32,6 @@ And all the love it [F]can hold  that's all I can [Em]do
 [C]But I've thought about  how [Em]long I'll love [F]you
 [C]And it's only fair that you know  [F]forever's as far as I'll [C]go
 {end_of_verse}
+
+
+

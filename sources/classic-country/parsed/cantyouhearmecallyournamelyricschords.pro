@@ -1,6 +1,9 @@
 {meta: title Can't You Hear Me Call Your Name}
 {meta: artist Carl Belew}
 {meta: composer Clyde Beam, Charles Jiles, W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file cantyouhearmecallyournamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walk [G7]along this [C]lonesome street
@@ -31,3 +34,5 @@ Each [C]time I ask about you
 My [F]heart cries out in [C]vain
 Oh [F]can't you [C]hear me [G7]call your [C]name
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Today Has Already Come to Pass}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file todayhasalreadycometopasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today has al[D7]ready come to [G]pass
@@ -28,3 +31,6 @@ And the [C]name of that great city will [G]be The Lord is [D7]There
 And I [G]can almost hear the angels [C]sing
 Praise the [G]Lord I’m a [D7]child of the [G]King
 {end_of_verse}
+
+
+

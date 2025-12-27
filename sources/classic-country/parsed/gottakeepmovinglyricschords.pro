@@ -1,6 +1,9 @@
 {meta: title Gotta Keep Moving}
 {meta: artist Bill Anderson}
 {meta: composer Steve Karliski}
+{meta: x_source classic-country}
+{meta: x_source_file gottakeepmovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I get [Dm]restless [G7]Lord I hate to go [C]home
@@ -33,3 +36,7 @@ I gotta keep [C]movin' [G7] gotta keep [C]movin'
 {start_of_verse: Verse 5}
 Gotta keep movin' [G7] gotta keep [C]movin'
 {end_of_verse}
+
+
+
+

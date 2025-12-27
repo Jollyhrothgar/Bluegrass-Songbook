@@ -1,6 +1,9 @@
 {meta: title Old Toy Trains (aka Little Toy Trains)}
 {meta: artist Statler Brothers}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file oldtoytrainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Old toy trains little toy [G7]tracks 
@@ -40,3 +43,8 @@ Little boy [C]don't you think it's [G7]time you were in [C]bed
 {start_of_verse: Verse 4}
 Little boy don't you think it's [G7]time you were in [C]bed 
 {end_of_verse}
+
+
+
+
+

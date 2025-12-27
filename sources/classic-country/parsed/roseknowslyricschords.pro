@@ -1,6 +1,9 @@
 {meta: title Rose Knows}
 {meta: artist David Allan Coe}
 {meta: composer Don Goodman, Mary Ann Kennedy, Pam Rose}
+{meta: x_source classic-country}
+{meta: x_source_file roseknowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I told you from the start I couldn't give you my heart
@@ -36,3 +39,7 @@ Rose knows she's spending too much time [G]alone
 I suppose better get myself back [D7]home
 Rose knows somethings going [G]on
 {end_of_verse}
+
+
+
+

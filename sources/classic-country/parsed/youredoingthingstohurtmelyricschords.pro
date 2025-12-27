@@ -1,6 +1,9 @@
 {meta: title You're Doing Things To Hurt Me}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew, Tommy Blake, W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file youredoingthingstohurtmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the dim lights of the tavern
@@ -29,3 +32,5 @@ That [C]I wouldn't do to [G]you
 {start_of_verse: Verse 3}
 That [C]I wouldn't do to [G]you
 {end_of_verse}
+
+

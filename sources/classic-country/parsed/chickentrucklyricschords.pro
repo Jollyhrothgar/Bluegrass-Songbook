@@ -1,6 +1,9 @@
 {meta: title Chicken Truck}
 {meta: artist John Anderson}
 {meta: composer John David Anderson, Monroe Fields, Ervan James Parker}
+{meta: x_source classic-country}
+{meta: x_source_file chickentrucklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it was morning when I left Ala[C]bama
@@ -40,3 +43,7 @@ Well the hens were a-squawking and the rooster are a-crowing
 He's a [C]slowing me down when I need to keep going
 Chicken [D7]truck on highway 6[G]5
 {end_of_verse}
+
+
+
+

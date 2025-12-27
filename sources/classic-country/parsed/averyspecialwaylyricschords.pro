@@ -1,5 +1,8 @@
 {meta: title A Very Special Way}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file averyspecialwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love you in a very special [G7]kind of way
@@ -28,3 +31,6 @@ And [D7]thanks again for helping when [G7]I needed you
 [C]Oh it seems so little what else can [G7]I say
 I love you in a very special [C]way
 {end_of_verse}
+
+
+

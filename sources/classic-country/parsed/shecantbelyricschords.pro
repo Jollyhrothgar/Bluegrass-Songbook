@@ -1,6 +1,9 @@
 {meta: title She Can't Be}
 {meta: artist Faron Young}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file shecantbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Isn't she pretty don't she look sweet
@@ -57,3 +60,10 @@ She'll never change but then neither will I
 She can be anything [C]else when she tries
 But [F]true is the [G7]one thing she [C]can't be
 {end_of_verse}
+
+
+
+
+
+
+

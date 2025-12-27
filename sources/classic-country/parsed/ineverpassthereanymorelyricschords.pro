@@ -1,6 +1,9 @@
 {meta: title I Never Pass There Anymore}
 {meta: artist Jim Reeves}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file ineverpassthereanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a house just down the street
@@ -36,3 +39,7 @@ Within this house there is a girl
 [C]But it's a love for someone else
 [D7]I'm not the one she's dreaming of
 {end_of_verse}
+
+
+
+

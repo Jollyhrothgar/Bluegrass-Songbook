@@ -1,6 +1,9 @@
 {meta: title Bring Me Back My Heart}
 {meta: artist Wilburn Brothers}
 {meta: composer Richard D. Staedtler}
+{meta: x_source classic-country}
+{meta: x_source_file bringmebackmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh bring me back my heart so I can love again
@@ -39,3 +42,7 @@ For we [C]lost the love we [Am]had
 {start_of_verse: Verse 4}
 [F]Bring me back my [G7]heart so I can [C]love [F]ag[C]ain
 {end_of_verse}
+
+
+
+

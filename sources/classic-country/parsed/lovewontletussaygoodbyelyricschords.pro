@@ -1,6 +1,9 @@
 {meta: title Love Won't Let Us Say Goodbye}
 {meta: artist Lee Greenwood}
 {meta: composer Jan Crutchfield and Paul Harrison}
+{meta: x_source classic-country}
+{meta: x_source_file lovewontletussaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We promised love forever
@@ -49,3 +52,9 @@ It might [Dm]burn down to an [G7]ember
 Oh the [Dm]love will always be an [G7]ember
 [Dm]Cause love won't [G7]let us say good[C]bye [F]   [C]
 {end_of_verse}
+
+
+
+
+
+

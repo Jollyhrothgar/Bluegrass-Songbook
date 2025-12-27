@@ -1,6 +1,9 @@
 {meta: title The Hardest Part Of Livin's Loving Me}
 {meta: artist Charley Pride}
 {meta: composer Don Feagin}
+{meta: x_source classic-country}
+{meta: x_source_file thehardestpartoflivinslovingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes your hardest part of [F]living's lovin'[G7] me
@@ -43,3 +46,7 @@ You're the sunshine mornin' [C]brings
 You're the [G7]reasons for tomorrow 
 You're the sunshine morning [C]bring
 {end_of_verse}
+
+
+
+

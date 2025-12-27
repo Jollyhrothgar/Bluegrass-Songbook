@@ -1,6 +1,9 @@
 {meta: title No One's Gonna Hurt You Anymore}
 {meta: artist Jack Greene}
 {meta: composer Steve Karliski and Ted Cooper}
+{meta: x_source classic-country}
+{meta: x_source_file noonesgonnahurtyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've cried the [G7]last tear you're gonna cry
@@ -37,3 +40,7 @@ I'll make you [C]happy from now on
 And [G7]no one's gonna hurt you any[C]mor[F]e [C]
 Baby [G7]no one's gonna hurt you any[C]more[F]  [C]
 {end_of_verse}
+
+
+
+

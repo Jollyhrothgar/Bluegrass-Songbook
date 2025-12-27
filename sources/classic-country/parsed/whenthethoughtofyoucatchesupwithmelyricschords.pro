@@ -1,5 +1,8 @@
 {meta: title When The Thought Of You Catches Up With Me}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file whenthethoughtofyoucatchesupwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It can happen any [C]moment  [D7]without reason or [G]rhyme
@@ -32,3 +35,6 @@ I'll have that [C]dream about you [D7]
 When the thought of [C]you [D7]catches up with [G]me
 When the thought of [C]you [D7]catches up with [G]me
 {end_of_verse}
+
+
+

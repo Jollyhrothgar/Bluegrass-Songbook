@@ -1,5 +1,8 @@
 {meta: title You Don't Move Me Anymore}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file youdontmovemeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I say you don't move me [G7]baby [C]anymore
@@ -32,3 +35,6 @@ I tried to play it cool and you [C]strung me along
 I'm gonna show you I can sing a cool [F]cat song
 You [C]don't move me [G7]baby [C]anymore
 {end_of_verse}
+
+
+

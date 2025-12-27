@@ -1,6 +1,9 @@
 {meta: title Birth Of Our Love}
 {meta: artist Jack Greene}
 {meta: composer Jerry Edge, Jimmy Dry, Barbara Greene}
+{meta: x_source classic-country}
+{meta: x_source_file birthofourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oceans have made from little raindrops 
@@ -39,3 +42,9 @@ Now it's grown so tall but I still [C]recall
 {start_of_verse: Verse 7}
 [F]The wonderful birth [G7]of our [C]love
 {end_of_verse}
+
+
+
+
+
+

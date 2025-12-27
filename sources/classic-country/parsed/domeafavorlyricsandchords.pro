@@ -1,6 +1,9 @@
 {meta: title Do Me A Favor}
 {meta: artist Vern Gosdin}
 {meta: composer Hank Cochran, Buddy Cannon, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file domeafavorlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All those favors you say you are [G7]doing
@@ -35,3 +38,8 @@ If you’re taking me
 [G7]To the end of my dreams
 [C]Do me a favor honey please don’t do me no favors
 {end_of_verse}
+
+
+
+
+

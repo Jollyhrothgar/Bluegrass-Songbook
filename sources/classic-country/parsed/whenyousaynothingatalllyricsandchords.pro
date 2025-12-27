@@ -1,6 +1,9 @@
 {meta: title When You Say Nothing At All}
 {meta: artist Keith Whitley}
 {meta: composer Don Schlitz and Paul Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file whenyousaynothingatalllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's amazing how [F]you can speak [G7]right to my [C]heart [G7]   [F]  [G7]
@@ -36,3 +39,7 @@ Now [F]you say it best [G7]when you say nothing at [C]all  [G7]   [F]  [G7]
 [C]The touch of your [G7]hand says you'll [F]catch me if ever I [G7]fall [F]  [G7]
 Now [F]you say it best [G7]when you say nothing at [C]all  [G7]   [F]  [G7]
 {end_of_verse}
+
+
+
+

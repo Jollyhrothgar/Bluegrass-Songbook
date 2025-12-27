@@ -1,6 +1,9 @@
 {meta: title You've Got Your Troubles}
 {meta: artist Brenda Lee}
 {meta: composer Roger Cook and Roger Greenaway}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotyourtroubleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see that worried look upon your [D7]face
@@ -36,3 +39,7 @@
 [A7]You've got your troubles
 [D7]Ohh you've got your [G7]troubles I've got [C]mine
 {end_of_verse}
+
+
+
+

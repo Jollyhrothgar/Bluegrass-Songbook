@@ -1,5 +1,8 @@
 {meta: title She Sang Amazing Grace}
 {meta: artist Jerry Lee Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file shesangamazinggracelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was hard to handle  [F]the day we said I [C]do 
@@ -28,3 +31,6 @@ But [G7]somehow hymns and honky tonks  [F]don't go together [C]long
 [C]I'm Faded Love and Cheating Heart and [F]she's still silk and [C]lace 
 [F]While I played those [C]honky tonk [F]songs  she [G7]sings Amazing [C]Grace 
 {end_of_verse}
+
+
+

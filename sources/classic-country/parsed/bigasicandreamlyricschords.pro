@@ -1,6 +1,9 @@
 {meta: title Big As I Can Dream}
 {meta: artist Roy Orbison}
 {meta: composer Bob Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file bigasicandreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know  [F]they don't think  [G7]that I'll amount to [C]much 
@@ -25,3 +28,6 @@ There's no mountain  [Am]that's too high  I [Em]can ford any [G7]stream
 [F]Big as [G7]I can [C]dream  
 [F]Big as [G7]I can [C]dream 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Calling From Heaven}
 {meta: artist Doyle Lawson}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file callingfromheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As you go along from day to day
@@ -50,3 +53,9 @@ Was Jesus [D7]calling for His [G]own
 It sounds so sweet the Lord was saying 
 To His children are you lost in sin [D7]forever [G]more
 {end_of_verse}
+
+
+
+
+
+

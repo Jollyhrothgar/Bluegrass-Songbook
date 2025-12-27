@@ -1,6 +1,9 @@
 {meta: title Highway Man}
 {meta: artist Billy Walker}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file highwaymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Headed down on the [Am]open highway 
@@ -37,3 +40,7 @@ His [F]only love is a [G7]love of the open [C]road
 {start_of_verse: Verse 5}
 [Dm]Baby I'll always [G7]be a highway [C]man
 {end_of_verse}
+
+
+
+

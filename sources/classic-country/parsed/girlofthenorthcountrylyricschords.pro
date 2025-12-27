@@ -1,6 +1,9 @@
 {meta: title Girl Of The North Country}
 {meta: artist The Country Gentlemen}
 {meta: composer Bob Dylan}
+{meta: x_source classic-country}
+{meta: x_source_file girlofthenorthcountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're travelin' in the [F]north country [C]fair
@@ -50,3 +53,9 @@ Where the winds blow hard on the [F]border[C]line
 Remember me to [F]one who lives [C]there
 For she once was a [F]true love of [C]mine
 {end_of_verse}
+
+
+
+
+
+

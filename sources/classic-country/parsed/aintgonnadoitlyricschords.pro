@@ -1,6 +1,9 @@
 {meta: title Ain’t Gonna Do It}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file aintgonnadoitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm goin' home yes goin' home
@@ -31,3 +34,6 @@ No no I [F]ain't gonna do it
 No no I [C]ain't gonna do it
 Ain't [G7]roamin' no more with Moe and [C]Joe
 {end_of_verse}
+
+
+

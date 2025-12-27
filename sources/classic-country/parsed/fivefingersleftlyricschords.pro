@@ -1,5 +1,8 @@
 {meta: title Five Fingers Left Lyrics Chords}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file fivefingersleftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once upon a time I had a real good friend
@@ -67,3 +70,15 @@ But it wasn't long till my good friend
 But it wasn't long till my good friend
 [G7]And the man I love got [C]caught
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

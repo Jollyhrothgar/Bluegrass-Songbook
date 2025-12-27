@@ -1,6 +1,9 @@
 {meta: title If You Love Me Let Me Know}
 {meta: artist Olivia Newton John}
 {meta: composer John Rostill}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoulovemeletmeknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You came when I was happy in your sunshine
@@ -43,3 +46,8 @@
 [D7]I can't take another minute
 [G]Of a day without you in [G7]it
 {end_of_verse}
+
+
+
+
+

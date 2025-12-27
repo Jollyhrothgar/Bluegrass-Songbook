@@ -1,6 +1,9 @@
 {meta: title Honey Do You Love Me Huh}
 {meta: artist Hank Williams}
 {meta: composer Hank Williams and Curly Williams}
+{meta: x_source classic-country}
+{meta: x_source_file honeydoyoulovemehuhlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey do you love me huh honey do you love me huh 
@@ -22,3 +25,5 @@ Oh honey do you love me huh honey do you love me huh
 [C]Honey do you love me huh  [G7]quit your hesitating 
 I'm tired of waiting honey do you love me [C]huh
 {end_of_verse}
+
+

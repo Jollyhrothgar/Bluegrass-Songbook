@@ -1,6 +1,9 @@
 {meta: title Don't Shake Hands With The Devil}
 {meta: artist Cowboy Copas}
 {meta: composer Dottie Swan and Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file dontshakehandswiththedevillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't shake hands with the devil don't shake [C]hands with the [G]devil
@@ -40,3 +43,8 @@ Don't shake hands with that [D7]evil one [G]below
 {start_of_verse: Verse 5}
 Don't shake hands with that [D7]evil on [G]below
 {end_of_verse}
+
+
+
+
+

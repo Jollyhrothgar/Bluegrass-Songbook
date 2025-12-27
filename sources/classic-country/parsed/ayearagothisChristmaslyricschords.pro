@@ -1,5 +1,8 @@
 {meta: title A Year Ago This Christmas}
 {meta: artist Bill Haley}
+{meta: x_source classic-country}
+{meta: x_source_file ayearagothisChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A year ago this Christmas was the [D7]day that I lost you
@@ -21,3 +24,5 @@ For a [G7]year ago this Christmas you broke my heart my [C]dear
 [C]I know that I will shed some tears when [D7]Christmas comes this year
 For a [G7]year ago this Christmas you broke my heart my [C]dear
 {end_of_verse}
+
+

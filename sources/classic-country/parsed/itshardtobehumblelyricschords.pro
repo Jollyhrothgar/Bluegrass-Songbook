@@ -1,5 +1,8 @@
 {meta: title It's Hard to Be Humble}
 {meta: artist Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file itshardtobehumblelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh Lord it's hard to be humble when you're perfect in every [G7]way
@@ -52,3 +55,12 @@ Some folks say that I'm egotistical
 Tag:
 [G7]We're doing the best that I [C]can
 {end_of_verse}
+
+
+
+
+
+
+
+
+

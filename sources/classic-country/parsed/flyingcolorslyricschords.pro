@@ -1,6 +1,9 @@
 {meta: title Flying Colors}
 {meta: artist Keith Whitley}
 {meta: composer Kim Morrison and Gary Talley}
+{meta: x_source classic-country}
+{meta: x_source_file flyingcolorslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you [F]walked out of my life I didn't [C]think that I'd survive
@@ -48,3 +51,9 @@ But I came [D7]through with flying [G7]colors after losing [C]you
 I should [F]win the Purple Heart cause you [C]tore mine all [Am]apart
 But I came [D7]through with flying [G7]colors after losing [C]you
 {end_of_verse}
+
+
+
+
+
+

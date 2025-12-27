@@ -1,6 +1,9 @@
 {meta: title I Was Just Walking Out The Door}
 {meta: artist Jim Reeves}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file iwasjustwalkingoutthedoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was just [G7]walking out the [C]door 
@@ -30,3 +33,6 @@ Must [E7]be on my way [C]this is my wedding [Am]day
 And I was [D7]just walking [G7]out the [E7]door
 I was [D7]just walking out [G7]the [C]door
 {end_of_verse}
+
+
+

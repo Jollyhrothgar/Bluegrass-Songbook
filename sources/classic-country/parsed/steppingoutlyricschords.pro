@@ -1,6 +1,9 @@
 {meta: title Stepping Out}
 {meta: artist Carl Smith}
 {meta: composer Billy Starr}
+{meta: x_source classic-country}
+{meta: x_source_file steppingoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes I [G]know that my baby's been stepping out used to be my [C]darling
@@ -29,3 +32,6 @@
 [E7]But I ain't gonna pout but neither darling will I [A7]shout
 [D7]Cause I know that my baby's stepping [C]out
 {end_of_verse}
+
+
+

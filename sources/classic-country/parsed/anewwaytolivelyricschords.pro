@@ -1,6 +1,9 @@
 {meta: title A New Way To Live}
 {meta: artist Mickey Gilley}
 {meta: composer Wilburn S. Rice}
+{meta: x_source classic-country}
+{meta: x_source_file anewwaytolivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm growing ti[G7]-r-[C]ed [G7]of your walking [C]on me
@@ -21,3 +24,5 @@ I'm gonna [F]fi[Em]-n-[F]d [G7]a new way to [C]live
 I'm gonna [F]fi[Em]-n-[F]d [G7]a new way to [C]live
 Yes I'm gonna [F]fi[Em]-n-[F]d [G7]a new way to [C]live
 {end_of_verse}
+
+

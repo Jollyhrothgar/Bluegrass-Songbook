@@ -1,6 +1,9 @@
 {meta: title Only One Love In My Life}
 {meta: artist Ronnie Milsap}
 {meta: composer John Bettis and Royal C. Bannon}
+{meta: x_source classic-country}
+{meta: x_source_file onlyoneloveinmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]So many times these few dreams of mine
@@ -46,3 +49,10 @@ I'm a [Em]ship on the open [Am]ocean [D7]darling [C]you're my [G7]guiding [C]lig
 {start_of_verse: Verse 6}
 [G7]You're my guiding [C]light  and you're the [F]only [G7]love in my [C]life
 {end_of_verse}
+
+
+
+
+
+
+

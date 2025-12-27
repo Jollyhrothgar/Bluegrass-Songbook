@@ -1,5 +1,8 @@
 {meta: title The The Year Clayton Delaney Died}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file theyearclaytondelaneydiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I remember the year that [D7]Clayton Delaney [G7][G]died
@@ -36,3 +39,7 @@ Well I know there's a lotta big preachers that know a lot more than I do
 But it could be that the good Lord likes a little picking too
 Yeah I remember the year that [D7]Clayton Delaney [G]died
 {end_of_verse}
+
+
+
+

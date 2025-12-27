@@ -1,5 +1,8 @@
 {meta: title What Made Her Change Her Mind}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file whatmadeherchangehermindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What made her [C]change from my [D7]love to my [G]used-to-be
@@ -21,3 +24,5 @@ Those pretty [C]words all [D7]erased from our [G]happy song
 Without her love in my [B7]life makes the [C]world so strange
 My heart keeps [G]asking  [D7]what made her [G]change
 {end_of_verse}
+
+

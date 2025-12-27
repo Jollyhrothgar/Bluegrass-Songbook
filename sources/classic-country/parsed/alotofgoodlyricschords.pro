@@ -1,6 +1,9 @@
 {meta: title A Lot Of Good}
 {meta: artist Waylon Jennings}
 {meta: composer Troy Seals, Buddy Emmons, Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file alotofgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I watched the [F]tail lights disa[C]ppear
@@ -46,3 +49,9 @@ But a [F]lot of good it's [G7]gonna do me [C]now [G7]
 {start_of_verse: Verse 6}
 A [F]lot of good it's [G7]gonna do me [C]now
 {end_of_verse}
+
+
+
+
+
+

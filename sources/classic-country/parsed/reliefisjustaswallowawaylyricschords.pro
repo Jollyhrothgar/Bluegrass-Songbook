@@ -1,6 +1,9 @@
 {meta: title Relief Is Just A Swallow Away}
 {meta: artist George Jones}
 {meta: composer Eddie Noack}
+{meta: x_source classic-country}
+{meta: x_source_file reliefisjustaswallowawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I’m a-standin' in the tavern a-[D7]feelin' blue
@@ -44,3 +47,8 @@ And that may still be too far [C]away
 Because [G]relief  [D7]is just a swallow [G]away
 I said relief  [D7]just a swallow [G]away
 {end_of_verse}
+
+
+
+
+

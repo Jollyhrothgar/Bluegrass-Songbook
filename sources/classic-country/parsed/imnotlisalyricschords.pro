@@ -1,5 +1,8 @@
 {meta: title I'm Not Lisa}
 {meta: artist Jessi Colter}
+{meta: x_source classic-country}
+{meta: x_source_file imnotlisalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm not Lisa [G7]my name is [C]Julie
@@ -37,3 +40,8 @@ My [D7]eyes are [G]not [G7]blue
 But mine won't leave [C]you
 'Til the [D7]sunlight has touched your [G]face
 {end_of_verse}
+
+
+
+
+

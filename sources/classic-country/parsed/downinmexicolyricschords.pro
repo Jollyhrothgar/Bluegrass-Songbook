@@ -1,6 +1,9 @@
 {meta: title Down In Mexico}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare and Skeets McDonald}
+{meta: x_source classic-country}
+{meta: x_source_file downinmexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm down in [G7]Mexi[F]co [G7]had to [F]go [C]won't be [B7]home no [C]more
@@ -33,3 +36,7 @@ Now I'm down in [G7]Mexi[F]co [G7]had to [F]go [C]won't be [B7]home no [C]more
 I want mom and [G7]dad to [F]know I [G7]miss and love them [F]so
 [C]Though I'll never [G7]see them any[C]more
 {end_of_verse}
+
+
+
+

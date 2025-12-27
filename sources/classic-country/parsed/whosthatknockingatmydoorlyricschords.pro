@@ -1,6 +1,9 @@
 {meta: title Who’s That Knocking At My Door}
 {meta: artist The Dreadful Snakes}
 {meta: composer Pat Enright}
+{meta: x_source classic-country}
+{meta: x_source_file whosthatknockingatmydoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who’s that knocking at my door have I heard that knock before
@@ -50,3 +53,9 @@ Is it evil trying to [G7]get into my [C]room
 Who’s that tapping at my window who’s calling me to go
 To a place that’s [G7]filled with dark and [C]gloom
 {end_of_verse}
+
+
+
+
+
+

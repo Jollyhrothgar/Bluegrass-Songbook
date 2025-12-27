@@ -1,6 +1,9 @@
 {meta: title Paniolo Country}
 {meta: artist Randy Travis}
 {meta: composer Marcus Shutte}
+{meta: x_source classic-country}
+{meta: x_source_file paniolocountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Places I [F]have been [G7]cities I have [C]seen
@@ -46,3 +49,9 @@ Paniolo [F]country [G7]raindrops fall the [C]grass grows tall
 Paniolo [F]country my [G7]home on the [C]range
 Paniolo [F]country my [G7]home on the [C]range
 {end_of_verse}
+
+
+
+
+
+

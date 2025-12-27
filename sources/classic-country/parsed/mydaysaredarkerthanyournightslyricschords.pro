@@ -1,6 +1,9 @@
 {meta: title My Days Are Darker Than Your Nights}
 {meta: artist Wanda Jackson}
 {meta: composer Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file mydaysaredarkerthanyournightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You never [D7]knew how much I [G]loved you
@@ -29,3 +32,6 @@ My [C]days are [D7]darker than your [G]nights
 There's [G]just no end as [G7]long as I'm [C]alive
 My [G]days are [D7]darker than your [G]nights  [D7]     [G]
 {end_of_verse}
+
+
+

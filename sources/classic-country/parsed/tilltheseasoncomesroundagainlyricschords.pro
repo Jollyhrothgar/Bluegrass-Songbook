@@ -1,6 +1,9 @@
 {meta: title Till The Season Comes Round Again}
 {meta: artist Dolly Parton and Kenny Rogers}
 {meta: composer Randy Goodrum and John B. Jarvis}
+{meta: x_source classic-country}
+{meta: x_source_file tilltheseasoncomesroundagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come and gather around at the [F]table
@@ -63,3 +66,11 @@ Till the [C]season comes round [C][G7]again
 If we [Gm]must say goodbye [C]let the [F]spirit go with [G]you
 Till the [C]season comes round [C][G7]again
 {end_of_verse}
+
+
+
+
+
+
+
+

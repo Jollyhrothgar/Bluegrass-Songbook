@@ -1,6 +1,9 @@
 {meta: title She Loves Me Right Out Of My Mind}
 {meta: artist George Jones}
 {meta: composer Freddy Weller and Spooner Oldham}
+{meta: x_source classic-country}
+{meta: x_source_file shelovesmerightoutofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She may not be the girl that I'll [F]marry
@@ -34,3 +37,7 @@ And let her [C]love me right [G7]out of my [C]mind
 She's the best thing the world has to [F]offer
 And she [C]loves me right [G7]out of my [F]m-in[C]d
 {end_of_verse}
+
+
+
+

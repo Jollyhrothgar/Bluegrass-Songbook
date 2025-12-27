@@ -1,6 +1,9 @@
 {meta: title Light On My Feet And Ready To Fly}
 {meta: artist Doyle Lawson}
 {meta: composer Corey Hensley}
+{meta: x_source classic-country}
+{meta: x_source_file lightonmyfeetandreadytoflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Traveling down this road I've [F]wandered for so [C]long 
@@ -34,3 +37,7 @@ Light on my feet and [G7]ready to [C]fly
 {start_of_verse: Verse 5}
 Light on my feet and [G7]ready to [C]fly 
 {end_of_verse}
+
+
+
+

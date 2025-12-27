@@ -1,6 +1,9 @@
 {meta: title Blue Angel}
 {meta: artist Roy Orbison}
 {meta: composer Joe}
+{meta: x_source classic-country}
+{meta: x_source_file blueangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]Sha... la... la dooby wah [Dm]dum dum dum yip [G7]yip
@@ -59,3 +62,11 @@
 [Em]Sha la la [Dm]dooby wah dum dum [G7]dum yip yip [C]fum
 [F]Blu-ue a-an-gel  Sha... la... [C]la
 {end_of_verse}
+
+
+
+
+
+
+
+

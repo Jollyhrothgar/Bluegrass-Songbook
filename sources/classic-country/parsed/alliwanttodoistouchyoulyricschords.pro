@@ -1,6 +1,9 @@
 {meta: title All I Want To Do Is Touch You}
 {meta: artist Hank Snow}
 {meta: composer Paul Dempsey}
+{meta: x_source classic-country}
+{meta: x_source_file alliwanttodoistouchyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]All I wanna do is touch [G]you
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 7}
 [Em]All I wanna do is touch [G]you
 {end_of_verse}
+
+
+
+
+
+

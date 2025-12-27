@@ -1,6 +1,9 @@
 {meta: title Julie}
 {meta: artist Cal Smith}
 {meta: composer Eddie Setser}
+{meta: x_source classic-country}
+{meta: x_source_file julielyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Julie was the [C]life of my [G]soul
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 Julie I love ya
 {end_of_verse}
+
+
+
+

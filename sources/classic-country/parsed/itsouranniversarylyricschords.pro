@@ -1,5 +1,8 @@
 {meta: title It's Our Anniversary}
 {meta: artist Jim Finnegan}
+{meta: x_source classic-country}
+{meta: x_source_file itsouranniversarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]May I say thanks for the [G7]years gone by
@@ -46,3 +49,9 @@ I love you please always love [C]me
 {start_of_verse: Verse 5}
 [G7]It's our anniversa[C]ry
 {end_of_verse}
+
+
+
+
+
+

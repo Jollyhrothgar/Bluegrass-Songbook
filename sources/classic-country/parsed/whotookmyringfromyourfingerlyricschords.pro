@@ -1,5 +1,8 @@
 {meta: title Who Took My Ring From Your Finger}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file whotookmyringfromyourfingerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who took my [G7]ring from your [C]finger
@@ -35,3 +38,7 @@ And [F]who put that look in your [C]eye
 [F]Who tore my dream world apart [C]dear
 I [G7]suppose I will never know [C]why
 {end_of_verse}
+
+
+
+

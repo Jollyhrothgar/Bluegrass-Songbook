@@ -1,6 +1,9 @@
 {meta: title Leave Me}
 {meta: artist Ernest Tubb}
 {meta: composer Ruby Glasgow}
+{meta: x_source classic-country}
+{meta: x_source_file leavemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You [G7]should be satisfied you broke my [C]heart
@@ -51,3 +54,10 @@
 {start_of_verse: Verse 6}
 [G7]You should be satisfied you broke my [C]heart
 {end_of_verse}
+
+
+
+
+
+
+

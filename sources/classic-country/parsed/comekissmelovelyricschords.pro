@@ -1,6 +1,9 @@
 {meta: title Come Kiss Me Love}
 {meta: artist Bobby Bare}
 {meta: composer Ian Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file comekissmelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come [G7]kiss me [C]love [F]before you [C]leave [G7]me
@@ -36,3 +39,7 @@
 [C]And when I'm dead [G7]my love come [C]and see [G7]me
 [F]And throw sweet [C]flowers [G7]upon [C]my [C][G7]grave
 {end_of_verse}
+
+
+
+

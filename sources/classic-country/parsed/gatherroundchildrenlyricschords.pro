@@ -1,6 +1,9 @@
 {meta: title Gather Round Children}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Cecil Harrelson and Linda G. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file gatherroundchildrenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Gather Round Children
@@ -39,3 +42,7 @@ A [C]gown of gold she wears to [F]match her silver [C]hair
 A [F]peaceful smile upon her [C]face 
 That shows her [G7]heavenly [C]grace[F]
 {end_of_verse}
+
+
+
+

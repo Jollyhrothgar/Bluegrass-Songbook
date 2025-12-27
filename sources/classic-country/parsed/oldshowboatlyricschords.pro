@@ -1,6 +1,9 @@
 {meta: title Old Showboat}
 {meta: artist Stonewall Jackson}
 {meta: composer Marijohn Wilkin and Fred Burch}
+{meta: x_source classic-country}
+{meta: x_source_file oldshowboatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I blew into Dallas feelin' kinda low
@@ -61,3 +64,11 @@ I'm getting married and Old Showboat you're to [G7]blame
 {start_of_verse: Verse 9}
 [D7]I'm getting married and Old Showboat you're to [G7]blame
 {end_of_verse}
+
+
+
+
+
+
+
+

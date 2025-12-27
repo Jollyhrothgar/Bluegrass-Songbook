@@ -1,5 +1,8 @@
 {meta: title Right or Wrong Lyrics Chords}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file rightorwronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Right or wrong I'll be with you 
@@ -37,3 +40,9 @@ Oh my love all the [D7]way
 For I believe that I belong
 by your side right or [G]wrong
 {end_of_verse}
+
+
+
+
+
+

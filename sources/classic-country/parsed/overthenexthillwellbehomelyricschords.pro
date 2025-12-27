@@ -1,5 +1,8 @@
 {meta: title Over The Next Hill We'll Be Home}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file overthenexthillwellbehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]By the way the land is layin'
@@ -36,3 +39,6 @@
 [C]But at last the end is nearin'
 [G]And [C]over the next [G]hill [D7]we'll be [G]home
 {end_of_verse}
+
+
+

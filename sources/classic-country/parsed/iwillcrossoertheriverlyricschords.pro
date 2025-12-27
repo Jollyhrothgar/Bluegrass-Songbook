@@ -1,5 +1,8 @@
 {meta: title I Will Cross O'er the River}
 {meta: artist John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file iwillcrossoertheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I will [C]cross o’er the river and [Am]rest [F]in the [G7]shade of the [C]trees
@@ -32,3 +35,7 @@ Cause it’s [C]only across the river and [G7]I’ll be that much closer to my [
 {start_of_verse: Verse 4}
 [F]Yes it’s only [C]across the river and [G7]I’ll be that much closer to my [Am]home[C]
 {end_of_verse}
+
+
+
+

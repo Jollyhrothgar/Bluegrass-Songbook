@@ -1,6 +1,9 @@
 {meta: title The Thanksgiving Prayer}
 {meta: artist Johnny Cash}
 {meta: composer Josef Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file thethanksgivingprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We've come to the [D7]time in the [Em]season
@@ -52,3 +55,9 @@
 [Em]Thanksgiving day for the rest of my life
 [C]I'm thanking the [D7]Lord He made [G]you
 {end_of_verse}
+
+
+
+
+
+

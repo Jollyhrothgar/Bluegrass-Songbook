@@ -1,6 +1,9 @@
 {meta: title Tomorrow Is Forever}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrowisforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take my hand and run with me out of the [D7]past of [G]yesterday 
@@ -31,3 +34,7 @@ The [G]kind that won't hurt you oh [C]never
 Yester-day [D7]is [G]gone [C]gone but [G]tomorrow is [G][D7]for-ever
 [C]Yester-day [D7]is [G]gone [C]gone but [G]tomorrow is [G][D7]for-ever 
 {end_of_verse}
+
+
+
+

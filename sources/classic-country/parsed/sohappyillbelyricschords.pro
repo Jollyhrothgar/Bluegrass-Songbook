@@ -1,5 +1,8 @@
 {meta: title So Happy I'll Be}
 {meta: artist Earl Scruggs and Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file sohappyillbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm just waitin' for the time to come 
@@ -47,3 +50,8 @@ And tell Him of His love He had for [D7]me
 No more [G]sorrow grief or pain all the [C]time will be the [G]same
 So happy I'll be [D7]forever [G]more
 {end_of_verse}
+
+
+
+
+

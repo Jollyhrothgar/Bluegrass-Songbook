@@ -1,6 +1,9 @@
 {meta: title Good Golly Miss Molly}
 {meta: artist Little Richard}
 {meta: composer Robert Blackwell and John Marascalco}
+{meta: x_source classic-country}
+{meta: x_source_file goodgollymissmollylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Good golly Miss Molly sure like to ball
@@ -48,3 +51,10 @@ Good golly Miss [C]Molly sure like to [G]ball
 When you're rocking and [D7]a-rolling
 [C]Can you hear your momma [G]call 
 {end_of_verse}
+
+
+
+
+
+
+

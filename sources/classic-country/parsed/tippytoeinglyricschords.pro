@@ -1,6 +1,9 @@
 {meta: title Tippy Toeing}
 {meta: artist Loretta Lynn}
 {meta: composer Bobby Harden}
+{meta: x_source classic-country}
+{meta: x_source_file tippytoeinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well momma go a tippy tippy toeing through the house
@@ -38,3 +41,7 @@ Momma sleep [C]a little longer but remember while I'm [F]gone
 Won't you [G7]please take care of the [C]baby 
 After [G7]all it's just a little [C]baby
 {end_of_verse}
+
+
+
+

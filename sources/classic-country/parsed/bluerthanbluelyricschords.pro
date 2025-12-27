@@ -1,6 +1,9 @@
 {meta: title Bluer Than Blue}
 {meta: artist Bob Wills}
 {meta: composer Randy Goodrum}
+{meta: x_source classic-country}
+{meta: x_source_file bluerthanbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh why did I trust you
@@ -50,3 +53,9 @@ I'm losing my [F]mind
 I should of seen through [G7]you
 I must have been [C]blind
 {end_of_verse}
+
+
+
+
+
+

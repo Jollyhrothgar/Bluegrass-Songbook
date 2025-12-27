@@ -1,5 +1,8 @@
 {meta: title Let Her In}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file letherinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't know [F]love would come [G7]around
@@ -28,3 +31,6 @@ Let her [F]in  don't you [G7]know how long it's [C]been
 Let her [F]in  let her [G7]come and be my [C]friend
 Baby [F]please[G7]  won't you let her [F]in[C]
 {end_of_verse}
+
+
+

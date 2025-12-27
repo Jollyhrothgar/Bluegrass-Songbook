@@ -1,6 +1,9 @@
 {meta: title In Love}
 {meta: artist Wynn Stewart}
 {meta: composer Bobby George}
+{meta: x_source classic-country}
+{meta: x_source_file inlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little girl [Em]blue [D7]come say you're [G7]mine
@@ -42,3 +45,8 @@
 [C]To live like [F]people live [C]in in [Em]love
 [F]In love  [C]in
 {end_of_verse}
+
+
+
+
+

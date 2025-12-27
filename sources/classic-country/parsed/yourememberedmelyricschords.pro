@@ -1,5 +1,8 @@
 {meta: title You Remembered Me}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file yourememberedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You were young and [D7]needed love and [C]I was wild and [G]free
@@ -32,3 +35,6 @@ So here's to you God [D7]bless you now [C]wherever you may [G]be
 I [C]regret that [G]I forgot cause [D7]you remembered [G]me
 (I [C]regret that [G]I forgot cause [D7]you remembered [G]me)
 {end_of_verse}
+
+
+

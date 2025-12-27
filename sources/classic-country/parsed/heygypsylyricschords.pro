@@ -1,6 +1,9 @@
 {meta: title Hey Gypsy}
 {meta: artist David Allan Coe}
 {meta: composer David Allan Coe and Fred Spears}
+{meta: x_source classic-country}
+{meta: x_source_file heygypsylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey gypsy hey [F]gypsy come on home
@@ -31,3 +34,7 @@ It does matter whether we're [G7]alone come on [F]home
 Hey [C]loner (hey outlaw) [Em]hey ho[F]bo (hey drifter)
 Hey [C]gypsy [F]hey [C]gypsy
 {end_of_verse}
+
+
+
+

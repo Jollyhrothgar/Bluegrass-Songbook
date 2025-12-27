@@ -1,6 +1,9 @@
 {meta: title Conscience I'm Guilty}
 {meta: artist Hank Snow}
 {meta: composer Jack Rhodes, Dick Reynolds, Jack Rimmings}
+{meta: x_source classic-country}
+{meta: x_source_file conscienceimguiltylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh conscience I'm [G]guilty I'm [D7]guilty [G]again
@@ -33,3 +36,7 @@
 [D7]I hope I don't look too [G]guilty when she lets me [C]in
 [G]Oh conscience don't ever [D7]let me do that [G]again
 {end_of_verse}
+
+
+
+

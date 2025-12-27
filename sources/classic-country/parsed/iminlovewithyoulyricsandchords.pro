@@ -1,6 +1,9 @@
 {meta: title I'm in Love With You}
 {meta: artist Kitty Wells}
 {meta: composer Benny Martin}
+{meta: x_source classic-country}
+{meta: x_source_file iminlovewithyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm in love with you and I wish I knew
@@ -53,3 +56,9 @@ I wish I was the one dear I'd never make you [F]blue
 But [G7]you're in love with someone else
 Like I'm in love with [C]you
 {end_of_verse}
+
+
+
+
+
+

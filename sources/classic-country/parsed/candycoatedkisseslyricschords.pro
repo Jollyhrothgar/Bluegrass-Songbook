@@ -1,6 +1,9 @@
 {meta: title Candy Coated Kisses}
 {meta: artist Bobby Bare}
 {meta: composer Barry DeVorzon and Cliff Crawford}
+{meta: x_source classic-country}
+{meta: x_source_file candycoatedkisseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You speak and the [G7]words flow like [C]honey 
@@ -38,3 +41,8 @@ But [G7]only a fool would [C]try
 {start_of_verse: Verse 5}
 [G7]Only a fool would [C]try
 {end_of_verse}
+
+
+
+
+

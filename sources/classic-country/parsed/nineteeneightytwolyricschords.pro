@@ -1,6 +1,9 @@
 {meta: title Nineteen Eighty Two}
 {meta: artist Randy Travis}
 {meta: composer Buddy Blackmon and Carl Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file nineteeneightytwolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Operator please connect me with [C]nineteen eighty two
@@ -33,3 +36,7 @@ There [D7]was a time when she was mine in [Am]nineteen [D7]eighty [G]two
 {start_of_verse: Verse 5}
 [D7]Losing my mind going back in time in [Am]nineteen [D7]eighty [G]two[C]  [G]
 {end_of_verse}
+
+
+
+

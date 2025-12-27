@@ -1,6 +1,9 @@
 {meta: title Pocketful Of Rainbows}
 {meta: artist Elvis Presley}
 {meta: composer Ben Weisman and Fred Wise}
+{meta: x_source classic-country}
+{meta: x_source_file pocketfulofrainbowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I don't [C]worry whenever skies are grey [Dm]above
@@ -28,3 +31,6 @@ Aye aye aye aye aye aye [C]aye aye
 {start_of_verse: Verse 4}
 [C]Rain[Am]bows [C]rain[Am]bows [C]rain[Am]bows [C]rain[Am]bows [C]rain[Am]bows
 {end_of_verse}
+
+
+

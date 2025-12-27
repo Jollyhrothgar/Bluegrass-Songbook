@@ -1,6 +1,9 @@
 {meta: title Only One Night Of The Year}
 {meta: artist Ronnie Milsap}
 {meta: composer Mike Reid}
+{meta: x_source classic-country}
+{meta: x_source_file onlyonenightoftheyearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a magic light in the [F]stars tonight 
@@ -54,3 +57,9 @@ Ummmm if you [Am]believe in [F]Christmas Eve
 [F]Cause wish as we might 
 It comes only one [G7]night of the [C]year
 {end_of_verse}
+
+
+
+
+
+

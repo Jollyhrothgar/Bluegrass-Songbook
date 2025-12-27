@@ -1,6 +1,9 @@
 {meta: title Artificial Rose}
 {meta: artist Dave Dudley}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file artificialroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The little waitress wore an artificial rose
@@ -39,3 +42,7 @@ May your [C]life be cold [C7]and lonely as can [F]be
 Like this [C]artificial [G7]rose you gave to [C]me
 [F]Never blooms [C]never grows [G7]artificial [C][F]r-ose
 {end_of_verse}
+
+
+
+

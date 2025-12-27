@@ -1,6 +1,9 @@
 {meta: title Sunrise}
 {meta: artist Slim Whitman}
 {meta: composer C.W. Poole and B.D. Ackley}
+{meta: x_source classic-country}
+{meta: x_source_file sunriselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I shall come to the [D7]end of my [G]way
@@ -36,3 +39,7 @@ Sunrise in glory is waiting for [G]me
 Sunrise tomorrow  [C]sunrise [D7]tomorrow
 [C]Sunrise with [G]Jesus for [G][D7]etern-i-ty
 {end_of_verse}
+
+
+
+

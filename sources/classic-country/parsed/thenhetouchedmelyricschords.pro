@@ -1,6 +1,9 @@
 {meta: title Then He Touched Me}
 {meta: artist Jean Shepard}
 {meta: composer Norro Wilson and George Richey}
+{meta: x_source classic-country}
+{meta: x_source_file thenhetouchedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There was a time when I felt I'd never love [F]again 
@@ -33,3 +36,7 @@ Now my [C]world's so bright for [G7]there's love all [C]around
 {start_of_verse: Verse 5}
 Now my [F]world's [C]so bright for there's [G7]love all [C]around
 {end_of_verse}
+
+
+
+

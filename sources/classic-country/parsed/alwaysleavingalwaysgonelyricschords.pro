@@ -1,6 +1,9 @@
 {meta: title Always Leaving Always Gone}
 {meta: artist Kenny Rogers}
 {meta: composer Dick Monda}
+{meta: x_source classic-country}
+{meta: x_source_file alwaysleavingalwaysgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dusty dreams of yesterday I [C]reminisce [G]alone
@@ -36,3 +39,7 @@ You fall on my memory but I [C]try to get you [G]there
 {start_of_verse: Verse 5}
 Always leavin' always [C]gon[G]e
 {end_of_verse}
+
+
+
+

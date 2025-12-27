@@ -1,5 +1,8 @@
 {meta: title Old Rover}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file oldroverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two little boys and an old family [C7]dog
@@ -56,3 +59,10 @@ But [F]life to me still holds a [E7]charm
 Well [F]I've only one favor to [C]ask of you [A7]boys
 Let me [D7]spend my last [G7]days on the [C]farm
 {end_of_verse}
+
+
+
+
+
+
+

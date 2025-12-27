@@ -1,6 +1,9 @@
 {meta: title Time Changed Everything}
 {meta: artist Roy Orbison}
 {meta: composer Buddy Buie and John Adkins}
+{meta: x_source classic-country}
+{meta: x_source_file timechangedeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The town is not the [F]same
@@ -27,3 +30,5 @@ Is [C]time changed [Dm]everything [C]time changed [Dm]every[G7]thing
 [C]Time changed [Dm]every[G7]thing yes [C]time changed [Dm]every[G7]thing
 Yes [C]time changed [Dm]every[G7]thing but [C]her
 {end_of_verse}
+
+

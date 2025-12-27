@@ -1,5 +1,8 @@
 {meta: title You Made A Monkey Out Of Me}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file youmadeamonkeyoutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I feel like a monkey in a [G7]cage 
@@ -32,3 +35,7 @@ Even got me swinging through the [F]trees
 {start_of_verse: Verse 4}
 [G7]You made a monkey out of [C]me
 {end_of_verse}
+
+
+
+

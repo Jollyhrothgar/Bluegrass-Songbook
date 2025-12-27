@@ -1,5 +1,8 @@
 {meta: title You Ain't Woman Enough to Take My Man}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file youaintwomanenoughtotakemymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've come to tell me something
@@ -42,3 +45,9 @@ Repeat Chorus
 {start_of_verse: Verse 7}
 Cause you ain't woman [G7]enough to take my [C]man
 {end_of_verse}
+
+
+
+
+
+

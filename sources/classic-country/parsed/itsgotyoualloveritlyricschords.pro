@@ -1,6 +1,9 @@
 {meta: title It's Got You All Over It}
 {meta: artist Tracy Lawrence}
 {meta: composer Jerry Salley, J.B. Rudd, Lance Miller}
+{meta: x_source classic-country}
+{meta: x_source_file itsgotyoualloveritlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today my radio played a [Em]new love song 
@@ -44,3 +47,8 @@ Like a [D7]sweet melody that you can't [E7]for[A7]get
 Reminds me of the [F#m]love I'm in 
 [G]It's got you all over [B]it
 {end_of_verse}
+
+
+
+
+

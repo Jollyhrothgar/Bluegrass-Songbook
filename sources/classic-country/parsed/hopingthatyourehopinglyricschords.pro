@@ -1,6 +1,9 @@
 {meta: title Hoping That You’re Hoping}
 {meta: artist The Louvin Brothers}
 {meta: composer Betty E. Harrison}
+{meta: x_source classic-country}
+{meta: x_source_file hopingthatyourehopinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]E-[F]very [C]minute of the day I'm [G7]thinking about you
@@ -43,3 +46,8 @@ And without you life is just a crazy [C]dream
 E-[F]very [C]breath I take I'm hoping that you're [G7]hoping 
 That I'm hoping you'll return to [C]me
 {end_of_verse}
+
+
+
+
+

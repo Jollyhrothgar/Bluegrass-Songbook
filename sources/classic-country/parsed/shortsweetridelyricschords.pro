@@ -1,6 +1,9 @@
 {meta: title Short Sweet Ride}
 {meta: artist Alan Jackson}
 {meta: composer Jim McBride and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file shortsweetridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I could see it coming from a [C]mile [G]away
@@ -54,3 +57,10 @@ It's a [G]short sweet ride [D7]on a runaway [G]train
 {start_of_verse: Verse 5}
 Short sweet ride [D7]on a runaway [G]train
 {end_of_verse}
+
+
+
+
+
+
+

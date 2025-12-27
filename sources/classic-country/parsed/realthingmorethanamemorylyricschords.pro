@@ -1,6 +1,9 @@
 {meta: title Real Thing (More Than A Memory)}
 {meta: artist Bobby Bare}
 {meta: composer Roy Baham}
+{meta: x_source classic-country}
+{meta: x_source_file realthingmorethanamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](It's gonna take a lot more [G7]than a [C]memory
@@ -27,3 +30,6 @@
 [G7]But it will take a lot more than a [C]memory
 [G]To keep me from [D7]falling [G]apart
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title From An Angel To A Devil}
 {meta: artist Lefty Frizzell}
 {meta: composer Rusty Nail}
+{meta: x_source classic-country}
+{meta: x_source_file fromanangeltoadevillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m in love with you now it’s no wonder why
@@ -29,3 +32,6 @@ He listened to her scheming and [D7]he believed
 [G]He took a bite of apple and [C]to his surprise
 She [G]changed from an angel to a [D7]devil right before his [G]eyes
 {end_of_verse}
+
+
+

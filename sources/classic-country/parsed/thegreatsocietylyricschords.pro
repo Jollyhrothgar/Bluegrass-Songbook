@@ -1,6 +1,9 @@
 {meta: title The Great Society}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Bill Penix}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatsocietylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There ain't [C]no place for me in your [G]great society
@@ -40,3 +43,8 @@ And there [C]ain't no place for [G]me in your [D7]great socie[G]ty
 {start_of_verse: Verse 4}
 And there [C]ain't no place for [G]me in your [D7]great socie[F]ty[G]
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title At The End Of The Day}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file attheendofthedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At the end of the day you [D7]make my dreams come [G]true [C]   [G]
@@ -32,3 +35,7 @@ And [A7]with your gentle touch you [D7]sooth all cares away
 [G]I don’t mind how hard the job or if [C]plans have fallen through
 If at the [G]end of the day [D7]I can be with [G]you
 {end_of_verse}
+
+
+
+

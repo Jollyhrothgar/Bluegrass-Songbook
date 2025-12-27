@@ -1,6 +1,9 @@
 {meta: title So Easy To Begin}
 {meta: artist Mickey Gilley}
 {meta: composer Jules Shear}
+{meta: x_source classic-country}
+{meta: x_source_file soeasytobeginlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve been so far [Em]away from you [F]while standing by your [G7]side
@@ -29,3 +32,7 @@ It’s just so [Dm]hard to [G7]stop when a [Am]heart that’s [D7]looking for [E
 {start_of_verse: Verse 5}
 [Dm]It’s so [G7]easy to [C]begin
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let Your Love Fall Back On Me}
 {meta: artist John Conlee}
 {meta: composer Howard Lee}
+{meta: x_source classic-country}
+{meta: x_source_file letyourlovefallbackonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear you've put your happiness
@@ -50,3 +53,9 @@ If your [C]happiness [D7]falls [G]through
 [C]If your [D7]life's not [G]what it should [Em]be
 Let your [A7]love fall [D7]back on [G]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Your Wanting Me Is Gone}
 {meta: artist Vernon Oxford}
 {meta: composer J.R. Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file yourwantingmeisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You used to say you [C]loved me every [G]morning
@@ -34,3 +37,7 @@ Now that you got me [D7]your wanting me is [G]gone
 {start_of_verse: Verse 4}
 Now that you got me [D7]your wanting me is [G]gone
 {end_of_verse}
+
+
+
+

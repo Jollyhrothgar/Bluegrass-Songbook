@@ -1,6 +1,9 @@
 {meta: title Hasn't It Been Good Together}
 {meta: artist Hank Snow}
 {meta: composer Linda Kaufman and Gloria Shayne}
+{meta: x_source classic-country}
+{meta: x_source_file hasntitbeengoodtogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The books are packed the photographs [B7]the old [C]magazines
@@ -43,3 +46,8 @@
 [D7]Didn't we love good [G]together kinda hoped we would [E7]forever
 [Am]How close we [D7]came we'll never [G]know
 {end_of_verse}
+
+
+
+
+

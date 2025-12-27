@@ -1,6 +1,9 @@
 {meta: title Broken Down Merry Go Round}
 {meta: artist Slim Whitman}
 {meta: composer Arthur Herbert and Fred Stryker}
+{meta: x_source classic-country}
+{meta: x_source_file brokendownmerrygoroundlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You said that you loved me but it wasn't [D7]long till I found
@@ -36,3 +39,8 @@ For you had me riding a broken down [G]merry go round
 {start_of_verse: Verse 4}
 [D7]Yes you had me riding a broken down merry go [G]round
 {end_of_verse}
+
+
+
+
+

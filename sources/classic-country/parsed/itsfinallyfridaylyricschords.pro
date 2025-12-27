@@ -1,6 +1,9 @@
 {meta: title It's Finally Friday}
 {meta: artist George Jones}
 {meta: composer Dennis Robbins, Dewayne Mize, Bobby Boyd, Warren Haynes}
+{meta: x_source classic-country}
+{meta: x_source_file itsfinallyfridaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got a hundred dollars smoking in my billfold
@@ -45,3 +48,10 @@ Right through my pocket and into my skin
 Right through my pocket and into my skin
 [G7]Come Monday morning I'll be broke [C]again
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Blaze Of Glory}
 {meta: artist Kenny Rogers}
 {meta: composer Danny Morrison, Johnny Slate, Larry Keith}
+{meta: x_source classic-country}
+{meta: x_source_file blazeofglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let's go out in a blaze of glory
@@ -47,3 +50,8 @@ Like two [C]hero's in a [G]story
 Let's go out like we came [D7]in 
 In a blaze of [G]glory
 {end_of_verse}
+
+
+
+
+

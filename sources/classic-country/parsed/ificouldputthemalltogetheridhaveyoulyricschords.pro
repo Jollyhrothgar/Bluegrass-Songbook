@@ -1,6 +1,9 @@
 {meta: title If I Could Put Them All Together I'd Have You}
 {meta: artist Bob Luman}
 {meta: composer Even Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldputthemalltogetheridhaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess I ran to Rhonda for [F]her sympathy 
@@ -34,3 +37,7 @@ If I could [C]put them all [G7]together I'd have [C]you
 {start_of_verse: Verse 4}
 [F]If I could [C]put them all [G7]together I'd have [C]you
 {end_of_verse}
+
+
+
+

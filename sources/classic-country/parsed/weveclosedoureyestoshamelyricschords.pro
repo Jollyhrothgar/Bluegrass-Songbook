@@ -1,6 +1,9 @@
 {meta: title We've Closed Our Eyes To Shame}
 {meta: artist Conway Twitty}
 {meta: composer Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file weveclosedoureyestoshamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We both agree we shouldn't be so [C]much in love this [G]way
@@ -22,3 +25,5 @@
 [G]We're victims of forbidden love [C]we play a losin' [G]game
 [C]We've opened up [G]our hearts to love and [D7]closed our eyes to [G]shame
 {end_of_verse}
+
+

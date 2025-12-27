@@ -1,6 +1,9 @@
 {meta: title I Reached For The Wine}
 {meta: artist Ernest Tubb and Loretta Lynn}
 {meta: composer Joyce Allsup}
+{meta: x_source classic-country}
+{meta: x_source_file ireachedforthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My eyes are perfect but [G7]now I see I'm blind
@@ -40,3 +43,8 @@ For they couldn't [C]reach you cause I [G7]reached for the [C]wine
 {start_of_verse: Verse 5}
 [F]My arms couldn't [C]reach you cause I [G7]reached for the [C]wine
 {end_of_verse}
+
+
+
+
+

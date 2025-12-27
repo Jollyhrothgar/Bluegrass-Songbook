@@ -1,6 +1,9 @@
 {meta: title Hard Luck Ace}
 {meta: artist Lacy J. Dalton}
 {meta: composer Aaron Anderson and Lacy J. Dalton}
+{meta: x_source classic-country}
+{meta: x_source_file hardluckacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a cold and foggy evening in [C][F]1959
@@ -76,3 +79,13 @@
 [F]Hat's off to another hard luck [C]ace
 [F]Hard luck [C]ace
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Another Place Another Time}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jerry Chestnut}
+{meta: x_source classic-country}
+{meta: x_source_file anotherplaceanothertimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One by one 
@@ -50,3 +53,9 @@ Be a little hard to [C]climb
 To a lonely room to [D7]wait for
 Another place another [G]time
 {end_of_verse}
+
+
+
+
+
+

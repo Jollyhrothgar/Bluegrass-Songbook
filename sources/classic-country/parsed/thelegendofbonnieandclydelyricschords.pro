@@ -1,5 +1,8 @@
 {meta: title The Legend Of Bonnie and Clyde}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file thelegendofbonnieandclydelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bonnie was a waitress in a [D7]small [G]cafe
@@ -35,3 +38,7 @@ For robbing and killing they [D7]both had to [G]pay
 But we'll always remember how [C]they lived and [G]died
 So goes the Legend of [D7]Bonnie and [G]Clyde
 {end_of_verse}
+
+
+
+

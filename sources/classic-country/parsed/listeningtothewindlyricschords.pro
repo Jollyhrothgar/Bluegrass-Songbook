@@ -1,5 +1,8 @@
 {meta: title Listening To The Wind}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file listeningtothewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Listening to the [F]wind
@@ -42,3 +45,8 @@ As it whispers through the [C]poplar trees
 Wishing you and I were [G7]close again
 Just listening to the [C]wind
 {end_of_verse}
+
+
+
+
+

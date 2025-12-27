@@ -1,6 +1,9 @@
 {meta: title Help The People}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file helpthepeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Won't some[G]body help the [C]people who ain't [G]loving
@@ -38,3 +41,7 @@ Help them find an [C]old love like we [D7]do
 [G]Heaven help the [C]people who ain't [G]loving
 [C]They're not [G]living if [C]they're not [G]loving [D7]like me and [G]you
 {end_of_verse}
+
+
+
+

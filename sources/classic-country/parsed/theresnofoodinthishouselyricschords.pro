@@ -1,6 +1,9 @@
 {meta: title There's No Food In This House}
 {meta: artist Lefty Frizzell}
 {meta: composer Merle Kilgore}
+{meta: x_source classic-country}
+{meta: x_source_file theresnofoodinthishouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sister says she's [G7]hungry 
@@ -63,3 +66,12 @@ Now when we say the [F]blessings
 [G7]We thank Him for the food in this [C]house 
 [G7]We thank him for the food in this [C]house 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

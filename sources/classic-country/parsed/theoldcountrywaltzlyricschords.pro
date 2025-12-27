@@ -1,5 +1,8 @@
 {meta: title The Old Country Waltz}
 {meta: artist Neil Young}
+{meta: x_source classic-country}
+{meta: x_source_file theoldcountrywaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They were playing that [D7]old country [G]waltz [G7]
@@ -37,3 +40,8 @@ That [G]good old [D7]country [C]walt[G]z
 {start_of_verse: Verse 6}
 That good old [D7]country [Em]w-a[C]l-t[G]z
 {end_of_verse}
+
+
+
+
+

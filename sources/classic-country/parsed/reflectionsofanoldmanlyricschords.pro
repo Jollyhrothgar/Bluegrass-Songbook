@@ -1,6 +1,9 @@
 {meta: title Reflections Of An Old Man}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file reflectionsofanoldmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m staring at the mirror now [F]what do I see
@@ -38,3 +41,7 @@ At the reflections of an old man just starring back at [C]me
 Just [G7]starring at the mirror 
 At the reflections of an old man just starring back at [C]me
 {end_of_verse}
+
+
+
+

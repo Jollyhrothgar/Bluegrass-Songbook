@@ -1,6 +1,9 @@
 {meta: title A Pretty Wreath For Mother’s Grave}
 {meta: artist The Reno Brothers}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file aprettywreathformothersgravelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In my [F]memory there’s a [C]picture 
@@ -47,3 +50,9 @@ A [G7]pretty wreath for mother’s [C]grave
 {start_of_verse: Verse 6}
 A [G7]pretty wreath for mother’s [C]grave
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Nothing Matters But You}
 {meta: artist The Everly Brothers}
 {meta: composer Gary Geld and Peter Udell}
+{meta: x_source classic-country}
+{meta: x_source_file nothingmattersbutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Since we [G]met I [Am]sit around and [Em]want you
@@ -31,3 +34,6 @@ Your [G]love is all I [Dm]need to satis[E7]fy me[Am]
 Nothing [C]matters [G]but [F]you[E7]
 [Am]Nothing [C]matters but [G]you
 {end_of_verse}
+
+
+

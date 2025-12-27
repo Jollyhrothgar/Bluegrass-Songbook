@@ -1,6 +1,9 @@
 {meta: title Sadie's Got Her New Dress On}
 {meta: artist Doyle Lawson}
 {meta: composer Connie Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file sadiesgothernewdressonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well Sadie's momma told her you’re nearly 21
@@ -53,3 +56,12 @@ She prettied up her auburn hair put on her best perfume
 She prettied up her auburn hair put on her best perfume
 [C]Then headed for the [D7]dance down [G]town
 {end_of_verse}
+
+
+
+
+
+
+
+
+

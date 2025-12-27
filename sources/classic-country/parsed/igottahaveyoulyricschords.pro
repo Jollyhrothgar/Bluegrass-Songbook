@@ -1,6 +1,9 @@
 {meta: title I Gotta Have You}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Jimmy Selph}
+{meta: x_source classic-country}
+{meta: x_source_file igottahaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You won't [C]write you won't [F]call
@@ -23,3 +26,4 @@
 [G7]I need you in my arms with all your loving charm
 [C]Can't you hear me calling don't you know I gotta [G7]have [C]you
 {end_of_verse}
+

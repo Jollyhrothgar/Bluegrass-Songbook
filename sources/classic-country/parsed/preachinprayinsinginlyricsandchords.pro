@@ -1,6 +1,9 @@
 {meta: title Preachin' Prayin' Singin'}
 {meta: artist The Country Gentlmen}
 {meta: composer E.C. McCarty}
+{meta: x_source classic-country}
+{meta: x_source_file preachinprayinsinginlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Preachin' prayin' [C]singin' everywhere 
@@ -40,3 +43,8 @@ Now let us journey on and [C]think back or’ the day
 {start_of_verse: Verse 4}
 [C]Preachin' prayin' [G]singin' [D7]down on the public [G]square
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title All Right I'll Sign The Papers}
 {meta: artist Ray Price}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file allrightillsignthepaperslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've tried so hard to keep our [C7]home [F]alive 
@@ -29,3 +32,6 @@ All right  I'll [C7]sign the [F]papers
 All right  I'll [C7]sign the [F]papers 
 But [G7]oh how it hurts to see you [C]go
 {end_of_verse}
+
+
+

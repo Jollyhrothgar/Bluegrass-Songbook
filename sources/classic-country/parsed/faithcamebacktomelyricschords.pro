@@ -1,6 +1,9 @@
 {meta: title Faith Came Back To Me}
 {meta: artist The Bellamy Brothers}
 {meta: composer Howard Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file faithcamebacktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was raised on the good book 
@@ -57,3 +60,10 @@ And [C]faith came [G7]back to [C]me
 Like in old Galilee He showed His mer[C7]cy
 And [C]faith came [G7]back to [C]me
 {end_of_verse}
+
+
+
+
+
+
+

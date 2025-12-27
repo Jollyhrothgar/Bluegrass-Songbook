@@ -1,6 +1,9 @@
 {meta: title Young Abe Lincoln}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Horton and Ronald Hauffstettler}
+{meta: x_source classic-country}
+{meta: x_source_file youngabelincolnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well he lived in a cabin way down [F]by the [C]creek
@@ -41,3 +44,6 @@ Finally won with [F]U.S. [C]Grant
 Yes [F]Young Abe Lincoln make a [G7]tall tall [C]man
 [F]Young Abe Lincoln made a [G7]tall tall [C]man 
 {end_of_verse}
+
+
+

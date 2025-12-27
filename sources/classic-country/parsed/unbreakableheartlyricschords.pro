@@ -1,6 +1,9 @@
 {meta: title Unbreakable Heart}
 {meta: artist Eddy Arnold}
 {meta: composer Joe Allison, Audrey Allison, Paul Wyatt}
+{meta: x_source classic-country}
+{meta: x_source_file unbreakableheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Unbreakable Heart
@@ -35,3 +38,8 @@ We [C]won't walk [D7]down that [G]road again [A7]until we're two are [D7]one
 The [C]first time that we [G]loved our [C]love was just for [G]fun
 We [C]won't walk [D7]down that [G]road again [A7]until we're two are [D7]one
 {end_of_verse}
+
+
+
+
+

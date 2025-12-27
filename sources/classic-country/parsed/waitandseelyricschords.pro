@@ -1,6 +1,9 @@
 {meta: title Wait And See}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Antoine Domino}
+{meta: x_source classic-country}
+{meta: x_source_file waitandseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The sun's gonna shine in my back door [C]someday
@@ -22,3 +25,5 @@ Just you wait and [D7]see just you wait and [G]see
 [G]One day you'll cry and want me to come back to [C]you
 Just you wait and [D7]see just you wait and [G]see
 {end_of_verse}
+
+

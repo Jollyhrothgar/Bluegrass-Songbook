@@ -1,6 +1,9 @@
 {meta: title Meet Me By The Moonlight}
 {meta: artist Stanley Brothers}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file meetmebythemoonlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Meet me by the [F]moonlight love [C]meet me
@@ -50,3 +53,9 @@ Meet [G7]me by the [C]moonlight alone
 I have a sad [F]story to [C]tell you
 All [G7]down by the moonlight [C]alone
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Another Woman}
 {meta: artist Billy Crash Craddock}
 {meta: composer Dan Penn and Buzz Cason}
+{meta: x_source classic-country}
+{meta: x_source_file anotherwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Only [C]one thing can make you get [D7]over a [G]woma[B7]n
@@ -51,3 +54,10 @@ Another [Em]woman to [C]get you through [D7]another [G]night
 {start_of_verse: Verse 8}
 (Another [C]woman) to [Am]get me through [D7]another [G]night
 {end_of_verse}
+
+
+
+
+
+
+

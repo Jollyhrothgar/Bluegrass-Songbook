@@ -1,6 +1,9 @@
 {meta: title I’ll Never Be Free}
 {meta: artist Jim Ed Brown}
 {meta: composer Bennie Benjamin and George David Weiss}
+{meta: x_source classic-country}
+{meta: x_source_file illneverbefreelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Each time I [C]hold somebody [C7]new
@@ -43,3 +46,8 @@ I'll [C]never be free
 {start_of_verse: Verse 6}
 I'll [G7]never be [C]free
 {end_of_verse}
+
+
+
+
+

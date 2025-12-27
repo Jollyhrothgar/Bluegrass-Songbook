@@ -1,6 +1,9 @@
 {meta: title Jealous Darling}
 {meta: artist Johnny Rodriguez}
 {meta: composer Tom T. Hall and Hillman Hall}
+{meta: x_source classic-country}
+{meta: x_source_file jealousdarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jealous darling [C]that you [G]are you think you [C]know [G]me
@@ -27,3 +30,5 @@ Now [C]when it comes to living life [G]you know I'm weak
 Jealous [G]darling [D7]I'm jealous of you [G]too
 [C]Jealous [G]darling [D7]I'm jealous of you [G]too
 {end_of_verse}
+
+

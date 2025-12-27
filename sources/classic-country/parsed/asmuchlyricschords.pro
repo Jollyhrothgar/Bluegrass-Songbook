@@ -1,6 +1,9 @@
 {meta: title As Much}
 {meta: artist Don Gibson}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file asmuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]As much as the stars need the [Am]heaven
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G7]Well that's how much I need [C]you
 {end_of_verse}
+
+
+
+

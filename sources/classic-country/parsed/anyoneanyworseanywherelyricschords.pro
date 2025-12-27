@@ -1,6 +1,9 @@
 {meta: title Any One Any Worse Any Where}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Lorene Allen}
+{meta: x_source classic-country}
+{meta: x_source_file anyoneanyworseanywherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're tellin' me how [D7]bad I am for lovin' [G]him
@@ -31,3 +34,6 @@
 [C]But if how [G]much I love [C]him tells how bad I [G]am
 [C]Then you won't find any [G]one any [D7]worse any [G]where
 {end_of_verse}
+
+
+

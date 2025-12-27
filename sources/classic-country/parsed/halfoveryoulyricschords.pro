@@ -1,6 +1,9 @@
 {meta: title Half Over You}
 {meta: artist George Jones}
 {meta: composer K. Staley}
+{meta: x_source classic-country}
+{meta: x_source_file halfoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen rock bottom and [F]I've sailed to the [C]top
@@ -37,3 +40,8 @@ Tag:
 {start_of_verse: Verse 5}
 [F]There's no place so [C]lonely being [G7]half over [C]you
 {end_of_verse}
+
+
+
+
+

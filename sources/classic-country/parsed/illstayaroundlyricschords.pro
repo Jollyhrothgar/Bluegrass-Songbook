@@ -1,6 +1,9 @@
 {meta: title I'll Stay Around}
 {meta: artist Willie Nelson}
 {meta: composer Hank Cochran and Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file illstayaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll stay [G7]around until it's [C]over
@@ -19,3 +22,5 @@
 {start_of_verse: Verse 3}
 Repeat
 {end_of_verse}
+
+

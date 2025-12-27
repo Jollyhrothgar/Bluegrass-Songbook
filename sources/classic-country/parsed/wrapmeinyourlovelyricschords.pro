@@ -1,6 +1,9 @@
 {meta: title Wrap Me In Your Love}
 {meta: artist Joe Diffie}
 {meta: composer Wyatt Easterling and Stacey Easterling}
+{meta: x_source classic-country}
+{meta: x_source_file wrapmeinyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Turn out the [D7]lights [C]we just need the [D7]lights from the [G]tree
@@ -39,3 +42,8 @@ Cause if the best things in [G]life are free
 {start_of_verse: Verse 5}
 [Am]Your presence is [D7]enough just [Am]wrap [G]me [C]in [D7]your [G]love
 {end_of_verse}
+
+
+
+
+

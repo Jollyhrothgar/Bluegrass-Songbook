@@ -1,6 +1,9 @@
 {meta: title Mathilda}
 {meta: artist Freddy Fender}
 {meta: composer George Khoury and Huey Thierry}
+{meta: x_source classic-country}
+{meta: x_source_file mathildalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My love for you will always [F]be
@@ -36,3 +39,7 @@
 [G7]Although I know my love's in vain
 [C]I want my baby back again
 {end_of_verse}
+
+
+
+

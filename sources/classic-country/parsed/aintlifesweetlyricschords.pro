@@ -1,6 +1,9 @@
 {meta: title Ain't Life Sweet}
 {meta: artist Jim Ed Brown}
 {meta: composer Ronnie Hughes and Tommy Vernon}
+{meta: x_source classic-country}
+{meta: x_source_file aintlifesweetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gonna tell the world I love [Am]you can't keep it [Dm]quiet
@@ -34,3 +37,7 @@ A [C]smile comes with every day I greet
 Mmm ain't life [D7]sweet  [G]mhm ain't life [D7]sweet [G]  [D7]   [G]
 Mmm ain't life [D7]sweet [G]  [D7]   [G]
 {end_of_verse}
+
+
+
+

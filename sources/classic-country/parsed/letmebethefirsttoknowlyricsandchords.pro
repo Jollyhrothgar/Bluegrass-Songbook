@@ -1,5 +1,8 @@
 {meta: title Let Me Be the First to Know}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file letmebethefirsttoknowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say you’re not [F]over him [G7]and I can under[C]stand
@@ -30,3 +33,7 @@ So when you finally [F]let him go [G7]let me be the [F]first to [C]know
 {start_of_verse: Verse 5}
 So when you finally [F]let him go [G7]let me be the [F]first to [C]know
 {end_of_verse}
+
+
+
+

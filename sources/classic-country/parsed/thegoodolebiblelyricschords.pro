@@ -1,5 +1,8 @@
 {meta: title The Good Ole Bible}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file thegoodolebiblelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I believe the Father Adam 
@@ -80,3 +83,18 @@ The scriptures do contend
 I [C]believe the good ole [G]Bible
 From [D7]beginning to the [G]end
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

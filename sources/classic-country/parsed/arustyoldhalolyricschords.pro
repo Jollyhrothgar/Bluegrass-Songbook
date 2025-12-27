@@ -1,6 +1,9 @@
 {meta: title A Rusty Old Halo}
 {meta: artist Jim Ed Brown}
 {meta: composer Bob Miller}
+{meta: x_source classic-country}
+{meta: x_source_file arustyoldhalolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A rusty old halo [G7]skinny white [C]cloud
@@ -36,3 +39,7 @@ A rusty old halo [G7]skinny white [C]cloud
 Rusty old halo skinny white [F]cloud
 A [G7]robe that's so wooly it [C]scratches
 {end_of_verse}
+
+
+
+

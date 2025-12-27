@@ -1,6 +1,9 @@
 {meta: title China Doll}
 {meta: artist George Hamilton IV}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file chinadolllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I go down  to old China [Dm]town
@@ -22,3 +25,5 @@ And just hang [G7]around  a boat China [C]bound
 And I'd give the world  to just leave it [Dm]all
 And sail on that [G7]boat  to my China [C]doll
 {end_of_verse}
+
+

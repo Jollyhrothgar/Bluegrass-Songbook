@@ -1,5 +1,8 @@
 {meta: title Help Me Understand}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file helpmeunderstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A little girl prayed at the [C]close of the [G]day 
@@ -71,3 +74,12 @@ Could hear little Sue say
 [G]Take me and lead me and [C]hold to my [G]hand
 Oh heavenly Father [D7]help me [G]understand
 {end_of_verse}
+
+
+
+
+
+
+
+
+

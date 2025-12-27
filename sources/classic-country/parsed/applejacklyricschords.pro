@@ -1,5 +1,8 @@
 {meta: title Apple Jack}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file applejacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He lived by the apple orchard in this [F]little orchard [C]shack
@@ -35,3 +38,7 @@ All I have are memories old Apple Jack is [G7]gone
 Oh  but he [C]left me his banjo and it [F]always takes me [C]back
 And every time I play it I [G7]still hear Apple [C]Jack
 {end_of_verse}
+
+
+
+

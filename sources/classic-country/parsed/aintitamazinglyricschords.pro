@@ -1,6 +1,9 @@
 {meta: title Ain't It Amazing}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file aintitamazinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never had a [F]face you'd [C]notice
@@ -36,3 +39,7 @@ Ain't it amazing  you can [G7]still find your [C]dream
 Ain't it amazing  [F]it all comes [C]true
 When [F]someone like [C]you can happen to [G7]someone like [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Desperado}
 {meta: artist Kenny Rogers}
 {meta: composer Don Henley and Glen Frey}
+{meta: x_source classic-country}
+{meta: x_source_file desperadolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Desperado  [C7]why don't you [F]come to your [Fm]senses
@@ -42,3 +45,7 @@
 [C]You better let somebody love [Am]you
 [D7]Before [G7]it's too [C]late
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When It's Christmas Time In Texas}
 {meta: artist George Strait}
 {meta: composer Benny McArthur}
+{meta: x_source classic-country}
+{meta: x_source_file whenitsChristmastimeintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When it's Christmas [F]time in [C]Texas 
@@ -52,3 +55,9 @@ But [D7]it's a Texas [G7]Christmas to [C]me
 And here's [F]wishing you all a Merry [C]Christmas
 Merry [D7]Christmas from [G7]Texas and [C]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Jesus Take The Wheel}
 {meta: artist Carrie Underwood}
 {meta: composer Brett James, Hillary Lindsey, Gordie Sampson}
+{meta: x_source classic-country}
+{meta: x_source_file jesustakethewheellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]She was driving last [C]Friday on her way to [G7]Cincinnati
@@ -61,3 +64,9 @@ Repeat #3
 [G7]Oh take it [C]take it from [G7]me
 [Am]O--h  [G7][C][G7]wow     [C][G7][Am]ohhhhh
 {end_of_verse}
+
+
+
+
+
+

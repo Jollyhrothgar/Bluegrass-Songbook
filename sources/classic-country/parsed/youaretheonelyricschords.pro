@@ -1,6 +1,9 @@
 {meta: title You Are The One}
 {meta: artist Carl Smith}
 {meta: composer Pat Petterson}
+{meta: x_source classic-country}
+{meta: x_source_file youaretheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You are the one you’re the one in my [G7]heart
@@ -29,3 +32,6 @@ It helped to know when we found love at [C]last
 I didn’t know what joy was until I’d been [G7]blue
 I didn’t know what love was until I met [C]you
 {end_of_verse}
+
+
+

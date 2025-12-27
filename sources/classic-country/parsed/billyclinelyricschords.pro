@@ -1,5 +1,8 @@
 {meta: title Billy Cline}
 {meta: artist Rose Maddox}
+{meta: x_source classic-country}
+{meta: x_source_file billyclinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tell me that you love me Billy Cline
@@ -49,3 +52,9 @@ Tell me that your love is true as [G7]mine
 [C]Tell me that you love your [F]own turtle dove
 [C]Tell me that you [G7]love me Billy [C]Cline
 {end_of_verse}
+
+
+
+
+
+

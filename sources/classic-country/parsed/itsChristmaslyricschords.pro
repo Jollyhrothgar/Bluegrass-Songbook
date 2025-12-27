@@ -1,6 +1,9 @@
 {meta: title It’s Christmas}
 {meta: artist Ronnie Milsap}
 {meta: composer Thomas Cain and Joe Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file itsChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The snow is on the ground
@@ -41,3 +44,8 @@ It's [Em]Christmas all over the [Am]world[Fm]
 [C]Love is flowing free [Dm]all the world's at [G7]peace
 It's [F]Christ[C]mas
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title You Won't Forget About Me}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file youwontforgetaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now that our love is through you [C]know I still love you
@@ -21,3 +24,5 @@ A [C]heart can't just be in love it's [G]gotta be loved in [D7]return
 They'll [G]only laugh and say I [C]guess you'll learn someday
 But your heart's still wild and [G]free [D7]you won't forget about [G]me
 {end_of_verse}
+
+

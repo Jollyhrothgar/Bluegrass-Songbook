@@ -1,6 +1,9 @@
 {meta: title The Old Rugged Cross}
 {meta: artist Anne Murray}
 {meta: composer George Bernard}
+{meta: x_source classic-country}
+{meta: x_source_file theoldruggedcrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On a hill far away stood an old rugged [C]cross
@@ -29,3 +32,6 @@ Till my [C]trophies at last I lay [G]down
 I will cling to the old rugged [C]cross
 And [G]exchange it someday [D7]for a [G]crown
 {end_of_verse}
+
+
+

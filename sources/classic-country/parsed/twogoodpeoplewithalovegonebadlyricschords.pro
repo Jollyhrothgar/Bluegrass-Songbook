@@ -1,6 +1,9 @@
 {meta: title Two Good People With A Love Gone Bad}
 {meta: artist Vern Gosdin}
 {meta: composer Dean Dillon, Buddy Cannon, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file twogoodpeoplewithalovegonebadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]A custom made [C]house  [G7]a his and her [C]garage
@@ -26,3 +29,6 @@ Oh [C]we're just [F]two good [C]people with a [G7]love gone [C]bad[F]
 {start_of_verse: Verse 4}
 Oh [C]we're just [F]two good [C]people with a [G7]love gone [C]bad
 {end_of_verse}
+
+
+

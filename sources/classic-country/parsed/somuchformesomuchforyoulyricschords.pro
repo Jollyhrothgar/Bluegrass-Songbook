@@ -1,6 +1,9 @@
 {meta: title So Much For Me So Much For You}
 {meta: artist Merle Haggard}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file somuchformesomuchforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So much for [G7]me so much for [C]you
@@ -36,3 +39,7 @@ What [G7]once was ours is yours or [C]mine
 But don't forget to [F]divide the heartaches [C]too
 So much for [G7]me so much for [C]you
 {end_of_verse}
+
+
+
+

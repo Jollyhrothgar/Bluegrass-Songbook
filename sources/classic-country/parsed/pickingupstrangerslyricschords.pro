@@ -1,6 +1,9 @@
 {meta: title Picking Up Strangers}
 {meta: artist Johnny Lee}
 {meta: composer Byron Hill}
+{meta: x_source classic-country}
+{meta: x_source_file pickingupstrangerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Picking up strangers let me [Am]tell you about the dangers  
@@ -44,3 +47,9 @@ Picking up strangers let me [Am]tell you about the dangers
 [F]Some are just common [C]thieves they say  
 [D7]Next thing you know want to [G7]steal your heart [C]away 
 {end_of_verse}
+
+
+
+
+
+

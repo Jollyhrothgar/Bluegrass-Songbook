@@ -1,6 +1,9 @@
 {meta: title Ain't Love A Lot Like That}
 {meta: artist George Jones}
 {meta: composer Dean Miller and Mark Collie}
+{meta: x_source classic-country}
+{meta: x_source_file aintlovealotlikethatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well a twister tore the roof off a grocery [F]store
@@ -43,3 +46,8 @@ Ain't love a lot like [C]that
 Unconditional [F]unpredictable
 [G7]Ain't love a lot like [C]that
 {end_of_verse}
+
+
+
+
+

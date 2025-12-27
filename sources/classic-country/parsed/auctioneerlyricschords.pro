@@ -1,5 +1,8 @@
 {meta: title Auctioneer}
 {meta: artist Leroy Van Dyke}
+{meta: x_source classic-country}
+{meta: x_source_file auctioneerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There was a boy in Arkansas
@@ -125,3 +128,20 @@ And a five and a six now seven
 Now eight hundred dollars
 And a buy ‘em there
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

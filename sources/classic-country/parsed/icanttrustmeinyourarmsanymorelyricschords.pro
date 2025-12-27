@@ -1,6 +1,9 @@
 {meta: title I Can't Trust Me In Your Arms Anymore}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Vic McAlpin and Tommy Certain}
+{meta: x_source classic-country}
+{meta: x_source_file icanttrustmeinyourarmsanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It started in fun I [F]needed some[C]one
@@ -34,3 +37,7 @@ Cause every [C]time your lips touch mine
 Honey I [F]get wilder all the time
 And I can't [C]trust me in your [G7]arms any[C]more
 {end_of_verse}
+
+
+
+

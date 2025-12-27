@@ -1,6 +1,9 @@
 {meta: title Been There Done That}
 {meta: artist Ricky Van Shelton}
 {meta: composer Craig Wiseman and John Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file beentheredonethatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was finally getting over all the [F]damage you had done
@@ -40,3 +43,8 @@ Now [C]you're blue to [F]bad cause I've [G7]been there done [C]that
 {start_of_verse: Verse 5}
 You're blue to [F]bad cause I've [G7]been there done [C]that
 {end_of_verse}
+
+
+
+
+

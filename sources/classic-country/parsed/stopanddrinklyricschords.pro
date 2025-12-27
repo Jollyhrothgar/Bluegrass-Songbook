@@ -1,6 +1,9 @@
 {meta: title Stop And Drink}
 {meta: artist George Strait}
 {meta: composer Dale Dodson and Troy Jones}
+{meta: x_source classic-country}
+{meta: x_source_file stopanddrinklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Weatherman said it's 105
@@ -62,3 +65,9 @@ Little [D7]stuff like that will make you stop and [G]drink
 {start_of_verse: Verse 5}
 Yeah little [D7]stuff like that will make you stop and [G]drink
 {end_of_verse}
+
+
+
+
+
+

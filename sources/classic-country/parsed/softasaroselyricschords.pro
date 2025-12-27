@@ -1,6 +1,9 @@
 {meta: title Soft As A Rose}
 {meta: artist David Houston}
 {meta: composer Norro Wilson, Carmol Taylor, Mark Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file softasaroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro: 
@@ -42,3 +45,8 @@ Intro:
 [G]You look soft as a [A7]rose and [G]darling you [A7]know
 I [C]want [D7]you I [C]need [D7]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Between the Two of Us}
 {meta: artist Merle Haggard}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file justbetweenthetwoofuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just between the [D7]two of us we know our love is [G]gone
@@ -33,3 +36,7 @@ For we no longer [D7]care enough to even [G]disagree
 Everybody [C]envies us and the way we get [G]along
 But just between the [D7]two of us we know our love is [G]gone
 {end_of_verse}
+
+
+
+

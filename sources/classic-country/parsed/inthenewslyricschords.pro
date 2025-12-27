@@ -1,5 +1,8 @@
 {meta: title In The News}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file inthenewslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Read about the sorry way he done somebody's daughter
@@ -56,3 +59,10 @@ Chained her [G7]to a heavy thing and threw her [C]in the water
 She sank into the darkness with their baby son inside her
 A little [G7]piece of truth and beauty [C]died
 {end_of_verse}
+
+
+
+
+
+
+

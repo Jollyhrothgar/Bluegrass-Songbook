@@ -1,6 +1,9 @@
 {meta: title God Had A Son In Service}
 {meta: artist Carl Story}
 {meta: composer Carl Story and Lowell Blanchard}
+{meta: x_source classic-country}
+{meta: x_source_file Godhadasoninservicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many years ago we [F]know the story [C]true
@@ -30,3 +33,7 @@ Yes God had a Son in service He [G7]died at Calva[C]ry
 Yes God had a Son in service He [F]died for you and [C]me
 Yes God had a Son in service He [G7]died at Calva[C]ry
 {end_of_verse}
+
+
+
+

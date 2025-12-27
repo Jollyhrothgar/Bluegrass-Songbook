@@ -1,6 +1,9 @@
 {meta: title You're Everything To Me}
 {meta: artist Wynn Stewart}
 {meta: composer Tommy Collins and Ray Rush}
+{meta: x_source classic-country}
+{meta: x_source_file youreeverythingtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like the picture to an artist that's [G7]painted just [C]right
@@ -23,3 +26,5 @@
 [F]You're everything [C]I live [F]for you're [G7]everything to [C]me
 [F]Yes you're [G7]everything to [C]me
 {end_of_verse}
+
+

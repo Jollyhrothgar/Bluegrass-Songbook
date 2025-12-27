@@ -1,6 +1,9 @@
 {meta: title Tight Levis and Yellow Ribbon}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file tightlevisandyellowribbonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born and raised in the Red Clay Hills of [G7]Texas
@@ -48,3 +51,9 @@ And [F]one he knows he'll [G7]never break to [C]ride
 Yeah they'll [F]make him throw a [G7]saddle on a [C]bronc he's never seen
 And [F]one he knows he'll [G7]never break to [C]ride
 {end_of_verse}
+
+
+
+
+
+

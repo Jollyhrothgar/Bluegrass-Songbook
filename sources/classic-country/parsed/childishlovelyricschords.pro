@@ -1,6 +1,9 @@
 {meta: title Childish Love}
 {meta: artist Jim and Jesse}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file childishlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh childish [F]love I could not hold
@@ -50,3 +53,9 @@ I thought your [C]love was a pot of gold
 But you can [G7]write a few short [C]lines
 And tell your [G7]love ten thousand [C]times
 {end_of_verse}
+
+
+
+
+
+

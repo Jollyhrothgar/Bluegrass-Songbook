@@ -1,6 +1,9 @@
 {meta: title When Snowflakes Fall In The Summer}
 {meta: artist Everly Brothers}
 {meta: composer Barry Mann and Cynthia Weil}
+{meta: x_source classic-country}
+{meta: x_source_file whensnowflakesfallinthesummerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When roses bloom in [G7]December
@@ -31,3 +34,6 @@ And when [F]snowflakes fall in the [C]summ[Am]er
 [E7]And when [F]snowflakes fall in the [C]summ[Am]er
 [D7]I'll stop [G7]loving [C]you
 {end_of_verse}
+
+
+

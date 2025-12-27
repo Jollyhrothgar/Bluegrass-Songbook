@@ -1,6 +1,9 @@
 {meta: title I Can't Sing A Love Song}
 {meta: artist Stonewall Jackson}
 {meta: composer Elbert Myers}
+{meta: x_source classic-country}
+{meta: x_source_file icantsingalLovesonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't sing a love song
@@ -71,3 +74,13 @@ You're the only reason
 [G7]Honey I can't sing a love song
 [C]If I'm not singing to you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

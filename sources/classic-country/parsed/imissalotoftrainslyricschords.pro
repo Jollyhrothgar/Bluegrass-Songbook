@@ -1,5 +1,8 @@
 {meta: title I Miss A Lot Of Trains}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file imissalotoftrainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the train pulls in the station you'll be [F]waiting by the [C]track
@@ -28,3 +31,6 @@
 [C7]I used to lie awake like you calling out your [F]name
 [G7]Now I sleep good and I miss a lot of [C]trains
 {end_of_verse}
+
+
+

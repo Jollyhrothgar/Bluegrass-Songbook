@@ -1,6 +1,9 @@
 {meta: title He Can Be Found}
 {meta: artist The Louvin Brothers}
 {meta: composer Ella Barrett and Faye Cunningham}
+{meta: x_source classic-country}
+{meta: x_source_file hecanbefoundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He can be found in a mother's [G7]smile
@@ -29,3 +32,6 @@
 [C]He can be found on life's stormy [G7]seas
 [C]He can be found [G7]in you and [C]me
 {end_of_verse}
+
+
+

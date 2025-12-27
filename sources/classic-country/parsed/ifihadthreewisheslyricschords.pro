@@ -1,6 +1,9 @@
 {meta: title If I Had Three Wishes}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadthreewisheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wish I was an apple a hangin' in a tree
@@ -51,3 +54,12 @@ Wish I was the evenin' star for everyone to see
 Wish I was a bluebird a flyin' in the sky
 [C]Wish you were another one a flyin' by my [G]side
 {end_of_verse}
+
+
+
+
+
+
+
+
+

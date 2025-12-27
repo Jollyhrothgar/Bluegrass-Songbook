@@ -1,6 +1,9 @@
 {meta: title Another Cup of Coffee}
 {meta: artist Marty Robbins}
 {meta: composer Michael Rutherford and Christopher Neil}
+{meta: x_source classic-country}
+{meta: x_source_file anothercupofcoffeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just stopped by to have a cup of [G7]coffee
@@ -44,3 +47,8 @@
 [C]'Cause I always liked the coffee that you made
 [G7]'Cause I always liked the coffee that you [C]made
 {end_of_verse}
+
+
+
+
+

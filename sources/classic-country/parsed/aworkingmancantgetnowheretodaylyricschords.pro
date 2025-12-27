@@ -1,5 +1,8 @@
 {meta: title A Working Man Can't Get Nowhere Today}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file aworkingmancantgetnowheretodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For years I've been bustin' my rear
@@ -52,3 +55,11 @@ Well a workin' man can't get nowhere today
 {start_of_verse: Verse 9}
 [G7]A workin' man can't get nowhere [C]today
 {end_of_verse}
+
+
+
+
+
+
+
+

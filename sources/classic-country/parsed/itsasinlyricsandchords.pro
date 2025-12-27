@@ -1,6 +1,9 @@
 {meta: title It's A Sin}
 {meta: artist Eddy Arnold}
 {meta: composer Fred Rose and Zeb Turner}
+{meta: x_source classic-country}
+{meta: x_source_file itsasinlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's a [C]sin my darling how I love [F]you
@@ -29,3 +32,6 @@
 [G7]Why pretend [C]that I can't live without [F]you
 [C]When deep [G7]inside I know that it's a [C]sin
 {end_of_verse}
+
+
+

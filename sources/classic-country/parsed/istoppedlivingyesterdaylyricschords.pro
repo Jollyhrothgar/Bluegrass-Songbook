@@ -1,6 +1,9 @@
 {meta: title I Stopped Living Yesterday}
 {meta: artist George Jones}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file istoppedlivingyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro: 
@@ -36,3 +39,8 @@ It can’t hurt me I stopped [D7]living yester[G]day
 {start_of_verse: Verse 5}
 It can't hurt me I stopped [D7]living yester[G]day
 {end_of_verse}
+
+
+
+
+

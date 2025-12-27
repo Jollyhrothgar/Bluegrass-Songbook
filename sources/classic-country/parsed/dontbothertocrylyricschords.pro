@@ -1,6 +1,9 @@
 {meta: title Don't Bother To Cry Lyrics and Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Bob Merrill}
+{meta: x_source classic-country}
+{meta: x_source_file dontbothertocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don’t bother to cry cause I ain’t [F]looking
@@ -43,3 +46,8 @@ Don’t bother to [C]sigh cause I won’t [G7]hear
 You [C]told me a lie and I [F]believed you
 Though you [C]cry and you’re [G7]still lying [C]dear 
 {end_of_verse}
+
+
+
+
+

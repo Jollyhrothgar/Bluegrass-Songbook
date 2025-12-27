@@ -1,6 +1,9 @@
 {meta: title What I Believe Dear}
 {meta: artist Kitty Wells}
 {meta: composer Tott Wilson and Sue Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file whatibelievedearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What I [C]believe dear is all up to [G]you
@@ -28,3 +31,5 @@ I'll tell my heart they [C]lied
 All gossip can't be [G]true
 For what I [D7]believe dear is all up to [G]you
 {end_of_verse}
+
+

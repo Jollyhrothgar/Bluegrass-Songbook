@@ -1,5 +1,8 @@
 {meta: title The Wonder}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file thewonderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a song in my soul for the [D7]sun going down
@@ -28,3 +31,6 @@ And [C]worthy of whatever I [G]do [D7]
 For the [G]chance I was given to [D7]live and believe
 In the love and the wonder of [G]you
 {end_of_verse}
+
+
+

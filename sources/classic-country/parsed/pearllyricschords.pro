@@ -1,6 +1,9 @@
 {meta: title Pearl}
 {meta: artist Cedar Hill}
 {meta: composer Darren Clay Haverstick}
+{meta: x_source classic-country}
+{meta: x_source_file pearllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He sees her sittin’ by the gate [D7]post
@@ -71,3 +74,10 @@
 [C]Pearly Mae [D7]we finally made it [G]home
 [C]My sweet Pearly Mae [D7]we finally made it [G]home
 {end_of_verse}
+
+
+
+
+
+
+

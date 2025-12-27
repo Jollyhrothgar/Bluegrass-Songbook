@@ -1,6 +1,9 @@
 {meta: title Give Them All To Jesus}
 {meta: artist Cristy Lane}
 {meta: composer Phil Johnson and Bob Benson Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file givethemalltoJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Are you tried of chasing pretty [Dm]rainbows
@@ -29,3 +32,6 @@ Shattered dreams wounded [G7]hearts broken [C]toys
 Give them all give them all [F]give them all to [Dm]Jesus
 And [G7]He will turn your sorrow into [C]joy
 {end_of_verse}
+
+
+

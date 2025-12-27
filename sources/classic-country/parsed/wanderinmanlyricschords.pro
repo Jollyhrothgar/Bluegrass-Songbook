@@ -1,6 +1,9 @@
 {meta: title Wanderin' Man}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file wanderinmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](A woman can't [G7]hold a wanderin' [C]man)
@@ -34,3 +37,7 @@ A [F]woman can't [G7]hold a wanderin' [C]man
 {start_of_verse: Verse 5}
 A [F]woman can't [G7]hold a wanderin' [C]man
 {end_of_verse}
+
+
+
+

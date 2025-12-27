@@ -1,6 +1,9 @@
 {meta: title Does He Mean That Much To You}
 {meta: artist Eddy Arnold}
 {meta: composer Don Robertson and Jack Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file doeshemeanthatmuchtoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Before he takes you from [F]me
@@ -59,3 +62,11 @@ Tag:
 [G7]Oh my darling does he
 Mean that much to [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+

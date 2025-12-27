@@ -1,5 +1,8 @@
 {meta: title What's Your Mama's Name}
 {meta: artist Tanya Tucker}
+{meta: x_source classic-country}
+{meta: x_source_file whatsyourmamasnamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What's your mama's name child  [G]what's your [D7]mama's [G]name
@@ -43,3 +46,8 @@ Does she ever [C]talk about a [G]place called New [D7]Orleans
 [G]Has she ever [D7]mentioned a [G]man named Buford [C]Wilson
 [G]What's your mama's [C]name child [G]what's your [D7]mama's [G]name
 {end_of_verse}
+
+
+
+
+

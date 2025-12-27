@@ -1,6 +1,9 @@
 {meta: title L-o-v-e Love Lyrics Chords}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Maggie Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file l-o-v-elovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]L-o-v-e [D7]l-o-v-e [G]love
@@ -30,3 +33,6 @@
 [C]It's enough to make a woman want to give [G]up
 [C]The only four letter word that you don't know is [D7]l-o-v-e [G]love
 {end_of_verse}
+
+
+

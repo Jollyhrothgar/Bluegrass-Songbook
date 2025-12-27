@@ -1,6 +1,9 @@
 {meta: title Everybody’s Reaching Out For Someone}
 {meta: artist Brenda Lee}
 {meta: composer Dickey Lee and Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file everybodysreachingoutforsomeonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody's reaching out for [C]someone
@@ -40,3 +43,8 @@ And long before I ever found [C]you
 {start_of_verse: Verse 4}
 [D7]You're the one that I was reaching [G]for
 {end_of_verse}
+
+
+
+
+

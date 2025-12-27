@@ -1,5 +1,8 @@
 {meta: title London Leaves}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file londonleaveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]London [G7]leaves are [C]falling 
@@ -47,3 +50,9 @@ It'll be [F]colder than [G7]ever with you [C]gone
 Tag:
 London [G7]leaves are [C]falling
 {end_of_verse}
+
+
+
+
+
+

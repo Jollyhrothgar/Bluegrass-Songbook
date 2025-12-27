@@ -1,6 +1,9 @@
 {meta: title Don't Let Our Love Start Slippin' Away}
 {meta: artist Vince Gill}
 {meta: composer Pete Wasner and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file dontletourlovestartslippinawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We've been up all night [F]long
@@ -42,3 +45,9 @@ Don't let our [F]love start slippin' [G7]love start slippin' [C]away
 {start_of_verse: Verse 5}
 Don't let our [F]love start slippin' [G7]love start slippin' [C]away
 {end_of_verse}
+
+
+
+
+
+

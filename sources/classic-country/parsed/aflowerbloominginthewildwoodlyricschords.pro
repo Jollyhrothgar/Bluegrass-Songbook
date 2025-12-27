@@ -1,5 +1,8 @@
 {meta: title A Flower Blooming in the Wildwood}
 {meta: artist Bill Harrell}
+{meta: x_source classic-country}
+{meta: x_source_file aflowerbloominginthewildwoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One evening long ago as the [C]sun was sinking low
@@ -42,3 +45,8 @@ A flower that is blooming there for [D7]me
 Sweeter [G]than the morning dew and I’ll [C]soon return to you
 You’re a [D7]flower that is blooming there for [G]me
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love The Second Time Around}
 {meta: artist Ronnie Milsap}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file lovethesecondtimearoundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This time I won't [G7]be dressed up in a [F]coat and tie
@@ -33,3 +36,7 @@ A [F]brand new life is [G7]knocking on our [C]door
 {start_of_verse: Verse 4}
 Cause we found [F]love the [G7]second time [C]around
 {end_of_verse}
+
+
+
+

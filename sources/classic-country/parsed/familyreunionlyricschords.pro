@@ -1,5 +1,8 @@
 {meta: title Family Reunion}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file familyreunionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Momma taught us how to sing in [C]harmo[G]ny
@@ -47,3 +50,8 @@ You could hear it [F]sing[G]
 I guess my ol' time favorite was that [D7]Fox On The [G]Run
 Like a [Em]fox (like a fox) like a [C]fox (like a [D7]fox) on the [G]run 
 {end_of_verse}
+
+
+
+
+

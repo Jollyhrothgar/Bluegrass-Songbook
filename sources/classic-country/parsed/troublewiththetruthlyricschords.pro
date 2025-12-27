@@ -1,6 +1,9 @@
 {meta: title Trouble With The Truth}
 {meta: artist Patty Loveless}
 {meta: composer Gary Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file troublewiththetruthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the [G7]trouble with the truth is [F]always the same ol' [C]thing
@@ -50,3 +53,9 @@ Trouble with the [C]truth
 That’s the [G7]trouble (trouble with the [F]truth)
 Trouble with the [C]truth
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Moment Of Forever}
 {meta: artist Willie Nelson}
 {meta: composer Kris Kristofferson and Danny Timms}
+{meta: x_source classic-country}
+{meta: x_source_file momentofforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Was it wonderful for you 
@@ -43,3 +46,8 @@ Ain't it nice to know that [C]dreams still come [Am]true
 I'm so glad that I was [D7]close to you 
 For a moment of for[G]ever
 {end_of_verse}
+
+
+
+
+

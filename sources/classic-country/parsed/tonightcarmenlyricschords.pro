@@ -1,5 +1,8 @@
 {meta: title Tonight Carmen}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file tonightcarmenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Carmen  [G7]Carmen  [G]Car-m [C][G][G7]-e-n  
@@ -59,3 +62,12 @@ There's [G]no way to hide it
 The love that I [G7]have for my [C]wife  
 [G]Carmen  [G7]Carmen [G]Car-m [C][G][G7]-e-n  
 {end_of_verse}
+
+
+
+
+
+
+
+
+

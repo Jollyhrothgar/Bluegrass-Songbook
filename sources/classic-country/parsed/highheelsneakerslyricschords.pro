@@ -1,6 +1,9 @@
 {meta: title High Heel Sneakers}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Robbert Higginbotham}
+{meta: x_source classic-country}
+{meta: x_source_file highheelsneakerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Put on your high heel sneakers 
@@ -29,3 +32,7 @@ Cause some cat might want to [G]fight
 {start_of_verse: Verse 5}
 Repeat
 {end_of_verse}
+
+
+
+

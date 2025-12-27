@@ -1,6 +1,9 @@
 {meta: title Chicken Hearted}
 {meta: artist Jim Reeves}
 {meta: composer Jim Reeves, Al Courtney &amp; Macy Lela Henry}
+{meta: x_source classic-country}
+{meta: x_source_file chickenheartedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It seems you're always wondering [D7]why
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 7}
 Repeat last two verses
 {end_of_verse}
+
+
+
+
+
+

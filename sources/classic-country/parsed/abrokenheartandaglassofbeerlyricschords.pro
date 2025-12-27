@@ -1,6 +1,9 @@
 {meta: title A broken Heart And A Glass Of Beer}
 {meta: artist Hank Thompson}
 {meta: composer Alan Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file abrokenheartandaglassofbeerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A broken heart  [F]and a glass of [C]beer
@@ -37,3 +40,7 @@ With a broken [G7]heart  and a glass of [C]beer
 {start_of_verse: Verse 5}
 I got broken [G7]heart  lord a glass of [C]beer
 {end_of_verse}
+
+
+
+

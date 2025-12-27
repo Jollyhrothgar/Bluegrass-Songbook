@@ -1,6 +1,9 @@
 {meta: title The Wind Beneath My Wings}
 {meta: artist Gary Morris}
 {meta: composer Larry Henley and Jeff Silbar}
+{meta: x_source classic-country}
+{meta: x_source_file thewindbeneathmywingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It must have been cold there in my [C]shadow
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [Am]You are the wind [D7]beneath my [G]wings 
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title A Rose Among The Thorns}
 {meta: artist The Gaithers}
+{meta: x_source classic-country}
+{meta: x_source_file aroseamongthethornslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While strolling through the fields of time
@@ -103,3 +106,17 @@ There had to be a rose to [Em]live
 There had to be a rose to [Em]live
 [G]And die [D7]among the [G]thorns
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

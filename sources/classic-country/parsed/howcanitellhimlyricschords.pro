@@ -1,6 +1,9 @@
 {meta: title How Can I Tell Him}
 {meta: artist Tanya Tucker}
 {meta: composer Kent LaVoie}
+{meta: x_source classic-country}
+{meta: x_source_file howcanitellhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He knows when I'm [G7]lonesome  [F]he's there when I'm [C]sad
@@ -36,3 +39,7 @@ I can tell him my [G7]troubles  he [F]makes 'em all seem [C]right
 [F]Everything seems [G7]right  [C]whenever I'm with [G7][Am]yo--u
 [F]So boy won't you [G7]tell me  [F]how to [G7]tell him [C]about you [G7]a--h [F]a--h [G7]o--oh
 {end_of_verse}
+
+
+
+

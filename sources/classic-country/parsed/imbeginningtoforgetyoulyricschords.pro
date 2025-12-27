@@ -1,6 +1,9 @@
 {meta: title I'm Beginning to Forget You}
 {meta: artist Jim Reeves}
 {meta: composer Willie Phelps}
+{meta: x_source classic-country}
+{meta: x_source_file imbeginningtoforgetyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm beginning to forget you
@@ -32,3 +35,7 @@ I'm so [C7]thankful to be [F]free
 I'm beginning to forget [C]you
 [G7]Like you forgot [C]me
 {end_of_verse}
+
+
+
+

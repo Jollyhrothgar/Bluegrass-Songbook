@@ -1,6 +1,9 @@
 {meta: title It's All Over}
 {meta: artist The Everly Brothers}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file itsalloverlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's all [D7]over [F]didn't even [C]cry
@@ -21,3 +24,5 @@
 [A#7]I just stop [Dm]living [G7]when you said [C]goodbye
 [D7]It's all [C][F]over
 {end_of_verse}
+
+

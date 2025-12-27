@@ -1,5 +1,8 @@
 {meta: title Bright Morning Stars}
 {meta: artist Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file brightmorningstarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bright morning stars are rising
@@ -28,3 +31,6 @@ Bright morning stars are rising
 [G]Bright morning stars are rising
 [D7]Day is a [G]breaking in [C]my [G]soul
 {end_of_verse}
+
+
+

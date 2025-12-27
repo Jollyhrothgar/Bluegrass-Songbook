@@ -1,6 +1,9 @@
 {meta: title I Threw Away the Rose}
 {meta: artist Hank Snow}
 {meta: composer Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ithrewawaytheroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once I lived a [C]life of wine and [G]roses
@@ -29,3 +32,6 @@
 [C]Now all my social friends look down their [G]noses
 [D7]Cause I kept the wine and threw away the [G]rose
 {end_of_verse}
+
+
+

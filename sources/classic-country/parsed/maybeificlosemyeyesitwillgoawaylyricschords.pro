@@ -1,6 +1,9 @@
 {meta: title Maybe If I Close My Eyes (It Will Go Away)}
 {meta: artist Susan Raye}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file maybeificlosemyeyesitwillgoawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe if I [F]close my eyes it [G7]will go [C]away
@@ -23,3 +26,5 @@
 [F]But when I love I really [G7]love yes I go all the [C]way
 [F]But maybe if I close my [G7]eyes it will go [C]away
 {end_of_verse}
+
+

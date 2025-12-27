@@ -1,6 +1,9 @@
 {meta: title Till Morning}
 {meta: artist Billy Crash Craddock}
 {meta: composer Cathy Carroll and Larry Kusik}
+{meta: x_source classic-country}
+{meta: x_source_file tillmorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Till morning till [F]morning till [C]morning
@@ -36,3 +39,7 @@ Till [C]morning
 The beating [G7]of two hearts as one
 Will go [Am]on and on and [F]on till [C]morning [G7]
 {end_of_verse}
+
+
+
+

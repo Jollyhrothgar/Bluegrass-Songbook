@@ -1,6 +1,9 @@
 {meta: title Play Me The Waltz Of The Angels}
 {meta: artist The Derailers}
 {meta: composer Dennis Knutson and Rory Lee Feek}
+{meta: x_source classic-country}
+{meta: x_source_file playmethewaltzoftheangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Played a party last [G7]night for some [C]old folks
@@ -40,3 +43,8 @@ So I can [C]dance with my [G7]angel [C]again
 {start_of_verse: Verse 5}
 Let me dance with my [G7]angel [C]again
 {end_of_verse}
+
+
+
+
+

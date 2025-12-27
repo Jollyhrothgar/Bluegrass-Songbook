@@ -1,6 +1,9 @@
 {meta: title My Only Claim To Fame}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file myonlyclaimtofamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I do not long to [F]have great wealth or [C]riches
@@ -23,3 +26,5 @@ And in [C]looking back on [F]all of my a[C]chievements
 Well my greatest [F]claim to [C]fame is [G7]loving [C]you
 Yes my greatest [F]claim to [C]fame is [G7]loving [C]you
 {end_of_verse}
+
+

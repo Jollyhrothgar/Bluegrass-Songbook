@@ -1,6 +1,9 @@
 {meta: title Led By The Master's Hand}
 {meta: artist The Blackwood Brothers}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file ledbythemastershandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I walk the road of life my feet grow [F]weary
@@ -29,3 +32,6 @@
 [C]When I climb the last mile to heaven's [F]land
 [C]I'll be led by [G7]the Master's [C]hand
 {end_of_verse}
+
+
+

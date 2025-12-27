@@ -1,6 +1,9 @@
 {meta: title Old Coyote Town}
 {meta: artist Don Williams}
 {meta: composer Larry Boone, Paul Nelson, Gene Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file oldcoyotetownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's got a U S flag on his front porch
@@ -63,3 +66,10 @@ That [F]old coyote [C]town
 {start_of_verse: Verse 7}
 God bless that [F]old coyote [C]town
 {end_of_verse}
+
+
+
+
+
+
+

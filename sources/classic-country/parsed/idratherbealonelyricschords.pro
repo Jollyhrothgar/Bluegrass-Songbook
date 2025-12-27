@@ -1,6 +1,9 @@
 {meta: title I'd Rather Be Alone}
 {meta: artist Cal Smith}
 {meta: composer Barbara Day and Jimmy Day}
+{meta: x_source classic-country}
+{meta: x_source_file idratherbealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You don't [G7]really [C]love me [C7]I might as well be [F]free
@@ -22,3 +25,5 @@ If I must be [G7]lonely I'd rather be [C]alone
 [C]Cause you can't [G7]hurt me any[C]more [C7]you might as well go [F]on
 Cause if I must be [G7]lonely I'd rather be [C]alone
 {end_of_verse}
+
+

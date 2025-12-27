@@ -1,6 +1,9 @@
 {meta: title Till Then}
 {meta: artist Cal Smith}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file tillthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You ask how much [D7]you mean to [G]me
@@ -30,3 +33,6 @@
 [C]But I can't [D7]let you go till [G]then
 [C]But I can't [D7]let you go till [G]then
 {end_of_verse}
+
+
+

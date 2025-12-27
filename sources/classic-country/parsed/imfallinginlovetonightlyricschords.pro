@@ -1,6 +1,9 @@
 {meta: title I'm Falling In Love Tonight}
 {meta: artist Elvis Presley}
 {meta: composer Otis Blackwell and Winfield Scott}
+{meta: x_source classic-country}
+{meta: x_source_file imfallinginlovetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm falling in [C]love [G]tonight  [G7]somehow I [C]know
@@ -15,3 +18,4 @@
 [G]But somehow you've [C]changed me [G]dear  [G7]this time it's [C]true
 [G]I'm falling in love tonight  [D7]with [G]you
 {end_of_verse}
+

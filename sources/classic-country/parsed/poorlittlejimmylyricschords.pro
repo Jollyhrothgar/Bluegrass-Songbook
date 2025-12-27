@@ -1,6 +1,9 @@
 {meta: title Poor Little Jimmy}
 {meta: artist Hank Snow}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file poorlittlejimmylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well poor little Jimmy was a real cool [F]kid
@@ -49,3 +52,8 @@
 [G7]He tried to out do cupid but cupid out done [C]him
 [F]Yes poor little Jimmy done [G7]gone and fell in [C]love
 {end_of_verse}
+
+
+
+
+

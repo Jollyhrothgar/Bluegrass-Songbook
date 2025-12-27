@@ -1,5 +1,8 @@
 {meta: title Flat Footin' It}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file flatfootinitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It started in Roanoke a [C]little while ago
@@ -52,3 +55,10 @@ Some dropped biology and [C]some cut their math
 And [A7]you don't know just how good you did
 [D7]Till you hear that guitar pickin' it pickin'
 {end_of_verse}
+
+
+
+
+
+
+

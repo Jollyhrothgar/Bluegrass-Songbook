@@ -1,6 +1,9 @@
 {meta: title My Day Won't Be Complete}
 {meta: artist The Wilburn Brothers}
 {meta: composer Johnny Russell}
+{meta: x_source classic-country}
+{meta: x_source_file mydaywontbecompletelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All the town is sleeping by [G7]now you're day is [C]through
@@ -22,3 +25,5 @@ Like [F]wishing you were [C]here with me then [D7]cry until I [G7]sleep
 [C]Take the bottle from the table and [G7]have a drink or [C]two
 [F]For my day won't [C]be complete [G7]until I drink to [C]you
 {end_of_verse}
+
+

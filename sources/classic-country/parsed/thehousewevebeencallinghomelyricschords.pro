@@ -1,6 +1,9 @@
 {meta: title The House We've Been Calling Home}
 {meta: artist David Allan Coe}
 {meta: composer David Allan Coe and Deborah Coe}
+{meta: x_source classic-country}
+{meta: x_source_file thehousewevebeencallinghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jessie she stares like a cat with a bird that has [F]fallen and broken its [C]wing
@@ -31,3 +34,6 @@ Just a [F]place we've been [G7]calling our [C]own
 [F]Me and my [G7]wives have been [C]spending our [Am]lives
 In a [F]house we've [G7]been calling [C]home
 {end_of_verse}
+
+
+

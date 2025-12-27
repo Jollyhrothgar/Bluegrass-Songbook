@@ -1,6 +1,9 @@
 {meta: title Last Of The Silver Screen Cowboys}
 {meta: artist Rex Allen Jr.}
 {meta: composer Steve Dorff, Milton Brown, Snuff Garrett}
+{meta: x_source classic-country}
+{meta: x_source_file lastofthesilverscreencowboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The last of the [E7]silver screen [Am]cowboys[G7]
@@ -46,3 +49,9 @@ But [F]memories don't die [G]and we're still [Em]ridin' high
 {start_of_verse: Verse 7}
 We're the [Dm]last of the [G7]silver screen [F]cow[C]boys
 {end_of_verse}
+
+
+
+
+
+

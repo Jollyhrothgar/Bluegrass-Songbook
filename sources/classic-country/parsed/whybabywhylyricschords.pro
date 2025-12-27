@@ -1,6 +1,9 @@
 {meta: title Why Baby Why}
 {meta: artist George Jones}
 {meta: composer Darrell Edwards & George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file whybabywhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tell me why baby  why baby  why baby [C]why
@@ -50,3 +53,9 @@ You make me [G]cry baby  cry baby  cry [D7]baby [G]cry
 I can't help but love you till [C]the day that I die
 So tell me [G]why baby why baby [D7]why baby [G]why
 {end_of_verse}
+
+
+
+
+
+

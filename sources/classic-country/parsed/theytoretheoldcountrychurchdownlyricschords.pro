@@ -1,6 +1,9 @@
 {meta: title They Tore The Old Country Church Down}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
 {meta: composer J.C. Fralix}
+{meta: x_source classic-country}
+{meta: x_source_file theytoretheoldcountrychurchdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh they tore the old [C]country church [G]down
@@ -56,3 +59,10 @@ And [D7]pride has slipped in where [C]love should have [G]been
 {start_of_verse: Verse 5}
 Oh they [D7]tore the old country church [G]down
 {end_of_verse}
+
+
+
+
+
+
+

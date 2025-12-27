@@ -1,6 +1,9 @@
 {meta: title I Don't Believe You Love Me Anymore}
 {meta: artist Connie Smith}
 {meta: composer Vic McAlpin, Roy Drusky, Marie Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file idontbelieveyoulovemeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately you've been acting strange to [C]me 
@@ -29,3 +32,6 @@ When [G]I tried to hold you close you turned [D7]away
 There [G]must be someone else you're longing [C]for
 And I [D7]don't believe you love me any[G]more  [D7]any[G]more
 {end_of_verse}
+
+
+

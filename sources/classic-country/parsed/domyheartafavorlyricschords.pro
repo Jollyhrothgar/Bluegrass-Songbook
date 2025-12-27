@@ -1,6 +1,9 @@
 {meta: title Do My Heart A Favor}
 {meta: artist Freddie Hart}
 {meta: composer Bobby George and Vern Stovall}
+{meta: x_source classic-country}
+{meta: x_source_file domyheartafavorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just when I think I'm almost over [C]you
@@ -33,3 +36,6 @@
 [G]Why don't you do my heart a favor
 [D7]Please leave me [G]alone
 {end_of_verse}
+
+
+

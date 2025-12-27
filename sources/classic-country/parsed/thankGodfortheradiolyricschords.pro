@@ -1,6 +1,9 @@
 {meta: title Thank God For The Radio}
 {meta: artist The Kendalls}
 {meta: composer Max D. Barnes and Robert John Jones}
+{meta: x_source classic-country}
+{meta: x_source_file thankGodfortheradiolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At the wrong end of the highway
@@ -45,3 +48,9 @@
 {start_of_verse: Verse 6}
 Thank God for the radio
 {end_of_verse}
+
+
+
+
+
+

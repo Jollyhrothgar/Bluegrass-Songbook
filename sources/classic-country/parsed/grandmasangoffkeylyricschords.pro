@@ -1,6 +1,9 @@
 {meta: title Grandma Sang Off Key}
 {meta: artist Wanda Jackson}
 {meta: composer Vera B. Lakey}
+{meta: x_source classic-country}
+{meta: x_source_file grandmasangoffkeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One of the fondest [C]memories that I have as a [G]child
@@ -50,3 +53,9 @@ She had to be the happiest person [A7]that I've ever [D7]seen
 She'd [G]clap her hands [D7]sing a song about [C]Jesus set her [G]free
 And the Lord [C]didn't [G]mind that my grandma [D7]sang off [G]key
 {end_of_verse}
+
+
+
+
+
+

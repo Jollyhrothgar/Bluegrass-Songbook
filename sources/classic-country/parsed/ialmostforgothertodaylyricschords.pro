@@ -1,6 +1,9 @@
 {meta: title I Almost Forgot Her Today}
 {meta: artist Carl Smith}
 {meta: composer Del Reeves &amp; Ellen Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file ialmostforgothertodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't make the call when [F]I picked up the [C]phone
@@ -29,3 +32,6 @@ You [C]see  I [G7]almost forgot her [C]today
 She's [C]just a girl who [F]got in my hearts [F][C]w-a-y
 And [C]I almost [G7]forgot her [C]today
 {end_of_verse}
+
+
+

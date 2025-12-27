@@ -1,6 +1,9 @@
 {meta: title Ummm Oh Yeah (Dearest)}
 {meta: artist Buddy Holly}
 {meta: composer Mickey Baker and Ellas McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file ummmohyeahdearestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dearest  [F]though you're the [G7]nearest to my [C]heart[F]
@@ -22,3 +25,5 @@ Come [C]h-o-m-e [F]keep me from these [G7]sleepless [C]nights[F]
 I'm [G7]gonna treat you [C]right ummm [F]yeah 
 I'm [G7]gonna treat you [C]right
 {end_of_verse}
+
+

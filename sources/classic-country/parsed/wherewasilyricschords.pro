@@ -1,6 +1,9 @@
 {meta: title Where Was I}
 {meta: artist Ricky Van Shelton}
 {meta: composer Gary Burr and Harry Stinso}
+{meta: x_source classic-country}
+{meta: x_source_file wherewasilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Well I [C]think I [G7]get the [C]message 
@@ -58,3 +61,9 @@ It must have been [C]all in my [F]head
 [G7]When love finally said good[F]bye
 Where was [C]I
 {end_of_verse}
+
+
+
+
+
+

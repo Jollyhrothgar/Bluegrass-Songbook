@@ -1,5 +1,8 @@
 {meta: title Hey Little Star}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file heylittlestarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey hey little star I don't know how far away you are
@@ -25,3 +28,5 @@ How to forget all [G7]about her
 Hey little star there you are close to heaven
 Lucky you lonely me little [C]star
 {end_of_verse}
+
+

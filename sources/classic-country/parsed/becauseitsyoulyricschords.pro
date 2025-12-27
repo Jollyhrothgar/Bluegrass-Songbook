@@ -1,6 +1,9 @@
 {meta: title Because It's You}
 {meta: artist Wanda Jackson}
 {meta: composer Bobby George and Vern Stovall}
+{meta: x_source classic-country}
+{meta: x_source_file becauseitsyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If this is the life you crave [D7]honky tonks night and day
@@ -26,3 +29,6 @@ Right or wrong I'll tag along because it's [G]you
 {start_of_verse: Verse 4}
 [D7]Right or wrong I'll tag along because it's [G]you
 {end_of_verse}
+
+
+

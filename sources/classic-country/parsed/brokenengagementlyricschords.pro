@@ -1,6 +1,9 @@
 {meta: title Broken Engagement}
 {meta: artist The Louvin Brothers}
 {meta: composer Wayne P. Walker, Max Powell, Mary C. Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file brokenengagementlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They were standing by a window [G7]on the night he kissed her [C7][C]cheek
@@ -24,3 +27,5 @@
 [G7]He was standing by her casket as he looked upon [C]her [C7]face
 [F]Then he realized that he [C]loved her and [G7]no one could take her [C]place
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Counterfeit Love}
 {meta: artist Johnny Horton}
 {meta: composer Howard Hausey}
+{meta: x_source classic-country}
+{meta: x_source_file counterfeitlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your [F]counterfeit [C]love  that you [C][F]falsi-fied
@@ -27,3 +30,6 @@
 [D7]But others tell me
 [G7]You're so warm to hold
 {end_of_verse}
+
+
+

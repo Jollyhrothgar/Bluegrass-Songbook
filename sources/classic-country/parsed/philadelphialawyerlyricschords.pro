@@ -1,6 +1,9 @@
 {meta: title Philadelphia Lawyer}
 {meta: artist Merle Haggard}
 {meta: composer Woody Guthrie [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file philadelphialawyerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Way out in Reno [G7]Neva-da
@@ -63,3 +66,11 @@ TAG:
 There's one less Philadelphia [F]lawyer
 In [G7]old Philadelphia [C]tonight
 {end_of_verse}
+
+
+
+
+
+
+
+

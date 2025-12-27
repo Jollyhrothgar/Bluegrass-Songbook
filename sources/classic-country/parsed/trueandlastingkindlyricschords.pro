@@ -1,6 +1,9 @@
 {meta: title True And Lasting Kind}
 {meta: artist Kitty Wells}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file trueandlastingkindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walk the line because he makes me [Am]want to
@@ -26,3 +29,6 @@ For [C]our love is the [D7]true and lasting [G]kind
 {start_of_verse: Verse 4}
 Our [C]love is the [D7]true and lasting [G]kind
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Keep On Loving Me}
 {meta: artist Johnny Paycheck}
 {meta: composer Troy Seals and Will Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file keeponlovingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When she needs someone to hold her  in the [F]night
@@ -23,3 +26,5 @@ She calls on [C]me  and I'm [F]right [C]there
 Her door is always open and sweet love shines the [F]way
 When she calls on [C]me  and I'm [F]right [C]there
 {end_of_verse}
+
+

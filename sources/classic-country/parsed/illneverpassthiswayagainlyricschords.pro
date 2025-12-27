@@ -1,6 +1,9 @@
 {meta: title I’ll Never Pass This Way Again}
 {meta: artist Slim Whitman}
 {meta: composer Dale Parker}
+{meta: x_source classic-country}
+{meta: x_source_file illneverpassthiswayagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When traveling down the road of [G7]time
@@ -41,3 +44,7 @@ May I leave each precious mile
 With some [F]kindness and a smile
 Oh I’ll [G7]never pass this way [C]again
 {end_of_verse}
+
+
+
+

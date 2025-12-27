@@ -1,5 +1,8 @@
 {meta: title I'm Your Man}
 {meta: artist Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file imyourmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you want someone who'll always do his [C]best who'll under[Am]stand
@@ -24,3 +27,5 @@ And be your best [Am]friend
 [G]I'm your man [D7]honey I'm your [G]man
 I'm your man  [D7]honey I'm your [G]man
 {end_of_verse}
+
+

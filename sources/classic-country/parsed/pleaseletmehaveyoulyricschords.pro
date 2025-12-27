@@ -1,6 +1,9 @@
 {meta: title Please Let Me Have You}
 {meta: artist Mel Tillis}
 {meta: composer Johnny Gore}
+{meta: x_source classic-country}
+{meta: x_source_file pleaseletmehaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You tell me [D7]pretend dear that it's only a [G]game
@@ -22,3 +25,5 @@ He made all the [A7]love songs for the lovers as [D7]we
 He made all the [G]roses all the [C]flowers with [G]dew
 You're my [C]flower from [G]heaven [D7]so please let me have [G]you
 {end_of_verse}
+
+

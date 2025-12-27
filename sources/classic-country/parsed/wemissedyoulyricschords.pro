@@ -1,6 +1,9 @@
 {meta: title We Missed You}
 {meta: artist Kitty Wells}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file wemissedyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We missed you and we're [D7]glad you've come [G]home
@@ -22,3 +25,5 @@ There were so many [D7]memories I [G]kept
 And [C]though you had gone many [G]miles from my side
 My [D7]love followed you every [G]step
 {end_of_verse}
+
+

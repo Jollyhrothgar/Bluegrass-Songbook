@@ -1,6 +1,9 @@
 {meta: title Thank God I Am Free}
 {meta: artist Carroll Roberson}
 {meta: composer James McFall}
+{meta: x_source classic-country}
+{meta: x_source_file thankGodiamfreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For a long time I traveled down a long lonely [C]road 
@@ -46,3 +49,8 @@ He could bring [D7]me out and show me the [G]way
 I’m so [C]glad that I [G]found out 
 He could bring [D7]me out and show me the [G]way 
 {end_of_verse}
+
+
+
+
+

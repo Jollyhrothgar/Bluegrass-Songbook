@@ -1,5 +1,8 @@
 {meta: title Daddy Won't Be Home Again For Christmas}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file daddywontbehomeagainforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Daddy won't be [C7]home again [F]for [D7]Christmas
@@ -35,3 +38,7 @@
 [C]Daddy won't be [C7]home again [F]for [D7]Christmas
 [G7]But maybe this will serve to let you know I [F]don't [C]forget
 {end_of_verse}
+
+
+
+

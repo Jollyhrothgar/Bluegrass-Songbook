@@ -1,6 +1,9 @@
 {meta: title Britches}
 {meta: artist Elvis Presley}
 {meta: composer Sherman Edwards, Donald Meyer, Sid Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file britcheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Beware of a gal in britches yo-di-o-di-o
@@ -33,3 +36,6 @@ Have [C]you cooking and washing clothes
 While [F]she goes chasing them buffaloes
 Bet your [G7]boots that's a gal in [C]britches
 {end_of_verse}
+
+
+

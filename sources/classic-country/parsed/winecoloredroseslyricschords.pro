@@ -1,6 +1,9 @@
 {meta: title Wine Colored Roses}
 {meta: artist George Jones}
 {meta: composer Dennis J. Knutson and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file winecoloredroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7][G]Today I got a long [G]letter
@@ -38,3 +41,7 @@ The color of [G]grapes on the [D7]vine
 [G]When she sees the wine colored [C]roses
 They'll [G]tell her I'm [D7]still on the [G]wine
 {end_of_verse}
+
+
+
+

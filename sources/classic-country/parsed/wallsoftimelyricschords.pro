@@ -1,6 +1,9 @@
 {meta: title Walls Of Time}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Monroe and Peter Rowan}
+{meta: x_source classic-country}
+{meta: x_source_file wallsoftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The wind is blowing across the mountain
@@ -43,3 +46,8 @@ Lord send the angels for my darling
 [G]I'll wait my time out here on earth love
 [C]And come [D7]to you when I [G]die
 {end_of_verse}
+
+
+
+
+

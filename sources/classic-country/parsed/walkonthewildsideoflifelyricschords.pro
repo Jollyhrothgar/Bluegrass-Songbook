@@ -1,6 +1,9 @@
 {meta: title Walk On The Wild Side Of Life}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file walkonthewildsideoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're not [F]gone really [C]gone you'll be [F]back I know you [C]will
@@ -30,3 +33,7 @@ And every thing's just like you left it [G7]waiting just for [C]you
 [C]You're not [F]gone really [C]gone you'll be [F]back I know you [C]will
 You're just [F]taking a [C]walk on the [G7]wild side of [C]life
 {end_of_verse}
+
+
+
+

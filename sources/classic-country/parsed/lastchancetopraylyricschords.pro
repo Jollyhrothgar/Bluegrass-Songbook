@@ -1,5 +1,8 @@
 {meta: title Last Chance To Pray}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file lastchancetopraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Before you say no to [C]Jesus to[G]night
@@ -49,3 +52,9 @@ Before you turn Him [D7]away
 [G]Before you decide to [C]take that great [G]chance
 Is this your [D7]last chance to [G]pray
 {end_of_verse}
+
+
+
+
+
+

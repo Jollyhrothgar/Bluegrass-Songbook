@@ -1,5 +1,8 @@
 {meta: title We're The Kind Of People That Make The Jukebox Play}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file werethekindofpeoplethatmakethejukeboxplaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dim lights and the sweet wine a bartender named J[D7]oe
@@ -30,3 +33,6 @@ How a woman she once loved me then she took her love [D7]away
 That's the kind of songs that console my kind each [C]day
 And [D7]we're the kind of people that make the jukebox [G]play
 {end_of_verse}
+
+
+

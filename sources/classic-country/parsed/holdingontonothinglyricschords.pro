@@ -1,6 +1,9 @@
 {meta: title Holding On To Nothing}
 {meta: artist Porter Wagoner}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file holdingontonothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're holding on with [F]nothing [C]left to [G7]hold on [C]to
@@ -43,3 +46,8 @@ And still go right on [C]bluffing
 {start_of_verse: Verse 5}
 We're holding on with [F]nothing [C]left to [G7]hold on [C]to
 {end_of_verse}
+
+
+
+
+

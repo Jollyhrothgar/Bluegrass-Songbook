@@ -1,6 +1,9 @@
 {meta: title Answers To My Questions}
 {meta: artist Vern Gosdin}
 {meta: composer Wayne Bradford}
+{meta: x_source classic-country}
+{meta: x_source_file answerstomyquestionslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You tell me you stay out late [F]cause you need time alone
@@ -29,3 +32,6 @@ I want answers to my questions [F]don't tell me no lies
 Though the morning sun may find me a[F]lone and by myself
 [G7]I can't share the love you have [F]for me with [G7]someone [C]else
 {end_of_verse}
+
+
+

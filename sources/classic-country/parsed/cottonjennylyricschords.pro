@@ -1,6 +1,9 @@
 {meta: title Cotton Jenny}
 {meta: artist Anne Murray}
 {meta: composer Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file cottonjennylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a house on a hill by a [F]worn down weathered old [C]mill
@@ -35,3 +38,6 @@ A soft southern flame  oh [F]Cotton Jenny's her [C]name
 She wakes me [G7]up when the sun goes down  
 And the wheels of love go [C]round 
 {end_of_verse}
+
+
+

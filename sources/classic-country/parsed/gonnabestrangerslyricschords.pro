@@ -1,6 +1,9 @@
 {meta: title Gonna Be Strangers}
 {meta: artist Ernest Tubb}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file gonnabestrangerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All the love you promised would be mine [F]forever
@@ -22,3 +25,5 @@
 [C]Why I should be taken out tarred and [F]feathered
 [C]To have let myself [G7]be taken in by [C]you
 {end_of_verse}
+
+

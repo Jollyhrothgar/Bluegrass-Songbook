@@ -1,5 +1,8 @@
 {meta: title Sweet Music Man}
 {meta: artist Kenny Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file sweetmusicmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sing your song sweet music man
@@ -62,3 +65,13 @@ Demand so [G]little of you
 She said sing your song sweet music man
 I [D7]believe in [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

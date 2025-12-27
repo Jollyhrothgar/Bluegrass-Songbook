@@ -1,5 +1,8 @@
 {meta: title What About Me}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file whataboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're happy now it's [G7]plain to see
@@ -34,3 +37,7 @@ You [C7]could at least show some [F]sympathy
 You're happy I [G7]see what about [C]me  
 What about me
 {end_of_verse}
+
+
+
+

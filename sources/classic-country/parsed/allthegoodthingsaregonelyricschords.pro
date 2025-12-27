@@ -1,6 +1,9 @@
 {meta: title All The Good Things Are Gone}
 {meta: artist Ray Price}
 {meta: composer Bob Morrison and Armendia Barton}
+{meta: x_source classic-country}
+{meta: x_source_file allthegoodthingsaregonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No I can't [Em]remember when [F]times were ever [G7]bad
@@ -31,3 +34,7 @@
 {start_of_verse: Verse 5}
 [F]I can't [G7]make [Am]myself believe [F]all the [G7]good things are [C]gone
 {end_of_verse}
+
+
+
+

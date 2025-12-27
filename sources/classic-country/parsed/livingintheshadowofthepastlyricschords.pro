@@ -1,6 +1,9 @@
 {meta: title Living In The Shadow Of The Past}
 {meta: artist Bobby Helms}
 {meta: composer Leo Russell, Al Rany, Gary Romero}
+{meta: x_source classic-country}
+{meta: x_source_file livingintheshadowofthepastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I feel your lips (oh I feel your lips)
@@ -33,3 +36,6 @@ My heart won't last in make be[C]lieve)
 Oh please come back and we'll make love [F]last
 Can't go on [C]living in the [G7]shadow of the [C]past
 {end_of_verse}
+
+
+

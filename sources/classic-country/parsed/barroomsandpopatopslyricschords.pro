@@ -1,6 +1,9 @@
 {meta: title Barrooms And Pop A Tops}
 {meta: artist Jim Ed Brown}
 {meta: composer Jim Hayner}
+{meta: x_source classic-country}
+{meta: x_source_file barroomsandpopatopslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Soda shop children to five o'clock [F]bars
@@ -50,3 +53,9 @@
 [F]Barrooms and pop a tops are long way from soda [C]shops
 [G7]Bartender let's have one more [C]round
 {end_of_verse}
+
+
+
+
+
+

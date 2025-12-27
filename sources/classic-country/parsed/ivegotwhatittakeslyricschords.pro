@@ -1,6 +1,9 @@
 {meta: title I've Got What It Takes}
 {meta: artist Tracy Byrd}
 {meta: composer Jeff Stevens and Marv Green}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotwhatittakeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You need a [F]man with an honest [C]heart 
@@ -56,3 +59,9 @@ And I'm gonna [F]prove to you baby
 You need a [F]man with an honest [C]heart 
 Baby [G7]I've got what it [C]takes
 {end_of_verse}
+
+
+
+
+
+

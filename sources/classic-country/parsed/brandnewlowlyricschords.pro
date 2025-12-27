@@ -1,6 +1,9 @@
 {meta: title Brand New Low}
 {meta: artist Red Sovine}
 {meta: composer Red Sovine, Delmar Williams, Paul Borst}
+{meta: x_source classic-country}
+{meta: x_source_file brandnewlowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart just hit a brand new low I don't know what to [F]say
@@ -29,3 +32,6 @@
 [C]I think of all the things we've planned but I know they'll never [F]be
 [C]My heart just hit a brand new low [G7]you're walkin' out on [C]me
 {end_of_verse}
+
+
+

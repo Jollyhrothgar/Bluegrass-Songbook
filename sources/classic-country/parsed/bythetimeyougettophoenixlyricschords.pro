@@ -1,6 +1,9 @@
 {meta: title By The Time You Get To Phoenix}
 {meta: artist Wanda Jackson}
 {meta: composer Jim Webb}
+{meta: x_source classic-country}
+{meta: x_source_file bythetimeyougettophoenixlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]By the time you [D7]got to Phoenix I was [G]rising
@@ -22,3 +25,5 @@ He's [C]been waiting for you to leave [F]that's all[D7]
 You'll [C]cry and you'll [D7]whisper I'm [G]sorry
 But [C]it's too late cause I'd found a love [F]that's true[D7]    [G]
 {end_of_verse}
+
+

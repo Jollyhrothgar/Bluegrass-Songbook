@@ -1,6 +1,9 @@
 {meta: title A Good Chance Of Tear Fall Tonight}
 {meta: artist Charley Pride}
 {meta: composer L.E. White and Carolyn Stringer}
+{meta: x_source classic-country}
+{meta: x_source_file agoodchanceoftearfalltonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we met you [F]brought the [C]sunshine 
@@ -31,3 +34,6 @@ Summer has [F]turned to [C]winter and nothing's [G7]right
 The [C]forecast is [F]cold and [C]lonely [F]since you went [C]away
 And there's a good [F]chance of [C]tear fall [G7]toni[C]ght
 {end_of_verse}
+
+
+

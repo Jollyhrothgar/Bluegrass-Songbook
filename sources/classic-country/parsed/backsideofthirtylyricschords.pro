@@ -1,5 +1,8 @@
 {meta: title Backside Of Thirty}
 {meta: artist John Conlee}
+{meta: x_source classic-country}
+{meta: x_source_file backsideofthirtylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Making money at 30 with a [F]wife and a [G7]son
@@ -28,3 +31,6 @@ An [E7]empty apartment don't [F]feel like a [G7]home
 On the [F]backside of thirty the short side of [C]time
 Back on the bottom with no [G7]will to [F]climb
 {end_of_verse}
+
+
+

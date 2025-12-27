@@ -1,6 +1,9 @@
 {meta: title Cause I Love You}
 {meta: artist Don Gibson}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file causeiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well at first I didn't [C]think that you’re [G]leaving
@@ -27,3 +30,6 @@ And your leaving has left a [D7]mighty lonesome [G]fool
 Cause I [F]love [C]you more than I [G]meant to
 And your leaving has left a [D7]mighty lonesome [C]fool[G]
 {end_of_verse}
+
+
+

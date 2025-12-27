@@ -1,6 +1,9 @@
 {meta: title The Jukebox Never Plays Home Sweet Home}
 {meta: artist Jack Greene}
 {meta: composer Danny Joe Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file thejukeboxneverplayshomesweethomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don’t know a single soul [F]here in this old bar
@@ -33,3 +36,7 @@ That’s why the [F]jukebox never [G7]plays Home Sweet [C]Home
 {start_of_verse: Verse 4}
 [Dm]That’s why the [F]jukebox never [G7]plays Home Sweet [C]Home
 {end_of_verse}
+
+
+
+

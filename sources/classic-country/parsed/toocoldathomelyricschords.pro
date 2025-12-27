@@ -1,6 +1,9 @@
 {meta: title Too Cold At Home}
 {meta: artist George Jones}
 {meta: composer Bobby Lamoyne Harden}
+{meta: x_source classic-country}
+{meta: x_source_file toocoldathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it sure feels good to come in here
@@ -54,3 +57,8 @@ Tag:
 It's too [F]hot to fish  too hot for [C]golf 
 [G7]And too cold at [C]home
 {end_of_verse}
+
+
+
+
+

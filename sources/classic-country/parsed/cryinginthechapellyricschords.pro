@@ -1,6 +1,9 @@
 {meta: title Crying in the Chapel}
 {meta: artist Eddy Arnold}
 {meta: composer Artie Glenn}
+{meta: x_source classic-country}
+{meta: x_source_file cryinginthechapellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You saw me crying in the [F]chapel
@@ -33,3 +36,6 @@ Am D7 G7 No way on earth to gain peace of mind FTake your troubles to the chapel
 CGet down on your knees and pray D7 Your burdens will be lighter
 G7 D7 F C And you'll surely find the way
 {end_of_verse}
+
+
+

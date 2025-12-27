@@ -1,6 +1,9 @@
 {meta: title Make Sure You've Got It All}
 {meta: artist Gene Watson}
 {meta: composer Bill Anderson and Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file makesureyouvegotitalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm watching you go from room to room
@@ -62,3 +65,11 @@ Make sure you've [Am]got it all
 [Dm]Take one last look [C]around girl before you [G7]leave
 Make sure you've got it [C]all 
 {end_of_verse}
+
+
+
+
+
+
+
+

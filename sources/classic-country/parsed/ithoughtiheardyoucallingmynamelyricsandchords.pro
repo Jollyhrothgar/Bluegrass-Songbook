@@ -1,6 +1,9 @@
 {meta: title I Thought I Heard You Calling My Name}
 {meta: artist George Strait}
 {meta: composer Lee Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file ithoughtiheardyoucallingmynamelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I said goodbye to [C7]you this [F]mornin'
@@ -33,3 +36,7 @@ That by [C]now you were [G7]many miles [C]away
 {start_of_verse: Verse 5}
 I thought I heard you [C7]callin' my [F]name
 {end_of_verse}
+
+
+
+

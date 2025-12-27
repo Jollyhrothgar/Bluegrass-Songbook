@@ -1,6 +1,9 @@
 {meta: title Before I Lose My Mind}
 {meta: artist Wanda Jackson}
 {meta: composer Vic McAlpin and Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file beforeilosemymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're telling everybody   that it's [G7]over
@@ -22,3 +25,5 @@ Too [F]much I know too late how could I  [C]be so [G7]blind
 I'd like [C]to forget you but I don't have that much [F]time
 I know I [G7]can't get over you before I lose my [C]mind
 {end_of_verse}
+
+

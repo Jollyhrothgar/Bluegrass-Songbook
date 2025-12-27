@@ -1,6 +1,9 @@
 {meta: title The Shoes You're Wearing}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file theshoesyourewearinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We've all seen enough wrong and right 
@@ -56,3 +59,8 @@ The shoes you're [G]wearing
 [G]Shoe[C]s don't make a [G]man [C]
 [G]Shoe[C]s don't make a [G]man)
 {end_of_verse}
+
+
+
+
+

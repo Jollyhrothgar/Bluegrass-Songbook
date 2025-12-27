@@ -1,6 +1,9 @@
 {meta: title The Bed You Made For Me}
 {meta: artist Highway 101}
 {meta: composer Paulette Carlson}
+{meta: x_source classic-country}
+{meta: x_source_file thebedyoumadeformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling were you listening when I [C]called you late last [G]night
@@ -49,3 +52,9 @@ Did you [C]tell her she was [G]sleeping in the [D7]bed you made for [G]me
 And did you [C]tell her she was [G]sleepin'
 In the [D7]bed you made [F]for me   [G]
 {end_of_verse}
+
+
+
+
+
+

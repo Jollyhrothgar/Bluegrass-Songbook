@@ -1,6 +1,9 @@
 {meta: title From Heaven To Heartache Lyrics Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file fromheaventoheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]From heaven to [C]heartache is such a long [G7]way to [F]go
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]From heartache to [C]heaven [G7]I'll never leave [C]again
 {end_of_verse}
+
+
+

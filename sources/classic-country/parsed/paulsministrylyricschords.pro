@@ -1,6 +1,9 @@
 {meta: title Paul's Ministry}
 {meta: artist Kitty Wells}
 {meta: composer William Travel}
+{meta: x_source classic-country}
+{meta: x_source_file paulsministrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Lord said stand up Paul and dry up your [D7]tears
@@ -29,3 +32,6 @@ But Paul you must suffer till I call you [G]home
 You'll sleep in the desert you'll be wrecked out at [C]sea
 But keep right on [G]preaching [D7]My gospel for [G]Me
 {end_of_verse}
+
+
+

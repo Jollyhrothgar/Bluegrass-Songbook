@@ -1,6 +1,9 @@
 {meta: title Jesus Don't Turn Me Away}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusdontturnmeawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I took the wrong turn a [F]long time [C]ago
@@ -36,3 +39,7 @@
 [F]I’m down on my knees [C]begging you [F]please
 [C]Sweet Jesus don’t [G7]turn me [C]away
 {end_of_verse}
+
+
+
+

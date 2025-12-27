@@ -1,6 +1,9 @@
 {meta: title It Turns Me Inside Out}
 {meta: artist Willie Nelson}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file itturnsmeinsideoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a way I'm glad it's over
@@ -54,3 +57,11 @@ But I know I couldn't hold you
 [Em]In a way I'm glad it's over
 [Dm]But another way it [G7]turns me inside [C]out
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Back When The Old Homeplace Was New}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file backwhentheoldhomeplacewasnewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the children come back to [F]see the old home[C]place 
@@ -63,3 +66,11 @@ There was plenty to see and to [G7]do
 But [F]they can't remember and I [C]ain't gonna tell 'em
 Back when the old [G7]homeplace was [C]new
 {end_of_verse}
+
+
+
+
+
+
+
+

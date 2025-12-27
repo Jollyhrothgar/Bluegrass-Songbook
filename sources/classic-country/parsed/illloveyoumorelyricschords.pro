@@ -1,5 +1,8 @@
 {meta: title I'll Love You More}
 {meta: artist Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file illloveyoumorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll love you [C]more than you need [D7]should you need [G]it
@@ -20,3 +23,5 @@
 [C]Too much love [D7]never gets in the [G]way
 [C]Too much love [D7]never gets in the [G]way
 {end_of_verse}
+
+

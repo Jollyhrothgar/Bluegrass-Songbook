@@ -1,6 +1,9 @@
 {meta: title I Saw God Today}
 {meta: artist George Strait}
 {meta: composer Rodney Clawson, Monty Criswell, Wade Allen Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file isawgodtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just walked down the street to the [Dm]coffee shop
@@ -63,3 +66,10 @@ She's got my nose she's got her [Dm]momma's eyes
 My brand new [F]baby girl she's a [G7]miracle
 I saw [F]God today[C]
 {end_of_verse}
+
+
+
+
+
+
+

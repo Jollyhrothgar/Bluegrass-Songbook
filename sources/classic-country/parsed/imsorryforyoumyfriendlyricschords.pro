@@ -1,5 +1,8 @@
 {meta: title I'm Sorry For You My Friend}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file imsorryforyoumyfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've known so long that you were wrong
@@ -51,3 +54,11 @@ You should have known you'd be alone
 [D7]You tried and lost now pay the cost
 [G]I'm sorry for you my friend
 {end_of_verse}
+
+
+
+
+
+
+
+

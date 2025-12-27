@@ -1,6 +1,9 @@
 {meta: title Sunshine And Rainbows}
 {meta: artist Roy Drusky}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file sunshineandrainbowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I remember Rose I [D7]remember neon lights
@@ -31,3 +34,6 @@ You remind me of twilight and hay rides baby
 [F]Fireflies and [D7]moonlight
 And you're [C]soft and warm [D7]beside me [G7]baby every [C]night
 {end_of_verse}
+
+
+

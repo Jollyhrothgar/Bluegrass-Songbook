@@ -1,6 +1,9 @@
 {meta: title She Loves My Troubles Away}
 {meta: artist John Conlee}
 {meta: composer Max D. Barnes and Rayburn Anthony}
+{meta: x_source classic-country}
+{meta: x_source_file shelovesmytroublesawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I lost my job down at the docks
@@ -50,3 +53,9 @@ And she loves my troubles away
 [C]Troubles get me down but they never [F]stay
 [C]Cause she [G7]loves my troubles [C]away
 {end_of_verse}
+
+
+
+
+
+

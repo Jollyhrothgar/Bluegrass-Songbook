@@ -1,6 +1,9 @@
 {meta: title Keep On Holding To Those Nail Scarred Hands}
 {meta: artist Connie Smith}
 {meta: composer Henry Slaughter}
+{meta: x_source classic-country}
+{meta: x_source_file keeponholdingtothosenailscarredhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look up look [Em]up  God [Dm]is still on his [C]throne
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]I'm holding to those blessed nail [C]scarred [C][F]hands
 {end_of_verse}
+
+
+
+

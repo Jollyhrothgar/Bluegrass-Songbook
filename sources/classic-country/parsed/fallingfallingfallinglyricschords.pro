@@ -1,6 +1,9 @@
 {meta: title Falling Falling Falling}
 {meta: artist Ray Price}
 {meta: composer Bud Deckelman, Joe Guillot, J.D. Miller}
+{meta: x_source classic-country}
+{meta: x_source_file fallingfallingfallinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart is breaking darling and many tears are falling
@@ -32,3 +35,8 @@ Oh hear my calling darling and stop these tears from falling
 {start_of_verse: Verse 6}
 Repeat
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Hardly Knew it was You}
 {meta: artist Faron Young}
 {meta: composer Dan Welch}
+{meta: x_source classic-country}
+{meta: x_source_file ihardlyknewitwasyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tinted hair and painted lips
@@ -41,3 +44,8 @@ From the simple girl I knew
 [G7]I don't know who's to blame
 [C]But I hardly knew it was you
 {end_of_verse}
+
+
+
+
+

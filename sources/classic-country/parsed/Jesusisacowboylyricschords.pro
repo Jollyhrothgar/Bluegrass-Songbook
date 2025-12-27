@@ -1,6 +1,9 @@
 {meta: title Jesus Is a Cowboy}
 {meta: artist Norma Jean}
 {meta: composer Vera Lakey}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusisacowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say a cowboy’s place is on the prairie
@@ -47,3 +50,9 @@ I [F]ran into a Ranger who [C]knows how to rope ‘em [A7]in
 {start_of_verse: Verse 5}
 [G7]Jesus is a cowboy my [C]friend
 {end_of_verse}
+
+
+
+
+
+

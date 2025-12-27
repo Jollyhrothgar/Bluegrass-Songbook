@@ -1,5 +1,8 @@
 {meta: title I'm Movin' In}
 {meta: artist Hank Snow Lyrics}
+{meta: x_source classic-country}
+{meta: x_source_file immovininlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm headin' out on the rails that's been carryin' the mail
@@ -76,3 +79,16 @@ Standin' in the station door
 [G]And you can't go roamin' no more
 [D7]Your little story was away too thin baby now I'm movin' [G]in
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

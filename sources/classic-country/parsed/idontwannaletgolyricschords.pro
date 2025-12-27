@@ -1,6 +1,9 @@
 {meta: title I Don't Wanna Let Go}
 {meta: artist Don Williams}
 {meta: composer Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file idontwannaletgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Road signs all [C]show
@@ -50,3 +53,10 @@ From the feelings inside
 {start_of_verse: Verse 7}
 [G7]While it's burning I don't [F]wanna let [C]go
 {end_of_verse}
+
+
+
+
+
+
+

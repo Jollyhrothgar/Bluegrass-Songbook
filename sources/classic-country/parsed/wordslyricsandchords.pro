@@ -1,6 +1,9 @@
 {meta: title Words}
 {meta: artist Elvis Presley}
 {meta: composer Barry Gibb, Maurice Gibb, Robin Gibb}
+{meta: x_source classic-country}
+{meta: x_source_file wordslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Smile an everlasting smile
@@ -29,3 +32,6 @@ A single word I [D7]say
 It's only [G]words and words are all I [D7]have 
 To take your heart [G]away
 {end_of_verse}
+
+
+

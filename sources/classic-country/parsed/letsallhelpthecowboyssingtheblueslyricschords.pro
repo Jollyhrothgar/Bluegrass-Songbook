@@ -1,6 +1,9 @@
 {meta: title Let's All Help The Cowboys Sing The Blues}
 {meta: artist Waylon Jennings}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file letsallhelpthecowboyssingtheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cowboys they are ladies men [F]alright
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 6}
 [G7]Let's all help the cowboys sing [F]the [C]bl-ues
 {end_of_verse}
+
+
+
+
+
+

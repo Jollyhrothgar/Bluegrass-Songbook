@@ -1,6 +1,9 @@
 {meta: title Do You Think}
 {meta: artist Don Gibson}
 {meta: composer Lee Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file doyouthinklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Do you [C]think the [G7]raindrops will [C]ever stop [F]falling
@@ -22,3 +25,5 @@ And [D7]brought you the shame that has [G7]torn us apart
 [C]Do you think I'll [G7]ever get [C]over the [F]sorrow
 [C]For being the [G7]fool that I've [C]been
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Kentucky In The Morning}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file kentuckyinthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I will sing of a place that you may have seen
@@ -42,3 +45,8 @@ Trimmed in green and [C]blue
 Kentucky in the [F]morning
 I was [G7]only passing [C]through
 {end_of_verse}
+
+
+
+
+

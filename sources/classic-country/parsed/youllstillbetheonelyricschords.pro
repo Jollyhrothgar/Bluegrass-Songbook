@@ -1,6 +1,9 @@
 {meta: title You'll Still Be The One}
 {meta: artist Charley Pride}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file youllstillbetheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When other arms [F]have held me close 
@@ -35,3 +38,7 @@ You'll still be the [C]one  [G7]you'll still be the [C]one
 {start_of_verse: Verse 4}
 [F]You'll still be the [C]one  [G7]you'll still be the [C]one
 {end_of_verse}
+
+
+
+

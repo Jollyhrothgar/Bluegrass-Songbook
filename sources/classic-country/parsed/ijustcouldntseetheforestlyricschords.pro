@@ -1,6 +1,9 @@
 {meta: title I Just Couldn't See The Forest}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Bruce Delaney}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcouldntseetheforestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I just couldn’t see the forest for [G]the [D7]trees
@@ -33,3 +36,7 @@
 [G]But somehow in the tangle of all those love [C]affairs
 [D7]I overlooked the only one who [G]cares
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Knew The Moment I Lost You}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Tommy Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file iknewthemomentilostyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A man may have his trials and [F]tribulations 
@@ -29,3 +32,6 @@ Just [G7]remember that I'm human same as [C]you
 Why not let's consider our mistakes [F]dear  
 For I [G7]knew the moment I lost [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tell Me That You Love Me}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file tellmethatyoulovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was only twelve years old
@@ -41,3 +44,7 @@ So [C]tell me that you love me
 Wouldn't put no one above me
 Oh [G]me [D7]
 {end_of_verse}
+
+
+
+

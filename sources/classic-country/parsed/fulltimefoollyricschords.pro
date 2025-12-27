@@ -1,5 +1,8 @@
 {meta: title Full Time Fool}
 {meta: artist Gene Watson}
+{meta: x_source classic-country}
+{meta: x_source_file fulltimefoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where are you going tonight Mary Ann
@@ -48,3 +51,10 @@ Don't worry 'bout me 'cause I'll be on my knees
 [C]And I'll pray that the dreams I'll be dreaming of you
 [G7]Don't turn into nightmares [C]tonight
 {end_of_verse}
+
+
+
+
+
+
+

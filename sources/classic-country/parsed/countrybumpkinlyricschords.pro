@@ -1,6 +1,9 @@
 {meta: title Country Bumpkin}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file countrybumpkinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He walked up to the bar and parked his 
@@ -64,3 +67,11 @@ And she said  so long [C7]country [F]bumpkin
 I've seen some [C7]sights and life's been [F]something
 [G7]See you later country [C]bumpkin
 {end_of_verse}
+
+
+
+
+
+
+
+

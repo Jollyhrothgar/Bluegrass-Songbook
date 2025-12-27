@@ -1,6 +1,9 @@
 {meta: title Send Me Down To Tucson}
 {meta: artist Mel Tillis}
 {meta: composer Cliff Crofford and Snuff Garrett}
+{meta: x_source classic-country}
+{meta: x_source_file sendmedowntotucsonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No one wants to [Em]go down to [Am]Tucson in the [Em]summer 
@@ -43,3 +46,8 @@ Then [C]call up the [Em]one who's love is [Dm]free [G7]
 [F]She may be [G7]easy and I [Em]love my [Am]lady but the [Dm]lady don't satis[Fm]fy 
 The [G7]love inside of [C]me
 {end_of_verse}
+
+
+
+
+

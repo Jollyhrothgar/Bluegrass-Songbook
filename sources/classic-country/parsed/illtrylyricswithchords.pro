@@ -1,6 +1,9 @@
 {meta: title I'll Try}
 {meta: artist Vern Gosdin}
 {meta: composer Wayne Bradford}
+{meta: x_source classic-country}
+{meta: x_source_file illtrylyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you need a helping [Bm]hand
@@ -24,3 +27,5 @@
 [G]As you watch [C]dreams inside you [Am]die
 [G]And you need someone to tell [Am]you why  [D7]I’ll [G]try
 {end_of_verse}
+
+

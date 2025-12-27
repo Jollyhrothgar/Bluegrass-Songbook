@@ -1,6 +1,9 @@
 {meta: title You Are So Beautiful}
 {meta: artist Kenny Rogers}
 {meta: composer Billy Preston and Bruce Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file youaresobeautifullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You [C7]are so [F]beautiful   [Fm]to [C]me
@@ -27,3 +30,6 @@
 [C]You are [C7]so [F]beautiful
 [C]You [C7]are so [F]beautiful   [Fm]to [C]me
 {end_of_verse}
+
+
+

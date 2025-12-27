@@ -1,6 +1,9 @@
 {meta: title Another Dream Just Came True}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Don Schlitz}
+{meta: x_source classic-country}
+{meta: x_source_file anotherdreamjustcametruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was lonely and [A7]downhearted
@@ -43,3 +46,8 @@
 [A7]Another dream just came true another dream just came true
 [C]Lying next to you another [G]dream [D7]just came [G]true
 {end_of_verse}
+
+
+
+
+

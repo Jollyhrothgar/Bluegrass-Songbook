@@ -1,6 +1,9 @@
 {meta: title Buttons And Bows}
 {meta: artist Jim Ed Brown}
 {meta: composer Jay Livingston and Ray Evans}
+{meta: x_source classic-country}
+{meta: x_source_file buttonsandbowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]East is east and west is west
@@ -49,3 +52,10 @@ Gimme [G7]eastern trimmin' where women are [C]women
 [G7]And I'm all yours in [F]buttons and [C]bows
 [F]Buttons and [C]bows [F]buttons and [C]bows
 {end_of_verse}
+
+
+
+
+
+
+

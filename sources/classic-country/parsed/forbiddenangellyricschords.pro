@@ -1,6 +1,9 @@
 {meta: title Forbidden Angel}
 {meta: artist Mel Street}
 {meta: composer John Riggs and Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file forbiddenangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl you kiss me like a woman though you're [F]barely seven[C]teen
@@ -29,3 +32,6 @@ While everything in [F]me says [C]love you my better judgment tells me [G7]no
 I [C]love you so I know I can wait to [F]unlock heaven's [C]door
 [F]When my forbidden [C]angel is not [G7]forbidden any[C]more
 {end_of_verse}
+
+
+

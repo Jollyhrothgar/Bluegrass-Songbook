@@ -1,5 +1,8 @@
 {meta: title Searching}
 {meta: artist Norma Jean}
+{meta: x_source classic-country}
+{meta: x_source_file searchinglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Searching  [C]I've spent a lifetime darling [G]searching
@@ -21,3 +24,5 @@ Cause I've been [G]searching  [C]I've spent a lifetime darling [G]searching
 Cause I've been [G]searching  [C]I've spent a lifetime darling [G]searching
 [D7]Looking  for someone just like [G]you
 {end_of_verse}
+
+

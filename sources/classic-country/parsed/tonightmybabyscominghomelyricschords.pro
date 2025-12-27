@@ -1,6 +1,9 @@
 {meta: title Tonight My Baby's Coming Home}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file tonightmybabyscominghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night he called from Dallas 
@@ -47,3 +50,8 @@ I know he's heading my way [D7]rolling down the highway
 [C]I know he's heading my way [D7]rolling down the highway
 [F]Tonight my [G7]baby's coming [C]home
 {end_of_verse}
+
+
+
+
+

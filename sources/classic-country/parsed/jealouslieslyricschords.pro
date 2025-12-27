@@ -1,6 +1,9 @@
 {meta: title Jealous Lies}
 {meta: artist Ray Price}
 {meta: composer Chuck Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file jealouslieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jealous lies are what you're [F]telling
@@ -29,3 +32,6 @@
 [C]Jealous lies have made me hate [F]you
 [C]Now you can't make [G7]me jealous over [C]you
 {end_of_verse}
+
+
+

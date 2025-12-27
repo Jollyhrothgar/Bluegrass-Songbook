@@ -1,5 +1,8 @@
 {meta: title Speak Softly}
 {meta: artist Gene Watson}
+{meta: x_source classic-country}
+{meta: x_source_file speaksoftlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you finally tell me what I know is on your mind
@@ -28,3 +31,6 @@ Don't cry don't let those teardrops [D7]fall
 Just tell me that you're leaving and you'll be gone [G]for good
 But speak softly you're [D7]talking to my [G]heart
 {end_of_verse}
+
+
+

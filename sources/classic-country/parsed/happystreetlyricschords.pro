@@ -1,6 +1,9 @@
 {meta: title Happy Street}
 {meta: artist Charlie Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file happystreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was blue till I found [G7]you
@@ -37,3 +40,7 @@ And baby now I'm walking down Happy Street
 {start_of_verse: Verse 5}
 [F]But anyplace is [G7]Happy Street with a [C]you
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Poor Little John}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file poorlittlejohnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Little John lived on a mountainside
@@ -42,3 +45,8 @@ Your [D7]momma used to love you but your [G]momma’s gone
 [C]Whatcha gonna do [G]living all alone
 Your [D7]momma used to love you but your [G]momma’s gone
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Feleena}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file feleenalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Out in New Mexico many long years ago
@@ -187,3 +190,35 @@ You'll hear them laugh and you'll look but there's no [C7]one [F]around
 Don't be alarmed there is really no harm [C]there
 It's only the young cowboy [G7]showing Feleena the [C]town
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

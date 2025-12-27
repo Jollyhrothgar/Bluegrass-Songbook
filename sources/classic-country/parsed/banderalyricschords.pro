@@ -1,6 +1,9 @@
 {meta: title Bandera}
 {meta: artist Mona McCall}
 {meta: composer Guyanne McCall and Justin Trevino}
+{meta: x_source classic-country}
+{meta: x_source_file banderalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess Bandera was too far to ask you to [F]come
@@ -29,3 +32,6 @@ My [F]heart ached with old [C]memories
 Well [G7]I guess Bandera was too far to ask you to come
 To just dance with [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When I Close My Eyes}
 {meta: artist Rhonda Vincent}
 {meta: composer Carol Annette Musick and Mark Alan Springer}
+{meta: x_source classic-country}
+{meta: x_source_file wheniclosemyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's so many things I didn't say
@@ -37,3 +40,7 @@ You're all I [C]see  [G7]when I close my [C]eyes
 {start_of_verse: Verse 4}
 [F]You're all I [C]see  [G7]when I close my [C]eyes
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's Your Fault I'm Cheating}
 {meta: artist Billy Walker}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file itsyourfaultimcheatinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're trying to make me feel guilty [G7]and [C]ashamed
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]Yes it's your fault I'm [G]cheating but the [D7]pleasure's all [G]mine
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tell Her Lies And Feed Her Candy}
 {meta: artist Charlie Walker}
 {meta: composer Joe McCracken}
+{meta: x_source classic-country}
+{meta: x_source_file tellherliesandfeedhercandylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met a little gal in the state of Arkansas
@@ -49,3 +52,8 @@ Take my [C]advice and put it on [G]ice boys
 [D7]Tell her lies and feed her [G]candy
 [D7]Tell her lies and feed her [G]candy
 {end_of_verse}
+
+
+
+
+

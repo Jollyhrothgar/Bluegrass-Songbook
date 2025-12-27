@@ -1,6 +1,9 @@
 {meta: title I Don't Care}
 {meta: artist Ricky Skaggs}
 {meta: composer Cindy Walker and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file idontcarelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now [C]I don't [G]care if [C]I'm not the [G]first love you've [D7]known
@@ -19,3 +22,5 @@
 {start_of_verse: Verse 3}
 [C]Darling I'll [D7]never [G]ask
 {end_of_verse}
+
+

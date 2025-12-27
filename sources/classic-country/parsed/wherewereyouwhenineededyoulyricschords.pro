@@ -1,6 +1,9 @@
 {meta: title Where Were You When I Needed You}
 {meta: artist Jimmy Dean}
 {meta: composer Marvin Moore and Bernie Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file wherewereyouwhenineededyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Where were you when I needed [C]you
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]I'd have died for you but I don't need you [C][F][C]n--o--w
 {end_of_verse}
+
+
+
+
+

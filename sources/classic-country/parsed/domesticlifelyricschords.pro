@@ -1,6 +1,9 @@
 {meta: title Domestic Life You}
 {meta: artist John Conlee}
 {meta: composer Gary Harrison and J.D. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file domesticlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cruising in a station wagon 
@@ -61,3 +64,11 @@ That [G7]domestic life's al[C]right with me
 {start_of_verse: Verse 9}
 We're living that [G7]domestic [C]life 
 {end_of_verse}
+
+
+
+
+
+
+
+

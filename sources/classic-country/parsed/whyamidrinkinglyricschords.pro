@@ -1,5 +1,8 @@
 {meta: title Why Am I Drinking}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file whyamidrinkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey why am I drinking there's no [G7]really reason to [C]quit
@@ -34,3 +37,8 @@ Then [F]why am I running [C]away
 Yes honey why am I drinking
 [G7]Why am I hurting this [C]way
 {end_of_verse}
+
+
+
+
+

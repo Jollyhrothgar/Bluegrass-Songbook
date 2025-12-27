@@ -1,6 +1,9 @@
 {meta: title You Show Me Yours}
 {meta: artist Willie Nelson}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file youshowmeyourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're feeling salty well [F]I'm your [C]tequila
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]You show me yours hon and I'll show [F]you [C]mine
 {end_of_verse}
+
+
+
+
+

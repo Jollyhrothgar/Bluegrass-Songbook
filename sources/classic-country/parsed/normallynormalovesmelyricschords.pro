@@ -1,6 +1,9 @@
 {meta: title Normally Norma Loves Me}
 {meta: artist Red Sovine}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file normallynormalovesmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Normally Norma's kissin' [E7]me
@@ -49,3 +52,9 @@ That knocks me off of my feet
 {start_of_verse: Verse 5}
 [A7]Aw but [D7]normally  [G7]Norma loves [C]me
 {end_of_verse}
+
+
+
+
+
+

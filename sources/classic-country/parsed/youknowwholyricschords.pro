@@ -1,6 +1,9 @@
 {meta: title You Know Who}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file youknowwholyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm all choked [C]up but let me [F]thank you for the [C]party once again
@@ -30,3 +33,6 @@ So just say goodnight and [F]smile and leave this [C]lonely broken man
 Who'll [G7]sit and cry all night for you know who
 I'll sit and cry all night for you know [C]who
 {end_of_verse}
+
+
+

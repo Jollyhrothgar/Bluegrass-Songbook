@@ -1,5 +1,8 @@
 {meta: title Take Me Back into Your Heart}
 {meta: artist the Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file takemebackintoyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take me back into your heart [D7]dear
@@ -28,3 +31,6 @@ And I'll make your dreams come [G]true
 [G]All I need is one more chance [D7]dear
 Take me back into your [G]heart
 {end_of_verse}
+
+
+

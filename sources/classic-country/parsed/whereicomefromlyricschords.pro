@@ -1,6 +1,9 @@
 {meta: title Where I Come From}
 {meta: artist John Anderson}
 {meta: composer Kent M. Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file whereicomefromlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]Country sun don't set on a big city skyline
@@ -40,3 +43,8 @@ City folks live stacked up on each other
 {start_of_verse: Verse 4}
 [Am]It's hard to [Em]leave
 {end_of_verse}
+
+
+
+
+

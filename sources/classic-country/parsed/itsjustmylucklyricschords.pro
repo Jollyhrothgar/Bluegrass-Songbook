@@ -1,6 +1,9 @@
 {meta: title It's Just My Luck}
 {meta: artist Connie Smith}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file itsjustmylucklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's just my [D7]luck to live when I'd much [G]rather die
@@ -22,3 +25,5 @@ Till [C]love to me has come to be [A7]just a standing [D7]joke
 [G]You're not [C]worth the salt in each new [G]tear I cry
 And it's just my luck to [D7]love someone like [C]you till I [G]die
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Mailman Bring Me No More Blues}
 {meta: artist Buddy Holly}
 {meta: composer Stanley Clayton, Ruth Roberts, Bill Katz}
+{meta: x_source classic-country}
+{meta: x_source_file mailmanbringmenomoreblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mailman bring me no more [G7]bl-u-es
@@ -25,3 +28,6 @@
 [C]Mailman bring me no more [G]bl-u-es
 [D7]One little letter [C]is all I can [G]use
 {end_of_verse}
+
+
+

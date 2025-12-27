@@ -1,6 +1,9 @@
 {meta: title Rank Strangers}
 {meta: artist Ricky Skaggs}
 {meta: composer Alfred E. Brumley Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file rankstrangerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wandered again to my [G7]home in the [C]mountains
@@ -40,3 +43,9 @@ Where no one will be a [G7]stranger to [C]me
 Everybody I met (everybody I met)
 Seemed to [F]be a rank [C]stranger (seemed to be a rank stranger)
 {end_of_verse}
+
+
+
+
+
+

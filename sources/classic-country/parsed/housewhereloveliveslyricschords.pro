@@ -1,6 +1,9 @@
 {meta: title House Where Love Lives}
 {meta: artist Dolly Parton and Porter Wagoner}
 {meta: composer Leona Reese}
+{meta: x_source classic-country}
+{meta: x_source_file housewhereloveliveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A squeaky gate a welcome [C]mat
@@ -37,3 +40,8 @@ repeat last verse
 {start_of_verse: Verse 6}
 We live in a [D7]house where love [G]lives
 {end_of_verse}
+
+
+
+
+

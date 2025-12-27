@@ -1,6 +1,9 @@
 {meta: title You Should See Tennessee Mam'selle}
 {meta: artist Jimmy Dean}
 {meta: composer Dave Coleman}
+{meta: x_source classic-country}
+{meta: x_source_file youshouldseetennesseemamsellelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You should see [F]Tennessee [C]Mam'selle
@@ -46,3 +49,8 @@ You won't miss those taxis a-tootin’
 {start_of_verse: Verse 6}
 [F]Yes get a load of Tennessee [C]Mam'selle
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Someone Else Tends The Garden}
 {meta: artist Mel Tillis}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file someoneelsetendsthegardenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She’s the mother of my [C]children
@@ -29,3 +32,6 @@ The [D7]one the holy bible says is [G]mine
 But [C]for now he’ll only be the [G]keeper
 [D7]Cause I’ll have my garden back in [G]time  thank you Lord
 {end_of_verse}
+
+
+

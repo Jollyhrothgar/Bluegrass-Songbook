@@ -1,6 +1,9 @@
 {meta: title Cody Wyoming}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file codywyominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In Cody Wyoming it’s [F]forty [C]below 
@@ -41,3 +44,8 @@ In Cody Wyoming or [G7]Miami with [C]me
 Yes tell me my darling [F]what it’s gonna [C]be
 Cody Wyoming or [G7]Miami and [C]me
 {end_of_verse}
+
+
+
+
+

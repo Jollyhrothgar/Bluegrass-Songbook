@@ -1,6 +1,9 @@
 {meta: title You Haven't Heard The Last Of Me}
 {meta: artist Moe Bandy}
 {meta: composer Tom Snow and Eric Kaz}
+{meta: x_source classic-country}
+{meta: x_source_file youhaventheardthelastofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You  [G7]haven't heard the last of [C]me
@@ -45,3 +48,8 @@ Oh honey [C]I thought I'd ought to let you [F]know
 I'm never gonna let [G7]you go  [C]until [F]I win and you give [C]in
 You're [F]gonna see that you [G7]haven't heard the last of [C]me
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Dixieland Delight}
 {meta: artist Alabama}
 {meta: composer Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file dixielanddelightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rolling down-a backwoods Tennessee [G7]byway
@@ -37,3 +40,6 @@ A little [Am]turtledoving on a Mason-Dixon [F]night
 Fits my [Am]life oh so [F]right
 My [Fm]Dixieland [C]Delight
 {end_of_verse}
+
+
+

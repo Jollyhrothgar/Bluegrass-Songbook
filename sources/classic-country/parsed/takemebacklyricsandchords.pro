@@ -1,6 +1,9 @@
 {meta: title Take Me Back}
 {meta: artist Johnny Rodriguez}
 {meta: composer Teddy Randazzo}
+{meta: x_source classic-country}
+{meta: x_source_file takemebacklyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take me back I'm [D7]begging please
@@ -44,3 +47,9 @@ Take me back I'm [G]on my knees
 For you can scold me [C]hurt me [Am]hold me
 [D7]Darling take me [G]back [C]  [G]
 {end_of_verse}
+
+
+
+
+
+

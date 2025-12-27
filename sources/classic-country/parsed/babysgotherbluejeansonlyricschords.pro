@@ -1,6 +1,9 @@
 {meta: title Baby's Got Her Blue Jeans On}
 {meta: artist Mel McDaniel}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file babysgotherbluejeansonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down on the [C]corner [G]by the traffic [C]light
@@ -47,3 +50,9 @@ Up by the bus [C]stop and [G]across the [C]street
 {start_of_verse: Verse 5}
 [D7]Heaven help us [C]baby's got her [D7]blue jeans [G]on
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ain't She Something Else}
 {meta: artist Conway Twitty}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file aintshesomethingelselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't you like the way she [Am]talks to [G]you
@@ -40,3 +43,8 @@ And [C]when she loves you [Am]ain't [D7]she something [G]else
 {start_of_verse: Verse 5}
 [C]When she loves me [Am]she's sure [D7]something [G]else
 {end_of_verse}
+
+
+
+
+

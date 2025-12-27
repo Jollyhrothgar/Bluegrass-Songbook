@@ -1,5 +1,8 @@
 {meta: title One More Name}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file onemorenamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My friends tried to tell me you were [C]steppin' [G]around
@@ -32,3 +35,7 @@ One more name and our [D7]love will surely [G]die
 {start_of_verse: Verse 5}
 One more name and our [D7]love will surely [G]die
 {end_of_verse}
+
+
+
+

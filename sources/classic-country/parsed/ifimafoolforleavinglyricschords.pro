@@ -1,6 +1,9 @@
 {meta: title If I'm A Fool For Leaving}
 {meta: artist Gene Watson}
 {meta: composer Little Jimmy Dickens & Skip Graves}
+{meta: x_source classic-country}
+{meta: x_source_file ifimafoolforleavinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This morning I am leaving  I've [F]been up all night [C]long
@@ -26,3 +29,6 @@ If I'm a fool for leaving  I'd be [G7]twice the fool to [C]stay
 {start_of_verse: Verse 3}
 If I'm a fool for leaving  I'd be twice [G7]the fool to [C]stay
 {end_of_verse}
+
+
+

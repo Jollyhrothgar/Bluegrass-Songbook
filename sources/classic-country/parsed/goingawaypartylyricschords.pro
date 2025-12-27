@@ -1,6 +1,9 @@
 {meta: title Going Away Party}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file goingawaypartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm throwing a going away [F]party
@@ -22,3 +25,5 @@
 [F]It’s just a sad going [C]away [A7]party
 [D7]For a dream [G7]I'm telling [C]goodbye
 {end_of_verse}
+
+

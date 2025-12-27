@@ -1,6 +1,9 @@
 {meta: title Crown Of Thorns}
 {meta: artist Jimmie Davis}
 {meta: composer Jimmie Davis and Jack Mainard}
+{meta: x_source classic-country}
+{meta: x_source_file crownofthornslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There have been kings with [G7]riches untold
@@ -31,3 +34,6 @@ The [C]sky was dark with a [F]raging storm
 When they [C]crowned the King of kings 
 With a crown [G7]of [C]thorns
 {end_of_verse}
+
+
+

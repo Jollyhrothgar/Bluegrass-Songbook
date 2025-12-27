@@ -1,6 +1,9 @@
 {meta: title I Need Thee Every Hour}
 {meta: artist Don Gibson}
 {meta: composer Robert Lowry and Annie S. Hawks}
+{meta: x_source classic-country}
+{meta: x_source_file ineedtheeeveryhourlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I need Thee every hour most gracious [G][C]Lord
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [C]Oh bless me now my [G]Savior I [D7]come to [G]Thee
 {end_of_verse}
+
+
+

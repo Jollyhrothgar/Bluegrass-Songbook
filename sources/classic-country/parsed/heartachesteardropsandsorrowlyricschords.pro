@@ -1,6 +1,9 @@
 {meta: title Heartaches Teardrops And Sorrow}
 {meta: artist Jean Shepard}
 {meta: composer Kid Murdock and Lila Hargiss}
+{meta: x_source classic-country}
+{meta: x_source_file heartachesteardropsandsorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You brought me [C]heartaches teardrops and [F]sorrow
@@ -25,3 +28,6 @@
 [G7]Oh now I know I'll have a blue day again [F]tomorrow
 [C]With my heartaches [G7]my teardrops and [C]sorrow
 {end_of_verse}
+
+
+

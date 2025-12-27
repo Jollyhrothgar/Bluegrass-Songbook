@@ -1,6 +1,9 @@
 {meta: title Under The Influence Of Love}
 {meta: artist Buck Owens}
 {meta: composer Harlan Howard and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file undertheinfluenceoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She knew I knew that she was out to get [C]me
@@ -29,3 +32,6 @@
 [C]Yes I was so in love I let her hurt me though I knew better
 [D7]Under the influence of [G]love
 {end_of_verse}
+
+
+

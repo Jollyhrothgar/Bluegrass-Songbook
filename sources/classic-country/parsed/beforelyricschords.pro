@@ -1,5 +1,8 @@
 {meta: title Before}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file beforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Before I gave love everything I [F]had
@@ -37,3 +40,8 @@ Of what we have together
 [F]And you'll be the last
 [D7]I met [C]you and knew I'd [G7]never loved [C]before
 {end_of_verse}
+
+
+
+
+

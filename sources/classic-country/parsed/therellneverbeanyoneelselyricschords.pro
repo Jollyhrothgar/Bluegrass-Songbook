@@ -1,5 +1,8 @@
 {meta: title There'll Never Be Anyone Else}
 {meta: artist Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file therellneverbeanyoneelselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There'll never be [F]anyone else but [G7]you  for [C]me
@@ -28,3 +31,6 @@ Then I'm gonna [F]prove to you how [G7]true my love can [C]be
 There'll never be [F]anyone else but [G7]you for [C]me
 Never ever be  [F]just couldn't be [G7]anyone else but [C]you
 {end_of_verse}
+
+
+

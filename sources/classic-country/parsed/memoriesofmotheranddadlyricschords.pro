@@ -1,6 +1,9 @@
 {meta: title Memories Of Mother And Dad}
 {meta: artist Ricky Skaggs}
 {meta: composer Albert Price}
+{meta: x_source classic-country}
+{meta: x_source_file memoriesofmotheranddadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mother left this world of [F]sor[C]row
@@ -43,3 +46,8 @@ On these tombstones there they [G7]say
 Oh [C]mother's gone but not [F]forgo[C]tten
 Oh dad we'll [G7]meet again some[C]day
 {end_of_verse}
+
+
+
+
+

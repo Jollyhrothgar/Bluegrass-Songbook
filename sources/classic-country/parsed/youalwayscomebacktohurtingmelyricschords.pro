@@ -1,6 +1,9 @@
 {meta: title You Always Come Back to Hurting Me}
 {meta: artist Johnny Rodriguez}
 {meta: composer Tom T. Hall and Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file youalwayscomebacktohurtingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm beginning to believe I get my kicks from being [D7]hurt
@@ -29,3 +32,6 @@ As [D7]sweet and stinging as a honey [D7][G]bee
 I'm [G]never really [G7]sorry when you [Am][C]leave 
 You [G]always come [D7]back to hurting [G]me
 {end_of_verse}
+
+
+

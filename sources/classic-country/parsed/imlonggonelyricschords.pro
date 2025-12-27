@@ -1,6 +1,9 @@
 {meta: title I'm Long Gone}
 {meta: artist Wilburn Brothers}
 {meta: composer Buddy Ring}
+{meta: x_source classic-country}
+{meta: x_source_file imlonggonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a long [Am]gone that's what I'll [C]be
@@ -46,3 +49,9 @@ I'll forget about [Am]you you'll forget about [C]me
 Gonna [F]find me a [C]girl and a [F]brand new [C]world
 I'll forget about [Am]you you'll forget about [C]me
 {end_of_verse}
+
+
+
+
+
+

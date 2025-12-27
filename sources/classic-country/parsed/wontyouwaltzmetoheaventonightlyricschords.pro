@@ -1,5 +1,8 @@
 {meta: title Won't You Waltz Me To Heaven Tonight}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file wontyouwaltzmetoheaventonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been a [G7]long time
@@ -45,3 +48,8 @@ Won't you [C]waltz me to [G7]heaven to[C]night
 {start_of_verse: Verse 6}
 [Am]Won't you [C]waltz me to [G7]heaven to[C]night
 {end_of_verse}
+
+
+
+
+

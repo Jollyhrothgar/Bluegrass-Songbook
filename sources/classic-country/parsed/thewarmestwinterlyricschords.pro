@@ -1,6 +1,9 @@
 {meta: title The Warmest Winter}
 {meta: artist Doug Stone}
 {meta: composer Bruce Burch and Will Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file thewarmestwinterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]See the morning frost [D7]on the window pain
@@ -46,3 +49,9 @@ It's the [C]warmest [Bm]winter [Em]that I [G]have ever [C]known
 {start_of_verse: Verse 5}
 Oh it's the warmest [Bm]winter [Em]that I [G]have ever [C]known
 {end_of_verse}
+
+
+
+
+
+

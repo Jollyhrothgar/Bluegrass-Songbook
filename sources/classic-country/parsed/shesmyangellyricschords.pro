@@ -1,6 +1,9 @@
 {meta: title She's My Angel}
 {meta: artist Billy Crash Craddock}
 {meta: composer Ron Chancey and Jim Sahnger}
+{meta: x_source classic-country}
+{meta: x_source_file shesmyangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am luckier than most I must [A7]agree
@@ -30,3 +33,6 @@ And I'm the love that my angel's thinking [G]of
 She's the prayer that was answered by the [C]good Lord [G]up [A7]above
 She's my [G]angel [C]and my [G]angel [D7]lives for my [G]love
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Where Am I Going To Live When I Get Home}
 {meta: artist Billy Ray Cyrus}
 {meta: composer Billy Ray Cyrus and Cindy Cyrus}
+{meta: x_source classic-country}
+{meta: x_source_file whereamigoingtolivewhenigethomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where am I gonna live when I get [D7]home 
@@ -43,3 +46,8 @@ So [D7]where am I gonna live when I get [G]home
 Where'm I gonna live 
 Where'm I gonna live when I get [G]home  
 {end_of_verse}
+
+
+
+
+

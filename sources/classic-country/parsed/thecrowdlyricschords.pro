@@ -1,6 +1,9 @@
 {meta: title The Crowd}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melson and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file thecrowdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I go out with the crowd I play the [Dm]game  
@@ -24,3 +27,5 @@ Guess [C]I'll go along with the crowd I'll make be[F]lieve
 That you'll [C]come back to me [G]run back to me  
 Hurry [C]back to the [Fm]crowd and with [C]me
 {end_of_verse}
+
+

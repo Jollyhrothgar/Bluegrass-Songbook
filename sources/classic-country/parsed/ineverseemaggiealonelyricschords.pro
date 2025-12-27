@@ -1,6 +1,9 @@
 {meta: title I Never See Maggie Alone Lyrics Chords}
 {meta: artist Slim Whitman}
 {meta: composer Everett Lynton and Harry Tilsley}
+{meta: x_source classic-country}
+{meta: x_source_file ineverseemaggiealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maggie dear just won't [G7]go out alone
@@ -66,3 +69,12 @@ Oh I [D7]never see [G7]Maggie [C]alone
 {start_of_verse: Verse 10}
 Oh I [G7]never see my Maggie [C]alone
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Wonder If I Ever Said Goodbye}
 {meta: artist Johnny Rodriguez}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderifieversaidgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At times she still comes around
@@ -31,3 +34,6 @@ Makes me [G]wonder if I [D7]ever said [G]goodbye
 {start_of_verse: Verse 4}
 Makes me wonder if I [D7]ever said [G]goodbye
 {end_of_verse}
+
+
+

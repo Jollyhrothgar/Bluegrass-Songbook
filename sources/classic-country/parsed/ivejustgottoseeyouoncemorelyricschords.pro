@@ -1,6 +1,9 @@
 {meta: title I've Just Got to See You Once More}
 {meta: artist George Jones}
 {meta: composer Little Jimmy Dickens, Billy Wallace}
+{meta: x_source classic-country}
+{meta: x_source_file ivejustgottoseeyouoncemorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the morning paper [C]there's a picture of [G]you
@@ -29,3 +32,6 @@ And I'll [D7]cry as I’ve never cried [G]before
 When the groom kisses you my poor [C]heart will break in [G]two
 But I've [D7]just got to see you once [G]more
 {end_of_verse}
+
+
+

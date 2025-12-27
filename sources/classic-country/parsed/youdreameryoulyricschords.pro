@@ -1,5 +1,8 @@
 {meta: title You Dreamer You}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file youdreameryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](You [D7]dreamer [G]you)
@@ -33,3 +36,6 @@ As heavenly as the one above (oh [D7]what a [G]dream)
 There'll [D7]be heaven in my life with an [A7]angel for a [D7]wife 
 With an angel for a [G]wife (You [D7]dreamer [G]you)
 {end_of_verse}
+
+
+

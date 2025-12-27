@@ -1,6 +1,9 @@
 {meta: title Her Eyes Are Bluebonnet Blue}
 {meta: artist Red Steagall}
 {meta: composer Russell D. Steagall and Luke Reed}
+{meta: x_source classic-country}
+{meta: x_source_file hereyesarebluebonnetbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was standing in the Long Branch he [F]came through the swinging doors
@@ -68,3 +71,12 @@ Her [F]skin is soft as goose-down and her [G7]eyes bluebonnet [C]blue
 {start_of_verse: Verse 8}
 Her [F]skin is soft as goose-down and her [G7]eyes are bluebonnet [C]blue
 {end_of_verse}
+
+
+
+
+
+
+
+
+

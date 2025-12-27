@@ -1,6 +1,9 @@
 {meta: title Restless Kid}
 {meta: artist Ricky Nelson}
 {meta: composer Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file restlesskidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I came in like a restless wind on a wagon train 
@@ -39,3 +42,7 @@ You better believe I'm gonna leave like the 904 train
 Gonna breathe some air again 
 That [D7]ain't been breathed [G]before 
 {end_of_verse}
+
+
+
+

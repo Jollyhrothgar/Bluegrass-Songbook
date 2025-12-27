@@ -1,6 +1,9 @@
 {meta: title The Blues Don't Care Who's Got 'Em}
 {meta: artist Reba McEntire}
 {meta: composer Wayland D. Holyfield and Dickey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file thebluesdontcarewhosgotemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the blues don't care who's got [F]'em
@@ -40,3 +43,8 @@ The wind it don't know where it's blowing
 {start_of_verse: Verse 4}
 [G7]Oh darlin’ you and the blues don't care at [C]all
 {end_of_verse}
+
+
+
+
+

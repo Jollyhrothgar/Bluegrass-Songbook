@@ -1,6 +1,9 @@
 {meta: title California Dream}
 {meta: artist Johnny Paycheck}
 {meta: composer Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file californiadreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's been fifteen years now since the wine took hold of me
@@ -28,3 +31,6 @@ It's seems like only yesterday I had such big plans
 [D7]Oh I gotta get back to my California [G]dreams
 [D7]Oh California here I [G]come
 {end_of_verse}
+
+
+

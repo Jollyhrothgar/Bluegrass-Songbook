@@ -1,6 +1,9 @@
 {meta: title Help Me Hold On}
 {meta: artist Travis Tritt}
 {meta: composer Travis Tritt and Pat Terry}
+{meta: x_source classic-country}
+{meta: x_source_file helpmeholdonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby close that suitcase you been [C]packin'
@@ -54,3 +57,10 @@ You were right all [Am]along so [D7]help me hold [G]on
 {start_of_verse: Verse 7}
 You were right all [Am]along so [D7]help me hold [G]on
 {end_of_verse}
+
+
+
+
+
+
+

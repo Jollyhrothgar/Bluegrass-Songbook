@@ -1,6 +1,9 @@
 {meta: title It All Depends}
 {meta: artist Mickey Gilley}
 {meta: composer Billy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file italldependslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The kind of life you're living since you [C]left me
@@ -22,3 +25,5 @@ But the [D7]one you're holding now will never [G]fade
 You said you'd wait and be somebody's [C]baby
 And it [D7]all depends on who will buy the [G]wine
 {end_of_verse}
+
+

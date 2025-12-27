@@ -1,6 +1,9 @@
 {meta: title I Love To Do What I Love To}
 {meta: artist Billy Crash Craddock}
 {meta: composer Bobby Fisher and Chris Blake}
+{meta: x_source classic-country}
+{meta: x_source_file ilovetodowhatilovetolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down in old Mexico  
@@ -72,3 +75,9 @@ Just do what you [F]love to do
 Just do what you [F]love to do 
 [G7]Like I love loving [C]you
 {end_of_verse}
+
+
+
+
+
+

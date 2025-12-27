@@ -1,5 +1,8 @@
 {meta: title On Silver Wings}
 {meta: artist Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file onsilverwingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a resting place [D7]where you can [G]go
@@ -46,3 +49,9 @@ You'll be lifted up [D7]on silver [G]wings
 {start_of_verse: Verse 5}
 You'll be lifted up [D7]on silver [G]wings
 {end_of_verse}
+
+
+
+
+
+

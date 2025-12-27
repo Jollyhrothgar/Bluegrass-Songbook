@@ -1,6 +1,9 @@
 {meta: title Little Drummer Boy}
 {meta: artist Johnny Cash}
 {meta: composer Katherine Davis, Henri Onerati, Harry Simeone}
+{meta: x_source classic-country}
+{meta: x_source_file littledrummerboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come they told me our new born King to see
@@ -27,3 +30,5 @@ I played my best for Him pa [G]rum pum pum [C]pum
 Rum pum pum [G]pum rum pum pum [D7]pum
 [G]Then He smiled at me pa [C]rum pum pum [G]pum [D7]me and my [G]drum
 {end_of_verse}
+
+

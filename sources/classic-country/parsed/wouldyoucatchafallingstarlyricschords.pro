@@ -1,6 +1,9 @@
 {meta: title Would You Catch A Falling Star}
 {meta: artist John Anderson}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyoucatchafallingstarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know the crowd was very [F]small for a country music [C]show
@@ -33,3 +36,7 @@ Sing a golden oldie [G7]song   [F]if you'll catch a falling [C]star
 {start_of_verse: Verse 4}
 Sing a golden oldie [G7]song  [F]if you'll catch a falling [C]star
 {end_of_verse}
+
+
+
+

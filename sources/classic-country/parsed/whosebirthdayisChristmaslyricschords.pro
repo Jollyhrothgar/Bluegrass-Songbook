@@ -1,6 +1,9 @@
 {meta: title Whose Birthday Is Christmas}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file whosebirthdayisChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -45,3 +48,9 @@ I was [G7]walking to my car and I heard a little boy [C]say
 It's hard to understand in a [Dm]big people’s land
 Es[G7]pecially if you're six years [C]old
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Run ‘Em Off}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file runemofflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now when the big bad wolf got in grandma's [D7]house
@@ -56,3 +59,10 @@ Run ‘em [G]off so we can be [D7]alone
 Run 'em [G]off and make 'em let us [C]be
 If [G]you don't run 'em off I swear you're [D7]cheating on [G]me
 {end_of_verse}
+
+
+
+
+
+
+

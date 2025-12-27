@@ -1,6 +1,9 @@
 {meta: title Gathering In The Sky}
 {meta: artist Porter Wagoner}
 {meta: composer Wayne Raney and R.E. Winsett}
+{meta: x_source classic-country}
+{meta: x_source_file gatheringintheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There'll be a great gathering in the sky 
@@ -36,3 +39,7 @@ When all of God's children get [C]home
 We'll join the happy millions as they [G]sing 
 There [A7]around the great white [D7]throne
 {end_of_verse}
+
+
+
+

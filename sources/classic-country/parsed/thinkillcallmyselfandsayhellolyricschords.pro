@@ -1,5 +1,8 @@
 {meta: title Think I'll Call Myself And Say Hello}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file thinkillcallmyselfandsayhellolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Think I'll call myself and say [F]hello
@@ -32,3 +35,7 @@ Think I'll [G7]call myself and say hello to [C]me
 {start_of_verse: Verse 5}
 I think I'll [G7]call myself and say hello to [C]me
 {end_of_verse}
+
+
+
+

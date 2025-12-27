@@ -1,6 +1,9 @@
 {meta: title You Better Keep It On Your Mind}
 {meta: artist Hank Williams}
 {meta: composer Vic Mcalpin and Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file youbetterkeepitonyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now if you go out and start a playing around 
@@ -73,3 +76,14 @@ You better keep it on your mind (all the [C]time)
 You better heed this warning [G7]Lord 
 You better keep it on your [C]mind
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

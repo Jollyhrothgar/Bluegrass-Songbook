@@ -1,6 +1,9 @@
 {meta: title Yesterday's Winner Is A Loser Today}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb, Jesse O. Rogers, Jimmie Skinner}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdayswinnerisalosertodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The world loves a winner [F]but someone must lose
@@ -29,3 +32,6 @@ It's [G7]easy to love but so hard to for[C]get
 Just remember my story [F]here's all I can say 
 [G7]Yesterday's winner is a loser [C]today
 {end_of_verse}
+
+
+

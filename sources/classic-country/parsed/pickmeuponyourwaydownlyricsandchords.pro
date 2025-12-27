@@ -1,6 +1,9 @@
 {meta: title Pick Me Up On Your Way Down}
 {meta: artist Patsy Cline}
 {meta: composer Burton Levy, Glenn Reeves, Mae Boren Axton}
+{meta: x_source classic-country}
+{meta: x_source_file pickmeuponyourwaydownlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Once my love was good enough
@@ -43,3 +46,8 @@ When [F]false friends cannot be [C]found
 For you [G7]know I'll still be waiting
 Pick me up on your way [C]down
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Too Deep For Tears}
 {meta: artist Crystal Gayle}
 {meta: composer Richard Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file toodeepfortearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Now ever [G]since you went away I've overheard some people say
@@ -33,3 +36,7 @@ And maybe [G]I will find a way and I get over you someday
 [Am]Some just goes too [D7]deep for [Em]tears
 [Am]Some just goes too [D7]deep for [G]tears
 {end_of_verse}
+
+
+
+

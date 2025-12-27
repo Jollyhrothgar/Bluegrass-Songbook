@@ -1,5 +1,8 @@
 {meta: title Love Sure Is Beautiful}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file lovesureisbeautifullyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love sure is [C]beautiful  where [D7]you're [G]concerned 
@@ -21,3 +24,5 @@ Nothing but [C]happiness  [A7]where ever I [D7]turn
 [G]Life sure is [C]wonderful  and [D7]this much I've [G]learned
 Love sure is [C]beautiful where [D7]you're [G]concerned
 {end_of_verse}
+
+

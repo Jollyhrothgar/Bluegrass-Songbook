@@ -1,5 +1,8 @@
 {meta: title Let Me Talk to You}
 {meta: artist Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file letmetalktoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just one more [D7]dance just one more chance
@@ -26,3 +29,5 @@ Give me your heart so [G]I can start               [D7]C    G   C G To build our
 I know you’ve [D7]paid so if you’re afraid
 Let me talk [G]to you
 {end_of_verse}
+
+

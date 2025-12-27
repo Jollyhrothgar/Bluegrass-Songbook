@@ -1,6 +1,9 @@
 {meta: title Take My Breath Away}
 {meta: artist Margo Smith}
 {meta: composer Norro Wilson and Margo Smith}
+{meta: x_source classic-country}
+{meta: x_source_file takemybreathawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been waitin' waitin' so [C7]long
@@ -47,3 +50,9 @@ Spoken:
 [F#m]That we knew the meaning of ecstasy
 [C]So go ahead and take [G7]the breath right out of [C][F]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title A Heart Don't Need Eyes}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file aheartdontneedeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well a heart don't need [C]eyes to [G]see
@@ -16,3 +19,4 @@ And [G]what else could you [D7]do when love is [G]dead
 1 x2
 Yes it just withers and [D7]dies from the [C]co-l[G]d
 {end_of_verse}
+

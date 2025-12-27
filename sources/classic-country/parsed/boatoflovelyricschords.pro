@@ -1,6 +1,9 @@
 {meta: title Boat Of Love}
 {meta: artist Bill Monroe}
 {meta: composer James B. Smith}
+{meta: x_source classic-country}
+{meta: x_source_file boatoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can hear the voice (I can hear the voice)
@@ -61,3 +64,8 @@ I have no [G]fear (I have no fear)
 Christ is the captain (Christ is the [C]captain)
 [G]He'll guide us o're (He'll guide us o're) [D7]life's rolling [G]sea
 {end_of_verse}
+
+
+
+
+

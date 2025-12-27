@@ -1,6 +1,9 @@
 {meta: title Everything She Touches Turns To Love}
 {meta: artist Charley Pride}
 {meta: composer Shirley Worth}
+{meta: x_source classic-country}
+{meta: x_source_file everythingshetouchesturnstolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She creates vibrations of [C]love I can't [G]explain
@@ -33,3 +36,7 @@ Because everything [C]she [G]touches [D7]turns to [G]love
 {start_of_verse: Verse 4}
 Because [C]everything she [G]touches [D7]turns to [G][C]l-ove
 {end_of_verse}
+
+
+
+

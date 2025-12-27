@@ -1,6 +1,9 @@
 {meta: title Last In Love}
 {meta: artist George Strait}
 {meta: composer John D. Souther and Glenn Frey}
+{meta: x_source classic-country}
+{meta: x_source_file lastinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blues out[D7]side my [Em]door [E7]
@@ -41,3 +44,8 @@ I may [G7]love you [C]always and [C7]always
 [Dm]Calling for the [G7]last in [C]love 
 Will we [Dm]always be the [G7]last in [F]love[C]
 {end_of_verse}
+
+
+
+
+

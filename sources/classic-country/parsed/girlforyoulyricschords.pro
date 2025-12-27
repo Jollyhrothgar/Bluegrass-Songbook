@@ -1,5 +1,8 @@
 {meta: title Girl For You}
 {meta: artist John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file girlforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the midnight special is long [C]overdue
@@ -28,3 +31,6 @@ Cause words won't [C]tell us how I feel about [D7]you
 And when my [G]shovel starts to giving me [C]trouble
 I'll still be [G]digging [D7]little girl for [G]you 
 {end_of_verse}
+
+
+

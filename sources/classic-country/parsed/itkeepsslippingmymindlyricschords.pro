@@ -1,6 +1,9 @@
 {meta: title It Keeps Slipping My Mind}
 {meta: artist Tammy Wynette}
 {meta: composer Hank Mills}
+{meta: x_source classic-country}
+{meta: x_source_file itkeepsslippingmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I keep intending to [Em]tell [G]you 
@@ -43,3 +46,8 @@ My lovin' is a waste of [C]time[Em]
 [Am]I keep intending to [G]tell [Em]you 
 [Am]But it [D7]keeps slipping my [G]mind
 {end_of_verse}
+
+
+
+
+

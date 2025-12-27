@@ -1,6 +1,9 @@
 {meta: title A Devil Like Me Needs An Angel Like You}
 {meta: artist Buck Owens}
 {meta: composer Red Simpson and Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file adevillikemeneedsanangellikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well a devil like me needs an angel like you 
@@ -57,3 +60,10 @@ And never ever make you [C]blue
 Cause a devil like me needs an [G]angel like you 
 You [D7]bet your little heart I [G]do
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Don't Need A Thing At All}
 {meta: artist Gene Watson}
 {meta: composer Joseph Allen}
+{meta: x_source classic-country}
+{meta: x_source_file idontneedathingatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some folks go out dancing  [F]it seems to be their thing
@@ -23,3 +26,5 @@ I guess everybody's got a thing  [F]but me I've got it all
 Cause I've [C]got you  [G7]so I don't need a thing at [F]all
 Oh I've got [C]you so I don't [G7]need a thing at [F]a-l[C]l
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title It's A Long Lonely Highway}
 {meta: artist Elvis Presley}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file itsalonglonelyhighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a long lonely highway when you're travelling all [C7]alone
@@ -35,3 +38,6 @@
 [C]Gotta keep on going [Am]though there's no one to [C]care
 [F]Just keep a moving down the [C]line
 {end_of_verse}
+
+
+

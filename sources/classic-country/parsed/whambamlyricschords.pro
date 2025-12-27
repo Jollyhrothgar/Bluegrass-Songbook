@@ -1,6 +1,9 @@
 {meta: title Wham Bam}
 {meta: artist Don Rich}
 {meta: composer Buck Owens, Don Rich, Bonnie Owens}
+{meta: x_source classic-country}
+{meta: x_source_file whambamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wham bam thank you ma'am [C]I'll be on my [G]way
@@ -36,3 +39,7 @@ Thank you but no thank you [A7]not to[D7]day
 [G]First thing is matrimony [C]next thing is [G]alimony
 Wham bam thank you ma'am I'll [D7]be on my [G]way
 {end_of_verse}
+
+
+
+

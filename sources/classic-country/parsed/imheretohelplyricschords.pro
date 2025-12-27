@@ -1,5 +1,8 @@
 {meta: title I'm Here To Help}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file imheretohelplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If it's all the same to you [C]I'd rather muddle [D]through
@@ -73,3 +76,13 @@ I've [D7]had all of your help that I can [G]stand[D7]
 This advise I wish you'd take you can [C]all go jump in the [A7]lake
 Cause we've [D7]had all of your help that we can [G]stand
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

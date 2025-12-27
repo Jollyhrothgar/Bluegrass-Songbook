@@ -1,6 +1,9 @@
 {meta: title Give Me More More More Of Your Kisses}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file givememoremoreofyourkisseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my gal and I go on a [G7]date
@@ -46,3 +49,8 @@
 [F]You can hear me beg for [Fm]more
 [G7]Oh please give me one more tender [C]kiss
 {end_of_verse}
+
+
+
+
+

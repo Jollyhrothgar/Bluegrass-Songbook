@@ -1,6 +1,9 @@
 {meta: title Sheltered in the Arms of God}
 {meta: artist Rhonda Vincent}
 {meta: composer Dottie Rambo and Jimmy Davis}
+{meta: x_source classic-country}
+{meta: x_source_file shelteredinthearmsofgodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I feel the touch of [C]hands so kind and [G]tender
@@ -33,3 +36,6 @@ For I'm [Em]sheltered safe [A7]in the arms of [Am]God
 And [C]naught of earth shall harm [G]me
 For I'm [Am]sheltered [D7]in the arms of [G]God
 {end_of_verse}
+
+
+

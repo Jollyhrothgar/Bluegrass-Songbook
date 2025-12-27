@@ -1,6 +1,9 @@
 {meta: title A Little Getting Used To}
 {meta: artist Mickey Gilley}
 {meta: composer Jerry Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file alittlegettingusedtolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Though it wasn't easy [C]
@@ -48,3 +51,9 @@ Is [D7]gonna take a little [Em]getting used to[C]
 Living with[G]out [C]you [G]
 Is gonna [D7]take a little getting [G]used to
 {end_of_verse}
+
+
+
+
+
+

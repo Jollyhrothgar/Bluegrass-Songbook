@@ -1,5 +1,8 @@
 {meta: title There Is No Easy Way}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file thereisnoeasywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now that we're back together 
@@ -31,3 +34,6 @@ There is no [C]easy way [G7]but there is a [C]way
 {start_of_verse: Verse 4}
 There is no easy way [G7]but there is a [F]way[C]
 {end_of_verse}
+
+
+

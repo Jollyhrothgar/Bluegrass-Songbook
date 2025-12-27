@@ -1,6 +1,9 @@
 {meta: title I Believe He's Coming Back}
 {meta: artist Goodman Family}
 {meta: composer Rusty Goodman}
+{meta: x_source classic-country}
+{meta: x_source_file ibelievehescomingbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]High upon a [F]moun[C]tain on transfiguration 
@@ -41,3 +44,7 @@ One day it’ll wake the [G7]dead
 In the [C]twinkling [F]of an [C]eye He’ll split [F]the eastern [C]sky
 [F]And I be[C]lieve He’s [F]coming [C]back [G7]like He [C]said
 {end_of_verse}
+
+
+
+

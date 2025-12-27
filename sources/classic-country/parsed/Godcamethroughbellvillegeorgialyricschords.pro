@@ -1,5 +1,8 @@
 {meta: title God Came Through Bellville Georgia}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file Godcamethroughbellvillegeorgialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll tell you all the [Em]story that I [F]think you'll under[C]stand
@@ -50,3 +53,9 @@ He never does
 He never got off of the [Am]train
 [C]He never got [G7]off of that [C]train
 {end_of_verse}
+
+
+
+
+
+

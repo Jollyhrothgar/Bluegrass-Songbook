@@ -1,6 +1,9 @@
 {meta: title Fourteen Minutes Old}
 {meta: artist Doug Stone}
 {meta: composer Dennis Knutson and A.L.(Doodle) Owens}
+{meta: x_source classic-country}
+{meta: x_source_file fourteenminutesoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I've had all the time I need to [G7]wonder
@@ -34,3 +37,7 @@ Her [G7]memory's only fifteen minutes o[C]ld
 [G7]Her memory's only sixteen minutes [C]old
 And the [G7]coffee in her cups not even [C]cold
 {end_of_verse}
+
+
+
+

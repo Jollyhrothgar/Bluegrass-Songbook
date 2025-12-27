@@ -1,6 +1,9 @@
 {meta: title Pride Goes Before A Fall}
 {meta: artist Jim Reeves}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file pridegoesbeforeafalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Might as well admit it you [D7]don't really love [G]me
@@ -41,3 +44,8 @@
 [C](What's the difference if you die in this [G]or that [A7]place)
 [G]Ain't it funny how [D7]pride goes before a [G]fall
 {end_of_verse}
+
+
+
+
+

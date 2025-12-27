@@ -1,6 +1,9 @@
 {meta: title Take Me Home}
 {meta: artist Crystal Gayle}
 {meta: composer Tom Waits}
+{meta: x_source classic-country}
+{meta: x_source_file takemehomelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take me home you [C]silly [G]boy
@@ -29,3 +32,6 @@ Darlin’ [Am]don't you dream [D7]about me
 And [G]take me home you [C]silly [Em]boy
 Cause I'm [Am]still in [D7]love with [G]you
 {end_of_verse}
+
+
+

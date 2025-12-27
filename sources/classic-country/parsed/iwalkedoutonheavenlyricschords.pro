@@ -1,6 +1,9 @@
 {meta: title I Walked Out On Heaven}
 {meta: artist Hank Williams Jr.}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file iwalkedoutonheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I walked out I said  [D7]it had to be this [G]way
@@ -26,3 +29,6 @@ Cause I walked out on [G]heaven  [C]when I walked out on [G]you
 {start_of_verse: Verse 4}
 [C]Cause I walked out on [G]heaven  [C]when I walked out on [G]you
 {end_of_verse}
+
+
+

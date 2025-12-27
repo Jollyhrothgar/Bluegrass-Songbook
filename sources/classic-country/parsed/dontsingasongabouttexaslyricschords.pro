@@ -1,6 +1,9 @@
 {meta: title Don't Sing A Song About Texas}
 {meta: artist Charlie Walker}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file dontsingasongabouttexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't sing about a Luckenbach Texas
@@ -47,3 +50,9 @@ Turn that music up and do it right
 {start_of_verse: Verse 5}
 Yeah that’s [A7]where my [D7]heart is [G]tonight
 {end_of_verse}
+
+
+
+
+
+

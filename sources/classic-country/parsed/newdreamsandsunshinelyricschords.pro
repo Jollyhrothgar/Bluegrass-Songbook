@@ -1,6 +1,9 @@
 {meta: title New Dreams And Sunshine}
 {meta: artist Rhonda Vincent}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file newdreamsandsunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't it seem to rain a lot in our [F]lives
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [G7]Lord don't it seem to rain a lot in our [C]lives
 {end_of_verse}
+
+
+
+
+

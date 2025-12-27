@@ -1,5 +1,8 @@
 {meta: title Jesus Is The Best Thing That Ever Happened To Me}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusisthebestthingthateverhappenedtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Live in a [G7]mansion a [C]city of [G]gold
@@ -33,3 +36,7 @@ Jesus is the best thing that ever [D7]happened to [G]me
 His will is [G7]my will and [C]now I am [G]free 
 Jesus is the best thing that ever [D7]happened to [C]me[G]
 {end_of_verse}
+
+
+
+

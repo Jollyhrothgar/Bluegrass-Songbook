@@ -1,5 +1,8 @@
 {meta: title There's Nothing More To Say}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file theresnothingmoretosaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At last you have made up your mind to [G7]leave me
@@ -35,3 +38,7 @@ May you never suffer as I have [C]today
 I think you know just what I mean my [G7]darling
 So really there is nothing more to [C]say
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When It's Night Time In Nevada}
 {meta: artist Sons of the Pioneers}
 {meta: composer Richard W. Pascoe, Will Dulmage, H. O. Reilly Clint}
+{meta: x_source classic-country}
+{meta: x_source_file whenitsnighttimeinnevadalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When it's nighttime in [F]Nevada I'm [C]dreaming
@@ -36,3 +39,7 @@ The [D7]only bit of heaven I [G7]knew
 [C]When it's nighttime in [F]Nevada I'm [C]dreaming
 Of the [G7]old days on the prairie and [C]you
 {end_of_verse}
+
+
+
+

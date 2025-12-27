@@ -1,5 +1,8 @@
 {meta: title These Two}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file thesetwolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll keep them here beside me I [C]won't let them follow [G]you
@@ -25,3 +28,6 @@ They [C]must forget you [G]these  two [D7]arms of [G]mine
 {start_of_verse: Verse 4}
 They [C]must forget you [G]these  two [D7]arms of [G]mine
 {end_of_verse}
+
+
+

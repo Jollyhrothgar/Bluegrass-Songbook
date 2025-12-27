@@ -1,6 +1,9 @@
 {meta: title Bright Lights Big City}
 {meta: artist Sonny James}
 {meta: composer Jimmy Reed}
+{meta: x_source classic-country}
+{meta: x_source_file brightlightsbigcitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bright lights big city gone to my baby's head
@@ -25,3 +28,6 @@ Bright lights big city went to my baby's head
 Bright [F]lights big city [C]went to my baby's head
 [G7]I hope that you remember [F]some of those things I [C]said
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title String Along}
 {meta: artist Ricky Nelson}
 {meta: composer Robert Glen Doyle and Jimmy Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file stringalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]String [Am]along  [F]that's all I am [G7]is just your [C]string [Am]along
@@ -37,3 +40,7 @@
 [G7]That's all I am is just [C]your string [Am]along
 [F]Someone that [G7]you just seem to [C]bring [Am]along
 {end_of_verse}
+
+
+
+

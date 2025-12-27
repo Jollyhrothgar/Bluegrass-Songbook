@@ -1,6 +1,9 @@
 {meta: title I'm Alone Because I Love You}
 {meta: artist Jim Reeves}
 {meta: composer Ira Schuster and Joe Young}
+{meta: x_source classic-country}
+{meta: x_source_file imalonebecauseiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm alone [F]because I love [D7]you
@@ -22,3 +25,5 @@
 [C]I'm alone [F]because I love [D7]you
 [G7]I Love you with all my [C]heart
 {end_of_verse}
+
+

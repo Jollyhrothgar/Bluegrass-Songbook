@@ -1,6 +1,9 @@
 {meta: title Before I Go To Bed}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file beforeigotobedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ll always dress [F]my very best [G7]before I go to [C]bed
@@ -25,3 +28,6 @@ So until I hold [F]you in my arms and [C]say what should be [G7]said
 [C]I’ll always dress [F]my very best [G7]before I go to [C]bed
 I’ll always dress [F]my very best [G7]before I go to [C]bed
 {end_of_verse}
+
+
+

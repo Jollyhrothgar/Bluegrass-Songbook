@@ -1,6 +1,9 @@
 {meta: title Jesus Took The Outlaw Out Of Me}
 {meta: artist Stonewall Jackson}
 {meta: composer Bill Sterling}
+{meta: x_source classic-country}
+{meta: x_source_file Jesustooktheoutlawoutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus took the outlaw out of me praise God
@@ -40,3 +43,10 @@ To a heart that had never really known a true friend
 {start_of_verse: Verse 7}
 [C]Jesus took the outlaw out of me oh Lord
 {end_of_verse}
+
+
+
+
+
+
+

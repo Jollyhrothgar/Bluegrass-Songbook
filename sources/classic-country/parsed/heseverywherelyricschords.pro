@@ -1,6 +1,9 @@
 {meta: title He's Everywhere}
 {meta: artist Sonny James}
 {meta: composer Arthur Smith}
+{meta: x_source classic-country}
+{meta: x_source_file heseverywherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see Him in a [F]baby's smile I hear Him in the [C]wind that sighs
@@ -26,3 +29,6 @@ He's in my heart I [G7]feel Him there He's every[C]where
 {start_of_verse: Verse 4}
 [F](Every[C]where He's [G7]every[C]where)
 {end_of_verse}
+
+
+

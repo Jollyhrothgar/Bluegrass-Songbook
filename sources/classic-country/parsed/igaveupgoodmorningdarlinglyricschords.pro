@@ -1,5 +1,8 @@
 {meta: title I Gave Up Good Morning Darling}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file igaveupgoodmorningdarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This flop house is lonely I'm [F]shaking and I need a [G7]drink
@@ -29,3 +32,6 @@ But [C]her pride is strong and I [F]know that she'll never [G7]give in
 I gave up good morning darlin' and [G7]we love you daddy for [C]this
 I gave up good morning darlin' and [G7]we love you daddy for [C]this
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When Love Was All We Had To Share}
 {meta: artist Vern Gosdin}
 {meta: composer Earl Montgomery and George Richey}
+{meta: x_source classic-country}
+{meta: x_source_file whenlovewasallwehadtosharelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart is [G7]so thankful for [C]your love I’m [F]grateful
@@ -33,3 +36,7 @@ Back [C]then when [F]love was all we [G7]had to [C]share
 {start_of_verse: Verse 4}
 Back then when [F]love was all we [G7]had to [C]share
 {end_of_verse}
+
+
+
+

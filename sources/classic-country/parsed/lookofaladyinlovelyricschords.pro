@@ -1,6 +1,9 @@
 {meta: title Look Of A Lady In Love}
 {meta: artist Johnny Duncan}
 {meta: composer Lewis Anderson and Brent Mason}
+{meta: x_source classic-country}
+{meta: x_source_file lookofaladyinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw her walkin' down the [F]street[G7]
@@ -50,3 +53,9 @@ She had the [C]look of a lady in [F]love [G7]
 The [C]gleam in her [Em]eye told me [F]more than [C]enough
 She had the [F]look of a [G7]lady in [C]love
 {end_of_verse}
+
+
+
+
+
+

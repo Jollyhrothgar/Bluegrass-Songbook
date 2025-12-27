@@ -1,5 +1,8 @@
 {meta: title I Don't Hear You}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file idonthearyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear the bluebirds [C]singing
@@ -32,3 +35,7 @@ I [G]hear the rain on my [C]window
 {start_of_verse: Verse 4}
 [C]O--h [G]but I [D7]don't hear [C]y--o[G]u 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Gospel Ship}
 {meta: artist The Carter Family}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file gospelshiplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm going to take a trip in that good old gospel ship       
@@ -50,3 +53,9 @@ I'm going far beyond the [G7]sky
 [C]I'm gonna shout and sing till heaven rings              
 When I bid this [G7]world good[C]bye
 {end_of_verse}
+
+
+
+
+
+

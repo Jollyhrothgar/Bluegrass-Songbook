@@ -1,6 +1,9 @@
 {meta: title If She Just Helps Me Get Over You}
 {meta: artist Charley Pride}
 {meta: composer Don Williams and Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file ifshejusthelpsmegetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It may not make me [F]tremble the [G7]soft touch of her [C]hand
@@ -29,3 +32,6 @@ If she's there when the memories walk [G7]around
 Maybe [C]some day I'll love her as [F]much as I love [C]you
 [F]If she [C]just [G7]helps [F]me get [G7]over [C]you
 {end_of_verse}
+
+
+

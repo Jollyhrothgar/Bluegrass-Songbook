@@ -1,6 +1,9 @@
 {meta: title I'm Getting Out While I'm Still Country}
 {meta: artist Boxcar Willie}
 {meta: composer Travis Martin}
+{meta: x_source classic-country}
+{meta: x_source_file imgettingoutwhileimstillcountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here’s your diamond ring and the fancy cloths 
@@ -46,3 +49,8 @@ And [G7]I’m gettin’ out while I’m still [C]country
 Yeah [G7]I’m gettin’ out while I’m still [C]country
 Yeah [G7]I’m gettin’ out while I’m still [C]country
 {end_of_verse}
+
+
+
+
+

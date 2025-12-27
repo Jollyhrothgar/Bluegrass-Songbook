@@ -1,5 +1,8 @@
 {meta: title Big Busy World}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file bigbusyworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Reminiscing for a sweet love you can lose all track of [G7]time
@@ -22,3 +25,5 @@
 [C]Without love we're [G7]all alone in this big busy [C]world
 [F]Without love we're all [C]alone in this [G7]big busy [C]world
 {end_of_verse}
+
+

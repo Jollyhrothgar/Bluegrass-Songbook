@@ -1,6 +1,9 @@
 {meta: title How Important Can It Be}
 {meta: artist Wanda Jackson}
 {meta: composer Bennie Benjamin and George Weiss}
+{meta: x_source classic-country}
+{meta: x_source_file howimportantcanitbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How important can it [G7]be
@@ -43,3 +46,8 @@
 [F]The important thing is here [G7]and now
 [C]And our love is here to stay
 {end_of_verse}
+
+
+
+
+

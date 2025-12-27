@@ -1,6 +1,9 @@
 {meta: title I'm A Lonesome Fugitive}
 {meta: artist Merle Haggard}
 {meta: composer Liz and Casey Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file imalonesomefugitivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down every road there's [F]always one more [G7]city
@@ -26,3 +29,5 @@ For [F]he who travels [G7]fastest goes [C]alone
 tag:
 I'm [F]on the run the [G7]highway is my [C]home
 {end_of_verse}
+
+

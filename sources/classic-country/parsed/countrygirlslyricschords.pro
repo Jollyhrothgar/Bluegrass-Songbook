@@ -1,6 +1,9 @@
 {meta: title Country Girls}
 {meta: artist John Schneider}
 {meta: composer Troy Seals and Eddie Setser}
+{meta: x_source classic-country}
+{meta: x_source_file countrygirlslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been to [Am]California
@@ -49,3 +52,9 @@
 {start_of_verse: Verse 6}
 [Am]Yeah I'm [G7]so glad that [F]God made [G7]country [C]girls
 {end_of_verse}
+
+
+
+
+
+

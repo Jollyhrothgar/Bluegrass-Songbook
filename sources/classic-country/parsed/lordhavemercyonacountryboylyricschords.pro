@@ -1,5 +1,8 @@
 {meta: title Lord Have Mercy on a Country Boy}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file lordhavemercyonacountryboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I grew up [G7]wild and [C]free 
@@ -42,3 +45,8 @@ You [Am]know it's a pity the [G7]shape I'm [C]in
 But I [F]got no [C]home and [G7]I got [C]no choice 
 Oh [Am]Lord have mercy on [G7]a country [C]boy 
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lost His Love On Our Last Date}
 {meta: artist Emmylou Harris}
 {meta: composer Conway Twitty and Floyd Cramer}
+{meta: x_source classic-country}
+{meta: x_source_file losthisloveonourlastdatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's over [C]our love affair [G]too late now [C]I find I care
@@ -29,3 +32,6 @@ Walked [C]away didn't [D7]know that I'd [G]soon miss him [Em]so
 On my [G]mind in my [D7]heart I was [G]blind right from the [C]start
 Lost his [G]love on [D7]our last [G]date
 {end_of_verse}
+
+
+

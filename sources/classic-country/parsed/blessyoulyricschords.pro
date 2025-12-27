@@ -1,6 +1,9 @@
 {meta: title Bless You}
 {meta: artist Billy Walker}
 {meta: composer Bob Tubert}
+{meta: x_source classic-country}
+{meta: x_source_file blessyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bless [Am]you [C]bless you [G7]my [C]love
@@ -40,3 +43,8 @@ For letting me know you're [C]happy to be
 [Am]Bless you [C]bless you my love 
 [Am]Bless you [C]bless you [G7]my [C]love[F]  [C]
 {end_of_verse}
+
+
+
+
+

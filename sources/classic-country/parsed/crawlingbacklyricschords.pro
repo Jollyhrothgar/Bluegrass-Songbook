@@ -1,5 +1,8 @@
 {meta: title Crawling Back}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file crawlingbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Only you [F]and no one [G7]else
@@ -37,3 +40,7 @@ I will come [F]crawl-ing [C][G7]back
 Wherever you [F]will lead [G7]me
 I will come [F]crawl-ing [C][G7]back
 {end_of_verse}
+
+
+
+

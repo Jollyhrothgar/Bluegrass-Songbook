@@ -1,6 +1,9 @@
 {meta: title You're The One}
 {meta: artist Buddy Holly}
 {meta: composer Slim Corbin, Buddy Holly, Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file youretheonelyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You're the [G]one that's a-[C]causing my [G]blues
@@ -30,3 +33,6 @@ You're the [D7]one I can't let you go
 You're the [G]one that's a-[C]meant for [G]me
 Repeat 
 {end_of_verse}
+
+
+

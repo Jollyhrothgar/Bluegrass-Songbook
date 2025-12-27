@@ -1,6 +1,9 @@
 {meta: title Love You Ain't Seen The Last Of Me}
 {meta: artist Tracy Byrd}
 {meta: composer Kendal Franceschi}
+{meta: x_source classic-country}
+{meta: x_source_file loveyouaintseenthelastofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Love You Ain't Seen The Last Of Me
@@ -59,3 +62,10 @@ And I [C]always go one more [G]round
 Yeah [G]love you done all you can [F]do to me
 I don't give up so [C]easily no you ain't seen the [G]last of me [F]   [C]   [G]
 {end_of_verse}
+
+
+
+
+
+
+

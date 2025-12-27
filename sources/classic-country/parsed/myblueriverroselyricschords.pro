@@ -1,5 +1,8 @@
 {meta: title My Blue River Rose}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file myblueriverroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are flowers that are rich there are flowers that are rare
@@ -49,3 +52,9 @@ How I'll [F]face every care heaven [C]knows
 But each night by light stream I'll still meet her in [F]dreams
 My [C]darling my [G7]Blue River [C]Rose
 {end_of_verse}
+
+
+
+
+
+

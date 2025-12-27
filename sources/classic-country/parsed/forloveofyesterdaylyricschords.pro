@@ -1,6 +1,9 @@
 {meta: title For Love Of Yesterday}
 {meta: artist Billy Crash Craddock}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file forloveofyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wake up every [Dm]morning [G7]  I miss you by my [C]side[E7]   [Am]
@@ -25,3 +28,5 @@ For my [G7]love of yester[C]day)
 [G7]I'd give my [F]tomorrow[C]   [Dm]  for [G7]love of yes[C]terday
 (Yesterday [Dm]yesterday)  [G7]love of yester[C]day
 {end_of_verse}
+
+

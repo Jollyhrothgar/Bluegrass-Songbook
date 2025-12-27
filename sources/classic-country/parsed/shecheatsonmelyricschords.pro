@@ -1,6 +1,9 @@
 {meta: title She Cheats On Me}
 {meta: artist Ferlin Husky}
 {meta: composer Glenn Barber}
+{meta: x_source classic-country}
+{meta: x_source_file shecheatsonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She wakes me every [Em]morning with a touch of her hand
@@ -26,3 +29,5 @@ It's the end of another long [G]day
 I can't fight the [Em]feeling that I have for her such [G]beauty to lie and [C]deceive
 I [D7]can't let her go so she must never know that I know she cheats on [G]me
 {end_of_verse}
+
+

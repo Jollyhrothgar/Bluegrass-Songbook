@@ -1,6 +1,9 @@
 {meta: title Sailor (Your Home Is The Sea)}
 {meta: artist Bobby Helms}
 {meta: composer David Kapp and Toni Martl}
+{meta: x_source classic-country}
+{meta: x_source_file sailorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sailor stop your [F]wandering 
@@ -36,3 +39,7 @@ In the seven seas you [C]sail on
 Just remember that she's [G7]lonesome 
 And waits for your re[C]turn
 {end_of_verse}
+
+
+
+

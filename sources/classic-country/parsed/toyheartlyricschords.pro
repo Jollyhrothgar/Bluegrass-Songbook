@@ -1,6 +1,9 @@
 {meta: title Toy Heart}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file toyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling you toyed with toy heart
@@ -50,3 +53,9 @@ I [F]think you played the game right from the [C]start
 This [F]toy heart was broken when [C]parting words were spoken
 Darling you [G7]toyed with a toy [C]heart
 {end_of_verse}
+
+
+
+
+
+

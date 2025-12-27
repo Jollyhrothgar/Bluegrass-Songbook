@@ -1,6 +1,9 @@
 {meta: title Appalachian Blue}
 {meta: artist John Anderson}
 {meta: composer Donna Anderson and Michael Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file appalachianbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No matter [F]where I [C]go or [F]what I [C]do 
@@ -49,3 +52,9 @@ Here’s to you my [F]Kentucky [C]granddad that I [Dm]never knew
 [F]Appa[G7]lachian [C]Blue
 [Dm]Here’s to you [F]Appa[G7]lachian [C]Blue 
 {end_of_verse}
+
+
+
+
+
+

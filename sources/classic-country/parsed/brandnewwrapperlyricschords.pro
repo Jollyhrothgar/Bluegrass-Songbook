@@ -1,5 +1,8 @@
 {meta: title Brand New Wrapper}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file brandnewwrapperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Same girl  [G7]brand new [C]wrapper
@@ -26,3 +29,5 @@
 [D7]Heaven help me here I go [G]again
 [C]Heaven help me [D7]here I go [G]again
 {end_of_verse}
+
+

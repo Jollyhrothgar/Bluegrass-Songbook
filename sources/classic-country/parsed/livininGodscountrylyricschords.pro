@@ -1,6 +1,9 @@
 {meta: title Livin' In God's Country}
 {meta: artist Loretta Lynn}
 {meta: composer Teddy Wilburn, Doyle Wilburn, Don Helms}
+{meta: x_source classic-country}
+{meta: x_source_file livininGodscountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -49,3 +52,9 @@ Come next Sunday mornin' if you [G7]want the day to be right
 [C]Take the entire family it'll [F]be a brighter day
 We're livin' in [C]God's country [G7]let's keep it that [C]way
 {end_of_verse}
+
+
+
+
+
+

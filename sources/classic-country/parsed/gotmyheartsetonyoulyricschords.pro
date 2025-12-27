@@ -1,6 +1,9 @@
 {meta: title Got My Heart Set On You}
 {meta: artist John Conlee}
 {meta: composer Bud Reneau and Dobie Gray}
+{meta: x_source classic-country}
+{meta: x_source_file gotmyheartsetonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ever since the day I met you 
@@ -51,3 +54,9 @@ You're [F]everything I ever [C]wanted
 Got my [Am]heart set on [E7]you it can't [F]be anything 
 But love baby [G7]I'm bettin' on it
 {end_of_verse}
+
+
+
+
+
+

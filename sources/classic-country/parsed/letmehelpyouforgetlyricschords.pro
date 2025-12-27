@@ -1,6 +1,9 @@
 {meta: title Let Me Help You Forget}
 {meta: artist Kitty Wells}
 {meta: composer Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file letmehelpyouforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me help you forget one who forgot [F]you
@@ -29,3 +32,6 @@ Let me make you [G7]realize your dreams can't come [C]true
 Don't cry over her she left you with the [F]blues
 Let me help you [G7]forget with the love that is [C]true
 {end_of_verse}
+
+
+

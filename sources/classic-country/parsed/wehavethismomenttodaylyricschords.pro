@@ -1,5 +1,8 @@
 {meta: title We Have This Moment Today}
 {meta: artist Patti and Richard Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file wehavethismomenttodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Hold [C]tight to the sound of the music of living
@@ -40,3 +43,8 @@ And [D7]we have this [G7]moment to[C]day
 [D7]We hold this [G7]moment to[C]day
 Oh [D7]we have this [G7]moment to[C]day
 {end_of_verse}
+
+
+
+
+

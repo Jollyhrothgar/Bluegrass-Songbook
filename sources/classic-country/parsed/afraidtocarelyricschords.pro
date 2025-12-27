@@ -1,6 +1,9 @@
 {meta: title Afraid To Care}
 {meta: artist Jack Greene}
 {meta: composer Kenneth Campbell and Jack Greene}
+{meta: x_source classic-country}
+{meta: x_source_file afraidtocarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I go again love's standing at my door
@@ -20,3 +23,5 @@ It's loved and lost so [C]many times it's [G7]just afraid to [C]care
 [C]My heart can't [C7]stand a new [F]affair
 It's loved and lost so [C]many times it's [G7]just afraid to [C]care
 {end_of_verse}
+
+

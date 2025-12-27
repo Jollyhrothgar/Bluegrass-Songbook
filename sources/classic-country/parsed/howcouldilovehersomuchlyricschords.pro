@@ -1,6 +1,9 @@
 {meta: title How Could I Love Her So Much}
 {meta: artist Johnny Rodriguez}
 {meta: composer Hugh Moffatt}
+{meta: x_source classic-country}
+{meta: x_source_file howcouldilovehersomuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I walked through the door and my eyes fit the darkness
@@ -51,3 +54,10 @@ And asking this question of [C]him
 Tell me how could I love her so much
 And then lose her so quickly to someone like [G7]you
 {end_of_verse}
+
+
+
+
+
+
+

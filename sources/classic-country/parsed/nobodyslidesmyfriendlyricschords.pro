@@ -1,5 +1,8 @@
 {meta: title Nobody Slides My Friend}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file nobodyslidesmyfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Nobody slides my [D7]friend
@@ -33,3 +36,8 @@ You can run you can hide
 [C]But it's still waiting inside
 [D7]And nobody slides my [G]friend
 {end_of_verse}
+
+
+
+
+

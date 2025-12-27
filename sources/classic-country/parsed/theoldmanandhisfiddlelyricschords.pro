@@ -1,6 +1,9 @@
 {meta: title The Old Man And His Fiddle}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Richard O'Brien}
+{meta: x_source classic-country}
+{meta: x_source_file theoldmanandhisfiddlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a trunk in the [G7]attic in [F]Grandmother’s [C]house
@@ -83,3 +86,14 @@ And [F]take ’em back [G7]home for a [C]time [G7]
 Did a [C]waltz across the [E7]sea from the [F]green Ireland [Dm]shores
 And [F]take ’em back [G7]home for a [C]time
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

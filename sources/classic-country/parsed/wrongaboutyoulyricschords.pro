@@ -1,6 +1,9 @@
 {meta: title Wrong About You}
 {meta: artist Garth Brooks}
 {meta: composer Bill Shore and Bud Lee}
+{meta: x_source classic-country}
+{meta: x_source_file wrongaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You were [G7]right about me being [Am]lonely without you
@@ -48,3 +51,9 @@ That it makes me [F]think that I was [G7]wrong about [C]you [G7]
 You were [C]right about [G7]so many [C]things
 I'm starting to [F]think I was [G7]wrong about [C]you
 {end_of_verse}
+
+
+
+
+
+

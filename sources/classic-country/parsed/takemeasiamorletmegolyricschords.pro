@@ -1,5 +1,8 @@
 {meta: title Take Me As I Am Or Let Me Go}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file takemeasiamorletmegolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why must you always try to make me [F]over 
@@ -28,3 +31,6 @@ In the [D7]image of the one you used to [G7]know
 But [C]I won't be a stand in for an old [F]love 
 [G7]Take me as I am or let me [C]go
 {end_of_verse}
+
+
+

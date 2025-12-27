@@ -1,6 +1,9 @@
 {meta: title She Makes My Roses Grow}
 {meta: artist Eddy Arnold}
 {meta: composer Wayne Carson}
+{meta: x_source classic-country}
+{meta: x_source_file shemakesmyrosesgrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My life's been like a [C]leaf in the wind
@@ -57,3 +60,10 @@ A patch of blue on a cloudy [G]day
 I only know she means the [C]world to me
 [D7]And she makes my roses [G]grow
 {end_of_verse}
+
+
+
+
+
+
+

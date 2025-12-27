@@ -1,6 +1,9 @@
 {meta: title How You Drink The Wine}
 {meta: artist Mel Tillis}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file howyoudrinkthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I sat down at a table [G7]next to a [C]party
@@ -33,3 +36,7 @@ Yes it [D7]all depends on how you drink the [G]wine
 {start_of_verse: Verse 4}
 Yes it [D7]all depends on how you drink the [G]wine
 {end_of_verse}
+
+
+
+

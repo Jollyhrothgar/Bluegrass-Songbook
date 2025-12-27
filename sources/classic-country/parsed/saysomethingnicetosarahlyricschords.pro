@@ -1,6 +1,9 @@
 {meta: title Say Something Nice To Sarah}
 {meta: artist Ernest Tubb}
 {meta: composer Johnny Cash and Winafred Kelley}
+{meta: x_source classic-country}
+{meta: x_source_file saysomethingnicetosarahlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I really do love Sarah and she [F]really does love me
@@ -39,3 +42,7 @@ Say [G7]something nice to Sarah every [C]day
 {start_of_verse: Verse 4}
 And say [G7]something nice to Sarah every [C]day
 {end_of_verse}
+
+
+
+

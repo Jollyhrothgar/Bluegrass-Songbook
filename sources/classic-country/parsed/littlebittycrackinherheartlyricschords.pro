@@ -1,6 +1,9 @@
 {meta: title Little Bitty Crack In Her Heart}
 {meta: artist Randy Travis}
 {meta: composer Jim Rushing and Shawn Camp}
+{meta: x_source classic-country}
+{meta: x_source_file littlebittycrackinherheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Shattered inside and scattered around
@@ -47,3 +50,8 @@ As low as he was I couldn't see him slitherin' around in the [F]dark
 He [C]must of crawled through a [G7]little bitty crack in her [C]heart
 Lord he must of crawled through a [G7]little bitty crack in her [C]heart
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Chains Of Love}
 {meta: artist Mickey Gilley}
 {meta: composer Nugetre and Harry Van Walls}
+{meta: x_source classic-country}
+{meta: x_source_file chainsoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Chains of love [F]have tied my heart to [C]you
@@ -24,3 +27,5 @@ That ol’ moon is shining [C]bright
 Well [G7]I’m wondering where you are
 [F]Wondering where you are [C]tonight
 {end_of_verse}
+
+

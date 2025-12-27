@@ -1,5 +1,8 @@
 {meta: title Cry Cry Cry}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file crycrycrylyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Afraid to walk [Am]down the street 
@@ -43,3 +46,6 @@ That I [C]cried over you [Am]cried over you
 Oh I [C]cried over you [Am]cried over you  
 [F]Cry cry cry [G7]cry cry cry over [C]you
 {end_of_verse}
+
+
+

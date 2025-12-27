@@ -1,6 +1,9 @@
 {meta: title You Don't Love Me But I'll Always Care}
 {meta: artist Ray Price}
 {meta: composer Lou Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file youdontlovemebutillalwayscarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday brought love as sweet as [D7]clover
@@ -29,3 +32,6 @@ And [D7]you know our love's beyond [G7]repair
 [C]Our love cheapen what was pure as gold [D7]dear
 [G7]You don't love me but I'll always [C]care
 {end_of_verse}
+
+
+

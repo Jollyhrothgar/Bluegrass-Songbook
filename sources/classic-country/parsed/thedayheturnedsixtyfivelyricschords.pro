@@ -1,6 +1,9 @@
 {meta: title The Day He Turned Sixty-Five}
 {meta: artist John Conlee}
 {meta: composer Don Henry}
+{meta: x_source classic-country}
+{meta: x_source_file thedayheturnedsixtyfivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The day he turned sixty-[F]five
@@ -55,3 +58,10 @@ The [G7]day he turned sixty-[C]five
 And [F]she could have kissed the [C]tear from his eye
 The [G7]day he turned sixty-[C]five
 {end_of_verse}
+
+
+
+
+
+
+

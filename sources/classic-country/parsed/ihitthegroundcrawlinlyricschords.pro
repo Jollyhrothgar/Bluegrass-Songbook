@@ -1,6 +1,9 @@
 {meta: title I Hit The Ground Crawlin'}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file ihitthegroundcrawlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's true I lied I cheated and [Am]the truth is that ain't all
@@ -33,3 +36,7 @@ But I hit the ground [C]crawlin' [D7]right back to [G]you
 {start_of_verse: Verse 5}
 Yeah I hit the ground [Am]crawl[G]in'[C]  right [D7]back to [G]you
 {end_of_verse}
+
+
+
+

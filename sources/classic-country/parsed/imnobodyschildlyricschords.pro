@@ -1,6 +1,9 @@
 {meta: title I’m Nobody’s Child}
 {meta: artist Hank Snow}
 {meta: composer Mel Foree and Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file imnobodyschildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was slowly passing an orphan's home one [F]day
@@ -54,3 +57,10 @@ I'm nobody's child I’m [C7]nobody's [F]child
 No mommy’s kisses no [C7]daddy's [F]smile
 [G7]Nobody wants me I'm nobody's [C]child
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Second Hand Rose}
 {meta: artist Roy Drusky}
 {meta: composer Grant Clarke, James Hanley & Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file secondhandroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Second hand shoes Second hand clothes
@@ -36,3 +39,7 @@ I'll [G7]take Rose you can have all the [C]rest
 [G7]They all think they're pretty smart
 But Rose don't have a Second Hand [C]heart
 {end_of_verse}
+
+
+
+

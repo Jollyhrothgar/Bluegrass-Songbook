@@ -1,5 +1,8 @@
 {meta: title The Best I Have}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file thebestihavelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I tried to give you all the [C]love there is in [G]me
@@ -28,3 +31,6 @@ And there's something in your heart that I can't seem to [D7]melt
 Oh you [C]show me love but then you try to keep me [G]blue
 And the best I have is [D7]not enough for [G]you
 {end_of_verse}
+
+
+

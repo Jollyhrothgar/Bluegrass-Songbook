@@ -1,6 +1,9 @@
 {meta: title Too Many Secrets}
 {meta: artist Patsy Cline}
 {meta: composer Bobbie Lyle}
+{meta: x_source classic-country}
+{meta: x_source_file toomanysecretslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I met a woman you'll recognize her name
@@ -38,3 +41,7 @@ Then [C]keep me a [D7]secret [G]too
 You'll [C]find yourself a new [G]love 
 Then [C]keep me a [D7]secret [G]too
 {end_of_verse}
+
+
+
+

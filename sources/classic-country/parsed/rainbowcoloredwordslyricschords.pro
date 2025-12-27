@@ -1,6 +1,9 @@
 {meta: title Rainbow Colored Words}
 {meta: artist Johnny Bush}
 {meta: composer Johnny Bush and David Green}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowcoloredwordslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I fall in love I'll love forever [G7]
@@ -29,3 +32,6 @@ But it's [Dm]not found in the [G7]story books
 [Dm]Or pretty paper hearts and [G7]flowers [Dm]
 Or [G7]rainbow colored [C]words
 {end_of_verse}
+
+
+

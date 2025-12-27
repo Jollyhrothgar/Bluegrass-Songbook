@@ -1,6 +1,9 @@
 {meta: title If You Were Mine To Lose}
 {meta: artist Connie Smith}
 {meta: composer Mickey Jaco}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwereminetoloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just to know [G]that you [D7]were mine to [G]lose
@@ -33,3 +36,7 @@
 [G]I'd gladly let you break my heart for [C]just one [G]memory
 [C]Just to know [G]that you [D7]were mine to [G]lose
 {end_of_verse}
+
+
+
+

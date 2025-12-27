@@ -1,6 +1,9 @@
 {meta: title Christmas Cookies}
 {meta: artist George Strait}
 {meta: composer Aaron Barker}
+{meta: x_source classic-country}
+{meta: x_source_file Christmascookieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sure do like those Christmas cookies sugar
@@ -69,3 +72,12 @@ I sure do like those Christmas cookies [G7]babe
 [F]Christmas trees and bells and [D7]stars
 I [C]sure do like those [G7]Christmas cookies [C]babe
 {end_of_verse}
+
+
+
+
+
+
+
+
+

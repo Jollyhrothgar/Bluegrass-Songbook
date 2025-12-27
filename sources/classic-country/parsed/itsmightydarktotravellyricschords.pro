@@ -1,6 +1,9 @@
 {meta: title It's Mighty Dark To Travel}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file itsmightydarktotravellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's mighty dark for me to travel
@@ -57,3 +60,10 @@ For my [C]sweetheart she has [G]gone
 The road is rough and filled with gravel
 But I must jour[D7]ney on a[G]lone
 {end_of_verse}
+
+
+
+
+
+
+

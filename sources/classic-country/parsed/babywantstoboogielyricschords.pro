@@ -1,6 +1,9 @@
 {meta: title Baby Wants To Boogie}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file babywantstoboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come home [D7]late [G]tired and [D7]beat
@@ -57,3 +60,10 @@ But [C]baby wants to boogie
 [D7]Baby wants to boogie
 [C]Boogie boogie all night [G]long
 {end_of_verse}
+
+
+
+
+
+
+

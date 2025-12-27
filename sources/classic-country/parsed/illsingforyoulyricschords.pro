@@ -1,6 +1,9 @@
 {meta: title I'll Sing For You}
 {meta: artist Don Gibson}
 {meta: composer Bobby Bond}
+{meta: x_source classic-country}
+{meta: x_source_file illsingforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the night is cold and stormy and you're sittin' all [F]alone
@@ -29,3 +32,6 @@ I'll [G7]try my best to somehow make you [C]smile
 Yes I'll [F]sing for you anything you [C]want me to
 Then I know you'll be [G7]happy for [C]awhile
 {end_of_verse}
+
+
+

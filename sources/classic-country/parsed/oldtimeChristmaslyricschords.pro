@@ -1,6 +1,9 @@
 {meta: title Old Time Christmas}
 {meta: artist Randy Travis}
 {meta: composer Steve Harris}
+{meta: x_source classic-country}
+{meta: x_source_file oldtimeChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The old log is burnin' [F]yellow and [Fm]red
@@ -46,3 +49,9 @@ It's an [F]old [G7]time [Am]Christmas
 It's an [F]old [G7]time [Am]Christmas
 [F]Like the [Dm]ones in my [G7]memo[C]ry
 {end_of_verse}
+
+
+
+
+
+

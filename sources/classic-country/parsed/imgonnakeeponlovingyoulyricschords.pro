@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Keep On Loving You}
 {meta: artist Billy Walker}
 {meta: composer Gene Dobbins, Rayburn Anthony, Benny Whitehead}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnakeeponlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Na na na na na na na [F]na na na na na na na na na [G7]na 
@@ -29,3 +32,6 @@ Every day my whole life [F]through  [G7]I'm gonna keep on loving [C]you
 Na na na na na na na [F]na na na na na na na na na [G7]na 
 I'm [Gm]gonna keep on keep on loving [C]you
 {end_of_verse}
+
+
+

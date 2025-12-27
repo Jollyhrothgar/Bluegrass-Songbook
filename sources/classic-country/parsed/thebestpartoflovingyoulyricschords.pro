@@ -1,6 +1,9 @@
 {meta: title The Best Part Of Loving You}
 {meta: artist Hank Locklin}
 {meta: composer Ann Price}
+{meta: x_source classic-country}
+{meta: x_source_file thebestpartoflovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The [C]best part of loving you is [G]over and done
@@ -30,3 +33,7 @@ I watched you walk into the [D7]arms of your new love [G]today
 The [C]best part of loving you is [G]over and done
 And the worst part of loving [D7]you has only [G]begun
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sweet Jennie Lee}
 {meta: artist Bob Wills}
 {meta: composer Walter Donaldson}
+{meta: x_source classic-country}
+{meta: x_source_file sweetjennieleelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweet Jennie Lee from sunny [D7]Tennessee
@@ -29,3 +32,6 @@ She's [A7]got a bit of heaven in her [D7]smile
 She promised [G]me that she'd say [D7]yesiree
 And that's good enough for me sweet Jennie [G]Lee
 {end_of_verse}
+
+
+

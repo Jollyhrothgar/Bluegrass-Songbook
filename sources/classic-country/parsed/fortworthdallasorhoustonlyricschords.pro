@@ -1,6 +1,9 @@
 {meta: title Fort Worth Dallas or Houston}
 {meta: artist George Hamilton IV}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file fortworthdallasorhoustonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]In Fort [C]Worth Dallas or [A7]Houston [D7]or in San Antone
@@ -30,3 +33,6 @@ Somewhere round about [C]Fort Worth Dallas or [A7]Houston [D7]or ol' El Paso
 [F]She waits for [G7]me I [C]know 
 [F]She waits for [G7]me I [C]know
 {end_of_verse}
+
+
+

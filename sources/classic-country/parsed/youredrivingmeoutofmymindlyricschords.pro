@@ -1,6 +1,9 @@
 {meta: title You're Driving Me Out Of My Mind}
 {meta: artist Kitty Wells}
 {meta: composer Gayle Smith}
+{meta: x_source classic-country}
+{meta: x_source_file youredrivingmeoutofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You drove me to the church on Sunday [F]to our home on Monday
@@ -39,3 +42,7 @@ I know she's [C]somewhere out there by your side
 [F]While I'm taken for a ride
 You're [C]driving me [G7]out of my [C]mind
 {end_of_verse}
+
+
+
+

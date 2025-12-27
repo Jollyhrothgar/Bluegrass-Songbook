@@ -1,6 +1,9 @@
 {meta: title Soulful Woman}
 {meta: artist Johnny Duncan}
 {meta: composer Kenny O'Dell}
+{meta: x_source classic-country}
+{meta: x_source_file soulfulwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You lay out [D7]you fool around [C]finally you [G]lose her
@@ -48,3 +51,9 @@ And she's [D7]gonna be [G]mine
 [C]Or you're gonna [G]lose that [B7]soulful [C]woman 
 And she's [D7]gonna be [G]mine
 {end_of_verse}
+
+
+
+
+
+

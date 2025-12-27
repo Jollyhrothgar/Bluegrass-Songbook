@@ -1,5 +1,8 @@
 {meta: title Daddy's Hands}
 {meta: artist Holly Dunn}
+{meta: x_source classic-country}
+{meta: x_source_file daddyshandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember daddy's hands folded silently in [G7]prayer
@@ -28,3 +31,6 @@
 [C]If I could do things over I'd live my life [G7]again
 [F]And never take for [C]granted the [G7]love in daddy's [C]hands
 {end_of_verse}
+
+
+

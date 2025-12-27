@@ -1,6 +1,9 @@
 {meta: title I Chased You Till You Caught Me}
 {meta: artist Ernest Tubb and Loretta Lynn}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file ichasedyoutillyoucaughtmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I chased you till you caught me you had plans of your own 
@@ -40,3 +43,8 @@ It didn't come as no surprise and you knew it all [G7]along
 {start_of_verse: Verse 4}
 It don't really [F]matter to [G7]me just who caught [C]who
 {end_of_verse}
+
+
+
+
+

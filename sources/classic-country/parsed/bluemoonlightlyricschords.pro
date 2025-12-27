@@ -1,6 +1,9 @@
 {meta: title Blue Moonlight}
 {meta: artist Billy Walker}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file bluemoonlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I fell in love on a moonlit night
@@ -29,3 +32,6 @@ And [D7]I made promises I couldn't [G7]keep
 Now [C]I'm alone in the silent night
 And as blue moon light touches my [G7]pillow   I [C]weep
 {end_of_verse}
+
+
+

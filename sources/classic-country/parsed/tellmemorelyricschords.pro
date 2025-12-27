@@ -1,6 +1,9 @@
 {meta: title Tell Me More}
 {meta: artist Cowboy Copas}
 {meta: composer Adrian McDowell and Walter Remseur}
+{meta: x_source classic-country}
+{meta: x_source_file tellmemorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](Tell me more tell me more tell me [C]more)
@@ -57,3 +60,10 @@ At the [D7]magic words I [G7]hear
 {start_of_verse: Verse 8}
 [G7](Tell me more tell me more tell me [C]more)
 {end_of_verse}
+
+
+
+
+
+
+

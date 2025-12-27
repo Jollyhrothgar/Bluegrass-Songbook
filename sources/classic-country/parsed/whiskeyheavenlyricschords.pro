@@ -1,6 +1,9 @@
 {meta: title Whiskey Heaven}
 {meta: artist Fats Domino}
 {meta: composer C. Cofford, J. Durrill, S. Garrett}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeyheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every afternoon when I wake [C7]up
@@ -43,3 +46,8 @@ It [G7]rains Jack Daniels all the [C7][C]time
 There's a [F]price you have to pay [C]hangovers every [A7]day
 Flying [D7]high with honkey tonk [G7]Angels in Whiskey [C]Heaven
 {end_of_verse}
+
+
+
+
+

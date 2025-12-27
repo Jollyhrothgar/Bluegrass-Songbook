@@ -1,6 +1,9 @@
 {meta: title There's Room At The Cross For You}
 {meta: artist David Mcllwain}
 {meta: composer Ira Stanphill}
+{meta: x_source classic-country}
+{meta: x_source_file theresroomatthecrossforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The cross upon which Jesus [C]die[E7]d
@@ -43,3 +46,8 @@ There's [Am]room at the [D7]cross for [G]you
 Though millions have [G7]come there's [C]still room for [Am]one
 Yes there's [G]room at the [D7]cross for [G]you
 {end_of_verse}
+
+
+
+
+

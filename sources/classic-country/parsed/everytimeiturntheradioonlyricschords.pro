@@ -1,5 +1,8 @@
 {meta: title Every Time I Turn The Radio On}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeiturntheradioonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time I turn the radio on some [F]cat's singing a happy song
@@ -40,3 +43,7 @@ No one to love and make me happy [F]call me baby or call me pappy
 [G7]Am I the only low-and-lonely woman-needing jukebox-feeding
 Suffering son of a gun left in the [C]world
 {end_of_verse}
+
+
+
+

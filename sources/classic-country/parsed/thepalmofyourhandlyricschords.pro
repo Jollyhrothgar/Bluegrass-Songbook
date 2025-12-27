@@ -1,6 +1,9 @@
 {meta: title The Palm Of Your Hand}
 {meta: artist Jean Shepard}
 {meta: composer Pete Drake}
+{meta: x_source classic-country}
+{meta: x_source_file thepalmofyourhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I swore I'd never [G7]let another man get [C]inside my [G]mind
@@ -27,3 +30,6 @@
 {start_of_verse: Verse 4}
 [C]Oh I thank God I fit [G]so [Em]perfectly  in [D7]the palm of your [G][C]h-and
 {end_of_verse}
+
+
+

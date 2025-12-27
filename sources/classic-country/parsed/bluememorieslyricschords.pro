@@ -1,6 +1,9 @@
 {meta: title Blue Memories}
 {meta: artist Patty Loveless}
 {meta: composer Paul Kennerley and Karen Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file bluememorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I close my eyes I almost see
@@ -45,3 +48,8 @@ And [F]when I look all I see are [G7]blue memo[C]ries
 {start_of_verse: Verse 4}
 [G7]Blue memo[C]ries  [G7]blue memo[C]ries
 {end_of_verse}
+
+
+
+
+

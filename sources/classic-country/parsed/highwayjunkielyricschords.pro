@@ -1,6 +1,9 @@
 {meta: title Highway Junkie}
 {meta: artist Randy Travis}
 {meta: composer Chris Knight, Annie Tate, Sam Tate}
+{meta: x_source classic-country}
+{meta: x_source_file highwayjunkielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A hundred cups of coffee five hundred cigarettes
@@ -67,3 +70,15 @@ A thousand miles of highway and I ain't forgot her yet
 {start_of_verse: Verse 11}
 [G7]I'm a highway junkie I [F]need that old [G7]white [C]line
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Where Are All The Girls I Used To Cheat With}
 {meta: artist Keith Whitley}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file whereareallthegirlsiusedtocheatwithlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Shirley’s [D7]changed her [G]number [G7]at least I [C]know she’s [G]moved
@@ -34,3 +37,7 @@ My [G]ex is [D7]out to[G]night [G7]while my walls are [C]closing [G]in
 {start_of_verse: Verse 4}
 [C]Where are all the [G]girls [D7]I used to [G]cheat with
 {end_of_verse}
+
+
+
+

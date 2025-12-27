@@ -1,6 +1,9 @@
 {meta: title The Grandest Lady Of Them All}
 {meta: artist Conway Twitty}
 {meta: composer Bob Morrison and Mel McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file thegrandestladyofthemalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's never in the spotlight but [F]everybody knows that she's the [C]star
@@ -31,3 +34,6 @@ Where the legends come to [G7]call
 She's the [F]queen of country [C]music 
 She's the grandest [G7]lady of them [C]all
 {end_of_verse}
+
+
+

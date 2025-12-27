@@ -1,6 +1,9 @@
 {meta: title Bad Luck And Trouble}
 {meta: artist Fats Domino}
 {meta: composer Antoine Domino, J Donley, Pee Wee Maddux}
+{meta: x_source classic-country}
+{meta: x_source_file badluckandtroublelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have you ever been in trouble
@@ -27,3 +30,5 @@ Please somebody [C]help me
 [G7]Don't let me down [F]trouble is all I found
 Poor [C]me
 {end_of_verse}
+
+

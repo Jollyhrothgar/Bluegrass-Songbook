@@ -1,6 +1,9 @@
 {meta: title A Little Boy Called Joe}
 {meta: artist Ralph Stanley}
 {meta: composer Leamon Allen and Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file alittleboycalledjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a war torn land of poverty some[C]where across the [G]sea
@@ -29,3 +32,6 @@ Left all alone somewhere across the [D7]sea
 I want [G]him to have my name little [C]Joe is mine to [G]claim
 A little boy called [D7]Joe belongs to [G]me
 {end_of_verse}
+
+
+

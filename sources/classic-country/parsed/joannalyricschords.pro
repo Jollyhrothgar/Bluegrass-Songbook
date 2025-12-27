@@ -1,5 +1,8 @@
 {meta: title Joanna}
 {meta: artist Vernon Oxford}
+{meta: x_source classic-country}
+{meta: x_source_file joannalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The clock on the night stand said [G7]quarter past two
@@ -32,3 +35,7 @@ It’s [G7]been over two years now that [F]she passed [C]away
 {start_of_verse: Verse 5}
 And I’m [G7]still here in prison [F]with life and a [C]day
 {end_of_verse}
+
+
+
+

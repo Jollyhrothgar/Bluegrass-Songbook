@@ -1,6 +1,9 @@
 {meta: title I'm A Believer}
 {meta: artist Tommy Overstreet}
 {meta: composer Ricci Mareno and Tommy Rocco}
+{meta: x_source classic-country}
+{meta: x_source_file imabelieverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a believer I'm a believer [F]I'm a believer
@@ -47,3 +50,9 @@ I'm a be[G]liever I'm a be[A7]liever
 [D7]I'm a believer I'm a believer I'm a [G]believer
 If it keeps you close to [C]me 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Wouldn't Change A Thing About You}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldntchangeathingaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've always loved you [C]because you've been so [G]true
@@ -27,3 +30,5 @@ No I [D7]can't live without you[C]  [D7]
 I wouldn't change a thing about you[C]  [D7]
 But your [G]name
 {end_of_verse}
+
+

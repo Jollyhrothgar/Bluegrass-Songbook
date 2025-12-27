@@ -1,6 +1,9 @@
 {meta: title Camptown Races}
 {meta: artist Don Gibson}
 {meta: composer Stephen Foster}
+{meta: x_source classic-country}
+{meta: x_source_file camptownraceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The camptown ladies sing this song [G7]doo-dah
@@ -27,3 +30,6 @@ Goin' to run all night [F]goin' to run all [C]day
 I'll bet my money on the bobtail nag 
 [G7]Somebody bet on the [C]bay
 {end_of_verse}
+
+
+

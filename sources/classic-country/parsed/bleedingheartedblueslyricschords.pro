@@ -1,6 +1,9 @@
 {meta: title Bleeding Hearted Blues}
 {meta: artist Bob Wills}
 {meta: composer Lovie Austin}
+{meta: x_source classic-country}
+{meta: x_source_file bleedingheartedblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I’m sad and lonely thinking about you only
@@ -23,3 +26,5 @@
 [G7]You keep my poor heart achin'
 [C]I'm worried all the time
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Walking In The Spirit}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file walkinginthespiritlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to walk with the wicked talk with the foolish
@@ -56,3 +59,10 @@ Doing what comes natura[C]lly
 Yes I'm [G7]praying in the spirit walking in the spirit 
 [D7]Praise His [G7]holy [C]name
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Broken Wings}
 {meta: artist Sonny James}
 {meta: composer Bernard Crum and John Jerome}
+{meta: x_source classic-country}
+{meta: x_source_file brokenwingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](With broken wings) with broken wings
@@ -28,3 +31,6 @@ I trusted you (I trusted you)
 [F](No bird can fly) no bird can fly
 [C]And broken promises mean [G7]love must fade and die (fade and [C]die)
 {end_of_verse}
+
+
+

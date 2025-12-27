@@ -1,5 +1,8 @@
 {meta: title Swinging Doors}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file swingingdoorslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This old smoke filled bar is something I'm not used [C]to
@@ -28,3 +31,6 @@ And my new [G]home has a flashing neon [D7]sign
 [G]Stop by and see me any time you want [C]to
 Cause I'm [G]always here at [D7]home till closing [G]time
 {end_of_verse}
+
+
+

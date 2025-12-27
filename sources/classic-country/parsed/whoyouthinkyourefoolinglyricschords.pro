@@ -1,6 +1,9 @@
 {meta: title Who You Think You're Fooling}
 {meta: artist Hank Locklin}
 {meta: composer Polly White and Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file whoyouthinkyourefoolinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who you think you’re fooling with your dog[G7]gone lies
@@ -29,3 +32,6 @@ You [D7]really played it smart but you [G7]didn’t hook me in
 [C]Your shoes needs replacing and [G7]I know your size
 Who you think you’re fooling with your doggone [C]lies
 {end_of_verse}
+
+
+

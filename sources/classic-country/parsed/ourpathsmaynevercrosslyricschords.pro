@@ -1,5 +1,8 @@
 {meta: title Our Paths May Never Cross}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ourpathsmaynevercrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lady I know your out there somewhere
@@ -33,3 +36,7 @@ But our [D7]paths may [G7]never [C]cross
 [F]I wish you could learn it [C]and come sing it with [Am]me
 But our [D7]paths may [G7]never [C]cross
 {end_of_verse}
+
+
+
+

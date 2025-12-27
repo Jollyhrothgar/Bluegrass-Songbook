@@ -1,5 +1,8 @@
 {meta: title Will There Be Any Stars In My Crown}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file willtherebeanystarsinmycrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am thinking today of that beautiful [C]land 
@@ -42,3 +45,8 @@ When at evening the sun goeth [D7]down
 When I wake [G]with the blest in those mansions of [C]rest 
 Will there [G]be any [D7]stars in my [G]crown
 {end_of_verse}
+
+
+
+
+

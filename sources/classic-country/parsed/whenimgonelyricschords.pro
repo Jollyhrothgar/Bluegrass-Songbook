@@ -1,5 +1,8 @@
 {meta: title When I'm Gone}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file whenimgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]W-hen I'm gone [F]will you forget [C]me
@@ -21,3 +24,5 @@ Will some other [F]arms enfold [C]you
 [C]W-hen I'm [F]gone will you [C]remember
 Or [G7]when I'm gone will you [C]forget
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Fallin' In Love With You}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file imfallininlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just as long as there's a moon up [C]above
@@ -39,3 +42,8 @@
 [G]I'll never be the kind to let you [C]down
 [D7]Cause I'm fallin’ fallin’ in love with [G]you
 {end_of_verse}
+
+
+
+
+

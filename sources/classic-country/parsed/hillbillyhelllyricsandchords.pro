@@ -1,6 +1,9 @@
 {meta: title Hillbilly Hell}
 {meta: artist The Bellamy Brothers}
 {meta: composer Bobby Braddock and David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file hillbillyhelllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I dreamed I went to [G7]hillbilly [C]hell
@@ -53,3 +56,10 @@ And the [C]parkin' lot was [G7]full of foreign [C]cars
 {start_of_verse: Verse 7}
 I [G7]dreamed I was [F]there in hillbilly [C]hell
 {end_of_verse}
+
+
+
+
+
+
+

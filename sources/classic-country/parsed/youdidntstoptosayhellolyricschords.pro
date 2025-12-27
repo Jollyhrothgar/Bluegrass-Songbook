@@ -1,6 +1,9 @@
 {meta: title You Didn't Stop To Say Hello}
 {meta: artist Dottie West}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file youdidntstoptosayhellolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a middle of the night what's on your mind I'd like to [D7]know
@@ -22,3 +25,5 @@
 [G7]Well I guess it's useless to pretend because you know I love you [C]so
 [G]You know you're [D7]welcome back again  I'm glad you stopped to say [G]hello
 {end_of_verse}
+
+

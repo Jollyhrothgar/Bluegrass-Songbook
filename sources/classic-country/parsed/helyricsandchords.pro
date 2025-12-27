@@ -1,5 +1,8 @@
 {meta: title He}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file helyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He can turn the [Em]tides and calm the [F]ang-ry [C]sea
@@ -28,3 +31,6 @@
 [Ab7]Though it makes him sad to see the [C]way we [Am]live
 [Dm]He'll always [G7]say  I [C]for-give
 {end_of_verse}
+
+
+

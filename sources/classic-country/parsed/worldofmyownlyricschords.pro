@@ -1,5 +1,8 @@
 {meta: title World Of My Own}
 {meta: artist Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file worldofmyownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm living in a [F]world of my [C]own
@@ -34,3 +37,8 @@ They [F]don't know the [G7]tears I've [F]cried all [Fm]alone
 {start_of_verse: Verse 6}
 Yes I'm living in a [F]world of my [C]own
 {end_of_verse}
+
+
+
+
+

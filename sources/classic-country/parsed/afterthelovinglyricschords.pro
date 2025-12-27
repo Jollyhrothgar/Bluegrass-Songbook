@@ -1,6 +1,9 @@
 {meta: title After The Loving}
 {meta: artist Faron Young}
 {meta: composer Richie Adams and Alan Bernstein}
+{meta: x_source classic-country}
+{meta: x_source_file afterthelovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So I will sing to sleep after the loving
@@ -28,3 +31,6 @@ It's so hard to explain everything that I'm feeling
 [F]And I know that my song is not [E7]saying anything [Am]new
 [Dm]Oh but after the loving [G7]I will still be loving [C]you
 {end_of_verse}
+
+
+

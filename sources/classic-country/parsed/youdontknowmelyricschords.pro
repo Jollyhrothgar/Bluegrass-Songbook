@@ -1,6 +1,9 @@
 {meta: title You Don't Know Me}
 {meta: artist Eddy Arnold}
 {meta: composer Cindy Walker and Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file youdontknowmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You give your hand to me and then you say [C]hello
@@ -36,3 +39,7 @@ Though my [Dm]heart aches with the [G7]love for [C]you
 [Am]Afraid and shy I let my chance [Em]go by
 The [D7]chance you might have loved me [G7]too
 {end_of_verse}
+
+
+
+

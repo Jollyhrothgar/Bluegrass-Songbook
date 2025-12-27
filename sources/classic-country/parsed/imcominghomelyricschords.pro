@@ -1,6 +1,9 @@
 {meta: title I'm Coming Home}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Horton and Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file imcominghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Get your face all pretty and your hair done right
@@ -57,3 +60,15 @@ I'm coming home baby I'm [G7]dogging it [C]in
 {start_of_verse: Verse 1}
 [C]Get your face all pretty and your hair done right
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

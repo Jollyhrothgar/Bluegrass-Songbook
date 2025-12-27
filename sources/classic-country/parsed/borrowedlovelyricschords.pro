@@ -1,6 +1,9 @@
 {meta: title Borrowed Love}
 {meta: artist Dwight Yoakam}
 {meta: composer Earl Scruggs and Randy Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file borrowedlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At every glance you steal from [C]me
@@ -43,3 +46,8 @@ I catch your [D7]eyes still offer[G]ing
 You've got desire bought with de[C]ceit
 Cause borrowed [D7]love ain't never [G]free
 {end_of_verse}
+
+
+
+
+

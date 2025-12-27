@@ -1,6 +1,9 @@
 {meta: title Spanish Fandango}
 {meta: artist Bob Wills}
 {meta: composer Smokey Rodgers and Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file spanishfandangolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]My Sweet senorita my own sweet [C]Chiquita 
@@ -34,3 +37,7 @@ Don't end [G7]it too soon the Spanish [C]Fandango
 (nc) spoken:
 My Senorita you are the one
 {end_of_verse}
+
+
+
+

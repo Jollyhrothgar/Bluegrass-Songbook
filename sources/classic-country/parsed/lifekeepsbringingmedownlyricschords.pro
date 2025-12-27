@@ -1,6 +1,9 @@
 {meta: title Life Keeps Bringing Me Down}
 {meta: artist Alan Jackson}
 {meta: composer Al Anderson and Shawn Camp}
+{meta: x_source classic-country}
+{meta: x_source_file lifekeepsbringingmedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm the poorest old boy that [F]you've ever [C]seen
@@ -58,3 +61,10 @@ Yeah it's been a bummer the [F]whole dang [C]summer
 Life keeps [G7]bringin' me [C]down
 Yeah life keeps [G7]bringing me [C]down
 {end_of_verse}
+
+
+
+
+
+
+

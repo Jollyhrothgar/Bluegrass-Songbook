@@ -1,6 +1,9 @@
 {meta: title Put On Your Old Grey Bonnet}
 {meta: artist Jimmy Dean}
 {meta: composer Percy Wenrich and Stanley Murphy}
+{meta: x_source classic-country}
+{meta: x_source_file putonyouroldgreybonnetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]On an [C]old farm house veranda 
@@ -33,3 +36,6 @@ Repeat last verse
 {start_of_verse: Verse 4}
 [F]On our [C]gol[D7]den [G7]wedding [C]day
 {end_of_verse}
+
+
+

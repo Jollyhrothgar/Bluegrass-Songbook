@@ -1,6 +1,9 @@
 {meta: title Down Home}
 {meta: artist Alabama}
 {meta: composer Rick Bowles and Josh Leo}
+{meta: x_source classic-country}
+{meta: x_source_file downhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just off of the beaten [D7]path
@@ -46,3 +49,8 @@ But [D7]now I wanna [C]see my children [D7]raised
 Tag:
 Way [D7]Down [G]Home
 {end_of_verse}
+
+
+
+
+

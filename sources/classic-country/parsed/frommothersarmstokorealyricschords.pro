@@ -1,5 +1,8 @@
 {meta: title From Mother's Arms To Korea}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file frommothersarmstokorealyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From mother's arms to Korea
@@ -49,3 +52,9 @@ And tomorrow I'll face the front [D7]lines
 Well the [G]next line was wrote by his buddy
 From a foxhole to a [D7]mansion on [G]high
 {end_of_verse}
+
+
+
+
+
+

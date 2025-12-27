@@ -1,6 +1,9 @@
 {meta: title We Crossed Our Hearts}
 {meta: artist Ray Price}
 {meta: composer Helen Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file wecrossedourheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought that a love that was [F]true would never [C]die
@@ -29,3 +32,6 @@ And [G7]I guess you thought you were [C]smart
 For then you deceived me for [F]somebody [C]else
 So [G7]you must have uncrossed your [C]heart
 {end_of_verse}
+
+
+

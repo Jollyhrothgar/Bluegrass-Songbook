@@ -1,5 +1,8 @@
 {meta: title Man In The Moon}
 {meta: artist Prairie Oyster}
+{meta: x_source classic-country}
+{meta: x_source_file maninthemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I was the [G7]man in the [C]moon 
@@ -65,3 +68,11 @@ But [F]always on [G7]time
 My [Am]love light would shine
 [F]If I was the [G7]man in the [C]moon
 {end_of_verse}
+
+
+
+
+
+
+
+

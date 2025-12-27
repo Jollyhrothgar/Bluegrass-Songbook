@@ -1,6 +1,9 @@
 {meta: title Baby My Heart}
 {meta: artist Faron Young}
 {meta: composer Eddie Hill}
+{meta: x_source classic-country}
+{meta: x_source_file babymyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You have to baby a heart [F]that is [C]lonesome
@@ -22,3 +25,5 @@ But [G7]you'll have to baby my [C]heart
 [C]You can treat me anyway [F]that you care [C]to
 But [G7]please try to baby my [C]heart
 {end_of_verse}
+
+

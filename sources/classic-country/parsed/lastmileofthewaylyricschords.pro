@@ -1,6 +1,9 @@
 {meta: title Last Mile Of The Way}
 {meta: artist Red Sovine}
 {meta: composer Red Sovine and Kenneth Bonham}
+{meta: x_source classic-country}
+{meta: x_source_file lastmileofthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When I've done [C]everything that you asked me to [G7]do
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [F]Yes I've [C]gone the last [G7]mile of the [C]way
 {end_of_verse}
+
+
+
+

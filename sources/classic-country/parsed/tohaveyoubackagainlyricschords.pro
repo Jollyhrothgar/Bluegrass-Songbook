@@ -1,6 +1,9 @@
 {meta: title To Have You Back Again}
 {meta: artist Patty Loveless}
 {meta: composer Annie Roboff and Arnie Roman}
+{meta: x_source classic-country}
+{meta: x_source_file tohaveyoubackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love [G7]  love's a cha[Am]meleon [C]makes one in a [F]million[Dm] 
@@ -51,3 +54,9 @@ I'd [C]stand in the [G7]rain no place to [Am]hide
 Drown in my [F]shame swallow my [C]pride
 To have you [G7]back again [C]  to have you [F]back agai[C]n
 {end_of_verse}
+
+
+
+
+
+

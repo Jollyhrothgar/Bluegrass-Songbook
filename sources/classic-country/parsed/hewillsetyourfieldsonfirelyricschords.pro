@@ -1,6 +1,9 @@
 {meta: title He Will Set Your Fields On Fire}
 {meta: artist Kitty Wells}
 {meta: composer Veona Braskett and C.M. Ballew}
+{meta: x_source classic-country}
+{meta: x_source_file hewillsetyourfieldsonfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a call that rings for the one who sings
@@ -50,3 +53,10 @@ Your [F]conscience never [C]tires
 Be [F]assured my friend if you still [C]offend
 He [F]will set your [G7]fields on [C]fire
 {end_of_verse}
+
+
+
+
+
+
+

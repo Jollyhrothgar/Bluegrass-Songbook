@@ -1,5 +1,8 @@
 {meta: title There's Still Someone I Can't Forget}
 {meta: artist Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file theresstillsomeoneicantforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I hurt [D7]long [Am]enough [D7]then I won' [G]hurt you more[D7]
@@ -25,3 +28,6 @@ I [D7]say there's [G]still some[D7]one I can't for[G]get
 {start_of_verse: Verse 4}
 [D7]Yes there's [G]still some[D7]one I can't for[G]get
 {end_of_verse}
+
+
+

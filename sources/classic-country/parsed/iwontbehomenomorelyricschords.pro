@@ -1,5 +1,8 @@
 {meta: title I Won't Be Home No More}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file iwontbehomenomorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you're just in time to be too late
@@ -80,3 +83,18 @@ The things you didn't calculate
 You're just in time to be [G7]too late
 And I won't be home no [C]more
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

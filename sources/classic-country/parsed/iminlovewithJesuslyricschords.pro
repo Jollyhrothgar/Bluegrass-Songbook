@@ -1,6 +1,9 @@
 {meta: title I'm In Love With Jesus}
 {meta: artist Hank Snow}
 {meta: composer John Benson and Elizabeth Paite}
+{meta: x_source classic-country}
+{meta: x_source_file iminlovewithJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]One [C]day the blessed [G7]Savior brought sweet [C]romance to [G7]my [C]heart
@@ -22,3 +25,5 @@
 [C]Sweetest [Am]love from [C]heaven up [Em]above my [Am]life my [A7]joy my [Dm]all
 [F]Oh this love divine [C]fills this [A7]heart of mine [D7]I'm in love with [C][G7]Jesus
 {end_of_verse}
+
+

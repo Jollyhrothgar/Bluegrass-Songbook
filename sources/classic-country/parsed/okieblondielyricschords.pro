@@ -1,6 +1,9 @@
 {meta: title Okie Blondie}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray, Dick Reynolds, Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file okieblondielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the dance hall out in the [D7]country
@@ -43,3 +46,8 @@ Each day you live with [G7]the wind and [C]sun
 But when the [D7]night falls back to the dance halls
 The steel guitar calls you Okie [G]Blonde
 {end_of_verse}
+
+
+
+
+

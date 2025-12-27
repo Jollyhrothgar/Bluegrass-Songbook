@@ -1,6 +1,9 @@
 {meta: title Mama Liked The Roses}
 {meta: artist Elvis Presley}
 {meta: composer Johnny Christopher}
+{meta: x_source classic-country}
+{meta: x_source_file mamalikedtheroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh mama liked the [Dm]roses  [G7]she grew them in the [C]yard  [A7]
@@ -28,3 +31,5 @@ Oh mama liked the [Dm]roses  [G7]mm-mm-[C]mm  [A7]
 Mama liked the [Dm]roses  [G7]mm-mm-[C]mm  [A7]
 Oh mama liked the [Dm]roses  [G7]mm-mm-[C]mm
 {end_of_verse}
+
+

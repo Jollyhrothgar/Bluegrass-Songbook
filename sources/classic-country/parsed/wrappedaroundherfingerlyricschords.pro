@@ -1,6 +1,9 @@
 {meta: title Wrapped Around Her Finger}
 {meta: artist George Jones}
 {meta: composer George Jones and Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file wrappedaroundherfingerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like a string she’s got me [C]wrapped around her [G]finger
@@ -30,3 +33,6 @@
 [C]And it gets [D7]a little tighter [G]everyday
 [C]She pulls the [D7]string a little tighter [G]everyday
 {end_of_verse}
+
+
+

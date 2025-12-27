@@ -1,6 +1,9 @@
 {meta: title Try To Take It Like A Man}
 {meta: artist Carl Smith}
 {meta: composer Wayne P. Walker and George Sherry}
+{meta: x_source classic-country}
+{meta: x_source_file trytotakeitlikeamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She’s gone she’s [G7]gone she [C]loves someone [G]else
@@ -40,3 +43,8 @@ To recall the times you cheated and lied
 {start_of_verse: Verse 4}
 [D7]And try to take it like a [G]man
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Wandering Boy}
 {meta: artist Ralph Stanley}
 {meta: composer Lester Flatt and Earl Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file mywanderingboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Out in the cold world and [C]far away [G]home
@@ -43,3 +46,8 @@ For there is no other who's so apt give me [D7]joy
 [G]Tell him that his mother with [C]faded cheeks and [G]hair
 Is at the old home place [D7]awaiting him [G]there
 {end_of_verse}
+
+
+
+
+

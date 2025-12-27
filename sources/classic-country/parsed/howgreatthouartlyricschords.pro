@@ -1,6 +1,9 @@
 {meta: title How Great Thou Art}
 {meta: artist Tammy Wynette}
 {meta: composer Stuart K. Hine}
+{meta: x_source classic-country}
+{meta: x_source_file howgreatthouartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh [G7]Lord my God [C]when I in awesome [F]wonder
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [Dm]How [G7]great Thou art how great [G]Thou [C]art
 {end_of_verse}
+
+
+
+

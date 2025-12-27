@@ -1,6 +1,9 @@
 {meta: title Smooth Talking Baby}
 {meta: artist Don Williams}
 {meta: composer Red Lane and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file smoothtalkingbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Smooth talking baby 
@@ -36,3 +39,7 @@ I’ve been looking for you [G7]all my life it [C]seems
 Smooth talking baby
 Maybe you’re the [G7]meaning of my [C]dreams
 {end_of_verse}
+
+
+
+

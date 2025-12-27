@@ -1,5 +1,8 @@
 {meta: title I Don't Feel Like Singing Tonight}
 {meta: artist Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file idontfeellikesingingtonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don’t feel like [G7]singing [C]tonight
@@ -29,3 +32,6 @@
 [G7]And now I don’t feel like singing
 [C]I don’t feel like [C7]singing I [F]don’t feel like [G7]singing [C][F]tonight
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Watching The Fire Go Down}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file watchingthefiregodownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our love didn't [G7]end in a [C]hurry
@@ -33,3 +36,7 @@ I'm [C]watching the [G7]fire go [C]down
 {start_of_verse: Verse 5}
 Yes I'm watching the [G7]fire go [C]down
 {end_of_verse}
+
+
+
+

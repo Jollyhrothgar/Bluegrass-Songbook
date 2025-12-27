@@ -1,5 +1,8 @@
 {meta: title If I Had You Back Again}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadyoubackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I had you [F]back again [G7]I'll tell you what I'd [C]do
@@ -25,3 +28,6 @@ I'd change my ways [F]tomorrow if I had [G7]you back [C]again
 {start_of_verse: Verse 4}
 I'd walk the straight and [F]narrow if I had [G7]you back [C]again
 {end_of_verse}
+
+
+

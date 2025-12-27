@@ -1,6 +1,9 @@
 {meta: title Fooled Around And Fell In Love}
 {meta: artist Mel Tillis}
 {meta: composer Elvin Bishop}
+{meta: x_source classic-country}
+{meta: x_source_file fooledaroundandfellinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought I could touch you just [F]for a [C]moment
@@ -48,3 +51,9 @@ Would you believe it [G7]I've done it [C][F]again
 Well I fooled [G7]around and [F]fell in [C]love
 Would you believe it [G7]I've done it [C][F]again
 {end_of_verse}
+
+
+
+
+
+

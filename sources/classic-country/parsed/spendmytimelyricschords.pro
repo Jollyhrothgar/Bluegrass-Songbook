@@ -1,6 +1,9 @@
 {meta: title Spend My Time}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file spendmytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How can we know how [G7]far [C]the long way can [G7]be
@@ -42,3 +45,8 @@ No matter [Dm]how much time I buy I could [F]never spend it [C]all
 {start_of_verse: Verse 6}
 No matter [Dm]how much time we buy we could [F]never spend it [C]all
 {end_of_verse}
+
+
+
+
+

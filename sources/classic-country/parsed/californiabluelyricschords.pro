@@ -1,6 +1,9 @@
 {meta: title California Blue}
 {meta: artist Roy Orbison}
 {meta: composer Tom Petty, Roy Orbison and Jeff Lynne}
+{meta: x_source classic-country}
+{meta: x_source_file californiabluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Working all day and the sun don't [F]shine
@@ -36,3 +39,7 @@
 [F]Everyday I pray I'll be on my [C]way
 [G7]Saving love for you California [C]Blue
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Raining In My Heart}
 {meta: artist Wanda Jackson}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file raininginmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun is out the sky is blue 
@@ -19,3 +22,4 @@ Cause it’s [F]raining  [G7]raining in my [C]heart
 But it’s [F]raining  [G7]raining in my [C]heart 
 And it’s [F]raining  [G7]raining in my [C]heart
 {end_of_verse}
+

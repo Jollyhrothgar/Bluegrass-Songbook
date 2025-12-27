@@ -1,6 +1,9 @@
 {meta: title If You Don't Know Your Roses}
 {meta: artist Darrell McCall}
 {meta: composer Royce Glenn Sutton and A.L. Owens}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudontknowyourroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see the pretty [G7]roses that he sent [C]you
@@ -29,3 +32,6 @@ They don’t always make a dream come [G7]true
 Some[C]times they just [F]pretend to say [C]I love you
 If [F]you don’t know your [C]roses they can [G7]make a fool of [C]you
 {end_of_verse}
+
+
+

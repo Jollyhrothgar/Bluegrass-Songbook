@@ -1,6 +1,9 @@
 {meta: title Man That You Once Knew}
 {meta: artist Moe Bandy}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file manthatyouonceknewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you see a man in [C7]clothes that's old and [F]ragged
@@ -29,3 +32,6 @@
 [C]If tomorrow on the [C7]street I die a [F]beggar
 [C]Would you deny [G7]the man that you once [C]knew
 {end_of_verse}
+
+
+

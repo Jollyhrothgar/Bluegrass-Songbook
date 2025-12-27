@@ -1,6 +1,9 @@
 {meta: title Icy Blue Heart}
 {meta: artist Emmylou Harris}
 {meta: composer John Hiatt}
+{meta: x_source classic-country}
+{meta: x_source_file icyblueheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She came on to him like a [C]slow moving [G]cold front
@@ -45,3 +48,9 @@ Into a river of [G]tears
 {start_of_verse: Verse 6}
 [C]To melt your icy blue he[D7]art ah [G]heart
 {end_of_verse}
+
+
+
+
+
+

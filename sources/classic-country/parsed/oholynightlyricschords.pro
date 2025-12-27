@@ -1,5 +1,8 @@
 {meta: artist John Denver}
 {meta: composer Adolphe Adam}
+{meta: x_source classic-country}
+{meta: x_source_file oholynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]O holy night the [F]stars are brightly [C]shining
@@ -20,3 +23,5 @@ O [G7]night [C]div[F]ine o [C]night [G7]o holy [C]night[Am]
 O [C]nig[G7]ht [C]div[F]ine o [C]nig[G7]ht when Christ was [C]born
 O [G7]night o [C]hol[F]y [G7]night o night di[C]vine
 {end_of_verse}
+
+

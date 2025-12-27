@@ -1,6 +1,9 @@
 {meta: title Leaning To Lean}
 {meta: artist Wanda Jackson}
 {meta: composer John Stallings}
+{meta: x_source classic-country}
+{meta: x_source_file leaningtoleanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm learning to lean learning to [F]lean
@@ -36,3 +39,7 @@ I'm learning to lean learning to [F]lean
 [C]Finding more power than I'd ever [F]dreamed
 I'm [C]learning to lean on [C][G7]Je-sus
 {end_of_verse}
+
+
+
+

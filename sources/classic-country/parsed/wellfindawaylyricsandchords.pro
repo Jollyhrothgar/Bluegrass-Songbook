@@ -1,5 +1,8 @@
 {meta: title We'll Find A Way}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file wellfindawaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They try to keep us apart they say I'll lead you [F]wrong
@@ -22,3 +25,4 @@ Sweetheart divine when you are [F]mine
 I'm sure [C]that for you our dreams will come [F]true
 [C]Somehow I [G7]know we'll find a [C]way 
 {end_of_verse}
+

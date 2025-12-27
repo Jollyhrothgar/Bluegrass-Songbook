@@ -1,6 +1,9 @@
 {meta: title Three Lovers Were Losers Today}
 {meta: artist Red Sovine}
 {meta: composer Webb Pierce, Max Powell, Red Sovine}
+{meta: x_source classic-country}
+{meta: x_source_file threeloverswereloserstodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I had dinner today with your mother and [C]dad
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [D7]Yes three lovers were losers [G]today
 {end_of_verse}
+
+
+

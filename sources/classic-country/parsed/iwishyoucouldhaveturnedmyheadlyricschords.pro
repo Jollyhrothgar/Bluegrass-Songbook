@@ -1,5 +1,8 @@
 {meta: title I Wish You Could Have Turned My Head}
 {meta: artist The Oak Ridge Boys}
+{meta: x_source classic-country}
+{meta: x_source_file iwishyoucouldhaveturnedmyheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish you could have turned my head 
@@ -42,3 +45,8 @@ And left my heart [F]alone
 [G7]Ever since I met you baby 
 [F]You have done me [C]wrong
 {end_of_verse}
+
+
+
+
+

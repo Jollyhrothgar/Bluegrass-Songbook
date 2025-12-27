@@ -1,6 +1,9 @@
 {meta: title Misty Memories}
 {meta: artist Brenda Lee}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file mistymemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Misty [F]memories  linger [C]on 
@@ -30,3 +33,6 @@ Every [F]time I hear your name my heart [C]cries
 Yes every [F]time I hear your name my heart still [C]cries
 [F]And misty [G7]memories fill my [C]eyes
 {end_of_verse}
+
+
+

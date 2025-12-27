@@ -1,5 +1,8 @@
 {meta: title You're The Only One}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file youretheonlyonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're the only one that's [C]ever understood
@@ -40,3 +43,8 @@ You're the only one that helps me [C]make that extra mile
 You're the only one that helps me [C]make that extra mile
 [D7]You're the only one that [C]heels me with your [G]smile
 {end_of_verse}
+
+
+
+
+

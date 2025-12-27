@@ -1,6 +1,9 @@
 {meta: title Walk Through Paradise}
 {meta: artist Jimmie Davis}
 {meta: composer John K. Almeida, Pua Almeida,}
+{meta: x_source classic-country}
+{meta: x_source_file walkthroughparadiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me Lord [G]let me Lord
@@ -53,3 +56,10 @@ To [D7]let me walk through paradise with [G]You
 [C]Let me walk [G]let me walk
 [D7]Let me walk through paradise with [G]You
 {end_of_verse}
+
+
+
+
+
+
+

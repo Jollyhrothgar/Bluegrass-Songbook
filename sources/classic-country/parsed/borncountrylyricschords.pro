@@ -1,6 +1,9 @@
 {meta: title Born Country}
 {meta: artist Alabama}
 {meta: composer John Schweers and Byron Hill}
+{meta: x_source classic-country}
+{meta: x_source_file borncountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Clear creeks and cool mountain mornings
@@ -35,3 +38,6 @@ I got a [F]hundred years of [C]down home
 [G7]Running through my [Am]blood
 I was [F]born [C]country and this [G7]country's what I [C]love
 {end_of_verse}
+
+
+

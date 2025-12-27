@@ -1,6 +1,9 @@
 {meta: title Down From His Glory}
 {meta: artist The Blackwood Brothers}
 {meta: composer William E. Booth-Clibborn}
+{meta: x_source classic-country}
+{meta: x_source_file downfromhisglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down from His glory
@@ -35,3 +38,6 @@ What condescension
 [C]The great Creator became my [G]Savior
 [Em]And all God's [Am]fullness [D7]dwelleth in [G]Him
 {end_of_verse}
+
+
+

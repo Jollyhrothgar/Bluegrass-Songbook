@@ -1,5 +1,8 @@
 {meta: title Some People Make It}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file somepeoplemakeitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The working man works while the boss man sits in the [C7]shade
@@ -30,3 +33,7 @@
 [C]Made in the [A7]shade
 [D7]Some suck lemon [G7]some sip [C]lemonade
 {end_of_verse}
+
+
+
+

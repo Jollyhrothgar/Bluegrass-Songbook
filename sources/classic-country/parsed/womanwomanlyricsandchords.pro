@@ -1,6 +1,9 @@
 {meta: title Woman Woman}
 {meta: artist Glen Campbell}
 {meta: composer Jim Glaser and Jimmy Payne}
+{meta: x_source classic-country}
+{meta: x_source_file womanwomanlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wo-[Em]man oooh [F]wo--[Em]man
@@ -52,3 +55,10 @@ On your [C]mind
 [F]Have you got [Em]cheating [Am]on your [Dm]m-in[G7]d
 On your [C]mind
 {end_of_verse}
+
+
+
+
+
+
+

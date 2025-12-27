@@ -1,5 +1,8 @@
 {meta: title Stranger In My House}
 {meta: artist Ronnie Milsap}
+{meta: x_source classic-country}
+{meta: x_source_file strangerinmyhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a [Am]silence here between [G]us
@@ -50,3 +53,8 @@ There's a [Am]stranger in my [D7]house
 [Am]Stranger in my [D7]house
 [Em]Somebody here trying to [E7]take her away from [Am]me
 {end_of_verse}
+
+
+
+
+

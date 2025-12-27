@@ -1,6 +1,9 @@
 {meta: title Flattery Will Get You Everywhere}
 {meta: artist Lynn Anderson}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file flatterywillgetyoueverywherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I noticed how you smiled just now surprised at [F]having [C]seen
@@ -33,3 +36,7 @@ And [F]as for me [C]flattery will [G7]get you every[C]where
 {start_of_verse: Verse 5}
 And [F]as for me [C]flattery will [G7]get you every[C]where
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title It's Sad To Be Lonely At Christmas}
 {meta: artist Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file itssadtobelonelyatChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Oh it's [G]sad to be lonely at [Am]Christmas
@@ -47,3 +50,9 @@ But that [Am]looks like what [D7]I'm gonna [G]be
 Oh it's [C]sad to be lonely at [Bm]Christmas[Em]
 But [Am]that looks like what [D7]I'm gonna [G]be
 {end_of_verse}
+
+
+
+
+
+

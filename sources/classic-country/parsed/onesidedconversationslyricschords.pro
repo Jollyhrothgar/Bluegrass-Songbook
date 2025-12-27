@@ -1,6 +1,9 @@
 {meta: title One Sided Conversations}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file onesidedconversationslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I must live alone I'd [C]rather do it by my[G]self [C]  [G]  [C]
@@ -26,3 +29,5 @@ Who would stand and let it [D7]fall
 And [G]one sided conversations [D7]with a narrow minded [G]wall[C]  [G]  [C]
 And one [G]sided conversations [D7]with a narrow minded [Em]wall[G]  [C]  [G]
 {end_of_verse}
+
+

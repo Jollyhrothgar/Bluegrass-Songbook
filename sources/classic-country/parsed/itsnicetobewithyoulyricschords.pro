@@ -1,6 +1,9 @@
 {meta: title It's Nice To Be With You}
 {meta: artist Anne Murray}
 {meta: composer Jerry Goldstein}
+{meta: x_source classic-country}
+{meta: x_source_file itsnicetobewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey [B7]look what you have [C]done 
@@ -47,3 +50,8 @@ So [C]please [B7]never go [C]away
 And make my dreams come [G7]true
 It's so [C]nice to [G7]be with [C]you
 {end_of_verse}
+
+
+
+
+

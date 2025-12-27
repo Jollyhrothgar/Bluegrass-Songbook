@@ -1,6 +1,9 @@
 {meta: title Winning You Sure Made A Loser Out Of Me and Chords}
 {meta: artist Faron Young}
 {meta: composer David Wilkins and Jody Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file winningyousuremadealoseroutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I’d never won your [Em]love [Am]
@@ -47,3 +50,8 @@ But [C]stumbled then the [F]fall
 Even won the [G7]right to be [Am]free[E7]   [Am]
 [C]Winning you sure made a [F]loser out of [G7]me [C]
 {end_of_verse}
+
+
+
+
+

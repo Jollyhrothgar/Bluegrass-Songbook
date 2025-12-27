@@ -1,6 +1,9 @@
 {meta: title Back To Back}
 {meta: artist Jeanne Pruett}
 {meta: composer Jerry McBee and Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file backtobacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We should be happy [F]just the way we [C]are
@@ -29,3 +32,6 @@ But we never really [F]seem to [C]say what’s on our [G7]mind
 We don’t talk things [C]over [F]we ignore the [C]facts
 That our love can’t live [F]when it’s [C]sleeping [G7]back to [C]back
 {end_of_verse}
+
+
+

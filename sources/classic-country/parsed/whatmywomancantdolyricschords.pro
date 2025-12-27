@@ -1,6 +1,9 @@
 {meta: title What My Woman Can't Do}
 {meta: artist George Jones}
 {meta: composer Billy Sherrill, Earl Montgomery, George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file whatmywomancantdolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]What my woman [C]can't do [G7]can't be [C]done
@@ -27,3 +30,6 @@
 [F]What my woman [C]can't do [G7]can't be [C]done
 [F]What my woman [C]can't do [G7]can't be [C]done
 {end_of_verse}
+
+
+

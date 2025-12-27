@@ -1,6 +1,9 @@
 {meta: title Standing At The End Of My World}
 {meta: artist Bobby Helms}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file standingattheendofmyworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm standing at the end of my [D7]world
@@ -29,3 +32,6 @@ I'm [C]standing at the end of my [G]world
 Just [G]dreaming of things that might have [C]been
 If we [G]lived each new born [D7]day as if the [G]last
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Love You Nellie}
 {meta: artist Hank Snow}
 {meta: composer Rex Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyounellielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Standing in the moonlight by the old garden [D7]gate
@@ -29,3 +32,6 @@
 [G7]And believe me Nellie when I'm far [C]away
 [G]I'll not forget you I'll [D7]be with you [G]someday
 {end_of_verse}
+
+
+

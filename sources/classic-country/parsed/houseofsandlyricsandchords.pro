@@ -1,6 +1,9 @@
 {meta: title House Of Sand}
 {meta: artist Elvis Presley}
 {meta: composer Bernie Baum, Bill Giant, Florence Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file houseofsandlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh you can take a whole lot of [Am]sand
@@ -41,3 +44,8 @@ A [C]house of sand is an [G7]empty work of [C]art
 A house of sand is an [G7]empty work of [C]art
 A house of sand is an [G7]empty work of [C]art
 {end_of_verse}
+
+
+
+
+

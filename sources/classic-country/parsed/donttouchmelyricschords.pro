@@ -1,6 +1,9 @@
 {meta: title Don't Touch Me Lyrics and Chords}
 {meta: artist Dottie West}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file donttouchmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your hand is like a torch each time you touch [D7]me
@@ -23,3 +26,5 @@ Don't [C]open the door to heaven if I can't come [D7]in
 Don't [F]touch me if you don't love [G7]me [C]sweetheart
 No don't [F]touch me if you don't love [G7]me [C]sweetheart
 {end_of_verse}
+
+

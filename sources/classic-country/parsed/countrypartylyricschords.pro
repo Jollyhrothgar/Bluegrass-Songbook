@@ -1,6 +1,9 @@
 {meta: title Country Party}
 {meta: artist Johnny Lee}
 {meta: composer Ricky Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file countrypartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went to a country [F]party remi[C]nisce with my old [F]friends
@@ -49,3 +52,10 @@ But if [C]memories of [Am]all I've [C]sang well [G7]I'd rather drive a [C]truck
 But it's [F]all [G7]right [C]now I've [F]learned my [G7]lesson [C]well
 See [F]you can't please [C]everyone so you [F]got to [G7]please your[C]self
 {end_of_verse}
+
+
+
+
+
+
+

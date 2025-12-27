@@ -1,5 +1,8 @@
 {meta: title It Do Feel Good}
 {meta: artist Donna Fargo}
+{meta: x_source classic-country}
+{meta: x_source_file itdofeelgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm kicking my heels [C]together free again I feel like me [G]again
@@ -62,3 +65,12 @@ And I've just got to accept the fact that I have to accept the fact
 [C]And I don't have to make believe or feed a guilty [G]conscience
 [D7]Love set me free and it do [D7][C]feel [G]good
 {end_of_verse}
+
+
+
+
+
+
+
+
+

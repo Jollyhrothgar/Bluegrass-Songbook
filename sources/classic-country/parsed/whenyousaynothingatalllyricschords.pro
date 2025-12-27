@@ -1,6 +1,9 @@
 {meta: title When You Say Nothing At All}
 {meta: artist Alison Krauss}
 {meta: composer Don Schlitz & Paul Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file whenyousaynothingatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's [G7]amazing how [F]you can speak [G7]right to my [C]heart
@@ -29,3 +32,6 @@ There's a [C]truth in your eyes [G7]saying you'll [F]never leave [G7]me
 A [C]touch of your [G7]hand says you'll [F]catch me if ever I [F][G7]f-all
 [C]Now you [F]say it best [G7]when you say nothing at [C]all
 {end_of_verse}
+
+
+

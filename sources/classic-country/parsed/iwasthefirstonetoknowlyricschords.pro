@@ -1,6 +1,9 @@
 {meta: title I Was The First One To Know}
 {meta: artist Wynn Stewart}
 {meta: composer Beverly Stewart and Cliff Massey}
+{meta: x_source classic-country}
+{meta: x_source_file iwasthefirstonetoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's no news to me you [Dm]don't love [G7]me
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G7](I was the first one to [C]know)
 {end_of_verse}
+
+
+
+

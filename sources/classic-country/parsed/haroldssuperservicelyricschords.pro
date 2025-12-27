@@ -1,6 +1,9 @@
 {meta: title Harold's Super Service}
 {meta: artist Merle Haggard}
 {meta: composer Robert Wayne Edrington}
+{meta: x_source classic-country}
+{meta: x_source_file haroldssuperservicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now me I work at Harold's Super Service
@@ -43,3 +46,8 @@ He said gimme fifty cents worth of regular
 [G]Put some air in my tire won't you [C]mister
 [D7]Wash my windows too if you have [G]time
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Laugh The Years Away}
 {meta: artist Dolly Parton and Porter Wagoner}
 {meta: composer Howard Tuck}
+{meta: x_source classic-country}
+{meta: x_source_file laughtheyearsawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A corporation owns the [F]factory I [C]work in
@@ -40,3 +43,8 @@ And together we can [G7]laugh the years [C]away
 {start_of_verse: Verse 4}
 And together we can [G7]laugh the years [F]awa[C]y
 {end_of_verse}
+
+
+
+
+

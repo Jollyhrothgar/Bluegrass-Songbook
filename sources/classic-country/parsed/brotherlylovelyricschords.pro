@@ -1,6 +1,9 @@
 {meta: title Brotherly Love}
 {meta: artist Keith Whitley and Earl Thomas Conley}
 {meta: composer Jimmy Stewart and Tim Nichols}
+{meta: x_source classic-country}
+{meta: x_source_file brotherlylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We shared the same last name and the same color [F]eyes
@@ -38,3 +41,7 @@ But [F]they've got something [G7]special it's brotherly [C]love
 {start_of_verse: Verse 5}
 Yeah [F]they've got something [G7]special it's brotherly [C]love
 {end_of_verse}
+
+
+
+

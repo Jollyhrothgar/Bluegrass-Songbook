@@ -1,6 +1,9 @@
 {meta: title Backroads}
 {meta: artist Ricky Van Shelton}
 {meta: composer Charlie Majors}
+{meta: x_source classic-country}
+{meta: x_source_file backroadslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got the radio blasting I've got the windows rolled down
@@ -43,3 +46,8 @@ And I'm cruising these [D7]backroads on the outskirts of [G]town
 I can feel the wind a-blowing hear the big engines whine
 When I'm cruising these [D7]backroads all my troubles are [G]behind
 {end_of_verse}
+
+
+
+
+

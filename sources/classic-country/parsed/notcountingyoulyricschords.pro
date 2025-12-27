@@ -1,5 +1,8 @@
 {meta: title Not Counting You}
 {meta: artist Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file notcountingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When [G7]loving turns to parting 
@@ -48,3 +51,8 @@ I've [F]never lost at [G7]love not counting [C]you
 {start_of_verse: Verse 5}
 No I've [G7]never lost at love not counting [C]you
 {end_of_verse}
+
+
+
+
+

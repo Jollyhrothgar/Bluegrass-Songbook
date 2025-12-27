@@ -1,6 +1,9 @@
 {meta: title Big Spike Hammer}
 {meta: artist The Bluegrass Album Band}
 {meta: composer Bobby Osborne and Pete Goble}
+{meta: x_source classic-country}
+{meta: x_source_file bigspikehammerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Can't you hear the ripple of my [Em]big spike hammer
@@ -47,3 +50,9 @@ I'll get even some day
 {start_of_verse: Verse 5}
 [Em]Big spike [G]hammer  [Em]big spike [G]hammer
 {end_of_verse}
+
+
+
+
+
+

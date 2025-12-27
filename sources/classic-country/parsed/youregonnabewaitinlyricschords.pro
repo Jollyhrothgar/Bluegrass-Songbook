@@ -1,5 +1,8 @@
 {meta: title You're Gonna Be Waitin'}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file youregonnabewaitinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you gonna be waitin’ (waitin’ waitin’)
@@ -59,3 +62,11 @@ Like I been waitin’ for you (waitin’ for [C]you)
 {start_of_verse: Verse 7}
 [F]You’ll be [C]waitin’ for me [F](waitin’ for [C]me)
 {end_of_verse}
+
+
+
+
+
+
+
+

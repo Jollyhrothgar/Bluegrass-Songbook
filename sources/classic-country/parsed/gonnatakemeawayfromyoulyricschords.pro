@@ -1,6 +1,9 @@
 {meta: title Gonna Take Me Away From You}
 {meta: artist George Jones}
 {meta: composer George Jones and Darrell Edwards}
+{meta: x_source classic-country}
+{meta: x_source_file gonnatakemeawayfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For so long I have waited while your heart hesitated
@@ -40,3 +43,9 @@ Your hearts so divided that I finally decided
 [C]With a heart full of pain I'll [F]catch that old [C]train
 [G7]That'll take me away from [C]you
 {end_of_verse}
+
+
+
+
+
+

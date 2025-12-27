@@ -1,6 +1,9 @@
 {meta: title A Woman's Heart (Is A Handy Place To Be)}
 {meta: artist Crystal Gayle}
 {meta: composer Marshall Chapman and Cort B. Casady}
+{meta: x_source classic-country}
+{meta: x_source_file awomansheartisahandyplacetobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He’s a charmer 
@@ -41,3 +44,8 @@ I just [C]wish the heart that’s [D7]broken now was not a part of [G]me
 {start_of_verse: Verse 5}
 I just [C]wish the heart that’s [D7]broken now was not a part of [G]me 
 {end_of_verse}
+
+
+
+
+

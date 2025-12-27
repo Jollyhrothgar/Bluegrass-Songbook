@@ -1,6 +1,9 @@
 {meta: title A Fool Never Learns}
 {meta: artist Wilburn Brothers}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file afoolneverlearnslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A fool never learns to get away just run away 
@@ -45,3 +48,9 @@ Tag:
 I'm [G7]gonna do a very foolish [C]thing
 A [F]fool  [G7]never  [C]learns
 {end_of_verse}
+
+
+
+
+
+

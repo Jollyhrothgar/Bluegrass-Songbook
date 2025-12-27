@@ -1,6 +1,9 @@
 {meta: title What Good Will It Do}
 {meta: artist Ernest Tubb}
 {meta: composer Tommy Duncan and Duane Howard}
+{meta: x_source classic-country}
+{meta: x_source_file whatgoodwillitdolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll forgive you but what good will it [F]do
@@ -33,3 +36,6 @@ We are born a certain way
 Dear and [F]that's the way we stay
 I could [G7]blame you but what good will it [C]do
 {end_of_verse}
+
+
+

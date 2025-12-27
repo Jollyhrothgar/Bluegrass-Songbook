@@ -1,6 +1,9 @@
 {meta: title It Ain't My Job To Tote Your Monkey}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson, Rex Schnelle, Rivers Rutherford}
+{meta: x_source classic-country}
+{meta: x_source_file itaintmyjobtototeyourmonkeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So the government’s crazy and the [F]weather’s all wrong
@@ -57,3 +60,10 @@ But it ain’t my [C]job to [G7]tote your [C]monkey
 Hey boy I’m sorry if all this [F]talk has upset your tummy
 [G7]But it ain’t my job to [C]tote your [G7]cotton pickin’ [C]monkey
 {end_of_verse}
+
+
+
+
+
+
+

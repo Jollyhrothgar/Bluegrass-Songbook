@@ -1,6 +1,9 @@
 {meta: title Bluegrass Express}
 {meta: artist Rhonda Vincent}
 {meta: composer Bobby Osborne}
+{meta: x_source classic-country}
+{meta: x_source_file bluegrassexpresslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ridin' the Bluegrass Express
@@ -54,3 +57,10 @@ He'll [A7]cross the river in New Port Town
 {start_of_verse: Verse 4}
 And [F]I'm goin' [C]home [D]on the [G7]Bluegrass [C]Express
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Early In The Morning}
 {meta: artist Buddy Holly}
 {meta: composer Bobby Darin and Woody Harris}
+{meta: x_source classic-country}
+{meta: x_source_file earlyinthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you're gonna miss me
@@ -38,3 +41,7 @@ You're gonna miss the best man you ever [F]had
 Yes you're gonna want [C]me
 You’re gonna [G7]miss me one of these [C]days  [F]yeah yeah [C]yeah
 {end_of_verse}
+
+
+
+

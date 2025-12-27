@@ -1,5 +1,8 @@
 {meta: title Rainbow In My Heart}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You put a [D7]rainbow in my [G]heart
@@ -26,3 +29,6 @@
 [A7]All that I can hear are those sweet love words you once [D7]said
 [G]Oh what a [D7]aching in my [G]heart what a [D7]faded rainbow in my [G]heart
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Good Ol' Boys}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file goodolboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just the good ol' boys never meaning no [F]harm
@@ -22,3 +25,5 @@ I'm a good ol' boy you know my mama loved [F]me
 But [C]she don't understand they keep a [G7]showing my hands
 And not my face on [C]T V
 {end_of_verse}
+
+

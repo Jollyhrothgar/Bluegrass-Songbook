@@ -1,6 +1,9 @@
 {meta: title If I Knew Then What I Know Now}
 {meta: artist Charlie Rich}
 {meta: composer Wayne P. Walker and Benny Joy}
+{meta: x_source classic-country}
+{meta: x_source_file ifiknewthenwhatiknownowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I knew then what [Am]I know now
@@ -41,3 +44,7 @@ If [C]I knew then what [Am]I know now
 I'da [C]turned around and ran [Am]away from you
 [C]I'da turned around and [F]ran [G7]away from [C]you [F]   [C]
 {end_of_verse}
+
+
+
+

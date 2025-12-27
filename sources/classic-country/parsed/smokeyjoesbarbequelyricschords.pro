@@ -1,6 +1,9 @@
 {meta: title Smokey Joe’s Barbeque}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Horton and Fred Horton}
+{meta: x_source classic-country}
+{meta: x_source_file smokeyjoesbarbequelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Way down south where the whippoorwills call
@@ -46,3 +49,7 @@ When the dogwoods bloom and the red birds sing
 [F]You’ll laugh and be gay till the Judgment [C]Day
 [G7]At Smokey Joe's [C]Barbeque
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Nobody's Fool}
 {meta: artist Jim Reeves}
 {meta: composer Hal Bynum}
+{meta: x_source classic-country}
+{meta: x_source_file nobodysfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know they've been saying  [G7]that you broke every [C]rule
@@ -22,3 +25,5 @@ I'll just spend those lonely [D7]hours  just hoping you'll [G]call
 There was no love before you  only [G7]emptiness [C]there
 But I'm a fool forever [G]thankful  [D7]for the little you [G]care
 {end_of_verse}
+
+

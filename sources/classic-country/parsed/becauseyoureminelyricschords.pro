@@ -1,6 +1,9 @@
 {meta: title Because You're Mine}
 {meta: artist Ferlin Husky}
 {meta: composer Henry Dorrough and Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file becauseyoureminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today my life is so much brighter 
@@ -31,3 +34,7 @@ And it's [G7]all because you are [C]mine
 {start_of_verse: Verse 5}
 And it's [G7]all because you are [C]mine
 {end_of_verse}
+
+
+
+

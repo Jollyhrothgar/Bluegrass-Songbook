@@ -1,6 +1,9 @@
 {meta: title That's The Day}
 {meta: artist Charlie Rich}
 {meta: composer Margaret A. Rich}
+{meta: x_source classic-country}
+{meta: x_source_file thatsthedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Here's the [Dm]snow on the [G7]roses in the [C]garden
@@ -24,3 +27,6 @@ Yes [F]today must be the end of [E7]eterni[Am]ty
 {start_of_verse: Verse 4}
 That's the day that you'd [G7]stop loving [G]me  [C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Here I Go Again}
 {meta: artist Ricky Nelson}
 {meta: composer J. Berry and D. Covlay}
+{meta: x_source classic-country}
+{meta: x_source_file hereigoagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I go again in a great big whirly [F]spin
@@ -26,3 +29,5 @@
 [G7]I I I know it'll last till [G7][C]eternity
 [C]Mmm yeah yeah yeah yeah it'll last till eternity
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Ever Leave Me Again}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file donteverleavemeagainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I searched high and low all the [C]places you [G]go
@@ -34,3 +37,7 @@
 [D7]Don't ever leave me again
 [G]Don't ever [D7]leave me [G]again
 {end_of_verse}
+
+
+
+

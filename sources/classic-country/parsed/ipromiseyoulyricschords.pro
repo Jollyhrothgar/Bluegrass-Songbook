@@ -1,5 +1,8 @@
 {meta: title I Promise You}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file ipromiseyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I promise you the [C]day you marry [G]me
@@ -28,3 +31,5 @@
 [G]I [D7]promise you  I promise [G]you
 [D7]I promise you  I promise [G]you
 {end_of_verse}
+
+

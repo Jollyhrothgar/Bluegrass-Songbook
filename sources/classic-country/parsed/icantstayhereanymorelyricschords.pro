@@ -1,6 +1,9 @@
 {meta: title I Can't Stay Here Anymore}
 {meta: artist Russell Moore and IIIrd Tyme Out}
 {meta: composer Billy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file icantstayhereanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You know I can't stay here any[C]more
@@ -41,3 +44,7 @@ You [G]made me out to be a fool
 [C]Now there's nothing left to do
 You [G]know I can't [D7]stay here any[G]more
 {end_of_verse}
+
+
+
+

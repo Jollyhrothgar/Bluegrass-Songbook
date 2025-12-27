@@ -1,5 +1,8 @@
 {meta: title We Shall Rise}
 {meta: artist Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file weshallriselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the resurrection morning when the [F]trumpet call will [C]sound
@@ -49,3 +52,9 @@ We shall rise on that [F]resurrection [C]morning
 When those prison bars are broken
 We shall rise [G7]we shall [C]rise
 {end_of_verse}
+
+
+
+
+
+

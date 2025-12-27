@@ -1,6 +1,9 @@
 {meta: title Barely Holding On}
 {meta: artist Lee Greenwood}
 {meta: composer Jan Crutchfield and Jerry Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file barelyholdingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Overheard you yesterday talking to a friend
@@ -26,3 +29,5 @@ Let me [Am]hold you let me [Em]love you
 Let's [C]find out what went [Em]wrong
 [G]It's killing [Am]me to know we're [C]barley [D7]  holding [G]on
 {end_of_verse}
+
+

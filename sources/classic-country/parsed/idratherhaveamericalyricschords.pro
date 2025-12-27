@@ -1,6 +1,9 @@
 {meta: title I'd Rather Have America}
 {meta: artist Wynn Stewart}
 {meta: composer Penny Jay}
+{meta: x_source classic-country}
+{meta: x_source_file idratherhaveamericalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From the icy cliffs of Iceland I've [D7]traveled o'er the [G]land
@@ -35,3 +38,7 @@
 [C]I'd rather have America [D7]my homeland where I'm [G]free
 [C]I'd rather have America [D7]my homeland where I'm [G]free
 {end_of_verse}
+
+
+
+

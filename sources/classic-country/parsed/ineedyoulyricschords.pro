@@ -1,5 +1,8 @@
 {meta: title I Need You}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file ineedyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I need you oh how I need [G7]you
@@ -21,3 +24,5 @@ Please [D7]forgive and forget the days gone [G7]by
 I [C]need you oh how I need [G7]you
 Come back my darling and mend my [C]heart
 {end_of_verse}
+
+

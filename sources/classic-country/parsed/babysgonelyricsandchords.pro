@@ -1,6 +1,9 @@
 {meta: title Baby Is Gone}
 {meta: artist Charley Pride}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file babysgonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The world goes [C]around and the [G]young men get [D7]old
@@ -37,3 +40,8 @@
 [C]If I were a singer [G]I'd sing me a [D7]song
 [G]But who wants to [C]sing when his [D7]baby is [G]gone
 {end_of_verse}
+
+
+
+
+

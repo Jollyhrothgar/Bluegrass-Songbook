@@ -1,6 +1,9 @@
 {meta: title Company's Coming}
 {meta: artist Porter Wagoner}
 {meta: composer Johnny Mullins}
+{meta: x_source classic-country}
+{meta: x_source_file companyscominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh mama I'm excited I'm [F]almost out of [C]breath
@@ -50,3 +53,9 @@ That we got company coming company coming
 {start_of_verse: Verse 5}
 [G7]There's company coming up the [C]road
 {end_of_verse}
+
+
+
+
+
+

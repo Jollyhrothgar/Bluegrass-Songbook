@@ -1,5 +1,8 @@
 {meta: title That's Why I Love You Like I Do}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhyiloveyoulikeidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is a story bout a boy that loved a girl loved her very much
@@ -31,3 +34,6 @@ And every time [F]I start to tell you
 [C]Bright moon tray fiddley run [F]by through around and up [C]to
 That's why I love you so much [G7]that's why I love you like I [C]do
 {end_of_verse}
+
+
+

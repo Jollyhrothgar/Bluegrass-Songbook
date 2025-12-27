@@ -1,6 +1,9 @@
 {meta: title Trying To Get To You}
 {meta: artist Roy Orbison}
 {meta: composer Rose Marie McCoy and Charlie Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file tryingtogettoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been traveling over mountains 
@@ -66,3 +69,14 @@ When my way was black as [F]night
 He'd still shine bright as [G7]light 
 When I was trying to get to [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

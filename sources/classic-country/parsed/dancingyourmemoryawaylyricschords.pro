@@ -1,6 +1,9 @@
 {meta: title Dancing Your Memory Away}
 {meta: artist Charly McClain}
 {meta: composer Eddie Burton and Thomas Allen Grant}
+{meta: x_source classic-country}
+{meta: x_source_file dancingyourmemoryawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s Friday night you must be [F]alone 
@@ -36,3 +39,7 @@ For now I’m [G7]okay  my hearts out of [C]da-ng-[C7]er
 Tonight while I’m [F]waltzing as the band softly [C]plays 
 I’m getting [G7]by one song at a time dancing your memory [C]away 
 {end_of_verse}
+
+
+
+

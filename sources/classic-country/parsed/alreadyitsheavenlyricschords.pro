@@ -1,6 +1,9 @@
 {meta: title Already It's Heaven}
 {meta: artist Freddie Hart}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file alreadyitsheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I told all [G7]my friends [C]goodbye
@@ -27,3 +30,6 @@
 [F]Already it's heaven the long search is [C]through
 [G7]And it's good to know now that heaven [F]is [C]you
 {end_of_verse}
+
+
+

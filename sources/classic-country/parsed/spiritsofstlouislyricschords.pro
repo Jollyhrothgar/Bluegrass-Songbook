@@ -1,6 +1,9 @@
 {meta: title Spirits Of St. Louis}
 {meta: artist Johnny Paycheck}
 {meta: composer Roger Bowling and Robert Jones}
+{meta: x_source classic-country}
+{meta: x_source_file spiritsofstlouislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the barrooms close at two A.M.  in St. [F]Louis
@@ -35,3 +38,8 @@ I've sipped Tennessee's best whiskey
 {start_of_verse: Verse 5}
 [G7]Yeah all the spirits in St. Louis can't get you off my [C]mind
 {end_of_verse}
+
+
+
+
+

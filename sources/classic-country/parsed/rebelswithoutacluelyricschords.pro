@@ -1,6 +1,9 @@
 {meta: title Rebels Without A Clue}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file rebelswithoutacluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We were [G]there in the back seat cause we [C]couldn't go home 
@@ -67,3 +70,11 @@ We were [G]rebels without a [C]clue
 Didn't know the [G]whole gene[D7]ration was feelin' it [C]too
 We were [D7]rebels without a [G]clue[C]
 {end_of_verse}
+
+
+
+
+
+
+
+

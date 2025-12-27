@@ -1,6 +1,9 @@
 {meta: title One Woman Man}
 {meta: artist George Morgan}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file onewomanmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling many times I’ve had the chance to be un[G7]true
@@ -22,3 +25,5 @@ And in your eyes there is a sign of doubt and jealou[C]sy
 But have no fear I love you dear [F]that’s part of nature’s plan
 [G7]So trust in me I’ll always be a one woman [C]man
 {end_of_verse}
+
+

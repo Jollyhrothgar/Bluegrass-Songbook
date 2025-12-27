@@ -1,6 +1,9 @@
 {meta: title All Dressed Up and Lonely}
 {meta: artist Jim Reeves}
 {meta: composer Eddy Shaw}
+{meta: x_source classic-country}
+{meta: x_source_file alldressedupandlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I put your favorite suit on and the [C]tie that you loved [G]so
@@ -17,3 +20,4 @@ And [A7]when it's time to say goodnight I [D7]know that I will cry
 Tag:
 [C]I'm all dressed up and [G]lonely  [D7]with no place to [G]go
 {end_of_verse}
+

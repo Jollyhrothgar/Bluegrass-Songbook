@@ -1,6 +1,9 @@
 {meta: title Your Leaving Left Me Still Loving You}
 {meta: artist Conway Twitty}
 {meta: composer Michael White}
+{meta: x_source classic-country}
+{meta: x_source_file yourleavingleftmestilllovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night was our last [F]night [C]together
@@ -29,3 +32,6 @@
 [C]And in turn [F]there'll be [C]more than the one just [C][F]before
 [F]For your [C]leaving left [G7]me still loving [C]you
 {end_of_verse}
+
+
+

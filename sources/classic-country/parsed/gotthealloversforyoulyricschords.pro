@@ -1,5 +1,8 @@
 {meta: title Got The All Overs For You}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file gotthealloversforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love's vibrations I can feel them when I hold [F]you
@@ -22,3 +25,5 @@ It's a [F]blessing heaven sent and meant to [C]be
 Got the [G7]all overs for you all over [G7][F]m--e
 All over [C]me
 {end_of_verse}
+
+

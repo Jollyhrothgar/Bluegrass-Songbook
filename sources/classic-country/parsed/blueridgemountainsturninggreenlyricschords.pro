@@ -1,6 +1,9 @@
 {meta: title Blue Ridge Mountains Turning Green}
 {meta: artist Charley Pride}
 {meta: composer James Lunsford}
+{meta: x_source classic-country}
+{meta: x_source_file blueridgemountainsturninggreenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blue [C]Ridge [D7]Mountains turning [G]green
@@ -44,3 +47,8 @@ Playing the [C]tune that [D7]I love so dear
 I wanna go [D7]home again to see my [G]mountain friends
 Blue [C]Ridge [D7]Mountains turning [G]green
 {end_of_verse}
+
+
+
+
+

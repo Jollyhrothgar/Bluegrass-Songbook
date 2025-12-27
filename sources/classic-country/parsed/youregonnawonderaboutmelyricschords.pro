@@ -1,6 +1,9 @@
 {meta: title You’re Gonna Wonder About Me}
 {meta: artist Waylon Jennings}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file youregonnawonderaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pretty soon this old [G7]town I'll be [C]leavin’
@@ -38,3 +41,7 @@ You're gonna [Dm]wonder about [C]me
 You're gonna [Dm]wonder about [C]me babe
 You're gonna [Dm]wonder about [C]me
 {end_of_verse}
+
+
+
+

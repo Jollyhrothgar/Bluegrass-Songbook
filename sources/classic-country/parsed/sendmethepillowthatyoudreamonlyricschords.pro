@@ -1,5 +1,8 @@
 {meta: title Send Me the Pillow That You Dream On}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file sendmethepillowthatyoudreamonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Send me the [F]pillow that you dream [C]on
@@ -33,3 +36,7 @@ So darling I can [G7]dream on [C]it too
 Tag
 So darling I can [G7]dream on [C]it too
 {end_of_verse}
+
+
+
+

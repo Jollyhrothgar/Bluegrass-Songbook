@@ -1,6 +1,9 @@
 {meta: title Starting All Over Again}
 {meta: artist Don Gibson}
 {meta: composer Paul Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file startingalloveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Starting all over again is gonna be [G7]rough
@@ -36,3 +39,7 @@ So [F]rough  [G7]but we're gonna [C]make it
 Starting all over as friends is gonna be [G7]tough
 On [F]us  [G7]but we gonna [C]face it
 {end_of_verse}
+
+
+
+

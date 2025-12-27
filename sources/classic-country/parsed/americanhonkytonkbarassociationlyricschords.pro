@@ -1,6 +1,9 @@
 {meta: title American Honky Tonk Bar Association}
 {meta: artist Garth Brooks}
 {meta: composer Jim Rushing and Bryan Kennedy}
+{meta: x_source classic-country}
+{meta: x_source_file americanhonkytonkbarassociationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If your paycheck depends on the weather and the clock
@@ -48,3 +51,8 @@ It's the [D7]American Honky Tonk Bar Associ[G]ation
 Contact your [D7]American Honky Tonk Bar Associ[G]ation
 Do not delay  contact today  your AHBA [D7]AHB[G]A
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Home Is Where You're Happy}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file homeiswhereyourehappylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Home is where you're happy and I'm happy here with [G]you
@@ -35,3 +38,7 @@ Or [C]anyplace on [G]earth where you may [D7]be
 [C]Home is where you're happy just any house will [G]do
 And [C]I'll feel at home as [D7]long as you're with [G]me
 {end_of_verse}
+
+
+
+

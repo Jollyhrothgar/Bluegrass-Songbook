@@ -1,6 +1,9 @@
 {meta: title Baby It's Love}
 {meta: artist Buddy Holly}
 {meta: composer Bobby Montgomery and Ella Holley}
+{meta: x_source classic-country}
+{meta: x_source_file babyitslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sixty seconds of heavenly bliss
@@ -50,3 +53,9 @@ It's [D7]love baby it's [G7]love
 [G7]I'm wondering now what the heck that this is
 If it's [C]love [F]baby what's [C]love
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That's The Truth}
 {meta: artist George Strait}
 {meta: composer Melba Montgomery and Steve Leslie}
+{meta: x_source classic-country}
+{meta: x_source_file thatsthetruthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I said I don't love you and I ain't [C]never been your fool
@@ -34,3 +37,7 @@ That's a [G]l-i-[D7]e and that's the [G]truth
 And if you found somebody who says they [C]love you more than I do
 That's a [G]l-i-[D7]e and that's the [C]trut[G]h
 {end_of_verse}
+
+
+
+

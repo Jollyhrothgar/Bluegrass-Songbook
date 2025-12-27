@@ -1,6 +1,9 @@
 {meta: title Didn't We}
 {meta: artist Lee Greenwood}
 {meta: composer Graham Hamilton Lyle and Troy Harold Seals}
+{meta: x_source classic-country}
+{meta: x_source_file didntwelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I think of all the times I [F]needed you 
@@ -43,3 +46,8 @@ I want to say [C]oh we must've had a [F]thousand ways
 Oh [C]you and me him and me [F]you and me 
 I'm askin' you didn't we oh [C]didn't we 
 {end_of_verse}
+
+
+
+
+

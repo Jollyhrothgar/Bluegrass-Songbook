@@ -1,5 +1,8 @@
 {meta: title Your Memory's Comin' On}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file yourmemoryscominonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Your Memory's Comin' On
@@ -40,3 +43,7 @@ I thought it was all over
 But to [F]you I still belong
 I'm [C]lonely and your [G7]memory's comin' [F]on[C] 
 {end_of_verse}
+
+
+
+

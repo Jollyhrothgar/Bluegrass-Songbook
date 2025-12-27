@@ -1,6 +1,9 @@
 {meta: title April's Fool}
 {meta: artist Tracy Lawrence}
 {meta: composer Keith Perry, Bernie Faulkner, Wayne Davis}
+{meta: x_source classic-country}
+{meta: x_source_file aprilsfoollyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There's no [C]way [F]I could ever [C]leave her
@@ -38,3 +41,7 @@ And [F]springtime brings May flowers
 And a [G7]mountain breeze blows cool I'm April's [F]fool
 April's [C]fool
 {end_of_verse}
+
+
+
+

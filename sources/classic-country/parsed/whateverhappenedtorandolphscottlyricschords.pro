@@ -1,6 +1,9 @@
 {meta: title Whatever Happened To Randolph Scott}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file whateverhappenedtorandolphscottlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody knows when you go to the show
@@ -74,3 +77,15 @@ Has [A7]happened to the [D7]best of [G]me
 [C]Whatever happened to [G]Randolph [E7]Scott
 Has [A7]happened to the [G][D7]industry
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

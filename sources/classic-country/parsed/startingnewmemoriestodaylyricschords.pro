@@ -1,6 +1,9 @@
 {meta: title Starting New Memories Today}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file startingnewmemoriestodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm building your own special [C]place in my [G]heart
@@ -33,3 +36,7 @@ We're starting new [D7]memories to[G]day[D7]
 {start_of_verse: Verse 5}
 We're [G]starting new [D7]memories to[C]day[Am]   [G]
 {end_of_verse}
+
+
+
+

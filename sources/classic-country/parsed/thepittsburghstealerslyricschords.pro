@@ -1,6 +1,9 @@
 {meta: title The Pittsburgh Stealers}
 {meta: artist The Kendalls}
 {meta: composer Larry Kingston and Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file thepittsburghstealerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Found myself in Pittsburgh [F]working in a [C]steel mill
@@ -33,3 +36,7 @@ And to[C]night the Pittsburgh [G7]stealers play a[C]gain
 {start_of_verse: Verse 4}
 [F]And to[C]night the Pittsburgh [G7]stealers play [C]again
 {end_of_verse}
+
+
+
+

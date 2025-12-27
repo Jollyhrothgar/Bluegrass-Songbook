@@ -1,6 +1,9 @@
 {meta: title Take Up Thy Cross}
 {meta: artist Wilburn Brothers}
 {meta: composer Alfred Ackley}
+{meta: x_source classic-country}
+{meta: x_source_file takeupthycrosslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walked one day along a country [G7]road
@@ -29,3 +32,6 @@ I hear the blessed Savior [G7]call
 How [C]can I make a lesser [F]sacrifice
 When [C]Jesus [G7]gave His [C]all
 {end_of_verse}
+
+
+

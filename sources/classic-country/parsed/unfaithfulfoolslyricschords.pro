@@ -1,6 +1,9 @@
 {meta: title Unfaithful Fools}
 {meta: artist Leroy Van Dyke}
 {meta: composer Bobby Fischer}
+{meta: x_source classic-country}
+{meta: x_source_file unfaithfulfoolslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess we feel the [D7]same about each [G]other
@@ -43,3 +46,8 @@ We've done it [G]all broke every [D7]rule
 Our love is [C]gone gone gone
 Unfaithful [G]fools
 {end_of_verse}
+
+
+
+
+

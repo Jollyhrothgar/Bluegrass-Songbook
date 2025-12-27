@@ -1,6 +1,9 @@
 {meta: title The Great Speckled Bird}
 {meta: artist Johnny Cash}
 {meta: composer Roy Acuff}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatspeckledbirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What a beautiful [G7]thought I am [C]thinking
@@ -29,3 +32,6 @@ On a [D7]cloud like He said in His [G]Word
 I'll be joyfully [G7]carried to meet [C]Him
 On the [D7]wings of the great speckled [G]bird
 {end_of_verse}
+
+
+

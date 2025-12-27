@@ -1,6 +1,9 @@
 {meta: title Voice Of My Savior}
 {meta: artist Jimmy Martin}
 {meta: composer Raymond Long and Jimmy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file voiceofmysaviorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard a sweet voice [F]so tenderly [C]calling
@@ -36,3 +39,7 @@ Saying arise be [D7]saved ever[G7]more
 I knew it must [C]be the [F]voice of my [C]Savior
 For I had not heard a [G7]voice like it [C]before
 {end_of_verse}
+
+
+
+

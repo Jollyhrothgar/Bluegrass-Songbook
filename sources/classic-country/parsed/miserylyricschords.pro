@@ -1,6 +1,9 @@
 {meta: title Misery}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills, Tommy Duncan, Billie Tiny Moore}
+{meta: x_source classic-country}
+{meta: x_source_file miserylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Went to bed last [G7]night I wasn't [C]sleepy
@@ -20,3 +23,5 @@
 [G7]Some of these days you'll be [C]sorry
 [G7]That you fill my soul with [C]misery
 {end_of_verse}
+
+

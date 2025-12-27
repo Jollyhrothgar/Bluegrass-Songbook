@@ -1,6 +1,9 @@
 {meta: title I'll Drink To That}
 {meta: artist Billy Parker}
 {meta: composer Alice Joy Merritt}
+{meta: x_source classic-country}
+{meta: x_source_file illdrinktothatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had a wife who couldn’t [F]take it any[C]more
@@ -33,3 +36,7 @@ I need the [F]bottle like a blind man needs his [C]cane
 {start_of_verse: Verse 5}
 [F]I'll drink to [C]that but [G7]then I'll drink to any[C]thing
 {end_of_verse}
+
+
+
+

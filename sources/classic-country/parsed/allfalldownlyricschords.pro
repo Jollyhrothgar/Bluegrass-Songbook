@@ -1,6 +1,9 @@
 {meta: title All Fall Down}
 {meta: artist Roger Miller}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file allfalldownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was a little country boy I had a dream
@@ -62,3 +65,11 @@ When you [C]build your dreams on [G7]wishes they fall [C]down [G7]
 All fall [C]down all fall [F]down
 When you [C]build your dreams on [G7]wishes they fall [C]down
 {end_of_verse}
+
+
+
+
+
+
+
+

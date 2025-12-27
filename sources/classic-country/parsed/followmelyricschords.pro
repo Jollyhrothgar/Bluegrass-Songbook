@@ -1,6 +1,9 @@
 {meta: title Follow Me}
 {meta: artist Ernest Tubb}
 {meta: composer Sandra Adlon, Virginia Balmer, Leon Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file followmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At the end of the day my [D7]heart's filled with [G]despair
@@ -29,3 +32,6 @@ Follow [C]me and your heart will be [G]free from all [D7]care
 Follow me [G]and I'll make you a [D7]place with Him [G]there 
 If [D7]you would just follow [G]me
 {end_of_verse}
+
+
+

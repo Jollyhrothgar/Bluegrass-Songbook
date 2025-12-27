@@ -1,6 +1,9 @@
 {meta: title I'm Yours Lord}
 {meta: artist Barbara Mandrell}
 {meta: composer Gary Chapman}
+{meta: x_source classic-country}
+{meta: x_source_file imyourslordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm yours Lord [F]everything I've [C]got
@@ -54,3 +57,10 @@ See if I can [G7]be completely [C]yours
 {start_of_verse: Verse 4}
 I'm yours Lord
 {end_of_verse}
+
+
+
+
+
+
+

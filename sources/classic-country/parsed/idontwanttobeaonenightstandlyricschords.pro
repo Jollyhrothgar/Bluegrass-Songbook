@@ -1,6 +1,9 @@
 {meta: title I Don't Want To Be A One Night Stand}
 {meta: artist Reba McEntire}
 {meta: composer Laying Martine}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttobeaonenightstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now you ask me if [G7]I will go with [C]you
@@ -29,3 +32,6 @@ So if that's what you’ve got [C]planned
 Baby before we go you better [F]let me know
 Cause I don't [C]want to be a [G7]one night [C]stand
 {end_of_verse}
+
+
+

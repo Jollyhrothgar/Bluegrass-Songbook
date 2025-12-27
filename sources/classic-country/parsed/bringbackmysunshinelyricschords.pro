@@ -1,6 +1,9 @@
 {meta: title Bring Back My Sunshine}
 {meta: artist Ray Price}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file bringbackmysunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl it's not [Dm]easy [G7]  being [Em]alone[Am]
@@ -47,3 +50,7 @@ We'll make it [Dm]last[G7]
 [A7]Oh come back to me [Dm]love 
 [G7]Bring back my [C]sunshine
 {end_of_verse}
+
+
+
+

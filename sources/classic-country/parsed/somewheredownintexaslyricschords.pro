@@ -1,6 +1,9 @@
 {meta: title Somewhere Down in Texas}
 {meta: artist George Strait}
 {meta: composer Charlie Black, Tim Rouillier, Dana Hunt}
+{meta: x_source classic-country}
+{meta: x_source_file somewheredownintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I been on the road now [C]dang near all my life[Dm]
@@ -59,3 +62,10 @@ If you're [G7]lookin' for [C]me
 I'll be [F]somewhere down in [C]Texas 
 If you're lookin' for [F]me[C]
 {end_of_verse}
+
+
+
+
+
+
+

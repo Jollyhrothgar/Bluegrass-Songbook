@@ -1,6 +1,9 @@
 {meta: title Fallin' Again}
 {meta: artist Alabama}
 {meta: composer Russell Fowler, Teddy Gentry, Randy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file fallinagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Thinkin' of the faces I've seen
@@ -38,3 +41,8 @@ Cause when I caught that look in your eyes
 [G]Fallin' [Dm]again in love [C]again
 [G]Fallin' again  into the [C]wind
 {end_of_verse}
+
+
+
+
+

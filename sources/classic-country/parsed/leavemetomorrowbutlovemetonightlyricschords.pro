@@ -1,6 +1,9 @@
 {meta: title Leave Me Tomorrow But Love Me Tonight}
 {meta: artist Johnny Rodriguez}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file leavemetomorrowbutlovemetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes it’s all over [G7]there’s no reason to stay
@@ -29,3 +32,6 @@ That’s a [G7]good time for sorrow that’s a good time to [C]change
 [F]Turn back the troubles put out the [C]light 
 Honey [G7]leave me tomorrow but love me [F]tonigh[C]t
 {end_of_verse}
+
+
+

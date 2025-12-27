@@ -1,6 +1,9 @@
 {meta: title He's Got A Way With Women}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Rodney Lay}
+{meta: x_source classic-country}
+{meta: x_source_file hesgotawaywithwomenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He walks right [G7]he talks right 
@@ -50,3 +53,9 @@ He [C]knows what makes a girl feel [F]fine
 He's got a [C]way with [D7]women 
 And [G7]he just got away with [C]mine
 {end_of_verse}
+
+
+
+
+
+

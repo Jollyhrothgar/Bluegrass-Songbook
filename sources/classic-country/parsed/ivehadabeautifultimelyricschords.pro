@@ -1,5 +1,8 @@
 {meta: title I've Had A Beautiful Time}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ivehadabeautifultimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We met downtown in the barroom
@@ -55,3 +58,13 @@ And you little beautiful lady
 We spent the wee hours dancing
 [D7]To your favorite home stereo sounds
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

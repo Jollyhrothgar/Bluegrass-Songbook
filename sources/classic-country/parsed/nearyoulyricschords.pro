@@ -1,6 +1,9 @@
 {meta: title Near You}
 {meta: artist Tammy Wynette}
 {meta: composer Francis Craig and Kermit Goell}
+{meta: x_source classic-country}
+{meta: x_source_file nearyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's just one [G7]place for me  near [C]you
@@ -25,3 +28,6 @@ Spend the [G7]rest of my days  near [C]you
 {start_of_verse: Verse 4}
 Repeat
 {end_of_verse}
+
+
+

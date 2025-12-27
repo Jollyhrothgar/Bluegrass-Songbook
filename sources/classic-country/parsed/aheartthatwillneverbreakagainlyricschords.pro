@@ -1,6 +1,9 @@
 {meta: title A Heart That Will Never Break Again}
 {meta: artist The Easter Brothers}
 {meta: composer Edd Easter, James Easter, and Russell Lee Easter}
+{meta: x_source classic-country}
+{meta: x_source_file aheartthatwillneverbreakagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll have a heart that will [D7]never break [G]again
@@ -44,3 +47,9 @@
 {start_of_verse: Verse 6}
 [D7]And a heart that will never break [G]again
 {end_of_verse}
+
+
+
+
+
+

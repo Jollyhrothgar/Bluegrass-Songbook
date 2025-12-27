@@ -1,5 +1,8 @@
 {meta: title Country Trash}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file countrytrashlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got a crib full of corn and a turning [F]plow
@@ -41,3 +44,7 @@ And [G7]God's got a heaven for country [C]trash
 And [G7]God's got a heaven for country [C]trash
 And [G7]I'll be doing alright for country [C]trash
 {end_of_verse}
+
+
+
+

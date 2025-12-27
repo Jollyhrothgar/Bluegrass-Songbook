@@ -1,6 +1,9 @@
 {meta: title High On A Hilltop}
 {meta: artist The Louvin Brothers}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file highonahilltoplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]High on a hilltop [F]overlooking the [C]city
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 Repeat#2
 {end_of_verse}
+
+
+

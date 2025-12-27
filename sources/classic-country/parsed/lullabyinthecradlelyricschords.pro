@@ -1,6 +1,9 @@
 {meta: title Lullaby In The Cradle}
 {meta: artist Rex Allen Jr.}
 {meta: composer Clifton Crofford, John Rurrill, Snuff Garrett}
+{meta: x_source classic-country}
+{meta: x_source_file lullabyinthecradlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]He can [C]ride [G7]rope and [Am]shoot and stands [F]tall in his [G7]boots
@@ -36,3 +39,7 @@ And he's [F]growing up to the [G7]tune of a cowboy's [C]song
 [F]Ridin' his broomstick [G7]horse playin' [Am]guitar on his front [C]porch
 And the [F]girl next door is his [G7]Rose Of San [C]Antone [G7]
 {end_of_verse}
+
+
+
+

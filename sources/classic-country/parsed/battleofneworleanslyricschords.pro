@@ -1,6 +1,9 @@
 {meta: title Battle of New Orleans}
 {meta: artist Johnny Horton}
 {meta: composer Jimmie Driftwood}
+{meta: x_source classic-country}
+{meta: x_source_file battleofneworleanslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In 1814 we took a little [F]trip
@@ -76,3 +79,16 @@ And when we touched the powder off, the 'gator lost his mind
 {start_of_verse: Verse 2}
 chorus
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

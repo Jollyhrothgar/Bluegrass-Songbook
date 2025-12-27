@@ -1,6 +1,9 @@
 {meta: title From Here To The Door}
 {meta: artist Johnny Paycheck}
 {meta: composer Don Chapel}
+{meta: x_source classic-country}
+{meta: x_source_file fromheretothedoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it's only my love [C]you are [G]taking
@@ -33,3 +36,7 @@ Cause it's my lifetime from [D7]here to the [G]door
 {start_of_verse: Verse 4}
 Yes it's my lifetime from [D7]here to the [G]door
 {end_of_verse}
+
+
+
+

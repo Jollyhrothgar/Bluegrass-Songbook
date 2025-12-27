@@ -1,5 +1,8 @@
 {meta: title Down To The River}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file downtotheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm a going down [D7]down [G]down to the [C]river
@@ -35,3 +38,7 @@ And there [G]ain't nobody gonna have to hold my [D7]hand
 I'm a-going [G]down [D7]down [G]down to the [C]river
 Gonna [G]bury my troubles in the [D7]river bottom [G]sand
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title One For The Money}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file oneforthemoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen you standing there [F]stunned in the [C]spotlight
@@ -32,3 +35,7 @@ Don't look in her [G7]eyes [F]you see what you [C]sold[F]
 {start_of_verse: Verse 5}
 [C]Take a look in her [G7]eyes [F]and see what you [C]sold
 {end_of_verse}
+
+
+
+

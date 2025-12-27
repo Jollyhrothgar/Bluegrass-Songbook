@@ -1,6 +1,9 @@
 {meta: title Life Of A Poor Boy}
 {meta: artist Stonewall Jackson}
 {meta: composer E. C. (Mac) McCarty}
+{meta: x_source classic-country}
+{meta: x_source_file lifeofapoorboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was just a [C]youngster and [G]hardly in my [D7]teens
@@ -46,3 +49,8 @@
 [G]With a two buck loan he'll build him a [C]home
 [D7]And raise him a poor boy [G]clan
 {end_of_verse}
+
+
+
+
+

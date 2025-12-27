@@ -1,5 +1,8 @@
 {meta: title Peace Of Mind}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file peaceofmindlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wake up some [F]nights scared and [C]shaking
@@ -35,3 +38,7 @@ And y[G7]ou [F]are my only sal[C]vation
 [Em]Living on the edge out chasing [F]rainbows[Am]
 [Dm]Honey you're my [F]only peace of [C]mind
 {end_of_verse}
+
+
+
+

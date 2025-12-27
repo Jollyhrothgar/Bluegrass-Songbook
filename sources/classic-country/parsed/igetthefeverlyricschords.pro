@@ -1,5 +1,8 @@
 {meta: title I Get The Fever}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file igetthefeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time I hear the midnight trains 
@@ -29,3 +32,5 @@ He's [D7]put lots of dust and [G7]clay
 Between him and yesterday I get the [C]fever
 [G7]I get the [C]fever [G7]I get the [C]fever I [G7]get the [C]fever
 {end_of_verse}
+
+

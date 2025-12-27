@@ -1,6 +1,9 @@
 {meta: title Hello Stranger}
 {meta: artist Emmylou Harris}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file hellostrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello stranger
@@ -79,3 +82,15 @@ Put your loving hand in [C]mine
 You are a [G7]stranger
 And you're a friend of [C]mine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

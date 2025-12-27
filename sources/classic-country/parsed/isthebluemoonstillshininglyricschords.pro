@@ -1,6 +1,9 @@
 {meta: title Is The Blue Moon Still Shining}
 {meta: artist Bill Monroe}
 {meta: composer Melissa Kathleen Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file isthebluemoonstillshininglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is the blue moon still [F]shinin'
@@ -43,3 +46,8 @@ Do you [F]need me as I need [G7]you
 Will you [C]ever come back and [F]love me
 Or tell me [C]are we [G7]really [C]through
 {end_of_verse}
+
+
+
+
+

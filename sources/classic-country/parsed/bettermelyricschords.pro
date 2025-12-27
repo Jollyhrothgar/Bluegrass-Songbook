@@ -1,6 +1,9 @@
 {meta: title Better Me}
 {meta: artist Tommy Overstreet}
 {meta: composer Sterling Whipple}
+{meta: x_source classic-country}
+{meta: x_source_file bettermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She sat down near the bar
@@ -57,3 +60,10 @@ Better [G7]me than somebody [C]cruel
 Such easy prey in a world full of [F]hunger
 Better [G7]me than somebody [C]cruel
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Night Is Young}
 {meta: artist George Strait}
 {meta: composer Dean Dillon, Bubba Strait, George Strait}
+{meta: x_source classic-country}
+{meta: x_source_file thenightisyounglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a little place I know
@@ -51,3 +54,9 @@ The night is young but the [F]sun's been down a [C]long time
 {start_of_verse: Verse 7}
 Oh the [G7]night is young but the [F]sun has been down a [C]long time
 {end_of_verse}
+
+
+
+
+
+

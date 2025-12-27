@@ -1,6 +1,9 @@
 {meta: title Your Worries And Troubles Are Mine}
 {meta: artist Ralph Stanley}
 {meta: composer Candace K. Randolph and Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file yourworriesandtroublesareminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]People keep asking and [C]wondering [G]why
@@ -31,3 +34,6 @@ You’ll [G]know my heart is with you
 And my [C]love for you ain’t [G]blind
 Your worries and [D7]troubles are [G]mine
 {end_of_verse}
+
+
+

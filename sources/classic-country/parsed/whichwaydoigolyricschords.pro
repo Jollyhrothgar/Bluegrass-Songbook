@@ -1,6 +1,9 @@
 {meta: title Which Way Do I Go}
 {meta: artist Waylon Jennings}
 {meta: composer Johnny McRae and Steve Clark}
+{meta: x_source classic-country}
+{meta: x_source_file whichwaydoigolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I put yesterday and [F]half the night [C]between us
@@ -33,3 +36,7 @@ Which way do [C]I go [G7]now that I'm [C]gone
 {start_of_verse: Verse 4}
 [F]Which way do [C]I go [G7]now that I'm [F]gon[C]e
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title To Know Him Is To Love Him}
 {meta: artist Emmylou Harris}
 {meta: composer Phil Spector}
+{meta: x_source classic-country}
+{meta: x_source_file toknowhimistolovehimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To know know know him
@@ -35,3 +38,5 @@ To know know know [C]him
 Is to love love [G7]love him
 And [C]I do
 {end_of_verse}
+
+

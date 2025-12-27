@@ -1,6 +1,9 @@
 {meta: title Where Love Begins}
 {meta: artist Gene Watson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file wherelovebeginslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come in pretty lady you've just made my [F]night
@@ -29,3 +32,6 @@ But [G7]someone was always right [G7][C]there
 But [C]now we're alone so there's [F]no buts or [C]ifs
 Come here let me [G7]take down your [C]hair
 {end_of_verse}
+
+
+

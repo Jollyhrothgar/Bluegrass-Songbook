@@ -1,6 +1,9 @@
 {meta: title When The Tingle Becomes A Chill}
 {meta: artist Loretta Lynn}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file whenthetinglebecomesachilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes at night while you're fast [D7]asleep
@@ -29,3 +32,6 @@ When [F]the tingle  [G7]becomes a [C]chill
 Ah [C]but a woman can't help the way that she [D7]feels 
 When [F]the tingle  [G7]becomes a [C]chill
 {end_of_verse}
+
+
+

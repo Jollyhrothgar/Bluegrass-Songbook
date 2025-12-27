@@ -1,6 +1,9 @@
 {meta: title Good As Gone}
 {meta: artist Tony Booth}
 {meta: composer Dennis Knutson and Jim Shaw}
+{meta: x_source classic-country}
+{meta: x_source_file goodasgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Good As Gone
@@ -48,3 +51,9 @@ As [F]love goes from [C]good as gold
 As [F]love goes from [C]good as gold
 [G7]The good is [C]gone
 {end_of_verse}
+
+
+
+
+
+

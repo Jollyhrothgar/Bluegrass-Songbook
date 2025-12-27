@@ -1,6 +1,9 @@
 {meta: title Children Of My Mind}
 {meta: artist Anne Murray}
 {meta: composer Gary Osborne}
+{meta: x_source classic-country}
+{meta: x_source_file childrenofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The painter who's been [C]painting all his [G]life
@@ -42,3 +45,8 @@
 {start_of_verse: Verse 6}
 [C]The children of [Am]my mind become the [C]orphans of [D7]my [G]soul
 {end_of_verse}
+
+
+
+
+

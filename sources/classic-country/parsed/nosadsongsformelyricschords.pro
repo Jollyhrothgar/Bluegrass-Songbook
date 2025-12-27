@@ -1,6 +1,9 @@
 {meta: title No Sad Songs For Me}
 {meta: artist Bobby Bare}
 {meta: composer Tim Springfield}
+{meta: x_source classic-country}
+{meta: x_source_file nosadsongsformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I walk around [Dm]imagining the [G7]way she'll say good[C]bye [E7]
@@ -39,3 +42,10 @@ Spoken:
 {start_of_verse: Verse 7}
 [G7]It's all [C]over
 {end_of_verse}
+
+
+
+
+
+
+

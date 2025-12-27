@@ -1,6 +1,9 @@
 {meta: title You Can't Go Home}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file youcantgohomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Roy taught me how to play baseball 
@@ -80,3 +83,13 @@ You can't go home any[D7]more
 Roy's rheumatism Kathleen's cataract 
 And Freddy's fightin' someone else's [G]war
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

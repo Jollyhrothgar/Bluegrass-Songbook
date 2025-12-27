@@ -1,5 +1,8 @@
 {meta: title Rock In My Shoes}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file rockinmyshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I meet a girl or two in my life time
@@ -45,3 +48,8 @@ Because there ain't no more rock in my [C]shoes
 I'm [G7]walking down the ail great big smile 
 Because there ain't no more rock in my [C]shoes
 {end_of_verse}
+
+
+
+
+

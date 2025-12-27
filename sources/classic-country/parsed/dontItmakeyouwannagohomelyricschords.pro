@@ -1,6 +1,9 @@
 {meta: title Don’t It Make You Wanna Go Home}
 {meta: artist Bobby Bare}
 {meta: composer Joe South}
+{meta: x_source classic-country}
+{meta: x_source_file dontItmakeyouwannagohomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't it make you want to go home [Am]now
@@ -56,3 +59,10 @@ All God's children get weary when they [Am]roam
 [D7]Don't it make you want to go [G]home
 [D7]Don't it make you want to go [G]home
 {end_of_verse}
+
+
+
+
+
+
+

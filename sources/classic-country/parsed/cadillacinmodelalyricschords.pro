@@ -1,5 +1,8 @@
 {meta: title Cadillac In Model A}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file cadillacinmodelalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm a plain country boy and [C]I work on a [G]farm
@@ -32,3 +35,6 @@ Now we'll make love set our [C]wedding day
 And [G]Cadillac to the altar [C]in my Model [G]A
 [C]Cadillac to the [G]altar [C]in my Model [G]A
 {end_of_verse}
+
+
+

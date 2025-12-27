@@ -1,6 +1,9 @@
 {meta: title Good Time Chariot}
 {meta: artist Jack Greene}
 {meta: composer Joe Barnhill}
+{meta: x_source classic-country}
+{meta: x_source_file goodtimechariotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One by one we fall by the [F]wayside
@@ -60,3 +63,9 @@ He's gonna [C]let those good time [A7]chariot wheels
 Gonna let those good time [A7]chariot wheels
 [D7]Roll right [G7]over [C]you
 {end_of_verse}
+
+
+
+
+
+

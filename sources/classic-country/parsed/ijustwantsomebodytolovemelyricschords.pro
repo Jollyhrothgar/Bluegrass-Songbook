@@ -1,6 +1,9 @@
 {meta: title I Just Want Somebody to Love Me}
 {meta: artist Vernon Oxford}
 {meta: composer Everett Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file ijustwantsomebodytolovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just want  somebody to love [F]me
@@ -23,3 +26,5 @@ I just [C]want  somebody to love [F]me
 To love me [C]like  [G7]I'd love them [C]too
 [F]To love me [C]like  [G7]I'd love them [C]too
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Low Down Blues}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file lowdownblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord I went to the doctor he took one look 
@@ -28,3 +31,6 @@ I [C]went to the river but the [G]waters too cold
 I've [C]walked the floor till I've worn [G]out my shoes 
 Lord they're killing me I mean them [D7]low down [G]blues 
 {end_of_verse}
+
+
+

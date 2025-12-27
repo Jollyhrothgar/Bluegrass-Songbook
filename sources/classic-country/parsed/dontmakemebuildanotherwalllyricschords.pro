@@ -1,6 +1,9 @@
 {meta: title Don't Make Me Build Another Wall}
 {meta: artist Melba Montgomery}
 {meta: composer Melba Montgomery, Carl Montgomery, Bill Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file dontmakemebuildanotherwalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not long ago this heart of mine was [F]broken
@@ -29,3 +32,6 @@ I [F]can't resist your tender kiss [G7]that's all divine
 To [C]lose you now would be my big [F]downfall
 So [G7]please don't make me build another [C]wall
 {end_of_verse}
+
+
+

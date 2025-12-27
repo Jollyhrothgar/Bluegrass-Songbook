@@ -1,5 +1,8 @@
 {meta: title What Do I Care}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file whatdoicarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I'm all through if I haven't been [G7]what they think I should be 
@@ -35,3 +38,7 @@ And some[F]times my table looks a little [C]bare
 Any[F]thing that I may miss is made up [C]for each time we kiss 
 You love [D7]me and I love [G7]you so what'da I [C]care
 {end_of_verse}
+
+
+
+

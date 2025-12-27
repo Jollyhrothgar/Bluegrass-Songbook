@@ -1,6 +1,9 @@
 {meta: title Alabama Woman}
 {meta: artist Red Steagall}
 {meta: composer Donnie Lanier}
+{meta: x_source classic-country}
+{meta: x_source_file alabamawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As the lights of Tulsa brighten up the partly cloudy Oklahoma [F]skies
@@ -28,3 +31,6 @@ And I’m [G7]going home to Birmingham with an Alabama woman on my [C]mind
 Yes I’m [G7]going home to Birmingham with an Alabama woman on my [C]mind
 I’m [G7]going home to Birmingham with an Alabama woman on my [C]mind
 {end_of_verse}
+
+
+

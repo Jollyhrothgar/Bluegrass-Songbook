@@ -1,6 +1,9 @@
 {meta: title Rainbows And Roses}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes and Rayburn Anthony}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowandroseslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re as warm as you are [G7]pretty
@@ -33,3 +36,7 @@ And [G7]like a rose there’s only one of [C]you
 {start_of_verse: Verse 5}
 [F]You’re my rainbows and [C]roses
 {end_of_verse}
+
+
+
+

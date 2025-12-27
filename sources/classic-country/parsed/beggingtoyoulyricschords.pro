@@ -1,5 +1,8 @@
 {meta: title Begging to You}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file beggingtoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I left you this morning   couldn't take any [G7]more
@@ -22,3 +25,5 @@ I guess just to [G7]walk on  so you don't touch the [C]ground
 To you it don't [F]matter  what you cause me to [C]do
 As long as you [G7]keep me  begging to [C]you
 {end_of_verse}
+
+

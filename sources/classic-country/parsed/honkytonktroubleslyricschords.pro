@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Troubles}
 {meta: artist Vernon Oxford}
 {meta: composer Wayne P. Walker and Irene Stanton}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonktroubleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got honky tonk troubles every pay day
@@ -54,3 +57,10 @@ I've got honky tonk troubles every pay day
 {start_of_verse: Verse 6}
 [G7]All my buddies want a drink upon the [C]house
 {end_of_verse}
+
+
+
+
+
+
+

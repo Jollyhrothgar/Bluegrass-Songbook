@@ -1,6 +1,9 @@
 {meta: title It's Not All Over}
 {meta: artist Marty Robbins}
 {meta: composer Randy Sharp}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotalloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's not all over [G7]when you leave
@@ -31,3 +34,6 @@ We might have hit an [Dm]all time low[G7]
 But it's not all [F]ove[C]r [Dm]   [C]
 [G7]No it's [F]not all [G7]over[C]
 {end_of_verse}
+
+
+

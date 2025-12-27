@@ -1,5 +1,8 @@
 {meta: title The Gospel Way}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file thegospelwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a right and a wrong way to [G7]praise the [C]Lord
@@ -42,3 +45,8 @@
 [F]You must walk each day in the gospel [C]way
 [G7]If the works of God be [C]found
 {end_of_verse}
+
+
+
+
+

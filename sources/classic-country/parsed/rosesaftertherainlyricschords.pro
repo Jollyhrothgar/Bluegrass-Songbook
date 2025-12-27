@@ -1,6 +1,9 @@
 {meta: title Roses After The Rain}
 {meta: artist Ricky Van Shelton}
 {meta: composer Billy Burnette and Brian Tabor}
+{meta: x_source classic-country}
+{meta: x_source_file rosesaftertherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dark clouds roll in from the [Em]horizon
@@ -53,3 +56,10 @@ Will there be [A7]roses [D7]after the [G]rain[Em]
 There will be [Am]roses [D7]after the [G]rain[Em]
 There will be [Am]roses [D7]after the [G]rain
 {end_of_verse}
+
+
+
+
+
+
+

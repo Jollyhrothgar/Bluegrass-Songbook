@@ -1,6 +1,9 @@
 {meta: title Lovin' Is Livin'}
 {meta: artist Carl Smith}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file lovinislivinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I like kiss every mornin' and a kiss every night
@@ -43,3 +46,8 @@ To see it the way that I do
 And I'm [F]hopin' and prayin' that [C]you’ll soon be sayin'
 That lovin' [G7]is livin' [C]too
 {end_of_verse}
+
+
+
+
+

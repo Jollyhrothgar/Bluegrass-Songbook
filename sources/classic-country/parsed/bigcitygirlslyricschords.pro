@@ -1,6 +1,9 @@
 {meta: title Big City Girls}
 {meta: artist Carl Belew}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file bigcitygirlslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now big city girls drive big fine cars 
@@ -64,3 +67,11 @@ And [G7]fickle as they can [C]be
 I thought a [F]big city girl’s got [C]easy pickings 
 With an [G7]old country boy like [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+

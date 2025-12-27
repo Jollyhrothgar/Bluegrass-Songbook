@@ -1,6 +1,9 @@
 {meta: title Willie Waylon And Me}
 {meta: artist David Allan Coe}
 {meta: composer David A. Coe and Deborah Coe}
+{meta: x_source classic-country}
+{meta: x_source_file williewaylonandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I heard The Burritos out [F]in California could fly [C]higher than The [G7]Byrds
@@ -46,3 +49,8 @@ Like The [Am]Byrds they were trying to be [G7]free
 While in [F]Texas the talk turned to [C]Outlaws
 Like [G7]Willie and Waylon and [C]me
 {end_of_verse}
+
+
+
+
+

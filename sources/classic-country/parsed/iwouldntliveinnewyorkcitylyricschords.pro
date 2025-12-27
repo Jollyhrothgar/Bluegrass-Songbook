@@ -1,5 +1,8 @@
 {meta: title I Wouldn't Live In New York City}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldntliveinnewyorkcitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It ain't nothin' but a concrete jungle with people packed like sar[G7]dines
@@ -28,3 +31,6 @@ Talk about a bummer it's the biggest one [C]around
 Sodom and Gomorrah was tame [C7]to what I [F]found
 I wouldn't live in New York [C]City [A7]if they [D7]gave me the [G7]whole dang [C]town
 {end_of_verse}
+
+
+

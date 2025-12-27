@@ -1,6 +1,9 @@
 {meta: title Walking the Streets}
 {meta: artist Webb Pierce}
 {meta: composer Jim Fields}
+{meta: x_source classic-country}
+{meta: x_source_file walkingthestreetslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm walking the streets watching the sun go [C]down
@@ -29,3 +32,6 @@ Since you went [G]away I'm the loneliest guy in [D7]town
 The [G]sun's sinking low leaving me sad and [C]blue
 Walking the [G]streets I'm [D7]thinking only of [G]you
 {end_of_verse}
+
+
+

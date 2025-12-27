@@ -1,6 +1,9 @@
 {meta: title Rodger Young}
 {meta: artist Jim Reeves}
 {meta: composer Frank Loesser}
+{meta: x_source classic-country}
+{meta: x_source_file rodgeryounglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On July 31st 1943 a [Em]bloody round in the battle 
@@ -39,3 +42,7 @@ That [C]beneath the silent coral of the [G]Solo[Em]mon's
 [G]In the [C]everlasting glory [G]of the infan[Em]try
 [G]Lives the story of Private [D7]Rodger [G]Young
 {end_of_verse}
+
+
+
+

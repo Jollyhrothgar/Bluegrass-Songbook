@@ -1,6 +1,9 @@
 {meta: title Dear Jesus Abide With Me}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Jimmy Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file dearJesusabidewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes my way seems [D7]rough and long
@@ -22,3 +25,5 @@ For [C]He will abide [G]with [C]me[F]
 [D7]And [G]make my [G7]life what it [C]ought [G]to [A7]be
 Dear [G]Jesus abide [D7]with [G]me
 {end_of_verse}
+
+

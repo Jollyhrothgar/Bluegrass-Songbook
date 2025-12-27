@@ -1,6 +1,9 @@
 {meta: title Big Wheels}
 {meta: artist Hank Snow}
 {meta: composer Clovis Yarnall}
+{meta: x_source classic-country}
+{meta: x_source_file bigwheelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh them [C]big wheels are turnin' goin' [D7]somewhere
@@ -40,3 +43,7 @@ And it's carryin' her away from my [G]side
 [D7]Yes I [G]cried [D7]thought I'd [G]die
 [D7]Yes I [G]cried [D7]thought I'd [G]die
 {end_of_verse}
+
+
+
+

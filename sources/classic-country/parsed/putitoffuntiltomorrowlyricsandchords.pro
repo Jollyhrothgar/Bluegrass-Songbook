@@ -1,5 +1,8 @@
 {meta: title Put it Off Until Tomorrow}
 {meta: artist Jan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file putitoffuntiltomorrowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Put it off until [D7]tomorrow oh [G]oh 
@@ -27,3 +30,6 @@ Loneliness isn't [D7]far [G]away
 [C]Put it off until [D7]tomorrow oh [G]oh 
 You've hurt me [D7]enough [G]today
 {end_of_verse}
+
+
+

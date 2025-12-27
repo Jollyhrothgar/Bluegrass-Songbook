@@ -1,6 +1,9 @@
 {meta: title You're The Biggest Part Of Me}
 {meta: artist Faron Young}
 {meta: composer Merle Kilgore and Chuck Deal}
+{meta: x_source classic-country}
+{meta: x_source_file yourethebiggestpartofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I tasted love the first time that you [C]kissed me
@@ -33,3 +36,7 @@ You may be [G]little but you're the [D7]biggest part of [G]me
 {start_of_verse: Verse 5}
 [C]You may be [G]little but you're the [D7]biggest part of [G]me
 {end_of_verse}
+
+
+
+

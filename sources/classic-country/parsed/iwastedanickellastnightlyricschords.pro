@@ -1,6 +1,9 @@
 {meta: title I Wasted A Nickel Last Night}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Shorty Long and Bob Newman}
+{meta: x_source classic-country}
+{meta: x_source_file iwastedanickellastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I put a nickel in the telephone
@@ -51,3 +54,10 @@ But someday when your world gets [C]lonely
 [C]Of love not worth its weight in gold
 [D7]I wasted a nickel last [G]night
 {end_of_verse}
+
+
+
+
+
+
+

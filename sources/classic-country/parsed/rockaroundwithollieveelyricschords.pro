@@ -1,6 +1,9 @@
 {meta: title Rock Around With Ollie Vee}
 {meta: artist Buddy Holly}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file rockaroundwithollieveelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well we're gonna rock
@@ -69,3 +72,11 @@ To the rhythm and the blues tonight
 Cause [G]tonight we're gonna
 [D7]Rock to the rhythm and the bl[G]ues
 {end_of_verse}
+
+
+
+
+
+
+
+

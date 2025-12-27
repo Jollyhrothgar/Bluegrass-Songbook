@@ -1,6 +1,9 @@
 {meta: title Who's Gonna Take The Garbage Out}
 {meta: artist Loretta Lynn}
 {meta: composer Johnny Tillotson and Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file whosgonnatakethegarbageoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I take too much abuse from you 
@@ -72,3 +75,15 @@ You're gonna miss me honey gal
 {start_of_verse: Verse 12}
 Are you kidding
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

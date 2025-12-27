@@ -1,6 +1,9 @@
 {meta: title Ain't We Sad Today}
 {meta: artist Jeanne Pruett}
 {meta: composer Joe Christian}
+{meta: x_source classic-country}
+{meta: x_source_file aintwesadtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord [C]ain't we [G]sad [D7]tod[G]ay
@@ -30,3 +33,6 @@ Somewhere somehow [F]love slipped [C]away
 [G]Lord [C]ain't we [G]sad [D7]tod[G]ay
 Lord [C]ain't we [G]sad [D7]tod[F]ay[C]  [G]
 {end_of_verse}
+
+
+

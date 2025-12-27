@@ -1,6 +1,9 @@
 {meta: title She's Acting Single}
 {meta: artist Gary Stewart}
 {meta: composer Henry Hey and Stephanie Saraco}
+{meta: x_source classic-country}
+{meta: x_source_file shesactingsinglelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen [F]men look at [G7]her be[C]fore
@@ -43,3 +46,8 @@ I hide my [Dm]pain  [F]I drown my [C]troubles
 [C7]My heart is [F]breaking like the tiny [C]bubbles
 She's acting [Dm]single  [F]I'm drinking [C]doubles
 {end_of_verse}
+
+
+
+
+

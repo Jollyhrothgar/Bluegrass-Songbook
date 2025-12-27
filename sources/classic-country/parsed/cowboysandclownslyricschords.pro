@@ -1,6 +1,9 @@
 {meta: title Cowboys And Clowns}
 {meta: artist Ronnie Milsap}
 {meta: composer Stephen H. Dorff, Snuff Garrett,}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysandclownslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ladies take to cowboys like kids [F]take to [E7]clowns
@@ -40,3 +43,7 @@
 [Em]Cowboys and clowns cowboys and [G]clowns
 [Em]Cowboys and clowns cowboys and [G]clowns
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Wish I Was Wrong}
 {meta: artist Travis Tritt}
 {meta: composer Tommy Conners and Monte Warden}
+{meta: x_source classic-country}
+{meta: x_source_file iwishiwaswronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I [C]never saw it [G]coming 
@@ -42,3 +45,8 @@ But I [G]wis[C]h I was [G]wrong
 {start_of_verse: Verse 5}
 [C]Yes I [G]wis[C]h I was [G]wrong
 {end_of_verse}
+
+
+
+
+

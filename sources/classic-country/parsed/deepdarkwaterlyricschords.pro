@@ -1,5 +1,8 @@
 {meta: title Deep Dark Water}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file deepdarkwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Alone and so lonesome bored and so [C]blue
@@ -28,3 +31,6 @@ They keep sawing [A7]louder on my limb and soon I'll have to [D7]go
 Life's been [G]small hear my [B7]call as I fall [C]in deep dark [G]water
 Don't be a [C]would-be king and [G]tumble from [D7]your [G]throne
 {end_of_verse}
+
+
+

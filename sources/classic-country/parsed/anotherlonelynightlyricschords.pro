@@ -1,6 +1,9 @@
 {meta: title Another Lonely Night}
 {meta: artist Jean Shepard}
 {meta: composer Jan Crutchfield and Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file anotherlonelynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cryin' in the darkness
@@ -41,3 +44,7 @@ So I'll take [Em]another chance with [F]you
 [C]You'll be gone [Em]until the morning [F]light
 [Dm]Leavin' me [G7]another lonely [C]night
 {end_of_verse}
+
+
+
+

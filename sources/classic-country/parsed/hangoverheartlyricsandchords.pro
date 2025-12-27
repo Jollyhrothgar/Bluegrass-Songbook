@@ -1,6 +1,9 @@
 {meta: title Hangover Heart}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Pat J. Hagan}
+{meta: x_source classic-country}
+{meta: x_source_file hangoverheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got a hangover heart from your kisses last [C]night
@@ -29,3 +32,6 @@
 [C]Come back to me baby let's make a new start
 [D7]And take away the pain of this hangover [G]heart
 {end_of_verse}
+
+
+

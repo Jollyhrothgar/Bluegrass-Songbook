@@ -1,6 +1,9 @@
 {meta: title Ninety Miles An Hour Down A Dead End Street}
 {meta: artist Hank Snow}
 {meta: composer Hal Blair and Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file ninetymilesanhourdownadeadendstreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I took you home from a party and we kissed in fun
@@ -36,3 +39,7 @@ I didn't want to wander to now I have no choice
 [C]Disaster's getting closer every time we [G]meet
 [C]Doing 90 miles an hour down a dead end [G]street
 {end_of_verse}
+
+
+
+

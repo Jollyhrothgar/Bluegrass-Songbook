@@ -1,6 +1,9 @@
 {meta: title When My Conscience Hurts The Most}
 {meta: artist Charlie Walker}
 {meta: composer Vic McAlpin and Lester Vanadore}
+{meta: x_source classic-country}
+{meta: x_source_file whenmyconsciencehurtsthemostlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a place where no one knows us we [C7]hold secret [F]rendezvous
@@ -22,3 +25,5 @@ I [D7]know you can't be mine to keep but [G7]just to sometimes touch
 In a [C]place where no one knows us our [C7]affair can't be [F]exposed
 Why do I always [C]feel the best when my [G7]conscience hurts the [C]most
 {end_of_verse}
+
+

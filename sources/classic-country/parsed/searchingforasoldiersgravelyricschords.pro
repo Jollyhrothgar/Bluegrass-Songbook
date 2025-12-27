@@ -1,6 +1,9 @@
 {meta: title Searching For A Soldier's Grave}
 {meta: artist Hank Williams}
 {meta: composer Roy Acuff}
+{meta: x_source classic-country}
+{meta: x_source_file searchingforasoldiersgravelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You ask me stranger why I made this [F]journey
@@ -43,3 +46,8 @@ Somewhere here among these many [F]thousands
 That's [C]where I know I'll find him [F]resting
 [C]So I'm here [G7]I'm searching for his [C]grave
 {end_of_verse}
+
+
+
+
+

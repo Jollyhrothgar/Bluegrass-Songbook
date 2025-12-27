@@ -1,6 +1,9 @@
 {meta: title Another You}
 {meta: artist Loretta Lynn}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file anotheryoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]His eyes may be a deeper blue but they [C]remind me so much of you
@@ -27,3 +30,6 @@ Yes it [G]just might be [D7]I found me another [G]you
 {start_of_verse: Verse 4}
 [C]Oh yes it [G]just might be [D7]I found me another [G]you
 {end_of_verse}
+
+
+

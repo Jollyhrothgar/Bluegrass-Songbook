@@ -1,6 +1,9 @@
 {meta: title City Lights}
 {meta: artist Ray Price}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file citylightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A bright array of city lights 
@@ -57,3 +60,10 @@ But my [C]arms can’t hold them tight
 And I [D7]just can't say I love you
 To a street of city [G]lights
 {end_of_verse}
+
+
+
+
+
+
+

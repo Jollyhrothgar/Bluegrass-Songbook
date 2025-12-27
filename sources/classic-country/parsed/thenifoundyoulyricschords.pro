@@ -1,5 +1,8 @@
 {meta: title Then I Found You}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file thenifoundyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's not hard to tell an orchid from a [F]rose
@@ -37,3 +40,7 @@ You were the one in a million I've been looking [F]for
 You were the orchid I'd been trying so hard to [F]find
 Then I found [G7]you and I left that old bed of roses [C]behind
 {end_of_verse}
+
+
+
+

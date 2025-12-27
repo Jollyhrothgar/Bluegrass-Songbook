@@ -1,5 +1,8 @@
 {meta: title Hitchhiker}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file hitchhikerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't know why it [C]is every [G]time I take a trip
@@ -58,3 +61,10 @@ And I [C]started out the [D7]same darn way [G]myself
 I don't know why it [C]is every [G]time I take a trip
 It's [D7]always rainin' somewhere down the [G]line
 {end_of_verse}
+
+
+
+
+
+
+

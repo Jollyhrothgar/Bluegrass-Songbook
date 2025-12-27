@@ -1,6 +1,9 @@
 {meta: title Tennessee Courage}
 {meta: artist Vern Gosdin}
 {meta: composer Vern Gosdin, Rex Gosdin, James Brown)}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseecouragelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When they open the bar I'll be [C]there on the [G]stool
@@ -36,3 +39,7 @@ And he'll go to war with my [D7]troubles
 And [C]he'll never [D7]desert an old [G]friend when I'm [C]hurt
 And [G]needin' some [D7]Tennessee [G]courage
 {end_of_verse}
+
+
+
+

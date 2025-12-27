@@ -1,6 +1,9 @@
 {meta: title Texas Heartache Number One}
 {meta: artist Mickey Gilley}
 {meta: composer Paul Hotchkiss and Mike Terry}
+{meta: x_source classic-country}
+{meta: x_source_file texasheartachenumberonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight I made myself a promise[D7]
@@ -47,3 +50,9 @@ She’s Texas heartache number one [D7]
 {start_of_verse: Verse 5}
 I said [G]hey cowboy she’s a walking all over [C]you
 {end_of_verse}
+
+
+
+
+
+

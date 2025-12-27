@@ -1,5 +1,8 @@
 {meta: title I Know How}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file iknowhowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yeah I love him like he [G7]wants me to  [C]and I know [G]how
@@ -18,3 +21,5 @@
 {start_of_verse: Verse 3}
 repeat
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title We Might As Well Forget It}
 {meta: artist Bob Wills}
 {meta: composer Johnny Bond}
+{meta: x_source classic-country}
+{meta: x_source_file wemightaswellforgetitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve tried to save what was lost no [D7]matter what be the cost
@@ -29,3 +32,6 @@ But [D7]I’m so sick and tired of your hesi[G7]tatin’
 So please [C]return all the rings I [D7]gave along with other things 
 Cause [G7]we might as well forget each other [C]now
 {end_of_verse}
+
+
+

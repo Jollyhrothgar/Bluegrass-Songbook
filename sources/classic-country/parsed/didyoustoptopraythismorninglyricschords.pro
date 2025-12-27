@@ -1,6 +1,9 @@
 {meta: title Did You Stop To Pray This Morning}
 {meta: artist Mac Wiseman}
 {meta: composer Ray Westmoreland, Mark Hurley, Fred Dexter}
+{meta: x_source classic-country}
+{meta: x_source_file didyoustoptopraythismorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Did you stop to [F]pray this [C]morning
@@ -29,3 +32,6 @@ Did you [F]kneel just one moment to [C]pray
 Oh the skies will be blue cause He's [F]walking with [C]you
 If you just [G7]remember to [C]pray
 {end_of_verse}
+
+
+

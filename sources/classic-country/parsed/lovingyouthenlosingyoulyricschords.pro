@@ -1,6 +1,9 @@
 {meta: title Loving You Then Losing You}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file lovingyouthenlosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Loving you then [G]losing you is more [D7]than I can [G]stand
@@ -29,3 +32,7 @@ Cause [C]loving you then [G]losing you is [D7]more than I can [G]take
 [G]So don't tell me it's over our love is no mistake
 Cause [C]loving you then [G]losing you is [D7]more than I can [G]take
 {end_of_verse}
+
+
+
+

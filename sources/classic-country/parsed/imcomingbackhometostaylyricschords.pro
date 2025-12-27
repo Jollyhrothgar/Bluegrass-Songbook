@@ -1,6 +1,9 @@
 {meta: title I'm Coming Back Home To Stay}
 {meta: artist Buck Owens}
 {meta: composer Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file imcomingbackhometostaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well we just passed county [G7]line be home about a half past [C]nine
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [F]I’ll never more go [G7]away cause I'm coming back home to [C]stay
 {end_of_verse}
+
+
+
+
+

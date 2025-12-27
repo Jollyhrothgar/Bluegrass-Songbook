@@ -1,5 +1,8 @@
 {meta: title Rock And Roll To Rock Of Ages}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file rockandrolltorockofageslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was born to a Christian country [C]home 
@@ -78,3 +81,13 @@ Back to singing Rock of [G]Ages
 In [D7]the little country church 
 Seemed a million miles from the concert [G]stages 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

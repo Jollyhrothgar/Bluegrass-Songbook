@@ -1,6 +1,9 @@
 {meta: title And I'm Still Missing You}
 {meta: artist Dottie West}
 {meta: composer Chuck Glaser and James Payne}
+{meta: x_source classic-country}
+{meta: x_source_file andimstillmissingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]People laugh and [C]love and cry and [G]I'm still [D7]missing [G]you
@@ -25,3 +28,6 @@
 [G]People laugh and [C]love and cry and [G]I'm still missing [D7]you
 [G]I'm still [D7]missing [G]you
 {end_of_verse}
+
+
+

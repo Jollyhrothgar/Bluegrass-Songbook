@@ -1,5 +1,8 @@
 {meta: title Language Of Love}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file languageoflovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a China tea house or a French cafe
@@ -43,3 +46,8 @@ If you really love her you can make it known
 [F]That roses are the [G7]language of [C]love
 [F]Roses are the [G7]language of [C]love
 {end_of_verse}
+
+
+
+
+

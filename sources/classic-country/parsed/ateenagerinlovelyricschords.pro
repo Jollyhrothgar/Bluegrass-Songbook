@@ -1,6 +1,9 @@
 {meta: title A Teenager In Love}
 {meta: artist Ricky Nelson}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file ateenagerinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each time we have [Am]a quarrel it almost [F]breaks my [G7]heart
@@ -27,3 +30,6 @@ And [C]if you say [Am]goodbye I'll [F]still go on loving [G7]you
 [C]Each night I [Am]ask the [F]stars up [G7]above
 [C]Why must I [Am]be a teenager [F]in [G7]love
 {end_of_verse}
+
+
+

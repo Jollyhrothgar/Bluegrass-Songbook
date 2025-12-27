@@ -1,6 +1,9 @@
 {meta: title No No No}
 {meta: artist Rex Allen Jr.}
 {meta: composer Wayland Holyfield and Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file nononolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was lonely and shy 
@@ -71,3 +74,12 @@ I'll [F]set you free
 [G7]Golden rings would only bring
 A [F]change for [G7]you and [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+

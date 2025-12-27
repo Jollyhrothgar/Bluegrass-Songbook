@@ -1,6 +1,9 @@
 {meta: title It's Written All Over Your Face}
 {meta: artist Ronnie Milsap}
 {meta: composer Tom Brasfield and Robert Byrne}
+{meta: x_source classic-country}
+{meta: x_source_file itswrittenalloveryourfacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is there a [Em]tear in that [F]gleam in your eyes
@@ -36,3 +39,7 @@ Someone is [G7]taking my [C]place[G7]
 And it's [C]something you [G7]just can't [F]erase
 And it's [Dm]written all [G7]over your [C]face
 {end_of_verse}
+
+
+
+

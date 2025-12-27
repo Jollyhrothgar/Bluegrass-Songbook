@@ -1,6 +1,9 @@
 {meta: title Little Things Mean A Lot}
 {meta: artist Wanda Jackson}
 {meta: composer Edith Linderman and Carl Stutz}
+{meta: x_source classic-country}
+{meta: x_source_file littlethingsmeanalotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blow me a [Em]kiss from [Am]across the [D7]room
@@ -50,3 +53,9 @@
 [C]That always and [D7]ever [G]now and [Em]forever
 [Am]Little things [D7]mean a [G]lot
 {end_of_verse}
+
+
+
+
+
+

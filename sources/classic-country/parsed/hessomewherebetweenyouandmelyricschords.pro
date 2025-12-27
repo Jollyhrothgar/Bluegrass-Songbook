@@ -1,6 +1,9 @@
 {meta: title He's Somewhere Between You And Me}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Doyle Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file hessomewherebetweenyouandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know the location he's [F]using
@@ -33,3 +36,7 @@ And [C]he's somewhere [G7]between you and [C]me
 {start_of_verse: Verse 4}
 Yes he's somewhere [G7]between you and [F]m--[C]e
 {end_of_verse}
+
+
+
+

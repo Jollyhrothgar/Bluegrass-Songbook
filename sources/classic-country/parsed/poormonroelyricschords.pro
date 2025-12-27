@@ -1,6 +1,9 @@
 {meta: title Poor Monroe}
 {meta: artist Ricky Skaggs}
 {meta: composer Roy Centers}
+{meta: x_source classic-country}
+{meta: x_source_file poormonroelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just because he's lazy sits around with the blues
@@ -36,3 +39,7 @@ They [G]run Monroe off without his [D7]shoes
 He [G]always was lazy and he never liked to [C]work
 But now his feet [G]they are bare [D7]as he runs through the [G]dirt
 {end_of_verse}
+
+
+
+

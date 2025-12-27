@@ -1,5 +1,8 @@
 {meta: title There's Only One George Jones}
 {meta: artist Billy Yates}
+{meta: x_source classic-country}
+{meta: x_source_file theresonlyonegeorgejoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He grew up just a poor boy from Beaumont  
@@ -41,3 +44,8 @@ He's the [C]king of country [G7]soul there's only one George [C]Jones
 {start_of_verse: Verse 5}
 [F]He's the [C]king of country [G7]soul there's only one George [C]Jones
 {end_of_verse}
+
+
+
+
+

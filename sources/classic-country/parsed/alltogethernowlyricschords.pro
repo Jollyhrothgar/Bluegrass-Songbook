@@ -1,6 +1,9 @@
 {meta: title All Together Now}
 {meta: artist Stonewall Jackson}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file alltogethernowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All together now everybody drink  (everybody [D7]drink)
@@ -42,3 +45,9 @@ Think of all those sweet words
 [G]All together now everybody drink  (everybody [D7]drink)
 [G]All together now everybody think   (everybody think)
 {end_of_verse}
+
+
+
+
+
+

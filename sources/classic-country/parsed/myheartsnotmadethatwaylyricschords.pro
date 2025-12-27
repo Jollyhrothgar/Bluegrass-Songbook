@@ -1,6 +1,9 @@
 {meta: title My Heart's Not Made That Way}
 {meta: artist Eddy Arnold}
 {meta: composer Merle Kilgore}
+{meta: x_source classic-country}
+{meta: x_source_file myheartsnotmadethatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pretty words that you [Am]told me 
@@ -52,3 +55,9 @@ Cause my [D7]heart's not [G7]made that [C]way
 And I'll never never put you [Am]down babe 
 Cause my [D7]heart's not [G7]made that [C]way
 {end_of_verse}
+
+
+
+
+
+

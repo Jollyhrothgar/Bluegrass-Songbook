@@ -1,6 +1,9 @@
 {meta: title Fast Movin' Train}
 {meta: artist Jeannie Seely}
 {meta: composer Billy Troy and Bennie Boling}
+{meta: x_source classic-country}
+{meta: x_source_file fastmovintrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well [Em]ever since I met you seems like [B7]everything's a blur
@@ -43,3 +46,8 @@ Our [G]love is like a [D7]fast movin' [G]train
 It's [C]never turning back we're [G]on a one way [Em]track
 Our [G]love is like a [D7]fast movin' [G]train
 {end_of_verse}
+
+
+
+
+

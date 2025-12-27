@@ -1,5 +1,8 @@
 {meta: title Sweet Sweet Judy}
 {meta: artist David Houston}
+{meta: x_source classic-country}
+{meta: x_source_file sweetsweetjudylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw the picture in Sunday's paper
@@ -34,3 +37,8 @@ And when they find me they'll understand
 [C]Adios husta luego
 [G7]God be with you where e're you [C]go
 {end_of_verse}
+
+
+
+
+

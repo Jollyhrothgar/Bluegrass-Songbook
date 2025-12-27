@@ -1,6 +1,9 @@
 {meta: title Ladies Love Outlaws}
 {meta: artist Waylon Jennings}
 {meta: composer Lee Clayton}
+{meta: x_source classic-country}
+{meta: x_source_file ladiesloveoutlawslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bessie was a lovely child from [F]west Tennessee
@@ -43,3 +46,8 @@ Like [G7]babies love [C]stray dogs
 Ladies touch babies like a [F]banker touches gold
 And [G7]outlaws touch the ladies somewhere deep down in their [C]soul
 {end_of_verse}
+
+
+
+
+

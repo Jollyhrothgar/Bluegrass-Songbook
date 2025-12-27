@@ -1,6 +1,9 @@
 {meta: title If It Doesn't Snow on Christmas}
 {meta: artist Gene Autry}
 {meta: composer Milton Pascal and Gerald Marks}
+{meta: x_source classic-country}
+{meta: x_source_file ifitdoesntsnowonChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Santa [G7]works all [Am]day in his [G7]workshop
@@ -66,3 +69,11 @@ For the [F]sleigh he's driving [Am]here
 But [F]how he’ll go if it [Am]doesn't snow
 On [G7]Christmas this [F]year
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Satisfied Woman}
 {meta: artist Jean Shepard}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file satisfiedwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Livin' the good life and lovin' the one who means the [C]world to [G]me
@@ -22,3 +25,5 @@
 [G]And the future that's just [C]begun
 [D7]Ohohoh I'm a satisfied [G]woman  [D7]ohohoh I'm a satisfied [G]woman
 {end_of_verse}
+
+

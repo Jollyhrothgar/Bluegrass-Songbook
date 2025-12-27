@@ -1,5 +1,8 @@
 {meta: title I'm On My Way Back To The Old Home}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file imonmywaybacktotheoldhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Back in the days of my [C]childhood
@@ -42,3 +45,8 @@ That [G]road winds on up the [D7]hill
 But [G]there's no light in the [C]window
 That [G]shined long ago [D7]where I [G]lived
 {end_of_verse}
+
+
+
+
+

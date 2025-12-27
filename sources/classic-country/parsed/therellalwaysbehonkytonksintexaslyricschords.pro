@@ -1,6 +1,9 @@
 {meta: title There'll Always Be Honky Tonks In Texas}
 {meta: artist Johnny Rodriguez}
 {meta: composer Bobby Bond and Conrad Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file therellalwaysbehonkytonksintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes there'll always be [C7]honky tonks in [F]Texas
@@ -39,3 +42,7 @@ Yes there'll [C]always be [C7]honky tonks in [F]Texas
 [C]Home away from home for [G7]lonesome [C]cowboys
 And ladies who don't [G7]like to be [C]alone
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Auction}
 {meta: artist John Schneider}
 {meta: composer Don Goodman, Mark Sherrill, Claude Hendrick}
+{meta: x_source classic-country}
+{meta: x_source_file theauctionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I watched an auction take place today
@@ -47,3 +50,9 @@ Well the last three years the weather took the crops
 {start_of_verse: Verse 6}
 [F]Tell me how much did you pay for grandma's [C]bible
 {end_of_verse}
+
+
+
+
+
+

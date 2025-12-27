@@ -1,6 +1,9 @@
 {meta: title This Troubled Mind Of Mine}
 {meta: artist Ernest Tubb}
 {meta: composer Billy Hughes and Johnny Tyler}
+{meta: x_source classic-country}
+{meta: x_source_file thistroubledmindofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's gonna be some changin' round 
@@ -37,3 +40,6 @@ Got me a [C]baby that's got some sense
 Cuttin' [F]in at your [C]expense
 Gonna leave you and ease this [G7]troubled mind of [C]mine
 {end_of_verse}
+
+
+

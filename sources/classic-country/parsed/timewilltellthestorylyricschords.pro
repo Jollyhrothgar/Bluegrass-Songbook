@@ -1,5 +1,8 @@
 {meta: title Time Will Tell The Story}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file timewilltellthestorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It seems I see you everywhere
@@ -32,3 +35,6 @@ The story that I know so well
 [F]Time will tell the [G7]story of your [C]new love
 [F]Time will tell the [G7]story of your [C]new love
 {end_of_verse}
+
+
+

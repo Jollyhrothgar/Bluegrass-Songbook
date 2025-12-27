@@ -1,6 +1,9 @@
 {meta: title Just For The Record}
 {meta: artist Ray Price}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file justfortherecordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know our love is [F]over  [C]you've made it plain to [F]see
@@ -16,3 +19,4 @@ Or did [F]you once [G7]love me if you [C]did  [D7]why oh why did it [G7]die
 But just for the [C]record  [F]did you [G7]ever love [C]me
 [F]Just for the [C]record  [F]did you [G7]ever love [C]me
 {end_of_verse}
+

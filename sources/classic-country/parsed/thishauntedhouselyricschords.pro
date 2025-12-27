@@ -1,6 +1,9 @@
 {meta: title This Haunted House}
 {meta: artist Loretta Lynn}
 {meta: composer Oliver Doolittle}
+{meta: x_source classic-country}
+{meta: x_source_file thishauntedhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I watched you leave that's [F]how I know you're [C]gone
@@ -27,3 +30,6 @@ In this haunted house  [G7]we used to call [C]our home
 Each [F]morning finds me crying and [C]alone
 In this haunted house  we [G7]used to call our [C]home
 {end_of_verse}
+
+
+

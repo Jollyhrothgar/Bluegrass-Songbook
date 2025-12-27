@@ -1,6 +1,9 @@
 {meta: title This Highway Leads To Glory}
 {meta: artist Charley Pride}
 {meta: composer Lassaye Holmes}
+{meta: x_source classic-country}
+{meta: x_source_file thishighwayleadstoglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I remember when I  [C]was a little [G]boy
@@ -44,3 +47,8 @@ Oh you just [C]stay between the white lines
 {start_of_verse: Verse 5}
 Oh yes [C]you'll get to [D7]heaven right on [G]time
 {end_of_verse}
+
+
+
+
+

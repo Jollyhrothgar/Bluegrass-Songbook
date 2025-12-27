@@ -1,6 +1,9 @@
 {meta: title Cherokee Boogie}
 {meta: artist Hank Williams}
 {meta: composer Moon Mullican and Chief William Redbird}
+{meta: x_source classic-country}
+{meta: x_source_file cherokeeboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh a Cherokee Chief as he dances along
@@ -62,3 +65,16 @@ When he sings his boogie saying hey why-yo
 [C]Singing hey ho-alena  hey ho-alena
 [G7]Singing hey ho-alena Oo-oo-nana which-a [C]nai-ay-ay
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

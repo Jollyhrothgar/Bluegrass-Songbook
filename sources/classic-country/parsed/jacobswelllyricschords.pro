@@ -1,6 +1,9 @@
 {meta: title Jacob's Well}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Danny Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file jacobswelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The oldest fires and souls of men who [G7]searched for wealth
@@ -61,3 +64,11 @@ And the [Dm]ghostly forms that [G7]haunt the mounds of [Am]Jacob’s well
 {start_of_verse: Verse 7}
 And the [Dm]ghostly forms that [G7]never sleeps in [Am]Jacob’s well
 {end_of_verse}
+
+
+
+
+
+
+
+

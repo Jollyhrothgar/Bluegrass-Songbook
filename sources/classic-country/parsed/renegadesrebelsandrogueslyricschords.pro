@@ -1,6 +1,9 @@
 {meta: title Renegades Rebels And Rogues}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone, Paul Nelson, Earl Clark}
+{meta: x_source classic-country}
+{meta: x_source_file renegadesrebelsandrogueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They come from the wrong side of the track born a breed apart
@@ -34,3 +37,7 @@ That [C]all roads lead to another road for [G7]renegades rebels and [C]rogues
 They'll take any wrong [F]direction cause it's [C]in their blood to [Am]know
 That [C]all roads lead to another road for [G7]renegades rebels and [F]rogues[C]
 {end_of_verse}
+
+
+
+

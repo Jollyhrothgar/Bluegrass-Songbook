@@ -1,6 +1,9 @@
 {meta: title Christmas Is The Warmest Time Of The Year}
 {meta: artist Aaron Tippin}
 {meta: composer Henry Beard, Aaron Tippin, Thea Tippin}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasisthewarmesttimeoftheyearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Candy canes and popcorn strings and [Am]lights upon the [D7]tree
@@ -49,3 +52,9 @@ No [A7]matter cause our hearts will be [D7]aglow
 Oh [C]Christmas is the [Em]warmest [Am]Christmas is the warmest
 [D7]Time of the [G]year
 {end_of_verse}
+
+
+
+
+
+

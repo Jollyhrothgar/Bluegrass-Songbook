@@ -1,6 +1,9 @@
 {meta: title Tomorrow Night}
 {meta: artist Carl Smith}
 {meta: composer Sam Coslow and Will Grosz}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrownightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Tomorrow [C]night(tomorrow [C][G7]night)
@@ -25,3 +28,5 @@
 [F]Will you be with me when the moon is bright
 [G7]Tomorrow night [F]will you say the [G7]lovely things you [C]said [C][F]tonight
 {end_of_verse}
+
+

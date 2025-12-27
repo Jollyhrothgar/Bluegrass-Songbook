@@ -1,6 +1,9 @@
 {meta: title Good Imitation Of The Blues}
 {meta: artist Larry Sparks}
 {meta: composer Patrick Brayer}
+{meta: x_source classic-country}
+{meta: x_source_file goodimitationoftheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You called it quits  hung [A]up the [F]phone
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]With this good imitation of the [C]blues
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title What's The Matter With The Mill}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file whatsthematterwiththemilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Took my wheat down to get it ground
@@ -66,3 +69,8 @@ What's the matter with the [G]mill
 Can't get no [D7]grinding
 What's the matter with the [G]mill
 {end_of_verse}
+
+
+
+
+

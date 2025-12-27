@@ -1,6 +1,9 @@
 {meta: title If You're Gonna Play In Texas}
 {meta: artist Alabama}
 {meta: composer Dan Mitchell and Murray Kellum}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouregonnaplayintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you're gonna play in [D7]Texas you [C]gotta have a fiddle in the [G]band
@@ -50,3 +53,9 @@ That lead guitar is [D7]hot but not for [C]Lousiana [D7]Man
 So [Em]rosin up that [D7]bow for Faded [C]Love and let's all [G]dance
 If you're gonna play in [D7]Texas you [C]gotta have a fiddle in the [G]band
 {end_of_verse}
+
+
+
+
+
+

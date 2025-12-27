@@ -1,6 +1,9 @@
 {meta: title If I Had Someone To Cheat On}
 {meta: artist Moe Bandy}
 {meta: composer J.R. Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadsomeonetocheatonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm not here just drinking someone's [D7]memory away
@@ -23,3 +26,5 @@ No one to hold when I turn out the [D7]lights
 Now if I had some[G]one to cheat on [D7]I'd go home [G]tonight
 [C]If I had some[G]one to cheat on [D7]I'd go home [C]tonig[G]ht
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Talk About Me And See What She'll Say}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file talkaboutmeandseewhatshellsaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You think you have her love com[F]pletely
@@ -32,3 +35,7 @@ Talk a[G7]bout me and see what she’ll [C]say
 {start_of_verse: Verse 4}
 Talk a[G7]bout me and see what she’ll [C]say
 {end_of_verse}
+
+
+
+

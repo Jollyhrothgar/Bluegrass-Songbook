@@ -1,6 +1,9 @@
 {meta: title Be Not Afraid}
 {meta: artist Doyle Lawson}
 {meta: composer Jeannie C. Riley}
+{meta: x_source classic-country}
+{meta: x_source_file benotafraidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tossed to and fro the [F]disciples were fearing
@@ -40,3 +43,8 @@ So be of good [G7]faith for I'm here to stay be not [C]afraid
 {start_of_verse: Verse 5}
 So be of good [G7]faith for I'm here to stay be not a[F]fra[C]id
 {end_of_verse}
+
+
+
+
+

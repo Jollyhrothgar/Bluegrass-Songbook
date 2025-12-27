@@ -1,6 +1,9 @@
 {meta: title Forever}
 {meta: artist Johnny Duncan}
 {meta: composer Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file foreverlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hold me [C]kiss me [G]whisper [C]sweetly
@@ -36,3 +39,9 @@ For[C]ever and ever [A7]I'll love only [D7]you
 [G]Want me [C]need me [G]tell me [C]sweetly
 [G]That you'll [Am]love me for[G]ever
 {end_of_verse}
+
+
+
+
+
+

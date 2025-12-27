@@ -1,6 +1,9 @@
 {meta: title The Comancheros}
 {meta: artist Claude King}
 {meta: composer Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file thecomancheroslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Comancheros are [F]takin' this [C]land
@@ -54,3 +57,9 @@ With a [C]one-way ticket at the [F]end of the line
 He was [C]told by a stranger man
 The Comancheros [G7]are takin' this [C]land
 {end_of_verse}
+
+
+
+
+
+

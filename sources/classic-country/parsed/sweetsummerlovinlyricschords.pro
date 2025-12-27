@@ -1,6 +1,9 @@
 {meta: title Sweet Summer Lovin'}
 {meta: artist Dolly Parton}
 {meta: composer Blaise Tosti and George Reneau}
+{meta: x_source classic-country}
+{meta: x_source_file sweetsummerlovinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though the sun may be dawning you're the one that lights the morning
@@ -30,3 +33,7 @@ Across the [F]sill of your window we'll be [C]letting our love flow
 [F]Sweet summer [C]lovin' in the dandelions
 [F]Sweet summer [G7]lovin' keeps me high as candy [C]wine
 {end_of_verse}
+
+
+
+

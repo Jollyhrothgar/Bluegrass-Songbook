@@ -1,6 +1,9 @@
 {meta: title I Only Exist}
 {meta: artist The Stanley Brothers}
 {meta: composer Jimmie Stanley and Joyce Morris}
+{meta: x_source classic-country}
+{meta: x_source_file ionlyexistlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No I'm not [C]living  I only [G]exist
@@ -36,3 +39,7 @@ How much longer can I go on like [D7]this
 You broke my [C]heart  and tortured my [G]mind
 I've lost you darling  [D7]you're long gone this [G]time
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Have Thine Own Way Lord}
 {meta: artist Jim Reeves}
 {meta: composer George Stebbins and Adelaide Pollard}
+{meta: x_source classic-country}
+{meta: x_source_file havethineownwaylordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have Thine own [C]way  [G]Lord have Thine own [D7]way
@@ -22,3 +25,5 @@ Hold over my being  absolute [G]sway
 Filled with Thy [C]spir-[G]it till all can [C]see 
 Christ only [G]always  [D7]living in [G]me
 {end_of_verse}
+
+

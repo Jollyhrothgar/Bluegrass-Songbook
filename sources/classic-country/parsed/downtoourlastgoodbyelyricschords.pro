@@ -1,6 +1,9 @@
 {meta: title Down To Our Last Goodbye}
 {meta: artist Willie Nelson}
 {meta: composer Jan Crutchfield and Wayne Moss}
+{meta: x_source classic-country}
+{meta: x_source_file downtoourlastgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This was my [C]last mistake 
@@ -36,3 +39,6 @@ Of all [Am]those happy days gone [A7]by [B7]   [Em]
 {start_of_verse: Verse 4}
 [G]Now we're down [C]to our [D7]last good[G]bye
 {end_of_verse}
+
+
+

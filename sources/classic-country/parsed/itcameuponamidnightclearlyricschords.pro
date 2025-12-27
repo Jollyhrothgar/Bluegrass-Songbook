@@ -1,3 +1,6 @@
+{meta: x_source classic-country}
+{meta: x_source_file itcameuponamidnightclearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It came [F]upon a [C]midnight clear
@@ -40,3 +43,8 @@ Come [G7]swiftly [D7]on [G7]the wing
 O [C]rest beside [F]the weary [C]road
 And [F]hear the [G7]angels [C]sing
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Rest Your Love On Me}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file restyourloveonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe you don’t know me any more than I know you
@@ -50,3 +53,11 @@ I’d be right by your [F]side
 {start_of_verse: Verse 3}
 You know I hate to think that someone
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Living My Lifetime For You}
 {meta: artist Wilburn Brothers}
 {meta: composer Glen Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file livingmylifetimeforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many heartaches have passed since we met[G7]
@@ -29,3 +32,6 @@ You're [F]living to break me in [G7]two
 I'd [C]die while you'll be untrue
 Still I'm [F]living my [G7]lifetime for [C]you
 {end_of_verse}
+
+
+

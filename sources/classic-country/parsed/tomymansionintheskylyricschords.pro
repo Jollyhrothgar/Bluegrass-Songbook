@@ -1,5 +1,8 @@
 {meta: title To My Mansion In The Sky}
 {meta: artist Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file tomymansionintheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This train I’m riding they say it’s leaving
@@ -34,3 +37,8 @@ Don’t cry when I say [D7]goodbye
 There’ll be no [G]weeping where I’m [C]going
 To my [G]mansion [D7]in the [G]sky
 {end_of_verse}
+
+
+
+
+

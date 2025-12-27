@@ -1,5 +1,8 @@
 {meta: title I'm Moving On}
 {meta: artist Hank Snow Lyrics}
+{meta: x_source classic-country}
+{meta: x_source_file immovingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That big eight-wheeler rollin' down the track
@@ -56,3 +59,9 @@ Keep movin' on you stayed away too long
 I'm through with you too bad you're blue
 Keep movin' on
 {end_of_verse}
+
+
+
+
+
+

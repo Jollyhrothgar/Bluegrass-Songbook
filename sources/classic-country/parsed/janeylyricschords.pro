@@ -1,5 +1,8 @@
 {meta: title Janey}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file janeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Since you went away [G7]I have been so lonely Janey
@@ -26,3 +29,6 @@
 [E7]You’ll never know [F]what I’ve gone through
 [D7]Watching and a [G7]waiting for [C]you
 {end_of_verse}
+
+
+

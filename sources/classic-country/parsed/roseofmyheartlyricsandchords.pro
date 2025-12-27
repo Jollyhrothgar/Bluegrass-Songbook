@@ -1,5 +1,8 @@
 {meta: title Rose of My Heart}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file roseofmyheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're the best partners this [F]worlds ever [C]seen
@@ -46,3 +49,8 @@ A flower not fading or falling [F]apart
 You're my [C]harbor in life's restless [G7]storm
 Rose of my [C]heart
 {end_of_verse}
+
+
+
+
+

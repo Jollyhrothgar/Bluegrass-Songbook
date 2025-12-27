@@ -1,6 +1,9 @@
 {meta: title The Covered Wagon Rolled Right Along}
 {meta: artist Bob Wills}
 {meta: composer Hy Heath and Britt Wood}
+{meta: x_source classic-country}
+{meta: x_source_file thecoveredwagonrolledrightalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the covered wagon rolled right along
@@ -41,3 +44,7 @@ At playin’ poker Pappy won his fame
 [F]And a squaw with six papooses
 [C]And the covered wagon [G7]rolled right [C]along
 {end_of_verse}
+
+
+
+

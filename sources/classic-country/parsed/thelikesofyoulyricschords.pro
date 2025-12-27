@@ -1,6 +1,9 @@
 {meta: title The Likes Of You}
 {meta: artist George Jones}
 {meta: composer Randall Hylton}
+{meta: x_source classic-country}
+{meta: x_source_file thelikesofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The last time we parted I was broken [F]hearted
@@ -34,3 +37,7 @@ I'm gonna quit [C]relyin' [G7]on the likes of [C]you
 [F]I'm goin' to quit my [C]cryin' when you start good[F]byin'
 I'm gonna quit [C]relyin' [G7]on the likes of [C]you
 {end_of_verse}
+
+
+
+

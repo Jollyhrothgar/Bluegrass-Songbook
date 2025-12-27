@@ -1,5 +1,8 @@
 {meta: title Oh Little One}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file ohlittleonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh little [Am]one (oh little one)
@@ -41,3 +44,8 @@ Little [Am]one (oh little one)
 {start_of_verse: Verse 6}
 [C]Oh little [Am]one (oh little one)
 {end_of_verse}
+
+
+
+
+

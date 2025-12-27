@@ -1,6 +1,9 @@
 {meta: title She Ain't Rose}
 {meta: artist Leon Redbone}
 {meta: composer Gary Vincent and Ken Gray}
+{meta: x_source classic-country}
+{meta: x_source_file sheaintroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She ain't Rose but she ain't [C]bad
@@ -36,3 +39,7 @@ She ain't [G]Rose she ain't [D7]bad
 She's the [G]best gal I ever have [C]had 
 She ain't [G]Rose she ain't [D7]bad and Rose ain't [G]here
 {end_of_verse}
+
+
+
+

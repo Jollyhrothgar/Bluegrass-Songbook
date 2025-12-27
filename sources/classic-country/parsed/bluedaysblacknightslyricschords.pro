@@ -1,6 +1,9 @@
 {meta: title Blue Days Black Nights}
 {meta: artist Buddy Holly}
 {meta: composer Ben Hall}
+{meta: x_source classic-country}
+{meta: x_source_file bluedaysblacknightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blue days black [D7]nights
@@ -29,3 +32,6 @@
 [D7]But now you're [G]gone and I [D7]am [G]left here all [C]alone
 [G]With blue [D7]memories I think of [G]you
 {end_of_verse}
+
+
+

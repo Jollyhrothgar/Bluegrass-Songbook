@@ -1,6 +1,9 @@
 {meta: title I Feel a Cry Coming On}
 {meta: artist Hank Locklin}
 {meta: composer Ann Prince}
+{meta: x_source classic-country}
+{meta: x_source_file ifeelacrycomingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I feel a cry coming [C]on  [D7]mmm  [G]mmm
@@ -30,3 +33,6 @@ Each [D7]time I see you [G]again
 Or when something reminds me you are [C]gone
 Then [D7]I feel a cry coming [G]on
 {end_of_verse}
+
+
+

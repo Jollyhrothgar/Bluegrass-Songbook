@@ -1,6 +1,9 @@
 {meta: title Sweeter And Sweeter}
 {meta: artist Statler Brothers}
 {meta: composer Donald S. Reid and Harold W. Reid}
+{meta: x_source classic-country}
+{meta: x_source_file sweeterandsweeterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sweeter and sweeter the [F]days going [C]by
@@ -41,3 +44,8 @@ As the memories get sweeter [G7]I miss you and [C]cry
 Sweeter and sweeter the [F]days going [C]by
 As the memories get sweeter [G7]I miss you and [C]cry
 {end_of_verse}
+
+
+
+
+

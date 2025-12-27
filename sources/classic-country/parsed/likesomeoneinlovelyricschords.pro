@@ -1,6 +1,9 @@
 {meta: title Like Someone In Love}
 {meta: artist Charlie Rich}
 {meta: composer Johnny Burke and James Van Heusen}
+{meta: x_source classic-country}
+{meta: x_source_file likesomeoneinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lately I find myself out [Dm]gazing at [C]stars[Dm]
@@ -25,3 +28,6 @@ And [C]feeling [Am]   [D7]  like [G7]someone in [C]love
 (Some[Am]one in [D7]love) like [G7]someone in [C]love
 (Some[Am]one in [D7]love) like [G7]someone in [C]love
 {end_of_verse}
+
+
+

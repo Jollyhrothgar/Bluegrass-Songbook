@@ -1,5 +1,8 @@
 {meta: title Time Can't Make Me Forget}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file timecantmakemeforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Time may heal  the [F]pain in my [G7]heart
@@ -21,3 +24,5 @@ The way you'd [G7]speak so [C]tenderly
 And wedding [F]bells I hear them [C]yet
 No time [G7]cannot make me [C]forget
 {end_of_verse}
+
+

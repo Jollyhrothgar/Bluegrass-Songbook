@@ -1,6 +1,9 @@
 {meta: title My Eyes Are Jealous}
 {meta: artist Gene Watson}
 {meta: composer Jimmy Day}
+{meta: x_source classic-country}
+{meta: x_source_file myeyesarejealouslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your eyes aren't like the [G7]stars they're just your [C]eyes
@@ -34,3 +37,7 @@ Of each [F]other for the [G7]beauty they [C]behold
 Yes [F]when I look at you my eyes are [C]jealous
 Of each [F]other for the [G7]beauty they [C]behold
 {end_of_verse}
+
+
+
+

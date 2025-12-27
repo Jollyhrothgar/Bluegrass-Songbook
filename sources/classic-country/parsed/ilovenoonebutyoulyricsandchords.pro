@@ -1,5 +1,8 @@
 {meta: title I Love No One But You}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file ilovenoonebutyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s no [F]mistaking [C]my heart is [F]breaking
@@ -33,3 +36,7 @@ So [A#7]please come back to [F]me [G7]
 I swear I’ll [F]love no [G7]one but [C]you
 I swear I’ll [F]love no [G7]one but [C]you
 {end_of_verse}
+
+
+
+

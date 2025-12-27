@@ -1,5 +1,8 @@
 {meta: title Crying Cause I Love You}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file cryingcauseiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Crying cause I love you much [F]more than I should
@@ -28,3 +31,6 @@ Crying cause I know the tears that [F]fall will fall in vain
 Wish I didn’t love you or [F]care this hopeless way
 [G7]Crying cause I’m broken hearted since you went [C]away
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title By The Light Of A Burning Bridge}
 {meta: artist George Strait}
 {meta: composer Walt Aldridge and Michael White}
+{meta: x_source classic-country}
+{meta: x_source_file bythelightofaburningbridgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I've been [F]stumblin' [G7]through the [C]darkness [F]  [G7]
@@ -69,3 +72,12 @@ By the [Am]light of a [G7]burnin' [C]bridge [F]  [G7]
 It's [F]amazing what a [C]man can see
 By the [Am]light of a [G7]burnin' [C]bridge
 {end_of_verse}
+
+
+
+
+
+
+
+
+

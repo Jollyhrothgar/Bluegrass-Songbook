@@ -1,6 +1,9 @@
 {meta: title Only Bridge}
 {meta: artist Ray Price}
 {meta: composer Jeffrey Tweel and Garland Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file onlybridgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've always put the torch to every [C]bridge you crossed
@@ -28,3 +31,6 @@ The saddest part is that you were only [C]doing yourself [Am]wrong
 [D7]The only bridge you haven't burned is the one you're standing [G]on
 [D7]The only bridge you haven't burned is the one you're standing [G]on
 {end_of_verse}
+
+
+

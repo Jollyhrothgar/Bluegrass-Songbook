@@ -1,6 +1,9 @@
 {meta: title It's The Bottle Talking}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file itsthebottletalkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It’s the bottle talking when you say you’re mine
@@ -35,3 +38,8 @@ I remember darling why I set you free
 [G7]It’s the bottle [C]talking that makes the teardrops [G]shine
 [D7]But your heart is empty as the bubbles in the [G]wine
 {end_of_verse}
+
+
+
+
+

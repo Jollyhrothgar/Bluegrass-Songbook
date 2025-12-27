@@ -1,6 +1,9 @@
 {meta: title If I Could Be There}
 {meta: artist Emmylou Harris}
 {meta: composer Kieran Kane and Jamie O'Hara}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldbetherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could be there I'd be there tonight [F]comforting [C]you 
@@ -23,3 +26,5 @@ If [F]God would [C]grant me [F]wings to [C]fly I'd [F]be in your [C]arms by and 
 If I could be there I wouldn't have this [F]pain in my [C]heart
 If [F]I could be [C]there 
 {end_of_verse}
+
+

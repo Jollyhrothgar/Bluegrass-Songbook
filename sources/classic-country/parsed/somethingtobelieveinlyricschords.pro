@@ -1,5 +1,8 @@
 {meta: title Something To Believe In}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file somethingtobelieveinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There ain't too much chance for opportunity
@@ -78,3 +81,13 @@ Something to [F]believe [C]in [F]holding each [G7]other [C]tight
 Something to [F]beli[G7]eve [Am]in that special [F]something 
 Called being in [G7]love to get us [C]by
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

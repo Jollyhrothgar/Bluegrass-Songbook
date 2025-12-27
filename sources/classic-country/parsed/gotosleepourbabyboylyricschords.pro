@@ -1,6 +1,9 @@
 {meta: title Go To Sleep Our Baby Boy}
 {meta: artist Bob Wills}
 {meta: composer N.D. Allender}
+{meta: x_source classic-country}
+{meta: x_source_file gotosleepourbabyboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Go to sleep our baby boy
@@ -38,3 +41,9 @@ Guard your guard while in your dreams
 [G]You're loving soul's beneath our hearts
 [D7]While in your dreams into a [G]grownup man
 {end_of_verse}
+
+
+
+
+
+

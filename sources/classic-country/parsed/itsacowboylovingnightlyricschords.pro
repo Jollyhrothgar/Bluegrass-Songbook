@@ -1,6 +1,9 @@
 {meta: title It's A Cowboy Loving Night}
 {meta: artist Tanya Tucker}
 {meta: composer Randall Roger}
+{meta: x_source classic-country}
+{meta: x_source_file itsacowboylovingnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Their tuning those twin Texas fiddles
@@ -58,3 +61,13 @@ It could be the time is [D7]right
 Shuffle with me Houston stranger
 It's a cowboy loving [G]night 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

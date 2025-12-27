@@ -1,6 +1,9 @@
 {meta: title Some Do Some Don't Some Will Some Won't}
 {meta: artist Freddie Hart}
 {meta: composer Freddie Hart and Abe Mulkey}
+{meta: x_source classic-country}
+{meta: x_source_file somedosomedontsomewillsomewontlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a lot of different people living in this [F]world
@@ -43,3 +46,8 @@ Some will (some will) and some won't (some [C]won't)
 Turn out to be true [F]lovers
 Some do [C]some don't [G7]some will some [C]won't 
 {end_of_verse}
+
+
+
+
+

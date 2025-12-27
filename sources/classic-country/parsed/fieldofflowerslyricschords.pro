@@ -1,6 +1,9 @@
 {meta: title Field Of Flowers}
 {meta: artist Vernon Oxford}
 {meta: composer Paul Evans and Paul Parnes}
+{meta: x_source classic-country}
+{meta: x_source_file fieldofflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We met in a field of flowers
@@ -47,3 +50,9 @@ Have [D7]taken my baby from [G]me
 {start_of_verse: Verse 5}
 The [D7]roses the [G]daisy’s have [D7]taken my baby from [G]me
 {end_of_verse}
+
+
+
+
+
+

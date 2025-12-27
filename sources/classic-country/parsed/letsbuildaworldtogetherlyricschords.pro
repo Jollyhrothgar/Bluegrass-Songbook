@@ -1,6 +1,9 @@
 {meta: title Let's Build A World Together}
 {meta: artist David Houston}
 {meta: composer Norro Wilson, Carmol Taylor, George Richey}
+{meta: x_source classic-country}
+{meta: x_source_file letsbuildaworldtogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never believed a woman like you [F]existed
@@ -35,3 +38,7 @@ Let's build a [C]world to[A7]gether [Dm]yours [G7]and [C]mine
 {start_of_verse: Verse 4}
 [F]Let's build a [C]world to[A7]gether [Dm]yours [G7]and [C]mine
 {end_of_verse}
+
+
+
+

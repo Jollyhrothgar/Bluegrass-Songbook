@@ -1,5 +1,8 @@
 {meta: title May You Never Be Alone}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file mayyouneverbealonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like a bird that's lost its mate in [F]flight
@@ -28,3 +31,6 @@ For [G7]every wrong someday you'll [C]pay
 I pray the Lord to set me [F]free
 May you [G7]never be alone like [C]me
 {end_of_verse}
+
+
+

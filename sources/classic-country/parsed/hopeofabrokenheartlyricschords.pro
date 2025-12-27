@@ -1,6 +1,9 @@
 {meta: title Hope Of A Broken Heart}
 {meta: artist Cowboy Copas}
 {meta: composer Lois Mann and Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file hopeofabrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You broke my [G7]heart when you [C]went [G7]away
@@ -33,3 +36,6 @@ Now a [C]broken heart will mend
 With a [F]lover or a [D7]friend
 Oh [G7]darling please don't let it [C]end
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's The Messiah}
 {meta: artist Kenny Rogers}
 {meta: composer Don Potter}
+{meta: x_source classic-country}
+{meta: x_source_file itsthemessiahlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It must have been [Am][F]something
@@ -41,3 +44,8 @@
 [C]It's the [F]Messiah  He's come [Em]at [C]last
 [F]It's the [G7]Messiah  He's come at [C]last
 {end_of_verse}
+
+
+
+
+

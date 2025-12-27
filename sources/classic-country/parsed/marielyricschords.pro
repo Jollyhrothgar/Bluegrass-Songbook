@@ -1,6 +1,9 @@
 {meta: title Marie}
 {meta: artist Jim Reeves}
 {meta: composer Irving Berlin}
+{meta: x_source classic-country}
+{meta: x_source_file marielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ma[F]rie the dawn is breaking [C]Marie
@@ -29,3 +32,6 @@ A [C]kiss kiss kiss so very tender
 The [G7]words won't you [D7]surren[G7]der 
 To [C]me [F]hey [C]Marie
 {end_of_verse}
+
+
+

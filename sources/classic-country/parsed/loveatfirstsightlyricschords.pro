@@ -1,6 +1,9 @@
 {meta: title Love At First Sight}
 {meta: artist Freddie Hart}
 {meta: composer Freddie Hart, Wynn Stewart, Eddie Steele}
+{meta: x_source classic-country}
+{meta: x_source_file loveatfirstsightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Happy go lucky foot loose fancy [D7]free
@@ -43,3 +46,8 @@
 [C]My heart was guided by heaven's own light
 [D7]Love love at first [G]sight
 {end_of_verse}
+
+
+
+
+

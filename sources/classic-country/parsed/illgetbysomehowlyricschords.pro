@@ -1,6 +1,9 @@
 {meta: title I'll Get by Somehow}
 {meta: artist Webb Pierce}
 {meta: composer Wayne Walker}
+{meta: x_source classic-country}
+{meta: x_source_file illgetbysomehowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Throw away all my [G7]souvenirs take my pictures from the [C]shelf
@@ -33,3 +36,6 @@ I may be [G7]blue for a while  I'll get by some [C]how
 Forget what's happening [C]now
 Go on and [G7]live your life  I'll get by some [C]how
 {end_of_verse}
+
+
+

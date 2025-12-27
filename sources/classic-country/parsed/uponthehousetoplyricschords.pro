@@ -1,6 +1,9 @@
 {meta: title Upon The Housetop}
 {meta: artist Gene Autry}
 {meta: composer Jane Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file uponthehousetoplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Up on the housetop reindeer paws
@@ -51,3 +54,11 @@ Ho ho ho oh who [F]wouldn't go
 {start_of_verse: Verse 6}
 [F]Down through the [C]chimney with [G7]good Saint [C]Nick
 {end_of_verse}
+
+
+
+
+
+
+
+

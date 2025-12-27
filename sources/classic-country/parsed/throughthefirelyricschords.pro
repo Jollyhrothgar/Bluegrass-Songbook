@@ -1,6 +1,9 @@
 {meta: title Through The Fire}
 {meta: artist Randy Travis}
 {meta: composer Gerald Crabb}
+{meta: x_source classic-country}
+{meta: x_source_file throughthefirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So many times I've [G7]questioned [Am]certain circum[G7]stances
@@ -54,3 +57,10 @@ And He will [Dm]take you through [G7]the fire [C]again[G7]
 Just hold [G7]on our Lord will show up 
 And He will [Dm]take you through [G7]the fire [C]again
 {end_of_verse}
+
+
+
+
+
+
+

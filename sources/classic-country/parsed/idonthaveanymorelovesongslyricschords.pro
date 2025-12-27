@@ -1,6 +1,9 @@
 {meta: title I Don’t Have Anymore Love Songs}
 {meta: artist Merle Haggard}
 {meta: composer Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file idonthaveanymorelovesongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's been some things that I've wanted to say a long [F]time
@@ -29,3 +32,6 @@
 [F]I borrowed this song from Hank Williams Junior it's [C]true
 [G7]Cause I don't have anymore love songs to sing for [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Ask Me Why}
 {meta: artist Wanda Jackson}
 {meta: composer Ben Weisman and Fred Wise}
+{meta: x_source classic-country}
+{meta: x_source_file dontaskmewhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll go on [G7]loving you don't ask me [C]why 
@@ -22,3 +25,5 @@ I need you more and more don't ask me [C]why
 You're [C]all I'm longing for don't say [G7]goodbye
 I need you more and more don't ask me [C]why
 {end_of_verse}
+
+

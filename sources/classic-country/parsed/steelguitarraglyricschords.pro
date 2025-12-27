@@ -1,6 +1,9 @@
 {meta: title Steel Guitar Rag}
 {meta: artist Merle Travis}
 {meta: composer Cliffie Stone, Leon McAuliffe, Merle Travis}
+{meta: x_source classic-country}
+{meta: x_source_file steelguitarraglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Been runnin' around seen many a town
@@ -36,3 +39,7 @@ It [A7]sounds so dawg gone heavenly you'll [D7]hear them angels sing
 When you [C]stomp your feet your [G]heart will beat
 A [A7]rhythm to that [D7]ole steel guitar [G]rag
 {end_of_verse}
+
+
+
+

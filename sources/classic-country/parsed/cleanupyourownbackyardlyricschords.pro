@@ -1,6 +1,9 @@
 {meta: title Clean Up Your Own Backyard}
 {meta: artist Elvis Presley}
 {meta: composer Billy Strange, Mac Davis, Scott Davis}
+{meta: x_source classic-country}
+{meta: x_source_file cleanupyourownbackyardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Back porch preacher [G7]preaching at [C]me
@@ -69,3 +72,12 @@ Clean up your [G7]own backyard
 Clean up your [G7]own backyard
 [F]You tend to your business I’ll tend to [C]mine
 {end_of_verse}
+
+
+
+
+
+
+
+
+

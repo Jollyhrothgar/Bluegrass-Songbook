@@ -1,5 +1,8 @@
 {meta: title He Will}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file hewilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He will open up the doorway you [C]never knew was [G]there
@@ -26,3 +29,6 @@
 [C]He will give you life [G]eternal
 [D7]He will   He [G]will
 {end_of_verse}
+
+
+

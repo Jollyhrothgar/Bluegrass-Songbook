@@ -1,6 +1,9 @@
 {meta: title Falling For You For Years}
 {meta: artist Conway Twitty}
 {meta: composer Michael Barry Reid and Troy Harold Seals}
+{meta: x_source classic-country}
+{meta: x_source_file fallingforyouforyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lookin' at us you'd think that we just [Em]met
@@ -60,3 +63,10 @@ They see a beautiful woman
 [G7]Runnin' deep runnin' strong
 [Em]It's been going on and on and on and on [A7]and on
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Very Best Is You}
 {meta: artist Charly McClain}
 {meta: composer Frank Stephens and Larry Shell}
+{meta: x_source classic-country}
+{meta: x_source_file theverybestisyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Why would I want [C]another when the [G7]very best is [C]you
@@ -25,3 +28,6 @@ You're all that I could ever want [F]it's easy to be true
 Why would I want [C]another when the [G7]very best is [C]you 
 When the [G7]very best is [C]you
 {end_of_verse}
+
+
+

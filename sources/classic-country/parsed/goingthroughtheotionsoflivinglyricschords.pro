@@ -1,6 +1,9 @@
 {meta: title Going Through The Motions Of Living}
 {meta: artist Sonny James}
 {meta: composer Bob Tubert and Jean Chapel}
+{meta: x_source classic-country}
+{meta: x_source_file goingthroughtheotionsoflivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just [G7]going through the motions of [C]living 
@@ -31,3 +34,7 @@ Now I'm [G7]going through the motions [C]of [G7]living
 We [C]laughed we loved I cried we [F]parted and I [C]died 
 Now I'm [G7]going through the motions of [C]living
 {end_of_verse}
+
+
+
+

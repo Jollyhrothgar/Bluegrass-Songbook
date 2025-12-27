@@ -1,5 +1,8 @@
 {meta: title Satan Can’t Hold Me}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file satancantholdmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the trumpets are sounded and the judgment we [C]stand
@@ -21,3 +24,5 @@ I'll swim [D7]every river that keeps me from [G]you
 Till that wonderful day we're together [C]again
 Satan can't [G]hold me [D7]true love must [G]win
 {end_of_verse}
+
+

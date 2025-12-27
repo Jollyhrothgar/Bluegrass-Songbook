@@ -1,5 +1,8 @@
 {meta: title Deal}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file deallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well life is a gamble and the days are just so many [F]decks
@@ -28,3 +31,6 @@ Oh it [G7]won't do to cheat cause you have to cash in when you [C]die
 Oh [C]you can't have a full house the queen has been dealt to a [F]friend
 Oh the [G7]good thing about life is they shuffle and they deal life [C]again
 {end_of_verse}
+
+
+

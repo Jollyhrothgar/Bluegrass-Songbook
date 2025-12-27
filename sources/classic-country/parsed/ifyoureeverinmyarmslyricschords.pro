@@ -1,6 +1,9 @@
 {meta: title If You're Ever In My Arms}
 {meta: artist Ricky Van Shelton}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoureeverinmyarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I wish that you could [F]see 
@@ -57,3 +60,10 @@ Girl [A]I'll live every[A7]day
 Like you're gonna go [Dm]away 
 [G7]If you're ever in my [C]arms again
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Curtain Of Tears}
 {meta: artist Slim Whitman}
 {meta: composer Cecil Harris and Arlie Carter}
+{meta: x_source classic-country}
+{meta: x_source_file curtainoftearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wondered through acres of flowers
@@ -35,3 +38,6 @@ A love that I cherished for [G7]years
 I’m standing on stage of sorrow
 Behind this curtain of [C]tears
 {end_of_verse}
+
+
+

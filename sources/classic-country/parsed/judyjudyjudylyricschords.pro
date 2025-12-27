@@ -1,6 +1,9 @@
 {meta: title Judy Judy Judy}
 {meta: artist Johnny Tillotson}
 {meta: composer Doc Pomus, Mort Shuman, Johnny Tillotson}
+{meta: x_source classic-country}
+{meta: x_source_file judyjudyjudylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Judy's [F]got the [G7]lips I love to [C]kiss [F]   [G7]
@@ -45,3 +48,9 @@ Rea[C]lize Judy [F]Judy [G7]Judy I love [C]you
 {start_of_verse: Verse 6}
 Judy [F]Judy [G7]Judy I love [C]you
 {end_of_verse}
+
+
+
+
+
+

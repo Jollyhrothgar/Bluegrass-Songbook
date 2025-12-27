@@ -1,6 +1,9 @@
 {meta: title One More Memory}
 {meta: artist Wynn Stewart}
 {meta: composer Bobby George and Vern Stovall}
+{meta: x_source classic-country}
+{meta: x_source_file onemorememorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello darling I'm just passing through this way
@@ -36,3 +39,9 @@ But if I could see you I'd have one more [G]memory
 Would you meet me in our same old meeting place
 I promise you that I won't speak of [G]yesterday
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title In A Hundred Years Or More}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file inahundredyearsormorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a hundred years or [F]more I'll [G7]still feel the same I'm [C]sure
@@ -28,3 +31,6 @@
 [G7]Will uphold us as before
 [C]In a hundred years or more
 {end_of_verse}
+
+
+

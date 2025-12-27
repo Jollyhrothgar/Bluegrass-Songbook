@@ -1,6 +1,9 @@
 {meta: title True Love}
 {meta: artist Patsy Cline}
 {meta: composer Cole Porter}
+{meta: x_source classic-country}
+{meta: x_source_file truelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]While I [C]give [F]to you  and [C]you give to [G7]me
@@ -24,3 +27,6 @@ But to [C]give to you  [F]and to give to [C]me
 {start_of_verse: Verse 4}
 [G7]Love forever [C]true
 {end_of_verse}
+
+
+

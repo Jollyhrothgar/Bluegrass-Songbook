@@ -1,6 +1,9 @@
 {meta: title Come Back To Me}
 {meta: artist Carl Smith}
 {meta: composer Sonny James and John Skye}
+{meta: x_source classic-country}
+{meta: x_source_file comebacktomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come back to me when roamin' days are [D7]over
@@ -29,3 +32,6 @@
 [G]I understand I know that you must leave [D7]me
 [G]Go on and roam then come back home come back to me
 {end_of_verse}
+
+
+

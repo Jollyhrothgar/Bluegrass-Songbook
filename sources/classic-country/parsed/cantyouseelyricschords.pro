@@ -1,6 +1,9 @@
 {meta: title Can't You See}
 {meta: artist Waylon Jennings}
 {meta: composer Toy T. Caldwell}
+{meta: x_source classic-country}
+{meta: x_source_file cantyouseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gonna catch a freight train as far as I can [F]Lord
@@ -29,3 +32,6 @@ What that [C]woman's been doing to [G]me
 Can't you see can't you [F]see 
 What that [C]woman's been doing to [G]me
 {end_of_verse}
+
+
+

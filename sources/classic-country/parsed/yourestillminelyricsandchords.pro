@@ -1,6 +1,9 @@
 {meta: title You're Still Mine}
 {meta: artist Faron Young}
 {meta: composer Eddie Thorpe and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file yourestillminelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 You're still [G7]mine  don't forget it for a [C]day
@@ -29,3 +32,6 @@ Dance and [G7]sing won't bother me at [C]all
 But don't fall for [C7]any-body's [F]lies
 And remember when they hold you  [G7]you're still [C]mine
 {end_of_verse}
+
+
+

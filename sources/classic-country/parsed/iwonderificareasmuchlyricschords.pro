@@ -1,6 +1,9 @@
 {meta: title I Wonder If I Care As Much}
 {meta: artist the Everly Brothers}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderificareasmuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wonder [D7]if I [G]care as [D7]much
@@ -44,3 +47,9 @@ I [C]ask myself do [D7]I still [G]c-a-re
 I wonder [D7]if I [G]care as [D7]much
 [G]As I did [G][D7]before
 {end_of_verse}
+
+
+
+
+
+

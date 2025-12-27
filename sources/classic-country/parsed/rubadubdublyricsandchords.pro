@@ -1,5 +1,8 @@
 {meta: title Rub a Dub Dub}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file rubadubdublyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once upon a time in a nursery rhyme three little men got [C]lost
@@ -26,3 +29,6 @@ The [D7]one I adore on the distance shore is now at the rainbow’s [G]end
 To the three little guys I turned my eyes won’t you tell your names to [C]me
 Well [D7]one said fate one said hate and the other said [G]jealousy
 {end_of_verse}
+
+
+

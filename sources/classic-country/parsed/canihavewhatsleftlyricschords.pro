@@ -1,6 +1,9 @@
 {meta: title Can I Have What's Left}
 {meta: artist Billy Parker}
 {meta: composer Jimmie Helms}
+{meta: x_source classic-country}
+{meta: x_source_file canihavewhatsleftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can I have what’s left when he’s [G7]through with you
@@ -28,3 +31,6 @@ Just [D7]anything he’s overlooked when he’s [F]through with all his [G7]sche
 [G7]Can I have what’s left just anything at all 
 Can I have what’s left when he’s through with [C]you
 {end_of_verse}
+
+
+

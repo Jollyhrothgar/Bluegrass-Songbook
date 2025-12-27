@@ -1,6 +1,9 @@
 {meta: title Am I To Be The One}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Otis Blackwell and Bobby Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file amitobetheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Am I to be the one that your heart picks 
@@ -54,3 +57,11 @@ Am [D7]I to be the one that wins your [G]heart
 [C]Am I to be the one 
 Am [D7]I to be the one that wins your [G]heart
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title One More Time}
 {meta: artist Jeanne Pruett}
 {meta: composer Jeanne Pruett and Walter Haynes}
+{meta: x_source classic-country}
+{meta: x_source_file onemoretimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know it’s late but I just [F]let that ole phone [C]ring
@@ -22,3 +25,5 @@ And let me feel your trembling body touching [G7]mine
 I’m not [C]ashamed to [F]say what’s on my [C]mind
 Cause I still love you and I [G7]need you one more [C]time
 {end_of_verse}
+
+

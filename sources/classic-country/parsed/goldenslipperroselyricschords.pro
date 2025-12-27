@@ -1,6 +1,9 @@
 {meta: title Golden Slipper Rose}
 {meta: artist Charlie Rich}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file goldenslipperroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now mama wore those [F]skin tight dresses [C]all the time
@@ -30,3 +33,6 @@ Now the preacher reads a [F]line that fits [C]mama like a glove
 {start_of_verse: Verse 4}
 [F]Heaven waits to [C]welcome home  [G7]Golden Slipper [C]Rose
 {end_of_verse}
+
+
+

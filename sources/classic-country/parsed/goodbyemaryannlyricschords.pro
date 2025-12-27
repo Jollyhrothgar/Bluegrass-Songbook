@@ -1,5 +1,8 @@
 {meta: title Goodbye Mary Ann}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyemaryannlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I offered you love I offered you love
@@ -46,3 +49,9 @@ Mary [G7]Ann goodbye Mary [C]Ann
 Mary [G7]Ann goodbye Mary [C]Ann
 Mary [G7]Ann goodbye Mary [C]Ann
 {end_of_verse}
+
+
+
+
+
+

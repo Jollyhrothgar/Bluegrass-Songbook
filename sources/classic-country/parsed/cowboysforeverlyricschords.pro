@@ -1,6 +1,9 @@
 {meta: title Cowboys Forever}
 {meta: artist Garth Brooks}
 {meta: composer Dean Dillon, Wynn Varble, John Martin}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]They were [C]carved from the [G7]canyons [Am]raised on the plains
@@ -43,3 +46,7 @@ We're [C]cow[G7]boys [Am]cowboys for[C]ever
 [F]We've always [C]been it's what we'll [Dm]always [G7]be
 Cowboys for[Am]ever[G7]   [C]
 {end_of_verse}
+
+
+
+

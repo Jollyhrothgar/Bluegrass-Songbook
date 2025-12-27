@@ -1,6 +1,9 @@
 {meta: title My First Day Without Her}
 {meta: artist Ray Price}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file myfirstdaywithoutherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [A7]Is that the sun that I see [D7]shinning
@@ -44,3 +47,8 @@
 [A#7]It's my first day without her
 [C]And I'm going through hell
 {end_of_verse}
+
+
+
+
+

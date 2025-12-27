@@ -1,6 +1,9 @@
 {meta: title Love Me Love Me Honey Do}
 {meta: artist Patsy Cline}
 {meta: composer W.S. Stevenson, Clyde Beam, Charles Jiles}
+{meta: x_source classic-country}
+{meta: x_source_file lovemelovemehoneydolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My love is deeper than the world's deepest [G7]sea
@@ -47,3 +50,10 @@ A love me honey squeeze me tight
 {start_of_verse: Verse 6}
 [G7]Love me love me honey [C]do
 {end_of_verse}
+
+
+
+
+
+
+

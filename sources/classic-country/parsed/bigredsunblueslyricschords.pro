@@ -1,6 +1,9 @@
 {meta: title Big Red Sun Blues}
 {meta: artist Johnny Rodriguez}
 {meta: composer Lucinda Williams}
+{meta: x_source classic-country}
+{meta: x_source_file bigredsunblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everything is [F]going wrong it’s not right [C]anymore
@@ -36,3 +39,7 @@ Big red [G7]sun big red sun big red sun [C]blues
 How am I gonna [F]lose these big red [C]sun blues [C7]
 Big red [G7]sun big red sun big red sun [C]blues
 {end_of_verse}
+
+
+
+

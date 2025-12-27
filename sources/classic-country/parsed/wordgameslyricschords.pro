@@ -1,5 +1,8 @@
 {meta: title Word Games}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file wordgameslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We meet on the street and we play word games
@@ -44,3 +47,11 @@ You say time really flies
 {start_of_verse: Verse 7}
 [F]Hiding all the [G7]things we really [C]feel
 {end_of_verse}
+
+
+
+
+
+
+
+

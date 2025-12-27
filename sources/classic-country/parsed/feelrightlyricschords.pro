@@ -1,6 +1,9 @@
 {meta: title Feel Right}
 {meta: artist Tanya Tucker}
 {meta: composer Larry Byron}
+{meta: x_source classic-country}
+{meta: x_source_file feelrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You know I want you baby I can't [C]help but feel this [G]way
@@ -27,3 +30,6 @@
 [G]I wanna kiss you all over it's [C]gonna feel oh so [G]nice
 [C]I know it's hard on you [G]baby come on and make [D7]me feel [G]right
 {end_of_verse}
+
+
+

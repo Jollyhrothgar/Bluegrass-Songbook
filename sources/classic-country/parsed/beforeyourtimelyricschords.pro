@@ -1,6 +1,9 @@
 {meta: title Before Your Time}
 {meta: artist Conway Twitty}
 {meta: composer Conway Twitty and Tommy Markham}
+{meta: x_source classic-country}
+{meta: x_source_file beforeyourtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Other arms [F]have held me [C]before your time
@@ -29,3 +32,6 @@ The melo[F]dy was born when we [C]walked right [G7]to love's [C]door
 The words I [F]love you came but I [C]just couldn't [G7]sing that [C]line
 Oh but [F]darlin' that was [C]long [G7]before your [C]time
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Pick Of The Week}
 {meta: artist Roy Drusky}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file thepickoftheweeklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You only say hello so you can say [C]goodbye
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]Yes I was just your pick of the [G]week
 {end_of_verse}
+
+
+
+

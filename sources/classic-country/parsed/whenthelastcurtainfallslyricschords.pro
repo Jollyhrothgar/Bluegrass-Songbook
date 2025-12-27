@@ -1,6 +1,9 @@
 {meta: title When The Last Curtain Falls}
 {meta: artist George Jones}
 {meta: composer Emory Gordy Jr. and Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file whenthelastcurtainfallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Even though I still steam
@@ -52,3 +55,9 @@ When the last curtain falls with a final goodbye
 [C]There's no reason or cause [G]to cheer [C]or [G]applause
 [D7]When the last curtain [G]falls
 {end_of_verse}
+
+
+
+
+
+

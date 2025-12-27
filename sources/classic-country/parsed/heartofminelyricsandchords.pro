@@ -1,6 +1,9 @@
 {meta: title Heart Of Mine}
 {meta: artist Ricky Van Shelton}
 {meta: composer Allen Shamblin and Bernie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file heartofminelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heart of mine [C]heart of [G]mine
@@ -66,3 +69,12 @@ She'll [C]blame it all on [G]me
 {start_of_verse: Verse 7}
 I must've been a fool to listen [D7]to your heart of [C]min[G]e
 {end_of_verse}
+
+
+
+
+
+
+
+
+

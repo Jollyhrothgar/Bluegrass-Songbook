@@ -1,6 +1,9 @@
 {meta: title Complicated}
 {meta: artist Ricky Van Shelton}
 {meta: composer Bill LaBounty and Pat McLaughlin}
+{meta: x_source classic-country}
+{meta: x_source_file complicatedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Throw up a quarter and I'll [C]call it  
@@ -52,3 +55,10 @@ And then you [F]hate to love
 It's [C]heart related it's [F]complicated
 Well it’s [C]complicated
 {end_of_verse}
+
+
+
+
+
+
+

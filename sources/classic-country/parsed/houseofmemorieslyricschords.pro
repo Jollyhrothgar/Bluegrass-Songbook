@@ -1,5 +1,8 @@
 {meta: title House Of Memories}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file houseofmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]My house of [C]memories  [F]is all I [C]own
@@ -18,3 +21,4 @@
 [C]My house of [F]memories  is [C]all I [F]own
 [C]I'm all alone  [G7]in my house of [C]memories
 {end_of_verse}
+

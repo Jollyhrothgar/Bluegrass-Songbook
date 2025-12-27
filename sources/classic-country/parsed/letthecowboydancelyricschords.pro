@@ -1,6 +1,9 @@
 {meta: title Let The Cowboy Dance}
 {meta: artist Michael Martin Murphey}
 {meta: composer Don Cook, Chick Rains, Michael Martin Murphey}
+{meta: x_source classic-country}
+{meta: x_source_file letthecowboydancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He ain't been right since she's been [G7]gone
@@ -43,3 +46,8 @@ Maybe he won't fuss maybe he won't [C]fight
 It's our only hope it's our only [G7]chance
 Clear the floor boys and let the cowboy [C]dance
 {end_of_verse}
+
+
+
+
+

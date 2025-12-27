@@ -1,6 +1,9 @@
 {meta: title Gettin' Soft On You}
 {meta: artist Faron Young}
 {meta: composer Eddie Pleasant and Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file gettinsoftonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm well aware [C]she's your best [G]friend
@@ -42,3 +45,7 @@
 [D7]Cause while she's playin' hard to get
 [C]I'm gettin' soft on [G]you
 {end_of_verse}
+
+
+
+

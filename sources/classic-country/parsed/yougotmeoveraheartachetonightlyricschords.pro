@@ -1,6 +1,9 @@
 {meta: title You Got Me Over A Heartache Tonight}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton and Larry Weiss}
+{meta: x_source classic-country}
+{meta: x_source_file yougotmeoveraheartachetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can't say we're lovers [G7]can't say we're [C]friends 
@@ -30,3 +33,6 @@ Oh and [E7]it may not last but who [Am]knows it just [D7]might
 But [C]you got me over a [F]hear[G7]tache to[C]night
 Yes [C]you got me over a [F]hear[G7]tache to[F]night [C]mhm
 {end_of_verse}
+
+
+

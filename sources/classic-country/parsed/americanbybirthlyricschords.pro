@@ -1,6 +1,9 @@
 {meta: title American By Birth}
 {meta: artist Waylon Jennings}
 {meta: composer Roger Wade}
+{meta: x_source classic-country}
+{meta: x_source_file americanbybirthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna go down on the creek bank gather all my people
@@ -36,3 +39,7 @@ Where my father and my children's feet have [G7]trod
 We shall [F]all sing halle[C]lujah
 I'm American by birth and [G7]southern by the grace of [C]God
 {end_of_verse}
+
+
+
+

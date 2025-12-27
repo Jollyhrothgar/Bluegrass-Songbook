@@ -1,6 +1,9 @@
 {meta: title I Don't Mind Saying}
 {meta: artist Charlie Walker}
 {meta: composer Raymond Page}
+{meta: x_source classic-country}
+{meta: x_source_file idontmindsayinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't mind [F]saying I've been lonesome 
@@ -57,3 +60,10 @@ I don't [C]miss you anymore
 Don't mind [G7]saying I'd be glad to see you 
 Walking through that [C]door
 {end_of_verse}
+
+
+
+
+
+
+

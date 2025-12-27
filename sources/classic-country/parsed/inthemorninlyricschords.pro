@@ -1,5 +1,8 @@
 {meta: title In The Mornin'}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file inthemorninlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the sun comes up and it's time to get up in the [D7]mornin'
@@ -27,3 +30,6 @@ Well I don't know why you could say goodbye
 And [C]I can't see how you could be
 [D7]Anywhere but here with me in the [G]mornin'
 {end_of_verse}
+
+
+

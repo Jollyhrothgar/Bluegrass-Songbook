@@ -1,5 +1,8 @@
 {meta: title I'll Not Be A Stranger}
 {meta: artist Stanley Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file illnotbeastrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll not be a stranger when I [F]get to that city
@@ -45,3 +48,8 @@ But they'll [G7]wait at the gate un[C]til my race is won
 I'll not be a stranger when I [F]get to that city
 I'm [C]acquainted with [G7]folks over [C]there
 {end_of_verse}
+
+
+
+
+

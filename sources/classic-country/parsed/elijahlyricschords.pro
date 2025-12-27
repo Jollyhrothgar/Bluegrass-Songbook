@@ -1,6 +1,9 @@
 {meta: title Elijah}
 {meta: artist Johnny Paycheck}
 {meta: composer Ken Mcduffie}
+{meta: x_source classic-country}
+{meta: x_source_file elijahlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well Elijah went to heaven in a chariot of fire
@@ -40,3 +43,8 @@ That Elijah would go to heaven in a chariot of [G]fire
 {start_of_verse: Verse 5}
 Yes [D7]Elijah went to heaven in a chariot of [G]fire
 {end_of_verse}
+
+
+
+
+

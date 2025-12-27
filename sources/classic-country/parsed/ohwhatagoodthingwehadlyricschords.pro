@@ -1,5 +1,8 @@
 {meta: title Oh What A Good Thing We Had}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file ohwhatagoodthingwehadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sunshine and showers and everything comin' up [Am]daisies
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [F]Oh what a [G7]good thing we [C]had gone [Am]bad [F]oh what a [G7]good thing we [C]had
 {end_of_verse}
+
+
+
+

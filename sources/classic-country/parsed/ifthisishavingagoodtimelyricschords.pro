@@ -1,5 +1,8 @@
 {meta: title If This Is Having A Good Time}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file ifthisishavingagoodtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the jukebox fills the [C]silent room
@@ -57,3 +60,10 @@ Of hurt I've had
 And if [C]this is [D7]having a [G]good [C]time
 I'd [G]just as soon [D7]have it [G]bad
 {end_of_verse}
+
+
+
+
+
+
+

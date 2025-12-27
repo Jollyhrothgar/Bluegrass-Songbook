@@ -1,6 +1,9 @@
 {meta: title The Rose}
 {meta: artist Conway Twitty}
 {meta: composer Amanda McBroom}
+{meta: x_source classic-country}
+{meta: x_source_file theroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some say love it is a [G7]river
@@ -43,3 +46,8 @@
 [C]Lies the seed that with the sun's [G7]love
 [F]In spring [G7]becomes the [C]rose
 {end_of_verse}
+
+
+
+
+

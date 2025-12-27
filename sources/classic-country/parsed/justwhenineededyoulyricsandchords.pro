@@ -1,6 +1,9 @@
 {meta: title Just When I Needed You}
 {meta: artist George Jones}
 {meta: composer Johnny Wright, Jack Anglin, Clyde Baum}
+{meta: x_source classic-country}
+{meta: x_source_file justwhenineededyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]JUST WHEN I NEEDED YOU  YOU LEFT AND WENT [F]AWAY
@@ -29,3 +32,6 @@
 [F]YOU'RE THE ONE WHO WAS TO [C]BLAME
 [F]YOU'RE THE ONE WHO [C]WAS UNTRUE [G7]JUST WHEN I NEEDED [C]YOU
 {end_of_verse}
+
+
+

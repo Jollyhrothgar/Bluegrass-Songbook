@@ -1,6 +1,9 @@
 {meta: title I Get So Sentimental}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melson and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file igetsosentimentallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I get so ooh senti[Dm]mental 
@@ -39,3 +42,8 @@ But I'm just so senti[Dm]mental
 Yes I'm just too senti[Dm]mental
 And it's [F]breaking my [G7]heart in [C]two 
 {end_of_verse}
+
+
+
+
+

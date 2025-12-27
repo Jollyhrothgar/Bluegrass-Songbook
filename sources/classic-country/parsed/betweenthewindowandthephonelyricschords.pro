@@ -1,6 +1,9 @@
 {meta: title Between the Window and the Phone}
 {meta: artist Wanda Jackson}
 {meta: composer Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file betweenthewindowandthephonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today is a far cry from [G7]yesterday
@@ -29,3 +32,6 @@
 [F]I've thought about leaving but I'd go right on grieving
 [G7]Somewhere between the window and the [C]phone
 {end_of_verse}
+
+
+

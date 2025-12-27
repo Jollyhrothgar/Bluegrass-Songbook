@@ -1,6 +1,9 @@
 {meta: title Old Fat and Drunk}
 {meta: artist The Austin Lounge Lizards}
 {meta: composer Conrad Deisler}
+{meta: x_source classic-country}
+{meta: x_source_file oldfatanddrunklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Are you wearing a pinkish tan sweat[C]shirt my old friend
@@ -35,3 +38,7 @@ To [D7]lose ourselves and be forever [G]free
 Then maybe one day we'll [C]slowly roll away
 [D7]Lose our voice and be forever [G]free
 {end_of_verse}
+
+
+
+

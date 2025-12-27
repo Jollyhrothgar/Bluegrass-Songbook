@@ -1,6 +1,9 @@
 {meta: title Lost Her Love On Our Last Date}
 {meta: artist Conway Twitty}
 {meta: composer Conway Twitty and Floyd Cramer}
+{meta: x_source classic-country}
+{meta: x_source_file lostherloveonourlastdatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's over our [F]love affair too late [C]now I find I [F]care
@@ -29,3 +32,6 @@
 [C]On my mind in [G7]my heart I was [C]blind from the [F]start
 [C]Lost her love [G7]on our last [C]date
 {end_of_verse}
+
+
+

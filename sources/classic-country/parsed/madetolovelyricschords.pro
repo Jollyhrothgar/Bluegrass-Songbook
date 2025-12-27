@@ -1,6 +1,9 @@
 {meta: title Made To Love}
 {meta: artist The Everly Brothers}
 {meta: composer Phil Everly}
+{meta: x_source classic-country}
+{meta: x_source_file madetolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My father looked at [Em]me one day said [Am]son it's plain to [D7]see
@@ -35,3 +38,7 @@ Girls [C]girls girls were [D7]made to [G]love [C]  [D7]
 {start_of_verse: Verse 5}
 [Em]Love love [G]love love [Em]love love [G]love love [Em]love love [G]love
 {end_of_verse}
+
+
+
+

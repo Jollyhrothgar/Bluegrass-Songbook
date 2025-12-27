@@ -1,6 +1,9 @@
 {meta: title No Fair Falling In Love}
 {meta: artist Bill Anderson}
 {meta: composer Gary Tolbert Nicholson and Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file nofairfallinginlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Saturday night and the lights are bright
@@ -54,3 +57,9 @@ No fair no fair falling no fair falling in love
 {start_of_verse: Verse 5}
 [F]No fair [G7]no fair falling in [C]love
 {end_of_verse}
+
+
+
+
+
+

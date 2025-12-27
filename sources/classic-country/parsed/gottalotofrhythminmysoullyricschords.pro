@@ -1,5 +1,8 @@
 {meta: title Gotta Lot Of Rhythm In My Soul}
 {meta: artist Patsy Cline}
+{meta: x_source classic-country}
+{meta: x_source_file gottalotofrhythminmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come on dad get with the jive
@@ -44,3 +47,7 @@ The big black hands on the [C]clock
 {start_of_verse: Verse 5}
 [G7]Gotta lot of rhythm in my [C]soul
 {end_of_verse}
+
+
+
+

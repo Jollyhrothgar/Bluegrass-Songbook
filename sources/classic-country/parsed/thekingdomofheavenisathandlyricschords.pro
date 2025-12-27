@@ -1,6 +1,9 @@
 {meta: title The Kingdom Of Heaven Is At Hand}
 {meta: artist The Statler Brothers}
 {meta: composer Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file thekingdomofheavenisathandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jesus walked that lonesome road to [D7]preach the gospel [G]news
@@ -52,3 +55,10 @@ The kingdom of [D7]heaven is at [G]hand
 The kingdom of [D7]heaven is at [G]hand
 The kingdom of [D7]heaven is at [G]hand
 {end_of_verse}
+
+
+
+
+
+
+

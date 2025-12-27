@@ -1,6 +1,9 @@
 {meta: title I'm Givin' Up}
 {meta: artist Norma Jean}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file imgivinuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm givin' up and givin' out from givin' in
@@ -40,3 +43,8 @@ I'm givin' up and givin' out from givin' [G]in
 {start_of_verse: Verse 4}
 I'm givin' [D7]up and givin' out from givin' [G]in
 {end_of_verse}
+
+
+
+
+

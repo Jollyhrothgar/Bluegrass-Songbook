@@ -1,6 +1,9 @@
 {meta: title Blind And Afraid Of The Dark}
 {meta: artist Keith Whitley}
 {meta: composer Max D. Barnes and Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file blindandafraidofthedarklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For [G7]you the light is shining [C]bright
@@ -33,3 +36,7 @@ When you left [F]you left my [C]hear[F]t
 {start_of_verse: Verse 5}
 Blind and [G7]afraid of the [C]dark
 {end_of_verse}
+
+
+
+

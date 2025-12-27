@@ -1,6 +1,9 @@
 {meta: title Somebody's Back in Town}
 {meta: artist Loretta Lynn}
 {meta: composer Teddy Wilburn and Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysbackintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just heard the saddest news somebody's back in [G7]town
@@ -29,3 +32,6 @@ And [F]you're just fool [G7]enough to fall [C]again
 She'll let [C]you live a little then she'll [C7]throw you [F]down
 Sad news today [G7]somebody's back in [C]town
 {end_of_verse}
+
+
+

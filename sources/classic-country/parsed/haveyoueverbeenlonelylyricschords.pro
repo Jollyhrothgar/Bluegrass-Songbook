@@ -1,6 +1,9 @@
 {meta: title Have You Ever Been Lonely}
 {meta: artist Jim Reeves}
 {meta: composer George Brown, Peter DeRose, Billy Hill}
+{meta: x_source classic-country}
+{meta: x_source_file haveyoueverbeenlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you ever been [G][C]l-onely 
@@ -35,3 +38,8 @@ You would know why I [G]ask you
 Have you ever been [D7]lonely 
 Have you ever been [G]blue
 {end_of_verse}
+
+
+
+
+

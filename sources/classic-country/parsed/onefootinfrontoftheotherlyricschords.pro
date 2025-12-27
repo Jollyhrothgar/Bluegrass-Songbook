@@ -1,6 +1,9 @@
 {meta: title One Foot In Front Of The Other}
 {meta: artist George Strait}
 {meta: composer Cris Moore and Lee Roy Parnell}
+{meta: x_source classic-country}
+{meta: x_source_file onefootinfrontoftheotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well love can be an uphill climb
@@ -68,3 +71,11 @@ Little by little gets a whole lot further
 Well just a-[C]hittin' our stride 
 One [D7]foot in front of the [G]other
 {end_of_verse}
+
+
+
+
+
+
+
+

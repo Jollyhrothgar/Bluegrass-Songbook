@@ -1,5 +1,8 @@
 {meta: title All Around Cowboy}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file allaroundcowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well all around cowboy I've won it six years in [D7]a row
@@ -45,3 +48,9 @@ Out there in the rodeo [G]dirt
 I was the cowboy who said he would never [D7]be roped
 I even bragged how I'd never be branded [G]or broke
 {end_of_verse}
+
+
+
+
+
+

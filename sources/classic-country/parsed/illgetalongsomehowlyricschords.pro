@@ -1,6 +1,9 @@
 {meta: title I'll Get Along Somehow}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Gerald Marks and Buddy Fields}
+{meta: x_source classic-country}
+{meta: x_source_file illgetalongsomehowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many months has come and gone 
@@ -48,3 +51,7 @@ So [C]let it rain and let it snow
 I [D7]don't care no no no
 Cause [G7]I'll get along [C]somehow
 {end_of_verse}
+
+
+
+

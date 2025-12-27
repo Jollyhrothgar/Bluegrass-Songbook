@@ -1,6 +1,9 @@
 {meta: title A Love Song}
 {meta: artist Anne Murray}
 {meta: composer Kenny Loggins and D.L. George}
+{meta: x_source classic-country}
+{meta: x_source_file alovesonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a wren in a willow wood 
@@ -40,3 +43,7 @@ I wanna [Am]rock you in my [D7]arms all night [G]long
 I wanna get to [Am]know [D7]you 
 I wanna [Am]show you the [D7]peaceful feeling of my [G]home      
 {end_of_verse}
+
+
+
+

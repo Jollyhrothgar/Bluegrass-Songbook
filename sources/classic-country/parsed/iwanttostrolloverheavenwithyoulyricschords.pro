@@ -1,5 +1,8 @@
 {meta: title I Want To Stroll Over Heaven With You}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttostrolloverheavenwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I surveyed all the good things that come to me from above
@@ -33,3 +36,7 @@ So many places of beauty we long to see here below
 Tag:
 [G7]I want to stroll over Heaven with [C]you
 {end_of_verse}
+
+
+
+

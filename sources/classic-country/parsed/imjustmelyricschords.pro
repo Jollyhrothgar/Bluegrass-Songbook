@@ -1,6 +1,9 @@
 {meta: title I'm Just Me}
 {meta: artist Charlie Pride}
 {meta: composer Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file imjustmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down at the railroad station there's people getting [G7]on
@@ -43,3 +46,9 @@ Tag:
 Oh I was just born [F]to be exactly what you [C]see 
 Today and [G7]everyday I'm just [C]me
 {end_of_verse}
+
+
+
+
+
+

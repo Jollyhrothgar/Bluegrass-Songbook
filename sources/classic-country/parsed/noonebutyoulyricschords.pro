@@ -1,6 +1,9 @@
 {meta: title No One But You}
 {meta: artist Ray Price}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file noonebutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been to all the old familiar [C]places
@@ -30,3 +33,6 @@ My mind keeps telling me that just won't [G]do
 My arms keep reaching [G7]out for someone [A7][C]n-ew
 But my [D7]heart won't let me love no one but [G]you
 {end_of_verse}
+
+
+

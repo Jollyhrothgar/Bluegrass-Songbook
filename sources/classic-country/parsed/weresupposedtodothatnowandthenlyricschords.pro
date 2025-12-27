@@ -1,6 +1,9 @@
 {meta: title We're Supposed To Do That Now And Then}
 {meta: artist George Strait}
 {meta: composer Dean Dillon, David Anthony, Joe Royer}
+{meta: x_source classic-country}
+{meta: x_source_file weresupposedtodothatnowandthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We had a silly quarrel over [G7]nothin'
@@ -31,3 +34,6 @@ We [C]spend the night falling in love [F]all over [D7]again
 [Dm]We're supposed to [G7]do that now and [C]then [Am]baby
 [Dm]We're supposed to [G7]do that now and [C]then
 {end_of_verse}
+
+
+

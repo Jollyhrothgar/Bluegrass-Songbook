@@ -1,6 +1,9 @@
 {meta: title If You Only Knew}
 {meta: artist Randy Travis}
 {meta: composer Rob Mathes and Phil Naish}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouonlyknewlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]By my [F]grandfather's [F][C]bed
@@ -40,3 +43,6 @@
 [F]Oh if you [C]only knew if you only [Am]knew
 [F]How much [G7]He loves [C]you
 {end_of_verse}
+
+
+

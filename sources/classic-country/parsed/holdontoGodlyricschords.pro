@@ -1,5 +1,8 @@
 {meta: title Hold On To God}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file holdontoGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hold on hold on hold on to God 
@@ -61,3 +64,11 @@ It [G]will sal[D7]vation [G]bring
 Yeah [C]cling to Jesus [G]His life[C]line 
 It [G]will sal[D7]vation [G]bring
 {end_of_verse}
+
+
+
+
+
+
+
+

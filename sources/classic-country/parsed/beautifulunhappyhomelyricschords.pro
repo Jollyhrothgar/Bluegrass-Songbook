@@ -1,6 +1,9 @@
 {meta: title Beautiful Unhappy Home Lyrics Chords}
 {meta: artist Loretta Lynn}
 {meta: composer Johnny Russell and Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulunhappyhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We were proud of this [C]house that we [G]found
@@ -31,3 +34,7 @@
 {start_of_verse: Verse 5}
 [D7]In our beautiful unhappy [G]home
 {end_of_verse}
+
+
+
+

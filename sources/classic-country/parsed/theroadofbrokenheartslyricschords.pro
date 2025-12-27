@@ -1,6 +1,9 @@
 {meta: title The Road Of Broken Hearts}
 {meta: artist Cowboy Copas}
 {meta: composer Jack Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file theroadofbrokenheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The rain is slowly [F]falling
@@ -30,3 +33,6 @@ A[C]nother face will [F]take your place
 On the [C]road of [G7]broken [C]hearts
 Repeat last verse
 {end_of_verse}
+
+
+

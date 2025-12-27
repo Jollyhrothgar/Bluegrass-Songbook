@@ -1,5 +1,8 @@
 {meta: title America The Ugly}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file americatheuglylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There was a man came to [F]see the US[C]A from a foreign land
@@ -42,3 +45,8 @@ The [F]enemy knows when a [G7]heart gets hard the [C]country is bound to fall
 If we [F]get heads and hearts together we [C]won't have to hear them say
 [F]America the [G7]ugly to[C]day  [F]America the [G7]ugly to[C]day
 {end_of_verse}
+
+
+
+
+

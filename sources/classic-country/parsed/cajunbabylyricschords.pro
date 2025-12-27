@@ -2,6 +2,9 @@
 {meta: artist Hank Williams Jr.}
 {meta: lyricist Hank Williams, Sr.}
 {meta: music Hank Williams, Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file cajunbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Lyrics by Hank Williams, Sr. 
@@ -39,3 +42,8 @@ Lord I got me a Cajun baby just a [G7]living and a loving by the old [C]bayou
 Lyrics by Hank Williams, Sr. 
 Music by Hank Williams, Jr.
 {end_of_verse}
+
+
+
+
+

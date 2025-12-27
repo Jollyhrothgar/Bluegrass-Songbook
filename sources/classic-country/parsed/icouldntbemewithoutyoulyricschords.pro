@@ -1,6 +1,9 @@
 {meta: title I Couldn't Be Me Without You}
 {meta: artist Johnny Rodriguez}
 {meta: composer Billy Joe}
+{meta: x_source classic-country}
+{meta: x_source_file icouldntbemewithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While putting some new strings on [F]my old [C]guitar
@@ -29,3 +32,6 @@
 [C]Together forever wherever we are
 [G7]I couldn't be me without [C]you
 {end_of_verse}
+
+
+

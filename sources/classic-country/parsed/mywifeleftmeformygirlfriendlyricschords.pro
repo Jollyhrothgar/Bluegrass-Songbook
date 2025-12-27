@@ -1,6 +1,9 @@
 {meta: title My Wife Left Me For My Girlfriend}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file mywifeleftmeformygirlfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it's a story that's been told before
@@ -36,3 +39,7 @@ Yeah that [C]bastard got what he deserved
 Well I even asked my lawyer he said [C]son it seems to be a [G]trend
 [C]My wife [G]left me [D7]for my [G]girlfriend
 {end_of_verse}
+
+
+
+

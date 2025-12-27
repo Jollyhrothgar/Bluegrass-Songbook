@@ -1,6 +1,9 @@
 {meta: title Is It Still Over}
 {meta: artist Randy Travis}
 {meta: composer Larry Henley and Ken Bell}
+{meta: x_source classic-country}
+{meta: x_source_file isitstilloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Being without you has turned
@@ -56,3 +59,10 @@
 [D7]And I'm not too sure that I'm still [G]over [A7][C]you
 [D7]I'm not too sure that I'm still over [G]you
 {end_of_verse}
+
+
+
+
+
+
+

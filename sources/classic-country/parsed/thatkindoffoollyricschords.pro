@@ -1,6 +1,9 @@
 {meta: title That Kind Of Fool}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file thatkindoffoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Look at that fool going [C]home to his [G]wife
@@ -29,3 +32,6 @@ Look at that fool he [A7]never lies out all [D7]night
 He [G]doesn't know what it's [C]like to be [G]untrue
 Wish I could have been [D7]that kind of [G]fool
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Love Is The Last Thing To Go}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file loveisthelastthingtogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The angels were singin' a [C]sad country [G]song
@@ -35,3 +38,7 @@ Every heartbroken rule of the [D7]road
 Every [G]true thing we wrote on the w[C]ind is still s[G]ingin'
 Love is the [D7]last thing to [G]go
 {end_of_verse}
+
+
+
+

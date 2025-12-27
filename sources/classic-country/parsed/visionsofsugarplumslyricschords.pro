@@ -1,6 +1,9 @@
 {meta: title Visions Of Sugar Plums}
 {meta: artist Glen Campbell}
 {meta: composer Jerry Fuller and Glen Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file visionsofsugarplumslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]When I want to drop out of [C]reality I cop out
@@ -29,3 +32,6 @@ You and [F]I drinking [G7]yesterday's [C]wine
 But [F]soon the morning sun of [C]today will touch my [Dm]bed
 And [F]burst the pretty [G7]bubble in my [C]mind
 {end_of_verse}
+
+
+

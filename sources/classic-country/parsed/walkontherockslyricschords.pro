@@ -1,6 +1,9 @@
 {meta: title Walk On The Rocks}
 {meta: artist Alan Jackson}
 {meta: composer John Swaim}
+{meta: x_source classic-country}
+{meta: x_source_file walkontherockslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]After [C]seventeen years behind [F]bars
@@ -47,3 +50,9 @@ And [Dm]walk on the rocks that [G7]I stumbled [C]on [F]
 {start_of_verse: Verse 6}
 [Dm]Walk on the rocks that [G7]I stumbled [C]on
 {end_of_verse}
+
+
+
+
+
+

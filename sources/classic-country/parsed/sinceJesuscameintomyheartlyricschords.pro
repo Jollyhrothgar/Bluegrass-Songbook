@@ -1,6 +1,9 @@
 {meta: title Since Jesus Came Into My Heart}
 {meta: artist Statler Brother}
 {meta: composer Rufus H. McDaniel and Charles H. Gabriel}
+{meta: x_source classic-country}
+{meta: x_source_file sinceJesuscameintomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What a wonderful change in my life has been wrought
@@ -58,3 +61,10 @@ Since [G]Jesus came [D7]into my [G]heart
 Since Jesus came [D7]into my [G]hea-[C]rt
 [G]Since Jesus came [D7]into my [G]heart
 {end_of_verse}
+
+
+
+
+
+
+

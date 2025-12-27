@@ -1,6 +1,9 @@
 {meta: title Let The Light Shine On You}
 {meta: artist Doug Stone}
 {meta: composer Blake Melvis and Randy Boudreaux}
+{meta: x_source classic-country}
+{meta: x_source_file letthelightshineonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling have [Bm]I ever [C]told you
@@ -34,3 +37,7 @@ To[Am]night let the [D7]light shine on [G]you[Bm]   [C]  [D7]
 [C]Love of my [D7]life for [G]all that you [F]do [C]
 To[Am]night let the [D7]light shine on [G]you[Bm]   [C]  [D7]   [G]
 {end_of_verse}
+
+
+
+

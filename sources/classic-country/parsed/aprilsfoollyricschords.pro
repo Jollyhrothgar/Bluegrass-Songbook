@@ -1,6 +1,9 @@
 {meta: title April's Fool}
 {meta: artist Ray Price}
 {meta: composer Dave Kirby and Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file aprilsfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]April doesn't [D7]shower  [F]her sweet love on [G7]me
@@ -27,3 +30,6 @@ People [F]say that [G7]April treats me [C]cruel
 But I just smile when they [F]say
 There goes [G7]April's [C]fool
 {end_of_verse}
+
+
+

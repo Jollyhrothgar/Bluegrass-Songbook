@@ -1,6 +1,9 @@
 {meta: title How About You}
 {meta: artist Carl Smith}
 {meta: composer Thomas A. Dorsey}
+{meta: x_source classic-country}
+{meta: x_source_file howaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How well do I remember how [F]Jesus brought me [C]through
@@ -29,3 +32,6 @@ I hope my Savior is your Savior [G7]too ([D7]your Savior [G7]too)
 My [C]best friends talk about me [F]sometimes my kinfolks [C]too
 But I take it all to Jesus [G7]how about [C]you
 {end_of_verse}
+
+
+

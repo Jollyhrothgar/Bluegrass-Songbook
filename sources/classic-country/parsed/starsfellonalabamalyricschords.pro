@@ -1,6 +1,9 @@
 {meta: title Stars Fell On Alabama}
 {meta: artist Ricky Nelson}
 {meta: composer Mitchell Parish and Frank Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file starsfellonalabamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am](Ala[D7]bama[Bm]    [Am]Ala[D7]bama)
@@ -28,3 +31,6 @@ And in the [C]center just you and [Bm]me [D7]dear
 [G]My [E7]heart beat like a [Am]hammer[D7] my [G]arms wound around you [Bm]tight
 [Am]And stars fell on Ala[D7]bama (Alabama) last [G]night[C]   [G]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If It Was Easy}
 {meta: artist Ed Bruce}
 {meta: composer Larry Kingston and Harlan Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file ifitwaseasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish there was a way to love a [F]lot
@@ -40,3 +43,7 @@
 [F]If it [C]was e-a-sy  if it was [F]e-a-sy
 [C]If it [F]was [C]e-a-sy  if it was [F]e-a-sy
 {end_of_verse}
+
+
+
+

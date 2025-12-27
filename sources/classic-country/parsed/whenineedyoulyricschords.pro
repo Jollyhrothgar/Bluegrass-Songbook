@@ -1,6 +1,9 @@
 {meta: title When I Need You}
 {meta: artist Vern Gosdin}
 {meta: composer Carole Sager and Albert Hammond}
+{meta: x_source classic-country}
+{meta: x_source_file whenineedyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I need you
@@ -43,3 +46,8 @@ I hold out my hands and I [G]touch love
 I never knew [E7]there was so [Am]much love
 Keeping me [D7]warm night and [G]day    when I [C]need love
 {end_of_verse}
+
+
+
+
+

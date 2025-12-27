@@ -1,6 +1,9 @@
 {meta: title I Ain't Crazy}
 {meta: artist Earl Thomas Conley}
 {meta: composer Earl T. Conley, Rick Farrell, Bat McGrath}
+{meta: x_source classic-country}
+{meta: x_source_file iaintcrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been working all [G7]week oh but I got it [C]done
@@ -44,3 +47,9 @@ I ain't [C]crazy [G7]  but I can get [C]there
 {start_of_verse: Verse 7}
 [Am]I ain't [C]crazy [G7]  but I can get [C]there
 {end_of_verse}
+
+
+
+
+
+

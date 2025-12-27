@@ -1,6 +1,9 @@
 {meta: title Don't Take Any Wooden Nickels}
 {meta: artist Billy Crash Craddock}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file donttakeanywoodennickelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been nice it's been [F]fun
@@ -33,3 +36,6 @@ Don't [G7]plant any yellow daisies where the [C]grass ain't green[G7]
 Don't [C]buy any one way tickets to the [D7]isle of golden dreams
 Don't [G7]take any wooden nickels if you know what I [C]mean
 {end_of_verse}
+
+
+

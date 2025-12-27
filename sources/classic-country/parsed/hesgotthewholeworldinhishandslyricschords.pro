@@ -1,6 +1,9 @@
 {meta: title He's Got The Whole World in His Hands}
 {meta: artist The Statler Brothers}
 {meta: composer Forrest Hamilton and Ross Stephens}
+{meta: x_source classic-country}
+{meta: x_source_file hesgotthewholeworldinhishandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He's got the whole world in His hands 
@@ -62,3 +65,11 @@ He's got the [D7]whole world in His [G]hands
 tag:
 He's got the [D7]whole world in His [G]hands
 {end_of_verse}
+
+
+
+
+
+
+
+

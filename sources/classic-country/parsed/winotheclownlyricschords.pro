@@ -1,6 +1,9 @@
 {meta: title Wino The Clown}
 {meta: artist George Jones}
 {meta: composer Curly Putman, Ron Hellard, Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file winotheclownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's got a funny [F]red nose old baggy [C]pants
@@ -41,3 +44,8 @@ When he [G7]staggers down the street it's a funny little [C]dance
 [F]But I never laugh when my daddy falls [C]down
 [G7]I'll always love wino the [C]clown
 {end_of_verse}
+
+
+
+
+

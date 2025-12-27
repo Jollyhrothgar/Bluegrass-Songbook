@@ -1,6 +1,9 @@
 {meta: title You Set My Dreams To Music}
 {meta: artist Anne Murray}
 {meta: composer Molly Ann Leikin and Steve Dorff}
+{meta: x_source classic-country}
+{meta: x_source_file yousetmydreamstomusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I'm lovin' what I [C]see each time you smile at [G]me
@@ -31,3 +34,7 @@ And in [Am]my [G7]whole [C]life I have [Am]never [Bm]had a [C]dream as sweet as 
 {start_of_verse: Verse 5}
 And in [Am]my [G7]whole [C]life I have [Am]never [Bm]had a [C]dream as sweet as [G]you
 {end_of_verse}
+
+
+
+

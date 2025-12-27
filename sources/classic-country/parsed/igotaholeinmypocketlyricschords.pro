@@ -1,6 +1,9 @@
 {meta: title I Got A Hole In My Pocket}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file igotaholeinmypocketlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got a hole in my pocket and I can't go to the fair
@@ -41,3 +44,8 @@ I [C]got a hole in my pocket I [D7]don't know what to [G]do
 {start_of_verse: Verse 4}
 I [C]got a hole in my pocket and I [D7]don't know what to [G]do
 {end_of_verse}
+
+
+
+
+

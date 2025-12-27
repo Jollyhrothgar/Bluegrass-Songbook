@@ -1,6 +1,9 @@
 {meta: title The Baptism Of Jesse Taylor}
 {meta: artist Johnny Russell}
 {meta: composer Dallas Frazier and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file thebaptismofjessetaylorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They baptized Jesse Taylor in [F]Cedar Creek last [C]Sunday
@@ -43,3 +46,8 @@ Jesus gained a soul and Satan lost a good right [G7]arm
 They all [C]cried hallelujah when [F]Jesse's head went under
 Cause [C]this time he went [G7]under for the [C]Lord
 {end_of_verse}
+
+
+
+
+

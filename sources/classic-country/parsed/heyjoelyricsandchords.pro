@@ -1,6 +1,9 @@
 {meta: title Hey Joe}
 {meta: artist Carl Smith}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file heyjoelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey Joe where'd you find that pearly-girly
@@ -39,3 +42,6 @@ I'll tell you face to face I mean to [G7]steal her from you
 [F]This looks like the end my friend
 I [G7]gotta have that dolly for my [C]own
 {end_of_verse}
+
+
+

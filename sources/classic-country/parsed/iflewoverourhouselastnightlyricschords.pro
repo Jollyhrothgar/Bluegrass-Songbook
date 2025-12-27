@@ -1,5 +1,8 @@
 {meta: title I Flew Over Our House Last Night}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file iflewoverourhouselastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That old Kentucky moon was shining bright as [F]day
@@ -28,3 +31,6 @@ The airline hostess asked me sir are you sure that you're [F]alright
 [C]So close and yet so far away so wrong and yet so [F]right
 [G7]I flew over our house last [C]night
 {end_of_verse}
+
+
+

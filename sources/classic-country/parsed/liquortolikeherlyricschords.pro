@@ -1,6 +1,9 @@
 {meta: title Liquor To Like Her}
 {meta: artist Hank Williams Jr.}
 {meta: composer Paul Overstreet and Tommy Hemby}
+{meta: x_source classic-country}
+{meta: x_source_file liquortolikeherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It takes a whole lot of liquor to like her
@@ -83,3 +86,14 @@ But when I'm liquored up I like her just [G]fine
 When I'm [D7]liquored up I like her just [G]fine
 When I'm [C]liquored up [D7]hell I love [G]her
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

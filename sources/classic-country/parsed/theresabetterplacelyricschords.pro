@@ -1,5 +1,8 @@
 {meta: title There's A Better Place}
 {meta: artist Vernon Oxford}
+{meta: x_source classic-country}
+{meta: x_source_file theresabetterplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a better place up there in heaven
@@ -35,3 +38,7 @@ There's a better place waiting for [D7]me
 There's a better place because of [G]Jesus
 He's the one who went and paid the [D7]price for [G]me
 {end_of_verse}
+
+
+
+

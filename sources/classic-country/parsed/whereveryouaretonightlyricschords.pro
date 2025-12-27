@@ -1,6 +1,9 @@
 {meta: title Wherever You Are Tonight}
 {meta: artist Keith Whitley}
 {meta: composer Don Cook, Gary Nicholson, Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file whereveryouaretonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I play the [Em]hits [C]on the [Am]late night [C]show
@@ -45,3 +48,9 @@ This [G7]song goes [C]out to you [F]wherever you [G7]are to[C]night
 {start_of_verse: Verse 6}
 This [G7]song goes [C]out to you [F]wherever you [G7]are to[C]night
 {end_of_verse}
+
+
+
+
+
+

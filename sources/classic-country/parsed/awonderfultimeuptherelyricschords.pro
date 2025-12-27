@@ -1,6 +1,9 @@
 {meta: title A Wonderful Time Up There}
 {meta: artist Pat Boone}
 {meta: composer Lee Roy Abernathy}
+{meta: x_source classic-country}
+{meta: x_source_file awonderfultimeuptherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody's gonna have [G7]religion and glory
@@ -59,3 +62,9 @@ Oh Glory Hallelujah
 [C]Better get ready 'cause I'm [Am]givin' you the warnin'
 [G]Everybody's gonna have a [D7]wonderful time up [G]there
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title As Far As This Feeling Will Take Us}
 {meta: artist David Allan Coe}
 {meta: composer Buzz Rabin and Flash Gordon}
+{meta: x_source classic-country}
+{meta: x_source_file asfarasthisfeelingwilltakeuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're layin' here with me we're [F]holding each other
@@ -33,3 +36,7 @@ At [C]moments like this girl [G7]that's where we should [C]be
 {start_of_verse: Verse 4}
 [C]For that kind of feeling we'll [G7]come back for [C]more
 {end_of_verse}
+
+
+
+

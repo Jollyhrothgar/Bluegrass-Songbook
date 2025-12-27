@@ -1,6 +1,9 @@
 {meta: title Hold Whatcha Got}
 {meta: artist Ricky Skaggs}
 {meta: composer Jimmy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file holdwhatchagotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hold whatcha got I'm a coming home baby
@@ -61,3 +64,9 @@ Don't sell the house don't wreck the car
 [F]Stay there honey right where you are
 [C]Hold whatcha got I'm [G7]coming home to [C]stay
 {end_of_verse}
+
+
+
+
+
+

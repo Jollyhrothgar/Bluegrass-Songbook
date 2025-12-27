@@ -1,6 +1,9 @@
 {meta: title Is It Asking Too Much}
 {meta: artist Kitty Wells}
 {meta: composer Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file isitaskingtoomuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just a year ago you [C]promised me we'd [G]marry
@@ -29,3 +32,6 @@ I'll be [D7]big enough to wish the best for [G]you
 I should be the first to [C]know if you don't [G]love me
 Is it [D7]asking too much just to know the [G]truth
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Carry Me Back}
 {meta: artist Statler Brothers}
 {meta: composer Harold and Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file carrymebacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Carry me back Lord while [G7]I still got the [C]time
@@ -37,3 +40,8 @@ And Bobby I'd love to see him again and I [G7]would if I [C]could
 {start_of_verse: Verse 5}
 Carry me back Lord while [G7]I still got the [C]time
 {end_of_verse}
+
+
+
+
+

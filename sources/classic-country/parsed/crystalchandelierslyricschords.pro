@@ -1,6 +1,9 @@
 {meta: title Crystal Chandeliers}
 {meta: artist Charlie Pride}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file crystalchandelierslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All the crystal chandeliers light up the paintings on your [G7]wall
@@ -36,3 +39,7 @@ The marble statuettes are standing stately in the [C]hall
 But will the timely crowd that has you laughing loud help you dry your [F]tears
 When the [C]new wears off of your [G7]crystal [C]chandeliers
 {end_of_verse}
+
+
+
+

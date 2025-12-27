@@ -1,6 +1,9 @@
 {meta: title I Won't Give Up On You}
 {meta: artist Don Williams}
 {meta: composer Britton Joseph Cameron, Jordyn Shellhart, Stacy Jack Sizemore}
+{meta: x_source classic-country}
+{meta: x_source_file iwontgiveuponyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll be your spring when it [C]feels like [D7]winter
@@ -43,3 +46,8 @@ Your [C]solid ground when times get shaky
 [G]When the world gives [D7]in [Em]I won't surrender
 [Am]I won't give up on I won't give up on [G]you
 {end_of_verse}
+
+
+
+
+

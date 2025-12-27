@@ -1,6 +1,9 @@
 {meta: title I’ll Still Write Your Name In The Sand}
 {meta: artist Mac Wiseman}
 {meta: composer Oby Edgar Starcher}
+{meta: x_source classic-country}
+{meta: x_source_file illstillwriteyournameinthesandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been many years since we were childhood [F]sweethearts
@@ -43,3 +46,8 @@ If I [C]talk will you try to [G7]understand
 Makes no [C]difference how you treat me I love [F]you
 And I'll [C]still write your [G7]name in the [C]sand
 {end_of_verse}
+
+
+
+
+

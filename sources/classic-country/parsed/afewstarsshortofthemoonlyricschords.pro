@@ -1,6 +1,9 @@
 {meta: title A Few Stars Short Of The Moon}
 {meta: artist Moe Bandy}
 {meta: composer Anthony Smith, Aaron Barker, Ron Harbin}
+{meta: x_source classic-country}
+{meta: x_source_file afewstarsshortofthemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [A#7]I'm not [F]pretending to be [C]something that I'm not
@@ -41,3 +44,7 @@ I [F]could promise you the [G7]world
 But would it [C]change the way you feel girl
 If you [F]knew  I [G7]might fall a few stars short of the [C]moon
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Something Special}
 {meta: artist Mel Tillis}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file somethingspeciallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been a lot of places and I've seen a lot of [F]faces
@@ -29,3 +32,6 @@ Something special as can [G7]be
 There'll never [C]be another I could love so [F]tenderly
 Cause [C]you're something [G7]special to [C]me
 {end_of_verse}
+
+
+

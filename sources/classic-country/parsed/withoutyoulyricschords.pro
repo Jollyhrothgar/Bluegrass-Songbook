@@ -1,6 +1,9 @@
 {meta: title Without You}
 {meta: artist Mickey Gilley}
 {meta: composer Ahmad Jamal}
+{meta: x_source classic-country}
+{meta: x_source_file withoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am building a new life
@@ -48,3 +51,9 @@ I know that she [C]loves me
 [F]Yes I'll make her [C]happy
 [G7]That's one thing I'll [C]do
 {end_of_verse}
+
+
+
+
+
+

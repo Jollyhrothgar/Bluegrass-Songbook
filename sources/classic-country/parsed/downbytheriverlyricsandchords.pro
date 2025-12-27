@@ -1,5 +1,8 @@
 {meta: title Down By The River}
 {meta: artist Heidi Hauge}
+{meta: x_source classic-country}
+{meta: x_source_file downbytheriverlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw you by the [C]river so dis[G]traught 
@@ -50,3 +53,9 @@ My days has been like heaven [A7]since the day we [D7]met
 {start_of_verse: Verse 6}
 [C]From my [G]heart down by the [D7]river where I [C]liv[G]e
 {end_of_verse}
+
+
+
+
+
+

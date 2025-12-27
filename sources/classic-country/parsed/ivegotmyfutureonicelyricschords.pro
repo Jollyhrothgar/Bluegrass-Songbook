@@ -1,6 +1,9 @@
 {meta: title I've Got My Future On Ice}
 {meta: artist Hank Williams Jr.}
 {meta: composer Jerry Crutchfield and Edria Humphrey}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotmyfutureonicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got a past that'll [F]last me for[C]ever
@@ -34,3 +37,7 @@ Why [C]I've got my [G7]future on [C]ice
 Though love let me [C7]down now a [F]truer friend I've [D7]found
 Yeah [C]I've got my [G7]future on [C]ice
 {end_of_verse}
+
+
+
+

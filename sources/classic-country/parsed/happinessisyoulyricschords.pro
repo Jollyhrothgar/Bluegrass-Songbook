@@ -1,6 +1,9 @@
 {meta: title Happiness Is You}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash and June Carter Cash}
+{meta: x_source classic-country}
+{meta: x_source_file happinessisyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Way down the mountain I chased a moonbeam 
@@ -31,3 +34,6 @@ But I realize now and I'll admit it
 My heart won't [C]miss you my heart goes with you 
 [F]Loneliness is [C]emptiness [G7]but happiness is [C]you
 {end_of_verse}
+
+
+

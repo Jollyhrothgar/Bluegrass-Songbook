@@ -1,5 +1,8 @@
 {meta: artist Johnny And Jack}
 {meta: composer J. Brown}
+{meta: x_source classic-country}
+{meta: x_source_file cryingheartblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Crying heart blues I'm crying because I have [G7]lost you
@@ -31,3 +34,7 @@ They [D7]started the day that we [G7]met
 A trail of [C]tears will lead you to me if you [G7]want me
 And from my tears my hopeless my crying heart [C]flees
 {end_of_verse}
+
+
+
+

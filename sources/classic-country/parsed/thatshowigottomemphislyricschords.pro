@@ -1,6 +1,9 @@
 {meta: title That’s How I Got To Memphis}
 {meta: artist Bobby Bare}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file thatshowigottomemphislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you love somebody [F]enough 
@@ -61,3 +64,9 @@ Forgive me if [Am]I start to cry
 That's how I got to [Dm]Memphis
 [F]That's how I got to [C]Memphis
 {end_of_verse}
+
+
+
+
+
+

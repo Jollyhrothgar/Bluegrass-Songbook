@@ -1,6 +1,9 @@
 {meta: title She'll Keep Bringin' All Her Love to Me}
 {meta: artist Darrell McCall}
 {meta: composer Lou Rochelle}
+{meta: x_source classic-country}
+{meta: x_source_file shellkeepbringinallherlovetomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hold her the same way you’ve been [C]holding her
@@ -29,3 +32,6 @@ And [A7]don’t ever miss a chance to [D7]stay out late at night
 And [G]take her for granted just be[C]cause she wears your name
 And she’ll keep [G]bringin’ [D7]all her love to [G]me
 {end_of_verse}
+
+
+

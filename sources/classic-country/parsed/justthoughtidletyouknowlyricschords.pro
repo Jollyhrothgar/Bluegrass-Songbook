@@ -1,5 +1,8 @@
 {meta: title Just Thought I'd Let You Know}
 {meta: artist Carl and Pearl Butler}
+{meta: x_source classic-country}
+{meta: x_source_file justthoughtidletyouknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Forgive me friend for buttin' in 
@@ -62,3 +65,12 @@ Then when she lets you [F]go
 [G7]I'll be around to take her back
 Just thought I'd let you [C]know
 {end_of_verse}
+
+
+
+
+
+
+
+
+

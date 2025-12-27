@@ -1,6 +1,9 @@
 {meta: title Bottle Of Tears}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen, Jim Pasquale, Deoin Lay}
+{meta: x_source classic-country}
+{meta: x_source_file bottleoftearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tricks  [F]I've pulled [G7]some good ones [C]in [F]my [F][C]time
@@ -36,3 +39,7 @@
 [F]Oh I battle my [G7]way to the [F]top
 [Em]And I [F]bottle my way [G7]to the [C]bottom
 {end_of_verse}
+
+
+
+

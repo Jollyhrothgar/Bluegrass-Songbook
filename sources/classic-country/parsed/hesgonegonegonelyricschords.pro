@@ -1,6 +1,9 @@
 {meta: title He's Gone Gone Gone}
 {meta: artist Norma Jean}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file hesgonegonegonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He said if I ever de[F]ceived him
@@ -47,3 +50,9 @@ The more that I cry the [F]faster that train flies
 {start_of_verse: Verse 5}
 [G7]Farther on down the [C]track
 {end_of_verse}
+
+
+
+
+
+

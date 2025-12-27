@@ -1,6 +1,9 @@
 {meta: title Christmas Eve Can Kill You}
 {meta: artist Everly Brothers}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasevecankillyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The winter's flaking [F]snow is brushin' [G7]through the wiry [C]trees
@@ -51,3 +54,10 @@
 [F]Cause Christmas Eve can kill [Em]ya
 [F]When you're tryin' to hitch [G7]a ride to [C]anywhere
 {end_of_verse}
+
+
+
+
+
+
+

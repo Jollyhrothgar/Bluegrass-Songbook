@@ -1,6 +1,9 @@
 {meta: title I Get Along With You}
 {meta: artist George Strait}
 {meta: composer Dean Dillon, Frank Dycus, Buddy Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file igetalongwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't get [Dm]along  with [G7]people who aren't [C]kind
@@ -26,3 +29,5 @@ I may not [Dm]do all the [G7]things that other people want me [C]to
 But on and [Dm]on  [G7]I get along with [C]you
 Yeah on and [Dm]on  [G7]I'll get along with [C]you
 {end_of_verse}
+
+

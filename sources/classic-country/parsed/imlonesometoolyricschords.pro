@@ -1,5 +1,8 @@
 {meta: title I'm Lonesome Too}
 {meta: artist JImmy Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file imlonesometoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Days are blue [D7]I'm lonesome too [G7]why did you go [C]away 
@@ -34,3 +37,7 @@ And [G7]longs for the touch of your [A7]hand
 [C]Why stay [A7]away when you [D7]know it don't pay
 For I [G7]love you sweetheart I under[C]stand
 {end_of_verse}
+
+
+
+

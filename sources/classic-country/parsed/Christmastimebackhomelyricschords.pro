@@ -1,6 +1,9 @@
 {meta: title Christmas Time Back Home}
 {meta: artist The Country Gentlemen}
 {meta: composer John Duffey and Ann Streeter}
+{meta: x_source classic-country}
+{meta: x_source_file Christmastimebackhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Back up in the mountains in the old home town of [C]mine
@@ -47,3 +50,9 @@ A world of joy and [G]peace on earth back [D7]home at Christmas [G]time
 {start_of_verse: Verse 5}
 [C]A world of joy and [G]peace on earth back [D7]home at Christmas [G]time
 {end_of_verse}
+
+
+
+
+
+

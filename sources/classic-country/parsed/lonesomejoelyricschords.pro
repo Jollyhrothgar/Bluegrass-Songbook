@@ -1,6 +1,9 @@
 {meta: title Lonesome Joe}
 {meta: artist Boxcar Willie}
 {meta: composer Roy Acuff}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomejoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There once lived a man he came from Mexico
@@ -43,3 +46,8 @@ I've [F]seen him grab a train with a [C]sandwich in his [G7]hand
 He saw [C]all the world but never made no dough
 And died a [G7]happy man his name was [C]Lonesome Joe
 {end_of_verse}
+
+
+
+
+

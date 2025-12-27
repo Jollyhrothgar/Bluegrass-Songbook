@@ -1,6 +1,9 @@
 {meta: title I'd Rather Loan You Out}
 {meta: artist Roy Drusky}
 {meta: composer Vic McAlpin, Roy Drusky, Lester Vanadore}
+{meta: x_source classic-country}
+{meta: x_source_file idratherloanyououtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm alone while you're somewhere
@@ -30,3 +33,6 @@
 [C]My dreams are gone but I still want you so
 [D7]But I'd rather loan you out than let you [G]go
 {end_of_verse}
+
+
+

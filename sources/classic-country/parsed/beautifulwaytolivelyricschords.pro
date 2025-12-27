@@ -1,6 +1,9 @@
 {meta: title Beautiful Way To Live}
 {meta: artist Dottie West}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulwaytolivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I wake up every [Dm]morning
@@ -50,3 +53,9 @@
 [Dm]Cause I know your love comes with me
 [G7]Standin' by me all the [C]way
 {end_of_verse}
+
+
+
+
+
+

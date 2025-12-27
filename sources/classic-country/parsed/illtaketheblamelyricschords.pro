@@ -1,6 +1,9 @@
 {meta: title I'll Take The Blame}
 {meta: artist Ricky Skaggs}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file illtaketheblamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say I've done you wrong  I've wrecked the happy [G7]home
@@ -27,3 +30,6 @@
 tag:
 [G7]Yes when people ask what's wrong I'll take the [C]blame
 {end_of_verse}
+
+
+

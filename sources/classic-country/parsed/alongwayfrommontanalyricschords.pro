@@ -1,6 +1,9 @@
 {meta: title A Long Way From Montana}
 {meta: artist Red Steagall}
 {meta: composer R.W. Hampton, Phil Martin, Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file alongwayfrommontanalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A long [Em]way it [F]is from Montana
@@ -58,3 +61,10 @@ To a [C]little sod house on the [D7]west Texas [G7]plains
 [C]But I'm going [F]home on the [G7]next southbound [C]train
 A long [Em]way it [F]is from Mon[C]tana
 {end_of_verse}
+
+
+
+
+
+
+

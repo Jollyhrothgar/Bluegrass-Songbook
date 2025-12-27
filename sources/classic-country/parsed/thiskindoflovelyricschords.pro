@@ -1,6 +1,9 @@
 {meta: title This Kind Of Love}
 {meta: artist Roy Orbison}
 {meta: composer Sam Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file thiskindoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our love our love won't [F]die can't die
@@ -29,3 +32,7 @@ One dream through life some[F]day my wife
 {start_of_verse: Verse 5}
 [G7]This kind of love was meant for you and [C]I
 {end_of_verse}
+
+
+
+

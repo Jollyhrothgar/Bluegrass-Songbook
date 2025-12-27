@@ -1,5 +1,8 @@
 {meta: title Timothy The Tow Truck}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file timothythetowtrucklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Was a foggy foggy Christmas Eve a long time [D7]ago
@@ -37,3 +40,7 @@ Now who saved our [G]Christmas [D7]Timothy The [G]Tow Truck
 [C]Who saved our [G]Christmas [D7]Timothy The [G]Tow Truck
 [C]Yeah who saved our [G]Christmas [D7]Timothy The [G]fire Truck
 {end_of_verse}
+
+
+
+

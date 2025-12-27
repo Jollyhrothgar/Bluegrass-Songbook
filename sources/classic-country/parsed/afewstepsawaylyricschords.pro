@@ -1,6 +1,9 @@
 {meta: title A Few Steps Away}
 {meta: artist Lefty Frizzell}
 {meta: composer Eddie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file afewstepsawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m here in a [C7]cold cold [F]prison 
@@ -29,3 +32,6 @@ And [C]my last meal is [D7]still on the [G7]tray
 And my [C]buddies are [C7]saying good[F]bye now
 The [C]end’s just a [G7]few steps [C]away
 {end_of_verse}
+
+
+

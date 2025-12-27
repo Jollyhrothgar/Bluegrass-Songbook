@@ -1,6 +1,9 @@
 {meta: title I'll Take Today}
 {meta: artist Tanya Tucker}
 {meta: composer Kent M. Robbins and Will Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file illtaketodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yeah he's the [D7]one the [G]one I told you all [C]about [G]
@@ -37,3 +40,7 @@ I'll [G]take [Am]today [G]over [D7]yesterday any [G]day
 [C]Memories may [D7]find me but they'll [G]always be [C]behind me
 I'll [G]take [Am]today [G]over [D7]yesterday any [G]day
 {end_of_verse}
+
+
+
+

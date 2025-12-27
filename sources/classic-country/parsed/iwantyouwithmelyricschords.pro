@@ -1,6 +1,9 @@
 {meta: title I Want You With Me}
 {meta: artist Elvis Presley}
 {meta: composer Woody Harris}
+{meta: x_source classic-country}
+{meta: x_source_file iwantyouwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was little my mama said to me
@@ -34,3 +37,7 @@ Well I [G7]want you with me baby [F]I'll never never let you [C]go
 Yeah I [F]want you baby  I want you [C]baby
 Well I [G7]want you with me baby [F]I'll never let you [C]go
 {end_of_verse}
+
+
+
+

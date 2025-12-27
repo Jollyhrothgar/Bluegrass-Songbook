@@ -1,6 +1,9 @@
 {meta: title Somebody's Knocking}
 {meta: artist Terri Gibbs}
 {meta: composer Ed Penney and Jerry Gillespie}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysknockinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Somebody's knocking should I let him in
@@ -40,3 +43,8 @@ He'd have blue eyes and blue [E7]jeans
 {start_of_verse: Verse 4}
 [Am]Somebody's knocking somebody's knocking somebody's knocking
 {end_of_verse}
+
+
+
+
+

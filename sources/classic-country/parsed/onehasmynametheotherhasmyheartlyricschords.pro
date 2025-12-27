@@ -1,6 +1,9 @@
 {meta: title One Has My Name (The Other Has My Heart)}
 {meta: artist Cal Smith}
 {meta: composer Eddie Dean, Dixie Dean, Hal Blair}
+{meta: x_source classic-country}
+{meta: x_source_file onehasmynametheotherhasmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One has my name the [D7]other has my heart
@@ -22,3 +25,5 @@ But what good is love to a [G]heart that can't be free
 If I could live over my [C]life I would change
 The [G]one who has my heart [D7]would also have my [G]name
 {end_of_verse}
+
+

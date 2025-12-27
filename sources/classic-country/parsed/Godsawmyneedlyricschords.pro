@@ -1,6 +1,9 @@
 {meta: title God Saw My Need}
 {meta: artist Statler Brother}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file Godsawmyneedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I grew up reciting bible [D7]verses
@@ -50,3 +53,9 @@ Saw my sorrow my [Em]lust and my [D7]greed
 Just one [G]touch of His [C]hand I was [G]free
 In my darkness [D7]God saw my [G]need
 {end_of_verse}
+
+
+
+
+
+

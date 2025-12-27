@@ -1,6 +1,9 @@
 {meta: title Fair Weather Lover}
 {meta: artist Dottie West}
 {meta: composer Dottie West and Bill West}
+{meta: x_source classic-country}
+{meta: x_source_file fairweatherloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fair [G7]weather [C]lover that's what [C7]you've always [F]been
@@ -35,3 +38,8 @@
 [C7]Oh but this time it don't matter go find yourself [F]another
 [G7]It's farewell fair weather [C]lover
 {end_of_verse}
+
+
+
+
+

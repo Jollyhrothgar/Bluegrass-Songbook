@@ -1,5 +1,8 @@
 {meta: title Rambling Fever}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ramblingfeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My hat don't hang on the same nail too [C]long
@@ -41,3 +44,8 @@ Rest this rambling [D7]fever in my [G]soul
 Ramb-ling [C]fever  the kind [G]that can't be measured by [D7]degrees
 [G]Ramb-ling [C]fever  there ain't no [G]kind of cure [D7]for my [G]disease
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Po' Folks}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file pofolkslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a whole lot of people looking [D7]down their noses at [G]me
@@ -58,3 +61,9 @@ My [D7]brother and my sister was Po' [G]Folks
 My [D7]dog and my cat was Po' [G]Folks
 And [D7]even the Po' Folks was Po' [G]Folks
 {end_of_verse}
+
+
+
+
+
+

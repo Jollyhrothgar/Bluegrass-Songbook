@@ -1,6 +1,9 @@
 {meta: title Wild Side of Life Lyrics Chords}
 {meta: artist Hank Thompson}
 {meta: composer Arlie A. Carter and William Warren}
+{meta: x_source classic-country}
+{meta: x_source_file wildsideoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You wouldn't read my letter if [F]I wrote you
@@ -29,3 +32,6 @@ I [G7]should have known you'd never make [C]a wife
 You gave up the only one that ever [F]loved you
 And went [G7]back to the wild side [C]of life
 {end_of_verse}
+
+
+

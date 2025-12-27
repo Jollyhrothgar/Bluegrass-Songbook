@@ -1,6 +1,9 @@
 {meta: title Turn The Jukebox Up Louder}
 {meta: artist Porter Wagoner}
 {meta: composer Wayne Morse}
+{meta: x_source classic-country}
+{meta: x_source_file turnthejukeboxuplouderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This smoke filled barroom  [F]just suits me [C]fine
@@ -23,3 +26,5 @@ Turn [C]off the bright lights  [F]cause I'll be here till [C]dawn
 Turn the jukebox up louder  [G7]they're playing our [C]song
 Turn the jukebox up louder  [G7]they're playing our [C]song
 {end_of_verse}
+
+

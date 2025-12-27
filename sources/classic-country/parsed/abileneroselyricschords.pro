@@ -1,6 +1,9 @@
 {meta: title Abilene Rose}
 {meta: artist Marty Robbins}
 {meta: composer James B. Hosale}
+{meta: x_source classic-country}
+{meta: x_source_file abileneroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All you young cowboys come gather around
@@ -82,3 +85,18 @@ Of two young lovers as true lovers know
 {start_of_verse: Verse 12}
 [G7]Forever we must live [C]apart
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

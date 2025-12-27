@@ -1,6 +1,9 @@
 {meta: title Wildwood Flower}
 {meta: artist Johnny Cash}
 {meta: composer A. P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file wildwoodflowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I'll twine with my mingles and [G7]waving black [C]hair
@@ -29,3 +32,6 @@
 [F]Oh I long to see her and regret the dark [C]hour
 [G7]She's gone and neglected this pale wildwood [C]flower
 {end_of_verse}
+
+
+

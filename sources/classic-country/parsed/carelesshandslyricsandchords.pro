@@ -1,6 +1,9 @@
 {meta: title Careless Hands Lyrics and Chords}
 {meta: artist Dottie West}
 {meta: composer Bob Hillard and Carl Sigman}
+{meta: x_source classic-country}
+{meta: x_source_file carelesshandslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I let my heart fall into [F]careless [C]hands 
@@ -24,3 +27,5 @@ If you don't [C]change someday you'll know the [F]sorrow
 of
 Careless [C]hands that [G7]can't hold on to [C]love
 {end_of_verse}
+
+

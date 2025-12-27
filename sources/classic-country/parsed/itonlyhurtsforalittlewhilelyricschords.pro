@@ -1,6 +1,9 @@
 {meta: title It Only Hurts For A Little While}
 {meta: artist Connie Smith}
 {meta: composer Mack David and Fred Spielman}
+{meta: x_source classic-country}
+{meta: x_source_file itonlyhurtsforalittlewhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It only [F]hurts for a little [C]while 
@@ -27,3 +30,6 @@ My heart will [C]break [G7]till you come back to [C]me
 That's what they [G7]tell me just wait and [Am]see
 My heart will [C]break [G7]till you come back to [C]me
 {end_of_verse}
+
+
+

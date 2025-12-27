@@ -1,5 +1,8 @@
 {meta: title If You've Got Time To Say Goodbye}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouvegottimetosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If you've got [C]time to say goodbye
@@ -33,3 +36,7 @@ That I've been [F]dreading for so [A#7]long
 If you've got [C]time to say goodbye
 Then I [G7]promise I won't cry till you're [C]gone[A#7]    [C]
 {end_of_verse}
+
+
+
+

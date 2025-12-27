@@ -1,6 +1,9 @@
 {meta: title You Can't Keep A Good Memory Down}
 {meta: artist John Anderson}
 {meta: composer Roger Murrah and Bruce Burch}
+{meta: x_source classic-country}
+{meta: x_source_file youcantkeepagoodmemorydownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sold the house we lived in 
@@ -52,3 +55,10 @@ I hear her voice oh what a haunting [F]sound[Em]   [Dm]   [G7]
 {start_of_verse: Verse 7}
 But you can't keep a good memory down
 {end_of_verse}
+
+
+
+
+
+
+

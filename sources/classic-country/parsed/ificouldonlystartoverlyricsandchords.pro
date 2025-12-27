@@ -1,6 +1,9 @@
 {meta: title If I Could Only Start Over}
 {meta: artist Mel Tillis}
 {meta: composer Faye Bradshaw}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldonlystartoverlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now if I could only start [C]over
@@ -34,3 +37,7 @@ The [G]way that I [D7]dream about [G]you
 But I never dreamed of old [C]sweethearts
 The [G]way that I [D7]dream about [G]you
 {end_of_verse}
+
+
+
+

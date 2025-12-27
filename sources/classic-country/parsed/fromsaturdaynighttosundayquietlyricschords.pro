@@ -1,6 +1,9 @@
 {meta: title From Saturday Night To Sunday Quiet}
 {meta: artist Barbara Mandrell}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file fromsaturdaynighttosundayquietlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We worked all week long
@@ -54,3 +57,9 @@ And soft sheets and [G7]gowns when [F]we're all [C]alone
 From the [F]good times in [C]town
 And soft sheets and [G7]gowns and [F]we're all [C]alone
 {end_of_verse}
+
+
+
+
+
+

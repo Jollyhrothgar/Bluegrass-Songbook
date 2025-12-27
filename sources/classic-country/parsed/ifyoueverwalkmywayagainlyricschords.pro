@@ -1,6 +1,9 @@
 {meta: title If You Ever Walk My Way Again}
 {meta: artist Faron Young}
 {meta: composer Annie Laurie Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoueverwalkmywayagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Will you stop by if you ever walk my [G7]way again
@@ -26,3 +29,6 @@ Will you stop [C]by if you [G7]ever walk my [C]way again
 {start_of_verse: Verse 3}
 Will you stop by if you [G7]ever walk my [C]way again
 {end_of_verse}
+
+
+

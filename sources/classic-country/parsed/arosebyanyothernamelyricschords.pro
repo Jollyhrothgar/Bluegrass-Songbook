@@ -1,6 +1,9 @@
 {meta: title A Rose By Any Other Name}
 {meta: artist Ronnie Milsap}
 {meta: composer Irwin Levine and Toni Wine}
+{meta: x_source classic-country}
+{meta: x_source_file arosebyanyothernamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a garden of city streets I watched her [C]growing there[Am]
@@ -39,3 +42,7 @@ And my [G]friend you'll know what I [D7]mean the moment you [C]see [G]her
 But a rose by any other name is still a [C]rose[Am]
 And my [G]friend you'll know what I [D7]mean the moment you [C]see [G]her
 {end_of_verse}
+
+
+
+

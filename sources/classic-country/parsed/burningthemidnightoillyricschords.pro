@@ -1,6 +1,9 @@
 {meta: title Burning The Midnight Oil}
 {meta: artist Porter Wagoner}
 {meta: composer Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file burningthemidnightoillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here we sit looking at each [G7]other 
@@ -29,3 +32,6 @@ And [G7]tonight I'll sit home a [C]drinking
 We both live in separate homes where [F]there's no love at all 
 Staying up [C]late burning [G7]the midnight [C]oil 
 {end_of_verse}
+
+
+

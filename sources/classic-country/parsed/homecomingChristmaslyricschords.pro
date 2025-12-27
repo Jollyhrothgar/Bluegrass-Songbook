@@ -1,6 +1,9 @@
 {meta: title Homecoming Christmas}
 {meta: artist Alabama}
 {meta: composer Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file homecomingChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A glowing fire and falling snow they [Em]spark a memory
@@ -33,3 +36,7 @@ It's [D7]Christmas time and [G7]I am going [C]home
 {start_of_verse: Verse 5}
 It's [D7]Christmas time and [G7]I am going [C]home
 {end_of_verse}
+
+
+
+

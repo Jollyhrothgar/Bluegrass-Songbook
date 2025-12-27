@@ -1,6 +1,9 @@
 {meta: title Be My Love Again}
 {meta: artist Brenda Lee}
 {meta: composer Chuck Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file bemyloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please come and walk with me please come and talk with me
@@ -27,3 +30,7 @@ The way you smile makes my life worthwhile
 {start_of_verse: Verse 4}
 [G7](Oh honey) please be my love [C]again
 {end_of_verse}
+
+
+
+

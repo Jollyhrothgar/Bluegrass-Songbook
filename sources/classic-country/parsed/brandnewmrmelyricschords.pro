@@ -1,6 +1,9 @@
 {meta: title Brand New Mr. Me}
 {meta: artist Mel Tillis}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file brandnewmrmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do my children call you daddy is my darling good to [F]you
@@ -29,3 +32,6 @@
 [C]And I wonder how you live knowing it's [F]my love that she [C]gives
 [F]How does it feel to be the [C]brand new  [G7]Mr. [C]Me
 {end_of_verse}
+
+
+

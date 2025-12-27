@@ -1,6 +1,9 @@
 {meta: title Lonesome Fiddle Man}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Dallas Frazier and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomefiddlemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The one that I took dancing the [C]one that I called a baby
@@ -22,3 +25,5 @@ A [C]lonesome song called [D7]Faded Love [C]his favorite melo[D7]dy
 When I [G]hear he's lost his darlin' just like [C]me
 Let that lonesome [D7]fiddle man take the [G]lead
 {end_of_verse}
+
+

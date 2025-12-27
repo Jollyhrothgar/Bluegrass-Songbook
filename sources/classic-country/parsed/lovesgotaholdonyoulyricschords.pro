@@ -1,6 +1,9 @@
 {meta: title Love's Got A Hold On You}
 {meta: artist Alan Jackson}
 {meta: composer Keith Stegall and Carson Chamberlain}
+{meta: x_source classic-country}
+{meta: x_source_file lovesgotaholdonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I called my [G7]doctor on the [C]telephone
@@ -52,3 +55,9 @@ Sounds like [C]love's got a [G7]hold on [C]you[G7]
 Sounds like [C]love's got a [G7]hold on [C]you[G7]
 No doubt [C]love's got a h[G7]old on y[C]ou
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rapid City South Dakota}
 {meta: artist Dwight Yoakum}
 {meta: composer Richard Friedman}
+{meta: x_source classic-country}
+{meta: x_source_file rapidcitysouthdakotalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just a ragged kid in [F]overalls he [G7]thumbed a ride one [C]day
@@ -45,3 +48,8 @@ The goodbye [C]letter that I wrote her
 Cause the [G7]mail don't move too fast
 In Rapid [F]City South Da[C]kota
 {end_of_verse}
+
+
+
+
+

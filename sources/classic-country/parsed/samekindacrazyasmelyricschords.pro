@@ -1,6 +1,9 @@
 {meta: title Same Kinda Crazy As Me}
 {meta: artist Del McCoury}
 {meta: composer Gary Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file samekindacrazyasmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did you ever meet somebody
@@ -94,3 +97,21 @@ Or break you anytime they want to
 [A7]You know what I'm saying
 [C]She's the same kind of crazy as [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

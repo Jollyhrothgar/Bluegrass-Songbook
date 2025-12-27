@@ -1,6 +1,9 @@
 {meta: title A Hundred Years From Now}
 {meta: artist Tommy Collins}
 {meta: composer Tommy Collins, Jack Rhodes, Dick Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file ahundredyearsfromnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What difference will it make a [G7]hundred years from [C]now
@@ -33,3 +36,7 @@ I [D7]won't recall loving you [G7]it's only today's misery
 [C]If I lose you tomorrow or [C7]if I lose you [F]now
 What difference will it [C]make a [G7]hundred years from [C]now
 {end_of_verse}
+
+
+
+

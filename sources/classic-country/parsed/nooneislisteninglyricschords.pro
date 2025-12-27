@@ -1,6 +1,9 @@
 {meta: title No One Is Listening}
 {meta: artist Vernon Oxford}
 {meta: composer Everett Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file nooneislisteninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No one is listening to the [F]cry of the [C]young
@@ -33,3 +36,7 @@ But no one [G7]is willing to [C]give
 {start_of_verse: Verse 5}
 Will somebody [G7]listen to [F]me[C]
 {end_of_verse}
+
+
+
+

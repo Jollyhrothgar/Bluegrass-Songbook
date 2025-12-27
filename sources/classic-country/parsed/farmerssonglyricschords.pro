@@ -1,5 +1,8 @@
 {meta: title Farmer's Song}
 {meta: artist Murray McLauchlan}
+{meta: x_source classic-country}
+{meta: x_source_file farmerssonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dusty old farmer out working your fields
@@ -49,3 +52,9 @@ Moping a face like a [D7]shoe
 Thanks for the meal here's a song that is real
 From a kid from the city to [G]you
 {end_of_verse}
+
+
+
+
+
+

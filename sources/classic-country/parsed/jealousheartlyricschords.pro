@@ -1,6 +1,9 @@
 {meta: title Jealous Heart}
 {meta: artist Loretta Lynn}
 {meta: composer Jenny Lou Carson}
+{meta: x_source classic-country}
+{meta: x_source_file jealousheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jealous heart oh jealous heart stop [D7]beating
@@ -29,3 +32,6 @@
 [G7]It's so [C]hard to know he'll never want [G]me
 [D7]Cause he heard your beating jealous [G]heart
 {end_of_verse}
+
+
+

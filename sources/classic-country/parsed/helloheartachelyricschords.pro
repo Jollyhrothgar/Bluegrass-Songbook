@@ -1,6 +1,9 @@
 {meta: title Hello Heartache}
 {meta: artist Hank Locklin}
 {meta: composer Ben Raleigh}
+{meta: x_source classic-country}
+{meta: x_source_file helloheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night we met she loved me warm and [C]tender
@@ -30,3 +33,6 @@ Hello  [G7]hello [C]heartache
 Come on [D7]in  I've been expecting [G]you
 Hello  [G7]hello [C]heartache come on [D7]in I've been expecting [G]you
 {end_of_verse}
+
+
+

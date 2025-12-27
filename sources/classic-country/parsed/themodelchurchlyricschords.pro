@@ -1,6 +1,9 @@
 {meta: title The model church}
 {meta: artist J.D. Crowe}
 {meta: composer Edwin O. Excell and John Yates}
+{meta: x_source classic-country}
+{meta: x_source_file themodelchurchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well wife I've found a [F]model [C]church and worshiped there to[G7]day
@@ -41,3 +44,8 @@ Thank God we'll [C]never [F]sin a[C]gain there'll be no sorrow there
 There'll be no sorrow [G7]there [C]in heaven above where [F]all is love
 There'll [C]be no [G7]sorrow [C]there
 {end_of_verse}
+
+
+
+
+

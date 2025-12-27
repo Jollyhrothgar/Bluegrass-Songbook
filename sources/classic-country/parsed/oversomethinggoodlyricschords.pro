@@ -1,6 +1,9 @@
 {meta: title Over Something Good}
 {meta: artist George Jones}
 {meta: composer Jodie Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file oversomethinggoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your eyes could light the world tonight that's just how much they [F]glow
@@ -27,3 +30,6 @@
 [F]Oh things would be much better darling if you only could
 [G7]Keep yourself from feeling bad over something [C]good
 {end_of_verse}
+
+
+

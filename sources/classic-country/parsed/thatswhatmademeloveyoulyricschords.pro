@@ -1,6 +1,9 @@
 {meta: title That's What Made Me Love You}
 {meta: artist Bill Anderson}
 {meta: composer Lawrence Shoberg}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatmademeloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two nights in the [F]pourin' rain
@@ -43,3 +46,8 @@ In a motel in [C]Dallas
 That's what made me [G7]love you
 That's what made me [C]love you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I've Enjoyed As Much Of This As I Can Stand}
 {meta: artist Jim Reeves}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file iveenjoyedasmuchofthisasicanstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You look lovelier tonight [F]than I [C]remember 
@@ -29,3 +32,6 @@ I'm so glad I got to see [G7]you once [C]again
 I've enjoyed just sitting down [F]and [C]reminiscing
 But I've enjoyed as much of this [G7]as I can [C]stand
 {end_of_verse}
+
+
+

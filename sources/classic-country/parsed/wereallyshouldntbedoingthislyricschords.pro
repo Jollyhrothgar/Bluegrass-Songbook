@@ -1,6 +1,9 @@
 {meta: title We Really Shouldn't Be Doing This}
 {meta: artist George Strait}
 {meta: composer Jim Lauderdale}
+{meta: x_source classic-country}
+{meta: x_source_file wereallyshouldntbedoingthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We really shouldn't be a [D7]doing this 
@@ -55,3 +58,10 @@ We really shouldn't be doing [G]this
 Won't even think about a [D7]farewell kiss 
 We really shouldn't be a doing [G]this
 {end_of_verse}
+
+
+
+
+
+
+

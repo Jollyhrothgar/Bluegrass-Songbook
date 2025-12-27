@@ -1,6 +1,9 @@
 {meta: title The Other Side}
 {meta: artist Anne Murray}
 {meta: composer Joie Scott and Richard Wold}
+{meta: x_source classic-country}
+{meta: x_source_file theothersidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Through [G]each life time [D7]run rivers to [G]cross[C]
@@ -47,3 +50,9 @@ But on the [G]other side of [D7]fear is [G]love
 {start_of_verse: Verse 5}
 On the other side of [D7]fear is [G]love
 {end_of_verse}
+
+
+
+
+
+

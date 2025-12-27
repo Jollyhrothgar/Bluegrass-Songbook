@@ -1,6 +1,9 @@
 {meta: title Carry Me Back To Old Virginia}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Glen Powell and James Bland}
+{meta: x_source classic-country}
+{meta: x_source_file carrymebacktooldvirginialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Carry me back to [C]old Vir[G]ginia
@@ -44,3 +47,7 @@ I'm bringing it all in (I’m coming [G]home)
 I gotta get back [Em]home (I’m coming home)
 I'm all always home (I’m coming [G]home)
 {end_of_verse}
+
+
+
+

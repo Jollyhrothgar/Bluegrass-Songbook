@@ -1,6 +1,9 @@
 {meta: title Rough Around The Edges}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file rougharoundtheedgeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’ll be rough around the [F]edges
@@ -42,3 +45,8 @@ Oh [C]I love you and I’ll [G7]do the best I [C]can
 It’s gonna get rough around the [F]edges
 There’ll [C]be no diamonds [G7]in your wedding [C]band
 {end_of_verse}
+
+
+
+
+

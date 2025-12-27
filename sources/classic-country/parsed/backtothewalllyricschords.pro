@@ -1,6 +1,9 @@
 {meta: title Back To The Wall}
 {meta: artist Tammy Wynette}
 {meta: composer Larry Bastian}
+{meta: x_source classic-country}
+{meta: x_source_file backtothewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've heard all your answers but there's one thing I wish you'd [F]explain[C]  [F]
@@ -30,3 +33,6 @@ And you can't keep a wild bird from leavin' at the first signs of [F]fall[C]  [F
 [G7]You've got your freedom and I've got my back to the [C]wall [G7]    [C]
 [G7]You've got your freedom and I've got my back to the [C]wall
 {end_of_verse}
+
+
+

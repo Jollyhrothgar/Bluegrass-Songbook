@@ -1,6 +1,9 @@
 {meta: title Don't Ask Me to be Friends}
 {meta: artist Everly Brothers}
 {meta: composer Gerald Goffin and Jack Keller}
+{meta: x_source classic-country}
+{meta: x_source_file dontaskmetobefriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]After all we've [C]been  to [G]one [D7]another
@@ -27,3 +30,6 @@
 [D7][Em]Darling [C]I beg [G]of [B7]you if our love [Em]must [C][D7]end
 [G]Ask me to forgive you [D7]but don't ask me to be [G]friends
 {end_of_verse}
+
+
+

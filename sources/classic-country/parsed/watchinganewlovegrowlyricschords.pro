@@ -1,6 +1,9 @@
 {meta: title Watching A New Love Grow}
 {meta: artist Boxcar Willie}
 {meta: composer Bobby Dwight Caraway and Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file watchinganewlovegrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come lay down [F]beside me and [C]help [G7]ease my [C]mind
@@ -35,3 +38,8 @@ Now I'm watching a [G7]new love grow watching an old love [C]go
 {start_of_verse: Verse 5}
 Watching a [G7]new love grow watching an old love [C]go
 {end_of_verse}
+
+
+
+
+

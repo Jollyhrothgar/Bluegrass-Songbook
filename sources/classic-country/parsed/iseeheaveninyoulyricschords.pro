@@ -1,6 +1,9 @@
 {meta: title I See Heaven In You}
 {meta: artist Mel Tillis}
 {meta: composer Jim Rister}
+{meta: x_source classic-country}
+{meta: x_source_file iseeheaveninyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wake up every morning and I hear good morning darlin'
@@ -32,3 +35,7 @@ Cause [F]I see [G7]heaven in [C]you
 {start_of_verse: Verse 4}
 Cause [F]I see [G7]heaven in [C]you
 {end_of_verse}
+
+
+
+

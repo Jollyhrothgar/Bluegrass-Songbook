@@ -1,6 +1,9 @@
 {meta: title Tears Are Only Rain}
 {meta: artist Hank Thompson}
 {meta: composer Johnny Hatchcock and Weldon Allard}
+{meta: x_source classic-country}
+{meta: x_source_file tearsareonlyrainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When your lover cries hold her [C]close and whisper [G]low
@@ -27,3 +30,5 @@ But [C]when she sheds a [G]tear she may get [A7]blue because of [D7]you
 For tears are only [D7]rain to make love [G]grow
 For tears are only [D7]rain to make love [G]grow
 {end_of_verse}
+
+

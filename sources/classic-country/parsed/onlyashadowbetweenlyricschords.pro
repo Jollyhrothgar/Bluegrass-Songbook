@@ -1,6 +1,9 @@
 {meta: title Only A Shadow Between}
 {meta: artist Sonny James}
 {meta: composer Clay Blaker and Ed Baird}
+{meta: x_source classic-country}
+{meta: x_source_file onlyashadowbetweenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have a [F]home in the [C]bright summer [F]land
@@ -29,3 +32,6 @@ There's [C]only a [G7]shadow be[C]tween
 [C]One step to [F]go o'er the [C]waves all a-[F]glow
 There's [C]only a [G7]shadow be[C]tween
 {end_of_verse}
+
+
+

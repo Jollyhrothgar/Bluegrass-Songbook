@@ -1,6 +1,9 @@
 {meta: title Where I Wrote Your Name}
 {meta: artist Jack Greene}
 {meta: composer Beau Garrett}
+{meta: x_source classic-country}
+{meta: x_source_file whereiwroteyournamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Looking back on [G7]yesteryears 
@@ -63,3 +66,8 @@ Can [C]always stay the [Am]same [G7]
 It still [F]lives in the [G7]place where I [Am]wrote your name
 [G7]It still [F]lives in the [G7]place where I [C]wrote your name[F]  [C]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Pinball Machine}
 {meta: artist Carl Smith}
 {meta: composer Lonnie Ervin}
+{meta: x_source classic-country}
+{meta: x_source_file pinballmachinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well one day you're up and the next day you're down
@@ -33,3 +36,7 @@ Cause she's got a [G7]heart heart heart like a pinball [C]machine
 {start_of_verse: Verse 4}
 Cause she's got a [G7]heart heart heart like a pinball [C]machine
 {end_of_verse}
+
+
+
+

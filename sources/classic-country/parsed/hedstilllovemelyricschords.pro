@@ -1,6 +1,9 @@
 {meta: title He'd Still Love Me}
 {meta: artist Lynn Anderson}
 {meta: composer Glenn Sutton and Hugh X. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file hedstilllovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're here to tell me [C]just how much [G]he loves you
@@ -27,3 +30,6 @@ But I [G]won't and if I did [D7]he'd still love [G]me[D7]
 And [G]knowing this you're still expecting [C]me to set him free
 But I [G]won't and if I did [D7]he'd still love [C]me [G]
 {end_of_verse}
+
+
+

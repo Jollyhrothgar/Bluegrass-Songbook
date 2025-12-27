@@ -1,6 +1,9 @@
 {meta: title I've Got Texas In My Heart}
 {meta: artist Loretta Lynn}
 {meta: composer Mildred Burk and Ross Burk}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottexasinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm packin' up my ole [G7]suitcases
@@ -44,3 +47,8 @@ I love the western way they dress in Texas
 (The eyes of Texas are upon you)
 [G7]I've got Texas in my [C]heart
 {end_of_verse}
+
+
+
+
+

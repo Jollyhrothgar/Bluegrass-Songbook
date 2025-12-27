@@ -1,6 +1,9 @@
 {meta: title It's The Wine That's Talking}
 {meta: artist Jean Shepard}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file itsthewinethatstalkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want so much to [D7]believe the things you're [G]saying
@@ -23,3 +26,5 @@ But [G]when you're like you are now [C]your words mean nothing [G]to me
 It's the [C]wine that's [G]talking  [D7]it isn't really [G]you
 It's the [C]wine that's [G]talking  [D7]it isn't really [G]you
 {end_of_verse}
+
+

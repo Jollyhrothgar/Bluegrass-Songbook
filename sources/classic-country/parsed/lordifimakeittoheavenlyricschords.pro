@@ -1,6 +1,9 @@
 {meta: title Lord If I Make It To Heaven}
 {meta: artist Billy Parker}
 {meta: composer Thomas C. Overstreet and Dale G. Vest}
+{meta: x_source classic-country}
+{meta: x_source_file lordifimakeittoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord prepare [G7]me no [C]mansion
@@ -41,3 +44,8 @@ Can I bring my own [G7]angle [C]along
 [F]Lord if I make it to [C]heaven
 Can I bring my own [G7]angle [C]along
 {end_of_verse}
+
+
+
+
+

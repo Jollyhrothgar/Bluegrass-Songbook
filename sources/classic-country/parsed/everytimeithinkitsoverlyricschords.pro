@@ -1,6 +1,9 @@
 {meta: title Every Time I Think It's Over}
 {meta: artist Conway Twitty}
 {meta: composer Danny Steagall, Red Steagall, Wood Newton}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeithinkitsoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we run into problems
@@ -41,3 +44,7 @@ Too many hearts get broken
 {start_of_verse: Verse 5}
 [C]Every time I think it's over I [G7]think it over [C]again
 {end_of_verse}
+
+
+
+

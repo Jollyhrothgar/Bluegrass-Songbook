@@ -1,6 +1,9 @@
 {meta: title Ruby Ann}
 {meta: artist Marty Robbins}
 {meta: composer Lee Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file rubyannlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Ruby Ann
@@ -29,3 +32,6 @@ Ain't [D7]true love a funny [G]thing
 Ruby [C]Ann took the hand of this [G]poor poor man
 Ain’t [D7]true love a funny [G]thing
 {end_of_verse}
+
+
+

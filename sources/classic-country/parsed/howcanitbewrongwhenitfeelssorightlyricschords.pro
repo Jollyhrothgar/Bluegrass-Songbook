@@ -1,6 +1,9 @@
 {meta: title How Can It Be Wrong (When It Feels So Right)}
 {meta: artist Barbara Mandrell}
 {meta: composer Norro Wilson, Danny Walls, Sammy Lyons}
+{meta: x_source classic-country}
+{meta: x_source_file howcanitbewrongwhenitfeelssorightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You run to meet me and I reach out my arms
@@ -26,3 +29,6 @@ How can this be wrong when it feels so [G]right
 {start_of_verse: Verse 4}
 How [D7]can this be wrong when it feels so [G]right
 {end_of_verse}
+
+
+

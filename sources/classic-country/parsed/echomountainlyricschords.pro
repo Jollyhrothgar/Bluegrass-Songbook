@@ -1,5 +1,8 @@
 {meta: title Echo Mountain}
 {meta: artist James King}
+{meta: x_source classic-country}
+{meta: x_source_file echomountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now up on echo mountain 
@@ -91,3 +94,15 @@ It's the innocent who [F]pay
 Now the [C]cries on echo mountain
 Will [G7]haunt me to this [C]day
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

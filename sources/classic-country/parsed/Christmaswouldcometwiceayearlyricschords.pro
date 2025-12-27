@@ -1,5 +1,8 @@
 {meta: title Christmas Would Come Twice A Year}
 {meta: artist Rusty Wellington}
+{meta: x_source classic-country}
+{meta: x_source_file Christmaswouldcometwiceayearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish [G7]Christmas would [C]come twice a [F]year
@@ -49,3 +52,9 @@
 [A]But I’m [C]only wishing and [F]what good is [D7]wishing
 [G7]When Christmas only [C]comes once a [F]year
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Tougher Than Leather}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file tougherthanleatherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He was tougher than leather and he didn't [G7]care
@@ -88,3 +91,18 @@ When the young maiden came over and knelt down beside him
 [D7]To a place from a place
 [G]Changing skies changing skies
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

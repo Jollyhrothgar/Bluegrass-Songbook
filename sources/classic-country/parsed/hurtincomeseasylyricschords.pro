@@ -1,5 +1,8 @@
 {meta: title Hurtin' Comes Easy}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file hurtincomeseasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've spent a [D7]lifetime [C]looking for [G]love[D7]   [C]  [G]
@@ -37,3 +40,8 @@ But me I've been to [D7]every doctor
 [G]Cause hurtin' comes [D7]eas[C]y [G]hurtin' comes [D7]eas[C]y
 [G]Hurtin' comes [D7]eas[C]y for [G]me
 {end_of_verse}
+
+
+
+
+

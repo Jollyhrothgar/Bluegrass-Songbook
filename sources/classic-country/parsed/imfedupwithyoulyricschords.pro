@@ -1,6 +1,9 @@
 {meta: title I'm Fed Up With You}
 {meta: artist Dolly Parton}
 {meta: composer Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file imfedupwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I'm fed up with [C]you [G7]feedin' me a [C]line
@@ -35,3 +38,8 @@
 {start_of_verse: Verse 6}
 [F]I'm fed up with [C]you [G7]feedin' me a [C]line
 {end_of_verse}
+
+
+
+
+

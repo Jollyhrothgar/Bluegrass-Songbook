@@ -1,6 +1,9 @@
 {meta: title When You Hurt Me More Than I Love You}
 {meta: artist Lynn Anderson}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file whenyouhurtmemorethaniloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The time will come when I'll be free 
@@ -30,3 +33,6 @@ This [C]love that's kept me yours so long
 {start_of_verse: Verse 4}
 [G7]When you've hurt me more than I [F]love [C]you
 {end_of_verse}
+
+
+

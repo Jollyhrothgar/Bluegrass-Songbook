@@ -1,6 +1,9 @@
 {meta: title Stand On My Own Two Knees}
 {meta: artist George Jones}
 {meta: composer Roger Dale Bowling and Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file standonmyowntwokneeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've tried everything I [F]know to make you [C]happy
@@ -27,3 +30,6 @@ And at [G7]least I've learned how to stand on my own two [C]knees
 Yes I know I’m still not walking tall but I'm [F]trying
 And at [G7]least I've learned how to stand on my own two [C]knees
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lord It's Just Another Hill}
 {meta: artist Doyle Lawson}
 {meta: composer Edward F Easter, James Easter, Russell Lee Easter}
+{meta: x_source classic-country}
+{meta: x_source_file lorditsjustanotherhilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord it’s just another hill that I’m [Em]climbing
@@ -36,3 +39,7 @@ Lord it’s [G]just another tear you’ll wipe [D7]away
 If I can [G]just hold on a little [Em]longer
 I’ll be [G]rejoicing in [D7]Heaven some [G]day
 {end_of_verse}
+
+
+
+

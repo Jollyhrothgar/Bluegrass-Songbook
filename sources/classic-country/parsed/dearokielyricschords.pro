@@ -1,6 +1,9 @@
 {meta: title Dear Okie}
 {meta: artist Hank Thompson}
 {meta: composer Doye O'Dell and Rudy Sooter}
+{meta: x_source classic-country}
+{meta: x_source_file dearokielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dear Okie if [E7]you see Arkie tell him 
@@ -37,3 +40,6 @@ He'll [A7]make it fine if he starts out the [D7]day before
 Pickin' up [C]prunes squeezin' oil [D7]out of [G]olives
 (Dear Okie)
 {end_of_verse}
+
+
+

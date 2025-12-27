@@ -1,6 +1,9 @@
 {meta: title Automatic Mama}
 {meta: artist Don Gibson}
 {meta: composer Fred Stryker, Margery Claire}
+{meta: x_source classic-country}
+{meta: x_source_file automaticmamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I filled the house with gadgets so you’d never have to [D7]slave
@@ -43,3 +46,8 @@ Slow down you’ll wind up with your heart in a [G]cast
 Automatic Mama be careful what you [C]do
 [D7]Those new contraptions will be the death of [G]you
 {end_of_verse}
+
+
+
+
+

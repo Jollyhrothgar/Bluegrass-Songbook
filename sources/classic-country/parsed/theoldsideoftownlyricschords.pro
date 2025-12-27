@@ -1,5 +1,8 @@
 {meta: title The Old Side Of Town}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file theoldsideoftownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ain't it strange how people change
@@ -63,3 +66,11 @@ But [C]I can still be [G]found
 [C]Oh we miss [G]you
 On the [D7]old side of [G]town
 {end_of_verse}
+
+
+
+
+
+
+
+

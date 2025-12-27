@@ -1,6 +1,9 @@
 {meta: title You Gotta Be Tired}
 {meta: artist Kenny Rogers}
 {meta: composer Ed Bruce and Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file yougottabetiredlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As a child momma told me all [G7]about You[C] 
@@ -43,3 +46,8 @@ To help You [F]Lord I would but I [Dm]can't
 [F]You gotta be [G7]tired Lord You gotta be [C]tired
 [F]You gotta be [C]tired
 {end_of_verse}
+
+
+
+
+

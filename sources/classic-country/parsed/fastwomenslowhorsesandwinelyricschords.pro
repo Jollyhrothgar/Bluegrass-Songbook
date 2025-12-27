@@ -1,6 +1,9 @@
 {meta: title Fast Women Slow Horses And Wine}
 {meta: artist Charlie Walker}
 {meta: music Rusty Harp}
+{meta: x_source classic-country}
+{meta: x_source_file fastwomenslowhorsesandwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Words and music by Rusty Harp
@@ -52,3 +55,10 @@ Now all I've got left is a [G7]family [C]tree
 {start_of_verse: Verse 6}
 On account of fast women slow [G7]horses and [C]wine
 {end_of_verse}
+
+
+
+
+
+
+

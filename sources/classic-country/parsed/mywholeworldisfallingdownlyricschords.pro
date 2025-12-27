@@ -1,5 +1,8 @@
 {meta: title My Whole World Is Falling Down}
 {meta: artist Brenda Lee}
+{meta: x_source classic-country}
+{meta: x_source_file mywholeworldisfallingdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My whole world is falling down  
@@ -24,3 +27,6 @@ You told me that your love for me was [Am]true
 [C]For I still love you in the same old [Am]way  
 [F]And I'm losing you a [G7]little more every [C]day  
 {end_of_verse}
+
+
+

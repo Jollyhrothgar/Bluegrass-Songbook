@@ -1,6 +1,9 @@
 {meta: title As Long As There's A Sunday}
 {meta: artist Ernest Tubb}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file aslongastheresasundaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though I can't come to [F]see you every [C]day
@@ -33,3 +36,7 @@ And as [C]long as there's a [G7]Sunday I'll come [Am]by
 {start_of_verse: Verse 5}
 [F]Yes as [C]long as there's a [G7]Sunday I'll come [C]by
 {end_of_verse}
+
+
+
+

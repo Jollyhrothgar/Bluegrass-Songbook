@@ -1,6 +1,9 @@
 {meta: title Old Wore Out Cowboys}
 {meta: artist Johnny Rodriguez}
 {meta: composer Patsy Bruce and Ronald Robert Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file oldworeoutcowboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There must be someplace for [F]old wore out [C]cowboys
@@ -40,3 +43,8 @@ And the jukebox is playing [G7]Hank Williams for [C]free[G7]
 {start_of_verse: Verse 4}
 The [C]jukebox is playing [G7]Hank Williams for [C]free
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Still Like Bologna}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file istilllikebolognalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's satellite communications 
@@ -68,3 +71,11 @@ And a good woman's [D7]love to hold me [G]close[D7]
 {start_of_verse: Verse 6}
 Yeah [C]Bologna a woman's [D7]love and a good cell [G]phone
 {end_of_verse}
+
+
+
+
+
+
+
+

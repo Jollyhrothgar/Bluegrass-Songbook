@@ -1,6 +1,9 @@
 {meta: title Do Me A Favor}
 {meta: artist Marty Robbins}
 {meta: composer Don Winters}
+{meta: x_source classic-country}
+{meta: x_source_file domeafavorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Do me a [C]favor let me [G]forget
@@ -22,3 +25,5 @@ And [A7]it's always the same when I hear your name there's a hurt [D7]inside
 [G]Do me a [C]favor turn my picture to the [G]wall
 Then just one last [D7]favor forget me once and for [G]all
 {end_of_verse}
+
+

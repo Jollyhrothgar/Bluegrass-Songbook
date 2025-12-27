@@ -1,6 +1,9 @@
 {meta: title I Knew My Day Would Come}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file iknewmydaywouldcomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been caught out in the [C]rain
@@ -34,3 +37,7 @@ Ooh I [G]knew my [D7]day would [G]come
 Ooooo[C]ooooo [G]oh I knew my day would [D7]come
 Oo[G]oooo[C]oooo oh I [G]knew my [D7]day would [G]come
 {end_of_verse}
+
+
+
+

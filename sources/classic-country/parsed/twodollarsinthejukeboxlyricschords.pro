@@ -1,5 +1,8 @@
 {meta: title Two Dollars In The Jukebox}
 {meta: artist Eddie Rabbitt}
+{meta: x_source classic-country}
+{meta: x_source_file twodollarsinthejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got two dollars in the jukebox five dollars in a [C]bottle
@@ -32,3 +35,7 @@ And a [D7]lady on my mind that's driving me [G]crazy
 {start_of_verse: Verse 4}
 I've got a [D7]lady on my mind that's driving me [G][C]cra--zyeee 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Know Your Memory Well}
 {meta: artist Johnny Bush}
 {meta: composer Larry Randal Kingston and Harlan A. Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file iknowyourmemorywelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My eyes no longer [F]look for new [C]horizons
@@ -37,3 +40,7 @@ I [C]know your [G7]memory [C]well
 {start_of_verse: Verse 4}
 I know your [G7]memory [C]well
 {end_of_verse}
+
+
+
+

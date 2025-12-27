@@ -1,6 +1,9 @@
 {meta: title How Long Have You Been There}
 {meta: artist Waylon Jennings}
 {meta: composer Dee Moeller}
+{meta: x_source classic-country}
+{meta: x_source_file howlonghaveyoubeentherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've been [C]walking in the shadows for so [Am]long 
@@ -55,3 +58,10 @@ How [G7]long have you been [C]there
 [F]Now I'm standing [Em]still and I [Dm]wonder 
 How [G7]long have you been [C]there
 {end_of_verse}
+
+
+
+
+
+
+

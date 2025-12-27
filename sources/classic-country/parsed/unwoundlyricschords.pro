@@ -1,6 +1,9 @@
 {meta: title Unwound}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file unwoundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Give me a bottle [D7]of your very [G]best
@@ -33,3 +36,7 @@ That woman that I [G]had wrapped around my [D7]finger just come un[G]wound
 {start_of_verse: Verse 4}
 [C]And that woman that I [G]had wrapped around my [D7]finger just come un[G]wound
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Walking Dream}
 {meta: artist Patsy Cline}
 {meta: composer Ginny Willis and Hal Willis}
+{meta: x_source classic-country}
+{meta: x_source_file walkingdreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Walking dream  I dreamed about [D7]you 
@@ -36,3 +39,7 @@ Cause you’re so [D7]lovey turtle-dovey walking [G]dream
 Tag:
 Cause you’re so [D7]lovey turtle-dovey walking [G]dream
 {end_of_verse}
+
+
+
+

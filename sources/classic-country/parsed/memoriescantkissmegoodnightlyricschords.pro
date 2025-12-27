@@ -1,6 +1,9 @@
 {meta: title Memories Can't Kiss Me Goodnight}
 {meta: artist Billy Walker}
 {meta: composer Jess Hudson and Mary Ann Meier}
+{meta: x_source classic-country}
+{meta: x_source_file memoriescantkissmegoodnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Each night I crawl in [C]to my lonely [G]bed
@@ -26,3 +29,6 @@ And memories can't [D7]kiss me [G]goodnight
 {start_of_verse: Verse 4}
 No memories can't [D7]kiss me [G][C]goodni-ght
 {end_of_verse}
+
+
+

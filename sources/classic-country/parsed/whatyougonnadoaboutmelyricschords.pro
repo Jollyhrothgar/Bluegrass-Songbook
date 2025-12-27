@@ -1,6 +1,9 @@
 {meta: title What You Gonna Do About Me}
 {meta: artist Reba McEntire}
 {meta: composer Michael Heeney and David Scarlett}
+{meta: x_source classic-country}
+{meta: x_source_file whatyougonnadoaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You take the records [Am]I'll take the stereo 
@@ -45,3 +48,8 @@ Oh [F]what you gonna do [G7]  what you gonna do about [C]me
 How can I tell her when [Am]I don't know for sure
 Why [Dm]her mom and dad don't love each [G7]other any[C]more
 {end_of_verse}
+
+
+
+
+

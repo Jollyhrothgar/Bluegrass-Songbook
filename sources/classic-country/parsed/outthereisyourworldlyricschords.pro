@@ -1,6 +1,9 @@
 {meta: title Out There Is Your World}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and Vern Stovall}
+{meta: x_source classic-country}
+{meta: x_source_file outthereisyourworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Out there is your world and it's [C7]waiting for [F]you
@@ -29,3 +32,6 @@
 [F]Out there in your world if someday you [C]find
 [G7]It's lonesome in your world you're still [C]welcome in [C][F]mine
 {end_of_verse}
+
+
+

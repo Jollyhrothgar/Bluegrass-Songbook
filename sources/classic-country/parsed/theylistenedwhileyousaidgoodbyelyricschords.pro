@@ -1,6 +1,9 @@
 {meta: title They Listened While You Said Goodbye}
 {meta: artist Porter Wagoner}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file theylistenedwhileyousaidgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7](Listen [G]   [C]listen   [D7]listen they're saying good[G]bye)
@@ -33,3 +36,7 @@ That [C]I'll find a new love but [A7]I never [D7]will
 For [G]you didn't know [G7]my whole world stood [C]still
 And [D7]listened while you said good[G]bye
 {end_of_verse}
+
+
+
+

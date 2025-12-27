@@ -1,6 +1,9 @@
 {meta: title Send Me to Glory in a Glad Bag}
 {meta: artist John Biggs}
 {meta: composer Don J. Carson, Mim Carson, Steve Mason}
+{meta: x_source classic-country}
+{meta: x_source_file sendmetogloryinagladbaglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]People tell me I ought to save my [C]money  
@@ -64,3 +67,11 @@ Don't [D7]waste a fancy coffin on my [G]bones
 Just put me out on the curb next [C]Tuesday
 Let the [D7]sanitation local bear me [G]home
 {end_of_verse}
+
+
+
+
+
+
+
+

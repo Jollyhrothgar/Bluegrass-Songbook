@@ -1,6 +1,9 @@
 {meta: title One Heart}
 {meta: artist Leroy Van Dyke}
 {meta: composer Carl Wells}
+{meta: x_source classic-country}
+{meta: x_source_file oneheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Oh my darling [G7]one heart I give to [C]you)
@@ -33,3 +36,7 @@ But what will I [F]do if you [G7]refuse
 One heart like [C]mine is enough for [F]two
 And let me [C]share that one [G7]heart with [C]you
 {end_of_verse}
+
+
+
+

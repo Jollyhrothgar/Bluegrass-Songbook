@@ -1,6 +1,9 @@
 {meta: title Change Her Mind}
 {meta: artist Gene Watson}
 {meta: composer Danny Mayo, Paul Nelson, Larry Boone}
+{meta: x_source classic-country}
+{meta: x_source_file changehermindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mornings closing in on me how [F]can I face another [C]dawn 
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [Dm]I need a miracle please Jesus [G7]would you change her [C]mind
 {end_of_verse}
+
+
+
+

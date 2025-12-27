@@ -1,6 +1,9 @@
 {meta: title Don’t Wake Me I’m Dreaming}
 {meta: artist Jack Greene}
 {meta: composer Warner McPherson}
+{meta: x_source classic-country}
+{meta: x_source_file dontwakemeimdreaminglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It sure is good to [C7]be back in [F]your arms again
@@ -29,3 +32,7 @@ Let me keep this [F]feeling [G7]don't let my dream world [C]die
 {start_of_verse: Verse 4}
 Don't wake me I'm [G7]dreaming don't let my dream world [C]die
 {end_of_verse}
+
+
+
+

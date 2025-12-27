@@ -1,6 +1,9 @@
 {meta: title The Battle For Daddy's Soul}
 {meta: artist George Jones}
 {meta: composer Mel Howard and Janice Wolverton}
+{meta: x_source classic-country}
+{meta: x_source_file thebattlefordaddyssoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's the bible against the bottle
@@ -67,3 +70,8 @@ On [C]Monday let the good times [G]roll
 It's the bible against the bottle
 In the [D7]battle for daddy's [G]soul
 {end_of_verse}
+
+
+
+
+

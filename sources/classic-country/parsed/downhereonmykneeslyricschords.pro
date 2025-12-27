@@ -1,6 +1,9 @@
 {meta: title Down Here On My Knees}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file downhereonmykneeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I realize that [G7]I'm not standing [C]tall
@@ -29,3 +32,6 @@
 [F]I'm down here praying  that [C]you'll be [F]staying
 [C]That's why I'm [G7]down here on my [C]knees
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Lover's Quarrel}
 {meta: artist George Morgan}
 {meta: composer Newt Richardson and Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file aloversquarrellyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just had a date that didn’t mean a thing
@@ -33,3 +36,8 @@ And all the old faces made me miss you so
 And the date that I had that made me so sad
 [F]Made me care [G7]more darling [C]for [C7]you
 {end_of_verse}
+
+
+
+
+

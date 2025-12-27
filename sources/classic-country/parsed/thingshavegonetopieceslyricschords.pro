@@ -1,6 +1,9 @@
 {meta: title Things Have Gone To Pieces}
 {meta: artist George Jones}
 {meta: composer Leon PayneC}
+{meta: x_source classic-country}
+{meta: x_source_file thingshavegonetopieceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 And last night your picture [G7]fell down from the [C]wall
@@ -30,3 +33,6 @@ There ain't nothing in my [F]pocket
 But three [C]nickels and a [F]dime
 But I'm [C]holding to the [G7]pieces of my [C]dream
 {end_of_verse}
+
+
+

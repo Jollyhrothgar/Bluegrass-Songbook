@@ -1,6 +1,9 @@
 {meta: title Could I Fall In Love}
 {meta: artist Elvis Presley}
 {meta: composer Randy Starr}
+{meta: x_source classic-country}
+{meta: x_source_file couldifallinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Could I fall in [Bm]love for the [C]very first [G]time
@@ -24,3 +27,5 @@ I have the answer from the [A7]feeling in my [D7]heart
 [G]Could I fall in [Bm]love and [C]forever be [G]true
 My heart tells me I [Am]could if [D7]I fell for [G]you
 {end_of_verse}
+
+

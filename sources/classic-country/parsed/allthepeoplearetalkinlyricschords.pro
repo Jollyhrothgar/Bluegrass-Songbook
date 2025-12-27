@@ -1,6 +1,9 @@
 {meta: title All The People Are Talkin'}
 {meta: artist John Anderson}
 {meta: composer Fred Carter Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file allthepeoplearetalkinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All of the people are talkin'
@@ -54,3 +57,9 @@ I ain't be[D7]lieving what the [G7]people [C]say
 No no I ain't be[D7]lieving what the [G7]people [C]say
 They can keep talkin' I ain't be[D7]lievin' what the [G7]people [C]say
 {end_of_verse}
+
+
+
+
+
+

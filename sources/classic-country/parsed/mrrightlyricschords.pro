@@ -1,5 +1,8 @@
 {meta: title Mr. Right}
 {meta: artist Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file mrrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can tell by the [D7]way you've been [G]turning men [C]down
@@ -37,3 +40,7 @@ I'm Mr. [G]Right or [D7]Mr. Right [G]now
 I'm Mr. Right [D7]forever or [G]just until when[C]ever
 I'm Mr. [G]Right or [D7]Mr. Right [G]now
 {end_of_verse}
+
+
+
+

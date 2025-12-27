@@ -1,5 +1,8 @@
 {meta: title I Believe In Good Old Country Music}
 {meta: artist Charley Pride}
+{meta: x_source classic-country}
+{meta: x_source_file ibelieveingoodoldcountrymusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was [F]born and [G7]raised on country [C]music
@@ -56,3 +59,10 @@
 [F]You can have the [G7]city lights and [C]I'll take the [Am]moon
 [F]Bet 'cha that I'm happier than [G7]you
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Mama Was The Rose Of San Antone}
 {meta: artist Curtis Potter}
 {meta: composer Joe Bob Barnhill}
+{meta: x_source classic-country}
+{meta: x_source_file mymamawastheroseofsanantonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I learned how to sing [F]before I learned to [C]crawl
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]My mama was the [G7]rose of San [C]Antone
 {end_of_verse}
+
+
+
+

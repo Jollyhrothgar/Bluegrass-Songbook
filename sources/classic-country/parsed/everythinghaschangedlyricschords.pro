@@ -1,6 +1,9 @@
 {meta: title Everything Has Changed}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Ray Starr Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file everythinghaschangedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I  [G]walked to the [D7]park where we [G]used to go
@@ -28,3 +31,6 @@ Except my [D7]heart it still [G]loves you
 {start_of_verse: Verse 4}
 Except my [D7]heart it still [G]loves you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Who Do I Know In Dallas}
 {meta: artist Merle Haggard}
 {meta: composer Hank Cochran and Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file whodoiknowindallaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Who do I [G7]know in [C]Dallas
@@ -29,3 +32,6 @@
 [F]Who do I [G7]know in [C]Dallas
 [F]Who'll make [G7]me forget she's [C]gone
 {end_of_verse}
+
+
+

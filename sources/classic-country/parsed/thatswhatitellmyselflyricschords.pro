@@ -1,6 +1,9 @@
 {meta: title That's What I Tell Myself}
 {meta: artist Jack Greene}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatitellmyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't love you anymore 
@@ -40,3 +43,8 @@ Someone truer [C]more than you were
 [F]Someone truer [C]more than you were 
 [G7]That's what I tell my[F]self[C]
 {end_of_verse}
+
+
+
+
+

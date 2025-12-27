@@ -1,6 +1,9 @@
 {meta: title Whatcha Gonna Do}
 {meta: artist Kris Kristofferson}
 {meta: composer Donnie Fritts and Jon Reid}
+{meta: x_source classic-country}
+{meta: x_source_file whatchagonnadolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You never known [A7]anyone else but [Dm]me 
@@ -39,3 +42,8 @@ How will you [G]make it through the [E7]night when you're all [Am]alone
 [G]Whatcha you gonna [C]do
 [G]Whatcha you gonna [C]do
 {end_of_verse}
+
+
+
+
+

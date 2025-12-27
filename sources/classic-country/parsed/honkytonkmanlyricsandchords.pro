@@ -1,6 +1,9 @@
 {meta: title Honkytonk Man}
 {meta: artist Marty Robbins and Clint Eastwood}
 {meta: composer Billie Jean Horton, Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkmanlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I've never seen you look quite so [Em]sad
@@ -43,3 +46,8 @@ And we'll [F]get through this night the best way we [G7]can
 It's the [F]best old pain [C]killer since [Em]hurting [Am]began
 [F]Throw your [C]arms 'round this [G7]honkytonk [C]man
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Stars Are The Windows Of Heaven}
 {meta: artist Anne Murray}
 {meta: composer Tommie Malie and Jimmy Steiger}
+{meta: x_source classic-country}
+{meta: x_source_file starsarethewindowsofheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two little [Am]kids [Dm]watching the [G7]skies
@@ -41,3 +44,8 @@
 [C]My pop says stars are the windows [Ab]of [D7]heaven
 [G7]Where angels peep [C]through
 {end_of_verse}
+
+
+
+
+

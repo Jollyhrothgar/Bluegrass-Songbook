@@ -1,6 +1,9 @@
 {meta: title You Only Paint The Picture Once}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Teddy Gentry, Greg Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file youonlypaintthepictureoncelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Look at those [Dm]evening [G7]shadows [Dm]casting a peaceful [G7]light
@@ -34,3 +37,7 @@ You can't [Am]change it once it's [Dm]done  [G7]you only paint the picture [C]on
 [A7]It's a portrait of [Dm]life you can't live it twice
 You only [G7]paint the picture [C]once [G7]    [Am]    [C]
 {end_of_verse}
+
+
+
+

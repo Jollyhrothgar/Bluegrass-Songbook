@@ -1,5 +1,8 @@
 {meta: title Blue Collar Holler}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file bluecollarhollerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It’s been too long since morning but it’s almost quittin’ [C]time
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [D7]Down at Blue Collar Holler they love the working [G]man
 {end_of_verse}
+
+
+
+

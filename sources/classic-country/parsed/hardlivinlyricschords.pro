@@ -1,6 +1,9 @@
 {meta: title Hard Livin'}
 {meta: artist Keith Whitley}
 {meta: composer David Halley}
+{meta: x_source classic-country}
+{meta: x_source_file hardlivinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you can call out the sheriff and the highway patrol
@@ -47,3 +50,9 @@ And I [G7]wish hard livin' didn't come easy for [C]me
 {start_of_verse: Verse 7}
 Hey I [G7]wish hard livin' didn't come easy for [C]me
 {end_of_verse}
+
+
+
+
+
+

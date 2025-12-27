@@ -1,5 +1,8 @@
 {meta: title Cocktails}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file cocktailslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cocktails [F]tore up my [C]family
@@ -36,3 +39,7 @@ Cocktails [F]tore down my [G7]home
 I [C]cheated and I lied swallowed my [F]pride (and [C]then)
 Washed it [G7]down with [C]cocktails
 {end_of_verse}
+
+
+
+

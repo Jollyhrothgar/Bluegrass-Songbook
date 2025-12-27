@@ -1,6 +1,9 @@
 {meta: title Santa I'm Right Here}
 {meta: artist Toby Keith}
 {meta: composer Ronald Dwaine Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file santaimrightherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I was downtown Christmas [Em]shopping
@@ -60,3 +63,11 @@ But somethin' made me pick it up
 {start_of_verse: Verse 8}
 [D7]I'm right [Em]here
 {end_of_verse}
+
+
+
+
+
+
+
+

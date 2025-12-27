@@ -1,6 +1,9 @@
 {meta: title Two Of A Kind Workin' On A Full House}
 {meta: artist Garth Brooks}
 {meta: composer Dennis Robbins, Bobby Boyd, Warren Haynes}
+{meta: x_source classic-country}
+{meta: x_source_file twoofakindworkinonafullhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey she's my lady luck hey I'm her wild card man
@@ -47,3 +50,9 @@ Yeah we're [G7]two of a kind a workin' on a full [C]house
 {start_of_verse: Verse 7}
 Lord we're [G7]two of a kind a workin' on a full [C]house
 {end_of_verse}
+
+
+
+
+
+

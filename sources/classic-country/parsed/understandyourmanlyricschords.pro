@@ -1,5 +1,8 @@
 {meta: title Understand Your Man}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file understandyourmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't call my name out your window I'm [Am]leaving
@@ -32,3 +35,6 @@ I ain't [C]gonna repeat what I said anymore
 [F]Understand [G7]your man remember what I told [C]ya
 [F]Understand [G7]your [C]man
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Another Song Another Drink}
 {meta: artist Ralph Stanley II}
 {meta: composer Joyce Morris}
+{meta: x_source classic-country}
+{meta: x_source_file anothersonganotherdrinklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another song [G7]another [C]drink
@@ -40,3 +43,8 @@ But it's too [F]late for [G7]you to [C]care
 {start_of_verse: Verse 4}
 But it's too [F]late for [G7]you to [C]care
 {end_of_verse}
+
+
+
+
+

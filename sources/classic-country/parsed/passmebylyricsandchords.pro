@@ -1,5 +1,8 @@
 {meta: title Pass Me By}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file passmebylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Would you look at what came down [F]the road [C]today
@@ -22,3 +25,5 @@ Lord help me if I [F]fall in love with [C]you
 [F]Hey pass [C]me by if you're only [G7]passing [C]through
 [F]Hey pass [C]me by if you're only [G7]passing [C]through
 {end_of_verse}
+
+

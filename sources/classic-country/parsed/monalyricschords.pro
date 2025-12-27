@@ -1,6 +1,9 @@
 {meta: title Mona}
 {meta: artist Waylon Jennings}
 {meta: composer Miriam Eddy}
+{meta: x_source classic-country}
+{meta: x_source_file monalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can give you golden tinkling bells 
@@ -36,3 +39,7 @@ To even dangle [C]through your long black [G]hair
 I can give you magic satin slippers 
 Woven just to take you any[C]where
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Quite A Long Long Time}
 {meta: artist Statler Brothers}
 {meta: composer Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file quitealonglongtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Perhaps the semi [G7]darkness of this [C]room has me confused
@@ -29,3 +32,6 @@ And please go kind of [G7]easy on the [C]wine
 It's possible I [G7]know you but it's [C]really hard to tell
 It's just that I have [G7]not seen you in [C]quite a [G7]long long [C]time
 {end_of_verse}
+
+
+

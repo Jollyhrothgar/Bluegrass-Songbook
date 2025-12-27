@@ -1,6 +1,9 @@
 {meta: title Come And Dine}
 {meta: artist Paul Williams}
 {meta: composer Charles B. Widmeyer}
+{meta: x_source classic-country}
+{meta: x_source_file comeanddinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jesus has a table spread
@@ -53,3 +56,9 @@ To the [D7]hungry calleth now come and [G]dine
 {start_of_verse: Verse 5}
 Come and [C]dine come and [D7]dine come and [G]dine
 {end_of_verse}
+
+
+
+
+
+

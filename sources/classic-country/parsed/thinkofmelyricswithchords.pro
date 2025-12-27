@@ -1,6 +1,9 @@
 {meta: title Think Of Me}
 {meta: artist Don Gibson}
 {meta: composer George McCormick}
+{meta: x_source classic-country}
+{meta: x_source_file thinkofmelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you [F]walk down your [G7]lonely street[F]  think of [C]me
@@ -18,3 +21,4 @@ Just [D7]remember the one who loves you is [G7]waiting here alone
 And when [F]you walk down your [G7]lonely street[F]  think of [C]me 
 Yes when [F]you walk down your [G7]lonely street  think of [F]m-[C]e 
 {end_of_verse}
+

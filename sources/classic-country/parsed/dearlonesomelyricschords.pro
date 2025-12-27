@@ -1,6 +1,9 @@
 {meta: title Dear Lonesome}
 {meta: artist Porter Wagoner}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file dearlonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Dear lonesome [C]with a broken [G]heart
@@ -40,3 +43,8 @@ No [C]lonely heart in all the world
 [D7]Here's how I would start
 Dear lonesome [C]with a broken [G]heart
 {end_of_verse}
+
+
+
+
+

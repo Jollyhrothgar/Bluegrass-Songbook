@@ -1,6 +1,9 @@
 {meta: title She's As Close As I Can Get To Loving You}
 {meta: artist Hank Locklin}
 {meta: composer Dallas Frazier and A.L. Owens}
+{meta: x_source classic-country}
+{meta: x_source_file shesascloseasicangettolovingyyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her hair [G7]should be a little [C]darker 
@@ -28,3 +31,6 @@ I [F]conquer everything that I [C]remember
 {start_of_verse: Verse 4}
 [F]She's as [C]close as I can [G7]get to loving [C]you
 {end_of_verse}
+
+
+

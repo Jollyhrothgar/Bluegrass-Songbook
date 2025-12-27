@@ -1,6 +1,9 @@
 {meta: title Aching Breaking Heart}
 {meta: artist George Jones}
 {meta: composer Rick Hall}
+{meta: x_source classic-country}
+{meta: x_source_file achingbreakingheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I have lived a lot and done my [D7]part of [G]running [D7]round
@@ -29,3 +32,6 @@ And I’m afraid to let you know I [G]love you [D7]like I [G]do
 For if you knew how much I care I [G7]know what you would [G]do
 You’d [D7]drop me like the others and go find somebody [G]new
 {end_of_verse}
+
+
+

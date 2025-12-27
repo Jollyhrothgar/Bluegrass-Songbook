@@ -1,6 +1,9 @@
 {meta: title Light At The End Of The Tunnel}
 {meta: artist B.B. Watson}
 {meta: composer Richard William Fagan, Kim E. Williams, M. Williams}
+{meta: x_source classic-country}
+{meta: x_source_file lightattheendofthetunnellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m in financial quicksand sinkin’ deep in debt
@@ -55,3 +58,12 @@ Tag:
 {start_of_verse: Verse 8}
 [F]Oh Lord I [C]hope it [G7]ain’t no [C]train
 {end_of_verse}
+
+
+
+
+
+
+
+
+

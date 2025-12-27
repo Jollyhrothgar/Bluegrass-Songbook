@@ -1,6 +1,9 @@
 {meta: title Let’s Make Memories Tonight}
 {meta: artist Eddy Arnold}
 {meta: composer Johnny Nash}
+{meta: x_source classic-country}
+{meta: x_source_file letsmakememoriestonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's make memories [C7]tonight [F]for this is a night to [G7]remember
@@ -21,3 +24,5 @@ Let's [F]make memories  [G7]let's make 'em [C]tonight
 Let's [F]make memories  [G7]let's make 'em [C]tonight
 (Let's make memories [G7]tender memories [C]tonight)
 {end_of_verse}
+
+

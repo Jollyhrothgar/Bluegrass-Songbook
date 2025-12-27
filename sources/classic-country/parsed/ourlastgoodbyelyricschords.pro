@@ -1,5 +1,8 @@
 {meta: title Our Last Goodbye}
 {meta: artist Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file ourlastgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Missing you [C]as days go [G]by
@@ -28,3 +31,6 @@
 [G]Would you think it [C]over I’m begging you to [G]try
 [D7]Let’s don’t make this our last [G]goodbye
 {end_of_verse}
+
+
+

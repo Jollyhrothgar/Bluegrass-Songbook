@@ -1,6 +1,9 @@
 {meta: title The Laying On Of Hands}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file thelayingonofhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Healin' hands on the blind and the [C]blind could see
@@ -64,3 +67,11 @@ Healin' hands on the lame and the [C]lame could walk
 Healin' hands on the bound and the [C]bound was free
 [G]I said hallelujah the [D7]bound was [G]free
 {end_of_verse}
+
+
+
+
+
+
+
+

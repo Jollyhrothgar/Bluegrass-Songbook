@@ -1,6 +1,9 @@
 {meta: title After All}
 {meta: artist Patty Loveless}
 {meta: composer Jimbeau Hinson and Harry Stinson}
+{meta: x_source classic-country}
+{meta: x_source_file afteralllyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]Now she knows [G]all a[A7]bout me
@@ -47,3 +50,9 @@ And you [Em]just want to be [Am]free [D7]after [G]all
 {start_of_verse: Verse 5}
 Mmm you [Em]just want to be [Am]free [D7]after [G]all
 {end_of_verse}
+
+
+
+
+
+

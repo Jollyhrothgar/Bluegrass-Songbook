@@ -1,6 +1,9 @@
 {meta: title Lonely River}
 {meta: artist Hank Snow}
 {meta: composer Fred Rose, Gene Autry, Ray Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file lonelyriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lonely river [F]in the [C]moonlight winding through my [G7]songs
@@ -29,3 +32,6 @@
 [C]Lonely river [F]in the [C]moonlight winding through my [G7]songs
 [C]Weary water [F]keep on [C]flowing [F]lonely [G7]river roll [C]along
 {end_of_verse}
+
+
+

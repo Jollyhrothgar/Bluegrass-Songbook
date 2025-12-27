@@ -1,6 +1,9 @@
 {meta: title Send Me Some Lovin'}
 {meta: artist Buddy Holly}
 {meta: composer Price Marascalco}
+{meta: x_source classic-country}
+{meta: x_source_file sendmesomelovinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Send me some lovin' oh send it I [G7]pray
@@ -22,3 +25,5 @@ I miss you so [D7]badly I need you so [G7]much
 My days are so [C]lonely my nights are so [G7]blue
 I'm near and I'm lonely I'm waitin' for [C]you[F]  [C]
 {end_of_verse}
+
+

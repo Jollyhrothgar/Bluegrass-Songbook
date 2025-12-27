@@ -1,5 +1,8 @@
 {meta: title The Day Will Come}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file thedaywillcomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The day is sure to come when this poor heart of [G7]mine is free
@@ -28,3 +31,6 @@ And every [F]love song that you [G7]hear will make you [C]blue
 And you'll [F]remember how you [G7]told me that I [C]had to go
 The day will come when I quit [G7]crying over [C]you
 {end_of_verse}
+
+
+

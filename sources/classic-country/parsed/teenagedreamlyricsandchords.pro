@@ -1,5 +1,8 @@
 {meta: title Teenage Dream}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file teenagedreamlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mom says we're too [D7]young for love  [C]dad agrees it's [G]so
@@ -30,3 +33,5 @@ That [C]young love can't be [G]true
 But [A7]come what may we will hope and [C]pray
 That our [D7]teenage dream comes [G]true
 {end_of_verse}
+
+

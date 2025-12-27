@@ -1,5 +1,8 @@
 {meta: title Never Never Land}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file neverneverlandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here in [G7]never [F]never [C]land       
@@ -54,3 +57,9 @@ It's [C]cold and [G7]dark
 [F]Here in my [C]heart
 In never [G7]never [C]land
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Prison Without Walls}
 {meta: artist Eddy Arnold}
 {meta: composer Steve Nelson, Jack Rollins, Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file aprisonwithoutwallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't need chains or iron bars to [F]tell me I'm not [C]free
@@ -29,3 +32,6 @@ But [D7]when I look at someone else it's you I'm thinking [G7]of
 Come [C]back sweetheart and break these [F]ties I can't go on this [C]way
 I'm in a [G7]prison without any [C]walls 
 {end_of_verse}
+
+
+

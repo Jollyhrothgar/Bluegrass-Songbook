@@ -1,6 +1,9 @@
 {meta: title Did I Turn Down A Better Deal}
 {meta: artist Jean Shepard}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file diditurndownabetterdeallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I met you long ago there were [C]things I didn't [G]know
@@ -29,3 +32,6 @@ If [A7]I should let him know just how I [D7]feel
 But I [G]know it's wrong somehow another [C]gives him her love [G]now
 And I still wonder did I turn [D7]down a better [G]deal
 {end_of_verse}
+
+
+

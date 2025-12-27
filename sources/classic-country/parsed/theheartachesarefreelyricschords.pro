@@ -1,5 +1,8 @@
 {meta: title The Heartaches Are Free}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file theheartachesarefreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Buddy you might think that I've lost my [C]mind
@@ -28,3 +31,6 @@ Repeat last verse
 {start_of_verse: Verse 4}
 Yeah I can guaran[D7]tee the heartaches are [G]free
 {end_of_verse}
+
+
+

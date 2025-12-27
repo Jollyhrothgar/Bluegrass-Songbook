@@ -1,6 +1,9 @@
 {meta: title Dark Moon}
 {meta: artist Jim Reeves}
 {meta: composer Ned Miller}
+{meta: x_source classic-country}
+{meta: x_source_file darkmoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dark moon a way up high up in the sky
@@ -34,3 +37,9 @@ Oh tell me why oh tell me why
 Dark moon what is the cause your light withdraws
 [G]Is it because is it because I've lost my love
 {end_of_verse}
+
+
+
+
+
+

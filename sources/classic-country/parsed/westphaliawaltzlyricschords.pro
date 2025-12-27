@@ -1,6 +1,9 @@
 {meta: title Westphalia Waltz}
 {meta: artist Hank Thompson}
 {meta: composer Cotton Collins}
+{meta: x_source classic-country}
+{meta: x_source_file westphaliawaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He said to her my little darlin'
@@ -36,3 +39,7 @@ Oh yes I can clearly remember
 [Am]She smiled as she softly [D7]surrendered
 [G]To the strains of the Westphalia Waltz
 {end_of_verse}
+
+
+
+

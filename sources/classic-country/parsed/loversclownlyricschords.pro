@@ -1,6 +1,9 @@
 {meta: title Lover's Clown}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file loversclownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Tiny pieces of my heart [F]like confetti everywhere
@@ -45,3 +48,8 @@ A new day [G7]dawns and the [F]big top's leaving town
 [G7]You can say goodbye to a lover's [Am]clown
 Say [F]goodbye[Am]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bic Flicking Baby}
 {meta: artist Moe Bandy}
 {meta: composer Carl Belew, Van Givens, Ramsey Kearney}
+{meta: x_source classic-country}
+{meta: x_source_file bicflickingbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like old Dr. Pepper sometimes she's [C]misunderstood
@@ -46,3 +49,9 @@ I've tried Betty Sue and Mary Lou
 But they can't hold a light to baby
 [G]When it comes to flicking Bics
 {end_of_verse}
+
+
+
+
+
+

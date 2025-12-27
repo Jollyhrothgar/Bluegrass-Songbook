@@ -1,6 +1,9 @@
 {meta: title You're The Only One}
 {meta: artist Dolly Parton}
 {meta: composer Carole Sager and Bruce Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file youretheonlyonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I found [Em]out the hard [Dm]way 
@@ -50,3 +53,9 @@ You're the [Em]only one you're the only one
 And let's [C]make it now like we [Em]made it then
 [Dm]This old heart ain't gonna [G7]break your heart [C]again
 {end_of_verse}
+
+
+
+
+
+

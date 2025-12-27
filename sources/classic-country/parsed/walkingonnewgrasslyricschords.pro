@@ -1,6 +1,9 @@
 {meta: title Walking On New Grass}
 {meta: artist Jack Greene}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file walkingonnewgrasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm like a cloud drifting from town to [F]town 
@@ -43,3 +46,8 @@ Well I gotta be walking on new grass [F]singing a new song
 Well I gotta be [C]walking on new grass [F]singing a new song
 The [C]next town up the [G7]road keeps calling [C]me
 {end_of_verse}
+
+
+
+
+

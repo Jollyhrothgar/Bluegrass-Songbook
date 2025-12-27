@@ -1,6 +1,9 @@
 {meta: title Thank Heaven For Sending Me You}
 {meta: artist Wanda Jackson}
 {meta: composer Yvonne Devaney}
+{meta: x_source classic-country}
+{meta: x_source_file thankheavenforsendingmeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When heaven made you darling
@@ -43,3 +46,8 @@ You're all my [F]dreams come [C]true
 And I'll [F]always thank [C]heaven
 For [G7]sending me [C]you
 {end_of_verse}
+
+
+
+
+

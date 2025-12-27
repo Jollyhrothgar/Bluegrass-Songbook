@@ -1,6 +1,9 @@
 {meta: title A Guy Named Joe}
 {meta: artist Ernest Tubb}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file aguynamedjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I stepped a-shore in Tokyo [C]feeling kinda [D7]blue
@@ -29,3 +32,6 @@ A [C]stranger in a foreign land he [A7]let his heart get [D7]out of hand
 A [G]warship took his dad away and [C]he's too young to [D7]know
 [G]That off [D7]across the [G]ocean there's a [D7]million guys named [G]Joe
 {end_of_verse}
+
+
+

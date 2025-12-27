@@ -1,6 +1,9 @@
 {meta: title Christmas Without Daddy}
 {meta: artist Loretta Lynn}
 {meta: composer Jay Lee Webb}
+{meta: x_source classic-country}
+{meta: x_source_file Christmaswithoutdaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas Day is getting closer but there's sadness mixed with [F]joy
@@ -22,3 +25,5 @@
 [C]Your son just wrote to Santa asking him to send you [F]home
 [C]This Christmas without daddy [G7]we'll be blue and all [C]alone
 {end_of_verse}
+
+

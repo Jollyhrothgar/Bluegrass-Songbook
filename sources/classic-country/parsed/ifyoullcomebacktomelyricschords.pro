@@ -1,6 +1,9 @@
 {meta: title If You’ll Come Back To Me}
 {meta: artist Bob Wills}
 {meta: composer Johnny Gimble and Robert James Wills}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoullcomebacktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a place in my heart that’s been in here so [G7]long
@@ -29,3 +32,6 @@ There’ll never be another sweetheart only [C]you
 We’ll be happy forever my darling can’t you [F]see
 I’ll be [C]true if you’ll [G7]come back to [C]me
 {end_of_verse}
+
+
+

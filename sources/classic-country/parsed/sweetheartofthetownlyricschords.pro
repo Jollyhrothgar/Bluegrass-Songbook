@@ -1,6 +1,9 @@
 {meta: title Sweetheart Of The Town}
 {meta: artist Stonewall Jackson}
 {meta: composer Billy Morgan and Juanita Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file sweetheartofthetownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your secret love is known to [F]everybody in this [C]town
@@ -33,3 +36,7 @@ While th[G7]ey're calling you [C]the sweetheart of the town
 {start_of_verse: Verse 5}
 While they're calling you the [G7]sweetheart of the [C]town
 {end_of_verse}
+
+
+
+

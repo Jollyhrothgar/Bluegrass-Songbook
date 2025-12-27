@@ -1,6 +1,9 @@
 {meta: title Under The Mistletoe}
 {meta: artist Bobby Bare}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file underthemistletoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Under the mistletoe
@@ -50,3 +53,11 @@ So I walked across the room
 [D7]When we kissed and fell in [G7]love
 [C]Under the [C][F]mistletoe
 {end_of_verse}
+
+
+
+
+
+
+
+

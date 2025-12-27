@@ -1,6 +1,9 @@
 {meta: title Happy Memories}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file happymemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Happy [C]memories happy [Dm][F]memories
@@ -36,3 +39,7 @@
 [G7]Happy [C]memories sweet sweet [Dm][F]memories
 [G7]Heartaches can't erase my happy [C]memories
 {end_of_verse}
+
+
+
+

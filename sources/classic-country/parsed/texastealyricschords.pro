@@ -1,6 +1,9 @@
 {meta: title Texas Tea}
 {meta: artist Leroy Van Dyke}
 {meta: composer Sacha Distel and Jack Reardon}
+{meta: x_source classic-country}
+{meta: x_source_file texastealyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was just a poor boy who lived on forty acres of bad [Am]land[D7] 
@@ -33,3 +36,7 @@ So [C]goodbye Joanna I've [D7]got to see about my Texas [G]Tea [D7]
 {start_of_verse: Verse 5}
 [C]Goodbye Joanna I've [D7]got to see about my Texas [G]Tea 
 {end_of_verse}
+
+
+
+

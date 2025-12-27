@@ -1,6 +1,9 @@
 {meta: title That's All It Took}
 {meta: artist Emmylou Harris}
 {meta: composer Darrell Edwards, Charlotte Grier, George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file thatsallittooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]That's all it [G]took the mention of your [C]name
@@ -23,3 +26,5 @@
 [G]And when today I heard them [D7]say your name that's all it [G]took
 [C]And when today [G]I heard them say your [D7]name that's all it [G][C]took
 {end_of_verse}
+
+

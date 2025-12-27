@@ -1,6 +1,9 @@
 {meta: title He Came A Long Way}
 {meta: artist Carl and Pearl Butler}
 {meta: composer Jimmy Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file hecamealongwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I owed a debt I could not pay
@@ -33,3 +36,6 @@ To [G7]take away all sin and [C]strife
 He came a [F]long way from [C]heaven
 To give us e[G7]ternal [C]life
 {end_of_verse}
+
+
+

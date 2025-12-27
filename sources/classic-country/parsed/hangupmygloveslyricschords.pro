@@ -1,5 +1,8 @@
 {meta: title Hang Up My Gloves}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file hangupmygloveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna hang up my gloves throw in the [C]towel
@@ -75,3 +78,13 @@
 [C]I'm gonna hang up my gloves throw in the [G]towel
 [D7]And let 'em give the round to [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title California Road}
 {meta: artist Mel Tillis}
 {meta: composer Sam Weedman}
+{meta: x_source classic-country}
+{meta: x_source_file californiaroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She left a light on in the [C]window
@@ -43,3 +46,8 @@
 [Em]Crying out to you while [D7]she pushed back all her [C]tears
 [G]Now she’s down that [D7]California Road and [G]gone
 {end_of_verse}
+
+
+
+
+

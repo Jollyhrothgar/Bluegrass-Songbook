@@ -1,5 +1,8 @@
 {meta: title I Don't Care Just As Long As You Love Me}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file idontcarejustaslongasyoulovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I don't care if the sun don't shine 
@@ -36,3 +39,6 @@ North or south east or west
 You know I will stand the test
 [D7]Just as long as you love [G]me
 {end_of_verse}
+
+
+

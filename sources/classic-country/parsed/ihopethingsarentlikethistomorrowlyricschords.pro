@@ -1,6 +1,9 @@
 {meta: title I Hope Things Aren't Like This Tomorrow}
 {meta: artist John Anderson}
 {meta: composer John Anderson and Lionel Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file ihopethingsarentlikethistomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a [F]fact I know that love is strange
@@ -50,3 +53,9 @@ I've got to [F]pull the weeds from my own back[C]yard
 I'm [G7]sittin' here and drowning in my so[F]rrow
 I hope things aren't like this tomo[C]rrow
 {end_of_verse}
+
+
+
+
+
+

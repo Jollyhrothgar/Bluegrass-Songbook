@@ -1,6 +1,9 @@
 {meta: title Wrong Company}
 {meta: artist Wynn Stewart/Jan Howard}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file wrongcompanylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've lost the only love I've ever [F]known
@@ -29,3 +32,6 @@ You're spending too much [G7]time on the wrong side of [C]town
 Now it's your life to live but it's my heart to [F]give
 And if you [G7]still want me give up that wrong [C]company
 {end_of_verse}
+
+
+

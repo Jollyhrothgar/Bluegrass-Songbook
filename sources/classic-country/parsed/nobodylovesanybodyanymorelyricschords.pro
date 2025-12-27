@@ -1,6 +1,9 @@
 {meta: title Nobody Loves Anybody Anymore}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson and Billy Lance Swan}
+{meta: x_source classic-country}
+{meta: x_source_file nobodylovesanybodyanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nobody loves [G7]anybody anymore [C]dear nobody loves anybody [C][G7]anymore
@@ -39,3 +42,8 @@ Nobody loves anybody [C][G7]anymore
 Nobody loves anybody [G7]anymore [C]dear 
 Nobody loves anybody [C][G7]anymore
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Wonder if You Feel the Way I Do}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderifyoufeelthewayidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Eight weeks ago the night we [F]parted 
@@ -28,3 +31,6 @@ My [G7]thoughts will always be with [C]you
 But it seems to me there's no use [F]living
 And [G7]I wonder if you feel the way I [C]do
 {end_of_verse}
+
+
+

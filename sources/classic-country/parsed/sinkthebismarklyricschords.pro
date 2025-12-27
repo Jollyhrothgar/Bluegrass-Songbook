@@ -1,5 +1,8 @@
 {meta: artist Johnny Horton}
 {meta: composer Tillman Franks and Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file sinkthebismarklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In May of 1941 the [D7]war had just [G]begun
@@ -64,3 +67,11 @@ We [C]hit the decks a-runnin' and we [G]spun those guns around
 Yeah we found that mighty Bismark and [D7]then we cut her [G]down
 Repeat last verse                                 
 {end_of_verse}
+
+
+
+
+
+
+
+

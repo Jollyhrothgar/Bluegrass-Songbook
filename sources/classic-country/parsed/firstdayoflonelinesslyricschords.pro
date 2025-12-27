@@ -1,6 +1,9 @@
 {meta: title First Day Of Loneliness Lyrics and Chords}
 {meta: artist Faron Young}
 {meta: composer R. Parkhurst}
+{meta: x_source classic-country}
+{meta: x_source_file firstdayoflonelinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh whata time I must'a had last night
@@ -43,3 +46,9 @@ If it was me I had myself a ball
 {start_of_verse: Verse 6}
 [G7]Yeah I gotta face my first day of [C]loneliness
 {end_of_verse}
+
+
+
+
+
+

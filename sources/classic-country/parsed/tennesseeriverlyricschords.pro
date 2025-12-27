@@ -1,6 +1,9 @@
 {meta: title Tennessee River}
 {meta: artist Alabama}
 {meta: composer Randy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseeriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was born across the [D7]river
@@ -25,3 +28,6 @@ On the Tennessee [C]River  walking hand in [G]hand
 Gonna raise a family Lord settle [D7]down 
 Where peace and [C]love can still [G]be found
 {end_of_verse}
+
+
+

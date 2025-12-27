@@ -1,6 +1,9 @@
 {meta: title I'm a Fool to Care}
 {meta: artist Jim Reeves}
 {meta: composer Ted Daffan}
+{meta: x_source classic-country}
+{meta: x_source_file imafooltocarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm a fool to [C]care 
@@ -31,3 +34,6 @@ Why should I [G7]pretend
 I'd lose in the end 
 I'm a fool to [C]care
 {end_of_verse}
+
+
+

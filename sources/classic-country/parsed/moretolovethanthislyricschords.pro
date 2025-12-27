@@ -1,6 +1,9 @@
 {meta: title More To Love Than This}
 {meta: artist Jean Shepard}
 {meta: composer Hank Mills}
+{meta: x_source classic-country}
+{meta: x_source_file moretolovethanthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's home with me [F]one hour of the [C]day
@@ -28,3 +31,6 @@ Seems to [C]me there oughta [G7]be more to love than [C]this
 {start_of_verse: Verse 4}
 [F]Seems to [C]me there oughta [G7]be more to love than [C]this
 {end_of_verse}
+
+
+

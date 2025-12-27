@@ -1,5 +1,8 @@
 {meta: title I Still Love You}
 {meta: artist Ricky Van Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file istillloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've got me callin' on the [Em]phone 
@@ -45,3 +48,10 @@ Oh yes I [C]love you[G7]  I still [C]love you
 OO [Em]OOOO [Am]OOOO[C]OOOO[F]OOO[Dm]O   OOO[C]OOOO
 OO [Em]OOOO [Am]OOOO[C]OOOO[F]OOO[Dm]O   OOO[C]OOOO
 {end_of_verse}
+
+
+
+
+
+
+

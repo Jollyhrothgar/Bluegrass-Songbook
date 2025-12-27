@@ -1,5 +1,8 @@
 {meta: title I Don't Care}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file idontcarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't care if [G7]tomorrow never [C]comes 
@@ -28,3 +31,6 @@ It won't matter with [G7]me
 For [C]when she went away  my [F]world ended that [C]day
 So I don't care if [G7]tomorrow never [C]comes
 {end_of_verse}
+
+
+

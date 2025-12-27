@@ -1,6 +1,9 @@
 {meta: title Why Didn't I Think Of That}
 {meta: artist Charley Pride}
 {meta: composer Jack Greene and Clay Allen}
+{meta: x_source classic-country}
+{meta: x_source_file whydidntithinkofthatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I hear your [G]new love sends you 
@@ -27,3 +30,6 @@ Why didn't [D7]I think of that before I lost [G]you
 {start_of_verse: Verse 4}
 Why didn't [D7]I think of that before I lost [G]you
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title There's Nobody Like You}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file theresnobodylikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The way you make love to me matches up perfectly
@@ -32,3 +35,7 @@ There's nobody like you [G7]I just don't love you that's [C]all
 {start_of_verse: Verse 5}
 And I'd rather hurt [F]myself
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ain't A Woman Somebody When She's Gone}
 {meta: artist Doyle Lawson}
 {meta: composer Buddy Cannon and Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file aintawomansomebodywhenshesgonelyricschord.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I ran into her today [F]not quite by [C]accident
@@ -37,3 +40,7 @@ Ain’t a woman somebody [G7]when she’s [C]gone
 {start_of_verse: Verse 4}
 [F]Oh ain’t a [C]woman somebody [G7]when she’s [C]gone
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Half Way In Love}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and Curtis Leach}
+{meta: x_source classic-country}
+{meta: x_source_file halfwayinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're half way in [G7]love 
@@ -24,3 +27,5 @@ repeat
 {start_of_verse: Verse 3}
 [G7]Oh won't you meet me half [C]way
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title The Decision}
 {meta: artist Ricky Van Shelton}
 {meta: composer Jerry Thompson and Ricky Van Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file thedecisionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She [C]fell in love with her [D7]heart and [G]showed it physica[Em]lly
@@ -65,3 +68,11 @@ She's only [Am]seventeen [D7]and she's not a [G]bride
 She's gonna make a [C]decision [D7]which will it [G]be[D7]   [Em]
 Whichever she [Am]chooses [D7]will she every be [G]free
 {end_of_verse}
+
+
+
+
+
+
+
+

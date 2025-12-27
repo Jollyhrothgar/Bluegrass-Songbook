@@ -1,6 +1,9 @@
 {meta: title Holding On}
 {meta: artist Tanya Tucker}
 {meta: composer Rafe VanHoy}
+{meta: x_source classic-country}
+{meta: x_source_file holdingonlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here we go so [F]hold my hand a little [C]tighter
@@ -26,3 +29,6 @@
 [C]Let’s [G7]keep on [F]holdin' on  [C]holding [F][G7]on
 [C]Yeah [G7]let's keep [F]on holdin' on [C]got to [G7]keep holdin' [F]on
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Golden River}
 {meta: artist Hank Snow}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file goldenriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hate to see night shadows fall I [F]hate to see a moon [C]above
@@ -27,3 +30,6 @@ Golden river [F]golden river [C]you took my love from [G7]me
 On your waves [C]of golden hue you carried her with [F]you
 And [C]broke my heart a [G7]million million [C]ways
 {end_of_verse}
+
+
+

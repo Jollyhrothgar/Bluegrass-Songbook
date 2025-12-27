@@ -1,6 +1,9 @@
 {meta: title Congratulations (You're Absolutely Right)}
 {meta: artist Tony Booth}
 {meta: composer Buck Owens and Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file congratulationsyoureabsolutelyrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you see me walking round in circles
@@ -33,3 +36,7 @@ Congratu[G7]lations you're absolutely [C]right
 {start_of_verse: Verse 5}
 Congratu[G7]lations you're absolutely [C]right
 {end_of_verse}
+
+
+
+

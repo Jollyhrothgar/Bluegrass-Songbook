@@ -1,5 +1,8 @@
 {meta: title After All The Good Is Gone}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file afterallthegoodisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today I got a letter from [D7]someone
@@ -19,3 +22,5 @@ To keep [G]hanging on [D7]after all the good is [G]gone
 Lord I wish that I could die and there's no use in [C]trying
 To keep [G]hanging on [D7]after all the good is [G]gone
 {end_of_verse}
+
+

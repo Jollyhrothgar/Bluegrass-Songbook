@@ -1,5 +1,8 @@
 {meta: title Bossier City Backyard Blues}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file bossiercitybackyardblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got these achin' Bossier City backyard blues
@@ -49,3 +52,9 @@ Been rollin' cigarettes with holes in both my [G7]shoes
 Tryin' to [C]write a song that fits just me and [F]you
 I got these [C]achin' Bossier [G7]City backyard [C]blues
 {end_of_verse}
+
+
+
+
+
+

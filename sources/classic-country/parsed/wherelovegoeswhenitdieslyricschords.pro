@@ -1,6 +1,9 @@
 {meta: title Where Love Goes When It Dies}
 {meta: artist Ronnie Milsap}
 {meta: composer Dale Tallman}
+{meta: x_source classic-country}
+{meta: x_source_file wherelovegoeswhenitdieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]She only [C]wanted the love [F]that she never [C]had
@@ -27,3 +30,6 @@ And I wonder oh how I wonder where [G7]love goes when it [C]dies
 Now [C]she goes through the motions [F]but she ain't really [C]alive [G7]
 And I wonder oh how I wonder where [G7]love goes when it [F]die[C]s
 {end_of_verse}
+
+
+

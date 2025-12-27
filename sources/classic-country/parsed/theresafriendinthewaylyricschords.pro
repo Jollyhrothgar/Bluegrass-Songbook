@@ -1,6 +1,9 @@
 {meta: title There's A Friend In The Way}
 {meta: artist George Jones}
 {meta: composer Oney Wheeler}
+{meta: x_source classic-country}
+{meta: x_source_file theresafriendinthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We can explain this one too clearly 
@@ -30,3 +33,5 @@ Yes we [C]love each other dearly
 But we just can't find a [F]way
 Night and [G7]day there's friend in the [C]way
 {end_of_verse}
+
+

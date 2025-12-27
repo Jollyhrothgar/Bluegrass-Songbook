@@ -1,6 +1,9 @@
 {meta: title Born To Love Me}
 {meta: artist Roy Orbison}
 {meta: composer Bob Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file borntolovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Not many'd say she's pretty  [C]cause they don't realize 
@@ -31,3 +34,6 @@ She's made my life worth living  [C]because she understood
 Born to love me  [C]born to hold me tight 
 [D7]Born to love me  [C]every night  [D7]every [G]night 
 {end_of_verse}
+
+
+

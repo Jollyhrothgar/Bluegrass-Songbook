@@ -1,6 +1,9 @@
 {meta: title What A Woman Wants To Hear}
 {meta: artist Rhonda Vincent}
 {meta: composer Connie Leigh Sullivan and Rhonda Lea Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file whatawomanwantstohearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're the man who knows just how to [D7]charm me
@@ -48,3 +51,9 @@ And say [D7]exactly what a woman wants to [G]hear
 It thrills me every day to know you [C]take the time to [Am]say
 [D7]Exactly what a woman wants to [G]hear
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That Home Far Away}
 {meta: artist Doyle Lawson}
 {meta: composer Ruby Rakes}
+{meta: x_source classic-country}
+{meta: x_source_file thathomefarawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh Lord have mercy on this [C]weary soul of [G]mine
@@ -36,3 +39,7 @@ May I walk in your light every[D7]day
 [G]And when I’ve crossed that [C]deep silent river
 I’ll be [G]happy in that [D7]home far [G]away
 {end_of_verse}
+
+
+
+

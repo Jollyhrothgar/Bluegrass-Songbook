@@ -1,6 +1,9 @@
 {meta: title You Can't Find Happiness That Way}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Glenn Douglas and Frank Duke}
+{meta: x_source classic-country}
+{meta: x_source_file youcantfindhappinessthatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You cheat you lie you alibi you [F]haven’t gotta heart
@@ -29,3 +32,6 @@ Now you [D7]took my love and kisses in you [G7]laughed and broke my heart
 But you’re the [C]one I’m sorry for [F]you’re gonna have to pay
 Cause the [C]good book plainly says you can’t [G7]find happiness that [C]way
 {end_of_verse}
+
+
+

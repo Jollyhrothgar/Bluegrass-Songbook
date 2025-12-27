@@ -1,5 +1,8 @@
 {meta: title I Just Gotta Go}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file ijustgottagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well my feet just started walking toward that shiny railroad track 
@@ -27,3 +30,5 @@ And there's [C]lots of the same just waiting there for me
 And there's [G7]something o're the mountain that's calling me I know
 And [C]honey I just [G7]gotta [C]go
 {end_of_verse}
+
+

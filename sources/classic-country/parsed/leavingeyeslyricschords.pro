@@ -1,5 +1,8 @@
 {meta: title Leaving Eyes}
 {meta: artist Glen Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file leavingeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I woke up [C]tomorrow and [D7]found you up and [G]gone
@@ -35,3 +38,7 @@ And you've got leaving [D7]eyes
 [G]Well baby when I [C]write thee will [D7]there was no [G]disguise 
 That's to [C]cover up the [D7]leaving in your [G]eyes
 {end_of_verse}
+
+
+
+

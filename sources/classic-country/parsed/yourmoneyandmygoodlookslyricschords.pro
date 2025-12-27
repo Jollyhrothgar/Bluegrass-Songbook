@@ -1,6 +1,9 @@
 {meta: title Your Money And My Good Looks}
 {meta: artist Gene Watson with Rhonda Vincent}
 {meta: composer Terry Herd and Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file yourmoneyandmygoodlookslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]He's not what you'd call the social type
@@ -50,3 +53,7 @@ With [C]your money and [G7]my good [C]looks
 [G7]Chalk one up for the history books
 With [C]your money and [G7]my good [C]looks
 {end_of_verse}
+
+
+
+

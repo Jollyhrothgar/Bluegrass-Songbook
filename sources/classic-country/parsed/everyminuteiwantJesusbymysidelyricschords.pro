@@ -1,6 +1,9 @@
 {meta: title Every Minute I Want Jesus By My Side}
 {meta: artist Johnny Paycheck}
 {meta: composer Country Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file everyminuteiwantJesusbymysidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want to be a help to Jesus every[D7]day
@@ -36,3 +39,7 @@ I know I’ll [D7]never have another friend that [G]is so true
 How good to know that in my heart His love [C]a-[G]bi-[D7]des 
 Every [C]minute I want [D7]Jesus by my [G]side
 {end_of_verse}
+
+
+
+

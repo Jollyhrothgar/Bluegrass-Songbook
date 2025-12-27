@@ -1,6 +1,9 @@
 {meta: title Holding My Own}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Pamela Belford}
+{meta: x_source classic-country}
+{meta: x_source_file holdingmyownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are people who don't know me who must [F]think I've got it [C]made [G7]
@@ -33,3 +36,7 @@ How [F]long can [Em]I go [Dm]on  [G7]holding my [C]own
 {start_of_verse: Verse 4}
 How [F]long can [Em]I go [Dm]on  [G7]holding my [C]own
 {end_of_verse}
+
+
+
+

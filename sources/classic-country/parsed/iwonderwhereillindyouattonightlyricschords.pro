@@ -1,5 +1,8 @@
 {meta: title I Wonder Where I’ll Find You At Tonight}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwhereillindyouattonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder if I’ll [G7]find you in [F]some honky tonking [C]bar
@@ -28,3 +31,6 @@ And then checking out Joe's Coffee Shop is the only place I [G7]know
 There’s gotta [F]be a reason why you’re staying out of [C]sight
 I wonder where I’ll [G7]find you at [C]tonight
 {end_of_verse}
+
+
+

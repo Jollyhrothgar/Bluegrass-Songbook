@@ -1,6 +1,9 @@
 {meta: title Under This Old Hat}
 {meta: artist Chris LeDoux}
 {meta: composer Mike Anthony and Larry Cordle}
+{meta: x_source classic-country}
+{meta: x_source_file underthisoldhatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never was the kind to wear my [D7]feelings on my sleeve
@@ -40,3 +43,7 @@ That the man you love will [D7]always be under this old [G]hat
 {start_of_verse: Verse 4}
 [A7]That the man you love will [D7]always be under this old [G]hat
 {end_of_verse}
+
+
+
+

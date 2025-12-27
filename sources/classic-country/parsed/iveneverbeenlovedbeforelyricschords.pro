@@ -1,6 +1,9 @@
 {meta: title I've Never Been Loved Before}
 {meta: artist Leroy Van Dyke}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file iveneverbeenlovedbeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([D7]I never [G]loved and I've [D7]never been loved till [G]you)[C]   [G]
@@ -37,3 +40,7 @@ I've said them [D7]myself to a lonesome ear or [G]two
 But up until [D7]now I never knew their [G]mean[C]ing
 Cause I never [G]loved and I've [D7]never been loved till [G]you[C]  [G]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Foolish Kind Of Man}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Kenneth Lovelace and Linda Gail Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file foolishkindofmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can I cast the shadow of your memory [F]from the past
@@ -34,3 +37,7 @@ Then [D7]you'll know how much I [G7]have to offer [C]you
 Think about it baby [F]
 Then you'd [C]know how much I [G7]have to offer [C]you
 {end_of_verse}
+
+
+
+

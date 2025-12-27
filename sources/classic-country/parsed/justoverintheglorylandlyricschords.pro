@@ -1,6 +1,9 @@
 {meta: title Just Over In The Gloryland}
 {meta: artist Merle Travis}
 {meta: composer James W. Acuff}
+{meta: x_source classic-country}
+{meta: x_source_file justoverintheglorylandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am on my way to the [C]mansions [G]fair
@@ -49,3 +52,8 @@ Just over in the [G]Gloryland
 There [C]with the mighty host I'll [G]stand
 Just over in the [G][D7]Gloryland
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Rollin' With The Punches}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file rollinwiththepuncheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I've been [F]talkin' when I should have [C]listened 
@@ -47,3 +50,9 @@
 [F]Rollin' with all of the [C]punches 
 [G7]Lord how I wish they would [C]stop
 {end_of_verse}
+
+
+
+
+
+

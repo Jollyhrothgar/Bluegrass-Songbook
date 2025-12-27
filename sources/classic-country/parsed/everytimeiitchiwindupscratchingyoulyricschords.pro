@@ -1,6 +1,9 @@
 {meta: title Every Time I Itch I Wind Up Scratching You}
 {meta: artist Glen Campbell}
 {meta: composer Jeremy Slate and Glen Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeiitchiwindupscratchingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know my love my [Em]only wish is [C]happiness for [F]you
@@ -28,3 +31,6 @@ I [C]waste the [Em]whole night [Am]talking [C]big and [D7]spending money [G7]too
 Then I [C]sneak in bed [Em]beside you [C]feeling broke and [F]blue
 [C]How come [Em]every [Am]time I [C]itch I [D7]wind up [G7]scratching [C]you 
 {end_of_verse}
+
+
+

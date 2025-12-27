@@ -1,6 +1,9 @@
 {meta: title Some Of Those Memories}
 {meta: artist Faron Young}
 {meta: composer Johnny Russell and Vince Finneran}
+{meta: x_source classic-country}
+{meta: x_source_file someofthosememorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can never remember the joy we once [G7]knew
@@ -24,3 +27,5 @@ Instead of thinking of the many times that you [C]tried
 Oh why I can't free myself from this prison of memories that [F]bind
 Some of those [C]memories [G7]hurt me all of the [C]time
 {end_of_verse}
+
+

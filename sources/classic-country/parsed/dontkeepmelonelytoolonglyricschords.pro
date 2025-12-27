@@ -1,6 +1,9 @@
 {meta: title Don't Keep Me Lonely Too Long}
 {meta: artist Connie Smith}
 {meta: composer Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file dontkeepmelonelytoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Life sure gets lonely alone no one to talk to [D7]alone
@@ -29,3 +32,7 @@
 {start_of_verse: Verse 5}
 [D7]Don't keep me lonely too [G]long
 {end_of_verse}
+
+
+
+

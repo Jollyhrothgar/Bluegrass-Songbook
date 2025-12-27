@@ -1,6 +1,9 @@
 {meta: title Just Walk A Little Closer}
 {meta: artist Johnny Horton}
 {meta: composer Jimmie Dallas}
+{meta: x_source classic-country}
+{meta: x_source_file justwalkalittlecloserlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just walk a [G7]little [C]closer [F]closer to [C]me
@@ -29,3 +32,6 @@ I’ve got to have you [D7]don’t run and [G7]hide
 [C]Let me [G7]take you [C]in my arms [F]please don’t say we’re [C]through
 [F]Just walk a little [C]closer and [G7]make my dreams come [C]true
 {end_of_verse}
+
+
+

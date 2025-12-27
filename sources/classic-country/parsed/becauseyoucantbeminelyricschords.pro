@@ -1,5 +1,8 @@
 {meta: title Because You Can't Be Mine}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file becauseyoucantbeminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What makes something you can't have always look so [F]good
@@ -28,3 +31,6 @@
 [C]What makes a stolen moment such a precious [F]thing
 [C]I guess it's just [G7]because you can't be [C]mine
 {end_of_verse}
+
+
+

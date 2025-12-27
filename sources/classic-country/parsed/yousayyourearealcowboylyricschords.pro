@@ -1,6 +1,9 @@
 {meta: title You Say You're A Real Cowboy}
 {meta: artist Billy Crash Craddock}
 {meta: composer David Heavener}
+{meta: x_source classic-country}
+{meta: x_source_file yousayyourearealcowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You got a [G7]nerve coming [C]into this barroom 
@@ -62,3 +65,11 @@ He just cares how he feels in his [C]heart
 A real [G7]cowboy don't care how he fills out his jeans 
 He just cares how he feels in his [C]heart
 {end_of_verse}
+
+
+
+
+
+
+
+

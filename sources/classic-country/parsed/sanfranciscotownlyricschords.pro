@@ -1,5 +1,8 @@
 {meta: title San Francisco Town}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file sanfranciscotownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gonna get me up in the [C]morning the [D7]same place that I lay [G]down
@@ -24,3 +27,6 @@ And find me a place to [C]sleep tonight [D7]where I can keep [G]warm
 San Francisco [C]I love you as [D7]sure as the world is [G]round
 So hang ’em high let me [C]live or die [D7]in San Francisco [G]town
 {end_of_verse}
+
+
+

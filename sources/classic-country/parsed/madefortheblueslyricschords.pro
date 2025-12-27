@@ -1,5 +1,8 @@
 {meta: title Made For The Blues}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file madefortheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweet words were made to be spoken
@@ -36,3 +39,8 @@ repeat last verse
 {start_of_verse: Verse 6}
 [D7]Yes I was made for the [G]blues
 {end_of_verse}
+
+
+
+
+

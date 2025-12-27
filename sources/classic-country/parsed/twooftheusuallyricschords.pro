@@ -1,6 +1,9 @@
 {meta: title Two Of The Usual}
 {meta: artist Conway Twitty}
 {meta: composer Fred Carter}
+{meta: x_source classic-country}
+{meta: x_source_file twooftheusuallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We had just set [C]our wedding day and [D7]I took you [G]home
@@ -29,3 +32,6 @@ Two of the [C]usual [D7]I  [G]heard him say
 The [G]truth has no [C]mercy or [D7]kindness it [G]seems
 For [C]two of the [Am]usual just [D7]shattered my [G]dreams 
 {end_of_verse}
+
+
+

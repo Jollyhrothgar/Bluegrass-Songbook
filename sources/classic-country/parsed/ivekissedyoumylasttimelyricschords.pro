@@ -1,6 +1,9 @@
 {meta: title I've Kissed You My Last Time}
 {meta: artist Kitty Wells}
 {meta: composer Bill Carlisle, Virginia Suber, Tommy Cutrer}
+{meta: x_source classic-country}
+{meta: x_source_file ivekissedyoumylasttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down the road of love I see sign after sign
@@ -34,3 +37,8 @@ But now you kiss so cold don't know what the future holds
 [F]I love you so and it hurts me to [C]know
 [G7]That I've kissed you my last [C]time
 {end_of_verse}
+
+
+
+
+

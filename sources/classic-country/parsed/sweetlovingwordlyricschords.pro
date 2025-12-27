@@ -1,5 +1,8 @@
 {meta: title Sweet Loving Word}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file sweetlovingwordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweet loving word [G7]that cast away the [C]fear
@@ -33,3 +36,7 @@ Sweet loving [G]word on [D7]faith I will [G]stand
 [C]Sweet loving [G]word on [D7]faith I will [G]stand 
 [C]Sweet loving [G]word   [C]sweet loving [G]word 
 {end_of_verse}
+
+
+
+

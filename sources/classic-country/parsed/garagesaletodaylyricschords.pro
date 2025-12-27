@@ -1,5 +1,8 @@
 {meta: title Garage Sale Today}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file garagesaletodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please feel at home neighbor as [F]you look [C]around
@@ -42,3 +45,8 @@ Where [F]we slept together the [C]night we were [G7]wed
 [C]And there's an old leather bible that [F]taught us to [C]pray
 [F]Now I can't [C]sell them [G7]garage sale [C][F]to-day
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Wife Won't Leave}
 {meta: artist Boxcar Willie}
 {meta: composer Llone S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file mywifewontleavelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now gather around me people
@@ -45,3 +48,8 @@ Well guess I better get on home
 I forgot to take out the [C]trash
 [D7]Oh the things I could do if I didn't have a [G]wife
 {end_of_verse}
+
+
+
+
+

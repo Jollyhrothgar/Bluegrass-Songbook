@@ -1,5 +1,8 @@
 {meta: title Yankee Doodle}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file yankeedoodlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yankee Doodle went to [D7]town upon a [G]striped [D7]pony
@@ -70,3 +73,16 @@ The troopers too would [D7]gallop off and [G]fire right in our [D7]faces
 [C]Yankee Doodle keep it up [G]Yankee Doodle dandy
 [C]Mind the music and the step and [G]with the [D7]girls be [G]handy
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

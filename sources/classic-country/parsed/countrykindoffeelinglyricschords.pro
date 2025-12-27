@@ -1,6 +1,9 @@
 {meta: title Country Kind Of Feeling}
 {meta: artist Wilburn Brothers}
 {meta: composer Eugene D. Dobbins and Johnny A. Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file countrykindoffeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I am in Boston in a [F]ratty motel [C]room
@@ -36,3 +39,7 @@ I wanna hear my papa picking out a bluegrass [G7]song
 And I can [C]almost see my momma in the kitchen
 Cooking up a batch of chicken and [G7]wishing I was [F]h-om[C]e
 {end_of_verse}
+
+
+
+

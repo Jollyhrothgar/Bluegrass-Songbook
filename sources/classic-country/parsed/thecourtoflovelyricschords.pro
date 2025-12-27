@@ -1,6 +1,9 @@
 {meta: title The Court Of Love}
 {meta: artist Rhonda Vincent}
 {meta: composer Mike O'Reilly}
+{meta: x_source classic-country}
+{meta: x_source_file thecourtoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't tell me you love me [F]when you know it ain't [C]true
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 4}
 [F]Just pack your bags and hit the [G7]road don't even say [C]goodbye
 {end_of_verse}
+
+
+
+
+
+

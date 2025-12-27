@@ -1,6 +1,9 @@
 {meta: title One You Say Good Mornin' To}
 {meta: artist Jimmy Dean}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file oneyousaygoodmornintolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mhm I'd like to be the one you say good [D7]mornin' to
@@ -30,3 +33,6 @@ I'd [F]like to be the one you [G7]say good mornin' [C]to
 Oh [A7]yeah I'd [D7]like to be the one you [G7]say good mornin' [C]to
 [G7]Good morning sun[C]shine
 {end_of_verse}
+
+
+

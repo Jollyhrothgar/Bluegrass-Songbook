@@ -1,6 +1,9 @@
 {meta: title The Winner}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file thewinnerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The hulk of a man with a beer in is hand he [G7]looked like a drunk old fool
@@ -79,3 +82,12 @@ But my eyes still see and my nose still works
 And my [F]teeth are still in my mouth
 And you [G7]know I guess that makes me the [C]winner
 {end_of_verse}
+
+
+
+
+
+
+
+
+

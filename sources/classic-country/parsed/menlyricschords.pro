@@ -1,6 +1,9 @@
 {meta: title Men}
 {meta: artist Charly McClain}
 {meta: composer Ronny Scaife and Jerry Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file menlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some men treat you just like a [C]lady 
@@ -51,3 +54,9 @@ And [D7]some you wouldn't show to your [G]dad
 Some wanna take you [C]straight to the altar 
 And [D7]some just wanna take you to [G]bed 
 {end_of_verse}
+
+
+
+
+
+

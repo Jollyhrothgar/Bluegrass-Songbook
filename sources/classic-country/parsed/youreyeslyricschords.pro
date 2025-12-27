@@ -1,5 +1,8 @@
 {meta: title Your Eyes}
 {meta: artist Charly McClain}
+{meta: x_source classic-country}
+{meta: x_source_file youreyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a reason for us [Em]going
@@ -49,3 +52,9 @@ They [C]beg there's nothing [G]wrong
 [C]Your eyes are color [D7]blind[Am]
 They [C]beg there's nothing [G]wrong
 {end_of_verse}
+
+
+
+
+
+

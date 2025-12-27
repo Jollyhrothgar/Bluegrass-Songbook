@@ -1,6 +1,9 @@
 {meta: title Little Band Of Gold}
 {meta: artist Sonny James}
 {meta: composer Jimmy Gilreath}
+{meta: x_source classic-country}
+{meta: x_source_file littlebandofgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There you were standing there smiling as you made your [G7]plans
@@ -36,3 +39,7 @@ My little band of gold means nothing to [C]you
 To me it meant the world but you tore my world [G7]apart
 You're leaving me alone with my broken [C]heart
 {end_of_verse}
+
+
+
+

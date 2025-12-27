@@ -1,6 +1,9 @@
 {meta: title Old Faithful (Horse's Prayer)}
 {meta: artist Eddy Arnold}
 {meta: composer Michael Carr and Jimmy Kennedy}
+{meta: x_source classic-country}
+{meta: x_source_file oldfaithfulhorsesprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Old faithful we [F]rode the range [C]together
@@ -29,3 +32,6 @@ For you old [G7]faithful pal of [C]mine
 {start_of_verse: Verse 3}
 For you old [G7]faithful pal of [C]mine
 {end_of_verse}
+
+
+

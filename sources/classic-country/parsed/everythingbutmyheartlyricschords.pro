@@ -1,6 +1,9 @@
 {meta: title Everything But My Heart}
 {meta: artist Reba McEntire}
 {meta: composer Troy Seals and Graham Lyle}
+{meta: x_source classic-country}
+{meta: x_source_file everythingbutmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The bed is cold and empty in the [G7]morning light
@@ -33,3 +36,6 @@ He wanted my [C]warm red lips [G7]soft on his mouth
 He loved [C]all of me [F]except for one small part
 He wanted [C]ev-[G7]ery [Am]th-[G7]-in[F]g everything but my [C]heart
 {end_of_verse}
+
+
+

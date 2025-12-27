@@ -1,5 +1,8 @@
 {meta: title Candy Kisses}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file candykisseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Candy [G]kisses   [G7]wrapped in [C]paper 
@@ -28,3 +31,6 @@ Now there's [A7]sadness only [D7]tears
 Candy [G]kisses [G7]wrapped in [C]paper
 Mean more to [G]you than [D7]mine do [G]dear
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Close All The Honky Tonks}
 {meta: artist Johnny Paycheck}
 {meta: composer Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file closeallthehonkytonkslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's in some honky tonk tonight I [C]know
@@ -29,3 +32,6 @@ So close all the honky tonks [C]lock all the doors
 Close all the honky tonks [C]throw away the key
 Then [D7]maybe the one I love will come back to [G]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Charley's Picture}
 {meta: artist Porter Wagoner}
 {meta: composer Larry Kingston and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file charleyspicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A wino we called [C]Charley had a [G]picture 
@@ -45,3 +48,8 @@ While I'm the perfect picture of [D7]disgrace
 [G]And upon your name I'll [C]swear until I'm [G]worthy
 I forbid my eyes to [D7]look upon your [G]face
 {end_of_verse}
+
+
+
+
+

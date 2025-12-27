@@ -1,6 +1,9 @@
 {meta: title A Little Heaven's Rubbing Off On Me}
 {meta: artist George Strait}
 {meta: composer Gene Dobbins and Mark Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file alittleheavensrubbingoffonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I used to like makin' love and then gettin' up 
@@ -64,3 +67,11 @@ A little [D7]heaven's rubbin' off on [G]me
 Since [C]I've been holdin' an [G]angel 
 A little [D7]heaven's rubbin' off on [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Forgiving You Was Easy}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file forgivingyouwaseasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Forgiving you was easy but forgetting 
@@ -47,3 +50,9 @@ But forgetting seems to take the longest [C]time
 Forgiving you [G7]is easy 
 But forgetting seems to take the longest [C]time
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Fool's Night Out Lyrics and Chords}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Sylvia Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file foolsnightoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a fools night out  out on the [C]town
@@ -38,3 +41,8 @@ It's a fools night [G]out [D7]  out on the [G]town[C]  [G]
 {start_of_verse: Verse 5}
 It's a fools night out [D7]  out on the [G]town
 {end_of_verse}
+
+
+
+
+

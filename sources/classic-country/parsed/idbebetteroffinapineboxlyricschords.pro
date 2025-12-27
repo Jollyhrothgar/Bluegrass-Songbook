@@ -1,6 +1,9 @@
 {meta: title I'd Be Better Off In A Pine Box}
 {meta: artist Doug Stone}
 {meta: composer Johnny MacRae and Steve Clark}
+{meta: x_source classic-country}
+{meta: x_source_file idbebetteroffinapineboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I said the night you left me nothing [C]worse could ever [G]happen
@@ -40,3 +43,8 @@ Than to [G]lie here with [C]you and him [D7]together on my [G]mind
 {start_of_verse: Verse 4}
 I can't lie here with [C]you and him [D7]together on my [G]mind
 {end_of_verse}
+
+
+
+
+

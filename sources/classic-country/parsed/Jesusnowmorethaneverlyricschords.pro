@@ -1,6 +1,9 @@
 {meta: title Jesus Now More Than Ever}
 {meta: artist Jimmy Swaggart}
 {meta: composer John A. Stallings}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusnowmorethaneverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For we [F]need yes we need Jesus [G7]now more than [C]ever
@@ -58,3 +61,11 @@ But we [F]need Jesus [G7]now more than [C]ever
 {start_of_verse: Verse 6}
 For we [F]need yes we need Jesus [G7]now more than [C]ever
 {end_of_verse}
+
+
+
+
+
+
+
+

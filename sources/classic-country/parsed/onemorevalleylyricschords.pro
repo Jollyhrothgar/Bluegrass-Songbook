@@ -1,5 +1,8 @@
 {meta: title One More Valley}
 {meta: artist Country Gospel}
+{meta: x_source classic-country}
+{meta: x_source_file onemorevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I'm tossed on life sea and the waves cover [C]me
@@ -33,3 +36,7 @@ When you get [G]home
 Tag:
 You can lay [D7]down your heavy load when you get [G]home
 {end_of_verse}
+
+
+
+

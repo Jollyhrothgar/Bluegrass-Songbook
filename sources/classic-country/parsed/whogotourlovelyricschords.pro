@@ -1,5 +1,8 @@
 {meta: title Who Got Our Love}
 {meta: artist John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file whogotourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who got our love [G7]I wanna know
@@ -44,3 +47,9 @@ Who got the [G7]love I'm looking for
 {start_of_verse: Verse 5}
 Who got our [C]love
 {end_of_verse}
+
+
+
+
+
+

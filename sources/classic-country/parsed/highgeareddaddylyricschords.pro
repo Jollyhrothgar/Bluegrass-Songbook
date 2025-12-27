@@ -1,5 +1,8 @@
 {meta: title High Geared Daddy Lyrics Chords}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file highgeareddaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come on here girls and hear my song
@@ -42,3 +45,9 @@ Well you've heard my song I'll be running along
 [F]So when you get married just remember this one
 [G7]I'm a high gear daddy and there's nothing I won't [C]do
 {end_of_verse}
+
+
+
+
+
+

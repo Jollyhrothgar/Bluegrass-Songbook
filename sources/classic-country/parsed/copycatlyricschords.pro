@@ -1,6 +1,9 @@
 {meta: title Copy Cat}
 {meta: artist Cowboy Copas}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file copycatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I say I love you
@@ -64,3 +67,11 @@ I'll be your copy cat [G]too
 [D7]I'll I'll love love you you too too
 I'm your copy cat [G]too
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Smoke Filled Bar}
 {meta: artist Moe Bandy}
 {meta: composer Ginger Boatwright}
+{meta: x_source classic-country}
+{meta: x_source_file smokefilledbarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Smoke filled bar my [F]guitar in my [C]hand
@@ -40,3 +43,8 @@ Then I stop cause you [G7]knock at my memory's [C]door
 {start_of_verse: Verse 4}
 Then I stop cause you [G7]knock at my memory's [C]door
 {end_of_verse}
+
+
+
+
+

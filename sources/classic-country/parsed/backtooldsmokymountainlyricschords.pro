@@ -1,6 +1,9 @@
 {meta: title Back To Old Smoky Mountain}
 {meta: artist Gene Autry}
 {meta: composer Hugh Cross}
+{meta: x_source classic-country}
+{meta: x_source_file backtooldsmokymountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a place I love [D7]so
@@ -43,3 +46,8 @@
 [E7]Back to Old Smoky [A7]Mountain
 [D7]Back to my home in [G]Tennessee
 {end_of_verse}
+
+
+
+
+

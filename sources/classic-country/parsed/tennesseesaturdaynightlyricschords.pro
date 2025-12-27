@@ -1,6 +1,9 @@
 {meta: title Tennessee Saturday Night}
 {meta: artist Red Foley}
 {meta: composer Billy Hughes}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseesaturdaynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now listen while I tell you 'bout a place I know
@@ -37,3 +40,6 @@ Down in Tennessee where the tall corn [G7]grows
 [D7]Civilized people live there alright
 Ah but they all go native on Saturday [G]Night 
 {end_of_verse}
+
+
+

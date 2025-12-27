@@ -1,5 +1,8 @@
 {meta: title You Can't Laugh (At A Fool)}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file youcantlaughatafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes I really thought that you would be mine [G7]forever
@@ -35,3 +38,6 @@ You can't [G7]laugh at a [C]fool
 {start_of_verse: Verse 3}
 Yes and you can't [G7]laugh at a [C]fool
 {end_of_verse}
+
+
+

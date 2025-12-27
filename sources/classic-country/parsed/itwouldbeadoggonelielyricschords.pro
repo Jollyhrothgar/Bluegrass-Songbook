@@ -1,6 +1,9 @@
 {meta: title It Would Be A Doggone Lie}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file itwouldbeadoggonelielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the sun come up this morning 
@@ -50,3 +53,9 @@ I could say I won't cry
 I [C]could say I won't miss her 
 But it [G7]would be a doggone [C]lie
 {end_of_verse}
+
+
+
+
+
+

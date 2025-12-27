@@ -1,6 +1,9 @@
 {meta: title Y'all Come}
 {meta: artist Porter Wagoner}
 {meta: composer Arleigh E. Duff}
+{meta: x_source classic-country}
+{meta: x_source_file yallcomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you live in the country
@@ -55,3 +58,8 @@ Y'all come (Y'all [C]come)
 Y'all come (Y'all [F]come)
 [C]Y'all come to [G7]see us now and [C]then
 {end_of_verse}
+
+
+
+
+

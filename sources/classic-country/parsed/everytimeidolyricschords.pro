@@ -1,6 +1,9 @@
 {meta: title Every Time I Do}
 {meta: artist Tracy Byrd}
 {meta: composer Shawn Camp and Taylor Dunn}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Whenever I go out anywhere in town
@@ -39,3 +42,7 @@ Shouldn't get the [C]blues when I think of [D7]you but every time I [G]do
 No I shouldn't get the [C]blues 
 When I think of [D7]you but every time I [G]do
 {end_of_verse}
+
+
+
+

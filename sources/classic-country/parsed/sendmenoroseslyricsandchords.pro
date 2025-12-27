@@ -1,5 +1,8 @@
 {meta: title Send Me No Roses}
 {meta: artist Tommy Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file sendmenoroseslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I would send her a [C]rose when I couldn't make it [G]home
@@ -28,3 +31,6 @@ Just like our dreams the fragrance will soon fade [G]away
 The magic is gone our love has [G7]died on the [C]vine
 Send me no [D7]roses  roses can't bring it back this [G]time   
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Really Did}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file ireallydidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You found out [G7]I've been [F]cheating
@@ -29,3 +32,6 @@ I didn't wanna tie you [G7]down I just wanted [C]to be [F]around
 [C]Cause baby I loved [G7]you I really [F]did
 [C]Cause baby I loved [G7]you I really [F]did
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Long Vacation}
 {meta: artist Ricky Nelson}
 {meta: composer Dorsey Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file alongvacationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Summertime's here [F]but it's been so [C]long[F]  [G7]   [C]
@@ -43,3 +46,8 @@ Then I won't have to drive [F]clear across [C]town[F]  [G7]   [C]
 You'll be mine through [F]eternit[C]y [F]  [G7]   [C]
 Cause that's the way it was [F]meant to [C]be[F]  [G7]   [C]
 {end_of_verse}
+
+
+
+
+

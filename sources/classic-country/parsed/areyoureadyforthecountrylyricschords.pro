@@ -1,6 +1,9 @@
 {meta: title Are You Ready For The Country}
 {meta: artist Waylon Jennings}
 {meta: composer Neil Young}
+{meta: x_source classic-country}
+{meta: x_source_file areyoureadyforthecountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Slipping and a sliding playing [C]dominos
@@ -28,3 +31,7 @@ Are you [F]ready for the country ain't that a sight to [C]see
 Well are you [F]ready for the country are you ready for [C]me
 Are you [F]ready for the country ain't that a sight to [C]see
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Back Where It's At}
 {meta: artist George Hamilton IV}
 {meta: composer Bobby Bond}
+{meta: x_source classic-country}
+{meta: x_source_file backwhereitsatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lately it seems [Em]everything I see
@@ -31,3 +34,6 @@ Gonna put [G7]on my boots and my jeans and a country [C]hat
 [F]Soothe my soul and [G7]go back where it's [C]at
 Repeat last verse
 {end_of_verse}
+
+
+

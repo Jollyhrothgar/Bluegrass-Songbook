@@ -1,6 +1,9 @@
 {meta: title There'll Be No Other}
 {meta: artist Buck Owens}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file therellbenootherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There'll be no [F]ot[C]her to make me [G7]cry 
@@ -29,3 +32,6 @@ To thrill me now so I'll be [G7]true
 Each night I'm [F]say[C]ing to him [F]I'm praying 
 There'll be no [C]other [G7]while I'm loving [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Hurt Goes On}
 {meta: artist Connie Smith}
 {meta: composer Sheb Wooley}
+{meta: x_source classic-country}
+{meta: x_source_file thehurtgoesonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I suppose I'll get [G7]over [C]you in [F]time
@@ -30,3 +33,6 @@ And the [Em]hurt [Dm]goes [C]on
 [F]And the [Em]hurt [Dm]goes [C]on 
 [G7]The hurt goes [C]on
 {end_of_verse}
+
+
+

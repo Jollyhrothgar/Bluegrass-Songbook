@@ -1,6 +1,9 @@
 {meta: title Jesus Wept}
 {meta: artist Hank Snow}
 {meta: composer Hank Snow and Blanche Snow}
+{meta: x_source classic-country}
+{meta: x_source_file jesusweptlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All alone in  this cruel world of [C]sin
@@ -47,3 +50,9 @@ We'll pay the [D7]price  cause Jesus [G]wept
 {start_of_verse: Verse 7}
 We'll pay the [D7]price  cause Jesus [G]wept
 {end_of_verse}
+
+
+
+
+
+

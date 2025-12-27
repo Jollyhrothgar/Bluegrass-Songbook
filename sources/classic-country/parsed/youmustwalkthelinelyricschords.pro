@@ -1,6 +1,9 @@
 {meta: title You Must Walk The Line}
 {meta: artist Eddy Arnold}
 {meta: composer J.G. Hall, Wally Fowler, Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file youmustwalkthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My dear you cannot go your way and [F]leave your love [C]behind
@@ -44,3 +47,9 @@ If I can't play around you can't step out and [G7]shine
 I'll tell you now because a [C]stitch in time saves nine
 If I must toe the mark then you must [G7]walk the [C]line
 {end_of_verse}
+
+
+
+
+
+

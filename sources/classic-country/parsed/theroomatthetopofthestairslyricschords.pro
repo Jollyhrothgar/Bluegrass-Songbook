@@ -1,6 +1,9 @@
 {meta: title The Room At The Top Of The Stairs}
 {meta: artist Cal Smith}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file theroomatthetopofthestairslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the [G]room at the top [D7]of the [G]stairs
@@ -38,3 +41,8 @@ In the [G]room at the top [D7]of the [G]stairs
 [D7]Damned these old [G]cowboy’s blues for wanting to take [C]roots
 In the [G]room at the top [D7]of the [G]stairs
 {end_of_verse}
+
+
+
+
+

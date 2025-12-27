@@ -1,6 +1,9 @@
 {meta: title As Long As I'll Forgive}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file aslongasillforgivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The first time I passed it off as [F]just a big mistake
@@ -32,3 +35,7 @@ Your [G7]cheating heart will always be [C]unfair
 You know I'll love you darling just as [F]long as I live
 But [G7]you'll be making mean mistakes as long as I'll [C]forgive
 {end_of_verse}
+
+
+
+

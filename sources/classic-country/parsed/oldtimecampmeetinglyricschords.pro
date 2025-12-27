@@ -1,5 +1,8 @@
 {meta: title Old Time Camp Meeting}
 {meta: artist Granpa Jones}
+{meta: x_source classic-country}
+{meta: x_source_file oldtimecampmeetinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Long ago when but a boy [C]at old camp meeting [G]time
@@ -42,3 +45,8 @@
 [G]I like to hear those old [C]time Hallelujah [G]stories
 [D7]I like the old time worship of the [G]Lord
 {end_of_verse}
+
+
+
+
+

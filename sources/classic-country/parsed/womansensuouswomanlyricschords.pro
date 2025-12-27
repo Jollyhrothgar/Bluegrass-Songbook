@@ -1,6 +1,9 @@
 {meta: title Woman Sensuous Woman}
 {meta: artist Don Gibson}
 {meta: composer Gary S. Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file womansensuouswomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Woman oo  [C]sensuous [G]woman 
@@ -26,3 +29,6 @@ This [C]lustful spell you've [G]cast [D7]all over [G]me
 {start_of_verse: Verse 4}
 [C]Release my body and [G]let me [D7]live [G]again
 {end_of_verse}
+
+
+

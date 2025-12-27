@@ -1,5 +1,8 @@
 {meta: title Looking For You}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file lookingforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I look out of my window
@@ -31,3 +34,5 @@ And [G]when I'm walking down the road
 I keep [D7]looking back for you
 I'm wishing for you all the [G]time
 {end_of_verse}
+
+

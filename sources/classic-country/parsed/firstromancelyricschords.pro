@@ -1,6 +1,9 @@
 {meta: title First Romance}
 {meta: artist Conway Twitty}
 {meta: composer Conway Twitty and Vincent Matthews}
+{meta: x_source classic-country}
+{meta: x_source_file firstromancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](First romance ooh [F]ooh [G7]ooh first [C]romance ooh [F]ooh [G7]ooh)
@@ -49,3 +52,9 @@
 [C](First romance [F]ooh [G7]ooh ooh first [C]romance ooh [F]ooh [G7]ooh)
 [C]First romance
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Rock a Bye Rock}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file rockabyerocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well rock a-baby rock rock rock
@@ -27,3 +30,5 @@ I'm [G7]telling you again like I [F]told you [C]before
 Oh [F]rock oh rock oh [C]rock yes rock
 Oh [G7]rock yes [F]rock gonna [C]rock the [G7]whole night [C]long
 {end_of_verse}
+
+

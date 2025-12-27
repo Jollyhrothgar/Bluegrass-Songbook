@@ -1,6 +1,9 @@
 {meta: title Holy Spirit Faithful Guide}
 {meta: artist Tennessee Ernie Ford}
 {meta: composer Jesse Baxter and Marcus Wells}
+{meta: x_source classic-country}
+{meta: x_source_file holyspiritfaithfulguidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Holy Spirit faithful [G7]Guide 
@@ -34,3 +37,5 @@ Pleading naught but [G7]Jesus' blood
 [C]Whispering softly wanderer [G7]come
 [C]Follow Me I'll [G7]guide thee [C]home
 {end_of_verse}
+
+

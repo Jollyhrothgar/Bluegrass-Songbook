@@ -1,6 +1,9 @@
 {meta: title Heartland}
 {meta: artist George Strait}
 {meta: composer Steve Dorff and John Bettis}
+{meta: x_source classic-country}
+{meta: x_source_file heartlandlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you hear twin fiddles and a steel guitar
@@ -36,3 +39,7 @@ Where they [C]still know wrong from [F]right
 [Am]Sing a song [G7]about the [F]heartland [C]  [D7]
 [G7]Sing a song about my [C]life
 {end_of_verse}
+
+
+
+

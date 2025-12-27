@@ -1,6 +1,9 @@
 {meta: title Your Sweet Love Lifted Me}
 {meta: artist Ferlin Husky}
 {meta: composer Glenn Sutton and George Richey}
+{meta: x_source classic-country}
+{meta: x_source_file yoursweetloveliftedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've [D7]thought the world for [G7]me had ended [F]when she [C]left
@@ -33,3 +36,7 @@ I was [F]blinded [G7]you made me [C]see
 {start_of_verse: Verse 5}
 [F]Yes your [C]sweet love [G7]lifted [F]me[C]
 {end_of_verse}
+
+
+
+

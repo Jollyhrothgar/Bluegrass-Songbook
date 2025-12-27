@@ -1,6 +1,9 @@
 {meta: title Footsteps Walking With Me}
 {meta: artist Daniel O'Donnell}
 {meta: composer Steve and Heather Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file footstepswalkingwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Footsteps [G7]walking with [C]me
@@ -82,3 +85,13 @@ Those footsteps won't go a[C]way
 Through [G7]good and bad through happy and sad
 By my side they will [C]stay
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

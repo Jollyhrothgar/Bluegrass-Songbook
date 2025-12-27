@@ -1,5 +1,8 @@
 {meta: title Won't Cha Come Back To Me}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file wontchacomebacktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Won't Cha Come Back To Me
@@ -32,3 +35,7 @@ I'm so [C]doggone blue I'm bluer than [G]blue oh  I need you [D7]so
 {start_of_verse: Verse 5}
 Please [D7]won't cha come back to [G]me
 {end_of_verse}
+
+
+
+

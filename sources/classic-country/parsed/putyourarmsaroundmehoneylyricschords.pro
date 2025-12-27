@@ -1,6 +1,9 @@
 {meta: title Put Your Arms Around Me Honey}
 {meta: artist Fats Domino}
 {meta: composer Albert Von Tilzer and Junie McCree}
+{meta: x_source classic-country}
+{meta: x_source_file putyourarmsaroundmehoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Put your arms around me honey and hold me tight
@@ -29,3 +32,6 @@ Put your arms around me honey and hold me tight
 Oh oh [C]I never knew any [D7]girl [G7]like [C]you
 Any [D7]girl [G7]like [C]you
 {end_of_verse}
+
+
+

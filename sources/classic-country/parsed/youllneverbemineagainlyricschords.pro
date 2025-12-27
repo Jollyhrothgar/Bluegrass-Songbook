@@ -1,6 +1,9 @@
 {meta: title You'll Never Be Mine Again}
 {meta: artist Jim Reeves}
 {meta: composer Buddy Killen and Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file youllneverbemineagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’ll never be mine [F]again 
@@ -20,3 +23,4 @@ And let me just dream a [C]while
 Then my world will come to an [G7]end 
 You’ll never be mine [C]again
 {end_of_verse}
+

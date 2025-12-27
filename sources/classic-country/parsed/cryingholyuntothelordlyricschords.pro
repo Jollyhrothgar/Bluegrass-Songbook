@@ -1,6 +1,9 @@
 {meta: title Crying holy unto the Lord}
 {meta: artist J.D. Crowe}
 {meta: composer Irene Amburgey}
+{meta: x_source classic-country}
+{meta: x_source_file cryingholyuntothelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Crying holy unto the Lord
@@ -43,3 +46,8 @@ Crying [C]holy unto the [G]Lord
 Oh if I could I surely would
 Stand on that rock [D7]where Moses [G]stood
 {end_of_verse}
+
+
+
+
+

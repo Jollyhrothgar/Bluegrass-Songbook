@@ -1,6 +1,9 @@
 {meta: title Fourteen Carat Mind}
 {meta: artist Gene Watson}
 {meta: composer Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file fourteencaratmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I still recall the [G7]morning that I met [C]you
@@ -43,3 +46,8 @@
 [Am]Everything except my soul has been [F]surrendered
 [C]Just to satisfy [G7]your fourteen carat [C]mind
 {end_of_verse}
+
+
+
+
+

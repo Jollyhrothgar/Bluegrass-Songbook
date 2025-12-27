@@ -1,5 +1,8 @@
 {meta: title Sitting Alone In The Moonlight}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file sittingaloneinthemoonlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sitting [F]alone in the [G]moonlight
@@ -28,3 +31,6 @@ Each little [C]star seems to [D7]whisper and [G]say
 Your [C]sweetheart has found [G][D]another
 And [C]now she's [D7]far far [G]away
 {end_of_verse}
+
+
+

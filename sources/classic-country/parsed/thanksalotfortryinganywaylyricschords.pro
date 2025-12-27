@@ -1,6 +1,9 @@
 {meta: title Thanks A Lot For Trying Anyway}
 {meta: artist Cal Smith}
 {meta: composer James W. Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file thanksalotfortryinganywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh what a shock to hear you [D7]say you're gonna [G]leave me
@@ -23,3 +26,5 @@ It's not your [G]fault you couldn't [G7]keep your love from [C]dying
 But [G]thanks a [D7]lot for trying any[G]way
 Thanks a [D7]lot for trying any[G]way
 {end_of_verse}
+
+

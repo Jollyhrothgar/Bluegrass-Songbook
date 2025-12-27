@@ -1,5 +1,8 @@
 {meta: title My San Antonio Mamma Lyrics and Chords}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file mysanantoniomammalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was a brakeman out on the Texas line
@@ -35,3 +38,7 @@ Now I'm [F]through with women no more gals for [C]me
 I’m gonna hop a [G7]freight 
 Right back to [C]Tennessee 
 {end_of_verse}
+
+
+
+

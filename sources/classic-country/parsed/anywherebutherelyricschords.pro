@@ -1,6 +1,9 @@
 {meta: title Anywhere But Here}
 {meta: artist Sammy Kershaw}
 {meta: composer Bob DiPiero, Buddy Cannon, John S. Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file anywherebutherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey mister what time does the next bus [D7]leave
@@ -46,3 +49,8 @@
 [G]I want a ticket that'll take me [D7]anywhere but [G]here
 [D7]A ticket that'll take me anywhere but [G]here
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Walk Our Own Road}
 {meta: artist Randy Travis}
 {meta: composer Bernie Nelson and Lisa Pals}
+{meta: x_source classic-country}
+{meta: x_source_file walkourownroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's do'ers and [G7]don'ters and [C]I wills and won'ters
@@ -50,3 +53,9 @@ We [G7]can't always go where we're [C]told
 In the [F]end where it'll end up the [C]Lord only [F]knows
 But we [C]all have to [G7]walk our own [C]road
 {end_of_verse}
+
+
+
+
+
+

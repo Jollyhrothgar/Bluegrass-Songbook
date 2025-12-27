@@ -1,5 +1,8 @@
 {meta: title Believe}
 {meta: artist Steve Ivey}
+{meta: x_source classic-country}
+{meta: x_source_file believelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]Daniel in the lion's den [C]never had a doubt
@@ -30,3 +33,6 @@ Just a [G]seed full of [D7]faith and hope
 Is all you [Em]need planted [C]deep in your heart
 Just be[G]lie[D7]ve just be[Em]liev[C]e
 {end_of_verse}
+
+
+

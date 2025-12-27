@@ -1,6 +1,9 @@
 {meta: title I Was There}
 {meta: artist The Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file iwastherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When she bought her first heels I was [D7]there
@@ -37,3 +40,7 @@
 [G]I know she told me [D7]so when I was [G]there
 [D7]I know she told me so when I was [G]there
 {end_of_verse}
+
+
+
+

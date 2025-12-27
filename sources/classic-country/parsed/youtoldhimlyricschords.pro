@@ -1,6 +1,9 @@
 {meta: title You Told Him}
 {meta: artist Wynn Stewart}
 {meta: composer Bozo Darnell}
+{meta: x_source classic-country}
+{meta: x_source_file youtoldhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Not [C]long [G7]ago I [C]opened [C7]up my [F]heart and you walked [C]in
@@ -29,3 +32,6 @@ They could [C]hear my heart break as I was standing [D7]there[G7]
 You told [C]him he told [G7]them they're [C]asking me how can it [F]be
 You could [C]love her so [G7]much when she don't [F]car[C]e
 {end_of_verse}
+
+
+

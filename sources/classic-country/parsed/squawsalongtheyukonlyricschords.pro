@@ -1,5 +1,8 @@
 {meta: title Squaws Along the Yukon Lyrics Chords}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file squawsalongtheyukonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a Salmon-colored girl who [F]sets my heart a-whirl
@@ -37,3 +40,7 @@ TAG
 [C]Carry me back to old Alaska  The [F]Squaws Along The [G7]Yukon are 
 good enough for [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Time Has Treated You Well}
 {meta: artist Mel Tillis}
 {meta: composer Dave Hanner}
+{meta: x_source classic-country}
+{meta: x_source_file timehastreatedyouwelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is that you  [F]I can't believe my [C]eyes
@@ -28,3 +31,6 @@ But [C]I don't want to waste your night with the [C7]stories I could [F]tell [C]
 So I'll just say [C]time  [G7]has treated you [C]well
 [F]So happy that [C]time  [G7]has treated you [F]wel[C]l
 {end_of_verse}
+
+
+

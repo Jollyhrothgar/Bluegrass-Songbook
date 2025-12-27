@@ -1,6 +1,9 @@
 {meta: title Birmingham Turnaround}
 {meta: artist Keith Whitley}
 {meta: composer Sanger D. Shafer and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file birminghamturnaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Caught a plane to Birming[F]ham
@@ -39,3 +42,6 @@ The [Dm]day I did the [G7]Birmingham turn[C]around
 And now we laugh and talk [F]about
 The [Dm]day I did the [G7]Birmingham turn[C]around
 {end_of_verse}
+
+
+

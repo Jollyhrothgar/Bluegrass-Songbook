@@ -1,6 +1,9 @@
 {meta: title Wind Up Doll}
 {meta: artist Jim Reeves}
 {meta: composer Roger Miller and Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file windupdolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can this be the wind up [F]you don't seem the [C]same
@@ -22,3 +25,5 @@ Can this be the wind up [D7]have I been to [G7]blame
 [C]Won't you think it over let your heart count [F]again
 [G7]Then maybe we'll end up being sweethearts [C]again
 {end_of_verse}
+
+

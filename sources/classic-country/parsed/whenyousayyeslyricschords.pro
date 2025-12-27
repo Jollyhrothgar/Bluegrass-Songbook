@@ -1,6 +1,9 @@
 {meta: title When You Say Yes}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file whenyousayyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you say yes I'm gonna fall [G7]over in a faint
@@ -38,3 +41,7 @@ And learn what nature [G7]made 'um for
 Someday I [C]guess you'll snuggle up close and say ok
 I'll quiver and [G7]quake and pass away when you say [C]yes
 {end_of_verse}
+
+
+
+

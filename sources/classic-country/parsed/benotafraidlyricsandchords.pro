@@ -1,6 +1,9 @@
 {meta: title Be Not Afraid}
 {meta: artist Daniel O'Donnell}
 {meta: composer Felix Mendelssohn}
+{meta: x_source classic-country}
+{meta: x_source_file benotafraidlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You shall [G]cross the barren [D7]desert
@@ -52,3 +55,8 @@ I [D7]go be[G]fore you always
 [C]Come follow [Bm]me [Em]
 And [C]I will [D7]give you [G]rest
 {end_of_verse}
+
+
+
+
+

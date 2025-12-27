@@ -1,6 +1,9 @@
 {meta: title Blowing In The Wind}
 {meta: artist Dolly Parton}
 {meta: composer Bob Dylan}
+{meta: x_source classic-country}
+{meta: x_source_file blowinginthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How many roads [F]must a man walk [C]down
@@ -43,3 +46,8 @@
 [F]The answer [G7]my friend is [C]blowing in the [Am]wind
 [F]The answer is [G7]blowing in the [C]wind
 {end_of_verse}
+
+
+
+
+

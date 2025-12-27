@@ -1,5 +1,8 @@
 {meta: title I Can't Take It Like You Can}
 {meta: artist Bobby Helms}
+{meta: x_source classic-country}
+{meta: x_source_file icanttakeitlikeyoucanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can laugh and say it's over 
@@ -42,3 +45,8 @@ Broken up the way I [C]am
 For you're laughing while I'm [G]crying
 [D7]I can't take it like you [G]can [C]   [G]
 {end_of_verse}
+
+
+
+
+

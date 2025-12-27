@@ -1,6 +1,9 @@
 {meta: title Like She's Not Yours}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file likeshesnotyourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're love's not burning with that [G7]same old glow
@@ -48,3 +51,9 @@ Hold her like she's holding on to [C]new romance
 If you want a love what you [Dm]can be sure
 [G7]Take her out and treat her like [C]she's not yours
 {end_of_verse}
+
+
+
+
+
+

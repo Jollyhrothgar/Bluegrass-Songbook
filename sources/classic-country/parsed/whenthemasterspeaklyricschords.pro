@@ -1,6 +1,9 @@
 {meta: title When The Master Speak}
 {meta: artist Jimmie Davis}
 {meta: composer John Mathews}
+{meta: x_source classic-country}
+{meta: x_source_file whenthemasterspeaklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the Master [C7]speaks the heavens [F]open wide
@@ -29,3 +32,6 @@ When He [C]walks into your heart [F]peace and [C]love [G7]abi[C]des
 But the [C]greatest joy of living you'll [C7]find when you [F]see
 The [C]love of the Master and the [G7]Master [C]speaks
 {end_of_verse}
+
+
+

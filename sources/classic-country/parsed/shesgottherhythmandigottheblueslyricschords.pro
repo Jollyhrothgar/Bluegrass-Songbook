@@ -1,6 +1,9 @@
 {meta: title She's Got The Rhythm (And I Got The Blues)}
 {meta: artist Alan Jackson}
 {meta: composer Randy Travis and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file shesgottherhythmandigottheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The old bar stool's feelin' higher 
@@ -37,3 +40,7 @@ She's got the [G]rhythm [D7]and I got the [G]blues
 [D7]Yeah with her [G]every little move she's tellin' [C]me I'm over [A7]you
 She's got the [G]rhythm [D7]and I got the [G]blues
 {end_of_verse}
+
+
+
+

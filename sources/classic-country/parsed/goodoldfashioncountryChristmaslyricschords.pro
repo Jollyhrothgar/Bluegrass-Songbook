@@ -1,6 +1,9 @@
 {meta: title Good Old Fashion Country Christmas Lyrics with Chords}
 {meta: artist Buck Owens}
 {meta: composer Earl Ball and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file goodoldfashioncountryChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We're packin' up our clothes and we're goin'
@@ -47,3 +50,9 @@ Of a [D7]good old fashion country [G]Christmas
 {start_of_verse: Verse 5}
 I [D7]love the good old fashion country [G]Christmas
 {end_of_verse}
+
+
+
+
+
+

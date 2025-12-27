@@ -1,6 +1,9 @@
 {meta: title I Don't Know You Well Enough to Say Goodbye}
 {meta: artist Keith Whitley}
 {meta: composer Kix Brooks and Fred Koller}
+{meta: x_source classic-country}
+{meta: x_source_file idontknowyouwellenoughtosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know the [Em]way you [F]touch me in the [Dm]night
@@ -52,3 +55,9 @@ But [F]I don't know you [G7]well enough
 [F]Everything I've [G7]given up
 [F]I don't know you [G7]well enough to [F]say [G7]good[C]bye
 {end_of_verse}
+
+
+
+
+
+

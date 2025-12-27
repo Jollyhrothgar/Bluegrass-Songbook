@@ -1,6 +1,9 @@
 {meta: title When The Saints Go Marching In}
 {meta: artist Fats Domino}
 {meta: composer James McParkland}
+{meta: x_source classic-country}
+{meta: x_source_file whenthesaintsgomarchinginlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh when the saints  go marching in
@@ -36,3 +39,7 @@ When the saints go marching [G7]in
 I still [C]want to be in that [F]number
 When the [C]sun refuse [G7]to [C]shine
 {end_of_verse}
+
+
+
+

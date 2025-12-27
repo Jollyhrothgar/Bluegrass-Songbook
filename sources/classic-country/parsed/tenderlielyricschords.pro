@@ -1,6 +1,9 @@
 {meta: title Tender Lie}
 {meta: artist Dolly Parton}
 {meta: composer Randy L. Sharp}
+{meta: x_source classic-country}
+{meta: x_source_file tenderlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As you walk [C]away   as [D7]we say [G]goodbye
@@ -24,3 +27,5 @@ And [D7]I'll believe that it's [G]true
 How much more damage [C]honestly   [D7]could one tender lie [G]do
 How much more damage [C]honestly   [D7]could one tender lie [G]do
 {end_of_verse}
+
+

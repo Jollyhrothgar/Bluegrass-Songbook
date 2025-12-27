@@ -1,6 +1,9 @@
 {meta: title Foggy Mountain Top}
 {meta: artist Lester Flatt and Earl Scruggs}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file foggymountaintoplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I was on some [C]foggy mountain [G]top 
@@ -36,3 +39,7 @@ I'd sail away to the [D7]west
 I'd [G]sail all around this [C]whole wide [G]world 
 To the girl I [D7]love the [G]best
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Any Day Now}
 {meta: artist Doyle Lawson}
 {meta: composer Aaron Wilburn and Eddie Crook}
+{meta: x_source classic-country}
+{meta: x_source_file justanydaynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just any [G]day now His [D7]face I'll [G]see
@@ -33,3 +36,7 @@
 [G]The things He said would come to [G7]pass are now before [C]us
 [G]And I can feel a [D7]strange excitement in the [G]air
 {end_of_verse}
+
+
+
+

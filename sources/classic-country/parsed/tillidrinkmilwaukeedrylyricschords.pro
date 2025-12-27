@@ -1,5 +1,8 @@
 {meta: title Till I Drink Milwaukee Dry}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file tillidrinkmilwaukeedrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a heartache from [F]being much to [C]lonely
@@ -36,3 +39,7 @@ While I sit right [F]here in [C]Dallas till I drink [G7]Milwaukee [C]dry
 {start_of_verse: Verse 4}
 While I sit right [F]here in [C]Dallas till I drink [G7]Milwaukee [C]dry
 {end_of_verse}
+
+
+
+

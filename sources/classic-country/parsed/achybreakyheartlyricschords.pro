@@ -1,6 +1,9 @@
 {meta: title Achy Breaky Heart}
 {meta: artist Billy Ray Cyrus}
 {meta: composer Donald L. Von Tress}
+{meta: x_source classic-country}
+{meta: x_source_file achybreakyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you can tell the world you never was my girl  
@@ -70,3 +73,16 @@ Or you can tell my feet to hit the [D7]floor
 You can tell my arms go back to the farm
 Or you can tell my feet to hit the [D7]floor
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

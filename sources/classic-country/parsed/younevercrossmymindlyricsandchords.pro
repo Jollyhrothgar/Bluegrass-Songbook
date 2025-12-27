@@ -1,6 +1,9 @@
 {meta: title You Never Cross My Mind}
 {meta: artist Mickey Gilley}
 {meta: composer Curly Putman, Rafe Van Hoy, Deborah Allen}
+{meta: x_source classic-country}
+{meta: x_source_file younevercrossmymindlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I  [C]lay there every [F]night where you [G7]love me
@@ -29,3 +32,6 @@ Though I [G7]cry from time to [C]time [G7]
 [C]No you don't [F]ever cross my [G7]mind[F]  [E7]
 You [Dm]stay there [G7]all the [C]time
 {end_of_verse}
+
+
+

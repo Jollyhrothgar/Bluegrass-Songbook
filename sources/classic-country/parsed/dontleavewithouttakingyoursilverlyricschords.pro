@@ -1,6 +1,9 @@
 {meta: title Don't Leave Without Taking Your Silver}
 {meta: artist George Jones}
 {meta: composer D. Black}
+{meta: x_source classic-country}
+{meta: x_source_file dontleavewithouttakingyoursilverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You said I'm taking everything [C]that is [G]mine
@@ -34,3 +37,7 @@
 [C]No don't leave without taking your [G]silver
 [D7]You left it right here [C]in my [G]hair
 {end_of_verse}
+
+
+
+

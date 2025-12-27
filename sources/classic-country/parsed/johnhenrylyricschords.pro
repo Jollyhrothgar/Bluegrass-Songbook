@@ -1,5 +1,8 @@
 {meta: title John Henry}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file johnhenrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]John Henry was a little bitty boy
@@ -48,3 +51,8 @@ Every [G]time the freight train would go puffin' by
 They’d say there lies a steel drivin' man [C]Lord Lord
 Yonder [A]lies that [D7]steel drivin' [G]man
 {end_of_verse}
+
+
+
+
+

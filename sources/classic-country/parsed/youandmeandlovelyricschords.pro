@@ -1,6 +1,9 @@
 {meta: title You And Me And Love}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file youandmeandlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You and me and love is gonna run away [D7]together
@@ -48,3 +51,9 @@ We’ll stroll down through the meadow greens
 {start_of_verse: Verse 5}
 [C]You and me and [D7]love has got it [G]made
 {end_of_verse}
+
+
+
+
+
+

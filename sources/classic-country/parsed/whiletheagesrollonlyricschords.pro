@@ -1,5 +1,8 @@
 {meta: title While The Ages Roll On}
 {meta: artist Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file whiletheagesrollonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Father above  will [C]soon call me [G]home
@@ -43,3 +46,9 @@ We'll live in sweet peace  for [G][D7]evermore
 While the ages roll on while the ages roll on
 I'll [C]walk with the [G]King  I'll [C]walk with the [G]King
 {end_of_verse}
+
+
+
+
+
+

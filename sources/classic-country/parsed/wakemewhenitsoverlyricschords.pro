@@ -1,5 +1,8 @@
 {meta: title Wake Me When It’s Over}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file wakemewhenitsoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm getting tired now I gotta get some sleep now
@@ -28,3 +31,6 @@ Good[F]night foreve[C]rmore
 And don't wake me till it's [D7]over 
 When I [G7]won't want [F]you any[C]more
 {end_of_verse}
+
+
+

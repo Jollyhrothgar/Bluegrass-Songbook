@@ -1,6 +1,9 @@
 {meta: title Dancin' Shaggin' on the Boulevard}
 {meta: artist Alabama}
 {meta: composer Greg Fowler, Theodore Gentry, Randy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file dancinshagginontheboulevardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the Magic Attic's where the [C]music rolls
@@ -63,3 +66,12 @@ They know [Am]dancin' shaggin' on the Boule[G]vard
 They wrote [Am]dancin' shaggin' on the Boule[G]vard
 [Am]Dancin' shaggin' on the Boule[G]vard
 {end_of_verse}
+
+
+
+
+
+
+
+
+

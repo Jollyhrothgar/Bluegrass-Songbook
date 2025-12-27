@@ -1,6 +1,9 @@
 {meta: title In The Chapel In The Moonlight}
 {meta: artist Faron Young}
 {meta: composer Billy Hill}
+{meta: x_source classic-country}
+{meta: x_source_file inthechapelinthemoonlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How I'd love to hear the organ 
@@ -29,3 +32,6 @@ In the chapel in the [Em]moonlight
 [A7]As they sing oh promise [D7]me 
 [G7]Forever be [C]mine
 {end_of_verse}
+
+
+

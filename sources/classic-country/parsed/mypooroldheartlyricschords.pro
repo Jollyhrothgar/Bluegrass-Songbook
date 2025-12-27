@@ -1,6 +1,9 @@
 {meta: title My Poor Old Heart}
 {meta: artist Randy Travis}
 {meta: composer Gary Harrison and Shawn Camp}
+{meta: x_source classic-country}
+{meta: x_source_file mypooroldheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I've been a [G]fool for love ever since I was a [D7]baby
@@ -37,3 +40,7 @@ Bruises burns lies goodbyes [C]they've all left some [A7]scars
 Oh [G]Lord have a little bit of [D7]pity on my poor old [G]heart
 Hey Lord have a little bit of [D7]pity on my poor old [G]heart
 {end_of_verse}
+
+
+
+

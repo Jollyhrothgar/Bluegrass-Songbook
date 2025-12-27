@@ -1,6 +1,9 @@
 {meta: title Make Me Feel Like A Woman Wants To Feel}
 {meta: artist Reba McEntire}
 {meta: composer Dana Collins}
+{meta: x_source classic-country}
+{meta: x_source_file makemefeellikeawomanwantstofeellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Open up your [D7]arms to me [G]come and hold me [Em]tenderly[C]
@@ -34,3 +37,6 @@ And [G]go ahead and kiss me when I'm [Em]feeling down
 [C]Make me feel like a [D7]woman wants to [G]feel [C]
 Make me [Am]feel like a [D7]woman wants to [G]feel
 {end_of_verse}
+
+
+

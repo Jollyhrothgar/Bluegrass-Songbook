@@ -1,6 +1,9 @@
 {meta: title The Box It Came In}
 {meta: artist Wanda Jackson}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file theboxitcameinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My clothes are all ragged my Goodwill [C7]coat's not the [F]best
@@ -22,3 +25,5 @@ Bet he's got a new sweetheart to fill my wedding [G7]gown
 But somewhere [C]I'll find him then I'll [C7]have peace of [F]mind
 And the box he comes [C]home in  [G7]will be all satin [C]lined
 {end_of_verse}
+
+

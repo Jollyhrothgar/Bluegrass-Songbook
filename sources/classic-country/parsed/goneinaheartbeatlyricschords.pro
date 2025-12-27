@@ -1,6 +1,9 @@
 {meta: title Gone In A Heartbeat}
 {meta: artist Vern Gosdin}
 {meta: composer James Hooker and Russell Smith}
+{meta: x_source classic-country}
+{meta: x_source_file goneinaheartbeatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've lived with [G7]love
@@ -53,3 +56,9 @@ You can think [C]everything is [G7]fine
 And your [G7]life walk [C]away
 Repeat last verse
 {end_of_verse}
+
+
+
+
+
+

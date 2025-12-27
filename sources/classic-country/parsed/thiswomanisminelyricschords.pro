@@ -1,6 +1,9 @@
 {meta: title This Woman Is Mine}
 {meta: artist Vernon Oxford}
 {meta: composer Danny Walls, Chaw Mank, Don Suiter}
+{meta: x_source classic-country}
+{meta: x_source_file thiswomanisminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The tavern was jammed the [D7]jukebox was loud
@@ -29,3 +32,6 @@ Who [A7]don’t show respect for that [D7]ring on her hand
 Now [G]she is no angel but [C]neither am [G]I 
 And this woman is [D7]mine till the day that I [C]di[G]e
 {end_of_verse}
+
+
+

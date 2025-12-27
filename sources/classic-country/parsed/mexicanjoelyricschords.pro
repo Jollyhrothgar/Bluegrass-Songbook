@@ -1,5 +1,8 @@
 {meta: title Mexican Joe}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file mexicanjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]South of the border hey I know a [D7]lad
@@ -61,3 +64,12 @@ But when he wants a kiss all he's got to do is say [G]so
 Dancing romancing always on the [D7]go
 Sun shining down on Mexican [G]Joe
 {end_of_verse}
+
+
+
+
+
+
+
+
+

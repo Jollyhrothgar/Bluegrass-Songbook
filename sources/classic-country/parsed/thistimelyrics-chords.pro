@@ -1,5 +1,8 @@
 {meta: title This Time}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file thistimelyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s an old [D7]hardwood tree 
@@ -65,3 +68,11 @@ All these [C]scars from yester[G]day[D7]
 [D7]This [G]time [D7]   [C]  [D7]
 This [G]time
 {end_of_verse}
+
+
+
+
+
+
+
+

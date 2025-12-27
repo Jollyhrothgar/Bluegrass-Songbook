@@ -1,6 +1,9 @@
 {meta: title 24 Karat Heartache}
 {meta: artist Vern Gosdin}
 {meta: composer V. Gosdin, D. Knudsen, D. Owens}
+{meta: x_source classic-country}
+{meta: x_source_file 24karatheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She’s got a [D7]24 karat 24 hour never ending heartache on her [G]hand
@@ -36,3 +39,7 @@
 [D7]She’s got a 24 karat 24 hour never ending
 [G]Everlasting heartache on her hand
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sin City}
 {meta: artist Dwight Yoakam}
 {meta: composer Chris Hillman and Gram Parsons}
+{meta: x_source classic-country}
+{meta: x_source_file sincitylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This old town is [D7]filled with sin 
@@ -42,3 +45,8 @@ Won't [G]keep out the [D7]Lord's burning [G]rain[D7]
 On the [C]31th [D7]floor your [G]gold plated [C]door 
 Won't [G]keep out the [D7]Lord's burning [C]rai[G]n
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ashamed Of Myself}
 {meta: artist Cowboy Copas}
 {meta: composer Charles Singleton and Rose Marie McCoy}
+{meta: x_source classic-country}
+{meta: x_source_file ashamedofmyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I feel so [C]ashamed of [G]myself I feel so [C]ashamed of [G]myself
@@ -24,3 +27,5 @@ I [C]can’t control my heart and soul
 I’m [G]so [C]ashamed of [G]myself I feel [C]so ashamed of [G]myself
 It [C]ain’t no [G]fun to [C]hurt some[Am]one and I’m [G]so a[D7]shamed of [G]myself
 {end_of_verse}
+
+

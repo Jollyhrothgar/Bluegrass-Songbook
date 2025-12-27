@@ -1,5 +1,8 @@
 {meta: title Sweethearts in Heaven}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file sweetheartsinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Will there be [G7]sweethearts in heaven  
@@ -35,3 +38,7 @@ After we cross the [C]line
 If the angels [F]have sweethearts 
 Then I [G7]want you for [C]mine
 {end_of_verse}
+
+
+
+

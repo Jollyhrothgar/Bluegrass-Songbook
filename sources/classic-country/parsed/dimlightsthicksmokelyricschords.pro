@@ -1,6 +1,9 @@
 {meta: title Dim Lights Thick Smoke}
 {meta: artist Marty Stuart}
 {meta: composer Joe Maphis, Max Fidler, Rose Lee Maphis}
+{meta: x_source classic-country}
+{meta: x_source_file dimlightsthicksmokelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dim lights  thick smoke  and loud [C7]loud [F]music
@@ -36,3 +39,7 @@
 [C]Dim lights  thick smoke  and [C7]loud loud [F]music
 [C]You'll never make a wife  to [G7]a home loving [C]man
 {end_of_verse}
+
+
+
+

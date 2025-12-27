@@ -1,6 +1,9 @@
 {meta: title When Jesus Calls All His Children}
 {meta: artist Buck Owens}
 {meta: composer Red Simpson and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file whenJesuscallsallhischildrenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Someday [C]someway [D7]somewhere you will [G]see 
@@ -29,3 +32,6 @@ When the [G]trumpet sounds that's [A7]when we will walk [D7]in
 Yes we'll walk [G]the streets of Glory with Jesus hand in [C]hand
 When [G]Jesus calls all his [D7]children [G]in
 {end_of_verse}
+
+
+

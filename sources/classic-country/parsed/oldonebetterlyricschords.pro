@@ -1,6 +1,9 @@
 {meta: title Old One Better}
 {meta: artist Tracy Byrd}
 {meta: composer Mark Nesler and Tony Martin}
+{meta: x_source classic-country}
+{meta: x_source_file oldonebetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well she said when she left that a [F]change might do me [C]good
@@ -36,3 +39,7 @@ Oh I [G7]got a new life but I [F]still like the old one [C]better
 Oh I [G7]got a new life but I [F]still like the old one [C]better
 Yeah I [G7]got a new life but I [F]still like the old one [C]better
 {end_of_verse}
+
+
+
+

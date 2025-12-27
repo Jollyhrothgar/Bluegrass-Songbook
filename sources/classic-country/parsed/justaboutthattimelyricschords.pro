@@ -1,5 +1,8 @@
 {meta: title Just About That Time}
 {meta: artist Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file justaboutthattimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I think I've [G7]got you off my [C]mind 
@@ -40,3 +43,8 @@ When [C]just about that [G7]time I'll think of [C]you
 Yeah just about that [G7]time I'll think of [C]you 
 Oh just about that [G7]time I'll think of [C]you
 {end_of_verse}
+
+
+
+
+

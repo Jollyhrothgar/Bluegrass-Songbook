@@ -1,6 +1,9 @@
 {meta: title Moffet Oklahoma}
 {meta: artist Charlie Walker}
 {meta: composer Curtis Leach and Claude McBride}
+{meta: x_source classic-country}
+{meta: x_source_file moffetoklahomalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I rolled into Moffet Okla[F]homa 
@@ -58,3 +61,10 @@ And if I [C]ever see old Moffet [F]Oklahoma again
 It'll be [G7]west of the California [C]line abso[Am]lutely
 [C]West of that [G7]California [C]line
 {end_of_verse}
+
+
+
+
+
+
+

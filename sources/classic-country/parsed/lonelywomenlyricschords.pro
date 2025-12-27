@@ -1,5 +1,8 @@
 {meta: title Lonely Women}
 {meta: artist Bob Luman}
+{meta: x_source classic-country}
+{meta: x_source_file lonelywomenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lonely [F]women make good [G7]lovers
@@ -32,3 +35,6 @@ Repeat #1
 {start_of_verse: Verse 4}
 Repeat #1
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: artist Faron YoungWritten by David Hall and Louis Redding}
 {meta: composer David Hall and Louis Redding}
+{meta: x_source classic-country}
+{meta: x_source_file nightcoachlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a night coach out of [Em]Dallas [F]headin' for the [Em]bright lights of [G7]LA
@@ -39,3 +42,7 @@
 {start_of_verse: Verse 4}
 [F]Tonight I'm leavin' [G7]Dallas [F]headin' for the [G7]bright lights of [C]LA
 {end_of_verse}
+
+
+
+

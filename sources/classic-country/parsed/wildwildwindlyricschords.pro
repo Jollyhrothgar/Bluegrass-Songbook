@@ -1,6 +1,9 @@
 {meta: title Wild Wild Wind chord}
 {meta: artist Stonewall Jackson}
 {meta: composer Roy Botkin and Wade Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file wildwildwindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun goes [G7]down  and the lights turn [C]on 
@@ -22,3 +25,5 @@ The taste of your [G7]love  my lips once [C]had
 I know [C7]that I'll [F]never  be the same [C]again 
 Since my lips were [G7]kissed  by the wild wild [C]wind
 {end_of_verse}
+
+

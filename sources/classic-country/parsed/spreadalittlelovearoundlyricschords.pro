@@ -1,6 +1,9 @@
 {meta: title Spread A Little Love Around}
 {meta: artist Ricky Skaggs}
 {meta: composer Harley Lee Allen and John Wayne Wiggins}
+{meta: x_source classic-country}
+{meta: x_source_file spreadalittlelovearoundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes this [F]crazy world can [G7]make us all feel [C]bad
@@ -37,3 +40,7 @@ A little tiny kiss and hug [G7]everybody needs that [C]stuff
 Turn a frown [F]upside down [G7]spread a little love [C]around
 When this world [F]gets you down [G7]spread a little love [C]around
 {end_of_verse}
+
+
+
+

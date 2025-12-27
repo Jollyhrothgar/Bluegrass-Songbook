@@ -1,6 +1,9 @@
 {meta: title Memories From The Past}
 {meta: artist Norma Jean}
 {meta: composer George McCormick and Charles McCormick}
+{meta: x_source classic-country}
+{meta: x_source_file memoriesfromthepastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All these lonely lonely [G7]memories from the [C]past
@@ -33,3 +36,7 @@
 [C]Thought I heard the band start [C7]playing our [F]favorite [C]song
 [G7]But it's only lonely memories from the [C]past
 {end_of_verse}
+
+
+
+

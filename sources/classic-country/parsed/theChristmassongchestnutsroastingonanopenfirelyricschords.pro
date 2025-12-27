@@ -1,6 +1,9 @@
 {meta: title The Christmas Song (Chestnuts Roasting On An Open Fire) chords}
 {meta: artist John Anderson}
 {meta: composer Mel Torme and Robert Wells}
+{meta: x_source classic-country}
+{meta: x_source_file theChristmassongchestnutsroastingonanopenfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 The Christmas Song
@@ -41,3 +44,8 @@ He’s loaded [A#7]lots of toys and [Gm]goodies in his [Am]sleigh
 And every [G]mother’s child is gonna [A#7]spy  
 To see if [D7]Reindeer really know how to [Fm]fly  [G7]
 {end_of_verse}
+
+
+
+
+

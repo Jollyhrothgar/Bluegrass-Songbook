@@ -1,5 +1,8 @@
 {meta: artist Ernest Tubb}
 {meta: composer George Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file goodnightirenelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Irene  Good[D7]night
@@ -49,3 +52,9 @@ Irene   goodni[G]ght  goodnight Irene
 Good [C]night Irene 
 I'll [D7]see you in my [G]dreams
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Georgia Blood}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file georgiabloodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I step across the railroad track 
@@ -172,3 +175,30 @@ In this field so fresh and [F]green
 But better yet I wish [G7]that I could 
 Wake and find this just a [C]dream
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

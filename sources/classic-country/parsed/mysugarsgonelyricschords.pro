@@ -1,6 +1,9 @@
 {meta: title My Sugar's Gone}
 {meta: artist Dean Martin}
 {meta: composer Ed Warren and Arthur Kent}
+{meta: x_source classic-country}
+{meta: x_source_file mysugarsgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Cause my [F]sweet sweet Sugar's [G7]gone
@@ -46,3 +49,10 @@ But the sweet perfume (sweet perfume)
 {start_of_verse: Verse 7}
 [G7]Cause my sugar's gone gone from sugar [C]hill
 {end_of_verse}
+
+
+
+
+
+
+

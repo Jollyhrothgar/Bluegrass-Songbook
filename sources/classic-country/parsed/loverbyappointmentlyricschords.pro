@@ -1,6 +1,9 @@
 {meta: title Lover by Appointment}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file loverbyappointmentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just your lover by [C][F]appoint--ment
@@ -22,3 +25,5 @@ And leave you with the city and all its [G7]glee
 And if ever [C]you're lonely for this old country [F]boy
 No [C]appointments will be [G7]needed with [C]me
 {end_of_verse}
+
+

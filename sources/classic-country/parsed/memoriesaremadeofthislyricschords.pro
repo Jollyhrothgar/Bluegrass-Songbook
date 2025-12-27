@@ -1,6 +1,9 @@
 {meta: title Memories Are Made Of This}
 {meta: artist Dean Martin}
 {meta: composer Terry Gilkyson, Rich Dehr and Frank Miller}
+{meta: x_source classic-country}
+{meta: x_source_file memoriesaremadeofthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take one [G7]fresh and tender [C]kiss[G7]
@@ -36,3 +39,7 @@ Memo[G7]ries are made of [C]this
 Memo[G7]ries are made of [C]this[G7]
 [C]Memo[G7]ries are made of [C]this
 {end_of_verse}
+
+
+
+

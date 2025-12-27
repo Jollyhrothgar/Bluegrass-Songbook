@@ -1,6 +1,9 @@
 {meta: title Don’t Put Off Till Tomorrow}
 {meta: artist The Shady Grove Band}
 {meta: composer Bill Monroe and Pete Pyle}
+{meta: x_source classic-country}
+{meta: x_source_file dontputofftilltomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You have no doubt in your mind
@@ -55,3 +58,8 @@ Sinner [G]give your heart to Jesus
 Won’t you [C]kneel down and [G]pray
 For tomorrow may [D7]be too [G]late
 {end_of_verse}
+
+
+
+
+

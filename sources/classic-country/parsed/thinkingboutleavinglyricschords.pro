@@ -1,6 +1,9 @@
 {meta: title Thinking Bout Leaving}
 {meta: artist Gene Watson}
 {meta: composer Randy Albright, Mark D. Sanders, Butch Paulson}
+{meta: x_source classic-country}
+{meta: x_source_file thinkingboutleavinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I planned to [C]tell her this [G]morning
@@ -34,3 +37,7 @@ But [G]leaving [D7]that's something [G]else
 [C]Thinking bout leaving is [G]ea[C]sy
 But [G]leaving [D7]that's something [C]els[G]e
 {end_of_verse}
+
+
+
+

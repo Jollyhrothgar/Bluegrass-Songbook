@@ -1,5 +1,8 @@
 {meta: title High As The Mountain}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file highasthemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say that too much water has run under the [C]bridge
@@ -28,3 +31,6 @@ High as the mountain deep as the [C]sea
 That's how much I love you that's how much you love [C]me
 [D7]High as the mountains deep as the [G]sea
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Old Man River (I've Come To Talk Again)}
 {meta: artist Reba McEntire}
 {meta: composer Ronny Scaife and Danny Hogan}
+{meta: x_source classic-country}
+{meta: x_source_file oldmanriverIvecometotalkagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Cool breeze on the [G7]river [C]ripples [G7]to the [Am]shore
@@ -31,3 +34,6 @@ Yes I [G7]know you're tired cause your [F]journey never [C]ends [Dm]
 [G7]He's just [C]like you he's [Em]movin' all the [Dm]time
 And I [F]think he's movin' [Fm]me out of his [C]mind
 {end_of_verse}
+
+
+

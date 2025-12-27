@@ -1,6 +1,9 @@
 {meta: title Bouquet of Roses Lyrics Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Steve Nelson and Bob Hillard}
+{meta: x_source classic-country}
+{meta: x_source_file bouquetofroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm sending you a big [G7]bouquet of [C]roses
@@ -33,3 +36,6 @@ When I'm still in love [G7]with you
 So I'm [C]sending you a big [G7]bouquet of [C]roses
 One for [G7]every time you broke my [C]heart
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Lilly Of The Valley}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file lillyofthevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I grew up in Alabama in [F]a valley I called [C]home
@@ -25,3 +28,6 @@ I guess [C]I've loved Lilly [G7]almost all my [C]life
 {start_of_verse: Verse 4}
 [F]All my [C]life
 {end_of_verse}
+
+
+

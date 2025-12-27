@@ -1,6 +1,9 @@
 {meta: title I Wanna Know I'm Goin' Home}
 {meta: artist David Allan Coe}
 {meta: composer Buzz Rabin}
+{meta: x_source classic-country}
+{meta: x_source_file iwannaknowimgoinhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I hope the years that [F]wrinkled up our [C]faces
@@ -43,3 +46,8 @@ And I'll admit that every [G7]now and then the thought does [C]cross my mind
 [F]I wanna [G7]flow back through the [C]southland [F]
 [C]I wanna [G7]know I'm going [C]home
 {end_of_verse}
+
+
+
+
+

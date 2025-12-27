@@ -1,6 +1,9 @@
 {meta: title God's Hands}
 {meta: artist The Oak Ridge Boys}
 {meta: composer David Reece}
+{meta: x_source classic-country}
+{meta: x_source_file Godshandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God's hands made the earth [G7]and [C]everything
@@ -22,3 +25,5 @@
 [C]His hands lifted me out of sin [C7]from all [C]sin
 [C]He has now blessed [G7]my way God's hands leadeth [C]me
 {end_of_verse}
+
+

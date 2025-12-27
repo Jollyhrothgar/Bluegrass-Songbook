@@ -1,6 +1,9 @@
 {meta: title Never No More Hard Time Blues}
 {meta: artist Bob Wills}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file nevernomorehardtimeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a barrel of flower lawd I've got a bucket of [C7]lard
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 5}
 [C][G7]Odel-o-led-a-olede
 {end_of_verse}
+
+
+
+

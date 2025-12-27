@@ -1,6 +1,9 @@
 {meta: title Second Fiddle}
 {meta: artist Hank Locklin}
 {meta: composer Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file secondfiddlelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seems I'm always right behind [G7]never first in line
@@ -29,3 +32,6 @@ Second fiddle never makes the [C]news
 Second fiddle [C7]never plays a [F]love song 
 [G7]Second fiddle only plays the [C]blues
 {end_of_verse}
+
+
+

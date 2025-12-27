@@ -1,6 +1,9 @@
 {meta: title Footprints In The Snow}
 {meta: artist Carl Smith}
 {meta: composer Rupert Jones}
+{meta: x_source classic-country}
+{meta: x_source_file footprintsinthesnowlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now some folks like the summertime when they can walk [C]about
@@ -43,3 +46,8 @@
 [C]Bless that happy day when Nellie lost her way
 [D7]I found her when the snow was on the [G]ground
 {end_of_verse}
+
+
+
+
+

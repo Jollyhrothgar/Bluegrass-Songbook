@@ -1,5 +1,8 @@
 {meta: title Waiting A Lifetime}
 {meta: artist Web Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file waitingalifetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Waiting a lifetime for [C]someone to [G]love 
@@ -25,3 +28,6 @@ That’s waiting for [D7]someone like [G]me
 {start_of_verse: Verse 4}
 Repeat
 {end_of_verse}
+
+
+

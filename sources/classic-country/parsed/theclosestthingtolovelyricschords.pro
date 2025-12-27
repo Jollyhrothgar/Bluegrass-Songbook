@@ -1,6 +1,9 @@
 {meta: title The Closest Thing To Love}
 {meta: artist Ray Price}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file theclosestthingtolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's not the kind you've read about
@@ -56,3 +59,10 @@ It's the [Dm]closest thing to [G7]love I've ever [C]known
 Yes [F]you're the closest thing to love
 [Dm]The closest thing to [G7]love I've ever [C]known
 {end_of_verse}
+
+
+
+
+
+
+

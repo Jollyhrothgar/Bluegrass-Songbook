@@ -1,6 +1,9 @@
 {meta: title Tonight We're Gonna Tear Down The Walls}
 {meta: artist Randy Travis}
 {meta: composer Randy Travis and Jim Sales}
+{meta: x_source classic-country}
+{meta: x_source_file tonightweregonnateardownthewallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight we're gonna tear down the walls
@@ -48,3 +51,9 @@ And [D7]tonight we're gonna [G7]tear down the [C]walls
 The [F]good times ain't over after [C]all[Am]
 And [D7]tonight we're gonna [G7]tear down the [C]walls
 {end_of_verse}
+
+
+
+
+
+

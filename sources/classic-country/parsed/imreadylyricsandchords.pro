@@ -1,6 +1,9 @@
 {meta: title I'm Ready}
 {meta: artist Fats Domino}
 {meta: composer Durand King}
+{meta: x_source classic-country}
+{meta: x_source_file imreadylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm ready I'm willing and I'm able to rock and roll all night
@@ -29,3 +32,6 @@ I'm [F]ready I'm willing and I'm able to rock and [C]roll all night
 [G7]Come on pretty baby we gonna rock 
 We gonna [F]roll until the [C]broad daylight
 {end_of_verse}
+
+
+

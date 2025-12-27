@@ -1,6 +1,9 @@
 {meta: title I’ll Trade Yours For Mine}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file illtradeyoursforminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve got some love and you’ve got some love 
@@ -30,3 +33,6 @@ If you’ll only swap I’ll close up my shop
 And I’ll trade yours for [G]mine
 Repeat
 {end_of_verse}
+
+
+

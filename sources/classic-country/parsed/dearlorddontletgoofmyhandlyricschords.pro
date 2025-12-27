@@ -1,6 +1,9 @@
 {meta: title Dear Lord Don't Let Go Of My Hand}
 {meta: artist Jimmie Davis}
 {meta: composer Marshall Pack and Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file dearlorddontletgoofmyhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my soul is dark with grief
@@ -41,3 +44,8 @@ And when I [C]stumble and fall
 Oh dear [F]God please give me [C]hope
 And dear Lord don't let [G7]go of my [C]hand
 {end_of_verse}
+
+
+
+
+

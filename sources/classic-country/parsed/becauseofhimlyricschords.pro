@@ -1,6 +1,9 @@
 {meta: title Because Of Him}
 {meta: artist The Oak Ridge Boys}
 {meta: composer J.D. Sumner}
+{meta: x_source classic-country}
+{meta: x_source_file becauseofhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All through this world ([C7]sadly I [F]roam)
@@ -33,3 +36,6 @@ His glory I'll [C]share (glo[F]ry I'll [C]share)
 I'll never give u-[C7]p though my way grows [F]dim
 I'll make it [C]through praise [G7]God because of [C]Him  [F]   [C]
 {end_of_verse}
+
+
+

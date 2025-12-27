@@ -1,6 +1,9 @@
 {meta: title If It's All The Same To You}
 {meta: artist Ray Price}
 {meta: composer Arthur Hancock}
+{meta: x_source classic-country}
+{meta: x_source_file ifitsallthesametoyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If it's [C]all the same to [D7]you I'll be [G]leaving in the [C]morning
@@ -37,3 +40,7 @@ I can't [Am]make it on my own alright it [C]seems the thing to [D7]do
 Let's sit [C]down and talk it [D7]over and you should [G]take it as a [C]warning
 Cause I'll be [Am]leaving in the [C]morning if it's [D7]all the same to [G]you
 {end_of_verse}
+
+
+
+

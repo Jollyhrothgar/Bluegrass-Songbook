@@ -1,6 +1,9 @@
 {meta: title An Old Bridge}
 {meta: artist Jean Shepard}
 {meta: composer Hank Mills}
+{meta: x_source classic-country}
+{meta: x_source_file anoldbridgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just like some breeze you've drifted back [F]again
@@ -23,3 +26,5 @@ Be[C]fore this hurting's gone you'll be [F]returning
 Yes I'm [C]just an old [F]bridge that you keep [C]burning
 [F]Yes I'm [C]just an old [F]bridge that you keep [C]burning
 {end_of_verse}
+
+

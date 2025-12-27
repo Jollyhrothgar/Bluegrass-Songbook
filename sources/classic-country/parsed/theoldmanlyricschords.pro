@@ -1,6 +1,9 @@
 {meta: title The Old Man}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file theoldmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Off he goes down the [G7]road 
@@ -42,3 +45,7 @@ Who finally is too far gone
 Will there [F]come a [C]day [F]when I can't [C]stand 
 [F]Am I gonna [C]live that [D7]long [G]
 {end_of_verse}
+
+
+
+

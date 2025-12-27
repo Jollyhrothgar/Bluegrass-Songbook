@@ -1,6 +1,9 @@
 {meta: title Precious Memories}
 {meta: artist Merle Haggard}
 {meta: composer J.B. Wright}
+{meta: x_source classic-country}
+{meta: x_source_file preciousmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Precious memories [F]unseen [C]angels
@@ -29,3 +32,6 @@ Precious memories how they linger
 In the stillness of [F]the [C]midnight
 Precious [G7]sacred scenes [C]unfold
 {end_of_verse}
+
+
+

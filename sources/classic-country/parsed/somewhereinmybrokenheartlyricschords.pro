@@ -1,6 +1,9 @@
 {meta: title Somewhere In My Broken Heart}
 {meta: artist Randy Travis}
 {meta: composer Richard Leigh and Billy Dean}
+{meta: x_source classic-country}
+{meta: x_source_file somewhereinmybrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've made up your [Bm]mind it was [C]time it was [D7]over 
@@ -43,3 +46,8 @@ Cause [C]I will keep my love unspoken
 And [Em]when you finally [Bm]do I think [C]you will [Bm]see it's 
 [C]Somewhere in my [Dm]broken [C]somewhere in my [D7]broken [G]heart
 {end_of_verse}
+
+
+
+
+

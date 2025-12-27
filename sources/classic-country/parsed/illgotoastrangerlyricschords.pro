@@ -1,6 +1,9 @@
 {meta: title I'll Go To A Stranger}
 {meta: artist Johnny Bush}
 {meta: composer Ray Pennington and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file illgotoastrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With someone else perhaps in time
@@ -24,3 +27,5 @@
 [C]And to stay away from you won't be an [F]easy thing to [C]do
 [F]But I'll go to [G7]a stranger before I'll come to [C]you
 {end_of_verse}
+
+

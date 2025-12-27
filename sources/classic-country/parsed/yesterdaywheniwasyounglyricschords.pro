@@ -1,6 +1,9 @@
 {meta: title Yesterday When I Was Young}
 {meta: artist Roy Clark}
 {meta: composer Herbert Kretzmer and Charles Aznavour}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdaywheniwasyounglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Yesterday when I was [D7]young
@@ -50,3 +53,9 @@ I feel the bitter [Em]taste of tears upon my [A]tongue
 The time has come for me to [Am]pay 
 For [Em]yesterday when I  [Am][B7]was  [Em]young
 {end_of_verse}
+
+
+
+
+
+

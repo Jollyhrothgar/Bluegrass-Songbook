@@ -1,6 +1,9 @@
 {meta: title You Will}
 {meta: artist Patty Loveless}
 {meta: composer Mary Ann Kennedy, Pam Rose, Randy Sharp}
+{meta: x_source classic-country}
+{meta: x_source_file youwilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you know and you will [F]it wasn't meant to be[C]
@@ -44,3 +47,9 @@ When you know and you will [F]it wasn't meant to be[C]
 When she walks and she will [F]you're gonna come to me[C]
 I know you will  [F]I know you will[C]
 {end_of_verse}
+
+
+
+
+
+

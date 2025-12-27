@@ -1,6 +1,9 @@
 {meta: title Every Time I Ask My Heart}
 {meta: artist Leroy Van Dyke}
 {meta: composer Larry Hovis}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeiaskmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Every time I ask my [G]heart
@@ -34,3 +37,7 @@ Though I know it isn't [C]smart
 And I feel it with each [D7]beat
 Every time I ask my [G]heart
 {end_of_verse}
+
+
+
+

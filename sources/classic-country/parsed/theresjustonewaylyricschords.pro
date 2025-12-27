@@ -1,6 +1,9 @@
 {meta: title There's Just One Way}
 {meta: artist Merle Haggard}
 {meta: composer Marty Haggard, Dana Haggard, Kenny Seratt}
+{meta: x_source classic-country}
+{meta: x_source_file theresjustonewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's just one way to make that trip to glory
@@ -43,3 +46,8 @@ God so loved the world that He gave His [G7]Son
 So [C]hold your head up high point your [F]finger to the sky
 There's just [C]one way to [G7]make that final [C]run[F]  [C]
 {end_of_verse}
+
+
+
+
+

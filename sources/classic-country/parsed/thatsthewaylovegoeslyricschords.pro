@@ -1,5 +1,8 @@
 {meta: title That's the Way Love Goes}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file thatsthewaylovegoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been throwing [G][Dm]horseshoes
@@ -28,3 +31,6 @@ That's the way love [Dm]goes [G]babe
 [C]Don't you know I love you [G]too
 And [D7]that's the way love [G]goes 
 {end_of_verse}
+
+
+

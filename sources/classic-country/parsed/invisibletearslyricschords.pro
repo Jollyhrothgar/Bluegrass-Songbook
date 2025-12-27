@@ -1,6 +1,9 @@
 {meta: title Invisible Tears}
 {meta: artist Sonny James}
 {meta: composer Ned Miller and Susan Miller}
+{meta: x_source classic-country}
+{meta: x_source_file invisibletearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Invisible tears [Am]in my eyes   incredible [D7]pain in my [G]heart
@@ -22,3 +25,5 @@
 [C]Impossible though things may get   improbable I will [G]forget
 [Em]Indelible [Am]memories of [D7]sweet loveable [G]you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Oh Maria}
 {meta: artist Johnny Duncan}
 {meta: composer Billy Sherrill and Ed Penney}
+{meta: x_source classic-country}
+{meta: x_source_file ohmarialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's not much to do when you're travelin' through Eldo[D7]rado
@@ -36,3 +39,7 @@ I don't think I can face all that satin and lace one more [G]night
 Well maybe I could and I would if I were a little [D7]younger
 But please let me rest for a while and then I'll be all [G]right
 {end_of_verse}
+
+
+
+

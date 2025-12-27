@@ -1,5 +1,8 @@
 {meta: title Yo Yo}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file yoyolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Up and down like a [F]Yo [C]Yo
@@ -43,3 +46,9 @@ You got me like you just wanna [F]let [C]go
 I’m going up and down like a [F]Yo [C]Yo   
 [G7]Yo [C]Yo
 {end_of_verse}
+
+
+
+
+
+

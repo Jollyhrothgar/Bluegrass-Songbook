@@ -1,6 +1,9 @@
 {meta: title We Tell Ourselves}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file wetellourselveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I oughta know the look in another's [G]eyes 
@@ -46,3 +49,7 @@ The things a heart could tell a [D]mind
 Somehow we [E7]sell ourselves on love 
 I just [G]don't think I'll [A7]believe my heart this [D]time
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Absence}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file absencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Silence is simply the [C]absence of sound
@@ -28,3 +31,6 @@ My life is [G7]made up of the [C]absence of [Am]nearness
 [G]I define anyone to [C]define me your way
 My [D7]heart can't go on this a-[C]w-[D7]a-y[G]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Waltzed Yourself Right Into My Life}
 {meta: artist Gene Watson}
 {meta: composer Ron Moore}
+{meta: x_source classic-country}
+{meta: x_source_file youwaltzedyourselfrightintomylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The first time I touched you as we danced [F]together
@@ -36,3 +39,7 @@
 [F]As we held each [G7]other and [C]danced through the [F]night
 [Dm]You waltzed [G7]yourself [Dm]right [G7]into my [C]life
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Tired Of Crying}
 {meta: artist Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file tiredofcryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Oh oh [G]baby [C]I'm tired of cryin' over [G]you
@@ -21,3 +24,5 @@ No matter what you do you gotta reap just what you sow
 Yes [C]baby that's the way it's gonna [G]be
 As I [D7]cried for you now it's your turn to cry for [G]me
 {end_of_verse}
+
+

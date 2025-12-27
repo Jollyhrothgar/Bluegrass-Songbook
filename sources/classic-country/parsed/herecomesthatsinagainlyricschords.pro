@@ -1,6 +1,9 @@
 {meta: title Here Comes That Sin Again}
 {meta: artist Carl Smith}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file herecomesthatsinagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here comes that sin again
@@ -41,3 +44,7 @@ Conscience [D7]you've got work do
 I'm gonna make it rough on you
 Here comes that [G]sin again
 {end_of_verse}
+
+
+
+

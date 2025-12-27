@@ -1,6 +1,9 @@
 {meta: title I'm Blue I'm Lonesome}
 {meta: artist Bill Monroe}
 {meta: composer Bill Monroe and Hank Williams, Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file imblueimlonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The lonesome sigh of a [F]train going [C]by 
@@ -29,3 +32,6 @@ I'm blue I'm [G7]lonesome [C]too
 The [C]lonesome sigh of a [F]train going [C]by 
 Makes me want to [G7]stop and [C]cry 
 {end_of_verse}
+
+
+

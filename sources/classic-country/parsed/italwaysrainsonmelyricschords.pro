@@ -1,6 +1,9 @@
 {meta: title It Always Rains On Me}
 {meta: artist Wynn Stewart}
 {meta: composer Dave Kirby and Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file italwaysrainsonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't think you've looked back once since you said [D7]goodbye
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [G7]Each day the sun shines down on you it [D7]always [G7]rains on [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Say Hello}
 {meta: artist Vince Gill}
 {meta: composer Pete Wasner and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file sayhellolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walk down these lonely [C]streets and try to [D7]find you
@@ -33,3 +36,7 @@ And [D7]whisper in my ear I love you [G]so
 {start_of_verse: Verse 5}
 I'd give [D7]anything to hear you say [G]hello
 {end_of_verse}
+
+
+
+

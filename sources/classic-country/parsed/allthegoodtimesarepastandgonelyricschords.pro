@@ -1,6 +1,9 @@
 {meta: title All The Good Times Are Past And Gone}
 {meta: artist Ralph Stanley}
 {meta: composer Jerry Walter}
+{meta: x_source classic-country}
+{meta: x_source_file allthegoodtimesarepastandgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]See that east bound [C]passenger [G]train
@@ -43,3 +46,8 @@ All the good times are [D7]o'er
 [G]All the good times have [C]past and [G]gone
 Little darling don't [D7]you weep no [G]more
 {end_of_verse}
+
+
+
+
+

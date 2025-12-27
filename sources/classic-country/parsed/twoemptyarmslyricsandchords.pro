@@ -1,6 +1,9 @@
 {meta: title Two Empty Arms}
 {meta: artist Charlie Walker}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file twoemptyarmslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The one that I love just [D7]walked right out on me
@@ -29,3 +32,6 @@ Now I've got [D7]two empty arms with [G]no one to hold
 A heart with no sweethearts to [G7]love and keep it [C]warm
 Oh please come back to [G]me and my [D7]two empty [G]arms
 {end_of_verse}
+
+
+

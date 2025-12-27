@@ -1,5 +1,8 @@
 {meta: title Lonesome Is The Mother Of Soul}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomeisthemotherofsoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say I sing my [F]songs 
@@ -38,3 +41,7 @@ And lonesome [F]is the mother of [C]soul
 {start_of_verse: Verse 4}
 Lonesome [F]is the mother of [C]soul
 {end_of_verse}
+
+
+
+

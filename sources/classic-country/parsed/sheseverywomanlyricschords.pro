@@ -1,6 +1,9 @@
 {meta: title She's Every Woman}
 {meta: artist Garth Brooks}
 {meta: composer Victoria Shaw and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file sheseverywomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]She's sun and [C]rain she's fire and [F]ice 
@@ -44,3 +47,8 @@ Lord [C]she's [F]every lover [G7]that I've ever [Am]had
 {start_of_verse: Verse 5}
 And she's [Dm]every lover [G7]that I've never [C]had
 {end_of_verse}
+
+
+
+
+

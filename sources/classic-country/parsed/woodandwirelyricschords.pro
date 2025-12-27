@@ -1,6 +1,9 @@
 {meta: title Wood And Wire}
 {meta: artist George Jones}
 {meta: composer Kenny Beard and Michael Mahler}
+{meta: x_source classic-country}
+{meta: x_source_file woodandwirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Find a dream  put off for the families needs 
@@ -50,3 +53,9 @@ When he grabs hold of that [G7]wood and [C]wire
 Late at [Am]night [F]he fans that [C]fire 
 When he grabs hold of that [G7]wood and [C]wire
 {end_of_verse}
+
+
+
+
+
+

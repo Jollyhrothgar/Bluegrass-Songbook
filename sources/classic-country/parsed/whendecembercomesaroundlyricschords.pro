@@ -1,6 +1,9 @@
 {meta: title When December Comes Around}
 {meta: artist Doug Stone}
 {meta: composer Randy Boudreaux and Stacey Slate}
+{meta: x_source classic-country}
+{meta: x_source_file whendecembercomesaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The weather man this morning said a [Am]cold front's moving in
@@ -45,3 +48,8 @@ It's a [F]lonely game I play I get [C]lost in yesterday
 And as [Dm]crazy as it sounds 
 I [F]only miss you when [G7]December comes [C]around
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Now That The Feeling's Gone}
 {meta: artist Billy Crash Craddock}
 {meta: composer Michael Buckins and Randy McCormick}
+{meta: x_source classic-country}
+{meta: x_source_file nowthatthefeelingsgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never [E7]thought I needed [Am]love[C]
@@ -45,3 +48,7 @@ I [G7]really need you [Em]how can I go on
 [A7]Living without your [Dm]love in my life
 [G7]Now that the feelings [C]gone
 {end_of_verse}
+
+
+
+

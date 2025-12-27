@@ -1,6 +1,9 @@
 {meta: title Almost Can't}
 {meta: artist Roy Drusky}
 {meta: composer Vic McAlpin and Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file almostcantlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I keep hopin' in another I'll find [C]you again
@@ -33,3 +36,7 @@ But [D7]almost can't take the heartache heart ache out of [G]me
 {start_of_verse: Verse 5}
 No [D7]almost can't take the heartache heart ache out of [G]me
 {end_of_verse}
+
+
+
+

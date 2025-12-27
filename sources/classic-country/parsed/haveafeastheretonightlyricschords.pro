@@ -1,6 +1,9 @@
 {meta: title Have A Feast Here Tonight}
 {meta: artist Bill Monroe}
 {meta: composer Charlie Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file haveafeastheretonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a rabbit in the log and I ain't got my dog
@@ -43,3 +46,8 @@ That's where I'll rest my weary [G7]bones
 A [C]little way's ahead there's a farmer's shed
 That's where I'll [G7]rest my weary [C]bones
 {end_of_verse}
+
+
+
+
+

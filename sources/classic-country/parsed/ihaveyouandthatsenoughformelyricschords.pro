@@ -1,6 +1,9 @@
 {meta: title I Have You And That's Enough For Me}
 {meta: artist Hank Snow}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file ihaveyouandthatsenoughformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When lights are low and we're together
@@ -43,3 +46,7 @@ I [A7]have you and [D7]that's enough for [G]me
 {start_of_verse: Verse 4}
 I [A7]have you and [D7]that's enough for [G]me
 {end_of_verse}
+
+
+
+

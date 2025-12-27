@@ -1,6 +1,9 @@
 {meta: title Turn This Thing Around}
 {meta: artist Keith Whitley}
 {meta: composer Gary Harrison and Gene Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file turnthisthingaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well one thing led to another that led to your taxi cab
@@ -35,3 +38,7 @@ Tempo[C]rarily insane but I see so clearly [A7]now
 [D7]So if you don't mind take me back so I can't [C]turn this thing [G]around
 [D7]So if you don't mind take me back so I can't [C]turn this thing [G]around
 {end_of_verse}
+
+
+
+

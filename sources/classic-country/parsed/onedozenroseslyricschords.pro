@@ -1,5 +1,8 @@
 {meta: title One Dozen Roses}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file onedozenroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Give me one dozen roses put my heart in beside them
@@ -28,3 +31,7 @@ Give me one dozen roses put my heart in beside [C]them
 {start_of_verse: Verse 5}
 [G7]Send them to the one I [C]love
 {end_of_verse}
+
+
+
+

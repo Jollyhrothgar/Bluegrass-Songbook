@@ -1,6 +1,9 @@
 {meta: title The Girl I Used To Run Around On}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file thegirliusedtorunaroundonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nobody has to tell her that [G7]I've changed
@@ -21,3 +24,5 @@ Now I hold her every evening and I [F]miss her all day [D7]long
 [F]I'm building my world [C]around the girl [G7]I used to run a[C]round on
 [F]I'm building my world [C]around the girl [G7]I used to run a[C]round on
 {end_of_verse}
+
+

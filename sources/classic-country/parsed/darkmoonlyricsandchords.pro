@@ -1,6 +1,9 @@
 {meta: title Dark Moon}
 {meta: artist Gale Storm}
 {meta: composer Ned Miller}
+{meta: x_source classic-country}
+{meta: x_source_file darkmoonlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([G]Dark moon dark [D7]moon) 
@@ -36,3 +39,6 @@ Dark moon (dark moon) what is the cause your light withdraws
 Is it because is it because I've lost my [G]love 
 (Dark moon lost love)
 {end_of_verse}
+
+
+

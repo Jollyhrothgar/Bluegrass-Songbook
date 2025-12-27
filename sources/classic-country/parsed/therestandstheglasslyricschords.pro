@@ -1,6 +1,9 @@
 {meta: title There Stands The Glass}
 {meta: artist Webb Pierce}
 {meta: composer Russ Hull, Mary Jean Shurtz, Audrey Grisham}
+{meta: x_source classic-country}
+{meta: x_source_file therestandstheglasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There stands the glass 
@@ -43,3 +46,8 @@ I [D7]wonder if you think of me
 [F]Till my troubles grow [C]dim
 [G7]It's my first one [C]today
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let's Talk The Whole Thing Over}
 {meta: artist Ricky Nelson}
 {meta: composer Mike McCaffery}
+{meta: x_source classic-country}
+{meta: x_source_file letstalkthewholethingoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said that when we parted 
@@ -38,3 +41,6 @@ I'm [F]still in love [G7]with
 [C]I'll always be in [F]love [G7]with 
 [C]I'm still in [F]love [G7]with [C]you[F]  [G7]   [C]
 {end_of_verse}
+
+
+

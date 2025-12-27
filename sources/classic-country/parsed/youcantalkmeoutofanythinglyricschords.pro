@@ -1,5 +1,8 @@
 {meta: title You Can Talk Me Out Of Anything}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file youcantalkmeoutofanythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can [F]talk me out of [C]anything
@@ -21,3 +24,5 @@ Than [Dm]anything this world has ever [G7]knew
 [C]Take my [F]heart my soul my [C]kisses too
 You can [G7]talk me out of anything but [C]you
 {end_of_verse}
+
+

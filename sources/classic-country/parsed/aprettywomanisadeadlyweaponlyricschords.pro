@@ -1,6 +1,9 @@
 {meta: title A Pretty Woman Is A Deadly Weapon}
 {meta: artist Ferlin Husky}
 {meta: composer George H. Campbell Jr. and Marvin J. Moore}
+{meta: x_source classic-country}
+{meta: x_source_file aprettywomanisadeadlyweaponlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wouldn't kick a cactus cactus plants have [D7]thorns
@@ -40,3 +43,8 @@ And there’s [D7]still a lot of life in [G]me
 {start_of_verse: Verse 6}
 And there’s [D7]still a lot of life in [G]me
 {end_of_verse}
+
+
+
+
+

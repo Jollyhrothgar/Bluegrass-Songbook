@@ -1,5 +1,8 @@
 {meta: title Wine}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file winelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wine  pretty red wine [F]pretty red [C]wine
@@ -34,3 +37,8 @@ I [F]lost all my courage [C]lost all my pride
 [C]Wine  pretty red wine [F]pretty red [C]wine
 [F]Pretty red [C]wine [F]pretty red [C]wine
 {end_of_verse}
+
+
+
+
+

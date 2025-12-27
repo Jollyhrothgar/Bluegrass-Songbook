@@ -1,6 +1,9 @@
 {meta: title Billy Boy}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Huey Piano Smith and Jerry Lee Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file billyboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can you really rock and roll Billy Boy Billy Boy
@@ -27,3 +30,6 @@ Well can you get that rocking feeling Billy Boy Billy Boy
 [G7]I'm a young thing and I can't leave my [C]mother
 [G7]I'm a young cat and I can't leave my [C]mother
 {end_of_verse}
+
+
+

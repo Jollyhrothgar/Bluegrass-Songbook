@@ -1,6 +1,9 @@
 {meta: title Her Name Is}
 {meta: artist George Jones}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file hernameislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I love her and just can't live without [C]her
@@ -38,3 +41,8 @@
 {start_of_verse: Verse 5}
 Her name is
 {end_of_verse}
+
+
+
+
+

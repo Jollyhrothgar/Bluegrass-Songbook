@@ -1,6 +1,9 @@
 {meta: title Ring On Her Finger Time On Her Hands}
 {meta: artist Lee Greenwood}
 {meta: composer Don Goodman, Mary Ann Kennedy, Pamela Rose}
+{meta: x_source classic-country}
+{meta: x_source_file ringonherfingertimeonherhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She stood before God [F]her family [C]and [F]friends
@@ -33,3 +36,6 @@
 [G7]The gold turned cold in her wedding band
 [F]It's just a ring on your finger when there's [G7]time on your [C]hands
 {end_of_verse}
+
+
+

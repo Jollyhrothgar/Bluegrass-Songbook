@@ -1,6 +1,9 @@
 {meta: title In My World You Don't Belong}
 {meta: artist Charley Pride}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file inmyworldyoudontbelonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday you [G7]smiled and my [F]world stopped its [C]turnin'
@@ -30,3 +33,6 @@ Though in my world [G7]you don't [C]belong
 Yes [F]darlin' I will [C]love you 
 Though in my world [G7]you don't [C]belong
 {end_of_verse}
+
+
+

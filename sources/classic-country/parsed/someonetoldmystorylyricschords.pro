@@ -1,5 +1,8 @@
 {meta: title Someone Told My Story}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file someonetoldmystorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I played the brand new record [C]on the [G]jukebox
@@ -32,3 +35,7 @@ When someone told my [D7]story in a [G]song
 {start_of_verse: Verse 5}
 When someone told my [D7]story in a [G]song
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sal's Got A Sugar Lip}
 {meta: artist Johnny Horton}
 {meta: composer Jimmie Driftwood}
+{meta: x_source classic-country}
+{meta: x_source_file salsgotasugarliplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lasses in the cane and [F]syrup in the corn
@@ -50,3 +53,9 @@ Sal's got a sugar lip ([G7]so they [C]say)
 Sal's got a sugar lip (so they say)
 Sweeten her feller [G7]with every [C]day
 {end_of_verse}
+
+
+
+
+
+

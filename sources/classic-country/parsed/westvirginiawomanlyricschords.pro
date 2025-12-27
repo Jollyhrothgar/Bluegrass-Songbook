@@ -1,6 +1,9 @@
 {meta: title West Virginia Woman}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare and Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file westvirginiawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was New York City bound when I left my old [F]hometown
@@ -23,3 +26,5 @@ I [F]met a gal from West Virginia [C]that woman sure enough sent me [G7]home
 With my hat [C]in my hand [G7]a humming some old worn out [C]song 
 Like a man whose [F]mind is gone uh [G7][C]huh [C]huh
 {end_of_verse}
+
+

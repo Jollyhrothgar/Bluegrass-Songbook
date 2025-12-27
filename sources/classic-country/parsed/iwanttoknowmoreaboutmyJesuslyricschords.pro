@@ -1,5 +1,8 @@
 {meta: title I Want To Know More About My Jesus}
 {meta: artist Country Gospel}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttoknowmoreaboutmyJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While traveling through [F]this [C]world of sorrow
@@ -34,3 +37,8 @@ I'm coming back the Lord did [G7]say
 If on His [C]promise [F]you've [C]depended
 On wings of love [G7]you'll soar [C]away
 {end_of_verse}
+
+
+
+
+

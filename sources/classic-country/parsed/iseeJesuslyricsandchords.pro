@@ -1,6 +1,9 @@
 {meta: title I See Jesus}
 {meta: artist Hank Snow}
 {meta: composer Charles Wycuff}
+{meta: x_source classic-country}
+{meta: x_source_file iseeJesuslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([C]I see [G]Jesus [A7]standing [D7]waiting for [G]me)
@@ -44,3 +47,9 @@ Once a man named Steven preached about the Lord
 {start_of_verse: Verse 6}
 (I see You [A7]standing [D7]waiting for [G]me)
 {end_of_verse}
+
+
+
+
+
+

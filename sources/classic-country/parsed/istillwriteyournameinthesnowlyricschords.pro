@@ -1,6 +1,9 @@
 {meta: title I Still Write Your Name In The Snow}
 {meta: artist Chet Atkins}
 {meta: composer Billy Edd Wheeler and Chet Atkins}
+{meta: x_source classic-country}
+{meta: x_source_file istillwriteyournameinthesnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm almost sorry now I [C]caught you messin' [G]round 
@@ -41,3 +44,8 @@ And [G]wish you could write my [D7]name in the [G]snow
 Sonofagun I'm [A7]tired of livin' this [D7]way 
 I'm writin' it [G]down
 {end_of_verse}
+
+
+
+
+

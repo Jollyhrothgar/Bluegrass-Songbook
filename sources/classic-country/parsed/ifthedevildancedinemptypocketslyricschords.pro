@@ -1,6 +1,9 @@
 {meta: title If The Devil Danced In Empty Pockets}
 {meta: artist Joe Diffie}
 {meta: composer Kim Williams and Ken Spooner}
+{meta: x_source classic-country}
+{meta: x_source_file ifthedevildancedinemptypocketslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Diab[C]lo motors had a hell of a sale downtown yester[G]day
@@ -41,3 +44,8 @@ With a [D7]nine foot grand a ten piece band and a [G]twelve girl chorus [D7]line
 I'd [G]raise some loot in a three piece suit give 'em [A7]one dance for a dime
 If the [C]devil danced in [G]empty [E7]pockets [A7]he'd have a [D7]ball in [G]mine
 {end_of_verse}
+
+
+
+
+

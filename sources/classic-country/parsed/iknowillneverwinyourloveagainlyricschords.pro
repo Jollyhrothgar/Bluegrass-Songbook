@@ -1,6 +1,9 @@
 {meta: title I Know I'll Never Win Your Love Again}
 {meta: artist Ray Price}
 {meta: composer Bobby Helms and Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file iknowillneverwinyourloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Day and night I [C7]worry over [F]you
@@ -29,3 +32,6 @@
 [C7]My weary soul will find it's journey's [F]end
 [C]I know I'll [G7]never  win your [C]love
 {end_of_verse}
+
+
+

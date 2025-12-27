@@ -1,5 +1,8 @@
 {meta: title You Would Do The Same For Me}
 {meta: artist Ricky Van Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file youwoulddothesameformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please  there's no [F]need  for any thank [C]yous
@@ -27,3 +30,6 @@ Knowing [C]you  would [G7]do the same for [C]me
 I'll say [C]you would [G7]do the same for [C]me
 I'll [F]just say [C]you would [G7]do the same for [C]me
 {end_of_verse}
+
+
+

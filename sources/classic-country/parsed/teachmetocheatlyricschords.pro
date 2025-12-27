@@ -1,6 +1,9 @@
 {meta: title Teach Me To Cheat}
 {meta: artist The Kendalls}
 {meta: composer J.L. Wallace, Ken Bell, Terry Skinner}
+{meta: x_source classic-country}
+{meta: x_source_file teachmetocheatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Teach me to cheat [F]show me how you do [C]it
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [F]Make me a honky [C]tonk angel [G7]teach me to [C]cheat
 {end_of_verse}
+
+
+
+
+

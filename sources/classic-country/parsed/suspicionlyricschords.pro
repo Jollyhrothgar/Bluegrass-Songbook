@@ -1,6 +1,9 @@
 {meta: title Suspicion}
 {meta: artist Terry Stafford}
 {meta: composer Doc Pomus, Jerome Doc Pomus, Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file suspicionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time you kiss me I’m still not certain that you love [Dm]me
@@ -40,3 +43,8 @@
 [Am]Suspicion keeps us [C]apart
 [Am]Suspicion why torture [C][G7]me
 {end_of_verse}
+
+
+
+
+

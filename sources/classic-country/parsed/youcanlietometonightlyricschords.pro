@@ -1,6 +1,9 @@
 {meta: title You Can Lie To Me Tonight}
 {meta: artist Mickey Gilley}
 {meta: composer Kerry Chater and Tom Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file youcanlietometonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 You Can Lie To Me Tonight
@@ -53,3 +56,10 @@ If it [A7]makes it more [Dm]alright
 If it [A7]makes it more [Dm]alright
 [G7]Honey lie to me [C]tonight
 {end_of_verse}
+
+
+
+
+
+
+

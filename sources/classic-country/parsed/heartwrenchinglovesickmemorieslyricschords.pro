@@ -1,6 +1,9 @@
 {meta: title Heart Wrenching Lovesick Memories}
 {meta: artist Rhonda Vincent}
 {meta: composer Tonya Lowman}
+{meta: x_source classic-country}
+{meta: x_source_file heartwrenchinglovesickmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Lord knows I've tried to for[F]get you
@@ -40,3 +43,8 @@ I've [F]prayed in every way to face [C]tomorrow
 {start_of_verse: Verse 4}
 [F]And these [C]heart wrenching [G7]lovesick memo[C]ries
 {end_of_verse}
+
+
+
+
+

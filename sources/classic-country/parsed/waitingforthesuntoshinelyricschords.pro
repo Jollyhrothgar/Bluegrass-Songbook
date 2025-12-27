@@ -1,6 +1,9 @@
 {meta: title Waiting For The Sun To Shine}
 {meta: artist Ricky Skaggs}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file waitingforthesuntoshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I've been standing underneath this old dark cloud now
@@ -41,3 +44,8 @@ Oh I've been standing underneath this old dark cloud now
 Just [Dm]waiting for the sun to [G7]shine
 [Dm]Waiting for the sun [G7]to shine in my [C]heart again
 {end_of_verse}
+
+
+
+
+

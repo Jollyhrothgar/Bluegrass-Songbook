@@ -1,6 +1,9 @@
 {meta: title If You Loved Me}
 {meta: artist Tracy Lawrence}
 {meta: composer Paul Nelson and Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoulovedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see the way [F] he [G7]doesn't treat you right 
@@ -40,3 +43,8 @@ If you [F]loved me [C] if you [Dm]loved me[G7]  a[C]gain
 {start_of_verse: Verse 5}
 If you [Dm]loved[C]  [F]  [G7]  me a[C]gain
 {end_of_verse}
+
+
+
+
+

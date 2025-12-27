@@ -1,6 +1,9 @@
 {meta: title Crazy Over You}
 {meta: artist Hank Locklin}
 {meta: composer William J. Townsel and Walter King}
+{meta: x_source classic-country}
+{meta: x_source_file crazyoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While I'm down in Texas I [F]thought I wouldn't [C]stay
@@ -29,3 +32,6 @@ Sweet temptation haunts me [F]when I steal a [C]kiss
 [F]She's my little baby [G7]her eyes are big and [C]blue
 [F]I'm going [C]crazy  [G7]crazy over [C]you
 {end_of_verse}
+
+
+

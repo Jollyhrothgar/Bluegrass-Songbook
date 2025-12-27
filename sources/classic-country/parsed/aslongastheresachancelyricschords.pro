@@ -1,5 +1,8 @@
 {meta: title As Long As There's A Chance}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file aslongastheresachancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well here I sit I'm [G7]all alone and [C]blue
@@ -29,3 +32,6 @@
 [C]As long as there's a [G7]chance I'll wait for [C]you
 [G7]As long as there's a chance I'll wait for [C]you
 {end_of_verse}
+
+
+

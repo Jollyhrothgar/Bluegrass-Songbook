@@ -1,6 +1,9 @@
 {meta: title Reflex Reaction}
 {meta: artist Red Sovine}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file reflexreactionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you'll just keep busy you won't wonder if he
@@ -51,3 +54,10 @@ With the girl you can't score with
 {start_of_verse: Verse 8}
 [G7]Then reflex reaction sets [C]in
 {end_of_verse}
+
+
+
+
+
+
+

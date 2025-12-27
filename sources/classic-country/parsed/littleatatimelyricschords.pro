@@ -1,6 +1,9 @@
 {meta: title Little At A Time}
 {meta: artist Lee Greenwood}
 {meta: composer Mark Nesler}
+{meta: x_source classic-country}
+{meta: x_source_file littleatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello it's me again the one who [Dm]loves you [A7]
@@ -50,3 +53,10 @@ I can't [C]leave for good like I [G7]thought I could
 {start_of_verse: Verse 8}
 I’d like to [Dm]leave you oh [G7]a little at a [C]time
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Something In My Heart}
 {meta: artist Ricky Skaggs}
 {meta: composer Wayland Patton}
+{meta: x_source classic-country}
+{meta: x_source_file somethinginmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I thought I was over you and [G7]that my heart was free
@@ -26,3 +29,6 @@ So here I am all brokenhearted all because of [C]you
 {start_of_verse: Verse 4}
 [G7]Something in my heart sure makes it hard to love [C]again
 {end_of_verse}
+
+
+

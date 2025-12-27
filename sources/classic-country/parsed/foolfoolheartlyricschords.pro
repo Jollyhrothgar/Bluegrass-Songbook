@@ -1,6 +1,9 @@
 {meta: title Fool Fool Heart}
 {meta: artist Don Williams}
 {meta: composer Jennifer Kimball}
+{meta: x_source classic-country}
+{meta: x_source_file foolfoolheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Fool [D7]fool [C]heart [D]   [G]what [D7]have you [C]done[D7]  
@@ -34,3 +37,6 @@ That you were [C]through being [D7]lost in love  my [G]fool [D7]fool [C]heart[D7
 [Em]Still the [D7]losing is the [C]hardest [G]part my [C]fool [D7]fool [G]heart  
 [Em]Still the [D7]losing is the [C]hardest [G]part my [C]fool [D7]fool [G]heart
 {end_of_verse}
+
+
+

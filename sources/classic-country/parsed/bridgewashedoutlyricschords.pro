@@ -1,6 +1,9 @@
 {meta: title Bridge Washed Out}
 {meta: artist George Jones}
 {meta: composer Slim Williamson}
+{meta: x_source classic-country}
+{meta: x_source_file bridgewashedoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The bridge washed out and I can't [C]swim
@@ -44,3 +47,8 @@ Well when I woke up this mornin' the rain was a-pourin' down
 [C]The bridge washed out and I can't swim
 [G]And my baby's on the [D7]other [G]side
 {end_of_verse}
+
+
+
+
+

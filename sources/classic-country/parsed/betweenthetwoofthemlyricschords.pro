@@ -1,6 +1,9 @@
 {meta: title Between The Two Of Them}
 {meta: artist Tanya Tucker}
 {meta: composer Mickey Cates}
+{meta: x_source classic-country}
+{meta: x_source_file betweenthetwoofthemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They married back in [C]forty-two  [D7]they were young and [G]love was new
@@ -28,3 +31,6 @@ And [Em]the pleasures of just [C]growing up  [D7]between the two of [G]them
 Oh I miss them [C]both so much  [D7]his crooked smile her [G]gentle touch
 And [Em]the pleasures of just [C]growing up  [D7]between the two of [G]them
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Wintering Kind}
 {meta: artist Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file thewinteringkindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tell me why the [G7]seasons of the year
@@ -32,3 +35,7 @@ Like the birds southern flight [F]over the snow
 {start_of_verse: Verse 5}
 [F]Is your love the wintering [C]kind
 {end_of_verse}
+
+
+
+

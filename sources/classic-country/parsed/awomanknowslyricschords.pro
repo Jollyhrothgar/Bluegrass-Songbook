@@ -1,6 +1,9 @@
 {meta: title A Woman Knows}
 {meta: artist John Anderson}
 {meta: composer John Rich, Vicky McGehee, Julie Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file awomanknowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's a good man and he's [F]always been [G7]right there by her [C]side
@@ -47,3 +50,9 @@ She don't let it [F]show [G7]but a woman [C]knows
 {start_of_verse: Verse 6}
 [G7]No she don't let it [F]show [G7]but a woman [C]knows
 {end_of_verse}
+
+
+
+
+
+

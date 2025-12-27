@@ -1,6 +1,9 @@
 {meta: title I Know You're Going Away Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file iknowyouregoingawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know the heartaches are [F]com[C]ing 
@@ -41,3 +44,8 @@ I know the heartaches are [F]coming
 I know the tears will start [F]fall[C]ing 
 Cause I know you're [G7]goin' [F]away[C]
 {end_of_verse}
+
+
+
+
+

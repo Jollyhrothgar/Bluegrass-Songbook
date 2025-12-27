@@ -1,6 +1,9 @@
 {meta: title I'm Left Cause She Was Right}
 {meta: artist Cal Smith}
 {meta: composer Glen Davis and Ralph Davis}
+{meta: x_source classic-country}
+{meta: x_source_file imleftcauseshewasrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From the window of this house I see the sun [C7]is almost [F]down
@@ -17,3 +20,4 @@ I [F]picked the gun up from the shelf and looked with my eyes [C]blurred
 [C]So I'll just take another drink and try to make [C7]it through the [F]night
 I'm a lonely man but [C]that's just how I'm left [G7]cause she was [C]right
 {end_of_verse}
+

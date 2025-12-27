@@ -1,5 +1,8 @@
 {meta: title Hot Rod Sleigh}
 {meta: artist Toby Keith}
+{meta: x_source classic-country}
+{meta: x_source_file hotrodsleighlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw one of Santa's helpers at the grocery store today
@@ -40,3 +43,6 @@ He's got a king-size toy bin locks in all the latches
 [F]I ain't seen it for myself but I heard [A7][C]say
 [D7]Santa [C]Claus has got [F]a hot [G7]rod [C]sleigh
 {end_of_verse}
+
+
+

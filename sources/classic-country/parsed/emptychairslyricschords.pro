@@ -1,6 +1,9 @@
 {meta: title Empty Chairs}
 {meta: artist Ray Price}
 {meta: composer Don McLean}
+{meta: x_source classic-country}
+{meta: x_source_file emptychairslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I feel a trembling tingle of a [Dm]sleepless night
@@ -50,3 +53,9 @@ Morning comes and morning goes [Dm]with no regret
 [Am]That although you [Dm]said you'd go
 Until you did [G7]I never thought you [C]would
 {end_of_verse}
+
+
+
+
+
+

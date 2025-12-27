@@ -1,5 +1,8 @@
 {meta: title Darling Alalee}
 {meta: artist The Country Gentlemen}
+{meta: x_source classic-country}
+{meta: x_source_file darlingalaleelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweet Alalee so [C]dear to me
@@ -42,3 +45,8 @@ There's where I long to [D7]be
 [G]Among the fields of [C]yellow corn
 With my [A7]darling [D7]Ala[G]lee
 {end_of_verse}
+
+
+
+
+

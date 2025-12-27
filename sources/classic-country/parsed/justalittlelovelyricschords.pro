@@ -1,6 +1,9 @@
 {meta: title Just A Little Love}
 {meta: artist Reba McEntire}
 {meta: composer Dennis Morgan and Steve Davis}
+{meta: x_source classic-country}
+{meta: x_source_file justalittlelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When our [C]check bounces at the store 
@@ -57,3 +60,10 @@ With just a little [C]love [G7]you have changed [Am]me
 And you can do [G7]miracles 
 With just a little [C]love
 {end_of_verse}
+
+
+
+
+
+
+

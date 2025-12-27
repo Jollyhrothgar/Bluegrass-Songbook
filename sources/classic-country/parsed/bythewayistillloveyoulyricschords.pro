@@ -1,6 +1,9 @@
 {meta: title By The Way (I Still Love You)}
 {meta: artist George Morgan}
 {meta: composer T. Texas Tyler}
+{meta: x_source classic-country}
+{meta: x_source_file bythewayistillloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All the suffering is almost over
@@ -33,3 +36,7 @@ And by the way [D7]I still love [G]you
 {start_of_verse: Verse 5}
 And by the way [D7]I still love [G]you
 {end_of_verse}
+
+
+
+

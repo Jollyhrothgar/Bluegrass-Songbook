@@ -1,6 +1,9 @@
 {meta: title Memories Of Us}
 {meta: artist George Jones}
 {meta: composer Dave Kirby and Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file memoriesofuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The old man [D7]who sold his [G]apples [C]isn't there [A7]anymore
@@ -25,3 +28,5 @@ For yesterdays [C]are something [A7]tomorrows cannot [D7]change
 [C]And every[D7]thing [G]it's still the [C]same [G]in my memo[D7]ries of [G]us
 My [D7]memory of [C]us[G]
 {end_of_verse}
+
+

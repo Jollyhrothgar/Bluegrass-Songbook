@@ -1,6 +1,9 @@
 {meta: title Before I Met You}
 {meta: artist Carl Smith}
 {meta: composer Charles L. Seitz, Joe Lewis, Elmar Rader}
+{meta: x_source classic-country}
+{meta: x_source_file beforeimetyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought I had seen pretty [F]girls in my [C]time 
@@ -31,3 +34,6 @@ I[C] thought I'd been kissed and
 I [F]thought I'd been [C]loved
 But that was [G7]before I met [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Little Stranger (In A Manger)}
 {meta: artist Marty Robbins}
 {meta: composer Tommie Connor}
+{meta: x_source classic-country}
+{meta: x_source_file littlestrangerinamangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Praise and glory to the [G]highest little [C]stranger here on [G][D7]earth
@@ -24,3 +27,6 @@
 [C]Choirs of angels [G]are singing this [D7]night of Your [G]birth
 [C]Praise and glory [G]to the highest little [C]stranger here on [G][D7]earth
 {end_of_verse}
+
+
+

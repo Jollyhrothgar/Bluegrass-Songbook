@@ -1,6 +1,9 @@
 {meta: title The Funeral}
 {meta: artist Hank Williams}
 {meta: composer Eddie Brackett, Hank Williams, Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file thefunerallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was walking in Savannah [D7]past a [G]church decayed and dim[C]
@@ -52,3 +55,9 @@ And don't go to criticizing the one what knows the [G]best
 He has [D7]give us many comforts he's got the right to take away
 [G]To the Lord be [F]praised in [G]glory for[C]ever and ever let us [G]pray
 {end_of_verse}
+
+
+
+
+
+

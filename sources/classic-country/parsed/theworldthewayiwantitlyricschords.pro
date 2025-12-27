@@ -1,5 +1,8 @@
 {meta: title The World The Way I Want It}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file theworldthewayiwantitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd feed all those hungry children down by the tracks
@@ -42,3 +45,8 @@ What a day tomorrow could [C]be
 If I could have the world the way I want [F]it 
 I [C]would set these [G7]children [C]free
 {end_of_verse}
+
+
+
+
+

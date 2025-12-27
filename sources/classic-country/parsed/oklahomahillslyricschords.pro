@@ -1,6 +1,9 @@
 {meta: title Oklahoma Hills}
 {meta: artist Hank Thompson}
 {meta: composer Woody and Jack Guthrie}
+{meta: x_source classic-country}
+{meta: x_source_file oklahomahillslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many months have come and gone
@@ -58,3 +61,11 @@ Many a page of life has turned
 many a [F]lesson I have [D7]learned
 I [G7]feel like in those hills I still [C]belong
 {end_of_verse}
+
+
+
+
+
+
+
+

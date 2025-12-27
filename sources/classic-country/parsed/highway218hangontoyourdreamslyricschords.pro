@@ -1,6 +1,9 @@
 {meta: title Highway 2-18 (Hang On To Your Dreams)}
 {meta: artist The Bellamy Brothers}
 {meta: composer Howard Bellamy and David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file highway218hangontoyourdreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Turn the radio up cause it's [F]time to get down  
@@ -56,3 +59,9 @@ There's is a [Dm]whole world you've never [G7]seen
 It's great to be young with a [G7]song in your lungs
 So hang on to your [C]dreams
 {end_of_verse}
+
+
+
+
+
+

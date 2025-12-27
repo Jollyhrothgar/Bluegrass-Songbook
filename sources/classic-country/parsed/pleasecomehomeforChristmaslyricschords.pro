@@ -1,6 +1,9 @@
 {meta: title Please Come Home For Christmas}
 {meta: artist Fats Domino}
 {meta: composer Charles Brown and Gene Redd}
+{meta: x_source classic-country}
+{meta: x_source_file pleasecomehomeforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bells will be ringing the glad glad news[C7]
@@ -35,3 +38,7 @@ Cause I’ll be [D7]happy [G7]happy once [C]again
 Oh no more sorrow [E7]no grief and [F]pain [C]
 Cause I’ll be [D7]happy [G7]with Christmas once [C]again [F]  [C]
 {end_of_verse}
+
+
+
+

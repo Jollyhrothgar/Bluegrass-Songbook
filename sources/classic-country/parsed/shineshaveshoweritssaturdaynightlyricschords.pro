@@ -1,6 +1,9 @@
 {meta: title Shine Shave Shower It's Saturday Night}
 {meta: artist Lefty Frizzell}
 {meta: composer Jim Beck and Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file shineshaveshoweritssaturdaynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes it’s Saturday
@@ -46,3 +49,10 @@ Go out a dancing the whole night [G7]through
 [C]Gonna swing it left and swing it [F]right
 [C]Because tonight is [G7]Saturday [C]night
 {end_of_verse}
+
+
+
+
+
+
+

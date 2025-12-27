@@ -1,6 +1,9 @@
 {meta: title Giving Up Getting Over You}
 {meta: artist Mickey Gilley}
 {meta: composer Gary Nicholson, Chick Rains, Robb Strandlund}
+{meta: x_source classic-country}
+{meta: x_source_file givingupgettingoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I tried so hard to forget you [F]every way I know
@@ -33,3 +36,7 @@ Cause I'm [G7]giving up getting over [C]you
 {start_of_verse: Verse 5}
 Yes I'm [G7]giving up getting over [C]you
 {end_of_verse}
+
+
+
+

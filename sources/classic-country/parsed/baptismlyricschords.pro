@@ -1,6 +1,9 @@
 {meta: title Baptism}
 {meta: artist Randy Travis}
 {meta: composer Mickey Cates}
+{meta: x_source classic-country}
+{meta: x_source_file baptismlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The summer [Am]breeze made [F]ripples on the [G7]pond
@@ -53,3 +56,11 @@ But I [C]felt like a [Am]newborn baby [G7]cradled [F]up in the [G7]arms of the [
 {start_of_verse: Verse 8}
 Felt like a [Am]newborn baby [G7]cradled [F]up in the [G7]arms of the [Am]Lord [F]  [G7]   [C]
 {end_of_verse}
+
+
+
+
+
+
+
+

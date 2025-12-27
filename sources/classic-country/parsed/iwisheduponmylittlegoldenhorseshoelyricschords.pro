@@ -1,6 +1,9 @@
 {meta: title I Wished Upon My Little Golden Horse Shoe}
 {meta: artist Hank Snow}
 {meta: composer and recorded by Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file iwisheduponmylittlegoldenhorseshoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some folks like to wish upon a [C]little silver [G]star
@@ -36,3 +39,7 @@ Came just as true as [G7]true as it could [C]be
 I wished and kissed my little golden [G]horseshoe
 Then [A7]lady luck found [D7]you and you kissed [G]me
 {end_of_verse}
+
+
+
+

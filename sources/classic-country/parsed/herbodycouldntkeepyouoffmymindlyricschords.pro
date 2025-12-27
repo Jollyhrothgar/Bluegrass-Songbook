@@ -1,6 +1,9 @@
 {meta: title Her Body Couldn’t Keep You Off my Mind}
 {meta: artist Gene Watson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file herbodycouldntkeepyouoffmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could call her up [F]again tonight
@@ -24,3 +27,5 @@ I [C]tried turning to a [F]woman who was [G7]burning up with [C]passion
 But her [F]body couldn’t [G7]keep you off my [C]mind
 But her [F]body couldn’t [G7]keep you off my [C]mind      
 {end_of_verse}
+
+

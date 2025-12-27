@@ -1,6 +1,9 @@
 {meta: title As Long As I Live}
 {meta: artist George Jones}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file aslongasilivelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As long as I [F]live  [G7]I’ll be here be[C]side you
@@ -22,3 +25,5 @@ And [C7]walk where the [F]sun will shine [G7]as long as I [C]live
 We’ll [C7]walk where the [F]sun will shine [G7]as long as I [Am]live[F]
 [G7]As long as I [C]live
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Tell Me Pretty Words}
 {meta: artist Slim Whitman}
 {meta: composer Ronald Mansfield}
+{meta: x_source classic-country}
+{meta: x_source_file tellmeprettywordslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hold me close and tell me pretty [C]words
@@ -22,3 +25,5 @@ Hold me close and tell me pretty [C]words
 Hold me close and tell me pretty [C]words
 [D7]Say you love me darling [G]do
 {end_of_verse}
+
+

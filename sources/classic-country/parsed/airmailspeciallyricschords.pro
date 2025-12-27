@@ -1,6 +1,9 @@
 {meta: title Air Mail Special}
 {meta: artist Jim and Jesse}
 {meta: composer Charlie Christian, Ossie J. Godson}
+{meta: x_source classic-country}
+{meta: x_source_file airmailspeciallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Left New York this morning [C]early
@@ -36,3 +39,7 @@
 [G]Now she’s coming down the [C]runway
 [G]It’s that air [D7]mail special on the [G]fly
 {end_of_verse}
+
+
+
+

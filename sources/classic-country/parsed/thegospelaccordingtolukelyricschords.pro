@@ -1,6 +1,9 @@
 {meta: title The Gospel According To Luke}
 {meta: artist Skip Ewing}
 {meta: composer Skip Ewing and Don Sampson}
+{meta: x_source classic-country}
+{meta: x_source_file thegospelaccordingtolukelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was an old hand at living and [G7]making his [C]way
@@ -55,3 +58,9 @@ His [Am]home was an alley [G7]off 8th [F]Avenue
 If [C]you had a minute or [G7]an hour or [F]two
 He'd [C]tell you the Gospel [G7]according to [C]Luke
 {end_of_verse}
+
+
+
+
+
+

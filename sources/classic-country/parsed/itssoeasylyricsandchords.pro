@@ -1,5 +1,8 @@
 {meta: title It's So Easy}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file itssoeasylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]O-h it's so e-asy  to [C]love my [G]baby
@@ -30,3 +33,7 @@ That's why that's [D7]why
 {start_of_verse: Verse 4}
 [G]It's so e-asy   
 {end_of_verse}
+
+
+
+

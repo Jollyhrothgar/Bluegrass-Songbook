@@ -1,5 +1,8 @@
 {meta: title It Ain't Gonna Be That Way}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file itaintgonnabethatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You won't even give me the time of day
@@ -31,3 +34,6 @@ But it ain't gonna be that way
 It ain't gonna [Am]be that way babe
 It ain't gonna [Dm]be [G7]that way with [C]me
 {end_of_verse}
+
+
+

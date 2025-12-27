@@ -1,6 +1,9 @@
 {meta: title Coal Smoke Valve Oil And Steam}
 {meta: artist Johnny Horton}
 {meta: composer Fabor Robinson, Dick Martin, Vic Tannet}
+{meta: x_source classic-country}
+{meta: x_source_file coalsmokevalveoilandsteamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Coal smoke [D7]valve oil and [G]steam
@@ -50,3 +53,9 @@
 [D7]I can’t tell why I love the [G]smell
 [D7]Of coal smoke valve oil and [G]steam
 {end_of_verse}
+
+
+
+
+
+

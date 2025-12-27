@@ -1,5 +1,8 @@
 {meta: title It's Been So Long Darling}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file itsbeensolongdarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's Been So Long Darling
@@ -65,3 +68,15 @@ Please don't [G7]blame me if I [C]cry
 It's Been So Long Darling
 And I'll [D7]never forget that [G7]day
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

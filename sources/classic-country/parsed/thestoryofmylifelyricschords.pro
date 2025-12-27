@@ -1,5 +1,8 @@
 {meta: title The Story of my Life}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file thestoryofmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some day I'm gonna [F]write
@@ -51,3 +54,9 @@ Can [C]start and [F]end
 Can [C]start and [F]end
 Can [C]start and [F]end with [C]you
 {end_of_verse}
+
+
+
+
+
+

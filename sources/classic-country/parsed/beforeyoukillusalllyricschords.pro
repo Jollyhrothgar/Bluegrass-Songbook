@@ -1,6 +1,9 @@
 {meta: title Before You Kill Us All}
 {meta: artist Randy Travis}
 {meta: composer Max T. Barnes and Keith Follese}
+{meta: x_source classic-country}
+{meta: x_source_file beforeyoukillusalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Must be doing something wrong baby [F]I don't [C]know[F]
@@ -38,3 +41,7 @@ But [F]baby come back before you kill us [C]all
 [F]Baby come [C]back  [F]before you kill us [C]all ([F]baby come [C]back)
 [F]Baby come [C]back  ([F]baby come [C]back)
 {end_of_verse}
+
+
+
+

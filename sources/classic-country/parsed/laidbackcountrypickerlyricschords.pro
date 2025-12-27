@@ -1,6 +1,9 @@
 {meta: title Laid Back Country Picker}
 {meta: artist Waylon Jennings}
 {meta: composer Vincent Wesley Matthews and James Casey}
+{meta: x_source classic-country}
+{meta: x_source_file laidbackcountrypickerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]South bound out of Shreveport heading [F]hell bent for his grave
@@ -36,3 +39,7 @@ Uppers [F]downers turn arounders picked him [C]up and laid him down
 [C]He keeps looking for an answer that I [F]know he'll never find
 [G7]He's a laid back country picker [F]with a laid back country [C]mind 
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Love A Rodeo}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file ilovearodeolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jacob Brown was a rodeo clown
@@ -48,3 +51,9 @@ Yeah I [F]like the cowboys I [C]like the [A7]clowns
 I [D7]love a [G7]rode[C]o 
 I love a ro[G7]de-[C]o
 {end_of_verse}
+
+
+
+
+
+

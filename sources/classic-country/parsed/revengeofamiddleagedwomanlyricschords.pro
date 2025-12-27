@@ -1,6 +1,9 @@
 {meta: title Revenge Of A Middle Aged Woman}
 {meta: artist Tracy Byrd}
 {meta: composer Dave Berg, Annie Tate, Sam Tate}
+{meta: x_source classic-country}
+{meta: x_source_file revengeofamiddleagedwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was lookin' for a cheap car in the Sunday classifieds
@@ -62,3 +65,10 @@ Revenge of a [G7]middle-aged [C]woman
 I know I oughta feel guilty about somethin'
 I just can't think of what it might be
 {end_of_verse}
+
+
+
+
+
+
+

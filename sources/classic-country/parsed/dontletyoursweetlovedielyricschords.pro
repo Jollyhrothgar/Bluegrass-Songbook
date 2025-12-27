@@ -1,6 +1,9 @@
 {meta: title Don't Let Your Sweet Love Die}
 {meta: artist Ricky Skaggs}
 {meta: composer Clarke VanNess and Zeke Clements}
+{meta: x_source classic-country}
+{meta: x_source_file dontletyoursweetlovedielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't let your sweet love die like [C7]flowers in the [F]fall
@@ -37,3 +40,8 @@ tag:
 {start_of_verse: Verse 6}
 [G7]I need you so don't let your sweet love [C]die
 {end_of_verse}
+
+
+
+
+

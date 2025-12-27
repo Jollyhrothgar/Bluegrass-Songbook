@@ -1,6 +1,9 @@
 {meta: title For The First Time}
 {meta: artist Gene Watson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file forthefirsttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For the first time in a [C7]long [F]time
@@ -27,3 +30,6 @@ I want the [G7]sunshine to shine on [C]me
 I want those hillsides to [C7]feel me [F]walking
 And I [G7]want your love all over [C]me
 {end_of_verse}
+
+
+

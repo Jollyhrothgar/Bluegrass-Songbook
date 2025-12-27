@@ -1,6 +1,9 @@
 {meta: title I'll Be Here For A Lifetime}
 {meta: artist Ferlin Husky}
 {meta: composer Ken Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file illbehereforalifetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m gonna be here fer a lifetime if I [F]live that [C]long
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 7}
 [G7]And nothings gonna make me change my [C]mind
 {end_of_verse}
+
+
+
+
+
+

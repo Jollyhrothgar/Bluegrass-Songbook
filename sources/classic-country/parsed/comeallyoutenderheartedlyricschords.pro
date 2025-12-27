@@ -1,5 +1,8 @@
 {meta: title Come All You Tender Hearted}
 {meta: artist The Country Gentlemen}
+{meta: x_source classic-country}
+{meta: x_source_file comeallyoutenderheartedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come all you [C]tender [G]hearted
@@ -49,3 +52,9 @@ They [D7]both lay face to [G]face
 Each other's [C]arms they [G]did entwine
 Each [D7]other did em[G]brace
 {end_of_verse}
+
+
+
+
+
+

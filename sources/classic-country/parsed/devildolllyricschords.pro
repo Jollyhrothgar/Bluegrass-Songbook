@@ -1,6 +1,9 @@
 {meta: title Devil Doll}
 {meta: artist Roy Orbison}
 {meta: composer Sam Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file devildolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Devil [G]doll (devil doll) devil doll ([D7]devil doll)
@@ -35,3 +38,6 @@ I'm a guy that's true and [D7]I love you
 [C]Oh-oh [D7]devil [G]doll
 [D7]Devil [G]doll
 {end_of_verse}
+
+
+

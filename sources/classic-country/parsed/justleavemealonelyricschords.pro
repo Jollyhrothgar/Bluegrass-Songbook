@@ -1,6 +1,9 @@
 {meta: title Just Leave Me Alone}
 {meta: artist Eddy Raven}
 {meta: composer Sanger D. Shafer and Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file justleavemealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I would wish for you what I [F]wish for my[C]self
@@ -33,3 +36,7 @@ Don't hate me just [G7]leave me [C]alone
 {start_of_verse: Verse 5}
 Why can’t you just [G7]leave me [F]alon[C]e
 {end_of_verse}
+
+
+
+

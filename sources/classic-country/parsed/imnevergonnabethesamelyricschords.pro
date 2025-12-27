@@ -1,6 +1,9 @@
 {meta: title I'm Never Gonna Be The Same}
 {meta: artist Melba Montgomery}
 {meta: composer Melba Montgomery and Carl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file imnevergonnabethesamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take a look at me [C]tell me what do you [G]see
@@ -30,3 +33,7 @@ I know you're gonna find
 {start_of_verse: Verse 5}
 [C]No I'm never gonna be [D7]the same old me without [G]you
 {end_of_verse}
+
+
+
+

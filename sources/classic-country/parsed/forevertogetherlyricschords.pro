@@ -1,6 +1,9 @@
 {meta: title Forever Together}
 {meta: artist Randy Travis}
 {meta: composer Randy Travis and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file forevertogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I took you for [C]granted [D7]so many [G]years
@@ -33,3 +36,7 @@ Through [G]good times and bad times [C]wherever we [Am]are
 {start_of_verse: Verse 5}
 Forever together in [D7]each other's [C]arm[G]s
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Bad Times A Coming}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file badtimesacominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I got off work today I was a happy [F]man
@@ -28,3 +31,6 @@
 [C]I know I can’t trust you now know I just can’t [F]win
 [C]Oh bad times a-coming [G7]coming coming my way [C]again
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Wonder Like You}
 {meta: artist Ricky Nelson}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file awonderlikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen the snow white [F]mountains of [C]Alaska
@@ -42,3 +45,8 @@ They [F]haven't got a [G7]wonder like [C]you
 No they [F]haven't got a [G7]wonder like [C]you
 No they [F]haven't got a [G7]wonder like [C]you
 {end_of_verse}
+
+
+
+
+

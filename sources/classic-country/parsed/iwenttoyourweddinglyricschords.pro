@@ -1,6 +1,9 @@
 {meta: title I Went To Your Wedding}
 {meta: artist Hank Snow}
 {meta: composer Jessie Mae Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file iwenttoyourweddinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went to your [G7]wedding
@@ -29,3 +32,6 @@ The [C]teardrops were [G7]falling
 {start_of_verse: Verse 4}
 Repeat last verse
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Love You Best Of All}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyoubestofalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love the [F]silver [C]in your [G7]hair
@@ -39,3 +42,8 @@ I love the gold that lingers [C]there
 {start_of_verse: Verse 5}
 [D7]For I love you the [G7]best of [C]all
 {end_of_verse}
+
+
+
+
+

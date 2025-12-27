@@ -1,6 +1,9 @@
 {meta: title Who'll be the First}
 {meta: artist Ray Price}
 {meta: composer Bobby George and Vern Stovall}
+{meta: x_source classic-country}
+{meta: x_source_file whollbethefirstlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody told me what a fool I [D7]was
@@ -29,3 +32,6 @@ Cause I'm alone like they all said I'd [G]be
 Who'll be the first to say I should have listened long [D7]ago
 So who'll be the first to say I told you [G]so
 {end_of_verse}
+
+
+

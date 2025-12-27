@@ -1,5 +1,8 @@
 {meta: title Two Timin' Woman}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file twotiminwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up this morning in a terrible mood
@@ -30,3 +33,6 @@ I'm [F]gonna tame you mama till you're eatin' from my [C]hand
 It [G7]ain't that I don't love you honey 
 It's just to make you under[C]stand
 {end_of_verse}
+
+
+

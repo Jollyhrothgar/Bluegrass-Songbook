@@ -1,6 +1,9 @@
 {meta: title Whatever Happened To Old Fashioned Love}
 {meta: artist B.J. Thomas}
 {meta: composer Lewis Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file whateverhappenedtooldfashionedlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We live in the modern [G7]age
@@ -55,3 +58,9 @@ The [G7]kind that would last through the [C]years
 Through the [F]trials through the [A]smiles
 Through the [G7][Dm]t--ears
 {end_of_verse}
+
+
+
+
+
+

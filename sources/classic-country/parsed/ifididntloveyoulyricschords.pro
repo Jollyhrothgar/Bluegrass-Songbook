@@ -1,6 +1,9 @@
 {meta: title If I Didn't Love You}
 {meta: artist Hank Williams}
 {meta: composer Fred Rose & Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ifididntloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I didn't love you  [A7]I wouldn't be so [D7]lonesome
@@ -29,3 +32,6 @@ I've tried to be [A7]faithful [D7]and [G7]true
 If I [C]didn't love you  [A7]I wouldn't be [D7]lonesome
 [G7]Waiting and longing for [C]you
 {end_of_verse}
+
+
+

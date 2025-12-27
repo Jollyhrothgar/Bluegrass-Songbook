@@ -1,6 +1,9 @@
 {meta: title Two Hearts Deep In The Blues}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Lyle Gaston}
+{meta: x_source classic-country}
+{meta: x_source_file twoheartsdeepintheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I found you sitting there [D7]about to cry
@@ -43,3 +46,8 @@ And mended when we each had nothing to [G]lose
 So we took the chance [D7]and aren't glad 
 Because we had two hearts deep in the [G]blues
 {end_of_verse}
+
+
+
+
+

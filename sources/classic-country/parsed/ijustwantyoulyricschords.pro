@@ -1,6 +1,9 @@
 {meta: title I Just Want You}
 {meta: artist Keith Whitley}
 {meta: composer Max D. Barnes and Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file ijustwantyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey I'm [G]home
@@ -45,3 +48,8 @@ I just want [G]you [D7]   [C] ooo I just want [G]you [C]
 I just want [G]you [D7]   [C] ooo I just want [G]you [C]
 I just want [G]you [D7]   [C] ooo I just want [G]you
 {end_of_verse}
+
+
+
+
+

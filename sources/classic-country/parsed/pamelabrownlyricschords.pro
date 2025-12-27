@@ -1,5 +1,8 @@
 {meta: title Pamela Brown}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file pamelabrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm  the guy who didn't [F]marry pretty Pamela [C]Brown
@@ -28,3 +31,6 @@ I don't have to tell [F]you just how beautiful [C]she was
 [C]Lord I hope she's happy she [F]sure deserves to [C]be
 [F]Especially for [G7]what she did for [C]me
 {end_of_verse}
+
+
+

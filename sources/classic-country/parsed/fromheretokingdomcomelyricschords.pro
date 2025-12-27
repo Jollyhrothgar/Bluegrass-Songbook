@@ -1,6 +1,9 @@
 {meta: title From Here To Kingdom Come}
 {meta: artist Tracy Lawrence}
 {meta: composer John D. Souther}
+{meta: x_source classic-country}
+{meta: x_source_file fromheretokingdomcomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can move to another town 
@@ -52,3 +55,9 @@ Or [C]any place that [D7]you might [G]be
 You can [C]run from [D7]here to [G]Kingdom [Em]come
 But you [C]can't run [D7]away from [F]me
 {end_of_verse}
+
+
+
+
+
+

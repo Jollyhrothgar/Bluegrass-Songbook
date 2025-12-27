@@ -1,6 +1,9 @@
 {meta: title Some Memories Last Forever}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file somememorieslastforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Won't you look [D7]standing [G]there just an old souve[G7]nir 
@@ -35,3 +38,7 @@ But [C]some last [D7]on and [Em]o--[C]n
 {start_of_verse: Verse 4}
 Some memories [D7]last all night [G]long
 {end_of_verse}
+
+
+
+

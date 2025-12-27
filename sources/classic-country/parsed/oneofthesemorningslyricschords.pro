@@ -1,6 +1,9 @@
 {meta: title One Of These Mornings}
 {meta: artist Ricky Nelson}
 {meta: composer Richard Melville Hall}
+{meta: x_source classic-country}
+{meta: x_source_file oneofthesemorningslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well one of these mornings I'm gonna rise and shine
@@ -35,3 +38,8 @@ Yes one of these [D7]mornings and I ain't coming [G]back
 Come along and go [C]with me but you can't be [G]late
 Cause one of these [D7]mornings that train won't [G]wait
 {end_of_verse}
+
+
+
+
+

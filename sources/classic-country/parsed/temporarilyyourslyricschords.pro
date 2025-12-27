@@ -1,6 +1,9 @@
 {meta: title Temporarily Yours}
 {meta: artist Jeanne Pruett}
 {meta: composer Bobby Fischer, James F. Throckmorton, Jimmy Work}
+{meta: x_source classic-country}
+{meta: x_source_file temporarilyyourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Temporarily you[F]rs love for the [C]moment
@@ -33,3 +36,7 @@ Just for a [Dm]while [G7]temporarily [C]yours
 {start_of_verse: Verse 4}
 Temporarily you[F]rs love for the [C]moment
 {end_of_verse}
+
+
+
+

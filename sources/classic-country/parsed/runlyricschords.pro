@@ -1,6 +1,9 @@
 {meta: title Run}
 {meta: artist Stonewall Jackson}
 {meta: composer Buddy Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file runlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A bluebird a wingin' his lonely way south
@@ -43,3 +46,8 @@ And I don't even know where to [G7]go
 [C]I just keep a following the risin' sun
 [G7]My only hope is to [F]run [G7]run [C]run
 {end_of_verse}
+
+
+
+
+

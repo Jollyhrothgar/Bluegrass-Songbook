@@ -1,6 +1,9 @@
 {meta: title Blame It On The Fire In My Heart}
 {meta: artist The Bellamy Brothers}
 {meta: composer Ralph Siegel}
+{meta: x_source classic-country}
+{meta: x_source_file blameitonthefireinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blame it on the sundown [F]far beyond the [C]highway
@@ -69,3 +72,12 @@ Something [F]tells me your [C]crying but [G7]baby I can't [C]stay
 [G7]Blame it on the fire in my [C]heart
 Just [G7]blame it on the fire in my [C]heart
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title She Will Get Lonesome}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file shewillgetlonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told my heart last night you were gone
@@ -63,3 +66,14 @@ The moon told the wind and it began to moan
 The wind told the clouds and by and [F]by
 [G7]The rain came falling [C]down
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

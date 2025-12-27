@@ -1,6 +1,9 @@
 {meta: title I Cried Again}
 {meta: artist Wanda Jackson}
 {meta: composer Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file icriedagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tear-drops [F]fell the night you [C]said 
@@ -29,3 +32,6 @@ And an old new love I wanted [G7]so
 And [C]then our [F]fate had took a [C]stand 
 And I bowed my [G7]head and cried [C]again
 {end_of_verse}
+
+
+

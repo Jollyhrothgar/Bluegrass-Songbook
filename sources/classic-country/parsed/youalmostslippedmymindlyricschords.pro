@@ -1,6 +1,9 @@
 {meta: title You Almost Slipped My Mind}
 {meta: artist Charley Pride}
 {meta: composer Troy Seals, Don Goodman, Tilden Back}
+{meta: x_source classic-country}
+{meta: x_source_file youalmostslippedmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just for a moment you [F]almost slipped my [C]mind
@@ -27,3 +30,6 @@ I'd found myself falling for that same old [F]line
 Yes for a [C]moment you [F]almost slipped my [C]mind
 [F]Yes for a [C]moment you [F]almost slipped my [C]mind
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Highway Of Regret}
 {meta: artist Stanley Brothers}
 {meta: composer Don Anthony and Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file highwayofregretlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ain't talking just [C]walking
@@ -36,3 +39,7 @@ I [D7]think about you all the [G]time
 Heart's [G]burning still [C]yearning
 For the [G]best girl this [D7]poor boy ever [G]met
 {end_of_verse}
+
+
+
+

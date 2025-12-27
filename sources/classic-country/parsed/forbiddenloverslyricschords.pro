@@ -1,6 +1,9 @@
 {meta: title Forbidden Lovers}
 {meta: artist Hank Snow}
 {meta: composer Wayne P. Walker and Irene Stanton}
+{meta: x_source classic-country}
+{meta: x_source_file forbiddenloverslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the darkness of the night
@@ -65,3 +68,14 @@ To hide this love we [G]found
 How can we give [D7]up 
 The happiness we've [G]found
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

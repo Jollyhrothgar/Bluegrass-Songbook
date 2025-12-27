@@ -1,6 +1,9 @@
 {meta: title Old Hippie}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file oldhippielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He turned thirty-five last Sunday [C]in his hair he found some [G]gray
@@ -56,3 +59,9 @@ Should he [D7]hang on to the old should he [G]grab on to the new
 He's an [C]old hippie his new life is [G]just a bust
 He ain't [D7]trying to change nobody he just [C]trying real [D7]hard to [G]adjust
 {end_of_verse}
+
+
+
+
+
+

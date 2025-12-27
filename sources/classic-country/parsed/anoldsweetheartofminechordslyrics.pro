@@ -1,6 +1,9 @@
 {meta: title An Old Sweetheart Of Mine chords and}
 {meta: artist Sonny James}
 {meta: composer Richard Hollingsworth and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file anoldsweetheartofminechordslyrics.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walking down the streets of my [Dm]hometown 
@@ -32,3 +35,6 @@ But as I go I leave my heart [Dm]behind
 I'll always love that [G7]old sweetheart of [C]mine
 I'll [Dm]always love that old [G7]sweetheart of [C]mine 
 {end_of_verse}
+
+
+

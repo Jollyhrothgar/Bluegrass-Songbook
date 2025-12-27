@@ -1,6 +1,9 @@
 {meta: title Ida Jane}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file idajanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Whoa yes it's me 
@@ -42,3 +45,7 @@ Her name is Ida [G]Jane
 And if she [D7]don't come back today
 I'll give my cares [G]away 
 {end_of_verse}
+
+
+
+

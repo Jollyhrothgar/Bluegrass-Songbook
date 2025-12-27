@@ -1,5 +1,8 @@
 {meta: title The Old Account}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file theoldaccountlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it was a time on earth when in the books of heaven 
@@ -42,3 +45,8 @@ Yes the old account was settled long ago [G7](hallelujah)
 And the [C]record's clear today cause he washed [F]my sins [C]away  
 And the old account was [G7]settled long [C]ago   
 {end_of_verse}
+
+
+
+
+

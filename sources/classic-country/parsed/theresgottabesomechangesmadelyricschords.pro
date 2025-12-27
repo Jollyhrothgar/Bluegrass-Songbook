@@ -1,5 +1,8 @@
 {meta: title There's Gotta Be Some Changes Made}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file theresgottabesomechangesmadelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's gotta be some [A7]changes made around [D7]here
@@ -23,3 +26,5 @@ Should [C]I leave or stay am I [F]just in your way
 [G]There's gotta be some [D7]changes made around [G]here
 There's gotta be some [D7]changes made around [G]here
 {end_of_verse}
+
+

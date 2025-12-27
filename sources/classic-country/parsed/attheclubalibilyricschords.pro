@@ -1,6 +1,9 @@
 {meta: title At The Club Alibi}
 {meta: artist Mel Street}
 {meta: composer Eddie Rabbitt and Even Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file attheclubalibilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Meet me tonight just across the state [G7]line
@@ -49,3 +52,8 @@ At the Club Ali[C]bi
 [F]Honey meet me [C]tonight just across the state [G7]line 
 At the Club Ali[C]bi
 {end_of_verse}
+
+
+
+
+

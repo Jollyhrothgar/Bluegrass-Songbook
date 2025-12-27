@@ -1,6 +1,9 @@
 {meta: title Till The End Of The World Rolls Round}
 {meta: artist Ricky Skaggs}
 {meta: composer Newton S. Thomas Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file tilltheendoftheworldrollsroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Till the end of the world rolls round I'll [F]keep on loving you
@@ -50,3 +53,9 @@ The [G7]cards are on the table dear my life is in your [C]hands
 Till the big blue sky goes down to the ground
 As long as the world goes round and around I'll keep on loving [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Dreaming With My Eyes Open}
 {meta: artist Clay Walker}
 {meta: composer Tony Arata}
+{meta: x_source classic-country}
+{meta: x_source_file dreamingwithmyeyesopenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I spent half my life on bended knee beggin' somebody to change
@@ -41,3 +44,7 @@ We can do some [G7]livin' or spend our whole life [F]hop[C]in'
 In the end we're [A#7]left with [F]the one we [G7]chose
 So I'll do my [F]dreaming  with my eyes wide [C]open
 {end_of_verse}
+
+
+
+

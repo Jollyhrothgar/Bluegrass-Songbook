@@ -1,6 +1,9 @@
 {meta: title Long Long Friendship}
 {meta: artist Eddy Arnold}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file longlongfriendshiplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want to have a long long [G7]friendship with you
@@ -27,3 +30,5 @@ Just enjoying all the joy in just [C]being with you
 [C]Let my dreams fall [F]through
 [C]I'm gonna start that [A7]long long friendship [Dm]uhm [G7]baby with [C]you
 {end_of_verse}
+
+

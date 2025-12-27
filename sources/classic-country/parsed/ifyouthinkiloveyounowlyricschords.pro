@@ -1,6 +1,9 @@
 {meta: title If You Think I Love You Now}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Claude Putman Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouthinkiloveyounowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's nothing new for a [A7]woman to love her [D7]man
@@ -29,3 +32,7 @@ If you think I [Em]love you [Am]now [D7]I've just [G]started [C]   [G]
 {start_of_verse: Verse 5}
 If you think I [Em]love you [Am]now [D7]I've just [G]started [C]   [G]
 {end_of_verse}
+
+
+
+

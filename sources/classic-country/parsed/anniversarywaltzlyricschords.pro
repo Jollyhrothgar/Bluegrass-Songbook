@@ -1,6 +1,9 @@
 {meta: title Anniversary Waltz}
 {meta: artist Connie Francis}
 {meta: composer Dave Franklin and Al Dubin}
+{meta: x_source classic-country}
+{meta: x_source_file anniversarywaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [E7](The [A7]Anniversary [D7]Waltz with [D7][G]you)
@@ -35,3 +38,8 @@
 [Am]The Anniversary [D7]Waltz (The [Am]Anniversary [D7]Waltz)
 [Am]The Anniversary [D7]Waltz with [G]you
 {end_of_verse}
+
+
+
+
+

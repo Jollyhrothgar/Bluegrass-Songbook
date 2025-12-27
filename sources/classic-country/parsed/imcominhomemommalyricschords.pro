@@ -1,6 +1,9 @@
 {meta: title I'm Comin' Home Momma}
 {meta: artist Wilburn Brothers}
 {meta: composer Johnny Russell and Voni Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file imcominhomemommalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I'm comin' home [C]momma  it [G7]won't be [C]long
@@ -45,3 +48,9 @@ Spoken:
 [F]I'm comin' home [C]momma  it [G7]won't be [C]long
 [F]I'm comin' home [C]momma  [G7]I'll soon be [C]home
 {end_of_verse}
+
+
+
+
+
+

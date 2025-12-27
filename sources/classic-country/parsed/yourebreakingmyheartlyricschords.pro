@@ -1,5 +1,8 @@
 {meta: title You're Breaking My Heart}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file yourebreakingmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're breaking my heart while you're [F]holding my hand
@@ -32,3 +35,6 @@ You're [C]crushing the life from my [G7]soul
 My [C]castles have tumbled you've [F]shattered my dreams
 Now [C]you're breaking a [G7]heart made of [C]gold
 {end_of_verse}
+
+
+

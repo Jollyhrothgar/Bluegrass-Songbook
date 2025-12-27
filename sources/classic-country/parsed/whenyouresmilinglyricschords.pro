@@ -1,6 +1,9 @@
 {meta: title When You're Smiling}
 {meta: artist Dean Martin}
 {meta: composer Joe Goodwin, Larry Shay, Mark Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file whenyouresmilinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you're smiling when you're smiling
@@ -35,3 +38,8 @@ When you're laughing oh when you're laughing
 [G]Keep on smiling cause when you're [E7]smiling
 [Am]The whole world [D7]smiles with [G]you
 {end_of_verse}
+
+
+
+
+

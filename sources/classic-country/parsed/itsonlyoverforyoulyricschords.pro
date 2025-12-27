@@ -1,6 +1,9 @@
 {meta: title It's Only Over For You}
 {meta: artist Tanya Tucker}
 {meta: composer Mike Reid and Rory Burke}
+{meta: x_source classic-country}
+{meta: x_source_file itsonlyoverforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somehow I knew I'd see you tonight 
@@ -43,3 +46,8 @@ No [C]I'm not the one who found [G7]somebody [C]new
 You can [F]go on believing we're through  oooh but it's [C]only over
 [G7]It's only over for [C]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title End Of The World}
 {meta: artist Brenda Lee}
 {meta: composer Arthur Kent and Sylvia Dee}
+{meta: x_source classic-country}
+{meta: x_source_file endoftheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why does the sun go on [G7]shining
@@ -41,3 +44,8 @@ Sung:
 [Dm]Don't they know it's the end of the [Em]world
 [F]It ended when you [G7]said [C]goodbye
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Gentleman Jim}
 {meta: artist Charlie Rich}
 {meta: composer Lowell Foster and Don McMillan}
+{meta: x_source classic-country}
+{meta: x_source_file gentlemanjimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Adios amigo [G7]Gentleman [C]Jim)
@@ -34,3 +37,7 @@ A place in God's glories [F]is this where we end
 Adi[C]os amigo [G7]Gentleman [F]Ji[C]m
 [F]Adi[C]os amigo [G7]gentleman [C]Jim
 {end_of_verse}
+
+
+
+

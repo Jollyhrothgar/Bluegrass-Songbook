@@ -1,6 +1,9 @@
 {meta: title Blue Christmas Tree}
 {meta: artist Buck Owens}
 {meta: composer Eddie Miller and Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file blueChristmastreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dream is the [G7]color and [C]joy it should be
@@ -37,3 +40,7 @@ Wher[C]ever you may be
 And I [D7]hope that you will never  
 Have a blue Christmas [G]tree
 {end_of_verse}
+
+
+
+

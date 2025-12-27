@@ -1,6 +1,9 @@
 {meta: title Carolina Star}
 {meta: artist Tony Rice}
 {meta: composer Hugh Moffatt}
+{meta: x_source classic-country}
+{meta: x_source_file carolinastarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Back in the hills those [F]slow rollin’ hills
@@ -54,3 +57,10 @@ Don’t you [F]worry he’ll be [G7]comin’ home [C]again
 {start_of_verse: Verse 6}
 Yes he [F]loves you and he’s [G7]comin’ home [C]again
 {end_of_verse}
+
+
+
+
+
+
+

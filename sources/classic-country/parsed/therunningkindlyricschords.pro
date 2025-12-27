@@ -1,5 +1,8 @@
 {meta: title The Running Kind}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file therunningkindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was born the running kind leaving always on my mind
@@ -21,3 +24,5 @@ Home was never home to me at [C]anytime
 Every front door found me hoping I would find [D7]the back door open
 There just had to be an exit for the running [G]kind
 {end_of_verse}
+
+

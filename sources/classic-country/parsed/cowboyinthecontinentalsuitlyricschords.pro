@@ -1,5 +1,8 @@
 {meta: title Cowboy In The Continental Suit}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file cowboyinthecontinentalsuitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well he walked out in the arena all [G7]dressed up to the [C]brim
@@ -63,3 +66,11 @@ Underneath some ragged [Am]clothes could be a [G7]millionaire
 [C]Everybody [Em]listen  don't be [F]fooled by this [C]galoot
 The sure enough bronc buster in a [G7]continental [C]suit
 {end_of_verse}
+
+
+
+
+
+
+
+

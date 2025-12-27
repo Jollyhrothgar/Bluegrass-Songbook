@@ -1,6 +1,9 @@
 {meta: title Omaha}
 {meta: artist Waylon Jennings}
 {meta: composer Billy Joe Shaver and Hillman Hall}
+{meta: x_source classic-country}
+{meta: x_source_file omahalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Omaha [G7]you've been weighing [C]heavy on my [F]mind
@@ -36,3 +39,7 @@ I guess I never [G7]really left at [C]all
 I'm [F]turning all those [G7]roads I've walked [C]around the other [F]way
 And coming back to [G7]you  Oma[C]ha
 {end_of_verse}
+
+
+
+

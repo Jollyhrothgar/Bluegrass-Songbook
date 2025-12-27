@@ -1,5 +1,8 @@
 {meta: title Highways}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file highwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Highways take me everywhere I [F]want to go 
@@ -49,3 +52,9 @@ Into the valleys [F]and out through the [C]plains
 [F]Wanting to be in your [C]heart's understanding
 [G7]I travel each highway in [C]vain
 {end_of_verse}
+
+
+
+
+
+

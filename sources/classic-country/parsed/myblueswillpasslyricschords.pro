@@ -1,5 +1,8 @@
 {meta: title My Blues Will Pass}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file myblueswillpasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blue last week  [C]blue each before
@@ -25,3 +28,6 @@ Un[G]less it’s true in [D7]time these blues will [G]pass
 {start_of_verse: Verse 4}
 Unless it’s true in [D7]time these blues will [G]pass
 {end_of_verse}
+
+
+

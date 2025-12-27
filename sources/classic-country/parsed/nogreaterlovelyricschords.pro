@@ -1,5 +1,8 @@
 {meta: title No Greater Love}
 {meta: artist Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file nogreaterlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One night one day  [C7]somehow some [F]way
@@ -30,3 +33,7 @@ Some day maybe soon  [C7]a wedding day a honey[F]moon
 Then I know you'll be [C]mine 
 [G7]Until the end of [C]time  [F]   [C]
 {end_of_verse}
+
+
+
+

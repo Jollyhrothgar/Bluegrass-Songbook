@@ -1,6 +1,9 @@
 {meta: title There You Go Again}
 {meta: artist Kenny Rogers}
 {meta: composer Terry McBride, Tommy James, Jennifer Kimball}
+{meta: x_source classic-country}
+{meta: x_source_file thereyougoagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There you [F]go again you take my [G7]breath away
@@ -38,3 +41,8 @@ The way you [Dm]can  [G7]there you go [C]again
 {start_of_verse: Verse 6}
 There you [G7]go a[F]gain[G7]   [C]
 {end_of_verse}
+
+
+
+
+

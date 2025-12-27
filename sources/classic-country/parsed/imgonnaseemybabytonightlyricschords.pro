@@ -1,6 +1,9 @@
 {meta: title I'm Gonna See My Baby Tonight Lyrics and Chords}
 {meta: artist Webb Pierce}
 {meta: composer Linda Baggett and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnaseemybabytonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna see my baby tonight
@@ -26,3 +29,6 @@ We [G]gotta honky tonk till broad [D7]daylight
 {start_of_verse: Verse 4}
 Repeat all + 1
 {end_of_verse}
+
+
+

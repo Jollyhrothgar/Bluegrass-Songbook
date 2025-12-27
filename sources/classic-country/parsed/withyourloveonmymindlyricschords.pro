@@ -1,6 +1,9 @@
 {meta: title With Your Love On My Mind}
 {meta: artist Don Gibson}
 {meta: composer Robert Ford}
+{meta: x_source classic-country}
+{meta: x_source_file withyourloveonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here I sit with your love [D7]on my [G]mind 
@@ -17,3 +20,4 @@ And [G]though how I [Em]long for your re[A7]tu-r[D7]n
 So [G]here I sit with your love [D7]on my [G]mind 
 I'm [C]hoping praying [D7]saying you'll be [C]m-in[G]e
 {end_of_verse}
+

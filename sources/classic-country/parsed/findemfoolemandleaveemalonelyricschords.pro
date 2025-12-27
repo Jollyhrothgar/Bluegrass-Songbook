@@ -1,5 +1,8 @@
 {meta: title Find 'Em Fool 'Em And Leave 'Em Alone}
 {meta: artist Charlie Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file findemfoolemandleaveemalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now boys gather round take a tip from me
@@ -48,3 +51,9 @@ You better [D7]leave 'em [G]alone
 You better [D7]leave that [G]alone
 You better [D7]leave 'em [G]alone
 {end_of_verse}
+
+
+
+
+
+

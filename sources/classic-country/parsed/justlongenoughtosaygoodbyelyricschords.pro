@@ -1,6 +1,9 @@
 {meta: title Just Long Enough To Say Goodbye}
 {meta: artist Mickey Gilley}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file justlongenoughtosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Could you [D7]spare me just a [Em]moment
@@ -40,3 +43,8 @@ I could [D7]paint a [Em]thousand pictures
 {start_of_verse: Verse 5}
 [A7]Just long [D7]enough to say good[G]bye
 {end_of_verse}
+
+
+
+
+

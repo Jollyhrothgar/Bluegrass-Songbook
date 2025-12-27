@@ -1,6 +1,9 @@
 {meta: title Just An Old Faded Photograph}
 {meta: artist Hank Thompson}
 {meta: composer Rex Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file justanoldfadedphotographlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just an [D7]old faded photograph of [G]you
@@ -29,3 +32,6 @@ In my [D7]heart there's a picture same as [G]new
 As the [C]years go passing [D7]by all [G]alone I sit and cry
 Over an [D7]old faded photograph of [G]you
 {end_of_verse}
+
+
+

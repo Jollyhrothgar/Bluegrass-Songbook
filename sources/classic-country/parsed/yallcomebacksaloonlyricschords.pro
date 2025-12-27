@@ -1,6 +1,9 @@
 {meta: title Y'all Come Back Saloon}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Sharon Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file yallcomebacksaloonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She played tambourine with a silver jingle
@@ -50,3 +53,9 @@ In a voice soft and trembling she'd sing her song to cowboy
 [Am]But the one most requested by the man she knew as cowboy
 [C]Was the late night [Am]benediction at the [G7]y'all come back [C]saloon
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When Life Hits Hard}
 {meta: artist Ricky Skaggs}
 {meta: composer Mark D. Sanders and Steve Seskin}
+{meta: x_source classic-country}
+{meta: x_source_file whenlifehitshardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Life is a [G]mountain of [D7]a [G]journey
@@ -52,3 +55,9 @@
 [D7]And when life hits hard there's bound to be a reason [G]why
 [D7]When life hits [G]hard
 {end_of_verse}
+
+
+
+
+
+

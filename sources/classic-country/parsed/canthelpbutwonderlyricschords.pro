@@ -1,6 +1,9 @@
 {meta: title Can't Help But Wonder}
 {meta: artist Barbara Mandrell}
 {meta: composer Sharon Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file canthelpbutwonderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another Friday evening with the [F]TV set 
@@ -46,3 +49,8 @@ Her [F]voice is not as coarse her [G7]hair's a darker [C]brown
 Or [Am]is there a [F]part of you too [G7]restless to tie [C]down
 Can't help but [F]wonder [C]can't help but [F]wonder
 {end_of_verse}
+
+
+
+
+

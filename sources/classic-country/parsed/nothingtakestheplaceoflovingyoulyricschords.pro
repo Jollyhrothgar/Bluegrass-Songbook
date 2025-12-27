@@ -1,6 +1,9 @@
 {meta: title Nothing Takes The Place Of Loving You}
 {meta: artist Stonewall Jackson}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file nothingtakestheplaceoflovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've tried everything that I could think of
@@ -40,3 +43,8 @@ I thought that I could find someone to help me
 {start_of_verse: Verse 5}
 [F]Nothing takes the place of loving [C]you
 {end_of_verse}
+
+
+
+
+

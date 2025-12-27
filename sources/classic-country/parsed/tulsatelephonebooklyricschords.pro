@@ -1,5 +1,8 @@
 {meta: title Tulsa Telephone Book}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file tulsatelephonebooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have you read any good telephone books [F]lately
@@ -39,3 +42,8 @@ Reading that [G7]Tulsa telephone book can [F]drive a guy [C]insane
 {start_of_verse: Verse 5}
 I'm reading that Tulsa [G7]telephone book [C]again
 {end_of_verse}
+
+
+
+
+

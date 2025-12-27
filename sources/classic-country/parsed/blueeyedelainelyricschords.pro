@@ -1,5 +1,8 @@
 {meta: title Blue Eyed Elaine}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file blueeyedelainelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Side by side we'll roll along [F]sweetheart you and [C]I
@@ -28,3 +31,6 @@ Blue eyed Elaine you're the sweetest thing [F]and I love you [C]so
 [C]We'll travel here we'll travel there and [F]we'll never [C]part
 [F]You'll always be my blue [C]eyed Elaine and [G7]I'll be your [C]sweetheart
 {end_of_verse}
+
+
+

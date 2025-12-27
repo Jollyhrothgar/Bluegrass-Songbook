@@ -1,6 +1,9 @@
 {meta: title Only A Fool}
 {meta: artist Dottie West}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file onlyafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Only a [G]fool could [D7]keep on loving [G]you
@@ -30,3 +33,7 @@ Only a [G]fool would [D7]ever let you [G]go
 {start_of_verse: Verse 5}
 [C]Only a [G]fool would [D7]ever let you [G]go
 {end_of_verse}
+
+
+
+

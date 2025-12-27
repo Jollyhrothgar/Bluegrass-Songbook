@@ -1,6 +1,9 @@
 {meta: title I Made Her Bad}
 {meta: artist Bobby Helms}
 {meta: composer Harold Lowry}
+{meta: x_source classic-country}
+{meta: x_source_file imadeherbadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight in a barroom she's [F]sitting
@@ -29,3 +32,6 @@ With [F]all my [G7]running a[C]round[G7]
 [C]She [F]was a [G7]good girl 
 But [F]I [G7]let her [C]down
 {end_of_verse}
+
+
+

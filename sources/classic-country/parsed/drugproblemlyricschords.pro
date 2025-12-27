@@ -1,6 +1,9 @@
 {meta: title Drug Problem}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file drugproblemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear people talkin' about going cold turkey
@@ -64,3 +67,11 @@ Still affecting every[F]thing I do and [C]say
 And if [F]kids today had those kind of [C]drug [Am]problems
 I [C]believe the world would [G7]be a better [C]place
 {end_of_verse}
+
+
+
+
+
+
+
+

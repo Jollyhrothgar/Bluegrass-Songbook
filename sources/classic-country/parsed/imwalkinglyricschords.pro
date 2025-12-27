@@ -1,6 +1,9 @@
 {meta: title I'm Walking}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Antoine Domino}
+{meta: x_source classic-country}
+{meta: x_source_file imwalkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm walking 
@@ -43,3 +46,8 @@ All you gotta do is [D7]dry your eyes
 'Bout [C]you and me I'm [G]hoping
 That [D7]you'll come back to [G]me
 {end_of_verse}
+
+
+
+
+

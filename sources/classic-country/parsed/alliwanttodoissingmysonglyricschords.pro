@@ -1,6 +1,9 @@
 {meta: title All I Want To Do Is Sing My Song}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard and Freddy Powers}
+{meta: x_source classic-country}
+{meta: x_source_file alliwanttodoissingmysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All I wanna do is sing my [Am]song [D7]
@@ -29,3 +32,6 @@ And [Am]when the show is [D7]over I'll be [G]waitin' by the [G7]phone
 And [C]if the phone starts [B7]ringin' with [Em]honey please come [Am]home
 Who [D7]knows I might sing my way back [G]home
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Not What I Had In Mind}
 {meta: artist George Jones}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file notwhatihadinmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just thought I'd have a little [C]fun and paint the [G]town
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [C]No that's [G]not exactly [D7]what I had in [G]mind
 {end_of_verse}
+
+
+
+

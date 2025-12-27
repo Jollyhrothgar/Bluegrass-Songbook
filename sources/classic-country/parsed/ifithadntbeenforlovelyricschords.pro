@@ -1,6 +1,9 @@
 {meta: title If It Hadn't Been For Love}
 {meta: artist The Steeldrivers}
 {meta: composer Michael James Henderson and Chris Stapleton}
+{meta: x_source classic-country}
+{meta: x_source_file ifithadntbeenforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Never woulda hitch hiked to Birmingham
@@ -66,3 +69,9 @@ If it [E7]hadn't been for [Am]love
 If it [F]hadn't been
 If it [E7]hadn't been for [Am]love
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sweet Promises}
 {meta: artist Charlie Pride}
 {meta: composer Duane Valentry}
+{meta: x_source classic-country}
+{meta: x_source_file sweetpromiseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Promises sweet [D7]promises [G]promises sweet [D7]promises)
@@ -32,3 +35,7 @@
 [C]Let some other fool fall for [G]all those [E7]cruel sweet [D7][A7]pro-mises from [G]you
 [C](Promises promises [G]promises)
 {end_of_verse}
+
+
+
+

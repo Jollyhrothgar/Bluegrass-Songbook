@@ -1,6 +1,9 @@
 {meta: title The Wild One}
 {meta: artist Johnny Horton}
 {meta: composer Merle Kilgore and Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file thewildonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Give me my cycle with [G7]star filled sky [C]above
@@ -37,3 +40,8 @@ I am the wild one I am the wild one
 I am the wild one I am the wild one
 [G7]I am the wild one I'll never settle [C]down
 {end_of_verse}
+
+
+
+
+

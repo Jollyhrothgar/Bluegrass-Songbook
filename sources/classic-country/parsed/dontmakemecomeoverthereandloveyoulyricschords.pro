@@ -1,6 +1,9 @@
 {meta: title Don't Make Me Come Over There And Love You}
 {meta: artist George Strait}
 {meta: composer Jim Lauderdale and Carter Wood}
+{meta: x_source classic-country}
+{meta: x_source_file dontmakemecomeoverthereandloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't make me come over there and [D7]love you
@@ -45,3 +48,9 @@ Don't make me come over there and [C]love you
 Cause I [D7]will right [G]now  yes I [D7]will right [G]now
 Don't make me [D7]come over there and [G]love you
 {end_of_verse}
+
+
+
+
+
+

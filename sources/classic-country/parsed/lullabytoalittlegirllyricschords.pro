@@ -1,6 +1,9 @@
 {meta: title Lullaby To A Little Girl}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file lullabytoalittlegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Hush a [C]bye don't you cry 
@@ -29,3 +32,6 @@ Will be [G7]real wait and [C]see
 When you [F]open your [C]eyes 
 And see [G7]mommy and [F]me[C]
 {end_of_verse}
+
+
+

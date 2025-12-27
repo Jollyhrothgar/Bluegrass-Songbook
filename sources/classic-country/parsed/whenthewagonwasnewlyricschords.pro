@@ -1,6 +1,9 @@
 {meta: title When The Wagon Was New}
 {meta: artist Jim and Jesse}
 {meta: composer Sam McGee}
+{meta: x_source classic-country}
+{meta: x_source_file whenthewagonwasnewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's an old rusty wagon that's [C]left to rot [G]away
@@ -47,3 +50,9 @@ Oh we [C]used to go to church on [G]Sunday [D7]when the wagon was [G]new
 {start_of_verse: Verse 5}
 Oh we [C]used to go to church on [G]Sunday [D7]when the wagon was [G]new
 {end_of_verse}
+
+
+
+
+
+

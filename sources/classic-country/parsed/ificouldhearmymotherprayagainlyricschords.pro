@@ -1,6 +1,9 @@
 {meta: title If I Could Hear My Mother Pray Again}
 {meta: artist George Jones}
 {meta: composer James Rowe and James W. Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldhearmymotherprayagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How sweet and happy seemed those [C]days of which I [G]dream
@@ -43,3 +46,8 @@ If I could hear her [A7]tender voice as [D7]then
 H[G]ow happy I would be with who m[C]eans so much to m[G]e
 If I could hear my mother [D7]pray [G]again
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Kaw-Liga}
 {meta: artist Boxcar Willie}
 {meta: composer Hank Williams and Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file hawligalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Kaw-Liga was a wooden Indian standin' by the door
@@ -63,3 +66,10 @@ Poor ol' Kaw-Liga he never got a kiss
 [C]Is he any wonder that his face is [G7]red
 Kaw-Liga that poor old wooden [C]head
 {end_of_verse}
+
+
+
+
+
+
+

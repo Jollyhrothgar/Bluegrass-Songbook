@@ -1,6 +1,9 @@
 {meta: title How Great Thou Art}
 {meta: artist Elvis Presley}
 {meta: composer Stuart Hine}
+{meta: x_source classic-country}
+{meta: x_source_file howgreatthouartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh [D7]Lord my God [G]when I in awesome [C]wonder
@@ -23,3 +26,5 @@
 [C]Then sings my soul my Savior God to [G]Thee
 [Am]How great [D7]Thou art how great Thou [G]art
 {end_of_verse}
+
+

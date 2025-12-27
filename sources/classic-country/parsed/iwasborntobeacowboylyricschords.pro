@@ -1,5 +1,8 @@
 {meta: title I Was Born To Be A Cowboy}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file iwasborntobeacowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wake up every morning in a [F]different place and [C]time
@@ -32,3 +35,7 @@ Cause [F]every time I win it just keeps [G7]driving me [C]on
 {start_of_verse: Verse 4}
 [F]Every time I win it just keeps [G7]driving me [C]on
 {end_of_verse}
+
+
+
+

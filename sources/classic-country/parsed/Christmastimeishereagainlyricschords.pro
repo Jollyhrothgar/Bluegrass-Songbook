@@ -1,5 +1,8 @@
 {meta: title Christmas Time Is Here Again}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file Christmastimeishereagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sleigh bells ringing in the [G7]lane
@@ -33,3 +36,7 @@
 [F]Be real good cause if you do
 [C]Santa might be [G7]good to [C]you
 {end_of_verse}
+
+
+
+

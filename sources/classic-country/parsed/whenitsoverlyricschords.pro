@@ -1,6 +1,9 @@
 {meta: title When It's Over}
 {meta: artist Carl Smith}
 {meta: composer Carl Belew and Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file whenitsoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 I don't mean [C]to cheat on you 
@@ -50,3 +53,9 @@ It don't mean I love you [C]less
 I just need someone [F]around
 Cause I [C]can't face the [G7]loneliness 
 {end_of_verse}
+
+
+
+
+
+

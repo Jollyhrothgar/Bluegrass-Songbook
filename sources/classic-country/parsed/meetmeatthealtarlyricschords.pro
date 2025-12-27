@@ -1,6 +1,9 @@
 {meta: title Meet Me At The Altar}
 {meta: artist Eddy Arnold}
 {meta: composer Don Deal and Chuck Deal}
+{meta: x_source classic-country}
+{meta: x_source_file meetmeatthealtarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Meet me at the [C]altar 
@@ -36,3 +39,7 @@ Kneel with [D7]me in [G]prayer
 Side by side at the [C]altar[Am] 
 The one who [G]kno[Am]ws is [D7]waiting [G]there
 {end_of_verse}
+
+
+
+

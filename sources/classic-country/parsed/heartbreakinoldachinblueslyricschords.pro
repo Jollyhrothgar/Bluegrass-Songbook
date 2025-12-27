@@ -1,6 +1,9 @@
 {meta: title Heartbreakin' Old Achin' Blues}
 {meta: artist Rhonda Vincent}
 {meta: composer Mickey Harris and Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakinoldachinblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the road so far from home
@@ -40,3 +43,8 @@ These heartbreakin' [G7]old achin' [C]blues
 {start_of_verse: Verse 5}
 These heartbreakin' [G7]old achin' [C]blues
 {end_of_verse}
+
+
+
+
+

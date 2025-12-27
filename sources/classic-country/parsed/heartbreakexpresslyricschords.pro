@@ -1,5 +1,8 @@
 {meta: title Heartbreak Express}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakexpresslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Packing my suitcase writing a tearstained [F]goodbye [C]note
@@ -39,3 +42,8 @@
 {start_of_verse: Verse 6}
 [G7]Feeling alone while a low whistle moans on the heartbreak [C]express
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Are You Sad Tonight}
 {meta: artist J.D. Crowe}
 {meta: composer Glenn R. Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file areyousadtonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Are you sad tonight do you [G7]sleep all alone
@@ -29,3 +32,6 @@ Did you think the love we had had turned to [C]stone
 I just had to call to make [G7]sure you're alright
 Even [F]though you don't love me any[G7]more
 {end_of_verse}
+
+
+

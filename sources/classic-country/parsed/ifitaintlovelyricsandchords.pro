@@ -1,6 +1,9 @@
 {meta: title If It Ain't Love}
 {meta: artist Jack Greene}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file ifitaintlovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it ain't love then let's don't 
@@ -40,3 +43,8 @@ If it ain't love then let's don't [A]temp our foolish hearts
 {start_of_verse: Verse 6}
 Leave it [A]alon[C]e leave it [A]alon[C]e
 {end_of_verse}
+
+
+
+
+

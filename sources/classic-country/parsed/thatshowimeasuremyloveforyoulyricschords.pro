@@ -1,5 +1,8 @@
 {meta: title That's How I Measure My Love For You}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thatshowimeasuremyloveforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]High as the sky is my love for [D7]you 
@@ -28,3 +31,6 @@ Warm as the sun that comes shining [G]through
 Strong as a wave [G7]on the ocean [C]blue 
 [G]That's how I [D7]measure my love for [G]you
 {end_of_verse}
+
+
+

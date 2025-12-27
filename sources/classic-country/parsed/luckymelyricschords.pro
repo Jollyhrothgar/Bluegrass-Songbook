@@ -1,5 +1,8 @@
 {meta: title Lucky Me}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file luckymelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lucky me finding you a ray of sunshine out of the [D7]blue
@@ -45,3 +48,8 @@ Without your love oh [G]where would I be
 {start_of_verse: Verse 4}
 [D7]Beautiful you lucky [G]me
 {end_of_verse}
+
+
+
+
+

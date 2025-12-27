@@ -1,6 +1,9 @@
 {meta: title Three Nickels And A Dime}
 {meta: artist Leona Williams}
 {meta: composer Wayne Helton and Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file threenickelsandadimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We once were so happy you [C]drove the finest cars
@@ -33,3 +36,7 @@ Someday your memory [G]won’t be worth three [D7]nickels and a [G]dime
 {start_of_verse: Verse 4}
 [C]Someday your memory [G]won’t be worth three [D7]nickels and a [G]dime
 {end_of_verse}
+
+
+
+

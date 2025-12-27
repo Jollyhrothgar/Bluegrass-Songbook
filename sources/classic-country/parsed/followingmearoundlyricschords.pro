@@ -1,5 +1,8 @@
 {meta: title Following Me Around}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file followingmearoundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She always follows [B7]me from town to [C]town
@@ -32,3 +35,7 @@ With her [G]memory al[D7]ways following me [G]around
 {start_of_verse: Verse 5}
 With her memory al[D7]ways following me [G]around
 {end_of_verse}
+
+
+
+

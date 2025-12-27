@@ -1,6 +1,9 @@
 {meta: title Tiny Town}
 {meta: artist Tracy Byrd}
 {meta: composer Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file tinytownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I grew up in a [G7]tiny town 
@@ -55,3 +58,10 @@ That [G7]I was raised in a tiny [C]town
 Yeah I'm [Dm]proud to say 
 That I was [G7]raised in a tiny [C]town
 {end_of_verse}
+
+
+
+
+
+
+

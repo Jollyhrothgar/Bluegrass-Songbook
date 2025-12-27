@@ -1,6 +1,9 @@
 {meta: title Put Your Arms Around Her}
 {meta: artist Norma Jean}
 {meta: composer Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file putyourarmsaroundherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Put your arms [C]around her [D7]that's where your [G]love is
@@ -22,3 +25,5 @@ And [C]if you're happy then [D7]that's good enough for [G]me
 [G]Put your arms [C]around her [D7]that's where your [G]dreams are
 And [C]if you're happy then [D7]that's good enough for [G]me
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title I'll Be Lonesome When You're Gone}
 {meta: artist Myrna Lorrie}
+{meta: x_source classic-country}
+{meta: x_source_file illbelonesomewhenyouregonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today you tell me you are [F]leaving
@@ -21,3 +24,5 @@ I go to all the familiar [F]places
 It's no use I guess I'll [F]face it
 [G7]I'll be lonesome when you're [C]gone
 {end_of_verse}
+
+

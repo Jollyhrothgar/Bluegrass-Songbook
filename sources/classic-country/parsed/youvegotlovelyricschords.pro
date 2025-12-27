@@ -1,5 +1,8 @@
 {meta: title You've Got Love}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You got two lips that look so [D7]fine
@@ -38,3 +41,8 @@
 [G]Your love was meant for [D7]me
 [C]Love [D7]sweet love you got [G]love
 {end_of_verse}
+
+
+
+
+

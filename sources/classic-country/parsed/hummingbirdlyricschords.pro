@@ -1,6 +1,9 @@
 {meta: title Hummingbird}
 {meta: artist Les Paul and Mary Ford}
 {meta: composer Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file hummingbirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hummingbird hummingbird [D7]should be your [G]name
@@ -50,3 +53,8 @@ Then [G]feather a nest to be [C]shattered [G]apart
 By the hum hum of [D7]your hummingbird [G]heart
 By the hum hum of [D7]your hummingbird [G]heart
 {end_of_verse}
+
+
+
+
+

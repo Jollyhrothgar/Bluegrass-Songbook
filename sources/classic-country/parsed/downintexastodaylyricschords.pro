@@ -1,6 +1,9 @@
 {meta: title Down In Texas Today}
 {meta: artist Curtis Potter}
 {meta: composer Mel W. Holt}
+{meta: x_source classic-country}
+{meta: x_source_file downintexastodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down in Texas today there's [C]this song that they play
@@ -29,3 +32,6 @@ That ol [A7]boy loved that gal but love went [D7]wrong
 It's been [G]almost a year but from [C]all that I [A7]hear
 Down [D7]in Texas today they're still playing our [G]songs
 {end_of_verse}
+
+
+

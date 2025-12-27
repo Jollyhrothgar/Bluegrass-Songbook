@@ -1,5 +1,8 @@
 {meta: title Lone Star Lonely}
 {meta: artist Charley Pride}
+{meta: x_source classic-country}
+{meta: x_source_file lonestarlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can’t sleep what’s wrong with [D7]me
@@ -32,3 +35,7 @@ I [D7]see a million stars tonight but I’m lone star [G]lonely
 {start_of_verse: Verse 5}
 Oh I [D7]see a million stars tonight but I’m lone star [G]lonely
 {end_of_verse}
+
+
+
+

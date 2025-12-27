@@ -1,6 +1,9 @@
 {meta: title Smokey Blue Eyes}
 {meta: artist David Houston}
 {meta: composer Fay Kirkland, Ann Horton, Morgan Reese}
+{meta: x_source classic-country}
+{meta: x_source_file smokeyblueeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](Smokey blue [C]eyes)
@@ -32,3 +35,7 @@ As I [C]turned and kissed the angel [G7]with smokey blue [C]eyes
 [F]Smokey blue eyes [C]smokey blue eyes
 I [F]fell so in [C]love [G7]with smokey blue [C]eyes
 {end_of_verse}
+
+
+
+

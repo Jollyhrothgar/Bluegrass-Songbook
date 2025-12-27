@@ -1,6 +1,9 @@
 {meta: title When You Fall In Love Every Thing's A Waltz chords}
 {meta: artist Ed Bruce}
 {meta: composer Patsy Bruce, Ron Peterson and Ed Bruce}
+{meta: x_source classic-country}
+{meta: x_source_file whenyoufallinloveeverythingsawaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We don't dance the [C]two-step [D7]anymore
@@ -29,3 +32,6 @@ But all we need's the music that our two hearts [G]make
 Beating soft three-quarter time and we [C]just sing [D7]along
 When you fall in love everything's a [G]waltz
 {end_of_verse}
+
+
+

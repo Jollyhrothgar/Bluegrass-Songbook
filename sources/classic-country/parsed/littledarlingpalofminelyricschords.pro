@@ -1,6 +1,9 @@
 {meta: title Little Darling Pal Of Mine}
 {meta: artist Lucinda Williams}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file littledarlingpalofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My little [F]darling oh how I love [C]you
@@ -50,3 +53,9 @@ How I [G7]love you none can [C]tell
 In your [F]heart you love [C]another 
 Little darling pal [G7]of [C]mine 
 {end_of_verse}
+
+
+
+
+
+

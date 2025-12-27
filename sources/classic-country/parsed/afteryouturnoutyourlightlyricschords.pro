@@ -1,6 +1,9 @@
 {meta: title After You Turn Out Your Light}
 {meta: artist Roy Drusky}
 {meta: composer Roy Drusky and Bill Brock}
+{meta: x_source classic-country}
+{meta: x_source_file afteryouturnoutyourlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]After you're alone at night 
@@ -36,3 +39,7 @@ When I'm not in [F]sight
 Are you still loving [C]me 
 [G7]After you turn out your [C]light
 {end_of_verse}
+
+
+
+

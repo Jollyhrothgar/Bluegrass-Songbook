@@ -1,6 +1,9 @@
 {meta: title The Rock}
 {meta: artist Tracy Lawrence}
 {meta: composer Thom Shepherd}
+{meta: x_source classic-country}
+{meta: x_source_file therocklyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Outside Sa[F]vanna spring of [G7]184[C]4
@@ -63,3 +66,11 @@ Held to[F]gether by the [G7]faithful gathered [C]here
 Outside Sa[F]vannah Spring of [G7]184[C]4
 They drove the [F]last nail [C]in and [G7]opened up my [F]doors[C]
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My One Desire}
 {meta: artist Ricky Nelson}
 {meta: composer Dorsey Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file myonedesirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wanna walk with ya talk with ya all about love
@@ -39,3 +42,9 @@ I want a date with ya would be great with ya baby tonight
 [C]Just to be with you baby [D7]tonight is my one [G]desire
 [C]Just to be with you baby [D7]tonight is my one [G]desire
 {end_of_verse}
+
+
+
+
+
+

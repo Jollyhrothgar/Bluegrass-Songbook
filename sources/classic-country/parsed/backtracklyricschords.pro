@@ -1,6 +1,9 @@
 {meta: title Backtrack}
 {meta: artist Faron Young}
 {meta: composer Alex Zanetis and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file backtracklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I've never been so [G7]lonely and I've never been so [C]blue
@@ -23,3 +26,5 @@ I'm leaving in the [F]morning gonna [C]backtrack  [G7]to [C]you
 [F]Gonna [C]backtrack  [G7]to [C]you  
 [F]Gonna [C]backtrack  [G7]to [C]you  
 {end_of_verse}
+
+

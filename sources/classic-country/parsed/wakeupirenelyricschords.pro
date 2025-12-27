@@ -1,6 +1,9 @@
 {meta: title Wake Up Irene}
 {meta: artist Hank Thompson}
 {meta: composer Weldon Allard and Johnny Hathcock}
+{meta: x_source classic-country}
+{meta: x_source_file wakeupirenelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For months and months and [C]months around the [G]country 
@@ -43,3 +46,8 @@ Man you ought to [D7]hear that women [G]snore
 [C]Wakeup Irene and pay for your [G]bed 
 Wakeup Irene or [D7]folks will think your [G]dead
 {end_of_verse}
+
+
+
+
+

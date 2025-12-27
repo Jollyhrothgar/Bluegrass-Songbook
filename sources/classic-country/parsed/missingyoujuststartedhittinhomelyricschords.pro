@@ -1,6 +1,9 @@
 {meta: title Missing You Just Started Hittin' Home}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby, Warren Robb, Shirl Milete}
+{meta: x_source classic-country}
+{meta: x_source_file missingyoujuststartedhittinhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The happy hour is over and the [G7]crowd is gone
@@ -33,3 +36,7 @@ If I've [C]got to hurt this bad then I don't [F]wanna live too long
 {start_of_verse: Verse 4}
 Missing you [G7]just started hittin' [F]hom[C]e
 {end_of_verse}
+
+
+
+

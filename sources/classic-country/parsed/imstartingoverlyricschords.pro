@@ -1,6 +1,9 @@
 {meta: title I’m Starting Over}
 {meta: artist Ricky Van Shelton}
 {meta: composer Kix Brooks, Mark Sherrill, John W. Ryles}
+{meta: x_source classic-country}
+{meta: x_source_file imstartingoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know you're [D7]surprised to see [G]me here [C]tonight
@@ -33,3 +36,7 @@ I'm starting [G]over [D7]loving you [G]again
 {start_of_verse: Verse 5}
 [C]I'm starting [G]over [D7]loving you [G]again
 {end_of_verse}
+
+
+
+

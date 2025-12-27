@@ -1,6 +1,9 @@
 {meta: title There's A Little Bit Of Hank In Me}
 {meta: artist Charlie Pride}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file theresalittlebitofhankinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well Hank I never met you [F]but I sure heard you [C]sing
@@ -34,3 +37,7 @@ And every time I sing Kaw-Liga [G7]there's a little bit of Hank in [C]me
 {start_of_verse: Verse 4}
 And every time I sing Kaw-Liga [G7]there's a little bit of Hank in [C]me
 {end_of_verse}
+
+
+
+

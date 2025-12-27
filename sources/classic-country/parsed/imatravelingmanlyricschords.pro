@@ -1,6 +1,9 @@
 {meta: title I'm A Traveling Man}
 {meta: artist Ricky Nelson}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file imatravelingmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a traveling man made a [Am]lot of stops all over the [C]world
@@ -22,3 +25,5 @@
 [C]Pretty Polynesian baby  over [Am]the sea  I remember the [C]night
 [Am]When we walked in the sands [F]of Wai Ki Ki and [C]I held her oh [G7]so [C]tight
 {end_of_verse}
+
+

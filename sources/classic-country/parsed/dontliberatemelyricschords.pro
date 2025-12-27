@@ -1,6 +1,9 @@
 {meta: title Don't Liberate Me}
 {meta: artist Tammy Wynette}
 {meta: composer Clyde Pitts and Van Givens}
+{meta: x_source classic-country}
+{meta: x_source_file dontliberatemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]To-[G]day a group of [A7]women came to [D7]see me
@@ -23,3 +26,5 @@ There's [G]more than one difference in a [C]woman and a man
 And [D7]I'm convinced that's the way God meant it to [G]be [C]
 So [G]love me and [D7]don't liberate [C]me[G]
 {end_of_verse}
+
+

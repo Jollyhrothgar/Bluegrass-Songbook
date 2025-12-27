@@ -1,6 +1,9 @@
 {meta: title Again Today}
 {meta: artist Faron Young}
 {meta: composer Ernie Reed}
+{meta: x_source classic-country}
+{meta: x_source_file againtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Again [C]today I [F]almost [G7]lost my [C]mind
@@ -35,3 +38,8 @@ Then I remember how you used me
 {start_of_verse: Verse 6}
 [G7]My memory saved my life again [C]today
 {end_of_verse}
+
+
+
+
+

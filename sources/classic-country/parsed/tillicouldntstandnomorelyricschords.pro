@@ -1,6 +1,9 @@
 {meta: title Till I Couldn't Stand No More}
 {meta: artist Carl Perkins}
 {meta: composer Pamela Patton}
+{meta: x_source classic-country}
+{meta: x_source_file tillicouldntstandnomorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just woke up and eighteen [G7]years are [A7]gone
@@ -33,3 +36,7 @@ You know [D7]I stood there till I couldn’t stand no [G]more
 {start_of_verse: Verse 5}
 Baby [D7]I stood there till I couldn’t stand no [G]more
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Oh Baby Mine}
 {meta: artist Statler Brothers}
 {meta: composer Pat Ballard}
+{meta: x_source classic-country}
+{meta: x_source_file ohbabyminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh baby mine I get so lonely
@@ -48,3 +51,10 @@ Life would be so [C]fair
 {start_of_verse: Verse 8}
 Oh baby [G7]life would be so [C]fair
 {end_of_verse}
+
+
+
+
+
+
+

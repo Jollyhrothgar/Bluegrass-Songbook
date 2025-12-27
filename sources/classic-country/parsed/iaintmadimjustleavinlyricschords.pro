@@ -1,6 +1,9 @@
 {meta: title I Ain't Mad I'm Just Leavin'}
 {meta: artist George Hamilton IV}
 {meta: composer Johnny Russell}
+{meta: x_source classic-country}
+{meta: x_source_file iaintmadimjustleavinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well my old shirt pocket's filled with [D7]everything I own
@@ -38,3 +41,8 @@ I [D7]had a good thing a goin' for me but my good times never [G]last
 But I ain't [C]mad (I ain't mad) I'm just [G]leavin' (I'm just leavin')
 And I don't see anybody sittin' [D7]there by the roadside [G]grievin'
 {end_of_verse}
+
+
+
+
+

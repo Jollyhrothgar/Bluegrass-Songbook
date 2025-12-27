@@ -1,6 +1,9 @@
 {meta: title Someone's Gotta Cry}
 {meta: artist Jean Shepard}
 {meta: composer Don Bowman}
+{meta: x_source classic-country}
+{meta: x_source_file someonesgottacrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someone's gotta [F]cry when love is [C]over 
@@ -26,3 +29,5 @@ But [D7]anytime a true love dies a few tears must be [G7]shed
 You smile at her she [F]smiles at you you're [C]happy
 [F]But someone's gotta [G7]cry and that leads [C]me
 {end_of_verse}
+
+

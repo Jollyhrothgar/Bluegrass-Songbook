@@ -1,6 +1,9 @@
 {meta: title Memory}
 {meta: artist Jean Shepard}
 {meta: composer Gertrude Cox}
+{meta: x_source classic-country}
+{meta: x_source_file memorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Old [G7]memory [C]keep [C7]him rememberin' [F]me
@@ -22,3 +25,5 @@
 [C]Let every hour we spent and [C7]every place we [F]went
 [C]Be in [G7]his memory the ones he'll [C]miss
 {end_of_verse}
+
+

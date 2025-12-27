@@ -1,6 +1,9 @@
 {meta: title I Can't Keep My Hands Off Of You}
 {meta: artist Waylon Jennings}
 {meta: composer Bobby Borchers and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file icantkeepmyhandsoffofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You know I can't [G7]stand to be [C]around you
@@ -29,3 +32,6 @@ We [D7]shared something precious for a [G]while [G7]
 You look [C]just like a baby in a [G]cradle to me
 And I [D7]just can't keep my hands off of [G]you
 {end_of_verse}
+
+
+

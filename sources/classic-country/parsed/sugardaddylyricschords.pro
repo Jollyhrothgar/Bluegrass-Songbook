@@ -1,6 +1,9 @@
 {meta: title Sugar Daddy}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file sugardaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What you need's a sugar daddy  
@@ -46,3 +49,8 @@
 {start_of_verse: Verse 4}
 [C]What you need is [G7]me to love [F]you[C]
 {end_of_verse}
+
+
+
+
+

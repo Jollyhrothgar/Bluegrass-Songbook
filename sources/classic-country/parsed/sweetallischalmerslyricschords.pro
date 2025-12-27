@@ -1,6 +1,9 @@
 {meta: title Sweet Allis Chalmers}
 {meta: artist The Country Gazette}
 {meta: composer Bill Caswell}
+{meta: x_source classic-country}
+{meta: x_source_file sweetallischalmerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Sweet Allis [D]Chalmers I’ve [A#7]rode you so [A7]long
@@ -46,3 +49,9 @@
 [F]Your [D]rusty exhaust pipe she [A#7]hums me a [A7]song
 [G7]That sounds just as bad as I [C]feel
 {end_of_verse}
+
+
+
+
+
+

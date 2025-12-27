@@ -1,6 +1,9 @@
 {meta: title Those Two Blue Eyes}
 {meta: artist Ricky Skaggs}
 {meta: composer Lonnie Nipper and John Sloas}
+{meta: x_source classic-country}
+{meta: x_source_file thosetwoblueeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the day that I first saw you
@@ -29,3 +32,6 @@ Just like a [G7]fool I trusted [C]you
 Those two blue eyes I loved so well
 What they done to [G7]me no one can [C]tell
 {end_of_verse}
+
+
+

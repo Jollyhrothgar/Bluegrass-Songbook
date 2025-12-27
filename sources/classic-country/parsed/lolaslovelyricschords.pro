@@ -1,6 +1,9 @@
 {meta: title Lola's Love}
 {meta: artist Ricky Van Shelton}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file lolaslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look at her move inside of that skintight dress
@@ -49,3 +52,9 @@ And [C]son that feelin' ain't [G7]never gonna let you [C]go
 [G7]Can't get enough of [C]Lola [G7]can't get enough of [C]Lola
 [G7]Can't get enough of [C]Lola [G7]can't get enough of [C]Lola
 {end_of_verse}
+
+
+
+
+
+

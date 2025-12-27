@@ -1,5 +1,8 @@
 {meta: title Take Me Back Again}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file takemebackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each new day brings heartaches by the [F]number 
@@ -28,3 +31,6 @@ Take me back again make me live [F]again
 [C]Kiss these lips of mine just like old [F]times 
 [C]Darling take me [G7]back [C]again again [C][G7]again
 {end_of_verse}
+
+
+

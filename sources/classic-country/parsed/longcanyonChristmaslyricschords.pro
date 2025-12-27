@@ -1,6 +1,9 @@
 {meta: title Long Canyon Christmas}
 {meta: artist Red Steagall}
 {meta: composer R.W. Hampton}
+{meta: x_source classic-country}
+{meta: x_source_file longcanyonChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It’s cold and it’s windy up here on the flats
@@ -49,3 +52,9 @@ No [C]it’s not the [D7]cold wind I’m [G]thinking about a [C]baby boy
 And a [G]long long [D7]ago Christmas [G]night
 And what a friend we have in [C]Jesus
 {end_of_verse}
+
+
+
+
+
+

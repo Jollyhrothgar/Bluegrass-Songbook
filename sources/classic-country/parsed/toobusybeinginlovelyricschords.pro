@@ -1,6 +1,9 @@
 {meta: title Too Busy Being In Love}
 {meta: artist Doug Stone}
 {meta: composer Gary Burr and Victoria Shaw}
+{meta: x_source classic-country}
+{meta: x_source_file toobusybeinginlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I had taken the [Dm]time to write down a few [Em]lines
@@ -52,3 +55,8 @@ But I [Am]have no [F]regrets for not [G7]doing [Am]enough
 [F]Well I was too [C]busy [G7]being in [Am]love
 [F]Yes I was too [C]busy [G7]being in [C]love
 {end_of_verse}
+
+
+
+
+

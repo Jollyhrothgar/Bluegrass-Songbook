@@ -1,5 +1,8 @@
 {meta: title Feels Like Love}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file feelslikelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look what my [Am]heart has [F]gotten in[G7]to 
@@ -42,3 +45,8 @@ Lord it [F]feels like [C]love finally [F]called my [C]name
 I wanna [F]jump and [C]shout I wanna [F]sing and [C]dance
 Lord it feels like [Am]love wants a [F]second chance
 {end_of_verse}
+
+
+
+
+

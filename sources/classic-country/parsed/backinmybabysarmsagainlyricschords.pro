@@ -1,6 +1,9 @@
 {meta: title Back In My Baby's Arms Again}
 {meta: artist Charlie Walker}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file backinmybabysarmsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Honey bees are gonna be hummin' 
@@ -46,3 +49,8 @@ When I'm back in my [G7]baby's arms [C]again
 {start_of_verse: Verse 5}
 When I'm back in my [G7]baby's arms [C]again
 {end_of_verse}
+
+
+
+
+

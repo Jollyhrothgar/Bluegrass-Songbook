@@ -1,6 +1,9 @@
 {meta: title You Helped Me Up When The World Let Me Down}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Clyde Pitts Jr., Carmon D. Holland, Davis Cile}
+{meta: x_source classic-country}
+{meta: x_source_file youhelpedmeupwhentheworldletmedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Taking in consideration honey all that we've been [F]through
@@ -40,3 +43,8 @@
 [C]My problems all were solved the day your sweet love Jerry [F]found
 [C]Yes you helped me up [G7]when the world let me [C]down
 {end_of_verse}
+
+
+
+
+

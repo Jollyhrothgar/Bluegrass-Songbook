@@ -1,6 +1,9 @@
 {meta: title Baby Please}
 {meta: artist Fats Domino}
 {meta: composer Pearl King and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file babypleaselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Baby please don't [G]go
@@ -22,3 +25,5 @@ I sung my [C]song
 Baby please don't [D7]go
 Don't leave me [G]alone
 {end_of_verse}
+
+

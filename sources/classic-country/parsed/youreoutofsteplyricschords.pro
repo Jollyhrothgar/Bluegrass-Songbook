@@ -1,6 +1,9 @@
 {meta: title You're Out Of Step}
 {meta: artist Hank Locklin}
 {meta: composer Don Reynolds and Slim Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file youreoutofsteplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You’re out of step with the beat of my heart
@@ -25,3 +28,6 @@ I see in your eyes dear that something is wrong
 [G]You’ll say you’re sorry but soon we must part
 [D7]You’re out of step with the beat of my [G]heart
 {end_of_verse}
+
+
+

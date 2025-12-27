@@ -1,6 +1,9 @@
 {meta: title Little Robin}
 {meta: artist Marty Robbins}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file littlerobinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Little robin are you ever lonely and [D7]blue
@@ -23,3 +26,5 @@ I [G]cry when I see her out walking with [C]him
 Like [D7]you little robin I'm out on a [G]limb
 Like you little robin I'm out on a limb
 {end_of_verse}
+
+

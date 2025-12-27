@@ -1,5 +1,8 @@
 {meta: title San Francisco Mabel Joy}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file sanfranciscomabeljoylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]His daddy was a honest man a [C]red dirt Georgia [G]farmer
@@ -43,3 +46,8 @@ With a bullet in his side he cried have you [F]seen Mabel [D7]Joy
 She left this house four years ago they [F]say she was looking [D7]for
 Some Georgia [C]farm boy
 {end_of_verse}
+
+
+
+
+

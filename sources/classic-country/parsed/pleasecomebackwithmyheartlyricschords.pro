@@ -1,5 +1,8 @@
 {meta: title Please Come Back With My Heart}
 {meta: artist Norma Jean}
+{meta: x_source classic-country}
+{meta: x_source_file pleasecomebackwithmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Please come back with my [G7]heart [C]without it I can’t start
@@ -26,3 +29,6 @@ Please come [D7]back with my heart so I can love [G]again
 Yes I know you’re gone for [G7]good but [C]darling if you could
 Please come [D7]back with my heart so I can love [G]again
 {end_of_verse}
+
+
+

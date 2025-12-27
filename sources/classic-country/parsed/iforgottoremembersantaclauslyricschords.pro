@@ -1,6 +1,9 @@
 {meta: title I Forgot To Remember Santa Claus}
 {meta: artist Sonny James}
 {meta: composer Sonny James and John Skye}
+{meta: x_source classic-country}
+{meta: x_source_file iforgottoremembersantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I bought a top for Tommy a dresser set for mommy
@@ -43,3 +46,8 @@ So [G7]Santa I’ll go shopping right [C]away
 Before your shopping’s done you be [G]sure to check this one
 Don’t [D7]forget to remember Santa [G]Claus
 {end_of_verse}
+
+
+
+
+

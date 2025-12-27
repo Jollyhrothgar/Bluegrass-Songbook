@@ -1,6 +1,9 @@
 {meta: title Get With It}
 {meta: artist Bob Wills}
 {meta: composer Tommy Duncan and Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file getwithitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rhythm here rhythm there rhythm floatin' [B7]everywhere
@@ -35,3 +38,7 @@ Some like to stomp some like to hop
 [B7]Put on your dress and your loafers too
 [G]Get with it ah get with it [D7]red hot rhythm [G]now
 {end_of_verse}
+
+
+
+

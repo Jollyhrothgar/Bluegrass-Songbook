@@ -1,6 +1,9 @@
 {meta: title Another Honky Tonk Night On Broadway}
 {meta: artist David Frizzell and Shelly West}
 {meta: composer Milton Brown, Snuff Garrett, Stephen H. Dorff}
+{meta: x_source classic-country}
+{meta: x_source_file anotherhonkytonknightonbroadwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sold my horse and [Am]saddle rode the [C]Greydog to New [G7]York
@@ -44,3 +47,8 @@ Till I [C]find my name in neon lights I guess I’m gonna have to stay
 But I’m [Dm]tired of sleepin’ [G7]all alone my [Dm]arms can reach to [G7]San Antoine
 So [Dm]tonight’ll be another [G7]honky tonk night on [C]Broadway
 {end_of_verse}
+
+
+
+
+

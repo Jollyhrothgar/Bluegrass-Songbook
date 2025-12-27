@@ -1,6 +1,9 @@
 {meta: title How Much Is That Doggie In The Window}
 {meta: artist Patti Page}
 {meta: composer Bob Merrill}
+{meta: x_source classic-country}
+{meta: x_source_file howmuchisthatdoggieinthewindowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How much is that doggie in the [G7]window
@@ -43,3 +46,8 @@ The one with the waggley [C]tail
 How much is that doggie in the [G7]window
 I do hope that doggie's for [C]sale
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Show Me Thy Way O Lord}
 {meta: artist Elvis Presley}
 {meta: composer Hazel Shade}
+{meta: x_source classic-country}
+{meta: x_source_file showmethywayolordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Show me thy [D7]ways O [G]Lord
@@ -34,3 +37,7 @@ Help me love when I'm hated
 [C]Spread joy unabated
 [G]Show me thy [D7]ways O [G]Lord
 {end_of_verse}
+
+
+
+

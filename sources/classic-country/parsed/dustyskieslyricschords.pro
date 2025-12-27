@@ -1,6 +1,9 @@
 {meta: title Dusty Skies}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file dustyskieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dusty skies I can't see nothing in sight
@@ -28,3 +31,5 @@ Get along doggies we're moving off of this range
 [F]These ain't tears in my [C]eyes
 [F]Just sand from these dusty [C]skies
 {end_of_verse}
+
+

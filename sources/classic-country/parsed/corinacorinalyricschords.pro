@@ -1,6 +1,9 @@
 {meta: title Corina Corina}
 {meta: artist Brooks and Dunn}
 {meta: composer Shelby Darnell}
+{meta: x_source classic-country}
+{meta: x_source_file corinacorinalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Corina Corina where you been so long
@@ -49,3 +52,10 @@ Corina Corina where you been so long
 Corina [C]Corina where you been so [G]long
 I ain't had no [D7]loving since you've been [G]gone
 {end_of_verse}
+
+
+
+
+
+
+

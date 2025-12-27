@@ -1,5 +1,8 @@
 {meta: title Take These Chains From My Heart}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file takethesechainsfrommyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take these chains from my heart and set me [D7]free
@@ -29,3 +32,6 @@ You've grown cold and no longer care for [G]me
 All my faith in you is [G7]gone but the [C]heartaches linger [A7]on
 Take these [D7]chains from my heart and set me [G]free
 {end_of_verse}
+
+
+

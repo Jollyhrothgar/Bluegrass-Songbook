@@ -1,6 +1,9 @@
 {meta: title I Ain't Never Seen No One Like You}
 {meta: artist George Strait}
 {meta: composer Roger Springer, Bruce Bouton, Mark Chesnutt}
+{meta: x_source classic-country}
+{meta: x_source_file iaintneverseennoonelikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've traveled through [Am]lots of [D7]places 
@@ -57,3 +60,9 @@ Girl I think it's [Am]fair to [D7]warn ya
 [G]I've done been to [Am]Cali[D7]fornia
 [G]I ain't never [Am]seen no [D7]one like [G]you
 {end_of_verse}
+
+
+
+
+
+

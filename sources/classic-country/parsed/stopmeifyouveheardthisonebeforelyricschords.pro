@@ -1,6 +1,9 @@
 {meta: title Stop Me If You've Heard This One Before}
 {meta: artist Ernest Tubb}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file stopmeifyouveheardthisonebeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Can I buy you a drink you look [C]lonely 
@@ -34,3 +37,7 @@ So please [G]stop me if you've [D7]heard this one [G]before
 And with each word I speak I die a [C]little
 So please [G]stop me if you've [D7]heard this one [G]before
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Change}
 {meta: artist Billy Walker}
 {meta: composer Bobby Sykes}
+{meta: x_source classic-country}
+{meta: x_source_file dontchangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Don’t [C]change you have [G7]loved me so [C]long
@@ -30,3 +33,7 @@ So [C]don’t change there’ll be [G7]no one but [C]you
 {start_of_verse: Verse 5}
 [F]So my darling [G7]don’t [C]change
 {end_of_verse}
+
+
+
+

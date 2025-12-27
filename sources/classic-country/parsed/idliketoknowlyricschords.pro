@@ -1,6 +1,9 @@
 {meta: title I'd Like To Know}
 {meta: artist Jean Shepard}
 {meta: composer Vic McAlpin and Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file idliketoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The lights are low the teardrops flow misery [D7]is [G]complete
@@ -30,3 +33,8 @@
 {start_of_verse: Verse 6}
 [D7]I'd like to know where people go when they leave lonely [G]street
 {end_of_verse}
+
+
+
+
+

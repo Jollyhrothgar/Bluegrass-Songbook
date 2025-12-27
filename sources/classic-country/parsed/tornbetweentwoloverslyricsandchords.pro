@@ -1,6 +1,9 @@
 {meta: title Torn Between Two Lovers}
 {meta: artist Johnny Rodriguez}
 {meta: composer Peter Yarrow and Phillip Jarrell}
+{meta: x_source classic-country}
+{meta: x_source_file tornbetweentwoloverslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are [Dm]times when a man [G7]has to [C]say what's on his mind
@@ -55,3 +58,10 @@ But [Dm]with everything I [F]feel inside I'm [Dm]asking you to [G7]stay
 [Dm]Torn between two [G7]lovers [Em]feeling like a [F#m]fool
 [Dm]Loving you both is [Em]breaking all the [C]rules
 {end_of_verse}
+
+
+
+
+
+
+

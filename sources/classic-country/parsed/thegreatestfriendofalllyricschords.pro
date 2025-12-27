@@ -1,6 +1,9 @@
 {meta: title The Greatest Friend Of All}
 {meta: artist Melba Montgomery}
 {meta: composer Melba Montgomery and Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatestfriendofalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Last [C]night I tried to [F]take my life [C]from me
@@ -37,3 +40,7 @@ Eternal [C]life is with the [G7]greatest friend of [C]all
 {start_of_verse: Verse 4}
 I'll live my life just for the [G7]greatest friend of [C]all
 {end_of_verse}
+
+
+
+

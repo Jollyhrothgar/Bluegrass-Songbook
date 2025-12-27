@@ -1,6 +1,9 @@
 {meta: title Stubborn Heart}
 {meta: artist Kitty Wells}
 {meta: composer Johnnie Masters}
+{meta: x_source classic-country}
+{meta: x_source_file stubbornheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everything that I say seems to upset [G7]you
@@ -29,3 +32,6 @@ Stubborn [F]heart you could be [G7]laughing
 We're like [C]two lonely stars so [C7]far [F]apart
 Honey all that is [C]wrong as your [G7]stubborn [C]heart
 {end_of_verse}
+
+
+

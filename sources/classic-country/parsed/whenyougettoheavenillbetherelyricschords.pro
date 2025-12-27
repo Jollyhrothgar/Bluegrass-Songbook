@@ -1,5 +1,8 @@
 {meta: title When You Get To Heaven (I'll Be There)}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file whenyougettoheavenillbetherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you get to heaven I'll be [C]waiting
@@ -39,3 +42,8 @@ But [G]darling keep your chin up and keep [C]smiling
 {start_of_verse: Verse 4}
 When you get to [D7]heaven I'll be [G]there
 {end_of_verse}
+
+
+
+
+

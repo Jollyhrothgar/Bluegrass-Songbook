@@ -1,6 +1,9 @@
 {meta: title I've Learned To Live}
 {meta: artist Tanya Tucker}
 {meta: composer Dean Dillon and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file ivelearnedtolivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like a [D7]child lost in the [G]wilderness [D7]I knew not where to go
@@ -35,3 +38,7 @@ Cause I'm not [Em]over you and I [C]doubt that I'll [G]ever be[D7]
 But I've [Em]learned to live and [C]you won't be the [G]death of me oh [D7]no
 Yes I've [Em]learned to live [C]and I'm doing well but I'm not [G]over you
 {end_of_verse}
+
+
+
+

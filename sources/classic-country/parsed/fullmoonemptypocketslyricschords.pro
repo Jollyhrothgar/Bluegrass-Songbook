@@ -1,6 +1,9 @@
 {meta: title Full Moon Empty Pockets}
 {meta: artist Stonewall Jackson}
 {meta: composer R. J. Jones and M. Kosser}
+{meta: x_source classic-country}
+{meta: x_source_file fullmoonemptypocketslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Full moon empty [C][F]pockets
@@ -57,3 +60,10 @@
 [F]Full moon empty [C]pockets
 [G7]Want a lady treat a cowboy [C]right
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Finds Its Own Way}
 {meta: artist Ray Price}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file lovefindsitsownwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Girl we've come a long way from [C]nowhere
@@ -57,3 +60,11 @@ Love finds its own way
 [G]Love finds its own way
 [D7]Through the darkest [G]nights
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Sacred Memories}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file sacredmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sacred memories often take me to the [F]place where I grew [C]up
@@ -43,3 +46,8 @@ There is power power [F]wonder working [C]power
 In the [G7]precious blood of [F]lamb
 [C]Sacred memories
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Wide Open Road}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file wideopenroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you said you've had enough you said that you were leavin'
@@ -42,3 +45,8 @@ And honey I [F]want you to [C]know
 You can look [F]down south or you can turn back [C]home
 And there's a [D7]wide open [C][G7]road 
 {end_of_verse}
+
+
+
+
+

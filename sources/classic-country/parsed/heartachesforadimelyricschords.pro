@@ -1,6 +1,9 @@
 {meta: title Heartaches For a Dime}
 {meta: artist Wynn Stewart}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file heartachesforadimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I called you on the phone to say I love [F]you
@@ -29,3 +32,6 @@ Until [G7]I heard somebody play our [C]song
 [F]I only know I've held you [G7]close and kissed you my last [C]time
 And [G7]that's a lot of heartaches for a [C]dime
 {end_of_verse}
+
+
+

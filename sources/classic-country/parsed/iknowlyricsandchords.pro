@@ -1,6 +1,9 @@
 {meta: title I Know}
 {meta: artist Tammy Wynette}
 {meta: composer George Jones and Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file iknowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every day when you come home I [D7]meet you at the [G]door
@@ -25,3 +28,6 @@
 [C]Cause I know you [G]need me I know you want [D7]me
 [G]And I hope you [C]love me [G]I’ve always [D7]told me [G]so
 {end_of_verse}
+
+
+

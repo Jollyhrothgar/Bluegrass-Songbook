@@ -1,6 +1,9 @@
 {meta: title Half As Good A Girl}
 {meta: artist Wanda Jackson}
 {meta: composer Jack Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file halfasgoodagirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While walking down the street one day
@@ -36,3 +39,7 @@ But my conscience still hurts me I know it’s not [D7]right
 Girls [G]remember this story before [C]you go too [G]far
 Are you [C]half as good a [G]girl as your [D7]mother thinks you [G]are
 {end_of_verse}
+
+
+
+

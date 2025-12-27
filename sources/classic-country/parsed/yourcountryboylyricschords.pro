@@ -1,6 +1,9 @@
 {meta: title Your Country Boy}
 {meta: artist Jimmy Dean}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file yourcountryboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You called me Country Jimmy [F]the night you walked [D7]away
@@ -32,3 +35,6 @@
 [C]Just one thing more in closing for [F]all the world to [D7]hear
 [G7]Come home I love you signed your country [C]boy
 {end_of_verse}
+
+
+

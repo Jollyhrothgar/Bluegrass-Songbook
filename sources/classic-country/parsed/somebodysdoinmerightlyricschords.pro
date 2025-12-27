@@ -1,6 +1,9 @@
 {meta: title Somebody's Doin' Me Right}
 {meta: artist Keith Whitley}
 {meta: composer J. Fred Knobloch, Paul Overstreet, Dan Tyler}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysdoinmerightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Runnin' around I've spent my whole life [C]runnin' around 
@@ -49,3 +52,9 @@ Somebody's [G7]doin' me [Am]right [G7]   [F]  [C]  [Dm]   [G7]oh oh
 [C]Somebody's [G7]doin' me [Am]right [G7]   [F]  [C]  [Dm]   [G7]oh oh
 [C]Somebody's [G7]doin' me [Am]right       
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Above Suspicion}
 {meta: artist Mel Tillis}
 {meta: composer Mel Tillis and Buck Peddy}
+{meta: x_source classic-country}
+{meta: x_source_file abovesuspicionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're above suspicion both you and [G7]I
@@ -21,3 +24,4 @@ Even [G7]when you're [F]above  suspicion
 Above [C]suspicion but that's what happens
 When you're tied to [G7]those who never [C]care
 {end_of_verse}
+

@@ -1,6 +1,9 @@
 {meta: title The Human Race}
 {meta: artist Doyle Lawson}
 {meta: composer James Dawson Phillips, Eugene Dobbins, Timothy Ray Menzies}
+{meta: x_source classic-country}
+{meta: x_source_file thehumanracelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We've flown to the moon
@@ -59,3 +62,13 @@ We reached for the stars
 We reached for the stars
 [F]But are we that far removed from the [C]cave
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

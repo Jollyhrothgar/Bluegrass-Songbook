@@ -1,5 +1,8 @@
 {meta: title You're Worth Waiting For}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file youreworthwaitingforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someday we're gonna get [Dm]away and [F]spend some time [C]together
@@ -25,3 +28,6 @@ But I don't [C]worry I'm in no hurry [G7]cause you're worth waiting [C]for
 {start_of_verse: Verse 4}
 [F]I don't [C]worry I'm in no hurry [G7]cause you're worth waiting [C]for
 {end_of_verse}
+
+
+

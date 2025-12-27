@@ -1,6 +1,9 @@
 {meta: title Georgia Waltz}
 {meta: artist Mac Wiseman}
 {meta: composer George Krise}
+{meta: x_source classic-country}
+{meta: x_source_file georgiawaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The moon shown [G7]down in [C]Georgia
@@ -36,3 +39,7 @@ You said that you love me [F]too
 How do you think I could [C]ever forget
 That Georgia [G7]waltz and [C]you
 {end_of_verse}
+
+
+
+

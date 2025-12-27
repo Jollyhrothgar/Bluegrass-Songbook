@@ -1,6 +1,9 @@
 {meta: title I Know You'll Never Change}
 {meta: artist George Morgan}
 {meta: composer Victor Willis}
+{meta: x_source classic-country}
+{meta: x_source_file iknowyoullneverchangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you’ll never change dear [F]you’ll always be the [C]same
@@ -15,3 +18,4 @@
 [C]I know you’ll never change dear [F]and yet what can I [C]do
 [F]I guess I’ll have to [G7]go on loving [C]you
 {end_of_verse}
+

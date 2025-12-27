@@ -1,6 +1,9 @@
 {meta: title A Tree In The Meadow}
 {meta: artist Marty Robbins}
 {meta: composer Billy Reid}
+{meta: x_source classic-country}
+{meta: x_source_file atreeinthemeadowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a tree in the meadow
@@ -43,3 +46,8 @@ The [F]love in your [C]eyes
 The [F]day I [G7]carved [C]upon that [Am]tree
 I [C]love you  [G7]till I [C]die
 {end_of_verse}
+
+
+
+
+

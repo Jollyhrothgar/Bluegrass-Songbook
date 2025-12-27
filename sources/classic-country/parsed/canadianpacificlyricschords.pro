@@ -1,6 +1,9 @@
 {meta: title Canadian Pacific}
 {meta: artist Hank Snow}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file canadianpacificlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I rode your ocean liner to [Dm]Newfoundland
@@ -61,3 +64,10 @@ Cross the plains and the rugged [Dm]mountains
 [G7]Keep this wandering boy from [C]harm
 Canadian [F]Pacific [G7]take me to my baby's [C]arms
 {end_of_verse}
+
+
+
+
+
+
+

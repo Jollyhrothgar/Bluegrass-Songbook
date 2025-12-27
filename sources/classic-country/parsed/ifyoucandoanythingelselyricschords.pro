@@ -1,6 +1,9 @@
 {meta: title If You Can Do Anything Else}
 {meta: artist George Strait}
 {meta: composer Don Schlitz and Billy Livsey}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoucandoanythingelselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Would you [F]like to live in [C]Houston where the [G7]cowboys come to [C]town
@@ -53,3 +56,9 @@ But if you [G7]can't baby you can stay right [C]here
 Oh [G7]baby you can stay right [C]here
 [G7]Baby you can stay right [C]here
 {end_of_verse}
+
+
+
+
+
+

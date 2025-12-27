@@ -1,6 +1,9 @@
 {meta: title Crazy Wild Desire}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file crazywilddesirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm married to an angel  who's [G7]love is warm and [C]true
@@ -29,3 +32,6 @@
 [G]Lord give me strength [G7]before her patience [C]tires
 [G]Please help me stop [D7]this crazy wild [G]desire
 {end_of_verse}
+
+
+

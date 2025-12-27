@@ -1,5 +1,8 @@
 {meta: title Bluer Than Blue}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file bluerthanbluelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woke up this morning bluer than [F]blue
@@ -21,3 +24,5 @@
 [F]When you've decided no more to roam
 [C]You'll find me waiting here all alone [G7]bluer   than [C]blue
 {end_of_verse}
+
+

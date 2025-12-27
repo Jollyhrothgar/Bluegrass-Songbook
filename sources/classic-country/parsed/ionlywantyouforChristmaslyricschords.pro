@@ -1,6 +1,9 @@
 {meta: title I Only Want You For Christmas}
 {meta: artist Alan Jackson}
 {meta: composer Tim Nichols and Zack Turner}
+{meta: x_source classic-country}
+{meta: x_source_file ionlywantyouforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]The snow is falling it's Christmas [C]Eve
@@ -49,3 +52,9 @@ I only want you for [C]Christmas [F]baby
 Tie a [C]ribbon [G7]round [C]yourself
 [F]Oh tie a [C]ribbon [G7]round [C]yourself
 {end_of_verse}
+
+
+
+
+
+

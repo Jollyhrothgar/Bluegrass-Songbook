@@ -1,6 +1,9 @@
 {meta: title I'm The Boy}
 {meta: artist The Statler Brothers}
 {meta: composer Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file imtheboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Johnny gave her [E7]money [A7]Harry bought her [D7]clothes
@@ -29,3 +32,6 @@ That [Am]I'm the boy who [D7]stole her heart [G]away
 And [C]if you ask her why she loves me [G]I know what she'd [E7]say
 That [Am]I'm the boy who [D7]stole her heart [G]away
 {end_of_verse}
+
+
+

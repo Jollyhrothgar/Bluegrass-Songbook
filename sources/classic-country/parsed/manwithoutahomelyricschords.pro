@@ -1,6 +1,9 @@
 {meta: title Man Without A Home}
 {meta: artist Stonewall Jackson}
 {meta: composer Carl Perkins and Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file manwithoutahomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got back in this town today 
@@ -43,3 +46,8 @@ My prison life would ruin her name
 Guess [D7]that's why my babe has gone 
 I'm a [C]man I'm a [D7]man without a [G]home
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Someone Is Looking For Someone Like You}
 {meta: artist Gail Davies}
+{meta: x_source classic-country}
+{meta: x_source_file someoneislookingforsomeonelikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say that nobody [F]cares where you're [C]going 
@@ -53,3 +56,10 @@ Someone is looking for someone [G7]like [C]you
 {start_of_verse: Verse 5}
 Someone is looking for [G7]someone like [C]you    
 {end_of_verse}
+
+
+
+
+
+
+

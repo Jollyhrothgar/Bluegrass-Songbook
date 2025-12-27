@@ -1,6 +1,9 @@
 {meta: title Way To Free Myself}
 {meta: artist Ray Price}
 {meta: composer Red Hayes and Charlie Walker}
+{meta: x_source classic-country}
+{meta: x_source_file waytofreemyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What strange power do you have that rules this [F]heart of mine
@@ -26,3 +29,6 @@ Then I'll [G7]find a way to free myself from [C]you
 {start_of_verse: Verse 4}
 I will [G7]find a way to free myself from [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'd Like To Have That One Back}
 {meta: artist George Strait}
 {meta: composer Bill Shore, Aaron Barker, Rick West}
+{meta: x_source classic-country}
+{meta: x_source_file idliketohavethatonebacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard somebody speak her name 
@@ -61,3 +64,11 @@ I'd like to [G7]have that one [C]back
 [C]I wouldn't [F]hear my poor heart [C]say[F]ing 
 I'd like to [G7]have that one [C]back
 {end_of_verse}
+
+
+
+
+
+
+
+

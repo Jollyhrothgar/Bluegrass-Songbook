@@ -1,6 +1,9 @@
 {meta: title I'm So Tired Of Going Home All By Myself}
 {meta: artist Hank Locklin}
 {meta: composer Pete Hunter}
+{meta: x_source classic-country}
+{meta: x_source_file imsotiredofgoinghomeallbymyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm so tired of going [G7]home all by [C]myself
@@ -29,3 +32,6 @@
 [F]The day you say I do will be the day my dreams come [C]true
 [G7]But tonight I'm going home all by [C]myself
 {end_of_verse}
+
+
+

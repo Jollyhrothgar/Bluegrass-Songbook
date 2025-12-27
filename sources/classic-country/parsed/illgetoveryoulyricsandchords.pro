@@ -1,6 +1,9 @@
 {meta: title I'll Get Over You}
 {meta: artist Crystal Gayle}
 {meta: composer Richard Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file illgetoveryoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One thing `bout this heart of [F]mine
@@ -57,3 +60,10 @@ I'll get over [F]you
 I'll be good as [F]new 
 [G7]When I get over [C]you
 {end_of_verse}
+
+
+
+
+
+
+

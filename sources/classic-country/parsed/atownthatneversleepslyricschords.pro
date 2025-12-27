@@ -1,6 +1,9 @@
 {meta: title A Town That Never Sleeps}
 {meta: artist Wilburn Brothers}
 {meta: composer Teddy Wilburn, Doyle Wilburn, Don Helms}
+{meta: x_source classic-country}
+{meta: x_source_file atownthatneversleepslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The townhall clock is striking two as [F]I stand all [C]alone
@@ -29,3 +32,6 @@ Dark [D7]memories can't be half as dark in [G7]city lights
 [C]Where I won't be the only one [F]who's poor heart weeps
 I'm [G7]moving to a town that never [C]sleeps
 {end_of_verse}
+
+
+

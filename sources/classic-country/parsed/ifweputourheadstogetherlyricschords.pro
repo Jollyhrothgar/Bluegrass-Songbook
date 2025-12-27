@@ -1,6 +1,9 @@
 {meta: title If We Put Our Heads Together}
 {meta: artist Ernest Tubb}
 {meta: composer Loretta Lynn and Lorene Allen}
+{meta: x_source classic-country}
+{meta: x_source_file ifweputourheadstogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We're not tryin' just cryin' over [D7]what we've be[G]come
@@ -29,3 +32,6 @@ My heart [C]tells me to [G]forget her and I'll forget him [D7]too
 I'll take a [G]step in your direction and [C]toward you I'll take [G]two
 If we [C]put our heads to[G]gether our hearts will [D7]tell us what to [G]do
 {end_of_verse}
+
+
+

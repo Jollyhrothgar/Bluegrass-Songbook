@@ -1,6 +1,9 @@
 {meta: title Walkin' Away}
 {meta: artist Clint Black}
 {meta: composer Clint Black, Hayden Nicholas, Dick Day}
+{meta: x_source classic-country}
+{meta: x_source_file walkinawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walkin' away [F]I saw a [G7]side of you 
@@ -41,3 +44,8 @@ Then [G7]I won't be walking [C]away
 I'll be [F]looking for someone till [C]I find the right [Am]one 
 Then [F]I won't be [G7]walking [C]away
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Mistakes I Made Yesterday}
 {meta: artist Leon Copas}
 {meta: composer Wade Holmes}
+{meta: x_source classic-country}
+{meta: x_source_file mistakesimadeyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My head is bowed in sorrow my [F]heart is filled with [C]pain
@@ -36,3 +39,7 @@
 [C]The blues have almost got me down [F]I can’t go on this [C]way
 [F]For mistakes I made [C]yesterday  [G7]are my [F]heartaches [C][G7]today
 {end_of_verse}
+
+
+
+

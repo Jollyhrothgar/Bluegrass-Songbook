@@ -1,6 +1,9 @@
 {meta: title Louisiana Saturday Night}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file louisianasaturdaynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Waiting in the front yard sitting on a [G7]log
@@ -50,3 +53,9 @@ Hey git down the fiddle and you git down the [G7]bow
 Dance in the kitchen till the morning [G7]light
 [F]Louisiana [G7]Saturday [C]night
 {end_of_verse}
+
+
+
+
+
+

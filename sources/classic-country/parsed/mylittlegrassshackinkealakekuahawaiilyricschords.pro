@@ -1,6 +1,9 @@
 {meta: title My Little Grass Shack In Kealakekua Hawaii}
 {meta: artist Hank Snow}
 {meta: composer Bill Cogswell, Tommy Harrison, Johnny Noble}
+{meta: x_source classic-country}
+{meta: x_source_file mylittlegrassshackinkealakekuahawaiilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wanna go back to the little grass shack in Kealakekua [D7]Hawaii
@@ -30,3 +33,6 @@ Where the [G7]humuhumunukunukuapua'a go swimming [C]by
 {start_of_verse: Verse 4}
 Where the [G7]humuhumunukunukuapua'a go swimming [C]by
 {end_of_verse}
+
+
+

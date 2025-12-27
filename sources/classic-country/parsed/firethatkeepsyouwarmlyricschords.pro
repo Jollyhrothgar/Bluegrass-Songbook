@@ -1,6 +1,9 @@
 {meta: title Fire That Keeps You Warm}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file firethatkeepsyouwarmlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me walk in the sunshine of your [F]smile
@@ -39,3 +42,7 @@
 [A#7]Let me be the fire that keeps you [G7]warm
 [C]I'll keep your warm
 {end_of_verse}
+
+
+
+

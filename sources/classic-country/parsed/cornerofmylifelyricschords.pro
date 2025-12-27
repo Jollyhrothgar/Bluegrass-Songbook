@@ -1,5 +1,8 @@
 {meta: title Corner Of My Life}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file cornerofmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm not looking for a [F]sweetheart  just [G7]a gentle lady [C]friend
@@ -33,3 +36,7 @@ And just knowing you has [G7]brightened  the corner of my [C]life
 Tag:
 I can’t count the way you've [G7]brightened all the corners of my [C]life 
 {end_of_verse}
+
+
+
+

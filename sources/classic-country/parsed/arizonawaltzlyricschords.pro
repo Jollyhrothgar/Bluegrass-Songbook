@@ -1,5 +1,8 @@
 {meta: title Arizona Waltz}
 {meta: artist Rex Allen Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file arizonawaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Let me [C]hold me you in my arms
@@ -22,3 +25,5 @@ And [F]when the lights are low I'll [C]steal a kiss
 Let me [C]hold you in my arms and dance the [D7]Arizona Waltz
 I'm in [G7]heaven when I waltz with [C]you 
 {end_of_verse}
+
+

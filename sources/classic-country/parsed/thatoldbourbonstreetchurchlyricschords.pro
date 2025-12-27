@@ -1,6 +1,9 @@
 {meta: title That old Bourbon Street Church}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file thatoldbourbonstreetchurchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]That old Bourbon Street Church 
@@ -48,3 +51,8 @@ But it's [C]sure been a friend to a [D7]sinful soul
 It's [G]sure been a friend to a [E7]sinful soul
 I'm [A7]talkin' about an low down [D7]sinful soul like [G]mine
 {end_of_verse}
+
+
+
+
+

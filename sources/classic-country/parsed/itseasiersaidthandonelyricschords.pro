@@ -1,6 +1,9 @@
 {meta: title It's Easier Said Than Done}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file itseasiersaidthandonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Easier [C]said [G]easier [C]said [G]easier said than [D7]done)
@@ -37,3 +40,8 @@ It's easier said than [G]done
 {start_of_verse: Verse 5}
 (Easier [C]said [G]easier [C]said [G]easier [C]said than [G]done)
 {end_of_verse}
+
+
+
+
+

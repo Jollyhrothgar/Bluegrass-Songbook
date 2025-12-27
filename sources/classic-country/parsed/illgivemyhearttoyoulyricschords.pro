@@ -1,6 +1,9 @@
 {meta: title I'll Give My Heart To You}
 {meta: artist Buck Owens}
 {meta: composer Harlan Howard and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file illgivemyhearttoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you'll hold me close and kiss [C]me
@@ -42,3 +45,7 @@ If you swear you'll always love [C]me
 And you'll place no one above [G]me
 Well then [D7]I'll give my heart to [G]you
 {end_of_verse}
+
+
+
+

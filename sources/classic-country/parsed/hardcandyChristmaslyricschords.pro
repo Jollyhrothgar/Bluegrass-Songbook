@@ -1,6 +1,9 @@
 {meta: title Hard Candy Christmas}
 {meta: artist Dolly Parton}
 {meta: composer Carol Hall}
+{meta: x_source classic-country}
+{meta: x_source_file hardcandyChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey maybe I'll [F]dye my [C]hair
@@ -81,3 +84,14 @@ Maybe I'll just
 [G7](I'll be [Dm]fine)
 [G7]Oh I'll be [Dm]fine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

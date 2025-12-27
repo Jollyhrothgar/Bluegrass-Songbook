@@ -1,6 +1,9 @@
 {meta: title The Cold Grey Light of Dawn}
 {meta: artist Johnny Bush}
 {meta: composer Ivory Joe Hunter}
+{meta: x_source classic-country}
+{meta: x_source_file thecoldgreylightofdawnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The light of dawn screams a yell starting [F]another day of [C]hell 
@@ -30,3 +33,6 @@ And I turn blue in the [G7]cold grey light of [C]dawn
 {start_of_verse: Verse 3}
 And I turn blue in the [G7]cold grey light of [F]dawn[C]
 {end_of_verse}
+
+
+

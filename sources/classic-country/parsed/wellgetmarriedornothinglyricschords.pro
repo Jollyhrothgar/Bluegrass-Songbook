@@ -1,6 +1,9 @@
 {meta: title We'll Get Married Or Nothing}
 {meta: artist Johnny Duncan}
 {meta: composer Jean Henderson and Vincent Poole}
+{meta: x_source classic-country}
+{meta: x_source_file wellgetmarriedornothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We discovered love like Columbus discovered land
@@ -56,3 +59,10 @@ You know we're gonna get [C]married or somethin'
 [F]You know we're gonna get [C]married or somethin'
 [G7]We'll get married or [C]nothing
 {end_of_verse}
+
+
+
+
+
+
+

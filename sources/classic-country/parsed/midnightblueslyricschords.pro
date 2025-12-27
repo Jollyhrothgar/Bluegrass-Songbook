@@ -1,5 +1,8 @@
 {meta: title Midnight Blues}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file midnightblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]Midnight you know you're [G7]doing me [C]wrong
@@ -47,3 +50,7 @@ That blues is a [Em]calling me
 [G7]That blues is a [Em]calling me
 [G7]Midnight blues is a [Em]calling me
 {end_of_verse}
+
+
+
+

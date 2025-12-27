@@ -1,6 +1,9 @@
 {meta: title Loving Only Me}
 {meta: artist Ricky Skaggs}
 {meta: composer Even Stevens and Hillard Kanter}
+{meta: x_source classic-country}
+{meta: x_source_file lovingonlymelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say you're cold as ice [F]I don't believe them
@@ -34,3 +37,7 @@ No [C]more lonely you when [G7]you're loving only [C]me
 And that's when I'm gonna be around [F]just you wait and see
 No [C]more lonely you when [G7]you're loving only [C]me
 {end_of_verse}
+
+
+
+

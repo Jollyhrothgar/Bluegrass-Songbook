@@ -1,6 +1,9 @@
 {meta: title Brooklyn Bridge}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare and Lance Guyness}
+{meta: x_source classic-country}
+{meta: x_source_file brooklynbridgelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh there I stood in the great big [F]city
@@ -53,3 +56,8 @@ On the Brooklyn [C]Bridge
 I bet he can’t [F]trade that bridge off either
 Because a man gonna come take him [C]down
 {end_of_verse}
+
+
+
+
+

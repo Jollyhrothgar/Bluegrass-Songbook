@@ -1,6 +1,9 @@
 {meta: title Love Is All We Need}
 {meta: artist Tammy Wynette}
 {meta: composer Mark Sherrill and Duke Goff}
+{meta: x_source classic-country}
+{meta: x_source_file loveisallweneedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well just across the street from our [F]little three room [C]shack
@@ -43,3 +46,8 @@ Let them keep it and call it their [G7]own
 [C]Living that kind of life is [F]not for you and [C]me
 We got love and [G7]love is all we [C]need
 {end_of_verse}
+
+
+
+
+

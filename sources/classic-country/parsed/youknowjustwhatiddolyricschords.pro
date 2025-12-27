@@ -1,6 +1,9 @@
 {meta: title You Know Just What I’d Do}
 {meta: artist Conway Twitty}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file youknowjustwhatiddolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If we lost all we [F]had
@@ -29,3 +32,6 @@
 [F]Would I mend the wounds for you
 [C]If I knew you needed me  you know just what I'd [G]do
 {end_of_verse}
+
+
+

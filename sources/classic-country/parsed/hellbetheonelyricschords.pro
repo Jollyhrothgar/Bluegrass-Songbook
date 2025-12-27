@@ -1,6 +1,9 @@
 {meta: title He'll Be The One}
 {meta: artist Bob Luman}
 {meta: composer Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file hellbetheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The [C]hurt shows on your [G7]face
@@ -34,3 +37,7 @@ While I'm [G7]loving you to[C]night
 Yes [G7]he'll be the one who's [Dm]hurt
 While I'm [G7]loving you to[F]night[C]
 {end_of_verse}
+
+
+
+

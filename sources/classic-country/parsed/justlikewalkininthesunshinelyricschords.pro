@@ -1,6 +1,9 @@
 {meta: title Just Like Walkin' In The Sunshine}
 {meta: artist Jean Shepard}
 {meta: composer Neal Merritt and Ann Woodward}
+{meta: x_source classic-country}
+{meta: x_source_file justlikewalkininthesunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lovin' you is just like walkin' in the [F]sunshine
@@ -45,3 +48,8 @@ It's such a happy [C]feelin' just [G7]knowin' that I have [C]you
 It's such a happy feelin' just [G7]knowin' that I have [C]you
 It's such a happy feelin' just [G7]knowin' that I have [C]you
 {end_of_verse}
+
+
+
+
+

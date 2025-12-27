@@ -1,5 +1,8 @@
 {meta: title Lonely}
 {meta: artist Kenny Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file lonelylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lonely I [F]am so [C]lonely  [G7]since you went [C]away
@@ -21,3 +24,5 @@ And [D7]you’ll be alone and [G7]blue
 [C]Only you [F]will be [C]lonely
 And [D7]I won’t [G7]care for [C]you
 {end_of_verse}
+
+

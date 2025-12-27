@@ -1,6 +1,9 @@
 {meta: title Victims Of The Pretty Things In Life}
 {meta: artist Johnny Lee}
 {meta: composer Mike Tate and Sammy Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file victimsoftheprettythingsinlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just like me I can see you're going [D7]crazy
@@ -34,3 +37,7 @@ We're both [G]victims of the [D7]pretty things in [G]life
 {start_of_verse: Verse 5}
 We're just victims of the [D7]pretty things in [G]life
 {end_of_verse}
+
+
+
+

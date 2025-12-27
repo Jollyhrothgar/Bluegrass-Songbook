@@ -1,5 +1,8 @@
 {meta: title I Just Want To Look At You One More Time}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ijustwanttolookatyouonemoretimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just wanna look at you one more [G7]time 
@@ -21,3 +24,5 @@ I'll always like to know how much I leave [C]behind
 Let this be# the [C7]picture that I'll [F]always have in [D7]mind 
 I [C]just wanna [G7]look at you one more [C]time 
 {end_of_verse}
+
+

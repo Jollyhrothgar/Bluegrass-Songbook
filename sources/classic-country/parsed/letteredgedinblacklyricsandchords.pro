@@ -1,6 +1,9 @@
 {meta: title Letter Edged In Black}
 {meta: artist Hank Snow}
 {meta: composer Roy Carter}
+{meta: x_source classic-country}
+{meta: x_source_file letteredgedinblacklyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was standing by my window yesterday [D7]morning
@@ -43,3 +46,8 @@ You know I did not mean them don't you [G]Jack
 May the angels bear [G7]this message I am [C]sending
 Your [D7]forgiveness in this letter edged in [G]black
 {end_of_verse}
+
+
+
+
+

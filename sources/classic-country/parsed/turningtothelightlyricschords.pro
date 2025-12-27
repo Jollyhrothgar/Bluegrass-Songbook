@@ -1,6 +1,9 @@
 {meta: title Turning To The Light}
 {meta: artist Joey and Rory}
 {meta: composer Stephanie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file turningtothelightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like a seedling in the clay
@@ -66,3 +69,10 @@ There's a new day dawning bright
 {start_of_verse: Verse 5}
 [D7]Oh I'm turning to the [G]light
 {end_of_verse}
+
+
+
+
+
+
+

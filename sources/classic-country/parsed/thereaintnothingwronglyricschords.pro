@@ -1,6 +1,9 @@
 {meta: title There Ain't Nothing Wrong}
 {meta: artist Vern Gosdin}
 {meta: composer Hank Cochran, Dean Dillon, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file thereaintnothingwronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We still share the same old bed  we still lay there side by [G7]side
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Whoa there ain't nothing wrong  there just ain't nothing [C]right
 {end_of_verse}
+
+
+
+

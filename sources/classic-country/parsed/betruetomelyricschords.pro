@@ -1,6 +1,9 @@
 {meta: title Be True To Me}
 {meta: artist Ricky Nelson}
 {meta: composer James Kirkland and Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file betruetomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if I'm a fool for [Em]loving you
@@ -38,3 +41,8 @@ A [C]page that says these [Em]two will walk [F]together all life [G7]through
 That you'll be [C]true be true be [F]true be [G7]true to [C]me [Am]   [F]  [G7]
 Be [C]true
 {end_of_verse}
+
+
+
+
+

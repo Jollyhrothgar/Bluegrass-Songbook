@@ -1,5 +1,8 @@
 {meta: title The Day Elvis Died}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file thedayelvisdiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know why you cried the [F]day Elvis [C]died
@@ -22,3 +25,5 @@ I know why you cried [G7]the day Elvis [C]died
 {start_of_verse: Verse 3}
 I know why you cried [G7]the day Elvis [C]died
 {end_of_verse}
+
+

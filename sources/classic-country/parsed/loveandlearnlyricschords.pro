@@ -1,6 +1,9 @@
 {meta: title Love And Learn}
 {meta: artist Brenda Lee}
 {meta: composer Bob Montgomery and Earl Sinks}
+{meta: x_source classic-country}
+{meta: x_source_file loveandlearnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love and learn about the [Am]birds and bees
@@ -43,3 +46,8 @@ If you [C]play around with love your will [Am]sure to get burned
 So [C]when you go to [G7]pick a guy be [C]careful who you [F]choose
 Or you'll love and [G7]learn about the [C]blues
 {end_of_verse}
+
+
+
+
+

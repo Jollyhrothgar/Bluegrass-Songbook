@@ -1,6 +1,9 @@
 {meta: title Satisfaction Guaranteed}
 {meta: artist Carl Smith}
 {meta: composer Kay Twomey, Ben Weisman, Fred Wise}
+{meta: x_source classic-country}
+{meta: x_source_file satisfactionguaranteedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The heart I got to offer is [G7]one you can’t refuse
@@ -44,3 +47,9 @@ Try me [G7]out with satisfaction guaran[C]teed
 {start_of_verse: Verse 5}
 Try me [G7]out with satisfaction try me out with satisfaction guaran[C]teed
 {end_of_verse}
+
+
+
+
+
+

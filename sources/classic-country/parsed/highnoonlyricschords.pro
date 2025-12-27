@@ -1,6 +1,9 @@
 {meta: title High Noon}
 {meta: artist Moe Bandy}
 {meta: composer Ned Washington and Dimitri Tiomkin}
+{meta: x_source classic-country}
+{meta: x_source_file highnoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do not forsake me oh my darling on this our wedding [F]day
@@ -35,3 +38,7 @@ You made that promise as [F]a [A7]bride
 [F]Don't think of [C]leavin'
 [F]Now that I [Em]need [Dm]you by [F]my [C][G7]side
 {end_of_verse}
+
+
+
+

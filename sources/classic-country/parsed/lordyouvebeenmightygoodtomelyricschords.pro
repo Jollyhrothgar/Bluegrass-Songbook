@@ -1,5 +1,8 @@
 {meta: title Lord You've Been Mighty Good To Me}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file lordyouvebeenmightygoodtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This year the boll weevil he lives in my [F]cotton
@@ -45,3 +48,8 @@ But [C]don't get me wrong I'm not fussing at [F]you
 For [C]you've been mighty good to [G7]me
 Lord you've been mighty good to [C]me
 {end_of_verse}
+
+
+
+
+

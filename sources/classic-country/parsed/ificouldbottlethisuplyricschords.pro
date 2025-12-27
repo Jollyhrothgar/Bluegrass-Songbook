@@ -1,6 +1,9 @@
 {meta: title If I Could Bottle This Up}
 {meta: artist George Jones}
 {meta: composer Dean Dillon and Paul Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldbottlethisuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could bottle this up I'd make a [D7]million
@@ -43,3 +46,7 @@ A [F]song in your heart after [Dm]one little taste
 You [F]know they'd just eat it [G7]up
 And we could [F]make a million [G7]bucks if we could bottle this [C]up
 {end_of_verse}
+
+
+
+

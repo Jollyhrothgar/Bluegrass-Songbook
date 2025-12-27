@@ -1,6 +1,9 @@
 {meta: title Guess I'll Move On Down The Line}
 {meta: artist Bobby Bare}
 {meta: composer Ken Sonenberg and Martin Siegal}
+{meta: x_source classic-country}
+{meta: x_source_file guessillmoveondownthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Stick my thumb out catch a ride
@@ -35,3 +38,6 @@
 {start_of_verse: Verse 4}
 [D7]Guess I'll move on down the [G]line
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Yet To Succeed}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file yettosucceedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please don't start me crying 
@@ -36,3 +39,7 @@ I'll be fine [F] in time
 [C]But right now [F]I'm just trying to [C]forget you
 But clearly I have [G7]yet to [F]succee[C]d
 {end_of_verse}
+
+
+
+

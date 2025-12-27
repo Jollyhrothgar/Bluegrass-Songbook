@@ -1,6 +1,9 @@
 {meta: title In The Middle Of The Night}
 {meta: artist Mel Tillis}
 {meta: composer Bob Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file inthemiddleofthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe I’m crazy I don’t know
@@ -61,3 +64,10 @@ In the middle of the [C]night
 [F]How can it be wrong if it feels so right
 In the middle of the [C]night 
 {end_of_verse}
+
+
+
+
+
+
+

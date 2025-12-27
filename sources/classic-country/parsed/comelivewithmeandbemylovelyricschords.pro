@@ -1,6 +1,9 @@
 {meta: title Come Live With Me And Be My Love}
 {meta: artist Eddy Arnold}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file comelivewithmeandbemylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come live with me [G7]and be my [C]love
@@ -28,3 +31,6 @@
 [Em]And forsake me never [F]could be my love [Dm]forever
 [C]Oh come live with [G7]me and be my [C][G]love
 {end_of_verse}
+
+
+

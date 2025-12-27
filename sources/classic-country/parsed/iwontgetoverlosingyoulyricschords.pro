@@ -1,6 +1,9 @@
 {meta: title I Won't Get Over Losing You}
 {meta: artist Ray Price}
 {meta: composer Cam Mullins}
+{meta: x_source classic-country}
+{meta: x_source_file iwontgetoverlosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each day my mind begins to [G7]hurt a little [C]more[G7]
@@ -29,3 +32,6 @@ Are [C]just so many lonely [Am]hours of wasted [Dm]time [G7]
 And [C]somehow the dreams I [C7]dream the whole night [F]through 
 [C]All seem to say I won’t get [Dm]over [G7]losing [C]you
 {end_of_verse}
+
+
+

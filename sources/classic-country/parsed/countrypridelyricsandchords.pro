@@ -1,6 +1,9 @@
 {meta: title Country Pride}
 {meta: artist Billy Crash Craddock}
 {meta: composer Dale Morris and Jim Sahnger}
+{meta: x_source classic-country}
+{meta: x_source_file countrypridelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Did you ever see the winter skies through [F]cracks in bedroom [C]walls
@@ -40,3 +43,8 @@ That he made his way in this old world [G7]because of country [C]pride
 {start_of_verse: Verse 5}
 That he made his way in this ole world [G7]because of country [C]pride
 {end_of_verse}
+
+
+
+
+

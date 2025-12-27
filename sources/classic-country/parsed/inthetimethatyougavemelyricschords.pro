@@ -1,6 +1,9 @@
 {meta: title In The Time That You Gave Me}
 {meta: artist Joey Feek}
 {meta: composer Dennis Morgan and Shawn Camp}
+{meta: x_source classic-country}
+{meta: x_source_file inthetimethatyougavemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the time that You gave me 
@@ -46,3 +49,8 @@ You know it [C]won’t even [F]phase me
 If I [C]did all I could do 
 In the [G7]time that you gave [F]me [C]
 {end_of_verse}
+
+
+
+
+

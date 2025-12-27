@@ -1,5 +1,8 @@
 {meta: title Seven Dreams}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file sevendreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Seven [D7]dreams seven [C]dreams of [G]love
@@ -35,3 +38,7 @@ Seven [D7]ways to build our love [G]together
 Seven [D7]dreams seven [C]dreams of [G]love
 Seven ways to [D7]keep our dreams [G]forever
 {end_of_verse}
+
+
+
+

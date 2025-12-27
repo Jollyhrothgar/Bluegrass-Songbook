@@ -1,6 +1,9 @@
 {meta: title All That Heaven Will Allow}
 {meta: artist The Mavericks}
 {meta: composer Bruce Springsteen}
+{meta: x_source classic-country}
+{meta: x_source_file allthatheavenwillallowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I got a dollar in my [G]pocket [C]there ain't a cloud up a[G]bove [D7]
@@ -40,3 +43,8 @@ And I want all the [C]time [D7]all that heaven will [G]allow
 {start_of_verse: Verse 5}
 And I want all the [C]time [D7]all that heaven will [C]allo[G]w
 {end_of_verse}
+
+
+
+
+

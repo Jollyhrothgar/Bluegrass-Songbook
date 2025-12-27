@@ -1,6 +1,9 @@
 {meta: title The Day You Stop Loving Me}
 {meta: artist Charley Pride}
 {meta: composer Ray Buzzeo}
+{meta: x_source classic-country}
+{meta: x_source_file thedayyoustoplovingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The world will tumble from its[A#7] axe[F]s 
@@ -33,3 +36,7 @@ The [G7]day you stop loving [C]me
 {start_of_verse: Verse 5}
 The [G7]day you stop loving [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Meat And Potato Man}
 {meta: artist Alan Jackson}
 {meta: composer Harley Allen and John Pennell}
+{meta: x_source classic-country}
+{meta: x_source_file meatandpotatomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I like my [C]steak well done [F]my taters fried 
@@ -38,3 +41,8 @@ I don't like [F]politics hypocrites
 I'm a [G7]hound dog fan a meat and potato [C]man
 Yeah that's [G7]just what I am a meat and potato [C]man
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hawaiian Cowboy}
 {meta: artist Hank Snow}
 {meta: composer Rex Allen, Emma Johnson, Sol Bright}
+{meta: x_source classic-country}
+{meta: x_source_file hawaiiancowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A cowboy took a trip to [G][C]Hawaii
@@ -29,3 +32,6 @@
 [G]If you will sing to me my [D7]lady
 [G]A song of love beneath Hawaiian skies
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sally Trash}
 {meta: artist Tammy Wynette}
 {meta: composer Curly Putman and Chet Atkins}
+{meta: x_source classic-country}
+{meta: x_source_file sallytrashlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The whole big town of Knoxville 
@@ -42,3 +45,6 @@ She just likes your [F]cash
 So if [G7]you don't want my sweet kinda love then baby
 Then go on out and pick up Sally [C]Trash
 {end_of_verse}
+
+
+

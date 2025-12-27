@@ -1,5 +1,8 @@
 {meta: title Most of the Time}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file mostofthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Written and recorded by Jim Reeves
@@ -32,3 +35,7 @@ I [D7]hardly ever mention your [G]name
 Our [C]friends never see [D7]you beside [G]me
 But [D7]I know you're there just the [G]same
 {end_of_verse}
+
+
+
+

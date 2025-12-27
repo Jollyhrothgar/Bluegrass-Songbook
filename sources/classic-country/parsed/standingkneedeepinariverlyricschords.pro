@@ -1,6 +1,9 @@
 {meta: title Standing Knee Deep In A River}
 {meta: artist Don Williams}
 {meta: composer Bob McDill, Dickey Lee, Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file standingkneedeepinariverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Friends I could [Em]count on [F]I can count on one [C]hand 
@@ -41,3 +44,8 @@ Standing [C]knee deep in a [F]river [G7]and dying of [C]thirst [Em]   [F]  [G7]
 [G7]Go through [C]life [Em]parched and [F]empty
 Standing [C]knee deep in a [F]river [G7]and dying of [C]thirst
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Easy To Please}
 {meta: artist Carl Smith}
 {meta: composer Red Foley and Betty Wade}
+{meta: x_source classic-country}
+{meta: x_source_file easytopleaselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Feeling kinda crazy feeling kinda wild
@@ -60,3 +63,11 @@ Cause I'm so easy to please
 [C]Give me a gal on my [G]knees
 [D7]Cause I'm so easy to [G]please
 {end_of_verse}
+
+
+
+
+
+
+
+

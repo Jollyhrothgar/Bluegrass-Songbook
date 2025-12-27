@@ -1,6 +1,9 @@
 {meta: title Heartbreak Hotel}
 {meta: artist Elvis Presley}
 {meta: composer Mae Axton, Tommy Burden, Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakhotellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well since my baby left me I found a new place to dwell
@@ -31,3 +34,6 @@ Just take a walk down lonely street to [C7]Heartbreak Hotel
 [F]I get so lonely baby I get so lonely
 [G7]I get so lonely I could [C]die
 {end_of_verse}
+
+
+

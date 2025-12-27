@@ -1,5 +1,8 @@
 {meta: title The Love Of God}
 {meta: artist The Oak Ridge Boys}
+{meta: x_source classic-country}
+{meta: x_source_file theloveofGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The love of God has [B7]been [C]extended
@@ -28,3 +31,6 @@
 [G]Yes when all this earth shall pass [C]away
 [G]There will [D7]always be the love [G]of [C]God
 {end_of_verse}
+
+
+

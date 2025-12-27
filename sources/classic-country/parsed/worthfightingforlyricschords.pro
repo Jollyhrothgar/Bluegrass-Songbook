@@ -1,6 +1,9 @@
 {meta: title Worth Fighting For}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson and Danny Timms}
+{meta: x_source classic-country}
+{meta: x_source_file worthfightingforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sunset on the highway to old [F]Mexico 
@@ -51,3 +54,9 @@ I know I'm still [F]wild enough for [C]you
 And you know [G7]you you know [F]you can count on [C]me
 Baby [G7]we used to [F]be worth [C]fightin' for so [G7]tell me are we
 {end_of_verse}
+
+
+
+
+
+

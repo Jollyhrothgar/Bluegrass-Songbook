@@ -1,6 +1,9 @@
 {meta: title #1 Rock 'N' Roll C & W Boogie Blues Man}
 {meta: artist Mickey Gilley}
 {meta: composer Tom Maberry}
+{meta: x_source classic-country}
+{meta: x_source_file 1rocknrollcwboogiebluesmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I been around the country in a custom built bus
@@ -46,3 +49,9 @@ Signing autographs pictures every [C]day
 Every [D7]fool in every town [C]everybody comes around
 They can't [D7]wait to hear the music we [G]play
 {end_of_verse}
+
+
+
+
+
+

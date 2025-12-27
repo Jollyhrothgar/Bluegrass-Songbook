@@ -1,6 +1,9 @@
 {meta: title Journey to My Savior's Side}
 {meta: artist The Bluegrass Cardinals}
 {meta: composer Tom Lee and Randy Graham}
+{meta: x_source classic-country}
+{meta: x_source_file journeytomysaviorssidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Life is so short the way is rough
@@ -47,3 +50,9 @@ His [D7]love's my soul's [G]release
 {start_of_verse: Verse 5}
 His [D7]love's my soul's [G]release
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title English Sweetheart}
 {meta: artist Webb Pierce}
 {meta: composer recorded by Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file englishsweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]An American boy met an English girl
@@ -50,3 +53,9 @@ I [C]watch as sweethearts [G]flee
 Seems so hard for us to part
 [A7]And leave me here to [D7]grieve
 {end_of_verse}
+
+
+
+
+
+

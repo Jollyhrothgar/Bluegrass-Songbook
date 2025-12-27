@@ -1,5 +1,8 @@
 {meta: title What a Liar I am}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file whataliariamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh you told me you [F]had found [C]another 
@@ -32,3 +35,7 @@ Then you'd know what a [G7]liar I [C]am
 {start_of_verse: Verse 4}
 Now you know what a [G7]liar I [C]am
 {end_of_verse}
+
+
+
+

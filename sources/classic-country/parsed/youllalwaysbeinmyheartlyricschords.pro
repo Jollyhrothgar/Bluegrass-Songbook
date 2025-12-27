@@ -1,6 +1,9 @@
 {meta: title You'll Always Be In My Heart}
 {meta: artist Maxine, Bonnie and Jim Ed Brown}
 {meta: composer Billy Barton and Fabor Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file youllalwaysbeinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Always [C]always [G]you'll always be in my [D7]heart
@@ -25,3 +28,6 @@ Cause you'll [G]always [D7]be in my [G]heart
 Always [C]always [G]you'll always be in my [D7]heart
 [G]Always [C]always [G]you'll always [D7]be in my [G]heart
 {end_of_verse}
+
+
+

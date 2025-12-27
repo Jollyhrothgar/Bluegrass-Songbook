@@ -1,6 +1,9 @@
 {meta: title Why Don't We Sleep On It}
 {meta: artist Billy Crash Craddock}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file whydontwesleeponitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Why don't we [C]sle[Em]ep on [Am]it  [C]
@@ -43,3 +46,8 @@ To [F]give up don't seem [C]right[D7]
 And like [F]someone said [Em]we made our [Am]bed 
 [D7]Let's sleep on [G7]it to[C]night
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title New Panhandle Rag Lyrics Chords}
 {meta: artist Webb Pierce}
 {meta: composer Leon McAuliffe and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file newpanhandleraglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was rambling through  a [F]Texas border [C]town
@@ -30,3 +33,6 @@ Cause I married that [G7]gal and then we settled [C]down
 {start_of_verse: Verse 3}
 Cause I married that [G7]gal and then we settled [C]down
 {end_of_verse}
+
+
+

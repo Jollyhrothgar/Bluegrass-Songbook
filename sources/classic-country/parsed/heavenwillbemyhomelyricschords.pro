@@ -1,6 +1,9 @@
 {meta: title Heaven Will Be My Home}
 {meta: artist Kitty Wells}
 {meta: composer A.B. Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file heavenwillbemyhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Heaven will be my home some sweet [C]day
@@ -40,3 +43,8 @@ Hold to my hand oh Lord don't [G7]let me [C]stray
 {start_of_verse: Verse 4}
 Hold to my hand oh Lord don't [G7]let me [C]stray
 {end_of_verse}
+
+
+
+
+

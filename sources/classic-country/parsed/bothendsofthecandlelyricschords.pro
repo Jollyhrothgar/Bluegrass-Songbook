@@ -1,5 +1,8 @@
 {meta: title Both Ends Of The Candle}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file bothendsofthecandlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been trying so hard [D7]to forget [G]you
@@ -28,3 +31,6 @@
 [C]For each moment the candle is [G]burning
 [D7]Brings closer the ending of [G]life
 {end_of_verse}
+
+
+

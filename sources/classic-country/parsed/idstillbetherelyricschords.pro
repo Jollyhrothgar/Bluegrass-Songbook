@@ -1,6 +1,9 @@
 {meta: title I'd Still Be There}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash and Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file idstillbetherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I overlooked a lot of things I knew I should've [D7]done
@@ -37,3 +40,7 @@ I'd [G]be by your side [D7]I'd still be [G]there
 {start_of_verse: Verse 4}
 [C]I'd be [G]by your side [D7]I'd still be [G]there
 {end_of_verse}
+
+
+
+

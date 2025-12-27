@@ -1,5 +1,8 @@
 {meta: title Yonder Comes A Sucker}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file yondercomesasuckerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Railroad steamboat river and [G7]canal
@@ -55,3 +58,13 @@ I guess I'll [G7]hear him sing this [C]song
 [C]Railroad steamboat river and [G7]canal
 Yonder comes a sucker and he's got my [C]gal
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

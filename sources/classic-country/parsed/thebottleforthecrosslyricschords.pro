@@ -1,5 +1,8 @@
 {meta: title The Bottle For The Cross}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file thebottleforthecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 The Bottle For The Cross
@@ -51,3 +54,10 @@ In my [D7]heart I believed I’d never [G]fail
 {start_of_verse: Verse 6}
 I [C]traded the [G]bottle and the [D7]world for the [G]cross
 {end_of_verse}
+
+
+
+
+
+
+

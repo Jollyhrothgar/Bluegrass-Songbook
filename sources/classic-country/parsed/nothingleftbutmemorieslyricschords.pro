@@ -1,6 +1,9 @@
 {meta: title Nothing Left But Memories}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file nothingleftbutmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s [F]nothing left but [Em]memories 
@@ -38,3 +41,7 @@ Of [G7]long long [C]ago
 No there’s [F]nothing left but [C]memories 
 Of [G7]long long [C]ago
 {end_of_verse}
+
+
+
+

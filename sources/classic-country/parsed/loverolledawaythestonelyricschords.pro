@@ -1,6 +1,9 @@
 {meta: title Love Rolled Away The Stone}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file loverolledawaythestonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He lay there in the darkness [F]all alone and [C]lost
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]And love love rolled the stone [C]away
 {end_of_verse}
+
+
+
+
+

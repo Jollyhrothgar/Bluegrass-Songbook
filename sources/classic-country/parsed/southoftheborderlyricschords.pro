@@ -1,6 +1,9 @@
 {meta: title South Of The Border}
 {meta: artist Patsy Cline}
 {meta: composer Michael Carr and Jimmy Kennedy}
+{meta: x_source classic-country}
+{meta: x_source_file southoftheborderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ay ay ay [D7]ay  ay ay ay [G]ay
@@ -37,3 +40,8 @@
 {start_of_verse: Verse 6}
 [D7]Ay ay ay ay  ay [G]ay ay ay  ay ay [D7]ay ay  ay ay ay [G]ay
 {end_of_verse}
+
+
+
+
+

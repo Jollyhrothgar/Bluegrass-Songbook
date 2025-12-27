@@ -1,6 +1,9 @@
 {meta: title Right Back Missing You Again}
 {meta: artist Charley Pride}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file rightbackmissingyouagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had you neatly tucked away way in the back of my mind
@@ -31,3 +34,6 @@ And I know I'm right back missin' you [C]again [G7]
 Now a [G7]million memories flood my eyes
 And I know I'm right back missin' you [C]again
 {end_of_verse}
+
+
+

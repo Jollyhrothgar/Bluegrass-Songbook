@@ -1,6 +1,9 @@
 {meta: title Makin' Love And Makin' Out}
 {meta: artist John Anderson}
 {meta: composer Charlie Craig}
+{meta: x_source classic-country}
+{meta: x_source_file makinloveandmakinoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]She had [C]all the looks it takes to [F]go with understanding ways
@@ -33,3 +36,7 @@ Makin' [C]love and makin' [G7]out is not the [C]same [G7]
 {start_of_verse: Verse 4}
 No makin' love and makin' [G7]out is not the [F]sam[C]e
 {end_of_verse}
+
+
+
+

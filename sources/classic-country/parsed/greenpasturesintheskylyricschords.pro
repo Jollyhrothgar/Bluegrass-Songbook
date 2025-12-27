@@ -1,6 +1,9 @@
 {meta: title Green Pastures In The Sky}
 {meta: artist Ricky Skaggs}
 {meta: composer Osburn Thorpe}
+{meta: x_source classic-country}
+{meta: x_source_file greenpasturesintheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Shepherd leads me out to green [A]pastures
@@ -29,3 +32,6 @@
 [A]The day draws near for that final [C]journey
 [G7]To that green pasture  in the [C]sky
 {end_of_verse}
+
+
+

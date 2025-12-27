@@ -1,6 +1,9 @@
 {meta: title Yours}
 {meta: artist Jim Reeves}
 {meta: composer Daly Aubert, Augustin Rodriguez, Gonzalo Roig}
+{meta: x_source classic-country}
+{meta: x_source_file yourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yours till the stars have no glory
@@ -22,3 +25,5 @@ Yours in the gray of December
 [C]I've never loved any[G]one the way I [Am]love you
 How could [C]I when I was [G]born to be [D7]just [G]yours
 {end_of_verse}
+
+

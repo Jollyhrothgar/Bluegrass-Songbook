@@ -1,5 +1,8 @@
 {meta: title Send My Body}
 {meta: artist Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file sendmybodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the judge he found me guilty of wrong doing
@@ -61,3 +64,11 @@ And [D7]send my body [G7]back to my home [C]town
 [F]Yeah see they bury me out by [C]momma's apple [Am]tree
 And [D7]send my body [G7]back to my home [C]town
 {end_of_verse}
+
+
+
+
+
+
+
+

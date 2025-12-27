@@ -1,6 +1,9 @@
 {meta: title Preparations To Be Blue}
 {meta: artist Lefty Frizzell}
 {meta: composer Del Reeves and Elen Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file preparationstobebluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got out my old [F]teardrops [C]tonight
@@ -29,3 +32,6 @@ So I'm [C]making prepa[G7]rations to be [C]blue
 [C]Taking inventory of what's [F]left of me and you
 Yes I'm [C]making prepa[G7]rations to be [F]b-l[C]ue
 {end_of_verse}
+
+
+

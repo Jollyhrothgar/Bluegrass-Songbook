@@ -1,6 +1,9 @@
 {meta: title God Keeps The Wild Flowers Blooming}
 {meta: artist George Jones}
 {meta: composer Bobby Abshire}
+{meta: x_source classic-country}
+{meta: x_source_file Godkeepsthewildflowersbloominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I been working all day long on [C]some old forgotten [G]place
@@ -38,3 +41,8 @@ And all the heartaches that I know I've caused 'em
 {start_of_verse: Verse 5}
 [D7]God keeps the wild flowers blooming on mom and papa's [G]grave
 {end_of_verse}
+
+
+
+
+

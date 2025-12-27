@@ -1,6 +1,9 @@
 {meta: title Pickin' Up The Mail}
 {meta: artist Wilburn Brothers}
 {meta: composer Ron Kitson}
+{meta: x_source classic-country}
+{meta: x_source_file pickinupthemaillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pickin' up the mail is no more [F]fun
@@ -41,3 +44,8 @@ Bills and bills and penny sales are [F]hardly worth the run
 [G7]Pickin' up the mail is no more [C]fun
 [G7]Pickin' up the mail is no more [C]fun
 {end_of_verse}
+
+
+
+
+

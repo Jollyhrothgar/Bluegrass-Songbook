@@ -1,6 +1,9 @@
 {meta: title Making Everything Perfect}
 {meta: artist Gene Watson}
 {meta: composer Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file makingeverythingperfectlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been sitting here thinking that [F]I oughta be drinking [C]tonight
@@ -36,3 +39,7 @@ When we said I do I agreed to work things through
 Loving no leaving making everything perfect [C]tonight
 Yeah [G7]loving not leaving making everything perfect [C]tonight
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Preacher Said Jesus Said}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file thepreachersaidJesussaidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well with everybody tryin' to [G7]tell us what to [C]do[C7]
@@ -50,3 +53,9 @@ not so I would have told you, I go to prepare a place for you. And if I
 prepare a place for you I will come again and receive you unto myself.
 That where I am there you may be also)
 {end_of_verse}
+
+
+
+
+
+

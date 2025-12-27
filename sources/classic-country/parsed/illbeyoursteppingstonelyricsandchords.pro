@@ -1,6 +1,9 @@
 {meta: title I'll Be Your Stepping Stone}
 {meta: artist J.D. Crowe}
 {meta: composer Bobby Hart, Sonny Thompson, Tommy Boyce}
+{meta: x_source classic-country}
+{meta: x_source_file illbeyoursteppingstonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll be your [C]stepping stone 
@@ -36,3 +39,7 @@ While you keep [G]stepping on
 From here to [D7]here I'll try to [C]keep the pace 
 Just looking [G]for a place [D7]in your heart [C]aga[G]in
 {end_of_verse}
+
+
+
+

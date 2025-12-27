@@ -1,6 +1,9 @@
 {meta: title Little Girl}
 {meta: artist Reba McEntire}
 {meta: composer Kendal Franceschi and Quentin Powers}
+{meta: x_source classic-country}
+{meta: x_source_file littlegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Daddy used to tell me if I [D7]ran too fast 
@@ -46,3 +49,9 @@ Hey that's just [Am]like a [D7]little girl I [G]knew[E7]
 Yes I'm [Am]still that little [D7]girl[G] 
 Daddy I still haven't [D7]slowed down [G]yet
 {end_of_verse}
+
+
+
+
+
+

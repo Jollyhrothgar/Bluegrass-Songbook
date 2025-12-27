@@ -1,6 +1,9 @@
 {meta: title He'll Never Take The Place Of You}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill, Charlie Daniels, Bob Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file hellnevertaketheplaceofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sure he gives me everything  [E7]I ask [C]for
@@ -32,3 +35,7 @@
 [C]No he'll never know  oh that I [D7]still love you [G]so
 [C]And he'll never ever [D7]take the place of [G][C]y-o-u
 {end_of_verse}
+
+
+
+

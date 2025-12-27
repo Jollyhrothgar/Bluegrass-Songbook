@@ -1,6 +1,9 @@
 {meta: title If You Don't Wanna See Santa Claus Cry}
 {meta: artist Alan Jackson}
 {meta: composer Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudontwannaseesantaclauscrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Well I'm [C]makin' out my list for ole St Nick [F]tonight
@@ -28,3 +31,6 @@ So baby come [D7]home to me if you don't [G7]wanna see Santa Claus [C]cry
 {start_of_verse: Verse 4}
 [A7]Baby come [D7]back to me if you don't [G7]wanna see Santa Claus [C]cry
 {end_of_verse}
+
+
+

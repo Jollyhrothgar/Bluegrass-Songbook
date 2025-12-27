@@ -1,6 +1,9 @@
 {meta: title What's Come Over My Baby}
 {meta: artist Dottie West}
 {meta: composer Dottie West and Bill West}
+{meta: x_source classic-country}
+{meta: x_source_file whatscomeovermybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What changed the look in his [F]eyes
@@ -29,3 +32,6 @@
 [C]What's come [C7]over my [F]baby
 [G7]My baby don't love me [C]anymore
 {end_of_verse}
+
+
+

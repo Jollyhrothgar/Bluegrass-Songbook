@@ -1,6 +1,9 @@
 {meta: title She Always Talked About Mexico}
 {meta: artist David Ball}
 {meta: composer Wood Newton and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file shealwaystalkedaboutmexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She blew [Em]into this old [F]one horse town
@@ -64,3 +67,11 @@ She's probably livin' down there [F]by the sea
 [G7]Oh back this way [C]again
 [G7]Oh back this way [C]again
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Miss You Most In The Winter Time}
 {meta: artist Stonewall Jackson}
 {meta: composer John Virgin}
+{meta: x_source classic-country}
+{meta: x_source_file imissyoumostinthewintertimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Funny how the [A#7]spring brings back your [C]memory
@@ -26,3 +29,6 @@ Don't God know I miss you [A#7]most in the winter [C]time
 {start_of_verse: Verse 4}
 Don't God know I miss you [A#7]most in the winter [C]time
 {end_of_verse}
+
+
+

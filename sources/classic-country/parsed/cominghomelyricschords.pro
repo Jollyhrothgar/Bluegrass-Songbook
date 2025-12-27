@@ -1,6 +1,9 @@
 {meta: title Coming Home}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison, Will Jennings, J.D. Souther}
+{meta: x_source classic-country}
+{meta: x_source_file cominghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a long and lonely highway
@@ -60,3 +63,10 @@
 [F]I'm coming home coming home
 [C]I'm [F]coming [C]home
 {end_of_verse}
+
+
+
+
+
+
+

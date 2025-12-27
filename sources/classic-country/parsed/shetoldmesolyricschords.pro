@@ -1,6 +1,9 @@
 {meta: title She Told Me So}
 {meta: artist George Strait}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file shetoldmesolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm her world and [F]she revolves [C]around me
@@ -31,3 +34,6 @@ And there's [C]not one star in [F]Heaven
 And [C]eight don't follow [F]seven
 [C]I'd believe it [G7]if she told me [C]so
 {end_of_verse}
+
+
+

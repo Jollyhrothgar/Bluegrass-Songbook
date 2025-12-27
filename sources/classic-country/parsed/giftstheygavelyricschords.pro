@@ -1,5 +1,8 @@
 {meta: title Gifts They Gave}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file giftstheygavelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jesus our King [D7]kind and [G]good
@@ -42,3 +45,8 @@
 [C]Of the gift that he [D7]gave to [G]Emanuel
 [D7]Of the gift that he gave to [G]Emanuel
 {end_of_verse}
+
+
+
+
+

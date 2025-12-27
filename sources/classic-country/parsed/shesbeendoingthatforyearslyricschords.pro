@@ -1,6 +1,9 @@
 {meta: title She's Been Doing That For Years}
 {meta: artist Mel Tillis}
 {meta: composer Carlton Day}
+{meta: x_source classic-country}
+{meta: x_source_file shesbeendoingthatforyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She cries a lot she's alone 
@@ -50,3 +53,9 @@ And holds it close against her [C]face
 It's faded now from all her [D7]tears
 She's been doing that for [G]years
 {end_of_verse}
+
+
+
+
+
+

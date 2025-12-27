@@ -1,6 +1,9 @@
 {meta: title Listen To The Radio}
 {meta: artist Don Williams}
 {meta: composer Fredric O Knipe III}
+{meta: x_source classic-country}
+{meta: x_source_file listentotheradiolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess as a [Em]lover I [Am]have a [C]ways to [F]go
@@ -45,3 +48,9 @@ Listen to the [F]radi[G7]o  oh [C]listen to the [F]radi[G7]o
 [C]Let's spend the night [Am]together
 [Em]Baby don't [C]go they [F]sing it [G7]on the [C]radio
 {end_of_verse}
+
+
+
+
+
+

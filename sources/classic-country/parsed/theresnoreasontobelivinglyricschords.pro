@@ -1,6 +1,9 @@
 {meta: title There's No Reason To Be Living}
 {meta: artist Stonewall Jackson}
 {meta: composer Joe Walsh and Edison Youngblood}
+{meta: x_source classic-country}
+{meta: x_source_file theresnoreasontobelivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Drinkin' [C]beer talkin' [D7]loud hangin' [G]round with a no good [Em]crowd
@@ -26,3 +29,6 @@ There's no [C]reason to be [D7]livin' since you're [G]gone
 {start_of_verse: Verse 4}
 There's no [C]reason to be [D7]livin' since you're [G]gone
 {end_of_verse}
+
+
+

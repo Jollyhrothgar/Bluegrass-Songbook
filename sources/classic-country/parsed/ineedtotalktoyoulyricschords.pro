@@ -1,6 +1,9 @@
 {meta: title I Need To Talk To You}
 {meta: artist Reba McEntire}
 {meta: composer Linda Davis, Marcus Franklin Johnson, Tim Owens}
+{meta: x_source classic-country}
+{meta: x_source_file ineedtotalktoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]The whole [G7]town would be [F]talking[C]
@@ -64,3 +67,11 @@ I need to [Dm]talk [G7]to [Am]You
 {start_of_verse: Verse 8}
 I need to [F]talk [G7]to [C]You
 {end_of_verse}
+
+
+
+
+
+
+
+

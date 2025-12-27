@@ -1,6 +1,9 @@
 {meta: title The Angels Rejoiced Last Night}
 {meta: artist Emmylou Harris}
 {meta: composer Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file theangelsrejoicedlastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A house not a home was a picture satan painted
@@ -36,3 +39,8 @@ In a voice sweet and low her last words were spoken
 [D7]While mother with the angels rejoiced last [G]night
 [D7]While mother with the [C]angels rejoiced last [G]night
 {end_of_verse}
+
+
+
+
+

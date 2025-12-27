@@ -1,6 +1,9 @@
 {meta: title The Wall}
 {meta: artist Johnny Cash}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file thewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a lotta strange men in cell Block 10 
@@ -43,3 +46,8 @@ But I [C]know a man who [G]tried
 The [C]newspaper called it a [G]jailbreak plan but I [C]know it was [G]suicide
 [C]I know it was [G]suicide
 {end_of_verse}
+
+
+
+
+

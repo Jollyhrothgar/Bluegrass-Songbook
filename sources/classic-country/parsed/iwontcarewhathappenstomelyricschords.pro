@@ -1,6 +1,9 @@
 {meta: title I Won't Care What Happens To Me}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and Van Givens}
+{meta: x_source classic-country}
+{meta: x_source_file iwontcarewhathappenstomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where will I go if you [F]leave me
@@ -29,3 +32,6 @@ I [C]won't care what [G7]happens to [C]me [C7]
 [C]And don't ever tell me [F]you're setting me free
 Cause I [C]won't care what [G7]happens to [C]me
 {end_of_verse}
+
+
+

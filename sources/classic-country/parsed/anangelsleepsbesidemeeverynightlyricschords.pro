@@ -1,6 +1,9 @@
 {meta: title An Angel Sleeps Beside Me Every Night}
 {meta: artist Eddy Arnold}
 {meta: composer Gary S. Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file anangelsleepsbesidemeeverynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]An angel sleeps [Em]beside me every [F]night[Dm]   [C]
@@ -37,3 +40,7 @@ With[G7]out her love my world would fade [C]away
 Yes an angel sleeps [Em]beside me every [F]night[Dm]   [C]
 And [G7]because of her my sun shines every [C]day
 {end_of_verse}
+
+
+
+

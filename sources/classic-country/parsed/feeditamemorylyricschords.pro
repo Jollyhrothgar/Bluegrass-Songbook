@@ -1,6 +1,9 @@
 {meta: title Feed It A Memory}
 {meta: artist Willie Nelson}
 {meta: composer Hank Cochran and Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file feeditamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They said that my [F]heart wouldn't [C]have long to live
@@ -31,3 +34,6 @@ So if [F]you can give it the [C]love that it needs
 [C]And it's starting to die
 [G7]I just feed it a memory of [F]yo[C]u
 {end_of_verse}
+
+
+

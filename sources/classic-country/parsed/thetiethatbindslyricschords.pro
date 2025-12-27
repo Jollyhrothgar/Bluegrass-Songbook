@@ -1,5 +1,8 @@
 {meta: title The Tie That Binds}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file thetiethatbindslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a room so lonely and cheerless
@@ -42,3 +45,8 @@ See how the golden curl [G]shines
 We'll keep a smile while she [C]sleeps for
 [D7]She is the tie that [G]binds
 {end_of_verse}
+
+
+
+
+

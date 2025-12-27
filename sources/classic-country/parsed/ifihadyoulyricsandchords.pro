@@ -1,6 +1,9 @@
 {meta: title If I Had You}
 {meta: artist Alan Jackson}
 {meta: composer Jim McBride and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could have you I [F]know what [G7]I'd do
@@ -26,3 +29,6 @@ Everything would [F]be all right [G7]if I had [C]you
 {start_of_verse: Verse 4}
 Every[F]thing would [G7]be all right if I had [C]you
 {end_of_verse}
+
+
+

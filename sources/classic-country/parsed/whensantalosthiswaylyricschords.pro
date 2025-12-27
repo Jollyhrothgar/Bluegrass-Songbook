@@ -1,6 +1,9 @@
 {meta: title When Santa Lost His Way}
 {meta: artist George Morgan}
 {meta: composer Warren Brown}
+{meta: x_source classic-country}
+{meta: x_source_file whensantalosthiswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A little known tale now [F]almost [C]lost
@@ -43,3 +46,8 @@ For this was indeed the star of the King of [C]Kings
 And his words came back as he flew out of [Am]sight
 No [C]child shall [G7]weep on this [Em]Christ[G7]mas [C]night
 {end_of_verse}
+
+
+
+
+

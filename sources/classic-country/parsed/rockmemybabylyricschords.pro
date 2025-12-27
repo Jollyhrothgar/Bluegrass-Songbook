@@ -1,6 +1,9 @@
 {meta: title Rock Me My Baby}
 {meta: artist Buddy Holly}
 {meta: composer Shorty Long and Susan Heather}
+{meta: x_source classic-country}
+{meta: x_source_file rockmemybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well put your arms around me now
@@ -50,3 +53,9 @@ Well [F]rock a-like a [C]hickory dickory dock
 [F]Up and down around the clock
 Well a-[G7]rock me my [C]baby
 {end_of_verse}
+
+
+
+
+
+

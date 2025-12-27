@@ -1,6 +1,9 @@
 {meta: title If You Don't Want Me To (The Freeze)}
 {meta: artist Ronnie Milsap}
 {meta: composer Jimmie Lee Sloas and Robert White Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudontwantmetolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't tempt me with your [Em]eyes or fill my heart with [C]lies
@@ -58,3 +61,10 @@
 [C]If you don't want me to don't tease me don’t tease me
 [D7]Try to please [G]me
 {end_of_verse}
+
+
+
+
+
+
+

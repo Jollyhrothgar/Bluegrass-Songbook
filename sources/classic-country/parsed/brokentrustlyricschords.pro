@@ -1,6 +1,9 @@
 {meta: title Broken Trust}
 {meta: artist Brenda Lee}
 {meta: composer Jimbeau Hinson}
+{meta: x_source classic-country}
+{meta: x_source_file brokentrustlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Injured [D7]love slowly falls [G]apart
@@ -47,3 +50,9 @@ Injured [D7]love slowly falls [G]apart
 Say good-bye [C]cause love can't [G]right
 Above the [D7]lies of a broken [G]trust
 {end_of_verse}
+
+
+
+
+
+

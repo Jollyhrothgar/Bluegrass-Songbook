@@ -1,6 +1,9 @@
 {meta: title It's Not Easy Being Fifteen}
 {meta: artist John Conlee}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file itsnoteasybeingfifteenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's not [F]easy [C]being fifteen
@@ -43,3 +46,8 @@ Some[E7]one to help you bounce back when you're [Am]feeling real [C]low
 And you'll [F]turn the other cheek [G7]and get a [C]kiss for your [F]woes
 Then you'll [C]know [G7]love makes it [C]easy
 {end_of_verse}
+
+
+
+
+

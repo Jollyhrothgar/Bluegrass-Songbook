@@ -1,6 +1,9 @@
 {meta: title The Ten Commandments}
 {meta: artist Johnny Cash}
 {meta: composer Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file thetencommandmentslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Moses led God's children out to find the promised land
@@ -83,3 +86,18 @@ They pulled up stakes and headed out to find the promised land
 {start_of_verse: Verse 5}
 Climb that mountain now and tell us what our Lord has had to say
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Same Old Story Same Old Lie}
 {meta: artist Norma Jean}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file sameoldstorysameoldlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oo-[C]ooo-[D7]ohh  [G]same old story [D7]same old l[G]ie
@@ -50,3 +53,9 @@ Same old you and [D7]same old [G]I
 Make me laugh [D7]before I [G]cry
 Lord I think [D7]I'm gonna [G]die
 {end_of_verse}
+
+
+
+
+
+

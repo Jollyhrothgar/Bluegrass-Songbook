@@ -1,6 +1,9 @@
 {meta: title When It Come To You}
 {meta: artist Connie Smith}
 {meta: composer Marty Stuart and Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file whenitcometoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve got a [F]chain [G7]wrapped around my [C]heart
@@ -40,3 +43,8 @@ But I’d do it [G7]again when it comes to [C]you
 {start_of_verse: Verse 4}
 I’d do it [G7]again when it comes to [C]you
 {end_of_verse}
+
+
+
+
+

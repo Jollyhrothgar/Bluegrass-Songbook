@@ -1,6 +1,9 @@
 {meta: title Make My Life With You}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Gary Burr}
+{meta: x_source classic-country}
+{meta: x_source_file makemylifewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here in the day here in the light
@@ -53,3 +56,10 @@ Lit by the moon still by my side
 [F]And the love that comes over [G7]me
 [F]Is enough to make me [G7]stay
 {end_of_verse}
+
+
+
+
+
+
+

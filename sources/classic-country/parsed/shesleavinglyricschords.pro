@@ -1,6 +1,9 @@
 {meta: title She’s Leaving}
 {meta: artist Jim Ed Brown}
 {meta: composer Kevin Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file shesleavinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's leaving she's [G7]leaving [C]she's on the ship now and [F]leaving
@@ -65,3 +68,12 @@ Like it [F]doesn't matter much to see her [C]leaving
 [C]Standing by the gateway tossing [G7]streamers over my way 
 I [F]find it kinda hard be[C]lieving
 {end_of_verse}
+
+
+
+
+
+
+
+
+

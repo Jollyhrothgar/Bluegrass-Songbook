@@ -1,6 +1,9 @@
 {meta: title There Ain't Enough Love To Go Around}
 {meta: artist Tony Booth}
 {meta: composer Robert Jones}
+{meta: x_source classic-country}
+{meta: x_source_file thereaintenoughlovetogoaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the chairs are on the table and the [F]morning waits out[C]side
@@ -34,3 +37,7 @@ I guess there ain't enough of [G7]love to go [C]around
 [F]Everybody [G7]wants the kind of [C]lovin' I ain't [Am]found
 [F]And there ain't enough of [G7]love to go [C]around
 {end_of_verse}
+
+
+
+

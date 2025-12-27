@@ -1,6 +1,9 @@
 {meta: title Did You Ever Go Sailing}
 {meta: artist T. Texas Tyler}
 {meta: composer Albert Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file didyouevergosailinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Did You Ever Go Sailing 
@@ -41,3 +44,8 @@ And listen to the [A7]southern melo[D7]dy
 T'was the [G]place where I was born on a [C]bright October [G]morn
 And it's [C]nestled at the [G]end of my [D7]river of memo[G]ries
 {end_of_verse}
+
+
+
+
+

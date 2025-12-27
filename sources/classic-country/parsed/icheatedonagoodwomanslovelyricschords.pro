@@ -1,6 +1,9 @@
 {meta: title I Cheated On A Good Woman’s Love}
 {meta: artist Billy Crash Craddock}
 {meta: composer Del Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file icheatedonagoodwomanslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gather round I'm gonna tell a story
@@ -48,3 +51,11 @@ But it's too late cause when I say I love her
 I'll lay it out so there won't be a doubt
 [C]How I brought my kingdom to it's [G]fall
 {end_of_verse}
+
+
+
+
+
+
+
+

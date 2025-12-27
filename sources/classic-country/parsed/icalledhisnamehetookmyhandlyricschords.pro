@@ -1,6 +1,9 @@
 {meta: title I Called His Name He Took My Hand}
 {meta: artist Ray Price}
 {meta: composer Lee Dresser}
+{meta: x_source classic-country}
+{meta: x_source_file icalledhisnamehetookmyhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He took my hand [F]and led me out of [F][C]sin
@@ -31,3 +34,6 @@
 [C]Just call His [G7]name He'll [F]take your [C]hand
 [F](He'll take your [C]hand)
 {end_of_verse}
+
+
+

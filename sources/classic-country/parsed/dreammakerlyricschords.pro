@@ -1,6 +1,9 @@
 {meta: title Dream Maker}
 {meta: artist Conway Twitty}
 {meta: composer Byron Hill and Remington Wilde}
+{meta: x_source classic-country}
+{meta: x_source_file dreammakerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You are my dream [G]maker
@@ -56,3 +59,14 @@ Takin' me places I've never been
 {start_of_verse: Verse 2}
 Takin' me places I've never been
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

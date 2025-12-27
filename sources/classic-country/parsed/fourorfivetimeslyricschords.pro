@@ -1,6 +1,9 @@
 {meta: title Four Or Five Times}
 {meta: artist Bob Wills}
 {meta: composer Byron Gay and Marco H. Hellman}
+{meta: x_source classic-country}
+{meta: x_source_file fourorfivetimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ah four five times (ah four five times)
@@ -25,3 +28,5 @@ Haa da haa da hoo di (haa da haa [D7]da hoo di)
 Hoo di ho di hee [G7]di (hoo di ho di hee di)
 Four five [C]times (oh four five times)
 {end_of_verse}
+
+

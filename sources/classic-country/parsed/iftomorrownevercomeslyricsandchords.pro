@@ -1,6 +1,9 @@
 {meta: title If Tomorrow Never Comes}
 {meta: artist Garth Brooks}
 {meta: composer Kent Blazy and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file iftomorrownevercomeslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes late at [Am]night 
@@ -56,3 +59,7 @@ To tell her how I [G]feel[C]  [G]
 Just what you're thinking [D7]of
 If tomorrow never [C]comes[G]  [Am]   [G]
 {end_of_verse}
+
+
+
+

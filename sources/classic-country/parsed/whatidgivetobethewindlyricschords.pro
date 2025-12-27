@@ -1,6 +1,9 @@
 {meta: title What I'd Give (To Be The Wind)}
 {meta: artist Roger Miller}
 {meta: composer Curly Putman and Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file whatidgivetobethewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I watch the wind blow [C]brown leaves to the [G]ground
@@ -29,3 +32,6 @@ To be free to leave this [C]awful place I'm [D7]in
 [G]It's hopeless cause I [C]haven't got a [G]penny or a [C]friend
 [G]Oh what I'd [C]give Lord [D7]to be the [G]wind
 {end_of_verse}
+
+
+

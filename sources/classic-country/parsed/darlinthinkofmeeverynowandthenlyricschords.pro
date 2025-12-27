@@ -1,6 +1,9 @@
 {meta: title Darlin' Think Of Me Every Now And Then}
 {meta: artist Charley Pride}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file darlinthinkofmeeverynowandthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight here in your arms is where I've [D7]longed to [G]be
@@ -37,3 +40,7 @@
 {start_of_verse: Verse 5}
 [C]And darlin' think of me [G]every now [D7]and [G]then
 {end_of_verse}
+
+
+
+

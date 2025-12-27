@@ -1,5 +1,8 @@
 {meta: title Signed Sealed and Delivered}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file signedsealedanddeliveredlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Signed sealed and [G7]delivered  a package containing my [C]heart
@@ -24,3 +27,6 @@ I send it to [C7]you as a [F]token  I'm [G7]sorry we're so far [C]apart
 It's all that I have to [G7]offer  but darling you know that it's [C]true
 Signed [C7]sealed and [F]delivered  the [G7]postman will bring it to [C]you
 {end_of_verse}
+
+
+

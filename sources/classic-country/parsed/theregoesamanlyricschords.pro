@@ -1,5 +1,8 @@
 {meta: title There Goes A Man}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file theregoesamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There goes a man who gave his heart to someone and I feel [D7]sorry for him
@@ -21,3 +24,5 @@ I [A7]wonder if he'd find the time to [D7]offer sympathy
 [G]There goes a man who gave his heart to someone and I feel [D7]sorry for him 
 [C]For that someone just [D7]gave her heart to [G]me
 {end_of_verse}
+
+

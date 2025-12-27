@@ -1,6 +1,9 @@
 {meta: title If You See My Heart Today}
 {meta: artist Marty Robbins}
 {meta: composer Joe Babcock}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouseemyhearttodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7](If you see my heart [G]today)
@@ -47,3 +50,9 @@ To tell my [D7]heart that she's [G]no good for me
 That another claims her [F]for his own 
 That our love could never [Bm]be
 {end_of_verse}
+
+
+
+
+
+

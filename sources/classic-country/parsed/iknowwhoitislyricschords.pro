@@ -1,5 +1,8 @@
 {meta: title I Know Who It Is}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file iknowwhoitislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody made every [G7]rock and [C]tree
@@ -72,3 +75,13 @@ And who gave Moses [G7]the rules of [C]men
 I know who it is and I'm [G7]gonna tell on '[C]em
 I know who it is and I'm [G7]gonna tell on '[C]em)
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Everybody Bring A Song}
 {meta: artist Dottie West}
+{meta: x_source classic-country}
+{meta: x_source_file everybodybringasonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm the girl who told the [G]world this [D7]town's too small for [G]me
@@ -36,3 +39,7 @@ Every[D7]body bring a [G]song  every[D7]body bring a [G]song
 Every[D7]body bring a [G]song  every[D7]body bring a [G]song
 Every[D7]body bring a [G]song
 {end_of_verse}
+
+
+
+

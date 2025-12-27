@@ -1,5 +1,8 @@
 {meta: title I've Got No Use For The Women Yet}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotnouseforthewomenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got no [F]use for the [C]women a [F]true one may seldom be [C]found
@@ -42,3 +45,8 @@
 [C]And many [F]another young [C]puncher as he [F]rides past the pile of [C]stones
 [F]Recalls some similar [C]woman and [G7]think of his moldering [C]bones
 {end_of_verse}
+
+
+
+
+

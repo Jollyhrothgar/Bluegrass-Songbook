@@ -1,6 +1,9 @@
 {meta: title The Girl Behind The Bar}
 {meta: artist The Country Gentlemen}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlbehindthebarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I walked in the Wayside Tavern
@@ -43,3 +46,8 @@ My thoughts are [F]of the one so [C]fair
 That I met that [F]night in the Wayside [C]Tavern
 When the smell of [G7]drink was in the [C]air
 {end_of_verse}
+
+
+
+
+

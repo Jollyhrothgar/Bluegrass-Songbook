@@ -1,6 +1,9 @@
 {meta: title Sneaking Out The Backdoor}
 {meta: artist Crystal Gayle}
 {meta: composer James Valentini and Frank Saulino}
+{meta: x_source classic-country}
+{meta: x_source_file sneakingoutthebackdoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I heard voices in the kitchen late last [F]night
@@ -32,3 +35,7 @@ So now I'm [F]sneaking out the [G7]back door of your [C]life
 So now I'm [F]sneaking out the [G7]back door of your [C]life
 So now I'm [F]sneaking out the [G7]back door of your [C]life
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title When Somebody Loves You}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file whensomebodylovesyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When your [C]heart is all [Am]alone
@@ -47,3 +50,9 @@ When [F]somebody loves [G7]you the way I [C]love you
 [G7]The way I [C]love you[Am]
 [G7]The way I [C]love you
 {end_of_verse}
+
+
+
+
+
+

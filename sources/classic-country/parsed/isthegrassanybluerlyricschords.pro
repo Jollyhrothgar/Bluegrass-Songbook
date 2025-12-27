@@ -1,6 +1,9 @@
 {meta: title Is The Grass Any Bluer}
 {meta: artist Rhonda Vincent}
 {meta: composer Cory Batten, Buck Moore, Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file isthegrassanybluerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You [G7]rolled out of Rosine a [F]dedicated [C]man
@@ -51,3 +54,10 @@ We miss you still
 Tag:
 [G7]Is the grass any bluer on the other [C]side
 {end_of_verse}
+
+
+
+
+
+
+

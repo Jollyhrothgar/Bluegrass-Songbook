@@ -1,6 +1,9 @@
 {meta: title I've Got Just The Thing For You}
 {meta: artist Jim Reeves}
 {meta: composer Nancy White}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotjustthethingforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I ain’t got a great big car [C]I ain’t got no [G]caviar  
@@ -43,3 +46,8 @@ Got [C]two cents and a wishing well [G]can’t she hear those weddin’ bells
 [G]I ain’t got no cash on hand [C]can’t even pay the [G]preacher man
 But I’ve got [D7]just the thing for [G]you
 {end_of_verse}
+
+
+
+
+

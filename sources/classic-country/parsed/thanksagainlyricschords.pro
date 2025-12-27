@@ -1,6 +1,9 @@
 {meta: title Thanks Again}
 {meta: artist Ricky Skaggs}
 {meta: composer Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file thanksagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I've sent [G]bouquets for [D7]Mother's Day
@@ -52,3 +55,9 @@ Hey [D7]mom and daddy [Am]thanks [G]again[D7]
 To my [G]beautiful life[D7]long [Em]friends[C]
 Hey [D7]mom and daddy [Am]thanks a[G]gain
 {end_of_verse}
+
+
+
+
+
+

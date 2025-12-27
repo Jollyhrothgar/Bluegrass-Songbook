@@ -1,5 +1,8 @@
 {meta: title Let Her Go God Bless Her}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file lethergoGodBlessHerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let her go let her go God [F]bless her
@@ -63,3 +66,11 @@ I [C]saw my old true love [G7]there
 And I [C]knew that her mind was a [F]changing
 From the [C]way that she [G7]done up her [C]hair
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Road Less Traveled}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Buddy Brock}
+{meta: x_source classic-country}
+{meta: x_source_file theroadlesstraveledlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a road a winding road that never ends
@@ -44,3 +47,8 @@ And it [F]all might come together and it all might come unraveled
 On the road less [C]traveled
 There's a road a winding road that never ends
 {end_of_verse}
+
+
+
+
+

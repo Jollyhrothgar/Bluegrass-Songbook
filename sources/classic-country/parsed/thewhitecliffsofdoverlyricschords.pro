@@ -1,5 +1,8 @@
 {meta: title The White Cliffs Of Dover}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file thewhitecliffsofdoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]There'll be [G]bluebirds [Bm]over the [C]white cliffs of [G]Dover
@@ -21,3 +24,5 @@
 [G]There'll be [Bm]bluebirds over [C]the white cliffs of [G]Dover
 [Am]Tomorrow [D7]just you wait and [G]see
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title More From Habit Than Desire}
 {meta: artist Red Sovine}
 {meta: composer Bill Parson and Red Sovine}
+{meta: x_source classic-country}
+{meta: x_source_file morefromhabitthandesirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You tell me how you [C]need me when you're [D7]lonely
@@ -31,3 +34,6 @@
 [C]Your kiss has lost its fire
 [G]And I know your love's more [D7]habit than [G]desire
 {end_of_verse}
+
+
+

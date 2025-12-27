@@ -1,6 +1,9 @@
 {meta: title When The Sun Goes Down}
 {meta: artist Marty Stuart}
 {meta: composer Marty Stuart and Mark Collie}
+{meta: x_source classic-country}
+{meta: x_source_file whenthesungoesdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I do alright in the [D7]daylight
@@ -34,3 +37,7 @@ Heartaches come around when the sun goes [G]down
 Ah those [D7]heartaches come around 
 When the sun goes [G]down
 {end_of_verse}
+
+
+
+

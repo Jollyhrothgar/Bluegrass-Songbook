@@ -1,6 +1,9 @@
 {meta: title Eye Of A Hurricane}
 {meta: artist John Anderson}
 {meta: composer Jerry Fulle}
+{meta: x_source classic-country}
+{meta: x_source_file eyeofahurricanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're the [G7]eye of a hurricane the calm within a storm
@@ -48,3 +51,7 @@ And you're the [G7]eye of a hurricane a beacon in the night
 When the [Em]whistle blows till the [C]rooster crows
 I [A7]know you're gonna do me [C]right yeah [G7]
 {end_of_verse}
+
+
+
+

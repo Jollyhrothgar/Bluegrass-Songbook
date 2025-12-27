@@ -1,5 +1,8 @@
 {meta: title Ravishing Ruby}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file ravishingrubylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ravishing Ruby [G7]she's been a-round for a [C]while
@@ -39,3 +42,7 @@ Of a man named Smiling [C]Jack
 That was her [F]daddy's name and that's all she ever [C]knew
 Ravishing [G7]Ruby ain't got time for guys like me and [C]you
 {end_of_verse}
+
+
+
+

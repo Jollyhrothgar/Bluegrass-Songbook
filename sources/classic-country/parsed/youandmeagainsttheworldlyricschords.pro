@@ -1,6 +1,9 @@
 {meta: title You And Me Against The World}
 {meta: artist Jack Greene}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file youandmeagainsttheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You and [F]me against the world [C]that's how [G7]it used to [C]be
@@ -33,3 +36,7 @@ We only had a [F]dollar left [G7]between us
 [C]We started out with [F]nothing but a [C]blue sky up [Am]above
 But we [C]couldn't see the [G7]problems for the [C]love
 {end_of_verse}
+
+
+
+

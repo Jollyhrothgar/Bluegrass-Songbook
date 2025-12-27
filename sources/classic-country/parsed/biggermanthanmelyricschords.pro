@@ -1,6 +1,9 @@
 {meta: title Bigger Man Than Me}
 {meta: artist George Strait}
 {meta: composer Curtis Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file biggermanthanmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never thought too much about her [G7]leavin'
@@ -33,3 +36,7 @@ And I’ll be the first who proudly shake his [C]hand
 {start_of_verse: Verse 4}
 It's for [G7]sure it's gonna take a lot [C]bigger man than me
 {end_of_verse}
+
+
+
+

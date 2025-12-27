@@ -1,6 +1,9 @@
 {meta: title The Church By The Road}
 {meta: artist Charlie Sizemore}
 {meta: composer Charles Ethan Sizemore}
+{meta: x_source classic-country}
+{meta: x_source_file thechurchbytheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Often times in my memories I wondered again 
@@ -91,3 +94,14 @@ It was [F]there He took the weight off my [C]load
 And He [F]freely removed all my [C]sorrow and strife
 In the little old [G7]church by the [C]road
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

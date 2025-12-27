@@ -1,6 +1,9 @@
 {meta: title This Bottle In My Hand}
 {meta: artist George Jones}
 {meta: composer David Allen Coe}
+{meta: x_source classic-country}
+{meta: x_source_file thisbottleinmyhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last week he spent his whole paycheck on [C]whiskey
@@ -30,3 +33,6 @@
 [D7]To be faithful to this bottle in my [G]hand
 [D7]Yes we'll be faithful to this bottle [C]in our [G]h-a-nd
 {end_of_verse}
+
+
+

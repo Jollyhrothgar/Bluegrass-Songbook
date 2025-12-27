@@ -1,5 +1,8 @@
 {meta: title All In Alabama}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file allinalabamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just had to show 'em I didn't [F]need 'em
@@ -49,3 +52,9 @@ I didn't [F]d--ie out in Mon[C]tana no [Am]Lord
 You let me [C]get back [G7]to my old home[Am]land
 And I'm [C]gonna hold on [G7]to her [C]hand
 {end_of_verse}
+
+
+
+
+
+

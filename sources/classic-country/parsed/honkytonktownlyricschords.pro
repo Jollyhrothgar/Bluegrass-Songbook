@@ -1,5 +1,8 @@
 {meta: title Honky Tonk Town}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonktownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lights are bright all through the night in [C]honky tonk town
@@ -28,3 +31,6 @@ For [C]each heartache a drink I’ll take [G]but still the memories [D7]burn
 Just [G]smoke filled rooms and cheap perfume and the [C]call for another round
 With a [G]broken heart I’m now a part of [D7]honky tonk [G]town
 {end_of_verse}
+
+
+

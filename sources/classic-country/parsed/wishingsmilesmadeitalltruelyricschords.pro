@@ -1,6 +1,9 @@
 {meta: title Wishing Smiles Made It All True}
 {meta: artist Anne Murray}
 {meta: composer Richard Gael}
+{meta: x_source classic-country}
+{meta: x_source_file wishingsmilesmadeitalltruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How many times have I [C]heard you [G]say
@@ -25,3 +28,6 @@ But [A7]darling what else can I [E7]do
 How many times have I [C]smiled at [G]you
 Smiles really [D7]made it all [C]tru[G]e
 {end_of_verse}
+
+
+

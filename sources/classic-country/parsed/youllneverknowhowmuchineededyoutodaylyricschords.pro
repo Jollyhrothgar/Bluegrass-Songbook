@@ -1,6 +1,9 @@
 {meta: title You'll Never Know How Much I Needed You Today}
 {meta: artist Conway Twitty}
 {meta: composer James Benton, Janet Vinson, Patricia Linthicum}
+{meta: x_source classic-country}
+{meta: x_source_file youllneverknowhowmuchineededyoutodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Half asleep I reached for [F]you at [C]dawn [F]
@@ -31,3 +34,6 @@ You'll never [C]know [F]how much I [C]needed [G7]you to[C]day[F]
 {start_of_verse: Verse 4}
 You'll never [C]know [F]how much I [C]needed [G7]you to[F]day[C]
 {end_of_verse}
+
+
+

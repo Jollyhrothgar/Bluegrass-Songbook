@@ -1,5 +1,8 @@
 {meta: title My Treasure}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file mytreasurelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saved a lot of money my fortune was [C]untold
@@ -28,3 +31,6 @@
 [C]My treasure  [G]unmeasured
 [D7]But it don't hold the heart of the one that I [G]love
 {end_of_verse}
+
+
+

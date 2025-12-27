@@ -1,6 +1,9 @@
 {meta: title Feeling Like A Woman}
 {meta: artist Barbara Mandrell}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file feelinglikeawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you put me down the [F]word got around 
@@ -38,3 +41,6 @@ Standing [F]back against the [D7]wall
 And had me [C]right back feeling like a [F]woman
 I’m [C]right back feeling like a [F]woman [G7]after [C]all [F]  [C]
 {end_of_verse}
+
+
+

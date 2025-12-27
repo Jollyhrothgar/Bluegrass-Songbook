@@ -1,5 +1,8 @@
 {meta: title El Paso}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file elpasolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Out in the West Texas town of El [Am]Paso
@@ -112,3 +115,20 @@ From out of nowhere Felina has found [Am]me
 Cradled by two loving arms that I'll die [Am]for
 [D7]One little kiss and Felina [G]good-bye
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

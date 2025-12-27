@@ -1,6 +1,9 @@
 {meta: title I’d Rather Not Know}
 {meta: artist Jim Reeves}
 {meta: composer Billy Deaton and Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file idrathernotknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Our once precious love was marred by [D7]separation
@@ -29,3 +32,6 @@ And tarnished the [D7]love that I treasured [G]so
 Any rival of mine is faceless and [D7]traceless
 Let's keep it that way cause I'd rather not [G]know
 {end_of_verse}
+
+
+

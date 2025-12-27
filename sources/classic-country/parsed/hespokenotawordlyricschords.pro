@@ -1,6 +1,9 @@
 {meta: title He Spoke Not A Word}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Johnny Masters}
+{meta: x_source classic-country}
+{meta: x_source_file hespokenotawordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like a sheep He was led to the [D7]slaughter
@@ -43,3 +46,8 @@ To Calvary's dark cross there [D7]alone
 He [C]gave up the riches of [G]Glory
 The sins of [D7]all Earth to [G]atone
 {end_of_verse}
+
+
+
+
+

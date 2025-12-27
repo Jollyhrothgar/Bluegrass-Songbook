@@ -1,6 +1,9 @@
 {meta: title Cherokee Fiddle}
 {meta: artist Johnny Lee}
 {meta: composer Michael Martin Murphy}
+{meta: x_source classic-country}
+{meta: x_source_file cherokeefiddlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the train pulled into the [F]station
@@ -29,3 +32,6 @@ He’d slick back his [Am]hair and open up his [Dm]case
 [G7]He’d play the Cherokee [C]Fiddle he’d play it for the [F]whiskey
 Cause good [G7]whiskey never let him lose his [C]place
 {end_of_verse}
+
+
+

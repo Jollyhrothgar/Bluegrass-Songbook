@@ -1,6 +1,9 @@
 {meta: title The Battle of Armageddon}
 {meta: artist Hank Williams Sr.}
 {meta: composer Roy Acuff and Odell McLeod}
+{meta: x_source classic-country}
+{meta: x_source_file thebattleofarmageddonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a mighty battle coming and it's well now on it's way
@@ -42,3 +45,9 @@ Those who seek it will receive it mercy at [G7]the Savior's [C]feet
 In the Book of Revelation words in chapter sixteen say
 There'll be gathered there great armies for that [G7]battle on that [C]day
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Lost My Love Today}
 {meta: artist Ferlin Husky}
 {meta: composer Betty Westergard and Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file ilostmylovetodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've seen people [D7]every[G]where who [C]said they didn't [D7]care
@@ -15,3 +18,4 @@ I [G]never knew but [C]now I do I [G]lost my [D7]love to[G]day
 I lost my [C]love to[G]day I [C]lost my love to[D7]day
 I [G]can't go on my [C]heart is gone I [G]lost my [D7]love to[G]day
 {end_of_verse}
+

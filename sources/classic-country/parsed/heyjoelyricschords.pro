@@ -1,6 +1,9 @@
 {meta: title Hey Joe}
 {meta: artist Moe Bandy}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file heyjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey Joe where'd you find that purdy girlie 
@@ -68,3 +71,15 @@ But this looks like the end my [F]Friend
 I'm [G7]gonna keep that dolly for my [C]own
 I'm [G7]gonna keep that dolly for my [C]own
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

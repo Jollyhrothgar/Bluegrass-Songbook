@@ -1,6 +1,9 @@
 {meta: title Freight Train Blues}
 {meta: artist Hank Williams}
 {meta: composer John Lair}
+{meta: x_source classic-country}
+{meta: x_source_file freighttrainblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born in Dixie in a boomer's shack
@@ -37,3 +40,8 @@ And [C]when the whistle blows I've gotta go
 [F]Oh lordy [C]guess I'm never gonna [A7]lose
 The [D7]mean old [G7]freight train [C]blues
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Thousand Times A Day}
 {meta: artist Patty Loveless}
 {meta: composer Gary Burr and Gary Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file athousandtimesadaylyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I gave up cigarettes haven't had to light one yet 
@@ -43,3 +46,8 @@ For I've [G]done it a [D7]thousand times a [G]day
 {start_of_verse: Verse 5}
 [C]Yes I've [G]done it a [D7]thousand times a [G]day
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Let It Slip Away}
 {meta: artist Faron Young}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file iletitslipawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I had it then [F]I let it slip [G7][C]away
@@ -37,3 +40,8 @@
 {start_of_verse: Verse 6}
 [F]Yes I had it but I [G7]let it slip [C]away
 {end_of_verse}
+
+
+
+
+

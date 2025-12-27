@@ -1,6 +1,9 @@
 {meta: title I'm Alright}
 {meta: artist Jean Shepard}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file imalrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm alright (I'm alright) I'm alright (I'm [F]alright)
@@ -39,3 +42,7 @@
 [C]A little bit weary in the soul [F]but I'm [G7]alright
 [C](I'm alright) I'm alright
 {end_of_verse}
+
+
+
+

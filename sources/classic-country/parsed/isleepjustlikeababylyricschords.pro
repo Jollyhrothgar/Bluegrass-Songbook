@@ -1,6 +1,9 @@
 {meta: title I Sleep Just Like A Baby}
 {meta: artist George Jones}
 {meta: composer J. Chambers, B. Sherrill, L. Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file isleepjustlikeababylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]By now I bet she's wondering how I'm [F]doing
@@ -34,3 +37,6 @@ I [C]wake up every [G7]hour and [C]cry
 Lord every night I sleep like a little bitty [F]baby
 I [C]wake up every [G7]hour and [C]cry
 {end_of_verse}
+
+
+

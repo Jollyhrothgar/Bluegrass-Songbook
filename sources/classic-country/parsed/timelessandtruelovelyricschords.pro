@@ -1,6 +1,9 @@
 {meta: title Timeless And True Love}
 {meta: artist Rhonda Vincent}
 {meta: composer Charlie Black, Buzz Cason, Austin Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file timelessandtruelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Look out on the night sky and [D7]tell me what you see
@@ -33,3 +36,7 @@ Oh [D7]mine is a timeless and [G]true love
 {start_of_verse: Verse 4}
 Oh [D7]mine is a timeless and [C]true [G]love
 {end_of_verse}
+
+
+
+

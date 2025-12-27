@@ -1,6 +1,9 @@
 {meta: title That's Too Good To Be True}
 {meta: artist the Everly Brothers}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file thatstoogoodtobetruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The girl I loved most [C]all my [G]life
@@ -29,3 +32,6 @@ Told me she had [C]gone to [G]stay
 Now she is back saying she'll be [Em]true again dear
 [G]But that's too [C]good [D7]to be [G]true
 {end_of_verse}
+
+
+

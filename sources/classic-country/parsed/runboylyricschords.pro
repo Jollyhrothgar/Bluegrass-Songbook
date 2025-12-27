@@ -1,6 +1,9 @@
 {meta: title Run Boy}
 {meta: artist Ray Price}
 {meta: composer Hy Heath}
+{meta: x_source classic-country}
+{meta: x_source_file runboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So you and your true love have [D7]parted 
@@ -42,3 +45,9 @@ Her [G]arms are still [D7]yearning for [G]you
 Run Boy fast as you can
 Back to the one who [D7]loves only you 
 {end_of_verse}
+
+
+
+
+
+

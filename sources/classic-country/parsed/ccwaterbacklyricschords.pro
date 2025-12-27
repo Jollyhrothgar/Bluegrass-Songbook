@@ -1,6 +1,9 @@
 {meta: title C C Waterback}
 {meta: artist George Jones}
 {meta: composer Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ccwaterbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 {comment: C C Waterback}
@@ -28,3 +31,7 @@ Till she [F]couldn't even find the [C]door
 {start_of_verse: Verse 1}
 {comment: C C Waterback}
 {end_of_verse}
+
+
+
+

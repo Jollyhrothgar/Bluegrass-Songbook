@@ -1,6 +1,9 @@
 {meta: title The Prodigal Son}
 {meta: artist Hank Williams Sr.}
 {meta: composer Floyd Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file theprodigalsonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A Prodigal son once [C]strayed from his [G]father
@@ -29,3 +32,6 @@ To wash all my sins and [A7]call me His [D7]own
 His [G]servants will bring a [C]ring for my [G]finger
 And never no [D7]more will I [G]roam
 {end_of_verse}
+
+
+

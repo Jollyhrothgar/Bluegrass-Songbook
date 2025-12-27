@@ -1,6 +1,9 @@
 {meta: title Ultimately Fine}
 {meta: artist Ricky Van Shelton}
 {meta: composer Sam Llanas and Kurt Neumann}
+{meta: x_source classic-country}
+{meta: x_source_file ultimatelyfinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see you walkin' and I hear you talkin'
@@ -48,3 +51,9 @@ That girl is [F]ultimately [C]fine
 Ultimately fine
 That girl is [F]ultimately [C]fine
 {end_of_verse}
+
+
+
+
+
+

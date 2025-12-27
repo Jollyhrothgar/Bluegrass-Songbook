@@ -1,6 +1,9 @@
 {meta: title Dolly With The Dimple Knees}
 {meta: artist Jim Reeves}
 {meta: composer Gilbert Gibson and Taffy Kikillus}
+{meta: x_source classic-country}
+{meta: x_source_file dollywiththedimplekneeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This puro Macy she drives me c[D7]razy
@@ -31,3 +34,8 @@ Why don't you ask her for a dance you'll know how sweet she [G]is
 Dolly with the dimpled knees Dolly with the dimpled [D7]knees
 Why don't you ask her for a dance you'll know how sweet she [G]is
 {end_of_verse}
+
+
+
+
+

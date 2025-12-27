@@ -1,6 +1,9 @@
 {meta: title Oklahoma Waltz}
 {meta: artist Johnny Bond}
 {meta: composer Jimmy Kenton}
+{meta: x_source classic-country}
+{meta: x_source_file oklahomawaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It happened in old Oklahoma
@@ -42,3 +45,9 @@ And [G7]left me here all [C]a lone
 Left me to pine for [G]my darling
 My [D7]darling that once was [G]my own
 {end_of_verse}
+
+
+
+
+
+

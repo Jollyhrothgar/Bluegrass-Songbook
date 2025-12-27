@@ -1,6 +1,9 @@
 {meta: title Lean on Me}
 {meta: artist Anne Murray}
 {meta: composer Bill}
+{meta: x_source classic-country}
+{meta: x_source_file leanonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes in our [F]lives
@@ -52,3 +55,8 @@ That you can't [G7][Em]car-ry
 I'll share your [C]load
 If you [G7]just call [C]me
 {end_of_verse}
+
+
+
+
+

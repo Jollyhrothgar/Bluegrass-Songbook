@@ -1,6 +1,9 @@
 {meta: title I Suppose}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Rusty Gabbard}
+{meta: x_source classic-country}
+{meta: x_source_file isupposelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I suppose you didn't know how much I love [F]you
@@ -29,3 +32,6 @@ Our [D7]love is gone that should be very [G7]plain
 I [C]could never take another chance with you [F]dear
 I [G7]suppose that you would only break my heart [C]again
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Lasso Santa Claus}
 {meta: artist Brenda Lee}
 {meta: composer Frankie Adams and Wilbur Jones}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnalassosantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna Lasso Santa [Am]Claus 
@@ -57,3 +60,10 @@ With the [D7]water pistol gun squirt squirt
 And [F]then I'll take his bags of [C]toys and [Am]run 
 And bring [D7]them all the kids [G7]who don't have [C]none
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Wasted Years}
 {meta: artist Jack Greene}
 {meta: composer Wally Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file wastedyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wasted [G7]years wasted years oh how [C]foolish
@@ -27,3 +30,6 @@ He's calling [C]you from a [Dm]life of [G7]wasted [C]years
 Turn around turn around [C7]God is [F]calling
 He's [D7]calling [C]you from a [Dm]life of [G7]wasted [C]years
 {end_of_verse}
+
+
+

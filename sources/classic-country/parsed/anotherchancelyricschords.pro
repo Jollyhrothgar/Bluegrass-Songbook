@@ -1,6 +1,9 @@
 {meta: title Another Chance}
 {meta: artist Tammy Wynette}
 {meta: composer Dennis Knutson, Jerry Taylor, Bobby Drawdy}
+{meta: x_source classic-country}
+{meta: x_source_file anotherchancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you left you said you was doing me a favor
@@ -47,3 +50,11 @@ Well I've rearranged the living room to suit me
 {start_of_verse: Verse 3}
 Well I've rearranged the living room to suit me
 {end_of_verse}
+
+
+
+
+
+
+
+

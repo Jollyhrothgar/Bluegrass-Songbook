@@ -1,6 +1,9 @@
 {meta: title Reasons to Quit}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file reasonstoquitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Reasons to quit the [C]smoke and beer don't do me like [G]before
@@ -35,3 +38,7 @@ Don't come [A7]round much [D7]anymore
 [G]Reasons to quit the  [C]low is always lower than the [G]high
 And the reasons for quitting  [D7]don't outnumber all the reasons [G]why
 {end_of_verse}
+
+
+
+

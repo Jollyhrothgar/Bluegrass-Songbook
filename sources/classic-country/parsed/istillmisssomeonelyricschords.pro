@@ -1,6 +1,9 @@
 {meta: title I Still Miss Someone}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash and Ray Cash Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file istillmisssomeonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At my door the [F]leaves are [G7]falling
@@ -29,3 +32,6 @@
 [F]There's someone for me [G7]somewhere
 [F]And I still [G7]miss [C]someone
 {end_of_verse}
+
+
+

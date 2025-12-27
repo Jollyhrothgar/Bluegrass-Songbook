@@ -1,5 +1,8 @@
 {meta: title Crazy Out Of My Mind}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file crazyoutofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm through the place where I [D7]don't know my [G]name
@@ -26,3 +29,6 @@ I've [C]got no place to go but [D7]crazy  [G]out of my [C]mind over [D7]baby
 He's the last [G]thing I remember [C]that I won't forget in [G]time
 Got no place to go but [C]crazy  out [D7]of my [G]mind
 {end_of_verse}
+
+
+

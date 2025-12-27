@@ -1,6 +1,9 @@
 {meta: title Jesus Saved Me}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file Jesussavedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once my heart was [F]heavy  [C]I was living in [G7]sin
@@ -31,3 +34,8 @@ Just [C]put your trust in [F]Jesus and [C]He'll [G7]save you [C]too
 And He saved me [F]saved me [C]and from sin set me [G7]free
 Yes He [C]saved me cause He [F]loved me [C]yes [G7]Jesus saved [C]me
 {end_of_verse}
+
+
+
+
+

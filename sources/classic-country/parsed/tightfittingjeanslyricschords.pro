@@ -1,5 +1,8 @@
 {meta: title Tight Fitting Jeans}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file tightfittingjeanslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She tried to hide it by the faded [C]denim clothes she [G]wore 
@@ -42,3 +45,8 @@ But [C]I know I'll always [A7]remember the [D7]time
 A [G]cowboy once had a [C]millionaire's [G]dream
 And Lord I loved that lady wearing tight [D7]fitting [G]jeans 
 {end_of_verse}
+
+
+
+
+

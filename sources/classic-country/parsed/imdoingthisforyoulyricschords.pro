@@ -1,6 +1,9 @@
 {meta: title I'm Doing This For You}
 {meta: artist Waylon Jennings}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file imdoingthisforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm coming back to you one more time
@@ -29,3 +32,8 @@ To give you one more chance to clear your mind
 {start_of_verse: Verse 5}
 [G7]I'm doing this for you not for [C]me
 {end_of_verse}
+
+
+
+
+

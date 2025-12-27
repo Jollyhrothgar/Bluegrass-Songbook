@@ -1,6 +1,9 @@
 {meta: title I Want To With You}
 {meta: artist David Ball}
 {meta: composer Steve Bogard and Jeff Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttowithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I [G]guess I've been traveling [C]light my whole life [G]through
@@ -44,3 +47,7 @@ But now [G]I want to with [C]you girl I [G]want to with [D7]you
 [C]Stay with somebody who will [A7]love and understand
 Girl [G]I want to with [D7]you[G]
 {end_of_verse}
+
+
+
+

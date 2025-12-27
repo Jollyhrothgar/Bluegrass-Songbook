@@ -1,6 +1,9 @@
 {meta: title Don't Say Goodnight}
 {meta: artist Everly Brothers}
 {meta: composer Brian Neary and Jim Photoglo}
+{meta: x_source classic-country}
+{meta: x_source_file dontsaygoodnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Fifteen years come [Em]December
@@ -67,3 +70,10 @@ I'd be telling him things like
 [E7]Say it's [Am]alright
 [D7]Darlin' don't say [G]goodnight
 {end_of_verse}
+
+
+
+
+
+
+

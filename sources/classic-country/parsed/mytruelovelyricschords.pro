@@ -1,5 +1,8 @@
 {meta: title My True Love}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file mytruelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I prayed to the [Am]lord to [F]send me a [G7]love
@@ -28,3 +31,6 @@ And I [C]thank the [Am]Heaven the [F]Heaven [G7]above
 For [C]sending [G7]m-y true [C]love 
 [F]My true [C]love
 {end_of_verse}
+
+
+

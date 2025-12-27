@@ -1,6 +1,9 @@
 {meta: title Move On In And Stay}
 {meta: artist Ray Price}
 {meta: composer Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file moveoninandstaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's an empty spot inside my heart for [F]someone just like [C]you
@@ -29,3 +32,7 @@ Been looking for someone just like [D7]you I've already got the [G7]ring
 {start_of_verse: Verse 5}
 Repeat last
 {end_of_verse}
+
+
+
+

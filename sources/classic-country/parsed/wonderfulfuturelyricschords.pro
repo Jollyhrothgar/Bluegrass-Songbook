@@ -1,5 +1,8 @@
 {meta: title Wonderful Future}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file wonderfulfuturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today as I [D7]walk through my [G]garden of [C]dreams
@@ -28,3 +31,6 @@ And [D7]yesterday's memories still [G]find me
 [C]Scenes from the past keep [G]returning
 I've [D7]got a wonderful future be[G]hind me
 {end_of_verse}
+
+
+

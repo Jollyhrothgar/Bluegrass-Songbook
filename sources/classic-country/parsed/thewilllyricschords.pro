@@ -1,6 +1,9 @@
 {meta: title The Will}
 {meta: artist Mark Chesnutt}
 {meta: composer Jackson Leap}
+{meta: x_source classic-country}
+{meta: x_source_file thewilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We gathered with the lawyer for the [F]reading of the [C]will
@@ -38,3 +41,7 @@
 [C]So right there in that office in [F]words so soft and [C]still
 [F]We all swore that we'd [C]honor the [G7]things in daddy's [C]will
 {end_of_verse}
+
+
+
+

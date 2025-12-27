@@ -1,6 +1,9 @@
 {meta: title Just Between You and Me}
 {meta: artist Charlie Pride}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file justbetweenyouandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So I feel so blue sometimes I wanna [F]die 
@@ -26,3 +29,6 @@ But just between you and [F]me   [G7]I'm not so sure about [C]it
 Cause just between you and me  [F]you're [G7]too much to [C]forget 
 [G7]You're too much to [C]forget
 {end_of_verse}
+
+
+

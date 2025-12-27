@@ -1,5 +1,8 @@
 {meta: title Angel And The Badman}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file angelandthebadmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There was a man whose deeds were dark as night
@@ -37,3 +40,7 @@ And the devil deeds were done and laid [A7]away
 And he [C]rode out a [G]better man than [C]when he first rode [G]in
 And the [A7]angel got the [D7]badman in the [G]end
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Day That Love Walked In}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file thedaythatlovewalkedinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Good mornin' sun you've been a long time [F][A#7]shinin'
@@ -23,3 +26,5 @@
 [C]And when we're old [G7]we’ll both remember when we found each [C]other
 [G7]And we'll [F]treasure the [C]day that [G7]love walked [C][F]in
 {end_of_verse}
+
+

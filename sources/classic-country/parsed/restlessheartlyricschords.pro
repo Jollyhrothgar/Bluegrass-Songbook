@@ -1,6 +1,9 @@
 {meta: title Restless Heart}
 {meta: artist Slim Whitman}
 {meta: composer Marilyn Keith Bergman and Lew Spencer}
+{meta: x_source classic-country}
+{meta: x_source_file restlessheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have a [F]restless heart and it [C]just needs to roam
@@ -33,3 +36,7 @@ Will it [G7]always be wondering [C]alone
 {start_of_verse: Verse 5}
 Will it [G7]always be wondering [C]alone
 {end_of_verse}
+
+
+
+

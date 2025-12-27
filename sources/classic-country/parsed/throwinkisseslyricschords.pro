@@ -1,6 +1,9 @@
 {meta: title Throwin' Kisses}
 {meta: artist Bob Luman}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file throwinkisseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got a gripe [D7]about last [G]night
@@ -33,3 +36,7 @@ Cause [D7]I'm at home alone about to lose my [G]mind [D7]   [G]
 {start_of_verse: Verse 5}
 Cause [D7]I'm at home alone alone about to lose my [G]mind
 {end_of_verse}
+
+
+
+

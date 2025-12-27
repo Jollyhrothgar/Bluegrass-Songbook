@@ -1,6 +1,9 @@
 {meta: title Lucille}
 {meta: artist Kenny Rogers}
 {meta: composer Roger Bowling and Hal Bynum}
+{meta: x_source classic-country}
+{meta: x_source_file lucillelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a bar in Toledo across from the depot
@@ -57,3 +60,10 @@ Kept coming back time after [G]time
 repeat chorus
 repeat chorus
 {end_of_verse}
+
+
+
+
+
+
+

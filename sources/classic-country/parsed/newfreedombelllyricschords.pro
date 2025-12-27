@@ -1,6 +1,9 @@
 {meta: title New Freedom Bell}
 {meta: artist The Country Gentleman}
 {meta: composer Lou Osborne}
+{meta: x_source classic-country}
+{meta: x_source_file newfreedombelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now have you found that freedom [G7]soul
@@ -29,3 +32,6 @@ So we will know that all is [C]well
 Our names are there for all to [G7]see
 From the land of the happy and [C]free
 {end_of_verse}
+
+
+

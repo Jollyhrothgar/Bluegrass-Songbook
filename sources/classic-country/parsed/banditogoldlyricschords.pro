@@ -1,6 +1,9 @@
 {meta: title Bandito Gold}
 {meta: artist Red Steagall}
 {meta: composer Danny Steagall and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file banditogoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mid July the [G7]year that I was [C]ten
@@ -64,3 +67,11 @@ And all the mountains we have [C]climbed
 Bandito [F]Gold think of all the outlaw bands 
 That we’ve [D7]captured single handed in our [G7]minds
 {end_of_verse}
+
+
+
+
+
+
+
+

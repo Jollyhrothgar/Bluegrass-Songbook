@@ -1,6 +1,9 @@
 {meta: title That's When You Know It's Over}
 {meta: artist Gene Watson}
 {meta: composer Troy Graves and Bob O'Donnell}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhenyouknowitsoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the morning is breaking
@@ -54,3 +57,9 @@ That's when you know it's [G]over
 {start_of_verse: Verse 6}
 That's [D7]when you know it's [G]over
 {end_of_verse}
+
+
+
+
+
+

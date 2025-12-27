@@ -1,6 +1,9 @@
 {meta: title Just A Rose Will Do}
 {meta: artist Porter Wagoner}
 {meta: composer J. A. McClung}
+{meta: x_source classic-country}
+{meta: x_source_file justarosewilldolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When time shall come for my leaving
@@ -29,3 +32,6 @@ To preach a sermon [D7]or [G7]two
 [C]Don't spend your money for flowers
 Just [F]a rose [G7]will [C]do
 {end_of_verse}
+
+
+

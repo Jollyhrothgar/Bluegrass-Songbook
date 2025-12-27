@@ -1,5 +1,8 @@
 {meta: title Train With The Rhumba Beat}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file trainwiththerhumbabeatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Way down in Jamaica in the tropical [G7]heat
@@ -35,3 +38,8 @@ Carry m---e  [G7]carry my wondering heart [C]home
 [G7]Carry my wondering heart [C]home
 [G7]Carry my wondering heart [C]home
 {end_of_verse}
+
+
+
+
+

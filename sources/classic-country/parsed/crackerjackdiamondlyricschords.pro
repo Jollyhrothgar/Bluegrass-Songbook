@@ -1,6 +1,9 @@
 {meta: title Cracker Jack Diamond}
 {meta: artist Don Williams}
 {meta: composer Ronny Scaife and Neil Trasher}
+{meta: x_source classic-country}
+{meta: x_source_file crackerjackdiamondlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well he spent that summer going door to door
@@ -67,3 +70,15 @@ Well he made a block with no luck at all
 [F]Now once a year she takes it out but it won’t fit her [C]hand
 [F]But she wears it in her heart because that’s where it all [G7]began
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

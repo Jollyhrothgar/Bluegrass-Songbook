@@ -1,6 +1,9 @@
 {meta: title You're Right I'm Wrong}
 {meta: artist George Strait}
 {meta: composer Marty Stuart and Wayne Perry}
+{meta: x_source classic-country}
+{meta: x_source_file yourerightimwronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're right I'm wrong I'm here you're [C7]gone
@@ -40,3 +43,8 @@ Now I'll do [F]anything to [G7]get you back [C]again
 {start_of_verse: Verse 4}
 Yes I'll do [F]anything to [G7]get you back [C]again
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bethlehem In Birmingham}
 {meta: artist Toby Keith}
 {meta: composer Weston Harvey and Scott Lynch}
+{meta: x_source classic-country}
+{meta: x_source_file bethleheminbirminghamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas Eve in Birmingham
@@ -47,3 +50,9 @@ There was a [C]Bethlehem [G7]miracle last [F]night in [G7]Birming[C]ham
 {start_of_verse: Verse 7}
 A Bethlehem [G7]miracle last [F]night in [G7]Birming[C]ham  [F]  [C]
 {end_of_verse}
+
+
+
+
+
+

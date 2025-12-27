@@ -1,6 +1,9 @@
 {meta: title River Boy}
 {meta: artist Waylon Jennings}
 {meta: composer Fred F. Carter Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file riverboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born and raised on the [F]river
@@ -62,3 +65,11 @@ For a [G7]good for nothin' but a river [C]boy
 [G7]Good for nothin' but a river [C]boy
 [G7]Good for nothin' but a river [C]boy
 {end_of_verse}
+
+
+
+
+
+
+
+

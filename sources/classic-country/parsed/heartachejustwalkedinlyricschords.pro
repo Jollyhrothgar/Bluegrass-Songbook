@@ -1,5 +1,8 @@
 {meta: title Heartache Just Walked In}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file heartachejustwalkedinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sitting in a dim [D7]café
@@ -57,3 +60,11 @@ To her I'm just a friend
 [C]Heartbreak can't be far [D7]away
 [C]'Cause heartaches [D7]just walked [G]in
 {end_of_verse}
+
+
+
+
+
+
+
+

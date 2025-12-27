@@ -1,5 +1,8 @@
 {meta: title I Don't Want To Sober Up Tonight}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttosoberuptonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't want to [D7]sober up [G]tonight
@@ -28,3 +31,6 @@ I don't want to act [D7]like things are [G]alright
 And [C]I don't want to change just to make you think I'm [G]happy
 That's my right  I don't want to [D7]sober up [G]tonight
 {end_of_verse}
+
+
+

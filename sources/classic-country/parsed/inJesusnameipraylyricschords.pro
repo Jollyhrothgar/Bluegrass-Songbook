@@ -1,6 +1,9 @@
 {meta: title In Jesus Name I Pray}
 {meta: artist Charley Pride}
 {meta: composer Jerry Grindele, Paul Gibbons, Tony Hatch}
+{meta: x_source classic-country}
+{meta: x_source_file inJesusnameipraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Father give me [G7]strength to [F]do what I must [C]do
@@ -34,3 +37,6 @@ Father let not [G7]envy be a [F]part of me in any[G7]way
 In [Am]Jesus [F]name I [C]pray
 {comment: F  C}
 {end_of_verse}
+
+
+

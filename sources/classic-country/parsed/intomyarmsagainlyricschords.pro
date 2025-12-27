@@ -1,6 +1,9 @@
 {meta: title Into My Arms Again}
 {meta: artist George Jones}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file intomyarmsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The music from the honky tonks
@@ -48,3 +51,9 @@ And come away from the [G]honky tonks
 Oh won't you [C]come away from the [G]honky tonks
 [D7]Back into my arms [G]again
 {end_of_verse}
+
+
+
+
+
+

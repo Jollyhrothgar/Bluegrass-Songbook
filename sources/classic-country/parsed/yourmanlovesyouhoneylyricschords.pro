@@ -1,5 +1,8 @@
 {meta: title Your Man Loves You Honey}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file yourmanlovesyouhoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Had my [C]golf clubs on my [G]shoulder when you [D7]saw me first [G]today
@@ -36,3 +39,8 @@ Oh you [C]should have had a [G]knight in armor and [D7]a castle [G]fair
 [C]Your man [G]loves you honey  [D7]and I don't know what else to [G]say
 [C]Your man [G]loves you honey  [D7]but you can't change my [G]ways
 {end_of_verse}
+
+
+
+
+

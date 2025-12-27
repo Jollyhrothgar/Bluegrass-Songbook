@@ -1,6 +1,9 @@
 {meta: title They Stood In Silent Prayer}
 {meta: artist Charley Pride}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file theystoodinsilentprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The little lambs were standing [G7]there [Em]beside the [C]holy [Am]babe
@@ -40,3 +43,8 @@ At [Em]once they knew the [Am]meaning and [G7]slowly [Em]bowed their [Am]heads
 And [Em]all around the [Am]manger they [G7]stood in [Em]silent [Am]prayer
 [G7](Halle[A7]lujah [G7]halle[A7]lujah hallelu[C]jah) [D7]    [E7]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Share My World With You}
 {meta: artist George Jones}
 {meta: composer Ben Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file illsharemyworldwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll share my world with [D7]you
@@ -45,3 +48,8 @@ To share my world with [G]you
 Can't you see they are [D7]waiting
 To share my world with [G]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You're Not By Yourself}
 {meta: artist Vern Gosdin}
 {meta: composer Murray F. Cannon, Garland Perry Cochran, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file yourenotbyyourselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're leaving [G7]without a [C]reason
@@ -33,3 +36,7 @@ And if [F]you're all [C]alone [G7]you're not by your[Am]self
 {start_of_verse: Verse 5}
 If [F]you're all [C]alone [G7]you're not by your[F]sel--[C]f
 {end_of_verse}
+
+
+
+

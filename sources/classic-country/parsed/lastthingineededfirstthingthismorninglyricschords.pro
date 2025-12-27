@@ -1,6 +1,9 @@
 {meta: title Last Thing I Needed First Thing This Morning}
 {meta: artist Willie Nelson}
 {meta: composer G.P. Nunn and D.S. Farar}
+{meta: x_source classic-country}
+{meta: x_source_file lastthingineededfirstthingthismorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Postman delivered a past due bill [G7]notice
@@ -38,3 +41,7 @@ Just go on if you wanna be [C]free
 But the last [F]thing I needed first thing this [C]morning
 Was to [G7]have you walk out on [C]me
 {end_of_verse}
+
+
+
+

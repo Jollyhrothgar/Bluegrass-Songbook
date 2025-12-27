@@ -1,6 +1,9 @@
 {meta: title All The Love I Had Is Gone}
 {meta: artist Ralph Stanley}
 {meta: composer Roy Lee Centers and Archie E. Jones}
+{meta: x_source classic-country}
+{meta: x_source_file alltheloveihadisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [F]even loved the ground that [C]you walked on
@@ -26,3 +29,6 @@ For all the love [G7]I had is [C]gone
 {start_of_verse: Verse 3}
 For all the love [G7]I had is [C]gone
 {end_of_verse}
+
+
+

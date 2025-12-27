@@ -1,6 +1,9 @@
 {meta: title If You Touch Me}
 {meta: artist Tanya Tucker}
 {meta: composer Norro Wilson, Carmol Taylor, Joe Stampley}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoutouchmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I packed his bags I kicked him out we were havin' bad times
@@ -33,3 +36,7 @@ So [D7]if you touch me you've got to [G]love me
 {start_of_verse: Verse 5}
 And I said [D7]if you touch me you've got to [C]love [G]me
 {end_of_verse}
+
+
+
+

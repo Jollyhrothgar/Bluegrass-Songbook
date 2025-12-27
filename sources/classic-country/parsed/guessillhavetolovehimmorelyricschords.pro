@@ -1,6 +1,9 @@
 {meta: title Guess I'll Have To Love Him More}
 {meta: artist Tanya Tucker}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file guessillhavetolovehimmorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's such a [Am]woman [D7]  and I'm just a [G]girl
@@ -27,3 +30,6 @@ Cause if we're ever gonna make it [A7]to heaven's door[Am]
 Cause if we're ever gonna make it [A7]to heaven's door[Am]
 [D7]Guess I'll have to [C]love him [G]more
 {end_of_verse}
+
+
+

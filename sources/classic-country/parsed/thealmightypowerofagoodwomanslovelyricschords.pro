@@ -1,6 +1,9 @@
 {meta: title The Almighty Power Of A Good Woman's Love}
 {meta: artist Conway Twitty}
 {meta: composer L.E. White}
+{meta: x_source classic-country}
+{meta: x_source_file thealmightypowerofagoodwomanslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you feel like you've come to the [F]end of your [C]way you need [G7]love
@@ -22,3 +25,5 @@ Give me a [C]good woman's [F]love my [C]heart my soul and [G7]mind plead
 When there's [C]someone [F]somewhere that [C]you're thinking of
 There's [F]no way to [C]measure the [F]almighty [C]power of a [G7]good woman's [C]love
 {end_of_verse}
+
+

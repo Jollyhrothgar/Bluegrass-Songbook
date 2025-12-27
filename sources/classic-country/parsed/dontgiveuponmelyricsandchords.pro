@@ -1,6 +1,9 @@
 {meta: title Don't Give Up On Me}
 {meta: artist Faron Young}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file dontgiveuponmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I think of all the things [F]I promised [Dm]you
@@ -28,3 +31,6 @@
 [F]So maybe given time I'll come around to what I oughta [Dm]be
 [C]Oh I need [Am]you girl don't [G7]give up on [C]me
 {end_of_verse}
+
+
+

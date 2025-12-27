@@ -1,6 +1,9 @@
 {meta: title Carmen}
 {meta: artist Gene Watson}
 {meta: composer Steve Spurgin}
+{meta: x_source classic-country}
+{meta: x_source_file carmenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]O-h [C]Carmen I've had too much [G]tequila
@@ -40,3 +43,8 @@ In a [D7]language I don't understand you said it [G]all
 {start_of_verse: Verse 4}
 In a [D7]language I don't understand you said it [G]all
 {end_of_verse}
+
+
+
+
+

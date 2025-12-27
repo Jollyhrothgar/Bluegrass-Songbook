@@ -1,6 +1,9 @@
 {meta: title Drinkin' Songs And Other Logic}
 {meta: artist Clint Black}
 {meta: composer Clint Black, Hayden Nicholas, Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file drinkinsongsandotherlogiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm lookin' at a busy bartender 
@@ -61,3 +64,11 @@ Drinkin' [D7]songs and other [G7]logic get me [C]through
 {start_of_verse: Verse 7}
 Drinkin' [D7]songs and other [G7]logic get me [C]through
 {end_of_verse}
+
+
+
+
+
+
+
+

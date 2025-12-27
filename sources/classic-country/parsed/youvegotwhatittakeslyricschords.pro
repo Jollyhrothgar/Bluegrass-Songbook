@@ -1,6 +1,9 @@
 {meta: title You've Got What It Takes}
 {meta: artist Anne Murray}
 {meta: composer Clyde Otis and Murray Stein}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotwhatittakeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You don't drive a big black car
@@ -69,3 +72,12 @@ My [A7]love comes tumblin' [D7]down you send me
 You've [D7]got what it [G]takes
 You've [D7]got what it [G]takes
 {end_of_verse}
+
+
+
+
+
+
+
+
+

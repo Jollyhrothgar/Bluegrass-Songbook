@@ -1,5 +1,8 @@
 {meta: title Mr. And Mrs. Used To Be}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file mrandmrsusedtobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Now we go our separate ways Mr. and Mrs. Used To [G]Be
@@ -32,3 +35,7 @@
 [G]And so I say goodbye now kiss the kids for [C]me
 [D7]Now we go our separate ways Mr. and Mrs. Used To [G]Be
 {end_of_verse}
+
+
+
+

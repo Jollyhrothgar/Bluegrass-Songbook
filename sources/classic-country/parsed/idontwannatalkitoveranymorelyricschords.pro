@@ -1,6 +1,9 @@
 {meta: title I Don't Wanna Talk It Over Anymore}
 {meta: artist Connie Smith}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file idontwannatalkitoveranymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't wanna talk it over any[F]more
@@ -23,3 +26,5 @@ But [F]baby I'm just [C]finally tired of [D7]breaking my [G7]heart
 I just [G7]don't wanna talk it over any[C]more
 Repeat last verse
 {end_of_verse}
+
+

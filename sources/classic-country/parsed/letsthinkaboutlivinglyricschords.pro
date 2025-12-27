@@ -1,6 +1,9 @@
 {meta: title Let's Think About Living}
 {meta: artist Bob Luman}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file letsthinkaboutlivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In every other song that I've heard lately [G7]some fellow gets [C]shot
@@ -41,3 +44,7 @@ Let's think about [G7]living let's think about [C]life
 Let's think about [G7]living let's think about [C]life
 Let's think about [G7]living let's think about [C]life
 {end_of_verse}
+
+
+
+

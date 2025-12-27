@@ -1,6 +1,9 @@
 {meta: title You Just Can't Play A Sad Song On A Banjo}
 {meta: artist Willie Nelson}
 {meta: composer Paul Buskirk and Russell Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file youjustcantplayasadsongonabanjolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now we all know the [G7]violin plays [D7]sweetly
@@ -24,3 +27,5 @@ Old [G7]dismal gloom will have to [E7]disappear
 A sad [F]song can't be played so [C]please don't be [A7]afraid
 Cause you [D7]just can't play a sad [G7]song on the [C]banjo
 {end_of_verse}
+
+

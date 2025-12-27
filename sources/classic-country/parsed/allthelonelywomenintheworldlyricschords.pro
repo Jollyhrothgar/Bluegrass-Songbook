@@ -1,5 +1,8 @@
 {meta: title All The Lonely Women In The World}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file allthelonelywomenintheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This song's for all the lonely [C]women in the [D7]world
@@ -32,3 +35,7 @@ And still they're lonely
 [C]This song's for all the lonely women in the [D7]world
 [G]Ringin' your hands thinkin' no man understands
 {end_of_verse}
+
+
+
+

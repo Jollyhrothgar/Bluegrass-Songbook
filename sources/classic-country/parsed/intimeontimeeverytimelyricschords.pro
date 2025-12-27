@@ -1,6 +1,9 @@
 {meta: title In Time On Time Every Time}
 {meta: artist Gold City}
 {meta: composer Brenda Lee Smith}
+{meta: x_source classic-country}
+{meta: x_source_file intimeontimeeverytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gather round children got a story to tell you 
@@ -50,3 +53,8 @@ Every [C]time I feel discouraged
 Don't have to [G]wonder where He'll [C]be
 God's been [D7]in time on time every time for [G]me for [C]me for [G]me
 {end_of_verse}
+
+
+
+
+

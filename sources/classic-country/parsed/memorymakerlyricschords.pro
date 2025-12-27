@@ -1,6 +1,9 @@
 {meta: title Memory Maker}
 {meta: artist Mel Tillis}
 {meta: composer Mel Tillis and Ken Westberry}
+{meta: x_source classic-country}
+{meta: x_source_file memorymakerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's a [Am]heart breaker she's a love [G]taker
@@ -43,3 +46,9 @@ I bet she's shaking [D7]someone else [G]tonight
 She's a memory [Am]maker
 And I bet she's making [D7]memories [G]tonight
 {end_of_verse}
+
+
+
+
+
+

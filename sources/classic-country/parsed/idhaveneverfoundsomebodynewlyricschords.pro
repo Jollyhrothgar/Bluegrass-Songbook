@@ -1,5 +1,8 @@
 {meta: title I'd Have Never Found Somebody New}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file idhaveneverfoundsomebodynewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never thought you’d be [G7]sorry
@@ -28,3 +31,6 @@ There’ll never be no one like [C]you
 If [C7]I’d only thought that you’d want [F]me
 I’d have [G7]never found somebody [C]new
 {end_of_verse}
+
+
+

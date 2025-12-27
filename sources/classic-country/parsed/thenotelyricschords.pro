@@ -1,6 +1,9 @@
 {meta: title The Note}
 {meta: artist Gene Watson}
 {meta: composer Buck Moore and Michelle Ray}
+{meta: x_source classic-country}
+{meta: x_source_file thenotelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The note was short but oh so strong 
@@ -34,3 +37,5 @@ By the [G]hand that held the [D7]pen
 That wrote the [G]words that broke the [C]heart
 Of the [G]one the only [D7]one that really [C]loves h-e[G]r
 {end_of_verse}
+
+

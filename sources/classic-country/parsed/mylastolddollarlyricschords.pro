@@ -1,5 +1,8 @@
 {meta: title My Last Old Dollar}
 {meta: artist Marty Raybon}
+{meta: x_source classic-country}
+{meta: x_source_file mylastolddollarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wrote to my girl last night
@@ -49,3 +52,9 @@ Oh my last old dollar is done [D7]gone
 Now [G]how can a poor boy get back [Em]home
 When his [G]last old [D7]dollar is done [G]gone
 {end_of_verse}
+
+
+
+
+
+

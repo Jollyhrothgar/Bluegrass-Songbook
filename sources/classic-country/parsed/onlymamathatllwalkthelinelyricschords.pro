@@ -1,6 +1,9 @@
 {meta: title Only Mama That'll Walk The Line}
 {meta: artist Connie Smith}
 {meta: composer Ivy J. Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file onlymamathatllwalkthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Won't you tell me if you can what's the matter with a man
@@ -38,3 +41,6 @@ He's got the [G]only mama [D7]that'll walk the [G]line
 {start_of_verse: Verse 4}
 [D7]He's got the [G]only mama [D7]that'll walk the [G]line
 {end_of_verse}
+
+
+

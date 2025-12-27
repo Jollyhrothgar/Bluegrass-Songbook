@@ -1,6 +1,9 @@
 {meta: title Lonely Is Everything}
 {meta: artist Bill Anderson}
 {meta: composer Jimmy Gateley}
+{meta: x_source classic-country}
+{meta: x_source_file lonelyiseverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Lonely is every[G7]thing you said it would [C]be
@@ -33,3 +36,7 @@ That [G7]someday it would all come back to [C]me
 Well [G7]you were right I'm payin' now for [C]all my fun
 And [F]lonely is every[G7]thing you said it would [C]be
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title You’re Forgetting Me}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file youreforgettingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your kisses ain't the same as [C]they used to be
@@ -42,3 +45,8 @@ Still each [G]day I'm anxiously
 Waitin' [C]hopin' you may [G]change your mind
 [D7]Guess you're forgetting [G]me
 {end_of_verse}
+
+
+
+
+

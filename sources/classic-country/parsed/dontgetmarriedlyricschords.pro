@@ -1,6 +1,9 @@
 {meta: title Don’t Get Married}
 {meta: artist Merle Haggard}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file dontgetmarriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Julie they've taken me to [G7]prison
@@ -32,3 +35,7 @@
 [C7]Don't get [F]married Julie wait for [C]me
 [G7]Don't get married [F]cause someday I'll be [C]free
 {end_of_verse}
+
+
+
+

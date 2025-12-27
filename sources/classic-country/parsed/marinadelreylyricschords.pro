@@ -1,6 +1,9 @@
 {meta: title Marina Del Rey}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file marinadelreylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We said goodbye in [F]Marina Del Rey
@@ -41,3 +44,7 @@ Like [F]castaway [G7]in Marina Del [C]Rey
 {start_of_verse: Verse 4}
 We said [F]goodbye [G7]in Marina Del [C]Rey
 {end_of_verse}
+
+
+
+

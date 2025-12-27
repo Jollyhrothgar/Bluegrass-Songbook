@@ -1,5 +1,8 @@
 {meta: title Better Farther On}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file betterfartheronlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As we travel [F]through the desert 
@@ -42,3 +45,8 @@ Count the mile stones one by [G7]one
 [C]Jesus will for[F]sake you never
 [C]It is better [G7]farther [C]on
 {end_of_verse}
+
+
+
+
+

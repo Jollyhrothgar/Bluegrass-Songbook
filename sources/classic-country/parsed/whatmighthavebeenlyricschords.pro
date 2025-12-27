@@ -1,6 +1,9 @@
 {meta: title What Might Have Been}
 {meta: artist Sammy Kershaw}
 {meta: composer Dean Dillon and Donny Kees}
+{meta: x_source classic-country}
+{meta: x_source_file whatmighthavebeenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You were the [G7]only [C]woman [F]for the [C]longest [Dm][Em][F]time
@@ -38,3 +41,8 @@
 {start_of_verse: Verse 5}
 [C]Oh you and [G7]me used to be [C]what should [G7]have [C][G7][F]been
 {end_of_verse}
+
+
+
+
+

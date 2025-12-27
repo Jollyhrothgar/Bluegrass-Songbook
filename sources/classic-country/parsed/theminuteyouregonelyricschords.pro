@@ -1,6 +1,9 @@
 {meta: title The Minute You're Gone}
 {meta: artist Sonny James}
 {meta: composer Jimmy GateleyG C}
+{meta: x_source classic-country}
+{meta: x_source_file theminuteyouregonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 The minute [D7]you're gone I cry 
@@ -29,3 +32,6 @@ The minute you're [G]gone I [E7]say
 Please don't stay [Am]away too [D7]long 
 The minute you're [G]gone
 {end_of_verse}
+
+
+

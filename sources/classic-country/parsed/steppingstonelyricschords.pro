@@ -1,6 +1,9 @@
 {meta: title Stepping Stone}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Smokey Stover}
+{meta: x_source classic-country}
+{meta: x_source_file steppingstonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So you think this is the end
@@ -32,3 +35,6 @@ A [C]heartbreak is but a stepp[G7]ing stone to [C]happiness
 {start_of_verse: Verse 3}
 A heartbreak is but a stepp[G7]ing stone to [C]happiness
 {end_of_verse}
+
+
+

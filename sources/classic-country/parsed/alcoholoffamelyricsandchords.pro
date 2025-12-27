@@ -1,6 +1,9 @@
 {meta: title Alcohol Of Fame}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Buzz Rabin}
+{meta: x_source classic-country}
+{meta: x_source_file alcoholoffamelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here's to you and here's to me 
@@ -48,3 +51,9 @@ In the [D7]Alco[G7]hol Of [C]Fame
 [F]Another fool [C]upon a [A7]stool 
 In the [D7]Alco[G7]hol Of [C]Fame
 {end_of_verse}
+
+
+
+
+
+

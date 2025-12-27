@@ -1,5 +1,8 @@
 {meta: title I'll Still Be Waiting For You}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file illstillbewaitingforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you've climbed every [F]mountain
@@ -26,3 +29,5 @@ When you [F]think
 Your [G7]world has [C]come to an [F]end
 I'll still be [G7]waiting for [C]you
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Uphill All The Way}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file uphillallthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My load keeps getting bigger as [G7]everyday rolls [C]on
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [C]Lord why have You [G]made it [D7]uphill all the [G]way
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Remember You Love In My Prayers Lyrics and Chords}
 {meta: artist Hank Snow}
 {meta: composer Will Hays}
+{meta: x_source classic-country}
+{meta: x_source_file illrememberyouloveinmyprayerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the curtains of night are pinned [C]back by the [G]stars
@@ -50,3 +53,9 @@ I will share all your sorrows and [D7]cares
 And [G]at night when I kneel by my [C]bedside to [G]pray
 I'll [A7]remember you [D7]love in my [G]prayers
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let's Put Our Love In Motion}
 {meta: artist Charly McClain}
 {meta: composer Bob Morrison, Johnny McRae, Larry Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file letsputourloveinmotionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here we [G7]are [F]alone to[G7]gether 
@@ -39,3 +42,7 @@ Honey will you [F]second the notion
 [G7]To put our love in [C]motion[G7]   [Am]
 To put our [G7]love in [C]motion 
 {end_of_verse}
+
+
+
+

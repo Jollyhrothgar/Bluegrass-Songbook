@@ -1,6 +1,9 @@
 {meta: title Yes Mr. Rogers}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein and Fred Koller}
+{meta: x_source classic-country}
+{meta: x_source_file yesmrrogerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes Mr. Rogers I'm livin' in sin with your [G7]daughter
@@ -37,3 +40,7 @@ Mr. Rogers I guess you could use one more scotch and [F]water
 {start_of_verse: Verse 5}
 [G7]Hey Mr. Rogers do you have to be leavin' so [C]soon
 {end_of_verse}
+
+
+
+

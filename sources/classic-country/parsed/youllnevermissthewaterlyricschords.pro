@@ -1,5 +1,8 @@
 {meta: title You'll Never Miss The Water}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file youllnevermissthewaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh you'll never miss the water till the [D7]well runs dry
@@ -39,3 +42,8 @@ Oh you'll [G]never miss the water till the [D7]well runs [G]dry
 {start_of_verse: Verse 4}
 Oh you'll never miss the water till the [D7]well runs [G]dry
 {end_of_verse}
+
+
+
+
+

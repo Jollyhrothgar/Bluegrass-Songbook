@@ -1,6 +1,9 @@
 {meta: title Did You Forget God Today}
 {meta: artist The Grascals}
 {meta: composer Aubrey Holt}
+{meta: x_source classic-country}
+{meta: x_source_file didyouforgetGodtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This morning as [G7]you a[C]woke
@@ -35,3 +38,7 @@ Or did [C]you forget [G7]God to[C]day [G7]
 Did [C]you forget [G7]God to[C]day [G7]
 Did [C]you forget [G7]God to[F]day[G]   [C]
 {end_of_verse}
+
+
+
+

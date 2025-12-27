@@ -1,6 +1,9 @@
 {meta: title I'll Always Be Glad To Take You Back}
 {meta: artist Merle Haggard}
 {meta: composer Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file illalwaysbegladtotakeyoubacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]After you have finished all your running [D7]round
@@ -43,3 +46,8 @@
 [C]But after all they just don't really know [F]you
 [G7]I'll always be glad to take you [C]back
 {end_of_verse}
+
+
+
+
+

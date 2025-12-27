@@ -1,6 +1,9 @@
 {meta: title Nickels And Dimes And Love}
 {meta: artist Charlie Pride}
 {meta: composer Steve Clark}
+{meta: x_source classic-country}
+{meta: x_source_file nickelsanddimesandlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Remember when pocket change was all we [F]had
@@ -43,3 +46,8 @@ Then I [C]remember the times of [G7]nickels and dimes and [C]love
 {start_of_verse: Verse 5}
 [F]Do you [C]remember those times of [G7]nickels and dimes and [F]love[C]
 {end_of_verse}
+
+
+
+
+

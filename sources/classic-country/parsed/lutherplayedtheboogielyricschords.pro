@@ -1,5 +1,8 @@
 {meta: title Luther Played The Boogie}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file lutherplayedtheboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We were just a plain ol' hillbilly band with a plain ol' country style
@@ -36,3 +39,7 @@ In the [G7]strangest kind of [C]way
 {start_of_verse: Verse 4}
 [C]Now didn’t Luther play the boogie strange [G7]    [C]
 {end_of_verse}
+
+
+
+

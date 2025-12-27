@@ -1,6 +1,9 @@
 {meta: title Another Tomorrow}
 {meta: artist Slim Whitman}
 {meta: composer Biff Collie}
+{meta: x_source classic-country}
+{meta: x_source_file anothertomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another to[F]mor[C]row I know I must [G7]face
@@ -23,3 +26,5 @@ Though we're far [F]apart [C]now I'll just wait and [F]see
 If another to[C]morrow [G7]will bring you to [C]me
 Another to[F]mor[C]row
 {end_of_verse}
+
+

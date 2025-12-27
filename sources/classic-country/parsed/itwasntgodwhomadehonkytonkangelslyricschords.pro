@@ -1,6 +1,9 @@
 {meta: title It Wasn't God Who Made Honky Tonk Angels}
 {meta: artist Kitty Wells}
 {meta: composer Jay D. Miller}
+{meta: x_source classic-country}
+{meta: x_source_file itwasntgodwhomadehonkytonkangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As I sit here tonight the jukebox's [C]playing
@@ -29,3 +32,6 @@
 [C]Too many times married men think they're still single
 [D7]That has caused many a good girl to go [G]wrong
 {end_of_verse}
+
+
+

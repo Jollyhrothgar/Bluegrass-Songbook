@@ -1,6 +1,9 @@
 {meta: title This Heart Of Mine Can Never Say Goodbye}
 {meta: artist The Osborne Brothers}
 {meta: composer Sonny Osborne and Pete Goble}
+{meta: x_source classic-country}
+{meta: x_source_file thisheartofminecanneversaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My lips will say goodbye to you tomorrow
@@ -29,3 +32,6 @@ I'll never let you know how much it hurts me
 [G]Though you leave my arms and walk away forever
 [D7]This heart of mine can never say [G][C]goodby-e
 {end_of_verse}
+
+
+

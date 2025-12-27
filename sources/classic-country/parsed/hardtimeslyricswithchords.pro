@@ -1,6 +1,9 @@
 {meta: title Hard Times}
 {meta: artist Lacy J. Dalton}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file hardtimeslyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Same old bills on the dresser
@@ -50,3 +53,7 @@ Sisters got the same old dolly
 [F]Honey we ain't got no hard [G7]times
 [F]We ain't got no [G7]hard times at [C]all
 {end_of_verse}
+
+
+
+

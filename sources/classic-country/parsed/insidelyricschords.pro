@@ -1,6 +1,9 @@
 {meta: title Inside}
 {meta: artist Ronnie Milsap}
 {meta: composer Mike Reid}
+{meta: x_source classic-country}
+{meta: x_source_file insidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She tries for the [G7]honesty [C]but the [Am]truth gets in the [G7]way
@@ -45,3 +48,8 @@
 [Gm]Inside she'd find a [Em]reason to [Am]stay
 [F]And so I must keep this [Fm]broken heart down deep [C]inside
 {end_of_verse}
+
+
+
+
+

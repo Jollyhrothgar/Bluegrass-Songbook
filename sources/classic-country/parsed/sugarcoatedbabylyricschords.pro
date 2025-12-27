@@ -1,6 +1,9 @@
 {meta: title Sugar Coated Baby}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Horton and Howard Hausey}
+{meta: x_source classic-country}
+{meta: x_source_file sugarcoatedbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the last sole flicker of the sun goes down
@@ -29,3 +32,6 @@ It [F]comes from her heart and I never get [C]enough
 She [F]kisses me it's like a drink of [C]wine
 It warms me all over just to know [G7]that she's [C]mine
 {end_of_verse}
+
+
+

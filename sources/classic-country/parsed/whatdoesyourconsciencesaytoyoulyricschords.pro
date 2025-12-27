@@ -1,6 +1,9 @@
 {meta: title What Does Your Conscience Say To You}
 {meta: artist Ferlin Husky}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file whatdoesyourconsciencesaytoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]What does your [C]conscience [G7]say to [C]you [F]  [C]
@@ -33,3 +36,7 @@ Don't you know you're not lovin' by the [G7]rules
 If you would [C]stop and search your mind imagine [F]what you'd [C]find
 [F]What does your [C]conscience [G7]say to [C]you [F]  [C]
 {end_of_verse}
+
+
+
+

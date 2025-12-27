@@ -1,6 +1,9 @@
 {meta: title Pretend}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file pretendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pretend you're [D7]still in love with [G]me 
@@ -35,3 +38,7 @@ I don't want to be a [C]memory or a [G]friend
 Darling you don't have to [D7]love me just pre[G]tend
 Darling you don't have to [D7]love me just pre[G]tend
 {end_of_verse}
+
+
+
+

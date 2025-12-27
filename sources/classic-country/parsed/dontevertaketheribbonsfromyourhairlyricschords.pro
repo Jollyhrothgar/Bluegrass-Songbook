@@ -1,6 +1,9 @@
 {meta: title Don't Ever Take The Ribbons From Your Hair}
 {meta: artist Eddy Arnold}
 {meta: composer Helen Hudgins}
+{meta: x_source classic-country}
+{meta: x_source_file dontevertaketheribbonsfromyourhairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't ever take the [G7]ribbons from your [C]hair
@@ -29,3 +32,6 @@
 [F]And even when you grow to be like mommy sweet and [C]fair
 [G7]Don't ever take the ribbons from your [C]hair
 {end_of_verse}
+
+
+

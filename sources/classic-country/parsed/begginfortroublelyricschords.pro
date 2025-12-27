@@ -1,6 +1,9 @@
 {meta: title Beggin' For Trouble}
 {meta: artist Billy Walker}
 {meta: composer Jerry Reed Hubbard}
+{meta: x_source classic-country}
+{meta: x_source_file begginfortroublelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You're just beggin' for trouble cause she [F]never gives in [C]return
@@ -40,3 +43,8 @@ To love her will get you only regret you
 [G7]You're just beggin' for trouble if you give her your [C]heart
 [G7]You're just beggin' for trouble if you give her your [C]heart
 {end_of_verse}
+
+
+
+
+

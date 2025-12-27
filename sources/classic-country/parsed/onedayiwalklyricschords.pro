@@ -1,6 +1,9 @@
 {meta: title One Day I Walk}
 {meta: artist Anne Murray}
 {meta: composer Bruce Cockburn}
+{meta: x_source classic-country}
+{meta: x_source_file onedayiwalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I have been a [Am]beggar and [D7]shall be one [C]again
@@ -16,3 +19,4 @@ One day I [Em]walked in [Am]flowe[C]rs one [G7]day I walk on stones
 [F]Today I [G7]walk in [C]hours one [G7]day I shall be [C]home
 [G7]One day I shall be [C]home
 {end_of_verse}
+

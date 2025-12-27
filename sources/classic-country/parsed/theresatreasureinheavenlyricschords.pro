@@ -1,6 +1,9 @@
 {meta: title There's A Treasure In Heaven}
 {meta: artist Doyle Lawson}
 {meta: composer Jerry Salley and Leroy Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file theresatreasureinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a treasure in heaven [C]faithfully kept in God's [G]care
@@ -55,3 +58,10 @@ Bridges beyond measure [A7]silver and gold can't [D7]compare
 Tag:
 [C]There's a treasure in [G]hea-ven  [G][C]waiting [D7]there for [G]me
 {end_of_verse}
+
+
+
+
+
+
+

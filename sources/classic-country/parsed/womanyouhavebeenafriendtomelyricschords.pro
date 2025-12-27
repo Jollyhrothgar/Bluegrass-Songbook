@@ -1,6 +1,9 @@
 {meta: title Woman You Have Been A Friend To Me}
 {meta: artist Bobby Bare}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file womanyouhavebeenafriendtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I appreciate the [F]coffee that you [C]made
@@ -30,3 +33,6 @@ I'm sorry that I couldn't give you [C]more than thanks[A7]
 But [D7]woman you have [G7]been a friend to [A7]me
 [D7]Woman you have [G7]been a friend to [C]me
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Faith And Truth}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file faithandtruthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Faith and [F]truth I [G7]bear unto [C]you
@@ -19,3 +22,5 @@ You'll [C]make my life com[G7]plete
 I [C]promise you my [F]love this [G7]vow is ever [C]true
 Faith and [F]truth my [Dm]darling I [G7]bear unto [C]you
 {end_of_verse}
+
+

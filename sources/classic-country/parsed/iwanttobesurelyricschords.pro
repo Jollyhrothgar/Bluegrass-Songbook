@@ -1,6 +1,9 @@
 {meta: title I Want To Be Sure}
 {meta: artist Eddy Arnold}
 {meta: composer Gene Autry and Merle Travis}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttobesurelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want to be sure when I tell you I [F]care
@@ -29,3 +32,6 @@
 [C]Don't play with my heart it was broken [F]before
 [C]When I tell you I [G7]love you I want to be [C]sure
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Ten Years}
 {meta: artist Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file tenyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ten years ago I was [G7]just [C]sixteen
@@ -48,3 +51,10 @@
 [F]Goodbye my [C]true love the [G7]fault is all [C]mine
 [G7]Ten years to wait is a long long [C]time
 {end_of_verse}
+
+
+
+
+
+
+

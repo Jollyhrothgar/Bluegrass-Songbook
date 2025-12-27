@@ -1,6 +1,9 @@
 {meta: title I Don't Need Nothin' You Ain't Got}
 {meta: artist Reba McEntire}
 {meta: composer Michael Heeney and David Scarlett}
+{meta: x_source classic-country}
+{meta: x_source_file idontneednothinyouaintgotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I don't need a caddy [C]to make me happy
@@ -59,3 +62,9 @@ Well [A7]I'd drink that whole [D7]pot
 Cause you [G]got everything all them [C]others do not
 And darling [G]I don't need [D7]nothing you ain't [G]got
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Where'd Ya Stay Last Night}
 {meta: artist Webb Pierce}
 {meta: composer Joe Hudgins}
+{meta: x_source classic-country}
+{meta: x_source_file wheredyastaylastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you came home this morning 
@@ -40,3 +43,6 @@ Where'd y’all stay last [G]night
 Ain't had no [D7]loving
 Where'd y'all stay last [G]night
 {end_of_verse}
+
+
+

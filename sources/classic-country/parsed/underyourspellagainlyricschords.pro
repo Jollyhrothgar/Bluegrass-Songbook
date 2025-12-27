@@ -1,6 +1,9 @@
 {meta: title Under Your Spell Again}
 {meta: artist Buck Owens}
 {meta: composer Dusty Rhodes and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file underyourspellagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've got me under your spell again saying those things [F]again
@@ -39,3 +42,7 @@ You've got me dreaming those dreams [C]again
 [F]Thinking those things again
 I've [C]gotta take you [G7]back just one  more [C]time
 {end_of_verse}
+
+
+
+

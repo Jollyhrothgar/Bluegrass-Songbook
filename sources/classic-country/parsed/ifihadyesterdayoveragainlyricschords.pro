@@ -1,6 +1,9 @@
 {meta: title If I Had Yesterday Over Again}
 {meta: artist Wilburn Brothers}
 {meta: composer Johnny Russell and Don Devaney}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadyesterdayoveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today I know just [C]what I would say
@@ -22,3 +25,5 @@ If [G]I had yesterday [D7]over [G]again
 [G]Don't go I love you that's [C]what I would say
 If [G]I had yesterday [D7]over [C]agai[G]n
 {end_of_verse}
+
+

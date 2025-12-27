@@ -1,6 +1,9 @@
 {meta: title Guess Things Happen That Way}
 {meta: artist Johnny Cash}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file guessthingshappenthatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you ask me if I'll forget my [F]baby
@@ -41,3 +44,9 @@ chorus
 {start_of_verse: Verse 7}
 repeat chorus
 {end_of_verse}
+
+
+
+
+
+

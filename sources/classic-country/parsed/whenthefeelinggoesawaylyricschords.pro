@@ -1,6 +1,9 @@
 {meta: title When The Feeling Goes Away}
 {meta: artist Ricky Van Shelton}
 {meta: composer Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file whenthefeelinggoesawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love is just a feeling in a [F]fool’s state of [C]mind
@@ -33,3 +36,7 @@ And I'll [F]be all [C]right when the [G7]feeling goes [C]away
 {start_of_verse: Verse 5}
 I'll [F]be all [C]right when the [G7]feeling goes [C]away
 {end_of_verse}
+
+
+
+

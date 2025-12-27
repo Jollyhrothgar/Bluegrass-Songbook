@@ -1,5 +1,8 @@
 {meta: title If I be Lifted Up}
 {meta: artist Emmy Lou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file ifibelifteduplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down in the valley while on my [D7]knees
@@ -36,3 +39,9 @@ He said If I be lifted up
 {start_of_verse: Verse 2}
 He said If I be lifted up
 {end_of_verse}
+
+
+
+
+
+

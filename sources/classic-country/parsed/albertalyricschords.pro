@@ -1,5 +1,8 @@
 {meta: title Alberta}
 {meta: artist Doc Watson}
+{meta: x_source classic-country}
+{meta: x_source_file albertalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Alber[Bm]ta let your [F]hair [D7]hang [G]low
@@ -33,3 +36,7 @@ My [C]heart is so [Bm]sad cause you [D7]treat me so [G]bad [Em]
 Al[G]ber[Bm]ta what's [F]on [D7]your [G]mind[Em]
 Al[G]ber[Bm]ta let your [F]hair [D7]hang [G]low
 {end_of_verse}
+
+
+
+

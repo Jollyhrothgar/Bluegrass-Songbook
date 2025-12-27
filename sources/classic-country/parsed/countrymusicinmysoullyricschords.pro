@@ -1,6 +1,9 @@
 {meta: title Country Music In My Soul}
 {meta: artist Leona Williams}
 {meta: composer Bobby Bond}
+{meta: x_source classic-country}
+{meta: x_source_file countrymusicinmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been travelin' the highways 
@@ -49,3 +52,9 @@ Cause [C]there's country [G7]music in my [C]sou[F]l
 [C]Country [G7]music in my [C]sou[F]l
 [C]Country [G7]music in my [C]soul
 {end_of_verse}
+
+
+
+
+
+

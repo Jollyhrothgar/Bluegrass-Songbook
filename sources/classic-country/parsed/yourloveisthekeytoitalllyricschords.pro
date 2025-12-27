@@ -1,5 +1,8 @@
 {meta: title Your Love Is The Key To It All}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file yourloveisthekeytoitalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun always [E7]shines in [Am]my world now [C]
@@ -32,3 +35,7 @@ And [F]your love is the [G7]key to it [C]all
 {start_of_verse: Verse 4}
 [F]Your love is the [G7]key to it [C]all
 {end_of_verse}
+
+
+
+

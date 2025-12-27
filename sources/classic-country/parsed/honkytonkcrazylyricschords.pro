@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Crazy}
 {meta: artist Gene Watson}
 {meta: composer Harland Howard and Ron Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkcrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woman you’d better get up and [F]run while you [D7]can
@@ -34,3 +37,7 @@ And [G7]then like your pride I’ll be [C]gone
 [F]Yes when I get [A7]honky tonk [D7]crazy
 [F]I only feel [G7]right doing [C]wrong
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ease Me To The Ground}
 {meta: artist Johnny Bush}
 {meta: composer Bud Reneau}
+{meta: x_source classic-country}
+{meta: x_source_file easemetothegroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've never had to live without your love
@@ -32,3 +35,6 @@ And [F]clinging to you [G7]now is the only [C]way I'll make it [F]down
 It's such a long way [Dm]down 
 So [G7]ease me to the [C]ground
 {end_of_verse}
+
+
+

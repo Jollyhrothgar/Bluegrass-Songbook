@@ -1,6 +1,9 @@
 {meta: title What Is Life Without Love}
 {meta: artist Eddy Arnold}
 {meta: composer Eddy Arnold, Vic McAlpin, Owen Bradley}
+{meta: x_source classic-country}
+{meta: x_source_file whatislifewithoutlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What is life without love
@@ -43,3 +46,9 @@ Then I'll be [F]satisfied
 What is love without [F]you
 [G7]Why dream if they never come [C]true
 {end_of_verse}
+
+
+
+
+
+

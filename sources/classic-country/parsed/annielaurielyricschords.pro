@@ -1,6 +1,9 @@
 {meta: title Annie Laurie}
 {meta: artist Slim Whitman}
 {meta: composer Alicia Ann Spottiswoode}
+{meta: x_source classic-country}
+{meta: x_source_file annielaurielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maxwelton braes are [F]bonnie
@@ -34,3 +37,7 @@ I would lay me [G7]down and [C]die
 Yes for [F]bonnie Annie [C]Laurie
 I would lay me [G7]down and [C]die
 {end_of_verse}
+
+
+
+

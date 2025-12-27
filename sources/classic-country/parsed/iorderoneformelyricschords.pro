@@ -1,6 +1,9 @@
 {meta: title I Order One For Me}
 {meta: artist Mel Tillis}
 {meta: composer Barbara Cummings and Jimmy Null}
+{meta: x_source classic-country}
+{meta: x_source_file iorderoneformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I stumble through the [G7]door and I [C]order one more [Am]round
@@ -27,3 +30,6 @@ Repeat last verse
 {start_of_verse: Verse 4}
 So [C]every time I [G]think of you I [D7]order one for [C]me[G]
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Don't You Get Lonesome Without Me}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file dontyougetlonesomewithoutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’ve got your rich man’s money
@@ -28,3 +31,6 @@ You’re driving those big fine cars
 [F]You’re living like movie stars
 [G7]Don’t you get lonesome without [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Time Is The Only Thing I’m After}
 {meta: artist Faron Young}
 {meta: composer Gene Nash}
+{meta: x_source classic-country}
+{meta: x_source_file timeistheonlythingimafterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You’ve broken my heart in a million tiny pieces
@@ -44,3 +47,7 @@ A [G]few more miles and [E7]I’m gonna [A7]call your bluff
 Strut my [C]stuff grin my grin wink my wink
 What’da think   [D7]hello [G]time 
 {end_of_verse}
+
+
+
+

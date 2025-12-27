@@ -1,6 +1,9 @@
 {meta: title I Cried Myself Awake}
 {meta: artist Norma Jean}
 {meta: composer Leroy Coates and Dale Davis}
+{meta: x_source classic-country}
+{meta: x_source_file icriedmyselfawakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I dreamed that [F]you told me good[C]bye
@@ -33,3 +36,7 @@ I [G7]knew that I had [F]cried myself [C]awake
 {start_of_verse: Verse 5}
 Last [G7]night I [F]cried myself [C]awake
 {end_of_verse}
+
+
+
+

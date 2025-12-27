@@ -1,6 +1,9 @@
 {meta: title A Thousand Times A Day}
 {meta: artist George Jones}
 {meta: composer Garry Burr and Gary Nicholson}
+{meta: x_source classic-country}
+{meta: x_source_file athousandtimesadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I gave up cigarettes haven't had to light one yet
@@ -46,3 +49,10 @@ I've given you up for good just like I said I would
 {start_of_verse: Verse 8}
 [D7]Oh I've done it a thousand times a [G]day
 {end_of_verse}
+
+
+
+
+
+
+

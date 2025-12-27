@@ -1,5 +1,8 @@
 {meta: title Treadin' Water}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file treadinwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a good time when you [Em]need me
@@ -30,3 +33,6 @@ And you can't [A#7]keep [F]me waiting [A#7]for [F]you
 Till the [D7]next time your new love [G7]die[F]s
 Satis[C]fied
 {end_of_verse}
+
+
+

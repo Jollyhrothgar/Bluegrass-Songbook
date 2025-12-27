@@ -1,6 +1,9 @@
 {meta: title What I Don't Know}
 {meta: artist Johnny Duncan}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file whatidontknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](What I don't [G7]know won't [C]hurt me)
@@ -33,3 +36,7 @@ I'd gone through enough mise[G7]ry
 I'm [C]tired of [G7]cryin' and [C]feelin' like [F]dyin'
 But [C]I don't [G7]know won't [F]hurt [C]me
 {end_of_verse}
+
+
+
+

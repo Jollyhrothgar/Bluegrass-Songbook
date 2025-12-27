@@ -1,6 +1,9 @@
 {meta: title Heaven Says Hello}
 {meta: artist Jim Ed Brown}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file heavensayshellolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Heaven says hello every [D7]morning 
@@ -29,3 +32,6 @@ As the [C]twilight steals across the golden [D7]skies
 Heaven says [C]hello when you kiss me 
 And I look into the [D7]blue of your [G]eyes
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's My Lie}
 {meta: artist Gene Watson}
 {meta: composer Timothy Menzies and Monty Criswell}
+{meta: x_source classic-country}
+{meta: x_source_file itsmylielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She [G7]accidentally dropped those dishes on the [C]floor
@@ -46,3 +49,9 @@
 [F]In this empty house tonight there ain't no [C]room for the [Am]truth
 [C]Hey it's my lie [G7]I'll tell like I want [C]to
 {end_of_verse}
+
+
+
+
+
+

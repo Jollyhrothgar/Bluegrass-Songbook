@@ -1,6 +1,9 @@
 {meta: title American Pride}
 {meta: artist Alabama}
 {meta: composer Randy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file americanpridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -51,3 +54,9 @@ And you [F]work when you're tired
 The biscuits are better at [F]Granny's house
 And the [G7]gravy tastes great all [C]day [G7]
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Never Ending Love}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file neverendinglovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got a never ending love for [D7]you
@@ -22,3 +25,5 @@ I'd have a never ending love for [G]you
 Tag:
 [D7]I'd have a never ending song of love for [G]you
 {end_of_verse}
+
+

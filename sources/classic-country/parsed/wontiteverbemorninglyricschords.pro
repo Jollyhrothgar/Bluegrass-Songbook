@@ -1,5 +1,8 @@
 {meta: title Won't It Ever Be Morning}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file wontiteverbemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Won't it ever be [C]morning won't the dawn ever [G]break
@@ -25,3 +28,6 @@ I love you and miss you so [C]much won't it [D7]ever be morning [G]again
 {start_of_verse: Verse 4}
 I love you and miss you so [C]much won't it [D7]ever be morning [G]again
 {end_of_verse}
+
+
+

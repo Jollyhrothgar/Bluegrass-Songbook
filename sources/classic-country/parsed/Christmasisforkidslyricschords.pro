@@ -1,6 +1,9 @@
 {meta: title Christmas Is For Kids}
 {meta: artist Marty Robbins}
 {meta: composer Jack Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasisforkidslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]May the children of the world every boy and every [C]girl
@@ -29,3 +32,6 @@
 [G]May the ones far and near have a plenty this [C]year
 [G]Since Christmas is for [D7]kids [G]anyway
 {end_of_verse}
+
+
+

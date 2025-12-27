@@ -1,6 +1,9 @@
 {meta: title Stand By Me}
 {meta: artist Mickey Gilley}
 {meta: composer Ben E. King,}
+{meta: x_source classic-country}
+{meta: x_source_file standbymelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When the night [C]has come  and the land is [Am]dark 
@@ -25,3 +28,6 @@ Just as [F]long  just as long as you [G7]stand stand by [C]me
 Darling stand by me  won't you stand  by [Am]me 
 If [F]you're in need  [G7]won't you stand  stand by [C]me 
 {end_of_verse}
+
+
+

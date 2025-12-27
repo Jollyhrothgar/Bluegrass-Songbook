@@ -1,6 +1,9 @@
 {meta: title My Mind Is A Bridge For Your Memory}
 {meta: artist Johnny Bush}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file mymindisabridgeforyourmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each dawn brings a [G7]new day of [C]dying
@@ -33,3 +36,7 @@ And you're crossing my [G7]mind all the [C]time
 {start_of_verse: Verse 5}
 Yes you're crossing my [G7]mind all the [C]time
 {end_of_verse}
+
+
+
+

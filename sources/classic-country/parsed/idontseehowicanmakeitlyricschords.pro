@@ -1,6 +1,9 @@
 {meta: title I Don't See How I Can Make It}
 {meta: artist Jean Shepard}
 {meta: composer George Richey}
+{meta: x_source classic-country}
+{meta: x_source_file idontseehowicanmakeitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't [G]see how I can [D7]make it with you [G]gone
@@ -37,3 +40,8 @@ I could [G]see for quite a [C]while that it was [G]coming
 {start_of_verse: Verse 5}
 [C]no I don't [G]see how I can [D7]make it with you [G]gone
 {end_of_verse}
+
+
+
+
+

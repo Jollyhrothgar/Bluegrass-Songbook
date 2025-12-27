@@ -1,5 +1,8 @@
 {meta: title My Grandfather's Clock}
 {meta: artist Everly Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file mygrandfathersclocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My grandfather's [G7]clock 
@@ -42,3 +45,9 @@ And was always his [D7]pleasure [G7]and pride
 But it [C]stopped  [G7]short  [C]never to go [F]again 
 When the [C]Old  [G7]Man  [C]died 
 {end_of_verse}
+
+
+
+
+
+

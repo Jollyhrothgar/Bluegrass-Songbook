@@ -1,6 +1,9 @@
 {meta: title I'm A Walking Advertisement For The Blues}
 {meta: artist Norma Jean}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file imawalkingadvertisementfortheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got eyes that don't stop crying lips that smile no [F]more
@@ -39,3 +42,7 @@ I've got arms that long to hold you any kiss I'll never [F]use
 I'm a [G7]walking advertisement for the [C]bl-[Am]ues
 I'm a [G7]walking advertisement for the [C]blues
 {end_of_verse}
+
+
+
+

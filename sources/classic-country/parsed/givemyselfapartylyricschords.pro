@@ -1,5 +1,8 @@
 {meta: title Give Myself A Party}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file givemyselfapartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a lot of [F]memories to [G7]last the rest of my [C]life
@@ -28,3 +31,6 @@ Give myself a [Am]party [D7]think of how it used to [G7]be
 Remem[C]ber all the [F]happiness we once [C]knew
 Gonna give myself a [Am]party [G7]just me and the [C]blues
 {end_of_verse}
+
+
+

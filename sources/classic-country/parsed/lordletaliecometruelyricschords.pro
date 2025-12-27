@@ -1,6 +1,9 @@
 {meta: title Lord Let A Lie Come True}
 {meta: artist Johnny Bush}
 {meta: composer Dallas Frazier and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file lordletaliecometruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When my [C]friends bring up your [G7]name
@@ -32,3 +35,6 @@ Lord let a [G7]lie come [C]true
 {start_of_verse: Verse 4}
 Lord let this [G7]lie come [F]true[C] 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Must Have A Dream}
 {meta: artist Rhonda Vincent}
 {meta: composer James Hipskind}
+{meta: x_source classic-country}
+{meta: x_source_file youmusthaveadreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Troubles gather around you and [F]life seems so [Dm]unfair
@@ -49,3 +52,9 @@ Just fill your heart with [C]hope and [G7]you will find your [C]dream
 [G7]You must have a [C]dream [G7]you must have a [C]dream [G7]you must have a [C]dream
 [G7]You must have a [C]dream and [G7]you will find your [C]dreams
 {end_of_verse}
+
+
+
+
+
+

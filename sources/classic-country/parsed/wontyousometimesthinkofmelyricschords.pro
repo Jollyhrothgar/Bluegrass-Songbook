@@ -1,5 +1,8 @@
 {meta: title Won't You Sometimes Think Of Me}
 {meta: artist Hank Williams Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file wontyousometimesthinkofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though our paths in life have parted
@@ -56,3 +59,10 @@ I'll always keep your picture
 [C]And every night I'll pray dear that
 [G7]You'll sometimes think of [C]me
 {end_of_verse}
+
+
+
+
+
+
+

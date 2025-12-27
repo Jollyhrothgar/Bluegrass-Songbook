@@ -1,6 +1,9 @@
 {meta: title My Heart Won't Pay Me No Mind}
 {meta: artist Johnny Rodriguez}
 {meta: composer John S. Sherrill and Thomas Cain}
+{meta: x_source classic-country}
+{meta: x_source_file myheartwontpaymenomindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My heart [C]won't pay me no [D7]mind
@@ -33,3 +36,7 @@ But [G]my heart [D7]won't pay me no [G]mind
 {start_of_verse: Verse 5}
 Oh oh [C]my heart [D7]won't pay me no [G]mind
 {end_of_verse}
+
+
+
+

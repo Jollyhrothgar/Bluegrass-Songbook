@@ -1,5 +1,8 @@
 {meta: title A Little Bit Crazy}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file alittlebitcrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve got bayou water running through my veins
@@ -49,3 +52,9 @@ It [C]ain't how you [G]run it's the [D7]fact that you [G]ran
 I’m a [C]little bit [G]crazy but [D7]I'm al[G]right
 [C]Living every [G]day like a [D7]Saturday [G]night
 {end_of_verse}
+
+
+
+
+
+

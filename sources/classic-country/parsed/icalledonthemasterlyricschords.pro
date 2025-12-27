@@ -1,6 +1,9 @@
 {meta: title I Called On The Master}
 {meta: artist Eddy Arnold}
 {meta: composer Gorad Brady and Ralph Wingert}
+{meta: x_source classic-country}
+{meta: x_source_file icalledonthemasterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I called on the [F]Mas[C]ter
@@ -50,3 +53,9 @@ For starting my life [G7]anew
 Just ask and He'll do the [D7]same 
 [G7]My friend for [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title How Long Does It Take A Memory To Drown}
 {meta: artist Jim Ed Brown}
 {meta: composer Swany Cornette and Armenta Cornette}
+{meta: x_source classic-country}
+{meta: x_source_file howlongdoesittakeamemorytodrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Say it's still snowing and the [G7]lines are [Dm]down
@@ -43,3 +46,8 @@
 [Dm]All my friends say that time will bring me round
 [F]How long does it take a [G7]memory to [C]drown
 {end_of_verse}
+
+
+
+
+

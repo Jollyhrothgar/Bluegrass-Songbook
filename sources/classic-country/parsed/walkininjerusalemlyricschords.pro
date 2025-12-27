@@ -1,5 +1,8 @@
 {meta: title Walkin' In Jerusalem}
 {meta: artist Ricky Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file walkininjerusalemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh John oh John now what did you say
@@ -82,3 +85,12 @@ I’m gonna be ready [C]I wanna be [G]ready
 [C]I wanna be [G]ready Lord
 Walkin' in Jerusalem [D7]just like [G]John
 {end_of_verse}
+
+
+
+
+
+
+
+
+

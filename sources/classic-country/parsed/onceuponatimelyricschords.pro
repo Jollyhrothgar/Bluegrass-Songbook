@@ -1,5 +1,8 @@
 {meta: title Once Upon A Time}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file onceuponatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once upon a [D7]time life was [G]lovely
@@ -33,3 +36,7 @@ Of [C]once upon a [D7]time with [G]you
 When [C]that ol' moon finds me it [G]only re[Em]minds me
 Of [C]once upon a [D7]time with [G]you 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title C'mon Sixty Five}
 {meta: artist Merle Haggard}
 {meta: composer Jackson Lee Leap}
+{meta: x_source classic-country}
+{meta: x_source_file cmonsixtyfivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere on the old Kern River [F]there's an old cane [C]pole 
@@ -48,3 +51,9 @@ There's a gold watch if I get out [G7]alive  [F]past sixty [C]five
 Now somewhere on the old Kern River [F]there's an old cane [C]pole 
 That waits for [G7]me  patient[C]ly  
 {end_of_verse}
+
+
+
+
+
+

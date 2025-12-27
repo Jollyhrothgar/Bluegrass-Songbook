@@ -1,6 +1,9 @@
 {meta: title My Woman Here At Home}
 {meta: artist George Morgan}
 {meta: composer Max T. Powell}
+{meta: x_source classic-country}
+{meta: x_source_file mywomanhereathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well hello mister [G7]sun
@@ -43,3 +46,8 @@ Lovers [F]wish upon you [C]indeed
 But my [F]woman here at [C]home is all
 The wishing [G7]I will ever [C]need
 {end_of_verse}
+
+
+
+
+

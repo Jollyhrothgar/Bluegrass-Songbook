@@ -1,5 +1,8 @@
 {meta: title Today Tomorrow and Forever}
 {meta: artist Patsy Cline}
+{meta: x_source classic-country}
+{meta: x_source_file todaytomorrowandforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How warm is the love in my heart for you
@@ -46,3 +49,11 @@ How strong was my love from the very start
 Tag:
 [C]Today  [D7]Tomorrow and [G]Forever
 {end_of_verse}
+
+
+
+
+
+
+
+

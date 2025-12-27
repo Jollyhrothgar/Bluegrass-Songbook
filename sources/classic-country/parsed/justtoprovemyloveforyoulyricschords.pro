@@ -1,5 +1,8 @@
 {meta: title Just To Prove My Love For You}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file justtoprovemyloveforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd walk across Kansas in a New York minute
@@ -56,3 +59,10 @@ I'd [F]fight lions snakes and go[C]rillas too
 And if [F]that ain't enough we'll [C]start all over
 Just to [G7]prove my love for [C]you
 {end_of_verse}
+
+
+
+
+
+
+

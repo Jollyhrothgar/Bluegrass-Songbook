@@ -1,6 +1,9 @@
 {meta: title Hank Williams You Wrote My Life}
 {meta: artist Moe Bandy}
 {meta: composer Paul Craft}
+{meta: x_source classic-country}
+{meta: x_source_file hankwilliamsyouwrotemylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You [F]wrote Your Cheating Heart [C]about
@@ -43,3 +46,8 @@
 [C]You Moan The Blues for [F]me and for [C]you
 [G7]Hank Williams You Wrote My [C]Life
 {end_of_verse}
+
+
+
+
+

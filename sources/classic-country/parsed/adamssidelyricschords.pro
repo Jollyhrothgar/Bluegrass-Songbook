@@ -1,6 +1,9 @@
 {meta: title Adam's Side}
 {meta: artist Billy Walker}
 {meta: composer Jesse Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file adamssidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From Adam's side God formed his bride [F]beautiful as could [C]be
@@ -41,3 +44,8 @@
 [F]I've waited such a [G7]long time and I [C]can't believe it's [F]true
 [C]That by my side God's [G7]placed a bride as [F]beautiful as [C]you
 {end_of_verse}
+
+
+
+
+

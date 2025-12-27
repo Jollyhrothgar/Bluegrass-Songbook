@@ -1,6 +1,9 @@
 {meta: title We Did But Now You Don't}
 {meta: artist Conway Twitty}
 {meta: composer Woody Bomar, Patrick J. McManus, Berni Clifford}
+{meta: x_source classic-country}
+{meta: x_source_file wedidbutnowyoudontlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Falling into love so young seemed so [F]right
@@ -36,3 +39,7 @@
 [F]I wish we could find that love again [G7]but I'm afraid we [C]won't
 [F]Cause when we said [G7]I do we really did but now you [C]don't
 {end_of_verse}
+
+
+
+

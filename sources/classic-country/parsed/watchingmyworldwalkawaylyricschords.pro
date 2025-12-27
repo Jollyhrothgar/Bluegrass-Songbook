@@ -1,6 +1,9 @@
 {meta: title Watching My World Walk Away}
 {meta: artist Barbara Mandrell}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file watchingmyworldwalkawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never dreamed [D7]his footsteps 
@@ -36,3 +39,7 @@ I'd be [G]standing in this [C]doorway
 {start_of_verse: Verse 4}
 [G]Watching my [D7]world walk [C]aw[G]ay
 {end_of_verse}
+
+
+
+

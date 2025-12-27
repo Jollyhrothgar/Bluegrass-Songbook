@@ -1,6 +1,9 @@
 {meta: title I Want To Live Again}
 {meta: artist Merle Haggard and Bonnie Owens}
 {meta: composer Fuzzy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttoliveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We stopped living when [G]our love died and I [D7]wanta live [G]again
@@ -36,3 +39,8 @@ Loved like I used to be
 [C]But it's wrong to live together when our love has reached an end
 [G]We stopped living when our love [D7]died and I wanta live [G]again
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Empty Wallet And A Broken Heart}
 {meta: artist Ira Louvin}
 {meta: composer Anne Young}
+{meta: x_source classic-country}
+{meta: x_source_file emptywalletandabrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You couldn’t keep your [C]hand off my [G]wallet
@@ -33,3 +36,7 @@ With an [D7]empty wallet and a broken [G]heart
 {start_of_verse: Verse 4}
 I’ve got an [D7]empty wallet and a broken [G]heart
 {end_of_verse}
+
+
+
+

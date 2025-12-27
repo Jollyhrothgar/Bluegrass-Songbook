@@ -1,5 +1,8 @@
 {meta: title Then I'll Stop Loving You}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file thenillstoplovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If there's water in the desert sand out in the sea
@@ -29,3 +32,7 @@ I can't [C]live without a heartbeat [G]and I [D7]can't stop loving [G]you
 There's no daisies [D7]in the desert no roses in the [G]snow
 The [D7]earth is not above us the stars are not [G]below
 {end_of_verse}
+
+
+
+

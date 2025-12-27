@@ -1,5 +1,8 @@
 {meta: title Blue Velvet Band Lyrics and Chords}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file bluevelvetbandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you listen a story I'll tell [F]you
@@ -49,3 +52,9 @@
 [C]On her finger was the ring I had bought [F]her
 [C]On her head was [G7]a blue velvet [C]band
 {end_of_verse}
+
+
+
+
+
+

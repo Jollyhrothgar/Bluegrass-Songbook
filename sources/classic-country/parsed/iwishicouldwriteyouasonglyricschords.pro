@@ -1,6 +1,9 @@
 {meta: title I Wish I Could Write You A Song}
 {meta: artist John Anderson}
 {meta: composer John Anderson and Lionel Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file iwishicouldwriteyouasonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I could sit down and write you a song
@@ -27,3 +30,6 @@ I hope that you’d hear it alone in your car
 [F]And you’d cry cause you done me wrong
 [C]Oh I wish I could [G7]write you a [C][F]song
 {end_of_verse}
+
+
+

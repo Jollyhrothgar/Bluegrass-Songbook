@@ -1,6 +1,9 @@
 {meta: title Heavenly}
 {meta: artist Conway Twitty}
 {meta: composer Conway Twitty and Jack Nance}
+{meta: x_source classic-country}
+{meta: x_source_file heavenlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heavenly heavenly [G7]that's what you [F]are to [C]me
@@ -32,3 +35,7 @@ A guiding light in the [G7]night for [F]only me to [C]see
 [C]Heavenly heavenly [G7]that's what you [F]are to [C]me
 A guiding light in the [G7]night for [F]only me so [C]heavenly
 {end_of_verse}
+
+
+
+

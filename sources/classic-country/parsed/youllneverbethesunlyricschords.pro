@@ -1,6 +1,9 @@
 {meta: title (You'll) Never Be The Sun}
 {meta: artist Emmylou Harris, Dolly Parton, Linda Ronstadt}
 {meta: composer Donagh Long}
+{meta: x_source classic-country}
+{meta: x_source_file youllneverbethesunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You'll [G7]never be the [C]sun turning in the [F]sky
@@ -37,3 +40,8 @@ And [G7]you won't be the [C]stars in heaven although they burn so [F]bright
 {start_of_verse: Verse 5}
 More songs by
 {end_of_verse}
+
+
+
+
+

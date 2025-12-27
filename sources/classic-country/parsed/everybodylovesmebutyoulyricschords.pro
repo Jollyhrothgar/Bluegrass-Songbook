@@ -1,6 +1,9 @@
 {meta: title Everybody Loves Me But You}
 {meta: artist Brenda Lee}
 {meta: composer Ronnie Self}
+{meta: x_source classic-country}
+{meta: x_source_file everybodylovesmebutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why did I listen [D7]to my friends when they told me what to [G]do
@@ -27,3 +30,6 @@ Spoken
 [Em]Yes like true friends they still come [B7]around
 [Em]And say I'm [C]sorry you're [D7]blue whoa everybody loves me [G]but [G][C]you
 {end_of_verse}
+
+
+

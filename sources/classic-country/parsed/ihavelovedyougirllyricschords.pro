@@ -1,5 +1,8 @@
 {meta: title I Have Loved You Girl}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file ihavelovedyougirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have held you girl 
@@ -36,3 +39,7 @@ Mmm [D7]mmm but not like this [G]before
 Yeah I have loved you girl 
 Mmm [D7]mmm but not like this [G]before
 {end_of_verse}
+
+
+
+

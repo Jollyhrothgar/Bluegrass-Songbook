@@ -1,6 +1,9 @@
 {meta: title You're My Best Friend}
 {meta: artist Don Williams}
 {meta: composer Waylon Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file youremybestfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You placed gold  [D7]on my [G]finger
@@ -29,3 +32,6 @@ You're my [D7]shelter from troubled [G]winds
 You're my anchor in life's [C]ocean
 But most of [G]all   [D7]you're my best [G]friend
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Couldn't See}
 {meta: artist George Morgan}
 {meta: composer Tommy Hill and George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file icouldntseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I couldn’t see why everyone kept telling me
@@ -41,3 +44,7 @@ My eyes [G7]got so full of love I couldn’t [C]see
 {start_of_verse: Verse 4}
 My eyes [G7]got so full of love I couldn’t [C]see
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Mr. Record Man}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file mrrecordmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mr. Record Man I'm looking for a song I heard [G7]today
@@ -25,3 +28,6 @@
 {start_of_verse: Verse 4}
 repeat #2
 {end_of_verse}
+
+
+

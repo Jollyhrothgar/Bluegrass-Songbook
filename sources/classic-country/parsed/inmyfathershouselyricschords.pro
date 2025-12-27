@@ -1,5 +1,8 @@
 {meta: title In My Father's House}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file inmyfathershouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In my father's house are many [C]mansions
@@ -21,3 +24,5 @@ Or [A7]you won't be there to sing the gospel [D7]story
 [G]In my father's house are many [C]mansions
 If [D7]you're true then to this land you'll surely [G]go
 {end_of_verse}
+
+

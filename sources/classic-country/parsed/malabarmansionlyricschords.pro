@@ -1,6 +1,9 @@
 {meta: title Malabar Mansion}
 {meta: artist Gordon Parsons}
 {meta: composer Dave Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file malabarmansionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was in a sad and sorry state 
@@ -68,3 +71,10 @@ And I [D7]pray to God to help me keep my [G]mind
 {start_of_verse: Verse 6}
 And I'll [D7]pray to God to help me keep my [G]mind
 {end_of_verse}
+
+
+
+
+
+
+

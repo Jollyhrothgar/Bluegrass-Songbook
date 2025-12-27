@@ -1,5 +1,8 @@
 {meta: title An All American Bluegrass Girl}
 {meta: artist Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file anallamericanbluegrassgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bill might be from Kentucky   Jimmy from Tennessee 
@@ -44,3 +47,9 @@ I'm an [F]all American [C]bluegrass girl and [G7]proud of where I've [C]been
 {start_of_verse: Verse 5}
 I'm an [F]all American [C]bluegrass girl and [G7]proud as I can [C]be
 {end_of_verse}
+
+
+
+
+
+

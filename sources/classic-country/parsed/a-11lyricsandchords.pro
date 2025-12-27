@@ -1,6 +1,9 @@
 {meta: title A-11}
 {meta: artist Buck Owens}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file a-11lyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 {comment: A-11}
@@ -25,3 +28,6 @@
 [F]It was here she told me that she loved [C]me
 [F]And she always played [C]A-11
 {end_of_verse}
+
+
+

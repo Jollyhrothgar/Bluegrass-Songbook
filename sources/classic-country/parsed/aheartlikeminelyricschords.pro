@@ -1,6 +1,9 @@
 {meta: title A Heart Like Mine}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file aheartlikeminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a barstool [G7]like a damn fool 
@@ -42,3 +45,8 @@ This [G7]heart of mine is just [F]looking for
 A [G7]heart like mine who's just [F]looking fo[G7]r
 What it can [C]find still [G7]looking for a heart like [C]mine
 {end_of_verse}
+
+
+
+
+

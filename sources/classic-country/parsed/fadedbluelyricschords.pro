@@ -1,6 +1,9 @@
 {meta: title Faded Blue}
 {meta: artist Mel Tillis}
 {meta: composer Donny Lowery and Lyman McAnally}
+{meta: x_source classic-country}
+{meta: x_source_file fadedbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It hurts to [C]find that love's grown [F]cold
@@ -40,3 +43,8 @@ My favorite [F]jeans and my point of [G7]view
 The brightest [Am]eyes I ever [F]knew
 The love I [Em]had for [G7]you is faded [C]blue
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A New Moon An Old Flame And You}
 {meta: artist Anne Murray}
 {meta: composer Barry Joseph Brown, Eric Edward Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file anewmoonanoldflameandyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The moon was a [D7]thin slice of [G]silver
@@ -47,3 +50,9 @@ A [C]new moon  an [D7]old flame  and [G]you
 {start_of_verse: Verse 6}
 A [C]new moon  an [D7]old flame  and [G]you
 {end_of_verse}
+
+
+
+
+
+

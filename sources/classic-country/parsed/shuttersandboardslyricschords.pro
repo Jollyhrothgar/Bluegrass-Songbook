@@ -1,5 +1,8 @@
 {meta: title Shutters And Boards}
 {meta: artist Jimmy Dean}
+{meta: x_source classic-country}
+{meta: x_source_file shuttersandboardslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Shutters and boards cover the [G]windows
@@ -35,3 +38,7 @@ Of the [D7]house where we used to [G]live
 [C]All I have left is a heart full of [G]sorrow
 [D7]Since she said she'd never [G]forgive
 {end_of_verse}
+
+
+
+

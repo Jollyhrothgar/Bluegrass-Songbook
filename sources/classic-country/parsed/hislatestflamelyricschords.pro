@@ -1,6 +1,9 @@
 {meta: title His Latest Flame}
 {meta: artist Elvis Presley}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file hislatestflamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A very old friend [Em]came by [Em][G]today
@@ -43,3 +46,8 @@ This girl was in [G]my arms and swore to [Em]me
 [G]She'd be mine [Em]eternally
 And Marie's [C]the [D7]name  of his [G]latest [Em][G][Em]flame
 {end_of_verse}
+
+
+
+
+

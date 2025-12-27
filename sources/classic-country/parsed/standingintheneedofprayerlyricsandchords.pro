@@ -1,5 +1,8 @@
 {meta: title Standing In The Need Of Prayer}
 {meta: artist Jimmy Dean}
+{meta: x_source classic-country}
+{meta: x_source_file standingintheneedofprayerlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Well it's not my sister and it's [F]not my brother but it's [C]me Lord
@@ -44,3 +47,10 @@ It's me [G7]it's me oh [C]Lord a standing in the [G7]need of [C]prayer
 Well it's not my father and it's [F]not my mother 
 A [D7]standing in the [G7]need of [C]prayer
 {end_of_verse}
+
+
+
+
+
+
+

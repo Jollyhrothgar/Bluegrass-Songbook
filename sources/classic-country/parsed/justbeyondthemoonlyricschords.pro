@@ -1,6 +1,9 @@
 {meta: title Just Beyond The Moon}
 {meta: artist Tex Ritter}
 {meta: composer Jeremy Slate}
+{meta: x_source classic-country}
+{meta: x_source_file justbeyondthemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](I'll walk [G]just beyond the [D7]moon then I'll stop and wait for [G][C][G]you)     
@@ -43,3 +46,9 @@ And we'll [G]settle down [D7]forever darlin' just beyond the [C][G]moon
 {start_of_verse: Verse 7}
 (I'll walk [G]just beyond the [D7]moon then I'll stop and wait for [G][C][G]you)     
 {end_of_verse}
+
+
+
+
+
+

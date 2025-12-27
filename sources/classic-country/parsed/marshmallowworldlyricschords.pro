@@ -1,6 +1,9 @@
 {meta: title Marshmallow World}
 {meta: artist Brenda Lee}
 {meta: composer Carl Sigman and Peter DeRose}
+{meta: x_source classic-country}
+{meta: x_source_file marshmallowworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]It's a [G]marshmallow world in the winter
@@ -36,3 +39,7 @@ In [A7]winter it's a [D7]marshmallow [G]world
 [D7]It's a [G]yum-yummy world
 [D7]It's a [G]marshmallow world
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A World So Full Of Love}
 {meta: artist Faron Young}
 {meta: composer Roger Miller and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file aworldsofulloflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know how it feels to be alive with no desire to live
@@ -22,3 +25,5 @@ There's so much love around [F]me and no love to call mine
 It's [C]enough to make me [E7]wish that I could hide [F]and not be [C]found
 In this world so full of love yet not enough [G7]to go [C]around
 {end_of_verse}
+
+

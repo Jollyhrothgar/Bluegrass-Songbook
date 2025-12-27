@@ -1,6 +1,9 @@
 {meta: title The Last Suit You Wear}
 {meta: artist Larry Sparks}
 {meta: composer Larry Shell and Kim Williams}
+{meta: x_source classic-country}
+{meta: x_source_file thelastsuityouwearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baker Moore's plane went down
@@ -45,3 +48,8 @@ When that [C]handful of dirt
 Goes [F]back into the [Fm]earth
 What [C]you'll be worth [G7]only heaven [C]knows[G7]
 {end_of_verse}
+
+
+
+
+

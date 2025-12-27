@@ -1,6 +1,9 @@
 {meta: title He's Still My Man}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file hesstillmymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My man can [D7]make my heart feel [G]sad
@@ -28,3 +31,6 @@ There's [G]something deep in[B7]side him [C]I can't under[G]stand
 But [A7]meanwhile [D7]he's still my [B7]man and I love him  
 [A7]Meanwhile [D7]he's still my [C]man[G]
 {end_of_verse}
+
+
+

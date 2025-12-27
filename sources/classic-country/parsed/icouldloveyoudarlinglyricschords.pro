@@ -1,5 +1,8 @@
 {meta: title I Could Love You Darling}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file icouldloveyoudarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I could love you darling [C]if you were only [G]mine
@@ -28,3 +31,6 @@ I’d be your regular daddy if you’ll [A7]be my very [D7]own
 [G]I’ll make my application just [C]so you won’t pass me [G]by
 Cause I could love you baby [D7]if I can quali[G]fy
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Life}
 {meta: artist Elvis Presley}
 {meta: composer Shirl Milete}
+{meta: x_source classic-country}
+{meta: x_source_file lifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere out in empty space 
@@ -48,3 +51,9 @@ That love could be the only way
 Or [C]all is lost of [G7]life  everlasting [C]life
 For life [G7]is love and love [F]is [C][Fm]life
 {end_of_verse}
+
+
+
+
+
+

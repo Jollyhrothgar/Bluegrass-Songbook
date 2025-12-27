@@ -1,6 +1,9 @@
 {meta: title Santa's On His Way}
 {meta: artist Bob Wills}
 {meta: composer Bill C. Phillips, Nita Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file santasonhiswaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hooray hooray
@@ -30,3 +33,6 @@ A [D7]plane for Johnny and cowboy gun
 [D7]Santa's [G7]on his [C]way 
 Repeat 
 {end_of_verse}
+
+
+

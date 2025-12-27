@@ -1,6 +1,9 @@
 {meta: title Yippi Cry Ai}
 {meta: artist Moe Bandy}
 {meta: composer Joe Allen and Buck Lindsey}
+{meta: x_source classic-country}
+{meta: x_source_file yippicryailyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a [G]cowboy who knows just how far you can [C]go
@@ -34,3 +37,7 @@
 [C]In need of a shoulder to hold up my [G]chin
 [D7]Yippi cry ai I've lost her [G]again
 {end_of_verse}
+
+
+
+

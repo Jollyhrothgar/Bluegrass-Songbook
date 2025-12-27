@@ -1,6 +1,9 @@
 {meta: title Jesus Take Another Look At Me}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file Jesustakeanotherlookatmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus take [F]another look at [C]me
@@ -23,3 +26,5 @@ But [C]down in our hearts where [F]only you can [D7]see
 [C]Jes[Em]us [Am]take [D7]another [G7]look at [C]me [Am]
 [C]Jes[G7]us [Am]take [D7]another [F]look [G7]at [C]me
 {end_of_verse}
+
+

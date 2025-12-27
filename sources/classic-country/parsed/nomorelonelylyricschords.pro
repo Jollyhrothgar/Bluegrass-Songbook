@@ -1,6 +1,9 @@
 {meta: title No More Lonely}
 {meta: artist David Ball}
 {meta: composer Tommy Polk and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file nomorelonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No more lonely no more [C]blue
@@ -54,3 +57,10 @@ I [G]just told your [D7]memory [G]goodbye
 {start_of_verse: Verse 6}
 I just told your [D7]memory [G]goodbye
 {end_of_verse}
+
+
+
+
+
+
+

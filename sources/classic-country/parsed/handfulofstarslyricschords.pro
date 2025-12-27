@@ -1,6 +1,9 @@
 {meta: title Handful Of Stars}
 {meta: artist Cal Smith}
 {meta: composer Ted Harris and Frank Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file handfulofstarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's only a handful of stars where heaven used to [A7]be
@@ -28,3 +31,6 @@ Blinded with pride and empty inside
 [A7]That life buried in my memory
 [C]Just a handful of stars where [D7]heaven used to [G]be
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Hurt For You}
 {meta: artist Conway Twitty}
 {meta: composer Rafe VanHoy and Deborah Allen}
+{meta: x_source classic-country}
+{meta: x_source_file ihurtforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know it kills me to see you [Am]crying
@@ -44,3 +47,8 @@ Baby I [C]hurt for you and it's [F]tearing me [G7]apart
 To care the way I [Am]do
 [G7]Maybe I'm a [Dm]fool I watch you [C]long for [F]him and [C]I hurt for [G7]you
 {end_of_verse}
+
+
+
+
+

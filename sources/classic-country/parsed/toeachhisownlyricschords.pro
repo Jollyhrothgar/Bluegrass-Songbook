@@ -1,5 +1,8 @@
 {meta: title To Each His Own}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file toeachhisownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A rose must remain with the sun and the rain 
@@ -25,3 +28,6 @@ Your touch means too much to me [G7]dear
 And a dream must be a dream for [G7]two
 No good alone I found own my one and only [C]you
 {end_of_verse}
+
+
+

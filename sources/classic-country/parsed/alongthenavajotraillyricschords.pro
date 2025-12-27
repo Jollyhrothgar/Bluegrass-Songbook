@@ -1,6 +1,9 @@
 {meta: title Along the Navajo Trail}
 {meta: artist Bob Wills}
 {meta: composer Larry Marks, Dick Charles, Eddie Lange}
+{meta: x_source classic-country}
+{meta: x_source_file alongthenavajotraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Every [C]day a[G7]long about [C]evening
@@ -36,3 +39,7 @@ And [C]ride the [F]Navajo [C]Trail
 I  [F]dream by a smoldering fire
 A[C]long the [F]Navajo [C]Trail
 {end_of_verse}
+
+
+
+

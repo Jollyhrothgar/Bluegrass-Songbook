@@ -1,6 +1,9 @@
 {meta: title She'll Be Hanging Around Somewhere}
 {meta: artist Mel Tillis}
 {meta: composer Damon Black}
+{meta: x_source classic-country}
+{meta: x_source_file shellbehangingaroundsomewherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pour me hard [G7]liquor over [C]s-oft [G]music
@@ -33,3 +36,7 @@ From the first lonely [G7]song till the [C]last drop is [D7]gone
 {start_of_verse: Verse 4}
 She'll [C]be [G]hanging [D7]round some[G]where
 {end_of_verse}
+
+
+
+

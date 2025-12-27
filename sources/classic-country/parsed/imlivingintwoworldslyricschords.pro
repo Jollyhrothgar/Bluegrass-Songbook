@@ -1,6 +1,9 @@
 {meta: title I'm Living In Two Worlds}
 {meta: artist Loretta Lynn}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file imlivingintwoworldslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm living in [F]two worlds dividing my [C]time
@@ -30,3 +33,7 @@
 [F]I'm living in two worlds dividing my [C]time
 [G7]Unhappy in your world and lonesome [F]in [C]mine
 {end_of_verse}
+
+
+
+

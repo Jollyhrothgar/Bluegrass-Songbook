@@ -1,6 +1,9 @@
 {meta: title He Grew The Tree}
 {meta: artist Barbara Mandrell}
 {meta: composer Chuck Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file hegrewthetreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He molded and [F]built a [C]small lonely [G7]hill[C]
@@ -42,3 +45,8 @@ With [F]great love for [F#m]man God [C]gave with His [F]plan
 Still [F]He grew the [F#m]tree that [C]He knew would [Am]be
 [C]Used to [G7]make the old rugged [C]cross
 {end_of_verse}
+
+
+
+
+

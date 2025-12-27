@@ -1,6 +1,9 @@
 {meta: title Lovin' Lies}
 {meta: artist Porter Wagoner}
 {meta: composer Dorothy Chapman, Troy Martin, Pete Pyle}
+{meta: x_source classic-country}
+{meta: x_source_file lovinlieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll never understand dear as [C]long as I [G]live
@@ -29,3 +32,6 @@ And [A7]now how I [D7]grieved
 You didn't [C]mean it from the [G]start
 You told me lovin' lies and [D7]broke my [G]heart
 {end_of_verse}
+
+
+

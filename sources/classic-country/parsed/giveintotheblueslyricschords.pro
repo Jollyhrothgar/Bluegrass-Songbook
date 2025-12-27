@@ -1,6 +1,9 @@
 {meta: title Give In To The Blues}
 {meta: artist Stonewall Jackson}
 {meta: composer Stonewall Jackson and Juanita Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file giveintotheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a party going on on the other side of [G7]town
@@ -29,3 +32,6 @@
 [C]The more I try to find myself the [C7]more I get [F]confused
 [G7]Guess it’s my time to give in to the [C]blues
 {end_of_verse}
+
+
+

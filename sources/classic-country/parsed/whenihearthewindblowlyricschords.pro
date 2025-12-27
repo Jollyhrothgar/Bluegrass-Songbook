@@ -1,6 +1,9 @@
 {meta: title When I Hear The Wind Blow}
 {meta: artist Cal Smith}
 {meta: composer Curly Putman and Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file whenihearthewindblowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cozy lairs and easy chairs ain't hard to bear 
@@ -57,3 +60,10 @@ Be satisfied with what a tinker [F]knows
 And [G7]be a puppet on a string 
 And shake with fear each time I hear the [C]wind
 {end_of_verse}
+
+
+
+
+
+
+

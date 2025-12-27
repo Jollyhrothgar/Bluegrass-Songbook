@@ -1,6 +1,9 @@
 {meta: title Got You On My Mind}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Allee Willis, David Lasley, Howard Biggs}
+{meta: x_source classic-country}
+{meta: x_source_file gotyouonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Got you on my mind [C]feeling kinda sad and [G]low
@@ -28,3 +31,7 @@ Tears began to fall [C]every time I hear your [G]name
 {start_of_verse: Verse 4}
 [D7]Wonderin' where you are wonderin' why you had to [G]go
 {end_of_verse}
+
+
+
+

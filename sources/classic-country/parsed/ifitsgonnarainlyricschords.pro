@@ -1,6 +1,9 @@
 {meta: title If It's Gonna Rain}
 {meta: artist George Strait}
 {meta: composer Dean Dillon, Donny Kees, Scotty Emerick}
+{meta: x_source classic-country}
+{meta: x_source_file ifitsgonnarainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If it's gonna rain  [D7]I hope it [G]pours
@@ -33,3 +36,7 @@ It's gonna [G]rain and rain and [D7]rain around here for [G]years
 It's gonna [G]rain  [D7]let the storm [Em]start
 If [C]it's gonna [G]rain  [D7]I hope it [G]pours
 {end_of_verse}
+
+
+
+

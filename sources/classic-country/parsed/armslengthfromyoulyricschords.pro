@@ -1,6 +1,9 @@
 {meta: title Arms Length From You}
 {meta: artist Wynn Stewart}
 {meta: composer Jim Stewart and Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file armslengthfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just a smile away from crying 
@@ -36,3 +39,7 @@ While [F]my arms [G7]were holding [C]you
 I'm [F]afraid you're [G7]gonna leave [C]me 
 I'm just a [D7]kiss from missing [G7]you
 {end_of_verse}
+
+
+
+

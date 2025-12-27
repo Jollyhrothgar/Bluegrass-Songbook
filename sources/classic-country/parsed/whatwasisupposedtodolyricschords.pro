@@ -1,6 +1,9 @@
 {meta: title What Was I Supposed To Do}
 {meta: artist Paul Williams and The Victory Trio}
 {meta: composer Sam Humphrey and Paul Williams}
+{meta: x_source classic-country}
+{meta: x_source_file whatwasisupposedtodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You were my heart's desire you set the flame of love on fire
@@ -29,3 +32,6 @@ Or [A7]cry and plead down on my knees for [D7]you
 I [G]couldn't stand to be alone you left me nothing else to choose
 I [C]found someone to [D7]take your place what was I supposed to [G]do
 {end_of_verse}
+
+
+

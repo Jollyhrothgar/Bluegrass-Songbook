@@ -1,6 +1,9 @@
 {meta: title End of the Line}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills, Johnny Gimble}
+{meta: x_source classic-country}
+{meta: x_source_file endofthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]True love it has been until now dear
@@ -29,3 +32,6 @@ You rode for half fare until now dear
 [F]I've done had enough you can pack up your stuff
 [G7]Get out it's the end of the [C]line
 {end_of_verse}
+
+
+

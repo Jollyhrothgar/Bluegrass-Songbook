@@ -1,5 +1,8 @@
 {meta: title You Taught Me Everything That I Know}
 {meta: artist Skeeter Davis}
+{meta: x_source classic-country}
+{meta: x_source_file youtaughtmeeverythingthatiknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You taught me to [C]kiss so it would [G]thrill you 
@@ -28,3 +31,6 @@ All I've [C]learned is [Am]how to love [G]you so
 And if you [C]leave how can I [Am]learn to [G]forget you[Em] 
 You [G]taught me every[D7]thing that I [G]know
 {end_of_verse}
+
+
+

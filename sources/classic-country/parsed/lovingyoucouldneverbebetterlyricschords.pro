@@ -1,6 +1,9 @@
 {meta: title Loving You Could Never Be Better}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery, Betty Tate, Charlene Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file lovingyoucouldneverbebetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well here we are [Em]again tonight a[F]lone just us [C]two
@@ -27,3 +30,6 @@ And [F]love could never [G7]be better for you and [C]me
 {start_of_verse: Verse 4}
 [D7]Loving [C]you could [F]never be [D7]better than it [G7]is right [C]now
 {end_of_verse}
+
+
+

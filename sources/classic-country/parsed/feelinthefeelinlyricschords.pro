@@ -1,6 +1,9 @@
 {meta: title Feelin' The Feelin'}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file feelinthefeelinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It started with a smile and the brush of your hand
@@ -47,3 +50,9 @@ We've been steadily [G7]steelin' every moment we can cause we can't get [C]enoug
 We've been feelin' the [F]feelin' flyin' on the wings of a [C]dove
 We've been feelin' the [G7]feelin' and the feelin' is [C]love
 {end_of_verse}
+
+
+
+
+
+

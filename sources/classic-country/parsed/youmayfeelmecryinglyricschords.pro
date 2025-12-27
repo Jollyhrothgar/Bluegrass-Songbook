@@ -1,6 +1,9 @@
 {meta: title You May Feel Me Crying}
 {meta: artist Roy Orbison}
 {meta: composer Will Jennings and Richard B. Kerr}
+{meta: x_source classic-country}
+{meta: x_source_file youmayfeelmecryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we make love you know we're making love
@@ -53,3 +56,8 @@ They'll fill you up I know with shining dreams
 [F]I just hope someday [Em]I see you [Dm]standing at my [G7]door
 [C]It's something I live for
 {end_of_verse}
+
+
+
+
+

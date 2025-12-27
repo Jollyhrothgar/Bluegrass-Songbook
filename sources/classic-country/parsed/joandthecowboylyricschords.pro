@@ -1,6 +1,9 @@
 {meta: title Jo And The Cowboy}
 {meta: artist Johnny Duncan and Janie Fricke}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file joandthecowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Life can be great on the interstate when [F]you’re riding across [C]Arkansas
@@ -42,3 +45,9 @@ Sweet country girl I’d give the world just to [F]be your [G7]full time [C]man
 Wild as a raging river is she  [F]Jo holds my heart in her [C]hand
 Sweet country girl I’d give the world just to [F]be your [G7]full time [C]man 
 {end_of_verse}
+
+
+
+
+
+

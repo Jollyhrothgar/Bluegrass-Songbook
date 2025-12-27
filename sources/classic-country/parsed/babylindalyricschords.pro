@@ -1,5 +1,8 @@
 {meta: title Baby Linda}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file babylindalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Her hair is long and [G7]dark like the [C]raven
@@ -39,3 +42,8 @@ Someday Baby [D7]Linda you’ll be [C]mine
 {start_of_verse: Verse 5}
 You’ll be [F]mine  oh you’ll be [G]mine
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Plain Lonely}
 {meta: artist Jean Shepard}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file justplainlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I go to all our favorite [Dm]places[G7]
@@ -25,3 +28,6 @@ I [Dm]wake up and rea[G7]lize you're [C]gone
 Just plain [F]lonely without [G7]your arms [F]around [C]me
 Just plain [F]lonely [G7]I'm missing [C]you
 {end_of_verse}
+
+
+

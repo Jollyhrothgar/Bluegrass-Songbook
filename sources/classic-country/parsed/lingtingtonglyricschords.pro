@@ -1,6 +1,9 @@
 {meta: title Ling-Ting-Tong}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Mabel Godwin}
+{meta: x_source classic-country}
+{meta: x_source_file lingtingtonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I went to Chinatown
@@ -43,3 +46,8 @@ Go on and sing your [C]song a-ling ting [G]tong
 Called [G]Tie-ess-a mo-cum boo-die-ay
 Tie-ess-a mo-cum boo
 {end_of_verse}
+
+
+
+
+

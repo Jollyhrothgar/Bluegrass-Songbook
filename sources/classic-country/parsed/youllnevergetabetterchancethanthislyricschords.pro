@@ -1,6 +1,9 @@
 {meta: title You'll Never Get A Better Chance Than This}
 {meta: artist Ernest Tubb}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file youllnevergetabetterchancethanthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you've got to hurt someone who really [F]loves you
@@ -29,3 +32,6 @@ To find I'm just a number on your [G7]list
 If your [C]mind's made up to make somebody [F]suffer
 Then you'll [C]never get a [G7]better chance than [C]this
 {end_of_verse}
+
+
+

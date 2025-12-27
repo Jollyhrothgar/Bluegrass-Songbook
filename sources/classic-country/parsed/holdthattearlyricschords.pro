@@ -1,6 +1,9 @@
 {meta: title Hold That Tear}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill and Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file holdthattearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've got that look of almost cryin' in your [G7]eyes
@@ -35,3 +38,7 @@ Hold that tear wait right here
 [C]And I'll swear if you’ll just try it
 [G]That you'll never [D7]have to cry it [C]over [G]me
 {end_of_verse}
+
+
+
+

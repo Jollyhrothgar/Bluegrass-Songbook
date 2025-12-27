@@ -1,6 +1,9 @@
 {meta: title The First In Line}
 {meta: artist the Everly Brothers}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file thefirstinlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say that [G]you have [D7]found a [G]love
@@ -37,3 +40,7 @@
 [Em]And it would last till the end of [C]time
 [G]So let [D7]me be  the first in [G]line
 {end_of_verse}
+
+
+
+

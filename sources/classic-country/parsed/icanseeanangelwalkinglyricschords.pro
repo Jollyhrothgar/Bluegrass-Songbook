@@ -1,6 +1,9 @@
 {meta: title I Can See an Angel Walking}
 {meta: artist Patsy Cline}
 {meta: composer Kay Adelman}
+{meta: x_source classic-country}
+{meta: x_source_file icanseeanangelwalkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can see an angel walking someone else is by his [Am]side
@@ -28,3 +31,7 @@
 [G]I can see an angel laughing he's the one that I [Am]adore
 [D7]I will always keep on hiding all my love forever [G]more
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We Could}
 {meta: artist Charlie Pride}
 {meta: composer Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file wecouldlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If anyone could find the [C7]joy
@@ -20,3 +23,4 @@ If [C]anyone could pray each [C7]night
 And thank the Lord that all [F]is right
 [C]We could   [G7]we could you and [C]I
 {end_of_verse}
+

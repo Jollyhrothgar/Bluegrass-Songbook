@@ -1,6 +1,9 @@
 {meta: title Old Flames Can't Hold A Candle To You}
 {meta: artist Merle Haggard}
 {meta: composer Pebe Sebert and Hugh Moffatt}
+{meta: x_source classic-country}
+{meta: x_source_file oldflamescantholdacandletoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Downtown tonight I saw an old friend  someone [F]who
@@ -29,3 +32,6 @@ But old flames can't hold a candle to [F]you
 Flickering embers of love I've [C7]known one or [F]two
 But [G7]old flames can't hold a candle to [C]you
 {end_of_verse}
+
+
+

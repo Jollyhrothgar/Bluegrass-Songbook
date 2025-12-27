@@ -1,6 +1,9 @@
 {meta: title I Hear You Talking}
 {meta: artist Faron Young}
 {meta: composer Cindy Walker and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file ihearyoutalkingchordslyrics.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 I Hear You Talking
@@ -37,3 +40,8 @@ Best [C]of him [F]lots of luck I [C]guess this is the [F]en[G7]d
 [F]I hear you talkin' but your [G7]words ain't comin' [C]in [F]
 [C]I hear you talkin' but your [G7]words ain't comin' [C]in
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rocking My Life Away}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file rockingmylifeawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Fourteen ninety-five and nineteen forty eight
@@ -40,3 +43,7 @@ I'm just [C]rocking rolling my life [G]away
 My name is [D7]Jerry Lee Lewis 
 And I'm darn sure here to [G]stay
 {end_of_verse}
+
+
+
+

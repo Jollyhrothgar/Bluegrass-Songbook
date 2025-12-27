@@ -1,6 +1,9 @@
 {meta: title Make My Heart Die Away}
 {meta: artist Wilburn Brothers}
 {meta: composer Glen Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file makemyheartdieawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I slowly turned crazy when I lost your love yester[G7]day
@@ -29,3 +32,6 @@ Tormenting itself every[G7]day
 So to[F]night while I lay me [C]down to weep
 Won’t you please make my [G7]heart die a[C]way
 {end_of_verse}
+
+
+

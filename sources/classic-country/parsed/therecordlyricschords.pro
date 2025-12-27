@@ -1,6 +1,9 @@
 {meta: title The Record}
 {meta: artist Billy Walker}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file therecordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Around and [G7]around goes the [C]record
@@ -48,3 +51,9 @@
 [G7]Around and around goes the [C]record
 [G7]Around and around goes the [C]record
 {end_of_verse}
+
+
+
+
+
+

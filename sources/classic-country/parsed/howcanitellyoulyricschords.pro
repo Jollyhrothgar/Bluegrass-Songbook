@@ -1,6 +1,9 @@
 {meta: title How Can I Tell You}
 {meta: artist Slim Whitman}
 {meta: composer Jack Rhodes, Dick Reynolds, Jerry Crist}
+{meta: x_source classic-country}
+{meta: x_source_file howcanitellyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How can I [F]tell you [C]how much [F]I love [C]you
@@ -32,3 +35,7 @@
 [C]How can I [F]tell you [C]how much [F]I love [C]you
 [D7]How much you mean [G7]to me how can I [C]tell
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ain't No California}
 {meta: artist Mel Tillis}
 {meta: composer Sterling Whipple}
+{meta: x_source classic-country}
+{meta: x_source_file aintnocalifornialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I live my life on [C]highways from sea to shining [G]sea
@@ -37,3 +40,7 @@
 [C]I ain't found that old blue bayou though I roamed my whole life [G]long
 [C]Searching for my blue heaven heard somewhere it's called [G]home
 {end_of_verse}
+
+
+
+

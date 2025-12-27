@@ -1,5 +1,8 @@
 {meta: title When The Sun Goes Down Tomorrow}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file whenthesungoesdowntomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Waitin' for a ride by the edge of the road
@@ -35,3 +38,7 @@ When the sun goes down [D7]tomorrow I should be [G]home
 {start_of_verse: Verse 4}
 When the sun goes down [D7]tomorrow I should be [C]hom[G]e
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Tail's Been Waggin' The Dog Too Long}
 {meta: artist Charlie Walker}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file thetailsbeenwagginthedogtoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Well the [G]tail's been waggin' the [C]dog too long
@@ -37,3 +40,7 @@ I'm gonna be boss or I'm [C]gonna move one
 The [D7]tail's been waggin' the dog too dog gone [G]long
 Yeah the [D7]tail's been waggin' the dog too dog gone [G]long
 {end_of_verse}
+
+
+
+

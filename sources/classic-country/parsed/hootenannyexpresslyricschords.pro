@@ -1,6 +1,9 @@
 {meta: title Hootenanny Express}
 {meta: artist Canadian Sweethearts}
 {meta: composer Bob Reagan}
+{meta: x_source classic-country}
+{meta: x_source_file hootenannyexpresslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Climb aboard the Hootenanny [C]ride aboard the Hootenanny 
@@ -36,3 +39,7 @@ From the [G7]coast way through the mountains through the [C]green valleys
 [F]Climb aboard the Hootenanny [C]find the dreams that I've been dreaming
 When you [G7]ride the Hootenanny [C]Express
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title She's Always In Love}
 {meta: artist Ronnie Milsap}
 {meta: composer Mike Reid and Dan Williams}
+{meta: x_source classic-country}
+{meta: x_source_file shesalwaysinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She keeps regular hours with a different [F]man
@@ -64,3 +67,10 @@ Oh [C]she[G7]'s always in [F]love
 She just [C]loves how it [F]feels
 That's why [C]sh[G7]e's [F]always in [C]love
 {end_of_verse}
+
+
+
+
+
+
+

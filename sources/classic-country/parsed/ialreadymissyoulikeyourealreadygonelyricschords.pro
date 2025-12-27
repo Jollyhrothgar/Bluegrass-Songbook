@@ -1,6 +1,9 @@
 {meta: title I Already Miss You Like You're Already Gone}
 {meta: artist Patty Loveless}
 {meta: composer Jim Rushing and Allen Shamblin}
+{meta: x_source classic-country}
+{meta: x_source_file ialreadymissyoulikeyourealreadygonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh [G]friend the hour [D7]is near you must [G]go and I'll be [C]here
@@ -28,3 +31,6 @@ Repeat last verse
 {start_of_verse: Verse 4}
 I [D7]already miss you like you're already [G]gone
 {end_of_verse}
+
+
+

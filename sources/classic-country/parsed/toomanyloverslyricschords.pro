@@ -1,6 +1,9 @@
 {meta: title Too Many Lovers}
 {meta: artist Crystal Gayle}
 {meta: composer Sam Hogin, Ted Lindsay and Mark True}
+{meta: x_source classic-country}
+{meta: x_source_file toomanyloverslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You gotta be [Em]rough you gotta be [G]tough 
@@ -57,3 +60,10 @@ These [D7]days so much danger [Bm]to be aware of
 [D7]Too many lovers not enough love these [G]days 
 [D7]Too many lovers not enough love these [G]days
 {end_of_verse}
+
+
+
+
+
+
+

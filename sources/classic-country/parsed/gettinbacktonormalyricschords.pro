@@ -1,6 +1,9 @@
 {meta: title Gettin' Back To Norma}
 {meta: artist Bob Luman}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file gettinbacktonormalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I left one early mornin' 
@@ -57,3 +60,10 @@ And the world I left [C]behind
 Gotta get back to [G7]Norma 
 And the Norma frame of [C]mind
 {end_of_verse}
+
+
+
+
+
+
+

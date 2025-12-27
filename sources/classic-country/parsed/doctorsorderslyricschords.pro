@@ -1,6 +1,9 @@
 {meta: title Doctor's Orders}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Rory Bourke, Bruce Channel, Kieran Kane}
+{meta: x_source classic-country}
+{meta: x_source_file doctorsorderslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Doctor told me sleepin' alone 
@@ -45,3 +48,6 @@ I [G7]really oughta [F]be in [C]bed
 You know I'm under [F]doctor's [C]orders 
 Oh [F]that's what my [G7]doctor [C]said
 {end_of_verse}
+
+
+

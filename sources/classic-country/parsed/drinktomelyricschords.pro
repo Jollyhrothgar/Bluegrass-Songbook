@@ -1,5 +1,8 @@
 {meta: title Drink To Me}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file drinktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Drink to me [F]drink to me [C]drink to me [G7]drink to me drink to [C]me)
@@ -40,3 +43,9 @@ Cause I've got a thirst burnin' way down in my soul
 {start_of_verse: Verse 7}
 [F](Drink to me [C]drink to me drink [G7]to me drink to me drink to [C]me)
 {end_of_verse}
+
+
+
+
+
+

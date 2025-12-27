@@ -1,6 +1,9 @@
 {meta: title She's Too Good to be True}
 {meta: artist Charlie Pride}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file shestoogoodtobetruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes late at night [F]I wake up [C]dreaming
@@ -29,3 +32,6 @@ And [F]in my [C]arms she reassures me with a [G7]kiss
 She's [F]every-thing [C]I ever [F]looked for in a [C]woman
 [F]She's just [C]too good to be [G7]true but she [C]is
 {end_of_verse}
+
+
+

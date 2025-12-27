@@ -1,6 +1,9 @@
 {meta: title If Drinking Don’t Kill Me}
 {meta: artist George Jones}
 {meta: composer Harlan Sanders and Rick Baresford}
+{meta: x_source classic-country}
+{meta: x_source_file ifdrinkingdontkillmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The bars are all closed
@@ -55,3 +58,12 @@ Since I [F]tried to forget [C]her
 But the memory still lingers
 [G7]Lying here on the [C]ground
 {end_of_verse}
+
+
+
+
+
+
+
+
+

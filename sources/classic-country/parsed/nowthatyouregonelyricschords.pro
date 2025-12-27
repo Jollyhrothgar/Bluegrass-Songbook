@@ -1,5 +1,8 @@
 {meta: title Now That You’re Gone}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file nowthatyouregonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never [C]knew how much I [D7]cared or realized the love we [G]shared
@@ -21,3 +24,5 @@ I wasted true [D7]love and I brought you [G]shame
 I thought you’d [C]string along but my [D7]heart tells me I’m [G]wrong
 I’m all [C]alone I should have [D7]known now that you’re [G]gone 
 {end_of_verse}
+
+

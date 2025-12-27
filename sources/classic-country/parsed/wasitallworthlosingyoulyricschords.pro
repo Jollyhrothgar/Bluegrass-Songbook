@@ -1,5 +1,8 @@
 {meta: artist Charlie Pride}
 {meta: composer Audie Murphy and Terri Eddlemon}
+{meta: x_source classic-country}
+{meta: x_source_file wasitallworthlosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I finally got the one I thought I [G7]wanted
@@ -32,3 +35,7 @@ And make me wonder now was it all worth losing [C]you
 {start_of_verse: Verse 4}
 And [G7]make me wonder now was it all worth losing [C]you
 {end_of_verse}
+
+
+
+

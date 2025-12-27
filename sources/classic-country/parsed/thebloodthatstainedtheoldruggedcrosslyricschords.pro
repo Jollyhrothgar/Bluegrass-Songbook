@@ -1,6 +1,9 @@
 {meta: title The Blood That Stained The Old Rugged Cross}
 {meta: artist Carl Smith}
 {meta: composer Albert Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file thebloodthatstainedtheoldruggedcrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the cross of Calvary our blessed [F]Savior [C]died
@@ -29,3 +32,6 @@ Twas His love that paid the awful [G7]cost
 [C]Oh soul so far astray come and [F]plunge [C]today
 In the blood that stained the [G7]old rugged [C]cross
 {end_of_verse}
+
+
+

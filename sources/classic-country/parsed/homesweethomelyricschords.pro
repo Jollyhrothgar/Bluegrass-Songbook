@@ -1,6 +1,9 @@
 {meta: title Home Sweet Home}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill and Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file homesweethomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Woke up this morning with a [D7]smile
@@ -47,3 +50,8 @@ Makes you [G]wonder why a [E7]man would ever [A7]roam
 [D7]When he's got himself a [G]home [B7]sweet [C]home [A7]sweet
 [G]Home [D7]sweet [C]home[G]
 {end_of_verse}
+
+
+
+
+

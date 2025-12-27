@@ -1,6 +1,9 @@
 {meta: title Forty Nine Fifty One}
 {meta: artist Hank Locklin}
 {meta: composer Jack Barlow and Moneen Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file fortyninefiftyonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you'll admit that you've been wrong
@@ -50,3 +53,9 @@ A [C]little more than you
 So if [D7]you'll try forty eight percent
 Then I'll try fifty [G]two  
 {end_of_verse}
+
+
+
+
+
+

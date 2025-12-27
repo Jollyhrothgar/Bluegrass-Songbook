@@ -1,6 +1,9 @@
 {meta: title Fishin' On The Mississippi}
 {meta: artist Tony Booth}
 {meta: composer Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file fishinonthemississippilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm [F]fishin' in the middle of the [C]Mississippi river
@@ -57,3 +60,10 @@ And the [G7]water's too muddy to [C]drink
 A big [F]catfish chewin' in my [C]little toe
 And my [G7]baby's waitin' on the [C]bank
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Heavenly Sunshine}
 {meta: artist Ferlin Husky}
 {meta: composer Glenn Sutton and George Richey}
+{meta: x_source classic-country}
+{meta: x_source_file heavenlysunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've [C]searched for words of sweet description [F]too best de[D7]scribed
@@ -34,3 +37,7 @@ You [G7]make me [A#7]happy [G7]cause [C]your love is [F]mine
 [F]Heavenly [A#7]sunshine [C]heavenly [C]sunshine
 [C]You fill my [F]heart with [D7]your sweet [G7]love di[C]vine
 {end_of_verse}
+
+
+
+

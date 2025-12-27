@@ -1,5 +1,8 @@
 {meta: title This World is Not My Home}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file thisworldisnotmyhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This world is not my home I'm just [F]a passing [C]through
@@ -28,3 +31,6 @@ The saints on every hand are [D7]shouting [G7]victory
 Their [C]songs of sweetest praise [F]drift back from heaven's [C]shore
 And I can't feel at home in this [G7]world [C]anymore
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Forever Is Ending Today}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb, Ike Cargill, Johnny Bond}
+{meta: x_source classic-country}
+{meta: x_source_file foreverisendingtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You [D7]said that [G]you would mine dear [D7]forever
@@ -43,3 +46,8 @@ If [C]you want true love from [G]another
 I hope that [G]you will be happy [D7]forever
 But my forever has ended [G]today
 {end_of_verse}
+
+
+
+
+

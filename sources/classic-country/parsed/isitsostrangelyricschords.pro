@@ -1,6 +1,9 @@
 {meta: title Is It So Strange}
 {meta: artist Elvis Presley}
 {meta: composer Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file isitsostrangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh if you tell a [Am]lie
@@ -27,3 +30,5 @@ To [C]waste a love like [Am]ours would be a [F]sin[G7]
 And [C]take me from this strange [G7]world
 That I'm living [C]in [F]   [C]
 {end_of_verse}
+
+

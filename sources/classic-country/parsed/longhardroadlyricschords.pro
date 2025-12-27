@@ -1,5 +1,8 @@
 {meta: title Long Hard Road}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file longhardroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a long [F]hard [C]road I'm traveling [G]on
@@ -91,3 +94,15 @@ Seems [F]forever I've been [Dm]gone
 Yeah it's a [G]long [F]hard [C]road I'm traveling [G]on
 Lord I [F]need to [D7]find my way back [G]home
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

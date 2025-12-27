@@ -1,6 +1,9 @@
 {meta: title Heartache No.3}
 {meta: artist Tanya Tucker}
 {meta: composer Joe Rainey}
+{meta: x_source classic-country}
+{meta: x_source_file heartacheno3lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What's an angel like you doin' [G7]way down [C]here
@@ -36,3 +39,7 @@ It's [F]two down and I'm [C]on my way to [G7]heartache No.[C]3
 It's [F]two down and I'm [C]on my way to [G7]heartache No.[C]3
 [G7]Heartache No.[C]3
 {end_of_verse}
+
+
+
+

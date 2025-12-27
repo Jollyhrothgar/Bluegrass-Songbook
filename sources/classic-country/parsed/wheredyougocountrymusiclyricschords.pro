@@ -1,5 +1,8 @@
 {meta: title Where'd You Go Country Music}
 {meta: artist Jarrod Birmingham}
+{meta: x_source classic-country}
+{meta: x_source_file wheredyougocountrymusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I should'a seen it coming [F]they say that love is [C]blind
@@ -50,3 +53,9 @@ Please come [F]back country [C]music
 I'll be waiting for you [G7]to change your [C]mind
 Won't you please come back [G7]and love me one more [C]time
 {end_of_verse}
+
+
+
+
+
+

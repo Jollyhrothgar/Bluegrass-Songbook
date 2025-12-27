@@ -1,6 +1,9 @@
 {meta: title Smokin’ The Hive}
 {meta: artist Randy Travis}
 {meta: composer Byron Hill and J. Remington Wilde}
+{meta: x_source classic-country}
+{meta: x_source_file smokinthehivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was ten years old on my grandpa's farm when it happened
@@ -43,3 +46,8 @@ It's just [C]ordinary common sense to avoid that [G]danger[Em]
 No you don't reach for the honey [D7]without smokin' the [G]hive
 You're gonna get stung boy
 {end_of_verse}
+
+
+
+
+

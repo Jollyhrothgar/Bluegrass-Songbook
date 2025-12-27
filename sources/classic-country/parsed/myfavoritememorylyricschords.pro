@@ -1,5 +1,8 @@
 {meta: title My Favorite Memory}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file myfavoritememorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The first time we met is a favorite memory of [F]mine
@@ -39,3 +42,9 @@ They say time changes all it [G7]pertains to
 But your memory is stronger than [C]time
 I guess everything does change except what you choose to [F]recall
 {end_of_verse}
+
+
+
+
+
+

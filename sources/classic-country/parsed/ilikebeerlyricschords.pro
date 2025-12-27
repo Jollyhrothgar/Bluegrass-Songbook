@@ -1,5 +1,8 @@
 {meta: title I Like Beer}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file ilikebeerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In some of my songs I [F]have casually [C]mentioned
@@ -51,3 +54,8 @@ Vodka puts my mouth in [F]gear
 This little refrain should [C]help me [Am]explain
 As a [G7]matter of fact I like [C]beer
 {end_of_verse}
+
+
+
+
+

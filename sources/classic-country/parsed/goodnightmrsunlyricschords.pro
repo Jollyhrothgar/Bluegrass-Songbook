@@ -1,5 +1,8 @@
 {meta: title Goodnight Mr. Sun}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file goodnightmrsunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All day just a-waiting standing by my door
@@ -35,3 +38,9 @@ There ain't no hesitating about what we're gonna do
 [F]Goodnight Mr. [C]Sun
 [F]Goodnight Mr. [C]Sun
 {end_of_verse}
+
+
+
+
+
+

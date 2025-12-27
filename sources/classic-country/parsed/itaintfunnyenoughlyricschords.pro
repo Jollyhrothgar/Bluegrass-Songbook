@@ -1,6 +1,9 @@
 {meta: title It Ain't Funny Enough}
 {meta: artist Ira Louvin}
 {meta: composer Anne Young}
+{meta: x_source classic-country}
+{meta: x_source_file itaintfunnyenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've heard a lotta talking had a lot of advice 
@@ -61,3 +64,11 @@ I [A7]went down like a rock in the [D7]sea
 {start_of_verse: Verse 6}
 No [D7]it ain't funny [G]enough
 {end_of_verse}
+
+
+
+
+
+
+
+

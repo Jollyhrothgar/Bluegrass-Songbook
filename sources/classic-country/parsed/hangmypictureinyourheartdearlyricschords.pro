@@ -1,6 +1,9 @@
 {meta: title Hang My Picture In Your Heart Dear}
 {meta: artist Hank Locklin}
 {meta: composer Mel Tillis and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file hangmypictureinyourheartdearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hang my picture in your heart [C]dear
@@ -50,3 +53,11 @@ Yours truly Hank
 {start_of_verse: Verse 8}
 [D7]And I'll come back to you [G]someday
 {end_of_verse}
+
+
+
+
+
+
+
+

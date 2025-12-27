@@ -1,6 +1,9 @@
 {meta: title All Of The Time}
 {meta: artist Ferlin Husky}
 {meta: composer Joe Allison and Audrey Allison}
+{meta: x_source classic-country}
+{meta: x_source_file allofthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll try anything that's new if [D7]something old won't do
@@ -39,3 +42,8 @@ I love [G]everything you do and [D7]everything you say
 I [G]love you most of all cause you [C]always go my way
 When I [G]need you and I [D7]need you all of the [G]time [C]  [G]
 {end_of_verse}
+
+
+
+
+

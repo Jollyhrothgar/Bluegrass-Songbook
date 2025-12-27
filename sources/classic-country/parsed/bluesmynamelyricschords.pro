@@ -1,6 +1,9 @@
 {meta: title Blue’s My Name}
 {meta: artist Hank Williams Jr.}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file bluesmynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you walked in here and took that [G7]stool right next [C]me
@@ -26,3 +29,6 @@ I lost my [C]love to some[F]one I called best [C]frie[F]nd
 {start_of_verse: Verse 4}
 Blue’s my name [F]heartbreak's [G7]my next of [C]kin
 {end_of_verse}
+
+
+

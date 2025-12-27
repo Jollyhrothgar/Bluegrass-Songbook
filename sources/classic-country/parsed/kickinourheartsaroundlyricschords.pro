@@ -1,6 +1,9 @@
 {meta: title Kickin' Our Hearts Around}
 {meta: artist Buck Owens}
 {meta: composer Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file kickinourheartsaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh let's stop kickin' each others hearts around it's [C]not the thing to do
@@ -36,3 +39,7 @@ Let's [D7]pick them up dust them off and start our love [G]anew
 Let's be fair and let's don't dare to [C]try to hurt the other
 [D7]Let's stop kickin' our hearts around and let's love one [G]another
 {end_of_verse}
+
+
+
+

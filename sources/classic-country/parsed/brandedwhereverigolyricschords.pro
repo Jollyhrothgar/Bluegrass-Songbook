@@ -1,6 +1,9 @@
 {meta: title Branded Wherever I Go}
 {meta: artist Roy Acuff}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file brandedwhereverigolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Please don't wait for me darling 
@@ -50,3 +53,9 @@ We [C]could never be happy I [G]know
 I'll always be a ex [D7]convict 
 And branded wherever I [G]go
 {end_of_verse}
+
+
+
+
+
+
