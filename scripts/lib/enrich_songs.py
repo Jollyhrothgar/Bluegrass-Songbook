@@ -85,9 +85,42 @@ def get_first_chord(section: Section) -> str | None:
     return None
 
 
+def is_pickup_phrase(line: str, threshold: int = 15) -> bool:
+    """Check if a line is a pickup phrase.
+
+    A pickup phrase has a chord within the first `threshold` characters
+    but not at position 0. Example: "Let us [F]sit down" - the "Let us"
+    is a pickup before the chord change.
+
+    We don't want to add a chord at position 0 for these lines because
+    the pickup is intentional.
+    """
+    if not line or line.startswith('['):
+        return False
+
+    # Find first chord position
+    match = re.search(r'\[([^\]]+)\]', line)
+    if not match:
+        return False
+
+    # If chord appears within threshold, it's likely a pickup
+    return match.start() < threshold
+
+
 def add_first_chord_to_section(section: Section, chord: str) -> Section:
-    """Add a chord at position 0 of the first line if it doesn't have one."""
+    """Add a chord at position 0 of the first line if it doesn't have one.
+
+    Skips if:
+    - Section already starts with a chord
+    - First line is a pickup phrase (chord within first 15 chars)
+    """
     if not section.lines or section_starts_with_chord(section):
+        return section
+
+    first_line = section.lines[0]
+
+    # Don't add chord to pickup phrases
+    if is_pickup_phrase(first_line):
         return section
 
     new_lines = section.lines.copy()
@@ -282,7 +315,7 @@ def song_to_chordpro(song: ParsedSong) -> str:
     lines.extend(song.metadata_lines)
 
     # Sections
-    for section in song.sections:
+    for i, section in enumerate(song.sections):
         # Section header
         if section.label:
             lines.append(f'{{start_of_{section.section_type}: {section.label}}}')
@@ -294,6 +327,10 @@ def song_to_chordpro(song: ParsedSong) -> str:
 
         # Section footer
         lines.append(f'{{end_of_{section.section_type}}}')
+
+        # Add blank line between sections (but not after the last one)
+        if i < len(song.sections) - 1:
+            lines.append('')
 
     # Trailing content
     lines.extend(song.trailing_lines)
@@ -319,24 +356,22 @@ def load_protected_list(protected_file: Path) -> set[str]:
 def enrich_song(filepath: Path, source_name: str, add_provenance: bool = True) -> tuple[str, bool]:
     """Enrich a single .pro file.
 
+    Currently only adds provenance metadata. Chord normalization was removed
+    because it incorrectly modified pickup phrases and songs with multiple
+    verse patterns (see issue #25 discussion).
+
     Returns (new_content, was_modified).
     """
     content = filepath.read_text(encoding='utf-8')
-    original_content = content
 
-    song = parse_song(content)
-
-    # Add provenance if requested and not already present
+    # Only add provenance if requested and not already present
     if add_provenance and not has_provenance_metadata(content):
+        song = parse_song(content)
         song = add_provenance_metadata(song, source_name, filepath.name)
+        new_content = song_to_chordpro(song)
+        return new_content, True
 
-    # Normalize chord patterns
-    song = normalize_chord_patterns(song)
-
-    new_content = song_to_chordpro(song)
-    was_modified = new_content != original_content
-
-    return new_content, was_modified
+    return content, False
 
 
 def enrich_source(source_dir: Path, source_name: str, dry_run: bool = False) -> dict:

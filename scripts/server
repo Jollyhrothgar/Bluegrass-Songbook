@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 #
-# server - Start the frontend development server
+# server - Start development servers
 #
 # Usage:
-#   ./scripts/server              # Start frontend server on port 8080
+#   ./scripts/server                    # Start frontend server on port 8080
+#   ./scripts/server enrichment         # Start enrichment preview viewer
 #
 # For source-specific servers (like debug viewers), use:
 #   ./sources/classic-country/scripts/server debug_viewer
@@ -14,6 +15,29 @@ set -e
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
 
-echo "Starting frontend server..."
-echo "Visit: http://localhost:8080"
-python3 -m http.server 8080 --directory docs
+COMMAND="${1:-frontend}"
+
+case "$COMMAND" in
+    frontend|"")
+        echo "Starting frontend server..."
+        echo "Visit: http://localhost:8080"
+        python3 -m http.server 8080 --directory docs
+        ;;
+    enrichment|enrichment-viewer|enrich)
+        echo "Starting enrichment preview viewer..."
+        uv run python3 scripts/enrichment-viewer/server.py
+        ;;
+    help|--help|-h)
+        echo "Usage: ./scripts/server [command]"
+        echo ""
+        echo "Commands:"
+        echo "  frontend     Start the main frontend (default)"
+        echo "  enrichment   Start the enrichment preview viewer"
+        echo ""
+        ;;
+    *)
+        echo "Unknown command: $COMMAND"
+        echo "Run './scripts/server help' for usage"
+        exit 1
+        ;;
+esac
