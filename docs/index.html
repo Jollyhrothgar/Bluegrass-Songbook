@@ -217,6 +217,30 @@ This is the [G]chorus [D]part
             <div class="song-view-header">
                 <button id="back-btn" class="back-btn">&larr; Back</button>
                 <div class="song-actions">
+                    <div class="export-wrapper">
+                        <button id="export-btn" class="icon-btn" title="Export song">
+                            <span class="export-icon">&#128190;</span>
+                        </button>
+                        <div id="export-dropdown" class="export-dropdown hidden">
+                            <button class="export-option" data-action="copy-chordpro">
+                                <span class="export-option-icon">&#128203;</span>
+                                <span>Copy ChordPro</span>
+                            </button>
+                            <button class="export-option" data-action="copy-text">
+                                <span class="export-option-icon">&#128203;</span>
+                                <span>Copy as Text</span>
+                            </button>
+                            <div class="export-divider"></div>
+                            <button class="export-option" data-action="download-chordpro">
+                                <span class="export-option-icon">&#8595;</span>
+                                <span>Download .pro</span>
+                            </button>
+                            <button class="export-option" data-action="download-text">
+                                <span class="export-option-icon">&#8595;</span>
+                                <span>Download .txt</span>
+                            </button>
+                        </div>
+                    </div>
                     <div class="list-picker-wrapper">
                         <button id="list-picker-btn" class="icon-btn list-picker-btn" title="Add to list">
                             <span class="list-icon">&#43;</span>

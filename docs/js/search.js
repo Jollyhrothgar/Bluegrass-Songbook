@@ -237,6 +237,10 @@ const favoritesCheckbox = document.getElementById('favorites-checkbox');
 const customListsContainer = document.getElementById('custom-lists-container');
 const createListBtn = document.getElementById('create-list-btn');
 
+// Export elements
+const exportBtn = document.getElementById('export-btn');
+const exportDropdown = document.getElementById('export-dropdown');
+
 // Manage lists modal elements
 const listsModal = document.getElementById('lists-modal');
 const listsModalClose = document.getElementById('lists-modal-close');
@@ -2517,7 +2521,159 @@ document.addEventListener('click', (e) => {
     if (listPickerDropdown && !listPickerDropdown.contains(e.target) && e.target !== listPickerBtn) {
         listPickerDropdown.classList.add('hidden');
     }
+    if (exportDropdown && !exportDropdown.contains(e.target) && e.target !== exportBtn) {
+        exportDropdown.classList.add('hidden');
+    }
 });
+
+// Toggle export dropdown
+if (exportBtn) {
+    exportBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        exportDropdown.classList.toggle('hidden');
+    });
+}
+
+// Convert ChordPro to ASCII text (chords above lyrics)
+function chordproToAscii(chordpro) {
+    const lines = chordpro.split('\n');
+    const result = [];
+    let title = '';
+    let artist = '';
+
+    for (const line of lines) {
+        // Extract metadata for header
+        const metaMatch = line.match(/\{meta:\s*(\w+)\s+([^}]+)\}/);
+        if (metaMatch) {
+            const [, key, value] = metaMatch;
+            if (key === 'title') title = value;
+            if (key === 'artist') artist = value;
+            continue;
+        }
+
+        // Skip directives
+        if (line.match(/^\{.*\}$/)) {
+            // Include section labels as text
+            const sectionMatch = line.match(/\{start_of_(verse|chorus|bridge)(?::\s*([^}]+))?\}/);
+            if (sectionMatch) {
+                const [, type, label] = sectionMatch;
+                result.push('');
+                result.push(`[${label || type.charAt(0).toUpperCase() + type.slice(1)}]`);
+            }
+            continue;
+        }
+
+        // Skip empty lines but preserve them
+        if (!line.trim()) {
+            result.push('');
+            continue;
+        }
+
+        // Convert chord line to chords-above-lyrics format
+        const chordRegex = /\[([^\]]+)\]/g;
+        const chords = [];
+        let match;
+        let lastIndex = 0;
+        let lyricsOnly = '';
+
+        while ((match = chordRegex.exec(line)) !== null) {
+            // Add lyrics before this chord
+            lyricsOnly += line.substring(lastIndex, match.index);
+            // Record chord position (in the lyrics-only string)
+            chords.push({ chord: match[1], position: lyricsOnly.length });
+            lastIndex = match.index + match[0].length;
+        }
+        // Add remaining lyrics
+        lyricsOnly += line.substring(lastIndex);
+
+        if (chords.length > 0) {
+            // Build chord line
+            let chordLine = '';
+            let pos = 0;
+            for (const { chord, position } of chords) {
+                // Pad to reach position
+                while (chordLine.length < position) {
+                    chordLine += ' ';
+                }
+                chordLine += chord;
+            }
+            result.push(chordLine);
+        }
+        result.push(lyricsOnly);
+    }
+
+    // Add header
+    let header = [];
+    if (title) header.push(title);
+    if (artist) header.push(`by ${artist}`);
+    if (header.length > 0) {
+        return header.join(' - ') + '\n\n' + result.join('\n').trim();
+    }
+
+    return result.join('\n').trim();
+}
+
+// Export handlers
+function handleExport(action) {
+    if (!currentChordpro || !currentSong) return;
+
+    const title = currentSong.title || 'song';
+    const safeTitle = title.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+
+    switch (action) {
+        case 'copy-chordpro':
+            navigator.clipboard.writeText(currentChordpro).then(() => {
+                showExportFeedback('ChordPro copied!');
+            });
+            break;
+        case 'copy-text':
+            const ascii = chordproToAscii(currentChordpro);
+            navigator.clipboard.writeText(ascii).then(() => {
+                showExportFeedback('Text copied!');
+            });
+            break;
+        case 'download-chordpro':
+            downloadFile(`${safeTitle}.pro`, currentChordpro, 'text/plain');
+            break;
+        case 'download-text':
+            const asciiContent = chordproToAscii(currentChordpro);
+            downloadFile(`${safeTitle}.txt`, asciiContent, 'text/plain');
+            break;
+    }
+    exportDropdown.classList.add('hidden');
+}
+
+function downloadFile(filename, content, mimeType) {
+    const blob = new Blob([content], { type: mimeType });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
+function showExportFeedback(message) {
+    // Brief visual feedback - change button icon temporarily
+    const icon = exportBtn.querySelector('.export-icon');
+    const originalContent = icon.textContent;
+    icon.textContent = '✓';
+    setTimeout(() => {
+        icon.textContent = originalContent;
+    }, 1500);
+}
+
+// Handle export option clicks
+if (exportDropdown) {
+    exportDropdown.addEventListener('click', (e) => {
+        const option = e.target.closest('.export-option');
+        if (option) {
+            handleExport(option.dataset.action);
+        }
+    });
+}
 
 // Handle favorites checkbox change
 if (favoritesCheckbox) {

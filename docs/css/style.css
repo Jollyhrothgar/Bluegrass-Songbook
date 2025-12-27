@@ -1587,6 +1587,61 @@ mark {
 }
 
 /* ============================================
+   EXPORT DROPDOWN
+   ============================================ */
+
+.export-wrapper {
+    position: relative;
+}
+
+.export-icon {
+    font-size: 1.1rem;
+}
+
+.export-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.5rem;
+    min-width: 180px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    overflow: hidden;
+}
+
+.export-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-align: left;
+}
+
+.export-option:hover {
+    background: var(--bg-secondary);
+}
+
+.export-option-icon {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.export-divider {
+    height: 1px;
+    background: var(--border);
+}
+
+/* ============================================
    SIDEBAR LISTS STYLES
    ============================================ */
 
