@@ -57,8 +57,8 @@
             <a href="https://buymeacoffee.com/michaelbeav" target="_blank" rel="noopener" class="sidebar-link">
                 <span>&#9749;</span> Buy me a coffee
             </a>
-            <button id="nav-contact" class="sidebar-link">
-                <span>&#9993;</span> Contact / Feedback
+            <button id="nav-feedback" class="sidebar-link">
+                <span>&#9993;</span> Send Feedback
             </button>
             <a href="bluegrass-standards-board.html" class="sidebar-link">
                 <span>&#128659;</span> Standards Board
@@ -83,6 +83,53 @@
                     <div id="user-info" class="user-info hidden">
                         <img id="user-avatar" class="user-avatar" alt="User" referrerpolicy="no-referrer">
                         <span id="user-name" class="user-name"></span>
+                    </div>
+                </div>
+                <div class="feedback-wrapper">
+                    <button id="feedback-btn" class="icon-btn" title="Send Feedback">
+                        <span>💬</span>
+                    </button>
+                    <div id="feedback-dropdown" class="feedback-dropdown hidden">
+                        <div class="feedback-header">📣 Send Feedback</div>
+                        <button class="feedback-option" data-type="song-issue">
+                            <span class="feedback-icon">🐛</span>
+                            <span class="feedback-label">Song Display Issue</span>
+                        </button>
+                        <button class="feedback-option" data-type="search-problem">
+                            <span class="feedback-icon">🔍</span>
+                            <span class="feedback-label">Search Problem</span>
+                        </button>
+                        <button class="feedback-option" data-type="app-issue">
+                            <span class="feedback-icon">💥</span>
+                            <span class="feedback-label">App Issue</span>
+                        </button>
+                        <div class="feedback-divider"></div>
+                        <button class="feedback-option" data-type="request-song">
+                            <span class="feedback-icon">🎵</span>
+                            <span class="feedback-label">Request a Song</span>
+                        </button>
+                        <button class="feedback-option" data-type="song-correction">
+                            <span class="feedback-icon">✏️</span>
+                            <span class="feedback-label">Song Correction</span>
+                        </button>
+                        <button class="feedback-option" data-type="copyright">
+                            <span class="feedback-icon">⚠️</span>
+                            <span class="feedback-label">Copyright Concern</span>
+                        </button>
+                        <div class="feedback-divider"></div>
+                        <button class="feedback-option" data-type="feature-idea">
+                            <span class="feedback-icon">💡</span>
+                            <span class="feedback-label">Feature Idea</span>
+                        </button>
+                        <button class="feedback-option" data-type="general">
+                            <span class="feedback-icon">💬</span>
+                            <span class="feedback-label">General Feedback</span>
+                        </button>
+                        <div class="feedback-divider"></div>
+                        <a href="mailto:bluegrassbook.feedback@gmail.com" class="feedback-option email-option">
+                            <span class="feedback-icon">📧</span>
+                            <span class="feedback-label">Email Me</span>
+                        </a>
                     </div>
                 </div>
                 <button id="theme-toggle" class="icon-btn" title="Toggle theme">
@@ -240,7 +287,7 @@ This is the [G]chorus [D]part
 The ultimate goal for this project is to store the full corpus of bluegrass and roots vocal and instrumental music, make it searchable, discoverable, downloadable and shareable. The proejct source code is avaialble, but not for commercial use (read the license in the source code).
                         </p>
                         <p>
-If you want to contribute, your contributions are welcome! Reach out to me, or submit a PR on github. If you want to share feedback with me about what you like or dislike about this, features you want to see, or anything else - please send me an email at michael.beaumier@gmail.com or submit a bug report / github issue.
+If you want to contribute, your contributions are welcome! Reach out to me, or submit a PR on github. If you want to share feedback with me about what you like or dislike about this, features you want to see, or anything else - please send me an email at bluegrassbook.feedback@gmail.com or submit a bug report / github issue.
                         </p>
 
                     </div>
@@ -348,12 +395,12 @@ If you want to contribute, your contributions are welcome! Reach out to me, or s
         <div id="contact-modal" class="modal hidden">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>Contact / Feature Request</h2>
+                    <h2 id="contact-modal-title">Send Feedback</h2>
                     <button id="contact-modal-close" class="modal-close">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <label for="contact-feedback">What would you like to share?</label>
-                    <textarea id="contact-feedback" placeholder="Request a song, suggest a feature, report an issue, or just say hi!"></textarea>
+                    <label for="contact-feedback">Describe your feedback:</label>
+                    <textarea id="contact-feedback" placeholder="Enter your message here..."></textarea>
                 </div>
                 <div class="modal-footer">
                     <button id="submit-contact-btn" class="action-btn primary">Submit</button>

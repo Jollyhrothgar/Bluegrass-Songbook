@@ -245,7 +245,7 @@ const navSearch = document.getElementById('nav-search');
 const navAddSong = document.getElementById('nav-add-song');
 const navFavorites = document.getElementById('nav-favorites');
 const navFavoritesCount = document.getElementById('nav-favorites-count');
-const navContact = document.getElementById('nav-contact');
+const navFeedback = document.getElementById('nav-feedback');
 const navAbout = document.getElementById('nav-about');
 const navListsContainer = document.getElementById('nav-lists-container');
 const navManageLists = document.getElementById('nav-manage-lists');
@@ -2388,6 +2388,121 @@ function formatBugReport(feedback) {
     return lines.join('\n');
 }
 
+// ============================================
+// FEEDBACK DROPDOWN
+// ============================================
+
+const feedbackBtn = document.getElementById('feedback-btn');
+const feedbackDropdown = document.getElementById('feedback-dropdown');
+
+function toggleFeedbackDropdown() {
+    feedbackDropdown.classList.toggle('hidden');
+}
+
+function closeFeedbackDropdown() {
+    feedbackDropdown.classList.add('hidden');
+}
+
+// Toggle dropdown on button click
+if (feedbackBtn) {
+    feedbackBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleFeedbackDropdown();
+    });
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+    if (feedbackDropdown && !feedbackDropdown.contains(e.target) && e.target !== feedbackBtn) {
+        closeFeedbackDropdown();
+    }
+});
+
+// Handle feedback option clicks
+document.querySelectorAll('.feedback-option[data-type]').forEach(option => {
+    option.addEventListener('click', (e) => {
+        const type = option.dataset.type;
+        closeFeedbackDropdown();
+        handleFeedbackType(type);
+    });
+});
+
+function handleFeedbackType(type) {
+    const feedbackConfig = {
+        'song-issue': {
+            title: '[Song Issue] ',
+            label: 'bug',
+            prompt: 'Describe the display issue you\'re seeing:\n\n',
+            includeSong: true
+        },
+        'search-problem': {
+            title: '[Search Issue] ',
+            label: 'bug',
+            prompt: 'Describe what you searched for and what went wrong:\n\n'
+        },
+        'app-issue': {
+            title: '[App Issue] ',
+            label: 'bug',
+            prompt: 'Describe the problem you encountered:\n\n'
+        },
+        'request-song': {
+            action: 'add-song',
+            message: 'You can add songs yourself! Use the "Add Song" feature in the menu to paste chord sheets and submit them to the songbook.'
+        },
+        'song-correction': {
+            action: 'edit-song',
+            message: 'You can correct songs yourself! Click "Edit" when viewing a song to fix chords, lyrics, or metadata.'
+        },
+        'copyright': {
+            title: '[Copyright] ',
+            label: 'copyright',
+            prompt: 'Please identify the song and describe the copyright concern:\n\n'
+        },
+        'feature-idea': {
+            title: '[Feature Request] ',
+            label: 'feature-request',
+            prompt: 'Describe your feature idea:\n\n'
+        },
+        'general': {
+            title: '[Feedback] ',
+            label: 'feature-request',
+            prompt: ''
+        }
+    };
+
+    const config = feedbackConfig[type];
+    if (!config) return;
+
+    // Handle special actions
+    if (config.action === 'add-song') {
+        if (confirm(config.message + '\n\nWould you like to open the Add Song editor?')) {
+            navigateTo('add-song');
+        }
+        return;
+    }
+
+    if (config.action === 'edit-song') {
+        if (currentSong && !songView.classList.contains('hidden')) {
+            if (confirm(config.message + '\n\nWould you like to edit the current song?')) {
+                enterEditMode(currentSong);
+            }
+        } else {
+            alert(config.message + '\n\nFirst, search for and open the song you want to correct, then click "Edit".');
+        }
+        return;
+    }
+
+    // Build GitHub issue URL
+    let body = config.prompt;
+
+    // Include song context if relevant
+    if (config.includeSong && currentSong) {
+        body += `\n\n---\n**Song:** ${currentSong.title || 'Unknown'}\n**Artist:** ${currentSong.artist || 'Unknown'}\n**Song ID:** ${currentSong.id || 'Unknown'}\n**Source:** ${currentSong.source || 'Unknown'}`;
+    }
+
+    openContactModalWithConfig(config.title, body, config.label);
+}
+
 // Contact modal elements
 const contactModal = document.getElementById('contact-modal');
 const contactModalClose = document.getElementById('contact-modal-close');
@@ -2395,8 +2510,12 @@ const contactFeedback = document.getElementById('contact-feedback');
 const submitContactBtn = document.getElementById('submit-contact-btn');
 const contactStatus = document.getElementById('contact-status');
 
+// Store current feedback config for submission
+let currentFeedbackConfig = { title: '', label: 'feature-request' };
+
 function closeContactModal() {
     contactModal.classList.add('hidden');
+    currentFeedbackConfig = { title: '', label: 'feature-request' };
 }
 
 function openContactModal() {
@@ -2407,8 +2526,37 @@ function openContactModal() {
     contactFeedback.focus();
 }
 
-if (navContact) {
-    navContact.addEventListener('click', openContactModal);
+function openContactModalWithConfig(titlePrefix, bodyPrefix, label) {
+    closeSidebar();
+    currentFeedbackConfig = { title: titlePrefix, label: label };
+
+    // Update modal title based on feedback type
+    const modalTitle = document.getElementById('contact-modal-title');
+    if (modalTitle) {
+        const titleMap = {
+            '[Song Issue] ': 'Report Song Issue',
+            '[Search Issue] ': 'Report Search Problem',
+            '[App Issue] ': 'Report App Issue',
+            '[Copyright] ': 'Report Copyright Concern',
+            '[Feature Request] ': 'Suggest a Feature',
+            '[Feedback] ': 'Send Feedback'
+        };
+        modalTitle.textContent = titleMap[titlePrefix] || 'Send Feedback';
+    }
+
+    contactModal.classList.remove('hidden');
+    contactFeedback.value = bodyPrefix;
+    contactStatus.textContent = '';
+    contactFeedback.focus();
+    // Move cursor to end
+    contactFeedback.setSelectionRange(contactFeedback.value.length, contactFeedback.value.length);
+}
+
+if (navFeedback) {
+    navFeedback.addEventListener('click', () => {
+        closeSidebar();
+        toggleFeedbackDropdown();
+    });
 }
 
 contactModalClose.addEventListener('click', closeContactModal);
@@ -2427,13 +2575,16 @@ submitContactBtn.addEventListener('click', () => {
         return;
     }
 
-    const title = feedback.length > 50 ? feedback.substring(0, 50) + '...' : feedback;
+    // Build title with prefix from feedback config
+    const titlePrefix = currentFeedbackConfig.title || '';
+    const titleContent = feedback.split('\n')[0]; // First line for title
+    const title = titlePrefix + (titleContent.length > 50 ? titleContent.substring(0, 50) + '...' : titleContent);
     const body = feedback;
 
     const params = new URLSearchParams({
         title: title,
         body: body,
-        labels: 'feature-request'
+        labels: currentFeedbackConfig.label || 'feature-request'
     });
 
     const issueUrl = `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
@@ -2444,7 +2595,9 @@ submitContactBtn.addEventListener('click', () => {
 // Global Escape key handler for all modals and sidebar
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-        if (sidebar && sidebar.classList.contains('open')) {
+        if (feedbackDropdown && !feedbackDropdown.classList.contains('hidden')) {
+            closeFeedbackDropdown();
+        } else if (sidebar && sidebar.classList.contains('open')) {
             closeSidebar();
         } else if (accountModal && !accountModal.classList.contains('hidden')) {
             closeAccountModal();
