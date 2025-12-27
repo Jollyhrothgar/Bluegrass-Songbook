@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrichment Preview Viewer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #16213e;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #0f3460;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            color: #e94560;
+        }
+
+        .stats {
+            font-size: 0.875rem;
+            color: #888;
+        }
+
+        .controls {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        button {
+            background: #0f3460;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.875rem;
+        }
+
+        button:hover {
+            background: #e94560;
+        }
+
+        button.good {
+            background: #28a745;
+        }
+
+        button.problem {
+            background: #dc3545;
+        }
+
+        .nav-info {
+            color: #888;
+            font-size: 0.875rem;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            padding: 1rem;
+            height: calc(100vh - 140px);
+        }
+
+        .panel {
+            background: #16213e;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel-header {
+            background: #0f3460;
+            padding: 0.75rem 1rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .panel-header.after {
+            background: #1e5128;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            background: #e94560;
+        }
+
+        .badge.protected {
+            background: #ffc107;
+            color: #000;
+        }
+
+        .panel-content {
+            flex: 1;
+            overflow: auto;
+            padding: 1rem;
+        }
+
+        pre {
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.8rem;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .diff-stats {
+            background: #16213e;
+            padding: 1rem 2rem;
+            display: flex;
+            gap: 2rem;
+            border-top: 1px solid #0f3460;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: #888;
+        }
+
+        .stat-value {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .stat-value.positive {
+            color: #28a745;
+        }
+
+        .stat-value.neutral {
+            color: #888;
+        }
+
+        .stat-value.warning {
+            color: #ffc107;
+        }
+
+        /* Diff highlighting */
+        .diff-context {
+            display: block;
+            color: #aaa;
+        }
+
+        .diff-added {
+            display: block;
+            background: rgba(40, 167, 69, 0.2);
+            color: #6f6;
+        }
+
+        .diff-removed {
+            display: block;
+            background: rgba(220, 53, 69, 0.2);
+            color: #f66;
+        }
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #888;
+        }
+
+        .error {
+            color: #dc3545;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .keyboard-hint {
+            font-size: 0.75rem;
+            color: #666;
+            margin-left: 1rem;
+        }
+
+        kbd {
+            background: #0f3460;
+            padding: 0.125rem 0.375rem;
+            border-radius: 3px;
+            font-family: inherit;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Enrichment Preview Viewer</h1>
+            <span class="stats" id="global-stats">Loading...</span>
+        </div>
+        <div class="controls">
+            <button onclick="prevSong()">← Prev</button>
+            <button onclick="randomSong()">Random</button>
+            <button onclick="nextSong()">Next →</button>
+            <span class="nav-info" id="nav-info">-/-</span>
+            <button class="good" onclick="markGood()">Good</button>
+            <button class="problem" onclick="markProblem()">Problem</button>
+            <span class="keyboard-hint">
+                <kbd>←</kbd> <kbd>→</kbd> nav
+                <kbd>r</kbd> random
+                <kbd>g</kbd> good
+                <kbd>p</kbd> problem
+            </span>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="panel">
+            <div class="panel-header">
+                BEFORE (Original)
+                <span class="badge" id="source-badge">-</span>
+            </div>
+            <div class="panel-content">
+                <pre id="before-content"><div class="loading">Loading...</div></pre>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header after">
+                AFTER (Enriched)
+                <span class="badge" id="status-badge" style="display:none">-</span>
+            </div>
+            <div class="panel-content">
+                <pre id="after-content"><div class="loading">Loading...</div></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="diff-stats">
+        <div class="stat-item">
+            <span class="stat-label">File</span>
+            <span class="stat-value" id="filename">-</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Metadata Added</span>
+            <span class="stat-value" id="metadata-added">-</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Chords Added</span>
+            <span class="stat-value" id="chords-added">-</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Lines Changed</span>
+            <span class="stat-value" id="lines-changed">-</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-label">Status</span>
+            <span class="stat-value" id="status">-</span>
+        </div>
+    </div>
+
+    <script>
+        let currentSong = null;
+
+        async function loadStats() {
+            try {
+                const resp = await fetch('/api/stats');
+                const stats = await resp.json();
+                document.getElementById('global-stats').textContent =
+                    `${stats.total_files.toLocaleString()} files | ${stats.protected_files} protected | ${stats.files_to_enrich.toLocaleString()} to enrich`;
+            } catch (e) {
+                console.error('Failed to load stats:', e);
+            }
+        }
+
+        async function loadSong(endpoint) {
+            try {
+                const resp = await fetch(endpoint);
+                const data = await resp.json();
+
+                if (data.error) {
+                    showError(data.error);
+                    return;
+                }
+
+                currentSong = data;
+                renderSong(data);
+            } catch (e) {
+                showError(e.message);
+            }
+        }
+
+        function showError(message) {
+            document.getElementById('before-content').innerHTML =
+                `<div class="error">${message}</div>`;
+            document.getElementById('after-content').innerHTML = '';
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function generateDiffView(original, enriched, diff) {
+            // Generate a unified diff-style view
+            const origLines = original.split('\n');
+            const enrichLines = enriched.split('\n');
+
+            // Build a map of changes
+            const changes = {};
+            if (diff.changed_lines) {
+                for (const change of diff.changed_lines) {
+                    changes[change.line] = change;
+                }
+            }
+
+            let html = '';
+            let origIdx = 0;
+            let enrichIdx = 0;
+
+            while (enrichIdx < enrichLines.length) {
+                const enrichLine = enrichLines[enrichIdx];
+                const origLine = origIdx < origLines.length ? origLines[origIdx] : null;
+
+                // Check if this is a new metadata line (added)
+                if (enrichLine.match(/^\{meta: x_(source|enriched)/)) {
+                    html += `<span class="diff-added">+ ${escapeHtml(enrichLine)}</span>`;
+                    enrichIdx++;
+                    continue;
+                }
+
+                // Check if lines match
+                if (origLine === enrichLine) {
+                    html += `<span class="diff-context">  ${escapeHtml(enrichLine)}</span>`;
+                    origIdx++;
+                    enrichIdx++;
+                } else if (origLine !== null && enrichLine.includes(origLine.substring(0, 20))) {
+                    // Line was modified (likely chord added at start)
+                    html += `<span class="diff-removed">- ${escapeHtml(origLine)}</span>`;
+                    html += `<span class="diff-added">+ ${escapeHtml(enrichLine)}</span>`;
+                    origIdx++;
+                    enrichIdx++;
+                } else if (origLine === '') {
+                    // Blank line in original
+                    html += `<span class="diff-context">  </span>`;
+                    origIdx++;
+                } else if (enrichLine === '') {
+                    // Blank line added in enriched
+                    html += `<span class="diff-context">  </span>`;
+                    enrichIdx++;
+                } else {
+                    // New line added
+                    html += `<span class="diff-added">+ ${escapeHtml(enrichLine)}</span>`;
+                    enrichIdx++;
+                }
+            }
+
+            return html;
+        }
+
+        function renderSong(data) {
+            // Update navigation
+            document.getElementById('nav-info').textContent =
+                `${data.index + 1} / ${data.total}`;
+
+            // Update filename and source
+            document.getElementById('filename').textContent = data.filename;
+            document.getElementById('source-badge').textContent = data.source;
+
+            // Update status badge
+            const statusBadge = document.getElementById('status-badge');
+            if (data.is_protected) {
+                statusBadge.textContent = 'PROTECTED';
+                statusBadge.className = 'badge protected';
+                statusBadge.style.display = 'inline';
+            } else {
+                statusBadge.style.display = 'none';
+            }
+
+            // Render content
+            document.getElementById('before-content').innerHTML =
+                `<code>${escapeHtml(data.original)}</code>`;
+            document.getElementById('after-content').innerHTML =
+                `<code>${generateDiffView(data.original, data.enriched, data.diff)}</code>`;
+
+            // Update diff stats
+            const diff = data.diff;
+
+            const metaEl = document.getElementById('metadata-added');
+            metaEl.textContent = diff.metadata_added > 0 ? `+${diff.metadata_added}` : '0';
+            metaEl.className = 'stat-value ' + (diff.metadata_added > 0 ? 'positive' : 'neutral');
+
+            const chordsEl = document.getElementById('chords-added');
+            chordsEl.textContent = diff.chords_added > 0 ? `+${diff.chords_added}` : '0';
+            chordsEl.className = 'stat-value ' + (diff.chords_added > 0 ? 'positive' : 'neutral');
+
+            const linesEl = document.getElementById('lines-changed');
+            linesEl.textContent = diff.lines_changed;
+            linesEl.className = 'stat-value ' + (diff.lines_changed > 0 ? 'positive' : 'neutral');
+
+            const statusEl = document.getElementById('status');
+            if (data.is_protected) {
+                statusEl.textContent = 'SKIPPED';
+                statusEl.className = 'stat-value warning';
+            } else if (diff.is_identical) {
+                statusEl.textContent = 'NO CHANGE';
+                statusEl.className = 'stat-value neutral';
+            } else {
+                statusEl.textContent = 'MODIFIED';
+                statusEl.className = 'stat-value positive';
+            }
+        }
+
+        function randomSong() {
+            loadSong('/api/random');
+        }
+
+        function nextSong() {
+            loadSong('/api/next');
+        }
+
+        function prevSong() {
+            loadSong('/api/prev');
+        }
+
+        async function saveFeedback(status) {
+            if (!currentSong) return;
+
+            const feedback = {
+                filename: currentSong.filename,
+                source: currentSong.source,
+                status: status,
+                diff: currentSong.diff,
+                timestamp: new Date().toISOString(),
+            };
+
+            try {
+                await fetch('/api/feedback', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(feedback),
+                });
+
+                // Visual feedback
+                const btn = status === 'good'
+                    ? document.querySelector('button.good')
+                    : document.querySelector('button.problem');
+
+                btn.textContent = 'Saved!';
+                setTimeout(() => {
+                    btn.textContent = status === 'good' ? 'Good' : 'Problem';
+                }, 500);
+
+                // Auto-advance to next
+                nextSong();
+            } catch (e) {
+                console.error('Failed to save feedback:', e);
+            }
+        }
+
+        function markGood() {
+            saveFeedback('good');
+        }
+
+        function markProblem() {
+            saveFeedback('problem');
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            // Ignore if typing in an input
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+            switch (e.key) {
+                case 'ArrowRight':
+                    nextSong();
+                    break;
+                case 'ArrowLeft':
+                    prevSong();
+                    break;
+                case 'r':
+                    randomSong();
+                    break;
+                case 'g':
+                    markGood();
+                    break;
+                case 'p':
+                    markProblem();
+                    break;
+            }
+        });
+
+        // Initial load
+        loadStats();
+        randomSong();
+    </script>
+</body>
+</html>
