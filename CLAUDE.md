@@ -179,6 +179,7 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 - **17,053 songs** with chord search, transposition, favorites, dark mode
 - **User accounts**: Google OAuth via Supabase, cloud-synced lists
 - **Song versions**: Multiple arrangements with voting (infrastructure ready)
+- **URL stability**: Song URLs (`#song/{id}`) are permanent; new submissions get unique IDs, corrections update in place
 
 **What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
 
