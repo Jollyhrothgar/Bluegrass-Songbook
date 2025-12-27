@@ -2037,3 +2037,147 @@ mark {
     margin-top: 0.35rem;
     opacity: 0.85;
 }
+
+/* ============================================
+   ABOUT VIEW STYLES
+   ============================================ */
+
+.about-view {
+    animation: fadeIn 0.2s ease;
+}
+
+.about-header {
+    margin-bottom: 1.5rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2.5rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.about-image-placeholder {
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 3 / 4;
+    background: var(--bg);
+    border: 2px dashed var(--border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+.about-section {
+    margin-bottom: 1.75rem;
+}
+
+.about-section:last-child {
+    margin-bottom: 0;
+}
+
+.about-section h3 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.about-section p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text);
+}
+
+.about-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.about-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    width: fit-content;
+}
+
+.about-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.about-link-icon {
+    font-size: 1.1rem;
+}
+
+/* Mobile responsive for About view */
+@media (max-width: 700px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .about-image-placeholder {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .about-text h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-section h3 {
+        text-align: center;
+    }
+
+    .about-section p {
+        text-align: center;
+    }
+
+    .about-links {
+        align-items: center;
+    }
+}

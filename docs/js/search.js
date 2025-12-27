@@ -52,6 +52,9 @@ function pushHistoryState(view, data = {}) {
         case 'favorites':
             hash = '#favorites';
             break;
+        case 'about':
+            hash = '#about';
+            break;
         case 'search':
         default:
             hash = data.query ? `#search/${encodeURIComponent(data.query)}` : '';
@@ -79,6 +82,9 @@ function handleHistoryNavigation(state) {
             break;
         case 'favorites':
             showView('favorites');
+            break;
+        case 'about':
+            showView('about');
             break;
         case 'search':
         default:
@@ -119,6 +125,7 @@ function showView(mode) {
             resultsDiv.classList.remove('hidden');
             if (editorPanel) editorPanel.classList.add('hidden');
             songView.classList.add('hidden');
+            if (aboutView) aboutView.classList.add('hidden');
             exitEditMode();
             break;
 
@@ -128,6 +135,7 @@ function showView(mode) {
             resultsDiv.classList.add('hidden');
             songView.classList.add('hidden');
             if (editorPanel) editorPanel.classList.remove('hidden');
+            if (aboutView) aboutView.classList.add('hidden');
             exitEditMode();
             break;
 
@@ -137,7 +145,16 @@ function showView(mode) {
             resultsDiv.classList.remove('hidden');
             if (editorPanel) editorPanel.classList.add('hidden');
             songView.classList.add('hidden');
+            if (aboutView) aboutView.classList.add('hidden');
             showFavorites();
+            break;
+
+        case 'about':
+            searchContainer.classList.add('hidden');
+            resultsDiv.classList.add('hidden');
+            if (editorPanel) editorPanel.classList.add('hidden');
+            songView.classList.add('hidden');
+            if (aboutView) aboutView.classList.remove('hidden');
             break;
     }
 }
@@ -181,6 +198,9 @@ function handleDeepLink() {
         return true;
     } else if (hash === '#favorites') {
         showView('favorites');
+        return true;
+    } else if (hash === '#about') {
+        showView('about');
         return true;
     } else if (hash.startsWith('#search/')) {
         const query = decodeURIComponent(hash.slice(8));
@@ -226,8 +246,13 @@ const navAddSong = document.getElementById('nav-add-song');
 const navFavorites = document.getElementById('nav-favorites');
 const navFavoritesCount = document.getElementById('nav-favorites-count');
 const navContact = document.getElementById('nav-contact');
+const navAbout = document.getElementById('nav-about');
 const navListsContainer = document.getElementById('nav-lists-container');
 const navManageLists = document.getElementById('nav-manage-lists');
+
+// About view elements
+const aboutView = document.getElementById('about-view');
+const aboutBackBtn = document.getElementById('about-back-btn');
 
 // List picker elements
 const listPickerBtn = document.getElementById('list-picker-btn');
@@ -2206,6 +2231,7 @@ function navigateTo(mode) {
             resultsDiv.classList.remove('hidden');
             if (editorPanel) editorPanel.classList.add('hidden');
             songView.classList.add('hidden');
+            if (aboutView) aboutView.classList.add('hidden');
             exitEditMode();
             showRandomSongs();
             searchInput.focus();
@@ -2217,6 +2243,7 @@ function navigateTo(mode) {
             resultsDiv.classList.add('hidden');
             songView.classList.add('hidden');
             if (editorPanel) editorPanel.classList.remove('hidden');
+            if (aboutView) aboutView.classList.add('hidden');
             exitEditMode();
             break;
 
@@ -2226,7 +2253,16 @@ function navigateTo(mode) {
             resultsDiv.classList.remove('hidden');
             if (editorPanel) editorPanel.classList.add('hidden');
             songView.classList.add('hidden');
+            if (aboutView) aboutView.classList.add('hidden');
             showFavorites();
+            break;
+
+        case 'about':
+            searchContainer.classList.add('hidden');
+            resultsDiv.classList.add('hidden');
+            if (editorPanel) editorPanel.classList.add('hidden');
+            songView.classList.add('hidden');
+            if (aboutView) aboutView.classList.remove('hidden');
             break;
     }
 }
@@ -2254,6 +2290,14 @@ if (navAddSong) {
 
 if (navFavorites) {
     navFavorites.addEventListener('click', () => navigateTo('favorites'));
+}
+
+if (navAbout) {
+    navAbout.addEventListener('click', () => navigateTo('about'));
+}
+
+if (aboutBackBtn) {
+    aboutBackBtn.addEventListener('click', () => navigateTo('search'));
 }
 
 // Bug report modal elements
