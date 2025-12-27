@@ -4,11 +4,14 @@ Integration tests for the full parsing pipeline
 
 import pytest
 from bs4 import BeautifulSoup
-from src.songbook import (
+from parser import (
     StructureDetector,
     ContentExtractor,
-    ChordProGenerator
+    ChordProGenerator,
+    Song,
 )
+from validator import StructuralValidator
+from batch_process import BatchProcessor
 
 
 class TestParsingPipeline:
@@ -38,25 +41,23 @@ class TestParsingPipeline:
 class TestImports:
     """Verify package imports work correctly"""
 
-    def test_import_from_songbook(self):
-        """Should be able to import from src.songbook"""
-        from src.songbook import (
+    def test_import_parser_classes(self):
+        """Should be able to import parser classes"""
+        from parser import (
             Song,
             StructureDetector,
             ContentExtractor,
             ChordProGenerator,
-            StructuralValidator,
-            BatchProcessor,
         )
         assert Song is not None
         assert StructureDetector is not None
 
-    def test_import_from_parser_subpackage(self):
-        """Should be able to import from src.songbook.parser"""
-        from src.songbook.parser import (
-            Song,
-            StructureDetector,
-            ContentExtractor,
-            ChordProGenerator,
-        )
-        assert Song is not None
+    def test_import_validator(self):
+        """Should be able to import validator"""
+        from validator import StructuralValidator
+        assert StructuralValidator is not None
+
+    def test_import_batch_processor(self):
+        """Should be able to import batch processor"""
+        from batch_process import BatchProcessor
+        assert BatchProcessor is not None
