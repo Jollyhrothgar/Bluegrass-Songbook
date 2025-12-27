@@ -4,7 +4,7 @@ Tests for structure detection
 
 import pytest
 from bs4 import BeautifulSoup
-from src.songbook import StructureDetector
+from parser import StructureDetector
 
 
 class TestStructureDetector:
