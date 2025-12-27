@@ -1270,6 +1270,15 @@ async function openSong(songId) {
 
     const song = allSongs.find(s => s.id === songId);
     currentSong = song;
+
+    // Track song view in Google Analytics
+    if (typeof gtag === 'function' && song) {
+        gtag('event', 'page_view', {
+            page_title: `${song.title} - ${song.artist || 'Unknown'}`,
+            page_location: `${window.location.origin}/song/${songId}`,
+            page_path: `/song/${songId}`
+        });
+    }
     updateFavoriteButton();
     updateListPickerButton();
 
@@ -2102,9 +2111,21 @@ function escapeRegex(string) {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+// Track search in GA (debounced to avoid excessive events)
+let searchTrackingTimeout = null;
+function trackSearch(query) {
+    if (searchTrackingTimeout) clearTimeout(searchTrackingTimeout);
+    searchTrackingTimeout = setTimeout(() => {
+        if (typeof gtag === 'function' && query.trim()) {
+            gtag('event', 'search', { search_term: query.trim() });
+        }
+    }, 1000);
+}
+
 // Event listeners
 searchInput.addEventListener('input', (e) => {
     search(e.target.value);
+    trackSearch(e.target.value);
 });
 
 // Search hints click to populate
