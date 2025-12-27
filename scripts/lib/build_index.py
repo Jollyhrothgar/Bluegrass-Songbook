@@ -268,6 +268,8 @@ def parse_chordpro_metadata(content: str) -> dict:
         'title': None,
         'artist': None,
         'composer': None,
+        # Source tracking
+        'source': None,
         # Version metadata (x_version_* fields)
         'version_label': None,
         'version_type': None,
@@ -283,8 +285,10 @@ def parse_chordpro_metadata(content: str) -> dict:
         # Map 'writer' to 'composer' for backwards compatibility
         if key == 'writer':
             key = 'composer'
-        # Map x_version_* fields to version_* keys
-        if key == 'x_version_label':
+        # Map x_* fields to metadata keys
+        if key == 'x_source':
+            metadata['source'] = value
+        elif key == 'x_version_label':
             metadata['version_label'] = value
         elif key == 'x_version_type':
             metadata['version_type'] = value
@@ -456,6 +460,7 @@ def build_index(parsed_dirs: list[Path], output_file: Path):
             'title': metadata['title'],
             'artist': metadata['artist'],
             'composer': metadata['composer'],
+            'source': metadata['source'],  # Source collection (classic-country, manual, etc.)
             'first_line': first_line,
             'lyrics': lyrics[:500],  # First 500 chars for search
             'content': content,  # Full ChordPro content for display

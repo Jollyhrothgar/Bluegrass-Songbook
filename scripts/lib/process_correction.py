@@ -131,15 +131,37 @@ def main():
     # Add correction provenance metadata
     chordpro = add_correction_metadata(chordpro, issue_author, issue_number)
 
-    # Determine paths
+    # Determine paths - check all source directories for existing file
     script_dir = Path(__file__).parent
     repo_root = script_dir.parent.parent
-    output_path = repo_root / 'sources' / 'classic-country' / 'parsed' / f'{song_id}.pro'
-    protected_file = repo_root / 'sources' / 'classic-country' / 'protected.txt'
+    sources_dir = repo_root / 'sources'
 
-    # Check if original file exists
-    if not output_path.exists():
-        print(f"Warning: Original file {output_path} does not exist, creating new file")
+    # Search for existing file in all source directories
+    output_path = None
+    protected_file = None
+    source_name = None
+
+    for source_dir in sources_dir.iterdir():
+        if not source_dir.is_dir():
+            continue
+        parsed_dir = source_dir / 'parsed'
+        if not parsed_dir.exists():
+            continue
+        candidate = parsed_dir / f'{song_id}.pro'
+        if candidate.exists():
+            output_path = candidate
+            protected_file = source_dir / 'protected.txt'
+            source_name = source_dir.name
+            break
+
+    # Default to manual if not found (new submissions go to manual)
+    if output_path is None:
+        output_path = sources_dir / 'manual' / 'parsed' / f'{song_id}.pro'
+        protected_file = sources_dir / 'manual' / 'protected.txt'
+        source_name = 'manual'
+        print(f"Warning: Original file not found, creating in {source_name}")
+    else:
+        print(f"Found existing file in source: {source_name}")
 
     # Write the corrected content
     output_path.write_text(chordpro + '\n')

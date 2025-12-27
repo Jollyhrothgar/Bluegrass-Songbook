@@ -1906,7 +1906,10 @@ function renderSong(song, chordpro, isInitialRender = false) {
     const title = metadata.title || song?.title || 'Unknown Title';
     const artist = metadata.artist || song?.artist || '';
     const composer = metadata.writer || metadata.composer || song?.composer || '';
-    const sourceUrl = song?.id ? `https://www.classic-country-song-lyrics.com/${song.id}.html` : null;
+    // Only show source link for classic-country songs (they have external source URLs)
+    const sourceUrl = song?.source === 'classic-country' && song?.id
+        ? `https://www.classic-country-song-lyrics.com/${song.id}.html`
+        : null;
 
     // Build key dropdown options (availableKeys already defined above)
     const keyOptions = availableKeys.map(k => {
@@ -2303,11 +2306,25 @@ submitBugBtn.addEventListener('click', () => {
 function formatBugReport(feedback) {
     const song = currentSong || {};
     const songId = song.id || 'unknown';
+    const source = song.source || 'unknown';
+
     const lines = [
         `**Song ID:** ${songId}`,
         `**Artist:** ${song.artist || 'Unknown'}`,
-        `**Parsed File:** sources/classic-country/parsed/${songId}.pro`,
-        `**Raw HTML:** sources/classic-country/raw/${songId}.html`,
+        `**Source:** ${source}`,
+    ];
+
+    // Add source-specific file paths
+    if (source === 'classic-country') {
+        lines.push(`**Parsed File:** sources/classic-country/parsed/${songId}.pro`);
+        lines.push(`**Raw HTML:** sources/classic-country/raw/${songId}.html`);
+    } else if (source === 'manual') {
+        lines.push(`**Parsed File:** sources/manual/parsed/${songId}.pro`);
+    } else {
+        lines.push(`**Parsed File:** sources/${source}/parsed/${songId}.pro`);
+    }
+
+    lines.push(
         '',
         '## Issue',
         feedback,
@@ -2316,7 +2333,7 @@ function formatBugReport(feedback) {
         '```chordpro',
         currentChordpro || '(content not available)',
         '```',
-    ];
+    );
 
     return lines.join('\n');
 }

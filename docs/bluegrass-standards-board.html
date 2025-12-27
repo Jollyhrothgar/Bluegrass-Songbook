@@ -181,47 +181,48 @@
             text-align: center;
         }
 
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-            color: #1a1a1a;
-            text-decoration: none;
-            font-size: 14px;
-            padding: 8px 16px;
-            border: 1px solid #333;
-            transition: all 0.2s;
-        }
-
-        .back-link:hover {
-            color: #fff;
-            border-color: #333;
-            background-color: #333;
-        }
-
         .footer-actions {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
-            gap: 15px;
+            gap: 20px;
             margin-top: 20px;
         }
 
-        .file-complaint-btn {
+        .footer-btn {
             display: inline-block;
-            color: #721c24;
             text-decoration: none;
             font-size: 14px;
             font-weight: bold;
-            padding: 10px 20px;
-            border: 2px solid #721c24;
+            padding: 12px 24px;
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.2s;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .file-complaint-btn {
+            color: #fff;
+            background-color: #c0392b;
+            border: 2px solid #c0392b;
         }
 
         .file-complaint-btn:hover {
+            background-color: #a93226;
+            border-color: #a93226;
+        }
+
+        .back-btn {
+            color: #1a1a1a;
+            background-color: #fff;
+            border: 2px solid #333;
+        }
+
+        .back-btn:hover {
             color: #fff;
-            background-color: #721c24;
+            background-color: #333;
         }
 
         .stamp {
@@ -399,8 +400,8 @@
             <p>All complaints are taken extremely seriously and will be addressed in due time.</p>
             <p>The Board meets quarterly, or whenever someone plays Wagon Wheel at a jam.</p>
             <div class="footer-actions">
-                <a href="https://github.com/Jollyhrothgar/Bluegrass-Songbook/issues/new?title=Official%20Complaint%20to%20the%20Bluegrass%20Standards%20Board&body=%2A%2AComplainant%3A%2A%2A%20%5BYour%20Name%2FHandle%5D%0A%0A%2A%2ANature%20of%20Complaint%3A%2A%2A%0A%5BDescribe%20your%20grievance%20regarding%20genre%20classification%2C%20song%20selection%2C%20or%20other%20matters%20of%20bluegrass%20purity%5D%0A%0A%2A%2AEvidence%3A%2A%2A%0A%5BOptional%3A%20Link%20to%20offending%20song%20or%20screenshot%5D%0A%0A---%0A%2AThis%20complaint%20will%20be%20reviewed%20by%20the%20Board%20in%20due%20time.%2A&labels=standards-board-complaint" class="file-complaint-btn" target="_blank" rel="noopener">File an Official Complaint</a>
-                <a href="index.html" class="back-link">&larr; Return to the Scene of the Crime</a>
+                <a href="https://github.com/Jollyhrothgar/Bluegrass-Songbook/issues/new?title=Official%20Complaint%20to%20the%20Bluegrass%20Standards%20Board&body=%2A%2AComplainant%3A%2A%2A%20%5BYour%20Name%2FHandle%5D%0A%0A%2A%2ANature%20of%20Complaint%3A%2A%2A%0A%5BDescribe%20your%20grievance%20regarding%20genre%20classification%2C%20song%20selection%2C%20or%20other%20matters%20of%20bluegrass%20purity%5D%0A%0A%2A%2AEvidence%3A%2A%2A%0A%5BOptional%3A%20Link%20to%20offending%20song%20or%20screenshot%5D%0A%0A---%0A%2AThis%20complaint%20will%20be%20reviewed%20by%20the%20Board%20in%20due%20time.%2A&labels=standards-board-complaint" class="footer-btn file-complaint-btn" target="_blank" rel="noopener">File a Complaint</a>
+                <a href="https://bluegrassbook.com/#song/wagonwheel" class="footer-btn back-btn">Back to Application</a>
             </div>
         </div>
     </div>
