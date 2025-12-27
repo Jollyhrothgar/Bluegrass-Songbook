@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluegrass Standards Board - Official Complaints</title>
+    <link rel="icon" type="image/png" href="images/banjo.png">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f5f5f5;
+            color: #1a1a1a;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            font-size: 16px;
+        }
+
+        .document {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #333;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .seal {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0 0 5px 0;
+            color: #1a1a1a;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #444;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .established {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .preamble {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 3px solid #333;
+            background-color: #f9f9f9;
+        }
+
+        .cases-container {
+            /* No scroll - all cases visible */
+        }
+
+        .case {
+            border: 1px solid #333;
+            margin-bottom: 25px;
+            background-color: #ffffff;
+        }
+
+        .case-header {
+            background-color: #e8e8e8;
+            padding: 12px 15px;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .case-number {
+            font-weight: bold;
+            color: #1a1a1a;
+            font-size: 16px;
+        }
+
+        .case-status {
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .status-review {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #856404;
+        }
+
+        .status-logged {
+            background-color: #cce5ff;
+            color: #004085;
+            border: 1px solid #004085;
+        }
+
+        .status-denied {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #721c24;
+        }
+
+        .case-body {
+            padding: 20px;
+        }
+
+        .complainant {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .complainant strong {
+            color: #1a1a1a;
+        }
+
+        .evidence {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .evidence img {
+            max-width: 100%;
+            width: 500px;
+            border: 1px solid #333;
+            border-radius: 4px;
+        }
+
+        .complaint-text {
+            font-style: italic;
+            color: #1a1a1a;
+            padding: 12px;
+            background-color: #f0f0f0;
+            border-left: 3px solid #333;
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 13px;
+            color: #444;
+            text-align: center;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 8px 16px;
+            border: 1px solid #333;
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            color: #fff;
+            border-color: #333;
+            background-color: #333;
+        }
+
+        .stamp {
+            position: absolute;
+            transform: rotate(-15deg);
+            font-size: 14px;
+            color: rgba(180, 0, 0, 0.6);
+            border: 2px solid rgba(180, 0, 0, 0.6);
+            padding: 5px 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            pointer-events: none;
+        }
+
+        @media (max-width: 600px) {
+            .document {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+
+            .evidence img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="document">
+        <div class="header">
+            <div class="seal">&#9878;</div>
+            <h1>The Bluegrass Standards Board</h1>
+            <div class="subtitle">Department of Genre Compliance</div>
+            <div class="established">Est. 1945 - Ensuring Purity in Perpetuity</div>
+        </div>
+
+        <div class="preamble">
+            The following complaints have been officially filed with the Board regarding
+            the contents of BluegrassBook.com. Each case is being reviewed with the
+            utmost seriousness by our panel of genre experts, purists, and people who
+            are very concerned about what you call bluegrass.
+        </div>
+
+        <div class="cases-container">
+            <div class="case">
+                <div class="case-header">
+                    <span class="case-number">CASE NO. BSB-2025-001</span>
+                    <span class="case-status status-review">Under Review</span>
+                </div>
+                <div class="case-body">
+                    <div class="complainant">
+                        <strong>Complainant:</strong> Known-Ad9610<br>
+                        <strong>Filed:</strong> December 2025<br>
+                        <strong>Venue:</strong> r/bluegrass
+                    </div>
+                    <div class="evidence">
+                        <img src="images/hatemail/hate_1.png" alt="Exhibit A">
+                    </div>
+                    <div class="complaint-text">
+                        "Tons of non bluegrass songs"
+                    </div>
+                </div>
+            </div>
+
+            <div class="case">
+                <div class="case-header">
+                    <span class="case-number">CASE NO. BSB-2025-002</span>
+                    <span class="case-status status-logged">Feature Request Logged</span>
+                </div>
+                <div class="case-body">
+                    <div class="complainant">
+                        <strong>Complainant:</strong> ChicagoNormalGuy<br>
+                        <strong>Filed:</strong> December 2025<br>
+                        <strong>Venue:</strong> r/bluegrass
+                    </div>
+                    <div class="evidence">
+                        <img src="images/hatemail/hate_2.png" alt="Exhibit B">
+                    </div>
+                    <div class="complaint-text">
+                        "You didn't want to add a bluegrass button to a website called 'Bluegrassbook.com'?"
+                    </div>
+                </div>
+            </div>
+
+            <div class="case">
+                <div class="case-header">
+                    <span class="case-number">CASE NO. BSB-2025-003</span>
+                    <span class="case-status status-denied">Domain Transfer Denied</span>
+                </div>
+                <div class="case-body">
+                    <div class="complainant">
+                        <strong>Complainant:</strong> Known-Ad9610<br>
+                        <strong>Filed:</strong> December 2025<br>
+                        <strong>Venue:</strong> r/bluegrass
+                    </div>
+                    <div class="evidence">
+                        <img src="images/hatemail/hate_3.png" alt="Exhibit C">
+                    </div>
+                    <div class="complaint-text">
+                        "Call it Songbook.com if you are not even sure what Bluegrass is."
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>All complaints are taken extremely seriously and will be addressed in due time.</p>
+            <p>The Board meets quarterly, or whenever someone plays Wagon Wheel at a jam.</p>
+            <a href="index.html" class="back-link">&larr; Return to the Scene of the Crime</a>
+        </div>
+    </div>
+</body>
+</html>
