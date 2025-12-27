@@ -2,8 +2,15 @@
 Pytest configuration and shared fixtures
 """
 
-import pytest
+import sys
 from pathlib import Path
+
+import pytest
+
+# Add source directories to Python path for imports
+REPO_ROOT = Path(__file__).parent.parent
+sys.path.insert(0, str(REPO_ROOT / "sources" / "classic-country" / "src"))
+sys.path.insert(0, str(REPO_ROOT / "scripts" / "lib"))
 
 
 @pytest.fixture
