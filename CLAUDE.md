@@ -81,7 +81,8 @@ Bluegrass-Songbook/
 │   └── migrations/          # SQL migrations (version-controlled)
 │
 ├── .claude/skills/          # Claude Code skills
-│   └── chordpro/SKILL.md    # ChordPro syntax reference
+│   ├── chordpro/SKILL.md    # ChordPro syntax reference
+│   └── github-project/SKILL.md  # GitHub project management
 │
 ├── ROADMAP.md               # Product vision & phases
 └── tests/                   # pytest test suite
@@ -95,6 +96,7 @@ Bluegrass-Songbook/
 | **Parser** | `sources/classic-country/src/` | `sources/classic-country/src/CLAUDE.md` |
 | **Build pipeline** | `scripts/lib/` | `scripts/lib/CLAUDE.md` |
 | **ChordPro syntax** | `.claude/skills/chordpro/` | `SKILL.md` (auto-invoked) |
+| **GitHub project** | `.claude/skills/github-project/` | `SKILL.md` (milestones, issues, labels) |
 | **Backend (Supabase)** | `supabase/`, `docs/js/supabase-auth.js` | - |
 
 ## Development Workflows
@@ -159,9 +161,13 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 ## GitHub
 
+**Milestones**: Run `gh api repos/:owner/:repo/milestones --jq '.[] | "\(.title): \(.open_issues) open"'`
+
 **Labels**: Run `gh label list` to see available labels and descriptions.
 
-**Workflows**:
+**See**: `.claude/skills/github-project/SKILL.md` for issue/milestone management patterns.
+
+**Automated Workflows**:
 
 | Workflow | Trigger | Action |
 |----------|---------|--------|
@@ -170,13 +176,11 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 ## Current State
 
-- **17,053 songs** from classic-country-song-lyrics.com (exact duplicates removed)
-- **Search**: keyword, chord (Nashville numbers), progression
-- **Features**: transposition, favorites, song editor, dark mode
-- **Authentication**: Google OAuth via Supabase
-- **User lists**: Create/manage multiple song lists (synced to cloud)
-- **Song versions**: Infrastructure for multiple versions with voting (UI ready, awaiting content)
-- **Next**: playback engine, fiddle tunes (see ROADMAP.md)
+- **17,053 songs** with chord search, transposition, favorites, dark mode
+- **User accounts**: Google OAuth via Supabase, cloud-synced lists
+- **Song versions**: Multiple arrangements with voting (infrastructure ready)
+
+**What's next**: See GitHub milestones (`gh issue list --milestone "Milestone Name"`)
 
 ## File Navigation
 
@@ -187,6 +191,6 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 | Understand ChordPro syntax | `.claude/skills/chordpro/SKILL.md` |
 | Work with auth/user data | `docs/js/supabase-auth.js` |
 | Add a database migration | `supabase/migrations/` |
-| See product roadmap | `ROADMAP.md` |
+| Manage issues/milestones | `.claude/skills/github-project/SKILL.md` |
+| See product vision | `ROADMAP.md` |
 | Run tests | `uv run pytest` |
-| Debug parser output | `./sources/classic-country/scripts/server debug_viewer` |

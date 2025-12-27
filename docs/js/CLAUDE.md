@@ -35,7 +35,8 @@ let currentChordpro = null;     // Raw ChordPro content
 let showingFavorites = false;   // Favorites filter active
 let nashvilleMode = false;      // Show Nashville numbers
 let currentDetectedKey = null;  // Current key (for transposition)
-let showChords = true;          // Toggle chord display
+let chordDisplayMode = 'all';   // 'all' | 'first' | 'none'
+let currentFontSize = 16;       // Font size in pixels
 
 // User data
 let favorites = new Set();      // Song IDs (localStorage or synced)
@@ -56,6 +57,7 @@ let userLists = [];             // Custom user lists (via supabase-auth.js)
 | `toNashville(chord, key)` | Convert chord to Nashville number |
 | `detectKey(chords)` | Auto-detect key from chord list |
 | `showVersionPicker(groupId)` | Display version picker modal with voting |
+| `openPrintView()` | Open print-optimized view in new window |
 
 ### Search Features
 
@@ -96,6 +98,25 @@ Chord transposition applied
 - Key selector dropdown triggers re-render
 - `transposeChord()` handles sharps/flats correctly
 - `getSemitonesBetweenKeys()` calculates interval
+
+### Song View Controls
+
+**Export actions** (in song-actions bar):
+- Print button → `openPrintView()` (new window)
+- Copy dropdown → Copy ChordPro / Copy as Text
+- Download dropdown → Download .pro / Download .txt
+
+**Render options** (in song view):
+- Key selector → transpose and re-render
+- Font size +/- → adjust `currentFontSize`
+- Chord mode dropdown → 'all' | 'first' | 'none'
+- Compact checkbox → reduce whitespace
+- Nashville checkbox → show Nashville numbers
+
+**Print view** has its own controls:
+- Same options as song view
+- 2-column toggle for print layout
+- Labels toggle for section headers
 
 ### Editor (Add Song / Edit Song)
 
