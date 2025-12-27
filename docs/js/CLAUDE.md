@@ -10,7 +10,7 @@ docs/
 ├── js/search.js        # Main application logic
 ├── js/supabase-auth.js # Auth, user lists, voting
 ├── css/style.css       # Dark/light themes, responsive layout
-└── data/index.json     # Song index (built by scripts/lib/build_index.py)
+└── data/index.jsonl     # Song index (built by scripts/lib/build_index.py)
 ```
 
 ## Quick Start
@@ -25,8 +25,7 @@ docs/
 
 ```javascript
 // Core state
-let songIndex = null;           // Full index from data/index.json
-let allSongs = [];              // Array of song objects
+let allSongs = [];              // Array of song objects (loaded from index.jsonl)
 let songGroups = {};            // Map of group_id → [songs] for versions
 let currentSong = null;         // Currently viewed song
 let currentChordpro = null;     // Raw ChordPro content
@@ -47,7 +46,7 @@ let userLists = [];             // Custom user lists (via supabase-auth.js)
 
 | Function | Purpose |
 |----------|---------|
-| `loadIndex()` | Fetch and parse `data/index.json`, build songGroups |
+| `loadIndex()` | Fetch and parse `data/index.jsonl`, build songGroups |
 | `search(query)` | Filter songs by query, chords, progression |
 | `renderResults(songs)` | Display search results list (with version badges) |
 | `openSong(songId)` | Load and display a song |
@@ -167,7 +166,7 @@ renderSong(currentSong, currentChordpro);  // Re-render with new state
 
 ## Data Format
 
-Songs in `index.json`:
+Songs in `index.jsonl`:
 ```json
 {
   "id": "yourcheatingheartlyricschords",
@@ -198,7 +197,7 @@ Songs in `index.json`:
 ## Dependencies
 
 - **Supabase JS** - CDN loaded for auth and database
-- Fetches `data/index.json` at startup
+- Fetches `data/index.jsonl` at startup
 - Uses GitHub API for issue submission (no auth required)
 
 ## supabase-auth.js

@@ -503,10 +503,11 @@ def build_index(parsed_dirs: list[Path], output_file: Path):
     songs = unique_songs
     print(f"Indexed {len(songs)} songs ({duplicates_removed} exact duplicates removed)")
 
-    # Write index
+    # Write index as JSONL (one song per line for better git diffs)
     output_file.parent.mkdir(parents=True, exist_ok=True)
     with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump({'songs': songs}, f, ensure_ascii=False)
+        for song in songs:
+            f.write(json.dumps(song, ensure_ascii=False) + '\n')
 
     print(f"Written to {output_file}")
     print(f"Size: {output_file.stat().st_size / 1024 / 1024:.1f} MB")
@@ -518,7 +519,7 @@ def main():
         Path('sources/classic-country/parsed'),
         Path('sources/manual/parsed'),
     ]
-    output_file = Path('docs/data/index.json')
+    output_file = Path('docs/data/index.jsonl')
 
     build_index(parsed_dirs, output_file)
 

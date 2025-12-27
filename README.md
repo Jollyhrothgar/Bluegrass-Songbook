@@ -76,7 +76,7 @@ uv run pytest                       # Run tests
 ├── docs/                           # Frontend (GitHub Pages)
 │   ├── js/search.js               # All frontend logic
 │   ├── js/supabase-auth.js        # Auth & cloud sync
-│   └── data/index.json            # Search index
+│   └── data/index.jsonl            # Search index
 ├── sources/
 │   ├── classic-country/parsed/    # ~17,000 parsed songs
 │   └── manual/parsed/             # User-contributed songs

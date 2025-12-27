@@ -60,7 +60,7 @@ Bluegrass-Songbook/
 │   ├── index.html           # Search UI + song editor
 │   ├── js/search.js         # All frontend logic
 │   ├── css/style.css        # Dark/light theme styles
-│   └── data/index.json      # Song index (built from .pro files)
+│   └── data/index.jsonl      # Song index (built from .pro files)
 │
 ├── sources/                 # Song collections (each self-contained)
 │   ├── classic-country/     # ~17,000 parsed songs
@@ -124,7 +124,7 @@ Bluegrass-Songbook/
 ### Rebuilding the Search Index
 
 ```bash
-./scripts/bootstrap --quick   # Regenerates docs/data/index.json
+./scripts/bootstrap --quick   # Regenerates docs/data/index.jsonl
 ```
 
 ## Format: ChordPro + Extensions

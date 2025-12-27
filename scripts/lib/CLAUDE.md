@@ -7,7 +7,7 @@ Python utilities for building the search index and managing songs.
 ```
 Stage 1: Parse       Stage 2: Enrich         Stage 3: Index
 ─────────────────────────────────────────────────────────────
-HTML → raw .pro  →  enriched .pro       →   index.json
+HTML → raw .pro  →  enriched .pro       →   index.jsonl
                     - Add provenance
                     - Normalize chords
 ```
@@ -17,7 +17,7 @@ HTML → raw .pro  →  enriched .pro       →   index.json
 ```
 scripts/lib/
 ├── enrich_songs.py       # Enrich .pro files (provenance, chord normalization)
-├── build_index.py        # Build docs/data/index.json from .pro files
+├── build_index.py        # Build docs/data/index.jsonl from .pro files
 ├── add_song.py           # Add a song to manual/parsed/
 ├── process_submission.py # GitHub Action: process song-submission issues
 ├── process_correction.py # GitHub Action: process song-correction issues
@@ -93,7 +93,7 @@ Files listed in `sources/{source}/protected.txt` are skipped. These are human-co
 
 ## build_index.py
 
-Generates `docs/data/index.json` from all `.pro` files.
+Generates `docs/data/index.jsonl` from all `.pro` files.
 
 ### What It Does
 

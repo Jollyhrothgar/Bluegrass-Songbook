@@ -1,6 +1,5 @@
 // Bluegrass Songbook Search
 
-let songIndex = null;
 let allSongs = [];
 let songGroups = {};  // Map of group_id -> array of songs
 let currentSong = null;
@@ -862,9 +861,9 @@ async function loadIndex() {
     resultsDiv.innerHTML = '<div class="loading">Loading songbook...</div>';
 
     try {
-        const response = await fetch('data/index.json');
-        songIndex = await response.json();
-        allSongs = songIndex.songs;
+        const response = await fetch('data/index.jsonl');
+        const text = await response.text();
+        allSongs = text.trim().split('\n').map(line => JSON.parse(line));
 
         // Build song groups for version detection
         songGroups = {};
@@ -877,6 +876,13 @@ async function loadIndex() {
                 songGroups[groupId].push(song);
             }
         });
+
+        // Update subtitle with distinct song count
+        const distinctTitles = new Set(allSongs.map(s => s.title?.toLowerCase())).size;
+        const subtitle = document.getElementById('subtitle');
+        if (subtitle) {
+            subtitle.textContent = `${distinctTitles.toLocaleString()} songs with chords`;
+        }
 
         resultsDiv.innerHTML = '';
         searchStats.textContent = `${allSongs.length.toLocaleString()} songs loaded`;
