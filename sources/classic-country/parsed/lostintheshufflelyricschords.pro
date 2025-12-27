@@ -1,6 +1,9 @@
 {meta: title Lost In The Shuffle}
 {meta: artist Stonewall Jackson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file lostintheshufflelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I knew that you were popular with [C]all your pretty charms
@@ -29,3 +32,6 @@ You [D7]dealt the hand that put me on the [G]shelf[D7]
 Yes I [G]got lost in the shuffle [C]of your affections
 You [D7]led me on and then you left me for somebody [G]else
 {end_of_verse}
+
+
+

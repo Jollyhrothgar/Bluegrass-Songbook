@@ -1,6 +1,9 @@
 {meta: title I'm Losing You All Over Again}
 {meta: artist Keith Whitley}
 {meta: composer Bill Caswell and Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file imlosingyoualloveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everywhere I turn someone [Am]reminds me of you
@@ -48,3 +51,9 @@ I'm [Dm]losing you [G7]all over [C]again
 [Dm]Just when I think my heart will [G7]mend
 I'm [Dm]losing you all [G7]over [Dm]over and [G7]over [C]again
 {end_of_verse}
+
+
+
+
+
+

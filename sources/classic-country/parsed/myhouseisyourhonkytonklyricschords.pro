@@ -1,6 +1,9 @@
 {meta: title My House Is Your Honky Tonk}
 {meta: artist Lefty Frizzell}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file myhouseisyourhonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're gonna slip around with my [D7]woman
@@ -43,3 +46,8 @@ And [C]you don't even care if you get [A7]caught
 [F]My house is [G7]your honky [C]tonk
 [F]My house is [G7]your honky [C]tonk
 {end_of_verse}
+
+
+
+
+

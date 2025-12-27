@@ -1,6 +1,9 @@
 {meta: title To All The Girls I've Loved Before}
 {meta: artist Willie Nelson}
 {meta: composer Albert Hammond and Hal David}
+{meta: x_source classic-country}
+{meta: x_source_file toallthegirlsivelovedbeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To all the girls I've loved before
@@ -57,3 +60,10 @@ Who traveled in and [Dm]out our door
 We’re glad they came along we [G7]dedicate this [Dm]song
 To all the girls we've [D#7]loved be[C]fore 
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Who Do You Know In California}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file whodoyouknowincalifornialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Living with me isn't always easy
@@ -68,3 +71,14 @@ But early this morning I could [G]hear her
 Some people got a lot nerve
 [A7]Some people just don't [D7]care
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

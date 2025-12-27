@@ -1,6 +1,9 @@
 {meta: title A House That Has Everything}
 {meta: artist Elvis Presley}
 {meta: composer Sid Tepper and Roy C. Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file ahousethathaseverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can see you now living like a [Am]queen 
@@ -30,3 +33,6 @@ Than [C]a house that has [G7]everything  everything but [C]love
 {start_of_verse: Verse 3}
 Than [C]a house that has [G7]everything  everything but [C]love
 {end_of_verse}
+
+
+

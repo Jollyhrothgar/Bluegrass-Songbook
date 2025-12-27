@@ -1,6 +1,9 @@
 {meta: title In A Letter}
 {meta: artist Eddy Raven}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file inaletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I tore my letter up I couldn't even start
@@ -69,3 +72,12 @@ I sent 'em off in a [G7]letter to [C]you
 I sent 'em off in a [G7]letter to [C]you 
 I sent 'em off in a [G7]letter to [C]you 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

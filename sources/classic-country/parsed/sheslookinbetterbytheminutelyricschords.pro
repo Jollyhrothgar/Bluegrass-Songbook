@@ -1,6 +1,9 @@
 {meta: title She's Lookin' Better By The Minute}
 {meta: artist Ernest Tubb}
 {meta: composer Jimmie Helms and Grant Townsley}
+{meta: x_source classic-country}
+{meta: x_source_file sheslookinbetterbytheminutelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's looking better by the [C]minute
@@ -64,3 +67,11 @@ I could take a six-pack home
 {start_of_verse: Verse 7}
 [D7]To go right to a poor boy's [G]head
 {end_of_verse}
+
+
+
+
+
+
+
+

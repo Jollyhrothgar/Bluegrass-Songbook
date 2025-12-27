@@ -1,6 +1,9 @@
 {meta: title Ages And Ages Ago}
 {meta: artist Darrell McCall}
 {meta: composer Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file agesandagesagolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Long long ago we fell in love [G7]that's how it [C]started
@@ -29,3 +32,6 @@
 [C]I treasure memories of the love that I let [G]go
 [D7]It happened ages and ages [G]ago
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Goin’ Home}
 {meta: artist Vernon Oxford}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file goinhomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m goin’ home  I’ve been gone so doggone long
@@ -28,3 +31,6 @@ Many will ask me where I’ve [G7]been
 I’m goin’ home  I’ve got holes in both my shoes
 And a bad case of blues I’m goin’ [C]home
 {end_of_verse}
+
+
+

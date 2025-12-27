@@ -1,5 +1,8 @@
 {meta: title Mama Say A Prayer}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file mamasayaprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The bright lights of this city are a [G7]pretty sight to see
@@ -28,3 +31,6 @@ The [D7]goodnight kisses I get now are [G7]cruel and so demanding
 So [C]mama when you pray tonight and [C7]while you're on your [F]knees
 Mama say a [C]special [G7]prayer for [C]me
 {end_of_verse}
+
+
+

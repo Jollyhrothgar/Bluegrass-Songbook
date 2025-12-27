@@ -1,6 +1,9 @@
 {meta: title To Help You Love Again}
 {meta: artist David Allan Coe}
 {meta: composer Shel Silverstein and David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file tohelpyouloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you need [G7]someone to [Am]listen to [F]
@@ -36,3 +39,7 @@ The [G7]feeling words I [C]sing to you [F]
 There's [G7]nothing I would [C]rather do[F] 
 To [G7]help you love [C]again
 {end_of_verse}
+
+
+
+

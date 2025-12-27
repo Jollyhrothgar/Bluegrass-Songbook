@@ -1,6 +1,9 @@
 {meta: title You Just Stood There}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Douglas Glenn Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file youjuststoodtherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now you just stood there like a cow in clover
@@ -51,3 +54,10 @@ Like the [D7]cat that swallowed [G7]the canary
 You just stood there and you wouldn't tell
 You just stood there and [G7]watched her break my [C]heart
 {end_of_verse}
+
+
+
+
+
+
+

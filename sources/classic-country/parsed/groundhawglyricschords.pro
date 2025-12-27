@@ -1,6 +1,9 @@
 {meta: title Ground Hawg}
 {meta: artist The Everly Brothers}
 {meta: composer Ike Everly}
+{meta: x_source classic-country}
+{meta: x_source_file groundhawglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Whet up your knife and whistle up the dog
@@ -43,3 +46,8 @@ Meat in the cupboard and hide on the churn
 [G]That ain't ground hawg I'll be [Em]durned
 [F]Ground [G]hawg
 {end_of_verse}
+
+
+
+
+

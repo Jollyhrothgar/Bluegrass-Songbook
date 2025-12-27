@@ -1,6 +1,9 @@
 {meta: title Lead Me Home}
 {meta: artist Jamey Johnson}
 {meta: composer Randy Houser and Craig Monday}
+{meta: x_source classic-country}
+{meta: x_source_file leadmehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have seen my last tomorrow
@@ -37,3 +40,7 @@ I am [F]reaching over [C]Jordon (over Jordon)
 Take my hand  [G7]Lord lead me [C]home
 Take my hand  [G7]Lord lead me [C]home
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Big Man In A Big House}
 {meta: artist Leroy Van Dyke}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file bigmaninabighouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Big Man In A Big House
@@ -55,3 +58,11 @@ With a [F]big high fence all [C]around
 A [F]big high fence all [C]around
 With [F]acres and acres of [C]ground
 {end_of_verse}
+
+
+
+
+
+
+
+

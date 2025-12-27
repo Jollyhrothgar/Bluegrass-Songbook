@@ -1,6 +1,9 @@
 {meta: title This Circus That You Call A Rodeo}
 {meta: artist Gene Watson}
 {meta: composer Eddy G. Futch, Monty H. Holmes}
+{meta: x_source classic-country}
+{meta: x_source_file thiscircusthatyoucallarodeolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You pulled up in that limousine 
@@ -66,3 +69,11 @@ In this [G7]circus that you call a [C]rodeo
 Ain't [F]there any letting go 
 In this [G7]circus that you call a [C]rodeo
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Imitation Of Love}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file imitationoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They're making cheap imitations of [C]everything
@@ -42,3 +45,8 @@ You were only [D7]foolin' you never [G]meant it
 Imitation of [C]love I'm tired of li[G]vin'
 You were only [D7]givin' an imitation of [G]love
 {end_of_verse}
+
+
+
+
+

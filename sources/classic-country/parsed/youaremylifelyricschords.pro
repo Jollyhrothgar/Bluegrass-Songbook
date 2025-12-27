@@ -1,6 +1,9 @@
 {meta: title You Are My Life}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Louis Blackburn}
+{meta: x_source classic-country}
+{meta: x_source_file youaremylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 {comment: C}
@@ -28,3 +31,6 @@ You are my [G7]life but you don't even know I [C]live
 [G7]I'll always [C]love you my darling  though [C7]it's not my [F]will
 You are my [G7]life but you don't even know I [C]live
 {end_of_verse}
+
+
+

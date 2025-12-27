@@ -1,5 +1,8 @@
 {meta: title All Jokes Aside}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file alljokesasidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You think this band on my left hand
@@ -35,3 +38,6 @@ For the rest of my [D7]life always be my [G]bride
 No I ain't kiddin' [C]around till they put me in the [G]ground
 I'll love you for all [D7]time and I'm serious tonight all jokes [G]aside
 {end_of_verse}
+
+
+

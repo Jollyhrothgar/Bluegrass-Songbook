@@ -1,6 +1,9 @@
 {meta: title That Old Texas Two Step}
 {meta: artist Charlie Walker}
 {meta: composer Harlan Howard and Ronald R. Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file thatoldtexastwosteplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sign said country music and the [D7]parking lot was full
@@ -48,3 +51,9 @@ And that [G7]gal had Texas two stepped out on [C]me
 But [F]somewhere about dawn I could [C]see she was gone
 And that [G7]gal had Texas two stepped out on [C]me
 {end_of_verse}
+
+
+
+
+
+

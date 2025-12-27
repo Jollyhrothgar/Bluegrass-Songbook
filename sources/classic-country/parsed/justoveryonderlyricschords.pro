@@ -1,5 +1,8 @@
 {meta: title Just Over Yonder}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file justoveryonderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just over yonder beyond the [C]river
@@ -42,3 +45,8 @@ No lonely days will there ever [G]come
 There’ll be no crying there’ll be no [C]dieing
 Oh what [G]rejoicing [D7]when we get [G]home
 {end_of_verse}
+
+
+
+
+

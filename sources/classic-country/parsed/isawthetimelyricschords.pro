@@ -1,6 +1,9 @@
 {meta: title I Saw The Time}
 {meta: artist Alabama}
 {meta: composer Randy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file isawthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw the time when every baby that was born
@@ -75,3 +78,12 @@ Oh I saw the [F]time
 Dream after [Em]dream scene after [F]scene
 Time after [Em]time oh [Dm]I saw the [C]time
 {end_of_verse}
+
+
+
+
+
+
+
+
+

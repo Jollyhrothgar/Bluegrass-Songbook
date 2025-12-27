@@ -1,6 +1,9 @@
 {meta: title Under The X In Texas}
 {meta: artist Red Steagall}
 {meta: composer Johnny Gimble}
+{meta: x_source classic-country}
+{meta: x_source_file underthexintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm sitting with a map  laid [A7]out on my [D7]lap
@@ -37,3 +40,7 @@
 [D7]But why settle for less when you know what’s best
 [F]Under the X in [G7]Texas is the only place for [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If Teardrops Were Pennies}
 {meta: artist Carl Smith}
 {meta: composer Carl Butler}
+{meta: x_source classic-country}
+{meta: x_source_file ifteardropswerepennieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If teardrops were pennies and [F]heartaches were [C]gold
@@ -29,3 +32,6 @@ I'd have all the treasures my pockets would [G7]hold
 I'd [C]be oh  so wealthy with [F]treasures [C]untold
 If teardrops were pennies and [G7]heartaches were [C]gold
 {end_of_verse}
+
+
+

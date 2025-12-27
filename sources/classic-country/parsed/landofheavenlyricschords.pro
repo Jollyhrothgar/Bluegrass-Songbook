@@ -1,6 +1,9 @@
 {meta: title Land Of Heaven}
 {meta: artist Wilburn Brothers}
 {meta: composer Jodi Baneino and Eillen Maultsby}
+{meta: x_source classic-country}
+{meta: x_source_file landofheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The land of [F]heaven sweet land of [C]heaven
@@ -36,3 +39,7 @@ You'll find [G7]heaven in your heart when you [C]walk with the Lord
 And you [F]love livin' in the land of [C]heaven
 Where you [G7]live for Jesus and His [C]word
 {end_of_verse}
+
+
+
+

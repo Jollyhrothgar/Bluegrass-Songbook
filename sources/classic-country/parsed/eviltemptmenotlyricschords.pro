@@ -1,6 +1,9 @@
 {meta: title Evil Tempt Me Not}
 {meta: artist Eddy Arnold}
 {meta: composer Dale Parker}
+{meta: x_source classic-country}
+{meta: x_source_file eviltemptmenotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though the tears at times may start
@@ -35,3 +38,6 @@ Blessed are they who seek in prayer
 [C7]Ever trus[F]ting in His care
 Tempt me [C]not  [G7]evil tempt me [C]not
 {end_of_verse}
+
+
+

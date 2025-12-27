@@ -1,6 +1,9 @@
 {meta: title Walkin' In}
 {meta: artist Tracy Byrd}
 {meta: composer Byron Hill and Zack Turner}
+{meta: x_source classic-country}
+{meta: x_source_file walkininlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've done my [G7]share of walkin' [C]out 
@@ -48,3 +51,9 @@ There'll be no more [C]walkin' out [G7]I'm walkin' [C]in
 {start_of_verse: Verse 5}
 [F]There'll be no more [C]walkin' out [G7]I'm walkin' [C]in
 {end_of_verse}
+
+
+
+
+
+

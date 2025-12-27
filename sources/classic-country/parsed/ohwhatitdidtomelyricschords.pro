@@ -1,6 +1,9 @@
 {meta: title Oh What It Did To Me}
 {meta: artist Tanya Tucker}
 {meta: composer Jerry Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file ohwhatitdidtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw you tonight in her arms so [D7]tight
@@ -29,3 +32,6 @@ But [G]ohhhhh what [D7]it did to [G]me
 You want me to believe it did nothing to [C]you
 But [G]ohhhh what [D7]it did to [G]me   [D7]to [G]me
 {end_of_verse}
+
+
+

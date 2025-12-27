@@ -1,6 +1,9 @@
 {meta: title Here We Go Again}
 {meta: artist George Strait}
 {meta: composer Russell Steagall and Don Lanier}
+{meta: x_source classic-country}
+{meta: x_source_file herewegoagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Here we [C]go again she's back in [F]town again
@@ -26,3 +29,6 @@ I'll play the [G7]part again one more [C]time
 {start_of_verse: Verse 4}
 I'll take her [G7]back again just one more [C]time
 {end_of_verse}
+
+
+

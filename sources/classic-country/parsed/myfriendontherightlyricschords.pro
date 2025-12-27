@@ -1,6 +1,9 @@
 {meta: title My Friend On The Right Lyrics chords}
 {meta: artist Faron Young}
 {meta: composer Red Lane and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file myfriendontherightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 My Friend On The Right
@@ -31,3 +34,7 @@ And then she [C]walked away with my [F]friend there on the [C]right
 {start_of_verse: Verse 5}
 [F]Yes she [C]walked away with my [F]friend there on the [C]right
 {end_of_verse}
+
+
+
+

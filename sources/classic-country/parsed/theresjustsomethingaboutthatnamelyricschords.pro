@@ -1,6 +1,9 @@
 {meta: title There's Just Something About That Name}
 {meta: artist The Isaacs}
 {meta: composer William J. and Gloria Gaither}
+{meta: x_source classic-country}
+{meta: x_source_file theresjustsomethingaboutthatnamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus [G7]Jesus [C]Jesus[C7] 
@@ -18,3 +21,5 @@ Let all [F]heaven and earth pro[E7]claim
 [A7]Kings and kingdoms will [D7]all pass away 
 But there's [Dm]something [G7]about that [C]name 
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Save The Last Dance For Me}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file savethelastdanceformelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can dance every dance with the guy
@@ -52,3 +55,10 @@ So [G7]darling save that last dance for [C]me
 Oh [G7]darling save the last dance for [C]me
 Mmm [G7]darling save the last dance for [C]me
 {end_of_verse}
+
+
+
+
+
+
+

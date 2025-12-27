@@ -1,6 +1,9 @@
 {meta: title Tryin' To Get Over You}
 {meta: artist Vince Gill}
 {meta: composer Jim Weatherly and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file tryintogetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You could have [F]given me a million [G7]reasons why
@@ -40,3 +43,8 @@ Cause [F]life don't mean [G7]nothing without [C]you
 {start_of_verse: Verse 5}
 [F]It'll take [G7]dyin' to get it [C]done
 {end_of_verse}
+
+
+
+
+

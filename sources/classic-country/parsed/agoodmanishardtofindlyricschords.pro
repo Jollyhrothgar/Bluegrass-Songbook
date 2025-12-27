@@ -1,6 +1,9 @@
 {meta: title A Good Man Is Hard To Find}
 {meta: artist Brenda Lee}
 {meta: composer Eddie Green}
+{meta: x_source classic-country}
+{meta: x_source_file agoodmanishardtofindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]A good [A7]man is hard to find you always [D7]get the other kind
@@ -29,3 +32,6 @@ So [F]if your man is nice you better [Gm]take my [Am]advice
 [A7]Give him plenty loving [D7]treat him right
 Cause a good man now [G7]day's is hard to [C]find
 {end_of_verse}
+
+
+

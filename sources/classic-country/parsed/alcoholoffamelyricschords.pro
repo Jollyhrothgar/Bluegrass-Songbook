@@ -1,6 +1,9 @@
 {meta: title Alcohol of Fame}
 {meta: artist Stonewall Jackson}
 {meta: composer Molly Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file alcoholoffamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I used to be a big man I [D7]owned most all this [G]town 
@@ -33,3 +36,7 @@ My [C]drinking friends [G]elected me to the [D7]Alcohol of [G]Fame
 {start_of_verse: Verse 4}
 My [C]drinking friends [G]elected me to the [D7]Alcohol of [G]Fame
 {end_of_verse}
+
+
+
+

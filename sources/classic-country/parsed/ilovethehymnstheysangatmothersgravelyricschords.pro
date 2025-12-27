@@ -1,5 +1,8 @@
 {meta: title I Love the Hymns They Sang at Mother's Grave}
 {meta: artist Carl Story}
+{meta: x_source classic-country}
+{meta: x_source_file ilovethehymnstheysangatmothersgravelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the cold wind through the [D7]pines begin to [G]blow 
@@ -32,3 +35,7 @@ To that [D7]awful sight that is so sad and [G]gray
 {start_of_verse: Verse 5}
 Oh I love the hymns they [D7]sang at mother [G]grave
 {end_of_verse}
+
+
+
+

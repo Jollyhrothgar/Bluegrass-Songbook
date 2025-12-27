@@ -1,5 +1,8 @@
 {meta: title Good Time}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file goodtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Work work all week long
@@ -131,3 +134,19 @@ It's time for a [C]good time
 Oh yea a good time I need a good time
 Yea a [F]good [C]time
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

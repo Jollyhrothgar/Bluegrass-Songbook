@@ -1,6 +1,9 @@
 {meta: title The Jukebox Played Along}
 {meta: artist Gene Watson}
 {meta: composer Ken Bell & Charles Quillen}
+{meta: x_source classic-country}
+{meta: x_source_file thejukeboxplayedalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I got off work and headed for town to have a [D7]few
@@ -36,3 +39,7 @@ I was [D7]singing the blues and the jukebox played [G]along
 [D7]There Goes My Everything they played Golden [G]Rings
 [D7]They played Haggard and Hank give me another [G]drink
 {end_of_verse}
+
+
+
+

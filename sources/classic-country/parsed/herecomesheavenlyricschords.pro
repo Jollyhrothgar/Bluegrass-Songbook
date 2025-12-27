@@ -1,6 +1,9 @@
 {meta: title Here Comes Heaven}
 {meta: artist Eddy Arnold}
 {meta: composer Bob Tubert and Joe Byers}
+{meta: x_source classic-country}
+{meta: x_source_file herecomesheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here comes heaven  all [C]satin and [D7]lace
@@ -25,3 +28,6 @@ Here comes heaven  with [C]soft golden [D7]hair
 [G]She makes my heart sing  [C]here comes heaven [G]again
 [C]Here comes [D7]heaven [G]again 
 {end_of_verse}
+
+
+

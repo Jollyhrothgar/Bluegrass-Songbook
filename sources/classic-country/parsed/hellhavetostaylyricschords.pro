@@ -1,6 +1,9 @@
 {meta: title He'll Have To Stay}
 {meta: artist Skeeter Davis}
 {meta: composer Joe Allison, Audrey Allison, Charles Grean}
+{meta: x_source classic-country}
+{meta: x_source_file hellhavetostaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am glad you've finally [F]called me on the [C]phone 
@@ -36,3 +39,7 @@ And he holds me much more tenderly than [G7]you
 Loving [C]you's not worth the [C7]price I have to [F]pay 
 Someone [C]else is in your [G7]place he'll have to [C]stay 
 {end_of_verse}
+
+
+
+

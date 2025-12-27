@@ -1,5 +1,8 @@
 {meta: title Walk All Over Georgia}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file walkallovergeorgialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve always been a gentleman never took to [G7]fightin’
@@ -47,3 +50,9 @@ Cause [F]Georgia’s done a [G7]hell of a job [F]walking all over [C]me
 You know that [F]one of these days [G7]I’m gonna walk [F]all over [C]Georgia
 Cause [F]Georgia’s done a [G7]hell of a job [F]walking all over [C]me 
 {end_of_verse}
+
+
+
+
+
+

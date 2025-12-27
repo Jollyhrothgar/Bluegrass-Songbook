@@ -1,5 +1,8 @@
 {meta: title Step Out Into The Sunshine}
 {meta: artist Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file stepoutintothesunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Step out into the sunshine so [C]lovely and [G]bright
@@ -32,3 +35,7 @@ Step out in [D7]His wonderful [G]love
 {start_of_verse: Verse 4}
 Step out in [D7]His wonderful [G]love
 {end_of_verse}
+
+
+
+

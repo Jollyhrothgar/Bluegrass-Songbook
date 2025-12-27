@@ -1,6 +1,9 @@
 {meta: title Happy Part Of Town}
 {meta: artist Wynn Stewart}
 {meta: composer Danny Dill}
+{meta: x_source classic-country}
+{meta: x_source_file happypartoftownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well which way is it can I get there from [C7]here
@@ -39,3 +42,8 @@ But I'll keep walking [C]yes I'll walk all [C7]night
 Till I find her and I make things [F]right
 I'm still [C]looking for the [G7]happy part of [C]town
 {end_of_verse}
+
+
+
+
+

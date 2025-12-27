@@ -1,6 +1,9 @@
 {meta: title Enclosed One Broken Heart}
 {meta: artist Eddy Arnold}
 {meta: composer Sadie Nordin Sallis and Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file enclosedonebrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Enclosed you'll find one broken [C]heart
@@ -31,3 +34,8 @@ And [G7]there all wrapped with [C]care
 Was my poor heart in pieces still
 And [G7]marked beyond [C]repair
 {end_of_verse}
+
+
+
+
+

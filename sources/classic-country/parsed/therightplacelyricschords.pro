@@ -1,6 +1,9 @@
 {meta: title The Right Place}
 {meta: artist The Derailers}
 {meta: composer Bill Carter-Ruth Ellsworth-Tony Villanueva}
+{meta: x_source classic-country}
+{meta: x_source_file therightplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you're looking for a life of [D7]luxury
@@ -29,3 +32,6 @@ The [D7]right place is right here in my [G]arms
 [G]For promises of love you can [D7]embrace 
 Honey you came to the right [G]place 
 {end_of_verse}
+
+
+

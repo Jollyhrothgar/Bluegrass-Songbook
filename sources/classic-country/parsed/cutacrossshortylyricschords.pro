@@ -1,6 +1,9 @@
 {meta: title Cut Across Shorty}
 {meta: artist Carl Smith}
 {meta: composer Marijohn Wilkin and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file cutacrossshortylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A country boy named Shorty and a city boy named [C]Dan
@@ -52,3 +55,9 @@
 {start_of_verse: Verse 5}
 [D7]Well it's you that I want to [G]wed
 {end_of_verse}
+
+
+
+
+
+

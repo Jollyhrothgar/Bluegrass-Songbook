@@ -1,6 +1,9 @@
 {meta: title Out Of My Mind}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Kenneth Lovelace}
+{meta: x_source classic-country}
+{meta: x_source_file outofmymindlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm sitting here drinking [G7]thinking of you
@@ -29,3 +32,6 @@ When I [F]leave this old [G7]bar I don't [C]know where I'm going
 Be[D7]cause of the bottle there's [G7]no way of knowing
 That I'm out of my [C]mind
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Do It Now}
 {meta: artist Ernest Tubb}
 {meta: composer Jimmie Dallas}
+{meta: x_source classic-country}
+{meta: x_source_file doitnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you ever gonna kiss me then do [F]it [C]now
@@ -32,3 +35,7 @@
 [C]Let's walk in the moonlight start living in [F]paradise
 [C]If you ever gonna love me [G7]then do it [C]now
 {end_of_verse}
+
+
+
+

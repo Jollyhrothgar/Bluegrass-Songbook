@@ -1,5 +1,8 @@
 {meta: title Life Rides The Train}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file liferidesthetrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Written and recorded by Porter Wagoner
@@ -32,3 +35,7 @@ But moments of happiness can make [F]time seem [C]still
 But time moves on swiftly [F]passes life [C]by
 By while life rides the train time [G7]always [C]flies
 {end_of_verse}
+
+
+
+

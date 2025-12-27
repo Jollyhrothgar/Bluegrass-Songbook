@@ -1,5 +1,8 @@
 {meta: title I'm Changing All Those Changes}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file imchangingallthosechangeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I-I-I should have reconsidered all those things I said I'd [G]do
@@ -33,3 +36,7 @@
 [C]So now I'm changing all those changes
 [D7]That I made when I left [G]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tennessee Rock'n Roll}
 {meta: artist Bobby Helms}
 {meta: composer Lonnie Coleman and Irving Reid}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseerocknrolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I went down to Tenne[C7]ssee
@@ -49,3 +52,10 @@ Come on let's [C]all do the Tennessee rock'n [C7]roll
 Come on let's [F]all do the Tennessee rock'n [C]roll
 Upon my [G7]soul the Tennessee rock'n [C]roll
 {end_of_verse}
+
+
+
+
+
+
+

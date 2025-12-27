@@ -1,6 +1,9 @@
 {meta: title Fools Rush In}
 {meta: artist Ricky Nelson}
 {meta: composer Johnny Mercer and Ruby Bloom}
+{meta: x_source classic-country}
+{meta: x_source_file foolsrushinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Fools Rush In
@@ -34,3 +37,7 @@ If [D7]there's a [Am]chance for me [A7]then I don't [D7]care
 {start_of_verse: Verse 4}
 [Em]Just open up your [Am]heart and [D7]let this [Am]fool rush [G]in
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Mr. And Mrs. Santa Claus}
 {meta: artist George Jones and Tammy Wynette}
 {meta: composer Dallas Frazier and Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file mrandmrssantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Honey the snow [C]outside is softly [G]fallin'
@@ -41,3 +44,8 @@ There [G]ain't nobody gonna keep true love from [A7]callin' us
 No they won't
 [A7]Mr. and [D7]Mrs. Santa [G]Claus
 {end_of_verse}
+
+
+
+
+

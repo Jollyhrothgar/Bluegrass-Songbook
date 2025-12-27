@@ -1,6 +1,9 @@
 {meta: title He's Not The Man I Used To Be}
 {meta: artist Ricky Van Shelton}
 {meta: composer Gary Duffey and Michael Foster}
+{meta: x_source classic-country}
+{meta: x_source_file hesnotthemaniusedtobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today I saw your best friend and I [C]asked her how you've been
@@ -28,3 +31,6 @@ Oh I [G]guess that's not the [D7]man I used to [G]be
 And I [G]guess that's not the [D7]man I used to [G]be
 Well now I know that's not the [D7]man I used to [C]be[G]
 {end_of_verse}
+
+
+

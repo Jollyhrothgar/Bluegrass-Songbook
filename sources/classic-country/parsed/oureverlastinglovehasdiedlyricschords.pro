@@ -1,6 +1,9 @@
 {meta: title Our Everlasting Love Has Died}
 {meta: artist Roy Drusky}
 {meta: composer Tom Lee and Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file oureverlastinglovehasdiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's something [G7]wrong now 
@@ -29,3 +32,6 @@ Let's don't [F]turn to [C]hate now
 There's nothing more at [G7]stake now 
 Our everlasting love has [C]died
 {end_of_verse}
+
+
+

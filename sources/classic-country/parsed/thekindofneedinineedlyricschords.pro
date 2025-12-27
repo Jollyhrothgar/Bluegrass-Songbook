@@ -1,6 +1,9 @@
 {meta: title The Kind Of Needin' I Need}
 {meta: artist Norma Jean}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file thekindofneedinineedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The boss needs me to come to [F]work in the morning he [C]told me so
@@ -43,3 +46,7 @@ That's the kinda needin' I [F]need [C]baby
 That's the kinda needin' I need
 That's the kinda needin' I [F]need [C]baby 
 {end_of_verse}
+
+
+
+

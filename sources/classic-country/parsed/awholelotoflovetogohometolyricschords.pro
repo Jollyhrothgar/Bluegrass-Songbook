@@ -1,5 +1,8 @@
 {meta: title A Whole Lot of Love To Go Home To}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file awholelotoflovetogohometolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some folks are lucky have every[C]thing 
@@ -53,3 +56,9 @@ And a [D7]whole lot of love to go [G]home to
 [C]Yes the Lord gives me every[G]thing I need
 And a [D7]whole lot of love to go [G]home to
 {end_of_verse}
+
+
+
+
+
+

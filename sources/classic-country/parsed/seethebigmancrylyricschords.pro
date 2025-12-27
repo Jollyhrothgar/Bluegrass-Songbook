@@ -1,6 +1,9 @@
 {meta: title See The Big Man Cry}
 {meta: artist Charlie Louvin}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file seethebigmancrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The other day I walked out on the [Am]street
@@ -57,3 +60,10 @@ That's what I [Am]heard him [C]say
 See the big man [Am]cry [C]momma
 He [F]looks like his [G7]heart will [C]break
 {end_of_verse}
+
+
+
+
+
+
+

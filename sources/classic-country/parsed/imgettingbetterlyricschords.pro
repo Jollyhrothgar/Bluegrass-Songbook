@@ -1,5 +1,8 @@
 {meta: title I'm Getting Better}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file imgettingbetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walked by the [D7]river
@@ -24,3 +27,5 @@
 [G]To hear your name
 [D7]I think I'll make it I’m getting [G]better
 {end_of_verse}
+
+

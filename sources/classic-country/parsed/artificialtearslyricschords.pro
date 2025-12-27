@@ -1,6 +1,9 @@
 {meta: title Artificial Tears}
 {meta: artist Rhonda Vincent}
 {meta: composer Bob Morrison and Ron Hellard}
+{meta: x_source classic-country}
+{meta: x_source_file artificialtearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't come to me with you're [F]sorry
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 5}
 [F]I've seen those [C]artificial [G7]tears [C]before
 {end_of_verse}
+
+
+
+
+
+

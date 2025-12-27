@@ -1,5 +1,8 @@
 {meta: title Five Feet High And Rising}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file fivefeethighandrisinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How high is the water mama two [C]feet high and [G]risin'
@@ -32,3 +35,6 @@
 [D7]We can't come back till the water goes down five feet high and [G]risin'
 [C]Well it's five feet high and [G]risin'
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Best Is Yet To Come}
 {meta: artist Ricky Van Shelton}
 {meta: composer Colleen Peterson, Nancy Simmonds, Cyril Rawson}
+{meta: x_source classic-country}
+{meta: x_source_file bestisyettocomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Life can't get better than [D7]this
@@ -49,3 +52,9 @@ Loving [G7]you is number one on my [C]list
 {start_of_verse: Verse 5}
 [D7]Now he's out telling [G7]everyone the best is yet to [C]come
 {end_of_verse}
+
+
+
+
+
+

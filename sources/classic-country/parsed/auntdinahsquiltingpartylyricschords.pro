@@ -1,6 +1,9 @@
 {meta: title Aunt Dinah's Quilting Party}
 {meta: artist The Country Gentlemen}
 {meta: composer Francis Kyle and John Fletcher}
+{meta: x_source classic-country}
+{meta: x_source_file auntdinahsquiltingpartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Aunt Dinah's Quilting Party
@@ -62,3 +65,11 @@ On the [F]bank the pale moon [C]shone
 And 'twas from aunt Dinah's [F]quilting party
 I was [G7]seeing Nellie [C]home
 {end_of_verse}
+
+
+
+
+
+
+
+

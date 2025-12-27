@@ -1,6 +1,9 @@
 {meta: title I Knew We Could Never Love For Long}
 {meta: artist Gene Watson}
 {meta: composer David Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file iknewwecouldneverloveforlonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Since the day I met you I've been [C]living in a [G]dream
@@ -38,3 +41,7 @@
 [C]So tell me why this empty feeling's tearing [A7]me apart
 [G]When I knew we could [C]never [D7]love for [G][C]long
 {end_of_verse}
+
+
+
+

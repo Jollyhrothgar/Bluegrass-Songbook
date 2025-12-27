@@ -1,6 +1,9 @@
 {meta: title Whenever You're Ready}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Cecil Harrelson}
+{meta: x_source classic-country}
+{meta: x_source_file wheneveryourereadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whenever you're ready just let me [A7]know
@@ -29,3 +32,6 @@ I'll pack my [D7]clothes and [G7]away we'll [C]go
 [A7]I'll pack my [D7]clothes and [G7]away we’ll [C]go
 [A7]I'll pack my [D7]clothes and [G7]away we’ll [C]go
 {end_of_verse}
+
+
+

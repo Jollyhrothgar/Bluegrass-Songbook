@@ -1,5 +1,8 @@
 {meta: title Two Step Is Easy}
 {meta: artist Michael Martin Murphey}
+{meta: x_source classic-country}
+{meta: x_source_file twostepiseasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Listen to the [F]band that's playin' [G7]darling
@@ -35,3 +38,7 @@
 [F]The two-step is easy but the first step is [C]rough
 [D7]But once you start dancin' [G7]you can't dance [C]enough
 {end_of_verse}
+
+
+
+

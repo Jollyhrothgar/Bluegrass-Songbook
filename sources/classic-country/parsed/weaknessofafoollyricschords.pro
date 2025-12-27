@@ -1,6 +1,9 @@
 {meta: title Weakness Of A Fool}
 {meta: artist Faron Young}
 {meta: composer Samuel Manning}
+{meta: x_source classic-country}
+{meta: x_source_file weaknessofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'll admit that [F]from the start [C]there was this [G7]certain [C]doubt
@@ -37,3 +40,7 @@
 [G7]If it wasn't for the weakness in this [C]fool
 [G7]If it wasn't for the weakness in this [C]fool
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'd Rather Be Gone}
 {meta: artist Hank Williams Jr.}
 {meta: composer Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file idratherbegonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I feel like a stranger in this [F]home I built for [C]you
@@ -26,3 +29,6 @@ But I'd rather be gone [G7]than in your [C]way
 {start_of_verse: Verse 4}
 I'd rather be gone [G7]than in your [C]way
 {end_of_verse}
+
+
+

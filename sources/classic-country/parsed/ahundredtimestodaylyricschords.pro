@@ -1,6 +1,9 @@
 {meta: title A Hundred Times Today}
 {meta: artist Lynn Anderson}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file ahundredtimestodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I once believed those mournful songs [G7]about when love is [C]gone
@@ -29,3 +32,6 @@ The hard part is remembering that you're no longer [C]mine
 For when I find you’re on my mind I [F]just don't let you stay
 Al[G7]ready I've forgotten you a hundred times [C]today
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Light Of A Clear Blue Morning}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file lightofaclearbluemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's been a long dark night [C]and I've been a [D7]waitin' for the [G]morning [C]
@@ -29,3 +32,6 @@ I can see the [C]light of a brand new [G]day
 I can see the [C]light of a clear blue [G]morning[C]
 Oh and [G]everything's gonna be all [C]right [D7]it's gonna be [G]okay
 {end_of_verse}
+
+
+

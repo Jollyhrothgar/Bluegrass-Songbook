@@ -1,5 +1,8 @@
 {meta: title Paper Doll}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file paperdolllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna buy a paper [G7]doll [A7]that I can call my [D7]own
@@ -35,3 +38,7 @@ A [G7]doll that other fellows cannot [C]steal
 And then those flirty flirty guys  with their [G7]flirty flirty [E7]eyes
 Will [D7]have to flirt with dollies that are [G7]real
 {end_of_verse}
+
+
+
+

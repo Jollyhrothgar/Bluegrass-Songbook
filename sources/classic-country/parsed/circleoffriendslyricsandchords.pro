@@ -1,6 +1,9 @@
 {meta: title Circle of Friends}
 {meta: artist David Ball}
 {meta: composer William C. Spencer and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file circleoffriendslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She lives in a world of [F]grace and class
@@ -45,3 +48,8 @@ But when [C]we're all alone Lord I fit right in
 [F]Old fashioned love that's the latest trend
 [C]And I'm just a square in a [G7]circle of [C]friends
 {end_of_verse}
+
+
+
+
+

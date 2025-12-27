@@ -1,5 +1,8 @@
 {meta: title Opportunity To Cry}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file opportunitytocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just watch the sunrise on the [G7]other side of [C]town
@@ -29,3 +32,6 @@
 [C]And they'll give me many [G7]opportunities to [C][F]cry
 [G7]They'll give me many opportunities [F]to [C]cry
 {end_of_verse}
+
+
+

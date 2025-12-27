@@ -1,6 +1,9 @@
 {meta: title Just Do The Best You Can}
 {meta: artist Bobby Helms}
 {meta: composer Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file justdothebestyoucanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't care what kind of stories [D7]that's been told on you
@@ -36,3 +39,7 @@ It could be in the morning I'll [G]awake and you'll be gone
 Don't be afraid of hurting me I'll [C]under[A7]stand
 [D7]Just do the best you [G]can
 {end_of_verse}
+
+
+
+

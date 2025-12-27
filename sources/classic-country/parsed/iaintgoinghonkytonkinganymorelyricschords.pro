@@ -1,6 +1,9 @@
 {meta: title I Ain't Going Honky Tonking Anymore}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file iaintgoinghonkytonkinganymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I ain't going honky tonking anymore
@@ -49,3 +52,8 @@ Perhaps someday I will find a true love
 [G]And really loves me all her life
 Then [D7]I won't go honky tonking [G]anymore
 {end_of_verse}
+
+
+
+
+

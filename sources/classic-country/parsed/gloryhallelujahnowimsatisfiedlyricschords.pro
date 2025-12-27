@@ -1,6 +1,9 @@
 {meta: title Glory Hallelujah Now I'm Satisfied}
 {meta: artist Carl Story and his Rambling Mountaineers}
 {meta: composer Carl Story and Marshall Pack}
+{meta: x_source classic-country}
+{meta: x_source_file gloryhallelujahnowimsatisfiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One day He came into my life when [C]I was out in [G]sin
@@ -43,3 +46,8 @@ He'll change you in a moment you'll [A7]never be the [D7]same
 [G]Lift your voice and sing aloud stand [C]up and testi[G]fy 
 Glory hallelujah [D7]now I'm satis[G]fied
 {end_of_verse}
+
+
+
+
+

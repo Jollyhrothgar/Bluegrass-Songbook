@@ -1,6 +1,9 @@
 {meta: title Live And Let Live}
 {meta: artist Marty Robbins}
 {meta: composer W. Walker and G. Sullivan}
+{meta: x_source classic-country}
+{meta: x_source_file liveandletlivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Stayed awake last night and [C]I walked the [G]floor
@@ -29,3 +32,6 @@ Don't leave me here [D7]to cry
 I [G]never could live  if [C]we should [G]part
 Tell me you [D7]don't mean [G]goodbye
 {end_of_verse}
+
+
+

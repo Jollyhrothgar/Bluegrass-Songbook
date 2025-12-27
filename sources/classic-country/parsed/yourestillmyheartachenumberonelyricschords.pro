@@ -1,5 +1,8 @@
 {meta: title You're Still My Heartache Number One}
 {meta: artist Leon Copas}
+{meta: x_source classic-country}
+{meta: x_source_file yourestillmyheartachenumberonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I said that I'd never  see you ever
@@ -28,3 +31,6 @@ Should I laugh cry or [D7]frown
 [C]Here I go again with a fool [G]again
 [C]You're still my [D7]heartache number [G]one
 {end_of_verse}
+
+
+

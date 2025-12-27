@@ -1,6 +1,9 @@
 {meta: title The Back Of My Hand}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Jimmy Dickens and Skip Graves}
+{meta: x_source classic-country}
+{meta: x_source_file thebackofmyhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're leaving [G7]again your [C]things are all packed
@@ -29,3 +32,6 @@ Heartbroken and crying in [A7]my arms [D7]again
 Like a [G]wave in the [G7]high tide you're [C]bound to come in
 I [G]know you like the [D7]back of my [G]hand
 {end_of_verse}
+
+
+

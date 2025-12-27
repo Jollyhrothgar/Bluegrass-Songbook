@@ -1,6 +1,9 @@
 {meta: title Am I The Only Thing You've Done Wrong}
 {meta: artist Lee Ann Womack}
 {meta: composer Billy Foster, Jason Seller, Lee Ann Womack}
+{meta: x_source classic-country}
+{meta: x_source_file amitheonlythingyouvedonewronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're the life of the party you [C]stand out in a [G]crowd
@@ -35,3 +38,7 @@
 {start_of_verse: Verse 5}
 [C]Oh am I the only [D7]thing you've done [G]wrong
 {end_of_verse}
+
+
+
+

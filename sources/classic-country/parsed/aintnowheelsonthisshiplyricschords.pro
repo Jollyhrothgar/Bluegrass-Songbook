@@ -1,6 +1,9 @@
 {meta: title Ain't No Wheels On This Ship}
 {meta: artist Patsy Cline}
 {meta: composer W.D. Chandler and W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file aintnowheelsonthisshiplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I use to have big money
@@ -84,3 +87,22 @@ Ya gotta love me more and more
 {start_of_verse: Verse 2}
 That was many moons ago
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

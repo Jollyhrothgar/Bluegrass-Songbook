@@ -1,6 +1,9 @@
 {meta: title Best Banjo Picker}
 {meta: artist Charley Pride}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file bestbanjopickerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't think too much about [G7]books and [C]schoolin'
@@ -43,3 +46,8 @@
 [C]Cause before I go to rest I'm gonna be the very [F]best
 [C]The best banjo [G7]picker in this whole [C]county
 {end_of_verse}
+
+
+
+
+

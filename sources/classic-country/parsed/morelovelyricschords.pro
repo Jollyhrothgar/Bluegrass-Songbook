@@ -1,6 +1,9 @@
 {meta: title More Love}
 {meta: artist Doug Stone}
 {meta: composer Gary Scott Burr and Doug Stone}
+{meta: x_source classic-country}
+{meta: x_source_file morelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When we [C]met I [G7]told her I'd [C]give her the [F]moon
@@ -49,3 +52,8 @@ She [F]only needed [C]more love
 I [Dm]nearly gave her [G7]enough
 She [F]only needed [G7]more [C]love
 {end_of_verse}
+
+
+
+
+

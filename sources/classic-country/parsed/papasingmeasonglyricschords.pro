@@ -1,6 +1,9 @@
 {meta: title Papa Sing Me A Song}
 {meta: artist Conway Twitty}
 {meta: composer L.E. White and Charles Haney}
+{meta: x_source classic-country}
+{meta: x_source_file papasingmeasonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every son wants to follow in the [C]footsteps of his [G]dad
@@ -33,3 +36,6 @@ But sing a song to [C]die by this [G]time
 {start_of_verse: Verse 4}
 Papa sing me a song to [C]die by this [G]time
 {end_of_verse}
+
+
+

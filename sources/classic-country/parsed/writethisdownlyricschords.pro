@@ -1,6 +1,9 @@
 {meta: title Write This Down}
 {meta: artist George Strait}
 {meta: composer Kent M. Robbins and Dana Hunt}
+{meta: x_source classic-country}
+{meta: x_source_file writethisdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I never saw the [G]end in sight fools are kind of [A7]blind
@@ -48,3 +51,9 @@ So you'll [C]remember what I forgot to [D7]say write this [G]down
 {start_of_verse: Verse 6}
 Oh I [A7]love you and I don't want you to [D7]go baby write this [G]down [C]  [G]
 {end_of_verse}
+
+
+
+
+
+

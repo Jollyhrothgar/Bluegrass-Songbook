@@ -1,6 +1,9 @@
 {meta: title Shady Streets}
 {meta: artist Gary Stewart}
 {meta: composer Billy Ray Reynolds, Dickey Betts, Dan Toler}
+{meta: x_source classic-country}
+{meta: x_source_file shadystreetslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Shadows falling  [C]on a Sunday after[G]noon [C]   [G]
@@ -36,3 +39,7 @@ And it [D7]won't be long till we'll be walking
 Shiny [G]shoes [C]shiny shoes [G]shiny shoes [C]shiny shoes 
 Baby we'll go [G]walking shady [C]streets shady [G]streets
 {end_of_verse}
+
+
+
+

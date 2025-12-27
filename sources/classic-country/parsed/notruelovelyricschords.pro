@@ -1,5 +1,8 @@
 {meta: title No True Love}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file notruelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes my mind goes on the blink
@@ -42,3 +45,8 @@ So it won’t [F]hurt when I’m alone
 I’ll have my [C]years I’ll have my [G7]tears
 But no true [C]love
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Honky Tonks and You}
 {meta: artist Cal Smith}
 {meta: composer Billy Hughes}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonksandyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I told you that I found a girl who’d [C]always treat me [G]right
@@ -22,3 +25,5 @@
 [G]I didn’t know I miss you so and [C]things we used to [G]do
 [C]Oh what I'd give if [G]I still had the [D7]honky tonks and [G]you
 {end_of_verse}
+
+

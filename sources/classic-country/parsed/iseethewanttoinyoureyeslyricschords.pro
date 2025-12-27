@@ -1,6 +1,9 @@
 {meta: title I See The Want To In Your Eyes}
 {meta: artist Conway Twitty}
 {meta: composer Wayne Carson Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file iseethewanttoinyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see the sparkling little [F]diamond on your [C]hand
@@ -32,3 +35,7 @@ You can [Em]stay or you can go and although I [F]sympathize
 {start_of_verse: Verse 5}
 [C]I see the [F]want to in your [G7]eyes
 {end_of_verse}
+
+
+
+

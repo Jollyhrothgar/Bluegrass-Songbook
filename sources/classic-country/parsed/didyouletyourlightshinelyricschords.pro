@@ -1,6 +1,9 @@
 {meta: title Did You Let Your Light Shine}
 {meta: artist Connie Smith}
 {meta: composer Barbara Miller}
+{meta: x_source classic-country}
+{meta: x_source_file didyouletyourlightshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you told that man about Jesus and his precious love
@@ -43,3 +46,8 @@ Well this little light of mine I'm a gonna let it shine
 This little light of mine I'm a gonna let it [Am]shine
 Let it [C]shine let it [G7]shine let it [C]shine
 {end_of_verse}
+
+
+
+
+

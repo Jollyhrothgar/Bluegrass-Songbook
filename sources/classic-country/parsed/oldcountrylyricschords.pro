@@ -1,6 +1,9 @@
 {meta: title Old Country}
 {meta: artist Mark Chesnutt}
 {meta: composer Bobby Harden}
+{meta: x_source classic-country}
+{meta: x_source_file oldcountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sitting sun goes down at night
@@ -43,3 +46,7 @@ He's the first one to the room
 [G7]She'd never really been [F]loved at [C]all
 [F]Not until old [G7]country came to [C]town
 {end_of_verse}
+
+
+
+

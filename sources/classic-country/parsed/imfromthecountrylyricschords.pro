@@ -1,6 +1,9 @@
 {meta: title I'm From The Country}
 {meta: artist Tracy Byrd}
 {meta: composer Marty Brown, Richard Young, Stan Webb}
+{meta: x_source classic-country}
+{meta: x_source_file imfromthecountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Way back up in the country back in the hills
@@ -40,3 +43,7 @@ Yeah we [G7]know how to work and we know how to play
 [C]We're from the country we're from the country
 We're from the country and we [G7]like it that [C]way
 {end_of_verse}
+
+
+
+

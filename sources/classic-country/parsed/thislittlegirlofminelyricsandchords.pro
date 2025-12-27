@@ -1,6 +1,9 @@
 {meta: title This Little Girl Of Mine}
 {meta: artist Faron Young}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file thislittlegirlofminelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]In a while she'll come to [G7]wake me just like [Am][C]always
@@ -28,3 +31,6 @@
 [Dm]Lord how I love [G7]this little girl [C]of [Am]mine
 [Dm]How I love [G7]this little girl of [C]mine
 {end_of_verse}
+
+
+

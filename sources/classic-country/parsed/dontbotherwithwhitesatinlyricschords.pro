@@ -1,6 +1,9 @@
 {meta: title Don't Bother With White Satin}
 {meta: artist The Seldom Scene}
 {meta: composer John Duffey and Ann Hill}
+{meta: x_source classic-country}
+{meta: x_source_file dontbotherwithwhitesatinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've [G7]walked a starlit mountain road
@@ -53,3 +56,8 @@ When my [F]old jeans will [C]do
 So don’t [A#7]bother with white satin 
 When my [F]old jeans [G7]will [C]do
 {end_of_verse}
+
+
+
+
+

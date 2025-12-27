@@ -1,5 +1,8 @@
 {meta: title King of the Road}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file kingoftheroadlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Trailer for [C]sale or rent [D7]rooms to let [G]fifty cents
@@ -28,3 +31,6 @@ No phone no [C]pool no pets [D7]I ain't got no cigarettes ah but
 [G]Two hours of [C]pushing broom buys a [D7]eight by twelve [G]four-bit room
 I'm a man of [C]means by no means [D7]King of the [G]Road
 {end_of_verse}
+
+
+

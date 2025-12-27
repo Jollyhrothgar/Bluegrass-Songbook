@@ -1,6 +1,9 @@
 {meta: title It's Bad When You're Caught With The Goods}
 {meta: artist Tommy Overstreet}
 {meta: composer Dale Vest and Tommy Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file itsbadwhenyourecaughtwiththegoodslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When your woman has learned you been [F]cheating on her
@@ -40,3 +43,7 @@ Cause it's [G7]bad
 Yes it's bad when you're caught oh so bad
 When you're caught with the [C]good
 {end_of_verse}
+
+
+
+

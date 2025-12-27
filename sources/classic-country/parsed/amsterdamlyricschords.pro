@@ -1,5 +1,8 @@
 {meta: title Amsterdam}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file amsterdamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Amsterdam old [C]Amsterdam how [D7]I love you [G]Amsterdam
@@ -38,3 +41,8 @@
 [C]When I get there I'm gonna kiss the ground
 [D7]That you stand on [G]Amsterdam
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Sorry I'm Not Sorry}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Wanda Ballman}
+{meta: x_source classic-country}
+{meta: x_source_file imsorryimnotsorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm sorry I'm not sorry that [D7]you have said [G]goodbye
@@ -34,3 +37,8 @@
 [D7]I'm sorry I'm not sorry that you no longer [G]care
 [D7]You'd stay but that's not the way we know that would not be [G]fair
 {end_of_verse}
+
+
+
+
+

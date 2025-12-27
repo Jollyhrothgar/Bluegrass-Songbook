@@ -1,6 +1,9 @@
 {meta: title If You Believe}
 {meta: artist George Jones}
 {meta: composer Darrell Edwards}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoubelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the promise of tomorrow will banish all your sorrow
@@ -29,3 +32,7 @@ Rest [D7]receive when you [G]believe
 Nothing here below can measure up to Heaven's lasting treasure
 Be not [D7]deceived only [G]believe
 {end_of_verse}
+
+
+
+

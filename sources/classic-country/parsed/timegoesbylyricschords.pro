@@ -1,5 +1,8 @@
 {meta: title Time Goes By}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file timegoesbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Time goes by and I still love you
@@ -48,3 +51,10 @@ I love you I do so madly
 [F]Hold me close and make me know it
 [C]Time goes [G7]by and still I haven't [C]changed
 {end_of_verse}
+
+
+
+
+
+
+

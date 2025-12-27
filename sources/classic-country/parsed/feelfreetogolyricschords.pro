@@ -1,5 +1,8 @@
 {meta: title Feel Free To Go}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file feelfreetogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Day after day and for hour upon precious [F]hour
@@ -32,3 +35,6 @@ I'd [G7]die if you left but I [A#7]want you to [F]feel free to [C]go
 I [C]love you I need you a love that so few people [F]know
 I [G7]want you to stay but I [A#7]want you to [F]feel free to [C]go
 {end_of_verse}
+
+
+

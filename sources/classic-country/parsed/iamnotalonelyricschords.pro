@@ -1,6 +1,9 @@
 {meta: title I Am Not Alone}
 {meta: artist Jack Greene}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file iamnotalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Silently I [F]walk [G7]about [C]in the [F]meadow [C]green
@@ -26,3 +29,6 @@ He is the [F]melo[G7]dy [C]in the meadow lark's [F]song
 {start_of_verse: Verse 4}
 He is my [F]Crea[G7]tor and [C]I am [F]not [C]alone
 {end_of_verse}
+
+
+

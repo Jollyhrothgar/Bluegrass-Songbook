@@ -1,6 +1,9 @@
 {meta: title Tie Me To Your Apron Strings Again Lyrics and Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Larry Shay and Joe Goodwin}
+{meta: x_source classic-country}
+{meta: x_source_file tiemetoyourapronstringsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tie me to your [F]apron strings [C]again
@@ -22,3 +25,5 @@ Please take me [G7]back tonight [D7]where I be[G7]long
 [C]Sing a cradle [F]song to me and [C]then
 Won't you [G7]tie me to your apron string [C]again
 {end_of_verse}
+
+

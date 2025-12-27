@@ -1,6 +1,9 @@
 {meta: title There's Always One}
 {meta: artist Red Sovine}
 {meta: composer Mary Biggs, Floyd Biggs, Hargus Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file theresalwaysonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]There's [G]always one who [D7]loves a [C]lot
@@ -25,3 +28,6 @@
 [D7]But it's worth [G]all the pain of lovin' a [C]lot
 [D7]Each time you love me just a [G]little
 {end_of_verse}
+
+
+

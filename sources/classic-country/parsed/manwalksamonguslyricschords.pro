@@ -1,5 +1,8 @@
 {meta: title Man Walks Among Us}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file manwalksamonguslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Warm are the winds on the [Am]desert 
@@ -45,3 +48,8 @@ To[F]day will just [Em]be a [Dm]fond memo[C]ry
 [Dm]Man walks [Em]among us be [Dm]still be [Em]still
 [Dm]Man walks a[G7]mong us be [C]still
 {end_of_verse}
+
+
+
+
+

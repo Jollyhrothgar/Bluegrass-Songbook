@@ -1,6 +1,9 @@
 {meta: title Memphis Tennessee}
 {meta: artist Elvis Presley}
 {meta: composer Chuck Berry}
+{meta: x_source classic-country}
+{meta: x_source_file memphistennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Long distance information give me [D7]Memphis Tennessee
@@ -41,3 +44,10 @@ With hurry home drops on her cheek that trickled from her eye
 [G]Marie is only six years old information please
 [D7]Try to put me through to her in Memphis [G]Tennessee
 {end_of_verse}
+
+
+
+
+
+
+

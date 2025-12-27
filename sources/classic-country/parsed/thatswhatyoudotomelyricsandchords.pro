@@ -1,6 +1,9 @@
 {meta: title That's What You Do To Me}
 {meta: artist Charly McClain}
 {meta: composer Bob Morrison and Johnny McRae}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatyoudotomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love me high love me [Am]low
@@ -44,3 +47,9 @@ From your [C]fryin' pan right into your [Am]fire
 [G7]That's what you [F]do to me oh [G7]oh that's what you do [C]to me
 [G7]That's what you [F]do to me oh [G7]oh that's what you do [C]to me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title After All (We Have Meant To Each Other)}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Wesley Tuttle and Lou Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file afterallwehavemeanttoeachotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]After all we have meant to each [A7][C]other
@@ -29,3 +32,6 @@
 [C]Will your heart break like mine if somehow you should [A7]find
 [D7]That you still care for me after [G]all
 {end_of_verse}
+
+
+

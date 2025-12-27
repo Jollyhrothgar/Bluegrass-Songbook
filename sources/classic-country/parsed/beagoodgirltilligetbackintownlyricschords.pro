@@ -1,6 +1,9 @@
 {meta: title Be A Good Girl (Till I Get Back In Town)}
 {meta: artist Leroy Van Dyke}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file beagoodgirltilligetbackintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When those other guys start 
@@ -41,3 +44,7 @@ So be a [G7]good girl till I get back in [C]town
 {start_of_verse: Verse 4}
 Oh be a [G7]good girl till I get back in [C]town
 {end_of_verse}
+
+
+
+

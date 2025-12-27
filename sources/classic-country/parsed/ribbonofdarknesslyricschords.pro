@@ -1,6 +1,9 @@
 {meta: title Ribbon Of Darkness}
 {meta: artist Marty Robbins}
 {meta: composer Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file ribbonofdarknesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ribbon of darkness over [D7]me since my true love walked out the [G]door
@@ -26,3 +29,6 @@ Come on back and take [C]away  [G]ribbon of [D7]darkness over [G]me
 {start_of_verse: Verse 4}
 Come on back and take [C]away  [G]ribbon of [D7]darkness over [G]me
 {end_of_verse}
+
+
+

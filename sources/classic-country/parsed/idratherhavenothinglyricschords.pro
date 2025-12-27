@@ -1,6 +1,9 @@
 {meta: title I'd Rather Have Nothing}
 {meta: artist Garth Brooks}
 {meta: composer Mike McClure}
+{meta: x_source classic-country}
+{meta: x_source_file idratherhavenothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I jumped in the truck and headed for Kansas
@@ -48,3 +51,7 @@ Than a [D7]whole lot of something I don't [Em]need
 0h I'd [G]rather have nothing 
 Than a [D7]whole lot of something I don't [G]need
 {end_of_verse}
+
+
+
+

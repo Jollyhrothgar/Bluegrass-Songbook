@@ -1,6 +1,9 @@
 {meta: title You're The Only One}
 {meta: artist Slim Whitman}
 {meta: composer Jerry Crist and Claude Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file youretheonlyonelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could never learn to love somebody [G7]new
@@ -33,3 +36,6 @@ As each day draws to a close
 It is [F]you I'm thinking of
 You're the [C]only one I'll [G7]ever wanna [C]love
 {end_of_verse}
+
+
+

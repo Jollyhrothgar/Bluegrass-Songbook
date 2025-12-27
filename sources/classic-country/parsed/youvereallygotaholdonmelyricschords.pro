@@ -1,6 +1,9 @@
 {meta: title You've Really Got A Hold On Me}
 {meta: artist Mickey Gilley}
 {meta: composer Will Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file youvereallygotaholdonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't like you but I love you
@@ -38,3 +41,7 @@ Is just [G]hold me (hold me) hold me ([D7]hold me)
 You really got a [G]hold on me (you really got a hold on me)
 You really got a [Em]hold on me (you really got a hold on me)
 {end_of_verse}
+
+
+
+

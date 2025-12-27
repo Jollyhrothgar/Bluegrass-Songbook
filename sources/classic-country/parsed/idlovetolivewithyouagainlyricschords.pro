@@ -1,6 +1,9 @@
 {meta: title I'd Love To Live With You Again}
 {meta: artist Gene Watson}
 {meta: composer Dick Overbey}
+{meta: x_source classic-country}
+{meta: x_source_file idlovetolivewithyouagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Loneliness has made me weak enough to meet you [G7]here
@@ -33,3 +36,6 @@ But [G7]then I couldn’t live with [C]me
 [F]Oh I’d love to live with you [C]again
 But [G7]then I couldn’t live with [C]me
 {end_of_verse}
+
+
+

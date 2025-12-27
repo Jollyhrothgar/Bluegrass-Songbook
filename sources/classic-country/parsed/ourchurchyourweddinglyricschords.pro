@@ -1,6 +1,9 @@
 {meta: title Our Church Your Wedding}
 {meta: artist Roy Drusky}
 {meta: composer Roy Drusky and Lester Vanadore}
+{meta: x_source classic-country}
+{meta: x_source_file ourchurchyourweddinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I went to the church dear 
@@ -36,3 +39,7 @@ For [Em]me this was the [B7]end
 [C]Our church your [G]wedding 
 [C]He was [D7]my best [G]friend [C]  [G]
 {end_of_verse}
+
+
+
+

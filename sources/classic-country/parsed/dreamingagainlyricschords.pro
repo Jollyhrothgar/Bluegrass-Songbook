@@ -1,6 +1,9 @@
 {meta: title Dreaming Again}
 {meta: artist Carl Smith}
 {meta: composer Wesley Rose}
+{meta: x_source classic-country}
+{meta: x_source_file dreamingagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dream dream dream dream dream dream
@@ -120,3 +123,28 @@ Dreaming about our yesterdays
 I better go and think of you
 [C]I start dreaming again (dream dream dream
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

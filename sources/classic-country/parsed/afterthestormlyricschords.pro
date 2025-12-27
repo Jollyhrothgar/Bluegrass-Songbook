@@ -1,6 +1,9 @@
 {meta: title After the Storm}
 {meta: artist Marty Robbins}
 {meta: composer Dale Noe}
+{meta: x_source classic-country}
+{meta: x_source_file afterthestormlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We both have fought the storms of life [D7]together
@@ -30,3 +33,6 @@ Into each life [G7]there will be [C]showers
 But don't the [D7]world look brighter after the [G]rain
 But don't the [D7]world look brighter after the [G]rain
 {end_of_verse}
+
+
+

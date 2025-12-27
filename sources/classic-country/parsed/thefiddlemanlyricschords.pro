@@ -1,5 +1,8 @@
 {meta: title The Fiddle Man}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file thefiddlemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He came rollin' into Cowtown in a big old double trailer diesel [G7]rig
@@ -56,3 +59,10 @@ They bought him beer 'til he couldn't drink no [C]more
 And be[G7]fore we knew what he had done he'd buttoned that old fiddle up
 And caught himself a ride on down the [C]road
 {end_of_verse}
+
+
+
+
+
+
+

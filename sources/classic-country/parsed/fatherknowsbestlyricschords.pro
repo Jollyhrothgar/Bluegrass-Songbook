@@ -1,6 +1,9 @@
 {meta: title Father Knows Best}
 {meta: artist Ricky Skaggs}
 {meta: composer Mike Curtis and Lenny LeBlanc}
+{meta: x_source classic-country}
+{meta: x_source_file fatherknowsbestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Daddy told me not to ride my bike [F]across that rocky [C]creek
@@ -48,3 +51,9 @@ Cause father knows [F]best  [G7]father knows [C]best
 {start_of_verse: Verse 6}
 Your father knows [F]best  [G7]son your father knows [C]best
 {end_of_verse}
+
+
+
+
+
+

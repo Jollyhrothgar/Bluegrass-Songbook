@@ -1,6 +1,9 @@
 {meta: title You're Drivin' Me Out Of Your Mind}
 {meta: artist Ronnie Milsap}
 {meta: composer Dougal Treneer}
+{meta: x_source classic-country}
+{meta: x_source_file youredrivinmeoutofyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The eyes I'm lookin' in [C]ain't lookin' back at [G]me
@@ -28,3 +31,6 @@ You don't have to draw me a picture cause [C]honey I ain't [G]blind
 Yes you're drivin' me [D7]out of your [G]mind
 Yes you're drivin' me [D7]out of your [G]mind
 {end_of_verse}
+
+
+

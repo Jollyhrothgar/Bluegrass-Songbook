@@ -1,6 +1,9 @@
 {meta: title Whoever's In New England}
 {meta: artist Reba McEntire}
 {meta: composer Kendal Franceschi and Quentin Powers}
+{meta: x_source classic-country}
+{meta: x_source_file whoeversinnewenglandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You spend an awful lot of time in Massa[Dm]chusetts
@@ -47,3 +50,8 @@ Oh you know it's [C]not too late
 And you'll [G7]always have a [E7]place to come back [Am]to  [D7]
 When who[F]ever's in New [G7]England's through with [C]you [A]   [F]  [C]
 {end_of_verse}
+
+
+
+
+

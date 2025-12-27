@@ -1,6 +1,9 @@
 {meta: title He Remembers Her}
 {meta: artist Doug Stone}
 {meta: composer Chet Hinesley and Doug Stone}
+{meta: x_source classic-country}
+{meta: x_source_file heremembersherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The calls are made at night he [Dm]longs to hold her tight
@@ -39,3 +42,8 @@ But [Am]time's stealing [C]memories so [F]I'm making [Dm]sure
 {start_of_verse: Verse 5}
 He remembers [C]her
 {end_of_verse}
+
+
+
+
+

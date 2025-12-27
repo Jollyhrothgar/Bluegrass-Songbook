@@ -1,6 +1,9 @@
 {meta: title Dynamite}
 {meta: artist Brenda Lee}
 {meta: composer Mort Garson and Tom Glazer}
+{meta: x_source classic-country}
+{meta: x_source_file dynamitelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Ooo baba doo baba doo baba doo baba dynamite)
@@ -73,3 +76,17 @@ You're dynamite
 [G7]Because you're dynamite (ooo baba doo baba doo baba doo baba [C]doo)
 [G7]Because you're dynamite [G7][C]you're [C]dynamite
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

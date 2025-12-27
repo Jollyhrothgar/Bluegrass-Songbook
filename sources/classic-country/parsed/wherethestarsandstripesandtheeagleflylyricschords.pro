@@ -1,6 +1,9 @@
 {meta: title Where The Stars And Stripes And The Eagle Fly}
 {meta: artist Charley Pride}
 {meta: composer Kenny Beard, Casey Beathard, Aaron Tippin}
+{meta: x_source classic-country}
+{meta: x_source_file wherethestarsandstripesandtheeagleflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if you ask me where I come from
@@ -49,3 +52,9 @@ Where the [Dm]stars and stripes  [F]and the eagle [C]fly
 {start_of_verse: Verse 6}
 Where the s[Dm]tars and stripes  [F]and the eagle [C]fly
 {end_of_verse}
+
+
+
+
+
+

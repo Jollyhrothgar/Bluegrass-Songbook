@@ -1,6 +1,9 @@
 {meta: title Let your love flow}
 {meta: artist The Bellamy Brothers}
 {meta: composer Larry E. Williams}
+{meta: x_source classic-country}
+{meta: x_source_file letyourloveflowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a reason for the sunshiny sky
@@ -28,3 +31,5 @@ So let that wonder take you into space
 And lay you under its loving embrace
 Just feel the [G7]thunder as it warms your face you can't hold [C]back
 {end_of_verse}
+
+

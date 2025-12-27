@@ -1,6 +1,9 @@
 {meta: title More Than We Deserve}
 {meta: artist Roy Drusky}
 {meta: composer Harry Pryor}
+{meta: x_source classic-country}
+{meta: x_source_file morethanwedeservelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I named my little girl after you 
@@ -43,3 +46,8 @@ I hear his [F]voice and you're there too
 It's just a memory but for [C]you and me 
 It's [G7]more than we [C]deserve
 {end_of_verse}
+
+
+
+
+

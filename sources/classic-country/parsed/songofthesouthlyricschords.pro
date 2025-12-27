@@ -1,5 +1,8 @@
 {meta: title Song Of The South}
 {meta: artist Alabama}
+{meta: x_source classic-country}
+{meta: x_source_file songofthesouthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Song  song of the [D7]South
@@ -42,3 +45,8 @@ He bought a washing machine and then a [C]Chevrolet
 [G]Gone  gone with [D7]the wind
 [C]Ain't nobody looking back again
 {end_of_verse}
+
+
+
+
+

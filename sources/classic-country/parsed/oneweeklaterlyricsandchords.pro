@@ -1,5 +1,8 @@
 {meta: title One Week Later}
 {meta: artist Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file oneweeklaterlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One week later oh [G7]how I [C]cried 
@@ -33,3 +36,7 @@ One week [D7]later my tears I couldn’t [G]hide
 One week later oh [G7]how I [C]cried 
 Yes one week [G]later I [D7]wish I could [G]die
 {end_of_verse}
+
+
+
+

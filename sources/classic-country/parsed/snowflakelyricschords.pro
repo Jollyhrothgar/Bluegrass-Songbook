@@ -1,6 +1,9 @@
 {meta: title Snowflake}
 {meta: artist Jim Reeves}
 {meta: composer Ned Miller}
+{meta: x_source classic-country}
+{meta: x_source_file snowflakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Hey hey hey [C]snowflake
@@ -64,3 +67,11 @@ My pretty little [G]snowflake
 Oh oh oh the change in the [D7]weather 
 Has made it better for [G]me 
 {end_of_verse}
+
+
+
+
+
+
+
+

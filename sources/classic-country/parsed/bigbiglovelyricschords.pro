@@ -1,6 +1,9 @@
 {meta: title Big Big Love}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and Ray Carroll}
+{meta: x_source classic-country}
+{meta: x_source_file bigbiglovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well can't you tell my love's a growing 
@@ -27,3 +30,5 @@ And it's not the kind to be concealing
 It's just the kind to be [G7]revealing
 It's not a little bitty feeling I got a big big [C]love
 {end_of_verse}
+
+

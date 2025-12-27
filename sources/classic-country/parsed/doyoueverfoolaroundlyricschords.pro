@@ -1,6 +1,9 @@
 {meta: title Do You Ever Fool Around}
 {meta: artist Joe Stampley}
 {meta: composer Don Griffin and Jerry Strickland}
+{meta: x_source classic-country}
+{meta: x_source_file doyoueverfoolaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If the time and the place was [F]right
@@ -43,3 +46,8 @@ And no matter how hard you [F]try
 Does an angel [C7]ever touch the [F]ground
 [G7]Do you ever fool [C]around
 {end_of_verse}
+
+
+
+
+

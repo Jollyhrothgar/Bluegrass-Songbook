@@ -1,6 +1,9 @@
 {meta: title The Big Heartbreak}
 {meta: artist The Wilburn Brothers}
 {meta: composer Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file thebigheartbreaklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You walked away and said it was good[D7]bye
@@ -29,3 +32,6 @@ The big heartbreak won't let [G]go
 Please come back soon [G7]to this old used to [C]be
 Or the [D7]big heartbreak will be the death of [G]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Falling For You}
 {meta: artist Wynn Stewart}
 {meta: composer Ralph Mooney}
+{meta: x_source classic-country}
+{meta: x_source_file fallingforyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You bring me happiness then leave me [G7]loneliness
@@ -22,3 +25,5 @@
 [C]You look into my eyes and tell the sweetest [G7]lies
 [C]You're a heartbreak in disguise but I'm still falling for you
 {end_of_verse}
+
+

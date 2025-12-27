@@ -1,6 +1,9 @@
 {meta: title Bear With Me A Little Longer}
 {meta: artist Billy Walker}
 {meta: composer Darrell Glenn}
+{meta: x_source classic-country}
+{meta: x_source_file bearwithmealittlelongerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say you're tired of struggling along 
@@ -45,3 +48,10 @@ Bear with me a little [C]longer
 [C]At least up to now
 [D7]But if you'll understand me 
 {end_of_verse}
+
+
+
+
+
+
+

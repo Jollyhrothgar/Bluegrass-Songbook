@@ -1,6 +1,9 @@
 {meta: title Say It's Not You}
 {meta: artist George Jones}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file sayitsnotyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling there's [D7]talk around [G]town 
@@ -30,3 +33,6 @@ Tell me lies but say it's not [G]true
 Darling [D7]say it's not [G]you
 Darling [D7]say it's not [C]y-o[G]u
 {end_of_verse}
+
+
+

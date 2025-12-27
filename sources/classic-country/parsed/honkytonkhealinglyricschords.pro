@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Healing}
 {meta: artist David Ball}
 {meta: composer David Ball and Tommy Polk}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkhealinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I did some honky tonk healing to get me over [C]you
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [C]Yeah due to honky tonk [G]healing  [D7]I'm feeling good as [G]new
 {end_of_verse}
+
+
+
+
+

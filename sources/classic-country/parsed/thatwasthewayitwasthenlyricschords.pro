@@ -1,5 +1,8 @@
 {meta: title That Was The Way It Was Then}
 {meta: artist Jerry Lee Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file thatwasthewayitwasthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s cowboys that still sit with their backs to the [C]wall
@@ -40,3 +43,8 @@
 [E7]Never be that way [A7]again
 [D7]Elvis Presley James Dean ole rocking Jerry [G]Lee
 {end_of_verse}
+
+
+
+
+

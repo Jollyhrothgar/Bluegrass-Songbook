@@ -1,6 +1,9 @@
 {meta: title My Baby Sings The Blues}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file mybabysingstheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She could dance and she could sing
@@ -53,3 +56,8 @@ And although her dreams were gone
 She just couldn't go back home
 To a town she knew that would not under[C]stand
 {end_of_verse}
+
+
+
+
+

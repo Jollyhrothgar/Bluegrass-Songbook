@@ -1,5 +1,8 @@
 {meta: title I Thank You Lord}
 {meta: artist Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file ithankyoulordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just want to thank [D7]You [G]Lord
@@ -58,3 +61,8 @@ When I was so [G]down [D7]and [G]out
 You came [C]along and made me want to shout
 I just want to [D7]thank You Lord thank You [G]Lord
 {end_of_verse}
+
+
+
+
+

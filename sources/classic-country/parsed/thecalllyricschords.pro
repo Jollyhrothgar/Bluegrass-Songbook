@@ -1,6 +1,9 @@
 {meta: title The Call}
 {meta: artist Anne Murray}
 {meta: composer Gene Maclellan}
+{meta: x_source classic-country}
+{meta: x_source_file thecalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a long distance phone and I feel so alone here [D7]without him
@@ -50,3 +53,10 @@ Mister can you find it in your heart to lend me a [D7]dollar
 For the times have been slow I'm fresh outta dough 
 And I ain't got the money to [G]call him 
 {end_of_verse}
+
+
+
+
+
+
+

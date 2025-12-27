@@ -1,6 +1,9 @@
 {meta: title Born To Be A Loser}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Charles Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file borntobealoserlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess I’m born to be a loser
@@ -49,3 +52,11 @@ Think about it
 [G]I guess I’m born to be a loser
 [D7]Lord a loser just can’t win
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Help Stamp Out Loneliness}
 {meta: artist Stonewall Jackson}
 {meta: composer Carl R. Belew and Van Givens}
+{meta: x_source classic-country}
+{meta: x_source_file helpstampoutlonelinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Help help help stamp out loneliness 
@@ -51,3 +54,10 @@ By lining the ladies up next [C]to the men
 [D7]Then two by two let's march day and night
 Till loneliness leaves us and goes out of [G]sight
 {end_of_verse}
+
+
+
+
+
+
+

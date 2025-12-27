@@ -1,6 +1,9 @@
 {meta: title Thy Burdens Are Greater Than Mine}
 {meta: artist Hank Williams}
 {meta: composer Pee Wee King and Redd Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file thyburdensaregreaterthanminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Traveling [G7]down a lonely high[C]way
@@ -53,3 +56,10 @@ Your soul is [F]God's your memory [C]mine
 And as [F]I watched I cried in [C]sorrow
 Oh [Am]Lord I see his [C]burdens are [G7]greater than [C]mine
 {end_of_verse}
+
+
+
+
+
+
+

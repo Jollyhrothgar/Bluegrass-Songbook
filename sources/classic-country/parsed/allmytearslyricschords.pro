@@ -1,6 +1,9 @@
 {meta: title All My Tears}
 {meta: artist Emmylou Harris}
 {meta: composer Julie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file allmytearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]When I go don't cry for me
@@ -53,3 +56,12 @@ For my life belongs to him
 Sun and moon will be replaced
 [C]With the [G]light of Jesus [Am]face
 {end_of_verse}
+
+
+
+
+
+
+
+
+

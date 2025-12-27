@@ -1,6 +1,9 @@
 {meta: title Count Me Out}
 {meta: artist Marty Robbins}
 {meta: composer Jack Pruet}
+{meta: x_source classic-country}
+{meta: x_source_file countmeoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Taking me for granted was your first [C]mistake
@@ -37,3 +40,8 @@ You've played love's game too rough
 [C]As to me I've had enough
 [D7]Cause the going's got too rough so count me [G]out
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Be A Swinger}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Eugene Ward}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnabeaswingerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you ever had a feeling
@@ -41,3 +44,10 @@ To my rough and rowdy ways
 {start_of_verse: Verse 8}
 [D7]I'm gonna be a swinger for the rest of my [G]days
 {end_of_verse}
+
+
+
+
+
+
+

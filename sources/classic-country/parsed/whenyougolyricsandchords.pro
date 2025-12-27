@@ -1,6 +1,9 @@
 {meta: title When You Go}
 {meta: artist Tracy Byrd}
 {meta: composer Michael Heeney, Casey Beathard, Marla Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file whenyougolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The yelling and cussing was [Am]different this [G7]time
@@ -54,3 +57,9 @@ And said [A#7]shut the [F]door behind you when you [C]go
 Yeah she just took a deep drag off that [Am]Marlboro [G7]light
 And said [A#7]shut the door [F]behind you when you [C]go
 {end_of_verse}
+
+
+
+
+
+

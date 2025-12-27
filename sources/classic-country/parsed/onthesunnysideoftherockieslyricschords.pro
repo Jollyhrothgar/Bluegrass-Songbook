@@ -1,6 +1,9 @@
 {meta: title On The Sunny Side Of The Rockies}
 {meta: artist Slim Whitman}
 {meta: composer Roy Ingraham and Harry Tobias}
+{meta: x_source classic-country}
+{meta: x_source_file onthesunnysideoftherockieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On the sunny [G7]side of the [C]Rockies
@@ -22,3 +25,5 @@ Though [C]mountains are high and [G]we're far apart
 [G]On the sunny [G7]side of the [C]Rockies
 Where the [G]desert [D7]kisses the [G]sea
 {end_of_verse}
+
+

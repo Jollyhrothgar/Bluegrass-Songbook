@@ -1,6 +1,9 @@
 {meta: title That's Enough}
 {meta: artist Johnny Cash}
 {meta: composer Dorothy Coates}
+{meta: x_source classic-country}
+{meta: x_source_file thatsenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well now I heard that you been talking bout me [G7]really I don't [C]mind
@@ -47,3 +50,7 @@ You know there's been a lotta times that I didn't have a dime
 [F]God's got His arms wrapped all around me
 [C](I've got) I've got [G7]Jesus and that's [C]enough (that's [F]enough) that's [C]enough
 {end_of_verse}
+
+
+
+

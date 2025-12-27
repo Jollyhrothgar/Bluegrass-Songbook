@@ -1,6 +1,9 @@
 {meta: title Needed}
 {meta: artist Tracy Byrd}
 {meta: composer Neil Thrasher and Wendell Mobley}
+{meta: x_source classic-country}
+{meta: x_source_file neededlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say you hate to bother me [Dm]baby I'll be right there[F]
@@ -38,3 +41,8 @@ Is to be [C]needed [F]need[C]ed
 {start_of_verse: Verse 5}
 I wanna be needed [F]need[C]ed
 {end_of_verse}
+
+
+
+
+

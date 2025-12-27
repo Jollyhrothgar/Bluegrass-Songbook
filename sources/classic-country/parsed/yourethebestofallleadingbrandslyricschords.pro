@@ -1,6 +1,9 @@
 {meta: title You're The Best Of All Leading Brands}
 {meta: artist Lester Flatt}
 {meta: composer Tony Slater}
+{meta: x_source classic-country}
+{meta: x_source_file yourethebestofallleadingbrandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now you're the best of [C7]all the leading [F]brands
@@ -33,3 +36,7 @@ I [G7]like you best of all the leading [C]brands
 {start_of_verse: Verse 5}
 [G7]You're the best of all the leading [C]brands 
 {end_of_verse}
+
+
+
+

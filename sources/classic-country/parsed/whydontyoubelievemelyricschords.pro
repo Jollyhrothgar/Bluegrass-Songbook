@@ -1,6 +1,9 @@
 {meta: title Why Don't You Believe Me}
 {meta: artist Brenda Lee}
 {meta: composer Lew Douglas, Kim Laney, Roy Rodde}
+{meta: x_source classic-country}
+{meta: x_source_file whydontyoubelievemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -29,3 +32,7 @@ Why don't you be[Dm]lieve me  [G7]I love only [C]you
 {start_of_verse: Verse 5}
 Why don't you be[Dm]lieve me  [G7]I love only [C]you
 {end_of_verse}
+
+
+
+

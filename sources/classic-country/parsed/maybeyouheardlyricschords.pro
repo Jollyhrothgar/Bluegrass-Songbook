@@ -1,5 +1,8 @@
 {meta: title Maybe You Heard}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file maybeyouheardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Maybe You Heard
@@ -35,3 +38,7 @@ Don't you con[F]demn her leave it to [C]strangers [F]
 You oughta [C]know her  [F]give her a [C]hand if you [F]can
 But at [C]least for Jesus [G7]Christ's sake under[C]stand
 {end_of_verse}
+
+
+
+

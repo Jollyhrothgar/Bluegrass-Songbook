@@ -1,6 +1,9 @@
 {meta: title There's Room At The Cross For You}
 {meta: artist Randy Travis}
 {meta: composer Ira Stanphill}
+{meta: x_source classic-country}
+{meta: x_source_file roomatthecrossforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s room at the [A7]cross for [D7]you
@@ -17,3 +20,4 @@ Though millions have [G7]come
 There’s [C]still room for one
 Yes [G]there’s room at the [D7]cross for [G]you
 {end_of_verse}
+

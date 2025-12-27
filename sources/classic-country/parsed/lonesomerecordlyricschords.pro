@@ -1,5 +1,8 @@
 {meta: title Lonesome Record}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomerecordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I put money in the jukebox to [G7]play away my blues
@@ -28,3 +31,6 @@ You're [G7]trying to break my [C]heart
 Oh [F]play you lonesome [C]record play
 And [G7]let the teardrops [C]start
 {end_of_verse}
+
+
+

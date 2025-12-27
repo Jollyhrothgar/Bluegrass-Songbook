@@ -1,6 +1,9 @@
 {meta: title Dyin' Breed}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file dyinbreedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I like to slow dance with a young thing
@@ -48,3 +51,8 @@ Those honky tonk angels will [C]sing
 Brother [Am]you and me we're the [D7]last of the dyin' [G]breed
 Brother [Am]you and me we're the [D7]last of the dyin' [G]breed
 {end_of_verse}
+
+
+
+
+

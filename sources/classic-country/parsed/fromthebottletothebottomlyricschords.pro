@@ -1,6 +1,9 @@
 {meta: title From The Bottle To The Bottom}
 {meta: artist Billy Walker}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file fromthebottletothebottomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You ask me if I'm happy now 
@@ -65,3 +68,11 @@ Learning how to live with losing [G]you
 {start_of_verse: Verse 7}
 [D7]From the bottle to the bottom losing [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+

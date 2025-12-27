@@ -1,6 +1,9 @@
 {meta: title You Can't Take It With You When You Go}
 {meta: artist Gene Watson}
 {meta: composer Larry Cordle, Larry Shell, Bert Colwell}
+{meta: x_source classic-country}
+{meta: x_source_file youcanttakeitwithyouwhenyougolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got a friend who's a workaholic he never knows when to quit
@@ -41,3 +44,8 @@ Now hard work it's a virtue and there's nothing wrong with that
 [C]All the treasures in this world ain’t worth a dime when they lay you low
 [D7]Cause you can't take it with you when you [G]go
 {end_of_verse}
+
+
+
+
+

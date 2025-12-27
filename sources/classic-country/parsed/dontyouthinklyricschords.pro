@@ -1,5 +1,8 @@
 {meta: title Don't You Think}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file dontyouthinklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's been gone [C7]away too long in [F]fact eight weeks tonight
@@ -21,3 +24,5 @@ Oh [C]don't you think [G7]I've got a right to [C]cry [C7]
 What a lousy way to [C7]thank me [F]after how I've tried
 Oh [C]don't you think [G7]I've got a right to [C]cry
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Everybody's Talkin'}
 {meta: artist Roger Miller}
 {meta: composer Fred Neil}
+{meta: x_source classic-country}
+{meta: x_source_file everybodystalkinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody's talkin' at me
@@ -27,3 +30,5 @@ I can't hear a word they're sayin'
 I won't let you leave my love behind
 [G7]No I won't let you [C]leave
 {end_of_verse}
+
+

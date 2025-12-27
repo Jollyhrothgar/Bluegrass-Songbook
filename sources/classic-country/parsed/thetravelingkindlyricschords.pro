@@ -1,6 +1,9 @@
 {meta: title The Traveling Kind}
 {meta: artist Emmylou Harris}
 {meta: composer Rodney Crowell, Emmylou Harris, Cory Chisel}
+{meta: x_source classic-country}
+{meta: x_source_file thetravelingkindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We don't [Am]all die [G7]young to [F]save [G7]our [C]spark
@@ -40,3 +43,8 @@ And [F]rest [C]a [Am]mooing the [G7]traveling [Am]kind
 {start_of_verse: Verse 6}
 And the [F]song [C]goes [Am]on for the [G7]traveling [C]kind
 {end_of_verse}
+
+
+
+
+

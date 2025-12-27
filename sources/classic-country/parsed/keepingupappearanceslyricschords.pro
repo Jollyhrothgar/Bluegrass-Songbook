@@ -1,6 +1,9 @@
 {meta: title Keeping Up Appearances}
 {meta: artist Lynn Anderson}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file keepingupappearanceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we're around with other folks
@@ -37,3 +40,6 @@ It seems we're [C]tied together more or less
 [F]With a strange unhappiness
 [C]Keeping up appearances when [G7]we should say [C]goodbye
 {end_of_verse}
+
+
+

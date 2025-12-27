@@ -1,6 +1,9 @@
 {meta: title Handful Of Friends}
 {meta: artist Leroy Van Dyke}
 {meta: composer Don Carroll}
+{meta: x_source classic-country}
+{meta: x_source_file handfuloffriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]Our love has faded [C]away
@@ -33,3 +36,7 @@ I'm a gonna [G7]drop a handful of [C]friends
 If you'll [Am]come back to me [F]again
 I'm a gonna [G7]drop a handful of [C]friends
 {end_of_verse}
+
+
+
+

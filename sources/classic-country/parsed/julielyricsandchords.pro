@@ -1,6 +1,9 @@
 {meta: title Julie}
 {meta: artist Porter Wagoner}
 {meta: composer Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file julielyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I married Julie she was just seventeen
@@ -58,3 +61,12 @@ The things that I heard I could hardly believe
 [F]One for the stranger [A#7]Julie and [C]me
 [F]One for the [A#7]stranger Julie and [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+

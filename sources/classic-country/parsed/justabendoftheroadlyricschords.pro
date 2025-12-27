@@ -1,6 +1,9 @@
 {meta: title Just A Bend Of The Road}
 {meta: artist Ferlin Husky}
 {meta: composer Judy West}
+{meta: x_source classic-country}
+{meta: x_source_file justabendoftheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](It's just a bend of the [C]road)[G7]
@@ -37,3 +40,8 @@ There may be [G7]someone around the bend of the [C]road
 {start_of_verse: Verse 6}
 There may be [G7]someone around the bend of the [C]road
 {end_of_verse}
+
+
+
+
+

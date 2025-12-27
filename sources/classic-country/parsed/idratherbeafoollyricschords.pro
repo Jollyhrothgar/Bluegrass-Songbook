@@ -1,6 +1,9 @@
 {meta: title I'd Rather Be A Fool}
 {meta: artist Connie Smith}
 {meta: composer Joe Williams}
+{meta: x_source classic-country}
+{meta: x_source_file idratherbeafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess I'm just the [G7]fool they [C]call me
@@ -29,3 +32,6 @@ They tell me that a [A#7]fool don't [F]know
 But if I had to [A#7]live with[F]out you
 I'd rather [C]be a fool than [F]go[G7]   [C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Forgot to Remember to Forget}
 {meta: artist Elvis Presley}
 {meta: composer Stan Kesler and Carl Feathers}
+{meta: x_source classic-country}
+{meta: x_source_file iforgottoremembertoforgetlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I forgot to remember to forget [G7]her
@@ -27,3 +30,5 @@ But something sure is [C]wrong
 Cause I'm so blue and [F]lonely
 I [C]forgot to [G7]remember to [C]forget
 {end_of_verse}
+
+

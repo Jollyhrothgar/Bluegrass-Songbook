@@ -1,6 +1,9 @@
 {meta: title Two Candles One Dinner And A Bottle}
 {meta: artist Johnny Paycheck}
 {meta: composer Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file twocandlesonedinnerandabottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every [Dm]time my wife goes shopping you [F]always keep the [C]kids
@@ -33,3 +36,7 @@ I've stayed two [F]candles one [G7]dinner and a bottle too [C]long
 {start_of_verse: Verse 5}
 I've stayed two [F]candles one [G7]dinner and a bottle too [C]long
 {end_of_verse}
+
+
+
+

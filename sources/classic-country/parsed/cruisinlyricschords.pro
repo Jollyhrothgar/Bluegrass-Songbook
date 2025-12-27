@@ -1,6 +1,9 @@
 {meta: title Cruisin'}
 {meta: artist Alabama}
 {meta: composer Jeff Cook, Vern Dant, Ted Hewitt}
+{meta: x_source classic-country}
+{meta: x_source_file cruisinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello baby I'll be by to pick you up at [C]eight
@@ -46,3 +49,8 @@ There's the drive-in
 [C]Baby let's go cruisin' cruisin' on Saturday [G]night
 [C]We'll be groovin' groovin' in the radio [G]light
 {end_of_verse}
+
+
+
+
+

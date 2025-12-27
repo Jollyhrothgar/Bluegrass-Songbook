@@ -1,5 +1,8 @@
 {meta: title Completely Out of Love}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file completelyoutoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We could always find tomorrow when a [F]problem came our [C]way
@@ -29,3 +32,6 @@ And [C]this time we just can't make it all the [F]love we had is [C]lost
 And we've run [G7]completely out of love this [C]time
 And we've run [G7]completely out of love this [C]time
 {end_of_verse}
+
+
+

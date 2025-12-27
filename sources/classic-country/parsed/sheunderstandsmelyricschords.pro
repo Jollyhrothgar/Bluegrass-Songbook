@@ -1,6 +1,9 @@
 {meta: title She Understands Me}
 {meta: artist Johnny Tillotson}
 {meta: composer Merle Kilgore and Margie Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file sheunderstandsmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Whoa whoa dum-bi-ady [F]dum-bi-ady [C]doe
@@ -46,3 +49,9 @@ I'll always I [Dm]love her (dum-bi-ady doe) ([F]dum-bi-ady [C]doe)
 She under[G7]stands me (dum-bi-ady doe) ([F]dum-bi-ady [C]doe)
 I'll always I [G7]love her (dum-bi-ady doe) ([F]dum-bi-ady [C]doe)
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Too Much Candy For A Dime}
 {meta: artist Eddy Raven}
 {meta: composer David H. Powelson and Edward G. Futch}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchcandyforadimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You look just like somebody that I used to [C]know
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]You’re just [G]too much [D7]candy for a [G]dime
 {end_of_verse}
+
+
+
+

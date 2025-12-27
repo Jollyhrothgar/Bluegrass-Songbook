@@ -1,6 +1,9 @@
 {meta: title Real Old Fashioned Broken Heart}
 {meta: artist Sammy Kershaw}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file realoldfashionedbrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I played at love I thought I was a [C]sophisticated [Am]kind
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]I've got a real old fashioned broken [G]heart
 {end_of_verse}
+
+
+
+

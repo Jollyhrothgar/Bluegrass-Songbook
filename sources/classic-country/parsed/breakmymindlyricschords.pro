@@ -1,6 +1,9 @@
 {meta: title Break My Mind}
 {meta: artist Roy Orbison}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file breakmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby oh baby
@@ -37,3 +40,7 @@ You know you're gonna break my [G]mind
 {start_of_verse: Verse 2}
 Break my mind break my mind
 {end_of_verse}
+
+
+
+

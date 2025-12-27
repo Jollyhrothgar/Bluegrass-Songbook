@@ -1,6 +1,9 @@
 {meta: title How Are Things In Clay Kentucky}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file howarethingsinclaykentuckylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]How are [C]things in Clay, Kentucky [C7]bet you [F]thought I'd never [C]care
@@ -30,3 +33,6 @@
 [G7]And how things [C]are in Clay, Kentucky [Am]has been [C]lately on [G7]my [C]mind
 [G7]And how things [C]are in Clay, Kentucky [Am]has been [C]lately on [G7]my [C]mind
 {end_of_verse}
+
+
+

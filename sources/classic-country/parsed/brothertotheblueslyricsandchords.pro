@@ -1,5 +1,8 @@
 {meta: title Brother To The Blues}
 {meta: artist The Lonesome River Band}
+{meta: x_source classic-country}
+{meta: x_source_file brothertotheblueslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I first saw the [C]light of day [G]32 years ago
@@ -46,3 +49,9 @@ The [C]life I lead is not the one I [G]cho-o[C]se
 {start_of_verse: Verse 5}
 I've always been a [D7]brother to the [G]blues
 {end_of_verse}
+
+
+
+
+
+

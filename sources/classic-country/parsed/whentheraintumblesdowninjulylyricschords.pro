@@ -1,5 +1,8 @@
 {meta: title When The Rain Tumbles Down In July}
 {meta: artist Slim Dusty}
+{meta: x_source classic-country}
+{meta: x_source_file whentheraintumblesdowninjulylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me wander [G7]north to the [C]homestead 
@@ -49,3 +52,9 @@ Its [F]years since he's seen it so [C]high
 Yes and [F]that's just a story of [C]homeward 
 When the rain tumbles [G7]down in [C]July
 {end_of_verse}
+
+
+
+
+
+

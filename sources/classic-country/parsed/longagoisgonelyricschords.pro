@@ -1,6 +1,9 @@
 {meta: title Long Ago Is Gone}
 {meta: artist Norma Jean}
 {meta: composer Glenn Martin, Carl Knight, Charles Pendleton, Abe Rotwein}
+{meta: x_source classic-country}
+{meta: x_source_file longagoisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't have them [C]anymore but the signs [D7]are still [G]around
@@ -25,3 +28,6 @@ But I can't sell my [C]memories they're [D7]locked inside these [G]walls
 [C]These are just [D7]memories of a [C]woman on her [G]own
 Cause that all happened [C]long ago and [D7]long ago is [G]gone
 {end_of_verse}
+
+
+

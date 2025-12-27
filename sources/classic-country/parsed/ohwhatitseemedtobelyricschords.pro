@@ -1,6 +1,9 @@
 {meta: title Oh What It Seemed To Be}
 {meta: artist Jim Reeves}
 {meta: composer Bennie Benjamin and George Weiss}
+{meta: x_source classic-country}
+{meta: x_source_file ohwhatitseemedtobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It was [C]just a neighborhood dance [Em]that's all that it [C]was
@@ -30,3 +33,6 @@ It was [Am]like a royal [F]affair with [Em]everyone there
 Cause [F]you said [G7]yes I do to [C]me
 Repeat last verse
 {end_of_verse}
+
+
+

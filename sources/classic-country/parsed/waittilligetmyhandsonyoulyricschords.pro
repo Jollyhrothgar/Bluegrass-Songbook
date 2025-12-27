@@ -1,6 +1,9 @@
 {meta: title Wait Till I Get My Hands On You}
 {meta: artist Wynn Stewart}
 {meta: composer Ronald Elmer McCown}
+{meta: x_source classic-country}
+{meta: x_source_file waittilligetmyhandsonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You called me on the phone  [G7]said you were alone
@@ -26,3 +29,6 @@ Well I'll show you love and [F]how it can be true
 {start_of_verse: Verse 4}
 Just [G7]wait until I get my hands on [C]you
 {end_of_verse}
+
+
+

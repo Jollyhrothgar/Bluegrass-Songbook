@@ -1,6 +1,9 @@
 {meta: title This Empty House}
 {meta: artist Doug Stone}
 {meta: composer Kim Williams, Ron Harbin, Doug Stone}
+{meta: x_source classic-country}
+{meta: x_source_file thisemptyhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Memories oh memories how they gather around
@@ -42,3 +45,7 @@ This [C]empty house is [Dm]really hittin [G7]home to[C]night[Dm]   [G7]
 {start_of_verse: Verse 4}
 [C]Oh this [Dm]empty house is [G7]hittin home to[C]night
 {end_of_verse}
+
+
+
+

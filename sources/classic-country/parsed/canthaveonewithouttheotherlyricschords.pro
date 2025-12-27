@@ -1,6 +1,9 @@
 {meta: title Can't Have One Without The Other}
 {meta: artist Tracy Byrd}
 {meta: composer Shawn Camp and Gary Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file canthaveonewithouttheotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Used to think that [F]love would be so [C]simple 
@@ -52,3 +55,9 @@ No you [F]can't have one without the [C]other
 {start_of_verse: Verse 7}
 No you [F]can't have one without the [C]other
 {end_of_verse}
+
+
+
+
+
+

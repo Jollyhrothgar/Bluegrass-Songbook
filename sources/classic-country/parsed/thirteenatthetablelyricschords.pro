@@ -1,6 +1,9 @@
 {meta: title Thirteen At The Table}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Blake Emmons}
+{meta: x_source classic-country}
+{meta: x_source_file thirteenatthetablelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Thirteen at the [C]table to [F]honor of the [C]Man
@@ -54,3 +57,10 @@ Well He [F]tells us once again that this will [C]be His [E7]final [Am]supper
 {start_of_verse: Verse 7}
 Will we ever learn to [G7]love our fellow [F]ma[C]n [D7]   [C]
 {end_of_verse}
+
+
+
+
+
+
+

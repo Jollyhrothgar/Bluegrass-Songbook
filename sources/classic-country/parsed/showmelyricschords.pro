@@ -1,6 +1,9 @@
 {meta: title Show Me}
 {meta: artist Barbara Mandrell}
 {meta: composer Joe Tex}
+{meta: x_source classic-country}
+{meta: x_source_file showmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Show me a man that's got a good woman [F]show me
@@ -48,3 +51,8 @@ Show me a man that's got a good woman show me
 Show me a woman that's got a good man show me
 Show me two people in love with each other show me
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Narrowed This Triangle Down To Two}
 {meta: artist Leona Williams}
 {meta: composer Naomi Martin}
+{meta: x_source classic-country}
+{meta: x_source_file inarrowedthistriangledowntotwolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You laughed at me each [F]time I said I'd [C]do it
@@ -40,3 +43,8 @@ Some[G7]how I knew my love was dying [C]too
 {start_of_verse: Verse 5}
 And I've just [G7]narrowed this triangle down to [C]two 
 {end_of_verse}
+
+
+
+
+

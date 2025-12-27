@@ -1,6 +1,9 @@
 {meta: title It's Hard To Tell The Married From The Free}
 {meta: artist Jean Shepard}
 {meta: composer Don Helms and Gene Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file itshardtotellthemarriedfromthefreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today so many men are so [G7]unfaithful
@@ -29,3 +32,6 @@
 [F]But can you guess the truth he may be hiding
 [G7]It's hard to tell the married from the [C]free
 {end_of_verse}
+
+
+

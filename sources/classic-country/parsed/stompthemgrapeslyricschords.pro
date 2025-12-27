@@ -1,5 +1,8 @@
 {meta: title Stomp Them Grapes}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file stompthemgrapeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stomp stomp them [F]grapes 
@@ -35,3 +38,7 @@ Stomp stomp them [F]grapes
 [C]Put it in a bottle [F]boys
 And ship [G7]it on down the [C]line
 {end_of_verse}
+
+
+
+

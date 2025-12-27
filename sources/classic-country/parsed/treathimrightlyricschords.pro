@@ -1,6 +1,9 @@
 {meta: title Treat Him Right}
 {meta: artist Barbara Mandrell}
 {meta: composer Roy Head and Gene Kurtz}
+{meta: x_source classic-country}
+{meta: x_source_file treathimrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wanna tell you a story every girl oughta know
@@ -34,3 +37,7 @@ And you'll be glad every [G7]night [F]that you treated him [C]right
 And you'll be glad every [G7]night [F]that you treated him [C]right
 Repeat last verse
 {end_of_verse}
+
+
+
+

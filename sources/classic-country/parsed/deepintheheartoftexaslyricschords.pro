@@ -1,6 +1,9 @@
 {meta: title Deep In The Heart Of Texas}
 {meta: artist Hank Thompson}
 {meta: composer Don Swander and June Hershey}
+{meta: x_source classic-country}
+{meta: x_source_file deepintheheartoftexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The stars at night are big and bright
@@ -41,3 +44,10 @@ The coyotes wail along the trail
 The doggies bawl and bawl and bawl
 [C]Deep in the heart of Texas
 {end_of_verse}
+
+
+
+
+
+
+

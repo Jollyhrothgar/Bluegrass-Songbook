@@ -1,6 +1,9 @@
 {meta: title Hemingway Hideaway}
 {meta: artist The Bellamy Brothers}
 {meta: composer Ralph Siegel and T.T. Kermit}
+{meta: x_source classic-country}
+{meta: x_source_file hemingwayhideawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was driving out of town after [Am]she had turned me down
@@ -43,3 +46,7 @@ And our love will be [F]true
 Just [C]follow me [G7]follow me to [F]Hemingway [C]hideaway
 [F]Hemingway [C]hideaway [F]Hemingway [C]hideaway
 {end_of_verse}
+
+
+
+

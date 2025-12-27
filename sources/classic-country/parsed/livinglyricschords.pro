@@ -1,6 +1,9 @@
 {meta: title Living}
 {meta: artist George Morgan}
 {meta: composer George Morgan and Tommy Hill}
+{meta: x_source classic-country}
+{meta: x_source_file livinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Living isn't [C]crying in the [G]darkness
@@ -29,3 +32,6 @@ So don't give up keep [D7]trying
 [G]Living is [D7]two loving arms to [G]hold you
 Yes I'm [D7]living cause I found someone to [G]love
 {end_of_verse}
+
+
+

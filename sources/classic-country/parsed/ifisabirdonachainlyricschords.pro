@@ -1,5 +1,8 @@
 {meta: title If Is A Bird On A Chain}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file ifisabirdonachainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could take [G7]back all the [C]things that I've [G7]said
@@ -39,3 +42,8 @@ But [F]I love you [Em]so and [E7]that's the real [Am]shame
 {start_of_verse: Verse 5}
 But if is a [G7]bird on a [C]chain
 {end_of_verse}
+
+
+
+
+

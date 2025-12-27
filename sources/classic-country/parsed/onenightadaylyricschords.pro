@@ -1,6 +1,9 @@
 {meta: title One Night A Day}
 {meta: artist Garth Brooks}
 {meta: composer Gary Burr and Pete Wasner}
+{meta: x_source classic-country}
+{meta: x_source_file onenightadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's not a lot of [Bm]things to do 
@@ -44,3 +47,8 @@ From [A7]leavin' you be[D7]hind
 [C]To get through [Am]one night a [G]day[G7] 
 [C]To get through [Am]one night a [G]day
 {end_of_verse}
+
+
+
+
+

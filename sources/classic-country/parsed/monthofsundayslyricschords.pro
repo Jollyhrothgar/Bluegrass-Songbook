@@ -1,6 +1,9 @@
 {meta: title Month Of Sundays}
 {meta: artist Vern Gosdin}
 {meta: composer Vern Gosdin, John Northrup, Buddy Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file monthofsundayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There musta been 100 parties and I hit [F]everyone in [C]town
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]It's gonna take a month of Sundays to get me over  Saturday [C]night
 {end_of_verse}
+
+
+
+

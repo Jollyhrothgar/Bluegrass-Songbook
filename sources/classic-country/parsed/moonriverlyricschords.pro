@@ -1,6 +1,9 @@
 {meta: title Moon River}
 {meta: artist Jim Reeves}
 {meta: composer Johnny Mercer and Henry Mancini}
+{meta: x_source classic-country}
+{meta: x_source_file moonriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Moon [Am]River [F]wider than a [C]mile
@@ -22,3 +25,5 @@ We're [Am]after the [D7]same [F]rainbow's [C]end [F]
 Waitin' round the [C]bend  [F]my Huckleberry [C]friend
 [Am]Moon [Dm]River and [C]me
 {end_of_verse}
+
+

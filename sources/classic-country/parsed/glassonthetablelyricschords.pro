@@ -1,6 +1,9 @@
 {meta: title Glass On The Table}
 {meta: artist Wilburn Brothers}
 {meta: composer Vern Orr and John Newman}
+{meta: x_source classic-country}
+{meta: x_source_file glassonthetablelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a tavern on the corner you'll [G7]find me every night
@@ -29,3 +32,6 @@ Why I had to lose you I [F]just don't under[C]stand
 I said that I'd forget but it won't happen like I [G7]plan
 With a [F]glass on the [G7]table and your picture in my [C]hand
 {end_of_verse}
+
+
+

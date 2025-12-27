@@ -1,4 +1,7 @@
 {meta: composer Lewis H. Redner and Phillips Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file olittletownofbethlehemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]O little town of [Dm]Bethlehem
@@ -27,3 +30,6 @@ Proclaim the holy birth
 And praises sing to God the King
 And peace to men on earth
 {end_of_verse}
+
+
+

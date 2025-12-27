@@ -1,6 +1,9 @@
 {meta: title This Love Of Mine}
 {meta: artist Sonny James}
 {meta: composer Sol Parker, Frank Sinatra and Hank Sanicola}
+{meta: x_source classic-country}
+{meta: x_source_file thisloveofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This love of [F]mine [G7]goes on and [C]on
@@ -22,3 +25,5 @@
 [F]I ask the sun and moon [E7]the stars that [Am]shine
 [C]What’s to become of [G7]it this love of [C]mine
 {end_of_verse}
+
+

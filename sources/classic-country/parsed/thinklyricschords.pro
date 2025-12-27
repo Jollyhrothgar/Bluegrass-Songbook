@@ -1,6 +1,9 @@
 {meta: title Think}
 {meta: artist Brenda Lee}
 {meta: composer Peggy Whittington}
+{meta: x_source classic-country}
+{meta: x_source_file thinklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Think before you leave me [E7]  for somebody new
@@ -20,3 +23,5 @@ So dar[D7]ling think [G7]darling [C]think[F]
 [E7]Cause I'll live a lifetime just loving [Am]you
 So dar[D7]ling think [G7]darling [C]think
 {end_of_verse}
+
+

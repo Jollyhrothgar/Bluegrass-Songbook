@@ -1,6 +1,9 @@
 {meta: title Kentucky Homemade Christmas}
 {meta: artist Kenny Rogers}
 {meta: composer Bill Caswell and Kin Vassy}
+{meta: x_source classic-country}
+{meta: x_source_file kentuckyhomemadeChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They shut down the mine last summer we're [F]gettin' by on [C]welfare
@@ -54,3 +57,9 @@
 [Am]Our fine and [C]fancy homemade love God's precious gift [Am]from up [C]above
 [Am]Make up the homemade [G7]Christmas of this poor Kentucky [C]man
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It’s Now or Never}
 {meta: artist Elvis Presley}
 {meta: composer Aaron Schroeder, Wally Gold, Edoardo DiCapua}
+{meta: x_source classic-country}
+{meta: x_source_file itsnoworneverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's now or never  come hold me [G7]tight 
@@ -36,3 +39,7 @@ Kiss me my darling  be mine [C]tonight
 [Fm]Tomorrow will be too [C]late 
 It's now or [G7]never  my love won't [C]wait
 {end_of_verse}
+
+
+
+

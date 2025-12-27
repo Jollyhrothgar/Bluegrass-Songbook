@@ -1,6 +1,9 @@
 {meta: title Angel Like You}
 {meta: artist Doug Stone}
 {meta: composer Angela Kaset and Pamela Belford}
+{meta: x_source classic-country}
+{meta: x_source_file angellikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Deep in my [Em]Christmas [C]memor[D7]ies
@@ -47,3 +50,9 @@ Like [G]this was the [C]secret that [G]she always [D7]knew
 {start_of_verse: Verse 5}
 Oh all I've [D7]ever [Bm]wanted [C]was an [G]ang[D7]el like [G]you[Em]   [C]  [D7]   [G]
 {end_of_verse}
+
+
+
+
+
+

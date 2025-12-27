@@ -1,6 +1,9 @@
 {meta: title I Want To Live And Love}
 {meta: artist Hank Williams}
 {meta: composer Gene Sullivan and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttoliveandlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wanna live and love under the stars above
@@ -45,3 +48,10 @@ I wanna [C]hold hold you close to my [G]heart
 You gave me hopes and you when I was sad and blue
 And [A7]nothings gonna keep us [D7]apart
 {end_of_verse}
+
+
+
+
+
+
+

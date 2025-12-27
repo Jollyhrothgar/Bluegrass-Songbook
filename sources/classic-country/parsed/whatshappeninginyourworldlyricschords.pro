@@ -1,5 +1,8 @@
 {meta: title What's Happening In Your World}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file whatshappeninginyourworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What's [G7]happening in your world is it as lonesome as [C]mine [G7]
@@ -25,3 +28,6 @@ Do you [Dm]search for new [G7]things to [Dm]help ease the [G7]pain of the [C]hur
 Do you [C]tell all your friends we'll try it [C7]again at some [F]time [Dm]
 What's [G7]happening in your world is it as lonesome as [C]mine 
 {end_of_verse}
+
+
+

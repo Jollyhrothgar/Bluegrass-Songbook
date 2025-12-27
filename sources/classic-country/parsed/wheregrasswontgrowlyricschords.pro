@@ -1,6 +1,9 @@
 {meta: title Where Grass Won't Grow}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file wheregrasswontgrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The dirt was clay and was [F]color of the blood in [C]me
@@ -34,3 +37,6 @@
 [F]Why there's flowers growing on ground so [G7]poor that grass won't [C]grow
 [F]Now there's flowers growing on ground so [G7]poor that grass won't [C]grow
 {end_of_verse}
+
+
+

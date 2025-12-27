@@ -1,6 +1,9 @@
 {meta: title It Don’t Feel Like Sinning To Me}
 {meta: artist The Kendalls}
 {meta: composer Curly Putman and Michael Kosser}
+{meta: x_source classic-country}
+{meta: x_source_file itdontfeellikesinningtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we're holding each other in the [F]dark hours of the [C]night
@@ -29,3 +32,6 @@ Feels like [F]love feels like [C]love
 No it [F]don't feel like sinning to [C]me
 Feels like [F]love feels like [C]love
 {end_of_verse}
+
+
+

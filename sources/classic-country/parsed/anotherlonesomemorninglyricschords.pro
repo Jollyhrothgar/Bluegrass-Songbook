@@ -1,6 +1,9 @@
 {meta: title Another Lonesome Morning}
 {meta: artist Emmylou Harris}
 {meta: composer Clinton Codack and Wendy Special}
+{meta: x_source classic-country}
+{meta: x_source_file anotherlonesomemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Another [D7]lonesome [G]morning
@@ -33,3 +36,6 @@
 [G]Is another [D7]lonesome [C][Em]day
 [G]Is another [D7]lonesome [G]day
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Blame It All On Me}
 {meta: artist Mac Wiseman}
 {meta: composer Curt Barrett and Charles Wilkens}
+{meta: x_source classic-country}
+{meta: x_source_file dontblameitallonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If our love should fade like a [C]cold winter [A7]day
@@ -43,3 +46,8 @@ Our friends they all say that we [C]too soon must [A7]part
 Some [G]day with the dawn all our [C]love may be [A7]gone
 But [D7]don't blame it all on [G]me
 {end_of_verse}
+
+
+
+
+

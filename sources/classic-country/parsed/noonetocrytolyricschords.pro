@@ -1,6 +1,9 @@
 {meta: title No One To Cry To}
 {meta: artist Jim Reeves}
 {meta: composer Foy Willing and Sid Robin}
+{meta: x_source classic-country}
+{meta: x_source_file noonetocrytolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No one to [B7]cry to  no [C]one to say [G]goodnight
@@ -28,3 +31,5 @@ And give me [G]someone to cry [B7]to
 [C]Someone to say I [G]do
 [D7]Someone to whisper  I love [G]you  
 {end_of_verse}
+
+

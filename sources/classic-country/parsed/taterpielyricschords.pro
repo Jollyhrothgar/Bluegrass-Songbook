@@ -1,6 +1,9 @@
 {meta: title Tater Pie}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file taterpielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ever since I've been so high
@@ -67,3 +70,13 @@ I love tater pie [A7]P-I-E [D7]E-I-P [G]pie
 E-per i-per [C]pass me the pie 
 [G]Fer I just love that [D7]tater [G]pie
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title East Virginia}
 {meta: artist George Hamilton IV}
 {meta: composer Eric Darling, Bob Carey, Alan Arkin}
+{meta: x_source classic-country}
+{meta: x_source_file eastvirginialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born in East Virginia 
@@ -40,3 +43,8 @@ Her name and [G7]age I did not [C]know
 {start_of_verse: Verse 4}
 Her name and [G7]age I did not [C]know
 {end_of_verse}
+
+
+
+
+

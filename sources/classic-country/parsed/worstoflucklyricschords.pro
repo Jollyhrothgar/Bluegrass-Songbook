@@ -1,6 +1,9 @@
 {meta: title Worst Of Luck}
 {meta: artist Cal Smith}
 {meta: composer Joe Poovey}
+{meta: x_source classic-country}
+{meta: x_source_file worstoflucklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just got the news I [F]understand you're [C]married
@@ -23,3 +26,5 @@
 [C]And here's wishing all [F]the worst of luck to [C]you
 [F]Yes here's [C]wishing all the [F]worst of luck to [C]you
 {end_of_verse}
+
+

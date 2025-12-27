@@ -1,5 +1,8 @@
 {meta: title Waitin' For Your Love}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file waitinforyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've been spendin' all my spare [C]time sittin' home [G]alone [Em]
@@ -41,3 +44,8 @@ That you're all I ever [A7]wanted [C]so come and steal my heart [G]away
 I'm a [C]waitin' for your love waitin' every night and [G]day
 You're all I ever [A7]wanted [C]so come and steal my heart [G]away
 {end_of_verse}
+
+
+
+
+

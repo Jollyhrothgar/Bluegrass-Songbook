@@ -1,5 +1,8 @@
 {meta: title Sweetheart of the Year ( aka Happy Anniversary)}
 {meta: artist Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file sweetheartoftheyearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As usual I'll be working 
@@ -25,3 +28,5 @@ And this [C]message [F]underneath [G7][C]to her from [C]me
 [F]The woman who consistently
 [C]Has been [F]the sweetest [C]sweetheart  of [G7]the [C]year
 {end_of_verse}
+
+

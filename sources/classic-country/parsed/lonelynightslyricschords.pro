@@ -1,6 +1,9 @@
 {meta: title Lonely Nights}
 {meta: artist Mickey Gilley}
 {meta: composer Stewart Harris and Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file lonelynightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pardon me
@@ -56,3 +59,10 @@
 [C]Yes I can take the lonely days
 [G7]But I can't take these lonely [C]nights
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Did I Ever Love You}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file didieverloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did I ever ever [C]love you 
@@ -42,3 +45,8 @@ If you’re here today and gone tomorrow
 [E7]Did I ever love [Am]you 
 [D7]I guess I still [G]do
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Heard My Savior Calling Me}
 {meta: artist Rhonda Vincent}
 {meta: composer Rhonda Vincent and Dorothy Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file iheardmysaviorcallingmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There was a great revival in our [F]little country [C]church
@@ -40,3 +43,8 @@ Praise God I’ve seen the light my [G7]Savior's calling [C]me
 {start_of_verse: Verse 4}
 Oh praise God I’ve seen the light my [G7]Savior’s calling calling [C]me
 {end_of_verse}
+
+
+
+
+

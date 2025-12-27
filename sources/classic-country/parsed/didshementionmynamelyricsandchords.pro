@@ -1,5 +1,8 @@
 {meta: title Did She Mention My Name}
 {meta: artist Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file didshementionmynamelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It’s so nice to meet an old friend and [C]pass the time of [Am]day
@@ -35,3 +38,7 @@
 [G]Won't you say hello from someone they'll be [C]no need to [Am]explain
 [D7]And by the way did she mention my [G]name
 {end_of_verse}
+
+
+
+

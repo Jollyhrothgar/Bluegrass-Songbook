@@ -1,5 +1,8 @@
 {meta: title Hey There My Friend}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file heytheremyfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey there my [G7]friend there’s no need to be [C]blue
@@ -18,3 +21,5 @@
 [C]So don’t give up now your life isn’t [F]through
 [C]Hey there my [G7]friend  there’s no need to be [C]blue
 {end_of_verse}
+
+

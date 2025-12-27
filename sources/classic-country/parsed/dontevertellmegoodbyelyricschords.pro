@@ -1,6 +1,9 @@
 {meta: title Don't Ever Tell Me Goodbye}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file dontevertellmegoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hurt me as much as you want [D7]to 
@@ -28,3 +31,6 @@ Do anything that you want [C]to
 But [D7]don't ever tell me [G]goodbye
 Oh [D7]don't ever tell me [G]goodbye
 {end_of_verse}
+
+
+

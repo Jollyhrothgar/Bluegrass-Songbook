@@ -1,6 +1,9 @@
 {meta: title How Do You Hold A Memory}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Lyle Gaston}
+{meta: x_source classic-country}
+{meta: x_source_file howdoyouholdamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How do you hold a memory in your arms 
@@ -33,3 +36,6 @@ That [F]never can come true
 How do you hold a memory [C]in your heart 
 My [G7]memory of [C]you
 {end_of_verse}
+
+
+

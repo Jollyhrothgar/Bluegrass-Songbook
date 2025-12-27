@@ -1,6 +1,9 @@
 {meta: title The Gulf Of Mexico}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file thegulfofmexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Texas coastline holds her close [G7]just like a lady
@@ -35,3 +38,7 @@ In the [G7]Gulf of Mexi[C]co
 I'll be [F]sailing out of [C]yesterday 
 In the [G7]Gulf of Mexi[F]co[C]
 {end_of_verse}
+
+
+
+

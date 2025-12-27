@@ -1,6 +1,9 @@
 {meta: title Little Bit Of The Rain}
 {meta: artist Crystal Gayle}
 {meta: composer Jack W. Routh}
+{meta: x_source classic-country}
+{meta: x_source_file littlebitoftherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm not [D7]telling you [G]baby what to [D7]do with your [G]time 
@@ -40,3 +43,7 @@ A [C]little bit of the [G]rain
 A [C]little bit of the [G]rain
 A [C]little bit of the [G]rain
 {end_of_verse}
+
+
+
+

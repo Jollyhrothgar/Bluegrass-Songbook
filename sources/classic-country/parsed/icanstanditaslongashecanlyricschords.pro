@@ -1,6 +1,9 @@
 {meta: title I Can Stand It (As Long As He Can)}
 {meta: artist Connie Smith}
 {meta: composer Mitchell Torok and Ramona Redd}
+{meta: x_source classic-country}
+{meta: x_source_file icanstanditaslongashecanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I can [C]stand it as [F]long as [C]he can
@@ -34,3 +37,8 @@ Cause I just don't [F]need him any[C]more
 {start_of_verse: Verse 4}
 No I just don't [F]need him any[C]more
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Leave Me the Radio}
 {meta: artist Doug Stone}
 {meta: composer Billy Kirsch, Tim Nichols, Zack Turner}
+{meta: x_source classic-country}
+{meta: x_source_file leavemetheradiolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Stand by your man's waiting
@@ -50,3 +53,9 @@ Leave me my [D7]radi[G]o
 Leave me my [D7]radi[G]o
 Leave me my [D7]radi[G]o
 {end_of_verse}
+
+
+
+
+
+

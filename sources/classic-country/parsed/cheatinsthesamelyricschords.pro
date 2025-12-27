@@ -1,6 +1,9 @@
 {meta: title Cheatin's The Same}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton and Larry Cheshier}
+{meta: x_source classic-country}
+{meta: x_source_file cheatinsthesamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a suit at Caesars Palace or a [F]honky tonk in Dallas
@@ -20,3 +23,5 @@ But [G7]day or night wrong or right cheatin's the [C]same
 Seems like hide and cheat [F]is a universal game
 But [G7]day or night wrong or right cheatin's the [C]same
 {end_of_verse}
+
+

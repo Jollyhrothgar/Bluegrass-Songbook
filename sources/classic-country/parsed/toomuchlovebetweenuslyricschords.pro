@@ -1,6 +1,9 @@
 {meta: title Too Much Love Between Us}
 {meta: artist Kitty Wells}
 {meta: composer Ed Bruce and Tom McKeon}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchlovebetweenuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If sometimes I hurt you sayin' things that I don't mean
@@ -31,3 +34,6 @@ When you're [F]hurt and angry words are spoken love sounds like hate
 But the [G7]more you love the more you hurt and it's always been that way
 There's too much love between us to let love get in our [C]way
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Feet}
 {meta: artist Ray Price}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file feetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Feet walk me down to memory [Dm]street
@@ -49,3 +52,10 @@
 [G7]And try to get her back somehow
 [F]And help me back on my [C]fee-t
 {end_of_verse}
+
+
+
+
+
+
+

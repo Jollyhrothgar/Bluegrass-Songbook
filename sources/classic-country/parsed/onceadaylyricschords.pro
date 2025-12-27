@@ -1,6 +1,9 @@
 {meta: title Once a Day}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file onceadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you found somebody new I thought I never [G7]would
@@ -29,3 +32,6 @@ And once a [G7]night from dusk till [C]dawn
 The only time I wish you [C7]weren't [F]gone 
 Is once a [C]day  [F]every [C]day  all [G7]day [C]long
 {end_of_verse}
+
+
+

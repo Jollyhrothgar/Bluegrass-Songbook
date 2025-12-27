@@ -1,6 +1,9 @@
 {meta: title Fly Into Love}
 {meta: artist Charly McClain}
 {meta: composer Lewis Anderson and Mark Wright}
+{meta: x_source classic-country}
+{meta: x_source_file flyintolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Way down in [Am]Sad Town in the [F]valley of broken [C]dreams 
@@ -36,3 +39,7 @@ We could soar like an [A#7]eagle touch the [Am]sky like a [F]dove
 We could [C]fly to the top of the [Am]world and [A#7]fly into [Dm]love 
 [A#7]F---[F]ly into [C]love 
 {end_of_verse}
+
+
+
+

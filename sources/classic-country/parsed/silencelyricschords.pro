@@ -1,6 +1,9 @@
 {meta: title Silence}
 {meta: artist Lefty Frizzell}
 {meta: composer B.Barton, Wranack}
+{meta: x_source classic-country}
+{meta: x_source_file silencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I get so lonely in the [E7]silence with [F]no one to cry [C]to
@@ -36,3 +39,7 @@ Then I [C]wonder why I love [E7]you so and why I [F]ever let you [C]go
 But you're gone now [Am]and there's [C]one thing I [G7]know
 There's only [F]silence  for [C]me
 {end_of_verse}
+
+
+
+

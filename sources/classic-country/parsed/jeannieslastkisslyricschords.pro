@@ -1,6 +1,9 @@
 {meta: title Jeannie’s Last Kiss}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare and Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file jeannieslastkisslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](Come give Jeannie one last [C]kiss)
@@ -41,3 +44,8 @@ All the [G7]old people swear that he's out there somewhere
 To give [F]Jeannie one last [C]kiss
 Come give [F]Jeannie one last [C]kiss
 {end_of_verse}
+
+
+
+
+

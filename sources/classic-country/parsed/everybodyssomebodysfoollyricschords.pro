@@ -1,6 +1,9 @@
 {meta: title Everybody's Somebody's Fool}
 {meta: artist Connie Francis}
 {meta: composer Howard Greenfield and Jack Keller}
+{meta: x_source classic-country}
+{meta: x_source_file everybodyssomebodysfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The tears I've cried for you could fill an [F]ocean
@@ -43,3 +46,8 @@
 [F]And there are all exceptions to the rule
 [C]Yes everybody's [G7]somebody's [C]fool
 {end_of_verse}
+
+
+
+
+

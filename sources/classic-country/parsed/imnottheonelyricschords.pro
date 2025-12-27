@@ -1,6 +1,9 @@
 {meta: title I'm Not The One}
 {meta: artist Tony Booth}
 {meta: composer Craig Wiseman and Kent Blazy}
+{meta: x_source classic-country}
+{meta: x_source_file imnottheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say that he's the one you love
@@ -62,3 +65,11 @@ Oh you tell me that your [Dm]heart is [Em]true
 [Am]Oh you say you feel just [Dm]like a [Em]fool
 [F]And I'm not the one you [G7]should be [F]talking to[C]
 {end_of_verse}
+
+
+
+
+
+
+
+

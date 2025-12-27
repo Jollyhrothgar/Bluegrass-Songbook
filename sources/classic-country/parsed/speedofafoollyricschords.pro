@@ -1,6 +1,9 @@
 {meta: title Speed Of A Fool}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone and Paul Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file speedofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Couldn't tell me nothing had to [F]learn it on my own
@@ -38,3 +41,8 @@ It's the [F]only way I know I go [Dm]crashing [F]at the speed of a [C]fool
 {start_of_verse: Verse 6}
 I go [Dm]crashing [F]at the speed of a [C]fool
 {end_of_verse}
+
+
+
+
+

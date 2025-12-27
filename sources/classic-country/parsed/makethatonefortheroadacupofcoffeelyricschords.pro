@@ -1,6 +1,9 @@
 {meta: title Make That One For The Road A Cup Of Coffee}
 {meta: artist Lefty Frizzell}
 {meta: composer Freddie Hart and Eddie Steele}
+{meta: x_source classic-country}
+{meta: x_source_file makethatonefortheroadacupofcoffeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hung around the honky tonks and [F]taverns
@@ -36,3 +39,7 @@ She’s [C]giving me another chance [G7]tonight
 Make that [C]one for the road a cup of [F]coffee
 Cause when I [G7]see her everything must be [C]alright
 {end_of_verse}
+
+
+
+

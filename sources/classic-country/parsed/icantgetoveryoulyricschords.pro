@@ -1,6 +1,9 @@
 {meta: title I Can't Get Over You}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file icantgetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I try to find some way to ease [F]my [Fm]mind
@@ -25,3 +28,5 @@
 [F]Oh but you left them old [Fm]chains hangin' on me
 [C]And I can't [D7]get [C][G7]o-ver [C][F]you
 {end_of_verse}
+
+

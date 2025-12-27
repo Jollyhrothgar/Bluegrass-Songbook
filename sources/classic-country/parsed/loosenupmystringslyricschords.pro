@@ -1,6 +1,9 @@
 {meta: title Loosen Up My Strings}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file loosenupmystringslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No one's [G7]gonna [C]jerk me around once I [G7]get my [C]feet on the ground
@@ -31,3 +34,6 @@ But I'll be [G7]swinging while I loosen up my [C]strings
 Yeah we'll all be [G7]swinging while I loosen up my [C]strings
 Yeah we'll all be [G7]swinging while I loosen up my [C]strings
 {end_of_verse}
+
+
+

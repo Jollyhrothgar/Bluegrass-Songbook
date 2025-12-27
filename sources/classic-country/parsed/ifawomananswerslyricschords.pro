@@ -1,6 +1,9 @@
 {meta: title If A Woman Answers}
 {meta: artist Leroy Van Dyke}
 {meta: composer Barry Mann and Cynthia Weil}
+{meta: x_source classic-country}
+{meta: x_source_file ifawomananswerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Her arms are cold but still she holds [C]me to that vow
@@ -29,3 +32,6 @@ Don’t [C]take a chance [D7]please don’t asked for [G]me
 If a woman [C]answers [D7]hang up the [G]phone
 I [C]love you but [D7]darling I’m not [G]free
 {end_of_verse}
+
+
+

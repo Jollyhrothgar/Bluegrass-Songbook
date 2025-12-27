@@ -1,6 +1,9 @@
 {meta: title Send A Message To My Heart}
 {meta: artist Dwight Yoakam}
 {meta: composer Kathy Louvin and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file sendamessagetomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Send a message to my heart on the [D7]wings of the wind
@@ -40,3 +43,8 @@ Send a [Am]message to my [D7]heart to keep you here with [G]me
 {start_of_verse: Verse 4}
 Send a [Am]message to my [D7]heart to keep you here with [G]me
 {end_of_verse}
+
+
+
+
+

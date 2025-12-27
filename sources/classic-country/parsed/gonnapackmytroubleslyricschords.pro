@@ -1,5 +1,8 @@
 {meta: title Gonna Pack My Troubles}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file gonnapackmytroubleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna pack my troubles in a big suitcase 
@@ -46,3 +49,9 @@ And [D7]dump 'em in the [G7]deep blue [C]sea
 {start_of_verse: Verse 5}
 And [D7]dump I'm in the d[G7]eep blue s[C]ea
 {end_of_verse}
+
+
+
+
+
+

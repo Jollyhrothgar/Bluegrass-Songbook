@@ -1,6 +1,9 @@
 {meta: title A Whole Lot Of You}
 {meta: artist Ray Price}
 {meta: composer Ray Holt}
+{meta: x_source classic-country}
+{meta: x_source_file awholelotofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a whole lot of you still left [F]in my [C]heart
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [C]And a whole lot [G7]of hurting hanging [C]on
 {end_of_verse}
+
+
+
+

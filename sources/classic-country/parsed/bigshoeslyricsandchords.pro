@@ -1,6 +1,9 @@
 {meta: title Big Shoes Lyrics and chords}
 {meta: artist Faron Young}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file bigshoeslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]And so I finally get the chance to love [G7]you
@@ -29,3 +32,6 @@ I just [G7]hope my best is good enough for [C]you
 Yes I've got  big shoes [G7]to fill and I hear he wore them [C]well
 [F]But don't forget  [G7]he used these shoes to walk right out on [C]you
 {end_of_verse}
+
+
+

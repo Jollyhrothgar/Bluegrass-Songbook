@@ -1,5 +1,8 @@
 {meta: title Hello God}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file helloGodlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello [F]God are You out there can You hear me are You listening any [C]more
@@ -37,3 +40,7 @@ Hello [F]God please forgive us for we know not what we do
 Hello [C]God give us one more chance to [G7]prove ourselves to You
 Hello [F]God (hello God) hello [C]God
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just To Hold Her}
 {meta: artist Gene Watson}
 {meta: composer Carson Chamberlain and Tim Mensy}
+{meta: x_source classic-country}
+{meta: x_source_file justtoholdherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She called me up right out of the [E7]blue
@@ -38,3 +41,7 @@ And [F]throw away my [G7]life just to hold [C]her [G7]
 How [C]can a simple [E7]hello make me [F]almost [C]lose my [D7]mind
 And [F]throw away my [G7]life just to [F]hold her[G7]   [C]
 {end_of_verse}
+
+
+
+

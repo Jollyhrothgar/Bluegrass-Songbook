@@ -1,5 +1,8 @@
 {meta: title Beyond the River Bend}
 {meta: artist Hazel Dickens}
+{meta: x_source classic-country}
+{meta: x_source_file beyondtheriverbendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a path that leads back through my memories
@@ -28,3 +31,6 @@ Yes it's only a memory I can never [G7]go back home [C]again
 Down by the river down by the old river bend
 Down by the river the sweet [G7]fragrance of flowers [C]win
 {end_of_verse}
+
+
+

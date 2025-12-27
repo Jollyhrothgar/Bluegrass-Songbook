@@ -1,6 +1,9 @@
 {meta: title Candyland}
 {meta: artist Faron Young}
 {meta: composer Bill Emerson and Jody Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file candylandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you wouldn’t be[F]lieve the [C]things that I’ve [C7]seen 
@@ -34,3 +37,7 @@ And [C]dreamed that [A7]your in [D7]Candyland [G7]at Christmas [C]time
 Have [F]you ever been [Fm]poor 
 And [C]dreamed that [A7]your in [D7]Candyland [G7]at Christmas [C]time
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Everybody Loves To Hear A Bird Sing}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file everybodylovestohearabirdsinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes birds don't [F]have enough to eat
@@ -52,3 +55,10 @@ Everybody loves to hear a [F]bird sing ([C]wh[G7]ist[C]le)
 The prettiest music [F]you have ever heard
 Here's [C]how to make [G7]friends with the [C]bird
 {end_of_verse}
+
+
+
+
+
+
+

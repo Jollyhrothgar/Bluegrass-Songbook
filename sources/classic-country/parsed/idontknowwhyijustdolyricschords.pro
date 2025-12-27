@@ -1,6 +1,9 @@
 {meta: title I Don’t Know Why I Just Do}
 {meta: artist Marty Robbins}
 {meta: composer Roy Turk and Fred Ahlert}
+{meta: x_source classic-country}
+{meta: x_source_file idontknowwhyijustdolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know why [Am]I love you like I do[Em]
@@ -23,3 +26,5 @@ You never seem to [Am]want my [D7]roman[G7]cin'
 I [Dm]don't know [G7]why I just [C]do
 I [Dm]don't know [G7]why I just [C]do
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Shelter Of Your Eyes}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file shelterofyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the shelter of your [F]eyes
@@ -35,3 +38,7 @@ And I'm gonna [F]stay [G7]right here cause [C]I'm
 [C]Tune out the [F]world [G7]and rest my [C]head
 [F]Neath the [G7]shelter of your [C]eyes
 {end_of_verse}
+
+
+
+

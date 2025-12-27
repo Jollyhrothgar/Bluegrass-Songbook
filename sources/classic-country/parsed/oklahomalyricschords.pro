@@ -1,6 +1,9 @@
 {meta: title Oklahoma}
 {meta: artist Cal Smith}
 {meta: composer Webb Pierce and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file oklahomalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]O-[C]h Okla[G7]homa  
@@ -30,3 +33,7 @@ I [F]guess they knew their [G7]boy would soon go [C]wrong
 [F]O-[C]h Okla[G7]homa  
 Okla[F]homa how I [G7]wish I could come [C]home
 {end_of_verse}
+
+
+
+

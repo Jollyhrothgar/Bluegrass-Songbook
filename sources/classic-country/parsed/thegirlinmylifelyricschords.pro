@@ -1,6 +1,9 @@
 {meta: title The Girl In My Life}
 {meta: artist Bob Luman}
 {meta: composer Steve Davis, Sammy Lyons, Mark Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlinmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]She was [C]there to [E7]pick me up when [A7]I was down
@@ -24,3 +27,5 @@ When [C]God made her [E7]pattern He [F]didn't use it [Fm]twice
 And I [C]thank Him for the [G7]girl in my [C]life[E7]   [F]  [Fm]
 Yes I [C]thank Him for the [G7]girl in my [C]life
 {end_of_verse}
+
+

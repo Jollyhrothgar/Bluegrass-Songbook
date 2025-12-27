@@ -1,6 +1,9 @@
 {meta: title Down On The Old Plantation}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
 {meta: composer Carson J. Robison}
+{meta: x_source classic-country}
+{meta: x_source_file downontheoldplantationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear the ban[F]jos [C]ringing
@@ -26,3 +29,6 @@ Oh [G7]take me there and let me live and [C]die
 {start_of_verse: Verse 4}
 Oh [G7]take me there and let me live and [C]die
 {end_of_verse}
+
+
+

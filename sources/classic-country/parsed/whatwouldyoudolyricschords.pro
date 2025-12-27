@@ -1,5 +1,8 @@
 {meta: title What Would You Do}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file whatwouldyoudolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You call me a cheater well maybe that's [F]true
@@ -21,3 +24,5 @@ You [G7]say it's wrong and that may be true but it sure seems right to [C]me
 And you say you'd be different if this happened to [F]you
 But with [G7]heaven at your fingertips what would you [C]do
 {end_of_verse}
+
+

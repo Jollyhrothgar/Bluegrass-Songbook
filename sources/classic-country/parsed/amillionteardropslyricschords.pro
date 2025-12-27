@@ -1,6 +1,9 @@
 {meta: title A Million Teardrops}
 {meta: artist Conway Twitty}
 {meta: composer Fred Carter}
+{meta: x_source classic-country}
+{meta: x_source_file amillionteardropslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I picked up my baby at the [C]usual [D7]time last [G]night[D7]
@@ -37,3 +40,7 @@ I gotta [D7]find that girl and make her [G]reali[C]ze
 [D7]And stop these [G]millions of teardrops [C]drop drip [D7]droppin' from my [G]eyes
 [D7]And stop these [G]millions of teardrops [C]drop drip [D7]droppin' from my [G]eyes
 {end_of_verse}
+
+
+
+

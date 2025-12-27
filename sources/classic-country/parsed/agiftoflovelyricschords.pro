@@ -1,6 +1,9 @@
 {meta: title A Gift Of Love}
 {meta: artist The Bluegrass Cardinals}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file agiftoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whip-poor-wills and daffodils are [F]pretty things
@@ -33,3 +36,7 @@ And that’s not [C]all you brought [G7]you gave me [C]love
 {start_of_verse: Verse 5}
 And that’s not all you brought [G7]you gave me [C]love
 {end_of_verse}
+
+
+
+

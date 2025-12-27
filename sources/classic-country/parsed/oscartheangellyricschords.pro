@@ -1,6 +1,9 @@
 {meta: title Oscar The Angel}
 {meta: artist Randy Travis}
 {meta: composer Don Schlitz}
+{meta: x_source classic-country}
+{meta: x_source_file oscartheangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oscar was an angel and he [C]used to [G]walk the [C]streets
@@ -80,3 +83,13 @@ Then he'd watch five [C]minutes then he'd [G]come and talk to [D7]me
 {start_of_verse: Verse 8}
 Yeah [C]we will [D7]all be angels [C]some[G]day
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

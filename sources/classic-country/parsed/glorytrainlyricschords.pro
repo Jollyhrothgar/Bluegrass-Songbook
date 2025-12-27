@@ -1,6 +1,9 @@
 {meta: title Glory Train}
 {meta: artist Ricky Nelson}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file glorytrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want to ride that glory train 
@@ -43,3 +46,8 @@ You be sure to have a ticket if you [D7]really do [G7]believe
 That the [C]Master's waiting for you in His [F]home way up [C]above
 Just to fill our hearts with gladness and His [G7]great eternal [C]love
 {end_of_verse}
+
+
+
+
+

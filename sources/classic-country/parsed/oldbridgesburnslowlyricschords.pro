@@ -1,6 +1,9 @@
 {meta: title Old Bridges Burn Slow}
 {meta: artist Billy Joe Royal}
 {meta: composer Jerry Meaders}
+{meta: x_source classic-country}
+{meta: x_source_file oldbridgesburnslowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here we go round again
@@ -76,3 +79,17 @@ Masquerading as long lost friends
 [D7]Ahhhhh how they burn
 [G]Don't ya know they burn slow
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

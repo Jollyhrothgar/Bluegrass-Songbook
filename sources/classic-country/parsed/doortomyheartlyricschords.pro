@@ -1,6 +1,9 @@
 {meta: title Door To My Heart}
 {meta: artist Buddy Holly}
 {meta: composer Bob Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file doortomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I opened the [G7]door and left it [C]standing
@@ -20,3 +23,5 @@ But the door to my [G7]heart is still open [C]wide
 Now you've shunned my [F]hope my love and my [G7]pri[C]de
 But the door to my [G7]heart is still open [C]wide
 {end_of_verse}
+
+

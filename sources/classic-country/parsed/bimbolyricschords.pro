@@ -1,6 +1,9 @@
 {meta: title Bimbo}
 {meta: artist Jim Reeves}
 {meta: composer Rod Morris}
+{meta: x_source classic-country}
+{meta: x_source_file bimbolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bimbo Bimbo where you gonna go-i-o
@@ -67,3 +70,14 @@ And everybody calls to him as down the street he goes
 {start_of_verse: Verse 10}
 Bimbo Bimbo Bimbo Bimbo Bimbo
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

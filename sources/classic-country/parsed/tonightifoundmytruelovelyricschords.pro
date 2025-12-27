@@ -1,6 +1,9 @@
 {meta: title Tonight I Found My True Love}
 {meta: artist Sonny James}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file tonightifoundmytruelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I found my true love
@@ -29,3 +32,6 @@
 [C]You'll always be there
 [Em](Tonight [F]tonight for me to [G7]love) [C]tonight
 {end_of_verse}
+
+
+

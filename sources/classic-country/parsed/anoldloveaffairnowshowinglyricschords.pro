@@ -1,6 +1,9 @@
 {meta: title An Old Love Affair Now Showing}
 {meta: artist Leroy Van Dyke}
 {meta: composer David Ingles}
+{meta: x_source classic-country}
+{meta: x_source_file anoldloveaffairnowshowinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]An old love affair now [Am]showing
@@ -44,3 +47,8 @@ An [D7]old love affair now [G]showing
 {start_of_verse: Verse 5}
 An [D7]old love affair now [G]showing
 {end_of_verse}
+
+
+
+
+

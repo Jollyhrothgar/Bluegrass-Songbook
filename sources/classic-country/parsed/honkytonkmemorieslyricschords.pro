@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Memories}
 {meta: artist Mickey Gilley}
 {meta: composer Rory Michael Buorke, Eugene D. Dobbins, Johnny A. Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Honky tonk memories a cheating song [D7]melody
@@ -29,3 +32,6 @@ It takes me back to you and me and what it used to be back [G]then
 A walking through the swinging doors and dancing on hardwood [D7]floors
 I tipped the band to play one more I wish we had it all [G]again
 {end_of_verse}
+
+
+

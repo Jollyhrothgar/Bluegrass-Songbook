@@ -1,6 +1,9 @@
 {meta: title I Should Have Watched That First Step}
 {meta: artist George Strait}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file ishouldhavewatchedthatfirststeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I once had a love a true and [C]lasting love
@@ -33,3 +36,7 @@ That [G]first step did [D7]somethin' to her [G]mind
 {start_of_verse: Verse 4}
 That first step did [D7]somethin' to her [G]mind
 {end_of_verse}
+
+
+
+

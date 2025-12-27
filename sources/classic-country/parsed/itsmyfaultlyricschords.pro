@@ -1,5 +1,8 @@
 {meta: title It's My Fault}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file itsmyfaultlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's my fault  [F]now that I've [C]lost you 
@@ -21,3 +24,5 @@ It over[D7]takes you by and [G7]by
 [C]The bonds of love [F]it's sure to [C]suffer 
 It's my [F]fault  [G7]that you said [C]goodbye
 {end_of_verse}
+
+

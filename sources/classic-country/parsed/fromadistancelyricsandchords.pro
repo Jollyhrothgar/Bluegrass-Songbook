@@ -1,6 +1,9 @@
 {meta: title From A Distance}
 {meta: artist Ricky Nelson}
 {meta: composer Johnny Bachelor}
+{meta: x_source classic-country}
+{meta: x_source_file fromadistancelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I hate to love you [Am]love you from a distance
@@ -27,3 +30,6 @@ I'm [F]comin' home to [G7]you I'm gonna [C]stay
 Yes I'm gonna love you but [Am]not from a distance
 And when [F]I hold you [G7]near you'll hear me [C]say
 {end_of_verse}
+
+
+

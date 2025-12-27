@@ -1,6 +1,9 @@
 {meta: title I Gotta Get to You}
 {meta: artist George Strait}
 {meta: composer Jim Lauderdale, Jimmy Ritchey, Blaine Larsen}
+{meta: x_source classic-country}
+{meta: x_source_file igottagettoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I gotta get to you cause you're sure been getting to [Am]me [D7]
@@ -31,3 +34,6 @@ I [D7]gotta get to you cause you're sure been getting
 [Am]Gotta get to you cause you're [D7]sure been getting
 [Am]Gotta get to you cause you're [D7]sure been getting to [G]me
 {end_of_verse}
+
+
+

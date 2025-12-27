@@ -1,5 +1,8 @@
 {meta: title If Not For The Love Of Christ}
 {meta: artist The Oak Ridge Boys}
+{meta: x_source classic-country}
+{meta: x_source_file ifnotfortheloveofchristlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Looking back over the [F]years that I've known
@@ -35,3 +38,7 @@ The [G7]love of Christ oh the [C]love of Christ
 [C]I can't imagine [F]living my life
 If [C]not for the [G7]love of [C]Christ
 {end_of_verse}
+
+
+
+

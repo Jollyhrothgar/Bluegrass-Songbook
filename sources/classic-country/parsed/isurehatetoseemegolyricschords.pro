@@ -1,6 +1,9 @@
 {meta: title I Sure Hate To See Me Go}
 {meta: artist Cal Smith}
 {meta: composer Conway Twitty and L.E. White}
+{meta: x_source classic-country}
+{meta: x_source_file isurehatetoseemegolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You took my picture [F]off the [C]wall threw my clothes out in [F]the [C]hall
@@ -23,3 +26,5 @@ But there's no [C]need of standing by a fire that [F]lost its final [C]glow
 And I sure [G7]hate to see me [C]go
 And I sure [G7]hate to see me [C]go
 {end_of_verse}
+
+

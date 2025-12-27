@@ -1,5 +1,8 @@
 {meta: title Mind Your Own Business}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file mindyourownbusinesslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If the wife and I are fussin' brother that's our right
@@ -39,3 +42,8 @@ Why don't you mind your own business mind your own business
 If you mind your own business you'll stay busy all the time
 If you mind your own business you'll stay busy all the time
 {end_of_verse}
+
+
+
+
+

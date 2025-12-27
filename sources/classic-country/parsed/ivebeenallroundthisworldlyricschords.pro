@@ -1,5 +1,8 @@
 {meta: title I’ve Been All Round This World}
 {meta: artist The Osborne Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeenallroundthisworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Workin’ on the new railroad mud up to my knees
@@ -42,3 +45,8 @@ I [G7]been all ’round this [C]world
 [F]Workin’ for ol’ John Henry he’s [C]mighty hard to please
 I [G7]been all ’round this [C]world
 {end_of_verse}
+
+
+
+
+

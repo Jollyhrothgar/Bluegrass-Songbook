@@ -1,6 +1,9 @@
 {meta: title When I'm Knee Deep In Bluegrass}
 {meta: artist Doyle Lawson}
 {meta: composer Pete Goble}
+{meta: x_source classic-country}
+{meta: x_source_file whenimkneedeepinbluegrasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everything I own is in my old Ford [F]except what's on my [C]back
@@ -48,3 +51,9 @@ Knee deep in [C]bluegrass is [G7]where I'm gonna to [C]be
 Any part of old Kentucky's [C7]home sweet home to [F]me
 Knee deep in [C]bluegrass is [G7]where I'm gonna to [C]be
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title On The Rhythm Range}
 {meta: artist Hank Snow}
 {meta: composer Bob Nolan}
+{meta: x_source classic-country}
+{meta: x_source_file ontherhythmrangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was born a rover on the rhythmic [G7]range
@@ -49,3 +52,8 @@ On the rhythm [G]range (on the rhythm range)
 Every[D7]thing is keepin' time
 To a sort of runic rhyme and [G]rhythm
 {end_of_verse}
+
+
+
+
+

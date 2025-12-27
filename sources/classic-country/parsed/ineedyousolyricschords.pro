@@ -1,6 +1,9 @@
 {meta: title I Need You So}
 {meta: artist Elvis Presley}
 {meta: composer Ivory Joe Hunter}
+{meta: x_source classic-country}
+{meta: x_source_file ineedyousolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I need you [C]so 
@@ -39,3 +42,8 @@ Around me [F]tightly
 Yes I miss them [C]nightly 
 [D7]When you're not [G7]at [C]home 
 {end_of_verse}
+
+
+
+
+

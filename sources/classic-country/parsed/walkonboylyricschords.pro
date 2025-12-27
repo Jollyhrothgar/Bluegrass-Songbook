@@ -1,6 +1,9 @@
 {meta: title Walk On Boy}
 {meta: artist Jimmy Dean}
 {meta: composer Wayne P. Walker and Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file walkonboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 NC
@@ -83,3 +86,14 @@ Just keep on walkin'
 Feet [G7]draggin', back [C]achin'
 Keep on walkin'
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

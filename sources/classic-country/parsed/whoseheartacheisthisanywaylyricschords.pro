@@ -1,6 +1,9 @@
 {meta: title Whose Heartache Is This Anyway}
 {meta: artist Reba McEntire}
 {meta: composer Wayland Holyfield and Jim McBride}
+{meta: x_source classic-country}
+{meta: x_source_file whoseheartacheisthisanywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't tell me that time will ease the [C]pain
@@ -41,3 +44,8 @@ So don't [G]try to make it easy and don't [C]search for words to say
 Why don't you just go now you've [C]done enough today
 And [D7]whose heartache is this any[G]way
 {end_of_verse}
+
+
+
+
+

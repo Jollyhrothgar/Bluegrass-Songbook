@@ -1,6 +1,9 @@
 {meta: title On My Knees}
 {meta: artist Charlie Rich}
 {meta: composer Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file onmykneeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On my knees  I [C]ask you [G]please 
@@ -38,3 +41,7 @@ The [G]next time we meet on [C]the [G]street
 Honey you can [D7]love me you [C]can 
 Kiss me like you used [G]to
 {end_of_verse}
+
+
+
+

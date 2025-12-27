@@ -1,6 +1,9 @@
 {meta: title The Best Way I Know How}
 {meta: artist Mel Tillis}
 {meta: composer Jerry Chestnut}
+{meta: x_source classic-country}
+{meta: x_source_file thebestwayiknowhowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I look up and there you stand before [D7]me
@@ -30,3 +33,6 @@ I'm just [G]right back where I was [C]before you met [D7]me
 And I'm [C]getting by the [D7]best way I know [G]how
 And I'm [C]getting by the [D7]best way I know [G]how
 {end_of_verse}
+
+
+

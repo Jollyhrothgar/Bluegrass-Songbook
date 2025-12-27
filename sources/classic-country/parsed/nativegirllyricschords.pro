@@ -1,6 +1,9 @@
 {meta: title Native Girl}
 {meta: artist Marty Robbins}
 {meta: composer Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file nativegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On an island [Dm]far away 
@@ -36,3 +39,7 @@ I'm going back and [Dm]find her
 We take the vows that [F]make us one 
 [G7]We live on island [C]in the sun
 {end_of_verse}
+
+
+
+

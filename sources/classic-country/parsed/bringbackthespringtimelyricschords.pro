@@ -1,6 +1,9 @@
 {meta: title Bring Back The Springtime}
 {meta: artist Ray Price}
 {meta: composer Kurt Kaiser}
+{meta: x_source classic-country}
+{meta: x_source_file bringbackthespringtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When in the spring 
@@ -35,3 +38,7 @@ Down from the mountains high [C]above
 {start_of_verse: Verse 5}
 [Dm]May I warm and [G7]peaceful be [C]again
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Keep On The Firing Line}
 {meta: artist The Statler Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file keeponthefiringlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if you're in the battle for the Lord and right
@@ -54,3 +57,10 @@ Just [C]keep on the [G7]firing [C]line
 [F]Just [C]keep on the [G7]firing [C]line
 [F]Just [C]keep on the [G7]firing [C]line
 {end_of_verse}
+
+
+
+
+
+
+

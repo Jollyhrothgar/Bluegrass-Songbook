@@ -1,5 +1,8 @@
 {meta: title Sing it Pretty Sue}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file singitprettysuelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So you gave up all between us for a glamorous career
@@ -28,3 +31,6 @@ I'll [F]just be one of millions who [C]gives the praise you [G7]get
 And [C]maybe every year or so I'll drop a card to you 
 To [G7]tell you I'm still listening so sing it pretty [C]Sue 
 {end_of_verse}
+
+
+

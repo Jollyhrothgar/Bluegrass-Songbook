@@ -1,5 +1,8 @@
 {meta: title Christ Is My Sunshine}
 {meta: artist Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file christismysunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was down and needed someone
@@ -42,3 +45,8 @@ Christ is my sunshine my only sunshine
 He changed my [F]life and my ways com[C]pletely
 So please don't take my [G7]sunshine [C]away
 {end_of_verse}
+
+
+
+
+

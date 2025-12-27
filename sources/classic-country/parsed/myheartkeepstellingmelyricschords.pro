@@ -1,6 +1,9 @@
 {meta: title My Heart Keeps Telling Me}
 {meta: artist George Morgan}
 {meta: composer Earl Nunn and Beasley Smith}
+{meta: x_source classic-country}
+{meta: x_source_file myheartkeepstellingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart keeps telling me you'll [F]always be the [C]same
@@ -32,3 +35,6 @@ My [C]life is filled with heartaches my [F]soul has misery
 For I know I've [G7]lost you [C]darling 
 My [G7]heart keeps telling [C]me
 {end_of_verse}
+
+
+

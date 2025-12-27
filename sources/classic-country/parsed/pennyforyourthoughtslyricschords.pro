@@ -1,6 +1,9 @@
 {meta: title Penny For Your Thoughts}
 {meta: artist Jim Reeves}
 {meta: composer Jenny Lou Carson}
+{meta: x_source classic-country}
+{meta: x_source_file pennyforyourthoughtslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Memories are haunting you and they're [C]making you feel [G]blue
@@ -29,3 +32,6 @@
 [G]But if someday we should part you can [C]say a broken [G]heart
 [D7]Offered a penny for your [G]thoughts
 {end_of_verse}
+
+
+

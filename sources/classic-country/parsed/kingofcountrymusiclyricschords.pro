@@ -1,6 +1,9 @@
 {meta: title King Of Country Music}
 {meta: artist Tanya Tucker}
 {meta: composer Steve Dorff and Milton Brown}
+{meta: x_source classic-country}
+{meta: x_source_file kingofcountrymusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The battered bus pulls into one more nameless little [D7]town
@@ -50,3 +53,9 @@
 [F]And the screaming fans acknowledge [C]a hit from way back [D7]when
 [G7]He's the King of Country Music once [C]again
 {end_of_verse}
+
+
+
+
+
+

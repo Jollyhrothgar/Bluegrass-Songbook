@@ -1,6 +1,9 @@
 {meta: title Sing Me A Song About Jesus}
 {meta: artist Doyle Lawson}
 {meta: composer Corey Hensley, Doyle Lawson, Michael Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file singmeasongaboutJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sing me a [C]song about [G]Jesus 
@@ -47,3 +50,9 @@ Where [C]my soul [D7]ever longs to [B7]be [C]
 {start_of_verse: Verse 5}
 Where my soul [D7]ever longs to [G]be 
 {end_of_verse}
+
+
+
+
+
+

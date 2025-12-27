@@ -1,6 +1,9 @@
 {meta: title Bluest Heartache Of The Year}
 {meta: artist Kenny Dale}
 {meta: composer Warren W. Wimberly}
+{meta: x_source classic-country}
+{meta: x_source_file bluestheartacheoftheyearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bluest Heart[C7]ache of the [F]year
@@ -40,3 +43,8 @@ I've got the [C]bluest [G7]heartache of the [C]year
 {start_of_verse: Verse 4}
 [F]I've got the [C]bluest [G7]heartache of the [F]yea[C]r
 {end_of_verse}
+
+
+
+
+

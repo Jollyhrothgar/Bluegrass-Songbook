@@ -1,6 +1,9 @@
 {meta: title To Be Alone}
 {meta: artist Bill Anderson}
 {meta: composer Billy Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file tobealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](To be alone) to be alone
@@ -37,3 +40,8 @@ And he promised me that he'd forever be at my side
 [C]He'll be my [F]friend beyond e[A#7]ternity
 It doesn't [F]worry me [G7]to [C]be a[F]lone
 {end_of_verse}
+
+
+
+
+

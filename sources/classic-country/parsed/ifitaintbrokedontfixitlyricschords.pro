@@ -1,6 +1,9 @@
 {meta: title If It Ain't Broke Don't Fix It}
 {meta: artist John Anderson}
 {meta: composer John Anderson and Tony Stampley}
+{meta: x_source classic-country}
+{meta: x_source_file ifitaintbrokedontfixitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it ain't broke don't fix it
@@ -39,3 +42,7 @@ It [C]always helps to make it [G7]easy on your[C]self
 {start_of_verse: Verse 5}
 It always helps to make it [G7]easy on your[C]self
 {end_of_verse}
+
+
+
+

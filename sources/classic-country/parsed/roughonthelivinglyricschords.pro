@@ -1,6 +1,9 @@
 {meta: title Rough On The Living}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file roughonthelivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]His picture was in [G7]all the [C]papers
@@ -64,3 +67,13 @@ But she [G7]really speaks well of the [C]dead
 Yeah [F]Nashville is rough on the [C]living
 But she [G7]really speaks well of the [C]dead
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Gathering Flowers}
 {meta: artist Kitty Wells}
 {meta: composer Marvin E. Baumgardner}
+{meta: x_source classic-country}
+{meta: x_source_file gatheringflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Death is an angel sent [F]down from [C]above
@@ -43,3 +46,8 @@ Beautiful flowers that [D7]will never [G7]decay
 [C]Gathered by angels [F]and carried [C]away
 Forever to bloom in the [G7]Master's Bou[C]quet
 {end_of_verse}
+
+
+
+
+

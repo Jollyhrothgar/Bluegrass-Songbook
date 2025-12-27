@@ -1,6 +1,9 @@
 {meta: title I Guess I'll Go On Dreaming}
 {meta: artist Kitty Wells}
 {meta: composer Johnnie Bailes and Walter Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file iguessillgoondreaminglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You tell me you are leaving you don't [F]love me anymore 
@@ -29,3 +32,6 @@ And no [G7]longer in your heart I'm to [C]blame
 Even after death has called you from this [F]wicked world of sin 
 Then I [G7]guess I'll go on dreaming just the [C]same
 {end_of_verse}
+
+
+

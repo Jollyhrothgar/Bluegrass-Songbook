@@ -1,5 +1,8 @@
 {meta: title I Felt Your Presence Again Today Lord}
 {meta: artist Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file ifeltyourpresenceagaintodaylordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I felt your presence again to[D7]day Lord
@@ -43,3 +46,8 @@ Did my [C]heart  that burns with[G]in me
 [C]I feel [G]Jesus [D7] in this [G]place
 Repeat last verse
 {end_of_verse}
+
+
+
+
+

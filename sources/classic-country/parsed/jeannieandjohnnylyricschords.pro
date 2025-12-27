@@ -1,5 +1,8 @@
 {meta: title Jeannie And Johnny}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file jeannieandjohnnylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jeannie and [F]Johnny both grew [G7]up [C]together
@@ -46,3 +49,9 @@ And there stood her [F]Johnny her true [C]loving [G7]Johnny
 {start_of_verse: Verse 7}
 He placed a [G7]ring on her [C]hand
 {end_of_verse}
+
+
+
+
+
+

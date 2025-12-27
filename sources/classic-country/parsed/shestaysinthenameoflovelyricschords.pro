@@ -1,6 +1,9 @@
 {meta: title She Stays In The Name Of Love}
 {meta: artist Moe Bandy}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file shestaysinthenameoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been everything that a man shouldn't be
@@ -62,3 +65,11 @@ But she [G7]stays in the name of [C]love
 She could leave in the name of a heart full of pain
 But she [G7]stays in the name of [C]love
 {end_of_verse}
+
+
+
+
+
+
+
+

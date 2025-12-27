@@ -1,6 +1,9 @@
 {meta: title Every Time You Touch Her}
 {meta: artist Reba McEntire}
 {meta: composer Mary Ann Kennedy, Pat Bunch, Pam Rose}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeyoutouchherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do you hold her all night long do you sing her our love song
@@ -25,3 +28,5 @@ Do you [C]hold her all night long do you sing her our love song
 [Am]Do you kiss her [C]lips un[F]til love [Fm]makes her [C]weak  oh [G7]darling[C]  [F]
 Every time you [G7]touch her  [Dm]every time you [G7]touch her think of [C]me
 {end_of_verse}
+
+

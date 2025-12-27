@@ -1,5 +1,8 @@
 {meta: title I'll Take The Blame}
 {meta: artist The Lonesome River Band}
+{meta: x_source classic-country}
+{meta: x_source_file illtaketheblamelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I slipped around dear two timing you
@@ -36,3 +39,9 @@ But now I'm sorry and now I'm through
 {start_of_verse: Verse 6}
 And if you leave me [D7]I'll take the [G]blame
 {end_of_verse}
+
+
+
+
+
+

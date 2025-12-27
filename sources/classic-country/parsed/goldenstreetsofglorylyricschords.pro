@@ -1,5 +1,8 @@
 {meta: title Golden Streets Of Glory}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file goldenstreetsofglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Glory [F]to His [C]name oh [F]holy ho[C]ly
@@ -55,3 +58,9 @@ Will [F]lead me up to the Master's throne
 [C]With the angel band I'll sing
 Glory [F]to His [C]name oh [F]holy ho[C]ly
 {end_of_verse}
+
+
+
+
+
+

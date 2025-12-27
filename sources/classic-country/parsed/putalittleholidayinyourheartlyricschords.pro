@@ -1,6 +1,9 @@
 {meta: title Put A Little Holiday In Your Heart}
 {meta: artist LeAnn Rimes}
 {meta: composer Greg Wojahn, Roger Wojahn, Scott Wojahn}
+{meta: x_source classic-country}
+{meta: x_source_file putalittleholidayinyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Feel the [G7]cold wind [Am]blowing [Dm]winters coming [C]on
@@ -65,3 +68,11 @@ To keep the [Em]world from tearing [Am]apart
 If you [F]know where to look 
 Yeah you [C]gotta put a [G7]little holiday in your [C]heart
 {end_of_verse}
+
+
+
+
+
+
+
+

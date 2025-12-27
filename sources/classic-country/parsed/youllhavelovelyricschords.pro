@@ -1,6 +1,9 @@
 {meta: title You'll Have Love}
 {meta: artist David Houston}
 {meta: composer Carmol Taylor and Quinton Claunch}
+{meta: x_source classic-country}
+{meta: x_source_file youllhavelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll do my very [F]best for you in [C]every [G7]way I [C]can
@@ -29,3 +32,6 @@ And [F]these two hands of [G7]mine will work for [C]you till I grow old
 I'll be by your [F]side whatever we go [G7]through
 And you'll have [F]love if that's [G7]good enough for [F]you[C]
 {end_of_verse}
+
+
+

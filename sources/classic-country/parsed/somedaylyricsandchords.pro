@@ -1,6 +1,9 @@
 {meta: title Someday}
 {meta: artist Patsy Cline}
 {meta: composer Jimmy Hodges}
+{meta: x_source classic-country}
+{meta: x_source_file somedaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know that someday you'll want me to want [D7]you
@@ -22,3 +25,5 @@ When I am [G]strong for [G7]somebody [C]else
 And [D7]although you don't want me now I'm [G]gonna get along [E7]somehow
 And then I [A7]w-on't [D7]w-ant [G]you
 {end_of_verse}
+
+

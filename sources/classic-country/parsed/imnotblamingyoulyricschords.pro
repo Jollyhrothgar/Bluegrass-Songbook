@@ -1,6 +1,9 @@
 {meta: title I'm Not Blaming You}
 {meta: artist Marty Robbins}
 {meta: composer Billy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file imnotblamingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She might meet you secretly when she's [G7]lonely
@@ -23,3 +26,5 @@ Oh [G7]but I'm not blaming you I'm blaming [C]me
 But [G7]I'm not blaming you I'm blaming [C]me
 But [G7]I'm not blaming you I'm blaming [C]me
 {end_of_verse}
+
+

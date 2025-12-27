@@ -1,5 +1,8 @@
 {meta: title Pour Me Another Tequila}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file pourmeanothertequilalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pour me another tequila Sheila  
@@ -78,3 +81,16 @@ And [G7]I'll run for the boarder [C]again
 Yeah  pour [F]me another Tequilla [C]Sheila 
 As [G7]I ride for the boarder [C]again 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

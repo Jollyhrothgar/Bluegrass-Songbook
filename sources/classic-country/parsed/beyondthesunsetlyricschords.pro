@@ -1,6 +1,9 @@
 {meta: title Beyond The Sunset}
 {meta: artist Slim Whitman}
 {meta: composer Virgil P. Brock and Blanche K. Brock}
+{meta: x_source classic-country}
+{meta: x_source_file beyondthesunsetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Beyond the [F]sun-set [C]O blissful [G7]morning
@@ -30,3 +33,6 @@
 [C]Beyond the [G7]sun-set forever [C]more
 [F]Beyond the [C]sun-set [G7]forever [C]more
 {end_of_verse}
+
+
+

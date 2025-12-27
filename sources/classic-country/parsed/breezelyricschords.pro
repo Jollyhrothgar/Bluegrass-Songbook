@@ -1,6 +1,9 @@
 {meta: title Breeze}
 {meta: artist Mickey Gilley}
 {meta: composer Ted Daffan and Bernard Landes}
+{meta: x_source classic-country}
+{meta: x_source_file breezelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you blew my gal [G7]away
@@ -23,3 +26,5 @@ Pull my [G7]baby back to [C]me
 {start_of_verse: Verse 3}
 Pull my [G7]baby back to [C]me
 {end_of_verse}
+
+

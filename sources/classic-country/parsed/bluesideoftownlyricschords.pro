@@ -1,6 +1,9 @@
 {meta: title Blue Side Of Town}
 {meta: artist Patty Loveless}
 {meta: composer Paul Kennerley and Hank DeVito}
+{meta: x_source classic-country}
+{meta: x_source_file bluesideoftownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rain on my [G]window [C]tears in my [G]eyes
@@ -54,3 +57,9 @@ I hang [D7]around the blue side of [G]town
 I hang [D7]around the blue side of [G]town
 I hang [D7]around the blue side of [G]town
 {end_of_verse}
+
+
+
+
+
+

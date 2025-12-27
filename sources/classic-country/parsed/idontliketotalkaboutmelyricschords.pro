@@ -1,5 +1,8 @@
 {meta: title I Don't Like to Talk About Me}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file idontliketotalkaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I just walked through the [C]door asking questions [F]again
@@ -32,3 +35,7 @@ Cause [Dm]I don’t like to [G7]talk about [C]me
 {start_of_verse: Verse 4}
 No I [Dm]don’t like to [G7]talk about [C]me
 {end_of_verse}
+
+
+
+

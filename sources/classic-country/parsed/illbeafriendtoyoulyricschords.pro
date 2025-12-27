@@ -1,5 +1,8 @@
 {meta: title I'll Be A Friend To You}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file illbeafriendtoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll be a friend to [G7]you 
@@ -34,3 +37,7 @@ And [G7]I'll be a friend to [C]you [C7]
 What [F]else can a fool do with his [C]choices oh subdue  
 And [G7]I'll be a friend to [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Distant Drums}
 {meta: artist Jim Reeves}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file distantdrumslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear the [G7]sound  of distant [C]drums
@@ -29,3 +32,6 @@ For the [G7]distant drums might change our wedding [C]date
 And love me now for now is [C7]all the time there may [F]be
 If you [G7]love me Mary  Mary marry [C]me
 {end_of_verse}
+
+
+

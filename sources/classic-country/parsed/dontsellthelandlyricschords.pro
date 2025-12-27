@@ -1,6 +1,9 @@
 {meta: title Don't Sell The Land}
 {meta: artist The Kentucky Gentlemen}
 {meta: composer Harold Macomber and John Morris}
+{meta: x_source classic-country}
+{meta: x_source_file dontsellthelandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My daddy was born here here in these hills
@@ -48,3 +51,9 @@ Don't [G7]sell the [C]land
 My heart's in these hills momma
 Don't [G7]sell the [C]land
 {end_of_verse}
+
+
+
+
+
+

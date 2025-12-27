@@ -1,5 +1,8 @@
 {meta: title Most of All}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file mostofalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lot's of things in life [D7]have never [G]mattered
@@ -28,3 +31,6 @@ And [D7]live again those moments [G]I [G7]recall
 But [C]I had to give you up to make you [G]happy
 To give you up was the [D7]hardest most of [G]all
 {end_of_verse}
+
+
+

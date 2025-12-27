@@ -1,5 +1,8 @@
 {meta: title Before You Came Along}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file beforeyoucamealonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Before you came [G7]along life was [C]lonely
@@ -42,3 +45,8 @@
 [C]My heart won't let me say that I'm [A7]lonely
 [D7]There's been a change [G7]since you came [C]along
 {end_of_verse}
+
+
+
+
+

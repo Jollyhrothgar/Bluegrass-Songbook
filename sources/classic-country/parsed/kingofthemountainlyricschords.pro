@@ -1,6 +1,9 @@
 {meta: title King Of The Mountain}
 {meta: artist George Jones}
 {meta: composer Larry Boone and Paul Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file kingofthemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gave her that diamond [G7]she dreamed [C]of
@@ -27,3 +30,6 @@ I [C]thought I was [C7]king of the [C][F]moun-tain
 [F]I thought I was king of the [F][C]moun-tain
 But I was [C]only a [G7]fool on the [C]hill
 {end_of_verse}
+
+
+

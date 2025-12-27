@@ -1,6 +1,9 @@
 {meta: title Sawmill}
 {meta: artist Mel Tillis}
 {meta: composer Horace Whatley and Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file sawmilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well once I was a slave at the [C]sawmill
@@ -45,3 +48,7 @@ tag:
 Mercy on a poor boy mercy on a poor boy
 Let me have a [C]dollar [G]bill
 {end_of_verse}
+
+
+
+

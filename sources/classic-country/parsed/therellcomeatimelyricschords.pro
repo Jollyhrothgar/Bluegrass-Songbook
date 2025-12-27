@@ -1,6 +1,9 @@
 {meta: title There'll Come A Time}
 {meta: artist Webb Pierce}
 {meta: composer Audrey Grisham and Sylvia Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file therellcomeatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There'll come a [C7]time you'll [Dm]remember
@@ -29,3 +32,6 @@ When you [D7]learn the mistakes you have [G7]made
 For you'll find the [Am]love you were [Em]searching [Dm]for
 Was the [C]one who [G7]cares enough to [C]cry
 {end_of_verse}
+
+
+

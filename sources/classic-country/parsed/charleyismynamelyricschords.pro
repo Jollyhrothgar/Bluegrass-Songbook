@@ -1,5 +1,8 @@
 {meta: title Charley Is My Name}
 {meta: artist Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file charleyismynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was sittin' in a [C]honky tonk in [G]Texas [D7]drinkin' [G]beer
@@ -35,3 +38,7 @@ And [C]through my tears I can [G]see her smile sayin' [Am]Charley [D7]is my [G]n
 {start_of_verse: Verse 5}
 And [C]through my tears I can [G]see her smile sayin' [Am]Charley [D7]is my [C]name[G]
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Let Go And Let Jesus}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file letgoandletJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Just let go  let Jesus [G]in
@@ -36,3 +39,8 @@ I let [D7]go and let Jesus set me [G]free
 {start_of_verse: Verse 5}
 [D7](So just let go) let Jesus [G]in
 {end_of_verse}
+
+
+
+
+

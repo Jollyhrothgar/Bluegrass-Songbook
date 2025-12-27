@@ -1,6 +1,9 @@
 {meta: title Ballad Of Sally Rose}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley and Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file balladofsallyroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Her momma picked him up in [C]south [G]Minnesota
@@ -43,3 +46,8 @@
 [C]Through the valley [D7]of the shadow [G]of Roosevelt's [C]nose
 [G]Adios South Dakota [D7]adios Sally [G]Rose
 {end_of_verse}
+
+
+
+
+

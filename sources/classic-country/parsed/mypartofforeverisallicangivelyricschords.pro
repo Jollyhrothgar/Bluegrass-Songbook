@@ -1,6 +1,9 @@
 {meta: title My Part Of Forever (Is All I Can Give)}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file mypartofforeverisallicangivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't take your hurt and wish it away
@@ -28,3 +31,6 @@ I never said the words that brought on the pai[C7]n
 My part of [C]forever  [G7]is all I can [C]give
 [F]My part of [C]forever  [G7]is all I can [C]give
 {end_of_verse}
+
+
+

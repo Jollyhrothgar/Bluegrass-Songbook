@@ -1,5 +1,8 @@
 {meta: title Oo De Lally}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file oodelallylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Robin Hood and Little John
@@ -61,3 +64,11 @@ Oo-de-lally Oo-de-lally
 Oo-de-lally Oo-de-lally
 [D7]Golly what a [G]day
 {end_of_verse}
+
+
+
+
+
+
+
+

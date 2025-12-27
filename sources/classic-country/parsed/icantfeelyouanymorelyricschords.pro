@@ -1,6 +1,9 @@
 {meta: title I Can't Feel You Anymore}
 {meta: artist Loretta Lynn}
 {meta: composer Theresa Beaty and Meredith Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file icantfeelyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no reason to [F]look at me that [C]way
@@ -31,3 +34,6 @@
 [Am]But now that [C]leaving you has [F]come
 [Dm]And when he touches me I [G7]can't feel you [C]anymore
 {end_of_verse}
+
+
+

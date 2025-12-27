@@ -1,5 +1,8 @@
 {meta: title The Moon Is High}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file themoonishighlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the moon is high and so am I 
@@ -17,3 +20,4 @@ The stars are out and so will I be pretty [F]soon
 But [G7]come the dawn and it will dawn on me you're [C]gone
 Repeat 
 {end_of_verse}
+

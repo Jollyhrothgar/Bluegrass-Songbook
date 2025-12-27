@@ -1,6 +1,9 @@
 {meta: title That's What Friends Are For}
 {meta: artist Barbara Mandrell}
 {meta: composer Ed Penney and Rob Parsons}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatfriendsareforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]She was my [G]friend when I needed a friend
@@ -30,3 +33,6 @@ And now [Am]there's only [D7]me
 If [G]that's what friends are [Am]for
 [D7]I don't need them any[G]more
 {end_of_verse}
+
+
+

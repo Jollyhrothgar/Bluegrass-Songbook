@@ -1,6 +1,9 @@
 {meta: title Somewhere Between The Moon And You}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file somewherebetweenthemoonandyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sittin' here in [G7]Fort Worth and [Am]for what it's worth
@@ -41,3 +44,7 @@ That [Am]rainbow I was [G7]chasin' [C]left my whole world [F]blue
 That [Am]rainbow I was [G7]chasin' [C]left my whole world [F]blue
 [E7]I lost my [Dm]dreams [C]somewhere be[F]tween the [G7]moon and [Am]you[C]
 {end_of_verse}
+
+
+
+

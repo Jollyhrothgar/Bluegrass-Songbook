@@ -1,6 +1,9 @@
 {meta: title Gypsy Heart}
 {meta: artist Jim Reeves}
 {meta: composer Mitchell Torok and Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file gypsyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh Gypsy heart when you hear the whistle of a train
@@ -43,3 +46,8 @@ And [G7]the lovely ladies down in Spain oh gypsy heart let's [C]go
 You've been doing everything since Noah sailed his [F]ark
 So [G7]let's keep rolling 'til we find another gypsy [C]heart
 {end_of_verse}
+
+
+
+
+

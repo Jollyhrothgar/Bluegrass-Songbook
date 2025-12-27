@@ -1,6 +1,9 @@
 {meta: title Somebody Called L.A.}
 {meta: artist Tony Booth}
 {meta: composer Homer Joy}
+{meta: x_source classic-country}
+{meta: x_source_file somebodycalledlalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This old road I'm walkin' on it runs [G7]two ways
@@ -29,3 +32,6 @@ But [C]now that she's gone I can't bring myself to [G7]stay
 [F]Here in this [C]nightmare [F]somebody [G7]called [C]LA
 [F]Here in this [C]nightmare [F]somebody [G7]called [C]LA
 {end_of_verse}
+
+
+

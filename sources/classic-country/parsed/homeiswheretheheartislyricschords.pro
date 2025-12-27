@@ -1,6 +1,9 @@
 {meta: title Home Is Where The Heart Is}
 {meta: artist Elvis Presley}
 {meta: composer Hal David and Sherman Edwards}
+{meta: x_source classic-country}
+{meta: x_source_file homeiswheretheheartislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Home is where the [Am]heart is
@@ -40,3 +43,8 @@ And my [Em]heart is [Am]anywhere you are
 [F]Anywhere you [G7]are is [C]home
 [F]Home [Dm]home [F]home [C]home
 {end_of_verse}
+
+
+
+
+

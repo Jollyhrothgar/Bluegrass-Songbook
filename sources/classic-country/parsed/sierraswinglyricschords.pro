@@ -1,5 +1,8 @@
 {meta: title Sierra Swing}
 {meta: artist Sharyn Lee and The Sundowners}
+{meta: x_source classic-country}
+{meta: x_source_file sierraswinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When they play Sierra Swing 
@@ -49,3 +52,8 @@ Mr. band man play Sierra [G]Swing
 {start_of_verse: Verse 4}
 [D7]Mr. band man play Sierra [G]Swing
 {end_of_verse}
+
+
+
+
+

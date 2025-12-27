@@ -1,6 +1,9 @@
 {meta: title Midnight In Montgomery}
 {meta: artist Alan Jackson}
 {meta: composer Don Sampson and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file midnightinmontgomerylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]Midnight in Montgomery [C]silver eagle lonely road
@@ -40,3 +43,8 @@ When the [C]wind is right you'll hear his songs smell [Dm]whiskey in the air
 {start_of_verse: Verse 5}
 [C]He's always singing [Dm]there [C]  Hank's always singing [Dm]there
 {end_of_verse}
+
+
+
+
+

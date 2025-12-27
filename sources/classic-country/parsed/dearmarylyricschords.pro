@@ -1,6 +1,9 @@
 {meta: title Dear Mary}
 {meta: artist Slim Whitman}
 {meta: composer Dave Bartholomew and Pearl King}
+{meta: x_source classic-country}
+{meta: x_source_file dearmarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Dear Mary I'm writing this [C]letter 
@@ -23,3 +26,5 @@ But adore you [D7]   and [G7]forget you
 Answers for someone [C]new
 Repeat last verse 
 {end_of_verse}
+
+

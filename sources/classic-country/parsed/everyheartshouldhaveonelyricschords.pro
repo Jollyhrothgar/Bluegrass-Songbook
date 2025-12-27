@@ -1,6 +1,9 @@
 {meta: title Every Heart Should Have One}
 {meta: artist Charley Pride}
 {meta: composer Bill Shore and Byron Gallimore}
+{meta: x_source classic-country}
+{meta: x_source_file everyheartshouldhaveonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The night is filled with lonely souls
@@ -51,3 +54,12 @@ Rearranged my life and changed my heart
 Arms that ache for someone to hold
 [F]And hungry eyes forever [C]searching
 {end_of_verse}
+
+
+
+
+
+
+
+
+

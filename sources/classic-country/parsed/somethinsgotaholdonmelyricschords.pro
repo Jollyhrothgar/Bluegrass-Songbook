@@ -1,6 +1,9 @@
 {meta: title Somethin's Got A Hold On Me}
 {meta: artist Sonny James}
 {meta: composer Michael Kirkland and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file somethinsgotaholdonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh somethin's got a hold on me (oh it must [F]be [C]love)
@@ -36,3 +39,7 @@ Let me tell you now somethin's got a hold on me
 (Oh it [F]must be [C]love)
 Oh [F]somethin's got a hold on me I know (oh [C]it must [F]be [C]love)
 {end_of_verse}
+
+
+
+

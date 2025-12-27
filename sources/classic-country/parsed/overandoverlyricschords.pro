@@ -1,6 +1,9 @@
 {meta: title Over And Over}
 {meta: artist Jean Shepard}
 {meta: composer Dan Welch and Mary McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file overandoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Over and over you held me in your [D7]arms
@@ -29,3 +32,6 @@
 [G7]Over and over you have left me [C]blue
 [G]But still I can't [D7]get over just being in love with [G]you
 {end_of_verse}
+
+
+

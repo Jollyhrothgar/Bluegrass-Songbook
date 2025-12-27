@@ -1,6 +1,9 @@
 {meta: title Turn Around}
 {meta: artist Mickey Gilley}
 {meta: composer Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file turnaroundlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]When your [G]all [D7]alone and [G]blue 
@@ -35,3 +38,8 @@ Maybe [G]someday [D7]you're gonna [G]see
 [D7]That your [G]love is meant [C]to be for only [G]me
 Turn [D7]around I'll be following [G]you
 {end_of_verse}
+
+
+
+
+

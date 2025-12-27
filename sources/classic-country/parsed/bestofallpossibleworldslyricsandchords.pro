@@ -1,5 +1,8 @@
 {meta: title Best Of All Possible Worlds}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file bestofallpossibleworldslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was [E7]runnin' through the summer rain tryin' to catch the evenin' train
@@ -60,3 +63,11 @@ And [D7]lots of pretty thoughts that I ain't [G]thunk oh yeah
 Lord there's still so many lonely [C]girls [Am]
 In [D7]this best of all possible [G]worlds
 {end_of_verse}
+
+
+
+
+
+
+
+

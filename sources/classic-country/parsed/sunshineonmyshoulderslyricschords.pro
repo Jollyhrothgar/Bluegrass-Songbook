@@ -1,5 +1,8 @@
 {meta: title Sunshine On My Shoulders}
 {meta: artist John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file sunshineonmyshoulderslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sunshine [C]on my [G]shoulders [C]makes me [G]happy
@@ -40,3 +43,8 @@ Sunshine [C]almost [G]always [C]makes me [G]high
 Tag:
 Sunshine [C]almost [G]always
 {end_of_verse}
+
+
+
+
+

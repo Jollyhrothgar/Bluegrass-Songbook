@@ -1,5 +1,8 @@
 {meta: title Getting Over You}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file gettingoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I sold my car to [C]buy more [D7]wine
@@ -27,3 +30,6 @@
 [C]Lord I took them one and [Am]all
 [G]It was something [D7]I had to do to get [C]over [G]y--ou
 {end_of_verse}
+
+
+

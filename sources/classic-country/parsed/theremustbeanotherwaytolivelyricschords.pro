@@ -1,6 +1,9 @@
 {meta: title There Must Be Another Way To live}
 {meta: artist Kitty Wells}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file theremustbeanotherwaytolivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The streets of the city is your [F]kingdom
@@ -31,3 +34,6 @@
 [C]Oh there must [G7]be another way to [C]live
 [G7]Yes there must be another way to [C]live
 {end_of_verse}
+
+
+

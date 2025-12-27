@@ -1,5 +1,8 @@
 {meta: title The Promised Land}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file thepromisedlandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I left my home in Norfolk Virginia
@@ -63,3 +66,11 @@ Tidewater [F]4-10-0-9
 Tell the [G7]folks back home this is the promised land 
 Calling and the boy's on the [C]line
 {end_of_verse}
+
+
+
+
+
+
+
+

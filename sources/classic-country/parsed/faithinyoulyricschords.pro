@@ -1,6 +1,9 @@
 {meta: title Faith In You}
 {meta: artist Randy Travis}
 {meta: composer Tom Douglas, Joe Henry, Matt Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file faithinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't have faith in technology [Em]
@@ -46,3 +49,8 @@ You [G]believe in [Am]me
 And I still [D7]have faith in [C]you  
 [Em]I do have [D7]faith in [G]you
 {end_of_verse}
+
+
+
+
+

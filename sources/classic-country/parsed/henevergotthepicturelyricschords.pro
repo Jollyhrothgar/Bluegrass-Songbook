@@ -1,6 +1,9 @@
 {meta: title He Never Got The Picture}
 {meta: artist George Jones}
 {meta: composer Allan Phillips and Bobby Reed}
+{meta: x_source classic-country}
+{meta: x_source_file henevergotthepicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]He lays her [C]picture on the table then he'll [F]reach and pick it up
@@ -33,3 +36,7 @@ Cause he [C]never got the [G7]picture at [C]all [F]
 {start_of_verse: Verse 5}
 No he [C]never got the [G7]picture at [C]all
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Jesus Help Me To Stand}
 {meta: artist Alison Krauss}
 {meta: composer Ron Block}
+{meta: x_source classic-country}
+{meta: x_source_file Jesushelpmetostandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Through trials [F]troubles and [C]care
@@ -36,3 +39,7 @@ Canceled my [F]debt at Calva[C]ry
 Rose from the dead un[F]locked Heaven's [C]door
 [F]Trust in His [C]love and [G7]live ever[C]more
 {end_of_verse}
+
+
+
+

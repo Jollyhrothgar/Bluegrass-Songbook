@@ -1,6 +1,9 @@
 {meta: title If The Lord Wasn't Walking By My Side}
 {meta: artist Elvis Presley}
 {meta: composer Henry Slaughter}
+{meta: x_source classic-country}
+{meta: x_source_file ifthelordwasntwalkingbymysidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't know just what I'd do if the [C]Lord wasn't walking by my [G]side
@@ -51,3 +54,10 @@ If the Lord wasn't walking by my side [D7]every day
 {start_of_verse: Verse 7}
 If the [C]Lord wasn't [D7]walking by my [G]side
 {end_of_verse}
+
+
+
+
+
+
+

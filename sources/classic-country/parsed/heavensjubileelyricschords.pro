@@ -1,6 +1,9 @@
 {meta: title Heaven's Jubilee}
 {meta: artist Chuck Wagon Gang}
 {meta: composer Adger M. Pace and G.T. Speer}
+{meta: x_source classic-country}
+{meta: x_source_file heavensjubileelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some glad morning we shall see Jesus in the air
@@ -43,3 +46,8 @@ Oh what singing oh what shouting
 [C]Oh what glory hallelujah
 [G7]When we meet our Blessed Savior in the [C]skies
 {end_of_verse}
+
+
+
+
+

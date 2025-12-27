@@ -1,5 +1,8 @@
 {meta: title Slow Hand}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file slowhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]As the midnight moon was drifting through
@@ -44,3 +47,7 @@ You want a lover with an easy touch
 [F]You want somebody who will spend some [C]time
 Not come and go in a heated [Am]rush
 {end_of_verse}
+
+
+
+

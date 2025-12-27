@@ -1,6 +1,9 @@
 {meta: title Who Do You Think}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file whodoyouthinklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are people who are whispering
@@ -43,3 +46,8 @@ Could [C]believe that the story is true
 And who do you [C7]think could [F]believe such a thing
 Well here's [C]hoping to [G7]Heaven you [C]do
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Take A Letter Miss Gray}
 {meta: artist Faron Young}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file takealettermissgraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take a letter Miss [F]Gray 
@@ -43,3 +46,8 @@ And just [C]sign it simply [F]John
 And [F]oh yes P[C]S 
 Please [G7]forgive what I've [C]done
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title You're My Girl}
 {meta: artist The Everly Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file youremygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I close my eyes and I think of you
@@ -28,3 +31,6 @@ I can't believe you belong to [C]me
 [C]You're something [F]else
 And you're my [C]girl
 {end_of_verse}
+
+
+

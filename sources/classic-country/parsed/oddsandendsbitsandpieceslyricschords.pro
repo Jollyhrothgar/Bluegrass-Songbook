@@ -1,6 +1,9 @@
 {meta: title Odds And Ends (Bits And Pieces)}
 {meta: artist Curtis Potter}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file oddsandendsbitsandpieceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A photograph that's [F]signed with love
@@ -37,3 +40,7 @@ Odds and [G7]ends that keep tugging at my [C]tears
 {start_of_verse: Verse 4}
 Odds and [G7]ends that keep tugging at my [C]tears
 {end_of_verse}
+
+
+
+

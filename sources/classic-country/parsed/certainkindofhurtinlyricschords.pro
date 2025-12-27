@@ -1,5 +1,8 @@
 {meta: title Certain Kind Of Hurtin'}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file certainkindofhurtinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got a certain kind of [C]hurtin' since you've [G]gone
@@ -24,3 +27,5 @@
 [G]Cause I'm gonna come get’cha [C]and I'm bringin' you [G]back
 [C]I've got a certain kind of hurtin' since you've [G]gone
 {end_of_verse}
+
+

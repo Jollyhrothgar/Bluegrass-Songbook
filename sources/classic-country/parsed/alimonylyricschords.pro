@@ -1,6 +1,9 @@
 {meta: title Alimony}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file alimonylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Alimony ali[D7]mony
@@ -37,3 +40,7 @@ Alimony alimony
 I'm [Am]paying for [D7]my mis[G]take  every [E7]payday
 [Am]Paying for [D7]my mis[G]take yes I am 
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Vincent (Starry Starry Night)}
 {meta: artist Don McLean}
+{meta: x_source classic-country}
+{meta: x_source_file vincentstarrystarrynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Starry starry night paint your palette blue and [Am]grey
@@ -57,3 +60,10 @@
 [Am]How you [D7]suffered for your sanity   how you tried to set them [Em]free
 [A7]They would not listen they're [Am]not  [D7]listening still   perhaps they never [G]will
 {end_of_verse}
+
+
+
+
+
+
+

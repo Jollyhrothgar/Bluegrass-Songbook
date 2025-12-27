@@ -1,6 +1,9 @@
 {meta: title Pride And Sorrow}
 {meta: artist Charly McClain}
 {meta: composer Ronny Scaife}
+{meta: x_source classic-country}
+{meta: x_source_file prideandsorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lover [F]I feel your body trembling [C]close to mine
@@ -39,3 +42,8 @@ I'll [F]heal your pride and [G7]chase away your [C]sorrow
 I'll [F]heal your pride and [G7]chase away your [C]sorrow
 I'll [F]heal your pride and [G7]chase away your [C]sorrow
 {end_of_verse}
+
+
+
+
+

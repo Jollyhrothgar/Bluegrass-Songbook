@@ -1,6 +1,9 @@
 {meta: title Dedicate The Blues To Me}
 {meta: artist Ronnie Milsap}
 {meta: composer Charles Singleton - Rose Marie McCoy}
+{meta: x_source classic-country}
+{meta: x_source_file dedicatethebluestomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love songs are for [G7]those who share [C]love[G7]
@@ -34,3 +37,7 @@ I've [D7]hung my I've hung my head and [G7]cried
 [F]Oh until I [G7]find that [C]some[Am]one
 [Dm]Dedicate the blues to [F]me [C]
 {end_of_verse}
+
+
+
+

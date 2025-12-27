@@ -1,6 +1,9 @@
 {meta: title The Man That Broke Your Heart}
 {meta: artist Gene Watson}
 {meta: composer Bill Joe Foster, Gene Pistilli, Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file themanthatbrokeyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're crying cause he treated you so [D7]bad
@@ -33,3 +36,6 @@ And if I met him what the heck well I'd [C]hug his old red neck
 You [D7]might feel like taking him apart 
 But I'd like to shake the hand of the man that broke your [G]heart
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Goodnight Little Sweetheart}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file goodnightlittlesweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Goodnight little sweetheart goodnight
@@ -24,3 +27,6 @@ Goodnight little sweetheart goodnight
 [B7]For after you're [C]gone memory lingers [A7]on
 [F]Goodnight little [G7]sweetheart [C]goodnight
 {end_of_verse}
+
+
+

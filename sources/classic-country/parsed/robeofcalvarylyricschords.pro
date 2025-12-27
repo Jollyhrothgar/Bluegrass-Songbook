@@ -1,6 +1,9 @@
 {meta: title Robe Of Calvary}
 {meta: artist Eddy Arnold}
 {meta: composer Kathleen Twomey, Fred White, Elaine Rivers}
+{meta: x_source classic-country}
+{meta: x_source_file robeofcalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]His robe His [C]robe the [G]robe of [Em]Calva[D7]ry
@@ -44,3 +47,9 @@ There was faith in [C]every [D7]breath
 [G]His robe His [C]robe the [G]robe of [Em]Calva[D7]ry
 Twas [G]worn by my [C]Redeemer who [D7]lives eterna[G]lly
 {end_of_verse}
+
+
+
+
+
+

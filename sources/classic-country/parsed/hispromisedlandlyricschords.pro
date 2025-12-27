@@ -1,6 +1,9 @@
 {meta: title His Promised Land}
 {meta: artist Rhonda Vincent}
 {meta: composer Lisa Shaffer and Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file hispromisedlandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my way was long and all hope was gone
@@ -34,3 +37,7 @@ I journey to my final [G7]home sweet promised [C]land
 {start_of_verse: Verse 4}
 I journey to my final [G7]home sweet promised [C]land
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It'll Be Me}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file itllbemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well if you hear somebody knocking on your door
@@ -41,3 +44,8 @@ Gonna search the [C]countryside all the haystacks [D7]too
 If you [C]find a lump in your sugar [G]bowl
 Baby it'll be [D7]me and I'll be looking for [G]you
 {end_of_verse}
+
+
+
+
+

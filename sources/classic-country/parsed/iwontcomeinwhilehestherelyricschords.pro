@@ -1,6 +1,9 @@
 {meta: title I Won't Come In While He's There}
 {meta: artist Jim Reeves}
 {meta: composer Gene Davis}
+{meta: x_source classic-country}
+{meta: x_source_file iwontcomeinwhilehestherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Thought I'd stop by awhile [G7]and see [C]you 
@@ -23,3 +26,5 @@ I'd like to tell you just how much I still love [F]you
 But I [C]won't come in [G7]while he's [C]there 
 No I [C]won't come in [G7]while he's [C]there
 {end_of_verse}
+
+

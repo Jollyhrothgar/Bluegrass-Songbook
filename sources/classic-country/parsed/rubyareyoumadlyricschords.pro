@@ -1,6 +1,9 @@
 {meta: title Ruby Are You Mad}
 {meta: artist Buck Owens}
 {meta: composer Cousin Emmy}
+{meta: x_source classic-country}
+{meta: x_source_file rubyareyoumadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ruby  Ruby  honey are you [D7]mad at your [G]man
@@ -30,3 +33,7 @@ If you don't believe I'm right
 {start_of_verse: Verse 5}
 [D7]Ruby Ruby honey are you mad at your [G]man
 {end_of_verse}
+
+
+
+

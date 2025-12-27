@@ -1,6 +1,9 @@
 {meta: title Throw Your Love My Way}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb and Loys Southerland}
+{meta: x_source classic-country}
+{meta: x_source_file throwyourlovemywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]To me your just as pretty as a speckled pup
@@ -43,3 +46,8 @@ You've got the kind of smile that will turn your damper down
 [D7]Well I don't think I'm slipping but I just have to say
 [G]For goodness gracious baby throw your [D7]love my [G]way
 {end_of_verse}
+
+
+
+
+

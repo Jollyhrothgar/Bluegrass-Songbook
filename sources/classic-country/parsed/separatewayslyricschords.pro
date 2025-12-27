@@ -1,6 +1,9 @@
 {meta: title Separate Ways}
 {meta: artist Elvis Presley}
 {meta: composer Bobby West and Richard Mainegra}
+{meta: x_source classic-country}
+{meta: x_source_file separatewayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see a change has come into our lives
@@ -36,3 +39,7 @@ And pick up all the pieces left behind [F]us
 And maybe someday somewhere along the [C]way
 [G7]Another love will [F]find [C]us
 {end_of_verse}
+
+
+
+

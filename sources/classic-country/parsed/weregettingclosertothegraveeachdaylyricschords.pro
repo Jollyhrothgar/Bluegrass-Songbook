@@ -1,5 +1,8 @@
 {meta: title We're Getting Closer to the Grave Each Day}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file weregettingclosertothegraveeachdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh don't you know that [F]Jesus [C]died 
@@ -28,3 +31,6 @@ There'll be no use [G7]to pray
 So each [C]day you live [F]love and [C]forgive
 We're getting closer to the [G7]grave each [C]day
 {end_of_verse}
+
+
+

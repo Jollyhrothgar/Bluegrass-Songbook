@@ -1,6 +1,9 @@
 {meta: title Mama Company}
 {meta: artist Porter Wagoner}
 {meta: composer Charlie Aldridge}
+{meta: x_source classic-country}
+{meta: x_source_file mamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Mama [Am]mama [D7]it's gettin' [G7]close to the [C]end
@@ -48,3 +51,9 @@ The [Am]candle I've burned on both [D7]ends is flickering [G7]low
 [C]There's a stranger at my shoulder mama he's come for me[Am]    [D7]
 Goodbye [G7]mama I love you [C]mama
 {end_of_verse}
+
+
+
+
+
+

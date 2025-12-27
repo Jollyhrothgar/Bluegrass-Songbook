@@ -1,6 +1,9 @@
 {meta: title Living And Learning}
 {meta: artist Mel Tillis}
 {meta: composer Terry Skinner}
+{meta: x_source classic-country}
+{meta: x_source_file livingandlearninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now life is filled with ups and downs and [F]we both had our share
@@ -33,3 +36,7 @@ And [G7]we'll go on through life together living and [C]learning
 {start_of_verse: Verse 5}
 And [G7]we'll go on through life together living and [C]learning
 {end_of_verse}
+
+
+
+

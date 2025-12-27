@@ -1,6 +1,9 @@
 {meta: title You're The Only Song I Sing Today}
 {meta: artist Johnny Paycheck}
 {meta: composer Buzz Rabin and Marvin Brantley}
+{meta: x_source classic-country}
+{meta: x_source_file youretheonlysongisingtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born to say the things I have to say
@@ -47,3 +50,9 @@ And honey [C]you're the only [G7]song I sing [C]today
 {start_of_verse: Verse 5}
 Yes you're the only song I'll [G7]ever [C]sing
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Missing In Action}
 {meta: artist Ernest Tubb}
 {meta: composer A. Q. Smith and Helen Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file missinginactionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The warships had landed and [F]I came a[C]shore
@@ -43,3 +46,8 @@ Be[D7]cause there was no one to [G7]welcome me home
 [C]The face of my darling [F]no more will I [C]see
 [F]For Missing in [C]Action [G7]forever I'll [C]be
 {end_of_verse}
+
+
+
+
+

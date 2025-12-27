@@ -1,6 +1,9 @@
 {meta: title Ruthless}
 {meta: artist Statler Brothers}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file ruthlesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who always cooked my [A7]steaks and cooked 'em [Dm]rare  Ruth
@@ -29,3 +32,6 @@ But [F]now I'm as [C]Ruthless as can [Dm]be
 [C]I used to think that [A7]me and Ruth would [Dm]share a happy home
 But it looks like I'll be [G7]Ruthless from now [C]on
 {end_of_verse}
+
+
+

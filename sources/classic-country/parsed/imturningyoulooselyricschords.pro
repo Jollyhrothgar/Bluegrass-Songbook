@@ -1,5 +1,8 @@
 {meta: title I'm Turning You Loose}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file imturningyoulooselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I tried to hold on baby 
@@ -46,3 +49,8 @@ Repeat last 2 verses
 Today I'm [G7]all fresh out of trying 
 Here's your coat I'm turning you [C]loose
 {end_of_verse}
+
+
+
+
+

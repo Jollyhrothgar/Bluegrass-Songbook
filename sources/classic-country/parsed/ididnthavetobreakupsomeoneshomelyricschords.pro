@@ -1,6 +1,9 @@
 {meta: title I Didn't Have To Break Up Someone's Home}
 {meta: artist Kitty Wells}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file ididnthavetobreakupsomeoneshomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say you're sorry that it happened [C]but you love him [G]so
@@ -29,3 +32,6 @@ It [C]may not last [G]but you can't say I'm [D7]wrong
 You [G]say you're proud of your new love well [C]I'm proud of mine [G]too
 And I [C]didn't have to [D7]break up someone's [G]home
 {end_of_verse}
+
+
+

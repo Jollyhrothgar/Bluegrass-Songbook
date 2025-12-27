@@ -1,6 +1,9 @@
 {meta: title I'm Gonna See Jesus}
 {meta: artist B.J. Thomas}
 {meta: composer Archie Jordan}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnaseeJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've never seen the Eiffel [F]Tower
@@ -36,3 +39,7 @@ I'll see Him [Dm]smile open His [G7]arms and walk my [C]way
 I'm gonna see [F]Jesus [G7]I'm gonna see [Em]Jesus[Am]
 I'm gonna [Dm]look in[C]to His [F]eyes some[C]day
 {end_of_verse}
+
+
+
+

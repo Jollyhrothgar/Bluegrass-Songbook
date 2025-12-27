@@ -1,6 +1,9 @@
 {meta: title Until You}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Jimbeau Hinson and Rusty Golden}
+{meta: x_source classic-country}
+{meta: x_source_file untilyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby feel my [Em]heartbeat
@@ -38,3 +41,7 @@
 [C]Lacking there on my devotion never [G7]true
 [C]Until you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Are You On The Road To Loving Me Again}
 {meta: artist Debbie Boone}
 {meta: composer Debbie Hupp and Bob Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file areyouontheroadtolovingmeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Are you here just to [F]pass the time of [C]day
@@ -36,3 +39,7 @@
 [F]Did you realize the future lies right here where it began
 [C]Are you on the road to [G7]loving me [C]again
 {end_of_verse}
+
+
+
+

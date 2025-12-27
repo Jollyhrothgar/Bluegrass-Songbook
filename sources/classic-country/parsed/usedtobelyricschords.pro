@@ -1,5 +1,8 @@
 {meta: title Used to Be}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file usedtobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You don't love me anymore my darling
@@ -22,3 +25,5 @@ That you gave me little darling
 [C]You don't love me anymore my darling
 [F]I'm just a [G7]used to be to [C]you
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title It Feels Better Now}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file itfeelsbetternowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It feels better [Dm]now I got time out of the [C]way
@@ -21,3 +24,5 @@
 [G7]The ticks and tocks of passing time that were like hammers in my [F]mind
 [C]And built a wall  [G7]that hides it all it feels better [C]now
 {end_of_verse}
+
+

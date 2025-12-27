@@ -1,6 +1,9 @@
 {meta: title Hero For A Day}
 {meta: artist Conway Twitty}
 {meta: composer Wayne C. Thompson and Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file heroforadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lady    [G][C]you need a lover   [C]someone [D7]to take [G]you
@@ -23,3 +26,5 @@
 [C]Let me be your [G]hero for a [C]day
 [G]Lady   [Am][C]I'll be your [G]hero
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title You Bring Out The Wild Side Of Me}
 {meta: artist Dan Seals}
+{meta: x_source classic-country}
+{meta: x_source_file youbringoutthewildsideofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Our friends all think I [C]am a gentle [G]man
@@ -38,3 +41,7 @@ There's no place I'd rather [C]be
 [G]No one sees the stranger that this simple man can [C]be
 [G]When you bring out the [D7]wild side of [G]me
 {end_of_verse}
+
+
+
+

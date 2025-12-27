@@ -1,5 +1,8 @@
 {meta: title A Dark Starless Night}
 {meta: artist Mac Martin and The Dixie Travelers}
+{meta: x_source classic-country}
+{meta: x_source_file adarkstarlessnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh tonight dear I’m thinking [C]of days long gone [G]by 
@@ -24,3 +27,5 @@ Oh meet me my darlin’ [C]please meet me [G]alone
 My [D7]heart will be blue as a [C]dark starless [D7]night
 [C]My heart will be blue as a [G]dark [D7]starless [G]night
 {end_of_verse}
+
+

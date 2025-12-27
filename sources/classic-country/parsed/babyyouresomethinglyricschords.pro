@@ -1,6 +1,9 @@
 {meta: title Baby You're Something}
 {meta: artist Johnny Rodriguez}
 {meta: composer Curly Putman, Don Cook, Rafe VanHoy}
+{meta: x_source classic-country}
+{meta: x_source_file babyyouresomethinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You ask me why I'm not [G7]falling for you
@@ -33,3 +36,7 @@ But [C]I can't [F]forget what [G7]her love means to [C]me
 {start_of_verse: Verse 4}
 [F]Baby you're [C]something [G7]but she's every[C]thing
 {end_of_verse}
+
+
+
+

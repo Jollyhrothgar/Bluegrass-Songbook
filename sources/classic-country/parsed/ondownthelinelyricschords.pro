@@ -1,6 +1,9 @@
 {meta: title On Down The Line}
 {meta: artist Patty Loveless}
 {meta: composer Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file ondownthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tryin' to make a livin' that's the bottom line
@@ -48,3 +51,9 @@ Just [C]doin' the best I can just tryin' to make a stand
 [D7]On down the [G]line   [D7]on down the [G]line 
 [D7]On down the [G]line   [D7]on down the [G]line
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Veil Of White Lace}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file veilofwhitelacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The church door was opened  and I stepped [G7]inside
@@ -40,3 +43,8 @@ Death to a [C]stranger  beneath a [G7]veil of white [C]lace
 Tag:
 [F]Yes it's death to a [C]stranger beneath a [G7]veil of white [C]lace
 {end_of_verse}
+
+
+
+
+

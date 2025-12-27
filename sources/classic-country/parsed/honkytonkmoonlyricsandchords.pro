@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Moon}
 {meta: artist Leona Williams}
 {meta: composer Pat Gallagher and Rosie Flores}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkmoonlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came here a [E7]little bit [Am]lonel[C]y
@@ -34,3 +37,7 @@ You and [C]me and this [G7]honky tonk [C]moon
 And I hope it won't end too [F]soon
 For you and [C]me and this [G7]honky tonk [C]moon
 {end_of_verse}
+
+
+
+

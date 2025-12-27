@@ -1,6 +1,9 @@
 {meta: title Don't Walk Away From Me}
 {meta: artist Ferlin Husky}
 {meta: composer Johnny Otis}
+{meta: x_source classic-country}
+{meta: x_source_file dontwalkawayfrommelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Don't walk don't [Em]walk don't [C]walk away from [D7]me)
@@ -33,3 +36,7 @@
 [D7]And I'll never walk away from [G]you
 [C](Don't walk [G]away)
 {end_of_verse}
+
+
+
+

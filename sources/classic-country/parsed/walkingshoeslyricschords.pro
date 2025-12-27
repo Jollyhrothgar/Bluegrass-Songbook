@@ -1,5 +1,8 @@
 {meta: title Walking Shoes}
 {meta: artist Tanya Tucker}
+{meta: x_source classic-country}
+{meta: x_source_file walkingshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna put on my [D7]walking shoes [G]tonight
@@ -47,3 +50,10 @@ I'm gonna put on my [D7]walking shoes [G]tonight
 {start_of_verse: Verse 7}
 I'm gonna put on my [D7]walking shoes [G]tonight
 {end_of_verse}
+
+
+
+
+
+
+

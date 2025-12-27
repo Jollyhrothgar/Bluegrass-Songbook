@@ -1,5 +1,8 @@
 {meta: title I Can't Help It}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file icanthelpitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Today I [G]passed you [D7]on the [G]street
@@ -32,3 +35,6 @@ And [D7]hold you just the way I used to [G]do [G7]
 Oh [C]heaven only knows how much I [G]miss you
 I Can't [D7]Help It If I'm Still In Love With [G]You
 {end_of_verse}
+
+
+

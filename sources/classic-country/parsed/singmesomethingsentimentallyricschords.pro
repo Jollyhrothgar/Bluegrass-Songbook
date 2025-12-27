@@ -1,6 +1,9 @@
 {meta: title Sing Me Something Sentimental}
 {meta: artist Hank Thompson}
 {meta: composer Martin D. Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file singmesomethingsentimentallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sing me something sentimental  make it [C]anything that’s [G]blue
@@ -29,3 +32,6 @@ She was [C]lovelier than ever on the [G]day she was his bride
 [G]Now I realize I've lost her the [C]way all seems so un[G]real
 Sing me [D7]something sentimental cause that's the way I [G]feel
 {end_of_verse}
+
+
+

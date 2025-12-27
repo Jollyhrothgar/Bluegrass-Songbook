@@ -1,5 +1,8 @@
 {meta: title Big Hearted Me}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file bigheartedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A big hearted me big [F]hearted [C]me big [F]hearted [C]me
@@ -26,3 +29,6 @@
 [F]Big hearted [C]me  a big [F]hearted [C]me
 [F]Big hearted me [C]big hearted [F]me big hearted [C]me
 {end_of_verse}
+
+
+

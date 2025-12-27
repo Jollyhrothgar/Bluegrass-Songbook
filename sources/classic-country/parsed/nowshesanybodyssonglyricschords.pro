@@ -1,6 +1,9 @@
 {meta: title Now She's Anybody's Song}
 {meta: artist Mel Street}
 {meta: composer Mel Street and Razzy Bailey}
+{meta: x_source classic-country}
+{meta: x_source_file nowshesanybodyssonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She came into my [F]life like a [C]song
@@ -33,3 +36,7 @@ But the [F]tears still comes [G7]around haunting [C]me
 {start_of_verse: Verse 4}
 Yes the [F]tears still comes [G7]around haunting [C]me
 {end_of_verse}
+
+
+
+

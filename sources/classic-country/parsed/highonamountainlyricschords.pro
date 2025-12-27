@@ -1,6 +1,9 @@
 {meta: title High On A Mountain}
 {meta: artist Bill Monroe}
 {meta: composer Alex Campbell and Ola Belle Reed}
+{meta: x_source classic-country}
+{meta: x_source_file highonamountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As I looked at the [D7]valleys down be[G]low 
@@ -37,3 +40,7 @@ High on a [F]mountain top [G]wind blowin' [C]free
 High on a [F]mountain top [G]standin' all [C]alone
 [G]Wondering where the [D7]years of my life has [G]flown
 {end_of_verse}
+
+
+
+

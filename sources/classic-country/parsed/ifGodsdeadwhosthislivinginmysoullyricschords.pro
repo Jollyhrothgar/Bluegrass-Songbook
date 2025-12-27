@@ -1,6 +1,9 @@
 {meta: title If God Is Dead (Who's This Living In My Soul)}
 {meta: artist Loretta Lynn}
 {meta: composer Lawrence Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file ifGodsdeadwhosthislivinginmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He puts flowers on the hills [F]your cup He gladly fills
@@ -27,3 +30,5 @@ The toll was [F]paid on Golgotha's hill
 If God is [C]dead who's this [G7]living in my [C]soul [F]   [C]
 [F]If God is [C]dead who's this [G7]living in my [C]soul
 {end_of_verse}
+
+

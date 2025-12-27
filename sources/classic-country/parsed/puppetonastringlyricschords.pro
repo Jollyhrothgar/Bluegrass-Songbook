@@ -1,6 +1,9 @@
 {meta: title Puppet On A String}
 {meta: artist Elvis Presley}
 {meta: composer Roy C. Bennett, Sid Tepper}
+{meta: x_source classic-country}
+{meta: x_source_file puppetonastringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time you [F]look at me [G7]I'm as helpless [C]as can be
@@ -26,3 +29,6 @@ If [G7]you really [C]love me [F]darling [G7]please be [C]kind
 {start_of_verse: Verse 4}
 [Dm]You can do [G7]most anything with [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Past Is All The Future I See}
 {meta: artist Stonewall Jackson}
 {meta: composer Benny Williams and Thomas Harris}
+{meta: x_source classic-country}
+{meta: x_source_file thepastisallthefutureiseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When she left me all [C]she left me was [G]lonely
@@ -33,3 +36,7 @@ For each [G]day I find each [C]day that she's still [G]on my mind
 {start_of_verse: Verse 5}
 [C]Yes the [G]past is all the [D7]future I [G]see
 {end_of_verse}
+
+
+
+

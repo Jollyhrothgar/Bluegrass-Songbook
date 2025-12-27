@@ -1,6 +1,9 @@
 {meta: title Blue Sky Cathedral}
 {meta: artist Rhonda Vincent}
 {meta: composer Chuck Jones and Michael Lunn}
+{meta: x_source classic-country}
+{meta: x_source_file blueskycathedrallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My granddaddy never went to church
@@ -51,3 +54,10 @@
 [G]Sunrise for its stained glass windows singin' [C]along with that songbird [F]hymnal
 [C]Make’s my soul fly [C][G]like an [D7]eagle under [G]my blue sky [G][C]cathedral
 {end_of_verse}
+
+
+
+
+
+
+

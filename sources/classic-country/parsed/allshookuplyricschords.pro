@@ -1,6 +1,9 @@
 {meta: title All Shook Up}
 {meta: artist Elvis Presley}
 {meta: composer Otis Blackwell and Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file allshookuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A well I bless my soul what's wrong with me
@@ -47,3 +50,8 @@ I'm proud to say she's my buttercup
 I'm in [C]love I'm all shook up
 Mm mm oh [D7]oh yeah [G]yeah
 {end_of_verse}
+
+
+
+
+

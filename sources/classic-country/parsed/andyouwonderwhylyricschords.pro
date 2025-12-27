@@ -1,6 +1,9 @@
 {meta: title And You Wonder Why}
 {meta: artist George Hamilton IV}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file andyouwonderwhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I mailed you a post card 
@@ -23,3 +26,5 @@ And [G7]she wants the true love that [D7]you pushed [G7]aside
 And [C]you wonder [Em]why I'm [Am]leaving and [C]breaking my [F]vow[Dm]
 [G7]I wonder why I [Dm]foolishly [G7]waited till [C]now
 {end_of_verse}
+
+

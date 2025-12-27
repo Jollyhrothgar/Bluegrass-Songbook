@@ -1,6 +1,9 @@
 {meta: title The Happiness Of Having You}
 {meta: artist Charley Pride}
 {meta: composer Theodore Clifford Harris}
+{meta: x_source classic-country}
+{meta: x_source_file thehappinessofhavingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun comes up and throws it's light 
@@ -48,3 +51,9 @@ That [G7]makes my world a place worth living [C]in
 Yes it's the happiness of having you
 That [G7]makes my world a place worth living [C]in
 {end_of_verse}
+
+
+
+
+
+

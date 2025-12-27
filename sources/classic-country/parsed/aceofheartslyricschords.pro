@@ -1,6 +1,9 @@
 {meta: title Ace Of Hearts}
 {meta: artist Alan Jackson}
 {meta: composer Lonnie Wilson, Ron Moore, Carson Chamberlain}
+{meta: x_source classic-country}
+{meta: x_source_file aceofheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love's a gamble [G7]every heart will [C]take
@@ -33,3 +36,7 @@ No way to [F]lose cause I've got [G7]you my ace of [C]hearts
 {start_of_verse: Verse 4}
 I'm gonna [F]hold on to my [G7]ace of [C]hearts
 {end_of_verse}
+
+
+
+

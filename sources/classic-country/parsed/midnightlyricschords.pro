@@ -1,6 +1,9 @@
 {meta: title Midnight}
 {meta: artist Red Foley}
 {meta: composer Boudleaux Bryant and Chet Atkins}
+{meta: x_source classic-country}
+{meta: x_source_file midnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Midnight I've spent another lonely night thinking of [C7]you
@@ -25,3 +28,6 @@ Midnight I've spent another lonely night thinking of [C7]you
 [F]Midnight tomorrow is on it's way empty and [C]blue
 I'm so [G7]lonely so lonely at midnight for [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Made You A Woman}
 {meta: artist Conway Twitty}
 {meta: composer Mike Huffman}
+{meta: x_source classic-country}
+{meta: x_source_file imadeyouawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came to your wedding like you asked me [Am]to
@@ -29,3 +32,6 @@ And I know you're not [D7]sorry your eyes told me s-[G7]o
 Oh I wanted to [C]touch you I could not help [Am]myself
 [C]I made you a [F]woman [G7]for somebody [C]else
 {end_of_verse}
+
+
+

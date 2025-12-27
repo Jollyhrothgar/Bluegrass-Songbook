@@ -1,6 +1,9 @@
 {meta: title The Sinking Of The Reuben James}
 {meta: artist Johnny Horton}
 {meta: composer Woody Guthrie, Pete Seeger, Almanac Singers}
+{meta: x_source classic-country}
+{meta: x_source_file thesinkingofthereubenjameslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What were their names tell me [F]what were their [D7]names
@@ -55,3 +58,10 @@ Stand by hard fighting men [G7]fought for honor and [C]fame
 She flew the stars and stripes of the [F]land of the [C]free
 But tonight she's in her grave at the [G7]bottom of the [C]sea
 {end_of_verse}
+
+
+
+
+
+
+

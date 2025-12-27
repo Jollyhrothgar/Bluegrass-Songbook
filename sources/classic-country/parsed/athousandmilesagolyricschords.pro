@@ -1,6 +1,9 @@
 {meta: title A Thousand Miles Ago}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file athousandmilesagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's thousand miles in back of me and many more to go
@@ -29,3 +32,6 @@ I know I've held her in my arms a thousand times or more
 [C]I know I shouldn't feel this way but I still love her so
 [G]I can't keep from thinking [D7]about a thousand miles [G]ago
 {end_of_verse}
+
+
+

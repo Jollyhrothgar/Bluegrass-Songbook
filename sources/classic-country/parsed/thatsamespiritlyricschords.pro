@@ -1,6 +1,9 @@
 {meta: title That Same Spirit}
 {meta: artist The New Coon Creek Girls}
 {meta: composer Mike Payne}
+{meta: x_source classic-country}
+{meta: x_source_file thatsamespiritlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus said it is expedient 
@@ -51,3 +54,7 @@ And [C]take me [G7]home some[C]day
 It shall raise this old body [Am]up 
 And [C]take me [G7]home some[C]day
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Puppy Love}
 {meta: artist Paul Anka}
+{meta: x_source classic-country}
+{meta: x_source_file puppylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]And they called it puppy [Am]love
@@ -42,3 +45,8 @@ Someone help me help me [Am]please
 {start_of_verse: Verse 6}
 ([D7]This is not a puppy [G]love)
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title That'll Be the Day}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file thatllbethedaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That'll be the day when you say good-bye 
@@ -42,3 +45,8 @@ Yes that'll be the day when you [G]make me cry
 Oh you say you're gonna leave you know it's [C]a lie 
 Cause [G]that'll be the [D7]day  [G]when I die
 {end_of_verse}
+
+
+
+
+

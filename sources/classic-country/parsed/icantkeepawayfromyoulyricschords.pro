@@ -1,6 +1,9 @@
 {meta: title I Can't Keep Away From You}
 {meta: artist Wilburn Brothers}
 {meta: composer Darrell Statler}
+{meta: x_source classic-country}
+{meta: x_source_file icantkeepawayfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]By your side each [F]minute's where I [C]wanna be
@@ -32,3 +35,7 @@ Oh [F]I can't [G7]keep away from [C]you
 [F]Every step you make [C]I wanna make it too
 Oh [F]I can't [G7]keep away from [C]you
 {end_of_verse}
+
+
+
+

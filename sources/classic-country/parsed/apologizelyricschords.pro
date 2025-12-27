@@ -1,6 +1,9 @@
 {meta: title Apologize}
 {meta: artist Bill Anderson}
 {meta: composer Michael Gordon and James Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file apologizelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the fury of the moment when the words of wrath rang out
@@ -34,3 +37,7 @@ See the sunlight reappearing through the shrouds of darkened gloom
 [C]Give 'em back [F]or love will go to [G7]waste
 [C]Give [G7]'em [C]b-a-c-k
 {end_of_verse}
+
+
+
+

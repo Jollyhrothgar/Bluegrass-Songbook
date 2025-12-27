@@ -1,6 +1,9 @@
 {meta: title The Fields Of Home}
 {meta: artist Ricky Skaggs}
 {meta: composer Larry Cordle and Larry Shell}
+{meta: x_source classic-country}
+{meta: x_source_file thefieldsofhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember how I’d [G7]cuss 
@@ -48,3 +51,8 @@ Lord I [Dm]wish I’d [C]never [F]left the [G7]fields of [C]home
 {start_of_verse: Verse 6}
 To[Dm]night I [Em]long to [F]walk the [G7]fields of [C]home
 {end_of_verse}
+
+
+
+
+

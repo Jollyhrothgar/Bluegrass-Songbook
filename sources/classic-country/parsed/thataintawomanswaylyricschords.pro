@@ -1,6 +1,9 @@
 {meta: title That Ain't A Woman's Way}
 {meta: artist Kitty Wells}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file thataintawomanswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sat [F]alone at [G7]home all weekend [C]waitin' for [G7]you to [C]call
@@ -46,3 +49,6 @@ Breakin' up [F]makin' up [C]stayin'
 All shaken up [G7]that ain't a woman's [C]way
 No [G7]that ain't a woman's [C]way
 {end_of_verse}
+
+
+

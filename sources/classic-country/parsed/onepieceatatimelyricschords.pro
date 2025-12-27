@@ -1,6 +1,9 @@
 {meta: title One Piece At A Time}
 {meta: artist Johnny Cash}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file onepieceatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I left Kentucky back in '49
@@ -132,3 +135,23 @@ Ah what model is it
 It's a '60, '61, '62, '63, '64, '65, '66, [F]'67
 [G7]'68, '69, '70 [C]Automobile
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title One Step Beyond}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file onestepbeyondlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just one step before losing you
@@ -28,3 +31,6 @@ I [F]just know I could never feel the [C]same
 And [F]though I still love you as [C]before
 I'm [G7]just one step beyond caring any[C]more
 {end_of_verse}
+
+
+

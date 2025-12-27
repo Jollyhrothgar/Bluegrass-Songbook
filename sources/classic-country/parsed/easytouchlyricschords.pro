@@ -1,6 +1,9 @@
 {meta: title Easy Touch}
 {meta: artist Don Williams}
 {meta: composer Rory Bourke, Tommy Rocco, Charlie Black}
+{meta: x_source classic-country}
+{meta: x_source_file easytouchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm an easy touch she knows it everybody [D7]does
@@ -25,3 +28,5 @@ It's a [C]sure sign that love is on the [D7]way
 Oh there's nothing I wouldn't [C]give her
 [D7]All she wants is all my love and for that I'm an easy [G]touch
 {end_of_verse}
+
+

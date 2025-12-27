@@ -1,6 +1,9 @@
 {meta: title Midnight Angel}
 {meta: artist Barbara Mandrell}
 {meta: composer Bill Anthony and Robert E. Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file midnightangellyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a place in every bar room
@@ -45,3 +48,8 @@ Is there [C]room for [F]another midnight [G7]angel
 [F]If there is I'm [G7]betting (ooooo[F]o)
 I'll have my wings [G7]before the morning [C]comes
 {end_of_verse}
+
+
+
+
+

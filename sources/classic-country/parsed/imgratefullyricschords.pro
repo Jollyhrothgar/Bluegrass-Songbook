@@ -1,6 +1,9 @@
 {meta: title I'm Grateful}
 {meta: artist Dottie West}
 {meta: composer Ervin Drake and Jimmy Shirl}
+{meta: x_source classic-country}
+{meta: x_source_file imgratefullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I look up at the [F]heavens when [G7]day is [C]through
@@ -29,3 +32,6 @@ For the blessings you [A7]send me and [D7]love [G7]and [C]care
 [F]And the world full of sun[A7]shine and my [Dm]help is [Am]there
 I'm [C]grate[Am]ful [D7]grate[G7]ful Lord to [C]Thee [F]  [C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Moon}
 {meta: artist Randy Travis}
 {meta: composer Dennis O'Rourke}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkmoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dirt road in the twilight woods so cool and dark
@@ -43,3 +46,9 @@ Outside the dark has fallen stars are winkling bright
 {start_of_verse: Verse 6}
 [D7]Honky tonk moon keeps [G7]shining on my baby and [C]me
 {end_of_verse}
+
+
+
+
+
+

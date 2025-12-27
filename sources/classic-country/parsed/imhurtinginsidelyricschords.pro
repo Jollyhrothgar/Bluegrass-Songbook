@@ -1,6 +1,9 @@
 {meta: title I'm Hurting Inside}
 {meta: artist Jim Reeves}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file imhurtinginsidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm hurting inside where it doesn't [G7]show 
@@ -22,3 +25,5 @@ Especially at night when you are not [C]there
 [C7]I might be [F]better off if I broke down and [C]cried
 But I've got my [F]pride  so [G7]I'm hurting [C]inside
 {end_of_verse}
+
+

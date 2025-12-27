@@ -1,6 +1,9 @@
 {meta: title Grace And Gratitude}
 {meta: artist Lester Flatt and Earl Scruggs}
 {meta: composer Amy Sky and Olivia Newton John}
+{meta: x_source classic-country}
+{meta: x_source_file graceandgratitudelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All I [G7]have and all [Dm]I [F]feel 
@@ -36,3 +39,7 @@ I [C]stand here in grace [G7]and gratitude
 And [F]I  [G7]thank [Dm][G7][C]You   
 [F]I thank [C]You
 {end_of_verse}
+
+
+
+

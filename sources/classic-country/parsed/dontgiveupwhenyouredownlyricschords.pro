@@ -1,6 +1,9 @@
 {meta: title Don't Give Up When You're Down}
 {meta: artist Ray Price}
 {meta: composer Lee Dresser}
+{meta: x_source classic-country}
+{meta: x_source_file dontgiveupwhenyouredownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're having times of sorrow 
@@ -68,3 +71,9 @@ Trade your [F]frown in for a smile
 Don't give [C]up (don't give [G7]up) when you're [C]down[F]
 Don't give [C]up (don't give [G7]up) when you're [C]down[F]  [C]
 {end_of_verse}
+
+
+
+
+
+

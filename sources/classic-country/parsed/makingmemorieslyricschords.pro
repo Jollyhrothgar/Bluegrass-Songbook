@@ -1,6 +1,9 @@
 {meta: title Making Memories}
 {meta: artist The Statler Brothers}
 {meta: composer Harold and Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file makingmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Memories memories memories
@@ -51,3 +54,10 @@ That [G7]old Chevrolet it's had its day
 {start_of_verse: Verse 7}
 [C]Memories memories memories
 {end_of_verse}
+
+
+
+
+
+
+

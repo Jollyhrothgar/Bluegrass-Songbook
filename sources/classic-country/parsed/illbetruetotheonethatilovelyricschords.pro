@@ -1,6 +1,9 @@
 {meta: title I'll Be True To The One That I Love}
 {meta: artist Stanley Brothers}
 {meta: composer Ike Cargill and E. Settlemyer}
+{meta: x_source classic-country}
+{meta: x_source_file illbetruetotheonethatilovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come and kiss me goodbye ere you leave [D7]me
@@ -36,3 +39,7 @@ You [D7]belong to the one you love [G]best
 And you broke [C]my heart when you said we must [G]part
 Now the [D7]Angels can tell you the [G]rest
 {end_of_verse}
+
+
+
+

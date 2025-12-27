@@ -1,6 +1,9 @@
 {meta: title Looks Like This Is Gonna Be My Day}
 {meta: artist Jimmy Dean}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file lookslikethisisgonnabemydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've heard me sigh you've seen me cry
@@ -34,3 +37,7 @@
 [C]It's that I [A7]long to be near [G]you
 [Am]For every [D7]night you make my [G]day
 {end_of_verse}
+
+
+
+

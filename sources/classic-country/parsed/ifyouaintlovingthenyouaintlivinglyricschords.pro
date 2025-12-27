@@ -1,6 +1,9 @@
 {meta: title If You Ain’t Loving Then You Ain’t Living}
 {meta: artist Faron Young}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouaintlovingthenyouaintlivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you got a Cadil[D7]lac boy and a forty room [G]shack boy
@@ -29,3 +32,6 @@ You ain't so [D7]well to do unless you get a little coochy [G]coo
 It takes a little bit of [C]smacking or your life is a [G]lacking
 Well if you ain't [D7]loving well brother then you ain't [G]living
 {end_of_verse}
+
+
+

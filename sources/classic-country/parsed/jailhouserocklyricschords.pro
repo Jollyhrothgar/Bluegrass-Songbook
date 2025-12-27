@@ -1,6 +1,9 @@
 {meta: title Jailhouse Rock}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Leiber and Mike Stoller}
+{meta: x_source classic-country}
+{meta: x_source_file jailhouserocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The warden threw a party in the county jail
@@ -66,3 +69,12 @@ I wanna stick around a while and get my [C7]kicks
 [G7]Everybody in the whole cell [F]block
 Was [C]dancing to the Jailhouse Rock
 {end_of_verse}
+
+
+
+
+
+
+
+
+

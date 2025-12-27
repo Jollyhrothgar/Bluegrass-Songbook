@@ -1,6 +1,9 @@
 {meta: title Good Deal Lucille}
 {meta: artist Carl Smith}
 {meta: composer Al Terry,}
+{meta: x_source classic-country}
+{meta: x_source_file gooddeallucillelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Goodbye Lou cherche vous another man
@@ -29,3 +32,6 @@ C’est la vie woe is me oh [G7]my
 Paint the [C]town sorrows drown that’s how I [F]feel
 Ho [C]ho good [G7]deal [C]Lucille
 {end_of_verse}
+
+
+

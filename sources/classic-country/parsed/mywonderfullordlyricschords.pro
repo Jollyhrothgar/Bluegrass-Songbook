@@ -1,6 +1,9 @@
 {meta: title My Wonderful Lord}
 {meta: artist Faron Young}
 {meta: composer Haldor Lilienas}
+{meta: x_source classic-country}
+{meta: x_source_file mywonderfullordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have found a deep [C7]peace that [F]I never had known
@@ -29,3 +32,6 @@ By [C]angels and seraphs in heaven [G7]adored
 I [C]bow at Thy [C7]shrine my [F]Savior divine
 My [C]wonderful [G7]wonderful [C]Lord
 {end_of_verse}
+
+
+

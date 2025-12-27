@@ -1,6 +1,9 @@
 {meta: title Gulf Coast Highway}
 {meta: artist Emmylou Harris}
 {meta: composer Daniel Flowers, Danny Flowers, James H. Brown Jr.,}
+{meta: x_source classic-country}
+{meta: x_source_file gulfcoasthighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gulf Coast Highway he [F]worked the [C]rails
@@ -42,3 +45,9 @@
 [Am]Yes when we die we say [G7]we'll catch some blackbird's [C]wing
 [F]We’ll fly away [C]to heaven come some [G7]sweet blue bonnet [C]spring
 {end_of_verse}
+
+
+
+
+
+

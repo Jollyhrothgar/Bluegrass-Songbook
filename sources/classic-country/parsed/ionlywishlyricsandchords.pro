@@ -1,5 +1,8 @@
 {meta: title I Only Wish}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file ionlywishlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some wish for riches some for gold
@@ -36,3 +39,8 @@ If my love for you should go
 [C7]Then I love no more I [F]know
 [G7]I only wish I didn't love you [C]so
 {end_of_verse}
+
+
+
+
+

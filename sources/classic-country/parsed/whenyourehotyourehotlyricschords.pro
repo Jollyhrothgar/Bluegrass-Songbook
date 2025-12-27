@@ -1,6 +1,9 @@
 {meta: title When You're Hot You're Hot}
 {meta: artist Porter Wagoner}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file whenyourehotyourehotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There is ice today on your lips as you [D7]kiss me
@@ -31,3 +34,6 @@ When you're [F]cold you're cold
 And it seems that bad times [G7]don't know when to stop
 When you're cold you're cold and when you're hot you're [C]hot
 {end_of_verse}
+
+
+

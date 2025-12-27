@@ -1,6 +1,9 @@
 {meta: title Who's Laughing Now}
 {meta: artist Ricky Van Shelton}
 {meta: composer Tom Littlefield, Rick Rowell, Mel Tillis Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file whoslaughingnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who's [F]laughin' now who's havin' a [C]ball
@@ -49,3 +52,8 @@ Baby look and see who's laughin' [C]now
 Now the laughs on [G7]me baby look and see
 Who’s laughing [C]now
 {end_of_verse}
+
+
+
+
+

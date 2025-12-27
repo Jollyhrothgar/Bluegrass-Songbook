@@ -1,6 +1,9 @@
 {meta: title That Don't Change The Way I Feel About You}
 {meta: artist George Strait}
 {meta: composer and recorded by George Strait}
+{meta: x_source classic-country}
+{meta: x_source_file thatdontchangethewayifeelaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My old pickup truck
@@ -41,3 +44,7 @@ I can give about all I can [G7]give
 But [C]that don't change the way I [F]feel about [C]you 
 Just the wa[G7]y that you feel abou[C]t me 
 {end_of_verse}
+
+
+
+

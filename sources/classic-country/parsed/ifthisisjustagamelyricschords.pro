@@ -1,5 +1,8 @@
 {meta: title If This Is Just A Game}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file ifthisisjustagamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I give my love to you [F]girl  [G7]will I get love in [C]return 
@@ -35,3 +38,7 @@ Me with your eyes while saying that you [G7]need me
 If this is just a one-night stand 
 I'd rather turn around and walk [C]away
 {end_of_verse}
+
+
+
+

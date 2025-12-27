@@ -1,6 +1,9 @@
 {meta: title I Wonder Why You Said Goodbye}
 {meta: artist Wilburn Brothers}
 {meta: composer Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwhyyousaidgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your letter came this very [F]day 
@@ -29,3 +32,6 @@ And did you [C]mean to make me [G7]cry
 I guess [C]until the day I [F]die 
 That I will [C]still  [G7]be wondering [C]why
 {end_of_verse}
+
+
+

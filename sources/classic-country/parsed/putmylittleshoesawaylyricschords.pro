@@ -1,6 +1,9 @@
 {meta: title Put My Little Shoes Away}
 {meta: artist Hank Snow}
 {meta: composer Samuel Mitchell and Charles E. Pratt}
+{meta: x_source classic-country}
+{meta: x_source_file putmylittleshoesawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mother dear come [F]bathe my [C]forehead
@@ -43,3 +46,8 @@
 [C]Give them [F]all my toys but [C]mother
 [G7]Put my little shoes [C]away
 {end_of_verse}
+
+
+
+
+

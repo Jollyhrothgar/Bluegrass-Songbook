@@ -1,6 +1,9 @@
 {meta: title Don't Laugh At My Love}
 {meta: artist Eddy Arnold}
 {meta: composer Kenneth Ray Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file dontlaughatmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't laugh at my [D7]love 
@@ -41,3 +44,8 @@ But don't laugh at my [G]love
 You can put him [D7]above 
 But don't laugh at my [G]love
 {end_of_verse}
+
+
+
+
+

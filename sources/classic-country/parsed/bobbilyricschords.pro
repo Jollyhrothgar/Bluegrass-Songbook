@@ -1,6 +1,9 @@
 {meta: title Bobbi}
 {meta: artist Mel Tillis}
 {meta: composer John D. Souther}
+{meta: x_source classic-country}
+{meta: x_source_file bobbilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every word on [G]my mind [Em]Bobbi [D7]is your [G]goodbye
@@ -42,3 +45,9 @@
 {start_of_verse: Verse 5}
 [C]Every word on [G]my mind [Em]Bobbi [D7]is your [G]goodbye
 {end_of_verse}
+
+
+
+
+
+

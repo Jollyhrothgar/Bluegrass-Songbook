@@ -1,6 +1,9 @@
 {meta: title Wishful Thinking}
 {meta: artist Jim Reeves}
 {meta: composer Martin Greene and Rayford Greene}
+{meta: x_source classic-country}
+{meta: x_source_file wishfulthinkinglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wishful thinking daydreams [G7]fly happy visions fill the [C]night
@@ -24,3 +27,6 @@
 {start_of_verse: Verse 4}
 [G7]While my heart aches just for [C]you
 {end_of_verse}
+
+
+

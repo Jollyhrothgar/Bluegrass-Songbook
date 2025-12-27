@@ -1,6 +1,9 @@
 {meta: title Are You Happy}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file areyouhappylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though you’re with somebody [E7]new I’ll [F]not worry over [C]you
@@ -22,3 +25,5 @@
 [C]If there’s any doubt at [E7]all [F]I’ll be waiting for your [C]call
 [G7]Are you [F]happy   are you [C]happy
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Her Perfect Memory}
 {meta: artist Don Williams}
 {meta: composer Doug Johnson and Pat Bunch}
+{meta: x_source classic-country}
+{meta: x_source_file herperfectmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I remember how we struggled when we first [D7]started [G]out
@@ -34,3 +37,7 @@
 [D7]If I made all [G]her dreams come true [G7]as far as she can [C]see
 [G]Who am I [C]to tamper with [G]her perfect [G][D7]memory
 {end_of_verse}
+
+
+
+

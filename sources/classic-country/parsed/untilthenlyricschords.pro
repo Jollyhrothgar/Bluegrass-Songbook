@@ -1,5 +1,8 @@
 {meta: title Until Then}
 {meta: artist Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file untilthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My heart can sing when I pause to [D7]remember
@@ -28,3 +31,6 @@ Until [D7]then with joy I'll carry [G]on
 [D7]Until the [G]day my eyes behold my [C]Savior
 Until the [G]day God [D7]calls me [G]home
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Little Too Late}
 {meta: artist Toby Keith}
 {meta: composer Dean Dillon, Scott Emerick, Toby Keith}
+{meta: x_source classic-country}
+{meta: x_source_file alittletoolatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a little too late I'm a little too [Em]gone
@@ -51,3 +54,8 @@
 Tag:
 [F]I'm big time over you [G7]baby it's a little too [Am]late
 {end_of_verse}
+
+
+
+
+

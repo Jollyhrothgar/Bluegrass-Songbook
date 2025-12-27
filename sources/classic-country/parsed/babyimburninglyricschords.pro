@@ -1,5 +1,8 @@
 {meta: title Baby I'm Burning}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file babyimburninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You look at me that way
@@ -58,3 +61,12 @@ It's the way that you love me
 [C]Baby I'm [G]burning
 [C]Baby I'm [G]burning
 {end_of_verse}
+
+
+
+
+
+
+
+
+

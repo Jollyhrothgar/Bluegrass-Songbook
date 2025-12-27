@@ -1,6 +1,9 @@
 {meta: title In The Family}
 {meta: artist Don Williams}
 {meta: composer Dobie Gray, Eddie Sester, John Greenbaum}
+{meta: x_source classic-country}
+{meta: x_source_file inthefamilylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I was raised up by the [F]golden [C]rule
@@ -50,3 +53,9 @@
 [G7]An' I heard momma say what goes on here [F]stays
 [C]In the family
 {end_of_verse}
+
+
+
+
+
+

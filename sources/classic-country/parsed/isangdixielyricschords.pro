@@ -1,5 +1,8 @@
 {meta: title I Sang Dixie}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file isangdixielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sang Dixie as he died 
@@ -43,3 +46,8 @@ I sang Dix[G7]ie as he [C]died
 {start_of_verse: Verse 4}
 I sang Dix[G7]ie as he [F]died[C]
 {end_of_verse}
+
+
+
+
+

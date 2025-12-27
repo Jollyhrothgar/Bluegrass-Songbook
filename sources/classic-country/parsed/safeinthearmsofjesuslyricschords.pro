@@ -1,6 +1,9 @@
 {meta: title Safe In The Arms Of Jesus}
 {meta: artist Eddy Arnold}
 {meta: composer Fanny J. Crosby and William Howard Doane}
+{meta: x_source classic-country}
+{meta: x_source_file safeinthearmsofjesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Safe in the arms of Jesus safe on his gentle [G7]breast
@@ -19,3 +22,4 @@
 [C]Safe in the arms of Jesus safe on his gentle [G7]breast
 [C]There by his love o'ershaded [F]sweetly my soul shall [C]rest
 {end_of_verse}
+

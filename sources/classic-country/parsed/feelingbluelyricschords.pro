@@ -1,6 +1,9 @@
 {meta: title Feeling Blue}
 {meta: artist The Grascals}
 {meta: composer Aubrey Holt}
+{meta: x_source classic-country}
+{meta: x_source_file feelingbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a feeling blue [C7]tonight little [F]darling
@@ -37,3 +40,7 @@ So [G7]lonesome and blue I could [C]die
 I'm a feeling blue [C7]tonight little [F]darling
 Too [G7]late too late we said good[C]bye
 {end_of_verse}
+
+
+
+

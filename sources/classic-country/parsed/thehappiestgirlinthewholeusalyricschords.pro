@@ -1,5 +1,8 @@
 {meta: title The Happiest Girl In The Whole U.S.A.}
 {meta: artist Donna Fargo}
+{meta: x_source classic-country}
+{meta: x_source_file thehappiestgirlinthewholeusalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Good morn-in'  [G]morning  hello [D7]sunshine
@@ -52,3 +55,9 @@ And I'm the [D7]happiest girl in the [C]whole [G]U.S.A.
 {start_of_verse: Verse 7}
 And I'm the [D7]happiest girl in the [C]whole [G]U.S.A.
 {end_of_verse}
+
+
+
+
+
+

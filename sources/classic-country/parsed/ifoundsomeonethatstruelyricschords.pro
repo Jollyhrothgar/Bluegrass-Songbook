@@ -1,5 +1,8 @@
 {meta: title I Found Someone That's True}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file ifoundsomeonethatstruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The quarrel dear it started with a [F]simple word or [C]two
@@ -21,3 +24,5 @@ I'm happy that you hurt me for I [G7]found someone that's [C]true
 It [C]gives me consolation  to [F]know I won't be [C]blue
 I'm happy that you hurt me for I [G7]found someone that's [C]true 
 {end_of_verse}
+
+

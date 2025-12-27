@@ -1,6 +1,9 @@
 {meta: title One Grain Of Sand}
 {meta: artist Eddy Arnold}
 {meta: composer Buck Maxwell, Ruth Maxwell, Rosella Larue}
+{meta: x_source classic-country}
+{meta: x_source_file onegrainofsandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One [Am]one [D7]one grain of [G]sand one [Am]one [D7]one grain of [G]sand
@@ -32,3 +35,6 @@ Undermine your [Am]house of love [D7]bring it tumbling [G]down
 One [Am]one [D7]one grain of [G]sand
 One [Am]one [D7]one grain of [G]sand
 {end_of_verse}
+
+
+

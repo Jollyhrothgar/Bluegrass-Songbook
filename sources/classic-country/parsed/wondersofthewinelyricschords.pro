@@ -1,6 +1,9 @@
 {meta: title Wonders Of The Wine}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill, Norro Wilson, Webber Parrish}
+{meta: x_source classic-country}
+{meta: x_source_file wondersofthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I found a [C]place that you [D7]won't believe
@@ -27,3 +30,6 @@ But it's just [C]one of the [E7]wonders of the [A7]wine
 [G]But as long as I [C]stay here [B7]everything's gonna be [Em]fine[C]
 And [G]it's one of the [D7]wonders of the [C]wine[G]
 {end_of_verse}
+
+
+

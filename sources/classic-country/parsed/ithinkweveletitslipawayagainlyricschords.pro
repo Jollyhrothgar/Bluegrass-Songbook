@@ -1,6 +1,9 @@
 {meta: title I Think We've Let It Slip Away Again}
 {meta: artist Johnny Rodriguez}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file ithinkweveletitslipawayagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lately we don't talk much
@@ -42,3 +45,9 @@ You don't see me when I'm near
 {start_of_verse: Verse 6}
 [F]Yes I think we've let it [G7]slip away [C]again
 {end_of_verse}
+
+
+
+
+
+

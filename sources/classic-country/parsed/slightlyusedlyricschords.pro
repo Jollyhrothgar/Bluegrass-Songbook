@@ -1,6 +1,9 @@
 {meta: title Slightly Used}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart, Curtis Leach, Bobby George}
+{meta: x_source classic-country}
+{meta: x_source_file slightlyusedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Before we slip and fall in love I'd better caution [G7]you
@@ -29,3 +32,6 @@
 [F]If you still want this heart of mine then it belongs to you
 [G7]With all my love slightly [C]used
 {end_of_verse}
+
+
+

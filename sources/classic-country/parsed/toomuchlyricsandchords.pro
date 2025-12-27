@@ -1,6 +1,9 @@
 {meta: title Too Much}
 {meta: artist Red Sovine}
 {meta: composer Tommy Hill, Red Sovine, Buddy Bruce}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know I cry too much before I met you I [E7]used to laugh a [F]lot
@@ -28,3 +31,6 @@
 [F]I know someday I won't hurt too much cause we both know that it's [Fm]true
 [C]That I didn't really lose too [F]much [G7]when I lost [C]you
 {end_of_verse}
+
+
+

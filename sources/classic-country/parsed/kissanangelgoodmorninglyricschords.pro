@@ -1,6 +1,9 @@
 {meta: title Kiss an Angel Good Morning}
 {meta: artist Charlie Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file kissanangelgoodmorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When ever I chance to meet   some old friends [G7]on the [C]street
@@ -23,3 +26,5 @@ chorus
 [G7]The secret that I'm speaking of    is a woman and a man [C]in love
 [D7]And the answer is in this song that I always [G]sing
 {end_of_verse}
+
+

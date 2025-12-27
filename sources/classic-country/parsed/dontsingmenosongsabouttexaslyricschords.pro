@@ -1,6 +1,9 @@
 {meta: title Don't Sing Me No Songs About Texas}
 {meta: artist Leona Williams}
 {meta: composer Merle R. Haggard and Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file dontsingmenosongsabouttexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don’t sing about a Luckenbach Texas 
@@ -48,3 +51,9 @@ But [C]don’t sing no songs about [G]Tex[E7]as
 No [C]don’t sing no songs about [G]Tex[E7]as
 [D7]Cause that’s where my heart is to[G]night
 {end_of_verse}
+
+
+
+
+
+

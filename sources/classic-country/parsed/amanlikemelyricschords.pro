@@ -1,5 +1,8 @@
 {meta: title A Man Like Me}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file amanlikemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walk the streets and [G7]wring my [C]hands trying hard [G7]to under[C]stand
@@ -27,3 +30,5 @@ Things have [F]changed from what they were
 Life's so [C]different without her
 Heaven [G7]help a man like me who walks [C]alone
 {end_of_verse}
+
+

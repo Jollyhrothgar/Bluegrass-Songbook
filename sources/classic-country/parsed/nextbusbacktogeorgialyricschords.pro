@@ -1,6 +1,9 @@
 {meta: title Next Bus Back To Georgia}
 {meta: artist Jean Shepard}
 {meta: composer Rudie Whaling}
+{meta: x_source classic-country}
+{meta: x_source_file nextbusbacktogeorgialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna take the next bus on back to Georgia
@@ -34,3 +37,7 @@ On the [Am]next bus back to [D7]Georgia where I [G]belong
 You [C]know I'll be home probably with the crack of [G]dawn 
 On the [Am]next bus back to [D7]Georgia where I [G]belong
 {end_of_verse}
+
+
+
+

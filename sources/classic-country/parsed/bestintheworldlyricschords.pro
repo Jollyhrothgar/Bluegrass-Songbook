@@ -1,6 +1,9 @@
 {meta: title Best In The World}
 {meta: artist Charley Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file bestintheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know she's gonna get me back [F]when I get home [C]again
@@ -34,3 +37,7 @@ She says honey you know that I love you
 {start_of_verse: Verse 4}
 [G7]Yes I realize I'm up against the best in the [C]world
 {end_of_verse}
+
+
+
+

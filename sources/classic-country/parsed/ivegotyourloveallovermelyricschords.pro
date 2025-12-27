@@ -1,6 +1,9 @@
 {meta: title I've Got Your Love All Over Me}
 {meta: artist Moe Bandy}
 {meta: composer Merrill Lane}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotyourloveallovermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Like a [G]fool I [C]strayed away from you [G]dear
@@ -29,3 +32,6 @@
 [G]Midnight oil of love that flowed [C]so [Am]free
 [G]Once again I've got your [D7]love all over [G]me
 {end_of_verse}
+
+
+

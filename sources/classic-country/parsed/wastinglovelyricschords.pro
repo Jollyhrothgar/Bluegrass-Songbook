@@ -1,6 +1,9 @@
 {meta: title Wasting Love}
 {meta: artist Porter Wagoner}
 {meta: composer Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file wastinglovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It seems we lost the feeling some[C]where along the [G]way
@@ -33,3 +36,7 @@ Wasting [F]love yours and [D7]mine wasting [G]love
 {start_of_verse: Verse 5}
 Wasting [F]love yours and [D7]mine wasting [G]love
 {end_of_verse}
+
+
+
+

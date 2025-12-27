@@ -1,6 +1,9 @@
 {meta: title Tell Me The Story Of Jesus}
 {meta: artist Rick Wingerter}
 {meta: composer Fanny Crosby and John Sweeney}
+{meta: x_source classic-country}
+{meta: x_source_file tellmethestoryofJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tell me the story of Jesus
@@ -75,3 +78,13 @@ Tell of the cross where they nailed Him
 [F]Glory to God in the [C]highest
 [G7]Peace and the tidings to [C]earth
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

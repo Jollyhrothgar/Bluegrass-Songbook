@@ -1,6 +1,9 @@
 {meta: title Forty First Street Lonely Heart's Club}
 {meta: artist Buck Owens}
 {meta: composer Dennis J. Knutson and James Brian Shaw}
+{meta: x_source classic-country}
+{meta: x_source_file fortyfirststreetlonelyheartsclublyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They're gonna make me a lifetime [D7]member
@@ -48,3 +51,10 @@ And I've got memories that I just can't erase
 [D7]Yes I'll do my best to forget your love
 [G]In the Forty First Street Lonely Heart's Club
 {end_of_verse}
+
+
+
+
+
+
+

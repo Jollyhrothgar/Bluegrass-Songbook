@@ -1,6 +1,9 @@
 {meta: title The Girl on the Billboard}
 {meta: artist Del Reeves}
 {meta: composer Hank Mills}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlonthebillboardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Doo da doo doo doo  a doo da doo doo doo
@@ -101,3 +104,24 @@ A doo da doo doo doo a doo da doo doo doo
 {start_of_verse: Verse 22}
 Dee da dee dee doo Doo da doo doo doo
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

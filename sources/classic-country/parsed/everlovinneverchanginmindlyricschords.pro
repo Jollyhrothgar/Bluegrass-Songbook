@@ -1,6 +1,9 @@
 {meta: title Everlovin' Never Changin' Mind}
 {meta: artist Don Gibson}
 {meta: composer Melvin Endsley}
+{meta: x_source classic-country}
+{meta: x_source_file everlovinneverchanginmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wish I had another life to [C]live
@@ -40,3 +43,8 @@ Your [G]everlovin' [D7]never changin' [G]mind
 {start_of_verse: Verse 6}
 And everlovin' [D7]never changin' [G]mind
 {end_of_verse}
+
+
+
+
+

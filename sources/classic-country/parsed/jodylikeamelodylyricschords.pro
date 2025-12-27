@@ -1,6 +1,9 @@
 {meta: title Jody Like A Melody}
 {meta: artist David Allan Coe}
 {meta: composer David A. Coe and Jimmy Howard}
+{meta: x_source classic-country}
+{meta: x_source_file jodylikeamelodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jody like a [G7]melody you [C]play inside my [G7]head
@@ -50,3 +53,10 @@ Jody like a [G7]melody (Jody like a [F]melody)
 Jody like a [G7]melody (Jody like a [F]melody)
 Jody like a melo[C]dy
 {end_of_verse}
+
+
+
+
+
+
+

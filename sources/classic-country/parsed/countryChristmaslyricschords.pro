@@ -1,5 +1,8 @@
 {meta: title Country Christmas}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file countryChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mommy pop the popcorn and we’ll [C]string it on the [G]tree
@@ -35,3 +38,7 @@
 [G]We'll open up our presents Christmas Eve [C]about [G]midnight
 [D7]We'll have a good ole country Christmas [G]alright
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Stranger Was Here}
 {meta: artist Darrell McCall}
 {meta: composer Bob Forshee}
+{meta: x_source classic-country}
+{meta: x_source_file astrangerwasherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The door said a stranger [G7]knocked on it today
@@ -33,3 +36,6 @@ But the [C]lamp swears it so
 Said you [F]turned it way down low
 And the [G7]hi-fi said you played our favorite [C]song
 {end_of_verse}
+
+
+

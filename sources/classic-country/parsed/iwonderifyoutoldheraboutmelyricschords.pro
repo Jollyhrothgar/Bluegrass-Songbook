@@ -1,5 +1,8 @@
 {meta: title I Wonder If You Told Her About Me}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderifyoutoldheraboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]And I wonder if you [D7]told her 
@@ -37,3 +40,7 @@ I told her that you love her [D7]and held her tenderly
 And I [C]wonder if you [D7]told her
 Yes I [C]wonder if you [D7]told her about [G]me
 {end_of_verse}
+
+
+
+

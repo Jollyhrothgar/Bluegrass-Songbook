@@ -1,6 +1,9 @@
 {meta: title That Feeling}
 {meta: artist Alabama}
 {meta: composer Teddy Gentry, Greg Fowler, Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file thatfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've made some [Am]decisions [F]that were not the [G]best
@@ -43,3 +46,7 @@ That [Am]feeling I'm [D7]feeling for [G]you
 It's gonna [Bm]last my whole life [C]through
 That [Am]feeling I'm [D7]feeling for [G]you
 {end_of_verse}
+
+
+
+

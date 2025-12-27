@@ -1,6 +1,9 @@
 {meta: title Song of the Whispering Leaves}
 {meta: artist Hank Locklin}
 {meta: composer Scot Livingston and Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file songofthewhisperingleaveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can see you my [G7]dear standing [C]there
@@ -29,3 +32,6 @@
 [F]For the wind in the trees and that soft [C]melody
 [G7]Called the song of the whispering [C]leaves
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Nothing Can Touch Me}
 {meta: artist Doyle Lawson}
 {meta: composer Lois Begly Dow}
+{meta: x_source classic-country}
+{meta: x_source_file nothingcantouchmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many times burdens drive me to my [C7]knees
@@ -44,3 +47,8 @@
 [D7]Nothing can touch me unless He says it can
 [F]For Nothing can [G7]touch me that doesn't pass through His [C]hand
 {end_of_verse}
+
+
+
+
+

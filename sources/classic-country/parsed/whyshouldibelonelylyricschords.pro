@@ -1,6 +1,9 @@
 {meta: title Why Should I Be Lonely}
 {meta: artist Merle Haggard}
 {meta: composer Jimmie Rodgers and Estelle Lowell}
+{meta: x_source classic-country}
+{meta: x_source_file whyshouldibelonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the moon lights so bright makes me lonely [Dm]tonight
@@ -36,3 +39,7 @@ Why should I be so [C]sad
 Though [F]another is taking from [C]me
 [D7]The best pal that I ever [G7]had
 {end_of_verse}
+
+
+
+

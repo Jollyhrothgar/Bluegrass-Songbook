@@ -1,5 +1,8 @@
 {meta: title One Little Rose}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file onelittleroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One little rose he [F]picked for her hair
@@ -32,3 +35,6 @@ But [G7]they realized he'd [F]picked the same rose she [C]wore
 And as the day [C7]came to a [F]close
 These two found [C]true love [G7]through one little [C]rose
 {end_of_verse}
+
+
+

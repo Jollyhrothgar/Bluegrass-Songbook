@@ -1,6 +1,9 @@
 {meta: title Jesus Hears He Cares He Can}
 {meta: artist Connie Smith}
 {meta: composer Ray Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file Jesushearshecareshecanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When angry waves toss your ship on this stormy sea of [D7]life
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]Yes if you need someone to [G]help you Jesus [D7]hears He cares He [G]can
 {end_of_verse}
+
+
+
+

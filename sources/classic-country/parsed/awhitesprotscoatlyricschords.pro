@@ -1,5 +1,8 @@
 {meta: title A White Sports Coat}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file awhitesprotscoatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A white sport coat and a pink [G7][Dm]carnation
@@ -38,3 +41,8 @@
 [C]A white sports coat and a pink [G7][Dm]carnation
 [F]I'm in a [G7]blue blue [C]mood
 {end_of_verse}
+
+
+
+
+

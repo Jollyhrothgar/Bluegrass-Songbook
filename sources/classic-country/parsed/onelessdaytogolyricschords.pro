@@ -1,6 +1,9 @@
 {meta: title One Less Day To Go}
 {meta: artist The Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file onelessdaytogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve enjoyed being here with you 
@@ -56,3 +59,10 @@ I’ve [C]got one [G7]less day to [C]go
 I’ve [C]got one [G7]less day to [C]go
 I’ve got one [G7]less day to [C]go
 {end_of_verse}
+
+
+
+
+
+
+

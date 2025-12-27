@@ -1,6 +1,9 @@
 {meta: title I Wish I Was Eighteen Again}
 {meta: artist Ray Price}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file iwishiwaseighteenagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]At a bar [G]down in Dallas an [Em]old man chimed [Am]in
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [Am]Oh I wish I was [D7]eighteen [G]again
 {end_of_verse}
+
+
+
+
+

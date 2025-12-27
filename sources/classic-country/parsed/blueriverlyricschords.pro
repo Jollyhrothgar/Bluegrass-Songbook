@@ -1,6 +1,9 @@
 {meta: title Blue River}
 {meta: artist Elvis Presley}
 {meta: composer Fred Tobias and Paul Evans}
+{meta: x_source classic-country}
+{meta: x_source_file blueriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]B-lue [C]River it can't be found on any [G]map that I know
@@ -18,3 +21,4 @@ From now on baby that's [C]where I'm gonna be
 Crying over [D7]you by the river of [G]blue
 repeat
 {end_of_verse}
+

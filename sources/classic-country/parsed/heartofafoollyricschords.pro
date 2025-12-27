@@ -1,6 +1,9 @@
 {meta: title Heart Of A Fool}
 {meta: artist Carl Smith}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file heartofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Heart of a poor fool cry [C]on
@@ -33,3 +36,8 @@ When your [G7]new love looks for new love that's [C]true
 Cry cry [F]cry cry [G7]heart of a poor fool cry [C]on
 Cry cry [F]cry cry [G7]heart of a poor fool cry [C]on
 {end_of_verse}
+
+
+
+
+

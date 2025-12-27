@@ -1,6 +1,9 @@
 {meta: title If You Ever Change Your Mind}
 {meta: artist Crystal Gayle}
 {meta: composer Bob Gundry and McGee Parker}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoueverchangeyourmindlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Cm]Sure I under[G]stand
@@ -51,3 +54,8 @@ That you [Bm]left be[Em]hind
 [D7]Some magic [Bm]place in [Em]time[Am]
 If you [D7]ever change your [G]mind
 {end_of_verse}
+
+
+
+
+

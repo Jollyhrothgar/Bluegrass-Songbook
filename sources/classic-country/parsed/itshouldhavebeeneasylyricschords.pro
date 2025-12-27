@@ -1,6 +1,9 @@
 {meta: title It Should Have Been Easy}
 {meta: artist Anne Murray}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file itshouldhavebeeneasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every morning when I get up
@@ -54,3 +57,13 @@ Looking back [C]at me looking back at [G]me
 I see your face in my coffee cup
 Looking back [C]at me looking back at [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

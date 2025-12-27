@@ -1,5 +1,8 @@
 {meta: title Down By The Old River}
 {meta: artist Dick Curless}
+{meta: x_source classic-country}
+{meta: x_source_file downbytheoldriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a little girl a waiting down by the ole [F]river
@@ -21,3 +24,5 @@
 [C]There's a little girl a waiting down by the ole [F]river
 [C]Waiting [G7]just for my love so I got to go meet [C]her
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Shepherd Of Love}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file shepherdoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My love is so young like a [G7]lamb from the fold
@@ -32,3 +35,6 @@ Make her wise and always keep her [G7]free from all harm
 Shepherd of love watch over her for [C]me
 [F]Shepherd of love watch over her for [C]me
 {end_of_verse}
+
+
+

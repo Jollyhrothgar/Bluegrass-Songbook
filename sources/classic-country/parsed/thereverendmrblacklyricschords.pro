@@ -1,6 +1,9 @@
 {meta: title The Reverend Mr. Black}
 {meta: artist Johnny Cash}
 {meta: composer Billy Edd & Jed Peters}
+{meta: x_source classic-country}
+{meta: x_source_file thereverendmrblacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was a mountain of a man and I want you to [F]know 
@@ -66,3 +69,11 @@ The Reverend Mr. Black was my old man
 [C]I gotta walk that [F]lonesome [C]valley I gotta to walk [G7]it by [C]myself 
 Oh nobody [F]else can walk it for me [C]I got to walk it by [C][G7]myself
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title There's A Teardrop In Your Eye}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer William Grishaw}
+{meta: x_source classic-country}
+{meta: x_source_file theresateardropinyoureyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a teardrop in your eye my [F]dearie please don’t [C]cry
@@ -29,3 +32,6 @@ Though I know that you’re not crying over [G7]me
 That’s just [C]why it hurts me so for it’s [F]true and I [C]know
 That for me your [G7]love will never [C]be
 {end_of_verse}
+
+
+

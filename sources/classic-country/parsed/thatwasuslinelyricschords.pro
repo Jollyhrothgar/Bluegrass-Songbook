@@ -1,6 +1,9 @@
 {meta: title That Was Us}
 {meta: artist Randy Travis}
 {meta: composer Craig Wiseman and Tony Lane}
+{meta: x_source classic-country}
+{meta: x_source_file thatwasuslinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Twenty [G]dollars out of momma's [C]purse bought us a [G]tank of gas
@@ -45,3 +48,8 @@ Till some[Am]body brought his [G]crops in from the [C]fields
 Yeah and [Am]folks around here still [G]wonder who that [C]was
 [D7]That was [G]us
 {end_of_verse}
+
+
+
+
+

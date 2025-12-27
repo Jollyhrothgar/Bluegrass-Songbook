@@ -1,6 +1,9 @@
 {meta: title Have You Ever Looked Into Your Heart}
 {meta: artist Jerry Vale}
 {meta: composer Billy Barberis, Bobby Weinstein, Teddy Randazzo}
+{meta: x_source classic-country}
+{meta: x_source_file haveyoueverlookedintoyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you [C]looked into your [G]heart
@@ -40,3 +43,7 @@ All [D7]I do is pray for [Am]your re[D7]turn [Am]
 [D7]Maybe there's a place [Am]for me[C]
 Have you [D7]looked into your [G]heart
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Going Going Gone}
 {meta: artist Lee Greenwood}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file goinggoinggonelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's over  [F]I left the door [C]unlocked again
@@ -29,3 +32,5 @@ She said it's [C]over [F]  and much too late to [C]change her mind
 [F]I've lost her all the [Em]way this time[Dm]
 She's [G7]going going [C]gone
 {end_of_verse}
+
+

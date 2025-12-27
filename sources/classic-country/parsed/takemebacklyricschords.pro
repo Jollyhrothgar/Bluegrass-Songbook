@@ -1,5 +1,8 @@
 {meta: title Take Me Back}
 {meta: artist Heidi Hauge}
+{meta: x_source classic-country}
+{meta: x_source_file takemebacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take me back to that little peaceful [C]valley
@@ -39,3 +42,8 @@ Take me [G]back to my [D7]childhood home [G]again
 {start_of_verse: Verse 4}
 [C]Take me [G]back to my [D7]childhood home [G]again
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Never Had The One That I Wanted}
 {meta: artist Ernest Tubb}
 {meta: composer Jimmie Louis, Claude Gray & Sheb Wooley}
+{meta: x_source classic-country}
+{meta: x_source_file ineverhadtheonethatiwantedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never had the one that I [F]wanted
@@ -38,3 +41,7 @@ Never [G7]wanted the one that I [C]had
 If I ever get back to the good [F]girl
 I'll [G7]never go back to the [C]bad 
 {end_of_verse}
+
+
+
+

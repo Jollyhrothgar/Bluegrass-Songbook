@@ -1,6 +1,9 @@
 {meta: title The Writing On The Wall}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo and Al Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file thewritingonthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know there's [F]someone there be[C]side [F]you
@@ -42,3 +45,8 @@ I can [C]read the [G7]writing on the [C]wall
 {start_of_verse: Verse 4}
 [F]I can [C]read the [G7]writing on the [C]wall
 {end_of_verse}
+
+
+
+
+

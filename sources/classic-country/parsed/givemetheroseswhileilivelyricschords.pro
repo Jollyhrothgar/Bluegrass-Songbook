@@ -1,6 +1,9 @@
 {meta: title Give Me The Roses While I Live}
 {meta: artist Jimmy Martin}
 {meta: composer R.H. Cornelius and James Rowe}
+{meta: x_source classic-country}
+{meta: x_source_file givemetheroseswhileilivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wonderful things of folks are said
@@ -43,3 +46,8 @@ Trying to cheer me [D7]on
 [G]Useless are flowers that you give
 [D7]After the soul is [G]gone
 {end_of_verse}
+
+
+
+
+

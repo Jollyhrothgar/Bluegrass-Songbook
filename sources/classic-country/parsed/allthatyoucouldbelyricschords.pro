@@ -1,6 +1,9 @@
 {meta: title All That You Could Be}
 {meta: artist Kenny Rogers}
 {meta: composer Rory Bourke and Mike Reid}
+{meta: x_source classic-country}
+{meta: x_source_file allthatyoucouldbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A star up in the sky [F]will never know
@@ -29,3 +32,6 @@ And [C]you don't know how [F]beautiful you [C]are
 [Am]Then you would [G7]know what every[Am]body [F]sees
 That [C]beautiful[Dm]  is [C]all that [F]you could [C]be
 {end_of_verse}
+
+
+

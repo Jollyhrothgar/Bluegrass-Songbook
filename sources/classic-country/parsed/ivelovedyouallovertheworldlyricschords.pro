@@ -1,6 +1,9 @@
 {meta: title I've Loved You All Over the World}
 {meta: artist Cal Smith}
 {meta: composer Glenn Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file ivelovedyouallovertheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've loved you all over [F]the [C]world
@@ -27,3 +30,6 @@ I've [G7]loved you all over the [C]world
 [G7]City [C]sidewalks and [F]each county [C]road sweet [F]girl
 I've [G7]loved you all over the [C]world
 {end_of_verse}
+
+
+

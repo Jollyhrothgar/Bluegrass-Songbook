@@ -1,6 +1,9 @@
 {meta: title You're Something Special To Me}
 {meta: artist George Strait}
 {meta: composer David Anthony}
+{meta: x_source classic-country}
+{meta: x_source_file youresomethingspecialtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]As I hold you [C]close tonight [F]hear what I [C]say
@@ -26,3 +29,6 @@ How it [C]happened I don't [Am]know or [Em]care I'm [Am]just happy I found [G7]y
 {start_of_verse: Verse 4}
 It's [Am]all such a [Dm]mystery [G7]you're something special to [C]me
 {end_of_verse}
+
+
+

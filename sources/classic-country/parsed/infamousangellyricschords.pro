@@ -1,5 +1,8 @@
 {meta: title Infamous Angel}
 {meta: artist Iris Dement}
+{meta: x_source classic-country}
+{meta: x_source_file infamousangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night before I went to sleep my knees dropped to the [C]floor
@@ -43,3 +46,8 @@ And knows she needed to [D7]roam
 For Infamous [G]Angel [D7]destination [G]home
 [C]Infamous [G]Angel [D7]destination [G][C]h-ome
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Care}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file icarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the TV won't work [G#7]and your toys fall apart
@@ -40,3 +43,8 @@ I care I do there's [G7]no one like you
 [F]I want you to [G7]know I [C]care
 I love you too much
 {end_of_verse}
+
+
+
+
+

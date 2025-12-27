@@ -1,6 +1,9 @@
 {meta: title She Told Me So}
 {meta: artist Cal Smith}
 {meta: composer Johnny Colmus}
+{meta: x_source classic-country}
+{meta: x_source_file shetoldmesolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The world is square I know it is she told me [G7]so
@@ -29,3 +32,6 @@
 [G7]But jealous tongues have tried to tell me she's untrue
 [C]I know she isn't cause she told me so
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Yard Sale}
 {meta: artist Sammy Kershaw}
 {meta: composer DeWayne Blackwell and Larry Bastian}
+{meta: x_source classic-country}
+{meta: x_source_file yardsalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cardboard sign says yard sale real estate sign says sold
@@ -34,3 +37,7 @@ The way they're [C]sorting through what's [G7]left of you and [C]me
 Well I wonder what you'd say if you could [F]see
 The way they're [C]sorting through what's [G7]left of you and [C]me
 {end_of_verse}
+
+
+
+

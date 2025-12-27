@@ -1,6 +1,9 @@
 {meta: title Beautiful Wings}
 {meta: artist Carl Smith}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulwingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Beautiful wings [D7]mother must [G]wear
@@ -36,3 +39,7 @@ For I know she's with angels somewhere [A7]up [D7]above
 [G]Great white wings with a [D7]halo so [G]fair
 I know she's in glory dear [D7]mother sweet [G]love
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'll Leave The Bottle On The Bar}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file illleavethebottleonthebarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A loser doesn't [C]always know he's [G]losing 
@@ -28,3 +31,6 @@ If you'll take me back to start [D7]anew
 [G]I'll leave the [C]bottle on the [G]bar 
 I'll [C]sober up and [D7]come back home to [G]you
 {end_of_verse}
+
+
+

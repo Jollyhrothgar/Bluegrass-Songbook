@@ -1,6 +1,9 @@
 {meta: title Wonderful Tonight}
 {meta: artist Johnny Duncan}
 {meta: composer Eric Clapton}
+{meta: x_source classic-country}
+{meta: x_source_file wonderfultonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's late in the even[G7]ing[F] 
@@ -30,3 +33,6 @@ It's time to go [G7]home now [F]and I've got an [G7]aching head
 I say my [F]darling you were [G7]wonderful to[C]night[Am]   [G7]
 Oh my [F]darling you were [G7]wonderful to[C]night
 {end_of_verse}
+
+
+

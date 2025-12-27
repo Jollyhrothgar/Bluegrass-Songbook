@@ -1,5 +1,8 @@
 {meta: title The North Won The War Again Last Night}
 {meta: artist Cal Smith}
+{meta: x_source classic-country}
+{meta: x_source_file thenorthwonthewaragainlastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bus station in Atlanta 6:[C7]40 in the evening
@@ -43,3 +46,8 @@ She's [C]taken all the [G7]boundaries [C]away
 [F]She held me [G7]close and loved this [E7]southern boy just [C]right
 And the [D7]north won the [G7]war again last [C]night
 {end_of_verse}
+
+
+
+
+

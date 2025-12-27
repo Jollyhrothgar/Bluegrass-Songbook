@@ -1,6 +1,9 @@
 {meta: title A Woman Never Forgets}
 {meta: artist Kitty Wells}
 {meta: composer Johnny Wright and Bill Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file awomanneverforgetslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tie a string [C]around your [G]finger
@@ -48,3 +51,9 @@
 [C]So hold her and tell her you love [G]her
 [D7]If you're the man that remembers [G]her
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You're Breaking My Heart}
 {meta: artist Ernest Tubb}
 {meta: composer H.H. Melka}
+{meta: x_source classic-country}
+{meta: x_source_file yourebreakingmyheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The clothes that I wear [G7]are shabby and [C]old
@@ -29,3 +32,6 @@
 [G]You never will change [G7]it's too late to [C]start
 [G]You're [D7]treating me wrong you're breaking my [G]heart
 {end_of_verse}
+
+
+

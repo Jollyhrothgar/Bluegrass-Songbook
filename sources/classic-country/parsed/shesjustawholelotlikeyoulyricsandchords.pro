@@ -1,5 +1,8 @@
 {meta: title She's Just a Whole Lot Like You}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file shesjustawholelotlikeyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I found you [G7]again [F]in somebody [D7]new
@@ -28,3 +31,6 @@ Somehow [F]I found [G7]the way to live again it [C]seems
 The [C]reason that I [G7]love her I'm [F]still in love with [Dm]you
 [G7]And she's just a whole lot like [C]you
 {end_of_verse}
+
+
+

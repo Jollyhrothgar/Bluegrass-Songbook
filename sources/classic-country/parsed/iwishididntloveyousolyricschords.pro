@@ -1,6 +1,9 @@
 {meta: title I Wish I Didn’t Love You So}
 {meta: artist Eddy Arnold}
 {meta: composer Frank Loesser}
+{meta: x_source classic-country}
+{meta: x_source_file iwishididntloveyousolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I  [Em]wish I didn't [Dm]love you [C]so
@@ -20,3 +23,5 @@
 [G7]But when I [C]try [Em]something in that [Dm]heart says [C]no
 [F]You're still [C]there I wish I didn't [G7]love you [C]so
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title When}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file whenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sitting alone by the seaside [F]tasting the salt in the breeze
@@ -33,3 +36,7 @@ Maybe it never will [C]be
 {start_of_verse: Verse 4}
 [G7]Maybe it never will [C]be
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let The Music Lift You Up}
 {meta: artist Reba McEntire}
 {meta: composer Troy Seals and Eddie Setser}
+{meta: x_source classic-country}
+{meta: x_source_file letthemusicliftyouuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say you're from the city Chicago is your home
@@ -53,3 +56,9 @@ When you're feeling low hit that [F]radio
 [G7]Let that music lift you
 Let that music lift you [C]up [F]way [C]up [G7]way [C]up
 {end_of_verse}
+
+
+
+
+
+

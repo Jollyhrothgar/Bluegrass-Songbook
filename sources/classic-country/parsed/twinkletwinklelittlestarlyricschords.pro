@@ -1,5 +1,8 @@
 {meta: title Twinkle Twinkle Little Star}
 {meta: artist Isla Grant}
+{meta: x_source classic-country}
+{meta: x_source_file twinkletwinklelittlestarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Twinkle twinkle little star
@@ -60,3 +63,11 @@ You're so very far away
 I reach out to you afar
 [G]Twinkle twinkle little star
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Best I Ever Had}
 {meta: artist Billy Crash Craddock}
 {meta: composer Ron Chancey and Dale Morris}
+{meta: x_source classic-country}
+{meta: x_source_file thebestieverhadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought that I'd known true love in my [G7]lifetime
@@ -33,3 +36,7 @@ Cause the [C]best [F]I have [C]ever [F]had [G7]was the love you gave to [C]me
 {start_of_verse: Verse 5}
 [F]Yes the [C]best [F]I have [C]ever [F]had [G7]was the love you gave to [C]me
 {end_of_verse}
+
+
+
+

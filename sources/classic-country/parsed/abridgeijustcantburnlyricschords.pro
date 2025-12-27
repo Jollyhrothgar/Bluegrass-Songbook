@@ -1,6 +1,9 @@
 {meta: title A Bridge I Just Can't Burn}
 {meta: artist Kitty Wells}
 {meta: composer Wayne Manning}
+{meta: x_source classic-country}
+{meta: x_source_file abridgeijustcantburnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]My [C]lawyer turned and [G7]said congratu[C]lations
@@ -23,3 +26,5 @@ Now [C]here it's time to [C7]sign but I can't [F]even see the [C]line
 And I'm standing [F]on a [C]bridge I [F]just can't [C]burn
 Yes I'm standing [F]on a [C]bridge I [F]just can't [C]burn
 {end_of_verse}
+
+

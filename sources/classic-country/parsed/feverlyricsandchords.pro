@@ -1,6 +1,9 @@
 {meta: title Fever}
 {meta: artist Garth Brooks}
 {meta: composer Bryan Kennedy, Steven Tyler, Joe Perry, Bruce Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file feverlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He's got a split finger wrap and his rope's pulled way too tight
@@ -44,3 +47,7 @@ He [G]gets so tired of hangin' [D7]on so tight
 I [G]know you think he's crazy well I [C]think you're right
 We're [G]all here cause he's [D7]not all there that's [G]right
 {end_of_verse}
+
+
+
+

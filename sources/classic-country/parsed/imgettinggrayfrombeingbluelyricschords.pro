@@ -1,6 +1,9 @@
 {meta: title I'm Getting Gray From Being Blue}
 {meta: artist Sonny James}
 {meta: composer David Wilkins}
+{meta: x_source classic-country}
+{meta: x_source_file imgettinggrayfrombeingbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Ever since you went [G7]away it seems I [C]age a year each [Am]day
@@ -23,3 +26,5 @@
 [Dm]I'm gettin' gray [G7]I’m gray being [C]blue
 [F](I'm gettin' [C]gray from being [C][G7]blue)
 {end_of_verse}
+
+

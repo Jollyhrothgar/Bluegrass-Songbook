@@ -1,6 +1,9 @@
 {meta: title Mother's Mansion Is Higher Than Mine}
 {meta: artist Mac Wiseman}
 {meta: composer Albert E. Brumley Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file mothersmansionishigherthanminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There are mansions high there are mansions wide way [C]up in the glory [G]land 
@@ -29,3 +32,6 @@ Her man[A7]sion is many st[D7]ories high a gift of heaven divine
 There's a [G]room for every tear she shed in this [C]world she left [G]behind
 And I know my mother's mansion is [D7]higher than [G]mine
 {end_of_verse}
+
+
+

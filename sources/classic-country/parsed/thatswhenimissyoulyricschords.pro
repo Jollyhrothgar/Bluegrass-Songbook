@@ -1,6 +1,9 @@
 {meta: title That's When I Miss You}
 {meta: artist The Wilburn Brothers}
 {meta: composer Doyle Wilburn and Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhenimissyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I want to [F]kiss you that's when I [C]miss you
@@ -36,3 +39,7 @@ I'm missing and want you with me all the [G7]time
 When I [C]see a rose in bloom lovers on their honeymoon
 That's when I [G7]miss oh how I miss [C]you
 {end_of_verse}
+
+
+
+

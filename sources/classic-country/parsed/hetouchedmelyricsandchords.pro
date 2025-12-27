@@ -1,6 +1,9 @@
 {meta: title He Touched Me}
 {meta: artist Connie Smith}
 {meta: composer Bill Gaither}
+{meta: x_source classic-country}
+{meta: x_source_file hetouchedmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]Shackled by a heavy [C][G7]burden
@@ -29,3 +32,6 @@
 [C]Something [G7]happened and now [C]I [F]know
 [C]He touched me [A7]and [D7]made me [C][G7]whole
 {end_of_verse}
+
+
+

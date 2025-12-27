@@ -1,6 +1,9 @@
 {meta: title All I Want And Need Forever}
 {meta: artist Vern Gosdin}
 {meta: composer Dennis Payne}
+{meta: x_source classic-country}
+{meta: x_source_file alliwantandneedforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All I want and need forever 
@@ -55,3 +58,8 @@ You're my spark of inspiration
 You [D7]have won my dedication
 All I [C]want and need [D7]forever is you and [G]I
 {end_of_verse}
+
+
+
+
+

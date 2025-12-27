@@ -1,6 +1,9 @@
 {meta: title Kate}
 {meta: artist Johnny Cash}
 {meta: composer Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file katelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I saw you with another it made me lose my mind 
@@ -54,3 +57,12 @@ As [C]sure as your name's Kate you [G7]put me [C]here
 {start_of_verse: Verse 10}
 Kate you just plain bad you know that mhm
 {end_of_verse}
+
+
+
+
+
+
+
+
+

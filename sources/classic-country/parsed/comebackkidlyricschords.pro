@@ -1,6 +1,9 @@
 {meta: title Comeback Kid}
 {meta: artist Keith Whitley Conley}
 {meta: composer Hank Cochran, Dean Dillon, Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file comebackkidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You call me the come[G7]back [C]kid 
@@ -44,3 +47,8 @@ That the [D7]comeback kid won't be [G7]coming back this [C]time [G7]   [C]
 {start_of_verse: Verse 4}
 No the [D7]comeback kid won't be [G7]coming back this [C]time
 {end_of_verse}
+
+
+
+
+

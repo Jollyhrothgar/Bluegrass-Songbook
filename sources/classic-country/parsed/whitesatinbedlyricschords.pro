@@ -1,5 +1,8 @@
 {meta: title White Satin Bed}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file whitesatinbedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hangin' on to every [C]nickel and every [G]dime
@@ -32,3 +35,7 @@ And [G]I'll sleep for eternity [D7]in my white satin [G]bed
 {start_of_verse: Verse 5}
 Yes I'll sleep for eternity [D7]in my white satin [G]bed
 {end_of_verse}
+
+
+
+

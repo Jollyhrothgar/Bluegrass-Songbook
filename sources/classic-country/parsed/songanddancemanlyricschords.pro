@@ -1,6 +1,9 @@
 {meta: title Song And Dance Man}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file songanddancemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm a song and dance man [C]come on gather round me and [G]clap your hands
@@ -41,3 +44,8 @@ Put a little something in the kitty and I'll [D7]sing and dance for [G]you
 {start_of_verse: Verse 4}
 Well I'm a song and dance man [C]come on gather round me and [G]clap your hands
 {end_of_verse}
+
+
+
+
+

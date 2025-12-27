@@ -1,5 +1,8 @@
 {meta: title A New Love}
 {meta: artist Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file anewlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve got a new love a true [C]love
@@ -52,3 +55,11 @@ Nights to be alone with no one to call my own
 [G]But heaven heard my plea and sent you to me
 [D7]Now I know I’ve found true love at [G]last
 {end_of_verse}
+
+
+
+
+
+
+
+

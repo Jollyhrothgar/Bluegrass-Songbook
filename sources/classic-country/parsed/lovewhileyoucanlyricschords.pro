@@ -1,5 +1,8 @@
 {meta: title Love While You Can}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file lovewhileyoucanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love while you [C]can and be [G]faithful
@@ -39,3 +42,8 @@ Cause baby it [D7]won’t happen [G]twice
 {start_of_verse: Verse 4}
 Cause baby it [D7]won’t happen [G]twice
 {end_of_verse}
+
+
+
+
+

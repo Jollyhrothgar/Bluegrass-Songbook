@@ -1,6 +1,9 @@
 {meta: title Gonna Get A Life}
 {meta: artist Mark Chesnutt}
 {meta: composer Frank Dycus and Jim Lauderdale}
+{meta: x_source classic-country}
+{meta: x_source_file gonnagetalifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gotta find something to ease my [D7]mind
@@ -48,3 +51,9 @@
 [D7]Yeah I'm gonna get a life
 [G]Before the gettin's done
 {end_of_verse}
+
+
+
+
+
+

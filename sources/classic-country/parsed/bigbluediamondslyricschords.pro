@@ -1,6 +1,9 @@
 {meta: title Big Blue Diamonds}
 {meta: artist Jimmy Dean}
 {meta: composer Earl "Kit" Carson}
+{meta: x_source classic-country}
+{meta: x_source_file bigbluediamondslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Big diamonds big blue [E7]diamonds on her [F]finger
@@ -29,3 +32,6 @@
 [C]Big diamonds big blue [E7]diamonds I don't want [F]them
 [C]I just want the [G7]love behind a band of [C]gold
 {end_of_verse}
+
+
+

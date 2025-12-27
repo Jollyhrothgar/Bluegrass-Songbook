@@ -1,5 +1,8 @@
 {meta: title Tower Of Tears}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file toweroftearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I turn back the [C7]pages of [F]time
@@ -26,3 +29,6 @@ Cause some[C]how it knows that you're no longer [G7]mine
 It [C]shared our secrets [C7]down through the [F]years
 Now I'm [C]alone neath the [G7]tower of [F]tear[C]s
 {end_of_verse}
+
+
+

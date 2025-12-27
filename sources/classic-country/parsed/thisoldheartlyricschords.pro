@@ -1,6 +1,9 @@
 {meta: title This Old Heart}
 {meta: artist Buck Owens}
 {meta: composer Eddie Miller and Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file thisoldheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This old heart has been [D7]around 
@@ -29,3 +32,6 @@ It's been up and it's been [G]down
 It's been walked on all over [C]town 
 But it [G]still looks for love [D7]to come [G]around
 {end_of_verse}
+
+
+

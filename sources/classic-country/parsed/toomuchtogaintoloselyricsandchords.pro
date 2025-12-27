@@ -1,6 +1,9 @@
 {meta: title Too Much To Gain To Lose}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchtogaintoloselyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Too many [G7]miles be[C]hind me[C7]
@@ -33,3 +36,7 @@ And there's [C]too much to [G7]gain to [C]lose
 {start_of_verse: Verse 5}
 Yes there's too much to [G7]gain to [F]lose[C]
 {end_of_verse}
+
+
+
+

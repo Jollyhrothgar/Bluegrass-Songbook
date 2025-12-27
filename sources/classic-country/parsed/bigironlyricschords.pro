@@ -1,5 +1,8 @@
 {meta: title Big Iron}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file bigironlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To the town of Agua Fria rode a stranger one fine [Am]day
@@ -70,3 +73,11 @@
 [Am]When he tried to match the ranger with the big iron on his hip
 [F]Big iron on his [C]hip
 {end_of_verse}
+
+
+
+
+
+
+
+

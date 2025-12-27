@@ -1,6 +1,9 @@
 {meta: title Grass Won't Grow On A Busy Street}
 {meta: artist Jeannie Seely}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file grasswontgrowonabusystreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The wind and I have a lot in common
@@ -54,3 +57,9 @@ You can't draw water from a well that's dry
 Rain won’t fall from a clear blue sky
 Grass won't grow on a busy [G]street
 {end_of_verse}
+
+
+
+
+
+

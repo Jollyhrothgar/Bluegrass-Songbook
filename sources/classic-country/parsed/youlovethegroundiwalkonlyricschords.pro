@@ -1,6 +1,9 @@
 {meta: title You Love The Ground I Walk On}
 {meta: artist Waylon Jennings}
 {meta: composer Harlan Howard and Don McHan}
+{meta: x_source classic-country}
+{meta: x_source_file youlovethegroundiwalkonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I work so hard to win myself a [G7]place in life
@@ -31,3 +34,7 @@ You [C]love the ground I walk on but you [G7]don't love [C]me
 {start_of_verse: Verse 5}
 You love the ground I walk on but you [G7]don't love [C]me
 {end_of_verse}
+
+
+
+

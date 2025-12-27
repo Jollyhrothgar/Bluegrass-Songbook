@@ -1,6 +1,9 @@
 {meta: title Colors I'm Gonna Paint The Town}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Buddy Alan}
+{meta: x_source classic-country}
+{meta: x_source_file colorsimgonnapaintthetownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I left my front door open many times for you to use
@@ -33,3 +36,7 @@ I'll paint it red to match the wine I'll drink and all the lips I'll kiss
 {start_of_verse: Verse 4}
 [D7]These are the colors that I'm gonna paint the [G]town
 {end_of_verse}
+
+
+
+

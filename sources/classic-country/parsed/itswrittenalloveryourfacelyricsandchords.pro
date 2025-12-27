@@ -1,6 +1,9 @@
 {meta: title It's Written All Over Your Face}
 {meta: artist Hank Williams Jr.}
 {meta: composer Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file itswrittenalloveryourfacelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You came in with the sun this mornin' 
@@ -62,3 +65,11 @@ Cause it's [D7]written all over your [G]face
 Yeah I'm [C]thinkin' mighty strong about [G]leavin' 
 Cause it's [D7]written all over your [G]face
 {end_of_verse}
+
+
+
+
+
+
+
+

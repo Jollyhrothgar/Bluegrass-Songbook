@@ -1,6 +1,9 @@
 {meta: title Little Eyes That Look At Me}
 {meta: artist the Wilburn Brothers}
 {meta: composer Glen Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file littleeyesthatlookatmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a woman full of trouble tied to [G7]me
@@ -33,3 +36,7 @@ Before I'd hang around and grieve
 [C]And I wonder why I try still I know the reason [F]why
 [C]Cause I love these [G7]little eyes that look at [C]me
 {end_of_verse}
+
+
+
+

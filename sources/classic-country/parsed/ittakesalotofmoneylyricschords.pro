@@ -1,6 +1,9 @@
 {meta: title It Takes A Lot Of Money}
 {meta: artist Wilburn Brothers}
 {meta: composer Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file ittakesalotofmoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh it takes a lot of money 
@@ -48,3 +51,9 @@ And drive a [E7]great big Cadillac [A7]car
 And have a [C]pocketful of money 
 To [G7]treat my little honey like I [C]want to
 {end_of_verse}
+
+
+
+
+
+

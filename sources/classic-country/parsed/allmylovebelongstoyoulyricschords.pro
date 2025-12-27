@@ -1,6 +1,9 @@
 {meta: title All My Love Belongs To You}
 {meta: artist Jerry Wallace}
 {meta: composer Henry Glover and Sally Nix}
+{meta: x_source classic-country}
+{meta: x_source_file allmylovebelongstoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You [F]know I [Dm]love you so (I love you [G]so)
@@ -37,3 +40,7 @@ For all my love [C]belongs to you
 {start_of_verse: Verse 5}
 For [Dm]all my love [C]belongs to you (to you)
 {end_of_verse}
+
+
+
+

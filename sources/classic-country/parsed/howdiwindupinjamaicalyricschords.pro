@@ -1,6 +1,9 @@
 {meta: title How'd I Wind Up In Jamaica}
 {meta: artist Tracy Byrd}
 {meta: composer Michael Heeney and Casey Beathard}
+{meta: x_source classic-country}
+{meta: x_source_file howdiwindupinjamaicalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sign said [D7]cold beer I pulled in [G]there 
@@ -53,3 +56,10 @@ Wouldn't [D7]have it any other [G]way
 To this [C]day it ain't clear all I [Bm]know is we're [E7]here
 On this [Am]bed of sand in [D7]Montego [G]Bay
 {end_of_verse}
+
+
+
+
+
+
+

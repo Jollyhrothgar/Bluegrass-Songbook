@@ -1,5 +1,8 @@
 {meta: title Private Wilson White}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file privatewilsonwhitelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Private [F]Wilson White Ameri[C]ca is proud tonight 
@@ -53,3 +56,11 @@ As he [G7]yelled I died for freedom he threw the hand [C]grenade
 [C]Private [F]Wilson White Ameri[C]ca is proud tonight 
 Proud to [G7]claim you for their hero Private [C]White
 {end_of_verse}
+
+
+
+
+
+
+
+

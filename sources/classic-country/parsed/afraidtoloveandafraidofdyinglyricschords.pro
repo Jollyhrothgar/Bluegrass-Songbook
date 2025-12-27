@@ -1,6 +1,9 @@
 {meta: title Afraid To Love And Afraid Of Dying}
 {meta: artist Dolly Parton}
 {meta: composer Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file afraidtoloveandafraidofdyinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say most anything you eat could hurt your [F]health
@@ -33,3 +36,7 @@ The [C]biggest danger sign that we should [F]know
 {start_of_verse: Verse 4}
 Make sure we're [F]right with [C]God as [G7]through this world we [C]go
 {end_of_verse}
+
+
+
+

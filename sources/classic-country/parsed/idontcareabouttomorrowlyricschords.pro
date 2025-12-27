@@ -1,5 +1,8 @@
 {meta: title I Don’t Care About Tomorrow}
 {meta: artist Marvin Rainwater}
+{meta: x_source classic-country}
+{meta: x_source_file idontcareabouttomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I don’t [C]care about [G7]tomorrow if I can [Em]make it [D7]through [C]today
@@ -26,3 +29,6 @@ There ain’t no [G7]use to [C]go to [G7]bed now cause [C]sleeping’s outta [G7
 And I don’t [C]care about [G7]tomorrow if I can [Em]make it [D7]through [G7]tonight
 No I don’t [C]care about [G7]tomorrow if I can [Em]make it [D7]through [C]tonight
 {end_of_verse}
+
+
+

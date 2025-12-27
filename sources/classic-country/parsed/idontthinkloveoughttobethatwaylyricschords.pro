@@ -1,6 +1,9 @@
 {meta: title I Don't Think Love Ought To Be That Way}
 {meta: artist Reba McEntire}
 {meta: composer Laying Martine and Richard Mainegra}
+{meta: x_source classic-country}
+{meta: x_source_file idontthinkloveoughttobethatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I'm feelin' so fine and you're [F]looking so [C]good
@@ -29,3 +32,6 @@ No I [C]don't think love ought to [G7]be that way
 I could [Am]tell him a lie and I [D7]know that I'd get by
 But I [C]don't think [Am]love [G7]ought to be that [C]way
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title His Boundless Love}
 {meta: artist The Hee Haw Gospel Quartet}
 {meta: composer Luther G. Presley}
+{meta: x_source classic-country}
+{meta: x_source_file hisboundlesslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's something in (there's something in)
@@ -61,3 +64,8 @@ His star will [G]shine (His star will shine)
 His [C]song is [G]mine (His song is mine)
 Just bless His praise He is my Savior’s [D7]boundless [G]love
 {end_of_verse}
+
+
+
+
+

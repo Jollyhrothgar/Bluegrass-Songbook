@@ -1,5 +1,8 @@
 {meta: title Loving Her Will Make You Lose Your Mind}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file lovingherwillmakeyouloseyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's everything [F]that you look for in that kind of [C]woman
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 5}
 [F]Yes loving her will [G7]make you lose your [C]mind
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Every Step Of The Way Lyrics and Chords}
 {meta: artist Sonny James}
 {meta: composer Robert Allen and Al Stillman}
+{meta: x_source classic-country}
+{meta: x_source_file everystepofthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We'll walk the road of life together day by [F]day
@@ -26,3 +29,6 @@ So will I love you [G7]every step of the [C]way
 {start_of_verse: Verse 4}
 [F]I'll love you [C]only every [G7]step of the [C]way
 {end_of_verse}
+
+
+

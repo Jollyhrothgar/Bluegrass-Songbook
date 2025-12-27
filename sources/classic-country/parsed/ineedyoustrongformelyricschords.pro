@@ -1,6 +1,9 @@
 {meta: title I Need You Strong for Me}
 {meta: artist Kristy McNichol}
 {meta: composer David Shire and Carol Connors}
+{meta: x_source classic-country}
+{meta: x_source_file ineedyoustrongformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't go changing your life  [G7]now
@@ -32,3 +35,6 @@
 [F]But I'm not that afraid [Em]you [Am]see
 [Dm]So I need [G7]you strong for [C]me   [F]for me [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title May You Never}
 {meta: artist The Bellamy Brothers}
 {meta: composer John Martyn}
+{meta: x_source classic-country}
+{meta: x_source_file mayyouneverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]May you [G]never lay your head down [D7]without a hat to [G]hold
@@ -52,3 +55,10 @@ May you [Em]never lose your [D7]woman over[G]night
 {start_of_verse: Verse 5}
 May you [Em]never lose your [D7]woman over[G]night
 {end_of_verse}
+
+
+
+
+
+
+

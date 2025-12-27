@@ -1,6 +1,9 @@
 {meta: title When Your World Was Turning For Me}
 {meta: artist Randy Travis}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file whenyourworldwasturningformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When [C]we found our mountain we [F]named it [C]forever
@@ -33,3 +36,7 @@ When your world was [G7]turning for [Am]me [D7]
 {start_of_verse: Verse 5}
 When [C]your world was [G7]turning for [F]me[C]
 {end_of_verse}
+
+
+
+

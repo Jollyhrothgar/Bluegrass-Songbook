@@ -1,6 +1,9 @@
 {meta: title Mr. Peters}
 {meta: artist Roy Drusky}
 {meta: composer Steve Karliski and Larry Kolber}
+{meta: x_source classic-country}
+{meta: x_source_file mrpeterslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello dear will the same place be [D7]alright
@@ -28,3 +31,6 @@
 [G]Don't worry Mr. Peters I'm [D7]just heading for the [G]door
 [C]Well yes Mr. [G]Peters I'm just [D7]heading for the [G]door
 {end_of_verse}
+
+
+

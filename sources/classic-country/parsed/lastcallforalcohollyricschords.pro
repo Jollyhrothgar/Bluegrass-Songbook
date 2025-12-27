@@ -1,6 +1,9 @@
 {meta: title Last Call For Alcohol}
 {meta: artist Charlie Walker}
 {meta: composer Don Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file lastcallforalcohollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no blonde at the [C7]bar making [F]eyes at me
@@ -29,3 +32,6 @@ When the [D7]drinks are gone the table's cleared and [G7]they tell me to go home
 [C]Waitress tell 'em fix [C7]one more and [F]pour it tall
 I'll drink it fast I [C]know that it's [G7]last call for alco[C]hol
 {end_of_verse}
+
+
+

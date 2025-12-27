@@ -1,6 +1,9 @@
 {meta: title Twice The Fool}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Jimmy Dickens and Skip Graves}
+{meta: x_source classic-country}
+{meta: x_source_file twicethefoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This morning I’m leavin’ I've [C]been up all night [G]long
@@ -22,3 +25,5 @@ Than to be a fool forever and not forgive [D7]myself
 I'm [G]exactly what you've made me but I [C]hope to change [G]someday
 If I'm a fool for leaving I'd be [D7]twice the fool to [G]stay
 {end_of_verse}
+
+

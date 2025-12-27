@@ -1,6 +1,9 @@
 {meta: title I’m Laying Up Treasures}
 {meta: artist Kevin Spencer}
 {meta: composer Karen Sims}
+{meta: x_source classic-country}
+{meta: x_source_file imlayinguptreasureslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m not investing my money on [C7]unstable [F]things
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [F]Yes I’m laying up [C]treasures [G7]for my heavenly [C]home
 {end_of_verse}
+
+
+
+
+

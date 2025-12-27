@@ -1,6 +1,9 @@
 {meta: title I Am A Pilgrim}
 {meta: artist Alabama}
 {meta: composer Merle Travis}
+{meta: x_source classic-country}
+{meta: x_source_file iamapilgrimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am a pilgrim [D7]and a [G]stranger 
@@ -36,3 +39,7 @@ Traveling [C]through  this wearisome [G]land
 I've got a home in that yonder city good [C]Lord 
 And it's [G]not   [D7]not made by [G]hand 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Christmas Cannonball}
 {meta: artist Hank Snow}
 {meta: composer Jack Rollins and Steve Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file Christmascannonballlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From out the frozen northland to the [C]better tempered [G]clime
@@ -46,3 +49,9 @@
 [D7]The Christmas Cannonball [D7][G]the Christmas [G]Cannonball
 [D7]The Christmas [G]Cannonball
 {end_of_verse}
+
+
+
+
+
+

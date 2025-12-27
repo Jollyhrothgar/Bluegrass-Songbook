@@ -1,6 +1,9 @@
 {meta: title You Gotta Have A License}
 {meta: artist Buck Owens}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file yougottahavealicenselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Me and brother Bill was goin' fishin' down to the river one [D7]day
@@ -57,3 +60,13 @@ Well I love that gal with a big lotta noise she gave me a kiss but she given no 
 Had a can of worms and a willer pole a big can of minners and a lot of sourdough
 [G]The fish were a bitin' we're gonna have fun
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

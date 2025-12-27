@@ -1,6 +1,9 @@
 {meta: title What Would You Give In Exchange For Your Soul}
 {meta: artist Webb Pierce}
 {meta: composer J. H. Carr and F. J. Berry}
+{meta: x_source classic-country}
+{meta: x_source_file whatwouldyougiveinexchangeforyoursoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Brother afar  from the Savior today
@@ -29,3 +32,6 @@ What would you give  in exchange for your [D7]soul
 Oh if today  God should call you [G]away
 What would you [D7]give  in exchange for your [G]soul
 {end_of_verse}
+
+
+

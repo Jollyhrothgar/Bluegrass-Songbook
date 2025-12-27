@@ -1,6 +1,9 @@
 {meta: title Miles In Memories}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb and Carl Story}
+{meta: x_source classic-country}
+{meta: x_source_file milesinmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I've got lots of [D7]miles but lots of [G]memories
@@ -36,3 +39,7 @@ And I wouldn't set the [D7]miles back if I [G]could
 Cause when[C]ever I get blue I know [G]exactly what to [Em]do
 Just re[C]travel all those [D7]miles in memo[G]ries
 {end_of_verse}
+
+
+
+

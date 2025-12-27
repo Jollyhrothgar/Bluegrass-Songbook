@@ -1,5 +1,8 @@
 {meta: title All Right Lyrics chords}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file allrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All right so [F]I am to [C]blame
@@ -30,3 +33,7 @@ So all right [F]I've cheated and I've [C]lied
 I [F]broke each vow we're parting [C]now
 [G7]But it will have to be all [C]right
 {end_of_verse}
+
+
+
+

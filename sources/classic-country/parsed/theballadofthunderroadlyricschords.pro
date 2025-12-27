@@ -1,5 +1,8 @@
 {meta: title The Ballad Of Thunder Road}
 {meta: artist Robert Mitchum}
+{meta: x_source classic-country}
+{meta: x_source_file theballadofthunderroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now let me tell the story I can tell it all 
@@ -77,3 +80,17 @@ The [G7]devil got the moonshine and the mountain boy that [C]day
 Sometimes into Ashville sometimes Memphis town
 The [G7]revenuers chased him but they couldn't run him [C]down
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

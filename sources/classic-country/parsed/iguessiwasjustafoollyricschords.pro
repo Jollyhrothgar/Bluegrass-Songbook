@@ -1,5 +1,8 @@
 {meta: title I Guess I Was Just A Fool}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file iguessiwasjustafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought that I [G7]could [C]forget
@@ -20,3 +23,4 @@
 [G7]A true love when it starts
 [C]I guess that I [G7]was just a [C]fool
 {end_of_verse}
+

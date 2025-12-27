@@ -1,6 +1,9 @@
 {meta: title A Gentleman On My Mind}
 {meta: artist Leona Williams}
 {meta: composer Jim Mundy}
+{meta: x_source classic-country}
+{meta: x_source_file agentlemanonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've worked at slingin' drinks at this bar 
@@ -65,3 +68,11 @@ Yes [D7]I've got a gentleman on my [G]mind
 {start_of_verse: Verse 8}
 Yes [D7]I've got a gentleman on my [G]mind
 {end_of_verse}
+
+
+
+
+
+
+
+

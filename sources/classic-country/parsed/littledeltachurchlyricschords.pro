@@ -1,6 +1,9 @@
 {meta: title Little Delta Church}
 {meta: artist Charley Pride}
 {meta: composer George Knight}
+{meta: x_source classic-country}
+{meta: x_source_file littledeltachurchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro: 
@@ -48,3 +51,9 @@ We shall meet on that beautiful [C]shore
 Though I've long been lost in sin [F]I can dream me back [C]again
 To the little church that's [G7]nestled in my [F]min[C]d
 {end_of_verse}
+
+
+
+
+
+

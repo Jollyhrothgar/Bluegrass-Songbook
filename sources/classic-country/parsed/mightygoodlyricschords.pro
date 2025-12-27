@@ -1,6 +1,9 @@
 {meta: title Mighty Good}
 {meta: artist Ricky Nelson}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file mightygoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now when I see you walking by with a wiggle walk
@@ -66,3 +69,13 @@ You know they [D7]taste mighty good [G]oooeee
 Awww it [D7]feels mighty good to [G]me
 You know it [D7]feels mighty good to [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

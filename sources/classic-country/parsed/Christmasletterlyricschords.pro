@@ -1,6 +1,9 @@
 {meta: title Christmas Letter}
 {meta: artist Keith Whitley}
 {meta: composer John Greenebaum, Gene Nelson, Paul Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At an antique desk an old man sits [C]alone 
@@ -34,3 +37,7 @@ A [C]day when [G]hope and [Cm]faith [G]conquers [B7]fear and [Em]hate
 A [C]day when [G]hope and [Cm]faith [G]conquers [B7]fear and [Em]hate 
 [D7]All that's gonna take is a little more [G]love
 {end_of_verse}
+
+
+
+

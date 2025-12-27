@@ -1,6 +1,9 @@
 {meta: title You've Got Me To Hold On To}
 {meta: artist Tanya Tucker}
 {meta: composer Dave Loggins}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotmetoholdontolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't it make life just a little more special 
@@ -52,3 +55,9 @@ Cause [C]you've got me to hold on [F]to
 Oh [C]you've got me to hold on to [F]baby 
 Cause you've [C]got me to hold on to [F]honey
 {end_of_verse}
+
+
+
+
+
+

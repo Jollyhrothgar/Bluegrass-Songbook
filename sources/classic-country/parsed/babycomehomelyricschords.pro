@@ -1,6 +1,9 @@
 {meta: title Baby Come Home}
 {meta: artist Tammy Wynette}
 {meta: composer Forest Borders}
+{meta: x_source classic-country}
+{meta: x_source_file babycomehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh baby come home baby come [Am]home
@@ -40,3 +43,8 @@ Come on [C]home now please come on [Am]home
 Well I [F]miss you so [C]much come on [F]home come on [Fm]home
 I love you [C]so-o-o-o [G7]much come on [C]home
 {end_of_verse}
+
+
+
+
+

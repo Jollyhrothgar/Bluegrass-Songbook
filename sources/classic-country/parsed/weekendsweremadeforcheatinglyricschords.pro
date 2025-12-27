@@ -1,5 +1,8 @@
 {meta: title Weekends Were Made For Cheating}
 {meta: artist Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file weekendsweremadeforcheatinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Friday night [G7]another lie to [C]tell
@@ -35,3 +38,7 @@ Making up lies to satisfy the needs of our [G7]hearts
 Oh [C]weekends [F]were made for [C]cheating
 A rendezvous that’ll [F]leave [C]no clue [G7]come morning [C]light
 {end_of_verse}
+
+
+
+

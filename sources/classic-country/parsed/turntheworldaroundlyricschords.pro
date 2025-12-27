@@ -1,6 +1,9 @@
 {meta: title Turn The World Around}
 {meta: artist Eddy Arnold}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file turntheworldaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Turn The World Around
@@ -41,3 +44,8 @@ Turn the world around the other [Bm]way
 [Dm]Just take my [G7]hand together [Am]we can
 [D7]Turn the world [G7]around the other [C]way
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Ain’t Her Cowboy Anymore}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Scotty Emerick}
+{meta: x_source classic-country}
+{meta: x_source_file iainthercowboyanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I pack my saddle throw it in that two horse trailer
@@ -52,3 +55,8 @@ I ain't her cowboy any[C]more
 {start_of_verse: Verse 5}
 [F]Her cowboy any[C]more  [F]I ain't her cowboy any[C]more
 {end_of_verse}
+
+
+
+
+

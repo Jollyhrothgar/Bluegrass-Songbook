@@ -1,6 +1,9 @@
 {meta: title I Betcha My Heart I Love You}
 {meta: artist Wanda Jackson}
 {meta: composer Bob Miller and Esther VanSciver}
+{meta: x_source classic-country}
+{meta: x_source_file ibetchamyheartiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I betcha my heart I [D7]love you I betcha my dreams are of [G]you
@@ -25,3 +28,6 @@
 [C]That's why I sing so loud I'm floating on the [A7]cloud
 [D7]I betcha my heart I love [G]you
 {end_of_verse}
+
+
+

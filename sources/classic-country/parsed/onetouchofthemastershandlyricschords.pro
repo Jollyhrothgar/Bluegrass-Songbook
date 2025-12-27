@@ -1,6 +1,9 @@
 {meta: title One Touch Of The Master's Hand}
 {meta: artist Jimmie Davis}
 {meta: composer Jim McCartney}
+{meta: x_source classic-country}
+{meta: x_source_file onetouchofthemastershandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If for some reason you're in doubt just [F]try my Savior out
@@ -31,3 +34,6 @@ If you [C]need your life renewed
 Just have [F]faith He stands by you
 It takes just [C]one touch of the [G7]Master's [C]Hand[F]  [C]
 {end_of_verse}
+
+
+

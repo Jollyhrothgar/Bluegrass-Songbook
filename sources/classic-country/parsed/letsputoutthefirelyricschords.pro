@@ -1,6 +1,9 @@
 {meta: title Let's Put Out The Fire}
 {meta: artist Mel Street}
 {meta: composer Betty Carol}
+{meta: x_source classic-country}
+{meta: x_source_file letsputoutthefirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well your burning kisses [C]really turnin' me [G]on
@@ -35,3 +38,7 @@ Honey I [C]can't last too much longer so [D7]let's put out the [G]fire
 {start_of_verse: Verse 5}
 [F]Let's put out the [G]fire [F]let's put out the [G]fire
 {end_of_verse}
+
+
+
+

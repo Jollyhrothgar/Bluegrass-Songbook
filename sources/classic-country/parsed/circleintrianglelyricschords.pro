@@ -1,6 +1,9 @@
 {meta: title Circle In Triangle}
 {meta: artist Bill Anderson}
 {meta: composer Orville Couch and Bobbie Carroll}
+{meta: x_source classic-country}
+{meta: x_source_file circleintrianglelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a circle in a triangle
@@ -30,3 +33,6 @@ But there's a [C]circle in a triangle
 [F]Three hearts in a [C]tangle [G7]hers yours and [C]mine
 [F]Three hearts in a [C]tangle [G7]that'll never un[C]wind
 {end_of_verse}
+
+
+

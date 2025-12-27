@@ -1,6 +1,9 @@
 {meta: title You Don't Need Me Now}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Shake Russell}
+{meta: x_source classic-country}
+{meta: x_source_file youdontneedmenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Holdin' on safe[Em]ly to fall 
@@ -40,3 +43,8 @@ Some[C]day I'll [G7]need you the [F]way you [G7]don't need me [C]now
 {start_of_verse: Verse 6}
 No way I'll [G7]need you the [F]way you [G7]don't need me [C]now
 {end_of_verse}
+
+
+
+
+

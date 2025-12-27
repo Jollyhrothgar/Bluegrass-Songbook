@@ -1,6 +1,9 @@
 {meta: title Pure Love}
 {meta: artist Ronnie Milsap}
 {meta: composer Eddie Rabbitt}
+{meta: x_source classic-country}
+{meta: x_source_file purelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pure love  baby it's pure [Dm]love
@@ -34,3 +37,7 @@ Milk and [F]honey and Captain [G7]Krunch and you in the [C]morning
 Pure love baby it's pure [Dm]love
 Ninety-nine [F]and forty-four one [G7]hundreds percent pure [C]love
 {end_of_verse}
+
+
+
+

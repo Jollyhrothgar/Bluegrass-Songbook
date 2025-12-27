@@ -1,6 +1,9 @@
 {meta: title All I Want is You}
 {meta: artist Big Country Bluegrass}
 {meta: composer Lance Guynes}
+{meta: x_source classic-country}
+{meta: x_source_file alliwantisyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don’t need a [G7]lot of [C]money 
@@ -43,3 +46,8 @@ I [C7]found a love that’s [F]true
 Don’t want money ships or [C]mansions now
 Cause [G7]all I want is [C]you
 {end_of_verse}
+
+
+
+
+

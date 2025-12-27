@@ -1,6 +1,9 @@
 {meta: title Help Me Rhonda}
 {meta: artist Roy Orbison}
 {meta: composer Mike E. Love and Brian Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file helpmerhondalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well since she put me down
@@ -61,3 +64,11 @@ She was gonna be my wife
 [G7]Get her out of my [C]heart
 [G7]Get her out of my [C]heart
 {end_of_verse}
+
+
+
+
+
+
+
+

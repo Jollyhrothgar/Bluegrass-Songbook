@@ -1,6 +1,9 @@
 {meta: title I Wish I Had Loved Her That Way}
 {meta: artist John Anderson}
 {meta: composer Roger Murrah and Jim McBride}
+{meta: x_source classic-country}
+{meta: x_source_file iwishihadlovedherthatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He brings her flowers for no special [F]reason
@@ -37,3 +40,7 @@
 [C]Oh I wish I [G7]had loved her that [C]way
 [F]Oh I [C]wish I had [G7]loved her that [C][F]way
 {end_of_verse}
+
+
+
+

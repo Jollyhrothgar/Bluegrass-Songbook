@@ -1,6 +1,9 @@
 {meta: title Don't Take Advantage Of Me}
 {meta: artist Jean Shepard}
 {meta: composer Bob Morris and Bonnie Owens}
+{meta: x_source classic-country}
+{meta: x_source_file donttakeadvantageofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't make me a promise and then make me [F]blue
@@ -29,3 +32,6 @@ Then when I [D7]need you most that's when you'll be [G7]gone
 [C]Don't tell me those sweet lies you know I'll [F]believe
 Please don't [C]t-ake  [G7]advantage of [C]me
 {end_of_verse}
+
+
+

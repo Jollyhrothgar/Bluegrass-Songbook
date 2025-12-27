@@ -1,5 +1,8 @@
 {meta: title Hillbilly Girl With The Blues}
 {meta: artist Lacy J. Dalton}
+{meta: x_source classic-country}
+{meta: x_source_file hillbillygirlwiththeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Friends I know darn [C]well
@@ -35,3 +38,6 @@
 [G]To a hillbilly [D7]girl with the [C]blues
 [G]With the blues
 {end_of_verse}
+
+
+

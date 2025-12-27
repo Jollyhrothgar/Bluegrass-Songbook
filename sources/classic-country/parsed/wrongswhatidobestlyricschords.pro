@@ -1,6 +1,9 @@
 {meta: title Wrong's What I Do Best}
 {meta: artist George Jones}
 {meta: composer Michael Alan Campbell, Dickey Lee, Freddy Weller}
+{meta: x_source classic-country}
+{meta: x_source_file wrongswhatidobestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some men look for diamonds [C]some men look for [G]gold
@@ -30,3 +33,6 @@ If my ship was docking in the East you could [C]bet I'd be heading [G]West
 Right in the [C]wrong di[G]rection cause [D7]wrong's what I do [G]best
 [Em]Right in the [C]wrong di[G]rection cause [D7]wrong's what I do [G]best
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You're Why God Made Me}
 {meta: artist Tracy Lawrence}
 {meta: composer Will Nance and Billy Yates}
+{meta: x_source classic-country}
+{meta: x_source_file yourewhyGodmademelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On my first day in this world nobody really knew
@@ -40,3 +43,8 @@ You're [F]why [G7]God made [C]me
 {start_of_verse: Verse 5}
 Yeah you're [F]why [G7]God made [C]me
 {end_of_verse}
+
+
+
+
+

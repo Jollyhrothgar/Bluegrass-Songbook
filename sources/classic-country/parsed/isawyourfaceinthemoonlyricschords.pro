@@ -1,6 +1,9 @@
 {meta: title I Saw You Face in the Moon}
 {meta: artist Webb Pierce}
 {meta: composer Odis Elder}
+{meta: x_source classic-country}
+{meta: x_source_file isawyourfaceinthemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw your face in the moon honey
@@ -49,3 +52,11 @@ When [G7]I saw your face in the [C]moon
 {start_of_verse: Verse 9}
 When I saw your [G7]face in the [C]moon
 {end_of_verse}
+
+
+
+
+
+
+
+

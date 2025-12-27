@@ -1,6 +1,9 @@
 {meta: title Here's Lookin' At You}
 {meta: artist Mel Tillis}
 {meta: composer Sandy Pinkard, John Durrill, Sam Atchley}
+{meta: x_source classic-country}
+{meta: x_source_file hereslookinatyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the light from the beer sign [G7]shines on your face
@@ -36,3 +39,7 @@ One [G7]last round of red wine and a toast for the good times we [C]knew
 Here's looking at you feeling the [C7]way that I [F]do
 I can't [G7]take those tomorrows with a love that feels borrowed from [C]you
 {end_of_verse}
+
+
+
+

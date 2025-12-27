@@ -1,6 +1,9 @@
 {meta: title I'd Rather Live By The Side Of The Road}
 {meta: artist Mac Wiseman}
 {meta: composer Albert E. Brumley Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file idratherlivebythesideoftheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There are people who would rather live in splendor
@@ -57,3 +60,10 @@ I'd rather live by the side of the road
 [G]I'd rather live by the side of the road
 [D7]And help some pilgrim along life's [G]way
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Soft Sweet and Warm}
 {meta: artist David Houston}
 {meta: composer Norro Wilson and Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file softsweetandwarmlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Soft are the lips that wake me up in the [G7]mornin'
@@ -34,3 +37,7 @@ Warm is the love that you make me keep on [A#7]want[F]ing
 [G7]Soft sweet and warm is the love that you give me all the [C]time
 [G7]Soft sweet and warm is the love that you give me all the [C]time
 {end_of_verse}
+
+
+
+

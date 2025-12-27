@@ -1,6 +1,9 @@
 {meta: title Twenty Years Ago}
 {meta: artist Kenny Rogers}
 {meta: composer Dan Tyler, Michael Noble, Michael Spriggs, Wood Newton}
+{meta: x_source classic-country}
+{meta: x_source_file twentyyearsagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's been a [C]long time since I've [G]walked through this old [F]town [C]
@@ -41,3 +44,8 @@ Oh it [Em]almost seems like [C]yesterday where [G]do the good times [C]go
 [G]Life was so much [C]easier [D7]twenty years [G]ago 
 Oh it almost seems like [C]yesterday [D7]twenty years [G]ago
 {end_of_verse}
+
+
+
+
+

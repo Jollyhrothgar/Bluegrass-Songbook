@@ -1,6 +1,9 @@
 {meta: title Brothers Of The Highway}
 {meta: artist George Strait}
 {meta: composer Doug Johnson, Kim Williams, Nicole Witt}
+{meta: x_source classic-country}
+{meta: x_source_file brothersofthehighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Diamonds on the windshield as heaven starts to cry
@@ -45,3 +48,9 @@ Tallahassee north to Boston [F]up to Bangor west to Austin
 {start_of_verse: Verse 5}
 God bless you [C]brothers of the [G]highway [D7]children of the [G]wind
 {end_of_verse}
+
+
+
+
+
+

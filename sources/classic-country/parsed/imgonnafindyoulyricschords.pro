@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Find You}
 {meta: artist Stonewall Jackson}
 {meta: composer Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnafindyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna find you I'm gonna find you 
@@ -32,3 +35,6 @@ If it's the last [D7]thing I [G]do
 I'm gonna [G]find you I'm gonna find you I'm gonna find you
 If it's the last [D7]thing I [G]do if it's the last [D7]thing I [G]do
 {end_of_verse}
+
+
+

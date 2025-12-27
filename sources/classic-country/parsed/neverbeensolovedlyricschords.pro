@@ -1,6 +1,9 @@
 {meta: title Never Been So Loved}
 {meta: artist Charlie Pride}
 {meta: composer Wayland}
+{meta: x_source classic-country}
+{meta: x_source_file neverbeensolovedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I’m no stranger to loving arms
@@ -57,3 +60,10 @@ I’ve [C]never been so loved in all my [F]life
 [Am]You came along and made my world turn [F]right
 [Dm]I’ve never loved like this [G7]before
 {end_of_verse}
+
+
+
+
+
+
+

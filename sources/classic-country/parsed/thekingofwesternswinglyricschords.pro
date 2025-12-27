@@ -1,5 +1,8 @@
 {meta: title The King Of Western Swing}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file thekingofwesternswinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They call me Mr. Honky Tonk the [F]king of western [C]swing
@@ -32,3 +35,7 @@ They [F]call me Mr. [C]Honky Tonk the [G7]king of western [C]swing
 {start_of_verse: Verse 4}
 They [F]call me Mr. [C]Honky Tonk the [G7]king of western [C]swing
 {end_of_verse}
+
+
+
+

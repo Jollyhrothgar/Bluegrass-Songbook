@@ -1,6 +1,9 @@
 {meta: title My Baby Left Her Jingling John for Folding Fred}
 {meta: artist George Jones}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file mybabyleftherjinglingjohnforfoldingfredlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well my baby left her jingling John for folding [D7]Fred
@@ -36,3 +39,7 @@ True love never backed up one word that she [G]said
 That proved to me that a black bear is green when it's [C]red
 My [G]baby left her jingling [D7]John for folding [G]Fred
 {end_of_verse}
+
+
+
+

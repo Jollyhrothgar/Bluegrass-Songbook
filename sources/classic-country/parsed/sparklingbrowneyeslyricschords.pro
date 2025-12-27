@@ -1,6 +1,9 @@
 {meta: title Sparkling Brown Eyes}
 {meta: artist Wilburn Brothers}
 {meta: composer Billy Cox [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file sparklingbrowneyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a ramshackle shack in old [C]Caroline             
@@ -22,3 +25,5 @@ Came down [G]to me from [D7]heaven above
 If I could [G]fly like a beautiful [C]dove 
 I'd fly to the [G]arms of the [D7]one that [G]I love
 {end_of_verse}
+
+

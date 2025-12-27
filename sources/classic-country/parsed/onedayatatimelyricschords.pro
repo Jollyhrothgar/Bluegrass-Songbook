@@ -1,6 +1,9 @@
 {meta: title One Day at a Time}
 {meta: artist Don Gibson}
 {meta: composer Gary S. Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file onedayatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One day at a [C]time is all I can [G]make it
@@ -22,3 +25,5 @@ One day at a [D7]time is all my heart can [G]take it
 Twenty four little [F]hou[C]rs of losing my [G]mind
 I've got to get [D7]over you one day at a [G]time
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title I Want To Walk You Home}
 {meta: artist Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttowalkyouhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want to walk you home
@@ -84,3 +87,19 @@ That's why I want to walk you home
 {start_of_verse: Verse 17}
 That's why I want to walk you home
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

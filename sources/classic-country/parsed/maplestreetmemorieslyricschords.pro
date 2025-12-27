@@ -1,6 +1,9 @@
 {meta: title Maple Street Memories}
 {meta: artist The Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file maplestreetmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We were both nine years old when you came to [C7]town
@@ -69,3 +72,12 @@ But take those Maple Street [G7]memories [F]away
 {start_of_verse: Verse 9}
 [C]Take those Maple Street [G7]memories [C]away
 {end_of_verse}
+
+
+
+
+
+
+
+
+

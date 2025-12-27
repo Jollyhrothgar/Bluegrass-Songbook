@@ -1,6 +1,9 @@
 {meta: title It's Enough To Make A Woman Lose Her Mind}
 {meta: artist Jean Shepard}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file itsenoughtomakeawomanlosehermindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've almost read the [C]ink right [G]off the paper
@@ -26,3 +29,6 @@ It's [G]enough to make a [D7]woman lose her [Em]mind[A7]
 {start_of_verse: Verse 4}
 It's [G]enough to make a [D7]woman lose her [C]mind[D7]   [G]
 {end_of_verse}
+
+
+

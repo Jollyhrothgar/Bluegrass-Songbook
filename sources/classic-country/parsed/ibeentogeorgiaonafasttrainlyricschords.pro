@@ -1,6 +1,9 @@
 {meta: title I Been To Georgia On A Fast Train}
 {meta: artist Willie Nelson}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file ibeentogeorgiaonafasttrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On a rainy windy morning on the day that I was born [C]in
@@ -54,3 +57,10 @@ Ain't no [G]need in y'all a [D7]treatin' me this [G]way
 {start_of_verse: Verse 6}
 There ain't no need in y'all a [D7]treatin' me this [G]way
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Go On And Go}
 {meta: artist Loretta Lynn}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file goonandgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Why not [G]tell me that I'm [C]really losing [G]you
@@ -22,3 +25,5 @@ Between your [D7]passion and your pride you're half a [G]man
 With your heart not in your [G7]kiss what can I [C]do    
 Go on and [G]go if you need [D7]her like I need [G]you
 {end_of_verse}
+
+

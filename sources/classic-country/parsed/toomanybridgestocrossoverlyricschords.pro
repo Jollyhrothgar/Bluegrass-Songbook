@@ -1,6 +1,9 @@
 {meta: title Too Many Bridges to Cross Over}
 {meta: artist Merle Haggard}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file toomanybridgestocrossoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Be close to me but [Am]please don't ever [C]love me
@@ -30,3 +33,6 @@ Too many [F]places I ain't [G7]been
 Yeah there's [C]too many [F]fields of temptin' [C]clover
 Like an [Dm]eagle I'm a [G7]prisoner of the [C]wind
 {end_of_verse}
+
+
+

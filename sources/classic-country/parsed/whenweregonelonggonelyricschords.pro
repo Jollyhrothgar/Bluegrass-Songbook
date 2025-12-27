@@ -1,6 +1,9 @@
 {meta: title When We're Gone Long Gone}
 {meta: artist Emmylou Harris}
 {meta: composer Jamie O'Hara and Kieran Kane}
+{meta: x_source classic-country}
+{meta: x_source_file whenweregonelonggonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Trouble [G7]we have known [F]trouble 
@@ -29,3 +32,6 @@ The [C]only thing [G7]that will have [F]mattered
 Is the [C]love that we [G7]shared and the [F]way that we cared 
 When we're [C]gone [G7]long [C]gone
 {end_of_verse}
+
+
+

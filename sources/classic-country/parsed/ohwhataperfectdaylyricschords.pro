@@ -1,6 +1,9 @@
 {meta: title Oh What A Perfect Day}
 {meta: artist George Strait}
 {meta: composer Buddy Brock, Monty Holmes, Jeff Silvey}
+{meta: x_source classic-country}
+{meta: x_source_file ohwhataperfectdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up this [Em]mornin’  [Am]peeked out my [C]door
@@ -40,3 +43,7 @@ To [C]do what I [F]do
 [C]Oh what a perfect day [G7]for loving [C]you [G7]    [Am]
 For [F]lov[Em]ing [C]you
 {end_of_verse}
+
+
+
+

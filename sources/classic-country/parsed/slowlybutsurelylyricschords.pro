@@ -1,6 +1,9 @@
 {meta: title Slowly But Surely}
 {meta: artist Wynn Stewart}
 {meta: composer Harlan Howard, Beverly Stewart, Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file slowlybutsurelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Slowly but [F]surely [C]though I love you [F]dearly
@@ -22,3 +25,5 @@
 [C]Slowly but [F]surely [C]though I love you [F]dearly
 [C]Slowly but [F]surely [G7]I’m losing [C]you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title If It's All Right With You}
 {meta: artist Eddy Arnold}
 {meta: composer Kenny O'Dell and Larry Henley}
+{meta: x_source classic-country}
+{meta: x_source_file ifitsallrightwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it's all right with [F]you   [Dm][C]I'd like to [G7]stay here and [C]love [Em]you
@@ -27,3 +30,6 @@
 [C]If it's all right with [F]you  I [C]think I'll love [F]you
 [Am]When the morning [G7]sun arrives then [F]we'll [C]decide if [G7]I should stay or [C]go
 {end_of_verse}
+
+
+

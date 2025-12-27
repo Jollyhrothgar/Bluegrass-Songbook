@@ -1,6 +1,9 @@
 {meta: title How Do I Get Off The Moon}
 {meta: artist Doug Stone}
 {meta: composer Donny Kees, Randy Boudreaux, Kerry Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file howdoigetoffthemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We took [Em]off like a rocket [G]ship
@@ -40,3 +43,7 @@ Tell me [G]how do [D7]I get off the [G]moon
 Tell me [G]how do [D7]I get off the [G]moon [C]
 Tell me [G]how do [D7]I get off the [G]moon
 {end_of_verse}
+
+
+
+

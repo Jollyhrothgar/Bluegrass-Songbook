@@ -1,6 +1,9 @@
 {meta: title Hobo Blues}
 {meta: artist The Lonesome River Band}
 {meta: composer Billy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file hoboblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Got a hole in my pocket done packed my ole nap-sack
@@ -57,3 +60,13 @@ Been hanging round this ole town way to many days
 Been hanging round this ole town way to many days
 [D7]Got to ramble on I must be on my [G]way
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

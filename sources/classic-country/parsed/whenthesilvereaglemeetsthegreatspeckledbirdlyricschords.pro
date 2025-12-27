@@ -1,6 +1,9 @@
 {meta: title When The Silver Eagle Meets The Great Speckled Bird}
 {meta: artist Porter Wagoner}
 {meta: composer Damon Black}
+{meta: x_source classic-country}
+{meta: x_source_file whenthesilvereaglemeetsthegreatspeckledbirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We've got Silver Eagles rolling on the freeways [F]everyday
@@ -34,3 +37,7 @@
 tag:
 [G7]When the shiny Silver Eagle meets the Great Speckled [C]Bird
 {end_of_verse}
+
+
+
+

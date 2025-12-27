@@ -1,6 +1,9 @@
 {meta: title She's Not You}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Leiber, Mike Stoller, Doc Pomus}
+{meta: x_source classic-country}
+{meta: x_source_file shesnotyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Her hair is [C]soft and her eyes are oh so [G7]blue
@@ -39,3 +42,8 @@ Cause she's not [C]you
 [G7]And it's just [F]breaking my [G7]heart 
 Cause she's not [C]you
 {end_of_verse}
+
+
+
+
+

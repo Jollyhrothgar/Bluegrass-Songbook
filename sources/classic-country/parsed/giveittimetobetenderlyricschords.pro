@@ -1,6 +1,9 @@
 {meta: title Give It Time To Be Tender}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson and Donnie Fritts}
+{meta: x_source classic-country}
+{meta: x_source_file giveittimetobetenderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I feel the hunger [F]you feel in your [C]touch
@@ -28,3 +31,6 @@ Repeat #
 Please give it [C7]time to [F]be tender
 And [G7]pretend it won't hurt at [F]al[C]l
 {end_of_verse}
+
+
+

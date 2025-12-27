@@ -1,6 +1,9 @@
 {meta: title Fort Worth Texas}
 {meta: artist Ray Price}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file fortworthtexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They sing songs [Em]about Chicago [Am]all the time[C]
@@ -38,3 +41,7 @@ It’s [F]great and let me state there ain’t no [C]other place [Am]around
 Like [D7]Fort Worth Texas [G7]that’s my [C]town
 [A7]Oh Fort Worth [D7]Texas [G7]that’s my [C]town
 {end_of_verse}
+
+
+
+

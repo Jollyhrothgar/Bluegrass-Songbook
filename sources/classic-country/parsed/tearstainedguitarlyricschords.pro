@@ -1,6 +1,9 @@
 {meta: title Tear Stained Guitar}
 {meta: artist Red Sovine}
 {meta: composer Russ Garner}
+{meta: x_source classic-country}
+{meta: x_source_file tearstainedguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The greatest of love songs are the ones you never [F]hear
@@ -29,3 +32,6 @@
 [C]If I live to be a hundred and have the fortunes of a [F]star
 [C]Still I won't forget you and [G7]my tear stained [C]guitar
 {end_of_verse}
+
+
+

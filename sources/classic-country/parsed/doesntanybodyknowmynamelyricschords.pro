@@ -1,6 +1,9 @@
 {meta: title Doesn't Anybody Know My Name}
 {meta: artist Waylon Jennings}
 {meta: composer Rod McKuen}
+{meta: x_source classic-country}
+{meta: x_source_file doesntanybodyknowmynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been away [F]for so [C]long
@@ -46,3 +49,8 @@ Please tell me [F]if you [C]can
 [G7]What time the trains roll [C]in
 [F]Two ten [C]six eighteen [G7]ten forty [C]four
 {end_of_verse}
+
+
+
+
+

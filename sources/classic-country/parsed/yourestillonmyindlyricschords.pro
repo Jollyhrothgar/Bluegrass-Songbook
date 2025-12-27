@@ -1,6 +1,9 @@
 {meta: title You’re Still On My Mind}
 {meta: artist George Jones}
 {meta: composer Luke McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file yourestillonmyindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The jukebox is playing a [G7]honky tonk [C]song
@@ -22,3 +25,5 @@ I just sit here [D7]drinking till the bottle runs [G]dry
 To try and forget you I [G7]turn to the [C]wine
 An [D7]empty bottle of broken hearts and your still on my [G]mind
 {end_of_verse}
+
+

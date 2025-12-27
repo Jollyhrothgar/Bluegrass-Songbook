@@ -1,6 +1,9 @@
 {meta: title The Wall}
 {meta: artist Freddie Hart}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file thewall-1lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]lot of strange men in cell Block 10
@@ -43,3 +46,8 @@ But [F]I know a man who [C]tried
 The [F]newspapers called it a [C]jailbreak plan
 But I [F]know it was sui[C]cide [F]I know it was sui[C]cide
 {end_of_verse}
+
+
+
+
+

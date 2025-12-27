@@ -1,6 +1,9 @@
 {meta: title If You Were Losing Him To Me}
 {meta: artist Jean Shepard}
 {meta: composer Helen Carter}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwerelosinghimtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say I'm being selfish cause I won't set him [C]free
@@ -29,3 +32,6 @@
 [G]Or would you really let him go the way you want me [C]to
 [D7]If you were losing him to me I wonder what you'd [G]do
 {end_of_verse}
+
+
+

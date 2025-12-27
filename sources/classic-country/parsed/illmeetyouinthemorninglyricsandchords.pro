@@ -1,6 +1,9 @@
 {meta: title I'll Meet You In The Morning}
 {meta: artist Webb Pierce}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file illmeetyouinthemorninglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll meet you in the morning by the [C]bright river[G]side
@@ -26,3 +29,5 @@ You'll [G]know me in the morning [C]by the smiles that I [G]wear
 When I meet you in the morning
 In that city that's [D7]built four[G]square
 {end_of_verse}
+
+

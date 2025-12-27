@@ -1,6 +1,9 @@
 {meta: title Blue Night}
 {meta: artist Ricky Skaggs}
 {meta: composer Kirk McGee}
+{meta: x_source classic-country}
+{meta: x_source_file bluenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blue night I got you on my mind
@@ -33,3 +36,6 @@ Since you’ve put me on that [C]shelf
 You're gonna reap just what you sow
 Blue [D7]night all by my[G]self
 {end_of_verse}
+
+
+

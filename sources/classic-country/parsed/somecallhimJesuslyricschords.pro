@@ -1,6 +1,9 @@
 {meta: title Some Call Him Jesus}
 {meta: artist Wanda Jackson}
 {meta: composer Yvonne Devaney}
+{meta: x_source classic-country}
+{meta: x_source_file somecallhimJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me tell you people [G7]about a Man I [C]know
@@ -41,3 +44,8 @@ Some call Him [F]Jesus [C]some call Him [F]Love
 {start_of_verse: Verse 4}
 I call Him any[F]time I need Him [G7]I call Him [C]friend
 {end_of_verse}
+
+
+
+
+

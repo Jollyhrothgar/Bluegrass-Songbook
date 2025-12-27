@@ -1,5 +1,8 @@
 {meta: title Take Good Care of Her}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file takegoodcareofherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I suppose I ought to say [C][F]congratulations
@@ -27,3 +30,6 @@ If [C]she's happy that will [F]be my [C]consolation
 Just take good care [G7]of her take good care of [C]her 
 Take good [G7]care of [C]her
 {end_of_verse}
+
+
+

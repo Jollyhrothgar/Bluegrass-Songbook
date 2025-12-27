@@ -1,6 +1,9 @@
 {meta: title King Of A Lonely Castle}
 {meta: artist Willie Nelson}
 {meta: composer Kenny Devine}
+{meta: x_source classic-country}
+{meta: x_source_file kingofalonelycastlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The courtyard is [C]empty and the [G7]drawbridge is [C]high
@@ -29,3 +32,6 @@ Proclaiming to [F]heaven [C]that I die every [F]hour
 I'm king of a lonely [C]castle [A7]
 Cause the [D7]queen of my [G7]heart is [C]gone
 {end_of_verse}
+
+
+

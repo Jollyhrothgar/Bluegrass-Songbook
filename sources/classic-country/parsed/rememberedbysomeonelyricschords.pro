@@ -1,6 +1,9 @@
 {meta: title Remembered By Someone}
 {meta: artist Carl Smith}
 {meta: composer Gene Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file rememberedbysomeonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hope you have good times to [D7]help see you through
@@ -29,3 +32,6 @@ Won't you save some [G]room for me
 And when all is [G7]forgotten [C]I wanna [Am]be 
 [D7]Remembered by someone remembered by [G]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title He made A Rainbow Of My Tears}
 {meta: artist The Cathedrals}
 {meta: composer George Younce}
+{meta: x_source classic-country}
+{meta: x_source_file hemadearainbowofmytearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He made A [D7]Rainbow Of My [G]Tears
@@ -30,3 +33,7 @@ And made a [D7]rainbow of my [G]tears
 {start_of_verse: Verse 5}
 He Made A [D7]Rainbow Of My [G]Tears
 {end_of_verse}
+
+
+
+

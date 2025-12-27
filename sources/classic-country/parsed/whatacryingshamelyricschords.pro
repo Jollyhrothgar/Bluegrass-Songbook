@@ -1,6 +1,9 @@
 {meta: title What A Crying Shame}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file whatacryingshamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wasn't I [D7]good to [C]you [G]  didn't I [D7]show [C]it
@@ -42,3 +45,8 @@ My [D7]heart would [C]break in [G]two
 [D7]Oh what a [C]crying [G]shame   [D7]oh what a [C]crying [G]shame
 [D7]Oh what a [C]crying [G]shame   [D7]oh what a [C]crying [G]shame
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Suppertime}
 {meta: artist Jim Reeves}
 {meta: composer Ira F Stanphill}
+{meta: x_source classic-country}
+{meta: x_source_file suppertimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Many years ago [C]in days of [G]childhood 
@@ -74,3 +77,18 @@ The [D7]shadows lengthen [G]fast
 Come [C]home come home it's [G]suppertime 
 We're [D7]going home at [G]last
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Roses}
 {meta: artist Jim Reeves}
 {meta: composer Tim Spencer and Glenn Spencer}
+{meta: x_source classic-country}
+{meta: x_source_file roseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Roses [Am]roses [F]ah ah [G7]ooh)
@@ -30,3 +33,7 @@ And put the [Dm]red red [G7]roses to [C]shame
 {start_of_verse: Verse 5}
 Roses [Am]roses [F]ah ah [G7]ooh[C]
 {end_of_verse}
+
+
+
+

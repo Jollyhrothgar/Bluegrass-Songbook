@@ -1,6 +1,9 @@
 {meta: title Your Old Standby}
 {meta: artist George Jones}
 {meta: composer Jim Eanes and Wade Perry}
+{meta: x_source classic-country}
+{meta: x_source_file youroldstandbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A shoulder to cry on is [C]all you want from [G]me
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 Repeat #2
 {end_of_verse}
+
+
+

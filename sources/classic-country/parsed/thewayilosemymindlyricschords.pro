@@ -1,6 +1,9 @@
 {meta: title The Way I Lose My Mind}
 {meta: artist Carl Smith}
 {meta: composer Dallas Fraizer}
+{meta: x_source classic-country}
+{meta: x_source_file thewayilosemymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Alone and so [F]afraid  is [C]the way I start each [G7]day 
@@ -23,3 +26,6 @@ Tag:
 {start_of_verse: Verse 4}
 [G7]Hanging on to you is the way  I lose my [C]mind
 {end_of_verse}
+
+
+

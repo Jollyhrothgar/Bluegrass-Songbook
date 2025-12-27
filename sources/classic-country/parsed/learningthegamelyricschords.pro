@@ -1,5 +1,8 @@
 {meta: title Learning The Game}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file learningthegamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hearts that are [D7]broken and [C]love that's [D7]untrue
@@ -25,3 +28,6 @@ When you love [D7]her and she [C]doesn't love [D7]you
 {start_of_verse: Verse 4}
 [C]That's when you're [D7]learning the [G]game
 {end_of_verse}
+
+
+

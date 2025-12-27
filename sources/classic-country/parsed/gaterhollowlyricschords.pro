@@ -1,6 +1,9 @@
 {meta: title Gater Hollow}
 {meta: artist Lefty Frizzell}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file gaterhollowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I had me a girl in Moccasin Valley
@@ -43,3 +46,8 @@ Now my gators are a little bit fatter
 [F]Soon I'll be leavin' here for [C]prison
 [G7]I lost my soul but I know I致e saved my [C]pride
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Coal Miner’s Blues}
 {meta: artist Flatt and Scruggs}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file coalminersblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some blues are just blues mine are the miner’s [C7]blues
@@ -31,3 +34,7 @@ I’m out with these blues dirty coal black [C7]blues
 I’m [F]out with these blues dirty coal black [C]blues
 We’ll [G7]lay off tomorrow with the coal miner’s [C]blues
 {end_of_verse}
+
+
+
+

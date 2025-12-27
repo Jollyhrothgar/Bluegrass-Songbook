@@ -1,6 +1,9 @@
 {meta: title Don't Your Memory Ever Sleep at Night}
 {meta: artist Ronnie Milsap}
 {meta: composer Randy Hatch and Steve Dean}
+{meta: x_source classic-country}
+{meta: x_source_file dontyourmemoryeversleepatnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's daybreak and I'm still [Am]awake
@@ -43,3 +46,7 @@
 [Dm]Don't your memory [G7]ever sleep [C]at [Am]night
 [Dm]Don't your memory [G7]ever sleep at [C]night
 {end_of_verse}
+
+
+
+

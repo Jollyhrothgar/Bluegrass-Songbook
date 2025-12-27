@@ -1,6 +1,9 @@
 {meta: title Come On Home And Have Your Next Affair With Me}
 {meta: artist Stonewall Jackson}
 {meta: composer Hugh X. Lewis and Billy Cole}
+{meta: x_source classic-country}
+{meta: x_source_file comeonhomeandhaveyournextaffairwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So your last affair turned out to be a [F]loser
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Come on home and have your next affair with [C]me
 {end_of_verse}
+
+
+
+

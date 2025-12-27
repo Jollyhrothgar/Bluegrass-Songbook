@@ -1,5 +1,8 @@
 {meta: title Put Your Hand in the Hand}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file putyourhandinthehandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Put your hand in the hand of the man who stilled the [D7]waters
@@ -28,3 +31,6 @@ Put your [Am]hand in the hand of the [D7]man who calmed the [G]sea
 Take a look at yourself and you can [G7]look at the others [C]differently
 By putting your [G]hand in the [E7]hand of the [A7]man from [G][D7]Gal-ilee
 {end_of_verse}
+
+
+

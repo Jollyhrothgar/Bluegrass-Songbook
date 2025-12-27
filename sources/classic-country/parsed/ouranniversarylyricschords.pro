@@ -1,5 +1,8 @@
 {meta: title Our Anniversary}
 {meta: artist Daniel O'Donnell}
+{meta: x_source classic-country}
+{meta: x_source_file ouranniversarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]May I say thanks for [G7]the years gone by
@@ -45,3 +48,8 @@ So bless you and keep you through [G7]years to come
 I love you please always love [C]me
 It's [G7]our anniversa[C]ry [F]  [C]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Believe Another's Lips}
 {meta: artist Sonny James}
 {meta: composer Jimmie Loden}
+{meta: x_source classic-country}
+{meta: x_source_file believeanotherslipslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you believe another’s [C7]lips 
@@ -43,3 +46,8 @@ To say these things [F]to you
 [G7]But please believe another's lips
 When they say I love [C]you
 {end_of_verse}
+
+
+
+
+

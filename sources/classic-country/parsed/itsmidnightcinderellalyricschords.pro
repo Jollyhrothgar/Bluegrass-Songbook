@@ -1,6 +1,9 @@
 {meta: title It's Midnight Cinderella}
 {meta: artist Garth Brooks}
 {meta: composer Kent Blazy, Kim Williams, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file itsmidnightcinderellalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]It's midnight Cinderella 
@@ -58,3 +61,10 @@ And the [G7]party's just [C]begun
 [F]Yeah it's [C]Peter Peter the [F]Pumpkin Eater 
 And the [G7]party has now [C]begun
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Ode To Billie Joe}
 {meta: artist Bobbie Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file odetobilliejoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was the third of June another [Dm]sleepy dusty Delta [G]day
@@ -45,3 +48,7 @@ And now mama [G]doesn't seem to want to do much [Dm]of [G]anything
 And me I spent a lot of time picking flowers upon [C]Choctaw Ridge
 And [G]dropped them into the muddy water off [F7]the Tallahatchie [G]Bridge
 {end_of_verse}
+
+
+
+

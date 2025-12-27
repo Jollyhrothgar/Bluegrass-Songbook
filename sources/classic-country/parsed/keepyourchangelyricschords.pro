@@ -1,5 +1,8 @@
 {meta: title Keep Your Change}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file keepyourchangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You need a change of scenery that's all [C]I ever [G]heard
@@ -28,3 +31,6 @@
 [C]You've worked real hard for what you [G]got
 [D7]So honey keep your [G]change
 {end_of_verse}
+
+
+

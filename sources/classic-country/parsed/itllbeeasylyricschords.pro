@@ -1,6 +1,9 @@
 {meta: title It'll Be Easy}
 {meta: artist Jimmy Dean}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file itllbeeasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Break my heart) it'll be easy (tear it apart) it'll be [G]easy
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [D7]If you wanna break my heart it'll be [G]easy
 {end_of_verse}
+
+
+

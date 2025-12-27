@@ -1,5 +1,8 @@
 {meta: title Home From The Forest}
 {meta: artist Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file homefromtheforestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the neon lights were flashin' and the icy [F]wind did [C]blow
@@ -42,3 +45,8 @@
 [F]And to an old [C]forgotten soldier [Am]the dawn will come no [E7]more
 [F]For the old man has [G7]come home   from the [C]forest
 {end_of_verse}
+
+
+
+
+

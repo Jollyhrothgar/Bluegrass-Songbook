@@ -1,6 +1,9 @@
 {meta: title Three Wooden Crosses}
 {meta: artist Randy Travis}
 {meta: composer Kim Williams and Doug Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file threewoodencrosseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A farmer and a teacher a [Am]hooker and a preacher
@@ -51,3 +54,9 @@ It's [C]not what you take when you [Am]leave this world behind you
 It's [F]what you leave [G7]behind you when you [C]go  
 There are three wooden crosses on the [Am]right side of [G7]the high[C]way
 {end_of_verse}
+
+
+
+
+
+

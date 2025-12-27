@@ -1,6 +1,9 @@
 {meta: title Trucker’s Prayer}
 {meta: artist Boxcar Willie}
 {meta: composer Red Sovine}
+{meta: x_source classic-country}
+{meta: x_source_file truckersprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Thank you Lord for all the miles without an [D7]accident
@@ -38,3 +41,7 @@ But I wanna ask just one more favor [C]before my life is spent
 [G]Please Lord just once before I [C]turn to dust
 Let me [D7]run the wheels plumb off the Greyhound [G]bus[C]  [D7]   [G]
 {end_of_verse}
+
+
+
+

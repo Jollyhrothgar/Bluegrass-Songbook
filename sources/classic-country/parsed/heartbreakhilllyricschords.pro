@@ -1,6 +1,9 @@
 {meta: title Heartbreak Hill}
 {meta: artist Slim Whitman}
 {meta: composer Ben Weisman and Fred Wise}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakhilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a place in the mountains where the moon never [G7]shines
@@ -22,3 +25,5 @@ The echo’s are vowels that were spoken in [C]vain
 So tell me you love and [C7]you always [F]will
 Then I know I won’t [C]travel to [G7]heartbreak [C]hill
 {end_of_verse}
+
+

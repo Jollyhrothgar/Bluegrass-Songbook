@@ -1,6 +1,9 @@
 {meta: title Chew Tobacco Rag}
 {meta: artist Pee Wee King}
 {meta: composer Billy Briggs}
+{meta: x_source classic-country}
+{meta: x_source_file chewtobaccoraglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I like to smoke my old corn pipe
@@ -81,3 +84,18 @@ But when it comes to dippin' there [D7]I draw the [G]line
 P-ting putune p-tine p-ting putune 
 Chew tobacco chew tobacco [D7]chew tobacco [G]rag
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

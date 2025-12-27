@@ -1,6 +1,9 @@
 {meta: title Breath of Heaven (Mary’s Song)}
 {meta: artist Vince Gill}
 {meta: composer Amy Grant and Christopher Eaton}
+{meta: x_source classic-country}
+{meta: x_source_file breathofheavenmaryssonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have [Dm]traveled [Am]many moon[F]less [Dm]nights
@@ -50,3 +53,8 @@ Pour over [E7]me Your [Am]Holiness [F]for You are [C]holy
 [C]Breath of Heaven [G7]   [F]
 Breath of [C]Heaven
 {end_of_verse}
+
+
+
+
+

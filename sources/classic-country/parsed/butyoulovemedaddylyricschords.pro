@@ -1,6 +1,9 @@
 {meta: title But You Love Me Daddy}
 {meta: artist Jim Reeves}
 {meta: composer Pat Kathyrn Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file butyoulovemedaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your five year old face is a dirty disgrace
@@ -43,3 +46,8 @@ But [A7]you love me daddy now you [D7]know you do
 You're [G]so hard to scold cause you're my five year old
 Be[D7]cause you love me [G]daddy
 {end_of_verse}
+
+
+
+
+

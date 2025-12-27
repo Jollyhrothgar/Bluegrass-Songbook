@@ -1,5 +1,8 @@
 {meta: title Autumn Of My Life}
 {meta: artist Bobby Goldboro}
+{meta: x_source classic-country}
+{meta: x_source_file autumnofmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the spring of my [Am]life  [F]she came to [C]me
@@ -35,3 +38,7 @@
 [C]But I'm richer [Em]you see for [F]the years she gave to [C]me
 [E7]And I'm [Am]content in the [G7]autumn of my [C]life
 {end_of_verse}
+
+
+
+

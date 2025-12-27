@@ -1,6 +1,9 @@
 {meta: title Hallelujah Square}
 {meta: artist The Cathedrals}
 {meta: composer Ray Overholt}
+{meta: x_source classic-country}
+{meta: x_source_file hallelujahsquarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw a blind man [F]tapping [C]along
@@ -36,3 +39,7 @@ What a wonderful time we'll all have up [G7]there
 [C]We'll sing and praise Jesus [F]His glory to [C]share 
 And we'll all live forever in [G7]Hallelujah [C]Square
 {end_of_verse}
+
+
+
+

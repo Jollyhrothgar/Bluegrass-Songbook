@@ -1,6 +1,9 @@
 {meta: title New Looks From An Old Lover}
 {meta: artist B J Thomas}
 {meta: composer Hudson Lathan, Gloria, Jean Thomas,Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file newlooksfromanoldloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Early this morning I opened my eyes
@@ -36,3 +39,6 @@ It's [C]such a good feeling
 [C7]Knowing it's better [F]than I ever [G7]thought it could [C]be
 Because of new looks from an [G7]old lover [C]again
 {end_of_verse}
+
+
+

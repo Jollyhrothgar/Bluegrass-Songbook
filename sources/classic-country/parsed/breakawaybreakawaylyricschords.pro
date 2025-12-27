@@ -1,6 +1,9 @@
 {meta: title Break Away Break Away}
 {meta: artist Cowboy Copas}
 {meta: composer Boudleaux Bryant AND Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file breakawaybreakawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](Break away break [C]away)
@@ -32,3 +35,7 @@ So lovesick [G7]heart of mine break away break [C]away
 {start_of_verse: Verse 5}
 [G7]Break away break [C]away
 {end_of_verse}
+
+
+
+

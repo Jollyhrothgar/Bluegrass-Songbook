@@ -1,6 +1,9 @@
 {meta: title Is Goodbye That Easy To Say}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Marijohn Wilkin and Benny Joy}
+{meta: x_source classic-country}
+{meta: x_source_file isgoodbyethateasytosaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It hurts me so to see you go my [G7]darling
@@ -29,3 +32,6 @@ How can you break the heart that really [F]loves you
 Is [C]goodbye that [G7]easy to [C]say
 Is goodbye that [G7]easy to [C]say
 {end_of_verse}
+
+
+

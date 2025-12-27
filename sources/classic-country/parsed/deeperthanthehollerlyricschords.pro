@@ -1,6 +1,9 @@
 {meta: title Deeper Than The Holler}
 {meta: artist Randy Travis}
 {meta: composer Don Schlitz and Paul Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file deeperthanthehollerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Well I [C]heard those city [F]singers singing [C]bout how they can [F]love
@@ -45,3 +48,8 @@ And [Dm]longer than the [G7]song of a whippoor[C]will
 {start_of_verse: Verse 4}
 A [G7]whippoor[C]will
 {end_of_verse}
+
+
+
+
+

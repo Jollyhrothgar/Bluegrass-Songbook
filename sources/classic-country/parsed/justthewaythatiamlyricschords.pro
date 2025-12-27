@@ -1,5 +1,8 @@
 {meta: title Just The Way That I Am}
 {meta: artist Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file justthewaythatiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's by no means the [C7]best looking [F]girl in the [Fm]world
@@ -33,3 +36,7 @@ Cause she [C]loves me just the [G7]way that I [C]am [G7]
 Yes she [C]brings out the [C7]best in me she [F]can't see the [Fm]rest of me
 Cause she [C]loves me just the [G7]way that I [F]am [C]
 {end_of_verse}
+
+
+
+

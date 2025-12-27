@@ -1,6 +1,9 @@
 {meta: title Living Proof}
 {meta: artist Ricky Van Shelton}
 {meta: composer Johnny McRae and Steve Clark}
+{meta: x_source classic-country}
+{meta: x_source_file livingprooflyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She hangs up the phone  [F]and her heart starts to [C]pound
@@ -33,3 +36,7 @@ We’re living [C]proof  [G7]true love never [C]dies
 {start_of_verse: Verse 5}
 Yes we’re living [G7]proof true love never [F]d--ie[C]s
 {end_of_verse}
+
+
+
+

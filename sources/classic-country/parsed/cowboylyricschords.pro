@@ -1,6 +1,9 @@
 {meta: title Cowboy}
 {meta: artist Eddy Arnold}
 {meta: composer Harry Shannon and Ron Fraser}
+{meta: x_source classic-country}
+{meta: x_source_file cowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The skies are dark and gray
@@ -118,3 +121,29 @@ Is all tucked in and dreaming of the range
 {start_of_verse: Verse 27}
 A cow---boy a cow---boy
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

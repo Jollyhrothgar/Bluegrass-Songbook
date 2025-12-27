@@ -1,6 +1,9 @@
 {meta: title They Call It Making Love}
 {meta: artist Tammy Wynette}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file theycallitmakinglovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A little barroom [F]on his [C]way home
@@ -41,3 +44,8 @@ Throw it down [F]pick it [C]up
 And they call it [F]makin’ [C]love
 [F]Makin’ [C]love [G7]makin’ [C]love
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sweet Bird Of Paradise}
 {meta: artist Marty Robbins}
 {meta: composer Lee Samich}
+{meta: x_source classic-country}
+{meta: x_source_file sweetbirdofparadiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love with its [C]wings flies [D7]far be[C]yond my [D7]reach
@@ -25,3 +28,6 @@ You've let me be life's empty [G]sacrifice
 Now all you'd be is just a [D7]memory
 Farewell to thee sweet bird of [G]paradise
 {end_of_verse}
+
+
+

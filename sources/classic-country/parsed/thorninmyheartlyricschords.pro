@@ -1,6 +1,9 @@
 {meta: title Thorn in My Heart}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Sam Martin}
+{meta: x_source classic-country}
+{meta: x_source_file thorninmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]A thorn was left in my heart by a [G7]rose
@@ -29,3 +32,6 @@
 [F]A thorn was left in my heart by a [G7]rose
 [C7]Whose love was never meant for [F]me
 {end_of_verse}
+
+
+

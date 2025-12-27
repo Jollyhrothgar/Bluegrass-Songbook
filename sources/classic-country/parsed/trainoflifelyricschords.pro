@@ -1,5 +1,8 @@
 {meta: title Train Of Life}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file trainoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sit a[G7]lone at my [C]table
@@ -40,3 +43,8 @@ Train [G7]train [C]oh let [C7]me [F]ride
 Don't [C]leave me [G7]train of [C]life
 [G7]Train [C]train [G7]train [C]train
 {end_of_verse}
+
+
+
+
+

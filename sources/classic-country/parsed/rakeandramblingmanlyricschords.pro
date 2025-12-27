@@ -1,6 +1,9 @@
 {meta: title Rake And Rambling Man}
 {meta: artist Don Williams}
 {meta: composer Bob McMill}
+{meta: x_source classic-country}
+{meta: x_source_file rakeandramblingmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I ran into an old friend of mine the other day
@@ -56,3 +59,11 @@ Cause you know [F]I'm a rake and rambling [C]man
 [C]Do I look like a [F]daddy to [C]you 
 Oh do I look like a [F]daddy to [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+

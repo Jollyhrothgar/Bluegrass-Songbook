@@ -1,6 +1,9 @@
 {meta: title The Holy City}
 {meta: artist Doyle Lawson}
 {meta: composer Eddie Burns and S. Newkirk}
+{meta: x_source classic-country}
+{meta: x_source_file theholycitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a city holy city where the [F]streets are paved with [C]gold
@@ -46,3 +49,10 @@ Saw the [C]trees trans[F]planted in that [C]city built for [G7]you and [C]me
 {start_of_verse: Verse 5}
 In that city built for [G7]you and [C]me
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Without Me Around}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and John Northrup}
+{meta: x_source classic-country}
+{meta: x_source_file withoutmearoundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said she [F]asked if you knew where she could [C]get some old [G7]boxes
@@ -38,3 +41,8 @@ She's [F]found without [G7]me  [C]around
 {start_of_verse: Verse 5}
 What she [F]found without [G7]me  [C]around
 {end_of_verse}
+
+
+
+
+

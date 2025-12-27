@@ -1,6 +1,9 @@
 {meta: title I'd Rather Have You}
 {meta: artist Wanda Jackson}
 {meta: composer Thelma Blackman}
+{meta: x_source classic-country}
+{meta: x_source_file idratherhaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wanted big diamonds and [C7]rubies [F]too
@@ -20,3 +23,5 @@ Cause now that [C]I have them [G7]I'd rather have [C]you [F]   [C]
 [G7]I'd give up my [C]riches and [C7]rich man [F]too
 Cause now that [C]I have them [G7]I'd rather have [C]you [F]   [C]
 {end_of_verse}
+
+

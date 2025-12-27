@@ -1,6 +1,9 @@
 {meta: title Tony's Tank Up Drive In Cafe}
 {meta: artist Hank Thompson}
 {meta: composer Royce Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file tonystankupdriveincafelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the smoke in here is like the L.A. smog
@@ -64,3 +67,11 @@ Go to [F]Tony's Tank Up [C]Drive In Cafe
 And [G7]have yourself a drink on [C]me
 (Have a drink have a drink on me)
 {end_of_verse}
+
+
+
+
+
+
+
+

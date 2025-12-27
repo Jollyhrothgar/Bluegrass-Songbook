@@ -1,6 +1,9 @@
 {meta: title Tom Dooley}
 {meta: artist the Kingston Trio}
 {meta: composer Alan Lomax and Frank M. Warner}
+{meta: x_source classic-country}
+{meta: x_source_file tomdooleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hang down your head Tom Dooley
@@ -65,3 +68,15 @@ Hang down your head and [G7]cry
 {start_of_verse: Verse 9}
 [G7]Poor boy your bound to [C]die
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

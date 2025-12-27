@@ -1,6 +1,9 @@
 {meta: title Do You Know My Jesus}
 {meta: artist The Blackwood Brothers}
 {meta: composer Dave Weston}
+{meta: x_source classic-country}
+{meta: x_source_file doyouknowmyJesuslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you a heart that's [C]weary
@@ -29,3 +32,6 @@
 [G7]Have you heard He loves [C]you
 [G]And that He [D7]will abide till the [G]end
 {end_of_verse}
+
+
+

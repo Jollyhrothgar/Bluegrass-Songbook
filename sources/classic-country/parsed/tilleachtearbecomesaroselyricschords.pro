@@ -1,6 +1,9 @@
 {meta: title Till Each Tear Becomes A Rose}
 {meta: artist Keith Whitley/Lorrie Morgan}
 {meta: composer Bill and}
+{meta: x_source classic-country}
+{meta: x_source_file tilleachtearbecomesaroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling I can see the clouds around [C]you
@@ -42,3 +45,9 @@ And in your [D7]heart I know a sorrow [G]grows
 But if you weep I'll be right there to hold [C]you
 Till each [D7]tear you cry becomes a [G]rose
 {end_of_verse}
+
+
+
+
+
+

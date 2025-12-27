@@ -1,6 +1,9 @@
 {meta: title Curtains Of Sorrow}
 {meta: artist Jim Eanes}
 {meta: composer Riley Shepard}
+{meta: x_source classic-country}
+{meta: x_source_file curtainsofsorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The curtains of sorrow have [F]descended
@@ -29,3 +32,6 @@ There's a [G7]shade of gray sky up [C]above
 The starlight has lost all its [F]splendor
 And [G7]I've lost the sweetheart I [C]love
 {end_of_verse}
+
+
+

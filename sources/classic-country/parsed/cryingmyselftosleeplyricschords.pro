@@ -1,5 +1,8 @@
 {meta: title Crying Myself to Sleep}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file cryingmyselftosleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh why must the nights be so long and so [G7]blue
@@ -28,3 +31,6 @@ Each lonely night I [C]weep
 I'm all [F]right through the day but when [C]day goes away
 I'm crying my[G7]self to [C]sleep
 {end_of_verse}
+
+
+

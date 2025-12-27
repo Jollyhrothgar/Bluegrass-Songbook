@@ -1,6 +1,9 @@
 {meta: title Crying Steel Guitar Waltz}
 {meta: artist Marty Robbins}
 {meta: composer Shorty Long and Dolly Long}
+{meta: x_source classic-country}
+{meta: x_source_file cryingsteelguitarwaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The steel guitar played when I met her 
@@ -29,3 +32,6 @@ You're crying because you [G]know she is gone
 Gone with another and [C]I'm all alone
 So [D7]cry steel guitar cry [G]on
 {end_of_verse}
+
+
+

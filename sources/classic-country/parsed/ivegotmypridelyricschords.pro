@@ -1,6 +1,9 @@
 {meta: title I've Got My Pride}
 {meta: artist Jean Shepard}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotmypridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I've got my [C]pride [G7]I've got my [C]pride
@@ -38,3 +41,8 @@
 [F]When the nights are cold and there's no one to [C]hold
 [G7]I've got my [C]pride
 {end_of_verse}
+
+
+
+
+

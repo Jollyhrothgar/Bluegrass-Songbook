@@ -1,5 +1,8 @@
 {meta: title She'll Be Comin' Round The Mountain}
 {meta: artist Connie Francis}
+{meta: x_source classic-country}
+{meta: x_source_file shellbecominroundthemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She'll be comin' round the mountain when she comes
@@ -24,3 +27,5 @@ Oh we'll all go out to meet her when she comes
 [F]Oh we'll all go out to meet her
 [C]Oh we'll all go out [G7]to meet her when she [C]comes
 {end_of_verse}
+
+

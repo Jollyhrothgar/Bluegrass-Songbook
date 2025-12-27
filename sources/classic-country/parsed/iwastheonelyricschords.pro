@@ -1,6 +1,9 @@
 {meta: title I Was The One}
 {meta: artist Elvis Presley}
 {meta: composer Wm. Andrew Peppers, Aaron Schroeder,}
+{meta: x_source classic-country}
+{meta: x_source_file iwastheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was the [Am]one who [Dm]taught her to [G7]kiss
@@ -43,3 +46,8 @@ And [C]now that it's [Am]over and [Dm]done [G7]
 Who [C]learned the [C7]lesson when [F]she broke my [Fm]heart
 [C]I [G7]was the [C]one  
 {end_of_verse}
+
+
+
+
+

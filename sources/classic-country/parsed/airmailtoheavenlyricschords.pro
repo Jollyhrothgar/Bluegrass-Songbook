@@ -1,6 +1,9 @@
 {meta: title Airmail to Heaven}
 {meta: artist Carl Smith}
 {meta: composer Kent Westberry}
+{meta: x_source classic-country}
+{meta: x_source_file airmailtoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 {comment: C}
@@ -51,3 +54,10 @@ Who was [G7]taking her daddy's [C]place
 For I [F]was the new man she [C]mentioned
 Who was [G7]taking her daddy's [C]place
 {end_of_verse}
+
+
+
+
+
+
+

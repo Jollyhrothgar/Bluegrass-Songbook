@@ -1,6 +1,9 @@
 {meta: title Nobody Knows But Me}
 {meta: artist Lefty Frizzell}
 {meta: composer Jimmie Rodgers and Elsie McWilliams}
+{meta: x_source classic-country}
+{meta: x_source_file nobodyknowsbutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nobody knows about the [Am]jailhouse blues [Dm]till you get [G7]within four [C]walls
@@ -37,3 +40,7 @@ Why did I stray from the [Am]righteous path [G7]nobody knows but [C]me
 {start_of_verse: Verse 4}
 [D7]Nobody [G7]knows but [C]me
 {end_of_verse}
+
+
+
+

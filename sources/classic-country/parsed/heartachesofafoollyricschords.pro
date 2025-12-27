@@ -1,6 +1,9 @@
 {meta: title Heartaches Of A Fool}
 {meta: artist Willie Nelson}
 {meta: composer Walt Breeland, Paul Buskirk, Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file heartachesofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Started out with the [G7]dreams
@@ -34,3 +37,7 @@ And the [C]fires of [D7]ambition will [G]burn
 And the [C]plans of a wise [G]man
 And ended [C]up with the [D7]heartaches of a [G]fool
 {end_of_verse}
+
+
+
+

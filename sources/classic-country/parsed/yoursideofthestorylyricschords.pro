@@ -1,6 +1,9 @@
 {meta: title Your Side Of The Story}
 {meta: artist Ernest Tubb}
 {meta: composer Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file yoursideofthestorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I cheated on you dear and it's no [C]secret 
@@ -29,3 +32,6 @@ I [C]love you much too much to tell them what you've [G]done
 [G]So you just tell 'em your side of the [C]story 
 And [D7]you know I will never tell on [G]you
 {end_of_verse}
+
+
+

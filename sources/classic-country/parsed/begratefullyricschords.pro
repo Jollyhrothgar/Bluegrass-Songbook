@@ -1,6 +1,9 @@
 {meta: title Be Grateful}
 {meta: artist Charley Pride}
 {meta: composer Don Hosea}
+{meta: x_source classic-country}
+{meta: x_source_file begratefullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blind man can't see [F]flowers growing in the [C]garden
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [F]Cause for some folks these things would mean a [C]lot
 {end_of_verse}
+
+
+
+
+

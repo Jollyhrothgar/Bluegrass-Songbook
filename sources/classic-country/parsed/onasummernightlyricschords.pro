@@ -1,6 +1,9 @@
 {meta: title On A Summer Night}
 {meta: artist The Bellamy Brothers}
 {meta: composer Ralph Siegel and Bernd Meinunger}
+{meta: x_source classic-country}
+{meta: x_source_file onasummernightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's another kind of livin’
@@ -81,3 +84,13 @@ On a [Dm]summer [C]night
 On a [Dm]summer [C]night
 On a [Dm]summer [C]night
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

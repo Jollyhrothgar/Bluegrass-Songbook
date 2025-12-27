@@ -1,6 +1,9 @@
 {meta: title Secret Love}
 {meta: artist Anne Murray}
 {meta: composer Sammy Fain and Paul-Francis Webster}
+{meta: x_source classic-country}
+{meta: x_source_file secretlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once I had a secret love [C]
@@ -29,3 +32,6 @@ And [Am]my secret love's no [Dm]secret  [D7]any[G]more
 At [G]last my [Bm]heart's an open [Dm]door [E7]
 And [Am]my secret love's no [Dm]secret  [D7]any[G]more
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Grandma Whistled}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file grandmawhistledlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody has their music that [F]they like to sing and [C]play
@@ -42,3 +45,8 @@ Now there's one song I'll request if I should get there by and [G7]by
 Well there [C]may be many singin' but I [F]know who'll be the [C]best
 Grandma whistlin' [F]What A [C]Friend We Have In [G7]Jesu[C]s
 {end_of_verse}
+
+
+
+
+

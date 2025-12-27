@@ -1,6 +1,9 @@
 {meta: title Baby For You}
 {meta: artist Ferlin Husky}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file babyforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Late at night when [E7]I can't sleep 
@@ -32,3 +35,6 @@ But [D7]while I schemed worked and dreamed [G7]he moved in
 {start_of_verse: Verse 3}
 [G7]For you  baby for [C]you
 {end_of_verse}
+
+
+

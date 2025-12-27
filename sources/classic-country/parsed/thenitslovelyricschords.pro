@@ -1,6 +1,9 @@
 {meta: title Then It's Love}
 {meta: artist Don Williams}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file thenitslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some people say that love is a [G7]rose
@@ -66,3 +69,9 @@
 [C]Well if it makes [F]your world go [C]'round
 [F]Then it's [C]love   [F]ooh ooh [C]ooh
 {end_of_verse}
+
+
+
+
+
+

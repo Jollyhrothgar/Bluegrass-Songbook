@@ -1,6 +1,9 @@
 {meta: title T for Texas}
 {meta: artist Waylon Jennings}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file tfortexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well T for Texas T for Tennessee
@@ -30,3 +33,6 @@ Well T for Texas T for Tennessee
 [F]T for Texas T for Tennes[C]see
 [G7]T for Thelma the gal that made a wreck out of [C]me
 {end_of_verse}
+
+
+

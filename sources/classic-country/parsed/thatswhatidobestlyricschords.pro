@@ -1,6 +1,9 @@
 {meta: title That's What I Do Best}
 {meta: artist Curtis Potter}
 {meta: composer Little Jimmy Dickens, Bobby Green and Robbie Wittkowski}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatidobestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I stand at the window and I stare down at the [C]drive
@@ -28,3 +31,6 @@ Repeat last verse
 {start_of_verse: Verse 4}
 Yes this [C]time I've hit the [G]bottom [D7]that's what I do [G]best
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Feel Like Going Home}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file feellikegoinghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord I [D7]feel like going [Em]home[G]
@@ -28,3 +31,6 @@
 [G]Every[D7]thing I done was [Em]wrong[G]
 [C]And I [Am]feel like going [G]home [D7]
 {end_of_verse}
+
+
+

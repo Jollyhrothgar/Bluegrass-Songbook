@@ -1,6 +1,9 @@
 {meta: title Little Bit Here (A Little Bit There)}
 {meta: artist Charlie Rich}
 {meta: composer Margaret A. Rich}
+{meta: x_source classic-country}
+{meta: x_source_file littlebitherealittlebittherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A little bit here (a little bit here)
@@ -33,3 +36,6 @@ Everywhere people [F]lovin[E7]'
 So [E7]easy with [Am]you (easy with you)
 So let's follow it [D7]through[G]
 {end_of_verse}
+
+
+

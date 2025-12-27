@@ -1,6 +1,9 @@
 {meta: title I'm A Boy Left Alone}
 {meta: artist Lefty Frizzell}
 {meta: composer Peshoff and G. Miller}
+{meta: x_source classic-country}
+{meta: x_source_file imaboyleftalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun has stopped shinning there's no silver [G7]lining
@@ -29,3 +32,6 @@ Now [D7]I bear my heartaches [G7]alone
 The [C]love God created has withered and [G7]faded
 A girl is gone and I'm a boy left [C]alone
 {end_of_verse}
+
+
+

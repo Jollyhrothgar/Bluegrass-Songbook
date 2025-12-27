@@ -1,6 +1,9 @@
 {meta: title Smile At Me Again}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson and Stephen Bruton}
+{meta: x_source classic-country}
+{meta: x_source_file smileatmeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Monday caught me [D7]early comin' [C]down by sur[G]prise
@@ -30,3 +33,6 @@ And make me [G]on last [D7]one night [Em]stand
 [C]Let my friend the devil pay the [G]rest of my [Em]dues
 [G]Take me home to [D7]something's gonna [C]smile at me [G]again
 {end_of_verse}
+
+
+

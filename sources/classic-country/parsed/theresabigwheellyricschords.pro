@@ -1,6 +1,9 @@
 {meta: title There's A Big Wheel}
 {meta: artist Dottie West}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file theresabigwheellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a [F]big wheel there's a [C]big wheel 
@@ -57,3 +60,10 @@ He's a [G7]whole lot bigger than [C]you
 There's a [F]big wheel there's a [C]big wheel 
 He's a [G7]whole lot bigger than [C]me
 {end_of_verse}
+
+
+
+
+
+
+

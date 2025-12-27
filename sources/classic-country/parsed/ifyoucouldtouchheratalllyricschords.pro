@@ -1,6 +1,9 @@
 {meta: title If You Could Touch Her At All}
 {meta: artist Willie Nelson}
 {meta: composer Lee Clayton}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoucouldtouchheratalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Funny a woman can come on so wild and [F]free
@@ -29,3 +32,6 @@ But I'd [G7]rather have one than none Lord cause I'm flesh and [C]bone
 And sometimes it seems that she ain't worth the trouble at [F]all
 But she could [G7]be worth the world if somehow you can touch her at [C]all
 {end_of_verse}
+
+
+

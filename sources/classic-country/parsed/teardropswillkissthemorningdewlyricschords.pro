@@ -1,6 +1,9 @@
 {meta: title Teardrops Will Kiss the Morning Dew}
 {meta: artist Alison Krauss}
 {meta: composer Paul Craft}
+{meta: x_source classic-country}
+{meta: x_source_file teardropswillkissthemorningdewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When time was young we [C]walked the road [G]together
@@ -37,3 +40,7 @@ Now comes the [G]sun we'll [C]say goodbye [G]forever
 And [C]teardrops will [D7]kiss the morning [Em]dew
 [C]Teardrops will [D7]kiss the morning [G]dew
 {end_of_verse}
+
+
+
+

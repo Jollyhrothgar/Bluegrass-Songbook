@@ -1,6 +1,9 @@
 {meta: title Everything I Touch Turns To Sugar}
 {meta: artist Carl Smith}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file everythingitouchturnstosugarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everything I touch turns to [G7]sugar
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [F]And I love you like it's [G7]going out of [C]style
 {end_of_verse}
+
+
+
+
+

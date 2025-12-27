@@ -1,6 +1,9 @@
 {meta: title For God So Loved The World}
 {meta: artist Jimmy Davis}
 {meta: composer Lonnie Hunter}
+{meta: x_source classic-country}
+{meta: x_source_file forGodsolovedtheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As the Savior was [C]walking up [G]Calvary's Hill
@@ -40,3 +43,6 @@ That He [C]gave His only Son
 And that is [G]why Jesus [A7]died for [D7]you and [G]me 
 ([C]You and [G]me)
 {end_of_verse}
+
+
+

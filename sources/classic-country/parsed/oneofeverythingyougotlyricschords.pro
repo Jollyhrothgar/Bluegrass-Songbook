@@ -1,6 +1,9 @@
 {meta: title One Of Everything You Got Lyrics with Chords}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file oneofeverythingyougotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My little boy is a [F]barrel of [C]fun 
@@ -57,3 +60,10 @@ A Sting Ray bike that'll [F]really [C]go
 A [G7]police car with a light on the top 
 Bring me one of everything you [C]got
 {end_of_verse}
+
+
+
+
+
+
+

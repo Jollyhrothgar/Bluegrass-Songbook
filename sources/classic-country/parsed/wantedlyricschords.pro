@@ -1,6 +1,9 @@
 {meta: title Wanted}
 {meta: artist Alan Jackson}
 {meta: composer Charlie Craig and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file wantedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Excuse me [C]ma'am can you [G]help me
@@ -38,3 +41,7 @@ To forgive imper[G]fection in the man that she [D7]loved
 How much he still [G]loves her
 He can't be [D7]sorry [C]enough  [G]wanted
 {end_of_verse}
+
+
+
+

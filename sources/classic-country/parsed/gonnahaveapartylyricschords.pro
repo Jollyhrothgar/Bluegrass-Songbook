@@ -1,6 +1,9 @@
 {meta: title Gonna Have A Party}
 {meta: artist Alabama}
 {meta: composer Bruce Channel, Kieran Kane, Cliff Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file gonnahaveapartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gonna have a party a [F]good time jambo[C]ree
@@ -46,3 +49,8 @@ Gonna have a party [D7]come on along with [G7]me
 Gonna have a [C]good time and [F]everybody's feelin' [C]right
 Gonna have a party a [G7]week from Saturday [C]night
 {end_of_verse}
+
+
+
+
+

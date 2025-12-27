@@ -1,6 +1,9 @@
 {meta: title You're A Little Doll}
 {meta: artist George Morgan}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file yourealittledolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Well you're a little [C]doll as cute as you can be
@@ -50,3 +53,9 @@ Well you're a little [C]doll as cute as you can be
 I can't believe you're real but you're [G7]so sweet
 But [C]when I hold you close I feel your [G7]little heart [C]beat
 {end_of_verse}
+
+
+
+
+
+

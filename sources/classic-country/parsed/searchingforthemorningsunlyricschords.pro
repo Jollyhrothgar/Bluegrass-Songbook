@@ -1,6 +1,9 @@
 {meta: title Searching For The Morning Sun}
 {meta: artist Charlie Pride}
 {meta: composer Jerry Grindele, Paul Gibbons, Tony Hatch}
+{meta: x_source classic-country}
+{meta: x_source_file searchingforthemorningsunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Standin' in a pourin' rain on a cold Chicago day
@@ -48,3 +51,12 @@ Watch the trains pullin' in and out
 {start_of_verse: Verse 8}
 [G7]Lookin' for somethin' that I might never [C]find
 {end_of_verse}
+
+
+
+
+
+
+
+
+

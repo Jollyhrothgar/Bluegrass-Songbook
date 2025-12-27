@@ -1,5 +1,8 @@
 {meta: title Married by the Bible}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file marriedbythebiblelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What a strange world we live in what a [F]shame oh what a [D7]shame
@@ -25,3 +28,6 @@
 {start_of_verse: Verse 4}
 Repeat #2
 {end_of_verse}
+
+
+

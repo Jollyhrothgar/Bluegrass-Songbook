@@ -1,5 +1,8 @@
 {meta: title Need Me}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file needmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can go where you wanna go 
@@ -27,3 +30,6 @@ You can do what you wanna do
 And I'll bless [C]each little thing you [G]do
 Just need me that's [D7]all I ask of [G]you
 {end_of_verse}
+
+
+

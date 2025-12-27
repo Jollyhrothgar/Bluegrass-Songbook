@@ -1,6 +1,9 @@
 {meta: title Cold Shoulder}
 {meta: artist Garth Brooks}
 {meta: composer Kim Williams, Kent Blazy, Garth Brook}
+{meta: x_source classic-country}
+{meta: x_source_file coldshoulderlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a fire burning [Am]bright[F] 
@@ -50,3 +53,9 @@ But I’m [G7]hugging this old cold [C]shoulder[F]  [C]
 [F]Oh I wish I could [C]hold her 
 But I’m [G7]hugging this old cold [C]shoulder[F]  [C]
 {end_of_verse}
+
+
+
+
+
+

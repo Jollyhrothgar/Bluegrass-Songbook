@@ -1,5 +1,8 @@
 {meta: title I Ain't Gonna Be Treated This A Way}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file iaintgonnabetreatedthisawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I ain't a gonna be treated this a way
@@ -44,3 +47,8 @@ Cause I [D7]ain't a-gonna be treated this a [G]way
 {start_of_verse: Verse 4}
 No I [D7]ain't a gonna be treated this a [G]way
 {end_of_verse}
+
+
+
+
+

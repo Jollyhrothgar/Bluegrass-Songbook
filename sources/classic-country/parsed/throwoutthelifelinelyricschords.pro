@@ -1,6 +1,9 @@
 {meta: title Throw Out the Lifeline}
 {meta: artist Wilburn Brothers}
 {meta: composer Edward S. Ufford}
+{meta: x_source classic-country}
+{meta: x_source_file throwoutthelifelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Throw out the lifeline  
@@ -38,3 +41,9 @@ If you’re a Christian why [A7]linger [D7]so long
 Throw out the lifeline
 [D7]Someone is drifting [G]away
 {end_of_verse}
+
+
+
+
+
+

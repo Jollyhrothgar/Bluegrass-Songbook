@@ -1,6 +1,9 @@
 {meta: title You Can Feel Bad}
 {meta: artist Patty Loveless}
 {meta: composer Matraca Berg and Tim Krekel}
+{meta: x_source classic-country}
+{meta: x_source_file youcanfeelbadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The car is runnin' and your [C]bags are packed 
@@ -63,3 +66,11 @@ Yeah [Dm]I've seen this [C]comin' for a [F]long long time
 [G7]If it makes you [Am]feel  [F]better[C] 
 [G7]If it makes you [Am]feel  [F]better[C]
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ain't It Good}
 {meta: artist Barbara Mandrell}
 {meta: composer Freddy Weller}
+{meta: x_source classic-country}
+{meta: x_source_file aintitgoodlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Na na na na [G7]na na na na [C]na na na na [F]na na na
@@ -48,3 +51,10 @@ And [G7]let the love surround me one more [C]time
 {start_of_verse: Verse 6}
 [D7]Ain't it good just [G7]being in [C]love [F]   [C]
 {end_of_verse}
+
+
+
+
+
+
+

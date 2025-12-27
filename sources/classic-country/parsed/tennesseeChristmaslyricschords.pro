@@ -1,6 +1,9 @@
 {meta: title Tennessee Christmas}
 {meta: artist Lee Greenwood}
 {meta: composer Amy Grant and Gary Chapman}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseeChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come on weather[Em]man give us a [F]forecast snowy [D7]white
@@ -63,3 +66,11 @@ But a [D7]tender Tennessee [G]Christmas
 A [D7]tender Tennessee [G]Christmas
 [Em]Is the [Am]only [D7]Christmas for [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+

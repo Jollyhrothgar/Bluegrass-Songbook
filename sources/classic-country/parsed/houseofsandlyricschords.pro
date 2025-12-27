@@ -1,5 +1,8 @@
 {meta: title House Of Sand}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file houseofsandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your house of [C]sand it won't stand very [G]long
@@ -32,3 +35,7 @@ And I [G]stood just [C]about all I can [G]stand
 {start_of_verse: Verse 3}
 [C]No I can't [G]live in your [D7]lonely house of [G]sand
 {end_of_verse}
+
+
+
+

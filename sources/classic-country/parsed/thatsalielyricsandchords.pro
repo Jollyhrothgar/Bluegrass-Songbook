@@ -1,6 +1,9 @@
 {meta: title That's A Lie}
 {meta: artist Eddy Arnold}
 {meta: composer Charlie Williams and Scott Turner}
+{meta: x_source classic-country}
+{meta: x_source_file thatsalielyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I said if you're happy then I'm [F]glad[A7]   [Dm]
@@ -29,3 +32,5 @@ And [F]I'll forget how it [D7]was to kiss you
 [G7]But that's a lie look at me cry 
 But that's a lie I need you [C]so [F]  [C]
 {end_of_verse}
+
+

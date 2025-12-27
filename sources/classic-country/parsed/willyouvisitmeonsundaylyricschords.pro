@@ -1,6 +1,9 @@
 {meta: title Will You Visit Me On Sunday}
 {meta: artist George Jones}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file willyouvisitmeonsundaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just outside these prison bars the hanging [F]tree is [C]waiting
@@ -29,3 +32,6 @@
 [C]A grave is filled with silence but if a [F]sleeping man could [C]hear
 [F]Darling would I [C]hear your [G7]footsteps up [C]there
 {end_of_verse}
+
+
+

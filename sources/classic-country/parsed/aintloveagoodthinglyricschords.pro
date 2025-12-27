@@ -1,6 +1,9 @@
 {meta: title Ain't Love A Good Thing}
 {meta: artist Loretta Lynn}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file aintloveagoodthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blues go ahead and knock upon my door
@@ -37,3 +40,6 @@ And [C]turn it into a [G7]real thing
 [F]Ooh ooh ain't love a [C]good thing 
 [F]Ooh ooh ain't love a [C]good thing
 {end_of_verse}
+
+
+

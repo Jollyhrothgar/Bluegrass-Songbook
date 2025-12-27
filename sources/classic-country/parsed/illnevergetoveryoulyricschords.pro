@@ -1,6 +1,9 @@
 {meta: title I'll Never Get Over You}
 {meta: artist The Everly Brothers}
 {meta: composer Don Everly and Phil Everly}
+{meta: x_source classic-country}
+{meta: x_source_file illnevergetoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll [G7]never get [C]over [Am]you [G7]no matter how I [C]try
@@ -40,3 +43,10 @@
 {start_of_verse: Verse 5}
 [G7]I'll never [C]get over [Am]you [G7]no matter how I [C]try
 {end_of_verse}
+
+
+
+
+
+
+

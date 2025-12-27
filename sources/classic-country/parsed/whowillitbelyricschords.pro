@@ -1,6 +1,9 @@
 {meta: title Who Will It Be}
 {meta: artist Hank Locklin}
 {meta: composer W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file whowillitbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s two hearts breakin’ in her life
@@ -39,3 +42,8 @@ I [G]can’t hardly wait until the time
 [C]When she’ll be his or mine
 [D7]Until then this heart will be crying who will it [G]be
 {end_of_verse}
+
+
+
+
+

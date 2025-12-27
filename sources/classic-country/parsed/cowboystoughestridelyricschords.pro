@@ -1,6 +1,9 @@
 {meta: title Cowboy's Toughest Ride}
 {meta: artist Clay Walker}
 {meta: composer Kim Williams, Randy Boudreaux, Clay Walker}
+{meta: x_source classic-country}
+{meta: x_source_file cowboystoughestridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]See that [G]cowboy at the bar 
@@ -39,3 +42,6 @@ He'll [C]get back up and [D7]play the part
 He'll [Am]hold the reins and [C]hide the pain [D7]inside
 [Am]Love's always a [D7]cowboy's toughest [G]ride
 {end_of_verse}
+
+
+

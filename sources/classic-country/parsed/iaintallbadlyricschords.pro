@@ -1,6 +1,9 @@
 {meta: title I Ain't All Bad}
 {meta: artist Charley Pride}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file iaintallbadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I picked last night in Tucson I [C]sang 'em a country [G]song
@@ -48,3 +51,9 @@ Baby that [Dm]don't makes me all [G]bad
 If I take a little pleasure and a little bit of love 
 Baby that [Dm]don't makes me all [G]bad
 {end_of_verse}
+
+
+
+
+
+

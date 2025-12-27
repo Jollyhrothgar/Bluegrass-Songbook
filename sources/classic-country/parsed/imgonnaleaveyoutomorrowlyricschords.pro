@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Leave You Tomorrow}
 {meta: artist John Schneider}
 {meta: composer Tim Daniels, Gene Dobbins, Johnny Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnaleaveyoutomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Maybe I’ve been [G7]wrong to [C]stop and think it [G]over
@@ -34,3 +37,7 @@ But that’s the [G]same thing I [D7]said [G]yesterday
 [D7]Yes I’m gonna [G]le-ave you [C][G7]tomorrow
 But that’s the [G]same thing I [D7]said [G][C]yesterd--ay 
 {end_of_verse}
+
+
+
+

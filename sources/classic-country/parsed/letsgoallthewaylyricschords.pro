@@ -1,6 +1,9 @@
 {meta: title Let's Go All The Way}
 {meta: artist Norma Jean}
 {meta: composer Dusty Rose}
+{meta: x_source classic-country}
+{meta: x_source_file letsgoallthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -35,3 +38,7 @@ Half way means the heartbreak if one of us should [D7]lie
 [G]Hold me in your arms and say [D7]oh let's go all the [G]way
             
 {end_of_verse}
+
+
+
+

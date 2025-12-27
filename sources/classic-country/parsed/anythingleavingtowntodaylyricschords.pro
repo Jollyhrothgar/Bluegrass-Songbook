@@ -1,6 +1,9 @@
 {meta: title Anything Leaving Town Today}
 {meta: artist Red Sovine}
 {meta: composer Tom T. Hall and Dave Dudley}
+{meta: x_source classic-country}
+{meta: x_source_file anythingleavingtowntodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are places I would like to see I know
@@ -48,3 +51,11 @@ But to get away from you I may try walkin'
 [F]I want somethin' that's movin' right [C]away
 [A#7]I'll take [G7]anything leavin' town [C]today
 {end_of_verse}
+
+
+
+
+
+
+
+

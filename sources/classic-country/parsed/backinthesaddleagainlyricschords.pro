@@ -1,6 +1,9 @@
 {meta: title Back In The Saddle Again}
 {meta: artist Gene Autry}
 {meta: composer Ray Whitley and Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file backinthesaddleagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm back in the [G7]saddle [C]again
@@ -25,3 +28,5 @@ Back in the saddle [G7]again
 [F][C]Whoopi-ty-aye-yay I go my [C]way 
 [D7]Back in the [G7]saddle [C]again
 {end_of_verse}
+
+

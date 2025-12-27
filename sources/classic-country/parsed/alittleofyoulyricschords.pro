@@ -1,6 +1,9 @@
 {meta: title A Little Of You}
 {meta: artist Conway Twitty}
 {meta: composer James Walton Aldridge}
+{meta: x_source classic-country}
+{meta: x_source_file alittleofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today I put on your favorite [F]shirt
@@ -45,3 +48,9 @@ There will [Am]always [D7]be a [G7]little of [C]you
 {start_of_verse: Verse 5}
 Oh oh there’s a [F]little of [Fm]you  
 {end_of_verse}
+
+
+
+
+
+

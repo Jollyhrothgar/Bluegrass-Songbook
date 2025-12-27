@@ -1,6 +1,9 @@
 {meta: title If You Ever Have Forever In Mind}
 {meta: artist Vince Gill}
 {meta: composer Troy Seals and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoueverhaveforeverinmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You're climbing [C]mountains  I'm on a [F]hill
@@ -29,3 +32,6 @@ I'll be [G7]here and easy to [C]find [G7]
 If your [C]heart isn't [G7]ready to [C]lay down with [F]mine
 If [C]you ever ([Am]ever) have [Dm]forever [G7]in [C]mind
 {end_of_verse}
+
+
+

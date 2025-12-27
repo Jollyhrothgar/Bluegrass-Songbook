@@ -1,6 +1,9 @@
 {meta: title All I Knew To Talk About Was Texas}
 {meta: artist Red Steagall}
 {meta: composer Jerry Allison and Joe Osborn}
+{meta: x_source classic-country}
+{meta: x_source_file alliknewtotalkaboutwastexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All I knew to talk about was [G7]Texas
@@ -43,3 +46,8 @@ You'd think she'd never been around at [C]all
 She's been all the way from [G7]Seattle to Miami
 She's seen the Smokey Mountains in the [C]fall
 {end_of_verse}
+
+
+
+
+

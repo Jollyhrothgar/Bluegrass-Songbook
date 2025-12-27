@@ -1,6 +1,9 @@
 {meta: title Misery and Gin}
 {meta: artist Merle Haggard}
 {meta: composer John Durrill and Snuff Garrett}
+{meta: x_source classic-country}
+{meta: x_source_file miseryandginlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Memories and drinks don't mix too well
@@ -30,3 +33,6 @@ We both lost someone and only have ourselves [C]to blame
 {start_of_verse: Verse 4}
 Repeat#3
 {end_of_verse}
+
+
+

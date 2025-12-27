@@ -1,6 +1,9 @@
 {meta: title Millionaire}
 {meta: artist Doug Stone}
 {meta: composer Jimmy Devine}
+{meta: x_source classic-country}
+{meta: x_source_file millionairelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Millionaire
@@ -72,3 +75,12 @@ A [A7]wonderful [D7]lady [G]who
 [G]Now I'm hoping to [E7]run into
 A [A7]wonderful [D7]lady [G]who
 {end_of_verse}
+
+
+
+
+
+
+
+
+

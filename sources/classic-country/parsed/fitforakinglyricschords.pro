@@ -1,6 +1,9 @@
 {meta: title Fit For A King}
 {meta: artist Garth Brooks}
 {meta: composer Jim Rushing and Carl Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file fitforakinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]His pulpit's a corner on [G7]Nineteenth and [C]Main
@@ -52,3 +55,10 @@ And someday in heaven when the angels all [F]sing
 Well these [C]rags that I'm wearin' will be [G7]fit for a [F]king
 [G7]Fit for a [C]king
 {end_of_verse}
+
+
+
+
+
+
+

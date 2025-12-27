@@ -1,6 +1,9 @@
 {meta: title Boulder To Birmingham}
 {meta: artist Emmylou Harris}
 {meta: composer Bill Danoff and Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file bouldertobirminghamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I don't wanna hear a love [G]song
@@ -52,3 +55,10 @@
 {start_of_verse: Verse 7}
 [D7]If I thought I could see I could see your [G]face
 {end_of_verse}
+
+
+
+
+
+
+

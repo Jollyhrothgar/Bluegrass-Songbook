@@ -1,6 +1,9 @@
 {meta: title Midnight Train}
 {meta: artist Eric Wurst and David Wurst}
 {meta: composer Eric Wurst and David Wurst}
+{meta: x_source classic-country}
+{meta: x_source_file midnighttrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I crossed the county line bout half an hour ago
@@ -28,3 +31,6 @@ Just politics and money but [G7]no one's buyin' me
 [G7]Midnight train take me away from [C]here
 [G7]Oh midnight train take me away from [C]here
 {end_of_verse}
+
+
+

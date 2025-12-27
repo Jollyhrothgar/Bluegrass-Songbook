@@ -1,6 +1,9 @@
 {meta: title So Long}
 {meta: artist David Ball}
 {meta: composer Russell Brown and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file solonglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you believe what I believe is true
@@ -34,3 +37,7 @@ Just say [F]so long [C]until [F]then so [C]long
 If you believe what I believe is true
 This won't be the last time I'll be [F]seeing you
 {end_of_verse}
+
+
+
+

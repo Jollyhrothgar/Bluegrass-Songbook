@@ -1,6 +1,9 @@
 {meta: title Better Days For Mama}
 {meta: artist Stonewall Jackson}
 {meta: composer Hugh H. King}
+{meta: x_source classic-country}
+{meta: x_source_file betterdaysformamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That whiskey and [F]his wild reckless [C]way
@@ -36,3 +39,6 @@
 [A#7]Better days for mama better [C]days
 [A#7]Better days for mama better [C]days
 {end_of_verse}
+
+
+

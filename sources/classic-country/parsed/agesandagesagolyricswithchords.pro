@@ -1,6 +1,9 @@
 {meta: title Ages And Ages Ago with chords}
 {meta: artist Jan Howard}
 {meta: composer Gene Autry, Fred Rose, Ray Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file agesandagesagolyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [G7]remember when I made you [C]cry
@@ -22,3 +25,5 @@
 [C]And though it [G7]happened only [C]yesterday
 [G7]It seems ages and ages [C]ago
 {end_of_verse}
+
+

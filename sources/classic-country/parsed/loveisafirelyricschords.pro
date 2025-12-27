@@ -1,5 +1,8 @@
 {meta: title Love Is A Fire}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file loveisafirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love is a [D7]fire that [C]burns in[G]side 
@@ -42,3 +45,8 @@ Warms the [D7]soul of [G]you
 And the [C]stronger the love the [G]hotter the fire 
 So be careful [D7]of what you [G]do
 {end_of_verse}
+
+
+
+
+

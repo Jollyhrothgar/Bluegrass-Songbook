@@ -1,6 +1,9 @@
 {meta: title Trouble In Paradise}
 {meta: artist Conway Twitty}
 {meta: composer Kenny O'Dell}
+{meta: x_source classic-country}
+{meta: x_source_file troubleinparadiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's trouble in paradise
@@ -32,3 +35,7 @@ I know he's [G7]out there and around it ever [C]day
 There's trouble in paradise
 [F]I'm a gonna love him [G7]till the devil goes [C]away
 {end_of_verse}
+
+
+
+

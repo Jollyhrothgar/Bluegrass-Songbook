@@ -1,6 +1,9 @@
 {meta: title You'll Never Take Texas Out of Me}
 {meta: artist Waylon Jennings}
 {meta: composer Waylon Jennings and Roger Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file youllnevertaketexasoutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love to hear them old twin fiddles
@@ -41,3 +44,8 @@ But you'll never take Texas out of [G]me
 You can [D7]take the music out of Texas
 But you'll never take Texas out of [G]me
 {end_of_verse}
+
+
+
+
+

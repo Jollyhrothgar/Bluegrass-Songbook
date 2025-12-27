@@ -1,6 +1,9 @@
 {meta: title Save The Last Dance For Me}
 {meta: artist Emmylou Harris}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file savethelastdanceformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can dance every dance with the girl
@@ -52,3 +55,10 @@ And in whose arms you're [G]gonna be
 Oh [D7]darling save the last dance [G]for me
 Oh [D7]darling save the last dance [G]for me
 {end_of_verse}
+
+
+
+
+
+
+

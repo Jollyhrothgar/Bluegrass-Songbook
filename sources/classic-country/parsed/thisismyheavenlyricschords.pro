@@ -1,6 +1,9 @@
 {meta: title This Is My Heaven}
 {meta: artist Elvis Presley}
 {meta: composer Bernie Baum, Bill Giant, Florence Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file thisismyheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This is my heaven
@@ -51,3 +54,9 @@ When you come to [G]me
 La la la la la la la la [C]la  
 La la la la [G]la  
 {end_of_verse}
+
+
+
+
+
+

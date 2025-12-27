@@ -1,6 +1,9 @@
 {meta: title Once More}
 {meta: artist The Osborne Brothers}
 {meta: composer Dusty Owens}
+{meta: x_source classic-country}
+{meta: x_source_file oncemorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once more to be with you dear
@@ -30,3 +33,6 @@ Once more to be with you dear
 [C]If you'll just [G7]give me  all of your [C]heart
 [F]Once [C]mo-re
 {end_of_verse}
+
+
+

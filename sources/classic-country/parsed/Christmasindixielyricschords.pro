@@ -1,6 +1,9 @@
 {meta: title Christmas in Dixie}
 {meta: artist Alabama}
 {meta: composer Teddy Gentry, Randy Owen, Jeff Cook, and Mark Herndon}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasindixielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]By now in New York [Dm]City  [G7]there's snow on the [C]ground
@@ -26,3 +29,6 @@ Christmas in [F]Dixie  [G7]it's snowing in [C]the [Am]pines
 Merry Christmas from [Dm]Dixie  to [G7]everyone [C]tonight
 And from Fort Payne [Dm]Alabama  Merry [G7]Christmas [C]tonight
 {end_of_verse}
+
+
+

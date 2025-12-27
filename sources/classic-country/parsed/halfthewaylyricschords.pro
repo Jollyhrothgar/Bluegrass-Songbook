@@ -1,6 +1,9 @@
 {meta: title Half The Way}
 {meta: artist Crystal Gayle}
 {meta: composer Bobby Wood and Ralph Murphy}
+{meta: x_source classic-country}
+{meta: x_source_file halfthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Half of your [Em]love is just not [Am]what I'm [G7]after 
@@ -46,3 +49,8 @@ I [Dm]need you to [E7]keep it growing [Am]stronger every [C]day oh [G7]no
 Don't take me half the way (don't take me half the [C]way) 
 [G7]Don't take me half the way (don't take me half the [C]way)  
 {end_of_verse}
+
+
+
+
+

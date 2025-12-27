@@ -1,6 +1,9 @@
 {meta: title Beneath a Neon Star}
 {meta: artist Johnny Bush}
 {meta: composer Red Rowe}
+{meta: x_source classic-country}
+{meta: x_source_file beneathaneonstarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Beneath a neon star in a honky tonk I fell in love with [F]you
@@ -31,3 +34,5 @@ On the [C]night we met I could never forget
 Said you loved me [F]too
 Neath the neon star in a [G7]honky tonk [Dm]I fell in [G7]love with [C]you
 {end_of_verse}
+
+

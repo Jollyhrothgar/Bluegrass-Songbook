@@ -1,5 +1,8 @@
 {meta: title My Son Calls Another Man Daddy}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file mysoncallsanothermandaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight my head is bowed in [G7]sorrow
@@ -35,3 +38,7 @@ She just couldn't stand my [C]disgrace
 My son calls another [C7]man [F]daddy
 And [G7]longs for the love he can't [C]replace
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hasta Luego (See You Later)}
 {meta: artist Hank Locklin}
 {meta: composer Johnny Hicks}
+{meta: x_source classic-country}
+{meta: x_source_file hastaluegoseeyoulaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Adios ana hasta [C]luego
@@ -25,3 +28,6 @@ The stars up in heaven will guide you
 [Fm]Adios ana [C]hasta [A7]luego
 [D7]Hasta [G7]luego [C]amore
 {end_of_verse}
+
+
+

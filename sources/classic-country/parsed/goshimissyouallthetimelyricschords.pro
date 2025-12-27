@@ -1,6 +1,9 @@
 {meta: title Gosh I Miss You All The Time}
 {meta: artist Jim and Jesse}
 {meta: composer Jimmy Long}
+{meta: x_source classic-country}
+{meta: x_source_file goshimissyouallthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When whippoorwill are calling
@@ -46,3 +49,7 @@ I'll miss you when its day light
 I'll [G]miss you when its midnight
 Gosh I [D7]miss you all the [G]time
 {end_of_verse}
+
+
+
+

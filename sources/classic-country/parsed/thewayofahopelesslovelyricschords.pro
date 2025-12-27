@@ -1,5 +1,8 @@
 {meta: title The Way of a Hopeless Love}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file thewayofahopelesslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Why did you have to care about [D7]me
@@ -42,3 +45,8 @@ Hopeless [D7]dear for you and [G]me
 I cannot hurt [C]the one I'm pledged [G]to
 That's why I [D7]never can be [G]free
 {end_of_verse}
+
+
+
+
+

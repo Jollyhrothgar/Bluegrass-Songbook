@@ -1,5 +1,8 @@
 {meta: title I'll Always Be A Fool For You}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file illalwaysbeafoolforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You change just [G7]like the [C]weather
@@ -19,3 +22,5 @@
 {start_of_verse: Verse 3}
 [G7]I'll always be a [F]fool for [C]you
 {end_of_verse}
+
+

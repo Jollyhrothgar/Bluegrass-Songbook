@@ -1,6 +1,9 @@
 {meta: title It's All In My Mind}
 {meta: artist George Jones}
 {meta: composer Wynn Stewart and Vern Stovall}
+{meta: x_source classic-country}
+{meta: x_source_file itsallinmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just turned out the [F]lights up[Fm]stairs
@@ -28,3 +31,6 @@ I [C]love you but it's [G7]all in my [C]mind
 I [C]love you oh but it's [G7]all in my [C]mind
 This [F]house is [C]empty it’s been [G7]all in my [F]min[C]d
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Morning}
 {meta: artist Jim Ed Brown}
 {meta: composer Willis Graham}
+{meta: x_source classic-country}
+{meta: x_source_file morninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here in this room this narrow room where life began 
@@ -50,3 +53,9 @@ You breathe my name and it just seems to [C]dangle [G]there
 Then I feel your fingers running through my [D7]mind
 Jumbling up my thoughts to leave them [C]tangled [G]there
 {end_of_verse}
+
+
+
+
+
+

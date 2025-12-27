@@ -1,6 +1,9 @@
 {meta: title He May Call}
 {meta: artist Anne Murray}
 {meta: composer Michael Brown and Steve Martin}
+{meta: x_source classic-country}
+{meta: x_source_file hemaycalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I've been telling lies I never [G7]knew[Am]
@@ -36,3 +39,7 @@ I've been telling [Em]lies I never [Dm]knew[C]
 [Dm]He may call you up tonight
 [F]Then what could I [Fm]say that would sound [C]right
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's Lonely}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melson and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file itslonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every sleepy dawn wakes to find [Em]you 
@@ -37,3 +40,8 @@ I [G7]can't hold you tight it's lonely  [F][C]lonely
 [A7]I know why I cry for all the world [D7]to see 
 [G7]You're not here with me it's [C]lonely [F]lone-ly [F][C]lone [C]ly
 {end_of_verse}
+
+
+
+
+

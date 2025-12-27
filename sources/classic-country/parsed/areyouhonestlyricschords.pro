@@ -1,5 +1,8 @@
 {meta: title Are You Honest}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file areyouhonestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Are you honest are you [C]true
@@ -35,3 +38,7 @@
 [G]Please don’t try dear to make me [C]cry
 [G]Are you [D7]honest please don’t [G]lie
 {end_of_verse}
+
+
+
+

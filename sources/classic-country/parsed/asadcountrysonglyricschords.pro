@@ -1,5 +1,8 @@
 {meta: title A Sad Country Song}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file asadcountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 A Sad Country Song
@@ -37,3 +40,8 @@ To [G]sing you a [D7]sad country [G]song
 {start_of_verse: Verse 6}
 And I'll sing you a [D7]sad country [C]song[G]
 {end_of_verse}
+
+
+
+
+

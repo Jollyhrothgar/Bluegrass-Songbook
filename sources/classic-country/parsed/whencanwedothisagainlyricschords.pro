@@ -1,6 +1,9 @@
 {meta: title When Can We Do This Again}
 {meta: artist The Kendalls}
 {meta: composer Curly Putman and Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file whencanwedothisagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a lakeside weekend cottage 
@@ -43,3 +46,8 @@ Oh baby [G7]when can we do this [C]again
 I'll be so [F]lonely I'll be hurting till [C]then
 Oh tell me [G7]when can we do this [C]again
 {end_of_verse}
+
+
+
+
+

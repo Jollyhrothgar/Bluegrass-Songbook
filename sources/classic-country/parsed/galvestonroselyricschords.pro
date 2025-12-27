@@ -1,5 +1,8 @@
 {meta: title Galveston Rose}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file galvestonroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down in old southern Texas I [F]wandered one [C]day
@@ -49,3 +52,9 @@
 [C]And the lock that’s enclosed is [F]a curl from your [C]rose
 [G7]Who’ll be waiting in heaven for [C]you
 {end_of_verse}
+
+
+
+
+
+

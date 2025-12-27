@@ -1,5 +1,8 @@
 {meta: title My Savior Leads The Way}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file mysaviorleadsthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have a safe and sure retreat [D7]where I'm alone with God
@@ -28,3 +31,6 @@ My soul was lost in deep despair till [G]Jesus came to me
 But now I'm safe thank God I'm safe because of Calva[C]ry
 I'm following His [G]footsteps my [D7]Savior leads the [G]way
 {end_of_verse}
+
+
+

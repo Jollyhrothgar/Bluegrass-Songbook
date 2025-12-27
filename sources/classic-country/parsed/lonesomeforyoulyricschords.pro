@@ -1,6 +1,9 @@
 {meta: title Lonesome For You}
 {meta: artist Ricky Skaggs}
 {meta: composer Larry Cordle and Larry Shell}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomeforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't say a train whistle makes me lonesome
@@ -50,3 +53,9 @@
 [F]Yeah the only time they do [C]is when I get the [Am]blues
 [C]Or when I'm feelin' [G7]lonesome for [C]you
 {end_of_verse}
+
+
+
+
+
+

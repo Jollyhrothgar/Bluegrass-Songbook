@@ -1,6 +1,9 @@
 {meta: title Sweet Dream Woman}
 {meta: artist Waylon Jennings}
 {meta: composer Chip Taylor and Al Gordoni}
+{meta: x_source classic-country}
+{meta: x_source_file sweetdreamwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's the one that you left and she's the pride that you [G7]kept
@@ -29,3 +32,6 @@ Come and love [F]me in the [C]night
 Sweet dream woman come and [F]be
 A woman to [C]me
 {end_of_verse}
+
+
+

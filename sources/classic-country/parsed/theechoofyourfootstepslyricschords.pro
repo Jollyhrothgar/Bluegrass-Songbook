@@ -1,5 +1,8 @@
 {meta: title The Echo of Your Footsteps}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file theechoofyourfootstepslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The day that you told me  you [C7]wanted to be [F]free
@@ -28,3 +31,6 @@ And [D7]I'll ask God to bless you [G7]everyday
 For I [C]cannot deny  I bid [C7]my heart [F]goodbye
 When the [G7]echo of your footsteps died [C]away
 {end_of_verse}
+
+
+

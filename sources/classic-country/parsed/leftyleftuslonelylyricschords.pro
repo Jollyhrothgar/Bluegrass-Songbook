@@ -1,5 +1,8 @@
 {meta: title Lefty Left Us Lonely}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file leftyleftuslonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now Lefty came from Texas at least that what they [G7]say
@@ -40,3 +43,8 @@ Oh [G]why oh why oh [D7]why do you do me this [G]way
 Yeah Oh why oh why oh [D7]why do you do me this [G]way
 [D7]Always [G]Late
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Do You Love As Good As You Look}
 {meta: artist The Bellamy Brothers}
 {meta: composer C. Black, R. Bourke & J. Gillespie}
+{meta: x_source classic-country}
+{meta: x_source_file doyouloveasgoodasyoulooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Long blonde [C]hair sky blue [G]eyes
@@ -22,3 +25,5 @@ But then a[D7]gain you might come [C]over here in[G]stead
 I see they brought your [C]check  and soon you're bound to [G]go
 If I don't make [D7]my move right now [C]I may never [G]know
 {end_of_verse}
+
+

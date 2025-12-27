@@ -1,6 +1,9 @@
 {meta: title My Best To You}
 {meta: artist Slim Whitman}
 {meta: composer Gene Willadsen and Isham Jones}
+{meta: x_source classic-country}
+{meta: x_source_file mybesttoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My best to you may your [Am]dreams come [D7]true
@@ -21,3 +24,5 @@ So here's to you may your [C]skies be [Am]blue
 And your [G]love blessed that's [D7]my best to [G]you 
 [Am]And your [G]love blessed that's [D7]my best to [G]you
 {end_of_verse}
+
+

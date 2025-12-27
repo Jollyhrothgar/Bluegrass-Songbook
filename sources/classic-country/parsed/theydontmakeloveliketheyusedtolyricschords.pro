@@ -1,6 +1,9 @@
 {meta: title They Don't Make Love Like They Used To}
 {meta: artist Eddy Arnold}
 {meta: composer Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file theydontmakeloveliketheyusedtolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They just don't make [F]love like [G7]they used [C]to
@@ -24,3 +27,6 @@ I remember [A]when I loved you [D]meant all the [G7]world
 {start_of_verse: Verse 4}
 They just don't make [F]love like [G7]they used [C]to
 {end_of_verse}
+
+
+

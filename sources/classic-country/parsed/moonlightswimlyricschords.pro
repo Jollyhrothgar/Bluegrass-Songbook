@@ -1,5 +1,8 @@
 {meta: title Moonlight Swim}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file moonlightswimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's go on a moon-[F]light [C]swim
@@ -32,3 +35,6 @@ We're in love and above there's a crazy gold balloon
 That sits winking down and inviting us to come on [G7]in
 On a [F]moon-[G7]light [C]swim
 {end_of_verse}
+
+
+

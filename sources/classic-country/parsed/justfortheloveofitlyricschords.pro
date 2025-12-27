@@ -1,6 +1,9 @@
 {meta: title Just For The Love Of It}
 {meta: artist Charley Pride}
 {meta: composer Jeff Korretz Chase and Wood A. Newton}
+{meta: x_source classic-country}
+{meta: x_source_file justfortheloveofitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember walking with my daddy through his weathered fields of [F]grain
@@ -51,3 +54,9 @@ The next summer I walked with my daddy
 [C7]Don't chase [F]rainbows or your pot of gold you'll [C]always have [Am]enough
 [G7]If you'll do everything [F]you [G7]do  just for the [C]love
 {end_of_verse}
+
+
+
+
+
+

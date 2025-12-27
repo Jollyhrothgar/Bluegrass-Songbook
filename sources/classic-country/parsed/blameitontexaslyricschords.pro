@@ -1,6 +1,9 @@
 {meta: title Blame It On Texas}
 {meta: artist Mark Chesnutt}
 {meta: composer Ronnie Rogers and Mark Wright}
+{meta: x_source classic-country}
+{meta: x_source_file blameitontexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Been havin' a ball since I was a boy in [C]Beaumont
@@ -40,3 +43,7 @@
 [C]You can say what you wanna say about [G]my [C]insanity
 [D7]Blame it on Texas don't blame it on [G]me
 {end_of_verse}
+
+
+
+

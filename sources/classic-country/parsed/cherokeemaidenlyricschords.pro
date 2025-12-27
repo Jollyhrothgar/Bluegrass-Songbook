@@ -1,6 +1,9 @@
 {meta: title Cherokee Maiden}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file cherokeemaidenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]One night when the moon was bright and the moonlight glade
@@ -36,3 +39,7 @@ And I'll carry her away with [D7]me
 And [C]straight as an [A7]arrow flies [Dm]we'll ride to Para[Fm]dise
 My [C]sweet little chickadee  [A7]my little Cherokee [G7]maiden and [C]me
 {end_of_verse}
+
+
+
+

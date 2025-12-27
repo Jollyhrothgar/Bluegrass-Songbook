@@ -1,6 +1,9 @@
 {meta: title Melody Of Love}
 {meta: artist Connie Francis}
 {meta: composer Tom Glazer and Hans Engelmann}
+{meta: x_source classic-country}
+{meta: x_source_file melodyoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hold me in your [E7]arms dear [A7]dream with me
@@ -14,3 +17,4 @@
 [D7]For our [Am]melo[D7]dy of [G]love
 [C]Real [G]love
 {end_of_verse}
+

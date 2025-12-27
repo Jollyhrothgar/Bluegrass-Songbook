@@ -1,5 +1,8 @@
 {meta: title I’ve Got A Thing About A 5 String}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotathingabouta5stringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve got a [C]thing about a 5 [G]string
@@ -44,3 +47,8 @@
 [D7]And a little bit of Foggy Mountain Breakdown too
 [C]I’ve got a thing about a 5 [G]string
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Do You Love Me}
 {meta: artist Jimmy Dean}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file doyoulovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do you love me do you want me do you [F]feel the way I [C]do
@@ -29,3 +32,6 @@ Do [F]you love me love me love me like I'm [G7]loving [C]you
 {start_of_verse: Verse 4}
 Do [F]you love me love me love me like I'm [G7]loving [C]you
 {end_of_verse}
+
+
+

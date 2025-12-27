@@ -1,6 +1,9 @@
 {meta: title Every Now And Then}
 {meta: artist Mel Tillis}
 {meta: composer Jerry House}
+{meta: x_source classic-country}
+{meta: x_source_file forgivemeforgivingyoutheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m afraid of to[G7]morrow and [C]ashamed of today
@@ -33,3 +36,7 @@ For[D7]give me for giving you the [G]blues
 {start_of_verse: Verse 4}
 For[D7]give me for giving you the [G]blues
 {end_of_verse}
+
+
+
+

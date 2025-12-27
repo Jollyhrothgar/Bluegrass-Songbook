@@ -1,6 +1,9 @@
 {meta: title Hello I'm an Old Country Song}
 {meta: artist Dale Watson}
 {meta: composer Chris Wall and Dale Watson}
+{meta: x_source classic-country}
+{meta: x_source_file helloimanoldcountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Hello I'm an Old Country Song
@@ -73,3 +76,13 @@ Till I [C]slid off your [G7]radio [C]dial
 {start_of_verse: Verse 9}
 Say hello to an [G7]old country [C]song
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

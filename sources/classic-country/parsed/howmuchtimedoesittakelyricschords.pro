@@ -1,5 +1,8 @@
 {meta: title How Much Time Does It Take}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file howmuchtimedoesittakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How much time does it take to get it [F]right
@@ -44,3 +47,8 @@ How much [G7]work does it take to get [C]along
 Well you worry me about it day and [F]night
 How much [G7]time does it take to get it [C]right
 {end_of_verse}
+
+
+
+
+

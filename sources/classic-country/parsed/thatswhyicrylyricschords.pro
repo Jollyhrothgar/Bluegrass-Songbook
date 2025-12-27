@@ -1,6 +1,9 @@
 {meta: title That's Why I Cry}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill, Tillman Franks, David Houston}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhyicrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Why are there tears [A7]in my eyes all the [D7]time
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]That's why I [C]cry
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I've Got It Again}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Mildred Burk and Rose Burk}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottitagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ever once in a while I get this way
@@ -51,3 +54,12 @@ He's [G7]had it before and he's got [F]it [C]again
 I'm walking my blues can't hold up my chin
 I've [G7]had it before and I've got [F]it [C]again
 {end_of_verse}
+
+
+
+
+
+
+
+
+

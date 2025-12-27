@@ -1,6 +1,9 @@
 {meta: title Another (Just Like Me)}
 {meta: artist Jean Shepard}
 {meta: composer Vic McAlpin and Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file anotherjustlikemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You didn't love me long [C]until the thrill was gone
@@ -29,3 +32,6 @@ Of lovin' you today and losin' you [D7]tomorrow
 I'd [G]warned her but she'd called it jealou[C]sy
 So [D7]let her be another then another and another just like [G]me
 {end_of_verse}
+
+
+

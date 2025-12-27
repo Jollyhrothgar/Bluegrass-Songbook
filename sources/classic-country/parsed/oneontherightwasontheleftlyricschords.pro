@@ -1,6 +1,9 @@
 {meta: title One On The Right Was On The Left}
 {meta: artist Johnny Cash}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file oneontherightwasontheleftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There once was a musical troop [G7]a pickin' [C]singin' folk [G]group
@@ -58,3 +61,10 @@
 [C]The one on the right's an all night [G]DJ
 [D7]And the guy in the rear got [G]drafted
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title This Is The Thanks I Get}
 {meta: artist Eddy Arnold}
 {meta: composer Tommy Dilbeck}
+{meta: x_source classic-country}
+{meta: x_source_file thisisthethanksigetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once we were happy [C][F]together 
@@ -27,3 +30,6 @@ This is the [G7]thanks I get for loving [C]you
 How can you [F]leave me so lonesome and [C]blue
 This is the [G7]thanks I get for loving [C]you
 {end_of_verse}
+
+
+

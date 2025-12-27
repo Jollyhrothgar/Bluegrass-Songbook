@@ -1,6 +1,9 @@
 {meta: title Little By Little}
 {meta: artist Gene Watson}
 {meta: composer Danny Morrison and Larry Keith}
+{meta: x_source classic-country}
+{meta: x_source_file littlebylittlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little by little round by [F]round
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Little by little we’re losin’ [F]it [C]all
 {end_of_verse}
+
+
+
+

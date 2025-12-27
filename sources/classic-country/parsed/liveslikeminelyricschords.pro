@@ -1,5 +1,8 @@
 {meta: title Lives Like Mine}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file liveslikeminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm sitting here a thinkin' but [F]wastin' my [C]time
@@ -28,3 +31,6 @@ The [F]rest of mine I [G7]just don't care to [C]see
 Should I be another man a with [F]no peace to be [C]found
 But lives like mine is what [G7]makes this world go [C]round 
 {end_of_verse}
+
+
+

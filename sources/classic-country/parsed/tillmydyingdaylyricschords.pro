@@ -1,6 +1,9 @@
 {meta: title Till My Dying Day}
 {meta: artist J.D. Crowe}
 {meta: composer Richard Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file tillmydyingdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can feel the heartache coming on [F]darling
@@ -48,3 +51,9 @@ I'm gonna [C]love you [G7]till my dying [C]day
 If you ever change your mind I'm [F]hoping you will find
 I'm gonna [C]love you [G7]till my dying [C]day
 {end_of_verse}
+
+
+
+
+
+

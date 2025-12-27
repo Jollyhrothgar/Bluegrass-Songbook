@@ -1,5 +1,8 @@
 {meta: title I Can't Dry Your Tears}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file icantdryyourtearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Someday you'll call my name and I won't be [C]there
@@ -22,3 +25,5 @@
 [D7]And I can't dry your tears when I won't hear you [G]cryin'
 [D7]No I can't dry your tears dear I won't hear you [G]cryin'
 {end_of_verse}
+
+

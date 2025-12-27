@@ -1,6 +1,9 @@
 {meta: title She Once Lived Here}
 {meta: artist George Jones}
 {meta: composer Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file sheoncelivedherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A mayor gave me the [F]key to the [C]city
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]But not this one for she once lived [C]here
 {end_of_verse}
+
+
+
+

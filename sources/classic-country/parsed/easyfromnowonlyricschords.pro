@@ -1,6 +1,9 @@
 {meta: title Easy From Now On}
 {meta: artist Emmylou Harris}
 {meta: composer Susanna Clark &amp; Carlene Carter}
+{meta: x_source classic-country}
+{meta: x_source_file easyfromnowonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There he goes gone [F]again
@@ -36,3 +39,7 @@
 [F]And I'll [C]be riding high [Am]in a fandangled [F]sky
 [C]It's [Dm]gonna be e-as-y  it's [F]gonna [C]be [Dm]ea-sy from [G7]now [C]on
 {end_of_verse}
+
+
+
+

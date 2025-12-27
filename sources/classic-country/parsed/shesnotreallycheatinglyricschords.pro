@@ -1,6 +1,9 @@
 {meta: title She’s Not Really Cheating}
 {meta: artist Moe Bandy}
 {meta: composer Randy Shaffer}
+{meta: x_source classic-country}
+{meta: x_source_file shesnotreallycheatinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Not a hair out of place she makes up her face 
@@ -65,3 +68,15 @@ She's just getting [G]even
 {start_of_verse: Verse 3}
 She don't know that he knows
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

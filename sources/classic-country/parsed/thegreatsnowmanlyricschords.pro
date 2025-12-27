@@ -1,5 +1,8 @@
 {meta: title The Great Snowman}
 {meta: artist John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatsnowmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I remember the day when the [C]snow melted [G]away
@@ -49,3 +52,9 @@ And the great snow[A7]man was [D7]wed
 He said [G]yes I [D7]do and little [G]Linda said it [C]too
 And the [G]great snow[D7]man was [G]w--[D7]e--[G]d  [D7]e--d e--d [G]e--d
 {end_of_verse}
+
+
+
+
+
+

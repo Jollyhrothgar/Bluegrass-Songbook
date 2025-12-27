@@ -1,6 +1,9 @@
 {meta: title In My Eyes}
 {meta: artist John Conlee}
 {meta: composer Barbara Wyrick}
+{meta: x_source classic-country}
+{meta: x_source_file inmyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's just a [G]woman  a [C]hundred pounds of flesh and blood
@@ -51,3 +54,9 @@ And [Em]everything I [B7]feel as the years go [Em]by [D7]   [C]  [Bm]
 {start_of_verse: Verse 7}
 In my eyes[A7]   [C]she is my [G]woman
 {end_of_verse}
+
+
+
+
+
+

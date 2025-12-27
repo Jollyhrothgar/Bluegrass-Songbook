@@ -1,6 +1,9 @@
 {meta: title Time}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file timelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ain't the snow falling just a [D7]bit deeper these days
@@ -37,3 +40,8 @@ It's [D7]time  [G]time
 You’ll get there too if you [D7]stay healthy
 It’s like I say if you live long enough you get [G]old
 {end_of_verse}
+
+
+
+
+

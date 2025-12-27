@@ -1,6 +1,9 @@
 {meta: title The Rise And Fall Of The Roman Empire}
 {meta: artist Cal Smith}
 {meta: composer Bobby Fischer and Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file theriseandfalloftheromanempirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Russell Roman took his brand new [F]bride
@@ -57,3 +60,10 @@
 [F]The fall and the [G7]rise of the Roman [C]empire
 [F]Now his empire is [G7]his family and his [C]home
 {end_of_verse}
+
+
+
+
+
+
+

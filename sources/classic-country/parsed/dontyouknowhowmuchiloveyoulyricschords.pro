@@ -1,6 +1,9 @@
 {meta: title Don't You Know How Much I Love You}
 {meta: artist Ronnie Milsap}
 {meta: composer Michael D. Stewart and Dan Edward Williams}
+{meta: x_source classic-country}
+{meta: x_source_file dontyouknowhowmuchiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Why must you disappear
@@ -52,3 +55,11 @@ Don't you know oh don't you know oh
 Don't you know oh don't you know oh
 [D7]Don't you know don't you know how much I love [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+

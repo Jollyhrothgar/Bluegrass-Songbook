@@ -1,6 +1,9 @@
 {meta: title Merry Christmas We Must Be Having One}
 {meta: artist Tammy Wynette}
 {meta: composer Norris Wilson and Danny Walls}
+{meta: x_source classic-country}
+{meta: x_source_file merryChristmaswemustbehavingonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Silent Night has [F]never sounded any [C]sweeter
@@ -23,3 +26,5 @@ When the [Am]kids are singing it'll be [D7]time for you and [G7]me
 [F]So merry [C]Christmas [G7]we must be having [C]one
 [F]So merry [C]Christmas [G7]we must be having [F]o-n[C]e
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Sail Away}
 {meta: artist Charlie Rich}
 {meta: composer Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file sailawaylyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna sail away from sorrow
@@ -43,3 +46,7 @@ So go on [F]out and have the fun you love
 What I have paid is small enough
 To get [C]away from the [G7]sadness that I've [C]known
 {end_of_verse}
+
+
+
+

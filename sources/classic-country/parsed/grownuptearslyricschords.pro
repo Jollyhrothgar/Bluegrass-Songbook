@@ -1,5 +1,8 @@
 {meta: title Grown Up Tears}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file grownuptearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I thought that I'd been in love before
@@ -31,3 +34,6 @@ And I thought that I knew what love could do
 [C]From cryin'  those big old grown up [G]tears
 [C]From cryin'   [D7]those big grown up [G]tears
 {end_of_verse}
+
+
+

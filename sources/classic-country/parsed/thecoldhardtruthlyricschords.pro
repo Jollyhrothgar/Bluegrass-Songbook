@@ -1,6 +1,9 @@
 {meta: title The Cold Hard Truth}
 {meta: artist George Jones}
 {meta: composer James O'hara}
+{meta: x_source classic-country}
+{meta: x_source_file thecoldhardtruthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You don't know who I am
@@ -62,3 +65,11 @@ I'm gonna say this just one time
 [G7]You best remember me my friend
 [C]I am the cold hard truth
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lost In The Feeling}
 {meta: artist Conway Twitty}
 {meta: composer Lewis Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file lostinthefeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We [F]stepped out on the [A7]dance floor 
@@ -27,3 +30,6 @@ We're [Em]dancing with[B7]out even [C]touching the ground
 [F]Lost in the [C]feeling with [G]you
 [F]Lost in the [C]feeling with [G]you
 {end_of_verse}
+
+
+

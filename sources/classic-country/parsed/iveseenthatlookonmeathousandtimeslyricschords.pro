@@ -1,6 +1,9 @@
 {meta: title I've Seen That Look On Me A Thousand Times}
 {meta: artist George Strait}
 {meta: composer Harlan Howard and Shirl Milete}
+{meta: x_source classic-country}
+{meta: x_source_file iveseenthatlookonmeathousandtimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's four a.m. and [E7]you're just getting [F]in
@@ -33,3 +36,7 @@ I've [Dm]seen that look on [G7]me a thousand [C]times
 {start_of_verse: Verse 4}
 I've [Dm]seen that look on [G7]me a thousand [C]times
 {end_of_verse}
+
+
+
+

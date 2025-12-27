@@ -1,6 +1,9 @@
 {meta: title Aloha Oe}
 {meta: artist Elvis Presley}
 {meta: composer Queen Liliuokalani and Ian T. Whitcomb}
+{meta: x_source classic-country}
+{meta: x_source_file alohaoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C][G]A-loha-oe [G]aloha-oe

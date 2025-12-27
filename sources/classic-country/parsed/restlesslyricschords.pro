@@ -1,6 +1,9 @@
 {meta: title Restless}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson and Skeeter Davis}
+{meta: x_source classic-country}
+{meta: x_source_file restlesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Restless [Am]restless)
@@ -36,3 +39,7 @@ Tonight I walk the [F]streets of Balti[C]more
 [F]Ain't no tellin' where I'll be [C]tomorrow
 My baby don't care and [F]I don't any[C]more
 {end_of_verse}
+
+
+
+

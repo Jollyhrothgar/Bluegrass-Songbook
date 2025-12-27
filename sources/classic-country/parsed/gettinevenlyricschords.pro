@@ -1,6 +1,9 @@
 {meta: title Gettin' Even}
 {meta: artist Carl Smith}
 {meta: composer Wayne P. Walker and Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file gettinevenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gettin’ even has got me [G7]nowhere but [C]lonesome
@@ -41,3 +44,8 @@ If I ever get [G7]another chance with [C]her
 If I ever get [G7]another chance with [C]her
 If I ever get [G7]another chance with [C]her
 {end_of_verse}
+
+
+
+
+

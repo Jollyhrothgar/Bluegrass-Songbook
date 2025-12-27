@@ -1,6 +1,9 @@
 {meta: title One And One Makes Two}
 {meta: artist Johnny Cash}
 {meta: composer Jerry Moss}
+{meta: x_source classic-country}
+{meta: x_source_file oneandonemakestwolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the number one is not my favorite [F]number
@@ -58,3 +61,12 @@ Now there's the best reason of all that I like to number two right here
 [G7]Oh yes it's true one and one make [C]two
 [G7]I said it's true one and one [C]make two  [G7]one and [C]one
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can Do That}
 {meta: artist Tanya Tucker}
 {meta: composer Earl Clark, Jerry Laseter, David Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file icandothatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can’t promise you a [G7]world of only blue [C]skies
@@ -34,3 +37,7 @@ Well I’ll [D7]gladly fill those shoes I can [G]do that
 If you want a [G7]heart that’s true some[C]one who won’t hurt [Am]you
 If [D7]you want someone to just love you I can [G]do that
 {end_of_verse}
+
+
+
+

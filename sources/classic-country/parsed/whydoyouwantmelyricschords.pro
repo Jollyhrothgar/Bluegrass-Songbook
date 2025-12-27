@@ -1,5 +1,8 @@
 {meta: title Why Do You Want Me}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file whydoyouwantmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why do you [F]want me to keep hanging [C]around
@@ -32,3 +35,7 @@ You want me [G7]hanging around when you really love [C]me
 {start_of_verse: Verse 4}
 You want me [G7]hanging around when you really want [C]me
 {end_of_verse}
+
+
+
+

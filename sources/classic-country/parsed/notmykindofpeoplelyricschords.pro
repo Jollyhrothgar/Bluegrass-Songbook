@@ -1,6 +1,9 @@
 {meta: title Not My Kind Of People}
 {meta: artist Stonewall Jackson}
 {meta: composer Hugh X. Lewis and Benny Joy}
+{meta: x_source classic-country}
+{meta: x_source_file notmykindofpeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I called the old crowd over as [C7]soon as you were [F]gone
@@ -24,3 +27,5 @@
 [C]They're not my kind [G7]of people but I'm so glad they [C]came
 [F]They're not my kind of [C]people but [G7]I'm so glad they [C]came
 {end_of_verse}
+
+

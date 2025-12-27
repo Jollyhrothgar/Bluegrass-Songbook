@@ -1,5 +1,8 @@
 {meta: title If I Knew}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file ifiknewlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I knew I could [C]count on you
@@ -49,3 +52,9 @@ I would [G]love you my whole [D7]life through
 There is [G]nothing that I would not [C]do
 If I [G]knew I could [D7]count on [G]you
 {end_of_verse}
+
+
+
+
+
+

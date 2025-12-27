@@ -1,6 +1,9 @@
 {meta: title Book Of Memories}
 {meta: artist George Jones}
 {meta: composer Bobby Austin}
+{meta: x_source classic-country}
+{meta: x_source_file bookofmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've stolen my [G7]world from [F]under [C]me
@@ -29,3 +32,6 @@
 [G7]I'll hide the dreams that used to [F]be
 [C]Here in [G7]my book of [C][F]memories
 {end_of_verse}
+
+
+

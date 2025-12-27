@@ -1,6 +1,9 @@
 {meta: title I Can't Seem To Say Goodbye}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file icantseemtosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gone is the sunshine we [F]knew once [C]before
@@ -22,3 +25,5 @@ Let me h-old [D7]you but try not to [G7]cry
 [C]I can say it's all right dear [F]till the day that I [C]die
 But I can't seem to [G7]say [C]goodbye
 {end_of_verse}
+
+

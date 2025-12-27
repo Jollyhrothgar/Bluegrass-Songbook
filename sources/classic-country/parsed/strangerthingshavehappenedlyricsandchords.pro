@@ -1,6 +1,9 @@
 {meta: title Stranger Things Have Happened}
 {meta: artist George Strait}
 {meta: composer David Chamberlain}
+{meta: x_source classic-country}
+{meta: x_source_file strangerthingshavehappenedlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hate to admit it but somebody else
@@ -33,3 +36,7 @@ That stranger is holding her [C]now
 {start_of_verse: Verse 5}
 [G7]That stranger is holding her [C]now
 {end_of_verse}
+
+
+
+

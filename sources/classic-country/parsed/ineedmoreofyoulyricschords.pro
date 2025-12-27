@@ -1,6 +1,9 @@
 {meta: title I Need More Of You}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file ineedmoreofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hearts burning like they were on [D7]fire 
@@ -36,3 +39,7 @@ I need [G]more of you changing my rain into [D7]sun
 I need [G]more of you darling I need more of [D]you 
 [Am]More  [D7]anything less wouldn't [G]do  
 {end_of_verse}
+
+
+
+

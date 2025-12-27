@@ -1,6 +1,9 @@
 {meta: title Jukebox Cinderella}
 {meta: artist Johnny Duncan}
 {meta: composer Jim Zerface and Bill Zerface}
+{meta: x_source classic-country}
+{meta: x_source_file jukeboxcinderellalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I met her in a ballroom in a northwest Texas town
@@ -52,3 +55,9 @@ And she calls me the prince of honky [C]tonks
 I [G7]call her my jukebox Cinderella 
 And she calls me the prince of honky [C]tonks
 {end_of_verse}
+
+
+
+
+
+

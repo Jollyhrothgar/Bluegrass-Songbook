@@ -1,6 +1,9 @@
 {meta: title You're From Texas}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file yourefromtexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pardon me stranger I hope there's no [E7]danger
@@ -26,3 +29,6 @@ Cause [D7]I'm from Texas [G]too
 {start_of_verse: Verse 4}
 Repeat
 {end_of_verse}
+
+
+

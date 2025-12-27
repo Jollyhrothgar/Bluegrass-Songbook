@@ -1,6 +1,9 @@
 {meta: title An Old Log Cabin For Sale}
 {meta: artist Porter Wagoner}
 {meta: composer J. W. Payte [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file anoldlogcabinforsalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While strolling a long [C]in the [G]country
@@ -50,3 +53,9 @@
 [C]My heart ached in pity to see [G]him
 [D7]For these were the words that it [G]bore
 {end_of_verse}
+
+
+
+
+
+

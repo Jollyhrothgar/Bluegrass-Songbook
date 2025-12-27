@@ -1,6 +1,9 @@
 {meta: title Dark And Stormy Weather}
 {meta: artist The Price Sisters}
 {meta: composer Alvin Pleasant Carter}
+{meta: x_source classic-country}
+{meta: x_source_file darkandstormyweatherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We met loved and parted
@@ -43,3 +46,8 @@ It [D7]still inclines to [G]rain
 The clouds hang [C]over [G]center
 My [D7]love’s gone away on the [G]train
 {end_of_verse}
+
+
+
+
+

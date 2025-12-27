@@ -1,6 +1,9 @@
 {meta: title In Your Loneliness}
 {meta: artist Rhonda Vincent}
 {meta: composer Harley Allen}
+{meta: x_source classic-country}
+{meta: x_source_file inyourlonelinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You try and you try but [G7]each day goes by
@@ -35,3 +38,7 @@ So I [C]live and I learn that [G7]bridges I burn
 Just [C]come back to haunt [C7]me [F]in your [G7]loneli[C]ness
 [F]In your [G7]loneli[C]ness
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Come On Over To The Country}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file comeonovertothecountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said you'd never be caught dead 
@@ -49,3 +52,9 @@ Listen to our people [F]sing
 Come on over to the [G7]country 
 You might find we're to your [C]liking  
 {end_of_verse}
+
+
+
+
+
+

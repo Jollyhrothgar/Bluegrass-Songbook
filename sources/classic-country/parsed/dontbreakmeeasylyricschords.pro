@@ -1,6 +1,9 @@
 {meta: title Don't Break Me Easy}
 {meta: artist Don Gibson}
 {meta: composer Max Worley}
+{meta: x_source classic-country}
+{meta: x_source_file dontbreakmeeasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't break me [F]easy [G7]put me down [C]hard
@@ -27,3 +30,6 @@ Don't break me [F]easy [G7]or I'll never get [C]over you
 Cause I [F]can't go on [G7]holding on to this [C]love I have for you
 Don't break me [F]easy [G7]or I'll never get [C]over you
 {end_of_verse}
+
+
+

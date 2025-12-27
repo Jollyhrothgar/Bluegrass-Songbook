@@ -1,5 +1,8 @@
 {meta: title Tattle Tale Tears}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file tattletaletearslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tattle tale tears are telling on [D7]you 
@@ -23,3 +26,5 @@ And that [F]others [G7]can find [D7]someone [G7]new
 [C]Now you're alone with no one to [D7]phone 
 [G7]And tattle tale tears are telling on [C]you
 {end_of_verse}
+
+

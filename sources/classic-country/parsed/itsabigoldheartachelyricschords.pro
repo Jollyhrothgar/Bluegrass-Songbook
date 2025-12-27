@@ -1,6 +1,9 @@
 {meta: title It's A Big Old Heartache}
 {meta: artist Wilburn Brothers}
 {meta: composer John Chenault and Bobby Overman}
+{meta: x_source classic-country}
+{meta: x_source_file itsabigoldheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -38,3 +41,8 @@ But [G7]either way go or stay I [F]know I'm gonna [C]grieve
 {start_of_verse: Verse 5}
 It's a big old [G7]heartache [F]loving [C]you
 {end_of_verse}
+
+
+
+
+

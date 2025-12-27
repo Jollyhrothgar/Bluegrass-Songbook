@@ -1,6 +1,9 @@
 {meta: title God Gave Noah the Rainbow Sign}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file Godgavenoahtherainbowsignlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a home in that [G7]rock don't you [C]see  
@@ -36,3 +39,7 @@ When this world is all on fire hide thou [G7]me
 When this [C]world's all on fire let [F]thy bosom be my [C]pillow
 Hide me O Rock of [G7]Ages cleft for [C]me
 {end_of_verse}
+
+
+
+

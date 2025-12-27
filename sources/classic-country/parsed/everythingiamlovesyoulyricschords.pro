@@ -1,6 +1,9 @@
 {meta: title Everything I Am Loves You}
 {meta: artist Wilburn Brothers}
 {meta: composer Glen Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file everythingiamlovesyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm not so tall I'm kind of [F]small 
@@ -33,3 +36,6 @@ But [Am]everything I [D7]am longs for your [G7]touch
 [C]And maybe I'm not as [G7]great as some [C]others you [F]knew
 But [C]everything I [G7]am loves [C]you 
 {end_of_verse}
+
+
+

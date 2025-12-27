@@ -1,6 +1,9 @@
 {meta: title Allegheny Moon}
 {meta: artist Anne Murray}
 {meta: composer Al Hoffman and Dick Manning}
+{meta: x_source classic-country}
+{meta: x_source_file alleghenymoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Allegheny Moon
@@ -51,3 +54,11 @@ Can make [G7]him [C]mine [E7]
 {start_of_verse: Verse 7}
 For [Am]me and for my [D7]one and only [G]love
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hobo Bill's Last Ride}
 {meta: artist Hank Snow}
 {meta: composer Waldo LaFayette O'Neal}
+{meta: x_source classic-country}
+{meta: x_source_file hobobillslastridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Riding on an eastbound freight train [C]speeding through the [G]night
@@ -29,3 +32,6 @@ The [C]smile still lingered [G]on his face but [A7]Hobo Bill was [D7]dead
 There [G]was no mother's longing to [C]soothe his weary [G]soul
 For [C]he was just a [G]railroad bum who [D7]died out in the [G]cold
 {end_of_verse}
+
+
+

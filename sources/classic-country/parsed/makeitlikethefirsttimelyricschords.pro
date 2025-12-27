@@ -1,6 +1,9 @@
 {meta: title Make It Like The First Time}
 {meta: artist Mickey Gilley}
 {meta: composer J.D. Cunningham}
+{meta: x_source classic-country}
+{meta: x_source_file makeitlikethefirsttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Play the music [G]soft turn the lights down low
@@ -48,3 +51,9 @@ And [D7]make it like the [C]first [G]time[D7]
 [G]Baby let that [Am]love light [D7]shine[Am]
 And [D7]make it like the [C]first [G]time
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Red Rocking Chair}
 {meta: artist The Country Gentlemen}
 {meta: composer William York and John Duffy}
+{meta: x_source classic-country}
+{meta: x_source_file redrockingchairlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ain't got no use for your red rocking [Em]chair
@@ -37,3 +40,8 @@ I'll [G]sing it to your [D7]momma next pay[G]day
 Ain't [G]got no honey baby [Em]now lawd lawd
 I [G]ain't got no [D7]honey baby [G]now
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Woman Always Knows}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file awomanalwaysknowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's no lipstick on his shirt when he comes [D7]home
@@ -25,3 +28,5 @@
 [G]And she'll forgive him one more [D7]time
 [C]But a [D7]woman always [B7]knows a [C]woman [D7]always [G]knows
 {end_of_verse}
+
+

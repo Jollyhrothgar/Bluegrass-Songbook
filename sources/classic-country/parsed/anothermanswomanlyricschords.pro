@@ -1,6 +1,9 @@
 {meta: title Another Man's Woman}
 {meta: artist Conway Twitty}
 {meta: composer Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file anothermanswomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've tried to be strong I've tried to leave [F]town
@@ -20,3 +23,5 @@ But another man's [C]woman [G7]was all I could [C]find
 [G7]There's so [C]many others who need love like [F]mine
 But another man's [C]woman [G7]was all I could [C]find
 {end_of_verse}
+
+

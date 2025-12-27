@@ -1,6 +1,9 @@
 {meta: title It's Still The Greatest Story Ever Told}
 {meta: artist The Gaithers}
 {meta: composer Gloria Gaither, William Gaither, Jackie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file itsstillthegreateststoryevertoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A [G]woman and an [C]angel a [G]promise [D7]and a [G]song
@@ -33,3 +36,7 @@ And it's [C]still the [G]greatest [Am]story [D7]ever [G]told[C]
 {start_of_verse: Verse 5}
 [G]And it's [C]still the [G]greatest [Am]story [D7]ever [G]told
 {end_of_verse}
+
+
+
+

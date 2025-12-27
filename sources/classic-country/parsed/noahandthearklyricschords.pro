@@ -1,6 +1,9 @@
 {meta: title Noah And The Ark}
 {meta: artist George Jones}
 {meta: composer Carmol Taylor and Jerry Strickland}
+{meta: x_source classic-country}
+{meta: x_source_file noahandthearklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well old Noah picked up a hammer 
@@ -71,3 +74,12 @@ Noah told the men he's not to [F]blame
 For forty long days and [C]nights it fell 
 And don't you know it [G7]was a mighty [C]rain
 {end_of_verse}
+
+
+
+
+
+
+
+
+

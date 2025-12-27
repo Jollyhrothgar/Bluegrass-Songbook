@@ -1,6 +1,9 @@
 {meta: title She Wakes Me Every Morning With A Kiss}
 {meta: artist Jack Greene}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file shewakesmeeverymorningwithakisslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How lucky I am to have [F]searched for and [C]found
@@ -34,3 +37,7 @@ And [C]she loves me to [G7]sleep every [C]night
 She [F]wakes me with a kiss every [C]morn-[F]ing 
 And [C]she loves me to [G7]sleep every [C]night
 {end_of_verse}
+
+
+
+

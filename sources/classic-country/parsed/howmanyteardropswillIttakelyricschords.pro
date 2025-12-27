@@ -1,6 +1,9 @@
 {meta: title How Many Teardrops Will It Take}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file howmanyteardropswillIttakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How many teardrops have fallen over you
@@ -27,3 +30,6 @@ Tell me [F]how many teardrops [G7]will it [C]take
 [F]How many teardrops [G7]will it [C]take
 [F]How many teardrops [G7]will it [C]take
 {end_of_verse}
+
+
+

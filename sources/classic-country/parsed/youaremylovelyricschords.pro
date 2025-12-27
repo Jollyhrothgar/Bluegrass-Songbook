@@ -1,6 +1,9 @@
 {meta: title You Are My Love}
 {meta: artist Jim Reeves}
 {meta: composer Cissie Cooper, Willie Cooper and Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file youaremylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You are my darling [F]there's no one but [C]you
@@ -22,3 +25,5 @@ And to [G7]you I'll be true our whole life [C]through
 Heaven is smiling [F]because you love [C]me
 It's [G7]as plain as can be you're my [C]love
 {end_of_verse}
+
+

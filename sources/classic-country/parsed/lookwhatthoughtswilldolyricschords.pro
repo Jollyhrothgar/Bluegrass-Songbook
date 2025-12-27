@@ -1,6 +1,9 @@
 {meta: title Look What Thoughts Will Do}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell, Jim Beck & Dub Dickerson}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhatthoughtswilldolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once I thought I loved just you
@@ -61,3 +64,14 @@ And I'm happy through and through
 Guess you thought that I'd [D7]be blue
 But just look what thoughts will [G]do
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

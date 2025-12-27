@@ -1,6 +1,9 @@
 {meta: title Back In The Swing Of Things}
 {meta: artist Vern Gosdin}
 {meta: composer Buddy Cannon, Dean Dillon, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file backintheswingofthingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I was feeling down I'd really been uptight
@@ -43,3 +46,8 @@ I'm [G]feeling no [Em]pain
 I'm [C]right back in the [D7]swing of [G]things
 I'm here to [E7]tell you [C]back in the [D7]swing of [G]things
 {end_of_verse}
+
+
+
+
+

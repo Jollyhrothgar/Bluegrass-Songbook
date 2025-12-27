@@ -1,6 +1,9 @@
 {meta: title Hillbilly Heart}
 {meta: artist Johnny Rodriguez}
 {meta: composer Johnny Christopher and Dan Penn}
+{meta: x_source classic-country}
+{meta: x_source_file hillbillyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's got a [F]hillbilly [C]heart
@@ -31,3 +34,6 @@
 [C]She's got a [F]hillbilly [C]heart
 [F]She's got a hillbilly [C]heart
 {end_of_verse}
+
+
+

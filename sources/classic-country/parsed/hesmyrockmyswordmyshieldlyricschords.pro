@@ -1,5 +1,8 @@
 {meta: title He's My Rock My Sword My Shield}
 {meta: artist Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file hesmyrockmyswordmyshieldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's my rock my sword my shield 
@@ -53,3 +56,10 @@ For [D7]Jesus [G7]till He [C]comes[F]  [C]
 {start_of_verse: Verse 4}
 I'm gonna [G7]wait right [A7]here for [D7]Jesus [G7]till He [C]comes
 {end_of_verse}
+
+
+
+
+
+
+

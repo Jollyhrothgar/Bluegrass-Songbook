@@ -1,6 +1,9 @@
 {meta: title Hypnotize The Moon}
 {meta: artist Clay Walker}
 {meta: composer Eric Kaz and Steve Dorff}
+{meta: x_source classic-country}
+{meta: x_source_file hypnotizethemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She knew she caught my eye and [C]that was all it took
@@ -38,3 +41,7 @@ She could [Am]charm the [Em]stars (charm the [C]stars)
 [D7]She could [Am]charm the [Em]stars (charm the [C]stars)
 Hypn[D7]otize the [G]moon
 {end_of_verse}
+
+
+
+

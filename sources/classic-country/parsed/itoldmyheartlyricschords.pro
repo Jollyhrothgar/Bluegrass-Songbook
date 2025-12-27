@@ -1,5 +1,8 @@
 {meta: title I Told My Heart}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file itoldmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I told my [D7]heart to forget [E7]her 
@@ -28,3 +31,6 @@ Too [G]late to turn back it's all [E7]over
 I got [C]lost in the rush but I've [E7]still got the crush 
 Cause my [C]heart has [D7]mind of its [G]own
 {end_of_verse}
+
+
+

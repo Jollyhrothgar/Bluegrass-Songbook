@@ -1,6 +1,9 @@
 {meta: title I Know The Lord Laid His Hand On Me}
 {meta: artist Tennessee Ernie Ford}
 {meta: composer Ernie Ford and Jack Fascinato}
+{meta: x_source classic-country}
+{meta: x_source_file iknowthelordlaidhishandonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Amazing Grace [F]how sweet the [C]sound
@@ -45,3 +48,8 @@ I know the Lord [G7]laid His Hand on [C]me)
 {start_of_verse: Verse 6}
 I know the Lord has [G7]laid His Hand on [C]me
 {end_of_verse}
+
+
+
+
+

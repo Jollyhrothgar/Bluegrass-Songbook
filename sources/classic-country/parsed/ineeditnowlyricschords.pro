@@ -1,6 +1,9 @@
 {meta: title I Need It Now}
 {meta: artist Johnny Rodriguez}
 {meta: composer Curly Putman and Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file ineeditnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh it feels so good [F]here with you
@@ -27,3 +30,6 @@ Hold me softly [F]in your arms
 Oh [C]lift me up and never let me [F]down[G7]
 [C]If I ever [F]needed lov[C]e oh [G7]love I need it [C]now
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Born in Country Music}
 {meta: artist Dick Curless}
 {meta: composer G. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file bornincountrymusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Born in Mississi[F]ppi raised in [C]New Orleans
@@ -33,3 +36,7 @@ Now I'm [C]eatin’ dirty rice and country [C7]ham
 {start_of_verse: Verse 4}
 [F]Born in country [C]music [G7]raised on Dixie[C]land
 {end_of_verse}
+
+
+
+

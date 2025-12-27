@@ -1,6 +1,9 @@
 {meta: title Misty}
 {meta: artist Ray Stevens}
 {meta: composer Johnny Burke and Erroll Garner}
+{meta: x_source classic-country}
+{meta: x_source_file mistylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Look at [C]me  I'm as [Gm]helpless as a [C]kitten up a [F]tree
@@ -43,3 +46,9 @@ I'm [D7]misty and [G7]too much in [C]love
 {start_of_verse: Verse 5}
 [A]Too much in [C]love  [A]too much in [C]love  
 {end_of_verse}
+
+
+
+
+
+

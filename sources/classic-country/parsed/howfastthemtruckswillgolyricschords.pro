@@ -1,6 +1,9 @@
 {meta: title How Fast Them Trucks Will Go}
 {meta: artist Boxcar Willie}
 {meta: composer C.J. Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file howfastthemtruckswillgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know a lot of folk stop at truck stops
@@ -59,3 +62,8 @@ When you get to thinkin' 'bout that woman you've left behind [F]
 [G7]Goodbye officer and [C]Smokey
 Just how fast will them [F]trucks go
 {end_of_verse}
+
+
+
+
+

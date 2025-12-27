@@ -1,6 +1,9 @@
 {meta: title For The Kids}
 {meta: artist Waylon Jennings}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file forthekidslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You work like a slave for the [G7]kids
@@ -42,3 +45,8 @@ But I know you don't care
 [C7]But I see you don't care the home that we [F]shared
 [G7]All our hopes and our prayers for the [C]kids
 {end_of_verse}
+
+
+
+
+

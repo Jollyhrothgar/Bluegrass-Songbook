@@ -1,6 +1,9 @@
 {meta: title I'm The One}
 {meta: artist Ricky Van Shelton}
 {meta: composer Gary Nicholson and Terry McBride}
+{meta: x_source classic-country}
+{meta: x_source_file imtheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know you're so [C]unsure of what to [G]do
@@ -43,3 +46,8 @@
 [Am]I know what you hope to find
 [C]And darling [D7]I'm the [G]one
 {end_of_verse}
+
+
+
+
+

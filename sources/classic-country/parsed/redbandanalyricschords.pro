@@ -1,5 +1,8 @@
 {meta: title Red Bandana}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file redbandanalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We left home when were barely past e[F]leven-teen 
@@ -35,3 +38,7 @@ You [G7]look like you ought to be somebody's [C]wife somewhere
 You ain't [G7]never going to be no Bobby McGee but your [D]trying to
 But [C]I can't change and [G7]live the way you [C]want me to 
 {end_of_verse}
+
+
+
+

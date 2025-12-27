@@ -1,6 +1,9 @@
 {meta: title I’ll Understand}
 {meta: artist Vern Gosdin}
 {meta: composer Dennis Knutson and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file illunderstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How can you be too blind to read between the [C]lines
@@ -43,3 +46,9 @@
 {start_of_verse: Verse 6}
 [D7]Oh I’ll [G]understand
 {end_of_verse}
+
+
+
+
+
+

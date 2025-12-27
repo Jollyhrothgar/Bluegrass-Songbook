@@ -1,5 +1,8 @@
 {meta: title Finders Are Keepers}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file findersarekeeperslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're one in a million a hundred to one shot
@@ -33,3 +36,7 @@ So baby [C]don't ever stop just [G7]keep on holding my [F]hand
 [C]Fin[A]ders are [F]Keepers
 So baby [C]keep on keeping [G7]on with your loving [F]man [C]
 {end_of_verse}
+
+
+
+

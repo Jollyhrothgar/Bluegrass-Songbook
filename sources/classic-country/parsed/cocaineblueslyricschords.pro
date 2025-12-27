@@ -1,6 +1,9 @@
 {meta: title Cocaine Blues}
 {meta: artist Johnny Cash}
 {meta: composer T.J. Arnall}
+{meta: x_source classic-country}
+{meta: x_source_file cocaineblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Early one morning while making the rounds
@@ -96,3 +99,21 @@ The judge he smiled as he picked up his pen
 [F]Come on you've gotta listen unto me
 [G7]Lay off that whiskey and let that cocaine [C]be
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

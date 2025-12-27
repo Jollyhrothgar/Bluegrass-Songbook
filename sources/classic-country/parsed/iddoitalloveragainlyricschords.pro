@@ -1,6 +1,9 @@
 {meta: title I'd Do It All Over Again}
 {meta: artist Wanda Jackson}
 {meta: composer Ron Mason}
+{meta: x_source classic-country}
+{meta: x_source_file iddoitalloveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You turned down the love that I tried to give
@@ -30,3 +33,6 @@ If I had it [C]all to do over
 If I had it all to do over 
 [G7]I'd do it all over [C]again
 {end_of_verse}
+
+
+

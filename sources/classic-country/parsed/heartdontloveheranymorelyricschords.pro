@@ -1,6 +1,9 @@
 {meta: title Heart (Don't Love Her Anymore)}
 {meta: artist Lefty Frizzel}
 {meta: composer A.C. Solberg}
+{meta: x_source classic-country}
+{meta: x_source_file heartdontloveheranymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heart [Em]please pay a[F]ttention
@@ -33,3 +36,7 @@ I'm begging [C]you not to [G7]love her any[C]more
 {start_of_verse: Verse 5}
 [F]I'm begging [C]you not to [G7]love her any[C]more
 {end_of_verse}
+
+
+
+

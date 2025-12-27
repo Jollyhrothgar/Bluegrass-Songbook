@@ -1,6 +1,9 @@
 {meta: title Back In The Country}
 {meta: artist Connie Smith}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file backinthecountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When was the last time you got [Dm]up before the sun
@@ -43,3 +46,8 @@ Back in the country now I [Dm]know you're gonna say
 Back in the country where the [D7]roses still grow wild
 [G7]Back in the country where you [F]walk those country [C]miles
 {end_of_verse}
+
+
+
+
+

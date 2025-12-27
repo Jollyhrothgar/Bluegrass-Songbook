@@ -1,6 +1,9 @@
 {meta: title Shenandoah Waltz}
 {meta: artist Hank Thompson}
 {meta: composer Chubby Wise [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file shenandoahwaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the Shenandoah Valley of [G7]Virginia 
@@ -29,3 +32,6 @@ And I [D7]know she misses me [G7]too
 In the [C]Shenandoah Valley of [G7]Virginia 
 Lives a girl and I know her love is [C]true
 {end_of_verse}
+
+
+

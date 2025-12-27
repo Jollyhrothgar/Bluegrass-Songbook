@@ -1,6 +1,9 @@
 {meta: title I’m So Glad}
 {meta: artist Doyle Lawson}
 {meta: composer Lester Williams and W.A. McKinney}
+{meta: x_source classic-country}
+{meta: x_source_file imsogladlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m so glad my Savior came 
@@ -38,3 +41,6 @@ I’m so [C]glad (yes I’m so glad)
 He reached my soul (He reached my soul) 
 Glory and honor be to [G7]Him and praises His [C]name ([F]His wonderful [C]name) 
 {end_of_verse}
+
+
+

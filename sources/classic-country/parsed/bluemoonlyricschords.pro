@@ -1,6 +1,9 @@
 {meta: title Blue Moon}
 {meta: artist Elvis Presley}
 {meta: composer Lorenz Hart and Richard Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file bluemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Blue [Dm][Am][C]moon 
@@ -22,3 +25,5 @@ Now I'm [G7]no longer [Am][C]alone
 Without [D7]a dream [Am][C]in [D7]my heart
 Without a [F]love of my [C]own
 {end_of_verse}
+
+

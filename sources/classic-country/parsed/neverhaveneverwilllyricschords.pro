@@ -1,6 +1,9 @@
 {meta: title Never Have Never Will}
 {meta: artist Ferlin Husky}
 {meta: composer Tim Johnson and Steven Jones}
+{meta: x_source classic-country}
+{meta: x_source_file neverhaveneverwilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never [G7]have and [C]never [F]will
@@ -43,3 +46,8 @@
 [F]I never have and never [C]will
 [G7]I cross my heart it's [C]true
 {end_of_verse}
+
+
+
+
+

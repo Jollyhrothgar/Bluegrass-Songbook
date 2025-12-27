@@ -1,6 +1,9 @@
 {meta: title As Long As There's A Heartbeat}
 {meta: artist Tanya Tucker}
 {meta: composer David Powelson}
+{meta: x_source classic-country}
+{meta: x_source_file aslongastheresaheartbeatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a full moon up above [C]tonight
@@ -46,3 +49,9 @@
 {start_of_verse: Verse 6}
 [C]I'll give all my [D7]love to [G]you
 {end_of_verse}
+
+
+
+
+
+

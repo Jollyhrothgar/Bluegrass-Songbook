@@ -1,6 +1,9 @@
 {meta: title Final Touches}
 {meta: artist Conway Twitty}
 {meta: composer Tony Colton and Gordon Bradberry}
+{meta: x_source classic-country}
+{meta: x_source_file finaltoucheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never felt the way I feel tonight
@@ -39,3 +42,9 @@ Warm wine chilling in the mountain stream
 {start_of_verse: Verse 7}
 [C]All that's left are the final [G][D7]touches
 {end_of_verse}
+
+
+
+
+
+

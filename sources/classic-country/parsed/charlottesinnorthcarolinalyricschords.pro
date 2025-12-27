@@ -1,6 +1,9 @@
 {meta: title Charlotte's in North Carolina}
 {meta: artist Keith Whitley Conley}
 {meta: composer Dean Dillon, Blake Mevis}
+{meta: x_source classic-country}
+{meta: x_source_file charlottesinnorthcarolinalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I watched the taxi take her [F]away
@@ -50,3 +53,9 @@ She [Dm]left me here in Saint [G7]Louis in [Am]misery
 Charlotte's in North Caro[F]lin[C]a
 She [Dm]left me here in Saint [G7]Louis in [C]misery [F]  [C]
 {end_of_verse}
+
+
+
+
+
+

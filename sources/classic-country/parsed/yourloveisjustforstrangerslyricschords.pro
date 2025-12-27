@@ -1,5 +1,8 @@
 {meta: title Your Love Is Just For Strangers}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file yourloveisjustforstrangerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seems like the [Em]good times [Am]happen too [C]early
@@ -27,3 +30,6 @@ But you'll [C]always find a place to hang your [F]clothes
 Cause your [Dm]love is just for [G7]strangers I [C]suppose[F]
 Yes your [Dm]love is just for [G7]strangers I [C]suppose
 {end_of_verse}
+
+
+

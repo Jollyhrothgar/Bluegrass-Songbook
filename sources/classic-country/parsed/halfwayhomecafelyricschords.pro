@@ -1,5 +1,8 @@
 {meta: title Halfway Home Café}
 {meta: artist Ricky Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file halfwayhomecafelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was pouring coffee for table number [G7]one
@@ -48,3 +51,9 @@ I'm amazed that they still love me
 {start_of_verse: Verse 2}
 [F]I'm goin' home my family's waiting for me at [C]home
 {end_of_verse}
+
+
+
+
+
+

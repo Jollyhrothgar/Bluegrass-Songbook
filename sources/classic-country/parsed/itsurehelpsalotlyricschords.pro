@@ -1,6 +1,9 @@
 {meta: title It Sure Helps A Lot}
 {meta: artist Ernest Tubb}
 {meta: composer Jerry D. Crutchfield and Buckley Maxwell}
+{meta: x_source classic-country}
+{meta: x_source_file itsurehelpsalotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know that sitting on this stool and [F]drinking like I do
@@ -29,3 +32,6 @@ I [F]thought I might forget you in [C]another woman's arms
 So [C]here I am at this old bar [F]drinking all they've got
 It [G7]hasn't cured my broken heart but it sure helps a [C]lot
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Just Ain't Been Able}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file ijustaintbeenablelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just ain't been [G7]able to write no [C]songs 
@@ -34,3 +37,7 @@ I [F]hate to but I got to [D]get back to getting [C]stoned
 Cause I just ain't been [G7]able to write no [C]song 
 [F]Can't write no [C]songs
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Greatest Actor}
 {meta: artist Wanda Jackson}
 {meta: composer Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatestactorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm always right at ringside    
@@ -43,3 +46,8 @@ For the [C]honor that was [D7]mine
 I [C]co-star with the [G]greatest 
 [D7]Actor of our [G]time
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bluebirds Are Singing For Me}
 {meta: artist Mac Wiseman}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file bluebirdsaresingingformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There was a girl I loved so [F]dearly
@@ -46,3 +49,8 @@ Is calling [G7]me back to my [C]home
 Oh I can hear the bluebirds [F]calling
 Is calling [G7]me back to my [C]home
 {end_of_verse}
+
+
+
+
+

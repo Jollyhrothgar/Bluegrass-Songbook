@@ -1,5 +1,8 @@
 {meta: title Devil Woman}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file devilwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told Mary about us I told her about our great [G7]sin
@@ -47,3 +50,10 @@ repeat chorus
 [G7]Oh devil woman  devil woman don't follow [C]me
 [G7]Devil woman let me be and leave me alone I'm going back [C]home
 {end_of_verse}
+
+
+
+
+
+
+

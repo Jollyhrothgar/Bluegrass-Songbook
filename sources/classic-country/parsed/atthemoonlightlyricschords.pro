@@ -1,6 +1,9 @@
 {meta: title At The Moonlight}
 {meta: artist Brenda Lee}
 {meta: composer Don Cook and Rafe VanHoy}
+{meta: x_source classic-country}
+{meta: x_source_file atthemoonlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ah backseat back road drive-in movie shows
@@ -41,3 +44,6 @@ I [C]proceeded to say anyway
 The [Dm]actions in the backseat [G7]out of sight
 Have you [C]ever kissed your baby in the [F]moon[C]light
 {end_of_verse}
+
+
+

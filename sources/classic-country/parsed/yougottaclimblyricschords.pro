@@ -1,5 +1,8 @@
 {meta: title You Gotta Climb}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file yougottaclimblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You gotta climb to scale the mountain
@@ -35,3 +38,7 @@ You gotta climb to reach the [D7]top
 You gotta [G]climb to see the [C]splendor
 You gotta [G]climb climb [D7]climb don't you [G]stop
 {end_of_verse}
+
+
+
+

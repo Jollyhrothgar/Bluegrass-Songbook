@@ -1,6 +1,9 @@
 {meta: title The Only Way Out (Is To Walk Over Me)}
 {meta: artist Dolly Parton}
 {meta: composer Neal Merritt}
+{meta: x_source classic-country}
+{meta: x_source_file theonlywayoutistowalkovermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The only way [C]out is to [F]walk [G7]over [C]me
@@ -37,3 +40,8 @@ Cause the [F]only way [C]out is to [F]walk [G7]over [C]me
 {start_of_verse: Verse 5}
 Yes the [F]only way [C]out is to [F]walk [G7]over [C]me
 {end_of_verse}
+
+
+
+
+

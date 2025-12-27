@@ -1,5 +1,8 @@
 {meta: title We Had A Good Time Trying}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file wehadagoodtimetryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What a funny way you [F]chose to turn me [C]off
@@ -22,3 +25,5 @@ Somehow I knew [F]I couldn't keep on [C]lying
 [F]No we didn't [C]make it but we [G7]had a good time [C]trying
 [F]No we didn't [C]make it but we [G7]had a good time [C]trying
 {end_of_verse}
+
+

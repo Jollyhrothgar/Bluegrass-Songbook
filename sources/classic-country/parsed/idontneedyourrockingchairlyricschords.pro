@@ -1,6 +1,9 @@
 {meta: title I Don't Need Your Rocking Chair}
 {meta: artist George Jones}
 {meta: composer Frank Dycus, Billy Yates, Kerry Kurt Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file idontneedyourrockingchairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't need your rocking [C]chair
@@ -49,3 +52,9 @@ Tag:
 My body's old but it ain't [D7]impaired
 I don't need your rocking [G]chair
 {end_of_verse}
+
+
+
+
+
+

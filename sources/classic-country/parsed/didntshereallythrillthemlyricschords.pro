@@ -1,6 +1,9 @@
 {meta: title Didn't She Really Thrill Them}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Allan Chapman}
+{meta: x_source classic-country}
+{meta: x_source_file didntshereallythrillthemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She sits there on her front porch every day at four [Em]o'clock
@@ -50,3 +53,9 @@ Young [G7]men fell in love with her when [C]she came through the door
 [F]Every dance has [G7]taken still they'd [C]ask for [G7]just one [Am]more
 [F]Oh she stole their [G7]hearts away in 192[C]4
 {end_of_verse}
+
+
+
+
+
+

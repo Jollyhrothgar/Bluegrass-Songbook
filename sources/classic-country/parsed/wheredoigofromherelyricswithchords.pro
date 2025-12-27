@@ -1,6 +1,9 @@
 {meta: title Where Do I Go From Here}
 {meta: artist Elvis Presley}
 {meta: composer Paul Williams}
+{meta: x_source classic-country}
+{meta: x_source_file wheredoigofromherelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I knew the way I'd go back [Am]home
@@ -37,3 +40,6 @@ When he [G]knows there's something [C]missing
 Tell me [D7]where where will I go from [G]here 
 [C]Where will I go from [G]here
 {end_of_verse}
+
+
+

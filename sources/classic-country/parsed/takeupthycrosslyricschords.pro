@@ -1,6 +1,9 @@
 {meta: title Take Up Thy Cross}
 {meta: artist The Traditional Grass}
 {meta: composer Alfred Ackley}
+{meta: x_source classic-country}
+{meta: x_source_file takeupthycrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walked one day along a country [D7]road 
@@ -43,3 +46,8 @@ I heard the blessed Savior [D7]call
 How [G]can I make a lesser [C]sacrifice 
 When [G]Jesus [D7]paid it [G]all
 {end_of_verse}
+
+
+
+
+

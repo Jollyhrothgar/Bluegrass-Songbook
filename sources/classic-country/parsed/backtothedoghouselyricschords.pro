@@ -1,6 +1,9 @@
 {meta: title Back To The Doghouse}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Hawkshaw Hawkins, Lois Mann, Henry Bernard}
+{meta: x_source classic-country}
+{meta: x_source_file backtothedoghouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd rather wear a muzzle a chain around my neck
@@ -22,3 +25,5 @@ That little home is heaven right in my back yard
 I'm gonna [C]stay in that doghouse on my [G]knees
 [D7]Here in this old doghouse I'll do as I doggone [G]please
 {end_of_verse}
+
+

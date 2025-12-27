@@ -1,6 +1,9 @@
 {meta: title Cowboys And Angels}
 {meta: artist Garth Brooks}
 {meta: composer Kent Blazy, Kim Williams, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysandangelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]On the [C]eighth day God [G7]noticed a [C]problem 
@@ -40,3 +43,8 @@ It's a [C]long way to heaven and [G7]one hell of a [C]ride
 {start_of_verse: Verse 5}
 It's a [F]long way to heaven and [G7]one hell of a [C]ride
 {end_of_verse}
+
+
+
+
+

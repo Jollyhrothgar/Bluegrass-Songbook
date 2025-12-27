@@ -1,5 +1,8 @@
 {meta: title One Empty Cot In The Bunkhouse}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file oneemptycotinthebunkhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's one empty cot in the bunkhouse
@@ -70,3 +73,12 @@ There's a [C7]saddle that nobody [F]rides
 One empty place at the [C]table
 The [G7]remuda is five horses [C]shy
 {end_of_verse}
+
+
+
+
+
+
+
+
+

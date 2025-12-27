@@ -1,5 +1,8 @@
 {meta: title A Bridge That Just Won't Burn}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file abridgethatjustwontburnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I threw away the [C7]pictures of [F]those better days in [C]Dallas
@@ -25,3 +28,6 @@ She's [F]standing on a [C]bridge [G7]that just won't [Am]burn [F]
 {start_of_verse: Verse 4}
 Oh she's [C]standing on a [F]bridge that [G7]just won't [F]bur[C]n
 {end_of_verse}
+
+
+

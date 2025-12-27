@@ -1,6 +1,9 @@
 {meta: title I Feel Like Traveling On}
 {meta: artist Loretta Lynn}
 {meta: composer James D. Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file ifeelliketravelingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My heavenly home is bright and fair
@@ -43,3 +46,8 @@ Yes I feel like traveling on
 [G]My heavenly home is bright and fair
 [D7]I feel like traveling [G]on
 {end_of_verse}
+
+
+
+
+

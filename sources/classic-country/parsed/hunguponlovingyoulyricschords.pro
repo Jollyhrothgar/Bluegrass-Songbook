@@ -1,6 +1,9 @@
 {meta: title Hung Up On Loving You}
 {meta: artist Carl Belew}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file hunguponlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm restless when I'm not with you
@@ -36,3 +39,7 @@ My songs just seem to lose their trill
 [C]We're not ashamed of what we [G]do
 [D7]I'm so hung up on lovin' [G]you
 {end_of_verse}
+
+
+
+

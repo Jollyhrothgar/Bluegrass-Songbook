@@ -1,5 +1,8 @@
 {meta: title Look A Here}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file lookaherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look a here just look a here  [F]what I'm holding in my [C]arms
@@ -19,3 +22,5 @@
 [C]Look a here just look a here  [F]it's just too good to be [C]true
 [F]Miracles happen yes they [C]do  [G7]look a here just look a [C]here
 {end_of_verse}
+
+

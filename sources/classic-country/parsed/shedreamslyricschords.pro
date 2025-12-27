@@ -1,6 +1,9 @@
 {meta: title She Dreams}
 {meta: artist Mark Chesnutt}
 {meta: composer Gary Harrison and Tim Mensy}
+{meta: x_source classic-country}
+{meta: x_source_file shedreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Thirty years [D7]today she's [G]been upon this [D7]earth
@@ -33,3 +36,6 @@
 [C]And he'll see  she [G]needs
 [D7]The man she's still in love with when she [G]dreams
 {end_of_verse}
+
+
+

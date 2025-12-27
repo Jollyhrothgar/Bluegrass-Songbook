@@ -1,6 +1,9 @@
 {meta: title My Tears Are Overdue}
 {meta: artist George Jones}
 {meta: composer Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file mytearsareoverduelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Just hang around my [F]tears are [C]overdue)
@@ -32,3 +35,7 @@ If you're [F]not afraid my [G7]misery [F]might rub off [C]on you
 Just hang around my [F]tears are [C]overdue
 Just hang around my [F]tears are [C]overdue
 {end_of_verse}
+
+
+
+

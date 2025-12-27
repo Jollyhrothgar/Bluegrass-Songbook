@@ -1,6 +1,9 @@
 {meta: title Iron Curtain}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file ironcurtainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's an iron curtain darling that's [C]between your heart and mine
@@ -29,3 +32,6 @@ Darling [A7]is it fair to judge me by [D7]someone in your past
 You don't [G]want me you don't need me but I'll [C]keep on hangin' 'round
 For I [D7]know someday my love will tear that iron curtain [G]down
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If It Ain't On The Menu}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Eddie Noack}
+{meta: x_source classic-country}
+{meta: x_source_file ifitaintonthemenulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When a dog gets hungry he needs a bone
@@ -36,3 +39,7 @@ I know all the tricks underneath the moon
 [C]If you ain't got what I want then another gal [G]may
 [D7]If ain't on the menu there's another [G]cafe
 {end_of_verse}
+
+
+
+

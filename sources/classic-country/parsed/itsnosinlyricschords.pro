@@ -1,6 +1,9 @@
 {meta: title It’s No Sin}
 {meta: artist Jim Reeves}
 {meta: composer Chester R. Schull and George Hoven}
+{meta: x_source classic-country}
+{meta: x_source_file itsnosinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take away the breath of [D7]flowers 
@@ -31,3 +34,6 @@ Still the beating there [G]within
 I'll keep loving you [C]forever 
 [D7]For it's no [G]sin
 {end_of_verse}
+
+
+

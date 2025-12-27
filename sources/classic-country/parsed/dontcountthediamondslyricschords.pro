@@ -1,6 +1,9 @@
 {meta: title Don't Count The Diamonds}
 {meta: artist Ferlin Husky}
 {meta: composer Ferlin Husky and Dalton Timbur}
+{meta: x_source classic-country}
+{meta: x_source_file dontcountthediamondslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Don't count the [G7]diamonds in her [C]wedding band
@@ -32,3 +35,7 @@ You can't [G7]believe on someone's [F]pro[C]mise
 Oh [F]don't count the [G7]diamonds in her [C]wedding band
 [F]Until she [G7]wears it on her [C]hand
 {end_of_verse}
+
+
+
+

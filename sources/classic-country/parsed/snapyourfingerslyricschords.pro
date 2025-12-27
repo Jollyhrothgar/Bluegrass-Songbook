@@ -1,6 +1,9 @@
 {meta: title Snap Your Fingers}
 {meta: artist Ronnie Milsap}
 {meta: composer Grady Martin and Alex Zinetis}
+{meta: x_source classic-country}
+{meta: x_source_file snapyourfingerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Snap your fingers I'll come [C]running
@@ -35,3 +38,6 @@ So you just snap your [G]fingers
 Baby I'll come [C]running
 I'll do [G]anything  [D7]to get back [G]again
 {end_of_verse}
+
+
+

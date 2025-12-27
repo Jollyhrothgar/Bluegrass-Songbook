@@ -1,6 +1,9 @@
 {meta: title I’m A Fool}
 {meta: artist Slim Whitman}
 {meta: composer Tommy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file imafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I spend many sleepless nights
@@ -31,3 +34,6 @@ F--ool  I’m a [F]f—ool
 F--ool  I’m a [F]f—ool 
 [G7]They say there’s one born [C]everyday 
 {end_of_verse}
+
+
+

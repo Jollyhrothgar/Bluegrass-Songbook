@@ -1,6 +1,9 @@
 {meta: title You Haven't Left Me Yet}
 {meta: artist George Strait}
 {meta: composer Kent M. Robbins and Dana Hunt}
+{meta: x_source classic-country}
+{meta: x_source_file youhaventleftmeyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The laughter is gone the crying is over
@@ -60,3 +63,10 @@ And I don't believe in ghosts
 [C]Though you haven't [G7]left me [F]yet
 [Dm]Every thing's gone but [G7]you haven't left me [C]yet
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Back To The Barrooms Again}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file backtothebarroomsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now it's back to the [C]barrooms  [G]right back to drinking [D7]again
@@ -36,3 +39,7 @@
 {start_of_verse: Verse 4}
 [D7]Oh yes it's back to the barrooms [G]again
 {end_of_verse}
+
+
+
+

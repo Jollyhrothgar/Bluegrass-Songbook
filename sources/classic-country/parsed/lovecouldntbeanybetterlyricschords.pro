@@ -1,5 +1,8 @@
 {meta: title Love Couldn't Be Any Better}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file lovecouldntbeanybetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Love just couldn't be any better
@@ -40,3 +43,7 @@ And [G7]love couldn't be any [C]better
 [G7]Love couldn't be any [C]better
 [G7]Love couldn't be any [C]better
 {end_of_verse}
+
+
+
+

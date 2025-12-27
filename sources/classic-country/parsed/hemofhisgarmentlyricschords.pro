@@ -1,6 +1,9 @@
 {meta: title Hem Of His Garment}
 {meta: artist Cowboy Copas}
 {meta: composer Bill Starling}
+{meta: x_source classic-country}
+{meta: x_source_file hemofhisgarmentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I was sinking so [F]low in sins [C]place
@@ -43,3 +46,8 @@ And [G7]joy it brought to my [C]soul
 I [F]touched the hem of His [C]garment
 And [G7]I was made happy and [C]whole
 {end_of_verse}
+
+
+
+
+

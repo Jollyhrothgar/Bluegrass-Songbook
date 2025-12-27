@@ -1,6 +1,9 @@
 {meta: title Other Side Of Lonely Lyrics Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Cindy Walker and Lee Fykes}
+{meta: x_source classic-country}
+{meta: x_source_file othersideoflonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the other side of [F]lone-ly [G7]is where I wanna [C]be
@@ -20,3 +23,5 @@
 [C7]I'll hold on [F]to memories that won't set me [C]free
 [F]On the other [G7]side of lone-ly is where I wanna [C]be
 {end_of_verse}
+
+

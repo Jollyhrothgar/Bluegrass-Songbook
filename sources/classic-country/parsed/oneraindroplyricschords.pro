@@ -1,5 +1,8 @@
 {meta: title One Raindrop}
 {meta: artist The Gibson Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file oneraindroplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One raindrop fell into the [G7]river
@@ -39,3 +42,8 @@ It's a different river [C]now
 {start_of_verse: Verse 4}
 [G7]It's a different river [C]now
 {end_of_verse}
+
+
+
+
+

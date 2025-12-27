@@ -1,6 +1,9 @@
 {meta: title Silent Partner}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file silentpartnerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was my silent partner I miss my silent partner
@@ -26,3 +29,5 @@ Yes I [G7]need my silent partner after [C]all
 She was my silent partner I miss my silent partner
 And I [G7]hope my silent partner's missing [C]me
 {end_of_verse}
+
+

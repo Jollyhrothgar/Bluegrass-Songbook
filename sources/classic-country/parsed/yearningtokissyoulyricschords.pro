@@ -1,6 +1,9 @@
 {meta: title Yearning To Kiss You}
 {meta: artist Tammy Wynette}
 {meta: composer George Jones and Eddie Eddings}
+{meta: x_source classic-country}
+{meta: x_source_file yearningtokissyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yearning to be with the [C]one I can't [G]agree with
@@ -26,3 +29,6 @@ Yearning to hold you and [C]let my arms e[G]nfold you
 {start_of_verse: Verse 4}
 [C]Oh how I [D7]wish you felt the [G]same
 {end_of_verse}
+
+
+

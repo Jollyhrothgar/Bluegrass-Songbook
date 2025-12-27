@@ -1,6 +1,9 @@
 {meta: title You Ought To Try It Sometime}
 {meta: artist Conway Twitty}
 {meta: composer Troy Seals, Eddie Setser, Billy Spencer}
+{meta: x_source classic-country}
+{meta: x_source_file yououghttotryitsometimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I want a honky tonk [G]girl I want a honky tonk [D7]song
@@ -66,3 +69,15 @@ With a honky tonk girl and a honky tonk song
 [D7]I get a honky tonk girl and a honky tonk song
 [G]Then I pull my saddle off and send my pony home
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

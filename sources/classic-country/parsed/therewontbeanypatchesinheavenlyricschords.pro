@@ -1,6 +1,9 @@
 {meta: title There Won't Be Any Patches In Heaven}
 {meta: artist Norma Jean}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file therewontbeanypatchesinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A memory often [G7]comes to [C]visit 
@@ -43,3 +46,8 @@ Till she [C7]couldn't keep sleep from her [F]eyes
 Then daddy would go in to [C]wake her 
 He'd kiss her and [G7]I'd hear him [C]sigh
 {end_of_verse}
+
+
+
+
+

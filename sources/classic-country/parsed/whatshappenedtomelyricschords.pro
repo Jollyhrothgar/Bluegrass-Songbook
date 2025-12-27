@@ -1,5 +1,8 @@
 {meta: title What's Happened To Me}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file whatshappenedtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why can't you look and see
@@ -42,3 +45,8 @@ Why can't you look at me
 [Dm]After what we used [G7]to be
 [C]What's [F]happened [C]to me
 {end_of_verse}
+
+
+
+
+

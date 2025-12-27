@@ -1,6 +1,9 @@
 {meta: title Mary's Christmas}
 {meta: artist Doyle Lawson}
 {meta: composer Randall Hylton and Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file marysChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mary's Christmas the first Christmas [G7]morn
@@ -44,3 +47,8 @@ Mary's [C]Christmas the [G7]greatest one of [C]all
 {start_of_verse: Verse 4}
 [F]Mary's [C]Christmas the [G7]greatest one of [C]all
 {end_of_verse}
+
+
+
+
+

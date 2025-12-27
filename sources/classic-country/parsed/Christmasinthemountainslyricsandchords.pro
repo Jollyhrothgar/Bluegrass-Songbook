@@ -1,6 +1,9 @@
 {meta: title Christmas In The Mountains}
 {meta: artist Larry Sparks}
 {meta: composer Bill Castle}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasinthemountainslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The mountains and the meadows
@@ -57,3 +60,10 @@ The [G]family is all together
 It's [D7]Christmas in the mountains
 This is the place to [G]be
 {end_of_verse}
+
+
+
+
+
+
+

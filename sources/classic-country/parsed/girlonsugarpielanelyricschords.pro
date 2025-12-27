@@ -1,6 +1,9 @@
 {meta: title Girl On Sugar Pie Lane}
 {meta: artist Buck Owens}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file girlonsugarpielanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a girl in the house on the street called Sugar Pie [D7]Lane
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]Yeah I'm crazy bout the girl in the house on the Sugar Pie [G]Lane
 {end_of_verse}
+
+
+
+

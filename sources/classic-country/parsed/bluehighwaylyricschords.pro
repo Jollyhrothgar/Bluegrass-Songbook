@@ -1,6 +1,9 @@
 {meta: title Blue Highway}
 {meta: artist John Conlee}
 {meta: composer Don Henry and Bob Simon}
+{meta: x_source classic-country}
+{meta: x_source_file bluehighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another highway another [G7][Dm]heartache
@@ -59,3 +62,10 @@
 [Am]Nothin' but a blue [F]highway
 [Dm]As far as my [G7]heart can [C]see
 {end_of_verse}
+
+
+
+
+
+
+

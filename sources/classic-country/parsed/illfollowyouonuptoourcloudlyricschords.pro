@@ -1,6 +1,9 @@
 {meta: title I'll Follow You On Up To Our Cloud}
 {meta: artist Johnny Paycheck}
 {meta: composer David Turner}
+{meta: x_source classic-country}
+{meta: x_source_file illfollowyouonuptoourcloudlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been t-o-ld  [D7][Am]my days are [G]numbered
@@ -29,3 +32,6 @@ My heart can stop it's beating and rest [D7]now
 [G]And I'll let [Am]g---o  [D7]cause you'll be with [G]me
 And I'll follow you on up  [C]to [D7]our [G]cloud
 {end_of_verse}
+
+
+

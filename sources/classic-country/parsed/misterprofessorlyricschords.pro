@@ -1,6 +1,9 @@
 {meta: title Mister Professor}
 {meta: artist Leroy Van Dyke}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file misterprofessorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mister professor you're well educated I [Am]know
@@ -57,3 +60,9 @@ Not cowards that [G]run and hide
 Be[D7]ware of the danger
 Don't send us a stranger back [G]home
 {end_of_verse}
+
+
+
+
+
+

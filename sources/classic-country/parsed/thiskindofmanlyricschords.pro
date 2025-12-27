@@ -1,5 +1,8 @@
 {meta: title This Kind of Man}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file thiskindofmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From the day he was born to a [C]dark lonely [G]dream
@@ -28,3 +31,6 @@ When he would be called from this [D7]land
 I [C]can't help but wonder [G]did he ever think
 What happens [D7]to this kind of [G]man
 {end_of_verse}
+
+
+

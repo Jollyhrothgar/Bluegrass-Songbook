@@ -1,6 +1,9 @@
 {meta: title On The Sea Of Galilee}
 {meta: artist Emmylou Harris}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file ontheseaofgalileelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Am I a soldier of the [F]cross
@@ -43,3 +46,8 @@
 [F]On the sea (the sea the sea) of Galilee (of [C]Galilee)
 [G7]My Jesus is walking on the [C]sea
 {end_of_verse}
+
+
+
+
+

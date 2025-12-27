@@ -1,6 +1,9 @@
 {meta: title If I Didn't Care}
 {meta: artist Brenda Lee}
 {meta: composer Jack Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file ifididntcarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If [Em]I didn't [Am]care[B7]   [C]more than words can [Am]say [B7]
@@ -22,3 +25,5 @@ And would I be [G7]sure that [Em]this is [G7]love be[Em]yond compare[Am]
 [B7]Would all this be [D7]true if I didn't [G7]care for [C]you
 [B7](If I didn't [Am]care)
 {end_of_verse}
+
+

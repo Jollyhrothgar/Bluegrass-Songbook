@@ -1,6 +1,9 @@
 {meta: title All Alone In Austin}
 {meta: artist Jean Shepard}
 {meta: composer Linda Hargrove}
+{meta: x_source classic-country}
+{meta: x_source_file allaloneinaustinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here comes another mornin' sun
@@ -29,3 +32,6 @@ I've got the will but there's no way
 I [C]blindly let love [D7]lead me lead me [Em]here to see the [C]end with me [G]alone
 [D7]All alone in [C]Austin [G]  so [D7]alone  all alone in [C]Austin[G]
 {end_of_verse}
+
+
+

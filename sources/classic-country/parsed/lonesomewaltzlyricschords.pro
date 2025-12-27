@@ -1,5 +1,8 @@
 {meta: title Lonesome Waltz}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomewaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When a record starts to spinning and love words make a [D7]song
@@ -21,3 +24,5 @@
 [G7]A waltz's so soft and touching a love's so cold and [C]lost
 [G]Darling please for old time sake [D7]let's dance the lonesome [G]waltz
 {end_of_verse}
+
+

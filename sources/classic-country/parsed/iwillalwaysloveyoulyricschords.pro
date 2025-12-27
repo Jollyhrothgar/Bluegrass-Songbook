@@ -1,5 +1,8 @@
 {meta: title I Will Always Love You}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file iwillalwaysloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I [G7]should [C]stay  
@@ -31,3 +34,6 @@ I [Am]will [G7][F]al-ways [C]love
 {start_of_verse: Verse 4}
 I [Am]will [F]al-ways [G7]love [C]you 
 {end_of_verse}
+
+
+

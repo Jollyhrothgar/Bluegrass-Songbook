@@ -1,6 +1,9 @@
 {meta: title Viva Las Vegas}
 {meta: artist Elvis Presley}
 {meta: composer Doc Pomus and Mort Shuman}
+{meta: x_source classic-country}
+{meta: x_source_file vivalasvegaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bright light city gonna set my soul
@@ -96,3 +99,24 @@ Let me shoot a seven with every shot
 [C]Viva Las [G]Vegas [C]Viva Las [G]Vegas
 [C]Viva Las [G]Vegas [C]Viva Viva [D7]Las [G]Vegas
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

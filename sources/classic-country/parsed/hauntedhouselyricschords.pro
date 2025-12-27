@@ -1,6 +1,9 @@
 {meta: title Haunted House}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Robert L. Geddins}
+{meta: x_source classic-country}
+{meta: x_source_file hauntedhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just moved in my new house today
@@ -50,3 +53,9 @@ I'll be right here I ain't gonna [C]run
 I bought this old house and now I'm [D7]boss
 Ain't no haint gonna run me [G]off     
 {end_of_verse}
+
+
+
+
+
+

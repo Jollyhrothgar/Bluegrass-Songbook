@@ -1,6 +1,9 @@
 {meta: title Frisco Line}
 {meta: artist George Morgan}
 {meta: composer Dexter Shaffer and Robert Davis}
+{meta: x_source classic-country}
+{meta: x_source_file friscolinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I boarded that [F]big dog out in [C]Dallas
@@ -29,3 +32,6 @@ And I must have got off way before my [G7]turn
 And [F]it's to end in old [C]Albuquerqu[Am]e
 An [Dm]empty bottle and the [F]end of the Frisco [C]Line
 {end_of_verse}
+
+
+

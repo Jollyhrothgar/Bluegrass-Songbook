@@ -1,6 +1,9 @@
 {meta: title Forty Miles From Popular Bluff}
 {meta: artist Porter Wagoner}
 {meta: composer Frank Dycus and Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file fortymilesfrompopularblufflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never had a pair of shoes that weren't old hand me [C]downs
@@ -56,3 +59,9 @@ Forty [D7]miles from poplar [G]bluff
 {start_of_verse: Verse 5}
 Forty [D7]miles from poplar [G]bluff
 {end_of_verse}
+
+
+
+
+
+

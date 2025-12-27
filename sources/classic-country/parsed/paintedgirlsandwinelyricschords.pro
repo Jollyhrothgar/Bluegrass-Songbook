@@ -1,6 +1,9 @@
 {meta: title Painted Girls And Wine}
 {meta: artist Faron Young}
 {meta: composer Jack Ripley}
+{meta: x_source classic-country}
+{meta: x_source_file paintedgirlsandwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Oh it's [C]funny how wine makes fools out of men around [G7]women
@@ -41,3 +44,8 @@ And it's funny how women love men while the wine flows [C]on
 Yes it's funny how wine makes fools out of men around [G7]women
 And it's funny how women love men till their money is [C]gone
 {end_of_verse}
+
+
+
+
+

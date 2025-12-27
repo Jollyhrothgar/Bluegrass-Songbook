@@ -1,6 +1,9 @@
 {meta: title Be All Right In Arkansas}
 {meta: artist Connie Smith}
 {meta: composer Gery House and Billy Burns}
+{meta: x_source classic-country}
+{meta: x_source_file beallrightinarkansaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Born in Arkansas Mississippi [F]river at my [C]backdoor
@@ -46,3 +49,8 @@
 [F]Be all right in [C]Arkansas
 [G7]Everything's gonna be all right in [C]Arkansas
 {end_of_verse}
+
+
+
+
+

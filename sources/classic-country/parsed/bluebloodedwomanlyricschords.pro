@@ -1,6 +1,9 @@
 {meta: title Blue Blooded Woman}
 {meta: artist Alan Jackson}
 {meta: composer Roger Murrah, Keith Stegall, Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file bluebloodedwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]She loves the violin [C]I love the fiddle
@@ -47,3 +50,9 @@ A [C]blue blooded woman and a [G7]red neck [C]man
 {start_of_verse: Verse 4}
 She's a blue blooded woman I'm a [G7]red neck [C]man
 {end_of_verse}
+
+
+
+
+
+

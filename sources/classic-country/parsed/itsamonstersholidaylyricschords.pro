@@ -1,5 +1,8 @@
 {meta: title It's A Monster's Holiday with chords}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file itsamonstersholidaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Frankenstein was the first in line and the [C]Wolfman came up [G]next
@@ -45,3 +48,8 @@ Dracula was a-doin’ his stuff a-[A7]breathin’ down my [D7]neck
 {start_of_verse: Verse 4}
 [C]Fee fee fi fi [G]fo fo [E7]fum it was a [A7]monster’s [D7]holi[G]day
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When You Loved Me}
 {meta: artist Brenda Lee}
 {meta: composer Bob Tubert and Joe Byers}
+{meta: x_source classic-country}
+{meta: x_source_file whenyoulovedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]When you [Am]loved me 
@@ -30,3 +33,6 @@ You made the [Em]world turn just for [Fm]me
 When [Dm]you [G7]loved [C]me
 When [F]you [G7]loved [C]me
 {end_of_verse}
+
+
+

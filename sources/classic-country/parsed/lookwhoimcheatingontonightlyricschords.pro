@@ -1,6 +1,9 @@
 {meta: title Look Who I'm Cheating On Tonight}
 {meta: artist Bobby Bare}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhoimcheatingontonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the shadows of our bedroom 
@@ -73,3 +76,16 @@ And [C]look who I'm [D7]cheating on [G]tonight
 Lord knows I've done some cheating
 But [C]look who I'm [D7]cheating on [G]tonight
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

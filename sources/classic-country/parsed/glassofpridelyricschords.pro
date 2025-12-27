@@ -1,6 +1,9 @@
 {meta: title Glass Of Pride}
 {meta: artist Cal Smith}
 {meta: composer Joe Poovey}
+{meta: x_source classic-country}
+{meta: x_source_file glassofpridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sit drinkin' in this [G7]tavern tryin' to [F]wash away the [C]pain
@@ -22,3 +25,5 @@
 [F]On bended knees help me right each wrong and un-tell each lie I've lied
 [G7]Take this bottle from the table and drink this [F]lonely glass of [C]pride
 {end_of_verse}
+
+

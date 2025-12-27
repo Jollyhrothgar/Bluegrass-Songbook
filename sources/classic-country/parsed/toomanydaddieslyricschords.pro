@@ -1,6 +1,9 @@
 {meta: title Too Many Daddies}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill, Glenn Sutton, Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file toomanydaddieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This morning my little girl came up to my bed
@@ -29,3 +32,6 @@ But with all of my daddies none have the [G7]time
 [F]To stay with me and play with me like all daddies [C]do
 I've got [F]too many [C]daddies and they [G7]all just love [F]you[C]
 {end_of_verse}
+
+
+

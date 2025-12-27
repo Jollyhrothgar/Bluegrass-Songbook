@@ -1,6 +1,9 @@
 {meta: title I Waited Too Long}
 {meta: artist Sonny James}
 {meta: composer Howard Greenfield and Neil Sedaka}
+{meta: x_source classic-country}
+{meta: x_source_file iwaitedtoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I waited too long and now we're [C]apart
@@ -29,3 +32,6 @@
 [G7]I was a fool for waiting too [C]long
 [F]Too [C]long
 {end_of_verse}
+
+
+

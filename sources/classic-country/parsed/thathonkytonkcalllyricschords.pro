@@ -1,6 +1,9 @@
 {meta: title That Honky Tonk Call}
 {meta: artist Leroy Van Dyke}
 {meta: composer Bob House and Billy Stone}
+{meta: x_source classic-country}
+{meta: x_source_file thathonkytonkcalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love that neon flashing and [D7]Lord I love a crowd
@@ -38,3 +41,7 @@ That [D7]honky [G7]tonk [C]call
 It's [F]Friday night and I [C]can't re[Am]sist
 That [D7]honky [G7]tonk [C]call
 {end_of_verse}
+
+
+
+

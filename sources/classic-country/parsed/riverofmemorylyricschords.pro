@@ -1,5 +1,8 @@
 {meta: title River Of Memory}
 {meta: artist Ricky Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file riverofmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's an old ramshackle shack 
@@ -50,3 +53,8 @@ Where the [G]sunshine is cheery
 And [C]nothing in the world grows [G]weary
 At my [C]cabin at the [G]end of my river [D7]of memo[G]ry
 {end_of_verse}
+
+
+
+
+

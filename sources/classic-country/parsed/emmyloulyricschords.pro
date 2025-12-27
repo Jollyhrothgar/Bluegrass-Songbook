@@ -1,6 +1,9 @@
 {meta: title Emmylou}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Buzz Cason}
+{meta: x_source classic-country}
+{meta: x_source_file emmyloulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh [G7]oh [F]Emmylou [C]Emmylou what in [G7]the world can [D7]I [G7]do
@@ -41,3 +44,8 @@
 [A]Well I love Olivia's [F]eyes and Ronstadt's really [C]nice
 [G7]But heaven is a girl named [C][F]Emmylou
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Home For Sale}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file homeforsalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Home for sale [D7]that's much too [G]large 
@@ -32,3 +35,7 @@ Of all the love [D7]that used to [G]be
 {start_of_verse: Verse 5}
 Home for sale [D7]that's much too [G]large
 {end_of_verse}
+
+
+
+

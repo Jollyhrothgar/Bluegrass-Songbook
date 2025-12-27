@@ -1,6 +1,9 @@
 {meta: title I Wish You Were More Like Your Memory}
 {meta: artist Ricky Van Shelton}
 {meta: composer Joe Chambers}
+{meta: x_source classic-country}
+{meta: x_source_file iwishyouweremorelikeyourmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's here every morning she's [A]here every [F]night
@@ -35,3 +38,7 @@ Oh I wish you were more like [G7]your memo[C]ry
 As long as I'm alive she [F]never will [C]leave
 Oh I wish you were more like [G7]your memo[C]ry
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Beautiful Isle Of Somewhere}
 {meta: artist Jimmy Dean}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulisleofsomewherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere the sun is [G7]shining 
@@ -28,3 +31,6 @@ Somewhere [C]somewhere
 [C]Land of the [G7]truth where we [C7]live [F]anew 
 [C]Beautiful isle of [C][G7]some-where
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title After Calvary}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Laverne Tripp}
+{meta: x_source classic-country}
+{meta: x_source_file aftercalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take my hand lead me [G7]through  darkest [C]valleys
@@ -31,3 +34,6 @@ After [G7]Calvary where You [F]gave Your life for [C]me
 And I would be anything that You would have me [F]be
 After [C]what You did for me [G7]at [C]Calvary
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title There Ain't No Queen (In My King Size Bed)}
 {meta: artist Mickey Gilley}
 {meta: composer Bobby Borchers}
+{meta: x_source classic-country}
+{meta: x_source_file thereaintnoqueeninmykingsizebedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've had a lotta good women the [F]best one she just [C]left
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]Nevertheless [C]there ain't no queen [G7]in my king size [C]bed
 {end_of_verse}
+
+
+
+

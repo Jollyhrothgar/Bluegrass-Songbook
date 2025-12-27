@@ -1,6 +1,9 @@
 {meta: title It's My Way}
 {meta: artist Webb Pierce}
 {meta: composer Wayne Walker and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file itsmywaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I live every day [F]for you  I breath [G7]every breath for [C]you
@@ -22,3 +25,5 @@ That my love for [F]you is true  [G7]it's my way of loving [C]you
 [C]All my life [F]I've loved you so  there'll [G7]be times it may not [C]show
 That my love for [F]you is true  [G7]it's my way of loving [C]you
 {end_of_verse}
+
+

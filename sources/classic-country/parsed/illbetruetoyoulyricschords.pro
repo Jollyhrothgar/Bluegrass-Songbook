@@ -1,6 +1,9 @@
 {meta: title I'll Be True To You}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Alan Rhody}
+{meta: x_source classic-country}
+{meta: x_source_file illbetruetoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They met [G7]upon a blue [F]moon
@@ -51,3 +54,9 @@
 [C]And I'll [G7]be blue for [F]you
 [C]Though [G7]you never even asked me [F]to
 {end_of_verse}
+
+
+
+
+
+

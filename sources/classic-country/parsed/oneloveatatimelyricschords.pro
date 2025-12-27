@@ -1,6 +1,9 @@
 {meta: title One Love At A Time}
 {meta: artist Tanya Tucker}
 {meta: composer Paul Overstreet and Paul Davis}
+{meta: x_source classic-country}
+{meta: x_source_file oneloveatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It makes me weak  and in a [D7]hurry 
@@ -44,3 +47,7 @@ I just need [D7]one love at a [G]time
 Yes it can tear a girl [C]apart 
 I just need [D7]one love at a [G]time
 {end_of_verse}
+
+
+
+

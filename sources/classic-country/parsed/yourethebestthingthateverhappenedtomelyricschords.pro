@@ -1,5 +1,8 @@
 {meta: title You're The Best Thing That Ever Happened To Me chords}
 {meta: artist Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file yourethebestthingthateverhappenedtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've had my share  of life's ups and [D7]downs
@@ -30,3 +33,6 @@ You'd be [C]there between each [D7]line of pain and [G]glory
 'Cause you're the [D7]best thing that ever happened to [G]me
 You're the [D7]best thing that ever happened [G]to me
 {end_of_verse}
+
+
+

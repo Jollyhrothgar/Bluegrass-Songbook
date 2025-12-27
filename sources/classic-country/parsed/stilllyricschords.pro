@@ -1,5 +1,8 @@
 {meta: title Still}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file stilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Still though you broke my [C7]heart
@@ -54,3 +57,8 @@ For someday you just might decide to [C]come home
 [F]Still  you're still on my mind
 [C]I [G7]love you [C][F]st-ill
 {end_of_verse}
+
+
+
+
+

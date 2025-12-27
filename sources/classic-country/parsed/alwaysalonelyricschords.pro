@@ -1,6 +1,9 @@
 {meta: title Always Alone}
 {meta: artist Johnny Cash}
 {meta: composer Ted Daffan}
+{meta: x_source classic-country}
+{meta: x_source_file alwaysalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Always alone [G7]alone and [C]blue
@@ -22,3 +25,5 @@ Each night in [D7]dreams I see your smiling [G]face
 Then I awake [G7]and find you [C]gone
 I know that [D7]I must always be [G]alone
 {end_of_verse}
+
+

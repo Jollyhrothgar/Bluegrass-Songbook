@@ -1,6 +1,9 @@
 {meta: title Flower Of Love}
 {meta: artist David Houston}
 {meta: composer Margie Singleton and Leon Ashley}
+{meta: x_source classic-country}
+{meta: x_source_file floweroflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it ain't gonna be as long now as it has [C]been
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 6}
 [D7]Somewhere the flower of love is waiting to [G]bloom
 {end_of_verse}
+
+
+
+
+

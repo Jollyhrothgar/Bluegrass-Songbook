@@ -1,6 +1,9 @@
 {meta: title Me Against The Night}
 {meta: artist Crystal Gayle}
 {meta: composer Mary Ann Kennedy, Pamela Rose, Pat Bunch}
+{meta: x_source classic-country}
+{meta: x_source_file meagainstthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Moon [C]please don't shine on [G]me  [F]help me [C]hide his [G]memory
@@ -27,3 +30,6 @@ I see [G]you in every shadow of the [D7]room  you're [G]not here to hold me tigh
 I can't wait till the morning [F]ligh[C]t there's no [G]way to win 
 When it's [D7]me against the [C]night  [F]me against the [G]night
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can Hear My Heart Break}
 {meta: artist Conway Twitty}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file icanhearmyheartbreaklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm [C]surrounded by [G]silence [D7]tormented by [G]dreams
@@ -22,3 +25,5 @@
 [C]I keep listening for [G]your footsteps [D7]little sounds you used to [G]make
 [D7]And I can hear [C]I can hear my heart [G]break  [D7]my heart [G]break
 {end_of_verse}
+
+

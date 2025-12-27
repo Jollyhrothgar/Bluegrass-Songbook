@@ -1,6 +1,9 @@
 {meta: title Bluegrass Christmas}
 {meta: artist The Lewis Family}
 {meta: composer Del McCoury}
+{meta: x_source classic-country}
+{meta: x_source_file bluegrassChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The cold wind is blowing through the [Am]tall Georgia pines
@@ -68,3 +71,12 @@ I'd want a [D7]bluegrass [G7]Christmas this [C]year
 {start_of_verse: Verse 8}
 I'm dreaming of a [F]blue[G7]grass [C]Christmas
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Crazy Arms}
 {meta: artist Ray Price}
 {meta: composer Ralph Mooney and Chuck Seals}
+{meta: x_source classic-country}
+{meta: x_source_file crazyarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now blue ain't the [C7]word for the way [F]that I [C]feel
@@ -35,3 +38,8 @@ Repeat Chorus
 Tag
 [G7]And that's why I'm lonely all the [C]time
 {end_of_verse}
+
+
+
+
+

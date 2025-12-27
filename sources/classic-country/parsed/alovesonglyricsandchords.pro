@@ -1,5 +1,8 @@
 {meta: title A Love Song}
 {meta: artist Lee Greenwood}
+{meta: x_source classic-country}
+{meta: x_source_file alovesonglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Why do people cry
@@ -61,3 +64,9 @@ That [G]tells us [Bm]who we [A7]are
 What the [D7]singers all are singing
 In a [G]love song[Em]   [C]  [G]
 {end_of_verse}
+
+
+
+
+
+

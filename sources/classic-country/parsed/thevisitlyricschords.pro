@@ -1,6 +1,9 @@
 {meta: title The Visit}
 {meta: artist George Jones}
 {meta: composer Gene Ellsworth, Brad Rodgers, Charles Stefl}
+{meta: x_source classic-country}
+{meta: x_source_file thevisitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sorry I'm so late but I've been out [F]a-walking
@@ -37,3 +40,7 @@
 [C]Our story wouldn't end this [G7]way
 [C]It wouldn't end this way
 {end_of_verse}
+
+
+
+

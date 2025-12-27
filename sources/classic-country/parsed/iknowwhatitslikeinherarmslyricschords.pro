@@ -1,6 +1,9 @@
 {meta: title I Know What It's Like In Her Arms}
 {meta: artist Gene Watson}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file iknowwhatitslikeinherarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh this time I won’t listen 
@@ -68,3 +71,13 @@ I’ll be back there to do her [D7]right
 Yes [C]I know what it’s like in her [D7]arms
 I was just there last [G]night
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

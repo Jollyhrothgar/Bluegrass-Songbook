@@ -1,6 +1,9 @@
 {meta: title My Rough And Rowdy Ways}
 {meta: artist Merle Haggard}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file myroughandrowdywayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For years and years I rambled I drank [F]my wine and [C]gambled
@@ -24,3 +27,5 @@ But somehow I can't give up my good old rambling ways
 I may be tough but [F]that's just my style
 I [C]can't give up my [D7]good old rough and [G7]rowdy [C]ways
 {end_of_verse}
+
+

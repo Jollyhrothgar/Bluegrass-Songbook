@@ -1,6 +1,9 @@
 {meta: title Amanda}
 {meta: artist Waylon Jennings}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file amandalyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've held it all inward [F]Lord knows I've [C]tried
@@ -29,3 +32,6 @@ Fate should have made you a [G7]gentleman's [C]wife
 Amanda [F]light of my [C]life 
 Fate should have made you a [G7]gentleman's [C]wife
 {end_of_verse}
+
+
+

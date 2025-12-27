@@ -1,6 +1,9 @@
 {meta: title This Ain't No Way To Be}
 {meta: artist Earl Thomas Conley}
 {meta: composer Earl Thomas Conley and Randy Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file thisaintnowaytobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Maybe I was too [C]lonely back then
@@ -48,3 +51,8 @@ But [G]I've done some thinkin' since [C]you came around
 But I [G]ain't thought of nobody [C]else
 No I can't think of nobody [G]else
 {end_of_verse}
+
+
+
+
+

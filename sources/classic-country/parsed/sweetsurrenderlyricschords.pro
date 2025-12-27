@@ -1,5 +1,8 @@
 {meta: title Sweet Surrender}
 {meta: artist John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file sweetsurrenderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lost and alone on some forgotten highway
@@ -51,3 +54,12 @@ Repeat all
 Tomorrow is open and right now it seems
 To be more than enough to just be here [C]today
 {end_of_verse}
+
+
+
+
+
+
+
+
+

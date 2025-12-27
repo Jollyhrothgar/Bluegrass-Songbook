@@ -1,6 +1,9 @@
 {meta: title Peace Of Mind}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Aaron Barker}
+{meta: x_source classic-country}
+{meta: x_source_file peaceofmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I go [F]anywhere that [C]ol' wind blows [F]
@@ -47,3 +50,9 @@ So [C]why hang around [G7]when I can [C]fly
 {start_of_verse: Verse 4}
 So why hang around [G7]when I can [C]fly
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I’ll Do It All Over Again}
 {meta: artist Crystal Gayle}
 {meta: composer Bob McDill and Wayne Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file illdoitalloveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Was I right was I [G7]wrong
@@ -43,3 +46,8 @@ And I [F]know [C]that I'll [Dm]smile again
 [G7]I'll be [C]back [G7]on my [Am]feet [C]again  and then
 [F]I'll do it all [G7]over [C]again
 {end_of_verse}
+
+
+
+
+

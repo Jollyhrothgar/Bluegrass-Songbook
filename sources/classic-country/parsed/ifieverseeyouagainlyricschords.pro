@@ -1,6 +1,9 @@
 {meta: title If I Ever See You Again}
 {meta: artist Anne Murray}
 {meta: composer Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file ifieverseeyouagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I ever [C]see [G]you [D7]again
@@ -40,3 +43,8 @@ If I ever [Bm]see [D7]you [G]again
 {start_of_verse: Verse 4}
 [D7]If I ever [Bm]see [D7]you [G]again
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Always Come Back To Loving You}
 {meta: artist Mel Tillis}
 {meta: composer Jerry House and Billy Burns}
+{meta: x_source classic-country}
+{meta: x_source_file ialwayscomebacktolovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ties between us are [C]broken
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]I always come back to loving [G]you
 {end_of_verse}
+
+
+
+

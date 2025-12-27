@@ -1,6 +1,9 @@
 {meta: title I Hope It Rains Today}
 {meta: artist Hank Williams Jr.}
 {meta: composer Kay Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file ihopeitrainstodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had that dream again the [G7]same one I've had be[C]fore
@@ -26,3 +29,6 @@ And the [C]mood I'm in [A#7]I hope it rains [C]today
 {start_of_verse: Verse 4}
 And the mood I'm in [A#7]I hope it rains [C]today
 {end_of_verse}
+
+
+

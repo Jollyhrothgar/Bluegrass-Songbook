@@ -1,6 +1,9 @@
 {meta: title Don't Be Angry}
 {meta: artist Stonewall Jackson}
 {meta: composer Wade Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file dontbeangrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't be angry with me darling if [F]I fail to [C]understand
@@ -34,3 +37,6 @@ Just remember that I'm dumb I [F]guess
 like any foolish [C]man
 And my [G7]head stays sort of foggy 'cause your [C]mine
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Lost River}
 {meta: artist Michael Martin Murphey}
+{meta: x_source classic-country}
+{meta: x_source_file lostriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a Lost River that flows
@@ -73,3 +76,13 @@ Gone far from there now
 [D7]Where the Lost River [C]winds
 [D7]In the shadow of the [G]pines
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

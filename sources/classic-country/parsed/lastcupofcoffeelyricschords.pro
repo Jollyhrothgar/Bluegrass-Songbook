@@ -1,6 +1,9 @@
 {meta: title Last Cup Of Coffee}
 {meta: artist Mel Tillis}
 {meta: composer Paul Evans}
+{meta: x_source classic-country}
+{meta: x_source_file lastcupofcoffeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve had my last cup of [G7]coffee with [C]you
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 5}
 [G7]I’ve had my last cup of coffee with [C]you
 {end_of_verse}
+
+
+
+
+
+

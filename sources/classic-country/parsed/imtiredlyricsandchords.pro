@@ -1,6 +1,9 @@
 {meta: title I'm Tired}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis, Webb Pierce, Buck Peddy}
+{meta: x_source classic-country}
+{meta: x_source_file imtiredlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh Lord I'm [F]tired   [G7]tired of living this old [C]way
@@ -29,3 +32,6 @@ What makes you just the kind of girl a guy will [F]love
 You've [G7]got so many others that you're thinking [C]of
 Oh Lord I'm [F]tired   [G7]tired of living this old [C]way 
 {end_of_verse}
+
+
+

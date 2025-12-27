@@ -1,6 +1,9 @@
 {meta: title Some Blue Moons Ago}
 {meta: artist Patty Loveless}
 {meta: composer Steve Earle and Richard Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file somebluemoonsagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sensitivity ain't your style
@@ -48,3 +51,9 @@ Like it was some blue moons a[C]go
 [F]Some blue [G7]moons [C]ago
 [F]Some blue [G7]moons [C]ago
 {end_of_verse}
+
+
+
+
+
+

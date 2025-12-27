@@ -1,6 +1,9 @@
 {meta: title My Hands Are Tied}
 {meta: artist Merle Haggard}
 {meta: composer Tommy Collins, Merle Haggard, Kay Adams}
+{meta: x_source classic-country}
+{meta: x_source_file myhandsaretiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She came her to see me today
@@ -33,3 +36,6 @@ I'm locked here [C]inside
 I [G7]want her I need her I love her
 But my hands are [C]tied
 {end_of_verse}
+
+
+

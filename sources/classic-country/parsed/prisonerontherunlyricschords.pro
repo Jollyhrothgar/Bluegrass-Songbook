@@ -1,6 +1,9 @@
 {meta: title Prisoner On The Run}
 {meta: artist Wynn Stewart}
 {meta: composer Buddy Long}
+{meta: x_source classic-country}
+{meta: x_source_file prisonerontherunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's no telling [C]what might [G]happen if they catch [C]me [G]tonight
@@ -31,3 +34,6 @@
 [C]And both [G]of them are [C]lying [G]in there on [C]the [G]floor
 [C]Yes both [G]of them are [C]lying [G]in there on [D7]the [G]floor
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Just Loving You}
 {meta: artist J.D. Crowe and the New South}
+{meta: x_source classic-country}
+{meta: x_source_file justlovingyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I traveled around this world 
@@ -48,3 +51,10 @@ We've known each other for so long
 And our love keeps growing [C]strong
 I'll always [D7]keep on loving [G]you
 {end_of_verse}
+
+
+
+
+
+
+

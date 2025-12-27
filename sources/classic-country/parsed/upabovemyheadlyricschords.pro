@@ -1,6 +1,9 @@
 {meta: title Up Above My Head}
 {meta: artist Randy Travis}
 {meta: composer Sister Rosetta Tharpe}
+{meta: x_source classic-country}
+{meta: x_source_file upabovemyheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Up above my head (up above my head) 
@@ -50,3 +53,7 @@ There is a [G7]heaven some[C]where ([F]heaven some[C]where)
 And I really do believe I say I really do [D7]believe 
 There is a [G7]heaven some[C]where ([F]heaven some[C]where)
 {end_of_verse}
+
+
+
+

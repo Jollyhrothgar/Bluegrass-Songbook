@@ -1,6 +1,9 @@
 {meta: title Bossier City}
 {meta: artist David Allan Coe}
 {meta: composer Bobby Bourgoin}
+{meta: x_source classic-country}
+{meta: x_source_file bossiercitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My [F]hands are shaking as [G7]I'm sadly [C]learnin'
@@ -50,3 +53,9 @@ But there [D7]ain't no weather quite as cold as [G7]you
 I'd [F]sooner stand in [G7]mother nature's [Am][C]anger
 Than to [F]spend another [G7]lonely night with [C]you
 {end_of_verse}
+
+
+
+
+
+

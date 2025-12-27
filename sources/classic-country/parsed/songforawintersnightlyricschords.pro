@@ -1,5 +1,8 @@
 {meta: title Song For A Winter's Night}
 {meta: artist Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file songforawintersnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The lamp is [D7]burnin' low [Em]upon my table [C]top
@@ -43,3 +46,8 @@ If I could [D7]only [C]have you [D7]near
 [G]On this [D7]winter night with [B7]you [Em]
 And [C]to be [D7]once again with [G]you
 {end_of_verse}
+
+
+
+
+

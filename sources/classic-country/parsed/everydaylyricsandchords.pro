@@ -1,6 +1,9 @@
 {meta: title Everyday}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Dave Loggins and J.D. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file everydaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know a smile never goes out of [F]style
@@ -69,3 +72,13 @@ Everyday (everyday) [C]I want make somebody know (that thinks they [F]can)
 Everyday (everyday) I want to shake somebody's [F]hand 
 Everyday (everyday) [C]I want make somebody know (that thinks they [F]can) 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

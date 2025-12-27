@@ -1,5 +1,8 @@
 {meta: title Shelter Of Your Arms}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file shelterofyourarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I lay me down to sleep
@@ -31,3 +34,7 @@ And I’m [G7]happy once again
 And carry me [Fm]through [C]eternity
 In the [G7]shelter of your [C]arms
 {end_of_verse}
+
+
+
+

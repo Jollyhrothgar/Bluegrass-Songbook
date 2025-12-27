@@ -1,6 +1,9 @@
 {meta: title I Met Her Today}
 {meta: artist Elvis Presley}
 {meta: composer Don Robertson and Hal Blair}
+{meta: x_source classic-country}
+{meta: x_source_file imethertodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told you that some day
@@ -44,3 +47,8 @@ And sent me an [C]angel
 [G7]I met her [C]today
 [G7]I met her [C]today
 {end_of_verse}
+
+
+
+
+

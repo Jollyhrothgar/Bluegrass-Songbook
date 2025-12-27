@@ -1,6 +1,9 @@
 {meta: title Oh Happy Day}
 {meta: artist Jack Greene}
 {meta: composer Edwin Hawkins}
+{meta: x_source classic-country}
+{meta: x_source_file ohhappydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh happy day (oh happy [F]day)
@@ -49,3 +52,8 @@ When my Jesus [Dm]washed (when Jesus [G7]washed)
 When Jesus [Dm]washed (when Jesus [G7]washed)
 All my sins [C]away (Oh happy [F]day)
 {end_of_verse}
+
+
+
+
+

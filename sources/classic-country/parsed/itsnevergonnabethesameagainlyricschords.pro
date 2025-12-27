@@ -1,5 +1,8 @@
 {meta: title It’s Never Gonna Be The Same Again}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file itsnevergonnabethesameagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All we ever owed each other for the time we spent to[G7]gether
@@ -40,3 +43,8 @@ And it's [G]never gonna [D7]be the same a[G]gain
 {start_of_verse: Verse 6}
 [C]Oh it's [G]never gonna [D7]be the same a[G]gain
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Branded}
 {meta: artist Marty Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file brandedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I’m branded wherever I go
@@ -38,3 +41,7 @@ Might as well be wearing a ball and [G]chain
 Cause everywhere I travel see my [D7]picture
 With a number by my [G]name
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We Were Almost Like A Dream Come True}
 {meta: artist Rhonda Vincent}
 {meta: composer Larry Cordle, Donnie Clark, Vickie Clark}
+{meta: x_source classic-country}
+{meta: x_source_file wewerealmostlikeadreamcometruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I held you last [C]night while I was [G]dreaming
@@ -26,3 +29,6 @@ When [G]you call my name now [C]once again I’m [G]smiling
 {start_of_verse: Verse 4}
 [C]Each day with you sweet[D7]heart is a dream come [G]true
 {end_of_verse}
+
+
+

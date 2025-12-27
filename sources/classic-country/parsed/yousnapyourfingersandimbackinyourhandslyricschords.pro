@@ -1,6 +1,9 @@
 {meta: title You Snap Your Fingers (And I'm Back In Your Hands)}
 {meta: artist Ronnie Milsap}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file yousnapyourfingersandimbackinyourhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I cried a river [F]washing your memory [C]away
@@ -21,3 +24,5 @@ And I'm just beginning to learn [C7]some things never [F]end
 You snap your [C]fingers and just like [G7]that I'm back in your [C]hands
 [F]You snap your [C]fingers and just like [G7]that I'm back in your [F]hand[C]s
 {end_of_verse}
+
+

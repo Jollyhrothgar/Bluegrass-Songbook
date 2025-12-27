@@ -1,5 +1,8 @@
 {meta: title Loving A Memory}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file lovingamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I loved you more in just a few hours
@@ -32,3 +35,7 @@ I spend my [C]nights dreaming about you
 {start_of_verse: Verse 5}
 [F]Loving a [C]memory [G7]I never can [C]hold
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Kind Of Love She Gave To Me}
 {meta: artist Ernest Tubb}
 {meta: composer Mae Boren Axton and Glenn Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file thekindofloveshegavetomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A lonely town a lonely street a lonely [C]room where I can't [G]sleep
@@ -29,3 +32,6 @@ We planned a home all of our own now that can't [D7]be
 He'll buy her [G]furs and silken gowns she never [C]had in Shanty[G]town
 But can he buy the kind of [D7]love she gave to [G]me
 {end_of_verse}
+
+
+

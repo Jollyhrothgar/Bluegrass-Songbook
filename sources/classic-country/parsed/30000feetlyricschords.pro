@@ -1,6 +1,9 @@
 {meta: title 30,000 Feet}
 {meta: artist John Anderson}
 {meta: composer Troy Seals and John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file 30000feetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From 30,000 feet you can’t tell the difference [C]between a doe and a [G]buck
@@ -41,3 +44,8 @@ Cause you can’t tell this from that
 [G]It makes no difference black or white [C]yellow red or brown
 [G]We all look the same to the [D7]Big Man looking [G]on
 {end_of_verse}
+
+
+
+
+

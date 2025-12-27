@@ -1,5 +1,8 @@
 {meta: title The Garden}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file thegardenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She planted roses the first year we [F]married
@@ -35,3 +38,7 @@ Where the [F]dew kissed the roses where weeds now have [C]grown
 Sometimes when I [E7]feel like I [F]just 
 Can't go [D7]on I [C]come to the [G7]garden [C]alone
 {end_of_verse}
+
+
+
+

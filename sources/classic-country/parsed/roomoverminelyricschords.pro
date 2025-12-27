@@ -1,6 +1,9 @@
 {meta: title Room Over Mine}
 {meta: artist Danny Paisley}
 {meta: composer Eddie Noack}
+{meta: x_source classic-country}
+{meta: x_source_file roomoverminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We pass in the hallway [C7]almost every [F]day
@@ -45,3 +48,7 @@ In the [G7]room over [C]mine
 Yes I can [F]hear him walking and [C]talking 
 In the [G7]room over [C]mine
 {end_of_verse}
+
+
+
+

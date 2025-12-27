@@ -1,6 +1,9 @@
 {meta: title Far Side Of The Bed}
 {meta: artist Lorrie Morgan}
 {meta: composer Susie McCoy}
+{meta: x_source classic-country}
+{meta: x_source_file farsideofthebedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]All the feeling lived and [G]died [C]in the miles that lay [G]between us
@@ -29,3 +32,6 @@ Where this touching was [Bm]enough [C]to ease the pain inside my [D7]head
 Now I can't turn back the [C]time and I cannot raise the [G]dead
 And now there's just a favorite [Am]memory [D7]on the far side of the [G]bed
 {end_of_verse}
+
+
+

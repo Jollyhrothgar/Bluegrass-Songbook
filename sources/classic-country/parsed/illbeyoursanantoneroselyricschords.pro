@@ -1,6 +1,9 @@
 {meta: title I'll Be Your San Antone Rose}
 {meta: artist Emmylou Harris}
 {meta: composer Susanna Clark}
+{meta: x_source classic-country}
+{meta: x_source_file illbeyoursanantoneroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If they'll play another love song
@@ -36,3 +39,7 @@ I wish I could tell you I love you
 [C]So if you'll be my tall dark [G]stranger
 [D7]I'll be your San Antone [G]Rose
 {end_of_verse}
+
+
+
+

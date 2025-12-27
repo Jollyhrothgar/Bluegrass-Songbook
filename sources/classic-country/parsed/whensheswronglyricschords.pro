@@ -1,5 +1,8 @@
 {meta: title When She's Wrong}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file whensheswronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Go on and [C]take her it ain't no sur[F]prise boy
@@ -29,3 +32,6 @@ But you'll be [G7]thankful she don't last [C]long
 But when she's [G7]wrong she sure can be [C]wrong
 Yeah when she's [G7]wrong she sure can be [C]wrong
 {end_of_verse}
+
+
+

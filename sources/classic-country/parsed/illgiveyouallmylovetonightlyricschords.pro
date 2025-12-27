@@ -1,6 +1,9 @@
 {meta: title I'll Give You All My Love Tonight}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy, Billy Crain, Waldemar Dentz}
+{meta: x_source classic-country}
+{meta: x_source_file illgiveyouallmylovetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]A young girls [G]dreams they [F]come of [G]age
@@ -61,3 +64,10 @@ I'll give you [G]all my love [F]tonight[Fm]
 {start_of_verse: Verse 6}
 [C]I'll give you [G]all my love [F]tonight[Fm]    [C]
 {end_of_verse}
+
+
+
+
+
+
+

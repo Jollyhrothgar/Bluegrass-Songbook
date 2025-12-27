@@ -1,6 +1,9 @@
 {meta: title Johnny B. Goode}
 {meta: artist Buck Owens}
 {meta: composer Chuck Berry}
+{meta: x_source classic-country}
+{meta: x_source_file johnnybgoodelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Deep down in Louisiana close to New Orleans
@@ -49,3 +52,8 @@ Go Johnny go go [C]go Johnny go
 Go go go [G]go Johnny go
 Go [D7]go  [C]Johnny B [G]Goode [D7]
 {end_of_verse}
+
+
+
+
+

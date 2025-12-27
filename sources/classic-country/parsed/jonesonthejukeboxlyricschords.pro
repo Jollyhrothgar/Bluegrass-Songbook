@@ -1,5 +1,8 @@
 {meta: title Jones On The Jukebox}
 {meta: artist Becky Hobbs}
+{meta: x_source classic-country}
+{meta: x_source_file jonesonthejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a fool in the mirror looking back across the [F]bar
@@ -28,3 +31,6 @@ I've got Jones on the jukebox and you on my [F]mind
 He stopped loving her today oh but I'm still doing [F]time
 I've got [G7]Jones on the jukebox and you on my [C]mind
 {end_of_verse}
+
+
+

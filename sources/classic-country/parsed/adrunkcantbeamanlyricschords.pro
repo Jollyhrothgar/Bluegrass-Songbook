@@ -1,6 +1,9 @@
 {meta: title A Drunk Can't Be A Man}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file adrunkcantbeamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He embarrasses his child and wife Lord he leads a miserable [C]life
@@ -26,3 +29,6 @@ But a man can be a [G]drunk sometimes but a [D7]drunk can't be a [G]man
 {start_of_verse: Verse 4}
 [C]Yes a man can be a [G]drunk sometimes but a [D7]drunk can't be a [G]man
 {end_of_verse}
+
+
+

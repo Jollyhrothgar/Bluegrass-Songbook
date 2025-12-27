@@ -1,6 +1,9 @@
 {meta: title Johnny Reb}
 {meta: artist Johnny Horton}
 {meta: composer Merle Kilgore}
+{meta: x_source classic-country}
+{meta: x_source_file johnnyreblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You fought all the way Johnny Reb Johnny Reb
@@ -69,3 +72,16 @@ For you Johnny Reb and all [F]that you [C]believed
 {start_of_verse: Verse 14}
 Yeah you fought all the way Johnny Reb
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

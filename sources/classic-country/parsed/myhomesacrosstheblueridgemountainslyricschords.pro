@@ -1,6 +1,9 @@
 {meta: title My Home's Across The Blue Ridge Mountains}
 {meta: artist Doc Watson}
 {meta: composer Clarence Ashley, Tom Ashley, A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file myhomesacrosstheblueridgemountainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm a gonna leave here Monday morning
@@ -29,3 +32,6 @@ Rock and feed my baby candy
 Rock and feed my baby [C]can[G]dy
 Oh I [D7]never expect to see you any[G]more
 {end_of_verse}
+
+
+

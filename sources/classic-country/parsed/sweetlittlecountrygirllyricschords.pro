@@ -1,6 +1,9 @@
 {meta: title Sweet Little Country Girl}
 {meta: artist Carl Smith}
 {meta: composer Dave Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file sweetlittlecountrygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you used to be my sweet little country girl
@@ -51,3 +54,9 @@ My [D7]sweet little country [G]girl
 My [D7]sweet little country [G]girl
 My [D7]sweet little country [C]girl[G]
 {end_of_verse}
+
+
+
+
+
+

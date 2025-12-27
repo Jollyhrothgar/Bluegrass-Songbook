@@ -1,5 +1,8 @@
 {meta: title New Highway}
 {meta: artist Larry Sparks}
+{meta: x_source classic-country}
+{meta: x_source_file newhighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I read a book [F]about a man
@@ -47,3 +50,9 @@ Repeat last verse
 {start_of_verse: Verse 7}
 He put me on a new high[F]way to [C]heaven
 {end_of_verse}
+
+
+
+
+
+

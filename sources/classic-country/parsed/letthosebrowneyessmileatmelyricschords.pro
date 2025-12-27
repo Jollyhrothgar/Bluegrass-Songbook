@@ -1,6 +1,9 @@
 {meta: title Let Those Brown Eyes Smile At Me}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Rusty Nail}
+{meta: x_source classic-country}
+{meta: x_source_file letthosebrowneyessmileatmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today I feel so sad and weary
@@ -29,3 +32,6 @@ Now we've been sweetheart so long darling
 [C]Let those brown eyes smile at me [F]dear
 [C]Turn my [G7]blue moon back to [C]gold
 {end_of_verse}
+
+
+

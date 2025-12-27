@@ -1,6 +1,9 @@
 {meta: title Leaving and Saying Goodbye}
 {meta: artist Faron Young}
 {meta: composer Jeannie Seely}
+{meta: x_source classic-country}
+{meta: x_source_file leavingandsayinggoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So many times I've told I was [D7]leavin'
@@ -32,3 +35,6 @@
 {start_of_verse: Verse 4}
 [C]Leavin' and [D7]sayin' [G]goodbye
 {end_of_verse}
+
+
+

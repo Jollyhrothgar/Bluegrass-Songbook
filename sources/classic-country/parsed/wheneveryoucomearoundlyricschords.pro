@@ -1,6 +1,9 @@
 {meta: title Whenever You Come Around}
 {meta: artist Vince Gill}
 {meta: composer Vince Gill and Pete Wasner}
+{meta: x_source classic-country}
+{meta: x_source_file wheneveryoucomearoundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Face of an angel [C]pretty eyes that shine
@@ -39,3 +42,7 @@ I’m so [G]scared to death
 When you [C]smile that smile the world turns[Em] upside [C]down
 [G]Whenever you [D7]come [G]around
 {end_of_verse}
+
+
+
+

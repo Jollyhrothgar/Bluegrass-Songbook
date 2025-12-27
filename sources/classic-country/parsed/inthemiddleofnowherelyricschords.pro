@@ -1,6 +1,9 @@
 {meta: title In The Middle Of Nowhere}
 {meta: artist Charley Pride}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file inthemiddleofnowherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They had meant for me [F]one last time to see my [C]hometown again
@@ -36,3 +39,7 @@ One last [C]time I knelt by mom and dad in [G7]prayer
 Then I [C]said goodbye forever to that [F]little town 
 In the [C]middle in the [G7]middle of no[C]where
 {end_of_verse}
+
+
+
+

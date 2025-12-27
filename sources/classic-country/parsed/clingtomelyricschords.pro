@@ -1,6 +1,9 @@
 {meta: title Cling To Me chords}
 {meta: artist Mel Tillis}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file clingtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Keep the cold lonely world to my bedroom for a [D7]while
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [C]For a few fleeting [G]moments   [D7]cling to [G]me
 {end_of_verse}
+
+
+

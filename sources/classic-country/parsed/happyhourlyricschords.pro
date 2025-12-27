@@ -1,6 +1,9 @@
 {meta: title Happy Hour}
 {meta: artist Ted Hawkins}
 {meta: composer Steve Gillette and David MacKechnie}
+{meta: x_source classic-country}
+{meta: x_source_file happyhourlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Welcome to happy hour blinking on the neon [C]sign
@@ -54,3 +57,10 @@ Two drinks for the price of [G]one
 People laughing and having [D7]fun 
 This time it's on [G]me
 {end_of_verse}
+
+
+
+
+
+
+

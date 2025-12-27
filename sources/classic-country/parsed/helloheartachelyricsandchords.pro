@@ -1,6 +1,9 @@
 {meta: title Hello Heartache}
 {meta: artist Marty Robbins}
 {meta: composer Mabel Cordle and Janice Beard}
+{meta: x_source classic-country}
+{meta: x_source_file helloheartachelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello heartache I should have known you'd come my [G7]way
@@ -33,3 +36,6 @@ Do you miss them as I'll always miss my [C]love
 If you do then I'll stay with you all night long until the [F]dawn
 For I [C]know that I can't [G7]sleep now that she's [C]gone
 {end_of_verse}
+
+
+

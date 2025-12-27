@@ -1,5 +1,8 @@
 {meta: title Light at the River}
 {meta: artist Mac Wiseman}
+{meta: x_source classic-country}
+{meta: x_source_file lightattheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a deep silent river flowing [C]just [G]beyond
@@ -25,3 +28,6 @@
 {start_of_verse: Verse 4}
 Repeat #2
 {end_of_verse}
+
+
+

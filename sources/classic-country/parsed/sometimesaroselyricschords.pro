@@ -1,6 +1,9 @@
 {meta: title Sometimes A Rose}
 {meta: artist Ray Price}
 {meta: composer Roger Brown}
+{meta: x_source classic-country}
+{meta: x_source_file sometimesaroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our love has had its share of ups and [F]downs
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]Sometimes a [C]thorn [G7]sometimes a [C]rose
 {end_of_verse}
+
+
+
+

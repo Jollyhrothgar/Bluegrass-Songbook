@@ -1,5 +1,8 @@
 {meta: title The Same Two Lips}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file thesametwolipslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The same two lips that once told me they loved [F]me
@@ -28,3 +31,6 @@ Are the [D7]same two arms that now hold someone [G7]else
 And the [C]same two lips I've taught to say I love [F]you
 Now [C]teach I love you to [G7]somebody [C]else
 {end_of_verse}
+
+
+

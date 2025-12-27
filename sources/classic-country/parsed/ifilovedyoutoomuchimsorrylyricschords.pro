@@ -1,5 +1,8 @@
 {meta: title If I Loved You Too Much (I'm Sorry)}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file ifilovedyoutoomuchimsorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In your letter you said [F]please don't try to [C]find me
@@ -28,3 +31,6 @@ If I loved you too [F]much and made [C]you sad
 If I loved you too [F]much for[C]give me[F]
 But [C]you were [G7]all I [C]had
 {end_of_verse}
+
+
+

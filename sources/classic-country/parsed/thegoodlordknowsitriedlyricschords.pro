@@ -1,6 +1,9 @@
 {meta: title The Good Lord Knows I Tried}
 {meta: artist Johnny Rodriguez}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file thegoodlordknowsitriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From the very first hello until the [C]very last goodbye
@@ -33,3 +36,7 @@ I couldn't [D7]please you but the good Lord knows I [G]tried
 {start_of_verse: Verse 4}
 I couldn't [D7]please you but the good Lord knows I [G]tried
 {end_of_verse}
+
+
+
+

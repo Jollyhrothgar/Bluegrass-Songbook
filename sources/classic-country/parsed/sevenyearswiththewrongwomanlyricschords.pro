@@ -1,6 +1,9 @@
 {meta: title Seven Years With The Wrong Woman}
 {meta: artist Eddy Arnold}
 {meta: composer Bob Miller}
+{meta: x_source classic-country}
+{meta: x_source_file sevenyearswiththewrongwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seven years with the [F]wrong [C]woman
@@ -52,3 +55,11 @@ It'll age you and turn [C7]your hair [F]gray
 They say love is blind but search 'til you [C]find
 A [G7]face you can stand every [C]day
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Mule Skinner Blues (Blue Yodel No. 8)}
 {meta: artist Dolly Parton}
 {meta: composer Jimmie Rodgers and George Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file muleskinnerbluesblueyodelno8lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well good morning Captain 
@@ -48,3 +51,7 @@ Yodel a [D7]lete he [C]he
 He he he he he [G]he 
 Mule Skinner Blues
 {end_of_verse}
+
+
+
+

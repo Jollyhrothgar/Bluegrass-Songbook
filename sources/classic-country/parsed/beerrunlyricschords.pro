@@ -1,6 +1,9 @@
 {meta: title Beer Run}
 {meta: artist Garth Brooks with George Jones}
 {meta: composer Kim Williams, Kent Blazy, Keith Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file beerrunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Twenty-five minutes past quitting time
@@ -39,3 +42,7 @@ Like a [G]B double E double [D7]R U [G]N
 {start_of_verse: Verse 5}
 Like a B double E double [D7]R U [G]N
 {end_of_verse}
+
+
+
+

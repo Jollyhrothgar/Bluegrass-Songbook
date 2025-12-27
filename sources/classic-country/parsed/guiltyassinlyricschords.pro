@@ -1,5 +1,8 @@
 {meta: title Guilty As Sin}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file guiltyassinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In lovin' arms with tender kisses
@@ -61,3 +64,11 @@ But I'm as guilty as [C]sin
 Yes she loves me like a [F]saint
 But I'm as guilty as [C]sin
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Never Alone}
 {meta: artist Vince Gill}
 {meta: composer Rosanne Cash and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file neveralonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You were like a lost kid looking for [Am]home
@@ -37,3 +40,7 @@ I love [F]you so [G7]you're never [C]alone
 [Am]No you're never [C]alone
 [Am]No you're never [C]alone
 {end_of_verse}
+
+
+
+

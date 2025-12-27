@@ -1,6 +1,9 @@
 {meta: title Drifting Apart}
 {meta: artist Wilburn Brothers}
 {meta: composer Hal Gurnee}
+{meta: x_source classic-country}
+{meta: x_source_file driftingapartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Drifting apart  [C]drifting apart 
@@ -33,3 +36,7 @@ And it [F]hurts so [G7]much to [C]say
 And now we're [F]drifting apart  [C]drifting apart
 [G7]Seems like we're drifting  driftting  a[C]part 
 {end_of_verse}
+
+
+
+

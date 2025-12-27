@@ -1,5 +1,8 @@
 {meta: title Top of the World}
 {meta: artist Lynn Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file topoftheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Such a feelings [G7]coming [F]over [C]me 
@@ -42,3 +45,8 @@ And the [C]only explanation [Dm]I [G7]can [C]find
 Is the [F]love that I've [G7]found ever [C]since you've been [F]around
 Your love's [C]put me at the top [Dm]of [G7]the [C]world
 {end_of_verse}
+
+
+
+
+

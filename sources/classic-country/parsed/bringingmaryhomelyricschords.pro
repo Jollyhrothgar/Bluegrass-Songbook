@@ -1,6 +1,9 @@
 {meta: title Bringing Mary Home}
 {meta: artist Red Sovine}
 {meta: composer Joe Kingston and Chaw Monk}
+{meta: x_source classic-country}
+{meta: x_source_file bringingmaryhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I was driving down a lonely road on a [C]dark and stormy [G]night
@@ -36,3 +39,7 @@ Our [D7]darling Mary lost her life [C]and we miss her [D7]so
 Oh [G]thank you for your trouble and the kindness you have [D7]shown
 You're the [C]thirteenth one that's [A7]been here [D7]bringing Mary [G]home
 {end_of_verse}
+
+
+
+

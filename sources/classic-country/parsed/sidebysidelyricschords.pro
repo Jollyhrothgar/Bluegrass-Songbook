@@ -1,6 +1,9 @@
 {meta: title Side by Side}
 {meta: artist Patsy Cline}
 {meta: composer Harry Woods}
+{meta: x_source classic-country}
+{meta: x_source_file sidebysidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh  we ain't got a barrel of [C][F]mon-ey
@@ -32,3 +35,6 @@ Just traveling [F]along
 [C]Singing a [A7]song
 [D7]Side  [G7]by  [C]side
 {end_of_verse}
+
+
+

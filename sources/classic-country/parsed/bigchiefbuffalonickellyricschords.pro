@@ -1,6 +1,9 @@
 {meta: title Big Chief Buffalo Nickel}
 {meta: artist Ricky Nelson}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file bigchiefbuffalonickellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A way out on the wind swept desert where nature favors no [G7]man
@@ -31,3 +34,6 @@ He never used a sickle to clear the bushes [C]away
 He's roamed around from tent to tent heed everything in [G7]sight
 He loved a squaw everyone he saw he loved a new one every [C]night
 {end_of_verse}
+
+
+

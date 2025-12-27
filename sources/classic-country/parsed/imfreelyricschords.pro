@@ -1,6 +1,9 @@
 {meta: title I'm Free}
 {meta: artist Merle Haggard}
 {meta: composer Leon Copeland}
+{meta: x_source classic-country}
+{meta: x_source_file imfreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though I haven't got a penny to my [Dm]name
@@ -36,3 +39,7 @@
 [Dm]In my mind the greatest treasure there could be
 [F]Just to live the way [G7]I live because I'm [C]free
 {end_of_verse}
+
+
+
+

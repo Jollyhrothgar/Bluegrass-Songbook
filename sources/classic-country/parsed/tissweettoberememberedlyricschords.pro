@@ -1,6 +1,9 @@
 {meta: title Tis Sweet To Be Remembered}
 {meta: artist Mac Wiseman}
 {meta: composer Malcolm B. Wiseman}
+{meta: x_source classic-country}
+{meta: x_source_file tissweettoberememberedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As I travel all this world
@@ -29,3 +32,6 @@ Tis sweet to [C]be re[G]memb[Em]ered by a [A7]dear one far [D7]away
 Tis [G]sweet to [C]be remem[G]bered re[C]membered re[G]membered
 Tis [C]sweet to be re[G]memb[Em]ered when [A7]you are [D7]far a[G]way
 {end_of_verse}
+
+
+

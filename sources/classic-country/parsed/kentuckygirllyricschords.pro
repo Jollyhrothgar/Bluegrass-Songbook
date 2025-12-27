@@ -1,5 +1,8 @@
 {meta: title Kentucky Girl}
 {meta: artist Larry Sparks}
+{meta: x_source classic-country}
+{meta: x_source_file kentuckygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Kentucky girl are [D7]you lonesome tonight 
@@ -42,3 +45,8 @@ Kentucky girl do you [G]miss me
 Does that old moon shine on the [D7]bluegrass as bright 
 As it did on the night you first [G]kissed me
 {end_of_verse}
+
+
+
+
+

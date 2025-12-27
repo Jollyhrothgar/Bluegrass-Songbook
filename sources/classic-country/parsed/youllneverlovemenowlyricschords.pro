@@ -1,5 +1,8 @@
 {meta: title You’ll Never Love Me Now}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file youllneverlovemenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Admitting you're to [C]blame 
@@ -35,3 +38,7 @@ And please don't come [G]around
 If you never loved me [C]then 
 You'll [G]never [D7]love me [G]now
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That's A Sad Affair}
 {meta: artist Jim Reeves}
 {meta: composer Redd Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file thatsasadaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know a boy who knows a girl and she is so in [D7]love
@@ -43,3 +46,8 @@ It [A7]doesn't bother him at all but it almost breaks her [D7]heart
 She's [G]just content to tag along and [G7]hopes someday he'll [C]care
 But he's just four and [G]she's just three and that's [D7]a sad [G]affair
 {end_of_verse}
+
+
+
+
+

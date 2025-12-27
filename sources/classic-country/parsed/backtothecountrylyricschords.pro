@@ -1,6 +1,9 @@
 {meta: title Back To The Country Lyrics Chords}
 {meta: artist Loretta Lynn}
 {meta: composer Tracey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file backtothecountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Apple blossoms in the air rabbit hunters everywhere
@@ -37,3 +40,9 @@ Blue skies and butterflies I smell momma's apple pies
 {start_of_verse: Verse 6}
 [G7]It's back to the country life for [C]me
 {end_of_verse}
+
+
+
+
+
+

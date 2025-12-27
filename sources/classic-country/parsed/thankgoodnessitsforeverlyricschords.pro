@@ -1,6 +1,9 @@
 {meta: title Thank Goodness It's Forever}
 {meta: artist Jean Shepard}
 {meta: composer Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file thankgoodnessitsforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've had my share of loneliness and many times I've been [C]awake
@@ -37,3 +40,7 @@ You've got a smile that warms my heart
 [G]It's knowin' that we’ve [C]got true love and we [D7]will stay [G]together
 [Em]It's not the kind that comes and goes [D7]thank goodness it's [G]forever
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Thy Neighbor}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Tommy Atwood}
+{meta: x_source classic-country}
+{meta: x_source_file lovethyneighborlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In this world in which we're livin'
@@ -29,3 +32,5 @@ I [F]need Your guiding [E7]hand
 To [F]live and [C]love the [G7]Christian [C]way
 Repeat last verse
 {end_of_verse}
+
+

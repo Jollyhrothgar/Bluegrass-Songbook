@@ -1,6 +1,9 @@
 {meta: title Bird On A Wire}
 {meta: artist Johnny Cash}
 {meta: composer Leonard Cohen}
+{meta: x_source classic-country}
+{meta: x_source_file birdonawirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like a bird  [G7]on a wire  [C]like a drunk in a midnight [F]choir 
@@ -34,3 +37,7 @@ She cried [Dm]out to me why not ask for [G7]more
 Like a [C]bird on a [G7]wire like a [C]drunk in a midnight [F]choir 
 I have [C]tried in my [G7]ways to be [F]free  [C]
 {end_of_verse}
+
+
+
+

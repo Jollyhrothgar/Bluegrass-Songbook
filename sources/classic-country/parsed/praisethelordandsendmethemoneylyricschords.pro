@@ -1,6 +1,9 @@
 {meta: title Praise The Lord And Send Me The Money}
 {meta: artist Bobby Bare}
 {meta: composer Hugh Moffatt}
+{meta: x_source classic-country}
+{meta: x_source_file praisethelordandsendmethemoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Praise the Lord and [C]send me the [G]money
@@ -61,3 +64,11 @@
 {start_of_verse: Verse 7}
 [C]Praise the Lord I’m sending the [G]money
 {end_of_verse}
+
+
+
+
+
+
+
+

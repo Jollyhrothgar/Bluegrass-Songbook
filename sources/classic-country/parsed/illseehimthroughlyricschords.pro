@@ -1,6 +1,9 @@
 {meta: title I'll See Him Through}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Norro Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file illseehimthroughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I wonder if he [C]loves me like he [D7]used to
@@ -40,3 +43,7 @@ He gave me love when I [G]needed it bad
 [C]And that's the reason that [G]I'll see him [Am]through
 [C]And that's the reason that [G]I'll see him [F]throu[C]gh
 {end_of_verse}
+
+
+
+

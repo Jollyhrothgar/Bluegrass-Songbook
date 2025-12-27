@@ -1,6 +1,9 @@
 {meta: title A Heartbreak Ago}
 {meta: artist Cowboy Copas}
 {meta: composer Johnny Grimes}
+{meta: x_source classic-country}
+{meta: x_source_file aheartbreakagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heartbreaking daddy they [G7]call me
@@ -29,3 +32,6 @@ A [D7]heartbreak ago the [G7]moon shown at night
 Now [C]things have changed you'll [F]never never [C]know
 That was just a [G7]heartbreak [C]ago
 {end_of_verse}
+
+
+

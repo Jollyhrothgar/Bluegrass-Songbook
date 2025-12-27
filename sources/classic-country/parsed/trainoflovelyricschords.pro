@@ -1,5 +1,8 @@
 {meta: title Train Of Love}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file trainoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Train of love's a-coming
@@ -92,3 +95,22 @@ Though I may wait forever
 [D7]Every so often everybody's baby gets the urge to roam
 But everybody's baby but mine's coming [G]home
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

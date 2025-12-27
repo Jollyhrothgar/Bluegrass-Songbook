@@ -1,6 +1,9 @@
 {meta: title Rambling Man}
 {meta: artist Norma Jean}
 {meta: composer Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file ramblingmanlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love my rambling man
@@ -43,3 +46,8 @@ My rambling man loves [D7]me
 I [G]know he'll be back so I'll help him [C]pack
 Then [D7]I'll give him a kiss and my [G]key
 {end_of_verse}
+
+
+
+
+

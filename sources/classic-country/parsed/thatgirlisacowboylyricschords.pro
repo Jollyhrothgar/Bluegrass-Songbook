@@ -1,6 +1,9 @@
 {meta: title That Girl Is A Cowboy}
 {meta: artist Garth Brooks}
 {meta: composer Richie Brown, Jerrod Niemann, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file thatgirlisacowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]It was a [C]hundred and seven we were heading to town
@@ -53,3 +56,10 @@ But something [Am]else any[G7]time she's [F]not
 When I [F]need a friend [Dm]she's the guy I [G7]call [F]
 Cause [Dm]sometimes the best [F]cowboys ain't [G7]cowboys at [Am]all
 {end_of_verse}
+
+
+
+
+
+
+

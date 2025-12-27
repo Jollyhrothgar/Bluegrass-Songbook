@@ -1,6 +1,9 @@
 {meta: title Anyone Who Isn't Me Tonight}
 {meta: artist Kenny Rogers}
 {meta: composer Casey Kelly and Julie Didier}
+{meta: x_source classic-country}
+{meta: x_source_file anyonewhoisntmetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you made love to me tonight 
@@ -49,3 +52,10 @@ Your [C]love has sent me [F]flyin' and I'm [G7]higher than a [C]kite
 {start_of_verse: Verse 8}
 And I feel [F]sorry for [C]anyone who [G7]isn't me [F]tonigh[C]t
 {end_of_verse}
+
+
+
+
+
+
+

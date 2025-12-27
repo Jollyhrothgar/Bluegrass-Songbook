@@ -1,5 +1,8 @@
 {meta: title The Most Beautiful Girl}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file themostbeautifulgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey  did you [Dm]happen to see the most [C]beautiful girl in the world
@@ -18,3 +21,4 @@ I woke up this morning [C]and realized what I had done
 I know I'm wrong and I couldn't see I let my world slip away from [D7]me
 So won't you tell her that I love [G]her
 {end_of_verse}
+

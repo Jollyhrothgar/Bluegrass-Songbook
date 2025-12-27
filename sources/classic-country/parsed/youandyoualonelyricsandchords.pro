@@ -1,6 +1,9 @@
 {meta: title You And You Alone}
 {meta: artist Vince Gill}
 {meta: composer Vince Gill and Amy Grant Gill}
+{meta: x_source classic-country}
+{meta: x_source_file youandyoualonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If we have to wait forever that's all right
@@ -39,3 +42,7 @@ Even if [Dm]I never see [G7]your face [C]again
 The [G]love that you have shown is [C]unlike anything I've known
 We both [Dm]know it’s just a [F]matter of [G7]when
 {end_of_verse}
+
+
+
+

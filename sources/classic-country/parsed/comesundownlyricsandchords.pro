@@ -1,5 +1,8 @@
 {meta: title Come Sundown}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file comesundownlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard that front door  [F]closing [C]softly
@@ -32,3 +35,7 @@ But come sundown  [G7]she’ll be [C]gone
 {start_of_verse: Verse 5}
 Yeah come sundown  [G7]she’ll be [F]gon[C]e
 {end_of_verse}
+
+
+
+

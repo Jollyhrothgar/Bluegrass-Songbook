@@ -1,5 +1,8 @@
 {meta: title One Sweet Hello}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file onesweethellolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One sweet hello and [G7]one sad goodbye
@@ -26,3 +29,6 @@ With [C]one sweet hello and [G7]one sad good[C]bye
 Together it was [C7]heaven but how [F]quickly time did [Fm]fly
 With [C]one sweet hello and [G7]one sad good[C]bye
 {end_of_verse}
+
+
+

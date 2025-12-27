@@ -1,6 +1,9 @@
 {meta: title Love Lessons}
 {meta: artist Tracy Byrd}
 {meta: composer Jerry Kilgore, Ted Hewitt,}
+{meta: x_source classic-country}
+{meta: x_source_file lovelessonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't [C7]be a[F]fraid dar[G7]ling you can [C]tell me 
@@ -35,3 +38,7 @@ I wanna take [C]love lessons baby real [Dm]slow [G7]
 {start_of_verse: Verse 5}
 [F]Teach me every[G7]thing I need to [C]know
 {end_of_verse}
+
+
+
+

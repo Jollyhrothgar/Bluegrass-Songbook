@@ -1,6 +1,9 @@
 {meta: title Give A Hand Take A Hand}
 {meta: artist Brenda Lee}
 {meta: composer Barry Gibb and Maurice Gibb}
+{meta: x_source classic-country}
+{meta: x_source_file giveahandtakeahandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wish the world was run by all [C]little [G]children
@@ -38,3 +41,7 @@
 [G]To make everybody understand
 [D7]Everybody's got to be to take a [C]hand
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title In Christ Alone}
 {meta: artist The Booth Brothers}
 {meta: composer Keith Getty and Stuart Townend}
+{meta: x_source classic-country}
+{meta: x_source_file inchristalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]In Christ [C]alone my [F]hope is [G7]found
@@ -58,3 +61,10 @@ In every [G7]victo[A7]ry let it be said of [Bm]me
 My source of [Em]strength My source of [A7]hope
 Is Christ [D7]alone[G]
 {end_of_verse}
+
+
+
+
+
+
+

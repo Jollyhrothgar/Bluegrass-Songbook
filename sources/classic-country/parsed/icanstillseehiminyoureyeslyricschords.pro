@@ -1,6 +1,9 @@
 {meta: title I Can Still See Him In Your Eyes}
 {meta: artist George Jones}
 {meta: composer Dickey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file icanstillseehiminyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We were sitting at the [D7]table and [G]we saw your old [G7]flame
@@ -33,3 +36,7 @@ I can [C]still see [D7]him your [Em]eyes [C]
 {start_of_verse: Verse 5}
 I can [G]still see [D7]him your [G]eyes
 {end_of_verse}
+
+
+
+

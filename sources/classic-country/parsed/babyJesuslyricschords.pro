@@ -1,6 +1,9 @@
 {meta: title Baby Jesus}
 {meta: artist Faron Young}
 {meta: composer Bill Emerson, Jody Emerson, Lionel Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file babyJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Joseph led the donkey that Mary rode 
@@ -38,3 +41,7 @@ All the rooms were taken [G7]at the [C]inn
 Joseph led the donkey that Mary rode 
 All the way to [G7]Bethle[C]hem
 {end_of_verse}
+
+
+
+

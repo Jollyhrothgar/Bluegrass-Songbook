@@ -1,6 +1,9 @@
 {meta: title I Watched An Angel (Going Through Hell)}
 {meta: artist Johnny Duncan}
 {meta: composer Don Goodman and Mark Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file iwatchedanangelgoingthroughhelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She lit up the room as [Am]she walked through the door
@@ -29,3 +32,6 @@ I could [Am]almost see a [D7]halo round her [G]hair
 But teardrops or [C]sorrow [Am]told of [D7]sadness as they [G]fell [Em]
 And I watched an [Am]angel [D7]going through [G]hell
 {end_of_verse}
+
+
+

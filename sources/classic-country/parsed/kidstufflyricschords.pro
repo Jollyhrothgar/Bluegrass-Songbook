@@ -1,6 +1,9 @@
 {meta: title Kid Stuff}
 {meta: artist Barbara Fairchild}
 {meta: composer Jerry Crutchfield and Don Earl}
+{meta: x_source classic-country}
+{meta: x_source_file kidstufflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I often think of younger days a boy a girl and backyard play
@@ -33,3 +36,7 @@ Was sitting in the [F]middle of a cotton candy [C]world
 {start_of_verse: Verse 4}
 I'm losing [G7]you to another [C]world
 {end_of_verse}
+
+
+
+

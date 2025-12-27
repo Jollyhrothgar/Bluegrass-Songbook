@@ -1,6 +1,9 @@
 {meta: title Crying Section}
 {meta: artist Billy Walker}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file cryingsectionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seat me [D7]in the crying [G]section 
@@ -36,3 +39,7 @@ I'm [C]afraid the [D7]tears are gonna [G]fall
 [C]Seat me [D7]in the crying [G]section 
 Then [C]I won't be [D7]out of place at [G]all
 {end_of_verse}
+
+
+
+

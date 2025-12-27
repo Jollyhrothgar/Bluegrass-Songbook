@@ -1,6 +1,9 @@
 {meta: title Gypsy Lyrics Chords}
 {meta: artist Hank Thompson}
 {meta: composer Billy Reid}
+{meta: x_source classic-country}
+{meta: x_source_file gypsylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a quaint caravan there's a lady they [Em]call the [Am]Gypsy
@@ -22,3 +25,5 @@
 [G]Still I'll go there again cause I want to [Em]believe the [Am]Gypsy
 [D7]That my lover is true and will come back to me some [G]day
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title I Hear A Sweet Voice Calling}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file ihearasweetvoicecallinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our little girl taken [G7]sick one [C]evening
@@ -49,3 +52,9 @@ Way up in [G7]Heaven on [C]high
 God has made [C7]room for your [F]daughter
 Oh [C]mommy and [G7]daddy don't [C]cry
 {end_of_verse}
+
+
+
+
+
+

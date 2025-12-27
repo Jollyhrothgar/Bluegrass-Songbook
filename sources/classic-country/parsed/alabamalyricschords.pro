@@ -1,6 +1,9 @@
 {meta: title Alabama}
 {meta: artist The Louvin Brothers}
 {meta: composer Charlie Louvin, Ira Louvin, Eddie Hill}
+{meta: x_source classic-country}
+{meta: x_source_file alabamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Alabama  your [F]beautiful [C]sunlight
@@ -43,3 +46,8 @@ My footsteps are homing no longer to stray
 Alabama, you hold all I long for
 You hold all I love so I'm coming today
 {end_of_verse}
+
+
+
+
+

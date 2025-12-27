@@ -1,6 +1,9 @@
 {meta: title By The Side Of The Road}
 {meta: artist Doyle Lawson}
 {meta: composer Roscoe S. Reed}
+{meta: x_source classic-country}
+{meta: x_source_file bythesideoftheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been traveling for Jesus the [C]most of my [G]life
@@ -49,3 +52,9 @@
 [D7]As I sit by the side of the [G]road
 [D7]As I sit by the side of [C]the [G]road
 {end_of_verse}
+
+
+
+
+
+

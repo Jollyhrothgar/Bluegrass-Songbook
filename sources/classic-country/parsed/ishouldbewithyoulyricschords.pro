@@ -1,6 +1,9 @@
 {meta: title I Should Be With You}
 {meta: artist Porter Wagoner}
 {meta: composer Pete Stamper and Werth Becker}
+{meta: x_source classic-country}
+{meta: x_source_file ishouldbewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I met an old love
@@ -30,3 +33,5 @@
 [C]This thought kept coming [G]through
 [D7]Oh I should be with [G][C]you
 {end_of_verse}
+
+

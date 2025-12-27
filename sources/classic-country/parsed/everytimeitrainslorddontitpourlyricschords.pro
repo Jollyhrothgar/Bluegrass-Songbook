@@ -1,6 +1,9 @@
 {meta: title Every Time It Rains (Lord Don't It Pour)}
 {meta: artist George Strait}
 {meta: composer Charlie Craig and Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeitrainslorddontitpourlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time my ship comes in
@@ -46,3 +49,8 @@ Oh and [C]every time it [G7]rains Lord don't it [C]pour
 {start_of_verse: Verse 5}
 Well every time it [G7]rains Lord don't it [C]pour
 {end_of_verse}
+
+
+
+
+

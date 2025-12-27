@@ -1,6 +1,9 @@
 {meta: title Thirty Nine And Holding}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Bill Rice and Jerry Foster}
+{meta: x_source classic-country}
+{meta: x_source_file thirtynineandholdinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He's out there somewhere every night 
@@ -56,3 +59,11 @@ The [C]Clairol hides the [G]gray
 And [C]he won't mention [G]anything 
 To [D7]give his old age [G]away 
 {end_of_verse}
+
+
+
+
+
+
+
+

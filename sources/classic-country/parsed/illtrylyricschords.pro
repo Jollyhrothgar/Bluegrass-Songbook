@@ -1,5 +1,8 @@
 {meta: title I'll Try}
 {meta: artist Lefty Frizzel}
+{meta: x_source classic-country}
+{meta: x_source_file illtrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm all [F]alone [G7]since you went [C]away
@@ -19,3 +22,5 @@ Maybe I'll have [C]someone else that [G7]can take the place of [C]you
 Cause you told me to forget you and then [C7]you said [C]goodbye
 I don't know if I [C]can or not [G7]but darling I will [C]try
 {end_of_verse}
+
+

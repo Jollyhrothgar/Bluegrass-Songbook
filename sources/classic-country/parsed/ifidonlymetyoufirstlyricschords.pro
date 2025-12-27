@@ -1,6 +1,9 @@
 {meta: title If I'd Only Met You First}
 {meta: artist Carl Butler}
 {meta: composer Hank Cochran and Carl Butler}
+{meta: x_source classic-country}
+{meta: x_source_file ifidonlymetyoufirstlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just like so many other men we [F]hear about in song
@@ -29,3 +32,6 @@ She'll [F]never set me free and so I [C]can't ask you to [G7]wait
 If [C]you should find another love I [F]won't stand in your way
 But [C]if I'd only met you first [G7]you'd be my own [C]today
 {end_of_verse}
+
+
+

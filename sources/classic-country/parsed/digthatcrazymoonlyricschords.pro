@@ -1,6 +1,9 @@
 {meta: title Dig That Crazy Moon}
 {meta: artist Porter Wagoner}
 {meta: composer Bob Tubert, Porter Wagoner, Si Siman}
+{meta: x_source classic-country}
+{meta: x_source_file digthatcrazymoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met a gal one night in town 
@@ -40,3 +43,7 @@ We're gonna [G]dine and dance and then romance
 Might [C]even get hitched if we get a chance 
 We're gonna [G]dig dig dig that [D7]crazy [G]moon
 {end_of_verse}
+
+
+
+

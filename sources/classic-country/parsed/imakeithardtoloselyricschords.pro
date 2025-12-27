@@ -1,6 +1,9 @@
 {meta: title I Make It Hard To Lose}
 {meta: artist John Anderson}
 {meta: composer Mark Geronimo}
+{meta: x_source classic-country}
+{meta: x_source_file imakeithardtoloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got my rockin' [F]down [G7]got my headaches [F]too
@@ -40,3 +43,8 @@ I'd be [C]lucky to go [G7]home with thirty [C]cents
 {start_of_verse: Verse 5}
 [F]Honey I'd be [C]lucky to go [G7]home with thirty [F]cen[C]ts
 {end_of_verse}
+
+
+
+
+

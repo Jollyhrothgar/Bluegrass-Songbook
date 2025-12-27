@@ -1,6 +1,9 @@
 {meta: title Jesus Was A Carpenter}
 {meta: artist Johnny Cash}
 {meta: composer Chris Warren}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuswasacarpenterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jesus was a carpenter and He worked with a [C]saw and a [D]hammer
@@ -49,3 +52,8 @@ And He [G]might have spun His [C]life out in the [G]coolness of the [D]mornings
 But He [G]put aside His [C]tools and He [D]walked the burning [C]highways
 To [G]build a house from [Am]folks like you and [D]me
 {end_of_verse}
+
+
+
+
+

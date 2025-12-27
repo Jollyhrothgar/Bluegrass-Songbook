@@ -1,6 +1,9 @@
 {meta: title Overnight Success}
 {meta: artist George Strait}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file overnightsuccesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it was [F]in your [C]mind to really cut me [F]down
@@ -22,3 +25,5 @@ Will he [F]stay with you and help you spend [C]all the tears I've [G7]cried
 Sweetheart I [F]love you [C]so and wish you happi[F]ness
 And if you [G7]planned on hurtin' me you're an [D7]over[G7]night [C]success
 {end_of_verse}
+
+

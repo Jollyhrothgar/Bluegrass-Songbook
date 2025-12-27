@@ -1,6 +1,9 @@
 {meta: title Endless Sleep}
 {meta: artist Hank Williams Jr.}
 {meta: composer Judy Reynolds and Dolores Nance}
+{meta: x_source classic-country}
+{meta: x_source_file endlesssleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The night was black rain falling down 
@@ -50,3 +53,11 @@ Stole her away from the [G7]angry [C]sea
 [F]My heart cried out she's mine to keep 
 [C]I saved my baby from an endless [C][G7]sleep   
 {end_of_verse}
+
+
+
+
+
+
+
+

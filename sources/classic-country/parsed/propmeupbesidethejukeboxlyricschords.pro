@@ -1,6 +1,9 @@
 {meta: title Prop Me Up Beside The Jukebox}
 {meta: artist Joe Diffie}
 {meta: composer Rick Blaylock, Kerry Kurt Phillips, Howard Pedrew}
+{meta: x_source classic-country}
+{meta: x_source_file propmeupbesidethejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I ain't afraid of dying [C]it’s the thought of being dead
@@ -48,3 +51,9 @@ Lord I wanna go to heaven but I don't [D7]wanna go tonight
 [G]Fill my boots [G7]up with sand [C]put a stiff drink in my [C7]hand
 Prop me [G]up beside the [D7]jukebox if I [G]die
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Two Shadows On Your Window}
 {meta: artist Jim Reeves}
 {meta: composer Steve Gibson and R. Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file twoshadowsonyouwindowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two shadows [G7]on your [C]window they make me [G7]realize
@@ -16,3 +19,4 @@ Two shadows on your [C]window it's [G7]plain for this fool to [C]see
 Two shadows on your [C]window  one [G7]of them is taking my [C]place
 Yes [G7]someone is taking my [C]place
 {end_of_verse}
+

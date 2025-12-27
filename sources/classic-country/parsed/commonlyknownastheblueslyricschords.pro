@@ -1,5 +1,8 @@
 {meta: title Commonly Known As The Blues}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file commonlyknownastheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just hitched a ride on the [Am]northbound bus
@@ -60,3 +63,11 @@ Yes [F]in your heart is my [C]medicine [Am]shelf
 For [F]what's commonly [G7]known as the [F]blues
 Commonly known as the [C]blues
 {end_of_verse}
+
+
+
+
+
+
+
+

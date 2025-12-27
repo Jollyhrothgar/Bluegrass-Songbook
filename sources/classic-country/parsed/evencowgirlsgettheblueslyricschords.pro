@@ -1,6 +1,9 @@
 {meta: title Even Cowgirls Get The Blues}
 {meta: artist Emmylou Harris}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file evencowgirlsgettheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's a rounder I can tell you [F]that
@@ -50,3 +53,9 @@
 [F]Get this feeling like she's too far gone
 [G7]The only way she's ever [C]been
 {end_of_verse}
+
+
+
+
+
+

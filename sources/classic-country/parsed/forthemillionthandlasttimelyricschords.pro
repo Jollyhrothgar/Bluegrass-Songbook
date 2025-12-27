@@ -1,6 +1,9 @@
 {meta: title For The Millionth And Last Time}
 {meta: artist Elvis Presley}
 {meta: composer Sid Tepper and Roy C. Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file forthemillionthandlasttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For the millionth and the [Am]last time [D7]darling let me hold you [G]tight
@@ -27,3 +30,6 @@ While the millionth and the [Am]last hour [D7]slowly disappears from [G]sight
 [D7]Let me kiss you good[G]night  
 [D7]Let me kiss you good[G]night  
 {end_of_verse}
+
+
+

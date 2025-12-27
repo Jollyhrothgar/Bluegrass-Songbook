@@ -1,6 +1,9 @@
 {meta: title When She Touches Me}
 {meta: artist Gene Watson}
 {meta: composer Charles Quillen and Michael McGuire}
+{meta: x_source classic-country}
+{meta: x_source_file whenshetouchesmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm late again forgot [C]their names when nights were [D7]though
@@ -33,3 +36,6 @@ And I [Am]throw all caution to the [D7]wind
 I can [G]keep my cool be nobody's fool till I [C]h-old [Am]her
 But when she [G]touches me [D7]it's all [G][C]o-v-er
 {end_of_verse}
+
+
+

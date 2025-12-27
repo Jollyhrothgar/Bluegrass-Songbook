@@ -1,6 +1,9 @@
 {meta: title Senses}
 {meta: artist Connie Smith}
 {meta: composer Glen Campbell and Jeannie Seely}
+{meta: x_source classic-country}
+{meta: x_source_file senseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The sense to see and I [C]saw you walk [G]away
@@ -18,3 +21,4 @@
 [G]It's over and I [D7]don't have the sense [G]to let you [C]go
 [G]Oh yes it's over but I [D7]don't have the sense to let you [G]go
 {end_of_verse}
+

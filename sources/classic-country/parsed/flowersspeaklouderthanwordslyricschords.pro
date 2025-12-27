@@ -1,6 +1,9 @@
 {meta: title Flowers Speak Louder Than Words}
 {meta: artist Ferlin Husky}
 {meta: composer Terry Preston and Jack Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file flowersspeaklouderthanwordslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Flowers speak [C]louder than [G]words they say
@@ -29,3 +32,6 @@ That's why I [D7]sent them to [G]you
 Well if [G]flowers speak [C]louder than [G]words my dear 
 Tell me what [D7]keeps us [G]apart
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title More Than Words Can Ever Tell}
 {meta: artist Dolly Parton}
 {meta: composer Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file morethanwordscanevertelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you're rocking back and [F]forth there by the [C]window
@@ -40,3 +43,8 @@ And I love you more than [G7]words could ever [C]tell
 {start_of_verse: Verse 5}
 Yes I love you more than [G7]words could ever [C]tell
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Traded Your Love}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file itradedyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I traded your true love for a new love
@@ -22,3 +25,5 @@
 [G]I had to ramble so I gambled in life's shuffle lost [C]you
 [G]The sweetest that [D7]I have ever [G]knew
 {end_of_verse}
+
+

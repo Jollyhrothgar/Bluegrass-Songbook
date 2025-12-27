@@ -1,6 +1,9 @@
 {meta: title The First One To Find That Rainbow}
 {meta: artist Slim Whitman}
 {meta: composer Bob Hilliard and Philip Springer}
+{meta: x_source classic-country}
+{meta: x_source_file thefirstonetofindthatrainbowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're the first one to find the rainbow
@@ -30,3 +33,6 @@ To hear the [G7]song of the early [C]robin
 To spy the [F]first spring [G7]blossom on the [C]tree
 Is the [F]last one to [G7]notice [C]me
 {end_of_verse}
+
+
+

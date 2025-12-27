@@ -1,6 +1,9 @@
 {meta: title You Done Me Wrong}
 {meta: artist Ray Price}
 {meta: composer Stan Jones and Ray Price}
+{meta: x_source classic-country}
+{meta: x_source_file youdonemewronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you tell me that you [F]care
@@ -37,3 +40,6 @@ Won't you tell me baby [F]why
 You went and [G7]left me here [C]so lonely
 I miss you [G7]only for I love [C]you
 {end_of_verse}
+
+
+

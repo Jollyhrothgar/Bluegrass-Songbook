@@ -1,6 +1,9 @@
 {meta: title It's All Going To Pot}
 {meta: artist Merle Haggard}
 {meta: composer Buddy Cannon, Jamey Johnson and Larry Shell}
+{meta: x_source classic-country}
+{meta: x_source_file itsallgoingtopotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 It's All Going To Pot
@@ -77,3 +80,14 @@ And we’re sure gonna miss it a [G]lot
 I gotta [D7]hundred dollar bill friend 
 You keep your pills cause it’s all going to [G]pot
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Can't Ever Get Better Than This}
 {meta: artist Ricky Skaggs}
 {meta: composer Nancy Montgomery and Irene Kelly}
+{meta: x_source classic-country}
+{meta: x_source_file lovecantevergetbetterthanthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Looking at you I can see what I [F]missed
@@ -51,3 +54,9 @@
 [F]Love can't ever get better than [C]this
 [G7]Love can't ever get better than [C]this
 {end_of_verse}
+
+
+
+
+
+

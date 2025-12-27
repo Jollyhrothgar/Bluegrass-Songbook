@@ -1,6 +1,9 @@
 {meta: title Nobody In His Right Mind Your Mind}
 {meta: artist George Strait}
 {meta: composer Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file nobodyinhisrightmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I burn with de[G7]sire each time my [Am]heart fans the [C]fire
@@ -33,3 +36,7 @@ Even my heart was smart [G7]enough to stay be[C]hind [Am]    [F]    [G7]
 {start_of_verse: Verse 4}
 Even my [Dm]heart was smart [G7]enough to stay be[C]hind
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Clear Across America Tonight}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Teddy Gentry, Greg Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file clearacrossamericatonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Just outside of Austin I [C]turned on my radio
@@ -45,3 +48,8 @@ Said [Am]sorry son but you're breaking [D7]up
 [C]She's comin' through loud and clear
 [G7]Clear across [D7]America [C]tonight
 {end_of_verse}
+
+
+
+
+

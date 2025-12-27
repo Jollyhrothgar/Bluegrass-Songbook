@@ -1,6 +1,9 @@
 {meta: title I Don't Have To Wonder}
 {meta: artist Garth Brooks}
 {meta: composer Shawn Camp and Taylor Dunn}
+{meta: x_source classic-country}
+{meta: x_source_file idonthavetowonderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Drove to the [F]church [C]in my suit and [F]tie 
@@ -37,3 +40,6 @@ Well the [F]angels sang like [C]thunder
 As I [F]felt myself go [C]under
 Now [F]I don't have to [G7]wonder any[Am]more
 {end_of_verse}
+
+
+

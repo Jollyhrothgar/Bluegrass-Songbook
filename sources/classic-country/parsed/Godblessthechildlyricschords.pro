@@ -1,6 +1,9 @@
 {meta: title God Bless the Child}
 {meta: artist Crystal Gayle}
 {meta: composer Arthur Herzog and Billie Holiday}
+{meta: x_source classic-country}
+{meta: x_source_file Godblessthechildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Them that's got shall [C]get
@@ -36,3 +39,6 @@ But [Dm]don't take too [G]long
 But [Bm]God bless the [E7]child that's got his [Am]own [D7]
 That's got his [G]own
 {end_of_verse}
+
+
+

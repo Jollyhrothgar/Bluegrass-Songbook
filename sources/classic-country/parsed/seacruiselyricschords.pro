@@ -1,6 +1,9 @@
 {meta: title Sea Cruise}
 {meta: artist Billy Crash Craddock}
 {meta: composer Huey Smith and Johnny Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file seacruiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Old man rhythm gettin' in my shoes
@@ -62,3 +65,11 @@ Oo-ee oo-ee baby oo-ee oo-ee baby
 So [D7]be my guest you got nothin' to lose
 [G]Won't ya let me take you on a [D7]sea [G]cruise
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's Good To See You}
 {meta: artist Don Williams}
 {meta: composer Alan Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file itsgoodtoseeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's good to see you so [F]good to see [C]you
@@ -36,3 +39,7 @@
 [F]I've crossed the ocean traveled through many [C]lands
 [G7]And it's good to see you to be in your [C]home
 {end_of_verse}
+
+
+
+

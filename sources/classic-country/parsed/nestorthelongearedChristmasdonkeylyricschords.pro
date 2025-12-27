@@ -1,6 +1,9 @@
 {meta: title Nestor The Long Eared Christmas Donkey}
 {meta: artist Marty Robbins}
 {meta: composer Dave Burgess, Gene Autry, Don Pfrimmer}
+{meta: x_source classic-country}
+{meta: x_source_file nestorthelongearedChristmasdonkeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everyone [G7]knows about [C]Rudolph
@@ -71,3 +74,12 @@
 [F]Nestor was so [G7]happy and his [F]eyes held no more [C]tears
 [F]Now all the world knows [G7]Nestor for his laughter and his [C]ears
 {end_of_verse}
+
+
+
+
+
+
+
+
+

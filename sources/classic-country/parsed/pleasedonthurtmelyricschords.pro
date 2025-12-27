@@ -1,6 +1,9 @@
 {meta: title Please Don't Hurt Me}
 {meta: artist Norma Jean}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file pleasedonthurtmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't stand another [F]broken heart 
@@ -29,3 +32,6 @@ Torn all apart and so [G7]lonely
 [C]When I'm in your arms I'd [F]lose control 
 [G7]Please please don't [C]hurt me
 {end_of_verse}
+
+
+

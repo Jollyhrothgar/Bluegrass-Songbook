@@ -1,5 +1,8 @@
 {meta: title The Wonder of You}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file thewonderofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When no-one else can understand [Em]me
@@ -27,3 +30,5 @@ You [C]love me [D7]like you [G]do
 That's the [Am]wonder
 [D7]The wonder of [G]you
 {end_of_verse}
+
+

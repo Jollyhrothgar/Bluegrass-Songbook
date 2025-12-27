@@ -1,6 +1,9 @@
 {meta: title Baby On Board}
 {meta: artist The Oak Ridge Boys}
 {meta: composer J.C. Crowley and Jeff Silbar}
+{meta: x_source classic-country}
+{meta: x_source_file babyonboardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey there mister in a Cadillac
@@ -61,3 +64,11 @@ I’ve got a sign in the window buddy can’t you [C]read
 [Em]I want the world to [C]see who’s [Em]riding next to [Am]me 
 [G]Rocking in my old [D7]Ford with my baby on [G]board
 {end_of_verse}
+
+
+
+
+
+
+
+

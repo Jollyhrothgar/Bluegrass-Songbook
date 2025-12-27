@@ -1,6 +1,9 @@
 {meta: title Two Sparrows In A Hurricane}
 {meta: artist Tanya Tucker}
 {meta: composer Mark Alan Springer}
+{meta: x_source classic-country}
+{meta: x_source_file twosparrowsinahurricanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's fifteen and [F]he's barely driving a [C]car
@@ -41,3 +44,8 @@ She's got his ring and [F]he's got the key to her [C]heart
 Like two [C]sparrows in a [F]hurricane
 [C]Trying to find their [F]way
 {end_of_verse}
+
+
+
+
+

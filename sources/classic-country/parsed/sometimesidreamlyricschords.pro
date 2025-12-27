@@ -1,5 +1,8 @@
 {meta: title Sometimes I Dream}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file sometimesidreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no magic way  [F]for me to get [C]over you
@@ -23,3 +26,5 @@ Speeding through the [G7]night in a long limou[C]sine
 There's a curse on my heart [F]and I'll never [C]love again
 I'm forever a [G7]lonely man but sometimes I [C]dream
 {end_of_verse}
+
+

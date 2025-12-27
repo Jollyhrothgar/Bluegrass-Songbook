@@ -1,6 +1,9 @@
 {meta: title Maiden's Prayer}
 {meta: artist Ray Price}
 {meta: composer Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file maidensprayerlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the evening falls
@@ -33,3 +36,7 @@ Her undying [D7]song of [G]love
 {start_of_verse: Verse 5}
 repeat last 2 verses
 {end_of_verse}
+
+
+
+

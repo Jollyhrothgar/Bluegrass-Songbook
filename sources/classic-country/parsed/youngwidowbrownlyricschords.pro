@@ -1,6 +1,9 @@
 {meta: title Young Widow Brown}
 {meta: artist Waylon Jennings}
 {meta: composer Waylon Jennings and Sky Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file youngwidowbrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]That Jimmy Brown died just twenty-five
@@ -43,3 +46,8 @@ Just [G]keep on a [D7]hanging [G]around
 I'd [C]leave in a minute cept for one thing
 That [G]one thing is [D7]young widow [G]Brown
 {end_of_verse}
+
+
+
+
+

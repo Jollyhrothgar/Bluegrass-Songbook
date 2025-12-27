@@ -1,5 +1,8 @@
 {meta: title Living With The Shades Pulled Down}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file livingwiththeshadespulleddownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I fell in love with a [F]working [C]girl 
@@ -49,3 +52,9 @@ Coming in [G7]off the [C]town
 Day time life [F]sure is [C]cozy
 Living with the [G7]shades pulled [C]down
 {end_of_verse}
+
+
+
+
+
+

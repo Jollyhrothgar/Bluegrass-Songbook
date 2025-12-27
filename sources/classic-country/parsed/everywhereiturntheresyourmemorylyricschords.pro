@@ -1,6 +1,9 @@
 {meta: title Everywhere I Turn (There's Your Memory)}
 {meta: artist Ronnie Milsap}
 {meta: composer Naomi Martin and Archie Jordan}
+{meta: x_source classic-country}
+{meta: x_source_file everywhereiturntheresyourmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I turn [Dm]on the radi[A7]o and [Dm]hear your favorite [G7]song
@@ -41,3 +44,7 @@ To think of [F]anything but [A#7]you
 Everywhere I [G7]turn [C]  everywhere I [C7]turn 
 [Dm]Everywhere I [G7]turn there's your [C]memory
 {end_of_verse}
+
+
+
+

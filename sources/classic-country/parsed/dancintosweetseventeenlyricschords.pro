@@ -1,5 +1,8 @@
 {meta: title Dancin' To Sweet Seventeen}
 {meta: artist Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file dancintosweetseventeenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]He grew [C]up in the sunset the [F]wind at his [C]back
@@ -40,3 +43,7 @@ When you’re [F]dancin' to [G7]sweet seven[C]teen[G7]
 No it's [A#7]hard to act thirty 
 When you’re [F]dancin' to [G7]sweet seven[C]teen
 {end_of_verse}
+
+
+
+

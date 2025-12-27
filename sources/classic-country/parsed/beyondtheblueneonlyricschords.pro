@@ -1,6 +1,9 @@
 {meta: title Beyond The Blue Neon}
 {meta: artist George Strait}
 {meta: composer Larry Boone and Paul Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file beyondtheblueneonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Swingin' doors sawdust [B7]floors
@@ -44,3 +47,9 @@ I hear tell there's people out there
 {start_of_verse: Verse 7}
 [Am]Lord [Dm]what's goin' [Em]on [Dm]beyond that [Em]blue [C]neon
 {end_of_verse}
+
+
+
+
+
+

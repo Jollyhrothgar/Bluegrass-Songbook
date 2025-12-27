@@ -1,6 +1,9 @@
 {meta: title She's Close Enough To Perfect For Me}
 {meta: artist Alabama}
 {meta: composer Carl E. Chambers}
+{meta: x_source classic-country}
+{meta: x_source_file shescloseenoughtoperfectformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes her morning [D7]coffee's way too [Am]strong
@@ -45,3 +48,8 @@ She's [Am]close enough to [C]perfect for [G]me
 {start_of_verse: Verse 5}
 Oh she's [Am]close enough to [C]perfect for [G]me
 {end_of_verse}
+
+
+
+
+

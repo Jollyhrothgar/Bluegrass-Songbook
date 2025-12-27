@@ -1,6 +1,9 @@
 {meta: title Go Mena Si (I'm Sorry)}
 {meta: artist Wilburn Brothers}
 {meta: composer Billy Hervey}
+{meta: x_source classic-country}
+{meta: x_source_file gomenasiimsorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the Island of Japan far [G7]away across the sea
@@ -29,3 +32,6 @@ But [F]it's too late to [C]try
 For the love that we knew then can [G7]never be again 
 I'm sorry I'm sorry go mena [C]si
 {end_of_verse}
+
+
+

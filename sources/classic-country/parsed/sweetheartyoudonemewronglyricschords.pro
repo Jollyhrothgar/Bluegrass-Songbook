@@ -1,6 +1,9 @@
 {meta: title Sweetheart You Done Me Wrong}
 {meta: artist Doyle Lawson}
 {meta: composer Bill Monroe and Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file sweetheartyoudonemewronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You told me that your love was [F]true
@@ -43,3 +46,8 @@ You have [G7]left me all [C]alone
 Maybe there will come a [F]time
 Sweetheart when [G7]you will change your [C]mind
 {end_of_verse}
+
+
+
+
+

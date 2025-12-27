@@ -1,6 +1,9 @@
 {meta: title Forever Was Over Today}
 {meta: artist Billy Walker}
 {meta: composer Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file foreverwasovertodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]With [C]you on my [G7]mind and my [C]hands full of [F]time
@@ -33,3 +36,7 @@ For[F]ever was [G7]over to[C]day
 {start_of_verse: Verse 5}
 For[F]ever was [G7]over to[C]day
 {end_of_verse}
+
+
+
+

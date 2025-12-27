@@ -1,6 +1,9 @@
 {meta: title All I Want To Do}
 {meta: artist George Jones}
 {meta: composer Sonny James and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file alliwanttodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't want to be the one that makes you lonely
@@ -43,3 +46,8 @@ I [C]don't want to be the best man at your [G]wedding
 For I [G]want to show you just how much I love you
 Cause that's the only [D7]thing I want to [G]do
 {end_of_verse}
+
+
+
+
+

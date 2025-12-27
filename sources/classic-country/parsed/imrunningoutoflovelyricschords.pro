@@ -1,6 +1,9 @@
 {meta: title I'm Running Out Of Love}
 {meta: artist Dolly Parton}
 {meta: composer Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file imrunningoutoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm running [C]out of love and I'm [D7]running out of patience
@@ -36,3 +39,7 @@ Some[D7]day you'll pay for the wild seeds you're [G]sowing
 I'm running [C]out of love better learn to [D7]resist temptation
 Or [C]someday you wake [D7]up and I'll be [G]far away
 {end_of_verse}
+
+
+
+

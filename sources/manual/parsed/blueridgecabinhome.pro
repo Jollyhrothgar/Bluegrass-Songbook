@@ -1,6 +1,9 @@
 {meta: title Blue Ridge Cabin Home}
 {meta: artist Lester Flatt}
 {meta: composer Gladys Stacey and Louise Certain}
+{meta: x_source manual}
+{meta: x_source_file blueridgecabinhome.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a well beaten path in the old [C]mountainside
@@ -9,7 +12,7 @@
 [D7]In those Blue Ridge hills far [G]away
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 [C]Oh I love those hills of old Virginia
 [D7]From those Blue Ridge hills I did [G]roam
 [C]When I die won't you bury me on the mountain
@@ -23,7 +26,7 @@
 [D7]They are sleeping in peace together [G]there
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 [C]Oh I love those hills of old Virginia
 [D7]From those Blue Ridge hills I did [G]roam
 [C]When I die won't you bury me on the mountain
@@ -37,16 +40,22 @@
 [D7]Make my resting place upon the hills so [G]high
 {end_of_verse}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 [C]Oh I love those hills of old Virginia
 [D7]From those Blue Ridge hills I did [G]roam
 [C]When I die won't you bury me on the mountain
 [D7]Far away near my Blue Ridge mountain [G]home
 {end_of_chorus}
 
-{start_of_chorus}
+{start_of_chorus: Chorus}
 [C]Oh I love those hills of old Virginia
 [D7]From those Blue Ridge hills I did [G]roam
 [C]When I die won't you bury me on the mountain
 [D7]Far away near my Blue Ridge mountain [G]home
 {end_of_chorus}
+
+
+
+
+
+

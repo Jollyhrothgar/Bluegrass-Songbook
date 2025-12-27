@@ -1,6 +1,9 @@
 {meta: title He Hideth My Soul}
 {meta: artist Eddy Arnold}
 {meta: composer Fanny Crosby and Wm. Kirkpatrick}
+{meta: x_source classic-country}
+{meta: x_source_file hehidethmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A wonderful Savior is [F]Jesus my [C]Lord
@@ -32,3 +35,6 @@ And [C]covers me [G7]there with his [C]hand
 And covers me [G7]there with his [C]hand
 And covers me there with his hand
 {end_of_verse}
+
+
+

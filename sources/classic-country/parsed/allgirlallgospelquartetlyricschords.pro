@@ -1,6 +1,9 @@
 {meta: title All Girl All Gospel Quartet}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file allgirlallgospelquartetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe the [G7]first time I [C]saw them I was nine going [G7]on ten years [C]old
@@ -45,3 +48,9 @@ And it's [C]sad now how [G7]no one [C]remembers though [Am]I find them [F]hard t
 {start_of_verse: Verse 6}
 (In the sweet in the sweet [G7]bye and [C]bye [G7]bye and [C]bye
 {end_of_verse}
+
+
+
+
+
+

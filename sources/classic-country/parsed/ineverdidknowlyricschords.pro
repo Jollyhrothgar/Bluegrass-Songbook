@@ -1,6 +1,9 @@
 {meta: title I Never Did Know}
 {meta: artist David Ball}
 {meta: composer David Ball and Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file ineverdidknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pour that glass just as full [F]as you can pour [C]it
@@ -36,3 +39,7 @@ I [F]Got a habit of [C]taking things too [G7]far
 So [C]pour that glass just as full [F]as you can pour [C]it
 Cause I loved [G7]her with all my [C]heart
 {end_of_verse}
+
+
+
+

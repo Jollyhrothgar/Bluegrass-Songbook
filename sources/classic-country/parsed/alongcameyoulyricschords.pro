@@ -1,6 +1,9 @@
 {meta: title Along Came You}
 {meta: artist George Jones}
 {meta: composer Wayne Kemp, George Jones, Jack Rich}
+{meta: x_source classic-country}
+{meta: x_source_file alongcameyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I used to sit at home and wonder why why [G7]why
@@ -36,3 +39,7 @@ Then along came you  [D7]you knocked me off my [G7]feet
 I [C]never thought I'd find a girl that [C7]ever would be [F]true
 Somewhere out of [C]nowhere [G7]along came [C]you
 {end_of_verse}
+
+
+
+

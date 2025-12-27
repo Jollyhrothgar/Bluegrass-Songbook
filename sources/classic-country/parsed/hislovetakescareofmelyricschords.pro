@@ -1,6 +1,9 @@
 {meta: title His Love Takes Care Of Me}
 {meta: artist Connie Smith}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file hislovetakescareofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes His love [F]takes good care of [C]me 
@@ -28,3 +31,6 @@ I'll be [C]safe His [G7]love takes care of [C]me
 {start_of_verse: Verse 4}
 [F]Yes I'll be [C]safe His [G7]love takes care of [C]me
 {end_of_verse}
+
+
+

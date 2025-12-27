@@ -1,6 +1,9 @@
 {meta: title Right In The Palm Of Your Hand}
 {meta: artist Conway Twitty}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file rightinthepalmofyourhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A willing woman  [G7]a willing man
@@ -49,3 +52,8 @@ Yeah and [F]ain't it just like a [C]man
 [G7]Chasing the rainbow and [C]looking for love
 When it's right [F]in the palm [G7]of your [C]hand
 {end_of_verse}
+
+
+
+
+

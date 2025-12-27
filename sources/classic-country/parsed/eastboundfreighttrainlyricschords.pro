@@ -1,6 +1,9 @@
 {meta: title East Bound Freight Train}
 {meta: artist Reno and Smiley}
 {meta: composer Grandpa Jones}
+{meta: x_source classic-country}
+{meta: x_source_file eastboundfreighttrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never was so [D7]lonesome for my [G]hometown 
@@ -45,3 +48,8 @@ East bound freight train
 [C]East bound freight train
 [G]Let me [D7]stay till the [G]end
 {end_of_verse}
+
+
+
+
+

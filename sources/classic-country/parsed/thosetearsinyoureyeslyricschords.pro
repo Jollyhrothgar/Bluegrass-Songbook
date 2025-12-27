@@ -1,5 +1,8 @@
 {meta: title Those Tears In Your Eyes}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file thosetearsinyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There were tears in your eyes when you [G7]kissed me
@@ -32,3 +35,6 @@ I just want to forget
 [G7]A lovely girl I met
 Cause those tears in your eyes were not for [C]me
 {end_of_verse}
+
+
+

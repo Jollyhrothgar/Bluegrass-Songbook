@@ -1,6 +1,9 @@
 {meta: title Go Little Prayer}
 {meta: artist Eddy Arnold}
 {meta: composer Harry Wilson and Harold Wetherell}
+{meta: x_source classic-country}
+{meta: x_source_file golittleprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Go little prayer [C]go every[G]where
@@ -31,3 +34,7 @@ Go through the night
 {start_of_verse: Verse 5}
 [G]Go [D7]go little [G]prayer
 {end_of_verse}
+
+
+
+

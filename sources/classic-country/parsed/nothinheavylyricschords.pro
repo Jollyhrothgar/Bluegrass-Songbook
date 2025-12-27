@@ -1,6 +1,9 @@
 {meta: title Nothin' Heavy}
 {meta: artist The Bellamy Brothers}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file nothinheavylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We were sixteen at the [G7]most Mc[Am]Cartney was our [F]holy ghost
@@ -52,3 +55,8 @@ I don’t [Am]want nothing [G7]heavy
 Just my [F]baby in the back of my [C]Chevy
 To kiss away my [G7]blues in the full moon[F]light[C]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's Only A Paper Moon}
 {meta: artist Jim Reeves}
 {meta: composer E.Y. Harburg, Harold Arlen, Billy Rose}
+{meta: x_source classic-country}
+{meta: x_source_file itsonlyapapermoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's only a [Am]paper [D7]moon [Am]sailing [D7]over a cardboard [G]sea
@@ -22,3 +25,5 @@ With[C]out [A]your [G]love it's a [Bm]melody [E7]played in a [A7]penny ar[D7]cad
 [G]It's a Barnum and [Am]Baily [D7]World [Am]just as [D7]phony as it can [G]be
 But it [G7]wouldn't be [C]make believe if [D7]you believe in [G]me
 {end_of_verse}
+
+

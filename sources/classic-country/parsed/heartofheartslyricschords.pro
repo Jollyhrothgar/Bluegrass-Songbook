@@ -1,6 +1,9 @@
 {meta: title Heart Of Hearts}
 {meta: artist Randy Travis}
 {meta: composer Kevin Welch and Mike Henderson}
+{meta: x_source classic-country}
+{meta: x_source_file heartofheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I found myself in a [F]cross [C]condition
@@ -42,3 +45,8 @@
 [G7]Cause it don't feel right to my heart of [C]hearts
 [F]Heart of hearts won't lie to [C]me
 {end_of_verse}
+
+
+
+
+

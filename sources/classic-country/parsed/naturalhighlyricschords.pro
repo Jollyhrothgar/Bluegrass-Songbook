@@ -1,6 +1,9 @@
 {meta: title Natural High}
 {meta: artist Merle Haggard}
 {meta: composer Freddy Powers}
+{meta: x_source classic-country}
+{meta: x_source_file naturalhighlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You stayed with me thru thick and thin
@@ -39,3 +42,8 @@ And I can [C]fly   I [G7]can [C]fly
 And you [E]put me on a [F]natural [D7]high
 And I can [G7][C]fly   I [C]can fly
 {end_of_verse}
+
+
+
+
+

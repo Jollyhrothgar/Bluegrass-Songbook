@@ -1,5 +1,8 @@
 {meta: title Hayride Boogie}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file hayrideboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well every night about 8 o’clock 
@@ -32,3 +35,6 @@ Hay ride boogie (hey hey) hay ride boogie (hey hey)
 [D7]Hay ride boogie (hey hey) 
 Well [G]hay ride boogie on a [D7]Saturday [G]night
 {end_of_verse}
+
+
+

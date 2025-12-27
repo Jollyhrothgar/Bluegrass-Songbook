@@ -1,6 +1,9 @@
 {meta: title That Ol' Wind}
 {meta: artist Garth Brooks}
 {meta: composer Leigh Reynolds and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file thatolwindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She dropped her boy at [G7]school on [C]time 
@@ -52,3 +55,8 @@ For right [C]now they're both in love
 The only [Am]thing they're thinking of
 Is that they're [F]finally where their [G7]hearts have always [C]been
 {end_of_verse}
+
+
+
+
+

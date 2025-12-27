@@ -1,6 +1,9 @@
 {meta: title I’ll Love You Till The Day I Die}
 {meta: artist Kitty Wells}
 {meta: composer Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file illloveyoutillthedayidielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Alone here at home while you're [F]free to run and roam
@@ -29,3 +32,6 @@ Why oh [C]why did God make such a fool as [G7]I
 [C]Though your love has been untrue [F]I'm still in love with you
 And [C]I guess I'll love you [G7]till the day I [C]die
 {end_of_verse}
+
+
+

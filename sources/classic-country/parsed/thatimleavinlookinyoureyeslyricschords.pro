@@ -1,6 +1,9 @@
 {meta: title That I'm Leavin' Look In Your Eyes}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Danny Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file thatimleavinlookinyoureyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When our love was [C7]young it was [F]honest and true
@@ -34,3 +37,7 @@ Cause you’ve got that [G7]I’m leavin’ look in your [C]eyes [G7]
 Yes it’s [C]easy to [C7]see that it’s [F]over 
 Cause you’ve got that [G7]I’m leavin’ look in your [C]eyes
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Bluebird Island}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file bluebirdislandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My [G7]ship set [C]sail to [F]Bluebird [C]Island
@@ -28,3 +31,6 @@ Soon dried her [G7]lonely tears [C]away
 The [G7]treasure I [C]found broken [C][F]hearted
 Was locked [G7]within my heart to [C]stay
 {end_of_verse}
+
+
+

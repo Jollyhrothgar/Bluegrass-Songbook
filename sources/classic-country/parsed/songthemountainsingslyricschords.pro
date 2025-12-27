@@ -1,6 +1,9 @@
 {meta: title Song The Mountain Sings}
 {meta: artist John Anderson}
 {meta: composer John Anderson and Buddy Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file songthemountainsingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Play fiddle play [Am]play banjo [C]play
@@ -40,3 +43,8 @@ There’s a song coming down from the mountain
 [C]It’s the same song you hear in the [F]morning
 [Dm]That lets you know [F]that everything’s [C]alright
 {end_of_verse}
+
+
+
+
+

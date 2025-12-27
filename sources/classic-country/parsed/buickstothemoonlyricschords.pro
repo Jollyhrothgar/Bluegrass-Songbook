@@ -1,6 +1,9 @@
 {meta: title Buicks To The Moon}
 {meta: artist Alan Jackson}
 {meta: composer Jim McBride and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file buickstothemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How long will I love you I [C]don't really [G]know
@@ -34,3 +37,7 @@ When the [G]stars have all been counted and [C]I stop loving [Em]you
 [D7]When the [G]stars have all been counted and [C]I stop loving [Em]you
 [C]Honey they'll be driving [G]Buicks [D7]to the [G]moon
 {end_of_verse}
+
+
+
+

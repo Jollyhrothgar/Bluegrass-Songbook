@@ -1,6 +1,9 @@
 {meta: title Come on Down To My World}
 {meta: artist J.D. Crowe & the New South}
 {meta: composer Larry Rice}
+{meta: x_source classic-country}
+{meta: x_source_file comeondowntomyworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday I finally found out [F]where you are
@@ -33,3 +36,6 @@ Why don't you come on down to my world
 [F]Come on down to [G7]my world
 My [F]heart is closed and [G7]you have got the [C]key
 {end_of_verse}
+
+
+

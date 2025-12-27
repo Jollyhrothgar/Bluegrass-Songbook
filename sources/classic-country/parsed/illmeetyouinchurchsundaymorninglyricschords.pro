@@ -1,6 +1,9 @@
 {meta: title I'll Meet You In Church Sunday Morning}
 {meta: artist Porter Wagoner}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file illmeetyouinchurchsundaymorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On Sunday when the church bells start [F]ringing
@@ -29,3 +32,6 @@
 [C]We'll pray to our Lord up in [F]heaven
 [C]To guide us safe [G7]home on our [C]way
 {end_of_verse}
+
+
+

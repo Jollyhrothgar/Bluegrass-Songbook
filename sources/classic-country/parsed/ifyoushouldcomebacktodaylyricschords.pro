@@ -1,6 +1,9 @@
 {meta: title If You Should Come Back Today}
 {meta: artist Johnny Paycheck}
 {meta: composer Pete Howard and Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoushouldcomebacktodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You'd stop a hundred and forty tears
@@ -41,3 +44,7 @@ You’d stop a lotta lonely midnight walking
 {start_of_verse: Verse 4}
 [D7]If you should come back [G]today
 {end_of_verse}
+
+
+
+

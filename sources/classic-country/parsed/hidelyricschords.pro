@@ -1,6 +1,9 @@
 {meta: title Hide}
 {meta: artist Vernon Oxford}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file hidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Never again will [F]I hold you so close to me
@@ -33,3 +36,7 @@ Here I will [F]hide and your memory [C]won’t find me
 {start_of_verse: Verse 5}
 [G7]And I’ll be alone from now [C]on
 {end_of_verse}
+
+
+
+

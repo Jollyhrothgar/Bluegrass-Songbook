@@ -1,6 +1,9 @@
 {meta: title Bandit}
 {meta: artist Jim Ed Brown}
 {meta: composer Zeb Turner, Michael Carr, Milton Nascimeto}
+{meta: x_source classic-country}
+{meta: x_source_file banditlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ole La Comanchero [F]the bandit of [C]Brazil
@@ -44,3 +47,9 @@
 [F]A-dios  the bandit of [C]Brazil
 [F]Ole La Comancheros the bandit of [C]Brazil
 {end_of_verse}
+
+
+
+
+
+

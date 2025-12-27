@@ -1,5 +1,8 @@
 {meta: title Christmas In My Hometown}
 {meta: artist Charley Pride}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasinmyhometownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a white Christmas in my [G7]hometown
@@ -35,3 +38,7 @@ Oh the [F]Christmas chimes are ringing in the [C]tower
 Time for [F]all to go and wait for Santa's [C]coming
 Cause it's [G7]merry Christmas here in my [C]hometown
 {end_of_verse}
+
+
+
+

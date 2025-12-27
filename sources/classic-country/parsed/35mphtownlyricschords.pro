@@ -1,6 +1,9 @@
 {meta: title 35 mph Town}
 {meta: artist Toby Keith}
 {meta: composer Toby Keith and Bobby Pinson}
+{meta: x_source classic-country}
+{meta: x_source_file 35mphtownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mama locked the door last night for the first time in all of her [F]years 
@@ -40,3 +43,6 @@ Since they [C]planted a prowler in this [G7]35 mile an hour [Am]town [F]
 No they're [C]going nowhere fast tonight
 No [G7]matter how fast they drive this [F]35 [G7]mile an hour [C]town  
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Drive Another Nail}
 {meta: artist Randy Travis}
 {meta: composer Mike Curtis and Marlon Raybon}
+{meta: x_source classic-country}
+{meta: x_source_file driveanothernaillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sam was a carpenter fifty years[D7]
@@ -39,3 +42,7 @@ You've [C]got the scars on Your two hands that [G]show where I have failed
 Lord [Am]I don't want to [D7]drive another [G]nail
 Repeat last verse
 {end_of_verse}
+
+
+
+

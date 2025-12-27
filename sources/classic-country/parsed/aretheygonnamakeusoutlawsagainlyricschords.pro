@@ -1,6 +1,9 @@
 {meta: title Are They Gonna Make Us Outlaws Again}
 {meta: artist Vernon Oxford}
 {meta: composer James A. Talley}
+{meta: x_source classic-country}
+{meta: x_source_file aretheygonnamakeusoutlawsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You never picked no peaches [F]never rode no boxcar [C]train
@@ -61,3 +64,11 @@ Are they [F]gonna make us [G7]outlaws [C]again
 {start_of_verse: Verse 6}
 Are they [F]gonna make us [G7]outlaws [C]again
 {end_of_verse}
+
+
+
+
+
+
+
+

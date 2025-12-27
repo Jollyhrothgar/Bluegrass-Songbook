@@ -1,6 +1,9 @@
 {meta: title Sick Sober And Sorry}
 {meta: artist Lefty Frizzell}
 {meta: composer Tex Atchinson and Eddie Hazlewood}
+{meta: x_source classic-country}
+{meta: x_source_file sicksoberandsorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh sick sober and [F]sorry
@@ -50,3 +53,9 @@ They [G7]locked and they bolted the [C]door
 Sick sober and [F]sorry
 But [G7]look at the fun that I’ve [C]had
 {end_of_verse}
+
+
+
+
+
+

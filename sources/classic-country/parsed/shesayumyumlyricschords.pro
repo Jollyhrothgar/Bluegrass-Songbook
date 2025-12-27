@@ -1,5 +1,8 @@
 {meta: title She's A Yum Yum}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file shesayumyumlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweeter than honey can be to your [D7]tum tum
@@ -26,3 +29,6 @@ That little girl of mine she's a [G]yum yum
 [D7]That little girl of mine she's a [G]yum yum
 [D7]That little girl of mine she's a [G]yum yum
 {end_of_verse}
+
+
+

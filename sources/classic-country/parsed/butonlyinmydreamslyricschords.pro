@@ -1,6 +1,9 @@
 {meta: title But Only In My Dreams}
 {meta: artist Marty Robbins}
 {meta: composer Joe Babcock}
+{meta: x_source classic-country}
+{meta: x_source_file butonlyinmydreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have [C]held you in my [G]arms  I have [C]known your sweetest [Em]charms
@@ -15,3 +18,4 @@
 [G]I have [C]known what life is [G]for  rich and [C]gay with full [Em]reward
 [C]All that I could ever [G]ask and more [C]but only [D7]in my [G]dreams
 {end_of_verse}
+

@@ -1,6 +1,9 @@
 {meta: title You Haven't Heard}
 {meta: artist Stonewall Jackson}
 {meta: composer Stonewall Jackson and Juanita Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file youhaventheardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That last time I [G7]called you on the [C]phone
@@ -29,3 +32,6 @@
 [F]I'll love you even if I live [C]forever
 [G7]You haven't heard about me dying have you [C]yet
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Till The End Of The World}
 {meta: artist Jim Reeves}
 {meta: composer Vaughn Horton}
+{meta: x_source classic-country}
+{meta: x_source_file tilltheendoftheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Till the stars in the sky cease [D7]to shine
@@ -29,3 +32,6 @@ Till the sun and the moon hide in darkness
 [C]Oh my darling that's how long I will love [G]you
 [A7]Till the end of [D7]the world you'll be [G]mine
 {end_of_verse}
+
+
+

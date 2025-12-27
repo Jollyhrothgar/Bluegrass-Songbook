@@ -1,6 +1,9 @@
 {meta: title My Baby No Esta Aqui}
 {meta: artist Garth Brooks}
 {meta: composer David Stephenson and Shane Stockton}
+{meta: x_source classic-country}
+{meta: x_source_file mybabynoestaaquilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She used to be my Rosa Ama[C]rilla
@@ -48,3 +51,8 @@ My [D7]baby no esta aqui
 My baby no esta aqui
 My baby no esta aqui no [G]more
 {end_of_verse}
+
+
+
+
+

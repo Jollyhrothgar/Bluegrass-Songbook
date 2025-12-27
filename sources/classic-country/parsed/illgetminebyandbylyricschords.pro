@@ -1,5 +1,8 @@
 {meta: title I'll Get Mine By And By}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file illgetminebyandbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]See my gal  [D7]meek as a [G]lamb
@@ -64,3 +67,10 @@ I'll get mine by and [C]by
 Where the chickens don't roost so [G]high
 I'll get [D7]mine by and [G]by 
 {end_of_verse}
+
+
+
+
+
+
+

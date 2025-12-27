@@ -1,6 +1,9 @@
 {meta: title Will the Circle Be Unbroken}
 {meta: artist George Jones}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file willthecirclebeunbrokenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was standing by my window
@@ -56,3 +59,13 @@ In the sky  Lord  in [G7]the [C]sky
 When I saw that hearse come rolling
 For to carry my [G7]mother [C]away
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

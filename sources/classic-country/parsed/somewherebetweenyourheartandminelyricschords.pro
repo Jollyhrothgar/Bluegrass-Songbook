@@ -1,6 +1,9 @@
 {meta: title Somewhere Between Your Heart And Mine}
 {meta: artist Johnny Rodriguez}
 {meta: composer Bonnie Owens and Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file somewherebetweenyourheartandminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somewhere between [C]your heart and [G]mine 
@@ -27,3 +30,6 @@ And I'm left in the [D7]middle [G]again
 There's a wall so high it [C]reaches the [G]sky 
 Somewhere [D7]between me and [G]you
 {end_of_verse}
+
+
+

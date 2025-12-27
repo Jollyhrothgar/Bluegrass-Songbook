@@ -1,6 +1,9 @@
 {meta: title Only The Strong Survive}
 {meta: artist Tammy Wynette}
 {meta: composer Jerry Butler, Kenneth Gamble, Leon Huff}
+{meta: x_source classic-country}
+{meta: x_source_file onlythestrongsurvivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Never seen [G7]anything as strange as [Am]love [C]
@@ -36,3 +39,7 @@ To hold on [Fm]to
 [C]Love's easy [G7]born but [Am]hard to keep [A7]alive
 And [Dm]only the [Em]strong [F]sur[C]vive
 {end_of_verse}
+
+
+
+

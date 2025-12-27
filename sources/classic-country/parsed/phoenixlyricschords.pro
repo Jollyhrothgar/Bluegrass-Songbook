@@ -1,6 +1,9 @@
 {meta: title Phoenix}
 {meta: artist Garth Brooks}
 {meta: composer Dan Fogelberg}
+{meta: x_source classic-country}
+{meta: x_source_file phoenixlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Like a Phoenix I have risen from the [C]flames
@@ -32,3 +35,7 @@ And I guess [G7]that I never [C]will)
 [F]Like a Phoenix I have risen from the [C]flames
 No [G7]more living [F]someone else's [C]dreams
 {end_of_verse}
+
+
+
+

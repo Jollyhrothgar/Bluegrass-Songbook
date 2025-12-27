@@ -1,6 +1,9 @@
 {meta: title Plenty Of Everything But You}
 {meta: artist Stonewall Jackson}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file plentyofeverythingbutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got plenty of [G7]everything but [C]you
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [G7]I've got plenty of everything but [C]you
 {end_of_verse}
+
+
+
+
+

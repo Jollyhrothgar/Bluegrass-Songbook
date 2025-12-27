@@ -1,6 +1,9 @@
 {meta: title Just Keep On Thinking Of Me}
 {meta: artist Sonny James}
 {meta: composer John Skye}
+{meta: x_source classic-country}
+{meta: x_source_file justkeepthinkingofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling when we’re miles apart 
@@ -43,3 +46,9 @@
 {start_of_verse: Verse 5}
 [G7]Just keep on thinking of [C]me [F]  [C]  [F]  [C]
 {end_of_verse}
+
+
+
+
+
+

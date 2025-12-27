@@ -1,6 +1,9 @@
 {meta: title It's Only Make Believe}
 {meta: artist Conway Twitty}
 {meta: composer Conway Twitty and Jack Nance}
+{meta: x_source classic-country}
+{meta: x_source_file itsonlymakebelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]People see us everywhere
@@ -53,3 +56,9 @@ My one and only prayer
 [C]You are my every dream
 [D7]But it's [C]on-ly make [G]believe
 {end_of_verse}
+
+
+
+
+
+

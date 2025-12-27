@@ -1,6 +1,9 @@
 {meta: title Jesus Use Me}
 {meta: artist The Faith Tones}
 {meta: composer Jack Campbell and Billy Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file Jesususemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear Lord I'll [G7]be a [C]witness if [F]you will help my [C]weakness
@@ -47,3 +50,9 @@ Though the cost be [D7]great I'll [G7]work for [C]you
 {start_of_verse: Verse 5}
 [G7]Work for [C]you
 {end_of_verse}
+
+
+
+
+
+

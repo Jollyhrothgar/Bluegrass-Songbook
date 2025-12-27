@@ -1,5 +1,8 @@
 {meta: title Green Light Lyrics Chords}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file greenlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I turned your hole card [C]upside [G]down
@@ -44,3 +47,10 @@ To have your aces trumped
 [G]And be taken for a [E7]chump
 [Am]Now there's [D7]a green light so spin your [G]wheels
 {end_of_verse}
+
+
+
+
+
+
+

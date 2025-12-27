@@ -1,6 +1,9 @@
 {meta: title True}
 {meta: artist Jim Reeves}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file truelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's true I know it's true I'm losing [C]you
@@ -27,3 +30,6 @@
 [G]But it's true I know it's true my dreams are [C]through
 [D7]And they'll never come [G]true
 {end_of_verse}
+
+
+

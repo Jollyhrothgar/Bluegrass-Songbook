@@ -1,6 +1,9 @@
 {meta: title Soul Deep}
 {meta: artist Eddy Arnold}
 {meta: composer Wayne C. Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file souldeeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling I don't [F]know much [C]I know I love you [F]so much
@@ -34,3 +37,6 @@ Way down inside me it's [F]soul [C]deep
 It's too big to [F]hide and it [G7]can't be [C]denied
 My [F]love is a river running soul [C]deep [G7]soul [C]deep
 {end_of_verse}
+
+
+

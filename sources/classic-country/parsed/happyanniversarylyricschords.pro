@@ -1,6 +1,9 @@
 {meta: title Happy Anniversary}
 {meta: artist Slim Whitman}
 {meta: composer Gary S. Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file happyanniversarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling happy [C][G7]anniversary
@@ -36,3 +39,7 @@ Another year of love has gone [G7]by
 [C]Thank you for each [G7]day you give to [C]me
 My [F]darling happy [C][G7]anniversary
 {end_of_verse}
+
+
+
+

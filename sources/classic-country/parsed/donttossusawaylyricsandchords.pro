@@ -1,6 +1,9 @@
 {meta: title Don't Toss us Away Lyrics and Chords}
 {meta: artist Patty Loveless}
 {meta: composer Brian McLelan}
+{meta: x_source classic-country}
+{meta: x_source_file donttossusawaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it seems that everyone we [F]know
@@ -47,3 +50,9 @@ Darling [F]pl-ease [G7]don't toss us [C]away
 {start_of_verse: Verse 7}
 Oh darling [F]pl-ease [G7]don't toss us [C]away
 {end_of_verse}
+
+
+
+
+
+

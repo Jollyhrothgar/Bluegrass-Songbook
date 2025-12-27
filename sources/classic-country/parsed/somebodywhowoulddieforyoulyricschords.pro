@@ -1,6 +1,9 @@
 {meta: title Somebody Who Would Die For You}
 {meta: artist Tracy Lawrence}
 {meta: composer Adam Wheeler and Mark Narmore}
+{meta: x_source classic-country}
+{meta: x_source_file somebodywhowoulddieforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was begging at the mini mart
@@ -60,3 +63,7 @@ To see us [Am]through [G7]   [Dm]
 Your Son died for [F]me would I [C]be
 [Dm]Somebody who would [F]di[G7]e for [C]you
 {end_of_verse}
+
+
+
+

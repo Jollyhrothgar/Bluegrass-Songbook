@@ -1,6 +1,9 @@
 {meta: title Amy's Eyes}
 {meta: artist Charley Pride}
 {meta: composer Terry Brown and Jaima Prater Hunt}
+{meta: x_source classic-country}
+{meta: x_source_file amyseyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Amy left her [F]crayons on the [Dm]table yester[Am]day
@@ -36,3 +39,7 @@ To [Dm]see that something's [Am]missing when you [D7]look through [G7]Amy's [C]e
 You'll [Dm]see that something's [Am]missing when you [D7]look through [G7]Amy's [C]eyes
 Amy left her [F]crayons on the [D7]table yester[Am]day [F]  [C]  [D7]    [G7]   [C]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title She's Not Crying Anymore}
 {meta: artist Billy Ray Cyrus}
 {meta: composer Buddy Cannon, Terry Chelton, Billy Ray Cyrus}
+{meta: x_source classic-country}
+{meta: x_source_file shesnotcryinganymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She used to cry when I'd come home late
@@ -55,3 +58,10 @@ There's a smile upon her [F]face
 A new love takes my [G7]place
 She's not crying [C][F][Am]any--more
 {end_of_verse}
+
+
+
+
+
+
+

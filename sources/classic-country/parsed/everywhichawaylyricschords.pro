@@ -1,5 +1,8 @@
 {meta: title Every Which-A- Way}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file everywhichawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Every which-a-[C]way I go
@@ -42,3 +45,8 @@ And every which-a-way I turn I [G7]seem to be
 Lookin' for a love I never never find
 Fightin' back pain and [C]misery
 {end_of_verse}
+
+
+
+
+

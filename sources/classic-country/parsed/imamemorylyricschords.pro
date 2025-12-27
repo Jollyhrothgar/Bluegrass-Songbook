@@ -1,6 +1,9 @@
 {meta: title I'm A Memory}
 {meta: artist Brenda Lee}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file imamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm a [C]game [Em]that you use to [G]play[C]
@@ -22,3 +25,5 @@ I'm a [F]face that [C]fades with the [F]light
 I'm a [C]tear [Em]that falls [F]out of si[G]ght
 [C]Close your [F]eyes I'm a [G]memory
 {end_of_verse}
+
+

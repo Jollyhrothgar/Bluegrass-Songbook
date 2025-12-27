@@ -1,6 +1,9 @@
 {meta: title Lo Lenna}
 {meta: artist Webb Pierce}
 {meta: composer Audrey Grisham}
+{meta: x_source classic-country}
+{meta: x_source_file lolennalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the cool wind blows across the water
@@ -38,3 +41,8 @@ Oh where's my [F]baby where's my [C]baby
 When Lo Lenna hollers well I [G7]just gotta follow Lo Lenna's [C]voice
 When Lo Lenna hollers well I [G7]just gotta follow Lo Lenna's [C]voice
 {end_of_verse}
+
+
+
+
+

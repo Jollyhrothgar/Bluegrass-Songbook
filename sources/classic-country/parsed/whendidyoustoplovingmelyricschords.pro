@@ -1,6 +1,9 @@
 {meta: title When Did You Stop Loving Me}
 {meta: artist George Jones}
 {meta: composer Donny Kees and Monty Holmes}
+{meta: x_source classic-country}
+{meta: x_source_file whendidyoustoplovingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When did you [G7]stop loving [C]me
@@ -29,3 +32,6 @@
 [C]Now I can tell when we make love it ain't me you're thinking [F]of
 [C]Tell me when did [G7]you stop loving [C]me
 {end_of_verse}
+
+
+

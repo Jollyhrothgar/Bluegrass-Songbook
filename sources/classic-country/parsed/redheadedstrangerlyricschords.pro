@@ -1,5 +1,8 @@
 {meta: title Red Headed Stranger}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file redheadedstrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The red-headed stranger from Blue Rock, Montana
@@ -92,3 +95,14 @@ Don't fight him don't spite [F]him
 Just wait 'til [C]tomorrow
 Maybe he'll [G7]ride on [C]again
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

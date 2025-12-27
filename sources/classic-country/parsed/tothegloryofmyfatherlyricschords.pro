@@ -1,5 +1,8 @@
 {meta: title To The Glory Of My Father}
 {meta: artist Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file tothegloryofmyfatherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To the glory [G7]of God my [C]Father[C7]
@@ -46,3 +49,9 @@ Power and [C]honor to the [G7]Three in [C]One
 {start_of_verse: Verse 4}
 To the glory [G7]of God my [C]Father
 {end_of_verse}
+
+
+
+
+
+

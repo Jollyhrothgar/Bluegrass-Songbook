@@ -1,6 +1,9 @@
 {meta: title Tennessee Homesick Blues}
 {meta: artist Dolly Parton}
 {meta: composer recorded by Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseehomesickblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]New York City ain't no kind of place 
@@ -67,3 +70,11 @@ With [C]Tennessee homesick [G7]blues running through my [F]head
 I've got those [C]Tennessee homesick [G7]blues running through my [F]head
 Tennessee homesick [C]blues
 {end_of_verse}
+
+
+
+
+
+
+
+

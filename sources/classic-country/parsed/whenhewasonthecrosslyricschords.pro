@@ -1,6 +1,9 @@
 {meta: title When He Was On the Cross}
 {meta: artist Penny Gilley}
 {meta: composer Ronald Payne and Ronny Hinson}
+{meta: x_source classic-country}
+{meta: x_source_file whenhewasonthecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm not on an ego trip
@@ -51,3 +54,10 @@ I made mistakes I often slip
 [C]Yet [D7]when He [Am]was on [D7]the [G][C]cross
 [Am]I was [D7]on His [G]mind
 {end_of_verse}
+
+
+
+
+
+
+

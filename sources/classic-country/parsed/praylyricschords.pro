@@ -1,5 +1,8 @@
 {meta: title Pray}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file praylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take your eyes off yourself look at somebody else
@@ -21,3 +24,5 @@ There's [F]others lesser than [G]you[G7]
 Get your [C]mind off yourself think of somebody else
 And [G7]pray  and [C]pray
 {end_of_verse}
+
+

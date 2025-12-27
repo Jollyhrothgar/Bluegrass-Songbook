@@ -1,5 +1,8 @@
 {meta: title When I Loved Her}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file whenilovedherlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well she didn't look as pretty as some [C]others I have [G]known
@@ -35,3 +38,7 @@ And she [C]made what I was [D7]doin' seem worth[G]while
 It's the [C]closest thing to [D7]livin' that I [G]guess I've ever [Em]known
 And it [C]made me wanna [D7]smile  when I [G]loved her
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We're Makin' Up For Lost Time}
 {meta: artist Vern Gosdin}
 {meta: composer Rex Gosdin and Les Reed}
+{meta: x_source classic-country}
+{meta: x_source_file weremakinupforlosttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]It's good to [G]hold you [C]again
@@ -28,3 +31,5 @@ We're making up for [Dm]lost [C]time
 Letting our [Em]love shine on each [Dm]other[G]
 We're making up for [Dm]lost [C]time
 {end_of_verse}
+
+

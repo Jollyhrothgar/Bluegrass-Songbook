@@ -1,6 +1,9 @@
 {meta: title She Loved The Devil Out Of Me}
 {meta: artist Tracy Lawrence}
 {meta: composer Earl Clark, Rick Huckaby, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file shelovedthedeviloutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can't see a freight train coming 
@@ -50,3 +53,8 @@ Lord that [Dm]woman was my Savior
 Lord that [Dm]woman was my Savior 
 [G7]She loved the devil out of [C]me
 {end_of_verse}
+
+
+
+
+

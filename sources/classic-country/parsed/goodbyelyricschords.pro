@@ -1,6 +1,9 @@
 {meta: title Goodbye}
 {meta: artist Eddy Arnold}
 {meta: composer Larry Butler and Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It takes an awful lot to get me down
@@ -25,3 +28,6 @@ It takes an awful lot to make me cry
 [G]It takes an awful lot to want to die
 [G7]But it only took one word from her  umm [C]umm  [G]goodbye
 {end_of_verse}
+
+
+

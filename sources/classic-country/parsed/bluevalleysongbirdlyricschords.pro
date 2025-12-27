@@ -1,5 +1,8 @@
 {meta: title Blue Valley Songbird}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file bluevalleysongbirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She was born in a place [D7]called Blue [G]Valley
@@ -68,3 +71,12 @@ And the [C]Blue Valley [G]songbird is [D7]singing to[G]night
 Oh the [C]Blue Valley [G]songbird is [D7]singing to[G]night
 And she sings like a [B7]bird and she [C]writes like a [G]poet
 {end_of_verse}
+
+
+
+
+
+
+
+
+

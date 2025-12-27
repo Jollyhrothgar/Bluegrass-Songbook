@@ -1,5 +1,8 @@
 {meta: title This Much I Know}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file thismuchiknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This much I know [F]  she'll never come back to [C]me
@@ -29,3 +32,6 @@ This much I need [F]  oh but I'll never [G7]have
 This much I [C]need [F]  words to speak without missing [C]her
 [F]Or just some new way to [C]breathe [G7]  this much I [C]need
 {end_of_verse}
+
+
+

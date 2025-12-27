@@ -1,5 +1,8 @@
 {meta: title Too Many Times}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file toomanytimeslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rivalries between sons and [Em]fathers[C]
@@ -49,3 +52,9 @@ But the [D7]world has turned too many [G]times
 Keep turning [D7]me oh too many [G]times
 Round and [D7]round and round too many [G]times
 {end_of_verse}
+
+
+
+
+
+

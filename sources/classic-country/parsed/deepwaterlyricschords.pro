@@ -1,6 +1,9 @@
 {meta: title Deep Water}
 {meta: artist Bob Wills}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file deepwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm  [G7]drifting into deep [G][C]water
@@ -29,3 +32,6 @@
 [G]I'm  [G7]winding up in deep [G][C]water
 [D7]So deep in love with [G]you
 {end_of_verse}
+
+
+

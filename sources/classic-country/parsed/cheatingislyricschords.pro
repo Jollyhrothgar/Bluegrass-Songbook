@@ -1,6 +1,9 @@
 {meta: title Cheating Is}
 {meta: artist Barbara Fairchild}
 {meta: composer Rafe VanHoy}
+{meta: x_source classic-country}
+{meta: x_source_file cheatingislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cheating is a thing that starts when you bring
@@ -36,3 +39,7 @@ Hanging in the middle while mommy and daddy [C]choose
 Cheating is a game where nobody wins
 And the [G7]ones that aren't big enough to play are the ones who [C]lose
 {end_of_verse}
+
+
+
+

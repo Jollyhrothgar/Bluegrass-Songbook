@@ -1,6 +1,9 @@
 {meta: title Blue Skies Again}
 {meta: artist John Anderson}
 {meta: composer Michael Patrick Heeney}
+{meta: x_source classic-country}
+{meta: x_source_file blueskiesagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You'd think it's raining for all the [F]teardrops
@@ -41,3 +44,7 @@ I [Am]wonder if I'll ever [D7]see blue skies a[G]gain
 {start_of_verse: Verse 4}
 I [Am]wonder if I'll ever [D7]see blues skies [G]again
 {end_of_verse}
+
+
+
+

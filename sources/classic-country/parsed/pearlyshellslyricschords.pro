@@ -1,6 +1,9 @@
 {meta: title Pearly Shells}
 {meta: artist Burl Ives}
 {meta: composer John Kalapana-Leonpobar}
+{meta: x_source classic-country}
+{meta: x_source_file pearlyshellslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Pearly Shells
@@ -42,3 +45,8 @@ When I [C]see them my heart [F]tells me that I love you
 More than [C]all the [G7]little pearly [C]shells 
 More than [C]all the [G7]little pearly [C]shells
 {end_of_verse}
+
+
+
+
+

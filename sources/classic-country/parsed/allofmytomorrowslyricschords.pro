@@ -1,5 +1,8 @@
 {meta: title All Of My Tomorrows}
 {meta: artist Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file allofmytomorrowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll start [D7]reliving my [G]yester[C]days
@@ -38,3 +41,8 @@ While [G]all my to[D7]morrows [C]di[G]e
 [C]I'll start re[D7]living my [G]yester[C]days
 While [G]all my to[D7]morrows [C]di[G]e
 {end_of_verse}
+
+
+
+
+

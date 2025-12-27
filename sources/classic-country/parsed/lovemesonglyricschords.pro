@@ -1,5 +1,8 @@
 {meta: title Love Me Song}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file lovemesonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well love me  love me  [F]love me  oh baby [G7]love me
@@ -44,3 +47,9 @@ If you really love me then you’ll keep my eyes dry
 [F]Love me love me love me well I’m hoping you [C]do
 Well baby [G7]love me love me love me the [F]way that I love [C]you 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Find Jesus}
 {meta: artist the Nitty Gritty Dirt Band}
 {meta: composer Jimmy Ibbotson}
+{meta: x_source classic-country}
+{meta: x_source_file ifindJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I walk in silence when [C]He [G]comes
@@ -64,3 +67,11 @@
 [D7]I find Je-sus in the face of [G]those
 [D7]Whose hearts are singing with the Heavenly [G]Host
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Great Mail Robbery}
 {meta: artist Rex Allen Jr.}
 {meta: composer Joseph Paul Allen}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatmailrobberylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He met me at the corner with his hand above his hip
@@ -50,3 +53,9 @@ I've wondered how a [G7]kid could be so [C]strong
 The [D7]last thing that he promised her when he strapped on his gun
 Today I'm bringing daddy's letter [G]home
 {end_of_verse}
+
+
+
+
+
+

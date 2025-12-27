@@ -1,6 +1,9 @@
 {meta: title Camping In Canaan’s Land}
 {meta: artist Slim Whitman}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file campingincanaanslandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have left the land of bondage [C]with its earthly treasures
@@ -34,3 +37,7 @@ I'm [G]camping I'm camping in [D7]Canaan's happy [G]land
 Glory hallelujah I have [C]reached the land of promise
 I'm [G]camping I'm camping in [D7]Canaan's happy [G]land
 {end_of_verse}
+
+
+
+

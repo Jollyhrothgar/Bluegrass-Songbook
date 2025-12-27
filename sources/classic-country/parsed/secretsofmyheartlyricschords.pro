@@ -1,6 +1,9 @@
 {meta: title Secrets Of My Heart}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Harry McAuliffe and Bobby Gregory}
+{meta: x_source classic-country}
+{meta: x_source_file secretsofmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In days gone by I remember dear
@@ -43,3 +46,8 @@ Don't [F]ever drift [C]apart
 Re[F]member what I'm [C]telling to [Am]you
 Are the [D7]secrets [G7]of my [C]heart
 {end_of_verse}
+
+
+
+
+

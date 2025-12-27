@@ -1,6 +1,9 @@
 {meta: title You Tell Me}
 {meta: artist Johnny Cash}
 {meta: composer Sam Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file youtellmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tell me why she left me [G7]I'll tell you why I cry
@@ -25,3 +28,6 @@ Tell me why she [C]left me and [G7]I'll tell you why I'm [C]blue
 {start_of_verse: Verse 4}
 You [G7]tell me then I'll tell [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If You See A Change In Me}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouseeachangeinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They crucified our Jesus nailed His body [F]to a [C]cross
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [Am]And if you see a change in me [D7]Praise God and [G7]let Him [C]know
 {end_of_verse}
+
+
+
+

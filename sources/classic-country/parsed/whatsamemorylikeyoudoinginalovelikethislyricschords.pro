@@ -1,6 +1,9 @@
 {meta: title What's A Memory Like You Doing In A Love Like This}
 {meta: artist John Schneider}
 {meta: composer Charles Quillen and John Charles Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file whatsamemorylikeyoudoinginalovelikethislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You know you shouldn't [Am]be here  [D7]what am I supposed to [G]do
@@ -29,3 +32,6 @@
 [C]Can't you see that she can love me  the way you never [G]could
 [C]And I [D7]really want to love her  ain't it time you left for [G]good
 {end_of_verse}
+
+
+

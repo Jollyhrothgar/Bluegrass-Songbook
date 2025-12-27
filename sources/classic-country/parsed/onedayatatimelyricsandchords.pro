@@ -1,5 +1,8 @@
 {meta: title One Day At a Time}
 {meta: artist Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file onedayatatimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm only human I'm just a [D7]woman 
@@ -28,3 +31,6 @@ Just give me the [D7]strength to do everyday what I have to [G]do
 [G7]Yesterday's [C]gone sweet Jesus and tomorrow may never be [G]mine 
 Lord help me [D7]today show me the way one day at a [G]time 
 {end_of_verse}
+
+
+

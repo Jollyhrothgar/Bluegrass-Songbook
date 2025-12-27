@@ -1,6 +1,9 @@
 {meta: title Sunbonnet Sue}
 {meta: artist Bob Wills}
 {meta: composer Milton Brown}
+{meta: x_source classic-country}
+{meta: x_source_file sunbonnetsuelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sunbonnet Sue when I said [A7]goodbye to you
@@ -36,3 +39,7 @@ You promised [D7]you'd be true Sunbonnet [G]Sue
 When skies are blue I wanna [A7]hear you say I do
 For I'm in [D7]love with you Sunbonnet [G]Sue
 {end_of_verse}
+
+
+
+

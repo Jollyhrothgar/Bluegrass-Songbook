@@ -1,6 +1,9 @@
 {meta: title My Soul Walked Through The Darkness}
 {meta: artist Red Foley}
 {meta: composer Fred Mathews}
+{meta: x_source classic-country}
+{meta: x_source_file mysoulwalkedthroughthedarknesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My soul was bowed in sorrow
@@ -43,3 +46,6 @@ Shed its light upon my [Am]way
 And my [C]soul walked through the [Am]darkness
 When [D7]I be[G7]gan to [C]pray[F]  [C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title All You Ever Do Is Bring Me Down}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo and Al Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file allyoueverdoisbringmedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't sleep a wink any[D7]more
@@ -41,3 +44,8 @@ That's cause honey all you do is bring me [G]down
 That's cause [D7]honey all you do is bring me [G]down
 Honey [D7]all you ever do is bring me [G]down
 {end_of_verse}
+
+
+
+
+

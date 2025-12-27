@@ -1,5 +1,8 @@
 {meta: title I Just Loved Her For The Last Time}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file ijustlovedherforthelastimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From the first time I loved her
@@ -31,3 +34,6 @@ But every time the sun goes down
 [F]I just dropped in to bring it to an [C]end
 [F]And I just [C]loved her for the last [G7]time [C]again
 {end_of_verse}
+
+
+

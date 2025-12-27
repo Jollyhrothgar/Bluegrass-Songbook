@@ -1,6 +1,9 @@
 {meta: title Give Me Just A Little Bit More Time}
 {meta: artist Marty Stuart}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file givemejustalittlebitmoretimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm busy every day as I travel on my way
@@ -76,3 +79,13 @@ But give me just a [G7]little more [C]time
 I'm ready when you call me
 But give me just a [G7]little more [C]time
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

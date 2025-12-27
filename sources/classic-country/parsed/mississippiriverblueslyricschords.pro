@@ -1,6 +1,9 @@
 {meta: title Mississippi River Blues}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file mississippiriverblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh you Mississippi river with [F]waters so deep and [C]wide
@@ -29,3 +32,6 @@ You'll see me [C]hanging round again some day
 Cause I know [G7]that's the only way to lose
 The Mississippi river [C]blues
 {end_of_verse}
+
+
+

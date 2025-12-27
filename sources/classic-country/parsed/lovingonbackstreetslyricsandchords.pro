@@ -1,6 +1,9 @@
 {meta: title Loving on Back Streets}
 {meta: artist Mel Street}
 {meta: composer Hugh King}
+{meta: x_source classic-country}
+{meta: x_source_file lovingonbackstreetslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We tried to pick the most unlikely [C]places
@@ -30,3 +33,6 @@ Suffered hell through the [C]day-light for the [A7]heaven darkness [D7]brings
 Of lovin' on back streets and [D7]livin' on [G]main
 Of lovin' on back streets and livin' on main
 {end_of_verse}
+
+
+

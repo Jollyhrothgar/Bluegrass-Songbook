@@ -1,6 +1,9 @@
 {meta: title I'm Not Mine To Give}
 {meta: artist Tammy Wynette}
 {meta: composer Fred Lehner}
+{meta: x_source classic-country}
+{meta: x_source_file imnotminetogivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know how you love me [F]you tell me all the time
@@ -23,3 +26,5 @@ But life is one thing [C]you just can't [G7]relive
 It can't be me cause [C]I'm [G7]not mine to [C]give
 [F]No it can't be me cause [C]I'm [G7]not mine to [C]give
 {end_of_verse}
+
+

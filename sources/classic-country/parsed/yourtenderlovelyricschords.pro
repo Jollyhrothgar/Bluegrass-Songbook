@@ -1,5 +1,8 @@
 {meta: title Your Tender Love}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file yourtenderlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your tender love [C7]just keeps [F]growing
@@ -23,3 +26,6 @@ I'll always [C]try to prove [G7]my tender love for [C]you
 {start_of_verse: Verse 4}
 [F]I'll always [C]try to prove [G7]my tender love for [C]you
 {end_of_verse}
+
+
+

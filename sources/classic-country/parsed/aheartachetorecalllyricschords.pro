@@ -1,6 +1,9 @@
 {meta: title A Heartache To Recall}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Kit Carson and Hawkshaw Hawkins}
+{meta: x_source classic-country}
+{meta: x_source_file aheartachetorecalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The love I gave you you [E7]didn’t want at [A7]all
@@ -22,3 +25,5 @@ Now an hour seems a day I [G7]guess it [A7]always [G7]will
 [C]But the love that we shared while [E7]it’s meant my world and [A7]all
 [D7]Now it’s just a [G7]heartache to re[C]call
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Go Away Stranger}
 {meta: artist Connie Smith}
 {meta: composer June Carter}
+{meta: x_source classic-country}
+{meta: x_source_file goawaystrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My love is not within my [F]reach
@@ -33,3 +36,7 @@ So [G7]stranger go [C]away
 {start_of_verse: Verse 5}
 Please [G7]stranger go [C]away
 {end_of_verse}
+
+
+
+

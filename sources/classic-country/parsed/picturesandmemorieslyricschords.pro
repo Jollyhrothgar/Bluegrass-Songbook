@@ -1,6 +1,9 @@
 {meta: title Pictures And Memories}
 {meta: artist Alabama}
 {meta: composer Jeff Cook and Monty Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file picturesandmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a teardrop falling [G7]slowly from my [C]eyes tonight
@@ -35,3 +38,7 @@ Pictures and [D7]memories that’s why I’m crying to[G]night
 {start_of_verse: Verse 5}
 Pictures and [D7]memories I feel like dying to[C]night [G]
 {end_of_verse}
+
+
+
+

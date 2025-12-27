@@ -1,6 +1,9 @@
 {meta: title Cry Baby}
 {meta: artist Wynn Stewart}
 {meta: composer Bobby George and Vern Stovall}
+{meta: x_source classic-country}
+{meta: x_source_file crybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cry baby [F]cry baby
@@ -33,3 +36,7 @@ To [G7]baby you till all your tears are [C]dried
 {start_of_verse: Verse 4}
 To [G7]baby you till all your tears are [C]dried
 {end_of_verse}
+
+
+
+

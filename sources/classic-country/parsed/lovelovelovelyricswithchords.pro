@@ -1,6 +1,9 @@
 {meta: title Love Love Love}
 {meta: artist George Morgan}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file lovelovelovelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What causes hearts to thump what makes a rabbit jump
@@ -47,3 +50,8 @@ Love can happen in a minute
 I [C]love you I thank you I was in it
 Thank the [G7]Lord above for love love [C]love
 {end_of_verse}
+
+
+
+
+

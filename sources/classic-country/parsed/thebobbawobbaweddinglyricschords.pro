@@ -1,6 +1,9 @@
 {meta: title The Bobba Wobba Wedding}
 {meta: artist Chad Morgan}
 {meta: composer John Ashe}
+{meta: x_source classic-country}
+{meta: x_source_file thebobbawobbaweddinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At the Bobba Wobba wedding oh they [G7]came from far and wide
@@ -49,3 +52,8 @@ And waking as the sun got up the [F]bride groom nearly cried
 [G7]His honeymoon had started and he couldn't find his [C]bride
 Oh the joy oh the [F]fun once the [G7]Bobba Wobba wedding had [C]begun
 {end_of_verse}
+
+
+
+
+

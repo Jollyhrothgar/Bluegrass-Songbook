@@ -1,5 +1,8 @@
 {meta: title So Much To Do}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file somuchtodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My oatmeal tastes just like [D7]confetti
@@ -24,3 +27,5 @@
 [G]And there's oh so much [D7]to do
 [G]And I just can't do without you
 {end_of_verse}
+
+

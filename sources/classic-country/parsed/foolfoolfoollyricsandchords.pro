@@ -1,6 +1,9 @@
 {meta: title Fool Fool Fool Lyrics and Chords}
 {meta: artist Webb Pierce}
 {meta: composer Max Powell and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file foolfoolfoollyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]F-ool [G7]f-ool [C]f-ool you know that it's wrong 
@@ -29,3 +32,6 @@ The way you [C7]always [F]d-o[C]-o-[F]o
 Listen to me and this [C]time you won't [Am]be 
 A [F]f-ool [G7]f-ool [C]f-ool
 {end_of_verse}
+
+
+

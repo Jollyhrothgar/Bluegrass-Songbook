@@ -1,6 +1,9 @@
 {meta: title Bad Dream}
 {meta: artist Billy Walker}
 {meta: composer Dan Hoffman and Chuck Woolery}
+{meta: x_source classic-country}
+{meta: x_source_file baddreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There keeps recurring a dream [C]that she left [G]me
@@ -29,3 +32,6 @@
 [G]My sweet baby [C]my love is so [G]real
 [D7]For me there is only one [G]man
 {end_of_verse}
+
+
+

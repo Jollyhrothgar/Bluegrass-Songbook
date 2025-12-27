@@ -1,6 +1,9 @@
 {meta: title A Way to Survive}
 {meta: artist Ray Price}
 {meta: composer Hank Cochran and Moneen Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file awaytosurvivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I look at your picture too [D7]often
@@ -29,3 +32,6 @@
 [C]Perhaps for the rest looking back isn't [D7]best
 [G7]But for me it's the way to [C]survive
 {end_of_verse}
+
+
+

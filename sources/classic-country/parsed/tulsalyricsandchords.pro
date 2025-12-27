@@ -1,5 +1,8 @@
 {meta: title Tulsa}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file tulsalyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Riding on this airplane [Em]flying machine
@@ -44,3 +47,8 @@ I hope [Dm]LA's glad to see me [G7]Tulsa won't even know I'm [C]gone [Em]   [C]
 I hope [Dm]LA's glad to see me [G7]Tulsa won't even know I'm [C]gone[Am]   
 [Em]Ohooo[C]  [Am]ohoo[C]o
 {end_of_verse}
+
+
+
+
+

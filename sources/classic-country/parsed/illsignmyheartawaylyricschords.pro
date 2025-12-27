@@ -1,5 +1,8 @@
 {meta: title I'll Sign My Heart Away}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file illsignmyheartawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll sign my heart away in court [D7]tomorrow
@@ -25,3 +28,6 @@
 {start_of_verse: Verse 4}
 [D7]After tomorrow when I sign my heart [G]away
 {end_of_verse}
+
+
+

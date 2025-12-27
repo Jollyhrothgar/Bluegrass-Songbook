@@ -1,6 +1,9 @@
 {meta: title It's Not Over Yet}
 {meta: artist Vern Gosdin}
 {meta: composer Hank Cochran and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotoveryetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the bed lies your pillow
@@ -43,3 +46,9 @@ It's not over till that phone rings
 [G7]And hear you tell me it's not over [C]yet
 [G7]And hear you tell me it's not over [C]yet
 {end_of_verse}
+
+
+
+
+
+

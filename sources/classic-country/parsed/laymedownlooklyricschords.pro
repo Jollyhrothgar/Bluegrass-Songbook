@@ -1,5 +1,8 @@
 {meta: title Lay Me Down Look}
 {meta: artist Bobby Helms}
+{meta: x_source classic-country}
+{meta: x_source_file laymedownlooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You wore out your walking shows walking out on me
@@ -47,3 +50,9 @@ With that [G]lay me [D7]down look in your [G]eyes
 I'm just [C]biding for my freedom I'm a [G]slave I rea[Em]lize 
 With that [G]lay me [D7]down look in your [G]eyes
 {end_of_verse}
+
+
+
+
+
+

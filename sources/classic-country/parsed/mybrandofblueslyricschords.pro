@@ -1,5 +1,8 @@
 {meta: title My Brand Of Blues}
 {meta: artist Marvin Rainwater}
+{meta: x_source classic-country}
+{meta: x_source_file mybrandofblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You let me [F]smile  once in a [C]while
@@ -29,3 +32,7 @@ That's all you ever give
 {start_of_verse: Verse 2}
 The right to choose my brand of blues
 {end_of_verse}
+
+
+
+

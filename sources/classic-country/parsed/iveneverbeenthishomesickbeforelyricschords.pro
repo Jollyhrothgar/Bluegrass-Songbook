@@ -1,6 +1,9 @@
 {meta: title I've Never Been This Homesick Before}
 {meta: artist Paul Williams}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file iveneverbeenthishomesickbeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 I've Never Been This Homesick Before
@@ -51,3 +54,8 @@ I can [F]see a crystal river
 So I [C]must be near for[F]ever
 Lord I've [C]never been this [G7]homesick be[C]fore
 {end_of_verse}
+
+
+
+
+

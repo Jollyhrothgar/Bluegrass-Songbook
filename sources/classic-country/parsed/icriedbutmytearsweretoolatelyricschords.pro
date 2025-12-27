@@ -1,5 +1,8 @@
 {meta: title I Cried But My Tears Were Too Late}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file icriedbutmytearsweretoolatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One heart too many I have [G7]broken love dreams that faded and [C]died
@@ -47,3 +50,9 @@ And this rose that I am taking from your grave
 [F]As I walked to her grave where the bluebonnets wave
 [C]I cried but my [G7]tears were too [C]late
 {end_of_verse}
+
+
+
+
+
+

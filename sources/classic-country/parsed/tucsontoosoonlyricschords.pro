@@ -1,6 +1,9 @@
 {meta: title Tucson Too Soon}
 {meta: artist Tracy Byrd}
 {meta: composer Mark Nesler and Tracy Byrd}
+{meta: x_source classic-country}
+{meta: x_source_file tucsontoosoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight on a plane bound for [Em]Dallas [G]
@@ -40,3 +43,8 @@ It [A7]seems I left [D7]Tucson too [G]soon
 {start_of_verse: Verse 5}
 It [A7]seems I left [D7]Tucson too [G]soon
 {end_of_verse}
+
+
+
+
+

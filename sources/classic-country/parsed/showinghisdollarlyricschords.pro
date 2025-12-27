@@ -1,6 +1,9 @@
 {meta: title Showing His Dollar}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Rusty Adams}
+{meta: x_source classic-country}
+{meta: x_source_file showinghisdollarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well this country boy he's headed for home
@@ -33,3 +36,7 @@ Just a-showin' his [D7]dollar to every gal in [G]town
 {start_of_verse: Verse 4}
 Just a-showin' his [D7]dollar to every gal in [G]town
 {end_of_verse}
+
+
+
+

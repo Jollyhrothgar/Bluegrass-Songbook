@@ -1,6 +1,9 @@
 {meta: title I'm Not Gonna Dress Up}
 {meta: artist Wilburn Brothers}
 {meta: composer Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file imnotgonnadressuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just don't think I'll dress up this morning
@@ -33,3 +36,6 @@ I致e left my old work shoes in the hallway
 [C]When they come from all around
 [G7]They know me for they've been here [C]before
 {end_of_verse}
+
+
+

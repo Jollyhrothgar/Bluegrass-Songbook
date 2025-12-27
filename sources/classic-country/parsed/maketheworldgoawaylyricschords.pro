@@ -1,5 +1,8 @@
 {meta: title Make the World Go Away}
 {meta: artist Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file maketheworldgoawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Do you remember when [D7]you loved me
@@ -26,3 +29,6 @@ Just say you love me like you used [C]to
 {start_of_verse: Verse 4}
 Repeat chorus
 {end_of_verse}
+
+
+

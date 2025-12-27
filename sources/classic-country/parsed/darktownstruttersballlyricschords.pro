@@ -1,6 +1,9 @@
 {meta: title Darktown Strutter's Ball}
 {meta: artist Fats Domino}
 {meta: composer Shelton Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file darktownstruttersballlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll be there to getcha a taxi honey
@@ -31,3 +34,6 @@ Remember when we get there honey
 [C]When they play the Jelly Roll [A7]Blues
 [D7]Tomorrow night at the [G7]Darktown Strutter's [C]Ball
 {end_of_verse}
+
+
+

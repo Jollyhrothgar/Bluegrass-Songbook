@@ -1,6 +1,9 @@
 {meta: title I Don't Have a Reason To Go To California Anymore}
 {meta: artist Willie Nelson}
 {meta: composer Billy Don Burns and Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file idonthaveareasontogotocaliforniaanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I meet her by the ocean  [C]lying in the California [G]sun
@@ -35,3 +38,7 @@ I might as well fall in the ocean
 [D7]Cause I don't have a reason to go to California [G]anymore
 [D7]I don't have a reason to go to California [G]anymore
 {end_of_verse}
+
+
+
+

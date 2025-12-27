@@ -1,6 +1,9 @@
 {meta: title The Bells That Broke My Heart}
 {meta: artist Slim Whitman}
 {meta: composer Walter Rollins and Mark Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file thebellsthatbrokemyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though I watched you [B7]with the [C]smile as you started [B7]down the [C]aisle
@@ -22,3 +25,5 @@ And they told me that forever we must [G7]part
 [C]Still my eyes are [B7]filled with [C]tears and I know down [B7]through the [C]years
 I'll be [G7]listening to the bells that broke my [C]heart
 {end_of_verse}
+
+

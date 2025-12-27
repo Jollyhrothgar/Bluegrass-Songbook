@@ -1,6 +1,9 @@
 {meta: title Have I Grown Used To Missing You}
 {meta: artist Wanda Jackson}
 {meta: composer Ned Miller}
+{meta: x_source classic-country}
+{meta: x_source_file haveigrownusedtomissingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I haven't cried a tear all day and the hurting is gone [F]away
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [G7]Have I finally grown used to missing [C]you
 {end_of_verse}
+
+
+

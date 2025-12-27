@@ -1,6 +1,9 @@
 {meta: title Boy Like You}
 {meta: artist Ernest Tubb}
 {meta: composer Tompall Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file boylikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a jukebox [D7]in my [G]ear playin' so loud I can [C]hardly [G]hear
@@ -23,3 +26,5 @@ I know [G]that I should [D7]go on [G]home but I can't stand [C]to be [G]alone
 Cause I always [D7]dream about a boy like [G]you
 Yes I always [D7]dream about a boy like [G]you
 {end_of_verse}
+
+

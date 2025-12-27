@@ -1,5 +1,8 @@
 {meta: title The Good Old Days}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thegoodolddayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The good old days are here [F]again 
@@ -32,3 +35,7 @@ Like [C]castles in the [G7]air
 The [C]good old days are here [F]again 
 God [C]answered all [G7]my [C]prayers
 {end_of_verse}
+
+
+
+

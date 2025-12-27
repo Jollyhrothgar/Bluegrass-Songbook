@@ -1,6 +1,9 @@
 {meta: title Bird Dog}
 {meta: artist Everly Brothers}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file birddoglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Johnny he's a joker (he's a bird)
@@ -46,3 +49,7 @@ What [G]he wants he can get now (what a dog)
 [G]Hey Bird Dog you better get away quick
 [D7]Bird Dog you better find a [C]Chicken Little of your [G]own
 {end_of_verse}
+
+
+
+

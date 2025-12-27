@@ -1,6 +1,9 @@
 {meta: title When There's Not A Tear Left To My Name}
 {meta: artist Gene Watson}
 {meta: composer Bennie Boling and Billy Troy}
+{meta: x_source classic-country}
+{meta: x_source_file whentheresnotatearlefttomynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time I read your letter tears fill my eyes
@@ -41,3 +44,8 @@ This house is like a prison it feels like I’m doing time
 [A#7]When will I think of [F]you and not feel that I’m to [G]blame
 [C]Baby when there’s not a [G7]tear left to my [C]name
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Across the Bridge}
 {meta: artist Jim Reeves}
 {meta: composer Walter Scott}
+{meta: x_source classic-country}
+{meta: x_source_file acrossthebridgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have lived a life of sin
@@ -52,3 +55,12 @@ Across the bridge there's no more sorrow
 [C]The sun will [C7]shine across the [F]river
 [C]And you'll never [G7]be unhappy [C]again
 {end_of_verse}
+
+
+
+
+
+
+
+
+

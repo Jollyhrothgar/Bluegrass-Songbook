@@ -1,6 +1,9 @@
 {meta: title Bring Me Sunshine}
 {meta: artist Willie Nelson}
 {meta: composer Sylvia Dee and Arthur Kent}
+{meta: x_source classic-country}
+{meta: x_source_file bringmesunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bring me sunshine in your [Dm]smile
@@ -38,3 +41,7 @@
 [C7]Let your arms be as warm as the sun from up [F]above
 [D7]Bring me fun bring [G7]me sunshine bring me [C]love
 {end_of_verse}
+
+
+
+

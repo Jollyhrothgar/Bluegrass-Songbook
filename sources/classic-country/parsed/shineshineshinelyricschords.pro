@@ -1,6 +1,9 @@
 {meta: title Shine Shine Shine}
 {meta: artist Eddy Raven}
 {meta: composer Bud Mcguire and Ken Bell}
+{meta: x_source classic-country}
+{meta: x_source_file shineshineshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Go ahead with what you're doing
@@ -64,3 +67,11 @@ So let her [C]shine shine [Am]shine
 [Dm]When the night is [G7]over she'll be [C]mine mine [Am]mine
 [Dm]Sit back and [G7]let that little girl [C]shine
 {end_of_verse}
+
+
+
+
+
+
+
+

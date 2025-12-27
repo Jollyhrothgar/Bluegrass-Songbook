@@ -1,6 +1,9 @@
 {meta: title Whiskey To Wine}
 {meta: artist Garth Brooks}
 {meta: composer Garth Brooks, Bryan Kennedy, Wynn Varble}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeytowinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes she's nice yeah she's [D7]pretty
@@ -59,3 +62,9 @@ And try to [C]have what they [G]call a good [D7]time
 And [G]hope it's not showing that we're [C]walking and [G]knowing
 That we're [Em]going from [D7]whiskey to [G]wine
 {end_of_verse}
+
+
+
+
+
+

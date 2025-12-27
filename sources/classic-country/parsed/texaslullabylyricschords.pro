@@ -1,6 +1,9 @@
 {meta: title Texas Lullaby}
 {meta: artist David Allan Coe}
 {meta: composer David A. Coe and Ann McGowan}
+{meta: x_source classic-country}
+{meta: x_source_file texaslullabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]See those tumbleweeds a blowin' Lord it [D7]makes me wanna [G]cry
@@ -47,3 +50,9 @@ Yipee [G]yi little [D7]doggie yipee [G]yi
 {start_of_verse: Verse 5}
 Yipee yi little [D7]doggie yipee [C]yi yipee [G]yi
 {end_of_verse}
+
+
+
+
+
+

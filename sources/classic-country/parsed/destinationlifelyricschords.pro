@@ -1,6 +1,9 @@
 {meta: title Destination Life}
 {meta: artist Rhonda Vincent}
 {meta: composer Donna Noeline Dean}
+{meta: x_source classic-country}
+{meta: x_source_file destinationlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Picking up her clothes from the bedroom [C]floor
@@ -52,3 +55,10 @@
 {start_of_verse: Verse 6}
 [D7]Destination [G]life
 {end_of_verse}
+
+
+
+
+
+
+

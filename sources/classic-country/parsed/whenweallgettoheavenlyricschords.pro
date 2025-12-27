@@ -1,5 +1,8 @@
 {meta: title When We All Get To Heaven}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file whenweallgettoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sing the wondrous love of Jesus
@@ -35,3 +38,7 @@ What a day of [D7]rejoicing that will [G7]be
 When we [C]all see [F]Jesus
 [C]We’ll sing and [G7]shout the [C]victory
 {end_of_verse}
+
+
+
+

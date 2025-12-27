@@ -1,5 +1,8 @@
 {meta: title In Daddy's Footsteps}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file indaddysfootstepslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want to follow in daddy's [C]footsteps
@@ -50,3 +53,9 @@ Sung:
 [G]I want to follow in daddy's [C]footsteps
 [D7]Let me be the man that daddy use to [G]be
 {end_of_verse}
+
+
+
+
+
+

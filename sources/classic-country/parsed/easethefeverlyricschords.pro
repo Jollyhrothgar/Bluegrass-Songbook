@@ -1,6 +1,9 @@
 {meta: title Ease The Fever}
 {meta: artist Reba McEntire}
 {meta: composer Bob Morrison, Jim Zerface, Bill Zerface}
+{meta: x_source classic-country}
+{meta: x_source_file easethefeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No need [F]talking I can [C]see it 
@@ -43,3 +46,8 @@ So let me ease the fever and [F]erase the pain
 [C]Hold me close and let me [F]love the tears away
 And let me [C]ease the fever let me [G7]erase the [C]pain
 {end_of_verse}
+
+
+
+
+

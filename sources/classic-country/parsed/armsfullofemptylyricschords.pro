@@ -1,6 +1,9 @@
 {meta: title Arms Full Of Empty}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file armsfullofemptylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jump aboard that silver plane
@@ -28,3 +31,5 @@ Darling if you will come back
 [G]I ain't had no tender loving care since you've been [C]gone
 [G]I've only had two [D7]arms full of [G]empty
 {end_of_verse}
+
+

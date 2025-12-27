@@ -1,6 +1,9 @@
 {meta: title Old Friends}
 {meta: artist Willie Nelson}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file oldfriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Old friends  pitching pennies in the park
@@ -30,3 +33,7 @@ Lord when all my work is done
 Bless my life and grant me [C]one
 Old [G]friend at least one [D7]old [G]friend
 {end_of_verse}
+
+
+
+

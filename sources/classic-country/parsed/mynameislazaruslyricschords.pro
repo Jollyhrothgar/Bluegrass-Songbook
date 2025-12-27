@@ -1,6 +1,9 @@
 {meta: title My Name Is Lazarus}
 {meta: artist Greater Vision}
 {meta: composer Rodney Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file mynameislazaruslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One day four men brought a crippled man to Jesus
@@ -61,3 +64,11 @@ Repeat last two verses
 {start_of_verse: Verse 9}
 A [F]living testi[F]mony of His [C]death-defying [A7]touch [D7]my name is [G7]Lazar[C]us
 {end_of_verse}
+
+
+
+
+
+
+
+

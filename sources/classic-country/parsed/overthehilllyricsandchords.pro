@@ -1,6 +1,9 @@
 {meta: title Over The Hill}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Ted Daffan}
+{meta: x_source classic-country}
+{meta: x_source_file overthehilllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Over the hill and [F]far [Dm]away
@@ -64,3 +67,11 @@ Over the hill my [F]wedding [Dm]day
 [G7]Going to see my [C]darling
 [G7]Going to see my [C]darling
 {end_of_verse}
+
+
+
+
+
+
+
+

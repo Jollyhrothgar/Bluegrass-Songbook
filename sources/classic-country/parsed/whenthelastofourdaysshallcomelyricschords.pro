@@ -1,6 +1,9 @@
 {meta: title When the Last of Our Days Shall Come}
 {meta: artist Doyle Lawson}
 {meta: composer Chris Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file whenthelastofourdaysshallcomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the last of our days shall come
@@ -62,3 +65,11 @@ When the [G]last of our [D7]days shall [G]come
 We will sing with a [C]voice so young
 When the [G]last of our [D7]days shall [G]come
 {end_of_verse}
+
+
+
+
+
+
+
+

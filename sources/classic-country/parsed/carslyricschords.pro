@@ -1,6 +1,9 @@
 {meta: title Cars}
 {meta: artist John Conlee}
 {meta: composer Bob McDill and Dickey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file carslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was sittin' on a [G7]car lot [Am]looking like a [G7]dream
@@ -75,3 +78,12 @@ Still [F]I think [C]back [G7]over the [Am]years
 And [F]it sounds [C]strange I [G7]suppose
 But it's [F]cars I [G7]remember [C]most
 {end_of_verse}
+
+
+
+
+
+
+
+
+

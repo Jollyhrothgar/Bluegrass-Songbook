@@ -1,6 +1,9 @@
 {meta: title Write Me In Care Of The Blues}
 {meta: artist Patsy Cline}
 {meta: composer Eddie Miller and W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file writemeincareoftheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now baby if you're needing me
@@ -46,3 +49,10 @@ Well drop me a line
 [C]I hope that you've been missing me
 The way that I've been missing [F]you
 {end_of_verse}
+
+
+
+
+
+
+

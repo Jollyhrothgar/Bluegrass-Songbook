@@ -1,6 +1,9 @@
 {meta: title Angels Don't Fly They Just Walk Out On You}
 {meta: artist George Jones}
 {meta: composer John Fountain and William J. Webb}
+{meta: x_source classic-country}
+{meta: x_source_file angelsdontflytheyjustwalkoutonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Deep into midnight far [F]from the warm [C]light
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]Angels don't [C]fly they just [G7]walk out on [C]you
 {end_of_verse}
+
+
+
+

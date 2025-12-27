@@ -1,6 +1,9 @@
 {meta: title Carolina In The Morning}
 {meta: artist Dean Martin}
 {meta: composer Gus Kahn and Walter Donaldson}
+{meta: x_source classic-country}
+{meta: x_source_file carolinainthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nothing could be finer
@@ -51,3 +54,9 @@ If I had Aladdin's lamp for only a [C7]day
 [C]Nothing could be finer
 Than to be in Carolina in the [C][G7]morn-ing
 {end_of_verse}
+
+
+
+
+
+

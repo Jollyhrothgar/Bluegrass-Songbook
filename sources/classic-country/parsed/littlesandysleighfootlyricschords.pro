@@ -1,6 +1,9 @@
 {meta: title Little Sandy Sleighfoot}
 {meta: artist Jimmy Dean}
 {meta: composer Joseph E. Savarino and Philip M. Crane}
+{meta: x_source classic-country}
+{meta: x_source_file littlesandysleighfootlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]His name was Sandy [F]Sleighfoot
@@ -71,3 +74,12 @@ And Santa loves him [F]too
 And ever [G7]since on [C]Christmas [Am]Eve
 He's [Dm]helped bring [G7]gifts to [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

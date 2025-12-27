@@ -1,6 +1,9 @@
 {meta: title This One's On The House}
 {meta: artist Jerry Wallace}
 {meta: composer Mitchell Torok and Ramona Redd}
+{meta: x_source classic-country}
+{meta: x_source_file thisonesonthehouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]This one's on the house you don't owe me a [G]thing
@@ -32,3 +35,7 @@ This one's on the [D7]house you don't own me a [G]thing
 {start_of_verse: Verse 5}
 This one's on the [D7]house you don't own me a [G]thing
 {end_of_verse}
+
+
+
+

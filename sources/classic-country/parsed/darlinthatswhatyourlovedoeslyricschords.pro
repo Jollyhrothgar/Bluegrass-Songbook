@@ -1,6 +1,9 @@
 {meta: title Darlin' That's What Your Love Does}
 {meta: artist Don Williams}
 {meta: composer Hugh Prestwood}
+{meta: x_source classic-country}
+{meta: x_source_file darlinthatswhatyourlovedoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Early this morning [C]before you [G]awoke
@@ -56,3 +59,10 @@ That's what it does with a [G]kiss
 [D7]I'm not the man that I just was 
 Love don't get deeper than [G]this
 {end_of_verse}
+
+
+
+
+
+
+

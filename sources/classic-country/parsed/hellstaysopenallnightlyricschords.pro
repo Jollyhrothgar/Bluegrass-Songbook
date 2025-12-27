@@ -1,6 +1,9 @@
 {meta: title Hell Stays Open All Night}
 {meta: artist George Jones}
 {meta: composer Bobby L. Harden}
+{meta: x_source classic-country}
+{meta: x_source_file hellstaysopenallnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She said hello and I said Hon it's [F]me
@@ -30,3 +33,6 @@ Remember hell stays open all night [F]long
 When I [C]slammed the door to heaven I should have [F]known
 [C]Hell stays [G7]open all night [C]long
 {end_of_verse}
+
+
+

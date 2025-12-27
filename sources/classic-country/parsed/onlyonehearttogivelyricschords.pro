@@ -1,6 +1,9 @@
 {meta: title Only One Heart To Give}
 {meta: artist Sonny James}
 {meta: composer Ben Hall}
+{meta: x_source classic-country}
+{meta: x_source_file onlyonehearttogivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've only one heart to [F]give
@@ -29,3 +32,6 @@ Many [G7]moons have come and [C]gone
 There's no other [F]love for [G7]me
 Only one heart to [C]give
 {end_of_verse}
+
+
+

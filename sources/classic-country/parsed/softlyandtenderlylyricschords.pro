@@ -1,6 +1,9 @@
 {meta: title Softly And Tenderly}
 {meta: artist Jim Reeves}
 {meta: composer Will L. Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file softlyandtenderlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Softly and tenderly [C]Jesus is [G]calling
@@ -55,3 +58,8 @@ G}
 [G]Earnestly tenderly [C]Jesus is [G]calling
 [Em]Calling [G][C]o sinner [G][D7]come [G][C]home
 {end_of_verse}
+
+
+
+
+

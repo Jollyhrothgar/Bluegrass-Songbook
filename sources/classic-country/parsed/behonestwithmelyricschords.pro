@@ -1,6 +1,9 @@
 {meta: title Be Honest With Me}
 {meta: artist Gene Autry}
 {meta: composer Fred Rose and Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file behonestwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Be honest with me dear [G7]whatever [C]you [G]do
@@ -22,3 +25,5 @@
 [G7]I'll never [C]forget dear your sweet [G]memory
 [D7]If you really love me be honest with [G]me
 {end_of_verse}
+
+

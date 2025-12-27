@@ -1,6 +1,9 @@
 {meta: title I Walk And I Walk And I Walk}
 {meta: artist David Houston}
 {meta: composer Charles Justice and George D'Artois}
+{meta: x_source classic-country}
+{meta: x_source_file iwalkandiwalkandiwalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes I walk and I walk and I walk and I think about [G7]you
@@ -34,3 +37,7 @@ Yes I walk and I worry and I [G7]always think of [C]you
 Thinking about [F]you thinking about [C]you
 Yes I walk and I worry and I [G7]always think of [C]you
 {end_of_verse}
+
+
+
+

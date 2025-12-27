@@ -1,5 +1,8 @@
 {meta: title Lying Comes So Easy To Your Lips}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file lyingcomessoeasytoyourlipslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lying comes so easy to your [F]lips [C]girl
@@ -39,3 +42,7 @@ Just how far you’ll really [G]go
 Honey you know all the [D7]tricks
 Lying comes so easy to your [G]lips
 {end_of_verse}
+
+
+
+

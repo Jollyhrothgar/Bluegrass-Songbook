@@ -1,6 +1,9 @@
 {meta: title I Hear A Choo Choo Coming}
 {meta: artist Stanley Brothers}
 {meta: composer Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file ihearachoochoocominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear a choo choo coming
@@ -50,3 +53,9 @@ It's [C]coming down the [G]track
 It's taking away my darling
 Never to [D7]bring her [G]back
 {end_of_verse}
+
+
+
+
+
+

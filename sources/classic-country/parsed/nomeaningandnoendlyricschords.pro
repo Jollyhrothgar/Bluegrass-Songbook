@@ -1,5 +1,8 @@
 {meta: title No Meaning And No End}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file nomeaningandnoendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I play tonight in [C]Richmond a town I think is [G]fine
@@ -26,3 +29,6 @@ I hope my [Em]story had a [C]meaning for [Am]now it has an [G]end
 [D7]I never was a [G]loser all I could do was [D7]win
 I hope my [Em]story had a [C]meaning for [Am]now it has an [G]end
 {end_of_verse}
+
+
+

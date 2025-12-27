@@ -1,6 +1,9 @@
 {meta: title Christmas Angel}
 {meta: artist Bobby Vinton}
 {meta: composer Jack Lloyd and Bobby Vinton}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Angel angel you're my [F]Christmas [G7]angel
@@ -50,3 +53,9 @@
 [F]Angel angel you're my Christmas angel
 [G7]And you brought me [C]love
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bar Fly}
 {meta: artist Wynn Stewart}
 {meta: composer Bob Wesley}
+{meta: x_source classic-country}
+{meta: x_source_file barflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wonder little bar fly [D7]if I crushed you in the dirt
@@ -26,3 +29,6 @@ And he'll praise the [G]things he'll do when he's [D7]had too much to [G]drink
 {start_of_verse: Verse 4}
 [C]I wish I was a [G]bar fly I'd have a [D7]bottle for my [G]home
 {end_of_verse}
+
+
+

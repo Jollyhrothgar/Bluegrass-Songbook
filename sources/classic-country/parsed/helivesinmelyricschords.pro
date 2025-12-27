@@ -1,6 +1,9 @@
 {meta: title He Lives In Me}
 {meta: artist Doyle Lawson}
 {meta: composer Frances P. Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file helivesinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I’m just not myself although I look the same
@@ -56,3 +59,9 @@ The [G7]King of all Heaven and earth is living in [C]me
 {start_of_verse: Verse 5}
 Yes the [G7]King of all Heaven and earth is living in [C]me
 {end_of_verse}
+
+
+
+
+
+

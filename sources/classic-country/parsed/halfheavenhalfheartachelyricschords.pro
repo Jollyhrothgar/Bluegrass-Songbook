@@ -1,6 +1,9 @@
 {meta: title Half Heaven Half Heartache}
 {meta: artist Gene Pitney}
 {meta: composer Aaron Schroeder, Wally Gold, George Goehring}
+{meta: x_source classic-country}
+{meta: x_source_file halfheavenhalfheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My arms reach out for you I kiss you tenderly
@@ -27,3 +30,6 @@ To [F]make my life a [Fm]heaven on earth with [C]you-ou-[G]oo-ou
 [C]Oh let my love be strong [Dm]enough [G7]to [C]take away the heartache
 And [F]make my life a [Fm]heaven on earth with [C]you-ou-[G]oo-oo-[C]ou
 {end_of_verse}
+
+
+

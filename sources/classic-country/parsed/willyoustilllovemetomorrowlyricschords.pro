@@ -1,6 +1,9 @@
 {meta: title Will You Still Love Me Tomorrow}
 {meta: artist Brenda Lee}
 {meta: composer Gerry Goffin and Carole King}
+{meta: x_source classic-country}
+{meta: x_source_file willyoustilllovemetomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight you're mine [G7][F]completely
@@ -33,3 +36,7 @@ So [E7]tell  me now and I won't ask [Am]again
 {start_of_verse: Verse 5}
 [F]Will you still love [G7]me [C]tomorrow
 {end_of_verse}
+
+
+
+

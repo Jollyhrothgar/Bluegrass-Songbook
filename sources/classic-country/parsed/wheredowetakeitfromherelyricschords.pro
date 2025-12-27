@@ -1,6 +1,9 @@
 {meta: title Where Do We Take It From Here}
 {meta: artist Vern Gosdin}
 {meta: composer Dennis Knutson and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file wheredowetakeitfromherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember the first time that I [G7]touched you
@@ -34,3 +37,7 @@ The [F]thought of being [A#7]here like this just [F]never crossed my [G7]mind
 Now that we brought it from [F]laughter down to tears
 [G7]Where do we take it from [C]here
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title T-R-O-U-B-L-E}
 {meta: artist Travis Tritt}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file T-R-O-U-B-L-Elyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I play an [C]old guitar from nine till half past [G]one
@@ -47,3 +50,9 @@ Hey say [C]hey good L double O-K-I-N-[G]G well I smell T-R-[C]O-U-B-L-[G]E
 I said hey I said hey I said hey I said hey I said hey hey
 Oh [D7]I smell T-R-[C]O-U-B-L-[G]E yeah whoa
 {end_of_verse}
+
+
+
+
+
+

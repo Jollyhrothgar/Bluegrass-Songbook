@@ -1,6 +1,9 @@
 {meta: title Lonely Corner}
 {meta: artist Ricky Nelson}
 {meta: composer Betty Murdoch and Johnny Burnett}
+{meta: x_source classic-country}
+{meta: x_source_file lonelycornerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you think you got troubles buddy listen to me
@@ -31,3 +34,7 @@ On this [C]lonely corner where I used to [G7]walk my baby [C]home
 {start_of_verse: Verse 5}
 On this lonely corner where I used to [G7]walk my baby [C]home 
 {end_of_verse}
+
+
+
+

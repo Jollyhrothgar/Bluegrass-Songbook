@@ -1,6 +1,9 @@
 {meta: title Don't Give Your Heart To A Rambler}
 {meta: artist J.D. Crowe & the New South}
 {meta: composer Jimmie Skinner}
+{meta: x_source classic-country}
+{meta: x_source_file dontgiveyourhearttoaramblerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't fall in love with me darling I'm a [C]rambler
@@ -43,3 +46,8 @@ Al[D7]though you’re the sweetest sweetheart in this [G]world
 It's all for your sake dear that I'm [C]leaving
 So [D7]don't give your heart to a rambler little [G]girl
 {end_of_verse}
+
+
+
+
+

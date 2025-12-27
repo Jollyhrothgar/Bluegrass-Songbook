@@ -1,6 +1,9 @@
 {meta: title Birth Of The Blues}
 {meta: artist McGuire Sisters}
 {meta: composer B.G. DeSylva, Ray Henderson. Lew Brown}
+{meta: x_source classic-country}
+{meta: x_source_file birthoftheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They heard the breeze in the [D7]trees
@@ -28,3 +31,7 @@ And then they nursed [G]it they rehearsed [D7]it
 And [G]gave out [C]the news
 That the [D7]Southland gave birth to the [G]blues
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Ten Feet Tall And Bulletproof}
 {meta: artist Travis Tritt}
+{meta: x_source classic-country}
+{meta: x_source_file tenfeettallandbulletprooflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a full grown man that's plain to [F]see
@@ -41,3 +44,8 @@ Is when [C]I'm ten feet [G7]tall and bullet[C]proof
 [F]Yeah each time I [C]drink and start to think 
 I'm ten feet [G7]tall and bullet[C]proof
 {end_of_verse}
+
+
+
+
+

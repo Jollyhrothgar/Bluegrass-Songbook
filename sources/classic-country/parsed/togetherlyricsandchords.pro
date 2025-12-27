@@ -1,6 +1,9 @@
 {meta: title Together}
 {meta: artist Anne Murray}
 {meta: composer Buddy DeSylva, Ray Henderson, Lew Brown}
+{meta: x_source classic-country}
+{meta: x_source_file togetherlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We strolled the lane to[D7]gether
@@ -29,3 +32,6 @@ And we both pre[A7]tend it would [Am]never [D7]end
 [F]You're gone from me but in [G]my [F]memo[E7]ry
 We [Am]always will [D7]be to[G]gether
 {end_of_verse}
+
+
+

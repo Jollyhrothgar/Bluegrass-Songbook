@@ -1,6 +1,9 @@
 {meta: title Over Lonely Under Kissed}
 {meta: artist Faron Young}
 {meta: composer Johnny Durham and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file overlonelyunderkissedlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 I'm over lonely   [C]under kissed
@@ -28,3 +31,7 @@ And now I'm over lonely under kissed
 Over lonely under kissed
 [G7]And now I'm learning what a [F]heart-ache [C]is
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title One Dream Coming One Dream Going}
 {meta: artist Billy Crash Craddock}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file onedreamcomingonedreamgoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One dream coming [F]one dream going
@@ -57,3 +60,10 @@ He's here to stay forever
 [C]One dream coming [F]one dream going
 [C]One just beginning Lord the [G7]other gone to [C]hell
 {end_of_verse}
+
+
+
+
+
+
+

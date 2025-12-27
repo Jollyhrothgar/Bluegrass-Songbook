@@ -1,6 +1,9 @@
 {meta: title Big Texas Moon}
 {meta: artist Red Steagall}
 {meta: composer Bob Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file bigtexasmoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Banjos are ringin' on Saturday [Am]night
@@ -52,3 +55,9 @@
 [F]If Charlie Russell were [G7]here he'd [C]paint it just [F]right
 [G7]Big Texas moon out [C]tonight
 {end_of_verse}
+
+
+
+
+
+

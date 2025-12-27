@@ -1,6 +1,9 @@
 {meta: title Let Me Walk Lord By Your Side}
 {meta: artist Ralph Stanley}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file letmewalklordbyyoursidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a church on Sunday morning
@@ -43,3 +46,8 @@ Help me humbly [D7]to a[G]bide
 [C]Hold me to your precious [G]bosom
 Let me walk lord [D7]by your [G]side
 {end_of_verse}
+
+
+
+
+

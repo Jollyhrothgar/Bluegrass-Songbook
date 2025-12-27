@@ -1,6 +1,9 @@
 {meta: title Pride}
 {meta: artist Ray Price}
 {meta: composer Irene}
+{meta: x_source classic-country}
+{meta: x_source_file pridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know that you're doing lots of things that ain't right
@@ -35,3 +38,8 @@ So how can I leave you when I love you [C]so
 Which way shall I turn I'd sure like to [G7]know
 My heart tells me stay but my pride tells me [C]go
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Livin' In These Troubled Times}
 {meta: artist Crystal Gayle}
 {meta: composer Roger Cook, Sam Hogin, Philip Donnelly}
+{meta: x_source classic-country}
+{meta: x_source_file livininthesetroubledtimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It takes all the [C]faith within you
@@ -44,3 +47,8 @@ It's [C]the march [D7]of the [Em]dying
 [C]Living in [D7]these troubled [G]times
 [C]Loving in [D7]these troubled [G]times
 {end_of_verse}
+
+
+
+
+

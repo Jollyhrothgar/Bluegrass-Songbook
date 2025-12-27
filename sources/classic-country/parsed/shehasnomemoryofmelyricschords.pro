@@ -1,6 +1,9 @@
 {meta: title She Has No Memory Of Me}
 {meta: artist Gene Watson}
 {meta: composer Troy Graves and Randy Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file shehasnomemoryofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She has the new dress I [A]bought [F]her
@@ -41,3 +44,8 @@
 [F]After all she's done she's still having [Dm]fun
 [C]But she has [G7]no memory [G7][F]of [C]me
 {end_of_verse}
+
+
+
+
+

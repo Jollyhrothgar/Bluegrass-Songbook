@@ -1,6 +1,9 @@
 {meta: title When My World Left Town}
 {meta: artist Gene Watson}
 {meta: composer Tom Ghent and Ralph Paul}
+{meta: x_source classic-country}
+{meta: x_source_file whenmyworldlefttownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The sun rose up this morning [Am]but it didn't shine
@@ -34,3 +37,7 @@ This [G]morning when [D7]my world left [G]town
 Left me no [G7]clue as to [C]where she was bou[Am]nd
 This [G]morning when [D7]my world left [G]town
 {end_of_verse}
+
+
+
+

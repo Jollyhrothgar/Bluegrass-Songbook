@@ -1,5 +1,8 @@
 {meta: title Put A Quarter In The Juke Box}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file putaquarterinthejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody put a quarter in the [G7]jukebox
@@ -48,3 +51,10 @@ That [G7]one about the good love that's gone [C]wrong
 Tag:
 [F]Somebody [G7]play the jukebox all night [C]long
 {end_of_verse}
+
+
+
+
+
+
+

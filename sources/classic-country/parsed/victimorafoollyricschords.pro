@@ -1,6 +1,9 @@
 {meta: title Victim Or A Fool}
 {meta: artist Johnny Rodriguez}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file victimorafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two words you're gone  
@@ -55,3 +58,11 @@ You're gone it's so wrong but [G7]all coming true
 {start_of_verse: Verse 9}
 Am I a [G7]victim or a [C]fool
 {end_of_verse}
+
+
+
+
+
+
+
+

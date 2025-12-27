@@ -1,5 +1,8 @@
 {meta: title Chasing Memories}
 {meta: artist Frank James}
+{meta: x_source classic-country}
+{meta: x_source_file chasingmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nostalgia overtook me late one [F]evening
@@ -39,3 +42,8 @@
 {start_of_verse: Verse 5}
 [G7]I’m chasing memories catching heartaches tears and [C]pain
 {end_of_verse}
+
+
+
+
+

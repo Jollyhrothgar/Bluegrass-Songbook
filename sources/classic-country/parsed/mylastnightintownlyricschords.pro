@@ -1,6 +1,9 @@
 {meta: title My Last Night In Town}
 {meta: artist Johnny Paycheck}
 {meta: composer Red Simpson and Bill Woods}
+{meta: x_source classic-country}
+{meta: x_source_file mylastnightintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Turn the music up loud let me [F]sit with the crowd
@@ -22,3 +25,5 @@ But [F]no matter where I go I know [C]her memories will [G7]find me
 I was [C]sure she loved me so but she turned me [F]down
 So let the sad music [C]start it's my [G7]last night in [C]town
 {end_of_verse}
+
+

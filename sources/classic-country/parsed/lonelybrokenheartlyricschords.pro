@@ -1,5 +1,8 @@
 {meta: title Lonely Broken Heart}
 {meta: artist Hawkshaw Hawkins}
+{meta: x_source classic-country}
+{meta: x_source_file lonelybrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once we was [C]happy little [G]darling
@@ -28,3 +31,6 @@ You know I've loved you from the [D7]start
 I’ve [G]tried and [C]tried to [G]forget you
 But you're [D7]still in my lonely broken [G]heart
 {end_of_verse}
+
+
+

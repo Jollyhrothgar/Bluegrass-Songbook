@@ -1,6 +1,9 @@
 {meta: title Just A Little Thing}
 {meta: artist Billy Crash Craddock}
 {meta: composer Marijohn Wilkin and Grady Martin}
+{meta: x_source classic-country}
+{meta: x_source_file justalittlethinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gotta a little somethin' for you in my pocket
@@ -35,3 +38,7 @@ Aw it's [C]just a little thing babe it's [G]just a little thing hon
 Aw it's [C]just a little thing aw it's [G]just a little thing
 Aw it's [C]just a little thing aw it's [G]just a little thing 
 {end_of_verse}
+
+
+
+

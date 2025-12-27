@@ -1,6 +1,9 @@
 {meta: title What In The World Has Gone Wrong With Our Love}
 {meta: artist Jack Greene and Jeannie Seely}
 {meta: composer Hank Cochran and Johnny Slate}
+{meta: x_source classic-country}
+{meta: x_source_file whatintheworldhasgonewrongwithourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What in the [F]world has gone [G7]wrong with our [C]love
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]What in the world has gone [G7]wrong with our [C]love
 {end_of_verse}
+
+
+

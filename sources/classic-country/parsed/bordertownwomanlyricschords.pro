@@ -1,6 +1,9 @@
 {meta: title Bordertown Woman}
 {meta: artist Mel McDaniel}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file bordertownwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hell couldn't be any hotter 
@@ -51,3 +54,9 @@ I'm coming down with the [C]blues
 Ah let me [G7]get out of town I'm coming down
 With those mean old bordertown [C]blues
 {end_of_verse}
+
+
+
+
+
+

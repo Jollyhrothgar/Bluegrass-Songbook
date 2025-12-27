@@ -1,5 +1,8 @@
 {meta: title Cloudy Day}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file cloudydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never did like that apartment it was not a place I like to [G7]be
@@ -47,3 +50,9 @@ This looks like a [G7]cloudy day for [C]me
 One for you and one for him one for her and one for them
 This looks like a [G7]cloudy day for [C]me
 {end_of_verse}
+
+
+
+
+
+

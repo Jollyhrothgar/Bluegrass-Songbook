@@ -1,6 +1,9 @@
 {meta: title If I Didn't Love You}
 {meta: artist Tanya Tucker}
 {meta: composer Rafe VanHoy and Deborah Allen}
+{meta: x_source classic-country}
+{meta: x_source_file ifididntloveyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't believe it's really me telling you goodbye
@@ -35,3 +38,6 @@ And if I didn't [C]love you I never would have let you hurt me [D7]so [C]  [G]  
 If I didn't [G]love you if I didn't [C]love you
 If I didn't [G]love you
 {end_of_verse}
+
+
+

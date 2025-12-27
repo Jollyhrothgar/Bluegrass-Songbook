@@ -1,5 +1,8 @@
 {meta: title Cowboys Dream}
 {meta: artist Rex Allen}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysdreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night as [C]I lay on the [G]prairie
@@ -21,3 +24,5 @@ Roll on [C]mmm  [A7]roll on
 [D7]Roll [G]on [C]ro-ll [A7]on
 [D7]Roll on little doggies roll [G]on
 {end_of_verse}
+
+

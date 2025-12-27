@@ -1,6 +1,9 @@
 {meta: title I'm Learning To Love Her}
 {meta: artist Charlie Pride}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file imlearningtoloveherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I walked down that [F]little country [C]lane
@@ -38,3 +41,9 @@ Yes I'm learning to love her
 {start_of_verse: Verse 6}
 [G7]Yes I'm learning to love her with [C]time
 {end_of_verse}
+
+
+
+
+
+

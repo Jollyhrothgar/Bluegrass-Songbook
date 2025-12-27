@@ -1,6 +1,9 @@
 {meta: title One Place In The Night}
 {meta: artist Kenny Rogers}
 {meta: composer Kim Carnes and Dave Ellingson}
+{meta: x_source classic-country}
+{meta: x_source_file oneplaceinthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Girl don't wait up [G7]tonight
@@ -36,3 +39,7 @@ To [F]call and say my [G7]plans have changed so don't wait up tonig[Am]ht
 {start_of_verse: Verse 4}
 [E7]You need a [Am]man whose heart is only [Em]one place in the night[F]  [E7]   [Am]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Time Marches On}
 {meta: artist Tracy Lawrence}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file timemarchesonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sister cries [Em]out [G]from her baby [Em]bed
@@ -41,3 +44,7 @@ Time marches [Am]on  [D7]time marches [G]on
 [Em]Time marches [Am]on  [D7]time marches [G]on
 [Em]Time marches [Am]on  [D7]time marches [G]on  
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Your Good Girl's Gonna Go Bad}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file yourgoodgirlsgonnagobadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've never seen the inside of a [G7]bar-room
@@ -36,3 +39,7 @@ I'm gonna be the swing-in-est [D7]swinger you've ever [G7]had
 If you like'em [C]painted up  [F]powdered up  [C]then you ought-a be [F]glad
 Cause your [C]good [F]girl's gonna go [C]bad
 {end_of_verse}
+
+
+
+

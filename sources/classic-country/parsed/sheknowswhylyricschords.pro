@@ -1,5 +1,8 @@
 {meta: title She Knows Why}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file sheknowswhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have a story I'd like to tell [C]broken heart's knowin' only too well
@@ -32,3 +35,6 @@ But [C]when she sees my set of tracks she'll [A7]know I've learned the [D7]score
 I'll [G]take my tears put 'em on the shelf and [C]keep my heartaches to myself
 Cause [G]she knows why I [D7]feel the way I [G]do
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Cold And Lonely Lyrics and Chords}
 {meta: artist Kitty Wells}
 {meta: composer Roy Botkin}
+{meta: x_source classic-country}
+{meta: x_source_file coldandlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The winds of [C]loneliness blow [G]strong
@@ -37,3 +40,7 @@
 {start_of_verse: Verse 5}
 [C](Cold and lonely is the forecast [G]tonight)
 {end_of_verse}
+
+
+
+

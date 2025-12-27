@@ -1,6 +1,9 @@
 {meta: title Give Back My Heart}
 {meta: artist Billy Walker}
 {meta: composer Billy Walker and Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file givebackmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Give back my heart  [C7]for our love is [F]over
@@ -18,3 +21,4 @@ And get [G7]back in return all this hurtin'
 Find your[G7]self a new love I'll find me a true love
 Give back my [C]heart [F]   [C]
 {end_of_verse}
+

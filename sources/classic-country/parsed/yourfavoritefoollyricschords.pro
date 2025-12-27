@@ -1,6 +1,9 @@
 {meta: title Your Favorite Fool}
 {meta: artist Jack Greene}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file yourfavoritefoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tell me [C]l-ies [G] and hurting things 
@@ -23,3 +26,5 @@ On my [C]knees  [G]I'd crawl for [C]you
 As long as [D7]I'm your favorite [G]fool
 [C]As long as [D7]I'm your favorite [G]fool
 {end_of_verse}
+
+

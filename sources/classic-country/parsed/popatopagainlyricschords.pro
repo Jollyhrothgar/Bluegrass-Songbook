@@ -1,6 +1,9 @@
 {meta: title Pop A Top Again}
 {meta: artist Jim Ed Brown}
 {meta: composer Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file popatopagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pop A Top [F]Again  
@@ -53,3 +56,9 @@ Another one my [F]friends
 [G7]Then I'll be gone and [F]you can [G7]let 
 Some other [F]fool set [C]down
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Are You Missing Me}
 {meta: artist Jim and Jesse}
 {meta: composer Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file areyoumissingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The day that I [C]kissed you and [G]told you goodbye
@@ -37,3 +40,8 @@ You [D7]married another in[G]stead
 Are you all alone [D7]with a memo[G]ry
 Now that I am gone [D7]darling are you missing [G]me
 {end_of_verse}
+
+
+
+
+

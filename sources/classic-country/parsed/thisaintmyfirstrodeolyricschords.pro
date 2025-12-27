@@ -1,5 +1,8 @@
 {meta: title This Ain't My First Rodeo}
 {meta: artist Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file thisaintmyfirstrodeolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say you're mama called and you must go
@@ -61,3 +64,14 @@ Tag:
 [D7]This ain't the first I've seen this dog and pony show
 This ain't my first [G]rodeo
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

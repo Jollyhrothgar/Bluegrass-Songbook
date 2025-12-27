@@ -1,6 +1,9 @@
 {meta: title Cheaters Never Win}
 {meta: artist Hank Thompson}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file cheatersneverwinlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sweetheart you say that you could make my [C]dreams come true
@@ -33,3 +36,7 @@ If that is [G]what you're planning [D7]cheaters never [G]win
 {start_of_verse: Verse 5}
 If that is what you're planning [D7]cheaters never [G]win
 {end_of_verse}
+
+
+
+

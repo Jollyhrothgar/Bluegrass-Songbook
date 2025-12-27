@@ -1,6 +1,9 @@
 {meta: title Through The Bottom Of The Glass}
 {meta: artist Leon Rausch}
 {meta: composer Paul Craft}
+{meta: x_source classic-country}
+{meta: x_source_file throughthebottomoftheglasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She’s off misbehaving [G7]with him not with [C]me
@@ -41,3 +44,7 @@ Through the [F]jokes and the [C]tears
 Through the [A7]smoke and the [D7]beers
 Through the [G7]bottom of the [C]glass
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title We've Got All Night}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file wevegotallnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've already proved you [Bm]got the moves
@@ -46,3 +49,9 @@ Baby [Bm]all [C]night and [Am]forever to [D7]fall in [G]love[Bm]    [C]
 I think I'm [D7]falling falling in [G]love [Bm]   [C]
 You got me [D7]falling falling in [G]love
 {end_of_verse}
+
+
+
+
+
+

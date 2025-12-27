@@ -1,6 +1,9 @@
 {meta: title Wild Mountain Flowers For Mary}
 {meta: artist Lost and Found}
 {meta: composer Allen Mills}
+{meta: x_source classic-country}
+{meta: x_source_file wildmountainflowersformarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We grew up living close to each [G7]other
@@ -48,3 +51,9 @@ That her [C]mother would [G7]stand in the [C]way
 She said we never could [F]marry
 That her [C]mother would [G7]stand in the [C]way
 {end_of_verse}
+
+
+
+
+
+

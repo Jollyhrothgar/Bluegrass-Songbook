@@ -1,6 +1,9 @@
 {meta: title Cowboy Beat}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy and John Beland}
+{meta: x_source classic-country}
+{meta: x_source_file cowboybeatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it could be anywhere in the U.S.A.
@@ -50,3 +53,9 @@ You [D7]know they're bringin' the whole world down to its knees
 We'll [D7]dance down the isle life'll be so sweet
 [C]Raisin' our kids to the cowboy beat[G]
 {end_of_verse}
+
+
+
+
+
+

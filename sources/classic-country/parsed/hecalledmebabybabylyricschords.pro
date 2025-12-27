@@ -1,6 +1,9 @@
 {meta: title He Called Me Baby Baby}
 {meta: artist Patsy Cline}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file hecalledmebabybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]He called me [G]baby  [G7]baby  all night [C]long
@@ -29,3 +32,6 @@
 [G]Oh what I'd give if [G7]he'd just come on back [C]home
 [D7]And call me baby  baby  all night [G]long
 {end_of_verse}
+
+
+

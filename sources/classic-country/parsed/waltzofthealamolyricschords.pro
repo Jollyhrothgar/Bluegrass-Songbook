@@ -1,6 +1,9 @@
 {meta: title Waltz Of The Alamo}
 {meta: artist Pee Wee King}
 {meta: composer Erwin King}
+{meta: x_source classic-country}
+{meta: x_source_file waltzofthealamolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Waltz Of The Alamo
@@ -26,3 +29,5 @@ Makes me [C]yearn for her charm
 And the [G7]waltz of the old Ala[C]mo
 Repeat 
 {end_of_verse}
+
+

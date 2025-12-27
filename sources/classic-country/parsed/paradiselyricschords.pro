@@ -1,6 +1,9 @@
 {meta: title Paradise (aka) Mr. Peabody's Coal Train}
 {meta: artist Everly Brothers}
 {meta: composer John Prine}
+{meta: x_source classic-country}
+{meta: x_source_file paradiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was a child my family [F]would [C]travel 
@@ -57,3 +60,10 @@ Down by the Green River where [G7]Paradise [C]lay
 Well I'm sorry my son but you're too [F]late in [C]asking
 Mister Peabody's coal train has [G7]hauled it [C]away
 {end_of_verse}
+
+
+
+
+
+
+

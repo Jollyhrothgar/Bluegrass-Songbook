@@ -1,6 +1,9 @@
 {meta: title You're So Square}
 {meta: artist Buddy Holly}
 {meta: composer Jerry Leiber and Mike Stoller}
+{meta: x_source classic-country}
+{meta: x_source_file youresosquarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You don't like [C]crazy [G]music
@@ -42,3 +45,8 @@ You're so [C]square  [D7]baby I don't [G]care
 {start_of_verse: Verse 5}
 [D7]Baby I don't [G]care  [D7]baby I don't [G]care   
 {end_of_verse}
+
+
+
+
+

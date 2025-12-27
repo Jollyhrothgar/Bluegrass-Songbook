@@ -1,6 +1,9 @@
 {meta: title Lonely Night}
 {meta: artist Merle Haggard}
 {meta: composer M.L. Powers}
+{meta: x_source classic-country}
+{meta: x_source_file lonelynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Silent night lonely night
@@ -32,3 +35,7 @@
 [C]Silent night [A#7]lonely [A7]night
 [Dm]I won't have [G]you [G7]this [C]year
 {end_of_verse}
+
+
+
+

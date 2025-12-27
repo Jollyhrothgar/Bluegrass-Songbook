@@ -1,6 +1,9 @@
 {meta: title Wheel Of Hurt}
 {meta: artist Margaret Whiting}
 {meta: composer Charles Singleton and Eddie Snyder}
+{meta: x_source classic-country}
+{meta: x_source_file wheelofhurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're gonna know what it [F]means to be [C]lonely
@@ -34,3 +37,7 @@ When the [C]wheel of hurt comes [G7]wheeling round to [C]you
 {start_of_verse: Verse 5}
 When the wheel of hurt comes [G7]wheeling round to [C]you
 {end_of_verse}
+
+
+
+

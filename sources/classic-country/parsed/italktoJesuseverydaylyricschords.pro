@@ -1,6 +1,9 @@
 {meta: title I Talk To Jesus Every Day}
 {meta: artist Johnny Cash}
 {meta: composer Glenn D. Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file italktoJesuseverydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you talk about [C]important people [D7]that you say you [G]know
@@ -33,3 +36,7 @@ No [G]secretary [C]ever tells me [G]He's been called [C]away
 {start_of_verse: Verse 5}
 I talk to [D7]Jesus every [G]day
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Dissatisfied}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson, Jan Howard, Carter Howard}
+{meta: x_source classic-country}
+{meta: x_source_file dissatisfiedlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dissatisfied [F]dissatisfied
@@ -61,3 +64,12 @@ You're actin' [C]dissatisfied [F]dissatisfied
 [C]How long before you [G7]say that you're [F]dissatisfied with [C]me
 Just come on out and [G7]say that you're [F]dissatisfied with [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Not That Way Anymore}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Teddy Gentry,}
+{meta: x_source classic-country}
+{meta: x_source_file imnotthatwayanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We used to get [F]crazy every [G7]Saturday [C]night 
@@ -52,3 +55,9 @@ Cause [Dm]I'm not that [G7]way
 I'm not that [Em]way and you're not that [Am]way
 [Dm]We're not that [G7]way any[C]more
 {end_of_verse}
+
+
+
+
+
+

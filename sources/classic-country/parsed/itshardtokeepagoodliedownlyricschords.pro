@@ -1,5 +1,8 @@
 {meta: title It's Hard To Keep A Good Lie Down}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file itshardtokeepagoodliedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Kindly keep it to your[F]self friends and neighbors
@@ -27,3 +30,6 @@ So let's [C]make the best of a [F]bad situation
 Cause it's [G7]hard to keep a good lie [F]down
 A good lie [C]down
 {end_of_verse}
+
+
+

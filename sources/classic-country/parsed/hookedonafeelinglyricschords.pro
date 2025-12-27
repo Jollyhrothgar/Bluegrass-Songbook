@@ -1,6 +1,9 @@
 {meta: title Hooked On A Feeling}
 {meta: artist B J Thomas}
 {meta: composer Mark James}
+{meta: x_source classic-country}
+{meta: x_source_file hookedonafeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't stop this feeling [G7]deep inside of [C]me 
@@ -43,3 +46,9 @@ Keep it [Em]up sugar yeah [G7]you turn me on
 [G7]High on be[C]lieving 
 [D7]That you're in [G]love with m--[D7]e
 {end_of_verse}
+
+
+
+
+
+

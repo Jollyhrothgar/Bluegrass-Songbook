@@ -1,6 +1,9 @@
 {meta: title Side By Side}
 {meta: artist The Heritage Singers}
 {meta: composer Jeff Wood}
+{meta: x_source classic-country}
+{meta: x_source_file sidebysidelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Side by side we [G7]stand [Em]waiting God’s [Am]command
@@ -35,3 +38,8 @@
 {start_of_verse: Verse 4}
 [F]Pray that we [G7]all will be [C]there
 {end_of_verse}
+
+
+
+
+

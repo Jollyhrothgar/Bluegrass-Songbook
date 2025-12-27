@@ -1,6 +1,9 @@
 {meta: title Mr. Engineer}
 {meta: artist J.D. Crowe}
 {meta: composer Jimmy Martin and Paul Williams}
+{meta: x_source classic-country}
+{meta: x_source_file mrengineerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Engi[C]neer reach [D7]up and pull the [G]whistle
@@ -43,3 +46,8 @@ Let me [C]hear that [D7]lonesome [G]sound
 For it [C]blends with the [D7]feeling that's [G]in me
 The one I [C]love has [D7]turned me [G]down
 {end_of_verse}
+
+
+
+
+

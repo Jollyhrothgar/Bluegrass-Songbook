@@ -1,6 +1,9 @@
 {meta: title I Can't Let You Be A Memory}
 {meta: artist David Allan Coe}
 {meta: composer Warren Haynes}
+{meta: x_source classic-country}
+{meta: x_source_file icantletyoubeamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [E7]Spent a lot of [D7]time playing the [G]field
@@ -57,3 +60,10 @@ You just can't remain a [G]used to be
 I would rather be a [D7]fool for you
 I'll do anything you [G]want me to
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Not There Yet}
 {meta: artist The Lonesome River Band}
 {meta: composer Brandon Rickman and Kevin Denney}
+{meta: x_source classic-country}
+{meta: x_source_file imnotthereyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I woke up this morning [F]you were the first thing on my [C]mind
@@ -36,3 +39,8 @@ Full steam ahead no turning back
 [C]There's just a few more memories to get [F]past
 [G7]I'm not there yet but I'm on the right [C]track
 {end_of_verse}
+
+
+
+
+

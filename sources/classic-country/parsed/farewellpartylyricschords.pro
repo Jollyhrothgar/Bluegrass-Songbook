@@ -1,6 +1,9 @@
 {meta: title Farewell Party}
 {meta: artist Gene Watson}
 {meta: composer Lawton Williams}
+{meta: x_source classic-country}
+{meta: x_source_file farewellpartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the last breath of life
@@ -40,3 +43,7 @@
 Tagg
 [G7]Oh  I know you'll be glad when I'm [C]gone
 {end_of_verse}
+
+
+
+

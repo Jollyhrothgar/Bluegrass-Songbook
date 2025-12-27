@@ -1,6 +1,9 @@
 {meta: title Sweet Baby Jesus}
 {meta: artist Gatlin Brothers}
 {meta: composer Mary Ann Kennedy, Pamela Rose, Pat Bunch}
+{meta: x_source classic-country}
+{meta: x_source_file sweetbabyJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A child like face through a crown of thorns
@@ -33,3 +36,6 @@ But the [Am]Babe in the Bethlehem [D7]manger lives on
 [G]Swe[C]et Baby [G]Jesus[C]
 Let the [D7]Christmas bells [Em]ring[C]  [G]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Jesus Is A Soul Saving Man}
 {meta: artist Jimmie Davis}
 {meta: composer Jimmie Davis and Gordon Terry}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusisasoulsavingmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes my Jesus is a soul saving [F]man
@@ -40,3 +43,8 @@ I'll be [G7]carried to my heavenly [C]home
 {start_of_verse: Verse 4}
 I'll be [G7]carried to my heavenly [C]home
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ivory Tower}
 {meta: artist Hank Locklin}
 {meta: composer Jack Fulton and Lois Steele}
+{meta: x_source classic-country}
+{meta: x_source_file ivorytowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come [G7]down come down from your ivory [C]tower
@@ -18,3 +21,4 @@ It's so [G7]cold  so cold in your [C]ivory tower
 But [G7]warm so warm in my [C]arms
 I [F]love you I [C]love you   
 {end_of_verse}
+

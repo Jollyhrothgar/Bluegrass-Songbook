@@ -1,6 +1,9 @@
 {meta: title Before I Met You}
 {meta: artist Reba McEntire}
 {meta: composer Charles Seitz, Joe Lewis, Elmar Rader}
+{meta: x_source classic-country}
+{meta: x_source_file beforeimetyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I thought I had seen good looking men [F]in my [C]time
@@ -38,3 +41,8 @@
 {start_of_verse: Verse 6}
 [G7]Darling that was before I met [C]you
 {end_of_verse}
+
+
+
+
+

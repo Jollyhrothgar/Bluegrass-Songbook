@@ -1,6 +1,9 @@
 {meta: title I Won't Have to Cross Jordan Alone}
 {meta: artist Faron Young}
 {meta: composer Thomas Ramsey and Charles E. Durham}
+{meta: x_source classic-country}
+{meta: x_source_file iwonthavetocrossjordanalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I come to the river at the ending of day 
@@ -25,3 +28,6 @@ Jesus [G7]died all my sins to [C]atone
 When the darkness I see He'll be [F]waiting for [D7]me 
 I [G7]won't have to cross Jordan [C]alone 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Party People}
 {meta: artist Hank Williams Jr.}
 {meta: composer Kent Westberry and Hal Harbour}
+{meta: x_source classic-country}
+{meta: x_source_file partypeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You and I are party people
@@ -45,3 +48,6 @@ Eight to five and in bed by [D7]nine
 We get up when the sun goes down
 And we get our tans by the [G]neon sign
 {end_of_verse}
+
+
+

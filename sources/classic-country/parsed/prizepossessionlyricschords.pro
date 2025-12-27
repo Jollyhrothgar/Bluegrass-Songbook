@@ -1,6 +1,9 @@
 {meta: title Prize Possession}
 {meta: artist Ferlin Husky}
 {meta: composer Aaron Schroeder, David Hill, Bobby Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file prizepossessionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well if I own the world and [D7]all its [G]treasures
@@ -48,3 +51,9 @@ Will [D7]be the love you gave to [G]me
 Cause darling my prize [C]possession
 Will [D7]be the love you gave to [G]me
 {end_of_verse}
+
+
+
+
+
+

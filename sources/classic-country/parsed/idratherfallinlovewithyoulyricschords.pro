@@ -1,6 +1,9 @@
 {meta: title I'd Rather Fall In Love With You}
 {meta: artist Charly McClain}
 {meta: composer Jerry Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file idratherfallinlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love the things you [Am]are
@@ -72,3 +75,14 @@ But I [C]love the things you [Am]are
 And I [Em]love the things you [F]do
 And you [C]know I'd rather [G7]fall in love with [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

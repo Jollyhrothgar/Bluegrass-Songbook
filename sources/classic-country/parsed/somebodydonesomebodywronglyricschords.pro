@@ -1,6 +1,9 @@
 {meta: title Somebody Done Somebody Wrong}
 {meta: artist B J Thomas}
 {meta: composer Chips Moman and Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file somebodydonesomebodywronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's lonely out [F]tonight
@@ -29,3 +32,6 @@ Another [C]somebody done somebody [C7]wrong [F]song
 And make me feel at [C]home 
 While I miss my [Dm]baby [G7]while I miss my [C]baby
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title A Very Merry Christmas}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file averymerryChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Snowflakes falling [F]everywhere 
@@ -46,3 +49,9 @@ And the [G7]very merry [C]Christmas
 {start_of_verse: Verse 5}
 It's a [G7]very merry [C]Christmas
 {end_of_verse}
+
+
+
+
+
+

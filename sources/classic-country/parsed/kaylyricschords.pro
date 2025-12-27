@@ -1,6 +1,9 @@
 {meta: title Kay}
 {meta: artist John Wesley Ryles}
 {meta: composer Hank Mills}
+{meta: x_source classic-country}
+{meta: x_source_file kaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Kay with all your singing talent back in [F]Houston 
@@ -81,3 +84,13 @@ Staring [F]out at Music City from my [C]cab
 Kay I'm living yet I'm dying 
 Staring [F]out at Music City [G7]from my [C]cab
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Must Have Walked Across My Mind Again}
 {meta: artist George Jones}
 {meta: composer W. Kemp and W. Robb}
+{meta: x_source classic-country}
+{meta: x_source_file youmusthavewalkedacrossmymindagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke-up down town in [F]jail again this [C]morning
@@ -29,3 +32,6 @@ I don't recall what I've done or where [G7]I've been
 I was [C]holding my own then [F]everything went [C]wrong
 You must have walked [G7]across my mind [C]again
 {end_of_verse}
+
+
+

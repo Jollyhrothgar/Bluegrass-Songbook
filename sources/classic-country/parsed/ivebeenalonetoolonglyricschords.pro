@@ -1,6 +1,9 @@
 {meta: title I've Been Alone Too Long}
 {meta: artist Charly McClain}
 {meta: composer Cynthia Weil and Mark James}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeenalonetoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Funny how I can [F]go on living
@@ -57,3 +60,9 @@ I've [G7]been alone too [C]long
 I've [G7]been alone too [C]long
 Oh [F]baby I've [G7]been alone too [C]long
 {end_of_verse}
+
+
+
+
+
+

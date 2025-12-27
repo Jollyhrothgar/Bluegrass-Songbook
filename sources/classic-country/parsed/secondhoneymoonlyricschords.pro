@@ -1,6 +1,9 @@
 {meta: title Second Honeymoon}
 {meta: artist Johnny Cash}
 {meta: composer Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file secondhoneymoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walked up to the desk and asked the [F]man about a [C]room
@@ -30,3 +33,6 @@ But I'm [F]alone on our [G7]second honey[C]moon
 {start_of_verse: Verse 4}
 ([F]Alone on our [G7]second honey[C]moon)
 {end_of_verse}
+
+
+

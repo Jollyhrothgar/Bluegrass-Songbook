@@ -1,6 +1,9 @@
 {meta: title This Divorce Lyrics Chords}
 {meta: artist Kitty Wells}
 {meta: composer Roy Botkin}
+{meta: x_source classic-country}
+{meta: x_source_file thisdivorcelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This divorce you're asking [C]me to [D7]give [G]you
@@ -22,3 +25,5 @@
 [C]But I dread the [D7]thought of [G]tomorrow
 [D7]When I'd give this divorce dear to [G]you
 {end_of_verse}
+
+

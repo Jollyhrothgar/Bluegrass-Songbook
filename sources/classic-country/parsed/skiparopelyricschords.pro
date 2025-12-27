@@ -1,6 +1,9 @@
 {meta: title Skip a Rope}
 {meta: artist George Jones}
 {meta: composer Jack Moran and Glenn Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file skiparopelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Skip a Rope  Skip [G7]a Rope 
@@ -35,3 +38,7 @@ It's really [C]not very funny what the children [Am]say
 Skip a [C]Rope  [Am]Skip a [C]Rope  [Am]Skip [C]a Rope  
 [Am]Skip [C]a Rope
 {end_of_verse}
+
+
+
+

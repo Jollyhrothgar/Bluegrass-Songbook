@@ -1,6 +1,9 @@
 {meta: title Let The Whole World Sing It With Me}
 {meta: artist Wynn Stewart}
 {meta: composer Dale Noe}
+{meta: x_source classic-country}
+{meta: x_source_file letthewholeworldsingitwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Fill my life with a song a happy [C]happy [G]song
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 3}
 [C]Just let the whole [D7]world sing it with [G]me
 {end_of_verse}
+
+
+
+

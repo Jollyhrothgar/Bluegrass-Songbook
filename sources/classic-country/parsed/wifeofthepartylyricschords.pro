@@ -1,6 +1,9 @@
 {meta: title Wife Of The Party}
 {meta: artist Norma Jean}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file wifeofthepartylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We both know a certain party I won't [D7]mention any names
@@ -33,3 +36,7 @@ For the [G]wife of the [D7]party is [G]me
 {start_of_verse: Verse 5}
 [C]Yes the [G]wife of the [D7]party is [G]me
 {end_of_verse}
+
+
+
+

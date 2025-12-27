@@ -1,5 +1,8 @@
 {meta: title How Will I Explain About You}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file howwilliexplainaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You left me my darling to [C]travel [G]alone
@@ -42,3 +45,8 @@ I'm leaving it all up to [D7]you
 And [G]if you insist that our [C]pathway must [G]part
 How will I [D7]explain about [G]you 
 {end_of_verse}
+
+
+
+
+

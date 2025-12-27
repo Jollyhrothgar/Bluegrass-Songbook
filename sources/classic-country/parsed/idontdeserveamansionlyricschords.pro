@@ -1,5 +1,8 @@
 {meta: title I Don’t Deserve A Mansion}
 {meta: artist Jeannie C. Riley}
+{meta: x_source classic-country}
+{meta: x_source_file idontdeserveamansionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was lost but Jesus saved me
@@ -38,3 +41,9 @@ But [C]Jesus built a home for me [G7]in [C]Gloryland
 {start_of_verse: Verse 7}
 Yes Jesus built a home for me [G7]in [C]Gloryland
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Sweetest Words He Ever Said}
 {meta: artist Joe Hemphill}
+{meta: x_source classic-country}
+{meta: x_source_file thesweetestwordsheeversaidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like the woman brought to Jesus who was taken in her sin
@@ -39,3 +42,8 @@ Oh the sweetest words He ever said were I forgive
 {start_of_verse: Verse 4}
 [Am]But the sweetest words He ever [G7]said were I [C]forgive
 {end_of_verse}
+
+
+
+
+

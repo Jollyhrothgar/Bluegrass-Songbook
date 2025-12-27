@@ -1,6 +1,9 @@
 {meta: title I Just Can't Be True}
 {meta: artist Webb Pierce}
 {meta: composer Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcantbetruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now honey I just can't be true 
@@ -39,3 +42,8 @@ I wanna play the field and lead a happy [F]life
 Let's settle this thing and say we're [F]through
 Cause [C]honey baby I [G7]just can't be [C]true
 {end_of_verse}
+
+
+
+
+

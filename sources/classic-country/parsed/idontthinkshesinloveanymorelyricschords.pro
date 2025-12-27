@@ -1,6 +1,9 @@
 {meta: title I Don’t Think She’s In Love Anymore}
 {meta: artist Charley Pride}
 {meta: composer Kent Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file idontthinkshesinloveanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I came in late again  last [F]night 
@@ -56,3 +59,9 @@ I don't think she wants to hear any more of my [F]lies
 [G7]She's not buying my lies like [C]before
 The [F]only thing she [G7]wants out of me now is [C]goodbye
 {end_of_verse}
+
+
+
+
+
+

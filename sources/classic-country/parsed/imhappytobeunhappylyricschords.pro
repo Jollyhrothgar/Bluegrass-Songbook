@@ -1,6 +1,9 @@
 {meta: title I'm Happy To Be Unhappy}
 {meta: artist Leroy Van Dyke}
 {meta: composer Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file imhappytobeunhappylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I'm glad to be your [G]fool
@@ -52,3 +55,10 @@ Just [C]so I'm walking by your [D7]side
 Yes I'm happy to be [C]unhappy
 And [D7]I'm glad to be your [G]fool
 {end_of_verse}
+
+
+
+
+
+
+

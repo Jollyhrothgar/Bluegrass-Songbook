@@ -1,6 +1,9 @@
 {meta: title One Night To Remember}
 {meta: artist Ray Price}
 {meta: composer Raymond Smith}
+{meta: x_source classic-country}
+{meta: x_source_file onenighttorememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's funny [B7]now that it's [C]ending
@@ -29,3 +32,6 @@ So [G]let's give [B7]ourselves one [C]night to remember
 A [G]few borrowed [B7]moments to [C]hold to for[D7]ever
 [G]Just one night [D7]before I'm [G]gone
 {end_of_verse}
+
+
+

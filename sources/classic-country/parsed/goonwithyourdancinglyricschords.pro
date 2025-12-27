@@ -1,6 +1,9 @@
 {meta: title Go On With Your Dancing}
 {meta: artist Jean Shepard}
 {meta: composer Jack Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file goonwithyourdancinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Go on with your dancing go on have your [D7]fun
@@ -29,3 +32,6 @@ Where there's tinkle [C]of glasses and sparkle of [G]wine
 [G]The kiss you were stealing you thought you could [D7]hide
 But go on with your dancing and I'll step [G]aside
 {end_of_verse}
+
+
+

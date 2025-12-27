@@ -1,6 +1,9 @@
 {meta: title Snow In His Hair}
 {meta: artist Johnny Cash}
 {meta: composer Marshall Pack}
+{meta: x_source classic-country}
+{meta: x_source_file snowinhishairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The years have been many the [D7]years have been [G]long
@@ -29,3 +32,6 @@ A [D7]halo of worry and [G]care
 As my [C]daddy grows old he's more [G]precious than gold
 For I cherish the [D7]snow in his [G]hair
 {end_of_verse}
+
+
+

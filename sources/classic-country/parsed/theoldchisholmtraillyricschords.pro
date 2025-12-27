@@ -1,5 +1,8 @@
 {meta: title The Old Chisholm Trail}
 {meta: artist Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file theoldchisholmtraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well come along boys and listen to my tale
@@ -125,3 +128,27 @@ Come a [G7]ti yi yippy yippy [C]yea
 Come a [F]ti yi yippy yippy [C]yea yippy yea
 Come a [G7]ti yi yippy yippy [C]yea
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Highway Robbery}
 {meta: artist Tanya Tucker}
 {meta: composer Chuck Jones, Michael Garvin, Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file highwayrobberylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Okay officer I admit it I was [C]speedin'
@@ -50,3 +53,9 @@ He ought to do time in my [D]arms for [D7]what he's [G]done
 {start_of_verse: Verse 5}
 He ought to do time in my [D]arms for [D7]what he's [G]done
 {end_of_verse}
+
+
+
+
+
+

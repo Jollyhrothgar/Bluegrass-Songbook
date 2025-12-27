@@ -1,6 +1,9 @@
 {meta: title Lonesome Town}
 {meta: artist Ricky Nelson}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file lonesometownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Lonesome Town
@@ -39,3 +42,8 @@ To [D7]cry my troubles [G7]away
 [F]Maybe [Fm]down in [C]lonesome [Am]town
 [F]I can [G7]learn to [C]forget
 {end_of_verse}
+
+
+
+
+

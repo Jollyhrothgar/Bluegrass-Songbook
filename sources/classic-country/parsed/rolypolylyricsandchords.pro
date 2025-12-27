@@ -1,6 +1,9 @@
 {meta: title Roly Poly and chord}
 {meta: artist Bob Wills}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file rolypolylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]ROLY POLY  [F]eatin' corn n' [C]'taters
@@ -31,3 +34,6 @@ And he runs both ways to all the [C]stores
 [C]ROLY POLY [F]daddy's little [C]fattie
 Bet he's gonna [G7]be a man [C]someday
 {end_of_verse}
+
+
+

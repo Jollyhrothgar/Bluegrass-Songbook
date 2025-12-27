@@ -1,6 +1,9 @@
 {meta: title You Ain't Never Been to Texas}
 {meta: artist Johnny Lee}
 {meta: composer Roger Springer, Tony Raymee, Jerry Lane}
+{meta: x_source classic-country}
+{meta: x_source_file youaintneverbeentotexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Saw a man on the TV [Am]he's out in California
@@ -44,3 +47,7 @@ If you [Am]don't believe in God [D7]you ain't never been to [G]Texas
 {start_of_verse: Verse 5}
 No if you [Am]don't believe in God [D7]you ain't never been to [G]Texas
 {end_of_verse}
+
+
+
+

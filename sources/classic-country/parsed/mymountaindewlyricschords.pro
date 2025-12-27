@@ -1,5 +1,8 @@
 {meta: title My Mountain Dew}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file mymountaindewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You [F]found a [C]new love  
@@ -35,3 +38,7 @@ And I’m [C]happy [F]with my mountain [C]dew
 It helps me [F]forget about [C]you
 My good ol’ [F]mountain [C]dew
 {end_of_verse}
+
+
+
+

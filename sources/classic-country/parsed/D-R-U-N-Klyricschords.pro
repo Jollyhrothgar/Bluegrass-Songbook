@@ -1,6 +1,9 @@
 {meta: title D-R-U-N-K}
 {meta: artist David Allan Coe}
 {meta: composer Tim Dubois and Larry Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file D-R-U-N-Klyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How do you spell relief I get [C]d-r-u-n-[G]k
@@ -41,3 +44,8 @@ But [G]how do you spell relief John I get [D7]d-r-u-n-[G]k
 How do you spell relief I get [D7]d-r-u-n-[G]k
 How do you spell relief I get [A7]d-r-[D7]u-n-[G]k
 {end_of_verse}
+
+
+
+
+

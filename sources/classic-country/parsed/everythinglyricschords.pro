@@ -1,6 +1,9 @@
 {meta: title Everything}
 {meta: artist Doug Stone}
 {meta: composer Jeff Jones, Rusty VanSickle, Terry Clayton}
+{meta: x_source classic-country}
+{meta: x_source_file everythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't own a brand new Benz
@@ -51,3 +54,9 @@ And all I've [Dm]got[C]  [F]  [G7] is every[C]thing[G7]
 {start_of_verse: Verse 5}
 [F]Well [G7]I've got every[C]thing
 {end_of_verse}
+
+
+
+
+
+

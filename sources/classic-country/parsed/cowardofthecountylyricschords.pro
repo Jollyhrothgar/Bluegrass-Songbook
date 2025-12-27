@@ -1,6 +1,9 @@
 {meta: title Coward of the County}
 {meta: artist Kenny Rogers}
 {meta: composer Roger Bowling and Billy Ed Wheeler}
+{meta: x_source classic-country}
+{meta: x_source_file cowardofthecountylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everyone considered him the [F]coward of the [C]county
@@ -72,3 +75,12 @@ Some[F]times you gotta [G7]fight when you're a [C]man
 {start_of_verse: Verse 9}
 Everyone considered him the [F]coward of the [C]county
 {end_of_verse}
+
+
+
+
+
+
+
+
+

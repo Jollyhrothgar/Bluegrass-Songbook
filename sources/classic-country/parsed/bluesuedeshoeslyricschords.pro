@@ -1,6 +1,9 @@
 {meta: title Blue Suede Shoes}
 {meta: artist Elvis Presley}
 {meta: composer Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file bluesuedeshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's one for the money two for the show
@@ -41,3 +44,7 @@ Blue blue blue suede shoes yeah
 [C]Blue blue blue suede shoes
 Well you can [G7]do anything but lay off of my blue suede [C]shoes
 {end_of_verse}
+
+
+
+

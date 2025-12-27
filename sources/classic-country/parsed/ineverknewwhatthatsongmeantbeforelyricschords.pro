@@ -1,6 +1,9 @@
 {meta: title I Never Knew What That Song Meant Before}
 {meta: artist Connie Smith}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file ineverknewwhatthatsongmeantbeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sang goodbye a thousand times[C7] 
@@ -29,3 +32,6 @@ Those catchy lines are touching home
 [C]I don’t think that I [Em]could get [F]through it [G7]anymore
 Honey [C]I never [F]knew [G7]what that song meant be[C]fore
 {end_of_verse}
+
+
+

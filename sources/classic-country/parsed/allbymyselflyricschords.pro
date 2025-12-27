@@ -1,6 +1,9 @@
 {meta: title All By Myself}
 {meta: artist Jimmy Dean}
 {meta: composer Irving Berlin}
+{meta: x_source classic-country}
+{meta: x_source_file allbymyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All by myself in the [A7]morning
@@ -22,3 +25,5 @@
 [C]I wanna rest my [Am]weary head on somebody's [F][G]shoulder
 [E7]Oh how I hate to [Am]grow older [D7]all by [G]myself
 {end_of_verse}
+
+

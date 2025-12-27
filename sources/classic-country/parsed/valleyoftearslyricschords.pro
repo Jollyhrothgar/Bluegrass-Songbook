@@ -1,6 +1,9 @@
 {meta: title Valley Of Tears}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file valleyoftearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want you to take me
@@ -41,3 +44,10 @@ Without any [F]care
 Everyone understand [C]me
 [G7]In the valley of [C]tears
 {end_of_verse}
+
+
+
+
+
+
+

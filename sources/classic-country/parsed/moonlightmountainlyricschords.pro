@@ -1,6 +1,9 @@
 {meta: title Moonlight Mountain Lyrics chords}
 {meta: artist Faron Young}
 {meta: composer Bud Freeman and Leon Pober}
+{meta: x_source classic-country}
+{meta: x_source_file moonlightmountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm all [Dm]alone [G7]on moonlight [C]mountain
@@ -33,3 +36,6 @@ And [Am]in your [B7]arms [C]all I [B7]knew
 [Dm]I'll spend so [G7]many [C]hours like [Am]these
 [Dm]Alone [G7]on moonlight [C]mountain
 {end_of_verse}
+
+
+

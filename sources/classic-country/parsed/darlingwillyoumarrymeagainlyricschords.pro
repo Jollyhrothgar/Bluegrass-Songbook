@@ -1,6 +1,9 @@
 {meta: title Darling Will You Marry Me Again}
 {meta: artist Moe Bandy}
 {meta: composer Sanger D. Shafer and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file darlingwillyoumarrymeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was mom and [C]daddy's [D7]anniversary
@@ -23,3 +26,5 @@
 [C]When you said darling will [D7]you marry me [G]again
 [D7]Darling will you marry me [G]again
 {end_of_verse}
+
+

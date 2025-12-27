@@ -1,5 +1,8 @@
 {meta: title Rose Colored Glasses}
 {meta: artist John Conlee}
+{meta: x_source classic-country}
+{meta: x_source_file rosecoloredglasseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't know why I [C]keep on [D7]believing you [C]need me
@@ -42,3 +45,8 @@ That [G]I'm [C]looking [D7]through
 [G]Show [C]on-ly the [D7]beauty 
 Cause they [G]hide [C]all [D7]the truth
 {end_of_verse}
+
+
+
+
+

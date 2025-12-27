@@ -1,6 +1,9 @@
 {meta: title I Can't Get Over Me (Not Getting Over You)}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Wayne P. Walker and Chuck Reed}
+{meta: x_source classic-country}
+{meta: x_source_file icantgetovermenotgettingoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't get over me [G7]not getting over [C]you
@@ -28,3 +31,5 @@ And [G]now the pain is you
 A [G7]long time over[C]due
 And I [D7]can't get over me not getting over [G]you
 {end_of_verse}
+
+

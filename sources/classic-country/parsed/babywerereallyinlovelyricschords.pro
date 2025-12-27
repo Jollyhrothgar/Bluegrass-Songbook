@@ -1,5 +1,8 @@
 {meta: title Baby We're Really In Love}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file babywerereallyinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you're loving me like I'm loving you
@@ -68,3 +71,14 @@ Baby we fit like a [D7]glove
 If you're loving me like I'm loving you
 Baby we're really in [G]love
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

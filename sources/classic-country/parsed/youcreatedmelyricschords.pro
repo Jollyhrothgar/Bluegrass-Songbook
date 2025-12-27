@@ -1,6 +1,9 @@
 {meta: title You Created Me}
 {meta: artist Wanda Jackson}
 {meta: composer Curtis Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file youcreatedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Stand back now take a good look tell me do [G7]you like what you [C]see
@@ -20,3 +23,5 @@ You made me [D7]over you must accept me for [C]you created [G]me
 {start_of_verse: Verse 3}
 [C]You made me [D7]over you must accept me for [C]you created [G]me
 {end_of_verse}
+
+

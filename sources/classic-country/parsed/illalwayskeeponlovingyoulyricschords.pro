@@ -1,6 +1,9 @@
 {meta: title I'll Always Keep On Loving You}
 {meta: artist Melba Montgomery}
 {meta: composer Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file illalwayskeeponlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I say tomorrow I'll forget [C]you
@@ -29,3 +32,6 @@
 [G]I've even said I'm glad you're not [C]around
 [D7]But I'll always keep on lovin' [G]you
 {end_of_verse}
+
+
+

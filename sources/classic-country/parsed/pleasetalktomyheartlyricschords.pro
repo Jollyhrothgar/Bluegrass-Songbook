@@ -1,6 +1,9 @@
 {meta: title Please Talk To My Heart}
 {meta: artist Ray Price}
 {meta: composer Country Johnny Mathis and Walt Breeland}
+{meta: x_source classic-country}
+{meta: x_source_file pleasetalktomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please talk to my heart because I'm [F]lonesome 
@@ -29,3 +32,6 @@ Any [F]love you can [C]give me will [G7]do
 And [C]don't be afraid I'll start [F]crying 
 I'm [G7]crying that's why I need [C]you
 {end_of_verse}
+
+
+

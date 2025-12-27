@@ -1,6 +1,9 @@
 {meta: title Sensitive Heart}
 {meta: artist Conway Twitty}
 {meta: composer Billy Swan}
+{meta: x_source classic-country}
+{meta: x_source_file sensitiveheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't tell me you don't love me 
@@ -43,3 +46,8 @@ That [G7]we could ever part
 For [C]darling I love you [G]so much 
 In my [D7]sensitive [C]hear[G]t
 {end_of_verse}
+
+
+
+
+

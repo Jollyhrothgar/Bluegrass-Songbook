@@ -1,6 +1,9 @@
 {meta: title She Took The Wind From His Sails}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Donny Kees}
+{meta: x_source classic-country}
+{meta: x_source_file shetookthewindfromhissailslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Outer banks of North Carolina 
@@ -59,3 +62,11 @@ His [Dm]ship's come [C]in
 His [Dm]ship's come [C]in 
 But [F]she took the [G7]wind from his [C]sails 
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can't Love You Any Less}
 {meta: artist Alabama}
 {meta: composer Ronnie Rogers, Teddy Gentry, Greg Flower, Randy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file icantloveyouanylesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My heart fell [G7]to the floor[Am] 
@@ -48,3 +51,9 @@ I don't [A7]love you any [Dm]less  [Fm]you don't [G7]love me [C]anymore [G7]
 [A7]Girl I don't love you any [Dm]less
 [G7]You don't love me [C]anymore
 {end_of_verse}
+
+
+
+
+
+

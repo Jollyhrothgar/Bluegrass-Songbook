@@ -1,6 +1,9 @@
 {meta: title Going's Been Coming}
 {meta: artist Loretta Lynn}
 {meta: composer Theresa Beaty}
+{meta: x_source classic-country}
+{meta: x_source_file goingsbeencominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You stop right now [C]wondering how I could [G]leave
@@ -23,3 +26,5 @@
 [D7]Though it's been coming to [G]goodbye
 [C]Though it's been [D7]coming to [G]goodbye
 {end_of_verse}
+
+

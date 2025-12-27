@@ -1,5 +1,8 @@
 {meta: title Burden Of Freedom}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file burdenoffreedomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I stand on the stairway  my back to the [Dm]dungeon
@@ -28,3 +31,6 @@ And give me the [F]courage  to be what I [G7]can
 And when I have [C]wounded  the last one who [Dm]loved me
 God help her for[G7]give me  I don't under[C]stand
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Town I Loved So Well}
 {meta: artist The Dubliners}
 {meta: composer m Phil Coulter}
+{meta: x_source classic-country}
+{meta: x_source_file thetownilovedsowelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]In my [G]memo[D7]ry I will [C]always [G]see 
@@ -71,3 +74,12 @@ And what's [C]lost is [Am]lost and gone for[D7]ever
 I can [G]only [D7]pray for a [C]bright brand new [G]day
 In the [C]town I [G]loved [D7]so [G]well
 {end_of_verse}
+
+
+
+
+
+
+
+
+

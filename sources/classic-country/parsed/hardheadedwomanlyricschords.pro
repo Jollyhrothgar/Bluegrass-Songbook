@@ -1,6 +1,9 @@
 {meta: title Hard Headed Woman}
 {meta: artist Elvis Presley}
 {meta: composer Claude Demetrius}
+{meta: x_source classic-country}
+{meta: x_source_file hardheadedwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well a hard headed woman a soft hearted man
@@ -60,3 +63,14 @@ A [D7]hard headed woman been a thorn [C]in the side of [G]man
 {start_of_verse: Verse 12}
 A [D7]hard headed woman been a [C]thorn in the side of [G]man 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Cowboys Don't Shoot Straight}
 {meta: artist Tammy Wynette}
 {meta: composer Chips Moman and Bobby Emmons}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysdontshootstraightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Big silver buckles and pre-faded jeans
@@ -36,3 +39,7 @@
 [G]Cowboys don't shoot straight like they used to
 [Em]It's just [A7]wham bam thank you ma'am and they're [D]gone
 {end_of_verse}
+
+
+
+

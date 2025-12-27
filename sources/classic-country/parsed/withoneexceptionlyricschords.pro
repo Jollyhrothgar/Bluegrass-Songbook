@@ -1,6 +1,9 @@
 {meta: title With One Exception}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file withoneexceptionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've seen lots of pretty [G7]faces 
@@ -26,3 +29,5 @@ Can't you [A7]see my world is wrapped up in [D7]a golden wedding [D7][A#7]band
 I'd beg [G]steal or borrow and [G7]you'd be mine [C]tomorrow
 With one [G]exception and she's [D7]waiting at [G]home
 {end_of_verse}
+
+

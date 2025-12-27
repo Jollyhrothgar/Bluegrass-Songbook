@@ -1,6 +1,9 @@
 {meta: title Working Man}
 {meta: artist John Conlee}
 {meta: composer Billy Ray Reymnolds and Jim Hurt}
+{meta: x_source classic-country}
+{meta: x_source_file workingmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stumble from my good warm bed 
@@ -73,3 +76,10 @@ His [G7]money goes right [C]through his hands
 [F]Heaven help him if you [C]think you can
 They're [F]makin' it har[G7]d on the workin' [C]man
 {end_of_verse}
+
+
+
+
+
+
+

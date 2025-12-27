@@ -1,5 +1,8 @@
 {meta: title Rock Island Line}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file rockislandlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now this here's a story about the Rock Island Line
@@ -73,3 +76,11 @@ Well if you ride you [G7]got to ride [C]it
 like you finally get your ticket
 At the station for the [G7]Rock Island [C]Line
 {end_of_verse}
+
+
+
+
+
+
+
+

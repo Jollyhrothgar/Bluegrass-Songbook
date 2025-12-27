@@ -1,6 +1,9 @@
 {meta: title The Phone Call}
 {meta: artist Mickey Gilley}
 {meta: composer Even Stevens and Billy Joe Walker}
+{meta: x_source classic-country}
+{meta: x_source_file thephonecalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Oh I've been driving all night long 
@@ -52,3 +55,7 @@ I've been getting along just fine without [C]you
 [G7]Then she [C]said
 [F]I'm really sorry but I really have to [C]go
 {end_of_verse}
+
+
+
+

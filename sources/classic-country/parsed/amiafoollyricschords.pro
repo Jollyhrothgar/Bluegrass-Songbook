@@ -1,5 +1,8 @@
 {meta: title Am I A Fool}
 {meta: artist The Lonesome River Band}
+{meta: x_source classic-country}
+{meta: x_source_file amiafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never [C]thought I would see [D7]you [G]again
@@ -47,3 +50,9 @@
 [Em]I'm gonna love you till all hope is [C]gone
 [G]Am I a [C]fool for [D7]hanging [G]on
 {end_of_verse}
+
+
+
+
+
+

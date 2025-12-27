@@ -1,6 +1,9 @@
 {meta: title Right In The Wrong Direction}
 {meta: artist Vern Gosdin}
 {meta: composer Hank Cochran, Mack Vickery, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file rightinthewrongdirectionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well your office called to [G7]say you wouldn't be [C]long
@@ -34,3 +37,7 @@ You're [C]headed right in the wrong direction honey if [G7]you wanna come [C]hom
 [F]Well you're headed right in the wrong direction [C]honey 
 [G7]If you wanna come [C]home 
 {end_of_verse}
+
+
+
+

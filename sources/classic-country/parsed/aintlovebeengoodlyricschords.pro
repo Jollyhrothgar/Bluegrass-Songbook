@@ -1,5 +1,8 @@
 {meta: title Ain't Love Been Good}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file aintlovebeengoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't love been good to us [F]ain't it been [C][G7][C]g-o-o-d
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 5}
 [C]Ain't love been [G7]wonderful oh ain't it been [C]good
 {end_of_verse}
+
+
+
+

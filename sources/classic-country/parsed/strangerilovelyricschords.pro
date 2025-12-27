@@ -1,5 +1,8 @@
 {meta: title Stranger I Love}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file strangerilovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've been a [C]simple man and I've been insane
@@ -28,3 +31,6 @@ So I'll take her [C]hand-me-downs I'll take the blame
 Cause the longer I [C]love her the more I be[G7]lieve 
 The stranger I [C]love
 {end_of_verse}
+
+
+

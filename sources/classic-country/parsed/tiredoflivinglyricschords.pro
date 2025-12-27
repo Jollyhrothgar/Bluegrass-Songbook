@@ -1,5 +1,8 @@
 {meta: title Tired Of Living}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file tiredoflivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm tired of living and I'm scared of [C]dying
@@ -53,3 +56,10 @@ Things had better change and I ain't a [C]lying
 {start_of_verse: Verse 6}
 Yeah something better [D7]happen pretty [G]soon
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title One More Night}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file onemorenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One more night and I [D7]know [C]  that I'll be over [G]you
@@ -28,3 +31,6 @@ Repeat last
 Yeah [C]one [G]more [D7]night oh [C]one [G]more [D7]night
 Oh [C]one [G]more [D7]night [C]one [G]more [D7]night
 {end_of_verse}
+
+
+

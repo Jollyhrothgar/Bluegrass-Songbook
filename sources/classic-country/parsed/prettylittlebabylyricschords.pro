@@ -1,6 +1,9 @@
 {meta: title Pretty Little Baby}
 {meta: artist Connie Francis}
 {meta: composer Don Stirling and Bill Nauman}
+{meta: x_source classic-country}
+{meta: x_source_file prettylittlebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pretty little [Am]baby ([Dm]yah [G7]yah)
@@ -48,3 +51,10 @@
 Pretty little [Am]baby [Dm]    [G7]I said [C]pretty little [Am]baby [Dm]
 [G7]Oh now pretty [C]little [Am]baby
 {end_of_verse}
+
+
+
+
+
+
+

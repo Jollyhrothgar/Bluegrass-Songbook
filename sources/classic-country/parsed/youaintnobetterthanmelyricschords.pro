@@ -1,6 +1,9 @@
 {meta: title You Ain't No Better Than Me}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker and Max Powell}
+{meta: x_source classic-country}
+{meta: x_source_file youaintnobetterthanmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why do you strut around town just a-puttin’ me down
@@ -53,3 +56,10 @@ And you ain’t no better than [C]me
 [G7]You ain’t no better than [C]me
 [G7]You ain’t no better than [C]me
 {end_of_verse}
+
+
+
+
+
+
+

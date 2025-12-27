@@ -1,5 +1,8 @@
 {meta: title If You Don't Know It}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudontknowitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 If You Don't Know It
@@ -40,3 +43,8 @@ How [G]many times do you think you oughta know
 I [C]feel just like I was a hung up record 
 I [A7]love you love you [D7]so
 {end_of_verse}
+
+
+
+
+

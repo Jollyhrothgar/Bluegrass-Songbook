@@ -1,6 +1,9 @@
 {meta: title Your Eyes Don’t Lie To Me}
 {meta: artist Bill Anderson}
 {meta: composer Terry Carisse and Bruce Rawlins}
+{meta: x_source classic-country}
+{meta: x_source_file youreyesdontlietomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your eyes tell me [C]all the things I need to [G]know
@@ -29,3 +32,6 @@ They’re begging me to set you [D7]free
 Your [G]eyes tell me you don’t [C]love me [G]anymore
 And your eyes don’t [D7]lie to [G]me
 {end_of_verse}
+
+
+

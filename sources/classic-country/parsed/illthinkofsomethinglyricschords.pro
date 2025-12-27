@@ -1,6 +1,9 @@
 {meta: title I'll Think Of Something}
 {meta: artist Hank Williams Jr.}
 {meta: composer Bill Rick and Jerry Foster}
+{meta: x_source classic-country}
+{meta: x_source_file illthinkofsomethinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know how I'll get her off my [Am]mind
@@ -35,3 +38,7 @@ I don't [F]know I'll think of [C]something
 {start_of_verse: Verse 5}
 Well I don't know [F]I'll think of [C]something
 {end_of_verse}
+
+
+
+

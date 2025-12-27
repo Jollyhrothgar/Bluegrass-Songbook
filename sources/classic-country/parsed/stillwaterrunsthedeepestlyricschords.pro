@@ -1,6 +1,9 @@
 {meta: title Still Water Runs The Deepest}
 {meta: artist Bob Wills}
 {meta: composer Jesse Ashlock}
+{meta: x_source classic-country}
+{meta: x_source_file stillwaterrunsthedeepestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Still water runs the deepest
@@ -29,3 +32,6 @@ Your love is cold and selfish
 [F]So peaceful and [C]dependable
 [G7]I can't say the same about [C]you
 {end_of_verse}
+
+
+

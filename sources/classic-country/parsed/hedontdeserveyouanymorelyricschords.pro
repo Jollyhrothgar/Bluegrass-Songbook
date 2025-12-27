@@ -1,6 +1,9 @@
 {meta: title He Don't Deserve You Anymore}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Artie Large}
+{meta: x_source classic-country}
+{meta: x_source_file hedontdeserveyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I found you darling then he saw his big [F]mistake
@@ -22,3 +25,5 @@ It [G7]was never his intention to let you share his [C]name
 The lonely hours you've waited now won't happen [F]anymore
 For [G7]it's his turn to feel the hurt he don't deserve you [C]anymore
 {end_of_verse}
+
+

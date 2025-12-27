@@ -1,6 +1,9 @@
 {meta: title Sweet Lips}
 {meta: artist Webb Pierce}
 {meta: composer Wayne Walker, Doug Tubb and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file sweetlipslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sweet sweet lips that kiss so [G7]sweetly
@@ -24,3 +27,5 @@ Your sweet sweet lips [C7]fool me com[F]pletely
 And each [C]time you lie [G7]I’m gonna to cry 
 That I don’t want to be [C]free
 {end_of_verse}
+
+

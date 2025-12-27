@@ -1,6 +1,9 @@
 {meta: title Hole In The Wall}
 {meta: artist Alan Jackson}
 {meta: composer Jim McBride and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file holeinthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]There's a [G]hole [D7]in the [G]wall where a nail used to [C]be
@@ -35,3 +38,7 @@ Big enough to drive a [G]truck through
 There'll be a [G]hole in that [D7]wall 
 Big enough to drive a [G]truck through
 {end_of_verse}
+
+
+
+

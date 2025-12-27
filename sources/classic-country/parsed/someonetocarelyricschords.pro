@@ -1,5 +1,8 @@
 {meta: title Someone To Care}
 {meta: artist Jimmy Davis}
+{meta: x_source classic-country}
+{meta: x_source_file someonetocarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When the [C]world seems [C7]cold and your [F]friends seem few
@@ -28,3 +31,6 @@ All your [C]troubles like no [D7]other can [G7]do
 He'll come [C]down from the sky and brush the [F]tears from your eyes
 You're His [C]child and He [G7]cares for [C]you
 {end_of_verse}
+
+
+

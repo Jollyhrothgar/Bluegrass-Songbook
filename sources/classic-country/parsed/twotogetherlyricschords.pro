@@ -1,6 +1,9 @@
 {meta: title Two Together}
 {meta: artist Connie Smith}
 {meta: composer Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file twotogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you're not in my arms then you're too far away
@@ -31,3 +34,6 @@ So keep on [Am]lovin' me the way you do
 Just [G7]as long as you [E7]want me to
 And [A7]we'll always [D7]be two to[G]gether
 {end_of_verse}
+
+
+

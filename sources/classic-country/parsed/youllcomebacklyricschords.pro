@@ -1,6 +1,9 @@
 {meta: title You'll Come Back}
 {meta: artist Web Pierce}
 {meta: composer Billy Barton}
+{meta: x_source classic-country}
+{meta: x_source_file youllcomebacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you'll be back yeah you'll be [C]back
@@ -36,3 +39,7 @@ You'll [G]come running [D7]back to [G]me
 [G]When you're tired of all your other [C]loves
 You'll [G]come running [D7]back to [G]me
 {end_of_verse}
+
+
+
+

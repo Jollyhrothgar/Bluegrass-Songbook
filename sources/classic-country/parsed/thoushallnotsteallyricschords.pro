@@ -1,6 +1,9 @@
 {meta: title Thou Shall Not Steal}
 {meta: artist Kitty Wells}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file thoushallnotsteallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the bible it [F]says thou shall not steal
@@ -28,3 +31,5 @@ The trouble I would [G7]start
 You'll end up with a faceless kind
 Too [C]late to head the warning the [G7]law thou shalt not [C]steal 
 {end_of_verse}
+
+

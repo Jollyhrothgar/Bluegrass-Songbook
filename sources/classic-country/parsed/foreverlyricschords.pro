@@ -1,6 +1,9 @@
 {meta: title Forever}
 {meta: artist Billy Walker}
 {meta: composer Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file foreverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hold me  [F]kiss me  [C]whisper  to [F]me 
@@ -29,3 +32,6 @@ Want me  [F]need me  tell [C]me  [F]sweetly
 [C]Hold me  [F]kiss me  [C]whisper  to [F]me 
 [C]Our love  will [F]go on  [C]forever
 {end_of_verse}
+
+
+

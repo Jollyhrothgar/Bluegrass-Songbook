@@ -1,5 +1,8 @@
 {meta: title I Can't Dance}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file icantdancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't dance and I never could 
@@ -48,3 +51,8 @@ I'm just [C]one of the unfortunate [G]few
 Just for a little bit baby 
 [D7]I'd come out and dance with [G]you
 {end_of_verse}
+
+
+
+
+

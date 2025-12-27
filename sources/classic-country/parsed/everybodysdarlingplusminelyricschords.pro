@@ -1,6 +1,9 @@
 {meta: title Everybody’s Darling Plus Mine}
 {meta: artist Marty Robbins}
 {meta: composer Frances Hur}
+{meta: x_source classic-country}
+{meta: x_source_file everybodysdarlingplusminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someone's gotta hold you so tight
@@ -29,3 +32,6 @@ And you [G7]walk with one foot across the [C]line
 Right [F]words from any fool can change your [C]mind
 Cause [G7]you're everybody's darling plus [C]mine
 {end_of_verse}
+
+
+

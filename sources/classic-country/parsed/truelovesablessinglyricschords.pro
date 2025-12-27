@@ -1,6 +1,9 @@
 {meta: title True Love's a Blessing}
 {meta: artist Sonny James}
 {meta: composer Carol Smith and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file truelovesablessinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]True love's a blessing  true love's a wonderful [F]blessing
@@ -22,3 +25,5 @@ Some girl use [C]their love to break a heart to [G7]heart
 There are many [C]kinds of love to be found that's [F]true
 But there's [C]no love like the [G7]love I found when I  [G7][F]found [C]you
 {end_of_verse}
+
+

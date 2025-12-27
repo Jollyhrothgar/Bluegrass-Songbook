@@ -1,6 +1,9 @@
 {meta: title A Dog's Life}
 {meta: artist Elvis Presley}
 {meta: composer Ben Weisman and Sid Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file adogslifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I had my [F]life to live [C]over 
@@ -51,3 +54,9 @@ You heard me say [A7]it now
 [D7]That's good [G7]enough for [C]me
 [D7]That's good [G7]enough for [C]me
 {end_of_verse}
+
+
+
+
+
+

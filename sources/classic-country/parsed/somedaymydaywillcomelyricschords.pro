@@ -1,6 +1,9 @@
 {meta: title Someday My Day Will Come}
 {meta: artist George Jones}
 {meta: composer Christopher C. Ryder,}
+{meta: x_source classic-country}
+{meta: x_source_file somedaymydaywillcomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someday my day will [F]come and I won't need a [C]thing at all
@@ -26,3 +29,6 @@ My castles won't be [G7]made of sand someday my day will [C]come
 {start_of_verse: Verse 4}
 [G7]I'll hold true love right in my hand someday my day will [C]come
 {end_of_verse}
+
+
+

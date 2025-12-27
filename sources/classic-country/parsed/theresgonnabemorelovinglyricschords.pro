@@ -1,6 +1,9 @@
 {meta: title There's Gonna Be More Loving}
 {meta: artist Melba Montgomery}
 {meta: composer Melba Montgomery and Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file theresgonnabemorelovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna write you a letter beggin' you to come home [D7]today
@@ -43,3 +46,9 @@ Yeah and I'll answer right back
 [C]Together night and [G]day
 [C]Together that's the only [D7]way
 {end_of_verse}
+
+
+
+
+
+

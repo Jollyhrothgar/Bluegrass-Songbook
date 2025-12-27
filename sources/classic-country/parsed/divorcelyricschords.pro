@@ -1,6 +1,9 @@
 {meta: title D-I-V-O-R-C-E}
 {meta: artist Tammy Wynette}
 {meta: composer Bobby Braddock and Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file divorcelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Our little boy is four years old and [C]quite a little [G]man
@@ -34,3 +37,6 @@
 [G]I love you both and it will [G7]be pure H-E [C]double [D7]L for [G]me
 [C]Oh I wish that we could [G]stop this [G][D7]D-I-V-O-R-C-E
 {end_of_verse}
+
+
+

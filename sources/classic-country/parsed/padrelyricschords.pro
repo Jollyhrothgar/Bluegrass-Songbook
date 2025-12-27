@@ -1,6 +1,9 @@
 {meta: title Padre}
 {meta: artist Marty Robbins}
 {meta: composer Alain Romans}
+{meta: x_source classic-country}
+{meta: x_source_file padrelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The day that we wed you blessed us [G7]and [C]said
@@ -43,3 +46,8 @@ Pa-dre [F]Pa-dre
 Pa-dre [F]Pa-dre
 In my [G7]grief I turn to [C]you
 {end_of_verse}
+
+
+
+
+

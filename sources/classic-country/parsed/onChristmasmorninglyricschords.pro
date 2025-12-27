@@ -1,6 +1,9 @@
 {meta: title On Christmas Morning}
 {meta: artist Steve Wariner}
 {meta: composer Lisa Silver and Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file onChristmasmorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two more days of Christmas shopping
@@ -49,3 +52,9 @@ Hustle bustle never stopping
 [Dm]On Christmas morning
 [G7]With my family by the fire close to [C]me
 {end_of_verse}
+
+
+
+
+
+

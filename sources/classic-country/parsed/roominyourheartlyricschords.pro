@@ -1,6 +1,9 @@
 {meta: title Room In Your Heart}
 {meta: artist Sonny James}
 {meta: composer Frances Long and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file roominyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is there room [Em]room [Am]room in your [C]heart for [Dm]me 
@@ -26,3 +29,6 @@ Just [F]open your [C]heart  [G7]make room for [C]me
 {start_of_verse: Verse 4}
 [G7]Make room for [C]me
 {end_of_verse}
+
+
+

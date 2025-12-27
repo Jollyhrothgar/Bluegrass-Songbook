@@ -1,6 +1,9 @@
 {meta: title I Don't Even Know Your Name}
 {meta: artist Alan Jackson}
 {meta: composer Andy Loftin, Ron Jackson, Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file idontevenknowyournamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was sitting in a roadhouse down on Highway 41
@@ -49,3 +52,8 @@ Standing by a woman in a long white lacy veil
 [F]So maybe it's just better if we leave it this way
 [C]I'm in love with you baby and I don't [G7]even know your [C]name
 {end_of_verse}
+
+
+
+
+

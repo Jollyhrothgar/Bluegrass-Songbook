@@ -1,6 +1,9 @@
 {meta: title Heart Of Hearts}
 {meta: artist Don Williams}
 {meta: composer Al Anderson, Sharon Vaughn, Stephen Bruton}
+{meta: x_source classic-country}
+{meta: x_source_file heartofheartslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In your heart of hearts there is a voice
@@ -41,3 +44,8 @@ It [C]speaks from truth and not from choice
 It [G]sees it all not just in parts
 [D7]Deep inside your heart of hearts[G]
 {end_of_verse}
+
+
+
+
+

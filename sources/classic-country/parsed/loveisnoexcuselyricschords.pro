@@ -1,5 +1,8 @@
 {meta: title Love Is No Excuse}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file loveisnoexcuselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love is no excuse for what we're [G7]doing
@@ -28,3 +31,6 @@ But love is no excuse for what we've [C]done
 [F]Our love for each other looks good in the [C]night
 But [D7]our love can never see the light of [G7]day
 {end_of_verse}
+
+
+

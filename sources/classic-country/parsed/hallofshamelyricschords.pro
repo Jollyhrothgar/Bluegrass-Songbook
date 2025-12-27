@@ -1,6 +1,9 @@
 {meta: title Hall Of Shame}
 {meta: artist Gene Pitney}
 {meta: composer George Riddle}
+{meta: x_source classic-country}
+{meta: x_source_file hallofshamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Should they ever build a hall of shame 
@@ -57,3 +60,10 @@ Your [F]feelings weren't the [C]same
 I [F]know that you'd feel [C]right at home 
 In this [G7]hall of [C]shame
 {end_of_verse}
+
+
+
+
+
+
+

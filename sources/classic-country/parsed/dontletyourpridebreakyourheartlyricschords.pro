@@ -1,5 +1,8 @@
 {meta: title Don't Let Your Pride Break Your Heart}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file dontletyourpridebreakyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Think of mistakes that you’re making
@@ -28,3 +31,6 @@ Think of the hearts that you’re [D7]breaking
 [C]Think of the tears that you’ll [G]shed through the years
 If [D7]you let your pride break your [G]heart
 {end_of_verse}
+
+
+

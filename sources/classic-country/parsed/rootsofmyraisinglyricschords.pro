@@ -1,6 +1,9 @@
 {meta: title Roots of my Raising}
 {meta: artist Merle Haggard}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file rootsofmyraisinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I left the four lane highway took a [F]blacktop seven [C]miles
@@ -38,3 +41,8 @@ Then to pull that apron off and do the [D7]Charleston for us [G7]kids
 [C]Dad a quiet man who [F]gentle voice was seldom [C]heard
 Who could borrow money at the bank simply [G7]on his [C]word 
 {end_of_verse}
+
+
+
+
+

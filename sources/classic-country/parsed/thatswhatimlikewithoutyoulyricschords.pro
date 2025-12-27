@@ -1,6 +1,9 @@
 {meta: title That's What I'm Like Without You}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens, Red Simpson, Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatimlikewithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like a man [G7]without a [C]future
@@ -29,3 +32,6 @@ Like the sky [G7]without the [C]blue
 Like a [F]heart without a [C]heartbeat
 That's what I'm [G7]like without [C]you
 {end_of_verse}
+
+
+

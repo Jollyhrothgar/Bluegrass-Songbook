@@ -1,5 +1,8 @@
 {meta: title There's A Light Guiding Me}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file theresalightguidingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I talked with the Lord many nights [F]at my [C]bedside     
@@ -42,3 +45,8 @@ And it holds me steadfast to His [D7]way and His [G7]love
 It's [C]guiding me through [F]temptation and [C]evil
 There's a light guiding me to that [G7]Heaven [C]above
 {end_of_verse}
+
+
+
+
+

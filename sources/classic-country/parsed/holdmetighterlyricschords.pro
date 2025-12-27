@@ -1,5 +1,8 @@
 {meta: title Hold Me Tighter}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file holdmetighterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I thought if I could be with you 
@@ -32,3 +35,5 @@ I still re[C]member
 And I can't [F]love again 
 [G7]Until her memory's [C]gone [F]   [C]
 {end_of_verse}
+
+

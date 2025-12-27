@@ -1,6 +1,9 @@
 {meta: title Touch Me When We're Dancing}
 {meta: artist Alabama}
 {meta: composer Jerry Wallace, Terry Skinner, Ken Bell}
+{meta: x_source classic-country}
+{meta: x_source_file touchmewhenweredancinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Play us a song we can [Am]slow dance on
@@ -44,3 +47,7 @@ You [F]know you've got that lovin' [Em]touch[C]
 Oh oh [F]touch me when we're [Dm]dancin'
 I want to [F]feel you when I'm falling in [G7]love[C]
 {end_of_verse}
+
+
+
+

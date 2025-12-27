@@ -1,5 +1,8 @@
 {meta: title Joy Explosion}
 {meta: artist Jack Greene}
+{meta: x_source classic-country}
+{meta: x_source_file joyexplosionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you think that His next coming
@@ -62,3 +65,11 @@ It'll be a [G]joy [C]joy [A7]joy [D7]
 [G]Joy joy [A7]joy [D7]
 [G]Joy [E7]joy [A7]joy [D7]explo[G]sion 
 {end_of_verse}
+
+
+
+
+
+
+
+

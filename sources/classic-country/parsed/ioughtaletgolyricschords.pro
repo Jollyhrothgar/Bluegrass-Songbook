@@ -1,6 +1,9 @@
 {meta: title I Oughta Let Go}
 {meta: artist Tanya Tucker}
 {meta: composer Troy Seals, Eddie Setser, Steve Diamond}
+{meta: x_source classic-country}
+{meta: x_source_file ioughtaletgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I oughta be [G]shot [C]thinkin' that [D7]you could [G]love me
@@ -43,3 +46,8 @@ Oughta be [D7]hung keepin' up my [Am]hopes
 [D7]I got to be [G]crazy [D7]thinkin' that it could work [Em]out
 [C]I oughta know better [D7]I oughta let [G]go
 {end_of_verse}
+
+
+
+
+

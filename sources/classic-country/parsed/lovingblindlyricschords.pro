@@ -1,5 +1,8 @@
 {meta: title Loving Blind}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file lovingblindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I sit here all alone no one's [F]gonna do me [C]wrong tonight[Fm]
@@ -47,3 +50,7 @@ Well I was [F]fooled oh and I [Am]regret
 I was [F]so naive oh and [G7]I'd believe them when they'd [Am]tell me[G7]   [F]
 That's as [G7]good as love can [C]get [Fm]
 {end_of_verse}
+
+
+
+

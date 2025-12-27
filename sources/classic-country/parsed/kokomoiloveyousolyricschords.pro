@@ -1,6 +1,9 @@
 {meta: title Ko Ko Mo I Love You So Counting Tears}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Forrest Wilson and Jake Porter}
+{meta: x_source classic-country}
+{meta: x_source_file kokomoiloveyousolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Talk to me baby whisper in my ear
@@ -42,3 +45,9 @@ Don't you [D7]worry my purdy don't lose your [G]head
 Ko ko ko ko mo ko ko ko ko mo [C]ko ko ko-ko-mo
 [G]Ko ko ko-ko-mo hey hey [D7]ko ko [G]mo
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Time Stood Still}
 {meta: artist Vern Gosdin}
 {meta: composer Melvin Ragin & Robert Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file timestoodstilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You made my world go [F]round
@@ -36,3 +39,7 @@ The [Em]days have no names  today is like [C]yesterday
 I [F]lean on the wine but your [G7]memories
 Like time [F]baby won't stay [G7]away
 {end_of_verse}
+
+
+
+

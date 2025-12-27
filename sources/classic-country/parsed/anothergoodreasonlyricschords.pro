@@ -1,6 +1,9 @@
 {meta: title Another Good Reason}
 {meta: artist Alan Jackson}
 {meta: composer Harley Allen and Carson Chamberlain}
+{meta: x_source classic-country}
+{meta: x_source_file anothergoodreasonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up the other night [G7]lyin' on the floor
@@ -58,3 +61,10 @@ If I keep goin' on like this I'll [C7]end up like ole [F]Hank
 That's [G7]another good reason baby let me in I'm freezin' 
 Another good reason not to [C]drink
 {end_of_verse}
+
+
+
+
+
+
+

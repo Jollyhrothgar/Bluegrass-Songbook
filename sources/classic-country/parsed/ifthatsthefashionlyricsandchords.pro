@@ -1,6 +1,9 @@
 {meta: title If That's the Fashion}
 {meta: artist Faron Young}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file ifthatsthefashionlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each day there's someone who pays for another's [G7]mistakes
@@ -22,3 +25,5 @@ I was so wrong but it's hard to undo what is [C]done
 I guess as time changes the cycle of [C7]life changes [F]too
 So [G7]if that's the fashion be gay for life owes it to [C]you
 {end_of_verse}
+
+

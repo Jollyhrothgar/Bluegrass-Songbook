@@ -1,5 +1,8 @@
 {meta: title Leonard}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file leonardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When Leonard finally [F]came to Cali[C]fornia 
@@ -63,3 +66,11 @@ He was [F]twenty-one years [C]old as I re[G7]call
 And he [C]loved to write a [F]song and pick the [C]guitar
 And he [F]came to hang a [G7]gold one on the [C]wall
 {end_of_verse}
+
+
+
+
+
+
+
+

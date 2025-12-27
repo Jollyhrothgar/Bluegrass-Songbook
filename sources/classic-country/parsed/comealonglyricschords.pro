@@ -1,6 +1,9 @@
 {meta: title Come Along}
 {meta: artist Elvis Presley}
 {meta: composer David Hess}
+{meta: x_source classic-country}
+{meta: x_source_file comealonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come along [Am]come along there's a [C]full moon shining [G7]bright
@@ -31,3 +34,7 @@
 [C]Come along [F]come along we're gonna [C]hit St [G7]Louis to[C]night
 Come along [F]come along we're gonna [C]win a [G7]fortune to[F]night[C]
 {end_of_verse}
+
+
+
+

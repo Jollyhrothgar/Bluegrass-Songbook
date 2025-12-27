@@ -1,6 +1,9 @@
 {meta: title You Don’t Know How Lucky You Are}
 {meta: artist Rhonda Vincent}
 {meta: composer Carl Jackson and David Wills}
+{meta: x_source classic-country}
+{meta: x_source_file youdontknowhowluckyyouarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Most people use [C7]money to [F]measure success
@@ -34,3 +37,7 @@ You don't [C]know how [G7]lucky you [C]are [G7]
 [C]Priceless is [C7]true love in a [F]good woman's heart
 You don't [C]know how [G7]lucky you [C]are
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You're Still On My Mind}
 {meta: artist Amber Digby}
 {meta: composer Luke McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file yourestillonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The juke box is playing a [C7]honky tonk [F]song
@@ -23,3 +26,5 @@ My pockets are empty my [C7]last drink of [F]wine
 An [G7]empty bottle a broken heart and you're still on my [C]mind
 Just an [G7]empty bottle a broken heart and you're still on my [C]mind
 {end_of_verse}
+
+

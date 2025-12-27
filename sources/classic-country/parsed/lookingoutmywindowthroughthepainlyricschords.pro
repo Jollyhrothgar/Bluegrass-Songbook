@@ -1,6 +1,9 @@
 {meta: title Looking Out My Window Through The Pain}
 {meta: artist Mel Street}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file lookingoutmywindowthroughthepainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I watched from my window as she [F]slipped from the [C]house
@@ -33,3 +36,6 @@ Once [F]again she’s chasing memories and I’m losing [C]everything
 But [F]lord I [C]love her so I’ll [F]wait for [C]her 
 [G7]Looking out my window through [C]the pain
 {end_of_verse}
+
+
+

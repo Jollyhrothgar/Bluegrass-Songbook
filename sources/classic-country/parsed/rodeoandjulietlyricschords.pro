@@ -1,6 +1,9 @@
 {meta: title Rodeo And Juliet}
 {meta: artist Garth Brooks}
 {meta: composer Bryan Kennedy and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file rodeoandjulietlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rod[C]eo and Juli[G]et
@@ -51,3 +54,8 @@ Thoust [D7]hasn't found it yet
 [C]What's to be or not to be is [G]anybody's [C]bet
 Rod[A7]eo [D7]and Juli[G]et Rod[A7]eo [D7]and Juli[G]et
 {end_of_verse}
+
+
+
+
+

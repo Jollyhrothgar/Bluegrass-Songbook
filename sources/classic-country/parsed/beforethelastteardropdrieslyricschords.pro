@@ -1,6 +1,9 @@
 {meta: title Before The Last Teardrop Dries}
 {meta: artist Norma Jean}
 {meta: composer Debra Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file beforethelastteardropdrieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Before the last teardrop dries before the day turns into [C]night
@@ -28,3 +31,6 @@
 {start_of_verse: Verse 4}
 [D7]It’s just time for one goodbye before the last teardrop [G]dries
 {end_of_verse}
+
+
+

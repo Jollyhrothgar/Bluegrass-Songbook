@@ -1,5 +1,8 @@
 {meta: title Blessed Jesus Should I Fall Don't Let Me Lay}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file blessedJesusshouldifalldontletmelaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blessed Jesus should I fall don’t let me [G7]lay
@@ -32,3 +35,6 @@ Pick me up and [C7]take me in
 Save me [F]from a life of sin
 Blessed [G7]Jesus should I fall don’t let me [C]lay
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Wonder Do You Think Of Me}
 {meta: artist Keith Whitley}
 {meta: composer Sander D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderdoyouthinkofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you drive [Em]around back in [F]our old home[Fm]town
@@ -30,3 +33,6 @@ I don't [C]know if you [Em]would but I'd go [F]back if I [Fm]could
 [C]I wonder do [G7]you think of [C]me [F]
 I still [C]love you do [G7]you think of [C]me
 {end_of_verse}
+
+
+

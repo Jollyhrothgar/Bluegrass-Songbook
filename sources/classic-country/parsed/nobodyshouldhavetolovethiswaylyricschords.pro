@@ -1,6 +1,9 @@
 {meta: title Nobody Should Have To Love This Way}
 {meta: artist Crystal Gayle}
 {meta: composer Rory Bourke, Tommy Rocco, Charlie Black}
+{meta: x_source classic-country}
+{meta: x_source_file nobodyshouldhavetolovethiswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it looks like [Am]I'm in line
@@ -54,3 +57,9 @@ Nobody [F] should have to [C]love this way
 Nobody [F] should have to [C]love this way
 (Nobody no[F]body no[C]body)
 {end_of_verse}
+
+
+
+
+
+

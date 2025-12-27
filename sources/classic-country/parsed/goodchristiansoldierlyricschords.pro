@@ -1,6 +1,9 @@
 {meta: title Good Christian Soldier}
 {meta: artist Kris Kristofferson}
 {meta: composer Bobby Bare and Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file goodchristiansoldierlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not so long [G7]ago in Okla[C]homa
@@ -36,3 +39,7 @@ And it [F]hurts to have to watch a grown man [C]cry
 But we're [F]playin' cards [G7]writin' home [C]and ain't we havin' [Am]fun
 [D7]Turnin' on and learnin' how to [G7]die 
 {end_of_verse}
+
+
+
+

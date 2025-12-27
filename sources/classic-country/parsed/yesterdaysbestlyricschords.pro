@@ -1,6 +1,9 @@
 {meta: title Yesterday's Best}
 {meta: artist Jean Shepard}
 {meta: composer Jimmie Day}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdaysbestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I keep building a new world while you keep tearing it [D7]down
@@ -26,3 +29,6 @@ I know I should [G]leave you [D7]since I'm yesterday's [G]best
 {start_of_verse: Verse 3}
 [C]I know I should [G]leave you [D7]since I'm yesterday's [G]best
 {end_of_verse}
+
+
+

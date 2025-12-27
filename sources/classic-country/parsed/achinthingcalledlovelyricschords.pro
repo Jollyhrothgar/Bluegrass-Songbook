@@ -1,6 +1,9 @@
 {meta: title Achin' Thing Called Love}
 {meta: artist Sonny James}
 {meta: composer Jim Jones}
+{meta: x_source classic-country}
+{meta: x_source_file achinthingcalledlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whenever your lips are near [G7]me
@@ -31,3 +34,6 @@
 [F]Promise you’ll let me never
 [C]Lose this achin’ yet so [G7]fascinatin’ thing called [C]love
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don’t We All Have The Right}
 {meta: artist Ricky Van Shelton}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file dontweallhavetherightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I laughed it off when she left I thought she'd [F]come back [C]again 
@@ -26,3 +29,6 @@ Don't we [F]all have the [C]right to be [G7]wrong now and [C]then
 {start_of_verse: Verse 4}
 Don't we [F]all have the [C]right to be [G7]wrong now and [C]then
 {end_of_verse}
+
+
+

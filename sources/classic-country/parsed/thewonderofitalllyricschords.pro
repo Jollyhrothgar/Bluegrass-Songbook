@@ -1,6 +1,9 @@
 {meta: title The Wonder Of It All}
 {meta: artist Ray Price}
 {meta: composer Lee Dresser}
+{meta: x_source classic-country}
+{meta: x_source_file thewonderofitalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I see the sunshine come shining through the trees
@@ -41,3 +44,8 @@ I just thank [F]God for the [G7]wonder of it [C]all
 I never question miracles whether [F]they be large or [C]small
 I just thank [F]God for the [G7]wonder of it [C]all
 {end_of_verse}
+
+
+
+
+

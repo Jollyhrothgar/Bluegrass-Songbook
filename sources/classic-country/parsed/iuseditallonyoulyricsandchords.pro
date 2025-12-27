@@ -1,6 +1,9 @@
 {meta: title I Used It All On You}
 {meta: artist Charley Pride}
 {meta: composer Tom Crum}
+{meta: x_source classic-country}
+{meta: x_source_file iuseditallonyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh there's [F]just no love to [G7]give her I [F]used it [G7]all on [C]you
@@ -31,3 +34,7 @@ For there's [F]still no love to [G7]give her I [F]used it [G7]all on [C]you
 {start_of_verse: Verse 5}
 Oh there's [F]just no love to [G7]give her I [F]used it [G7]all on [C]you
 {end_of_verse}
+
+
+
+

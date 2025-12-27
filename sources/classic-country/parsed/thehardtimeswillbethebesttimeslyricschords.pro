@@ -1,5 +1,8 @@
 {meta: title The Hard Times Will Be The Best Times}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file thehardtimeswillbethebesttimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear they’re hiring men in Okla[G7]homa
@@ -35,3 +38,7 @@ Let's [F]laugh and dream of better days to [G7]come
 [F]These will be the [G7]good old days a [C]little later [F]on
 And these [C]hard times will be the [G7]best times we've [F]kn-ow[C]n
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Longneck Bottle}
 {meta: artist Garth Brooks}
 {meta: composer Rick Carnes, Steve Wariner, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file longneckbottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Long neck bottle [F]let go of my [C]hand
@@ -45,3 +48,8 @@ There's a [F]girl at home who loves me
 You know [C]she won't under[F]stand
 Long neck [C]bottle [G7]let go of my [C]hand
 {end_of_verse}
+
+
+
+
+

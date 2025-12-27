@@ -1,6 +1,9 @@
 {meta: title Partners}
 {meta: artist Barbara Mandrell}
 {meta: composer Kent M. Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file partnerslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We used to ride the trail together
@@ -50,3 +53,9 @@ But I [D7]guess some [Am]partners [D7]can't be man and [G]wife[D7]
 {start_of_verse: Verse 6}
 Oh I [D7]guess some [Am]partners [D7]can't be man and [G]wife
 {end_of_verse}
+
+
+
+
+
+

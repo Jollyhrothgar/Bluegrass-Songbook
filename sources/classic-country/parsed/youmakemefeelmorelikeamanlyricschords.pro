@@ -1,6 +1,9 @@
 {meta: title You Make Me Feel More Like A Man}
 {meta: artist Mel Street}
 {meta: composer John Riggs}
+{meta: x_source classic-country}
+{meta: x_source_file youmakemefeelmorelikeamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a ring on my finger 
@@ -45,3 +48,8 @@ Yes [D7]she's the one I love [C]but here I am with [G]you
 I don't know what you've [G]got 
 But it makes me [D7]feel more like a [G]man
 {end_of_verse}
+
+
+
+
+

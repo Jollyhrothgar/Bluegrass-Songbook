@@ -1,6 +1,9 @@
 {meta: title Have I Waited Too Long}
 {meta: artist Faron Young}
 {meta: composer Webb Pierce, Linda Baggett, Bill Nettles}
+{meta: x_source classic-country}
+{meta: x_source_file haveiwaitedtoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have I waited to long  to [G7]say that I love [C]you
@@ -29,3 +32,6 @@
 [G]If you'll only for-give [G7]you'll never be [C]sorry
 [D7]I'll right every w-rong have I waited to [G]long
 {end_of_verse}
+
+
+

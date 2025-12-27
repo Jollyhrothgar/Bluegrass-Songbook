@@ -1,6 +1,9 @@
 {meta: title Who's Gonna Miss Me}
 {meta: artist Loretta Lynn}
 {meta: composer Lola Jean Dillon and Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file whosgonnamissmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Is there one troubled soul
@@ -58,3 +61,10 @@ Who's gonna miss me tell me
 [C]Who's gonna miss me Lordy
 [G]Who's gonna [D7]miss me when I'm [G]gone
 {end_of_verse}
+
+
+
+
+
+
+

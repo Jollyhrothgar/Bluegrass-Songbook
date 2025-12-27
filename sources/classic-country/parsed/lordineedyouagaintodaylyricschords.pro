@@ -1,6 +1,9 @@
 {meta: title Lord I Need You Again Today}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Jason Bradford}
+{meta: x_source classic-country}
+{meta: x_source_file lordineedyouagaintodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't tell [D7]Him [G]enough [C]I don't [G]pray enough
@@ -23,3 +26,5 @@ I don't [D7]love my neighbor as I [G]should enough
 Lord I [G]need you [C]Lord I [G]need You 
 [C]Lord I [G]need You [D7]again [C]tod[G]ay
 {end_of_verse}
+
+

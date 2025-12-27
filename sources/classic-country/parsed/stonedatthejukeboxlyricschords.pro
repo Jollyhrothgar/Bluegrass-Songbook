@@ -1,5 +1,8 @@
 {meta: title Stoned At The Jukebox}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file stonedatthejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As long as I can keep a lotta friends [F]around me
@@ -29,3 +32,6 @@ Playing I can't [G7]help it if I'm still in love with [C]you
 Cause that's the [F]kinda songs it takes to get all that [C]ole hurting out
 And Lord I love that hurting music  [G7]cause I am hurting [C]too
 {end_of_verse}
+
+
+

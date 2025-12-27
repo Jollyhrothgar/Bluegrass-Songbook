@@ -1,6 +1,9 @@
 {meta: title You All Are Beautiful}
 {meta: artist John Anderson}
 {meta: composer John Anderson and James Hicks}
+{meta: x_source classic-country}
+{meta: x_source_file youallarebeautifullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been down in the sunshine state
@@ -49,3 +52,9 @@ You all are [C]beautiful I just wanted you to [G]know [D7]
 {start_of_verse: Verse 7}
 [Am]Yes you all are [C]beautiful 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Brown Eyed Handsome Man}
 {meta: artist Waylon Jennings}
 {meta: composer Chuck Berry}
+{meta: x_source classic-country}
+{meta: x_source_file browneyedhandsomemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Flying across the desert in a TWA
@@ -49,3 +52,8 @@ There's been a lot of good women [F]shed a tear
 For a [G7]brown eyed handsome[C] man
 That's what the trouble was [F]brown eyed handsome [C]man
 {end_of_verse}
+
+
+
+
+

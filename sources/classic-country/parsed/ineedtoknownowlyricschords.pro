@@ -1,5 +1,8 @@
 {meta: title I Need To Know Now}
 {meta: artist Bobby Helms}
+{meta: x_source classic-country}
+{meta: x_source_file ineedtoknownowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I need to know now if you [C]care
@@ -42,3 +45,6 @@ Oh [G]love love me true
 But [G]I [D7]need to know [G]now
 If you [D7]care I need to know [G]now
 {end_of_verse}
+
+
+

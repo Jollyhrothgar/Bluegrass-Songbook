@@ -1,6 +1,9 @@
 {meta: title My Way}
 {meta: artist Elvis Presley}
 {meta: composer J. Revaux and C. Francois, Paul Anka}
+{meta: x_source classic-country}
+{meta: x_source_file mywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]And now the end is [Em]near
@@ -66,3 +69,11 @@ And did it my [C]way
 The record [Dm]shows I took the [G7]blows
 And did it my [C]way
 {end_of_verse}
+
+
+
+
+
+
+
+

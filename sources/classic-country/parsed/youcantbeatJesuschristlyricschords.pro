@@ -1,4 +1,7 @@
 {meta: artist Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file youcantbeatJesuschristlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was born to be known as everybody's brother
@@ -21,3 +24,5 @@ Well He starts in the middle and He does not have an end
 And when my [F]soul was held for ransom well He is the one who paid the [C]price
 Ain't no [G7]reason to deny it I [F]owe it all to Jesus [C]Christ
 {end_of_verse}
+
+

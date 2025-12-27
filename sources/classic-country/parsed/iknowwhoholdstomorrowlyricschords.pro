@@ -1,6 +1,9 @@
 {meta: title I Know Who Holds Tomorrow}
 {meta: artist Faron Young}
 {meta: composer Ira P. Stanphill}
+{meta: x_source classic-country}
+{meta: x_source_file iknowwhoholdstomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't know about tomorrow
@@ -29,3 +32,6 @@ I don't [A7]seem to [D7]understand
 But I [G]know who holds [C]tomorrow
 And I [G]know [D7]who holds my [G]hand
 {end_of_verse}
+
+
+

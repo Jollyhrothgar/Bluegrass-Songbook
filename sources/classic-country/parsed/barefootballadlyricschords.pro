@@ -1,6 +1,9 @@
 {meta: title Barefoot Ballad}
 {meta: artist Elvis Presley}
 {meta: composer Dolores Fuller and Larry Morris}
+{meta: x_source classic-country}
+{meta: x_source_file barefootballadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want a barefoot ballad yes a [F]barefoot ballad
@@ -50,3 +53,9 @@ Won't you [C]play for me
 (Play for who play for him play for her)
 [G7]A barefoot ballad [C]song
 {end_of_verse}
+
+
+
+
+
+

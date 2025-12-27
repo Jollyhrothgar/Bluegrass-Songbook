@@ -1,6 +1,9 @@
 {meta: title Bundle Of Southern Sunshine}
 {meta: artist Eddy Arnold}
 {meta: composer Sunny Clapp}
+{meta: x_source classic-country}
+{meta: x_source_file bundleofsouthernsunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They took a bundle of bright southern [E7]sunshine
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [A7]She’s my bundle [D7]of southern [G]sunshine
 {end_of_verse}
+
+
+
+

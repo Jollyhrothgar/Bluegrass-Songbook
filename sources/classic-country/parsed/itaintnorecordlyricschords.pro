@@ -1,5 +1,8 @@
 {meta: title It Ain't No Record}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file itaintnorecordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it [F]ain't no record but it's a [C]dang good average
@@ -32,3 +35,7 @@ For the times I've been a loser in [G7]your cheatin' [C]game
 {start_of_verse: Verse 5}
 For the times I've been a loser in [G7]your cheatin' [C]game
 {end_of_verse}
+
+
+
+

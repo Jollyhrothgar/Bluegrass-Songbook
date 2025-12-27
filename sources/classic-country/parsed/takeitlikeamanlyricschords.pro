@@ -1,5 +1,8 @@
 {meta: title Take It Like A Man}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file takeitlikeamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if you find that you're losing
@@ -49,3 +52,12 @@ Cause she'll lie and she'll cheat you
 And do all she can to beat you
 So [G7]hold up your head and take it like a [C]man
 {end_of_verse}
+
+
+
+
+
+
+
+
+

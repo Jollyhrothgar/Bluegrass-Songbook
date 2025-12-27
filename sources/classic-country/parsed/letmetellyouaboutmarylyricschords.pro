@@ -1,5 +1,8 @@
 {meta: title Let Me Tell You About Mary}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file letmetellyouaboutmarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Won't you let me tell you bout [F]Mary
@@ -39,3 +42,8 @@ Is [G7]I'm afraid my Mary's gone [C]wrong
 {start_of_verse: Verse 4}
 Oh [G7]I'm afraid my Mary's gone [C]wrong
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Walk Slow}
 {meta: artist Heather Berry}
 {meta: composer Dixie Hall and Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file walkslowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walk slow count the butterflies you pass
@@ -45,3 +48,9 @@ Pay attention as you [G7]go walk [C]slow
 {start_of_verse: Verse 6}
 [F]God will [C]walk along with [G7]you walk [C]slow
 {end_of_verse}
+
+
+
+
+
+

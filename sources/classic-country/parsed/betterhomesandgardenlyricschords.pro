@@ -1,6 +1,9 @@
 {meta: title Better Homes And Garden}
 {meta: artist Billy Walker}
 {meta: composer Bobby Russel}
+{meta: x_source classic-country}
+{meta: x_source_file betterhomesandgardenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say you're [A7]tired of her and you [D7]found a faster [G7]life
@@ -50,3 +53,10 @@ Cause she's a good ole girl
 [C]You’d better mind your [A7]better homes [D7]and gardens and take the kids out [G7]too
 [C]And take her home some candy [A7]and say baby I [D7]love you  [G7](fades)
 {end_of_verse}
+
+
+
+
+
+
+

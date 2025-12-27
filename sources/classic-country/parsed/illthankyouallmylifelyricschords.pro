@@ -1,6 +1,9 @@
 {meta: title I'll Thank You All My Life}
 {meta: artist Jean Shepard}
 {meta: composer Dick Reynolds and Lucille Dean}
+{meta: x_source classic-country}
+{meta: x_source_file illthankyouallmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For overlooking what I've been and [C]saying you love [G]me
@@ -29,3 +32,6 @@
 [G]For overlooking what I've been my [C]past and wasted [G]life
 [C]And giving all of [G]this to me [D7]I'll thank you all my [G]life
 {end_of_verse}
+
+
+

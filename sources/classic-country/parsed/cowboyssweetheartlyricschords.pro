@@ -1,5 +1,8 @@
 {meta: title Cowboy's Sweetheart}
 {meta: artist Patsy Montana}
+{meta: x_source classic-country}
+{meta: x_source_file cowboyssweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want to be a cowboy's sweetheart
@@ -42,3 +45,8 @@ That makes me a yodeling grand[C]ma
 I’m still riding side by side with my [G]cowboy sweet[E7]heart
 He’s a [A7]rootin’ tootin’ [D7]cowboy grand[G]pa
 {end_of_verse}
+
+
+
+
+

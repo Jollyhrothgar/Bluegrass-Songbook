@@ -1,6 +1,9 @@
 {meta: title Marching For Jesus}
 {meta: artist Boxcar Willie}
 {meta: composer Peter Chatman}
+{meta: x_source classic-country}
+{meta: x_source_file marchingforJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Marching for Jesus [C]marching for Jesus
@@ -51,3 +54,9 @@ Hut two Jesus [C]three four for Jesus
 [G]Marching for Jesus [D7]in the righteous [G]way
 Repeat last verse
 {end_of_verse}
+
+
+
+
+
+

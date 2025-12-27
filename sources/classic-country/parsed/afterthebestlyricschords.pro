@@ -1,6 +1,9 @@
 {meta: title After The Best}
 {meta: artist Crystal Gayle}
 {meta: composer Bernie Nelson and Thomas Eugene McHugh}
+{meta: x_source classic-country}
+{meta: x_source_file afterthebestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You were the one true [C]love for [G]me [C]
@@ -36,3 +39,7 @@ Cause [C]after the best only the best will [G]do
 {start_of_verse: Verse 5}
 Cause [C]after the best only the best will [G]do
 {end_of_verse}
+
+
+
+

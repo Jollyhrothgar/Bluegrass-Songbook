@@ -1,6 +1,9 @@
 {meta: title I Can}
 {meta: artist Cowboy Copas}
 {meta: composer Lee Fykes}
+{meta: x_source classic-country}
+{meta: x_source_file icanlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If anyone can tell a sad sad story [F]I can
@@ -24,3 +27,5 @@ And my [D7]heart can get a pardon to be [G7]free to be free
 If [C]anyone can say they’re unhappy now [F]I can
 Cause [G7]I’m living in a world of mise[C]ry
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Girls Women and Ladies}
 {meta: artist Ed Bruce}
 {meta: composer Ed Bruce, Patsy Bruce, Ron Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file girlswomenandladieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There was only [F]me and her and [C]him
@@ -50,3 +53,9 @@
 {start_of_verse: Verse 6}
 Repeat last verse
 {end_of_verse}
+
+
+
+
+
+

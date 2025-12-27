@@ -1,6 +1,9 @@
 {meta: title Wrapped}
 {meta: artist George Strait}
 {meta: composer Bruce Robison}
+{meta: x_source classic-country}
+{meta: x_source_file wrappedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't have to turn my head when[Am]ever you walked in
@@ -56,3 +59,10 @@ I [F]thought I was [C]doin' fine
 Baby I'm [Am]wrapped around your pretty little finger [C]again
 Pretty little [Am]finger
 {end_of_verse}
+
+
+
+
+
+
+

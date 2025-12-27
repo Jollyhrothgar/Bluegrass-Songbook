@@ -1,6 +1,9 @@
 {meta: title If You're Waiting on Me}
 {meta: artist The Kendalls}
 {meta: composer Ken Bell, Terry Skinner and J.L. Wallace}
+{meta: x_source classic-country}
+{meta: x_source_file ifyourewaitingonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're waiting on me you're backing up 
@@ -55,3 +58,11 @@ If you're [F]waiting on me you're backing [C]up
 So come over here said [G7]enough's enough 
 If you're [F]waiting on me you're backing [C]up
 {end_of_verse}
+
+
+
+
+
+
+
+

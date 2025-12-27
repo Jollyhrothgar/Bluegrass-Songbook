@@ -1,5 +1,8 @@
 {meta: title Old Rattler}
 {meta: artist Mac Wiseman}
+{meta: x_source classic-country}
+{meta: x_source_file oldrattlerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rattler was a good old dog 
@@ -66,3 +69,12 @@ Here Rattler [D7]here
 Called old Rattler from the barn
 Here Rattler [G]here
 {end_of_verse}
+
+
+
+
+
+
+
+
+

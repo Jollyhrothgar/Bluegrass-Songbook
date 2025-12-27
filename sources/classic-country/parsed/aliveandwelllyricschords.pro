@@ -1,6 +1,9 @@
 {meta: title Alive And Well}
 {meta: artist Tammy Wynette}
 {meta: composer Michael Garvin and Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file aliveandwelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish my love for you could die the way that your love did for [F]me
@@ -41,3 +44,8 @@
 {start_of_verse: Verse 5}
 [G7]My love for you is still alive and [C]well
 {end_of_verse}
+
+
+
+
+

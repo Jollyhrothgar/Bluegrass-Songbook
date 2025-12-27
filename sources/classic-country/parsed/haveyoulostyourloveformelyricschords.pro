@@ -1,6 +1,9 @@
 {meta: title Have You Lost Your Love For Me}
 {meta: artist Jim and Jesse}
 {meta: composer F. Giddens, Junior Giddens, Leroy Giddens}
+{meta: x_source classic-country}
+{meta: x_source_file haveyoulostyourloveformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you lost all the [D7]love you had for [G]me
@@ -30,3 +33,6 @@ Or have you found somebody [D7]new
 I [G]wish that you would tell me [C]that would mean so much to [G]me
 Have you lost all the [D7]love you had for [C]m-[G]e
 {end_of_verse}
+
+
+

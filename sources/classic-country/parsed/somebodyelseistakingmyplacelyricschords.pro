@@ -1,6 +1,9 @@
 {meta: title Somebody Else Is Taking My Place}
 {meta: artist Connie Francis}
 {meta: composer Dick Howard, Bob Ellsworth, Russ Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file somebodyelseistakingmyplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody [A7]else  [D7]is taking my place
@@ -22,3 +25,5 @@ Little you [A7]care  [D7]for vows that you made
 [F]My heart is aching  [C]my heart is [A7]breaking
 For [D7]somebody's [G7]taking my [C]place
 {end_of_verse}
+
+

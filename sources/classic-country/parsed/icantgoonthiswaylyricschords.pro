@@ -1,6 +1,9 @@
 {meta: title I Can't Go On This Way}
 {meta: artist Bob Wills}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file icantgoonthiswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Moanin' low moanin' high hair is turnin' [D7]gray
@@ -29,3 +32,6 @@ You don't want me anymore guess my love was [D7]blind
 Moanin' low moanin' high hair is turnin' [D7]gray
 [G]Don't care if I [C]live or die I [G]can't go on [D7]this [G]way
 {end_of_verse}
+
+
+

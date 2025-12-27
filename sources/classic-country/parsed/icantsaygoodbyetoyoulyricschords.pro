@@ -1,6 +1,9 @@
 {meta: title I Can’t Say Goodbye to You}
 {meta: artist The Everly Brothers}
 {meta: composer Carole King and Gerry Goffin}
+{meta: x_source classic-country}
+{meta: x_source_file icantsaygoodbyetoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I memorize the words I'm gonna say to [Am]you
@@ -27,3 +30,6 @@
 [Am]My heart [F]forgets all the times you've been [G7]untrue
 [F]And I can't say [G7]goodbye to [C]you
 {end_of_verse}
+
+
+

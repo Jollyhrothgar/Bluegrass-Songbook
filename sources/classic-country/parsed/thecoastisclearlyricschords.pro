@@ -1,6 +1,9 @@
 {meta: title The Coast Is Clear}
 {meta: artist Tracy Lawrence}
 {meta: composer Brett Jones and Jess Brown}
+{meta: x_source classic-country}
+{meta: x_source_file thecoastisclearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Say the weather in Atlanta is foggy and gray 
@@ -44,3 +47,7 @@ Past the [F]neon lights and the [G7]LA haze
 [Am]Oh oh oh the coast is [F]clear 
 The [G7]coast is [C]clear
 {end_of_verse}
+
+
+
+

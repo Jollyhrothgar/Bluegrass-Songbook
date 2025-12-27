@@ -1,6 +1,9 @@
 {meta: title Love Is}
 {meta: artist Emmylou Harris}
 {meta: composer Kate McGarrigle, Anna McGarrigle}
+{meta: x_source classic-country}
+{meta: x_source_file loveislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Love is a [G7]shiny [C]car [F]love is a [G7]steel gui[C]tar
@@ -39,3 +42,8 @@ My [G7]love has no [Am]reason has no [F]rhyme
 Oh my [G7]love cross the [F]double [C]line
 Oh my [G7]love cross the [F]double [C]line
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Walk Out Of Your Life}
 {meta: artist Wanda Jackson}
 {meta: composer Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnawalkoutofyourlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna [G7]walk out of your life just like you walked into [C]mine
@@ -38,3 +41,8 @@ Now [D7]I'm breaking into pieces one by [G7]one
 So hold me for a [C7]moment hold me [F]for the last time
 I'm gonna [G7]walk out of your life just like you walked into [C]mine 
 {end_of_verse}
+
+
+
+
+

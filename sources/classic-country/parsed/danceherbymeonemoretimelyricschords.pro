@@ -1,6 +1,9 @@
 {meta: title Dance Her By Me One More Time}
 {meta: artist Faron Young}
 {meta: composer Danny Walfe}
+{meta: x_source classic-country}
+{meta: x_source_file danceherbymeonemoretimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dance her by me one more [C]time
@@ -28,3 +31,6 @@
 [G]Please dance her by me one more time
 [F](Dance her by me one more [C]time)
 {end_of_verse}
+
+
+

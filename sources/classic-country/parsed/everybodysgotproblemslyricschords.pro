@@ -1,6 +1,9 @@
 {meta: title Everybody’s Got Problems}
 {meta: artist Faron Young}
 {meta: composer Wanda Alley}
+{meta: x_source classic-country}
+{meta: x_source_file everybodysgotproblemslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I ran into an old [F]girl the other day
@@ -60,3 +63,10 @@ But everybody's got [F]problems and [C]I'm no exception to the [G7]rule
 [C]And Baby my [G7]biggest [C]problem is [F]you
 Yeah my [C]biggest [G7]problem is [C]you
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Today}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file todaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today I'm like a leaf in [D7]autumn 
@@ -28,3 +31,6 @@ Something [D7]you can't take [G]away
 I'm lost I'll never find my [D7]way 
 For my world ended [G]today
 {end_of_verse}
+
+
+

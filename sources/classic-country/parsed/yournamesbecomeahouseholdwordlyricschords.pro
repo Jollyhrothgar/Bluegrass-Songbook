@@ -1,6 +1,9 @@
 {meta: title Your Name's Become A Household Word}
 {meta: artist Jean Shepard}
 {meta: composer Neal Merritt}
+{meta: x_source classic-country}
+{meta: x_source_file yournamesbecomeahouseholdwordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just [D7]turned out the [G]light upstairs
@@ -34,3 +37,7 @@ And this [G]house would [C]be a [G]home
 Yes your [C]name would be our [G]household [C]word
 And this [G]house would [C]be a [G]home
 {end_of_verse}
+
+
+
+

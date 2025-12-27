@@ -1,6 +1,9 @@
 {meta: title The Bible Trail}
 {meta: artist Jimmie Davis}
 {meta: composer Jimmie Davis and Ruby Moody}
+{meta: x_source classic-country}
+{meta: x_source_file thebibletraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a bible trail [F]with e[C]ternal life
@@ -33,3 +36,6 @@ Then you can [F]shout that halleluiah
 When you [C]reach the green valley
 On the bible [G7]trail with [C]God
 {end_of_verse}
+
+
+

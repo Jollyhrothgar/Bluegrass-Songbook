@@ -1,5 +1,8 @@
 {meta: title Kisses Don't Lie}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file kissesdontlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A heart may be fickle  and word may deceive
@@ -28,3 +31,6 @@ You tell me I'm wrong that your heart is still [G7]true
 You [C]may never leave me but [F]dear I know [C]why
 You don't want to hurt me but [G7]kisses don't [C]lie
 {end_of_verse}
+
+
+

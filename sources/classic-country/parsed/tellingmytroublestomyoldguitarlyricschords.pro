@@ -1,5 +1,8 @@
 {meta: title Telling My Troubles To My Old Guitar}
 {meta: artist Jimmy Wakely}
+{meta: x_source classic-country}
+{meta: x_source_file tellingmytroublestomyoldguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Telling my troubles to my [B7]old gui[E7]tar
@@ -32,3 +35,7 @@ Telling it how much I'm [B7]missing [E7]you
 {start_of_verse: Verse 4}
 [A7]Singing my [D7]blues a[G]way 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Here I Am}
 {meta: artist Ricky Nelson}
 {meta: composer George Campbell and Marc Douglas}
+{meta: x_source classic-country}
+{meta: x_source_file hereiamlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you're looking for a [C]new love
@@ -36,3 +39,7 @@ And I've [G]never [B7]ever had a [Em]real love
 [C]If you're [G]looking [Em]  for a [C]good love
 [Dm]Here I [G]am [Em]hmm [C]hmm [Dm]here I [G]am [C]  [G]
 {end_of_verse}
+
+
+
+

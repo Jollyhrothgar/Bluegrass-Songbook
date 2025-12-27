@@ -1,5 +1,8 @@
 {meta: title Wonderful World Of Christmas}
 {meta: artist Dick Damron}
+{meta: x_source classic-country}
+{meta: x_source_file wonderfulworldofChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Looks like it's almost [D7]Christmas  Christmas in the [G]air
@@ -44,3 +47,9 @@ I [C]hope you make it home for [G]Christmas
 I [C]hope you make it home for [G]Christmas 
 [D7]Cause that's the nicest place to [G]be
 {end_of_verse}
+
+
+
+
+
+

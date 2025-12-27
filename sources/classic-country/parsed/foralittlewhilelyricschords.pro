@@ -1,6 +1,9 @@
 {meta: title For a Little While}
 {meta: artist John Conlee}
 {meta: composer Don Henry}
+{meta: x_source classic-country}
+{meta: x_source_file foralittlewhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the tide comes up and the sun goes down
@@ -35,3 +38,6 @@ Till [A7]sleep unfolds its [Dm]wings[C]  [A#7]
 [Am]And I [G7]fly to you in dreams for a [C]little while
 Yes I [G7]fly to you in dreams for a [C]little while 
 {end_of_verse}
+
+
+

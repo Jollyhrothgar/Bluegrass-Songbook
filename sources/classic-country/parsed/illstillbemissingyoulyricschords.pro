@@ -1,6 +1,9 @@
 {meta: title I'll Still Be Missing You}
 {meta: artist Connie Smith}
 {meta: composer Warner McPherson}
+{meta: x_source classic-country}
+{meta: x_source_file illstillbemissingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll still be missing [F]you
@@ -43,3 +46,8 @@
 [G7]No matter what I do
 [F]I'll still be missin' [C]you
 {end_of_verse}
+
+
+
+
+

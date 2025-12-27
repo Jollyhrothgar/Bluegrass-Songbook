@@ -1,6 +1,9 @@
 {meta: title Lion In The Winter Lyrics and Chords}
 {meta: artist Hoyt Axton and Linda Ronstadt}
 {meta: composer Hoyt Axton}
+{meta: x_source classic-country}
+{meta: x_source_file lioninthewinterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like a lion in the winter I can [C]hear the summer [G]call
@@ -43,3 +46,8 @@ With a song that I [D7]sang  to [C]the fire in your [G]eyes
 But somebody [C]told you that it wouldn't be [G]easy
 And you carried that [D7]lie  [C]for the devil to [G]sing
 {end_of_verse}
+
+
+
+
+

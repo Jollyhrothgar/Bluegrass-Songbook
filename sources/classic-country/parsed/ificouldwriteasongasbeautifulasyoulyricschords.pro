@@ -1,6 +1,9 @@
 {meta: title If I Could Write A Song As Beautiful As You}
 {meta: artist Billy Crash Craddock}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldwriteasongasbeautifulasyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could write [Em]a [F]song
@@ -43,3 +46,8 @@
 [F]This will be [C]forever [Am][G7]true
 [C]There is no song [G7]as beautiful as [Am]you
 {end_of_verse}
+
+
+
+
+

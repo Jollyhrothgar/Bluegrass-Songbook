@@ -1,6 +1,9 @@
 {meta: title Just A Drink Away}
 {meta: artist Ernest Tubb}
 {meta: composer Bobby Lewis and Billy Parker}
+{meta: x_source classic-country}
+{meta: x_source_file justadrinkawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]See that girl at the bar
@@ -41,3 +44,7 @@ If the judge could only see
 {start_of_verse: Verse 5}
 [G7]She's just a drink away from anyone but [C]me
 {end_of_verse}
+
+
+
+

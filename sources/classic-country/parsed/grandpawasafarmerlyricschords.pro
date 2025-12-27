@@ -1,6 +1,9 @@
 {meta: title Grandpa Was A Farmer}
 {meta: artist The Marksmen}
 {meta: composer Mark Earle Wheeler}
+{meta: x_source classic-country}
+{meta: x_source_file grandpawasafarmerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Grandpa was a farmer when I was a kid
@@ -49,3 +52,9 @@ Where I'm going and when you [G7]meet me there [C]someday
 {start_of_verse: Verse 5}
 Where I'm going and when you [G7]meet me there [F]some[C]day
 {end_of_verse}
+
+
+
+
+
+

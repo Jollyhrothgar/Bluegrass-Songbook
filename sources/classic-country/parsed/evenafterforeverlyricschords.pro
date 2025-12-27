@@ -1,6 +1,9 @@
 {meta: title Even After Forever}
 {meta: artist David Allan Coe}
 {meta: composer Rick Underwood}
+{meta: x_source classic-country}
+{meta: x_source_file evenafterforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yeah the [F]snapshot must have been [C]taken back in [G7]192[Am]2
@@ -45,3 +48,8 @@ Well [G7]maybe they're [F]wrong [C]
 [Dm]Somethings even the [C]winds of time
 [F]Just can't blow [G7]away love never [Am]fades[F]  [C]
 {end_of_verse}
+
+
+
+
+

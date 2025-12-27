@@ -1,6 +1,9 @@
 {meta: title Look into my Teardrops}
 {meta: artist Conway Twitty}
 {meta: composer Harlan Howard and Don Bowman}
+{meta: x_source classic-country}
+{meta: x_source_file lookintomyteardropslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Look into my [C]teardrops and darling you will [G]see
@@ -19,3 +22,5 @@ That broke my heart [C]forever  [D7]aren't you proud of what you've [G]done
 {start_of_verse: Verse 3}
 repeat
 {end_of_verse}
+
+

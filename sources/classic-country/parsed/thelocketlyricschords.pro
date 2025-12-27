@@ -1,5 +1,8 @@
 {meta: title The Locket}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file thelocketlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hold the [G7]key to [C]her [C7]locket
@@ -28,3 +31,6 @@
 [F]So everyone can [G7]see [C]you belong to [Am]me
 [Dm]And that we bought our [G7]love [C]eternally
 {end_of_verse}
+
+
+

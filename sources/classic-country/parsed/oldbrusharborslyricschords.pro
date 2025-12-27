@@ -1,5 +1,8 @@
 {meta: title Old Brush Arbors}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file oldbrusharborslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I remember them so clearly
@@ -50,3 +53,11 @@ Brush arbors by the [D7]side of the [G]road
 {start_of_verse: Verse 9}
 Old brush arbors by the [D7]side of the [G]road
 {end_of_verse}
+
+
+
+
+
+
+
+

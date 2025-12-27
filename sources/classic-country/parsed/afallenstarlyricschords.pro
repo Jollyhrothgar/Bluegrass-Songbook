@@ -1,6 +1,9 @@
 {meta: title A Fallen Star}
 {meta: artist Jim Reeves}
 {meta: composer James Joiner}
+{meta: x_source classic-country}
+{meta: x_source_file afallenstarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A star fell from [C7]heaven  [F]right [A7]into my [D7]arms
@@ -24,3 +27,5 @@ to fill a dream
 [C7]You must have [F]strayed from the Milky [C]Way
 [G7]A fallen star that's [C]what you [C][F]are
 {end_of_verse}
+
+

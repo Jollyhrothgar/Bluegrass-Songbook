@@ -1,5 +1,8 @@
 {meta: title Don't Give Up On Me}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file dontgiveuponmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord don't give up on me [F]I'll do right [C]someday
@@ -25,3 +28,6 @@ And Lord I'm [G7]only halfway [C]home
 {start_of_verse: Verse 4}
 And Lord I'm [G7]only halfway [C]home
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Social Obligations}
 {meta: artist Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file socialobligationslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We started out so poor but we were happy
@@ -32,3 +35,7 @@ But they're your [G7]social obligations you'd [C]say
 {start_of_verse: Verse 5}
 And you've got [G7]social obligations every[C]day
 {end_of_verse}
+
+
+
+

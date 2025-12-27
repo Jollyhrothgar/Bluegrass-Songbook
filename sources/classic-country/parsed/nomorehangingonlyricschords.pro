@@ -1,6 +1,9 @@
 {meta: title No More Hanging On}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file nomorehangingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Well if you [C]think it's really over[F] 
@@ -57,3 +60,10 @@ Oh I know it won't be easy
 [Am]But if that's the way you [C]want it 
 From now [G7]on there'll no more hanging [F]on[C]
 {end_of_verse}
+
+
+
+
+
+
+

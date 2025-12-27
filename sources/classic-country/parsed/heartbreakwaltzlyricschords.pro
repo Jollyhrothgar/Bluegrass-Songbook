@@ -1,6 +1,9 @@
 {meta: title Heartbreak Waltz}
 {meta: artist Kitty Wells}
 {meta: composer Rusty Gabbard and Johnny Wright}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakwaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pardon me Mister I [G]see you're alone
@@ -29,3 +32,6 @@ While the [D7]band plays [G]we'll swing and sway
 And pre[C]tend we're happy though [G]love we have lost
 While [D7]we dance a Heartbreak [G]Waltz
 {end_of_verse}
+
+
+

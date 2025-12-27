@@ -1,6 +1,9 @@
 {meta: title I've Gotta Hang My Hat Upon The Wind}
 {meta: artist Wilburn Brothers}
 {meta: composer Andrew Eddings}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottahangmyhatuponthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I set down my [F]coffee cup and [G7]slowly start to [C]gettin' up
@@ -31,3 +34,6 @@ She shakes her head and [F]watches [C]silent[G7]ly
 I [C]slip away in[F]to the night I [G7]may be wrong I [C]may be right
 But these are some [G7]things that have to [C]be
 {end_of_verse}
+
+
+

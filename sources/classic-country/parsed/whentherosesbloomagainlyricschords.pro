@@ -1,6 +1,9 @@
 {meta: title When The Roses Bloom Again}
 {meta: artist Johnny Cash}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file whentherosesbloomagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the rattle of the battle came a whisper soft and low
@@ -36,3 +39,7 @@ And the robin redbreast sings it's sweet [D7]refrain
 As in days [G]of Old Lang Syne I'll be with you sweetheart [C]mine
 I'll be [D7]with you when the roses bloom [G]again
 {end_of_verse}
+
+
+
+

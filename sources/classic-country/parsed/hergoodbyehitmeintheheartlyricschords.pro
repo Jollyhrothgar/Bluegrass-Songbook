@@ -1,6 +1,9 @@
 {meta: title Her Goodbye Hit Me In The Heart}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file hergoodbyehitmeintheheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's never been a man [G7]who could bring me [C]down
@@ -33,3 +36,6 @@ Her sweet [F]love found its [C]mark [Am]
 Her good[C]bye [F]hit me in the [C]heart
 [F]Her good[C]bye [G7]hit me in the [Am]heart [G7]   [C]  [Am]   [G7]   [C]
 {end_of_verse}
+
+
+

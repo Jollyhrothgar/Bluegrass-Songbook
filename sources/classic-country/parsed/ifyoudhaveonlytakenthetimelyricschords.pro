@@ -1,6 +1,9 @@
 {meta: title If You'd Have Only Taken The Time}
 {meta: artist Charley Pride}
 {meta: composer Kent Westberry and Merv Shiner}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoudhaveonlytakenthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you had only [F]taken the [C]time to [F]tell me you're [C]mine
@@ -36,3 +39,7 @@ That [A#7]I'm gonna [F]leave you
 So next [C]time don't [F]wait [A#7]don't hesi[F]tate
 Appre[C]ciate a good [F]man
 {end_of_verse}
+
+
+
+

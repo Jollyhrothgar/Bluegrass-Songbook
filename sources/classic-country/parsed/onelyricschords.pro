@@ -1,6 +1,9 @@
 {meta: title One}
 {meta: artist George Jones}
 {meta: composer Ed Bruce, Ron Peterson, Judith Bruce}
+{meta: x_source classic-country}
+{meta: x_source_file onelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If you [C]want to hear a love song [F] I could sing one
@@ -35,3 +38,7 @@ If you [G7]want to be together we could [F]be [C]one
 {start_of_verse: Verse 5}
 If you [G7]want to be together we could [F]be [C]one
 {end_of_verse}
+
+
+
+

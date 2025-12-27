@@ -1,6 +1,9 @@
 {meta: title All the Time}
 {meta: artist Jack Greene}
 {meta: composer Mel Tillis - Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file allthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All the time [G]yes darling all the [D7]time
@@ -36,3 +39,7 @@
 [D7]Through smiles or tears
 [G]I'll love you
 {end_of_verse}
+
+
+
+

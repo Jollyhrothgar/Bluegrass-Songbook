@@ -1,6 +1,9 @@
 {meta: title Does Jesus Care}
 {meta: artist Sonny James}
 {meta: composer Eugene L. Clark, F.E. Graeff, Joe L. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file doesJesuscarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Does Jesus care when my heart is pained
@@ -29,3 +32,6 @@ Does Jesus care when I've said goodbye
 [C]When the days are weary the long nights [F]dreary
 [C]I know [G7]my Savior [C][F][C]cares
 {end_of_verse}
+
+
+

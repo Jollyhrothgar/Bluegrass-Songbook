@@ -1,6 +1,9 @@
 {meta: title I Love You Enough To Let You Go}
 {meta: artist Alabama}
 {meta: composer Randy Owens, Gary Baker, Frank J. Myers}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyouenoughtoletyougolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've re[C]hearsed this day a thou[Am]sand times 
@@ -47,3 +50,8 @@ I [Am]know in all your [Em]eighteen years
 These [Dm]arms of mine wanna [G7]pull you close 
 But I [Dm]love you enough to [G7]let you [C]go
 {end_of_verse}
+
+
+
+
+

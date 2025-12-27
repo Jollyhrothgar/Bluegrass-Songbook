@@ -1,6 +1,9 @@
 {meta: title What Am I Bid}
 {meta: artist Leroy Van Dyke}
 {meta: composer Gene Nash}
+{meta: x_source classic-country}
+{meta: x_source_file whatamibidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What am I [C]bid for a sky with[Em]out a [Dm]star in [G]sight
@@ -23,3 +26,5 @@ With [C]just one bid dawn will [Am]come and find this [Dm]dream is [G]sold
 One sky one [Em]night one [C]heart two [Em]arms this dream cries [Am]hopefu[Dm]lly
 What am I [C]bid [Am]what am I [Dm]bid [G]for [C]me
 {end_of_verse}
+
+

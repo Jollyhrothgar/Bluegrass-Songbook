@@ -1,6 +1,9 @@
 {meta: title Forgive}
 {meta: artist Mickey Gilley}
 {meta: composer R. Bernauer, L. Jacobson, O. Straus, S. Stange}
+{meta: x_source classic-country}
+{meta: x_source_file forgivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lonely nights  [F]when I go to [C]bed
@@ -25,3 +28,6 @@ At [C]times  [F]I wonder if it is [C]true
 [F]Why I cry why I worry about [C]you
 [G7]When I’m sad and I’m blue [F]forgive me I beg of [C]you
 {end_of_verse}
+
+
+

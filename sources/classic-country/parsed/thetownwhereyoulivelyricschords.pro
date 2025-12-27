@@ -1,5 +1,8 @@
 {meta: title The Town Where You Live}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file thetownwhereyoulivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Twenty miles of memories till I pass [C7]right by your [F]home
@@ -33,3 +36,7 @@ Through the town where you [C]live
 If [G7]you're lonely then darling be waiting when I pass 
 Through the town where you [C]live
 {end_of_verse}
+
+
+
+

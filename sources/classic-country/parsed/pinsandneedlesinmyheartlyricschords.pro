@@ -1,5 +1,8 @@
 {meta: title Pins and Needles in My Heart}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file pinsandneedlesinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know not where on earth to find you 
@@ -40,3 +43,10 @@ And love will make the teardrops start
 And then you'll know how long I've [C]waited 
 With these [D7]pins and needles in my [G]heart
 {end_of_verse}
+
+
+
+
+
+
+

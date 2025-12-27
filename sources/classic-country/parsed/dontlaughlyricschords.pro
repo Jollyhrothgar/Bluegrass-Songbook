@@ -1,6 +1,9 @@
 {meta: title Don't Laugh}
 {meta: artist Doyle Lawson}
 {meta: composer Rebe Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file dontlaughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I cry when I kiss you or [C]when we say good[G]bye
@@ -43,3 +46,8 @@ So I [C]beg of you my darlin' please don't [G]laugh if I [D7]cry
 If I [G]say I'll always love you and I [C]will until I [G]die
 Don't [D7]laugh don't [G]laugh
 {end_of_verse}
+
+
+
+
+

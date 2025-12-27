@@ -1,6 +1,9 @@
 {meta: title Walking After Midnight}
 {meta: artist Patsy Cline}
 {meta: composer Don Hecht and Alan Block}
+{meta: x_source classic-country}
+{meta: x_source_file walkingaftermidnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I go out walking after [C7]midnight 
@@ -39,3 +42,8 @@ Night winds will whisper to me I'm [C]lonesome as I can [Am]be
 Out in the [F]moonlight just like we used to [C]do
 I'm always walking after [F]midnight searching [G7]for [C]you
 {end_of_verse}
+
+
+
+
+

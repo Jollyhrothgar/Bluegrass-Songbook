@@ -1,5 +1,8 @@
 {meta: title Salute To A Switchblade}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file salutetoaswitchbladelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Me and Yates an army buddy of mine
@@ -94,3 +97,19 @@ If it has a switchblade knife salute [G7]it
 [C]Not necessarily an incident one would want to write Mother about
 [G7]Germany being full of good soldiers good [C]people
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

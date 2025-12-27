@@ -1,5 +1,8 @@
 {meta: title Everything is Beautiful}
 {meta: artist Ray Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file everythingisbeautifullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus loves the [F]little [C]children
@@ -44,3 +47,8 @@ Like the starry [G7]summer night or a snow covered winter's [C]day
 Everybody's beautiful  [Am]in their own [D7]way
 Under God's [G7]heaven the world's gonna find the [C]way
 {end_of_verse}
+
+
+
+
+

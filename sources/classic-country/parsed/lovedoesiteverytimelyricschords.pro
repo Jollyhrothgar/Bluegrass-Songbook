@@ -1,6 +1,9 @@
 {meta: title Love Does It Every Time}
 {meta: artist Ricky Skaggs}
 {meta: composer Tony Mullins and Robert Terry}
+{meta: x_source classic-country}
+{meta: x_source_file lovedoesiteverytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]After [C]eight years of drinking
@@ -55,3 +58,8 @@ Oh [F]love does it [G7]every [Am]time
 {start_of_verse: Verse 6}
 Oh [F]love does it [G7]every [C]time   [F] does it every [C]time
 {end_of_verse}
+
+
+
+
+

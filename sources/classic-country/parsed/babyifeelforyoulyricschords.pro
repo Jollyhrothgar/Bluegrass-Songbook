@@ -1,6 +1,9 @@
 {meta: title Baby I Feel For You}
 {meta: artist Mickey Gilley}
 {meta: composer Larry Butler and Dean Dillon and Bud McGuire}
+{meta: x_source classic-country}
+{meta: x_source_file babyifeelforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling tell me all about it
@@ -36,3 +39,7 @@ Endless tears that [C]fall like rain
 [A7]I would do the [D7]same [G7]things with [F]you
 [G7]Baby I feel for [C]you 
 {end_of_verse}
+
+
+
+

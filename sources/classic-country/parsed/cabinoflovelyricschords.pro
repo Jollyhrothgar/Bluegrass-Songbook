@@ -1,6 +1,9 @@
 {meta: title Cabin Of Love}
 {meta: artist Lonesome River Band}
 {meta: composer Birch Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file cabinoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm only a dreamer of [C]romance
@@ -43,3 +46,8 @@ Where all of our dreams would come [D7]true
 But [G]another has taken our [C]cabin
 And [D7]left me so lonely and [G]blue
 {end_of_verse}
+
+
+
+
+

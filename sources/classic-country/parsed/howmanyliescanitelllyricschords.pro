@@ -1,6 +1,9 @@
 {meta: title How Many Lies Can I Tell}
 {meta: artist Stonewall Jackson}
 {meta: composer Stonewall Jackson and Bill D. Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file howmanyliescanitelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I've just been downtown I've [F]spread the talk [C]around
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Oh how many lies can I [C]tell
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title There’s No Place Like Home On Christmas}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file theresnoplacelikehomeonChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's one thing for [F]sure if you're [C]rich or you're poor 
@@ -32,3 +35,7 @@ There's [G7]no place like home on [C]Christmas
 {start_of_verse: Verse 5}
 No there's [G7]no place like home on [C]Christmas
 {end_of_verse}
+
+
+
+

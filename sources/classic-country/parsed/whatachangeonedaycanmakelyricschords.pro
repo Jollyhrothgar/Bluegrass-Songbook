@@ -1,6 +1,9 @@
 {meta: title What A Change One Day Can Make}
 {meta: artist The Louvin Brothers}
 {meta: composer Grady Cole}
+{meta: x_source classic-country}
+{meta: x_source_file whatachangeonedaycanmakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just yesterday dear [D7]you said you [G]loved me
@@ -36,3 +39,7 @@ Oh what a dark road I now must [D7]take
 My hopes have [G]vanished till death I’ll [C]wait
 That awful [G]change dear [D7]one day can [G]make
 {end_of_verse}
+
+
+
+

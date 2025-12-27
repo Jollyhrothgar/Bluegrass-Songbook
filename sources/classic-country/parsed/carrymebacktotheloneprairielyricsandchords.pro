@@ -1,6 +1,9 @@
 {meta: title Carry Me Back To The Lone Prairie}
 {meta: artist Sons of the Pioneers}
 {meta: composer Carson J. Robison}
+{meta: x_source classic-country}
+{meta: x_source_file carrymebacktotheloneprairielyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a roving [Dm]cowboy  [G7]far away from [C]home
@@ -30,3 +33,6 @@ And when I [Dm]die  [G7]you can bury [C]me
 Neath the western [Dm]skies [G7]on the lone prai[C]rie
 On the [F]lone [G7]prai[C]rie
 {end_of_verse}
+
+
+

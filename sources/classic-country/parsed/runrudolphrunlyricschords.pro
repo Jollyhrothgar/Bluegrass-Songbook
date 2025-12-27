@@ -1,6 +1,9 @@
 {meta: title Run Rudolph Run}
 {meta: artist Chuck Berry}
 {meta: composer Johnny Marks and Marvin Brodie}
+{meta: x_source classic-country}
+{meta: x_source_file runrudolphrunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Out of all the reindeer you know you're the [C]mastermind
@@ -40,3 +43,9 @@
 [F]Run run Rudolph run run [C]Rudolph
 [G7]Run run [C][G7][C][F]Rudolph
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title She Went a Little Bit Farther}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file shewentalittlebitfartherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Loving me to you seems such a [Dm]bother 
@@ -27,3 +30,6 @@ And [G7]where your love stopped she went a little bit [C]farther
 And [G7]where your love stopped she went a little bit [C]farther
 [G7]Where your love stopped she went a [C]little bit farther
 {end_of_verse}
+
+
+

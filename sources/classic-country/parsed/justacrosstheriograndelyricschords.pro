@@ -1,6 +1,9 @@
 {meta: title Just Across The Rio Grande}
 {meta: artist Reba McEntire}
 {meta: composer Don Cook and Chick Rains}
+{meta: x_source classic-country}
+{meta: x_source_file justacrosstheriograndelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The lights of Laredo [Em]dance on the [C]water 
@@ -52,3 +55,8 @@ But a [C]man can make a [Am]dream come true
 Sometimes it seems like [Am]God must live 
 [F]Just across the [G7]Rio [C]Grande
 {end_of_verse}
+
+
+
+
+

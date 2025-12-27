@@ -1,6 +1,9 @@
 {meta: title There’s A Bottle Where She Used To Be}
 {meta: artist Carl Smith}
 {meta: composer Billy Worth & Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file theresabottlewheresheusedtobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m at the end [G7]of my [C]journey
@@ -33,3 +36,7 @@ There’s a [D7]bottle [G7]where she used to [C]be
 {start_of_verse: Verse 5}
 There’s a [D7]bottle [G7]where she used to [C]be
 {end_of_verse}
+
+
+
+

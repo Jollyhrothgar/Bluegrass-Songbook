@@ -1,6 +1,9 @@
 {meta: title Did She Ask About Me}
 {meta: artist Cal Smith}
 {meta: composer Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file didsheaskaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Did she [G7]ask about [F]m-[C]e)
@@ -31,3 +34,7 @@ Or like me will he [G7]be just her memo[C]ry
 Was she [F]happy and [G7]gay or did the [F]drinks make her that [C]way
 It doesn't matter but did she [G7]ask about [F]m-[C]e
 {end_of_verse}
+
+
+
+

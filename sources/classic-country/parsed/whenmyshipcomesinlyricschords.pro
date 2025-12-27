@@ -1,6 +1,9 @@
 {meta: title When My Ship Comes In}
 {meta: artist Ferlin Husky}
 {meta: composer Phil Earhart and Harlan Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file whenmyshipcomesinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know why you stayed with me so long
@@ -29,3 +32,6 @@ You'll be there beside me to count the sails a-blowing in the [F]wind
 [F]When my [C]ship comes in (when my ship comes in)
 [F]When my [C]ship comes in (when my ship comes in)
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title We Should Be Together}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file weshouldbetogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I think about you  when I don't want [G7]to
@@ -28,3 +31,6 @@ If I can't [F]have you what will I [C]do
 [F]We should be together  [C]together
 [G7]Keeping each other [C]satisfied
 {end_of_verse}
+
+
+

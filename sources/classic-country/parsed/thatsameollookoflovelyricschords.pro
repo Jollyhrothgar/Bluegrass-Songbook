@@ -1,6 +1,9 @@
 {meta: title That Same Ol' Look Of Love}
 {meta: artist David Houston}
 {meta: composer Norro Wilson, Carmol Taylor, George Richey}
+{meta: x_source classic-country}
+{meta: x_source_file thatsameollookoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]To see you [G]once again just tears me all to [C][F]pieces
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [C]She'll have that [G]same ol' look of [C]love all [D7]over her [G]face
 {end_of_verse}
+
+
+

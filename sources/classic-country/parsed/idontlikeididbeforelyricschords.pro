@@ -1,6 +1,9 @@
 {meta: title I Don't Like I Did Before}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Horton and Claud King}
+{meta: x_source classic-country}
+{meta: x_source_file idontlikeididbeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you can't thrill me no more
@@ -51,3 +54,11 @@ I used to watch you when you made your rounds
 [F]Your love to me was like a riddle
 My heart was blind but now I [C]find
 {end_of_verse}
+
+
+
+
+
+
+
+

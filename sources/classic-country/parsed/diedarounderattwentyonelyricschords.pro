@@ -1,6 +1,9 @@
 {meta: title Died A Rounder At Twenty-One}
 {meta: artist Dale Evans}
 {meta: composer Jimmie Skinner}
+{meta: x_source classic-country}
+{meta: x_source_file diedarounderattwentyonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He drank whiskey for his liver 
@@ -61,3 +64,11 @@ He died a [F]rounder [G7]at twenty-[C]one
 {start_of_verse: Verse 8}
 He died a [F]rounder [G7]at twenty-[C]one
 {end_of_verse}
+
+
+
+
+
+
+
+

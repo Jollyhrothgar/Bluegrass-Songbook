@@ -1,6 +1,9 @@
 {meta: title Bitter They Are Harder They Fall}
 {meta: artist Gene Watson}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file bittertheyarehardertheyfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told her to [C7]leave me [F]alone 
@@ -29,3 +32,6 @@ That's what she's [C]done just what she's [G7]done
 And a [C]house built for [C7]two ain't a [F]home 
 When it's lived in by [C]one  one lonely [G7]one 
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title He Loves Me All The Way}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file helovesmeallthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes when he comes home [D7]I'm cooking [G]breakfast
@@ -40,3 +43,8 @@ He loved me [A7]all the [D7]way
 But when he loves me he really [C]loves me
 Cause [A7]when he [D7]loves me he loves me all the [G]way
 {end_of_verse}
+
+
+
+
+

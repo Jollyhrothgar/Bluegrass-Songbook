@@ -1,6 +1,9 @@
 {meta: title Sweeter Than The Flowers}
 {meta: artist George Jones}
 {meta: composer Ervin T. Rouse and Lois Mann}
+{meta: x_source classic-country}
+{meta: x_source_file sweeterthantheflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just as far as I can remember
@@ -62,3 +65,14 @@ February [G7]brought us broken [C]hearts
 [C]Oh no momma we'll never forget you
 And [G7]someday we'll meet you up [C]there
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Inflation}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file loveinflationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love inflation [F]Lord that’s twice as high 
@@ -40,3 +43,8 @@ Honey I’ve been saving all my [F]kisses
 {start_of_verse: Verse 4}
 Your love inflation is [G7]slowly killing [C]me
 {end_of_verse}
+
+
+
+
+

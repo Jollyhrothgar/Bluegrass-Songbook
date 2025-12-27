@@ -1,6 +1,9 @@
 {meta: title It's Not The End Of Everything}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file itsnottheendofeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just because your [G7]love is gone
@@ -30,3 +33,6 @@ Two [D7]arms that hold just [G7]loneliness
 It's [G7]not the end of [F]eve-ry[C]thing
 It's [G7]not the end of [F]eve-ry[C]thing
 {end_of_verse}
+
+
+

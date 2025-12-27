@@ -1,6 +1,9 @@
 {meta: title Ain't Got No Home}
 {meta: artist Buddy Holly}
 {meta: composer Clarence Henry}
+{meta: x_source classic-country}
+{meta: x_source_file aintgotnohomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I ain't got no home no place to roam
@@ -32,3 +35,7 @@ What you say to me please say to me
 What you say to me [F]please say to [C]me
 I'm a lonely [G7]frog I ain't got a [C]home 
 {end_of_verse}
+
+
+
+

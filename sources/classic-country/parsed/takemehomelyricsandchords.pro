@@ -1,6 +1,9 @@
 {meta: title Take Me Home}
 {meta: artist Wanda Jackson}
 {meta: composer Vaughn Horton}
+{meta: x_source classic-country}
+{meta: x_source_file takemehomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was wrong in blaming [G7]you and the f[C]ool for leaving t[G]oo
@@ -22,3 +25,5 @@ Cause I'm homesick and I'm helpless on my [D7]own
 Can't you [G]see I'm out of place and [C]ashamed to show my [G]face
 Please [D7]forgive me come and get me take me [G]home [C]   [G]
 {end_of_verse}
+
+

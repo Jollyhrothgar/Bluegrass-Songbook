@@ -1,5 +1,8 @@
 {meta: title You're In Love}
 {meta: artist Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file youreinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had an old friend [Am]ask me just the [F]other [G7]night
@@ -42,3 +45,8 @@ If you [C]feel like you could [Am]touch the [Dm]moon
 If you [C]feel like you could [Am]touch the [Dm]moon
 [G7]You're in [C]love ([Am]you're in [Dm]love) [G7]you're in [C]love
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Goodnight Sweetheart}
 {meta: artist The Statler Brothers}
 {meta: composer Calvin Carter and James "Pookie" Hudson}
+{meta: x_source classic-country}
+{meta: x_source_file goodnightsweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Goodnight sweetheart goodnight sweet[Am]heart well it's [Dm]time to [G7]go
@@ -44,3 +47,8 @@ Goodnight [C]sweetheart goodnight sweet[Am]heart well it's [Dm]time to [G7]go
 I hate to [C]leave I hate to [C7]leave you but I [F]really must [Fm]say
 Good[C]night sweet[Dm]heart [G7]good[C]night
 {end_of_verse}
+
+
+
+
+

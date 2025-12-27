@@ -1,6 +1,9 @@
 {meta: title After The Thrill Is Gone}
 {meta: artist Cal Smith}
 {meta: composer Don Henley and Glenn Frey}
+{meta: x_source classic-country}
+{meta: x_source_file afterthethrillisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Same dancers in the same old [C]shoes
@@ -46,3 +49,8 @@
 [Am]After the [D7]thrill is gone [G]boy
 [Am]After the [D7]thrill is [G]gone
 {end_of_verse}
+
+
+
+
+

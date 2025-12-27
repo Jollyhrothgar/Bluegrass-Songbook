@@ -1,5 +1,8 @@
 {meta: title Deuces Wild}
 {meta: artist Frankie Laine}
+{meta: x_source classic-country}
+{meta: x_source_file deuceswildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Deuces wild  deuces [F]wild
@@ -83,3 +86,13 @@ Deuces wild  deuces [F]wild
 Up and down the river [F]looking all the [C]while
 Looking for a man who plays poker with [G7]deuces [C]wild
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

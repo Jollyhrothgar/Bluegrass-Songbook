@@ -1,6 +1,9 @@
 {meta: title I'll Be On That Good Road Someday}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Bruce Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file illbeonthatgoodroadsomedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll be on that good road [F]someday 
@@ -50,3 +53,9 @@ Till [G7]I wished I was living [C]alone
 That same old train's gonna come back [F]again 
 And [G7]roll all my blues [C]away
 {end_of_verse}
+
+
+
+
+
+

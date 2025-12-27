@@ -1,6 +1,9 @@
 {meta: title Out of Mind Out of Sight}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson and Stephen Bruton}
+{meta: x_source classic-country}
+{meta: x_source_file outofmindoutofsightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Buddy tip your bottle back [C]climb aboard the bus
@@ -51,3 +54,9 @@ And we've left it all [G7]behind
 Outta [G7]sight and out of [C]mind
 Outta [G7]sight and outta [F]min[C]d
 {end_of_verse}
+
+
+
+
+
+

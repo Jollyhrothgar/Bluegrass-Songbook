@@ -1,6 +1,9 @@
 {meta: title Without You}
 {meta: artist Tony Booth}
 {meta: composer Buck Owens and Gene Price}
+{meta: x_source classic-country}
+{meta: x_source_file withoutyoulyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the dawn brings [F]another day 
@@ -35,3 +38,7 @@ And I [C]don't know what [G7]I'll do without [C]you [F]
 {start_of_verse: Verse 5}
 Without [C]you [F]   [C]without you [F]oh without [C]you
 {end_of_verse}
+
+
+
+

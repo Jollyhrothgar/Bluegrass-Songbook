@@ -1,6 +1,9 @@
 {meta: title I'm Just an Old Chunk of Coal}
 {meta: artist Stonewall Jackson}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file imjustanoldchunkofcoallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just an old chunk of coal 
@@ -34,3 +37,7 @@ I'm [G7]gonna be a diamond some [C]day
 [F]Now I'm just an old chunk of [C]coal now [Am]Lord 
 But I'm [G7]gonna be a diamond some [C]day
 {end_of_verse}
+
+
+
+

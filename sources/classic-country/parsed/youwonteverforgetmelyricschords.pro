@@ -1,6 +1,9 @@
 {meta: title You Won't Ever Forget Me Me}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb and Lois Snapp}
+{meta: x_source classic-country}
+{meta: x_source_file youwonteverforgetmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You tell me [G7]tonight that we're [C]parting  [C7]
@@ -43,3 +46,8 @@ No [F]matter how [G7]hard you'd [C]try
 And [F]when it's too [Fm]late my [C]darling [A7]
 You [D7]will wish you [G7]had not said [C]goodbye
 {end_of_verse}
+
+
+
+
+

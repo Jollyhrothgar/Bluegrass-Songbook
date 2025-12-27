@@ -1,6 +1,9 @@
 {meta: title Hungry For Love}
 {meta: artist Stonewall Jackson}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file hungryforlovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]How many arms hold the wrong one so [C]tight
@@ -44,3 +47,8 @@
 [F]Is it wrong when you're hungry for [C]love
 [F]Is it wrong when you're hungry for [C]love
 {end_of_verse}
+
+
+
+
+

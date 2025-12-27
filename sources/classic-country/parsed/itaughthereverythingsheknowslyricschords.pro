@@ -1,6 +1,9 @@
 {meta: title I Taught Her Everything She Knows}
 {meta: artist Billy Walker}
 {meta: composer Arthur Kent and Sylvia Dee}
+{meta: x_source classic-country}
+{meta: x_source_file itaughthereverythingsheknowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I taught her everything she knows and [F]then what did she do
@@ -20,3 +23,5 @@ He [G7]ought to thank me cause I taught her [C]everything she knows
 I thought that she'd be true to me but[F] that's the way it goes
 He [G7]ought to thank me cause I taught her [C]ev-ery-[F]thing [G7]she [C]knows
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Sweet Summertime}
 {meta: artist Rhonda Vincent}
 {meta: composer Donna Webster}
+{meta: x_source classic-country}
+{meta: x_source_file sweetsummertimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can you remember [F]back when you were [G7]younger
@@ -52,3 +55,9 @@ Days like that [F]today are surely [G7]hard to find
 In the [G7]sweet summer[C]time
 I miss that sw[F]eet summer[C]time
 {end_of_verse}
+
+
+
+
+
+

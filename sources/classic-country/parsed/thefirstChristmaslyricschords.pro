@@ -1,6 +1,9 @@
 {meta: title The First Christmas}
 {meta: artist Doug Stone}
 {meta: composer Phyllis Bennett, Lonnie Williams, Doug Stone}
+{meta: x_source classic-country}
+{meta: x_source_file thefirstChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He was [D7]just a [G]baby the [C]only Son of [G]man
@@ -33,3 +36,7 @@ And [C]feel what they felt on that [D7]first Christmas [Em]night
 {start_of_verse: Verse 5}
 [G]Oh  [C]why can't I feel what they [D7]felt on that first Christmas [G]night [C]  [G]
 {end_of_verse}
+
+
+
+

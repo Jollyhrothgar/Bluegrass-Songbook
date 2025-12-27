@@ -1,5 +1,8 @@
 {meta: title You're Not Drowning Your Heartache}
 {meta: artist Cal Smith}
+{meta: x_source classic-country}
+{meta: x_source_file yourenotdrowningyourheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I beg your pardon mister for [G7]intruding [C]privacy
@@ -22,3 +25,5 @@ Just [G]like you I lost my darling she just [G7]walked away with [C]him
 You're not [G]drowning your heartache you're just [D7]teaching it to [G]swim
 [C]You're not [G]drowning your heartache you're just [D7]teaching it to [G]swim
 {end_of_verse}
+
+

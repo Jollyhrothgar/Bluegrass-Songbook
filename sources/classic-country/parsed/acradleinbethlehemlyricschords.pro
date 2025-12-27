@@ -1,6 +1,9 @@
 {meta: title A Cradle In Bethlehem}
 {meta: artist Vince Gill}
 {meta: composer Alfred Bryan and Larry Stock}
+{meta: x_source classic-country}
+{meta: x_source_file acradleinbethlehemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sing sweet and low a [G7]lulla[C]by
@@ -34,3 +37,7 @@ A [C]cradle in [G7]Bethle[C]hem
 A mother [Dm]tonight[G7]  is [C]rock[F]ing
 A [C]cradle in [G7]Bethle[C]hem
 {end_of_verse}
+
+
+
+

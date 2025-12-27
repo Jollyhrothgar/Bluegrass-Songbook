@@ -1,6 +1,9 @@
 {meta: title Please Don't Let Our Sweet Love Die}
 {meta: artist Jamie Dailey and Darrin Vincent}
 {meta: composer Ron Spears}
+{meta: x_source classic-country}
+{meta: x_source_file pleasedontletoursweetlovedielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now you say that I no [F]longer make you [G7]happy
@@ -46,3 +49,8 @@ Once before you say we're [F]through
 Let's make [C]love the way we [F]used to
 Darling [C]please don't [F]let our [G7]sweet love [C]die
 {end_of_verse}
+
+
+
+
+

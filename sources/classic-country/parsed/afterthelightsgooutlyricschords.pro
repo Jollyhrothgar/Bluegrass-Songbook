@@ -1,6 +1,9 @@
 {meta: title After The Lights Go Out}
 {meta: artist Ricky Van Shelton}
 {meta: composer Warner McPherson}
+{meta: x_source classic-country}
+{meta: x_source_file afterthelightsgooutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight I'm [C]out with the [G]crowd
@@ -29,3 +32,6 @@ All I can hear in my ears are the words I love [G]you
 I'll jump to my feet and slowly start [C]walkin'
 Memories in the [G]dark tear at my [D7]heart after the lights go [G]out
 {end_of_verse}
+
+
+

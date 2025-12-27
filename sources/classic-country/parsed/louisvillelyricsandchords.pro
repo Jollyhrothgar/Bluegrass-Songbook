@@ -1,6 +1,9 @@
 {meta: title Louisville}
 {meta: artist Dwight Yoakam}
 {meta: composer Pat Gallagher and Jann Browne}
+{meta: x_source classic-country}
+{meta: x_source_file louisvillelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been waiting here in [G7]Louisville
@@ -45,3 +48,9 @@ You got until my bus leaves for L[C]A
 {start_of_verse: Verse 6}
 [G7]You got until my bus leaves for L[C]A
 {end_of_verse}
+
+
+
+
+
+

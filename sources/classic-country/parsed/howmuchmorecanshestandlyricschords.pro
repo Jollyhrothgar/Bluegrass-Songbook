@@ -1,6 +1,9 @@
 {meta: title How Much More Can She Stand}
 {meta: artist Conway Twitty}
 {meta: composer Harry Compton}
+{meta: x_source classic-country}
+{meta: x_source_file howmuchmorecanshestandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s a [D7]devil in my [G]body that I just can’t satis[D7]fy 
@@ -22,3 +25,5 @@ I did wrong again last [G]night now I just want to go back [D7]home
 She [G]knows that I’ll lie Lord she’ll [C]cry where I can’t see 
 How much [G]more can she [C]stand and still stand by [G]me
 {end_of_verse}
+
+

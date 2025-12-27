@@ -1,5 +1,8 @@
 {meta: title Take Me Back to Tulsa}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file takemebacktotulsalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where's that gal with red dress on some folks called her [D7]Dinah
@@ -23,3 +26,5 @@ Travel all over the country playing by the [G]hour
 Take me back to Tulsa I'm too young to [D7]marry
 Take me back to Tulsa I'm too young to [G]marry
 {end_of_verse}
+
+

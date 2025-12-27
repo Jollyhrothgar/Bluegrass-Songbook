@@ -1,6 +1,9 @@
 {meta: title Ridin' The Sunshine Special}
 {meta: artist Johnny Horton}
 {meta: composer Chuck Murphy and Huel Murphy}
+{meta: x_source classic-country}
+{meta: x_source_file ridinthesunshinespeciallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m gonna ride that happy train when it comes rolling
@@ -53,3 +56,12 @@ And the sunshine special is a-rocking and a-rolling
 {start_of_verse: Verse 8}
 [A7]It’s goodbye blues we [D7]ain’t a-coming [G]back
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Mr. Moonlight}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file mrmoonlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nobody really cares where the [G7]moon goes at [C]dawn
@@ -34,3 +37,6 @@
 [C]Everything is right when you're shining [G7]bright Mr. [C]Moonlight
 [G7]Mr. [C]Moonlight
 {end_of_verse}
+
+
+

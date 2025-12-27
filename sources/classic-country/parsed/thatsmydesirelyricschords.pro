@@ -1,6 +1,9 @@
 {meta: title That’s My Desire}
 {meta: artist Jim Reeves}
 {meta: composer Carroll Loveday and Helmy Kresa}
+{meta: x_source classic-country}
+{meta: x_source_file thatsmydesirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]To spend one night with you in our old [D7]rendezvous
@@ -22,3 +25,5 @@
 [G]To hear you whisper low just when it's time to [D7]go
 [C]Cherie I [D7]love you so  that's my [G]desire
 {end_of_verse}
+
+

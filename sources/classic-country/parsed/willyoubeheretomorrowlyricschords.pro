@@ -1,6 +1,9 @@
 {meta: title Will You Be Here Tomorrow}
 {meta: artist Norma Jean}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file willyoubeheretomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]These things that you promised for [C]certain
@@ -29,3 +32,6 @@ To make a [D7]promise when you're holdin' me [G]tight
 So I wonder will you be here [C]tomorrow
 To [D7]do what you promised [G]tonight
 {end_of_verse}
+
+
+

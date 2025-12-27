@@ -1,6 +1,9 @@
 {meta: title Big Ole Hurt}
 {meta: artist Cal Smith}
 {meta: composer Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file bigolehurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you've been a bouncin' me just [C]like a rubber [G]ball
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]Yeah I'm a gonna put the big ole hurt on [G]you
 {end_of_verse}
+
+
+
+

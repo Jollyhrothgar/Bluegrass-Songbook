@@ -1,6 +1,9 @@
 {meta: title Do You Believe Me Now}
 {meta: artist Vern Gosdin}
 {meta: composer Vern Gosdin and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file doyoubelievemenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't you think you should've called
@@ -50,3 +53,9 @@ I told you time and time [G]again
 My heart and soul is your [D7]hands 
 Do you believe me [G]now
 {end_of_verse}
+
+
+
+
+
+

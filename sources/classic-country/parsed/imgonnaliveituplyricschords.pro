@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Live It Up}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnaliveituplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna live it up so you can live it [A7]down
@@ -40,3 +43,8 @@ I'm gonna [D7]live it up so you can live it [G]down
 {start_of_verse: Verse 4}
 I'm gonna [A7]live it up so [D7]you can live it [G]down
 {end_of_verse}
+
+
+
+
+

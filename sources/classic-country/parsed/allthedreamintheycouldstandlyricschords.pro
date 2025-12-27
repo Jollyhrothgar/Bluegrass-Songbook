@@ -1,6 +1,9 @@
 {meta: title All The Dreamin' They Could Stand}
 {meta: artist Buck Owens}
 {meta: composer Homer Joy}
+{meta: x_source classic-country}
+{meta: x_source_file allthedreamintheycouldstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Chased our dreams endlessly [C]through it all she stood by me
@@ -34,3 +37,7 @@ She was always good to me [C]good as anyone could be
 Things like other people have [C]not just dreams that's all gone bad
 [G]She's had all the [D7]dreamin' she can [G]stand
 {end_of_verse}
+
+
+
+

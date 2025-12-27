@@ -1,6 +1,9 @@
 {meta: title Bye Bye Love}
 {meta: artist The Everly Brothers}
 {meta: composer Felice and Boudieaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file byebyelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Bye bye [C]love  bye [F]bye [C]happiness
@@ -39,3 +42,7 @@
 [F]Hello [C]emptiness I feel like I [G7]could [C]d-ie
 [G7]Bye my love [C]good-by
 {end_of_verse}
+
+
+
+

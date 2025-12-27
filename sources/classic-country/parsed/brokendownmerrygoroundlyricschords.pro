@@ -1,6 +1,9 @@
 {meta: title Broken Down Merry Go Round}
 {meta: artist Jimmy Wakely}
 {meta: composer Arthur Herbert and Fred Stryker}
+{meta: x_source classic-country}
+{meta: x_source_file brokendownmerrygoroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said that you loved me
@@ -43,3 +46,8 @@ You've made me a [G7]fool and a clown
 Or you had me riding
 A broken down [C]merry [G7]go [C]round
 {end_of_verse}
+
+
+
+
+

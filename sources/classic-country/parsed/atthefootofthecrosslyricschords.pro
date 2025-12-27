@@ -1,6 +1,9 @@
 {meta: title At The Foot Of The Cross}
 {meta: artist Connie Smith}
 {meta: composer Larry Lee}
+{meta: x_source classic-country}
+{meta: x_source_file atthefootofthecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord on bended knee I'm begging you
@@ -27,3 +30,6 @@ Oh [C]I need a reminder to [G7]be what I [C]should
 Give me more [C7]desire for [F]souls that are [Fm]lost
 Let me [C]live let me live at the [G7]foot of the [C]cross
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Cold Beer Signs And Country Songs}
 {meta: artist Darrell McCall}
 {meta: composer Red Stegall and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file coldbeersignsandcountrysongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You never did approve of the [F]things that I call [C]fun
@@ -29,3 +32,6 @@ Then play my favorite songs till I run out of [G7]dimes
 Cause [C]I'll bet I've danced a million miles to [F]that Rose of San [C]Antone
 Cause cold beer signs and country songs [G7]have always turned me [C]on
 {end_of_verse}
+
+
+

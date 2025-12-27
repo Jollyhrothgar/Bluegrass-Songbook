@@ -1,5 +1,8 @@
 {meta: title Pretty Green Hills}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file prettygreenhillslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pretty green hills [C]pretty green [G]hills
@@ -71,3 +74,13 @@ They buried him there in them [C]pretty green [G]hills
 Pretty green hills [C]pretty green [G]hills
 They buried him there in them [C]pretty green [G]hills
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

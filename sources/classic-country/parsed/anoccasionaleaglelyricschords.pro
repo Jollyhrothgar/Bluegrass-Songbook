@@ -1,6 +1,9 @@
 {meta: title An Occasional Eagle}
 {meta: artist John Anderson}
 {meta: composer Fred Carter}
+{meta: x_source classic-country}
+{meta: x_source_file anoccasionaleaglelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]High o'er the coast of [F]Alaska he [Dm]flies
@@ -45,3 +48,7 @@ A [G7]symbol of freedom and [C]right
 [F]Ridin' the [G7]wind through the [C]mountains
 [F]Guided by [C]nature an [Dm]occasional [G7]eagle in [C]flight 
 {end_of_verse}
+
+
+
+

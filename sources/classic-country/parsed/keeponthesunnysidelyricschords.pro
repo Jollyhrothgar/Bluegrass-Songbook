@@ -1,6 +1,9 @@
 {meta: title Keep On The Sunny Side}
 {meta: artist Lester Flatt}
 {meta: composer A.P. Carer}
+{meta: x_source classic-country}
+{meta: x_source_file keeponthesunnysidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a dark and a [F]troubled side of [C]life
@@ -43,3 +46,8 @@ Keep on the sunny side always on the sunny [F]side
 It [C]will help us every day it will [F]brighten all the [C]way
 If we'll keep on the [G7]sunny side of [C]life
 {end_of_verse}
+
+
+
+
+

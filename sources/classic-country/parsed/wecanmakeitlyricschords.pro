@@ -1,6 +1,9 @@
 {meta: title We Can Make It}
 {meta: artist George Jones}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file wecanmakeitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We can [F]make it 
@@ -39,3 +42,8 @@ We can [Am]make it
 {start_of_verse: Verse 6}
 [G7]We can [C]make it
 {end_of_verse}
+
+
+
+
+

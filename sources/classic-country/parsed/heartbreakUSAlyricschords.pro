@@ -1,6 +1,9 @@
 {meta: title Heartbreak U.S.A.}
 {meta: artist Kitty Wells}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakUSAlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The harbor's empty my love has [C]gone
@@ -29,3 +32,6 @@ And if you [A7]meet some sweet Fraulein remember you're [D7]mine
 Don't forget your [G]sweetheart [G7]while you're [C]away
 Back home in [G]Heartbreak [D7]U. S. [G]A.
 {end_of_verse}
+
+
+

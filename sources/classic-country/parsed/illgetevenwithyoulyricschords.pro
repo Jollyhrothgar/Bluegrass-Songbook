@@ -1,6 +1,9 @@
 {meta: title I'll Get Even With You}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file illgetevenwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every time I get this feeling
@@ -36,3 +39,7 @@ Well I’ll get even with you I’ll get even with you
 I’ll get even with you I’ll find me somebody new
 [C]That’s what I’m [D7]gonna [G]do
 {end_of_verse}
+
+
+
+

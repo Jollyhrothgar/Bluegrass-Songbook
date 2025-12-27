@@ -1,6 +1,9 @@
 {meta: title The More I Do}
 {meta: artist Charley Pride}
 {meta: composer Byron Gallimore}
+{meta: x_source classic-country}
+{meta: x_source_file themoreidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Time and time again you [D7]told me you [G]love me through and through
@@ -33,3 +36,7 @@ Cause the more I [G]do  [D7]the more you [G]don’t
 {start_of_verse: Verse 4}
 [C]For the more I [G]do  [D7]the more you [G]don’t
 {end_of_verse}
+
+
+
+

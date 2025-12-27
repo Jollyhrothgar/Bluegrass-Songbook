@@ -1,5 +1,8 @@
 {meta: title To Heck With Old Santa Claus}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file toheckwitholdsantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]To [D7]heck with old Santa [G]Claus
@@ -29,3 +32,7 @@
 {start_of_verse: Verse 5}
 [D7]Yeah to heck with old Santa [G]Claus
 {end_of_verse}
+
+
+
+

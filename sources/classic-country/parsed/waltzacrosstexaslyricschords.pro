@@ -1,5 +1,8 @@
 {meta: title Waltz Across Texas}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file waltzacrosstexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When we dance together my world's in [D7]disguise
@@ -28,3 +31,6 @@ Waltz across Texas with [G]you
 Like a story-book ending I'm lost in your [D7]charms
 And I could waltz across Texas with [G]you
 {end_of_verse}
+
+
+

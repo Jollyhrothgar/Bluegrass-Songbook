@@ -1,6 +1,9 @@
 {meta: title Train Bound for Glory Land}
 {meta: artist The Yonder Mountain String Band}
 {meta: composer Benjamin E Galloway}
+{meta: x_source classic-country}
+{meta: x_source_file trainboundforglorylandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]That train bound for Glory land is headed up the line
@@ -34,3 +37,7 @@ Hurry get your [C]tickets boys [D7]Godspeed praise the [G]Lord
 [C]Catch that train to Glory land
 We'll [D7]all sing hallelu[C]jah[G]
 {end_of_verse}
+
+
+
+

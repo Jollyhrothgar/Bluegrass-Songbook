@@ -1,6 +1,9 @@
 {meta: title Thank God For A Mother Like Mine}
 {meta: artist Kitty Wells}
 {meta: composer Johnnie Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file thankGodforamotherlikeminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My dear precious mother means [C]so much to [G]me 
@@ -33,3 +36,7 @@ Thank God for a [D7]mother like [G]mine
 {start_of_verse: Verse 5}
 Thank God for a [D7]mother like [G]mine
 {end_of_verse}
+
+
+
+

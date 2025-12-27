@@ -1,6 +1,9 @@
 {meta: title Anyplace is Paradise}
 {meta: artist Elvis Presley}
 {meta: composer Joe Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file anyplaceisparadiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whether you're riding down a highway
@@ -105,3 +108,26 @@ Baby a jungle would be fine
 [G7]Anyplace is paradise               
 When I’m with [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

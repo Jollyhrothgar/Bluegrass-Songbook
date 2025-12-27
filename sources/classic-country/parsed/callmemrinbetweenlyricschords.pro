@@ -1,6 +1,9 @@
 {meta: title Call Me Mr. In Between}
 {meta: artist Burl Ives}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file callmemrinbetweenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm [F]too old for girls and I'm too young for women
@@ -43,3 +46,8 @@ The [C]high school kids at the show with their babies
 While [G7]I run around like a dog with the rabies
 They call me Mr. In-[C]Between
 {end_of_verse}
+
+
+
+
+

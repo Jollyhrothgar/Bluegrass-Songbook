@@ -1,6 +1,9 @@
 {meta: title Back To Life}
 {meta: artist Mel Tillis}
 {meta: composer Joyce McCord}
+{meta: x_source classic-country}
+{meta: x_source_file backtolifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the years show in our faces
@@ -42,3 +45,9 @@ We'll spend many happy hours
 {start_of_verse: Verse 6}
 [F]We'll bring [C]each tender [G7]memory back to [C]life
 {end_of_verse}
+
+
+
+
+
+

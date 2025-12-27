@@ -1,6 +1,9 @@
 {meta: title Hungry For The Sunshine}
 {meta: artist Mickey Gilley}
 {meta: composer Linne Black}
+{meta: x_source classic-country}
+{meta: x_source_file hungryforthesunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just looked out my window and it gave [F]my heart a [C]thrill
@@ -23,3 +26,5 @@
 [C]And I'm hungry for [F]the sunshine [G7]by me gettin' over [C]you
 [F]Yes I'm hungry for the [G7]sunshine by me gettin' over [C]you
 {end_of_verse}
+
+

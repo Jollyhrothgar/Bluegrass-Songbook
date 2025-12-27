@@ -1,5 +1,8 @@
 {meta: title Standing on the Promises}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file standingonthepromiseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Standing on the promises of Christ my King
@@ -62,3 +65,14 @@ Standing on the [G7]promises of [C]God
 Glory in the highest I will shout and sing
 Standing on the [G7]promises of [C]God
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

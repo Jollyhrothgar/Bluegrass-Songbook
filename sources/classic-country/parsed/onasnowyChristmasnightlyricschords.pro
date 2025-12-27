@@ -1,6 +1,9 @@
 {meta: title On A Snowy Christmas Night}
 {meta: artist Elvis Presley}
 {meta: composer Stanley Gelber}
+{meta: x_source classic-country}
+{meta: x_source_file onasnowyChristmasnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Midnights [C]prayers [C7]so softly [F]whispered in [G7]
@@ -41,3 +44,8 @@ On a [G7]snowy Christmas [C]night
 For you know the [C7]Lord's been [F]good to you
 On a [G7]snowy Christmas [C]night
 {end_of_verse}
+
+
+
+
+

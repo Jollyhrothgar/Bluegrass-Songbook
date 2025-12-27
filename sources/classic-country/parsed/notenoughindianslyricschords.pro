@@ -1,6 +1,9 @@
 {meta: title Not Enough Indians}
 {meta: artist Dean Martin}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file notenoughindianslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wagon train of [F]love is moving [C]slow
@@ -46,3 +49,8 @@ If you [C]don't give just a little bit more
 [C7]We're both gonna lose the [F]race
 Cause there's too many chiefs and [C]not enough Indians [G7]around this [C]place
 {end_of_verse}
+
+
+
+
+

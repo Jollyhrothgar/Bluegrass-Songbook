@@ -1,6 +1,9 @@
 {meta: title Cool Water}
 {meta: artist Eddy Arnold}
 {meta: composer Bob Nolan}
+{meta: x_source classic-country}
+{meta: x_source_file coolwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All day I've faced a barren [D7]waste
@@ -43,3 +46,8 @@
 [C]Dan can you see that big green [G]tree
 [C]Where the water's running free and [D7]it's waitin' there for you and [G]me
 {end_of_verse}
+
+
+
+
+

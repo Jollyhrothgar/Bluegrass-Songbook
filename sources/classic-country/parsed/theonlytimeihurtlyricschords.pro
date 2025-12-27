@@ -1,5 +1,8 @@
 {meta: title The Only Time I Hurt}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file theonlytimeihurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I know that I'll forget you 
@@ -56,3 +59,10 @@ And every [F]time your memory [C]speaks
 But the only [F]time I [C]hurt 
 Is [G7]when my heart [C]beats
 {end_of_verse}
+
+
+
+
+
+
+

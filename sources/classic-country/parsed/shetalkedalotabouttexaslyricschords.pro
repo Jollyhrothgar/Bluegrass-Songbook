@@ -1,6 +1,9 @@
 {meta: title She Talked A Lot About Texas}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file shetalkedalotabouttexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She always wanted me [C]to go to [G]Texas
@@ -36,3 +39,7 @@
 [G]She [C]talked a lot about [G]Texas
 [C]And this time [D7]tomorrow she’ll be buried [G]there
 {end_of_verse}
+
+
+
+

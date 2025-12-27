@@ -1,6 +1,9 @@
 {meta: title It’s Never Too Late}
 {meta: artist Stanley Brothers}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file itsnevertoolatelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now darlin' I've tried I've never done wrong
@@ -29,3 +32,6 @@ I've loved you so long you know I've been [C]true
 Please come back to me my heart is so [F]blue
 It's never too [G7]late to start over [C]new
 {end_of_verse}
+
+
+

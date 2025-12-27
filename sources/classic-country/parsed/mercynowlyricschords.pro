@@ -1,6 +1,9 @@
 {meta: title Mercy Now}
 {meta: artist Bobby Bare}
 {meta: composer Mary Gauthier}
+{meta: x_source classic-country}
+{meta: x_source_file mercynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My father could use a little mercy [F]now
@@ -40,3 +43,8 @@ And [G7]every single one of us could use a little mercy [C]now
 {start_of_verse: Verse 6}
 And [G7]every single one of us could [F]use some mercy [C]now
 {end_of_verse}
+
+
+
+
+

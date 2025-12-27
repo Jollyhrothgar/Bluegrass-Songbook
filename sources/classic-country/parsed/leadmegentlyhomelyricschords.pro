@@ -1,6 +1,9 @@
 {meta: title Lead Me Gently Home}
 {meta: artist Hank Locklin}
 {meta: composer Will L. Thompson and Gene Clark}
+{meta: x_source classic-country}
+{meta: x_source_file leadmegentlyhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lead me gently home [G][C]father
@@ -43,3 +46,8 @@ Lead me gently home [D7]father
 [G]Lest I fall upon the [C]wayside
 [G]Lead me [D7]gently [G]home
 {end_of_verse}
+
+
+
+
+

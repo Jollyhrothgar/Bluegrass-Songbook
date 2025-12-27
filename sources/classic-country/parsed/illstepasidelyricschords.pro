@@ -1,6 +1,9 @@
 {meta: title I'll Step Aside}
 {meta: artist Marty Robbins}
 {meta: composer Johnny Bond}
+{meta: x_source classic-country}
+{meta: x_source_file illstepasidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll [G7]step [C]aside for you if you [C7]don't want [F]me
@@ -29,3 +32,6 @@ I'll step [D7]aside for you and you [G7]alone
 And when I'm [C]gone just promise [C7]you'll [F]remember
 That I was [C]once your [G7]darlin' all your [C]own 
 {end_of_verse}
+
+
+

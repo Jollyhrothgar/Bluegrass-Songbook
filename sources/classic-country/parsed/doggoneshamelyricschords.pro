@@ -1,6 +1,9 @@
 {meta: title Dog Gone Shame}
 {meta: artist Lonesome River Band}
 {meta: composer Ray Cline and Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file doggoneshamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've been steppin' out on me 
@@ -36,3 +39,7 @@ To try to get along with you
 You're no [D7]good and I don't [G]care 
 Ain't that a [C]shame a [D7]dog gone [G]shame
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Straight From The Factory}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file straightfromthefactorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Straight from the factory we [F]were made for each other
@@ -47,3 +50,9 @@ You're the only lock that's [G7]made to fit my [C]key
 {start_of_verse: Verse 4}
 You're the only lock that's [G7]made to fit my [C]key
 {end_of_verse}
+
+
+
+
+
+

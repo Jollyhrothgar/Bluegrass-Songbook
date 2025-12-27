@@ -1,6 +1,9 @@
 {meta: title Baby What You Want Me To Do}
 {meta: artist Everly Brothers}
 {meta: composer Jimmy Reed}
+{meta: x_source classic-country}
+{meta: x_source_file babywhatyouwantmetodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You got me running got me hiding
@@ -31,3 +34,6 @@
 [G7]You got me doing what you want
 [F]Baby what you want me [C]to [G7]do
 {end_of_verse}
+
+
+

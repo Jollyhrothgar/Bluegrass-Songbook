@@ -1,6 +1,9 @@
 {meta: title Fifteen Beers}
 {meta: artist Johnny Paycheck}
 {meta: composer Brenda W. Davis and Stephen A. Davis}
+{meta: x_source classic-country}
+{meta: x_source_file fifteenbeerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I drank fifteen beers that's a [F]whole lot of brew in one [C]night
@@ -44,3 +47,7 @@ It took me [C]fifteen beers to get here
 I don't [F]know how many more till I leave
 Take my [C]change in tears and [G7]drink fifteen [C]beers [F]   [C]
 {end_of_verse}
+
+
+
+

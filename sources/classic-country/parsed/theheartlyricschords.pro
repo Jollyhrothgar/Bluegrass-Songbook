@@ -1,5 +1,8 @@
 {meta: title The Heart}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file theheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My daddy was a charmer boys he [F]had a lot of [C]style
@@ -42,3 +45,8 @@ Cause the [C]heart is all that [F]matters in the [C]end
 [F]Cause the [C]heart is all that [F]matters in the [C]end [F]
 The [C]heart is all that [F]matters in the [C]end
 {end_of_verse}
+
+
+
+
+

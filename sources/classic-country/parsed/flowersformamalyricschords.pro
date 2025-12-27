@@ -1,6 +1,9 @@
 {meta: title Flowers For Mama}
 {meta: artist George Jones}
 {meta: composer Eddie Noack, Cindy Walker, Al Rumley}
+{meta: x_source classic-country}
+{meta: x_source_file flowersformamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Papa brought flowers [F]for mama to[C]day
@@ -34,3 +37,6 @@ Not very much  [D7]just a simple [G7]bouquet
 [C]Mom wasn't so fancy [F]but up there [C]above
 She's the prettiest flower in [G7]God's garden of [C]love
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Mission Of Love}
 {meta: artist Travis Tritt}
 {meta: composer Larry Cordle and Leslie Satcher}
+{meta: x_source classic-country}
+{meta: x_source_file missionoflovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know you're wonderin' just what I'm doing 
@@ -34,3 +37,7 @@ Little [G]tears brought me here on a [D7]mission of [G]love[F]  [C]
 And [G]although I hate [G7]what you've be[C]come
 Little [G]tears brought me here on a [D7]mission of [G]love[C]  [G]
 {end_of_verse}
+
+
+
+

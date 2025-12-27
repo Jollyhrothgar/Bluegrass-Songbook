@@ -1,5 +1,8 @@
 {meta: title When a House Is Not a Home}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file whenahouseisnotahomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walk up to my door and [G7]hate to turn the [C]key
@@ -21,3 +24,5 @@ Each day I live I'm like a [G7]prisoner passin' [C]time
 That's how it [F]is ask anyone who lives [C]alone
 That's how it is when your [F]house is not a [C]home
 {end_of_verse}
+
+

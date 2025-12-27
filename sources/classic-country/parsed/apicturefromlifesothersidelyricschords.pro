@@ -1,5 +1,8 @@
 {meta: title A Picture From Life’s Other Side}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file apicturefromlifesothersidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the world's mighty gallery of pictures
@@ -56,3 +59,10 @@ She was [F]somebody's darling and [C]pride
 God [F]help her she leaps for there's no [C]one to weep
 It's just a [G7]picture from life's other [C]side
 {end_of_verse}
+
+
+
+
+
+
+

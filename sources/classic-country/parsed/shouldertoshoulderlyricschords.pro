@@ -1,6 +1,9 @@
 {meta: title Shoulder To Shoulder}
 {meta: artist Tanya Tucker}
 {meta: composer Henry Gaffney}
+{meta: x_source classic-country}
+{meta: x_source_file shouldertoshoulderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Picture you and [Am]I twenty years gone [Dm]by 
@@ -32,3 +35,5 @@ And we'll grow [Dm]older [G7] shoulder to [C]shoulder
 [Am]Shoulder to [Dm]shoulder [G7]
 Shoulder to [C]shoulder
 {end_of_verse}
+
+

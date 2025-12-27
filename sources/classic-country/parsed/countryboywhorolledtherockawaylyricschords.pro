@@ -1,6 +1,9 @@
 {meta: title Country Boy Who Rolled The Rock Away}
 {meta: artist David Allan Coe}
 {meta: composer Dean Dillon, Buddy Cannon, Jimmy Darrell}
+{meta: x_source classic-country}
+{meta: x_source_file countryboywhorolledtherockawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hank rode in from Alabam to be a [D7]star 
@@ -50,3 +53,9 @@ Just three old country boys who rolled the rock [D7]away
 Though they're [C]dead and gone they're livin' on [Dm]today
 They were [G7]country boys who rolled the rock [C]away
 {end_of_verse}
+
+
+
+
+
+

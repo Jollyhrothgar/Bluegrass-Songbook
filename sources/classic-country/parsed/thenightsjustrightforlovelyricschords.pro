@@ -1,6 +1,9 @@
 {meta: title The Night's Just Right For Love}
 {meta: artist George Strait}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file thenightsjustrightforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]I don't mind the [G7]thought of growing [C]old
@@ -50,3 +53,9 @@ The [F]night's just [G7]right for [Am]love
 {start_of_verse: Verse 6}
 The [F]night's just [G7]right for [C]love
 {end_of_verse}
+
+
+
+
+
+

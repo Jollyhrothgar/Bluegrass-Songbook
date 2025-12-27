@@ -1,6 +1,9 @@
 {meta: title Removing The Shadow}
 {meta: artist Hank Williams Jr.}
 {meta: composer Eddie Pleasant and Hank Williams Jr}
+{meta: x_source classic-country}
+{meta: x_source_file removingtheshadowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm slowly re[F]moving the [C]shadow
@@ -45,3 +48,8 @@ That en[G7]dangers the future we have [C]planned
 With her gone I'd give [F]you the best in [C]lovin'
 Well I'm re[G7]movin' the shadow so you [C]can
 {end_of_verse}
+
+
+
+
+

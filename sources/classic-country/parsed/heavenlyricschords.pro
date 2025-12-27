@@ -1,5 +1,8 @@
 {meta: title Heaven}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file heavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well everybody wants to go to heaven
@@ -49,3 +52,9 @@ And I go see [D7]Heaven every [G]night
 {start_of_verse: Verse 7}
 And I go to [D7]Heaven every [G]night 
 {end_of_verse}
+
+
+
+
+
+

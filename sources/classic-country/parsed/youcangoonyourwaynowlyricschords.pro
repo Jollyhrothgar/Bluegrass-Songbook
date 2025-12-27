@@ -1,5 +1,8 @@
 {meta: title You Can Go On Your Way Now}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file youcangoonyourwaynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You done me wrong when you left home
@@ -35,3 +38,9 @@ So you can go on your way [G]now
 I was right by you my love was true
 So you can go on your way [G]now
 {end_of_verse}
+
+
+
+
+
+

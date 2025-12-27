@@ -1,5 +1,8 @@
 {meta: title Calm The Storm}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file calmthestormlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come and calm this raging storm
@@ -43,3 +46,6 @@ I'll reach the [C]harbor (soon I'll reach the harbor)
 When You calm (when you calm)
 The [G7]storm for [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Why'd You Go And Break My Heart}
 {meta: artist George Strait}
 {meta: composer David Anthony}
+{meta: x_source classic-country}
+{meta: x_source_file whydyougoandbreakmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seems you came along at the [F]right time
@@ -30,3 +33,6 @@ Why'd you go and break my [C]heart
 [G7]Well excuse me if I'm not that smart
 Why'd you go and break my [C]heart
 {end_of_verse}
+
+
+

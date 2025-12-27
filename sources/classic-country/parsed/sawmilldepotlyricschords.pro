@@ -1,6 +1,9 @@
 {meta: title Sawmill Depot}
 {meta: artist Jack Greene}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file sawmilldepotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your daddy caught us [F]at the old sawmill [C]depot
@@ -40,3 +43,6 @@ Would never get too [C]far
 Smelling like [G7]tree bark
 And loadin' up [C]black cars [F]  [C]
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title There’s a Honky Tonk Angel}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file theresahonkytonkangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When was the last [D7]time you kissed [G]me
@@ -32,3 +35,7 @@ Well there’s a [C]honky tonk [G]angel who'll [D7]take me back [G]in
 {start_of_verse: Verse 4}
 Yeah there’s a [C]Honky Tonk [G]Angel who'll [D7]take me back [G]in
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Wall Of Tears}
 {meta: artist Mickey Gilley}
 {meta: composer Richard Leigh and Peter McCann}
+{meta: x_source classic-country}
+{meta: x_source_file walloftearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Looking out my [F]window [G7] staring through the [C]pain
@@ -33,3 +36,6 @@ I know the sun will [F]shine
 I'm gonna be [C]fine but until [F]then
 The [Dm]rain's gonna [C]fall [F]just like a [G7]wall of [C]tears
 {end_of_verse}
+
+
+

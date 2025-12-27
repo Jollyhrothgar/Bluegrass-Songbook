@@ -1,5 +1,8 @@
 {meta: title Too Much Hurt}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchhurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got too much hurt [F]not enough [C]love for me
@@ -27,3 +30,6 @@ I got [C]too much hurt [F]not enough [C]love for me
 {start_of_verse: Verse 4}
 I got too much hurt [F]yes I got [C]too much hurt [F]mhm I got [C]too much hurt
 {end_of_verse}
+
+
+

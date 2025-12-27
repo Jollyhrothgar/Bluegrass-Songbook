@@ -1,6 +1,9 @@
 {meta: title Are You Sure}
 {meta: artist Ray Price}
 {meta: composer Willie Nelson and Bobby Emmons}
+{meta: x_source classic-country}
+{meta: x_source_file areyousurelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh look around you look down the bar from you
@@ -27,3 +30,6 @@ But [D7]lately teardrops seem a part of [G7]me
 [C]Oh look around you take a good look at all the [F]lonely used to [D7]be’s
 Are you [G7]sure that this is where you want to [C]be
 {end_of_verse}
+
+
+

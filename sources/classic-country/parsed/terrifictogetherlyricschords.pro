@@ -1,6 +1,9 @@
 {meta: title Terrific Together}
 {meta: artist Ferlin Husky}
 {meta: composer David Hill, Bobby Stevenson &amp; D. Williams}
+{meta: x_source classic-country}
+{meta: x_source_file terrifictogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Terrific together it's no lie oh my [C]love oh my [D7]love
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 5}
 [D7]Terrific  together  are [G]we
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bob Said It Aw (And Called It Western Swing)}
 {meta: artist Johnny Bush}
 {meta: composer Jim Halley}
+{meta: x_source classic-country}
+{meta: x_source_file bobsaiditawandcalleditwesternswinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was raised on western [C]swing 
@@ -28,3 +31,6 @@ Bob's [C]no longer with us [G]but he'll always be the [E7]king
 {start_of_verse: Verse 4}
 Yeah [A7]Bob said aw and [D7]called it western [G]swing
 {end_of_verse}
+
+
+

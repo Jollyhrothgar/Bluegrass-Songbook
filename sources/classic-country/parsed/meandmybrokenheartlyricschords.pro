@@ -1,6 +1,9 @@
 {meta: title Me And My Broken Heart}
 {meta: artist Carl Smith}
 {meta: composer Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file meandmybrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]We were waiting at the [C]church 
@@ -29,3 +32,6 @@ As I felt the teardrops [G7]start
 But as [F]the organ played we stood there and [C]prayed 
 Just [G7]me and my broken [C]heart
 {end_of_verse}
+
+
+

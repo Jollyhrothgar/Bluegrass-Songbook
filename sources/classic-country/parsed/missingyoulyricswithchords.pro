@@ -1,6 +1,9 @@
 {meta: title Missing You}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo and Al Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file missingyoulyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It hurts to [D7]be alone [E7]every day that [F]you've been gone
@@ -27,3 +30,6 @@ I [C]can't let go oh [G7]don't you know I'm [C]missing you[G7]
 I [C]need you so oh [G7]don't you know I'm [C]missing you [D7]
 [C]Missing you  [D7]    [C]missing you[D7]    [C]
 {end_of_verse}
+
+
+

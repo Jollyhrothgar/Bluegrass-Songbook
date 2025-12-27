@@ -1,6 +1,9 @@
 {meta: title I've Got Jesus On My Side}
 {meta: artist Statler Brother}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotJesusonmysidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [G7]have [C]been (I have been) a weary [F]pilgrim (weary pilgrim)
@@ -34,3 +37,7 @@ Cause I've got [C]Jesus (I've got Jesus) [G7]on my [C]side ([F]on my [C]side)
 [G7]And all is [C]well (all is well) and all's [F]forgiven (all's forgiven)
 I've got [C]Jesus [G7]on my [C]side 
 {end_of_verse}
+
+
+
+

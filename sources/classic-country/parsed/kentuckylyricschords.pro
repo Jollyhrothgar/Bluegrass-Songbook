@@ -1,6 +1,9 @@
 {meta: title Kentucky}
 {meta: artist The Everly Brothers}
 {meta: composer Karl Davis}
+{meta: x_source classic-country}
+{meta: x_source_file kentuckylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Kentucky  you are the dearest land outside of heaven to [D7]me
@@ -16,3 +19,4 @@ I know that  my mother dad and sweetheart are waiting for [D7]me
 Kentucky  I will be coming [G]soon
 Kentucky 
 {end_of_verse}
+

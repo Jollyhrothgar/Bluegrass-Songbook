@@ -1,6 +1,9 @@
 {meta: title Across the Sea Blues}
 {meta: artist Longview}
 {meta: composer Jimmy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file acrosstheseablueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m going across the deep blue [C]sea
@@ -50,3 +53,9 @@
 [G]I’m all alone so sad and [C]blue
 [G]My every [D7]thought is just of [G]you
 {end_of_verse}
+
+
+
+
+
+

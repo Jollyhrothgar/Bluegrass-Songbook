@@ -1,6 +1,9 @@
 {meta: title L A International Airport}
 {meta: artist Susan Raye}
 {meta: composer Leanne Scott}
+{meta: x_source classic-country}
+{meta: x_source_file lainternationalairportlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Standing in that silent hall waiting for that final call
@@ -76,3 +79,17 @@ Assuring me I'm flying friendly [C]skies
 The cab arrives he blows his horn I stumble out in the early morn
 Tell him of a place I've got to [G7]go
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

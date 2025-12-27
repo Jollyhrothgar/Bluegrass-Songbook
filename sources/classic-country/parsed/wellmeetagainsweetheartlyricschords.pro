@@ -1,5 +1,8 @@
 {meta: title We'll Meet Again Sweetheart}
 {meta: artist Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file wellmeetagainsweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The time has come to say [C]goodbye
@@ -42,3 +45,8 @@ We'll [D7]meet and never more to [G]part
 Someday we'll meet again sweet[C]heart
 Don't [D7]cry so please don't break my [G]heart
 {end_of_verse}
+
+
+
+
+

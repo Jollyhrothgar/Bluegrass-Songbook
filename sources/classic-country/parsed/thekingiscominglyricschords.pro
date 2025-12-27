@@ -1,6 +1,9 @@
 {meta: title The King Is Coming}
 {meta: artist The Statler Brothers}
 {meta: composer Bill Gaither, Gloria Gaither, Charley Millhoff}
+{meta: x_source classic-country}
+{meta: x_source_file thekingiscominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I can [G]hear the chariots rumble I can [C]see the marching [A7]throng
@@ -41,3 +44,8 @@ Praise [D7]God He's coming for [G]me
 Praise [D7]God He's coming for [G]me[C]  [G]
 He's [C]com[G]ing He's [C]com[G]ing  
 {end_of_verse}
+
+
+
+
+

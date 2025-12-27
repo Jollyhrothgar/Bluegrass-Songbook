@@ -1,6 +1,9 @@
 {meta: title Beer On A Boat}
 {meta: artist Ashton Shepherd}
 {meta: composer Marvin Green, Thomas Akins, Benjamin Hayslip}
+{meta: x_source classic-country}
+{meta: x_source_file beeronaboatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's [F]gonna be a scorcher of a [G7]day and the water is [C]callin'
@@ -49,3 +52,9 @@ With some [G7]beer on a boat on a [C]Saturday
 Gettin' redder by the minute but we [F]got it made
 With some [G7]beer on a boat on a [C]Saturday
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title In The Shadows Again}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Lee Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file intheshadowsagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say you're completely over him
@@ -40,3 +43,6 @@ If he's [C]completely off your mind
 Let's talk of [D7]when he said goodbye
 And see if you don't start to [G]cry
 {end_of_verse}
+
+
+

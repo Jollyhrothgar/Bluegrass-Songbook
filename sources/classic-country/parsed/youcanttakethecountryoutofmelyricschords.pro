@@ -1,5 +1,8 @@
 {meta: title You Can't Take The Country Out Of Me}
 {meta: artist Alabama}
+{meta: x_source classic-country}
+{meta: x_source_file youcanttakethecountryoutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Well I was [C]raised out in the [F]country
@@ -47,3 +50,9 @@ But you [G7]can't take the country outta [A#7]me
 You can [C]take me [A#7]out of the [F]country
 But you [G7]can't take the country outta [C]me
 {end_of_verse}
+
+
+
+
+
+

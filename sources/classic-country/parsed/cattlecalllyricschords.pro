@@ -1,6 +1,9 @@
 {meta: title Cattle Call}
 {meta: artist Eddy Arnold}
 {meta: composer Tex Owens}
+{meta: x_source classic-country}
+{meta: x_source_file cattlecalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]W-oo  h-oo  w-oo  o-oo  ti  de
@@ -57,3 +60,10 @@ And he [D7]sings with an old western [G7]drawl
 [C]W-oo  h-oo  w-oo  o-oo  ti  de
 [G7]Yod-el  od-el lo  ti  [C]de
 {end_of_verse}
+
+
+
+
+
+
+

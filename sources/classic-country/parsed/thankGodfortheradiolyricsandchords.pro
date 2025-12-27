@@ -1,6 +1,9 @@
 {meta: title Thank God For The Radio}
 {meta: artist Alan Jackson}
 {meta: composer Max D. Barnes and Robert Jones}
+{meta: x_source classic-country}
+{meta: x_source_file thankGodfortheradiolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the wrong end of the highway[Am] 
@@ -41,3 +44,8 @@ Playing [F]all the songs that [G7]mean so much to [C]me and you
 Playing [G7]all the songs that mean so much to [C]me and you
 [G7]Thank God for the [C]radio
 {end_of_verse}
+
+
+
+
+

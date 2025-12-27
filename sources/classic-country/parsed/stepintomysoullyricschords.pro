@@ -1,6 +1,9 @@
 {meta: title Step Into My Soul}
 {meta: artist Bobby Helms}
 {meta: composer Johnny Paycheck and Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file stepintomysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you could step into my soul 
@@ -30,3 +33,5 @@ We [C7]long for just a [F]smile
 Yes I'm what you could [E7]turn in[A7]to
 If you [Dm]let your [G7]memory run [C]wild
 {end_of_verse}
+
+

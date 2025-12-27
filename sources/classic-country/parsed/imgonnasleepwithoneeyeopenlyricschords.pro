@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Sleep With One Eye Open}
 {meta: artist Dolly Parton}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnasleepwithoneeyeopenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just found out today the little game you play 
@@ -44,3 +47,8 @@ You been stepping so they say between midnight and [G]day
 So you better sleep with one eye [D7]open from now [G]on
 Well I’m gonna sleep with one eye [D7]open from now [G]on
 {end_of_verse}
+
+
+
+
+

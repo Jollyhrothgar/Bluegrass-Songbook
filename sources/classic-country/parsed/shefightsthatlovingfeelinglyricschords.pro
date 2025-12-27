@@ -1,6 +1,9 @@
 {meta: title She Fights That Loving Feeling}
 {meta: artist Faron Young}
 {meta: composer Jack Adams}
+{meta: x_source classic-country}
+{meta: x_source_file shefightsthatlovingfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She is filled with mixed emotions
@@ -39,3 +42,7 @@ Until I can love the fight right out of [C]her
 And [F]she fights that loving [G7]feeling
 Until I can love the fight right out of [C]her
 {end_of_verse}
+
+
+
+

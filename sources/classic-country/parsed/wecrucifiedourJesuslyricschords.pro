@@ -1,5 +1,8 @@
 {meta: title We Crucified Our Jesus}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file wecrucifiedourJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We crucified our Jesus
@@ -52,3 +55,10 @@ Cause [F]if we're ever [C]gonna change
 {start_of_verse: Verse 7}
 Well let's [G7]change to[C]day
 {end_of_verse}
+
+
+
+
+
+
+

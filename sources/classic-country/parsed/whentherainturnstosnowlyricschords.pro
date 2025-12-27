@@ -1,6 +1,9 @@
 {meta: title When The Rain Turns To Snow}
 {meta: artist Lee Greenwood}
 {meta: composer Ed Penney and Steve Chappell}
+{meta: x_source classic-country}
+{meta: x_source_file whentherainturnstosnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Looking out the [Am]window
@@ -51,3 +54,8 @@ I'll be [D7]home on Christmas [G]day
 When the [Am]rain turns to [D7]snow [Am]
 I'll be [D7]home on Christmas [G]day[Am]   [G]
 {end_of_verse}
+
+
+
+
+

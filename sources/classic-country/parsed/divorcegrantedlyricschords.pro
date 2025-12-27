@@ -1,6 +1,9 @@
 {meta: title Divorce Granted}
 {meta: artist Ernest Tubb}
 {meta: composer Charles E. Tebbetts and Dave Washington}
+{meta: x_source classic-country}
+{meta: x_source_file divorcegrantedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a court room all crowed with [D7]strangers there
@@ -29,3 +32,6 @@ What God joined together the judge broke [G]apart
 Divorce granted and [D7]you are free
 But you made a slave of [G]me
 {end_of_verse}
+
+
+

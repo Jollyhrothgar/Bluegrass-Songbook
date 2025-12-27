@@ -1,6 +1,9 @@
 {meta: title Down At The Corner Bar}
 {meta: artist Tony Booth}
 {meta: composer Carl Barney and Tony Booth}
+{meta: x_source classic-country}
+{meta: x_source_file downatthecornerbarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down at the corner bar you'll [D7]find me
@@ -40,3 +43,8 @@ And [C]like as not I'll find her in the [D7]arms of some ol' drunk
 {start_of_verse: Verse 5}
 [G7]Yeah I'll find her at the corner [C]bar
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Last Thing I Planned To Do Today Was Cheat}
 {meta: artist Gene Watson}
 {meta: composer Lola Jean Dillon and Bobby Harden}
+{meta: x_source classic-country}
+{meta: x_source_file thelastthingiplannedtodotodaywascheatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I fed an old stray dog this morning cause [C]he looked hungry
@@ -30,3 +33,6 @@ I [G]thought of your sweet love and all my good [C]intentions
 Oh the [G]last thing I planned to [D7]do today was [G]cheat [C]
 Oh the [G]last thing I planned to [D7]do today was [C]che[G]at
 {end_of_verse}
+
+
+

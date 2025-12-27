@@ -1,6 +1,9 @@
 {meta: title Sing Me A Love Song To Baby}
 {meta: artist Billy Walker}
 {meta: composer Gene Dobbins, Benny Whitehead}
+{meta: x_source classic-country}
+{meta: x_source_file singmealovesongtobabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sing me a love song to [F]baby
@@ -31,3 +34,7 @@ Sing me a love song to [F]baby
 [C]And tell her I can’t [G7]stand to be [C]apart
 Yes tell her I can’t [G7]stand to be [C]apart
 {end_of_verse}
+
+
+
+

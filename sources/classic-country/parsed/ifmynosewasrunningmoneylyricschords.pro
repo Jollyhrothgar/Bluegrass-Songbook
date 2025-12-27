@@ -1,6 +1,9 @@
 {meta: title If My Nose Was Running Money}
 {meta: artist Mike Snider}
 {meta: composer Mike Carr and Mike Hammonds}
+{meta: x_source classic-country}
+{meta: x_source_file ifmynosewasrunningmoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say that I don't love you you say [F]my love is [C]untrue
@@ -41,3 +44,8 @@ I'd [C]buy you a Cadillac and a [F]new Mercedes [C]too
 If my nose was running money [G7]I'd blow it all on [C]you
 If my nose was running money honey [G7]I'd blow it all on [C]you
 {end_of_verse}
+
+
+
+
+

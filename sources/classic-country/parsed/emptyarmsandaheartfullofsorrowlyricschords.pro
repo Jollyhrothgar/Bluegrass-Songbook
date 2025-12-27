@@ -1,6 +1,9 @@
 {meta: title Empty Arms And A Heart Full Of Sorrow}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Wally Fowler and Graydon Hall}
+{meta: x_source classic-country}
+{meta: x_source_file emptyarmsandaheartfullofsorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With empty arms a [F]heart full of [C]sorrow
@@ -36,3 +39,7 @@
 [C]Alone [F]where we were once [C]together
 [G7]And I wonder where you are [C]tonight
 {end_of_verse}
+
+
+
+

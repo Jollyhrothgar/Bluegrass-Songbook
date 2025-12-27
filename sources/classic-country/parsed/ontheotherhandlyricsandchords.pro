@@ -1,5 +1,8 @@
 {meta: title On The Other Hand}
 {meta: artist Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file ontheotherhandlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The hand I'm holding [D7]is warm to my [G]touch
@@ -25,3 +28,6 @@ So [D7]I'll hold the hand and [C]hide the band
 [G]And our love [D7]will go on for[G]ever
 [C](Forever) and [G]ever
 {end_of_verse}
+
+
+

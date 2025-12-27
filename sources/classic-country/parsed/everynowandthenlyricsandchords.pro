@@ -1,6 +1,9 @@
 {meta: title Every Now And Then}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Shayne Dolan and Rock Killough}
+{meta: x_source classic-country}
+{meta: x_source_file everynowandthenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When we needed help the [G7]most we found each [C]other
@@ -41,3 +44,8 @@ And loved each other [G7]every now and [C]then
 [Am]We have [C]held each other [Em]time and time [F]again
 And loved each other [G7]every now and [C]then
 {end_of_verse}
+
+
+
+
+

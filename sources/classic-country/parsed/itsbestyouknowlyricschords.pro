@@ -1,6 +1,9 @@
 {meta: title It's Best You Know}
 {meta: artist George Morgan}
 {meta: composer Danny Dill}
+{meta: x_source classic-country}
+{meta: x_source_file itsbestyouknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You might never find that [C7]I have been [F]unfaithful to [C]you
@@ -28,3 +31,6 @@
 [G7]And if I lose it's best you [C]know
 [G7]And if I lose it's best you [C]know
 {end_of_verse}
+
+
+

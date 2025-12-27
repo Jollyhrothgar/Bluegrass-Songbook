@@ -1,6 +1,9 @@
 {meta: title Tell My Baby I Love Her}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Horton and Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file tellmybabyiloveherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I said my baby was a-doin' me wrong
@@ -48,3 +51,8 @@ I'm goin' back home where I belong
 Just to tell my baby [G7]I love [C]her
 To tell my baby [G7]I love [C]her
 {end_of_verse}
+
+
+
+
+

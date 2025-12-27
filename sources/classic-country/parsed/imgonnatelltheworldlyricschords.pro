@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Tell The World}
 {meta: artist Johnny Paycheck}
 {meta: composer Country Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnatelltheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m gonna tell all the world why I have a happy [C]smile
@@ -29,3 +32,6 @@
 [G]Oh what a change what a change I made that [C]day
 [G]I let Him [D7]wash  my sins [G]away
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title A Little Left Over}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file alittleleftoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I work my fingers to the bone 
@@ -39,3 +42,6 @@ Till I do I'll tell you all I [G7]need
 {start_of_verse: Verse 3}
 Got a little left over and it's [G7]Saturday [C]night
 {end_of_verse}
+
+
+

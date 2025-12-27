@@ -1,5 +1,8 @@
 {meta: title My Texas Bluebonnet Queen}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file mytexasbluebonnetqueenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the western sun is sinking and the [F]moon creeps through the [C]sky
@@ -30,3 +33,6 @@
 [F]Like a prairie flower to me
 [C]And you'll never fade my [G7]Texas blue bonnet [C]queen
 {end_of_verse}
+
+
+

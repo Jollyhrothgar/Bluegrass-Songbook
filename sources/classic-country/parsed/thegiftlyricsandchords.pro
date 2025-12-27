@@ -1,6 +1,9 @@
 {meta: title The Gift}
 {meta: artist Randy Travis}
 {meta: composer Phillip Moore and Ray Scott}
+{meta: x_source classic-country}
+{meta: x_source_file thegiftlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was born in [F]Bethlehem they [C]say [F]
@@ -45,3 +48,9 @@ He [C]had the [Dm]birthday [G7]we got the [Am]gift
 {start_of_verse: Verse 6}
 [F]On our Savior's [Dm]birthday  [G7]we got the [C]gift[F]  [C]
 {end_of_verse}
+
+
+
+
+
+

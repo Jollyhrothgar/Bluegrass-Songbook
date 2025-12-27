@@ -1,5 +1,8 @@
 {meta: title Baby Don't Go}
 {meta: artist Marvin Rainwater}
+{meta: x_source classic-country}
+{meta: x_source_file babydontgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby oh baby you [D7]know I [C]love you [G]so
@@ -41,3 +44,7 @@ Baby oh baby [D7]baby [C]please don't [G]go
 [D7]Baby [C]please don't [G]go
 [C]Ah-ah ah-[G]ha
 {end_of_verse}
+
+
+
+

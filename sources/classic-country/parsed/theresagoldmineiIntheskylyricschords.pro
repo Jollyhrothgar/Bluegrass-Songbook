@@ -1,6 +1,9 @@
 {meta: title There's A Gold Mine In The Sky}
 {meta: artist Gene Autry}
 {meta: composer Nick Kenny and Charles Kenny}
+{meta: x_source classic-country}
+{meta: x_source_file theresagoldmineiIntheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a Gold mine in the sky [C7]far a[F]way
@@ -23,3 +26,5 @@ We will find that long lost gold [D7]mine some sweet [G7]day
 And we'll [C]say hello to friends [C7]who said good[F]bye
 When we [C]find that long lost [G7]gold mine in the [C]sky
 {end_of_verse}
+
+

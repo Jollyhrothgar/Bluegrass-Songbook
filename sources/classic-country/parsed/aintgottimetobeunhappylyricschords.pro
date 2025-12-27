@@ -1,6 +1,9 @@
 {meta: title Ain't Got Time To Be Unhappy}
 {meta: artist Bob Luman}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file aintgottimetobeunhappylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The rich man's eatin' with a golden spoon
@@ -36,3 +39,7 @@ Find a little girl that just digs [G7]you
 Live on [C]love let [F]the world [C]be
 Then you can sing my [G7]little song with [C]meRepeat #2 x2
 {end_of_verse}
+
+
+
+

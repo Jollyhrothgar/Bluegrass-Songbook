@@ -1,6 +1,9 @@
 {meta: title He's The Man}
 {meta: artist Wanda Jackson}
 {meta: composer Wendell Goodman and Walter Schutz}
+{meta: x_source classic-country}
+{meta: x_source_file hesthemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([G]He's the Man who can [D7]set you [G]free)
@@ -45,3 +48,9 @@ He's the [G]Man that [D7]holds eterni[G]ty
 {start_of_verse: Verse 6}
 He's the Man that [D7]holds eterni[G]ty
 {end_of_verse}
+
+
+
+
+
+

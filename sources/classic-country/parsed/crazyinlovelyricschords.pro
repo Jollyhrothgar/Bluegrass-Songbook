@@ -1,6 +1,9 @@
 {meta: title Crazy In Love}
 {meta: artist Conway Twitty}
 {meta: composer Randy McCormick and Even Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file crazyinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't it [Dm]funny how time
@@ -44,3 +47,7 @@ We were crazy in [C]love  [Am]
 Crazy in [C]love [Am]
 Crazy in [C]love [Am]     [C]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Last Supper}
 {meta: artist Jimmie Davis}
 {meta: composer Jimmie Davis and Bill Harmon}
+{meta: x_source classic-country}
+{meta: x_source_file thelastsupperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hosanna Hosanna[C]  [D7]
@@ -47,3 +50,9 @@ Hosanna Hosanna
 Hosanna Hosanna
 [A7]Making heaven [D7]ring
 {end_of_verse}
+
+
+
+
+
+

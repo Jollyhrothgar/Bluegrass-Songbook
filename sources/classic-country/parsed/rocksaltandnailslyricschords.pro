@@ -1,6 +1,9 @@
 {meta: title Rock Salt And Nails}
 {meta: artist J.D. Crowe & the New South}
 {meta: composer Bruce Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file rocksaltandnailslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On the banks of the river  [C]where the willows hang [G]down
@@ -29,3 +32,6 @@ I'd lie there for [Em]hours  [C]in the chilly cold [G]marshes
 If the ladies were [Em]squirrels  [C]with a high bushy [G]tail
 I'd fill up my [C]shotgun  with a rock salt and [G]nails
 {end_of_verse}
+
+
+

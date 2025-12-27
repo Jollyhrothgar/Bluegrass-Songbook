@@ -1,6 +1,9 @@
 {meta: title Lonely Man}
 {meta: artist Elvis Presley}
 {meta: composer Bennie Benjamin and Sol Marcus}
+{meta: x_source classic-country}
+{meta: x_source_file lonelymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a lonely man [F]who wanders [G7]all a[C]round
@@ -21,3 +24,5 @@ Here I [G7]am come meet a lonely lonely [C]man
 Here I [G7]am come meet a lonely lonely [C]man
 Here I [G7]am come meet a lonely lonely [C]man
 {end_of_verse}
+
+

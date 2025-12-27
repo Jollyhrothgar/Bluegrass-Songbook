@@ -1,6 +1,9 @@
 {meta: title Once In A Blue Moon}
 {meta: artist Earl Thomas Conley}
 {meta: composer Tommy Brasfield and Robert Byrne}
+{meta: x_source classic-country}
+{meta: x_source_file onceinabluemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nine times out of [Em]ten she's [Am]right when I am [C]wrong
@@ -29,3 +32,6 @@
 {start_of_verse: Verse 4}
 Repeat #2
 {end_of_verse}
+
+
+

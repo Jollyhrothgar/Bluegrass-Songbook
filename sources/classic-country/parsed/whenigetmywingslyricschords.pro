@@ -1,5 +1,8 @@
 {meta: title When I Get My Wings}
 {meta: artist Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file whenigetmywingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Been a whole lot of people thought me a [F]fool
@@ -23,3 +26,5 @@ Gonna reach a new [C]heaven higher than [F]high
 When I get my [C]wings [G7]I'm gonna [C]fly high high
 Gonna fly away [F]singin' 
 {end_of_verse}
+
+

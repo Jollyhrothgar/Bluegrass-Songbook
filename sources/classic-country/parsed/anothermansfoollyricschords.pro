@@ -1,6 +1,9 @@
 {meta: title Another Man's Fool}
 {meta: artist Waylon Jennings}
 {meta: composer John Ullrich}
+{meta: x_source classic-country}
+{meta: x_source_file anothermansfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't sing them songs about the open road
@@ -57,3 +60,13 @@ Don't bother coming home if you can't bring me mine
 [C]You're just another man's [G]fool
 [C]Just another man's [G]fool
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

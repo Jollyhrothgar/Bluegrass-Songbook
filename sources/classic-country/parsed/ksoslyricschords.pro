@@ -1,6 +1,9 @@
 {meta: title K-S-O-S}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley and Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file ksoslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come gather round me boys and lend an [F]ear
@@ -24,3 +27,5 @@
 [F]A voice in the [C]wilderness
 [G7]And we're here to stay [C]K-S-O-S
 {end_of_verse}
+
+

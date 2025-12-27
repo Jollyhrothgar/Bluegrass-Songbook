@@ -1,6 +1,9 @@
 {meta: title I Just Want To Dance With You}
 {meta: artist George Strait}
 {meta: composer John Prine and Roger Cook}
+{meta: x_source classic-country}
+{meta: x_source_file ijustwanttodancewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don’t want to be the kind to hesitate  
@@ -47,3 +50,9 @@ Then I just want to dance with [C]you  [C7]
 {start_of_verse: Verse 6}
 [G7]I just want to dance with [C]you
 {end_of_verse}
+
+
+
+
+
+

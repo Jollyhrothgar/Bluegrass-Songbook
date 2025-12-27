@@ -1,6 +1,9 @@
 {meta: title Bo Diddley}
 {meta: artist Buddy Holly}
 {meta: composer Ellas McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file bodiddleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bo Diddley buy baby a diamond ring[C]   [G]
@@ -28,3 +31,6 @@ To make a pretty baby a [C]Sunday [G]coat
 Bo Diddley Bo Diddley have you heard[C]   [G]
 My pretty baby says she [C]wants a [G]bird
 {end_of_verse}
+
+
+

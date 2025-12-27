@@ -1,6 +1,9 @@
 {meta: title Four in the Morning}
 {meta: artist Faron Young}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file fourinthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's four in the [Em]mornin' and once [G]more the [Em]dawnin'
@@ -52,3 +55,11 @@ Last night we broke up this mornin' I woke up
 [C]And it's four in [D7]the mornin' and [G]once more the [Em]dawnin'
 [C]Just woke up [D7]the wanting in [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+

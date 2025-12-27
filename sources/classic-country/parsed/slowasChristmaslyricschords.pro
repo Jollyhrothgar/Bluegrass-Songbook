@@ -1,6 +1,9 @@
 {meta: title Slow As Christmas}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file slowasChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're as slow as [G]Christmas I was [C]up be[D7]fore the [G]dawn
@@ -36,3 +39,7 @@ And [C]I'm more con[G]vinced it does until [C]that one December [G]day
 Every Christmas [G]Day makes [C]every other day seem [G]long
 What [C]seemed would [G]never get here has [C]so quickly come and [G]gone
 {end_of_verse}
+
+
+
+

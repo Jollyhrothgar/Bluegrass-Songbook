@@ -1,6 +1,9 @@
 {meta: title Watching The River Run}
 {meta: artist Anne Murray}
 {meta: composer Kenny Loggins and Jim Messina}
+{meta: x_source classic-country}
+{meta: x_source_file watchingtheriverrunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you've been thinking you're [C]all that you've got
@@ -35,3 +38,7 @@ And we have [C]just [D7]begun  [G]watching the [F]river [Em]run
 {start_of_verse: Verse 5}
 [F]Run river [Em]run  [D7]run river [G]run
 {end_of_verse}
+
+
+
+

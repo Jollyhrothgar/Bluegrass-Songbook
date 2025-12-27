@@ -1,6 +1,9 @@
 {meta: title Write Me A Picture}
 {meta: artist George Hamilton IV}
 {meta: composer Vance Bulla}
+{meta: x_source classic-country}
+{meta: x_source_file writemeapicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Write me a picture of the things we used to do
@@ -37,3 +40,7 @@ A [G]word from you is worth a thousand pictures of your love
 {start_of_verse: Verse 4}
 [D7]Write me a picture of your [G]love
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That's The Man I'm Looking For}
 {meta: artist Roy Acuff}
 {meta: composer Dickey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file thatsthemanimlookingforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you see a man in sandals [C]please send Him down my [G]way
@@ -33,3 +36,7 @@ Then [C]send Him on to [G]me cause that's the [D7]man I'm looking [G]for
 {start_of_verse: Verse 4}
 Just [C]send Him on to [G]me cause that's the [D7]man I'm looking [G]for
 {end_of_verse}
+
+
+
+

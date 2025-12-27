@@ -1,5 +1,8 @@
 {meta: title The New Wears Off Too Fast}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file thenewwearsofftoofastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To someone new you're about to go 
@@ -56,3 +59,10 @@ Was just as cheap as [G7]brass
 I knew his love would soon grow old 
 Cause the new wears off to [C]fast 
 {end_of_verse}
+
+
+
+
+
+
+

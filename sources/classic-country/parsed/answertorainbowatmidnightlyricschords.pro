@@ -1,6 +1,9 @@
 {meta: title Answer To Rainbow At Midnight}
 {meta: artist Ernest Tubb}
 {meta: composer Warren Michael Defever}
+{meta: x_source classic-country}
+{meta: x_source_file answertorainbowatmidnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw a rainbow at [C]midnight
@@ -36,3 +39,7 @@
 [G]Yet somehow each night I keep [C]searching
 [G]For a rainbow I’ll [D7]never see [G]again
 {end_of_verse}
+
+
+
+

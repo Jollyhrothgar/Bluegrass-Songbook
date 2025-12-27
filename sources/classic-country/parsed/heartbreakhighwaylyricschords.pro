@@ -1,6 +1,9 @@
 {meta: title Heartbreak Highway}
 {meta: artist Keith Whitley}
 {meta: composer Don Pfrimmer, Lonnie Wilson, Brent Mason}
+{meta: x_source classic-country}
+{meta: x_source_file heartbreakhighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Arms were hot and sweaty hope my heart is ready
@@ -46,3 +49,8 @@ I just [F]love when [G7]I'm with [C]you
 [F]Heartbreak highway fast lane to the [C]blues
 [F]Heartbreak highway leads me back to [C]you
 {end_of_verse}
+
+
+
+
+

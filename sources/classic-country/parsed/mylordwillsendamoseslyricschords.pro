@@ -1,6 +1,9 @@
 {meta: title My Lord Will Send A Moses}
 {meta: artist The Cathedrals}
 {meta: composer Malcom Jones}
+{meta: x_source classic-country}
+{meta: x_source_file mylordwillsendamoseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My Lord sent Moses down to see king pharaoh
@@ -51,3 +54,10 @@ My Lord will [Am]send a Moses [G7]to lead you [C]out
 {start_of_verse: Verse 6}
 He'll send a [Am]Moses (He'll send a [C]Moses)
 {end_of_verse}
+
+
+
+
+
+
+

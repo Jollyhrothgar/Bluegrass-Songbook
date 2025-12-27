@@ -1,5 +1,8 @@
 {meta: title I Need You Like A Hole In My Head}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file ineedyoulikeaholeinmyheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I need you baby yessi[D7]ree 
@@ -32,3 +35,7 @@ I [G7]need you like a hole in my [C]head
 {start_of_verse: Verse 5}
 I mean it baby I [G7]need you like a hole in my [C]head
 {end_of_verse}
+
+
+
+

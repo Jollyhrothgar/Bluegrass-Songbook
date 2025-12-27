@@ -1,6 +1,9 @@
 {meta: title Yes Ma'am}
 {meta: artist Tommy Overstreet}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file yesmaamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh my baby called me on my down at work phone this [D7]morning
@@ -33,3 +36,7 @@ Oh yes [G7]ma'am and I'm already walking out the door [C]now
 I said yes ma'am I hear what you're saying [D7]saying
 And [G7]don't you do nothing rash cause baby I'm on my [C]way
 {end_of_verse}
+
+
+
+

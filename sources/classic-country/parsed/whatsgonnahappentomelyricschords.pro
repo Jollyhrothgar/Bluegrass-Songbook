@@ -1,6 +1,9 @@
 {meta: title What's Gonna Happen To Me}
 {meta: artist Gene Autry}
 {meta: composer Fred Rose and Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file whatsgonnahappentomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The flower of love came to wither and [G7]die
@@ -34,3 +37,7 @@
 [F]No matter what happens I know you'll get by
 [G7]But what's gonna happen to [C]me
 {end_of_verse}
+
+
+
+

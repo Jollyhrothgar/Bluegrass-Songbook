@@ -1,6 +1,9 @@
 {meta: title Fool Me Again}
 {meta: artist Buck Owens}
 {meta: composer Dusty Rhodes and Rolly Weber}
+{meta: x_source classic-country}
+{meta: x_source_file foolmeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You find the thrill each time you let me [D7]down
@@ -29,3 +32,6 @@
 [C]Yes play the part and I’ll let my heart [G]pretend
 [D7]Come on back and fool me [G]again
 {end_of_verse}
+
+
+

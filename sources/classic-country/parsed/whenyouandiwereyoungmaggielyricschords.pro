@@ -1,6 +1,9 @@
 {meta: title When You And I Were Young Maggie}
 {meta: artist Statler Brothers}
 {meta: composer George W. Johnson and James Austin Butterfield}
+{meta: x_source classic-country}
+{meta: x_source_file whenyouandiwereyoungmaggielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wondered today to [C7]the hill  [F]Maggie
@@ -33,3 +36,7 @@ When [C]you and I [G7]were [C]young
 {start_of_verse: Verse 5}
 [F]When [C]you and I [G7]were [C]young 
 {end_of_verse}
+
+
+
+

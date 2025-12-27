@@ -1,6 +1,9 @@
 {meta: title Bridge To Memory Lane}
 {meta: artist Tony Booth}
 {meta: composer Kent Westberry and Eddie Burton}
+{meta: x_source classic-country}
+{meta: x_source_file bridgetomemorylanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I burned the bridge to memory [Dm]lane[F]
@@ -40,3 +43,8 @@ Last [F]night I burned the [G7]bridge to memory [C]lane
 {start_of_verse: Verse 5}
 Last [F]night I burned the [G7]bridge to memory [C]lane[G7]   [C]
 {end_of_verse}
+
+
+
+
+

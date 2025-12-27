@@ -1,6 +1,9 @@
 {meta: title In The Garden By The Fountain}
 {meta: artist Rhonda Vincent}
 {meta: composer Roger Brown}
+{meta: x_source classic-country}
+{meta: x_source_file inthegardenbythefountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everything I [C]ever wanted
@@ -56,3 +59,9 @@ Near the weeping [D7]willow tree
 [G]By the ivy [C]covered arbor
 [G]My one and true love [D7]waits for [G]me
 {end_of_verse}
+
+
+
+
+
+

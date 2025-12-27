@@ -1,6 +1,9 @@
 {meta: title Air That I Breathe}
 {meta: artist Hank Williams Jr.}
 {meta: composer Albert Hammond and Mike Hazlewood}
+{meta: x_source classic-country}
+{meta: x_source_file airthatibreathelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I could make a wish I [B7]think I'd pass
@@ -35,3 +38,7 @@ All I need is the [D7]air that I breath[C]e
 All I need is the [D7]air that I breathe and just to [G]love you
 All that I need is the [D7]air that I breath[C]e [G]
 {end_of_verse}
+
+
+
+

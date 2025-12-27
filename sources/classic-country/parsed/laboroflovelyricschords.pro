@@ -1,6 +1,9 @@
 {meta: title Labor Of Love}
 {meta: artist Bob Luman}
 {meta: composer Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file laboroflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a labor of [Dm]love  [G7]created by the [C]Lord above[A7]
@@ -48,3 +51,9 @@ It comes so [Dm]naturally [G7]  it is so [F]beautiful to [C]see
 It's a labor of [Dm]love  [G7]created by the [C]Lord above[A7]
 Makes life worth [Dm]living  [G7]the labor of [F]love[C]
 {end_of_verse}
+
+
+
+
+
+

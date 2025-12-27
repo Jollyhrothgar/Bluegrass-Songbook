@@ -1,6 +1,9 @@
 {meta: title Sunny Nights}
 {meta: artist Ferlin Husky}
 {meta: composer Fred Carter}
+{meta: x_source classic-country}
+{meta: x_source_file sunnynightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a gonna be some sunny [C]nights
@@ -57,3 +60,10 @@ Cause the sun's a gonna shine [D7]tonight
 [G]Love's gonna make everything all [C]right
 And I'm a gonna have some sunny [G][D7]nights
 {end_of_verse}
+
+
+
+
+
+
+

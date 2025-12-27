@@ -1,6 +1,9 @@
 {meta: title Have I Got A Deal For You}
 {meta: artist Reba McEntire}
 {meta: composer Michael Heeney and Jackson Leap}
+{meta: x_source classic-country}
+{meta: x_source_file haveigotadealforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you look like the kind who's got an [C]eye for a bargain
@@ -37,3 +40,7 @@ Have [D7]I got a deal for [G]you
 Well sure I'll admit that it's been [C]used a time or [Am]two
 But have [D7]I got a deal for [G]you
 {end_of_verse}
+
+
+
+

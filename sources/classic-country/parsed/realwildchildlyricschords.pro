@@ -1,6 +1,9 @@
 {meta: title Real Wild Child}
 {meta: artist Buddy Holly}
 {meta: composer John Vincent Greenan, Johnny O'Keefe}
+{meta: x_source classic-country}
+{meta: x_source_file realwildchildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm just out of school
@@ -34,3 +37,6 @@ Cause I'm a [C]wild one ooh yay I'm a [G]wild one
 Gonna [D7]break loose gonna [C]keep a-movin' wild
 Gonna [G]keep a-swingin' baby I'm a [D7]real wild child
 {end_of_verse}
+
+
+

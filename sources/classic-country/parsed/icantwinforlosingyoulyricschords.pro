@@ -1,6 +1,9 @@
 {meta: title I Can't Win For Losing You}
 {meta: artist Earl Thomas Conley}
 {meta: composer Robert Byrne and Rick Bowles}
+{meta: x_source classic-country}
+{meta: x_source_file icantwinforlosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey how you been it's good to see you again[G7]
@@ -50,3 +53,9 @@ And the grass ain't no [C]greener
 [Em]I might win a [Am]heart or two 
 [D7]But I can't win for [C]losing [G]you[D7]
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Rambling Heart}
 {meta: artist Jim Reeves}
 {meta: composer Don Grashey and Jim Amadeo}
+{meta: x_source classic-country}
+{meta: x_source_file myramblingheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I may be a drifter who wandered from the start
@@ -43,3 +46,8 @@ I met the true I've met the blue I've met the gay and [C]sad
 I know the fears I've seen the tears that untrue hearts can [F]bring
 I saw the [C]joy of girl and boy when [G7]true love makes them [Am]sing
 {end_of_verse}
+
+
+
+
+

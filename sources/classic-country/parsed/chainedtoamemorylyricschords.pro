@@ -1,6 +1,9 @@
 {meta: title Chained to a Memory}
 {meta: artist Eddy Arnold}
 {meta: composer Jenny Lou Carson}
+{meta: x_source classic-country}
+{meta: x_source_file chainedtoamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Makes no [C]difference if we two [C7]are far apart [F]dear
@@ -29,3 +32,6 @@ Cause you're gone and there is nothing I can [G7]do
 All my [C]dreams and precious hopes of [C7]yesterday have [F]died
 Yet I'm [G7]chained to a memory of [C]you
 {end_of_verse}
+
+
+

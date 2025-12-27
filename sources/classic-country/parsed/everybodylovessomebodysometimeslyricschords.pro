@@ -1,6 +1,9 @@
 {meta: title Everybody Loves Somebody Sometimes}
 {meta: artist Dean Martin}
 {meta: composer Irving Taylor and Ken Lane}
+{meta: x_source classic-country}
+{meta: x_source_file everybodylovessomebodysometimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody [E7]loves somebody [F]sometime
@@ -43,3 +46,8 @@
 [C]Your love made it well [Em]worth [F]waiting
 [G7]For someone like [C]you
 {end_of_verse}
+
+
+
+
+

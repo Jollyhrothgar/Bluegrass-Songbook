@@ -1,5 +1,8 @@
 {meta: title Waitin' For Dawn Till Dawn}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file waitinfordawntilldawnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was young and [C]foolish and [G]always on the [D7]go
@@ -29,3 +32,6 @@ It [G]must be time for [C]reapin' the [G]wild seeds that I've [D7]sown
 At [C]three A.M. I'm [G]weeping as I [D7]wait for Dawn till [G]dawn
 Yes at [C]three A.M. I'm [G]weepin' as I [D7]wait for Dawn till [G]dawn
 {end_of_verse}
+
+
+

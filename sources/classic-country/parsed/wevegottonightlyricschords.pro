@@ -1,6 +1,9 @@
 {meta: title We've Got Tonight}
 {meta: artist Kenny Rogers and Sheena Easton}
 {meta: composer Bob Seger}
+{meta: x_source classic-country}
+{meta: x_source_file wevegottonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I know it's [G]late  [D7]I know your [C]weary [D7]
@@ -44,3 +47,8 @@ Turn out the [G]lights  [C]come take my [G]hand now [C]
 We've got to[G]night babe  [C]why don't we [G]stay [C]
 We've got to[G]night babe  [C]why don't we [G]stay
 {end_of_verse}
+
+
+
+
+

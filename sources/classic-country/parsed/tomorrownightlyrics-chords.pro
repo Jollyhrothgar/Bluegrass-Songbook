@@ -1,6 +1,9 @@
 {meta: title Tomorrow Night}
 {meta: artist Charlie Rich}
 {meta: composer Sam Coslow and Will Grosz}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrownightlyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Tomorrow [C]night  [G7]    [C]
@@ -36,3 +39,7 @@ Tomorrow [D7]night
 Will you [G7]say those lovely things you said [C]tonight 
 Tomorrow night 
 {end_of_verse}
+
+
+
+

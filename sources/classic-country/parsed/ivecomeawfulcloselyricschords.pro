@@ -1,6 +1,9 @@
 {meta: title I've Come Awful Close}
 {meta: artist Hank Thompson}
 {meta: composer Ann J. Morton}
+{meta: x_source classic-country}
+{meta: x_source_file ivecomeawfulcloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well never once have I cheated on my [F]baby
@@ -41,3 +44,8 @@ I've come awful [F]close nearly [G7]almost
 I got right next to it but I couldn't do it 
 Heaven knows I've come awful [C]close
 {end_of_verse}
+
+
+
+
+

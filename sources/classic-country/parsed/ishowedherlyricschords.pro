@@ -1,6 +1,9 @@
 {meta: title I Showed Her}
 {meta: artist Alabama}
 {meta: composer Teddy Gentry, Greg Fowler, Walt Aldridge}
+{meta: x_source classic-country}
+{meta: x_source_file ishowedherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She told me I should straighten up my [F]ways or [G7]she'd be walkin' [C]out [G]  [F]  [C]  [G]
@@ -42,3 +45,8 @@ If I could I [F]show her how [G7]much she had to lose
 I'd [Em]show her [A7]I've been hurtin' too
 If I could [Dm]hold her now [G7]  I'd really [F]show [C]her
 {end_of_verse}
+
+
+
+
+

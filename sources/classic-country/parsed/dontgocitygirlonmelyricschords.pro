@@ -1,6 +1,9 @@
 {meta: title Don't Go City Girl On Me}
 {meta: artist Tommy Overstreet}
 {meta: composer Mike Kosser and Rafe VanHoy}
+{meta: x_source classic-country}
+{meta: x_source_file dontgocitygirlonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With your blouse halfway open 
@@ -31,3 +34,5 @@ Is worth more than all them uptown [F]lights
 I love you [G7]woman of the coun-[F]try so don't go city girl on [C]me
 I love you [G7]woman of the country so don't go city girl on [C]me
 {end_of_verse}
+
+

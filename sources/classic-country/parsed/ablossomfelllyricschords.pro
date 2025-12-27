@@ -1,6 +1,9 @@
 {meta: title A Blossom Fell}
 {meta: artist Hank Thompson}
 {meta: composer Howard Barnes, Harry Fields, Joseph Roncoroni}
+{meta: x_source classic-country}
+{meta: x_source_file ablossomfelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A blossom [Am]fell from [C]off a [Dm]tree
@@ -37,3 +40,7 @@ The night a blossom [G]fell and touched two lips that [C]lied
 {start_of_verse: Verse 5}
 [D7]The night a blossom [G]fell and [D7]touched two [G]lips that [C]lied[Dm]   [G]  [C]
 {end_of_verse}
+
+
+
+

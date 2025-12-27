@@ -1,6 +1,9 @@
 {meta: title Don’t Cry to Me}
 {meta: artist Jimmy Martin}
 {meta: composer Jimmy Martin and Paul Williams}
+{meta: x_source classic-country}
+{meta: x_source_file dontcrytomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just [G7]cry now lonesome heart 
@@ -48,3 +51,9 @@ So don’t beg for sympathy
 Just [G7]cry now lonesome heart
 But [F]don’t cry to [C]me
 {end_of_verse}
+
+
+
+
+
+

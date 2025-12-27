@@ -1,5 +1,8 @@
 {meta: title Sweet Chile}
 {meta: artist Sheb Wooley}
+{meta: x_source classic-country}
+{meta: x_source_file sweetchilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Down by the levee where [D7]the riverboats [G]go
@@ -64,3 +67,10 @@ Kids all [D7]dance to rock-n-[G]roll
 [D7]She's much sweeter than cherry pie
 [G]Sweet Chile's getting to be courting size
 {end_of_verse}
+
+
+
+
+
+
+

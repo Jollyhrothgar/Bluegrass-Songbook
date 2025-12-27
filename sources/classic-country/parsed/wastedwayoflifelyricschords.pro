@@ -1,6 +1,9 @@
 {meta: title Wasted Way Of Life}
 {meta: artist Lefty Frizzell}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file wastedwayoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't tempt me if I should pass your [F]door
@@ -31,3 +34,6 @@ Like [F]good friends in the snow
 The tracks I [C]made fade as I go
 Just a [G7]wasted way of life is all I [C]know
 {end_of_verse}
+
+
+

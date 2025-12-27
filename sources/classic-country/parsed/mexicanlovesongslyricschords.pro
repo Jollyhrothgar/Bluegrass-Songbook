@@ -1,6 +1,9 @@
 {meta: title Mexican Love Songs}
 {meta: artist Linda Hargrove}
 {meta: composer Linda Hargrove and Pete Drake}
+{meta: x_source classic-country}
+{meta: x_source_file mexicanlovesongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One night down in San [G7]Antone
@@ -57,3 +60,10 @@ They [G7]played La Paloma the [C]Dove [G7]
 The [C]moment my [F]heart heard the [C]music
 I [G7]knew that the night was made for [C]love
 {end_of_verse}
+
+
+
+
+
+
+

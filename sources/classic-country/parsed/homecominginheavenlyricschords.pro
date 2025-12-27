@@ -1,6 +1,9 @@
 {meta: title Homecoming in Heaven}
 {meta: artist George Jones}
 {meta: composer Willie Nelson, Paul Buskirk, Walt Breeland, Claude Gray}
+{meta: x_source classic-country}
+{meta: x_source_file homecominginheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My years have been many my [F]loved ones are [C]gone
@@ -29,3 +32,6 @@ Take [G7]all of my worldly [C]possessions [G7]away
 Just [C]leave me my Bible a [F]date I must [C]keep
 It's homecoming in [G7]heaven for [C]me
 {end_of_verse}
+
+
+

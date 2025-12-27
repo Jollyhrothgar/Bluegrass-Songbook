@@ -1,5 +1,8 @@
 {meta: title If I’m Not Too Late}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file ifimnottoolatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I walked right out and didn’t [F]say goodbye
@@ -55,3 +58,10 @@ I’ve [C]been about as wrong as [G7]wrong as can be
 But [C]don’t tell me to go [F]catch a freight
 [C]Take me back if I’m [G7]not too [C]late
 {end_of_verse}
+
+
+
+
+
+
+

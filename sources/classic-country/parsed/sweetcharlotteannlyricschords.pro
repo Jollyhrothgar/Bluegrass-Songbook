@@ -1,6 +1,9 @@
 {meta: title Sweet Charlotte Ann}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file sweetcharlotteannlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her first years three to six 
@@ -51,3 +54,9 @@ But the [G7]sweetest part of Charlotte Ann was always saved for [C]me
 {start_of_verse: Verse 7}
 Yeah the [G7]sweetest part was Charlotte's heart she saved it all for [C]me
 {end_of_verse}
+
+
+
+
+
+

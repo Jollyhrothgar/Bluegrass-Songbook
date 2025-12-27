@@ -1,6 +1,9 @@
 {meta: title Who Do You Think They Would Blame}
 {meta: artist Dusty Owens}
 {meta: composer Bill Dee Staten}
+{meta: x_source classic-country}
+{meta: x_source_file whodoyouthinktheywouldblamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I told all your friends how you cheated on me
@@ -29,3 +32,6 @@ Among your [G7]friends I can't be [C]seen
 But if they only knew the truth about you
 Then [G7]who do you think they would [C]blame 
 {end_of_verse}
+
+
+

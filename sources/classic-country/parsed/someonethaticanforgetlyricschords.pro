@@ -1,6 +1,9 @@
 {meta: title Someone That I Can Forget}
 {meta: artist Moe Bandy}
 {meta: composer Linda Ann Hargrove and Pete Drake}
+{meta: x_source classic-country}
+{meta: x_source_file someonethaticanforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I come here tonight to [F]discover 
@@ -33,3 +36,7 @@ But someone [G7]that I can for[C]get
 {start_of_verse: Verse 4}
 Yes I need someone [G7]that I can [F]for[C]get
 {end_of_verse}
+
+
+
+

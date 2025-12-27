@@ -1,6 +1,9 @@
 {meta: title Three's A Crowd}
 {meta: artist Mickey Gilley}
 {meta: composer Bob Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file threesacrowdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love your company but [G7]three's a [C]crowd
@@ -33,3 +36,7 @@ You take his memory [F]each place we go
 But you kissed my lips and [F]spoke his name out loud
 [G7]I love your company but three's a [C]crowd
 {end_of_verse}
+
+
+
+

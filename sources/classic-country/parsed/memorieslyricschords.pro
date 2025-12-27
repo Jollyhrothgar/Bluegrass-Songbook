@@ -1,6 +1,9 @@
 {meta: title Memories}
 {meta: artist Emmylou Harris}
 {meta: composer William M. Dees, Bill Dees, Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file memorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a cold December memories can melt your [Dm]heart away 
@@ -25,3 +28,6 @@ Even in the [Em]darkest night when [F]dreams fade away
 Golden memories can [Em]turn the night [F]into day
 [C]Teach your heart to smile and [Dm]live each day a [G7]while in [C]memories 
 {end_of_verse}
+
+
+

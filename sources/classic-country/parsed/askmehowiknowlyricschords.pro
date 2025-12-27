@@ -1,6 +1,9 @@
 {meta: title Ask Me How I Know}
 {meta: artist Garth Brooks}
 {meta: composer Mitch Rossell}
+{meta: x_source classic-country}
+{meta: x_source_file askmehowiknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're stubborn as they come you'll never settle down
@@ -57,3 +60,9 @@ Ask me how I [C]know
 {start_of_verse: Verse 5}
 [F]Ask me how I [C]know
 {end_of_verse}
+
+
+
+
+
+

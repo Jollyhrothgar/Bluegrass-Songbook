@@ -1,6 +1,9 @@
 {meta: title Don't Our Love Look Natural}
 {meta: artist Keith Whitley}
 {meta: composer Harlan Howard and Don Cook}
+{meta: x_source classic-country}
+{meta: x_source_file dontourlovelooknaturallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We're gathered in this [C]room today to [D7]say our last good[G]byes
@@ -33,3 +36,7 @@ Now [D7]don't our love look natural lying [G]there
 {start_of_verse: Verse 5}
 Yes and [D7]don't our love look natural lying [G]there
 {end_of_verse}
+
+
+
+

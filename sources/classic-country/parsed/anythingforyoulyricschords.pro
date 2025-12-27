@@ -1,5 +1,8 @@
 {meta: title Anything For You}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file anythingforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're lonely tell me 
@@ -33,3 +36,7 @@ Honey [C]I'll do [G7]anything for [C]you
 For [F]you for [G7]you for [C]you for [F]you
 Honey [C]I'll do [G7]anything for [C]you
 {end_of_verse}
+
+
+
+

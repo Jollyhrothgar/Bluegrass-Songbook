@@ -1,5 +1,8 @@
 {meta: title Pocket Of A Clown}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file pocketofaclownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Inside the pocket of a clown 
@@ -48,3 +51,8 @@ It's a real sad place to hang [D7]around
 (ooh wah ooh wah ooh wah ooh wah)
 Inside the pocket of a clown of a [G]clown
 {end_of_verse}
+
+
+
+
+

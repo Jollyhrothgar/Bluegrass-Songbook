@@ -1,6 +1,9 @@
 {meta: title Goodbye On Your Mind}
 {meta: artist Moe Bandy}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyeonyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That far away [G7]look in your [C]eye
@@ -27,3 +30,6 @@
 {start_of_verse: Verse 4}
 [G7]There ain't nothing but goodbye on your [C]mind
 {end_of_verse}
+
+
+

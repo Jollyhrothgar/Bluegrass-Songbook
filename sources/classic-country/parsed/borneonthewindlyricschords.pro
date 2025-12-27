@@ -1,6 +1,9 @@
 {meta: title Borne On The Wind}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Bill Dees}
+{meta: x_source classic-country}
+{meta: x_source_file borneonthewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Borne on the [Am]wind [C]borne on the [Am]wind
@@ -34,3 +37,7 @@ To [C]live in my [D7]heart [B7]again
 [C]Borne on the [Am]wind [C]borne on the [Am]wind
 [F]Borne [G7]on the [C]wind
 {end_of_verse}
+
+
+
+

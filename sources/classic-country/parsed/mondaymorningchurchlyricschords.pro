@@ -1,6 +1,9 @@
 {meta: title Monday Morning Church}
 {meta: artist Alan Jackson}
 {meta: composer Brent Baxter and Erin Enderlin}
+{meta: x_source classic-country}
+{meta: x_source_file mondaymorningchurchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You left your [C]bible on the dresser so I [F]put it in the drawer[C]
@@ -45,3 +48,9 @@ And I can [C]hear the devil whisper things are [D7]only getting worse
 {start_of_verse: Verse 7}
 You left your [C]bible on the dresser so I [F]put it in the drawer[C]
 {end_of_verse}
+
+
+
+
+
+

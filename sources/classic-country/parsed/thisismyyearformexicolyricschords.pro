@@ -1,6 +1,9 @@
 {meta: title This Is My Year For Mexico}
 {meta: artist Gene Watson}
 {meta: composer Vince Matthews}
+{meta: x_source classic-country}
+{meta: x_source_file thisismyyearformexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I no longer notice if [F]you’re wearing [C]perfume
@@ -29,3 +32,6 @@ We sat and watched the [F]nightly shadows [C]grow
 Every day last year I [F]left for Cali[C]fornia
 This is my [G7]year for Mexi[C]co
 {end_of_verse}
+
+
+

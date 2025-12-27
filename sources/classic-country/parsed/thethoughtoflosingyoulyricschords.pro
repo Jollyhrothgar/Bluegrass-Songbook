@@ -1,6 +1,9 @@
 {meta: title The Thought Of Losing You}
 {meta: artist Charlie Pride}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file thethoughtoflosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You look good to [C]me every [D7]morning over [G]coffee 
@@ -29,3 +32,6 @@ But the [C]thought of losing [G]you  [C]scares me [D7]through and [G]through
 And [C]yet I'm so afraid that you'll be gone some [G]morning
 And the [C]one thing I can't [G]stand is the [C]thought of [D7]losing [G]you
 {end_of_verse}
+
+
+

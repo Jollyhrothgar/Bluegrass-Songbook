@@ -1,6 +1,9 @@
 {meta: title That's Why Jesus Went To Calvary}
 {meta: artist Jimmie Davis}
 {meta: composer Jimmie Davis and Gene Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhyJesuswenttocalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many tears have [F]fallen on the [C]altar 
@@ -29,3 +32,6 @@ And gave His life for a [D7]world upon a [G7]tree
 He [C]knew their [F]sins must be for[C]given
 That's why Jesus [D7]went to [G7]Calva[C]ry
 {end_of_verse}
+
+
+

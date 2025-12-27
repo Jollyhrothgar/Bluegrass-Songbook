@@ -1,6 +1,9 @@
 {meta: title If You Tried As Hard To Love Me}
 {meta: artist Carl Smith}
 {meta: composer J.D. Miller}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoutriedashardtolovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you tried as hard to love me as you do to break my heart
@@ -22,3 +25,5 @@ I would always be contented you would be my pride and joy
 [D7]I'd lay aside my heartache and give love another start
 [G]If you tried as hard to love me as you do to break my heart
 {end_of_verse}
+
+

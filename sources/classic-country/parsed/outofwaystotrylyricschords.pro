@@ -1,6 +1,9 @@
 {meta: title Out Of Ways To Try}
 {meta: artist Tony Booth}
 {meta: composer Bob Morris and Gene Price}
+{meta: x_source classic-country}
+{meta: x_source_file outofwaystotrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's hard to say I love you when I [C]don't
@@ -33,3 +36,7 @@ Cause [D7]I've run out of ways to [G]try
 {start_of_verse: Verse 4}
 Yes [D7]I've run out of ways to [G]try
 {end_of_verse}
+
+
+
+

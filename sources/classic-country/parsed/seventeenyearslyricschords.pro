@@ -1,5 +1,8 @@
 {meta: title Seventeen Years}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file seventeenyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From the letter you write me I guess you're doing just [G7]fine
@@ -23,3 +26,5 @@ The reason I'm stuck here you know that my lips are [G7]sealed
 I doubt if you do any [C]thinking about me [G7]while I'm doing seventeen [C]years
 [F]I doubt if you do any [C]thinking about me [G7]while I'm doing seventeen [C]ye[F]ar[C]s
 {end_of_verse}
+
+

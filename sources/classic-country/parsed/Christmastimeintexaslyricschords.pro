@@ -1,5 +1,8 @@
 {meta: title Christmas Time In Texas}
 {meta: artist Dale Watson}
+{meta: x_source classic-country}
+{meta: x_source_file Christmastimeintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas [G7]time in [C]Texas [C7]   [F]
@@ -47,3 +50,9 @@ It the [D7]bestest [G7]time of [C]year
 [F]Christmas [F]time in [C]Texas[Am] 
 All the [D7]best in [G7]the New [C]Year
 {end_of_verse}
+
+
+
+
+
+

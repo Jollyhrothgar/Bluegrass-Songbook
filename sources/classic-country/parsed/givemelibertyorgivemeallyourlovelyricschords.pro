@@ -1,6 +1,9 @@
 {meta: title Give Me Liberty (Or Give Me All Your Love)}
 {meta: artist Moe Bandy}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file givemelibertyorgivemeallyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Give me liberty [F]or [C]give me all [G7]your [C]love
@@ -37,3 +40,8 @@
 {start_of_verse: Verse 6}
 [F]Give me [C]liberty [F]or [C]give me all [G7]your [C]love
 {end_of_verse}
+
+
+
+
+

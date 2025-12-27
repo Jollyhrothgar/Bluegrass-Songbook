@@ -1,6 +1,9 @@
 {meta: title You're The Sad In My Songs}
 {meta: artist Stonewall Jackson}
 {meta: composer Larry Lee}
+{meta: x_source classic-country}
+{meta: x_source_file yourethesadinmysongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're the hand that waved goodbye you're the thought that makes me [F]cry
@@ -29,3 +32,6 @@
 [C]Oh but now I've sadly learned mine's among those hearts that [F]yearn
 [C]Yes darlin' you're the [G7]sad in my [C]songs
 {end_of_verse}
+
+
+

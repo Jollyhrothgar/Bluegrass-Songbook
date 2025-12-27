@@ -1,6 +1,9 @@
 {meta: title Christmas In My Home Town}
 {meta: artist Sonny James}
 {meta: composer Sonny James and John Skye}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasinmyhometownlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd love to spend this Christmas with the [F]folks in my hometown
@@ -27,3 +30,6 @@ Oh I’d [G7]love to spend this [C]Christ[A7]mas with the [D7]folks in [G7]my ho
 {start_of_verse: Verse 4}
 [A7]Friendly [D7]folks in [G7]my home[C]town
 {end_of_verse}
+
+
+

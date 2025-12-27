@@ -1,6 +1,9 @@
 {meta: title Because I Love You That's Why}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file becauseiloveyouthatswhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't believe this blessing sent down from up [E7]above
@@ -48,3 +51,9 @@
 [F]I couldn't [G7]take it if you ever [C]should say [Am]goodbye
 [D7]Because I [G7]love you that's [C]why
 {end_of_verse}
+
+
+
+
+
+

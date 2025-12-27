@@ -1,6 +1,9 @@
 {meta: title Roll On Muddy River}
 {meta: artist Wilburn Brothers}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file rollonmuddyriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Roll muddy river roll on muddy river roll [G7]on
@@ -43,3 +46,8 @@ So [G7]roll muddy river roll [F]on muddy river roll [C]on
 {start_of_verse: Verse 4}
 [G7]Roll muddy river roll [F]on muddy river roll [C]on
 {end_of_verse}
+
+
+
+
+

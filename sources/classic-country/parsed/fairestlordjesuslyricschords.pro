@@ -1,6 +1,9 @@
 {meta: title Fairest Lord Jesus}
 {meta: artist Pat Boone}
 {meta: composer Paul Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file fairestlordjesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Fairest Lord [C]Je[D]su[G]s!
@@ -27,3 +30,4 @@ Verse 3
 [D7]Jesus shines [G]purer 
 [G]than [Em]all the [C]angels [Am]heaven [D]can [G]boast.
 {end_of_verse}
+

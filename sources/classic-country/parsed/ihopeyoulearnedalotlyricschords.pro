@@ -1,6 +1,9 @@
 {meta: title I Hope You Learned A Lot}
 {meta: artist Marty Robbins}
 {meta: composer Bobby Sykes}
+{meta: x_source classic-country}
+{meta: x_source_file ihopeyoulearnedalotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You treat me like the ground you walk around [C]on
@@ -29,3 +32,6 @@ Cause [D7]they're bound to come to you just wait and [G]see
 And I [D7]hope you learned a lot from all your [G]heartaches
 And [C]when you do I [D7]hope that you'll come running back to [G]me
 {end_of_verse}
+
+
+

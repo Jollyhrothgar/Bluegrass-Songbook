@@ -1,5 +1,8 @@
 {meta: title I'm Going To Cross That River}
 {meta: artist Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file imgoingtocrossthatriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One day soon I'm going to cross that [C]river
@@ -28,3 +31,6 @@ If I [G]have to swim to the other [D7]side
 Yeah the [G]last time I saw my [C]baby
 I just [G]had to [D7]hang my head and [G]cry
 {end_of_verse}
+
+
+

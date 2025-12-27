@@ -1,5 +1,8 @@
 {meta: title All For The Love of a Girl}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file allfortheloveofagirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well today I'm so weary  [F]today I'm so [C]blue
@@ -28,3 +31,6 @@ All for the love that sets your [D7]heart in a [G7]whirl
 I'm a [C]man who'd give his life and the [F]joys of this [C]world
 All for the [G7]love of a [C]girl
 {end_of_verse}
+
+
+

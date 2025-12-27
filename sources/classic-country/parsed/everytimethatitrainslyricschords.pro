@@ -1,6 +1,9 @@
 {meta: title Every Time That It Rains}
 {meta: artist Garth Brooks}
 {meta: composer Garth Brooks and Ty England}
+{meta: x_source classic-country}
+{meta: x_source_file everytimethatitrainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stuck in an [G7]airport in [C]Austin
@@ -70,3 +73,12 @@ Every [G7]time that it [C]rains
 [F]Every [G7]time that it [C]rains[A#7]    [F]  [C]
 [F]It's rainin' on [C]me 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

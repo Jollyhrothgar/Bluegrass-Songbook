@@ -1,6 +1,9 @@
 {meta: title I Don't Believe I'll Fall in Love Today}
 {meta: artist Buck Owens}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file idontbelieveillfallinlovetodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't believe I'll fall in love [C]today
@@ -29,3 +32,6 @@ Each night I pray I'll wake at dawn [C]and find
 Then [G]I awake and hear my poor heart [C]say
 That I [D7]don't believe I'll fall in love [G]today
 {end_of_verse}
+
+
+

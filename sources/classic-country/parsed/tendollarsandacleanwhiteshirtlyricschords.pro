@@ -1,6 +1,9 @@
 {meta: title Ten Dollars And A Clean White Shirt}
 {meta: artist Charlie Rich}
 {meta: composer Paul Vance and Eddie Snyder}
+{meta: x_source classic-country}
+{meta: x_source_file tendollarsandacleanwhiteshirtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you should see [F]Jenny [C]please tell her for [G7]me
@@ -34,3 +37,7 @@ Cause [F]tonight I'm gettin' [G7]over this great big [C]hurt [F]  [C]
 I've got ten dollars and I'm [G7]wearing a clean white [C]shirt [F]  [C]
 I've got ten dollars and I'm [G7]wearing a clean white [C]shirt
 {end_of_verse}
+
+
+
+

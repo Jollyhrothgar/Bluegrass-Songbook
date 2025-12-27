@@ -1,5 +1,8 @@
 {meta: title This Song's For You}
 {meta: artist Bobby Helms}
+{meta: x_source classic-country}
+{meta: x_source_file thissongsforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This songs for you [G7]straight from my [C]heart
@@ -25,3 +28,6 @@ This song is [D7]just for you straight from my [G]heart
 {start_of_verse: Verse 4}
 This song is [D7]just for you straight from my [G]heart
 {end_of_verse}
+
+
+

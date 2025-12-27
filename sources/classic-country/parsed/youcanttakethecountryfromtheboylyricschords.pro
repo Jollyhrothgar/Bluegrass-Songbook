@@ -1,6 +1,9 @@
 {meta: title You Can't Take The Country From The Boy}
 {meta: artist Bob Luman}
 {meta: composer Fred F. Carter, Jr. and Anna Carter}
+{meta: x_source classic-country}
+{meta: x_source_file youcanttakethecountryfromtheboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yeah you can take the boy from the country
@@ -55,3 +58,10 @@ You [G7]can't take the country from the [C]boy
 You [G7]can't take the country from the [C]boy
 You [G7]can't take the country from the [C]boy
 {end_of_verse}
+
+
+
+
+
+
+

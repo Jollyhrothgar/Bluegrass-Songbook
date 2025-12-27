@@ -1,6 +1,9 @@
 {meta: title Charlie's Shoes}
 {meta: artist Billy Walker}
 {meta: composer Roy Baham}
+{meta: x_source classic-country}
+{meta: x_source_file charliesshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd like to be in Charlie's [C7]shoes   that's what I always [F]said
@@ -29,3 +32,6 @@ Now I'm wearing out the [C7]shoes that Charlie [F]wore
 The troubles that drove him away [C7]I've got for [F]company
 These [G7]nights in Charlie's shoes are killing [C]me
 {end_of_verse}
+
+
+

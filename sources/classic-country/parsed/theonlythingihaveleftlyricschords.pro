@@ -1,6 +1,9 @@
 {meta: title The Only Thing I Have Left}
 {meta: artist George Strait}
 {meta: composer Clay Blaker}
+{meta: x_source classic-country}
+{meta: x_source_file theonlythingihaveleftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some people say I'm [G7]one of those guys 
@@ -38,3 +41,7 @@ But tonight I'm with you you can [G7]carry me through just [Am]l-o-[G7]v-e [F]me
 Cause the [C]only thing that [G7]I have left in the [F]whole wide [G7]world is [C]you
 Repeat last verse
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Stand By My Woman Man}
 {meta: artist Ronnie Milsap}
 {meta: composer Kent M. Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file standbymywomanmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At five o'clock she [F]knows I’ll soon be [C]home
@@ -38,3 +41,7 @@ We fall asleep at night thinking [D7]ain't love grand
 Tag:
 [F]That's why I'm a [G7]stand by my woman [C]man
 {end_of_verse}
+
+
+
+

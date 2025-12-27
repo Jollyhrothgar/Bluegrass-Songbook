@@ -1,6 +1,9 @@
 {meta: title Twang}
 {meta: artist George Strait}
 {meta: composer Jim Lauderdale, Kendell Wayne Marvel, Jimmy Ritchey}
+{meta: x_source classic-country}
+{meta: x_source_file twanglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I get off of work on [C]Friday 
@@ -60,3 +63,9 @@ I need a little [G]  twang [C]twang [F]tw--[D7]a--[G]ng
 {start_of_verse: Verse 6}
 I need a little twang [C]twang [F]tw--[D7]a--[G]ng
 {end_of_verse}
+
+
+
+
+
+

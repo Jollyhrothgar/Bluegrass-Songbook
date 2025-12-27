@@ -1,5 +1,8 @@
 {meta: title Sneaky Snake}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file sneakysnakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Boys and girls take warning if [C]you go near the [G]lake
@@ -28,3 +31,6 @@ And then Sneaky Snake goes [C]dancing  [G]wiggling and a [C]hissing
 I [G]don't like old Sneaky Snake He [C]laughs too much you [G]see
 When [C]he goes wigging [G]through the grass it [D7]tickles his [G]underneath
 {end_of_verse}
+
+
+

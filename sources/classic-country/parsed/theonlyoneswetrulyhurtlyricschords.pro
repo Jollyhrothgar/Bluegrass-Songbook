@@ -1,6 +1,9 @@
 {meta: title The Only Ones We Truly Hurt}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file theonlyoneswetrulyhurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The only [Em]ones we [G7]truly [Dm]hurt 
@@ -29,3 +32,6 @@ I’d be lost [G7]without your sweet [C]love
 The [F]only [G7]ones we [C]truly [F]hurt 
 Are the [Dm]ones we [G7]truly [C]love
 {end_of_verse}
+
+
+

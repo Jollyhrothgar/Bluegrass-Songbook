@@ -1,5 +1,8 @@
 {meta: title Long Way To Go}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file longwaytogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I [F]drove down [G7]to the [C]ocean
@@ -67,3 +70,11 @@ I got a [F]woman I'm [G7]tryin' to [C]drink away
 And I got a [F]long long way to [C]go
 Yeah I got a [F]long long [G7]way to [C]go
 {end_of_verse}
+
+
+
+
+
+
+
+

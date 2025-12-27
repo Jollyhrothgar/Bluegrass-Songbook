@@ -1,6 +1,9 @@
 {meta: title Pleasin' My Woman}
 {meta: artist Billy Parker}
 {meta: composer Don Devaney}
+{meta: x_source classic-country}
+{meta: x_source_file pleasinmywomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's here in the morning when the sun comes up
@@ -40,3 +43,7 @@ Is the one thing that's [D7]always on my [G7]mind
 [C]I'll be [F]keeping her [C]happy
 So she will never [G7]ever leave my [C]side
 {end_of_verse}
+
+
+
+

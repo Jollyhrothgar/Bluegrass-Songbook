@@ -1,6 +1,9 @@
 {meta: title Little Things}
 {meta: artist Tanya Tucker}
 {meta: composer Steven Dale Jones and Michael Dulaney}
+{meta: x_source classic-country}
+{meta: x_source_file littlethingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love can't be measured with [Am]diamonds and [C]gold
@@ -34,3 +37,6 @@ All [C]those little [C][Am]things
 [C]Little [Am]things
 [C]Little [Am]things
 {end_of_verse}
+
+
+

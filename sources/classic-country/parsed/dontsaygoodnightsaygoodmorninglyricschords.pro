@@ -1,6 +1,9 @@
 {meta: title Don't Say Goodnight Say Good Morning}
 {meta: artist Reba McEntire}
 {meta: composer Patti Ryan and Wanda Mallette}
+{meta: x_source classic-country}
+{meta: x_source_file dontsaygoodnightsaygoodmorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Thought we could make it on our [C]own 
@@ -50,3 +53,9 @@ Don't say good [G]night [Bm]say good [C]morning
 Don't say good [D7]night say [Bm]good morn[Em]ing 
 And [C]in the morning [D7]never say [G]goodbye[D7]
 {end_of_verse}
+
+
+
+
+
+

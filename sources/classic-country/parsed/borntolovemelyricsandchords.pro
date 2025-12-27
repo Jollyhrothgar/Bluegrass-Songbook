@@ -1,6 +1,9 @@
 {meta: title Born To Love Me}
 {meta: artist Kris Kristofferson}
 {meta: composer Bob Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file borntolovemelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not many'd say your handsome [F] cause they don't realize 
@@ -36,3 +39,7 @@ Born to love me [F] born to hold me tight
 [G7]My baby was [C]born to love me [F] born to hold me tight
 [G7]Born to love me [F]every night every [G7]night every [C]night
 {end_of_verse}
+
+
+
+

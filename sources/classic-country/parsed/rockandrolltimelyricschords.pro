@@ -1,6 +1,9 @@
 {meta: title Rock And Roll Time}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson, Roger McGuinn, Bob Neuwirth}
+{meta: x_source classic-country}
+{meta: x_source_file rockandrolltimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Do I look like a loser do I stand in your [C]way
@@ -33,3 +36,7 @@ Remember I'm [D7]running [C]on rock and roll [G]time
 {start_of_verse: Verse 5}
 Just remember I'm [D7]running [C]on rock and roll [G]time
 {end_of_verse}
+
+
+
+

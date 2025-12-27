@@ -1,5 +1,8 @@
 {meta: title We Need A Lot More Jesus}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file weneedalotmoreJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can read it in the morning paper 
@@ -46,3 +49,9 @@ And a lot [G7]less of rock and [C]roll
 {start_of_verse: Verse 6}
 And a lot [G7]less of rock and [C]roll
 {end_of_verse}
+
+
+
+
+
+

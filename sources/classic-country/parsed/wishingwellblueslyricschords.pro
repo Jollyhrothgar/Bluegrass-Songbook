@@ -1,6 +1,9 @@
 {meta: title Wishing Well Blues}
 {meta: artist Rhonda Vincent}
 {meta: composer Marshall Wilborn}
+{meta: x_source classic-country}
+{meta: x_source_file wishingwellblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a sign on the cafe [Am]window 
@@ -55,3 +58,9 @@ As to [F]try and go and [G7]win your [C]love
 Yes I may as well have [G7]tried to [Am]hold back the [G7]tide 
 As to [F]try and go and [G7]win your [C]love
 {end_of_verse}
+
+
+
+
+
+

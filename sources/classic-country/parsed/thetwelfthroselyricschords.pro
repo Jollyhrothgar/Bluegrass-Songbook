@@ -1,6 +1,9 @@
 {meta: title The Twelfth Rose}
 {meta: artist Jim Ed Brown}
 {meta: composer Buddy Killen and Marvin Moore}
+{meta: x_source classic-country}
+{meta: x_source_file thetwelfthroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How long has it [Am]been [C]since the first time I told [Am]you
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [F]The twelfth rose will always be [C]you
 {end_of_verse}
+
+
+
+

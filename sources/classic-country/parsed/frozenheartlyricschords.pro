@@ -1,6 +1,9 @@
 {meta: title Frozen Heart}
 {meta: artist George Jones}
 {meta: composer George Jones and Rick Yancey}
+{meta: x_source classic-country}
+{meta: x_source_file frozenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Frozen heart that's standing all [C]alone
@@ -22,3 +25,5 @@
 [C]Needing you like a cold hand needs a glove
 [G]Take my heart [D7]and warm it with your [G]love
 {end_of_verse}
+
+

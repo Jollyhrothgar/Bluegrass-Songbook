@@ -1,6 +1,9 @@
 {meta: title Foolish Pride}
 {meta: artist Faron Young}
 {meta: composer Harold L. Smith}
+{meta: x_source classic-country}
+{meta: x_source_file foolishpridelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Foolish pride you drove her love from [G7]me
@@ -22,3 +25,5 @@ Foolish pride now I'm the foolish [C]one
 So [C]I cried because of what you've [G7]done
 Foolish pride now I'm the foolish [C]one  
 {end_of_verse}
+
+

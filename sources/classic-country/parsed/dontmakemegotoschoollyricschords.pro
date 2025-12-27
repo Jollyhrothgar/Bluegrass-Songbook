@@ -1,6 +1,9 @@
 {meta: title Don't Make Me Go To School}
 {meta: artist Tammy Wynette}
 {meta: composer Gene Crysler}
+{meta: x_source classic-country}
+{meta: x_source_file dontmakemegotoschoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My little girl said mommy the school room breaks my heart
@@ -29,3 +32,6 @@ Don't [F]make me go to school no more and [C]cry through every test
 [C]Imagine how you feel to hear your child say this to [F]you
 Don't make me go to [C]school no more and [G7]make the fifth grade [F]b-l[C]ue
 {end_of_verse}
+
+
+

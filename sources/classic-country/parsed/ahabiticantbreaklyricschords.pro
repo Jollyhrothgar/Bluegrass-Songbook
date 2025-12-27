@@ -1,6 +1,9 @@
 {meta: title A Habit I Can't Break}
 {meta: artist Dolly Parton}
 {meta: composer Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file ahabiticantbreaklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](A [F]habit [G7]I can't [C]break)
@@ -42,3 +45,8 @@ Loving [F]you is a [G7]habit I can't [C]break
 {start_of_verse: Verse 6}
 Loving [F]you is a [G7]habit I can't [C]break
 {end_of_verse}
+
+
+
+
+

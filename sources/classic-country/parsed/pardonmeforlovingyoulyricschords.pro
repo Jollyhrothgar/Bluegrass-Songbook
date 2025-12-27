@@ -1,6 +1,9 @@
 {meta: title Pardon Me For Loving You}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer William Mershon}
+{meta: x_source classic-country}
+{meta: x_source_file pardonmeforlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You tell me when you hear my name [D7]that it won’t make you blue
@@ -36,3 +39,7 @@ You say I should forget the day [D7]when we said I do
 And [C]when you go I know that my poor [D7]heart will break in two
 [G7]Pardon me for loving [C]you
 {end_of_verse}
+
+
+
+

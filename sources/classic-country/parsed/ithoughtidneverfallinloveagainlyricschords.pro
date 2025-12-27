@@ -1,5 +1,8 @@
 {meta: title I Thought I'd Never Fall In Love Again}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file ithoughtidneverfallinloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought I’d never fall in love [C]again
@@ -21,3 +24,5 @@ From the darkness a new love light shown [D7]through
 [G]Now I’m happy cause I’m living [C]again
 And I thought I’d never fall [D7]in love [G]again
 {end_of_verse}
+
+

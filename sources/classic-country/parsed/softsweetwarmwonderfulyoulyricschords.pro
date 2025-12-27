@@ -1,5 +1,8 @@
 {meta: title Soft Sweet Warm Wonderful You}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file softsweetwarmwonderfulyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did you ever have a [G7]dream come [C]true
@@ -33,3 +36,7 @@ When I'm [D7]near soft sweet and warm wonderful [G]you
 {start_of_verse: Verse 5}
 When I'm [D7]near soft sweet and warm wonderful [C]yo-[G]u
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bring Me My Memories In Person}
 {meta: artist Cal Smith}
 {meta: composer Barbara Day and Jimmy Day}
+{meta: x_source classic-country}
+{meta: x_source_file bringmemymemoriesinpersonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Look me in the eye when you tell me [D7]
@@ -29,3 +32,6 @@ The [G]echo of I love you might still be [D7]there
 [C]Bring me my memories in [G]person
 [C]Don’t send them by [D7]someone who don’t [G]care
 {end_of_verse}
+
+
+

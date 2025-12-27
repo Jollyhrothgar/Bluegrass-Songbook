@@ -1,6 +1,9 @@
 {meta: title Before I Grow Too Old}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew, Fats Domino, Robert Charles Guidry}
+{meta: x_source classic-country}
+{meta: x_source_file beforeigrowtoooldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm goin' to go out dancin'  [F]every night
@@ -29,3 +32,6 @@ I'm gonna do a lot of things  [F]I know is wrong
 And it will take a lot of prayers  [F]to save my soul
 [G7]But I've got to hurry up before I  [C]grow too old
 {end_of_verse}
+
+
+

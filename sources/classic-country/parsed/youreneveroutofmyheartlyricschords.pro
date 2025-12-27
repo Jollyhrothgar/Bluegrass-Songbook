@@ -1,6 +1,9 @@
 {meta: title You’re Never Out Of My Heart}
 {meta: artist Wynn Stewart}
 {meta: composer Buck Owens, Beverly Stewart, Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file youreneveroutofmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though you’re out of my [Am]reach [D7]you’re never out of my [G]heart
@@ -29,3 +32,7 @@
 [D7]You’re still on my mind although we’re far apart
 [G]Though you’re out of my reach you’re never out of my heart
 {end_of_verse}
+
+
+
+

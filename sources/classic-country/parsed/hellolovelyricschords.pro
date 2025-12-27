@@ -1,6 +1,9 @@
 {meta: title Hello Love}
 {meta: artist Hank Snow}
 {meta: composer Betty Jean Robinson and Aileen Mnich}
+{meta: x_source classic-country}
+{meta: x_source_file hellolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well look who's coming through the door
@@ -44,3 +47,8 @@ And it's wonderful now you're back with me
 [G]So don't mind me if I [D7]repeat hello love  hello [G]love
 [D7]hello love  hello [G]love
 {end_of_verse}
+
+
+
+
+

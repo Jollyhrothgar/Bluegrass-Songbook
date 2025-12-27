@@ -1,6 +1,9 @@
 {meta: title Zion's Hill}
 {meta: artist Keith Whitley}
 {meta: composer Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file zionshilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There awaits for [F]me a glad to[C]morrow
@@ -29,3 +32,6 @@ Someday God only knows just where and [G7]when
 The [C]wheels of mortal life will [F]all stand [C]still
 And I shall go to dwell on [G7]Zion's [C]hill
 {end_of_verse}
+
+
+

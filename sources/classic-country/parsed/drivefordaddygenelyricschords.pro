@@ -1,5 +1,8 @@
 {meta: title Drive (For Daddy Gene)}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file drivefordaddygenelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was painted red [D7]the stripe was white
@@ -86,3 +89,14 @@ Daddy let me [C]driv[D7]e   [G]oh he let me dri[D7]ve [C]
 [G]It's just an old [D7]plywood boat
 With a [C]75 Johnson and electric choke[G]
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

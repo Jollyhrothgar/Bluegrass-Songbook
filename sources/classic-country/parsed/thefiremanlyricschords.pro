@@ -1,6 +1,9 @@
 {meta: title The Fireman}
 {meta: artist George Strait}
 {meta: composer Wayne Kemp and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file thefiremanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well they call me the fireman [C]that's my [G]name
@@ -45,3 +48,8 @@ They call me the [G]fireman [D7]that's my [G]name
 {start_of_verse: Verse 4}
 They call me the fireman [D7]that's my [G]name
 {end_of_verse}
+
+
+
+
+

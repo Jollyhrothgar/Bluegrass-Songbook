@@ -1,6 +1,9 @@
 {meta: title Let's Live A Little Before We Say Goodbye}
 {meta: artist Carl Smith}
 {meta: composer Ruth Coletharp}
+{meta: x_source classic-country}
+{meta: x_source_file letslivealittlebeforewesaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take your little lips and kiss me
@@ -51,3 +54,12 @@ And we will think of yesterday
 [C]We'll pretend we're happy [F]though we know it's a [C]lie
 [G7]So let's live a little before we say [C]goodbye
 {end_of_verse}
+
+
+
+
+
+
+
+
+

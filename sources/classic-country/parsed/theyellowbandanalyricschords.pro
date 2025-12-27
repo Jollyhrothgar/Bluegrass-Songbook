@@ -1,6 +1,9 @@
 {meta: title The Yellow Bandana}
 {meta: artist Faron Young}
 {meta: composer Steve Karliski, Larry Kolber, Al Gordoni}
+{meta: x_source classic-country}
+{meta: x_source_file theyellowbandanalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 This is [C]the story [G7]of a Yellow [C]Bandana
@@ -54,3 +57,10 @@ Tag:
 He gave [Dm]Roseanna his [G7]Yellow [C]Bandana
 To [Am]wear in her [Dm]hair till he's [G7]with her once [C]more
 {end_of_verse}
+
+
+
+
+
+
+

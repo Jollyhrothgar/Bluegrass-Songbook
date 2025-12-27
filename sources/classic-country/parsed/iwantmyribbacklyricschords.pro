@@ -1,6 +1,9 @@
 {meta: title I Want My Rib Back}
 {meta: artist Keith Whitley}
 {meta: composer Fred Koller and Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file iwantmyribbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now the bible tells the story about Adam's rib
@@ -41,3 +44,7 @@ Oh [G]Lord I [D7]think I want my rib [G]back
 {start_of_verse: Verse 4}
 Oh Lord I [D7]think I want my rib [G]back
 {end_of_verse}
+
+
+
+

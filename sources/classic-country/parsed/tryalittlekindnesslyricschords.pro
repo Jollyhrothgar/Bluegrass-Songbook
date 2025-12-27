@@ -1,6 +1,9 @@
 {meta: title Try A Little Kindness}
 {meta: artist Glen Campbell}
 {meta: composer Bobby Austin and Curt Sapaugh}
+{meta: x_source classic-country}
+{meta: x_source_file tryalittlekindnesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you see your brother [F]standing by the [C]road
@@ -33,3 +36,6 @@ Just [F]shine your light for [C]everyone to [G7]see
 Then you'll overlook the [Am]blindness
 Of [F]narrow minded [G7]people on the [F]narrow [G7]minded [C]streets
 {end_of_verse}
+
+
+

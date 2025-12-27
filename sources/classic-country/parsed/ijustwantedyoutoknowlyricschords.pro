@@ -1,6 +1,9 @@
 {meta: title I Just Wanted You To Know}
 {meta: artist Conway Twitty}
 {meta: composer L.E.White}
+{meta: x_source classic-country}
+{meta: x_source_file ijustwantedyoutoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Things work out for the [D7]best some [G]people say
@@ -27,3 +30,6 @@ These are some little things [D7]I just wanted you to [G]know
 And if someday he sets you free [C]just tell me so
 These are some [G]little things [D7]I just wanted you to [G]know
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Hungry Eyes}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file hungryeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A canvas covered cabin in a [F]crowded labor [C]camp
@@ -35,3 +38,7 @@
 [F]She only wanted things she really [C]needed
 [G7]One more reason for my mama's hungry [C]eyes
 {end_of_verse}
+
+
+
+

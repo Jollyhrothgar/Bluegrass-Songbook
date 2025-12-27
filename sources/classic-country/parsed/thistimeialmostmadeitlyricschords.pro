@@ -1,6 +1,9 @@
 {meta: title This Time I Almost Made It}
 {meta: artist Barbara Mandrell}
 {meta: composer Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file thistimeialmostmadeitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This time I almost made it [E7]came so close to [Am]saying no
@@ -25,3 +28,6 @@ This [D7]time I almost [G]made it
 {start_of_verse: Verse 4}
 This [D7]time I almost [G]made it 
 {end_of_verse}
+
+
+

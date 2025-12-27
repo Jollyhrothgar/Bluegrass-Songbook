@@ -1,6 +1,9 @@
 {meta: title I Hear the South Calling Me}
 {meta: artist Hank Thompson}
 {meta: composer R.C. Bannon and John Bettis}
+{meta: x_source classic-country}
+{meta: x_source_file ihearthesouthcallingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear the south calling me
@@ -32,3 +35,6 @@ I hear the south calling me
 [D7]I hear the south calling [G]me
 [D7]I hear the south calling [G]me
 {end_of_verse}
+
+
+

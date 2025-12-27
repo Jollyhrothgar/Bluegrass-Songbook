@@ -1,6 +1,9 @@
 {meta: title Freight Train Blues}
 {meta: artist Jimmy Dean}
 {meta: composer John Lair}
+{meta: x_source classic-country}
+{meta: x_source_file freightrrainblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born in Dixie in a boomer's shack
@@ -34,3 +37,8 @@ Now it's a shame the way she keeps a good [G7]man [C]broke
 The humming of the drivers was my lullaby
 And a freight train whistle taught me [G7]how to [C]cry
 {end_of_verse}
+
+
+
+
+

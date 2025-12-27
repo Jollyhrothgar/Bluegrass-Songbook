@@ -1,5 +1,8 @@
 {meta: title Shadows}
 {meta: artist Alison Krauss}
+{meta: x_source classic-country}
+{meta: x_source_file shadowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me [G]reach out love and touch you 
@@ -66,3 +69,11 @@ Let it [G]happen like it happened once [C]before
 And if [Em]you do not believe me come 
 And [C]gaze upon the [Am]shadow at your [C]door
 {end_of_verse}
+
+
+
+
+
+
+
+

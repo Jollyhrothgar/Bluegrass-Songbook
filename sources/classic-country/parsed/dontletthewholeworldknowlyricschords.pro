@@ -1,5 +1,8 @@
 {meta: title Don't Let The Whole World Know}
 {meta: artist Everly Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file dontletthewholeworldknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't [G7]let the [C]whole world [F]know
@@ -21,3 +24,5 @@
 [G7]Don't let [C]the whole world [F]know
 [C]Go on home boy
 {end_of_verse}
+
+

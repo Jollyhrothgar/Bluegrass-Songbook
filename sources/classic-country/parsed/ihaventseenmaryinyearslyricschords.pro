@@ -1,6 +1,9 @@
 {meta: title I Haven't Seen Mary In Years}
 {meta: artist Mel Tillis}
 {meta: composer Damon Black [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file ihaventseenmaryinyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While walking one day in the country I [F]saw a gathering [C]crowd
@@ -37,3 +40,8 @@ His son he did [G7]not recog[C]nize
 [F]Hold my hand and [C]lead me  [F]lead me away from [C]here
 [F]How could I know it was [C]mama  I haven't seen [G7]mama in [C]years
 {end_of_verse}
+
+
+
+
+

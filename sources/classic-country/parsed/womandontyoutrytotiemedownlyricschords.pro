@@ -1,6 +1,9 @@
 {meta: title Woman Don't You Try to Tie Me Down}
 {meta: artist Everly Brothers}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file womandontyoutrytotiemedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]The [G]wind it tends to [C]blow a bit back [G]home in Waco [Em]Texas
@@ -25,3 +28,5 @@ Cause I can run as [C]fast as Chet [G]Atkins picks a [Em]guitar
 So [C]woman don't you [D7]try to tie me [G]down tie me [C]down
 So [G]woman don't you [D7]try to tie me [G]down
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Green Door}
 {meta: artist Cal Smith}
 {meta: composer Marvin Moore and Bob Davie}
+{meta: x_source classic-country}
+{meta: x_source_file greendoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Midnight [C]one more night without [G]sleeping
@@ -39,3 +42,8 @@
 [C]When I said Joe sent me someone laughed out loud behind the green [G]door
 [D7]All I want to do is join the [C]happy crowd behind the green [G]door
 {end_of_verse}
+
+
+
+
+

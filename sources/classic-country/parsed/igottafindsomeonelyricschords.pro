@@ -1,6 +1,9 @@
 {meta: title I Gotta Find Someone}
 {meta: artist Porter Wagoner}
 {meta: composer Vic McAlpin, Roy Drusky, Jean Elroad}
+{meta: x_source classic-country}
+{meta: x_source_file igottafindsomeonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't [G7]stand the [C]thoughts of 
@@ -43,3 +46,8 @@ To think we are [F]through
 But I've gotta find [C]someone 
 [G7]Who loves like I [C]do
 {end_of_verse}
+
+
+
+
+

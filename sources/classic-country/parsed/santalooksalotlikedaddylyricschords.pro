@@ -1,6 +1,9 @@
 {meta: title Santa Looks A Lot Like Daddy Lyrics with Chords}
 {meta: artist Buck Owens}
 {meta: composer Don Rich and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file santalooksalotlikedaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Santa looked a lot like daddy or [G7]daddy looked a lot like [C]him
@@ -38,3 +41,7 @@ It's [D7]not the way I had him pictured Santa was a much too [G]thin
 He didn't come down the chimney so [G7]momma musta let him [C]in
 [D7]Santa looked a lot like daddy or daddy looked a lot like [G]him
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Don't Know Why I Love You But I Do}
 {meta: artist Fats Domino}
 {meta: composer Paul Gayten and Bobby Charles}
+{meta: x_source classic-country}
+{meta: x_source_file idontknowwhyiloveyoubutidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't know why I [E7]love you but I [Am]do
@@ -32,3 +35,6 @@
 [C]But I've got to clear my [A7]mind
 [G]I don't know [D7]why I [Am]love you [D7]but I [G]do
 {end_of_verse}
+
+
+

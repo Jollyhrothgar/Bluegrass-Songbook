@@ -1,6 +1,9 @@
 {meta: title Honky Tonk In Dallas}
 {meta: artist Charlie Walker}
 {meta: composer Mel Tillis and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkindallaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I met her at a honky tonk in [F]Dallas
@@ -40,3 +43,8 @@ And that [G7]honky tonk in Dallas was to [C]blame
 {start_of_verse: Verse 4}
 Yes that [G7]honky tonk in Dallas was to [C]blame
 {end_of_verse}
+
+
+
+
+

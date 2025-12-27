@@ -1,5 +1,8 @@
 {meta: title Merry Christmas To Me}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file merryChristmastomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today I took some [C]paper from the [G]closet
@@ -33,3 +36,7 @@ For the fool who let you [C]leave
 I'm the fool who let you [C]leave
 [D7]Merry Christmas to [G]me
 {end_of_verse}
+
+
+
+

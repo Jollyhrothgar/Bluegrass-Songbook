@@ -1,6 +1,9 @@
 {meta: title Rocking Chair Money}
 {meta: artist Hank Williams}
 {meta: composer Lonnie Glosson & Bill Carlisle}
+{meta: x_source classic-country}
+{meta: x_source_file rockingchairmoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I got rocking chair money 
@@ -55,3 +58,10 @@ And do it all up right
 Cause I love to rock yeah rock
 Baby rock let's rock on down the line
 {end_of_verse}
+
+
+
+
+
+
+

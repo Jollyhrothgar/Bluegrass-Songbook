@@ -1,5 +1,8 @@
 {meta: title Call Me Up And I'll Come Calling On You}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file callmeupandillcomecallingonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you're all alone and blue and you don't know what to do
@@ -28,3 +31,6 @@ To be the one there's a nothing [C7]I won't [F]do
 Well I'm for you for me forever more [C]I'm in love with you
 Call me [G7]up and I'll come calling on [C]you
 {end_of_verse}
+
+
+

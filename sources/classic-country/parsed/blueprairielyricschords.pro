@@ -1,6 +1,9 @@
 {meta: title Blue Prairie}
 {meta: artist Rex Allen Jr.}
 {meta: composer Bob Nolan and Tim Spencer}
+{meta: x_source classic-country}
+{meta: x_source_file blueprairielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Blue prairie [F]blue are the [Em]skies
@@ -26,3 +29,5 @@ And the moon has cast a blue [C]reflection in the dew
 [Am]Blue prairie [F]blue echoes [Em]ring
 [Dm]Blue as I [E7]sing of a [Am]longing [F]blue as [Am]you
 {end_of_verse}
+
+

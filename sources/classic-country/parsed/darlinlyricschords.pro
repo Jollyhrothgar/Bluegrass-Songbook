@@ -1,6 +1,9 @@
 {meta: title Darlin'}
 {meta: artist Jeanne Pruett}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file darlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darlin' dearest darlin'
@@ -28,3 +31,6 @@ Darlin' dearest darlin'
 [C]Put your arms [G]around me baby [D7]please
 [G]Darlin' dearest darlin'
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lady Bug}
 {meta: artist Anne Murray}
 {meta: composer James Stein}
+{meta: x_source classic-country}
+{meta: x_source_file ladybuglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't disturb the Lady [F]Bug
@@ -55,3 +58,10 @@ Don't [G7]try to catch it in your [C]net
 It's taken such a long [G7]long time
 To make this very [C]special place
 {end_of_verse}
+
+
+
+
+
+
+

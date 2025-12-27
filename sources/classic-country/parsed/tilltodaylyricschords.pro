@@ -1,5 +1,8 @@
 {meta: title Till Today}
 {meta: artist Red Sovine}
+{meta: x_source classic-country}
+{meta: x_source_file tilltodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just got your letter [F]this [C]morning
@@ -28,3 +31,6 @@
 [C]Who’s gonna [F]say they love you [C]only
 [F]Just like I’ve [G7]always done till [C]today
 {end_of_verse}
+
+
+

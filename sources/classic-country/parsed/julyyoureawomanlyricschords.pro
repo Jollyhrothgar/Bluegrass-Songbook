@@ -1,6 +1,9 @@
 {meta: title July You're A Woman}
 {meta: artist Ed Bruce}
 {meta: composer John C. Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file julyyoureawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can’t hold it on the [Em]road when you’re [C]sitting right beside [D7]me
@@ -43,3 +46,8 @@
 [G]July you’re a [Em]woman
 [C]More than anyone [D7]I’ve ever [G]known
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lingering Memories}
 {meta: artist Mel Tillis}
 {meta: composer Damon Black}
+{meta: x_source classic-country}
+{meta: x_source_file lingeringmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If memories were gathered [D7]like [G]flowers
@@ -41,3 +44,8 @@ Are the memories [D7]that I have of [G]you
 [D7]But the [G]lingering [D7]lingering [G]memories
 Are the memories [D7]that I have of [G]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Don't Know How To Tell Him}
 {meta: artist Wanda Jackson}
 {meta: composer Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file idontknowhowtotellhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can tell him his toy [C]gun won't kill [G]Indians
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]I don't know how to tell him that you're [G]gone
 {end_of_verse}
+
+
+
+

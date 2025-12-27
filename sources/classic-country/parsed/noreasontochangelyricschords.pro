@@ -1,6 +1,9 @@
 {meta: title No Reason To Change}
 {meta: artist Randy Travis}
 {meta: composer Troy Seals and Mentor Williams}
+{meta: x_source classic-country}
+{meta: x_source_file noreasontochangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know a man we call him poor boy Jones
@@ -47,3 +50,9 @@ And I [G]can't find a [D7]reason to [G]change
 {start_of_verse: Verse 6}
 [C]No I [G]can't find a [D7]reason to [G]change
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'll Keep On Dreaming}
 {meta: artist Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file illkeepondreaminglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Moment to [C]remember  [G]every day and [D7]night
@@ -39,3 +42,10 @@ I'll keep on [D7]dreaming  I'll keep on [G]dreaming
 {start_of_verse: Verse 5}
 [C]Dre[D7]aming of [G]you
 {end_of_verse}
+
+
+
+
+
+
+

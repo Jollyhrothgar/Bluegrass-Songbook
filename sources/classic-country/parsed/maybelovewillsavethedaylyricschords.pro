@@ -1,6 +1,9 @@
 {meta: title Maybe Love Will Save The Day}
 {meta: artist Charlie Pride}
 {meta: composer Jody W. Johnson and David H. Lindsey}
+{meta: x_source classic-country}
+{meta: x_source_file maybelovewillsavethedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's count all your reasons for [F]leavin'
@@ -34,3 +37,7 @@ Tomorrow we can talk about [F]forever
 Let's spend one more night [F]together
 [C]And maybe [G7]love will save the [C]day
 {end_of_verse}
+
+
+
+

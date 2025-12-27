@@ -1,6 +1,9 @@
 {meta: title Let's All Go Down to the River}
 {meta: artist Tammy Wynette}
 {meta: composer Earl Montgomery and Sue Richards}
+{meta: x_source classic-country}
+{meta: x_source_file letsallgodowntotheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's all go down to the river 
@@ -35,3 +38,8 @@ Be [D7]ready for that [G7]judgment [C]day
 [C]Let's all go down to the river 
 There's a [F]man who's walking on the [C]water
 {end_of_verse}
+
+
+
+
+

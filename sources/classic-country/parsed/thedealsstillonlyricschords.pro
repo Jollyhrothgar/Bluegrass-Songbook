@@ -1,6 +1,9 @@
 {meta: title The Deal's Still On}
 {meta: artist Jack Greene}
 {meta: composer Michael Keith Manuel}
+{meta: x_source classic-country}
+{meta: x_source_file thedealsstillonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a mountain outside Jerusalem 
@@ -41,3 +44,6 @@ So [Em]on His words you can rely
 [F]He's coming back [G7]right on time
 Cause the [F]deal's [G7]still [C]on
 {end_of_verse}
+
+
+

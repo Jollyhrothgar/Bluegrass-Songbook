@@ -1,6 +1,9 @@
 {meta: title Afraid}
 {meta: artist Willie Nelson}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file afraidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Afraid to tell you  [F]how much I [C]care 
@@ -22,3 +25,5 @@ I paid the [D7]cost and it hurt me [G7]so
 [C]A heart gets careless  [F]when vows are [C]made 
 I want to [G7]love you but I'm so [C]afraid
 {end_of_verse}
+
+

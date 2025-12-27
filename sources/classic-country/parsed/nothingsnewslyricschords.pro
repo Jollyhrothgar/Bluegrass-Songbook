@@ -1,5 +1,8 @@
 {meta: title Nothing's News}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file nothingsnewslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I spent my lifetime [G7]wishin'
@@ -53,3 +56,10 @@
 [F]But I've worn out the same old [Am]lines
 [Dm]Now it seems [G7]nothing's news to [C]me
 {end_of_verse}
+
+
+
+
+
+
+

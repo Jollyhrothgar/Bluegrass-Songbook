@@ -1,6 +1,9 @@
 {meta: title Best Of Strangers}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson and Buddy Killen}
+{meta: x_source classic-country}
+{meta: x_source_file bestofstrangerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Love is full of happiness but love [F]is full of [C]dangers
@@ -30,3 +33,7 @@
 [G7]Love is full of happiness but love [F]is full of [C]dangers
 [G7]Once the best of sweethearts can become [F]the best of [C]strangers
 {end_of_verse}
+
+
+
+

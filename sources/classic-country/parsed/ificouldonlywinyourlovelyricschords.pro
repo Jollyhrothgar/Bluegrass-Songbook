@@ -1,6 +1,9 @@
 {meta: title If I Could Only Win Your Love}
 {meta: artist Emmylou Harris}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldonlywinyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could only [G7]win your [C]love
@@ -29,3 +32,6 @@ If [C]I could only win [G7]your [C]love
 [D7]You'll never know how much I [C]give
 If [G7]I could only win your [C]love
 {end_of_verse}
+
+
+

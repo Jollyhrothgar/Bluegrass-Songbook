@@ -1,6 +1,9 @@
 {meta: title Don’t Go Out Tonight}
 {meta: artist Lonesome River Band}
 {meta: composer William York}
+{meta: x_source classic-country}
+{meta: x_source_file dontgoouttonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now don’t go out tonight little darling
@@ -48,3 +51,9 @@ I’m so [D7]lonesome while you’re [G]gone
 Stay at home with me my darling
 I’m so [D7]lonesome while you’re [G]gone
 {end_of_verse}
+
+
+
+
+
+

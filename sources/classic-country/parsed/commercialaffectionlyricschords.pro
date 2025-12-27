@@ -1,5 +1,8 @@
 {meta: title Commercial Affection}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file commercialaffectionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was lonely I guess the [D7]night that we met
@@ -30,3 +33,6 @@ Cause a [G7]fool and his money will [C]part
 Yes it was only comm[C7]ercial af[F]fection
 But [G7]she walked away with my [C]heart
 {end_of_verse}
+
+
+

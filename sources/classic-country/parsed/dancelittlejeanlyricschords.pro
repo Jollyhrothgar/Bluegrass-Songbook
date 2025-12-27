@@ -1,6 +1,9 @@
 {meta: title Dance Little Jean}
 {meta: artist John Denver}
 {meta: composer Jimmy Ibbotson}
+{meta: x_source classic-country}
+{meta: x_source_file dancelittlejeanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Played a wedding for the money 
@@ -64,3 +67,11 @@ Two people that you love [A7]stood up to say I [D7]do
 [C]Dance little Jean the prayer that you had [G]was answered [C]today
 Your [D7]momma's marrying your [G]dad
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Christmas Spirit}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Teddy Gentry, Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file theChristmasspiritlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see the [Em]lights of the [F]city to[C]night
@@ -48,3 +51,9 @@ It's [F]time it's [G7]Christmas [C]time
 Since the [Am]day Christ was [Em]born in [F]Bethle[Fm]hem
 The [C]Christmas [Am]spirit has [G7]been coming [C]down
 {end_of_verse}
+
+
+
+
+
+

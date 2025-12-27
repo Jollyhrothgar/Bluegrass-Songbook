@@ -1,6 +1,9 @@
 {meta: title My Love}
 {meta: artist Sonny James}
 {meta: composer Tony Hatch}
+{meta: x_source classic-country}
+{meta: x_source_file mylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My love is warmer [F]than the warmest sunshine softer [G7]than a [C]sigh
@@ -36,3 +39,7 @@
 [F]My love is brighter than the brightest star that [G7]shines every night [C]above
 [F]And there is nothing [G7]in this world that could ever [F]change my [C][G7]love
 {end_of_verse}
+
+
+
+

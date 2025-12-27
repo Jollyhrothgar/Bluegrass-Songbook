@@ -1,6 +1,9 @@
 {meta: title Unwanted}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Eddie Nesbitt}
+{meta: x_source classic-country}
+{meta: x_source_file unwantedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’ll never know how it feels to be unwanted
@@ -16,3 +19,4 @@ Someday you’ll [C]wake up and find you’re [D7]somebody’s used to be
 Then you’ll [G7]know that you’re unwanted just like [C]me
 Repeat 
 {end_of_verse}
+

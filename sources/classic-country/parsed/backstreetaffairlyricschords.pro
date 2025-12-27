@@ -1,6 +1,9 @@
 {meta: title Back Street Affair}
 {meta: artist Webb Pierce}
 {meta: composer Billy Wallace and Jimmy Rule}
+{meta: x_source classic-country}
+{meta: x_source_file backstreetaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You didn't know I wasn't free when you [C]fell in love with [G]me
@@ -29,3 +32,6 @@
 [C]I'll climb a mountain high and the world will hear [D7]me cry
 [G]That our love is not [D7]a back street [G]affair
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Song For The Mira}
 {meta: artist Anne Murray}
 {meta: composer Allister MacGillivray}
+{meta: x_source classic-country}
+{meta: x_source_file songforthemiralyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Out on the Mira [C]one warm [G]afternoon
@@ -51,3 +54,9 @@ I'm [G]going to be [D7]with them [G]again
 [C]I'll trade you ten of your [G]cities
 For Marion [A7]Bridge and the pleasure it [D7]brings
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title She Gave Her Heart To Jethro}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file shegaveherhearttojethrolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess you know [D7]Jethro went [G]crazy
@@ -56,3 +59,10 @@ But [G7]much can be said for this [C]girl
 Who gave her heart to [G]ol' [Em]Jethro
 And her [G]body to the [D7]whole damned [G]world
 {end_of_verse}
+
+
+
+
+
+
+

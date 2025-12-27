@@ -1,6 +1,9 @@
 {meta: title I Honestly Love You}
 {meta: artist Ronnie Milsap}
 {meta: composer Peter Allen and Jeff Barry}
+{meta: x_source classic-country}
+{meta: x_source_file ihonestlyloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe I hang around here a little more than I should
@@ -45,3 +48,10 @@ If we both were born in another place and time
 {start_of_verse: Verse 8}
 [C]I love you     [F][G7]I honestly love [C]you     [G7]I [F]honestly love [C]you
 {end_of_verse}
+
+
+
+
+
+
+

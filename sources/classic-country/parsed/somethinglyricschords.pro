@@ -1,6 +1,9 @@
 {meta: title Something}
 {meta: artist Tanya Tucker}
 {meta: composer George Harrison}
+{meta: x_source classic-country}
+{meta: x_source_file somethinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Something in the way he moves [Em]me
@@ -32,3 +35,6 @@
 [Am]I don't want to leave him [E7]now
 [Am]You know I believe and [D7]how
 {end_of_verse}
+
+
+

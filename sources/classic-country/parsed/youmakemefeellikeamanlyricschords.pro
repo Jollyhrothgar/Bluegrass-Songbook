@@ -1,6 +1,9 @@
 {meta: title You Make Me Feel Like a Man}
 {meta: artist Ricky Skaggs}
 {meta: composer Peter Rowan}
+{meta: x_source classic-country}
+{meta: x_source_file youmakemefeellikeamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it’s so good to see your face [G7]again
@@ -48,3 +51,9 @@ And it’s so good to kiss your lips [G7]again
 Tag:
 [F]You make me [G7]feel like a [C]man
 {end_of_verse}
+
+
+
+
+
+

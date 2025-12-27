@@ -1,6 +1,9 @@
 {meta: title How Much Lonelier Can Lonely Be}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file howmuchloneliercanlonelybelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](How much lonelier [G7]can lonely [C]be)
@@ -34,3 +37,7 @@ And cryin' cause the [F]hurt won't let me [C]sleep
 [F]Well how much [C]lonelier [G7]can lonely [C]be
 [F]Well how much [C]lonelier [G7]can lonely [C]be
 {end_of_verse}
+
+
+
+

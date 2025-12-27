@@ -1,6 +1,9 @@
 {meta: title Cup Of Loneliness}
 {meta: artist George Jones}
 {meta: composer George Jones and Burl Stephens}
+{meta: x_source classic-country}
+{meta: x_source_file cupoflonelinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I see Christian pilgrims so redeemed from sin
@@ -29,3 +32,6 @@ Oh my friends 'tis bitter sweet while here on earthly sod
 To suffer with the Savior and when the way is dark and dim
 [D7]To drink of the bitter cup of [C]loneliness with [G]Him
 {end_of_verse}
+
+
+

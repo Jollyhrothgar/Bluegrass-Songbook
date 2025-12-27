@@ -1,6 +1,9 @@
 {meta: title Blessed Assurance}
 {meta: artist Bill Anderson}
 {meta: composer Phoebe P. Knapp and Fanny J. Crosby}
+{meta: x_source classic-country}
+{meta: x_source_file blessedassurancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is my story  [F]this is my [C]song
@@ -36,3 +39,7 @@
 [C]This is my [F]story  this is my [C]song
 [F]Praising my [G7]Savior all the day [C]long
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Feel That Old Heartache Again}
 {meta: artist Ferlin Husky}
 {meta: composer Wayne P. Walker and Bill Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file ifeelthatoldheartacheagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh oh oh oh oh oh oh [F]oh
@@ -28,3 +31,6 @@ Oh oh oh [C]oh oh oh oh [F]oh
 oh oh oh [C]oh oh oh oh [F]oh 
 I feel that [D7]old [G7]heartache a[C]gain
 {end_of_verse}
+
+
+

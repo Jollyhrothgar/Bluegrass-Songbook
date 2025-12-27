@@ -1,6 +1,9 @@
 {meta: title Crazy Love}
 {meta: artist Doug Stone}
 {meta: composer Van Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file crazylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can hear her [Em]heart beat from a [F]thousand [C]miles
@@ -53,3 +56,11 @@ She give me [C]love love [Am]love [G7]love [F]crazy [C]love
 {start_of_verse: Verse 6}
 [F]Crazy [C]love
 {end_of_verse}
+
+
+
+
+
+
+
+

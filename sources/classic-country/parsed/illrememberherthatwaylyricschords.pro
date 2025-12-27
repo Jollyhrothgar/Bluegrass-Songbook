@@ -1,6 +1,9 @@
 {meta: title I'll Remember Her That Way}
 {meta: artist Cal Smith}
 {meta: composer Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file illrememberherthatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was like the morning sun 
@@ -24,3 +27,5 @@ And the smile she smiled for me Lord still [F]lingers
 And I’ll never understand how she faded through my [F]fingers
 For she was [C]all a woman could be [G7]and I’ll remember her that [C]way
 {end_of_verse}
+
+

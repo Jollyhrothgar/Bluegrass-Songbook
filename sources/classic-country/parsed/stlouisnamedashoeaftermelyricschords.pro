@@ -1,5 +1,8 @@
 {meta: title St. Louis Named A Shoe After Me}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file stlouisnamedashoeaftermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You know what I've been doin' honey since you said goodbye
@@ -48,3 +51,9 @@ St [A7]Louis named a [D7]shoe after [G]me [E7]
 Well you [A7]know they didn't [D7]name it after Jerry [G]Lee [E7]
 St [A7]Louis named a [D7]shoe after [G]me [C]  [G]
 {end_of_verse}
+
+
+
+
+
+

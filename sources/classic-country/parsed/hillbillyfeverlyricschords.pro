@@ -1,6 +1,9 @@
 {meta: title Hillbilly Fever}
 {meta: artist Little Jimmy Dickens}
 {meta: composer George Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file hillbillyfeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you walk up to a jukebox and you [C]slip that nickel [G]in
@@ -50,3 +53,9 @@ Good ole mountain music's got me [D7]down
 I'm gonna [G]one foot two foot slew foot drag and [C]then I'll hoe it [G]down
 Hillbilly [D7]fever's goin' [G]around
 {end_of_verse}
+
+
+
+
+
+

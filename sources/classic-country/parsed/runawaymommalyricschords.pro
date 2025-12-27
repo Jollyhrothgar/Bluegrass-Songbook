@@ -1,5 +1,8 @@
 {meta: title Runaway Momma}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file runawaymommalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's my runaway momma always chasing other [F]men
@@ -29,3 +32,6 @@ She's my runaway [G7]momma always somewhere gone [C]again
 If you see this kind of lady thumbing a ride and showing [F]skin
 She's my runaway [G7]momma call the law and turn her [C]in
 {end_of_verse}
+
+
+

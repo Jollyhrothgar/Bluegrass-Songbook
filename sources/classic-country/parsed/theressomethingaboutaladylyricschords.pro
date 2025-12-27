@@ -1,5 +1,8 @@
 {meta: title There's Something About A Lady}
 {meta: artist Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file theressomethingaboutaladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 There's Something About A Lady
@@ -37,3 +40,8 @@ Cause there's [G]something about a [D7]lady I can't [G]explain
 {start_of_verse: Verse 5}
 Yeah that's one thing about a [D7]lady I under[G]stand
 {end_of_verse}
+
+
+
+
+

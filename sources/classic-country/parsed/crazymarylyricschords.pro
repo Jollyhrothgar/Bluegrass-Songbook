@@ -1,6 +1,9 @@
 {meta: title Crazy Mary}
 {meta: artist David Allan Coe}
 {meta: composer Michael Smith}
+{meta: x_source classic-country}
+{meta: x_source_file crazymarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Crazy Mary from Londonderry
@@ -64,3 +67,9 @@ How [Gm]many lovers have you buried
 [C]Along the green and [Am]golden paths
 That [G7]took us home [F]away from [G7]Crazy [C]Mary [G7]
 {end_of_verse}
+
+
+
+
+
+

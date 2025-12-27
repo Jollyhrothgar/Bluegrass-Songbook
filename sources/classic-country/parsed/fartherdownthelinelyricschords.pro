@@ -1,6 +1,9 @@
 {meta: title Farther Down The Line}
 {meta: artist Willie Nelson}
 {meta: composer Lyle Lovett}
+{meta: x_source classic-country}
+{meta: x_source_file fartherdownthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let's have a hand for that young [C]cowboy 
@@ -57,3 +60,10 @@ And wish him better luck next [G]time
 I hope we'll see him up in [D7]Fargo 
 Or somewhere farther down the [G]line
 {end_of_verse}
+
+
+
+
+
+
+

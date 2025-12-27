@@ -1,6 +1,9 @@
 {meta: title Bluebonnet Lane}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker and Charles Drury}
+{meta: x_source classic-country}
+{meta: x_source_file bluebonnetlanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In my lonely heart there [F]lingers
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 Repeat last verse
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Any Old Love Won’t Do}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file anyoldlovewontdolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen ladies look at me
@@ -47,3 +50,8 @@ I [Dm]don't want to love
 If it [G7]isn't with you 
 Just [F]any old [G7]love won't [C]do
 {end_of_verse}
+
+
+
+
+

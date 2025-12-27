@@ -1,6 +1,9 @@
 {meta: title Out Where The Bright Lights Are Glowing}
 {meta: artist Ronnie Milsap}
 {meta: composer Gary Harrison and Kent Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file outwherethebrightlightsareglowinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was only eigh[G7]teen in a ducktail and [F]jeans when he had to [C]go
@@ -33,3 +36,7 @@ I [F]know deep in[G7]side he’s still [C]shining some[Am]where
 {start_of_verse: Verse 4}
 [F]Out where the [G7]bright lights are [C]glowing
 {end_of_verse}
+
+
+
+

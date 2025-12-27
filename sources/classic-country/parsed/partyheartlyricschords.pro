@@ -1,6 +1,9 @@
 {meta: title Party Heart}
 {meta: artist Roy Orbison}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file partyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Party heart  [G7]party heart
@@ -36,3 +39,8 @@ When [G7]someone breaks your party heart in [C]two
 Party heart [Am]party heart
 When [G7]someone breaks your party heart in [C]two
 {end_of_verse}
+
+
+
+
+

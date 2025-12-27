@@ -1,5 +1,8 @@
 {meta: title Me And Little Andy}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file meandlittleandylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Late one cold and stormy night I heard a dog a barking
@@ -60,3 +63,14 @@ Ain't you got no gingerbread ain't you got no candy
 {start_of_verse: Verse 12}
 Ain't you got an extra bed for me and little Andy
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

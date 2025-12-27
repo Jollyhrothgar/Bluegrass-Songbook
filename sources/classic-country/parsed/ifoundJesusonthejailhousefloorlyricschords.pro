@@ -1,6 +1,9 @@
 {meta: title I Found Jesus On The Jailhouse Floor}
 {meta: artist George Strait}
 {meta: composer Earl Clark and Greg Hudik}
+{meta: x_source classic-country}
+{meta: x_source_file ifoundJesusonthejailhousefloorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There was once a time when I was dead in[D7]side
@@ -39,3 +42,6 @@ What momma knew for [G]sure
 He's the [D7]King of kings the Lord of lords
 I found Jesus on the jailhouse [G]floor
 {end_of_verse}
+
+
+

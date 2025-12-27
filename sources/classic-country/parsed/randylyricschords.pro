@@ -1,5 +1,8 @@
 {meta: title Randy}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file randylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Randy in your eyes I see the [F]promise of a future
@@ -28,3 +31,6 @@ So Randy take me with you for that's [F]where I want to [C]be
 Randy let me show you what your [F]love has meant to [C]me
 [G7]Randy let me be the only [F]one you'll ever [C]need
 {end_of_verse}
+
+
+

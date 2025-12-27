@@ -1,6 +1,9 @@
 {meta: title I Found You Just In Time}
 {meta: artist Lynn Anderson}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file ifoundyoujustintimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I found you [Dm]just in [G7]time[F]
@@ -30,3 +33,6 @@ Don't ever let me hear [Em]goodbye again
 [A7]Cause baby when I al[D7]most lost my mind
 I found you [G7]just in [C]time[F]   [C]
 {end_of_verse}
+
+
+

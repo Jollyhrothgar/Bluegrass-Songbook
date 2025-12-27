@@ -1,5 +1,8 @@
 {meta: title When I Lay My Burdens Down}
 {meta: artist Larry Sparks}
+{meta: x_source classic-country}
+{meta: x_source_file whenilaymyburdensdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Glory glory hallelujah when I lay my burdens down
@@ -40,3 +43,10 @@ Glory glory hallelujah when I lay [G7]my burdens [C]down
 Glory glory hallelujah when I lay my burdens down
 Glory glory hallelujah when I lay [G7]my burdens [C]down
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title All You Want When You Please}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file allyouwantwhenyoupleaselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm sitting here looking at some [B7]mighty hard times
@@ -48,3 +51,10 @@ You just come like you look and if [B7]you get your picture took
 [C]All you [D7]want when you [G]please girls
 [C]All you [D7]want when you [G]please
 {end_of_verse}
+
+
+
+
+
+
+

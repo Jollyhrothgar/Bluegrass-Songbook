@@ -1,6 +1,9 @@
 {meta: title Joseph And Mary's Boy}
 {meta: artist Alabama}
 {meta: composer Don Cook and Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file josephandmarysboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Out here in the country there's [Em]magic in the air
@@ -38,3 +41,8 @@ The [Am]Christ Child [G7]born in [F]Bethle[Dm]hem  [F]Joseph and [G7]Mary's [C]b
 Everyone's invited the [Em]celebration's planned
 The [F]gift is just what's in your heart and [Dm]not what's in your [G7]hand 
 {end_of_verse}
+
+
+
+
+

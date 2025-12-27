@@ -1,6 +1,9 @@
 {meta: title The Christmas Tree}
 {meta: artist Bobby Vinton}
 {meta: composer Ronald Goodwin}
+{meta: x_source classic-country}
+{meta: x_source_file theChristmastreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There once was a tree a beautiful tree
@@ -56,3 +59,9 @@ Of all the Christmas trees
 {start_of_verse: Verse 7}
 [G]He is a very [Am]beautiful [D7]Christmas [G]tree
 {end_of_verse}
+
+
+
+
+
+

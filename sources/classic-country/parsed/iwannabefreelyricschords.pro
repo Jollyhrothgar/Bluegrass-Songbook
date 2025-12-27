@@ -1,5 +1,8 @@
 {meta: title I Wanna Be Free}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file iwannabefreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I look out the window and what do I see
@@ -60,3 +63,15 @@ I'm gonna take this chain from around my finger
 {start_of_verse: Verse 12}
 [D7]Do I wanna be [G]free  [D7]yeah I wanna be [G]free
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

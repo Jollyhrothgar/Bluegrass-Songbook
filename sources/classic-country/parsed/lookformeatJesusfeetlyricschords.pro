@@ -1,6 +1,9 @@
 {meta: title Look For Me At Jesus' Feet}
 {meta: artist The Booth Brothers}
 {meta: composer Squire E. Parsons Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file lookformeatJesusfeetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I leave this world [Em]of [C]sorrow
@@ -48,3 +51,9 @@ Look for me at [G7]Jesus' [C]feet
 There [F]I'll be through the countless [C]ages
 Look for me at [G7]Jesus' [C]feet
 {end_of_verse}
+
+
+
+
+
+

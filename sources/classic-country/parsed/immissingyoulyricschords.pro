@@ -1,6 +1,9 @@
 {meta: title I'm Missing You}
 {meta: artist Billy Crash Craddock}
 {meta: composer Michael Buckins and Randy McCormick}
+{meta: x_source classic-country}
+{meta: x_source_file immissingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Baby when I come home at night [D7]and you're not here
@@ -40,3 +43,8 @@ He's [Am]still in your heart [D7]right here at [G]home
 {start_of_verse: Verse 4}
 [C]Cause I'm missing you [D7]more and more each [G]day
 {end_of_verse}
+
+
+
+
+

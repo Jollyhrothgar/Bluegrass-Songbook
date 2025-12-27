@@ -1,5 +1,8 @@
 {meta: title Your Tender Loving Care Lyrics with Chords}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file yourtenderlovingcarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't need a [C]ship to sail the [G][C][G]o-ce-an 
@@ -22,3 +25,5 @@ Everything is [C]nothing dear [G]without [G][C]you
 And I'm nothing without your [C]tender loving [G]care
 I just need your [C]tender loving [G]care
 {end_of_verse}
+
+

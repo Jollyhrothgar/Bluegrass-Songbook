@@ -1,6 +1,9 @@
 {meta: title Going Going Gone}
 {meta: artist Billy Walker}
 {meta: composer Alex Kramer and Joan Whitney}
+{meta: x_source classic-country}
+{meta: x_source_file goinggoinggonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What am I bid for an [F]old guit[C]ar
@@ -33,3 +36,7 @@ Are [C]going [G7]going [C]gone
 {start_of_verse: Verse 5}
 Going [G7]going [C]gone
 {end_of_verse}
+
+
+
+

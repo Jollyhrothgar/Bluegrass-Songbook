@@ -1,6 +1,9 @@
 {meta: title Ain't It Just Like A Woman}
 {meta: artist Tracy Byrd}
 {meta: composer Al Anderson and Jeffrey Steele}
+{meta: x_source classic-country}
+{meta: x_source_file aintitjustlikeawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When it rains it [C]pours 
@@ -47,3 +50,8 @@ To [C]know when a [G]man needs [D7]to be [G]loved [D7]    [G]
 Ain't it [A#7]just like a [G]woman 
 To [C]know when a [G]man needs [D7]to be [G]loved
 {end_of_verse}
+
+
+
+
+

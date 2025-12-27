@@ -1,6 +1,9 @@
 {meta: title Shame Shame Shame}
 {meta: artist Webb Pierce}
 {meta: composer Arnie Powell and Trey Ackerman}
+{meta: x_source classic-country}
+{meta: x_source_file shameshameshamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went out down to Baton Rouge and I [F]met up with a [G7]gal
@@ -33,3 +36,7 @@ It was the first time for us you see [C]what we’ve done I can’t be[C7]lieve
 {start_of_verse: Verse 4}
 [G7]Only the good Lord knows a-knows what we have [C]done
 {end_of_verse}
+
+
+
+

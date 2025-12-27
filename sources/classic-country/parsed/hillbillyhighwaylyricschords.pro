@@ -1,6 +1,9 @@
 {meta: title Hillbilly Highway}
 {meta: artist Ricky Skaggs}
 {meta: composer Jimbeau Hinson and Steve Earle}
+{meta: x_source classic-country}
+{meta: x_source_file hillbillyhighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My granddaddy was a miner but he finally [C]saw the [G]light
@@ -46,3 +49,9 @@ You know [C]where I'm [G]bound
 [C]Down that [G]h-ill[C]billy [G]highway [C]on that [G]h-ill[C]billy [G]highway
 [C]That old [G]h-ill[C]billy highway goes on and [G]on
 {end_of_verse}
+
+
+
+
+
+

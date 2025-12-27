@@ -1,6 +1,9 @@
 {meta: title Nevada}
 {meta: artist Jim Ed Brown}
 {meta: composer Walter Donaldson and Mort Green}
+{meta: x_source classic-country}
+{meta: x_source_file nevadalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](O[F]ut[C] w[F]here the sunset is silver and gold
@@ -28,3 +31,6 @@ T[F]wo[Fm] li[C]ps divine were so willingly mine that night
 [C]We[G7] fe[C]ll[Dm] in[Am] lo[D7]ve oh so madly in love in Nevada (Nevada)
 [F]We[Fm] li[C]ve to dream by a blue mountain stream that night
 {end_of_verse}
+
+
+

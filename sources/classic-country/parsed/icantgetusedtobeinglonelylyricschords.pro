@@ -1,6 +1,9 @@
 {meta: title I Can't Get Used To Being Lonely}
 {meta: artist Connie Smith}
 {meta: composer Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file icantgetusedtobeinglonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got to get [F]used to bein' [C]lonely
@@ -29,3 +32,6 @@ Cause on my own I don't have faith in [G7]me
 But [C]loneliness is [F]all I have with[C]out you
 Cause I [G7]can't get used to [F]bein' this [C]lonely
 {end_of_verse}
+
+
+

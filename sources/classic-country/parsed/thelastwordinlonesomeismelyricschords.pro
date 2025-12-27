@@ -1,6 +1,9 @@
 {meta: title The Last Word in Lonesome Is Me}
 {meta: artist Eddy Arnold}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file thelastwordinlonesomeismelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The last word [D7]in lonesome is me
@@ -27,3 +30,6 @@ The [D7]last word in lonesome [G]is me
 My [G]heart is as lonely as [C]a heart can be lonely
 The [D7]last word in lonesome [G]is me
 {end_of_verse}
+
+
+

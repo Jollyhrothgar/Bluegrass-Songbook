@@ -1,6 +1,9 @@
 {meta: title The Girl Of My Best Friend}
 {meta: artist Elvis Presley}
 {meta: composer Beverly Ross and Sam Bobrick}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlofmybestfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The way she [Am]walks [C]the way she [Am]talks
@@ -32,3 +35,6 @@ With the [F]girl of [G7]my best [C]friend[Am]
 [C]Will it ever [Am]end
 [C]Please let it [Am]end
 {end_of_verse}
+
+
+

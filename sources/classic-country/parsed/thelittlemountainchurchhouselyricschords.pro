@@ -1,6 +1,9 @@
 {meta: title The Little Mountain Church House}
 {meta: artist Doyle Lawson}
 {meta: composer Carl E. Jackson and Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file thelittlemountainchurchhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a little mountain church in my [F]thoughts of yesterday
@@ -47,3 +50,9 @@ I first [C]heard the words [G7]I based my life [C]upon
 {start_of_verse: Verse 5}
 I first heard the words [G7]I based my life [C]upon
 {end_of_verse}
+
+
+
+
+
+

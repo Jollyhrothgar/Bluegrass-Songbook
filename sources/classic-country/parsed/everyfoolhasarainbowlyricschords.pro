@@ -1,5 +1,8 @@
 {meta: title Every Fool Has A Rainbow}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file everyfoolhasarainbowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every fool has [F]rainbow
@@ -21,3 +24,5 @@
 [F]Every fool has a [C]rainbow
 [F]And the [G7]rule applies to [C]me
 {end_of_verse}
+
+

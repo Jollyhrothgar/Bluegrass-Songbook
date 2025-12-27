@@ -1,6 +1,9 @@
 {meta: title You Never Even Call Me By My Name}
 {meta: artist David Allan Coe}
 {meta: composer Steve Goodman}
+{meta: x_source classic-country}
+{meta: x_source_file youneverevencallmebymynamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it was all that I could [G7]do to keep from [C]cryin'
@@ -67,3 +70,11 @@ And I never minded [G7]standin' in the [C]rain
 You never even [G7]call me but I [C]wonder why you don’t [F]call me
 [C]Why you don’t ever [G7]call me by my [F]nam[C]e
 {end_of_verse}
+
+
+
+
+
+
+
+

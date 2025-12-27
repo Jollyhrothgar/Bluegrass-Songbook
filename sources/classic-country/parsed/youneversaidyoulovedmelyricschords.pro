@@ -1,6 +1,9 @@
 {meta: title You Never Said You Loved Me}
 {meta: artist Jim Ed Brown}
 {meta: composer Johnny Russell and Tommy Russell}
+{meta: x_source classic-country}
+{meta: x_source_file youneversaidyoulovedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I said I love you in a moment [F]of [C]ecstasy
@@ -30,3 +33,7 @@ The seeds of love have now been planted
 [C]If one little lie will hurt you then say goodbye and forget [F]me
 [C]Cause you [F]never no [C]you never [G7]said you loved [C]me
 {end_of_verse}
+
+
+
+

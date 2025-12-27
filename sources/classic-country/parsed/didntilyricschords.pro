@@ -1,5 +1,8 @@
 {meta: title Didn't I}
 {meta: artist Dottie West}
+{meta: x_source classic-country}
+{meta: x_source_file didntilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Didn't I try hard enough to understand [A7]your [D7]ways
@@ -34,3 +37,8 @@ And you know I've thought I was all that you wanted
 Like ivy clinging to our little house so close were you and I
 [G7]Then came the day you just walked away and I lost you didn't [C]I
 {end_of_verse}
+
+
+
+
+

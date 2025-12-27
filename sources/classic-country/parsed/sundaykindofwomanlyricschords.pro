@@ -1,6 +1,9 @@
 {meta: title Sunday Kind Of Woman}
 {meta: artist Charlie Rich}
 {meta: composer Margaret A. Rich}
+{meta: x_source classic-country}
+{meta: x_source_file sundaykindofwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can [G]only i[D7]magine for our [Em]worlds are far [G]apart
@@ -25,3 +28,5 @@ A [C]Sunday kind of [Am]woman love an every[D7]day man like [G]me
 [C]Sunday kind of [Am]woman
 A [C]Sunday kind of [Am]woman love an every[D7]day man like [G]me
 {end_of_verse}
+
+

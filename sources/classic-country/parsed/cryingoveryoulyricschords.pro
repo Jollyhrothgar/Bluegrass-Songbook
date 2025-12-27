@@ -1,6 +1,9 @@
 {meta: title Crying Over You}
 {meta: artist Webb Pierce}
 {meta: composer Mark Dee}
+{meta: x_source classic-country}
+{meta: x_source_file cryingoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I never [C7]closed my eyes to [F]sleep
@@ -26,3 +29,5 @@
 [C]I'm gonna look around [C7]for someone [F]new
 [G7]Yes I'm gonna quit my crying over [C]you
 {end_of_verse}
+
+

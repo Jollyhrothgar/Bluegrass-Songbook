@@ -1,6 +1,9 @@
 {meta: title I'll Kiss The Baby}
 {meta: artist Tammy Wynette}
 {meta: composer Carmol Taylor and Quinton Claunch}
+{meta: x_source classic-country}
+{meta: x_source_file illkissthebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This time you'll never stop me
@@ -29,3 +32,6 @@ So I'll [G7]remember and kiss the baby for [C]you[G7]
 I don't [C]want her torn [C7]apart by things we [F]do
 So I'll [G7]remember and kiss the baby for [F]you[C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Vertical Expressions}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file verticalexpressionslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When she [C]asked me to dance I said no no I have two left [G7]feet
@@ -33,3 +36,7 @@ It's just a [C]vertical expression [G7]of horizontal [C]desire[G7]
 {start_of_verse: Verse 5}
 It's just a [C]vertical expression [G7]of horizontal [C]desire
 {end_of_verse}
+
+
+
+

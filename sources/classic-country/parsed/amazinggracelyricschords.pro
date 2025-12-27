@@ -1,6 +1,9 @@
 {meta: title Amazing Grace}
 {meta: artist Brenda Lee}
 {meta: composer John Newton, Bill Walker, William J. Gaither}
+{meta: x_source classic-country}
+{meta: x_source_file amazinggracelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Amazing grace how [F]sweet the [C]sound
@@ -43,3 +46,8 @@
 [C]I once was lost but [F]now I'm [C]found
 [G7]Was blind but now I [C]see
 {end_of_verse}
+
+
+
+
+

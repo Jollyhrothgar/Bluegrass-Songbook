@@ -1,6 +1,9 @@
 {meta: title Changing Partners}
 {meta: artist Patti Page}
 {meta: composer Larry Coleman [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file changingpartnerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]We were [C]waltzing together to a dreamy melo[F]dy
@@ -22,3 +25,5 @@ Oh my [Dm]darling [G7]I will [C]never [A7]change [Dm]partners [G7]a-ga[C]in
 [G7]So I'll [C]keep changing partners till you're in my [E7]arms and [A7]then 
 Oh my [Dm]darling [G7]I will [C]never [A7]change [Dm]partners [G7]a-ga[C]in
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Before Too Long}
 {meta: artist Red Sovine}
 {meta: composer Joe Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file beforetoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](Before too long will be too [C]late)
@@ -41,3 +44,8 @@ I bought some poison yesterday
 [C]So I have planned my own escape
 [G7]Before too long will be too [C]late
 {end_of_verse}
+
+
+
+
+

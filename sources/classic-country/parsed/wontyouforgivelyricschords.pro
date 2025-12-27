@@ -1,5 +1,8 @@
 {meta: title Won't You Forgive}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file wontyouforgivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know that I took  much [D7]more than I [G]gave
@@ -26,3 +29,6 @@ I've [G]done all I can  I'm [D7]down on my [G]knees
 I've even said please  it's [D7]all up to you
 Please won't you for-[G]g-[C]i-[G]ve
 {end_of_verse}
+
+
+

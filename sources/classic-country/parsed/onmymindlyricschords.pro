@@ -1,6 +1,9 @@
 {meta: title On My Mind}
 {meta: artist Lester Flatt}
 {meta: composer Jerry Organ and Tom James}
+{meta: x_source classic-country}
+{meta: x_source_file onmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't eat and I can't sleep all I [G7]do is sit and cry
@@ -29,3 +32,6 @@ You're always in my heart and on my [C]mind
 Once I thought my love had died darling [G7]here's what I find
 You're always in my heart and on my [C]mind
 {end_of_verse}
+
+
+

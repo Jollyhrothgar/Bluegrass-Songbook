@@ -1,6 +1,9 @@
 {meta: title The Straight Life Behind}
 {meta: artist Glen Campbell}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file thestraightlifebehindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I i[Em]magine my[F]self as a [C]drifter
@@ -53,3 +56,8 @@ A-[A]winking and blinking and [F]blowing my ear
 A-[A]leaving the straight life [D]behind
 [G]I'm just [C]playing a game [G7]in my-y [C]mind
 {end_of_verse}
+
+
+
+
+

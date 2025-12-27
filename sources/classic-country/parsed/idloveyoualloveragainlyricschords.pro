@@ -1,5 +1,8 @@
 {meta: title I'd Love You All Over Again}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file idloveyoualloveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Has it been ten years since [C]we said I [A7]do
@@ -33,3 +36,7 @@ I'd [C]love you all [D7]over a[G]gain  [D7]
 If [G]tomorrow I [G7]found one more [C]chance to [A7]begin
 I'd [C]love you all [D7]over a[C]gai[G]n 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Why Can't I Take You Home}
 {meta: artist Jim Ed Brown}
 {meta: composer Huey Long}
+{meta: x_source classic-country}
+{meta: x_source_file whycantitakeyouhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can see that want me look that's [F]gleaming in your eyes
@@ -32,3 +35,8 @@ If I've got [C]what it takes [G7]why can't I take you [C]home
 {start_of_verse: Verse 6}
 [F]If I've got [C]what it takes [G7]why can't I take you [C]home
 {end_of_verse}
+
+
+
+
+

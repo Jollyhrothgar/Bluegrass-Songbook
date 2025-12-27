@@ -1,5 +1,8 @@
 {meta: title Honky Tonkers Don't Cry}
 {meta: artist Dale Watson}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkersdontcrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Honky tonkers don't cry  [C]we ain't a[G]llowed
@@ -21,3 +24,5 @@ That's the way that it is  [D7]honky tonkers don't [G]cry
 That's the life that we [G]live  [C]every [G]night
 That's the way that it is  [D7]honky tonkers don't [G]cry
 {end_of_verse}
+
+

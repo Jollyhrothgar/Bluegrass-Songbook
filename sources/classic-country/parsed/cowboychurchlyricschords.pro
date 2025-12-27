@@ -1,6 +1,9 @@
 {meta: title Cowboy Church}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Luke Reed}
+{meta: x_source classic-country}
+{meta: x_source_file cowboychurchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I'm just a cowboy [F]and you know cowboy ways 
@@ -58,3 +61,10 @@ Cause [C]you made ‘em wild and [F]free
 So I know you've got a [C]place up there 
 For [G7]old cowboys like [F]m-[C]e  [G7]    [C]
 {end_of_verse}
+
+
+
+
+
+
+

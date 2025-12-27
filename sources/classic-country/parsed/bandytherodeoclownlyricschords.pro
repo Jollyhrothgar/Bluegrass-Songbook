@@ -1,6 +1,9 @@
 {meta: title Bandy The Rodeo Clown}
 {meta: artist Moe Bandy}
 {meta: composer Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file bandytherodeoclownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who was once a bull hooking son of a [Am]gun                  
@@ -31,3 +34,7 @@ The [D7]crowd thinks I'm a dandy  I'm Bandy the rodeo [G]clown
 {start_of_verse: Verse 5}
 Repeat last two verses
 {end_of_verse}
+
+
+
+

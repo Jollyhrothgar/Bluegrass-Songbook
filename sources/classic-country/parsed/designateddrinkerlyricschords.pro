@@ -1,6 +1,9 @@
 {meta: title Designated Drinker}
 {meta: artist Alan Jackson}
 {meta: composer Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file designateddrinkerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Here's my [G]keys I want you to [Am]take 'em
@@ -39,3 +42,7 @@ So [C]tonight [D7]I'm the designated [C]drin[G]ker
 So [C]tonight [D7]we're the designated [C]drin[G]kers
 Oh [C]tonight [D7]we're the designated [C]drin[G]kers
 {end_of_verse}
+
+
+
+

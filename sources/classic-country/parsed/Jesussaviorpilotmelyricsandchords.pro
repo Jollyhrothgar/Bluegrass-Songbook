@@ -1,6 +1,9 @@
 {meta: title Jesus Savior Pilot Me}
 {meta: artist George Morgan}
 {meta: composer William York}
+{meta: x_source classic-country}
+{meta: x_source_file Jesussaviorpilotmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus Savior [F]pilot [C]me 
@@ -19,3 +22,4 @@ When [G7]Thou say to them be [C]still
 Wondrous sovereign [F]of the [C]sea 
 [F]Jesus [C]Savior [G7]pilot [C]me
 {end_of_verse}
+

@@ -1,6 +1,9 @@
 {meta: title A Little Piece At A Time}
 {meta: artist Bill Haley}
 {meta: composer Neal Merritt and Shorty Hall}
+{meta: x_source classic-country}
+{meta: x_source_file alittlepieceatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]First the [C]look in your [Em]eyes [F]made me rea[G7]lize
@@ -23,3 +26,5 @@ Let [C]me put back each [Em]part [F]beginning with your [G7]heart
 Let's fall [C]in love again[Am]   [D7]a little [G7]piece at a [Am]time[D7]
 Let's fall [C]in love again[Am]   [D7]a little [G7]piece at a [C]time
 {end_of_verse}
+
+

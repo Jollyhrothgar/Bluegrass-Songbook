@@ -1,6 +1,9 @@
 {meta: title You Don't Hear}
 {meta: artist Kitty Wells}
 {meta: composer Tommy Cash and Jerry Huffman}
+{meta: x_source classic-country}
+{meta: x_source_file youdonthearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately you spend a [D7]lot of time at [C]parties
@@ -33,3 +36,7 @@ I talk to [G]you all the [D7]time but you don't [G]hear
 {start_of_verse: Verse 4}
 [C]I talk to [G]you all the [D7]time but you don't [G]hear
 {end_of_verse}
+
+
+
+

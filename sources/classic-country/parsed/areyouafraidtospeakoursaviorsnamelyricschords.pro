@@ -1,6 +1,9 @@
 {meta: title Are You Afraid To Speak Our Savior's Name}
 {meta: artist The Osborne Brothers}
 {meta: composer Bobby Osborne}
+{meta: x_source classic-country}
+{meta: x_source_file areyouafraidtospeakoursaviorsnamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today there's so much talk about the [D7]old [C]fashioned [G]ways
@@ -33,3 +36,7 @@ Don't be afraid or ashamed to [D7]speak our Savior's [G]name
 {start_of_verse: Verse 5}
 Don't be afraid or ashamed to [D7]speak our Savior's [C]name [D]   [G]
 {end_of_verse}
+
+
+
+

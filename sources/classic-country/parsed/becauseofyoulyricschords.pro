@@ -1,6 +1,9 @@
 {meta: title Because Of You}
 {meta: artist Sonny James}
 {meta: composer Arthur Hammerstein and Dudley Wilkinson}
+{meta: x_source classic-country}
+{meta: x_source_file becauseofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Because of [G7]you there's a song in my [C]heart
@@ -31,3 +34,6 @@
 [B7]Because of you [C]my life is now [Am]worthwhile
 [D7]And I can [G7]smile because [C]of you [F](because of [C]you)
 {end_of_verse}
+
+
+

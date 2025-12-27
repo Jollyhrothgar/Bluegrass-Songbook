@@ -1,6 +1,9 @@
 {meta: title Going Home}
 {meta: artist Keith Whitley}
 {meta: composer Troy Seals and John Schneider}
+{meta: x_source classic-country}
+{meta: x_source_file goinggomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I got a lot of friends on the west coast
@@ -53,3 +56,8 @@ There’ll be [C]picking there’ll be singing when I get [G]home
 Well my [D7]heart has done got heavy
 Gonna load it in my old Chevy and I’m going [G]home
 {end_of_verse}
+
+
+
+
+

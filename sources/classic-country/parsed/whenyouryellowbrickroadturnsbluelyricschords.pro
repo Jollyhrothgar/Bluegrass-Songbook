@@ -1,6 +1,9 @@
 {meta: title When Your Yellow Brick Road Turns Blue}
 {meta: artist John Anderson}
 {meta: composer Bernie Nelson and Gary Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file whenyouryellowbrickroadturnsbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You say that [C]somewhere over the rain[F]bow
@@ -53,3 +56,10 @@ When your [C]yellow brick [G7]road turns [C]blue
 Just remember I'll [F]always [C]be [F]here
 When your [C]yellow brick [G7]road turns [C]blue
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Sinner's Prayer}
 {meta: artist Eddy Arnold}
 {meta: composer Alberta McEnery and Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file asinnersprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A sinner's prayer is never [F]answered
@@ -29,3 +32,6 @@
 [C]She's all I love she's all I [F]needed
 [C]Oh won't [G7]you hear a sinner's [C]prayer
 {end_of_verse}
+
+
+

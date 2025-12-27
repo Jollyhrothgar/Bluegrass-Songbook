@@ -1,5 +1,8 @@
 {meta: title For All I Know}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file foralliknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For all I know you [C]never cared about [G]me
@@ -29,3 +32,6 @@ You've already made it clear that [G7]you stopped loving [C]me
 But for [G]all I know I [D7]may have lost my [G]mind
 [C]And for [G]all I know I [D7]may have lost my [G]mind
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Somebody's Always Saying Goodbye}
 {meta: artist Anne Murray}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysalwayssayinggoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Railroad station [G7]midnight trains [C]lonely airports in the [Am]rain
@@ -27,3 +30,6 @@
 {start_of_verse: Verse 4}
 [G]Somebody's always [D7]saying [G]goodbye
 {end_of_verse}
+
+
+

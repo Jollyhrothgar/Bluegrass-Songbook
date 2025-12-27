@@ -1,6 +1,9 @@
 {meta: title Drifting Away}
 {meta: artist Roy Orbison}
 {meta: composer Bill Dees and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file driftingawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Sadness slips in[C]to the room
@@ -33,3 +36,6 @@ Lonely together hurting each other still we can’t [C7]say that it’s [F]over
 Will we be [Dm]fore-ver forever [G7]drifting [C]a-[Am]way
 [F]Drifting  [G7]drifting a-[C]way
 {end_of_verse}
+
+
+

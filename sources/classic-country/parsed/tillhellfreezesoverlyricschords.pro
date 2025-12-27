@@ -1,5 +1,8 @@
 {meta: title Till Hell Freezes Over}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file tillhellfreezesoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I passed you on the street today
@@ -45,3 +48,7 @@ The fire of love lunged [C]through me
 And I trembled like a [F]child
 Cause [C]today I finally [G7]saw me in your [C]eyes
 {end_of_verse}
+
+
+
+

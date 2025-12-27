@@ -1,6 +1,9 @@
 {meta: title Meanwhile Down At Joe's}
 {meta: artist Kitty Wells}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file meanwhiledownatjoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I iron and I sew as I [F]watch the late show
@@ -29,3 +32,6 @@ I can almost see him there [G7]holding her so tight
 [F]Meanwhile here at home the baby's [C]crying
 [G7]All in all it's just another [C]night
 {end_of_verse}
+
+
+

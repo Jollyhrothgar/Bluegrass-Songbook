@@ -1,6 +1,9 @@
 {meta: title I Sure Don’t Need That Memory Tonight}
 {meta: artist Moe Bandy}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file isuredontneedthatmemorytonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I need a great big bottle of [G7]VOS to [C]go
@@ -31,3 +34,7 @@ And I [G7]sure don't need that memory [C]tonight
 {start_of_verse: Verse 5}
 No I [G7]sure don't need that memory [C]tonight
 {end_of_verse}
+
+
+
+

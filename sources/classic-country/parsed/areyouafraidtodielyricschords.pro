@@ -1,6 +1,9 @@
 {meta: title Are You Afraid To Die}
 {meta: artist Ricky Skaggs}
 {meta: composer Charlie Louvin, Ira Louvin, Eddie Hill}
+{meta: x_source classic-country}
+{meta: x_source_file areyouafraidtodielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Are you a [G7]stranger to [C]God  
@@ -42,3 +45,9 @@ Are you [G7]afraid to [C]die
 [F]Are you [C]afraid [G7]are you [C]unsaved 
 Are you [G7]afraid to [C]die
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Drinking Old Memories Down}
 {meta: artist Mickey Gilley}
 {meta: composer Stanley Kimble Garland}
+{meta: x_source classic-country}
+{meta: x_source_file drinkingoldmemoriesdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm drinking old memories [C]down
@@ -40,3 +43,8 @@ I'll be [D7]drinking old memories [G]down
 {start_of_verse: Verse 4}
 And I'll be [D7]drinking old memories [G]down
 {end_of_verse}
+
+
+
+
+

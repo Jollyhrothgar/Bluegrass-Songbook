@@ -1,6 +1,9 @@
 {meta: title There's Nobody Home To Go Home To}
 {meta: artist Charley Pride}
 {meta: composer Dickey Lee, Allen Reynolds, Mitt Addington}
+{meta: x_source classic-country}
+{meta: x_source_file theresnobodyhometogohometolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The neon lights are going out the barmaid's half [G7]asleep
@@ -33,3 +36,7 @@ And tonight I'd like to [G7]lay me down and [C]cry
 {start_of_verse: Verse 4}
 [G7]Yes to[C]night I'd like to [G7]lay me down and [F]cry[C]
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Caught In The Middle}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file caughtinthemiddlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Caught In The Middle
@@ -31,3 +34,7 @@ And my fate is to [A7]be just a [G7]lonely lonely [Dm]man
 I’m sure I’d [G7]find just a little too late that I’m [D7]caught in the middle
 And my fate is to [A7]be just a [G7]lonely lonely [Dm]man
 {end_of_verse}
+
+
+
+

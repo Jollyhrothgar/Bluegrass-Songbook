@@ -1,6 +1,9 @@
 {meta: title Happy Birthday Dear Heartache}
 {meta: artist Barbara Mandrell}
 {meta: composer Archie Jordan and Mack David}
+{meta: x_source classic-country}
+{meta: x_source_file happybirthdaydearheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's just a [Am]year to[Dm]day [G7]
@@ -34,3 +37,7 @@ Same time same [G7]place next [C]year[F]
 [C]So happy [E7]birthday dear [F]heart[Dm]ache
 Same time same [G7]place next [C]year
 {end_of_verse}
+
+
+
+

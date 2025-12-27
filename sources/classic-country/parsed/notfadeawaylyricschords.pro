@@ -1,6 +1,9 @@
 {meta: title Not Fade Away}
 {meta: artist Buddy Holly}
 {meta: composer Charles Hardin, Buddy Holly, Norman Petty}
+{meta: x_source classic-country}
+{meta: x_source_file notfadeawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a-gonna tell you how it's gonna [F]be
@@ -28,3 +31,6 @@ A [C]love is love and not [F]fade [C]away
 {start_of_verse: Verse 4}
 A love is love and not [F]fade [C]away
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Nothing I Can Do About It Now}
 {meta: artist Willie Nelson}
 {meta: composer Beth Nielsen Chapman}
+{meta: x_source classic-country}
+{meta: x_source_file nothingicandoaboutitnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got a long list of real good reasons  
@@ -76,3 +79,17 @@ Tag:
 [D7]I'm forgiving everything that forgiveness will allow
 And there's nothing I can do about [G]it now
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

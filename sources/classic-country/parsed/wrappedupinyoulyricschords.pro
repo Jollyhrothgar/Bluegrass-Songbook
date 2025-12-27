@@ -1,6 +1,9 @@
 {meta: title Wrapped Up In You}
 {meta: artist Garth Brooks}
 {meta: composer Wayne Kirkpatrick}
+{meta: x_source classic-country}
+{meta: x_source_file wrappedupinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How do I love you well let me [B7]see
@@ -44,3 +47,8 @@ I [C]love you about as deep as any [A7]love can grow
 {start_of_verse: Verse 5}
 Baby com[A7]pletely [C]wrapped up in [G]you
 {end_of_verse}
+
+
+
+
+

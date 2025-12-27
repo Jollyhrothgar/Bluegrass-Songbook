@@ -1,6 +1,9 @@
 {meta: title I'll Be Alright Tomorrow}
 {meta: artist Mac Wiseman}
 {meta: composer Bobby Osborne and Pete Goble}
+{meta: x_source classic-country}
+{meta: x_source_file illbealrighttomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I may be a little bit tired tonight
@@ -53,3 +56,9 @@ I may be a little bit tired tonight
 But I’ll be alright tomorrow 
 [A7]Cause my [D7]baby's coming [G]home
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let Me Stay Awhile}
 {meta: artist Waylon Jennings}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file letmestayawhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Can I stay with you [C]awhile hide awhile [D7]behind your [G]smile
@@ -22,3 +25,5 @@
 [G]Just let me sleep here for [C]a time in the [D7]warmth of your loving [G]mind
 [C]Mhmm mhmm till I [Am]find the strength to go [D7]mhmm [G]mhmm
 {end_of_verse}
+
+

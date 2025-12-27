@@ -1,6 +1,9 @@
 {meta: title Just an Old Flame}
 {meta: artist Hank Thompson}
 {meta: composer Bob Robinson and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file justanoldflamelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She just an old [C7]flame I don't [F]recall her name she just [G7]happened [G7][C]along
@@ -22,3 +25,5 @@
 [C]Just another [C7]date I haven't [F]seen of late [G7]what did you say was her [G7][C]name
 [C]I'll smile in [C7]disguise hide the [F]tears in my eyes she's [G7]just an old [C]flame
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title I Feel Sorry For Me}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file ifeelsorryformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You walked away you said goodbye [F]my world ended my world died
@@ -27,3 +30,6 @@ A [F]blue blue feeling of coming years
 {start_of_verse: Verse 4}
 Baby [G7]I feel sorry for [C]me 
 {end_of_verse}
+
+
+

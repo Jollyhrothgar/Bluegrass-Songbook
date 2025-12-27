@@ -1,5 +1,8 @@
 {meta: title There You Go}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file thereyougolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're gonna break another [D7]heart
@@ -34,3 +37,7 @@ I know you're gonna [C]be the way you've [D7]always [G]been
 [C]Breaking hearts and [G]telling lies is all [D7]you [G]know
 Another guy gives [C]you the eye and [D7]there you [G]go
 {end_of_verse}
+
+
+
+

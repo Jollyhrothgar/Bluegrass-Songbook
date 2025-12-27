@@ -1,6 +1,9 @@
 {meta: title Queen For a Day}
 {meta: artist Wanda Jackson}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file queenforadaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hold me my darling  make me [C]believe
@@ -29,3 +32,6 @@ You'll love me and [G]leave me you're funny that [D7]way
 But [G]darling I love you  and each night I [C]pray
 I won't be just your [G]queen [D7]for a [G]day
 {end_of_verse}
+
+
+

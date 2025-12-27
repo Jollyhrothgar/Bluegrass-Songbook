@@ -1,6 +1,9 @@
 {meta: title Cindy Oh Cindy}
 {meta: artist Waylon Jennings}
 {meta: composer Bob Barron and Burt Long}
+{meta: x_source classic-country}
+{meta: x_source_file cindyohcindylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I joined the navy to [Am]see the world but [F]nowhere could I [C]find
@@ -39,3 +42,9 @@
 [C]Cindy Cindy Cindy don't let me [G7]down
 [C]Write me a letter soon and I'll be homeward bound
 {end_of_verse}
+
+
+
+
+
+

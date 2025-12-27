@@ -1,6 +1,9 @@
 {meta: title The Angels Are Singing}
 {meta: artist The Stanley Brothers}
 {meta: composer Carter Stanley and Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file theangelsaresinginglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sweetheart I recall the day I first [G7]met you
@@ -43,3 +46,8 @@ I see your sweet face your blue eyes so [C]bright
 God took you away and left me so [G7]lonely
 The angels are singing in heaven [C]tonight
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lady's Choice}
 {meta: artist Keith Whitley}
 {meta: composer Sharon Vaughn and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file ladyschoicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's the lady's choice 
@@ -40,3 +43,8 @@ My heart has no [Dm]voice
 My heart has no [Dm]voice 
 [G7]It's the lady's [C]choice
 {end_of_verse}
+
+
+
+
+

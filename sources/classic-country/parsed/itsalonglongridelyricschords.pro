@@ -1,5 +1,8 @@
 {meta: title It's A Long Long Ride}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file itsalonglongridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a long long ride from [C]Phoenix to [G]Chicago
@@ -28,3 +31,6 @@ It's a long long long ride from [C]happiness to [G]pride
 But the [C]day you made me fall was [G]the longest ride of all
 Cause [C]baby that's the [D7]one you took me [G]for
 {end_of_verse}
+
+
+

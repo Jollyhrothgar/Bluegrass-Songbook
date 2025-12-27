@@ -1,5 +1,8 @@
 {meta: title I Don't Want My Golden Slippers}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file idontwantmygoldenslipperslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't want my golden slippers when I [F]reach my heaven's [C]home
@@ -21,3 +24,5 @@ I don't want my golden pathways just a [D7]country road will [G7]do
 Love to [C]see the devil tremble when he [F]sees me on my [C]knees
 I don't want my golden slippers I'm just [G7]longing to be [C]free
 {end_of_verse}
+
+

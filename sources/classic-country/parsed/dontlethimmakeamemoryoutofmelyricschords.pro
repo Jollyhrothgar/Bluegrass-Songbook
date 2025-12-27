@@ -1,6 +1,9 @@
 {meta: title Don't Let Him Make A Memory Out Of Me}
 {meta: artist Billy Walker}
 {meta: composer Arthur Leo Owens and Jerry McBee}
+{meta: x_source classic-country}
+{meta: x_source_file dontlethimmakeamemoryoutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say you only want to [Am]see him [D7]
@@ -47,3 +50,9 @@ When he comes on and makes his move [C]remember I’ll be [Am]right for you
 {start_of_verse: Verse 6}
 [D7]Don’t let him make a memory out of [G]me
 {end_of_verse}
+
+
+
+
+
+

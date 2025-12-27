@@ -1,5 +1,8 @@
 {meta: title Man Of Galilee}
 {meta: artist Bluegrass Gospel}
+{meta: x_source classic-country}
+{meta: x_source_file manofgalileelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a manger long ago I know it was really [G7]so
@@ -35,3 +38,7 @@ Fighting against the people who were [C]right
 Like wise men from above He heard these words of [G7]love
 I am the Christ the Man of [C]Galilee
 {end_of_verse}
+
+
+
+

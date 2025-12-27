@@ -1,6 +1,9 @@
 {meta: title Would I}
 {meta: artist Randy Travis}
 {meta: composer Mark Winchester}
+{meta: x_source classic-country}
+{meta: x_source_file wouldilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Would I would I would I
@@ -46,3 +49,9 @@ If I had you baby maybe [G7]yes I [C]would
 {start_of_verse: Verse 6}
 If I had you baby maybe [G7]yes yes I [C]would
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title If You Love Me Don't Leave Me}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoulovemedontleavemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you love me don't [F]leave me if you leave me I'll [C]cry
@@ -21,3 +24,5 @@
 [F]Like roses need raindrops like daisy's need [C]dew
 [G7]Like a babe needs it's mother that's how I need [C]you
 {end_of_verse}
+
+

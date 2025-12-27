@@ -1,5 +1,8 @@
 {meta: title Singing In The Kitchen}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file singinginthekitchenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here we go singing in the kitchen 
@@ -63,3 +66,11 @@ Who do we love singing in the kitchen
 [C]Whole lot of love singing in the [F]kitchen 
 [G7]Banging on the pots and [C]pans 
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title He Drove Her Out Of His Mind}
 {meta: artist Mel Tillis}
 {meta: composer Bob Corbin, Murray Cannon, Robert Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file hedroveheroutofhismindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For years she tried to [F]make it all [C]work
@@ -46,3 +49,8 @@ But never a [D7]comfort to [G7]find
 [F]Last night on the highway at [C]a hundred and [F]ten
 [C]He drove her [G7]out of his [C]mind       
 {end_of_verse}
+
+
+
+
+

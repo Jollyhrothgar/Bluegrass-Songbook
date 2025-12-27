@@ -1,6 +1,9 @@
 {meta: title It's So Easy}
 {meta: artist Buddy Holly}
 {meta: composer Buddy Holly and Norman Petty}
+{meta: x_source classic-country}
+{meta: x_source_file itssoeasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's so [D7]easy to [C]fall in [D7]love
@@ -29,3 +32,6 @@ Well [D7]your concerned that my heart has [G]learned
 [G]It's so [D7]easy to [C]fall in [D7]love
 [G]It's so [C]easy to [D7]fall in [G]love
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title One Kiss Away From Loneliness}
 {meta: artist The Osborne Brothers}
 {meta: composer Paul Williams and Sam Humphrey}
+{meta: x_source classic-country}
+{meta: x_source_file onekissawayfromlonelinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm walking you home for the last [G7]time
@@ -29,3 +32,6 @@
 [G7]Broken heart we'll have to face it try to hold no regret
 [C]I'm just one kiss away from loneliness
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Wisdom Of A Fool}
 {meta: artist Barbara Mandrell}
 {meta: composer Abner Silver and Roy Alfred}
+{meta: x_source classic-country}
+{meta: x_source_file wisdomofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]If you're [G]lucky enough [D7]to have [Am]someone who [E7]loves you
@@ -30,3 +33,6 @@ I'm [E7]afraid it's too [Em]late for [D7]me
 Only [Am]listen to the [D7]wisdom of a [Em]fool
 Only [Am]listen to the [D7]wisdom of a [G]fool
 {end_of_verse}
+
+
+

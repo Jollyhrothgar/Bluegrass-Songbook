@@ -1,6 +1,9 @@
 {meta: title I Want You Back Again}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file iwantyoubackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I don't know how it happened
@@ -45,3 +48,8 @@ So I gather up all of my courage
 [D7]My tears won't stop and my heart won't mend
 [G]I want you back again
 {end_of_verse}
+
+
+
+
+

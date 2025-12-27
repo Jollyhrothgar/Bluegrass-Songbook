@@ -1,6 +1,9 @@
 {meta: title Petal From A Faded Rose Lyrics and Chords}
 {meta: artist Hank Snow}
 {meta: composer Merle Travis and Leon Rusk}
+{meta: x_source classic-country}
+{meta: x_source_file petalfromafadedroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here's a rose from my [G7]garden
@@ -29,3 +32,6 @@ Where the sea of memory [C]flows
 And each time I dream [C7]then a tear will [F]gleam
 On this [G7]petal from a faded [C]rose
 {end_of_verse}
+
+
+

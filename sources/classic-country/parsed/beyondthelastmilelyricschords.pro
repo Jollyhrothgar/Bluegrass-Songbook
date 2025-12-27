@@ -1,6 +1,9 @@
 {meta: title Beyond The Last Mile}
 {meta: artist Johnny Paycheck}
 {meta: composer Rex Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file beyondthelastmilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm watching the clock tick the hours [F]away
@@ -29,3 +32,6 @@ The chaplain is making his last plea to [F]God
 But my footsteps won't falter I'll walk with a [F]smile
 [G7]And then we'll be together beyond the last [C]mile
 {end_of_verse}
+
+
+

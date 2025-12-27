@@ -1,6 +1,9 @@
 {meta: title The Goodbye Of The Year}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thegoodbyeoftheyearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't feel the [C]world be[G]tween us 
@@ -36,3 +39,7 @@ I think it's [C]only [G]fair
 To say con[C]gratu[G]lation 
 For the goodbye of[D7] the ye[C]ar [G]
 {end_of_verse}
+
+
+
+

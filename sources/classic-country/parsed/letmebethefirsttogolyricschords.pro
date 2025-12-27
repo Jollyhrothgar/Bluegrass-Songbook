@@ -1,6 +1,9 @@
 {meta: title Let Me Be The First To Go}
 {meta: artist Gene Watson}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file letmebethefirsttogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I've never asked for [C7]any [F]favors
@@ -33,3 +36,7 @@ So [G7]let me be the first to [C]go
 {start_of_verse: Verse 4}
 Please [G7]let me be the first to [C]go
 {end_of_verse}
+
+
+
+

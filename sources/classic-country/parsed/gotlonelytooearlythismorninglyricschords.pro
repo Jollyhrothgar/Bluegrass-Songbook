@@ -1,5 +1,8 @@
 {meta: title Got Lonely Too Early This Morning}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file gotlonelytooearlythismorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Got lonely too early this morning
@@ -46,3 +49,10 @@ The [D7]TV had gone off [G7]again
 [F]Got lonely too early this [C]morning
 [G7]Before I was ready to [C]hurt
 {end_of_verse}
+
+
+
+
+
+
+

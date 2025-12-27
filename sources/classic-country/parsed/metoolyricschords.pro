@@ -1,6 +1,9 @@
 {meta: title Me Too}
 {meta: artist Eddy Arnold}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file metoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You write and say you're broken hearted  [C]me too
@@ -29,3 +32,6 @@ You [D7]want to push a baby carriage  [G]me too
 I [C]never loved nobody half as [G]much as I love [C]you
 And it's [G]nice to know [D7]you love me [G]too
 {end_of_verse}
+
+
+

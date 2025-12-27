@@ -1,6 +1,9 @@
 {meta: title Memorabilia}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file memorabilialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I remember when I was just a kid 
@@ -57,3 +60,10 @@ Good [C]times from the [G]past that you [C]never once [D7]forgot
 Memora[C]bili[G]a [C]hold some world to [G]remember it
 [C]Saving what we [G]love in memora[C]bili[G]a
 {end_of_verse}
+
+
+
+
+
+
+

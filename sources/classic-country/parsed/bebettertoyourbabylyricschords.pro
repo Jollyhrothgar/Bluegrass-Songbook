@@ -1,5 +1,8 @@
 {meta: title Be Better To Your Baby}
 {meta: artist Justin Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file bebettertoyourbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Be better to your baby and you'll [D7]have a better baby
@@ -28,3 +31,6 @@ You [D7]haven't been doing that [G7]exactly
 [C]So be better to your baby and you'll [D7]have a better baby
 [G7]And if you don't I'll steal her love by [C]cracky
 {end_of_verse}
+
+
+

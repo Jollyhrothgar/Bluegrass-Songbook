@@ -1,5 +1,8 @@
 {meta: title Tell Lorrie I Love Her}
 {meta: artist Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file telllorrieiloveherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I were alone in the desert 
@@ -50,3 +53,9 @@ Tell her [D7]she’s the only girl for [G]me
 And if I [Am]leave this old world 
 Tell her [D7]she’s the only girl for [G]me
 {end_of_verse}
+
+
+
+
+
+

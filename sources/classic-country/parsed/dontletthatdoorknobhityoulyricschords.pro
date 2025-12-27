@@ -1,6 +1,9 @@
 {meta: title Don't Let That Doorknob Hit You}
 {meta: artist Norma Jean}
 {meta: composer Vic Alpin}
+{meta: x_source classic-country}
+{meta: x_source_file dontletthatdoorknobhityoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For a long long time now just about every [C]night
@@ -33,3 +36,7 @@ Don't [D7]let that doorknob hit you going [G]out
 {start_of_verse: Verse 4}
 Don't [D7]let that doorknob hit you going [G]out
 {end_of_verse}
+
+
+
+

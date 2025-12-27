@@ -1,6 +1,9 @@
 {meta: title Cigarettes Whiskey and Wild Wild Women}
 {meta: artist Wilburn Brothers}
 {meta: composer Tim Spencer}
+{meta: x_source classic-country}
+{meta: x_source_file cigaretteswhiskeyandwildwildwomenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Cigarettes and whiskey and [C]wild wild [G]women
@@ -50,3 +53,10 @@ Ciga[G]rettes and whiskey and [C]wild wild [G]women
 {start_of_verse: Verse 5}
 They'll drive you crazy they'll [D7]drive you in[G]sane
 {end_of_verse}
+
+
+
+
+
+
+

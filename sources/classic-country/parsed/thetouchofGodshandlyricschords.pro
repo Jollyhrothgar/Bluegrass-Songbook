@@ -1,6 +1,9 @@
 {meta: title The Touch Of God's Hand}
 {meta: artist Eddy Arnold}
 {meta: composer Bob Nolan}
+{meta: x_source classic-country}
+{meta: x_source_file thetouchofGodshandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The prairie sun [G7]sends down its [C]ray 
@@ -43,3 +46,8 @@ I [C]know the [D7]touch of God's [G7]hand
 I [Dm]know He must be [D7]standing [G7]near 
 I [C]felt the [D7]touch [G7]of God's [C]hand
 {end_of_verse}
+
+
+
+
+

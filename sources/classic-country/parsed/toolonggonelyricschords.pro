@@ -1,6 +1,9 @@
 {meta: title Too Long Gone}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file toolonggonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As I turned in the driveway you [C]turned on the [G]light
@@ -29,3 +32,6 @@ I've been [G]too [C]long [D7]gone
 I've seen too [G]much rain felt too much [C]pain
 I've been [G]gone  [D7]too long [G]gone
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Take This Job And Shove It}
 {meta: artist Johnny Paycheck}
 {meta: composer David Allen Coe}
+{meta: x_source classic-country}
+{meta: x_source_file takethisjobandshoveitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take this job and shove it
@@ -73,3 +76,12 @@ As I'm [F]walking out that [C]door
 You can [F]take this job and shove [C]it
 I ain't [G7]working here no [C]more
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Biding My Time}
 {meta: artist Anne Murray}
 {meta: composer Gene MacLellan}
+{meta: x_source classic-country}
+{meta: x_source_file justbidingmytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't believe that you’re honestly thinking of leaving [Am]me
@@ -36,3 +39,8 @@ I'll just be [D7]bidin' my time till the glow from the wine makes a [G]fool of m
 {start_of_verse: Verse 4}
 [D7]Bidin' my time till the glow from the wine makes a [C]fool of [G]me
 {end_of_verse}
+
+
+
+
+

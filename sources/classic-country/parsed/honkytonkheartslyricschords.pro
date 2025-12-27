@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Hearts}
 {meta: artist John Anderson}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see you across the dance floor 
@@ -35,3 +38,7 @@ But it always looks [G7]different in the [F]bright morning [C]light[G7]
 {start_of_verse: Verse 5}
 Honky tonk [C]hear[F]ts fall in love [C]easy
 {end_of_verse}
+
+
+
+

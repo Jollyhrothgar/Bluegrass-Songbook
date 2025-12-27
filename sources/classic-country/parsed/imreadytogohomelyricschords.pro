@@ -1,5 +1,8 @@
 {meta: title I'm Ready To Go Home}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file imreadytogohomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Through the valley’s of this life [D7]I have [G]wandered
@@ -42,3 +45,8 @@ And the harvest of the fields Lord I have [D7]done
 But [C]now my steps are growing [G]weary 
 Lord I’m waiting I’m [D7]ready to go [G]home
 {end_of_verse}
+
+
+
+
+

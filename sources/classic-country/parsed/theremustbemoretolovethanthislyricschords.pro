@@ -1,5 +1,8 @@
 {meta: title There Must Be More To Love Than This}
 {meta: artist Jerry Lee Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file theremustbemoretolovethanthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wake up in the morning I'm still crying  yes I [G7]am
@@ -32,3 +35,7 @@ And I [C]know there must be [G7]more to love than [C]this
 {start_of_verse: Verse 5}
 Yes I [C]know there must be [G7]more to love than [C]this
 {end_of_verse}
+
+
+
+

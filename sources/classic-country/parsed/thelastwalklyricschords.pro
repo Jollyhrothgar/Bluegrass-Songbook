@@ -1,6 +1,9 @@
 {meta: title The Last Walk}
 {meta: artist Jimmie Davis}
 {meta: composer Bob Willis and Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file thelastwalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Jesus [G]walked to the [C]tomb of [G]Lazarus
@@ -29,3 +32,6 @@ Up that lonely winding [D7]way
 To [G]bleed and die be[C]tween two thieves
 He [G]took the last [D7]walk for [C]me[G]
 {end_of_verse}
+
+
+

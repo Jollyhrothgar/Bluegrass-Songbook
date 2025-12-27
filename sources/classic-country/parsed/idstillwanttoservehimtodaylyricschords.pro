@@ -1,6 +1,9 @@
 {meta: title I'd Still Want To Serve Him Today}
 {meta: artist Connie Smith}
 {meta: composer Ray Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file idstillwanttoservehimtodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If there were no hope beyond earthly shadows
@@ -40,3 +43,9 @@ To catch His children away
 [C]He's already given my soul enough [G]heaven
 [D7]I'm still gonna serve Him [G]today
 {end_of_verse}
+
+
+
+
+
+

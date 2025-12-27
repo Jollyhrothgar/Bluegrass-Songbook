@@ -1,6 +1,9 @@
 {meta: title When I Travel My Last Mile (He Will Hold My Hand)}
 {meta: artist Rhonda Vincent}
 {meta: composer Henry J. Donohue}
+{meta: x_source classic-country}
+{meta: x_source_file whenitravelmylastmilehewillholdmyhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some day when I travel my last [C]mile [G]here 
@@ -48,3 +51,9 @@ In beautiful [D7]heaven I [G]know
 Then safe [C]I will [G]be 
 In beautiful [D7]heaven I [G]know
 {end_of_verse}
+
+
+
+
+
+

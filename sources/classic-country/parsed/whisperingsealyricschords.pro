@@ -1,5 +1,8 @@
 {meta: title Whispering Sea}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file whisperingsealyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sat down by the sea and it [F]whispered to [C]me
@@ -28,3 +31,6 @@ Whispering [F]sea rolling by why don't you [C]listen to me cry
 Oh [C]how I love him so no [F]one will ever [C]know
 No [G7]one but the drifting whispering [C]sea
 {end_of_verse}
+
+
+

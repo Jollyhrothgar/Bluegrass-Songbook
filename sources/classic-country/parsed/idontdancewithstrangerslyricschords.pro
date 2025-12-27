@@ -1,6 +1,9 @@
 {meta: title I Don't Dance With Strangers}
 {meta: artist Becky Hobbs}
 {meta: composer Jerry Hawkins and Becky Hobbs}
+{meta: x_source classic-country}
+{meta: x_source_file idontdancewithstrangerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The band is playing that old melo[Am]dy
@@ -35,3 +38,7 @@ And you’re tall dark and lonesome and [G7]it’s driving me [C]insane
 Yeah but I don’t dance with [Dm]strangers so [D7]honey what’s your [G]name
 [C]But I don’t dance with [Dm]strangers so [D7]honey what’s your [G]name
 {end_of_verse}
+
+
+
+

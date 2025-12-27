@@ -1,6 +1,9 @@
 {meta: title How Much I Must Have Loved You}
 {meta: artist Faron Young}
 {meta: composer Danny Dill}
+{meta: x_source classic-country}
+{meta: x_source_file howmuchimusthavelovedyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How much I must have loved you once upon a [F]time
@@ -30,3 +33,6 @@ But [Am]why did I let you break me [Em]completely
 And I [F]hope the one who thinks you love him now [C]don’t lose his [F]mind
 Cause that’s how much I loved [G7]you once upon a [C]time
 {end_of_verse}
+
+
+

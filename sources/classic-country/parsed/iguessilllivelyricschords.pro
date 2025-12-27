@@ -1,6 +1,9 @@
 {meta: title I Guess I'll Live}
 {meta: artist David Houston}
 {meta: composer Glenn Sutton and Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file iguessilllivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I always thought if [G7]I lost you I'd [C]die
@@ -26,3 +29,6 @@ So [F]if the world don't [G7]end I guess I'll [C]live
 {start_of_verse: Verse 4}
 So [F]if the world don't [G7]end I guess I'll [C]live
 {end_of_verse}
+
+
+

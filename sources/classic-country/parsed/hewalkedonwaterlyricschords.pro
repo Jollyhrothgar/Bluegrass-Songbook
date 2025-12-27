@@ -1,6 +1,9 @@
 {meta: title He Walked On Water}
 {meta: artist Randy Travis}
 {meta: composer Allen Shamblin}
+{meta: x_source classic-country}
+{meta: x_source_file hewalkedonwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He wore starched white shirts buttoned at the [F]neck
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 6}
 [C]I thought that he [G7]walked on [C]water
 {end_of_verse}
+
+
+
+
+
+

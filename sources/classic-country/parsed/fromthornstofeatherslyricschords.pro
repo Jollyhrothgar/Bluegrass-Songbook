@@ -1,5 +1,8 @@
 {meta: title From Thorns To Feathers}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file fromthornstofeatherslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From thorns to [C]feathers  [D7]what a change God can [G]bring
@@ -32,3 +35,7 @@ From thorns to [G]feathers [D7]someday I'm going [G]home
 {start_of_verse: Verse 5}
 [C]From thorns to [G]feathers my [D7]Lord will take me [G]home
 {end_of_verse}
+
+
+
+

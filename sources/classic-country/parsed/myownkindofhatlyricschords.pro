@@ -1,5 +1,8 @@
 {meta: title My Own Kind Of Hat}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file myownkindofhatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cowboys and outlaws right guys and [F]southpaws
@@ -38,3 +41,7 @@ Good dogs and all kinds of [G7]cats
 But I stand right here where I'm [G7]at
 Cause [F]I wear My [G7]Own Kind Of [C]Hat
 {end_of_verse}
+
+
+
+

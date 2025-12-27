@@ -1,6 +1,9 @@
 {meta: title Treasure Of Love}
 {meta: artist George Jones}
 {meta: composer J.P. Richardson and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file treasureoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a pocket full of [G7]pennies the [F]heart full of [C]gold
@@ -22,3 +25,5 @@
 [F]Yes my pockets are empty but still wealthy I'll [C]be
 [G7]With the treasure of love the treasure of love you gave [F]to [C]m--e
 {end_of_verse}
+
+

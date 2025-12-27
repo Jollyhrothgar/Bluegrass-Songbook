@@ -1,6 +1,9 @@
 {meta: title Here I Am (Alone Again)}
 {meta: artist Billy Walker}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file hereiamaloneagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The first time that you went away [F]without saying why
@@ -33,3 +36,7 @@ Here I am [F]alone again
 {start_of_verse: Verse 4}
 [G7]Here I am alone [C]again
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Farther To Go}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file farthertogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been up to the top [C]of heartbreak [G]mountain
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 5}
 [C]Yes I've got farther to go than I've [G]been
 {end_of_verse}
+
+
+
+

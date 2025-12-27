@@ -1,6 +1,9 @@
 {meta: title I’m In Love Again}
 {meta: artist George Morgan}
 {meta: composer Vic McAlpin and George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file iminloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not so long ago I had my poor heart [F]broken
@@ -29,3 +32,6 @@ I'm so [C]happy I'm afraid this dream might [G7]end
 Live each [C]day as though the last my heart keeps [F]singing
 I hear [G7]wedding bells and I'm in love [C]again
 {end_of_verse}
+
+
+

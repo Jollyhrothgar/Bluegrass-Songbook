@@ -1,6 +1,9 @@
 {meta: title The Gift}
 {meta: artist Garth Brooks}
 {meta: composer Stephanie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file thegiftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A poor orphan girl named Maria
@@ -92,3 +95,19 @@ To that cascade of notes sweet and [G7]long
 As her offering was lifted to heaven
 By the very first nightingale's [C]song
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rollin' Lonely}
 {meta: artist Johnny Lee}
 {meta: composer Gary Harrison and J.D. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file rollinlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The diesels racin’ I passed a waystation [Dm]way back down the road
@@ -40,3 +43,7 @@ Cause [Dm]I said some things [G7]I didn’t mean and I [Dm]just gotta make it [G
 I’m [F]movin like lightnin’ through the [Fm]pourin’ rain
 [Dm]Rollin lonely [G7]all the way to Memphis [C]tonight[G7]
 {end_of_verse}
+
+
+
+

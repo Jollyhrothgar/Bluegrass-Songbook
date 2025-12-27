@@ -1,5 +1,8 @@
 {meta: title A Year Ago Tonight}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file ayearagotonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I received your card this morning when the [F]mailman passed my [D7]way
@@ -28,3 +31,6 @@ When the [G7]fading years have turned our hair to [C]white
 I will always feel you near me even [F]though we’re worlds [D7]apart
 Cause I’ll [G7]still recall a year ago [C]tonight 
 {end_of_verse}
+
+
+

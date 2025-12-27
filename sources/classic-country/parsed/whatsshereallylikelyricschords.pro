@@ -1,6 +1,9 @@
 {meta: title What's She Really Like}
 {meta: artist Elvis Presley}
 {meta: composer Sid Wayne and Abner Silver}
+{meta: x_source classic-country}
+{meta: x_source_file whatsshereallylikelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What's she really like the [F]girl that you [G7]see me with
@@ -49,3 +52,9 @@ She's [F]marvelous [G7]and she's [C]mine
 [F]Marvelous [G7]and she's [C]mine
 [F]Wonderful [G7]and she's [C]mine
 {end_of_verse}
+
+
+
+
+
+

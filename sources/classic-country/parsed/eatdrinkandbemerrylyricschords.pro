@@ -1,6 +1,9 @@
 {meta: title Eat Drink And Be Merry}
 {meta: artist Porter Wagoner}
 {meta: composer Celia Ferguson and Sandra Ferguson}
+{meta: x_source classic-country}
+{meta: x_source_file eatdrinkandbemerrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little heart you've been broken many times [G7]before
@@ -22,3 +25,5 @@ Will soon [D7]be forsaken and left [G7]there to [D7]die
 [C]Well I guess that's what happened she [C7]said her good[F]bye
 Eat drink and be [C]merry  [G7]tomorrow you'll [C]cry
 {end_of_verse}
+
+

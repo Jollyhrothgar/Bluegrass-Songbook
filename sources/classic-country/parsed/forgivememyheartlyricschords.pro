@@ -1,6 +1,9 @@
 {meta: title Forgive Me My Heart}
 {meta: artist Ray Price}
 {meta: composer Dan Hoffman and Chuck Woolery}
+{meta: x_source classic-country}
+{meta: x_source_file forgivememyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello heart it's me again do you [G7]remember
@@ -34,3 +37,7 @@ Like the [C]blind leading the [A7]blind
 Forgive me [D7]heart I [G7]know you love her [C]too [A7]
 Forgive me [D7]heart I [G7]know I promised [C]you
 {end_of_verse}
+
+
+
+

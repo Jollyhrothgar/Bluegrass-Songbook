@@ -1,6 +1,9 @@
 {meta: title You Were Always on My Mind}
 {meta: artist Willie Nelson}
 {meta: composer Wayne C. Thompson and Johnny Christopher}
+{meta: x_source classic-country}
+{meta: x_source_file youwerealwaysonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Maybe I didn't love [D7]you
@@ -44,3 +47,8 @@ I just [G]never took [Am]the [D7]time
 You were [G]always on [D7]my [G]mind
 [D7]You were [C]always on [D7]my [G]mind
 {end_of_verse}
+
+
+
+
+

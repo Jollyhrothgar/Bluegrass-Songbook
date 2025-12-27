@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Be Moving}
 {meta: artist Vern Gosdin}
 {meta: composer Randall Hilton}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnabemovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This old world's no place for living
@@ -56,3 +59,14 @@ The Lord's gonna be my next door neighbor
 Not enough cares and not enough giving
 [C]Sometimes clouds of sin and sorrow hide the [G]way
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title For All The Wrong Reasons}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file forallthewrongreasonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love you [C]for all the wrong [G]reasons [C]  [G]
@@ -57,3 +60,10 @@ I need you every night and every [D7]day
 Yes I [G]love you [C]for all the wrong [G]reasons [C]  [G]
 Cause you love me [D7]in all the right [G]ways [C]  [G]
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Stay Out Of My Arms}
 {meta: artist George Strait}
 {meta: composer Jim Lauderdale}
+{meta: x_source classic-country}
+{meta: x_source_file stayoutofmyarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many times temp[C7]tation grows so [F]strong
@@ -40,3 +43,8 @@ Don't follow [G7]me stay out of my [C]arms
 {start_of_verse: Verse 4}
 Don't follow [G7]me stay out of my [C]arms
 {end_of_verse}
+
+
+
+
+

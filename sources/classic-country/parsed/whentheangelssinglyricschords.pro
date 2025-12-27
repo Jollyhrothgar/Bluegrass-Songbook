@@ -1,6 +1,9 @@
 {meta: title When The Angels Sing}
 {meta: artist Rhonda Vincent}
 {meta: composer Aubrey Noble, Darrin Vincent, Rhonda Vincent,}
+{meta: x_source classic-country}
+{meta: x_source_file whentheangelssinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When love is faithful [F]strong and true
@@ -33,3 +36,7 @@ When the [C]angels sing for [G7]you and [C]me
 {start_of_verse: Verse 4}
 [F]When the [C]angels sing for [G7]you and [C]me
 {end_of_verse}
+
+
+
+

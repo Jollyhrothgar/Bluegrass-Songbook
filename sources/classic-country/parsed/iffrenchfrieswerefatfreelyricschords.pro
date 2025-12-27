@@ -1,5 +1,8 @@
 {meta: title If French Fries Were Fat Free}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file iffrenchfrieswerefatfreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I made a [D7]mess of my [G]life
@@ -51,3 +54,8 @@ And [D7]you still [G]love me
 Oh if [C]French fries were fat free
 [D7]And you still [G]love me
 {end_of_verse}
+
+
+
+
+

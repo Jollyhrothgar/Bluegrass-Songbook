@@ -1,6 +1,9 @@
 {meta: title Go Away With Me}
 {meta: artist Wilburn Brothers}
 {meta: composer Dan Welch}
+{meta: x_source classic-country}
+{meta: x_source_file goawaywithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Go go go away with [G7]me [C]mmm  
@@ -35,3 +38,7 @@ The [F]false love that's haunting your memories
 Go and you'll [G7]never re[C]gret
 Go away with [G7]me  [C]mmm
 {end_of_verse}
+
+
+
+

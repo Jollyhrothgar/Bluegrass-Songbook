@@ -1,5 +1,8 @@
 {meta: title Bluegrass Saturday Night}
 {meta: artist Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file bluegrasssaturdaynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Three hundred days of traveling pickin' music from the [F]soul
@@ -40,3 +43,8 @@ Special [C]thanks to Martha White for a [G7]bluegrass Saturday [C]night
 Hey Augie take me back to Nashville time to hold my baby [F]tight
 Every[C]body say goodbye to a [G7]bluegrass Saturday [C]night
 {end_of_verse}
+
+
+
+
+

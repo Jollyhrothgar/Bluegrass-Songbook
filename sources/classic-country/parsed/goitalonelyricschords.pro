@@ -1,6 +1,9 @@
 {meta: title Go It Alone}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file goitalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here we are [G7]again [Dm]my old [C]friend[G7]
@@ -46,3 +49,8 @@ It's [C]chiseled in stone we say our [G7]amen and you go it [C]alone
 {start_of_verse: Verse 5}
 You go it [G7]alone you go it [C]alone
 {end_of_verse}
+
+
+
+
+

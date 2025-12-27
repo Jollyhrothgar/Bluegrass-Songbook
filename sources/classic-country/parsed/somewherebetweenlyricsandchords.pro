@@ -1,5 +1,8 @@
 {meta: title Somewhere Between}
 {meta: artist Ernest Tubb and Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file somewherebetweenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere [G7]between me and [C]you
@@ -36,3 +39,8 @@ There's a door [G7]without any [C]key
 {start_of_verse: Verse 5}
 Yes somewhere [G7]between me and [C]you
 {end_of_verse}
+
+
+
+
+

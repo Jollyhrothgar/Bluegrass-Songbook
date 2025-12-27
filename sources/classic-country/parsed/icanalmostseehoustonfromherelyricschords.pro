@@ -1,5 +1,8 @@
 {meta: title I Can Almost See Houston From Here}
 {meta: artist Ronnie Milsap}
+{meta: x_source classic-country}
+{meta: x_source_file icanalmostseehoustonfromherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw Mary's face  in that little [G7]snow-flake
@@ -41,3 +44,8 @@ But with this old thumb I'll get a ride
 [G7]From the cold Rocky Mountains of [C]Denver
 [G]I can almost [D7]see Houston from [G]here
 {end_of_verse}
+
+
+
+
+

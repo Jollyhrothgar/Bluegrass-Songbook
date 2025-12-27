@@ -1,6 +1,9 @@
 {meta: title Busy Makin' Plans}
 {meta: artist Ronnie Milsap}
 {meta: composer Benjamin Scott and James Yeary}
+{meta: x_source classic-country}
+{meta: x_source_file busymakinplanslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It won't be [C]easy the first nights without [F]you
@@ -28,3 +31,6 @@
 {start_of_verse: Verse 4}
 [G7]No don't worry I'm busy making [C]plans
 {end_of_verse}
+
+
+

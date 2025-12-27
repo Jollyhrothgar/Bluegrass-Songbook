@@ -1,6 +1,9 @@
 {meta: title I Got Wine On My Mind}
 {meta: artist Johnny Paycheck}
 {meta: composer B. George}
+{meta: x_source classic-country}
+{meta: x_source_file igotwineonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’d like to go to [F]church Sunday [C]morning
@@ -26,3 +29,6 @@ Cause I’ve got [C]wine on my [D7]mind all the [C]time
 {start_of_verse: Verse 4}
 Yes I’ve got [C]wine on my [D7]mind all the [C]time
 {end_of_verse}
+
+
+

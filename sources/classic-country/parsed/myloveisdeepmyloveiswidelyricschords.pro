@@ -1,6 +1,9 @@
 {meta: title My Love Is Deep My Love Is Wide}
 {meta: artist Ronnie Milsap}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file myloveisdeepmyloveiswidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My love is [F]deep  [C]my love is [F]wide
@@ -40,3 +43,8 @@ I [C]got too much [Am]love for [C]you for [D7]me to [G7]try to [C]hide
 {start_of_verse: Verse 4}
 I got too much [Am]love for [C]you for [D7]me to [G7]try to [C]hide
 {end_of_verse}
+
+
+
+
+

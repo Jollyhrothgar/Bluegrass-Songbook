@@ -1,5 +1,8 @@
 {meta: title Blow Out The Candles}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file blowoutthecandleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You came to my party [C]on my special [G]day
@@ -28,3 +31,6 @@ With [C]one little [G]candle that [A7]still flickers [D7]on
 [G]Nobody cares if it [C]dies or it [G]burns
 But [C]just like this [G]old flame in [D7]my heart it [G]burns
 {end_of_verse}
+
+
+

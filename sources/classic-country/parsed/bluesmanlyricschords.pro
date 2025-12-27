@@ -1,6 +1,9 @@
 {meta: title Blues Man}
 {meta: artist Mel Tillis}
 {meta: composer Joe Smart}
+{meta: x_source classic-country}
+{meta: x_source_file bluesmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With a copy of the Myth commercial appeal
@@ -57,3 +60,10 @@ Oh you and me together
 [G7]While the people they don't wanna hear
 [C]The blues man no more
 {end_of_verse}
+
+
+
+
+
+
+

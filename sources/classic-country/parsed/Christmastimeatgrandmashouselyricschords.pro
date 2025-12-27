@@ -1,5 +1,8 @@
 {meta: title Christmas Time At Grandma's House}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file Christmastimeatgrandmashouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Kin folks come and children by the dozen a big happy [G7]family
@@ -36,3 +39,7 @@
 [F]It’s my very favorite day of all no place I’d rather [C]be
 [G7]There’s nothing like Christmas at grandma’s house down home in [C]Tennessee
 {end_of_verse}
+
+
+
+

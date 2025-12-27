@@ -1,6 +1,9 @@
 {meta: title Hanging Over Me}
 {meta: artist Jack Greene}
 {meta: composer Hank Cochran and Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file hangingovermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If only I could [F]walk out in the [C]sunshine
@@ -27,3 +30,6 @@ Would [C]love to see that's [F]good for me
 [C]Without your [F]shadow [C]hanging [G7]all over [C]me
 [C]Without your [F]shadow [C]hanging [G7]all over [C]me
 {end_of_verse}
+
+
+

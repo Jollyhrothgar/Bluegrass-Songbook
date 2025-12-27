@@ -1,6 +1,9 @@
 {meta: title Things You Said To Me}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo and Al Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file thingsyousaidtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said you'd always be true as long as I were to [G7]you
@@ -37,3 +40,7 @@ The things you said to [C]me
 {start_of_verse: Verse 4}
 [G7]Things you said to [C]me  [G7]things you said to [C]me
 {end_of_verse}
+
+
+
+

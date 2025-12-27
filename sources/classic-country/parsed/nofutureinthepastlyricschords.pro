@@ -1,6 +1,9 @@
 {meta: title No Future In The Past}
 {meta: artist Vince Gill}
 {meta: composer Carl Jackson and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file nofutureinthepastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I lie here tonight in the [D7]darkness
@@ -28,3 +31,6 @@ repeat last verse
 Why [Am]can't I [D7]forget it [G7]can't I ad[C]mit it
 [F]There ain't no [G7]future in the [C]past
 {end_of_verse}
+
+
+

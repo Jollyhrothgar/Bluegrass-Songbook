@@ -1,6 +1,9 @@
 {meta: title If I Could Put Them All Together}
 {meta: artist George Jones}
 {meta: composer Even Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldputthemalltogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess I ran to Rhonda for her [C]sympathy
@@ -33,3 +36,7 @@ If I could [G]put them all [D7]together I'd have [G]you
 {start_of_verse: Verse 4}
 [C]If I could [G]put them all [D7]together I'd have [G][C]y-ou
 {end_of_verse}
+
+
+
+

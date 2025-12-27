@@ -1,6 +1,9 @@
 {meta: title Won't You Come Home And Talk To A Stranger}
 {meta: artist Ernest Tubb and Loretta Lynn}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file wontyoucomehomeandtalktoastrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I was out a drinking 
@@ -47,3 +50,9 @@ It's the only place in [G7]days you haven't [C]been
 {start_of_verse: Verse 6}
 It's the only place in [G7]days you haven't [C]been
 {end_of_verse}
+
+
+
+
+
+

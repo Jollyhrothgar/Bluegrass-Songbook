@@ -1,6 +1,9 @@
 {meta: title The Kentuckian Song}
 {meta: artist Anita Carter}
 {meta: composer Irving Gordon}
+{meta: x_source classic-country}
+{meta: x_source_file thekentuckiansonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see my darling in [F]each spray of summer [C]sunlight
@@ -22,3 +25,5 @@
 [C]My heart would cry more than the [F]weeping willow [C]tree
 [G7]If my darling and his heart were not for [C]me
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Dust On Mother's Bible}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file dustonmothersbiblelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's dust on [G7]mother's [C]Bible 
@@ -42,3 +45,8 @@ Its [F]cover's worn with [C]age
 And [F]though it's old and [C]wrinkled 
 Momma's there on [G7]ev-ery [C]page
 {end_of_verse}
+
+
+
+
+

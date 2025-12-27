@@ -1,6 +1,9 @@
 {meta: title Sleeping Single In A Double Bed}
 {meta: artist Barbara Mandrell}
 {meta: composer Dennis W. Morgan and Rhonda Kye Fleming}
+{meta: x_source classic-country}
+{meta: x_source_file sleepingsingleinadoublebedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sleeping single in a double bed
@@ -50,3 +53,9 @@ Tossing turning trying to forget (you-[F]ou)
 I could be lying with you instead
 I'm sleeping [G7]single in a double [C]bed
 {end_of_verse}
+
+
+
+
+
+

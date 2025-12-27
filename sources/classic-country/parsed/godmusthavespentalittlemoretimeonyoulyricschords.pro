@@ -1,6 +1,9 @@
 {meta: title God Must Have Spent A Little More Time On You chords}
 {meta: artist Alabama}
 {meta: composer Sturken Carl Allen, Rogers Evan A}
+{meta: x_source classic-country}
+{meta: x_source_file godmusthavespentalittlemoretimeonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 {comment: Bb }
@@ -34,3 +37,6 @@ They broke[Dm] the mold when you came in t[D]his world               [G]
 [Em]The warmth of your smile the heart of a [B6]child
 [Em]That's deep inside it leaves me puri[D]fied
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Weeds Outlived The Roses}
 {meta: artist Darrell McCall}
 {meta: composer Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file weedsoutlivedtheroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We moved on the second floor of a [F]grocery [C]store [F]garage
@@ -31,3 +34,6 @@ And [G7]all I’ve got is a greasy spot in an empty parking [C]lot
 We spent a lot of time out there [F]when the day would end
 And [G7]Lord I’d love to see her now and my ol’ truck pull [C]in
 {end_of_verse}
+
+
+

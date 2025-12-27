@@ -1,6 +1,9 @@
 {meta: title Black Coffee}
 {meta: artist Lacy J. Dalton}
 {meta: composer Hillary A. Kanter and Even Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file blackcoffeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Black Coffee blue morning
@@ -59,3 +62,13 @@ Black Coffee green envy
 {start_of_verse: Verse 9}
 [D7]I got this bad feeling I'm losing [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

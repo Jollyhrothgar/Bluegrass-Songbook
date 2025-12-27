@@ -1,6 +1,9 @@
 {meta: title Your Wedding}
 {meta: artist Jim Reeves}
 {meta: composer Ray Winkler and Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file yourweddinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm on my [G7]way to your [C]wedding how I hate [G7]to go [C]there
@@ -22,3 +25,5 @@ But to [F]tear this [C]letter [F]o-[C]pen was more than [G7]I could [C]stand
 Would it matter [G7]if I [C]told you that I cried for my [G7]first time [C]today
 But I've [F]got my [C]tears turned [F]o-[C]ff so please don't [G7]look my [C]way
 {end_of_verse}
+
+

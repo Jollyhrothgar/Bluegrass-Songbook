@@ -1,6 +1,9 @@
 {meta: title If I Can’t Have All Of You}
 {meta: artist Wilburn Brothers}
 {meta: composer Jeff Tweel, Vernon Reed, Rex Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file ificanthaveallofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love it when you're with me
@@ -53,3 +56,10 @@ Just give me what you think is [G]fair
 [D7]If I can't have all of you 
 Just give me what you think is [G]fair
 {end_of_verse}
+
+
+
+
+
+
+

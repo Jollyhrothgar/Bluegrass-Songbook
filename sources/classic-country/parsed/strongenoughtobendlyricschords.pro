@@ -1,5 +1,8 @@
 {meta: title Strong Enough To Bend}
 {meta: artist Tanya Tucker}
+{meta: x_source classic-country}
+{meta: x_source_file strongenoughtobendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a tree [G7]out in [C]the [G7]backyard
@@ -42,3 +45,8 @@ That [F]never has been [G7]broken by [C]the [G7]wind
 Our [C]love [G7]will [C]last [G7]forever
 If we're [F]strong [G7]enough [C]to bend
 {end_of_verse}
+
+
+
+
+

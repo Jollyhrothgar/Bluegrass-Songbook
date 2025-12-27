@@ -1,6 +1,9 @@
 {meta: title Hey Little Lucy}
 {meta: artist Conway Twitty}
 {meta: composer Aaron Schroeder, George Weiss, Sharon Silbert}
+{meta: x_source classic-country}
+{meta: x_source_file heylittlelucylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby when I take you out tonight
@@ -43,3 +46,8 @@ Don't you [C]put your lipstick on
 Be[G7]fore the night is through
 I'm gonna kiss it right off right off of [C]you
 {end_of_verse}
+
+
+
+
+

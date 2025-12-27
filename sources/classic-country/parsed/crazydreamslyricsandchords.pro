@@ -1,6 +1,9 @@
 {meta: title Crazy Dreams}
 {meta: artist Johnny Bush}
 {meta: composer Sanger D. Shafer, Donny Kees, Aaron Barker}
+{meta: x_source classic-country}
+{meta: x_source_file crazydreamslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Cra[G7]zy [C]dreams I still [A#7]believe [F]in
@@ -48,3 +51,8 @@ You're [G7]still [C]mine in [G7]all my crazy [C]dreams
 {start_of_verse: Verse 4}
 [F]You're [G7]still [C]mine in [G7]all my crazy [F]dreams cra[G7]zy [C]dreams
 {end_of_verse}
+
+
+
+
+

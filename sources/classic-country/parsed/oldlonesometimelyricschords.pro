@@ -1,6 +1,9 @@
 {meta: title Old Lonesome Time}
 {meta: artist Carl Smith}
 {meta: composer Sonny James and Hazel H. Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file oldlonesometimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don’t judge me guilty about the [C]word going around
@@ -29,3 +32,6 @@ So [D7]think of yourself just [C]left alone like [G]me
 If you sentence me darling let [C]it be a short time 
 But [D7]don’t judge me guilty blame old lonesome [G]time
 {end_of_verse}
+
+
+

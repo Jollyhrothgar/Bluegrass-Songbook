@@ -1,5 +1,8 @@
 {meta: title Road To Recovery}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file roadtorecoverylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Tonight there's a fire burning [C]brightly 
@@ -33,3 +36,7 @@ There'll [C]soon be no [G7]turning a[C]round
 I must [F]start on the road to [C]recovery[Am]
 Before [C]there's no [G7]turning a[C]round
 {end_of_verse}
+
+
+
+

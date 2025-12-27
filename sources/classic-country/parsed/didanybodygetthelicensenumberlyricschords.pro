@@ -1,5 +1,8 @@
 {meta: title Did Anybody Get The License Number}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file didanybodygetthelicensenumberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She was fire and she was ice
@@ -40,3 +43,8 @@ It's so hard to forget
 When you've had a wreck like [C]that
 Did [D7]anybody get the license [G]number 
 {end_of_verse}
+
+
+
+
+

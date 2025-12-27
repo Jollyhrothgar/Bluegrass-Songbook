@@ -1,6 +1,9 @@
 {meta: title I Can't Go Home Like This}
 {meta: artist Ray Price}
 {meta: composer Nellie Wallace}
+{meta: x_source classic-country}
+{meta: x_source_file icantgohomelikethislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's too much lipstick on my collar
@@ -56,3 +59,11 @@ You better be home by a quarter to eight
 [F]I guess I'll have to sleep in the attic tonight
 [C]Cause I can't [G7]go home like [C]this
 {end_of_verse}
+
+
+
+
+
+
+
+

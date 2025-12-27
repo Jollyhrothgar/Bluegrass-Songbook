@@ -1,6 +1,9 @@
 {meta: title I've Got All The Heartaches I Can Handle}
 {meta: artist Ernest Tubb}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotalltheheartachesicanhandlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just come into this bar to have a [G7]quick one
@@ -47,3 +50,9 @@ I'll [G7]call you when I'm runnin' short of [C]blues
 {start_of_verse: Verse 6}
 I'll [G7]call you when I'm runnin' out of [C]blues
 {end_of_verse}
+
+
+
+
+
+

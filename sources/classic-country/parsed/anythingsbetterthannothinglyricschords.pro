@@ -1,6 +1,9 @@
 {meta: title Anything's Better Than Nothing}
 {meta: artist Porter Wagoner}
 {meta: composer Marie Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file anythingsbetterthannothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Friends ask how I'll get along with[F]out you
@@ -43,3 +46,8 @@ Anything's better than [F]nothing
 [C]Anything's better than [F]nothing
 [C]Nothing's what [G7]I have with [C]you
 {end_of_verse}
+
+
+
+
+

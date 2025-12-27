@@ -1,6 +1,9 @@
 {meta: title Trouble Keeps Hanging Around My Door}
 {meta: artist Tex Ritter}
 {meta: composer Ted Daffan}
+{meta: x_source classic-country}
+{meta: x_source_file troublekeepshangingaroundmydoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My troubles never seem to end
@@ -29,3 +32,6 @@ What have I done that's been so bad
 [F]Worried mind that's always [C]sad
 [G7]Trouble keeps a hanging around my [C]door
 {end_of_verse}
+
+
+

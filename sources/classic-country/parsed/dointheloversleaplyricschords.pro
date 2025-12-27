@@ -1,6 +1,9 @@
 {meta: title Doin’ The Lovers Leap Lyrics Chords}
 {meta: artist Webb Pierce}
 {meta: composer Lee Emerson and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file dointheloversleaplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One two  [D7]three four  [G]it all started in [D7]Baltimore
@@ -50,3 +53,9 @@ Then you [G]let out a roar
 You [C]bend your knees and [G]set your feet
 [D7]We're gonna do the [G]Lovers Leap
 {end_of_verse}
+
+
+
+
+
+

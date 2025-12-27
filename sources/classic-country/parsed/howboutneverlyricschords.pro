@@ -1,6 +1,9 @@
 {meta: title How Bout Never}
 {meta: artist Tony Booth}
 {meta: composer Dave Lindsey and Brent Ronen}
+{meta: x_source classic-country}
+{meta: x_source_file howboutneverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well hello there was a big surprise
@@ -62,3 +65,11 @@ Is never good for [G]you
 How bout [D7]never
 Is never good for [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+

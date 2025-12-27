@@ -1,6 +1,9 @@
 {meta: title Till I'm Over Gettin' Over You}
 {meta: artist Vern Gosdin}
 {meta: composer Gary S. Paxton, Shirl Milete, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file tillimovergettinoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wish I could tell you that everything's [B7]all [C]right
@@ -43,3 +46,8 @@ Cause [G7]there's nothing else I can [C]do
 But [F]curse you and scorn you and [C]hate you
 And [Am]love you till [G7]I'm over getting over [C]you
 {end_of_verse}
+
+
+
+
+

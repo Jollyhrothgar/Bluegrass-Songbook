@@ -1,6 +1,9 @@
 {meta: title Ring The Bell}
 {meta: artist The Gibson Brothers}
 {meta: composer Chester Pickering O’Keefe}
+{meta: x_source classic-country}
+{meta: x_source_file ringthebelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the road was a bell in the bell was a [C7]sound
@@ -69,3 +72,11 @@ You can hear it on the mountain
 And down across the valley
 Ring the bell and [G7]go to His [C]side
 {end_of_verse}
+
+
+
+
+
+
+
+

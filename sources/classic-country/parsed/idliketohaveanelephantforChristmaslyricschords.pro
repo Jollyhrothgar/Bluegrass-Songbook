@@ -1,5 +1,8 @@
 {meta: title I'd Like To Have An Elephant For Christmas}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file idliketohaveanelephantforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd like to have an [D7]elephant for [G]Christmas
@@ -46,3 +49,9 @@ But I'd like to have an [D7]elephant for [G]Christmas
 {start_of_verse: Verse 7}
 I'd like to have an [D7]elephant for [G]Christmas
 {end_of_verse}
+
+
+
+
+
+

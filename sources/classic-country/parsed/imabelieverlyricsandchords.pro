@@ -1,6 +1,9 @@
 {meta: title I'm A Believer}
 {meta: artist Wanda Jackson}
 {meta: composer Neil Diamond}
+{meta: x_source classic-country}
+{meta: x_source_file imabelieverlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought love was [D]only true in [G]fairy tales
@@ -41,3 +44,8 @@ Not a trace [C]  [G]  of [C]doubt in my [G]mind
 I'm in love [C]  I'm a be[G]liever 
 I couldn't [F]leave him if I [D]tried
 {end_of_verse}
+
+
+
+
+

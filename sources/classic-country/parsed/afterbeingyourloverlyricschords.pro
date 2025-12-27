@@ -1,6 +1,9 @@
 {meta: title After Being Your Lover}
 {meta: artist Tommy Overstreet}
 {meta: composer Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file afterbeingyourloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Loving you so much all this [G7]time
@@ -30,3 +33,6 @@ The [F]long arm of love is holding [C]on so tight
 I'd feel better [G7]after being your [C]lover
 Your [F]lover your [G7]lover your [C]lover
 {end_of_verse}
+
+
+

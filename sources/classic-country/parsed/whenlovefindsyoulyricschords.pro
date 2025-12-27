@@ -1,6 +1,9 @@
 {meta: title When Love Finds You}
 {meta: artist Vince Gill}
 {meta: composer Michael Omartian and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file whenlovefindsyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love sure is [C]something no [Am]one can [G]explain
@@ -35,3 +38,7 @@ Maybe [C]someday when [G]love finds you [Em]
 You’ll [C]find out it’s [G]true      
 And [C]someday when [G]love [D7]finds [G]you
 {end_of_verse}
+
+
+
+

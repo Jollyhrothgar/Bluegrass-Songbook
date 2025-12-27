@@ -1,5 +1,8 @@
 {meta: title Come Walk In My Shoes}
 {meta: artist Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file comewalkinmyshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you have never gone to where you [C]don't belong 
@@ -29,3 +32,6 @@ If you have [G]never seen the end of [C]everything
 [D7]Come walk in my shoes a [G]while
 [D7]Come walk in my shoes a [G]while
 {end_of_verse}
+
+
+

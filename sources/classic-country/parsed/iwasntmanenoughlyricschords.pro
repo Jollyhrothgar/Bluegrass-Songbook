@@ -1,6 +1,9 @@
 {meta: title I Wasn't Man Enough}
 {meta: artist Kenny Rogers}
 {meta: composer Roger Bowling and Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file iwasntmanenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Words [G7]couldn't [C]hold her
@@ -36,3 +39,6 @@ Now I [C]know the pain is [G]showing
 [F]But what hurts the most is [D7]knowing
 I wasn't [C]man enough   [G7]for my [C]woman
 {end_of_verse}
+
+
+

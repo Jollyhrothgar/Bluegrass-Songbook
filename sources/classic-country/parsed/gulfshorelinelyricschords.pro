@@ -1,6 +1,9 @@
 {meta: title Gulf Shore Line}
 {meta: artist Don Williams}
 {meta: composer Harley Allen, Mel Besher, Carson Chamberlein}
+{meta: x_source classic-country}
+{meta: x_source_file gulfshorelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Waves are rollin' in [G7]lazy summer [C]wind
@@ -48,3 +51,9 @@
 [Am]And I'll love you till the sun don't [Dm]shine
 [D7]Way out on the [F]gulf [G7]shore [C]line
 {end_of_verse}
+
+
+
+
+
+

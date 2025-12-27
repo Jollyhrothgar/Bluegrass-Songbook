@@ -1,6 +1,9 @@
 {meta: title Broken Down In Tiny Pieces}
 {meta: artist Billy Crash Craddock}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file brokendownintinypieceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Broken down in [Em]tiny pieces [C7]love ain't [F]really all that [Am]much
@@ -25,3 +28,6 @@ Broken down in [Em]tiny pieces [C7]love's a [F]special kind of [Am]thing
 [F]Can't you see I'll always [E7]love you it will never [F]end
 Here I am in tiny [C]pieces please [G7]put me back together [C][F]a-gain
 {end_of_verse}
+
+
+

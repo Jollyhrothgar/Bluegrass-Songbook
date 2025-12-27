@@ -1,6 +1,9 @@
 {meta: title When A Fool Learns}
 {meta: artist Gene Watson}
 {meta: composer Steve Clark and Rick Peoples}
+{meta: x_source classic-country}
+{meta: x_source_file whenafoollearnslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wish I was in your shoes
@@ -38,3 +41,8 @@ Wish I could feel your heart
 [Dm]Cause I know the way it feels to be left broken [Am]apart
 [F]I wish that I could be your fool right to [C]the [G7]end
 {end_of_verse}
+
+
+
+
+

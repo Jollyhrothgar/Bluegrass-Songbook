@@ -1,6 +1,9 @@
 {meta: title Bad News Travels Fast}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file badnewstravelsfastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The house you [G7]live in now is [C]quite
@@ -23,3 +26,5 @@ And [F]if that doesn’t [G7]bother you at [C]all just [F]look around
 Cause [C]bad news travels [F]fast in our [C]town  [F]look around 
 [C]Bad news travels [F]fast in our [C]town
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Put Down The Honky Tonks}
 {meta: artist Charlie Walker}
 {meta: composer Sanger D. Shafer and William Ellis}
+{meta: x_source classic-country}
+{meta: x_source_file dontputdownthehonkytonkslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't put down the honky tonks [C]until you been inside
@@ -33,3 +36,7 @@ So [D7]don't put down the honky tonks until you're tried 'em [G]all
 {start_of_verse: Verse 4}
 No [D7]don't put down the honky tonks until you're tried 'em [G]all
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Arthritis Blues}
 {meta: artist Ramblin Jack Elliott}
 {meta: composer Butch Hawes}
+{meta: x_source classic-country}
+{meta: x_source_file arthritisblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Went to the the doctor looked sad [F]well he looked in his book
@@ -71,3 +74,14 @@ And it's [C]squattin' on your back and it's [F]all kinds of [C]trouble
 {start_of_verse: Verse 12}
 Arthritis is the thing to miss
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

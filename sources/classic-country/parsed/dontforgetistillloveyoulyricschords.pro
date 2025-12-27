@@ -1,6 +1,9 @@
 {meta: title Don't Forget I Still Love You}
 {meta: artist Connie Smith}
 {meta: composer Guy Louis}
+{meta: x_source classic-country}
+{meta: x_source_file dontforgetistillloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't forget I still [C]love [G]you
@@ -48,3 +51,11 @@ Goodbye my darlin' and don't forget
 Goodbye my darlin' and don't forget
 [G]You can always [C]come back [G]to me
 {end_of_verse}
+
+
+
+
+
+
+
+

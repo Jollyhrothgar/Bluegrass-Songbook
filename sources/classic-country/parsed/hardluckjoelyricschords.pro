@@ -1,6 +1,9 @@
 {meta: title Hard Luck Joe}
 {meta: artist Johnny Duncan}
 {meta: composer Bobby Goldsboro}
+{meta: x_source classic-country}
+{meta: x_source_file hardluckjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm an empty pocket I'm a worn out [F]shoe[Fm]
@@ -32,3 +35,7 @@ Hard luck Joe they [C]call [Am]me [Dm]all I [G7]see is [C]rain
 [F]Hard luck Joe [Dm]you all know me [Em]I live in every [G7]town[C]
 [F]I never seem to [Dm]get a break I [Em]just get [Dm]pushed [G7]around
 {end_of_verse}
+
+
+
+

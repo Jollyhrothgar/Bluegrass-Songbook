@@ -1,6 +1,9 @@
 {meta: title Victory In Jesus}
 {meta: artist Merle Haggard}
 {meta: composer Eugene M. Bartlett}
+{meta: x_source classic-country}
+{meta: x_source_file victoryinJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard an old old story how a [F]Savior came from [C]glory
@@ -29,3 +32,6 @@ He sought me and He [Am]bought me with [D7]His redeeming [G7]blood
 He [C]loved me ere I knew Him and [F]all my love is [C]due Him
 He plunged me into victory [G7]beneath the cleansing [C]blood
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title 25 Minutes To Go}
 {meta: artist Johnny Cash}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file 25minutestogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well they're building a gallows outside my cell 
@@ -104,3 +107,23 @@ And now I'm swinging
 {start_of_verse: Verse 21}
 And here I go-o-o-o
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

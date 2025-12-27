@@ -1,6 +1,9 @@
 {meta: title Heart To Heart And Fool To Fool}
 {meta: artist Jean Shepard}
 {meta: composer Billy Smith and Jim House}
+{meta: x_source classic-country}
+{meta: x_source_file hearttoheartandfFooltofoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you could look through the eyes [F]that have been [C]there
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]As he goes from heart to heart and fool to [C]fool
 {end_of_verse}
+
+
+
+

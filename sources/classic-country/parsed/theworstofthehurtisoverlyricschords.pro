@@ -1,6 +1,9 @@
 {meta: title The Worst Of The Hurt Is Over}
 {meta: artist George Morgan}
 {meta: composer Tommy Hill and William Brown Ellis IV}
+{meta: x_source classic-country}
+{meta: x_source_file theworstofthehurtisoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The worst of the [G7]hurt is [C]over [G7]
@@ -24,3 +27,5 @@ And when I [F]think of you I [C]don’t tremble as [Am]before
 The [C]worst of the [G7]hurt is [C]over
 The worst of the [G7]hurt is [C]over
 {end_of_verse}
+
+

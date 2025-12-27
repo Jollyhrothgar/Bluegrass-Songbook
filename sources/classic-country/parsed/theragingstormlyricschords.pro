@@ -1,5 +1,8 @@
 {meta: title The Raging Storm}
 {meta: artist Jim Ed Brown and The Browns}
+{meta: x_source classic-country}
+{meta: x_source_file theragingstormlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the raging storm couldn't tear us apart
@@ -39,3 +42,8 @@
 {start_of_verse: Verse 4}
 [C]Oh the raging storm couldn't tear us [C][G7]apart
 {end_of_verse}
+
+
+
+
+

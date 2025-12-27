@@ -1,5 +1,8 @@
 {meta: title Rolling Mills Of Middletown}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file rollingmillsofmiddletownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The [F]rollin' mills of [C]Middle[Am]town roll [C]on roll [G7]on roll [C]on
@@ -40,3 +43,7 @@ With [F]heat so hot the [C]hubs of hell would [D7]seem just barely [G7]warm
 [C]Well they never saw my friend again did [D7]he do [G7]something [C]wrong
 While the [F]rollin' mills of [C]Middle[Am]town Ohio roll [C]on roll [G7]on roll [C]on
 {end_of_verse}
+
+
+
+

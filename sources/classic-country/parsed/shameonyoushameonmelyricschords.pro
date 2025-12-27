@@ -1,6 +1,9 @@
 {meta: title Shame On You Shame On Me}
 {meta: artist Mel Tillis}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file shameonyoushameonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another lie and we’re lying here [F]together
@@ -34,3 +37,7 @@ We may be [C]wrong but we’re [G7]not the only [C]one [G7]
 Shame on wives when they’re not [F]lovers
 [G7]Shame on husbands to blind to [C]see
 {end_of_verse}
+
+
+
+

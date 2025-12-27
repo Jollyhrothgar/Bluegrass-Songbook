@@ -1,6 +1,9 @@
 {meta: title First Year Blues}
 {meta: artist Hank Williams}
 {meta: composer Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file firstyearblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I've been married about six months
@@ -64,3 +67,12 @@ And experienced [C7]with a [F]wife
 If I can stand the next six my friends [G7]all say I'll be fixed
 To take it the rest of my [C]life
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Gotta Be Puttin' Me On}
 {meta: artist Lefty Frizzell}
 {meta: composer Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file yougottabeputtinmeonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just like a hound dog when the [A7]food ran out 
@@ -75,3 +78,12 @@ You [D7]gotta be [G7]puttin’ me [C]on
 You [D7]gotta be [G7]puttin’ me [C]on
 You [D7]gotta be [G7]puttin’ me [C]on
 {end_of_verse}
+
+
+
+
+
+
+
+
+

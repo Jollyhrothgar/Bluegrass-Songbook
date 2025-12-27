@@ -1,6 +1,9 @@
 {meta: title You Plant Your Fields}
 {meta: artist New Grass Revival}
 {meta: composer Donny Lowery and Wendy Waldman}
+{meta: x_source classic-country}
+{meta: x_source_file youplantyourfieldslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]My father [G]said some things you [Em]learn
@@ -42,3 +45,8 @@ You [B7]plant your fields [Em]again
 You [B7]plant your fields [Em]again
 You [B7]plant your fields [Em]again
 {end_of_verse}
+
+
+
+
+

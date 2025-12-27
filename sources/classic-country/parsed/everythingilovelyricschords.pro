@@ -1,6 +1,9 @@
 {meta: title Everything I Love}
 {meta: artist Alan Jackson}
 {meta: composer Harley Allen and Carson Chamberlain}
+{meta: x_source classic-country}
+{meta: x_source_file everythingilovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Coffee keeps me up and I can't [F]sleep
@@ -36,3 +39,7 @@ Cause everything I love is killing [C]me
 Oh everything I love gonna [G7]have to give up
 Cause everything I love is killing [C]me
 {end_of_verse}
+
+
+
+

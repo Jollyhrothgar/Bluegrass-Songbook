@@ -1,5 +1,8 @@
 {meta: title Sing My Blues A Birthday Song}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file singmybluesabirthdaysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sing my blues a [F]birthday song 
@@ -42,3 +45,8 @@ The [C]dreams I had are [F]worthless now
 So sing my blues a [F]birthday song
 [G7]They're one year old [C]today
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Don't Think Twice It's Alright}
 {meta: artist Bobby Bare}
 {meta: composer Bob Dylan}
+{meta: x_source classic-country}
+{meta: x_source_file dontthinktwiceitsalrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There ain't no use to sit [G7]and wonder why [Am]babe 
@@ -47,3 +50,9 @@ Now I ain't saying you treated me [C]unkind
 {start_of_verse: Verse 7}
 Don't think [G7]twice it's all [C]right
 {end_of_verse}
+
+
+
+
+
+

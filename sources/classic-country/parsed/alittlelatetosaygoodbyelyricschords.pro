@@ -1,6 +1,9 @@
 {meta: title A Little Late To Say Goodbye}
 {meta: artist The Oak Ridge Boys}
 {meta: composer John Schweers and Roger Alan Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file alittlelatetosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If your mind is set on leaving
@@ -49,3 +52,10 @@ Gotta make your move now
 [G7]After all the trying times you [F]survived
 [G7]Don't you think it's a little late to say [C]goodbye
 {end_of_verse}
+
+
+
+
+
+
+

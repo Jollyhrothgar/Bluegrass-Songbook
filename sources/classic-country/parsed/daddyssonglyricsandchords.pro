@@ -1,5 +1,8 @@
 {meta: title Daddy's Song}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file daddyssonglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got a day without [E7]nothing to do 
@@ -56,3 +59,10 @@ She said [F]I wish that we lived [C]together again
 [F]I'm missing somebody [C]all of the time 
 [G7]Daddy it's breaking my [C]heart
 {end_of_verse}
+
+
+
+
+
+
+

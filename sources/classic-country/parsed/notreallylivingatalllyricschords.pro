@@ -1,6 +1,9 @@
 {meta: title Not Really Living At All}
 {meta: artist Bill Anderson}
 {meta: composer Carl Watson and Del Trolinder}
+{meta: x_source classic-country}
+{meta: x_source_file notreallylivingatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What is my reason for [F]goin' on [C]livin' 
@@ -60,3 +63,9 @@ When [G7]I'm not really livin' at [C]all
 What is my reason for [F]goin' on [C]livin' 
 When [G7]I'm not really livin' at [C]all
 {end_of_verse}
+
+
+
+
+
+

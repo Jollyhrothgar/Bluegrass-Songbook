@@ -1,6 +1,9 @@
 {meta: title We're All God's Children}
 {meta: artist Alan Jackson}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file wereallGodschildrenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here comes a Baptist here comes a [F]Jew
@@ -72,3 +75,12 @@ We're all God's children
 [G7]We're [C]all God's children
 Why can't we [F]be  [C]one big happy [G7]fami[C]ly
 {end_of_verse}
+
+
+
+
+
+
+
+
+

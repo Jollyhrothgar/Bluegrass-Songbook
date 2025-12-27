@@ -1,6 +1,9 @@
 {meta: title I Was Afraid Of That}
 {meta: artist Vern Gosdin}
 {meta: composer Gene Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file iwasafraidofthatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're everything that any [C]man could ever[G] want
@@ -33,3 +36,7 @@ I was [D7]afraid of that I was [C]afraid of [G]that
 {start_of_verse: Verse 5}
 I was [D7]afraid of that I was [C]afraid of [G]that
 {end_of_verse}
+
+
+
+

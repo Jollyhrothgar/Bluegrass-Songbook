@@ -1,6 +1,9 @@
 {meta: title Dream High}
 {meta: artist Doug Stone}
 {meta: composer Joe Henry and Mike Reid}
+{meta: x_source classic-country}
+{meta: x_source_file dreamhighlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someday every [F]person on this earth some[G7]way every[C]one
@@ -41,3 +44,7 @@ If you [F]truly want to [C]fl[F]y [G7]dream [C]high [Am]   [G7]
 If you [F]truly [Am]want to [C]fly you can [F]surely [C]fly [F]   [C]
 If you [F]truly want to [C]fl[F]y [G7]dream [C]high
 {end_of_verse}
+
+
+
+

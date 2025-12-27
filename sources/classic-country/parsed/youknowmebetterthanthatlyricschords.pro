@@ -1,6 +1,9 @@
 {meta: title You Know Me Better Than That}
 {meta: artist George Strait}
 {meta: composer Tony Haselden and Anna Graham}
+{meta: x_source classic-country}
+{meta: x_source_file youknowmebetterthanthatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby since you left me there's [F]somebody [G7]new
@@ -47,3 +50,7 @@ Oh she [F]tells her friends I'm [C]perfect
 And that I love that [D7]cat
 But [F]you know me [G7]better than [C]that
 {end_of_verse}
+
+
+
+

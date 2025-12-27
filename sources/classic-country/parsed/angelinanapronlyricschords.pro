@@ -1,6 +1,9 @@
 {meta: title Angel In An Apron}
 {meta: artist Jimmy Dean}
 {meta: composer Gary S. Paxton and Ronald W. Hellard}
+{meta: x_source classic-country}
+{meta: x_source_file angelinanapronlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]She’s my angel in an [C]apron
@@ -50,3 +53,9 @@
 [Em]She’s my angel in an apron
 [G7]And I’ll cherish what I [C]found
 {end_of_verse}
+
+
+
+
+
+

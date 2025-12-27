@@ -1,5 +1,8 @@
 {meta: title Touch The Hand}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file touchthehandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Spoken:
@@ -42,3 +45,8 @@ Before [G7]you walk out that [C]door
 Touch the [F]hand of the [G7]man that [C]made you a [F]woman
 Then [C]tell me you [G7]don't love me any[F]m-or[C]e
 {end_of_verse}
+
+
+
+
+

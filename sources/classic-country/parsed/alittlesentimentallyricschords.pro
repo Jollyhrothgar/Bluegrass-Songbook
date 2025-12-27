@@ -1,6 +1,9 @@
 {meta: title A Little Sentimental}
 {meta: artist Marty Robbins}
 {meta: composer Joe Babcock}
+{meta: x_source classic-country}
+{meta: x_source_file alittlesentimentallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sitting here with you [F]don't know why I'm [C]blue
@@ -29,3 +32,6 @@ Don't mind me if I'm a [A#7]little melan[A7]choly
 [F]Don't mind me if I'm a little senti[A7]mental
 You [Dm]remind me of the [G7]girl I used to [C]know
 {end_of_verse}
+
+
+

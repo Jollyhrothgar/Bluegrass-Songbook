@@ -1,6 +1,9 @@
 {meta: title She'll Walk All Over You}
 {meta: artist Wilburn Brothers}
 {meta: composer Darrell Statler}
+{meta: x_source classic-country}
+{meta: x_source_file shellwalkalloveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The tracks you see on me she left behind
@@ -33,3 +36,7 @@ Oh she'll [C]do you like she did me she'll [G7]walk all over [C]you
 {start_of_verse: Verse 5}
 Oh she'll do you like she did me she'll [G7]walk all over [C]you
 {end_of_verse}
+
+
+
+

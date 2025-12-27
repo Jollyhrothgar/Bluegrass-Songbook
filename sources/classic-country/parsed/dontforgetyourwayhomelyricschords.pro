@@ -1,6 +1,9 @@
 {meta: title Don't Forget Your Way Home}
 {meta: artist Reba McEntire}
 {meta: composer Ed Hunnicut and John Brannen}
+{meta: x_source classic-country}
+{meta: x_source_file dontforgetyourwayhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now you spread your wings to [F]fly 
@@ -36,3 +39,7 @@ Oh oh [C]oh oh don't [G7]forget your way [C]home
 [C]And when you've missed this life we've [F]known [C]
 Don't [G7]forget your way [C]home
 {end_of_verse}
+
+
+
+

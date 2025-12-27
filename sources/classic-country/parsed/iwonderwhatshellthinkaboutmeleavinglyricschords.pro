@@ -1,6 +1,9 @@
 {meta: title I Wonder What She’ll Think About Me Leaving}
 {meta: artist Conway Twitty}
 {meta: composer Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwhatshellthinkaboutmeleavinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder what she'll [G7]think about me [C]leaving 
@@ -28,3 +31,6 @@ If she [F]hurts at all I'd like to know it [C]happened
 I wonder if she'll [G7]even know that I'm [C]gone
 I wonder if she'll [G7]notice that I'm [C]gone
 {end_of_verse}
+
+
+

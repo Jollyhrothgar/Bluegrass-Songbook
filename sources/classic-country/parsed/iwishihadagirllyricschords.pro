@@ -1,5 +1,8 @@
 {meta: title I Wish I Had A Girl}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file iwishihadagirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wish I had a girl some[C]one to love me [G]true
@@ -32,3 +35,7 @@ And I know that we could [D7]really get [G]along
 {start_of_verse: Verse 4}
 Yes I know that we could [D7]really get [G]along
 {end_of_verse}
+
+
+
+

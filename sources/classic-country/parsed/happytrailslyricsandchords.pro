@@ -1,6 +1,9 @@
 {meta: title Happy Trails}
 {meta: artist Randy Travis}
 {meta: composer Dale Evans}
+{meta: x_source classic-country}
+{meta: x_source_file happytrailslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some trails are [A7]happy ones
@@ -28,3 +31,6 @@ Who cares about the clouds if we're [F]together
 Just [A7]sing a song and bring the sunny [D7]wea[G7]ther
 Happy [C]trails to [A7]you till we [D7]meet [G7]a--[C]gain
 {end_of_verse}
+
+
+

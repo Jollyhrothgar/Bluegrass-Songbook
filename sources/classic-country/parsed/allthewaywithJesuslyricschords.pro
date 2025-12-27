@@ -1,5 +1,8 @@
 {meta: title All The Way With Jesus}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file allthewaywithJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd give up worldly ambition 
@@ -32,3 +35,8 @@ At heaven's [D7]gate He'll let me [G]in
 And I put my trust in Jesus
 I know He'll [D7]take me all the [G]way
 {end_of_verse}
+
+
+
+
+

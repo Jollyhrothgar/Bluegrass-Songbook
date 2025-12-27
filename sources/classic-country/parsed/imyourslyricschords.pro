@@ -1,6 +1,9 @@
 {meta: title I'm Yours}
 {meta: artist Elvis Presley}
 {meta: composer Don Roberson and Hal Blair}
+{meta: x_source classic-country}
+{meta: x_source_file imyourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 My love I [G]offer to you now my heart and all it can [C]give
@@ -32,3 +35,7 @@ And when things go [G]wrong dear
 With every [G]beat of my heart with every [F]breath that I [C]take
 Now and for[G]ever sweetheart   I’m [C]yours  [F]   [C]
 {end_of_verse}
+
+
+
+

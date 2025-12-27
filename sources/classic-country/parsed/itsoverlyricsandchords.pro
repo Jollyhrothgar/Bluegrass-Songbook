@@ -1,6 +1,9 @@
 {meta: title It's Over}
 {meta: artist Rex Allen Jr.}
 {meta: composer Denny E. DeMarco, Joe Holcomb, Rex Allen Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file itsoverlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My trembling hand reaches for the [F]phone
@@ -33,3 +36,7 @@ It’s [G7]over I’m taking on the [C]blues
 {start_of_verse: Verse 4}
 It’s [G7]over I’m taking on the [F]blue[C]s 
 {end_of_verse}
+
+
+
+

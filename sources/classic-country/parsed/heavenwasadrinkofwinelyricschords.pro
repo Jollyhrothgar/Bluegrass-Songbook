@@ -1,6 +1,9 @@
 {meta: title Heaven Was A Drink Of Wine}
 {meta: artist Merle Haggard}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file heavenwasadrinkofwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That psychoed-out psychologist [F]asked me about my drinking [C]ways
@@ -28,3 +31,6 @@ But when she left me I went to [G7]hell and heaven was a drink of [C]wine
 {start_of_verse: Verse 4}
 Hey good doctor [G7]heaven was a drink [C]of [C][F]wine    
 {end_of_verse}
+
+
+

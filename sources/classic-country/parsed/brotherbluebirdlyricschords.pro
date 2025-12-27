@@ -1,5 +1,8 @@
 {meta: title Brother Bluebird}
 {meta: artist Freddy Hart}
+{meta: x_source classic-country}
+{meta: x_source_file brotherbluebirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just saw a [C]bluebird fly [G]over
@@ -23,3 +26,5 @@ From the hurt we're goin' [D7]through
 Cause you [C]love her well brother [G]bluebird [D7]you’ve got compa[G]ny
 Hey wait for [C]me oh brother [G]bluebird [D7]you’ve got compa[G]ny
 {end_of_verse}
+
+

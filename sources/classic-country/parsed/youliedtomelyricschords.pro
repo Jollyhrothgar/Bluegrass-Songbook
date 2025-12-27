@@ -1,6 +1,9 @@
 {meta: title You Lied To Me}
 {meta: artist Charlie Walker}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file youliedtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You looked at me as [G7]only you can [C]look at me
@@ -33,3 +36,7 @@ You said [G]I'd forget you [D7]darling but you [G]lied to me
 {start_of_verse: Verse 4}
 You said I'd forget you [D7]darling but you [G]lied to me
 {end_of_verse}
+
+
+
+

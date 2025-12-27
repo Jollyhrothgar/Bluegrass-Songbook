@@ -1,6 +1,9 @@
 {meta: title Wonderful Words Of Life}
 {meta: artist Statler Brothers}
 {meta: composer Philip Paul Bliss}
+{meta: x_source classic-country}
+{meta: x_source_file wonderfulwordsoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sing them over [G7]again to me wonderful words of [C]life
@@ -39,3 +42,8 @@ Jesus only [F]Savi[C]or sanctify us [F]for[C]ever
 {start_of_verse: Verse 5}
 [G7]Wonderful words wonderful words of [C]life
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Life Gets Away}
 {meta: artist Clint Black}
 {meta: composer Clint Black, Hayden Nicholas, Thom Schuyler}
+{meta: x_source classic-country}
+{meta: x_source_file lifegetsawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We're [F]tied to our [C]memories they [G]won't let us stray
@@ -33,3 +36,7 @@ No matter [Em]how hard we [C]try life gets [D7]away from us [G]all
 {start_of_verse: Verse 5}
 No matter [Em]how hard we [C]try life gets [D7]away from us [G]all
 {end_of_verse}
+
+
+
+

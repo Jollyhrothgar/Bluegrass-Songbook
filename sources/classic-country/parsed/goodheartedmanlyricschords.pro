@@ -1,6 +1,9 @@
 {meta: title Good Hearted Man}
 {meta: artist Fats Domino}
 {meta: composer Antoine Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file goodheartedmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You got me walkin' the floor
@@ -37,3 +40,7 @@ You should be a[G]shamed
 {start_of_verse: Verse 4}
 [D7]To hurt a good hearted [G]man
 {end_of_verse}
+
+
+
+

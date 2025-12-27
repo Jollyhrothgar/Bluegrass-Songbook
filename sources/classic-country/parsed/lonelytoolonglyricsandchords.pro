@@ -1,6 +1,9 @@
 {meta: title Lonely Too Long}
 {meta: artist Patty Loveless}
 {meta: composer Sharon Vaughn, Bill Rice, Mike Lawler}
+{meta: x_source classic-country}
+{meta: x_source_file lonelytoolonglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Well good [C]morning tell me [Am]how'd you sleep last [Dm]night[F]
@@ -34,3 +37,7 @@ No we [Am]ain't done nothin' [Dm]wrong we've [G7]just been lonely too [C]long
 {start_of_verse: Verse 5}
 We [Am]ain't done nothin' [Dm]wrong we’ve [G7]both been lonely too [C]long
 {end_of_verse}
+
+
+
+

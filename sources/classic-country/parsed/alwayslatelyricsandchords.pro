@@ -1,6 +1,9 @@
 {meta: title Always Late}
 {meta: artist Lefty Frizzel}
 {meta: composer Lefty Frizzell and Blackie Crafford}
+{meta: x_source classic-country}
+{meta: x_source_file alwayslatelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Always late with [F]your [C]kisses
@@ -22,3 +25,5 @@ Won't you come to my arms sweet darling and [G7]stay
 Always [C]late with [F]your [C]kisses 
 Why oh why do you [G7]want to do me this [C]way
 {end_of_verse}
+
+

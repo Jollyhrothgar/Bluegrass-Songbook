@@ -1,6 +1,9 @@
 {meta: title It's The Age That Makes The Difference}
 {meta: artist Ernest Tubb}
 {meta: composer George Sherry and Vernon Claude}
+{meta: x_source classic-country}
+{meta: x_source_file itstheagethatmakesthedifferencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was just a little boy and [C]life was bright and [G]new
@@ -43,3 +46,8 @@ That my high speed days are over and I'll have to take it [D7]slow
 I ain't [G]really feeling older but I just [C]don't feel the [G]same
 It's the age that makes the difference father [D7]time can make a [G]change
 {end_of_verse}
+
+
+
+
+

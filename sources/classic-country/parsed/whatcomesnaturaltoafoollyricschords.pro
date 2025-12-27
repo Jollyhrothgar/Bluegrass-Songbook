@@ -1,5 +1,8 @@
 {meta: artist Mel Tillis}
 {meta: composer Ronald Elmer McCown}
+{meta: x_source classic-country}
+{meta: x_source_file whatcomesnaturaltoafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now time and time again I know I’ve [G7]hurt you
@@ -33,3 +36,7 @@ But I [C]guess I’ll keep [C7]on till every[F]thing I love is gone
 But I guess I’ll keep [C7]on till every[F]thing I love is gone
 [G7]Doing what comes natural to a [C]fool
 {end_of_verse}
+
+
+
+

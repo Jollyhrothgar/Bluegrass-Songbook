@@ -1,6 +1,9 @@
 {meta: title My Anna Maria}
 {meta: artist Freddie Hart}
 {meta: composer Orville Couch, Sam Coleman, Eddie McDuff}
+{meta: x_source classic-country}
+{meta: x_source_file myannamarialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Anna [D7][C]Maria [C]ooh [D7]ooh [G]ooh
@@ -53,3 +56,11 @@ That's why I'm here behind these walls
 [C](Anna [D7]Maria) [C]she sits there so [G][D7]unconcerned
 [C]Anna [D7]Maria [C]ooh [D7]ooh [G]ooh
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Can I Count on You}
 {meta: artist McBride and the Ride}
 {meta: composer Bill Carter, Ruth Ellsworth, Terry McBride}
+{meta: x_source classic-country}
+{meta: x_source_file canicountonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]YOU WERE THERE THE FIRST [F]TIME I [C]STUMBLED
@@ -29,3 +32,6 @@
 [F]WHEN TIMES GET HARD WILL YOU SEE ME [C]THROUGH
 [G7]WHAT I NEED TO KNOW CAN I COUNT ON [C]YOU
 {end_of_verse}
+
+
+

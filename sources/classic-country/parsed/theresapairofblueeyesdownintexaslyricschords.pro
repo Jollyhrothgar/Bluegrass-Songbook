@@ -1,5 +1,8 @@
 {meta: title There's A Pair Of Blue Eyes Down In Texas}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file theresapairofblueeyesdownintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s a pair of blue [C]eyes down in [G]Texas
@@ -21,3 +24,5 @@ I wish [C]I was back in Texas where the [G]old bluebonnets grow
 There’s a [G]pair of blue [C]eyes down in [G]Texas
 Crying for [A7]me  [D7]crying for [G]me
 {end_of_verse}
+
+

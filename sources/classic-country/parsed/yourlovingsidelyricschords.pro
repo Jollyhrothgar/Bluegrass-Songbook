@@ -1,6 +1,9 @@
 {meta: title Your Loving Side}
 {meta: artist Conway Twitty}
 {meta: composer Roger Murrah, John Schweers, Carson Whitsett}
+{meta: x_source classic-country}
+{meta: x_source_file yourlovingsidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You and [G]I have known a love [C]beyond compare
@@ -29,3 +32,6 @@ I'd give my heart to keep our [D7]love alive and be a hero in [G]your blue eyes 
 [D7]To get back on your [G]lovin' side where your life's wrapped [C]up in mine
 Whoa my heart won't be [D7]satisfied till I get back on your [G]lovin' side
 {end_of_verse}
+
+
+

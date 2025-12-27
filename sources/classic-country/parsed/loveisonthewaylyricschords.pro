@@ -1,6 +1,9 @@
 {meta: title Love Is On The Way}
 {meta: artist Johnny Cash}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file loveisonthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Deep in the heart of the in[F]finite darkness
@@ -34,3 +37,7 @@ And [C]God is the reason and [G7]love is the [C]way
 Because life is the question and [F]life is the answer
 And [C]God is the reason and [G7]love is the [C]way
 {end_of_verse}
+
+
+
+

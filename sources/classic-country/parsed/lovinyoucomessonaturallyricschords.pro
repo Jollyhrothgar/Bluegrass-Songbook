@@ -1,6 +1,9 @@
 {meta: title Lovin' You Comes So Natural}
 {meta: artist David Allan Coe}
 {meta: composer David A. Coe, Curtis Buck, Jimmy Lancaster}
+{meta: x_source classic-country}
+{meta: x_source_file lovinyoucomessonaturallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know that the hardest thing I [Am]ever had to do
@@ -29,3 +32,6 @@ Any[D7]more lovin' her was a [G]chore
 With [D7]you it's so easy [G]lovin' you 
 Comes so [D7]natural any[G]more
 {end_of_verse}
+
+
+

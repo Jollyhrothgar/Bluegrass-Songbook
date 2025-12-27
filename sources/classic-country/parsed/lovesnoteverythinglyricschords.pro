@@ -1,6 +1,9 @@
 {meta: title Love's Not Everything Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Marty Stuart and Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file lovesnoteverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't hold you but [C7]I can't let you [F]go
@@ -33,3 +36,7 @@ If this is what [F]true love brings [G7]then love's not [C]everything
 {start_of_verse: Verse 4}
 If this is what [F]true love brings [G7]then love's not [C]everything
 {end_of_verse}
+
+
+
+

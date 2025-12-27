@@ -1,6 +1,9 @@
 {meta: title One Teardrop and One Step Away}
 {meta: artist Don Reno and Red Smiley}
 {meta: composer Hender Saul}
+{meta: x_source classic-country}
+{meta: x_source_file oneteardropandonestepawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I was one teardrop and one step [C]away
@@ -33,3 +36,7 @@ The dance floor was covered and I rea[C]lized
 The fun you were having as you danced by my [G7]way
 I was one teardrop and one step [C]away
 {end_of_verse}
+
+
+
+

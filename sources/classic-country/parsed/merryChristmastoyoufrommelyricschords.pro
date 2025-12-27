@@ -1,5 +1,8 @@
 {meta: title Merry Christmas To You From Me}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file merryChristmastoyoufrommelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas time's almost here [F]it's been nearly one [D7]year
@@ -21,3 +24,5 @@
 [C]May the love that we once shared be a sweet [F]memory
 [C]Merry Christmas [G7]to you from [C]me
 {end_of_verse}
+
+

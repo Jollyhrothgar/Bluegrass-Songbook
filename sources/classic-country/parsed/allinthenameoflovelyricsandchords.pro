@@ -1,6 +1,9 @@
 {meta: title All In The Name Of Love}
 {meta: artist The Bellamy Brothers}
 {meta: composer Jerry Williams}
+{meta: x_source classic-country}
+{meta: x_source_file allinthenameoflovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the [C]things you say and the [D7]things you do
@@ -66,3 +69,13 @@ It’s [D7]all in the name all in the name of [G]love
 [C]Everybody knows it’s [D7]all in the name of [G]love
 Yeah [C]it’s all in the name [D7]all in the name of [G]love
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

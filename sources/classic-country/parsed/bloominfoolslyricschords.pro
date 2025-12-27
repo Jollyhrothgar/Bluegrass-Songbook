@@ -1,6 +1,9 @@
 {meta: title Bloomin' Fools}
 {meta: artist Wilburn Brothers}
 {meta: composer Jimmie Helms and Grant Townsley}
+{meta: x_source classic-country}
+{meta: x_source_file bloominfoolslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bloomin' fools only blossom 
@@ -50,3 +53,9 @@ And soon they blossom into bloomin' [C]fools
 {start_of_verse: Verse 5}
 [G7]And soon they blossom into bloomin' [C]fools
 {end_of_verse}
+
+
+
+
+
+

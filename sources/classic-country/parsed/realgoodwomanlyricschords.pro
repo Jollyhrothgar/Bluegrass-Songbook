@@ -1,6 +1,9 @@
 {meta: title Real Good Woman}
 {meta: artist Jean Shepard}
 {meta: composer Johnny Mosby and Jonie Mosby}
+{meta: x_source classic-country}
+{meta: x_source_file realgoodwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There oughta be a law against your runnin' [G7]around
@@ -64,3 +67,13 @@ But you're spreadin' good will all around town
 [C]No you can't keep a real good [G]woman
 [D7]By bein' a no good [G]man
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

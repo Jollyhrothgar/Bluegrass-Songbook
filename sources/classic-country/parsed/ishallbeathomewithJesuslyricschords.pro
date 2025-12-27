@@ -1,6 +1,9 @@
 {meta: title I Shall Be At Home With Jesus}
 {meta: artist J.D. Crowe}
 {meta: composer Jennie Wilson and James David Vaughan}
+{meta: x_source classic-country}
+{meta: x_source_file ishallbeathomewithJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Years of time are swiftly passing
@@ -43,3 +46,8 @@ That with gladness fills my [G7]soul
 [C]I shall be at home with Jesus
 While e[G7]ternal ages [C]roll
 {end_of_verse}
+
+
+
+
+

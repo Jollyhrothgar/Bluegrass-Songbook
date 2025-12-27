@@ -1,6 +1,9 @@
 {meta: title Hiding In My Heart}
 {meta: artist Hank Locklin}
 {meta: composer Ken Hodges}
+{meta: x_source classic-country}
+{meta: x_source_file hidinginmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You were hiding in my heart 
@@ -34,3 +37,7 @@ A foolish boy in the [F]dark
 And while I was kissing [C]others 
 [G7]You were hiding in my [C]heart
 {end_of_verse}
+
+
+
+

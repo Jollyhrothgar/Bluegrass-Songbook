@@ -1,5 +1,8 @@
 {meta: title Wish I Didn't Love You Anymore}
 {meta: artist Dottie West}
+{meta: x_source classic-country}
+{meta: x_source_file wishididntloveyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wish I could stop these tears[F]  
@@ -29,3 +32,6 @@ That we had ever met
 {start_of_verse: Verse 4}
 How I [G7]wish I didn't love you any[C]more
 {end_of_verse}
+
+
+

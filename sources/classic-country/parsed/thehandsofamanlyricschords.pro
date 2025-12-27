@@ -1,5 +1,8 @@
 {meta: title The Hands Of A Man}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file thehandsofamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I'll let you go on [G]one condition [C]though
@@ -22,3 +25,5 @@
 [D7]In the hands of a man I leave you [G]in
 [D7]In the hands of the man I leave you [G]in
 {end_of_verse}
+
+

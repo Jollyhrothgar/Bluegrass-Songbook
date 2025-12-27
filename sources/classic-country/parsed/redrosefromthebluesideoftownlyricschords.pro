@@ -1,6 +1,9 @@
 {meta: title Red Rose From The Blue Side Of Town}
 {meta: artist George Morgan}
 {meta: composer Betty Jean Robinson and Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file redrosefromthebluesideoftownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the man from the flower shop rings your [F]doorbell [D7]today
@@ -29,3 +32,6 @@
 [F]I'm sending it from my world to that new world you've [D7]found
 [G7]It's just a red rose from the blue side of [C]town
 {end_of_verse}
+
+
+

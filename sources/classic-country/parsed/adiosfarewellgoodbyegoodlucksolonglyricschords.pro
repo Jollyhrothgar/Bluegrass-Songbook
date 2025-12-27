@@ -1,5 +1,8 @@
 {meta: title Adios Farewell Goodbye Good Luck So Long Lyrics with Chords}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file adiosfarewellgoodbyegoodlucksolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't wanna see you peeking through my window
@@ -39,3 +42,8 @@ I don't [G]wanna hear you knocking on my [C]door babe
 {start_of_verse: Verse 4}
 [D7]Adios farewell goodbye good luck so [G]long
 {end_of_verse}
+
+
+
+
+

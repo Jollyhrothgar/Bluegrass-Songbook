@@ -1,5 +1,8 @@
 {meta: title Just a Closer Walk With Thee}
 {meta: artist Patsy Cline}
+{meta: x_source classic-country}
+{meta: x_source_file justacloserwalkwiththeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am weak but Thou art [G7]strong
@@ -42,3 +45,8 @@
 [C7]Daily walking close to [F]Thee
 [C]Let it be dear Lord [G7]let it [C]be
 {end_of_verse}
+
+
+
+
+

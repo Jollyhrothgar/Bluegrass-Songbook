@@ -1,6 +1,9 @@
 {meta: title What Do You Say To That}
 {meta: artist George Strait}
 {meta: composer Melba Montgomery and Jim Lauderdale}
+{meta: x_source classic-country}
+{meta: x_source_file whatdoyousaytothatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're like the [C]warm sun[D7]shine I [G]think of you [C]all the [D7]time
@@ -34,3 +37,7 @@ Life [Bm]could never [C]be the [D7]same without you
 I've [G]fallen for [C]you and [B7]that's a [Em]fact [C]what do you [D7]say to [G]that
 My heart knows [C]this is [B7]real at [Em]last [C]what do you [D7]say to [G]that
 {end_of_verse}
+
+
+
+

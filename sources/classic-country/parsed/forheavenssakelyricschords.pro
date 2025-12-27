@@ -1,6 +1,9 @@
 {meta: title For Heaven's Sake}
 {meta: artist Conway Twitty}
 {meta: composer Lorene Allen, Maggie Vaughn, Frankie Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file forheavenssakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We thought the baby was the answer
@@ -55,3 +58,10 @@ I won't leave you
 [C]Lollipops before her [F]meal
 [G7]For Heaven's [C]sake
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Lonely Woman}
 {meta: artist Connie Smith}
 {meta: composer Jean Chapel and Alda Calongne}
+{meta: x_source classic-country}
+{meta: x_source_file alonelywomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No one can [C]cry like a [D7]woman [C]can
@@ -36,3 +39,8 @@ No one on [G7]earth is [C]lonelier than  [D7]a lonely [G]woman
 [D7]A lonely [G]woman
 [D7]A lonely [G]woman
 {end_of_verse}
+
+
+
+
+

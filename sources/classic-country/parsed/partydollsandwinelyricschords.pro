@@ -1,6 +1,9 @@
 {meta: title Party Dolls And Wine}
 {meta: artist Red Steagall}
 {meta: composer J.B. Barnhill}
+{meta: x_source classic-country}
+{meta: x_source_file partydollsandwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Neon lights barroom bands [F]hotel rooms one night stands
@@ -47,3 +50,10 @@ I know that someday I'll be put in my place
 [F]But I'll die happy with a smile on my face
 [G7]Remembering all those party dolls and [C]wine
 {end_of_verse}
+
+
+
+
+
+
+

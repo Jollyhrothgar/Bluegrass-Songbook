@@ -1,6 +1,9 @@
 {meta: title It's Driving Me Crazy}
 {meta: artist Marty Robbins}
 {meta: composer Ray Edenton}
+{meta: x_source classic-country}
+{meta: x_source_file itsdrivingmecrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well [D7]I don't like this roamin' around
@@ -47,3 +50,8 @@ Well I remember the way that you smile
 The [C]love that I treated so carelessly
 And it's drivin' me [D7]crazy but what can I [G]do
 {end_of_verse}
+
+
+
+
+

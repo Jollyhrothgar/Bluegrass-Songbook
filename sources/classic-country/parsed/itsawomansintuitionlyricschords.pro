@@ -1,6 +1,9 @@
 {meta: title It's A Woman's Intuition}
 {meta: artist Wilburn Brothers}
 {meta: composer Madelyn Burroughs}
+{meta: x_source classic-country}
+{meta: x_source_file itsawomansintuitionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a woman's intuition that [F]arouses her suspicion
@@ -50,3 +53,9 @@ And you [G7]never know what goes on in her[C] mind
 It's a woman's intuition that[F] tells her something's  missin'
 You can [G7]bet that she'll be right most every [C]time
 {end_of_verse}
+
+
+
+
+
+

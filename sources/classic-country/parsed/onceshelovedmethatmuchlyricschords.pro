@@ -1,6 +1,9 @@
 {meta: title Once She Loved Me That Much}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file onceshelovedmethatmuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It only [F]changed her [C]touch to turn your world [C][F]around
@@ -22,3 +25,5 @@
 [C]So love her [F]while you [C]can someday you'll [C][F]understand
 [F]Her dreams are built of [C]sand once [F]she loved me [G7]that [C]much
 {end_of_verse}
+
+

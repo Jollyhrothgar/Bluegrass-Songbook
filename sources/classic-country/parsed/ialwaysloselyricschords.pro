@@ -1,6 +1,9 @@
 {meta: title I Always Lose}
 {meta: artist Hank Locklin}
 {meta: composer Zeke Clements and Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file ialwaysloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve had my share of tears and [F]sorrow
@@ -29,3 +32,6 @@ But happiness I’ve been re[G7]fused
 This kind of [C]life is not worth [F]living
 No future [C]now [G7]I always [C]lose
 {end_of_verse}
+
+
+

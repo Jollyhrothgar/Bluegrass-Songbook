@@ -1,6 +1,9 @@
 {meta: title She's As Good As Gone}
 {meta: artist Charlie Pride}
 {meta: composer David Wills and Charles Quillen}
+{meta: x_source classic-country}
+{meta: x_source_file shesasgoodasgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's so close that I could touch her but she's a [F]million miles [C]away
@@ -37,3 +40,7 @@ She's as good as [F]gone she's as good as [C]gone
 She's as good as [F]gone she's as good as [C]gone 
 She's as good as [F]gone she's as good as [C]gone
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Did The Right Thing}
 {meta: artist Johnny Paycheck}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file ididtherightthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I pull into my driveway while the [C]day is slowly dying in the [G]west
@@ -42,3 +45,8 @@ I [G7]went back to my wife [C]straightened out my life
 [D7]I did the right [G]thing
 [D7]I did the right [G]thing
 {end_of_verse}
+
+
+
+
+

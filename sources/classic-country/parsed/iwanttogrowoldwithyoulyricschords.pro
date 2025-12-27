@@ -1,6 +1,9 @@
 {meta: title I Want To Grow Old With You}
 {meta: artist George Jones}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttogrowoldwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw a sweet old couple in the park the other day
@@ -74,3 +77,19 @@ And I'll be your big old baby
 {start_of_verse: Verse 16}
 Repeat last verse
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

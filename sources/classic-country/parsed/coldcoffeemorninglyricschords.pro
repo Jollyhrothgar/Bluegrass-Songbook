@@ -1,6 +1,9 @@
 {meta: title Cold Coffee Morning}
 {meta: artist Jon Randall}
 {meta: composer Bill Anderson and Jon Randall}
+{meta: x_source classic-country}
+{meta: x_source_file coldcoffeemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The saddest face I've ever shaved [C]is staring back at [G]me 
@@ -33,3 +36,7 @@ It's gonna be a [C]cold coffee [G]morning and a [D7]warm beer after[G]noon
 {start_of_verse: Verse 4}
 It's gonna be a [C]cold coffee [G]morning and a [D7]warm beer after[G]noon 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title He's Only Everything}
 {meta: artist Reba McEntire}
 {meta: composer Billy Deaton and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file hesonlyeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the eyes of the world he's [F]only an [G7]ordinary [C]man
@@ -38,3 +41,6 @@ Lord he's [F]only [G7]every[C]thing
 [F]Yes in these [C]eyes of mine 
 Lord he's [F]only [G7]every[C]thing 
 {end_of_verse}
+
+
+

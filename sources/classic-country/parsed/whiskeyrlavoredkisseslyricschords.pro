@@ -1,6 +1,9 @@
 {meta: title Whiskey Flavored Kisses}
 {meta: artist Red Sovine}
 {meta: composer Jim Single}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeyrlavoredkisseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Whiskey flavored kisses on my lips [C]tonight
@@ -36,3 +39,7 @@
 [C]Well I been gettin' dizzy and my head feels so light
 [D7]Whiskey flavored kisses on my lips [G]tonight
 {end_of_verse}
+
+
+
+

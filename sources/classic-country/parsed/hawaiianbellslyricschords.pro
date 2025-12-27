@@ -1,6 +1,9 @@
 {meta: title Hawaiian Bells}
 {meta: artist Marty Robbins}
 {meta: composer Jerry Byrd}
+{meta: x_source classic-country}
+{meta: x_source_file hawaiianbellslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hawaiian bells were [F]ringing
@@ -30,3 +33,5 @@
 [F]Hawaiian bells from my land
 [G7]The bells that broke my [C]heart
 {end_of_verse}
+
+

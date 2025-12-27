@@ -1,5 +1,8 @@
 {meta: title Heavenly Sunlight}
 {meta: artist John Hartford}
+{meta: x_source classic-country}
+{meta: x_source_file heavenlysunlightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walking in sunlight all of my [G7]journey
@@ -47,3 +50,9 @@ Singing His [C]praises [G7]Jesus is [C]mine
 Hallelujah I am re[G7]joicing
 Singing His [C]praises [G7]Jesus is [C]mine
 {end_of_verse}
+
+
+
+
+
+

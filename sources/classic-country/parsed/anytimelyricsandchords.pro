@@ -1,6 +1,9 @@
 {meta: title Anytime Lyrics and Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Herbert Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file anytimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Anyt[A7]ime you're feeling [D7]lonely
@@ -29,3 +32,6 @@ Anyt[G7]ime at all will [E7]do
 So anyt[A7]ime you say you [D7]want only my love
 That's the [G7]time I'll come back home to [C]you
 {end_of_verse}
+
+
+

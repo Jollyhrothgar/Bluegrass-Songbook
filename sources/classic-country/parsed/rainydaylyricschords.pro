@@ -1,6 +1,9 @@
 {meta: title Rainy Day}
 {meta: artist Vernon Oxford}
 {meta: composer Everett Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file rainydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rainy day what do you bring
@@ -40,3 +43,8 @@ Take the [G7]sunshine and then de[C]part
 {start_of_verse: Verse 4}
 You take the [G7]sunshine and then de[C]part
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Again}
 {meta: artist Ricky Nelson}
 {meta: composer Dorcas Cochran and Lionel Newman}
+{meta: x_source classic-country}
+{meta: x_source_file againlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Again [D7]this [G7]couldn't happen [Em]again
@@ -26,3 +29,6 @@ What matters dear
 [G7]We'll have this moment [C]forever
 [D7]But [G7]never never [C]again
 {end_of_verse}
+
+
+

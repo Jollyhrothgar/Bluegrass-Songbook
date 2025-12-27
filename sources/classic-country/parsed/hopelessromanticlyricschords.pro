@@ -1,6 +1,9 @@
 {meta: title Hopeless Romantic}
 {meta: artist Crystal Gayle}
 {meta: composer Billy Vera}
+{meta: x_source classic-country}
+{meta: x_source_file hopelessromanticlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes on Sundays I sit by the TV
@@ -50,3 +53,8 @@ To make tr[C]ue lo[Bm]ve la[Am]st
 To make t[C]rue l[Bm]ove l[Am]ast  [D7]these da[G]ys
 For a [Am]hopeless ro[D7]mantics like [G]me 
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Jesus Christ}
 {meta: artist Woody Guthrie}
+{meta: x_source classic-country}
+{meta: x_source_file JesusChristlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus Christ was a man that [F]traveled through the [C]land
@@ -56,3 +59,10 @@ His followers true and [G7]brave
 [C]One dirty coward called [F]Judas Isca[C]riot
 Has laid poor [G7]Jesus in his [C]grave
 {end_of_verse}
+
+
+
+
+
+
+

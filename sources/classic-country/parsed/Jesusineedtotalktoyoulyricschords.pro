@@ -1,6 +1,9 @@
 {meta: title Jesus I Need To Talk To You}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusineedtotalktoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night my little boy knelt [F]down beside his [C]bed 
@@ -37,3 +40,7 @@ My little boy crawled into bed and [D7]soon was fast a[G7]sleep
 But I [C]knew he'd found an inner strength and it [F]would always see him [C]through 
 And I said Jesus up in Heaven I [G7]need to talk to [C]You
 {end_of_verse}
+
+
+
+

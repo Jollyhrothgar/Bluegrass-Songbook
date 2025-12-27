@@ -1,6 +1,9 @@
 {meta: title Brothers Strangers And Friends}
 {meta: artist Ronnie Milsap}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file brothersstrangersandfriendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]With her [C]long auburn [C7]hair [F]and her baby blue [C]eyes
@@ -34,3 +37,7 @@ Of my [C]brothers [G7]strangers and [C]friends
 I know she'd be [C7]angry if [F]she knew the feelings
 Of my [C]brothers [G7]strangers and [F]frien[C]ds
 {end_of_verse}
+
+
+
+

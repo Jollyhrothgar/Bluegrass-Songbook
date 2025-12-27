@@ -1,6 +1,9 @@
 {meta: title Too Many Times}
 {meta: artist Jimmy Dean}
 {meta: composer Joel Herron}
+{meta: x_source classic-country}
+{meta: x_source_file toomanytimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Too many times [Am]you've broken my [D7]heart
@@ -23,3 +26,5 @@
 [A7]And you've done it too many [D7]times
 [A7]You've done it too [D7]many [G]times
 {end_of_verse}
+
+

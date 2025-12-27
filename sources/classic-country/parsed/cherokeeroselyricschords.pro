@@ -1,6 +1,9 @@
 {meta: title Cherokee Rose}
 {meta: artist Jack Greene}
 {meta: composer Billy Ray Reynolds, Doug Gilmore, Grant Boatwright}
+{meta: x_source classic-country}
+{meta: x_source_file cherokeeroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh my Chero[F]kee [C]Rose your loves gotta [F]hold on my heart and [C]soul
@@ -26,3 +29,6 @@ Oh my Chero[F]kee [C]Rose like the morning [F]flower love grows and [C]grows
 I’m [F]deep in your [C]spell no words can [F]tell the way I [C]feel
 Oh my Chero[F]kee [C]Rose your loves gotta [F]hold on my heart and [C]soul
 {end_of_verse}
+
+
+

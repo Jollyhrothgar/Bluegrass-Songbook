@@ -1,6 +1,9 @@
 {meta: title Before I Lost You}
 {meta: artist Roy Drusky}
 {meta: composer Jack Green and Clay Allen}
+{meta: x_source classic-country}
+{meta: x_source_file beforeilostyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear your new love sends you [F]pretty 
@@ -28,3 +31,6 @@ Why didn't [G7]I think of that before I lost [C]you
 Jealousy made me blind too [C7]late I know that it's [F]true
 Why didn't [G7]I think of that before I lost [C]you
 {end_of_verse}
+
+
+

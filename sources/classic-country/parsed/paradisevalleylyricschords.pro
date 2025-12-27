@@ -1,5 +1,8 @@
 {meta: title Paradise Valley}
 {meta: artist Mac Wiseman}
+{meta: x_source classic-country}
+{meta: x_source_file paradisevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As I travel through life with this [C]struggle and strife
@@ -42,3 +45,8 @@ Beneath the [C]shade of the evergreen tree
 How I long for the paradise [G]valley[E7]
 Where the [A7]beauty of [D7]heaven I'll [G]see
 {end_of_verse}
+
+
+
+
+

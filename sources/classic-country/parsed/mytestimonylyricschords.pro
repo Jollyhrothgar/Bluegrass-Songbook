@@ -1,5 +1,8 @@
 {meta: title My Testimony}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file mytestimonylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As the choir sang pass me [C]not oh gentle [G]Savior
@@ -32,3 +35,7 @@ But I finally couldn't walk I [C]had to [G]run to [D7]meet my [G]Lord
 {start_of_verse: Verse 4}
 Praise God I couldn't walk I [C]had to [G]run to [D7]meet my [G]Lord
 {end_of_verse}
+
+
+
+

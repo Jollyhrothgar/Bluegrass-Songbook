@@ -1,6 +1,9 @@
 {meta: title Yesterday's Letters}
 {meta: artist Jack Greene}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdaysletterslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fiery kisses linger on two [A7]lips that miss you so
@@ -29,3 +32,6 @@ So [F]yesterday's [G7]letters will be my share of [C]you
 [F]Yesterday's [G7]letters [F]so timeless and [C]true
 Will [F]always keep me [G7]close to [C]you
 {end_of_verse}
+
+
+

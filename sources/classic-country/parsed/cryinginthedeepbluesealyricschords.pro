@@ -1,5 +1,8 @@
 {meta: title Crying in the Deep Blue Sea}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file cryinginthedeepbluesealyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I went to see my baby [F]she said stay away from [C]me
@@ -52,3 +55,12 @@ So I hung my little head and cried
 {start_of_verse: Verse 10}
 Repeat chorus
 {end_of_verse}
+
+
+
+
+
+
+
+
+

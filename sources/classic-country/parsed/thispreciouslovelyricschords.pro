@@ -1,6 +1,9 @@
 {meta: title This Precious Love}
 {meta: artist Gene Pitney}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file thispreciouslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No one could [D7]ever steal [C]the joy that [G]we both feel
@@ -22,3 +25,5 @@ It can't be [D7]bought or sold this precious [G]love we know
 [G]In each and [D7]every day [C]our love is [G]here to stay
 It can't be [D7]bought or sold this precious [G]love we know
 {end_of_verse}
+
+

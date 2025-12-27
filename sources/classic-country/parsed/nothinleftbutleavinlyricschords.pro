@@ -1,6 +1,9 @@
 {meta: title Nothin' Left But Leavin'}
 {meta: artist Charley Pride}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file nothinleftbutleavinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight it's so [C]cold the rain is [D7]fallin'
@@ -37,3 +40,7 @@ There was [G]nothin' [C]left but [G]leavin' [D7]any[G]way
 {start_of_verse: Verse 5}
 [C]There was [G]nothin' [C]left but [G]leavin' [D7]any[G]way
 {end_of_verse}
+
+
+
+

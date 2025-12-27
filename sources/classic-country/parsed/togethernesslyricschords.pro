@@ -1,6 +1,9 @@
 {meta: title Togetherness}
 {meta: artist Buck Owens}
 {meta: composer Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file togethernesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When a [C]lonely boy meets a lonely girl that's to[G7]getherness
@@ -26,3 +29,6 @@ So please stay by me and we'll never be unhappy any[F]more
 {start_of_verse: Verse 4}
 [G7]Togetherness makes loneliness walk right out the [C]door  [G7]    [C]
 {end_of_verse}
+
+
+

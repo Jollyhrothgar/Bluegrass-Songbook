@@ -1,6 +1,9 @@
 {meta: title Mama's Family Bible}
 {meta: artist George Jones}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file mamasfamilybiblelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The estate is [G7]being [C]settled 
@@ -49,3 +52,7 @@ At all the [C]scriptures
 [F]Mama's [C]family [F]bible 
 Is the [C]treasure [G7]I'm proud [C]of [G7]   [C]  [G7]   [C]
 {end_of_verse}
+
+
+
+

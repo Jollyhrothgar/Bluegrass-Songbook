@@ -1,6 +1,9 @@
 {meta: title She'll Never Know}
 {meta: artist Brenda Lee}
 {meta: composer Roe E. "Rick" Hall}
+{meta: x_source classic-country}
+{meta: x_source_file shellneverknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](Never know [G7]never know she’ll [C]never know)[G7]
@@ -37,3 +40,7 @@ But [F]I'll get by [G7]someway somehow
 [F]She'll take your hand [G7]but I'll take this vow
 [C]She'll never [F]kno[C]w
 {end_of_verse}
+
+
+
+

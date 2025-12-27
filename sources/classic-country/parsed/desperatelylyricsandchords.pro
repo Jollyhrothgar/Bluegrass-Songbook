@@ -1,6 +1,9 @@
 {meta: title Desperately}
 {meta: artist George Strait}
 {meta: composer Bruce Robison and Monte Warden}
+{meta: x_source classic-country}
+{meta: x_source_file desperatelylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every [G7]night it's the [C]same
@@ -70,3 +73,13 @@ I still [G7]love you desperate[C]ly
 I still [G7]love you [C]I still [G7]want you
 [C]I still [G7]love you desperate[C]ly
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

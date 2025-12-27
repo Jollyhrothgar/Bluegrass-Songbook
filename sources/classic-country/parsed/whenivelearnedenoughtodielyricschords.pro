@@ -1,6 +1,9 @@
 {meta: title When I've Learned Enough To Die}
 {meta: artist Johnny Cash}
 {meta: composer Buddy Killen, Ray Baker, Delbert Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file whenivelearnedenoughtodielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](When I've learned [D7]enough to [G]really [C]live
@@ -39,3 +42,8 @@
 {start_of_verse: Verse 5}
 [C]Old enough to [G]die
 {end_of_verse}
+
+
+
+
+

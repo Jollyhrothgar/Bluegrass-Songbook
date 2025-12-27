@@ -1,6 +1,9 @@
 {meta: title Your Memory Comes And Gets Me}
 {meta: artist Wanda Jackson}
 {meta: composer Billy Graham and Tommy Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file yourmemorycomesandgetsmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've got power over me that [C]I just can't under[G]stand
@@ -27,3 +30,6 @@ Your memory comes and gets me and [D7]leads me back to [G]you
 Yes you let me play awhile then [C]like a wayward [G]child
 Your memory comes and gets me and [D7]leads me back to [G]you
 {end_of_verse}
+
+
+

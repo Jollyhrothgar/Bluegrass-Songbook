@@ -1,6 +1,9 @@
 {meta: title Take Me In Your Lifeboat}
 {meta: artist Del McCoury}
 {meta: composer Chris Hillman}
+{meta: x_source classic-country}
+{meta: x_source_file takemeinyourlifeboatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take me in your lifeboat oh [C]take me in your life[G]boat
@@ -43,3 +46,8 @@ It will stand the raging [D7]storm
 [G]Take me in your lifeboat oh [C]take me in your life[G]boat
 It will bear my spirit [D7]ho-[G]me
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Tall Oak Tree}
 {meta: artist Dorsey Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file talloaktreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There was a tall oak tree[C]  [G] that loved a [C]babbling [G]brook
@@ -32,3 +35,7 @@ There was a [C]tall oak [G]tree
 There was a [C]tall oak [G]tree
 There was a [C]tall [D7]oak [G]tree
 {end_of_verse}
+
+
+
+

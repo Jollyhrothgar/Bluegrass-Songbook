@@ -1,5 +1,8 @@
 {meta: title Whole Lot Of Something}
 {meta: artist Buddy Alan}
+{meta: x_source classic-country}
+{meta: x_source_file wholelotofsomethinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today you upped and walked right out the door
@@ -39,3 +42,8 @@ It's gonna [G]take a whole lot of [D7]something to bring you [G]back
 {start_of_verse: Verse 6}
 It's gonna take a whole lot of [D7]something to bring you [G]back
 {end_of_verse}
+
+
+
+
+

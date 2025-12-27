@@ -1,6 +1,9 @@
 {meta: title Point Of Light}
 {meta: artist Randy Travis}
 {meta: composer Don Schlitz and Thom Schuyler}
+{meta: x_source classic-country}
+{meta: x_source_file pointoflightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a point when you [F]cannot walk [C]away
@@ -53,3 +56,10 @@ If you [C]see what's wrong and you [F]try to make it [C]right
 If you [C]see what's wrong and you [F]try to make it [C]right
 [F]You will [C]be a [G7]point of [F]light[C]
 {end_of_verse}
+
+
+
+
+
+
+

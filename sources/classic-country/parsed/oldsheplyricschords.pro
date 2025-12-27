@@ -1,5 +1,8 @@
 {meta: title Old Shep}
 {meta: artist Red Foley}
+{meta: x_source classic-country}
+{meta: x_source_file oldsheplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was a lad [A7]and old Shep was a [D7]pup
@@ -49,3 +52,9 @@ And no [Am]more with old [D7]Shep will I [G7]roam
 But if dogs [C]have a heaven [A7]there's one thing I [D7]know
 Old [G7]Shep has a wonderful [C]home
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Help Me Lord}
 {meta: artist Doyle Lawson}
 {meta: composer Brian Faust}
+{meta: x_source classic-country}
+{meta: x_source_file helpmelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have a friend who [C]walks beside [G]me
@@ -48,3 +51,9 @@ I will help but[D7] you must[G] try
 And He answered I am near thee
 I will help but[D7] you must[G] try
 {end_of_verse}
+
+
+
+
+
+

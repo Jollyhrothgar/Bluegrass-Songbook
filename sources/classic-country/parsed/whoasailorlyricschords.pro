@@ -1,6 +1,9 @@
 {meta: title Whoa Sailor}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Walt McCoy}
+{meta: x_source classic-country}
+{meta: x_source_file whoasailorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll tell you about my night on [G7]shore
@@ -76,3 +79,14 @@ Well she was right neat and she sure was sweet
 [D7]But she's not all to blame 'cause it's a sailor's aim
 [G7]To have a girl in every [C]port
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

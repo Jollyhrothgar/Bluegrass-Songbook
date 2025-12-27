@@ -1,6 +1,9 @@
 {meta: title I Go Crazy From The Heart}
 {meta: artist The Bellamy Brothers}
 {meta: composer Don Schlitz and David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file igocrazyfromtheheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know the reasons why [C]you’re not here with [Am]me
@@ -41,3 +44,8 @@ Well [G]I reach out to [Em]touch you but you [C]know we’re in the [D7]dark
 My mind [G]kno-o-[C]ws why we’re a[Em]part  [C]
 But I go [G]cra-[Am]a-a-[C]zy [D7]crazy from the [G]heart
 {end_of_verse}
+
+
+
+
+

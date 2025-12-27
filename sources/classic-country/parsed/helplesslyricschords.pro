@@ -1,6 +1,9 @@
 {meta: title Helpless}
 {meta: artist Darrell McCall}
 {meta: composer Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file helplesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Helpless [F]that's what I'd be without your [C]lips
@@ -20,3 +23,5 @@ The whole world down
 [C]Helpless oh [F]can't you see that I'd be [C]helpless
 [G7]Without you here with [C]me
 {end_of_verse}
+
+

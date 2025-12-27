@@ -1,5 +1,8 @@
 {meta: title Jesus Take Hold}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file Jesustakeholdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like the ancient Roman empire this [G7]world is doomed to [C]fall
@@ -35,3 +38,8 @@ It's [C]time the prayer was spoken from the [F]heart of every [C]man
 Jesus take a hold and [G7]lead us [C]through
 Jesus take a hold and [G7]lead us [C]through
 {end_of_verse}
+
+
+
+
+

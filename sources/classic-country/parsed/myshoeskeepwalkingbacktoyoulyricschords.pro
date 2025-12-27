@@ -1,6 +1,9 @@
 {meta: title My Shoes Keep Walking Back To You}
 {meta: artist Ray Price}
 {meta: composer Bob Wills and Lee Ross}
+{meta: x_source classic-country}
+{meta: x_source_file myshoeskeepwalkingbacktoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I must say that I don't care
@@ -42,3 +45,9 @@ And that's when I miss you most [C]of all
 {start_of_verse: Verse 6}
 And my [G7]shoes keep walking back [C]to you
 {end_of_verse}
+
+
+
+
+
+

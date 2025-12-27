@@ -1,6 +1,9 @@
 {meta: title Lips Speak Up}
 {meta: artist Vern Gosdin}
 {meta: composer Jollie Hollie}
+{meta: x_source classic-country}
+{meta: x_source_file lipsspeakuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So many times I [F]felt my body [C]tremble
@@ -33,3 +36,7 @@ Lips speak [C]up  [G7]and talk for [C]me [F]
 {start_of_verse: Verse 5}
 Lips speak [C]up  [G7]and talk for [F]me[C]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Veterans Day}
 {meta: artist Johnny Cash}
 {meta: composer Tom Russell}
+{meta: x_source classic-country}
+{meta: x_source_file veteransdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I used to hang out down at the VFW [D7]hall
@@ -43,3 +46,8 @@ A lot of Jimmy McGrews over there
 But we'll fill up a glass for the ones that didn't make it [C]through
 And leave a [G]light in the window to[D7]night for Jimmy [G]McGrew
 {end_of_verse}
+
+
+
+
+

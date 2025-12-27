@@ -1,6 +1,9 @@
 {meta: title Cheatin' Kind Of Life}
 {meta: artist Rhonda Vincent}
 {meta: composer Joshua Williams and Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file cheatinkindoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You put me out you knocked me down
@@ -48,3 +51,9 @@ I'll turn around I won't look back
 [C]I won't let ya go without a fight
 [G]I'm givin' up this [D7]cheatin' kind of [G]life
 {end_of_verse}
+
+
+
+
+
+

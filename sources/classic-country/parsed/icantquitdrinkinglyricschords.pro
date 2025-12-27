@@ -1,6 +1,9 @@
 {meta: title I Can't Quit Drinking}
 {meta: artist Johnny Paycheck}
 {meta: composer Harlan Sanders and Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file icantquitdrinkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They could quit making [F]whiskey
@@ -64,3 +67,11 @@ With millions of women
 [F]Has swinging doors
 [G7]I'll find it [C]someday
 {end_of_verse}
+
+
+
+
+
+
+
+

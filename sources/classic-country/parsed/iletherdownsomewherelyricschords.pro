@@ -1,6 +1,9 @@
 {meta: title I Let Her Down Somewhere}
 {meta: artist Sonny James}
 {meta: composer Bob Tubert and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file iletherdownsomewherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please forgive her when you see her acting [F]like she doesn't [Dm]care
@@ -26,3 +29,6 @@ Oh she [G7]loves me I guess too much and I let her down some[C]where
 {start_of_verse: Verse 4}
 [F]I let her [Dm]down [G7]somew[C]here
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Don't Care (Whose Heart It Breaks)}
 {meta: artist Earl Thomas Conley}
 {meta: composer Randy Scruggs and Earl T. Conley}
+{meta: x_source classic-country}
+{meta: x_source_file lovedontcarewhoseheartitbreakslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a lonely rider
@@ -57,3 +60,11 @@ If it [Dm]all falls through as a [G7]bad mistake
 {start_of_verse: Verse 7}
 No [F]love don't [C]care whose [F]heart it [C]breaks
 {end_of_verse}
+
+
+
+
+
+
+
+

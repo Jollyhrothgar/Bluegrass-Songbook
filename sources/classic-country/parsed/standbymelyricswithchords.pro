@@ -1,6 +1,9 @@
 {meta: title Stand by Me}
 {meta: artist Elvis Presley}
 {meta: composer Charles A. Tindley}
+{meta: x_source classic-country}
+{meta: x_source_file standbymelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the storms of life are [F]raging
@@ -40,3 +43,9 @@ Stand by [C]me
 Thou who never lost a [G7]battle
 Stand by [C]me 
 {end_of_verse}
+
+
+
+
+
+

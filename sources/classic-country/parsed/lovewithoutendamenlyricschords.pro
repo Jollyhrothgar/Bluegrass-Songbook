@@ -1,6 +1,9 @@
 {meta: title Love Without End Amen}
 {meta: artist George Strait}
 {meta: composer Aaron Barker}
+{meta: x_source classic-country}
+{meta: x_source_file lovewithoutendamenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got sent home from school one day with a [F]shiner on my [C]eye
@@ -46,3 +49,8 @@ He said [F]daddy's don't just [G7]love their children [C]every now and [F]then
 It's a [C]love without [G7]end a[C]men  
 It's a love without [G7]end a[C]men
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title From A Distance}
 {meta: artist Alan Jackson}
 {meta: composer Randy Travis and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file fromadistancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just another [G7]bar with [F]loud gui[G7]tars 
@@ -49,3 +52,9 @@ But I can [F]love you [G7]from a [C]distance
 {start_of_verse: Verse 5}
 I'll always [F]love you [G7]from a [C]distance
 {end_of_verse}
+
+
+
+
+
+

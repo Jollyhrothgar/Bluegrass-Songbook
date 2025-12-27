@@ -1,6 +1,9 @@
 {meta: title Hold On (To The Love I Got)}
 {meta: artist Barbara Mandrell}
 {meta: composer Norro Wilson, Carmol Taylor, Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file holdontotheloveivegotlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm gonna hold on to the love I've got
@@ -84,3 +87,13 @@ And as [C]long as we're livin'
 And lovin' the way we [D7]want to
 I [G7]know I'm gonna be the best loved woman [C]alive
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title We Believe in Happy endings}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file webelieveinhappyendingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who can tell just how it [G7]starts
@@ -49,3 +52,9 @@ We believe in happy [G7]endings
 [C]Taking time enough for [F]mending
   [G7]The hurt [C]inside
 {end_of_verse}
+
+
+
+
+
+

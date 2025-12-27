@@ -1,6 +1,9 @@
 {meta: title In The House Of The Lord}
 {meta: artist Hank Locklin}
 {meta: composer Lawrence Lewis and Katherine Adelman}
+{meta: x_source classic-country}
+{meta: x_source_file inthehouseofthelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you been dreaming of a new [C]life
@@ -29,3 +32,6 @@
 [G]You can be headed for a new [C]life
 [G]If you go to [D7]the house of the [G]Lord
 {end_of_verse}
+
+
+

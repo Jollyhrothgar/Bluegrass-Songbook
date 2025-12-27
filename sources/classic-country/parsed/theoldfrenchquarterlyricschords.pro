@@ -1,6 +1,9 @@
 {meta: title The Old French Quarter}
 {meta: artist Billy Walker}
 {meta: composer Cliff Crofford}
+{meta: x_source classic-country}
+{meta: x_source_file theoldfrenchquarterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the old French Quarter in New [G7]Orleans
@@ -36,3 +39,7 @@ In the [C]old French [G7]Quarter in New [C]Orleans
 {start_of_verse: Verse 5}
 In the old French [G7]Quarter in New [C]Orleans
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Where The Blue Of The Night Meets The Gold Of The Day}
 {meta: artist Hank Locklin}
 {meta: composer Roy Turk, Fred Ahlert, Bing Crosby}
+{meta: x_source classic-country}
+{meta: x_source_file wheretheblueofthenightmeetsthegoldofthedaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Where The Blue Of The Night Meets The Gold Of The Day
@@ -25,3 +28,6 @@ Where the [G]blue of the [B7]night meets the [C]gold of the [Cm]day
 Where the [G]blue of the [B7]night meets the [C]gold of the [Cm]day
 [G]Someone [D7]waits for [G]me
 {end_of_verse}
+
+
+

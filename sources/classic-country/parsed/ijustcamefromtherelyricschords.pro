@@ -1,6 +1,9 @@
 {meta: title I Just Came From There}
 {meta: artist Jim Ed Brown}
 {meta: composer Melvin Endsley}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcamefromtherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s heartaches like [C]you've never [G]known
@@ -29,3 +32,6 @@ Then make certain that [C]you're well [D7]aware
 It's [G]up to her [G7]choosing it [C]could be your ruin
 [G]I just [D7]came from [G]there
 {end_of_verse}
+
+
+

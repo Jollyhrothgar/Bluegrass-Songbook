@@ -1,6 +1,9 @@
 {meta: title If Heaven Ain’t A Lot Like Dixie}
 {meta: artist Hank Williams Jr.}
 {meta: composer William Maddox and David Leslie Moore}
+{meta: x_source classic-country}
+{meta: x_source_file ifheavenaintalotlikedixielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If heaven ain't a lot like Dixie [F]I don't [G7]wanna [C]go
@@ -34,3 +37,7 @@
 [F]I went through a lot of good women shook old Jim Beam's hand
 [C]If I never see the pearly [G7]gates I've walked through the promised [C]land
 {end_of_verse}
+
+
+
+

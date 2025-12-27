@@ -1,6 +1,9 @@
 {meta: title Louisville}
 {meta: artist Leroy Van Dyke}
 {meta: composer Chuck Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file louisvillelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My car broke [G7]down in [C]Georgia hard luck's followin' me
@@ -27,3 +30,6 @@ The [F]good Lord willin' I'll [C]soon be [Am]wheelin' into [D7]good ole [G7]Loui
 The [F]good Lord willin' I'll [C]soon be [Am]wheelin' into [D7]good ole [G7]Louis[C]ville
 The [F]good Lord willin' I'll [C]soon be [Am]wheelin' into [D7]good ole [G7]Louis[C]ville
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Fair Swiss Maiden}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file fairswissmaidenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One time a [F]long time [C]ago [F]on a mountain in [C]Switzerland [G7]yololo[C]lo
@@ -35,3 +38,7 @@ If she did I [C]really don't know [G7]ohohoh did she die un[C]happy
 [F]Wouldn't you [C]rather think she [G7]did find [C]love
 [F]Some[C]where [F]some[C]way [G7]yodellady[C]lay
 {end_of_verse}
+
+
+
+

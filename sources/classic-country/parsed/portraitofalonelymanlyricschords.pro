@@ -1,6 +1,9 @@
 {meta: title Portrait Of A Lonely Man}
 {meta: artist Freddie Hart}
 {meta: composer Lynn Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file portraitofalonelymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Paint two eyes filled with tears
@@ -28,3 +31,5 @@
 [F]Filled with pain from wanting you
 [C]Paint my portrait [G7]as a lonely [C][F]man
 {end_of_verse}
+
+

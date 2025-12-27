@@ -1,6 +1,9 @@
 {meta: title Me and My Baby Doin' the Bunny Hop}
 {meta: artist Bob Wills}
 {meta: composer Fewell}
+{meta: x_source classic-country}
+{meta: x_source_file meandmybabydointhebunnyhoplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now when I love my baby I never wanna stop
@@ -29,3 +32,6 @@ Grab yourself a honey boy and [C7]do the Do-si-do
 As we're [F]doin' the Bunny Hop yes we're [C]doin' that Bunny Hop
 When I [G7]do it with my baby I never ever wanna [C]stop 
 {end_of_verse}
+
+
+

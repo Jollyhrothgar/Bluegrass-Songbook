@@ -1,6 +1,9 @@
 {meta: title What If I Say Goodbye}
 {meta: artist Ray Price}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file whatifisaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What if I say I [F]love you
@@ -47,3 +50,9 @@ Could we [C]possibly salvage the [F]dreams we knew
 {start_of_verse: Verse 5}
 [G7]What if I say good[C]bye
 {end_of_verse}
+
+
+
+
+
+

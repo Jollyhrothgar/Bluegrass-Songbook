@@ -1,6 +1,9 @@
 {meta: title After Closing Time}
 {meta: artist George Jones}
 {meta: composer Billy Sherrill, Norro Wilson, Danny Walls}
+{meta: x_source classic-country}
+{meta: x_source_file afterclosingtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you can find me serving drinks [C]inside a honky [G]tonk
@@ -40,3 +43,8 @@ And she'll be mine  [D7]after closing [G]time
 {start_of_verse: Verse 5}
 And she'll be mine  [D7]after closing [G]time
 {end_of_verse}
+
+
+
+
+

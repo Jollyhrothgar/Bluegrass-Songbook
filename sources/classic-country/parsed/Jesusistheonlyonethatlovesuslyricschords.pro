@@ -1,6 +1,9 @@
 {meta: title Jesus Is The Only One That Loves Us}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare and Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusistheonlyonethatlovesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]See the [D7]Sunday morning [C]wino slowly [G]shufflin' down the street
@@ -41,3 +44,8 @@ Even [D7]when we think we [C]haven't got a [G]friend
 Yes [D7]Jesus is the [C]only one that [G]loves us
 He'll [D7]forgive us [C]when we [G]sin
 {end_of_verse}
+
+
+
+
+

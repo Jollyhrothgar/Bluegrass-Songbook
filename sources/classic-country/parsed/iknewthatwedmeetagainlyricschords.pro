@@ -1,6 +1,9 @@
 {meta: title I Knew That We'd Meet Again}
 {meta: artist Hank Snow}
 {meta: composer Allan Flynn, Bert Douglas, Ernest Brewer}
+{meta: x_source classic-country}
+{meta: x_source_file iknewthatwedmeetagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though we said [F]goodbye and [C]drifted far [G7]apart
@@ -38,3 +41,8 @@ I knew that we'd meet [C]again
 Though you left my arms [F]you never [C]left my [G7]heart
 I knew that we'd meet [C]again
 {end_of_verse}
+
+
+
+
+

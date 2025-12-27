@@ -1,6 +1,9 @@
 {meta: title The Kind Of Love I Can’t Forget}
 {meta: artist Bob Wills}
 {meta: composer Jesse Ashlock}
+{meta: x_source classic-country}
+{meta: x_source_file thekindofloveicantforgetlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The kind of love I can't forget dear
@@ -31,3 +34,8 @@ So why not take me back again dear
 The kind of love I can't forget dear
 [D7]Was the love you gave to [G]me
 {end_of_verse}
+
+
+
+
+

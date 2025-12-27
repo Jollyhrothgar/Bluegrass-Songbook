@@ -1,6 +1,9 @@
 {meta: title I'm Not Afraid}
 {meta: artist Ricky Nelson}
 {meta: composer Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file imnotafraidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love they [Am]say is [F]serious
@@ -35,3 +38,6 @@ I'm not a[C]fraid [F]   [C]
 [F]No I'm not a[C]fraid [F]   [C]
 [F]No I'm not a[C]fraid
 {end_of_verse}
+
+
+

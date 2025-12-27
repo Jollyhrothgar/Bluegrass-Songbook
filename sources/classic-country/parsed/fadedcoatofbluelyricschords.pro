@@ -1,6 +1,9 @@
 {meta: title Faded Coat Of Blue}
 {meta: artist The Waller Brothers}
 {meta: composer J.H. McNaughton}
+{meta: x_source classic-country}
+{meta: x_source_file fadedcoatofbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My brave man sleeps in his faded coat of [F]blue
@@ -50,3 +53,9 @@
 [C]For we'll find you and know you among the good and [F]true
 [C]Where a robe of white is given for a [G7]faded coat of [C]blue
 {end_of_verse}
+
+
+
+
+
+

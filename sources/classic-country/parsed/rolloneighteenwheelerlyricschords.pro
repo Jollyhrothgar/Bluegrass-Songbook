@@ -1,6 +1,9 @@
 {meta: title Roll On Eighteen Wheeler}
 {meta: artist Alabama}
 {meta: composer Dave Loggins}
+{meta: x_source classic-country}
+{meta: x_source_file rolloneighteenwheelerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Roll On highway Roll On a[F]long
@@ -87,3 +90,12 @@ And [Dm]Roll On Eighteen [G7]Wheeler Roll [C]On
 [C]Eighteen whee[F]ler
 [C]Roll On
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Marriage Vows}
 {meta: artist Hank Snow}
 {meta: composer Jenny Lou Carson}
+{meta: x_source classic-country}
+{meta: x_source_file marriageVowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Do you take this woman to be your dear [D7]wife
@@ -29,3 +32,6 @@ But we stick together through sickness and [G]health
 I'll [C]always be thankful till my life is [G]done 
 [A7]That two little words [D7]made us both into [G]one
 {end_of_verse}
+
+
+

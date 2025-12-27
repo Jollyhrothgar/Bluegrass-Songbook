@@ -1,6 +1,9 @@
 {meta: title Always}
 {meta: artist Patsy Cline}
 {meta: composer Irving Berlin}
+{meta: x_source classic-country}
+{meta: x_source_file alwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll be loving you always
@@ -26,3 +29,6 @@ Days may not be fair always
 [C]Not for just an [Am]hour  [G]not for just a [A7]day
 [D7]Not for just a year  but [G]always
 {end_of_verse}
+
+
+

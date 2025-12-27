@@ -1,6 +1,9 @@
 {meta: title Wolverton Mountain Lyrics Chords}
 {meta: artist Web Pierce}
 {meta: composer Merle Kilgore and Claude King}
+{meta: x_source classic-country}
+{meta: x_source_file wolvertonmountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]They say don't go [G]on Wolverton [D7]Mountain
@@ -50,3 +53,9 @@
 [D7]I'm gonna take the one I love
 [G]I don't care about Clifton Clowers
 {end_of_verse}
+
+
+
+
+
+

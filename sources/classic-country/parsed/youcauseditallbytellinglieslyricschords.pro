@@ -1,6 +1,9 @@
 {meta: title You Caused It All By Telling Lies}
 {meta: artist Hank Williams}
 {meta: composer Clyde Moody}
+{meta: x_source classic-country}
+{meta: x_source_file youcauseditallbytellinglieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you're alone and blue tonight my little [C]darling
@@ -29,3 +32,6 @@ When you [G]left I hung my head down and I [D7]cried
 But we [G]quarreled and now we're through my little [C]darling
 And you [D7]know you caused it all by telling [G]lies
 {end_of_verse}
+
+
+

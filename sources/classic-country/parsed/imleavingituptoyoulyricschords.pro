@@ -1,6 +1,9 @@
 {meta: title I’m Leaving It Up To You}
 {meta: artist Jim Ed Brown and Helen Cornelius}
 {meta: composer Don F. Harris and Dewey Terry}
+{meta: x_source classic-country}
+{meta: x_source_file imleavingituptoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm leaving it all up to [D7]you
@@ -29,3 +32,6 @@ You decide what you're gonna [G]do
 Now do you want my [D7]love
 Or are we [G]through
 {end_of_verse}
+
+
+

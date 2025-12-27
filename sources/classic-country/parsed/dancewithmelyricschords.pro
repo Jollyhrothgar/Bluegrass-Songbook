@@ -1,6 +1,9 @@
 {meta: title Dance With Me}
 {meta: artist Bobby Helms}
 {meta: composer John Hall and Johanna Hall}
+{meta: x_source classic-country}
+{meta: x_source_file dancewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dance with me like it [D7]used to be
@@ -26,3 +29,6 @@ I [F]love you [G7]more than ever be[C]fore
 {start_of_verse: Verse 4}
 Oh [F]please [G7]dance with [C]me
 {end_of_verse}
+
+
+

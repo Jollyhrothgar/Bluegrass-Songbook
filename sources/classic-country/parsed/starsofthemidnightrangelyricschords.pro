@@ -1,5 +1,8 @@
 {meta: title Stars Of The Midnight Range}
 {meta: artist Johnny Bond}
+{meta: x_source classic-country}
+{meta: x_source_file starsofthemidnightrangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stars of the [G7]midnight [C]ranges
@@ -21,3 +24,5 @@ Stars of the [F]midnight [C]ranges
 [A7]Guide my weary [D7]dogie 
 [G7]Stars of the midnight [C]range
 {end_of_verse}
+
+

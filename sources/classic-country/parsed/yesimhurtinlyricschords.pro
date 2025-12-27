@@ -1,5 +1,8 @@
 {meta: title Yes I'm Hurtin’}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file yesimhurtinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everywhere I go [D7]heartache just hurts me so
@@ -20,3 +23,5 @@ I cry each tear in vain [D7]my hopes are all the same
 {start_of_verse: Verse 3}
 [C]Yes I'm [G]hurtin’
 {end_of_verse}
+
+

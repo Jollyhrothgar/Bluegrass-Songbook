@@ -1,5 +1,8 @@
 {meta: title Hee Haw Honey}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file heehawhoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wanna Hee Haw honey or a [C]Playboy bunny [G]under my Christmas [D7]tree
@@ -41,3 +44,9 @@ So [G]give all them toys to the [C]other girls and boys
 [G]I wanna Hee Haw honey or a [C]Playboy bunny [G]under my Christmas [D7]tree
 I wanna [G]Hee Haw honey or a [C]Playboy bunny so [G]Santa [D7]bring her to [G]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Could I Talk You Into Loving Me Again}
 {meta: artist Wynn Stewart}
 {meta: composer Len Green and Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file coulditalkyouintolovingmeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Could I Talk You Into Loving Me Again
@@ -39,3 +42,8 @@ Oh could I [G]talk you into [D7]loving me [G]again [G7]
 {start_of_verse: Verse 6}
 [C]Could I [G]talk you into [D7]loving me [G]again
 {end_of_verse}
+
+
+
+
+

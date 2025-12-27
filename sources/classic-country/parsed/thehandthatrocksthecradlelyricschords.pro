@@ -1,5 +1,8 @@
 {meta: title The Hand That Rocks The Cradle}
 {meta: artist Glen Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file thehandthatrocksthecradlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He got here and wrinkled scared and [F]crying
@@ -39,3 +42,8 @@ That the [Dm]hand that rocks the [G7]cradle rules the [C]world
 {start_of_verse: Verse 5}
 Yes the [F]hand that rocks the [G7]cradle rules the [C]world
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Love You Still}
 {meta: artist Don Gibson}
 {meta: composer Melvin Endsley}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyoustilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Although you broke my heart into
@@ -26,3 +29,5 @@
 [F]You’ll always be the only one in my [C]heart
 [G7]And I love you [C]still
 {end_of_verse}
+
+

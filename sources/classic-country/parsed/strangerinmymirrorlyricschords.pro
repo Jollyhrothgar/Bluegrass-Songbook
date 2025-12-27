@@ -1,6 +1,9 @@
 {meta: title Stranger In My Mirror}
 {meta: artist Randy Travis}
 {meta: composer Kim Williams and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file strangerinmymirrorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]stranger in my mirror 
@@ -75,3 +78,13 @@ He used to [G7]be my twin now there's a stranger in my [C]mirror
 {start_of_verse: Verse 7}
 [F]Lord I'm in [G7]love with you and there's a [C]stranger [G7]in my [C]mirror
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

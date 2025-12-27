@@ -1,6 +1,9 @@
 {meta: title Too Many Places}
 {meta: artist Marty Robbins}
 {meta: composer Dennis Winters}
+{meta: x_source classic-country}
+{meta: x_source_file toomanyplaceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now there's [D7]too many places too many faces
@@ -36,3 +39,7 @@ Too many things to make me [Am]blue
 [D7]Too many places too many faces 
 Bring me too many memories of [G]you
 {end_of_verse}
+
+
+
+

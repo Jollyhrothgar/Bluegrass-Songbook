@@ -1,6 +1,9 @@
 {meta: title All That's Worth Remembering Is You}
 {meta: artist Ronnie Reno}
 {meta: composer Wayne Carson and Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file allthatsworthrememberingisyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All that's worth [B7]remembering [C]life and [D7]my memories of [G]you
@@ -24,3 +27,5 @@ Like [G]leaving you and [B7]chasing dreams that [C]never did come [G]true
 And I [C]learned most of [G]all  
 And [C]all that's worth [D7]remembering is [G]you[D7]   [C]
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Mountain High Valley Low}
 {meta: artist John Anderson}
 {meta: composer John David Anderson and Lionel Alton Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file mountainhighvalleylowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mountain high valley low in what direction [F]will I [C]go
@@ -37,3 +40,8 @@ Mountain high [G7]valley [C]low
 Will I be up will I be down will I be lost or [F]will I be [C]found
 Mountain high [G7]valley [C]low
 {end_of_verse}
+
+
+
+
+

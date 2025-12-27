@@ -1,6 +1,9 @@
 {meta: title Time}
 {meta: artist Don Williams}
 {meta: composer Michael Merchant}
+{meta: x_source classic-country}
+{meta: x_source_file timelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some people [D7]run some people [G]crawl
@@ -25,3 +28,6 @@ At midnight I'm [C]in between  [D7]and wondering [G]why
 Time oh [C]t-ime  [D7]where did you [G]go
 Time oh [C]good good time  [D7]where did you [G]go
 {end_of_verse}
+
+
+

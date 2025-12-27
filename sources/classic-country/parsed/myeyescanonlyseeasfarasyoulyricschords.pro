@@ -1,5 +1,8 @@
 {meta: title My Eyes Can Only See As Far As You}
 {meta: artist Charley Pride}
+{meta: x_source classic-country}
+{meta: x_source_file myeyescanonlyseeasfarasyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My eyes can only [G7]see as far [C]as you
@@ -27,3 +30,7 @@ Cause my [C]eyes can only [G7]see as far [C]as you
 {start_of_verse: Verse 5}
 Yes my eyes can only [G7]see as far [C]as you
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title How Blue Can You Be}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file howbluecanyoubelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blue how blue can one be 
@@ -19,3 +22,5 @@ And [F]now you’ve gone [G7]away
 And I’m [C]blue how blue can you be 
 The one that I [G7]love is through loving [C]me
 {end_of_verse}
+
+

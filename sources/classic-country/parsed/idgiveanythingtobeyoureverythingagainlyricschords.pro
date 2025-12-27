@@ -1,6 +1,9 @@
 {meta: title I'd Give Anything To Be Your Everything Again}
 {meta: artist Tracy Lawrence}
 {meta: composer Jerry Lester and Mark Springer}
+{meta: x_source classic-country}
+{meta: x_source_file idgiveanythingtobeyoureverythingagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a little house I drive by every[C]day going in [G]town
@@ -34,3 +37,7 @@ I'd give [G]anything to [D7]be your everything [G]again
 {start_of_verse: Verse 5}
 [C]Oh oh girl I'd give [G]anything to [D7]be your everything [G]again
 {end_of_verse}
+
+
+
+

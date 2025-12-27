@@ -1,6 +1,9 @@
 {meta: title Love Love Love}
 {meta: artist Webb Pierce}
 {meta: composer Ted Jarrett}
+{meta: x_source classic-country}
+{meta: x_source_file lovelovelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I cry when you don't call
@@ -36,3 +39,7 @@ Your love don't mean a [C]thing
 But [F]I keep hoping someday if you'll see same things my way
 [D7]You'll make the wedding bells [G7]ring
 {end_of_verse}
+
+
+
+

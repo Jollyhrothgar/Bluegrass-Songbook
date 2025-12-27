@@ -1,6 +1,9 @@
 {meta: title Let The Children Pick The Flowers}
 {meta: artist Webb Pierce}
 {meta: composer Robert Daniel Russell}
+{meta: x_source classic-country}
+{meta: x_source_file letthechildrenpicktheflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I recall one Sunday [C]morning on the [D7]way to Sunday [G]school
@@ -34,3 +37,7 @@ Let the children pick the [C]flowers that’s their [D7]way of lovin’ [G]you
 Let the children pick the [C]flowers that’s what [D7]God’s own words would [G]be
 Let the little one’s pick the [C]flowers that’s their [D7]way of lovin’ [G]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Before Believing}
 {meta: artist Emmylou Harris}
 {meta: composer Danny Flowers}
+{meta: x_source classic-country}
+{meta: x_source_file beforebelievinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Winter [F]summer seasons is taken over its quiet like [C]new fallen [G7]snow
@@ -27,3 +30,6 @@
 [F]I told you everything I [G7]could about [C]me
 [F]Told you [G7]everything [B7]I [C][F]could
 {end_of_verse}
+
+
+

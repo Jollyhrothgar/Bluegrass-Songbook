@@ -1,6 +1,9 @@
 {meta: title If I Sink Any Lower}
 {meta: artist Big Country Bluegrass}
 {meta: composer Bob Richardson}
+{meta: x_source classic-country}
+{meta: x_source_file ifisinkanylowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I woke up this morning with pounding in my head
@@ -41,3 +44,8 @@ I laid them both to rest with the [D7]sounds of my [G]gun
 If I [F]sink any [G]lower I'll go under
 Cause I laid them both to rest with the [D7]sound of my [G]gun
 {end_of_verse}
+
+
+
+
+

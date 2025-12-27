@@ -1,5 +1,8 @@
 {meta: title The Hills Of Roane County}
 {meta: artist Stanley Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file thehillsofroanecountylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the beautiful hills way [F]back in Roane [C]Country
@@ -49,3 +52,9 @@ There's better and worse although you can [G7]see
 Boys [C]when you write home from the [F]prison in [C]Nashville
 Place one of my songs in your [G7]letter for [C]me
 {end_of_verse}
+
+
+
+
+
+

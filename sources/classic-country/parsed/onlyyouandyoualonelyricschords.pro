@@ -1,5 +1,8 @@
 {meta: title Only You And You Alone}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file onlyyouandyoualonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Only you and you alone can take this lonely from my heart
@@ -43,3 +46,10 @@ Only you and you alone can let me feel that life's worth living
 [G7]Only you and [C]you alone only [G7]you and you [C]alone
 repeat
 {end_of_verse}
+
+
+
+
+
+
+

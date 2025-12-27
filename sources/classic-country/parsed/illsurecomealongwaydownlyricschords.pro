@@ -1,5 +1,8 @@
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Maggie Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file illsurecomealongwaydownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Think I’ll dye my hair blonde today to [C]change my own re[G]touch
@@ -28,3 +31,6 @@ I'll [A7]be the things I hate the most [D7]if I can be with you
 I'll [G]come to the dark and dirty streets in the [C]roughest part of [G]town
 To [D7]come up to what you're wantin' I'll sure come a long way [G]down
 {end_of_verse}
+
+
+

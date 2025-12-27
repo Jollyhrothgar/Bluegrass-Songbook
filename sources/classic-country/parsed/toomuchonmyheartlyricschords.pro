@@ -1,6 +1,9 @@
 {meta: title Too Much on My Heart}
 {meta: artist Statler Brothers}
 {meta: composer Jimmy Fortune}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchonmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You're [C]having second thoughts 
@@ -34,3 +37,5 @@ It's too late I [G7]realize
 And Lord it's tearing me [G7]apart 
 [F]I've got [G7]too much on my [C]heart
 {end_of_verse}
+
+

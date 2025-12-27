@@ -1,6 +1,9 @@
 {meta: title Sweethearts Or Strangers}
 {meta: artist Faron Young}
 {meta: composer Jimmie Davis and Lou Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file sweetheartsorstrangerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sweethearts or strangers [F]it makes no difference now 
@@ -29,3 +32,6 @@ Sweethearts or strangers [F]what will the verdict be
 [C]Sweethearts or strangers [F]how do we go from here 
 [C]Sweethearts are [G7]strangers [C]dear
 {end_of_verse}
+
+
+

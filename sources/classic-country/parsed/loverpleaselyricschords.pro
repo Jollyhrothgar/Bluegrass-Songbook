@@ -1,6 +1,9 @@
 {meta: title Lover Please}
 {meta: artist Kris Kristofferson}
 {meta: composer Billy Swan}
+{meta: x_source classic-country}
+{meta: x_source_file loverpleaselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lover please please come back
@@ -43,3 +46,8 @@ Don't take the train comin' [G7]down the track
 Don't please don't don't leave me
 Don't leave me in mise[C]ry
 {end_of_verse}
+
+
+
+
+

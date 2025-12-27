@@ -1,6 +1,9 @@
 {meta: title Something Pretty}
 {meta: artist Wynn Stewart}
 {meta: composer Charlie Williams and Bobby Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file somethingprettylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's something [D7]pretty in a summer [D7][G]rainbow
@@ -26,3 +29,5 @@
 [G]There's something [D7]pretty in the [G]same old [D7]moonlight
 [C]Something pretty [D7]everywhere [G]today
 {end_of_verse}
+
+

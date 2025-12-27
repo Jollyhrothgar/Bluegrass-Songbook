@@ -1,6 +1,9 @@
 {meta: title Gently Rock His Cradle}
 {meta: artist Jimmie Davis}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file gentlyrockhiscradlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No pillow of [B7]satin to [C]cushion His [G]head 
@@ -29,3 +32,6 @@ Gently rock His cradle whisper a [C]lulla[G]by
 Arms that love sustain Thee angels [C]standing [G]by
 [D7]Gently rock His cradle [G]sing a [C]lulla[G]by
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Across the Alley From the Alamo}
 {meta: artist Bob Wills}
 {meta: composer Joe Greene}
+{meta: x_source classic-country}
+{meta: x_source_file acrossthealleyfromthealamolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Across the alley [C]from the Alamo
@@ -77,3 +80,16 @@ When the starlight beams its tender tender glow
 The beams go to sleep and there [G7]ain't no dough
 For the [F]people [G7]passing [C]by
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

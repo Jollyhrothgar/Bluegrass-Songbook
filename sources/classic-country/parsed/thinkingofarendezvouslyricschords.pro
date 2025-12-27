@@ -1,6 +1,9 @@
 {meta: title Thinking Of A Rendezvous}
 {meta: artist Johnny Duncan and Janie Fricke}
 {meta: composer Sonny Throckmorton and Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file thinkingofarendezvouslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I said hello my it's been such a long time
@@ -47,3 +50,9 @@ But I was thinking how I'd love to get you alone for one hour
 {start_of_verse: Verse 5}
 [G7]But I was [Dm]making small talk [G7]thinking of a [C]rendezvous
 {end_of_verse}
+
+
+
+
+
+

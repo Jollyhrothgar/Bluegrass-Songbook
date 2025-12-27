@@ -1,6 +1,9 @@
 {meta: title No Love For Me}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Ernest Floyd and Kenny Sowder}
+{meta: x_source classic-country}
+{meta: x_source_file noloveformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh she was my first love I loved her [G7]so
@@ -28,3 +31,6 @@ There's [F]no love for [C]me
 {start_of_verse: Verse 4}
 There's [F]no love for [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Never Is A Long Long Day}
 {meta: artist Jimmy Dean}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file neverisalonglongdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love's gone away so [F]now you say you'll [C]never love [G7]again
@@ -26,3 +29,6 @@
 [C]Never is a [G7]long long [F]long [G7]lonesome [C]day
 [G7]Never is a long [F]long [G7]long lonesome [C]day
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Comb Her Hair}
 {meta: artist George Jones}
 {meta: composer Harlan Howard and Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file youcombherhairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know that you're wondering who I dream [C]about
@@ -22,3 +25,5 @@ I [G]stammer and I walk right into [D7]doors
 And [G]just to hold her hand in mine makes me feel [C]weak
 You [A7]know her honey she's a friend of [D7]yours
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Homegrown Tomatoes}
 {meta: artist Guy Clark}
+{meta: x_source classic-country}
+{meta: x_source_file homegrowntomatoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't nothin' in the world that I like better
@@ -57,3 +60,9 @@ Homegrown tomatoes home grown tomatoes
 [G7]Only two things that money can't buy
 [C]And that's true love and [G7]homegrown [C]tomatoes
 {end_of_verse}
+
+
+
+
+
+

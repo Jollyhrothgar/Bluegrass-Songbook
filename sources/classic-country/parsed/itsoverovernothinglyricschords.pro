@@ -1,6 +1,9 @@
 {meta: title It's Over Over Nothing}
 {meta: artist Hank Snow}
 {meta: composer Betty Jean Robinson and Tony Seen}
+{meta: x_source classic-country}
+{meta: x_source_file itsoverovernothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sweetest thing that ever came into my life was [G7]you
@@ -25,3 +28,6 @@ Made all those castles that love built come tumbling down in [C]sand
 [C7]But now it's [F]over  over [C]nothin'  my [G7]heart just felt the final curtain [C]fall
 [C7]And now it's [F]over  over [C]nothin'  it's [G7]over  over nothin' at [C]all
 {end_of_verse}
+
+
+

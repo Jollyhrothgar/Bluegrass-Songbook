@@ -1,6 +1,9 @@
 {meta: title Blue Bonnet Lane}
 {meta: artist J.D. Crowe}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file bluebonnetlanelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In my memories there [C]lingers
@@ -40,3 +43,8 @@ That [G]grew down [D7]Blue Bonnet [G]Lane
 {start_of_verse: Verse 6}
 That grew down [D7]Blue Bonnet [G]Lane
 {end_of_verse}
+
+
+
+
+

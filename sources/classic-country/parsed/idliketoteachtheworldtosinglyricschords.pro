@@ -1,5 +1,8 @@
 {meta: title I’d Like To Teach The World To Sing}
 {meta: artist New Seekers}
+{meta: x_source classic-country}
+{meta: x_source_file idliketoteachtheworldtosinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd like to build a world a home 
@@ -56,3 +59,10 @@ In perfect [D7]harmony
 A song of peace [G7]that echo’s on 
 And [F]never goes [C]away
 {end_of_verse}
+
+
+
+
+
+
+

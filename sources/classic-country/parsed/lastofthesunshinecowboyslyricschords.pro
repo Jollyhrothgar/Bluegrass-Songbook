@@ -1,5 +1,8 @@
 {meta: title Last Of The Sunshine Cowboys}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file lastofthesunshinecowboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]His boots were all dusty his [F]pickup all rusty 
@@ -49,3 +52,9 @@ He's the [F]last of a vanishing [C]breed
 He's the [F]last of the cowboy [C]drifter
 He's the [G7]last of the tumbling [C]weed
 {end_of_verse}
+
+
+
+
+
+

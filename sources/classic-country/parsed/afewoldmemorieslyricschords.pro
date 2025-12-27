@@ -1,6 +1,9 @@
 {meta: title A Few Old Memories}
 {meta: artist Dolly Parton}
 {meta: composer Hazel Dickens}
+{meta: x_source classic-country}
+{meta: x_source_file afewoldmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just a few old memories 
@@ -50,3 +53,9 @@ Way back on the [G]shelf
 No they don't mean [C]nothing 
 Well I'm surprised they're still [D7]left 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Filipino Baby}
 {meta: artist Ernest Tubb}
 {meta: composer Billy Cox and Clarke Van Ness}
+{meta: x_source classic-country}
+{meta: x_source_file myfilipinobabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the warships left Manila Sailing proudly over the [F]sea
@@ -40,3 +43,7 @@ She's my Filipino baby
 [F]While the ship's crew gathered round
 [G7]And he wed his little Filipino [C]Baby
 {end_of_verse}
+
+
+
+

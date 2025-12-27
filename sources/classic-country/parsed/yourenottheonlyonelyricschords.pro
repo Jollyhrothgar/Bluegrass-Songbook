@@ -1,6 +1,9 @@
 {meta: title You're Not The Only One}
 {meta: artist Marty Robbins}
 {meta: composer Phoebe Binkley and Bob Binkley}
+{meta: x_source classic-country}
+{meta: x_source_file yourenottheonlyonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Has the [C]wondering started [D7]is she bein' un[G]true
@@ -22,3 +25,5 @@ And she [D7]left me to [A7]cry endless[D7]ly
 [G]You're not [C]the only one you're not the [Am]only one
 It [C]happened to [G]me  [D7]it happened to [G]me
 {end_of_verse}
+
+

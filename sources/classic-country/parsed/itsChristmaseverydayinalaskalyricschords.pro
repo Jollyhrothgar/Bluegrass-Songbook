@@ -1,5 +1,8 @@
 {meta: title It's Christmas Every Day In Alaska}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file itsChristmaseverydayinalaskalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From my Alaska home I'll never roam it's Christmas every [D7]day
@@ -45,3 +48,8 @@ I got a bright fireside and an [G]Yukon bride and [D7]it's Christmas every [G]da
 [D7]It's Christmas every[G]day  [D7]it's Christmas every [G]day 
 [D7]It's Christmas every [G]day
 {end_of_verse}
+
+
+
+
+

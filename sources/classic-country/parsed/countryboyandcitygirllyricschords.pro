@@ -1,5 +1,8 @@
 {meta: title Country Boy And City Girl}
 {meta: artist Clay Walker}
+{meta: x_source classic-country}
+{meta: x_source_file countryboyandcitygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm not the kind to take things for [F]granted
@@ -40,3 +43,8 @@ And time won't undo what you've [G7]gone and done to my [C]heart
 No honey [F]time won't undo 
 What you've [G7]gone and done to my [C]heart
 {end_of_verse}
+
+
+
+
+

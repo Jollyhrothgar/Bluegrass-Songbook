@@ -1,6 +1,9 @@
 {meta: title On Susan’s Floor}
 {meta: artist Hank Williams Jr.}
 {meta: composer Shel Silverstein and Vincent Matthews}
+{meta: x_source classic-country}
+{meta: x_source_file onsusansfloorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like [F]crippled ships that [G7]made it
@@ -53,3 +56,10 @@ And [Dm]sang another [G7]song on Susan's [C]floor
 Through the [F]storms and finally [C]reached a quiet [G7]shore
 The [Dm]homeless found a [G7]home on Susan's [C]floor
 {end_of_verse}
+
+
+
+
+
+
+

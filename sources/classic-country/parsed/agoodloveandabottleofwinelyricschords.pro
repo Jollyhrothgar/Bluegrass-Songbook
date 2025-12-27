@@ -1,5 +1,8 @@
 {meta: title A Good Love And A Bottle Of Wine}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file agoodloveandabottleofwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He looks in the mirror and spots [C]a new [G]wrinkle
@@ -52,3 +55,9 @@
 [D7]A good love and a bottle of [Em]wine
 [G]A good love and a [D7]bottle of [G]wine
 {end_of_verse}
+
+
+
+
+
+

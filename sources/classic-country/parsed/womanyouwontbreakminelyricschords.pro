@@ -1,6 +1,9 @@
 {meta: title Woman You Won't Break Mine}
 {meta: artist Ricky Skaggs}
 {meta: composer Jim Rushing and Hunter Moore}
+{meta: x_source classic-country}
+{meta: x_source_file womanyouwontbreakminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your momma dressed you in petticoats 
@@ -87,3 +90,14 @@ Repeat last verse
 {start_of_verse: Verse 12}
 [A#7]Woman [C]woman [D7]woman you won't break [G]mine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Money Cannot Make The Man}
 {meta: artist Waylon Jennings}
 {meta: composer Jay Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file moneycannotmakethemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So long I've been trying to give you 
@@ -62,3 +65,11 @@ But money cannot make the [C]man
 A [G7]man can make money 
 But money cannot make the [C]man
 {end_of_verse}
+
+
+
+
+
+
+
+

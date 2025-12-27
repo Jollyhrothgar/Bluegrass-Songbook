@@ -1,6 +1,9 @@
 {meta: title I'm Troubled}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Doc Watson}
+{meta: x_source classic-country}
+{meta: x_source_file imtroubledlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our meeting is a pleasure and [F]partying is [C]grief 
@@ -37,3 +40,8 @@ Where the wild birds and the turtle doves [G7]can hear my sad [C]cry
 I'm troubled I'm troubled I'm [F]troubled in [C]mind 
 If trouble don't kill me [G7]I'll live a long [C]time
 {end_of_verse}
+
+
+
+
+

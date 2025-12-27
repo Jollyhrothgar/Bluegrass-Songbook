@@ -1,6 +1,9 @@
 {meta: title Don't Love Make A Diamond Shine}
 {meta: artist Tracy Byrd}
 {meta: composer Craig Wiseman and Mike Dekle}
+{meta: x_source classic-country}
+{meta: x_source_file dontlovemakeadiamondshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tommy and Janey barely eighteen 
@@ -45,3 +48,6 @@ If the [C]heart don't wear it
 With three little words it'll knock you [F]blind 
 Don't [C]love make a [G7]diamond [C]shine
 {end_of_verse}
+
+
+

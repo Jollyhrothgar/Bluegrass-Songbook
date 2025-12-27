@@ -1,6 +1,9 @@
 {meta: title Someday I'm Gonna Go To Mexico}
 {meta: artist Tony Booth}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file somedayimgonnagotomexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I give you all the [G7]love I can [C]give you
@@ -26,3 +29,6 @@ And someday I'm gonna [G7]go to Mexi[C]co
 {start_of_verse: Verse 4}
 Yes someday I'm gonna [G7]go to Mexi[C]co
 {end_of_verse}
+
+
+

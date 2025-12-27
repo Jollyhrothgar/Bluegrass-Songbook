@@ -1,6 +1,9 @@
 {meta: title There's Good Rockin' Tonight}
 {meta: artist Ricky Nelson}
 {meta: composer Roy Brown}
+{meta: x_source classic-country}
+{meta: x_source_file theresgoodrockintonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well did you hear the news there's good rockin' tonight
@@ -41,3 +44,8 @@ Well I said meet me in a hurry now don’t be late
 [G7]Cause tonight I'm gonna rock away all my blues
 [F]I heard the news there's [G7]good rockin' [C]tonight
 {end_of_verse}
+
+
+
+
+

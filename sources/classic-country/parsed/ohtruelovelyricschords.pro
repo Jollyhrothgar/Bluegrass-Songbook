@@ -1,6 +1,9 @@
 {meta: title Oh True Love}
 {meta: artist the Everly Brothers}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file ohtruelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh oh true love I'm glad that I found [Em]you
@@ -32,3 +35,7 @@ Baby it's you
 [G]Oh oh true love I know there was [Em]never
 [C]A true love as sweet as our [G]own as [D7]sweet as our [G]own
 {end_of_verse}
+
+
+
+

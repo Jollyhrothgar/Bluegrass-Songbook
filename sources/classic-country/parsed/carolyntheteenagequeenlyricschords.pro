@@ -1,6 +1,9 @@
 {meta: title Carolyn The Teenage Queen}
 {meta: artist The Lonesome River Band}
 {meta: composer Wendy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file carolyntheteenagequeenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was pushing thirty [C]she was in her [G]teens
@@ -47,3 +50,9 @@ I'm still in love with Carolyn C[C]arolyn the teenage q[G]ueen
 {start_of_verse: Verse 7}
 I'm still in love with Carolyn [C]Carolyn the teenage [G]queen
 {end_of_verse}
+
+
+
+
+
+

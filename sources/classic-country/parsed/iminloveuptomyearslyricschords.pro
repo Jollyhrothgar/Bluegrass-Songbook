@@ -1,5 +1,8 @@
 {meta: title I'm In Love Up To My Ears}
 {meta: artist Little Jimmy Dickens}
+{meta: x_source classic-country}
+{meta: x_source_file iminloveuptomyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No use to try to back out now 
@@ -70,3 +73,12 @@ No [F]use to have no [C]fear
 Well [F]happy me wouldn’t [C]harm a flea
 I'm in [G7]love up to my [C]ears
 {end_of_verse}
+
+
+
+
+
+
+
+
+

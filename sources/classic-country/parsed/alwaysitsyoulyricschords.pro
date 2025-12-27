@@ -1,6 +1,9 @@
 {meta: title Always It's You}
 {meta: artist The Everly Brothers}
 {meta: composer Felice and Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file alwaysitsyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I feel [Dm]downhearted
@@ -33,3 +36,6 @@
 [C]It's [F]you  [Fm]al-ways it's [C]you
 [Fm][F]Al-ways it's [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Stairway of Love}
 {meta: artist Mary Robbins}
 {meta: composer Roy C. Bennett and Sid Tepper}
+{meta: x_source classic-country}
+{meta: x_source_file stairwayoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come my love with me  take me by the [G7]hand
@@ -37,3 +40,7 @@ The stairway of [C]love
 {start_of_verse: Verse 4}
 [G7]The stairway of [C]love
 {end_of_verse}
+
+
+
+

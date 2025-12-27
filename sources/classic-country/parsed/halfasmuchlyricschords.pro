@@ -1,6 +1,9 @@
 {meta: title Half as Much}
 {meta: artist Hank Williams}
 {meta: composer Curley Williams}
+{meta: x_source classic-country}
+{meta: x_source_file halfasmuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you love me half as much as I love you
@@ -15,3 +18,4 @@ You wouldn't stay away half as much as you [D7]do
 I know that I [G]would [G7]never be this [C]blue
 If you [D7]only loved me half as much as I love [G]you
 {end_of_verse}
+

@@ -1,6 +1,9 @@
 {meta: title Bed By The Window}
 {meta: artist James King}
 {meta: composer Rob Crosby and Marni Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file bedbythewindowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two old friends shared a room in a [F]home for the el[C]derly
@@ -52,3 +55,10 @@ From the bed by the window he [G7]told it just that [C]way
 {start_of_verse: Verse 7}
 Two old friends shared a room in a [F]home for the elder[G7]ly [C]
 {end_of_verse}
+
+
+
+
+
+
+

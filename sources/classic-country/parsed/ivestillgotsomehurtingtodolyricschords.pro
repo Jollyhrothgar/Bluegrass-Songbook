@@ -1,6 +1,9 @@
 {meta: title I’ve Still Got Some Hurting To Do}
 {meta: artist George Jones}
 {meta: composer Donny Kees and Richard Ross}
+{meta: x_source classic-country}
+{meta: x_source_file ivestillgotsomehurtingtodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I [F]went out with some old [C]friends  
@@ -30,3 +33,7 @@ Tag:
 {start_of_verse: Verse 5}
 [C]Yes I've [F]still got some [G7]hurting left [C]to do
 {end_of_verse}
+
+
+
+

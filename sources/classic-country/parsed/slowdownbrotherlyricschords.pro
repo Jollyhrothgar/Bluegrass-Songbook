@@ -1,6 +1,9 @@
 {meta: title Slow Down Brother}
 {meta: artist Ferlin Husky}
 {meta: composer Mark Pickett}
+{meta: x_source classic-country}
+{meta: x_source_file slowdownbrotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a sixty mile limit from a-coast to coast
@@ -58,3 +61,10 @@ Cause them [F]hills and curves are graveyard bait
 [G7]Brother you better slow [C]down
 [G7]Brother you better slow [C]down
 {end_of_verse}
+
+
+
+
+
+
+

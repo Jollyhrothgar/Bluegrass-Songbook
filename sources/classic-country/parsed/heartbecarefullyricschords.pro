@@ -1,6 +1,9 @@
 {meta: title Heart Be Careful}
 {meta: artist Billy Walker}
 {meta: composer Jay Bovington and Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file heartbecarefullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Eyes be careful how you look at her 
@@ -35,3 +38,8 @@ She's [D7]much too smart don't let her out her [G7]way
 [F]Heart you fool you've gone and fell for her 
 I [G7]guess you know you'll have to [C]pay
 {end_of_verse}
+
+
+
+
+

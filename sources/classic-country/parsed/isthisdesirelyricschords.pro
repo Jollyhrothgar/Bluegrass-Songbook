@@ -1,6 +1,9 @@
 {meta: title Is This Desire}
 {meta: artist Billy Walker}
 {meta: composer Kay Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file isthisdesirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Is this desire that [Am]starts me [D7]trembling
@@ -31,3 +34,6 @@
 [D7]Is this [G][C][G]desire
 [D7]Is this [G][C][G]desire
 {end_of_verse}
+
+
+

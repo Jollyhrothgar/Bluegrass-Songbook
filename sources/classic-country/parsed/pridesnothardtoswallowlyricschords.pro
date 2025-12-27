@@ -1,6 +1,9 @@
 {meta: title Pride's Not Hard To Swallow}
 {meta: artist Hank Williams Jr.}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file pridesnothardtoswallowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish you'd look who's [F]crawling back to [C]you
@@ -29,3 +32,6 @@ It took a lot of [F]missing you and [D7]things that I'd left [G7]behind
 In[C]tending to keep [F]going but the [C]going got too [F]rough
 And [C]pride's not hard to swallow once you [F]chew it [G7]long [C]enough
 {end_of_verse}
+
+
+

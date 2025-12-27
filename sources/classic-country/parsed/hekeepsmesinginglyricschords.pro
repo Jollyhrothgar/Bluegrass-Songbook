@@ -1,6 +1,9 @@
 {meta: title He Keeps Me Singing}
 {meta: artist Slim Whitman}
 {meta: composer Luther B. Bridgers}
+{meta: x_source classic-country}
+{meta: x_source_file hekeepsmesinginglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's within my heart a [Am]melody
@@ -43,3 +46,8 @@ Sweetest name I [G]know
 Fills my every [Am]longing
 [D7]Keeps me singing as I [G]go
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Dear Friend}
 {meta: artist Ronnie Milsap}
 {meta: composer Kye Fleming and Dennis Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file dearfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Dear friend [C]where do I [G7]begin
@@ -38,3 +41,7 @@ You'll never [Dm]know how much it [G7]meant [C]friend [G7]   [F]
 [Fm]Sincerely [C]from a friend
 [G7]Thank you [C]Jim
 {end_of_verse}
+
+
+
+

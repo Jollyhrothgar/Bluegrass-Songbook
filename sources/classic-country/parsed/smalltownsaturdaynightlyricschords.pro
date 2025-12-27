@@ -1,6 +1,9 @@
 {meta: title Small Town Saturday Night}
 {meta: artist Hal Ketchum}
 {meta: composer Pat Alger and Hank DeVito}
+{meta: x_source classic-country}
+{meta: x_source_file smalltownsaturdaynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's an Elvis movie on the [D7]marquee [G]sign
@@ -52,3 +55,9 @@ Cause [C]when people leave [G]town they [D7]never come [G]back
 [C]It's a small [G]town [D7]Saturday [G]night
 [C]It's a small [G]town [D7]Saturday [G]night
 {end_of_verse}
+
+
+
+
+
+

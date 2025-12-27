@@ -1,6 +1,9 @@
 {meta: title I Grow Old Too Fast And Smart Too Slow}
 {meta: artist Johnny Paycheck}
 {meta: composer John Raymond Long}
+{meta: x_source classic-country}
+{meta: x_source_file igrowoldtoofastandsmarttooslowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I grew old too fast and [F]smart way too [C]slow
@@ -33,3 +36,7 @@ Cause I grew old too fast and [G7]smart way too [C]slow [G7]
 {start_of_verse: Verse 4}
 Yes I grew [C]old too fast and [G7]smart way too [F]slo[C]w
 {end_of_verse}
+
+
+
+

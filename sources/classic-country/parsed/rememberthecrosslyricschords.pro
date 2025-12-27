@@ -1,6 +1,9 @@
 {meta: title Remember The Cross}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Monroe and Howard Watts}
+{meta: x_source classic-country}
+{meta: x_source_file rememberthecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Do you think of the cross on [C]which Jesus [G]died 
@@ -43,3 +46,8 @@ Follow in His footsteps each [D7]day
 He [G]shed His blood for you and He [C]shed His blood for [G]me 
 Never cast [D7]that cross [G]aside 
 {end_of_verse}
+
+
+
+
+

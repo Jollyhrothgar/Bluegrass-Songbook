@@ -1,6 +1,9 @@
 {meta: title Older Women}
 {meta: artist Ronnie McDowell}
 {meta: composer Jamie O'hara}
+{meta: x_source classic-country}
+{meta: x_source_file olderwomenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Older women are beautiful [C]lovers
@@ -43,3 +46,8 @@ Older [G]women they [D7]understand
 I've [G]been around some and I have [C]discovered
 That older [G]women know just [D7]how to please a [G]man
 {end_of_verse}
+
+
+
+
+

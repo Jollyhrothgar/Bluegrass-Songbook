@@ -1,6 +1,9 @@
 {meta: title The More You Trusted Me}
 {meta: artist Tommy Overstreet}
 {meta: composer Dale Vest and Tommy Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file themoreyoutrustedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Your nights are [C]empty  [G7] with promises [C]again
@@ -25,3 +28,5 @@ The more you trusted me [G7] the more I've let you [C]down
 The more you trusted me (trusted [G7]me)
 The more I've let you [C]down ([F]let you [C]down)
 {end_of_verse}
+
+

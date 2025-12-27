@@ -1,5 +1,8 @@
 {meta: title I Can't Stop Loving You}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file icantstoplovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Those happy [C]hours that we once [F]knew 
@@ -28,3 +31,6 @@ Pretend there's [G7]someone new I can't live a [C]lie
 [C7]I can't stop [F]wanting you the way that I [C]do
 There's only [G7]been one love for me and that one love is [C]you 
 {end_of_verse}
+
+
+

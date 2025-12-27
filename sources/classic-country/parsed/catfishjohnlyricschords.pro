@@ -1,5 +1,8 @@
 {meta: title Catfish John}
 {meta: artist Ricky Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file catfishjohnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mama said don't go near that [F]river
@@ -47,3 +50,9 @@ Though his load [G7]was hard to [C]bear
 Come the morning I'd always be [F]there
 [C]Walking in his footsteps in [G7]sweet delta [C]dawn
 {end_of_verse}
+
+
+
+
+
+

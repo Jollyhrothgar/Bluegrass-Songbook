@@ -1,6 +1,9 @@
 {meta: title Alice In Wonderland}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Brenda Barnett, Charles Chalmers, Sandra Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file aliceinwonderlandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Alice is in [C][G7]wonderland
@@ -69,3 +72,12 @@
 [Dm]Will I still be her [G7]man
 [Dm]When Alice leaves her [C][G7]wonderland
 {end_of_verse}
+
+
+
+
+
+
+
+
+

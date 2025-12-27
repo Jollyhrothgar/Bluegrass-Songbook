@@ -1,6 +1,9 @@
 {meta: title Try To Remember}
 {meta: artist Ricky Nelson}
 {meta: composer Harvey Schmidt and Tom Jones}
+{meta: x_source classic-country}
+{meta: x_source_file trytorememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Try to re[Am]member the [F]kind of Sep[G7]tember
@@ -29,3 +32,6 @@ The [C]fire of Sep[Am]tember that [F]made us [G7]mellow
 [C]Deep in De[Am]cember it's [F]nice to re[G7]member
 And [C]follow
 {end_of_verse}
+
+
+

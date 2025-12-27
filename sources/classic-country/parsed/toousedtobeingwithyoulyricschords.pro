@@ -1,6 +1,9 @@
 {meta: title Too Used To Being With You}
 {meta: artist Merle Haggard}
 {meta: composer Don Carter and Jack Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file toousedtobeingwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Too used to that certain [G][C]someone 
@@ -36,3 +39,7 @@ To offer my love to anyone [D7]new
 [G]My excuse for not [C]wanting no [G]one 
 Too used to [D7]being with [G]you
 {end_of_verse}
+
+
+
+

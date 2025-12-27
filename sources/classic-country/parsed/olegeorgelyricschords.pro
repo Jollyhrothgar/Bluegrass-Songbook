@@ -1,6 +1,9 @@
 {meta: title Ole George}
 {meta: artist Leona Williams}
 {meta: composer David C. Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file olegeorgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He was born somewhere down around Beaumont Texas
@@ -61,3 +64,14 @@ And Lord knows what all [D7]he's been [G]through
 {start_of_verse: Verse 11}
 Ole George will still [D7]be number [G]one
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

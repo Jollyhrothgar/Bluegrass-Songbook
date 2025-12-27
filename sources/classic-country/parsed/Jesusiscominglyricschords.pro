@@ -1,6 +1,9 @@
 {meta: title Jesus Is Coming}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusiscominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well He walked on the [G7]water  and He raised up the [C]dead
@@ -35,3 +38,7 @@ These are warnings to [F]heed  [G7]no more and no [C]less [G7]    [C]
 Jesus is [G7]coming and boy is He [C]pissed [F]   [C]
 Jesus is [G7]coming and boy is He [C]pissed [F]   [C]
 {end_of_verse}
+
+
+
+

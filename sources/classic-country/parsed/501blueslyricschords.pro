@@ -1,6 +1,9 @@
 {meta: title 5:01 Blues}
 {meta: artist Merle Haggard}
 {meta: composer Michael Garvin and Jeff Tweel}
+{meta: x_source classic-country}
+{meta: x_source_file 501blueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I got those [C]5:01 blues [F]another work day is over
@@ -47,3 +50,8 @@ That [C]whistle just blew bad [F]news
 I'll punch [G7]out and put in another long night again missin' you
 I got these 5:01 [C]blues
 {end_of_verse}
+
+
+
+
+

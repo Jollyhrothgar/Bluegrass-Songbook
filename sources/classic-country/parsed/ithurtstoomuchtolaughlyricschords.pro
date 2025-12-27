@@ -1,5 +1,8 @@
 {meta: title It Hurts Too Much To Laugh}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file ithurtstoomuchtolaughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It hurts too [G7]much to [C]laugh
@@ -48,3 +51,10 @@ Cause my heart cries for you
 [G7]It hurts too much to laugh and yet
 [C]I'm too big to cry
 {end_of_verse}
+
+
+
+
+
+
+

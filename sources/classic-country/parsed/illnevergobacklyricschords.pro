@@ -1,5 +1,8 @@
 {meta: title I'll Never Go Back}
 {meta: artist The Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file illnevergobacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I once was bound by the [F]chains of [C]sin
@@ -42,3 +45,8 @@
 [C]He came to me in a world so black
 [G7]To the ways of sin I'll never go [C]back
 {end_of_verse}
+
+
+
+
+

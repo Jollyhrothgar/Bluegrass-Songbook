@@ -1,6 +1,9 @@
 {meta: title Please Come To Boston}
 {meta: artist Willie Nelson}
 {meta: composer Dave Loggins}
+{meta: x_source classic-country}
+{meta: x_source_file pleasecometobostonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please come to Boston for the [F]springtime
@@ -61,3 +64,10 @@
 {start_of_verse: Verse 8}
 [Dm]I'm the number one fan of the [G7]man from [C]Tennessee
 {end_of_verse}
+
+
+
+
+
+
+

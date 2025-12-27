@@ -1,6 +1,9 @@
 {meta: title Problems}
 {meta: artist The Everly Brothers}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file problemslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Problems problems [C]problems all [F]day [G]long  
@@ -28,3 +31,6 @@ You can [D7]solve my problems with [C]a love that's [G]true-oo
 Problems problems [C]problems all [F]day [G]long
 Problems problems [C]problems all [F]day [G]long 
 {end_of_verse}
+
+
+

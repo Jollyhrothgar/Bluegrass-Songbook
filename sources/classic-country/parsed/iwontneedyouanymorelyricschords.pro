@@ -1,6 +1,9 @@
 {meta: title I Won't Need You Anymore}
 {meta: artist George Jones}
 {meta: composer Troy Seals and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file iwontneedyouanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're my always [C]and for[G]ever 
@@ -40,3 +43,8 @@ I won't [G]need you [D7]any[G]more
 {start_of_verse: Verse 5}
 [C]No I won't [G]need you [C]I won't [G]need you [D7]anym[G]ore
 {end_of_verse}
+
+
+
+
+

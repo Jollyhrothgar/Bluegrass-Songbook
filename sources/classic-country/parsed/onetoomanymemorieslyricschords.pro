@@ -1,6 +1,9 @@
 {meta: title One Too Many Memories}
 {meta: artist Ray Pillow}
 {meta: composer Kent Westberry}
+{meta: x_source classic-country}
+{meta: x_source_file onetoomanymemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well here I am in a honky tonk in [F]Texas
@@ -33,3 +36,7 @@ And [G7]one too many memories on my [C]mind
 {start_of_verse: Verse 5}
 And [G7]one too many memories on my [C]mind
 {end_of_verse}
+
+
+
+

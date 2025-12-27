@@ -1,5 +1,8 @@
 {meta: title I'm Glad To Have Her Back Again}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file imgladtohaveherbackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know you think I’m crazy to take her back [C]again
@@ -31,3 +34,6 @@ And I’m [D7]glad to have her back [G]again
 [C]She might be bad but she’s all I [G]had 
 And I’m [D7]glad to have her back [G]again
 {end_of_verse}
+
+
+

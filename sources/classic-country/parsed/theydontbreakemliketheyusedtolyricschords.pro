@@ -1,6 +1,9 @@
 {meta: title They Don't Break 'Em Like They Used To}
 {meta: artist Pam Tillis}
 {meta: composer Roger Brown and Jason Sellers}
+{meta: x_source classic-country}
+{meta: x_source_file theydontbreakemliketheyusedtolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're here in my arms right where you say you [F]wanna be
@@ -40,3 +43,8 @@ I [G7]guess they just don't break 'em like they [C]used to
 {start_of_verse: Verse 5}
 Well I [G7]guess they just don't break 'em like they [F]used to[G7]   [C]
 {end_of_verse}
+
+
+
+
+

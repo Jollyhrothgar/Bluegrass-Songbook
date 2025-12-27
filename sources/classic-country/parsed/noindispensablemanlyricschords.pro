@@ -1,5 +1,8 @@
 {meta: title No Indispensable Man}
 {meta: artist Gordon Parsons}
+{meta: x_source classic-country}
+{meta: x_source_file noindispensablemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes when you're feeling important
@@ -40,3 +43,8 @@ There is no indispensable [G]man
 Do your [D7]best but always remember
 There is no indispensable [G]man
 {end_of_verse}
+
+
+
+
+

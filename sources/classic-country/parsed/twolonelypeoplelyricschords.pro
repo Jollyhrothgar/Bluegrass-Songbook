@@ -1,6 +1,9 @@
 {meta: title Two Lonely People}
 {meta: artist Moe Bandy}
 {meta: composer Ed Penney and Tom Benjamin}
+{meta: x_source classic-country}
+{meta: x_source_file twolonelypeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was dark it was lonely it was late it was [F]Monday
@@ -41,3 +44,9 @@ And they were playing some old love song
 {start_of_verse: Verse 6}
 [F]For two lonely [C]people  one [G7]lonely [C]night
 {end_of_verse}
+
+
+
+
+
+

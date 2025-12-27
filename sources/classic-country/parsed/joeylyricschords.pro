@@ -1,6 +1,9 @@
 {meta: title Joey}
 {meta: artist Tammy Wynette}
 {meta: composer Don Chapel}
+{meta: x_source classic-country}
+{meta: x_source_file joeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Outside the sun is shining it's such a [G7]pretty [C]day
@@ -29,3 +32,6 @@
 [F]Me and [C]mommy need you and love you [G7]anyway
 [F]All the other [C]kids I know have [G7]daddies [C]everyday
 {end_of_verse}
+
+
+

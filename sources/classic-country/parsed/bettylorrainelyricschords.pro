@@ -1,5 +1,8 @@
 {meta: title Betty Lorraine}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file bettylorrainelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The girl I love is waiting
@@ -37,3 +40,9 @@ The pine trees sway with the evening tide
 The pine trees sway with the evening tide
 [G7]That’s where she’s waiting for [C]me
 {end_of_verse}
+
+
+
+
+
+

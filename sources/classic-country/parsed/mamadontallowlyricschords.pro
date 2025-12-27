@@ -1,6 +1,9 @@
 {meta: title Mama Don’t Allow}
 {meta: artist Hank Thompson}
 {meta: composer Charles Edward "Cow Cow" Davenport}
+{meta: x_source classic-country}
+{meta: x_source_file mamadontallowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mama don't allow no [G7]guitar playin’ around [C]here
@@ -49,3 +52,8 @@ Mama don't allow no music played around [G7]here
 We’re [F]gonna jam it anyhow
 [C]Mama don't allow no [G7]music played around [C]here
 {end_of_verse}
+
+
+
+
+

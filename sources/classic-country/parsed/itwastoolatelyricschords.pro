@@ -1,6 +1,9 @@
 {meta: title It Was Too Late}
 {meta: artist Cal Smith}
 {meta: composer Shirley Collie}
+{meta: x_source classic-country}
+{meta: x_source_file itwastoolatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was too late for us a [D7]long long time [G]ago [G7]
@@ -23,3 +26,5 @@ Why don't you leave me all you [D7]have to do is [G]g-[C]o
 It [G]was too late for us a [D7]long long time [G]ago
 It was too late for us a [D7]long long time [G]ago
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title If It Was Up To Me}
 {meta: artist Doug Stone}
 {meta: composer Johnny MacRae and Steve Clark}
+{meta: x_source classic-country}
+{meta: x_source_file ifitwasuptomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All our friends are [D7]asking me [G]about you
@@ -49,3 +52,8 @@ The [G]way we used to be
 And we'd be [D7]one again
 If it was up to [G]me
 {end_of_verse}
+
+
+
+
+

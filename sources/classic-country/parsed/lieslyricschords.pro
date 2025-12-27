@@ -1,6 +1,9 @@
 {meta: title Lies}
 {meta: artist Charlie Waller}
 {meta: composer Randall Hylton}
+{meta: x_source classic-country}
+{meta: x_source_file lieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When we got together you had a lover
@@ -37,3 +40,6 @@ Are running through your [D7]mind
 What lies [C]behind those eyes
 And [D7]what lies are you telling [G]me
 {end_of_verse}
+
+
+

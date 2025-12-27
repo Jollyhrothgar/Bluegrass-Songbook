@@ -1,6 +1,9 @@
 {meta: title Ding A Ling The Christmas Bell}
 {meta: artist Lynn Anderson}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file dingalingtheChristmasbelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Gather round and I will tell the story of a Christmas [D7]bell
@@ -36,3 +39,7 @@ And [G]when ol' Santa heard the [C]sound  it [D7]guided him into the [G]town
 Now the [C]children shout and sing and everyone loves Ding a [G]Ling
 So [C]everything has turned out well  [D7]for Ding a Ling the Christmas [G]bell
 {end_of_verse}
+
+
+
+

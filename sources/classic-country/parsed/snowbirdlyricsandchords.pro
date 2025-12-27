@@ -1,5 +1,8 @@
 {meta: title Snowbird}
 {meta: artist Anne Murray}
+{meta: x_source classic-country}
+{meta: x_source_file snowbirdlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Beneath it's snowy [Em]mantle cold and [Dm]clean
@@ -39,3 +42,8 @@ And [G7]if I could you know that I would fly away with [C]you
 {start_of_verse: Verse 6}
 Yeah [G7]if I could you know that I would fly away with [C]you
 {end_of_verse}
+
+
+
+
+

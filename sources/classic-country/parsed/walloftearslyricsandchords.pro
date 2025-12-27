@@ -1,6 +1,9 @@
 {meta: title Wall Of Tears}
 {meta: artist Ray Price}
 {meta: composer Mel Tillis and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file walloftearslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My baby left [F]me this [G7]morning
@@ -33,3 +36,7 @@ So I'm [G7]watching for her through a wall of [C]tears
 And a [C]storm hit our [F]love without [G7]warning
 And [F]through a wall of [G7]tears I watched her [C]go
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title White Christmas Makes Me Blue}
 {meta: artist Randy Travis}
 {meta: composer Rich Grissom and Neil Patton Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file whiteChristmasmakesmebluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sent out seasons [F]greetings [G7]to all our same old [C]friends
@@ -33,3 +36,7 @@ Oh [C]White [G7]Christmas makes me [C]blue
 {start_of_verse: Verse 4}
 Oh White [G7]Christmas makes me [C]blue
 {end_of_verse}
+
+
+
+

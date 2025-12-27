@@ -1,6 +1,9 @@
 {meta: title That Old Wheel}
 {meta: artist Johnny Cash}
 {meta: composer Jennifer Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file thatoldwheellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That old wheel is gonna [F]roll around once [C]more 
@@ -51,3 +54,9 @@ That old wheel will roll around [F]again
 {start_of_verse: Verse 5}
 Roll [G7]around around [C]again
 {end_of_verse}
+
+
+
+
+
+

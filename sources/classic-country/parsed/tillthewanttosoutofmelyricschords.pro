@@ -1,5 +1,8 @@
 {meta: title Till The Want To's Out Of Me}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file tillthewanttosoutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've had you so bad for such a long time
@@ -24,3 +27,5 @@ And love you till the want-to's out of [C]me
 [G7]All I wants a chance to put my arms around you
 And love you till the want-to's out of [C]me
 {end_of_verse}
+
+

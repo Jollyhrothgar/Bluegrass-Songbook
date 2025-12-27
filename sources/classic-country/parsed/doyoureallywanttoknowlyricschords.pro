@@ -1,5 +1,8 @@
 {meta: title Do You Really Want To Know}
 {meta: artist Johnny Rodriguez Lyrics with Chords}
+{meta: x_source classic-country}
+{meta: x_source_file doyoureallywanttoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do you really want to [Am]know  [F]  
@@ -42,3 +45,8 @@ I guess you [G7]do you told me [C]so [G7]
 [C]Well I'll tell it all to [Am]you [F] 
 If you [G7]really want to [C]know
 {end_of_verse}
+
+
+
+
+

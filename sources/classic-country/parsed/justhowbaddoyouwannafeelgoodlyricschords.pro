@@ -1,6 +1,9 @@
 {meta: title Just How Bad Do You Wanna Feel Good}
 {meta: artist Keith Whitley}
 {meta: composer Bill Caswell and Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file justhowbaddoyouwannafeelgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're looking for a [F]love life 
@@ -54,3 +57,10 @@ If you think it's [F]worth the [C]risk
 {start_of_verse: Verse 6}
 [F]Honey [C]just how [G7]bad do you wanna feel [C]good
 {end_of_verse}
+
+
+
+
+
+
+

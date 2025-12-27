@@ -1,6 +1,9 @@
 {meta: title Give Me One More Day}
 {meta: artist Mel Tillis}
 {meta: composer Rochelle Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file givemeonemoredaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know I promised months ago that I’d divorce my [C]wife
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]No today I haven't got the [G]heart
 {end_of_verse}
+
+
+
+

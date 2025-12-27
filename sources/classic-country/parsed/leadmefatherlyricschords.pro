@@ -1,5 +1,8 @@
 {meta: title Lead Me Father}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file leadmefatherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When my hands are tired [D7]and my step is [G]slow
@@ -28,3 +31,6 @@
 [C]That the words I sing might more strength [G]bring
 [D7]To help some poor troubled [C]weary worker [G]along
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Before The Cold Winds Blow}
 {meta: artist Blue Highway}
 {meta: composer Wayne Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file beforethecoldwindsblowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The weather finally broke in the middle of [F]Apr[C]il
@@ -52,3 +55,9 @@ Saying please be [F]hom[G7]e before the cold winds [C]blow
 Yes he can hear her [F]voi[G7]ce in the rippling [C]water
 Saying please be [F]hom[G7]e before the cold winds [C]blow
 {end_of_verse}
+
+
+
+
+
+

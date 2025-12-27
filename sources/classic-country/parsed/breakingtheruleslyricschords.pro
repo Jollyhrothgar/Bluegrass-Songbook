@@ -1,6 +1,9 @@
 {meta: title Breaking The Rules}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson, Billy Gray, Al Blasingame}
+{meta: x_source classic-country}
+{meta: x_source_file breakingtheruleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Breaking the rules 
@@ -24,3 +27,5 @@ Then I guess [D7]I'll go on breaking [G]rules
 [G]If it's so wrong to [C]want to be with you my [G]darling
 Then I guess [D7]I'll go on breaking [G]rules
 {end_of_verse}
+
+

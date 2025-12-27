@@ -1,6 +1,9 @@
 {meta: title Love Me Or Leave Me Alone}
 {meta: artist Marty Robbins}
 {meta: composer Kent Marshall Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file lovemeorleavemealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A lonely wife had written a letter one sad [F]day
@@ -44,3 +47,7 @@ Don't come back and say you'll [C]stay
 If you plan to leave [F]someday
 Either [G7]love me or leave me [C]alone
 {end_of_verse}
+
+
+
+

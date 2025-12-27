@@ -1,6 +1,9 @@
 {meta: title Anybody But Me}
 {meta: artist Brenda Lee}
 {meta: composer Ronnie Self and Dud Albritten}
+{meta: x_source classic-country}
+{meta: x_source_file anybodybutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wish I could be[C]   [G]anybody but me [C]   [G]
@@ -31,3 +34,7 @@ I said I wish I could be[C]    [G]yeah anybody but me [C]   [G]
 Yeah now I wanna [C]be [F]   [C]just any old body but [G]me [C]   [G]
 Because I'm [A7]lonely   [D7]lonely as I can [G]be [C]   [G]
 {end_of_verse}
+
+
+
+

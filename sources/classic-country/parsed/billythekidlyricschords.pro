@@ -1,5 +1,8 @@
 {meta: title Billy The Kid}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file billythekidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll sing you a true song of Billy the [G7]Kid
@@ -42,3 +45,8 @@
 [C]Just like poor Billy they wander [F]astray
 [C]They'll lose their lives in the [G7]very same [C]way
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Shadows On The Wall}
 {meta: artist Gene Watson}
 {meta: composer Thomas Becket}
+{meta: x_source classic-country}
+{meta: x_source_file shadowsonthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was walking past your window late last [D7]night
@@ -33,3 +36,6 @@ I just stood there not believing what I [G7]saw
 [F]Right outside your [G7]window
 [F]Watching the [G7]shadows on the [C]wall
 {end_of_verse}
+
+
+

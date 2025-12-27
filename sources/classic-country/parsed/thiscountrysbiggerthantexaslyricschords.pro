@@ -1,6 +1,9 @@
 {meta: title This Country's Bigger Than Texas}
 {meta: artist Gene Watson}
 {meta: composer Hugh Prestwood}
+{meta: x_source classic-country}
+{meta: x_source_file thiscountrysbiggerthantexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Standing on a corner in [D7]Manhattan 
@@ -48,3 +51,9 @@ His fingers danced upon the [G]wheel
 {start_of_verse: Verse 6}
 [D7]This country's got no bounda[G]ries
 {end_of_verse}
+
+
+
+
+
+

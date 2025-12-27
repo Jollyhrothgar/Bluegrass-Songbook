@@ -1,6 +1,9 @@
 {meta: title If I Stay}
 {meta: artist Tracy Byrd}
 {meta: composer Dean Dillon and Larry Bastian}
+{meta: x_source classic-country}
+{meta: x_source_file ifistaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lately the ties that bind [F]feel like a [G7]noose around my [C]neck [F]   [G7]
@@ -37,3 +40,7 @@ So [Dm]don't insist on standin' in my [G7]way I can't find me if I [C]stay
 [F]I can't [G7]find me if I [C]stay
 [F]I can't [G7]find me if I [C]stay
 {end_of_verse}
+
+
+
+

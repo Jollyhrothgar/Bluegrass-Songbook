@@ -1,6 +1,9 @@
 {meta: title The Gods Were Angry With Me}
 {meta: artist Jim Reeves}
 {meta: composer Herman L. Watkins and Ruth Oma Wilkinson}
+{meta: x_source classic-country}
+{meta: x_source_file thegodswereangrywithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Gods were angry with me for loving you
@@ -50,3 +53,7 @@ Then the [C]howling winds took you [Am]away
 And there was [C]nothing I could do for I could [G]see
 It was because the Gods [D7]were angry with [G]me
 {end_of_verse}
+
+
+
+

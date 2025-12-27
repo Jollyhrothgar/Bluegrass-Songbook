@@ -1,6 +1,9 @@
 {meta: title Family Reunion}
 {meta: artist Cowboy Copas}
 {meta: composer Rusty Gabbard and William Holt}
+{meta: x_source classic-country}
+{meta: x_source_file familyreunionlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come one come all to the family reunion
@@ -36,3 +39,7 @@ With mother and daddy so [D7]sweet
 Come [G]one come all to the family reunion
 It might be the [D7]last time we'll [G]meet
 {end_of_verse}
+
+
+
+

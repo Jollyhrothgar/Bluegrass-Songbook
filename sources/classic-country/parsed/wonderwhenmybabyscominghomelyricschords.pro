@@ -1,6 +1,9 @@
 {meta: title Wonder When My Baby's Coming Home}
 {meta: artist Barbara Mandrell}
 {meta: composer Arthur Kent and Kermit Goell}
+{meta: x_source classic-country}
+{meta: x_source_file wonderwhenmybabyscominghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Haven't seen a [E7]sunny day 
@@ -24,3 +27,5 @@ It [G7]hurts too [Dm]much I [G7]guess
 [F]Wonder [Em]when my [D7]baby's [G7]coming [C]home
 [F]Wonder [Em]when my [D7]baby's [G7]coming [C]home
 {end_of_verse}
+
+

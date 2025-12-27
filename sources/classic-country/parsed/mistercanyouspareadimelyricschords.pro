@@ -1,6 +1,9 @@
 {meta: title Mister Can You Spare A Dime}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin and Lorry G. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file mistercanyouspareadimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Trains pull in [G7]trains pull out [C]always there on [G7]time
@@ -46,3 +49,9 @@ Where did he come from [G7]where did he go [C]probably we’ll [G7]never know
 [G7]Hey mister can you spare a [C]dime 
 [G7]Hey mister can you spare a [C]dime 
 {end_of_verse}
+
+
+
+
+
+

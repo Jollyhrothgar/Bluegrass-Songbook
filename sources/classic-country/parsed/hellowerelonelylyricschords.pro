@@ -1,6 +1,9 @@
 {meta: title Hello We're Lonely}
 {meta: artist Tom T. Hall and Patti Page}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file hellowerelonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello we're [F]lonely there's [C]no one around
@@ -39,3 +42,8 @@ Hello  [G7]we're lone-[C]ly
 Hello we're [F]lonely there's [C]no one around
 [G7]We're the only empty barroom in [C]town
 {end_of_verse}
+
+
+
+
+

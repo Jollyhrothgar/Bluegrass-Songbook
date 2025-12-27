@@ -1,5 +1,8 @@
 {meta: title Dreaming Of Christmas}
 {meta: artist Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file dreamingofChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I look outside and [F]see the family [G7]driving down the [C]lane
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 5}
 [F]Wishing you a [G7]merry Christmas and a [F]happy [G7]new [C]year
 {end_of_verse}
+
+
+
+
+
+

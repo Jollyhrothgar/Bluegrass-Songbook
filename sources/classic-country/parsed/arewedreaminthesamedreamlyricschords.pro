@@ -1,6 +1,9 @@
 {meta: title Are We Dreamin' The Same Dream}
 {meta: artist Charlie Rich}
 {meta: composer Johnny Christopher and Billy Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file arewedreaminthesamedreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Are you feelin’ the [C]same way 
@@ -64,3 +67,11 @@ Thinkin’ bout me [G]every day
 Do you hurt the way [D7]I do 
 Baby I’m in [G]love with you
 {end_of_verse}
+
+
+
+
+
+
+
+

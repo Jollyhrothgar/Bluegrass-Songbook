@@ -1,6 +1,9 @@
 {meta: title How Does It Feel To Be Free}
 {meta: artist Reba McEntire}
 {meta: composer Keith Stegall and Stewart Harris}
+{meta: x_source classic-country}
+{meta: x_source_file howdoesitfeeltobefreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How did it [E7]happen [A#7]when did we [C]lose it 
@@ -37,3 +40,7 @@ I'm [F]sorry I [G]called you
 But it's the [C]first night you [F]see
 How does it [G7]feel to be [C]free
 {end_of_verse}
+
+
+
+

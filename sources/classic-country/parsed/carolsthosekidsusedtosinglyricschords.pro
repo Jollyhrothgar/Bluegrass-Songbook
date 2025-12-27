@@ -1,6 +1,9 @@
 {meta: title Carols Those Kids Used To Sing}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file carolsthosekidsusedtosinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]About three nights [G7]before every [C]Christmas
@@ -50,3 +53,9 @@ To the [F]hospital [G7]and the old folks [C]home
 [F]Sometimes we'd go [G7]in and [C]sing 'em all [Am]again
 To a [F]shut in who was [G7]living all [C]alone
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I.O. Blues}
 {meta: artist Johnny Paycheck}
 {meta: composer Jesse Shofner and Wade Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file ioblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got a '57 Ford and a pocket full of I.O.[D7]U.'s
@@ -36,3 +39,7 @@ Cause it's [C]hard to jump for joy [D7]when you got a case of I.O. [G]blues
 I said I'd [C]sure feel sorry for anybody standing in my [G]shoes 
 Cause it's [C]hard to jump for joy [D7]when you got a case of I.O. [G]blues
 {end_of_verse}
+
+
+
+

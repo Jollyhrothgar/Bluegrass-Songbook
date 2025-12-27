@@ -1,6 +1,9 @@
 {meta: title Brother Do You Take Time To Pray}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Truman A. Keeney, Rusty Harp, Jimmy Dickens}
+{meta: x_source classic-country}
+{meta: x_source_file brotherdoyoutaketimetopraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a land in the east there's a [C]land in the west
@@ -50,3 +53,8 @@ There will [G]be a day of judgement
 When our [C]Father dear will call us
 [G]Brother do you [D7]take the time to [G]pray
 {end_of_verse}
+
+
+
+
+

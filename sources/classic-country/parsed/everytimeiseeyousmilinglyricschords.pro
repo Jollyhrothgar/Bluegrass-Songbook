@@ -1,6 +1,9 @@
 {meta: title Everytime I See You Smiling}
 {meta: artist Ricky Nelson}
 {meta: composer Dorsey Burnette and Joe Osborn}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeiseeyousmilinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Everytime I [G7]see you [C]smiling
@@ -34,3 +37,7 @@
 [F]That would be your [G7]love little [C]girl
 [F]That would be your [G7]love little [C]girl
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title We Split The Blanket}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file wesplittheblanketlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every night I go out somebody asks [D7]me 
@@ -28,3 +31,6 @@ Cause we could never get [G]along
 We split the blanket down the [D7]middle 
 That's all you can do when love is [G]gone
 {end_of_verse}
+
+
+

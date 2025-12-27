@@ -1,6 +1,9 @@
 {meta: title She Don't Know She's Beautiful}
 {meta: artist Sammy Kershaw}
 {meta: composer Bob McDill and Paul Harrison}
+{meta: x_source classic-country}
+{meta: x_source_file shedontknowshesbeautifullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We go out to a [C]party [G]somewhere
@@ -50,3 +53,9 @@
 [G]She don't [D7]know she's [D7][C]beautiful
 [C]Though time and time [D7]I told her [G]so
 {end_of_verse}
+
+
+
+
+
+

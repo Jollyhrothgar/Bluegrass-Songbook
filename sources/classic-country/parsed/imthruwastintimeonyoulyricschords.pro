@@ -1,6 +1,9 @@
 {meta: title I'm Thru Wastin' Time On You}
 {meta: artist Bob Wills}
 {meta: composer Tommy Duncan and Ekko Whelan}
+{meta: x_source classic-country}
+{meta: x_source_file imthruwastintimeonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You fooled me again so I'm [C]sorry my [A7]friend
@@ -29,3 +32,6 @@ But [A7]you were unfaithful [D7]you've reached the end of your rope
 I'm [G]sorry to say we must [C]break up this [A7]way
 I'm [D7]thru wastin' time on [G]you
 {end_of_verse}
+
+
+

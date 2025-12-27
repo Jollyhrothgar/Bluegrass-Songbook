@@ -1,6 +1,9 @@
 {meta: title Everyday Of My Life}
 {meta: artist George Morgan}
 {meta: composer Bill Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file everydayofmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everyday of my [F]life  will be [C]lonely without [G7]you
@@ -23,3 +26,6 @@ When the [F]spring comes I'll [Em]walk in places [F]where I walked with [C]you
 And when [F]autumn's here I'll [Em]miss you dear [D7]don't know what'll I [G7]do
 [C]Everyday of my [F]life  will be [C]lonely [G7]without [C]you
 {end_of_verse}
+
+
+

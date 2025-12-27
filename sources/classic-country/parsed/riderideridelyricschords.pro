@@ -1,6 +1,9 @@
 {meta: title Ride Ride Ride}
 {meta: artist Norma Jean}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file riderideridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you don't want me baby
@@ -63,3 +66,11 @@ I'll have your second fiddle
 [G7]Ride ride [C]ride
 [G7]Ride ride [C]ride
 {end_of_verse}
+
+
+
+
+
+
+
+

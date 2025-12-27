@@ -1,6 +1,9 @@
 {meta: title Crossfire}
 {meta: artist The Bellamy Brothers}
 {meta: composer Richard Holler and Jerry Careaga}
+{meta: x_source classic-country}
+{meta: x_source_file crossfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sleep some nights it just don't [G7]show
@@ -44,3 +47,8 @@
 {start_of_verse: Verse 4}
 [C][Am]Crossfire   [Am]live [C]wire
 {end_of_verse}
+
+
+
+
+

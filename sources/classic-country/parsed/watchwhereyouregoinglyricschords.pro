@@ -1,5 +1,8 @@
 {meta: title Watch Where You're Going}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file watchwhereyouregoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Watch watch where you're going
@@ -47,3 +50,9 @@ Just keep what I say [G]do this I pray
 [C]Just take what I say [G]do this I pray
 [D7]You're steppin' all over my [G]heart
 {end_of_verse}
+
+
+
+
+
+

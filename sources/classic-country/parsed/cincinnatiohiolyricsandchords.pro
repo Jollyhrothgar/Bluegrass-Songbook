@@ -1,6 +1,9 @@
 {meta: title Cincinnati Ohio Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file cincinnatiohiolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One more hour and I'll [G7]be [C]home 
@@ -36,3 +39,7 @@ Shining like a jewel in the valley [F]below
 [F]Heaven waits for me I [C]know 
 In Cincinnati [G7]O-hio [C]Cincinnati [C][G7]O-hio
 {end_of_verse}
+
+
+
+

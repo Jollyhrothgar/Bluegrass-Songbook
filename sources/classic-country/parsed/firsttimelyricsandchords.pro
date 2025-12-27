@@ -1,6 +1,9 @@
 {meta: title First Time}
 {meta: artist Hank Locklin}
 {meta: composer Ewan McColl}
+{meta: x_source classic-country}
+{meta: x_source_file firsttimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You opened the [E7]door to [F]heaven 
@@ -29,3 +32,6 @@ The [C]first time I [G7]kissed you you were [C]mine
 [C]I've fallen in [E7]love with an [F]angel 
 The [C]first time I [G7]kissed you the [C]first time
 {end_of_verse}
+
+
+

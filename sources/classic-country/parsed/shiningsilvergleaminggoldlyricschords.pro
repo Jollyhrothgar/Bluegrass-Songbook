@@ -1,6 +1,9 @@
 {meta: title Shining Silver Gleaming Gold}
 {meta: artist Rose Maddox}
 {meta: composer Billy Hodges, Black Jack Wayne, Rose Maddox}
+{meta: x_source classic-country}
+{meta: x_source_file shiningsilvergleaminggoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Shining silver gleaming gold love is [C]trouble love is [G]cold
@@ -30,3 +33,7 @@ If you can’t [C]deal from the [D7]top you shouldn’t [G]play
 Shining [D7]silver gleaming gold love is [C]trouble love is [G]cold
 If you can’t [C]deal from the [D7]top you shouldn’t [G]play
 {end_of_verse}
+
+
+
+

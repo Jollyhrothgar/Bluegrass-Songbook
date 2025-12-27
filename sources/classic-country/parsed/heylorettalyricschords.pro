@@ -1,6 +1,9 @@
 {meta: title Hey Loretta}
 {meta: artist Loretta Lynn}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file heylorettalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well goodbye tubs and clothes lines goodbye pots and [G7]pans
@@ -43,3 +46,8 @@ And [C]you'll say hey Loretta I [F]love you more than my Irish Setter
 [C]Hey Loretta I [F]swear I'm a-gonna treat you better
 [C]Buy you brand new [A7]overalls if you'll [D7]only [G7]come back [C]home
 {end_of_verse}
+
+
+
+
+

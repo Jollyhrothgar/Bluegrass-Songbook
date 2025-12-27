@@ -1,6 +1,9 @@
 {meta: title Borrowed Angel}
 {meta: artist Mel Tillis}
 {meta: composer Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file borrowedangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Her fingers feel so gentle   [C]with her hand in [G]mine
@@ -31,3 +34,6 @@
 [C]But she loves me and I know she'll [G]save
 [D7]Some borrowed time for [G]me
 {end_of_verse}
+
+
+

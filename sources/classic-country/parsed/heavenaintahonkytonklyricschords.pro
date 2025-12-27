@@ -1,6 +1,9 @@
 {meta: title Heaven Ain't A Honky Tonk}
 {meta: artist Mickey Gilley}
 {meta: composer Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file heavenaintahonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I was just a boy the first time that [C]I saw Birming[G]ham
@@ -40,3 +43,8 @@ That [C]heaven ain't a [G]honky [E7]tonk and them [A7]pearly [D7]gates don't [G]
 {start_of_verse: Verse 5}
 [C]Heaven ain't a [G]honky [E7]tonk and them [A7]pearly [D7]gates don't [G]swing
 {end_of_verse}
+
+
+
+
+

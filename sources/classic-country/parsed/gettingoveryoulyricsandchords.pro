@@ -1,6 +1,9 @@
 {meta: title Getting Over You}
 {meta: artist Alabama}
 {meta: composer Cary Lynn Rutledge}
+{meta: x_source classic-country}
+{meta: x_source_file gettingoveryoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wish I had just [Am]one more chance 
@@ -40,3 +43,8 @@ The hardest [C]thing that [B7]love has put me [Em]throu[G]gh [A7]
 Is gettin' over [G]you (over [A7]you) [D7]gettin' over [G]you
 [D7]Over [G]you
 {end_of_verse}
+
+
+
+
+

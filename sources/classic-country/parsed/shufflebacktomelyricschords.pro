@@ -1,5 +1,8 @@
 {meta: title Shuffle Back To Me}
 {meta: artist Chuck Cusimano}
+{meta: x_source classic-country}
+{meta: x_source_file shufflebacktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's nothing like a shuffle song
@@ -46,3 +49,8 @@ Shuffles back to [C]me
 I'm ready hey please [G7]look this way
 Shuffle back to [C]me
 {end_of_verse}
+
+
+
+
+

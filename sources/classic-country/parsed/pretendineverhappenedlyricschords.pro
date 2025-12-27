@@ -1,5 +1,8 @@
 {meta: title Pretend I Never Happened}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file pretendineverhappenedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pretend I never happened 
@@ -47,3 +50,9 @@ Any love as cold as [G]mine
 You will not want to [D7]remember 
 Any love as cold as [G]mine
 {end_of_verse}
+
+
+
+
+
+

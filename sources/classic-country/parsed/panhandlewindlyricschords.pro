@@ -1,6 +1,9 @@
 {meta: title Panhandle Wind}
 {meta: artist Red Steagall}
 {meta: composer Billy Joe Foster, Luke Houston Reed, Russell Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file panhandlewindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My grandparents came here [F]from Yell Arkan[C]sas
@@ -47,3 +50,9 @@ Your [C]constant companion [G7]is the panhandle [C]wind
 {start_of_verse: Verse 6}
 You never get used to [G7]this panhandle [C]wind
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If I Painted A Picture}
 {meta: artist Gene Watson}
 {meta: composer Leona Williams and Charles R. Browder}
+{meta: x_source classic-country}
+{meta: x_source_file ifipaintedapicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I painted a picture [D7]of all that I've [G]seen
@@ -26,3 +29,5 @@
 [C]You are the [Am]colors all blended [Em][G]together
 [G]In the picture [D7]of my love for [G][C]you
 {end_of_verse}
+
+

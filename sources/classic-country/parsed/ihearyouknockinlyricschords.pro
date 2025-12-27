@@ -1,6 +1,9 @@
 {meta: title I Hear You Knockin'}
 {meta: artist Dwight Yoakam}
 {meta: composer Jay D. Miller}
+{meta: x_source classic-country}
+{meta: x_source_file ihearyouknockinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear you knockin' I hear you callin'
@@ -39,3 +42,8 @@ And I'm [G7]goin' away to stay
 I hear you every time you say my name
 But it's [F]no use baby [G7]calling’s all in [C]vain
 {end_of_verse}
+
+
+
+
+

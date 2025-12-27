@@ -1,6 +1,9 @@
 {meta: title Rhinestone Cowboy}
 {meta: artist Glen Campbell}
 {meta: composer Larry Wiess}
+{meta: x_source classic-country}
+{meta: x_source_file rhinestonecowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been walking these streets so long singing the same old song
@@ -43,3 +46,8 @@
 [Dm]Getting cards and letters from people I don't even know
 [F]And offers coming over [G7]the phone
 {end_of_verse}
+
+
+
+
+

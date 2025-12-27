@@ -1,6 +1,9 @@
 {meta: title Before This Day Ends Lyrics Chords}
 {meta: artist Kitty Wells}
 {meta: composer Vic McAlpin, Roy Drusky, Marie Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file beforethisdayendslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say that my kind of love is [D7]blind
@@ -29,3 +32,6 @@ Till they [D7]kill the fragrance of the sweetest [G]rose
 But if I thought that you would [G7]let a doubt come [C]in
 I'd rather [G]die be[D7]fore this day [G]ends
 {end_of_verse}
+
+
+

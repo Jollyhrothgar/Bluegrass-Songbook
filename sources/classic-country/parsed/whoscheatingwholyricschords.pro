@@ -1,6 +1,9 @@
 {meta: title Who's Cheating Who}
 {meta: artist Charly McClain}
 {meta: composer Jerry Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file whoscheatingwholyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Who's Cheating Who
@@ -55,3 +58,10 @@ On the [C]trouble with a woman and a [G7]man
 But you [C]cannot impose you [F]can't stick your nose
 Into [C]somethin' that you [G7]don't under[C]stand
 {end_of_verse}
+
+
+
+
+
+
+

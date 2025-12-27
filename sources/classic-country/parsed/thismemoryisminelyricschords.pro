@@ -1,5 +1,8 @@
 {meta: title This Memory Is Mine}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file thismemoryisminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your bags are packed your taxi is waiting
@@ -37,3 +40,9 @@ But there's one thing that you're not taking
 [F]Unlike my heart you'll never break [C]it
 [F]So go ahead and [G7]go this memory is [C]mine
 {end_of_verse}
+
+
+
+
+
+

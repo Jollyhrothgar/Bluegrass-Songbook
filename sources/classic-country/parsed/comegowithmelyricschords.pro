@@ -1,5 +1,8 @@
 {meta: title Come Go With Me}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file comegowithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come go with me to yonder valley
@@ -39,3 +42,8 @@ I loved you [D7]then and I still [G]do
 {start_of_verse: Verse 5}
 I love you [D7]then and I still [G]do
 {end_of_verse}
+
+
+
+
+

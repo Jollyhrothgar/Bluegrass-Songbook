@@ -1,6 +1,9 @@
 {meta: title Darling Days}
 {meta: artist Billy Walker}
 {meta: composer Dallas Frazier/Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file darlingdayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I never love [F]again I won't feel [C]cheated
@@ -29,3 +32,6 @@ Seems like yesterday [D7]you reached and touched my [G7]hand
 I'd [C]love to hear you say [F]good morning [C]darling
 Oh what I'd give to [F]live those [G7]darling days [C]again
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Keep Dreaming Of You}
 {meta: artist Hank Snow}
 {meta: composer Marvin Thompson and Rene Moody}
+{meta: x_source classic-country}
+{meta: x_source_file ikeepdreamingofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In my dreams an [C]old friend came to [G]see you
@@ -29,3 +32,6 @@ I keep dreaming of you all the [C]time
 There's sadness when you go away and [C]I face another day
 Yet I keep [G]dreaming of [D7]you all the [G]time
 {end_of_verse}
+
+
+

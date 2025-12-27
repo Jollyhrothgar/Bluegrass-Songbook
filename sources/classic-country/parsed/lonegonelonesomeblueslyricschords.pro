@@ -1,5 +1,8 @@
 {meta: title Lone Gone Lonesome Blues}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file lonegonelonesomeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went down to the river to watch the fish swim by
@@ -30,3 +33,6 @@ And here it is Tuesday ain't had [F]no news
 I got them [C]gone but not forgotten [C][G7]blues
 She's l--ong [F]g--one and [C]n--ow I'm [G7]lone--some [C]blue
 {end_of_verse}
+
+
+

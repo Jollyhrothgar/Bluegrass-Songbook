@@ -1,6 +1,9 @@
 {meta: title Hard Game Of Love}
 {meta: artist Doyle Lawson}
 {meta: composer Robert J. Gateley}
+{meta: x_source classic-country}
+{meta: x_source_file hardgameoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the hard game of love I’m the [G7]last one to [C]fall
@@ -34,3 +37,7 @@ When I lay down [G7]tonight gonna lay down and [C]die
 It’s the last time I’ll [F]hurt it’s the last time I’ll [C]cry
 When I lay down [G7]tonight I’m gonna lay down and [C]die
 {end_of_verse}
+
+
+
+

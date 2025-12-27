@@ -1,6 +1,9 @@
 {meta: title Sierra Sue}
 {meta: artist Gene Autry}
 {meta: composer Joseph B. Carey}
+{meta: x_source classic-country}
+{meta: x_source_file sierrasuelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Sierra [C]Sue I'm sad and lonely
@@ -16,3 +19,4 @@ The gentle [C7]doves no [A7]longer [Dm]coo [A7]
 Calling for [D7]you  [G7]Sierra [C]Sue
 repeat
 {end_of_verse}
+

@@ -1,5 +1,8 @@
 {meta: title Lonely Girl}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file lonelygirllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I had a lonely girl
@@ -27,3 +30,6 @@ Someone with a broken heart
 I know that we [D7]would never part
 [G7]Cause lonely girl I'm kinda lonely [C]too
 {end_of_verse}
+
+
+

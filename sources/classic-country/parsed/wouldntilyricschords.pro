@@ -1,6 +1,9 @@
 {meta: title Wouldn't I}
 {meta: artist Tammy Wynette}
 {meta: composer Bobby Braddock and Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file wouldntilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't suppose you'd like to come [F]with me and slip [C]away
@@ -22,3 +25,5 @@ And just us and when we were young and [D7]fre[G7]e
 But [C]somehow it's just not fair yes we've [F]made quite a [C]pair
 Oh [G7]wouldn't we oh [F]wouldn't [C]we
 {end_of_verse}
+
+

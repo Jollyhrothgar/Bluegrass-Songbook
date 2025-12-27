@@ -1,5 +1,8 @@
 {meta: title One Minute Past Eternity}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file oneminutepasteternitylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When will my arms grow cold 
@@ -27,3 +30,6 @@ Exactly  [G7]one minute past [C]eternity
 {start_of_verse: Verse 4}
 Exactly  [G7]one minute past [C]eternity
 {end_of_verse}
+
+
+

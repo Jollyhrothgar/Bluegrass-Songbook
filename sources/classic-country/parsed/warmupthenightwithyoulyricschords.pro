@@ -1,6 +1,9 @@
 {meta: title Warm Up The Night With You}
 {meta: artist Johnny Duncan}
 {meta: composer David Chamberlain and James Vest}
+{meta: x_source classic-country}
+{meta: x_source_file warmupthenightwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello baby I'm coming over [G7]there
@@ -29,3 +32,5 @@ Well it [C]really doesn't matter how cold it gets out[F]side [D7]
 For I'm [G7]going to warm up the [C]night with you
 Yes I'm [G7]going to warm up the [C]night with you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Put Another Log On The Fire}
 {meta: artist Tom Paul Glaser}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file putanotherlogonthefirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Put another log on the fire
@@ -36,3 +39,7 @@ Cook me up some bacon and some [D7]beans
 And go out to the car and change the tire
 Wash my socks and sew my old blue [G]jeans
 {end_of_verse}
+
+
+
+

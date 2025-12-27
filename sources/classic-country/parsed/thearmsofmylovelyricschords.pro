@@ -1,6 +1,9 @@
 {meta: title The Arms Of My Love}
 {meta: artist Riders In The Sky}
 {meta: composer Woody Paul}
+{meta: x_source classic-country}
+{meta: x_source_file thearmsofmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Silver moon sailing [Em]high cross the [C]wide prairie [Em]sky
@@ -20,3 +23,5 @@
 [C]Dusty trails lead [Em]me on and [C]I'll never [Em]roam
 [F]Never more from the [G7]arms of my [C]love
 {end_of_verse}
+
+

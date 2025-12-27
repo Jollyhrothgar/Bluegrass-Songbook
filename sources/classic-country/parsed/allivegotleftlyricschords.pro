@@ -1,6 +1,9 @@
 {meta: title All I’ve Got Left}
 {meta: artist Norma Jean}
 {meta: composer Sharon Hoggins}
+{meta: x_source classic-country}
+{meta: x_source_file allivegotleftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You have taken all the love I gave 
@@ -43,3 +46,8 @@ All I got [C]left is a soul God gave me
 All I got [C]left is a soul God gave me
 I'm [G]taking [D7]that [G]along
 {end_of_verse}
+
+
+
+
+

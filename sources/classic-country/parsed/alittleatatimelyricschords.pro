@@ -1,6 +1,9 @@
 {meta: title A Little At A Time}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash and Gordon Terry}
+{meta: x_source classic-country}
+{meta: x_source_file alittleatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stop loving me a [F]little at a [C]time
@@ -35,3 +38,7 @@ A [G7]little at a [C]time
 A [G7]little at a [C]time
 A [G7]little at a [C]time
 {end_of_verse}
+
+
+
+

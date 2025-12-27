@@ -1,6 +1,9 @@
 {meta: title Each Night At Nine}
 {meta: artist Marty Robbins}
 {meta: composer Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file eachnightatninelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A thousand miles dear a thousand [G7]more 
@@ -22,3 +25,5 @@ It takes your place while we're [C]apart
 Helps to remind me [C7]that you're still [F]mine 
 Please think of [C]me dear [G7]each night [C]at nine
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title The Roving Gambler}
 {meta: artist Eddy Arnold}
 {meta: composer Elie Seigmeister}
+{meta: x_source classic-country}
+{meta: x_source_file therovinggamblerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am a roving gambler I've [Em]gambled all [C]around
@@ -39,3 +42,7 @@ A whistlin' and a [Am]blowin' and [F]strainin' every [C]nerve
 Oh mother oh dear mother I'll [Am]tell you [F]if I [C]can
 If you ever see me [Am]coming back I'll [F]be with that gambling [C]man
 {end_of_verse}
+
+
+
+

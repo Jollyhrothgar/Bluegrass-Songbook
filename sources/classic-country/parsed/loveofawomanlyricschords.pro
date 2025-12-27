@@ -1,6 +1,9 @@
 {meta: title Love Of A Woman}
 {meta: artist Travis Tritt}
 {meta: composer Kevin Brandt}
+{meta: x_source classic-country}
+{meta: x_source_file loveofawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My baby [Em]knows me [C]better than [G]I do
@@ -47,3 +50,9 @@ Makes a [D7]man a fool to think he can [C]make it [G]alone
 {start_of_verse: Verse 5}
 Makes a [Em]man a fool to think he can [C]make it a[G]lone
 {end_of_verse}
+
+
+
+
+
+

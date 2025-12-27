@@ -1,6 +1,9 @@
 {meta: title Stormy Horizons}
 {meta: artist Jim and Jesse}
 {meta: composer Iris Franks and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file stormyhorizonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's stormy [D7]horizons in my [G]heart
@@ -33,3 +36,7 @@ A [G]greater storm just swept my world [D7]apart
 [G]Today you're with somebody new my [C]hopes are gone at last
 [G]There's stormy [D7]horizons in my [G]heart
 {end_of_verse}
+
+
+
+

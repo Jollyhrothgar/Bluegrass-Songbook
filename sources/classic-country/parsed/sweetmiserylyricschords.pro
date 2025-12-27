@@ -1,6 +1,9 @@
 {meta: title Sweet Misery}
 {meta: artist Jimmy Dean}
 {meta: composer Jan Cruthfield and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file sweetmiserylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I'm lonely I think about [Am]someone 
@@ -34,3 +37,7 @@ Cause in her arms I was [Am]in heaven
 [F]Someone I call [G7]sweet mise[C]ry 
 [F]Someone I call [G7]sweet mise[C]ry
 {end_of_verse}
+
+
+
+

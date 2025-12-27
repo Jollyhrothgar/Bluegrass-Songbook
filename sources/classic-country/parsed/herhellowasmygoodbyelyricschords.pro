@@ -1,6 +1,9 @@
 {meta: title Her Hello Was My Goodbye}
 {meta: artist Dottie West}
 {meta: composer Quinn Garton}
+{meta: x_source classic-country}
+{meta: x_source_file herhellowasmygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]She only smiled and said [C]hello
@@ -31,3 +34,6 @@
 [Em]But won't you please fail me the [A7]pain
 [Dm]I knew her [G7]hello was my [C]goodbye
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can See Arkansas}
 {meta: artist Anne Murray}
 {meta: composer Wood Arnold Newton and James Nihan}
+{meta: x_source classic-country}
+{meta: x_source_file icanseearkansaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a natural wonder between us
@@ -56,3 +59,9 @@ And the [Fm]sun going down [C]again
 Oh I can see [F]Arkansas  but I [G7]still don't see
 Why the [F]love we [G7]had should [C]end
 {end_of_verse}
+
+
+
+
+
+

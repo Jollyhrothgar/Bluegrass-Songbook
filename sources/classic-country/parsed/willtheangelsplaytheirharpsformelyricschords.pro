@@ -1,6 +1,9 @@
 {meta: title Will The Angels Play Their Harps For Me}
 {meta: artist Doyle Lawson}
 {meta: composer Walter Hirsch and Monte Wilhite}
+{meta: x_source classic-country}
+{meta: x_source_file willtheangelsplaytheirharpsformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was passing by a churchyard in the city
@@ -43,3 +46,10 @@ With his hand outstretched he asked the folks for pity
 [C]For my feet are (growing weary) and my heart is (growing dreary)
 [G7]Will the angels play their harps for [C]me
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Red Rocking Chair}
 {meta: artist Doc Watson}
+{meta: x_source classic-country}
+{meta: x_source_file redrockingchairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Pull back the [C]curtain let me see the [Am]sun
@@ -24,3 +27,5 @@ And [Am]since she's been [C]gone I sing this lonesome [Am]song
 Got no [C]one to rock the cradle for me [Am]now Lord Lord
 Got no [C]one to rock the cradle for me [Am]now
 {end_of_verse}
+
+

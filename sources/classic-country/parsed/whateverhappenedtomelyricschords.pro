@@ -1,5 +1,8 @@
 {meta: title Whatever Happened To Me}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file whateverhappenedtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It gets longer in between each [C7]time you [F]call
@@ -26,3 +29,6 @@ And tell me [G7]darling whatever happened to [C]me
 Please forgive me if I'm just too blind to [F]see
 And tell me [G7]darling whatever happened to [C]me
 {end_of_verse}
+
+
+

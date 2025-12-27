@@ -1,5 +1,8 @@
 {meta: title Six Strings Away}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file sixstringsawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In days gone by [C]but not forgotten
@@ -32,3 +35,6 @@ But [G]how long would she stay
 If she knew poor boy ways and [C]hard time days
 [D7]Just six strings [G]away
 {end_of_verse}
+
+
+

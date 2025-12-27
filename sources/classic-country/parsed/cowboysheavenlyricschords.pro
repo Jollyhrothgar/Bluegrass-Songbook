@@ -1,6 +1,9 @@
 {meta: title Cowboys Heaven}
 {meta: artist Slim Whitman}
 {meta: composer Gene Autry and Johnny Marvin}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight I'm a tired weary [C]cowboy
@@ -32,3 +35,7 @@ We'll [G]ride on the [D7]other [G]shore
 Olea e [C]olea [A7]e  o[D7]lea e o[G]lea e
 Olea e [C]olea [A7]e  o[D7]lea e o[G]lea e
 {end_of_verse}
+
+
+
+

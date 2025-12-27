@@ -1,6 +1,9 @@
 {meta: title Give Us Rain}
 {meta: artist Ricky Skaggs}
 {meta: composer Bill Joe Foster}
+{meta: x_source classic-country}
+{meta: x_source_file giveusrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Grandpa raised a [F]family on a [G7]worn out cotton [C]farm
@@ -51,3 +54,9 @@
 [A#7]Lord we sure could [F]use a little [C]rain
 [A#7]Lord we sure could [F]use a little [C]rain
 {end_of_verse}
+
+
+
+
+
+

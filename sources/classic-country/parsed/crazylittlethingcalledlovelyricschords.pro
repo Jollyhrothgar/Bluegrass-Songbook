@@ -1,6 +1,9 @@
 {meta: title Crazy Little Thing Called Love}
 {meta: artist Dwight Yoakam}
 {meta: composer Freddie Mercury}
+{meta: x_source classic-country}
+{meta: x_source_file crazylittlethingcalledlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh this thing called love I [F]just can't [A#7]handle [F]it
@@ -44,3 +47,9 @@ I ain't [C]ready [G]crazy little [A#7]thing called [C]love
 [G]Crazy little [A#7]thing called [C]love 
 [G]Crazy little [A#7]thing called [C]love 
 {end_of_verse}
+
+
+
+
+
+

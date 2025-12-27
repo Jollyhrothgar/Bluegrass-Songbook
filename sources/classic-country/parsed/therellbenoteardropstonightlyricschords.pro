@@ -1,5 +1,8 @@
 {meta: title There'll Be No Teardrops Tonight}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file therellbenoteardropstonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll pretend I'm free from [G7]sorrow
@@ -28,3 +31,6 @@ Other [F]arms will hold you [G7]tight
 You don't [C]care whose [C7]life you [F]ruin
 But There'll Be [C]No [G7]Teardrops [C]Tonight
 {end_of_verse}
+
+
+

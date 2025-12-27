@@ -1,6 +1,9 @@
 {meta: title Miss Emily’s Picture}
 {meta: artist John Conlee}
 {meta: composer Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file missemilyspicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wake up in the morning in a state of fright
@@ -61,3 +64,12 @@ Wishing I [F]could do the same thing in my [C]head
 {start_of_verse: Verse 3}
 Go to the office the works piled up
 {end_of_verse}
+
+
+
+
+
+
+
+
+

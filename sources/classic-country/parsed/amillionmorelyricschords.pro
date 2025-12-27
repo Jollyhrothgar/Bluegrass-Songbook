@@ -1,6 +1,9 @@
 {meta: title A Million More}
 {meta: artist Anne Murray}
 {meta: composer Robbie MacNeill}
+{meta: x_source classic-country}
+{meta: x_source_file amillionmorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look how the light in the [F]morning lies
@@ -38,3 +41,7 @@ Or doesn't [G]love bring you [G7]home a[C]gain
 A million more is what I'm [D7]hoping for
 Or is it [G]love what we [G7]live to [C]know
 {end_of_verse}
+
+
+
+

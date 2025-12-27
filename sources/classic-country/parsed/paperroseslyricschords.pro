@@ -1,6 +1,9 @@
 {meta: title Paper Roses}
 {meta: artist Marie Osmond}
 {meta: composer Janice Torre and Frd Spielman}
+{meta: x_source classic-country}
+{meta: x_source_file paperroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I realized the way your eyes deceived [D7]me
@@ -29,3 +32,6 @@ Paper [C]roses  [D7]paper [G]roses
 But they're [C]only [G][D7]im-ita-tion
 [E7]Like your [Am]imitation [D7]love for [G]me
 {end_of_verse}
+
+
+

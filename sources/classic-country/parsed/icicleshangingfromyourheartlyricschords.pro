@@ -1,6 +1,9 @@
 {meta: title Icicles Hanging From Your Heart}
 {meta: artist Kitty Wells}
 {meta: composer Mary Drummond and Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file icicleshangingfromyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've got a heart of gold but [C]it's so [G]cold
@@ -20,3 +23,5 @@
 [G]You don't care if I just [C]sit and [G]cry
 [C]There's icicles [D7]hanging from your [G]heart
 {end_of_verse}
+
+

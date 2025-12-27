@@ -1,5 +1,8 @@
 {meta: title Everything's Coming Up Roses}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file everythingscominguproseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here we are in court today [F]Rose just took the [C]stand
@@ -41,3 +44,8 @@ I'll be lucky if I keep the [G7]shirt that's on my [C]back
 I'll be lucky if I keep the [G7]shirt that's on my [C]back
 Gaping at the dapper men with derby hats and canes
 {end_of_verse}
+
+
+
+
+

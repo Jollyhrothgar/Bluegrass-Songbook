@@ -1,6 +1,9 @@
 {meta: title It Doesn't Matter Anymore}
 {meta: artist Buddy Holly}
 {meta: composer Paul Anka}
+{meta: x_source classic-country}
+{meta: x_source_file itdoesntmatteranymorelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There you go and baby here am I
@@ -47,3 +50,9 @@ And [D7]you won't matter any [G]more
 {start_of_verse: Verse 5}
 [D7]You won't matter any [G]more
 {end_of_verse}
+
+
+
+
+
+

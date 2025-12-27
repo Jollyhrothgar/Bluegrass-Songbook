@@ -1,5 +1,8 @@
 {meta: title There's No Way}
 {meta: artist Alabama}
+{meta: x_source classic-country}
+{meta: x_source_file theresnowaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I lay by your side [G7]and hold you [C]tonight
@@ -53,3 +56,10 @@ Oh baby [G7]there's no [C]way
 {start_of_verse: Verse 6}
 Tag:  Baby [G7]there's just no [C]way  
 {end_of_verse}
+
+
+
+
+
+
+

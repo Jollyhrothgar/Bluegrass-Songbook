@@ -1,6 +1,9 @@
 {meta: title I Don't Love You}
 {meta: artist Conway Twitty}
 {meta: composer Liz Hengber and Tommy James}
+{meta: x_source classic-country}
+{meta: x_source_file idontloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pray before I close my eyes
@@ -45,3 +48,8 @@ I don't [G]love you
 [C]I don't [G]love you [C]I don't [G]love you
 [C]I don't [G]love you
 {end_of_verse}
+
+
+
+
+

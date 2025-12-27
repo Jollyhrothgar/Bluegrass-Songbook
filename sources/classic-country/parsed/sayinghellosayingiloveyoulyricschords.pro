@@ -1,5 +1,8 @@
 {meta: title Saying Hello Saying I love You}
 {meta: artist Jim Ed Brown and Helen Cornelius}
+{meta: x_source classic-country}
+{meta: x_source_file sayinghellosayingiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Saying hello [D7]saying I love you saying [C]good-[G]bye
@@ -33,3 +36,7 @@ Let’s just make [D7]love to each other and [C]leave the world outside
 Saying [G]hello saying I [D7]love you saying [C]good-[G]bye
 [C]Saying [G]hello saying I [D7]love you saying [C]good-[G]bye
 {end_of_verse}
+
+
+
+

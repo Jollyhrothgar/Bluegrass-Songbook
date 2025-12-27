@@ -1,6 +1,9 @@
 {meta: title From the Window Up Above}
 {meta: artist Red Sovine}
 {meta: composer George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file fromthewindowupabovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let me be among that number who will go to live with [G7]him
@@ -22,3 +25,5 @@ In the last rays of the sunset when the Master whispers low
 [G]What a happy happy meeting in that [C]land of perfect [G]love
 [C]Thank you Lord for watching [G]over from the [D7]window up [G]above
 {end_of_verse}
+
+

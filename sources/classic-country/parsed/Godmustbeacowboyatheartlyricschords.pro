@@ -1,5 +1,8 @@
 {meta: title God Must Be A Cowboy At Heart}
 {meta: artist Dan Seals}
+{meta: x_source classic-country}
+{meta: x_source_file Godmustbeacowboyatheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Campfire coffee [C]from a tin cup in my [G]hand
@@ -35,3 +38,7 @@
 [G]He made grass and trees and mountains and a horse to be a [C]friend
 [D7]And trails to lead old cowboys home [G]again
 {end_of_verse}
+
+
+
+

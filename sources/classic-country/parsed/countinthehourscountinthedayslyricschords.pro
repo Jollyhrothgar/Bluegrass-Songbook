@@ -1,6 +1,9 @@
 {meta: title Countin' The Hours Countin' The Days}
 {meta: artist Bobby Bare}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file countinthehourscountinthedayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Coutin' the hours countin' the days
@@ -49,3 +52,10 @@ I drove on across Montana Dam
 [G]Coutin' the hours countin' the days
 [C]Till I'll [D7]be back in your arms to [G]stay
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title When God Dips His Pen of Love in My Heart}
 {meta: artist Allison Krause}
+{meta: x_source classic-country}
+{meta: x_source_file whengoddipshispenofloveinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When God dips His pen of love [F]in my [C]heart
@@ -30,3 +33,6 @@ But I found I couldn't hide such love as Jesus [D7]did [G7]impart
 Well He [C]made me laugh and He made me cry set my [F]sinful soul on [C]fire
 When God dips His [G7]love in my [C]heart
 {end_of_verse}
+
+
+

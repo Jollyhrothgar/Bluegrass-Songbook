@@ -1,6 +1,9 @@
 {meta: title We Need One More Chance}
 {meta: artist Kitty Wells With Red Foley}
 {meta: composer Bill Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file weneedonemorechancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We drifted far apart from each [C]other
@@ -29,3 +32,6 @@ To talk and [D7]get old [G]troubles straightened [D7]out
 Yes [G]come on back to me we'll take up where we left [C]off
 We need one more [G]chance one more [D7]chance to save our [G]love
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title River Road}
 {meta: artist Crystal Gayle}
 {meta: composer Sylvia Fricker Tyson}
+{meta: x_source classic-country}
+{meta: x_source_file riverroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I go once again with my suitcase in my [F]hand
@@ -42,3 +45,7 @@ And I'm [C]running [G7]a-way down river [G7][C]ro--ad
 And I [C]swear once again that I'm never coming [F]home
 I'm [C]chasing my [G7]dreams down river [C]road
 {end_of_verse}
+
+
+
+

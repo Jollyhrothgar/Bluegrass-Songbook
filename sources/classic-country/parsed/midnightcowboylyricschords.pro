@@ -1,6 +1,9 @@
 {meta: title Midnight Cowboy}
 {meta: artist Norma Jean}
 {meta: composer Dave Kirby and Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file midnightcowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He don't ride a horse and he don't wear a hat or cowboy [D7]boots
@@ -46,3 +49,9 @@ He's the midnight [Am]cowboy
 [D7]The midnight [G]cowboy
 The midnight [Am]cowboy [D7]rides [G]again
 {end_of_verse}
+
+
+
+
+
+

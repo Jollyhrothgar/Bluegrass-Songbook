@@ -1,5 +1,8 @@
 {meta: title Mandrake}
 {meta: artist Tex Morton}
+{meta: x_source classic-country}
+{meta: x_source_file mandrakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've told you of Aristocrat and [F]good old Rocky Ned
@@ -63,3 +66,11 @@ Screw down the saddle [F]make it good and tight
 [C]Pick up you mate lads [F]he had a nasty fall
 [C]They're all the same to Mandrake [G7]champions and [C]all
 {end_of_verse}
+
+
+
+
+
+
+
+

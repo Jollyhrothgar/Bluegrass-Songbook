@@ -1,6 +1,9 @@
 {meta: title Wind In The Wire}
 {meta: artist Randy Travis}
 {meta: composer Stewart McDougall and David Wilkie}
+{meta: x_source classic-country}
+{meta: x_source_file windinthewirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I'd been ridin' [G]fence all day [E7]way up on the [Am]summer range
@@ -27,3 +30,6 @@ And the [F]call of the [G]coyote [Am]choi[G]r and the [F]song of the [G]wind in 
 [F]Spirits [G]of the [Am]plain still [F]sing their [G]sad re[Am]frain
 And the [F]call of the [G]coyote [Am]choi[G]r and the [F]song of the [G]wind in the [Am]wire
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Be My Life's Companion}
 {meta: artist Hank Thompson}
 {meta: composer Milton DeLugg and Bob Hilliard}
+{meta: x_source classic-country}
+{meta: x_source_file bemylifescompanionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Want no silver threads [F]among the [C]gold
@@ -42,3 +45,8 @@ I'll love you so much that you'll [C]never grow old
 Be my [F]life's companion be my [C]life's companion 
 And you'll [F]ne-ver [G7]grow [C]old
 {end_of_verse}
+
+
+
+
+

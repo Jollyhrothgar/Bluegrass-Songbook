@@ -1,6 +1,9 @@
 {meta: title Here We Are}
 {meta: artist Emmylou Harris}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file herewearelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did you say that you've been searching for a place you've never been
@@ -37,3 +40,9 @@ And if all you've seen is backdoors that lead you out of town
 [D7]Here we are darlin' here we [G]are
 [D7]Here we are here we [G]are
 {end_of_verse}
+
+
+
+
+
+

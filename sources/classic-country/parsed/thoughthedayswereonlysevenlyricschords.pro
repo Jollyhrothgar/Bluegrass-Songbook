@@ -1,6 +1,9 @@
 {meta: title Though The Days Were Only Seven}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb and Ruth Smith}
+{meta: x_source classic-country}
+{meta: x_source_file thoughthedayswereonlysevenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Angels sing sweet songs of love dear 
@@ -43,3 +46,8 @@ That your [G7]heart beat with my [C]own
 They were seven days of [F]heaven 
 Sweet as [G7]heaven ever [C]known
 {end_of_verse}
+
+
+
+
+

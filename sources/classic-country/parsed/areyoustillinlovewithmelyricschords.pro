@@ -1,6 +1,9 @@
 {meta: title Are You Still In Love With Me}
 {meta: artist Anne Murray}
 {meta: composer K.C. Porter, Mark Spiro, Jack White}
+{meta: x_source classic-country}
+{meta: x_source_file areyoustillinlovewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can hear the cars out on the [G7]street
@@ -51,3 +54,10 @@ Oh [C]I wonder are you [G7]still in love with [C]me
 {start_of_verse: Verse 6}
 Oh I guess I wonder why you’re [G7]still in love with [C]me
 {end_of_verse}
+
+
+
+
+
+
+

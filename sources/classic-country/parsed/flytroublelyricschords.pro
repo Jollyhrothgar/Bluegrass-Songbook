@@ -1,6 +1,9 @@
 {meta: title Fly Trouble}
 {meta: artist Hank Williams}
 {meta: composer Fred Rose, Bunny Biggs, Honey Wilds}
+{meta: x_source classic-country}
+{meta: x_source_file flytroublelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Did you ever sit straight up in bed
@@ -64,3 +67,10 @@ Now you pick a perfect night in June
 [C]Hit everything except that fly
 [G7]Buzz buzz [C]buzz
 {end_of_verse}
+
+
+
+
+
+
+

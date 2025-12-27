@@ -1,6 +1,9 @@
 {meta: title Would You Believe}
 {meta: artist George Morgan}
 {meta: composer Wayne P. Walker and Jay Coleman}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyoubelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Would you believe that [G7]it was only [C]yesterday
@@ -29,3 +32,6 @@ I [F]don't believe in miracles [C]but now I think I'll pray
 [C]Can you believe our [G7]love is gone [F]forever [C]more
 Be[G7]fore we've swept the rice up from the [C]floor
 {end_of_verse}
+
+
+

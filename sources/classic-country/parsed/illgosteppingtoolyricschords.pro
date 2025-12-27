@@ -1,6 +1,9 @@
 {meta: title I'll Go Stepping Too}
 {meta: artist Emmylou Harris}
 {meta: composer Jerry Organ and Tommy James}
+{meta: x_source classic-country}
+{meta: x_source_file illgosteppingtoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't think that I'll be hanging around
@@ -69,3 +72,15 @@ Stepping just like [G]you
 Well from now on when you step out
 I'll tell you what I'll [D7]do 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

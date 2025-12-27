@@ -1,6 +1,9 @@
 {meta: title Beautiful People}
 {meta: artist Bill Anderson}
 {meta: composer Kenny O'Dell}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulpeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]La la la la [Em]la la la la la la [Am]la la la la [G7]la
@@ -61,3 +64,13 @@
 [C]La la la la [Em]la la la la la la [Am]la la la la [G7]la
 [C]La la la la [Em]la la la la la la [Am]la la la la [G7]la
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Devil’s Train}
 {meta: artist Hank Williams}
 {meta: composer Mel Foree and Cliff Carlisle}
+{meta: x_source classic-country}
+{meta: x_source_file thedevilstrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The devil's train is long and black 
@@ -64,3 +67,11 @@ Before it is too [G7]late
 And teach them how to bow [C]their heads 
 Before they [G7]seal their [C]fate
 {end_of_verse}
+
+
+
+
+
+
+
+

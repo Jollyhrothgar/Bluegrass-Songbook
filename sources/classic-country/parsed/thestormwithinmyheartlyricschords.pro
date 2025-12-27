@@ -1,6 +1,9 @@
 {meta: title The Storm Within My Heart}
 {meta: artist Billy Walker}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file thestormwithinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each night the raging [C7]storm clouds take away [F]the moon [C]above
@@ -29,3 +32,6 @@
 [C]Another night is [C7]coming and a [F]long night it will [C]be
 [G7]And the storm that's in my heart has just [C]begun
 {end_of_verse}
+
+
+

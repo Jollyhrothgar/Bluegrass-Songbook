@@ -1,6 +1,9 @@
 {meta: title Love You Like It's Our Last Time}
 {meta: artist Dailey and Vincent}
 {meta: composer Jamie S. Dailey and Jeffery J. East}
+{meta: x_source classic-country}
+{meta: x_source_file loveyoulikeitsourlasttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I was a [D7]king I would [C]give you a [G]castle
@@ -35,3 +38,7 @@ So take my [B7]hand and let me [C]hold you tig[A7]ht
 And I will [G]love you [D7]like it’s our last [B7]tim[C]e
 I want to [G]love you [D7]like it’s our last [G]time 
 {end_of_verse}
+
+
+
+

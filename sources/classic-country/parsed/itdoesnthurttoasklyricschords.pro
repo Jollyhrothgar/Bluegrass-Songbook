@@ -1,6 +1,9 @@
 {meta: title It Doesn't Hurt To Ask}
 {meta: artist Jean Shepard}
 {meta: composer Jerry Galen Foster and Wilburn S. Rice}
+{meta: x_source classic-country}
+{meta: x_source_file itdoesnthurttoasklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder if he’s better [G7]off without [C]me
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [G7]It doesn’t hurt to [C]ask
 {end_of_verse}
+
+
+

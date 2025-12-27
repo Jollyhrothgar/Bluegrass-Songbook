@@ -1,5 +1,8 @@
 {meta: title Nobody Answered Me}
 {meta: artist Charley Pride}
+{meta: x_source classic-country}
+{meta: x_source_file nobodyansweredmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wandered again  [F]to my old cabin [C]home
@@ -28,3 +31,6 @@ Well I searched everywhere [D7]but nobody could I [G7]see
 Then [C]I knocked on the door  [F]like I oft had [C]before
 But nobody answered  [G7]nobody answered [C]me
 {end_of_verse}
+
+
+

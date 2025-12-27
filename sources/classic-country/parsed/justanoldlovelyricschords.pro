@@ -1,6 +1,9 @@
 {meta: title Just An Old Love}
 {meta: artist Crystal Gayle}
 {meta: composer Pete Wasner and Charles Quatro}
+{meta: x_source classic-country}
+{meta: x_source_file justanoldlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't mind me  if I should [C]stare [D7]across the [G]room
@@ -38,3 +41,7 @@ Don't [G]mind me  if I should [C]stare [D7]across the [G]room
 It's just an [C]old love that's [D7]come back way too [Em]soon [G]
 Just an [C]old love but [D7]that ain't nothing [G]new
 {end_of_verse}
+
+
+
+

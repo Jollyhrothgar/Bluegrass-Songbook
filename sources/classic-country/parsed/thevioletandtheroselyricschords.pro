@@ -1,6 +1,9 @@
 {meta: title The Violet and the Rose}
 {meta: artist Wanda Jackson}
 {meta: composer Mel Tillis and Bud Auge}
+{meta: x_source classic-country}
+{meta: x_source_file thevioletandtheroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A violet fell in love with a [G7]rose 
@@ -29,3 +32,6 @@ I'm sending [G7]red   red roses to [C]you
 If you care to send [C7]some flowers to [F]me 
 Then send me some [C]violets I'm [G7]blue as can [C]be
 {end_of_verse}
+
+
+

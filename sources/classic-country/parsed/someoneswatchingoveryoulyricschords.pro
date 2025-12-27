@@ -1,6 +1,9 @@
 {meta: title Someone's Watching Over You}
 {meta: artist George Jones}
 {meta: composer J.P. Richardson}
+{meta: x_source classic-country}
+{meta: x_source_file someoneswatchingoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Someone who's [F]watching over [G7]you to[C]night)
@@ -34,3 +37,7 @@ And the [C]devil don't [F]fill your [C]soul with [Am]fright
 And there's [C]someone who's [F]watching [C]someone who's [F]watching
 [C]Someone who's [F]watching over [G7]you to[C]night
 {end_of_verse}
+
+
+
+

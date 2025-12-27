@@ -1,6 +1,9 @@
 {meta: title I Couldn't See You Leaving}
 {meta: artist Conway Twitty}
 {meta: composer Ronny Scaife and Rory Michael Bourke}
+{meta: x_source classic-country}
+{meta: x_source_file icouldntseeyouleavinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lying all alone in this midnight [G7]blue
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 6}
 [G7]I couldn't see [F]you leaving  but I can see you're [C]gone
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Jesus Is Coming Soon}
 {meta: artist Kitty Wells}
 {meta: composer Bill Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusiscomingsoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus is coming soon [F]Jesus is coming soon
@@ -40,3 +43,8 @@ Be [C]ready for [G7]He may come [C]today
 {start_of_verse: Verse 4}
 Be ready for [G7]He may come [F]to-[C]day
 {end_of_verse}
+
+
+
+
+

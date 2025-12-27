@@ -1,6 +1,9 @@
 {meta: title You Left The Door Wide Open}
 {meta: artist Bob Luman}
 {meta: composer Glenn Sutton and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file youleftthedoorwideopenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Think back on all those nights that you left [F]her all [C]alone
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]Yes you left your door [C]wide [G7]open I didn’t break it [C]in
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title West Texas Waltz}
 {meta: artist Joni Harms}
 {meta: composer Jim Varsos and Joni Harms}
+{meta: x_source classic-country}
+{meta: x_source_file westtexaswaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He said hello how are [G7]you may [C]I have this [F]dance
@@ -36,3 +39,7 @@ But the [G7]sound of twin fiddles [F]singing so [C]sweet
 If [C]I hold you too [G7]close [C]it's not my [F]fault
 [C]Blame it on the [G7]West Texas [C]Waltz
 {end_of_verse}
+
+
+
+

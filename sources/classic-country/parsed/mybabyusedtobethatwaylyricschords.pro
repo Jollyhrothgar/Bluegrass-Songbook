@@ -1,6 +1,9 @@
 {meta: title My Baby Used To Be That Way}
 {meta: artist Charlie Walker}
 {meta: composer Johnny Carver}
+{meta: x_source classic-country}
+{meta: x_source_file mybabyusedtobethatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]See that woman [C]sitting [G]there bright light shining in [C]her [G]hair
@@ -32,3 +35,7 @@ Yes my [C]baby [D7]used to be that [G]way
 My baby used to be that [C]way
 [D7]My baby used to be that [G]way
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Gambler And The Lady}
 {meta: artist Norma Jean}
 {meta: composer Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file gamblerandtheladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They met by chance on a riverboat on the way to New [D7]Orleans
@@ -40,3 +43,8 @@ For the love of the [G]gambler she [D7]paid with her [G]life
 {start_of_verse: Verse 6}
 [C]For the love of a [G]gambler the [D7]lady gave her [G]life
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Where He Leads Me}
 {meta: artist Ray Price}
 {meta: composer John Norris and E.W. Blandy}
+{meta: x_source classic-country}
+{meta: x_source_file whereheleadsmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can hear my [C]Savior [D7]calling
@@ -29,3 +32,6 @@
 [G7]Where He leads me I will [C]follow
 [G]I'll go with Him with Him [D7]all the [G]way
 {end_of_verse}
+
+
+

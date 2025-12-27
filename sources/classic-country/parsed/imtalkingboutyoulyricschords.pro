@@ -1,5 +1,8 @@
 {meta: title I’m Talking Bout You}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file imtalkingboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can do to me what you wanna do
@@ -65,3 +68,10 @@ I'm talkin' about [G]you (I'm talkin' about you)
 I'm talkin' about [D7]you I don't care what you [G]do
 [D7]Don't care what you [G]do 
 {end_of_verse}
+
+
+
+
+
+
+

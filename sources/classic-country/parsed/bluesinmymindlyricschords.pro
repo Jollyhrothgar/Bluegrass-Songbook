@@ -1,6 +1,9 @@
 {meta: title Blues In My Mind}
 {meta: artist Roy Orbison}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file bluesinmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I ought to hate you for these [Gm]blues in my [C]mind
@@ -30,3 +33,6 @@ Trouble with me is having [Gm]trouble with [C]you
 [G7]Worrying blues in my [C]mind 
 [G7]Worrying blues in my [C]mind 
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title There's Better Times Coming}
 {meta: artist Jimmy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file theresbettertimescominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the cows gone dry the hens won't lay no place I can [D7]borrow
@@ -36,3 +39,8 @@ I need a woman pretty bad to help me with the [G]hoeing
 So pick away on the old banjo keep that guitar [D7]strumming
 Put more water in the soup there's better times a [G]coming
 {end_of_verse}
+
+
+
+
+

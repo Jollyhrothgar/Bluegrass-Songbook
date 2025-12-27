@@ -1,6 +1,9 @@
 {meta: title Pretty Snowflakes}
 {meta: artist Patti Page}
 {meta: composer Herbert Plattner, Luigi Creatore, Hugo Peretti}
+{meta: x_source classic-country}
+{meta: x_source_file prettysnowflakeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's winter it's winter the [Am]snow fell last [D7]night
@@ -50,3 +53,9 @@ Pretty [D7]snowflakes hello and good[G]bye
 Pretty snow[Am]flakes
 Pretty [D7]snowflakes hello and goo[G]dbye
 {end_of_verse}
+
+
+
+
+
+

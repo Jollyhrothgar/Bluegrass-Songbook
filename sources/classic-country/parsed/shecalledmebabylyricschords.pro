@@ -1,6 +1,9 @@
 {meta: title She Called Me Baby}
 {meta: artist Carl Smith}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file shecalledmebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She called me baby baby all night [F]long
@@ -22,3 +25,5 @@ Built me up so high made me [G7]strong
 Now each [C]night in dreams just like a [F]song
 I still hear [G7]baby baby all night [C]long 
 {end_of_verse}
+
+

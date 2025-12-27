@@ -1,5 +1,8 @@
 {meta: title Young Love}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file younglovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say for every boy and girl 
@@ -28,3 +31,6 @@ And [F]I   can [G7]feel that it's [G7][C]true
 [G7]Young [C]love  first [G7]love  [F]filled with [G7]true [C]devotion
 [G7]Young [C]love our [G7]love we [F]share with [G7]deep [Am][C]emotion
 {end_of_verse}
+
+
+

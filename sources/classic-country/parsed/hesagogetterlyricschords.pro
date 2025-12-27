@@ -1,5 +1,8 @@
 {meta: title He's A Go-Getter}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file hesagogetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's a go-getter [F]a go-getter
@@ -36,3 +39,7 @@ And the wife that worked those [C]long hard hours
 [C]He's a go-getter [F]a go-getter
 [C]When his wife gets off from [G7]work he'll go get [C]her
 {end_of_verse}
+
+
+
+

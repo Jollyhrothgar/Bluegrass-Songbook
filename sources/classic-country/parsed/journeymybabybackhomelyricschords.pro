@@ -1,5 +1,8 @@
 {meta: title Journey My Baby Back Home}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file journeymybabybackhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pale moon [C]start on your journey I’m [G]plead-ing [D7]to [D7][G]y-ou
@@ -27,3 +30,5 @@ Go down your [A7]long silver trail start to [D7]roam
 [G]Pale moon I’ve made you my [C]promise
 So [G]journey my [D7]baby back [G]home
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Nashville Moon}
 {meta: artist Ronnie Milsap}
 {meta: composer John Schweers and Roger Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file nashvillemoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Music City U.S.A. [F]some dreams broken and some [Fm]dreams made
@@ -36,3 +39,7 @@ And hanging [F]heart[C]aches [Dm]out on the [G7]Nashville [C]moon
 {start_of_verse: Verse 4}
 I'm hanging [F]heart[C]aches [Dm]out on the [G7]Nashville [C]moon
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Taste Of The Truth}
 {meta: artist Gene Watson}
 {meta: composer Rebecca Lynn Howard}
+{meta: x_source classic-country}
+{meta: x_source_file tasteofthetruthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You gave me what I was hungry for
@@ -34,3 +37,7 @@ So afraid that life was gonna pass me by
 [G7]Knowing I can't have you back it's all that I can [C]do
 [G]To keep from [D7]choking on the taste of [C]the [G]tr-uth
 {end_of_verse}
+
+
+
+

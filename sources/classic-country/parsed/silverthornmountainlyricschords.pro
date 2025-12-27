@@ -1,5 +1,8 @@
 {meta: title Silverthorn Mountain}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file silverthornmountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Silverthorn Mountain flows down like a [F]fountain
@@ -35,3 +38,7 @@ When the [C]cold north wind comes down with the [G7]rain
 But a warm [C]summer evenin' keeps me from ever [F]leavin'
 [C]Silverthorn Mountain [G7]shine on like your [C]name
 {end_of_verse}
+
+
+
+

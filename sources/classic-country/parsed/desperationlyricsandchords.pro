@@ -1,6 +1,9 @@
 {meta: title Desperation}
 {meta: artist Gene Watson}
 {meta: composer Gene Simmons and Gene Mabry}
+{meta: x_source classic-country}
+{meta: x_source_file desperationlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On this lonely bed I'm lying   deep inside my mind just [G7]crying
@@ -43,3 +46,8 @@ Loving her was all I had and [A7]now I've lost [D7]control
 Help me [G]make it to tomorrow Lord   send me [C]down your soothing [A7]word
 And [G]calm this [D7]desperation in my [G][C]s-oul
 {end_of_verse}
+
+
+
+
+

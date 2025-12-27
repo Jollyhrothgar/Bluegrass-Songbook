@@ -1,6 +1,9 @@
 {meta: title Don't Ever Leave Me Again}
 {meta: artist Patsy Cline}
 {meta: composer Lillian Claiborne, Virginia Hensley, James Crawford}
+{meta: x_source classic-country}
+{meta: x_source_file donteverleavemeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wake up every morning heart's full of [E7]pain 
@@ -47,3 +50,9 @@ And I cry [C]baby oh [A7]baby
 {start_of_verse: Verse 5}
 [D7]Don't ever [G7]leave me [C]again
 {end_of_verse}
+
+
+
+
+
+

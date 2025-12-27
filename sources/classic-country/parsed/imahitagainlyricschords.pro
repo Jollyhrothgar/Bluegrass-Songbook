@@ -1,5 +1,8 @@
 {meta: title I'm A Hit Again}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file imahitagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I'm a hit [D7]again made it back in your top [G]ten
@@ -19,3 +22,5 @@
 [G]Yes I'm a hit [D7]again I'm back in the top [G]ten
 [D7]The very latest trend I'm a hit [G]again
 {end_of_verse}
+
+

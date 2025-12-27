@@ -1,6 +1,9 @@
 {meta: title Corn Liquor}
 {meta: artist Buck Owens}
 {meta: composer Buddy Alan}
+{meta: x_source classic-country}
+{meta: x_source_file cornliquorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well when I was a little bitty boy 
@@ -64,3 +67,11 @@ When he take a drink from a [D7]jug
 Yeah he'd start with a smile and then after [G]awhile 
 He'd be [D7]out on the floor like a [G]rug
 {end_of_verse}
+
+
+
+
+
+
+
+

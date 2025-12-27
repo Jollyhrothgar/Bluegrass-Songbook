@@ -1,5 +1,8 @@
 {meta: title You’re Part Of Me}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file yourepartofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I used to be alone with no one to [G7]call my [C]own
@@ -28,3 +31,6 @@ You’re everything [G7]to me and you’re all [C]mine
 Yes you’re part of [F]me the biggest part of [C]me
 You’re everything [G7]to me and you’re all [C]mine
 {end_of_verse}
+
+
+

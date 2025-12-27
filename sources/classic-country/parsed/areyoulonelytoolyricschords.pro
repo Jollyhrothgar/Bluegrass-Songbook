@@ -1,6 +1,9 @@
 {meta: title Are You Lonely Too}
 {meta: artist Wilburn Brothers}
 {meta: composer Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file areyoulonelytoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Are you lonely do you [F]ever think of [C]me
@@ -29,3 +32,6 @@ Are you longing for the [D7]days that used to [G7]be
 [C]Are you missing all the [F]kisses that we [C]knew
 [F]I'm so [C]lonely tell me [G7]are you lonely [C]too
 {end_of_verse}
+
+
+

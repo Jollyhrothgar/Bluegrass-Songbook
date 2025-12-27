@@ -1,6 +1,9 @@
 {meta: title Need I Say More}
 {meta: artist George Strait}
 {meta: composer Roger Brown and Clay Blaker}
+{meta: x_source classic-country}
+{meta: x_source_file needisaymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're the [Em]only [C]one and only my [Em]heart's beating [A7]for
@@ -40,3 +43,8 @@ I'll [Dm]love you forever [G7]need I say [Em]more [A7]
 {start_of_verse: Verse 5}
 I'll [Dm]love you forever [G7]need I say [C]more
 {end_of_verse}
+
+
+
+
+

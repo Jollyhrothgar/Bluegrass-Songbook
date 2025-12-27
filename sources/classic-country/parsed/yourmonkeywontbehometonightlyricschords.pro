@@ -1,5 +1,8 @@
 {meta: title Your Monkey Won't Be Home Tonight Lyrics with Chords}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file yourmonkeywontbehometonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You treat me just as if I were a monkey in a cage
@@ -32,3 +35,7 @@ Whatever suits you fancy it's why you think I should do
 {start_of_verse: Verse 4}
 [D7]Don't wait [C]up cause your monkey [D7]won't be home [G]tonight
 {end_of_verse}
+
+
+
+

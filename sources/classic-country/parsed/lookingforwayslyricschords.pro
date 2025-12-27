@@ -1,6 +1,9 @@
 {meta: title Looking For Ways}
 {meta: artist Eddy Raven}
 {meta: composer Frank J. Myers and Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file lookingforwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The moon is already high [F]up over [C]Austin
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [Am]No you haven’t left me [F]yet but you’re lookin’ for [C]ways
 {end_of_verse}
+
+
+
+
+

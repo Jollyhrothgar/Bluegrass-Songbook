@@ -1,6 +1,9 @@
 {meta: title Crying Ain't Dying}
 {meta: artist Tracy Lawrence}
 {meta: composer Don Schlitz and Mark Irwin}
+{meta: x_source classic-country}
+{meta: x_source_file cryingaintdyinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]First he said he loved you [F]he promised he'd be [C]true
@@ -35,3 +38,7 @@ You learned yourself a [F]lesson bout loving and [Am]ly-[G7]i-n[F]-g
 But you will [C]live to [G7]love [F]again cause [G7]crying ain't [F]dy[C]ing
 You will never [G7]love [F]again cause [G7]crying ain't [F]dy[C]ing
 {end_of_verse}
+
+
+
+

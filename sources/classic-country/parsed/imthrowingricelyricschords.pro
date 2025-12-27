@@ -1,6 +1,9 @@
 {meta: title I'm Throwing Rice}
 {meta: artist Eddy Arnold}
 {meta: composer Steve Nelson, Ed Nelson, Jr., Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file imthrowingricelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm throwing rice  at the [C]girl that I [A7]love
@@ -22,3 +25,5 @@
 [G]I stepped aside  after I [C]kissed the [A7]bride
 [D7]And I'm throwing rice at her [G]now
 {end_of_verse}
+
+

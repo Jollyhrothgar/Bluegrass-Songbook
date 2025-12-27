@@ -1,6 +1,9 @@
 {meta: title An Out Of Control Raging Fire}
 {meta: artist Tracy Byrd}
 {meta: composer Melba Montgomery and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file anoutofcontrolragingfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today an old [F]heartache came [C]calling[G7]
@@ -40,3 +43,8 @@ Till [C]we've reached an out of [G7]control raging [C]fire
 {start_of_verse: Verse 5}
 Yes [F]we've reached an [C]out of [G7]control raging [C]fire
 {end_of_verse}
+
+
+
+
+

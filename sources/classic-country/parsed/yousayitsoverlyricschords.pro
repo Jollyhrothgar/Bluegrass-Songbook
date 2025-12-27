@@ -1,6 +1,9 @@
 {meta: title You Say It's Over}
 {meta: artist Marty Robbins}
 {meta: composer Jimmy Sweeney}
+{meta: x_source classic-country}
+{meta: x_source_file yousayitsoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say it's over for [G7]us I'm broken [C]hearted
@@ -26,3 +29,6 @@ You say it's [C]over [G7]but I still love [C]you
 {start_of_verse: Verse 4}
 You say it's over [G7]but I still love [F]you[C]
 {end_of_verse}
+
+
+

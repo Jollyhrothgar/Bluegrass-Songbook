@@ -1,6 +1,9 @@
 {meta: title One Step At A Time}
 {meta: artist Brenda Lee}
 {meta: composer H. Ashley}
+{meta: x_source classic-country}
+{meta: x_source_file onestepatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Word by word take it page by page
@@ -55,3 +58,10 @@ Day by day and take it year by year
 [F]But the way to be even be stronger
 [C]One step at a time [D7]boy [G7]just one step at a [C]time
 {end_of_verse}
+
+
+
+
+
+
+

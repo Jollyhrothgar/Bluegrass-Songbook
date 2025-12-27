@@ -1,5 +1,8 @@
 {meta: title Grandma Harp}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file grandmaharplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Grandma's maiden [F]name was Zona [C]Villines
@@ -42,3 +45,8 @@ And everybody [F]knew she'd done her [C]part
 Don't get set to hear no [F]hidden family [C]legend [A7]
 Just a [D7]song about the [G7]life of Grandma [C]Harp
 {end_of_verse}
+
+
+
+
+

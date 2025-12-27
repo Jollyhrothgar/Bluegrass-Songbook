@@ -1,6 +1,9 @@
 {meta: title We Owe God For Everything}
 {meta: artist Kitty Wells}
 {meta: composer Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file weoweGodforeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]God created the [C]flowers and trees
@@ -40,3 +43,8 @@ The [F]mountains high and the [C]mighty seas
 {start_of_verse: Verse 4}
 [G7]We owe God for every[C]thing
 {end_of_verse}
+
+
+
+
+

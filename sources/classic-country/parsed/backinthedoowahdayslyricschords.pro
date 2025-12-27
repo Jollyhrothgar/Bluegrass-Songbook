@@ -1,6 +1,9 @@
 {meta: title Back In The Doo Wah Days}
 {meta: artist Mickey Gilley}
 {meta: composer Mickey Gilley, Doug Gilmore, Ed Hunnicutt}
+{meta: x_source classic-country}
+{meta: x_source_file backinthedoowahdayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Back in the [Am]doo wah days [F]we had a [G7]ball
@@ -52,3 +55,9 @@ Back in the [Am]doo wah days [F]you held me [G7]tight
 {start_of_verse: Verse 5}
 [F]Back in our [G7]doo wah [C]days
 {end_of_verse}
+
+
+
+
+
+

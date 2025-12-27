@@ -1,6 +1,9 @@
 {meta: title Swimming Upstream}
 {meta: artist Ricky Van Shelton}
 {meta: composer Gary Nicholson and Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file swimmingupstreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God bless my daddy I learned so much from him
@@ -47,3 +50,9 @@ But the [C]only choice you [G7]got is to keep swimming up[C]stream
 {start_of_verse: Verse 5}
 Yeah the only choice you [G7]got is to keep swimming up[C]stream
 {end_of_verse}
+
+
+
+
+
+

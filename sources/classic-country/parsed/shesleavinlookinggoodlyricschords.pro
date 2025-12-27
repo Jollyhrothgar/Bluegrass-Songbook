@@ -1,6 +1,9 @@
 {meta: title She's Leavin' Looking Good}
 {meta: artist Gene Watson}
 {meta: composer Louis J. Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file shesleavinlookinggoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As her soft hand signs the papers
@@ -55,3 +58,10 @@ That uptown crowd weren't our crowd
 [C]She may be leaving me today
 [D7]But she's leavin' looking [G]good
 {end_of_verse}
+
+
+
+
+
+
+

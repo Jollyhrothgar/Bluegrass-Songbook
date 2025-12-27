@@ -1,6 +1,9 @@
 {meta: title I Cheated Me Right Out Of You}
 {meta: artist Moe Bandy}
 {meta: composer Bobby P. Parker}
+{meta: x_source classic-country}
+{meta: x_source_file icheatedmerightoutofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]After hundreds of lies  and fake [C]alibis
@@ -30,3 +33,6 @@
 [D7]I cheated me  right out of [Em]you
 [G]I cheated me  [D7]right out of [G]you
 {end_of_verse}
+
+
+

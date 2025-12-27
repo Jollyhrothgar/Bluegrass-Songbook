@@ -1,6 +1,9 @@
 {meta: title Bringing In The Sheaves}
 {meta: artist Red Sovine}
 {meta: composer Knowles Shaw and George A. Minor}
+{meta: x_source classic-country}
+{meta: x_source_file bringinginthesheaveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sowing in the morning sowing seeds of [C]kindness
@@ -29,3 +32,6 @@
 [G]Bringing in the sheaves [C]bringing in the [G]sheaves
 [D7]We shall come rejoicing bringing in the [G]sheaves
 {end_of_verse}
+
+
+

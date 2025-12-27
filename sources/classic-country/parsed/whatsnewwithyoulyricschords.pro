@@ -1,6 +1,9 @@
 {meta: title What's New With You}
 {meta: artist Con Hunley}
 {meta: composer Dean Dillon and Charles Quillen}
+{meta: x_source classic-country}
+{meta: x_source_file whatsnewwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well hello how've you been  [F]you're a sight to see
@@ -34,3 +37,7 @@ Oh [C]but tell me honey [Dm]   what's [G7]new with [C]you
 And it looks like looking [C7]back is [F]all I look forward [Dm]to
 [C]Oh tell me honey [Dm]   what's [G7]new with [C]you
 {end_of_verse}
+
+
+
+

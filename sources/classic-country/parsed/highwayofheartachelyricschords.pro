@@ -1,6 +1,9 @@
 {meta: title Highway Of Heartache}
 {meta: artist Darin And Brooke Aldridge}
 {meta: composer Carl Jackson and Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file highwayofheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The other side my heart was breaking
@@ -33,3 +36,7 @@ Woo is [G7]me that I must [C]go
 {start_of_verse: Verse 5}
 Woo is [Am]me [G7]that I must [C]go
 {end_of_verse}
+
+
+
+

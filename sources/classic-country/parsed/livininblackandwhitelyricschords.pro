@@ -1,6 +1,9 @@
 {meta: title Livin' In Black And White}
 {meta: artist Tracy Lawrence}
 {meta: composer Gary Baker, Frank Myers, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file livininblackandwhitelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This makin' a livin' is [F]killing me 
@@ -56,3 +59,11 @@ I'm [C]dreaming in color [G7]livin' in black and [C]white
 {start_of_verse: Verse 7}
 Oh [F]oh I'm [C]dreaming in color [G7]livin' in black and [C]white
 {end_of_verse}
+
+
+
+
+
+
+
+

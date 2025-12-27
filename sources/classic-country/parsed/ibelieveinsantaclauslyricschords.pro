@@ -1,6 +1,9 @@
 {meta: title I Believe In Santa Claus}
 {meta: artist Dolly Parton and Kenny Rogers}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file ibelieveinsantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I believe in Santa [D7]Claus  I [G7]believe in Santa [C]Claus
@@ -54,3 +57,10 @@
 [D7]I believe in Santa Claus [G7]I believe in Santa [C]Claus
 [D7]I believe in Santa [G7]Claus I believe in Santa [C]Claus)
 {end_of_verse}
+
+
+
+
+
+
+

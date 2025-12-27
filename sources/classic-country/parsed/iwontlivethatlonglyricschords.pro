@@ -1,6 +1,9 @@
 {meta: title I Won't Live That Long}
 {meta: artist Wynn Stewart}
 {meta: composer Tommy Collins and Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file iwontlivethatlonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't show all the love I feel within my [D7]heart
@@ -33,3 +36,7 @@ To do as [G]much for you [D7]but I won't live that [G]long
 {start_of_verse: Verse 4}
 [C]I’d do as [G]much for you [D7]but I won't live that [G]long
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ain't Love A Hurting Thing}
 {meta: artist Carl Smith}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file aintloveahurtingthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many times I find [F]myself [C]pretending
@@ -38,3 +41,7 @@ That's she's you
 [C]And whisper I love you [F]so
 [G7]Oh it makes me feel so [C]ashamed
 {end_of_verse}
+
+
+
+

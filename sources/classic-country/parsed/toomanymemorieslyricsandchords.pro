@@ -1,6 +1,9 @@
 {meta: title Too Many Memories}
 {meta: artist Patty Loveless}
 {meta: composer Stephen Bruton}
+{meta: x_source classic-country}
+{meta: x_source_file toomanymemorieslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember this [G7]town  [C] with a love by my [F]side[G7]
@@ -40,3 +43,7 @@ Once a [G7]future so [Am]bright now seems so [F]distant and [C]cold
 And the [Am]shadows grow [F]long and your [G7]eyes look so [C]old
 When there's too many [F]memories for [G7]one heart to [C]hold
 {end_of_verse}
+
+
+
+

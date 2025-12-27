@@ -1,6 +1,9 @@
 {meta: title I Won't Forget You}
 {meta: artist Jim Reeves}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file iwontforgetyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know that I [C]won't forget [G]you
@@ -22,3 +25,5 @@
 [G]I'll forget many [C]things in my [G]lifetime
 [D7]But my darling I won't forget [G]you
 {end_of_verse}
+
+

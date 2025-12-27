@@ -1,6 +1,9 @@
 {meta: title Lone Star Beer And Bob Wills Music}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file lonestarbeerandbobwillsmusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My yellow rose of Texas [F]packed up and left this morning
@@ -29,3 +32,6 @@ When [C]I hear Faded Love I feel at [G7]home
 [C]Lone Star Beer and [F]Bob Wills music
 Have [C]kept my heart a[G7]live since you've been [C]gone
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title With Any Luck At All}
 {meta: artist Gene Watson}
 {meta: composer Dave Lindsey}
+{meta: x_source classic-country}
+{meta: x_source_file withanyluckatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You may wonder why I [C]never do stay [G]sober
@@ -33,3 +36,7 @@ With [D7]any luck at all I’ll lose my [G]mind
 {start_of_verse: Verse 4}
 With [D7]any luck at all I’ll lose my [G]mind
 {end_of_verse}
+
+
+
+

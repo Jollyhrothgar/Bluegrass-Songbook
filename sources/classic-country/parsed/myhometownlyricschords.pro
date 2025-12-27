@@ -1,6 +1,9 @@
 {meta: title My Hometown}
 {meta: artist Ferlin Husky}
 {meta: composer Dorsey Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file myhometownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wonder if there's anyone remembers me in my [G][C]hometown
@@ -24,3 +27,6 @@ I'd like to wade the creek again
 [G]I wanna just remember all the places I knew when I [C]was a [G]kid
 [C]To me it would seem like a [G]wonderful dream to be in my [G][D7][C]hometown
 {end_of_verse}
+
+
+

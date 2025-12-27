@@ -1,6 +1,9 @@
 {meta: title Neon Playboy}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Joe Allison}
+{meta: x_source classic-country}
+{meta: x_source_file neonplayboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just a [F]neon [G7]playboy [C]living day to [F]day [C]boy
@@ -38,3 +41,8 @@ But [G7]barstool queens with broken dreams don't thrill me any[C]more
 {start_of_verse: Verse 5}
 [F]This neon [G7]playboy's is finally slowing [C]down
 {end_of_verse}
+
+
+
+
+

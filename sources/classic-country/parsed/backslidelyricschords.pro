@@ -1,6 +1,9 @@
 {meta: title Backslide}
 {meta: artist Mickey Gilley}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file backslidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm walking the [G7]straight and the [C]narrow [C7]
@@ -34,3 +37,7 @@ But [F]if I ever decide to [C]backslide[A7]
 Yes if [F]I ever decide to [C]backslide[A7] 
 [C]Baby you'll be my [G7]first step [C]down
 {end_of_verse}
+
+
+
+

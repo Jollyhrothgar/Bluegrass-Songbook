@@ -1,6 +1,9 @@
 {meta: title Sometimes I Forget}
 {meta: artist Doug Stone}
 {meta: composer Bob Regan and Billy Kirsch}
+{meta: x_source classic-country}
+{meta: x_source_file sometimesiforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Sometimes I for[C]get [F]        
@@ -51,3 +54,9 @@ Be[G7]fore you went [Am]away [C]  [F]
 {start_of_verse: Verse 7}
 [C]Sometimes I [G7]for[C]get 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Play Born To Lose Again}
 {meta: artist Ronnie Milsap}
 {meta: composer Kent M. Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file playborntoloseagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pardon me I'm just another lonely [G7]fool
@@ -29,3 +32,6 @@ I'm [F]here most every [G7]night until [C]the music ends
 I know you know my story I hear it now and [F]then
 So after [G7]Sweet Memories play Born To Lose [C]again
 {end_of_verse}
+
+
+

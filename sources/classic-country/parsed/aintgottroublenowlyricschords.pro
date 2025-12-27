@@ -1,6 +1,9 @@
 {meta: title Ain't Got Trouble Now}
 {meta: artist Alan Jackson}
 {meta: composer Adam Wright}
+{meta: x_source classic-country}
+{meta: x_source_file aintgottroublenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The girl I loved [F]she sure was [C]pretty
@@ -57,3 +60,10 @@ No I ain't got trouble [Am]now
 I [C]had it before and [F]I'll have some more
 [C]But I ain't got [G7]trouble [C]now
 {end_of_verse}
+
+
+
+
+
+
+

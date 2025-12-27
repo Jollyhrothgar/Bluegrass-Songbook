@@ -1,6 +1,9 @@
 {meta: title Picking Sweethearts}
 {meta: artist Jimmy Dean}
 {meta: composer Ben Adelman, Sam Adelman, Louis Mastesky}
+{meta: x_source classic-country}
+{meta: x_source_file pickingsweetheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm always picking [F]sweet[C]hearts for somebody [G7]else
@@ -24,3 +27,5 @@ And I [D7]realize when I'm holding hands
 Every time I [G7]look into new eyes   
 I'm [D7]picking [G7]sweethearts for somebody [C]else
 {end_of_verse}
+
+

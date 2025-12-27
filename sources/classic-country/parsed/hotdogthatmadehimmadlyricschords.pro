@@ -1,6 +1,9 @@
 {meta: title Hot Dog That Made Him Mad}
 {meta: artist Wanda Jackson}
 {meta: composer Don Raye and Danny Barker}
+{meta: x_source classic-country}
+{meta: x_source_file hotdogthatmadehimmadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got a guy I like him fine
@@ -62,3 +65,12 @@ Let your guy know you're nobody's fool
 He'll squeeze you and he'll please you
 [G]And he'll ask you not to do it again
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sittin' In An All Nite Cafe}
 {meta: artist Red Steagall}
 {meta: composer Jim Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file sittininanallnitecafelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sittin' in an all nite cafe in a [F]booth back in the corner
@@ -33,3 +36,7 @@ Sittin' [G7]in this all nite cafe with my [F]baby on my [C]mind
 {start_of_verse: Verse 4}
 Sittin' [G7]in this all nite cafe with my [F]baby on my [C]mind
 {end_of_verse}
+
+
+
+

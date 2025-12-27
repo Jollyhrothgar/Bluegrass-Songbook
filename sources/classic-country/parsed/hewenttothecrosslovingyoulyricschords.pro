@@ -1,6 +1,9 @@
 {meta: title He Went To The Cross Loving You}
 {meta: artist Statler Brother}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file hewenttothecrosslovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He came in this [C]world loving [G]you
@@ -33,3 +36,6 @@ Two [G]dark days passed [G7]while He was gone
 And He'll [G]come back [D7]again loving [C]you[G]
 Because He went to the [D7]cross loving [C]you[G]
 {end_of_verse}
+
+
+

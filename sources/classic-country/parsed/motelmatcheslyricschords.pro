@@ -1,6 +1,9 @@
 {meta: title Motel Matches}
 {meta: artist Moe Bandy}
 {meta: composer Don Pfrimmer and Blake Mevis}
+{meta: x_source classic-country}
+{meta: x_source_file motelmatcheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just an hour ago I [F]didn’t know her [C]name
@@ -35,3 +38,7 @@ Warm [G7]tangled sheets were all that left of our [C]fire
 I said with a grin to [F]do this again would be [C]nice
 But we [G7]both knew that a match can never burn [C]twice
 {end_of_verse}
+
+
+
+

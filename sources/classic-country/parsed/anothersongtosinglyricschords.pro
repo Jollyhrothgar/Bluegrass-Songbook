@@ -1,5 +1,8 @@
 {meta: title Another Song To Sing}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file anothersongtosinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Do they [C]ask you where I [D7]am or where I've [G]been
@@ -28,3 +31,6 @@ To [C]touch the things left [D7]by those gone [G]before
 At the [C]top of the tiniest [D7]hill I can feel [G]like I'm a king
 And there's [C]always [D7]another song to [G]sing
 {end_of_verse}
+
+
+

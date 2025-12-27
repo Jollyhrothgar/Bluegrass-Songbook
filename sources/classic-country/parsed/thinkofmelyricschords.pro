@@ -1,5 +1,8 @@
 {meta: title Think Of Me}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thinkofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Think of me when you're [C]lonely   
@@ -56,3 +59,10 @@ And [D7]he meant you for [G]me
 Think of me when you're far [C]away  
 For [D7]I'll be thinking of [G]you
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Pretty Paper}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file prettypaperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pretty paper pretty ribbons of [G7]blue
@@ -28,3 +31,6 @@ Wrap your presents to your darling from [C]you
 Pretty pencils to [C7]write I love [F]you
 [C]Pretty paper pretty [G7]ribbons of [C]blue
 {end_of_verse}
+
+
+

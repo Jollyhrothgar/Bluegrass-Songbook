@@ -1,6 +1,9 @@
 {meta: title Thank You For Thinking Of Me}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Wayne Walker}
+{meta: x_source classic-country}
+{meta: x_source_file thankyouforthinkingofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To you mom and [Am]dad I [F]owe [G7]everything
@@ -43,3 +46,8 @@
 [C]I wanna [G7]thank you with all [F]of my [C]heart
 [G7]Thank you for thinking of [C]me
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title My Savior's Arms}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file mysaviorsarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can feel  a cold [G7]chill  coming [C]on me
@@ -30,3 +33,6 @@ I'm [C]still a sinner but He [G7]forgives me
 [C]And He under[F]stands that I'm not [C]perfect
 I'm just [G7]doing the best I [F]c--[C]an
 {end_of_verse}
+
+
+

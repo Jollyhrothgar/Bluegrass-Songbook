@@ -1,6 +1,9 @@
 {meta: title I'm Still Looking For You}
 {meta: artist Don Williams}
 {meta: composer Bob Mcdill}
+{meta: x_source classic-country}
+{meta: x_source_file imstilllookingforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love comes [G7]once they [Am]say
@@ -34,3 +37,6 @@
 [C]With all the loves that I've been [F]through
 [G7]I'm still looking for [C]you
 {end_of_verse}
+
+
+

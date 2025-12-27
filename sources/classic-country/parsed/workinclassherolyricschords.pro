@@ -1,6 +1,9 @@
 {meta: title Workin' Class Hero}
 {meta: artist Alan Jackson}
 {meta: composer Don Sampson and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file workinclassherolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A callused right hand holds a [F]shiny gold [C]watch
@@ -50,3 +53,9 @@ That [A]old working class [F]hero lives [C]on
 Yes that [A]workin' class [F]hero lives [C]on 
 That [A]workin' class [F]hero lives [C]on
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Young But True Love}
 {meta: artist The Wilburn Brothers}
 {meta: composer Betty Sue Perry and Teddy Wilburn}
+{meta: x_source classic-country}
+{meta: x_source_file youngbuttruelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Young but [G7]true [C]love my love for [F]you [C]love
@@ -22,3 +25,5 @@ To[F]gether we'll share all the [C]tears
 Just [F]too young they'll [C]flame it but [F]we'll never [C]blame it
 On young but true [G7]love that is [C]ours
 {end_of_verse}
+
+

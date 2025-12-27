@@ -1,5 +1,8 @@
 {meta: title I'll Always Take Care of You}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file illalwaystakecareofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you're all alone and feeling [F]blue
@@ -30,3 +33,6 @@ But I'll still see you [C]thru
 [C]If you're all alone and feeling [F]blue
 I'll [C]always take [G7]care of [C]you
 {end_of_verse}
+
+
+

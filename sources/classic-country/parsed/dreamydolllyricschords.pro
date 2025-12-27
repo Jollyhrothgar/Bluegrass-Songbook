@@ -1,6 +1,9 @@
 {meta: title Dreamy Doll}
 {meta: artist Bob Luman}
 {meta: composer Ron Hargrave and Sheb Wooley}
+{meta: x_source classic-country}
+{meta: x_source_file dreamydolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I had a [Em]dream last night [C]it wasn't [D7]you [G]
@@ -25,3 +28,5 @@ How many [Em]teardrops fell [C]heaven can only tell
 So I [G]tried and I [Em]schemed it was [C]all just a [D7]dream
 Dreamy [G]doll[Em]   [C]  [G]
 {end_of_verse}
+
+

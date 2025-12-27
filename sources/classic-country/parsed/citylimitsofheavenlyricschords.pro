@@ -1,6 +1,9 @@
 {meta: title City Limits Of Heaven}
 {meta: artist Betty Jean Robinson}
 {meta: composer Roscoe Reed}
+{meta: x_source classic-country}
+{meta: x_source_file citylimitsofheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some wonderful day we're [F]leaving for [C]glory
@@ -43,3 +46,8 @@ The presence of Christ [D7]abounds every[G7]where
 On top of the [C]hill and down [F]by the [C]river
 Someday I will join that [G7]heavenly [C]choir
 {end_of_verse}
+
+
+
+
+

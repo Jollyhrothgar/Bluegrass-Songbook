@@ -1,6 +1,9 @@
 {meta: title California Sunshine}
 {meta: artist Carl Smith}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file californiasunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Go West Young Man the signs all seem to say
@@ -36,3 +39,7 @@ They say those California girls are fine
 [C]But her playmate will soon be hard to [E7][G]find
 [A7]Cause I'll be in that [D7]California [G]sunshine
 {end_of_verse}
+
+
+
+

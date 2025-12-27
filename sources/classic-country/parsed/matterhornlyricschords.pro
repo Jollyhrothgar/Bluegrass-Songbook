@@ -1,6 +1,9 @@
 {meta: title Matterhorn}
 {meta: artist Charlie Waller and The Country Gentlemen}
 {meta: composer Mel Tillis and Fred B. Burch}
+{meta: x_source classic-country}
+{meta: x_source_file matterhornlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We started out from Bern one [Am]sunny August morn
@@ -44,3 +47,9 @@ That [F]mighty Matter[C]horn
 {start_of_verse: Verse 7}
 That [F]mighty Matter[C]horn
 {end_of_verse}
+
+
+
+
+
+

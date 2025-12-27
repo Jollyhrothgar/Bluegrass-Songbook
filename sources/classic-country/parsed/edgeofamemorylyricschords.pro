@@ -1,6 +1,9 @@
 {meta: title Edge Of A Memory}
 {meta: artist Tracy Byrd}
 {meta: composer Gene Nelson and Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file edgeofamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All at once here I [D7]am in this [G]barroom 
@@ -42,3 +45,8 @@ Yeah I'm [Am]right on the edge of a [D7]memory and just hangin' [G]on
 {start_of_verse: Verse 6}
 Yeah I'm [Am]right on the edge of a [D7]memory and just hangin' [G]on
 {end_of_verse}
+
+
+
+
+

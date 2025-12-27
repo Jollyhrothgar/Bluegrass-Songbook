@@ -1,5 +1,8 @@
 {meta: title Most Richly Blessed}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file mostrichlyblessedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I [G7]wonder when things go so [C]wrong
@@ -25,3 +28,4 @@ And [C]almost despite myself I [G7]among men am most richly [C]blessed
 And then I remember through [C7]trials of [F]distress
 He's always [C]with me I'm [G7]most richly [C]blessed
 {end_of_verse}
+

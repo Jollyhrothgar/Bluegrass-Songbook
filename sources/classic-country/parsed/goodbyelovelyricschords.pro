@@ -1,6 +1,9 @@
 {meta: title Goodbye Love}
 {meta: artist Brenda Lee}
 {meta: composer Jim Stafford and Deborah Allen}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Goodbye [A7]love I guess your really [D7]gone
@@ -23,3 +26,5 @@
 [F]If someday you think of me [C]just think how good it used to [A7]be
 [D7]So [C]goodbye [A7]love  [D7]goodbye [C][G]love
 {end_of_verse}
+
+

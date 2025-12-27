@@ -1,6 +1,9 @@
 {meta: title No Reservation At The Inn}
 {meta: artist Statler Brothers}
 {meta: composer Harold Reid and Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file noreservationattheinnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No reservation at the [C]inn
@@ -62,3 +65,10 @@ We can do
 [C]We got no [Am]vacancy
 [G]No reser[D7]vation at the [G]inn
 {end_of_verse}
+
+
+
+
+
+
+

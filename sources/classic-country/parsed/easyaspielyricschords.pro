@@ -1,6 +1,9 @@
 {meta: title Easy As Pie}
 {meta: artist Billy Crash Craddock}
 {meta: composer Rory Bourke, Gene Dobbins, Johnny Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file easyaspielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]She meant [G]nothing to me [C][Em]just another one [D7]night [G]stand 
@@ -27,3 +30,6 @@ Now I'm [G]easy as [Em]pie the [C]lady had herself [D7]a [G]plan
 [D7]And it's [G]easy to [Em]see that she's got [C]me eating out [D7]of her [G]hand 
 [C]Got me eating [D7]out of her [G]hand
 {end_of_verse}
+
+
+

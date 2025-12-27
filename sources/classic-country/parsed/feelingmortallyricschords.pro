@@ -1,5 +1,8 @@
 {meta: title Feeling Mortal}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file feelingmortallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wide awake and feeling mortal
@@ -41,3 +44,9 @@ Pretty speeches still unspoken
 Rules and promises I've broken
 [C]That I still don't understand
 {end_of_verse}
+
+
+
+
+
+

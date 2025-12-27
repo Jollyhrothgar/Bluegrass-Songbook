@@ -1,5 +1,8 @@
 {meta: title You Are My Hero}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file youaremyherolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You are my [D7]hero don't [C]ever let me [D7]down
@@ -28,3 +31,5 @@ You [D7]know where you're [G]going [C]you know [D7]what to [G]do
 [C]And if [D7]I should [G]fol[Em]low I'll [D7]be a [A7]hero [G]too
 [Am]A hero [D7]just like [G]you
 {end_of_verse}
+
+

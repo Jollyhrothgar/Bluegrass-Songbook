@@ -1,6 +1,9 @@
 {meta: title Rosa Rio}
 {meta: artist Jim Reeves}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file rosariolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My heart is in [C]Rosa [G]Rio under the Argentine [D7]skies
@@ -34,3 +37,7 @@ My heart is in [C]Rosa [G]Rio your sentimentae aye [D7]aye
 There with a beautiful lady that I love the day that I [G]die 
 [C]Aye [G]aye [D7]aye [G]aye
 {end_of_verse}
+
+
+
+

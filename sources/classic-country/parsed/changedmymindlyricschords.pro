@@ -1,6 +1,9 @@
 {meta: title Changed My Mind}
 {meta: artist Billy Walker}
 {meta: composer Kent Westberry}
+{meta: x_source classic-country}
+{meta: x_source_file changedmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What am I supposed to do now that we are through
@@ -38,3 +41,8 @@ Am I supposed to me cheerful greet my friends and smile
 [F]Pretend you never [G7]meant a thing to [C]me
 [F]Pretend you never [G7]meant a thing to [C]me
 {end_of_verse}
+
+
+
+
+

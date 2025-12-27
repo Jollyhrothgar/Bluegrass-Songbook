@@ -1,5 +1,8 @@
 {meta: title No One Will Ever Know}
 {meta: artist The Statler Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file noonewilleverknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No one will ever know  [C7]my [F]heart is [C]breaking 
@@ -28,3 +31,6 @@ That [D7]I was glad the day you set me [G7]free
 I'll [C]even make [C7]believe  I [F]never loved [C]you 
 Then no [G7]one will ever know the truth but [C]me
 {end_of_verse}
+
+
+

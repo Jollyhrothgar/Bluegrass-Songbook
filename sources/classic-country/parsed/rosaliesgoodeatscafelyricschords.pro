@@ -1,5 +1,8 @@
 {meta: title Rosalie's Good Eats Cafe}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file rosaliesgoodeatscafelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's two in the morning on Saturday night 
@@ -105,3 +108,12 @@ And the [C]juke box continues to [G]play
 And it's two [C]in the morning on Saturday [G]night 
 At [D7]Rosalie's Good Eats [G]Cafe 
 {end_of_verse}
+
+
+
+
+
+
+
+
+

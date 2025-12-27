@@ -1,6 +1,9 @@
 {meta: title The First Time I Heard About Heaven}
 {meta: artist The Bluegrass Cardinals}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file thefirsttimeiheardaboutheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]The [G]first time I [D7]heard about [G]heaven
@@ -47,3 +50,8 @@ Is that [C]somewhere on the hills of Mount [G]Zion[Em]
 The [G]King is sittin' [C]high on His [G]thron[C]e
 The [G]King is sittin' [C]high on His [G]throne[D7]
 {end_of_verse}
+
+
+
+
+

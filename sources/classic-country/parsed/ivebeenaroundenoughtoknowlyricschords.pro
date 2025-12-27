@@ -1,6 +1,9 @@
 {meta: title I've Been Around Enough To Know}
 {meta: artist Conway Twitty}
 {meta: composer Bob Mc Dill and Dickey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeenaroundenoughtoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hush don't talk now
@@ -39,3 +42,7 @@ Tag:
 [D7]You don't need to say you love [G]me
 [C]I've been [G]around [D7]enough to [G]know
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title No Help Wanted}
 {meta: artist Boxcar Willie}
 {meta: composer Bill Carlisle}
+{meta: x_source classic-country}
+{meta: x_source_file nohelpwantedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I got a gal from New Orleans
@@ -61,3 +64,10 @@ We gonna [D7]dance 'til the [G]break of day
 (Do you need any help do [D7]need any help)
 I can handle this job all by [G]myself
 {end_of_verse}
+
+
+
+
+
+
+

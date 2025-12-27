@@ -1,6 +1,9 @@
 {meta: title It's a Little More Like Heaven}
 {meta: artist Hank Locklin}
 {meta: composer Hoyt Atkins and Jim Atkins}
+{meta: x_source classic-country}
+{meta: x_source_file itsalittlemorelikeheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have sailed the peaceful water salty ocean deep and blue
@@ -43,3 +46,10 @@ But it's a [D7]little more like heaven here with [G]you
 I've sought above the mountain peeks for valleys great and wide
 But it's a [D7]little more like heaven by your [G]side
 {end_of_verse}
+
+
+
+
+
+
+

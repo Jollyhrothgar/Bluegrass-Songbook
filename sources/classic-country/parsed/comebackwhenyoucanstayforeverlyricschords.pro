@@ -1,6 +1,9 @@
 {meta: title Come Back (When You Can Stay Forever)}
 {meta: artist Crystal Gayle}
 {meta: composer Chris Waters, Tom Shapiro, Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file comebackwhenyoucanstayforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm an open door [Am]you keep walking [F]through
@@ -34,3 +37,7 @@ And [F]when you do you'll never wanna [G7]go
 Come [Em]back when [Gm]you can stay for[Am]ever
 [F]Love's not really [C]love unless it [Dm]lasts [G7]that [C]long
 {end_of_verse}
+
+
+
+

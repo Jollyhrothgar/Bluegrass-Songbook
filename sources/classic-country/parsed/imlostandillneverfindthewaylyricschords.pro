@@ -1,5 +1,8 @@
 {meta: title I'm Lost And I’ll Never Find The Way}
 {meta: artist Ricky Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file imlostandillneverfindthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lonesome [C]lonesome [G]pining a[D7]way
@@ -41,3 +44,8 @@ Now you say it's best to part
 Even [C]though it breaks my heart
 I'm [G]lost and I'll [D7]never find the [G]way
 {end_of_verse}
+
+
+
+
+

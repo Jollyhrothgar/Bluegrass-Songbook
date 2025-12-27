@@ -1,6 +1,9 @@
 {meta: title I'll Never Find Another You}
 {meta: artist Sonny James}
 {meta: composer Tom Springfield}
+{meta: x_source classic-country}
+{meta: x_source_file illneverfindanotheryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a new [Em]world [F]somewhere they [D7]call the Promised [G7]Land
@@ -28,3 +31,6 @@
 [Am]But if I should lose [F]your love dear [G7]I don't know [F]what I'd [G7]do
 [C]For I know I'll never [F]find [G7]another [C]you
 {end_of_verse}
+
+
+

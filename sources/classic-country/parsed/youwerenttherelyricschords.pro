@@ -1,5 +1,8 @@
 {meta: title You Weren't There}
 {meta: artist Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file youwerenttherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You weren’t there to see the [F]lines across his [C]face
@@ -32,3 +35,7 @@ But you [C]weren’t there to see the [G7]wrinkles across his [C]brow
 {start_of_verse: Verse 5}
 [F]And I was [C]there to see the [G7]wrinkles across his [C]brow
 {end_of_verse}
+
+
+
+

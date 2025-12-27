@@ -1,6 +1,9 @@
 {meta: title A Special Song For Wanda}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file aspecialsongforwandalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wanda was [F]alone at nights while [C]he was somewhere sailing 
@@ -33,3 +36,7 @@ And [C]somewhere making [F]up his bed in [C]Newport News [F]Virginia
 {start_of_verse: Verse 5}
 I hope Wanda [F]hears my song and [C]plays it [G7]one more [C]time
 {end_of_verse}
+
+
+
+

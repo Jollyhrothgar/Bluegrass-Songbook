@@ -1,6 +1,9 @@
 {meta: title Hurts On Me}
 {meta: artist Jack Greene}
 {meta: composer Don Bowman}
+{meta: x_source classic-country}
+{meta: x_source_file hurtsonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well have a little drink on me my friend 
@@ -48,3 +51,9 @@ And I [G7]got enough for both to go [C]around
 Yes the drinks are free and the hurts on me
 And I [G7]got enough for both to go [C]around
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Three Minute Positive Not Too Country Up-Tempo Love Song}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file threeminutepositivenottoocountryuptempolovesonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Three Minute Positive Not Too Country 
@@ -63,3 +66,9 @@ In a [G]three minute positive
 Hey a three minute positive 
 [D7]Not too country up-tempo [G]love song
 {end_of_verse}
+
+
+
+
+
+

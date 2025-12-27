@@ -1,6 +1,9 @@
 {meta: title Ode To Chet}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file odetochetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I bought this guitar it had [F]brand new strings
@@ -43,3 +46,8 @@ Like [Dm]Romeo did Juli[C]et
 If [F]I can only [Em]show her
 I can [D7]almost pick that Figato lick like [G7]Chet
 {end_of_verse}
+
+
+
+
+

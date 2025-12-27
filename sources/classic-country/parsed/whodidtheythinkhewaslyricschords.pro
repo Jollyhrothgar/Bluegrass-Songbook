@@ -1,6 +1,9 @@
 {meta: title Who Did They Think He Was}
 {meta: artist Conway Twitty}
 {meta: composer Richard Leigh and Pat McManus}
+{meta: x_source classic-country}
+{meta: x_source_file whodidtheythinkhewaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A child was born in Tupelo in [F]193[C]5
@@ -47,3 +50,9 @@ Crying [F]who did they think [G7]who did they think He [C]was
 {start_of_verse: Verse 6}
 Who [C]did they think [G7]who did they think He [Am]was
 {end_of_verse}
+
+
+
+
+
+

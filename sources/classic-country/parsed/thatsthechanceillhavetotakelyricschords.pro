@@ -1,6 +1,9 @@
 {meta: title That's The Chance I'll Have To Take}
 {meta: artist Waylon Jennings}
 {meta: composer Jackson King}
+{meta: x_source classic-country}
+{meta: x_source_file thatsthechanceillhavetotakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Troubles and a worried [G7]mind
@@ -29,3 +32,6 @@ And if I go on loving [Dm]you
 If I'm wrong in what I [Dm]do
 [G7]That's the chance I'll have to [C]take
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Too Many Memories All Around}
 {meta: artist Jean Shepard}
 {meta: composer Carol Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file toomanymemoriesallaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well there's the chair in which you sat 
@@ -52,3 +55,10 @@ And that is why I can't forget [G]you
 Too many [C]memories all [G]around
 Too many [C]memories all [G]around
 {end_of_verse}
+
+
+
+
+
+
+

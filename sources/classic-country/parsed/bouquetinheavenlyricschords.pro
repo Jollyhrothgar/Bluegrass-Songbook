@@ -1,6 +1,9 @@
 {meta: title Bouquet In Heaven}
 {meta: artist J.D. Crowe}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file bouquetinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When it's [F]decoration day up in [C]Heaven
@@ -43,3 +46,8 @@ There's a bouquet I'm longing to [G7]see
 There's a [C]flower some[C7]where in this [F]bouquet
 That [C]means all the [G7]world to [C]me
 {end_of_verse}
+
+
+
+
+

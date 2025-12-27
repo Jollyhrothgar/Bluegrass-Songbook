@@ -1,6 +1,9 @@
 {meta: title One Emotion}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file oneemotionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Looking for the feelings that [C]used to tell me something's [G]wrong
@@ -32,3 +35,7 @@ One [Em]emotion's got a [A7]hold of [D7]you and [G]me[B7]
 It's [C]exactly where I want to [G]be 
 One [Em]emotion's got a [A7]hold of [D7]you and [G]me
 {end_of_verse}
+
+
+
+

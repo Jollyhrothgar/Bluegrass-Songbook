@@ -1,5 +1,8 @@
 {meta: title When They Found The Atomic Power}
 {meta: artist Hawkshaw Hawkins}
+{meta: x_source classic-country}
+{meta: x_source_file whentheyfoundtheatomicpowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In Alamogordo New Mexico [F]just a few years ago
@@ -35,3 +38,7 @@ They had [G7]found the atomic power from [C]above
 Then God with His mighty hand showed the [F]world it could not stand
 When they [G7]found the mighty mighty Atomic [C]Power
 {end_of_verse}
+
+
+
+

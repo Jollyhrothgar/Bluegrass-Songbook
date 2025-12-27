@@ -1,6 +1,9 @@
 {meta: title How Do You Do That}
 {meta: artist Ed Bruce}
 {meta: composer Ed Bruce and Donnie Blanz}
+{meta: x_source classic-country}
+{meta: x_source_file howdoyoudothatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At the door at five a.m.
@@ -51,3 +54,8 @@ How do you do [C]that
 You're a wonder to [G7]me
 How do you do [C]that
 {end_of_verse}
+
+
+
+
+

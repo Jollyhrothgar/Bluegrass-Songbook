@@ -1,6 +1,9 @@
 {meta: title Easy As You Go}
 {meta: artist George Strait}
 {meta: composer Steve Bogard and Rick Giles}
+{meta: x_source classic-country}
+{meta: x_source_file easyasyougolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He saw her after school sippin' on a [Am]coke
@@ -44,3 +47,8 @@ Make a body [C]dream and give a life a [Am]theme
 Take the highs and the [F]lows wh[G7]oa easy as you [C]go[F]  [C]
 [F]Easy as you [C]go[F]  [C]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title No Deal}
 {meta: artist Moe Bandy}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file nodeallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](No [C]dea[G7]l no [C]deal[G7])
@@ -32,3 +35,7 @@ No [C]dea[G7]l no [C]deal[F]
 Yes some[C]day he'll [G7]pay for your [F]hand[C] 
 [Dm](No [C]deal)
 {end_of_verse}
+
+
+
+

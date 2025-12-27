@@ -1,6 +1,9 @@
 {meta: title Have A Drink On Me}
 {meta: artist Mac Wiseman}
 {meta: composer Peter Buchanan and Lonnie Donegan}
+{meta: x_source classic-country}
+{meta: x_source_file haveadrinkonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Hey hey everybody drink on [G]me
@@ -66,3 +69,10 @@ Have a drink have a drink have a drink on me
 {start_of_verse: Verse 6}
 [D7]Hey hey everybody drink on [G]me 
 {end_of_verse}
+
+
+
+
+
+
+

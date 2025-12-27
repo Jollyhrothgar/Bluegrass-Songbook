@@ -1,6 +1,9 @@
 {meta: title Remember M Remember E Remember Me}
 {meta: artist George Hamilton IV}
 {meta: composer Wayne P. Walker and Danny Dill}
+{meta: x_source classic-country}
+{meta: x_source_file remembermremembereremembermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A boy loved a little girl a [F]long time [G7]ago
@@ -43,3 +46,8 @@ Remember the M [F]remember the E
 Cause y-o-u know [F]you know who
 [G7]Never love anyone else but [C]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Stranger At My Door}
 {meta: artist Anne Murray}
 {meta: composer Charlie Black, Kerry Chater, Rory M. Bourke}
+{meta: x_source classic-country}
+{meta: x_source_file strangeratmydoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well hello my old friend
@@ -47,3 +50,9 @@ So just [C]open [G]up the [A7]screen door [D7]come on [G]in
 {start_of_verse: Verse 6}
 So just [C]open [G]up the [A7]screen door [D7]come on [G]in
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Talking In Your Sleep}
 {meta: artist Crystal Gayle}
 {meta: composer Roger F. Cook and Bobby R. Woods}
+{meta: x_source classic-country}
+{meta: x_source_file talkinginyoursleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Three o'clock in the morning
@@ -42,3 +45,8 @@ Talking in your [G7]sleep with loving on [C]your mind
 {start_of_verse: Verse 4}
 You've been talking in your sleep
 {end_of_verse}
+
+
+
+
+

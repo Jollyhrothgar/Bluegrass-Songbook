@@ -1,5 +1,8 @@
 {meta: title I'm Ready}
 {meta: artist Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file imreadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All our days are numbered
@@ -43,3 +46,8 @@ But [C]oh what joy waits up [F]yonder
 [C]Once this old [G7]world sets me [C]free
 Oh once this old [G7]world sets me [C]free
 {end_of_verse}
+
+
+
+
+

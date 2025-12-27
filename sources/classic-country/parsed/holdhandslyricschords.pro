@@ -1,6 +1,9 @@
 {meta: title Hold Hands}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino, Pee Wee Maddux, Jimmy Donley}
+{meta: x_source classic-country}
+{meta: x_source_file holdhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When your hair has turned to gray
@@ -39,3 +42,9 @@ Folks gonna laugh thinkin' we're too old
 [D7]Hold hands and [G]talk
 [D7]Hold hands and [G]talk
 {end_of_verse}
+
+
+
+
+
+

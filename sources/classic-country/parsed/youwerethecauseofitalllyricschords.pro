@@ -1,6 +1,9 @@
 {meta: title You Were The Cause Of It All}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Billy Gray}
+{meta: x_source classic-country}
+{meta: x_source_file youwerethecauseofitalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My heart you're resigning with [C]someone else you're [A7]wining
@@ -29,3 +32,6 @@ With [A7]all your new loves I find your [D7]heart's overcrowded
 Your [G]romance restricted and [C]I've been [Am]evicted
 And [D7]you were the cause of it [G]all
 {end_of_verse}
+
+
+

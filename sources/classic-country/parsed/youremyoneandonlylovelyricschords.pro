@@ -1,6 +1,9 @@
 {meta: title You're My One And Only Love}
 {meta: artist Ricky Nelson}
 {meta: composer Barney Kessel and Jack Wilton Marshall}
+{meta: x_source classic-country}
+{meta: x_source_file youremyoneandonlylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're my one and only love 
@@ -39,3 +42,9 @@ My [G7]one and only [C]love
 My [G7]one and only [C]love
 My [G7]one and only [C]love
 {end_of_verse}
+
+
+
+
+
+

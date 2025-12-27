@@ -1,6 +1,9 @@
 {meta: title I Found Someone Of My Own}
 {meta: artist Cal Smith}
 {meta: composer Frank F. Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file ifoundsomeoneofmyownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I [D7]got up this morning and while I was having my [G]coffee
@@ -32,3 +35,7 @@ I put out my [D7]cigarette   turned and walked [G]away
 {start_of_verse: Verse 5}
 Repeat#2
 {end_of_verse}
+
+
+
+

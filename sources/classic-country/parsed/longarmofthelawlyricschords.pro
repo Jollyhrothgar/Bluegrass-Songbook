@@ -1,6 +1,9 @@
 {meta: title Long Arm Of The Law}
 {meta: artist Kenny Rogers}
 {meta: composer Roger Bowling and Billy Ed Wheeler}
+{meta: x_source classic-country}
+{meta: x_source_file longarmofthelawlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In Cumberland Kentucky on a cool autumn [Am]evening
@@ -81,3 +84,13 @@
 [C]Ah but you can't out run [G7]the long arm of the [C]law
 [G7]No you can't out run the long arm of the [C]law
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

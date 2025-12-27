@@ -1,6 +1,9 @@
 {meta: title Rock Me Back To Little Rock}
 {meta: artist Norma Jean}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file rockmebacktolittlerocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I was young when I left you [G7]and [C]daddy
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 5}
 [G7]So rock me back to Little Rock with [C]you
 {end_of_verse}
+
+
+
+
+
+

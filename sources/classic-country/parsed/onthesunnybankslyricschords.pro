@@ -1,6 +1,9 @@
 {meta: title On The Sunny Banks}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file onthesunnybankslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a land where death can [C]never [G]enter
@@ -29,3 +32,6 @@ Happy freedom [Em]land my immortal [G]home
 I'm going there to live when [C]life is [G]over
 On the sunny banks of my [D7]home sweet [G]home [C]   [G]
 {end_of_verse}
+
+
+

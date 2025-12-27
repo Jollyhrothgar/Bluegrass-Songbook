@@ -1,6 +1,9 @@
 {meta: title I'll Make It Up To You}
 {meta: artist Leroy Van Dyke}
 {meta: composer Gene Nash}
+{meta: x_source classic-country}
+{meta: x_source_file illmakeituptoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll [G7]make it [Am]up to [D7]you 
@@ -36,3 +39,7 @@ A little day by [G]day
 I'll [G7]make it [Am]up to [D7]you
 Darling let me kiss your [C]tears [G]away
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Very Thought Of Losing You}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file theverythoughtoflosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The very thought of losing you the thought of some[D7]one new
@@ -23,3 +26,5 @@ And time without you
 The [G]very thought of losing you knowing that we were [D7]through
 It [Am]scares me half to [C]death to [D7]think I'd lose [G]you
 {end_of_verse}
+
+

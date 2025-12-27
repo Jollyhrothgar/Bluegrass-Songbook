@@ -1,6 +1,9 @@
 {meta: title You're The World}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy and Jesse Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file youretheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you climbed out of bed this [C]morning
@@ -55,3 +58,10 @@ But to [C]o-ne [D7]person you’re the [G]world
 To the [C]world you’re just one [D7]person
 But to [C]o-ne [D7]person you’re the [G]world
 {end_of_verse}
+
+
+
+
+
+
+

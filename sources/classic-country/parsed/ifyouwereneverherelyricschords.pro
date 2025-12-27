@@ -1,6 +1,9 @@
 {meta: title If You Were Never Here}
 {meta: artist David Houston}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwereneverherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I burned the [C]pictures I hocked the rings
@@ -43,3 +46,8 @@ And took the balance [F]of your [C]things
 So [F]how can you be [C]gone 
 If [G7]you were never [C]here
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Go Marching Into Glory}
 {meta: artist Hank Snow}
 {meta: composer Kirk Hansard, William Denny, Lois Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file illgomarchingintoglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Singing praises to [G7]the [C]land)
@@ -43,3 +46,10 @@ I'll go marching into Glory singing praises to the land
 {start_of_verse: Verse 8}
 [G7]Singing praises to the [C]land
 {end_of_verse}
+
+
+
+
+
+
+

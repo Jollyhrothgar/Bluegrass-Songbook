@@ -1,6 +1,9 @@
 {meta: title My Heroes Have Always Been Cowboys}
 {meta: artist Waylon Jennings}
 {meta: composer Sharon Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file myheroeshavealwaysbeencowboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I grew up dreaming of being a cowboy
@@ -36,3 +39,7 @@ I let [F]the words of my years fade [C]away
 Old [F]worn out saddles old worn [C]out
 [F]Memories with [C]no one and no [G7]place to [C]stay
 {end_of_verse}
+
+
+
+

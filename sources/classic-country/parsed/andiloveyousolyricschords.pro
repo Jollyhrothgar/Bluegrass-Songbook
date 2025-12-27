@@ -1,6 +1,9 @@
 {meta: title And I Love You So}
 {meta: artist Elvis Presley}
 {meta: composer Don McLean}
+{meta: x_source classic-country}
+{meta: x_source_file andiloveyousolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]And I Love you [Am]so  [D7]the people ask me [G]how
@@ -29,3 +32,6 @@ And yes I [Em]know how [A7]lonely life can be
 But I don't [Em]let the [A7]evening get me down
 [D7]Now that you're a-round  [G]me
 {end_of_verse}
+
+
+

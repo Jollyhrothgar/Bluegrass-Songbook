@@ -1,5 +1,8 @@
 {meta: title I Feel So Close To The Lord}
 {meta: artist Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file ifeelsoclosetothelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I feel so [G]close to You right now oh precious [C]Jesus
@@ -48,3 +51,8 @@ I feel so [G]close to You right [D7]now oh precious [G]Lord[D7]
 {start_of_verse: Verse 5}
 [C]I feel so [G]close to You right [D7]now oh precious [G]Lord
 {end_of_verse}
+
+
+
+
+

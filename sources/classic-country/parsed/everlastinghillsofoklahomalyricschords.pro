@@ -1,6 +1,9 @@
 {meta: title Everlasting Hills Of Oklahoma}
 {meta: artist Hank Thompson}
 {meta: composer Tim Spencer}
+{meta: x_source classic-country}
+{meta: x_source_file everlastinghillsofoklahomalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]The [G]everlasting hills of Okla[C]homa
@@ -33,3 +36,6 @@ To the [G]everlasting [A#7]hills of Okla[D7]hom[G]a
 Too bad some [D7]folks have [G]never [Em]seen[C]
 The [G]everlasting [A#7]hills of Okla[D7]hom[G]a
 {end_of_verse}
+
+
+

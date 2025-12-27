@@ -1,6 +1,9 @@
 {meta: title They Never Made It To Memphis}
 {meta: artist Mickey Gilley}
 {meta: composer Jan Buckingham and Karen Staley}
+{meta: x_source classic-country}
+{meta: x_source_file theynevermadeittomemphislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well she left St. Louis in a Pontiac Tempest
@@ -58,3 +61,10 @@ They never made it to [G7]Memphis but they didn't [C]care
 {start_of_verse: Verse 8}
 They never made it to [G7]Memphis but they didn't [C]care
 {end_of_verse}
+
+
+
+
+
+
+

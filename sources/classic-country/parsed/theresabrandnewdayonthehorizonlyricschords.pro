@@ -1,6 +1,9 @@
 {meta: title There's A Brand New Day On The Horizon}
 {meta: artist Elvis Presley}
 {meta: composer Joy Byers}
+{meta: x_source classic-country}
+{meta: x_source_file theresabrandnewdayonthehorizonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a brand new day on the horizon 
@@ -41,3 +44,8 @@ And the [A7]whole world's [D7]gonna be [G]mine
 {start_of_verse: Verse 6}
 And the [A7]whole world's [D7]gonna be [G]mine
 {end_of_verse}
+
+
+
+
+

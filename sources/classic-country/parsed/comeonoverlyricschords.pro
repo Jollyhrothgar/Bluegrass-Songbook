@@ -1,6 +1,9 @@
 {meta: title Come On Over}
 {meta: artist Doyle Lawson}
 {meta: composer Barry Gibb}
+{meta: x_source classic-country}
+{meta: x_source_file comeonoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If my life gets like a jigsaw
@@ -47,3 +50,8 @@ So bring your love around [C]here
 Come on [G7]over put a smile back on my [C]face
 [F]Come on [C]over
 {end_of_verse}
+
+
+
+
+

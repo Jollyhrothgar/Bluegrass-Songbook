@@ -1,6 +1,9 @@
 {meta: title Heart Of Mine}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Michael Foster}
+{meta: x_source classic-country}
+{meta: x_source_file heartofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There wasn’t much love on the day you [F]came[G7]
@@ -42,3 +45,7 @@ And growing stronger all the [F]time
 [C]And to[F]day I felt the [A#7]joy of love [G7]inside
 When my heart’s [C]alive
 {end_of_verse}
+
+
+
+

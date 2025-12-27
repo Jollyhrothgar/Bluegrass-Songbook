@@ -1,6 +1,9 @@
 {meta: title Missing Her Blues}
 {meta: artist David Ball}
 {meta: composer David Ball and Luke Reed}
+{meta: x_source classic-country}
+{meta: x_source_file missingherblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got the missing her all day heading for a heartache [D7]blues
@@ -46,3 +49,9 @@ Cause I wake up every morning with the same old broken hearted
 [C]Goodbye note that's all she left
 [D7]And poor ol’ me all by myself
 {end_of_verse}
+
+
+
+
+
+

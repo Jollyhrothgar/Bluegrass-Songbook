@@ -1,6 +1,9 @@
 {meta: title Can You Forgive}
 {meta: artist Jim Eanes}
 {meta: composer Roy Hall}
+{meta: x_source classic-country}
+{meta: x_source_file canyouforgivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear girl I know I broke your [F]heart
@@ -43,3 +46,8 @@ For[G7]give it is number [C]two
 I can forgive I know I [F]can
 You [G7]can forgive can't [C]you 
 {end_of_verse}
+
+
+
+
+

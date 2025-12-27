@@ -1,6 +1,9 @@
 {meta: title Ain't That Love}
 {meta: artist Rhonda Vincent}
 {meta: composer Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file aintthatlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I will always remember the [G7]first time that we [C]met
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 5}
 [F]Heaven sent from [G7]up above ain't that [C]love
 {end_of_verse}
+
+
+
+
+
+

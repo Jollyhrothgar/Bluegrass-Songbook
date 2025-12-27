@@ -1,6 +1,9 @@
 {meta: title Blues Country Style}
 {meta: artist Marty Robbins}
 {meta: composer Jerry Livingston and Mack David}
+{meta: x_source classic-country}
+{meta: x_source_file bluescountrystylelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The city streets are friendless and cold 
@@ -34,3 +37,7 @@ The [C]blues [G7]country [C]style
 I'm a country [C7]boy a [F]singing the blues 
 The [C]blues [G7]country [C]style
 {end_of_verse}
+
+
+
+

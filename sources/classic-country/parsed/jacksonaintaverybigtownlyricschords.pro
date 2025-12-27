@@ -1,6 +1,9 @@
 {meta: title Jackson Ain’t A Very Big Town}
 {meta: artist Tammy Wynette}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file jacksonaintaverybigtownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight at nine we get [F]married
@@ -29,3 +32,6 @@
 [C]But the gossips are the ones he turned [F]down
 [G7]And Jackson ain't a very big [C]town
 {end_of_verse}
+
+
+

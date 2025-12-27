@@ -1,6 +1,9 @@
 {meta: title Hat And Boots}
 {meta: artist The Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file hatandbootslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If that old hat I [G7]wore could only [C]talk
@@ -30,3 +33,6 @@ If we [C]get a chance to go back where we've [F]been
 Oh ah [C]hat and boots we'll [G7]do it all [C]again
 Hat and boots we'll [G7]do it all [C]again
 {end_of_verse}
+
+
+

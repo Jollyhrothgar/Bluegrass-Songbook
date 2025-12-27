@@ -1,5 +1,8 @@
 {meta: title Roll In My Sweet Baby's Arms}
 {meta: artist Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file rollinmysweetbabysarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I ain't gonna work on the railroad
@@ -46,3 +49,8 @@ Roll in my sweet baby's [D7]arms
 Till the mail train comes [C]back
 And [D7]roll in my sweet baby's [G]arms
 {end_of_verse}
+
+
+
+
+

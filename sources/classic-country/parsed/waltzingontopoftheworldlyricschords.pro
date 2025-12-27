@@ -1,6 +1,9 @@
 {meta: title Waltzing On Top Of The World}
 {meta: artist Jim Reeves}
 {meta: composer Jim Reeves and Al Courtney}
+{meta: x_source classic-country}
+{meta: x_source_file waltzingontopoftheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If all of the stars were a [C]million [G]guitars
@@ -43,3 +46,8 @@ Waltzing with my darling
 [C]The moment I found you my heart left the [G]ground
 [D7]To go waltzing on top of the [G]world
 {end_of_verse}
+
+
+
+
+

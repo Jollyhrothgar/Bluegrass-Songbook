@@ -1,6 +1,9 @@
 {meta: title There's A Home In Wyoming}
 {meta: artist Sons Of Pioneers}
 {meta: composer Billy Hill and Peter De Rose}
+{meta: x_source classic-country}
+{meta: x_source_file theresahomeinwyominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pale moon [F]carry me [C]away
@@ -52,3 +55,9 @@ We will plan a [F]nest for [C]two
 Just a [G7]home in old Wyoming 
 In the [C]land where [F]dreams come [C]true
 {end_of_verse}
+
+
+
+
+
+

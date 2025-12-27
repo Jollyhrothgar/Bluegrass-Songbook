@@ -1,6 +1,9 @@
 {meta: title Foolish Notion}
 {meta: artist Buck Owens}
 {meta: composer Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file foolishnotionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just knew that someday you would fall in love with [F]me
@@ -23,3 +26,5 @@
 [C]To think that you could love [G7]me too is just a foolish [C]notion
 [F]To think that you could [C]love me too is just [G7]a foolish [C]notion
 {end_of_verse}
+
+

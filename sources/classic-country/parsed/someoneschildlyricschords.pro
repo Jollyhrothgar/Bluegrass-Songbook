@@ -1,6 +1,9 @@
 {meta: title Someone's Child}
 {meta: artist Gene Watson}
 {meta: composer Billy Troy and Lee Bach}
+{meta: x_source classic-country}
+{meta: x_source_file someoneschildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He stands in the rain begging for change as people pass him [D7]by
@@ -36,3 +39,7 @@
 [G]They say he had his daddy's eyes his momma's [C]smile
 [D7]Oh they loved him so but that was long ago when he was someone's [G]child
 {end_of_verse}
+
+
+
+

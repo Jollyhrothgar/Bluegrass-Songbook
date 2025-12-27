@@ -1,5 +1,8 @@
 {meta: title They're Not Teardrops}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file theyrenotteardropslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They're not [F]teardrops  just sincere [C]drops
@@ -33,3 +36,7 @@ Hurry [G7]home drops  you've been gone so long [C]drops
 They're not [F]teardrops just sincere [C]drops
 That say I'm lonesome [G7]and I love [C]you
 {end_of_verse}
+
+
+
+

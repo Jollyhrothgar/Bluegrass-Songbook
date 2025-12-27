@@ -1,6 +1,9 @@
 {meta: title Half A Heart}
 {meta: artist Willie Nelson}
 {meta: composer Buddy Killen and Robert Riley}
+{meta: x_source classic-country}
+{meta: x_source_file halfaheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't [G7]love you like [C]I used [C7]to
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [G7]But only half a heart to [C]go
 {end_of_verse}
+
+
+

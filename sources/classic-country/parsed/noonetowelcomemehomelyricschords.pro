@@ -1,5 +1,8 @@
 {meta: title No One to Welcome Me Home}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file noonetowelcomemehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I went to the old home  where I [C]once used to [G]roam
@@ -28,3 +31,6 @@ There was o--ne  to [A7]welcome me [D7]home
 But [G]when I be--hold  that [C]mansion of [G]Gold
 There'll be Some--one  to [D7]welcome me [G]home
 {end_of_verse}
+
+
+

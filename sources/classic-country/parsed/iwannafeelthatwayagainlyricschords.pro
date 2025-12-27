@@ -1,6 +1,9 @@
 {meta: title I Wanna Feel That Way Again}
 {meta: artist Tracy Byrd}
 {meta: composer Steve Bogard, Jeff Stevens, Danni Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file iwannafeelthatwayagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At the [G]time [C]it seemed like the right thing 
@@ -47,3 +50,7 @@ I wanna feel that way [G]again
 I can't believe we let it [D7]end
 I wanna feel that way [G]again
 {end_of_verse}
+
+
+
+

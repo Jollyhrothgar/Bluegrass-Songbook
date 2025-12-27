@@ -1,6 +1,9 @@
 {meta: title Goin' And Comin'}
 {meta: artist Wilburn Brothers}
 {meta: composer Jean Cole and Leon Scudder}
+{meta: x_source classic-country}
+{meta: x_source_file goinandcominlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've got me goin' and comin' [F]back and forth you got me runnin’
@@ -36,3 +39,7 @@ I need your love so after all [F]I'll be here each time you call
 You snap your fingers and here I come [F]you say go and away I run
 You've got me [G7]goin' and a comin' [C]too 
 {end_of_verse}
+
+
+
+

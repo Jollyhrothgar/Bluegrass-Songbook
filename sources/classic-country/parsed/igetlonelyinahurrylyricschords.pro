@@ -1,6 +1,9 @@
 {meta: title I Get Lonely In A Hurry}
 {meta: artist George Jones}
 {meta: composer George Jones and Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file igetlonelyinahurrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I get [C]lonely in a hurry if you [G]left for a minute
@@ -40,3 +43,8 @@ I don't [D7]think I could take it very [G]long
 {start_of_verse: Verse 4}
 I don't [D7]think I could take it very [G]long
 {end_of_verse}
+
+
+
+
+

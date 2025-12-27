@@ -1,6 +1,9 @@
 {meta: title Birmingham}
 {meta: artist Jack Greene}
 {meta: composer Gary Stewart and Bill Eldridge}
+{meta: x_source classic-country}
+{meta: x_source_file birminghamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't let things be the [C]way they were in Birming[G]ham
@@ -31,3 +34,7 @@ Like they [D7]did in Birming[G]ham
 {start_of_verse: Verse 5}
 Don't let things be the [C]way they were in Birming[G]ham
 {end_of_verse}
+
+
+
+

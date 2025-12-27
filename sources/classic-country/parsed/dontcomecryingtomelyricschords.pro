@@ -1,6 +1,9 @@
 {meta: title Don’t Come Crying To Me}
 {meta: artist Vince Gill}
 {meta: composer Reed Nielsen and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file dontcomecryingtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Don't come [C]crying to me when it's [F]over
@@ -33,3 +36,7 @@ Don't come [C]crying to me I won't be [F]waiting
 {start_of_verse: Verse 4}
 [C]Like I've done a [G7]hundred times be[C]fore
 {end_of_verse}
+
+
+
+

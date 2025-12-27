@@ -1,6 +1,9 @@
 {meta: title The Union Mare And The Confederate Grey}
 {meta: artist Waylon Jennings}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file theunionmareandtheconfederategreylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two horses were trottin'  they pranced and they [F]ran
@@ -29,3 +32,6 @@ Each one was co[C]mmanded  by a cavalry [G7]man
 Two horses stood [C]grazin’  where their dead riders [F]lay
 A Union [C]Mare  [G7]and a Confederate [C]Grey
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Coal Miners Daughter}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file coalminersdaughterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I was born a coal [F]miner's [C]daughter
@@ -48,3 +51,8 @@
 [F]Nothing lives here [C]anymore
 [G7]Just a memory of a coal miner's [C]daughter
 {end_of_verse}
+
+
+
+
+

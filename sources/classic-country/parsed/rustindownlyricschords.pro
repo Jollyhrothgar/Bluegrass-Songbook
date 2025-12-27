@@ -1,6 +1,9 @@
 {meta: title Rustin' Down}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file rustindownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A lotta miles [F]behind me [C]too far gone to [F]find me
@@ -37,3 +40,7 @@ Still [C]searching for a mate I never [F]found
 [C]Sittin' by the [F]highway [G7]I'm still doing things [F]my way
 [C]Sittin' by the [G7]highway rustin' [F]down[C]
 {end_of_verse}
+
+
+
+

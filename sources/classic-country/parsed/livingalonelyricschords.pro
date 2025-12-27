@@ -1,6 +1,9 @@
 {meta: title Living Alone}
 {meta: artist Hank Locklin}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file livingalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I may be wealthy with more than my share 
@@ -36,3 +39,7 @@ Please give me [F]true love and don't shatter my [G7]pride
 If you should [F]leave me all the dreams I have [C]known
 Will never come [G7]true while I'm living [C]alone
 {end_of_verse}
+
+
+
+

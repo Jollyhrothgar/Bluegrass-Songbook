@@ -1,6 +1,9 @@
 {meta: title I Didn't Even Cry}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file ididntevencrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The moment that I [G7]saw the doctor’s [C]face
@@ -31,3 +34,6 @@ And when I [C]cried oh Lord a gentle voice [F]replied [Em]   [D7]
 And said [F]daddy you know [C]what today I [F]took a walk with [C]God
 And daddy I [G7]wish you wouldn’t [F]cry[C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title What's Fort Worth}
 {meta: artist Bob Wills}
 {meta: composer Larry Lee}
+{meta: x_source classic-country}
+{meta: x_source_file whatsfortworthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a foreign palace just [F]30 miles from Dallas
@@ -43,3 +46,8 @@ It's the best city [D7]on Texas [G7]earth
 [F]What's Fort Worth boys [C]what's Fort Worth
 It's worth [G7]the world to [C]me
 {end_of_verse}
+
+
+
+
+

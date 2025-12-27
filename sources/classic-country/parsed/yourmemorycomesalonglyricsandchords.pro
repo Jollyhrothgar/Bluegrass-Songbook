@@ -1,6 +1,9 @@
 {meta: title Your Memory Comes Along}
 {meta: artist Connie Smith}
 {meta: composer Johnny Tillotson and Paul Tannen}
+{meta: x_source classic-country}
+{meta: x_source_file yourmemorycomesalonglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](Then your memory comes [C]along)
@@ -38,3 +41,9 @@ Oh well [G7]that's the time your memory comes [C]along
 {start_of_verse: Verse 5}
 [F]But [C]just then [F]about that [C]time your [F]memory [G7]comes [C]along
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title What I Threw Away}
 {meta: artist Vern Gosdin}
 {meta: composer Doodle Owens, Dennis Knutson, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file whatithrewawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was so [F]innocent [C]she didn't know where to [G7]start
@@ -36,3 +39,7 @@ Cause all she [C]new about love [F]was what she could [G7]give from the [C]heart
 I [F]made a bad [C]decision and I [G7]found out to [Am]late
 She came [F]by and [C]showed me just [G7]what I threw [C]away
 {end_of_verse}
+
+
+
+

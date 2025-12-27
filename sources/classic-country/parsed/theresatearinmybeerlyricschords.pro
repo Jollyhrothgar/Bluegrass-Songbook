@@ -1,5 +1,8 @@
 {meta: title There's A Tear In My Beer}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file theresatearinmybeerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There's a tear in my [C]beer 
@@ -111,3 +114,26 @@ There's a tear in my [C]beer
 Cause I'm crying for you dear
 [D7]You are [G7]on my lonely [C]mind
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

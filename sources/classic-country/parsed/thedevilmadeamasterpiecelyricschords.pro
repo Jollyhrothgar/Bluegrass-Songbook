@@ -1,5 +1,8 @@
 {meta: title The Devil Made A Masterpiece}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file thedevilmadeamasterpiecelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The devil made a work of art when [F]he created [C]you
@@ -35,3 +38,7 @@ For the honky tonking day and night [D7]cause that’s your middle [G7]name
 [C]He musta used himself inside your [F]heart that can’t be [C]true
 He [F]knew he had a [C]masterpiece [G7]when he created [C]you
 {end_of_verse}
+
+
+
+

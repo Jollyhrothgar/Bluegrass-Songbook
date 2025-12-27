@@ -1,5 +1,8 @@
 {meta: title Hillbilly Waltz}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file hillbillywaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The music was [G7]lovely  the lights they were [C]low
@@ -25,3 +28,6 @@
 {start_of_verse: Verse 4}
 Repeat#2
 {end_of_verse}
+
+
+

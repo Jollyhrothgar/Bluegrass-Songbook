@@ -1,6 +1,9 @@
 {meta: title 1929}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard and Freddy Powers}
+{meta: x_source classic-country}
+{meta: x_source_file 1929lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All my life I've [F]heard about [C]hard [F]depression [C]days
@@ -43,3 +46,8 @@ A [G7]dollar bill ain't worth one thin [C]dime
 And tricks are sometimes [F]played upon the [C]mind
 Is it really now or [G7]192[C]9
 {end_of_verse}
+
+
+
+
+

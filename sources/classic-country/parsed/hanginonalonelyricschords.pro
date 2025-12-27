@@ -1,6 +1,9 @@
 {meta: title Hangin' On Alone}
 {meta: artist Jeannie Seely}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file hanginonalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You hurt me so [F]many times [C]before
@@ -26,3 +29,6 @@ Un[F]til you [C]do I'll [G7]just keep hangin' [C]on
 {start_of_verse: Verse 4}
 Un[F]til you [C]do I'll [G7]just keep hangin' [C]on
 {end_of_verse}
+
+
+

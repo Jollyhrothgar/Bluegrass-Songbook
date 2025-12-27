@@ -1,6 +1,9 @@
 {meta: title Hangman's Boogie}
 {meta: artist Cowboy Copas}
 {meta: composer Larry Cassidy}
+{meta: x_source classic-country}
+{meta: x_source_file hangmansboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've gotta be a leaving when the moon goes down
@@ -53,3 +56,10 @@ To do this little boogie you just hang around
 [G7]I'm gonna be dancing in the strangest way
 [C]Doing the hangman's boogie at the [G7]break of [C]day
 {end_of_verse}
+
+
+
+
+
+
+

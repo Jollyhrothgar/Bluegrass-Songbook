@@ -1,6 +1,9 @@
 {meta: title If I Lay Down The Bottle Today}
 {meta: artist Moe Bandy}
 {meta: composer Dave Kirby and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file ifilaydownthebottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Me and that ole sunshine [F]is sinking mighty low
@@ -33,3 +36,7 @@ If I lay down the [C]bottle would you [G7]lay back down with [C]me
 {start_of_verse: Verse 4}
 [F]If I lay down the [C]bottle would you [G7]lay back down with [C]me
 {end_of_verse}
+
+
+
+

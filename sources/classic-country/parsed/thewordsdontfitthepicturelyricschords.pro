@@ -1,5 +1,8 @@
 {meta: title The Words Don't Fit The Picture}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file thewordsdontfitthepicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If this is a [F]game we [C]play
@@ -26,3 +29,6 @@ The [F]words don't fit the [A#7]picture [D7]anymore [G]
 [Am]But this is the time to say [E7]goodbye [G]good[D7]bye
 [F]Cause the words don't fit the [A#7]picture [D7]anymore [G]any[C]more
 {end_of_verse}
+
+
+

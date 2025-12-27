@@ -1,5 +1,8 @@
 {meta: title Wrong Direction Home}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file wrongdirectionhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a shingle covered cottage at the [C]foothills of the Smokies
@@ -43,3 +46,8 @@ And still [C]headed in the [D7]wrong direction [G]home
 But [C]maybe I'll get [D7]back before too [G]long
 But I'm [D7]headed in the wrong direction [C]hom[G]e
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Million Years In Glory}
 {meta: artist Carl Story}
 {meta: composer Tommy James, Tracey Lee, James West}
+{meta: x_source classic-country}
+{meta: x_source_file amillionyearsinglorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I cross the great divide and reach [C]Heaven's open [G]door
@@ -29,3 +32,6 @@ A million years in glory to [A7]shout and sing His [D7]praise
 I'll [G]walk with Paul and Silas and [C]all my friends I [G]know
 I'll have a million years in glory with a [D7]million more to [G]go 
 {end_of_verse}
+
+
+

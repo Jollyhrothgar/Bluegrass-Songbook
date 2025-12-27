@@ -1,6 +1,9 @@
 {meta: title Hundred Proof Memories}
 {meta: artist George Jones}
 {meta: composer Keith Stegall and Zack Turner}
+{meta: x_source classic-country}
+{meta: x_source_file hundredproofmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love on the rocks  [F]that's all he [C]said
@@ -29,3 +32,6 @@ It don't take but one [G7]taste to send you out of your [C]mind
 No I don't want the [F]whiskey but I could sure use a [C]ride
 Cause with hundred proof [G7]memories Lord you don't think and [C]drive
 {end_of_verse}
+
+
+

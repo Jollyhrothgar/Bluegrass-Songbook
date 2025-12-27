@@ -1,6 +1,9 @@
 {meta: title I'd Build A Bridge}
 {meta: artist Johnny Rodriguez}
 {meta: composer Mike Settle}
+{meta: x_source classic-country}
+{meta: x_source_file idbuildabridgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I [Em]search through the [F]ashes [G7]
@@ -41,3 +44,7 @@ Oh [G7]I'd build a [Am]bridge made of [C]love
 A love so [F]strong that nothing [Em]known 
 Could ever [F]shake it [G7]yeah
 {end_of_verse}
+
+
+
+

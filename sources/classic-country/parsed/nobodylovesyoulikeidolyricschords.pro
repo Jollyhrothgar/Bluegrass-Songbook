@@ -1,6 +1,9 @@
 {meta: title Nobody Loves You Like I Do}
 {meta: artist Patty Loveless}
 {meta: composer Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file nobodylovesyoulikeidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Leave your heartaches [G7]just outside the [C]door 
@@ -34,3 +37,7 @@ Cause darling [G7]nobody loves you like I [C]do
 Just as long as you need me I'll be [F]there for [D7]you
 Cause darling [G7]nobody loves you like I [C]do
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Brand New Strings}
 {meta: artist Ricky Skaggs}
 {meta: composer Steve Leslie and Keith Sewell}
+{meta: x_source classic-country}
+{meta: x_source_file brandnewstringslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Daddy came runnin' 'cross the railroad tracks
@@ -53,3 +56,9 @@ Hey [G]Johnny's got some [D7]brand new [G]stings
 Johnny's got some [D7]brand new [G]stings
 Johnny's got some [D7]brand new [G]stings 
 {end_of_verse}
+
+
+
+
+
+

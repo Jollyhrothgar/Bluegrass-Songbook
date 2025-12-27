@@ -1,6 +1,9 @@
 {meta: title Carry Me Back To The Lone Prairie}
 {meta: artist Gene Autry}
 {meta: composer Carson J. Robison}
+{meta: x_source classic-country}
+{meta: x_source_file carrymebacktotheloneprairielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh carry me back to the lone prairie
@@ -22,3 +25,5 @@ Where the coyotes howl and the wind blows [G7]free
 [C]And when I [Dm]die you can [G7]bury [C]me
 [Dm]Neath the western [G7]skies on the lone prai[C]rie
 {end_of_verse}
+
+

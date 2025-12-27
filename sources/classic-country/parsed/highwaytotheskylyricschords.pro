@@ -1,6 +1,9 @@
 {meta: title Highway to the Sky}
 {meta: artist Jack Greene}
 {meta: composer Ron Liverett}
+{meta: x_source classic-country}
+{meta: x_source_file highwaytotheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a highway [F]straight up to the [C]sky
@@ -57,3 +60,9 @@ Cause I know that it's [G7]taking me [C]home
 {start_of_verse: Verse 5}
 Yes I know that it's [G7]taking me [F]hom[C]e
 {end_of_verse}
+
+
+
+
+
+

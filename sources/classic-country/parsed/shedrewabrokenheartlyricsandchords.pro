@@ -1,6 +1,9 @@
 {meta: title She Drew A Broken Heart}
 {meta: artist Patty Loveless}
 {meta: composer Jon McElroy and Ned McElroy}
+{meta: x_source classic-country}
+{meta: x_source_file shedrewabrokenheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You should have seen it coming now [F]it's too [C]late
@@ -49,3 +52,10 @@ She [F]drew a broken [C]heart and put your [G7]name in[C]side[F]  [C]
 {start_of_verse: Verse 7}
 Oh oh oh  [G7]she's [C]gone
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Am Slowly Dying Of A Broken Heart}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Sydney Nathan}
+{meta: x_source classic-country}
+{meta: x_source_file iamslowlydyingofabrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am slowly dying of a broken [D7]heart
@@ -29,3 +32,6 @@
 [C]I am slowly dying of a broken [D7]heart
 [G7]A broken heart that you have given [C]me
 {end_of_verse}
+
+
+

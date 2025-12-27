@@ -1,6 +1,9 @@
 {meta: title Lost Forever In Your Kiss}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file lostforeverinyourkisslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is not at all like me I [F]never thought that I could [C]be
@@ -29,3 +32,6 @@ For [G7]you have [F]all control [C]of me [D7]and I am yours [G7]until
 [C]You say [G7]that you don't want [C]me oh I hope that never will [F]be
 For [C]I am lost [G7]forever in your [F]kiss
 {end_of_verse}
+
+
+

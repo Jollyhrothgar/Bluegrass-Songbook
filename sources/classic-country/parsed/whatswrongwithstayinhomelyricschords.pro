@@ -1,6 +1,9 @@
 {meta: title What's Wrong With Stayin' Home}
 {meta: artist Merle Haggard}
 {meta: composer Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file whatswrongwithstayinhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The boys are wantin' [Dm]me to go out [G7]drinking
@@ -29,3 +32,6 @@ So what's wrong with stayin' [Dm]home with [G7]Julie
 What's [C]wrong with stayin' [Dm]home with [G7]Julie
 [F]Julie's always [G7]stayed at home with [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Woman Let Me Sing You A Song}
 {meta: artist Lefty Frizzel}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file womanletmesingyyouasonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Woman let me [D7]sing you a [G]song
@@ -46,3 +49,8 @@
 [D7]Woman I've done sang you my [G]song
 [D7]Woman I've done sang you my [G]song
 {end_of_verse}
+
+
+
+
+

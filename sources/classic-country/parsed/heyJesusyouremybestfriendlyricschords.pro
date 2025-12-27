@@ -1,6 +1,9 @@
 {meta: title Hey Jesus You're My Best Friend}
 {meta: artist B J Thomas}
 {meta: composer Don Goodman and Mary Ann Kennedy}
+{meta: x_source classic-country}
+{meta: x_source_file heyJesusyouremybestfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You almost have to [G7]lose your mind[F]
@@ -43,3 +46,7 @@ Hey [Am]Jesus [G7] You're my best [C]friend [G7]
 {start_of_verse: Verse 4}
 Hey hey [Dm]Jes[Em]us  [F] You're [G7]my best [C]friend
 {end_of_verse}
+
+
+
+

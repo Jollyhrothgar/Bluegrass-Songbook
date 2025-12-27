@@ -1,6 +1,9 @@
 {meta: title I'll Just Go On Home}
 {meta: artist Cal Smith}
 {meta: composer Randall J. Colemus}
+{meta: x_source classic-country}
+{meta: x_source_file illjustgoonhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know your bar is closing your [C]flashing sign's are [Am]dim
@@ -22,3 +25,5 @@ But I know [D7]she's happy with her crowd and I hope they'll [G]understand
 I'm not here checking on her but we [C]worry when she's [Am]gone
 [D7]So if she's here and she's alright I'll just go on [G]home
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm In The Mood For Love}
 {meta: artist Fats Domino}
 {meta: composer Dorothy Fields and Jimmy McHugh}
+{meta: x_source classic-country}
+{meta: x_source_file iminthemoodforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm in the [Am]mood for [Dm]love
@@ -36,3 +39,7 @@ I'm in the [G7]mood for [C]love
 [D7]We've put our hearts [Em]together
 [B7]Now we are [Dm]one I'm not [G7]afraid
 {end_of_verse}
+
+
+
+

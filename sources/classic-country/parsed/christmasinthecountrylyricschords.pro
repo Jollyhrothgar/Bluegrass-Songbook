@@ -1,6 +1,9 @@
 {meta: title Christmas In The Country}
 {meta: artist Joni Harms}
 {meta: composer Carl Jackson and Thomas Kuenster}
+{meta: x_source classic-country}
+{meta: x_source_file christmasinthecountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Out here in the country when De[C]cember rolls [G]around
@@ -33,3 +36,7 @@ Christmas in the [G]country is the [D7]best time of the [G]year
 {start_of_verse: Verse 5}
 Yes [C]Christmas in the [G]country is my [D7]favorite time of [G]year
 {end_of_verse}
+
+
+
+

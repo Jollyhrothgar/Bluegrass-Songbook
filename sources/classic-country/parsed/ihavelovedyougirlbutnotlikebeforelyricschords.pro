@@ -1,6 +1,9 @@
 {meta: title I Have Loved You Girl (But Not Like Before)}
 {meta: artist Ed Bruce}
 {meta: composer Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file ihavelovedyougirlbutnotlikebeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have held you girl
@@ -34,3 +37,8 @@ repeat
 {start_of_verse: Verse 6}
 [G7]I have loved you girl mmmum but not like this [C]before
 {end_of_verse}
+
+
+
+
+

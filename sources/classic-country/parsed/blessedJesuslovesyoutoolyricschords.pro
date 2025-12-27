@@ -1,6 +1,9 @@
 {meta: title Blessed Jesus Loves You Too}
 {meta: artist The Blackwood Brothers}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file blessedJesuslovesyoutoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the rugged cross of [F]Calvary
@@ -29,3 +32,6 @@
 [C]Though the vilest sinner you may [F]be
 [C]Blessed Jesus [G7]loves you [C][F][C]too
 {end_of_verse}
+
+
+

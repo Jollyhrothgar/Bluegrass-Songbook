@@ -1,6 +1,9 @@
 {meta: title It's Funny What A Fool Will Do}
 {meta: artist George Jones}
 {meta: composer Johnny Mathis and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file itsfunnywhatafoolwilldolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here am I [C7]without your arms [F]again
@@ -33,3 +36,7 @@ Oh it's [G7]funny what a fool will [C]do
 {start_of_verse: Verse 5}
 Oh oh it's [G7]funny what a fool will [C]do
 {end_of_verse}
+
+
+
+

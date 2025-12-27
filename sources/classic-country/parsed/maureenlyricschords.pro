@@ -1,6 +1,9 @@
 {meta: title Maureen}
 {meta: artist Jim Reeves}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file maureenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All alone tonight I dream in [C]my land 
@@ -22,3 +25,5 @@ The [C]hills that [D7]heard us [G]promise that [A7]we would never [D7]part
 [G]Maureen  [C]Maureen  [G]someday white sails will [C]gleam
 And you'll [G]know I'm back to [C]stay for ever[D7]more [C]Mau-[G]reen
 {end_of_verse}
+
+

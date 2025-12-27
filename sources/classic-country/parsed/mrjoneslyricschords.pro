@@ -1,6 +1,9 @@
 {meta: title Mr. Jones}
 {meta: artist Conway Twitty}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file mrjoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mr. Jones I'd [C]like to speak to you
@@ -44,3 +47,8 @@ I love your [G]daughter and your daughter
 [D7]She wanna be [G]mine
 repeat last verse
 {end_of_verse}
+
+
+
+
+

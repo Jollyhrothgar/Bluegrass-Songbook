@@ -1,6 +1,9 @@
 {meta: title Knee Deep in the Blues}
 {meta: artist Marty Robbins}
 {meta: composer Melvin Endsley}
+{meta: x_source classic-country}
+{meta: x_source_file kneedeepintheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've just been [G7]thinkin' things [C]over
@@ -29,3 +32,6 @@ Don't [C]ask me why I am [G]cryin'
 Well there's [G]just no use in [C]tryin'
 Well [G]I'm just knee [D7]deep in the [G]blues
 {end_of_verse}
+
+
+

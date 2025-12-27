@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Girl}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Chuck Hardin}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkgirllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't be fool by big blue [D7]eyes 
@@ -30,3 +33,6 @@ Cause [G]she's just a [D7]honky tonk [G]girl
 She [C]knows all the arts of love she'll give your heart a [G]whirl
 Cause she's just a [D7]honky tonk [G]girl
 {end_of_verse}
+
+
+

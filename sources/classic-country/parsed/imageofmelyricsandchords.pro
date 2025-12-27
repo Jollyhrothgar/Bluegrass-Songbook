@@ -1,6 +1,9 @@
 {meta: title The Image of Me}
 {meta: artist Conway Twitty}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file imageofmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I know she's the life of the [C]party
@@ -35,3 +38,7 @@
 [A7]And with her pride gone she tags along
 [D7]With any old crowd
 {end_of_verse}
+
+
+
+

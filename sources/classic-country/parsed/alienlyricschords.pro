@@ -1,6 +1,9 @@
 {meta: title Alien}
 {meta: artist Tanya Tucker}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file alienlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every night at seven you suddenly appear
@@ -45,3 +48,8 @@ You're like an [D7]alien you're like an [G]alien
 You're like an [D7]alien can't you hear my [G]words
 You're like an [D7]alien come back down to [G]earth
 {end_of_verse}
+
+
+
+
+

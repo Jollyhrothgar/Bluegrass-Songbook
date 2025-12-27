@@ -1,5 +1,8 @@
 {meta: title Sometimes Late At Night}
 {meta: artist Razzy Bailey}
+{meta: x_source classic-country}
+{meta: x_source_file sometimeslateatnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes late at night I wake up trembling
@@ -32,3 +35,7 @@ Cause I can face tomorrow with all its problems
 {start_of_verse: Verse 4}
 [D7]I said darling I can stand [C]most [G]anything
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Still Got A Couple Of Good Years Left}
 {meta: artist Ricky Van Shelton}
 {meta: composer Gary Burr}
+{meta: x_source classic-country}
+{meta: x_source_file stillgotacoupleofgoodyearsleftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's been on the road since [D7]'74
@@ -71,3 +74,12 @@
 {start_of_verse: Verse 10}
 [G]Oh we still got [C]a couple of [D7]good years [G]left
 {end_of_verse}
+
+
+
+
+
+
+
+
+

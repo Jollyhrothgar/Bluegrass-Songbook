@@ -1,5 +1,8 @@
 {meta: title Your Birthday Is}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file yourbirthdayislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your birthday is special to [F]me
@@ -35,3 +38,7 @@
 [F]It's been a good year now your birthday is here
 [C]And that's what I [G7]wanted to [C]say
 {end_of_verse}
+
+
+
+

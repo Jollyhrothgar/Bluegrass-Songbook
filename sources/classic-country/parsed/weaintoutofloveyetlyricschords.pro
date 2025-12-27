@@ -1,6 +1,9 @@
 {meta: title We Ain't Out Of Love Yet}
 {meta: artist Randy Travis}
 {meta: composer Larry Henley and Gene Pistilli}
+{meta: x_source classic-country}
+{meta: x_source_file weaintoutofloveyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can throw [A7]away my picture empty out my dresser [D7]drawer
@@ -45,3 +48,8 @@
 [D7]You can't break up a perfect [G7]set
 [D7]And we [G7]ain't out of [C]love [C][F]yet
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title There's No Use Hanging On}
 {meta: artist Tammy Wynette}
 {meta: composer Monroe Fields and Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file theresnousehangingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I might as well just hang it [F]up
@@ -43,3 +46,8 @@ But I might as well just hang it [F]up
 I might as well just hang it [F]up
 [G7]There's no use hanging [C]on
 {end_of_verse}
+
+
+
+
+

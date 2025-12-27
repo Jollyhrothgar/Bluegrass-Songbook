@@ -1,6 +1,9 @@
 {meta: title You Gotta Have Love}
 {meta: artist Eddy Arnold}
 {meta: composer Gene Nash and Chet Atkins}
+{meta: x_source classic-country}
+{meta: x_source_file yougottahavelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Buy your[G7]self a [C]cottage with a picket [G7]fence [C]around
@@ -36,3 +39,7 @@ Or [Dm]you've got [G7]nothing at [C]all
 (You'll find you [Em]gotta have love) you [A7]gotta have love 
 Or [Dm]you've got [G7]nothing at [C]all
 {end_of_verse}
+
+
+
+

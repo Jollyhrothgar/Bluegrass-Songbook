@@ -1,6 +1,9 @@
 {meta: title Don't Forbid Me}
 {meta: artist Pat Boone}
 {meta: composer Charles Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file dontforbidmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't forbid me to hold you tight 
@@ -33,3 +36,7 @@ Cause it's [G]cold so don't [D7]forbid my [G]desire
 {start_of_verse: Verse 5}
 [C]It's so [G]cold so don't [D7]forbid my [G]desire 
 {end_of_verse}
+
+
+
+

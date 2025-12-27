@@ -1,6 +1,9 @@
 {meta: title June Is as Cold as December}
 {meta: artist The Everly Brothers}
 {meta: composer Marge Barton}
+{meta: x_source classic-country}
+{meta: x_source_file juneisascoldasdecemberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]June is as [F]cold as [G7]December
@@ -34,3 +37,7 @@ But [F]June doesn't have a heart to offer [G7]anymore
 [C]June is as [F]cold as [G7]December
 [C]June is as [F]cold as [G7]December
 {end_of_verse}
+
+
+
+

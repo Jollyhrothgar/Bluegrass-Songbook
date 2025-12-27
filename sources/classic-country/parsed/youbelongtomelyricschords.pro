@@ -1,5 +1,8 @@
 {meta: title You Belong to Me}
 {meta: artist Patsy Cline}
+{meta: x_source classic-country}
+{meta: x_source_file youbelongtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]See the pyramids along the [Em]Nile
@@ -26,3 +29,6 @@ I'll be so alone [C7]without [F]you
 [F]Just [Fm]remember 'til you're [C]home [Am]again
 [D7]You [G7]belong to [C]me
 {end_of_verse}
+
+
+

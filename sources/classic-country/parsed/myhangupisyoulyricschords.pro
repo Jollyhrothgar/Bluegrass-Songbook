@@ -1,5 +1,8 @@
 {meta: title My Hang Up Is You}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file myhangupisyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody's [G]got one  baby [D7]my hang-up is [G]you
@@ -24,3 +27,5 @@ You're all I've got to hang on [C]to
 Everybody's [G]got one baby [D7]my hang-up is [G]you
 [C]Everybody's [G]got one baby [D7]my hang-up is [G]you
 {end_of_verse}
+
+

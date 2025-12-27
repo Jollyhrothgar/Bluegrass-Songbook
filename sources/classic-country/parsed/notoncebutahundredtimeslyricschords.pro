@@ -1,5 +1,8 @@
 {meta: title Not Once But a Hundred Times}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file notoncebutahundredtimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I went out with someone new
@@ -28,3 +31,6 @@ No not [G]once but a [D7]hundred [G][C]times
 So [G]each day I'll have you on my [C]mind
 No not [G]once but a [D7]hundred [G][C]t-imes
 {end_of_verse}
+
+
+

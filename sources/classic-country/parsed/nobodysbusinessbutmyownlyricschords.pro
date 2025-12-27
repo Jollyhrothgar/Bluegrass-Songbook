@@ -1,6 +1,9 @@
 {meta: title Nobody's Business But My Own}
 {meta: artist Jean Shepard}
 {meta: composer Irving Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file nobodysbusinessbutmyownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've got a gal you love on Sunday
@@ -69,3 +72,11 @@ Nobody's business nobody's [C]business
 {start_of_verse: Verse 6}
 Ain't nobody's [D7]business but our [G]own
 {end_of_verse}
+
+
+
+
+
+
+
+

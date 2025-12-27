@@ -1,6 +1,9 @@
 {meta: title Sick And Tired}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew, Christopher Kenner, Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file sickandtiredlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh baby whatcha gonna do
@@ -62,3 +65,15 @@ Before I go to work I even brush your teeth
 Oh [C]baby whatcha gonna [G]do
 I'm [D7]sick and tired [C]fooling around with [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

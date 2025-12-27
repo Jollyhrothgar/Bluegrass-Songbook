@@ -1,6 +1,9 @@
 {meta: title Blues Ain't Workin' On Me}
 {meta: artist Rhonda Vincent}
 {meta: composer George Teren and Tom Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file bluesaintworkinonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a new [F]expression on my [C]face I ain't [F]seen in quite a [C]while
@@ -35,3 +38,6 @@ No the [C]blues ain't [F]workin' on [G7]me those [F]old [C]memories
 And [G7]cause of you I'll [F]always be
 [G7]No the blues ain't workin' on [C]me [F]
 {end_of_verse}
+
+
+

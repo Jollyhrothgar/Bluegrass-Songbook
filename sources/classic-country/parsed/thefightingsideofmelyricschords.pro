@@ -1,5 +1,8 @@
 {meta: title The Fighting Side Of Me}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file thefightingsideofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear people talking bad
@@ -61,3 +64,14 @@ They're walking on the fighting side of [G]me
 And I don't mind 'em switching sides
 And standing up for things they believe [D7]in
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

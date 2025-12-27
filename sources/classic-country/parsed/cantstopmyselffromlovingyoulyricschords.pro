@@ -1,6 +1,9 @@
 {meta: title Can't Stop Myself From Loving You Lyrics and Chords}
 {meta: artist Patty Loveless}
 {meta: composer Kostas and Dean Folkword}
+{meta: x_source classic-country}
+{meta: x_source_file cantstopmyselffromlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Raindrops fall [D7]from the sky [C]teardrops fall [G]from my [E7]eyes
@@ -23,3 +26,5 @@ But your [A7]memory's all that I have left [D7]since you've gone away
 [Am]Can't stop [D7]myself from loving [G]you [E7]
 [Am]Can't stop [D7]myself from loving [G]you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Will You Miss Me When I'm Gone}
 {meta: artist Bob Wills}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file willyoumissmewhenimgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Will you miss me when I'm [C]gone
@@ -29,3 +32,6 @@ When you hair has turned to [C]white
 Maybe then you'll think of [C]me
 [D7]Will you miss me when I'm [G]gone
 {end_of_verse}
+
+
+

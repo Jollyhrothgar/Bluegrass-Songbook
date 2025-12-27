@@ -1,6 +1,9 @@
 {meta: title Always True}
 {meta: artist Vernon Oxford}
 {meta: composer David Allen Loggins}
+{meta: x_source classic-country}
+{meta: x_source_file alwaystruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes a woman will catch my eye
@@ -50,3 +53,9 @@ Just as [G7]long as we are [C]one
 Now we’ll always [F]be true to [C]her
 Just as [G7]long as we are [C][F]o--ne
 {end_of_verse}
+
+
+
+
+
+

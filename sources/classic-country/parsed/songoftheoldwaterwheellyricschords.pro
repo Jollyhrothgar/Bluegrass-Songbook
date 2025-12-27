@@ -1,6 +1,9 @@
 {meta: title Song Of The Old Water Wheel}
 {meta: artist Slim Whitman}
 {meta: composer Buddy Starcher}
+{meta: x_source classic-country}
+{meta: x_source_file songoftheoldwaterwheellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]By the valley road the lilacs are [C]growin'
@@ -39,3 +42,8 @@ Yodeling
 [A7]Lost in the song of the old water [D7]wheel
 [A7]The old water [D7]wheel the [A7]old water [D7]wheel
 {end_of_verse}
+
+
+
+
+

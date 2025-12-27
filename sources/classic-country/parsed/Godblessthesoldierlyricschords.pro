@@ -1,5 +1,8 @@
 {meta: title God Bless The Soldier}
 {meta: artist Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file Godblessthesoldierlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met a soldier on the [D7]base at Fort [G]Hood
@@ -29,3 +32,6 @@
 [G]To give their life for you
 [D7]God bless the [G]soldier
 {end_of_verse}
+
+
+

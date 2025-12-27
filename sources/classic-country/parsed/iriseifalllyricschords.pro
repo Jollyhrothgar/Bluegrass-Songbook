@@ -1,6 +1,9 @@
 {meta: title I Rise I Fall}
 {meta: artist Johnny Tillotson}
 {meta: composer Paul Hampton}
+{meta: x_source classic-country}
+{meta: x_source_file iriseifalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I rise I [Am]fall with [F]each little [G7]thing you [C]do
@@ -31,3 +34,7 @@ Since I'm [F]that much a [G7]part of [C]you
 {start_of_verse: Verse 5}
 Since I'm [F]that much a [G7]part of [C]you [Am]    [C]
 {end_of_verse}
+
+
+
+

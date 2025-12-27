@@ -1,5 +1,8 @@
 {meta: title I Believe In The Sunshine}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file ibelieveinthesunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lookie lookie I can see a [C]ray of sunshine [G]shinin'
@@ -36,3 +39,7 @@ Hey hey hey I feel it [C]hey hey hey I believe it
 {start_of_verse: Verse 5}
 (Sunshine [F]sun[G]shine sunshine [F]sun[G]shine)
 {end_of_verse}
+
+
+
+

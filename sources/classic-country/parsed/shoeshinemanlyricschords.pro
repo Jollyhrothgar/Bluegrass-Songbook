@@ -1,5 +1,8 @@
 {meta: title Shoeshine Man}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file shoeshinemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I met a man in Montgomery Alabama
@@ -45,3 +48,11 @@ I had a girl that helped me she had a lotta hoochy coochy ways
 {start_of_verse: Verse 2}
 And I heard him say
 {end_of_verse}
+
+
+
+
+
+
+
+

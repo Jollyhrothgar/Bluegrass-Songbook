@@ -1,6 +1,9 @@
 {meta: title Have A Little Faith}
 {meta: artist Statler Brother}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file havealittlefaithlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]God told Abraham to go to Canaan land
@@ -59,3 +62,10 @@ Just [A7]have a little [D7]faith and you'll [G]see
 Just [A7]have a little [D7]faith and you'll [G]see
 Just [A7]have a little [D7]faith and you'll [G]see
 {end_of_verse}
+
+
+
+
+
+
+

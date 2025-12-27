@@ -1,6 +1,9 @@
 {meta: title It's Time to Pay the Fiddler}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne and Walter Haynes}
+{meta: x_source classic-country}
+{meta: x_source_file itstimetopaythefiddlerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it's time to pay the fiddler
@@ -50,3 +53,9 @@ And today's the day the first installment's [C]due
 For the rest of all my days I'll [D7]wonder why
 The maker mismatched me and [G]you
 {end_of_verse}
+
+
+
+
+
+

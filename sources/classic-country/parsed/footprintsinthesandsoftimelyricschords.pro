@@ -1,6 +1,9 @@
 {meta: title Footprints In The Sands Of Time}
 {meta: artist Charley Pride}
 {meta: composer Jerry McBee}
+{meta: x_source classic-country}
+{meta: x_source_file footprintsinthesandsoftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The strange lonely [C]whistle of the [G]distant movin' train
@@ -36,3 +39,7 @@ Am I [C]looking for a [D7]dream I'll never [G]find
 Will [D7]I ever [G]be the [C]man I want to [G]be
 Or for[C]gotten footprints [G]in the [D7]sands of [G]time
 {end_of_verse}
+
+
+
+

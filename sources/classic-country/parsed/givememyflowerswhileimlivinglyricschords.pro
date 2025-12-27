@@ -1,6 +1,9 @@
 {meta: title Give Me My Flowers While I'm Living}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Louise Certain, Gladys Stacey, Elvin Bigger}
+{meta: x_source classic-country}
+{meta: x_source_file givememyflowerswhileimlivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In this world today while we're [G7]living
@@ -29,3 +32,6 @@
 [F]Please don't wait till I'm ready to be buried
 [C]And then slip some [G7]lilies in my [C]hand
 {end_of_verse}
+
+
+

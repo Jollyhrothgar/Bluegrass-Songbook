@@ -1,5 +1,8 @@
 {meta: title Stand By Me}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file standbymelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the storms of life are raging [F]stand by [C]me
@@ -28,3 +31,6 @@ When I'm growing old and feeble stand by [G7]me
 When my life [C]becomes a burden and I'm nearing chilly [F]Jordan
 O Thou [C]Lily of the [G7]Valley stand by [C]me  
 {end_of_verse}
+
+
+

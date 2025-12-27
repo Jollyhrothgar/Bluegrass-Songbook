@@ -1,6 +1,9 @@
 {meta: title Hawaiian Echoes Lyrics Chords}
 {meta: artist Webb Pierce}
 {meta: composer Owen Perry and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file hawaiianechoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight I hear Hawaiian [D7]Echoes calling [G]me
@@ -19,3 +22,5 @@
 {start_of_verse: Verse 3}
 repeat
 {end_of_verse}
+
+

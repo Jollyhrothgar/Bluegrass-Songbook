@@ -1,6 +1,9 @@
 {meta: title Heavenly Bodies}
 {meta: artist Earl Thomas Conley}
 {meta: composer Elaine Lifton, Glorida Nissenson, Lee Ritenour}
+{meta: x_source classic-country}
+{meta: x_source_file heavenlybodieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Way up in the sky [Am]moon and planets fly
@@ -33,3 +36,7 @@ Just [G]working on making your [D7]heavenly body all [G]mine
 {start_of_verse: Verse 4}
 Just working on making your [D7]heavenly bodies all [C]mi-[G]ne
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Stop And Take The Time}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file stopandtakethetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never realized how much I missed till I lost you
@@ -25,3 +28,6 @@ Some[G7]one who’ll love you as you are and stop to take the [C]time
 {start_of_verse: Verse 4}
 Some[G7]one who’ll love you as you are and stop to take the [C]time
 {end_of_verse}
+
+
+

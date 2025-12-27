@@ -1,6 +1,9 @@
 {meta: title If I Said You Had A Beautiful Body}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file ifisaidyouhadabeautifulbodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I [G7]said you had a beautiful body
@@ -64,3 +67,11 @@ Would you hold it against [C]me
 If I [G7]swore you were an angel
 Would you treat me like the devil to[C]night
 {end_of_verse}
+
+
+
+
+
+
+
+

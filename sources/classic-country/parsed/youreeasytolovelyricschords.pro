@@ -1,6 +1,9 @@
 {meta: title You're Easy To Love}
 {meta: artist Anne Murray}
 {meta: composer Dave Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file youreeasytolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's easy for me to be true [G7]depend on me
@@ -44,3 +47,8 @@ And here's another thing I'd like to [C7]say
 And [C]promise me you'll always [G7]stay so easy to [C]love
 And promise me you'll always [G7]stay so easy to [C]love
 {end_of_verse}
+
+
+
+
+

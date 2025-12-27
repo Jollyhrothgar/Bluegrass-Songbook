@@ -1,6 +1,9 @@
 {meta: title If I Didn't Have A Dime}
 {meta: artist Mickey Gilley}
 {meta: composer Bert Russell and Phil Medley}
+{meta: x_source classic-country}
+{meta: x_source_file ifididnthaveadimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I didn't have a dime and I didn't take the time
@@ -57,3 +60,10 @@ Ruby [D7]lips and golden hair
 If I [G]didn't have a dime 
 And I [D7]didn't take the time to play the [G]jukebox
 {end_of_verse}
+
+
+
+
+
+
+

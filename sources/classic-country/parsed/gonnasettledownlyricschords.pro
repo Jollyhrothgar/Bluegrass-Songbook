@@ -1,5 +1,8 @@
 {meta: title Gonna Settle Down}
 {meta: artist Del McCoury}
+{meta: x_source classic-country}
+{meta: x_source_file gonnasettledownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight I'm all alone no [C]one to call my [G]own
@@ -42,3 +45,8 @@ Back to the one I love so [D7]well
 Some[G]day she'll be my wife and [C]we'll settle down for [G]life
 For she's the one that [D7]means the world to [G]me
 {end_of_verse}
+
+
+
+
+

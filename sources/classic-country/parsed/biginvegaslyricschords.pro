@@ -1,6 +1,9 @@
 {meta: title Big In Vegas}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Terry Stafford}
+{meta: x_source classic-country}
+{meta: x_source_file biginvegaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was young I left the home and went [F]away  to [C]Vegas
@@ -27,3 +30,6 @@ They'll put my name [G7]up in lights where I play  and the lines out [F]in
 front will be long  [C]I'll [G7]get a standing ovation from the people [F]when 
 I start to sing my [C]song  [F]when I turn 'em on in [C]Vegas
 {end_of_verse}
+
+
+

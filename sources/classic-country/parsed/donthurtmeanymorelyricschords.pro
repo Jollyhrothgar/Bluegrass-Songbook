@@ -1,6 +1,9 @@
 {meta: title Don't Hurt Me Anymore}
 {meta: artist Ferlin Husky}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file donthurtmeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](Please don't hurt me any[C]more)
@@ -30,3 +33,7 @@ Don't make me wonder why I keep knocking on your [F]door
 {start_of_verse: Verse 5}
 [G7]Please don't hurt me any[C]more
 {end_of_verse}
+
+
+
+

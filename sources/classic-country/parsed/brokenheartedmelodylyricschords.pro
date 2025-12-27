@@ -1,6 +1,9 @@
 {meta: title Broken Hearted Melody}
 {meta: artist Dottie West}
 {meta: composer Hal David and Stoney Edwards}
+{meta: x_source classic-country}
+{meta: x_source_file brokenheartedmelodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Broken hearted melody [G7]once you were our song of [C]love
@@ -24,3 +27,5 @@
 [C]No more will you be [G7]a broken hearted [C]melody
 [G7]Broken hearted [C]melody
 {end_of_verse}
+
+

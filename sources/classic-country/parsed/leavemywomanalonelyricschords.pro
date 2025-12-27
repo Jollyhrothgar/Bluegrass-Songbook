@@ -1,6 +1,9 @@
 {meta: title Leave My Woman Alone}
 {meta: artist The Everly Brothers}
 {meta: composer Ray Charles}
+{meta: x_source classic-country}
+{meta: x_source_file leavemywomanalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you don't want you don't have to get into trouble
@@ -47,3 +50,10 @@ If you don't want you don't have to get into trouble
 [G]If you don't want you don't have to get into trouble
 [C]If you don't want you don't have to get into [G]trouble
 {end_of_verse}
+
+
+
+
+
+
+

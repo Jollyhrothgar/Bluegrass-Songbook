@@ -1,5 +1,8 @@
 {meta: title Throughout All Time}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file throughoutalltimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I still see you walking silently 
@@ -61,3 +64,10 @@ You still [C]haunt the deepness of my [G]memo[Em]ry
 I guess you [D7]will throughout all [G]time
 I guess you [D7]will throughout all [G]time
 {end_of_verse}
+
+
+
+
+
+
+

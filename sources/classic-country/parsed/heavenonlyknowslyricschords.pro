@@ -1,6 +1,9 @@
 {meta: title Heaven Only Knows}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file heavenonlyknowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every night it's the same
@@ -64,3 +67,8 @@ How love's made a fool of [C]me
 [F]I guess that's how it's meant to be [C]but 
 [G7]Heaven only [C]knows
 {end_of_verse}
+
+
+
+
+

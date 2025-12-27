@@ -1,5 +1,8 @@
 {meta: title Rose Marie}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file rosemarielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh Rose my [G7]Rose [C]Marie 
@@ -23,3 +26,6 @@ To [F]rule me my Rose [C][G7]Marie
 Of [F]all the queens that ever lived I'd choose [C]you 
 To [F]rule me my Rose [C][G7]Marie 
 {end_of_verse}
+
+
+

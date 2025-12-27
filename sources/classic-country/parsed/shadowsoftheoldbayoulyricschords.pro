@@ -1,5 +1,8 @@
 {meta: title Shadows Of The Old Bayou}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file shadowsoftheoldbayoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Strolling in the evening when the moon’s hanging low
@@ -42,3 +45,8 @@ Just thinking wishing darling you [C7]were here
 For my [F]heart it misses it misses sweet [C]you
 I am so [G7]lonesome in the shadows of the old [C]bayou
 {end_of_verse}
+
+
+
+
+

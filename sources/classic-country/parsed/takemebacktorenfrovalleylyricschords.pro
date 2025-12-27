@@ -1,6 +1,9 @@
 {meta: title Take Me Back To Renfro Valley}
 {meta: artist Mac Wiseman}
 {meta: composer John Lair}
+{meta: x_source classic-country}
+{meta: x_source_file takemebacktorenfrovalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born in Renfro Valley
@@ -48,3 +51,9 @@ And the dogwood blossom [G7]blows
 Things have changed in Renfro Valley
 [G7]Since the days of long [C]ago
 {end_of_verse}
+
+
+
+
+
+

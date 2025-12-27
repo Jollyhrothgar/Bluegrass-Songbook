@@ -1,6 +1,9 @@
 {meta: title Life Or Love}
 {meta: artist Alan Jackson}
 {meta: composer Harley Allen and Gary Cotton}
+{meta: x_source classic-country}
+{meta: x_source_file lifeorlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I tried to [D7]stay on the [Em]straight and narrow 
@@ -42,3 +45,8 @@ I keep [C]hangin' [G]tough I [C]ain't had [G]enough
 I [C]ain't givin' [G]up on [D7]life or [G]love 
 [C]Life or [G]love
 {end_of_verse}
+
+
+
+
+

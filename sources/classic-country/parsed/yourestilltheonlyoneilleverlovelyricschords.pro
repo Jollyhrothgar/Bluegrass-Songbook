@@ -1,5 +1,8 @@
 {meta: title You’re Still The Only One I’ll Ever Love}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file yourestilltheonlyoneilleverlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Time has passed and things [C]have [G]changed 
@@ -28,3 +31,6 @@ Treasured [D7]memories of treasured [G]times
 Your lips are still the [C]lips I'm dreaming [G]of 
 And you're still the only [D7]one I'll ever [G]love
 {end_of_verse}
+
+
+

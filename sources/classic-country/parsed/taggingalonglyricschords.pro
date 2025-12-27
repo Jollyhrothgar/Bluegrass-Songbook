@@ -1,5 +1,8 @@
 {meta: title Tagging Along}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file taggingalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm a-gonna tag along with Jesus
@@ -95,3 +98,21 @@ I'm [D7]a-gonna keep a-tagging [G]along
 Well if I keep-a telling the story
 Ain't [A7]nothing gonna ever go [D7]wrong
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

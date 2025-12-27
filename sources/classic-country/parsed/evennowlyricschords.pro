@@ -1,6 +1,9 @@
 {meta: title Even Now}
 {meta: artist Conway Twitty}
 {meta: composer Glenn Warren and Worley Max McKinney}
+{meta: x_source classic-country}
+{meta: x_source_file evennowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Even now  your memory takes my breath [F]away
@@ -34,3 +37,6 @@
 [Am]I'll make it [G7]up to you somehow  I need you [F]here
 [G7]And I guess that makes us even [C]now
 {end_of_verse}
+
+
+

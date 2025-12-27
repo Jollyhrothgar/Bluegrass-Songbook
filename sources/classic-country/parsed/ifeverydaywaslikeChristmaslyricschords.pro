@@ -1,6 +1,9 @@
 {meta: title If Every Day Was Like Christmas}
 {meta: artist Elvis Presley}
 {meta: composer Red West}
+{meta: x_source classic-country}
+{meta: x_source_file ifeverydaywaslikeChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear the [Bm]bells saying [C]Christ[D7]mas is [G]here
@@ -28,3 +31,6 @@ Why can't that feeling [B7]go on endless[E7]ly
 For if [C]every[D7]day could be [G]just like [Em]Christmas
 What a [C]wonderful [D7]world this would [G]be
 {end_of_verse}
+
+
+

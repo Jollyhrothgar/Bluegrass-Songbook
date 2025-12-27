@@ -1,6 +1,9 @@
 {meta: title Even If It's True}
 {meta: artist Ferlin Husky}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file evenifitstruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I refuse to hear the [G7]things they say a[C]bout you
@@ -26,3 +29,6 @@ Oh the [G]talk could never [G7]make me be a[C]shamed of you
 {start_of_verse: Verse 3}
 [D7]Even if it's [G]true
 {end_of_verse}
+
+
+

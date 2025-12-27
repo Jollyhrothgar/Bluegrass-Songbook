@@ -1,6 +1,9 @@
 {meta: title Oh What A Feeling}
 {meta: artist Everly Brothers}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file ohwhatafeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It  [C]must be [G][E7]love
@@ -32,3 +35,7 @@ You're letters [G7]I shall [C]keep
 [G]It  [C]must be [G][E7]love
 [D7]Oh what a [G]feeling
 {end_of_verse}
+
+
+
+

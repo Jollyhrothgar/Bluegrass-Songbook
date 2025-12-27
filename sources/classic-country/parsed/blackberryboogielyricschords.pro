@@ -1,5 +1,8 @@
 {meta: title Blackberry Boogie}
 {meta: artist Tennessee Ernie Ford}
+{meta: x_source classic-country}
+{meta: x_source_file blackberryboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Along about [C]sunup every [G]day
@@ -60,3 +63,11 @@ And said let's go to [D7]my house and bake a [G]pie
 I'll [C]be back little gal
 When it's [D7]blackberry pickin' [G]time
 {end_of_verse}
+
+
+
+
+
+
+
+

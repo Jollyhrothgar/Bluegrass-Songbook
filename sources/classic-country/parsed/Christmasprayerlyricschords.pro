@@ -1,5 +1,8 @@
 {meta: title Christmas Prayer}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear Lord I want [E7]to thank [F]you
@@ -28,3 +31,6 @@
 [F]And so my deepest [C]thanks my [F]Lord
 [G7]Upon this Christmas [C]night
 {end_of_verse}
+
+
+

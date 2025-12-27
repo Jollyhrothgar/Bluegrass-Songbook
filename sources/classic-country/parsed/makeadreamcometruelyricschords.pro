@@ -1,6 +1,9 @@
 {meta: title Make A Dream Come True}
 {meta: artist Crystal Gayle}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file makeadreamcometruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I try as hard as I can 
@@ -31,3 +34,6 @@ And you're [C]glowin' just knowin'
 That our love is good as [G7]new
 Then maybe I can make a dream come [C]true
 {end_of_verse}
+
+
+

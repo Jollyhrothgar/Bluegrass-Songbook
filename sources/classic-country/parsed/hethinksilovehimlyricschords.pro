@@ -1,6 +1,9 @@
 {meta: title He Thinks I Love Him}
 {meta: artist Tammy Wynette}
 {meta: composer Carmol Taylor and Quinton Claunch}
+{meta: x_source classic-country}
+{meta: x_source_file hethinksilovehimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He thinks he owned my [D7]body heart and [G]soul
@@ -29,3 +32,6 @@ Cause most of [G]all he thinks I [D7]love him and I [G]do [C]
 {start_of_verse: Verse 4}
 Cause most of [G]all he thinks I [D7]love him and I [G]do
 {end_of_verse}
+
+
+

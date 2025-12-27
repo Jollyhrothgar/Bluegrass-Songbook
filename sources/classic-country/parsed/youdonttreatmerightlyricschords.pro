@@ -1,6 +1,9 @@
 {meta: title You Don't Treat Me Right}
 {meta: artist Faron Young}
 {meta: composer Kent Westberry and Benny Joy}
+{meta: x_source classic-country}
+{meta: x_source_file youdonttreatmerightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm the [G7]abused and [C]you're the [G7]abuser
@@ -36,3 +39,7 @@
 [F]I am the [C]fool and you are the [Am]faker
 [F]You don't treat me right honey [G7]baby and that's so [C]wrong
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Three Little Pennies}
 {meta: artist Doug Stone}
 {meta: composer Kim Tribble and Tim Bays}
+{meta: x_source classic-country}
+{meta: x_source_file threelittlepennieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There was an old blind man who [C]stood on the [G]corner down[C]town[G]  [Am]   [D7]
@@ -46,3 +49,8 @@ But you [C]gave them [G]freely so I [Am]gave 'em [D7]back
 [G]Three little [D7]pennies is not [C]much of a [G]gift
 Your [Am]bike is [G]outside because [D7]you've learned how to [G]give
 {end_of_verse}
+
+
+
+
+

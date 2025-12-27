@@ -1,5 +1,8 @@
 {meta: title From Now On}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file fromnowonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately when you kiss me your [D7]lips are just [G]lukewarm
@@ -43,3 +46,10 @@ So from now on when you're lovin' on me
 Yeah from now on when you're lovin' on me
 [D7]You better act like you're wantin' [G]too
 {end_of_verse}
+
+
+
+
+
+
+

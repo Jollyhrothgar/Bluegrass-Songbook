@@ -1,6 +1,9 @@
 {meta: title Hide Thou Me}
 {meta: artist The Oak Ridge Boys}
 {meta: composer L.R. Tolbert and Theo Harris}
+{meta: x_source classic-country}
+{meta: x_source_file hidethoumelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I [G7]feel [C]discouraged
@@ -19,3 +22,4 @@ Through [C]this old [G7]world
 I've [C]wande[C7]red my Lord so [F]far oh so far so far from [E7]thee
 Then I [F]cried to the rock of [C]a-[A7]ges [D7]hide [G7]thou [C]me
 {end_of_verse}
+

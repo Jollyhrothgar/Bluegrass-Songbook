@@ -1,6 +1,9 @@
 {meta: title Let's Just Be Lovers And Leave Love Alone}
 {meta: artist Billy Walker}
 {meta: composer Chuck Howard}
+{meta: x_source classic-country}
+{meta: x_source_file letsjustbeloversandleavelovealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We can’t [C]say  [D7]that love will [G]work
@@ -26,3 +29,6 @@ So let’s just be [C]lovers  and [D7]leave love [G]alone
 {start_of_verse: Verse 4}
 So let’s just be [C]lovers  and [D7]leave love [G]alone
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title They Call the Wind Mariah}
 {meta: artist Jim Ed Brown}
 {meta: composer Alan J. Lerner and Frederick Loewe}
+{meta: x_source classic-country}
+{meta: x_source_file theycallthewindmariahlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Way out west they [Am]have a name for [C]rain and wind and [Am]fire
@@ -37,3 +40,8 @@ Ma[C]riah blow my [Am]love to me I [F]need a [G7]her beside [C]me
 [Am]Mariah  [Em]Mariah
 They [F]call the [G7]wind M[C]ariah
 {end_of_verse}
+
+
+
+
+

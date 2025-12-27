@@ -1,6 +1,9 @@
 {meta: title Somewhere Other Than The Night}
 {meta: artist Garth Brooks}
 {meta: composer Kent Blazy and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file somewhereotherthanthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]He could see the storm clouds [F]rollin' across the [C]hill
@@ -42,3 +45,8 @@ When their [C]eyes met they both began to [G7]smile
 [Am]To know she's needed she [A7]needs to be held [F]tight
 [Dm]Somewhere [G7]other than the [A#7]night[F]   [G7]   [C]
 {end_of_verse}
+
+
+
+
+

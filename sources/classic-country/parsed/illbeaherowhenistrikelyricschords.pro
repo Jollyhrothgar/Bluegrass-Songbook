@@ -1,6 +1,9 @@
 {meta: title I'll Be a Hero When I Strike}
 {meta: artist Merle Haggard}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file illbeaherowhenistrikelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All because I walk a different street
@@ -73,3 +76,17 @@ There ain't nothin' he ain't got
 And not helloed by some I meet
 [G7]That don't mean that what I do is [C]right
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

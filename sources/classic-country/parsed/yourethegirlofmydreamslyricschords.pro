@@ -1,6 +1,9 @@
 {meta: title You're The Girl Of My Dreams}
 {meta: artist Mac Wiseman}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file yourethegirlofmydreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I first met you down in lover's [G7]lane
@@ -42,3 +45,9 @@ But it [G7]seems that my dreams will never come [C]true
 For you're the girl of my [F]dreams
 But it [G7]seems that my dreams will never come [C]true
 {end_of_verse}
+
+
+
+
+
+

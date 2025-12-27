@@ -1,6 +1,9 @@
 {meta: title Little Left Of Center}
 {meta: artist Randy Travis}
 {meta: composer Billy Henderson and Steven Jones}
+{meta: x_source classic-country}
+{meta: x_source_file littleleftofcenterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walk in the [Am]rain and I [F]whistle a [G7]tune
@@ -34,3 +37,7 @@ A little [F]left of center [C]just like [F]my [G7]crazy [C]heart
 [Am]When cupid [F]aims his [C]arrow it's [F]right [G7]on the [Am]mark
 A little [F]left of center [C]just like [F]my [G7]crazy [C]heart
 {end_of_verse}
+
+
+
+

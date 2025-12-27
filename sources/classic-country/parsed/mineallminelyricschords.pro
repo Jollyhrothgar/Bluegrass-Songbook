@@ -1,6 +1,9 @@
 {meta: title Mine All Mine}
 {meta: artist Bob Wills}
 {meta: composer Eddie Van Halen, Lee White,}
+{meta: x_source classic-country}
+{meta: x_source_file mineallminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you see my baby walking down the street
@@ -50,3 +53,9 @@ And [B7]all the clothes that go with [Em]that
 [G]Boy you may want her you can’t have her
 She’s mine [D7]all [G]mine
 {end_of_verse}
+
+
+
+
+
+

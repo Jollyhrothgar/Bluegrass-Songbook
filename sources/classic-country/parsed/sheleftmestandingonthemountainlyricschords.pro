@@ -1,6 +1,9 @@
 {meta: title She Left Me Standing On The Mountain}
 {meta: artist Jim and Jesse}
 {meta: composer Alton Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file sheleftmestandingonthemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling will you marry me I asked a maiden fair
@@ -33,3 +36,7 @@ She left me [C]standing [D7]way up [G]there
 {start_of_verse: Verse 5}
 She left me [C]standing [D7]way up [G]there
 {end_of_verse}
+
+
+
+

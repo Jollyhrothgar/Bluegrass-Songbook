@@ -1,6 +1,9 @@
 {meta: title Hide Me Rock Of Ages}
 {meta: artist Don Gibson}
 {meta: composer Brantley C. George}
+{meta: x_source classic-country}
+{meta: x_source_file hidemerockofageslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh Thou blessed rock of ages 
@@ -29,3 +32,6 @@ Until Thy blessed face I [G7]see
 [C]When the storms around me [F]rages
 [C]Rock of [G7]ages hide Thou [C]me
 {end_of_verse}
+
+
+

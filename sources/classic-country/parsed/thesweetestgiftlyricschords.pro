@@ -1,6 +1,9 @@
 {meta: title The Sweetest Gift}
 {meta: artist Emmylou Harris and Linda Ronstadt}
 {meta: composer James B. Coats}
+{meta: x_source classic-country}
+{meta: x_source_file thesweetestgiftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One day a mother came to a prison
@@ -36,3 +39,7 @@ She brought no [G7]silver (brought no gold) no pomp or [C]style (none to see)
 It was a halo (halo bright) sent down from [F]heaven (heaven's light) 
 The sweetest [C]gift a [G7]mother's [C]smile     
 {end_of_verse}
+
+
+
+

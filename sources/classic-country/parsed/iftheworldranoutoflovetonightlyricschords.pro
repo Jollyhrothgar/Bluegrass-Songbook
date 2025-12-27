@@ -1,6 +1,9 @@
 {meta: title If The World Ran Out Of Love Tonight}
 {meta: artist Jim Ed Brown and Helen Cornelius}
 {meta: composer Michael Garvin, Blake Mevis, Steve Wilson, Kelly Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file iftheworldranoutoflovetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If the world ran out [D7]of love [G]tonight
@@ -48,3 +51,9 @@ Let's [C]make enough love to last [D7]forever
 You and me [G]let's pretend [D7]that the world ran out of [C]love
 Let's [G]pretend that the world ran out [D7]of love [C]tonight
 {end_of_verse}
+
+
+
+
+
+

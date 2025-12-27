@@ -1,6 +1,9 @@
 {meta: title I Wanna Come Back To You}
 {meta: artist Crystal Gayle}
 {meta: composer Johnny Christopher and Sam Hogin}
+{meta: x_source classic-country}
+{meta: x_source_file iwannacomebacktoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've known about love for a [G7]long long [C]time 
@@ -33,3 +36,6 @@ I [F]wanna come back to you
 Do you [Em]wanna come back to [A7]me
 [Dm]Remember how [Em]good it used to [F]be [C]
 {end_of_verse}
+
+
+

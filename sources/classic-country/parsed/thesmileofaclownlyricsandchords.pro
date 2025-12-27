@@ -1,5 +1,8 @@
 {meta: title The Smile of a Clown}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file thesmileofaclownlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pain big pain keeps right on [F]hurting [C]me 
@@ -32,3 +35,6 @@ You left me lonely only [C][F]yesterday
 [F]I looked in the mirror dear  saw a face and a [C]tear 
 [G7]Wearing the smile of a [C]clown
 {end_of_verse}
+
+
+

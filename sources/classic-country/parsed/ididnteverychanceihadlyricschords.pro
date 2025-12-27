@@ -1,5 +1,8 @@
 {meta: title I Didn't Every Chance I Had}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file ididnteverychanceihadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I watched her walk down the isle a pretty bride to [F]be
@@ -33,3 +36,7 @@ Is I [C]didn’t  [G7]every chance I [C]had
 Yes he’ll be holding her tonight  but [F]what hurts me so [D7]bad
 Is I [C]didn’t  [G7]every chance I [C]had
 {end_of_verse}
+
+
+
+

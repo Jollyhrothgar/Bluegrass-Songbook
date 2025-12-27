@@ -1,6 +1,9 @@
 {meta: title I Cannot Find The Way Alone}
 {meta: artist Jimmie Davis}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file icannotfindthewayalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I journey through this vale of [F]sorrow
@@ -29,3 +32,6 @@ Dear [C]Lord look down from Thy [G7]throne
 And [C]make Thy Light to shine about [F]me 
 For [C]I cannot find the [G7]way [C]alone
 {end_of_verse}
+
+
+

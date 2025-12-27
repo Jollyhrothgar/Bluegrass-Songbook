@@ -1,6 +1,9 @@
 {meta: title Don't Worry 'Bout The Mule}
 {meta: artist Carl Smith}
 {meta: composer Glen Barber}
+{meta: x_source classic-country}
+{meta: x_source_file dontworryboutthemulelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you said you wouldn't leave me 
@@ -49,3 +52,8 @@ I can make it baby and I ain't [C]bragging
 If you think I'm going to cry your feet are [F]draggin'
 Don't [G7]worry 'bout the mule just load the [C]wagon
 {end_of_verse}
+
+
+
+
+

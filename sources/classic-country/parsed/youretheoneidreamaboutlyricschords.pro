@@ -1,6 +1,9 @@
 {meta: title You're The One I Dream About}
 {meta: artist Reba McEntire}
 {meta: composer Pamela Brown and Teresa Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file youretheoneidreamaboutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I caught you smiling at me again out of the [C]corner of my eye
@@ -39,3 +42,8 @@ And [G]you're the one I think about when [C]he turns out the light
 Now it's [Am]so hard to live without your [Bm]love to hold me [C]tight
 Oh [Am]how I [Bm]wish that [C]he was [D7]you to[G]night
 {end_of_verse}
+
+
+
+
+

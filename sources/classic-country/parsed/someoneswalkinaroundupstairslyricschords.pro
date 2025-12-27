@@ -1,6 +1,9 @@
 {meta: title Someone's Walkin' Around Upstairs}
 {meta: artist George Strait}
 {meta: composer David Anthony and Paul Maloy}
+{meta: x_source classic-country}
+{meta: x_source_file someoneswalkinaroundupstairslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someone's walkin' round upstairs I can [F]hear him
@@ -41,3 +44,8 @@ And I can't get it out of my [C]head
 [G7]Someone's walkin' around upstairs 
 And I can't get it out of my [C]head
 {end_of_verse}
+
+
+
+
+

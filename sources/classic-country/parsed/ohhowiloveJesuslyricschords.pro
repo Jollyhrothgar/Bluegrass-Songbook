@@ -1,6 +1,9 @@
 {meta: title Oh How I Love Jesus}
 {meta: artist Randy Travis}
 {meta: composer Thomas Anthony Whitfield}
+{meta: x_source classic-country}
+{meta: x_source_file ohhowiloveJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There is a name I love to hear
@@ -48,3 +51,9 @@ Be[C]cause He [D7]first loved [G]me
 Oh how I love Jesus
 Be[C]cause He [D7]first loved [G]me
 {end_of_verse}
+
+
+
+
+
+

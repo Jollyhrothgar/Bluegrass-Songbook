@@ -1,6 +1,9 @@
 {meta: title Years After You}
 {meta: artist John Conlee}
 {meta: composer Thom Schuyler}
+{meta: x_source classic-country}
+{meta: x_source_file yearsafteryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't [F]know if I can [C]explain it 
@@ -67,3 +70,10 @@ These [G7]years after [C]you
 I'm still [G7]tryin' to make it [F]through 
 These [G7]years after [C]you
 {end_of_verse}
+
+
+
+
+
+
+

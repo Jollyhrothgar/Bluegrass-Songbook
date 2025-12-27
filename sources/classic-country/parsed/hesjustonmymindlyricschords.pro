@@ -1,6 +1,9 @@
 {meta: title He's Just On My Mind}
 {meta: artist Leona Williams}
 {meta: composer Justin Trevino, Ron Williams, Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file hesjustonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just because you see me [C7]smile don’t think I’m [F]happy
@@ -29,3 +32,6 @@ But at [D7]least I’ve got him with me one more [G7]time
 So [C]excuse me for a [C7]moment but he’s [F]made his way back in
 I’m [C]alright he’s just [G7]on my mind [C]again
 {end_of_verse}
+
+
+

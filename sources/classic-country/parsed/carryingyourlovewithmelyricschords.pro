@@ -1,6 +1,9 @@
 {meta: title Carrying Your Love With Me}
 {meta: artist George Strait}
 {meta: composer Steve Bogard and Jeff Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file carryingyourlovewithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Baby all I got is this beat up leather [G]bag
@@ -63,3 +66,11 @@ Carrying your [G]love with me
 [C]I'll be movin' with the good Lord's [D7]speed
 Carrying your [G]love with me
 {end_of_verse}
+
+
+
+
+
+
+
+

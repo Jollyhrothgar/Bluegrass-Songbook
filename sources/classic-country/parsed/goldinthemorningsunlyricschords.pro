@@ -1,6 +1,9 @@
 {meta: title Gold In The Morning Sun}
 {meta: artist Sonny James}
 {meta: composer Edgar Clayton and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file goldinthemorningsunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Call me a happy [F]boy in [C]love heartaches have I [F]none
@@ -40,3 +43,8 @@ For [G7]like the dove and [C]his true love
 [F]Gold in the [G7]morning [C]sun
 [F]Gold in the [G7]morning [C]sun
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Live Until I Die}
 {meta: artist Clay Walker}
+{meta: x_source classic-country}
+{meta: x_source_file liveuntilidielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Skippin' rocks [G7]skippin' rope 
@@ -49,3 +52,9 @@ I don't have to [F]beg [G7]steal or [Am]borrow
 I don't have to [F]beg [G7]steal or [Am]borrow oh oh
 [G7]I just wanna [F]live un[G7]til I [C]die
 {end_of_verse}
+
+
+
+
+
+

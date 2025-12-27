@@ -1,6 +1,9 @@
 {meta: title My Heart Is in Your Hands}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Antoine Domino}
+{meta: x_source classic-country}
+{meta: x_source_file myheartisinyourhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I had it all planed just for [C]you
@@ -43,3 +46,8 @@ You broke my planes in [G]two
 What can I [D7]do
 When something wrong with [G]you
 {end_of_verse}
+
+
+
+
+

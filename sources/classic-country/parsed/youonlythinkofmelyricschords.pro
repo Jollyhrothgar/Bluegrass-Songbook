@@ -1,6 +1,9 @@
 {meta: title You Only Think Of Me}
 {meta: artist Mel Tillis}
 {meta: composer Ben Weisman and Sid Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file youonlythinkofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You only think of me when you're [D7]lonely
@@ -27,3 +30,6 @@
 {start_of_verse: Verse 4}
 [Dm]Yes I'm lonely thinking [G7]bout you all the [C]time
 {end_of_verse}
+
+
+

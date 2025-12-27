@@ -1,5 +1,8 @@
 {meta: title One For The Money}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file oneforthemoneylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One for the money [C]two for the show
@@ -35,3 +38,7 @@ You've [D7]played your little game so clever[G]ly
 First you took my money [C]then you made me go
 You [D7]showed me up and made a fool of [G]me
 {end_of_verse}
+
+
+
+

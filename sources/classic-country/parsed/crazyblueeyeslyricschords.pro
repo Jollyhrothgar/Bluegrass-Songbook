@@ -1,6 +1,9 @@
 {meta: title Crazy Blue Eyes}
 {meta: artist Lacy J. Dalton}
 {meta: composer Jill Croston and Mary McFadden}
+{meta: x_source classic-country}
+{meta: x_source_file crazyblueeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Momma I always love losers
@@ -49,3 +52,9 @@ And I'll [C]live till I die [G]believing the lie
 Cause I [D7]love those crazy blue [G]eyes
 [D7]Crazy blue [G]eyes
 {end_of_verse}
+
+
+
+
+
+

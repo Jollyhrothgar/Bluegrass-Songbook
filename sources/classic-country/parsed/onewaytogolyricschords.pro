@@ -1,6 +1,9 @@
 {meta: title One Way To Go}
 {meta: artist Wynn Stewart}
 {meta: composer Bobby Austin and Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file onewaytogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s a long long way to the [G7]top of the [C]stairs
@@ -22,3 +25,5 @@ And I can’t turn [C]around now there’s [G7]just one way to [C]go
 [C]I won’t live I can’t live [F]without you I know
 And I can’t turn [C]around now there’s [G7]just one way to [C]go
 {end_of_verse}
+
+

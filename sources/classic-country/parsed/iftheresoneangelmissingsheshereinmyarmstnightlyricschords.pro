@@ -1,5 +1,8 @@
 {meta: title If There's One Angel Missing She's Here in My Arms Tonight}
 {meta: artist Billy Parker}
+{meta: x_source classic-country}
+{meta: x_source_file iftheresoneangelmissingsheshereinmyarmstnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I've never questioned when [C7]things don't seem [F]right
@@ -29,3 +32,7 @@ If there's one angel [C]missing [G7]she's here in my [C]arms [C7]tonight
 {start_of_verse: Verse 4}
 Thank You Lord
 {end_of_verse}
+
+
+
+

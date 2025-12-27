@@ -1,5 +1,8 @@
 {meta: title The Tramp on the Street}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file thetramponthestreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Only a tramp was Lazarus sad [F]fate
@@ -35,3 +38,7 @@ For a place to [G7]come in or bread from your [C]store
 Would you welcome Him in or turn Him [F]away 
 Then the God's would [C]deny you on the [G7]Great Judgment [C]Day 
 {end_of_verse}
+
+
+
+

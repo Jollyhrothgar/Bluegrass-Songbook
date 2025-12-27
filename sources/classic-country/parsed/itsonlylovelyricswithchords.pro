@@ -1,6 +1,9 @@
 {meta: title It's Only Love}
 {meta: artist Ray Price}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file itsonlylovelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I don't act my[C]self [F]when I'm [D7]around you
@@ -23,3 +26,5 @@ At [A7]least that's what you [D7]say
 Cause it's only love it'll go [G]away
 [D7]It's only love it'll go [G]away
 {end_of_verse}
+
+

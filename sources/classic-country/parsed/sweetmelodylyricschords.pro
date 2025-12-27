@@ -1,4 +1,7 @@
 {meta: artist Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file sweetmelodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sweet melody I love you 
@@ -27,3 +30,6 @@ You've [C]whistled me [G7]by some [C]graveyards
 [F]Sweet melody I've [C]got to say 
 Sweet [G7]melody I love [C]you
 {end_of_verse}
+
+
+

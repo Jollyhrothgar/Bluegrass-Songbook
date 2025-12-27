@@ -1,6 +1,9 @@
 {meta: title There Lies The Difference}
 {meta: artist Kenny Rogers}
 {meta: composer Steve Dorff and Pat Bunch}
+{meta: x_source classic-country}
+{meta: x_source_file thereliesthedifferencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't have to go out tonight
@@ -43,3 +46,9 @@ And [A7]there lies the [D7]difference between [C]now and what [D7]used to [Em]be
 {start_of_verse: Verse 7}
 And [A7]there lies the [D7]difference between [C]now and what [D7]used to [G]be
 {end_of_verse}
+
+
+
+
+
+

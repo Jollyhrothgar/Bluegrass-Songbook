@@ -1,6 +1,9 @@
 {meta: title Virginia}
 {meta: artist Jean Shepard}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file virginialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He came out here [G7]lookin' for [C]somethin' a little bit [G7]different
@@ -24,3 +27,5 @@ Cause he [C]loves being [F]close to [C]Virgin[Am]ia
 Oh [F]Virginia you have [G7]taken my [Am]man
 You [F]lucky girl [C]Virginia you have [G7]taken my [F]man[C]
 {end_of_verse}
+
+

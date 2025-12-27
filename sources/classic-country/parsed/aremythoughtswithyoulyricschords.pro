@@ -1,6 +1,9 @@
 {meta: title Are My Thoughts With You}
 {meta: artist Kenny Rogers}
 {meta: composer Mickey Newbury}
+{meta: x_source classic-country}
+{meta: x_source_file aremythoughtswithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna [D7]plant me some [G]seed [Bm]   [Em]    [G]grow me an [C]ocean[Em]
@@ -41,3 +44,7 @@ My thoughts with [G]you babe[Bm]
 [Am]Since you went [D7]away babe
 I ain't been thinking too [G]straight babe[C]  [D7]
 {end_of_verse}
+
+
+
+

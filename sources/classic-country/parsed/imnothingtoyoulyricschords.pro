@@ -1,5 +1,8 @@
 {meta: title I'm Nothing To You}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file imnothingtoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sacrifice is all I have ever [D7]done
@@ -28,3 +31,6 @@
 [G]But a heart like mine won’t ever be set [C]free
 [D7]While I’m nothing to you and you’re everything to [G]me
 {end_of_verse}
+
+
+

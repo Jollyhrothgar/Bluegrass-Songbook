@@ -1,6 +1,9 @@
 {meta: title Unfaithful One}
 {meta: artist Ernest Tubb}
 {meta: composer J.M. Lyne}
+{meta: x_source classic-country}
+{meta: x_source_file unfaithfulonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Unfaithful one  your tears [F]are [C]falling
@@ -29,3 +32,6 @@ Like broken hearts its come [G7]undone
 A million [C]tears can [F]now rebuild [C]it
 Go on and cry [G7]unfaithful [C]one
 {end_of_verse}
+
+
+

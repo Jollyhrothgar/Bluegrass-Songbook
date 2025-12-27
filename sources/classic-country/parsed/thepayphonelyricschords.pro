@@ -1,6 +1,9 @@
 {meta: title The Pay Phone}
 {meta: artist Bob Luman}
 {meta: composer Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file thepayphonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Money drops into a payphone at the airport in LA
@@ -36,3 +39,7 @@ The [G7]phone rings in an apartment across [C]town
 A young man's voice said hello she said Jack it's Helen
 I [G7]can't see you tonight he's back in [C]town    
 {end_of_verse}
+
+
+
+

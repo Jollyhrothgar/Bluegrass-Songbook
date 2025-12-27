@@ -1,6 +1,9 @@
 {meta: title I Ran Out Of Time}
 {meta: artist Billy Crash Craddock}
 {meta: composer Dale Morris}
+{meta: x_source classic-country}
+{meta: x_source_file iranoutoftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wanted an education just to [F]finish high [C]school
@@ -27,3 +30,6 @@ You know I wanted so many things Lord but I just [G7]ran out of [C]time
 [G7]And as I [C]sit here on this bridge Lord it's so [F]dark I feel [C]blind
 You know I wanted so many things Lord but I just [G7]ran out of [F]tim[C]e
 {end_of_verse}
+
+
+

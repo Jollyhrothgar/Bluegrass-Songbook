@@ -1,5 +1,8 @@
 {meta: title I'm Looking For My Mind}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file imlookingformymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I lost my mind the day [C]you said [G]goodbye
@@ -26,3 +29,6 @@
 Tag:
 [C]It's not [G]you I want I'm [D7]looking for my [G]mind
 {end_of_verse}
+
+
+

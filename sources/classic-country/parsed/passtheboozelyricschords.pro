@@ -1,5 +1,8 @@
 {meta: title Pass The Booze}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file passtheboozelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Been my friends all day it's no good I'm still [D7]lonely 
@@ -28,3 +31,6 @@ And take my address down before I forget [G]it
 I've got a feeling someone's gonna have to [C]take me home this [Am]time 
 Cause I'm [D7]gonna sit here till I get her off of my [G]mind 
 {end_of_verse}
+
+
+

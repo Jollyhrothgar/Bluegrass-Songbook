@@ -1,6 +1,9 @@
 {meta: title They Can't Take Your Love}
 {meta: artist Kitty Wells}
 {meta: composer May Hawks}
+{meta: x_source classic-country}
+{meta: x_source_file theycanttakeyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They may try to plan my life as people often [F]do
@@ -22,3 +25,5 @@
 [F]They say you're reckless kind would never get a start
 [G7]But they can't take your love from my [C]heart
 {end_of_verse}
+
+

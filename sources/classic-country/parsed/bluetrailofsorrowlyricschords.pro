@@ -1,6 +1,9 @@
 {meta: title Blue Trail Of Sorrow}
 {meta: artist Dan Tyminski}
 {meta: composer Jeff White}
+{meta: x_source classic-country}
+{meta: x_source_file bluetrailofsorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blue [C]trail of [G]sorrow lies [C]upon the [G]ground
@@ -29,3 +32,6 @@ Well I think [C]I'll leave [G]tomorrow I'm [C]tired of this [G]town
 [C]Keep lookin' [G]baby [C]I won't be a[D7]round
 [C]Blue trail of [D7]sorrow on the [G]ground
 {end_of_verse}
+
+
+

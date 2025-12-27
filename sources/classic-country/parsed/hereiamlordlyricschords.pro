@@ -1,6 +1,9 @@
 {meta: title Here I Am Lord}
 {meta: artist Daniel O'Donnell}
 {meta: composer Daniel Schutte}
+{meta: x_source classic-country}
+{meta: x_source_file hereiamlordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I the Lord of [C]sea and [G]sky
@@ -47,3 +50,9 @@ I will [G]go Lord [D7]if you [Em]lead me
 {start_of_verse: Verse 7}
 [D7]I will [G]hold your [C]people [D7]in my [G]heart 
 {end_of_verse}
+
+
+
+
+
+

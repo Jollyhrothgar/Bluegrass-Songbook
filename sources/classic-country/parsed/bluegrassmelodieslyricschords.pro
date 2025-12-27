@@ -1,5 +1,8 @@
 {meta: title Bluegrass Melodies}
 {meta: artist The Osborne Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file bluegrassmelodieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [B7][G]Bluegrass [G][C]melodies
@@ -42,3 +45,8 @@
 [B7][G]Bluegrass [G][C]melodies
 [D7]Sing me a sweet [D7][G]mountain [G][D7][Em]song
 {end_of_verse}
+
+
+
+
+

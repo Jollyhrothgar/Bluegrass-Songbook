@@ -1,6 +1,9 @@
 {meta: title Lonely People}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Dee Moeller}
+{meta: x_source classic-country}
+{meta: x_source_file lonelypeoplelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could see it in [F]your eyes 
@@ -26,3 +29,5 @@ You can [G7]have what's left of [C]me
 I can't give much but it you want me
 You can [G7]have what's left of [C]me
 {end_of_verse}
+
+

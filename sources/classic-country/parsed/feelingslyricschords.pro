@@ -1,6 +1,9 @@
 {meta: title Feelings}
 {meta: artist Conway Twitty}
 {meta: composer Troy Seals, Don Goodman, Will Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file feelingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C][G]Fee-lings just lead us [G]on till we [D7]know where we're [F]go-ing  [G][C]mmm
@@ -22,3 +25,5 @@
 {start_of_verse: Verse 3}
 [C]Fee-lings just lead [G]us on till we [D7]know where we're [F]go-ing  [G][C]mmm
 {end_of_verse}
+
+

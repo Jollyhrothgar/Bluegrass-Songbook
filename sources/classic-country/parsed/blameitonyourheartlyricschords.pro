@@ -1,6 +1,9 @@
 {meta: title Blame It On Your Heart}
 {meta: artist Patty Loveless}
 {meta: composer Harlan Howard and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file blameitonyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've got a thing or two to learn about me baby
@@ -58,3 +61,9 @@ Mean mistreating loving [G]heart
 [D7]Yeah blame it on your lying cheating cold dead beating
 Two timing double dealing mean mistreating loving [G]heart
 {end_of_verse}
+
+
+
+
+
+

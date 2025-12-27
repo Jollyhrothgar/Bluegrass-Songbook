@@ -1,6 +1,9 @@
 {meta: title Got A Lot Of Livin' To Do}
 {meta: artist Elvis Presley}
 {meta: composer Aaron Schroeder and Ben Weisman}
+{meta: x_source classic-country}
+{meta: x_source_file gotalotoflivintodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh yes I've [G7]got a lot o' livin' to do
@@ -55,3 +58,10 @@ And there's no [F]one who I'd rather [G7]do it without [C]you [F]
 [C]And there's [F]no one who I'd rather [G7]do it without [C]you
 [C]Well there's [F]no one who I'd rather [G7]do it without [C]you
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title In The Middle Of A Teardrop}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens, Don Rich, Doyle Holly}
+{meta: x_source classic-country}
+{meta: x_source_file inthemiddleofateardroplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm in the middle of a [F]teardrop
@@ -46,3 +49,9 @@
 [G7]Yes I'm about to be a memory
 [F]I'm in the middle of a [C]teardrop
 {end_of_verse}
+
+
+
+
+
+

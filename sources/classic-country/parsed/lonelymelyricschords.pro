@@ -1,6 +1,9 @@
 {meta: title Lonely Me}
 {meta: artist Gene Watson}
 {meta: composer Larry Booth}
+{meta: x_source classic-country}
+{meta: x_source_file lonelymelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everything was [F]beautiful [G7]everything was [C]fine
@@ -27,3 +30,6 @@ Memories be [F]gone why can't you [G7]go on
 And [C]leave me to my [F]dreams
 Of [C]how it was with [F]her [C]  [Dm]   [G7] and lonely [C]me
 {end_of_verse}
+
+
+

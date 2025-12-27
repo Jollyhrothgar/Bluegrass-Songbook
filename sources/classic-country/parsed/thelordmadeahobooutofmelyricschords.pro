@@ -1,5 +1,8 @@
 {meta: title The Lord Made A Hobo Out Of Me}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file thelordmadeahobooutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the Lord made a hobo out of me
@@ -46,3 +49,9 @@ Yeah the [C]Lord made a [G7]hobo out of [C]me
 {start_of_verse: Verse 5}
 Yeah the Lord made a [G7]hobo out of [C]me
 {end_of_verse}
+
+
+
+
+
+

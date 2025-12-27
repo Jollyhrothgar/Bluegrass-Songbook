@@ -1,6 +1,9 @@
 {meta: title Do I Worry Yes I Do}
 {meta: artist Brenda Lee}
 {meta: composer Jerry Lordan}
+{meta: x_source classic-country}
+{meta: x_source_file doiworryyesidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh when you come home late with hardest [Am]reason
@@ -30,3 +33,5 @@
 [C]And when you call me someone else's [Am]name
 [F]Well do I worry [G7]do I worry yes [C]I [G7]do    over [C]you
 {end_of_verse}
+
+

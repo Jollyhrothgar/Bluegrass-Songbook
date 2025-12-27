@@ -1,6 +1,9 @@
 {meta: title Memories}
 {meta: artist Buddy Holly}
 {meta: composer Bob Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file memorieslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've left me alone [G7]with [C]memories
@@ -29,3 +32,6 @@
 [F]But someday when you're all alone and memories are [G7]there
 [C]You'll know you've [G7]left me alone with [C]memories
 {end_of_verse}
+
+
+

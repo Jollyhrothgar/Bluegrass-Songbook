@@ -1,6 +1,9 @@
 {meta: title It’s Too Late To Love Me Now}
 {meta: artist Dolly Parton}
 {meta: composer Rory Bourke, Gene Dobbins, Johnny Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file itstoolatetolovemenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's too late
@@ -31,3 +34,6 @@ He's [A7]taking all the love you threw [D7]away
 [C]But it's too [D7]late to love me [G]now
 It's too [D7]late to love me [G]now
 {end_of_verse}
+
+
+

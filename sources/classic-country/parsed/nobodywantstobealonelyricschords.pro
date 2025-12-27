@@ -1,6 +1,9 @@
 {meta: title Nobody Wants to Be Alone}
 {meta: artist Crystal Gayle}
 {meta: composer Michael Masser and Rhonda Kye Fleming}
+{meta: x_source classic-country}
+{meta: x_source_file nobodywantstobealonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've spent my life trying to [B7]tell everyone
@@ -61,3 +64,10 @@ Nobody [G7]wants to be [C]alone
 When you [Em]need someone to [F]hold
 Nobody [G7]wants to be [C]alone
 {end_of_verse}
+
+
+
+
+
+
+

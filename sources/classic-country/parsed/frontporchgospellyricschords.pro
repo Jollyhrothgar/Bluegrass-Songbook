@@ -1,5 +1,8 @@
 {meta: title Front Porch Gospel}
 {meta: artist Ronnie Reno}
+{meta: x_source classic-country}
+{meta: x_source_file frontporchgospellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today I took a fast train to [C]another place in [G]time 
@@ -43,3 +46,8 @@ And thank the [C]Lord for [A7]all He shares
 And thank the [C]Lord for all [A7]He shares
 [G]Front porch [C]gospel [D7]singing for the [G]Lord
 {end_of_verse}
+
+
+
+
+

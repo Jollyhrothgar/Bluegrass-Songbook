@@ -1,5 +1,8 @@
 {meta: title One Mile Over Two Miles Back}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file onemileovertwomilesbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One mile over and [G7]two miles back
@@ -54,3 +57,10 @@ She loves another it's a [F]natural fact
 One mile over and [G7]two miles [C]back
 One mile over and [G7]two miles [C]back
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Coming To The Dance}
 {meta: artist Crystal Gayle}
 {meta: composer Allen Reynolds and Chuck Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file comingtothedancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Turn your back to the [D7]wind 
@@ -60,3 +63,11 @@ Through all [C]strugg[D7]les and the [G]strife
 [C]Will you be [D7]coming to the [G]dance
 [C]Will you be [D7]coming to the [G]dance 
 {end_of_verse}
+
+
+
+
+
+
+
+

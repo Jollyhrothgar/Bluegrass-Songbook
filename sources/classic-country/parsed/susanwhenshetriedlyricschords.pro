@@ -1,6 +1,9 @@
 {meta: title Susan When She Tried}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file susanwhenshetriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got over  Charlotte [G7]Thompson
@@ -44,3 +47,9 @@ Than Susan when she [C]tried
 No there's never been a woman
 Who could [F]make me [G7]weak [C]inside
 {end_of_verse}
+
+
+
+
+
+

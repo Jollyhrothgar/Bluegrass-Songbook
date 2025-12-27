@@ -1,6 +1,9 @@
 {meta: title What She's Doing Now}
 {meta: artist Garth Brooks}
 {meta: composer Pat Alger and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file whatshesdoingnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last time I [G7]saw her it was turnin' col[Am]der 
@@ -50,3 +53,9 @@ Filling [G7]up my [F]mind and [G7]emptying my [C]heart
 I can hear her [F]call each [Em]time the cold wind [Am]blows
 And I wonder [F]if she knows [G7]what she's doing [C]now
 {end_of_verse}
+
+
+
+
+
+

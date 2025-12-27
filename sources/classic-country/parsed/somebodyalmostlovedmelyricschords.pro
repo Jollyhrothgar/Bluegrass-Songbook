@@ -1,6 +1,9 @@
 {meta: title Somebody Almost Loved Me}
 {meta: artist Ray Price}
 {meta: composer Roger Bryant Brown and Glenn Ray}
+{meta: x_source classic-country}
+{meta: x_source_file somebodyalmostlovedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody almost loved me somebody almost [C7]cared
@@ -26,3 +29,6 @@ Somebody almost [C]loved [A7]me but that's [F]all be[G7]hind me [C]now
 {start_of_verse: Verse 4}
 [F]Somebody almost [C]loved [A7]me but that's [F]all be[G7]hind me [C]now
 {end_of_verse}
+
+
+

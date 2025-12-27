@@ -1,6 +1,9 @@
 {meta: title El Paso City}
 {meta: artist Marty Robbins}
 {meta: music Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file elpasocitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From thirty thousand feet above 
@@ -122,3 +125,26 @@ Another voice keeps telling me
 Maybe death awaits me in El [C]Paso 
 El Paso [F]Cit-y 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

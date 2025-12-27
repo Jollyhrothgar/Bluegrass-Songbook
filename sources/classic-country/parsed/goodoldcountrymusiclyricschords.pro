@@ -1,6 +1,9 @@
 {meta: title Good Old Country Music}
 {meta: artist Porter Wagoner}
 {meta: composer Joe Babcock}
+{meta: x_source classic-country}
+{meta: x_source_file goodoldcountrymusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember daddy playing the Wildwood Flower
@@ -50,3 +53,9 @@
 [C7]I'm so glad everyone is lovin' good old country [F]music
 [G7]It's the music of the country and this country is my [C]home
 {end_of_verse}
+
+
+
+
+
+

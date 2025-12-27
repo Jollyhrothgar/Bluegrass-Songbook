@@ -1,6 +1,9 @@
 {meta: title Your Tears Are Telling On You}
 {meta: artist Melba Montgomery}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file yourtearsaretellingonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I hear that she [D7]gave you a [G]mansion
@@ -29,3 +32,6 @@ Darling your tears are [G]telling on you
 [G7]Words can deceive but [C]tears are true
 Darling your [G]tears are [D7]telling on [G]you
 {end_of_verse}
+
+
+

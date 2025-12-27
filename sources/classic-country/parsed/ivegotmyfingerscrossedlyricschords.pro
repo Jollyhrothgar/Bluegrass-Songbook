@@ -1,6 +1,9 @@
 {meta: title I've Got My Fingers Crossed}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker and George McCormick}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotmyfingerscrossedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got my [Em]fingers crossed [F]I pray our love isn't [C]lost
@@ -22,3 +25,5 @@ You're my [Am]every dream my every scheme [D7]don't ever say [G7]goodbye
 [C]I've got my [Em]fingers crossed [F]I pray our love isn't [C]lost
 It all [F]depends on you [G7]honey what are we [C]gonna [C][F]do
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title You're A Real Good Friend}
 {meta: artist Ernest Tubb}
 {meta: composer Cy Coben and Charles Grean}
+{meta: x_source classic-country}
+{meta: x_source_file yourearealgoodfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was broke and blue I gave advice to you
@@ -37,3 +40,6 @@ Let's sing a sweet duet we'll make a team I'll bet
 [C7]Let our voices [F]blend  I'll sing the melody
 [C]I'll sing the [A7]harmony cause we're [G7]both real good [C]friends
 {end_of_verse}
+
+
+

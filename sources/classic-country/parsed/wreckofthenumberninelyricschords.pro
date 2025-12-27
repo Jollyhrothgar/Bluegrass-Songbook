@@ -1,6 +1,9 @@
 {meta: title Wreck Of The Number Nine}
 {meta: artist Jim Reeves}
 {meta: composer Carson Robison}
+{meta: x_source classic-country}
+{meta: x_source_file wreckofthenumberninelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One dark stormy night not a star was in [C]sight
@@ -43,3 +46,8 @@ Where [C]I dreamed we'd be [G]happy you and [D7]I
 But I [G]leave it to you for I know you'll be [C]true
 Till [G]we meet at the Golden [D7]Gate [G]goodbye
 {end_of_verse}
+
+
+
+
+

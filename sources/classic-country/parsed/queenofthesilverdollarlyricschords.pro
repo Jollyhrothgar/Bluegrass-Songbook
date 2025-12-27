@@ -1,5 +1,8 @@
 {meta: title Queen Of The Silver Dollar}
 {meta: artist Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file queenofthesilverdollarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She arrives in all her splendor 
@@ -70,3 +73,12 @@ And she rules this [C]smokey [G]kingdom
 And her scepter [C]is [G]a wine glass 
 And this [A7]bar stool is [D7]her throne
 {end_of_verse}
+
+
+
+
+
+
+
+
+

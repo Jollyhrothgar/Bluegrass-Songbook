@@ -1,6 +1,9 @@
 {meta: title Take Me Down}
 {meta: artist Alabama}
 {meta: composer James P. Pennington and Mark Eugene Gray}
+{meta: x_source classic-country}
+{meta: x_source_file takemedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fly away with me tonight  take me on a one-way flight
@@ -53,3 +56,9 @@ Take me down to[F]night  [C]ooooo oooooo
 Are you gonna [F]take me (take me) shake me (shake me)
 Take me down ton[C]ight            
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Circle Game}
 {meta: artist George Hamilton IV}
 {meta: composer Joni Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file thecirclegamelyricschord.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday a [F]child came out to [C]wonder
@@ -45,3 +48,8 @@ And the [C]painted ponies go up and down
 [F]We can't return we can only look [Em]behind from where we [F]came
 And go [C]round and round and round in the [G7]circle [C]game
 {end_of_verse}
+
+
+
+
+

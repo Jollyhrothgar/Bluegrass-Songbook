@@ -1,6 +1,9 @@
 {meta: title I Don't Want To Throw Rice}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton and Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttothrowricelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She married the [G7]one I love [C]today
@@ -29,3 +32,6 @@ No [F]I don't want to [G7]throw rice [F]I want to throw [C]rocks at her
 No [F]I don't want to [G7]throw rice [F]I want to throw [C]rocks at her
 [F]It would be a way to [C]hurt her cause [G7]she hurt me so [C]bad
 {end_of_verse}
+
+
+

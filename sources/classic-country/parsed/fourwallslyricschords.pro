@@ -1,6 +1,9 @@
 {meta: title Four Walls}
 {meta: artist Jim Reeves}
 {meta: composer George Campbell and Marvin Moore}
+{meta: x_source classic-country}
+{meta: x_source_file fourwallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Out where the bright lights are [Am]glowing
@@ -47,3 +50,9 @@ Four [G7]walls too [C]near me
 {start_of_verse: Verse 5}
 TAG: Closing [D7]in on [G]me
 {end_of_verse}
+
+
+
+
+
+

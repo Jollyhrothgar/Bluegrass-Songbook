@@ -1,5 +1,8 @@
 {meta: title Now's The Time To Fall In Love}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file nowsthetimetofallinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain't [F]nothin' like watchin' your [C]dreams come true
@@ -42,3 +45,8 @@ There's [G7]so many places for your [C]head to go
 [F]You don't have to hurry just [C]do it slow
 Now's [G7]the time to fall in [C]love
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Blue Field}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file bluefieldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the West Virginia hills there must be ten thousand [Am]stills
@@ -36,3 +39,7 @@
 [G7]While I sit on death row [F]dreamin' about Blue [C]Field
 [Am]Blue Field Blue [G7]Field oh Blue [C]Field
 {end_of_verse}
+
+
+
+

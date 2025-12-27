@@ -1,6 +1,9 @@
 {meta: title The Race Is On}
 {meta: artist George Jones}
 {meta: composer Don Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file theraceisonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I feel tears welling up cold and deep inside
@@ -66,3 +69,15 @@ I came [D7]out in second [G]place
 You might say that I was taking [G]it hard
 Oh  she [C]wrote me off with a [G]call
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

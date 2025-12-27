@@ -1,6 +1,9 @@
 {meta: title Glory Hill In The Sky}
 {meta: artist Jimmie Davis}
 {meta: composer Jimmie Davis and Billy Joe Norris}
+{meta: x_source classic-country}
+{meta: x_source_file gloryhillintheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord I'm just a pilgrim [C]wondering down here [G]below
@@ -35,3 +38,7 @@ And Lord build me a mansion on Glory [D7]Hill In The [G]Sky
 {start_of_verse: Verse 4}
 And Lord build me a mansion on Glory [D7]Hill in The [G]Sky
 {end_of_verse}
+
+
+
+

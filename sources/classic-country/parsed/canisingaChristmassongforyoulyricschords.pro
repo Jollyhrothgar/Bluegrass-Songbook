@@ -1,6 +1,9 @@
 {meta: title Can I Sing A Christmas Song For You}
 {meta: artist Dave Dudley}
 {meta: composer Dave Dudley and Diane Lincoln}
+{meta: x_source classic-country}
+{meta: x_source_file canisingaChristmassongforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Can I hear the jingle jangle jingle 
@@ -43,3 +46,8 @@ Kids are puttin' on their mittens and their boots
 They're [C]going out to [D7]sing some Christmas [G]carols
 [C]Can I sing a [D7]Christmas song for [G]you
 {end_of_verse}
+
+
+
+
+

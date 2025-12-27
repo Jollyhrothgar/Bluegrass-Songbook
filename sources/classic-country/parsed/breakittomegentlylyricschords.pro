@@ -1,6 +1,9 @@
 {meta: title Break It To Me Gently}
 {meta: artist Brenda Lee}
 {meta: composer Diane Lampert - Joe Seneca}
+{meta: x_source classic-country}
+{meta: x_source_file breakittomegentlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Break it  to me [F]gently
@@ -30,3 +33,6 @@
 [G7]Cause I'll never  never love [A7]again
 [F]Cause I'll never [G7]love  never love [C]again
 {end_of_verse}
+
+
+

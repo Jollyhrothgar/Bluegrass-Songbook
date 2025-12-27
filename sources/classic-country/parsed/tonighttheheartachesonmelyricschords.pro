@@ -1,6 +1,9 @@
 {meta: title Tonight The Heartache's On Me}
 {meta: artist Lacy J. Dalton}
 {meta: composer Mary Francis, Johnny MacRae, Bob Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file tonighttheheartachesonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 You could'a heard a [C]pin drop when [C7]they walked through the [F]door
@@ -47,3 +50,9 @@ To[C]night the [G7]heartaches on [Am]me
 {start_of_verse: Verse 5}
 Yes [C]tonight the [G7]heartaches on [C]me 
 {end_of_verse}
+
+
+
+
+
+

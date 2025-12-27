@@ -1,6 +1,9 @@
 {meta: title God May Forgive You But I Won't}
 {meta: artist Norma Jean}
 {meta: composer Harlan Howard and Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file Godmayforgiveyoubutiwontlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say that you're born again
@@ -35,3 +38,6 @@ They [C]don't have to live with you and [G]neither do I
 You [C]say that you're born again [G]well so am I
 [C]God may forgive you but [D7]I won't  and I won't even [G]try
 {end_of_verse}
+
+
+

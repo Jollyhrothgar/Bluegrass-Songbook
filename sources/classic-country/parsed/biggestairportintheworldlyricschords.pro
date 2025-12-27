@@ -1,6 +1,9 @@
 {meta: title Biggest Airport In The World}
 {meta: artist Moe Bandy}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file biggestairportintheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've never seen so many faces
@@ -47,3 +50,9 @@ She's a little late for coffee
 {start_of_verse: Verse 7}
 [C]In the biggest airport in the world
 {end_of_verse}
+
+
+
+
+
+

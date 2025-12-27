@@ -1,6 +1,9 @@
 {meta: title Even At Its Worst It's Still The Best}
 {meta: artist Gene Watson}
 {meta: composer Buzz Rabin}
+{meta: x_source classic-country}
+{meta: x_source_file evenatitsworstitsstillthebestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love is seldom perfect it [F]has its ups and [D7]downs
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]But even at its [G7]worst it's still the [C]best
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tennessee Girl}
 {meta: artist Charlie Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I left home at a [F]crack of dawn [G7]just about a year [C]ago
@@ -43,3 +46,8 @@ And a [F]Tennessee way of [C]life
 And I'm gonna ask my Tennessee [G7]girl 
 To [F]be my Tennessee [C]wife
 {end_of_verse}
+
+
+
+
+

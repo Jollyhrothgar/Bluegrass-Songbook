@@ -1,6 +1,9 @@
 {meta: title Guilty Of The Crime}
 {meta: artist The Bellamy Brothers}
 {meta: composer Frankie Miller and Jerry Williams, Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file guiltyofthecrimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You're the only one who’s ever hurt my [C]soul
@@ -37,3 +40,7 @@ Yes I'm [G7]guilty of I’m guilty of the [C]crime
 (For [G7]loving you baby) 
 I'm guilty of I’m guilty of the [C]crime 
 {end_of_verse}
+
+
+
+

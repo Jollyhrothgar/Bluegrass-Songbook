@@ -1,6 +1,9 @@
 {meta: title The Old Trail}
 {meta: artist Don Williams}
 {meta: composer Steve Gillette and Charles Quatro}
+{meta: x_source classic-country}
+{meta: x_source_file theoldtraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]There's a new ridge [F]road that cuts the [G7]mountain to the [C]bone
@@ -45,3 +48,9 @@ Yeah [C]I'll take the old [G7]trail every [C]time
 {start_of_verse: Verse 6}
 I'll take the [G7]old trail every [C]time
 {end_of_verse}
+
+
+
+
+
+

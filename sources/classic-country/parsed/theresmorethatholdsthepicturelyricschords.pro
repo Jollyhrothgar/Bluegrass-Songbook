@@ -1,6 +1,9 @@
 {meta: title There's More That Holds The Picture}
 {meta: artist Larry Sparks}
 {meta: composer Marshal Warwick}
+{meta: x_source classic-country}
+{meta: x_source_file theresmorethatholdsthepicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's sixty years of marriage in that [G7]picture
@@ -43,3 +46,8 @@ They [G7]always worked to keep his family [C]fed
 [F]See those calloused hands around my [C]grandma
 They [G7]always worked to keep his family [C]fed
 {end_of_verse}
+
+
+
+
+

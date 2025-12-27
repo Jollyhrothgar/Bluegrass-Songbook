@@ -1,5 +1,8 @@
 {meta: title Till I Can Make it on my Own}
 {meta: artist Tammy Wynnette}
+{meta: x_source classic-country}
+{meta: x_source_file tillicanmakeitonmyownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll need [D7]t-ime [C]to get you off [G]my mind
@@ -46,3 +49,8 @@ But till [D7]then
 Let me [G]keep on using you  [D7]till I can make it on [G]my own
 [D]Till I can make it [G]on my own
 {end_of_verse}
+
+
+
+
+

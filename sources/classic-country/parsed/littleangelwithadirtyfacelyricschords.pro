@@ -1,6 +1,9 @@
 {meta: title Little Angel With A Dirty Face}
 {meta: artist Eddy Arnold}
 {meta: composer Dale Parker}
+{meta: x_source classic-country}
+{meta: x_source_file littleangelwithadirtyfacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When your [C]mother [G7]went a[C]way on the [F]day that you were [C]born
@@ -31,3 +34,6 @@ God called [G7]mother sent you in her [C]place
 [C7]And you [F]made my life worth[C]while
 Little [G7]angel with the dirty [C]face
 {end_of_verse}
+
+
+

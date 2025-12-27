@@ -1,6 +1,9 @@
 {meta: title Your Love Is Mine}
 {meta: artist Johnny Paycheck}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file yourloveisminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your love is mine and I will [Am]hold it
@@ -35,3 +38,7 @@ Your love is mine and I will [Am]hold it
 [G]Your love is mine and I will [Am]hold it
 [G]Your love is mine and I will [Am]hold it
 {end_of_verse}
+
+
+
+

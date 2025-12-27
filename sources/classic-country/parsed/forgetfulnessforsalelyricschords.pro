@@ -1,6 +1,9 @@
 {meta: title Forgetfulness For Sale}
 {meta: artist Vernon Oxford}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file forgetfulnessforsalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw a neon invitation flashing red and green temptation
@@ -38,3 +41,7 @@ I'd pay any price their asking
 But it's just too big a tasking
 No one's got enough [G7]forgetfulness for [C]sale
 {end_of_verse}
+
+
+
+

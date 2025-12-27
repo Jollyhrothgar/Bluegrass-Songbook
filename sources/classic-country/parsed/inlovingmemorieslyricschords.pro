@@ -1,6 +1,9 @@
 {meta: title In Loving Memories}
 {meta: artist Conway Twitty}
 {meta: composer Cecil Harrelson}
+{meta: x_source classic-country}
+{meta: x_source_file inlovingmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I stand here so solemn  with a blank look on my [F]face
@@ -32,3 +35,6 @@ In loving mem-o-ries [Am]on this sad [D7]day
 In [C]loving mem-o-ries [F][C7]for-ever
 Until we [C]meet  [G7]beyond the shining [C]river
 {end_of_verse}
+
+
+

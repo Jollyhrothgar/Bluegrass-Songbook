@@ -1,6 +1,9 @@
 {meta: title Some Of These Nights}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Hawkshaw Hawkins and Dolores Williams}
+{meta: x_source classic-country}
+{meta: x_source_file someofthesenightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some of these nights honey you gonna be so [G7]sad
@@ -29,3 +32,6 @@ You went and left me you’ll not [C]forget
 So now you [A7]see dear just where you’ll [D7]end
 It wasn’t [G7]worth it still you pre[C]tend
 {end_of_verse}
+
+
+

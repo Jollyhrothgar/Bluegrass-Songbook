@@ -1,6 +1,9 @@
 {meta: title South Pacific Shore}
 {meta: artist Cowboy Copas}
 {meta: composer Ken Clark}
+{meta: x_source classic-country}
+{meta: x_source_file southpacificshorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Back in nineteen hundred and forty two
@@ -62,3 +65,11 @@ On the [A7]south [D7]pacific [G]shore
 Yes I [C]fell in love in a [G]troubled [E7]time
 On the [A7]south [D7]pacific [G]shore
 {end_of_verse}
+
+
+
+
+
+
+
+

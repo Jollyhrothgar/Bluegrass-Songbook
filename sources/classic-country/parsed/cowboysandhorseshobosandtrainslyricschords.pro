@@ -1,6 +1,9 @@
 {meta: title Cowboys And Horses Hobos And Trains}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene Martin}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysandhorseshobosandtrainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cowboys and horses [F]hobos and [C]trains
@@ -47,3 +50,9 @@ But Lord I'd like [G7]to see them [C]again
 {start_of_verse: Verse 5}
 Oh what I'd give [G7]to see them [C]again
 {end_of_verse}
+
+
+
+
+
+

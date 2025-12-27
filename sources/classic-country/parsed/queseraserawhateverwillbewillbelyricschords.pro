@@ -1,6 +1,9 @@
 {meta: title Que Sera Sera (Whatever Will Be Will Be)}
 {meta: artist Doris Day}
 {meta: composer Raymond B. Evans and Jay Livingston}
+{meta: x_source classic-country}
+{meta: x_source_file queseraserawhateverwillbewillbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was just a little girl
@@ -47,3 +50,8 @@ Que sera [C]sera
 What will [G7]be will [C]be
 [F]Que sera [C]sera
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Another Neon Night}
 {meta: artist Jean Shepard}
 {meta: composer Carolyn Sue Howard and Joanne Spain}
+{meta: x_source classic-country}
+{meta: x_source_file anotherneonnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The neon light plays a sad tune on the ceilin'
@@ -29,3 +32,6 @@ And the [Dm]road I'm on [G7]ain't leadin' me back [C]home
 The [F]only sound I'm [G7]hearin' now is the [C]silence of my [Gm]shame
 For [Dm]someone's lying [G7]next to me and I don't [Dm]even know his [C]name
 {end_of_verse}
+
+
+

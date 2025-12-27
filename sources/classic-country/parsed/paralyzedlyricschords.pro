@@ -1,6 +1,9 @@
 {meta: title Paralyzed}
 {meta: artist Elvis Presley}
 {meta: composer Otis Blackwell and Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file paralyzedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you looked into my eyes
@@ -33,3 +36,6 @@ In [C]front of preacher you said I do
 I [F]couldn't say a word for thinking of you
 All I [C]could do was [G7]stand there  para[C]lyzed
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bury Me Under The Pines}
 {meta: artist Ralph Stanley}
 {meta: composer Rena Archuleta and Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file burymeunderthepineslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So bury me under the lonesome pine tree
@@ -36,3 +39,7 @@ There they'll for[F]eve[G7]r sway over [C]me
 There I can hear the sound of the lonesome dove
 In that beautiful [F]lan[G7]d of peace and [C]love
 {end_of_verse}
+
+
+
+

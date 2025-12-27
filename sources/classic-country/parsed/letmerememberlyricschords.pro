@@ -1,5 +1,8 @@
 {meta: title Let Me Remember}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file letmerememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Leave me forget [G7]me
@@ -29,3 +32,7 @@
 {start_of_verse: Verse 5}
 Repeat
 {end_of_verse}
+
+
+
+

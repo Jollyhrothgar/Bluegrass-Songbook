@@ -1,6 +1,9 @@
 {meta: title Sometimes A Lady}
 {meta: artist Eddy Raven}
 {meta: composer Eddy Raven and Frank Myers}
+{meta: x_source classic-country}
+{meta: x_source_file sometimesaladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd learn to waltz if she wanted to [G]dance
@@ -37,3 +40,7 @@ Oh but she's a [C]class act
 Lookin' sweet and [Em]sassy
 Sometimes a [C]bad bad [Am]girl sometimes a [G]lady
 {end_of_verse}
+
+
+
+

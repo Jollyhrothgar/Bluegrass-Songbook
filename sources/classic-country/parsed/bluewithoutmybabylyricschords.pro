@@ -1,6 +1,9 @@
 {meta: title Blue Without My Baby}
 {meta: artist Jim Reeves}
 {meta: composer Rhoda Roberts and Kenny Jacobson}
+{meta: x_source classic-country}
+{meta: x_source_file bluewithoutmybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I'm blue [D7]without my [G]baby and it's [C]hurting more each [G]day
@@ -23,3 +26,5 @@ Gonna [C]kiss her till I remind [G]her  [A7]my love is faithful and [D7]true
 And [C]I'll leave no stone [G]uncovered  till my [D7]baby  comes back to [G]me
 Oh I'm [C]blue without my [G]baby  won't my [D7]baby  come back to [G]me 
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Bow Thy Head}
 {meta: artist Webb Pierce}
 {meta: composer P. Kallenger and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file bowthyheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have heard of a land
@@ -35,3 +38,6 @@ Take the [C]Savior's outstretched hand
 He will [F]lead you to that land
 Bow thy [C]head now in [G7]prayer and follow [C]Me
 {end_of_verse}
+
+
+

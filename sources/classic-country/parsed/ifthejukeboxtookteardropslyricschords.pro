@@ -1,6 +1,9 @@
 {meta: title If The Jukebox Took Teardrops}
 {meta: artist Billy Joe Royal}
 {meta: composer Wyatt Easterling, Don Goodman,}
+{meta: x_source classic-country}
+{meta: x_source_file ifthejukeboxtookteardropslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If the jukebox took teardrops I'd [C]dance all night long
@@ -38,3 +41,8 @@ If the jukebox took [G]teardrops [D7]I'd cry all night [G]long
 {start_of_verse: Verse 5}
 [C]If the jukebox took [G]teardrops [D7]I'd cry all night [G]long
 {end_of_verse}
+
+
+
+
+

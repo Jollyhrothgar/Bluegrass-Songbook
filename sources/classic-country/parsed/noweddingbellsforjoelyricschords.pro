@@ -1,6 +1,9 @@
 {meta: title No Wedding Bells For Joe}
 {meta: artist Wanda Jackson}
 {meta: composer Marijohn Wilkin and James Coleman}
+{meta: x_source classic-country}
+{meta: x_source_file noweddingbellsforjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Next Tuesday was to be the seasons [F]big event by far
@@ -30,3 +33,6 @@ The whole town sympathizes but they [G7]know
 What[C]ever else may happen on next [F]Tuesday
 There just won't [C]be no [G7]wedding bells for [C]Joe  
 {end_of_verse}
+
+
+

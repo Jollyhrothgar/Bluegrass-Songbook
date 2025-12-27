@@ -1,5 +1,8 @@
 {meta: title Carryin' On This Way}
 {meta: artist Dale Watson}
+{meta: x_source classic-country}
+{meta: x_source_file carryinonthiswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Good mornin' fella you don't look too good [Dm]today
@@ -48,3 +51,8 @@ Be [G7]carryin' on this [C]way
 Yeah you [Dm]think that you'd know better than to still 
 Be [G7]carryin' on this [C]way
 {end_of_verse}
+
+
+
+
+

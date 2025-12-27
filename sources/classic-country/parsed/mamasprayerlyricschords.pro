@@ -1,5 +1,8 @@
 {meta: title Mama’s Prayer}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file mamasprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Back when I was doing time [F]there’s a night I can’t [C]forget
@@ -35,3 +38,7 @@ Mama’s [F]prayers were always with me in the battlefields of life
 From the [C]death house in San Quentin I [F]walked away a better [C]man
 Somehow my mama’s [G7]prayers it worked [C]again 
 {end_of_verse}
+
+
+
+

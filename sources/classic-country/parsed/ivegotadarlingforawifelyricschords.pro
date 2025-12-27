@@ -1,5 +1,8 @@
 {meta: title I’ve Got A Darling For A Wife}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotadarlingforawifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't care if I never [F]find that pot of [C]gold
@@ -21,3 +24,5 @@
 [F]And I'll live every day to hold her close at [C]night
 [G7]I've got a darling for a [C]wife
 {end_of_verse}
+
+

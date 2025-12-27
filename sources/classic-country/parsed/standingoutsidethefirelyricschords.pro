@@ -1,6 +1,9 @@
 {meta: title Standing Outside The Fire}
 {meta: artist Garth Brooks}
 {meta: composer Jenny Yates and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file standingoutsidethefirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We call them cool 
@@ -61,3 +64,11 @@ There's this love that is [C]burning
 [Em]Life is not [D7]tried it is [G]merely [C][G][Am]survived 
 [G]If you're [Am]standing outside [D7]the [G]fire
 {end_of_verse}
+
+
+
+
+
+
+
+

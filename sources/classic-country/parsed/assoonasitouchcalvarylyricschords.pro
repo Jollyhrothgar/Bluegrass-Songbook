@@ -1,6 +1,9 @@
 {meta: title As Soon As I Touch Calvary}
 {meta: artist Paul Williams and The Victory Trio}
 {meta: composer Rusty Goodman}
+{meta: x_source classic-country}
+{meta: x_source_file assoonasitouchcalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Friend don't worry about this heavy load I [C]carry
@@ -33,3 +36,7 @@ I'll be al[G]right as soon as [D7]I touch Calva[G]ry
 {start_of_verse: Verse 5}
 [C]Yes I'll be al[G]right because [D7]I touched Calva[G]ry
 {end_of_verse}
+
+
+
+

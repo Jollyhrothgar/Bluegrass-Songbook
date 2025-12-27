@@ -1,6 +1,9 @@
 {meta: title This Old White Doorway}
 {meta: artist The Forester Sisters}
 {meta: composer Jim Rushing and Susan Longacre}
+{meta: x_source classic-country}
+{meta: x_source_file thisoldwhitedoorwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's the [F]midnight [G7]before [C]Christmas
@@ -57,3 +60,10 @@ In this [C]old white doorway [A#7]our family highway
 This [C]old white doorway with [A#7]cards and holly
 Will [F]frame for always the [G7]love that's yours and [C]mine
 {end_of_verse}
+
+
+
+
+
+
+

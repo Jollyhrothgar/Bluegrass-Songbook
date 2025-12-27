@@ -1,6 +1,9 @@
 {meta: title When The Blues Are Moving In}
 {meta: artist Doyle Lawson}
 {meta: composer Jamie Dailey and Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file whenthebluesaremovinginlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the quiet of the evening I sing a mournful [C]song
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [C]What a [G]cold world when the [D7]blues are moving [G]in
 {end_of_verse}
+
+
+
+
+

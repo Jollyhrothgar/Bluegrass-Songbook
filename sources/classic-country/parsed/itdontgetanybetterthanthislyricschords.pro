@@ -1,6 +1,9 @@
 {meta: title It Don't Get Any Better Than This}
 {meta: artist George Jones}
 {meta: composer Max D. Barnes, Buddy Cannon, Norris Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file itdontgetanybetterthanthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could honky-tonk in Texas on Saturday night 
@@ -43,3 +46,8 @@ That's about as good as good ever [C]gets
 If there's anything better it's something I [G7]missed 
 It [F]just don't get any [G7]better than [C]this 
 {end_of_verse}
+
+
+
+
+

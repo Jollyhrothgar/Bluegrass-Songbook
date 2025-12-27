@@ -1,5 +1,8 @@
 {meta: title First Love}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file firstlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I was [C]fifteen she was [G7]eighteen
@@ -41,3 +44,8 @@ I never should've [C]sold her I'll always [G7]love her she was [C]mine[G7]
 {start_of_verse: Verse 5}
 I'll never [C]sell her she's mine [G7]forever I love her [C]so
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Got The Bull By The Horns}
 {meta: artist Johnny Horton}
 {meta: composer Amos Boyd and Billy Jones}
+{meta: x_source classic-country}
+{meta: x_source_file gotthebullbythehornslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love the brunets the red heads and blonde haired girls
@@ -43,3 +46,8 @@ Think it's better than it ever have been
 Yeah I missed a lotta lovin' in my lifetime
 But I'm never gonna do it again I'm [D7]never gonna do it [G]again
 {end_of_verse}
+
+
+
+
+

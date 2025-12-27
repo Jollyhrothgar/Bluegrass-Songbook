@@ -1,6 +1,9 @@
 {meta: title Happy Anniversary Baby}
 {meta: artist Leona Williams}
 {meta: composer Rory Bourke}
+{meta: x_source classic-country}
+{meta: x_source_file happyanniversarybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I [D7]wake up in the morning and I tiptoe down the hall
@@ -42,3 +45,7 @@ Happy anni[Am]versa[D7]ry
 [G]You're all I'll [C]ever need 
 And it makes me [Am]happy [D7]knowing I'm your [G]wife
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Don't Feel Anything}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file idontfeelanythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't feel [F]anything   what was I [G7]worried for
@@ -21,3 +24,5 @@ Cause it's the strangest thing I don't feel [C]anything
 [C]Why was I [F]so afraid   of seeing you [G7]again
 Cause it's the strangest thing I don't feel [C]anything
 {end_of_verse}
+
+

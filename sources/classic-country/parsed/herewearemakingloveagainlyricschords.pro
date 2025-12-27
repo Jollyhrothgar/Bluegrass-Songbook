@@ -1,6 +1,9 @@
 {meta: title Here We Are Making Love Again}
 {meta: artist Bob Luman}
 {meta: composer Ronald Saucer and Mike Schrimpf}
+{meta: x_source classic-country}
+{meta: x_source_file herewearemakingloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here we are makin' [F]love again
@@ -46,3 +49,8 @@ Here we are with a world that [F]never ends
 [C]Here we are makin' [Em]love makin' [D7]love
 Makin' [C]love makin' love [G]again
 {end_of_verse}
+
+
+
+
+

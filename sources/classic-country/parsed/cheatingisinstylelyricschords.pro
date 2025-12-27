@@ -1,6 +1,9 @@
 {meta: title Cheating Is In Style}
 {meta: artist Wynn Stewart}
 {meta: composer Tommy Crelila and B. Weaver}
+{meta: x_source classic-country}
+{meta: x_source_file cheatingisinstylelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The widow woman [D7]kind and sweet 
@@ -41,3 +44,8 @@ Though cheating is in [G]style
 Yes you love me and you [C]know that I'll [G]still be [D7]true 
 Though cheating is in [C]style  is in [G]style
 {end_of_verse}
+
+
+
+
+

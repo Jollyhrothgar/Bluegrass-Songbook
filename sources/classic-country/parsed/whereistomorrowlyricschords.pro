@@ -1,6 +1,9 @@
 {meta: title Where Is Tomorrow}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Bill Dees}
+{meta: x_source classic-country}
+{meta: x_source_file whereistomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where [F]is [G]tomorrow an [C]island of [G]dreams
@@ -29,3 +32,7 @@
 [G]I want cry for [Am]you tomorrow [D7]where [C]is [G][F]tomorrow
 [C]Where [F]is [G]tomorrow [G][F][C]tomorrow
 {end_of_verse}
+
+
+
+

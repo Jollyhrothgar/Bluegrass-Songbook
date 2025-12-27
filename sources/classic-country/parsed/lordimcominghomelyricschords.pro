@@ -1,6 +1,9 @@
 {meta: title Lord I’m Coming Home}
 {meta: artist Kitty Wells}
 {meta: composer William J. Kirkpatrick}
+{meta: x_source classic-country}
+{meta: x_source_file lordimcominghomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve wandered far [C]away from [G]God
@@ -43,3 +46,8 @@ Coming home coming [C]home
 [G]Open wide Thine [C]arms of [G]love
 Lord I’m [D7]coming [G]home
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Are You Waiting Just For Me}
 {meta: artist The Osborne Brothers}
 {meta: composer Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file areyouwaitingjustformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While I'm writing you tonight my [C]darlin'
@@ -43,3 +46,8 @@ Are you waiting just for me my darlin’
 [C]Or have you found someone else my darlin’
 [D7]Please tell me are you waiting just for [G]me
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title What Will I Do Without You}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file whatwillidowithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I tried I tried oh [F]me how I [C]tried
@@ -14,3 +17,4 @@ So [G7]I’ll step aside and [C]let you go free
 I love you too much to make your heart blue
 [G7]What will I do oh [F]me what will I [C]do without you
 {end_of_verse}
+

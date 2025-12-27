@@ -1,6 +1,9 @@
 {meta: title Little Christmas Angel}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson, Johnny Hatchcock, Weldon Allard}
+{meta: x_source classic-country}
+{meta: x_source_file littleChristmasangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please little [D7]angel [G]hop to the [D7]floor 
@@ -48,3 +51,9 @@ And [C]please little [D7]Christmas [G]angel[Em]
 And [C]please little [D7]Christmas [G]angel[Em]
 [D]Tell her that I [D7]love her [G]so 
 {end_of_verse}
+
+
+
+
+
+

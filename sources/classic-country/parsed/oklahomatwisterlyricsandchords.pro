@@ -1,6 +1,9 @@
 {meta: title Oklahoma Twister}
 {meta: artist Cal Smith}
 {meta: composer written by Max Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file oklahomatwisterlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I could see it in your [D7]eyes  when he blew in from [G]Tulsa
@@ -29,3 +32,6 @@ He's the kind that won't [D7]remember  when it's time to move [G]along
 Like [G7]an Oklahoma [C]twister he's a take advantage [G]drifter
 When he gets what he came [D7]after  you're gonna wake up all [G]alone
 {end_of_verse}
+
+
+

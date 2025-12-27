@@ -1,5 +1,8 @@
 {meta: title Dear Old Mother}
 {meta: artist Jim and Jesse}
+{meta: x_source classic-country}
+{meta: x_source_file dearoldmotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the fields were turning brown 
@@ -48,3 +51,8 @@ How I [G]long for your sweet [A7]face and sunny [D7]smile
 I would give [G]up all I own just to be with you at [C]home
 And to [G]linger there for [D7]just a little [G]while
 {end_of_verse}
+
+
+
+
+

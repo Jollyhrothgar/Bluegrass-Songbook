@@ -1,6 +1,9 @@
 {meta: title Let The Phone Just Keep On Ringing}
 {meta: artist Mel Street}
 {meta: composer Bob McDill and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file letthephonejustkeeponringinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let the phone just keep on [G7]ringing
@@ -57,3 +60,10 @@ Let the phone just keep on [G7]ringing
 [C]Tell the world to wait till [G7]morning
 [F]It's too [G7]late to stop us [C]now [G7]   [F]  [C]
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Can Never Stop Me Loving You}
 {meta: artist The Wilburn Brothers}
 {meta: composer Ian Samwell and Jean Slate}
+{meta: x_source classic-country}
+{meta: x_source_file youcanneverstopmelovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can never stop me [G7]loving you
@@ -42,3 +45,8 @@ That's one thing you'll never [C]do
 [G7]That's one thing you'll never [C]do
 [G7]You'll never stop me loving [C]you
 {end_of_verse}
+
+
+
+
+

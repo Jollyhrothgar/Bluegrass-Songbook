@@ -1,6 +1,9 @@
 {meta: title Telling My Troubles}
 {meta: artist Wilburn Brothers}
 {meta: composer Gene McCown}
+{meta: x_source classic-country}
+{meta: x_source_file tellingmytroubleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the sun goes away [C7]and the street lights come [F]on
@@ -27,3 +30,6 @@
 [C7]I know that it shows when I'm singing out [F]loud
 [C]I'm telling my troubles [G7]to a honky tonk [C]crowd
 {end_of_verse}
+
+
+

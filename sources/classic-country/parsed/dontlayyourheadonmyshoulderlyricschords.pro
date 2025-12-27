@@ -1,6 +1,9 @@
 {meta: title Don't Lay Your Head On My Shoulder}
 {meta: artist Wynn Stewart}
 {meta: composer Dale Noe}
+{meta: x_source classic-country}
+{meta: x_source_file dontlayyourheadonmyshoulderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't lay your head [G7]on my [C]shoulder
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [D7]Cause it's too [G7]close to my [C]heart
 {end_of_verse}
+
+
+

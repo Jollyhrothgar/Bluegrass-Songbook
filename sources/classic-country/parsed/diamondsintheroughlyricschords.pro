@@ -1,6 +1,9 @@
 {meta: title Diamonds In The Rough}
 {meta: artist The Blue Ridge Mountain Boys}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file diamondsintheroughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While walking out one evening
@@ -43,3 +46,8 @@ He [F]found them very [C]kind
 And they were precious diamonds
 That gathered [G7]in the [C]rough
 {end_of_verse}
+
+
+
+
+

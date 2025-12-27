@@ -1,6 +1,9 @@
 {meta: title One Dozen Roses}
 {meta: artist George Morgan}
 {meta: composer Benny Joy}
+{meta: x_source classic-country}
+{meta: x_source_file onedozenroseslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]One dozen roses and our [C]love
@@ -45,3 +48,8 @@ A [G7]mom and dad's prayer to you [C]above
 [D7]One dozen [G7]roses and our [C]love
 Spoken:
 {end_of_verse}
+
+
+
+
+

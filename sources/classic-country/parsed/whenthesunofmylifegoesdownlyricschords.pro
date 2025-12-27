@@ -1,6 +1,9 @@
 {meta: title When The Sun Of My Life Goes Down}
 {meta: artist Doyle Lawson}
 {meta: composer William McKinney}
+{meta: x_source classic-country}
+{meta: x_source_file whenthesunofmylifegoesdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When my labor here is over at last and I lay these burdens down
@@ -44,3 +47,9 @@ Oh Lord (oh Lord) I know (I know) I'm living on higher ground
 {start_of_verse: Verse 5}
 [D7]I'll leave this world of trouble and sorrow when the sun of my life goes [G]down
 {end_of_verse}
+
+
+
+
+
+

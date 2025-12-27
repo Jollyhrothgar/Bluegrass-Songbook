@@ -1,6 +1,9 @@
 {meta: title Fifteen Years Going Up}
 {meta: artist George Strait}
 {meta: composer Peggy Forman}
+{meta: x_source classic-country}
+{meta: x_source_file fifteenyearsgoinguplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Fifteen years together we [C]climbed by work and [G]will
@@ -33,3 +36,7 @@ From [G]high [C]on a [G]mountain to both [C]knees on the [G]ground
 {start_of_verse: Verse 4}
 I've been [Em]fifteen [G]years [Em]goin' [G]up and [D7]one night comin' [G]down
 {end_of_verse}
+
+
+
+

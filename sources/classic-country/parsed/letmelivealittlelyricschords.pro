@@ -1,6 +1,9 @@
 {meta: title Let Me Live A Little}
 {meta: artist Webb Pierce}
 {meta: composer Wayne P. Walker and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file letmelivealittlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't you think I've [Dm]cried enough [G7]swallowed all my [C]pride enough
@@ -26,3 +29,6 @@ Won't you let [F]forgiveness in [G7]let me live a [C]little
 {start_of_verse: Verse 4}
 [G7]Let me live a [C]little
 {end_of_verse}
+
+
+

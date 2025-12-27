@@ -1,6 +1,9 @@
 {meta: title If You Ever Come This Way Again}
 {meta: artist Sammy Kershaw}
 {meta: composer Dean Dillon and Donny Kees}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouevercomethiswayaainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sure do hate to see you [F]go
@@ -38,3 +41,7 @@
 [G7]If you ever come this way [C]again
 [G7]If you ever come this way [C]again
 {end_of_verse}
+
+
+
+

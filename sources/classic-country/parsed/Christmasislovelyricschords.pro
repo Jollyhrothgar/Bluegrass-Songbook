@@ -1,6 +1,9 @@
 {meta: title Christmas Is Love}
 {meta: artist Alabama}
 {meta: composer Rich Alves, Jeff Knight, Jerry Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasislovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's that time of [G]year  [C]when the whole world is [G]heart to heart
@@ -44,3 +47,9 @@ Christmas is [G]love it's in the songs we're [C]singing
 [D7]Christmas is [G]love
 [D7]Christmas is [G]love
 {end_of_verse}
+
+
+
+
+
+

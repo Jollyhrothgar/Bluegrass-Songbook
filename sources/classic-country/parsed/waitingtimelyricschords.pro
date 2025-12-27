@@ -1,5 +1,8 @@
 {meta: title Waiting Time}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file waitingtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is the waiting time [F]I wait for [C]you
@@ -21,3 +24,5 @@ Then came the [D7]parting time I watched you [G7]go
 But you said [C]perhaps in time [F]our love could still [C]be
 So this is the [G7]waiting time and I'll just wait and [C]see
 {end_of_verse}
+
+

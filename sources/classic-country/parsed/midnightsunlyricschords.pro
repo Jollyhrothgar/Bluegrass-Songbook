@@ -1,6 +1,9 @@
 {meta: title Midnight Sun}
 {meta: artist Garth Brooks}
 {meta: composer Garth Brooks, Richie Brown, Jerrod Niemann}
+{meta: x_source classic-country}
+{meta: x_source_file midnightsunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ain't no hay left on the ground
@@ -58,3 +61,9 @@ The [C]party never [D7]ends
 {start_of_verse: Verse 7}
 [C]In the land  [D7]of the midnight [C]sun[G]
 {end_of_verse}
+
+
+
+
+
+

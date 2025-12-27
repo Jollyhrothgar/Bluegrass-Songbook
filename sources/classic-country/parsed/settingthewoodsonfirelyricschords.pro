@@ -1,5 +1,8 @@
 {meta: title Setting the Woods on Fire}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file settingthewoodsonfirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Comb your hair and paint and powder
@@ -62,3 +65,12 @@ To fix a flat or [C]two
 [G7]Tomorrow I'll be right back plowing
 Setting the woods on [C]fire
 {end_of_verse}
+
+
+
+
+
+
+
+
+

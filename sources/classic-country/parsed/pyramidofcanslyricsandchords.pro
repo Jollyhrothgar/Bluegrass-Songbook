@@ -1,5 +1,8 @@
 {meta: title Pyramid Of Cans}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file pyramidofcanslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I drink from cans and stack 'em in a [G7]pyramid so [C]high
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [C]Then I drink one more and [G]start another [D7]pyramid of [G]cans
 {end_of_verse}
+
+
+
+

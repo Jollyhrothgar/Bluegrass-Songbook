@@ -1,6 +1,9 @@
 {meta: title Any Old Time}
 {meta: artist Webb Pierce}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file anyoldtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Any old time you wanna come back home
@@ -30,3 +33,6 @@ Like the day you left me [F]alone
 Any old [C]time
 You [G7]wanna come back [C]home 
 {end_of_verse}
+
+
+

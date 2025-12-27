@@ -1,6 +1,9 @@
 {meta: title Round And Round The Bottle}
 {meta: artist Tanya Tucker}
 {meta: composer Susan Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file roundandroundthebottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Grandma was a pretty thing when [C]she was just six[G]teen
@@ -44,3 +47,8 @@ Sharin' little [C]secrets with a man I barely [D7]know
 [Em]Round and round the [G]bottle spins till it [Em]knocks you [G]down again
 And the [C]victims of the [D7]drunkard wait at [C]hom[G]e
 {end_of_verse}
+
+
+
+
+

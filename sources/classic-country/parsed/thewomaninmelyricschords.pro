@@ -1,6 +1,9 @@
 {meta: title The Woman in Me}
 {meta: artist Crystal Gayle}
 {meta: composer Susan Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file thewomaninmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Seems to me no matter [D7]what I do
@@ -43,3 +46,8 @@ Though you [D7]might break the [G]smile
 You'll never [Em]hurt the [C]woman in me
 But you [D7]might hurt the [G]child
 {end_of_verse}
+
+
+
+
+

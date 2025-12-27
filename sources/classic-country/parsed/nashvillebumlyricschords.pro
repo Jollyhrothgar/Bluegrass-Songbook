@@ -1,6 +1,9 @@
 {meta: title Nashville Bum}
 {meta: artist Waylon Jennings}
 {meta: composer Glenn Corbin, Frankie Miller, and Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file nashvillebumlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been chasing the big wheels a[F]ll over N[C]ashville
@@ -30,3 +33,6 @@ You can [C]change a word or two and I'll give [F]half of it to [C]you
 I'll be a star tomorrow but today I'm a [G7]Nashville [C]bum
 Yes I'll be a star tomorrow but today I'm a [G7]Nashville [C]bum
 {end_of_verse}
+
+
+

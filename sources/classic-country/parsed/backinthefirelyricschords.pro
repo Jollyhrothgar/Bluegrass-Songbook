@@ -1,6 +1,9 @@
 {meta: title Back In The Fire}
 {meta: artist Gene Watson}
 {meta: composer Rory Michael Bourke and Mike Reid}
+{meta: x_source classic-country}
+{meta: x_source_file backinthefirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My mind knows full well I should leave [C]here
@@ -29,3 +32,6 @@ If it wasn't so then why [A7]oh why does it keep dragging [D7]me
 Back in the [C]fire  to the [G]flames of [C]ecstasy
 I guess I'll [G]always love  [D7]the way she burns in [G]me
 {end_of_verse}
+
+
+

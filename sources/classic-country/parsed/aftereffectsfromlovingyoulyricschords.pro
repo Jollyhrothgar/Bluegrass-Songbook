@@ -1,6 +1,9 @@
 {meta: title After Effects From Loving You}
 {meta: artist Ray Price}
 {meta: composer Hank Mills}
+{meta: x_source classic-country}
+{meta: x_source_file aftereffectsfromlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Nights are longer when you're blue and all [C]alone
@@ -24,3 +27,5 @@ But [G]my heart knows good and well it's only [C]you
 Who can ease my troubled mind and erase the [D7]pain you find
 From the after affects of loving [G]you
 {end_of_verse}
+
+

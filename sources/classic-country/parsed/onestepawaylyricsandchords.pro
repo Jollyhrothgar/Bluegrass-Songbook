@@ -1,6 +1,9 @@
 {meta: title One Step Away}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo and James House}
+{meta: x_source classic-country}
+{meta: x_source_file onestepawaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My baby [F]loves the [G7]things I [C]say[F]  [G7]
@@ -31,3 +34,6 @@ And if she knew that I was [F]hurting in[C]side
 [F]Right now we're [G7]just one step [C]away[F]
 [G7]One step [C]away [F]   [G7]one step [C]away
 {end_of_verse}
+
+
+

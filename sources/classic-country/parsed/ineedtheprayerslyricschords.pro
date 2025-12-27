@@ -1,6 +1,9 @@
 {meta: title I Need The Prayers}
 {meta: artist Kitty Wells}
 {meta: composer James D. Vaughn}
+{meta: x_source classic-country}
+{meta: x_source_file ineedtheprayerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I need the prayers of those I love 
@@ -33,3 +36,8 @@ That [D7]He may keep me by His [G]power
 That I may true and faithful be
 And [D7]live for Jesus [G]everyday
 {end_of_verse}
+
+
+
+
+

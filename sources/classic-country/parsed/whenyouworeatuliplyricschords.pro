@@ -1,6 +1,9 @@
 {meta: title When You Wore A Tulip}
 {meta: artist Slim Whitman}
 {meta: composer Jack Mahoney and Percy Wenrich}
+{meta: x_source classic-country}
+{meta: x_source_file whenyouworeatuliplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you wore a tulip
@@ -31,3 +34,8 @@ Your lips were sweeter than [E7]julep
 When you wore a [C]tulip
 And [F]I wore a big [G7]red [C]rose  
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Have I Done My Best For Jesus}
 {meta: artist Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file haveidonemybestforJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wonder if I’ve [F]done my best for [C]Jesus
@@ -46,3 +49,9 @@ For [G7]He has done so very much for [C]me
 {start_of_verse: Verse 5}
 Yes [G7]He has done so much for [C]me
 {end_of_verse}
+
+
+
+
+
+

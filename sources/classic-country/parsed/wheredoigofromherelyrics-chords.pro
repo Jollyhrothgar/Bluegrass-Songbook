@@ -1,6 +1,9 @@
 {meta: title Where Do I Go From Here}
 {meta: artist Hank Williams Jr.}
 {meta: composer Hank Williams and Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file wheredoigofromherelyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Slowly but [F]surely I've [C]watched your love die
@@ -29,3 +32,6 @@ And there's nothin' for me but my [G7]tears
 I [C]didn't wanna [F]see my [C]tears turn to hate
 So my darlin' [G7]I'm goin' from [C]here
 {end_of_verse}
+
+
+

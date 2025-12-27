@@ -1,6 +1,9 @@
 {meta: title The Girl At The End Of The Bar}
 {meta: artist John Anderson}
 {meta: composer John Anderson and Lionel Delmore}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlattheendofthebarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If you'd [C]ever been [Em]drinkin' I [Am]know that you'd seen [Em]her
@@ -37,3 +40,7 @@ And she's not [F]there to complain she just [C]wants to [F]remain
 The [C]girl at the [G7]end of the [C]bar [Am]
 The [C]girl at the [G7]end of the [F]ba[C]r
 {end_of_verse}
+
+
+
+

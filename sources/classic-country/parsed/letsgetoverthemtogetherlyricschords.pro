@@ -1,6 +1,9 @@
 {meta: title Let's Get Over Them Together}
 {meta: artist Moe Bandy}
 {meta: composer Charlie Craig and Keith Stegall}
+{meta: x_source classic-country}
+{meta: x_source_file letsgetoverthemtogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't know if we can make it
@@ -49,3 +52,10 @@ And I guess I don't measure up to [F]him
 Oh but then  maybe [C]together
 We [F]can get each [G7]other over [C]them
 {end_of_verse}
+
+
+
+
+
+
+

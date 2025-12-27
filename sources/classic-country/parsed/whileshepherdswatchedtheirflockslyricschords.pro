@@ -1,5 +1,8 @@
 {meta: title While Shepherds Watched Their Flocks}
 {meta: artist Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file whileshepherdswatchedtheirflockslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While shepherds watched [D7]their flocks [C]by [G]night
@@ -38,3 +41,7 @@
 [G]Good will henceforth from heaven to men
 [C]Begin and [G]never [C]cease [G]begin [C]and [D7]never [G]cease
 {end_of_verse}
+
+
+
+

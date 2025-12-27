@@ -1,6 +1,9 @@
 {meta: title This Time Of The Year}
 {meta: artist Brenda Lee}
 {meta: composer Clyde Otis and Brook Benton}
+{meta: x_source classic-country}
+{meta: x_source_file thistimeoftheyearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Little girls and [Fm]little boys
@@ -36,3 +39,7 @@ With [C]loads of joy [D7]on his sleigh
 [G7]This time of the year
 When Christmas is [C]near
 {end_of_verse}
+
+
+
+

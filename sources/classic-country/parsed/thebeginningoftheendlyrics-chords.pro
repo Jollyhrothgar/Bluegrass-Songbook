@@ -1,6 +1,9 @@
 {meta: title The Beginning Of The End}
 {meta: artist Barbara Mandrell}
 {meta: composer Kent M. Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file thebeginningoftheendlyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the beginning there was love
@@ -42,3 +45,7 @@ Now love is just a [Dm]place we've been
 [G7]We don't love there any[C]more
 Repeat last verse
 {end_of_verse}
+
+
+
+

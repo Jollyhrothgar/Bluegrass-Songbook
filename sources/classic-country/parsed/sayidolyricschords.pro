@@ -1,6 +1,9 @@
 {meta: title Say I Do}
 {meta: artist Ray Price}
 {meta: composer Ray Hildebrand}
+{meta: x_source classic-country}
+{meta: x_source_file sayidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many years have come and [Dm]gone
@@ -53,3 +56,9 @@ Anybody here sick and tired of [Dm]living like you do
 {start_of_verse: Verse 6}
 [F]Say I [C]do [Am]   [F]   [G7]say I [C]do [Am]   [F]   [G7]say I [C]do
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Santa Claus I Still Believe In You}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Teddy Gantry, John Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file santaclausistillbelieveinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You always come [F]around this time of [C]year
@@ -51,3 +54,9 @@ Santa [F]Claus the [C]kids are tucked in [F]tight
 [C]Santa [F]Claus [C]turn out the lights
 Oh [F]Santa [G7]Claus [C]mmm [F]mmm I [Dm]still believe  in [C]you
 {end_of_verse}
+
+
+
+
+
+

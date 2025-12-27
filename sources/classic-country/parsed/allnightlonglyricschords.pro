@@ -1,6 +1,9 @@
 {meta: title All Night Long}
 {meta: artist Tammy Wynette}
 {meta: composer Don Chapel}
+{meta: x_source classic-country}
+{meta: x_source_file allnightlonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Move closer to me don't slip out of my [C]arms 
@@ -22,3 +25,5 @@ You've made me so [G]weak for so [D7]long
 Don't tell [G]me you love me all through the [C]day 
 Then leave me [D7]alone all night [G]long
 {end_of_verse}
+
+

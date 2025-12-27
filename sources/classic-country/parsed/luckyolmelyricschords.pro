@@ -1,6 +1,9 @@
 {meta: title Lucky Ol' Me You}
 {meta: artist Carl Belew}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file luckyolmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I woke up this mornin' [F]happy as I could be
@@ -35,3 +38,7 @@ Now [G7]look what wonderful you is had done to lucky ol' [C]me
 {start_of_verse: Verse 5}
 Now [G7]look what wonderful you is done gone to lucky ol' [C]me
 {end_of_verse}
+
+
+
+

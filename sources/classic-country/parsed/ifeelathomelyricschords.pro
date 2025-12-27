@@ -1,6 +1,9 @@
 {meta: title I Feel At Home}
 {meta: artist Red Steagall}
 {meta: composer Ben Peters and Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file ifeelathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For the first time in my [G]life I [D7]feel at [C]home
@@ -30,3 +33,7 @@ For the first time in my [G]life I [D7]feel at [C]home [G]
 {start_of_verse: Verse 4}
 [C]For the first time in my [G]life I [D7]feel at [C]home[G]
 {end_of_verse}
+
+
+
+

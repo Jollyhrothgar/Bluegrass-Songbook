@@ -1,5 +1,8 @@
 {meta: title Frenchie McCormick}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file frenchiemccormicklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The last time [G7]I saw her she's [Am]standin' [C]alone
@@ -98,3 +101,16 @@ She [F]never left Micky [E7]alone
 [F]She didn't move [G7]was deter[C]mined to [Am]keep
 A [F]promise that's [G7]thirty years [C]old
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

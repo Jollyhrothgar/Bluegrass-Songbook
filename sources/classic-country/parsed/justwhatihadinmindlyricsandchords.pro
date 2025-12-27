@@ -1,6 +1,9 @@
 {meta: title Just What I Had In Mind}
 {meta: artist Faron Young}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file justwhatihadinmindlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I come home at the end of the [F]day
@@ -31,3 +34,6 @@
 [F]Oh but I've finally found
 [C]Just what I [G7]had in [C]mind
 {end_of_verse}
+
+
+

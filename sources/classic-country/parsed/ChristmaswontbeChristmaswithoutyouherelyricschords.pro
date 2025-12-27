@@ -1,6 +1,9 @@
 {meta: title Christmas Won't Be Christmas (Without You Here)}
 {meta: artist Sammy Kershaw}
 {meta: composer Steven Cohen and Rick Lagneaux}
+{meta: x_source classic-country}
+{meta: x_source_file ChristmaswontbeChristmaswithoutyouherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's a [C]silent night [F]snow is falling
@@ -41,3 +44,8 @@ With[C]out [G7]you [Am]here[D7]
 Oh [F]Christmas [F#m]wont' be [C]Christmas[F]
 With[C]out [G7]you [C]here
 {end_of_verse}
+
+
+
+
+

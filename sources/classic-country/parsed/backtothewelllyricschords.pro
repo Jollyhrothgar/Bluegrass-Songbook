@@ -1,6 +1,9 @@
 {meta: title Back To The Well}
 {meta: artist Kenny Rogers}
 {meta: composer Robert Byrne and Rick Bowles}
+{meta: x_source classic-country}
+{meta: x_source_file backtothewelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my home is so far away
@@ -33,3 +36,7 @@ But I [C]always come back to the girls
 {start_of_verse: Verse 5}
 [G7]Back to my love back to the [C]well
 {end_of_verse}
+
+
+
+

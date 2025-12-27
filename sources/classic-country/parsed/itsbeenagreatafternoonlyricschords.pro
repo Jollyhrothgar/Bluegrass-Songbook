@@ -1,5 +1,8 @@
 {meta: title It's Been a Great Afternoon}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file itsbeenagreatafternoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night we had a hell raisin' time
@@ -33,3 +36,6 @@ Sunrise chased the good time away
 [A7]I can't say we've had a good morning
 [C]Oh but babe it's been [D7]a great [G]afternoon
 {end_of_verse}
+
+
+

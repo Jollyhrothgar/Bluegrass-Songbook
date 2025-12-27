@@ -1,6 +1,9 @@
 {meta: title Gone And Left Me Blues}
 {meta: artist Ernest Tubb}
 {meta: composer Johnny Bond and Jimmy Wakely}
+{meta: x_source classic-country}
+{meta: x_source_file goneandleftmeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My weary heart for you is [F]crying
@@ -29,3 +32,6 @@ My [G7]heart would never take the [C]news
 I need you now and want you near [F]me
 I've [G7]got them gone and left me [C]blues
 {end_of_verse}
+
+
+

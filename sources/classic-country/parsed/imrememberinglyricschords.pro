@@ -1,6 +1,9 @@
 {meta: title I'm Remembering}
 {meta: artist Johnny Paycheck}
 {meta: composer Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file imrememberinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm remembering when I smiled like [G7]this
@@ -22,3 +25,5 @@ The memories we've made from the [C]start
 There's a love song we [C7]heard long [F]ago
 I'm [G7]remembering and loving you [C]so
 {end_of_verse}
+
+

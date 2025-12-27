@@ -1,6 +1,9 @@
 {meta: title I Couldn't Stand The Thought Of Losing You}
 {meta: artist Red Sovine}
 {meta: composer Red Hayes and Al Gore}
+{meta: x_source classic-country}
+{meta: x_source_file icouldntstandthethoughtoflosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's so many people [F]breaking up their [C]homes
@@ -29,3 +32,6 @@
 [F]They can't hurt us with their talking that they [C]do
 [F]Oh I couldn't stand the [G7]thought of losin' [C]you
 {end_of_verse}
+
+
+

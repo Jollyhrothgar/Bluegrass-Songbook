@@ -1,6 +1,9 @@
 {meta: title National Working Woman's Holiday}
 {meta: artist Sammy Kershaw}
 {meta: composer Roger Murrah, Pat Terry, James Hicks}
+{meta: x_source classic-country}
+{meta: x_source_file nationalworkingwomansholidaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They oughta run your picture in a magazine
@@ -58,3 +61,11 @@ If we weren't sinkin' in a river of debt
 [F]I know we're depending on every dime
 [G7]But I'm tired of you working that overtime
 {end_of_verse}
+
+
+
+
+
+
+
+

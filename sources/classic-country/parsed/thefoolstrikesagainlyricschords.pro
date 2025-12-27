@@ -1,6 +1,9 @@
 {meta: title The Fool Strikes Again}
 {meta: artist Johnny Paycheck}
 {meta: composer Mark Sherrill, Steve Davis, Gary Cobb}
+{meta: x_source classic-country}
+{meta: x_source_file thefoolstrikesagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Once again she offers [C]more than I'm [C][F]deserving
@@ -24,3 +27,5 @@
 [G7]And with a smile on his [C]face the [F]fool strikes [C]again
 [F]Yes the fool [C]the fool strikes [C][F]again
 {end_of_verse}
+
+

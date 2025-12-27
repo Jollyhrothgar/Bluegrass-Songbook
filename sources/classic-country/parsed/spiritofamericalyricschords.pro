@@ -1,6 +1,9 @@
 {meta: title Spirit Of America}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file spiritofamericalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It fights with our soldiers [C]on the battle[G]field
@@ -54,3 +57,11 @@ The [C]spirit of [G]America in the [D7]heart of me and [G]you
 The [C]spirit of [G]America [D7]so proud and [G]true
 The [C]spirit of [G]America God [D7]bless the Red White and [G]Blue
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Only In My Mind}
 {meta: artist Reba McEntire}
+{meta: x_source classic-country}
+{meta: x_source_file onlyinmymindlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On a park bench in the middle of July 
@@ -61,3 +64,11 @@ And I said [C]only in my [G]mind
 [D7]Darling [Em]have you ever [D7]cheated on me 
 And I said [C]only in my [G]mind
 {end_of_verse}
+
+
+
+
+
+
+
+

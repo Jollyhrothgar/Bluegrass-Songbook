@@ -1,6 +1,9 @@
 {meta: title Peace In My Soul}
 {meta: artist Sonny James}
 {meta: composer Milo Legate}
+{meta: x_source classic-country}
+{meta: x_source_file peaceinmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Peace in my [C7]soul [F]peace in my [C]soul
@@ -41,3 +44,8 @@ Lord give me [G7]peace in my [C]soul[F]  [C]
 {start_of_verse: Verse 4}
 Lord give me [G7]peace in my [C]soul
 {end_of_verse}
+
+
+
+
+

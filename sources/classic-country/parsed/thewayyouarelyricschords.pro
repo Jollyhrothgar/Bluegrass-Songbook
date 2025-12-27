@@ -1,6 +1,9 @@
 {meta: title The Way You Are}
 {meta: artist Johnny Duncan}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file thewayyouarelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I've [G]seen you check the [Em]mirror 
@@ -50,3 +53,9 @@ And [Am]I love you [D7]just the way you [G]are
 You're [Am]just the way I [D7]want you 
 And [Am]I love you [D7]just the way you [G]are
 {end_of_verse}
+
+
+
+
+
+

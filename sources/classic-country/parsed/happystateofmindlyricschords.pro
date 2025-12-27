@@ -1,5 +1,8 @@
 {meta: title Happy State Of Mind}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file happystateofmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maybe I don't love you quite as much as I believe I love you baby
@@ -38,3 +41,7 @@ Be it [Dm]love  [G7]or be it just a happy state of [C]mind
 [G7]Havin' you's a happy state of [C]mind
 [G7]Don't take away my happy state of [C]mind 
 {end_of_verse}
+
+
+
+

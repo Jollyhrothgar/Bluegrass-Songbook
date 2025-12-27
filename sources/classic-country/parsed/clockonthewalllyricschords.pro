@@ -1,6 +1,9 @@
 {meta: title Clock On The Wall}
 {meta: artist Crystal Gayle}
 {meta: composer Donald Webb}
+{meta: x_source classic-country}
+{meta: x_source_file clockonthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Clock on the wall
@@ -59,3 +62,11 @@ Back in my [D7]arms one more [G]time
 And bring my [A7]baby 
 Back in my [D7]arms one more [G]time
 {end_of_verse}
+
+
+
+
+
+
+
+

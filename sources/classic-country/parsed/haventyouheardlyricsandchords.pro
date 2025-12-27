@@ -1,6 +1,9 @@
 {meta: title Haven't You Heard}
 {meta: artist Porter Wagoner}
 {meta: composer Dale Siegenthaler}
+{meta: x_source classic-country}
+{meta: x_source_file haventyouheardlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Haven't you [F]heard there's a new love for [C]me
@@ -23,3 +26,5 @@
 {start_of_verse: Verse 3}
 [G7]When she said these words oh haven't you [C]heard
 {end_of_verse}
+
+

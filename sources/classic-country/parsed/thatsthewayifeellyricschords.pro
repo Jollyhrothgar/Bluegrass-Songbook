@@ -1,6 +1,9 @@
 {meta: title That's The Way I Feel}
 {meta: artist George Jones}
 {meta: composer Roger Miller and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file thatsthewayifeellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you ever feel unwanted kicked around so much you're taunted
@@ -43,3 +46,10 @@ Crying just because your lonely crying cause your one and only
 Love someone and love her dearly hope these words she didn't hear me
 [G]Left me here heartsick and lonely that's the way I feel
 {end_of_verse}
+
+
+
+
+
+
+

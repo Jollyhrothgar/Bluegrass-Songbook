@@ -1,6 +1,9 @@
 {meta: title Back To The Cross}
 {meta: artist Lester Flatt}
 {meta: composer Jessie Mae Martin}
+{meta: x_source classic-country}
+{meta: x_source_file backtothecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm out on the sea filled with [C]sorrows
@@ -43,3 +46,8 @@ Back to the cross and to [C]Jesus
 I've [G]drifted too far and I've [C]wandered
 From the [G]Savior that [D7]once was my [G]own
 {end_of_verse}
+
+
+
+
+

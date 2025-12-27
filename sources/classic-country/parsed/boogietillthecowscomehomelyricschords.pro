@@ -1,6 +1,9 @@
 {meta: title Boogie Till The Cows Come Home}
 {meta: artist Clay Walker}
 {meta: composer Clay Blaker and Roger Brown}
+{meta: x_source classic-country}
+{meta: x_source_file boogietillthecowscomehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna polish my best boots 
@@ -75,3 +78,12 @@ We're gonna boogie till the cows come [G]home
 [D7]Here we go with the Cotton Eyed Joe
 We're gonna boogie till the cows come [G]home
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title There’s No Disappointment In Heaven}
 {meta: artist Bob Wills}
 {meta: composer Frederick M. Lehman}
+{meta: x_source classic-country}
+{meta: x_source_file theresnodisappointmentinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s no [G7]disappointment in [C]Heaven
@@ -32,3 +35,7 @@ Where all redeemed of all ages
 [Fm]Oh what joy that will be [C]when my Savior I [F]see
 [C]In that beautiful [G7]city of [C]gold
 {end_of_verse}
+
+
+
+

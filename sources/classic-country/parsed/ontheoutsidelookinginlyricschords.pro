@@ -1,6 +1,9 @@
 {meta: title On The Outside Looking In}
 {meta: artist Connie Francis}
 {meta: composer Neil Sedaka and Howard Greenfield}
+{meta: x_source classic-country}
+{meta: x_source_file ontheoutsidelookinginlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I pass your [C]win-dow [G]and through the candle [D7]glow
@@ -26,3 +29,6 @@ That's why I [G]cry on the [D7]outside looking [G]in
 {start_of_verse: Verse 4}
 [C]That's why I [G]cry on the [D7]outside looking [G]in
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hold Me In Your Arms}
 {meta: artist Gena Roberts}
 {meta: composer Chuck Cusimano}
+{meta: x_source classic-country}
+{meta: x_source_file holdmeinyourarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You told me you were leaving you were only passing [C7]through
@@ -33,3 +36,7 @@ But [F]I can't help the [C]way I feel the [D7]feeling's just [G7]begun
 {start_of_verse: Verse 5}
 [F]Hold me in your [C]arms [G7]while my world falls [C]apart
 {end_of_verse}
+
+
+
+

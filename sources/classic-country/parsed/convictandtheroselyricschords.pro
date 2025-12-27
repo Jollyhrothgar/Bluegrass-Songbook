@@ -1,6 +1,9 @@
 {meta: title Convict And The Rose}
 {meta: artist Hank Snow}
 {meta: composer Betty Chapin and Robert King}
+{meta: x_source classic-country}
+{meta: x_source_file convictandtheroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Within my prison cell so [D7]dreary
@@ -36,3 +39,7 @@
 [D7]And when I go at daylight darling
 [G]Against my heart they'll find your rose
 {end_of_verse}
+
+
+
+

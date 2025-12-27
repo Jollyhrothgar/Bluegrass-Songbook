@@ -1,6 +1,9 @@
 {meta: title Stairway To Heaven}
 {meta: artist The Stanley Brothers}
 {meta: composer Bill J. Grant and Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file stairwaytoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you dreamed of a stairway to [C]heaven
@@ -43,3 +46,8 @@ That [G]leads to a home bright and [D7]fair
 Step [G]by step I'll climb till His [C]hand touches mine
 Then [G]I'll rest at the [D7]top of the [G]stairs
 {end_of_verse}
+
+
+
+
+

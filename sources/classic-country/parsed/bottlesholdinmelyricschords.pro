@@ -1,6 +1,9 @@
 {meta: title Bottle's Holdin' Me}
 {meta: artist Moe Bandy}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file bottlesholdinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I live across town from [F]the only one I [C]love
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]I'm not [C]holdin' the bottle [G7]the bottle's holdin' [C]me
 {end_of_verse}
+
+
+
+

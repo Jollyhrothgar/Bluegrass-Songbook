@@ -1,6 +1,9 @@
 {meta: title You're Gonna Lose Her Like That}
 {meta: artist Moe Bandy}
 {meta: composer Peggy Forman and Wayne Forman}
+{meta: x_source classic-country}
+{meta: x_source_file youregonnaloseherlikethatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She fixed up her hair bought her a new dress this [G7]morning
@@ -43,3 +46,8 @@ It's a cold matter of [F]fact
 Spending her nights looking [F]back
 [C]You're gonna [G7]lose her like [C]that
 {end_of_verse}
+
+
+
+
+

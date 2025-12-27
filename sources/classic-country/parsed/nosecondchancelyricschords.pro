@@ -1,6 +1,9 @@
 {meta: title No Second Chance}
 {meta: artist Carl Smith}
 {meta: composer Jerry Organ, Pete Pyle, Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file nosecondchancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So often she told me if I [F]didn’t [D7]change
@@ -29,3 +32,6 @@ No second chances she said [F]there’s no second [D7]chance
 Yes I had my pleasure at [F]her heart’s [D7]expense
 [G7]And that’s why I know there’s no second [C]chance
 {end_of_verse}
+
+
+

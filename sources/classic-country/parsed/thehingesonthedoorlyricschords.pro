@@ -1,5 +1,8 @@
 {meta: title The Hinges On The Door}
 {meta: artist Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file thehingesonthedoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I feel just like an E chord on an old [F]flat top [C]guitar
@@ -32,3 +35,6 @@ Then just like the tide you slip right back to [G7]shore
 Oh my [C]darling if you love me stick around and let me [F]know
 And stop [C]wearing out the [G7]hinges on the [C]door
 {end_of_verse}
+
+
+

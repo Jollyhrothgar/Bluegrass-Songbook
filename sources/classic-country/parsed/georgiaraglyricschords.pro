@@ -1,6 +1,9 @@
 {meta: title Georgia Rag}
 {meta: artist Webb Pierce}
 {meta: composer Reggie Ward and Michael Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file georgiaraglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now it was in a little Georgia town I spent a week or [G7]two
@@ -39,3 +42,8 @@
 [C]I’m gonna find that gal and make her mine beneath that same ol’ [G]moon
 [D7]And then we’ll dance to the Georgia [G]Rag
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Just Don't Like This Kind of Living}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ijustdontlikethiskindoflivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I Just Don't Like This Kind Of Living
@@ -46,3 +49,8 @@ I've told you once now I'll tell [C]you twice
 You better start to treat [F]me nice
 Cause [C]I just don't like [G7]this way of [C]living
 {end_of_verse}
+
+
+
+
+

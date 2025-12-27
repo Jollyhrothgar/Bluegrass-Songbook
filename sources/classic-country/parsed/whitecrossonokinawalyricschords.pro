@@ -1,6 +1,9 @@
 {meta: title White Cross On Okinawa}
 {meta: artist Bob Wills}
 {meta: composer Cliff Johnsen, Cliff Sundin & James Wills}
+{meta: x_source classic-country}
+{meta: x_source_file whitecrossonokinawalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a White Cross [F]Tonight on [C]Okinawa
@@ -29,3 +32,6 @@ In his [G7]mem-o-ry she'll [C]be true
 There's a [C]White Cross [F]Tonight on [C]Okinawa
 And a [D7]gold star in [G7]some mother's [C]home
 {end_of_verse}
+
+
+

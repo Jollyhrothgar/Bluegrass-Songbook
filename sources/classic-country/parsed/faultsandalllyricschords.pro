@@ -1,6 +1,9 @@
 {meta: title Faults And All}
 {meta: artist George Strait}
 {meta: composer Carl Perkins}
+{meta: x_source classic-country}
+{meta: x_source_file faultsandalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not so very long from now she'll be known all over town
@@ -35,3 +38,7 @@ Who'll [G7]hang around and take her faults and [C]all
 {start_of_verse: Verse 4}
 Yeah I'll [G7]hang around and take her faults and [C]all
 {end_of_verse}
+
+
+
+

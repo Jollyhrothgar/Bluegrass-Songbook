@@ -1,6 +1,9 @@
 {meta: title It Is Well With My Soul}
 {meta: artist Joey Feek}
 {meta: composer Horatio G. Spafford, Philip P. Bliss}
+{meta: x_source classic-country}
+{meta: x_source_file itiswellwithmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When [C]peace like a [G7]river [F]atten[G7]deth my [C]way
@@ -26,3 +29,6 @@ It is well  [G7]with my [C]soul
 It is [F]well it is [C]well [G7]with my [C]soul
 It is [F]well it is [C]well [G7]with my [F]soul[C]
 {end_of_verse}
+
+
+

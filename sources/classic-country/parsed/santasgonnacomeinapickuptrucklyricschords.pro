@@ -1,6 +1,9 @@
 {meta: title Santa's Gonna Come In A Pickup Truck}
 {meta: artist Alan Jackson}
 {meta: composer Red Simpson and Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file santasgonnacomeinapickuptrucklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I've been sorta worried about [F]Santa Claus this [C]year
@@ -33,3 +36,7 @@ Cause the [C]weatherman had some problems he [F]couldn't get snow you [C]see
 {start_of_verse: Verse 4}
 Yeah [F]Santa's gonna come in a [C]pickup [D7]truck when he [G7]visits you and [C]me
 {end_of_verse}
+
+
+
+

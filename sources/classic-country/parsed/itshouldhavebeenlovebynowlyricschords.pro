@@ -1,6 +1,9 @@
 {meta: title It Should Have Been Love By Now}
 {meta: artist Barbara Mandrell and Lee Greenwood}
 {meta: composer Jan Crutchfield and Paul Harrison}
+{meta: x_source classic-country}
+{meta: x_source_file itshouldhavebeenlovebynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's never gonna [Em]happen [F]together 
@@ -35,3 +38,6 @@ We [Dm]oughta feel [G7]so much [C]more
 It's turning me [Em]upside [F]down 
 Cause it should have been [G7]love by [C]now
 {end_of_verse}
+
+
+

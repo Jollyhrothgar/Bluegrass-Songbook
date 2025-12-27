@@ -1,6 +1,9 @@
 {meta: title He Knows What I’m Crying About}
 {meta: artist Jeannie Seely}
 {meta: composer George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file heknowswhatimcryingaboutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You think I’m not going through
@@ -32,3 +35,6 @@ So he knows what I’m [D7]crying [G]about
 {start_of_verse: Verse 4}
 Oh he knows what I’m [D7]crying [G]about
 {end_of_verse}
+
+
+

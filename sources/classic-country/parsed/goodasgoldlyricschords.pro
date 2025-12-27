@@ -1,6 +1,9 @@
 {meta: title Good As Gold}
 {meta: artist Porter Wagoner}
 {meta: composer Paul Martin}
+{meta: x_source classic-country}
+{meta: x_source_file goodasgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll agree that we may [F]never own a [C]mansion
@@ -30,3 +33,6 @@ And we've [C]married without even wedding [G7]rings
 Yet they [C]envy us so often we've been [F]told
 We've got each [C]other and [G7]that's as good as [F]gold[C]
 {end_of_verse}
+
+
+

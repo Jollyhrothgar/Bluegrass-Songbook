@@ -1,6 +1,9 @@
 {meta: title Raining In Dallas}
 {meta: artist Gene Watson}
 {meta: composer John Gostick and Richard Moreland}
+{meta: x_source classic-country}
+{meta: x_source_file rainingindallaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll bet you it's [D7]raining in [Em]Dallas 
@@ -29,3 +32,6 @@ Cause [G]I feel there's [D7]tears in her [G]eyes
 Oh I'll [C]bet you it's raining in [G]Dallas [Em]
 Cause [G]I feel there's [D7]tears in her [C]eyes[G]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Old Old House}
 {meta: artist George Jones}
 {meta: composer Hal Bynum and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file theoldoldhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's an old old house that [C]once was a [G]mansion
@@ -34,3 +37,7 @@ And his head is [D7]bowed in memo[G]ry
 There's an old old man who [C]walks through the [G]garden
 And his head is [D7]bowed in memo[G]ry
 {end_of_verse}
+
+
+
+

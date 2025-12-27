@@ -1,5 +1,8 @@
 {meta: title Dear Memory}
 {meta: artist Jim Ed Brown}
+{meta: x_source classic-country}
+{meta: x_source_file dearmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It came in the mail [C]this [G]morning
@@ -34,3 +37,8 @@ And you’ll always be the heart [C]of me
 {start_of_verse: Verse 6}
 [D7]You’re still a part of me in [G][C]memo-ries
 {end_of_verse}
+
+
+
+
+

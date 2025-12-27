@@ -1,5 +1,8 @@
 {meta: title Help Me Hank I'm Falling}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file helpmehankimfallinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I made me a record in Nashville not long [C]ago
@@ -37,3 +40,8 @@ Write me a letter send me a wire or [C]call
 [C]Help me Hank I’m falling can’t you hear me a calling
 Can’t [G]you see I’m sorry that I turned you away old [C]pal
 {end_of_verse}
+
+
+
+
+

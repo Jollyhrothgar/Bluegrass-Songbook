@@ -1,6 +1,9 @@
 {meta: title The Feeling Never Goes Away}
 {meta: artist Doug Stone}
 {meta: composer Kim Williams, Phyllis Bennett, Doug Stone}
+{meta: x_source classic-country}
+{meta: x_source_file thefeelingnevergoesawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Our eyes meet in the mirror  
@@ -47,3 +50,8 @@ Time after [G]time when I feel you take my hand
 [Am]You prove to [C]me that I'm [D7]one lucky man 
 [C]And darling the [D7]feeling never goes [G]away
 {end_of_verse}
+
+
+
+
+

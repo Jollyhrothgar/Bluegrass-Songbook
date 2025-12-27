@@ -1,6 +1,9 @@
 {meta: title Slide Off Your Satin Sheets}
 {meta: artist Johnny Paycheck}
 {meta: composer Wayne Carson and Donn Tankersley}
+{meta: x_source classic-country}
+{meta: x_source_file slideoffyoursatinsheetslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What a beautiful mansion he built [Am]you
@@ -43,3 +46,8 @@
 [Am]You know where to find my door
 [D7]I know what you're [C]cry-ing [G][Am]for
 {end_of_verse}
+
+
+
+
+

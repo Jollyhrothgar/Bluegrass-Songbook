@@ -1,6 +1,9 @@
 {meta: title Dear Mama I'm A Cowboy}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Richard O'Brien}
+{meta: x_source classic-country}
+{meta: x_source_file dearmamaimacowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's nothin' [G7]left but [C]ashes the [Dm]fire is gone for good
@@ -38,3 +41,8 @@ And [G7]thought of our own mamas and all the [F]things we [C]left un[G7]done
 {start_of_verse: Verse 5}
 I [G7]never killed nobody and I [F]never [G7]robbed that [C]train
 {end_of_verse}
+
+
+
+
+

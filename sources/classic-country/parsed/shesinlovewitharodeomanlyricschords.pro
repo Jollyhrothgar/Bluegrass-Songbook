@@ -1,6 +1,9 @@
 {meta: title She's In Love With A Rodeo Man}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file shesinlovewitharodeomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's a barmaid in a west Texas dance [F]hall
@@ -36,3 +39,7 @@ Well I know that her life ain't been [F]easy
 But she still is a beautiful [F]woman
 [C]In the lights of this [G7]Texas dance [C]hall
 {end_of_verse}
+
+
+
+

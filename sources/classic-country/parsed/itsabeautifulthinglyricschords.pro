@@ -1,6 +1,9 @@
 {meta: title It's A Beautiful Thing}
 {meta: artist Ronnie Milsap}
 {meta: composer Craig Wiseman and Jeffrey Steele}
+{meta: x_source classic-country}
+{meta: x_source_file itsabeautifulthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When I [Dm]look in your [C]eyes and [G7]see how much she [C]loves [Em]me [C]  [G7]
@@ -37,3 +40,7 @@ A beautiful [C]dream [F]  to be [G7]someone's [Am]fir[C]e and wildest [Dm]dream
 [F]Ooooh my [C]love [Dm]  what a [G7]beautiful [C]thing
 [F]Ooh my [C]love [Dm]  what a [G7]beautiful [F]thin[C]g
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Wedding Bells For You And Him}
 {meta: artist Stonewall Jackson}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file weddingbellsforyouandhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you’ve really found another
@@ -27,3 +30,5 @@ When they [F]ring those wedding bells I’ll be there [C]smiling
 But I [F]guess my heart can stand [C]it
 When they ring those [F]wedding [C]bells for [G7]you and [C]him
 {end_of_verse}
+
+

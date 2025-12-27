@@ -1,6 +1,9 @@
 {meta: title That Makes Two of Us}
 {meta: artist Connie Smith}
 {meta: composer Emory Gordy, Jr., Kostas, Patty Loveless}
+{meta: x_source classic-country}
+{meta: x_source_file thatmakestwoofuslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Are you lonely just like [F]me
@@ -29,3 +32,6 @@ Don't you [G7]think it's time to let the healing [C]start
 If you [G7]miss someone that makes [C]two of us
 It takes [F]two of us to [G7]mend a broken [C]heart
 {end_of_verse}
+
+
+

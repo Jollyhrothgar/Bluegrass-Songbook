@@ -1,6 +1,9 @@
 {meta: title I Know You're Married (But I Love You Still)}
 {meta: artist Reno and Smiley}
 {meta: composer Mack Magaha and Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file iknowyouremarriedbutiloveyoustilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The day I met you my heart spoke to me
@@ -25,3 +28,6 @@ My broken heart will have to [D7]pay the [G]cost
 You know I love you and I always will
 I know you're married but I [D7]love you [G]still 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Answer to Your Letter}
 {meta: artist Johnny Rodriguez}
 {meta: composer Tom T. Hall and Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file answertoyourletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your letter came to me today  I noticed no return [C]address
@@ -29,3 +32,6 @@ It [C]hurts to know that you [D7]found someone [G]new
 At least you mentioned I [C]was worth a few [D7]good [G]memories
 [C]And that you never [D7]loved like you loved [G]me 
 {end_of_verse}
+
+
+

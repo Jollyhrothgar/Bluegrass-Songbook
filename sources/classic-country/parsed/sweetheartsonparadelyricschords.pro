@@ -1,6 +1,9 @@
 {meta: title Sweethearts On Parade}
 {meta: artist Brenda Lee}
 {meta: composer Bob Newman and Carmen Lambardo}
+{meta: x_source classic-country}
+{meta: x_source_file sweetheartsonparadelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Two by two they go [D7]marchin' through 
@@ -30,3 +33,6 @@ With the [G]sweethearts [C]on pa[G]rade
 {start_of_verse: Verse 4}
 (Sweethearts [C]on pa[G]rade) 
 {end_of_verse}
+
+
+

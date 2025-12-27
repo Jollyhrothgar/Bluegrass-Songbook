@@ -1,6 +1,9 @@
 {meta: title Pictures}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Lewis DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file pictureslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here's the picture that we took in [G7]Cincinnati
@@ -50,3 +53,9 @@ Of [G7]how we used to look and [C]what we used to [C7]do
 And [F]each time we make a [G7]memory I'm [C]remind-[F]ed
 I can't [C]picture me with no [G7]one else but [C]you
 {end_of_verse}
+
+
+
+
+
+

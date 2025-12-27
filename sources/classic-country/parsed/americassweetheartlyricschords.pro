@@ -1,6 +1,9 @@
 {meta: title America's Sweetheart}
 {meta: artist Mel Tillis}
 {meta: composer Bob Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file americassweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Kenworths and Peterbilts parked in the [F]lot
@@ -50,3 +53,9 @@
 [F]She’s America’s sweetheart the working man’s friend
 [G7]With a chewing gum smile and a fill ‘er up [C]again
 {end_of_verse}
+
+
+
+
+
+

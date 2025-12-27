@@ -1,6 +1,9 @@
 {meta: title You're Standing In The Way}
 {meta: artist The Wilburn Brothers}
 {meta: composer Ron Hastings}
+{meta: x_source classic-country}
+{meta: x_source_file yourestandinginthewaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The tie that binds me to you time never can [G7]erase
@@ -22,3 +25,5 @@ But to [D7]you it wouldn't matter if [G7]I should die tonight
 I'm [C]falling more in love with her and [C7]need you less each [F]day
 So won't you please move [C]over you're [G7]standing in the [C]way
 {end_of_verse}
+
+

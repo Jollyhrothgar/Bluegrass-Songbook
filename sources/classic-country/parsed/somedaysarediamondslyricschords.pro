@@ -1,6 +1,9 @@
 {meta: title Some Days Are Diamonds}
 {meta: artist John Denver}
 {meta: composer Dick Feller}
+{meta: x_source classic-country}
+{meta: x_source_file somedaysarediamondslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you ask  how I’ve [D7]been here without [Em]you
@@ -29,3 +32,6 @@ Some time the [Em]hard times [A7]won’t leave me [D7]alone
 Some times the [G]cold winds  [C]blow a chill in my [G]bones
 [Em]Some days are [G]diamonds  [D7]some days are [G]stone
 {end_of_verse}
+
+
+

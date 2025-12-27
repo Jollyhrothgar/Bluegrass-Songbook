@@ -1,5 +1,8 @@
 {meta: title Loversville}
 {meta: artist Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file loversvillelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Go with me to [F]Loversville [G7]it's just over [C]kissing hill
@@ -25,3 +28,6 @@ I love you and [F]always will [G7]go with me to [C]Loversville
 {start_of_verse: Verse 4}
 [G7]Go with me to [C]Loversville [G7]go with me to [C]Loversville
 {end_of_verse}
+
+
+

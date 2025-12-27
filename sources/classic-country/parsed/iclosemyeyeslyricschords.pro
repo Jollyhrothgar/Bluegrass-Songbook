@@ -1,6 +1,9 @@
 {meta: title I Close My Eyes}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Wayne Walker}
+{meta: x_source classic-country}
+{meta: x_source_file iclosemyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw you in another's arms last [G7]night
@@ -29,3 +32,6 @@
 [C]Cause if I lost you dear my heart would [G7]break
 [C]I love you so much I close my eyes
 {end_of_verse}
+
+
+

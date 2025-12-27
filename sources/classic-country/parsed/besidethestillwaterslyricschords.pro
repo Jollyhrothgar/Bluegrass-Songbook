@@ -1,6 +1,9 @@
 {meta: title Beside The Still Waters}
 {meta: artist Mac Wiseman}
 {meta: composer Theodore Silva}
+{meta: x_source classic-country}
+{meta: x_source_file besidethestillwaterslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Beside the still [G7]waters in [C]pastures of green 
@@ -29,3 +32,6 @@ The [A7]Shepherd will guide all the [D7]way
 In [G]paths that are [G7]righteous He [C]leads day by day 
 Be[G]side the still [D7]waters of [G]peace
 {end_of_verse}
+
+
+

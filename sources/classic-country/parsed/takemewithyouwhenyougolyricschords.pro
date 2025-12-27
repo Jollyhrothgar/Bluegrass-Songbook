@@ -1,6 +1,9 @@
 {meta: title Take Me With You When You Go}
 {meta: artist Tracy Byrd}
 {meta: composer Mark Nesler and Jennifer Hanson}
+{meta: x_source classic-country}
+{meta: x_source_file takemewithyouwhenyougolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You can [C]settle down in Mexico [F]runaway join a [G7]circus show
@@ -44,3 +47,8 @@ Or get [F]lost in the blues on [C]Bourbon Street [A#7]down in New Or[G7]leans
 [F]Just take me [G7]with you when you [Am]go [G7]   [F]  [C]
 [F]Just take me [G7]with you when you [C]go
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Hole}
 {meta: artist Randy Travis}
 {meta: composer James Hicks and Skip Ewing}
+{meta: x_source classic-country}
+{meta: x_source_file theholelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A friend of mine bought himself a shovel said I'm gonna tunnel me a [G7]mine
@@ -47,3 +50,9 @@ But [F]he's st[C]ill on the bot[G7]tom and he can't dig [C]out of the hole
 {start_of_verse: Verse 5}
 [F]It's hell on the [C]bottom and you [G7]can't dig out of the [C]hole
 {end_of_verse}
+
+
+
+
+
+

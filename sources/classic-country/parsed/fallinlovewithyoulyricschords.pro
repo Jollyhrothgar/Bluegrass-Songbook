@@ -1,6 +1,9 @@
 {meta: title Fall In Love With You}
 {meta: artist David Allan Coe}
 {meta: composer David A. Coe and Skeet Petty}
+{meta: x_source classic-country}
+{meta: x_source_file fallinlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I ever [F]needed love [G7]I need it [C]now
@@ -33,3 +36,6 @@ How you [F]fanta[C]size [F]tellin' little [C]lies
 [D7]Anyone who's fool enough [C]to look into your [F]eyes
 And fall in [G7]love with [C]you
 {end_of_verse}
+
+
+

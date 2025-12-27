@@ -1,6 +1,9 @@
 {meta: title Big Butter And Egg Man}
 {meta: artist Randy Travis}
 {meta: composer Percy Venable}
+{meta: x_source classic-country}
+{meta: x_source_file bigbutterandeggmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey she wants a big butter and [D7]egg man
@@ -40,3 +43,7 @@ She says [C]fancy clothes have [F]never been mine
 [C]She wants a big butter and [D7]egg man
 [G7]From California US[C]A
 {end_of_verse}
+
+
+
+

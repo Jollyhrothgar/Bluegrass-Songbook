@@ -1,6 +1,9 @@
 {meta: title At The Close Of A Long Long Day}
 {meta: artist Slim Whitman}
 {meta: composer Johnny Marvin and Billy Moll}
+{meta: x_source classic-country}
+{meta: x_source_file atthecloseofalonglongdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wait for me at the [B7]close of a [C]long long [G]day
@@ -22,3 +25,5 @@ At the [D7]close of a long long [G]day
 [G]In my arms all your [B7]worries will [C]fade away
 At the [D7]close of a long long [G]day 
 {end_of_verse}
+
+

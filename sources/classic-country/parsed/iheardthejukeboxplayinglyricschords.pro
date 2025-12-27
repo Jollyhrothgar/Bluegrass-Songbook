@@ -1,6 +1,9 @@
 {meta: title I Heard The Jukebox Playing}
 {meta: artist Kitty Wells}
 {meta: composer Linda Baggett, Web Pierce, Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file iheardthejukeboxplayinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You said that you'd be happy 
@@ -43,3 +46,8 @@ Cause you stayed away so [G]long
 And I [C]heard the jukebox [G]playing 
 When you [D7]called me on the [G]phone
 {end_of_verse}
+
+
+
+
+

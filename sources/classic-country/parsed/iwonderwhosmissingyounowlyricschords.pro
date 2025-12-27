@@ -1,6 +1,9 @@
 {meta: title I Wonder Who's Missing You Now}
 {meta: artist Johnny Duncan}
 {meta: composer Sonny Throckmorton, Craig Dillingham, Mark Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderwhosmissingyounowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I saw you out doing the town
@@ -29,3 +32,6 @@ Watching the time [C7]pass and [F]walking the floor
 [G7]I bet he got much more than what he bargained for
 I wonder who's missing you [C]now
 {end_of_verse}
+
+
+

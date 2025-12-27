@@ -1,6 +1,9 @@
 {meta: title Do It For The Love}
 {meta: artist Jack Greene}
 {meta: composer David Wills}
+{meta: x_source classic-country}
+{meta: x_source_file doitforthelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She works in a café [F]for minimum [C]wage
@@ -42,3 +45,8 @@ Love wasn’t [F]easy you [G7]know it took [C]sweat tears and [F]love
 He didn’t do it cause He [C]had to [G7]He did it for the [C]love
 [F]He didn’t do it cause He [C]had to [G7]He did it for the [C]love
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Where Did The Sunshine Go}
 {meta: artist Jim Ed Brown}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file wheredidthesunshinegolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where did the sunshine go 
@@ -50,3 +53,9 @@ Where is the one I [G]needed so
 Where is the one I [G]needed so 
 [D7]Where did the sunshine [G]go
 {end_of_verse}
+
+
+
+
+
+

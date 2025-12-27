@@ -1,6 +1,9 @@
 {meta: title Pistol Packing Mama}
 {meta: artist Tex Ritter}
 {meta: music Al Dexter}
+{meta: x_source classic-country}
+{meta: x_source_file pistolpackingmamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Drinking beer in a cabaret and was I having [G7]fun
@@ -61,3 +64,14 @@ But with some lead she shot him dead his honking days are [C]done
 Lay that pistol down babe lay that pistol [G7]down
 Pistol Packing Mama lay that pistol [C]down
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

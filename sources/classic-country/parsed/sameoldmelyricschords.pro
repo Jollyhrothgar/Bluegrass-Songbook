@@ -1,5 +1,8 @@
 {meta: title Same Old Me}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file sameoldmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]With time my face has wrinkled 
@@ -57,3 +60,13 @@ I felt for [C]you the day [G]we met
 I'm still the [C]same ole [G]me 
 Loving the same sweet [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

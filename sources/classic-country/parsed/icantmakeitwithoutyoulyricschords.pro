@@ -1,6 +1,9 @@
 {meta: title I Can't Make It Without You}
 {meta: artist Curtis Potter}
 {meta: composer Daryl W. Hall and Ray Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file icantmakeitwithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What a good for nothing way to [G7]start the [C]day
@@ -29,3 +32,6 @@ But it always turns [A7]out I need [D7]more than just a [G7]few
 [F]At night you'll find me sitting on some [C]barstool
 I can't make it without you or [G7]a drink or [C]two
 {end_of_verse}
+
+
+

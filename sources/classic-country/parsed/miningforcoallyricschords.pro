@@ -1,6 +1,9 @@
 {meta: title Mining For Coal}
 {meta: artist Randy Travis}
 {meta: composer Matraca Berg and Ronnie Samoset}
+{meta: x_source classic-country}
+{meta: x_source_file miningforcoallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've searched the world over all of my life
@@ -42,3 +45,8 @@ When you were you polished by [G7]love
 I [Am]found me a diamond [F] just mining for [C]coal
 Repeat last verse
 {end_of_verse}
+
+
+
+
+

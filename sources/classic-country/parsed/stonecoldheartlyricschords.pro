@@ -1,6 +1,9 @@
 {meta: title Stone Cold Heart}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file stonecoldheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s over this time it’s the end of the line
@@ -29,3 +32,6 @@ And [C]mountains will crumble [G7]apart
 But I [C]know too well all the fires of hell
 Cannot [G7]melt your stone cold [C]heart
 {end_of_verse}
+
+
+

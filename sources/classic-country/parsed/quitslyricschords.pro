@@ -1,5 +1,8 @@
 {meta: title Quits}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file quitslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We couldn't call it love cause it [C]really wasn't love any[G]more
@@ -33,3 +36,6 @@ The longer you [D7]live with some[G]one you can't [C]live with [G]the [C]harder 
 [D7]We called it lovely then we called it lonely finally we called it [G]quits
 [D7]We called it magic then we called it tragic finally we called it [G]quits
 {end_of_verse}
+
+
+

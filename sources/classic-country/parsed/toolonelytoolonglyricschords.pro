@@ -1,6 +1,9 @@
 {meta: title Too Lonely Too Long}
 {meta: artist Mel Tillis}
 {meta: composer Jim Owens}
+{meta: x_source classic-country}
+{meta: x_source_file toolonelytoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Go on look down your [F]righteous nose at me
@@ -33,3 +36,7 @@ Two [D7]lips that cried from [G7]hunger for your kiss
 {start_of_verse: Verse 4}
 [G7]Two arms two lips too lonely too [C]long
 {end_of_verse}
+
+
+
+

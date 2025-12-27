@@ -1,6 +1,9 @@
 {meta: title God Bless America Again}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare and Boice Hawkins}
+{meta: x_source classic-country}
+{meta: x_source_file godblessamericaagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God bless [F]America [G7]again
@@ -45,3 +48,9 @@ And I love Her with all my heart
 And let me tell you this Sir everything I am
 Or ever hope to be I owe to Her
 {end_of_verse}
+
+
+
+
+
+

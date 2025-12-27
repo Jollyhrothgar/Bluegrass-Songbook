@@ -1,5 +1,8 @@
 {meta: title The Day Is Almost Over}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file thedayisalmostoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the [C]day is [D7]almost [G][C]o-ver
@@ -28,3 +31,6 @@
 [C]When He calls [Am]His children [D7]to His [G]side
 [D7]Will He say yes this child is [G][C]Mine
 {end_of_verse}
+
+
+

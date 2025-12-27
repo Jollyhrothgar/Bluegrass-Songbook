@@ -1,6 +1,9 @@
 {meta: title My Way Of Life}
 {meta: artist Jimmy Dean}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file mywayoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Standing on a road [A7]walking down a [D7]highway
@@ -44,3 +47,9 @@
 [C]Standing on a road [A7]walking down a [D7]highway
 [F]Ain't going nowhere but that's my [C]way of [C][F]life
 {end_of_verse}
+
+
+
+
+
+

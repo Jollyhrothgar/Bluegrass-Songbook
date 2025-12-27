@@ -1,6 +1,9 @@
 {meta: title Love's A Woman's Job}
 {meta: artist Norma Jean}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file lovesawomansjoblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just overheard [C]on the tele[G]phone
@@ -46,3 +49,7 @@ And I've got work to [G]do
 Yes love's a [D7]woman's job 
 And I've got work to [G]do
 {end_of_verse}
+
+
+
+

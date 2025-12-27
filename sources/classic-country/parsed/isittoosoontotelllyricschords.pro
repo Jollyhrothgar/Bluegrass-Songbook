@@ -1,6 +1,9 @@
 {meta: title Is It Too Soon To Tell}
 {meta: artist Marsha Thornton}
 {meta: composer Michael Noble, Jeff Pennig, Marsha Thornton}
+{meta: x_source classic-country}
+{meta: x_source_file isittoosoontotelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Soft sudden breeze [B7]magnolia trees a [E7]new moon above
@@ -36,3 +39,6 @@ For you to be mine
 [C]Yes it's not too [D7]soon to [G]tell[E7]
 [C]No it's not too [D7]soon to [G]tell
 {end_of_verse}
+
+
+

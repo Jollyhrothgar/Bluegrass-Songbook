@@ -1,6 +1,9 @@
 {meta: title I Was Coming Home To You}
 {meta: artist Hank Locklin}
 {meta: composer Kendall Hayes and Jimmy Rule}
+{meta: x_source classic-country}
+{meta: x_source_file iwascominghometoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I stopped [C]by at the [F]party of an [C]old friend[Am]
@@ -28,3 +31,6 @@ Even [C]though I know you [F]saw her arms [C]around me[Am]
 {start_of_verse: Verse 4}
 Oh [G7]darling I was coming home to [C]you
 {end_of_verse}
+
+
+

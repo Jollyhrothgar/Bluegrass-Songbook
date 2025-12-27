@@ -1,6 +1,9 @@
 {meta: title Put Back My Ring On Your Hand}
 {meta: artist Charley Pride}
 {meta: composer Glenn Ash}
+{meta: x_source classic-country}
+{meta: x_source_file putbackmyringonyourhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had the world in my [G7]hands
@@ -33,3 +36,6 @@ You're my [G7]life my dreams and my [C]plans
 I'll do anything to [F]make it up [C]to you
 And [G7]put back my ring on your [C]hand
 {end_of_verse}
+
+
+

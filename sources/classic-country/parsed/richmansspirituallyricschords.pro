@@ -1,5 +1,8 @@
 {meta: title Rich Man's Spiritual}
 {meta: artist Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file richmansspirituallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gonna buy me a [Em]long white robe 
@@ -60,3 +63,8 @@ To [G7]lead me [C]home[G7]
 I'm gonna [C]get me a smiling [D7]angel 
 To [G7]lead me [F]hom[C]e
 {end_of_verse}
+
+
+
+
+

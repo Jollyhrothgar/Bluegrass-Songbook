@@ -1,6 +1,9 @@
 {meta: title Feeling Single Seeing Double}
 {meta: artist Emmylou Harris}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file feelingsingleseeingdoublelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Well I really had a ball last [C]night
@@ -56,3 +59,11 @@ Well I started walking the long way home
 But today I'll face the big fight
 [G7]But I really had a ball last [C]night
 {end_of_verse}
+
+
+
+
+
+
+
+

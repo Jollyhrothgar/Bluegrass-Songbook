@@ -1,6 +1,9 @@
 {meta: title Good Year For The Wine}
 {meta: artist Ernest Tubb}
 {meta: composer Fred Burch and Tandy Rice}
+{meta: x_source classic-country}
+{meta: x_source_file goodyearforthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some people say I [D7]drink because you left [G]me
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]I just heard this was a good year for the [G]wine
 {end_of_verse}
+
+
+
+

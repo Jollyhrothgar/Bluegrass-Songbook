@@ -1,6 +1,9 @@
 {meta: title Four Letter Fool}
 {meta: artist Moe Bandy}
 {meta: composer Kallie Jean}
+{meta: x_source classic-country}
+{meta: x_source_file fourletterfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had everything in my favor  under God's blue [G7]sky
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [G7]In plain old ordinary everyday aims I was nothing but a four letter [C]fool
 {end_of_verse}
+
+
+

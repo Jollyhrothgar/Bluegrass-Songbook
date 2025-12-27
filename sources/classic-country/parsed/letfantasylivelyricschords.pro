@@ -1,6 +1,9 @@
 {meta: title Let Fantasy Live}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file letfantasylivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There's a [C]cat in a hat [G7]that isn't there
@@ -42,3 +45,7 @@ Oh [G7]oh  [F]let fantasy [C]live
 Oh [G7]oh  [F]let fantasy [C]live
 Oh [G7]oh  [F]let fantasy [C]live
 {end_of_verse}
+
+
+
+

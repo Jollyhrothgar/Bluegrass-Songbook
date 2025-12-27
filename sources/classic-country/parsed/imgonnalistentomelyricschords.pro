@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Listen To Me}
 {meta: artist Gene Pitney}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnalistentomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I loved you I was foolish and I knew [C]it
@@ -33,3 +36,7 @@ The [G]next time I tell me [D7]something I'm gonna listen to [G]me
 {start_of_verse: Verse 4}
 Oh the next time I tell me [D7]something I'm gonna listen to [G]me
 {end_of_verse}
+
+
+
+

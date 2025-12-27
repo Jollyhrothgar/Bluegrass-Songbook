@@ -1,6 +1,9 @@
 {meta: title Two Story House}
 {meta: artist Tammy Wynette}
 {meta: composer Glenn D. Tubb, Dave Lindsey, Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file twostoryhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We always wanted a [G7]big two story [C]house
@@ -36,3 +39,7 @@ Whoa what [C]splendor but there's [F]no love [G7]about
 [C]I've got my [G7]story and [C]I've got mine [F]too
 How sad it [C]is we now live in a [G7]two story [C]house
 {end_of_verse}
+
+
+
+

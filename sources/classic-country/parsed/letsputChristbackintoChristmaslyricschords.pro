@@ -1,6 +1,9 @@
 {meta: title Let's Put Christ Back Into Christmas}
 {meta: artist Tammy Wynette}
 {meta: composer Carmol Taylor and Agnes Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file letsputChristbackintoChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Unto you is [Dm]born this day a [G]Savior
@@ -30,3 +33,6 @@ May peace on earth at [G7]Christmas time [C]appear
 Let’s put [G]Christ back into [D7]Christmas this [G]year
 [C]Let’s put [G]Christ back into [D7]Christmas this [G]year
 {end_of_verse}
+
+
+

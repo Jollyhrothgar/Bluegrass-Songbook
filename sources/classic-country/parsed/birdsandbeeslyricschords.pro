@@ -1,6 +1,9 @@
 {meta: title Birds and Bees}
 {meta: artist Fats Domino}
 {meta: composer Antoine Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file birdsandbeeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A little bird said to a honeybee
@@ -53,3 +56,14 @@ Don't look like we can win
 The big bird said sweet talkin'
 [G7]And maybe he'll come on [C]in
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

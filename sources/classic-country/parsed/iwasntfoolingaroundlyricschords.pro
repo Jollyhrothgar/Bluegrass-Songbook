@@ -1,6 +1,9 @@
 {meta: title I Wasn't Fooling Around}
 {meta: artist George Strait}
 {meta: composer Jim Lauderdale and John Leventhal}
+{meta: x_source classic-country}
+{meta: x_source_file iwasntfoolingaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wasn't fooling [D7]around 
@@ -37,3 +40,7 @@ So [C]take me seriously [D7]darling please just take me
 [G7]I wasn't fooling [C]around
 [G7]I wasn't fooling [C]around
 {end_of_verse}
+
+
+
+

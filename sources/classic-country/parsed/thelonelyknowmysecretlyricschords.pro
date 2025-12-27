@@ -1,6 +1,9 @@
 {meta: title The Lonely Know My Secret}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file thelonelyknowmysecretlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a secret behind the [D7]smile you see
@@ -29,3 +32,6 @@ And the [C]lonely [D7]know my [G]secret they [D7]know you're on my [G]mind
 {start_of_verse: Verse 3}
 Yes the [C]lonely [D7]know my [G]secret they [D7]know I still love [G]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Darling Days}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file darlingdayslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I never love [C]again I won't feel [G]cheated
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]What I'd give to live those [D7]darling days [G]again
 {end_of_verse}
+
+
+
+

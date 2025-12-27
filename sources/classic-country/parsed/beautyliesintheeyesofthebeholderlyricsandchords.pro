@@ -1,6 +1,9 @@
 {meta: title Beauty Lies In The Eyes Of The Beholder}
 {meta: artist Moe Bandy}
 {meta: composer Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file beautyliesintheeyesofthebeholderlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She may not be a beauty pageant [C]winner
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [D7]And I'll be holding her [G]tonight
 {end_of_verse}
+
+
+
+

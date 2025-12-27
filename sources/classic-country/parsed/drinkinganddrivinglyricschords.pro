@@ -1,6 +1,9 @@
 {meta: title Drinking And Driving}
 {meta: artist Johnny Paycheck}
 {meta: composer Gary Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file drinkinganddrivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Five dollars worth of regular three dollars worth of wine
@@ -40,3 +43,8 @@ I’m gonna be [G]drinking and driving that [D7]woman right off of my [G]mind
 {start_of_verse: Verse 5}
 [C]I’m gonna be [G]drinking and driving that [D7]woman right off of my [G]mind
 {end_of_verse}
+
+
+
+
+

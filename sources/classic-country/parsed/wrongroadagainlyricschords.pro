@@ -1,6 +1,9 @@
 {meta: title Wrong Road Again}
 {meta: artist Crystal Gayle}
 {meta: composer Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file wrongroadagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't seem to [C]learn not to [G]love you
@@ -36,3 +39,7 @@ Going back where I've [D7]already [G]been
 Even knowing [C]where it will [G]end
 Here I go down that [D7]wrong road a[G]gain
 {end_of_verse}
+
+
+
+

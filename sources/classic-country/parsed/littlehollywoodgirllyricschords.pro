@@ -1,6 +1,9 @@
 {meta: title Little Hollywood Girl}
 {meta: artist The Everly Brothers}
 {meta: composer Gerry Goffin and Jack Keller}
+{meta: x_source classic-country}
+{meta: x_source_file littlehollywoodgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Each day you [Em]think a producer will [G]give you your [Em]start
@@ -25,3 +28,5 @@
 [G]Little Hollywood girl it's just not meant to [Em]be
 [C]Little [D7]Hollywood girl better come home to [G]me
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Who Says You Can't Have It All}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file whosaysyoucanthaveitalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A stark naked light bulb hangs [F]over my [C]head
@@ -32,3 +35,7 @@ Oh [C]who says you [G7]can't have it [C]all
 {start_of_verse: Verse 4}
 [F]Oh [C]who says you [G7]can't have it [F]all[C]
 {end_of_verse}
+
+
+
+

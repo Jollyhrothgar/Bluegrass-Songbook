@@ -1,6 +1,9 @@
 {meta: title Courage To Go Home}
 {meta: artist Tony Booth}
 {meta: composer Jack Lebsock}
+{meta: x_source classic-country}
+{meta: x_source_file couragetogohomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I sit all alone in this [F]barroom
@@ -41,3 +44,7 @@ No I [C]don't think I've the [G7]courage to go [C]home
 {start_of_verse: Verse 4}
 No I don't think I've the [G7]courage to go [C]home
 {end_of_verse}
+
+
+
+

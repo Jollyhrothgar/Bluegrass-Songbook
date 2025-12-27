@@ -1,6 +1,9 @@
 {meta: title I Can't Tell My Broken Heart A Lie}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Bill Rowley}
+{meta: x_source classic-country}
+{meta: x_source_file icanttellmybrokenheartalielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You left me here alone to face the [F]music
@@ -29,3 +32,6 @@
 [C]A million times I'll say that I don't miss [F]you
 [G7]But I can't tell my broken heart a [C]lie
 {end_of_verse}
+
+
+

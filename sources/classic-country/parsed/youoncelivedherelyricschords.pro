@@ -1,6 +1,9 @@
 {meta: title You Once Lived Here}
 {meta: artist Johnny Paycheck}
 {meta: composer Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file youoncelivedherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Mayor gave me the [F]key to the [C]city
@@ -23,3 +26,5 @@ I hear your [G7]voice in each breeze loud and [F]clear
 But not [C]this one cause [F]you once lived [C]here
 No not this one cause [F]you once lived [C]here
 {end_of_verse}
+
+

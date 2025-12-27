@@ -1,5 +1,8 @@
 {meta: title For Love's Sake}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file forlovessakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Honey if you [G]only knew what [C]I've the [G]will to do
@@ -38,3 +41,8 @@ For love's [G]sake [C]  [D7]
 For love's [G]sake [C]  [D7]
 For love's [G]sake
 {end_of_verse}
+
+
+
+
+

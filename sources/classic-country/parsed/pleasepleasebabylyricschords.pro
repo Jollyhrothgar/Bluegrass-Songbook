@@ -1,5 +1,8 @@
 {meta: title Please Please Baby}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file pleasepleasebabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please please [F]baby baby come back [C]home
@@ -35,3 +38,8 @@ If you come [G7]home baby I'll act like I [C]should
 {start_of_verse: Verse 6}
 You come [G7]home baby I'll act like I [C]should
 {end_of_verse}
+
+
+
+
+

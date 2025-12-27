@@ -1,6 +1,9 @@
 {meta: title Caribbean}
 {meta: artist Hank Snow}
 {meta: composer Mitchell Torok}
+{meta: x_source classic-country}
+{meta: x_source_file caribbeanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you ever been down to Haiti 
@@ -67,3 +70,14 @@ But you [D7]were five-hundred years too [G]soon
 There's nothing but romance just ever where you glance
 And the native hearts are all [G]a glow
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

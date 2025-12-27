@@ -1,5 +1,8 @@
 {meta: title There's a Better Home}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file theresabetterhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a better home waiting far [F]away
@@ -28,3 +31,6 @@ There'll be peace and rest some sweet [G7]day
 And we'll [C]sit up there with Jesus on [F]high
 When we [C]reach that better [G7]home for you and [C]I
 {end_of_verse}
+
+
+

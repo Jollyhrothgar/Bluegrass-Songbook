@@ -1,5 +1,8 @@
 {meta: title Don't Tell A Soul I Love You}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file donttellasouliloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don’t tell a [E7]soul I [A7]love you
@@ -15,3 +18,4 @@ You’d be the only one to [D7]know the reason why
 [D7]Don’t tell a soul you love [G]me
 Repeat 
 {end_of_verse}
+

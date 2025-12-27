@@ -1,6 +1,9 @@
 {meta: title I Haven't Got The Right To Love You}
 {meta: artist Mac Wiseman}
 {meta: composer Sam Buchanan}
+{meta: x_source classic-country}
+{meta: x_source_file ihaventgottherighttoloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh my dear I haven't got the right to [C]love you
@@ -30,3 +33,6 @@ Though I [G]know I haven't got the right to [C]love you
 In my [G]heart I can’t help [D7]feeling that you’re [G]mine
 Repeat last verse
 {end_of_verse}
+
+
+

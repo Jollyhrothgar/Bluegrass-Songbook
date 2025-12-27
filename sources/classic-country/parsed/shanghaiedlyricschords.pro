@@ -1,6 +1,9 @@
 {meta: title Shanghaied}
 {meta: artist Webb Pierce}
 {meta: composer Mel Tillis and Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file shanghaiedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've played around in China town [F]passing the time [C]away
@@ -64,3 +67,14 @@ I was shanghaied I got a pretty little wife
 And I'm [F]never leaving home no [C]more
 I'm [F]never leaving home no [C]more
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

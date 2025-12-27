@@ -1,6 +1,9 @@
 {meta: title Think About A Lullaby}
 {meta: artist Merle Haggard}
 {meta: composer Theresa Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file thinkaboutalullabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Think about a [F]lulla[C]by think about a [F]lulla[C]by
@@ -27,3 +30,5 @@ Now [Am]baby please [D7]don't you [G7]cry
 Think about a [F]lulla[C]by think about a [F]lulla[C]by
 Baby close your [G7]eyes don't cry think about a [C]lullaby  [C7]
 {end_of_verse}
+
+

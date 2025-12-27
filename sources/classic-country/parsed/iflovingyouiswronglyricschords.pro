@@ -1,6 +1,9 @@
 {meta: title If Loving You Is Wrong}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file iflovingyouiswronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If loving you is wrong then there’s nothing [C]right
@@ -29,3 +32,6 @@ Since we’d [C]all sleep wide awake we’d never have a [G]dream
 This [G]world is full of people who’ll always sing this [C]song
 I [G]think the world is crazy if [D7]loving you is [G]wrong
 {end_of_verse}
+
+
+

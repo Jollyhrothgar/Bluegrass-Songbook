@@ -1,6 +1,9 @@
 {meta: title Long Distance Lover}
 {meta: artist Reba McEntire}
 {meta: composer Robert Rosenberg and Pauline Lee}
+{meta: x_source classic-country}
+{meta: x_source_file longdistanceloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Then you [C]call me long [F]distance from [C]Memphis
@@ -36,3 +39,7 @@ Can't [F]hold on to [G7]feelings when [D7]you're so long [G7]gone
 It all [F]keeps on a changing and [C]now it just [A7]means
 That [Dm]it's all a [G7]part of a [C]dream
 {end_of_verse}
+
+
+
+

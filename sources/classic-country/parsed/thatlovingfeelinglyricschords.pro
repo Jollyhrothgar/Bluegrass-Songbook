@@ -1,5 +1,8 @@
 {meta: title That Loving Feeling}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thatlovingfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When it's snowing in [F]December 
@@ -29,3 +32,6 @@ When it's [F]snowing in December and her kiss [C]don't make me [F]tremble
 You're in [C]trouble  [G7]cause that loving feeling's [C]gone
 [F]Yes you're in [C]trouble  [G7]cause that loving feeling's [C]gone
 {end_of_verse}
+
+
+

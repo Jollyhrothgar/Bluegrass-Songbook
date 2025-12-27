@@ -1,6 +1,9 @@
 {meta: title Four Walls}
 {meta: artist Randy Travis}
 {meta: composer Don Rollins, Harry Stinson, Vincent Williams}
+{meta: x_source classic-country}
+{meta: x_source_file fourwallslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My grandpa farmed for a livin' [C]content to live the simpler kind of [G]life
@@ -36,3 +39,7 @@ Each mornin' we [A7]wake up four [G]walls three [D7]words two [C]hearts one [G]l
 Yeah we've [D7]got everything that we [C]need
 Between the [A7]two of us four [G]walls three [D7]words two [C]hearts one [G]love
 {end_of_verse}
+
+
+
+

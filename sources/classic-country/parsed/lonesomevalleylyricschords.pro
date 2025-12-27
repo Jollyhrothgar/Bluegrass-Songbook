@@ -1,5 +1,8 @@
 {meta: title Lonesome Valley}
 {meta: artist Alabama}
+{meta: x_source classic-country}
+{meta: x_source_file lonesomevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you got to walk that [F]lonesome [C]valley
@@ -50,3 +53,9 @@ Nobody [F]else can walk it for [C]us
 We got to walk  it [G7]by [C]ourselves
 Yeah we got to walk  it [G7]by [C]ourselves  
 {end_of_verse}
+
+
+
+
+
+

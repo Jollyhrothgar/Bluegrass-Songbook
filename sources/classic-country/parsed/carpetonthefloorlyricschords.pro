@@ -1,6 +1,9 @@
 {meta: title Carpet On The Floor}
 {meta: artist Stonewall Jackson}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file carpetonthefloorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a path that is worn in the [C]carpet on the [G]floor
@@ -31,3 +34,6 @@ Things that's [G]loved the most by man
 Are tossed [C]about like a grain of [G]sand
 And lost just like the love you [D7]had for [G]me
 {end_of_verse}
+
+
+

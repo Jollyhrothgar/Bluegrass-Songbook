@@ -1,6 +1,9 @@
 {meta: title Your Heart Turned Left}
 {meta: artist George Jones}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file yourheartturnedleftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your heart turned left and I was on the [F]right
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]Yeah your heart turned left and I was on the [C]right
 {end_of_verse}
+
+
+
+
+

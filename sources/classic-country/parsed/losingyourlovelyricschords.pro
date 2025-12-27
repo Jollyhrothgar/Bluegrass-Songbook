@@ -1,5 +1,8 @@
 {meta: title Losing Your Love}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file losingyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have filled up my [D7]pockets with [G]money 
@@ -29,3 +32,6 @@ For while I was winning the whole wide [C]world
 [G]I was [D7]losing your [G]love
 Slowly [D7]losing your [G]love
 {end_of_verse}
+
+
+

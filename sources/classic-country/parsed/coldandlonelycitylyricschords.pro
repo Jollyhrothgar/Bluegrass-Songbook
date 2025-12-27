@@ -1,5 +1,8 @@
 {meta: title Cold And Lonely City}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file coldandlonelycitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Big old cold and lonely city
@@ -34,3 +37,6 @@ I had visions of success
 [C]To mom and dad cause they love me
 [D7]You cold and lonely city it's been [G]nice
 {end_of_verse}
+
+
+

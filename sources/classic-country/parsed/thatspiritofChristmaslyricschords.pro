@@ -1,6 +1,9 @@
 {meta: title That Spirit of Christmas}
 {meta: artist Ray Charles}
 {meta: composer Joel D. Webster, Mable John}
+{meta: x_source classic-country}
+{meta: x_source_file thatspiritofChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas is the time of year[F]  [C]
@@ -61,3 +64,9 @@ Ain't it so it's truly [G7]amazin'
 [F]Yeah that spirit of [C]Christmas
 (Oh [F]Christmas) ch [C]Christmas
 {end_of_verse}
+
+
+
+
+
+

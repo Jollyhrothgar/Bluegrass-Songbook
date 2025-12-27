@@ -1,5 +1,8 @@
 {meta: title Done Roving}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file donerovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm done roving [G7]down this lonesome [C]road
@@ -32,3 +35,6 @@ For to her apron strings [D7]now I am [G7]sewed
 [F]You gotta have a gal or [C]you'll get lonely
 I'm done roving [G7]down this lonesome [C]road
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Goodbye Cruel World}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyecruelworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Goodbye [G7]goodbye cruel [C]world
@@ -33,3 +36,7 @@ To[F]morrow send flowers to [C]me
 For [F]tonight while you marry [C]another
 They’ll be searching the [F]river for [C]me
 {end_of_verse}
+
+
+
+

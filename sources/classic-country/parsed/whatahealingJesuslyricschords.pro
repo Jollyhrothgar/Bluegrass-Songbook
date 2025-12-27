@@ -1,6 +1,9 @@
 {meta: title What A Healing Jesus}
 {meta: artist The Nashville Singers}
 {meta: composer Mary Brown}
+{meta: x_source classic-country}
+{meta: x_source_file whatahealingJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When [C]walking by the sea [Em]come and follow [Dm]me Jesus [G7]called
@@ -36,3 +39,7 @@
 {start_of_verse: Verse 5}
 [F]You’re here on [C]healing wings [Dm]Son of [C][G7]righteousness
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Back Home In Heaven}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file backhomeinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a burnin' silver lining [F]lighting up the [C]sky
@@ -40,3 +43,8 @@ My [C]body's bound to wander but my [F]heart will always [C]be
 {start_of_verse: Verse 5}
 [F]Back home in [C]heaven where my [D7]angel [G7]waits for [C]me
 {end_of_verse}
+
+
+
+
+

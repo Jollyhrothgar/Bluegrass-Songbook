@@ -1,6 +1,9 @@
 {meta: title Rainy Windy Sunshine (Rodeo Road)}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy and Howard Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file rainywindysunshinerodeoroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Little Rainy I know [D7]you've been low on [C]money
@@ -48,3 +51,9 @@ This old [G]rodeo road has me [D7]back in your hometown [C]again
 This old [G]rodeo road has me [D7]back in your hometown [C]again
 This old [G]rodeo road has me [D7]back in your hometown [C]again
 {end_of_verse}
+
+
+
+
+
+

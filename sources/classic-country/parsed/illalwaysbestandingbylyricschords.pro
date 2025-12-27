@@ -1,6 +1,9 @@
 {meta: title I'll Always Be Standing By}
 {meta: artist Hank Locklin}
 {meta: composer A.M. Lyle and W. Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file illalwaysbestandingbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When your friends have turned you down 
@@ -36,3 +39,6 @@ When you [C]need me I’ll be there
 Just to [F]prove how much I care
 [C]I’ll always [G7]be standing [C]by
 {end_of_verse}
+
+
+

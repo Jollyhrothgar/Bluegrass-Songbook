@@ -1,6 +1,9 @@
 {meta: title When Mama Prayed}
 {meta: artist Randy Travis}
 {meta: composer Paul Overstreet and Rory Lee}
+{meta: x_source classic-country}
+{meta: x_source_file whenmamaprayedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Daddy never [F]went to church on [C]Sunday
@@ -63,3 +66,11 @@ When mama [Am]prayed[F]  [Am]
 {start_of_verse: Verse 9}
 They [Dm]crumbled all [G7]away when mama [Am]prayed[F]
 {end_of_verse}
+
+
+
+
+
+
+
+

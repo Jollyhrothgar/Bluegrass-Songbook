@@ -1,6 +1,9 @@
 {meta: title It Still Takes A Wise Man To Pray}
 {meta: artist Jeff and Sheri Easter}
 {meta: composer Steve Moss}
+{meta: x_source classic-country}
+{meta: x_source_file itstilltakesawisemantopraylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord the first time you came here there was [C]no one to receive You 
@@ -33,3 +36,7 @@ And it [C]still takes a [D7]wise man to [G]pray
 {start_of_verse: Verse 4}
 Lord [C]help me be a [D7]wise man [G]today 
 {end_of_verse}
+
+
+
+

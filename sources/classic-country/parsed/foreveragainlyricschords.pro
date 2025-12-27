@@ -1,6 +1,9 @@
 {meta: title Forever Again}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file foreveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I could step out of my mind
@@ -29,3 +32,6 @@ Or [F]summer giving way to autumn [G7]winds
 But if [C]I could take the [F]world and make it [G7]face the other [C]way
 [F]Then you’d love me [G7]forever [C]again
 {end_of_verse}
+
+
+

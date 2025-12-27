@@ -1,5 +1,8 @@
 {meta: title 45 Dollars in Quarters}
 {meta: artist Terry Lee Goffee}
+{meta: x_source classic-country}
+{meta: x_source_file 45dollarsinquarterslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Give me 45 [D7]dollars in [G]quarters
@@ -33,3 +36,7 @@
 [C]Give me 45 dollars [G]in [C]quarters
 [G]Let me spend 'em [D7]three minutes at a [G][C]time
 {end_of_verse}
+
+
+
+

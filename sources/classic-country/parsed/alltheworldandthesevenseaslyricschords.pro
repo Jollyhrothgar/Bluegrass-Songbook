@@ -1,6 +1,9 @@
 {meta: title All The World And The Seven Seas}
 {meta: artist Jim Ed Brown}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file alltheworldandthesevenseaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am [F]free  [G7]as the [C]breeze  
@@ -30,3 +33,6 @@ But all this [F]world [G7]and the seven [C]seas
 Couldn't call me [F]away if I could [G7]stay 
 In these arms holding [C]me
 {end_of_verse}
+
+
+

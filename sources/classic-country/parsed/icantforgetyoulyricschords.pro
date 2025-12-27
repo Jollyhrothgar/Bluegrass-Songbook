@@ -1,6 +1,9 @@
 {meta: title I Can't Forget You}
 {meta: artist Johnny Horton}
 {meta: composer Bobby Bobo}
+{meta: x_source classic-country}
+{meta: x_source_file icantforgetyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm thinking of our [G7]love of the [C]past
@@ -38,3 +41,8 @@ That you [F]could have been all mine
 {start_of_verse: Verse 4}
 [G7]Darling I can't forget [C]you
 {end_of_verse}
+
+
+
+
+

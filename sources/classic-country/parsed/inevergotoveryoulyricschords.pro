@@ -1,6 +1,9 @@
 {meta: title I Never Got Over You}
 {meta: artist Johnny Paycheck}
 {meta: composer Tommy Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file inevergotoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I couldn't keep my mind on all the [D7]work I [C]had to do [G]today
@@ -40,3 +43,7 @@ And feel this way is I [C]never Lord I never got over [G]you
 Yes the only thing that I can say that [D7]makes me act 
 And feel this way is I [C]never never got over [G]you
 {end_of_verse}
+
+
+
+

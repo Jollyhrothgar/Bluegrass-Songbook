@@ -1,6 +1,9 @@
 {meta: title One More Time}
 {meta: artist Crystal Gayle}
 {meta: composer Bryan Blackburn, Joachim Heider, Christian Heilberg}
+{meta: x_source classic-country}
+{meta: x_source_file onemoretimelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's early in the morning [E7]down in the small [Am]cafe
@@ -65,3 +68,10 @@ Cause it [G7]takes me way back when
 To the one who loved me then
 Won't you play that song again just one more [C]time
 {end_of_verse}
+
+
+
+
+
+
+

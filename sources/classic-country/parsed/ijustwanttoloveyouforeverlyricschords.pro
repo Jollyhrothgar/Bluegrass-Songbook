@@ -1,6 +1,9 @@
 {meta: title I Just Want To Love You Forever}
 {meta: artist Johnny Lee}
 {meta: composer Donald Hare}
+{meta: x_source classic-country}
+{meta: x_source_file ijustwanttoloveyouforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember the night she [Dm]walked out again
@@ -51,3 +54,9 @@ And [F]ever so let my [C]love in
 I always knew that we'd be [Dm]together (together) [F]forever
 And ever [C]again
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title City Folks Call Us Poor}
 {meta: artist Larry Sparks}
 {meta: composer Marshall Warwick}
+{meta: x_source classic-country}
+{meta: x_source_file cityfolkscalluspoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Moonlight shining [B7]on the grassy [C]meadow
@@ -47,3 +50,9 @@ And the city folks [C]they call us [G]poor
 {start_of_verse: Verse 5}
 Oh the city folk [C]they call us [G]poor
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Checking Out}
 {meta: artist Conway Twitty}
 {meta: composer Mickey Jaco}
+{meta: x_source classic-country}
+{meta: x_source_file imcheckingoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately you've been actin' kinda strange it's [D7]true
@@ -43,3 +46,9 @@
 {start_of_verse: Verse 7}
 [D7]Yes I thought I'd better let you know I'm [C]checking [G]out
 {end_of_verse}
+
+
+
+
+
+

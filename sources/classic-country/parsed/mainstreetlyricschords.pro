@@ -1,6 +1,9 @@
 {meta: title Main Street}
 {meta: artist Garth Brooks}
 {meta: composer Wayne Kirkpatrict, Gordon Kennedy, Trisha Yearwood}
+{meta: x_source classic-country}
+{meta: x_source_file mainstreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One light [D7]blinking off and [C]on
@@ -68,3 +71,11 @@ When it's [C]over there's no [G]walking out
 Cause [Am]I've been all they [G]talk about
 Cause [C]what ain't goin' [D7]down on [C]main street
 {end_of_verse}
+
+
+
+
+
+
+
+

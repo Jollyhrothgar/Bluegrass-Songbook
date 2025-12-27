@@ -1,6 +1,9 @@
 {meta: title Just A Little While Ago}
 {meta: artist Jack Greene}
 {meta: composer Jerry Edge, Jimmy Dry, Barbara Greene}
+{meta: x_source classic-country}
+{meta: x_source_file justalittlewhileagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just a little while ago my heart was [G7]living 
@@ -33,3 +36,7 @@ Oh I died inside a [G7]little while [C]ago
 {start_of_verse: Verse 4}
 Yes I died inside a [G7]little while [C]ago
 {end_of_verse}
+
+
+
+

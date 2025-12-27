@@ -1,6 +1,9 @@
 {meta: title Maybe Next Christmas}
 {meta: artist George Jones}
 {meta: composer George Jones and Lester Blackwell}
+{meta: x_source classic-country}
+{meta: x_source_file maybenextChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm thinking [D7]now of [C]Christmas
@@ -29,3 +32,6 @@ I [G]know what it [D7]means to be [C]lonely
 Maybe next [C]Christmas I'll [G]be there
 [D7]Never again will I [G]roam
 {end_of_verse}
+
+
+

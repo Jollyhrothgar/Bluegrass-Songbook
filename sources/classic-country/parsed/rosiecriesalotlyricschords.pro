@@ -1,6 +1,9 @@
 {meta: title Rosie Cries A Lot}
 {meta: artist Ferlin Husky}
 {meta: composer Jerry Foster}
+{meta: x_source classic-country}
+{meta: x_source_file rosiecriesalotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rosie starts the [F]morning by picking up his [C]cloths
@@ -31,3 +34,6 @@
 [F]That you forgot  [C]when you're not at home she's waiting [G7]alone
 [F]Rosie cries a [C]lot
 {end_of_verse}
+
+
+

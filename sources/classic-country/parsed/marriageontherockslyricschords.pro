@@ -1,6 +1,9 @@
 {meta: title Marriage On The Rocks}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file marriageontherockslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You still smile at me when [F]I come home
@@ -34,3 +37,7 @@ We'd [G7]both be better off if we were [C]free
 [F]No it's [G7]not a [C]home [F]this is [G7]one of [C]those
 [F]Situations known as [G7]marriage on the [C]rocks
 {end_of_verse}
+
+
+
+

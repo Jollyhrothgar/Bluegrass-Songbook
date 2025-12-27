@@ -1,5 +1,8 @@
 {meta: title You Nearly Lose Your Mind}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file younearlyloseyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now if you love your momma
@@ -84,3 +87,14 @@ But when it comes to women
 [G7]And when your baby starts a stepping 
 Lord you nearly lose you [C]mind
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

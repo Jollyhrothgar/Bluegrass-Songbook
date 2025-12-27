@@ -1,6 +1,9 @@
 {meta: title Wherever She Is}
 {meta: artist Ricky Van Shelton}
 {meta: composer James House and John Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file whereversheislyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I don't know how she [G]stole it [F]I don't [C]even know [G]when[F]
@@ -33,3 +36,7 @@ But I [C]got about the [G]same chance [F]as a [C]snowball in [Dm]hell
 {start_of_verse: Verse 5}
 [C]Yeah wher[F]ever she is [C]she still has my [G]heart
 {end_of_verse}
+
+
+
+

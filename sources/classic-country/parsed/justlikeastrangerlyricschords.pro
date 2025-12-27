@@ -1,5 +1,8 @@
 {meta: title Just Like A Stranger}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file justlikeastrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I passed you on a street in town today
@@ -25,3 +28,6 @@ Instead like a [C]stranger you [G7]walked right on [C]by
 {start_of_verse: Verse 4}
 [F]Just like a [C]stranger you [G7]walked right on [C]by
 {end_of_verse}
+
+
+

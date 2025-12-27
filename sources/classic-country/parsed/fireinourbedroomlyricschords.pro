@@ -1,6 +1,9 @@
 {meta: title Fire In Our Bedroom}
 {meta: artist Vern Gosdin}
 {meta: composer Kenneth Watts, Jody Emerson, Wild Bill Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file fireinourbedroomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seems like everybody’s slipping [F]around with someone [C]else
@@ -40,3 +43,8 @@ But just [C]leave it alone [G7]everything’s gonna be [C]alright
 {start_of_verse: Verse 4}
 I said leave it alone [G7]everything’s gonna be [C]alright 
 {end_of_verse}
+
+
+
+
+

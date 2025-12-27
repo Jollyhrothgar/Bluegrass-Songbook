@@ -1,6 +1,9 @@
 {meta: title Only Alive}
 {meta: artist Roy Orbison}
 {meta: composer Dewayne Blackwell and Ronald Blackwell}
+{meta: x_source classic-country}
+{meta: x_source_file onlyalivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you happened by my open [A7]eyes could see
@@ -26,3 +29,5 @@ I was [G]left condemned to a lonely [A7]life
 So [C]I'll go on and live alone and [G]lonely
 [Am]And [D7]only a[G]live
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Anyway I Can}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy, Howard Bellamy, Donald Alan Schlitz}
+{meta: x_source classic-country}
+{meta: x_source_file anywayicanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's a [C]heart [G]you can't [D7]own
@@ -63,3 +66,11 @@ But [G]they don't under[Em]stand
 {start_of_verse: Verse 7}
 Any[C]way [G]I [D7]can
 {end_of_verse}
+
+
+
+
+
+
+
+

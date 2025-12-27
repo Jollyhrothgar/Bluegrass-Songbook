@@ -1,6 +1,9 @@
 {meta: title A Day In The Life Of A Fool}
 {meta: artist George Jones}
 {meta: composer Eddie Noack}
+{meta: x_source classic-country}
+{meta: x_source_file adayinthelifeofafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Off to [G]work with no [Em]kiss [C]of [A7]goodbye
@@ -24,3 +27,5 @@
 [G7]Yes I rush up the stairs to my memories of [C]you
 [A7]That's the day [D7]in the life of [C]a [G]fool
 {end_of_verse}
+
+

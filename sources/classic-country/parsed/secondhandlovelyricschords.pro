@@ -1,6 +1,9 @@
 {meta: title Second Hand Love}
 {meta: artist Connie Francis}
 {meta: composer Phil Spector and Hank Hunter}
+{meta: x_source classic-country}
+{meta: x_source_file secondhandlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They tell me that there's someone else [G7]you really truly love
@@ -20,3 +23,4 @@ It's all over [F]town you've put me [C]down
 I'm a second hand [D7]love  a [G7]second hand [C]love
 Just a second hand [D7]love  a [G7]second hand [C]love
 {end_of_verse}
+

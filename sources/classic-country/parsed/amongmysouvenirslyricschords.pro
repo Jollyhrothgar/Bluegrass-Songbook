@@ -1,6 +1,9 @@
 {meta: title Among My Souvenirs}
 {meta: artist Marty Robbins}
 {meta: composer Edgar Leslie and Horatio Nicholls}
+{meta: x_source classic-country}
+{meta: x_source_file amongmysouvenirslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's nothing left for [Am]me 
@@ -36,3 +39,7 @@ And as the tear-drops [G][C]start
 I find a bro-ken [D7][Am]heart 
 Among my [G]souvenirs
 {end_of_verse}
+
+
+
+

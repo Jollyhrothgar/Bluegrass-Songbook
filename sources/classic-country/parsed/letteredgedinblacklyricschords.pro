@@ -1,6 +1,9 @@
 {meta: title Letter Edged In Black}
 {meta: artist Stonewall Jackson}
 {meta: composer Roy Carter}
+{meta: x_source classic-country}
+{meta: x_source_file letteredgedinblacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was standing by my window yesterday [G7]morning
@@ -36,3 +39,7 @@ Was tell my boy I want him to come [C]back
 The angels bear me witness as I am [F]asking
 Your [G7]forgiveness in this letter edged in [C]black
 {end_of_verse}
+
+
+
+

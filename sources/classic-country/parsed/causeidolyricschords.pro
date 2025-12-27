@@ -1,6 +1,9 @@
 {meta: title Cause I Do}
 {meta: artist Faron Young}
 {meta: composer John Holaday and Becki Holaday}
+{meta: x_source classic-country}
+{meta: x_source_file causeidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can feel a chill of loneliness when [D7]I'm near you
@@ -27,3 +30,6 @@ Yes [G]he's gone and he's turned his back on [Am]you[G7]   [Am]
 Yes he's gone and he's turned his back on [C]you[G7]   [Am]
 [G]Still you can't say no [D7]one loves you cause [G]I do
 {end_of_verse}
+
+
+

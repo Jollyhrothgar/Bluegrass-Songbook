@@ -1,6 +1,9 @@
 {meta: title That's When She Started To Stop Loving You}
 {meta: artist Conway Twitty}
 {meta: composer Wayne Kemp}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhenshestartedtostoplovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Does she seem a little [F]cold when you [C]love her
@@ -22,3 +25,5 @@ And if you love her you'd [F]better tell her [C]so
 Cause she's finding out that [F]anyone will [C]love her 
 And it won't be long till you'll [F]have to let her [C]go 
 {end_of_verse}
+
+

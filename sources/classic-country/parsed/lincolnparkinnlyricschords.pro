@@ -1,6 +1,9 @@
 {meta: title Lincoln Park Inn}
 {meta: artist Bobby Bare}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file lincolnparkinnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My name's in the paper where I took the boy scouts to [C]hike [Am]
@@ -30,3 +33,6 @@ My wife's baking cookies to feed to the bridge club [C]again [Am]
 I'm [D7]almost out if cigarettes and Margie's at the Lincoln Park [G]Inn
 And I know why she's [Em]there 
 {end_of_verse}
+
+
+

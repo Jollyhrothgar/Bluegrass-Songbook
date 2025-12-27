@@ -1,6 +1,9 @@
 {meta: title Don't Pay The Ransom}
 {meta: artist Nat Stuckey}
 {meta: composer Dalton Roberts and Jack Shoemake}
+{meta: x_source classic-country}
+{meta: x_source_file dontpaytheransomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I stopped off for a beer [C]on my way home
@@ -46,3 +49,8 @@ But [G]don't pay the ransom [D7]honey I've es[G]caped
 {start_of_verse: Verse 5}
 No don't pay the ransom [D7]honey I've es[G]caped
 {end_of_verse}
+
+
+
+
+

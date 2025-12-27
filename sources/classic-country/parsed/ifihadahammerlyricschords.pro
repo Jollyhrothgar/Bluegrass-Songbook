@@ -1,6 +1,9 @@
 {meta: title If I Had A Hammer}
 {meta: artist Wanda Jackson}
 {meta: composer Lee Hayes and Pete Seeger}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadahammerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I had a hammer [G7]I'd hammer in the [C]morning
@@ -33,3 +36,6 @@ It's a hammer of [C]justice [F]it's a bell of [C]freedom
 [Am]It's a song about [C]love between my [F]brothers and my [G7]sisters
 A-[F]a-all [G7]over this [C]land
 {end_of_verse}
+
+
+

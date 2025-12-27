@@ -1,6 +1,9 @@
 {meta: title The Day’s Not Over Yet}
 {meta: artist Sonny James}
 {meta: composer Carol Smith and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file thedaysnotoveryetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The day’s not [G7]over yet no the day’s not over [C]yet
@@ -34,3 +37,7 @@ The days not [G7]over yet  you might come [C]home
 Tag:
 No the days not [G7]over yet  you might come [C]home
 {end_of_verse}
+
+
+
+

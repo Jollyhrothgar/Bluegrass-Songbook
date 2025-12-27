@@ -1,5 +1,8 @@
 {meta: title Santa and My Semi}
 {meta: artist Dale Watson}
+{meta: x_source classic-country}
+{meta: x_source_file santaandmysemilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Driving through East Texas [C]last Christmas [G]Eve
@@ -82,3 +85,14 @@ He'll be [C]on your way come Christmas [E7]Day
 He'll be [C]on your way come Christmas [E7]Day
 [A7]Santa and [D7]my se[G]mi
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

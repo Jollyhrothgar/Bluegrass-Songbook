@@ -1,6 +1,9 @@
 {meta: title If You're Gonna Do Me Wrong Do It Right}
 {meta: artist Vern Gosdin}
 {meta: composer Vern Gosdin Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouregonnadomewrongdoitrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a closet full of dresses that I bought [Am]you
@@ -29,3 +32,6 @@
 [G]Take off your wedding band  when he takes you by the [C]hand
 [D7]If you're gonna do me wrong do it [G]right
 {end_of_verse}
+
+
+

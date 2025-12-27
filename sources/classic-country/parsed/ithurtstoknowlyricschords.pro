@@ -1,6 +1,9 @@
 {meta: title It Hurts To Know}
 {meta: artist The Osborne Brothers}
 {meta: composer Red Allen and Tommy Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file ithurtstoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today I'm here thinking about [G7]you
@@ -29,3 +32,6 @@
 [G7]It hurts to start my life all over
 [F]To start all [G7]over without [C]y--o--u
 {end_of_verse}
+
+
+

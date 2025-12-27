@@ -1,5 +1,8 @@
 {meta: title When A Man Can’t Get A Woman Off His Mind}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file whenamancantgetawomanoffhismindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been fighting with these sheets again can't [F]make myself lie [C]still
@@ -32,3 +35,7 @@ It gets crazy when a man can get a [G7]woman off his [C]mind
 {start_of_verse: Verse 4}
 Drives him crazy when a man can't get his [G7]woman off his [C]mind
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Stranger In My Arms}
 {meta: artist Patsy Cline}
 {meta: composer Charlotte White, Virginia Hensley and Mary Lu Jeans}
+{meta: x_source classic-country}
+{meta: x_source_file astrangerinmyarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Though you try you can't conceal it
@@ -40,3 +43,8 @@ For lovers never can be [G7]friends
 {start_of_verse: Verse 5}
 [G7]You're a stranger in my [C]arms 
 {end_of_verse}
+
+
+
+
+

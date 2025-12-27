@@ -1,6 +1,9 @@
 {meta: title I'll Wake You Up When I Get Home Lyrics and Chords}
 {meta: artist Charlie Rich}
 {meta: composer Steve Dorff and Milton Brown}
+{meta: x_source classic-country}
+{meta: x_source_file illwakeyouupwhenigethomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Spent the day just missing you [C]remembering your touch
@@ -37,3 +40,6 @@ When your [B7]sleeping all [Em]alone [D7]
 I'm [C]your man and you're my [G]woman
 [Em]I'll wake you [Am]up  [D7]when I get [G]home  [D7]
 {end_of_verse}
+
+
+

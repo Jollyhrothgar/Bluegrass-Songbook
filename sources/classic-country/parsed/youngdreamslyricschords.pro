@@ -1,6 +1,9 @@
 {meta: title Young Dreams}
 {meta: artist Elvis Presley}
 {meta: composer Aaron Schroeder and Martin Kalmanoff}
+{meta: x_source classic-country}
+{meta: x_source_file youngdreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Young dreams of [G]love young dreams of [D7]love)
@@ -38,3 +41,7 @@ Of all my young dreams of [G]lo-oo-[F]oo-oo-[E7]ove
 {start_of_verse: Verse 5}
 A [A7]part of [D7]all of my young dreams of [G]love
 {end_of_verse}
+
+
+
+

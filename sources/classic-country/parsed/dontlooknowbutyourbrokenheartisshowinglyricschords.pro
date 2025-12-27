@@ -1,6 +1,9 @@
 {meta: title Don't Look Now (But Your Broken Heart Is Showing)}
 {meta: artist Hank Thompson}
 {meta: composer Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file dontlooknowbutyourbrokenheartisshowinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He left you flat and crying too the way that you left me
@@ -29,3 +32,6 @@
 [C]So don't look [F]now but your broken [G7]heart is [C]showing
 [D7]And to me it sure [G7]looks good on [C]you
 {end_of_verse}
+
+
+

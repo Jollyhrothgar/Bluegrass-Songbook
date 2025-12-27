@@ -1,6 +1,9 @@
 {meta: title From Our House To Yours}
 {meta: artist Barbara Mandrell}
 {meta: composer Lisa Angelle and John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file fromourhousetoyourslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A Christmas [Em]tree  [G]with lights turned [Em]low
@@ -38,3 +41,7 @@ May this Christmas [Am]be the best [D7] from our house to [G]yours
 And may this Christmas [Am]be the best [D7] from our house to [Em]your[G]s
 Merry Christmas
 {end_of_verse}
+
+
+
+

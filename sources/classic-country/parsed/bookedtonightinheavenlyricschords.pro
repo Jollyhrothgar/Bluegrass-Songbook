@@ -1,6 +1,9 @@
 {meta: title Booked Tonight In Heaven}
 {meta: artist Gene Watson}
 {meta: composer Gary Josey}
+{meta: x_source classic-country}
+{meta: x_source_file bookedtonightinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walked upon the front porch momma met me at the [G7]door
@@ -40,3 +43,8 @@ The [G7]band of angels need him to [F]fiddle in their [C]show
 {start_of_verse: Verse 6}
 The [G7]band of angels need him to [F]fiddle in their [C]show
 {end_of_verse}
+
+
+
+
+

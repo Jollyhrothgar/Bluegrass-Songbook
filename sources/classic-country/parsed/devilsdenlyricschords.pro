@@ -1,6 +1,9 @@
 {meta: title Devil's Den}
 {meta: artist Jack Greene}
 {meta: composer R. A Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file devilsdenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I put a dollar in the [F]jukebox and played the [C]blues
@@ -40,3 +43,8 @@ Any [F]fool she wants to [G7]take to the devil’s [C]den
 {start_of_verse: Verse 4}
 And [F]tonight I’ll be that [G7]fool in the devil’s [C]den
 {end_of_verse}
+
+
+
+
+

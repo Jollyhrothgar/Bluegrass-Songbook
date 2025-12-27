@@ -1,5 +1,8 @@
 {meta: title A Step Away}
 {meta: artist Lonesome River Band}
+{meta: x_source classic-country}
+{meta: x_source_file astepawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Hebrew children saw so many miracles
@@ -37,3 +40,7 @@ Giving in to worldly ways
 [G]After all we’re just a step away
 We’re all just [D7]a step [G]away
 {end_of_verse}
+
+
+
+

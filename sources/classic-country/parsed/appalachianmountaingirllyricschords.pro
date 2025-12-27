@@ -1,5 +1,8 @@
 {meta: title Appalachian Mountain Girl}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file appalachianmountaingirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Beneath the floor and [C]ever greens 
@@ -56,3 +59,10 @@ That [G]haunts me from [D7]above
 My [G]heart will never [C]beat the same 
 With[G]out her [D7]mountain [G]love
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can See It All}
 {meta: artist Bobby Helms}
 {meta: composer Bobby Helms and Doris Helms}
+{meta: x_source classic-country}
+{meta: x_source_file icanseeitalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A year ago you left me 
@@ -26,3 +29,5 @@ You [D7]gave me no choice to [G7]choose
 I see my [F]dreamworld fall
 I can [C]close my [G7]eyes and see it [C]all
 {end_of_verse}
+
+

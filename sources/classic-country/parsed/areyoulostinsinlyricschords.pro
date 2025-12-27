@@ -1,6 +1,9 @@
 {meta: title Are You Lost In Sin}
 {meta: artist J.D. Crowe}
 {meta: composer Jesse McReynolds and Jim McReynolds}
+{meta: x_source classic-country}
+{meta: x_source_file areyoulostinsinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Are you lost in sin my brother 
@@ -43,3 +46,8 @@ God is calling you [D7]today
 He'll come [C](He'll come) for you so unex[G]pected
 So now's the time [D7]to change your [G]way
 {end_of_verse}
+
+
+
+
+

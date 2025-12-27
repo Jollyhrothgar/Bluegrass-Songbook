@@ -1,6 +1,9 @@
 {meta: title I'm Getting Good At Missing You}
 {meta: artist Don Williams}
 {meta: composer Waylon Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file imgettinggoodatmissingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Solitaire  I’m getting good at solitaire
@@ -36,3 +39,7 @@ Telephone I’m good at listening for the phone
 I’m good at hoping you’ll call [G7]home
 I’m good at listening for the [C]phone
 {end_of_verse}
+
+
+
+

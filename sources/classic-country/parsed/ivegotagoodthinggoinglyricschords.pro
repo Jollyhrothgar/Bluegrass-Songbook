@@ -1,6 +1,9 @@
 {meta: title I've Got A Good Thing Going}
 {meta: artist Garth Brooks}
 {meta: composer Larry Bastian, Sandy Mahl, Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotagoodthinggoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She [G7]swears there's nothing wrong but something's [C]missin'
@@ -34,3 +37,7 @@ It's [C]killing me [G7]that she's as good as [C]gone [F]
 {start_of_verse: Verse 5}
 Oh it's [C]killing me [G7]that she's as good as [C]gone
 {end_of_verse}
+
+
+
+

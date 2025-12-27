@@ -1,6 +1,9 @@
 {meta: title I Need Some Good News Bad}
 {meta: artist Bobby Bare}
 {meta: composer Red Lane and Danny Morrison}
+{meta: x_source classic-country}
+{meta: x_source_file ineedsomegoodnewsbadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sorrow comes like a [F]thief in the [C]night
@@ -27,3 +30,6 @@ Cause I need [G7] some good news [C]bad
 Lord tell me she will be [F]a-coming [C]back
 Cause I need [G7] some good news [F]bad[C]
 {end_of_verse}
+
+
+

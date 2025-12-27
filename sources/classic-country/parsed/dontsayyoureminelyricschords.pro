@@ -1,6 +1,9 @@
 {meta: title Don't Say You're Mine}
 {meta: artist Carl Smith}
 {meta: composer Cameron L. Mullins}
+{meta: x_source classic-country}
+{meta: x_source_file dontsayyoureminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't say you're mine if you can't [Dm]belong to [G7]me
@@ -22,3 +25,5 @@
 [C7]My heart and [F]I wouldn't [G7]know what [Em]to [A7]do
 [D7]What could we [G7]ever do without [C]you
 {end_of_verse}
+
+

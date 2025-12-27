@@ -1,6 +1,9 @@
 {meta: title Woodbine Valley}
 {meta: artist Sonny James}
 {meta: composer Mark Irish and Ronald Becker}
+{meta: x_source classic-country}
+{meta: x_source_file woodbinevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm on that [C]long long [Em]road to [F]Woodbine [C]Valley 
@@ -29,3 +32,6 @@ Each one of [C]us can [Em]go to [F]Woodbine [C]Valley
 Your dreams will [C]start to [Em]grow re[F]leasing old [C]memories
 [Em]Lonely hearts will learn [D7]there is a [G7]day love comes to [C]stay
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Nobody Wins}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file nobodywinslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Anymore it doesn't [G]matter who's right or [D7]wrong 
@@ -25,3 +28,6 @@ It's [G]over [D7]nobody [G]wins
 {start_of_verse: Verse 4}
 [C]It's [G]over [D7]nobody [G]wins
 {end_of_verse}
+
+
+

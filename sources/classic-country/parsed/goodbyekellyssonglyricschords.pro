@@ -1,6 +1,9 @@
 {meta: title Goodbye (Kelly's Song)}
 {meta: artist Alabama}
 {meta: composer Randy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyekellyssonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Before I fly and [Bm]wave goodbye [C] I say to [G]you
@@ -35,3 +38,7 @@ But you [Em]keep the faith and [Am]pray to re[D7]turn
 [G]Goodbye [Em] goodbye I'll [C]love and I'll [D7]miss you till [G]then
 Good[Em]bye good[C]bye good[D7]bye good[G]bye[Em]   [C]  [D7]   [G]
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Yes I Know Why}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file yesiknowwhylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I know why I want to [D7]cry it's over [G]you 
@@ -28,3 +31,6 @@ And you just [C]smiled all over [G]again
 Yes I'm [C]asking for heartaches [G]anew
 Yes I know why I want to [D7]cry it's over [G]you
 {end_of_verse}
+
+
+

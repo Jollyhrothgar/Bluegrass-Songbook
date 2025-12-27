@@ -1,6 +1,9 @@
 {meta: title Ready Teddy}
 {meta: artist Buddy Holly}
 {meta: composer Robert A. Blackwell and John S. Marascalco}
+{meta: x_source classic-country}
+{meta: x_source_file readyteddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ready set go man go I got a gal that I love [C7]so
@@ -63,3 +66,16 @@ Shuffle to the left I shuffle to the right
 {start_of_verse: Verse 1}
 [C]Ready set go man go I got a gal that I love [C7]so
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

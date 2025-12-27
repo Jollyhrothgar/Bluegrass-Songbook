@@ -1,6 +1,9 @@
 {meta: title Don't Stop Loving Me Now}
 {meta: artist Don Williams}
 {meta: composer Sam Hogin, Charles Cochran, Mark True}
+{meta: x_source classic-country}
+{meta: x_source_file dontstoplovingmenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [G]know I'm [D7]ready [Em]now to [C]love you like [D7]you want [G]me [C]to
@@ -39,3 +42,9 @@
 {start_of_verse: Verse 5}
 [C]Don't [D7]stop [C]loving me [G]now
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Summer Love}
 {meta: artist Roy Orbison}
 {meta: composer Bill Dees}
+{meta: x_source classic-country}
+{meta: x_source_file summerlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Autumn leaves [Am]when they fall [F]whisper to the [G7]wind
@@ -29,3 +32,6 @@ When summer's here and [Am]you are near [F]every day I'll [G7]pray
 [F]You will [G7]mean [F]more to [G7]me
 [F]Yes you'll [G7]be [F]more than [G7]just a summer [C]love
 {end_of_verse}
+
+
+

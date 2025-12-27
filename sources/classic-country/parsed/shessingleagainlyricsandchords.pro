@@ -1,6 +1,9 @@
 {meta: title She's Single Again}
 {meta: artist Reba McEntire}
 {meta: composer Charlie Craig and Peter McCann}
+{meta: x_source classic-country}
+{meta: x_source_file shessingleagainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've just got to tell you what I saw last night
@@ -54,3 +57,9 @@ Oh look out she's single [G]again
 She's [D7]makin' her move she's got nothin' to lose 
 Oh look out she's single [G]again
 {end_of_verse}
+
+
+
+
+
+

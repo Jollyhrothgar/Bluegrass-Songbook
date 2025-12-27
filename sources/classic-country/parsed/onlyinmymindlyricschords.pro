@@ -1,6 +1,9 @@
 {meta: title Only In My Mind}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file onlyinmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sound of your footsteps get [F]louder every[C]day
@@ -33,3 +36,7 @@ You’re [F]here you’re there you’re [C]everywhere but [G7]only in my [C]min
 {start_of_verse: Verse 4}
 Yes you’re [F]here you’re there you’re [C]everywhere but [G7]only in my [C]mind
 {end_of_verse}
+
+
+
+

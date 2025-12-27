@@ -1,6 +1,9 @@
 {meta: title Purple Robe}
 {meta: artist The Stanley Brothers}
 {meta: composer Odell McLeod}
+{meta: x_source classic-country}
+{meta: x_source_file purplerobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a story so unkind in the [F]Holy book we [C]find
@@ -50,3 +53,9 @@ And this mighty river I may never [G7]see
 But I’ll [C]find myself an alter in an [F]old fashioned [C]church
 And my River Of [G7]Jordan that will [C]be
 {end_of_verse}
+
+
+
+
+
+

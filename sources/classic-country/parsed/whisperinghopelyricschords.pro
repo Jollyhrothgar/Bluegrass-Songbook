@@ -1,5 +1,8 @@
 {meta: title Whispering Hope}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file whisperinghopelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Soft as the [F]voice of an [Am][C]an-gel
@@ -40,3 +43,8 @@ Then when the [G7]night is [C]upon [Am]us
 O how [G7]welcome thy [C]voice
 [F]Making my [C]heart in its [G7]sorrow [C]rejoice
 {end_of_verse}
+
+
+
+
+

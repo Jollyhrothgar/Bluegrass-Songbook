@@ -1,5 +1,8 @@
 {meta: title What Goes On When The Sun Goes Down}
 {meta: artist Ronnie Milsap}
+{meta: x_source classic-country}
+{meta: x_source_file whatgoesonwhenthesungoesdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes love can sure get lost in the [F]daytime
@@ -28,3 +31,6 @@ What goes on when the sun [F]goes [C]down
 What goes [C]on when the sun goes [F]down
 Makes the [C]every day life of two people [G7]in love go [C]round
 {end_of_verse}
+
+
+

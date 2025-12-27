@@ -1,6 +1,9 @@
 {meta: title Open The Eyes Of My Heart}
 {meta: artist Randy Travis}
 {meta: composer Paul Baloche}
+{meta: x_source classic-country}
+{meta: x_source_file opentheeyesofmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Open the eyes of my heart Lord
@@ -68,3 +71,13 @@ I wanna [F]see You I wanna [C]see You
 {start_of_verse: Verse 5}
 I want to [F]see You I want to [C]see You
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

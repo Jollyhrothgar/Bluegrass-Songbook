@@ -1,6 +1,9 @@
 {meta: title Lost Highway Saloon}
 {meta: artist Johnny Bush}
 {meta: composer Brian Burns}
+{meta: x_source classic-country}
+{meta: x_source_file losthighwaysaloonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a dark deserted highway in [Em]the southwest Texas hills
@@ -58,3 +61,10 @@ So if you [Am]see that light some [Em]lonely night
 [F]Stop in and hear the [C]tunes 
 Playin’ [Am]on the haunted [F]jukebox at the [Dm]Lost High[G7]way Sa[C]loon
 {end_of_verse}
+
+
+
+
+
+
+

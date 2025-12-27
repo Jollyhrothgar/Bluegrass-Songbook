@@ -1,6 +1,9 @@
 {meta: title Fort Worth Jail}
 {meta: artist Jimmy Dean}
 {meta: composer Dick Reinhardt}
+{meta: x_source classic-country}
+{meta: x_source_file fortworthjaillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Way [C]down in the [G7]Fort Worth [C]jailhouse feeling kinda [G7]low
@@ -20,3 +23,5 @@
 [G7]Three more [C]days I'm a gonna be a goin' down that road so [G7]long
 [C]Looking for my blue eyed baby though I [D7]know she's [G7]done me [C]wrong
 {end_of_verse}
+
+

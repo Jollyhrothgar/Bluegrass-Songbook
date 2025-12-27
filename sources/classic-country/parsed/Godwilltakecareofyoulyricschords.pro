@@ -1,6 +1,9 @@
 {meta: title God Will Take Care of You}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Civilla D. Martin and W. Stillman Martin}
+{meta: x_source classic-country}
+{meta: x_source_file Godwilltakecareofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Be not dismayed whatever betide
@@ -38,3 +41,9 @@ Beneath His wings of love abide
 He will take [Dm]care of [E7]you
 [F]God will take [C]care  [G7]of [C]you
 {end_of_verse}
+
+
+
+
+
+

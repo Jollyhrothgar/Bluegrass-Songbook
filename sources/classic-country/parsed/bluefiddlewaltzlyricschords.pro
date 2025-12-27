@@ -1,6 +1,9 @@
 {meta: title Blue Fiddle Waltz}
 {meta: artist Dottie West}
 {meta: composer Averal Aldridge, Cindy Richardson, Lisa Silver}
+{meta: x_source classic-country}
+{meta: x_source_file bluefiddlewaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Under the moonlight in the Tennessee [A7]hills
@@ -28,3 +31,6 @@
 [C]Help me remember a love I have [F]lost
 [C]Oh blue fiddle play the [G7]blue fiddle [C]waltz
 {end_of_verse}
+
+
+

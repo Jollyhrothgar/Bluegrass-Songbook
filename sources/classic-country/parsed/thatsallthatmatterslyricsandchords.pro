@@ -1,6 +1,9 @@
 {meta: title That's All That Matters}
 {meta: artist Ray Price}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file thatsallthatmatterslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know I'm not your first love 
@@ -30,3 +33,6 @@ You're as [D7]far as far as I can [G7]see
 And [F]that's all that [G7]matters to [C]me
 And [F]that's all that [G7]matters to [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tears Will Never Stain The Streets Of That City}
 {meta: artist The Kingsmen}
 {meta: composer Dottie Rambo}
+{meta: x_source classic-country}
+{meta: x_source_file tearswillneverstainthestreetsofthatcitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could count all the [F]tears that have [C]fallen
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Cause the heart will never [F]break [C]anymo-re
 {end_of_verse}
+
+
+
+

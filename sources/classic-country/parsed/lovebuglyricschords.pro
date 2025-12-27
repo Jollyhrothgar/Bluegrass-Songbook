@@ -1,6 +1,9 @@
 {meta: title Love Bug}
 {meta: artist George Strait}
 {meta: composer Wayne Kemp and Curtis Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file lovebuglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I was rulin’ the roost had all the chicks to [D7]myself
@@ -43,3 +46,8 @@ It's a [D7]little bitty teeny weeny thing they call the [G]Lovebug
 {start_of_verse: Verse 4}
 It's a [D7]little bitty teeny weeny thing they call the [G]Lovebug
 {end_of_verse}
+
+
+
+
+

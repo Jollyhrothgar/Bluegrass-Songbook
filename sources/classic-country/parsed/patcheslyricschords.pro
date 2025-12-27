@@ -1,6 +1,9 @@
 {meta: title Patches}
 {meta: artist Dickey Lee}
 {meta: composer Barry Mann and Larry Kolber}
+{meta: x_source classic-country}
+{meta: x_source_file patcheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down by the river that flows [F]by the coal [C]yards
@@ -41,3 +44,8 @@ Patches oh what [G7]can I do I swear [F]I'll always love [C]you
 It [F]may not be right but I'll join you [C]tonight
 Patches [G7]I'm coming to [C]you
 {end_of_verse}
+
+
+
+
+

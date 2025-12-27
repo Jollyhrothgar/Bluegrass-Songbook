@@ -1,5 +1,8 @@
 {meta: title You're Gonna Be Sorry}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file youregonnabesorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someday you're gonna [F]want me but [C]I ain't [F]gonna be [C]around
@@ -32,3 +35,7 @@ And when you find this [A#7]out you're gonna be [C]sorry
 {start_of_verse: Verse 4}
 You're gonna be [A#7]so-rr-[C]y [A#7]so-rr-[C]y sorry sor[A#7]-ry [C]sorry
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Day The World Stood Still}
 {meta: artist Jack Greene}
 {meta: composer Bill Rice and Jerry Foster}
+{meta: x_source classic-country}
+{meta: x_source_file thedaytheworldstoodstilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One day you [F]came along and [C]spoke so [G7]tenderly
@@ -23,3 +26,5 @@ One moment [F]in my life I [C]clung to every [G7]thrill
 [C]Time was a [F]precious thing the day [C]the [G7]world stood [C]still
 Time was a [F]precious thing the day [C]the world [G7]stood [C]still 
 {end_of_verse}
+
+

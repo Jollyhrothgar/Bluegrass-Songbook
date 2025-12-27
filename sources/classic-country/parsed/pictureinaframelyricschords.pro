@@ -1,5 +1,8 @@
 {meta: title Picture In A Frame}
 {meta: artist Moe Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file pictureinaframelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I Finally Found The Words To [G7]Say
@@ -40,3 +43,8 @@ Till I'm Just A Picture In A [C]Frame
 Yes I'll Still Love You Just The [G7]Same
 Till I'm Just A Picture In A [C]Frame
 {end_of_verse}
+
+
+
+
+

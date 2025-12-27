@@ -1,6 +1,9 @@
 {meta: title There's A Song On The Juke Box}
 {meta: artist David Wills}
 {meta: composer Billy Sherrill and Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file theresasongonthejukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I want a drink and here's a [G7]twenty and [C]bring my change in [Am]dimes
@@ -27,3 +30,6 @@
 [G7]I want a drink and [C]here's a twenty and bring my change in [Am]dimes
 [D7]There's a song on the jukebox I wanna hear a thousand [G]times
 {end_of_verse}
+
+
+

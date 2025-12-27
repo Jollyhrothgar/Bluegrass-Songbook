@@ -1,5 +1,8 @@
 {meta: title It's Doggone Tough On Me}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file itsdoggonetoughonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]mmm mmm [C]mmm mmm makes [D7]it doggone tough on me mmm [G]mmm
@@ -36,3 +39,7 @@
 [D7]And it makes it doggone tough on [G]me
 [C]mmm mmm mmm [D7]mmm makes it doggone tough on [G]me
 {end_of_verse}
+
+
+
+

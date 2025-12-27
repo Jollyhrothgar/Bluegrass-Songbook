@@ -1,6 +1,9 @@
 {meta: title How Long Is Forever This Time}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew, Tommy Blake, Art Bishop}
+{meta: x_source classic-country}
+{meta: x_source_file howlongisforeverthistimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](Oh how [C]long is [G7]forever this [C]time)
@@ -30,3 +33,7 @@ Oh how long is for[G7]ever this [C]time
 {start_of_verse: Verse 5}
 Oh how long is for[G7]ever this [C]time
 {end_of_verse}
+
+
+
+

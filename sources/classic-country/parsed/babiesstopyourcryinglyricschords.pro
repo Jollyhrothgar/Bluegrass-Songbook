@@ -1,6 +1,9 @@
 {meta: title Babies Stop Your Crying}
 {meta: artist Vernon Oxford}
 {meta: composer Tommy Dee}
+{meta: x_source classic-country}
+{meta: x_source_file babiesstopyourcryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Babies stop you crying [C]please stop your crying
@@ -35,3 +38,6 @@ I just can't stand it any[G7]more
 It's time your little [C7]eyes were [F]drying
 Your mommy's [C]gone she don't [G7]live here no [C]more
 {end_of_verse}
+
+
+

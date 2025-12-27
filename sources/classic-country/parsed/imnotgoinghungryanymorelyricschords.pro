@@ -1,6 +1,9 @@
 {meta: title I'm Not Going Hungry Anymore Lyrics and Chords}
 {meta: artist Charlie Rich}
 {meta: composer Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file imnotgoinghungryanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm not goin' [D7]hungry any[G]more
@@ -27,3 +30,6 @@ I'm givin' lovin' everything I've got
 [G]I'm not goin' [D7]hungry any[G]more
 I'm not goin' [D7]hungry any[G]more
 {end_of_verse}
+
+
+

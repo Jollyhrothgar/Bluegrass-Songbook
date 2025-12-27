@@ -1,6 +1,9 @@
 {meta: title Cold Shoulder}
 {meta: artist Johnny Cash}
 {meta: composer Helene Hudgins}
+{meta: x_source classic-country}
+{meta: x_source_file coldshoulderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it's plain to see you're giving me a cold [D7]shoulder
@@ -27,3 +30,6 @@
 [C]I need your love to warm me through and [G]through
 [D7]But I always get a cold shoulder from [G]you
 {end_of_verse}
+
+
+

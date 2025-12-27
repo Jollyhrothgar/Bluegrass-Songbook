@@ -1,5 +1,8 @@
 {meta: title Teardrops Of Regret}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file teardropsofregretlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I look [D7]back into the past since we [G]parted
@@ -21,3 +24,5 @@ Or [C]trade a broken [D7]heart in on my [G]debt
 But [C]there's no sale for [D7]sorrow when you're [G]crying
 So I'm paying with [D7]teardrops of [G]regret
 {end_of_verse}
+
+

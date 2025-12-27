@@ -1,6 +1,9 @@
 {meta: title Such A Waste Of Love}
 {meta: artist Waylon Jennings}
 {meta: composer Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file suchawasteoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]O---[F]h such a [G]waste of love 
@@ -29,3 +32,6 @@ True [F]love and de[G]votion
 O---[F]h such a [G]waste of love 
 On a heart so [F]cold with no [G]emotion
 {end_of_verse}
+
+
+

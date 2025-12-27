@@ -1,5 +1,8 @@
 {meta: title True Love Is Blind}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file trueloveisblindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This heart of [G7]mine[Dm]   [G7]  could never [C]see [F]  [C]
@@ -25,3 +28,5 @@ Our [F]love could really [C]be
 Oh love is [G7]blind[Dm]   [G7]  and you are [C]mine
 True love is [G7]blind [Dm]   [G7]  and you are [C]mine
 {end_of_verse}
+
+

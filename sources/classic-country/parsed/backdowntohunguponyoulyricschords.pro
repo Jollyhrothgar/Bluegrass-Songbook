@@ -1,6 +1,9 @@
 {meta: title Back Down To Hung Up On You}
 {meta: artist George Jones}
 {meta: composer Larry Butler and Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file backdowntohunguponyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I`ve come to the point where I`ve [F]had one too many
@@ -34,3 +37,7 @@ I`ll be [C]back down to [G7]hung up on [C]you
 Yes as sure as I am of the [F]sunrise tomorrow
 I`ll be [C]back down to [G7]hung up on [F]yo[C]u 
 {end_of_verse}
+
+
+
+

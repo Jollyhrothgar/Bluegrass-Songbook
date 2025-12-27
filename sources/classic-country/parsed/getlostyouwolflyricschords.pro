@@ -1,6 +1,9 @@
 {meta: title Get Lost You Wolf}
 {meta: artist Hylo Brown and The Timberliners}
 {meta: composer Frank Brown Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file getlostyouwolflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been around this world a lot I've [F]had a lot of [C]fun
@@ -36,3 +39,7 @@ What makes you think that you're so cute you're [D7]getting in my [G7]way
 I've [C]been around a bit my lad and I ain't no one's [F]fool
 Get [C]lost drop dead begone you wolf you're [G7]nothing but a [C]fool
 {end_of_verse}
+
+
+
+

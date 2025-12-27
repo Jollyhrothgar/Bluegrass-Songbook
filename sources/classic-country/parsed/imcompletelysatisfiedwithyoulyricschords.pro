@@ -1,6 +1,9 @@
 {meta: title I'm Completely Satisfied With You}
 {meta: artist George Morgan}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file imcompletelysatisfiedwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been awake all morning just [G7]lying by his side
@@ -40,3 +43,8 @@ Yes [G7]honey I'm completely satis[C]fied
 {start_of_verse: Verse 5}
 Yes [G7]honey I'm completely satis[C]fied  
 {end_of_verse}
+
+
+
+
+

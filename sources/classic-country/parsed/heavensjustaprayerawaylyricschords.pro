@@ -1,6 +1,9 @@
 {meta: title Heaven's Just A Prayer Away}
 {meta: artist Dolly Parton}
 {meta: composer Tommy Tomlinson}
+{meta: x_source classic-country}
+{meta: x_source_file heavensjustaprayerawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you're trying to reach [G7]Heaven
@@ -33,3 +36,7 @@ Heaven's [D7]just a prayer [G]away
 {start_of_verse: Verse 4}
 Heaven's [D7]just a prayer [G]away
 {end_of_verse}
+
+
+
+

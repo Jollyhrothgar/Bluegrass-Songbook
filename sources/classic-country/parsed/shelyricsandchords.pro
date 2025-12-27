@@ -1,6 +1,9 @@
 {meta: title She}
 {meta: artist Billy Walker}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file shelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She cooks my breakfast every [G]morning
@@ -31,3 +34,6 @@ And [A7]she out[C]shines [D7]them [G]all
 [C]And she's the sun the moon the [G]stars [Bm]to [Em]me
 And [A7]she out[C]shines [D7]them [G]all
 {end_of_verse}
+
+
+

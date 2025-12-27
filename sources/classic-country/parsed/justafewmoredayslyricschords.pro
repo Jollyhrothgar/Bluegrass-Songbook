@@ -1,5 +1,8 @@
 {meta: title Just A Few More Days}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file justafewmoredayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What a [F]joy to [C]meet my [G]Savior 
@@ -32,3 +35,7 @@ There in the [D7]promised [G]land
 {start_of_verse: Verse 5}
 There in the [D7]promised [G]land
 {end_of_verse}
+
+
+
+

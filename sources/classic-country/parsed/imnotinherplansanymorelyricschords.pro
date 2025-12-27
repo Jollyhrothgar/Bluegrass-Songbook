@@ -1,6 +1,9 @@
 {meta: title I'm Not In Her Plans Anymore}
 {meta: artist Carl Smith}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file imnotinherplansanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was nature’s plan for a [F]woman and a [C]man
@@ -36,3 +39,7 @@ When your heart has been [G7]broken like [C]mine
 Well I [F]used to be happy [C]and in love [F]before
 But I’m [C]not in her [G7]plans any[C]more
 {end_of_verse}
+
+
+
+

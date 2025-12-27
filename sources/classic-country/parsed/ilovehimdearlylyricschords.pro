@@ -1,5 +1,8 @@
 {meta: title I Love Him Dearly}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file ilovehimdearlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s a raging fire [D7]burning deep in[G]side of me
@@ -47,3 +50,9 @@ More [C]dearly than the [D7]spoken word can [G]tell
 Yes [Am]He’s so [G]wonder[C]ful and I love Him [D7]dearly
 More [C]dearly than the [D7]spoken word can [G]tell
 {end_of_verse}
+
+
+
+
+
+

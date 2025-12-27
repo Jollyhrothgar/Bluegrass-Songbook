@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Love You Back To Loving Me Again}
 {meta: artist Joe Stampley}
 {meta: composer Murry E. Kellum and Larry Cheshier}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnaloveyoubacktolovingmeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna love you back to loving me [D7]again
@@ -43,3 +46,8 @@
 [D7]I can't let you go so why pretend
 [G]I'm gonna love you back to loving me again
 {end_of_verse}
+
+
+
+
+

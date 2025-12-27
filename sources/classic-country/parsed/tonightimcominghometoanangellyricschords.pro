@@ -1,6 +1,9 @@
 {meta: title Tonight I'm Coming Home To An Angel}
 {meta: artist Johnny Bush}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file tonightimcominghometoanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd like to stay here [C]all night long and [G]drink with you
@@ -33,3 +36,7 @@ And from [C]this night on I'll [D7]never cheat [G]again
 {start_of_verse: Verse 5}
 And from [C]this night on I'll [D7]never cheat [G]again
 {end_of_verse}
+
+
+
+

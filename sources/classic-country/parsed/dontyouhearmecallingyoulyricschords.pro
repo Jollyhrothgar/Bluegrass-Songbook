@@ -1,6 +1,9 @@
 {meta: title Don't You Hear Me Calling You}
 {meta: artist Fats Domino}
 {meta: composer Fats Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file dontyouhearmecallingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well don't you hear me callin' you
@@ -25,3 +28,5 @@ Answer [F]me answer me my [C]love
 Yes I [G7]really love you baby 
 And I need your [C]love
 {end_of_verse}
+
+

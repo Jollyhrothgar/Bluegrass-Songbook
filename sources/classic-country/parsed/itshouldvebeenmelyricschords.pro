@@ -1,6 +1,9 @@
 {meta: title It Should've Been Me}
 {meta: artist Mel Street}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file itshouldvebeenmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You passed me [F]on the street
@@ -38,3 +41,7 @@ It should've been [G7]me but I let you [C]slip away
 It should've been [F]me you should be [C]mine today
 It should've been [G7]me girl it should've been [C]me
 {end_of_verse}
+
+
+
+

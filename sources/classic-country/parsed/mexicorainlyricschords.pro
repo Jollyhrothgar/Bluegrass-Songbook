@@ -1,6 +1,9 @@
 {meta: title Mexico Rain}
 {meta: artist Johnny Rodriguez}
 {meta: composer Michael Hearne}
+{meta: x_source classic-country}
+{meta: x_source_file mexicorainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the smoke cuts the [G7]lights [F]in this honky tonk [C]bar
@@ -69,3 +72,12 @@ Mexico [F]rain when my [G7]mind starts to [C]roam
 Well if I ain’t happy here then [F]I ain’t happy [C]nowhere
 Mexico [F]rain when my [G7]mind starts to [C]roam
 {end_of_verse}
+
+
+
+
+
+
+
+
+

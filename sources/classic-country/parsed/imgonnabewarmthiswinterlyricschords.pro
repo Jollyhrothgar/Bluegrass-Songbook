@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Be Warm This Winter}
 {meta: artist Connie Francis}
 {meta: composer Hank Hunter and Mark Barkan}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnabewarmthiswinterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We met in a ski lodge [Dm]and we fell in [G7]love
@@ -41,3 +44,8 @@ Each time your lips touch mine they taste like sparkling wine
 [Am]Mmmm baby make [G7]me warm this [C]winter
 [Am]Whoa whoa [G7]whoa honey make me warm this [C]winter
 {end_of_verse}
+
+
+
+
+

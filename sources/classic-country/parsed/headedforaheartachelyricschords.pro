@@ -1,6 +1,9 @@
 {meta: title Headed For A Heartache}
 {meta: artist Gary Morris}
 {meta: composer Kent Blazy}
+{meta: x_source classic-country}
+{meta: x_source_file headedforaheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]I'm headed for a [G]heartache better stop before it's [Em]too late
@@ -38,3 +41,7 @@ It's a chance that [C]I gotta take  [D7]because I [C]fell in love
 I'm headed for a [G]hard time that girl just [Em]blows my mind
 I'm blinded by [C]love this time [D7]and I'm headed for a [G]heartache
 {end_of_verse}
+
+
+
+

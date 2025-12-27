@@ -1,6 +1,9 @@
 {meta: title You're Right I'm Wrong I'm Sorry}
 {meta: artist John Anderson}
 {meta: composer John Anderson, Betty Gallup, Ervan Parker}
+{meta: x_source classic-country}
+{meta: x_source_file yourerightimwrongimsorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're right I'm [G7]wrong I'm [C]sorry
@@ -34,3 +37,7 @@ Cause [G7]I still love you [C]so
 I [F]don't know how I'll [C]do it
 Cause [G7]I still love you [C]so
 {end_of_verse}
+
+
+
+

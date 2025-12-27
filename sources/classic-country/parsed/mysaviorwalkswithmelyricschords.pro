@@ -1,6 +1,9 @@
 {meta: title My Savior Walks With Me}
 {meta: artist Jamie Dailey and Darrin Vincent}
 {meta: composer Jamie Dailey and Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file mysaviorwalkswithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes in my life I [F]get so dis[C]couraged
@@ -34,3 +37,7 @@ My Savior walks [G7]with me [C]today
 Though straight is the gate and [F]narrow the [C]way
 My Savior walks [G7]with me [C]today
 {end_of_verse}
+
+
+
+

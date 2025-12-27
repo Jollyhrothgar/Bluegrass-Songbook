@@ -1,6 +1,9 @@
 {meta: title It Takes Me All Night Long}
 {meta: artist Cal Smith}
 {meta: composer Bozo Darnell and Dave Pittman}
+{meta: x_source classic-country}
+{meta: x_source_file ittakesmeallnightlonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to get more women than I could put my hands [F]on
@@ -33,3 +36,7 @@ Cause it takes me all night to do
 {start_of_verse: Verse 4}
 [G7]The wild and wooly days have come and [C]gone
 {end_of_verse}
+
+
+
+

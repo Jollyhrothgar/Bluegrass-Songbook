@@ -1,5 +1,8 @@
 {meta: title The Road To Heaven}
 {meta: artist Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file theroadtoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know that the earth has four [D7]corners
@@ -41,3 +44,9 @@ Love is the password to heaven
 Love is the password to heaven
 [G]And you are the password to love
 {end_of_verse}
+
+
+
+
+
+

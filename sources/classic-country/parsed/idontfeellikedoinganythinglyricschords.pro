@@ -1,6 +1,9 @@
 {meta: title I Don't Feel Like Doing Anything}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file idontfeellikedoinganythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I go to bed each [D7]night 
@@ -26,3 +29,6 @@ And I [C]just don’t [D7]feel like doing anything [G]today
 {start_of_verse: Verse 4}
 No I [C]just don’t [D7]feel like doing anything [G]today
 {end_of_verse}
+
+
+

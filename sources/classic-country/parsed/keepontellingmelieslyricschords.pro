@@ -1,6 +1,9 @@
 {meta: title Keep On Telling Me Lies}
 {meta: artist Mickey Gilley}
 {meta: composer Roger Murrah and Tim Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file keepontellingmelieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Say it's not true my love means [D7]something to you
@@ -40,3 +43,8 @@ Just [Am]keep on [D7]telling me [G]lies
 {start_of_verse: Verse 6}
 [Am]Keep on [D7]telling me [G]lies
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Last night}
 {meta: artist Buddy Holly}
 {meta: composer Norman Petty and Joe Mauldin}
+{meta: x_source classic-country}
+{meta: x_source_file lastnightlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Last [G]night as I [Em]watched the [C]stars from my [D7]window
@@ -25,3 +28,6 @@ That [G]is my only [Em]prayer[C]  [D7] for [G]you
 {start_of_verse: Verse 4}
 (My [Em]darling [C]last [D7]night [G]my [Em]darling I [C]prayed [D7]for [G]you)
 {end_of_verse}
+
+
+

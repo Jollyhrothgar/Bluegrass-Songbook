@@ -1,6 +1,9 @@
 {meta: title I'm A Nut}
 {meta: artist Roger Miller}
 {meta: composer Leroy Pullins}
+{meta: x_source classic-country}
+{meta: x_source_file imanutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ba ba bi bi ba bi di ba di bom
@@ -49,3 +52,10 @@ Bee ba ba de bop bee ba ba de di de bum
 {start_of_verse: Verse 1}
 [C]Ba ba bi bi ba bi di ba di bom
 {end_of_verse}
+
+
+
+
+
+
+

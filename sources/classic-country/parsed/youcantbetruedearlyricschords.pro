@@ -1,6 +1,9 @@
 {meta: title You Can't Be True Dear}
 {meta: artist Eddy Arnold}
 {meta: composer Gerhard Ebeler, Hans Otten, Hal Cotton}
+{meta: x_source classic-country}
+{meta: x_source_file youcantbetruedearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can't be true dear 
@@ -29,3 +32,6 @@ That you and [Am]I are through
 But [D7]I'll keep loving [G]you 
 Al[D7]though you can't be [G]true
 {end_of_verse}
+
+
+

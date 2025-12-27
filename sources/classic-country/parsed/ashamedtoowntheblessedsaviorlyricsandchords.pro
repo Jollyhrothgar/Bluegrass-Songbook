@@ -1,6 +1,9 @@
 {meta: title Ashamed To Own The Blessed Savior}
 {meta: artist Carl and Pearl Butler}
 {meta: composer Johnnie Bailes and Walter Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file ashamedtoowntheblessedsaviorlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Up[C]on the lonely tree of [G]Calvary
@@ -43,3 +46,8 @@ A[D7]shamed to own God's gift of [G]love
 Our [C]only promise of to[G]morrow
 Our [D7]Blessed Savior from [G]above
 {end_of_verse}
+
+
+
+
+

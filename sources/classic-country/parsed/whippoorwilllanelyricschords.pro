@@ -1,6 +1,9 @@
 {meta: title Whippoorwill Lane}
 {meta: artist Hank Thompson}
 {meta: composer Weldon Allard and Johnny Hathcock}
+{meta: x_source classic-country}
+{meta: x_source_file whippoorwilllanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We were walking down Whippoorwill [D7]Lane
@@ -39,3 +42,8 @@ I go [G]walking down Whippoorwill [D7]Lane
 That old [C]moon’s hanging [D7]low I’m [G]missing you [Fm]so
 It’s so [C]lonesome down [D7]Whippoorwill [G]Lane
 {end_of_verse}
+
+
+
+
+

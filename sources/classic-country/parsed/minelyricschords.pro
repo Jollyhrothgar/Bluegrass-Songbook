@@ -1,5 +1,8 @@
 {meta: title Mine}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file minelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A little white [F]house with black [C]wooden [F]shutters
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [G7]And he is supposed to be [C]mine
 {end_of_verse}
+
+
+
+

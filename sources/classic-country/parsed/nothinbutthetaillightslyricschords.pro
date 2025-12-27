@@ -1,6 +1,9 @@
 {meta: title Nothin' But The Taillights}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file nothinbutthetaillightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blue Kentucky [D7]highway [C]headin' for the [G]line
@@ -55,3 +58,8 @@ Showing me nothin' but the [C]taillights
 And [G]that's about as [Em]lonely as the [A7]highway's ever been
 [Am]Back here [C]with my [D7]thumb out in the [G]wind
 {end_of_verse}
+
+
+
+
+

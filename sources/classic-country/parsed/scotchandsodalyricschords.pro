@@ -1,6 +1,9 @@
 {meta: title Scotch And Soda}
 {meta: artist Hank Thompson}
 {meta: composer Dave Guard}
+{meta: x_source classic-country}
+{meta: x_source_file scotchandsodalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Scotch and soda mud in your eye
@@ -27,3 +30,5 @@ The [C]sunshine of your [A7]eyes oh me oh [D7]my
 [G7]Do I feel higher than a kite can [Am]fly
 [F]Baby give me [G7]lovin' I feel [C]high
 {end_of_verse}
+
+

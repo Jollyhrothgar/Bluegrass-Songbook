@@ -1,6 +1,9 @@
 {meta: title The Last Goodbye}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb and Sammy Farsmark}
+{meta: x_source classic-country}
+{meta: x_source_file thelastgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We had promised to be [C7]wed when we [F]said goodbye that [D7]night
@@ -36,3 +39,7 @@ And we [G7]do not know the time that we will [C]die
 So don't ever be too [C7]sure that your [F]love is always [D7]real
 You'll never [G7]know the sadness of our last good[C]bye
 {end_of_verse}
+
+
+
+

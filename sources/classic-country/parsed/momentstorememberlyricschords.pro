@@ -1,5 +1,8 @@
 {meta: title Moments to Remember}
 {meta: artist The Statler Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file momentstorememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The New Year's Eve we did the town 
@@ -26,3 +29,6 @@ May [G7]find us gone our [C]separate [D7]ways
 We'll have these moments to [G][C]re-mem-ber
 We'll have these moments to [G][C]re-mem-ber
 {end_of_verse}
+
+
+

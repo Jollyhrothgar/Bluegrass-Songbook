@@ -1,6 +1,9 @@
 {meta: title If The Whole World Was A Honky Tonk}
 {meta: artist George Strait}
 {meta: composer Bryan Simpson, Ashley Gorley, Wade Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file ifthewholeworldwasahonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If the whole world was a honky-tonk
@@ -55,3 +58,8 @@ Life would be a [F]three chord song
 And the king would be George [G7]Jones
 If the whole world was a [C]honky-tonk
 {end_of_verse}
+
+
+
+
+

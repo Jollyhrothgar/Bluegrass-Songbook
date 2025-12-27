@@ -1,5 +1,8 @@
 {meta: title Together Again}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file togetheragainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Together [G]again
@@ -42,3 +45,8 @@ You hold in your [C]hand
 But nothing else [D7]matters
 Now we're together [G]again
 {end_of_verse}
+
+
+
+
+

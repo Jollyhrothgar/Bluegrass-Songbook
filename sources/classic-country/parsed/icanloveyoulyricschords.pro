@@ -1,6 +1,9 @@
 {meta: title I Can Love You}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Stanley Garland}
+{meta: x_source classic-country}
+{meta: x_source_file icanloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know you like to be caressed
@@ -46,3 +49,7 @@ And [C]how you like to feel
 I [Am]never could but still if you [D7]let me now
 I can show you how I can [G]love you
 {end_of_verse}
+
+
+
+

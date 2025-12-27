@@ -1,5 +1,8 @@
 {meta: title Life's Gone and Slipped Away}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file lifesgoneandslippedawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Webb Pierce, Max Powel, Dee Moeller
@@ -29,3 +32,7 @@ Webb Pierce, Max Powel, Dee Moeller
 {start_of_verse: Verse 5}
 [F]Yes before you [C]know it [G7]life's gone and slipped [C]away
 {end_of_verse}
+
+
+
+

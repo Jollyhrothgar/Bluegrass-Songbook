@@ -1,6 +1,9 @@
 {meta: title Just In Case}
 {meta: artist The Everly Brothers}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file justincaselyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say that you'll give me all your love someday
@@ -29,3 +32,6 @@ But I want to laugh and live and love today
 Baby now's the time to [F]give your heart
 Just in [G7]case we have to [C]part
 {end_of_verse}
+
+
+

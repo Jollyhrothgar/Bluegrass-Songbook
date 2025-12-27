@@ -1,5 +1,8 @@
 {meta: title I See An Angel Everyday}
 {meta: artist Billy Parker}
+{meta: x_source classic-country}
+{meta: x_source_file iseeanangeleverydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've never been to heaven and [G7]walked those streets of [C]gold
@@ -32,3 +35,7 @@ I see an angel [G]everyday when [D7]I come home to [G]you
 {start_of_verse: Verse 4}
 [C]I see an angel [G]everyday when [D7]I come home to [G]you
 {end_of_verse}
+
+
+
+

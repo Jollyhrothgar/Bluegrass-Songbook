@@ -1,6 +1,9 @@
 {meta: title Cry}
 {meta: artist Crystal Gayle}
 {meta: composer Churchill Kohlman}
+{meta: x_source classic-country}
+{meta: x_source_file crylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If your [C]sweetheart sends a letter of [E7]goodbye
@@ -33,3 +36,7 @@ So let your [Dm]hair down and [G7]go on and [C]cry
 {start_of_verse: Verse 5}
 Repeat last verse
 {end_of_verse}
+
+
+
+

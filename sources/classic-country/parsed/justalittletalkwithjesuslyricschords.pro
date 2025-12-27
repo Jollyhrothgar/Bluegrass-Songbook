@@ -1,6 +1,9 @@
 {meta: title Just a Little Talk With Jesus}
 {meta: artist Statler Brothers}
 {meta: composer Cleavant Derricks}
+{meta: x_source classic-country}
+{meta: x_source_file justalittletalkwithjesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I once was lost in sin but [C]Jesus took me [G]in
@@ -31,3 +34,7 @@ Let us tell Him all about our troubles
 {start_of_verse: Verse 5}
 Repeat#2
 {end_of_verse}
+
+
+
+

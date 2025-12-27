@@ -1,5 +1,8 @@
 {meta: title Stranded On A Dead End Street}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file strandedonadeadendstreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I didn't wanna hear about how you really feel
@@ -36,3 +39,8 @@ Oh [F]my [C]my never give [F]up until he's left you on the [C]street
 And [Am]leave me un[C]done and a little of [F]love
 Stranded [G7]on a dead end [C]street
 {end_of_verse}
+
+
+
+
+

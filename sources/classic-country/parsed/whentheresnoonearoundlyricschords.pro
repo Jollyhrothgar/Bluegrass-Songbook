@@ -1,6 +1,9 @@
 {meta: title When There's No One Around}
 {meta: artist Garth Brooks}
 {meta: composer Tim O'Brien and Darrell Scott}
+{meta: x_source classic-country}
+{meta: x_source_file whentheresnoonearoundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This is a song that nobody knows 
@@ -58,3 +61,10 @@ It's a [C]song that I [G]sing when [D7]there's no one [Em]around
 {start_of_verse: Verse 7}
 It's a [C]song that I [G]sing when [D7]there's no one [G]around
 {end_of_verse}
+
+
+
+
+
+
+

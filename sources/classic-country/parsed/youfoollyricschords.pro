@@ -1,6 +1,9 @@
 {meta: title You Fool}
 {meta: artist Eddy Arnold}
 {meta: composer Martha Sharp}
+{meta: x_source classic-country}
+{meta: x_source_file youfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your walls are lined with pictures 
@@ -41,3 +44,6 @@ It's a [Em]love life fresh hot homemade bread
 [F]Set aside to cool
 You fool you [C]fool [F]you [C]fool
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Big Ole Texas Tears}
 {meta: artist Mickey Gilley}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file bigoletexastearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Midnight stars and [C7]all night bars [F]are all I ever [C]see
@@ -26,3 +29,6 @@ Little Tennessee memories they make [G7]these big ole Texas [C]tears
 {start_of_verse: Verse 3}
 Little Tennessee memories they make [G7]these big ole Texas [C]tears
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Wish You Were Here (Oh My Darlin')}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Michael Foster}
+{meta: x_source classic-country}
+{meta: x_source_file iwishyouwerehereohmydarlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Wish you were here oh my [C]darlin'
@@ -62,3 +65,11 @@ Love was so [G7]tender and [F]kind
 [C]Simple and [G7]true like the [F]heart of a [C]child
 Never a [G7]doubt you were [C]mine[Dm]   [C]
 {end_of_verse}
+
+
+
+
+
+
+
+

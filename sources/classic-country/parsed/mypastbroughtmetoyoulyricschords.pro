@@ -1,6 +1,9 @@
 {meta: title My Past Brought Me To You}
 {meta: artist Ernest Tubb}
 {meta: composer Bill Brock}
+{meta: x_source classic-country}
+{meta: x_source_file mypastbroughtmetoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My [C]past brought me to [G]you your [D7]past brought you to [G]me
@@ -33,3 +36,7 @@ They said we'd have no future [C]cause we had too much [G]past
 [C]But we're still together and we will always [G]be
 My [C]past brought me to [G]you your [D7]past brought you to [G]me
 {end_of_verse}
+
+
+
+

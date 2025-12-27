@@ -1,5 +1,8 @@
 {meta: title The Old Country Church}
 {meta: artist The Statler Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file theoldcountrychurchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a place near to me where I'm [C]longing to [G]be
@@ -33,3 +36,7 @@ In their [Em]graves near the old country [D7]church
 And sometime I may [G]rest with the [C]friends I love [G]best
 In a [Em]grave near the old [D7]country [G]church
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title You're Not Easy to Forget}
 {meta: artist Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file yourenoteasytoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I make all the honky tonks and [F]taverns 
@@ -28,3 +31,6 @@ I can get someone to [G7]care
 But [C]when I need someone to [C7]true love [F]me  
 [G7]You're not easy to [C]forget
 {end_of_verse}
+
+
+

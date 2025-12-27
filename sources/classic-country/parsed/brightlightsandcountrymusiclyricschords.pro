@@ -1,6 +1,9 @@
 {meta: title Bright Lights and Country Music}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson and Jimmy Gateley}
+{meta: x_source classic-country}
+{meta: x_source_file brightlightsandcountrymusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I love those bright lights  and [D7]country [G]music
@@ -35,3 +38,7 @@ I'll say bright lights  and [D7]country [G]music
 Tag:
 I love those bright lights  and [D7]country [G]music
 {end_of_verse}
+
+
+
+

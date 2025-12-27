@@ -1,6 +1,9 @@
 {meta: title Okie From Muskogee}
 {meta: artist Merle Haggard}
 {meta: composer Roy Burris and Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file okiefrommuskogeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We don't smoke marijuana in Muskogee
@@ -47,3 +50,11 @@ And the kids here still respect the college [G]dean
 We don't make a party out of loving
 We like holding hands and pitching [D7]woo
 {end_of_verse}
+
+
+
+
+
+
+
+

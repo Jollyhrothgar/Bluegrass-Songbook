@@ -1,6 +1,9 @@
 {meta: title Magic Carpet}
 {meta: artist Don Williams}
 {meta: composer Larry Kingston and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file magiccarpetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wish I had a [F]magic carpet
@@ -43,3 +46,8 @@ But I get a magic [F]feelin' all over
 But I get a magic [F]feelin' all over
 [C]Thinkin' [G7]about you in my [C]arms
 {end_of_verse}
+
+
+
+
+

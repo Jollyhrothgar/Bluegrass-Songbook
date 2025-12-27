@@ -1,6 +1,9 @@
 {meta: title All Her Little Loving Ways}
 {meta: artist Ferlin Husky}
 {meta: composer Milton Blackford and Dan Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file allherlittlelovingwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wonder if she [D]thinks of me or [Am]ever needs someone
@@ -24,3 +27,5 @@ A [Am]dream of love so soft and low my [D7]heart will always keep
 And if she does then [D]maybe she'll come [Em]back to me some[Am]day
 And [D7]take my hand and ease my mind with all her loving [G]ways
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Two Good Reasons}
 {meta: artist Norma Jean}
 {meta: composer Hank Cochran and Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file twogoodreasonslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Willie asked this morning if I was [C]mad at [G]him
@@ -22,3 +25,5 @@ It [C]might be different if there was [Am]only you and [D7]I
 It's [G]not their fault but just the same they'll [C]be the ones who [Am]cry
 Maybe it's too late to work it out but there's [D7]two good reasons to [G]try
 {end_of_verse}
+
+

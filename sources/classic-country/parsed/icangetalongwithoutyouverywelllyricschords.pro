@@ -1,5 +1,8 @@
 {meta: title I Can Get Along Without You Very Well Lyrics chords}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file icangetalongwithoutyouverywelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you went away [G7]I [C]cried
@@ -36,3 +39,6 @@ But it's [C]over [G7]now and [C]past
 I [F]forgot your love at [C]last
 I can get along [G7]without you very [C]well
 {end_of_verse}
+
+
+

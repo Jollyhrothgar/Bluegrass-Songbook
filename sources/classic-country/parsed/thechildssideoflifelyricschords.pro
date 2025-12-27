@@ -1,6 +1,9 @@
 {meta: title The Child's Side Of Life}
 {meta: artist Johnny Horton}
 {meta: composer Joe Nixon and Tommy Thomas}
+{meta: x_source classic-country}
+{meta: x_source_file thechildssideoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A little boy stood crying in a [F]courtroom
@@ -43,3 +46,8 @@ As [G7]each one thought these words that Jesus [C]spake
 And the little child shall lead them was that [F]wisdom
 And the [G7]home began to build instead of [C]break
 {end_of_verse}
+
+
+
+
+

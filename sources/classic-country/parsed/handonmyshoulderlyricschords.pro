@@ -1,5 +1,8 @@
 {meta: title Hand On My Shoulder}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file handonmyshoulderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's been a hand on my shoulder
@@ -51,3 +54,11 @@ Made the hunger go when the food was low
 All the chances that I've taken
 [D7]All the things that I've done wrong
 {end_of_verse}
+
+
+
+
+
+
+
+

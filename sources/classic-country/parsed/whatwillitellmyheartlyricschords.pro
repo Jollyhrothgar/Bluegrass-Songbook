@@ -1,6 +1,9 @@
 {meta: title What Will I Tell My Heart}
 {meta: artist Fats Domino}
 {meta: composer Jack Lawrence, Irving Gordon, Peter Tinturin}
+{meta: x_source classic-country}
+{meta: x_source_file whatwillitellmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm trying to explain to friends dear
@@ -43,3 +46,8 @@ To [C]fool the whole town may be smart
 I'll [G]tell them you'll soon be [E7]back dear
 But [D7]what will I tell my [G]heart
 {end_of_verse}
+
+
+
+
+

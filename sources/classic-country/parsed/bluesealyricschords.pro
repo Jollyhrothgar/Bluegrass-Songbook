@@ -1,6 +1,9 @@
 {meta: title Blue Sea}
 {meta: artist Marty Robbins}
 {meta: composer Don Bailey}
+{meta: x_source classic-country}
+{meta: x_source_file bluesealyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blue sea [F]carry me [C]away
@@ -25,3 +28,6 @@ Never let me wake let me [F]slumber in the [C]deep
 Goodbye my love it's over we will [F]never kiss [C]again
 Tonight the sea will [F]claim me very [C]soon will [G7]be the [C]end
 {end_of_verse}
+
+
+

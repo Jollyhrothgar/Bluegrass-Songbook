@@ -1,6 +1,9 @@
 {meta: title Cheap Love Affair}
 {meta: artist The McCoury Brothers}
 {meta: composer Bill Monroe and Chuck Carson}
+{meta: x_source classic-country}
+{meta: x_source_file cheaploveaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I knew we loved each other the night that [F]we first [C]met
@@ -29,3 +32,6 @@ For losing you would be more than I could [G7]bear
 Though I’m [C]tied to another I hope some[F]day she’ll set me [C]free
 But I don’t want a [G7]cheap love [C]affair
 {end_of_verse}
+
+
+

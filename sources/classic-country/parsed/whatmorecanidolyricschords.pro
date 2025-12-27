@@ -1,6 +1,9 @@
 {meta: title What More Can I Do}
 {meta: artist Norma Jean}
 {meta: composer Hank Cochran and Hound Dog Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file whatmorecanidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord what [C]more [G]can I [C]do You've done so much for [G]me
@@ -31,3 +34,6 @@ Lord what more can I do You've [D7]done so much for [G]me
 Lord what [C]more can I do You've done so much for [G]me
 I'll speak Your [C]name every hour and [D7]help the blind to [G]see
 {end_of_verse}
+
+
+

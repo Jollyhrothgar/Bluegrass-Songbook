@@ -1,6 +1,9 @@
 {meta: title My Tears Don't Show}
 {meta: artist Jack Greene and Jeannie Seely}
 {meta: composer Carl Butler}
+{meta: x_source classic-country}
+{meta: x_source_file mytearsdontshowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've learned to hide my greed with[C]in my heart
@@ -22,3 +25,5 @@ Although I've [D7]cried for you my tears don't [G]show
 Sweet memor[G]ies that make the [C]teardrops flow
 Although I've [D7]cried for you my tears don't [G]show
 {end_of_verse}
+
+

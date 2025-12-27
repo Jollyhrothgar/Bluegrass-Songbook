@@ -1,6 +1,9 @@
 {meta: title I Overlooked An Orchid}
 {meta: artist Carl Smith}
 {meta: composer Carl Story, Shirl Lyn, Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file ioverlookedanorchidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The orchid is a flower that [F]blooms so tende[C]rly
@@ -33,3 +36,6 @@ The [C]rose that I was searching for
 has [F]proved to be u[C]ntrue
 The orchid now I [G7]find my dear was [C]you
 {end_of_verse}
+
+
+

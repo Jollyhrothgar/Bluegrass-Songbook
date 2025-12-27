@@ -1,6 +1,9 @@
 {meta: title I'd Be The First To Fall In Love Again}
 {meta: artist Johnny Rodriguez}
 {meta: composer Jim Hurt and Bill Boling}
+{meta: x_source classic-country}
+{meta: x_source_file idbefirsttofallinloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love you used to [E7]burn like [Fm]fire
@@ -40,3 +43,8 @@ And I'd [Dm]be the first to fall [G7]in love [C]again
 {start_of_verse: Verse 5}
 [F]And I'd [Dm]be the first to fall [G7]in love [C]again
 {end_of_verse}
+
+
+
+
+

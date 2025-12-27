@@ -1,6 +1,9 @@
 {meta: title Burning Love}
 {meta: artist Elvis Presley}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file burninglovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord Almighty [C]feel my [D7]temperature [G]rising 
@@ -50,3 +53,9 @@ I’m just a hunk a hunk of [C]burning love
 [G]I’m just a hunk a hunk of burning [C]love 
 [G]I’m just a hunk a hunk of [C]burning [G]love
 {end_of_verse}
+
+
+
+
+
+

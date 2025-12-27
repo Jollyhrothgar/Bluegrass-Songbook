@@ -1,5 +1,8 @@
 {meta: title Don't Step On Mother's Roses}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file dontsteponmothersroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Don't Step On Mother's Roses
@@ -47,3 +50,9 @@ She [G7]planted them the day she was my [C]bride
 And [F]every time I see a rose I [C]see her smilin' face
 She [D7]made my darkest days look bright [G7]round the old home place
 {end_of_verse}
+
+
+
+
+
+

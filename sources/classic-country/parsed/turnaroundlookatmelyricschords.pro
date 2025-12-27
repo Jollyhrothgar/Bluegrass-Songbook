@@ -1,6 +1,9 @@
 {meta: title Turn Around Look At Me}
 {meta: artist Ray Price}
 {meta: composer Jerry Capehart}
+{meta: x_source classic-country}
+{meta: x_source_file turnaroundlookatmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There is someone [C]walking be[G]hind you turn a[Am]round look at [D7]me
@@ -19,3 +22,5 @@ I've been [C]waiting but I'll wait [B7]forever for [Em]you to come to [Cm]me
 {start_of_verse: Verse 3}
 Turn a[C]round [D7]look at m[G]e
 {end_of_verse}
+
+

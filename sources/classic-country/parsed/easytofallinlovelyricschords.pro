@@ -1,6 +1,9 @@
 {meta: title Easy To Fall In Love}
 {meta: artist Conway Twitty}
 {meta: composer Conway Twitty and Jack Nance}
+{meta: x_source classic-country}
+{meta: x_source_file easytofallinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]First you meet her on the street
@@ -36,3 +39,7 @@
 [G7]To go and see the preacher man
 [F]Well it's [G7]so easy to [C]fall [A]in [C]love
 {end_of_verse}
+
+
+
+

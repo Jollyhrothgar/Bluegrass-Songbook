@@ -1,5 +1,8 @@
 {meta: title I Can Get Off On You}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file icangetoffonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take back the weed take back the cocaine [D7]baby
@@ -38,3 +41,8 @@
 [D7]I don't need them now your love was all I was after
 [G]I'll make it now I can get off on you
 {end_of_verse}
+
+
+
+
+

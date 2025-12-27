@@ -1,6 +1,9 @@
 {meta: title Bad Moon Rising}
 {meta: artist Vernon Oxford}
 {meta: composer John C. Fogerty}
+{meta: x_source classic-country}
+{meta: x_source_file badmoonrisinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I see the [D7]bad moon a-[G]rising I see [D7]trouble on the [G]way
@@ -27,3 +30,6 @@ Looks like [D7]you're in for nasty [G]weather one eye [D7]is there for an [G]eye
 No [C]don't go round tonight it's [G]bound to take your life
 [D7]There's a [C]bad moon on the [G]rise
 {end_of_verse}
+
+
+

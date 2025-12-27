@@ -1,6 +1,9 @@
 {meta: title Who Will I Be Loving Now}
 {meta: artist George Jones}
 {meta: composer Agnes Wilson and Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file whowillibelovingnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I thought you found your happiness [F]right here loving [C]me
@@ -23,3 +26,5 @@
 [G7]So who will I be loving now since I won't be loving [C]you
 [G7]So who will I be loving now since I won't be loving [C]you
 {end_of_verse}
+
+

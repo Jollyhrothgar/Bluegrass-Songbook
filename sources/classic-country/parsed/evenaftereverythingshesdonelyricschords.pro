@@ -1,6 +1,9 @@
 {meta: title Even After Everything She's Done}
 {meta: artist Charlie Pride}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file evenaftereverythingshesdonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday tomorrow seemed a [F]million years [C]away
@@ -31,3 +34,6 @@ I'd take her [F]back and I'd for[C]give her
 [F]Even after [G7]everything she's [C]done
 [F]Even after [G7]everything she's [C]done
 {end_of_verse}
+
+
+

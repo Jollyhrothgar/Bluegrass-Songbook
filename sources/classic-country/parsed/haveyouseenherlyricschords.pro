@@ -1,6 +1,9 @@
 {meta: title Have You Seen Her}
 {meta: artist Bill Anderson}
 {meta: composer Eugene Record and Barbara Acklin}
+{meta: x_source classic-country}
+{meta: x_source_file haveyouseenherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see her face everywhere I go
@@ -41,3 +44,7 @@ Doo-doo-doo-doo-doo-doo-doo
 Have [F]you seen her [G7]tell me have you [C]seen her
 And I thought I had her in the palm of my hand
 {end_of_verse}
+
+
+
+

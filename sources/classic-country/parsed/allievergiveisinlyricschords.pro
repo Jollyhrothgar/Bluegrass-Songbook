@@ -1,6 +1,9 @@
 {meta: title All I Ever Give Is In}
 {meta: artist Kitty Wells}
 {meta: composer Eddie Pleasant}
+{meta: x_source classic-country}
+{meta: x_source_file allievergiveisinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You [C]give me the devil when my [F]hair's not fixed [D7]right
@@ -29,3 +32,6 @@ At [F]least that's how it seems but I [D7]love you am I a [G7]fool
 When you [C]take me in your arms I know [F]why I let you [D7]win
 But [G7]all I ever give is [C]in
 {end_of_verse}
+
+
+

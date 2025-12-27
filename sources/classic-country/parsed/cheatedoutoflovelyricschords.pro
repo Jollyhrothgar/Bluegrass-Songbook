@@ -1,6 +1,9 @@
 {meta: title Cheated Out Of Love}
 {meta: artist Kitty Wells}
 {meta: composer Johnnie Masters}
+{meta: x_source classic-country}
+{meta: x_source_file cheatedoutoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Cheated out of living cheated out of [C]love
@@ -29,3 +32,6 @@ You [D7]cheated with your kisses you made the teardrops [G]start
 [C]You walked right over me but honey that's [G]okay
 I [D7]hope to find someone and live again [G]someday
 {end_of_verse}
+
+
+

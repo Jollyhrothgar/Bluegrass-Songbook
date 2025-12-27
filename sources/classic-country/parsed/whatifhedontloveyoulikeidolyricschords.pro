@@ -1,6 +1,9 @@
 {meta: title What If He Don’t Love You Like I Do}
 {meta: artist Ray Price}
 {meta: composer Don Helms and Rusty Gabbard}
+{meta: x_source classic-country}
+{meta: x_source_file whatifhedontloveyoulikeidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I felt so helpless when you walked [F]away from me that night
@@ -29,3 +32,6 @@ And [F]given me an [C]even chance with [G7]you
 For [C]now he’ll give you all the things [F]that I could never give
 But what if [C]he don’t [G7]love you like I [C]do
 {end_of_verse}
+
+
+

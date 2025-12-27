@@ -1,6 +1,9 @@
 {meta: title I See It Now}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone, Paul Nelson, Woody Lee}
+{meta: x_source classic-country}
+{meta: x_source_file iseeitnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's good to see your [Em]face again it's [F]been a while
@@ -36,3 +39,7 @@ Oh but [G7]I see it [C]now
 [F]I never [G7]saw you [C]dance with your [Em]feet off the [F]ground [C]   [D7]
 Oh but [G7]I see it [C]now
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'd Settle For Just Crossing Her Mind}
 {meta: artist Gene Watson}
 {meta: composer Jollie Hollie}
+{meta: x_source classic-country}
+{meta: x_source_file idsettleforjustcrossinghermindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To feel her arms around me would be like [G7]heaven
@@ -33,3 +36,7 @@ But I'd [G7]settle for just crossing her [C]mind
 {start_of_verse: Verse 4}
 Yes I'd [G7]settle for just crossing her [C]mind
 {end_of_verse}
+
+
+
+

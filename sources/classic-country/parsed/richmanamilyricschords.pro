@@ -1,6 +1,9 @@
 {meta: title Rich Man Am I}
 {meta: artist Hank Snow}
 {meta: composer Lowell Lundstrom}
+{meta: x_source classic-country}
+{meta: x_source_file richmanamilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I found something that [D7]money can't [G]buy
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 6}
 [D7]I found the Lord a rich man am [G]I
 {end_of_verse}
+
+
+
+
+
+

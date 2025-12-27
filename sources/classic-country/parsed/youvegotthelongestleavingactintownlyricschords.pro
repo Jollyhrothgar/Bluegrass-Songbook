@@ -1,6 +1,9 @@
 {meta: title You've Got The Longest Leaving Act In Town}
 {meta: artist John Anderson}
 {meta: composer Dave Kirby and Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotthelongestleavingactintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wasn't that you packing your things 
@@ -36,3 +39,7 @@ If you're coming or you're [F]going
 Oh baby you've [C]got 
 The longest [G7]leaving act in [C]town
 {end_of_verse}
+
+
+
+

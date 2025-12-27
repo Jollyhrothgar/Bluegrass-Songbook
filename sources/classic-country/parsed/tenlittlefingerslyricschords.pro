@@ -1,6 +1,9 @@
 {meta: title Ten Little Fingers}
 {meta: artist Carol Baker}
 {meta: composer Don Grashey}
+{meta: x_source classic-country}
+{meta: x_source_file tenlittlefingerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Ten little [C]fingers reach [G7]out to rescue [C]me
@@ -37,3 +40,8 @@ Ten little [C]fingers reach [G7]out to rescue [C]me  [C7]
 {start_of_verse: Verse 5}
 [F]Ten little [C]fingers reach [G7]out to rescue [C]me
 {end_of_verse}
+
+
+
+
+

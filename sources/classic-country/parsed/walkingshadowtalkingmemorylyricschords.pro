@@ -1,6 +1,9 @@
 {meta: title Walking Shadow Talking Memory}
 {meta: artist Carl Belew}
 {meta: composer Jean Chapel}
+{meta: x_source classic-country}
+{meta: x_source_file walkingshadowtalkingmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Walking [G]shadows talking [C]memories 
@@ -31,3 +34,6 @@ Walking shadows talking [C]memories
 Walking shadow right [C]behind me 
 And [D7]memories that won't let me [G]forget
 {end_of_verse}
+
+
+

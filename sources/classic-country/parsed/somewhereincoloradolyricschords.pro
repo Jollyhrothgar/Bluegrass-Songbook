@@ -1,5 +1,8 @@
 {meta: title Somewhere In Colorado}
 {meta: artist Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file somewhereincoloradolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night you [D7]told me you [G]needed to leave
@@ -25,3 +28,6 @@ I still [C]love you somewhere in [G]Colorado
 {start_of_verse: Verse 4}
 I still love you [C]somewhere in [G]Colorado
 {end_of_verse}
+
+
+

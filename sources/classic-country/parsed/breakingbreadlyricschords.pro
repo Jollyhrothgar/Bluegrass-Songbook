@@ -1,6 +1,9 @@
 {meta: title Breaking Bread}
 {meta: artist Johnny Cash}
 {meta: composer Randy L George}
+{meta: x_source classic-country}
+{meta: x_source_file breakingbreadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Breaking bread  breaking [Em]bread
@@ -43,3 +46,8 @@
 [Em]Breaking bread  breaking bread
 [C]We are gathered here [D7]together to break [G]bread
 {end_of_verse}
+
+
+
+
+

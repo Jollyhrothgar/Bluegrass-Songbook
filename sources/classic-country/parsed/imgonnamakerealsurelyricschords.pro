@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Make Real Sure}
 {meta: artist Everly Brothers}
 {meta: composer Phil Everly}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnamakerealsurelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna make real [C]sure [D7]that you don't make her [G]blue
@@ -42,3 +45,9 @@ When I [D7]get done she might feel sorry for you
 And [G]I wanna make real [C]sure [D7]that you don't make her [G]blue
 I'm gonna make real [C]sure [D7]she forgets about [G]you
 {end_of_verse}
+
+
+
+
+
+

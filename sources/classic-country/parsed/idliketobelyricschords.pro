@@ -1,6 +1,9 @@
 {meta: title I'd Like To Be}
 {meta: artist Jim Reeves}
 {meta: composer Hugh Ashley}
+{meta: x_source classic-country}
+{meta: x_source_file idliketobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd like to be the picture on your mantel 
@@ -36,3 +39,7 @@ I'd [D7]like to be the little voice [G7]inside
 And if you ever [D7]have a [G7]heartache 
 I [A7]wanna be the [D7]tear you [G7]hi-ide
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Alone And Broke In Birmingham}
 {meta: artist Cal Smith}
 {meta: composer Jan Crutchfield and Jimmy Rule}
+{meta: x_source classic-country}
+{meta: x_source_file aloneandbrokeinbirminghamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nobody knows how blue I am
@@ -53,3 +56,11 @@ A man's got hope though he's not got a dime
 [G7]Alone and broke in [C]Birmingham
 [G7]Alone and broke in [C]Birmingham
 {end_of_verse}
+
+
+
+
+
+
+
+

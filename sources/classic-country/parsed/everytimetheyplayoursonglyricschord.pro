@@ -1,6 +1,9 @@
 {meta: title Every Time They Play Our Song}
 {meta: artist Wanda Jackson}
 {meta: composer Frank Thomas and Rachel Lane}
+{meta: x_source classic-country}
+{meta: x_source_file everytimetheyplayoursonglyricschord.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I  [G]try to live without you and [C]hold my head up [A7]high
@@ -22,3 +25,5 @@
 [G]And then I can't forget you no [C]matter how I [A7]try
 [D7]But every time I hear our song I have to [G]cry
 {end_of_verse}
+
+

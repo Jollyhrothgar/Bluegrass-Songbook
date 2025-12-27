@@ -1,6 +1,9 @@
 {meta: title Beauty Lies in the Eyes of the Beholder}
 {meta: artist Ray Price}
 {meta: composer Clarence Richard Grissom and Jon Gray}
+{meta: x_source classic-country}
+{meta: x_source_file beautyliesintheeyesofthebeholderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mountain tops rain drops snowflakes when they [Am]fall
@@ -38,3 +41,7 @@
 [D7]And the beauty of [Am]it all is that [D7]forever
 [G]You'll be holding me too
 {end_of_verse}
+
+
+
+

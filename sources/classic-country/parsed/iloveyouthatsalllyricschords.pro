@@ -1,6 +1,9 @@
 {meta: title I Love You That's All}
 {meta: artist Tracy Byrd}
 {meta: composer Chris Crawford and Tom Kimmel}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyouthatsalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't need to [G7]go on pre[Am]tending[G7] 
@@ -40,3 +43,8 @@ It’s over I [G7]love you that's [Am]all [C]
 {start_of_verse: Verse 5}
 I'll [F]miss you I [G7]love you that's [C]all
 {end_of_verse}
+
+
+
+
+

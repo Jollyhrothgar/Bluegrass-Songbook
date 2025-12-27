@@ -1,5 +1,8 @@
 {meta: title More Than Yesterday}
 {meta: artist Slim Whitman}
+{meta: x_source classic-country}
+{meta: x_source_file morethanyesterdaylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're asking if I love you and if my [G7]love's [C]sincere
@@ -16,3 +19,4 @@ I need you more than [G]yesterday  and [D7]less than tomorrow [G]dear
 This is how I love you  for ever [G7]and a [C]year
 I love you more than [G]yesterday  and less [D7]than tomorrow [G]dear 
 {end_of_verse}
+

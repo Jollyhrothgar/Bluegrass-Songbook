@@ -1,6 +1,9 @@
 {meta: title I Told You So}
 {meta: artist Ray Price}
 {meta: composer Rex Griffin and Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file itoldyousolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So your new love let your feelings sad and [D7]blue
@@ -36,3 +39,7 @@ Think of me each time the bitter teardrops [G]flow
 But you have no mercy on this heart of [D7]mine
 And I'm glad that I can say I told you [G]so
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Afterglow}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file afterglowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Don't [C]say a word don't [Am]breath a sigh
@@ -50,3 +53,9 @@ That frees our souls
 [G7]Meet me in the [C]afterglow ([Am]afterglow)
 [G7]In the [C]afterglow
 {end_of_verse}
+
+
+
+
+
+

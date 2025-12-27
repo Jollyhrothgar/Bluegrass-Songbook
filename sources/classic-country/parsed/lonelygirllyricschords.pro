@@ -1,5 +1,8 @@
 {meta: title Lonely Girl}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file lonelygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do you remember me lonely [G7]girl
@@ -20,3 +23,5 @@ Repeat # 2
 [G7]The love you traded for the night world
 [C]And happiness with somebody new
 {end_of_verse}
+
+

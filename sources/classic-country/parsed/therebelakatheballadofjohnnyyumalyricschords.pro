@@ -1,6 +1,9 @@
 {meta: title The Rebel (Aka The Ballad Of Johnny Yuma)}
 {meta: artist Johnny Cash}
 {meta: composer Richard Markowitz and Andrew Fenady}
+{meta: x_source classic-country}
+{meta: x_source_file therebelakatheballadofjohnnyyumalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -42,3 +45,9 @@ With [Am]a dream he'd hold till his dyin' breath
 He'd [F]search his soul and gamble with death
 The [C]rebel [G7]Johnny [C]Yuma
 {end_of_verse}
+
+
+
+
+
+

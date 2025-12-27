@@ -1,6 +1,9 @@
 {meta: title Are You Lonesome Tonight}
 {meta: artist Elvis Presley}
 {meta: composer Roy Turk and Lou Handman}
+{meta: x_source classic-country}
+{meta: x_source_file areyoulonesometonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Are you lonesome tonight do you miss me tonight 
@@ -38,3 +41,5 @@ Then make them bring the curtain down
 Shall I [D7]come back again
 Tell me [G7]dear are you lonesome to[C]night
 {end_of_verse}
+
+

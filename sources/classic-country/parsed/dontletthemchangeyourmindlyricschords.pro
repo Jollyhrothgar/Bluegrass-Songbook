@@ -1,5 +1,8 @@
 {meta: title Don't Let Them Change Your Mind}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file dontletthemchangeyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While you’re far away from me I’m thinking [G7]of the days to be
@@ -42,3 +45,8 @@ But [F]darling please remember my [C]love is always [G7]true
 Be [C]faithful to me sweetheart [G7]till I return someday
 Don’t let them change your mind while I’m [C]away
 {end_of_verse}
+
+
+
+
+

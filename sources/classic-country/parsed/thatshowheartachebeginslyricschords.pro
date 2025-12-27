@@ -1,6 +1,9 @@
 {meta: title That's How Heartache Begins}
 {meta: artist Patsy Cline}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file thatshowheartachebeginslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tell a little white lie and [Am]then multiply by [G]ten
@@ -32,3 +35,7 @@ I've [Am]listened while [A7]somebody played [D7]them
 {start_of_verse: Verse 4}
 [Am]That's how a [D7]heartache [G]begins
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Believe He Died For Me}
 {meta: artist The Cathedrals}
 {meta: composer Colbert Croft and Joyce Croft}
+{meta: x_source classic-country}
+{meta: x_source_file ibelievehediedformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never saw the cross He carried [F]up to [Fm]Calvary’s [C]Hill 
@@ -34,3 +37,7 @@ But I be[C]lieve when He [G7]died He died for [C]me
 [G7]There's a lot of [C]things I [C7]cannot [F]see  
 But I be[C]lieve when He [G7]died He died for [C]me
 {end_of_verse}
+
+
+
+

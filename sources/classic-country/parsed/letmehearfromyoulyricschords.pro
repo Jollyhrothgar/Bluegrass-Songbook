@@ -1,6 +1,9 @@
 {meta: title Let Me Hear From You}
 {meta: artist Billy Walker}
 {meta: composer Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file letmehearfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We had a quarrel then [G7]we [C]parted
@@ -43,3 +46,8 @@
 [C]Let’s not break up can’t we make [G7]up
 [C]Let me hear from you
 {end_of_verse}
+
+
+
+
+

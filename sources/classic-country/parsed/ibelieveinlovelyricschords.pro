@@ -1,6 +1,9 @@
 {meta: title I Believe In Love}
 {meta: artist Stonewall Jackson}
 {meta: composer Stonewall Jackson and Juanita Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file ibelieveinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I believe in love oh I believe in [G]love
@@ -47,3 +50,10 @@ I asked him if he loved the girl he said my gold's enough
 [D7]I believe in [G]love
 [D7]I believe in [G]love
 {end_of_verse}
+
+
+
+
+
+
+

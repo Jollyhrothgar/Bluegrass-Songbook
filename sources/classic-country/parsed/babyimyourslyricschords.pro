@@ -1,6 +1,9 @@
 {meta: title Baby I'm Yours}
 {meta: artist Tanya Tucker}
 {meta: composer Van McCoy}
+{meta: x_source classic-country}
+{meta: x_source_file babyimyourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby I'm [F]yours [D7] and I'll be [G7]yours 
@@ -43,3 +46,6 @@ Baby I'm [F]yours (baby I'm [Dm]yours)
 Until the [G7]sun no longer [C]shines
 Baby I'm [F]yours (baby I'm [Dm]yours)
 {end_of_verse}
+
+
+

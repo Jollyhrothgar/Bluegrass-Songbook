@@ -1,6 +1,9 @@
 {meta: title You're No Secret Of Mine}
 {meta: artist Wynn Stewart}
 {meta: composer L.D. Allen[3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file yourenosecretofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The gossip has started [C]like I knew it [G]would
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [C]Yes we love [G]each other and you're no [D7]secret of [G][C]m-ine
 {end_of_verse}
+
+
+

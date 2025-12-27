@@ -1,5 +1,8 @@
 {meta: title It's Tearing This Old Heart Out Of Me}
 {meta: artist Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file itstearingthisoldheartoutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I wake up to a [F]new world every [C]morning
@@ -32,3 +35,7 @@ Cause it’s [C]tearing this old [F]heart [G7]right out of [C]me
 {start_of_verse: Verse 4}
 Yes it’s tearing this old [F]heart [G7]right out of [C]me
 {end_of_verse}
+
+
+
+

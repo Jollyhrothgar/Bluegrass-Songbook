@@ -1,6 +1,9 @@
 {meta: title Losing Your Love}
 {meta: artist Vince Gill}
 {meta: composer Kye Fleming and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file losingyourlovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stars are falling [Am]from your eyes 
@@ -54,3 +57,10 @@ It's a matter of [Dm]time [C]till [F]you [G7]let [Am]go
 {start_of_verse: Verse 8}
 Don't let [C]go don't let [Am]go baby don't let [C]go
 {end_of_verse}
+
+
+
+
+
+
+

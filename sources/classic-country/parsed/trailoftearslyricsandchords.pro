@@ -1,5 +1,8 @@
 {meta: title Trail of Tears}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file trailoftearslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll leave a tr--ail of t-ears behind [G7]me
@@ -21,3 +24,5 @@ To [A7]h-old my l-ove [D7]I'll find no one like [G7]you
 [C]Until the d-ay when you are [G7]near
 I'll leave an endless trail of [C]tears
 {end_of_verse}
+
+

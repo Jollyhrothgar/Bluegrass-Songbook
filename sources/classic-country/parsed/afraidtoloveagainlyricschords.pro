@@ -1,6 +1,9 @@
 {meta: title Afraid To Love Again}
 {meta: artist Porter Wagoner}
 {meta: composer Jerry Chesnut and Theresa Beaty}
+{meta: x_source classic-country}
+{meta: x_source_file afraidtoloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If every time that you got hurt it left a [G7]scar
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]Then you'd know [C]why I'm [G7]afraid to love [C]again
 {end_of_verse}
+
+
+

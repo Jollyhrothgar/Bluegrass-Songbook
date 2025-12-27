@@ -1,6 +1,9 @@
 {meta: title Leaving London}
 {meta: artist Doc Watson}
 {meta: composer Tom Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file leavinglondonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s a dark and rolling [Em]sea 
@@ -81,3 +84,15 @@ And I’d [C]fly to my [D7]own true love [G]again
 {start_of_verse: Verse 10}
 Yes I'd [C]fly to my [D7]own true love [G]again
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

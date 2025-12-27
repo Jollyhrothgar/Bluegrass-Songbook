@@ -1,6 +1,9 @@
 {meta: title Long Gone Blues}
 {meta: artist Mel Tillis}
 {meta: composer Dave Hanner}
+{meta: x_source classic-country}
+{meta: x_source_file longgoneblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're the woman [Am]  you're the girl
@@ -29,3 +32,6 @@ If you ever think of me [Em] think of me now
 I wish my [G]feelings for [B7]you were [C]long gone too
 [A7]Long [D7]gone [G]blues
 {end_of_verse}
+
+
+

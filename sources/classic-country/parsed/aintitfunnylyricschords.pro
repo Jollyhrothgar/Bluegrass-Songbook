@@ -1,6 +1,9 @@
 {meta: title Ain't It Funny}
 {meta: artist Loretta Lynn}
 {meta: composer Tracey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file aintitfunnylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun comes up and brings the dawn to a new [G7]day
@@ -24,3 +27,5 @@
 [C]Oh ain't it [F]funny now ain't [C]it [F]funny
 [C]Oh gee ain't it [F]funny now ain't it [C]funny
 {end_of_verse}
+
+

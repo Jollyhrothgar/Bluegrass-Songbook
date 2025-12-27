@@ -1,6 +1,9 @@
 {meta: title Footsteps In The Night}
 {meta: artist Curtis Potter}
 {meta: composer Mel Holt}
+{meta: x_source classic-country}
+{meta: x_source_file footstepsinthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When [C]you’re all alone up in [F]your room late at [C]night
@@ -29,3 +32,6 @@ And [D7]after you've turned out your [G7]lights
 If [C]you feel I knew you will [F]it bring a [D7]tear
 When you [G7]hear footsteps in the [C]night
 {end_of_verse}
+
+
+

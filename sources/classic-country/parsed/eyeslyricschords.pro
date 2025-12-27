@@ -1,6 +1,9 @@
 {meta: title Eyes}
 {meta: artist Marty Robbins}
 {meta: composer Marty Robbins and Karen Russell}
+{meta: x_source classic-country}
+{meta: x_source_file eyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She always laughs the [F]loudest and she [C]seems so satis[G]fied
@@ -29,3 +32,6 @@ But she'll keep [D7]searchin' and [C]someday she will [G]find
 Eyes just as [D7]restless  just as [C]restless
 And she [D7]might find these two [C]restless [D7]eyes of [G]mine
 {end_of_verse}
+
+
+

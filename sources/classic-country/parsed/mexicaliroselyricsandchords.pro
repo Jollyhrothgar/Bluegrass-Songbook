@@ -1,6 +1,9 @@
 {meta: title Mexicali Rose}
 {meta: artist Jim Reeves}
 {meta: composer Helen Stone and Jack B. Tenney}
+{meta: x_source classic-country}
+{meta: x_source_file mexicaliroselyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mexicali Rose stop crying 
@@ -30,3 +33,6 @@ Kiss me once [Fm]again and [C]hold [A7]me
 [D7]Mexicali [G7]Rose [C]goodbye
 Mexicali Rose goodbye
 {end_of_verse}
+
+
+

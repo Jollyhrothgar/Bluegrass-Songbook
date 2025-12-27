@@ -1,5 +1,8 @@
 {meta: title Oh Woman}
 {meta: artist Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file ohwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just play like I'm asleep when she comes [Am]in
@@ -37,3 +40,7 @@ And [C]go [Am]woman but [D7]tomorrow mornin's [G7]soon [C]enough
 I guess [D7]tomorrow mornin's [G7]soon [C]enough
 I think a [D7]tomorrow mornin's [G7]soon [C]enough
 {end_of_verse}
+
+
+
+

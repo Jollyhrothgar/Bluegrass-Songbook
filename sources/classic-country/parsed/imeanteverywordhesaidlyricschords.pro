@@ -1,5 +1,8 @@
 {meta: title I Meant Every Word He Said}
 {meta: artist Ricky Van Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file imeanteverywordhesaidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard him say I love you I heard him say [G7]forever
@@ -23,3 +26,5 @@ Then he said with this ring I thee [C]wed
 And when he said I do I choked back I do [G7]too
 And I meant every word he [C]said
 {end_of_verse}
+
+

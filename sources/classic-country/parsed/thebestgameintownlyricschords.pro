@@ -1,6 +1,9 @@
 {meta: title The Best Game In Town}
 {meta: artist David Allan Coe}
 {meta: composer Shel Silverstein, David A. Coe, Karen Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file thebestgameintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was just warming up to this [C]long legged girl with [G]intentions to please
@@ -31,3 +34,6 @@ This [C]looks like the [D7]best game in [G]town
 We know how we [Em]feel let's [D7]go on and deal
 This [C]looks like the [D7]best game in [G]town
 {end_of_verse}
+
+
+

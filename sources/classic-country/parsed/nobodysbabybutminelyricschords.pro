@@ -1,6 +1,9 @@
 {meta: title Nobody's Baby But Mine}
 {meta: artist Jeanne Pruett}
 {meta: composer Jimmie Davis and Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file nobodysbabybutminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Be nobody's baby but [F]mine love
@@ -29,3 +32,6 @@ Give [G7]no one the love you give [C]me
 Promise me that you will [F]always
 Be [G7]nobody's baby but [C]mine
 {end_of_verse}
+
+
+

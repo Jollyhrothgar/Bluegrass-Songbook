@@ -1,6 +1,9 @@
 {meta: title Rainbow Valley}
 {meta: artist Roger Miller}
 {meta: composer Robert Wells and Dave Grusin}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowvalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm going [Dm]home [G7]to Rainbow [C]Valley
@@ -35,3 +38,7 @@ And they [Dm]call you by your [A#7]name
 [C]Gonna [F]settle down
 Right [G7]there in my home [C]town
 {end_of_verse}
+
+
+
+

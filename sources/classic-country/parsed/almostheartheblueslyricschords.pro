@@ -1,5 +1,8 @@
 {meta: title Almost Hear The Blues}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file almostheartheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The night winds whisper softly why did you do her [G7]wrong
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [G7]Listen close and you can almost hear the [C]blues
 {end_of_verse}
+
+
+
+

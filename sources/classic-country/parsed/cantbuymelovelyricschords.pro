@@ -1,6 +1,9 @@
 {meta: title Can't Buy Me Love}
 {meta: artist Brenda Lee}
 {meta: composer John Lennon and Paul McCartney}
+{meta: x_source classic-country}
+{meta: x_source_file cantbuymelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Can't buy me lo[Am]ve  [Em]lov[Am]e can't buy me [D7]lov[G]e
@@ -38,3 +41,9 @@ Can't buy me [Em]lov[Am]e  [D7]no no no [G7]no
 Can't buy me [Em]lov[Am]e  [C]everybody tells me so
 Can't buy me [Em]lov[Am]e  [D7]no no no [G7]no
 {end_of_verse}
+
+
+
+
+
+

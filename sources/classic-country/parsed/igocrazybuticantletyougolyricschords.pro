@@ -1,5 +1,8 @@
 {meta: title I Go Crazy (But I Can't Let You Go)}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file igocrazybuticantletyougolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can’t stand to see another man [F]beside you
@@ -32,3 +35,7 @@ And I go [C]crazy [G7]but I can’t let you [C]go
 {start_of_verse: Verse 4}
 [F]I go [C]crazy [G7]but I can’t let you [F]g--[C]o
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Holy Jesus}
 {meta: artist Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file holyJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Holy Jesus
@@ -36,3 +39,8 @@ I bow [C7]before Your [F]mercy [Dm]  my [G]holy [G7]holy [C]Lord
 {start_of_verse: Verse 6}
 I bow [C7]before You [F]Jesus[Dm]   my [G]holy [G7]holy [C]Lord
 {end_of_verse}
+
+
+
+
+

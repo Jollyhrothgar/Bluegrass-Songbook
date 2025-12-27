@@ -1,5 +1,8 @@
 {meta: title Don't Stop The Music}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file dontstopthemusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't stop the music let it [F]play one more [C]song
@@ -28,3 +31,6 @@ The [D7]same one that's played tonight for so [G7]long
 My [C]pockets are empty I [F]spent my last [C]dime
 But I've [G7]just got to hear that [F]song one more [C]time
 {end_of_verse}
+
+
+

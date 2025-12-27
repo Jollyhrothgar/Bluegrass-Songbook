@@ -1,6 +1,9 @@
 {meta: title I Got Stung}
 {meta: artist Elvis Presley}
 {meta: composer Aaron Schroeder and David Hess}
+{meta: x_source classic-country}
+{meta: x_source_file igotstunglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Holy smoke a land sakes alive
@@ -39,3 +42,7 @@ I'll be [F]buzzing around your hive every day at five
 And I'm [C]never gonna leave once I arrive
 Cause I'm [G7]done [F]uh-uh I got [C]stung 
 {end_of_verse}
+
+
+
+

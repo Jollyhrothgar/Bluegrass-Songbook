@@ -1,6 +1,9 @@
 {meta: title She's Takin' Him Back Again}
 {meta: artist Lorrie Morgan}
 {meta: composer Richard Mainegra and Rick Yancey}
+{meta: x_source classic-country}
+{meta: x_source_file shestakinhimbackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It takes a special [Em]lady to [F]survive a broken [D7]heart
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [Am]Now I'm the one [D7]who has to let him [Cm]go
 {end_of_verse}
+
+
+
+

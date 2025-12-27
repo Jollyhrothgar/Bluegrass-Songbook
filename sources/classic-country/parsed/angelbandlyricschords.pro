@@ -1,6 +1,9 @@
 {meta: title Angel Band}
 {meta: artist Emmylou Harris}
 {meta: composer Pearl D. Jones}
+{meta: x_source classic-country}
+{meta: x_source_file angelbandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My latest sun is [F]sinking [C]fast my race is [G7]nearly [C]run
@@ -21,3 +24,5 @@
 {start_of_verse: Verse 3}
 [F]Oh bear me away on your [C]snow white wings to my [G7]immortal [C]home
 {end_of_verse}
+
+

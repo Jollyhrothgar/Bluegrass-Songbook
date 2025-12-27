@@ -1,6 +1,9 @@
 {meta: title A Baby And A Sewing Machine}
 {meta: artist Moe Bandy}
 {meta: composer Ken McDuffie}
+{meta: x_source classic-country}
+{meta: x_source_file ababyandasewingmachinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A long time of [Em]loving [F]her good timing [C]man
@@ -30,3 +33,6 @@ That [C]good life she [Em]dreams of [F]it's such a simple [C]thing
 All she wants is a [Em]baby and a [G7]sewing ma[C]chine
 All she wants is a [Em]baby and a [G7]sewing ma[C]chine
 {end_of_verse}
+
+
+

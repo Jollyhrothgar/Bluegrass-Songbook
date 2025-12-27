@@ -1,6 +1,9 @@
 {meta: title A Rose Between Two Thorns}
 {meta: artist George Hamilton IV}
 {meta: composer Bobby R. Warren, Dale D. Siegenthaler, Roy G. Ownbey}
+{meta: x_source classic-country}
+{meta: x_source_file arosebetweentwothornslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For God so loved this world [G7]that He sent down His [C]son
@@ -33,3 +36,7 @@ The [C]Savior of all Saviors [G7]arose between two [C]thorns
 {start_of_verse: Verse 4}
 Our precious Lord and Savior [G7]arose between two [C]thorns
 {end_of_verse}
+
+
+
+

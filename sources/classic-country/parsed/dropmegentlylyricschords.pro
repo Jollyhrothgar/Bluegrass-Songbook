@@ -1,6 +1,9 @@
 {meta: title Drop Me Gently}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Dorothy Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file dropmegentlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don’t say we’re [F]through all at once [G7]do it [C]gradually
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]Just drop me gently [G7]so my heart won’t [C]break
 {end_of_verse}
+
+
+

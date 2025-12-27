@@ -1,6 +1,9 @@
 {meta: title She Loved A Lot In Her Time}
 {meta: artist George Jones}
 {meta: composer Randy Boudreaux, Sam Hogin, Kim Williams}
+{meta: x_source classic-country}
+{meta: x_source_file shelovedalotinhertimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I started drinking and [F]acting [C]crazy
@@ -57,3 +60,11 @@ She watched love grow and die [F]on the [C]vine
 Tag:
 Mama you loved a [G7]lot in your [C]time
 {end_of_verse}
+
+
+
+
+
+
+
+

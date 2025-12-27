@@ -1,6 +1,9 @@
 {meta: title Evergreen}
 {meta: artist Roy Orbison}
 {meta: composer Joe Tanner}
+{meta: x_source classic-country}
+{meta: x_source_file evergreenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes love will [Em]bloom in the [G7][F]springtime
@@ -29,3 +32,6 @@
 [Am]When love [Em]is ever-green  [C][G7][F]e-ver-green
 [Dm]Like [G7]my  love for [C]you
 {end_of_verse}
+
+
+

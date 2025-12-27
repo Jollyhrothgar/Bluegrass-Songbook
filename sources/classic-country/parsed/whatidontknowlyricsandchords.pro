@@ -1,5 +1,8 @@
 {meta: title What I Don't Know}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file whatidontknowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What I don't know might not hurt me
@@ -39,3 +42,8 @@ What I don't [F]kno[G7]w might get you [C]killed
 {start_of_verse: Verse 4}
 What I don't [F]kno[G7]w might get you [C]killed
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Sounds}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file thesoundslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can hear a [G7]heartbeat it [F]seems a little [C]strong
@@ -41,3 +44,8 @@ You can't hear it [G7]but the noise is killin' [C]me
 You can't hear it [G7]but the noise is killin' [Am]me [G7]
 I can [F]hear it and the [G7]silence is killin' [C]me
 {end_of_verse}
+
+
+
+
+

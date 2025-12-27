@@ -1,6 +1,9 @@
 {meta: title Melva's Wine}
 {meta: artist Johnny Cash}
 {meta: composer Vincent Matthews}
+{meta: x_source classic-country}
+{meta: x_source_file melvaswinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every year about this time
@@ -63,3 +66,14 @@ And I sip her wine and I listen to the robin sings
 Cause it was last year about this time
 [F]That Melva made this glass of [G]wine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

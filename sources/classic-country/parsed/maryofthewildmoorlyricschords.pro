@@ -1,6 +1,9 @@
 {meta: title Mary Of The Wild Moor}
 {meta: artist Mac Wiseman}
 {meta: composer David Turner}
+{meta: x_source classic-country}
+{meta: x_source_file maryofthewildmoorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Was on a [G7]cold winter's [C]night
@@ -43,3 +46,8 @@ Where the willows [D7]weep over the [G7]door
 Saying [C]there Mary [G7]died once the [C]gay village [F]bride
 From the [C]winds that blow [G7]across the wild [C]moor
 {end_of_verse}
+
+
+
+
+

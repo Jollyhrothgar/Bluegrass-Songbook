@@ -1,5 +1,8 @@
 {meta: title You're That Much Woman To Me}
 {meta: artist George Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file yourethatmuchwomantomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I woke up without you [C]tomorrow
@@ -28,3 +31,6 @@ And [A7]I'll love you through eterni[D7]ty
 I would [G]die if you ever [C]should leave me
 Cause [D7]you're that much woman to [G]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Your Love}
 {meta: artist Tammy Wynette}
 {meta: composer Tommy Rocco and Becky Foster}
+{meta: x_source classic-country}
+{meta: x_source_file yourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I been washed in the rain an dried in the [C]sun
@@ -29,3 +32,6 @@ Your [G]love is another chance I'm gonna take [D7]it
 You [G]gave me an open heart I'll never break [C]it
 No I [G]know I never would-a made it [D7]without your [G][C]l-ov-e
 {end_of_verse}
+
+
+

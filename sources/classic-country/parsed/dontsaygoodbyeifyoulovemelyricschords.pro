@@ -1,6 +1,9 @@
 {meta: title Don’t Say Goodbye If You Love Me}
 {meta: artist Jim and Jesse}
 {meta: composer Jimmie Davis and Bonnie Dodd}
+{meta: x_source classic-country}
+{meta: x_source_file dontsaygoodbyeifyoulovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don’t say goodbye if you [C]love me
@@ -50,3 +53,9 @@ For ‘[G]twould make my heart over[D7]flow
 [G]Kiss my lips once ere you [C]leave me
 Just [G]don’t say good[D7]bye when you [G]go
 {end_of_verse}
+
+
+
+
+
+

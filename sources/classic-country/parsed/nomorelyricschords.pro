@@ -1,6 +1,9 @@
 {meta: title No More}
 {meta: artist Elvis Presley}
 {meta: composer Don Robertson and Hal Blair}
+{meta: x_source classic-country}
+{meta: x_source_file nomorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No more do I see the starlight caress your [D7]hair
@@ -31,3 +34,6 @@ Please come back to my arms we belong to[D7]gether
 Come to me let's be sweethearts [Am]again 
 And then let us [D7]part no [G]more
 {end_of_verse}
+
+
+

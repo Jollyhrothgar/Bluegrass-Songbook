@@ -1,6 +1,9 @@
 {meta: title Helping Hand}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file helpinghandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a thousand miles away [G7]from [C]home
@@ -31,3 +34,8 @@ Nobody seems to want me
 I nevermore will roam again
 [D7]If I ever get [G7]home [C]again
 {end_of_verse}
+
+
+
+
+

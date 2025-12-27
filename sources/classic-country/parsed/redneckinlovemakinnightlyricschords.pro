@@ -1,6 +1,9 @@
 {meta: title Red Neckin' Love Makin' Night}
 {meta: artist Conway Twitty}
 {meta: composer Troy Seals and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file redneckinlovemakinnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello baby Conway here [F]let me lay this in your ear
@@ -42,3 +45,7 @@ You [F]feel in the most when you get real close and you [C]hold on [F]tight
 It's a [D7]red neckin' [G7]love makin' [C]night
 It's a [D7]red neckin' [G7]love makin' [C]night
 {end_of_verse}
+
+
+
+

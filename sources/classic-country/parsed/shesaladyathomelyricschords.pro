@@ -1,6 +1,9 @@
 {meta: title She's A Lady At Home}
 {meta: artist Red Steagall}
 {meta: composer Red Steagall and Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file shesaladyathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No one at home knows her [F]hair is that [C]long
@@ -41,3 +44,8 @@ Will never know of her [G7]nights on the [C]street
 Yes the [F]children at home lying [C]warm in their beds
 Will never know of her [G7]nights on the [C]street
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Bring It To Jesus}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file bringittoJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the road is rocky and [C]heavy is your [G]load
@@ -28,3 +31,6 @@ Bring it to Jesus He'll [A7]brighten your [D7]day
 When [G]your life is troubled and [C]you can't sleep at [G]night
 Bring it to Jesus and He'll [D7]show you the [G]light
 {end_of_verse}
+
+
+

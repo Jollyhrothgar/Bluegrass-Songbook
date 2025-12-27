@@ -1,6 +1,9 @@
 {meta: title Twenty Miles From Shore}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Bob Graves}
+{meta: x_source classic-country}
+{meta: x_source_file twentymilesfromshorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a drilling rig twenty miles at [F]sea
@@ -43,3 +46,8 @@ Well the twenty one days don't seem so long
 I'm way out here twenty miles from [F]shore
 I'd [G7]give six months pay for a little [C]pirogue
 {end_of_verse}
+
+
+
+
+

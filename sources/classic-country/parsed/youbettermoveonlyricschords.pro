@@ -1,6 +1,9 @@
 {meta: title You Better Move On}
 {meta: artist Johnny Paycheck}
 {meta: composer Arthur Alexander}
+{meta: x_source classic-country}
+{meta: x_source_file youbettermoveonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You ask me to give up the hand of the girl I [G7]love 
@@ -36,3 +39,7 @@ I'm never gonna let her [C]go
 {start_of_verse: Verse 5}
 [G7]You better move [C]on 
 {end_of_verse}
+
+
+
+

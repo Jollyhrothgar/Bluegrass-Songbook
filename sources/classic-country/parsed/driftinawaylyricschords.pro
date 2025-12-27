@@ -1,5 +1,8 @@
 {meta: title Driftin' Away}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file driftinawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Driftin' away driftin' away
@@ -35,3 +38,7 @@ It's the last [C7]thing I wanted to [F]do
 [Fm]Try not to think a[C]bout it
 But I'm [G7]drifting away from [C]you
 {end_of_verse}
+
+
+
+

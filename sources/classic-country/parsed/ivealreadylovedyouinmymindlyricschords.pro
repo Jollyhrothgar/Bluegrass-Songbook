@@ -1,5 +1,8 @@
 {meta: title I've Already Loved You In My Mind}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file ivealreadylovedyouinmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought I'd never seen a girl like her in here [C]before
@@ -29,3 +32,6 @@
 [D7]We're not exactly strangers  I've already loved you in my [G]mind
 [D7]No we're not exactly strangers  I've already loved you in my [G]mind
 {end_of_verse}
+
+
+

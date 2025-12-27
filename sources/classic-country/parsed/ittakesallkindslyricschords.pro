@@ -1,6 +1,9 @@
 {meta: title It Takes All Kinds}
 {meta: artist George Strait}
 {meta: composer George Strait, Bubba Strait,}
+{meta: x_source classic-country}
+{meta: x_source_file ittakesallkindslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Some got a boat they like to float
@@ -74,3 +77,13 @@ Some got a thought they like to think
 Some got a [C]chain with a few more links
 [D7]It takes all [G]kinds
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

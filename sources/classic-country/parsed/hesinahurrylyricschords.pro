@@ -1,6 +1,9 @@
 {meta: title He's In A Hurry}
 {meta: artist Johnny Paycheck}
 {meta: composer Joe Poovey}
+{meta: x_source classic-country}
+{meta: x_source_file hesinahurrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've seen him quit holding a [F]straight flush with [G]aces high
@@ -22,3 +25,5 @@ She gives a lot but [F]demands a lot and [G]that's only fair
 Just one lapse in love and [F]he'll wind up here [G]by my side
 [C]Watching someone [G]else hurry [D7]home to our [C]wife[G]
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Walkin' Tall}
 {meta: artist Eric Wurst and David Wurst}
 {meta: composer Eric Wurst and David Wurst}
+{meta: x_source classic-country}
+{meta: x_source_file walkintalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I first [G7]saw you Lord I was [C]hooked
@@ -32,3 +35,6 @@ I'm walkin' tall [G7]away from [C]you
 I'm walkin' tall [G7]away from [C]you
 Spoken: (Bye bye Sweetie)
 {end_of_verse}
+
+
+

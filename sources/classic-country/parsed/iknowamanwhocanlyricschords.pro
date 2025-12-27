@@ -1,6 +1,9 @@
 {meta: title I Know A Man Who Can}
 {meta: artist George Jones}
 {meta: composer Jack Campbell and Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file iknowamanwhocanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I can't take a heart that's [C]broken 
@@ -33,3 +36,6 @@ If you feel no one can help [C]you
 And your [F]life is out of [C]hand 
 Well [G7]I know a man who [C]can
 {end_of_verse}
+
+
+

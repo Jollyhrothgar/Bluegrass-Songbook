@@ -1,6 +1,9 @@
 {meta: title Yes I Know}
 {meta: artist Guy Penrod}
 {meta: composer Anna W. Waterman}
+{meta: x_source classic-country}
+{meta: x_source_file yesiknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come ye sinners [C]lost and [G]lonely
@@ -47,3 +50,9 @@ Jesus' [D7]blood can make the vilest sinner [G]clean
 {start_of_verse: Verse 5}
 Jesus' [D7]blood can make the vilest sinner [G]clean
 {end_of_verse}
+
+
+
+
+
+

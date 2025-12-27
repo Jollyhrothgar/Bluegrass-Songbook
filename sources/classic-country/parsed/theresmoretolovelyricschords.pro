@@ -1,6 +1,9 @@
 {meta: title There's More To Love}
 {meta: artist Jack Greene}
 {meta: composer Ken Hunt and Barbara Greene}
+{meta: x_source classic-country}
+{meta: x_source_file theresmoretolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's more to love than just [C]saying I love you
@@ -26,3 +29,6 @@ There's [G]more to [D7]love than words can [G]say[D7]
 {start_of_verse: Verse 4}
 There's [G]more to [D7]love than words can [G]say
 {end_of_verse}
+
+
+

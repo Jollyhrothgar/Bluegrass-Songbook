@@ -1,6 +1,9 @@
 {meta: title Until I Can Make it On My Own}
 {meta: artist Faron Young}
 {meta: composer Arthur Leo Owens and Johnny McRae}
+{meta: x_source classic-country}
+{meta: x_source_file untilicanmakeitonmyownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't want to know who's loved you
@@ -36,3 +39,7 @@ For the [G7]time you spend with [C]me
 As long as we're [D7]together
 I can hide from [G7]memories
 {end_of_verse}
+
+
+
+

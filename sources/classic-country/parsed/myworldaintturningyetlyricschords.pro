@@ -1,5 +1,8 @@
 {meta: title My World Ain't Turning Yet}
 {meta: artist Jack Greene}
+{meta: x_source classic-country}
+{meta: x_source_file myworldaintturningyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm sure you had the [C]very best in[G]tentions
@@ -32,3 +35,7 @@ The [C]torch I used to carry it's still [G]burning
 {start_of_verse: Verse 5}
 [C]Oh it's been [G]years my [D7]world ain't turning [C]yet[G]
 {end_of_verse}
+
+
+
+

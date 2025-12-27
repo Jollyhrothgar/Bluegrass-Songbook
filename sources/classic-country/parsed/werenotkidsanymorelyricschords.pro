@@ -1,6 +1,9 @@
 {meta: title We're Not Kids Anymore}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file werenotkidsanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We're not kids anymore not a [C]little girl and [G]boy
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [C]Let's grow up we're not [D7]kids [G]anymore
 {end_of_verse}
+
+
+

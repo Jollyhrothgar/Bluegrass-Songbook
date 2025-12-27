@@ -1,6 +1,9 @@
 {meta: title Jesus Loved The Devil Out Of Me}
 {meta: artist Kitty Wells}
 {meta: composer Eddie Pleasant}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuslovedthedeviloutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus loved the devil out of [G7]me
@@ -56,3 +59,9 @@ When He took me by the hand
 Ol' [F]Satan just gave up and ran
 [G7]Jesus loved the devil out of [C]me
 {end_of_verse}
+
+
+
+
+
+

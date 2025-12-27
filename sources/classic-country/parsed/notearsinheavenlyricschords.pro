@@ -1,6 +1,9 @@
 {meta: title No Tears In Heaven}
 {meta: artist Skeeter Davis}
 {meta: composer Robert S. Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file notearsinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No tears in heaven no sorrows given
@@ -29,3 +32,6 @@ Sorrow and pain will all have [G7]flown
 [C]No tears (in heaven bear) no tears (no tears up there)
 No tears in heaven will [G7]be [C]known
 {end_of_verse}
+
+
+

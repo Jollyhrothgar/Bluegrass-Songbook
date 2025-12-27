@@ -1,6 +1,9 @@
 {meta: title Gone Out Of My Mind}
 {meta: artist Doug Stone}
 {meta: composer Bob Morrison, Gene Dobbins, Michael Huffman}
+{meta: x_source classic-country}
+{meta: x_source_file goneoutofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your love just came to visit  [F]your memory came to stay
@@ -33,3 +36,7 @@ Till [F]one of us has [G7]gone out of my [C]mind
 {start_of_verse: Verse 4}
 Till [F]one of us has [G7]gone out of my [C]mind
 {end_of_verse}
+
+
+
+

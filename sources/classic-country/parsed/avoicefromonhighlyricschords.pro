@@ -1,5 +1,8 @@
 {meta: title A Voice From On High}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file avoicefromonhighlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear a voice calling it [F]must be our [C]Lord 
@@ -35,3 +38,7 @@ It's coming from heaven on [G7]high
 I hear a voice [C]calling I've [F]gained a [C]reward 
 For the land where we [G7]never shall [C]die
 {end_of_verse}
+
+
+
+

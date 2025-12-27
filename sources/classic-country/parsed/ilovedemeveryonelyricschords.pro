@@ -1,6 +1,9 @@
 {meta: title I Loved ‘Em Every One}
 {meta: artist T.G. Sheppard}
 {meta: composer Phil Sampson}
+{meta: x_source classic-country}
+{meta: x_source_file ilovedemeveryonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]I’ve known some painted ladies 
@@ -43,3 +46,7 @@ Big little short or tall
 [C]Holding me in their arms 
 [D7]And I hope they had some [Em]fun
 {end_of_verse}
+
+
+
+

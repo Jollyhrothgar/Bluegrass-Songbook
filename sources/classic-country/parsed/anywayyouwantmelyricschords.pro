@@ -1,6 +1,9 @@
 {meta: title Anyway You Want Me}
 {meta: artist Elvis Presley}
 {meta: composer Aaron Schroeder and Cliff Owens}
+{meta: x_source classic-country}
+{meta: x_source_file anywayyouwantmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll be as strong as [Em]a mountain
@@ -30,3 +33,6 @@ Yes [G7]any-way you [C]want me
 Well [G]that's how [D7]I will [G]be
 [C]I will [G]be
 {end_of_verse}
+
+
+

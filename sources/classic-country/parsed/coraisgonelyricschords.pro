@@ -1,6 +1,9 @@
 {meta: title Cora Is Gone}
 {meta: artist Flatt and Scruggs}
 {meta: composer Odell McLeod}
+{meta: x_source classic-country}
+{meta: x_source_file coraisgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The wind through the night is blowing so lonesome
@@ -43,3 +46,8 @@ My [F]darling Cora is [C]gone
 I don't know why she told me goodbye
 But my darling [G7]Cora is [C]gone
 {end_of_verse}
+
+
+
+
+

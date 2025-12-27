@@ -1,6 +1,9 @@
 {meta: title Another Pretty Country Song}
 {meta: artist David Allan Coe}
 {meta: composer David Allan Coe and Ronald Clark}
+{meta: x_source classic-country}
+{meta: x_source_file anotherprettycountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I bought this rhinestone [G7]suit in Cali[C]fornia
@@ -50,3 +53,9 @@ I can [F]cry deep down inside and keep on [C]smilin'
 While I sing another [G7]pretty country [C]song
 But I've [G7]got to take a drink to keep from [C]shakin' [G7]    [C]
 {end_of_verse}
+
+
+
+
+
+

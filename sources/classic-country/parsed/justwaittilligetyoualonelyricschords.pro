@@ -1,6 +1,9 @@
 {meta: title Just Wait Till I Get You Alone}
 {meta: artist Carl Smith}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file justwaittilligetyoualonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You tell me I'm too shy a bashful sort of guy
@@ -29,3 +32,6 @@ Your eyes dare me to try your kisses on the sly
 [C]If love is what you need I'm ready yes [F]indeed
 [C]Just wait till I [G7]get you [C]alone
 {end_of_verse}
+
+
+

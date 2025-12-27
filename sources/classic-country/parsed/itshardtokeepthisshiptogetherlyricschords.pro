@@ -1,6 +1,9 @@
 {meta: title It's Hard To Keep This Ship Together}
 {meta: artist John Anderson}
 {meta: composer Fred Carter and John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file itshardtokeepthisshiptogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Like a lost ship on the sea 
@@ -34,3 +37,6 @@ Honey it's [G7]hard to [D7]keep this ship [Am]together hey hey
 Yeah honey it's [G7]hard to [D7]keep this ship [Am]together
 Yeah honey it's [G7]hard to [D7]keep this ship [Am]together
 {end_of_verse}
+
+
+

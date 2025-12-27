@@ -1,6 +1,9 @@
 {meta: title Answer To Weeping Willow}
 {meta: artist Mac Wiseman}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file answertoweepingwillowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My love is dead and [F]buried yonder
@@ -43,3 +46,8 @@ Then lay me down in [F]death beside her
 That [C]I may join and [F]ever caress her[C]
 In a [G7]land beyond the [C]sea
 {end_of_verse}
+
+
+
+
+

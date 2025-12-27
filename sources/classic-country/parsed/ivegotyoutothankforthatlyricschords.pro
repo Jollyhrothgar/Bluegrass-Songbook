@@ -1,6 +1,9 @@
 {meta: title I've Got You To Thank For That}
 {meta: artist Don Williams}
 {meta: composer Don Pfrimmer and Blake Mevis}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotyoutothankforthatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got Sunday school to thank for Jesus
@@ -46,3 +49,11 @@ I quit smoking thanks to coach Kawolski
 {start_of_verse: Verse 8}
 [C]Honey I've got [D7]you to thank for [G]that
 {end_of_verse}
+
+
+
+
+
+
+
+

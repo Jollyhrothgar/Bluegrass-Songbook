@@ -1,6 +1,9 @@
 {meta: title Across The Border}
 {meta: artist Linda Ronstadt and Emmylou Harris}
 {meta: composer Bruce Springsteen}
+{meta: x_source classic-country}
+{meta: x_source_file acrosstheborderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight my bag is packed
@@ -61,3 +64,10 @@ Where pain and memory
 [C]I know love and fortune will be [G]mine
 [D7]Somewhere across the [G]border
 {end_of_verse}
+
+
+
+
+
+
+

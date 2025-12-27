@@ -1,5 +1,8 @@
 {meta: title An Empty Cup}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file anemptycuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One [G7]lonely [C]night  [F]at this drive [C]in
@@ -29,3 +32,7 @@ Now [D7]all I have to show for love
 Just like this [C]Coke  [F]my love is [C]gone
 [F]I've hit the [C]bottom  [F]now I'm [C]alone
 {end_of_verse}
+
+
+
+

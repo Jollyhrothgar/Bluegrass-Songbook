@@ -1,6 +1,9 @@
 {meta: title I Still Believe In You}
 {meta: artist Vince Gill}
 {meta: composer John Jarvis and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file istillbelieveinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everybody wants a little [G7]piece of my time
@@ -40,3 +43,7 @@ With a [Dm]love that will al[C]ways [F]be[G7]
 [C]Standing so strong and [A#7]true  
 Baby [Dm]I still believe [C]in [F]you [G7]and [C]me
 {end_of_verse}
+
+
+
+

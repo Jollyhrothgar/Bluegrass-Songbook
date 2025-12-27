@@ -1,6 +1,9 @@
 {meta: title At The Feet Of Jesus}
 {meta: artist Margo Smith}
 {meta: composer Jerry Salley and Joel Lindsey}
+{meta: x_source classic-country}
+{meta: x_source_file atthefeetofJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Throughout the years the [C]church 
@@ -65,3 +68,11 @@ We'll gather there as [Am]one
 Through mercy grace and [D7]love
 At the feet of [C]Je[D7]sus[G]
 {end_of_verse}
+
+
+
+
+
+
+
+

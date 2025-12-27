@@ -1,6 +1,9 @@
 {meta: title Wait For the Light to Shine}
 {meta: artist Hank Williams Sr.}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file waitforthelighttoshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the road is rocky 
@@ -69,3 +72,10 @@ Wait for the light to [D7]shine
 As you walk that [C]narrow [G]line
 Wait for the [D7]light to [G]shine
 {end_of_verse}
+
+
+
+
+
+
+

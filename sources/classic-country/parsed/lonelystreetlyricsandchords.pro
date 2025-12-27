@@ -1,5 +1,8 @@
 {meta: title Lonely Street}
 {meta: artist Patsy Cline}
+{meta: x_source classic-country}
+{meta: x_source_file lonelystreetlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm looking for that lonely street
@@ -32,3 +35,7 @@ A place where there's just loneliness
 {start_of_verse: Verse 5}
 [G7]Where's this place called lonely [C][F]stree-ee-ee-eet
 {end_of_verse}
+
+
+
+

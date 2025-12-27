@@ -1,6 +1,9 @@
 {meta: title Honey Won’t You Please Come Home}
 {meta: artist Jim Reeves}
 {meta: composer Jim Reeves and Luke McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file honeywontyoupleasecomehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My friends all say [D7]what a [G]pity 
@@ -29,3 +32,6 @@ Soon the snow [D7]will be [G]falling
 [C]I miss the sound of your [G]calling 
 [D7]Oh honey won't you please come [G]home mmm [D7]mmm [G]mmm
 {end_of_verse}
+
+
+

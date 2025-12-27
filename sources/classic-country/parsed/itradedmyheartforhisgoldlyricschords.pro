@@ -1,5 +1,8 @@
 {meta: title I Traded My Heart For His Gold}
 {meta: artist Bonnie Owens}
+{meta: x_source classic-country}
+{meta: x_source_file itradedmyheartforhisgoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was once a happy [C]wife living [G]in a happy home
@@ -35,3 +38,7 @@ No [C]true love was ever bought or [G]sold
 This [C]life in a millionaire’s [G]mansion
 Isn’t [D7]worth all his silver and [G]gold
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Please Take The Devil Out Of Me}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file pleasetakethedeviloutofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh Jesus [F]please [C]please [G7]take the devil outta [C]me
@@ -32,3 +35,7 @@ I'm tired of keeping the [G7]devil for my friend
 [C]I want so badly [F]to be set [C]free
 Oh Jesus [F]please [C]please [G7]take the devil outta [C]me
 {end_of_verse}
+
+
+
+

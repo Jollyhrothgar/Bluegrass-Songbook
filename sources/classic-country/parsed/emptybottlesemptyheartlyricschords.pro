@@ -1,6 +1,9 @@
 {meta: title Empty Bottles Empty Heart}
 {meta: artist Hank Locklin}
 {meta: composer Billy Hughes}
+{meta: x_source classic-country}
+{meta: x_source_file emptybottlesemptyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]An empty bottle and an empty [G7]heart
@@ -29,3 +32,6 @@ Alone forsaken a thing [C]apart
 It gave me courage right from the [G7]start
 But now it's empty just like my [C]heart
 {end_of_verse}
+
+
+

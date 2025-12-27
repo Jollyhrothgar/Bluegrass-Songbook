@@ -1,6 +1,9 @@
 {meta: title Ain't It Good}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file aintitgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been a long time [F]since I held you in my [C]arms
@@ -31,3 +34,7 @@ It ain't what you do it's the way that you do it
 [F]Ain't what you eat it's the way that you [C]chew it
 Oo[F]hh oo[C]hh oo[G7]hh baby ain't it [C]good
 {end_of_verse}
+
+
+
+

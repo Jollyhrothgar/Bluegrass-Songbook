@@ -1,5 +1,8 @@
 {meta: title Mirrors Don't Lie}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file mirrorsdontlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mirrors [C]don't lie a mirror won't [G]lie
@@ -35,3 +38,7 @@ Don't be looking if you can't stand to [D7]see
 Mirrors [C]don't lie a mirror won't [G]lie
 I know it so cause one just [D7]told the truth on [G]me
 {end_of_verse}
+
+
+
+

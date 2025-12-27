@@ -1,6 +1,9 @@
 {meta: title Memories Are Made Of This}
 {meta: artist The Everly Brothers}
 {meta: composer Terry Gilkyson, Rich Dehr and Frank Miller}
+{meta: x_source classic-country}
+{meta: x_source_file memoriesaremadeofthislyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take one [G7]fresh and tender [C]kiss
@@ -32,3 +35,6 @@ Serve it [G7]generously with [C]love
 Memo[G7]ries are made of [C]this
 Memo[G7]ries are made of [C]this
 {end_of_verse}
+
+
+

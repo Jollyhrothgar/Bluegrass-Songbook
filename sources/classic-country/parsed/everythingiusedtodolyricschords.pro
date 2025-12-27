@@ -1,6 +1,9 @@
 {meta: title Everything I Used To Do}
 {meta: artist Gene Watson}
 {meta: composer Ernie Rowell}
+{meta: x_source classic-country}
+{meta: x_source_file everythingiusedtodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Smoked my first cigarette  [F]after being quit for [C]years
@@ -26,3 +29,6 @@ It [F]all seems so familiar that it must be Deja [C]Vu
 {start_of_verse: Verse 4}
 Yes I'm [F]doing everything I used to [G7]do  but loving [C]you
 {end_of_verse}
+
+
+

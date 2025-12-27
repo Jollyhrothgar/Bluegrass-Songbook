@@ -1,6 +1,9 @@
 {meta: title What A Memory You'll Make}
 {meta: artist Johnny Rodriguez}
 {meta: composer Raymond N. "Rusty" Russell}
+{meta: x_source classic-country}
+{meta: x_source_file whatamemoryyoullmakelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now and then with a bitter pain of losing [F]you
@@ -30,3 +33,6 @@
 [F]When I'm through forgetting [C]you
 [G7]What a memory you'll [C][F]ma-ke
 {end_of_verse}
+
+
+

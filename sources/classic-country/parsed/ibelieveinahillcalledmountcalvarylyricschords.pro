@@ -1,6 +1,9 @@
 {meta: title I Believe in a Hill Called Mount Calvary}
 {meta: artist The Booth Brothers}
 {meta: composer William J. Gaither, Gloria Gaither, Dale Oldham}
+{meta: x_source classic-country}
+{meta: x_source_file ibelieveinahillcalledmountcalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I [C]believe in a hill [D7]called Mount [G][Am]Calvary
@@ -34,3 +37,7 @@
 {start_of_verse: Verse 5}
 [D7]I'll still cling to the old rugged [G][C]cross
 {end_of_verse}
+
+
+
+

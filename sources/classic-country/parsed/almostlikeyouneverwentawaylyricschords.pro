@@ -1,6 +1,9 @@
 {meta: title Almost Like You Never Went Away}
 {meta: artist Tony Booth}
 {meta: composer Dave Lindsey and Edwin Rowell}
+{meta: x_source classic-country}
+{meta: x_source_file almostlikeyouneverwentawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I think I hear you all my [C]day
@@ -34,3 +37,7 @@ It’s [D7]almost like you never went [G]away
 [D7]And some[G]times I even catch myself [C]saving you a place
 It’s [D7]almost like you never went [G]away
 {end_of_verse}
+
+
+
+

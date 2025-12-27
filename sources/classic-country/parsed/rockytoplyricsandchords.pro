@@ -1,5 +1,8 @@
 {meta: title Rocky Top}
 {meta: artist Lynn Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file rockytoplyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wish that I was [C]on old [G]Rocky Top [Em]down in the [D7]Tennessee [G]hills
@@ -34,3 +37,8 @@ All I know is [C]it's a [G]pity life [Em]can't be [D7]simple [G]again
 [Em]Rocky Top you'll [D7]always be [F]home sweet home to [C]me
 Good ole [G]Rocky Top Rocky Top [F]Tennessee [G]Rocky Top [G][F]Tennessee
 {end_of_verse}
+
+
+
+
+

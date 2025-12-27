@@ -1,6 +1,9 @@
 {meta: title It's Over}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Bill Dees}
+{meta: x_source classic-country}
+{meta: x_source_file itsoverlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your baby [G7]doesn't [F]love [C]you [C][F][C][F]anymore
@@ -32,3 +35,6 @@
 [Dm]But you'll see [A#7]lonely [G7]sunset after [C]all
 [Am]It's over [C]it's over it's o-ver  it's [F]over
 {end_of_verse}
+
+
+

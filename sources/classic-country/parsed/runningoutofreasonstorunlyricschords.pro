@@ -1,6 +1,9 @@
 {meta: title Running Out Of Reasons To Run}
 {meta: artist Don Williams}
 {meta: composer Jim Rushing and J.D. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file runningoutofreasonstorunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wounded by love I [C]was too [G]afraid
@@ -62,3 +65,11 @@
 [C]Woke up with I love you on the tip of my tongue
 [D7]I’m running out of [G]reasons
 {end_of_verse}
+
+
+
+
+
+
+
+

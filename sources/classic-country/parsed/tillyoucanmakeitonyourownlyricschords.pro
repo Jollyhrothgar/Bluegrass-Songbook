@@ -1,6 +1,9 @@
 {meta: title Till You Can Make It On Your Own}
 {meta: artist Gene Watson}
 {meta: composer Arthur Leo Owens and Johnny McRae}
+{meta: x_source classic-country}
+{meta: x_source_file tillyoucanmakeitonyourownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't [G7]wanna know who's [C]loved you 
@@ -48,3 +51,9 @@ Till you can make it on your [C]own
 Lay your head upon my [G7]shoulder 
 Till you can make it on your [F]own[C]
 {end_of_verse}
+
+
+
+
+
+

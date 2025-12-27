@@ -1,6 +1,9 @@
 {meta: title Will You Travel Down This Road With Me}
 {meta: artist George Jones}
 {meta: composer Jamie O'Hara and Kieran Kane}
+{meta: x_source classic-country}
+{meta: x_source_file willyoutraveldownthisroadwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Will you travel down this road with me
@@ -47,3 +50,9 @@ Will you travel down this [G7]road with [C]me
 {start_of_verse: Verse 5}
 Will you travel down this [G7]road with [C]me
 {end_of_verse}
+
+
+
+
+
+

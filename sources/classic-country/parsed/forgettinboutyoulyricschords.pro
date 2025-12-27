@@ -1,6 +1,9 @@
 {meta: title Forgettin' Bout You}
 {meta: artist Crystal Gayle}
 {meta: composer Don Williams and Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file forgettinboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Since you've gone gone gone I'm here all alone
@@ -34,3 +37,7 @@ There's no [C]hurry [G7]forgettin' bout [C]you
 I may be [F]slow lettin' go but I'll make it I know
 There's no [C]hurry [G7]forgettin' bout [C]you
 {end_of_verse}
+
+
+
+

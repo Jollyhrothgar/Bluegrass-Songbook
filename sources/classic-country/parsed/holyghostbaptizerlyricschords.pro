@@ -1,6 +1,9 @@
 {meta: title Holy Ghost Baptizer}
 {meta: artist Wanda Jackson}
 {meta: composer Maury Pigs}
+{meta: x_source classic-country}
+{meta: x_source_file holyghostbaptizerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to walk with the wicked
@@ -60,3 +63,10 @@ Doing what [G7]comes natura[C]lly
 Yes I'm [G7]praying in the spirt 
 Walking in the spirit [D7]praise His [G7]Holy [C]Name
 {end_of_verse}
+
+
+
+
+
+
+

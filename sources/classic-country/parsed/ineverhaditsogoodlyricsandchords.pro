@@ -1,6 +1,9 @@
 {meta: title I Never Had It So Good}
 {meta: artist Jack Greene}
 {meta: composer Roy C. Bennett and Arthur Kent}
+{meta: x_source classic-country}
+{meta: x_source_file ineverhaditsogoodlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Step up and [Bm]meet Mr. [Em]Sunshine[C] 
@@ -45,3 +48,8 @@ Well [G]thanks to the [Bm]love
 You brought [Em]into my life 
 [Am]I never [D7]had [Am]I never [D7]had [Am]I never [D7]had it so [G]good
 {end_of_verse}
+
+
+
+
+

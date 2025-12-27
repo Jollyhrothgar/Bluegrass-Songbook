@@ -1,6 +1,9 @@
 {meta: title Thanks To Calvary}
 {meta: artist Jamie Dailey and Darrin Vincent}
 {meta: composer Gloria Gaither and William J. Gaither}
+{meta: x_source classic-country}
+{meta: x_source_file thankstocalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Today I [G]went back to the place where I [C]used to go
@@ -36,3 +39,7 @@ Thanks to [G]Calvary we don't [D7]live here any [G]more
 [C]Thanks t[G]o Calva[D7]ry we don't live here
 Oh we don't live here any [G]more ([C]any mor[G]e)
 {end_of_verse}
+
+
+
+

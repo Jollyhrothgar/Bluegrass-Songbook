@@ -1,6 +1,9 @@
 {meta: title It Don't Hurt To Dream}
 {meta: artist Ronnie Milsap}
 {meta: composer Charles Quillen, Dan Pate, Jane Pate}
+{meta: x_source classic-country}
+{meta: x_source_file itdonthurttodreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Arms go ahead and hold her the way we [G7]want to
@@ -27,3 +30,6 @@ To show her [G7]how we feel
 {start_of_verse: Verse 4}
 [C]We’ll keep on dreaming [G7]cause it don't hurt to [C]dream
 {end_of_verse}
+
+
+

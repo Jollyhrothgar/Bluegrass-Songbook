@@ -1,6 +1,9 @@
 {meta: title Amazing Love}
 {meta: artist Charley Pride}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file amazinglovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When she wakes up this morning and turns to [C]kiss me
@@ -29,3 +32,6 @@ Is [D7]so much more than I am worthy [G]of
 If the rose could [D7]speak my [C]feelings
 She'll [D7]know I cherish her amazing [G]love
 {end_of_verse}
+
+
+

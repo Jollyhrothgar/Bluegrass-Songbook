@@ -1,5 +1,8 @@
 {meta: title There's Something Fishy Going On}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file theressomethingfishygoingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There must be [C]something [G]fishy [D7]going [G]on
@@ -44,3 +47,9 @@
 {start_of_verse: Verse 6}
 [G]You can bet there's [C]something [G]fishy [D7]going [G]on
 {end_of_verse}
+
+
+
+
+
+

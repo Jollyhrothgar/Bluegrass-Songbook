@@ -1,6 +1,9 @@
 {meta: title Desperado Love}
 {meta: artist Conway Twitty}
 {meta: composer Michael Garvin and Sammy Johns}
+{meta: x_source classic-country}
+{meta: x_source_file desperadolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Should have just run in and steal you away
@@ -37,3 +40,7 @@ Like desperadoes [C]do
 {start_of_verse: Verse 5}
 [D7]I've got a desperado love for [G]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Baby That's Cold}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes, Hank Cochran, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file babythatscoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said sit down here and listen
@@ -53,3 +56,11 @@ I felt the hurt start crawling
 {start_of_verse: Verse 8}
 [G7]That really hurts baby that’s [C]cold
 {end_of_verse}
+
+
+
+
+
+
+
+

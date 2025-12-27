@@ -1,6 +1,9 @@
 {meta: title I Can't Wait To Dream That Dream Again}
 {meta: artist Cal Smith}
 {meta: composer Wayne Kemp and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file icantwaittodreamthatdreamagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night our [F]home seemed so much [C]warmer
@@ -26,3 +29,6 @@ And I can't [F]wait to [G7]dream that dream [C]again
 {start_of_verse: Verse 4}
 And I can't [F]wait to [G7]dream that dream [C]again
 {end_of_verse}
+
+
+

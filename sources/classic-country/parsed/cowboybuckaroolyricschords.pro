@@ -1,6 +1,9 @@
 {meta: title Cowboy Buckaroo}
 {meta: artist Statler Brothers}
 {meta: composer Mason Williams}
+{meta: x_source classic-country}
+{meta: x_source_file cowboybuckaroolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was raised on matinees on [C]Saturday after[G]noons
@@ -50,3 +53,9 @@ Straight shootin' [A7]cowboy [D7]bucka[G]roo
 {start_of_verse: Verse 5}
 [C]Why can't we [G]all ride together and be [A7]cowboy [D7]bucka[G]roos
 {end_of_verse}
+
+
+
+
+
+

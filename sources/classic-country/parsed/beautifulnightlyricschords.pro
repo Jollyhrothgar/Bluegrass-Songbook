@@ -1,6 +1,9 @@
 {meta: title Beautiful Night}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Beautiful night 
@@ -78,3 +81,9 @@ The rains gone [C]away
 We're singing His praises
 [G7]This beautiful [C]night
 {end_of_verse}
+
+
+
+
+
+

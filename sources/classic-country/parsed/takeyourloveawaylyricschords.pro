@@ -1,6 +1,9 @@
 {meta: title Take Your Love Away}
 {meta: artist Reba McEntire}
 {meta: composer Randy Sharp}
+{meta: x_source classic-country}
+{meta: x_source_file takeyourloveawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do my heart a favor take your [G7]love away
@@ -37,3 +40,7 @@ Take a look that nothing’s [F]to keep you
 From [D7]breaking me [G7]down
 Take your love [C]away
 {end_of_verse}
+
+
+
+

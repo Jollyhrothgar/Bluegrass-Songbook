@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Hurt Her On The Radio}
 {meta: artist The Bellamy Brothers}
 {meta: composer Tom Brasfield and Lyman McAnally}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnahurtherontheradiolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna hurt her on the radio
@@ -43,3 +46,8 @@
 [G7]I'll get revenge the only way I know
 [C]I'm gonna hurt her on the radio
 {end_of_verse}
+
+
+
+
+

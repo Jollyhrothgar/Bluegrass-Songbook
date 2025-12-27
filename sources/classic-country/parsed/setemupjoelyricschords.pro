@@ -1,5 +1,8 @@
 {meta: title Set 'em Up Joe}
 {meta: artist Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file setemupjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They got a vintage Victoria [C][F]1951
@@ -32,3 +35,6 @@ I've [F]gotta have a [G7]shot of them old [Am][C]troubadours
 [C]Set 'em up Joe and play [F]Walking The [C]Floor
 Set 'em up Joe and play [G7]Walking The [C]Floor
 {end_of_verse}
+
+
+

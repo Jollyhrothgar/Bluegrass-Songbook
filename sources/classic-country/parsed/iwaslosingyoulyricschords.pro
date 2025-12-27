@@ -1,6 +1,9 @@
 {meta: title I Was Losing You}
 {meta: artist Ricky Van Shelton}
 {meta: composer Bruce Burch}
+{meta: x_source classic-country}
+{meta: x_source_file iwaslosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I should have noticed this when
@@ -58,3 +61,10 @@ When you were [C]makin' love to me
 [F]When you were [C]makin' love to me
 [G7]I was losing [C]you
 {end_of_verse}
+
+
+
+
+
+
+

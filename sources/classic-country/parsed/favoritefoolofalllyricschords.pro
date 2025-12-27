@@ -1,6 +1,9 @@
 {meta: title Favorite Fool Of All}
 {meta: artist Vern Gosdin}
 {meta: composer Rex Gosdin and V.L. Haywood}
+{meta: x_source classic-country}
+{meta: x_source_file favoritefoolofalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s no telling how many [F]hearts you caused to [C]break
@@ -27,3 +30,6 @@ I guess I’ll [C]always [F]be your [C]favorite [G7]fool of [C]all
 After [F]all this time of standing in your [C]life again I’ll [F]fall
 I guess I’ll [C]always [F]be your [C]favorite [G7]fool of [C]all
 {end_of_verse}
+
+
+

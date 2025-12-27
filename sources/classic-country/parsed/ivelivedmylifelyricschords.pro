@@ -1,6 +1,9 @@
 {meta: title I've Lived My Life}
 {meta: artist Dolly Parton}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file ivelivedmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've lived my [C]life and I'm [G7]only eigh[C]teen
@@ -37,3 +40,8 @@ I've lived my [C]life and I'm [G7]only eigh[C]teen
 {start_of_verse: Verse 6}
 [G7]I've lived my [C]life and I'm [G7]only eigh[C]teen
 {end_of_verse}
+
+
+
+
+

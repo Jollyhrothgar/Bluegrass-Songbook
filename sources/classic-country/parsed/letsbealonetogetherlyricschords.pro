@@ -1,6 +1,9 @@
 {meta: title Let's Be Alone Together}
 {meta: artist Faron Young}
 {meta: composer Dewayne Orender}
+{meta: x_source classic-country}
+{meta: x_source_file letsbealonetogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've never been the kind of guy to [C]take advantage of a woman 
@@ -49,3 +52,9 @@ And [G]I can see [D7]you’ve got troubles [G]too
 [C]I'm so alone [G]you're so alone
 [D7]Let's be alone [C]toge[G]ther
 {end_of_verse}
+
+
+
+
+
+

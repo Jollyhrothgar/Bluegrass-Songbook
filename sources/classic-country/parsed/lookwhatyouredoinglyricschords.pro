@@ -1,6 +1,9 @@
 {meta: title Look What You're Doing}
 {meta: artist Dottie West}
 {meta: composer Curly Putman and Dee Moeller}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhatyouredoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I  [C]know you [G7]think you are [C]hurting me
@@ -31,3 +34,7 @@ So [C]look what you're [G7]doing to [C]you
 {start_of_verse: Verse 5}
 So look what you're [G7]doing to [C]you
 {end_of_verse}
+
+
+
+

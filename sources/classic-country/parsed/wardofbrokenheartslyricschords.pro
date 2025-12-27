@@ -1,6 +1,9 @@
 {meta: title Ward Of Broken Hearts}
 {meta: artist Stonewall Jackson}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file wardofbrokenheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Since our love broke down and fell 
@@ -25,3 +28,5 @@ When you [C]write I'm sorry dear
 Send your [F]letter to me here
 I'll be [C]waiting in the [G7]ward of broken [C]hearts
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I Know Love}
 {meta: artist The Everly Brothers}
 {meta: composer Jim Photoglo and Brian Neary}
+{meta: x_source classic-country}
+{meta: x_source_file iknowlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know [C]love  I [G]know [C]love
@@ -62,3 +65,11 @@
 [G]Every time I try to hold on it's gone
 [Am]Yeah [D7]I  [C]know love  [Am]I  [D7]know [C]love  [Am]I  [D7]know [G]love
 {end_of_verse}
+
+
+
+
+
+
+
+

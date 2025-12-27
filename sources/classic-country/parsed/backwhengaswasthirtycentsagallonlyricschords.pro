@@ -1,5 +1,8 @@
 {meta: title Back When Gas Was Thirty Cents A Gallon}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file backwhengaswasthirtycentsagallonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Back when gas was thirty cents a [C]gallon
@@ -38,3 +41,6 @@ I [G7]didn't know the meaning of [C]hurt
 [F]Back when gas was thirty cents a [C]gallon
 And [G7]love was only sixty cents [C]away
 {end_of_verse}
+
+
+

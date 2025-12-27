@@ -1,6 +1,9 @@
 {meta: title These Are My Mountains}
 {meta: artist Slim Whitman}
 {meta: composer James Copeland}
+{meta: x_source classic-country}
+{meta: x_source_file thesearemymountainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]For these are my [C]mountains [G7]and I’m going [C]home
@@ -48,3 +51,10 @@ They’re less than the [C]plea[F]sure [G7]I first left [C]behind
 {start_of_verse: Verse 7}
 [F]For these are my [C]moun[F]tains [G7]and I’m going [C]home
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Man Who Is Wise}
 {meta: artist Hank Snow}
 {meta: composer Buford Abner}
+{meta: x_source classic-country}
+{meta: x_source_file amanwhoiswiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](If he's [Dm]wise in the [G7]eyes of the [G7][C]Lord)
@@ -33,3 +36,7 @@
 [F]Mansions here can't compare with the [C]one he'll have [Am]there
 [Dm]If he's wise in [G7]the eyes of the [C]Lord
 {end_of_verse}
+
+
+
+

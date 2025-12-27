@@ -1,6 +1,9 @@
 {meta: title The Grass Is Always Greener}
 {meta: artist Charlie Rich}
 {meta: composer Margaret A. Rich and Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file thegrassisalwaysgreenerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([G7]Oh the [C]grass is always [F]greener [C]on the [G7]other [C]side)[F]  [C]  [G7]
@@ -30,3 +33,7 @@ For the grass is always [F]greener [G7]on the other [C]side
 {start_of_verse: Verse 5}
 [G7]On the other [C]side
 {end_of_verse}
+
+
+
+

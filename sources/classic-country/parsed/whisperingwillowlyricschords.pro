@@ -1,5 +1,8 @@
 {meta: title Whispering Willow}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file whisperingwillowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whispering wil[Em]low [F]standing [C]alone
@@ -21,3 +24,5 @@ Your branches are [G7]weeping like a bird that can't [C]fly
 Or is it my sto[Em]ry [F]that caused you to [C]cry
 We'll keep our [G7]secret lonely willow and [C]I 
 {end_of_verse}
+
+

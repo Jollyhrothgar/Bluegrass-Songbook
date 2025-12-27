@@ -1,4 +1,7 @@
 {meta: composer Charles Wesley and Felix Mendelssohn}
+{meta: x_source classic-country}
+{meta: x_source_file harktheheraldangelssinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hark the herald angels [G7]sing 
@@ -18,3 +21,5 @@ Peace on earth and [Am]mercy [D7]mild
 [F]Hark the [Dm][C]herald [A7]angels [Dm]sing 
 [G7]Glory [C]to the new [G7]born [C]King 
 {end_of_verse}
+
+

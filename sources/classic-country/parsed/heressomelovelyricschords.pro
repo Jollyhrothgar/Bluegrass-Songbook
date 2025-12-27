@@ -1,6 +1,9 @@
 {meta: title Here's Some Love}
 {meta: artist Tanya Tucker}
 {meta: composer Richard Mainegra and Jack Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file heressomelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been watching you [F]crying [G7]when you do I just [C]feel like dying
@@ -29,3 +32,6 @@ Keep it [G7]close to you save it for a [C]rainy d-a[C7]y
 Here's some [F]love take a little bit of it [C]home with you
 It will [G7]grow with you and someday you can [F]bring it back to [C]stay
 {end_of_verse}
+
+
+

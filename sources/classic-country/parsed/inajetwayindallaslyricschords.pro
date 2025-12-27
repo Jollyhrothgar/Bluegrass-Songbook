@@ -1,5 +1,8 @@
 {meta: title In A Jetway In Dallas}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file inajetwayindallaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As she stands there like the other times I [C]left her
@@ -32,3 +35,7 @@ She’s [D7]waving hoping I can see her [G]face
 {start_of_verse: Verse 4}
 She’s still [D7]waving hoping I can see her [G]face
 {end_of_verse}
+
+
+
+

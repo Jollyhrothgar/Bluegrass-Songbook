@@ -1,6 +1,9 @@
 {meta: title Good Ride Cowboy}
 {meta: artist Garth Brooks}
 {meta: composer Richie Brown, Jerrod Niemann,}
+{meta: x_source classic-country}
+{meta: x_source_file goodridecowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From the hills to Kaycee Wyoming 
@@ -66,3 +69,10 @@ With St [F]Peter on the [D7]other side
 [C]Singing good ride [G7]cowboy 
 Good [C]r-i-[F]d-e said [C]good ride [G7]cowboy good [C]ride
 {end_of_verse}
+
+
+
+
+
+
+

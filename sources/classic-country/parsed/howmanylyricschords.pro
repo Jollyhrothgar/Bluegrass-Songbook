@@ -1,6 +1,9 @@
 {meta: title How Many}
 {meta: artist Jim Reeves}
 {meta: composer Hal Blair and Howard Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file howmanylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If all the guys you ever knew
@@ -28,3 +31,5 @@
 [F]Like I would have if we should part
 [C]I wonder just how [G7]many there would [C]be
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Walking Behind You}
 {meta: artist Eddy Arnold}
 {meta: composer Billy Reid}
+{meta: x_source classic-country}
+{meta: x_source_file imwalkingbehindyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look over your shoulder I'm [G7]walking [C]behind
@@ -28,3 +31,6 @@
 [C7]Though you may forget me you're still on my [F]mind
 [C]Look over your [G7]shoulder I'm walking [C]behind
 {end_of_verse}
+
+
+

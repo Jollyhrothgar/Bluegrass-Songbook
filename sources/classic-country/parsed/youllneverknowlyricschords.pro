@@ -1,5 +1,8 @@
 {meta: title You'll Never Know}
 {meta: artist Jim Ed Brown}
+{meta: x_source classic-country}
+{meta: x_source_file youllneverknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You'll never know the thrill of loving [F]you 
@@ -30,3 +33,6 @@ A [A7]heart that's restless a sigh so breathless
 Yes [C]darling you may live your [G]whole life [Em]through 
 And [A7]never know the [D7]thrill of loving [G]you
 {end_of_verse}
+
+
+

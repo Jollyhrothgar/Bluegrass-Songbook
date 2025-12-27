@@ -1,6 +1,9 @@
 {meta: title Rainbow In The Rain}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file rainbowintherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've seen the storms comin' so many times I'm losin' [F]track
@@ -34,3 +37,7 @@ But [F]I can't find a [G7]rainbow in the [C]rain
 No there's [Am]no such thing as old forgotten [D7]memories
 And [F]I don't go lookin' for [G7]rainbows in the [C]rain
 {end_of_verse}
+
+
+
+

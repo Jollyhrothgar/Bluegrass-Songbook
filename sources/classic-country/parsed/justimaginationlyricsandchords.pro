@@ -1,6 +1,9 @@
 {meta: title Just Imagination}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Linda Baggett}
+{meta: x_source classic-country}
+{meta: x_source_file justimaginationlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess you just imagine that you love me
@@ -29,3 +32,6 @@ It [F]hurts me now to know that dear  [C]that you were once just [G7]mine
 Now that I know you share you love [C]with others
 Each [G7]little dream I had is gone [C]forever
 {end_of_verse}
+
+
+

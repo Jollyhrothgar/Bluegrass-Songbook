@@ -1,5 +1,8 @@
 {meta: title Pretend You Don't See Me}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file pretendyoudontseemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The next time that you see me 
@@ -42,3 +45,8 @@ But I cheated just the [C]same
 To pretend I just don't [G]see her 
 Is like [D7]forgetting my own [G]name
 {end_of_verse}
+
+
+
+
+

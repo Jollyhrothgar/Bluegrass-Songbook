@@ -1,6 +1,9 @@
 {meta: title Let's Go Fishing Boys}
 {meta: artist Charlie Walker}
 {meta: composer Billy Arr}
+{meta: x_source classic-country}
+{meta: x_source_file letsgofishingboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well let's go fishing boys the girls are biting
@@ -36,3 +39,7 @@ The weather's nice and they sure look [D7]inviting
 [G]They're jumping in the lake so [C]let's don’t hesitate
 Let's [G]go fishing [D7]boys the girls are [G]biting
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Anymore}
 {meta: artist Roy Drusky}
 {meta: composer Vic McAlpin, Roy Drusky, Marie Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file anymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [G7]don't believe you love me [C]anymore
@@ -38,3 +41,8 @@
 Tag:
 [G7]No I don't believe you love me [C]anymore
 {end_of_verse}
+
+
+
+
+

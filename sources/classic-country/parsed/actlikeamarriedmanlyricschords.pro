@@ -1,6 +1,9 @@
 {meta: title Act Like A Married Man}
 {meta: artist Jean Shepard}
 {meta: composer Jim Odom}
+{meta: x_source classic-country}
+{meta: x_source_file actlikeamarriedmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say you want to take me out so [C]we can paint the town
@@ -29,3 +32,6 @@ She's got the whole world of [D7]faith and trust and [C]confidence in [G]you
 How [C]you can be unfaithful I just can't understand
 Now [G]why don't you go home to your wife and [D7]act like a married [G]man
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Life Turned Him That Way}
 {meta: artist Jean Shepard}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file lifeturnedhimthatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If he [C]seems cold and bitter [C7]I beg of [F]you
@@ -26,3 +29,6 @@ So don't [C]blame him life [G7]turned him that [C]way
 {start_of_verse: Verse 4}
 No don't blame him life [G7]turned him that [F]way[C]
 {end_of_verse}
+
+
+

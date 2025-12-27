@@ -1,6 +1,9 @@
 {meta: title It's Gotta Be Magic}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file itsgottabemagiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm back on the road [D7]sometimes I don't [G]know
@@ -36,3 +39,7 @@ It's [C]gotta be [G]magic [C]we're still in [G]tune
 It's [C]gotta be [G]magic [C]I know it's [G]true
 Cause [C]it's still [G]workin' [D7]for me and [G]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Don't Hurt Now As Much As I Used To}
 {meta: artist Carl Smith}
 {meta: composer Wayne P. Walker and Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file idonthurtnowasmuchasiusedtolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don’t hurt now as much as I [C]used to
@@ -27,3 +30,6 @@ And the [G]heart you made a [C]prisoner now is [G]free
 I don’t hurt now as much as I [C]used to
 I guess I’m [G]gettin’ used to [C]livin’ without [G]you
 {end_of_verse}
+
+
+

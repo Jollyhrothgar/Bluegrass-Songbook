@@ -1,5 +1,8 @@
 {meta: title What in the World's Come Over You}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file whatintheworldscomeoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What in the world's come over [E]you
@@ -33,3 +36,5 @@ Oh  [C]what in the world's come over [E]you
 [F]Guess you'll always be my one [C]and
 [F]Only   [G7]only real [C]love
 {end_of_verse}
+
+

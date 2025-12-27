@@ -1,5 +1,8 @@
 {meta: title Baby Thanks But No Thanks}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file babythanksbutnothankslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're askin' me if I'd like to come [G7]back again
@@ -32,3 +35,7 @@ Well baby [C]thanks but [G7]no thanks thanks to [C]you
 {start_of_verse: Verse 4}
 Well baby thanks but [G7]no thanks thanks to [C]you
 {end_of_verse}
+
+
+
+

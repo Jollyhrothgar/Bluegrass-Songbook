@@ -1,6 +1,9 @@
 {meta: title Country Boy Rock And Roll}
 {meta: artist Don Reno and Red Smiley}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file countryboyrockandrolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can tell I'm from the country see I'm from outta town
@@ -30,3 +33,6 @@ I've been a-[F]rocking I've been a-[C]rolling
 Some [G7]folks think I look foolish [F]let 'em make a [G7]fool outta [C]me
 [F]Let 'em make a [G7]fool outta [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Going Home}
 {meta: artist Buck Owens}
 {meta: composer Terry Clements and John English}
+{meta: x_source classic-country}
+{meta: x_source_file imgoinghomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes when I am [Am]lonely
@@ -27,3 +30,6 @@
 [C]When you're down and need someone to stand [Am]beside you
 [D7]Turn around and go on [G]home
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If You Want It I've Got It}
 {meta: artist Carl Smith}
 {meta: composer Woody Hill and Ina Hill}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwantitivegotitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you want it baby hmm I've got [F]it 
@@ -29,3 +32,6 @@ If you [C]want it baby hmm I've got [F]it
 If you [C]want it baby hmm I've got [F]it 
 [C]I got most [G7]anything you [C]want
 {end_of_verse}
+
+
+

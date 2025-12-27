@@ -1,6 +1,9 @@
 {meta: title Everything Begins And Ends With You Lyrics and Chords}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Lorene Allen}
+{meta: x_source classic-country}
+{meta: x_source_file everythingbeginsandendswithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My love for you [F]could be [C]no [Am]greater
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [F]Yes everything [G7]begins and ends with [C]you
 {end_of_verse}
+
+
+

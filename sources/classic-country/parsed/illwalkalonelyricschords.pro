@@ -1,6 +1,9 @@
 {meta: title I'll Walk Alone}
 {meta: artist Ricky Nelson}
 {meta: composer Sammy Cahn and Jule Styne}
+{meta: x_source classic-country}
+{meta: x_source_file illwalkalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll walk alone because to tell you the [Am]truth 
@@ -42,3 +45,8 @@ And your [A7]kisses to guide [G7]me
 Till you're [A7]walking [D7]beside me 
 [G7]I'll walk [C]alone
 {end_of_verse}
+
+
+
+
+

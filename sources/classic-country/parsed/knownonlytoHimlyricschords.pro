@@ -1,6 +1,9 @@
 {meta: title Known Only To Him}
 {meta: artist Elvis Presley}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file knownonlytoHimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Known only to Him are the [C]great hidden [G]secrets
@@ -22,3 +25,5 @@ I'll fear not the [Em]darkness when [A7]my flame shall [D7]dim
 I know [G]not what the future [G7]holds but I [C]know who holds the future
 It's a [G]secret known [D7]only to [G]Him
 {end_of_verse}
+
+

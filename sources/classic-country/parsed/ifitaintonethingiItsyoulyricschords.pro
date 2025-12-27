@@ -1,6 +1,9 @@
 {meta: title If It Ain't One Thing (It's You)}
 {meta: artist Alan Jackson}
 {meta: composer Jim McBride and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file ifitaintonethingiItsyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess it's [Bm]just not my [C]day
@@ -46,3 +49,9 @@ The wheels seem to [Bm]fall off what[C]ever I do
 {start_of_verse: Verse 7}
 Oh [G]if it ain't [D7]one thing it's [G]you
 {end_of_verse}
+
+
+
+
+
+

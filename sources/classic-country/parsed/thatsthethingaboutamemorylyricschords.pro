@@ -1,6 +1,9 @@
 {meta: title That's The Thing About A Memory}
 {meta: artist Tracy Byrd}
 {meta: composer Keith Stegall, Lewis Anderson, Tracy Byrd}
+{meta: x_source classic-country}
+{meta: x_source_file thatsthethingaboutamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I woke up this morning [G7]   and I was feeling [C]fine
@@ -36,3 +39,7 @@ When it comes to [D7]misery it'll [G7]never let you [C]down
 [F]Yeah that's the thing about a [C]memory
 When it comes to [D7]misery it'll [G7]never let you [C]down
 {end_of_verse}
+
+
+
+

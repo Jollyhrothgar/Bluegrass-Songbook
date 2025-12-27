@@ -1,6 +1,9 @@
 {meta: title We Robbed Trains}
 {meta: artist Gene Watson}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file werobbedtrainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cowboys and outlaws [F]and long shiny [C]rails
@@ -50,3 +53,9 @@ The one Jesse James and some [D7]things that we [G7]did
 I [F]knew them well son just [C]like my own [Am]name
 [G7]Billy and Jesse me and we robbed [C]trains
 {end_of_verse}
+
+
+
+
+
+

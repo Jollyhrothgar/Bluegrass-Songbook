@@ -1,6 +1,9 @@
 {meta: title I Want To Be With You Always}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Jim Beck}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttobewithyoualwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I lose my [D7]blues honey when I'm with [G]you
@@ -22,3 +25,5 @@ Well you'll be the one who's to [D7]blame it works out wrong that [G]day
 Cause my love is [C]true my love is only for [G]you
 I'll never be [D7]blue if I can be with you [G]always
 {end_of_verse}
+
+

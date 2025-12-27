@@ -1,6 +1,9 @@
 {meta: title I Fall Easy}
 {meta: artist Leona Williams}
 {meta: composer Roger Lee Helton, Sharon King, Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ifalleasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't get too [F]close to me I fall [C]easy
@@ -22,3 +25,5 @@ My heart's an [G7]open door for love like [C]yours
 Whisper [F]to me say you [C]need me
 But don't get to [G7]close I fall [F]e-a[C]sy
 {end_of_verse}
+
+

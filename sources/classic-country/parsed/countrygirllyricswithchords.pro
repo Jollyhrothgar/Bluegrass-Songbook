@@ -1,5 +1,8 @@
 {meta: title Country Girl}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file countrygirllyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just a year ago today when you [D7]packed and went [G]away
@@ -28,3 +31,6 @@ You should have known that country feet
 [D7]You're a country girl a-walking all [G]alone
 [C]Yes darling you're a [D7]country girl a-walking all [G]alone
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Should Have Been Gone By Now}
 {meta: artist Eddy Raven}
 {meta: composer Don Pfrimmer, Eddy Raven, Frank J. Myers}
+{meta: x_source classic-country}
+{meta: x_source_file youshouldhavebeengonebynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can still see you walking out the [Em]door
@@ -46,3 +49,8 @@ You [Em]wouldn't still be on my mind
 {start_of_verse: Verse 4}
 [A#7]Hangin' around you [F]should've been gone by [C]now
 {end_of_verse}
+
+
+
+
+

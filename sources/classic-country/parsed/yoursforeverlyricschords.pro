@@ -1,6 +1,9 @@
 {meta: title Yours Forever}
 {meta: artist Wynn Stewart}
 {meta: composer Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file yoursforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yours [F]forever as long as I [C]live
@@ -20,3 +23,5 @@ Cause I [G7]belong to you I'm yours [C]forever
 The world may stop [F]turning but we'll still be [C]together
 Cause I [G7]belong to you I'm yours [C]forever
 {end_of_verse}
+
+

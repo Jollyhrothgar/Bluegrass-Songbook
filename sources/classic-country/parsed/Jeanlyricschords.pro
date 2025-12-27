@@ -1,6 +1,9 @@
 {meta: title Jean}
 {meta: artist Jimmy Dean}
 {meta: composer Rod McKuen}
+{meta: x_source classic-country}
+{meta: x_source_file Jeanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jean [Em]Jean [F]roses are [G7]red
@@ -36,3 +39,7 @@
 [C]And run if you [C7]will to the [F]top of the [C]hill
 [F]Come into my [G7]arms Bonnie [C]Jean
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When The Morning Comes Lyrics and Chords}
 {meta: artist Hoyt Axton and Linda Ronstadt}
 {meta: composer Hoyt Axton}
+{meta: x_source classic-country}
+{meta: x_source_file whenthemorningcomeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the morning comes and you gotta get [G7]up
@@ -87,3 +90,16 @@ You [F]know its got to give you the [C]blues
 In an empty bed with an aching [G7]head
 You [F]know its got to give you the [C]blues
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

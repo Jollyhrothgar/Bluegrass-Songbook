@@ -1,6 +1,9 @@
 {meta: title How Close They Must Be}
 {meta: artist Porter Wagoner}
 {meta: composer Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file howclosetheymustbelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a park [G7]bench one sunny after[C]noon 
@@ -32,3 +35,6 @@ Helping [F]each other to the car
 Can you [G7]imagine just how close they [C]are 
 Don't you [G7]know how close they must [F]b--[C]e 
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Let The World Pass Me By}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file ilettheworldpassmebylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I let the world pass me by when I let you [C]go
@@ -21,3 +24,5 @@
 [C]Now if I live forever I know that I
 [D7]Will always remember when the world passed me [G]by
 {end_of_verse}
+
+

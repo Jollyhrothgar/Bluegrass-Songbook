@@ -1,6 +1,9 @@
 {meta: title The Girl I Left Behind Me}
 {meta: artist Bob Wills}
 {meta: composer Leroy Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlileftbehindmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wrote her a letter when I'd known [C]better
@@ -64,3 +67,11 @@
 [G]The rosy cheeks and the curly [C]hair
 [D7]The girl I left behind [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+

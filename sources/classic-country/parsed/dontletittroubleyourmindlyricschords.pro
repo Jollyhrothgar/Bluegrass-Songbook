@@ -1,5 +1,8 @@
 {meta: title Don't Let It Trouble Your Mind}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file dontletittroubleyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Our love affair is bitter [F]sweet insecure [G]and [C]incomplete
@@ -36,3 +39,6 @@
 [G]And if you don't love me leave [C]me
 [G]And don't [F]let it trouble your [G]mind [F]hmm [G]hmm
 {end_of_verse}
+
+
+

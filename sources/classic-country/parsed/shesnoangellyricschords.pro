@@ -1,6 +1,9 @@
 {meta: title She's No Angel}
 {meta: artist Kitty Wells}
 {meta: composer Wanda Ballman and J.W. Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file shesnoangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You'll see here there at the bar across the [D7]room
@@ -29,3 +32,6 @@
 [C]She'll tell you tales to bring tears to your [G]eyes
 [D7]But don't you believe them for they're only [G]lies
 {end_of_verse}
+
+
+

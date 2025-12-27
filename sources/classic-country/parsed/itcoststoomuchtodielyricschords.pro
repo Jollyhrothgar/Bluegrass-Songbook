@@ -1,6 +1,9 @@
 {meta: title It Costs Too Much To Die}
 {meta: artist Lefty Frizzell}
 {meta: composer J.A. Balthrop}
+{meta: x_source classic-country}
+{meta: x_source_file itcoststoomuchtodielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw you with him last night [G7]Cadillac and all
@@ -22,3 +25,5 @@ Rich man gets the woman [C]poor boy gets the hurt
 Yeah all I’ve had is a big bad time and [F]herein I don’t lie
 I’d [G7]hang myself with a necktie but it costs too much to [C]die
 {end_of_verse}
+
+

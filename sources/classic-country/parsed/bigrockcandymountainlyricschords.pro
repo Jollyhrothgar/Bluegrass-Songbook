@@ -1,6 +1,9 @@
 {meta: title Big Rock Candy Mountain}
 {meta: artist Burl Ives}
 {meta: composer Dave Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file bigrockcandymountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the buzzing of the bees at the cigarette trees
@@ -66,3 +69,14 @@ Where the sleet don't fall the winds don't blow
 [G7]Where the lemonade springs and the bluebird [C]sings
 [G7]In the Big Rock Candy [C]Mountain
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

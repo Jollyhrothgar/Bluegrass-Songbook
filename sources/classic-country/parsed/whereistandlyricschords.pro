@@ -1,5 +1,8 @@
 {meta: title Where I Stand}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file whereistandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lately you've been acting kinda strange it's [D7]true
@@ -38,3 +41,8 @@
 [C]And just in case you wondering what it's all about
 [D7]I guess I'd better let you know I'm [C]checking [G]out
 {end_of_verse}
+
+
+
+
+

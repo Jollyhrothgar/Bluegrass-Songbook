@@ -1,6 +1,9 @@
 {meta: title Tell Me With Your Heart}
 {meta: artist David Ball}
 {meta: composer Chris Carmichael and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file tellmewithyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wanna [Am]know if this [G7]dream is real
@@ -59,3 +62,9 @@ Tell me with your [A7]heart
 [D7]Tell me with your [F]heart
 [G7]Tell me with your [C]heart 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Southern Bound}
 {meta: artist Porter Wagoner}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file southernboundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a walkin' southern [G7]bound down the [C]highway
@@ -47,3 +50,9 @@ Tonight this country [G7]boy is southern [C]bound
 {start_of_verse: Verse 6}
 Tonight this country [G7]boy is southern [C]bound 
 {end_of_verse}
+
+
+
+
+
+

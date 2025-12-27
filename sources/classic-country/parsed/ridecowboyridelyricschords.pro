@@ -1,6 +1,9 @@
 {meta: title Ride Cowboy Ride}
 {meta: artist Rex Allen Jr.}
 {meta: composer Curtis Allen, Rex Allen Jr, Denny Demarco}
+{meta: x_source classic-country}
+{meta: x_source_file ridecowboyridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Up in the mornin' at the break of day
@@ -45,3 +48,8 @@ We're gonna [F]ride ride ride where the [C]trail will wind
 You'd better [F]drive drive drive or we'll [C]leave you behind
 Come on and [G]ride ride cowboy [C]ride
 {end_of_verse}
+
+
+
+
+

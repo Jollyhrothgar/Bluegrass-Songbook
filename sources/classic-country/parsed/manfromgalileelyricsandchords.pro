@@ -1,6 +1,9 @@
 {meta: title Man From Galilee}
 {meta: artist Connie Smith}
 {meta: composer Chris Holloway}
+{meta: x_source classic-country}
+{meta: x_source_file manfromgalileelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was Christmas Eve in a [C]little Texas [G]town
@@ -47,3 +50,9 @@ I [D7]need to light a candle for a [G]friend
 He [C]came from a land across the [G]sea
 They [D7]call Him the Man from [G]Galilee
 {end_of_verse}
+
+
+
+
+
+

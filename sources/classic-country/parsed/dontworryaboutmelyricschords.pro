@@ -1,5 +1,8 @@
 {meta: title Don't Worry About Me}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file dontworryaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't worry about me [G7]it's all over [C]now
@@ -28,3 +31,6 @@
 [C]Oh oh oh oh sweet sweet baby sweet baby [G]sweet
 [D7]It's alright don't worry about [G]me
 {end_of_verse}
+
+
+

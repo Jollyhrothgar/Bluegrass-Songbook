@@ -1,6 +1,9 @@
 {meta: title Womanhood}
 {meta: artist Tammy Wynette}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file womanhoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He said hold on Patricia I only tried to kiss ya 
@@ -38,3 +41,8 @@ Slowly slip [Am]into my [C][G7]womanhood
 Slowly slip [Am]into my [C][G7]womanhood 
 Slowly slip [Am]into my [C][G7]womanhood
 {end_of_verse}
+
+
+
+
+

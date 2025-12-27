@@ -1,5 +1,8 @@
 {meta: title How I've Tried}
 {meta: artist Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file howivetriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say that I can be your friend 
@@ -38,3 +41,7 @@ You're gonna remember the love sweetheart
 [G7]You told me to for[C]get
 But I didn't [G7]forget you  [F]oh how I've [C]tried
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Have You Found It Yet}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran and Red Lane}
+{meta: x_source classic-country}
+{meta: x_source_file haveyoufoundityetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't seem [C]to forget [D7]that look of leaving you [G]wore
@@ -25,3 +28,5 @@ The world will be [B7]our world [C]we'll be happy I'll [G]bet
 I just [Am]wonder [D7]yes I [G]wonder
 Oh I [Am]wonder [D7]have you [G]found it yet
 {end_of_verse}
+
+

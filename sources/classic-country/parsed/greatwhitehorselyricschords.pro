@@ -1,6 +1,9 @@
 {meta: title Great White Horse}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Larry Scott}
+{meta: x_source classic-country}
+{meta: x_source_file greatwhitehorselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was a young girl I used to dream of a [Am]lover
@@ -48,3 +51,8 @@ Singing [G][D7]dum-di-de-dum-dum-dum-di-de-dum
 Singing [G][D7]dum-di-de-dum-dum-dum-di-de-dum
 Singing [G][D7]dum-di-de-dum-dum-dum-di-de-dum
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Get A Little Dirt On Your Hands}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file getalittledirtonyourhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I was a little boy my [F]daddy used to say to me [C]son
@@ -51,3 +54,8 @@ Says he's teaching me a lesson gonna [F]send me out to work in the [C]rain
 You [F]gotta get a little dirt on your [C]hands
 You [F]gotta get a little dirt on your [C]hands
 {end_of_verse}
+
+
+
+
+

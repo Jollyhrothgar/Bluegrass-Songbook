@@ -1,6 +1,9 @@
 {meta: title He Touched Me}
 {meta: artist The Gaither Trio}
 {meta: composer Bill Gaither}
+{meta: x_source classic-country}
+{meta: x_source_file hetouchedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Shackled by a heavy [G]burden
@@ -22,3 +25,5 @@ He [G]touched me and made [D7]me [G]whole
 [C]I will never cease to praise [G]Him
 [D7]I'll shout it while eternity [G]rolls
 {end_of_verse}
+
+

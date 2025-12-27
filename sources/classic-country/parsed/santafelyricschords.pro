@@ -1,6 +1,9 @@
 {meta: title Santa Fe}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy and Ron Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file santafelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Her [C]turquoise lips [F]kiss me like a [C]lover
@@ -51,3 +54,10 @@ I have [F]been there in your [Em]arms now I [Dm]wanna stay
 Santa [Am]Fe
 [G7]I won't [F]sleep until I'm [G7]back in Santa [C]Fe
 {end_of_verse}
+
+
+
+
+
+
+

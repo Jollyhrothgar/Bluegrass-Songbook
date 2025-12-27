@@ -1,6 +1,9 @@
 {meta: title Touch Me Not}
 {meta: artist Stonewall Jackson}
 {meta: composer Joyce Allsup}
+{meta: x_source classic-country}
+{meta: x_source_file touchmenotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're gonna break my heart beyond repair
@@ -41,3 +44,9 @@ Touch me [D7]not  I'll bring you [G]pain
 {start_of_verse: Verse 5}
 [C]Touch me and you'll [D7]never be the [G]same
 {end_of_verse}
+
+
+
+
+
+

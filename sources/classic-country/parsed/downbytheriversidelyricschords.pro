@@ -1,5 +1,8 @@
 {meta: title Down By The Riverside}
 {meta: artist Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file downbytheriversidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm gonna lay down my burden
@@ -78,3 +81,17 @@ Down by the riverside
 [D7]Down by the riverside
 [G]Down by the riverside
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

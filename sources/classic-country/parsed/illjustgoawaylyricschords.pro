@@ -1,5 +1,8 @@
 {meta: title I'll Just Go Away}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file illjustgoawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If there's a place for me 
@@ -23,3 +26,5 @@ There's nothing left to say
 I can't conform to your world [F]today
 [Fm]So I'll just go [C]away
 {end_of_verse}
+
+

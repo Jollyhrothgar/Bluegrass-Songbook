@@ -1,6 +1,9 @@
 {meta: title Endlessly}
 {meta: artist Sonny James}
 {meta: composer Clyde Lovern Otis and Brook Benton}
+{meta: x_source classic-country}
+{meta: x_source_file endlesslylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Higher than the highest [C][F]mountain
@@ -42,3 +45,8 @@ Oh darling [C][F]endlessly
 {start_of_verse: Verse 6}
 Yes darling [C][F]endlessly
 {end_of_verse}
+
+
+
+
+

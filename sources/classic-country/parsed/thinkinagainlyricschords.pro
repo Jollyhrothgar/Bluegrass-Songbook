@@ -1,6 +1,9 @@
 {meta: title Thinkin' Again}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file thinkinagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The trouble I found could've [Em]never found me
@@ -33,3 +36,7 @@ Now [F]here I go [A]thinkin' [C]again
 {start_of_verse: Verse 5}
 [F]Here I go [A]thinkin' [C]again
 {end_of_verse}
+
+
+
+

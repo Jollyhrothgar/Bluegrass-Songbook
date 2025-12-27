@@ -1,5 +1,8 @@
 {meta: title Me And You And A Dog Named Boo}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file meandyouandadognamedboolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember to this day  that [F]bright red Georgia [C]clay
@@ -42,3 +45,8 @@ We gotta get away  and get [G7]back on the road [C]again
 [F]Me and you [G7]and a dog named [C]Boo 
 How I love [G7]being a free [C]man
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title One Rose (Is All It Takes To Say I Love You)}
 {meta: artist George Morgan}
 {meta: composer Hugh X. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file oneroseisallittakestosayiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One rose is all it takes to say I [G]love you
@@ -45,3 +48,8 @@ My [C]love for you is deeper than its [G]color
 One [D7]love one life one last kiss and one [G]rose
 Spoken:
 {end_of_verse}
+
+
+
+
+

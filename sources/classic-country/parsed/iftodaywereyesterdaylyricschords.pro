@@ -1,5 +1,8 @@
 {meta: title If Today Were Yesterday}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file iftodaywereyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If  [G]today were [G][D7]yesterday
@@ -36,3 +39,9 @@ You'd be on your knees begging me to stay
 [G7]You would say I'm sorry then I would forgive [C]you
 [G]If today were [G][D7]yesterday
 {end_of_verse}
+
+
+
+
+
+

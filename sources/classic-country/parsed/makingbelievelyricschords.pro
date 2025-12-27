@@ -1,6 +1,9 @@
 {meta: title Making Believe}
 {meta: artist Ernest Tubb}
 {meta: composer Jimmy Work}
+{meta: x_source classic-country}
+{meta: x_source_file makingbelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Making believe that you [C]still love [G]me 
@@ -29,3 +32,6 @@ You're somebody's [D7]love and you'll never be [G]mine
 Making believe I'll [C]spend my [G]lifetime 
 Loving [D7]you and making [G]believe
 {end_of_verse}
+
+
+

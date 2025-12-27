@@ -1,5 +1,8 @@
 {meta: title Shame Shame on You}
 {meta: artist Spade Cooley}
+{meta: x_source classic-country}
+{meta: x_source_file shameshameonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Shame  [D7]shame on [G]you 
@@ -40,3 +43,7 @@ Can you hold your head up high
 Look your friends right in the eye
 No you can't shame on you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Action}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Johny Hicks}
+{meta: x_source classic-country}
+{meta: x_source_file actionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I had enough of walking enough of talking enough of holding hands
@@ -22,3 +25,5 @@ It [A7]was true for him that's why I'm here I will be till my dying [D7]day
 [G]I've had enough of crying enough of sighing enough of that old line
 A [C]little action baby is [A7]what I want [D7]then I'm make you mine all [G]mine
 {end_of_verse}
+
+

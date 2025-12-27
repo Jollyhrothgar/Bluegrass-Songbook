@@ -1,6 +1,9 @@
 {meta: title Gonna Lay Me Down Beside My Memories}
 {meta: artist Crystal Gayle}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file gonnalaymedownbesidemymemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wish I could wakeup feeling the way I used to
@@ -46,3 +49,8 @@ Gonna hold you in my mind reach out
 And [C]touch old lonesome [A7]times
 Gonna [D7]lay me down beside my memo[G]ries
 {end_of_verse}
+
+
+
+
+

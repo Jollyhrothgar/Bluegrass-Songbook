@@ -1,5 +1,8 @@
 {meta: title I'll Be More Than Happy To Set You Free}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file illbemorethanhappytosetyoufreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When these arms of mine grow [F]tired of holding [G7]you
@@ -28,3 +31,6 @@ I'll be more than [F]happy  [G7]to set you [C]free
 {start_of_verse: Verse 4}
 I'll be more than [F]happy  [G7]to set you [C]free
 {end_of_verse}
+
+
+

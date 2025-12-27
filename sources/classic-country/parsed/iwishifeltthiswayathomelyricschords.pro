@@ -1,6 +1,9 @@
 {meta: title I Wish I Felt This Way At Home}
 {meta: artist Dolly Parton}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file iwishifeltthiswayathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I could be with you [C]forever
@@ -28,3 +31,6 @@ But [G]I'll say one more time [C]as I'm leavin'
 I [D7]wish I felt this way at [G]home
 Yes I [D7]wish I felt this way at [G]home
 {end_of_verse}
+
+
+

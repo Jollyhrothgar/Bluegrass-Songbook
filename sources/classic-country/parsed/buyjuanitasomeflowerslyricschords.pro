@@ -1,6 +1,9 @@
 {meta: title Buy Juanita Some Flowers}
 {meta: artist Billy Walker}
 {meta: composer Steve Karliski}
+{meta: x_source classic-country}
+{meta: x_source_file buyjuanitasomeflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My outfit was stationed near a small border [G7]town
@@ -59,3 +62,11 @@ For [G7]all the trust she [C]gave
 Please [F]buy Juanita some [C]flowers
 And [G7]place them for me upon her [C]grave
 {end_of_verse}
+
+
+
+
+
+
+
+

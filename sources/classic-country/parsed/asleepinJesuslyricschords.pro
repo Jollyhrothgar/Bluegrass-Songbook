@@ -1,6 +1,9 @@
 {meta: title Asleep In Jesus}
 {meta: artist The Jordanaires}
 {meta: composer William Bradbury and Margaret McKay}
+{meta: x_source classic-country}
+{meta: x_source_file asleepinJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Asleep in Jesus blessed [G7]sleep
@@ -29,3 +32,6 @@ May such a blissful refuge [C]be
 Securely shall my ashes [F]lie
 And wait the [C]summons [G7]from on [C]high
 {end_of_verse}
+
+
+

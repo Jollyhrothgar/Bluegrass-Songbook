@@ -1,5 +1,8 @@
 {meta: artist Emmylou Harris}
 {meta: composer Mark Germino}
+{meta: x_source classic-country}
+{meta: x_source_file brokenmanslamentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was once a broken man I [C]was once a broken [G]fool
@@ -59,3 +62,10 @@ Lost my wife and children to one basic broken [D7]rule
 I drink and listen to that song a [C]whiter shade of [G]pale
 Oh a [C]whiter shade of [G]pale
 {end_of_verse}
+
+
+
+
+
+
+

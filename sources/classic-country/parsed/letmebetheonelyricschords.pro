@@ -1,6 +1,9 @@
 {meta: title Let Me Be The One}
 {meta: artist Hank Locklin}
 {meta: composer W.S. Stevenson, Paul Blevins, Joseph Hobson}
+{meta: x_source classic-country}
+{meta: x_source_file letmebetheonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let Me Be The One to walk with you
@@ -43,3 +46,8 @@ When the preacher says Do you take this man
 All those happy thoughts will mean so much fun
 If you'll only Let Me Be The One
 {end_of_verse}
+
+
+
+
+

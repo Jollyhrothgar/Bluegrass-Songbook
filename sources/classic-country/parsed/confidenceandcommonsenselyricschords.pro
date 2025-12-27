@@ -1,6 +1,9 @@
 {meta: title Confidence And Common Sense}
 {meta: artist Billy Crash Craddock}
 {meta: composer Durwood Haddock}
+{meta: x_source classic-country}
+{meta: x_source_file confidenceandcommonsenselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well daddy had [F]confidence and common sense
@@ -56,3 +59,10 @@ But I've got [F]confidence and common sense
 And a [C]woman like mama to lean against
 Nothin' in this [G7]world's gonna get me [C]down
 {end_of_verse}
+
+
+
+
+
+
+

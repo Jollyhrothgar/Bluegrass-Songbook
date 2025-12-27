@@ -1,5 +1,8 @@
 {meta: title Lonely Christmas}
 {meta: artist Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file lonelyChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lonely Christmas I'll have this [D7]year
@@ -25,3 +28,6 @@ Lonely [G7]Christmas on this Christmas [C]Day
 {start_of_verse: Verse 3}
 Lonely [G7]Christmas on this Christmas [C]Day
 {end_of_verse}
+
+
+

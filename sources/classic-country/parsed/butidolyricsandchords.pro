@@ -1,6 +1,9 @@
 {meta: title But I Do}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Troy Seals and Dave Parkinson}
+{meta: x_source classic-country}
+{meta: x_source_file butidolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been so alone without you
@@ -40,3 +43,8 @@ You [Am]sure did make it [G7]easy to be [F]loved for a [C]w-[G7]h-i[Am]-l-[F]e
 We [Am]sure did have it [G7]goin' [E7]didn't we have it [F]goin'
 We [C]sure did have it [F]goin' [G7]for a [C]while
 {end_of_verse}
+
+
+
+
+

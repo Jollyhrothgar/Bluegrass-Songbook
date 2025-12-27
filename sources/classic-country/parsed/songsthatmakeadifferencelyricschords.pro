@@ -1,6 +1,9 @@
 {meta: title Songs That Make a Difference}
 {meta: artist The Highwaymen}
 {meta: composer Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file songsthatmakeadifferencelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey Babe do you remember [C]back in nineteen [D7]sixty-[G]nine
@@ -36,3 +39,6 @@ Hey [C]keep it from the heart and down to [G]earth
 Sing the songs that [C]make a [G]difference
 Give us [D7]all our money's [G]worth
 {end_of_verse}
+
+
+

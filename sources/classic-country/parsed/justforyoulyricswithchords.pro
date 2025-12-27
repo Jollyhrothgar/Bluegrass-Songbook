@@ -1,6 +1,9 @@
 {meta: title Just For You}
 {meta: artist Waylon Jennings}
 {meta: composer Waylon Jennings, Don Bowman, Jerry Williams}
+{meta: x_source classic-country}
+{meta: x_source_file justforyoulyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Do you ever think about [F]the one who thinks about [G]you
@@ -35,3 +38,7 @@ It [C]makes no difference what you do or [G]say
 {start_of_verse: Verse 5}
 [F]Just for [G]you mmm [F]just for [G]you
 {end_of_verse}
+
+
+
+

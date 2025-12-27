@@ -1,5 +1,8 @@
 {meta: title No Way No How}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file nowaynohowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cupid’s arrow found its way to my heart once [Dm]before
@@ -38,3 +41,7 @@ As sure footed as I’ve [G7]been
 [C]I never thought I’d ever have a love to brag [Dm]about
 [F]No way no [G7]how till [C]now
 {end_of_verse}
+
+
+
+

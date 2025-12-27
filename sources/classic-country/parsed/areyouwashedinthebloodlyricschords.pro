@@ -1,6 +1,9 @@
 {meta: title Are You Washed In The Blood}
 {meta: artist Statler Brother}
 {meta: composer Elisha A. Hoffman}
+{meta: x_source classic-country}
+{meta: x_source_file areyouwashedinthebloodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have you been to Jesus for the [F]cleansing power
@@ -29,3 +32,6 @@ In the [C]soul cleansing blood of the [G7]lamb
 Are your [C]garments spotless are they [F]white as snow
 Are you [C]washed in the [G7]blood of the [C]lamb
 {end_of_verse}
+
+
+

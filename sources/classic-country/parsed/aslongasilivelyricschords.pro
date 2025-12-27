@@ -1,5 +1,8 @@
 {meta: title As Long As I Live}
 {meta: artist Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file aslongasilivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As long as I live if [C]it be one [G]hour
@@ -28,3 +31,6 @@
 [C]It may sound funny but I'll never forget [G]you
 [D7]You're the only joy that I ever [G]had
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Wish It Would Rain}
 {meta: artist Randy Travis}
 {meta: composer Ron Avis and Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file iwishitwouldrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's the last thing I needed on a star [D7]filled [G]night
@@ -36,3 +39,7 @@
 [Am]I know that I can't hold back the [D7]pain
 [G]I wish it would rain
 {end_of_verse}
+
+
+
+

@@ -1,4 +1,7 @@
 {meta: artist aka Rye Whiskey}
+{meta: x_source classic-country}
+{meta: x_source_file jackodiamondslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jack O' Diamonds Jack O' Diamonds and I know you of old
@@ -44,3 +47,11 @@ I’ll play Jack O’ Diamonds and [G7]trust to my [C]luck
 Rye whiskey rye whiskey rye whiskey I cry
 If the whiskey don't kill me I'll [G7]live till I [C]die
 {end_of_verse}
+
+
+
+
+
+
+
+

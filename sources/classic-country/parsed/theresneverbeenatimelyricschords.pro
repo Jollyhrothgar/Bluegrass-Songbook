@@ -1,5 +1,8 @@
 {meta: title There's Never Been A Time}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file theresneverbeenatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's neve[Em]r  [Am]   [C]never been a [F]time[Am]   [Dm]
@@ -22,3 +25,5 @@ Cause there's nev[Em]er  [Am]been a [C]time I haven't [F]loved [Am]you [Dm]
 And there's [G7]never been a [Dm]day 
 I haven't [G7]wished you hadn't gone [C]away
 {end_of_verse}
+
+

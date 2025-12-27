@@ -1,6 +1,9 @@
 {meta: title It Rains Just The Same In Missouri}
 {meta: artist Mac Wiseman}
 {meta: composer Ray Griff and Tommy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file itrainsjustthesameinmissourilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your silent tears are falling on your [C]suitcase in the [A7]hall
@@ -43,3 +46,8 @@ In [D7]Missouri or wherever you [G]go
 You'll cry just the same and you'll [C]find that it rains
 In [D7]Missouri or wherever you [G]go
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If We Never Had}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file ifweneverhadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If we took just a [F]little more [C]than we should have taken
@@ -33,3 +36,7 @@ Still it's [D7]better than [G7]if we never [C]had
 {start_of_verse: Verse 5}
 It's [D7]better than [G7]if we never [C]had
 {end_of_verse}
+
+
+
+

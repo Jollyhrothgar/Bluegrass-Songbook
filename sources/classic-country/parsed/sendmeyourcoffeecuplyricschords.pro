@@ -1,5 +1,8 @@
 {meta: title Send Me Your Coffee Cup}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file sendmeyourcoffeecuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today when you [C]drink a cup of [G]coffee
@@ -28,3 +31,7 @@ Send me your [C]coffee cup and [D7]I will drink to [G]you
 {start_of_verse: Verse 5}
 Send me your [C]coffee cup and [D7]I will drink to [G]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Living Like There's No Tomorrow}
 {meta: artist Keith Whitley}
 {meta: composer Roger Murrah and Jim McBride}
+{meta: x_source classic-country}
+{meta: x_source_file livingliketheresnotomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said I'd live to re[F]gret it
@@ -36,3 +39,7 @@ Reaching out for whatever's insid[C7]e
 And [F]living like there's no to[C]morro[F]w [E7]
 [D7]Finally got [G7]to me [F]toni[C]ght
 {end_of_verse}
+
+
+
+

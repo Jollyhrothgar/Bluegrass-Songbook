@@ -1,6 +1,9 @@
 {meta: title It Just Doesn't Seem To Matter}
 {meta: artist Jack Greene}
 {meta: composer Jeannie Seely}
+{meta: x_source classic-country}
+{meta: x_source_file itjustdoesntseemtomatterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We both know how we're hurting [F]another
@@ -27,3 +30,6 @@ And it's [D7]hard to put yourself in someone else's [G7]shoes
 We keep [C]saying time will change our [F]situation
 But right [C]now it just [G7]doesn't seem to [C]matter
 {end_of_verse}
+
+
+

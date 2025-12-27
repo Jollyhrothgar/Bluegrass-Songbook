@@ -1,6 +1,9 @@
 {meta: title You've Got To Hide Your Love Away}
 {meta: artist Waylon Jennings}
 {meta: composer John Lennon and Paul McCartney}
+{meta: x_source classic-country}
+{meta: x_source_file youvegottohideyourloveawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here I [D7]stand [C]hand in [G]hand [C]turnin' my face to the [F]wall[C]
@@ -31,3 +34,8 @@
 [G]You've got to [C]hide your love [D7]away[C]  [D7]
 [G]You've got to [C]hide your love [D7]awa[C]y [B7]   [G]
 {end_of_verse}
+
+
+
+
+

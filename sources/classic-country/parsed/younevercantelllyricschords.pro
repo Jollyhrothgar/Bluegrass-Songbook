@@ -1,5 +1,8 @@
 {meta: title You Never Can Tell (C'est la vie)}
 {meta: artist Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file younevercantelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was a teenage wedding
@@ -108,3 +111,27 @@ It goes to show you never can [G]tell
 {start_of_verse: Verse 1}
 [G]It was a teenage wedding
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

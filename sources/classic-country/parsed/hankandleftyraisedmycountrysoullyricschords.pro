@@ -1,6 +1,9 @@
 {meta: title Hank And Lefty Raised My Country Soul}
 {meta: artist Moe Bandy}
 {meta: composer Dallas Frazier and A.L. Owens}
+{meta: x_source classic-country}
+{meta: x_source_file hankandleftyraisedmycountrysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Daddy had a 1941 Ford I was just bout [F]ten years [C]old
@@ -42,3 +45,9 @@ Why Don't You Love Me Like You Used to Do
 {start_of_verse: Verse 6}
 [G7]Ol' Hank and Lefty raised my country [C]soul
 {end_of_verse}
+
+
+
+
+
+

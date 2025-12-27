@@ -1,6 +1,9 @@
 {meta: title Torn between two lovers}
 {meta: artist Connie Francis}
 {meta: composer Peter Yarrow and Phil Jarrel}
+{meta: x_source classic-country}
+{meta: x_source_file tornbetweentwoloverslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]There are times when a woman has to say what's on her [G]mind 
@@ -54,3 +57,10 @@ Tag:
 [Am]Torn between two [D7]lovers [G]feeling like a [E7]fool
 [Am]Loving both of you is [D7]breaking all the [G]rules
 {end_of_verse}
+
+
+
+
+
+
+

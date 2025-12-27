@@ -1,5 +1,8 @@
 {meta: title Stranger Drive Away}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file strangerdriveawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello stranger heard [D7]you met a girl last [G]night
@@ -28,3 +31,6 @@
 [C]So go find someone else who's free to play
 [D7]Get in your car stranger drive [G]away
 {end_of_verse}
+
+
+

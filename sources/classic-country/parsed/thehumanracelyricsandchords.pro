@@ -1,6 +1,9 @@
 {meta: title The Human Race}
 {meta: artist Randy Travis}
 {meta: composer James Dawson Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file thehumanracelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We've flown to the moon
@@ -51,3 +54,9 @@ We hurl satellites in [C]space
 Now everybody's talking
 So [G7]tell me why we can't communi[C]cate
 {end_of_verse}
+
+
+
+
+
+

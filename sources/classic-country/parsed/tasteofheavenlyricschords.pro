@@ -1,6 +1,9 @@
 {meta: title Taste Of Heaven}
 {meta: artist Jim Ed Brown}
 {meta: composer Jimmy Rule and David Briggs}
+{meta: x_source classic-country}
+{meta: x_source_file tasteofheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I [F]found the taste of heaven give me [G7]more
@@ -36,3 +39,7 @@ I never dreamed that love could [F]be like this [C]before
 No I never knew the [C7]thrill that I had [F]missed
 Until I [C]found the taste of [G7]heaven in your [C]kiss
 {end_of_verse}
+
+
+
+

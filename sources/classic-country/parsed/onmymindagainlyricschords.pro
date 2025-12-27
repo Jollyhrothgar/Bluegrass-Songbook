@@ -1,6 +1,9 @@
 {meta: title On My Mind Again}
 {meta: artist Billy Walker}
 {meta: composer Slim Willett, Dean Beard, Elmer Ray}
+{meta: x_source classic-country}
+{meta: x_source_file onmymindagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I got you on my mind [C]again
@@ -47,3 +50,9 @@
 [F]But just when I think I forgotten that’s [C]when
 [G7]I got you on my mind [C]again
 {end_of_verse}
+
+
+
+
+
+

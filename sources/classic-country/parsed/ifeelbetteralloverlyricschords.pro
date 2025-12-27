@@ -1,6 +1,9 @@
 {meta: title I Feel Better All Over}
 {meta: artist Ferlin Husky}
 {meta: composer Kenny Rogers and Leon Smith}
+{meta: x_source classic-country}
+{meta: x_source_file ifeelbetteralloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I feel better all over more than anywhere else 
@@ -62,3 +65,14 @@ Oh I feel better all over more than anywhere else
 That's [D7]exactly how I [G]feel 
 Oh that's [D7]exactly how I [G]feel
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

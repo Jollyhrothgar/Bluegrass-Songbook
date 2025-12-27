@@ -1,6 +1,9 @@
 {meta: title Every Time The World Goes Round}
 {meta: artist Bob Luman}
 {meta: composer Bob Montgomery and Earl Sinks}
+{meta: x_source classic-country}
+{meta: x_source_file everytimetheworldgoesroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time the [F]world goes round 
@@ -43,3 +46,8 @@ That you [C]say you're [G7]mine all [C]mine
 Before this world goes [F]round again 
 I hope you're [C]fallin' in [G7]love with me [C]too
 {end_of_verse}
+
+
+
+
+

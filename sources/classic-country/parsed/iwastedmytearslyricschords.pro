@@ -1,6 +1,9 @@
 {meta: title I Wasted My Tears}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton and Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file iwastedmytearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](I wasted my te-[Am]a-r-[C]s  [F]when I cried over [C]you)[F]  [C]
@@ -36,3 +39,6 @@ I wasted my [C]tea[Am]rs (wasted my [F]tears)
 When I cried over [C]you[F]  [C]
 I [F]wasted my [C]t-e[Am]-a-[C]r-s [F]when I cried over [C]you
 {end_of_verse}
+
+
+

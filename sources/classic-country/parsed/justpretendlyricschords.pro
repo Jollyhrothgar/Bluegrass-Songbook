@@ -1,6 +1,9 @@
 {meta: title Just Pretend}
 {meta: artist Elvis Presley}
 {meta: composer Doug Flett and Guy Fletcher}
+{meta: x_source classic-country}
+{meta: x_source_file justpretendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just pretend [F]I'm holding you 
@@ -41,3 +44,8 @@ Oh [F]I will [G7]hold you and [C]love you [F]again
 Oh [F]I will [G7]hold you and [C]love you [F]again 
 [C]But until [G7]then we’ll just [C]pretend 
 {end_of_verse}
+
+
+
+
+

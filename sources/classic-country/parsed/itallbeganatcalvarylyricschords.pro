@@ -1,5 +1,8 @@
 {meta: title It All Began At Calvary}
 {meta: artist Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file itallbeganatcalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 It All Began At Calvary   
@@ -38,3 +41,8 @@ You'll find your answer at [D7]Calva[G]ry
 {start_of_verse: Verse 5}
 It all began at [D7]Calva[G]ry
 {end_of_verse}
+
+
+
+
+

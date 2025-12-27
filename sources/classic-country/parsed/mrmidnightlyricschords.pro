@@ -1,6 +1,9 @@
 {meta: title Mr. Midnight}
 {meta: artist Garth Brooks}
 {meta: composer James Cobb, Buddy Buie, Tom Douglas}
+{meta: x_source classic-country}
+{meta: x_source_file mrmidnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rain on the roof [B7]and time on my hands
@@ -55,3 +58,8 @@ Every [C]song is a reminder
 Of the [D7]love that [B7]they once [Em]knew
 [G7]I'm Mr. [C]Midnight [D7]can I play a song for [Em]you
 {end_of_verse}
+
+
+
+
+

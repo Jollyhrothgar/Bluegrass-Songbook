@@ -1,6 +1,9 @@
 {meta: title Another Beer Drinking Song}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file anotherbeerdrinkingsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're just another   beer drinking song
@@ -35,3 +38,8 @@ And we'll all drink one more toast to [C]you
 [C]You're just another   beer drinking song
 You're just another   somebody [G7]gone
 {end_of_verse}
+
+
+
+
+

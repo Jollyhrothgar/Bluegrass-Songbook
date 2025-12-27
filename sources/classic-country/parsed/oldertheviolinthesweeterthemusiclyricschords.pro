@@ -1,5 +1,8 @@
 {meta: title Older the Violin the Sweeter the Music}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file oldertheviolinthesweeterthemusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It seems you think that forty-five is just a little too old [G7]now 
@@ -28,3 +31,6 @@ Like a thousand violins singing from [C]above
 You’re gonna really miss my loving one day when you lose [G7]it 
 You know the older the violin the sweeter the [C]music 
 {end_of_verse}
+
+
+

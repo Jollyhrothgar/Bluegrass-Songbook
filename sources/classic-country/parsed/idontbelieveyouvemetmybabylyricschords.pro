@@ -1,6 +1,9 @@
 {meta: title I Don't Believe You've Met My Baby}
 {meta: artist The Louvin Brothers}
 {meta: composer Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file idontbelieveyouvemetmybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night my dear the rain was [G7]falling
@@ -31,3 +34,5 @@
 [F]And then my heart was filled with [G7]ease
 [C]I knew that you would marry me
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Bye Baby Bye Bye}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino}
+{meta: x_source classic-country}
+{meta: x_source_file byebabybyebyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Bye [G]bye bye [D7]baby baby bye [G]bye
@@ -33,3 +36,6 @@ Bye bye bye [D7]baby baby bye [G]bye
 Bye bye bye [D7]baby baby bye [G]bye
 Bye bye bye [D7]baby baby bye [G]bye
 {end_of_verse}
+
+
+

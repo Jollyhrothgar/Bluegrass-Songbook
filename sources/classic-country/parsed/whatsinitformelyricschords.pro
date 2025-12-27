@@ -1,6 +1,9 @@
 {meta: title What's In It For Me}
 {meta: artist Jim Reeves}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file whatsinitformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know that I'm [F]a fool to keep [G7]on loving you so [C]hopelessly
@@ -16,3 +19,4 @@ These ties of love [D7]are wound too tight around this heart of [G7]mine
 But what's life [F]without your love [G7]what's in it for [C]me
 But what's life [F]without your love [G7]what's in it for [C]me
 {end_of_verse}
+

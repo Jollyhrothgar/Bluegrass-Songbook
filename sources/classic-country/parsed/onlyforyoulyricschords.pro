@@ -1,5 +1,8 @@
 {meta: title Only For You}
 {meta: artist Sheb Wooley}
+{meta: x_source classic-country}
+{meta: x_source_file onlyforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Only for you is the reason I'm [F]living
@@ -25,3 +28,6 @@ I'll live my [C]life [G7]only for [F]you
 {start_of_verse: Verse 4}
 I'll live my [C]life [G7]only for [F]you[C]
 {end_of_verse}
+
+
+

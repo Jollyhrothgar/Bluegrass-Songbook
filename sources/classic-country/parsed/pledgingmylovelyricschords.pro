@@ -1,5 +1,8 @@
 {meta: title Pledging My Love}
 {meta: artist Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file pledgingmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Forever my darling    my love will be [G7]true 
@@ -18,3 +21,5 @@ I'll never part from you and your loving [C]way
 {start_of_verse: Verse 3}
 Repeat all
 {end_of_verse}
+
+

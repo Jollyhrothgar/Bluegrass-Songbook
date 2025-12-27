@@ -1,5 +1,8 @@
 {meta: title Live A Little}
 {meta: artist Mark Chesnutt}
+{meta: x_source classic-country}
+{meta: x_source_file livealittlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've got to give a little take a little
@@ -42,3 +45,9 @@ Unwind take your time leave your cares all behind
 [G7]So lean back chew the fat take a day just to piddle
 [C]Live a little now and then
 {end_of_verse}
+
+
+
+
+
+

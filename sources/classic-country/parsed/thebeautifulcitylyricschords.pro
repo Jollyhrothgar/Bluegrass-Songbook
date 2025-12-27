@@ -1,5 +1,8 @@
 {meta: title The Beautiful City}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file thebeautifulcitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm waiting watching and longing
@@ -42,3 +45,8 @@ Shall [F]I find you waiting up [C]there
 With [F]the saints who have gone on before [C]us
 To [D7]that beautiful home so [G7]fair
 {end_of_verse}
+
+
+
+
+

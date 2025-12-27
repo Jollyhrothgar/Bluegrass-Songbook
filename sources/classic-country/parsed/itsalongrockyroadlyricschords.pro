@@ -1,5 +1,8 @@
 {meta: title It's A Long Rocky Road}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file itsalongrockyroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a long rocky road that has no turning
@@ -23,3 +26,5 @@ It's a long rocky road that has no turning
 [C]There's no use of me sighing [F]no use of me [C]crying
 [G7]I'll travel alone for I'm lost without [C]you
 {end_of_verse}
+
+

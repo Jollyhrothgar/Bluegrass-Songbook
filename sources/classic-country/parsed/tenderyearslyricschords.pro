@@ -1,6 +1,9 @@
 {meta: title Tender Years}
 {meta: artist George Jones}
 {meta: composer Darrell Edwards}
+{meta: x_source classic-country}
+{meta: x_source_file tenderyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You keep saying you love him
@@ -71,3 +74,16 @@ With a [F]love that's [C]sincere
 Yes I'll wait 'til you're through living
 In [G7]your tender [C]years
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

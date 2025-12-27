@@ -1,6 +1,9 @@
 {meta: title Jesus Is A Soul Man}
 {meta: artist Conway Twitty}
 {meta: composer Lawrence Reynolds and Jack Cardwell}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusisasoulmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jesus is a soul man
@@ -51,3 +54,9 @@ They were [C]saved by [D7]the soul [G]man
 [G]Jesus is a soul man
 And [C]I'm sure [D7]sold on [G]Him
 {end_of_verse}
+
+
+
+
+
+

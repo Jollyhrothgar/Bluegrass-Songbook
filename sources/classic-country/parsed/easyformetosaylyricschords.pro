@@ -1,6 +1,9 @@
 {meta: title Easy For Me To Say}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file easyformetosaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some won't [F]find the [C]words  [F]more won't find a [C]way
@@ -38,3 +41,7 @@ You know it's [G7]easy for me to [C]say
 I love you I'll [Em]try to say it more every [F]day
 You know it's [G7]easy for me to [C]say[Em]   [F]  [G7]   [C]
 {end_of_verse}
+
+
+
+

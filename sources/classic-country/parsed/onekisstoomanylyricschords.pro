@@ -1,6 +1,9 @@
 {meta: title One Kiss Too Many}
 {meta: artist Eddy Arnold}
 {meta: composer Steve Nelson, Eddy Arnold, Ed Nelson, Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file onekisstoomanylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I had one kiss too many and it [G7]went right to my [C]heart
@@ -29,3 +32,6 @@ I [A7]had to hang around until I got that fatal [D7]one
 I had one [G]kiss too many it was [G7]just too much for [C]me
 Oh but [D7]one kiss less my heart might still be [G]free
 {end_of_verse}
+
+
+

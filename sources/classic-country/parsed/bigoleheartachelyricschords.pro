@@ -1,6 +1,9 @@
 {meta: title Big Ole Heartache}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file bigoleheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wake up with a big ole [F]heartache I [G7]hate to face a new born [C]day
@@ -29,3 +32,6 @@ I [F]mighta got the things I [C]wanted I [D7]mighta found a love that’s [G7]tr
 [C]But there’s no way to do things [F]over I [G7]took a chance and now I’ll [C]pay
 Cause I [F]wake up with a big ole [C]heartache [G7]every[C]day 
 {end_of_verse}
+
+
+

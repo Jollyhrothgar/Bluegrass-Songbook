@@ -1,6 +1,9 @@
 {meta: title Luckenback Texas}
 {meta: artist Waylon Jennings}
 {meta: composer Chips Moman and Bobby Emmons}
+{meta: x_source classic-country}
+{meta: x_source_file luckenbachtexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There're only two things in life [D7]that make it worth [G]living
@@ -40,3 +43,8 @@ Let's go to Luckenbach Texas with Waylon and Willie and the [C]boy's
 This [D7]successful life we're living got us 
 Feuding like the Hatfield's and [G]McCoy's
 {end_of_verse}
+
+
+
+
+

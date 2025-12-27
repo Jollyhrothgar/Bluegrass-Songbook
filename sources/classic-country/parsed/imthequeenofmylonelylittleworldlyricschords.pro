@@ -1,6 +1,9 @@
 {meta: title I'm The Queen Of My Lonely Little World}
 {meta: artist Wanda Jackson}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file imthequeenofmylonelylittleworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 I'm The Queen Of My Lonely Little World
@@ -42,3 +45,7 @@ No one can [G]tell me what to do
 I know it [C]all I learned from you
 Yes I'm the [G]queen of my [D7]lonely little [G]world
 {end_of_verse}
+
+
+
+

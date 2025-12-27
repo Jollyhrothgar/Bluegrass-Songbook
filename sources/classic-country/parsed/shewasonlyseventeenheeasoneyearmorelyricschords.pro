@@ -1,5 +1,8 @@
 {meta: title She Was Only Seventeen (He Was One Year More)}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file shewasonlyseventeenheeasoneyearmorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](Seven[C]teen waoo [Am]wah and [Dm]he was one year [G7]more
@@ -48,3 +51,10 @@ When [C]someone was [Am]seventeen [F]another [G7]one year [C]more
 {start_of_verse: Verse 8}
 Waoo [Am]wah seven[F]teen wah [C]wah
 {end_of_verse}
+
+
+
+
+
+
+

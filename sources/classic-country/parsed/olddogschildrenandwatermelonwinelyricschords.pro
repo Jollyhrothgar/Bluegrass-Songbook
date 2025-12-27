@@ -1,5 +1,8 @@
 {meta: title Old Dogs Children And Watermelon Wine}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file olddogschildrenandwatermelonwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How old do you think I am he said
@@ -43,3 +46,8 @@ I had to catch a [G7]plane up to [C]Atlanta the next [Am]day
 That night I dreamed in [G7]peaceful sleep of [C]shady summer [Am]times
 Of old [C]dogs and [G]children  [Am]and [D7]watermelon [G]wine
 {end_of_verse}
+
+
+
+
+

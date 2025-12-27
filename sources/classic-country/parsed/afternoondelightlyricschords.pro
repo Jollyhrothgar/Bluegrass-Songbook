@@ -1,6 +1,9 @@
 {meta: title Afternoon Delight}
 {meta: artist Charlie Rich}
 {meta: composer Bill Danoff}
+{meta: x_source classic-country}
+{meta: x_source_file afternoondelightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gonna find my baby gonna hold her tight
@@ -54,3 +57,11 @@ And the [F]thought of rubbing you is getting so [G7]exciting
 [C]Sky [G7]rockets in [C]flight [G7]after [C]noon de [Am]light
 [F]After [G7]noon de [C]light [F]after [G7]noon de [C]light
 {end_of_verse}
+
+
+
+
+
+
+
+

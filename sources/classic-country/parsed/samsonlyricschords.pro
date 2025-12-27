@@ -1,6 +1,9 @@
 {meta: title Samson}
 {meta: artist The Statler Brothers}
 {meta: composer Lew DeWitt}
+{meta: x_source classic-country}
+{meta: x_source_file samsonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Oh Samson it's [C]been said you were a mighty man
@@ -54,3 +57,10 @@ How could you [C]let a woman [G7]get the best of [C]you [F]
 {start_of_verse: Verse 8}
 How could you [C]let Delila [G7]get the best of [C]you
 {end_of_verse}
+
+
+
+
+
+
+

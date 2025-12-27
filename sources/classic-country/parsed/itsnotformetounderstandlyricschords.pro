@@ -1,6 +1,9 @@
 {meta: title It's Not For Me To Understand}
 {meta: artist Jack Greene}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file itsnotformetounderstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's not for [Em]y-—[Am]o--[G7]u to under[C]stand
@@ -40,3 +43,8 @@ I pray His [F]will not mine be [C]done
 For after [F]all I'm just a [C]man
 And it's not for [Em]me [G7]to under[C]stand
 {end_of_verse}
+
+
+
+
+

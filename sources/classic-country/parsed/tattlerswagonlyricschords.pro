@@ -1,6 +1,9 @@
 {meta: title Tattlers Wagon}
 {meta: artist Chuck Wagon Gang}
 {meta: composer Helen Beavers, Troy Beavers, W. S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file tattlerswagonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I had a tattlers wagon which behind me I did [D7]pull
@@ -50,3 +53,8 @@
 [G7]Then we'd go to church and sing
 [C]I believe Jesus [F]saves and His [C]blood washes [G7]whiter than [C]snow
 {end_of_verse}
+
+
+
+
+

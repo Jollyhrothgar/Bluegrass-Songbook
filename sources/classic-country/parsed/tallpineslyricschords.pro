@@ -1,6 +1,9 @@
 {meta: title Tall Pines}
 {meta: artist Bill Monroe}
 {meta: composer Damon Black}
+{meta: x_source classic-country}
+{meta: x_source_file tallpineslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once in my youth I stood [C]on this [G]mountain
@@ -43,3 +46,8 @@
 [G]Tall pines tall [C]pines
 [G]I've come home to [D7]sleep beneath your [G]boughs
 {end_of_verse}
+
+
+
+
+

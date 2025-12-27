@@ -1,6 +1,9 @@
 {meta: title Chattanooga Choo Choo}
 {meta: artist Hank Snow}
 {meta: composer Mack Gordon &amp; Harry Warren}
+{meta: x_source classic-country}
+{meta: x_source_file chattanoogachoochoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pardon me boy is [D7]this the [C]Chattanooga [G]Choo Choo
@@ -33,3 +36,7 @@ So [G]Chattanooga [Em]choo choo  [C]won't you [D7]choo-choo me [G]home
 {start_of_verse: Verse 5}
 Chattanooga [Em]choo choo  [C]won't you [D7]choo-choo me [G]home
 {end_of_verse}
+
+
+
+

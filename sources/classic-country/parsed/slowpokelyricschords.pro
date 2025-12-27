@@ -1,5 +1,8 @@
 {meta: title Slow Poke}
 {meta: artist Pee Wee King}
+{meta: x_source classic-country}
+{meta: x_source_file slowpokelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You keep me waiting till it's getting aggravating
@@ -24,3 +27,6 @@ You're a [C]slow poke [C7]dear
 [C]It's not the thing to [A7]do
 I [Am]guess I'll have to learn to be a [D7]slow poke [C][G7]too 
 {end_of_verse}
+
+
+

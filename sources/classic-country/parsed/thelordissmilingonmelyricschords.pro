@@ -1,6 +1,9 @@
 {meta: title The Lord Is Smiling On Me}
 {meta: artist Rhonda Vincent}
 {meta: composer Thelma Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file thelordissmilingonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I woke up this morning
@@ -55,3 +58,10 @@ I know someone loves me
 [D7]The Lord is smiling on [G]me
 [D7]The Lord is smiling on [G]me
 {end_of_verse}
+
+
+
+
+
+
+

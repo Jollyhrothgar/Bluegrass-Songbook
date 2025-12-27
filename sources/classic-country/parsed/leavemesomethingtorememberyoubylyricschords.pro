@@ -1,6 +1,9 @@
 {meta: title Leave Me Something To Remember You By}
 {meta: artist Buck Owens}
 {meta: composer Don Rich and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file leavemesomethingtorememberyoubylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Leave me a lock [C]of your golden hair
@@ -26,3 +29,6 @@ Leave me the twinkle [C]in your eye
 {start_of_verse: Verse 3}
 [D7]Leave me something to remember you [C]b-[G]y
 {end_of_verse}
+
+
+

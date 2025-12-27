@@ -1,6 +1,9 @@
 {meta: title Sea Breeze}
 {meta: artist Jim Reeves}
 {meta: composer James Joiner}
+{meta: x_source classic-country}
+{meta: x_source_file seabreezelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw a [F]ship a [C]sailing
@@ -48,3 +51,9 @@ And [D7]bring her [G7]back to [C]me
 [D7]Bring her [G7]back to [C]me
 [Dm]Bring her [Am]back [Em]to [C]me
 {end_of_verse}
+
+
+
+
+
+

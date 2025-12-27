@@ -1,6 +1,9 @@
 {meta: title Misery Loves Company}
 {meta: artist Porter Wagoner}
 {meta: composer Jerry Reed Hubbard}
+{meta: x_source classic-country}
+{meta: x_source_file miserylovescompanylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Break out the bottle bring on the [F]crowd
@@ -34,3 +37,7 @@ Tell funny [C]stories turn the jukebox up [G7]loud
 Come and sit at my [C]table where the drinks are on [F]me
 Yes gather round [C]me cause mise[G7]ry loves compa[C]ny
 {end_of_verse}
+
+
+
+

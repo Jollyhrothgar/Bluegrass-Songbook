@@ -1,6 +1,9 @@
 {meta: title Now The Day Is Over}
 {meta: artist Ray Price}
 {meta: composer Sabine Baring, John E. Gould, J. Barnby}
+{meta: x_source classic-country}
+{meta: x_source_file nowthedayisoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F](Now the [D7]day is [C]over
@@ -32,3 +35,7 @@ When the morning awakens
 (May we be [F]pure and [G7]fresh and [C]sinless
 [G7]In Thy holy [G]eye[C]s)
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Better Years}
 {meta: artist The Seldom Scene}
 {meta: composer Hazel Dickens}
+{meta: x_source classic-country}
+{meta: x_source_file mybetteryearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now you’re back on my doorstep a’ [C]crying
@@ -45,3 +48,8 @@ There’s nothing [G]here but old [D7]memories and this [G]song
 Don’t come back on my doorstep a-[C]crying
 My friend there’s [G]nothing but old [D7]memories and this [C]son[G]g
 {end_of_verse}
+
+
+
+
+

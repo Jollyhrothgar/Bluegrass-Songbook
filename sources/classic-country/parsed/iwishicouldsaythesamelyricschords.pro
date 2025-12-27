@@ -1,6 +1,9 @@
 {meta: title I Wish I Could Say The Same}
 {meta: artist Wynn Stewart}
 {meta: composer Bobby Bare, Harlan Howard, Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file iwishicouldsaythesamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You thought your freedom you're [C]taking
@@ -41,3 +44,8 @@
 [G]And I know that you're not a [C]hurting
 [G]And I wish [D7]I could say the [G]same
 {end_of_verse}
+
+
+
+
+

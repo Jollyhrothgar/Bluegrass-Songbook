@@ -1,5 +1,8 @@
 {meta: title San Antonio Rose}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file sanantonioroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Deep within my [C7]heart lies a [D7][F]mel-ody
@@ -28,3 +31,6 @@ Still [G7]live in my heart all [C]alone
 For that moonlit pass [C7]by the [D7][F]Ala-mo  
 And [G7]Rose my Rose of San [C]Antone
 {end_of_verse}
+
+
+

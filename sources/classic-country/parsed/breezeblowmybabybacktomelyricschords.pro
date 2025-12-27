@@ -1,6 +1,9 @@
 {meta: title Breeze Blow My Baby Back To Me}
 {meta: artist Jim Reeves}
 {meta: composer Ted Daffan and Bernard Landes}
+{meta: x_source classic-country}
+{meta: x_source_file breezeblowmybabybacktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Breeze you took her from my [G7]side 
@@ -36,3 +39,6 @@ Oh hear my [C]plea  [C7]hear my plea
 [G7]Bring her back [C]sweet evening breeze
 Bring my [G7]baby back to [C]me
 {end_of_verse}
+
+
+

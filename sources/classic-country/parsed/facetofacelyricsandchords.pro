@@ -1,6 +1,9 @@
 {meta: title Face To Face}
 {meta: artist Alabama}
 {meta: composer Randy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file facetofacelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Run your fingers [G]through my hair and [C]softly kiss my [G]lips
@@ -25,3 +28,6 @@ Face [D7]to [A7]face
 You [C]softly say you [G]love me as [C]you make love to [G]me
 [C]No one else can [G]take your place we [Am]happen face [D7]to [G]face 
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Jeannie's Afraid Of The Dark}
 {meta: artist Dolly Parton and Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file jeanniesafraidofthedarklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her two little [G7]feet would come [C]running in[G7]to
@@ -54,3 +57,10 @@ Cause [G7]Jeannie's afraid of the [C]dark
 {start_of_verse: Verse 8}
 Our [G7]Jeannie's afraid of the [C]dark
 {end_of_verse}
+
+
+
+
+
+
+

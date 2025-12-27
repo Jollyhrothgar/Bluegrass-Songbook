@@ -1,6 +1,9 @@
 {meta: title Santa Bring My Baby Back To Me}
 {meta: artist Elvis Presley}
 {meta: composer Aaron Schroeder and Claude Demetrius}
+{meta: x_source classic-country}
+{meta: x_source_file santabringmybabybacktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't need a lot of presents to make [F]my Christmas [C]bright
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Then Santa hear [F]my plea Santa bring [G7]my baby back to [C]me
 {end_of_verse}
+
+
+
+

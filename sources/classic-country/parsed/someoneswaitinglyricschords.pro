@@ -1,6 +1,9 @@
 {meta: title Someone's Waiting}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file someoneswaitinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't say no more some[C]one's waiting
@@ -22,3 +25,5 @@ We’d [A7]both be better off if I [D7]leave
 Fate [G]was so unkind to throw us to[C]gether
 [G]I'd better leave [D7]someone's waiting for [Am]me [G]
 {end_of_verse}
+
+

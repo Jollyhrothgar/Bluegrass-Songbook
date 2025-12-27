@@ -1,6 +1,9 @@
 {meta: title Storm Of Love}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file stormoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a storm of love a-brewing now I'm losing [C]you
@@ -36,3 +39,7 @@ There's a storm of love a-brewing now I'm losing [C]you
 [C]When you loved me true my skies were always blue
 But [D7]now a storm of love is on it's [G]way
 {end_of_verse}
+
+
+
+

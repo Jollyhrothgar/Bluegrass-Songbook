@@ -1,6 +1,9 @@
 {meta: title I'd Like To See Jesus}
 {meta: artist Tammy Wynette}
 {meta: composer Robert Seay and Dorval Smith}
+{meta: x_source classic-country}
+{meta: x_source_file idliketoseeJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd like to see Jesus on [F]the Midnight [C]Special
@@ -43,3 +46,8 @@ I'd like to [Am]see the [D7]Wolfman bring Him [G7]on
 I'd like to see [C]Jesus on [F]the Midnight [C]Special
 I'd like to hear Him singing my [G7]favorite [C]song
 {end_of_verse}
+
+
+
+
+

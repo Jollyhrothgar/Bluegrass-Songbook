@@ -1,6 +1,9 @@
 {meta: title Poor Little Rich Boy}
 {meta: artist George Jones}
 {meta: composer Don Carter}
+{meta: x_source classic-country}
+{meta: x_source_file poorlittlerichboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([C]Poor little rich boy poor little rich boy)
@@ -42,3 +45,9 @@ And I [G7]knew who'd been a[C]round
 {start_of_verse: Verse 1}
 ([C]Poor little rich boy poor little rich boy)
 {end_of_verse}
+
+
+
+
+
+

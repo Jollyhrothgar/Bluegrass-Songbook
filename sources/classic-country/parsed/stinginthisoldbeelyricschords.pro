@@ -1,6 +1,9 @@
 {meta: title Sting In This Old Bee}
 {meta: artist Hank Thompson}
 {meta: composer Joe Nelson and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file stinginthisoldbeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I might wear horn-rimmed glasses
@@ -59,3 +62,12 @@ I've heard some folks [G]say
 [C]Now if there's honey in that [G]hive
 There's a [D7]sting in this old [G]bee
 {end_of_verse}
+
+
+
+
+
+
+
+
+

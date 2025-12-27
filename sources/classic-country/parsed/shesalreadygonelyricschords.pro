@@ -1,6 +1,9 @@
 {meta: title She's Already Gone}
 {meta: artist Ernest Tubb}
 {meta: composer Jim Mundy}
+{meta: x_source classic-country}
+{meta: x_source_file shesalreadygonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't worry anymore like I did [F]before 
@@ -19,3 +22,4 @@ She's [C]not leaving she's [G7]already [C]gone
 I don't worry anymore like I did [F]before 
 She's [C]not leaving she's [G7]already [C]gone
 {end_of_verse}
+

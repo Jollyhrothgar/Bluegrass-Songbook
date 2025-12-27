@@ -1,6 +1,9 @@
 {meta: title Take Me Home}
 {meta: artist Charley Pride}
 {meta: composer Jack Clement and Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file takemehome1lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've been from Boston to LA
@@ -56,3 +59,9 @@ My [D7]heart is heavy and my feet are [G]sore
 Take me [C]home
 I [D7]don't wanna roam no [G]more
 {end_of_verse}
+
+
+
+
+
+

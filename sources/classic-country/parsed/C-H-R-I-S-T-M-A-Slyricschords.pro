@@ -1,5 +1,8 @@
 {meta: title C-H-R-I-S-T-M-A-S}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file C-H-R-I-S-T-M-A-Slyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]And [D7]here's why there's a Christmas [G]Day
@@ -36,3 +39,7 @@ And [A7]taught me to spell Christmas this [D7]way
 [G]R means our redeemer I means [C]Israel
 [D7]S is for the star that shone so [G]bright
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Man Man Mr. Sandman}
 {meta: artist Wynn Stewart}
 {meta: composer Wynn Stewart and Hal Bynum}
+{meta: x_source classic-country}
+{meta: x_source_file manmanmrsandmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Man man Mr. [C]Sandman 
@@ -40,3 +43,8 @@ You won't come around and [C]put me to sleep
 {start_of_verse: Verse 4}
 [D7]Like you know you [G]should    [D7]Sand[G]man
 {end_of_verse}
+
+
+
+
+

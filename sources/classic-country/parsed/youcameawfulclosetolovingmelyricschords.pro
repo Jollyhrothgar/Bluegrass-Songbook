@@ -1,5 +1,8 @@
 {meta: title You Came Awful Close To Loving Me}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file youcameawfulclosetolovingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You were warm each time I held you  [C7]you always looked so [F]neat
@@ -25,3 +28,6 @@
 {start_of_verse: Verse 4}
 [F]Yes you [G7]came awful close to loving [C]me
 {end_of_verse}
+
+
+

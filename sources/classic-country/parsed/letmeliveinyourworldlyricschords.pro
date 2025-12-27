@@ -1,6 +1,9 @@
 {meta: title Let Me Live In Your World}
 {meta: artist Marty Robbins}
 {meta: composer Karen Russell}
+{meta: x_source classic-country}
+{meta: x_source_file letmeliveinyourworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let me live in [C]your world for a [G]day
@@ -22,3 +25,5 @@
 [C]Love me now and then send me [G]away
 [D7]But let me live in your world for a [G]day
 {end_of_verse}
+
+

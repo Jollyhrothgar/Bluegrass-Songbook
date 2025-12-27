@@ -1,6 +1,9 @@
 {meta: title Hi-Lili Hi-Lo}
 {meta: artist The Everly Brothers}
 {meta: composer Bronislaw Kaper and Helen Deustch}
+{meta: x_source classic-country}
+{meta: x_source_file hililihilolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A song of love is sad [G][C]song
@@ -31,3 +34,6 @@
 [D7]Hi-lili Hi-lili [G]hi-lo
 [D7]Hi-lili Hi-lili [G]hi-lo
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Long Black Veil Around Her Heart}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene Martin}
+{meta: x_source classic-country}
+{meta: x_source_file longblackveilaroundherheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She wears a long black veil around her heart
@@ -30,3 +33,6 @@ Oh but [F]night alone in her [C]room
 The prettiest flower in [G7]world dies on the [C]vine
 She wears a long black veil around her heart [G7]   [C]
 {end_of_verse}
+
+
+

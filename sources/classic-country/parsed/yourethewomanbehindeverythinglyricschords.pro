@@ -1,6 +1,9 @@
 {meta: title You're The Woman Behind Everything}
 {meta: artist Charlie Pride}
 {meta: composer Gary Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file yourethewomanbehindeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was a [D7]man without [C]reason
@@ -27,3 +30,6 @@
 {start_of_verse: Verse 4}
 [C]Yes [D7]you're the [G]woman [D7]behind [G][C]everything
 {end_of_verse}
+
+
+

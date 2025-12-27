@@ -1,6 +1,9 @@
 {meta: title That's What He Said}
 {meta: artist Reba McEntire}
 {meta: composer Rick Carnes and Janis Carnes}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhathesaidlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You tell me that you're always gonna [F]love me
@@ -23,3 +26,5 @@ And it's [C]better to love and lose than [F]live with nothing
 But that's what [C]he said [G7]that's what [C]he said
 [F]That's what [C]he said [G7]that's what [C]he said
 {end_of_verse}
+
+

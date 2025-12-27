@@ -1,6 +1,9 @@
 {meta: title It Could Have Been Ten Years Ago}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Dennis Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file itcouldhavebeentenyearsagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the candle at my table cast its [C]light upon your face
@@ -42,3 +45,8 @@ How good it [D7]could have been ten years [G]ago
 {start_of_verse: Verse 5}
 Yes it [D7]could have been ten years [G]ago
 {end_of_verse}
+
+
+
+
+

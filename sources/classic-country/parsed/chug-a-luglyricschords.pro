@@ -1,6 +1,9 @@
 {meta: title Chug-a-lug}
 {meta: artist Roger Miller}
 {meta: composer Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file chug-a-luglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Chug-a-lug Chug-a-lug
@@ -76,3 +79,14 @@ Make you wanna [D7]holler hideho
 Burns your tummy don't you [G]know
 [D7]Chug-a-lug [G]Chug-a-lug
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

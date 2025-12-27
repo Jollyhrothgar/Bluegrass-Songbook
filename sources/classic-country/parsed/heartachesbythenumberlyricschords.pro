@@ -1,6 +1,9 @@
 {meta: title Heartaches by the Number}
 {meta: artist Ray Price}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file heartachesbythenumberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Heartache number one was when you left [F]me
@@ -36,3 +39,7 @@ heartaches by the number a love that I can't win
 But the day that I stop [G7]counting 
 that's the day my world will [C]end
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Rueben James}
 {meta: artist Kenny Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file ruebenjameslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rueben James in my [G7]song you'll live [C]a gain
@@ -42,3 +45,8 @@ Faded [F]shirt weathered brow
 Callused [C]hands upon the plow
 I loved you [F]then and I love you now [G7]Rueben [C]James
 {end_of_verse}
+
+
+
+
+

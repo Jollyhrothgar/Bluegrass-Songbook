@@ -1,6 +1,9 @@
 {meta: title Sometimes I Talk In My Sleep}
 {meta: artist Tony Booth}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file sometimesitalkinmysleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't say for certain how much you do or don't [Dm]know [A#7]    [Dm]   [G7]
@@ -26,3 +29,6 @@ But my [G7]conscious feels [Dm]guilty cause [G7]sometimes I talk in my [C]sleep[
 {start_of_verse: Verse 4}
 Yes my [G7]conscious feels [Dm]guilty cause [G7]sometimes I talk in my [F]sleep[C]  [G7]   [C]
 {end_of_verse}
+
+
+

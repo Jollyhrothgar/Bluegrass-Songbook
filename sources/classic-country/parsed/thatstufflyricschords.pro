@@ -1,6 +1,9 @@
 {meta: title That Stuff}
 {meta: artist Keith Whitley}
 {meta: composer Sonny Curtis and Ron Hellard}
+{meta: x_source classic-country}
+{meta: x_source_file thatstufflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well if the sun comes up in the morning
@@ -39,3 +42,6 @@ The [F]boss man's loud and he talks too much
 But [Eb]I ain't gonna [G]worry about that stuff [C]tonight
 That [G]stuff
 {end_of_verse}
+
+
+

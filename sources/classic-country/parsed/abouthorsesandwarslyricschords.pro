@@ -1,5 +1,8 @@
 {meta: title About Horses and Wars}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file abouthorsesandwarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The cow camp is busy the big herd’s uneasy
@@ -71,3 +74,12 @@ With the girls at the Two Minnie’s bar
 Then he [D7]throws down a whiskey with a couple of cowboys 
 And tells lies about horses and [G]wars
 {end_of_verse}
+
+
+
+
+
+
+
+
+

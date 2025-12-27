@@ -1,6 +1,9 @@
 {meta: title Funny (But I'm Not Laughing)}
 {meta: artist Conway Twitty}
 {meta: composer Mickey Jaco}
+{meta: x_source classic-country}
+{meta: x_source_file funnybutimnotlaughinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I just saw you out [F]with [C]another
@@ -31,3 +34,7 @@
 {start_of_verse: Verse 5}
 [G7]Funny but I'm not [C]laughing
 {end_of_verse}
+
+
+
+

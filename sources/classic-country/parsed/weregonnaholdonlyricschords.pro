@@ -1,6 +1,9 @@
 {meta: title We're Gonna Hold On}
 {meta: artist George Jones and Tammy Wynette}
 {meta: composer Earl Montgomery and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file weregonnaholdonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We're gonna h-old on we're gonna h-old on
@@ -37,3 +40,8 @@ And the future is [C]set for you and [G]me
 [G]We're gonna h-old on we're gonna h-old on
 We're gonna ho-o-[C]ld [G]on to [D7]each [G]other
 {end_of_verse}
+
+
+
+
+

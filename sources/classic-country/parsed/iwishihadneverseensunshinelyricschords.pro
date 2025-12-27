@@ -1,5 +1,8 @@
 {meta: artist Carl Smith lyrics and chords}
 {meta: composer Jimmie Davis and Johnny Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file iwishihadneverseensunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [F]wish I had never seen [C]sunshine
@@ -35,3 +38,7 @@ I wish I had never been [G7]blue
 I [C]wish I had died as a [F]baby
 And [G7]that I had never known [C]you
 {end_of_verse}
+
+
+
+

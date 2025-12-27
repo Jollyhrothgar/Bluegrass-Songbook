@@ -1,6 +1,9 @@
 {meta: title Born To Sing}
 {meta: artist Connie Smith}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file borntosinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You were born to [C]sing
@@ -59,3 +62,11 @@ That you've just [C]gotta bring
 You've [G7]got no choice you gotta raise your voice
 Cause [F]you were born to [C]sing
 {end_of_verse}
+
+
+
+
+
+
+
+

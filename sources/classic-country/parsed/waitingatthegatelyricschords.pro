@@ -1,6 +1,9 @@
 {meta: title Waiting At The Gate}
 {meta: artist Ricky Skaggs}
 {meta: composer Paul Brewster}
+{meta: x_source classic-country}
+{meta: x_source_file waitingatthegatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm waitin’ at the gate (I’m waitin’ at the gate)
@@ -53,3 +56,10 @@ Yes my Lord sees [D7]me (yes my Lord sees me) waitin’ at the [G]gate
 Yes my Lord sees [D7]me (yes my Lord sees me) waitin’ at the [G]gate
 Yes my Lord sees [D7]me (yes my Lord sees me) waitin’ at the [G]gate
 {end_of_verse}
+
+
+
+
+
+
+

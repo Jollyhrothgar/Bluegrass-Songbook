@@ -1,6 +1,9 @@
 {meta: title We Can't Love Like This Anymore}
 {meta: artist Alabama}
 {meta: composer John Jarrard and Wendell Mobley}
+{meta: x_source classic-country}
+{meta: x_source_file wecantlovelikethisanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're laying right beside me but you're a million miles [F]away
@@ -28,3 +31,6 @@ Just say it's [C]over and at least I'll [C7]know for [F]sure
 And we can't [Dm]love [Em]like [Dm]this [F][G7]anymore
 And we can't [Dm]love [Em]like [Dm]this [C][G7]anymore
 {end_of_verse}
+
+
+

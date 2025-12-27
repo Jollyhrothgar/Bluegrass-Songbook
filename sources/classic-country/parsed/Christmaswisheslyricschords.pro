@@ -1,6 +1,9 @@
 {meta: title Christmas Wishes}
 {meta: artist Anne Murray}
 {meta: composer Randy Sparks and Arthur Podell}
+{meta: x_source classic-country}
+{meta: x_source_file Christmaswisheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]If I had my way [G7]this [C]Christmas
@@ -39,3 +42,7 @@
 [C]For now and [Am]forever
 [Dm]To share all my [G7]wishes with [C]you
 {end_of_verse}
+
+
+
+

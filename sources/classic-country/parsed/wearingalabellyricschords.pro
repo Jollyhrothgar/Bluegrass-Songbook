@@ -1,6 +1,9 @@
 {meta: title Wearing A Label}
 {meta: artist The Metheny Brothers}
 {meta: composer Mike Tate}
+{meta: x_source classic-country}
+{meta: x_source_file wearingalabellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I tied one on down at [D7]Joe's
@@ -37,3 +40,7 @@
 {start_of_verse: Verse 4}
 [G7]Oh I drink so much I'm gonna start wearing a [C]label
 {end_of_verse}
+
+
+
+

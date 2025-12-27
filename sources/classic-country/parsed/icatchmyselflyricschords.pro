@@ -1,6 +1,9 @@
 {meta: title I Catch Myself}
 {meta: artist Gene Watson}
 {meta: composer Bruce Burch}
+{meta: x_source classic-country}
+{meta: x_source_file icatchmyselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes late at night I think about [F]you
@@ -30,3 +33,6 @@ But every [C]time I've almost fallen I hear your sweet voice [F]calling
 And I catch [C]myself  girl I catch [G7]myself
 [F]I always catch myself  [G7]still loving [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title For Me It's You}
 {meta: artist Tracy Byrd}
 {meta: composer Mark Nesler and Tony Martin}
+{meta: x_source classic-country}
+{meta: x_source_file formeitsyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every[Am]body has a gift that's [D7]given to them 
@@ -47,3 +50,9 @@ Guess the [C]Lord has a way of [D7]blessing us all and for [G]me it's you
 {start_of_verse: Verse 6}
 Guess the [C]Lord has a way of [D7]blessing us all and for [G]me it's you
 {end_of_verse}
+
+
+
+
+
+

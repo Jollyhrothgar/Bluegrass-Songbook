@@ -1,6 +1,9 @@
 {meta: title Next Go Round}
 {meta: artist Old Crow Medicine Show}
 {meta: composer Ketch Secor And Willie Watson}
+{meta: x_source classic-country}
+{meta: x_source_file nextgoroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the summer is come and gone
@@ -53,3 +56,9 @@ I won't let you [G7]down on my next go [C]round
 {start_of_verse: Verse 6}
 I won't let you [G7]down on my next go [C]round
 {end_of_verse}
+
+
+
+
+
+

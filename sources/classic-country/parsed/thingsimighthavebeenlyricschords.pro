@@ -1,6 +1,9 @@
 {meta: title Things I Might Have Been}
 {meta: artist Kitty Wells}
 {meta: composer Robert Sherman and Richard Sherman}
+{meta: x_source classic-country}
+{meta: x_source_file thingsimighthavebeenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I might have been a helpless soul with [G7]nothing much in [C]store
@@ -22,3 +25,5 @@
 [G7]But your sweet kiss has changed all this and made my life [C]begin
 [D7]Keep loving me don't let me be the things I might have [G]been
 {end_of_verse}
+
+

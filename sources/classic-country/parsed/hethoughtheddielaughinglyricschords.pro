@@ -1,6 +1,9 @@
 {meta: title He Thought He'd Die Laughing}
 {meta: artist Bobby Helms}
 {meta: composer Joe Poovey and Gene McCaslin}
+{meta: x_source classic-country}
+{meta: x_source_file hethoughtheddielaughinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]His mind was numb by [C]alcoholic [G]beverages
@@ -33,3 +36,7 @@ He said he [C]thought he'd die [D7]laughing[C]  [D7]  and he [G]did
 {start_of_verse: Verse 5}
 He said he [C]thought he'd die [D7]laughing[C]  [D7]  and he [G]did
 {end_of_verse}
+
+
+
+

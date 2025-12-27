@@ -1,6 +1,9 @@
 {meta: title We’ll Never Love Again}
 {meta: artist Wynn Stewart}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file wellneverloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the nights I've cried how I'd die [F]inside
@@ -29,3 +32,6 @@
 [C]Darling please forgive I don't want to [F]live
 [C]Knowing we'll [G7]never love [C]again
 {end_of_verse}
+
+
+

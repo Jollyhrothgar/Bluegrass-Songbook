@@ -1,6 +1,9 @@
 {meta: title It's So Close To Christmas (And I'm So Far From Home)}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file itssoclosetoChristmasandimsofarfromhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mistletoe fell on my nose a tear rolled down my [C]cheek
@@ -33,3 +36,7 @@
 [D7]When it's so close to Christmas and I'm so far from [G]home
 [D7]When it's so close to Christmas and I'm so far from [G]home
 {end_of_verse}
+
+
+
+

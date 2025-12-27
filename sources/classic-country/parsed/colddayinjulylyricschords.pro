@@ -1,6 +1,9 @@
 {meta: title Cold Day In July}
 {meta: artist Gene Watson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file colddayinjulylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I left the trees had no green [C]leaves
@@ -27,3 +30,6 @@ And it [D7]looks like a cold day in [G]July
 But my pride is not as strong as my love for [C]you
 And it [D7]looks like a cold day in [G]July    [C]in [G]July
 {end_of_verse}
+
+
+

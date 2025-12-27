@@ -1,5 +1,8 @@
 {meta: title Touch Your Woman}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file touchyourwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We can't always [A7]both be right we [D7]sometimes dis[G]agree
@@ -42,3 +45,8 @@ So [G]touch your woman [C]touch your woman
 Touch your woman [C]touch your woman
 [D7]Let me know let me [C]know [D7]every thing's all [G]right
 {end_of_verse}
+
+
+
+
+

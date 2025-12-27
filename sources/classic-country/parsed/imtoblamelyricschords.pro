@@ -1,6 +1,9 @@
 {meta: title I'm To Blame}
 {meta: artist Mickey Gilley}
 {meta: composer Huey Meaux}
+{meta: x_source classic-country}
+{meta: x_source_file imtoblamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Have you told your [G7]new friend [C]about me
@@ -33,3 +36,7 @@ And oh [G7]how it hurts me cause I know I'm to [C]blame
 {start_of_verse: Verse 5}
 Oh [G7]how it hurts me cause I know I'm to [C]blame
 {end_of_verse}
+
+
+
+

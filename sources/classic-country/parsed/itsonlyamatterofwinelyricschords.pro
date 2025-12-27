@@ -1,6 +1,9 @@
 {meta: title It's Only A Matter Of Wine}
 {meta: artist Johnny Paycheck}
 {meta: composer Larry Kingston and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file itsonlyamatterofwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They're stackin' the chairs [D7]on the table a[G]gain
@@ -33,3 +36,7 @@ And it's [G]only a [D7]matter of [G]wine [D7]
 {start_of_verse: Verse 5}
 Yes it's [G]only a [D7]matter of [C]wine[G]
 {end_of_verse}
+
+
+
+

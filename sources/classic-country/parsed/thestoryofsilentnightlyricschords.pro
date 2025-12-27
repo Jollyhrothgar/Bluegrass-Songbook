@@ -1,6 +1,9 @@
 {meta: title The Story Of Silent Night}
 {meta: artist Faron Young}
 {meta: composer Bill Emerson and Jody Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file thestoryofsilentnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One Christmas Eve a great song was written
@@ -25,3 +28,5 @@ Silent night holy night
 Sleep in [D7]heavenly [G]peace
 Repeat last verse
 {end_of_verse}
+
+

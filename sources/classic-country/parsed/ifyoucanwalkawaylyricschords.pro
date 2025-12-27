@@ -1,6 +1,9 @@
 {meta: title If You Can Walk Away}
 {meta: artist Jean Shepard}
 {meta: composer Gertrude Cox and Jack Rhodes}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoucanwalkawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you can walk away from me and [F]all my love for [C]you
@@ -29,3 +32,6 @@ As I [D7]would be to wreck your life or turn my heart to [G7]stone
 [C]But I won’t ask you to explain your [F]reason or your [C]plans
 [F]If you can walk [C]away like that with my [G7]heart in your [C]hands
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Blue Velvet}
 {meta: artist Bobby Vinton}
 {meta: composer Bernie Wayne/Lee Morris}
+{meta: x_source classic-country}
+{meta: x_source_file bluevelvetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]She wore [C]bl-ue [Em]velvet
@@ -29,3 +32,6 @@ Of [C]bl-ue [Em]velvet
 [Dm]Precious and warm a memory [G7]through the [Gm]years [C]
 And I [F]still can see blue [G7]velvet through my [C]tears
 {end_of_verse}
+
+
+

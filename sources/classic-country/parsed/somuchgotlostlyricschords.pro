@@ -1,6 +1,9 @@
 {meta: title So Much Got Lost}
 {meta: artist Roy Drusky}
 {meta: composer Del Reeves and Elen Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file somuchgotlostlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I get to thinking of another [G7]time
@@ -27,3 +30,6 @@ Now so much has changed
 [C]And on the way to the [G7]other side  so much got [C]lost
 [F]And on the way to the [C]other side  so [G7]much got [C]lost
 {end_of_verse}
+
+
+

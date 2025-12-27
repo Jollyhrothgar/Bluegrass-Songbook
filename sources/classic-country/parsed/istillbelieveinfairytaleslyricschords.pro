@@ -1,6 +1,9 @@
 {meta: title I Still Believe In Fairy Tales}
 {meta: artist Tammy Wynette}
 {meta: composer Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file istillbelieveinfairytaleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I  be[G7]lieve in [C]fairy tales
@@ -23,3 +26,5 @@ But [C]I guess that I will always be a [F]dreamer
 For [C]I still be[G7]lieve in fairy [C]tales
 I still be[G7]lieve in fairy [C]tales
 {end_of_verse}
+
+

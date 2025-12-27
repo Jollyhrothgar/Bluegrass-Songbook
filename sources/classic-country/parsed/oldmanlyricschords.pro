@@ -1,6 +1,9 @@
 {meta: title Old Man}
 {meta: artist Alabama}
 {meta: composer Donny Lowery}
+{meta: x_source classic-country}
+{meta: x_source_file oldmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I had my rent-a-car flying down a two lane road
@@ -60,3 +63,10 @@ With your [Am]two gas pumps and your [D7]color TV
 You’re [F]satisfied as you can [D7]be
 Old [Dm]man (old man) I [G7]guess you got one up on [C]me
 {end_of_verse}
+
+
+
+
+
+
+

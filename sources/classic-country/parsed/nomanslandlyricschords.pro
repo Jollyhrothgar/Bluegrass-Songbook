@@ -1,6 +1,9 @@
 {meta: title No Man's Land}
 {meta: artist Tanya Tucker}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file nomanslandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Many years ago [D7]in Brushcreek [G]Georgia
@@ -60,3 +63,10 @@
 [G]And he prayed and wrung his [Em]hands
 [D7]Now his soul's walking  through No Man's [G]Land
 {end_of_verse}
+
+
+
+
+
+
+

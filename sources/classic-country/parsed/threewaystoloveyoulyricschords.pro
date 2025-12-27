@@ -1,6 +1,9 @@
 {meta: title Three Ways To Love You}
 {meta: artist Kitty Wells}
 {meta: composer Eve Jay and Julius Dixon}
+{meta: x_source classic-country}
+{meta: x_source_file threewaystoloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are three ways three ways
@@ -50,3 +53,9 @@ Three ways to love you it's [G7]true
 One is the wrong way and one is the right way
 But the best is the way I love [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let Me Live Again}
 {meta: artist Charley Pride}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file letmeliveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let me live again let me [C]live again 
@@ -33,3 +36,7 @@ Was just enough to keep me coming [G]back for more
 After loving you losing you was [C]more than I could stand
 Now I'm the [G]ghost  [D7]of what was once a [G]man
 {end_of_verse}
+
+
+
+

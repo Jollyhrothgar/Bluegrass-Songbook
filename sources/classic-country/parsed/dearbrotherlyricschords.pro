@@ -1,6 +1,9 @@
 {meta: title Dear Brother}
 {meta: artist Hank Williams}
 {meta: composer Hank Williams [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file dearbrotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear brother Mama left us this morning
@@ -28,3 +31,7 @@ I [G7]lived my childhood [C]again
 I thought of you brother and of the old homestead
 And [G7]my tears they fell like [C]rain
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title There's Always Another Day}
 {meta: artist Sonny James}
 {meta: composer Bob Tubert and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file theresalwaysanotherdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's always [F]another [C]day to hope you'll come [Dm]home
@@ -21,3 +24,5 @@
 [G7]And so I tell myself there's always another [C]day
 [F]There's always [G7]another [F]day
 {end_of_verse}
+
+

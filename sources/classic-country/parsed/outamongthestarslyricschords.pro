@@ -1,6 +1,9 @@
 {meta: title Out Among The Stars}
 {meta: artist Waylon Jennings}
 {meta: composer Adam Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file outamongthestarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Midnight at a liquor store in [F]Texas
@@ -54,3 +57,10 @@ And [C]fly like eagles [G7]out among the [C]stars
 {start_of_verse: Verse 7}
 And fly like eagles [G7]out among the [C]stars
 {end_of_verse}
+
+
+
+
+
+
+

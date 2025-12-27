@@ -1,5 +1,8 @@
 {meta: title Fire And Smoke}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file fireandsmokelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In and out of honky tonks from one [Bm]town to the [Em]next
@@ -35,3 +38,7 @@ Raining [D7]down on [G]me
 Yeah and when the [Am]flame burned out you left a [C]cold dark cloud
 A raining [D7]down a raining down on [G]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ever Changing Woman}
 {meta: artist Randy Travis}
 {meta: composer Curly Putman and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file everchangingwomanlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She can sparkle like the [D7]moonlight on the [G]river
@@ -34,3 +37,7 @@ To hold that [C]ever-changing [D7]woman in my [G]arms
 I've got that [C]ever-changing [D7]woman in my [G]arms
 I love that [C]ever-changing [D7]woman in my [G]arms
 {end_of_verse}
+
+
+
+

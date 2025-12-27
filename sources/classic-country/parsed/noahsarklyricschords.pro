@@ -1,6 +1,9 @@
 {meta: title Noah's Ark}
 {meta: artist Bobby Bare}
 {meta: composer Dorsey Burnette and Barry DeVorzon}
+{meta: x_source classic-country}
+{meta: x_source_file noahsarklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Lord looked down 
@@ -77,3 +80,14 @@ This [F]story my [C]friend
 Don't think for a minute
 [F]This can't [G7]happen [C]again
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

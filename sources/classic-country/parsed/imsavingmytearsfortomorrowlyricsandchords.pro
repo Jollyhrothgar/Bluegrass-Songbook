@@ -1,6 +1,9 @@
 {meta: title I'm Saving My Tears For Tomorrow}
 {meta: artist Faron Young}
 {meta: composer Faron Young and Virginia Midgett}
+{meta: x_source classic-country}
+{meta: x_source_file imsavingmytearsfortomorrowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 For [G7]tomorrow when I'll be [C]alone
@@ -21,3 +24,5 @@ And pretending [G7]tomorrow won't [C]come
 I'm saving [C]my tears for [D7]tomorrow
 And pretending [G7]tomorrow won't [C]come 
 {end_of_verse}
+
+

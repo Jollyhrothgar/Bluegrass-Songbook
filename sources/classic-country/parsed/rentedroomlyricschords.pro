@@ -1,5 +1,8 @@
 {meta: title Rented Room}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file rentedroomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's true he owns a mansion
@@ -38,3 +41,6 @@ In a [D7]rented room with [G]you
 I'd [C]trade it all for [G]one more night
 In a [D7]rented room with [C]you[G]
 {end_of_verse}
+
+
+

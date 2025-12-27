@@ -1,6 +1,9 @@
 {meta: title Free Home Demonstration Lyrics Chords}
 {meta: artist Eddy Arnold}
 {meta: composer Charles Grean and Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file freehomedemonstrationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Now you like me and I [C]like you but there’s just [F]one thing [C]wrong
@@ -46,3 +49,8 @@
 [F]A little bit of kiss and a little bit of tease
 [C]Guaranteed to [G7]make you fall in [C]love
 {end_of_verse}
+
+
+
+
+

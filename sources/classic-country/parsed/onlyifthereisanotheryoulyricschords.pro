@@ -1,6 +1,9 @@
 {meta: title Only If There Is Another You}
 {meta: artist Moe Bandy}
 {meta: composer Dan Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file onlyifthereisanotheryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don’t ask me if I’d [F]ever love [C]another
@@ -33,3 +36,7 @@ And find love in the [D7]arms of someone [G7]new
 {start_of_verse: Verse 4}
 Only if [G7]there is another [F]y-o[C]u
 {end_of_verse}
+
+
+
+

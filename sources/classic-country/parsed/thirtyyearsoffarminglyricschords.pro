@@ -1,6 +1,9 @@
 {meta: title Thirty Years of Farming}
 {meta: artist James King}
 {meta: composer Fred Eaglesmith}
+{meta: x_source classic-country}
+{meta: x_source_file thirtyyearsoffarminglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a little white note on a gate by the road
@@ -119,3 +122,27 @@ And they [C]fell to the cold hard [G]clay
 {start_of_verse: Verse 4}
 Something 'bout a mortgage
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

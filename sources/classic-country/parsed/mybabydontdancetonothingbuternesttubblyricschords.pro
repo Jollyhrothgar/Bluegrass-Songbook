@@ -1,5 +1,8 @@
 {meta: title My Baby Don't Dance To Nothing But Ernest Tubb}
 {meta: artist Junior Brown}
+{meta: x_source classic-country}
+{meta: x_source_file mybabydontdancetonothingbuternesttubblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got a gal that's mighty [A7]peculiar she's [D7]got a funny state of mind 
@@ -30,3 +33,6 @@ With a [G7]gal that don't dance to nothing but Ernest [C]Tubb
 [G7]Cause my baby don't dance to nothing but Ernest [C]Tubb 
 [G7]No my baby don't dance to nothing but Ernest [C]Tubb
 {end_of_verse}
+
+
+

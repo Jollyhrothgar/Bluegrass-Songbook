@@ -1,6 +1,9 @@
 {meta: title Over In The Glory Land}
 {meta: artist The Stanley Brothers}
 {meta: composer James W. Acuff and Emmett S. Dean}
+{meta: x_source classic-country}
+{meta: x_source_file overintheglorylandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've a home prepared where the [C]saints a[G]bide
@@ -46,3 +49,8 @@ Over in the [A7]glory [D7]land [G]just over in the glory land
 There [C]with (yes with) the mighty host I'll [G]stand
 Over in the [D7]glory [G]land
 {end_of_verse}
+
+
+
+
+

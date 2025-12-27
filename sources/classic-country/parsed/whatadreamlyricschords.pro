@@ -1,6 +1,9 @@
 {meta: title What A Dream}
 {meta: artist Conway Twitty}
 {meta: composer Chuck Willis}
+{meta: x_source classic-country}
+{meta: x_source_file whatadreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woke up this morning and I looked around
@@ -27,3 +30,6 @@ Dreamed that I held you in my arms
 [C]Oh what a dream [G7]oh what a dream I [C]had last [F]night
 [C]Oh what a dream [G7]oh what a dream I  [C]had [F]last [C]night
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Born on Christmas Day}
 {meta: artist Brad Paisley}
+{meta: x_source classic-country}
+{meta: x_source_file bornonChristmasdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was a cold and dark De[F]cember night
@@ -59,3 +62,9 @@ That [F]little important [G7]Baby
 That [F]little important [G7]Baby
 [F]Born on [G7]Christmas [C]day[F]  [G7]   [C]
 {end_of_verse}
+
+
+
+
+
+

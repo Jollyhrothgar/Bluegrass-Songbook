@@ -1,6 +1,9 @@
 {meta: title Route 66}
 {meta: artist Asleep at the Wheel}
 {meta: composer Bobby Troup}
+{meta: x_source classic-country}
+{meta: x_source_file route66lightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you ever [C]plan to motor [G]west
@@ -45,3 +48,9 @@ Now go to St. Louie Joplin Missouri
 {start_of_verse: Verse 5}
 [D7]Get your kicks [C]on Route [G]66
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hey What About Me}
 {meta: artist Anne Murray}
 {meta: composer Scott Mackenzie}
+{meta: x_source classic-country}
+{meta: x_source_file heywhataboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey [G7]hey hey [F]hey what about [C]me
@@ -40,3 +43,8 @@ I'd like to [A7]have a [D7]song to [G7]sing [C]to
 {start_of_verse: Verse 4}
 I'd like to [A7]have a [D7]song to [G7]sing [C]to
 {end_of_verse}
+
+
+
+
+

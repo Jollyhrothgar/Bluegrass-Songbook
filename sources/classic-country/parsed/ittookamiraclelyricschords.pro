@@ -1,6 +1,9 @@
 {meta: title It Took A Miracle}
 {meta: artist Eddy Arnold}
 {meta: composer John W. Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file ittookamiraclelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My Father is all [G7]powerful
@@ -31,3 +34,6 @@ But when He [A7]saved my [Dm]soul
 Cleansed and [G7]made  me  [Am][E7]whole
 It took a [Dm]miracle of love and [C][G7]grace
 {end_of_verse}
+
+
+

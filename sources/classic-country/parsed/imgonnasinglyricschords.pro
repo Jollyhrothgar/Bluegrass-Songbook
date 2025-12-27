@@ -1,5 +1,8 @@
 {meta: title I'm Gonna Sing}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnasinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I get to Glory I'm gonna sing sing sing
@@ -42,3 +45,8 @@ Up there no tears will blind my eyes
 [C]I'm gonna praise my blessed Savior's name
 [G7]When I get to Glory I'm gonna sing sing [C]sing
 {end_of_verse}
+
+
+
+
+

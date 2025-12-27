@@ -1,6 +1,9 @@
 {meta: title I'm Never Gonna Let You Go}
 {meta: artist George Strait}
 {meta: composer Clay Blacker}
+{meta: x_source classic-country}
+{meta: x_source_file imnevergonnaletyougolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's turn the [Am]lights down [F]soft and [G7]low [F]
@@ -42,3 +45,8 @@ I'm [F]never gonna [G7]let you [C]go [Dm]
 I'm [F]never gonna [G7]let you [C]go [Dm]
 I'm [F]never gonna [G7]let you [C]go
 {end_of_verse}
+
+
+
+
+

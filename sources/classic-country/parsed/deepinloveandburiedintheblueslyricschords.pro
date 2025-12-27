@@ -1,6 +1,9 @@
 {meta: title Deep In Love And Buried In The Blues}
 {meta: artist Johnny Bush}
 {meta: composer Joe Gracey}
+{meta: x_source classic-country}
+{meta: x_source_file deepinloveandburiedintheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]That first night we met I knew and you [C]probably felt it [G]too 
@@ -33,3 +36,7 @@ And I'm deep in [C]love and [G]buried [D7]in the [G]blues
 {start_of_verse: Verse 5}
 You've got me deep in [C]love and [G]buried [D7]in the [G]blues
 {end_of_verse}
+
+
+
+

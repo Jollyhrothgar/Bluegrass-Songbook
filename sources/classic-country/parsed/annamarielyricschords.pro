@@ -1,6 +1,9 @@
 {meta: title Anna Marie}
 {meta: artist Jim Reeves}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file annamarielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight while the snowflakes are [D7]falling
@@ -22,3 +25,5 @@
 [Am]That I'd never love any other
 [D7]As I love my Anna [G]Marie
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title That's What You Think}
 {meta: artist Carl Smith}
 {meta: composer Roland Johnson and Earl Nunn}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatyouthinklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time I go away my [F]baby feels so [C]blue
@@ -22,3 +25,5 @@
 [C]I hope that someday he'll [F]settle down for [C]life
 [G7]I hope that my pal finds a wonderful [C]wife
 {end_of_verse}
+
+

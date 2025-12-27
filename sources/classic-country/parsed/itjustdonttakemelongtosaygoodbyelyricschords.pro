@@ -1,5 +1,8 @@
 {meta: title It Just Don't Take Me Long To Say Goodbye}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file itjustdonttakemelongtosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I didn't see no sense in me just sittin' here 
@@ -43,3 +46,9 @@ It [G7]just don't take me long to say good[C]bye
 {start_of_verse: Verse 7}
 It [G7]just don't take me long to say good[C]bye
 {end_of_verse}
+
+
+
+
+
+

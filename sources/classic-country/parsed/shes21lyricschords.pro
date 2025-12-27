@@ -1,6 +1,9 @@
 {meta: title She's 21}
 {meta: artist Webb Pierce}
 {meta: composer Max Powell and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file shes21lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There was a wedding and [F]church bells were [C]ringing
@@ -29,3 +32,6 @@ And it hurts me to see him so [G7]blue
 [C]A man needs the [F]love of a [C]woman
 But [F]she’s just 2[C]1 and my [G7]dad he’s fifty [C]two
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That's What Fools Are For}
 {meta: artist Jerry Wallace}
 {meta: composer Joe Coffey and Genetta Brown}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatfoolsareforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 That's What Fools Are For
@@ -39,3 +42,8 @@ Don't [G7]be afraid to hurt me
 Cause that's what fools are [F]for[C]
 Repeat last verse
 {end_of_verse}
+
+
+
+
+

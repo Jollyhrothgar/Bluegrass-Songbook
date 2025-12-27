@@ -1,6 +1,9 @@
 {meta: title Long Long Texas Road}
 {meta: artist Roy Drusky}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file longlongtexasroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been up and I've been [F]down 
@@ -64,3 +67,11 @@ When [F]you're just a child [G7]there ain't no time but [C]now
 Must have [F]left that long old road [C]seven hundred years [Am]ago
 And I'd [F]find it once [G7]again if I knew [C]how
 {end_of_verse}
+
+
+
+
+
+
+
+

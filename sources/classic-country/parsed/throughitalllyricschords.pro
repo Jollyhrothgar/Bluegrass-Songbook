@@ -1,6 +1,9 @@
 {meta: title Through It All}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Andrae Crouch}
+{meta: x_source classic-country}
+{meta: x_source_file throughitalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve had many tears and sorrows
@@ -60,3 +63,13 @@ But in every situation
 [G]God gave blessed consolation
 [Am]He only gave me [D7]trials to make me [G]strong
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

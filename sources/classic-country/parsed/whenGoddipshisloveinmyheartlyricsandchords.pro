@@ -1,6 +1,9 @@
 {meta: title When God Dips His Love In My Heart}
 {meta: artist Webb Pierce}
 {meta: composer Cleavant Derricks}
+{meta: x_source classic-country}
+{meta: x_source_file whenGoddipshisloveinmyheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Uh uh uh [C]uh uh uh when [G]God dips His [D7]love in my [G]heart [D7]in my [G]heart)
@@ -39,3 +42,8 @@ When God dips His [D7]love in my [G]heart
 {start_of_verse: Verse 5}
 (When God dips His [D7]love in my [G]heart)
 {end_of_verse}
+
+
+
+
+

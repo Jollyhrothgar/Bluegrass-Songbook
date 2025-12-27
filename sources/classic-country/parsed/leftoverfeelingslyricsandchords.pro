@@ -1,6 +1,9 @@
 {meta: title Left Over Feelings}
 {meta: artist Jack Greene}
 {meta: composer Brian L. Robinson, Keith Palmer, Tom Pick}
+{meta: x_source classic-country}
+{meta: x_source_file leftoverfeelingslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Slowly very slowly you're fading away
@@ -24,3 +27,5 @@ Cause it's [C]over and it's done our [G]love affair is through
 So if I cry when I see you don't [C]think I'm still your fool
 It's just the [D7]leftover feelings that [C]I have for [G]you
 {end_of_verse}
+
+

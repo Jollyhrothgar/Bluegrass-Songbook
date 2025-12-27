@@ -1,6 +1,9 @@
 {meta: title That's How Much I Love You}
 {meta: artist Eddy Arnold}
 {meta: composer Eddy Arnold, Wally Fowler, Graydon Hall}
+{meta: x_source classic-country}
+{meta: x_source_file thatshowmuchiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if I had a nickel I know what I would do
@@ -36,3 +39,7 @@ We'll go and find the parson and let him tie the knot
 We'll [F]go and find the parson and let him tie the [C]knot
 Cause [G7]that's how much I love you woman that's how much I [C]love you
 {end_of_verse}
+
+
+
+

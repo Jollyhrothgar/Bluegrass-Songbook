@@ -1,6 +1,9 @@
 {meta: title Barefoot Nellie}
 {meta: artist Porter Wagoner}
 {meta: composer Jimmie Davis and Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file barefootnellielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Redheaded peckerwood sittin' on a limb
@@ -66,3 +69,13 @@ Hey (barefoot Nellie) [F]ho (barefoot Nellie)
 Hey (barefoot Nellie) [F]ho (barefoot Nellie)
 [G7]Hey (barefoot Nellie) you're the one for [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

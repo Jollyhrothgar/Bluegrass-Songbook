@@ -1,6 +1,9 @@
 {meta: title Between My House And Town}
 {meta: artist George Jones}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file betweenmyhouseandtownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You finally got the [E7]nerve to [A7]tell me
@@ -33,3 +36,7 @@ That the [C]sun will go down [D7]between my house and [G]town
 {start_of_verse: Verse 4}
 Yeah the [C]sun will go down [D7]between my house and [G]town
 {end_of_verse}
+
+
+
+

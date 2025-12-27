@@ -1,6 +1,9 @@
 {meta: title How Long Does It Hurt}
 {meta: artist Jean Shepard}
 {meta: composer Virginia Midgett and D.W. Orinich}
+{meta: x_source classic-country}
+{meta: x_source_file howlongdoesithurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How [C]long does it hurt [D7]when a heart [G]breaks
@@ -29,3 +32,6 @@
 [C]How long does it hurt [D7]when a heart [G]breaks
 [C]As long as I [D7]keep loving [G]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tell Me Something I Don't Know}
 {meta: artist George Jones}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file tellmesomethingidontknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Tell me something I don't [C]know
@@ -30,3 +33,7 @@ Tell me something I don't [C]know
 {start_of_verse: Verse 4}
 [G7]Tell me something I don't [C]know
 {end_of_verse}
+
+
+
+

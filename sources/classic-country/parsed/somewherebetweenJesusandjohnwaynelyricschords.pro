@@ -1,6 +1,9 @@
 {meta: title Somewhere Between Jesus And John Wayne}
 {meta: artist The Gaithers}
 {meta: composer Benjamin Gaither, Bill Gaither}
+{meta: x_source classic-country}
+{meta: x_source_file somewherebetweenJesusandjohnwaynelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Daddy was a cowboy [F]hard as a [C]rock
@@ -43,3 +46,7 @@ I’m [C]somewhere between [G7]Jesus and John [C]Wayne
 But most days I know I [F]ain’t
 I’m [C]somewhere between [G7]Jesus and John [C]Wayne
 {end_of_verse}
+
+
+
+

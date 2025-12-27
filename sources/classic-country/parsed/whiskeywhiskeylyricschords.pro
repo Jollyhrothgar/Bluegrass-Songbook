@@ -1,6 +1,9 @@
 {meta: title Whiskey Whiskey}
 {meta: artist Kris Kristofferson}
 {meta: composer Tom Ghent}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeywhiskeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's a little bit of the sunshine [F]just before it rains
@@ -36,3 +39,7 @@ So whiskey whiskey my [G7]old friend
 Milk of mercy [G7]please be kind
 [F]Drive this feeling from my [C]mind
 {end_of_verse}
+
+
+
+

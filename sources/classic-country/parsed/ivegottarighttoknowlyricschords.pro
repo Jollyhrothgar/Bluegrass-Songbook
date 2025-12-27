@@ -1,5 +1,8 @@
 {meta: title I've Gotta Right To Know}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottarighttoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've tried so hard [F]for so long to be [G7]part of your [C]plan
@@ -28,3 +31,6 @@
 [C]If fate has changed the [F]plans we've made [G7]the happiness I [C]know
 [F]Oh darling if I'm [G7]losing you I've got a right to [C]know
 {end_of_verse}
+
+
+

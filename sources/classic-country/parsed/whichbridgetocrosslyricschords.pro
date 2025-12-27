@@ -1,6 +1,9 @@
 {meta: title Which Bridge To Cross}
 {meta: artist Vince Gill}
 {meta: composer Al Anderson and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file whichbridgetocrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got two [C]loves in my [G]life now
@@ -33,3 +36,7 @@ I'm [G]standing at the [B7]crossroads with [C]just one [A7]concern
 {start_of_verse: Verse 4}
 Oh [C]which bridge to [G]cross and [D7]which bridge to [G]burn
 {end_of_verse}
+
+
+
+

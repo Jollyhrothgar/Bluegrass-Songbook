@@ -1,5 +1,8 @@
 {meta: title He Calms Me}
 {meta: artist the McKameys}
+{meta: x_source classic-country}
+{meta: x_source_file hecalmsmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Troubled waters came my way the [C]angry [G]storm grew near
@@ -35,3 +38,7 @@ Sometimes He calms the storm [C]sometimes [D7]He calms [G]me
 It's such a joy to know that my Lord [C]knows just what I [G]need
 Sometimes He calms the storm [C]sometimes [D7]He calms [G]me
 {end_of_verse}
+
+
+
+

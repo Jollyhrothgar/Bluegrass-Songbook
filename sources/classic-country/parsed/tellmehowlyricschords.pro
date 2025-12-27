@@ -1,6 +1,9 @@
 {meta: title Tell Me How}
 {meta: artist Buddy Holly}
 {meta: composer Jerry Allison, Norman Petty, Buddy Charles Holly}
+{meta: x_source classic-country}
+{meta: x_source_file tellmehowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tell me how to keep your [D7]love
@@ -43,3 +46,8 @@ Then [C]I say tell me [D7]how
 [G]Tell me how you [C]keep the [D7]love
 Within [G]your [D7]heart from [G]me
 {end_of_verse}
+
+
+
+
+

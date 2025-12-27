@@ -1,6 +1,9 @@
 {meta: title My Secret Flame}
 {meta: artist The Mavericks}
 {meta: composer Rafe VanHoy}
+{meta: x_source classic-country}
+{meta: x_source_file mysecretflamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You'll never [C]know  I'll never [G]tell[Em]
@@ -36,3 +39,8 @@ So I sleep [C]alone but not in [Em]vain
 And each night I [C]hold  [D7]my secret [G]flame
 You will always [Am]be  [D7]my secret [G]flame
 {end_of_verse}
+
+
+
+
+

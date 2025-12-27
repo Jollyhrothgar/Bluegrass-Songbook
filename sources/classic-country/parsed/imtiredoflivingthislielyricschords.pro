@@ -1,6 +1,9 @@
 {meta: title I'm Tired Of Living This Lie}
 {meta: artist Bob Wills}
 {meta: composer Laura Lee McBride}
+{meta: x_source classic-country}
+{meta: x_source_file imtiredoflivingthislielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want my heart to be free I don’t [G7]want to foresee 
@@ -36,3 +39,7 @@ You [A7]don’t need it no [D7]more
 If you’ll tell me we’re through I’ll find [G7]somebody new
 Then [D7]I won’t be [G7]living a [C]lie
 {end_of_verse}
+
+
+
+

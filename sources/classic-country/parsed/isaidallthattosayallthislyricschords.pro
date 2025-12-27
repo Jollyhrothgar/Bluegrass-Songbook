@@ -1,5 +1,8 @@
 {meta: title I Said All That To Say All This}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file isaidallthattosayallthislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night when I said it was getting colder
@@ -59,3 +62,13 @@ But it's hard to speak my heart so
 Well I wanted my arm around your shoulder
 [G7]That's what I really meant
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

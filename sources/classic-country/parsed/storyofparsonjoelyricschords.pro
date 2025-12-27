@@ -1,5 +1,8 @@
 {meta: title Story Of Parson Joe}
 {meta: artist Tex Morton}
+{meta: x_source classic-country}
+{meta: x_source_file storyofparsonjoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The barroom light shone down one night [F]upon a young lad [C]there
@@ -35,3 +38,7 @@ And pity filled the hearts of all to [D7]see a strong man [G7]cry
 [C]'Er mother died the boy replied she [F]said she [D7]had for[E7]given
 And [F]she'll be glad I [C]found you [A7]dad and [D7]we'll meet her [G7]up in [C]Heaven
 {end_of_verse}
+
+
+
+

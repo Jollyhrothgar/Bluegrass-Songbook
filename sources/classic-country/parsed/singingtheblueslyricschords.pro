@@ -1,6 +1,9 @@
 {meta: title Singing the Blues}
 {meta: artist Marty Robbins}
 {meta: composer Melvin Endsley}
+{meta: x_source classic-country}
+{meta: x_source_file singingtheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I never felt more like [F]singin' the blues
@@ -30,3 +33,5 @@ Well  [C]I never felt more like [F]runnin' away
 But [C]how can I go when [G7]I couldn't stay
 [C]Without [F]you   [G7]you got me singin' [C]the blues
 {end_of_verse}
+
+

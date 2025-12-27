@@ -1,5 +1,8 @@
 {meta: title She Stood By Me}
 {meta: artist Mel Street}
+{meta: x_source classic-country}
+{meta: x_source_file shestoodbymelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today our future was decided 
@@ -36,3 +39,7 @@ She stood by [C]me till she just [F]couldn't [G7]stand no [C]more
 {start_of_verse: Verse 4}
 [F]She stood by [C]me till she just [F]couldn't [G7]stand no [C]more
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Whiskey Bent And Hell Bound}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeybentandhellboundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a good woman at home who [F]thinks I do no [C]wrong
@@ -33,3 +36,7 @@ I'll get whiskey [G7]bent and hell [C]bound
 {start_of_verse: Verse 5}
 Yeah old Hank's songs always [G7]make me feel low [C]down
 {end_of_verse}
+
+
+
+

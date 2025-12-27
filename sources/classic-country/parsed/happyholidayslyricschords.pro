@@ -1,6 +1,9 @@
 {meta: title Happy Holidays}
 {meta: artist Alabama}
 {meta: composer Ronnie Rogers and Swain Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file happyholidayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Smiling faces on city streets
@@ -50,3 +53,9 @@ The [C]scene is set it's beautiful
 [C]From all of us we'd like to say 
 [G]Have your[Em]self some [Am]happy [D7]holi[G]days
 {end_of_verse}
+
+
+
+
+
+

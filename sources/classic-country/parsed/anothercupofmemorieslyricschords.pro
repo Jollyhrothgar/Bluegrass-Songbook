@@ -1,6 +1,9 @@
 {meta: title Another Cup Of Memories}
 {meta: artist Billy Crash Craddock}
 {meta: composer Dale Morris}
+{meta: x_source classic-country}
+{meta: x_source_file anothercupofmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Put one out light one up pour [C]myself another [G]cup
@@ -33,3 +36,7 @@ Another cup of [D7]your memo[G]ry
 {start_of_verse: Verse 4}
 Another cup of [D7]your memo[C]ry[G]
 {end_of_verse}
+
+
+
+

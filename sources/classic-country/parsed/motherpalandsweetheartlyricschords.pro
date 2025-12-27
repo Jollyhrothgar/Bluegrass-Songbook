@@ -1,6 +1,9 @@
 {meta: title Mother Pal And Sweetheart}
 {meta: artist The Trailblazers}
 {meta: composer Red Lowery}
+{meta: x_source classic-country}
+{meta: x_source_file motherpalandsweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mother [G7]pal and [C]sweetheart 
@@ -43,3 +46,8 @@ You’re [D7]all three when I am [G7]blue
 [F]Mother when I am in [C]trouble
 It’s [D7]mother [G7]until the [C]end
 {end_of_verse}
+
+
+
+
+

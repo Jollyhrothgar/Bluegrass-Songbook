@@ -1,6 +1,9 @@
 {meta: title Red Red Wine}
 {meta: artist Johnny Duncan}
 {meta: composer Neil Diamond}
+{meta: x_source classic-country}
+{meta: x_source_file redredwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Red red [C]wine [F]  [Dm]  go to my [C]head
@@ -39,3 +42,8 @@ Don't let me [C]be alone [F]  it's tearin' [C]apart
 {start_of_verse: Verse 6}
 [G7]Red red [C]wine
 {end_of_verse}
+
+
+
+
+

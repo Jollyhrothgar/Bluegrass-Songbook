@@ -1,5 +1,8 @@
 {meta: title Stateside}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file statesidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the Japanese moon is bright tonight and Tokyo is full of life
@@ -25,3 +28,6 @@ I've heard say a man don't cry but I can't keep my blue eyes dry
 [D7]I wanna go stateside [C]oh Lord  I wanna go [G]stateside
 [C]Oh Lord  I wanna go [G]stateside
 {end_of_verse}
+
+
+

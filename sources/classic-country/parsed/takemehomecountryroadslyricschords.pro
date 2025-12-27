@@ -1,5 +1,8 @@
 {meta: title Take Me Home Country Roads}
 {meta: artist John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file takemehomecountryroadslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Almost heaven  West [Em]Virginia
@@ -47,3 +50,9 @@ Country Roads  take me [D7]home
 [C]Take me home  country [G]roads
 [C]Take me home  country [G]roads
 {end_of_verse}
+
+
+
+
+
+

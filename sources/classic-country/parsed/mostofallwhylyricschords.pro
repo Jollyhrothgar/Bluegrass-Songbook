@@ -1,5 +1,8 @@
 {meta: title Most Of All Why}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file mostofallwhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We once were so close now the love light that [F]glows
@@ -32,3 +35,7 @@ How did we [F]get here [G7]where did it [C7][C]st-art
 {start_of_verse: Verse 4}
 When where and how but [G7]most of all [C][F]w-h-y
 {end_of_verse}
+
+
+
+

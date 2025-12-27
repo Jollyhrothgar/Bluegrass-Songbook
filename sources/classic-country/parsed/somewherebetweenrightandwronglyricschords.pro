@@ -1,5 +1,8 @@
 {meta: title Somewhere Between Right And Wrong}
 {meta: artist Earl Thomas Conley}
+{meta: x_source classic-country}
+{meta: x_source_file somewherebetweenrightandwronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I met her in a small town bar not far from [C]home
@@ -42,3 +45,8 @@ And I can be [D7]bad lord if I don't get [G]caught
 But I'd rather be lov[G7]ed than left [C]alone
 Than be [G]here in the middle some[D7]where between right and [G]wrong[D7]
 {end_of_verse}
+
+
+
+
+

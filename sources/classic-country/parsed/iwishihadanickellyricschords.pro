@@ -1,6 +1,9 @@
 {meta: title I Wish I Had a Nickel}
 {meta: artist Hank Williams}
 {meta: composer W.S. Barnhart and Tommy Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file iwishihadanickellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They tell me little darling
@@ -40,3 +43,9 @@ I'll [C]just set back and [G]watch you while you shed [D7]those bitter [G]tears
 {start_of_verse: Verse 7}
 Repeat chorus
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Four To One In Atlanta}
 {meta: artist Tracy Byrd}
 {meta: composer Bill Kenner and Russell Brown}
+{meta: x_source classic-country}
+{meta: x_source_file fourtooneinatlantalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh wild Billy [G]told me even [C]I would have to [G]chance
@@ -49,3 +52,9 @@ It's four to [C]one in [G]Atlanta and I'm [C]on my [D7]way to[G]night
 {start_of_verse: Verse 5}
 I'm [C]on my [D7]way to[G]night
 {end_of_verse}
+
+
+
+
+
+

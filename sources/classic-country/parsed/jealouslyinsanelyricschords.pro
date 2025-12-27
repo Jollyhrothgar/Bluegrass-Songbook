@@ -1,5 +1,8 @@
 {meta: title Jealously Insane}
 {meta: artist Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file jealouslyinsanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no end to the [F]love I have for [C]you
@@ -23,3 +26,5 @@ In my thoughts instead of [G7]you
 While [C]green eyed passion [F]sets your heart [C]aflame
 Why must you be so [G7]jealously [C]insane
 {end_of_verse}
+
+

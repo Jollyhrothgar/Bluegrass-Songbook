@@ -1,6 +1,9 @@
 {meta: title True Love Is A Golden Ring}
 {meta: artist Alan Jackson}
 {meta: composer Roger Murrah and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file trueloveisagoldenringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]True love [F]is a golden [C]ring
@@ -43,3 +46,8 @@ True [C]love [G7]is a golden [C]ring
 {start_of_verse: Verse 4}
 [F]Oh true [C]love [G7]is a golden [F]rin[C]g
 {end_of_verse}
+
+
+
+
+

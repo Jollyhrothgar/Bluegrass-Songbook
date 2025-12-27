@@ -1,5 +1,8 @@
 {meta: title True Life Blues}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file truelifeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hate to see that sun sink [F]low
@@ -28,3 +31,6 @@ They'll never [C]care if you're [G7]alone
 They seem to [C]forget they've got a [F]wife
 This story is [C]sad but [G7]it's a true [C]life
 {end_of_verse}
+
+
+

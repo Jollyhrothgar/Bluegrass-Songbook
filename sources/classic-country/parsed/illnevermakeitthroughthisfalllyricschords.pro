@@ -1,6 +1,9 @@
 {meta: title I'll Never Make It Through This Fall}
 {meta: artist David Ball}
 {meta: composer William Collins Spencer and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file illnevermakeitthroughthisfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cold wind a blowing across the river
@@ -47,3 +50,8 @@ Nothing left to keep me [C]going
 [F]I've made it through a lot of [C]winters
 [F]I'll never [G7]make it through this [C]fall
 {end_of_verse}
+
+
+
+
+

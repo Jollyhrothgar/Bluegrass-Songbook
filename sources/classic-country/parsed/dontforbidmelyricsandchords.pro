@@ -1,6 +1,9 @@
 {meta: title Don't Forbid Me}
 {meta: artist Ernest Tubb}
 {meta: composer Charles Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file dontforbidmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now don't forbid me to hold you tight
@@ -43,3 +46,8 @@ Now don't forbid me to kiss your lips
 [C]Let me hold you in my loving [F]arms
 [C]Cause it's cold and I [G7]can keep you [C]warm
 {end_of_verse}
+
+
+
+
+

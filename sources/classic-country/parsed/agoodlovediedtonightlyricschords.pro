@@ -1,6 +1,9 @@
 {meta: title A Good Love Died Tonight}
 {meta: artist Conway Twitty}
 {meta: composer Roger Marrah}
+{meta: x_source classic-country}
+{meta: x_source_file agoodlovediedtonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To him it may be over but for [F]her it'll be one day at a [C]time
@@ -31,3 +34,6 @@ That [F]fire of love they kindled [D7]has all gone up in smoke
 What a [C]shame what a sight [G7]a good love died [F]tonig[C]ht
 What a shame what a sight [G7]a good love died [F]tonig[C]ht
 {end_of_verse}
+
+
+

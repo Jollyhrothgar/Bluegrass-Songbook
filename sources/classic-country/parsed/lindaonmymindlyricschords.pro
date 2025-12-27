@@ -1,5 +1,8 @@
 {meta: title Linda On My Mind}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file lindaonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I'm lying here with Linda on my mind 
@@ -28,3 +31,7 @@ And [C]I've tried hard to never let it [G]show
 But my [C]love for you is stronger  I can't hide [G]it any [C]longer
 And [G]so  I thought  I'd [D7]better let you [G][C]k-now 
 {end_of_verse}
+
+
+
+

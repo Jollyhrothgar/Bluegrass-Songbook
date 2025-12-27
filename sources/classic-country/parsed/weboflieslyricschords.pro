@@ -1,6 +1,9 @@
 {meta: title Web Of Lies}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file weboflieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Web of lies [C]web of [Am]lies 
@@ -40,3 +43,8 @@ I’m [D7]caught in your web of [G]lies
 {start_of_verse: Verse 4}
 I’m [D7]caught in your web of [G]lies
 {end_of_verse}
+
+
+
+
+

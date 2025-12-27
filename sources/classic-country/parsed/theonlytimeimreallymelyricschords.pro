@@ -1,5 +1,8 @@
 {meta: title The Only Time I'm Really Me}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file theonlytimeimreallymelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]To my husband I'm an ordinary wife
@@ -36,3 +39,7 @@ And [C]when I lie down and close my eyes and [G]sleep
 This must be the only [D7]time I'm really [G]me
 [C]This must [G]be the only [D7]time I'm really [G]me
 {end_of_verse}
+
+
+
+

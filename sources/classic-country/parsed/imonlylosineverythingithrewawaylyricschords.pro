@@ -1,6 +1,9 @@
 {meta: title I'm Only Losin' Everything I Threw Away}
 {meta: artist Charlie Pride}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file imonlylosineverythingithrewawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mornin' lonely mornin'
@@ -47,3 +50,9 @@ I'm only losin' [G7]everything I threw [C]away
 {start_of_verse: Verse 6}
 I'm only losin' [G7]everything I threw [C]away
 {end_of_verse}
+
+
+
+
+
+

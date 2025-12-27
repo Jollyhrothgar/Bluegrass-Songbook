@@ -1,6 +1,9 @@
 {meta: title Tennessee Woman}
 {meta: artist Tanya Tucker}
 {meta: composer Jim Webb}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseewomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lay me down on a porch at midnight
@@ -36,3 +39,7 @@ I [Dm]know I don't [G7]belong in that [C]city world [G7]
 [C]Old Smoky Mountains do [F]you remember me
 [Dm]I'm from Tenne[G7]ssee I'm just a local [C]girl
 {end_of_verse}
+
+
+
+

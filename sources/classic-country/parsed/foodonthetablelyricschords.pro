@@ -1,6 +1,9 @@
 {meta: title Food On The Table}
 {meta: artist Alabama}
 {meta: composer Randy Owen}
+{meta: x_source classic-country}
+{meta: x_source_file foodonthetablelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My dad was a big man with a [F]will that was tough
@@ -50,3 +53,9 @@ Cause we had [F]plenty to eat and [C]plenty to [G7]wear
 We had [C]patches on our britches but [F]momma kept us neat
 We had [C]food on the table and [G7]shoes on our [C]feet
 {end_of_verse}
+
+
+
+
+
+

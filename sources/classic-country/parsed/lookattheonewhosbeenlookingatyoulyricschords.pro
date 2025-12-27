@@ -1,6 +1,9 @@
 {meta: title Look At The One (Who's Been Looking At You)}
 {meta: artist Reba McEntire}
 {meta: composer Bob Morrison, Johnny McRae, Wanda Mallette}
+{meta: x_source classic-country}
+{meta: x_source_file lookattheonewhosbeenlookingatyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Look At The One (Who's Been Looking At You)
@@ -45,3 +48,8 @@ With [C]20-20 vision [F]how is your heart so blind
 With [C]20-20 vision [F]how is your heart so blind
 [Dm]It's all you wanted love to be is [G7]close enough for you to see
 {end_of_verse}
+
+
+
+
+

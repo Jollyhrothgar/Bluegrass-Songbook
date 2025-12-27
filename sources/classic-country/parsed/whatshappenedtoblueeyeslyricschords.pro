@@ -1,6 +1,9 @@
 {meta: title What's Happened To Blue Eyes}
 {meta: artist Waylon Jennings}
 {meta: composer Jessi Colter}
+{meta: x_source classic-country}
+{meta: x_source_file whatshappenedtoblueeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What's happened to [F]blue [C]eyes has anybody [G]seen her
@@ -33,3 +36,7 @@ Can anyone [D7]tell me is she still lookin' for [G]me
 {start_of_verse: Verse 4}
 Lookin' for [F]blue [C]eyes 
 {end_of_verse}
+
+
+
+

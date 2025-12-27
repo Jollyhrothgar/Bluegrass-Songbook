@@ -1,6 +1,9 @@
 {meta: title Night Games}
 {meta: artist Charlie Pride}
 {meta: composer Alan R. Mevis, Norris Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file nightgameslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When that [F]neon sun comes up in the [C]evening
@@ -36,3 +39,7 @@ Love at first [C]sight games (first sight games)
 [F]The only way to fight the pain
 [G7]Under the neon lights
 {end_of_verse}
+
+
+
+

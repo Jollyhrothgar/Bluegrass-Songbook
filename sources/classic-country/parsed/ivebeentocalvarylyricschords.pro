@@ -1,6 +1,9 @@
 {meta: title I've Been To Calvary}
 {meta: artist The Booth Brothers}
 {meta: composer William J. Gaither}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeentocalvarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've never [G]traveled [D7]far around the [G]world
@@ -34,3 +37,7 @@ Each day at [C]Calvary what a thrill [D7]of love [G]divine
 Just to think [C]just to [G]feel
 [C]Just to [G]know that the [D7]Savior is [C]mine[G]
 {end_of_verse}
+
+
+
+

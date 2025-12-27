@@ -1,5 +1,8 @@
 {meta: title Young Lillie's Dreams}
 {meta: artist Terry Baucom}
+{meta: x_source classic-country}
+{meta: x_source_file younglilliesdreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Friends all gathered at the wedding
@@ -47,3 +50,9 @@ Then [F]ruined [C]all of Lillie’s [G]dreams
 He [C]placed the ring upon her [G]finge[Em]r
 Then [F]ruined [C]all of Lillie’s [G]dreams
 {end_of_verse}
+
+
+
+
+
+

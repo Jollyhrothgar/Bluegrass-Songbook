@@ -1,6 +1,9 @@
 {meta: title Baby Put Your Clothes On}
 {meta: artist Tracy Byrd}
 {meta: composer Bill Anderson, Paul Overstreet, Buddy Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file babyputyourclothesonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby put your clothes on put on those brand new shoes
@@ -47,3 +50,9 @@ I love to show you [F]off  [G7]baby put your clothes [C]on
 {start_of_verse: Verse 7}
 I love to show you [F]off  [G7]baby put your clothes [C]on
 {end_of_verse}
+
+
+
+
+
+

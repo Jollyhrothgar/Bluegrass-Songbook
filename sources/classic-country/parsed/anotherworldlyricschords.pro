@@ -1,6 +1,9 @@
 {meta: title Another World}
 {meta: artist Crystal Gayle}
 {meta: composer John Leffler and Ralph Schuckett}
+{meta: x_source classic-country}
+{meta: x_source_file anotherworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've always seen myself as a reckless gambler[F]  [G7]
@@ -52,3 +55,7 @@ A hope that's [C]real (a hope that's [F]real)
 Cause when I'm with [Dm]you 
 You [Em]take me [G7]away to another [C]world 
 {end_of_verse}
+
+
+
+

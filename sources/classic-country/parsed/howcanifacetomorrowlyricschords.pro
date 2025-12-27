@@ -1,6 +1,9 @@
 {meta: title How Can I Face Tomorrow}
 {meta: artist Patsy Cline}
 {meta: composer C.L. Jiles, W.S. Stevenson, C.C. Beam}
+{meta: x_source classic-country}
+{meta: x_source_file howcanifacetomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight alone I'm thinking of the things we use to [F]do
@@ -22,3 +25,5 @@ It's your wedding day but I can't claim your [G7]heart
 Now [C]someone else will hold you just the way I use to [F]do
 [G7]How can I face tomorrow when I know I'm losing [C]you
 {end_of_verse}
+
+

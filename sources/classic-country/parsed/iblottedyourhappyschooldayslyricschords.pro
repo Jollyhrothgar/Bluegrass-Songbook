@@ -1,5 +1,8 @@
 {meta: title I Blotted Your Happy School Days}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file iblottedyourhappyschooldayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I entered that school room that morning in May
@@ -49,3 +52,9 @@ I'm sorry I caused you this [G7]pain
 I'll ask God to forgive me and to guide [C]me always
 For I [G7]blotted your happy school [C]days
 {end_of_verse}
+
+
+
+
+
+

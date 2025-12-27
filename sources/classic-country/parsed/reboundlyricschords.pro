@@ -1,6 +1,9 @@
 {meta: title Rebound}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Jim Leisy and Ray Male}
+{meta: x_source classic-country}
+{meta: x_source_file reboundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I fell in love with a pretty little gal I had it bad but [F]good
@@ -52,3 +55,8 @@ Lookin' all around for someone [G7]new
 And I [G7]gotta get another gotta get another 
 Gotta get another and I don't care [C]who
 {end_of_verse}
+
+
+
+
+

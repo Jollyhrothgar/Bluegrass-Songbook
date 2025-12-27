@@ -1,6 +1,9 @@
 {meta: title Happy Christmas Day}
 {meta: artist Charley Pride}
 {meta: composer Sue Lane and Charley Pride}
+{meta: x_source classic-country}
+{meta: x_source_file happyChristmasdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Snowflakes fallin' softly quietly to the ground
@@ -22,3 +25,5 @@ But [C]that's not all it [G]takes to make a [D7]happy Christmas [G]Day
 The [C]warm remembrance of our loved ones [G]that have gone away
 These [C]are the things it [G]takes to make a [D7]happy Christmas [G]Day
 {end_of_verse}
+
+

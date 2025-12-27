@@ -1,6 +1,9 @@
 {meta: title One Word Song}
 {meta: artist Randy Travis}
 {meta: composer Max T. Barnes and John Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file onewordsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I'm feelin' [D7]lonely and I'm [Em]far [D7]away from [C]home
@@ -35,3 +38,9 @@ When I [G]sing out your [D7]name like a [C]one word [G]song[D7]
 {start_of_verse: Verse 7}
 Yeah I [G]sing out your [D7]name like a [C]one word [G]song
 {end_of_verse}
+
+
+
+
+
+

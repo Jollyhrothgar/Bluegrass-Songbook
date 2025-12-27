@@ -1,6 +1,9 @@
 {meta: title The Closer You Get}
 {meta: artist Alabama}
 {meta: composer Mark Eugene Gray and James P. Pennnington}
+{meta: x_source classic-country}
+{meta: x_source_file thecloseryougetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]The closer you [G]get the further I [C]fall 
@@ -43,3 +46,8 @@ I'll be [Am]over the edge [D7]now in no time at [G]all [D7]
 I'm fallin' [G]faster and faster and faster with no time to [C]stall 
 The closer you [Am]get  the [D7]further I [G]fall 
 {end_of_verse}
+
+
+
+
+

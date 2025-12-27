@@ -1,5 +1,8 @@
 {meta: title Love Can't Wait}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file lovecantwaitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love can't [Em]wait  [C]so don't hesi[D7]tate    
@@ -21,3 +24,5 @@ It [Em]can't be measured [Am]not true loves [D7]worth
 But [G]love is [Em]free [C]for you and for [Cm]me
 Let's take [G]love [D7]love [G]love
 {end_of_verse}
+
+

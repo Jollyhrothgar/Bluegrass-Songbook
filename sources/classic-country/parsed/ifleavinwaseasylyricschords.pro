@@ -1,6 +1,9 @@
 {meta: title If Leavin' Was Easy}
 {meta: artist Earl Thomas Conley}
 {meta: composer Earl Thomas Conley and Randy Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file ifleavinwaseasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Between [Em]morning and evening [G]working and sleeping
@@ -47,3 +50,8 @@ And if [Em]I'da been easy I [D7]wouldn't be gone
 I'd [C]be better off to [G]be on my own
 Than [Am]living for someone who [D7]only lives for them[G]selves
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title That's The Way It's Gotta Be}
 {meta: artist Faron Young}
 {meta: composer Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file thatsthewayitsgottabelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Are there any memories you're keeping in your heart
@@ -36,3 +39,8 @@ And that's the [G]way  [D7]it's gotta [G]be
 {start_of_verse: Verse 4}
 [C]And that's the [G]way  [D7]it's gotta [G]be
 {end_of_verse}
+
+
+
+
+

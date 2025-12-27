@@ -1,6 +1,9 @@
 {meta: title King Of Fools}
 {meta: artist Dwight Yoakam}
 {meta: composer Dwight Yoakam and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file kingoffoolslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As you [G7]look into my eyes and tell those empty lies
@@ -30,3 +33,6 @@ But I'll [G7]be there all alone like a king upon a throne
 Cause I'm the king of [C]fools 
 [G7]Yes I'm the king of [C]fools
 {end_of_verse}
+
+
+

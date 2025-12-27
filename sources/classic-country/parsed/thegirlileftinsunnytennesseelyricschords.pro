@@ -1,5 +1,8 @@
 {meta: title The Girl I Left In Sunny Tennessee}
 {meta: artist Bill Clifton}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlileftinsunnytennesseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On one morning bright and clear 
@@ -44,3 +47,8 @@ Far across the fields of [Em]cotton my old [A7]homestead I could [D7]see
 As the [G]moon rose in its glory then I [C]told my saddest [G]story
 Of that [D7]girl I left in sunny Tenne[G]ssee
 {end_of_verse}
+
+
+
+
+

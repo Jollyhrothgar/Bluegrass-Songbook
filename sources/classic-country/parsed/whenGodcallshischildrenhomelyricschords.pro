@@ -1,5 +1,8 @@
 {meta: title When God Calls His Children Home}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file whenGodcallshischildrenhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When God calls His [D7]children [G]home
@@ -32,3 +35,6 @@ Our Father up [C]above
 Will [G]bless you with his [E7]love
 When [C]God calls His [D7]children [G]home
 {end_of_verse}
+
+
+

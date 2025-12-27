@@ -1,6 +1,9 @@
 {meta: title You're Only In My Arms (To Cry On My Shoulder)}
 {meta: artist Willie Nelson}
 {meta: composer Ed G. Nelson, Steve Nelson, Milton Leeds}
+{meta: x_source classic-country}
+{meta: x_source_file youreonlyinmyarmstocryonmyshoulderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're only in my arms to cry on my [D7]shoulder
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [F]And you're crying [G7]your way into my [C]heart
 {end_of_verse}
+
+
+
+

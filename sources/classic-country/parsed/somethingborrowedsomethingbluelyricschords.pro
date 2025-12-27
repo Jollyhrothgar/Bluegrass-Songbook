@@ -1,6 +1,9 @@
 {meta: title Something Borrowed Something Blue}
 {meta: artist John Anderson}
 {meta: composer Norro Wilson and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file somethingborrowedsomethingbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh something borrowed something [F]blue
@@ -32,3 +35,6 @@ Oh there's nothing any sadder
 Than to know I can't have [F]you
 Our love is [G7]something borrowed something [C]blue
 {end_of_verse}
+
+
+

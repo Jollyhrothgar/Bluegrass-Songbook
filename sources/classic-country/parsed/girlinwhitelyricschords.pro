@@ -1,6 +1,9 @@
 {meta: title Girl In White Lives}
 {meta: artist Wynn Stewart}
 {meta: composer Bobby Austin and Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file girlinwhitelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The church bells are ringing the choir is [F]singing
@@ -22,3 +25,5 @@
 [C]When she walks through the door my heart will break even [F]more
 [C]Cause I still love the [G7]girl in [C]white
 {end_of_verse}
+
+

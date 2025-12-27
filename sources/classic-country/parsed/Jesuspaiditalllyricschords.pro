@@ -1,6 +1,9 @@
 {meta: title Jesus Paid It All}
 {meta: artist Joey and Rory}
 {meta: composer Elvina Hall and John Grape}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuspaiditalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear the Savior [Am]say
@@ -45,3 +48,8 @@ He [C]washed it [G7]white as [F]snow
 [C]Sin had left a [F]crimson stain
 He [G7]washed me white as [F]snow[G7]   [C]
 {end_of_verse}
+
+
+
+
+

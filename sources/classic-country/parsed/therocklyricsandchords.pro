@@ -1,6 +1,9 @@
 {meta: title The Rock}
 {meta: artist Doug Stone}
 {meta: composer Chet Hinesley and Doug Stone}
+{meta: x_source classic-country}
+{meta: x_source_file therocklyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]She used to [C]stand at the [Em]jukebox 
@@ -35,3 +38,7 @@ I'm the [C]rock [G7]she broke her [F]heart on[C]
 [Em]She turned to me and [F]I turned to stone 
 I'm the [C]rock [G7]she broke her [F]heart on[C]
 {end_of_verse}
+
+
+
+

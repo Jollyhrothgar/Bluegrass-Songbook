@@ -1,5 +1,8 @@
 {meta: title I'll Forgive And Forget}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file illforgiveandforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh it seems to me there’s no use in [C]living
@@ -28,3 +31,6 @@
 [G]For I know that you never meant to hurt [C]me
 [G]So I’ll forgive [D7]and forget by and [G]by
 {end_of_verse}
+
+
+

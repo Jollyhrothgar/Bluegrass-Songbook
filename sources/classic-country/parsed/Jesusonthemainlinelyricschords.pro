@@ -1,6 +1,9 @@
 {meta: title Jesus On The Mainline}
 {meta: artist Randy Travis}
 {meta: composer Alan Silvestri}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusonthemainlinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus on the mainline tell Him what you want
@@ -54,3 +57,10 @@ Jesus on the mainline tell Him what you want
 {start_of_verse: Verse 5}
 [F]You can call Him up and [G7]tell Him what you [C]want
 {end_of_verse}
+
+
+
+
+
+
+

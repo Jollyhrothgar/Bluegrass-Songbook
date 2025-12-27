@@ -1,6 +1,9 @@
 {meta: title This Season Will Never Grow Old}
 {meta: artist Anne Murray}
 {meta: composer Rita MacNeil}
+{meta: x_source classic-country}
+{meta: x_source_file thisseasonwillnevergrowoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Christmas is coming I can tell [C]by the [G]smiles
@@ -43,3 +46,8 @@
 [C]Christmas is coming may [G]joy fill your [Am]home
 [G]And the spirit be with [D7]you wherever you [G]go
 {end_of_verse}
+
+
+
+
+

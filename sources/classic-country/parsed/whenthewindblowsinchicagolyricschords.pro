@@ -1,6 +1,9 @@
 {meta: title When The Wind Blows In Chicago}
 {meta: artist Eddy Arnold}
 {meta: composer Scott Turner and Audie Murphy}
+{meta: x_source classic-country}
+{meta: x_source_file whenthewindblowsinchicagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well here here I [D7]am in Chi[G]cago 
@@ -27,3 +30,6 @@ Cause the [G]wind just [D7]whispers your [G]name
 Yes [C]the wind always [D7]blows in [G]Chi-[D7]ca-[G]go 
 So I'm [C]lo-ne-ly [D7]most all of the [G]time
 {end_of_verse}
+
+
+

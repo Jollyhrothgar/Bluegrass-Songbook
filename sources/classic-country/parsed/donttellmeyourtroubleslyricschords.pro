@@ -1,5 +1,8 @@
 {meta: title Don't Tell Me Your Troubles}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file donttellmeyourtroubleslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't tell me your troubles I got [C]troubles of my [G]own
@@ -41,3 +44,8 @@ Leave me a[Em]lone  go on [G]home
 Tell it to a [Em]friend  I [A7]got troubles of my [D7]own
 Troubles of my [G]own
 {end_of_verse}
+
+
+
+
+

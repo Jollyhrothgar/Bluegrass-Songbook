@@ -1,6 +1,9 @@
 {meta: title She Always Gets What She Wants}
 {meta: artist Doug Stone}
 {meta: composer Jeff Jones, Rusty Van Sickle, Terry Clayton}
+{meta: x_source classic-country}
+{meta: x_source_file shealwaysgetswhatshewantslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She always gets what she wants and makes it look [Am]easy
@@ -42,3 +45,8 @@ She wants [Dm]me so I'm gonna [G7]see she always gets what she [Am]wants[G7]   [
 {start_of_verse: Verse 5}
 She wants [Dm]me  [G7]she always gets what she [C]wants
 {end_of_verse}
+
+
+
+
+

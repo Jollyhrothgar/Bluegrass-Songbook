@@ -1,5 +1,8 @@
 {meta: title Small Time Laboring Man}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file smalltimelaboringmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A dollar an [G7]hour eight [C]hours a [F]day
@@ -28,3 +31,6 @@ Making [C]my honest dollar in the [D7]sun snow and [G7]rain
 No [C]you don't see my [G7]family on the [C]starvation [F]plan 
 For I'm a [C]small time [G7]laboring [C]man
 {end_of_verse}
+
+
+

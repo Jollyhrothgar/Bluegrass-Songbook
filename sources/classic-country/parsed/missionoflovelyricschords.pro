@@ -1,6 +1,9 @@
 {meta: title Mission Of Love}
 {meta: artist Hank Thompson}
 {meta: composer Billy Gray and Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file missionoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I received the ultimatum that you sent me
@@ -29,3 +32,6 @@ I [D7]pledge myself to anything you [G]say
 To a lasting armistice I will [C]dedicate each kiss
 Your [D7]trust in me I never will be[G]tray 
 {end_of_verse}
+
+
+

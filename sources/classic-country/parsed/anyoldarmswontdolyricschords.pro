@@ -1,6 +1,9 @@
 {meta: title Any Old Arms Won't Do}
 {meta: artist Willie Nelson}
 {meta: composer Hank Cochran and Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file anyoldarmswontdolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd like to rush into somebody's arms 
@@ -48,3 +51,11 @@ Of a love that never dies
 But just any old love won't [D7]do 
 That love must come from [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+

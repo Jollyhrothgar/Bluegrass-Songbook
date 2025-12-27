@@ -1,5 +1,8 @@
 {meta: title Song In A Seashell}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file songinaseashelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I heard a song in a [C]seashell [D7]down by the ocean one [G]day
@@ -26,3 +29,6 @@ It's a song about an [C]old true love [D7]it's a song about [G]me and you
 It's a song about [D7]having fun it's a song about [G]being true
 It's a song about an [C]old true love [D7]it's a song about [G]me and you
 {end_of_verse}
+
+
+

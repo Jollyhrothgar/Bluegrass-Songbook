@@ -1,6 +1,9 @@
 {meta: title Meet Me In Montana}
 {meta: artist Dan Seals}
 {meta: composer Paul Davis}
+{meta: x_source classic-country}
+{meta: x_source_file meetmeinmontanalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wrote my whole life down in a notebook songs about you and me
@@ -51,3 +54,9 @@ I wanna see the [Am]mountains [Em]in your [F]eyes
 [G7]Whoa [C]whoa [Dm]I've had all of [Am]this life I can [Em]handle
 Meet me [F]underneath that [C]big Mon[G7]tana [C]sky
 {end_of_verse}
+
+
+
+
+
+

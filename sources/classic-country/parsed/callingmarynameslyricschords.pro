@@ -1,6 +1,9 @@
 {meta: title Calling Mary Names}
 {meta: artist Eddy Arnold}
 {meta: composer Wayne Carson Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file callingmarynameslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to get in trouble with my momma and daddy
@@ -50,3 +53,10 @@ Wore out the blackboard writing I’m a bad boy
 [F]I’m still [G7]calling [C]Mary names like darling then [F]sweetheart
 [C]Then baby [F]I love you calling [G7]Mary [C]names
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title They Call You Gigolette}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Joe Melson}
+{meta: x_source classic-country}
+{meta: x_source_file theycallyougigolettelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh they [C]call you Gigolette
@@ -43,3 +46,8 @@ Oh kiss me don't [G]break my heart in two
 [F]Tomorrow you're may be out of sight
 But [Em]tonight [G]tonight [C]tonight [F]love [C]me [G7]Gigo[C]lette
 {end_of_verse}
+
+
+
+
+

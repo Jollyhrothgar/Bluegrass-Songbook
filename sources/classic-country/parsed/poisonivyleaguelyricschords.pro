@@ -1,6 +1,9 @@
 {meta: title Poison Ivy League}
 {meta: artist Elvis Presley}
 {meta: composer Bill Giant, Bernie Baum, Florenece Kaye}
+{meta: x_source classic-country}
+{meta: x_source_file poisonivyleaguelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hail to Thee old [F]Ivy [C]Lea-[G7]gue poison Ivy [C]League
@@ -49,3 +52,10 @@ As [D7]long as dear old daddy's presi[G7]dent
 So let it be told I won't [D7]touch them with a ten foot pole
 [G7]That poison Ivy [C]League
 {end_of_verse}
+
+
+
+
+
+
+

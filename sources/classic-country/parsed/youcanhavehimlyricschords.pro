@@ -1,5 +1,8 @@
 {meta: title You Can Have Him}
 {meta: artist The Oak Ridge Boys}
+{meta: x_source classic-country}
+{meta: x_source_file youcanhavehimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once my life was filled with [F]problems
@@ -35,3 +38,7 @@ He will pro[C]tect you every [G7]day
 He only [C]wants you to love and [F]serve Him
 He'll save your [C]soul and [G7]come in to [C]stay
 {end_of_verse}
+
+
+
+

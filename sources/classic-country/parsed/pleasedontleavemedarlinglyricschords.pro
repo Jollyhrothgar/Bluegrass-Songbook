@@ -1,6 +1,9 @@
 {meta: title Please Don’t Leave Me Darling}
 {meta: artist Bob Wills}
 {meta: composer Jesse Ashlock}
+{meta: x_source classic-country}
+{meta: x_source_file pleasedontleavemedarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Please don’t leave anymore [D7]darling
@@ -21,3 +24,5 @@ For I’m so in love with [G]you
 {start_of_verse: Verse 3}
 Repeat
 {end_of_verse}
+
+

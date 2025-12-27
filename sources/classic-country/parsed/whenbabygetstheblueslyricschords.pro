@@ -1,6 +1,9 @@
 {meta: title When Baby Gets The Blues}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Charles Phipps}
+{meta: x_source classic-country}
+{meta: x_source_file whenbabygetstheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For months she's a perfect wife and a [G7]mother
@@ -34,3 +37,7 @@ My world [G7]turns over when baby gets the [C]blues
 {start_of_verse: Verse 5}
 My world [G7]turns over when baby gets the [C]blues
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Where Love Used To Live}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill and Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file whereloveusedtolivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Four men in a [G7]big truck came [C]today
@@ -40,3 +43,8 @@ There'll be [C]love again where [G7]love used to [C]live [F]
 {start_of_verse: Verse 6}
 [C]There'll be love again where [G7]love used to [F]live[C]
 {end_of_verse}
+
+
+
+
+

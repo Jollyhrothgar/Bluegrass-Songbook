@@ -1,5 +1,8 @@
 {meta: title No Doubt About It}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file nodoubtaboutitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no doubt about it 
@@ -37,3 +40,8 @@ There's [C]no doubt about it
 I've reached the end of my [G7]life
 I've lost my whole [C]world [G7]this [C]time
 {end_of_verse}
+
+
+
+
+

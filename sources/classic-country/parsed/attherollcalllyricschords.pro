@@ -1,6 +1,9 @@
 {meta: title At The Roll Call}
 {meta: artist The Oak Ridge Boys}
 {meta: composer James S. Weatherington}
+{meta: x_source classic-country}
+{meta: x_source_file attherollcalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At the [F]roll call how I would love to clasp your [C]hand
@@ -28,3 +31,7 @@ And [D7]hung upon a tree just to [G7]ransom souls like me
 At the [F]roll call how I would love to clasp your [C]hand
 At the roll call there [F]before God's [G7]viewing [C]stand 
 {end_of_verse}
+
+
+
+

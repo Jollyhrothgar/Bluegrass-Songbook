@@ -1,6 +1,9 @@
 {meta: title Change That Dial}
 {meta: artist Marty Robbins}
 {meta: composer Joyce Winters}
+{meta: x_source classic-country}
+{meta: x_source_file changethatdiallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Change the [F]dial  turn off that [C]song
@@ -58,3 +61,14 @@ What made me step across the line
 {start_of_verse: Verse 1}
 [C]Change the [F]dial  turn off that [C]song
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Can't Sleep With You}
 {meta: artist Norma Jean}
 {meta: composer Mike Kosser and Steve Pippin}
+{meta: x_source classic-country}
+{meta: x_source_file icantsleepwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't [G]sleep with you  [C]I can't [G]sleep with you  [D7]on my [G]mind
@@ -26,3 +29,6 @@ I’ve [A7]had all the empty hours I can [D7]stand
 [G]It seems the nights get just a little [C]longer all the [Am]time
 And [C]I can't [G]sleep with you  [C]I can't [G]sleep with you  [D7]on my [G]mind
 {end_of_verse}
+
+
+

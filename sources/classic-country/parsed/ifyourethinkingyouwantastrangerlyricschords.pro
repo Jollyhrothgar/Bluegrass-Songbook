@@ -1,6 +1,9 @@
 {meta: title If You're Thinking You Want A Stranger}
 {meta: artist George Strait}
 {meta: composer Blake Mevis and David Wills}
+{meta: x_source classic-country}
+{meta: x_source_file ifyourethinkingyouwantastrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Lately you've been [C]showing all the [G]signs
@@ -33,3 +36,7 @@ If you're thinking you want a stranger [D7]there's one coming [G]home
 {start_of_verse: Verse 4}
 If you're thinking you want a stranger [D7]there's one coming [Em]home[G]
 {end_of_verse}
+
+
+
+

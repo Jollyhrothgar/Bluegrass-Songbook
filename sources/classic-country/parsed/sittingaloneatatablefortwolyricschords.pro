@@ -1,6 +1,9 @@
 {meta: title Sitting Alone At A Table For Two}
 {meta: artist Hank Locklin}
 {meta: composer Lawton Williams}
+{meta: x_source classic-country}
+{meta: x_source_file sittingaloneatatablefortwolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I stopped at [F]the old [C]Cabaret
@@ -29,3 +32,6 @@ Cause I could never explain [D7]to our [G7]friends
 [C]There's no use dreaming when [F]dreams won't come [C]true
 Sitting alone at a [G7]table for [C]two
 {end_of_verse}
+
+
+

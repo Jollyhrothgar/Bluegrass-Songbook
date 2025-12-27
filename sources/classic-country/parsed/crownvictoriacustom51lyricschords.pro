@@ -1,6 +1,9 @@
 {meta: title Crown Victoria Custom '51}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Andy Paley, Jerry Lee Burton,}
+{meta: x_source classic-country}
+{meta: x_source_file crownvictoriacustom51lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Born in Detroit City back in '51
@@ -54,3 +57,12 @@ French headlights and with the taillights blue
 [G7]She's my Crown Victoria [F]Custom [C]'51
 [A7]She's my [D7]Crown Victoria [G7]Custom [C]'51
 {end_of_verse}
+
+
+
+
+
+
+
+
+

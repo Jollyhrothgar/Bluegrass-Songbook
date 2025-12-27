@@ -1,6 +1,9 @@
 {meta: title I Used It All On You}
 {meta: artist Nat Stuckey}
 {meta: composer Tom Crum}
+{meta: x_source classic-country}
+{meta: x_source_file iuseditallonyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord there's [F]just no love to [G7]give her [F]I used it [G7]all on [C]you
@@ -27,3 +30,6 @@ I've [C]even learned to hate you  but [F]what good did it [D7]do
 For [F]there's still no love to [G7]give her  [F]I used it [G7]all on [C]you
 [F]There's just no love to [G7]give her  [F]I used it [G7]all on [C]you
 {end_of_verse}
+
+
+

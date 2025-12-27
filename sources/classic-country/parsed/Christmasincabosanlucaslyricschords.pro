@@ -1,6 +1,9 @@
 {meta: title Christmas In Cabo San Lucas}
 {meta: artist Merle Haggard}
 {meta: composer Douglas W. Colosio, Jame Dyar, Scott Joss}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasincabosanlucaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas in [G7]Cabo San [C]Lucas
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 6}
 [F]And the only [G7]thing missing is [C]you
 {end_of_verse}
+
+
+
+
+

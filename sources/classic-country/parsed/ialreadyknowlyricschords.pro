@@ -1,6 +1,9 @@
 {meta: title I Already Know}
 {meta: artist Wanda Jackson}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file ialreadyknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I already [F]know what I'm [G7]getting for my [C]birthday
@@ -40,3 +43,8 @@ It's [F]something I've been wantin' all [G7]year
 {start_of_verse: Verse 4}
 [F]I'm gonna get myself a [G7]million miles from [C]here
 {end_of_verse}
+
+
+
+
+

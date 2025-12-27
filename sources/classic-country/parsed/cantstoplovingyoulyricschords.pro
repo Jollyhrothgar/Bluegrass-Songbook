@@ -1,6 +1,9 @@
 {meta: title Can't Stop Loving You}
 {meta: artist Roger Miller}
 {meta: composer Billy Nicholls}
+{meta: x_source classic-country}
+{meta: x_source_file cantstoplovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I’ve tried my best but that ain't enough
@@ -39,3 +42,8 @@ And [G]ever since I’ve just sit and [D7]cry
 [C]Feelin' like this I can't live my life through
 I've [G]tried so hard but I [D7]can't stop loving [G]you
 {end_of_verse}
+
+
+
+
+

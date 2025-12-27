@@ -1,6 +1,9 @@
 {meta: title Barroom Roses}
 {meta: artist Moe Bandy}
 {meta: composer Byron Gallimore, Blake Mevis, William D. Shore}
+{meta: x_source classic-country}
+{meta: x_source_file barroomroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You better leave those bar room roses alone
@@ -46,3 +49,11 @@ Cause through those whiskey eyes temptation is disguised
 [G]You better leave those bar room roses alone
 [D7]They only bloom at night and then by morning they’ll be gone
 {end_of_verse}
+
+
+
+
+
+
+
+

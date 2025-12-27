@@ -1,5 +1,8 @@
 {meta: title Hanging My Teardrops Out To Dry}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file hangingmyteardropsouttodrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm hanging my teardrops out to [D7]dry
@@ -28,3 +31,6 @@ Over you no longer will I [G]cry
 You took all my love and my [C]pride
 I'm [D7]hanging my teardrops out to [G]dry
 {end_of_verse}
+
+
+

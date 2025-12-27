@@ -1,6 +1,9 @@
 {meta: title Passing Love Affair}
 {meta: artist Jean Shepard}
 {meta: composer Jack Rhodes and Jack Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file passingloveaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Be sure before you say I love [C]you
@@ -29,3 +32,6 @@
 [G]Or will I find the love I'd hope [C]for
 [D7]Is just a passing love [G]affair
 {end_of_verse}
+
+
+

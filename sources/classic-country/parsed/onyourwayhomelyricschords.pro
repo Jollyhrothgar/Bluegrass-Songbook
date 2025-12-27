@@ -1,6 +1,9 @@
 {meta: title On Your Way Home}
 {meta: artist Patty Loveless}
 {meta: composer Matraca Berg and Ronnie Samoset}
+{meta: x_source classic-country}
+{meta: x_source_file onyourwayhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard you slipping down the hall
@@ -70,3 +73,12 @@ Where do you [Am]go  [F]on your way [C]home
 Where do you [Am]go  [F]on your way [C]home
 [F]On your way [C]home
 {end_of_verse}
+
+
+
+
+
+
+
+
+

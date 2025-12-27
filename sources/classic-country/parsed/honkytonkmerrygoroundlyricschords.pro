@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Merry Go Round}
 {meta: artist Patsy Cline}
 {meta: composer Frank Simon &amp; Stan Gardner}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkmerrygoroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm on a honky tonk [G][D7]merry-go-round
@@ -38,3 +41,9 @@ Acting like a foolish clown
 [D7]Still racing those blues that you left with me
 [G]Wondering if I'll [D7]ever be [G]free
 {end_of_verse}
+
+
+
+
+
+

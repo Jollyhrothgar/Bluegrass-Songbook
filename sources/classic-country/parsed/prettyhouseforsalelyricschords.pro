@@ -1,6 +1,9 @@
 {meta: title Pretty House For Sale}
 {meta: artist Charley Pride}
 {meta: composer Harold Dorman and Wiley Gann}
+{meta: x_source classic-country}
+{meta: x_source_file prettyhouseforsalelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well hello there [F]come on [C]in I've been expecting [F]you my [C]friend
@@ -33,3 +36,7 @@ With a stranger [F]you left [C]town and my world came [F]tumblin' [C]down
 {start_of_verse: Verse 5}
 [F]Yes our [C]home is just a [G7]pretty house for [C]sale
 {end_of_verse}
+
+
+
+

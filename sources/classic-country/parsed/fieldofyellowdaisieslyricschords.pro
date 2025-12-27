@@ -1,6 +1,9 @@
 {meta: title Field Of Yellow Daisies}
 {meta: artist Charlie Rich}
 {meta: composer Margaret Rich}
+{meta: x_source classic-country}
+{meta: x_source_file fieldofyellowdaisieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We met in a [Dm]field of yellow [Dm][C]daisies 
@@ -37,3 +40,8 @@ She loves me she loves me not for [G7]daisies didn't lie
 They knew better than I she'd go away
 But they didn't say [C]why
 {end_of_verse}
+
+
+
+
+

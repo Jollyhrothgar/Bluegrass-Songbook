@@ -1,6 +1,9 @@
 {meta: title Oozlin' Daddy Blues}
 {meta: artist Bob Wills}
 {meta: composer Marc Griffiths}
+{meta: x_source classic-country}
+{meta: x_source_file oozlindaddyblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went to get my fortune told
@@ -37,3 +40,8 @@ Whiskey women wine and song
 [F]Gonna marry me a flapper for a wife
 [C]Lord Lord I got them [G7]oozlin' daddy [C]blues
 {end_of_verse}
+
+
+
+
+

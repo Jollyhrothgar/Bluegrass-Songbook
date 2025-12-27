@@ -1,5 +1,8 @@
 {meta: title Get Rhythm}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file getrhythmlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey get rhythm when you get the blues
@@ -46,3 +49,7 @@ Get a rock n roll feeling in your bones
 Get taps on your toes and get gone
 [C]Get rhythm when [D7]you get the [G]blues
 {end_of_verse}
+
+
+
+

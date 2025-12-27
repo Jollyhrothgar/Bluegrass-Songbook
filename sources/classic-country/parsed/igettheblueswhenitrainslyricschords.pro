@@ -1,6 +1,9 @@
 {meta: title I Get The Blues When It Rains}
 {meta: artist Jim Reeves}
 {meta: composer Marcy Klauber and Harry Stoddard}
+{meta: x_source classic-country}
+{meta: x_source_file igettheblueswhenitrainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I get the blues when it [G7]rains
@@ -15,3 +18,4 @@
 [F]It rained when I found you rained when I lost [C]you
 [G7]That's why I get the blues when it [C]rains
 {end_of_verse}
+

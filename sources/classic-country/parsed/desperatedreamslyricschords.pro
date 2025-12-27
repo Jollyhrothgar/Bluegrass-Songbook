@@ -1,5 +1,8 @@
 {meta: title Desperate Dreams}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file desperatedreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whoever said it was [Dm]gonna be easy
@@ -42,3 +45,8 @@ Honey desperate people do [F]desperate [C]things
 I am desperate people thinking [Am]desperate things
 [F]Even [G7]desperate [C]dreams
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Little Folks}
 {meta: artist Charley Pride}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file thelittlefolkslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We've decided we [D7]can't work it out
@@ -64,3 +67,11 @@ The little folks the [G]little folks
 We owe that much to the [C]little folks
 Who [D7]live in our [G]house
 {end_of_verse}
+
+
+
+
+
+
+
+

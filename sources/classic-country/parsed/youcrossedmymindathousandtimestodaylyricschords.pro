@@ -1,6 +1,9 @@
 {meta: title You Crossed My Mind A Thousand Times Today Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Dewayne Orender and Phyllis Powell}
+{meta: x_source classic-country}
+{meta: x_source_file youcrossedmymindathousandtimestodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've been gone a long long [F]time
@@ -40,3 +43,8 @@
 [F]Tried not to think about the love I live [C]without
 [G7]But you crossed my mind a thousand times [C]today
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Tear Down The Wall}
 {meta: artist Narvel Felts}
+{meta: x_source classic-country}
+{meta: x_source_file teardownthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tear down the wall that [C]keeps your love from me
@@ -25,3 +28,6 @@ But [D7]I tore down my wall the day that I met [G]you
 {start_of_verse: Verse 4}
 Yes [D7]tear down the wall that won't let my love come [G]through
 {end_of_verse}
+
+
+

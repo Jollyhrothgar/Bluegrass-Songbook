@@ -1,6 +1,9 @@
 {meta: title Angel With A Broken Wing}
 {meta: artist Mel Street}
 {meta: composer Dick Heard and Jimmy Hinson}
+{meta: x_source classic-country}
+{meta: x_source_file angelwithabrokenwinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]See the [D7]angel in the [G]corner 
@@ -34,3 +37,7 @@ She's an [C]angel with a [G]broken [Em]wing
 She's an [C]angel with a [G]broken [Em]wing 
 [C]Falling out of [D7]love to[G]night
 {end_of_verse}
+
+
+
+

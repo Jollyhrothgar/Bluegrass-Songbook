@@ -1,6 +1,9 @@
 {meta: title Up To My Ears In Tears}
 {meta: artist Alan Jackson}
 {meta: composer Don Sampson and Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file uptomyearsintearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You told me you don't love me you walked out the [C]door
@@ -36,3 +39,7 @@ I'm drownin' for you dear up to my ears in [G]tears
 Yeah that [D7]water's cold and clear
 I'm drownin' for you dear up to my ears in [G]tears
 {end_of_verse}
+
+
+
+

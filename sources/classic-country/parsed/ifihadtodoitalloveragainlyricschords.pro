@@ -1,6 +1,9 @@
 {meta: title If I Had To Do It All Over Again}
 {meta: artist Roy Clark}
 {meta: composer Bobby Springfield}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadtodoitalloveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're not as young as we [Em]used to be
@@ -40,3 +43,8 @@ And if I [Dm]had to do it all [G7]over again I'd [C]do it with you
 {start_of_verse: Verse 4}
 And if I [Dm]had to do it all [G7]over again I'd [F]do it with [C]you
 {end_of_verse}
+
+
+
+
+

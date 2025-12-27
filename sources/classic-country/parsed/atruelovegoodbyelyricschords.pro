@@ -1,6 +1,9 @@
 {meta: title A True Love Goodbye}
 {meta: artist Roy Orbison}
 {meta: composer Norman Petty and Roy K. Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file atruelovegoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -45,3 +48,10 @@ Be[G]yond this [C]true love good[G]bye my [Em]love
 {start_of_verse: Verse 8}
 To [Am]my true [D7]love good[G]bye my [Em]love
 {end_of_verse}
+
+
+
+
+
+
+

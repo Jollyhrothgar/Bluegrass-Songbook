@@ -1,6 +1,9 @@
 {meta: title I Can't Go On Loving You}
 {meta: artist Roy Drusky}
 {meta: composer Hank Mills}
+{meta: x_source classic-country}
+{meta: x_source_file icantgoonlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought I could but [C]I can't go on [G]lovin' you
@@ -26,3 +29,6 @@ I [Em]only [G]know I [D7]can't go on lovin' [G]you
 {start_of_verse: Verse 4}
 I [Em]only [G]know I [D7]can't go on lovin' [G]you
 {end_of_verse}
+
+
+

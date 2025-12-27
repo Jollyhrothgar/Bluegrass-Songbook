@@ -1,5 +1,8 @@
 {meta: title Foggy Foggy Dew}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file foggyfoggydewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was a bachelor I lived all [C]alone
@@ -42,3 +45,8 @@ He [D7]reminds me of the winter [G]time
 And the many many times I held her in my [C]arms
 To keep [D7]her from the foggy foggy [G]dew
 {end_of_verse}
+
+
+
+
+

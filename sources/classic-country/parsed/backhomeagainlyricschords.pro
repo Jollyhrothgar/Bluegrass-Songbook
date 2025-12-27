@@ -1,5 +1,8 @@
 {meta: title Back Home Again}
 {meta: artist John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file backhomeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a storm across the valley the clouds are rolling [F]in
@@ -54,3 +57,10 @@ And a [G7]light in your eyes that makes [C]me [C7]warm
 [G7]Hey and yes it's good to have you home [C]again
 [G7]Hey it feels so good to be back home [C]again
 {end_of_verse}
+
+
+
+
+
+
+

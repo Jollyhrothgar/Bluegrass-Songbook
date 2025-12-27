@@ -1,6 +1,9 @@
 {meta: title Five Hundred Miles Away From Home}
 {meta: artist Bobby Bare}
 {meta: composer Bobby Bare and Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file fivehundredmilesawayfromhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Teardrops fell on mama's note
@@ -44,3 +47,8 @@ Away from home away from home
 [Em]Cold and tired and all alone
 [D7]Yes I'm five hundred [C]miles away from [G]home
 {end_of_verse}
+
+
+
+
+

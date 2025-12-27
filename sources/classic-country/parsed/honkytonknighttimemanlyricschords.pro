@@ -1,5 +1,8 @@
 {meta: title Honky Tonk Night Time Man}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonknighttimemanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm a honky tonk night time man I can't stand no light
@@ -24,3 +27,6 @@ When the [D7]shadows fall I know it's time to [G]go
 I'm a [C]honky tonk night time man I can't stand no [G]light
 I get my [D7]rest in the daytime I make my running round at [G]night
 {end_of_verse}
+
+
+

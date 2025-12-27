@@ -1,6 +1,9 @@
 {meta: title Things I Almost Had With You}
 {meta: artist Leona Williams}
 {meta: composer David C. Kirby, Ronald K. Williams, Jr., Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file thingsialmosthadwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s a little boy and [C]girl next door to [G]mommas 
@@ -28,3 +31,6 @@ Now [G]all that I’ve got [C]left are these [G]memory photo[C]graphs
 That I [G]took of all things [C]I almost [D7]had with [G]you
 I still see the things [C]I almost [D7]had with [G]you
 {end_of_verse}
+
+
+

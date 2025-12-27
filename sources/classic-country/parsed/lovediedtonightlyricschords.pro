@@ -1,6 +1,9 @@
 {meta: title Love Died Tonight}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file lovediedtonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hang a wreath on my door [G7]make a funeral [C]arrangement 
@@ -29,3 +32,6 @@ Tell the parson to do it up [D7]right
 For [G]she loves another [G7]my only [C]brother
 So [D7]announce that love died [C]tonig[G]ht
 {end_of_verse}
+
+
+

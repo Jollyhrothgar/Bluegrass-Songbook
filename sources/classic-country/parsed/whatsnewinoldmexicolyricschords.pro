@@ -1,6 +1,9 @@
 {meta: title What's New In Old Mexico}
 {meta: artist Johnny Rodriguez}
 {meta: composer Tony Stampley, Ken Bell, Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file whatsnewinoldmexicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's cold and it's raining where I am tonight
@@ -46,3 +49,9 @@ Are you [F]missing me like I'm missing [G7]you
 I called you up cause I [F]had to know 
 What's [G7]new in old [C]Mexico
 {end_of_verse}
+
+
+
+
+
+

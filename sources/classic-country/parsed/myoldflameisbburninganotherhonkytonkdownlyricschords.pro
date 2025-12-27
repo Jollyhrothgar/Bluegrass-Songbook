@@ -1,6 +1,9 @@
 {meta: title My Old Flame Is burning Another Honky Tonk Down}
 {meta: artist Mickey Gilley}
 {meta: composer Wayne Kemp, Mack Vickery, Bobby Borchers}
+{meta: x_source classic-country}
+{meta: x_source_file myoldflameisbburninganotherhonkytonkdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]My old flame's out [C]burning another [G7]honky tonk [C]down
@@ -31,3 +34,8 @@ Till she saw the lights [G7]behind those swingin' [C]doors
 {start_of_verse: Verse 4}
 [F]My old flame's out [C]burning another [G7]honky tonk [C]down
 {end_of_verse}
+
+
+
+
+

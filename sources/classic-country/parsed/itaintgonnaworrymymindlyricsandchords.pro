@@ -1,6 +1,9 @@
 {meta: title It Ain't Gonna Worry My Mind}
 {meta: artist George Jones}
 {meta: composer Richard Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file itaintgonnaworrymymindlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Same old [Am]story [F]they all [G7]hand me 
@@ -26,3 +29,5 @@ But how in the world could she [F]love me any [Fm]better
 [C]Lord it ain't gonna [Am]worry [G7]ain't gonna [F]worry Lord [C]no 
 It ain't gonna [G7]worry my [C]mind
 {end_of_verse}
+
+

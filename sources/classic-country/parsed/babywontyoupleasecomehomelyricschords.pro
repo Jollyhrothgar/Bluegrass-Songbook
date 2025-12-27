@@ -1,6 +1,9 @@
 {meta: title Baby Won't You Please Come Home}
 {meta: artist Ricky Nelson}
 {meta: composer Charles Warfield and Clarence Williams}
+{meta: x_source classic-country}
+{meta: x_source_file babywontyoupleasecomehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby won't you please come [A7]home
@@ -42,3 +45,7 @@ You can [C]hear me [A7]say
 [D7]Baby won't you [G7]please come [C]home [A7]mmm
 [D7]Baby won't you [G7]please come [C]home
 {end_of_verse}
+
+
+
+

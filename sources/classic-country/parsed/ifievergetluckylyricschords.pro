@@ -1,6 +1,9 @@
 {meta: title If I Ever Get Lucky}
 {meta: artist Merle Haggard}
 {meta: composer Merle Haggard and Lou Bradley}
+{meta: x_source classic-country}
+{meta: x_source_file ifievergetluckylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I ever get lucky [C]I'll find the right woman for [G]me
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]If I ever get lucky I'll find a lady like [G]you
 {end_of_verse}
+
+
+
+

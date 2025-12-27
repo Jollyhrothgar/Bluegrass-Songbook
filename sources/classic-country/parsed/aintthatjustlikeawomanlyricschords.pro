@@ -1,6 +1,9 @@
 {meta: title Ain’t That Just Like A Woman}
 {meta: artist Fats Domino}
 {meta: composer Claude Demetrius and Fleecy Moore}
+{meta: x_source classic-country}
+{meta: x_source_file aintthatjustlikeawomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes Adam was happy as a man could be
@@ -51,3 +54,12 @@ No matter what you do she's never satis[G7]fied
 Ain't that [C]just like a woman ain't that [G]just like a woman
 Ain't that [D7]just like a woman [C]they'll do it every [G]time
 {end_of_verse}
+
+
+
+
+
+
+
+
+

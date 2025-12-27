@@ -1,6 +1,9 @@
 {meta: title It’s Too Late}
 {meta: artist Jeanne Pruett}
 {meta: composer Bobby Goldsboro}
+{meta: x_source classic-country}
+{meta: x_source_file itstoolatelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It’s [C]too late [F]to say you [G7]want me but it’s [C]too late
@@ -51,3 +54,9 @@ And it’s [D7]chasing all the love you turned [G7]away
 {start_of_verse: Verse 5}
 It’s too [C]late
 {end_of_verse}
+
+
+
+
+
+

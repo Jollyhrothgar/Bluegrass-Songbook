@@ -1,6 +1,9 @@
 {meta: title Drinkin' Man's Blues}
 {meta: artist Johnny Rodriguez}
 {meta: composer R.C. Finnigan}
+{meta: x_source classic-country}
+{meta: x_source_file drinkinmansblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it’s out of the [C7]bottle [F]and into the glass
@@ -46,3 +49,9 @@ Well it’s down on the [C7]dollar for [F]this old blue collar
 It keeps me so [C7]high I for[F]get my own troubles
 [G7]And beats me away from the [C]door
 {end_of_verse}
+
+
+
+
+
+

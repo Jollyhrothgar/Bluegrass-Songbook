@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Myself To Death}
 {meta: artist George Jones}
 {meta: composer Max D. Barnes and Max T. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkmyselftodeathlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I don't know why you left me
@@ -45,3 +48,8 @@ And if I tied a rope around my neck
 I couldn't get my [F]breath
 So [C]I think I'll just honky tonk [G7]myself to [C]death
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If I Can Dream}
 {meta: artist Elvis Presley}
 {meta: composer Walter Earl Brown}
+{meta: x_source classic-country}
+{meta: x_source_file ificandreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There must be lights burn-ing [Am]bright-er [F]somewhere
@@ -31,3 +34,6 @@ And while I can [C]think while I can [Am]talk
 While I can [C]stand while I can [Am]walk
 While I can [F]dream feeling my [Fm]dream come [C]true    [G7]right [C]now
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Can I Trust You With My Heart}
 {meta: artist Travis Tritt}
 {meta: composer Stewart Harris and Travis Tritt}
+{meta: x_source classic-country}
+{meta: x_source_file canitrustyouwithmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you meet that certain someone 
@@ -68,3 +71,12 @@ Without [C]knowing just one answer
 Please [C]girl give me just one answer 
 [G7]Can I trust you with my [C]heart
 {end_of_verse}
+
+
+
+
+
+
+
+
+

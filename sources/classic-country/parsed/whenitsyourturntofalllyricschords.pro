@@ -1,6 +1,9 @@
 {meta: title When It's Your Turn To Fall}
 {meta: artist Johnny Bush}
 {meta: composer Maryland Welch Francis, Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file whenitsyourturntofalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Someday you’ll know  what I’m going [D7]through
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [D7]When it’s your turn to [G]fall
 {end_of_verse}
+
+
+

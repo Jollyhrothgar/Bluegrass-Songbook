@@ -1,5 +1,8 @@
 {meta: title Follow Me}
 {meta: artist John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file followmelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Intro:
@@ -41,3 +44,8 @@ Make it [C]part of you to [F]be a part of [G7]me
 Follow [C]me up and [F]down all the [C]way  [F]
 [C]Take my hand and [F]I will [G7]follow [C]you
 {end_of_verse}
+
+
+
+
+

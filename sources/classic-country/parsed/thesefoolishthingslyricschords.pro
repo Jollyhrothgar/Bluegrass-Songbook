@@ -1,6 +1,9 @@
 {meta: title These Foolish Things}
 {meta: artist Ray Price}
 {meta: composer Harry Link, Holt Marvell, Jack Strachey}
+{meta: x_source classic-country}
+{meta: x_source_file thesefoolishthingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A ciga[Am]rette that bears [Dm]a lipstick's [G7]traces[C]
@@ -44,3 +47,9 @@ Oh how the ghost of you [F]clings
 [Am]These foolish [D7]things remind me of [Em]you
 [Am]These foolish [D7]things [G7]remind me of [C]you
 {end_of_verse}
+
+
+
+
+
+

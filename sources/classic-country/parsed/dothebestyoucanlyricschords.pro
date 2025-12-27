@@ -1,6 +1,9 @@
 {meta: title Do The Best You Can}
 {meta: artist Ricky Nelson}
 {meta: composer Ry Cooder and Russ Titelman}
+{meta: x_source classic-country}
+{meta: x_source_file dothebestyoucanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whenever you find a [Am]man who [F]loves every woman he [C]sees
@@ -41,3 +44,9 @@
 {start_of_verse: Verse 5}
 [F]True love can be such [Am]a sweet harmony if you [G7]do the best that you [C]can
 {end_of_verse}
+
+
+
+
+
+

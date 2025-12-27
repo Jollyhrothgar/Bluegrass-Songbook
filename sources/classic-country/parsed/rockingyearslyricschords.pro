@@ -1,6 +1,9 @@
 {meta: title Rocking Years}
 {meta: artist Dolly Parton}
 {meta: composer Floyd Estel Parton}
+{meta: x_source classic-country}
+{meta: x_source_file rockingyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll do everything I can to make [C]you proud to be my [G]man
@@ -30,3 +33,6 @@ Side by side we'll be together [D7]always
 And [G]if you'll hold me tight when you love me [C]that's all I'll ask of [G]you
 And I'll stand by you [D7]through our rocking [G]years
 {end_of_verse}
+
+
+

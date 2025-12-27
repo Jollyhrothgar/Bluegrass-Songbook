@@ -1,6 +1,9 @@
 {meta: title I've Got A Heart Full Of You}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotaheartfullofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm down to my last cent can't even pay the rent
@@ -33,3 +36,7 @@ And I've got a [G7]heart full of [C]you
 {start_of_verse: Verse 4}
 Yes I've got a [G7]heart full of [C]you
 {end_of_verse}
+
+
+
+

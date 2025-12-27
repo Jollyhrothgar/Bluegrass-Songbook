@@ -1,6 +1,9 @@
 {meta: title Dumas Walker}
 {meta: artist The Kentucky Headhunters}
 {meta: composer Doug Phelps, Gregory Martin, Richard Young, Fred Young}
+{meta: x_source classic-country}
+{meta: x_source_file dumaswalkerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's all go down to Dumas Walker
@@ -40,3 +43,7 @@ Let's all [F]go down to Dumas [C]Walker
 We'll get a [G7]slaw burger fries and a bottle of ski
 [C]Bring it on out to my baby and me
 {end_of_verse}
+
+
+
+

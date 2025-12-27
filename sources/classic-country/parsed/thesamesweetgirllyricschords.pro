@@ -1,5 +1,8 @@
 {meta: title The Same Sweet Girl}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file thesamesweetgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All the years have seemed so short since I have known [C]you
@@ -21,3 +24,5 @@ I [G]will always be around you when you [D7]call
 I [G]will never share my kisses with [C]another 
 [D7]Only with the same sweet girl my one and [G]all
 {end_of_verse}
+
+

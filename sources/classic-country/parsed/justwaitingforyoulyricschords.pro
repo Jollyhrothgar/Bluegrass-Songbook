@@ -1,5 +1,8 @@
 {meta: title Just Waiting For You}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file justwaitingforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am pleading tonight in this letter I [F]write
@@ -28,3 +31,6 @@
 [F]You'll mend the break in my heart once again we will start
 [C]From where [G7]I've waited so worried and [C]blue
 {end_of_verse}
+
+
+

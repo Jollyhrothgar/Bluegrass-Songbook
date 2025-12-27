@@ -1,5 +1,8 @@
 {meta: title I Found A True Love}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file ifoundatruelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I found a [C]true love I don't cry [F]anymore
@@ -21,3 +24,5 @@
 [C]And now I found you  you're an angel on [F]earth
 [C]Take my heart and [G7]soul dear for all that it's [C]worth
 {end_of_verse}
+
+

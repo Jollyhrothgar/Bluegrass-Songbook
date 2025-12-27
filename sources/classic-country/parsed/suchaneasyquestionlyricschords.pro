@@ -1,6 +1,9 @@
 {meta: title Such An Easy Question}
 {meta: artist Elvis Presley}
 {meta: composer Otis Blackwell and Winfield Scott}
+{meta: x_source classic-country}
+{meta: x_source_file suchaneasyquestionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Do you or [F]don't you love [C]me
@@ -41,3 +44,8 @@
 [C]It's such an easy [D7]answer  [G7]to such an easy [G7][C]question
 [C]Why can't I get [F]an answer to such an easy [C]question
 {end_of_verse}
+
+
+
+
+

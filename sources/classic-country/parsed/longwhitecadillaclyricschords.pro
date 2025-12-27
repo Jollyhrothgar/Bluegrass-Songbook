@@ -1,6 +1,9 @@
 {meta: title Long White Cadillac}
 {meta: artist Dwight Yoakam}
 {meta: composer Dave Alvin}
+{meta: x_source classic-country}
+{meta: x_source_file longwhitecadillaclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Night wolves moan winter hills are black
@@ -45,3 +48,9 @@ In a long white [G7] Cadi[C]llac
 In a long white [G7] Cadi[C]llac
 In a long white [G7] Cadi[C]llac
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Flash of Fire Lyrics and Chords}
 {meta: artist Hoyt Axton}
 {meta: composer Hoyt Axton and Catherine Smith}
+{meta: x_source classic-country}
+{meta: x_source_file flashoffirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought you were a friend of mine I thought you were my [D7]buddy
@@ -33,3 +36,6 @@ You [G7]scare me half to death my friend with the things you say and [C]do
 So I'm [G]goin' to heaven in a [A7]flash of fire [D7]with or without [G]you
 Hey goin' to heaven in a [A7]flash of fire [D7]with or without [G]you
 {end_of_verse}
+
+
+

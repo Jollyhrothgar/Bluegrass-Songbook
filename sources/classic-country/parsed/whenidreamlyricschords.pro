@@ -1,6 +1,9 @@
 {meta: title When I Dream}
 {meta: artist Crystal Gayle}
 {meta: composer Sandy Mason}
+{meta: x_source classic-country}
+{meta: x_source_file whenidreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could have a [G7]mansion  that is [Am]higher  than the [F]trees
@@ -24,3 +27,5 @@ But when I [C]dream I dream of [F]you
 [G7]But when I [C]dream I dream of [F]you
 [G7]Maybe some[F]day you [G7]will come [C]true
 {end_of_verse}
+
+

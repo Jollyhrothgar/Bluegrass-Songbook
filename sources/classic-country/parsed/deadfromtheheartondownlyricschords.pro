@@ -1,6 +1,9 @@
 {meta: title Dead From The Heart On Down}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file deadfromtheheartondownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My friends all came around to say goodbye
@@ -33,3 +36,7 @@ Take me in that long black limousine
 {start_of_verse: Verse 5}
 [G7]Yes I’m dead from the heart on [C]down
 {end_of_verse}
+
+
+
+

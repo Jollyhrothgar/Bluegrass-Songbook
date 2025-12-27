@@ -1,6 +1,9 @@
 {meta: title Honky Tonk And Slow Music}
 {meta: artist Johnny Paycheck}
 {meta: composer Johnny Paycheck and Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkandslowmusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could say that the [F]smoke gets [C]in my eyes
@@ -33,3 +36,7 @@ Your [G7]way of life is killing [C]me
 {start_of_verse: Verse 5}
 Yes your [G7]way of life is killing [F]me [C]
 {end_of_verse}
+
+
+
+

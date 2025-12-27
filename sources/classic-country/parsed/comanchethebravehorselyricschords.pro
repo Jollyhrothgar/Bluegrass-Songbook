@@ -1,6 +1,9 @@
 {meta: title Comanche (The Brave Horse)}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Horton and Frances Bandy}
+{meta: x_source classic-country}
+{meta: x_source_file comanchethebravehorselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The battle was over at [G7]Custer's last [C]stand
@@ -36,3 +39,7 @@ You [G7]were a good soldier so [F]hold your head up [C]high
 For [F]even the greatest sometimes must [C]fall
 [G7]Comanche the Brave Horse [F]you gave your [C]all
 {end_of_verse}
+
+
+
+

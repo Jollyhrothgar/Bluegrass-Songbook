@@ -1,6 +1,9 @@
 {meta: title Loving You Again}
 {meta: artist Freddie Hart}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file lovingyouagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Helplessly but willingly [G7]loving you [C]again
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 5}
 [G7]Helplessly but willingly loving you [C]again
 {end_of_verse}
+
+
+
+

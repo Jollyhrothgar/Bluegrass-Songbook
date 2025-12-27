@@ -1,5 +1,8 @@
 {meta: title It's All Over (All Over Again)}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file itsalloveralloveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know [D7]you know I'm [G]sorry
@@ -32,3 +35,7 @@ It's all [D7]over all over [G]again
 {start_of_verse: Verse 4}
 It's all [D7]over all over [C]agai[G]n
 {end_of_verse}
+
+
+
+

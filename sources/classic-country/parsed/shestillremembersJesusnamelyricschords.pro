@@ -1,6 +1,9 @@
 {meta: title She Still Remembers Jesus' Name}
 {meta: artist The Booth Brothers}
 {meta: composer Melody Goodman}
+{meta: x_source classic-country}
+{meta: x_source_file shestillremembersJesusnamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Time has cast a [C]shadow on her [F][G]memory
@@ -48,3 +51,9 @@
 [G]It's a comfort to [G7]her family and [C]it helps to ease their [Am]pain
 [G]That she [Bm]still [A#7]remembers [D7][Am]Jesus' [C]name  Jesus' [G]name
 {end_of_verse}
+
+
+
+
+
+

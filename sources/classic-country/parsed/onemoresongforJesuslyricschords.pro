@@ -1,5 +1,8 @@
 {meta: title One More Song For Jesus}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file onemoresongforJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We've traveled this world over in [F]our day and in our [C]time
@@ -48,3 +51,9 @@ We oughta have one more [G7]song for [C]Jesus [F]if you [C]please [F]   [C]
 Let's have one more [G7]song for [C]Jesus [F]on our [C]knees
 Let's have one more [G7]song for [C]Jesus [F]if you [C]please
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Miss Who I Was With You}
 {meta: artist Patty Loveless}
 {meta: composer Jim Lauderdale and John Leventhal}
+{meta: x_source classic-country}
+{meta: x_source_file imisswhoiwaswithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say I seem different now 
@@ -41,3 +44,7 @@ But [D7]sometimes I miss who I was with [G]you
 {start_of_verse: Verse 4}
 Yes [D7]sometimes I miss who I was with [G]you
 {end_of_verse}
+
+
+
+

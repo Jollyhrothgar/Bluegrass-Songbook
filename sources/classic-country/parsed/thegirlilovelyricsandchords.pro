@@ -1,6 +1,9 @@
 {meta: title The Girl I Love}
 {meta: artist Fats Domino}
 {meta: composer Antonio Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlilovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Woke up this morning I was all [C]alone
@@ -25,3 +28,6 @@
 [F]Oh how I cried when she said [Fm]goodbye
 [C]Somebody help [G7]me    help me find the girl I [C]love
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title One Man Band}
 {meta: artist Norma Jean}
+{meta: x_source classic-country}
+{meta: x_source_file onemanbandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You come to my table with an [F]extra glass of wine
@@ -28,3 +31,6 @@ So you might as well give up and move [G7]along
 I’ve got a [C]one man [F]band around my [C]finger
 And up till now his [F]band has [C]made my [G7]life a [C]song
 {end_of_verse}
+
+
+

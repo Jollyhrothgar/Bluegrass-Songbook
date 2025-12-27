@@ -1,6 +1,9 @@
 {meta: title There's No Need To Try}
 {meta: artist Webb Pierce}
 {meta: composer Audrey Grisham and Sylvia Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file theresnoneedtotrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can't tell the stars not to [G7]shine anymore
@@ -29,3 +32,6 @@ And [G7]I can't stop loving you [F]there's no need to [C]try
 [F]There's no need to search or [C]tell my heart a lie
 For [G7]I'm the one that’s hurt [F]there's no need to [C]try
 {end_of_verse}
+
+
+

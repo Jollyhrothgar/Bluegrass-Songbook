@@ -1,6 +1,9 @@
 {meta: title Speak Of The Devil}
 {meta: artist Gene Watson}
 {meta: composer J. Ewtah}
+{meta: x_source classic-country}
+{meta: x_source_file speakofthedevillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The beer ain't no [F]colder here [G7]than other taverns where I've [C]been
@@ -29,3 +32,6 @@ Speaking of [D7]tortured dreams loving in [G7]vain
 [C]Speaking of [F]try-[G7]ing to forget [C]again
 Speak of the [F]devil [G7]and she walks [C]in
 {end_of_verse}
+
+
+

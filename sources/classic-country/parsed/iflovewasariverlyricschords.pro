@@ -1,6 +1,9 @@
 {meta: title If Love Was A River}
 {meta: artist Alan Jackson}
 {meta: composer Adam Wright and Shannon Wright}
+{meta: x_source classic-country}
+{meta: x_source_file iflovewasariverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If love was a river and I was a drowning [G7]man
@@ -35,3 +38,7 @@ If love was a [C]fast train on a one way [G7]track
 Would you turn in your [C]ticket would you never look [F]back
 If love was a [C]fast train [G7]would you even [C]pack
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Ain't Giving Up Nothing}
 {meta: artist Mickey Gilley}
 {meta: composer Brook Benton and Clyde Otis}
+{meta: x_source classic-country}
+{meta: x_source_file iaintgivingupnothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you want me to love you you've gotta love me too
@@ -34,3 +37,7 @@ I [C]ain't giving up nothing if I [G7]can't have something from [C]you
 Umm I ain't giving up nothing if I [G7]can't have something from [C]you
 I ain't giving up nothing if I [G7]can't have something from [C]you
 {end_of_verse}
+
+
+
+

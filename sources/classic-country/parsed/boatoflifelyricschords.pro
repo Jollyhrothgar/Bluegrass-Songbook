@@ -1,6 +1,9 @@
 {meta: title Boat Of Life}
 {meta: artist George Jones}
 {meta: composer George Jones and Burl Stephens}
+{meta: x_source classic-country}
+{meta: x_source_file boatoflifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My friend is the going rough with [F]troubled seas [C]around
@@ -22,3 +25,5 @@
 [C]So why not call on Jesus He'll [F]help you safely [C]on
 [G7]Oh my friend it's foolish to paddle all [C]alone
 {end_of_verse}
+
+

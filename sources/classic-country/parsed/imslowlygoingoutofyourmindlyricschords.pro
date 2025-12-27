@@ -1,6 +1,9 @@
 {meta: title I'm Slowly Going Out Of Your Mind}
 {meta: artist Hank Locklin}
 {meta: composer Becki Bluefield}
+{meta: x_source classic-country}
+{meta: x_source_file imslowlygoingoutofyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm [C]slow[D7]ly a going out of your [G]mind
@@ -38,3 +41,8 @@ I'm [C]slow[D7]ly a going out of your [G]mind
 I'm [C]slow[D7]ly a going out of your [G]mind
 I'm [C]slow[D7]ly a going out of your [G]mind
 {end_of_verse}
+
+
+
+
+

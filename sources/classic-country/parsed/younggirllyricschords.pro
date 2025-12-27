@@ -1,5 +1,8 @@
 {meta: title Young Girl}
 {meta: artist Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file younggirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I keep on listening to my heart 
@@ -46,3 +49,8 @@ And it's [F]gonna be hard to [Fm]do
 I can [C]hardly [Em]keep my [Am]distance
 Cause I'm [A#7]falling [G7]in love with [C]you
 {end_of_verse}
+
+
+
+
+

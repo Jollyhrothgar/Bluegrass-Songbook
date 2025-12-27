@@ -1,5 +1,8 @@
 {meta: title Where Could I Go}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file wherecouldigolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Living below in [F]this old sinful [C]world 
@@ -21,3 +24,5 @@ Comfort I get from God's own [G7]word
 [C]Yet when I face the [F]chilling hand of [C]death 
 Where [F]could I [C]go but to [G7]the [C]Lord
 {end_of_verse}
+
+

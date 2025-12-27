@@ -1,6 +1,9 @@
 {meta: title The Lord Knows I'm Drinking}
 {meta: artist Cal Smith}
 {meta: composer Bill Anderson [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file thelordknowsimdrinkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello Mrs. Johnson you self-righteous woman
@@ -41,3 +44,7 @@ The Lord knows I'm [C]sinning  and sinning ain't [G]right
 But me and the Good Lord's gonna have us a good [D7]talk
 Later [G]tonight
 {end_of_verse}
+
+
+
+

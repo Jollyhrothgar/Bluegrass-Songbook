@@ -1,6 +1,9 @@
 {meta: title I Heard The Bells On Christmas Day}
 {meta: artist Larry Sparks}
 {meta: composer Henry Wadsworth Longfellow and Johnny Marks}
+{meta: x_source classic-country}
+{meta: x_source_file iheardthebellsonChristmasdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard the [Am]bells on [D7]Christmas [G7]day
@@ -42,3 +45,8 @@
 [D7]Of peace on earth good [G7]will to [C]men
 [D7]Of peace on earth good [G7]will to [C]men
 {end_of_verse}
+
+
+
+
+

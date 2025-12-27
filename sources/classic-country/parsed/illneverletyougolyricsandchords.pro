@@ -1,5 +1,8 @@
 {meta: title I'll Never Let You Go}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file illneverletyougolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ask for anything you [C]please
@@ -40,3 +43,8 @@ You will find me at your [C]side
 You will find me at your [C]side
 [D7]Cause I'll never let you [G]go
 {end_of_verse}
+
+
+
+
+

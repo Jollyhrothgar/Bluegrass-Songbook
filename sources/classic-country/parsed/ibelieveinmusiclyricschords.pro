@@ -1,6 +1,9 @@
 {meta: title I Believe In Music}
 {meta: artist The Statler Brothers}
 {meta: composer Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file ibelieveinmusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I believe in [Dm]music [F]I [G7]  believe in [C]love
@@ -36,3 +39,8 @@ I believe in [Dm]music [F]I [G7]  believe in [C]love
 {start_of_verse: Verse 6}
 I'll sing and shout it for He’s [F]everything to [C]me
 {end_of_verse}
+
+
+
+
+

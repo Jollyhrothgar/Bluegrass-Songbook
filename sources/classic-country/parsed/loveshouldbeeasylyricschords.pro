@@ -1,6 +1,9 @@
 {meta: title Love Should Be Easy}
 {meta: artist Johnny Duncan and Janie Fricke}
 {meta: composer Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file loveshouldbeeasylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I watched her walking in with a [F]guitar in her hands
@@ -42,3 +45,8 @@ Love should be [G7]easy so let’s make it easy [C]tonight
 {start_of_verse: Verse 5}
 Yeah she [G7]smiled and said making love will be easy [F]tonigh[C]t
 {end_of_verse}
+
+
+
+
+

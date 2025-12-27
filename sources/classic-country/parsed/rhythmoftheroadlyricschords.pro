@@ -1,6 +1,9 @@
 {meta: title Rhythm Of The Road}
 {meta: artist George Strait}
 {meta: composer Dan McCoy}
+{meta: x_source classic-country}
+{meta: x_source_file rhythmoftheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd rather be home 
@@ -63,3 +66,11 @@ A 4/4 beat's the only [Am]time I keep
 {start_of_verse: Verse 9}
 [D7]Livin' in the [G7]rhythm of the [C]road
 {end_of_verse}
+
+
+
+
+
+
+
+

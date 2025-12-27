@@ -1,6 +1,9 @@
 {meta: title Fraulein}
 {meta: artist Bobby Helms}
 {meta: composer Lawton Williams}
+{meta: x_source classic-country}
+{meta: x_source_file frauleinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Far across deep blue waters  lives an old German's [F]daughter
@@ -29,3 +32,6 @@ Fraulein Fraulein walk down by the [F]river
 By the same stars above you I swear that I love [F]you
 [G7]You are my pretty [C]Fraulein
 {end_of_verse}
+
+
+

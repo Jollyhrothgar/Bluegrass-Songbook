@@ -1,5 +1,8 @@
 {meta: title I Let My Mind Wonder}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file iletmymindwonderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I let my mind wonder
@@ -48,3 +51,9 @@ It's worse than a child
 [D7]But in terrible memories
 [G7]Seem to lure it away
 {end_of_verse}
+
+
+
+
+
+

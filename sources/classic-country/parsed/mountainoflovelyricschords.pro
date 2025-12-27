@@ -1,5 +1,8 @@
 {meta: title Mountain Of Love}
 {meta: artist Charlie Pride}
+{meta: x_source classic-country}
+{meta: x_source_file mountainoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Standing on a mountain looking down on a city
@@ -49,3 +52,9 @@ Night after night I been standing here alone
 [G7]Trying hard to find you  somewhere I [F]love
 C G7 CHigh on a mountain of love
 {end_of_verse}
+
+
+
+
+
+

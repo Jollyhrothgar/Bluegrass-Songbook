@@ -1,6 +1,9 @@
 {meta: title Smoke On The Water}
 {meta: artist Bob Wills}
 {meta: composer Earl Nunn &amp; Zeke Clements}
+{meta: x_source classic-country}
+{meta: x_source_file smokeonthewaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There will be a sad day coming for the foes of all mankind
@@ -29,3 +32,6 @@ When our Army and Navy over[D7]take the ene[G7]my
 There'll be [C]smoke on the mountain where the heathen Gods stay
 And the sun that is shining will go [G7]down on that [C]day
 {end_of_verse}
+
+
+

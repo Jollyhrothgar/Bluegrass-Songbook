@@ -1,6 +1,9 @@
 {meta: title You Never Were Mine}
 {meta: artist Loretta Lynn}
 {meta: composer Jay Lee Webb}
+{meta: x_source classic-country}
+{meta: x_source_file youneverwereminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's late almost mornin' you just [F]walked in the [C]door
@@ -27,3 +30,6 @@ Oh [C]no I'm not cryin' I've [F]had too much [C]wine
 Oh no I'm not cryin' I've [F]had too much [C]wine
 Oh [G7]how can I lose you when you never were [F]min[C]e
 {end_of_verse}
+
+
+

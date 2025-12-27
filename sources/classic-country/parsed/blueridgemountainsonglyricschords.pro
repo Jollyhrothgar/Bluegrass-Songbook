@@ -1,5 +1,8 @@
 {meta: title Blue Ridge Mountain Song}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file blueridgemountainsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He met her in the fall of '9[C]3 in the hills of Tenne[G]ssee
@@ -110,3 +113,17 @@ Sing a little blue ridge mountain [C]song
 [G]Sing a little blue ride mountain [C]song
 [G]Little blue ridge mountain [C]song
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

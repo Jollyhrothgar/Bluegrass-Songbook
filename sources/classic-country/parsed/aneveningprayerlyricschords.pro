@@ -1,6 +1,9 @@
 {meta: title An Evening Prayer}
 {meta: artist Mel Tillis}
 {meta: composer Charles H. Gabriel and C.M. Battersby}
+{meta: x_source classic-country}
+{meta: x_source_file aneveningprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I have wounded some poor [G7]soul [F]today
@@ -29,3 +32,6 @@ Forgive these sins I have confessed [G7]to [F]Thee
 [C]Guide me  love me and my keeper [F]be
 Dear [C]Lord  [C][G7]for-give
 {end_of_verse}
+
+
+

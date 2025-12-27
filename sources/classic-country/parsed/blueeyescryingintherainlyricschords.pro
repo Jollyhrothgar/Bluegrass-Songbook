@@ -1,6 +1,9 @@
 {meta: title Blue Eyes Crying in the Rain}
 {meta: artist Willie Nelson}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file blueeyescryingintherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the twilight glow I see her
@@ -36,3 +39,8 @@ I can see her star in heaven
 [G7]Blue eyes crying in the [C]rain
 [G7]Blue eyes crying in the [C]rain
 {end_of_verse}
+
+
+
+
+

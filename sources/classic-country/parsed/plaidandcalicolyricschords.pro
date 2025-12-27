@@ -1,6 +1,9 @@
 {meta: title Plaid and Calico}
 {meta: artist Johnny Horton}
 {meta: composer Bruce Blalock and Wes McWain}
+{meta: x_source classic-country}
+{meta: x_source_file plaidandcalicolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Calico calico plaid and cali[C]co
@@ -61,3 +64,11 @@ Like the [G7]good old fashioned days of long [C]ago
 They fell in love they danced all night
 They said I do all dressed in [G7]plaid and [C]calico
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Meet You In The Morning}
 {meta: artist Hee Haw Quartet}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file illmeetyouinthemorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I will meet you in the morning by the [F]bright [C]riverside
@@ -49,3 +52,10 @@ When I meet you in the morning
 Repeat
 #2
 {end_of_verse}
+
+
+
+
+
+
+

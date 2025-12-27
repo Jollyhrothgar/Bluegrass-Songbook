@@ -1,6 +1,9 @@
 {meta: title You're Driving You Out Of My Mind}
 {meta: artist Jerry Wallace}
 {meta: composer Jerry Fuller and Carl Belew}
+{meta: x_source classic-country}
+{meta: x_source_file youredrivingyououtofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You’re driving you out of my [C]mind
@@ -33,3 +36,7 @@ Mean little things you know will [C]make me blue
 Can it be you wanna see [C7]where I draw the [F]line
 [G7]Slowly you’re driving you out of my [C]mind
 {end_of_verse}
+
+
+
+

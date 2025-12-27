@@ -1,6 +1,9 @@
 {meta: title Don't Ask Me Why}
 {meta: artist Jim Reeves}
 {meta: composer Joan Hager}
+{meta: x_source classic-country}
+{meta: x_source_file dontaskmewhylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't ask me why I stand aside
@@ -43,3 +46,8 @@ Why I [F]keep standing [G7]by
 But if you want to know I'll [C]say I love her so
 Though [F]I don't [G7]know the reason [C]why
 {end_of_verse}
+
+
+
+
+

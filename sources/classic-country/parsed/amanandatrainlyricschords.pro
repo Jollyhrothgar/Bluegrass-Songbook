@@ -1,6 +1,9 @@
 {meta: title A Man And A Train}
 {meta: artist Marty Robbins}
 {meta: composer Hal David and Frank DeVol}
+{meta: x_source classic-country}
+{meta: x_source_file amanandatrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A man and a train a train and a man
@@ -29,3 +32,6 @@ I've [D7]got a dream a beautiful dream and that makes me a [G]man[D7]
 No don't [G]try to stop me don't try to stop me cause nobody [C]can
 I've got a [D7]dream a beautiful dream and that makes me makes me a [G]man
 {end_of_verse}
+
+
+

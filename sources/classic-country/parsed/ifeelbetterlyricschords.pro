@@ -1,6 +1,9 @@
 {meta: title I Feel Better}
 {meta: artist Cowboy Copas}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file ifeelbetterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like many times before when [C]I awoke this [G]morning
@@ -43,3 +46,8 @@ I feel better now [A7]way down in my [D7]soul
 When [G]I awoke this morning the [C]skies looked mighty [G]gray
 But I feel better now [D7]since I [G]prayed
 {end_of_verse}
+
+
+
+
+

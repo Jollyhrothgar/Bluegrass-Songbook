@@ -1,6 +1,9 @@
 {meta: title There's A Heartache Following Me}
 {meta: artist Jim Reeves}
 {meta: composer Jim Reeves and James O'Gynn}
+{meta: x_source classic-country}
+{meta: x_source_file heartachefollowingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes they ask me  [D7]if I'm really happy [G]now
@@ -22,3 +25,5 @@
 [C]But I know it's just a game  and [G]the loser's always [C]me
 [G]I look around  and there's [D7]a heartache following [G]me
 {end_of_verse}
+
+

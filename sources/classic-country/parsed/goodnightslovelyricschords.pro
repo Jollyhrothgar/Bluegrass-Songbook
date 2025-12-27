@@ -1,6 +1,9 @@
 {meta: title Good Night's Love}
 {meta: artist Tammy Wynette}
 {meta: composer Chester Lester and Tim Dubois}
+{meta: x_source classic-country}
+{meta: x_source_file goodnightslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What you need is a good night's [F]love
@@ -45,3 +48,9 @@ I'll take the phone off of the hook
 [F]I'm here to see that you get enough
 [G7]What you need is a good night's [C]love
 {end_of_verse}
+
+
+
+
+
+

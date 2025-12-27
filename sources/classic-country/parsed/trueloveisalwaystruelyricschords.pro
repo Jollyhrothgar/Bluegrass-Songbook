@@ -1,6 +1,9 @@
 {meta: title True Love Is Always True}
 {meta: artist Hank Locklin}
 {meta: composer Wayne P. Walker and Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file trueloveisalwaystruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]True love is [C]mighty hard to [G]find
@@ -40,3 +43,8 @@ True love is sweet love and [D7]true love’s always [G]true
 {start_of_verse: Verse 4}
 True love is sweet love and [D7]true love’s always [G]true
 {end_of_verse}
+
+
+
+
+

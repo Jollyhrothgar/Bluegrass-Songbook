@@ -1,6 +1,9 @@
 {meta: title Down Where The Still Waters Flow}
 {meta: artist J.D. Crowe}
 {meta: composer Pete Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file downwherethestillwatersflowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dark shadows always were with [G7]me
@@ -29,3 +32,6 @@ And [G7]happiness waits there I [C]know
 Come [C7]love let us [F]wander
 [G7]Down where the still waters [C]flow
 {end_of_verse}
+
+
+

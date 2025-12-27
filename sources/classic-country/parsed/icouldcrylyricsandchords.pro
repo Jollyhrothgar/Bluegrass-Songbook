@@ -1,5 +1,8 @@
 {meta: title I Could Cry}
 {meta: artist The Rarely Herd}
+{meta: x_source classic-country}
+{meta: x_source_file icouldcrylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I could cry an ocean of [G7]tears
@@ -35,3 +38,7 @@ But what [D7]good would it [G7]do
 I'll just keep [C]your memory as years go by
 But when your [G7]name's mentioned darling I could [C]cry
 {end_of_verse}
+
+
+
+

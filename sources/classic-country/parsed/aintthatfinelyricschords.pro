@@ -1,5 +1,8 @@
 {meta: title Ain't That Fine}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file aintthatfinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I fell in [C]love in [G]Texas 
@@ -58,3 +61,11 @@ Come on ain't that [C]fine ain't that [G]fine
 Ain't that fine [C]fine [G]fine [D7]she's all [G]mine
 Yeah ain't that fine [C]fine [G]fine [D7]she's all [G]mine
 {end_of_verse}
+
+
+
+
+
+
+
+

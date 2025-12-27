@@ -1,5 +1,8 @@
 {meta: title Just To Hold A Little Hand}
 {meta: artist John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file justtoholdalittlehandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Just to [C]hold a little hand and [F]know all the [C]love
@@ -39,3 +42,8 @@ Oh what a [Am]feeling to [G7]hold a little [C]hand
 {start_of_verse: Verse 4}
 Oh what a [Am]feeling to [G7]hold a little [F]hand[C]
 {end_of_verse}
+
+
+
+
+

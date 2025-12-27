@@ -1,6 +1,9 @@
 {meta: title You Don't Have To Go Home}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Larry Shell, Larry Cordle, Jerry Salley}
+{meta: x_source classic-country}
+{meta: x_source_file youdonthavetogohomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The [G7]Lord knows I'm [C]guilty [C7]of livin' my [F]life
@@ -34,3 +37,7 @@ You'll know where you're [C]going [G7]if He calls you [C]tonight
 For all in this [F]world [A#7]that's un[F]certain one thing is [C]clear
 [Am]You don't have to go [F]home [G7]but you can't stay [C]here
 {end_of_verse}
+
+
+
+

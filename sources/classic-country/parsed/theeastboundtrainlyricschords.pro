@@ -1,6 +1,9 @@
 {meta: title The East Bound Train}
 {meta: artist Mac Wiseman}
 {meta: composer Mark Knopfler}
+{meta: x_source classic-country}
+{meta: x_source_file theeastboundtrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The east bound [G7]train was [C]crowded 
@@ -43,3 +46,8 @@ He said God [G7]bless you [C]little one
 You’ll never need a [F]ticket
 While [G7]I am on this [C]car
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Every Which Way But Loose}
 {meta: artist Eddie Rabbitt}
 {meta: composer Snuff Garrett, Stephen Dorff, Milton Brown}
+{meta: x_source classic-country}
+{meta: x_source_file everywhichwaybutlooselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve always been the kind of man
@@ -56,3 +59,7 @@ While you’re turning me
 [C]Baby there’s no excuse to turn [A7]me
 [Dm]Every which [G7]way but [C][F]loose
 {end_of_verse}
+
+
+
+

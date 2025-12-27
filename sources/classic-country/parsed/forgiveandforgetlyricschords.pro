@@ -1,5 +1,8 @@
 {meta: title Forgive And Forget}
 {meta: artist Eddie Rabbitt}
+{meta: x_source classic-country}
+{meta: x_source_file forgiveandforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When a man cheats on a [Em]woman it's [F]understood he's just a [G7]man
@@ -28,3 +31,6 @@ Instead I said things that I [Dm]regret
 Why couldn't [C]I just hold her  [F]and say it didn't [C]matter
 Why couldn't I  [G7]forgive and [C]forget
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When I've Traveled My Last Mile}
 {meta: artist Jamie Dailey and Darrin Vincent}
 {meta: composer Henry Donohue}
+{meta: x_source classic-country}
+{meta: x_source_file whenivetraveledmylastmilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 When I've Traveled My Last Mile
@@ -47,3 +50,9 @@ To carry me [D7]over the [G]sea
 {start_of_verse: Verse 5}
 In beautiful [D7]heaven I [G]know
 {end_of_verse}
+
+
+
+
+
+

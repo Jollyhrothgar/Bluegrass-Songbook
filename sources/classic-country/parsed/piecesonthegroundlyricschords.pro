@@ -1,6 +1,9 @@
 {meta: title Pieces On The Ground}
 {meta: artist Patty Loveless}
 {meta: composer John Bunzow}
+{meta: x_source classic-country}
+{meta: x_source_file piecesonthegroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mend this [Em]broken [Am]body in [F]pieces on the [C]ground[G7]
@@ -29,3 +32,6 @@ I saw [F]all of my [C]tomorrows and we're [Dm]standing in the [G7]light
 We are [F]high upon a [C]hilltop healing [F]hands touching me [C]now
 Mend[Dm]ing this [C]broken [Am]body in [F]pieces [G7]on the [C]ground
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hemlock And Primroses}
 {meta: artist Ralph Stanley}
 {meta: composer Landon Messer, Albert Parsley, Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file hemlockandprimroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Thinking of you while out for a ramble
@@ -29,3 +32,6 @@ With two empty [C]ar-[D7]ms and you on my [G]mind
 Heaven seemed so near while I was dreaming
 It hurts to [C]kn-[D7]ow you left me [G]behind
 {end_of_verse}
+
+
+

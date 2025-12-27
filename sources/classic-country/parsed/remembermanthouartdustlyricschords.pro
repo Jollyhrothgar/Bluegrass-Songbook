@@ -1,6 +1,9 @@
 {meta: title Remember Man Thou Art Dust}
 {meta: artist Cowboy Copas}
 {meta: composer Ken McRae and Harvey Boileau}
+{meta: x_source classic-country}
+{meta: x_source_file remembermanthouartdustlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Long years [G7]ago but [C]when a child my [F]mother said to [C]me
@@ -35,3 +38,6 @@ To [F]practice what I’ve [C]learned
 Just [F]remember [B7]son that [C]thou art [Am]dust
 And to [D7]dust you [G7]must re[C]turn
 {end_of_verse}
+
+
+

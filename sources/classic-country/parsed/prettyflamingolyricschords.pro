@@ -1,6 +1,9 @@
 {meta: title Pretty Flamingo}
 {meta: artist The Everly Brothers}
 {meta: composer Mark Barkan}
+{meta: x_source classic-country}
+{meta: x_source_file prettyflamingolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On our [G]block [C]all of the [G]guys
@@ -48,3 +51,9 @@ Some sweet [G]day [C]I'll make her [G]mine
 Sha la la [C]la la la [G]la [C]pretty Fla[G]mingo
 Sha la la [C]la la la [G]la [C]pretty Fla[G]mingo
 {end_of_verse}
+
+
+
+
+
+

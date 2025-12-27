@@ -1,6 +1,9 @@
 {meta: title Our Last Night Together}
 {meta: artist Roy Drusky}
 {meta: composer Dave Rich}
+{meta: x_source classic-country}
+{meta: x_source_file ourlastnighttogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know it shouldn't [G7]be like this
@@ -25,3 +28,6 @@ And forever these words will [C]refrain [G7]
 Good[C]night goodbye for[F]ever
 Oh [G7]this is our last night [C]together
 {end_of_verse}
+
+
+

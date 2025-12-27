@@ -1,6 +1,9 @@
 {meta: title Have A Nice Rest Of Your Life}
 {meta: artist Randy Travis}
 {meta: composer Verlon Thompson and Mark D. Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file haveanicerestofyourlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's not a mean bone in my body [D7]I never [G7]could be [C]unkind
@@ -30,3 +33,6 @@
 [F]Have a nice [G7]rest of your life without [C]me
 [D7]Without [C]me
 {end_of_verse}
+
+
+

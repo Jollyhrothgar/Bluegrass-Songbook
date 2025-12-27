@@ -1,6 +1,9 @@
 {meta: title Please Remember Me}
 {meta: artist Johnny Duncan}
 {meta: composer Hank Mills}
+{meta: x_source classic-country}
+{meta: x_source_file pleaseremembermelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was so surprised [D7]when you said hello
@@ -41,3 +44,8 @@ What could I [G]say cause I'm not [C]free
 You [G]walked away at last never [Am]more to ask
 [D7]Please [Am]remem[D7]ber [G]me
 {end_of_verse}
+
+
+
+
+

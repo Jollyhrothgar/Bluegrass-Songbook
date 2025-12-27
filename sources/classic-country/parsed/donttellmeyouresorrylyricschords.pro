@@ -1,6 +1,9 @@
 {meta: title Don't Tell Me You're Sorry}
 {meta: artist Conway Twitty}
 {meta: composer Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file donttellmeyouresorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm sorry honey that you walked in 
@@ -58,3 +61,11 @@ But I'm sorry as I can [G]be
 And give me no sass
 [A7]Cause you belong to [D7]me
 {end_of_verse}
+
+
+
+
+
+
+
+

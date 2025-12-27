@@ -1,6 +1,9 @@
 {meta: title Gonna Take A Lot Of River}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Mark Henley and John Kurhajetz}
+{meta: x_source classic-country}
+{meta: x_source_file gonnatakealotofriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I ain't gonna ride no rail or hitchhike down no [G7]highway
@@ -47,3 +50,9 @@ Gonna take a lot of river running all the live long [C]day
 Gonna take the Mississippi the Monongahela and the [G7]Ohio
 Gonna take a lot of river to wash these blues [C]away
 {end_of_verse}
+
+
+
+
+
+

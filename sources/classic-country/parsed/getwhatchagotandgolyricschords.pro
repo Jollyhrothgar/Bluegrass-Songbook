@@ -1,6 +1,9 @@
 {meta: title Get What'cha Got And Go}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn, Ron Williams, Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file getwhatchagotandgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A pretty boy Charlie's the name that you've been a given
@@ -33,3 +36,6 @@ Every [C]night you go downtown where the go-go's [F]go
 Well you [C]think you're so hot and you tell me I'm not
 So [G7]get what'cha got and [C]go
 {end_of_verse}
+
+
+

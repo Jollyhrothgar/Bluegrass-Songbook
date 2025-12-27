@@ -1,6 +1,9 @@
 {meta: title I Fall to Pieces}
 {meta: artist Patsy Cline}
 {meta: composer Harlan Howard and Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file ifalltopieceslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I  [C]Fall To [D7]Pieces  
@@ -27,3 +30,4 @@ The way you used to [G]do
 With someone [G]new 
 [G7]You walk by [C]and I [D7]fall to [G]pieces
 {end_of_verse}
+

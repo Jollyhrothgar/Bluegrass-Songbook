@@ -1,6 +1,9 @@
 {meta: title My Mother's Bible}
 {meta: artist Don Reno and Bill Harrell}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file mymothersbiblelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a book that mother left me 
@@ -57,3 +60,10 @@ Just [C]before she went to [G]sleep
 If I [C]read it and believed it 
 Jesus [D7]then my soul would [G]keep 
 {end_of_verse}
+
+
+
+
+
+
+

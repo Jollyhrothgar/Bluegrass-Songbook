@@ -1,5 +1,8 @@
 {meta: title Don't Throw Me Away}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file dontthrowmeawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't be [E7]foolish [F]don't don't throw me [Fm]away
@@ -32,3 +35,7 @@ Don't be [E7]foolish [F]don't don't throw me [Fm]away
 [C]Keep me around just [A#7]for keeps [A7]dear 
 You [Dm]might need a [G7]laugh some[C]day
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Same Old Tale The Crow Told Me}
 {meta: artist Johnny Horton}
 {meta: composer Bill Carlisle}
+{meta: x_source classic-country}
+{meta: x_source_file thesameoldtalethecrowtoldmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well a tom cat sittin’ on a [F]bale of [C]hay
@@ -61,3 +64,10 @@ Way down yonder [G7]by the sycamore [C]tree
 It’s the same old tale that the [F]crow told [C]me
 Way down yonder [G7]by the sycamore [C]tree
 {end_of_verse}
+
+
+
+
+
+
+

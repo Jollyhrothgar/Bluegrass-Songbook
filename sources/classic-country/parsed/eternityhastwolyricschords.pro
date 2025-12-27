@@ -1,6 +1,9 @@
 {meta: title Eternity Has Two}
 {meta: artist Doyle Lawson}
 {meta: composer Dee Gaskin and John Swain}
+{meta: x_source classic-country}
+{meta: x_source_file eternityhastwolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the melody’s [G7]been [C]written
@@ -48,3 +51,9 @@
 [F]This life has many [Am][C]choices
 [C]Eternity [G7]has [C]two
 {end_of_verse}
+
+
+
+
+
+

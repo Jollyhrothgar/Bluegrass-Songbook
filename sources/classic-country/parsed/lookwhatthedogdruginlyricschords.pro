@@ -1,5 +1,8 @@
 {meta: title Look What The Dog Drug In}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhatthedogdruginlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was Saturday night and I was feeling all right
@@ -62,3 +65,11 @@ Look what the dog drug [G]in
 {start_of_verse: Verse 9}
 [D7]Look what the dog drug [G]in
 {end_of_verse}
+
+
+
+
+
+
+
+

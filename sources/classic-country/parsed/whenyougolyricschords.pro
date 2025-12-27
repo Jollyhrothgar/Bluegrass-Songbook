@@ -1,6 +1,9 @@
 {meta: title When You Go}
 {meta: artist Ferlin Husky}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file whenyougolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This cry inside is big [C]enough to drown [G]me
@@ -30,3 +33,6 @@
 [D7]Why don't you take it with you when you [G]go
 [D7]Why don't you take it with you when [C]you [G]go
 {end_of_verse}
+
+
+

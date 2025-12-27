@@ -1,6 +1,9 @@
 {meta: title I Don't Apologize For Loving You}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Velma Burns}
+{meta: x_source classic-country}
+{meta: x_source_file idontapologizeforlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We're the past time of the gossip and it hurts me through and [F]through
@@ -29,3 +32,6 @@ Just a habit that I have of loving [G7]you
 I'm [C]sorry that the other hearts were broken by our [F]love
 But [G7]I don't apologize for loving [C]you
 {end_of_verse}
+
+
+

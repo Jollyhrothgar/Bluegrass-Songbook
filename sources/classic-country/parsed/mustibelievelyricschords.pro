@@ -1,6 +1,9 @@
 {meta: title Must I Believe}
 {meta: artist Brenda Lee}
 {meta: composer Eddie Polo}
+{meta: x_source classic-country}
+{meta: x_source_file mustibelievelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Must I believe in every [F]breath of lif[Fm]e
@@ -23,3 +26,5 @@ Must I believe in the dreams [F]of yesterda[Fm]y
 They seem so [C]far away [F]must I be[C]lieve 
 [Dm]Must [F]I be[C]lieve
 {end_of_verse}
+
+

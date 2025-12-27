@@ -1,5 +1,8 @@
 {meta: title Then I Turned and Walked Slowly Away}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file theniturnedandwalkedslowlyawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw you last night [C7]again [F]darlin'
@@ -28,3 +31,6 @@ There's [G7]nothin' more left now to [C]say
 I [C]saw you last night again [F][C7]darlin'
 Then I [C]turned and walked [G7]slowly [C]away
 {end_of_verse}
+
+
+

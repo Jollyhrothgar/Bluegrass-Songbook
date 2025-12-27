@@ -1,6 +1,9 @@
 {meta: title Whiskey Lullaby}
 {meta: artist Brad Paisley}
 {meta: composer Bill Anderson and Jon Randall}
+{meta: x_source classic-country}
+{meta: x_source_file whiskeylullabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She put him [G7]out like the [C]burning end of a midnight ciga[Em]rette
@@ -59,3 +62,10 @@ La la la la la la [C]la
 [Em]La la la la la la la
 La la la la la la [C]la
 {end_of_verse}
+
+
+
+
+
+
+

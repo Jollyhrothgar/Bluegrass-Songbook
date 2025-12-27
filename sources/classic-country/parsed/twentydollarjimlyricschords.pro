@@ -1,5 +1,8 @@
 {meta: title Twenty Dollar Jim}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file twentydollarjimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once a week he’d come into the nightclub
@@ -60,3 +63,11 @@ Here’s a [G]twenty for a love song for my [C]baby
 {start_of_verse: Verse 9}
 Singer won’t you sing me back to [D7]baby one more [C]tim[G]e
 {end_of_verse}
+
+
+
+
+
+
+
+

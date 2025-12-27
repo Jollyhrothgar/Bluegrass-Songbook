@@ -1,6 +1,9 @@
 {meta: title Stop The World and Let Me Off}
 {meta: artist Merle Haggard}
 {meta: composer Carl}
+{meta: x_source classic-country}
+{meta: x_source_file stoptheworldandletmeofflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stop the world and let [G7]me off
@@ -47,3 +50,10 @@ So stop the world and let [C]me off
 , #2,
 #1
 {end_of_verse}
+
+
+
+
+
+
+

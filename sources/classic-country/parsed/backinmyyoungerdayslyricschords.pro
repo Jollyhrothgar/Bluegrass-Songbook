@@ -1,6 +1,9 @@
 {meta: title Back In My Younger Days}
 {meta: artist Don Williams}
 {meta: composer Danny Flowers}
+{meta: x_source classic-country}
+{meta: x_source_file backinmyyoungerdayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Back in my [C]younger days  I [F]used to go [G7]all [C]night
@@ -33,3 +36,7 @@
 [G7]Back in my [C]younger days  [F]back in my [G7]younger [C]days
 [G7]It's better than it [C]used to be  [F]back in my [G7]younger [C]days
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Down In The Valley}
 {meta: artist Jim Ed Brown}
+{meta: x_source classic-country}
+{meta: x_source_file downinthevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down in the valley  valley so [G7]low
@@ -21,3 +24,5 @@ Angels in heaven know I love [C]you
 Know I love you dear know I love [G7]you
 Angels in heaven know I love [C]you
 {end_of_verse}
+
+

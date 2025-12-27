@@ -1,5 +1,8 @@
 {meta: title Tomorrow’s Just Another Day To Cry}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrowsjustanotherdaytocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tomorrow's just another day to [F]wish you hadn't gone away
@@ -21,3 +24,5 @@ I [D7]cried the night you told me [G7]we would have to part
 [C]Tomorrow's just another day [F]to wish you hadn't gone away
 [C]Tomorrow's just [G7]another day to [C]cry
 {end_of_verse}
+
+

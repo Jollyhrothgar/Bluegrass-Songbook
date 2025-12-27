@@ -1,6 +1,9 @@
 {meta: title Call Me Crazy}
 {meta: artist Ricky Van Shelton}
 {meta: composer Wendell Mobley and Brett Jones}
+{meta: x_source classic-country}
+{meta: x_source_file callmecrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Got my heart broke in the second grade
@@ -37,3 +40,6 @@ And if [F]heartache [C]didn't [G]phase me
 Ain't [F]nothin' [C]gonna change [G]me
 [F]Call [C]me [G]crazy but I [A7]still [C]believe in [G]love
 {end_of_verse}
+
+
+

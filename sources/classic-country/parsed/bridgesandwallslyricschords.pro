@@ -1,6 +1,9 @@
 {meta: title Bridges And Walls}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Roger Alan Murrah and Randall Edwin Van Warmer}
+{meta: x_source classic-country}
+{meta: x_source_file bridgesandwallslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some friends you'd cry for [G7]but you I would [C]die for 
@@ -33,3 +36,7 @@ When hearts go to [F]pieces love crumbles and [C]falls
 {start_of_verse: Verse 4}
 [F]Like stones made of [C]memories [G7]from bridges and [C]walls 
 {end_of_verse}
+
+
+
+

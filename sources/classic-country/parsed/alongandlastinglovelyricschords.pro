@@ -1,6 +1,9 @@
 {meta: title A Long And Lasting Love}
 {meta: artist Crystal Gayle}
 {meta: composer Gerry Goffin and Michael H. Masser}
+{meta: x_source classic-country}
+{meta: x_source_file alongandlastinglovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A long and lasting [F]love
@@ -55,3 +58,9 @@ A long and lasting [F]love
 I [Em]knew I'd [Am]really [Dm]seen love
 A [G7]long and lasting [C]love [C7]
 {end_of_verse}
+
+
+
+
+
+

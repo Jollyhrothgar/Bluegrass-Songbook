@@ -1,6 +1,9 @@
 {meta: title Set Me Free}
 {meta: artist Tammy Wynette}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file setmefreelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you think you've [C]had enough 
@@ -37,3 +40,7 @@ Release the chains that [C]bind me to [Am]thee [D7]
 Set me [G]free
 [C]Set me [G]free
 {end_of_verse}
+
+
+
+

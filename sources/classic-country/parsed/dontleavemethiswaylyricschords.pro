@@ -1,5 +1,8 @@
 {meta: title Don't Leave Me This Way}
 {meta: artist Ricky Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file dontleavemethiswaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you came along oh happy was [G7]I
@@ -36,3 +39,8 @@
 {start_of_verse: Verse 5}
 [G7]Oh baby  don't leave me this [C]way
 {end_of_verse}
+
+
+
+
+

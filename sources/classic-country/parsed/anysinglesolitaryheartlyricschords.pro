@@ -1,6 +1,9 @@
 {meta: title Any Single Solitary Heart}
 {meta: artist The Everly Brothers}
 {meta: composer John Hiatt and Mike Porter}
+{meta: x_source classic-country}
+{meta: x_source_file anysinglesolitaryheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]You’ve lost at love [F]before you never [G]closed that [C]door
@@ -33,3 +36,6 @@
 [C]Or where a [Dm]teardrop [C]starts
 [G]Just ask any single [C]solitary [F][Em]heart
 {end_of_verse}
+
+
+

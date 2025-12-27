@@ -1,6 +1,9 @@
 {meta: title Welcome Home Mr. Blues}
 {meta: artist Hank Locklin}
 {meta: composer Charles R. Phipps}
+{meta: x_source classic-country}
+{meta: x_source_file welcomehomemrblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There is someone at the door guess [G7]I'd better go see
@@ -22,3 +25,5 @@ And when she [F]left I knew that [D7]you would soon be [G7]coming back again
 I planned n[C]othing for this eve[G7]ning come on in ta[C]ke off your shoes  [C7]
 We're gonna [F]have ourselves a [C]party welcome [G7]home Mr. [C]Blues
 {end_of_verse}
+
+

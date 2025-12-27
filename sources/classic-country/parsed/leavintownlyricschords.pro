@@ -1,6 +1,9 @@
 {meta: title Leavin' Town}
 {meta: artist Waylon Jennings}
 {meta: composer Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file leavintownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There she goes [F]again see her [C]smilin'
@@ -31,3 +34,6 @@
 [F]Mmm mmm mmm leavin' [C]town
 [F]Bet she's even glad I'm leavin' [C]town
 {end_of_verse}
+
+
+

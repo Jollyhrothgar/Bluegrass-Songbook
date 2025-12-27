@@ -1,6 +1,9 @@
 {meta: title What'll I Do If I Don't Have You}
 {meta: artist David Ball}
 {meta: composer Russell Brown and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file whatllidoifidonthaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What’ll I do if I don’t have [Am]you
@@ -58,3 +61,11 @@ Without [C]your love when the sun goes [F]down
 [C]What’ll I [Am]do if I [Dm]don’t have [G7]you
 [Dm]How will I [G7]find my [C]way
 {end_of_verse}
+
+
+
+
+
+
+
+

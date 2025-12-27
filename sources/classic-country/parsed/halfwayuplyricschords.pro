@@ -1,6 +1,9 @@
 {meta: title Half Way Up}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file halfwayuplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've seen it going around when you get bad news
@@ -50,3 +53,9 @@ One man's [F]half way up is [D7]another man's half way [G]down
 [A]One man's smile is [C]another man's frown
 And there are [D]miles of half way [D7]up or half way [G]down
 {end_of_verse}
+
+
+
+
+
+

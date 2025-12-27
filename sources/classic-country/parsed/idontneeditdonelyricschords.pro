@@ -1,6 +1,9 @@
 {meta: title I Don't Need It Done}
 {meta: artist Dwight Yoakam}
 {meta: composer John Sieger}
+{meta: x_source classic-country}
+{meta: x_source_file idontneeditdonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Honey you sure do it well but [C]I don't need it [D7]done
@@ -50,3 +53,9 @@ Yeah [D7]I found a real true love now I don't need it [G]done
 I don't need it done oh I don't need it [C]done 
 Yeah I [D7]found a real true love now I don't need it [G]done
 {end_of_verse}
+
+
+
+
+
+

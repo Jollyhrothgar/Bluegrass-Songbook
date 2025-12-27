@@ -1,6 +1,9 @@
 {meta: title Long Line Of Love}
 {meta: artist Paul Overstreet}
 {meta: composer Paul Overstreet and Thom Schuyler}
+{meta: x_source classic-country}
+{meta: x_source_file longlineoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I bought a beautiful diamond ring 
@@ -46,3 +49,9 @@ Son you [C]come from a [G7]long line of [C]love
 {start_of_verse: Verse 7}
 [F]Yes you [C]come from a [G7]long line of [C]love
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You'll Still Be In My Heart}
 {meta: artist Ernest Tubb}
 {meta: composer Buddy Starcher and Ted West}
+{meta: x_source classic-country}
+{meta: x_source_file youllstillbeinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There was a time when you were mine and [C]my heart knew no pain
@@ -29,3 +32,6 @@ On [D7]that sad day beneath the clay to sleep forever [G]more
 Should you be there in deep despair when [C]burning teardrops start
 Please [D7]don't forget I love you yet you'll still be in my [G]heart 
 {end_of_verse}
+
+
+

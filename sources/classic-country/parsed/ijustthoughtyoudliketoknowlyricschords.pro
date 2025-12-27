@@ -1,6 +1,9 @@
 {meta: title I Just Thought You'd Like To Know}
 {meta: artist Johnny Cash}
 {meta: composer Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file ijustthoughtyoudliketoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just thought you'd like to [G7]know 
@@ -24,3 +27,5 @@ I just thought you'd [G7]like to know how [C]much my heart has [F]cried  over [G
 But [C]darling you could never [F]see the misery you [G7]caused for [C]me 
 So I will [F]tell you so [G7]cause I just thought that you'd like to [C]know
 {end_of_verse}
+
+

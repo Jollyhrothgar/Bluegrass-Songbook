@@ -1,6 +1,9 @@
 {meta: title Lord I Want To Go To Heaven}
 {meta: artist Doyle Lawson}
 {meta: composer James S. Wetherington}
+{meta: x_source classic-country}
+{meta: x_source_file lordiwanttogotoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been on [G7]my [C]knees
@@ -47,3 +50,9 @@ In the book the promise was giv[C7]en
 {start_of_verse: Verse 5}
 [F]Hell is an [C]awful [G7]awful [C]place
 {end_of_verse}
+
+
+
+
+
+

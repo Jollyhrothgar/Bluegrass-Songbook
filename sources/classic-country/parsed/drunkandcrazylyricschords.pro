@@ -1,6 +1,9 @@
 {meta: title Drunk And Crazy}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file drunkandcrazylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well hello everybody I've come to say
@@ -76,3 +79,19 @@ When in come the doctor he could hardly stand
 {start_of_verse: Verse 2}
 I didn't come to stay I just come to play
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

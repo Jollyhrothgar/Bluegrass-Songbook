@@ -1,6 +1,9 @@
 {meta: title Good Nights Make Good Mornings}
 {meta: artist Jean Shepard}
 {meta: composer Naomi Martin}
+{meta: x_source classic-country}
+{meta: x_source_file goodnightsmakegoodmorningslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He wakes me with a soft [C]kiss on my [G]shoulder
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [G]The love of a real good man [D7]who's got good lovin' [G]ways
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hello Trouble}
 {meta: artist Ernest Tubb}
 {meta: composer Orville Couch and Eddie McDuff}
+{meta: x_source classic-country}
+{meta: x_source_file hellotroublelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woke up this morning  [F]happy as could [C]be 
@@ -34,3 +37,7 @@ Talk about your [G7]heartaches  where the world you [C]been
 I ain't had the miseries  [F]since you've been [C]gone
 Hello [F]trouble trouble [G7]trouble welcome [C]home
 {end_of_verse}
+
+
+
+

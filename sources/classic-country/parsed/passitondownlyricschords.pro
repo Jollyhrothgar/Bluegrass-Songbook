@@ -1,6 +1,9 @@
 {meta: title Pass It On Down}
 {meta: artist Alabama}
 {meta: composer Teddy Gentry, Randy Owen, William Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file passitondownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We live in the land of [F]plenty
@@ -71,3 +74,12 @@ Let's [F]leave some [C]green on the [G]ground
 It’s only ours to borrow let's [F]save some for tomorrow
 [C]Leave it and pass it on [G]down
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lullabys Legends And Lies}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file lullabyslegendsandlieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gather round fellows I'll tell you some [C7]tales 
@@ -43,3 +46,8 @@ Lullabys [G7]legends and [C]lies and [C7]lies
 [F]I'll sing you a song then I'll shuffle [C]along 
 With my [G7]lullabys legends and [C]lies 
 {end_of_verse}
+
+
+
+
+

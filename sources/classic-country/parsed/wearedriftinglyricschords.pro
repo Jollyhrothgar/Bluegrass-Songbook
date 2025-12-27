@@ -1,6 +1,9 @@
 {meta: title We Are Drifting}
 {meta: artist Webb Pierce}
 {meta: composer Warner McPherson and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file wearedriftinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We are drifting yes we're drifting 
@@ -43,3 +46,7 @@ Yes we're drifting down the rugged streets of [G]time[G7]
 [C]Jesus suffered and died on Calvary to [F]open up the [C]way
 I'm drifting to that [G7]happy home on [C]high
 {end_of_verse}
+
+
+
+

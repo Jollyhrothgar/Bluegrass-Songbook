@@ -1,5 +1,8 @@
 {meta: title If Not For The Love Of Jesus}
 {meta: artist Ronnie McDowell}
+{meta: x_source classic-country}
+{meta: x_source_file ifnotfortheloveofJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]If [G]not for the [D7]love of [G]Jesus
@@ -46,3 +49,9 @@ I'd be [G]walking on [D7]unstable [G]ground[D7]
 {start_of_verse: Verse 5}
 I'd be [G]walking on [D7]unstable [Am]gro[C]und[G]
 {end_of_verse}
+
+
+
+
+
+

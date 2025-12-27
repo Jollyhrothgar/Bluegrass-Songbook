@@ -1,6 +1,9 @@
 {meta: title Loving You}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Leiber and Mike Stoller}
+{meta: x_source classic-country}
+{meta: x_source_file lovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I will spend my whole life through
@@ -25,3 +28,6 @@ I'll be faithful I'll be true
 [F]There is only one for me and [C]you know [A7]who
 [D7]You know that I'll always [G7]be loving [C]you
 {end_of_verse}
+
+
+

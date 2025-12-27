@@ -1,6 +1,9 @@
 {meta: title The Color of Love}
 {meta: artist Faron Young}
 {meta: composer Bobby Sykes}
+{meta: x_source classic-country}
+{meta: x_source_file thecoloroflovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blue was the dress that she wore that night
@@ -29,3 +32,6 @@ For the love sent to me from [G7]above
 [C]Now it's to late  to late I have learned
 That she was the [G7]color of [C]love 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Cyclone of Rye Cove}
 {meta: artist Doc Watson}
 {meta: composer A.P. Carter and Doc Watson}
+{meta: x_source classic-country}
+{meta: x_source_file cycloneofryecovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh listen today to the [F]story I [C]tell
@@ -50,3 +53,9 @@ And the lightning flashed over the [G7]sky
 Then the [C]children all cried don't [F]take us [C]away
 But spare us to [G7]go back [C]home
 {end_of_verse}
+
+
+
+
+
+

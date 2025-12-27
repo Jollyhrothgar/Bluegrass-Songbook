@@ -1,5 +1,8 @@
 {meta: title Closer To The Bone}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file closertothebonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Ain't it kinda funny ain't it just the way though 
@@ -28,3 +31,6 @@ Soaring like an eagle skippin' like a [D7]stone
 Comin' from the [G]heartbeat nothin' but the truth now 
 Everything is sweeter [D7]closer to the [G]bone 
 {end_of_verse}
+
+
+

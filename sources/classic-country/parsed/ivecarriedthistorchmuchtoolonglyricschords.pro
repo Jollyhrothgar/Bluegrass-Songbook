@@ -1,6 +1,9 @@
 {meta: title I’ve Carried This Torch Much Too Long}
 {meta: artist Tony Booth}
 {meta: composer Buck Owens and Gene Price}
+{meta: x_source classic-country}
+{meta: x_source_file ivecarriedthistorchmuchtoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've carried this torch much too [Am]long
@@ -26,3 +29,6 @@ I've [D7]carried this torch much too [G]long
 {start_of_verse: Verse 3}
 Yes [D7]I've carried this torch much too [G]long
 {end_of_verse}
+
+
+

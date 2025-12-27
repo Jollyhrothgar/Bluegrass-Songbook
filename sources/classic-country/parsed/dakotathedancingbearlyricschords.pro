@@ -1,6 +1,9 @@
 {meta: title Dakota (The Dancing Bear)}
 {meta: artist Kris Kristofferson}
 {meta: composer Larry Murray}
+{meta: x_source classic-country}
+{meta: x_source_file dakotathedancingbearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Midnight touch the black hills [F]westward on the [C]run
@@ -47,3 +50,8 @@ Dance dance [G7]Dakota dance [F]dance around the country [C]store
 {start_of_verse: Verse 5}
 Dance dance [G7]Dakota dance [F]dance around the country [C]store
 {end_of_verse}
+
+
+
+
+

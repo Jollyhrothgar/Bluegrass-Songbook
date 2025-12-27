@@ -1,5 +1,8 @@
 {meta: artist Tex Ritter}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file oldglorylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Old Glory [F]Old Glory when I [C]see her waving [G7]high
@@ -45,3 +48,9 @@ And no [C]stars like those [G7]fifty that [C]shine
 [C]There's a glory [F]there's a glory
 In my [C]heart and a teardrop [F]in [G7]my [C]eye
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Man Worth Loving You}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file themanworthlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I hadn't quit my ways of wrong
@@ -47,3 +50,7 @@ When [C]I became the [D7]man worth loving [G]you
 {start_of_verse: Verse 4}
 And [C]I became the [D7]man worth loving [G]you
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Christmas Is}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas is Jesus and [F]people and [C]things
@@ -35,3 +38,7 @@ Christmas is giving and [F]living and [C]love
 [F]Show me a smile and a [C]heart that is true 
 Oh have I got a [G7]Christmas for [C]you
 {end_of_verse}
+
+
+
+

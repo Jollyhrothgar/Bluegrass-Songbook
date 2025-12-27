@@ -1,5 +1,8 @@
 {meta: title Give Me One More Chance}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file givemeonemorechancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darling think about the good times and [F]the places we've [C]been
@@ -33,3 +36,7 @@ Can't stand the thought of living when you're [G7]gone
 [F]Let me put my arms [G7]around you hold you [C]close and say you're [F]mine
 [C]Give me one more [G7]chance to right the [C]wrong
 {end_of_verse}
+
+
+
+

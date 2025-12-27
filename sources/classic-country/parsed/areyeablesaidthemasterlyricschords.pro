@@ -1,6 +1,9 @@
 {meta: title Are Ye Able Said The Master}
 {meta: artist Burl Ives}
 {meta: composer Earl Bowman Marlatt and Harry Silverdale Mason}
+{meta: x_source classic-country}
+{meta: x_source_file areyeablesaidthemasterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Are ye able said the [C]Master
@@ -43,3 +46,8 @@ Now as [A7]then in Gali[D7]lee
 [G]Thy [B7]guiding [Em]radiance [C]above us shall [B7]be
 A [C]beacon to [G]God to [B7]love and [D7]loyal[G]ty
 {end_of_verse}
+
+
+
+
+

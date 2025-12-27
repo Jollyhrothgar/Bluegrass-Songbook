@@ -1,6 +1,9 @@
 {meta: title In A Shanty in Old Shanty Town}
 {meta: artist Fats Domino}
 {meta: composer Jack Little, Ira Schuster, Joe Young}
+{meta: x_source classic-country}
+{meta: x_source_file inashantyinoldshantytownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It's [C]only a [E7]shanty in [A7]old shanty town
@@ -29,3 +32,5 @@ And there's a [F]queen
 Waiting [A7]there with a [C]silver [A7]crown
 In an old [D7]shanty in [G7]old shanty [C]town
 {end_of_verse}
+
+

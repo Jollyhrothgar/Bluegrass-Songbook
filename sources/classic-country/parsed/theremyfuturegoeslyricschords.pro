@@ -1,6 +1,9 @@
 {meta: title There My Future Goes}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Billy Gray}
+{meta: x_source classic-country}
+{meta: x_source_file theremyfuturegoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The [C]love light in your eye is growing [G]dimmer day by day
@@ -29,3 +32,6 @@ Al[Em]though I know no[A7]body else could [D7]love you like I do
 The [C]autumn leaves are falling down now [G]as the cold wind blows
 Our [C]love you say was [G]yesterday and [D7]there my future [G]goes
 {end_of_verse}
+
+
+

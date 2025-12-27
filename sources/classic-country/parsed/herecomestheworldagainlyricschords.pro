@@ -1,6 +1,9 @@
 {meta: title Here Comes The World Again}
 {meta: artist Johnny Bush}
 {meta: composer Steve Karliski, Larry Kolber}
+{meta: x_source classic-country}
+{meta: x_source_file herecomestheworldagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I feel the morning sun come creeping [G7]through the [C]blinds
@@ -40,3 +43,9 @@ I think I'm over you
 [C]And here comes the world [G]again
 [D7]Once more all the hurt begins
 {end_of_verse}
+
+
+
+
+
+

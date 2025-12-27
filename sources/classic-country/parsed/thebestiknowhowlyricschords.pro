@@ -1,6 +1,9 @@
 {meta: title The Best I Know How}
 {meta: artist Statler Brothers}
 {meta: composer Kim Reid}
+{meta: x_source classic-country}
+{meta: x_source_file thebestiknowhowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's rumors going around [F]about you and me
@@ -35,3 +38,7 @@ And [F]Lord knows I miss you [C]I'd never forget you
 And [G7]I've loved you the best I know [F]how
 I've always [C]loved you the [G7]best I know [C]how
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Chill Of An Early Fall}
 {meta: artist George Strait}
 {meta: composer Gretchen Peters and Green Daniel}
+{meta: x_source classic-country}
+{meta: x_source_file thechillofanearlyfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Well her [C]old friend [G7]from her [Am]old [C]end of [F]town dropped [C]by [G7]today
@@ -38,3 +41,7 @@ She just looks [F][G7]away
 I'll [C]begin to feel the [G7]chill of an early [D7][Am]fall
 Oh I'll [C]begin to feel the [G7]chill of an early [C][F]fall
 {end_of_verse}
+
+
+
+

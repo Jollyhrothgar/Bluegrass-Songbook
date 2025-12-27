@@ -1,6 +1,9 @@
 {meta: title Don't Leave Me Where You Found Me}
 {meta: artist Loretta Lynn}
 {meta: composer Don Choate}
+{meta: x_source classic-country}
+{meta: x_source_file dontleavemewhereyoufoundmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The lights are low I am [D7]too the crowd is [G]high so are [C]you
@@ -35,3 +38,7 @@
 {start_of_verse: Verse 4}
 [D7]Please don't leave me where you found [G]me
 {end_of_verse}
+
+
+
+

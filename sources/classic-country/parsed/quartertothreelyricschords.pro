@@ -1,6 +1,9 @@
 {meta: title Quarter To Three}
 {meta: artist Billy Crash Craddock}
 {meta: composer Razzy Bailey}
+{meta: x_source classic-country}
+{meta: x_source_file quartertothreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Doin' my thing playin' on the strings 
@@ -53,3 +56,9 @@ She's gonna [Dm]love me so [G7]cause she's all [C]mine
 Where the lights are low 
 She's gonna [Dm]love me so [G7]cause she's all [C]mine
 {end_of_verse}
+
+
+
+
+
+

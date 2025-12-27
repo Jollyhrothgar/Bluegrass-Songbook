@@ -1,6 +1,9 @@
 {meta: title I Wouldn't Take Her To A Dog Fight}
 {meta: artist Charlie Walker}
 {meta: composer Larry Kingston and Troy Snow}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldnttakehertoadogfightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My friend he fixed me up with a [D7]girl he said he knew
@@ -43,3 +46,8 @@ I wouldn't take her to a [D7]dog fight
 I wouldn't take her to a [D7]dog fight 
 [G7]Not even if she had a chance to [C]win
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Anywhere Just Inside Your Arms}
 {meta: artist Charley Pride}
 {meta: composer Wanda Ballman}
+{meta: x_source classic-country}
+{meta: x_source_file anywherejustinsideyourarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There are places to go where the cold north wind [F]blows
@@ -33,3 +36,7 @@ Just as long [C]as you're there then darling I won't [F]care
 {start_of_verse: Verse 4}
 Yes anywhere [G7]just inside your [C]arms
 {end_of_verse}
+
+
+
+

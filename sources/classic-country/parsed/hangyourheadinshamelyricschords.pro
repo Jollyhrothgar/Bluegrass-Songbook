@@ -1,6 +1,9 @@
 {meta: title Hang Your Head in Shame}
 {meta: artist Bob Wills}
 {meta: composer Fred Rose, Ed G. Nelson, Steve Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file hangyourheadinshamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]DON'T YOUR CONSCIENCE EVER BOTHER [F]YOU
@@ -36,3 +39,7 @@ THEN YOU GAVE ME ALL THE [G7]BLAME
 [C]YOU SHOULD GO SOMEWHERE AND HIDE YOUR [F]FACE
 AND [C]HANG YOUR [G7]HEAD IN [C]SHAME
 {end_of_verse}
+
+
+
+

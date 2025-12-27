@@ -1,5 +1,8 @@
 {meta: title Word Song}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file wordsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't like big long words like [D7]Geography
@@ -30,3 +33,6 @@ Is [G]fortopolyismingpreed[D7]inphycho[G]lay
 Hey I did it
 Fortopolyismin aww shucks
 {end_of_verse}
+
+
+

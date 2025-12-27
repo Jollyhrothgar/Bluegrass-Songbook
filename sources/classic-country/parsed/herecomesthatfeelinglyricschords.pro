@@ -1,6 +1,9 @@
 {meta: title Here Comes That Feeling}
 {meta: artist Brenda Lee}
 {meta: composer Dorsey Burnette and Joe Osborn}
+{meta: x_source classic-country}
+{meta: x_source_file herecomesthatfeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here comes that [Am]feeling [C]again and it ain't [Am]right
@@ -34,3 +37,7 @@
 [C]Oh I'm so lonely  mmm [Am]I feel that [C]feeling
 [C]And it's hurting [Am]me  mmm [C]I feel [Am]so [C]lonely
 {end_of_verse}
+
+
+
+

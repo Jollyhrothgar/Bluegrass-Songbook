@@ -1,6 +1,9 @@
 {meta: title I Tried}
 {meta: artist Ricky Nelson}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file itriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [Am]tried [C] I [Am]tried
@@ -44,3 +47,9 @@ Cause each [C]lonely day that I've [G7]been away I've [C]cried
 I [Am]tried  I [C]tried I [Am]tried baby I [C]tried
 I [Am]tried baby I [C]tried I [Am]tried baby I [C]tried
 {end_of_verse}
+
+
+
+
+
+

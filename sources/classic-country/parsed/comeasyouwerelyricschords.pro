@@ -1,6 +1,9 @@
 {meta: title Come As You Were}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Paul Charles Craft}
+{meta: x_source classic-country}
+{meta: x_source_file comeasyouwerelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm giving a [G7]party to[C]night 
@@ -33,3 +36,7 @@ Come as you [F]were before you [G7]stopped loving [C]me
 {start_of_verse: Verse 5}
 Hey hey hey come as you [F]were before you [G7]stopped loving [C]me
 {end_of_verse}
+
+
+
+

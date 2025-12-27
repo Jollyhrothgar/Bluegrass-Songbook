@@ -1,6 +1,9 @@
 {meta: title Ramblin’ Man}
 {meta: artist The Allman Brothers}
 {meta: composer Forrest Richard Betts}
+{meta: x_source classic-country}
+{meta: x_source_file ramblinmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord I was [F]born a [C]ramblin' [G]man
@@ -41,3 +44,8 @@ Tryin' to make a living and [C]doing the best I [D7]can
 [G]That I was [D7]born a ramblin' [G]man
 That I was [D7]born a ramblin' [G]man
 {end_of_verse}
+
+
+
+
+

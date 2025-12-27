@@ -1,6 +1,9 @@
 {meta: title Cruising Down The River}
 {meta: artist Connie Francis}
 {meta: composer Nellie Tollerton and Eily Bendell}
+{meta: x_source classic-country}
+{meta: x_source_file cruisingdowntheriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cruising down the river on a Sunday [D7]afternoon
@@ -27,3 +30,6 @@
 [C]Just two of us together we'll plan our [D7]honeymoon
 [C]Cruising [Am]down the river on [A7]a [D7]Sunday [C][G7]afternoon
 {end_of_verse}
+
+
+

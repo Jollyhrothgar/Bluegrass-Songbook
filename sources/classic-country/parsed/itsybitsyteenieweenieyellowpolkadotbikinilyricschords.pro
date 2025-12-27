@@ -1,6 +1,9 @@
 {meta: title Itsy Bitsy Teenie Weenie Yellow Polka Dot Bikini}
 {meta: artist Connie Francis}
 {meta: composer Paul Vance and Lee Pockriss}
+{meta: x_source classic-country}
+{meta: x_source_file itsybitsyteenieweenieyellowpolkadotbikinilyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was an [D7]Itsy Bitsy Teenie Weenie [G]Yellow Polka Dot Bikini
@@ -66,3 +69,9 @@ From the blanket to the [G]shore
 From the shore to the [D7]water
 Yes there isn't any [G]more
 {end_of_verse}
+
+
+
+
+
+

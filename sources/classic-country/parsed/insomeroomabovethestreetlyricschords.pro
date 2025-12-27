@@ -1,6 +1,9 @@
 {meta: title In Some Room Above The Street}
 {meta: artist Gary Stewart}
 {meta: composer Sterling Whipple}
+{meta: x_source classic-country}
+{meta: x_source_file insomeroomabovethestreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's no place for us to [C]hide
@@ -43,3 +46,8 @@ Awake upon the break of [C]day
 Close your eyes and think of [C]me
 [D7]In some room above the [G]street
 {end_of_verse}
+
+
+
+
+

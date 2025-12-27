@@ -1,6 +1,9 @@
 {meta: title Glass Of Smile}
 {meta: artist Faron Young}
 {meta: composer Ernest Reed, Jade Mangino, Billy Graves}
+{meta: x_source classic-country}
+{meta: x_source_file glassofsmilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]By closin' time I won't remember [F]her
@@ -26,3 +29,6 @@
 [C7]I'm happy in the mist that dulls my memory for [F]awhile
 [G7]So take that bottle and pour me one more glass of [C]smile
 {end_of_verse}
+
+
+

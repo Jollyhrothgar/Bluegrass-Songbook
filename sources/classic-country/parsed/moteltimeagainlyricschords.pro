@@ -1,6 +1,9 @@
 {meta: title Motel Time Again}
 {meta: artist Johnny Paycheck}
 {meta: composer Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file moteltimeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I sat here on this stool drank so [F]much I blew my [C]cool
@@ -22,3 +25,5 @@ I don't even know what town I'm [G7]in
 [C]But I'll find my way once more to that old [F]number on the [C]door
 Then I'll be at home it's [G7]motel time [C]again 
 {end_of_verse}
+
+

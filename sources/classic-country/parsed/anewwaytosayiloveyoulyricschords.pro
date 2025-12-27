@@ -1,6 +1,9 @@
 {meta: title A New Way to Say I Love You}
 {meta: artist Crystal Gayle}
 {meta: composer Michael Masser and Gerald Goffin}
+{meta: x_source classic-country}
+{meta: x_source_file anewwaytosayiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It would be [F]easy to [Em]call you an an[Dm]gel
@@ -50,3 +53,10 @@ There's just [C]gotta be a [F]new way to say I [G]love you
 Cause there's [C]gotta be a [F]new way to say I [G]love you
 There's just [C]gotta be a [F]new way to say I [G]love you
 {end_of_verse}
+
+
+
+
+
+
+

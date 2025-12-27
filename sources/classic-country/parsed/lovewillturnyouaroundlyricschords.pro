@@ -1,6 +1,9 @@
 {meta: title Love Will Turn You Around}
 {meta: artist Kenny Rogers}
 {meta: composer David Malloy, Thom Schuyler, Kenny Rogers, Even Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file lovewillturnyouaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can run you can hide never let it inside
@@ -84,3 +87,21 @@ Sooner or later that gentle persuader
 {start_of_verse: Verse 18}
 [Am]Love will [F]turn you around turn [G7]you [C]around 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

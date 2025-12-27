@@ -1,6 +1,9 @@
 {meta: title There's A Man In Here}
 {meta: artist Statler Brother}
 {meta: composer Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file theresamaninherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a man in here who turns water to wine
@@ -61,3 +64,13 @@ And He [C]walked on the water and gives sight to the [G]blind
 {start_of_verse: Verse 10}
 I'm a better man cause there's a man [D7]in [G]here
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

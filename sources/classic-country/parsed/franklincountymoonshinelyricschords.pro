@@ -1,6 +1,9 @@
 {meta: title Franklin County Moonshine}
 {meta: artist Jean Sheppard}
 {meta: composer Betty Amos}
+{meta: x_source classic-country}
+{meta: x_source_file franklincountymoonshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Franklin County moonshine is [C]all you care [G]about
@@ -56,3 +59,10 @@ Moonshine moonshine  oo-dele let-ee
 [D7]Moonshine moonshine  i-dele let-ee
 [G]Moonshine moonshine  oo-dele let-ee  [D7]oo-dele oo-[G]dele 
 {end_of_verse}
+
+
+
+
+
+
+

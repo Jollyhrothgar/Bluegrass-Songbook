@@ -1,5 +1,8 @@
 {meta: title Love Me When You Can}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file lovemewhenyoucanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I know [C]you can’t [F]always be here [C]with me
@@ -28,3 +31,6 @@ Anytime you have to leave I’ll under[G7]stand
 I’ll [C]be satisfied [F]with any crumb you [C]throw me
 What I’m tryin’ to [F]say is [C]love me [G7]when you [C]can
 {end_of_verse}
+
+
+

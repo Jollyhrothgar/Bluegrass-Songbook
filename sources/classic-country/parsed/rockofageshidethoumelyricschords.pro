@@ -1,5 +1,8 @@
 {meta: title Rock Of Ages Hide Thou Me}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file rockofageshidethoumelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I feel discouraged and [C]think my work’s in [G]vain
@@ -58,3 +61,10 @@ There is no other refuge only Thee (only [D7]Thee)
 Then I cry to the rock (to the rock of ages [D7]hide Thou [G]me)
 Rock of Ages [D7]hide Thou [G]me
 {end_of_verse}
+
+
+
+
+
+
+

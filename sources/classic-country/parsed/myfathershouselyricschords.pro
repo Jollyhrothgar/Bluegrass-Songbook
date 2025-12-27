@@ -1,6 +1,9 @@
 {meta: title My Father's House}
 {meta: artist Emmylou Harris}
 {meta: composer Bruce Springsteen}
+{meta: x_source classic-country}
+{meta: x_source_file myfathershouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I dreamed that I [F]was a [C]child
@@ -47,3 +50,9 @@ A woman I didn't recognize
 [C]Calling and calling [F]so cold and [C]alone
 [G7]Shining across this dark highway where all our sins lie [C]unatoned
 {end_of_verse}
+
+
+
+
+
+

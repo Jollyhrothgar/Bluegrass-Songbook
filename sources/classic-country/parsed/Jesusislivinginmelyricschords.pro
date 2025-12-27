@@ -1,6 +1,9 @@
 {meta: title Jesus Is Living In Me}
 {meta: artist The Easter Brothers}
 {meta: composer Franklin, James, Jeff, Russell and Sheri Easter}
+{meta: x_source classic-country}
+{meta: x_source_file Jesusislivinginmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lonely years I had nothing 
@@ -50,3 +53,8 @@ In my [G]heart His joy is [C]ringing
 {start_of_verse: Verse 4}
 Yes my Jesus [D7]is living in [C]m-[G]e
 {end_of_verse}
+
+
+
+
+

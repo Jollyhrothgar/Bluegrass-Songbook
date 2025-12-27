@@ -1,6 +1,9 @@
 {meta: title There's Always Me}
 {meta: artist Elvis Presley}
 {meta: composer Don Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file theresalwaysmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the evening shadows fall 
@@ -27,3 +30,6 @@ Other loves may come and [Dm]go
 But my love for you will [G7]be   [E7]eternal-ly
 [A7]Look around and you will [Dm]see  [G7]there's always [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Jesus Wants Me}
 {meta: artist George Jones}
 {meta: composer George Jones and Eddie Noack}
+{meta: x_source classic-country}
+{meta: x_source_file Jesuswantsmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was alone in the darkness 
@@ -36,3 +39,7 @@ He sent my poor soul on the [A7]road to Calva[D7]ry
 [G]Now I can see He has [C]gathered in His [G]sheep
 Now I’ll stick with the Shepherd cause [D7]Jesus wants [G]me
 {end_of_verse}
+
+
+
+

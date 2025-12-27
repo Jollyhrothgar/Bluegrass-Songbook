@@ -1,5 +1,8 @@
 {meta: title A Single Yellow Rose}
 {meta: artist Isla Grant}
+{meta: x_source classic-country}
+{meta: x_source_file asingleyellowroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I awoke this morning imagine [C]my [G]surprise
@@ -28,3 +31,6 @@ And did ya know they'd say forever I'll be [D7]true
 {start_of_verse: Verse 4}
 Yes you said goodbye with a [D7]single yellow [G]rose
 {end_of_verse}
+
+
+

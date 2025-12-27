@@ -1,6 +1,9 @@
 {meta: title Louisiana Man}
 {meta: artist Buck Owens}
 {meta: composer Doug Kershaw}
+{meta: x_source classic-country}
+{meta: x_source_file louisianamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At first mom and papa called little boy Ned
@@ -87,3 +90,19 @@ We'll come back again first there's [G7]work to be [C]done
 The clock strikes three papa jumps to his feet
 Already mama's cooking papa [G7]something to [C]eat
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

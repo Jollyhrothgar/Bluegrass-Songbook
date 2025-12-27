@@ -1,6 +1,9 @@
 {meta: title Sing Her A Love Song}
 {meta: artist Carl Smith}
 {meta: composer Arthur Smith and James Pritchett}
+{meta: x_source classic-country}
+{meta: x_source_file singheralovesonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The words of a love song [F]just like a love [C]letter
@@ -29,3 +32,6 @@ Don't keep her waiting too [G7]long
 [C]But if you can't say what your [F]heart wants to tell [C]her
 [G7]Just sing her a pretty love [C]song
 {end_of_verse}
+
+
+

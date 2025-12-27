@@ -1,6 +1,9 @@
 {meta: title Go Away}
 {meta: artist Roy Orbison}
 {meta: composer Bill Dees and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file goawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I really wouldn't mind it [D7]might be fun
@@ -37,3 +40,7 @@ You know friendship [C7]ends [F]where love begins
 So [C]stay my [Am]friend and [F]go away  
 Go a-[C]way go a-[F]way go a[C]way 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If It Ain't One Thing It's Another}
 {meta: artist Randy Travis}
 {meta: composer Bobby Carmichael, Joe Stampley, Tony Stampley}
+{meta: x_source classic-country}
+{meta: x_source_file ifitaintonethingitsanotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got up this morning tried to get off of work
@@ -63,3 +66,14 @@ I know my boss is gonna dock me an hour
 {start_of_verse: Verse 11}
 [D7]If it ain't one thing it's [G]another
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

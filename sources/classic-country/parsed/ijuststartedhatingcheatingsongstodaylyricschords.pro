@@ -1,6 +1,9 @@
 {meta: title I Just Started Hating Cheating Songs Today}
 {meta: artist Moe Bandy}
 {meta: composer Arthur Leo Owens and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file ijuststartedhatingcheatingsongstodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today the midnight oil [F]is all over [C]someone
@@ -29,3 +32,6 @@ When I heard that [F]woman [C]singing darling lets go all the [G7]way
 And I just [C]found out my [F]woman is the [C]devil
 I just [F]started hating [G7]cheating songs [C]today
 {end_of_verse}
+
+
+

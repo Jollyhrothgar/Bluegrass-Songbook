@@ -1,5 +1,8 @@
 {meta: title Cowtown Lyrics and Chords}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file cowtownlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come on along [G7]and we'll go [C]down
@@ -30,3 +33,7 @@ I'm going there to make it my [C]home
 {start_of_verse: Verse 5}
 repeat
 {end_of_verse}
+
+
+
+

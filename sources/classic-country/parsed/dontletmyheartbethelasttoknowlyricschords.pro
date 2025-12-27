@@ -1,6 +1,9 @@
 {meta: title Don't Let My Heart Be The Last To Know}
 {meta: artist Tanya Tucker}
 {meta: composer Dennis Morgan and Billy Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file dontletmyheartbethelasttoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I see the [B7]future slipping [C]by [Am]
@@ -35,3 +38,7 @@ There's a [C]feeling of [F]lonesome in the [C]wind
 Tell me is it [D7]so don't [C]let my heart [D7]be the last to [G]know
 Well don't [C]let my heart [D7]be the last to [G]know
 {end_of_verse}
+
+
+
+

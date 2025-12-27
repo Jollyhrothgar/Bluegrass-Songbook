@@ -1,5 +1,8 @@
 {meta: title Cold Cold Heart}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file coldcoldheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I tried so hard my dear to show that you're my every [G7]dream
@@ -28,3 +31,6 @@ But now I know your heart is shackled to a me[C]mory
 The more I learn to care for you the [C7]more we drift a[F]part
 Why [G7]can't I free your doubtful mind and melt your Cold Cold [C]Heart
 {end_of_verse}
+
+
+

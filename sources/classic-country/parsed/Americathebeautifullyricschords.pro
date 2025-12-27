@@ -1,6 +1,9 @@
 {meta: title America The Beautiful}
 {meta: artist Boxcar Willie}
 {meta: composer Katherine Lee Bates, Samuel A. Ward}
+{meta: x_source classic-country}
+{meta: x_source_file Americathebeautifullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh beautiful for [D7]spacious skies
@@ -34,3 +37,7 @@ And [Am]every [D7]move [G]divine
 Till [C]all success be [G]nobleness
 And [Am]every [D7]move [G]divine
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Everything You Touch Turns To Hurt}
 {meta: artist Johnny Paycheck}
 {meta: composer Johnny Paycheck and Aubrey Mayhew}
+{meta: x_source classic-country}
+{meta: x_source_file everythingyoutouchturnstohurtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]First impressions aren't always the ones to go by
@@ -29,3 +32,6 @@ There's no [F]pain like the pain I feel each [G7]time you flirt
 You [C]say I'm your world your every[F]thing
 But every[C]thing you [G7]touch turns to [C]hurt
 {end_of_verse}
+
+
+

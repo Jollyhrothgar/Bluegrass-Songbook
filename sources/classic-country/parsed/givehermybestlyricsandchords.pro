@@ -1,5 +1,8 @@
 {meta: title Give Her My Best}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file givehermybestlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't wanna fight about it [F]we've been friends too long
@@ -27,3 +30,5 @@ She's not mine but if she were [F]she wouldn't be alone
 [C]You've got my word I wouldn't know [F]what happens behind your door
 Give her my best [G7]you never gave her [C]yours
 {end_of_verse}
+
+

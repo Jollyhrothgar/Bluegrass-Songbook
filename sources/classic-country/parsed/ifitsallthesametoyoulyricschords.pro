@@ -1,6 +1,9 @@
 {meta: title If It's All The Same To You}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file ifitsallthesametoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it's all the same  to [F]you 
@@ -36,3 +39,7 @@ I can [F]thrill with my kiss
 Mmm if it's all the same to [C]you 
 Yes and [F]I sadly think it [C]is
 {end_of_verse}
+
+
+
+

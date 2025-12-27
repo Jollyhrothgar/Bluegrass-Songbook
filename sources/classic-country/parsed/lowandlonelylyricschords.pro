@@ -1,6 +1,9 @@
 {meta: title Low And Lonely}
 {meta: artist Hank Williams}
 {meta: composer Floyd Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file lowandlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Low and lonely [F]sad and [C]blue
@@ -29,3 +32,6 @@ You can trust me so never [G7]fear
 Oh how I [C]miss you I long to [F]kiss you
 I'm low and [C]lonely [G7]over [C]you
 {end_of_verse}
+
+
+

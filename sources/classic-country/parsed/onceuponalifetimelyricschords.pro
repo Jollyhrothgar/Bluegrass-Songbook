@@ -1,5 +1,8 @@
 {meta: title Once Upon A Lifetime}
 {meta: artist Alabama}
+{meta: x_source classic-country}
+{meta: x_source_file onceuponalifetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once upon a lifetime [F]I looked in someone's [Am]eyes
@@ -43,3 +46,8 @@ And the best [Am]things seldom come [F]along  [G7]twice
 And [F]people only [C]find a love [F]like yours and [C]mine
 [G7]Once upon a [C]lifetime
 {end_of_verse}
+
+
+
+
+

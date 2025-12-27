@@ -1,6 +1,9 @@
 {meta: title There Ain't No Grave Deep Enough}
 {meta: artist George Jones}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file thereaintnogravedeepenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Even though I know it's over and your [G7]hearts with someone [C]new
@@ -26,3 +29,6 @@ There ain't no grave [G]deep enough to [D7]bury my love for [G]you
 {start_of_verse: Verse 3}
 [C]No there ain't no grave [G]deep enough to [D7]bury my love for [G]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Ellie}
 {meta: artist Charley Pride}
 {meta: composer Blake Mevis, Bill Shore, Byron Gallimore}
+{meta: x_source classic-country}
+{meta: x_source_file ellielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ellie may and Ellie may not
@@ -67,3 +70,13 @@ Will she [F]makes me up I [G7]come tumblin' [C]down
 [C]Ellie may and Ellie may not
 When my bad Ellie makes my [G7]blood run [C]hot
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

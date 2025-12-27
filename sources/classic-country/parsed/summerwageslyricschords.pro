@@ -1,6 +1,9 @@
 {meta: title Summer Wages}
 {meta: artist Doyle Lawson}
 {meta: composer Ian Tyson}
+{meta: x_source classic-country}
+{meta: x_source_file summerwageslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Summer Wages
@@ -48,3 +51,9 @@ Now I've [G]gambled and [Am]lost my summer [D7]wa-[G]ges
 {start_of_verse: Verse 7}
 [C]Years are [G]gambled and [Am]lost like summer [D7]wa-[G]ges
 {end_of_verse}
+
+
+
+
+
+

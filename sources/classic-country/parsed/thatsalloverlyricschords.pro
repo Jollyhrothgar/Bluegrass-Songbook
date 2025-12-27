@@ -1,6 +1,9 @@
 {meta: title That's All Over}
 {meta: artist Johnny Cash}
 {meta: composer Jim Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file thatsalloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Mmm [G7]mmm [C]mmm [F]mmm [G7]mmm [C]mmm 
@@ -29,3 +32,6 @@ That's all [G7]over I've found somebody [C]new
 Yes that's all [G7]over I've found somebody [C]new
 [F]Mmm [G7]mmm [C]mmm  
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Dear Uncle Sam}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file dearunclesamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dear Uncle Sam I [D7]know you're a busy [G]man
@@ -24,3 +27,6 @@ Dear Uncle Sam I just got your telegram
 And I can't believe that this is me shaking like I am
 For it said I'm sorry to inform you
 {end_of_verse}
+
+
+

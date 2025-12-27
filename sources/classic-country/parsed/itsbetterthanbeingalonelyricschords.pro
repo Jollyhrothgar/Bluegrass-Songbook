@@ -1,6 +1,9 @@
 {meta: title It's Better Than Being Alone}
 {meta: artist Moe Bandy}
 {meta: composer Ed Penney}
+{meta: x_source classic-country}
+{meta: x_source_file itsbetterthanbeingalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're a beautiful woman [F]but you look so [C]sad
@@ -40,3 +43,8 @@ But it's [C]better than [G7]being a[C]lone
 {start_of_verse: Verse 5}
 Yes it's better than [G7]being a[C]lone
 {end_of_verse}
+
+
+
+
+

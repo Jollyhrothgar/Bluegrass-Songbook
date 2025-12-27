@@ -1,6 +1,9 @@
 {meta: title Katy Brought My Guitar Back Today}
 {meta: artist Alabama}
 {meta: composer John Jarrard and Mickey Gates}
+{meta: x_source classic-country}
+{meta: x_source_file katybroughtmyguitarbacktodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Katy brought my guitar back [C][Am]today
@@ -43,3 +46,7 @@
 [F]And how [C]she loved to hear [Dm]me [C]play
 [F]Katy brought my [G7]guitar back [C]today
 {end_of_verse}
+
+
+
+

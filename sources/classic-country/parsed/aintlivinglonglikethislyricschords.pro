@@ -1,6 +1,9 @@
 {meta: title Ain’t Living Long Like This}
 {meta: artist Waylon Jennings}
 {meta: composer Rodney J. Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file aintlivinglonglikethislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I look for trouble and I found it son
@@ -88,3 +91,20 @@ Don't want to do it but just don't get caught
 [G]Ain't living long like this
 [D7]Can't live at all like this  can [G]I baby
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title To My Baby I'm a Big Star All the Time}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file tomybabyimabigstarallthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I don't know no[D7]body named [G]George Jones
@@ -25,3 +28,6 @@ And to my [G]baby I'm a [D7]big star all the [G]time
 {start_of_verse: Verse 4}
 Yeah to my baby I'm a [D7]big star all the [G]time
 {end_of_verse}
+
+
+

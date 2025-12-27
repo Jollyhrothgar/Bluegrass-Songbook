@@ -1,6 +1,9 @@
 {meta: title I Ain't Never}
 {meta: artist Mel Tillis}
 {meta: composer Webb Pierce and Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file iaintneverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]W-ell I ain't never  I ain't never
@@ -41,3 +44,8 @@ yeah I love you girl
 [G]I love you just the same
 [C]I love you just the [G]same
 {end_of_verse}
+
+
+
+
+

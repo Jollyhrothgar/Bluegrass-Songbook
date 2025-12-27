@@ -1,6 +1,9 @@
 {meta: title Letters Have no Arms}
 {meta: artist Faron Young}
 {meta: composer Ernest Tubb and Arbie Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file lettershavenoarmslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just got your letter dear [G7]sweetheart 
@@ -29,3 +32,6 @@ Or [D7]none of your sweet loving [G7]charms
 [C]I get so lonesome for you [G7]darling 
 And you know that letters have no [C]arms
 {end_of_verse}
+
+
+

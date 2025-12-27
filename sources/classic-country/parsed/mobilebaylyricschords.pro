@@ -1,6 +1,9 @@
 {meta: title Mobile Bay}
 {meta: artist Cal Smith}
 {meta: composer Curly Putman and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file mobilebaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We were gathered 'round the garbage can [C]passin' round the [G]bottle
@@ -34,3 +37,7 @@ They didn't know that one last time my [D7]dreams would take me [G]home
 [C]Warm rollin' [G]seas and all my [C]dreams and how I'd [G]lost 'em
 Mobile [Am]Bay magnolia [C]leaves [D7]and sweet Rosa[G]lee
 {end_of_verse}
+
+
+
+

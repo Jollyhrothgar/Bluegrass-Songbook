@@ -1,6 +1,9 @@
 {meta: title A Place In The Sun}
 {meta: artist Eddy Arnold}
 {meta: composer Ronald Miller and Bryan Wells}
+{meta: x_source classic-country}
+{meta: x_source_file aplaceinthesunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Movin' [Am]on  [D7]movin' [G]on
@@ -34,3 +37,7 @@
 [C]Like a branch [D7]on a tree I keep [G]reachin' to be [Em]free
 [Am]Movin' [D7]on  movin' [G]on
 {end_of_verse}
+
+
+
+

@@ -77,9 +77,36 @@ Lyrics with [C]inline [G]chords
 ```chordpro
 {meta: x_source classic-country}
 {meta: x_source_file yourcheatingheart.html}
+{meta: x_enriched 2025-12-26}
 {meta: x_strum_pattern boom-chick}
 {meta: x_difficulty intermediate}
 ```
+
+**Provenance metadata** (added automatically by workflows):
+```chordpro
+# For new submissions (via GitHub issue):
+{meta: x_source manual}
+{meta: x_submitted_by github:username}
+{meta: x_submitted 2025-12-26}
+{meta: x_submission_issue 26}
+
+# For corrections to existing songs:
+{meta: x_corrected_by github:username}
+{meta: x_corrected 2025-12-26}
+{meta: x_correction_issue 24}
+```
+
+| Field | Purpose | Example |
+|-------|---------|---------|
+| `x_source` | Original data source | `classic-country`, `manual` |
+| `x_source_file` | Original filename | `songname.html` |
+| `x_enriched` | Date enrichment ran | `2025-12-26` |
+| `x_submitted_by` | GitHub user who submitted | `github:username` |
+| `x_submitted` | Date submitted | `2025-12-26` |
+| `x_submission_issue` | GitHub issue number | `26` |
+| `x_corrected_by` | GitHub user who corrected | `github:username` |
+| `x_corrected` | Date corrected | `2025-12-26` |
+| `x_correction_issue` | GitHub issue number | `24` |
 
 **Version metadata** (for multiple versions of the same song):
 ```chordpro

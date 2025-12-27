@@ -1,5 +1,8 @@
 {meta: title Christmas Time}
 {meta: artist Rhonda Vincent}
+{meta: x_source classic-country}
+{meta: x_source_file Christmastimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tears fall in the snow thinking of Christmas [D7]time
@@ -33,3 +36,7 @@
 [C]No matter where you go you'll always be at [Bm]home
 [Am]Right here in my heart [D7]with me at Christmas [G]time
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Let It Be Christmas Everywhere}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file letitbeChristmaseverywherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let it be Christmas [D7]everywhere
@@ -47,3 +50,7 @@
 [C]Christmas [G][D7]everywhere
 [C]Christmas [G][D7]everywhere
 {end_of_verse}
+
+
+
+

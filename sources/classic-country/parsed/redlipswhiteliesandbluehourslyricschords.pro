@@ -1,6 +1,9 @@
 {meta: title Red Lips White Lies And Blue Hours}
 {meta: artist Don Gibson}
 {meta: composer Don Bowman, Francis Dailey, Wallace Dailey}
+{meta: x_source classic-country}
+{meta: x_source_file redlipswhiteliesandbluehourslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Red lips white lies and blue [F]hours
@@ -33,3 +36,6 @@ Was only a [G7]disguise
 Red [C]lips white lies and blue [F]hours
 [C]Always keep [G7]reminding me of [C]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Divorce Me C. O. D.}
 {meta: artist Carl Smith}
 {meta: composer Cliff Stone and Merle Travis}
+{meta: x_source classic-country}
+{meta: x_source_file divorcemecodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 recorded gy [C]Carl [D]Smith
@@ -33,3 +36,7 @@ Caus' I know [D7]all  my [G7]A.B.C.'s
 I [C]ain't no college professor ain't got no [D7]P.H.D.
 So if you [F]want your freedom [C]P.D.Q.  [D7][A7]Divorce me [C][G7]C.O.D.
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Weakness}
 {meta: artist Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file weaknesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She comes to me Lord [D7]it's hard to turn her [G]down
@@ -25,3 +28,6 @@ And I can feel my [G]weakness [D7]getting [G]strong
 {start_of_verse: Verse 4}
 [C]Yes I can feel my [G]weakness [D7]getting [G]strong
 {end_of_verse}
+
+
+

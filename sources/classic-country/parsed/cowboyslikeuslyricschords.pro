@@ -1,6 +1,9 @@
 {meta: title Cowboys Like Us}
 {meta: artist George Strait}
 {meta: composer Written by Bob Dipiero, Anthony Smith}
+{meta: x_source classic-country}
+{meta: x_source_file cowboyslikeuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I take [D7]off time to [G]time with those [D7]crazy friends of [G]mine
@@ -47,3 +50,8 @@
 {start_of_verse: Verse 5}
 [B7]Cowboys [Am]like [G][D7]us
 {end_of_verse}
+
+
+
+
+

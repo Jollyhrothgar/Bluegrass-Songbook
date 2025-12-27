@@ -1,6 +1,9 @@
 {meta: title Happy Tracks}
 {meta: artist Kenny Price}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file happytrackslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know that you've heard people say many many times
@@ -43,3 +46,8 @@ Leave a lotta happy tracks as you go down life's road
 Leave a lotta happy tracks and keep this in [F]mind
 [C]Others will have to [F]follow in the [G7]path you leave [C]behind
 {end_of_verse}
+
+
+
+
+

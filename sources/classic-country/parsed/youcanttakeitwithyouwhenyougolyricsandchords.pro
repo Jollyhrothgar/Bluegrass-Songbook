@@ -1,6 +1,9 @@
 {meta: title You Can't Take It With You When You Go}
 {meta: artist Rhonda Vincent}
 {meta: composer Curtis Wright and T.J. Knight}
+{meta: x_source classic-country}
+{meta: x_source_file youcanttakeitwithyouwhenyougolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Watch where you're standing  [C]when you close that [G]door [C]
@@ -37,3 +40,7 @@ But I [G]want to make sure you [C]know
 {start_of_verse: Verse 4}
 [Am]You can't take it [D7]with you when you [G]go
 {end_of_verse}
+
+
+
+

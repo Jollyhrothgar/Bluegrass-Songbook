@@ -1,6 +1,9 @@
 {meta: title By Heart}
 {meta: artist Conway Twitty}
 {meta: composer Hugh Prestwood}
+{meta: x_source classic-country}
+{meta: x_source_file byheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her face reflects as [G7]much of me [F]as any mirror [C]can
@@ -34,3 +37,7 @@ Not [F]just because she's [C]mastered magic's [G7]art
 No it's [F]just by now she [G7]knows my heart by [Am]heart
 She [G7]knows my [C]heart
 {end_of_verse}
+
+
+
+

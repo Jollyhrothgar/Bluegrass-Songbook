@@ -1,6 +1,9 @@
 {meta: title Cowboys Are Common As Sin}
 {meta: artist Vern Gosdin}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysarecommonassinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just to damn pretty to be [F]in this barroom [C]alone
@@ -29,3 +32,6 @@
 [C]You don’t wade in deep water when you [F]don’t even know how to swim [C]some
 [G7]You see ladies are ladies cause cowboys are as common as [C]sin
 {end_of_verse}
+
+
+

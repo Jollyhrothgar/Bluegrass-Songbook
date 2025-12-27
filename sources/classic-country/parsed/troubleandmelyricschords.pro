@@ -1,6 +1,9 @@
 {meta: title Trouble and Me}
 {meta: artist Buck Owens}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file troubleandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Trouble and me we're old buddies you [C]see 
@@ -36,3 +39,7 @@ I've [G]stuck by him and he's a sticking by [D7]me
 Well goodbye [G]honey be thankful you're [C]free
 And [G]that you're not stuck with [D7]ol' trouble and [G]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Tattletale Eyes}
 {meta: artist George Jones}
 {meta: composer J. Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file tattletaleeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here we are [F]staring at each [C]other
@@ -29,3 +32,6 @@ Tattletale eyes told on our minds
 [C]Tattletale eyes told on our minds
 [Dm]No you can't keep a [F]thing from [G7]tattletale [C]eyes
 {end_of_verse}
+
+
+

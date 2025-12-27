@@ -1,6 +1,9 @@
 {meta: title Maria Is A Mystery}
 {meta: artist David Allan Coe}
 {meta: composer David A. Coe and Jay Bolotin}
+{meta: x_source classic-country}
+{meta: x_source_file mariaisamysterylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maria has a music box she winds most every day
@@ -38,3 +41,7 @@ Like [G7]angels in a [C]dream
 [F]Maria [G7]she's a myste[C]ry
 [F]Maria [G7]she's a myste[C]ry [G7]
 {end_of_verse}
+
+
+
+

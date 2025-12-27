@@ -1,6 +1,9 @@
 {meta: title A New Baby For Christmas}
 {meta: artist George Jones}
 {meta: composer George Jones and Lester Blackwell}
+{meta: x_source classic-country}
+{meta: x_source_file anewbabyforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want a new baby for Christmas
@@ -48,3 +51,11 @@ And [G7]turn my white Christmas to [C]blue
 {start_of_verse: Verse 9}
 Repeat
 {end_of_verse}
+
+
+
+
+
+
+
+

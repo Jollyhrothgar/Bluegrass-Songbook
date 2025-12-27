@@ -1,6 +1,9 @@
 {meta: title Out Of Control}
 {meta: artist George Jones}
 {meta: composer George Jones, Darrell Edwards, Herby Treece}
+{meta: x_source classic-country}
+{meta: x_source_file outofcontrollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What goes wrong with the [G7]mind of a [C]man in a [G]bar
@@ -29,3 +32,6 @@ With no one to love me [A7]no family at [D7]home
 I'm a [G]picture of [G7]others with a [C]future so [G]cold
 A [C]life ain't worth [G]livin' [D7]when it's out of con[G]trol
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bring On The Night}
 {meta: artist Alan Jackson}
 {meta: composer Charlie Craig, Keith Stegall, Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file bringonthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's twilight and the street lights are comin' [F]on
@@ -33,3 +36,7 @@ And turn on the [C]feel[F]ings and turn out the [C]lights
 {start_of_verse: Verse 4}
 [F]Let's call it a [Dm]day and [G7]bring on the [C]night
 {end_of_verse}
+
+
+
+

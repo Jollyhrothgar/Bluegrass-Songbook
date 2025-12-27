@@ -1,6 +1,9 @@
 {meta: title Give It All We Got Tonight}
 {meta: artist George Strait}
 {meta: composer Tim James, Mark D. Bright, Philip Eugene O'Donnell}
+{meta: x_source classic-country}
+{meta: x_source_file giveitallwegottonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]July moonlight [D7]shines
@@ -49,3 +52,7 @@ Cause that's all we have in this [Am]life
 [C]Drink up this love c'mon give it all we got t[G]onight
 [D7]Give it all we got [Am]tonight
 {end_of_verse}
+
+
+
+

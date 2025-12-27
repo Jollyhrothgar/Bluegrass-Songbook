@@ -1,6 +1,9 @@
 {meta: title The Hanging Tree}
 {meta: artist Marty Robbins}
 {meta: composer Jerry Livingston and Mack David}
+{meta: x_source classic-country}
+{meta: x_source_file thehangingtreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I came to town [Am]to search for gold
@@ -48,3 +51,8 @@ A [F]tree of love new [C]love for me
 {start_of_verse: Verse 6}
 The hanging tree [F]the hanging tree [C]the hanging tree
 {end_of_verse}
+
+
+
+
+

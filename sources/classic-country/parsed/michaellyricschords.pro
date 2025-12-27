@@ -1,6 +1,9 @@
 {meta: title Michael}
 {meta: artist Carl Story}
 {meta: composer Merv Griffin}
+{meta: x_source classic-country}
+{meta: x_source_file michaellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord You heard me crying saw me [G7]dying all a[C]lone
@@ -30,3 +33,6 @@ Michael keep watching over [G7]me
 Lord [F]through Your power divine You [C]opened my [Am]mind
 To the [Dm]things that my [G7]eyes could not [C]see
 {end_of_verse}
+
+
+

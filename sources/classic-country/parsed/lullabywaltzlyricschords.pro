@@ -1,5 +1,8 @@
 {meta: title Lullaby Waltz}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file lullabywaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dance with me darling say you'll be [G7]mine
@@ -26,3 +29,6 @@
 [C7]Say that you love me with the love that's not [F]false
 [C]So dance with me darling to [G7]the Lullaby [C]Waltz
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Beyond The Great Divide}
 {meta: artist Emmylou Harris}
 {meta: composer Jack W. Routh and J.C. Crowley}
+{meta: x_source classic-country}
+{meta: x_source_file beyondthegreatdividelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There'll be [F]greener [C]pastures
@@ -27,3 +30,6 @@
 [F]You'll be [G7]mine forever [C]my [F]darlin'
 [C]Far beyond the [G7]great [C]divide
 {end_of_verse}
+
+
+

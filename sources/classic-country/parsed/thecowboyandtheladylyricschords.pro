@@ -1,6 +1,9 @@
 {meta: title The Cowboy And The Lady}
 {meta: artist Tommy Cash}
 {meta: composer Peggy Jean Russell}
+{meta: x_source classic-country}
+{meta: x_source_file thecowboyandtheladylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She said any other time she never [C]would 
@@ -56,3 +59,7 @@ The difference makes no difference [G]anymore
 Cause the cowboy and the [D7]lady 
 Found the feeling the whole world's looking [G]for
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Won't Decorate Your Christmas Tree}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Barbara Cummings}
+{meta: x_source classic-country}
+{meta: x_source_file iwontdecorateyourChristmastreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I wrote to Santa just today I told him I don't plan to [C]stay
@@ -37,3 +40,8 @@ So listen to me here's Christmas cheers
 {start_of_verse: Verse 5}
 [D7]No I won't decorate your Christmas tree this [G]year
 {end_of_verse}
+
+
+
+
+

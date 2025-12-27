@@ -1,6 +1,9 @@
 {meta: title Mississippi River Let Your Water Flow}
 {meta: artist Doyle Lawson}
 {meta: composer Jamie Dailey and Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file mississippiriverletyourwaterflowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been a long time coming but I'm finally on my way 
@@ -34,3 +37,7 @@ Smell the sweet [F]magnolia when the day is [C]done
 Louisiana [Am]bayou in the morning [C]sun
 Smell the sweet [F]magnolia when the day is [C]done
 {end_of_verse}
+
+
+
+

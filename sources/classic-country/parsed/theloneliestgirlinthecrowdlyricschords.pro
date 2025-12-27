@@ -1,5 +1,8 @@
 {meta: title The Loneliest Girl In The Crowd}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file theloneliestgirlinthecrowdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She's got to be the [Em]loneliest [G]girl in [C]the [Am]crowd
@@ -35,3 +38,7 @@
 [G]Maybe she's waitin' on [Em]someone who'll [G]make her [C]feel [Am]proud
 [D7]She's got to be the loneliest girl in the [G7][G]crowd
 {end_of_verse}
+
+
+
+

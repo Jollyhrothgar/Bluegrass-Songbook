@@ -1,6 +1,9 @@
 {meta: title I've Got To Have You}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottohaveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You came smilin' softly and you [F]moved in easy as a dreamer into [G]my world
@@ -25,3 +28,5 @@ But it's [G]enough it's enough
 It's all [F]over  I've got to [G]have you 
 I just can't [F]help it no I've got to [G]have you
 {end_of_verse}
+
+

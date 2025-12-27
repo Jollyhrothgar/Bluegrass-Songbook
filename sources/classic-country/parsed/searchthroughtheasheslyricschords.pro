@@ -1,6 +1,9 @@
 {meta: title Search Through The Ashes}
 {meta: artist Wynn Stewart}
 {meta: composer Robert Bozo Darnell and Jack Gunter}
+{meta: x_source classic-country}
+{meta: x_source_file searchthroughtheasheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see in your [G7]eyes a [C]bit of sur[F]prise
@@ -27,3 +30,6 @@ From the [G7]fire of your warm tender [C]care [C7]
 I’ve [F]come back to search through the [C]ashes 
 And [G7]hope there’s an ember some[C]where
 {end_of_verse}
+
+
+

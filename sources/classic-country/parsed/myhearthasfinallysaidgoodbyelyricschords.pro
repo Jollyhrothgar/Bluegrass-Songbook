@@ -1,6 +1,9 @@
 {meta: title My Heart Has Finally Said Goodbye}
 {meta: artist Leona Williams}
 {meta: composer David C. Kirby and Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file myhearthasfinallysaidgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ve been going over all my [C]memories
@@ -33,3 +36,7 @@ I [G]guess my heart has [D7]finally said good[G]bye
 {start_of_verse: Verse 4}
 I guess my heart has [D7]finally said good[G]bye
 {end_of_verse}
+
+
+
+

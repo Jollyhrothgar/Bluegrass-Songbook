@@ -1,6 +1,9 @@
 {meta: title You're Killing Me With Kindness}
 {meta: artist Freddie Hart}
 {meta: composer Freddie Hart and Mary Bourget}
+{meta: x_source classic-country}
+{meta: x_source_file yourekillingmewithkindnesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You're killing me with [C]kindness
@@ -34,3 +37,7 @@ For what it's all worth
 {start_of_verse: Verse 5}
 repeat last verse
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love Is The Look You're Looking For Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Rose Lee Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file loveisthelookyourelookingforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Love puts the blush in your [G]smile
@@ -33,3 +36,7 @@ And [D7]love will never ever [G]die
 {start_of_verse: Verse 5}
 Yes [C]love is the [D7]look you're looking [G]for 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Waltz You Home}
 {meta: artist Ronnie Cox}
 {meta: composer Ronnie Cox and Russell Smith}
+{meta: x_source classic-country}
+{meta: x_source_file illwaltzyouhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’ll Waltz you hom[C]e   
@@ -77,3 +80,13 @@ And I’ll waltz you [G]home[C]  [G]
 Come to my arms little [D7]darlin’ 
 And I’ll waltz you [C]home[G] 
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

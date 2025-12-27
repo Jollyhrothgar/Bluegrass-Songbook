@@ -1,6 +1,9 @@
 {meta: title No I Don't Believe I Will}
 {meta: artist Carl Smith}
 {meta: composer Jim Denny and Jean Crowe}
+{meta: x_source classic-country}
+{meta: x_source_file noidontbelieveiwilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well you cheat me every time I turn my face
@@ -43,3 +46,8 @@ And listen to you holler [C7]squall and bawl[F]
 No [C]don't believe I will 
 [G7]Without me you couldn't get along at [C]all
 {end_of_verse}
+
+
+
+
+

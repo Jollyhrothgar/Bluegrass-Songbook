@@ -1,6 +1,9 @@
 {meta: title What Money Can't Buy}
 {meta: artist Charlie Pride}
 {meta: composer Howard White, Carl Knight, Clayton Ford}
+{meta: x_source classic-country}
+{meta: x_source_file whatmoneycantbuylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]To watch the rain fall o’er [C]the fields and the [G]valleys
@@ -33,3 +36,7 @@ Our children are playing no [C]shoes on their [G]feet
 {start_of_verse: Verse 4}
 [C]Cause we hold hands and [G]smile at what [D7]money can't [G]buy
 {end_of_verse}
+
+
+
+

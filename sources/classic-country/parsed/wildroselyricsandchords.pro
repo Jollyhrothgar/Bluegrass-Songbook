@@ -1,6 +1,9 @@
 {meta: title Wild Rose}
 {meta: artist Jim Reeves}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file wildroselyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A rose should be where the sun shines through 
@@ -26,3 +29,6 @@ But I'll be proud [C]to take you home for all to [G]see
 To stand with me where the candles [G]glow
 With orange [D7]blossoms all around the wild wild [G]rose
 {end_of_verse}
+
+
+

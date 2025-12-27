@@ -1,6 +1,9 @@
 {meta: title I Can’t Find The Time}
 {meta: artist Faron Young}
 {meta: composer Hank Cochran and Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file icantfindthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've searched through each [G7]moment of [C]each passing [F]hour
@@ -29,3 +32,6 @@ They tell me in [G7]time I'll [C]find an[F]other
 Oh [F]they tell me in time I'll [C]forget you 
 But [G7]somehow I can't find the [C]time
 {end_of_verse}
+
+
+

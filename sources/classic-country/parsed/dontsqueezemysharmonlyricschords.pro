@@ -1,6 +1,9 @@
 {meta: title Don't Squeeze My Sharmon}
 {meta: artist Charlie Walker}
 {meta: composer Carl Belew and Van Givens}
+{meta: x_source classic-country}
+{meta: x_source_file dontsqueezemysharmonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Did you hear what happened  [C7]last Saturday [F]night
@@ -33,3 +36,7 @@ And if Sharmon needs [C]squeezing  [G7]then leave that to [C]me
 {start_of_verse: Verse 4}
 [F]And if Sharmon needs [C]squeezing  [G7]then leave that to [C]me
 {end_of_verse}
+
+
+
+

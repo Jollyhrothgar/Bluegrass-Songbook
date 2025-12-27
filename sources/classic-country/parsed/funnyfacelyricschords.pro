@@ -1,5 +1,8 @@
 {meta: title Funny Face}
 {meta: artist Donna Fargo}
+{meta: x_source classic-country}
+{meta: x_source_file funnyfacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Funny face I love you funny face I need [C]you
@@ -31,3 +34,7 @@ When the roads [C]I travel [F]seem all up [C]hill
 And the [G7]colors in my rainbows turn [C]blue
 You kiss [F]my tears away you smile [G7]at me and [C]say
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Forget Yesterday}
 {meta: artist Vern Gosdin}
 {meta: composer Wayne Bradford}
+{meta: x_source classic-country}
+{meta: x_source_file forgetyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The hurt was deep my life [G7]was all in [C]pieces
@@ -25,3 +28,5 @@
 [F]Through good times and pain through sunshine or [G7]rain
 [F]We'll [C]love on [F]forever [C]forget [C][G7]yesterday
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I Wish This Night Would Never End}
 {meta: artist Sonny James}
 {meta: composer Dan Welch}
+{meta: x_source classic-country}
+{meta: x_source_file iwishthisnightwouldneverendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh how [F]short has [G7]been the [C]evening
@@ -43,3 +46,8 @@ My lips find yours and they [G7]blend
 [F]Let's linger here [G7]upon your [C]doorstep
 And [G7]wish this night would never [C]end
 {end_of_verse}
+
+
+
+
+

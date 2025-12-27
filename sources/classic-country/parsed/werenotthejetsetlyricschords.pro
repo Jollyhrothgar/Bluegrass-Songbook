@@ -1,6 +1,9 @@
 {meta: title We’re Not The Jet Set}
 {meta: artist George Jones and Tammy Wynette}
 {meta: composer Bobby Bradock}
+{meta: x_source classic-country}
+{meta: x_source_file werenotthejetsetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]By a fountain back in Rome I fell in[Am] love with [G7]you
@@ -53,3 +56,9 @@ No we're not the [G7]jet set
 We're the old Chevrolet set
 But ain't we got [C]love
 {end_of_verse}
+
+
+
+
+
+

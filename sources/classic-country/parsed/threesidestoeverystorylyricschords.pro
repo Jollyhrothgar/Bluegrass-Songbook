@@ -1,5 +1,8 @@
 {meta: title Three Sides To Every Story}
 {meta: artist Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file threesidestoeverystorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's shaping up to [F]be a real bad [G7]day
@@ -36,3 +39,7 @@ There's three sides to every [C]story
 {start_of_verse: Verse 5}
 [F]Your side  my [G7]side  and the [C]truth        
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Is This Me}
 {meta: artist Jim Reeves}
 {meta: composer Dottie West and Bill West}
+{meta: x_source classic-country}
+{meta: x_source_file isthismelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Is this me is it really me sitting here [F]crying
@@ -22,3 +25,5 @@
 [C]This isn't me it just can't be me sitting here [F]crying
 [G7]Is it just a dream I know it's just a dream our love can't be [C]dying
 {end_of_verse}
+
+

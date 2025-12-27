@@ -1,6 +1,9 @@
 {meta: title At The Corner Of Walk And Don't Walk}
 {meta: artist Rhonda Vincent}
 {meta: composer Kenny Beard and John Jarrard}
+{meta: x_source classic-country}
+{meta: x_source_file atthecornerofwalkanddontwalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm callin' from a pay phone I was headin' out of [F]town
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]At the corner of walk and don't walk darlin' and the [F]light's about [G7]to [C]change
 {end_of_verse}
+
+
+
+

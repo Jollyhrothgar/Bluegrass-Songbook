@@ -1,6 +1,9 @@
 {meta: title Where The Old Red River Flows}
 {meta: artist Hank Williams}
 {meta: composer Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file wheretheoldredriverflowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm dreaming tonight of Dixie [F]cotton fields and Whippoo[C]rwills 
@@ -29,3 +32,6 @@ You can hear those darkies crooning soft and [G7]low
 And the [F]twilight in the evening so loooooo [C]so loooooooo 
 On my farm in Louisiana where the [G7]old Red River [C]flows 
 {end_of_verse}
+
+
+

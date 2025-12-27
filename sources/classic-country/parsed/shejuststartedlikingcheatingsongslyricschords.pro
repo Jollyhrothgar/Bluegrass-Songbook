@@ -1,6 +1,9 @@
 {meta: title She Just Started Liking Cheating Songs}
 {meta: artist John Anderson}
 {meta: composer Kent Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file shejuststartedlikingcheatingsongslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She just started liking cheating [F]songs 
@@ -43,3 +46,8 @@ And what's bothering [C]me
 I don't know if it's the cheating she [F]likes 
 [G7]Or just the [C]melodies
 {end_of_verse}
+
+
+
+
+

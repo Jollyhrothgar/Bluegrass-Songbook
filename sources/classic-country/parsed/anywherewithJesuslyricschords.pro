@@ -1,6 +1,9 @@
 {meta: title Anywhere With Jesus}
 {meta: artist Amy Grant}
 {meta: composer Daniel Towner,}
+{meta: x_source classic-country}
+{meta: x_source_file anywherewithJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 John Hobbs, Vincent Gi, Dp
@@ -50,3 +53,10 @@ Anywhere with Jesus I am [D7]not a[G]fraid
 {start_of_verse: Verse 6}
 Anywhere with Jesus [D7]I can safely [G]go
 {end_of_verse}
+
+
+
+
+
+
+

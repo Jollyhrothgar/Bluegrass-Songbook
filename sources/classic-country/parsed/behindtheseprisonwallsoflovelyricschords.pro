@@ -1,6 +1,9 @@
 {meta: title Behind These Prison Walls Of Love}
 {meta: artist The Country Gentlemen}
 {meta: composer William Bolick}
+{meta: x_source classic-country}
+{meta: x_source_file behindtheseprisonwallsoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Behind these prison walls of [F]love dear
@@ -29,3 +32,6 @@ So [C]I’ll content myself with [F]memories
 [C]All of our vows will be un[F]broken
 Be[C]hind these [G7]prison walls of [C]love
 {end_of_verse}
+
+
+

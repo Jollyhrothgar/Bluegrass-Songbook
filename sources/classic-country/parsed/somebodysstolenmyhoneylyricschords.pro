@@ -1,6 +1,9 @@
 {meta: title Somebody's Stolen My Honey}
 {meta: artist Ernest Tubb}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysstolenmyhoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody’s stolen my honey and it [D7]just ain’t right
@@ -22,3 +25,5 @@ I [F]tried to tell her how he’s lied and [C]how he’ll quit her soon
 [F]But that’s no good to me right now it [C]doesn’t help a [A7]bit somehow
 [D7]Cause somebody’s stolen my honey and my [G7]honey’s stolen my [C]heart
 {end_of_verse}
+
+

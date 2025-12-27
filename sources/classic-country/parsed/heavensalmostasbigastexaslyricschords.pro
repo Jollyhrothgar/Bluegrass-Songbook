@@ -1,6 +1,9 @@
 {meta: title Heaven's Almost As Big As Texas}
 {meta: artist Johnny Paycheck}
 {meta: composer Robert Lee Floyd}
+{meta: x_source classic-country}
+{meta: x_source_file heavensalmostasbigastexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well he walked into the bar room ragged [C]pants and an over[G]coat 
@@ -54,3 +57,10 @@ And [C]when he plays [D7]there ain't no place to [G]hide
 {start_of_verse: Verse 6}
 Yeah and [C]when he plays [D7]there ain't no place to [G]hide 
 {end_of_verse}
+
+
+
+
+
+
+

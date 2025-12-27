@@ -1,6 +1,9 @@
 {meta: title All American Man}
 {meta: artist Johnny Paycheck}
 {meta: composer Gary Adams and Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file allamericanmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well God made man from a [C]piece of [G]clay and [C]told him [G]in his [C]dying day
@@ -51,3 +54,9 @@ Said [G]You're the boss I [C]don't want [D7]no one a[G]bove you
 He gave him [C]responsi[G]bility said [C]you only [G]answer [C]unto Me 
 If [G]you'll do these [C]things I'll [D7]make someone to [G]love you
 {end_of_verse}
+
+
+
+
+
+

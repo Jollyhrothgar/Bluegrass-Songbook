@@ -1,5 +1,8 @@
 {meta: title Denver Woman}
 {meta: artist Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file denverwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw her for the [F]first time in a [C]small cafe 
@@ -39,3 +42,8 @@ She said I [F]always knew that it would [G7]take a special [C]man for [Am]me
 {start_of_verse: Verse 5}
 And the [Dm]first time she let [G7]go Lord it was [C]me 
 {end_of_verse}
+
+
+
+
+

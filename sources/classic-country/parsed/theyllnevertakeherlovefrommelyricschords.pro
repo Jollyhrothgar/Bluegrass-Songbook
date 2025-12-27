@@ -1,5 +1,8 @@
 {meta: title They'll Never Take Her Love From Me}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file theyllnevertakeherlovefrommelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If today the sun should set on all my hopes and [C]cares
@@ -28,3 +31,6 @@ But I knew her love would never set me [D7]free
 And even on [G]the morning she became another's [C]bride
 I said they'll [D7]never never take her love from [G]me
 {end_of_verse}
+
+
+

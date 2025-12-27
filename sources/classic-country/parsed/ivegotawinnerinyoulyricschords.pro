@@ -1,6 +1,9 @@
 {meta: title I've Got A Winner In You}
 {meta: artist Don Williams}
 {meta: composer Don Williams and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotawinnerinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I oughta know  [G7]what it’s like to loose at [C]love
@@ -31,3 +34,6 @@
 [Am]A love I can hold [F]onto
 [G7]I’ve got a winner in [C]you
 {end_of_verse}
+
+
+

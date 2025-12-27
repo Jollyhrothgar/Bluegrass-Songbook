@@ -1,5 +1,8 @@
 {meta: title Peggy Sue Got Married}
 {meta: artist Buddy Holly}
+{meta: x_source classic-country}
+{meta: x_source_file peggysuegotmarriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Please don't tell [D7]no-no-no
@@ -38,3 +41,9 @@ I don't say [D7]that it's true
 {start_of_verse: Verse 5}
 [C]Peggy Sue got [G]married not [D7]long [G]ago
 {end_of_verse}
+
+
+
+
+
+

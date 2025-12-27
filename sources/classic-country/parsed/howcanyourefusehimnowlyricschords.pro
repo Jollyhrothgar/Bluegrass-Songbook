@@ -1,5 +1,8 @@
 {meta: title How Can You Refuse Him Now}
 {meta: artist Hank Williams Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file howcanyourefusehimnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How can you refuse Him [F]now
@@ -39,3 +42,7 @@ As He hung there on the tree
 [C]With tears in His eyes on the [F]cross
 [C]Where He died how can you [G7]refuse Jesus [C]now
 {end_of_verse}
+
+
+
+

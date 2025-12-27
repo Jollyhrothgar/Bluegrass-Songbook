@@ -1,6 +1,9 @@
 {meta: title Cradle Of Love}
 {meta: artist Johnny Preston}
 {meta: composer Jackie L. Fautheree and Wayne Gray}
+{meta: x_source classic-country}
+{meta: x_source_file cradleoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well rock-a-bye baby in the [Em]treetop
@@ -61,3 +64,11 @@
 {start_of_verse: Verse 5}
 [Em][G]Mmmmm-mmmm-mmm-mmmm-mmmm
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Enough To Keep Me Hanging On}
 {meta: artist Vern Gosdin}
 {meta: composer Ira Allen and Buddy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file justenoughtokeepmehangingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's true you have me [Em]twisted around your [F]finger 
@@ -25,3 +28,5 @@ A [F]love that's strong as [Em]mine will make me [F]do most [C]anything
 [F]Just enough to [G7]keep me a hanging [C]on ah-ha-[Am]ah
 [F]Just enough to [G7]keep me a hanging [C]on
 {end_of_verse}
+
+

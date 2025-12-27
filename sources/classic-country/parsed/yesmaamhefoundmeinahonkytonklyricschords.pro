@@ -1,6 +1,9 @@
 {meta: title Yes Ma'am He Found Me In A Honky Tonk}
 {meta: artist Leona Williams}
 {meta: composer Glenn Barber}
+{meta: x_source classic-country}
+{meta: x_source_file yesmaamhefoundmeinahonkytonklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes ma'am  he found me in a [F]honky-tonk
@@ -35,3 +38,6 @@ Helped to show me [C]how
 Yes [G7]someone just like your lovin' son
 Helped to show me [C]how
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Rocks In My Head}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file rocksinmyheadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I must have had [C]rocks in my [G]head
@@ -39,3 +42,8 @@
 {start_of_verse: Verse 4}
 [D7]Yes I must have had rocks in my [G]head
 {end_of_verse}
+
+
+
+
+

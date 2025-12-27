@@ -1,5 +1,8 @@
 {meta: title Midnight Tears}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file midnighttearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can’t forget your [C]smiling blue [G]eyes
@@ -25,3 +28,5 @@ Close to my [C]heart I [A7]hold you tender[D7]ly
 [G]But when I awake that [C]sweetness disa[G]ppears
 My cheeks are damp [D7]with midnight [G]tears
 {end_of_verse}
+
+

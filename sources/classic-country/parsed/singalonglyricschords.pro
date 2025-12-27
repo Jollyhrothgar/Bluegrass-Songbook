@@ -1,6 +1,9 @@
 {meta: title Sing Along}
 {meta: artist Jimmy Dean}
 {meta: composer Robert Allen}
+{meta: x_source classic-country}
+{meta: x_source_file singalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Da da [Eb]da da da [G]da [D7]da [G]da [D7]
@@ -30,3 +33,6 @@ Let me hear a melo[D7]dy I start to [G]sing along
 [G]Get me near a melody a simple [D7]singing song
 And I [G]sing yes I [Eb]sing let me [G]sing [D7]a--[G]long
 {end_of_verse}
+
+
+

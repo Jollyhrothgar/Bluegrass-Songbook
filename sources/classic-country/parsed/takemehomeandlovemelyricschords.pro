@@ -1,6 +1,9 @@
 {meta: title Take Me Home And Love Me}
 {meta: artist Tammy Wynette}
 {meta: composer Norro Wilson, Carmol Taylor, Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file takemehomeandlovemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Take me home [C]again tonight and [G]love me
@@ -28,3 +31,6 @@ Take me home [C]again tonight and [G]love me
 You're [G]everything I [C]ever want to [G]live for can't you see
 [C]Let's go [G]home again [D7]tonight so you can [G]love me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Daydream Believer}
 {meta: artist Anne Murray}
 {meta: composer John Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file daydreambelieverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I could hide beneath the [C]wings of the [G]bluebird as she [C]sings
@@ -21,3 +24,5 @@ I [G]once thought of [C]you as a [G]white knight on a [C]steed
 Not a [G]dollar one to [C]spend 
 But [G]how much baby [C]do we [D7]really [G]need
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title The Great Atomic Power}
 {meta: artist The Louvin Brothers}
 {meta: composer Buddy Bain, Charles Louvin, Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatatomicpowerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Do you fear this man's invention that they call [C]atomic [G]power
@@ -43,3 +46,8 @@ Will you rise and meet your Savior in the [D7]end
 Will you shout [G]or will you cry when the fire rains from on [C]high
 Are you [G]ready for that [D7]great atomic [G]power
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Dream Painter}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier &amp; Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file dreampainterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's my dream painter [F]my weather chan[G7]ger
@@ -38,3 +41,7 @@ The [F]rainbow that he paints [G7]for me won't [C]let it rain
 [F]He's my [C]dream painter [F]my sunshine [G7]maker
 [F]L-O-V-E [G7]love should be his [C]name
 {end_of_verse}
+
+
+
+

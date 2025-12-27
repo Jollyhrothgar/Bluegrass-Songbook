@@ -1,6 +1,9 @@
 {meta: title Your First Time}
 {meta: artist Mickey Gilley}
 {meta: composer Huey P. Meaux}
+{meta: x_source classic-country}
+{meta: x_source_file yourfirsttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pretty little [G7]teenage [C]queen 
@@ -36,3 +39,7 @@ I know it [C7]hurts but by and [F]by
 You’re gonna find somebody [C]too
 [G7]Who’s been stood up just like [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Birth Of The Blues}
 {meta: artist Randy Travis}
 {meta: composer Buddy DeSylva, Lew Brown, Ray Henderson}
+{meta: x_source classic-country}
+{meta: x_source_file thebirthoftheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Oh they say some people long [D7]ago
@@ -33,3 +36,7 @@ And [C]they sent [E7]out the [F]news
 [D7]That the [G7]Southland gave birth to the [C]blues
 Repeat last verse
 {end_of_verse}
+
+
+
+

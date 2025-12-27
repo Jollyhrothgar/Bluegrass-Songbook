@@ -1,6 +1,9 @@
 {meta: title Blessing in Disguise}
 {meta: artist Kris Kristofferson}
 {meta: composer Arlie A. Carter and William Warren)}
+{meta: x_source classic-country}
+{meta: x_source_file blessingindisguiselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You wouldn't read my [C7]letter if I [F]wrote you
@@ -36,3 +39,7 @@ But they t[F]ell me that the truth will set you f[C]ree
 And it [F]led me to a side of you that [C]I'd refused to [F]see
 So I [C]guess it's been a [G7]blessing in dis[F]guise
 {end_of_verse}
+
+
+
+

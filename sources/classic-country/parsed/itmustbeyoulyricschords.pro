@@ -1,6 +1,9 @@
 {meta: title It Must Be You}
 {meta: artist Dolly Parton}
 {meta: composer Blaise Tosti}
+{meta: x_source classic-country}
+{meta: x_source_file itmustbeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just like the tide goes with the [G7]sea
@@ -27,3 +30,6 @@ Together we'll look back but we won't shed a single [C]tear
 When you [F]find yourself [G7]alone just think of [C]me and I'll be [F]there
 Must be [G7]you by my side the whole way [C]through
 {end_of_verse}
+
+
+

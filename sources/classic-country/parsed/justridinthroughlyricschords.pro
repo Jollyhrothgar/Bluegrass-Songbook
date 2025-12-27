@@ -1,6 +1,9 @@
 {meta: title Just Ridin' Through}
 {meta: artist Darrell McCall}
 {meta: composer Don Cusic}
+{meta: x_source classic-country}
+{meta: x_source_file justridinthroughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pack up your [G7]guitar [C]cowboy
@@ -61,3 +64,11 @@ A [F]side street hobo in [C]rodeo [Am]clothes
 {start_of_verse: Verse 8}
 [C]Cowboy you're [G7]just ridin' [C]through
 {end_of_verse}
+
+
+
+
+
+
+
+

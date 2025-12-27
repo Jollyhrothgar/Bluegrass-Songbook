@@ -1,6 +1,9 @@
 {meta: title We Know An Ending}
 {meta: artist Jack Greene}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file weknowanendinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never thought that you'd be leaving me [C7]
@@ -22,3 +25,5 @@ And [F]how long have I [G7]lived with your memo[C]ry
 We may have missed it when it first begun[C7]
 But at [F]least we know [G7]an ending when it [C]comes
 {end_of_verse}
+
+

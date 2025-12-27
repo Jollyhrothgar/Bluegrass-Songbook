@@ -1,6 +1,9 @@
 {meta: title Party Doll}
 {meta: artist Buddy Knox}
 {meta: composer Jimmy Bowen, Buddy Knox, Dave Alldred}
+{meta: x_source classic-country}
+{meta: x_source_file partydolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Well all I want is a [G]party doll
@@ -47,3 +50,8 @@ Come along and be my [C]party doll
 [D7]I wanna make love to [G]you to you
 [D7]I wanna make love to [G]you
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Still Be Lovin' You}
 {meta: artist Lee Greenwood}
 {meta: composer Steve Eaton}
+{meta: x_source classic-country}
+{meta: x_source_file illstillbelovinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the songs on the radio say love is blind
@@ -53,3 +56,9 @@ Cause [Am]I'll still [D7]be lovin' [G]you
 [Am]I'll still [D7]be lovin' [G]you
 Oh [Am]I'll still [D7]be lovin' [G]you
 {end_of_verse}
+
+
+
+
+
+

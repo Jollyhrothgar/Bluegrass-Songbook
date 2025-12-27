@@ -1,6 +1,9 @@
 {meta: title I Can’t Breathe Deep Yet}
 {meta: artist The Gibson Brothers}
 {meta: composer Leigh Joseph Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file icantbreathedeepyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got a beauty here she's got my back
@@ -56,3 +59,10 @@ No I [D7]can't breath deep [G]yet
 Even [D7]if I try to [A#7]doubt I couldn't [G]control
 The [A#7]restless side of me that's taking [A7]hold
 {end_of_verse}
+
+
+
+
+
+
+

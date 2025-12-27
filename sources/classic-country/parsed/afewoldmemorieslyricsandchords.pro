@@ -1,6 +1,9 @@
 {meta: title A Few Old Memories}
 {meta: artist Statler Brothers}
 {meta: composer Don S. Reid and Harold W. Reid}
+{meta: x_source classic-country}
+{meta: x_source_file afewoldmemorieslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I burned all those [F]pictures at [C]least ten years ago
@@ -33,3 +36,7 @@ But [G7]all that’s left for me to love are a few old memo[C]ries
 {start_of_verse: Verse 4}
 [G7]A few old memo[C]ries
 {end_of_verse}
+
+
+
+

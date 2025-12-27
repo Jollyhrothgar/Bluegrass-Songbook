@@ -1,6 +1,9 @@
 {meta: title It Will Come To Pass}
 {meta: artist Willie Nelson}
 {meta: composer Don Baird}
+{meta: x_source classic-country}
+{meta: x_source_file itwillcometopasslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The turning earth will raise its wand
@@ -41,3 +44,8 @@ Yet bearded men in sandwich boards
 Will tell the sinful streets he's come at [G7]last
 And love will grow  it will come to [C]pass
 {end_of_verse}
+
+
+
+
+

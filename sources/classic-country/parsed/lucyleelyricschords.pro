@@ -1,6 +1,9 @@
 {meta: title Lucy Lee}
 {meta: artist Webb Pierce}
 {meta: composer Sleepy Jeffers}
+{meta: x_source classic-country}
+{meta: x_source_file lucyleelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saddled up my pony here I am [G7]Texas bound
@@ -29,3 +32,6 @@ I’ve got a gal that’s waiting patiently [G7]just for me
 [C]We’re gonna raise a family maybe two [G7]maybe three
 [C]We’re gonna be so happy [G7]Lucy Lee and [C]me
 {end_of_verse}
+
+
+

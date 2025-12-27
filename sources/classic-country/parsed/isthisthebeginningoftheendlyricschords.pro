@@ -1,6 +1,9 @@
 {meta: title Is This The Beginning Of The End}
 {meta: artist Merle Haggard}
 {meta: composer Wynn Stewart, Wally Lewis, Billy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file isthisthebeginningoftheendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just don't seem to know you [F]anymore 
@@ -33,3 +36,6 @@ Whisper I love you once [G7]again
 [C]Just three words can make my heart [F]believe 
 This is [C]not the [G7]beginning of the [C]end 
 {end_of_verse}
+
+
+

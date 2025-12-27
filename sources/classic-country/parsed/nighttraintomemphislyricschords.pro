@@ -1,6 +1,9 @@
 {meta: title Night Train To Memphis}
 {meta: artist Jimmy Dean}
 {meta: composer Marvin Hughes/Beasley Smith/Owen Bradley}
+{meta: x_source classic-country}
+{meta: x_source_file nighttraintomemphislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Take that Night Train To Memphis 
@@ -53,3 +56,8 @@ Oh we'll have a [C]jubilee
 Down in Memphis [F]Tennessee
 And we'll [C]shout halle-lu-jah [G7]all the [C]way
 {end_of_verse}
+
+
+
+
+

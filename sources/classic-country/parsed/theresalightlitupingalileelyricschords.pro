@@ -1,6 +1,9 @@
 {meta: title There's A Light Lit Up In Galilee}
 {meta: artist The Stoneman Family}
 {meta: composer Ernest Stoneman}
+{meta: x_source classic-country}
+{meta: x_source_file theresalightlitupingalileelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Must Jesus bear the cross [C]alone all alone
@@ -43,3 +46,8 @@ There's a [D7]light lit up in Gali[G]lee Galilee
 There's a light lit up in Gali[C]lee Galilee
 To [D7]bear my spirit [G]home
 {end_of_verse}
+
+
+
+
+

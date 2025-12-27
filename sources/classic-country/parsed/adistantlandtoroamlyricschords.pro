@@ -1,6 +1,9 @@
 {meta: title A Distant Land To Roam}
 {meta: artist Ralph Stanley}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file adistantlandtoroamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember very well
@@ -52,3 +55,8 @@ Fare thee well (fare thee well)
 So I left my dear old home 
 For a [G7]distant land to [C]roam
 {end_of_verse}
+
+
+
+
+

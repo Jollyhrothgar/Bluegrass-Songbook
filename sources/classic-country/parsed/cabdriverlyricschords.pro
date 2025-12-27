@@ -1,6 +1,9 @@
 {meta: title Cab Driver Lyrics chords}
 {meta: artist Hank Thompson}
 {meta: composer C. Carson Parks}
+{meta: x_source classic-country}
+{meta: x_source_file cabdriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Cab Driver  drive by Mary's [D7]place
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 6}
 [D7]Cab Driver better take me [G]home
 {end_of_verse}
+
+
+
+
+

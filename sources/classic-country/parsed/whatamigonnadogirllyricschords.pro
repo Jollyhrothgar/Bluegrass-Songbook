@@ -1,6 +1,9 @@
 {meta: title What Am I Gonna Do Girl}
 {meta: artist Bobby Bare}
 {meta: composer C. King and T. Stern}
+{meta: x_source classic-country}
+{meta: x_source_file whatamigonnadogirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What am I gonna do girl [F]what am I gonna [G7]do
@@ -32,3 +35,7 @@
 [C]What am I gonna do [F]what am I gonna [G7]do
 [C]I love you so much what am I gonna do
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Three A.M.}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file threeamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look at me walkin' the [F]streets at 3 a.[C]m.
@@ -22,3 +25,5 @@ In the news they'll say [C7]he couldn't even [F]swim
 And [C]he gave his life for [F]love at 3 a.[C]m.
 Yes he gave his life for [F]love at 3 a.[C]m.
 {end_of_verse}
+
+

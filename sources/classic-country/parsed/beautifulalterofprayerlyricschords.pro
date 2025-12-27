@@ -1,5 +1,8 @@
 {meta: title Beautiful Alter Of Prayer}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file beautifulalterofprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One day in an old country church [C]house
@@ -40,3 +43,8 @@ I [A7]know mother prayed for me [D7]there
 She prayed for the Savior to guide [C]me
 [G]To the beautiful altar [D7]of [G]prayer
 {end_of_verse}
+
+
+
+
+

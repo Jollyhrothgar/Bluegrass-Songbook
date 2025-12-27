@@ -1,5 +1,8 @@
 {meta: title A Cabin In The Hills}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file acabininthehillslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I dreamed I saw Jesus last night 
@@ -46,3 +49,9 @@ Cause He's building me a [G7]cabin in the [C]hills
 {start_of_verse: Verse 6}
 He's building me a [G7]cabin in the [C]hills 
 {end_of_verse}
+
+
+
+
+
+

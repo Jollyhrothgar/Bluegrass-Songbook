@@ -1,6 +1,9 @@
 {meta: title After The Love Has Gone}
 {meta: artist Roy Orbison}
 {meta: composer David Foster, Jay Graydon, William B. Champlin}
+{meta: x_source classic-country}
+{meta: x_source_file afterthelovehasgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When love's light [C]slowly starts to [G]fade 
@@ -43,3 +46,8 @@ After the [Em]love has [D7]gone
 [G]How can we [Em]carry [D7]on 
 [C]After the love [D7]after the love has [G]gone 
 {end_of_verse}
+
+
+
+
+

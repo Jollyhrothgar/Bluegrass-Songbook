@@ -1,6 +1,9 @@
 {meta: title Much Too Young (To Feel This Damn Old)}
 {meta: artist Garth Brooks}
 {meta: composer Randy Taylor and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file muchtooyoungtofeelthisdamnoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This old highway's getting [Am]longer
@@ -45,3 +48,8 @@ Now I'm [C]much too young to [D7]feel this damn [G]old [D7]
 {start_of_verse: Verse 5}
 Lord I'm [C]much too young to [D7]feel this damn [G]old
 {end_of_verse}
+
+
+
+
+

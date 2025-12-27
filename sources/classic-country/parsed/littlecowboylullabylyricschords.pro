@@ -1,6 +1,9 @@
 {meta: title Little Cowboy Lullaby}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file littlecowboylullabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Listen to me [Am]cowhand [F]better roll in for the [C]night
@@ -22,3 +25,5 @@ You'll be rounding up [Am]dreams as [D7]on the milky way you [G7]roam
 And when a [C]blanket of gold falls across the sage and [Dm]sand land
 [D7]Then that [G7]old Texas [D7]sandman [G7]will be bringing you [C]home
 {end_of_verse}
+
+

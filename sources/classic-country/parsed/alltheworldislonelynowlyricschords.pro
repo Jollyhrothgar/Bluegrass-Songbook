@@ -1,6 +1,9 @@
 {meta: title All the World is Lonely Now}
 {meta: artist Hank Locklin}
 {meta: composer Mel Foree}
+{meta: x_source classic-country}
+{meta: x_source_file alltheworldislonelynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yesterday you said you loved [C]me
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [D7]All the world is lonely [G]now
 {end_of_verse}
+
+
+

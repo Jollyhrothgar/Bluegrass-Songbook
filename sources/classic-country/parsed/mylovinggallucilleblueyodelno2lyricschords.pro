@@ -1,6 +1,9 @@
 {meta: title My Loving Gal Lucille (Blue Yodel No.2)}
 {meta: artist Lefty Frizzell}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file mylovinggallucilleblueyodelno2lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you ever had the blues you know just how I feel[C7]
@@ -25,3 +28,6 @@ You can blow your whistle momma you can toot your horn[C7]
 You [F]can blow your whistle momma you can toot your [C]horn
 You're [G7]gonna wake up some morning and find your daddy [C]gone
 {end_of_verse}
+
+
+

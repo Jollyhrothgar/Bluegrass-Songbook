@@ -1,6 +1,9 @@
 {meta: title All My Woman Asks}
 {meta: artist Jim Ed Brown}
 {meta: composer Willis Graham}
+{meta: x_source classic-country}
+{meta: x_source_file allmywomanaskslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All my woman [Am]asks is that I [D7]love her[G7]
@@ -34,3 +37,7 @@ All the love she [C]wants is [F]my all to [A#7]give
 [G7]All the love she [C]wants is [F]my all to [A#7]give
 [C]And I'll give my [G7]woman all my [C]love
 {end_of_verse}
+
+
+
+

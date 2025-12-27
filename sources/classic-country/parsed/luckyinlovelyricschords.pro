@@ -1,6 +1,9 @@
 {meta: title Lucky in Love}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson, Stephen Bruton, Mike Utley}
+{meta: x_source classic-country}
+{meta: x_source_file luckyinlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You look so good to me  [C]you never change
@@ -36,3 +39,7 @@ Cause I'm [D7]losin' the ones I've been usin' too long on my [G]own
 We can take it like it oughta be  so [C]easily
 When you [D7]luck into lucky in love then you leave it a[G]lone
 {end_of_verse}
+
+
+
+

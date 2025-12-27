@@ -1,6 +1,9 @@
 {meta: title Full Time Daddy}
 {meta: artist Tony Booth}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file fulltimedaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm gonna be your [A7]full time daddy 
@@ -48,3 +51,9 @@ Or I [D7]won't be your [G7]daddy at [C]all
 Yes I'm gonna be your [A7]full time daddy 
 Or I [D7]won't be your [G7]daddy at [C]all
 {end_of_verse}
+
+
+
+
+
+

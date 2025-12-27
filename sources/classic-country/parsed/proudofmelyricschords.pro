@@ -1,6 +1,9 @@
 {meta: title Proud Of Me}
 {meta: artist Tracy Byrd}
 {meta: composer Mark Nesler and Tony Martin}
+{meta: x_source classic-country}
+{meta: x_source_file proudofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As the sun's coming [G7]up   she [F]puts coffee [C]on
@@ -34,3 +37,7 @@ I'm just trying to [G7]keep   [F]her proud of [C]me
 {start_of_verse: Verse 5}
 As the sun's coming [G7]up   she [F]puts coffee [C]on
 {end_of_verse}
+
+
+
+

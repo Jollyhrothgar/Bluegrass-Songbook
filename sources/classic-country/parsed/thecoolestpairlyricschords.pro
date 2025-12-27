@@ -1,5 +1,8 @@
 {meta: title The Coolest Pair}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file thecoolestpairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I could take a ride on Rudolph
@@ -51,3 +54,9 @@ I'd make a 40 below man
 Hoofin' it everywhere
 [F]Hey I've got [G7]time to [C]spare
 {end_of_verse}
+
+
+
+
+
+

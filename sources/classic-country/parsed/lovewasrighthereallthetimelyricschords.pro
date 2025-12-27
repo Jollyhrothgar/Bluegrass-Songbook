@@ -1,6 +1,9 @@
 {meta: title Love Was Right Here All The Time}
 {meta: artist Loretta Lynn}
 {meta: composer Billy Henson and Charles Snoddy}
+{meta: x_source classic-country}
+{meta: x_source_file lovewasrighthereallthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I overlooked a love I couldn't [F]see
@@ -29,3 +32,6 @@ Right [F]here was love before our eyes [C]that neither one could [G7]see
 We'll [C]let the world go by dear we won't [F]mind
 For [G7]our true love was right here all the [C]time
 {end_of_verse}
+
+
+

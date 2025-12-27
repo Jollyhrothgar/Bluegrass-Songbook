@@ -1,6 +1,9 @@
 {meta: title Guilty Of Dreaming}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Hugh Ashley}
+{meta: x_source classic-country}
+{meta: x_source_file guiltyofdreaminglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I told my friends I had you charmed 
@@ -26,3 +29,5 @@ For someone [G]new who won your heart
 While I was [G7]talking [C]big and [G]smart
 I was [D7]guilty of dreaming and [C]talking too [G]loud
 {end_of_verse}
+
+

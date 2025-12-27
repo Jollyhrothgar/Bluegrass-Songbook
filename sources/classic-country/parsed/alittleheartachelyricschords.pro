@@ -1,6 +1,9 @@
 {meta: title A Little Heartache}
 {meta: artist Eddy Arnold}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file alittleheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You slipped a little heartache in on me
@@ -39,3 +42,7 @@ I [C]thought everything was [C7]fine
 Thought your [F]love was really mine
 Then you [C]slipped a little [G7]heartache in on [C]me
 {end_of_verse}
+
+
+
+

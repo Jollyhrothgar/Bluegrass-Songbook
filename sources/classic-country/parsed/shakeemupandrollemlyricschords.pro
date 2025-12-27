@@ -1,5 +1,8 @@
 {meta: title Shake 'Em Up And Roll 'Em}
 {meta: artist Stonewall Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file shakeemupandrollemlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You know love is [D7]just like rollin' [G]dice
@@ -39,3 +42,8 @@ Shake 'em up and [D7]roll 'em one more [G]time
 {start_of_verse: Verse 5}
 Shake 'em up and [D7]roll 'em one more [G]time
 {end_of_verse}
+
+
+
+
+

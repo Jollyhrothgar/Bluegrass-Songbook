@@ -1,6 +1,9 @@
 {meta: title I Could Use Another You}
 {meta: artist Eddy Raven}
 {meta: composer Chris Waters, Tom Shapiro, Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file icoulduseanotheryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't need another [C]drink now (no no [G]no)
@@ -49,3 +52,8 @@ I could use a lover’s touch that could move me just as much
 [Em]I could never get enough back when you loved [C]me
 [Am]Now that we're through I could [D7]use another [G]you
 {end_of_verse}
+
+
+
+
+

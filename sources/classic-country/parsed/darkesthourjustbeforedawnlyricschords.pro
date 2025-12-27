@@ -1,6 +1,9 @@
 {meta: title Darkest Hour Just Before Dawn}
 {meta: artist Emmylou Harris}
 {meta: composer Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file darkesthourjustbeforedawnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Darkest Hour Just Before Dawn
@@ -28,3 +31,6 @@ A [C]watching the [G7]sheep down be[C]low
 He's coming back to [F]claim us 
 Will [C]you be [G7]ready to [C]go
 {end_of_verse}
+
+
+

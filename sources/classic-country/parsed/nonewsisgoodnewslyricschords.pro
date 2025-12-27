@@ -1,5 +1,8 @@
 {meta: title No News Is Good News}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file nonewsisgoodnewslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No news is good news they [C]say
@@ -49,3 +52,9 @@
 [G]The silence is the price that I [C]pay
 [D7]But no news is good news they [G]say
 {end_of_verse}
+
+
+
+
+
+

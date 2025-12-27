@@ -1,6 +1,9 @@
 {meta: title One In A Million}
 {meta: artist Johnny Lee}
 {meta: composer Tim Mosley and Melissa Elliott}
+{meta: x_source classic-country}
+{meta: x_source_file oneinamillionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes it seems the world's a jungle
@@ -48,3 +51,7 @@ With [C]those hard times come a dime a dozen
 The [G]gir[D7]ls with [Em]your kind of lovin'
 Are [C]one in a million I'm lucky you're [D7]mine
 {end_of_verse}
+
+
+
+

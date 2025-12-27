@@ -1,6 +1,9 @@
 {meta: title Somebody's Words}
 {meta: artist Lefty Frizzell}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file somebodyswordslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sat there with a shocked look on my [D7]face
@@ -29,3 +32,6 @@ My baby's used somebody's [D7]words
 [C]She just don't think that way you [D7]see
 [G7]Somebody's words are killing [C]me
 {end_of_verse}
+
+
+

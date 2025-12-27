@@ -1,6 +1,9 @@
 {meta: title Let Me Live In The Light Of His Love}
 {meta: artist Charley Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file letmeliveinthelightofHisLovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let Him always walk beside me 
@@ -26,3 +29,5 @@ For a [G]hard past filled with sadness
 He can [C]touch and fill with gladness 
 Let me [G]live in the [D7]light of his [G]love 
 {end_of_verse}
+
+

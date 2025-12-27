@@ -1,5 +1,8 @@
 {meta: title Don't Seem Like We've Been Together All Our Lives}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file dontseemlikewevebeentogetherallourliveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Since we first said I love you it's been twenty years tonight
@@ -28,3 +31,6 @@ The baby came in April of 1964
 [C]Who'da thought we'd still love each other when twilight years [G]arrived
 [D7]Don't seem like we've been together all our [G]lives
 {end_of_verse}
+
+
+

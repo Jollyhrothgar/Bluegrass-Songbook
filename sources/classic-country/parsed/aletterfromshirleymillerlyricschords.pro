@@ -1,6 +1,9 @@
 {meta: title A Letter From Shirley Miller}
 {meta: artist Statler Brothers}
 {meta: composer Harold Reid, Philip E. Balsley, Don S. Reid}
+{meta: x_source classic-country}
+{meta: x_source_file aletterfromshirleymillerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got a letter to[F]day from [C]Shirley [D7]Miller
@@ -36,3 +39,7 @@ But [G7]I could read between the lines knowing [F]Shirley like I [G7]do
 It’s [C]probably just a passing thing I [F]think [C]she’ll be al[D7]right
 And [G7]I’m glad that Shirley [C]never wrote [G7]what she sat down to [C]write
 {end_of_verse}
+
+
+
+

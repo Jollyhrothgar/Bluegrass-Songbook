@@ -1,6 +1,9 @@
 {meta: title Ocean Of Diamonds}
 {meta: artist Jimmy Martin}
 {meta: composer Clifford Carnahan}
+{meta: x_source classic-country}
+{meta: x_source_file oceanofdiamondslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some people drink champagne out under the [F]stars
@@ -29,3 +32,6 @@ Just to hold you [G7]close dear for just a few [C]hours
 To hear you whisper softly that you love me [F]too
 Would change all the [G7]dark clouds to the bluest of [C]blue
 {end_of_verse}
+
+
+

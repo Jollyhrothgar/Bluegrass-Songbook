@@ -1,5 +1,8 @@
 {meta: title Your Mother's Eyes}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file yourmotherseyeslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There you stand in front of me a perfect stranger
@@ -54,3 +57,10 @@ When I [Dm]look at you and [G7]see your mother’s [C]eyes
 It’s so hard to hold these feelings deep inside of [G7]me
 When I [Dm]look at you and [G7]see your mother’s [C]eyes
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title How Many Time Can A Man Be A Fool}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file howmanytimescanamanbeafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How many times will [F]I [C]believe [G7]what you [C]say
@@ -34,3 +37,7 @@
 [F]I guess the answers one will never teach in [C]school
 [F]How many times can [G7]a man be a [C]fool
 {end_of_verse}
+
+
+
+

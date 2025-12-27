@@ -1,6 +1,9 @@
 {meta: title Who Stole That Train Off The Track}
 {meta: artist Ray Price}
 {meta: composer Hy Heath}
+{meta: x_source classic-country}
+{meta: x_source_file whostolethattrainoffthetracklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who stole that train off the track
@@ -50,3 +53,9 @@ Who ever took it better [G7]come and put it back
 My [C]baby wouldn’t make me wait she’d [F]walk home if the train was late
 Who [C]stole that [G7]train off the [C]track
 {end_of_verse}
+
+
+
+
+
+

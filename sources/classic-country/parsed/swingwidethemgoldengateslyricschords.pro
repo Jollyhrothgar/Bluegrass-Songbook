@@ -1,5 +1,8 @@
 {meta: title Swing Wide Them Golden Gates}
 {meta: artist Gene Watson}
+{meta: x_source classic-country}
+{meta: x_source_file swingwidethemgoldengateslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Goodbye old world of sorrow goodbye tears
@@ -54,3 +57,8 @@ St [F]Paul and old Mathew
 [C]Swing wide them [A7]golden gates
 I'm [D7]gonna come [G7]sweeping [C]through
 {end_of_verse}
+
+
+
+
+

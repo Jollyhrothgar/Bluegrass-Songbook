@@ -1,6 +1,9 @@
 {meta: title High Time You Quit Your Lowdown Ways}
 {meta: artist Waylon Jennings}
 {meta: composer Billy Ray Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file hightimeyouquityourlowdownwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm sick and tired of [D7]waking up sick and [G]tired
@@ -25,3 +28,5 @@ Well now she could fly higher than a jet [G]airplane
 But not after Daddy clipped her little [C]ol' wings
 [G]It's high time you [D7]quit your lowdown [G]ways
 {end_of_verse}
+
+

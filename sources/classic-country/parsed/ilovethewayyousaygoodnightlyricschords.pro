@@ -1,6 +1,9 @@
 {meta: title I Love The Way You Say Goodnight}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Stoney Rigsby and Katherine Adelman}
+{meta: x_source classic-country}
+{meta: x_source_file ilovethewayyousaygoodnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love the way you say [G7]goodnight
@@ -23,3 +26,5 @@ There'll [D7]be no more lonely [G7]hours
 [C]We'll plan our honeymoon just [G7]right
 All [D7]because of the way [G7]you say [C]goodnight
 {end_of_verse}
+
+

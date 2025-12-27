@@ -1,6 +1,9 @@
 {meta: title The Leaves Mustn't Fall}
 {meta: artist Lacy J. Dalton}
 {meta: composer Dorothy Sebastian and Jack Kenney}
+{meta: x_source classic-country}
+{meta: x_source_file theleavesmustntfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The autumn leaves were falling
@@ -49,3 +52,8 @@ Oh [F]no they mustn't [D7]fall
 I've lost my mom and dad now [F]sister's all I [D7]have
 [G7]Don't let the falling leaves take her [C]away
 {end_of_verse}
+
+
+
+
+

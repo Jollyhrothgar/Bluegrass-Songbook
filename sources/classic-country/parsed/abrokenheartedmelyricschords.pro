@@ -1,6 +1,9 @@
 {meta: title A Broken Hearted Me}
 {meta: artist Anne Murray}
 {meta: composer Randy Goodrum}
+{meta: x_source classic-country}
+{meta: x_source_file abrokenheartedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every now and then I cry
@@ -29,3 +32,6 @@ Playing games different [C7]lovers different names [F]
 They keep [Em]saying I'll [Am]survive
 [C]It just takes [D7]time
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Song I'd Like To Sing}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file songidliketosinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]La la la la la [G7]la   la la la la la [C]la
@@ -32,3 +35,7 @@ La la la la la [G7]la   la la la la la [C]la
 [C]La la la la la [G7]la   la la la la la [C]la
 La la la la la [G7]la   la la la la la [C]la
 {end_of_verse}
+
+
+
+

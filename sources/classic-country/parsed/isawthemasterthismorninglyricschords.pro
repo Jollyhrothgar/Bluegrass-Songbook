@@ -1,6 +1,9 @@
 {meta: title I Saw The Master This Morning}
 {meta: artist Daryl Dasher}
 {meta: composer David Gillon and Sharon Higgins}
+{meta: x_source classic-country}
+{meta: x_source_file isawthemasterthismorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw the [D7]Master this [G]morning
@@ -43,3 +46,8 @@ Then a sweet loving [G7]peace filled my [C]soul
 I saw the Master this [E7][G]morn-ing
 As He came down to [D7]wake up the [G]world
 {end_of_verse}
+
+
+
+
+

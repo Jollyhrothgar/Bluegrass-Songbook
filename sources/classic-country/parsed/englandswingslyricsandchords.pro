@@ -1,5 +1,8 @@
 {meta: title England Swings}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file englandswingslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]England swings like a pendulum do
@@ -28,3 +31,6 @@ Falling [C]out the window sill [G7]frolic in the grass
 [C]Trying to mock the way they talk fun [F]but all in vain
 [C]Gaping at the dapper men with [F]derby hats and [C]canes
 {end_of_verse}
+
+
+

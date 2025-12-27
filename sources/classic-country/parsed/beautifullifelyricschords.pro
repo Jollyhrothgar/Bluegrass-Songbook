@@ -1,6 +1,9 @@
 {meta: title Beautiful Life}
 {meta: artist Jim Reeves}
 {meta: composer William M. Golden}
+{meta: x_source classic-country}
+{meta: x_source_file beautifullifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each day I'll do a [F]golden [C]deed
@@ -50,3 +53,9 @@
 [F]And for God  I'll take my [C]stand
 [G7]Each day I'll lend a helping [C]hand
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Slipped I Stumbled I Fell}
 {meta: artist Elvis Presley}
 {meta: composer Ben Weisman and Fred Wise}
+{meta: x_source classic-country}
+{meta: x_source_file islippedistumbledifelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I look at you and wham I'm head over [C]heels
@@ -52,3 +55,12 @@ I guess that love is like a cake of ice
 {start_of_verse: Verse 8}
 [G7]I slipped I stumbled I [C]fell
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title To Think You've Chosen Me}
 {meta: artist Marty Robbins}
 {meta: composer George Weiss and Bennie Benjamin}
+{meta: x_source classic-country}
+{meta: x_source_file tothinkyouvechosenmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It isn't just the [Bm]way you smile that [C]warms my heart
@@ -33,3 +36,7 @@ To [D7]think you've chosen me to be your [G]own
 {start_of_verse: Verse 5}
 To [D7]think you've chosen me to be your [G]own
 {end_of_verse}
+
+
+
+

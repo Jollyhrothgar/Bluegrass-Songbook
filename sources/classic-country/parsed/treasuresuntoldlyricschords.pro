@@ -1,6 +1,9 @@
 {meta: title Treasures Untold}
 {meta: artist Lefty Frizzell}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file treasuresuntoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dreaming of you and your eyes of blue 
@@ -35,3 +38,6 @@ I [C]love your sweet face and your dear smiling [G]eyes
 If I [C]could but win your heart little [G]girl 
 Then I would have [D7]treasures [G]untold
 {end_of_verse}
+
+
+

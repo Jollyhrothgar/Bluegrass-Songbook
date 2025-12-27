@@ -1,6 +1,9 @@
 {meta: title For Rent}
 {meta: artist Patsy Cline}
 {meta: composer Sonny James and Jack Morrow}
+{meta: x_source classic-country}
+{meta: x_source_file forrentlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For rent  for rent an [C7]empty [F]heart
@@ -22,3 +25,5 @@
 [C]Oh my baby for rent  for [C7]rent an empty [F]heart
 [C]Just say the [G7]word and you can move right [C]in
 {end_of_verse}
+
+

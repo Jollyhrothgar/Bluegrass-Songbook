@@ -1,6 +1,9 @@
 {meta: title Last Kiss}
 {meta: artist Lacy J. Dalton}
 {meta: composer Wayne Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file lastkisslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well where oh where can [Am]my baby be
@@ -55,3 +58,10 @@ I'd [F]found the love that I [G7]knew I would miss
 [C]She's gone to heaven so I've [Am]got to be good
 So [F]I can see my baby when I [G7]leave this [C]world
 {end_of_verse}
+
+
+
+
+
+
+

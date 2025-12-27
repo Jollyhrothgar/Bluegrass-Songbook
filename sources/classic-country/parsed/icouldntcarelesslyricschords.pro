@@ -1,6 +1,9 @@
 {meta: title I Couldn’t Care Less}
 {meta: artist Carl Smith}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file icouldntcarelesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I couldn't [C]care less couldn't [G]care less
@@ -29,3 +32,6 @@ I [D7]knew it anyone could plainly [G]see
 But someone new came by that you love [C]better
 And [D7]now I'm left with only [G]memories
 {end_of_verse}
+
+
+

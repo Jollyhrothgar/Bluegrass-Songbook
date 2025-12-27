@@ -1,6 +1,9 @@
 {meta: title The Bridge Of Love}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thebridgeoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Jesus touch my sinful [F]soul
@@ -26,3 +29,6 @@ For me to [C]walk [G7]across the bridge of [C]love
 {start_of_verse: Verse 4}
 Help me to walk [G7]across the bridge of [C]love
 {end_of_verse}
+
+
+

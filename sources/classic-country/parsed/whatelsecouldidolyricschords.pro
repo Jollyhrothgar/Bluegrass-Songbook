@@ -1,6 +1,9 @@
 {meta: title What Else Could I Do}
 {meta: artist Rhonda Vincent}
 {meta: composer Curtis Wright and Robert E. Orrall}
+{meta: x_source classic-country}
+{meta: x_source_file whatelsecouldidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Lately I've been [C]living with my [G7]heart on the [C]mend
@@ -47,3 +50,9 @@ I guess I [G7]shouldn't be surprised that [F]I fell for [G7]you
 {start_of_verse: Verse 6}
 [F]Tell me [G7]what else could I [C]do
 {end_of_verse}
+
+
+
+
+
+

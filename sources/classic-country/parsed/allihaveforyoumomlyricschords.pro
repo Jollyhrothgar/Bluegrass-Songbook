@@ -1,6 +1,9 @@
 {meta: title All I Have For You Mom}
 {meta: artist Wilburn Brothers}
 {meta: composer Don Davis}
+{meta: x_source classic-country}
+{meta: x_source_file allihaveforyoumomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We've been looking through a window at an [F]orchid mother [C]dear
@@ -29,3 +32,6 @@ Every [F]day should be Mother's Day for [G7]you
 [C]It's not much to say we love you but [F]still we hope it [C]shows
 Though all we have for [G7]you mom is this [C]rose
 {end_of_verse}
+
+
+

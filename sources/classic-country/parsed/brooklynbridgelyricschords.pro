@@ -1,6 +1,9 @@
 {meta: title Brooklyn Bridge}
 {meta: artist Mel Tillis}
 {meta: composer Mel Tillis and Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file brooklynbridgelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I had me a girl with the golden curls [F]she vowed to treat me [C]right
@@ -37,3 +40,8 @@
 [F]Cause the water looked cold in the East River [C]Bay
 [F]The water looked cold in the East River [C]Bay
 {end_of_verse}
+
+
+
+
+

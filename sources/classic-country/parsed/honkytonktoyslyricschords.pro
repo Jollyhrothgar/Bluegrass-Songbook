@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Toys}
 {meta: artist John Conlee}
 {meta: composer Arthur Leo Owens and Gene Vowell}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonktoyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Annie May Johnson gave [F]birth to a [C]child
@@ -43,3 +46,8 @@ But her [C]most favorite toys of [G7]all
 Was a [C]beer carton cradle and a [F]tablecloth blanket
 And a [G7]little brown beer bottle [C]doll
 {end_of_verse}
+
+
+
+
+

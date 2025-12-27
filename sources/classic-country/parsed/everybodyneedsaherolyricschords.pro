@@ -1,6 +1,9 @@
 {meta: title Everybody Needs A Hero}
 {meta: artist Gene Watson}
 {meta: composer Troy Seals and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file everybodyneedsaherolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He drove a '47 Buick Special
@@ -67,3 +70,11 @@ My mama says I turned out just like him
 [G7]Heroes are hard to [C]find
 [G7]Savannah Slim was [C]mine
 {end_of_verse}
+
+
+
+
+
+
+
+

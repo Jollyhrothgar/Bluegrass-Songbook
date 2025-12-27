@@ -1,5 +1,8 @@
 {meta: title Day Dreams}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file daydreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]When we [G]first met I had a funny [C]feel[Em]in' [Am]
@@ -21,3 +24,5 @@ And it's the [Am]real thing kissin' warm lips and [Em]tastin' all your [C]charm[
 Now there's the [G]beating of your heart pressed close to [C]mine
 And you turn [G]day dreams into the [D7]real thing this [C]tim[D7]e this [G]time
 {end_of_verse}
+
+

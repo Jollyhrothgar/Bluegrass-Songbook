@@ -1,6 +1,9 @@
 {meta: title She's That Kind}
 {meta: artist Charlie Pride}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file shesthatkindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She can take the [C]morning rain [D7]falling on my [G]window pane
@@ -35,3 +38,7 @@ I [C]wouldn't change a [G]thing [D7]cause she's that [G]kind
 {start_of_verse: Verse 4}
 No I [C]wouldn't change a [G]thing [D7]cause she's that [G]kind
 {end_of_verse}
+
+
+
+

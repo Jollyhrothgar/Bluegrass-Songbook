@@ -1,6 +1,9 @@
 {meta: title I've Got A Weakness For Cowboys}
 {meta: artist Joni Harms}
 {meta: composer Carl Jackson Vipperman}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotaweaknessforcowboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I've got a [A7]weakness for [D7]cowboys
@@ -43,3 +46,8 @@
 [D7]There's nothing I [G7]can [F]do  nothing I can [G7]do
 [C]Nothing I can do about that
 {end_of_verse}
+
+
+
+
+

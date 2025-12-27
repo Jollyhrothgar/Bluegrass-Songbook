@@ -1,5 +1,8 @@
 {meta: title Rainy Day People}
 {meta: artist Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file rainydaypeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rainy day people always seem to know
@@ -54,3 +57,10 @@ They just [C]pass it [G]on
 [C]Rainy day lovers don't hide love [D7]inside
 They just [C]pass it [G]on
 {end_of_verse}
+
+
+
+
+
+
+

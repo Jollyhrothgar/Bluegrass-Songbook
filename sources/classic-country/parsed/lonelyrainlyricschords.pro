@@ -1,6 +1,9 @@
 {meta: title Lonely Rain}
 {meta: artist Wynn Stewart}
 {meta: composer Don Earl}
+{meta: x_source classic-country}
+{meta: x_source_file lonelyrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can hear you outside a-knockin' [Am]lonely rain
@@ -36,3 +39,7 @@ Cause it's [Am]bad enough she's [D7]gone with[G]out you hanging [Em]on
 Cause it's [Am]bad enough she's [D7]gone with[G]out you hanging [Em]on
 [Am]Whispering her [D7]name lonely [G]rain
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sin Died Here}
 {meta: artist The Hinsons}
 {meta: composer Ronald A. Hinson}
+{meta: x_source classic-country}
+{meta: x_source_file sindiedherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]That old alter can really talk oh [F]but it won't [C]reveal
@@ -34,3 +37,7 @@
 [C7]That old alter is a tombstone and the epitaph's [F]clear
 [C]It says grace [G7]fought this battle and sin [F]died [C]here
 {end_of_verse}
+
+
+
+

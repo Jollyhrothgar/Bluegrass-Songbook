@@ -1,6 +1,9 @@
 {meta: title Another Chance At Love}
 {meta: artist Tony Booth}
 {meta: composer Allen Shamblin and Brent Maher}
+{meta: x_source classic-country}
+{meta: x_source_file anotherchanceatlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I won't let my jealous [C]heart [G]tear my world [C]apart
@@ -33,3 +36,7 @@ If I [G]ever get [D7]another chance at [G]love
 {start_of_verse: Verse 5}
 [C]Oh if I [G]ever get [D7]another chance at [G]love
 {end_of_verse}
+
+
+
+

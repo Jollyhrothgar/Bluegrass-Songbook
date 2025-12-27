@@ -1,6 +1,9 @@
 {meta: title Molly Ann}
 {meta: artist Cal Smith}
 {meta: composer Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file mollyannlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd like to take a piece of chalk
@@ -71,3 +74,12 @@ And the world was shiny [G]new
 You were [Am]with me then 
 And [D7]Molly Ann was [G]too
 {end_of_verse}
+
+
+
+
+
+
+
+
+

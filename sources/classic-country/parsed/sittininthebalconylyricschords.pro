@@ -1,6 +1,9 @@
 {meta: title Sittin' In The Balcony}
 {meta: artist Eddie Cochran}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file sittininthebalconylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm just a sittin' in the [D7]balcony just a watching the [G]movie
@@ -23,3 +26,5 @@ But he can't [A7]take the place of my [D7]honey
 Just a sittin' in the [D7]balcony on the very last [G]row
 Just a [C]hugging and a [G]kissing with my [D7]baby in the very last [G]row
 {end_of_verse}
+
+

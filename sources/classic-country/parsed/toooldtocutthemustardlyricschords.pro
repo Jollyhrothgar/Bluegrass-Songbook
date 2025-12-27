@@ -1,6 +1,9 @@
 {meta: title Too Old To Cut The Mustard}
 {meta: artist Ernest Tubb}
 {meta: composer Bill Carlisle}
+{meta: x_source classic-country}
+{meta: x_source_file toooldtocutthemustardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Too  old [F]too  old he's too old [C]to cut the mustard [G7]anymore
@@ -59,3 +62,11 @@ And as they leave I hear them [C]say
 He's getting too [C]old he's done got too [F]old
 He's too [C]old to cut the [G7]mustard [C]anymore
 {end_of_verse}
+
+
+
+
+
+
+
+

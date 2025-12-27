@@ -1,6 +1,9 @@
 {meta: title A Better Time To Say Goodbye}
 {meta: artist Vern Gosdin}
 {meta: composer Dean Dillon, Buddy Cannon, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file bettertimetosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Clouds in the sky never looked so [G7]gray
@@ -43,3 +46,9 @@ For you no better time for [G7]walking out [C]  [G7]   [C]  [G7]
 {start_of_verse: Verse 5}
 [F]O-[G7]h  [C]you just couldn’t have picked a [G7]better time to say good[C]bye[F]  [Dm]   [G7]   [C]
 {end_of_verse}
+
+
+
+
+
+

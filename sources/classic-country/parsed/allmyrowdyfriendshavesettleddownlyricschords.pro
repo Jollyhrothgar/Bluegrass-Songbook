@@ -1,5 +1,8 @@
 {meta: title All My Rowdy Friends Have Settled Down}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file allmyrowdyfriendshavesettleddownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All my rowdy [G7]friends have settled [C]down
@@ -42,3 +45,7 @@ And [F]nobody wants to get [C]drunk and get [Dm]loud
 And [F]all my rowdy [G7]friends have settled [C]down
 Yeah [F]me and my rowdy [G7]friends just rowded on [C]down
 {end_of_verse}
+
+
+
+

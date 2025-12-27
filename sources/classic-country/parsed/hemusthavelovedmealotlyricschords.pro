@@ -1,6 +1,9 @@
 {meta: title He Must Have Loved Me A Lot}
 {meta: artist Doyle Lawson}
 {meta: composer Ida D. Gaskin}
+{meta: x_source classic-country}
+{meta: x_source_file hemusthavelovedmealotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He left the [D7]splendors of [G]heaven for me
@@ -55,3 +58,10 @@ Oh [G]He must have [D7]loved me a [G]lot
 Oh He must have [D7]loved me a [C]lot
 Loved me a [G]lot
 {end_of_verse}
+
+
+
+
+
+
+

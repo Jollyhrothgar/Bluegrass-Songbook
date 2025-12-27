@@ -1,6 +1,9 @@
 {meta: title Bayou Bum}
 {meta: artist Johnny Paycheck}
 {meta: composer Donny Young, Aubrey Mayhew, Arnie Adams}
+{meta: x_source classic-country}
+{meta: x_source_file bayoubumlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I fish all day from my boat that’s the way I make my living
@@ -36,3 +39,7 @@ Yeah I’m a scavenger on the river and it treats me [D7]good
 [G]Dreaming and a wishing fighting and a fishing that’s all I’ve ever done
 You can do as you please but as for me I’m [D7]gonna stay a bayou [G]bum
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Made The Prison Band}
 {meta: artist Merle Haggard}
 {meta: composer Tommy Collins, Jimmy Bryant, Ernest Ball}
+{meta: x_source classic-country}
+{meta: x_source_file imadetheprisonbandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Deep inside this lonely prison 
@@ -61,3 +64,10 @@ The boys call me their [G]singin' MC
 Since I made the [D7]prison [G]band
 I made the [D7]prison [G]band
 {end_of_verse}
+
+
+
+
+
+
+

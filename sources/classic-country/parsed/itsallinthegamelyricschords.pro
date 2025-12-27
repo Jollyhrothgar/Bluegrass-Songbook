@@ -1,6 +1,9 @@
 {meta: title It’s All In The Game}
 {meta: artist Merle Haggard}
 {meta: composer Carl Sigman}
+{meta: x_source classic-country}
+{meta: x_source_file itsallinthegamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many a [G7]tear has to [C]fall
@@ -27,3 +30,6 @@ And he'll kiss your [Am]lips
 And [Em]caress [Am]your waiting [D7]fingertips
 And your [C]heart  your heart will [G7]fly a[C]way
 {end_of_verse}
+
+
+

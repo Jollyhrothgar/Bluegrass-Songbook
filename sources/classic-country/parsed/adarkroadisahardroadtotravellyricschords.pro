@@ -1,6 +1,9 @@
 {meta: title A Dark Road Is A Hard Road To Travel}
 {meta: artist Tommy Brown and the County Line Grass}
 {meta: composer G.B. Grayson}
+{meta: x_source classic-country}
+{meta: x_source_file adarkroadisahardroadtotravellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A dark road is a hard road to travel
@@ -50,3 +53,9 @@ A light road is always the best
 A dark road will lead you to trouble
 A [D7]light road will lead you to [G]rest
 {end_of_verse}
+
+
+
+
+
+

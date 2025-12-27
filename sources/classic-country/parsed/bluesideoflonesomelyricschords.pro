@@ -1,6 +1,9 @@
 {meta: title Blue Side of Lonesome}
 {meta: artist George Jones}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file bluesideoflonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm calling to tell you it's [D7]over
@@ -43,3 +46,8 @@ Right next to the Heartbreak [G]Hotel
 In a tavern that's known as [D7]Three Teardrops
 On a bar stool not doing so [G]well
 {end_of_verse}
+
+
+
+
+

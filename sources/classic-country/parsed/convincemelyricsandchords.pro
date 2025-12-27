@@ -1,6 +1,9 @@
 {meta: title Convince Me}
 {meta: artist Red Steagall}
 {meta: composer Donald G. Miller and Russell Don Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file convincemelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She smiles as she [Am]passes a [C]cold round of glasses 
@@ -50,3 +53,9 @@ A woman I'll [C7]soon leave [F]behind
 I [G7]catch myself smiling as I'm realizing 
 She's convinced me that cheatin's al[C]right
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It’s All I Can Do}
 {meta: artist Ronnie Milsap}
 {meta: composer Archie P. Jordan and Richard Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file itsallicandolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been a while [Am]how have you [Dm]been
@@ -31,3 +34,6 @@ And it's all [C]I can do  [Am]to smile and say I'm [G7]fine
 [E7]When I'm really losing my mind   it's all I can [F]do 
 [C]To keep this [F]heart from just breaking in [C]two
 {end_of_verse}
+
+
+

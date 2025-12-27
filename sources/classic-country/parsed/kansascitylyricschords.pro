@@ -1,6 +1,9 @@
 {meta: title Kansas City}
 {meta: artist Fats Domino}
 {meta: composer Jerry Leiber and Mike Stoller}
+{meta: x_source classic-country}
+{meta: x_source_file kansascitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm going to Kansas City  Kansas City here I come
@@ -29,3 +32,7 @@ But if I have to walk I'm gonna get there just the same
 {start_of_verse: Verse 3}
 I might take a train I might take a plane
 {end_of_verse}
+
+
+
+

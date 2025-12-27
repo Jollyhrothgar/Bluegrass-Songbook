@@ -1,6 +1,9 @@
 {meta: title Too Damned Old}
 {meta: artist Johnny Lee}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file toodamnedoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well you got it right I got it wrong
@@ -57,3 +60,9 @@ To go back to playing your [G]fool
 Yes I'm just [D7]too damned old
 To go back to playing your [G]fool
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Way Out There}
 {meta: artist Marty Robbins}
 {meta: composer Bob Nolan}
+{meta: x_source classic-country}
+{meta: x_source_file wayouttherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Ee oo ee dle dee dee ho oo lay dee ee [C]dee 
@@ -34,3 +37,7 @@ Sure gets lone[C]some [G7]way out [C]there
 [F]Ee oo ee dle dee dee ho oo lay dee ee [C]dee 
 [G7]Ee   [F]oo   [G7]ee dle dee dee ho ho lay dee ee [C]dee
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Don't Have To Be A Baby To Cry}
 {meta: artist Ernest Tubb}
 {meta: composer Bob Merrill and Terry Shand}
+{meta: x_source classic-country}
+{meta: x_source_file youdonthavetobeababytocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You don't have to be a baby to [C]cry
@@ -34,3 +37,7 @@ You don't [G]have to be a [D7]baby to [G]cry
 Tag:
 You don't [G]have to be a [D7]baby to [G]cry
 {end_of_verse}
+
+
+
+

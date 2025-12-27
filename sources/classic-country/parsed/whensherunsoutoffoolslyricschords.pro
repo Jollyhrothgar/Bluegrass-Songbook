@@ -1,6 +1,9 @@
 {meta: title When She Runs Out Of Fools}
 {meta: artist Mickey Gilley}
 {meta: composer Steve Pippin and Steve Jobe}
+{meta: x_source classic-country}
+{meta: x_source_file whensherunsoutoffoolslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you [Am]know and I [F]know she knows it [C]too
@@ -43,3 +46,6 @@
 [F]When she  [G7]runs out of [Am]fools
 [G7]She'll  [F]come running [G7]back to [C]me
 {end_of_verse}
+
+
+

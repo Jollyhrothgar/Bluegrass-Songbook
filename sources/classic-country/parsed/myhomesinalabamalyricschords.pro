@@ -1,6 +1,9 @@
 {meta: title My Home’s In Alabama}
 {meta: artist Alabama}
 {meta: composer Randy Owen and Teddy Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file myhomesinalabamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Drinking was forbidden in my Christian country home
@@ -47,3 +50,9 @@ I'll just [C]smile with pride and say that
 My [F]home's [G7]in Ala[C]bama no matter [Gm]where I lay my [C]head
 My [F]home's in Ala[Em]bama southern [F]born and Southern [C]bred           
 {end_of_verse}
+
+
+
+
+
+

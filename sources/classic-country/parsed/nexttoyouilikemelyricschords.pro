@@ -1,6 +1,9 @@
 {meta: title Next To You I Like Me}
 {meta: artist Charley Pride}
 {meta: composer Rick Giles, Bobby Fischer, Walter Haynes}
+{meta: x_source classic-country}
+{meta: x_source_file nexttoyouilikemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Next to [G7]you I like [C]me
@@ -40,3 +43,8 @@ Next to [G7]me next to [C]you
 {start_of_verse: Verse 4}
 Next to [G7]me next to [C]you
 {end_of_verse}
+
+
+
+
+

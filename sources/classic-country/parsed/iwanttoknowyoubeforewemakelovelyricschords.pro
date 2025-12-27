@@ -1,6 +1,9 @@
 {meta: title I Want To Know You Before We Make Love}
 {meta: artist Alabama}
 {meta: composer Becky Hobbs, Candy Parton}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttoknowyoubeforewemakelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes all you need is someone to [F]hold you
@@ -43,3 +46,7 @@ Then when I [Em]look into your [Am]eyes
 I want to [Em]feel the [Am]love in-[G7]side [F]you
 I want to [C]know you  [F]before we make [C]love
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title As God Is My Witness}
 {meta: artist Kenny Rogers}
 {meta: composer Kenny Rogers, Steve Glassmeyer}
+{meta: x_source classic-country}
+{meta: x_source_file asGodismywitnesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once in a lifetime the right love comes by
@@ -47,3 +50,9 @@ As [G7]God is my [C]witness [G7]I'll give you all my [Am]love
 Oh girl as [C]God is my witness [G7]I'll give you all my [C]love
 [F]Oh [G7]all of my [C]love
 {end_of_verse}
+
+
+
+
+
+

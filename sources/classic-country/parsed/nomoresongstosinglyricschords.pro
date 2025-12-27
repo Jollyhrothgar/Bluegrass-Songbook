@@ -1,6 +1,9 @@
 {meta: title No More Songs To Sing}
 {meta: artist Ray Price}
 {meta: composer Robert Ellis Orrall, Roger Springer}
+{meta: x_source classic-country}
+{meta: x_source_file nomoresongstosinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I've no more songs to [D7]sing [Em]
@@ -43,3 +46,8 @@ The way we [Bm]always wanted to
 Honey we'll [Am]do everything
 [D7]When I've no more songs to [G]sing
 {end_of_verse}
+
+
+
+
+

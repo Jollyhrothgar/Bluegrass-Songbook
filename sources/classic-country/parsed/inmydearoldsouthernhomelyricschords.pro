@@ -1,6 +1,9 @@
 {meta: title In My Dear Old Southern Home}
 {meta: artist Doc Watson}
 {meta: composer Ellsworth Cozzens and Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file inmydearoldsouthernhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In my dear old southern home
@@ -47,3 +50,8 @@ In that [G7]little old log cabin by the [C]sea
 {start_of_verse: Verse 4}
 (Yodel
 {end_of_verse}
+
+
+
+
+

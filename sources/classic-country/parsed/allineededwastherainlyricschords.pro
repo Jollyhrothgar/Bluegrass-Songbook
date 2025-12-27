@@ -1,6 +1,9 @@
 {meta: title All I Needed Was The Rain}
 {meta: artist Elvis Presley}
 {meta: composer Ben Weisman and Sid Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file allineededwastherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello misfortune how's my old friend Mr. [C7]Misery
@@ -19,3 +22,5 @@
 {start_of_verse: Verse 3}
 All I needed was this rain all I needed was the rain
 {end_of_verse}
+
+

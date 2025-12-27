@@ -1,6 +1,9 @@
 {meta: title You Want Everything But Me}
 {meta: artist Lefty Frizzell}
 {meta: composer Aubrey}
+{meta: x_source classic-country}
+{meta: x_source_file youwanteverythingbutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You want this you want that 
@@ -50,3 +53,12 @@ You want everything you [D7]see
 A new dress a new hat
 You want everything you [D7]see
 {end_of_verse}
+
+
+
+
+
+
+
+
+

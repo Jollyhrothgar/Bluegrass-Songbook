@@ -1,6 +1,9 @@
 {meta: title My Songbird}
 {meta: artist Emmylou Harris}
 {meta: composer Jesse Winchester}
+{meta: x_source classic-country}
+{meta: x_source_file mysongbirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Songbird in a [F]golden [C]cage she'd [G7]prefer the [C]blue
@@ -29,3 +32,6 @@
 [F]But I can't [C]find [F]it in [C]myself to let my songbird [G7][Am]go
 [F]I just can't [G7]let her [C]go
 {end_of_verse}
+
+
+

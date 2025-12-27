@@ -1,5 +1,8 @@
 {meta: title Down But I Keep On Falling}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file downbutikeeponfallinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey [A#7]fair-weather [F]friend  [Am]you know you can bend me
@@ -27,3 +30,6 @@ Cause I'm [C]down [G7]but I keep [F]fallin'
 Fall in love with [Am]you
 [F]Fall in love with [C]you
 {end_of_verse}
+
+
+

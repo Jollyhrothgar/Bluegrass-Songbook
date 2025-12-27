@@ -1,6 +1,9 @@
 {meta: title I'm Free At Last}
 {meta: artist Hank Williams}
 {meta: composer Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file imfreeatlastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm free at last from [F]love and all its [C]worries
@@ -29,3 +32,6 @@ So many [G7]times you've proved that in the [C]past
 After you're [F]gone when memories come to [C]haunt me
 I'll hide my [G7]tears and say I'm free at [C]last
 {end_of_verse}
+
+
+

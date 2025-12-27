@@ -1,6 +1,9 @@
 {meta: title Truer Than True}
 {meta: artist Brenda Lee}
 {meta: composer Bob Tubert and Steve Alamo}
+{meta: x_source classic-country}
+{meta: x_source_file truerthantruelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Truer than [Dm]true  [G7]that's how I [C]love you
@@ -23,3 +26,5 @@ Say say you love me [F]too  [C]truer [G7]than [C]true
 Yeah say you love me [F]too
 And I'll be [C]true true true true [G7]truer than [C]true
 {end_of_verse}
+
+

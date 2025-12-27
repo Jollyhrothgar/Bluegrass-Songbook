@@ -1,6 +1,9 @@
 {meta: title He Can't Help It If He's Not You}
 {meta: artist Anne Murray}
 {meta: composer Steve Gillette}
+{meta: x_source classic-country}
+{meta: x_source_file hecanthelpitifhesnotyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't wanna lose my new found love [C]so many things [D7]do fall [G]through
@@ -33,3 +36,7 @@ He can't [G]help it [D7]if he's not [G]you
 {start_of_verse: Verse 5}
 [C]He can't [G]help it [D7]if he's not [G]you
 {end_of_verse}
+
+
+
+

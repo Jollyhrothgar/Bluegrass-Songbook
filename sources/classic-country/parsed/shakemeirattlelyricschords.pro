@@ -1,6 +1,9 @@
 {meta: title Shake Me I Rattle}
 {meta: artist Marion Worth}
 {meta: composer Hal Hackady and Charles Naylor}
+{meta: x_source classic-country}
+{meta: x_source_file shakemeirattlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Shake me I [C7]rattle [F]squeeze me I [Dm]cry
@@ -46,3 +49,9 @@ And [G7]I gave her the dolly that [C]we both had longed to buy
 Shake me I [C7]rattle [F]squeeze me I [Dm]cry
 [G7]Please take me home and [C]love me
 {end_of_verse}
+
+
+
+
+
+

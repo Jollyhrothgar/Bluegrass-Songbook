@@ -1,5 +1,8 @@
 {meta: title Just Who Is To Blame}
 {meta: artist Jerry Lee Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file justwhoistoblamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You heard that she has been seeing me
@@ -47,3 +50,9 @@ Just [D7]who is to [G]blame
 So just [D7]who is to [G]blame
 Just [D7]who is to [G]blame
 {end_of_verse}
+
+
+
+
+
+

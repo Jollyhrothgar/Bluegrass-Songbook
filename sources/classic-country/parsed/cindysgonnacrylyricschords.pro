@@ -1,6 +1,9 @@
 {meta: title Cindy’s Gonna Cry}
 {meta: artist Johnny Crawford}
 {meta: composer Barry Mann and Cynthia Weil}
+{meta: x_source classic-country}
+{meta: x_source_file cindysgonnacrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am](Cindy's gonna cry [F]Cindy's gonna [G7]cry)
@@ -61,3 +64,12 @@ And I'll [Em]see it through some[A7]how
 Cause though [F]Cindy's gonna cry
 I just can't help [G7]loving [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+

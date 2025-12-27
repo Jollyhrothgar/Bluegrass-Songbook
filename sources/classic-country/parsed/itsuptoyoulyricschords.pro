@@ -1,6 +1,9 @@
 {meta: title It's Up To You}
 {meta: artist Ricky Nelson}
 {meta: composer by Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file itsuptoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's up to [Am]you because I've [F]done everything [G7]I [C]can  
@@ -40,3 +43,8 @@ Darling it's [C]up to [C][Am]you
 {start_of_verse: Verse 6}
 [Am]Darling it's [C]up to [C][Am]yo-u 
 {end_of_verse}
+
+
+
+
+

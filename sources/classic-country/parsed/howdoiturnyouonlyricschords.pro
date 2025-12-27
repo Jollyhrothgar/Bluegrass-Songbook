@@ -1,6 +1,9 @@
 {meta: title How Do I Turn You On}
 {meta: artist Ronnie Milsap}
 {meta: composer Mike Reid and Robert Byrne}
+{meta: x_source classic-country}
+{meta: x_source_file howdoiturnyouonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd like to be a fly on your wall
@@ -47,3 +50,8 @@ It's waiting for me and it's [A#7]waiting for [C]you
 [C]Tell me [G]how do I [D7]turn [G]you [Bm]on
 [C]Tell me [G]how do I [D7]turn [G]you [Bm]on
 {end_of_verse}
+
+
+
+
+

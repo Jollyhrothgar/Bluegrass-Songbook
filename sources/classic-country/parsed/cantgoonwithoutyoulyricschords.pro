@@ -1,6 +1,9 @@
 {meta: title Can't Go On Without You}
 {meta: artist Fats Domino}
 {meta: composer Dorothy Randazzo and Antoine Domino}
+{meta: x_source classic-country}
+{meta: x_source_file cantgoonwithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](Can't go on without [C]you oh [G]no)
@@ -37,3 +40,8 @@ Can't go on without [G]you
 {start_of_verse: Verse 6}
 (Can't go on without [C]you oh [G]no)
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Smokey Mountain Boy}
 {meta: artist Elvis Presley}
 {meta: composer Victor Millrose and Lenore Rosenblatt}
+{meta: x_source classic-country}
+{meta: x_source_file smokeymountainboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm just a [D7]Smokey Mountain boy
@@ -53,3 +56,9 @@ Coming [G]back to the [D7]hills I love
 Where the [G]tops of pine all [C]bend in the wind
 And the [G]deep blue [D7]sky a[G]bove
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Guess I Had Too Much To Dream Last Night}
 {meta: artist Faron Young}
 {meta: composer Billy J. Moore}
+{meta: x_source classic-country}
+{meta: x_source_file iguessihadtoomuchtodreamlastnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My eyes aren't seeing very well this [F]morning
@@ -23,3 +26,5 @@ I [G7]guess I had too much to dream last [C]night
 I [G7]guess I had too much to dream last [C]night
 I [G7]guess I had too much to dream last [C]night
 {end_of_verse}
+
+

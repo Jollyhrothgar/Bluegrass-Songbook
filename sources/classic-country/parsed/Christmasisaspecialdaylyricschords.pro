@@ -1,5 +1,8 @@
 {meta: title Christmas Is a Special Day}
 {meta: artist Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasisaspecialdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Christmas time [F]everybody sings
@@ -51,3 +54,9 @@ Christmas is [F]a special day
 [G7]Don't forget to go to [C]church and pray
 [G7]Don't forget to go to [C]church and pray
 {end_of_verse}
+
+
+
+
+
+

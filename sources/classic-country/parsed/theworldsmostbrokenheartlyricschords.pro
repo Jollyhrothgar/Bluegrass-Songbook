@@ -1,6 +1,9 @@
 {meta: title The World's Most Broken Heart}
 {meta: artist Tammy Wynette}
 {meta: composer Troy Seals and Fred LaBour}
+{meta: x_source classic-country}
+{meta: x_source_file theworldsmostbrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Step right this way [F]here's our main a[C]ttraction
@@ -27,3 +30,6 @@ Now pre[C]senting the [G7]world's most broken [C]heart
 {start_of_verse: Verse 4}
 [F]Now pre[C]senting the [G7]world's most broken [F]hea[C]rt
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Swimming Pool Full Of Beer}
 {meta: artist Charlie Walker}
 {meta: composer Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file aswimmingpoolfullofbeerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I got up this morning I [F]found I was [C]alone
@@ -35,3 +38,7 @@ I'm gonna build me a swimming pool and [G7]fill it full of [C]beer
 {start_of_verse: Verse 5}
 I'm gonna build me a swimming pool and [G7]fill it full of [C]beer
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Those Wonderful Years}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Don Schroeder}
+{meta: x_source classic-country}
+{meta: x_source_file thosewonderfulyearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Anytime you [G7]need me [F]I'll come [G7]running back to [C]you
@@ -25,3 +28,6 @@ I’ll [F]throw back my [G7]head just to [C]hold back my [F]tears
 For [C]I'll never [F]forget those [G7]wonderful [C]years
 I'll never [F]forget those [G7]wonderful [C]years
 {end_of_verse}
+
+
+

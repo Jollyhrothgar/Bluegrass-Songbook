@@ -1,6 +1,9 @@
 {meta: title I've Got To Change}
 {meta: artist Stonewall Jackson}
 {meta: composer Stonewall Jackson and Benny Joy}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottochangelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got to change and to stop my running [G7]round
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [G7]Before all her love has gone I've got to [C]change
 {end_of_verse}
+
+
+

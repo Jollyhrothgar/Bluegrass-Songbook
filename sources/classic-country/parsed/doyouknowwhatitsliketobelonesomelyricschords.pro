@@ -1,6 +1,9 @@
 {meta: title Do You Know What It’s Like To Be Lonesome}
 {meta: artist Jerry Wallace}
 {meta: composer Bert Pellish}
+{meta: x_source classic-country}
+{meta: x_source_file doyouknowwhatitsliketobelonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Do you [C]know what it's [E7]like to [A7]be [Em]lonesome
@@ -27,3 +30,6 @@
 {start_of_verse: Verse 4}
 [C]Oh darling [G7]please hurry [F]home [D7]to [C]me
 {end_of_verse}
+
+
+

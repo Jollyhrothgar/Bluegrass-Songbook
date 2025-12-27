@@ -1,6 +1,9 @@
 {meta: title The Loneliest Sound}
 {meta: artist Ricky Nelson}
 {meta: composer Dave Burgess and James Best}
+{meta: x_source classic-country}
+{meta: x_source_file theloneliestsoundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The [C]saddest sounds are the words [G7]goodbye
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 5}
 [F]Hearing [C]just the [G7]loneliest [C]sound
 {end_of_verse}
+
+
+
+

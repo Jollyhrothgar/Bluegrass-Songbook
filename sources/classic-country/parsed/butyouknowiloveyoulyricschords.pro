@@ -1,6 +1,9 @@
 {meta: title But You Know I Love You}
 {meta: artist Bill Anderson}
 {meta: composer Mike Settle and Pierre Delanoe}
+{meta: x_source classic-country}
+{meta: x_source_file butyouknowiloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now the morning sun streaks across my [D7]room
@@ -44,3 +47,9 @@ Now this [C]traveling life is the [D7]only life I [G]know
 But you know I love [D7]you 
 Yes I [C]love you  oh I love [G]you
 {end_of_verse}
+
+
+
+
+
+

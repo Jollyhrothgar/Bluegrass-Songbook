@@ -1,6 +1,9 @@
 {meta: title Thanks A Lot}
 {meta: artist Johnny Cash}
 {meta: composer Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file thanksalotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're tellin' every[C]one in town that [D7]I don't treat you [G]right
@@ -37,3 +40,7 @@ You [C]say I'm happy but [D7]you know I'm [G]not
 Thanks a [D7]lot (thanks a lot) thanks a [G]lot (thanks a lot)
 [D7]Thanks a [G]lot
 {end_of_verse}
+
+
+
+

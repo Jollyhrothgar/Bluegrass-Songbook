@@ -1,6 +1,9 @@
 {meta: title I Wish I Had Something}
 {meta: artist Vern Gosdin}
 {meta: composer Rex Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file iwishihadsomethinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I borrowed this ol' overcoat 
@@ -38,3 +41,6 @@ No one else before me ever [C]used
 [G7]Lord I wish that I had somethin' 
 No one else before me ever [C]used
 {end_of_verse}
+
+
+

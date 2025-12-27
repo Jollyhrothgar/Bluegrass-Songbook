@@ -1,6 +1,9 @@
 {meta: title The Longer We're Together}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file thelongerweretogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The [C]longer we're together the [G]more we drift apart
@@ -23,3 +26,5 @@ I [A7]guess our love was never meant to [D7]be
 The [C]longer we're together the [G]more we drift apart
 The [D7]more I try the less you care for [G]me
 {end_of_verse}
+
+

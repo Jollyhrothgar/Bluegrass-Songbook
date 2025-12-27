@@ -1,6 +1,9 @@
 {meta: title The Choices She Made Now}
 {meta: artist Charlie Pride}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file thechoicesshemadelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She didn't have to marry down so [C]far
@@ -29,3 +32,6 @@ But she still thinks [G]it's worth it all to wear that little [D7]ring
 [G]And I still lay beside her wishing [C]I was worth the price she paid
 All teary eyed and [G]thankful [D7]for the choices she [G]made
 {end_of_verse}
+
+
+

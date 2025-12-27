@@ -1,5 +1,8 @@
 {meta: title My Blue Tears}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file mybluetearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fly you away from my [F]window little blue [C]bird 
@@ -38,3 +41,8 @@ Go spread your blue w-i-ngs light your [F]blue [C]sky
 Go spread your blue [C][F]w-i-ngs  
 [G7]I'll shed my blue [C]tears  
 {end_of_verse}
+
+
+
+
+

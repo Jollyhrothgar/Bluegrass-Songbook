@@ -1,6 +1,9 @@
 {meta: title Let The Chips Fall}
 {meta: artist Charley Pride}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file letthechipsfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm finding that [F]I'm spending [C]most of my [G7]time
@@ -29,3 +32,6 @@ I'm [A#7]ashamed of this [C]game but [A#7]there's no other [C]way
 [F]I must hold her [C]hand a [F]man cannot [C]crawl
 So [F]put the cards on the [C]table and [A#7]let the chips [C]fall
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Just Came To Smell The Flowers}
 {meta: artist Norma Jean}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcametosmelltheflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just came to smell the flowers
@@ -37,3 +40,6 @@ But any[C]where there's a crowd
 And any[F]where they're crying [C]loud
 Just seems to be the [G7]place I love the [C]best
 {end_of_verse}
+
+
+

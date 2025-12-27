@@ -1,6 +1,9 @@
 {meta: title Girl Don't Have To Drink To Have Fun}
 {meta: artist Wanda Jackson}
 {meta: composer Charlie Williams and Joe Nixon}
+{meta: x_source classic-country}
+{meta: x_source_file agirldonthavetodrinktohavefunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know what you're doing and [C7]I'll save you the [F]trouble
@@ -37,3 +40,7 @@ Cause [C]I don't think a [G7]girl's gotta drink to have [C]fun
 {start_of_verse: Verse 4}
 No I don't think a [G7]girl's gotta drink to have [C]fun
 {end_of_verse}
+
+
+
+

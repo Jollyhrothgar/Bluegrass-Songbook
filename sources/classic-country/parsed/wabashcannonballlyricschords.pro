@@ -1,6 +1,9 @@
 {meta: title Wabash Cannonball}
 {meta: artist Hank Thompson}
 {meta: composer W.M. Kindt}
+{meta: x_source classic-country}
+{meta: x_source_file wabashcannonballlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From the great Atlantic ocean 
@@ -85,3 +88,14 @@ Hear that lonesome hoboes [F]call
 You're traveling through the [G7]jungle 
 On the Wabash [C]Cannonball
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

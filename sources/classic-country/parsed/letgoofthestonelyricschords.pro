@@ -1,6 +1,9 @@
 {meta: title Let Go Of The Stone}
 {meta: artist John Anderson}
 {meta: composer Max D Barnes and Max Troy Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file letgoofthestonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You shouldn't wade out in deep water when you [G7]don't know how to swim
@@ -33,3 +36,7 @@ If I'm ever gonna [G7]save you let go of the [C]stone
 {start_of_verse: Verse 4}
 If I'm ever gonna [G7]save you let go of the [C]stone
 {end_of_verse}
+
+
+
+

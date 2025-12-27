@@ -1,5 +1,8 @@
 {meta: title Great Judgement Day}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file greatjudgementdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The judgement day dawned and their [C]trumpets had [G]blown
@@ -32,3 +35,7 @@ And seek your reward on that [D7]great judgment [G]day
 {start_of_verse: Verse 4}
 And seek your reward on that [D7]great judgment [G]day
 {end_of_verse}
+
+
+
+

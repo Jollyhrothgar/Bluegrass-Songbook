@@ -1,6 +1,9 @@
 {meta: title There's No Fool Like A Young Fool}
 {meta: artist Ray Price}
 {meta: composer Bette Thomasson}
+{meta: x_source classic-country}
+{meta: x_source_file theresnofoollikeayoungfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no fool like a young fool with wild and careless [G7]ways
@@ -22,3 +25,5 @@
 [F]The sad part is she'll be alone [C]once she starts to [Am]fall
 [G7]There's no fool like a young fool who thinks she knows it [C]all
 {end_of_verse}
+
+

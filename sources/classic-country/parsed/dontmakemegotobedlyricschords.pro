@@ -1,6 +1,9 @@
 {meta: title Don't Make Me Go To Bed}
 {meta: artist Hank Snow}
 {meta: composer Hugh Cross}
+{meta: x_source classic-country}
+{meta: x_source_file dontmakemegotobedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A laughing baby boy one [F]evening in his [D7]play
@@ -57,3 +60,10 @@
 [F]That's what I heard him say and it haunts me night [D7]and day
 [G7]Don't make me go to bed papa and I'll be [C]good
 {end_of_verse}
+
+
+
+
+
+
+

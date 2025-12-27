@@ -1,5 +1,8 @@
 {meta: title Crazy Dream}
 {meta: artist Joe Carson}
+{meta: x_source classic-country}
+{meta: x_source_file crazydreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm living in a crazy dream I [F]know it can't be real
@@ -28,3 +31,6 @@ You've [G7]given up your reckless past and [D7]finally settled [G7]down
 They [C]say that dreams can't last for long [F]they have to end it seems
 But I [G7]pray I'll never wake up from this [F]crazy [G7]crazy [C]dream
 {end_of_verse}
+
+
+

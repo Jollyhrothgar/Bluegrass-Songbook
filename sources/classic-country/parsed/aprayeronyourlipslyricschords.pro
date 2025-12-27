@@ -1,6 +1,9 @@
 {meta: title A Prayer On Your Lips}
 {meta: artist Lefty Frizzell}
 {meta: composer Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file aprayeronyourlipslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](A [F]prayer on your [C]lips is like [G7]freedom in your [F]hand[C]s)
@@ -42,3 +45,8 @@ I heard [G7]this dying soldier as [D7]he made his peace [G7]with God
 [C]So tell America momma and try to make 'em understand
 That a [F]prayer on your [C]lips is like [G7]freedom in your [F]hand[C]s
 {end_of_verse}
+
+
+
+
+

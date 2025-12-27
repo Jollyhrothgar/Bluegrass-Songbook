@@ -1,6 +1,9 @@
 {meta: title There's No Room in My Heart For the Blues}
 {meta: artist Hank Williams}
 {meta: composer Fred Rose and Zeb Turner}
+{meta: x_source classic-country}
+{meta: x_source_file theresnoroominmyheartfortheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's no room in my heart for the [F]blues
@@ -29,3 +32,6 @@ We'll be [G7]strong enough to face our last [C]goodbye
 Darling if our romance ends let us be the best of [F]friends
 There's no [G7]room in my heart for the [C]blues
 {end_of_verse}
+
+
+

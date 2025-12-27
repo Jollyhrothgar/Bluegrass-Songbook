@@ -1,6 +1,9 @@
 {meta: title Jamaica Farewell}
 {meta: artist Don Williams}
 {meta: composer Lord Burgess}
+{meta: x_source classic-country}
+{meta: x_source_file jamaicafarewelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down the way where the nights are [F]gay 
@@ -50,3 +53,9 @@ But I'm sad to say I'm on my [Dm]way
 My heart is down my head is spinning [Dm]around
 I had to leave [G7]a little girl in Kingston [C]town
 {end_of_verse}
+
+
+
+
+
+

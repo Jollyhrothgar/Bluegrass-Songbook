@@ -1,6 +1,9 @@
 {meta: title I Don't Mind The Thorns (If You're The Rose)}
 {meta: artist Lee Greenwood}
 {meta: composer Jan Buckingham and Linda Young}
+{meta: x_source classic-country}
+{meta: x_source_file idontmindthethornsifyouretheroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come let me hold you for a [C]while
@@ -41,3 +44,8 @@
 [G]I can take the bad [D7]times when you wrap [Am]your love [F]around [C]me
 [Am]I don't mind the [D7]thorns when you're the [G]rose
 {end_of_verse}
+
+
+
+
+

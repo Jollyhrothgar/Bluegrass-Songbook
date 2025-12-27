@@ -1,5 +1,8 @@
 {meta: title So Doggone Lonesome}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file sodoggonelonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I do my best to hide this lowdown feeling 
@@ -42,3 +45,8 @@ I [F]ought to get you off of my mind but I [C]guess I never [G7]will
 [C]I could have a dozen others but I know I'd love you [F]still
 [C]Cause I get so doggone [C][G7]lonesome
 {end_of_verse}
+
+
+
+
+

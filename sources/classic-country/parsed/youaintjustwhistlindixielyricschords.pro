@@ -1,6 +1,9 @@
 {meta: title You Ain't Just Whistlin' Dixie}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file youaintjustwhistlindixielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pines trees grow so [C]tall in the [G]bright sun[D7]shine
@@ -45,3 +48,8 @@ You [C]ain't just whistling [D7]Dixie cause the [G]cattle calls calling me [C]ho
 So put me down there [D7]where I wanna be [C]plant my feet with [D7]Robert E. Lee
 [C]Bury my bones under a [D7]cypress tree and [C]never let me [G]roam
 {end_of_verse}
+
+
+
+
+

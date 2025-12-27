@@ -1,6 +1,9 @@
 {meta: title We Had It All}
 {meta: artist Waylon Jennings}
 {meta: composer Troy Seals and Donnie Fritts}
+{meta: x_source classic-country}
+{meta: x_source_file wehaditalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can hear the wind [G7]blowin' in my [Am]mind
@@ -29,3 +32,6 @@
 [G7]You were the best thing in my life that I can [Am]recall
 [F]You and [G7]me we had it [C]all
 {end_of_verse}
+
+
+

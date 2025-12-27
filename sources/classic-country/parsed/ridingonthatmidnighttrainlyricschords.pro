@@ -1,6 +1,9 @@
 {meta: title Riding On That Midnight Train}
 {meta: artist Ricky Skaggs}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file ridingonthatmidnighttrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No matter what I say or do you're [C]never satis[G]fied
@@ -36,3 +39,9 @@ These awful blues will follow me wher[D7]ever I may [G]go
 I'm riding on that midnight train [C]my head's a-hanging [G]low
 These awful blues will follow me wher[D7]ever I may [G]go
 {end_of_verse}
+
+
+
+
+
+

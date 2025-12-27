@@ -1,6 +1,9 @@
 {meta: title Going Somewhere To Forget}
 {meta: artist David Ball}
 {meta: composer Jim Weatherly and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file goingsomewheretoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello  yes I'm calling to [G7]arrange a little [C]trip
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [D7]I just need to leave real soon I'm going someplace to [G]forget
 {end_of_verse}
+
+
+
+

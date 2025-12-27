@@ -1,5 +1,8 @@
 {meta: title Hanging Around}
 {meta: artist Wilburn Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file hangingaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll just keep [F]hanging [G7]around
@@ -35,3 +38,7 @@
 [G7]And I'll be there when
 [C]Your new love turns you down
 {end_of_verse}
+
+
+
+

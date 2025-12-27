@@ -1,6 +1,9 @@
 {meta: title Too Tough To Tame}
 {meta: artist John Anderson}
 {meta: composer Max D. Barnes and John Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file tootoughtotamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My friends all try to tell me she'll only break your heart
@@ -40,3 +43,8 @@ She's just [G7]too hard to handle she's [F]too tough to [C]tame
 {start_of_verse: Verse 4}
 She's just [G7]too hard to handle she's [F]too tough to [C]tame
 {end_of_verse}
+
+
+
+
+

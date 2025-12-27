@@ -1,6 +1,9 @@
 {meta: title Where Have All The Average People Gone}
 {meta: artist Roger Miller}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file wherehavealltheaveragepeoplegonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The people in this city call me [F]country
@@ -60,3 +63,11 @@ Be[G7]cause of how I walk and talk and [C]smile
 Well I don't mind them laughing in the [F]city
 But the [G7]country folks all say I'm citi[C]fied
 {end_of_verse}
+
+
+
+
+
+
+
+

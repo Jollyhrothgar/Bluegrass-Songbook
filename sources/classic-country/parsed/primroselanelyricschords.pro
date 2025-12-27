@@ -1,6 +1,9 @@
 {meta: title Primrose Lane}
 {meta: artist Jerry Wallace}
 {meta: composer Wayne Shanklin and George Calender}
+{meta: x_source classic-country}
+{meta: x_source_file primroselanelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Primrose Lane life's a holiday on Primrose Lane
@@ -25,3 +28,6 @@ Just a holiday on [Am]Primrose Lane  [D7]with [G]you
 [G]Primrose Lane life's a holiday on Primrose Lane
 Just a holiday on [Am]Primrose Lane  [D7]with [G]you
 {end_of_verse}
+
+
+

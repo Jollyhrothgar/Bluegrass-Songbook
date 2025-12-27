@@ -1,6 +1,9 @@
 {meta: title Genuine Healer Of Time}
 {meta: artist Johnny Bush}
 {meta: composer Larry Patton and Ronald Knuth}
+{meta: x_source classic-country}
+{meta: x_source_file genuinehealeroftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve never been [F]inside your [C]barroom
@@ -48,3 +51,9 @@ Of the [C]genuine [G7]healer of [C]time
 And place what’s [G7]left of my [C]heart in the [F]hands
 Of the [C]genuine [G7]healer of [C]time
 {end_of_verse}
+
+
+
+
+
+

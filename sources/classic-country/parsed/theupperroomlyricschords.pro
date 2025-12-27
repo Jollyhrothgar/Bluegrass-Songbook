@@ -1,6 +1,9 @@
 {meta: title The Upper Room}
 {meta: artist Hank Locklin}
 {meta: composer Hank Locklin and Frank Peterson}
+{meta: x_source classic-country}
+{meta: x_source_file theupperroomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was getting dark in the evening [D7]gloom
@@ -47,3 +50,9 @@ And with a prayer He broke it
 [D7]But the fingers of God wove into life's loom
 [G]The memory of promise in the upper room
 {end_of_verse}
+
+
+
+
+
+

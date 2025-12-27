@@ -1,6 +1,9 @@
 {meta: title I Did}
 {meta: artist Patty Loveless}
 {meta: composer Patty Ramey}
+{meta: x_source classic-country}
+{meta: x_source_file ididlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whoever needed you well [G7]I did
@@ -30,3 +33,6 @@ Well [G7]I did yes I did oh how [C]I did
 Who said she loved you more than [F]anything and be [Dm]true
 Well [G7]I did yes I did oh how [F]I did[C]
 {end_of_verse}
+
+
+

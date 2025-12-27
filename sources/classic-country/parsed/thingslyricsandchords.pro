@@ -1,6 +1,9 @@
 {meta: title Things}
 {meta: artist The Wilburn Brothers}
 {meta: composer Bobby Darin}
+{meta: x_source classic-country}
+{meta: x_source_file thingslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every night I sit here by my window
@@ -52,3 +55,8 @@ Thinking about things  like a walk in the [G7]park
 [C]Things that we don’t do now
 [G7]Thinking about the things we used to [C]do
 {end_of_verse}
+
+
+
+
+

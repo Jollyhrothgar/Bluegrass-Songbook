@@ -1,6 +1,9 @@
 {meta: title Where We'll Never Grow Old}
 {meta: artist Eddy Arnold}
 {meta: composer James C. Moore}
+{meta: x_source classic-country}
+{meta: x_source_file wherewellnevergrowoldlyricschord.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Where We'll Never Grow Old
@@ -46,3 +49,8 @@ In a land where we'll never grow [D7]old
 [G]Never grow old [C]never grow [G]old
 In a land where we'll [D7]never grow [G]old
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Promises}
 {meta: artist Lefty Frizzell}
 {meta: composer J. Tucker}
+{meta: x_source classic-country}
+{meta: x_source_file promiseslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How can I believe that you won't [G7]deceive
@@ -22,3 +25,5 @@ Although they're nice to [G7]hear
 If you can't keep your promises 
 Please don't make them my [C]dear
 {end_of_verse}
+
+

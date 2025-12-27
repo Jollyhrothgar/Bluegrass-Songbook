@@ -1,6 +1,9 @@
 {meta: title The King Of Oak Street}
 {meta: artist Kenny Rogers}
 {meta: composer Alex Harvey}
+{meta: x_source classic-country}
+{meta: x_source_file thekingofoakstreetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Like a leaf caught in [F]the wind he drifted a [C]while
@@ -45,3 +48,8 @@ I've [F]thought the whole thing [G7]over
 [C]And I think I under[F]stand
 That the [C]king of Oak Street is [G7]just an ordinary [C]man
 {end_of_verse}
+
+
+
+
+

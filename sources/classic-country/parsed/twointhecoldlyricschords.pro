@@ -1,6 +1,9 @@
 {meta: title Two In The Cold}
 {meta: artist Ernest Tubb}
 {meta: composer Ellen Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file twointhecoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're just across the [D7]room but we're [G]still a world apart
@@ -29,3 +32,6 @@ We [C]had two hearts that [G]beat in perfect time
 We [G]need to mend the [D7]break but [G]pride has its hold
 So we [C]sit a world [G]apart just [D7]two in the [G]cold
 {end_of_verse}
+
+
+

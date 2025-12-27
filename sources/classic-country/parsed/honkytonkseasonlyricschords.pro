@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Season}
 {meta: artist Charlie Walker}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkseasonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today's the first day of honky tonk [C]season
@@ -41,3 +44,8 @@ And honky tonk [G]season will be open [D7]all year [G]round
 {start_of_verse: Verse 4}
 [C]And honky tonk [G]season will be open [D7]all year [G]round
 {end_of_verse}
+
+
+
+
+

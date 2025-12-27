@@ -1,6 +1,9 @@
 {meta: title Working Girl}
 {meta: artist Conway Twitty}
 {meta: composer Wes Buchanan}
+{meta: x_source classic-country}
+{meta: x_source_file workinggirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Working girl working [F]girl I love [G]you
@@ -34,3 +37,7 @@
 [F]Working girl working girl I love [G]you
 [F]Working girl I love the things that you [G]do
 {end_of_verse}
+
+
+
+

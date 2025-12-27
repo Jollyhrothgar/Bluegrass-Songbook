@@ -1,6 +1,9 @@
 {meta: title Baby You've Got What It Takes}
 {meta: artist Johnny Duncan and Janie Fricke}
 {meta: composer Clyde Otis, Brook Benton, Murray Stein}
+{meta: x_source classic-country}
+{meta: x_source_file babyyouvegotwhatittakeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well now it takes more than a robin to make the winter go
@@ -46,3 +49,9 @@ And baby baby [G7]you've got what it [C]takes
 [F]Baby (baby) [G7]you've got what it [C]takes
 And [F]baby [G7]you've got what it [C]takes
 {end_of_verse}
+
+
+
+
+
+

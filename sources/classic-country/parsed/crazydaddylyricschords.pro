@@ -1,6 +1,9 @@
 {meta: title Crazy Daddy}
 {meta: artist David Allan Coe}
 {meta: composer Johnny Darrell}
+{meta: x_source classic-country}
+{meta: x_source_file crazydaddylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just close your [E7]eyes and dream those [A7]lonely nights away
@@ -28,3 +31,6 @@ Dream those lonely nights away
 Before you [E7]know it darling [A7]I'll be home to stay
 And you [F]know your crazy daddy wouldn't [G7]lie no no no not to his [C]child
 {end_of_verse}
+
+
+

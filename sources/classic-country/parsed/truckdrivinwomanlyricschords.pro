@@ -1,6 +1,9 @@
 {meta: title Truck Drivin' Woman}
 {meta: artist Norma Jean}
 {meta: composer Roland Pike and Johnny Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file truckdrivinwomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A little boy is [C]what my daddy [D7]wanted
@@ -40,3 +43,8 @@ And this [C]woman's gonna [D7]fill her daddy's [G]shoes
 {start_of_verse: Verse 5}
 And this [C]woman's gonna [D7]fill her daddy's [G]shoes
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'd Be A Legend In My Time}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file idbealegendinmytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If heartaches brought [F]fame 
@@ -19,3 +22,4 @@ If lone[C]liness meant world ac[F]claim
 Every[G7]one would know my [C]name
 I'd be a [F]legend [G7]in my [C]time
 {end_of_verse}
+

@@ -1,5 +1,8 @@
 {meta: title I'll Go Back To Her}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file illgobacktoherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll go back to her where I'm [D7]wanted
@@ -21,3 +24,5 @@ But without a second thought I left her [G]there
 I gave my all and did it all to [D7]please you
 But the more I seem to do the less you [G]care
 {end_of_verse}
+
+

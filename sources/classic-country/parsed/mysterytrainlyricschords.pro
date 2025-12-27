@@ -1,5 +1,8 @@
 {meta: title Mystery Train}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file mysterytrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Train I [C]ride   sixteen coaches [G]long
@@ -28,3 +31,6 @@ Train [C]train   coming down the [G]line
 Well it's bringing my [D7]baby 
 [C]Cause she's mine all [G]mine
 {end_of_verse}
+
+
+

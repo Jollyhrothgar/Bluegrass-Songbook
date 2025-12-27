@@ -1,6 +1,9 @@
 {meta: title Hollywood Squares}
 {meta: artist George Strait}
 {meta: composer Larry Cordle, Wayland Patton, Jeff Tanguay}
+{meta: x_source classic-country}
+{meta: x_source_file hollywoodsquareslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've always said I [G7]do too [C]easy and [G7]now I'm payin' the price[D7]
@@ -31,3 +34,6 @@ I'm just [C]one wrong move from the poorhouse but I [C7]don't belong in [F]there
 I got so many ex's and [C]owe so [F]much I oughta [C]be on [G7]Hollywood [C]squares
 [F]Yeah I oughta [C]be on [G7]Hollywood [C]squares
 {end_of_verse}
+
+
+

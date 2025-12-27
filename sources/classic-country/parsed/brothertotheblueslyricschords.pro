@@ -1,6 +1,9 @@
 {meta: title Brother To The Blues}
 {meta: artist George Jones}
 {meta: composer Edwin Rowell}
+{meta: x_source classic-country}
+{meta: x_source_file brothertotheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You and I don't need an [F]introduction
@@ -34,3 +37,7 @@
 [F]Yes you're just a sister  to satisfaction
 [G7]And I'm just a brother to the [C][F]bl--ues
 {end_of_verse}
+
+
+
+

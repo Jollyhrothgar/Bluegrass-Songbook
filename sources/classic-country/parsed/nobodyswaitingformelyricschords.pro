@@ -1,6 +1,9 @@
 {meta: title Nobody's Waiting For Me}
 {meta: artist Moe Bandy}
 {meta: composer Sanger D. Shafer and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file nobodyswaitingformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Talk about your good times Lord [F]I've had me [D7]some
@@ -35,3 +38,7 @@ And [G7]nobody's waiting for [C]me
 {start_of_verse: Verse 5}
 And [G7]nobody's waiting for [F]me [C]
 {end_of_verse}
+
+
+
+

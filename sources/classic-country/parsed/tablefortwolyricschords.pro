@@ -1,6 +1,9 @@
 {meta: title Table For Two}
 {meta: artist Loretta Lynn}
 {meta: composer Vincent Grant Gill and Max Troy Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file tablefortwolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I come here each night [C]and take out your [G]picture
@@ -33,3 +36,7 @@ At a table for [D7]two party of [G]one
 {start_of_verse: Verse 4}
 At a table for [D7]two party of [G]one
 {end_of_verse}
+
+
+
+

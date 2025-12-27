@@ -1,6 +1,9 @@
 {meta: title Bend It Till It Breaks}
 {meta: artist John Anderson}
 {meta: composer Lionel A. Delmore and John David Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file bendittillitbreakslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]I'm tired of having all these [C]troubles
@@ -46,3 +49,9 @@ You [C]say its the last time but it never [G]ends
 How [Dm]much more can this poor heart [F]take
 You [C]bend it until it [G]breaks
 {end_of_verse}
+
+
+
+
+
+

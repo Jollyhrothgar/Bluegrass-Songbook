@@ -1,6 +1,9 @@
 {meta: title The Twentieth Century Is Almost Over}
 {meta: artist The Highwaymen}
 {meta: composer Steve Goodman and John E. Prine}
+{meta: x_source classic-country}
+{meta: x_source_file thetwentiethcenturyisalmostoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Back in 1899 everybody sang [F]Auld Lang [C]Syne
@@ -60,3 +63,9 @@ The twentieth century is almost over
 The twentieth century is almost over
 All [G7]over this [C]world
 {end_of_verse}
+
+
+
+
+
+

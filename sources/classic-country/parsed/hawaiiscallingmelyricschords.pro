@@ -1,6 +1,9 @@
 {meta: title Hawaii's Calling Me}
 {meta: artist Marty Robbins}
 {meta: composer James B. Hosale}
+{meta: x_source classic-country}
+{meta: x_source_file hawaiiscallingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Hawaii calls to [C]me
@@ -48,3 +51,11 @@ To the rolling surfs
 And the hula girls
 [C]With their flower lace
 {end_of_verse}
+
+
+
+
+
+
+
+

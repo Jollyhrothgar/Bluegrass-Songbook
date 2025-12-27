@@ -1,6 +1,9 @@
 {meta: title I Don't Want To Love You}
 {meta: artist Don Williams}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttoloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No no no I don't wanna love [F]you
@@ -38,3 +41,7 @@ I [F]can't turn away from you [G7]now
 No no no I don't wanna love [F]you
 [G7]But oh oh oh I think I [C]do
 {end_of_verse}
+
+
+
+

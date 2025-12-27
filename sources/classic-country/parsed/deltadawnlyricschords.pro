@@ -1,6 +1,9 @@
 {meta: title Delta Dawn}
 {meta: artist Tanya Tucker}
 {meta: composer Alex Harvey and Larry Collins}
+{meta: x_source classic-country}
+{meta: x_source_file deltadawnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Delta Dawn  what's that [C]flower you have [G]on
@@ -29,3 +32,6 @@ Could it be a faded rose from days gone [D7]by
 And [G]did I hear you say he was a [C]meeting you here [G]today
 To take you to his [D7]mansion in the [C]sky
 {end_of_verse}
+
+
+

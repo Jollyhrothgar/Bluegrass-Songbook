@@ -1,5 +1,8 @@
 {meta: title Blue Is The Way That I Feel}
 {meta: artist Del McCoury}
+{meta: x_source classic-country}
+{meta: x_source_file blueisthewaythatifeellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm on my way tonight
@@ -28,3 +31,6 @@ Oh the thought of kissing you
 {start_of_verse: Verse 4}
 [G7]Blue is the way that I [C]feel
 {end_of_verse}
+
+
+

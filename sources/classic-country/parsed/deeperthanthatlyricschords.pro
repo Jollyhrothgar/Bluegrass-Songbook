@@ -1,6 +1,9 @@
 {meta: title Deeper Than That}
 {meta: artist Doug Stone}
 {meta: composer Tim Mensy and Brenda Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file deeperthanthatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With a closet full of [Em]clothes she's got [F]nothing to wear[G7]
@@ -32,3 +35,6 @@ When [Am]God made her he used [F]heaven and earth [C]He held nothing [F]back
 But my love goes deeper my [G7]love goes deeper than [C]that
 My [F]love goes deeper my [G7]love goes deeper than [C]that
 {end_of_verse}
+
+
+

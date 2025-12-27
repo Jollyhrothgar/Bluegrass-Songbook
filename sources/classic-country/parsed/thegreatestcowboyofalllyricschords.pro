@@ -1,5 +1,8 @@
 {meta: title The Greatest Cowboy Of All}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatestcowboyofalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have always had my heroes
@@ -55,3 +58,11 @@ He'll call up all the riders in the sky
 {start_of_verse: Verse 7}
 He's the [F]greatest [C]cowboy [G7]of them [C]all
 {end_of_verse}
+
+
+
+
+
+
+
+

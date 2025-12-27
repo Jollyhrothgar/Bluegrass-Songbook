@@ -1,5 +1,8 @@
 {meta: title Tennessee Senorita}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseesenoritalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Senorita senorita she's from Tenne[G7]ssee
@@ -41,3 +44,9 @@ No siesta big fiesta she's gonna marry [C]me
 [C]Senorita senorita she's from Tenne[G7]ssee
 Senorita she's so sweet and she's the gal for [C]me
 {end_of_verse}
+
+
+
+
+
+

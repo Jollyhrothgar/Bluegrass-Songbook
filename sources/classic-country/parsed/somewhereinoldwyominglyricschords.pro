@@ -1,6 +1,9 @@
 {meta: title Somewhere In Old Wyoming}
 {meta: artist Sons Of Pioneers}
 {meta: composer Charlie Tobia and Peter De Rose}
+{meta: x_source classic-country}
+{meta: x_source_file somewhereinoldwyominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere in [G7]old Wy[C]oming 
@@ -22,3 +25,5 @@ Oh how I [G7]wish I could [C]see [C7]her
 [C]Somewhere in [G7]old [C]Wy[Em]omi[F]ng
 With the [C]girl who [G7]waits for [C]me
 {end_of_verse}
+
+

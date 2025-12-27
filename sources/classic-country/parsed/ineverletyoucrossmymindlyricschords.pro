@@ -1,6 +1,9 @@
 {meta: title I Never Let You Cross My Mind}
 {meta: artist Marty Robbins}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file ineverletyoucrossmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never let you [C7]cross my mind [F]unless I want you [C]to
@@ -29,3 +32,6 @@ I always find a [C7]lot to [F]do to make the minutes [C]fly
 [C]I'm getting [G7]lots of [C]rest at night at [F]least that's how it [C]seems
 [F]I never let you [C]cross my mind [G7]except in all my [C]dreams
 {end_of_verse}
+
+
+

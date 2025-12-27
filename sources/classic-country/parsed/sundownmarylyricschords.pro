@@ -1,6 +1,9 @@
 {meta: title Sundown Mary}
 {meta: artist Billy Walker}
 {meta: composer Chris Gantry and Larry Baunach}
+{meta: x_source classic-country}
+{meta: x_source_file sundownmarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I first met Sundown [G7]Mary  a year [F]ago [C]today
@@ -45,3 +48,8 @@
 [G7]Do you know if Sundown Mary ever speaks my [C]name
 [F]Ever speaks my [C]name
 {end_of_verse}
+
+
+
+
+

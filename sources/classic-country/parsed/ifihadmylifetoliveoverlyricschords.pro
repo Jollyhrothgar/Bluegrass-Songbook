@@ -1,6 +1,9 @@
 {meta: title If I Had My Life To Live Over}
 {meta: artist Cal Smith}
 {meta: composer Harry Tobias, Larry Vincent, Moe Jaffe}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadmylifetoliveoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](If I had [C]my life to live [G]over
@@ -22,3 +25,5 @@ But I [C]know that's too good to be [G]true
 And I'm [C]afraid it's too late to [G]say that I'm sorry
 And [D7]let you know that I'm still in love with [G]you
 {end_of_verse}
+
+

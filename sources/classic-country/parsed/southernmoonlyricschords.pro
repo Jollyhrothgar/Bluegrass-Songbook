@@ -1,5 +1,8 @@
 {meta: title Southern Moon}
 {meta: artist Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file southernmoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blue and lonesome  
@@ -45,3 +48,8 @@ I want to meet my sweetheart there in the [F]lane
 [C]Hear those bellows lonely refrain
 Oh southern [G7]moon shine down [C]again
 {end_of_verse}
+
+
+
+
+

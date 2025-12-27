@@ -1,6 +1,9 @@
 {meta: title California Cotton Fields}
 {meta: artist The Seldom Scene}
 {meta: composer Dallas Frazier and Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file californiacottonfieldslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My drifting memory goes [D7]back to the [F]spring of '4[C]3
@@ -59,3 +62,10 @@ When [C]labor camps were [D7]filled with worried [C]men with broken [G]dreams
 Cali[C]fornia [D7]cotton fields
 As [C]close to wealth as [D7]daddy ever [G]came
 {end_of_verse}
+
+
+
+
+
+
+

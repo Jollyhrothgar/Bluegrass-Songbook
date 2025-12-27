@@ -1,6 +1,9 @@
 {meta: title Twice The Speed Of Love}
 {meta: artist Buck Owens}
 {meta: composer Marty Stuart and Kostas}
+{meta: x_source classic-country}
+{meta: x_source_file twicethespeedoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your eyes are always filled with sweet temp[C]tation 
@@ -33,3 +36,7 @@ And I’d travel [G]twice the speed of love [C]never to part
 {start_of_verse: Verse 4}
 I’d travel twice the speed of love to be the [D7]prisoner of your [G]heart
 {end_of_verse}
+
+
+
+

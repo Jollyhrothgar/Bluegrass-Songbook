@@ -1,5 +1,8 @@
 {meta: title This Old Guitar Lyrics and Chords}
 {meta: artist John Denver}
+{meta: x_source classic-country}
+{meta: x_source_file thisoldguitarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This old guitar [G7]taught me to [Am]sing a [Em]love song
@@ -27,3 +30,5 @@ From a [C]sunny [Em]mountain[Am]side  [C]
 [F]I love to [G7]sing my songs for [C]you
 [Em]Yes I [Am]do you [C]know [F]I love to [G7]sing my songs for [C]you
 {end_of_verse}
+
+

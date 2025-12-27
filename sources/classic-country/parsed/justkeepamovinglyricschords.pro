@@ -1,6 +1,9 @@
 {meta: title Just Keep A Moving}
 {meta: artist Hank Snow}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file justkeepamovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just keep a-moving wherever you were [D7]moving
@@ -43,3 +46,8 @@ And you wanted me to take [G7]you back again
 Just keep a-moving wherever you were [D7]moving
 [G7]The day you told me you were moving [C]on
 {end_of_verse}
+
+
+
+
+

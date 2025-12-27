@@ -1,6 +1,9 @@
 {meta: title A Million Miles From Nowhere}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
 {meta: composer Daryl Pety}
+{meta: x_source classic-country}
+{meta: x_source_file amillionmilesfromnowherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A million miles from [Em]nowhere 
@@ -34,3 +37,7 @@ Alone broken [C]hearted and [G]blue
 {start_of_verse: Verse 5}
 Alone broken [C]hearted and [G]blue
 {end_of_verse}
+
+
+
+

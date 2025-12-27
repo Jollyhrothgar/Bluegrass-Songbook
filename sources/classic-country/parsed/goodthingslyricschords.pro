@@ -1,6 +1,9 @@
 {meta: title Good Things}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill, Norro Wilson, Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file goodthingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I wake up early in the morning
@@ -58,3 +61,13 @@ I feel good cause it makes me think of [F]you and the things you [C]do
 Yeah [F]the very best thing of [G7]all is that you're [C]mine
 Yeah [F]the very best thing of [G7]all is that you're [C]mine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

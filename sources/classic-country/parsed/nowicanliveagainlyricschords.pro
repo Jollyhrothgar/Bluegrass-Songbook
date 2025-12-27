@@ -1,6 +1,9 @@
 {meta: title Now I Can Live Again}
 {meta: artist Mickey Gilley}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file nowicanliveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my [F]baby [C]left me she left trouble [F]all [C]around
@@ -26,3 +29,6 @@ I'm still here [F]she's still [C]gone but it's all [G7]right some[C]how
 I'll say [A#7]goodbye to my [F]drinking [Dm]friends now I can [C]live [F]again
 Now I can [C]live [F]again
 {end_of_verse}
+
+
+

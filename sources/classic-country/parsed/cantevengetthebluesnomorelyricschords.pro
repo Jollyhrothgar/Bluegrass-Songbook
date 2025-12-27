@@ -1,6 +1,9 @@
 {meta: title Can't Even Get The Blues No More}
 {meta: artist Reba McEntire}
 {meta: composer Thomas Damphier and Kerry Chater}
+{meta: x_source classic-country}
+{meta: x_source_file cantevengetthebluesnomorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walk into the kitchen the silver ware is gone
@@ -45,3 +48,8 @@ I'm going under but it's [C]not too deep
 You wanna hurt me but it's [G7]just no use 
 [F]I can't even get the [C]blues
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Till Death Do Us Part}
 {meta: artist Ray Price}
 {meta: composer Stu Davis}
+{meta: x_source classic-country}
+{meta: x_source_file tilldeathdouspartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I call you on the phone but to me you're not at [F]home
@@ -22,3 +25,5 @@ But [G7]I will always love you till death do us [C]part
 I [C]know that you're not thinking of how you broke [C7]my [F]heart
 But [G7]I will always love you till death do us [C]part
 {end_of_verse}
+
+

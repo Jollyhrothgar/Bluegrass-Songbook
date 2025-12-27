@@ -1,6 +1,9 @@
 {meta: title Who Can I Count On}
 {meta: artist Patsy Cline}
 {meta: composer Sammy Masters}
+{meta: x_source classic-country}
+{meta: x_source_file whocanicountonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who can I count on if I [D7]can't count on you
@@ -40,3 +43,8 @@ Who [D7]can I count on if I can't count on [G]you
 {start_of_verse: Verse 5}
 Who [D7]can I count on if I can't count on [G]you
 {end_of_verse}
+
+
+
+
+

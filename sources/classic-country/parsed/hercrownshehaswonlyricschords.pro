@@ -1,5 +1,8 @@
 {meta: title Her Crown She Has Won}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file hercrownshehaswonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My mother was all the [F]whole world to [C]me
@@ -38,3 +41,8 @@
 [F]Yes she’s gone gone  to her heavenly [C]home
 [G7]Gone home to Jesus her crown she has [C]won
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title All That You Have Is Your Soul}
 {meta: artist Emmylou Harris}
 {meta: composer Tracy Chapman}
+{meta: x_source classic-country}
+{meta: x_source_file allthatyouhaveisyoursoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh my momma told [C]me
@@ -77,3 +80,13 @@ Hunger only for a world of truth
 [C]All that [G]you have  all that you [C]have
 [G]All that you [D7]have is your [G]soul
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Detroit City}
 {meta: artist Mel Tillis}
 {meta: composer Danny Dill and Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file detroitcitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I went to [D7]sleep in Detroit [G]City
@@ -57,3 +60,14 @@ And put it on a Southbound freight and ride
 [G]I wanna go [G7]home  I wanna go [C]home
 [G]Oh how I [D7]wanna go [G]home
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

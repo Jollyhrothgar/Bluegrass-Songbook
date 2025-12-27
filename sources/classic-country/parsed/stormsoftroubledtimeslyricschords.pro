@@ -1,6 +1,9 @@
 {meta: title Storms Of Troubled Times ( aka Happy Anniversary)}
 {meta: artist Ray Price}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file stormsoftroubledtimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you ever follow [C]old troubled [G]times
@@ -35,3 +38,7 @@ Of troubled [Em]times [G]
 {start_of_verse: Verse 5}
 Yes I will [C]lead you through the [D7]storms of troubled [G]times
 {end_of_verse}
+
+
+
+

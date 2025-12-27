@@ -1,6 +1,9 @@
 {meta: title Lily Marlene}
 {meta: artist Hank Snow}
 {meta: composer Hans Leip and Norbert Schulze}
+{meta: x_source classic-country}
+{meta: x_source_file lilymarlenelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Would you like to hear the [C]story
@@ -64,3 +67,11 @@ Fare thee [D7]well Lily [G]Marlene
 Till I [D7]return to [G]you  
 Fare thee [D7]well Lily [G]Marlene
 {end_of_verse}
+
+
+
+
+
+
+
+

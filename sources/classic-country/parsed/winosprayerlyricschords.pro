@@ -1,6 +1,9 @@
 {meta: title Wino's Prayer}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby and Icie Berg Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file winosprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw the ole man shuffle down the street
@@ -41,3 +44,8 @@ Or [C]this ol' wino [D7]just won't have a [G]prayer
 {start_of_verse: Verse 5}
 Or [C]this ol' wino [D7]just won't have a [G]prayer
 {end_of_verse}
+
+
+
+
+

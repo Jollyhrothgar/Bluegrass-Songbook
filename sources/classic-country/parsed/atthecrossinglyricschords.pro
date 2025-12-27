@@ -1,6 +1,9 @@
 {meta: title At The Crossing}
 {meta: artist Jimmie Davis}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file atthecrossinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a river some[C]where that's called [G]Jordan
@@ -31,3 +34,6 @@ There'll be [G]someone there who loves me
 To [C]guide me across the [G]river
 To [D7]endless joys [G]above
 {end_of_verse}
+
+
+

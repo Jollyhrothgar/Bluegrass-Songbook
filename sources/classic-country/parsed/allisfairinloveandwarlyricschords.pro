@@ -1,6 +1,9 @@
 {meta: title All Is Fair In Love And War}
 {meta: artist Ronnie Milsap}
 {meta: composer Robert B. Byrne and Tim J. Nichols}
+{meta: x_source classic-country}
+{meta: x_source_file allisfairinloveandwarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now the first rule is there ain't no rules
@@ -58,3 +61,9 @@ I [F]guess I'd have to find me someone new
 [G7]Like it or not one things for sure
 [C]Cause all is fair in love and war
 {end_of_verse}
+
+
+
+
+
+

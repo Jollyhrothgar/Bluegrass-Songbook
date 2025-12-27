@@ -1,5 +1,8 @@
 {meta: title Loose Talk}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file loosetalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So long we've been married life's burdens we've [D7]carried
@@ -42,3 +45,8 @@ Some [D7]place where we can live a life of our [G]own
 For I [C]know you love me and happy we could [G]be 
 If [D7]some folks would leave us [G]alone
 {end_of_verse}
+
+
+
+
+

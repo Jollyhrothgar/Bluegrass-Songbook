@@ -1,6 +1,9 @@
 {meta: title Cowboys Ain’t Suppose To Cry}
 {meta: artist Moe Bandy}
 {meta: composer Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file cowboysaintsupposetocrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I'm just a [F]cowboy on my way back to [C]Houston
@@ -25,3 +28,5 @@ Don’t ask me [Dm]why cause [F]cowboys [G7]ain’t suppose to [C]cry
 {start_of_verse: Verse 3}
 Cause [F]cowboys [G7]ain’t suppose to [C]cry
 {end_of_verse}
+
+

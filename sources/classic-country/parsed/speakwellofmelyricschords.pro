@@ -1,6 +1,9 @@
 {meta: title Speak Well of Me}
 {meta: artist George Morgan}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file speakwellofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m saying goodbye [D7]like I have to do
@@ -35,3 +38,6 @@ That’s [C]not too much to ask
 [D7]I’d do it for you
 [G7]Speak well of me to the kids [C]won’t you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Living Like A Fool}
 {meta: artist Jimmy Martin}
 {meta: composer Buckley Maxwell and Jerry Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file livinglikeafoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wake up every morning and I [C]love to find you [G]there
@@ -33,3 +36,7 @@ And [C]that's the way a [G]day goes by when you're [D7]living like a [G]fool
 {start_of_verse: Verse 4}
 Yes [C]that's the way a [G]day goes by when you're [D7]living like a [G]fool
 {end_of_verse}
+
+
+
+

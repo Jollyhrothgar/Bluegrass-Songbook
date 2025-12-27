@@ -1,5 +1,8 @@
 {meta: title Without Your Love}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file withoutyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the sun come up this morning I started to cry
@@ -29,3 +32,6 @@ Cause I'm just [G]starting to [C]live my [G]life [D7]without your [G]love
 {start_of_verse: Verse 4}
 [C]Yes I'm just [G]starting to [C]live my [G]life [D7]without your [G]love
 {end_of_verse}
+
+
+

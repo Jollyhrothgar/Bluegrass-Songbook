@@ -1,6 +1,9 @@
 {meta: title You Don't Have To Be Present To Win}
 {meta: artist Lefty Frizzell}
 {meta: composer Joyce Allsup}
+{meta: x_source classic-country}
+{meta: x_source_file youdonthavetobepresenttowinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My chances are [D7]greater I [G]thought with him gone
@@ -29,3 +32,6 @@ A memo[C]ry that's over love [G]when you're [D7]apart
 Just a [G]thief in the [D7]night is [G]all I've ever [G7]been
 No you [C]don't have to be [D7]present to [G]win
 {end_of_verse}
+
+
+

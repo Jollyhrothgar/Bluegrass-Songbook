@@ -1,6 +1,9 @@
 {meta: title Who Will Pray For Me}
 {meta: artist Conway Twitty}
 {meta: composer Darrell Statler and Lorene Allen}
+{meta: x_source classic-country}
+{meta: x_source_file whowillprayformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My rough and [F]rowdy [C]ways have kept me [F]from His [C]grace
@@ -23,3 +26,5 @@ And talk to God [F]like a [C]man on my [G7]own
 [C]He knows [F]who I [C]am she mentions [F]me to [C]Him
 But who’ll [F]pray for [C]me when [G7]momma’s [C]gone
 {end_of_verse}
+
+

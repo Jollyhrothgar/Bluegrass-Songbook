@@ -1,6 +1,9 @@
 {meta: title A Mansion on the Hill}
 {meta: artist Hank Williams}
 {meta: composer Fred Rose and Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file amansiononthehilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight down [G7]here in the [C]valley
@@ -29,3 +32,6 @@ The trees [C7]stand so [F]silent and [C]still
 I know you're alone [C7]with your pride [F]dear
 In your [C]loveless [G7]mansion on the [C]hill
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Are My One Desire}
 {meta: artist Buddy Holly}
 {meta: composer Don Guess}
+{meta: x_source classic-country}
+{meta: x_source_file youaremyonedesirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You are my [Am]one de[E7]sire
@@ -25,3 +28,6 @@ Your [C]eyes your [Am]lips and your [E7]smile
 [C]You are my [Am]one de[E7]sire
 [G7]You set my heart on [C]fire
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Kneel At The Cross}
 {meta: artist Stonewall Jackson}
 {meta: composer Charles E. Moody}
+{meta: x_source classic-country}
+{meta: x_source_file kneelatthecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Kneel at the cross Christ will meet you there
@@ -43,3 +46,10 @@ Turn not away to life's sparkling cup
 [G]Kneel at the cross [D7]leave every [G]care
 [C]Kneel at [G]the cross Jesus will [D7]meet you [G]there
 {end_of_verse}
+
+
+
+
+
+
+

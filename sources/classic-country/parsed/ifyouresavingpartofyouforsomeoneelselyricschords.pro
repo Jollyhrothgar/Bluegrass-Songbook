@@ -1,5 +1,8 @@
 {meta: title If You're Saving Part Of You For Someone Else}
 {meta: artist Billy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouresavingpartofyouforsomeoneelselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you’re [G7]saving part of you for someone else
@@ -43,3 +46,9 @@ If you’re saving part of you for someone [C]else
 [G7]Oh I don’t wanna be the one to cause your world to come undone
 If you’re saving part of you for someone [C]else
 {end_of_verse}
+
+
+
+
+
+

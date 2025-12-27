@@ -1,6 +1,9 @@
 {meta: title Walkin' A Broken Heart}
 {meta: artist Don Williams}
 {meta: composer Dennis Linde and Alan Rush}
+{meta: x_source classic-country}
+{meta: x_source_file walkinabrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walkin' [Am]down this [C]midnight [Am]street
@@ -32,3 +35,6 @@ And walk your [C]broken [Dm]heart  [G7]walk your [C]broken [Am]heart[C]
 [Am]Go walk your [F]broken [Dm]heart         
 [C]Walk your broken [Am]heart
 {end_of_verse}
+
+
+

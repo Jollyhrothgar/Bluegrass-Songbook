@@ -1,6 +1,9 @@
 {meta: title Your Kind Of Man}
 {meta: artist Bob Luman}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file yourkindofmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With a heavy [F]heart I write this [C]letter
@@ -29,3 +32,6 @@ And there's not a soul [F]around who [C]understands
 When you hurt so much your [F]only hope is [C]dyin'
 Only [F]then will you be [G7]hurting like I [F]am[C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It Started All Over Again}
 {meta: artist Vern Gosdin}
 {meta: composer Jim Lusk, Shirl Milete, Gary S. Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file itstartedalloveragainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We agreed it was over we'd both find [F]another
@@ -29,3 +32,6 @@
 [C]It's too late for lyin' I looked in your eyes [F]then
 [C]It started all [G7]over [C]again
 {end_of_verse}
+
+
+

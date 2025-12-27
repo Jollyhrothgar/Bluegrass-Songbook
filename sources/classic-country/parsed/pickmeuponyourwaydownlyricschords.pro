@@ -1,6 +1,9 @@
 {meta: title Pick Me Up On Your Way Down}
 {meta: artist Charlie Walker}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file pickmeuponyourwaydownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You were mine for just a while 
@@ -43,3 +46,8 @@ I'll be waiting here for [C]you
 As you tumble to the [D7]ground 
 Pick me up on your way [G]down
 {end_of_verse}
+
+
+
+
+

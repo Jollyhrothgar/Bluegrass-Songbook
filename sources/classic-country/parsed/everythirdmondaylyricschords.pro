@@ -1,6 +1,9 @@
 {meta: title Every Third Monday}
 {meta: artist Sammy Kershaw}
 {meta: composer Larry Cordle, Larry Shell, Billy Henderson}
+{meta: x_source classic-country}
+{meta: x_source_file everythirdmondaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He drives to Charlotte every third Monday
@@ -34,3 +37,7 @@
 [F]Every third [G7]Monday he [Am]finds a new [F]way
 [C]To tell her [G7]that same old [C]lie
 {end_of_verse}
+
+
+
+

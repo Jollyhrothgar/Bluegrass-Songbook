@@ -1,6 +1,9 @@
 {meta: title Blue Train}
 {meta: artist Johnny Cash}
 {meta: composer Billy Smith}
+{meta: x_source classic-country}
+{meta: x_source_file bluetrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's an engine at the station and the whistle blows my name
@@ -37,3 +40,8 @@ There's [G7]nothin' left to live for in the [F]world we're rollin' [C]through
 Gonna ride a [G7]blue train gonna ride a [C]blue train
 Gonna ride a [G7]blue train gonna ride a [C]blue train
 {end_of_verse}
+
+
+
+
+

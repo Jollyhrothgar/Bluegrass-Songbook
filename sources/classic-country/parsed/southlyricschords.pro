@@ -1,6 +1,9 @@
 {meta: title South}
 {meta: artist Roger Miller}
 {meta: composer Bobby Russell}
+{meta: x_source classic-country}
+{meta: x_source_file southlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hot afternoon sometime in June
@@ -53,3 +56,9 @@ And that’s home to [C]me
 And they call it the [F]south  [G7]it’s the land of the [C]free
 It lost the [G7]only war it ever fought in [C]history
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Hot Rod Boogie}
 {meta: artist Faron Young}
 {meta: composer Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file hotrodboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I had an old Ford and it took a chill
@@ -61,3 +64,12 @@ The collar rubbed his shoulder and it got sore
 [F]He did the hot rod boogie and now he plows so [C]fine
 [G7]Well he boogies on up the row as he plows on down the [C]line
 {end_of_verse}
+
+
+
+
+
+
+
+
+

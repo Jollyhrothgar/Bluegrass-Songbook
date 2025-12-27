@@ -1,5 +1,8 @@
 {meta: title Big Bad John}
 {meta: artist Jimmy Dean}
+{meta: x_source classic-country}
+{meta: x_source_file bigbadjohnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every morning at the mine you could see him arrive
@@ -72,3 +75,14 @@ They just placed a marble stand in front of it
 These few words are written on that stand
 At the bottom of this mine likes a big big man Big John
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

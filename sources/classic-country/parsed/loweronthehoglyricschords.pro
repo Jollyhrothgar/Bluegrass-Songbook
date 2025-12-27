@@ -1,6 +1,9 @@
 {meta: title Lower On The Hog}
 {meta: artist John Anderson}
 {meta: composer Lionel Delmore and Larry Cordle}
+{meta: x_source classic-country}
+{meta: x_source_file loweronthehoglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been workin' at a sawmill earnin' every dime I make
@@ -39,3 +42,7 @@ I'm [Em]making more now and [F]eatin' lower on the [G]hog
 There's a [Em]lot less scrap to [F]throw out to the [G]dog
 I'm [Em]making more now and [F]eatin' lower on the [G]hog
 {end_of_verse}
+
+
+
+

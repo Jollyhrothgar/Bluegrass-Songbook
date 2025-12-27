@@ -1,6 +1,9 @@
 {meta: title Little Boy Blue}
 {meta: artist Huelyn Duvall}
 {meta: composer Jerry Arnold and Doyle Turner}
+{meta: x_source classic-country}
+{meta: x_source_file littleboybluelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little boy blue  come [F]blow your [C]horn
@@ -36,3 +39,7 @@
 My heart's [F]a burning [C][F][C]flame
 Little boy blue [F]come blow your [C]horn
 {end_of_verse}
+
+
+
+

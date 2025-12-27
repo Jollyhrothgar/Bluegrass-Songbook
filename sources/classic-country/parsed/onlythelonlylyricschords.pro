@@ -1,5 +1,8 @@
 {meta: title Only the Lonely}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file onlythelonlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Only the lonely know the way I feel [Am]tonight 
@@ -17,3 +20,4 @@ No more sorrow but that's the [A7]chance
 [D7]You've got to take  if [C]your lonely heart [D7]breaks 
 Only the [G]lonely   only [D7]the [G]lonely 
 {end_of_verse}
+

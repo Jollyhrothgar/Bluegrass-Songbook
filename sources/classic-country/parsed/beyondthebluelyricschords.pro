@@ -1,4 +1,7 @@
 {meta: composer Beth Nielsen Chapman}
+{meta: x_source classic-country}
+{meta: x_source_file beyondthebluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Beyond The Blue  
@@ -38,3 +41,8 @@ This life is but a [Em]dream
 Go [Am]gently down the [Em]stream
 Go[Am] gently down [C]the s[G]tream 
 {end_of_verse}
+
+
+
+
+

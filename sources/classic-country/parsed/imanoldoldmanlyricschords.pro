@@ -1,5 +1,8 @@
 {meta: title I'm An Old Old Man}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file imanoldoldmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Said an old man to a good-looking girl
@@ -28,3 +31,6 @@ Don't take me wrong I just wanna have fun
 [F]Cause you don't live but once so please understand
 [C]That I'm an old old man trying [G7]to live while I [C]can
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Last Night I Dreamed Of Heaven}
 {meta: artist Hank Williams Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file lastnightidreamedofheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I dreamed of heaven and I saw [C]my mother [G]there
@@ -21,3 +24,5 @@ And the joy within me [A7]made my glad heart [D7]weep
 [G]I was there with my Savior free [C]from grief and [G]strife
 Last [C]night I dreamed of [G]heaven [D7]the land of eternal [G]life
 {end_of_verse}
+
+

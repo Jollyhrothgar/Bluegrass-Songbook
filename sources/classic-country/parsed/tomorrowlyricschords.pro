@@ -1,5 +1,8 @@
 {meta: title Tomorrow}
 {meta: artist Johnny Tillotson}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tomorrow’s gonna be a better [Am]day
@@ -43,3 +46,9 @@ Harsh words are never here bad [F]news will disappear
 And I'm [C]packed and I'm [G7]gonna be on my [Am]way
 [C]Tomorrow's gonna [G7]be another [Am]day
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Proudest Loneliest Fool}
 {meta: artist Charlie Rich}
 {meta: composer Ricci Mareno and Jerry Gillespie}
+{meta: x_source classic-country}
+{meta: x_source_file proudestloneliestfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She didn't see things [F]my way
@@ -22,3 +25,5 @@ I'm the [Am]proudest [D7]loneliest fool I [G]know
 I kept my [Am]pride but [G]deep down [E7]inside
 I'm the [Am]proudest [D7]loneliest fool I [G]know
 {end_of_verse}
+
+

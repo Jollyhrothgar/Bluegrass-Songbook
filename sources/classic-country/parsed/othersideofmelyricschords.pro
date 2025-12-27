@@ -1,6 +1,9 @@
 {meta: title Other Side Of Me}
 {meta: artist Crystal Gayle}
 {meta: composer Howard Greenfield and Neil Sedaka}
+{meta: x_source classic-country}
+{meta: x_source_file othersideofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You think you know me pretty [Em]well but [Am]how can you tell
@@ -30,3 +33,6 @@ I'm so afraid the things I [Em]say might [Am]chase you away
 [C]Why must I [E7]hide these [Am]feelings that have [C]been denied
 [F]Only you can [C]set me free [Dm]see what's [E7]on the [F]other [G7]side of [C]me [F]  [C]
 {end_of_verse}
+
+
+

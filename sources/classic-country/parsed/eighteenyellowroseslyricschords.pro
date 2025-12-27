@@ -1,6 +1,9 @@
 {meta: title Eighteen Yellow Roses}
 {meta: artist Marty Robbins}
 {meta: composer Bobby Darin}
+{meta: x_source classic-country}
+{meta: x_source_file eighteenyellowroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Eighteen yellow [G7]roses came [C]today
@@ -30,3 +33,6 @@ And [C]find out if he's got p[G7]lans to buy you a [C]ring[C7]
 'Cause [F]eighteen yellow roses [C]will wilt and die one day
 But a [G7]father's love will never fade [C]away
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Hard Headed Me}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file hardheadedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well he gave me fair warning he said let him alone
@@ -36,3 +39,8 @@ How far is to the [C]next town [G7]I'm walking that [C]way
 Hard [G7]hard headed me I spoke out of turn once too [C]often
 I'd be better off in my [F]coffin [G7]hard headed [C]me
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Burning Inside}
 {meta: artist Hank Locklin}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file burninginsidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You got that please don't [C]touch me [D7]air a[G]bout you
@@ -33,3 +36,6 @@ And so I'm [G]burning (burning) [D7]burning
 (Burning) [G]burning in[C]side
 I [G]love you so and [D7]now I'm losing [G]you
 {end_of_verse}
+
+
+

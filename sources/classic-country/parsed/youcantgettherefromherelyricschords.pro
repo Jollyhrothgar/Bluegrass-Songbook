@@ -1,6 +1,9 @@
 {meta: title You Can't Get There From Here}
 {meta: artist Charlie Walker}
 {meta: composer Eddie Hazlewood}
+{meta: x_source classic-country}
+{meta: x_source_file youcantgettherefromherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now if you're looking for a honey
@@ -52,3 +55,8 @@ Well let me tell you [F]dear
 I won't try to lie I won't [C]alibi
 But you [G7]can't get there from [C]here
 {end_of_verse}
+
+
+
+
+

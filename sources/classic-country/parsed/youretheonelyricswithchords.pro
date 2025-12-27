@@ -1,5 +1,8 @@
 {meta: title You're The One}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file youretheonelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're the one you're the one that [C]made me cry
@@ -48,3 +51,9 @@ So [Am]how's it feel now that [D7]you're the one it's [G]happening to[D7]
 You're the one yeah you're the [C]one
 [Am]You're the one yeah you're the [C]one
 {end_of_verse}
+
+
+
+
+
+

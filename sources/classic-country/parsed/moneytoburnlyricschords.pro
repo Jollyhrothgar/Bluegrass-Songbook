@@ -1,6 +1,9 @@
 {meta: title Money To Burn}
 {meta: artist George Jones}
 {meta: composer Johnny Nelms}
+{meta: x_source classic-country}
+{meta: x_source_file moneytoburnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Memories of an [G]old love the [C]one I left [G]behind
@@ -40,3 +43,9 @@ I thought money in my pocket [D7]was all I'd ever need
 [C]Oh but a man without a [G]woman’s love is [C]like a garden without [G]seed
 [C]Oh but a man without a [G]woman’s love is [C]like a garden without [G]seed
 {end_of_verse}
+
+
+
+
+
+

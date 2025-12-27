@@ -1,6 +1,9 @@
 {meta: title Hundred Dollar Funeral}
 {meta: artist Porter Wagoner}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file hundreddollarfunerallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]With one nickel in his pocket and a pack of [C]cigarette
@@ -29,3 +32,6 @@ He was lowered by four [G]strangers that didn't know his [D7]name
 A loser on this [G]earth a debt so many [C]must pay
 Just a hundred dollar [G]funeral with no [D7]loved ones to [G]pray
 {end_of_verse}
+
+
+

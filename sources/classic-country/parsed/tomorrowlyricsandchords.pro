@@ -1,6 +1,9 @@
 {meta: title Tomorrow}
 {meta: artist The Sullivans}
 {meta: composer Marty Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file tomorrowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tomorrow is uncertain as [C]today was yesterday
@@ -38,3 +41,7 @@ As [C]long as [G]I have [Am]Jesus
 As [C]long as [G]I have [Am]Jesus
 [G]I can face [D7]tomorrow all [G]day
 {end_of_verse}
+
+
+
+

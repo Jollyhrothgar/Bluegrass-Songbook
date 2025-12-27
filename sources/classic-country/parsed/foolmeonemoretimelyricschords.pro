@@ -1,6 +1,9 @@
 {meta: title Fool Me One More Time}
 {meta: artist Wilburn Brothers}
 {meta: composer John Keith Reedy}
+{meta: x_source classic-country}
+{meta: x_source_file foolmeonemoretimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Fool me one more [C7]time and say you [F]love me
@@ -29,3 +32,6 @@ The [F]truest loyal [C]fool you've ever [G7]known
 [C]Fool me one more [C7]time and say you'll [F]always be true
 [G7]Fool me one more time for I still [C]love you
 {end_of_verse}
+
+
+

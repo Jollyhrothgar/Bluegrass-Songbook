@@ -1,6 +1,9 @@
 {meta: title I'm Waltzing With Tears In My Eyes}
 {meta: artist Cowboy Copas}
 {meta: composer Sydney Nathan, Paul Howard, Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file imwaltzingwithtearsinmyeyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm waltzing with tears in my eyes
@@ -22,3 +25,6 @@ Friends smile as they go gliding by
 {start_of_verse: Verse 4}
 Repeat
 {end_of_verse}
+
+
+

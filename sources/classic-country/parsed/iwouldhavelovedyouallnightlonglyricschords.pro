@@ -1,6 +1,9 @@
 {meta: title I Would Have Loved You All Night Long}
 {meta: artist Keith Whitley}
 {meta: composer Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldhavelovedyouallnightlonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know she thinks we're different
@@ -62,3 +65,11 @@ I would have [G7]loved you all night [C]long
 If I'd [F]known last night was [C]our last night
 I would have [G7]loved you all night [C]long
 {end_of_verse}
+
+
+
+
+
+
+
+

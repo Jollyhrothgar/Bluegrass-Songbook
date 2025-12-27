@@ -1,6 +1,9 @@
 {meta: title She's Got You}
 {meta: artist Patsy Cline}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file shesgotyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've got your [C]picture  that [G7]you gave to [C]me
@@ -32,3 +35,7 @@ I've got these [C]little things  [G7]she's got [C]you
 {start_of_verse: Verse 5}
 repeat chorus
 {end_of_verse}
+
+
+
+

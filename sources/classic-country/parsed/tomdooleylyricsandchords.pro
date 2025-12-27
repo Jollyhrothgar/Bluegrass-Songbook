@@ -1,6 +1,9 @@
 {meta: title Tom Dooley}
 {meta: artist Doc Watson}
 {meta: composer Dave Guard}
+{meta: x_source classic-country}
+{meta: x_source_file tomdooleylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hang your head Tom [C]Dooley
@@ -99,3 +102,16 @@ Hang your head and [G]cry
 You [D7]killed poor Laurie [G]Foster
 And you [C]know you're bound to [G]die
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

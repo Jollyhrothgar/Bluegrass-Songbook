@@ -1,6 +1,9 @@
 {meta: title Land Of My Boyhood Dreams}
 {meta: artist Hank Snow}
 {meta: composer Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file landofmyboyhooddreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Alone in a [G7]great big [C]city I'm as [F]lonesome as I can [C]be
@@ -22,3 +25,5 @@
 [C]Take me out there where the cowboys [F]singing the campfires [C]gleam
 [F]Let me rest down in [C]Texas the [D7]land of my [G7]boyhood [C]dream
 {end_of_verse}
+
+

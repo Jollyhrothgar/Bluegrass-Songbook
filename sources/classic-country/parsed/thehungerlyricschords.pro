@@ -1,6 +1,9 @@
 {meta: title The Hunger}
 {meta: artist Charley Pride}
 {meta: composer Lee Fry}
+{meta: x_source classic-country}
+{meta: x_source_file thehungerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They said in her younger [Am]days 
@@ -57,3 +60,10 @@ All [C]she's found is disappointments bitter [F]weeds
 While the [G7]love that she's too often [F]found 
 Is not [G7]enough to satisfy her [C]needs
 {end_of_verse}
+
+
+
+
+
+
+

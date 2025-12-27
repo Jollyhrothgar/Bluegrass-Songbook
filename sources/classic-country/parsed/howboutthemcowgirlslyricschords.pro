@@ -1,6 +1,9 @@
 {meta: title How Bout Them Cowgirls}
 {meta: artist George Strait}
 {meta: composer Casey Beathard and Ed Hill}
+{meta: x_source classic-country}
+{meta: x_source_file howboutthemcowgirlslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I felt the rush of the Rio Grande into Yellowstone
@@ -50,3 +53,9 @@ And I tell you right [C]now [G7]girls may [Am]just be seven [C]wonders of this
 {start_of_verse: Verse 5}
 How 'bout 'em boys
 {end_of_verse}
+
+
+
+
+
+

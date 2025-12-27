@@ -1,5 +1,8 @@
 {meta: title Hello Darling}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file hellodarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello darling  nice to see you  it's been a long [C7]time
@@ -28,3 +31,6 @@
 [F]And if you should ever find it in your heart to forgive [C]me
 [G7]Come back darling I'll be waiting for [C]you
 {end_of_verse}
+
+
+

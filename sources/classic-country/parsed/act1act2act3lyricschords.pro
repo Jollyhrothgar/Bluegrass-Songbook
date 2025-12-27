@@ -1,6 +1,9 @@
 {meta: title Act 1 Act 2 Act 3}
 {meta: artist Hank Snow}
 {meta: composer Charles Tebbetts}
+{meta: x_source classic-country}
+{meta: x_source_file act1act2act3lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The world's a stage they say and we're all [C]part of the [G]play
@@ -29,3 +32,6 @@
 [C]Act three our vows and hearts were [G]broken
 [D7]The play is ended now the curtain drops for [G]me
 {end_of_verse}
+
+
+

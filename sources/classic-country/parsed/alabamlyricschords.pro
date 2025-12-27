@@ -1,5 +1,8 @@
 {meta: title Alabam}
 {meta: artist Cowboy Copas}
+{meta: x_source classic-country}
+{meta: x_source_file alabamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I went to a turkey roast down [A7]the street
@@ -65,3 +68,16 @@ I'm gonna look back on my money's worth
 [D7]I'm on my way I'm [G7]going back to [C]Alabam
 [G7]I'm going back to [C]Alabam
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

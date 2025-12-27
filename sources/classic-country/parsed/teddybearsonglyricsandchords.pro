@@ -1,5 +1,8 @@
 {meta: title Teddy Bear Song}
 {meta: artist Barbara Fairchild}
+{meta: x_source classic-country}
+{meta: x_source_file teddybearsonglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish I had button [C7]eyes and a red felt [F]nose
@@ -34,3 +37,7 @@ And [G7]no one would know the mess I've made of my [C]life
 {start_of_verse: Verse 5}
 repeat chorus
 {end_of_verse}
+
+
+
+

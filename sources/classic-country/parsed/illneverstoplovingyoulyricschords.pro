@@ -1,6 +1,9 @@
 {meta: title I'll Never Stop Loving You}
 {meta: artist Barbara Mandrell and Lee Greenwood}
 {meta: composer Steve Dean and Mack David}
+{meta: x_source classic-country}
+{meta: x_source_file illneverstoplovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Goodbye isn't [C]easy to [Am]say
@@ -27,3 +30,5 @@ In [C]time you may find somebody [F]new[C]  [Dm]
 But [C]I'll never [G]stop loving [C]you[Dm]   [C]  [F]
 No [C]I'll never stop [G]loving [F]you[Dm]   loving [C]you
 {end_of_verse}
+
+

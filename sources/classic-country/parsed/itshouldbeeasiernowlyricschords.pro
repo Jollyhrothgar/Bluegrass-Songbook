@@ -1,5 +1,8 @@
 {meta: title It Should Be Easier Now}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file itshouldbeeasiernowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now that I've made up my [C]mind you're [G]gone 
@@ -28,3 +31,6 @@ The wounds in my heart you've carved deep and wide
 But [D7]now there'll be more room for love inside 
 It should be easier [C]now [G]
 {end_of_verse}
+
+
+

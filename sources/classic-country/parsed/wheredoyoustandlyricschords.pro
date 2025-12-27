@@ -1,5 +1,8 @@
 {meta: title Where Do You Stand}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file wheredoyoustandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm somewhere behind you 
@@ -26,3 +29,6 @@ Hey what's your [G7]plan  where do you [C]stand
 Where do you stand ([F]where do you [C]stand) [F]where do you [C]stand[F]  [C]
 Hey what's your [G7]plan  where do you [F]stand[C]
 {end_of_verse}
+
+
+

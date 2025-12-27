@@ -1,6 +1,9 @@
 {meta: title Don't Wish Me Merry Christmas}
 {meta: artist Lynn Anderson}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file dontwishmemerryChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Children are [Em]singing just [C]outside my [D7]door
@@ -29,3 +32,6 @@ For [D7]how could that ever [G]be
 Tell me how could Christmas be [C]merry and [Am]bright
 If [G]you're not [D7]here with [G]me
 {end_of_verse}
+
+
+

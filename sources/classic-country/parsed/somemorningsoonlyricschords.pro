@@ -1,6 +1,9 @@
 {meta: title Some Morning Soon}
 {meta: artist Patty Loveless}
 {meta: composer Claire Lynch and Larry Lynch}
+{meta: x_source classic-country}
+{meta: x_source_file somemorningsoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The wind is cold I walk alone 
@@ -41,3 +44,8 @@ And [G]how to [D7]carry [G]on
 I'm learning [Bm]how to [C]lose you [C]now 
 And [G]how to [D7]carry [G]on
 {end_of_verse}
+
+
+
+
+

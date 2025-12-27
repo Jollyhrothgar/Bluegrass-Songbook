@@ -1,6 +1,9 @@
 {meta: title Christmas To Christmas}
 {meta: artist Lee Greenwood}
 {meta: composer Alan Rhody}
+{meta: x_source classic-country}
+{meta: x_source_file ChristmastoChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Seems like only yesterday
@@ -46,3 +49,9 @@ I will [C]spend Christmas to [D7]Christmas lovin' [G]you
 [Am]Till my days on earth are through
 I will [C]spend Christmas to [D7]Christmas lovin' [G]you
 {end_of_verse}
+
+
+
+
+
+

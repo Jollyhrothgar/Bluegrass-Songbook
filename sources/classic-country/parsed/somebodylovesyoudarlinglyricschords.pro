@@ -1,6 +1,9 @@
 {meta: title Somebody Loves You Darling}
 {meta: artist Jim and Jesse}
 {meta: composer Wiley Morris and Zake Morris}
+{meta: x_source classic-country}
+{meta: x_source_file somebodylovesyoudarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody loves you [G7]darling 
@@ -36,3 +39,7 @@ So boys and girls get [D7]ready
 Somebody loves you [G7]dearly 
 Why [F]did you [G7]let them [C]know
 {end_of_verse}
+
+
+
+

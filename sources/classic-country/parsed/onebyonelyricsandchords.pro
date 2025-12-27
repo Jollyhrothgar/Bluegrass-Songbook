@@ -1,6 +1,9 @@
 {meta: title One by One}
 {meta: artist Kitty Wells/Red Foley}
 {meta: composer Johnny Wright and Jack Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file onebyonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One by one we've [F]broke each vow we [C]made
@@ -29,3 +32,6 @@ It was you who lied it was me who [G7]paid
 [C]As sure as [F]there's a heaven beyond the [C]sun 
 We'll pay for our [G7]lies one by [C]one
 {end_of_verse}
+
+
+

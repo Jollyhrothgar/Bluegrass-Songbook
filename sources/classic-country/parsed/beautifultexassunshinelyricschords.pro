@@ -1,5 +1,8 @@
 {meta: title Beautiful Texas Sunshine}
 {meta: artist Doug Sahm}
+{meta: x_source classic-country}
+{meta: x_source_file beautifultexassunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bluebonnets on the hillside 
@@ -54,3 +57,10 @@ I'll be back by and [G]by
 And we'll just [D7]wile away the beautiful day
 In the beautiful Texas [G]sunshine
 {end_of_verse}
+
+
+
+
+
+
+

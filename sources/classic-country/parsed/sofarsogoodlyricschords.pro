@@ -1,6 +1,9 @@
 {meta: title So Far So Good}
 {meta: artist Don Williams}
 {meta: composer Troy Seals, Eddie Setser, Dobie Gray}
+{meta: x_source classic-country}
+{meta: x_source_file sofarsogoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I think I'm in a world of [Em]trouble [C]talk about a worried [D7]man
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [D7]S--o [Em]far [C]so [D7]far so [G]good
 {end_of_verse}
+
+
+

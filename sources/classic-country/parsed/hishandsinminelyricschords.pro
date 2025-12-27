@@ -1,6 +1,9 @@
 {meta: title His Hand In Mine}
 {meta: artist Elvis Presley}
 {meta: composer Mosie Lister}
+{meta: x_source classic-country}
+{meta: x_source_file hishandsinminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You may ask me [G7]how I know my Lord is real [C](my [G7]Lord is [C]real)
@@ -25,3 +28,5 @@ He will guide each step I [D7]take and if I fall I know He'll [G7]understand
 )
 I can feel His [G7]hand in mine that's all I need to [C]know
 {end_of_verse}
+
+

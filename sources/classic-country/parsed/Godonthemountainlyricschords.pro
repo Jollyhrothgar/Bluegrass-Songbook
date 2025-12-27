@@ -1,6 +1,9 @@
 {meta: title God On the Mountain}
 {meta: artist Norma Jean}
 {meta: composer Tracy Dartt}
+{meta: x_source classic-country}
+{meta: x_source_file Godonthemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Life is [G]easy when you're [C]up on the [G]mountain
@@ -33,3 +36,7 @@ God of the [D7]day is still God in the [G]night
 {start_of_verse: Verse 4}
 God of the [D7]day is still God in the [G]night
 {end_of_verse}
+
+
+
+

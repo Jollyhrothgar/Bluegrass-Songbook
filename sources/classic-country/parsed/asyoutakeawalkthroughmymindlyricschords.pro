@@ -1,6 +1,9 @@
 {meta: title As You Take A Walk Through My Mind}
 {meta: artist Slim Whitman}
 {meta: composer Claude Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file asyoutakeawalkthroughmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walk down the street with a head full of nothing but [F]you [Am]   [Dm]
@@ -26,3 +29,6 @@ And [G7]I stand here crying as [Dm]you take a [G7]walk through my [C]mind [Em]  
 {start_of_verse: Verse 4}
 Yes [Dm]I stand here crying as [G7]you take a walk through my [C]mind [Dm]   [G7]   [C]
 {end_of_verse}
+
+
+

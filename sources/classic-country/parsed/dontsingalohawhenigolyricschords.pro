@@ -1,6 +1,9 @@
 {meta: title Don't Sing Aloha When I Go}
 {meta: artist Marty Robbins}
 {meta: composer Warren Smith and Buddy Black}
+{meta: x_source classic-country}
+{meta: x_source_file dontsingalohawhenigolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't sing [C]Aloha when I [G]go
@@ -29,3 +32,6 @@ That's where I’ll [A7]always love to [D7]be
 Just smile and [C]say you'll miss me [G]so
 Don't sing [D7]Aloha when I [G]go
 {end_of_verse}
+
+
+

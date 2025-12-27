@@ -1,6 +1,9 @@
 {meta: title Don't Go Away Senor}
 {meta: artist Marty Robbins}
 {meta: composer Jimmy Sweeney}
+{meta: x_source classic-country}
+{meta: x_source_file dontgoawaysenorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In my wandering days [F]I wandered south of the [C]border
@@ -34,3 +37,7 @@ Don't [F]go away senor don't go [C]away
 Don't [F]go away senor don't go [C]away
 Don't go [G7]away don't go [C]away
 {end_of_verse}
+
+
+
+

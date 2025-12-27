@@ -1,5 +1,8 @@
 {meta: title Bad Bad Day}
 {meta: artist Bob Luman}
+{meta: x_source classic-country}
+{meta: x_source_file badbaddaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been a bad bad day for [G7]me
@@ -46,3 +49,9 @@ It's been a bad [G7]bad day for [C]me
 {start_of_verse: Verse 5}
 It's been a bad [G7]bad day for [C]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title New Roving Gambler}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file newrovinggamblerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am a roving gambler I've gambled all around
@@ -56,3 +59,10 @@ The [F]warden said as he [C]locked the door
 You've [F]gambled your last [C]game
 Gambled your last game [G7]gambled your last [C]game
 {end_of_verse}
+
+
+
+
+
+
+

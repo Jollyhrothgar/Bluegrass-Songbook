@@ -1,5 +1,8 @@
 {meta: title All I'm Missing Is You}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file allimmissingisyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I go to places we like to [D7]go
@@ -21,3 +24,5 @@
 [D7]That same ole feeling goes on and on
 [G]All I’m missing is you
 {end_of_verse}
+
+

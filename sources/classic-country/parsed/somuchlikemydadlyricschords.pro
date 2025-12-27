@@ -1,6 +1,9 @@
 {meta: title So Much Like My Dad}
 {meta: artist George Strait}
 {meta: composer Chips Moman and Bobby Emmons}
+{meta: x_source classic-country}
+{meta: x_source_file somuchlikemydadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know that I surprised you coming hom[Dm]e
@@ -36,3 +39,6 @@ But if I'm [Em]so much like my dad
 So [G]tell me word for word what he [D7]said
 That always made you [G]stay
 {end_of_verse}
+
+
+

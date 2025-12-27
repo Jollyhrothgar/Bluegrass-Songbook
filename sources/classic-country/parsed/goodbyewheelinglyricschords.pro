@@ -1,5 +1,8 @@
 {meta: title Goodbye Wheeling}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyewheelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord I've been dealing around [C][F]Wheeling
@@ -42,3 +45,8 @@
 [F]Since she don't need me I can't [D]see me
 [F]Any longer hanging round this old [G7]town
 {end_of_verse}
+
+
+
+
+

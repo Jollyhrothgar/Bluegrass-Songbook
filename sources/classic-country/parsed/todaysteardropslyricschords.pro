@@ -1,6 +1,9 @@
 {meta: title Today's Teardrops}
 {meta: artist Roy Orbison}
 {meta: composer Gene Pitney and Aaron Schroeder}
+{meta: x_source classic-country}
+{meta: x_source_file todaysteardropslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today's teardrops are tomorrow's rainbows
@@ -43,3 +46,8 @@ And [C]tomorrow's rainbows we will share me and [G]you
 So dry your [B7]eyes little [C]girl dry your [A7]eyes
 Cause [G]we're gonna [D7]see skies of [G]blue
 {end_of_verse}
+
+
+
+
+

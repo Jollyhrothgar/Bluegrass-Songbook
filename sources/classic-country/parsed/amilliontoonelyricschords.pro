@@ -1,6 +1,9 @@
 {meta: title A Million To One}
 {meta: artist Red Sovine}
 {meta: composer Pat Patterson}
+{meta: x_source classic-country}
+{meta: x_source_file amilliontoonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's holdin' you close now and [C7]tellin' you [F]lies
@@ -22,3 +25,5 @@
 [C7]Your eyes were wide-open when all's said and [F]done
 [G7]You're the one who will suffer it's a million to [C]one
 {end_of_verse}
+
+

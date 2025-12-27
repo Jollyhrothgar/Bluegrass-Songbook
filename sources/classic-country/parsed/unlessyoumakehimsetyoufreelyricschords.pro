@@ -1,5 +1,8 @@
 {meta: title Unless You Make Him Set You Free}
 {meta: artist Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file unlessyoumakehimsetyoufreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You won my [F]admi[C]ration with your [F]determi[C]nation
@@ -25,3 +28,6 @@ Unless you make him set you [C]free
 {start_of_verse: Verse 4}
 Un[G7]less you make him set you [C]free
 {end_of_verse}
+
+
+

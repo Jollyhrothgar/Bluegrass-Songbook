@@ -1,6 +1,9 @@
 {meta: title After You've Gone}
 {meta: artist Anne Murray}
 {meta: composer Henry Creamer and Turner Layton}
+{meta: x_source classic-country}
+{meta: x_source_file afteryouvegonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]After you've gone [A]and left me cryin'
@@ -33,3 +36,6 @@ Some[Am]day [Dm]blue and [F]downhearted
 Right [Am]back were you started
 [C]After I’m gone [G7]after I’m gone [C]away
 {end_of_verse}
+
+
+

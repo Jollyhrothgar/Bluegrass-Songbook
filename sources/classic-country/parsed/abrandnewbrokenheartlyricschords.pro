@@ -1,6 +1,9 @@
 {meta: title A Brand New Broken Heart}
 {meta: artist Wilburn Brothers}
 {meta: composer Howard Greenfield and Jack Keller}
+{meta: x_source classic-country}
+{meta: x_source_file abrandnewbrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If my friends should ask for me 
@@ -29,3 +32,6 @@ Then I'll bounce right back a[G7]gain
 [C]Let me be a[C7]lone till [F]then 
 I'm [G7]breaking in a brand new broken [C]heart 
 {end_of_verse}
+
+
+

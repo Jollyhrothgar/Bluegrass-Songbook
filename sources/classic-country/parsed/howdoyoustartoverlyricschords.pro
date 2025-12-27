@@ -1,6 +1,9 @@
 {meta: title How Do You Start Over}
 {meta: artist Roy Orbison}
 {meta: composer William Dees and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file howdoyoustartoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How do you start over [F]again
@@ -29,3 +32,6 @@
 [C]Just tell me you love me and [F]then
 [C]We can [G7]start over [F]over [C]again
 {end_of_verse}
+
+
+

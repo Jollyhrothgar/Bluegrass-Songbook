@@ -1,6 +1,9 @@
 {meta: title Dealing With the Devil}
 {meta: artist Merle Haggard}
 {meta: composer Eddy Raven and Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file dealingwiththedevillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't ask me where she came from
@@ -56,3 +59,10 @@ You were [C]sent here just [G]to save [Em]me
 I'm not dancing with those [C]demons
 I'm not [D7]dealing with the devil [G]anymore
 {end_of_verse}
+
+
+
+
+
+
+

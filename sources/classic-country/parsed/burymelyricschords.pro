@@ -1,6 +1,9 @@
 {meta: title Bury Me}
 {meta: artist Dwight Yoakam}
 {meta: composer Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file burymelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bury me [C]along the big [G]sandy 
@@ -61,3 +64,11 @@ You just [G]bury me [C]along the big sandy
 {start_of_verse: Verse 5}
 Under a [D7]blue Kentucky [G]sky  under a [D7]blue Kentucky [G]sky
 {end_of_verse}
+
+
+
+
+
+
+
+

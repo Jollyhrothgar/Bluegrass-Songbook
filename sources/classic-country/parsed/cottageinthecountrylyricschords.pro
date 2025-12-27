@@ -1,5 +1,8 @@
 {meta: title Cottage In The Country}
 {meta: artist Isla Grant}
+{meta: x_source classic-country}
+{meta: x_source_file cottageinthecountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's and old cottage waiting in the country
@@ -75,3 +78,13 @@ There's and old cottage waiting in the [G]country
 [C]There's and old cottage waiting in the [G]country
 [D7]Waiting for that boy to come [G]home
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Sweet Susannah}
 {meta: artist Kris Kristofferson}
 {meta: composer Gib Guilbeau}
+{meta: x_source classic-country}
+{meta: x_source_file sweetsusannahlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]C'est la belle 'la Louise Anne te va [G7]fomma faire ma faume
@@ -47,3 +50,10 @@ Ta [F]jolie a ta [G7]meion a ta pas [C]bon
 [C]C'est la belle 'la Louise Anne te va [G7]fomma faire ma faume
 Ta [F]jolie a ta [G7]meion a ta pas [C]bon
 {end_of_verse}
+
+
+
+
+
+
+

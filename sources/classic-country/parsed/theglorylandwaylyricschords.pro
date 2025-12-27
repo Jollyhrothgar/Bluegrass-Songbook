@@ -1,5 +1,8 @@
 {meta: title The Gloryland Way}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file theglorylandwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm in the way the [C]bright and shining [G]way 
@@ -28,3 +31,6 @@ I'm in the gloryland [D7]way
 [G]Heaven is near and the way [C]goeth [G]clear 
 For I'm in the [D7]gloryland [G]way
 {end_of_verse}
+
+
+

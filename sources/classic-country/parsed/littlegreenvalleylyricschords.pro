@@ -1,6 +1,9 @@
 {meta: title Little Green Valley}
 {meta: artist Marty Robbins}
 {meta: composer Carson Robison}
+{meta: x_source classic-country}
+{meta: x_source_file littlegreenvalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I see a candlelight [F]down in the little green [C]valley
@@ -33,3 +36,6 @@ And I will leave all my cares [C]behind
 [F]Go where I know I'll find [C]sunshine
 Back to that [G7]little old green valley far [C]away
 {end_of_verse}
+
+
+

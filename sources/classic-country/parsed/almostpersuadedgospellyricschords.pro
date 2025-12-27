@@ -1,6 +1,9 @@
 {meta: title Almost Persuaded (Gospel)}
 {meta: artist Johnny Paycheck}
 {meta: composer Philip P. Bliss}
+{meta: x_source classic-country}
+{meta: x_source_file almostpersuadedgospellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F][C]Almost [C]persuaded now [Am]to [C][G7]believe
@@ -15,3 +18,4 @@
 [F]Almost cannot [C]avail [G7]almost is but [F]to [C]fail
 [Am]Sad sad that [F]bitter [C]wail [G7]almost but [C]lost
 {end_of_verse}
+

@@ -1,6 +1,9 @@
 {meta: title A Good Love Is Like A Good Song}
 {meta: artist Bob Luman}
 {meta: composer Casey Kelly}
+{meta: x_source classic-country}
+{meta: x_source_file agoodloveislikeagoodsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I was a lonely soul no [F]voice in the [C]crowd
@@ -47,3 +50,9 @@ You know a [F]good [C]love is like a [G7]good [C]song
 {start_of_verse: Verse 5}
 Know a [F]good [C]love is like a [G7]good [C]song
 {end_of_verse}
+
+
+
+
+
+

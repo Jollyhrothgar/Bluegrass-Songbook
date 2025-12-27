@@ -1,6 +1,9 @@
 {meta: title Gone Gone Gone}
 {meta: artist The Everly Brothers}
 {meta: composer Don Everly and Phil Everly}
+{meta: x_source classic-country}
+{meta: x_source_file gonegonegonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Some sunny day baby when everything seems ok baby
@@ -22,3 +25,5 @@ If you change your ways baby you might get me to stay baby
 [G7]Gone gone gone [Am]really gone done moved [F]on
 [C]Cause you done me wrong
 {end_of_verse}
+
+

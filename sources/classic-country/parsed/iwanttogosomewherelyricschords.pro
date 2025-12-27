@@ -1,5 +1,8 @@
 {meta: title I Want To Go Somewhere}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttogosomewherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want to go [F]somewhere
@@ -21,3 +24,5 @@
 [C]I’m gonna go [F]somewhere
 [C]Some place [G7]till I can be just [F]like [C]y-ou
 {end_of_verse}
+
+

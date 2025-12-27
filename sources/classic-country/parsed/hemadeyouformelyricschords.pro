@@ -1,5 +1,8 @@
 {meta: title He Made You For Me}
 {meta: artist Kitty Wells}
+{meta: x_source classic-country}
+{meta: x_source_file hemadeyouformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]He made you for [C]me
@@ -25,3 +28,6 @@ He [F]took a grain of dust and He gave human life
 [C]He gave the beauty [C7]of this world to [F]see
 [C]And I have a feeling [G7]He made you for [C]me
 {end_of_verse}
+
+
+

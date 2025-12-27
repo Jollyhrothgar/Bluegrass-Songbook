@@ -1,6 +1,9 @@
 {meta: title Paint Me A Birmingham}
 {meta: artist Tracy Lawrence}
 {meta: composer Buck Moore and Gary Duffy}
+{meta: x_source classic-country}
+{meta: x_source_file paintmeabirminghamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was sittin' there his [Dm]brush in hand
@@ -48,3 +51,7 @@ Son [G7]just where in this picture would you [C]like to be
 I [Dm]said if there's any way you [G7]can
 Could you [F]paint me back into her [G7]arms again
 {end_of_verse}
+
+
+
+

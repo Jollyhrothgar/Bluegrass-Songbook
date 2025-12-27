@@ -1,6 +1,9 @@
 {meta: title I Will Follow You}
 {meta: artist Ricky Nelson}
 {meta: composer Arthur Altman and Norman Gimbel}
+{meta: x_source classic-country}
+{meta: x_source_file iwillfollowyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I will follow you  follow you wherever [Em]you may go
@@ -35,3 +38,7 @@ I will follow [C]you  follow you wherever [Em]you may go
 There [Am]isn't an ocean too [Em]deep  a [F]mountain so high it can [Fm]keep
 Keep me [F]away [G7]away from my [C]love
 {end_of_verse}
+
+
+
+

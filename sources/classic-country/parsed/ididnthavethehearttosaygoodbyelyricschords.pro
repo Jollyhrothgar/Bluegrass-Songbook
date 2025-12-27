@@ -1,5 +1,8 @@
 {meta: title I Didn't Have The Heart To Say Goodbye}
 {meta: artist Hawkshaw Hawkins}
+{meta: x_source classic-country}
+{meta: x_source_file ididnthavethehearttosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I knew someday she'd learn the truth [D7]about me
@@ -28,3 +31,6 @@ I [A7]can't hold my head up [D7]high
 How [G]wrong I'd be to let her ever [D7]want me
 So I didn't have the heart to say good[G]bye
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Let It Go}
 {meta: artist George Strait}
 {meta: composer George Strait, Bubba Strait and Keith Gattis}
+{meta: x_source classic-country}
+{meta: x_source_file letitgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Life's tough and [Am]then you die
@@ -54,3 +57,8 @@ Let it [C]go  you [Am]really gotta let it [C]go [Am]
 Let it [C]go  [Am]sometimes you gotta let it [C]go [Am]                
 Let it [C]go  you [Am]really oughta let it [C]go 
 {end_of_verse}
+
+
+
+
+

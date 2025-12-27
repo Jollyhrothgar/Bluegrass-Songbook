@@ -1,6 +1,9 @@
 {meta: title You're the Reason}
 {meta: artist Johnny Tillotson}
 {meta: composer Terry Fell, Bobby Edwards, Fred Henley}
+{meta: x_source classic-country}
+{meta: x_source_file yourethereasonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just lay here at night I toss and I turn
@@ -26,3 +29,6 @@ But if I'm wrong don't fail [F]to call
 [C]Honey you're the reason I [G7]don't sleep at [C]night
 [C]Honey you're the reason I [G7]don't sleep at [C]night 
 {end_of_verse}
+
+
+

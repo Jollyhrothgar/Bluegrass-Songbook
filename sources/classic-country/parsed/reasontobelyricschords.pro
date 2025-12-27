@@ -1,5 +1,8 @@
 {meta: title Reason To Be}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file reasontobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]First I was [F]loved  [G7]then I came to [C]be
@@ -28,3 +31,6 @@ I had a [F]heart  [G7]inside of [C]me
 And though my [F]heart  [G7]is still part of [C]me
 You give my [F]heart  [G7]its reason to [C]be
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I’ll Drink No More Wine}
 {meta: artist Jimmy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file illdrinknomorewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight as I write you I [G7]pray you will [C]find
@@ -42,3 +45,8 @@ The longer [F]I wait the more my heart [G7]burns
 [F]If you’ll come home darling I’ll treat you so [C]kind
 I’ll never mistreat you I’ll [G7]drink no more [C]wine
 {end_of_verse}
+
+
+
+
+

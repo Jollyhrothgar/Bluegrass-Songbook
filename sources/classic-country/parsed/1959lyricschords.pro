@@ -1,6 +1,9 @@
 {meta: title 1959}
 {meta: artist John Anderson}
 {meta: composer Gary Gentry}
+{meta: x_source classic-country}
+{meta: x_source_file 1959lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Cigarettes were a quarter then bobby socks and jeans were in 
@@ -38,3 +41,7 @@ I'm gonna [A]stand by you [F]until the end of [C]time
 Remember [A]all of the good things [F]that we shared to[C]gether 
 Signed  love [A]Betty  [F]nineteen fifty [C]nine
 {end_of_verse}
+
+
+
+

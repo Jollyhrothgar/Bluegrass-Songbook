@@ -1,6 +1,9 @@
 {meta: title That Reminds Me Of Me}
 {meta: artist Lefty Frizzell}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file thatremindsmeofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]See that man a-walking down life's lonely [G7]street 
@@ -41,3 +44,8 @@ But [C]that has [G7]no sympa[C]thy
 {start_of_verse: Verse 5}
 That has [G7]no sympa[C]thy
 {end_of_verse}
+
+
+
+
+

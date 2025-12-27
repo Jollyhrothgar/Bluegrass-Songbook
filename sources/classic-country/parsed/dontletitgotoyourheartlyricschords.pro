@@ -1,6 +1,9 @@
 {meta: title Don't Let It Go To Your Heart}
 {meta: artist Conway Twitty}
 {meta: composer Conway Twitty and Joe Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file dontletitgotoyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So she smiled at you when you saw her today
@@ -37,3 +40,9 @@ So she told you she thinks of you now and then
 {start_of_verse: Verse 6}
 [G7]No don't let it go to your [C]heart
 {end_of_verse}
+
+
+
+
+
+

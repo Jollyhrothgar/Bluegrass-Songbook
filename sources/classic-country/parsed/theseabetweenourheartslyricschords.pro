@@ -1,6 +1,9 @@
 {meta: title The Sea Between Our Hearts}
 {meta: artist George Jones}
 {meta: composer Darrell Edwards and Merle Moore}
+{meta: x_source classic-country}
+{meta: x_source_file theseabetweenourheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a sea between our hearts 
@@ -33,3 +36,6 @@ And the [F]harbor of your love is the [C]only haven for [G7]me
 If I [C]only had a chart to [F]guide me to your [C]heart
 I'd [G7]anchor there and sail the sea no [C]more
 {end_of_verse}
+
+
+

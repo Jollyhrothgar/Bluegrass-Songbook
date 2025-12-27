@@ -1,6 +1,9 @@
 {meta: title And Then You Came Along}
 {meta: artist Gene Watson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file andthenyoucamealonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I have spent a tender night or [C]two
@@ -30,3 +33,7 @@ There was never any voice in [C]me
 And then you came along
 And sweet dreams started walking through my [D7]mind
 {end_of_verse}
+
+
+
+

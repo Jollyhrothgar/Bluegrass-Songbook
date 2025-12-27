@@ -1,6 +1,9 @@
 {meta: title It's Five O'Clock Somewhere}
 {meta: artist Alan Jackson}
 {meta: composer Jess Brown and Don Rollins}
+{meta: x_source classic-country}
+{meta: x_source_file itsfiveoclocksomewherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun is hot and [G7]that old clock is [C]movin' slow and [G7]so am I
@@ -68,3 +71,10 @@ Alright well it's five o'clock let's go somewhere
 I'm ready crank it up let's [F]get out of here
 I'm gone [G7]    [C]
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Woman's Gotta Make A Stand}
 {meta: artist Norma Jean}
 {meta: composer Curly Putman and Don Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file awomansgottamakeastandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh [F]a [C]woman's gotta make a stand somewhere
@@ -40,3 +43,8 @@ Cause a [G7]woman's gotta make a stand [C]somewhere
 {start_of_verse: Verse 4}
 Yes a [G7]woman's gotta make a stand [C]somewhere
 {end_of_verse}
+
+
+
+
+

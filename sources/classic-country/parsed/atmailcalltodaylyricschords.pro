@@ -1,6 +1,9 @@
 {meta: title At Mail Call Today}
 {meta: artist Gene Autry}
 {meta: composer Gene Autry and Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file atmailcalltodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At mail call today dear your last letter [D7]came
@@ -29,3 +32,6 @@ But always remember my heart beats for [G]you
 Good luck and God bless you [G7]wherever you [C]stray
 The [D7]world for me ended at mail call [G]today
 {end_of_verse}
+
+
+

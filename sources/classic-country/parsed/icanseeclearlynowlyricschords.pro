@@ -1,6 +1,9 @@
 {meta: title I Can See Clearly Now}
 {meta: artist Anne Murray}
 {meta: composer Johnny Nash}
+{meta: x_source classic-country}
+{meta: x_source_file icanseeclearlynowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can see [C]clearly now the [G]rain has is gone
@@ -30,3 +33,6 @@ I can see [C]all obstacles [D7]in my way
 It's gonna be a [F]bright  [C]bright sun shiny [G]day
 It's gonna be a [F]bright  [C]bright sun shiny [G]day
 {end_of_verse}
+
+
+

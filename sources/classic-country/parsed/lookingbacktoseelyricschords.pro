@@ -1,6 +1,9 @@
 {meta: title Looking Back To See}
 {meta: artist Jim Ed Brown}
 {meta: composer Jim Ed Brown and Maxine Brown}
+{meta: x_source classic-country}
+{meta: x_source_file lookingbacktoseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was looking back to see
@@ -70,3 +73,12 @@ If you were looking back to [C]see
 If I was looking back to [G]see
 If you were [A7]looking back at [D7]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+

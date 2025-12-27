@@ -1,5 +1,8 @@
 {meta: title Old Timer's Waltz}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file oldtimerswaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's Saturday night way back [G7]home
@@ -42,3 +45,8 @@ It's the [G7]Tennessee Waltz and the old heel and toe
 [C]Cotton Eyed Joe the Blue Tail Fly
 [G7]Watch how the old timers [C]dance the night by
 {end_of_verse}
+
+
+
+
+

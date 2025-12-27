@@ -1,6 +1,9 @@
 {meta: title Once Too Often}
 {meta: artist Billy Walker}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file oncetoooftenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You brushed away my caress 
@@ -43,3 +46,8 @@ You have been [D7]heartless and [G7]cruel
 [G7]You turned down this love of mine 
 Once too [C]often
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title An Old Memory’s Arms}
 {meta: artist Darrell McCall}
 {meta: composer Diane McCall}
+{meta: x_source classic-country}
+{meta: x_source_file anoldmemorysarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I loved somebody a [F]long time [C]ago
@@ -29,3 +32,6 @@ But [G7]one of these days I just [F]might up and [C]stay
 I’ve [C]just gone back into an [A#7]old memory’s [C]arms
 And if I don’t stay too long it can’t [G7]do you no [F]harm[C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Look For Me}
 {meta: artist Marty Raybon}
 {meta: composer Charles F. Goodman}
+{meta: x_source classic-country}
+{meta: x_source_file lookformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]When you [G]finally make your entrance to that [C]city
@@ -33,3 +36,7 @@ Look for [G]me for [D7]I will be there [G]too  [D7]
 {start_of_verse: Verse 4}
 Look for [G]me for [D7]I will be there [C]to[G]o 
 {end_of_verse}
+
+
+
+

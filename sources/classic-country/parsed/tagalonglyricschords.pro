@@ -1,6 +1,9 @@
 {meta: title Tag Along}
 {meta: artist Wilburn Brothers}
 {meta: composer Ross Burk and Mildred Burk}
+{meta: x_source classic-country}
+{meta: x_source_file tagalonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a little dog named Tag Along He's Santa's pride and [G7]joy
@@ -43,3 +46,8 @@ Now Rin Tin Tin and [G7]Lassie too would like to play his [C]part
 With a wiggle and a jump his tail in a knot looks like he'd break apart
 But I shook his paw that's when I saw how he [G7]won old Santa's [C]heart
 {end_of_verse}
+
+
+
+
+

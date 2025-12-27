@@ -1,6 +1,9 @@
 {meta: title The Lone Ranger}
 {meta: artist George Jones}
 {meta: composer Gerald Smith, Billy Yates, John Northrup}
+{meta: x_source classic-country}
+{meta: x_source_file thelonerangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm tired of sitting home sick of being all alone
@@ -36,3 +39,7 @@ She rode in to save the [C]day
 [D7]And all I remember were kisses sweet and tender
 And hi yo silver [G]away
 {end_of_verse}
+
+
+
+

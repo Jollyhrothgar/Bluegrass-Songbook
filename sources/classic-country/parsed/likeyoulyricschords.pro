@@ -1,6 +1,9 @@
 {meta: title Like You}
 {meta: artist Tommy Overstreet}
 {meta: composer Blake Mevis}
+{meta: x_source classic-country}
+{meta: x_source_file likeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There ain't no feeling that I have found
@@ -41,3 +44,8 @@ Baby like [C]you
 [F]No matter how [G7]hard I look [C]I can't find my [F]heart you took
 [C]Cause no one can [G7]get to me baby like [C]you
 {end_of_verse}
+
+
+
+
+

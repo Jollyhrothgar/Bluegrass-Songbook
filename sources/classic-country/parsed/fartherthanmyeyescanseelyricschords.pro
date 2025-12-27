@@ -1,6 +1,9 @@
 {meta: title Farther Than My Eyes Can See}
 {meta: artist Lefty Frizzell}
 {meta: composer Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file fartherthanmyeyescanseelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I saw you [F]standing on the [C]corner of the [G7]street
@@ -33,3 +36,7 @@ I [C]love you anyhow but can't [F]trust you now [G7]farther than my eyes can [C]
 {start_of_verse: Verse 4}
 [G7]Farther than my eyes can [C]see
 {end_of_verse}
+
+
+
+

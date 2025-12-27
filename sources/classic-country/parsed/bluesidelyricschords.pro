@@ -1,6 +1,9 @@
 {meta: title Blue Side}
 {meta: artist Crystal Gayle}
 {meta: composer David Lasley and Allee Willis}
+{meta: x_source classic-country}
+{meta: x_source_file bluesidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's the same old [Em]me in the [Am]same old [D7]clothes
@@ -41,3 +44,8 @@ With the [Am]same old [C]love
 It's the [G]same old [G7]blue side of me [C]baby
 With the [Am]same old [C]love for [G]you
 {end_of_verse}
+
+
+
+
+

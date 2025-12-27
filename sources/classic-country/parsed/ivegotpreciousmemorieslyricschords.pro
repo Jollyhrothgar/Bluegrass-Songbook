@@ -1,6 +1,9 @@
 {meta: title I've Got Precious Memories}
 {meta: artist Faron Young}
 {meta: composer Billy Deaton, Ellen Crandell, Sam Givens}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotpreciousmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was walkin' home from [C]work last night
@@ -39,3 +42,6 @@ And [C]memories of a [G]good life
 That was just before temptation 
 Told my [D7]sweet wife all she [C]know[G]s
 {end_of_verse}
+
+
+

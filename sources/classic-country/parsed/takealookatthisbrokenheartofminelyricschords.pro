@@ -1,6 +1,9 @@
 {meta: title Take A Look At This Broken Heart Of Mine}
 {meta: artist Ferlin Husky}
 {meta: composer Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file takealookatthisbrokenheartofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I didn't have to open [D7]up the [G]bottle 
@@ -33,3 +36,7 @@ Like a garden [C]choked with weeds like the flowers turned to [G]seeds
 {start_of_verse: Verse 5}
 [A7]Take a look at this [D7]broken heart of [G]mine
 {end_of_verse}
+
+
+
+

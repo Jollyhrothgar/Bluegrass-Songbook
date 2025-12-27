@@ -1,6 +1,9 @@
 {meta: title Faded Lights And Lonesome People}
 {meta: artist Billy Walker}
 {meta: composer Wynn Stewart and Wally Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file fadedlightsandlonesomepeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There’s a place I always go where every night’s the same
@@ -29,3 +32,6 @@ Their [C]love affairs have ended much too [D7]soon
 [G]Among those [D7]faded lights and [G]lonesome people
 You’ll [C]find a broken heart in every [D7]corner of the [G]room
 {end_of_verse}
+
+
+

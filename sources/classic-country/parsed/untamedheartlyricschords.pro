@@ -1,6 +1,9 @@
 {meta: title Untamed Heart}
 {meta: artist Billy Walker}
 {meta: composer Howard Hausey}
+{meta: x_source classic-country}
+{meta: x_source_file untamedheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My untamed heart [C]can’t ever be [G]free
@@ -41,3 +44,8 @@ My feet's got to follow [C]my un[D7]tamed [G]heart
 My untamed heart [C]can’t ever be [G]free
 With the gals on my [C]mind and [D7]the devil in [G]me
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Never Love Another}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file illneverloveanotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll never love another [C]now that you've gone [G]away
@@ -36,3 +39,7 @@ I'll never [C]love another now that you've proved [G]untrue
 [G]I spend my life for you dear [C]now you've left me [G]blue
 [C]I'll never love [G]another [D7]if I can't have [G]you
 {end_of_verse}
+
+
+
+

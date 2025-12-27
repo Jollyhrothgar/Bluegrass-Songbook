@@ -1,5 +1,8 @@
 {meta: title God Makes No Mistakes}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file Godmakesnomistakeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Why I've heard people say [C]why is this tree [G]bent
@@ -22,3 +25,5 @@ When they're [G]down and out and they need a hand
 And their [C]very souls at [G]stake
 If they'll [C]call on Him [G]and just believe [D7]God makes no mis[G]takes
 {end_of_verse}
+
+

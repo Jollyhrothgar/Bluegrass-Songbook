@@ -1,5 +1,8 @@
 {meta: title There Won't be Anymore}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file therewontbeanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't wait for the [F]postman 
@@ -33,3 +36,7 @@ It won't be like [G7]before
 There just won't be [C]anymore
 [G7]There just won't be [C]anymore
 {end_of_verse}
+
+
+
+

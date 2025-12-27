@@ -1,6 +1,9 @@
 {meta: title We're All In Your Corner}
 {meta: artist The Highwaymen}
 {meta: composer Bobby Gene Emmons and Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file wereallinyourcornerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a [C]young man in [G]town
@@ -52,3 +55,9 @@ We're [G]all in your [D7]corner to[G]night
 [C]Hope your eyes [Bm]open and you [Em]see the [Am]light
 We're [G]all in your [D7]corner to[G]night
 {end_of_verse}
+
+
+
+
+
+

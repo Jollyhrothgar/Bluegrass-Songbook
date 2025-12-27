@@ -1,6 +1,9 @@
 {meta: title I'll Still Love You}
 {meta: artist Ray Price}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file illstillloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Run through life's meadows the rich green fields
@@ -48,3 +51,9 @@ Go sing a song you long to sing
 [G7]When you're ready to come [F]home
 [G7]I'll still love [C]you
 {end_of_verse}
+
+
+
+
+
+

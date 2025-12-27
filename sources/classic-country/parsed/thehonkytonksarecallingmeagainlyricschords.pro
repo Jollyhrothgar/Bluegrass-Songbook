@@ -1,6 +1,9 @@
 {meta: title The Honky Tonks Are Calling Me Again}
 {meta: artist Billy Walker}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file thehonkytonksarecallingmeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Checkered table cloths homemade ashtrays and neon [C]lights
@@ -31,3 +34,6 @@
 [C]Life is just an illusion there in the [G]confusion
 [D7]And the honky tonks are calling [C]me [G]a-gain
 {end_of_verse}
+
+
+

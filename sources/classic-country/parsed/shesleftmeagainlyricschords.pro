@@ -1,5 +1,8 @@
 {meta: title She’s Left Me Again}
 {meta: artist Jimmy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file shesleftmeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’ll be no tomorrow [F]since she left me today
@@ -28,3 +31,6 @@ She took away the only love [F]for me has ever been
 I keep searchin’ for happiness it [F]seems I never win
 [G7]Lord I’m so lonesome she’s left me [C]again
 {end_of_verse}
+
+
+

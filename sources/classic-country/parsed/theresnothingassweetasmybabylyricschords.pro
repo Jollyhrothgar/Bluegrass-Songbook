@@ -1,5 +1,8 @@
 {meta: title There's Nothing As Sweet As My Baby}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file theresnothingassweetasmybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I like candy I [F]like cake I like [G7]jam but goodness [C]sake
@@ -37,3 +40,9 @@
 [C]I like candy I [F]like cake I like [G7]jam but goodness [C]sake
 [G7]There's nothing as sweet as [C]my [G7]baby
 {end_of_verse}
+
+
+
+
+
+

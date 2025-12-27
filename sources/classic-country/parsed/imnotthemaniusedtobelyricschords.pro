@@ -1,6 +1,9 @@
 {meta: title I'm Not The Man I Used To Be}
 {meta: artist Wynn Stewart}
 {meta: composer Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file imnotthemaniusedtobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I guess I’m not the [G7]man I used to [C]be
@@ -27,3 +30,7 @@ But since you came [F]along and [G7]love took over [C]me
 {start_of_verse: Verse 4}
 Oh no [F]I guess I’m not the [G7]man I used to [C]be
 {end_of_verse}
+
+
+
+

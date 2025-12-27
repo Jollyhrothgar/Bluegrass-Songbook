@@ -1,6 +1,9 @@
 {meta: title Texas Saturday Night}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file texassaturdaynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tennessee whiskey California [Dm]wine
@@ -39,3 +42,8 @@ And it's hi diddle diddle and a Texas fiddle
 [F]And we might jump over the moon
 [G7]Talk about living in a cowboy's [C]paradise
 {end_of_verse}
+
+
+
+
+

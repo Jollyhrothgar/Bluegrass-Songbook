@@ -1,5 +1,8 @@
 {meta: title A Face In The Crowd}
 {meta: artist Larry Sparks}
+{meta: x_source classic-country}
+{meta: x_source_file afaceinthecrowdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A face in the crowd on your wedding [F]day
@@ -28,3 +31,6 @@ Your [F]gown of white [C]satin my [D7]half worn out [G7]clothes
 I [C]knew your love one time but your love now he [F]holds
 I’m a face in the [C]crowd [G7]with a pale yellow [C]rose
 {end_of_verse}
+
+
+

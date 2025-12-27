@@ -1,6 +1,9 @@
 {meta: title A Baby Again}
 {meta: artist Jim Ed Brown}
 {meta: composer Billy Ed Wheeler}
+{meta: x_source classic-country}
+{meta: x_source_file ababyagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]She didn't [C]warn me the [G]way she said she would
@@ -33,3 +36,6 @@ Warm my whiskey and [D7]be a baby's [C]friend
 A baby can cry and [G]tonight when I get [C]high
 [G]I'm gonna be a [D7]baby [C]again[G]
 {end_of_verse}
+
+
+

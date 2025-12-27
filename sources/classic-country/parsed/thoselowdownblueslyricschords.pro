@@ -1,5 +1,8 @@
 {meta: title Those Low Down Blues}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file thoselowdownblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [F]woke up this morning
@@ -28,3 +31,6 @@ I[F]'ve got those low down blues
 T[F]his time it's really over 
 [G7]She[C] don't love me anymore
 {end_of_verse}
+
+
+

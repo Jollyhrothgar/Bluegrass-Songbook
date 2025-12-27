@@ -1,5 +1,8 @@
 {meta: title I've Never Had A Thing That Ain't Been Used}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file iveneverhadathingthataintbeenusedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He's been using you [C]again by the [G]way your [D7]head is [G]bowed
@@ -25,3 +28,6 @@ I've [C]never had a [D7]thing that ain't been [G]used
 {start_of_verse: Verse 4}
 I've [C]never had a [D7]thing that ain't been [C]use[G]d
 {end_of_verse}
+
+
+

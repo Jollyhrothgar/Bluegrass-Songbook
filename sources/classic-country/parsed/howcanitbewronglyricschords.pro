@@ -1,6 +1,9 @@
 {meta: title How Can It Be Wrong}
 {meta: artist Bob Wills}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file howcanitbewronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It ain't right to hold you [C]tight
@@ -43,3 +46,8 @@ You tell me all [C]along
 But [G]honey if it feels so [A7]right
 Then [D7]how can it be [G]wrong
 {end_of_verse}
+
+
+
+
+

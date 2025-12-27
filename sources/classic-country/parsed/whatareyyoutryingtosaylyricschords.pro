@@ -1,6 +1,9 @@
 {meta: title What Are You Trying To Say}
 {meta: artist Delmore Brothers}
 {meta: composer Johnny Williams, Tom T. Hall, Dixie Hall}
+{meta: x_source classic-country}
+{meta: x_source_file whatareyyoutryingtosaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You tell me you don't like my friends
@@ -64,3 +67,11 @@ You [C]know I won't be sur[G]prised
 You're talking in circles anyway
 What [D7]are you trying to [G]say
 {end_of_verse}
+
+
+
+
+
+
+
+

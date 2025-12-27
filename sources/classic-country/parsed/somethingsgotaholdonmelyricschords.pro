@@ -1,6 +1,9 @@
 {meta: title Something's Got a Hold on Me}
 {meta: artist Hank Williams Sr.}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file somethingsgotaholdonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]At first when I heard of some people who claim
@@ -57,3 +60,10 @@ But the Devil said don't you go [D7]in
 But I said [G]It won't hurt me I'll just step [C]inside
 And [G]set as far [D7]back as I [G]can
 {end_of_verse}
+
+
+
+
+
+
+

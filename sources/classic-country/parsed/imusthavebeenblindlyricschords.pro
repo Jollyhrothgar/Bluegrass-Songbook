@@ -1,6 +1,9 @@
 {meta: title I Must Have Been Blind Lyrics Chords}
 {meta: artist Slim Whitman}
 {meta: composer Jerry Crist and Claude Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file imusthavebeenblindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw you last night with a [G7]friend
@@ -36,3 +39,7 @@
 [F]You're driving me crazy by telling me maybe
 [G7]When I feel the way that I [C]do
 {end_of_verse}
+
+
+
+

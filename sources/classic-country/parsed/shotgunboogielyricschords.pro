@@ -1,6 +1,9 @@
 {meta: title Shotgun Boogie}
 {meta: artist Tennessee Ernie Ford}
 {meta: music Tennessee Ernie Ford}
+{meta: x_source classic-country}
+{meta: x_source_file shotgunboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There it stands in the corner with the barrel so straight
@@ -46,3 +49,7 @@ He [C]cocked back the hammer right on the spot
 [C]Shotgun Boogie  I wanted wedding [G]bells
 I'll be [D7]back little gal when your pappy runs out of [G]shells
 {end_of_verse}
+
+
+
+

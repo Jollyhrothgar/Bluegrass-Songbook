@@ -1,6 +1,9 @@
 {meta: title Two Red Lips And Warm Red Wine}
 {meta: artist Johnny Horton}
 {meta: composer Thomas E. Bearden}
+{meta: x_source classic-country}
+{meta: x_source_file tworedlipsandwarmredwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh the two red lips and the warm red wine
@@ -56,3 +59,12 @@ I gotta [C]roll on roll on down the [G]line
 With the [D7]two red lips and a busted heart 
 And the warm red [G]wine
 {end_of_verse}
+
+
+
+
+
+
+
+
+

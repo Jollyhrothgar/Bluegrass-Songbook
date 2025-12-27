@@ -1,6 +1,9 @@
 {meta: title My Arms Stay Open Late}
 {meta: artist Tammy Wynette}
 {meta: composer Curly Putman and Dan Lomax}
+{meta: x_source classic-country}
+{meta: x_source_file myarmsstayopenlatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The baby cries I could almost die from [G7]lonesome
@@ -39,3 +42,9 @@ And the [F]door to my heart don't close [D7]up
 My [G7]arms stay open late so you'll [C]come home
 My [G7]arms stay open late so you'll come [C]home
 {end_of_verse}
+
+
+
+
+
+

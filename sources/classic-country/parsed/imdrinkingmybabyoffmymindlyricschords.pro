@@ -1,6 +1,9 @@
 {meta: title I'm Drinking My Baby Off My Mind}
 {meta: artist Eddie Rabbitt}
 {meta: composer Eddie Rabbitt and Even Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file imdrinkingmybabyoffmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey bartender [G7]pop the top on another [C]can
@@ -37,3 +40,7 @@
 [C]Cause I'm drinking my [G7]ba-by  off my [C]mind
 [G7]Yes I'm drinking my ba-by  off my [C]mind
 {end_of_verse}
+
+
+
+

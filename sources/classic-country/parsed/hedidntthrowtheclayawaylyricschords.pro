@@ -1,5 +1,8 @@
 {meta: title He Didn't Throw The Clay Away}
 {meta: artist Gene Reasoner}
+{meta: x_source classic-country}
+{meta: x_source_file hedidntthrowtheclayawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Empty and broken I [G7]came back to [C]Him
@@ -34,3 +37,7 @@ A vessel of honor I am [C][G7]today
 [D7]All because Jesus it was all [C]because [D7]Jesus 
 Didn’t throw the clay [G]away
 {end_of_verse}
+
+
+
+

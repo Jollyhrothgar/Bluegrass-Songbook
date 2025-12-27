@@ -1,6 +1,9 @@
 {meta: title The Armour}
 {meta: artist Lifebreakthrough}
 {meta: composer Hubert Dapliyan}
+{meta: x_source classic-country}
+{meta: x_source_file thearmourlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Brace yourselves for the dark cloud is here 
@@ -45,3 +48,8 @@ Is to [G]get down on your [Em]knees
 And the [C]best way to get back on your feet 
 Is to get [D7]down on your [G]knees
 {end_of_verse}
+
+
+
+
+

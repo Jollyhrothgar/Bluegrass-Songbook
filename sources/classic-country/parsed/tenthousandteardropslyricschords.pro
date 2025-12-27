@@ -1,6 +1,9 @@
 {meta: title Ten Thousand Teardrops}
 {meta: artist Slim Whitman}
 {meta: composer Alex Zanetis}
+{meta: x_source classic-country}
+{meta: x_source_file tenthousandteardropslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ten thousand teardrops one broken [G7]heart
@@ -29,3 +32,6 @@ Walking [F]walking all in [G7]vain
 [C]This is the story s[C7]ince we've been a[F]part
 Ten thousand [C]teardrops and [G7]one broken [C]heart
 {end_of_verse}
+
+
+

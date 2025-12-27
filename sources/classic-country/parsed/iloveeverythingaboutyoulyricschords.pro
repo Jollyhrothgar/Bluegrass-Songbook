@@ -1,6 +1,9 @@
 {meta: title I Love Everything About You}
 {meta: artist George Morgan}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file iloveeverythingaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love the dimple in your dimpled cheek
@@ -38,3 +41,7 @@ Every twinkle in your eyes of [G7]blue
 I love every little word I hear you speak
 I love everything about [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Forgotten Heartaches}
 {meta: artist Ferlin Husky}
 {meta: composer Terry Preston}
+{meta: x_source classic-country}
+{meta: x_source_file forgottenheartacheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Forgotten heartaches our [F]love could never [C]be
@@ -29,3 +32,6 @@
 [F]Heartaches must be forgotten we must learn to [C]forgive
 [F]Forever in my [C]heart dear our [D7]love will [G7]always [C]live
 {end_of_verse}
+
+
+

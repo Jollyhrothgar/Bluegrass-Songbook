@@ -1,6 +1,9 @@
 {meta: title Drinking Thing}
 {meta: artist Gary Stewart}
 {meta: composer Wayne Carson}
+{meta: x_source classic-country}
+{meta: x_source_file drinkingthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everyday I tell [F]myself it's tempo[G7]rary
@@ -35,3 +38,6 @@ What you've [C]done  [C7]and it's a [F]lonely thing
 But it's the [C]only thing
 To keep a [F]foolish man in [G7]love hanging [C]on
 {end_of_verse}
+
+
+

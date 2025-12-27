@@ -1,6 +1,9 @@
 {meta: title Final Examination}
 {meta: artist Don Gibson}
 {meta: composer Red Lane and Dottie West}
+{meta: x_source classic-country}
+{meta: x_source_file finalexaminationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Here we sit with the [C]love
@@ -35,3 +38,8 @@ A final examination to test our situation
 So let's study our hearts
 [C7]We may learn we might change our [F]minds
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Somebody That's Good}
 {meta: artist Moe Bandy}
 {meta: composer Eddy Raven and Ray Baker}
+{meta: x_source classic-country}
+{meta: x_source_file somebodythatsgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]By now the [F]sun's at your [C]window
@@ -40,3 +43,8 @@ When I'm [C]trying to [G7]forget that I [C]do
 {start_of_verse: Verse 6}
 When I'm trying to [G7]forget that I [F]d-[C]o
 {end_of_verse}
+
+
+
+
+

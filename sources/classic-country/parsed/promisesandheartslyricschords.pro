@@ -1,6 +1,9 @@
 {meta: title Promises And Hearts}
 {meta: artist Stonewall Jackson}
 {meta: composer Larry Lee and Bobby Dyson}
+{meta: x_source classic-country}
+{meta: x_source_file promisesandheartslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I made myself a [F]promise I [C]knew I couldn't [F]keep
@@ -29,3 +32,5 @@ Now they know that promises and [C]hearts
 Were made to break and [G7]break and [C]break
 [F]Oh [C]promises and [G7]hearts were made to [C]break
 {end_of_verse}
+
+

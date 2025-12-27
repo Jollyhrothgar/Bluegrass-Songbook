@@ -1,6 +1,9 @@
 {meta: title Walk On Fool}
 {meta: artist Porter Wagoner}
 {meta: composer George McCormick}
+{meta: x_source classic-country}
+{meta: x_source_file walkonfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Here I am where I [D7]know I shouldn't [G]be
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 5}
 [D7]Walk on fool make the circle [G]again
 {end_of_verse}
+
+
+
+
+
+

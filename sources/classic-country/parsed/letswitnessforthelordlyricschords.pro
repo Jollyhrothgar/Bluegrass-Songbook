@@ -1,5 +1,8 @@
 {meta: title Let's Witness For The Lord}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file letswitnessforthelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So many people don't know Jesus Christ 
@@ -51,3 +54,7 @@ Still [C]living for the Lord
 Let's [G7]praise and glory for Him
 Let's witness for the [C]Lord
 {end_of_verse}
+
+
+
+

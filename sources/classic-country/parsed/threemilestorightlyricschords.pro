@@ -1,5 +1,8 @@
 {meta: title Three Miles To Right}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file threemilestorightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's [G]three miles to right and [C]four miles to [G]wrong
@@ -34,3 +37,8 @@ For my love grows just four miles down the [D7]road
 {start_of_verse: Verse 6}
 It's [G]three miles to right and [C]four miles to [G]wrong
 {end_of_verse}
+
+
+
+
+

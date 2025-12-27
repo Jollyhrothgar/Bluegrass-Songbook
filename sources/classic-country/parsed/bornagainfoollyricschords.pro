@@ -1,6 +1,9 @@
 {meta: title Born Again Fool}
 {meta: artist Patty Loveless}
 {meta: composer Roger Brown}
+{meta: x_source classic-country}
+{meta: x_source_file bornagainfoollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He sits on a [F]park bench and [C]stares into [G7]space
@@ -43,3 +46,8 @@ As the [C]whole world [F]unnoticing [G7]passes him [C]by
 Such a forgone con[F]clusion that his [C]life led him [G7]to
 Be[C]trayed and de[F]ceived he's a [G7]born gain [C]fool
 {end_of_verse}
+
+
+
+
+

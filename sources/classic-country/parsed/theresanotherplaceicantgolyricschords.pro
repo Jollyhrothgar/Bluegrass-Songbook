@@ -1,6 +1,9 @@
 {meta: title There's Another Place I Can't Go}
 {meta: artist Charlie Rich}
 {meta: composer Charles Tobias and Lee Pockriss}
+{meta: x_source classic-country}
+{meta: x_source_file theresanotherplaceicantgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Can't go down to the [C]river where we [G]meet
@@ -40,3 +43,8 @@ Yeah and [A]how your lovin' arms would open wide to me ah-ha
 [D7]There's another place that I can't [G]go
 [D7]There's another place that I can't [G]go
 {end_of_verse}
+
+
+
+
+

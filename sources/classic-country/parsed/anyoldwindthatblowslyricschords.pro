@@ -1,6 +1,9 @@
 {meta: title Any Old Wind That Blows}
 {meta: artist Johnny Cash}
 {meta: composer Dick Feller}
+{meta: x_source classic-country}
+{meta: x_source_file anyoldwindthatblowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord she's restless
@@ -53,3 +56,10 @@ Her brand new [C]wings on brand new [F]things
 And she [C]needs no rhyme or [F]reason  when she [C]goes
 Her [G7]mind is on what lies beyond that wall of Blue [F]horizon
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Cigarette and Coffee Blues}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file cigarettesandcoffeeblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess I'll take a walk tonight I know that I can't [F]sleep
@@ -28,3 +31,6 @@
 [C]I bet there's a lot of people know the misery I go [F]through
 [G7]I've got those smoking cigarettes and drinking coffee [C]blues
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If The Back Door Could Talk}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Grady Martin}
+{meta: x_source classic-country}
+{meta: x_source_file ifthebackdoorcouldtalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If the b-ack door could talk  just [F]long enough to tell [C]me
@@ -19,3 +22,4 @@ If I [F]could see inside those walls  without going [C]in
 I don't [C]care I know his name after all [F]he's not to [C]blame
 Still I [F]wonder who goes [G7]out when I come [C]in
 {end_of_verse}
+

@@ -1,6 +1,9 @@
 {meta: title Only Yesterday}
 {meta: artist Gene Watson}
 {meta: composer Bob Regan}
+{meta: x_source classic-country}
+{meta: x_source_file onlyyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Fancy [D7]meeting you here 
@@ -39,3 +42,7 @@ It is my [C]everything
 {start_of_verse: Verse 5}
 [G]But for you it's [D7]only yester[C]day[G]
 {end_of_verse}
+
+
+
+

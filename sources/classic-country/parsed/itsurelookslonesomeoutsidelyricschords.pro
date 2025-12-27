@@ -1,6 +1,9 @@
 {meta: title It Sure Looks Lonesome Outside}
 {meta: artist Slim Whitman}
 {meta: composer Gary Bruce}
+{meta: x_source classic-country}
+{meta: x_source_file itsurelookslonesomeoutsidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Well I [G]stand by my window and [D7]watch people go by
@@ -29,3 +32,6 @@ These [C]four walls are my heaven I'm a [G]king on my throne
 Just of [G]memories of the past and [D7]dreams I pushed aside
 But it [C]sure looks [D7]lonesome out[G]side
 {end_of_verse}
+
+
+

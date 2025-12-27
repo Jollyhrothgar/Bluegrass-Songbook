@@ -1,5 +1,8 @@
 {meta: title I'm On My Way Home}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file imonmywayhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My journey here gets [C]lonesome [G]sometimes
@@ -28,3 +31,6 @@
 [C]He helps me get over the danger I [G]face
 [D7]O-n my [C]w-a-y [G][D7]home
 {end_of_verse}
+
+
+

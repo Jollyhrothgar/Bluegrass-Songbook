@@ -1,6 +1,9 @@
 {meta: title A Precious Jewel}
 {meta: artist Hank Locklin}
 {meta: composer Roy Acuff}
+{meta: x_source classic-country}
+{meta: x_source_file apreciousjewellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Way back in the hills
@@ -66,3 +69,15 @@ To [D7]heaven one [G]night
 Buried deep in her grave
 Lies the [A7]girl that I [D7]love
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

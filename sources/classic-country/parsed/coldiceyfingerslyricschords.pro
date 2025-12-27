@@ -1,5 +1,8 @@
 {meta: title Cold Icey Fingers}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file coldiceyfingerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bill Johnson was a feller 
@@ -61,3 +64,9 @@ But keep them [G]cold icy [D7]fingers off of [G]me
 {start_of_verse: Verse 7}
 [C]Keep them [G]cold icy [D7]fingers off of [G]me
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title High Steel And Memories}
 {meta: artist Keith Whitley}
 {meta: composer Robb Warren and Shafer Sanger}
+{meta: x_source classic-country}
+{meta: x_source_file highsteelandmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The boss man and the boys
@@ -43,3 +46,8 @@ Watched it [C]fall 'til [D7]it was out of [G]sight[D7]   [G]
 Then your [Am]memory hit me in the chest
 And I [D7]wondered how it would feel to [G]fly
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Stand Beside Me}
 {meta: artist Jimmy Dean}
 {meta: composer Tompall Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file standbesidemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stand be[F]side me stand be[C]side me 
@@ -36,3 +39,7 @@ For if [G7]I should lose you I just couldn't [C]get anywhere
 Stand be[F]side me stand be[C]side me 
 You're [G7]the only one who ever made me [F]c-ar[C]e
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title She's Mine}
 {meta: artist Conway Twitty}
 {meta: composer Jack Nance and Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file shesminelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've got a gal who treats me right
@@ -51,3 +54,9 @@
 [D7]Yeah I love her all the time (she's [G]mine)
 [D7]Yeah she's mine all [G]mine
 {end_of_verse}
+
+
+
+
+
+

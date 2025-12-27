@@ -1,5 +1,8 @@
 {meta: title Coat Of Many Colors}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file coatofmanycolorslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Back through the years I go wondering once again
@@ -51,3 +54,9 @@ They [C]didn't under stand it and I tried to make them [G]see
 Now I know [G]we have no money but I'm as rich as I could [C]be
 In my [G]coat of many colors [D7]my momma made for [G]me
 {end_of_verse}
+
+
+
+
+
+

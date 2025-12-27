@@ -1,6 +1,9 @@
 {meta: title She's Looking Good}
 {meta: artist Carl Smith}
 {meta: composer Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file sheslookinggoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every[F]body [C]that we meet
@@ -36,3 +39,7 @@ A creature [C7]that I a[F]dore
 And I [G7]die inside each time she finds
 What she's looking [C]for
 {end_of_verse}
+
+
+
+

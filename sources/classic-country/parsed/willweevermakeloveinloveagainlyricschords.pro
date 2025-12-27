@@ -1,6 +1,9 @@
 {meta: title Will We Ever Make Love In Love Again}
 {meta: artist Barbara Mandrell}
 {meta: composer Bud Reneau and Sarah Johns}
+{meta: x_source classic-country}
+{meta: x_source_file willweevermakeloveinloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once again we loved [C]and you didn't say you [G]love me
@@ -29,3 +32,6 @@ Will the [C]broken love [Bm]between us ever [Am]mend [D7]
 Or have we [C]reached the [D7]beginning of the [C]end
 Will we [Am]ever make [D7]love [Am]ever make [D7]love in [G]love again
 {end_of_verse}
+
+
+

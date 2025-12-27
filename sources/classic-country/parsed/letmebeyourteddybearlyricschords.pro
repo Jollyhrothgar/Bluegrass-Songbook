@@ -1,6 +1,9 @@
 {meta: title Let Me Be Your Teddy Bear}
 {meta: artist Elvis Presley}
 {meta: composer Kal Mann and Bernie Lowe}
+{meta: x_source classic-country}
+{meta: x_source_file letmebeyourteddybearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby let me be your [F]loving Teddy [C]Bear
@@ -42,3 +45,9 @@ Oh let me [G7]be (oh let him be) your teddy [C]bear
 Oh let me [G7]be your (oh let him be) teddy [C]bear
 I just wanna be your teddy bear
 {end_of_verse}
+
+
+
+
+
+

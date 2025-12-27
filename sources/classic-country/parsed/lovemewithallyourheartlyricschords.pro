@@ -1,6 +1,9 @@
 {meta: title Love Me With All Your Heart}
 {meta: artist Johnny Rodriguez}
 {meta: composer Sunny Skylar, Mario Rigual, Carlos Rigual}
+{meta: x_source classic-country}
+{meta: x_source_file lovemewithallyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Cuando calienta el [Em]sol a quien la [Bm]playa
@@ -23,3 +26,5 @@ Every [Bm]winter every [C]summer every [D7]fall
 Love me [Bm]always as you [C]loved me from the [D7]start
 With every beat of your [G]hear[Em]t  [Am]   [D7]
 {end_of_verse}
+
+

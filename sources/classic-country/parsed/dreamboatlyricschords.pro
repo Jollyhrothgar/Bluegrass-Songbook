@@ -1,6 +1,9 @@
 {meta: title Dreamboat}
 {meta: artist Doyle Lawson}
 {meta: composer Eugene Wright}
+{meta: x_source classic-country}
+{meta: x_source_file dreamboatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the day has ended with its trials
@@ -62,3 +65,10 @@ Drifting to that holy city [D7]where the saints [G7]abide
 [F]When I die I'll take my [C]dreamboat
 [G7]To that peaceful [C]shore
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title How Do I Wrap My Heart For Christmas}
 {meta: artist Randy Travis}
 {meta: composer Paul Overstreet and Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file howdoiwrapmyheartforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Silver bells are ringing [F]carolers are singing
@@ -48,3 +51,9 @@ And [D7]give to one another our [G7]little gifts of love
 Pretty bows and ribbons don't [F]fit the gift I'm givin'
 [C]Your loving [G7]arms will have to [C]do
 {end_of_verse}
+
+
+
+
+
+

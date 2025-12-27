@@ -1,6 +1,9 @@
 {meta: title One More Last Chance}
 {meta: artist Tom T. Hall}
 {meta: composer Tom T. Hall Dixie Hall}
+{meta: x_source classic-country}
+{meta: x_source_file onemorelastchancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One more last chance one more slow [F]dance
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]Hey all I'm asking for is one more last [C]chance
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Wherever You Go}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file whereveryougolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bottle of scotch whiskey not very smooth
@@ -61,3 +64,11 @@ But wherever you [C]go [D7]there you [G]are
 {start_of_verse: Verse 7}
 I said wherever you [C]go [D7]there you [G]are
 {end_of_verse}
+
+
+
+
+
+
+
+

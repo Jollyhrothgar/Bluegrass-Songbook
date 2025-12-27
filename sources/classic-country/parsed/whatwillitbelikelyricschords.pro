@@ -1,5 +1,8 @@
 {meta: title What Will It Be Like}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file whatwillitbelikelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He spoke of a morning [F]and an unclouded [C]day
@@ -42,3 +45,8 @@ What [D7]will it be like to be [G7]there
 For[C]ever and ever in [F]heaven so [C]fair
 What will it be [G7]like to be [C]there
 {end_of_verse}
+
+
+
+
+

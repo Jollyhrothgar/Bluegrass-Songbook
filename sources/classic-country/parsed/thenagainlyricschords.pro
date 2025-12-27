@@ -1,6 +1,9 @@
 {meta: title Then Again}
 {meta: artist Alabama}
 {meta: composer Rick Bowles and Jeff Silbar}
+{meta: x_source classic-country}
+{meta: x_source_file thenagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We could walk away now call it [C]over and done
@@ -36,3 +39,7 @@ And [C]find the love we [D7]had back then [G]again
 And there's [C]still a chance to [D7]be all we might have [Em]been
 Let's [C]find the love we [D7]had back then [G]again 
 {end_of_verse}
+
+
+
+

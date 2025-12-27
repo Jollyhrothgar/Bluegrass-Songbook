@@ -1,6 +1,9 @@
 {meta: title Milk And Cookies}
 {meta: artist Clint Black}
 {meta: composer Clint Black, Hayden Nicholas, Shake Russell}
+{meta: x_source classic-country}
+{meta: x_source_file milkandcookieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I'm only [C]five years old [G]I've gotta do just [C]what I'm told
@@ -50,3 +53,9 @@ Get that harmonica under there and put a guitar under there
 And cowboy hat [C]    and a [G]bicycle maybe
 And don't know [C]what he's gonna do with that [G]horse
 {end_of_verse}
+
+
+
+
+
+

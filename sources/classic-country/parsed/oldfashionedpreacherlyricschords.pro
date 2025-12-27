@@ -1,6 +1,9 @@
 {meta: title Old Fashioned Preacher}
 {meta: artist Lester Flatt}
 {meta: composer Jerry Organ and Gladys Stacey}
+{meta: x_source classic-country}
+{meta: x_source_file oldfashionedpreacherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My heart is longing now for the [C]days of long [G]ago
@@ -36,3 +39,7 @@ How Jesus came down to [A7]save those who are [D7]lost
 You [G]could feel the Holy spirit and you [C]knew that God was [G]there
 When that old fashioned preacher would [D7]kneel to lead in [G]prayer
 {end_of_verse}
+
+
+
+

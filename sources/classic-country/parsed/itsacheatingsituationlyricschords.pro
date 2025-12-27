@@ -1,6 +1,9 @@
 {meta: title It's A Cheating Situation}
 {meta: artist Moe Bandy}
 {meta: composer Curly Putman and Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file itsacheatingsituationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a cheating [C][F]situation
@@ -42,3 +45,8 @@ Tag:
 It's a cheating [C][F]situation
 [D7]When there's no love at [G]home
 {end_of_verse}
+
+
+
+
+

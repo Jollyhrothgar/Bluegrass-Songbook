@@ -1,5 +1,8 @@
 {meta: title The End Of The Road}
 {meta: artist Jerry Lee Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file theendoftheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the way is dark the [F]night is long
@@ -38,3 +41,8 @@ And [G7]when you get together we're gonna shake a little more
 [C]Don't care if I [A7]never get home
 I'm [D7]waitin’  [G7]at the end of the [C]road
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Broken Heart}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file brokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The [F]pain the pain [G7]of a broken [C]heart
@@ -35,3 +38,7 @@ The price I’ll pay for loving [G7]you
 I [C]loved you from [F]the very [C]start
 But [G7]I’ll get over losing [C]you
 {end_of_verse}
+
+
+
+

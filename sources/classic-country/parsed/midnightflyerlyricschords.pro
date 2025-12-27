@@ -1,6 +1,9 @@
 {meta: title Midnight Flyer}
 {meta: artist Kenny Rogers}
 {meta: composer Paul Craft}
+{meta: x_source classic-country}
+{meta: x_source_file midnightflyerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([F]Oooh midnight [C]flyer
@@ -36,3 +39,7 @@ Maybe I'll go to [F]Santa Fe [C]maybe to San Antone
 [F]Oooh midnight [C]flyer[Am]
 I've [F]paid my dues and I [G7]feel like travelin' [C]on)
 {end_of_verse}
+
+
+
+

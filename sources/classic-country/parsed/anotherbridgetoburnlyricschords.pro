@@ -1,6 +1,9 @@
 {meta: title Another Bridge to Burn}
 {meta: artist Ray Price}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file anotherbridgetoburnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've had to burn most every bridge [C7]I've [F]crossed
@@ -29,3 +32,6 @@ I've [D7]already waited much too [G7]long
 Now [C]I'm so hurt and you're so [F][C7]unconcerned 
 And our [G7]love's just another bridge to [C]burn
 {end_of_verse}
+
+
+

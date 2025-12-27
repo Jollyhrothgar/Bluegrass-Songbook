@@ -1,6 +1,9 @@
 {meta: title Are We In Trouble Now}
 {meta: artist Randy Travis}
 {meta: composer Mark Knopfler}
+{meta: x_source classic-country}
+{meta: x_source_file areweintroublenowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Wasn't just the [C]music [F]wasn't just the [C]wine
@@ -28,3 +31,6 @@ And all these [C]feelings said we never would [F]now[Dm]
 [C]Darling [G7]are we in trouble [F]now [Dm]
 [C]Darling [G7]are we in trouble [C]now
 {end_of_verse}
+
+
+

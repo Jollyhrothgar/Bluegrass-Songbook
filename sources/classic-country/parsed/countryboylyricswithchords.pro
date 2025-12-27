@@ -1,5 +1,8 @@
 {meta: title Country Boy}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file countryboylyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Excuse me ma'am [A]I saw you [F]walkin’
@@ -77,3 +80,13 @@ Cause I'm a [C]country boy
 [F]Yeah I’m a [C]country boy [A]ah I’m just a [C]country boy
 [A]A nice little [C]country boy  
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

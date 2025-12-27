@@ -1,5 +1,8 @@
 {meta: title I've Loved You Forever It Seems}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file ivelovedyouforeveritseemslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somewhere I met you in my [G7]dreams
@@ -36,3 +39,8 @@ Your brown eyes they gleam
 [F]Where ever you go I want you to know
 [G7]I've loved you forever it [C]seems
 {end_of_verse}
+
+
+
+
+

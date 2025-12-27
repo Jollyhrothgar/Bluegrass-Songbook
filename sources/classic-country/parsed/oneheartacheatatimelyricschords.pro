@@ -1,6 +1,9 @@
 {meta: title One Heartache At A Time}
 {meta: artist Doug Stone}
 {meta: composer Gary Burr and Cynthia Weil}
+{meta: x_source classic-country}
+{meta: x_source_file oneheartacheatatimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She knows who I am she [Am]knows what I do 
@@ -40,3 +43,8 @@ But [F]she's [C]falling [Dm]out of love one [G7]heartache at a [C]time
 {start_of_verse: Verse 5}
 [Am]She's falling [F]out of love one [G7]heartache at a [C]time
 {end_of_verse}
+
+
+
+
+

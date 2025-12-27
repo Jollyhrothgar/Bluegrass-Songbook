@@ -1,6 +1,9 @@
 {meta: title Who Did You Love}
 {meta: artist Johnny Lee}
 {meta: composer Wanda Mallette, Bob Morrison, Patti Ryan}
+{meta: x_source classic-country}
+{meta: x_source_file whodidyoulovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Can you picture a place we all wind [F]up in [C]time
@@ -44,3 +47,7 @@ Who did you [F]love even [C]through all of [Dm]that
 More [C]than any[Dm]thing you [C]gained or gave [G7]up
 Who did you [C]love
 {end_of_verse}
+
+
+
+

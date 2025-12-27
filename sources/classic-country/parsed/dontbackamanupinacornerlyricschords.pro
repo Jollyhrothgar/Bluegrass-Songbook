@@ -1,6 +1,9 @@
 {meta: title Don't Back A Man Up In A Corner}
 {meta: artist Ernest Tubb}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file dontbackamanupinacornerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She never was quite satisfied with [F]me
@@ -49,3 +52,9 @@
 {start_of_verse: Verse 5}
 [G7]Don't back a man up in a [C]corner
 {end_of_verse}
+
+
+
+
+
+

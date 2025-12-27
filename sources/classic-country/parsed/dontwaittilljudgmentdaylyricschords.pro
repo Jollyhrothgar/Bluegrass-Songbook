@@ -1,5 +1,8 @@
 {meta: title Don't Wait Till Judgment Day}
 {meta: artist Wilf Carter}
+{meta: x_source classic-country}
+{meta: x_source_file dontwaittilljudgmentdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They'll be moaning they'll be groaning when the place begins to roar
@@ -42,3 +45,8 @@ Don't wait till judgment day t[F]o cast your sins away
 [C]Get on the righteous side [F]then you won't be denied
 [C]When the Lord up [G7]yonder calls your [C]name
 {end_of_verse}
+
+
+
+
+

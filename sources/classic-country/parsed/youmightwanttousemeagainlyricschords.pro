@@ -1,6 +1,9 @@
 {meta: title You Might Want To Use Me Again}
 {meta: artist Johnny Rodriguez}
 {meta: composer Bobby P. Barker and Keith Palmer}
+{meta: x_source classic-country}
+{meta: x_source_file youmightwanttousemeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your love is like the [C]seasons always [D7]changing
@@ -35,3 +38,7 @@ Cause [Am]you might want to [D7]use me [G]again
 Please don't say it's [C]over when you [B7]know it's not the [C]end
 Cause [Am]you might want to [D7]use me [G]again
 {end_of_verse}
+
+
+
+

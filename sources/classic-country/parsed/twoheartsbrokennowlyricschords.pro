@@ -1,6 +1,9 @@
 {meta: title Two Hearts Broken Now}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Herman P. Willis}
+{meta: x_source classic-country}
+{meta: x_source_file twoheartsbrokennowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I know that her heart is broken
@@ -35,3 +38,8 @@ Rashness caused me [C7]to be [F]untrue
 So now it's not just one heart that's [C]broken
 N-o-w  [G7]it's [C]two
 {end_of_verse}
+
+
+
+
+

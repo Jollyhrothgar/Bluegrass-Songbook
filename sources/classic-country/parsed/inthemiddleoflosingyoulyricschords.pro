@@ -1,6 +1,9 @@
 {meta: title In The Middle Of Losing You}
 {meta: artist Moe Bandy}
 {meta: composer Glenn Martin and Terry Henry}
+{meta: x_source classic-country}
+{meta: x_source_file inthemiddleoflosingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You no longer turn to me when [C]you need turnin' on
@@ -37,3 +40,7 @@ And I'm just one step ahead of a [C]heartache
 And I'm way behind on your [C]sweet love
 And I'm [D7]right in the middle of losing [G]you
 {end_of_verse}
+
+
+
+

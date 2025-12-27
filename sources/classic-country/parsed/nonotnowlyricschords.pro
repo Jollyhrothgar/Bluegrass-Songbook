@@ -1,5 +1,8 @@
 {meta: title No Not Now}
 {meta: artist Hank Williams Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file nonotnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Took my gal to the picture show just the other [G7]day
@@ -45,3 +48,11 @@ And [C]when I asked her to [F]let me in here's [G7]all she said to [C]me
 No not now [F](no not now) no not now (no not [C]now)
 No not [G7]now but maybe next week some [C]how
 {end_of_verse}
+
+
+
+
+
+
+
+

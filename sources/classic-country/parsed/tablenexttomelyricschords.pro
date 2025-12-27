@@ -1,6 +1,9 @@
 {meta: title Table Next To Me}
 {meta: artist Jim Ed Brown}
 {meta: composer Jim Ed Brown, Maxine Brown, Harold Jenkins}
+{meta: x_source classic-country}
+{meta: x_source_file tablenexttomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A small cafe [D7]an empty [G]room
@@ -29,3 +32,6 @@ Don't you know I [A7]know that's a [D7]good sign
 That you're [G]still in love with your [C]old used to be
 Cause you [G]took the table [D7]next to [G]me
 {end_of_verse}
+
+
+

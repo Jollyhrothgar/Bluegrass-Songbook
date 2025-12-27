@@ -1,6 +1,9 @@
 {meta: title Long Distance Memory}
 {meta: artist Ronnie Milsap}
 {meta: composer John Schweers}
+{meta: x_source classic-country}
+{meta: x_source_file longdistancememorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To her I'm just some time she spent in '[F]74
@@ -31,3 +34,6 @@ And I'm [C]not well enough to leave well enough [F]alone
 I'm just a [C]long distance memory
 She's a [G7]now and then call to San [F]Anton[C]e
 {end_of_verse}
+
+
+

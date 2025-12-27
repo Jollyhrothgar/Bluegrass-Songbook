@@ -1,5 +1,8 @@
 {meta: title The Last Look At Mother}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file thelastlookatmotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Of all the tragic scenes in life [C]there's one I can't [G]forget
@@ -35,3 +38,7 @@ Daddy please oh let me have just one more [D7]look
 Her [G]little heart was breaking through [C]tears oh how she [G]cried
 [C]For one last look at [G]mother when [D7]they closed her [G]inside
 {end_of_verse}
+
+
+
+

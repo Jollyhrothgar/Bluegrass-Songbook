@@ -1,5 +1,8 @@
 {meta: title Give My Love To Rose}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file givemylovetoroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I found him by the [D7]railroad track this [G]morning
@@ -42,3 +45,8 @@ Now [D7]don't forget to give my love to [G]Rose
 [C]Tell my boy that daddy's so proud of [G]him
 And [D7]don't forget to give my love to [G]Rose
 {end_of_verse}
+
+
+
+
+

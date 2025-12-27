@@ -1,5 +1,8 @@
 {meta: title Seven Come Eleven}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file sevencomeelevenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Seven come eleven [F]this is my lucky [C]day
@@ -31,3 +34,7 @@ Don’t [F]be an acey [C]ducey don’t [D7]keep my mind in [G7]doubt
 [C]Just put your arms around me and [F]say you’ll be my [C]spouse
 [F]Cause seven come [C]eleven and [G7]now I’ve broke the [C]house 
 {end_of_verse}
+
+
+
+

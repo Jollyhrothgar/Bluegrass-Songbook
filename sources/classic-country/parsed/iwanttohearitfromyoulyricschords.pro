@@ -1,6 +1,9 @@
 {meta: title I Want To Hear It From You}
 {meta: artist Ray Price}
 {meta: composer Fred Carter Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttohearitfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If all our love is through if you've found someone [G7]new
@@ -22,3 +25,5 @@
 [C]If all our love is through if you found someone [G7]new
 [C]I want to hear it from you
 {end_of_verse}
+
+

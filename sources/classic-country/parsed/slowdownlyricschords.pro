@@ -1,6 +1,9 @@
 {meta: title Slow Down}
 {meta: artist Lacy J. Dalton}
 {meta: composer Billy Sherrill, Mark Sherrill, Lacy J. Dalton}
+{meta: x_source classic-country}
+{meta: x_source_file slowdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Slow down we don't have to fight it
@@ -28,3 +31,6 @@
 [G7]I'll love you again
 [C]Just slow down
 {end_of_verse}
+
+
+

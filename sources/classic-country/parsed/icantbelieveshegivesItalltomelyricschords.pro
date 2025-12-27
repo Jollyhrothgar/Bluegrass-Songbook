@@ -1,5 +1,8 @@
 {meta: title I Can’t Believe She Gives It All To Me}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file icantbelieveshegivesItalltomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I pinch myself when I [F]wake up each [C]morning
@@ -21,3 +24,5 @@
 [F]Somehow she knows I need her [C]desperately
 [G7]I can't believe she gives it all to [C]me
 {end_of_verse}
+
+

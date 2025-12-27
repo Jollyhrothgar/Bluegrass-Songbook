@@ -1,6 +1,9 @@
 {meta: title The Lonesome In Me}
 {meta: artist Stonewall Jackson}
 {meta: composer Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file thelonesomeinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I go home to a [Am]home [F]where love is all [C]gone
@@ -29,3 +32,6 @@ For the [F]right was just [G7]taken from [C]me
 I [C]walk into a [Am]room [F]where my baby should [C]be
 And it [F]brings out the [G7]lonesome in [C]me
 {end_of_verse}
+
+
+

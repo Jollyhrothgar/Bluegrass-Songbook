@@ -1,6 +1,9 @@
 {meta: title I'm Feeling Sorry}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file imfeelingsorrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I told a little lie [F]baby I made you cry 
@@ -37,3 +40,6 @@ I'm feeling [G7]sorry I'm just a [C]friend
 I'm feeling [G7]sorry I'm just a [C]friend
 I'm feeling [G7]sorry that I'm just a [C]friend
 {end_of_verse}
+
+
+

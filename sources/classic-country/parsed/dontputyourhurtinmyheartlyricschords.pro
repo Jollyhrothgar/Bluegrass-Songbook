@@ -1,6 +1,9 @@
 {meta: title Don't Put Your Hurt In My Heart}
 {meta: artist Conway Twitty}
 {meta: composer Mickey Jaco}
+{meta: x_source classic-country}
+{meta: x_source_file dontputyourhurtinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't  put [F]your hurt in my [C]heart
@@ -23,3 +26,5 @@
 [C]Don't  put [F]your hurt in my [C]heart
 [F]Don't  put your hurt in my [C]heart
 {end_of_verse}
+
+

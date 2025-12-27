@@ -1,6 +1,9 @@
 {meta: title I'm Looking For Someone To Love}
 {meta: artist Buddy Holly}
 {meta: composer Charles Holley and Norman Petty}
+{meta: x_source classic-country}
+{meta: x_source_file imlookingforsomeonetolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Staying at home [C]waiting for you
@@ -41,3 +44,7 @@ Because I'm [G]looking for [C]someone to [G]love
 {start_of_verse: Verse 5}
 I'm looking for [C]someone to [G]love
 {end_of_verse}
+
+
+
+

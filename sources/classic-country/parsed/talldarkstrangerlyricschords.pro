@@ -1,5 +1,8 @@
 {meta: title Tall Dark Stranger}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file talldarkstrangerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Beware of a tall [F]dark [G][C]stranger
@@ -35,3 +38,7 @@ If he comes riding [C]into your [G]town
 A tall dark [F]stranger [C]is [G]danger
 So [C]don’t let no [D7]strangers hang [G]around
 {end_of_verse}
+
+
+
+

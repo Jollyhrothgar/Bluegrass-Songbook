@@ -1,5 +1,8 @@
 {meta: title Down East Boy}
 {meta: artist Lloyd Snow}
+{meta: x_source classic-country}
+{meta: x_source_file downeastboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the sun came up this morning it [F]found me eastward bound
@@ -39,3 +42,8 @@ A [G7]city life's no kind of life for a down east boy like [C]me
 {start_of_verse: Verse 5}
 [G7]Those city lights they shine too bright for a down east boy like [C]me
 {end_of_verse}
+
+
+
+
+

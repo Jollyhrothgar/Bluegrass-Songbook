@@ -1,6 +1,9 @@
 {meta: title Blind Boy's Dog}
 {meta: artist Hank Snow}
 {meta: composer Dave McEnery and Red River}
+{meta: x_source classic-country}
+{meta: x_source_file blindboysdoglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I gave my dog to Uncle Sam [F]in 194[D7]3
@@ -29,3 +32,6 @@ I'll [D7]be close by to keep him from all [G7]harm
 [C]No one knows how much I miss him and [F]how lonesome now am [D7]I
 [G7]Please won't you send my dog home Uncle [C]Sam
 {end_of_verse}
+
+
+

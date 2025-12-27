@@ -1,5 +1,8 @@
 {meta: title Maybe I Just Crossed Your Mind}
 {meta: artist Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file maybeijustcrossedyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday when the telephone rang 
@@ -48,3 +51,9 @@ Sometimes a new love is [F]hard to [C]find
 {start_of_verse: Verse 6}
 [F]Woman what about [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Gloryland Way}
 {meta: artist Carl Smith}
 {meta: composer J.S. Torbelt}
+{meta: x_source classic-country}
+{meta: x_source_file glorylandwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm in the way the [F]bright and shining [C]way 
@@ -43,3 +46,8 @@ I'm in the Gloryland [G7]way
 [C]Heaven is near and the [F]way goeth [C]clear 
 For I'm in the [G7]Gloryland [C]way
 {end_of_verse}
+
+
+
+
+

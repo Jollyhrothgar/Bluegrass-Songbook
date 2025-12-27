@@ -1,6 +1,9 @@
 {meta: title Why Can't He Be You}
 {meta: artist Patsy Cline}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file whycanthebeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He takes me to the places you and [Am]I used to [D7]go
@@ -31,3 +34,6 @@ And he does all the things [G7]that you would never [C]do
 He loves me too his love is [G]true
 [Am]Why can't [D7]he be [G]you
 {end_of_verse}
+
+
+

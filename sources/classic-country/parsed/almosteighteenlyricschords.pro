@@ -1,5 +1,8 @@
 {meta: title Almost Eighteen}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file almosteighteenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Almost eighteen a lot of sugar and lace
@@ -49,3 +52,10 @@ Almost eigh[G]teen
 {start_of_verse: Verse 8}
 [D7]Almost eigh[G]teen [D7]almost eigh[G]teen
 {end_of_verse}
+
+
+
+
+
+
+

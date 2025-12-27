@@ -1,6 +1,9 @@
 {meta: title If It's The Last Thing I Do}
 {meta: artist Patty Loveless}
 {meta: composer Doug Gill and Phyllis Austin}
+{meta: x_source classic-country}
+{meta: x_source_file ifitsthelastthingidolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pain falls around me like a shadow in the night[F]
@@ -35,3 +38,7 @@ I'll get over [C]you [G7] if it's the last thing I [F]do
 {start_of_verse: Verse 5}
 I'll get over [C]you [G7] if it's the last thing I [C]do
 {end_of_verse}
+
+
+
+

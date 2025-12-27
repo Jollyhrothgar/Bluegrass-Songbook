@@ -1,6 +1,9 @@
 {meta: title I Had Her Leavin' Comin'}
 {meta: artist Charley Pride}
 {meta: composer David Wayne Chamberlain and Mark Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file ihadherleavincominlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My baby's gone and it's a shame 
@@ -29,3 +32,6 @@ I had her [F]leavin' comin'  but I couldn't [G7]see
 Just how [F]much I had to [G7]lose or how [C]big a [G7]fool I'd [F]be 
 [C]I had her [F]leavin' comin' comin’ to [C]me
 {end_of_verse}
+
+
+

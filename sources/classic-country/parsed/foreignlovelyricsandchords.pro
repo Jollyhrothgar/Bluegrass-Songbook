@@ -1,6 +1,9 @@
 {meta: title Foreign Love}
 {meta: artist Webb Pierce}
 {meta: composer Lawton Williams}
+{meta: x_source classic-country}
+{meta: x_source_file foreignlovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Harbor lights [F]ahead are brightly [C]shining 
@@ -29,3 +32,6 @@ Faithfully each day that I've been [G7]gone
 But my [C]heart will never [F]be [C]contented 
 To [G7]forget a foreign love I've [C]known
 {end_of_verse}
+
+
+

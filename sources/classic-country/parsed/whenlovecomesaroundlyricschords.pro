@@ -1,5 +1,8 @@
 {meta: title When Love Comes Around}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file whenlovecomesaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love for [F]me hasn't been [C]easy
@@ -35,3 +38,7 @@ This time I'll be [C]ready [G7]when love comes [C]around[G7]
 I'll be [C]standing [F]here with [C]my heart in my [F]hand
 This time I'll be [C]ready [G7]when love comes [F]arou[C]nd
 {end_of_verse}
+
+
+
+

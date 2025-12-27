@@ -1,6 +1,9 @@
 {meta: title Your Love's Been A Long Time Coming}
 {meta: artist Elvis Presley}
 {meta: composer Rory Bourke}
+{meta: x_source classic-country}
+{meta: x_source_file yourlovesbeenalongtimecominglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The first time I saw you I knew I was
@@ -42,3 +45,8 @@ Baby your [G7]love's got a hold on [C]me
 Baby your love's [C7]sure got me [F]humming
 Baby your [G7]love's been a long time [C]coming
 {end_of_verse}
+
+
+
+
+

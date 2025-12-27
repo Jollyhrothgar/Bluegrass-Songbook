@@ -1,6 +1,9 @@
 {meta: title I'll Baby Sit With You}
 {meta: artist Ferlin Husky}
 {meta: composer Clyde Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file illbabysitwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you’ll be my baby [F]let me stay with [C]you 
@@ -36,3 +39,7 @@ I'll buy you [D7]candy and pretties [G7]too
 [F]Everything I’ll get you I'll love and [C]pet ye 
 If you'll be my baby [G7]I'll baby sit with [C]you
 {end_of_verse}
+
+
+
+

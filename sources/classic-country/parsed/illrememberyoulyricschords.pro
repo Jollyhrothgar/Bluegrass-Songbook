@@ -1,5 +1,8 @@
 {meta: title I'll Remember You}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file illrememberyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come to me sweet[G7]heart and let me [C]hold you (hold you)
@@ -28,3 +31,6 @@ No you [F]don't have to worry [C]I'll remember you
 Honey [F]how could I forget when I [C]love you
 [G7]I'll remember [C]you [F]   [C]
 {end_of_verse}
+
+
+

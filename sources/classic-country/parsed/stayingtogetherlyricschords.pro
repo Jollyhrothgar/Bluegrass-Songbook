@@ -1,6 +1,9 @@
 {meta: title Staying Together}
 {meta: artist Gene Watson}
 {meta: composer Jerry Salley and Monty Holmes}
+{meta: x_source classic-country}
+{meta: x_source_file stayingtogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We do it for the children down the hall
@@ -47,3 +50,12 @@ Tag:
 [C7]There ain’t nothing [F]sadder there ain’t nothing [C]colder
 Staying [G7]together don’t mean it ain’t [C]over
 {end_of_verse}
+
+
+
+
+
+
+
+
+

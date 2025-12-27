@@ -1,6 +1,9 @@
 {meta: title I'll Kiss The Past Goodbye}
 {meta: artist Carl Smith}
 {meta: composer Wayne Walker and Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file illkissthepastgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You told me that you loved me  [F]life was like a [C]song
@@ -36,3 +39,7 @@
 [C]So I spent all my tomorrows  [F]learning not to [C]cry
 [G7]And someday I'll kiss the past [C]goodbye
 {end_of_verse}
+
+
+
+

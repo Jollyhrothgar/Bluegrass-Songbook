@@ -1,6 +1,9 @@
 {meta: title I’m Gonna Tie One On Tonight}
 {meta: artist Wilburn Brothers}
 {meta: composer Lee Nichols}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnatieoneontonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Things down at my house just ain't going [G7]right 
@@ -37,3 +40,8 @@ But I'm gonna tie one on [C]tonight
 {start_of_verse: Verse 6}
 [G7]I'm gonna tie one on [C]tonight
 {end_of_verse}
+
+
+
+
+

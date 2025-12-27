@@ -1,6 +1,9 @@
 {meta: title Why Didn't I Hear It From You}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Shorty Long and Dick Wentzel}
+{meta: x_source classic-country}
+{meta: x_source_file whydidntihearitfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The [F]wedding was [D7]set dear I [G7]talked to your dad
@@ -29,3 +32,6 @@ You [C]had to try one last [F]affair just for [C]fun
 And [F]now all my daydreams have [A#7]turn cold and [Fm]blue
 Why [F]didn’t I [C]hear it from [F]you [C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Jesus Savior Pilot Me}
 {meta: artist Lester Flatt}
 {meta: composer Edward Hopper and John E. Gould}
+{meta: x_source classic-country}
+{meta: x_source_file Jesussaviorpilotmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jesus Savior [C]pilot [G]me
@@ -19,3 +22,4 @@ When at last I [C]near the [G]shore
 May I hear Thee [C]say to [G]me
 [C]Fear not I [G]will [D7]pilot [G]thee
 {end_of_verse}
+

@@ -1,6 +1,9 @@
 {meta: title Avery County}
 {meta: artist Charlie Moore}
 {meta: composer recorded by Charlie Moore}
+{meta: x_source classic-country}
+{meta: x_source_file averycountylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight I’m dreaming of [G7]Avery [C]County
@@ -36,3 +39,7 @@ Where the cool mountain [G7]breezes [C]blow
 O’er the [F]laurels and rhodo[C]dendrons
 And my [G7]sweet Avery County [C]Rose
 {end_of_verse}
+
+
+
+

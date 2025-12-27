@@ -1,5 +1,8 @@
 {meta: title Buenas Noches From A Lonely Room}
 {meta: artist Dwight Yoakam}
+{meta: x_source classic-country}
+{meta: x_source_file buenasnochesfromalonelyroomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Buenas Noches From A Lonely Room  
@@ -26,3 +29,6 @@ Of their sleeping [G7]shadows in the cold neon [C]light
 In the dark morning [F]silence I placed the gun to her [C]head
 Cause she wore red [G7]dresses but now she lay [C]dead
 {end_of_verse}
+
+
+

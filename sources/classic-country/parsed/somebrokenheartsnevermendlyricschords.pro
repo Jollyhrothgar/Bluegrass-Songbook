@@ -1,6 +1,9 @@
 {meta: title Some Broken Hearts Never Mend}
 {meta: artist Don Williams}
 {meta: composer Waylon Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file somebrokenheartsnevermendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Coffee black  [D7]cigarette 
@@ -29,3 +32,6 @@ I [D7]see your face
 Some tears will [C]never dry
 [D7]My love for you will never [G]die
 {end_of_verse}
+
+
+

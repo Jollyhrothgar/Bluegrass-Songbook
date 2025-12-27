@@ -1,6 +1,9 @@
 {meta: title Trouble On The Line}
 {meta: artist Ernest Tubb and Loretta Lynn}
 {meta: composer Loretta Lynn and Oliver Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file troubleonthelinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can't understand [D7]a word your [G]saying
@@ -30,3 +33,7 @@ Oh Lord I'm [G]sorry but there's [D7]trouble on the [G]line
 {start_of_verse: Verse 5}
 Repeat last verse
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Love’s Made A Fool Of You}
 {meta: artist Buddy Holly}
 {meta: composer Buddy Holly and Bob Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file lovesmadeafoolofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love can make a [C]fool of [G]you
@@ -41,3 +44,8 @@
 [G]When you're feeling sad [C]and [G]blue
 [C]You know love's made a fool of [G]you
 {end_of_verse}
+
+
+
+
+

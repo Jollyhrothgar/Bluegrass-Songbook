@@ -1,6 +1,9 @@
 {meta: title If You Need Me}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Antoine Domino}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouneedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]If you need me call my [G]name
@@ -26,3 +29,6 @@ You told me a lie
 [C]I'll come a-runnin' like a choo-choo train
 [G]I’ll always love you [D7]always feel the [G]same
 {end_of_verse}
+
+
+

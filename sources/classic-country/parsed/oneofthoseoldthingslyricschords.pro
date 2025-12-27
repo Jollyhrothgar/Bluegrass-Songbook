@@ -1,6 +1,9 @@
 {meta: title One Of Those Old Things}
 {meta: artist John Anderson}
 {meta: composer Joel Sonier and Hoy Lindsey}
+{meta: x_source classic-country}
+{meta: x_source_file oneofthoseoldthingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just callin' my folks from [F]Mississippi
@@ -40,3 +43,8 @@ But it's just [C]one of those old [G7]things we all go [C]through
 {start_of_verse: Verse 6}
 [F]It's just [C]one of those old [G7]things we all go [C]through
 {end_of_verse}
+
+
+
+
+

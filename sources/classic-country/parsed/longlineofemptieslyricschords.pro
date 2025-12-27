@@ -1,5 +1,8 @@
 {meta: title Long Line Of Empties}
 {meta: artist Darrell McCall}
+{meta: x_source classic-country}
+{meta: x_source_file longlineofemptieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bottle by bottle  I’m [G7]forgetting about [C]you
@@ -32,3 +35,7 @@ And a long line of [G]empties that I’ll [D7]leave [G]behind
 {start_of_verse: Verse 5}
 And [C]a long line of [G]empties that I’ll [D7]leave [G]behind
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Burn That Candle}
 {meta: artist Charline Arthur}
 {meta: composer Winfield Scott}
+{meta: x_source classic-country}
+{meta: x_source_file burnthatcandlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Burn that candle night and day
@@ -54,3 +57,10 @@
 {start_of_verse: Verse 5}
 [D7]Till we’re strollin' through that doorway side by [G]side
 {end_of_verse}
+
+
+
+
+
+
+

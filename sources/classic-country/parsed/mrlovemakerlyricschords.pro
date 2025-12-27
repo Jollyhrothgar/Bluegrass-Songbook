@@ -1,5 +1,8 @@
 {meta: title Mr. Lovemaker}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file mrlovemakerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mr. Lovemaker [F]don't let anyone [C]take [F]her
@@ -21,3 +24,5 @@ Mr. Lovemaker [F]don't let anyone [C]take [F]her
 Mr. Lovemaker [F]don't let anyone [C]take [F]her
 [C]Till I can [G7]make her love [C]me
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Satisfied Mind}
 {meta: artist Randy Travis}
 {meta: composer Tony Arata}
+{meta: x_source classic-country}
+{meta: x_source_file satisfiedmindlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Many more miles were behind him than he had left to go
@@ -45,3 +48,7 @@ And to [Em]lay down some[Am]day and [C]go [F]home[G7]
 Let me [Em]lay down some[Am]day and go [F]home
 With a [G7]satisfied [C]mind
 {end_of_verse}
+
+
+
+

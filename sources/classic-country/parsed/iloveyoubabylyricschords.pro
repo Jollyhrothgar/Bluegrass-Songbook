@@ -1,6 +1,9 @@
 {meta: title I Love You Baby}
 {meta: artist Johnny Horton}
 {meta: composer Donnie Bowshier}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyoubabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love you baby I [G7]don't mean maybe you drive [C]me [F]crazy
@@ -28,3 +31,6 @@
 [C]I love you baby I [G7]don't mean maybe you drive me [C]crazy
 [G7]I love you baby I don't mean maybe you drive me [C]crazy
 {end_of_verse}
+
+
+

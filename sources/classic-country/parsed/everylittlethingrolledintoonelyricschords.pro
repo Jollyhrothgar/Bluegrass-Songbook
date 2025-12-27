@@ -1,6 +1,9 @@
 {meta: title Every Little Thing Rolled Into One}
 {meta: artist George Morgan}
 {meta: composer Fred Segrest}
+{meta: x_source classic-country}
+{meta: x_source_file everylittlethingrolledintoonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know a little gal who lives [G7]down the street
@@ -50,3 +53,9 @@ Now I can see just how [G7]much I’ve missed
 [C]From my angel [F]from my [C]hon
 [F]She’s every little [C]thing rolled [G7]into [C]one
 {end_of_verse}
+
+
+
+
+
+

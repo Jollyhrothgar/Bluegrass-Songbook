@@ -1,6 +1,9 @@
 {meta: title Who's Sorry Now}
 {meta: artist Connie Francis}
 {meta: composer Ted Snyder, Bert Kalmar, Harry Ruby}
+{meta: x_source classic-country}
+{meta: x_source_file whossorrynowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who's sorry now  Who's sorry [E7]now
@@ -22,3 +25,5 @@ Right to the end  just like a [E7]friend
 [F]You had your [Fm]way   [C]now you must [A7]pay
 [D7]I'm glad that [G7]you're sorry [C]now
 {end_of_verse}
+
+

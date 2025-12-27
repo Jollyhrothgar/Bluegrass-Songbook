@@ -1,5 +1,8 @@
 {meta: title A Beautiful Home}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file abeautifulhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a beautiful home far [C]over the [G]sea
@@ -28,3 +31,6 @@ There's a beautiful [D7]home for you and for [G]me
 And it's glittering power the [C]sun out [G]shines
 And that beautiful [D7]home someday shall be [G]mine
 {end_of_verse}
+
+
+

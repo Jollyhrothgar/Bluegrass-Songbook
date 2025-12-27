@@ -1,5 +1,8 @@
 {meta: title Between Heaven and Here}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file betweenheavenandherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've got your reasons to choose not to ever believe [G7]me (believe me)
@@ -39,3 +42,8 @@ We can be stronger together or tear it a[C]part
 {start_of_verse: Verse 5}
 [G7]Maybe we'll tear down the walls between Heaven and [C]here
 {end_of_verse}
+
+
+
+
+

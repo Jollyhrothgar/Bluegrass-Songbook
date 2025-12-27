@@ -1,6 +1,9 @@
 {meta: title He Can't Fill My Shoes}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Larry Kingston and Frank Dycus}
+{meta: x_source classic-country}
+{meta: x_source_file hecantfillmyshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There they go and there goes my satis[G7]faction on his face
@@ -26,3 +29,6 @@ He's walking in my [C]tracks  [G7]but he can't fill my [C]shoes
 {start_of_verse: Verse 4}
 [F]He's walking in my [C]tracks  [G7]but he can't fill my [C]shoes
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Wanna Waltz}
 {meta: artist Wanda Jackson}
 {meta: composer Thelma Blackmon}
+{meta: x_source classic-country}
+{meta: x_source_file iwannawaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well we used to waltz that go out dancin' 
@@ -37,3 +40,6 @@ I jig on the stand while the bop keeps a goin'
 I wanna waltz but I can't waltz 
 With[G7]out you I'd be so [C]blue
 {end_of_verse}
+
+
+

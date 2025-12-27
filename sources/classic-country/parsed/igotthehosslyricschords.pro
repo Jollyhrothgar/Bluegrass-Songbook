@@ -1,6 +1,9 @@
 {meta: title I Got The Hoss}
 {meta: artist Mel Tillis}
 {meta: composer Jerry House}
+{meta: x_source classic-country}
+{meta: x_source_file igotthehosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey baby let me see your brand new saddle
@@ -68,3 +71,16 @@ By just [D7]rubbing their legs [G]around
 {start_of_verse: Verse 2}
 Let's put that pretty thing up on my horse
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

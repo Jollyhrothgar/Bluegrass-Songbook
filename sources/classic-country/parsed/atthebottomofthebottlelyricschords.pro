@@ -1,6 +1,9 @@
 {meta: title At the Bottom Of The Bottle}
 {meta: artist Porter Wagoner}
 {meta: composer Anne Young}
+{meta: x_source classic-country}
+{meta: x_source_file atthebottomofthebottlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]At the bottom of the bottle is where a man can [F]hide
@@ -29,3 +32,6 @@ On our [C]way down we may meet fond [G7]memories
 I talk [C]better from the bottom of the [F]bottle
 Come join the [C]man who she [G7]left so [C]helplessly
 {end_of_verse}
+
+
+

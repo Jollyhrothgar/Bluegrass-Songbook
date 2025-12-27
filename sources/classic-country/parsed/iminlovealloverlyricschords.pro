@@ -1,6 +1,9 @@
 {meta: title I'm In Love All Over}
 {meta: artist Reba McEntire}
 {meta: composer J.D. Martin and Don King}
+{meta: x_source classic-country}
+{meta: x_source_file iminlovealloverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm flyin' out of Tulsa tryin' to get out to the coast
@@ -54,3 +57,7 @@ I'm in [G7]love all [C]over
 Yes I'm in [G7]love all [C]over
 Yes I'm in [G7]love all [C]over
 {end_of_verse}
+
+
+
+

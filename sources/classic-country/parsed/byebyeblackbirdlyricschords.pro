@@ -1,6 +1,9 @@
 {meta: title Bye Bye Blackbird}
 {meta: artist The Everly Brothers}
 {meta: composer Ray Henderson and Mort Dixon}
+{meta: x_source classic-country}
+{meta: x_source_file byebyeblackbirdlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pack up all my [C]care and [G]woe
@@ -29,3 +32,6 @@ No one here can love and under[Am]stand [E7]me
 [D7]I'll arrive [Dm]late to[E7]night
 [Am]Blackbird [D7]bye [G]bye
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When the Neon Lights Come On}
 {meta: artist Curtis Potter}
 {meta: composer Buddy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file whentheneonlightscomeonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I barely make it through the day from the [Dm]swinging all night long
@@ -36,3 +39,7 @@ I need honky tonkin’ music to [G7]survive
 Through the bars and neon jungle I live to do my number
 When the neon lights come on I come [C]alive
 {end_of_verse}
+
+
+
+

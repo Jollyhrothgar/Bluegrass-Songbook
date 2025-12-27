@@ -1,6 +1,9 @@
 {meta: title I've Got To Stop Loving You}
 {meta: artist Patty Loveless}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file ivegottostoplovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The bright lights don't thrill me like they used to [C]do
@@ -33,3 +36,7 @@ I've got to stop [G]loving you and start [D7]living [G]again
 {start_of_verse: Verse 5}
 Oh I've [C]got to stop [G]loving you and start [D7]living [G]again
 {end_of_verse}
+
+
+
+

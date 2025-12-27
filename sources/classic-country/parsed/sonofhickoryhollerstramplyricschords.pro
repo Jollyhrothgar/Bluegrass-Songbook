@@ -1,6 +1,9 @@
 {meta: title Son Of Hickory Hollers Tramp}
 {meta: artist Kenny Rogers}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file sonofhickoryhollerstramplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The corn was dry the weeds were high [F]when Daddy took to [C]drinking          
@@ -45,3 +48,8 @@ And [G7]late at night a hand would knock
 And there [F]would stand a [C]stranger                   
 I'm the [F]son of [G7]Hickory Holler's [C]tramp    
 {end_of_verse}
+
+
+
+
+

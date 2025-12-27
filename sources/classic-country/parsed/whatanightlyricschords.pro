@@ -1,6 +1,9 @@
 {meta: title What A Night}
 {meta: artist David Houston}
 {meta: composer Norro Wilson and Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file whatanightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Walking down a rainy street
@@ -63,3 +66,13 @@ Well I never did think when I ordered that drink
 [D7]Oh what night (what a night)
 [G]Our love was everything it should be
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

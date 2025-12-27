@@ -1,6 +1,9 @@
 {meta: title Wasting My Time}
 {meta: artist Kitty Wells}
 {meta: composer Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file wastingmytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wasting my [C]time acting happy and [G]carefree
@@ -30,3 +33,7 @@ But there's one thing for [D7]certain I'll keep on loving [G]you
 Wasting my [C]time acting happy and [G]carefree
 The one hurting [D7]most that's got to be [G]me
 {end_of_verse}
+
+
+
+

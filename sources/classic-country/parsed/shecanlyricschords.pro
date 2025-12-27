@@ -1,6 +1,9 @@
 {meta: title She Can}
 {meta: artist Alabama}
 {meta: composer Steve Seskin and Austin Gardner}
+{meta: x_source classic-country}
+{meta: x_source_file shecanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She can light a fire under me
@@ -51,3 +54,9 @@ I need [Am]someone to [G7]under[F]stand  oh and only she [C]can
 [F]Yes she [C]can  [F]only she [C]can 
 [F]Yes she [C]can [F]   [C]ooh [F]yes she [C]can
 {end_of_verse}
+
+
+
+
+
+

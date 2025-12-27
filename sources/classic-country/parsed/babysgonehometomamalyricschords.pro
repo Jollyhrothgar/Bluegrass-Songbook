@@ -1,6 +1,9 @@
 {meta: title Baby's Gone Home To Mama}
 {meta: artist John Anderson}
 {meta: composer Shawn Camp and Herb McCullough}
+{meta: x_source classic-country}
+{meta: x_source_file babysgonehometomamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rains comin' down on the roof of my trailer house
@@ -44,3 +47,9 @@ With my luck I'd probably step outside and drown
 [G]Sittin' here lonesome [D7]baby's gone home to [G]mama
 [D7]Baby's long gone baby's gone home to [G]mama
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Price You Pay}
 {meta: artist Emmylou Harris}
+{meta: x_source classic-country}
+{meta: x_source_file thepriceyoupaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You make up your mind  you choose the chance you [F]take
@@ -57,3 +60,10 @@ Now you can't walk [C]away from the [G7]price you [F]pay
 Oh the [C]price you pay oh the price you [F]pay
 Now you can't [C]walk away [G7]from the [F]price you [C]pay
 {end_of_verse}
+
+
+
+
+
+
+

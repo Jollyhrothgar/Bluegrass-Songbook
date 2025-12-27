@@ -1,5 +1,8 @@
 {meta: title My Heart Or My Mind}
 {meta: artist Wilburn Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file myheartormymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My mind says forget you and find someone [G7]else
@@ -28,3 +31,6 @@ Still [F]my heart is [C]longing to be where you [G7]are
 Though [C]your kisses thrill me your heart [C7]was [F]unkind
 Oh which will I [C]follow my [G7]heart or my [C]mind
 {end_of_verse}
+
+
+

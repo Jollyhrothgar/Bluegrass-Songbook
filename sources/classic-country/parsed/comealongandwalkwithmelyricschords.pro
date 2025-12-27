@@ -1,6 +1,9 @@
 {meta: title Come Along And Walk With Me}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file comealongandwalkwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you're weary from [C]climbing [G]mountains
@@ -50,3 +53,9 @@
 [C]When we find Him He'll set us [G]free
 [D7]Oh come along and walk with [G]me
 {end_of_verse}
+
+
+
+
+
+

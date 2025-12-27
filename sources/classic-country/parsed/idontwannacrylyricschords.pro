@@ -1,6 +1,9 @@
 {meta: title I Don't Wanna Cry}
 {meta: artist Gatlin Brothers}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file idontwannacrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't wanna cry this [B7]early this [C]morning
@@ -24,3 +27,5 @@ So lay back down and [G]love me and leave the [D7]leaving for later [G]on
 So [C]lay back down and [G]love me and leave the [D7]leaving for later [C]on
 I don't wanna [G]cry
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title You Can't Judge A Book By The Cover}
 {meta: artist John Anderson}
 {meta: composer Willie Dixon}
+{meta: x_source classic-country}
+{meta: x_source_file youcantjudgeabookbythecoverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You can't judge an apple by lookin' at the tree
@@ -46,3 +49,9 @@ Oh honey [C]can't you see  how you misjudged [G]me
 I may [D7]look like a farmer but [C]I'm a lover
 And you [G]can't judge a [C]book by lookin' at the cover  no you [G]can't
 {end_of_verse}
+
+
+
+
+
+

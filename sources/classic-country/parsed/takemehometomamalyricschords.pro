@@ -1,5 +1,8 @@
 {meta: title Take Me Home To Mama}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file takemehometomamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Won't you take me home to [C]mama
@@ -32,3 +35,6 @@ I need some love inside
 All I ask is take me home to [C]mama 
 Please [D7]take me home to mama's [G]arms
 {end_of_verse}
+
+
+

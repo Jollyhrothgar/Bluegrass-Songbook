@@ -1,5 +1,8 @@
 {meta: title Simple Song Of Freedom}
 {meta: artist Bobby Darin}
+{meta: x_source classic-country}
+{meta: x_source_file simplesongoffreedomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come and sing a [G7]simple song of [C]freedom
@@ -68,3 +71,12 @@ Come and sing a [G7]simple song of [C]freedom
 [G7]I said let it fill the air tell the people [Am]everywhere
 [F]We the people [G7]here don't want a [C][F]w--ar
 {end_of_verse}
+
+
+
+
+
+
+
+
+

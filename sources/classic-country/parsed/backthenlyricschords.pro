@@ -1,6 +1,9 @@
 {meta: title Back Then}
 {meta: artist Wanda Jackson}
 {meta: composer Jerry Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file backthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've loved you for so [G7]long that it's [C]hard for me to change
@@ -29,3 +32,6 @@ Good [D7]mornin' darlin' did [G7]you sleep all [C]right
 [G7]Back [D7]then [F]my [C]day was made [A#7]with the memory [A7]of your lovin'
 And the [F]promise that you'd [G7]be lovin' me [C]tonight
 {end_of_verse}
+
+
+

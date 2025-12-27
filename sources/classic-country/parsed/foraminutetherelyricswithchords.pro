@@ -1,6 +1,9 @@
 {meta: title For A Minute There}
 {meta: artist Garth Brooks}
 {meta: composer Kent Blazy and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file foraminutetherelyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]We were walking along the ocean [F]together hand in hand
@@ -50,3 +53,9 @@ Yes [C]for a [F]minute there I [G7]began again to [Am]live[C]
 Oh what I wouldn't [F]give 
 How I'd love to [G7]live for just a minute [C]there
 {end_of_verse}
+
+
+
+
+
+

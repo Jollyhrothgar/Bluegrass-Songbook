@@ -1,6 +1,9 @@
 {meta: title The Shoe Goes On The Other Foot Tonight}
 {meta: artist Marty Robbins}
 {meta: composer Buddy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file theshoegoesontheotherfoottonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]How [C]long did you think you could go on hurting [G]me
@@ -29,3 +32,6 @@ We'll find out if two wrongs can make a [G]right
 Tonight I'll push my heartaches out of [C]sight
 Cause the [G]shoe goes on the other [D7]foot [G]tonight
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It Wouldn’t Be the Same Without You}
 {meta: artist Ray Price}
 {meta: composer Fred Rose and Jimmy Wakely}
+{meta: x_source classic-country}
+{meta: x_source_file itwouldntbethesamewithoutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could wander the [A7]by-ways that [D7]we wander too
@@ -33,3 +36,7 @@ But it [G]wouldn't be the [G7]same without [C]you
 {start_of_verse: Verse 5}
 And it [G]wouldn't be the [G7]same without [C]you
 {end_of_verse}
+
+
+
+

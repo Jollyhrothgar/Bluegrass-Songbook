@@ -1,6 +1,9 @@
 {meta: title Hold Everything Till I Get Home}
 {meta: artist Red Sovine}
 {meta: composer Red Hayes and Buddy Dee}
+{meta: x_source classic-country}
+{meta: x_source_file holdeverythingtilligethomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hold everything till I come [F]home
@@ -57,3 +60,10 @@ No [C]matter how far I [G7]roam
 [F]Hold everything till I come [C]home
 No [G7]matter how long I'm [C]gone
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Slow Moving Outlaw}
 {meta: artist Waylon Jennings}
 {meta: composer Dee Moeller}
+{meta: x_source classic-country}
+{meta: x_source_file slowmovingoutlawlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All the old [Am]stations are [C]being torn [Em]down
@@ -48,3 +51,9 @@ And it's not that I blame them for [C7]claiming her bounty
 Where has a slow moving [Dm]once quick-draw
 [G7]Outlaw got to [C]go
 {end_of_verse}
+
+
+
+
+
+

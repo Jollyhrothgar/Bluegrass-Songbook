@@ -1,6 +1,9 @@
 {meta: title Give This Message To Your Heart}
 {meta: artist The Osborne Brothers}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file givethismessagetoyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Give this message to your [C]heart
@@ -33,3 +36,7 @@ It's hard to ask you to forgive
 [C]Give me the chance that I'd give you
 [G7]Give this message to your [C][G7][F]he-a-rt
 {end_of_verse}
+
+
+
+

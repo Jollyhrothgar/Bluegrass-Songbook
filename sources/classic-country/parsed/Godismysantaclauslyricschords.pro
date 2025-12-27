@@ -1,6 +1,9 @@
 {meta: title God Is My Santa Claus}
 {meta: artist Hank Snow}
 {meta: composer W.K. Shewmake}
+{meta: x_source classic-country}
+{meta: x_source_file Godismysantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a classroom at the grade school just before the [C]holidays
@@ -29,3 +32,6 @@
 [C]Do you know His greatest gift salvation is I found
 [D7]God to be my Santa Claus each day the whole year [G]round
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Loving You Loving Me}
 {meta: artist Connie Smith}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file lovingyoulovingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm loving you babe loving [G7]me
@@ -50,3 +53,9 @@ Loving you loving [C]me
 I'm inclined just to let it [F]be
 Loving [C]you loving [G7]you loving [C]me
 {end_of_verse}
+
+
+
+
+
+

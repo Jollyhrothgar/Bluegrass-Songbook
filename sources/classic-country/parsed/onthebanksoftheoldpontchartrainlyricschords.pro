@@ -1,5 +1,8 @@
 {meta: title On The Banks Of The Old Pontchartrain}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file onthebanksoftheoldpontchartrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I traveled from [C7]Texas to [F]old [C]Louisanne
@@ -42,3 +45,8 @@ I know that she's waiting in [G7]vain
 I'm [C]hoping and [C7]praying someday [F]to [C]return
 On the [G7]banks of the old [C]Pontchartrain
 {end_of_verse}
+
+
+
+
+

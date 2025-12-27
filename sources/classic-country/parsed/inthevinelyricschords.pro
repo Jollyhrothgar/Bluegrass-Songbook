@@ -1,6 +1,9 @@
 {meta: title In The Vine}
 {meta: artist Mel Tillis}
 {meta: composer Bun Wilson and Doc Richardson}
+{meta: x_source classic-country}
+{meta: x_source_file inthevinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 In The Vine
@@ -45,3 +48,8 @@ Where no [G7]fool should dare to tread
 {start_of_verse: Verse 5}
 Yes we [C]cheated now we're [D7]tangled in the [G]vine
 {end_of_verse}
+
+
+
+
+

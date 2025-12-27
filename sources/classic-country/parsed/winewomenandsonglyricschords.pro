@@ -1,6 +1,9 @@
 {meta: title Wine Women And Song}
 {meta: artist Loretta Lynn}
 {meta: composer Betty Sue Perry}
+{meta: x_source classic-country}
+{meta: x_source_file winewomenandsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While I'm at home a working and a slaving this way
@@ -39,3 +42,8 @@ It's [D7]also good for [G7]two
 You may start to thinking and a [F]giving up
 Your [G7]wine women and [C]song
 {end_of_verse}
+
+
+
+
+

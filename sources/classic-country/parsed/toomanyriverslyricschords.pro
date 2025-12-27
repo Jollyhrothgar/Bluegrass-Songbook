@@ -1,6 +1,9 @@
 {meta: title Too Many Rivers}
 {meta: artist The Statler Brothers}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file toomanyriverslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 I [E7]wish I could come back to you [A7]love
@@ -34,3 +37,7 @@ There's [C]too many [D7]rivers to [G]cross
 There's too [E7]many long nights I've turned and [A7]tossed  
 There's [C]too many [D7]rivers to [G]cross
 {end_of_verse}
+
+
+
+

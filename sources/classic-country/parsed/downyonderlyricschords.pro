@@ -1,6 +1,9 @@
 {meta: title Down Yonder}
 {meta: artist Red Foley}
 {meta: composer Wolfe Gilbert}
+{meta: x_source classic-country}
+{meta: x_source_file downyonderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Railroad train [D7]railroad train [G7]hurry up some [C]more
@@ -42,3 +45,7 @@ Down [G7]yonder when the [C]folks get the news [C7]
 [D7]Waitin' down [G7]yonder [D7]waitin' down [G7]yonder 
 [D7]Waitin' down [G7]yonder for [C]me
 {end_of_verse}
+
+
+
+

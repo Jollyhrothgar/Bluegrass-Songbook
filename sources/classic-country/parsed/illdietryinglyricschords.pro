@@ -1,6 +1,9 @@
 {meta: title I'll Die Trying}
 {meta: artist Wynn Stewart}
 {meta: composer Dale Noe}
+{meta: x_source classic-country}
+{meta: x_source_file illdietryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The job that stands before me won't be [D7]easy
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Yes I'll [C]die tryin' cause [G]all that I [D7]live for is [G]you
 {end_of_verse}
+
+
+
+

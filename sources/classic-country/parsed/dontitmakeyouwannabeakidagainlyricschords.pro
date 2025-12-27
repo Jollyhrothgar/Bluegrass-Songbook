@@ -1,5 +1,8 @@
 {meta: title Don't It Make You Wanna Be A Kid Again}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file dontitmakeyouwannabeakidagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well don't it make you wanna be a [G7]kid again
@@ -59,3 +62,9 @@ Don't it [G7]make you wanna be a [C]kid again
 Remembering the happiness we [F]had back then
 Don't it [G7]make you wanna be a [C]kid again
 {end_of_verse}
+
+
+
+
+
+

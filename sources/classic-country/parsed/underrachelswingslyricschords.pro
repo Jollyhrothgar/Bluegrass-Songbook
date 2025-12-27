@@ -1,6 +1,9 @@
 {meta: title Under Rachel's Wings}
 {meta: artist David Allan Coe}
 {meta: composer David Allan Coe, Fred Spears, Stephen Loggans}
+{meta: x_source classic-country}
+{meta: x_source_file underrachelswingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Will [C]you hurt [D7]me more [G]than the pain of sharing [C]her
@@ -38,3 +41,7 @@ Under Rachel's [G]wings (under Rachel's [D7]wings)
 Under Rachel's [G]wings (under Rachel's [D7]wings)
 Under Rachel's [G]wings
 {end_of_verse}
+
+
+
+

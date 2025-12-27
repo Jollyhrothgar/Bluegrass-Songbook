@@ -1,6 +1,9 @@
 {meta: title Success Lyrics Chords}
 {meta: artist Loretta Lynn}
 {meta: composer Johnny Mullins}
+{meta: x_source classic-country}
+{meta: x_source_file successlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We used to go out walking hand-in-hand
@@ -33,3 +36,8 @@ It's [G7]Funny what [F]success has Done to [C]You
 It wasn't Long till all your Dreams came True
 Success [G7]Put me in [F]Second Place with [C]You 
 {end_of_verse}
+
+
+
+
+

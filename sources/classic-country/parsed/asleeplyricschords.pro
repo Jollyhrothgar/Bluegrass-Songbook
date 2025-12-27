@@ -1,6 +1,9 @@
 {meta: title Asleep}
 {meta: artist the Everly Brothers}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file asleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Asleep oh please let me fall [Gm]asleep
@@ -38,3 +41,7 @@ It's so peaceful when I [F]sleep (I watch the shadows climb the wall)
 Until morning doesn’t [C]matter (as they try to catch the light)
 [G7]Aslee[Gm]p  [F]  [C]
 {end_of_verse}
+
+
+
+

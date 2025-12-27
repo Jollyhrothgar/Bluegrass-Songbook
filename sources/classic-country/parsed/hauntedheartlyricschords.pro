@@ -1,6 +1,9 @@
 {meta: title Haunted Heart}
 {meta: artist Sammy Kershaw}
 {meta: composer Buddy Brock and Kim Williams}
+{meta: x_source classic-country}
+{meta: x_source_file hauntedheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Go down a road called yesterday 
@@ -47,3 +50,9 @@ All alone [G7]with a haunted [C]heart
 {start_of_verse: Verse 6}
 I said I'm all alone [G7]with a haunted [C]heart
 {end_of_verse}
+
+
+
+
+
+

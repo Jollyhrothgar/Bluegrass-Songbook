@@ -1,6 +1,9 @@
 {meta: title Lucky Old Colorado}
 {meta: artist Merle Haggard}
 {meta: composer Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file luckyoldcoloradolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met her [Bm]here in [Am]California
@@ -48,3 +51,9 @@ That's [D7]more than she'll ever love [G]me
 [Bm]Yeah she loves [C]you [Am]Colorado
 [D7]That's more than she'll ever love [G]me
 {end_of_verse}
+
+
+
+
+
+

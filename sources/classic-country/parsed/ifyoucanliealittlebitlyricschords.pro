@@ -1,6 +1,9 @@
 {meta: title If You Can Lie A Little Bit}
 {meta: artist Kenny Rogers}
 {meta: composer Bob Stone}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoucanliealittlebitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If you can lie a [C]little bit
@@ -63,3 +66,10 @@ It [F]comes a little [C]easier
 It [F]comes a little [C]easier 
 [G7]Than it did b[C]efore
 {end_of_verse}
+
+
+
+
+
+
+

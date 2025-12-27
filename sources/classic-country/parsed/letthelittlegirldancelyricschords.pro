@@ -1,6 +1,9 @@
 {meta: title Let The Little Girl Dance}
 {meta: artist Ernest Tubb}
 {meta: composer Carl Glover and Carl Spencer}
+{meta: x_source classic-country}
+{meta: x_source_file letthelittlegirldancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Little wallflower [C]on the shelf [G]standing by her[C]self
@@ -33,3 +36,7 @@ Little wallflower [C]on the shelf [G]standing by her[C]self
 [G]Never had the nerve to [C]take the chance [D7]so let the little girl [G]dance
 ([C]Let the little girl [G]dance)
 {end_of_verse}
+
+
+
+

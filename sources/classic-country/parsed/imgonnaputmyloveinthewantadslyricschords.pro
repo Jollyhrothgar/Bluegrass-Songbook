@@ -1,6 +1,9 @@
 {meta: title I'm Gonna Put My Love in the Want Ads}
 {meta: artist Mickey Gilley}
 {meta: composer Jay Boyett and Mickey Gilley}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnaputmyloveinthewantadslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm gonna put my love in the want ads I'm gonna find me someone [G7]new
@@ -34,3 +37,7 @@ I'm gonna put my love in the [C]want ads [G7]I'm gonna find me someone [C]new
 {start_of_verse: Verse 4}
 [F]I'm gonna put my love in the [C]want ads [G7]I'm gonna find me someone [C]new
 {end_of_verse}
+
+
+
+

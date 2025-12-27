@@ -1,6 +1,9 @@
 {meta: title In Person}
 {meta: artist George Jones}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file inpersonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You gave the heart you gave to me in [D7]person
@@ -34,3 +37,7 @@ I [D7]know I'll still be missing you in [G]person
 {start_of_verse: Verse 5}
 I [D7]know I'll still be missing you in [G]person 
 {end_of_verse}
+
+
+
+

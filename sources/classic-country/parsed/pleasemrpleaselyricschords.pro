@@ -1,6 +1,9 @@
 {meta: title Please Mr. Please (B-17)}
 {meta: artist By Olivia Newton-John}
 {meta: composer John Rostill and Bruce Welch}
+{meta: x_source classic-country}
+{meta: x_source_file pleasemrpleaselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the corner of the bar there stands a jukebox
@@ -49,3 +52,10 @@ And my friends around to help me ease the [F]pain
 Till some button-pushing cowboy plays that love [C]song
 And [F]here I am just [G7]missing you [C]again
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Nothing Can Stop My Love}
 {meta: artist Jimmy Dean}
 {meta: composer Roger Miller and George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file nothingcanstopmylovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I gotta get up I gotta get [C]goin'
@@ -37,3 +40,6 @@
 [G]Rain or shine sleetin’ or snowin’
 [D7]Nothing can stop me stop me stop my loving [G]you
 {end_of_verse}
+
+
+

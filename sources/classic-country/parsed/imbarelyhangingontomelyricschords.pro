@@ -1,6 +1,9 @@
 {meta: title I'm Barely Hanging On To Me}
 {meta: artist Johnny Paycheck}
 {meta: composer Joe Poovey}
+{meta: x_source classic-country}
+{meta: x_source_file imbarelyhangingontomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It’s just my luck that I’ll have to exist 
@@ -31,3 +34,6 @@ How [A7]did I get so distorted so [D7]young in life
 [G]The worst of you has finally got the [C]best of me
 Since I let go of [G]you I’m barely [D7]hanging on to [G]me
 {end_of_verse}
+
+
+

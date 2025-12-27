@@ -1,6 +1,9 @@
 {meta: title Prisons Aren't Only For Men}
 {meta: artist Leona Williams}
 {meta: composer Merle Haggard and Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file prisonsarentonlyformenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My momma and my [C]daddy they're [G]all that I have
@@ -48,3 +51,9 @@ Prisons aren't [Dm]only for [G]men
 {start_of_verse: Verse 5}
 Prisons aren't [Dm]only for [G]men
 {end_of_verse}
+
+
+
+
+
+

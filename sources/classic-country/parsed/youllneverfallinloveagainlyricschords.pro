@@ -1,6 +1,9 @@
 {meta: title You'll Never Fall In Love Again}
 {meta: artist Ricky Nelson}
 {meta: composer Charles Bene}
+{meta: x_source classic-country}
+{meta: x_source_file youllneverfallinloveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you walk through the [E7]rain to[A7]gether
@@ -36,3 +39,6 @@ And they [Dm]smile from the [A#7]heavens [G7]above
 You'll [C]never never no [E7]you'll [A7]never you'll never
 You'll [Dm]never [A#7]fall in [G7]love [C]again
 {end_of_verse}
+
+
+

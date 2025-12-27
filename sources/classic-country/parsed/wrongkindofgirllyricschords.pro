@@ -1,6 +1,9 @@
 {meta: title Wrong Kind Of Girl}
 {meta: artist Wanda Jackson}
 {meta: composer Bobbie Carroll}
+{meta: x_source classic-country}
+{meta: x_source_file wrongkindofgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I grew up [C]fast I’ve [G]acted too [D7]wild
@@ -26,3 +29,5 @@ He'll want the [G]right love from the [D7]wrong kind of [G]girl
 [G]Oh how I [C]pray I'll [G]soon see the [D7]day
 He'll want the [G]right love from the [D7]wrong kind of [G]girl
 {end_of_verse}
+
+

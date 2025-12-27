@@ -1,5 +1,8 @@
 {meta: title He Was There}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file hewastherelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun was creeping across the rise
@@ -55,3 +58,13 @@ As I crawled in my canvas bed  He was [C]there
 I saw a new born white face calf
 Take his first steps I had to laugh  He was [C]there
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Class Of '57}
 {meta: artist Statler Brothers}
 {meta: composer Harold and Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file classof57lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tommy's selling [Em]used cars [Am]Nancy's fixing [C]hair
@@ -45,3 +48,8 @@ But [Am]living life day to day is [D7]never like it [G7]seems
 But the [F]class of '[G7]57 had its [C]dreams [Am]
 Oh the [F]class of '[G7]57 had its [C]dreams
 {end_of_verse}
+
+
+
+
+

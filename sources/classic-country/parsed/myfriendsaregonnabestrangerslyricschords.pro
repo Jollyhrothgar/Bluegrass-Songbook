@@ -1,6 +1,9 @@
 {meta: title My Friends Are Gonna Be Strangers}
 {meta: artist Merle Haggard}
 {meta: composer Liz Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file myfriendsaregonnabestrangerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the love you promised would be mine [F]forever
@@ -29,3 +32,6 @@ I'm all [C]through ever trusting [G7]anyone
 The only [C]thing I can count on now is my [F]fingers
 I was a [C]fool believing in [G7]you and now you are [C]gone
 {end_of_verse}
+
+
+

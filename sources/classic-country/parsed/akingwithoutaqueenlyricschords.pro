@@ -1,6 +1,9 @@
 {meta: title A King Without A Queen}
 {meta: artist Merle Haggard}
 {meta: composer Bob Wills, John Wills, Martha Dean Moore}
+{meta: x_source classic-country}
+{meta: x_source_file akingwithoutaqueenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Riches do not come in silver and in [F]gold
@@ -29,3 +32,6 @@ And [G7]there's sadness in the treasures I now [C7][C]hold
 For what [F]good are treasures and a [C]kingdom
 If you're a [G7]king without a [C]queen
 {end_of_verse}
+
+
+

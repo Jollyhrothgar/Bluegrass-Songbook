@@ -1,6 +1,9 @@
 {meta: title Someday We'll Be Together}
 {meta: artist Bill Anderson}
 {meta: composer Jackey Beavers, Johnny Bristol, Harvey Fuqua}
+{meta: x_source classic-country}
+{meta: x_source_file somedaywellbetogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Someday  [D7]we'll be [C]toge[G]ther say it say it say it again
@@ -34,3 +37,7 @@ Someday  [D7]we'll be [C]toge[G]ther say it say it say it again
 Someday  [D7]we'll be [C]toge[G]ther say it say it say it again
 Someday  [D7]we'll be [C]toge[G]ther  yes we will
 {end_of_verse}
+
+
+
+

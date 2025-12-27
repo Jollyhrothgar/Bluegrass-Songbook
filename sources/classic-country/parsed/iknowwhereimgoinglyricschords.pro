@@ -1,6 +1,9 @@
 {meta: title I Know Where I'm Going}
 {meta: artist George Hamilton IV}
 {meta: composer Warren Nadel, Dick Wolf, Randy Starr}
+{meta: x_source classic-country}
+{meta: x_source_file iknowwhereimgoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know where I'm going
@@ -51,3 +54,10 @@ As [Dm]long as [G7]I may [C]live
 We will always [F]go
 [Dm]Hand in [G7]hand to[C]gether
 {end_of_verse}
+
+
+
+
+
+
+

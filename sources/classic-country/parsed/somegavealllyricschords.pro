@@ -1,6 +1,9 @@
 {meta: title Some Gave All}
 {meta: artist Billy Ray Cyrus}
 {meta: composer Billy Ray Cyrus and Cindy Cyrus}
+{meta: x_source classic-country}
+{meta: x_source_file somegavealllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I knew a man called him Sam the Cane
@@ -53,3 +56,7 @@ Now Sandy Cane is no longer here
 And [C]recall  [D7]  some gave [G]all  [C]
 [D7]Some gave [G]all  
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Big Boss Man}
 {meta: artist Charlie Rich}
 {meta: composer Al Smith and Luther Dixon}
+{meta: x_source classic-country}
+{meta: x_source_file bigbossmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Big boss man won't you hear me when I call
@@ -33,3 +36,8 @@ Well you [D7]ain't so big  [C]you're just tall that's [G]all
 I said big boss [C]man won't you hear me when I [G]call
 Well you [D7]ain't so big  [C]you're just tall that's [G]all 
 {end_of_verse}
+
+
+
+
+

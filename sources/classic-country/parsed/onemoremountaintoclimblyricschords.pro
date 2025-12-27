@@ -1,6 +1,9 @@
 {meta: title One More Mountain To Climb}
 {meta: artist Freddie Hart}
 {meta: composer Freddie Hart and David Ingles}
+{meta: x_source classic-country}
+{meta: x_source_file onemoremountaintoclimblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For every woman there is a man
@@ -68,3 +71,13 @@ No matter what your problems are
 [C]So get up get movin' get goin' everybody
 [G]There's one [D7]more mountain to [G]climb
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

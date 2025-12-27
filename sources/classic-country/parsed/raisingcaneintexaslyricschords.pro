@@ -1,6 +1,9 @@
 {meta: title Raising Cane In Texas}
 {meta: artist Gene Watson}
 {meta: composer Deion Lay and Joseph Allen}
+{meta: x_source classic-country}
+{meta: x_source_file raisingcaneintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Her plane will land in Dallas
@@ -76,3 +79,17 @@ While she's raising cane in Texas
 [F]While she's raising cane in Texas
 [G7]I'm pulling weeds in [C]Tennessee
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

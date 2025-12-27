@@ -1,5 +1,8 @@
 {meta: title I'll Never Get Over Loving You}
 {meta: artist Connie Smith}
+{meta: x_source classic-country}
+{meta: x_source_file illnevergetoverlovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'll never [D7]get over loving [G]you 
@@ -32,3 +35,7 @@ Did I ever make you cry or make you [D7]blue
 [G]But it be you found someone you think that [C]you
 Could [D7]never get over loving [G]too
 {end_of_verse}
+
+
+
+

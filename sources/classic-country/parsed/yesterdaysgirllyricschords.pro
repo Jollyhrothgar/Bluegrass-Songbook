@@ -1,5 +1,8 @@
 {meta: title Yesterday's Girl}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdaysgirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You told her lies as her starry eyes looked up in [D7]admiration 
@@ -28,3 +31,6 @@ Then you'll pause and see you caused the grief that's deep [G]within
 When you're old and love grows cold I'll bet you'd give the [C]world
 To [D7]just relive and take and give the love of a yesterday's [G]girl
 {end_of_verse}
+
+
+

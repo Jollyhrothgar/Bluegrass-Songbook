@@ -1,6 +1,9 @@
 {meta: title Just Before The Battle Mother}
 {meta: artist Marty Robbins}
 {meta: composer George F. Root}
+{meta: x_source classic-country}
+{meta: x_source_file justbeforethebattlemotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just before the battle [C]mother
@@ -43,3 +46,8 @@ Yes we'll rally round the [C]standard
 But [G]oh you'll not forget me [C]mother
 [D7]If I'm numbered with the [G]slain
 {end_of_verse}
+
+
+
+
+

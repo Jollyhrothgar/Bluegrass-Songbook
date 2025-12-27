@@ -1,6 +1,9 @@
 {meta: title Can't Get Too Much Of A Good Thing}
 {meta: artist Lee Greenwood}
 {meta: composer Dennis Morgan and J.D. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file cantgettoomuchofagoodthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mornings like [F]this were [Dm]made for [C]holding you clos[F]er [Dm]   [G7]
@@ -49,3 +52,8 @@ When the [Dm]feeling is [G7]right
 I thank you [Em]morning and [Am]night
 For the [Dm]good things you [G7]do in my [C]life
 {end_of_verse}
+
+
+
+
+

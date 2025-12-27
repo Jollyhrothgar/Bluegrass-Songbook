@@ -1,6 +1,9 @@
 {meta: title Everybody's Got A Girl But Me}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Lou Bedell and Ethel Gould}
+{meta: x_source classic-country}
+{meta: x_source_file everybodysgotagirlbutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody's got a girl but [D7]me
@@ -29,3 +32,6 @@ Everybody's got a girl but [D7]me
 I [E7]love her night and [F]day and [E7]then I'll never say
 That [A7]everybody's [D7]got a girl but [G]me
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Table In The Corner}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file tableinthecornerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a table in the corner of a [F]honky tonk in [C]town
@@ -21,3 +24,5 @@ But [F]that would mean I [C]have to forget about [G7]you
 And it's [C]no use I can't forget you so I [F]guess I'll spend my [C]time
 At [F]the table in the [C]corner [G7]with your sweet love on my [C]mind
 {end_of_verse}
+
+

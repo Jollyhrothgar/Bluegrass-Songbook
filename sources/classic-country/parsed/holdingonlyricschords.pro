@@ -1,6 +1,9 @@
 {meta: title Holding On}
 {meta: artist Connie Smith}
 {meta: composer Lee Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file holdingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Holding on [D7]barely holding on
@@ -40,3 +43,8 @@ I'm just [D7]barely barely holding [G]on
 {start_of_verse: Verse 4}
 Yeah I'm just [D7]barely barely holding [G]on
 {end_of_verse}
+
+
+
+
+

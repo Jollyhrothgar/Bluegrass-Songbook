@@ -1,5 +1,8 @@
 {meta: title She's All I Live For}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file shesalliliveforlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sh[F]e's all I [C]live for 
@@ -39,3 +42,8 @@ She's the [F]most important [G7]woman in my [C]life
 {start_of_verse: Verse 6}
 She's the [F]most important [G7]woman in my [C]life[F]  [C]
 {end_of_verse}
+
+
+
+
+

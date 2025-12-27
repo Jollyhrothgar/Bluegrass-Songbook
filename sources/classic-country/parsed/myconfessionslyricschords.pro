@@ -1,6 +1,9 @@
 {meta: title My Confessions}
 {meta: artist Ray Price}
 {meta: composer Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file myconfessionslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sweetheart I'm all alone [G7]tonight 
@@ -29,3 +32,6 @@ Makes me shed a silent [C]tear
 My heart would be so light [G7]sweetheart 
 If you would say we'll never [C]part
 {end_of_verse}
+
+
+

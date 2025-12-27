@@ -1,5 +1,8 @@
 {meta: title Jesus Remembered Me}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file jesusrememberedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was all alone and drifting on a lonely sea of sin
@@ -35,3 +38,7 @@ He said He'd remember a [A7]mortal like [D7]me
 I asked for His blessing [G]down on my knees
 And glory to God He [D7]remembered [G]me
 {end_of_verse}
+
+
+
+

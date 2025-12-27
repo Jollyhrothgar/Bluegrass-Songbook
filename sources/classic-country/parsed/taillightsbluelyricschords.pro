@@ -1,6 +1,9 @@
 {meta: title Taillights Blue}
 {meta: artist Alan Jackson}
 {meta: composer Jay Knowles and Adam Wright}
+{meta: x_source classic-country}
+{meta: x_source_file taillightsbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You got the last of [F]all [G7]your [C]stuff
@@ -49,3 +52,7 @@ They should have made [F]I [G7]can't [C]stay
 Sound like [F]I [G7]love [Am]you
 You know they should have [F]made [G7]taillights [C]blue
 {end_of_verse}
+
+
+
+

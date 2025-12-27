@@ -1,6 +1,9 @@
 {meta: title If You Want To Find Love}
 {meta: artist Kenny Rogers}
 {meta: composer Skip Ewing and Max Duane Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouwanttofindlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was sitting [F]on a bar [C]stool
@@ -47,3 +50,9 @@ If you wanna find [G7]love go looking at [C]home
 {start_of_verse: Verse 6}
 If you wanna find love love [G7]love go looking at [C]home
 {end_of_verse}
+
+
+
+
+
+

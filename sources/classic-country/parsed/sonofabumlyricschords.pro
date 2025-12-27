@@ -1,5 +1,8 @@
 {meta: title Son Of A Bum}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file sonofabumlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I was born in a [F]tumbled down [C]shack
@@ -52,3 +55,9 @@ Free as the [F]breeze and I'm easy to [C]please
 {start_of_verse: Verse 6}
 I'm a son of a [F]bum [G7]I'm just easy to [C]please
 {end_of_verse}
+
+
+
+
+
+

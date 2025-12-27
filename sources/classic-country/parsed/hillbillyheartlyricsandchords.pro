@@ -1,5 +1,8 @@
 {meta: title Hillbilly Heart}
 {meta: artist Ricky Van Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file hillbillyheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got a question [F]I'd like to [C]ask you
@@ -41,3 +44,8 @@ Would you [C]consider this [G7]hillbilly [C]heart
 {start_of_verse: Verse 5}
 [F]Would you [C]consider this hillbilly [F]heart[C]
 {end_of_verse}
+
+
+
+
+

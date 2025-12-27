@@ -1,6 +1,9 @@
 {meta: title Drive You Out Of My Mind}
 {meta: artist Loretta Lynn}
 {meta: composer Loretta Lynn and Lorene Allen}
+{meta: x_source classic-country}
+{meta: x_source_file driveyououtofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know I shouldn't bother you cause you asked me not to call
@@ -33,3 +36,7 @@ Cause this problem just can't wait
 [G]You're drivin' me out of my mind and you know this is [C]true
 [G]Well do me a little favor [D7]and drive you out of my mind [G]too
 {end_of_verse}
+
+
+
+

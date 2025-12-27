@@ -1,6 +1,9 @@
 {meta: title Married But Not To Each Other}
 {meta: artist Barbara Mandrell}
 {meta: composer Denise Ora Craig and Frances H. Miller}
+{meta: x_source classic-country}
+{meta: x_source_file marriedbutnottoeachotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know some[Em]times in your life you [F]may find it hurts to be in [G7]love
@@ -62,3 +65,11 @@ When [C]you're married but not to each [Em]other
 And when it gets right you've got to [G7]leave him
 You better leave him
 {end_of_verse}
+
+
+
+
+
+
+
+

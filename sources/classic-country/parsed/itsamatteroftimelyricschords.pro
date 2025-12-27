@@ -1,6 +1,9 @@
 {meta: title It's A Matter of Time}
 {meta: artist Elvis Presley}
 {meta: composer Clive Westlake}
+{meta: x_source classic-country}
+{meta: x_source_file itsamatteroftimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's a matter of [C]time before I go back [G]there
@@ -38,3 +41,8 @@ And the waiting round is [D7]really killing [G]me
 {start_of_verse: Verse 5}
 She'll see me I [D7]know  it's a matter of [G]time
 {end_of_verse}
+
+
+
+
+

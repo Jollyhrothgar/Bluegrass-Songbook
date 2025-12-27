@@ -1,6 +1,9 @@
 {meta: title Simply Divine}
 {meta: artist George Jones}
 {meta: composer Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file simplydivinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When your arms enfold me [G7]I thrill through and through
@@ -29,3 +32,6 @@ And [F]everyone round us [D7]say the same [G7]too
 Just [C]one kiss from your lips [C7]tells me you're [F]mine
 Oh this feeling you [C]give me [G7]is simply di[F]v-i[C]ne
 {end_of_verse}
+
+
+

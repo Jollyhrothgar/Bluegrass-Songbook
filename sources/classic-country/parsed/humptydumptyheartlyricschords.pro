@@ -1,5 +1,8 @@
 {meta: title Humpty Dumpty Heart}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file humptydumptyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Humpty Dumpty sat on the wall
@@ -42,3 +45,9 @@ Repeat chorus
 {start_of_verse: Verse 7}
 Repeat chorus
 {end_of_verse}
+
+
+
+
+
+

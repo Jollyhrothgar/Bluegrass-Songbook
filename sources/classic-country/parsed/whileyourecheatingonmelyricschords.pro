@@ -1,6 +1,9 @@
 {meta: title While You're Cheating On Me}
 {meta: artist The Louvin Brothers}
 {meta: composer Charlie and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file whileyourecheatingonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While you're cheating on [G7]me I'm praying for [C]you
@@ -22,3 +25,5 @@ For [F]I still [C]believe someday you'll be [G7]true
 You'll reap what you [C]sow I know those words are so [F]true
 For when you were [C]faithful to me [G7]I cheated on [C]you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Baby's Back Again}
 {meta: artist Connie Smith}
 {meta: composer Betty Jean Robinson}
+{meta: x_source classic-country}
+{meta: x_source_file babysbackagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A this must be my lucky day [G7]baby's back again
@@ -40,3 +43,8 @@ Said he'd never go away [C]baby's back again
 {start_of_verse: Verse 4}
 [G7]Cause baby's back [C]again 
 {end_of_verse}
+
+
+
+
+

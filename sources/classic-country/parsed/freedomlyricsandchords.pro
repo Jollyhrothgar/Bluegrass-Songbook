@@ -1,6 +1,9 @@
 {meta: title Freedom}
 {meta: artist Roger Miller}
 {meta: composer Roger Miller and Chuck Blore}
+{meta: x_source classic-country}
+{meta: x_source_file freedomlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What if someone said you [G7]couldn't say I [Dm]love you
@@ -38,3 +41,8 @@ Unless [D7]your feelings coincide with [G7]theirs[Am]   [G7]
 {start_of_verse: Verse 6}
 Freedom [F]freedom [C]free[Am]dom to [F]say [G7]what you [C]feel
 {end_of_verse}
+
+
+
+
+

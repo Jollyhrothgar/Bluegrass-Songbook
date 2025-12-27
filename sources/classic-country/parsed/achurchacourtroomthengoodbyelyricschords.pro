@@ -1,6 +1,9 @@
 {meta: title A Courtroom Then Goodbye}
 {meta: artist Patsy Cline}
 {meta: composer Eddie Miller and W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file achurchacourtroomthengoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The first scene was the church then the [D7]altar
@@ -29,3 +32,6 @@ We shook hands and once again we [G]cried
 Then it was the end of our [C]story
 A Church A [D7]Courtroom And Then [G]Goodbye
 {end_of_verse}
+
+
+

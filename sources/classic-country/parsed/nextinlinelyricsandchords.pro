@@ -1,5 +1,8 @@
 {meta: title Next In Line}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file nextinlinelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The next in line will be someone who loves you
@@ -50,3 +53,12 @@ My time is coming so I waited while you had your fun
 [F]Now I'm through a waiting way [C]behind
 [D7]It's my time cause [G7]I'm the next in [C]line
 {end_of_verse}
+
+
+
+
+
+
+
+
+

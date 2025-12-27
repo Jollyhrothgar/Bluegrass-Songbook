@@ -1,6 +1,9 @@
 {meta: title Forever Yours}
 {meta: artist Marty Robbins}
 {meta: composer Don Winters}
+{meta: x_source classic-country}
+{meta: x_source_file foreveryourslyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You are so [Em]wonderful just to [Am]be with and to [C]talk to
@@ -35,3 +38,7 @@ And [C]I thank you're [Em]wonderful
 The way you [Am]hold me when [C]you kiss me
 Makes my [F]life complete I'm [G7]forever [C]yours
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title My Heart Cracked (But It Did Not Break)}
 {meta: artist Randy Travis}
 {meta: composer Ronny Scaife, Phil Thomas, Don Singleton}
+{meta: x_source classic-country}
+{meta: x_source_file myheartcrackedbutitdidnotbreaklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You're spreadin' [C]lies all over [F]town
@@ -40,3 +43,8 @@ My heart [C]cracked [G7]but it did not [C]break
 {start_of_verse: Verse 5}
 Yeah [F]my heart [C]cracked [G7]but it did not [C]break
 {end_of_verse}
+
+
+
+
+

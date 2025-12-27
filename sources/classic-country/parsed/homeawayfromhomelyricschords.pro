@@ -1,6 +1,9 @@
 {meta: title Home Away From Home}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file homeawayfromhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It all began the [C]day my conscience [G]died
@@ -37,3 +40,7 @@ And the one time that [D7]I'm an [G]honest [C]man is
 And the one time that [D7]I'm an [G]honest [C]man is 
 [G]When I come [D7]here to [G]cheat
 {end_of_verse}
+
+
+
+

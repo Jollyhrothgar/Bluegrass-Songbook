@@ -1,6 +1,9 @@
 {meta: title If The World Don't End Tomorrow}
 {meta: artist Carl Smith}
 {meta: composer Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file iftheworlddontendtomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Since you've been gone I [D7]don't sleep no [G]more
@@ -34,3 +37,7 @@ If the [G]world don't end [C]tomorrow I'm [D7]coming after [G]you
 [G]I'll move mountain that's how [D7]I [G]feel
 I'll swim the ocean in a suit [D7]of [G]steel
 {end_of_verse}
+
+
+
+

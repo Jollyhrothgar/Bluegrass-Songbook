@@ -1,6 +1,9 @@
 {meta: title Traveling The Highway Home}
 {meta: artist Doug Martin}
 {meta: composer Walter Bailes and Frankie Bailes}
+{meta: x_source classic-country}
+{meta: x_source_file travelingthehighwayhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Traveling the highway home
@@ -55,3 +58,10 @@ I'm [G]traveling [D7]the highway [G]home
 Oh narrow's the way thank God I can [Em]say
 I'm [G]traveling [D7]the highway [G]home
 {end_of_verse}
+
+
+
+
+
+
+

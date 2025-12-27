@@ -1,6 +1,9 @@
 {meta: title Christmas Memories}
 {meta: artist Mac Wiseman}
 {meta: composer Becky Hobbs, John Greenebaum,}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasmemorieslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In my dreams I’ll go home again for [F]Christmas
@@ -36,3 +39,7 @@
 [G7]I’ll be home again for Christmas in my [C]dreams
 [F]My heart [D7]and [G7]mind are filled with Christmas [C]memories
 {end_of_verse}
+
+
+
+

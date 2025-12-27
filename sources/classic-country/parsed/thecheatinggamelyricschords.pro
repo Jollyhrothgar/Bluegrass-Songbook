@@ -1,5 +1,8 @@
 {meta: title The Cheating Game}
 {meta: artist Susan Raye}
+{meta: x_source classic-country}
+{meta: x_source_file thecheatinggamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Break a heart and laugh and walk away 
@@ -59,3 +62,13 @@ A victim of the cheating [G]game
 Love and lies go hand in hand
 Your [C]love goes free like wind blows [D7]sand
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

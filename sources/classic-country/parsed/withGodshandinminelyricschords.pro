@@ -1,6 +1,9 @@
 {meta: title With God's Hand In Mine}
 {meta: artist Slim Whitman}
 {meta: composer Fred J. Coots}
+{meta: x_source classic-country}
+{meta: x_source_file withGodshandinminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]With [C]God's hand in [A7]mine I [Dm]walk in the [G7]sunshine
@@ -34,3 +37,7 @@ The [C]road may be [A7]long but my [Dm]faith will be [G7]strong
 For the [C]glory of God is [F]mine and it's mine if I [Fm]try
 And I'll [C]try till I [Am]die with [Dm]God's hand [G7]in [C]mine[F]  [C]
 {end_of_verse}
+
+
+
+

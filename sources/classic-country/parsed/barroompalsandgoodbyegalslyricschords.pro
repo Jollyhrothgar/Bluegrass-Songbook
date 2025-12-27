@@ -1,6 +1,9 @@
 {meta: title Barroom Pals And Goodbye Gals}
 {meta: artist Jim Ed Brown}
 {meta: composer Bucky Jones and Royce Porter}
+{meta: x_source classic-country}
+{meta: x_source_file barroompalsandgoodbyegalslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Fancy lace on fancy ladies
@@ -50,3 +53,9 @@ You [G7]can't change beer to [C]wine
 I don't belong in your [G]world
 So I'm [D7]going back to [G]mine
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Valentine}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file valentinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Valentine won't you be my [F]Valentine
@@ -21,3 +24,5 @@
 [G7]Can't you see I love you [C]valentine won't you be my [F]Valentine
 [C]And won't you share your [G7]space with mine and be my [C]Valentine
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Got To Have Room To Change My Mind}
 {meta: artist Bob Luman}
 {meta: composer Steve Wariner}
+{meta: x_source classic-country}
+{meta: x_source_file gottohaveroomtochangemymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You have heard me say I've [Dm]gotta be free[F]
@@ -36,3 +39,7 @@ I've got to have [G7]room to change my [C]mind
 {start_of_verse: Verse 5}
 [F]I've got to have [G7]room to change my [C]mind
 {end_of_verse}
+
+
+
+

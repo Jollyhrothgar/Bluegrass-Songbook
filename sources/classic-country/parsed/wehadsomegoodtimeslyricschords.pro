@@ -1,6 +1,9 @@
 {meta: title We Had Some Good Times}
 {meta: artist Jean Shepard}
 {meta: composer Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file wehadsomegoodtimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess I should have woke him and [F]told him goodbye
@@ -29,3 +32,6 @@ I hope he'll [C]understand the [G7]things I have [C]done
 [F]We chased some rainbows [C]and walked down some rocky roads
 [G7]We've had some good times to [C]relive
 {end_of_verse}
+
+
+

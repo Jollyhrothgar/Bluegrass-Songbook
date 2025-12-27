@@ -1,6 +1,9 @@
 {meta: title All I Have To Offer You Is Love}
 {meta: artist Tanya Tucker}
 {meta: composer Craig Wiseman}
+{meta: x_source classic-country}
+{meta: x_source_file allihavetoofferyouislovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If all you want's a [D7]good time baby [Em]there's a party down the [C]street
@@ -33,3 +36,7 @@ All I have to [G]offer [D7]you is [Em]love
 {start_of_verse: Verse 4}
 [C]All I have to [D7]offer you is my [G]love 
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Lovesick Blues}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file lovesickblueslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I got a feelin' called the blu-ues oh Lawd
@@ -48,3 +51,10 @@ Lawd I tried and I tried to keep her satisfied
 {start_of_verse: Verse 8}
 Repeat #1,2,3
 {end_of_verse}
+
+
+
+
+
+
+

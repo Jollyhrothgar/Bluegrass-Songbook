@@ -1,6 +1,9 @@
 {meta: title I Don't Go Back Anymore}
 {meta: artist George Jones}
 {meta: composer Mike Reid and Troy Harold Seals}
+{meta: x_source classic-country}
+{meta: x_source_file idontgobackanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm over my anger but that's about all
@@ -47,3 +50,11 @@ Spoken:
 {start_of_verse: Verse 8}
 A friend of mine told me you might be down here tonight
 {end_of_verse}
+
+
+
+
+
+
+
+

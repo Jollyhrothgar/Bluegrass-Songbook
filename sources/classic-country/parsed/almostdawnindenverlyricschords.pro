@@ -1,6 +1,9 @@
 {meta: title Almost Dawn in Denver}
 {meta: artist Faron Young}
 {meta: composer Cile Davis, Billy J. Deaton, Clyde Pitts, Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file almostdawnindenverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Soon I'll watch the [G7]sun come up in [C]Denver
@@ -29,3 +32,6 @@ And [F]wondering if [C]tomorrow I'll be [G7]saying once [C]again
 I dream of getting [C7]over you is [F]right on time
 It's [G7]almost dawn in Denver and you're almost off my [C]mind
 {end_of_verse}
+
+
+

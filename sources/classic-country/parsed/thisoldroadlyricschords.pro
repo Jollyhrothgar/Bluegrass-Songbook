@@ -1,5 +1,8 @@
 {meta: title This Old Road}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file thisoldroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Look at that old photograph  [C]is it really [G]you 
@@ -42,3 +45,8 @@ Ain't you come a [C]long way [D7]down this old [G]road
 {start_of_verse: Verse 6}
 Look at that old photograph [C]is it really [G]you
 {end_of_verse}
+
+
+
+
+

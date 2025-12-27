@@ -1,6 +1,9 @@
 {meta: title Baby's Gone Blues}
 {meta: artist Reba McEntire}
 {meta: composer Mary Ann Kennedy, Pat Bunch, Pam Rose}
+{meta: x_source classic-country}
+{meta: x_source_file babysgoneblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I feel the blues coming on  cause [C]I feel you being [G]gone
@@ -35,3 +38,7 @@ Baby's gone [G]blues [F]   baby's gone [G]blues
 [F]Baby's gone [G]blues 
 [F]Baby's gone [G]blues
 {end_of_verse}
+
+
+
+

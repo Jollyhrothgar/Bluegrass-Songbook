@@ -1,6 +1,9 @@
 {meta: title Pain Of A Broken Heart}
 {meta: artist Connie Smith}
 {meta: composer Connie Smith and Marty Stuart}
+{meta: x_source classic-country}
+{meta: x_source_file painofabrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh the pain the pain of a broken heart
@@ -41,3 +44,8 @@ With the [G7]pain of a broken [C]heart
 Your tears will fall right from the start
 With the [G7]pain of a broken [C]heart
 {end_of_verse}
+
+
+
+
+

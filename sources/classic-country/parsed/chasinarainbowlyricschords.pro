@@ -1,6 +1,9 @@
 {meta: title Chasin' A Rainbow}
 {meta: artist Hank Snow}
 {meta: composer Ted Harris}
+{meta: x_source classic-country}
+{meta: x_source_file chasinarainbowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Chasin' a [G]Rainbow till the [D7]day that I [G]d-[C]i-[G]e)[D7]   [G]
@@ -71,3 +74,13 @@ Then [C]back through the southlands to [G]old Tennessee
 But I [C]gotta [D7]keep movin' I [C]know how you tried
 Chasin' a [G]Rainbow 'till the [D7]day that I [G]die [C]  [G]  [D7]   [G]
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

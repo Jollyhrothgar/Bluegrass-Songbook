@@ -1,5 +1,8 @@
 {meta: title Would These Arms Get In Your Way}
 {meta: artist Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file wouldthesearmsgetinyourwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Would you like to hear I love you all the time 
@@ -25,3 +28,6 @@ Now [C]tell me would these [G7]arms be in your [C]way
 {start_of_verse: Verse 4}
 Now tell me would these [G7]arms be in your [C]way 
 {end_of_verse}
+
+
+

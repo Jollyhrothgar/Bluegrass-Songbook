@@ -1,6 +1,9 @@
 {meta: title Is It True Or False}
 {meta: artist Billy Crash Craddock}
 {meta: composer Henry Morgan, Alan Grey, Ginger Grey}
+{meta: x_source classic-country}
+{meta: x_source_file isittrueorfalselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]Is it [G]true or false I’m in [Bm]love with you
@@ -21,3 +24,5 @@ The [F#m]answer [Am]darling [D7]depends on [G]you
 Is it [G]true or false we’ll share a [Am]dream for two
 The [F#m]answer [Am]darling [D7]depends on [G]you
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title That's Why I Love You So Much}
 {meta: artist Ferlin Husky}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhyiloveyousomuchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You stood by [C]me whenever [D7]times were [G]bad 
@@ -29,3 +32,6 @@ You are the [C]reason that I [D7]live
 I [G]know I've got a [C]woman no [D7]other man can [G]touch
 Who [C]gives me all the [D7]love she has to [G]give
 {end_of_verse}
+
+
+

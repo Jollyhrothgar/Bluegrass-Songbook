@@ -1,5 +1,8 @@
 {meta: title Condemned Without Trial}
 {meta: artist Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file condemnedwithouttriallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C][G7]Condemned without trial no [F]chance to [C]explain
@@ -21,3 +24,5 @@
 [C][G7]Condemned without trial someday [F]you may [C]be
 [G7]Then you'll think of me and [C]understand
 {end_of_verse}
+
+

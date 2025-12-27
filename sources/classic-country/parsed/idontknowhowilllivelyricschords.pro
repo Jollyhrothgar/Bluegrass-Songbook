@@ -1,6 +1,9 @@
 {meta: title I Don't Know How I'll Live}
 {meta: artist Carl Belew}
 {meta: composer Vic McAlpin and Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file idontknowhowilllivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday our love was young and [F]gay
@@ -39,3 +42,7 @@ Oh I [G7]don't know how I'll live and feel this [C]way
 {start_of_verse: Verse 4}
 Oh I [G7]don't know how I'll live and feel this [C]way
 {end_of_verse}
+
+
+
+

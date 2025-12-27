@@ -1,5 +1,8 @@
 {meta: title Guess Away The Blues}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file guessawaytheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You may think you've got a perfect reason
@@ -46,3 +49,9 @@ You're sayin' all the time you love me [A7]true
 {start_of_verse: Verse 5}
 Then [A7]leavin' me to [D7]guess away the [G]blues
 {end_of_verse}
+
+
+
+
+
+

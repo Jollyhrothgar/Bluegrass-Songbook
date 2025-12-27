@@ -1,6 +1,9 @@
 {meta: title My Main Trial Is Yet To Come}
 {meta: artist Hank Williams}
 {meta: composer Pee Wee King and J.L. Franks}
+{meta: x_source classic-country}
+{meta: x_source_file mymaintrialisyettocomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sitting alone [F]in my prison [C]cell
@@ -36,3 +39,7 @@ I'm [F]sentenced to [C]die at [G7]dawn
 But [C]after I die in [F]the electric [C]chair
 My main trial is yet [G7]to [C]come
 {end_of_verse}
+
+
+
+

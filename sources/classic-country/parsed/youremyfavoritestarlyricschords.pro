@@ -1,6 +1,9 @@
 {meta: title You're My Favorite Star}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file youremyfavoritestarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I go to the movies I [D7]watch TV and I [C]listen to the rad[G]io
@@ -39,3 +42,8 @@ Tu vas a [C]briar  como [D7]un estrella en el cielo
 You're my favorite [C]star
 And the [D7]way we're making sweet love tonight it's [C]gonna [D7]take us [G]far
 {end_of_verse}
+
+
+
+
+

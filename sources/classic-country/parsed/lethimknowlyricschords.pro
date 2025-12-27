@@ -1,5 +1,8 @@
 {meta: title Let Him Know}
 {meta: artist George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file lethimknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lost his love and started drinkin'
@@ -36,3 +39,6 @@ If you think he's gone forever
 [F]It won't stop your heart from [C]throbbin'
 [G7]Let him know then he will be right there [C]tonight
 {end_of_verse}
+
+
+

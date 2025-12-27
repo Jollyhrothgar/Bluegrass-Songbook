@@ -1,5 +1,8 @@
 {meta: title Last Night I Dreamed}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file lastnightidreamedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I had a dream last night 
@@ -42,3 +45,8 @@ Although you were [D7]wrong
 I just can't go on 
 Last night I [G]dreamed
 {end_of_verse}
+
+
+
+
+

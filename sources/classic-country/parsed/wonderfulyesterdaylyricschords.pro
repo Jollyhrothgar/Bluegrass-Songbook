@@ -1,5 +1,8 @@
 {meta: title Wonderful Yesterday}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file wonderfulyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today's gonna [Dm]make a [G]wonderful yester[C]day
@@ -14,3 +17,4 @@ To[D7]day we have made a [G]thousand and one memo[C]ries
 [G]And with you in my [Dm]arms the [G]future seems so far [C]away
 [D7]And today's gonna make a wonderful yester[G]day
 {end_of_verse}
+

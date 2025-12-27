@@ -1,6 +1,9 @@
 {meta: title Put Me In Your Pocket}
 {meta: artist Wilburn Brothers}
 {meta: composer Waldo LaFayette O'Neal}
+{meta: x_source classic-country}
+{meta: x_source_file putmeinyourpocketlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A lover [G7]sat one [C]evening [F]in the pale moon[C]light
@@ -29,3 +32,6 @@ Put me [G7]in your [C]pocket so [F]I'll be close to [C]you
 [C]And when we [G7]have to [C]part dear [F]there'll be no sad [C]adieu's
 [F]For I'll be in your [C]pocket and [G7]I'll go along with [C]you
 {end_of_verse}
+
+
+

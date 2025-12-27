@@ -1,6 +1,9 @@
 {meta: title Don't Tell Him That I'm Still Crying}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file donttellhimthatimstillcryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't tell him that I'm still cry[C]in'
@@ -24,3 +27,5 @@ Don't [D7]let him know that there's no way my broken heart can [G]mend
 Don't tell him that I'm still cry[C]in'
 Don't [D7]let him know that losin' him was more than I could [G]stand
 {end_of_verse}
+
+

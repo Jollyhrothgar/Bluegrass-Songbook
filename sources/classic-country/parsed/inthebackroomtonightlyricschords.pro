@@ -1,6 +1,9 @@
 {meta: title In The Back Room Tonight}
 {meta: artist Carl Smith}
 {meta: composer Ray Bodkin}
+{meta: x_source classic-country}
+{meta: x_source_file inthebackroomtonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Light the [G7]candle pour the wine start the [C]music
@@ -29,3 +32,6 @@ I [F]won't be there when they start throwing [C]rice
 I had [F]rather go on with all my [C]memories
 Like I've [G7]had in this old back room [C]tonight
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title This World Holds Nothing Since You're Gone}
 {meta: artist Vernon Oxford}
 {meta: composer Jack Schneider and Claude Southall}
+{meta: x_source classic-country}
+{meta: x_source_file thisworldholdsnothingsinceyouregonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't like the sunshine [Am]I don't see the stars
@@ -33,3 +36,7 @@ This [F]world holds [G7]nothing since you're [C]gone
 {start_of_verse: Verse 4}
 This [F]world holds [G7]nothing since you're [C]gone
 {end_of_verse}
+
+
+
+

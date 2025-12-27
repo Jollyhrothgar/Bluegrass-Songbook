@@ -1,6 +1,9 @@
 {meta: title I May Be Used (But Baby I Ain't Used Up)}
 {meta: artist Waylon Jennings}
 {meta: composer Bob McDill}
+{meta: x_source classic-country}
+{meta: x_source_file imaybeusedbutbabyiaintuseduplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well now baby you're a looker and I know what you're looking [C]for
@@ -36,3 +39,7 @@ Let me take you for a ride and I'll show you what I'm talking [D7]about
 I [C]guarantee there's a lot of me left to [G]love
 Well I may be used but [D7]baby I ain't used [G]up
 {end_of_verse}
+
+
+
+

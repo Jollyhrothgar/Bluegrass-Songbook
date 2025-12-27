@@ -1,6 +1,9 @@
 {meta: title We Always Agree On Love}
 {meta: artist Doug Stone}
 {meta: composer Doug Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file wealwaysagreeonlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now I like my music country 
@@ -64,3 +67,9 @@ Cause baby [G]we always [D7]agree on [G]love
 {start_of_verse: Verse 5}
 We always [D7]agree on [G]love
 {end_of_verse}
+
+
+
+
+
+

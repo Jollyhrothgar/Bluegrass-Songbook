@@ -1,6 +1,9 @@
 {meta: title Speak To Me Pretty}
 {meta: artist Brenda Lee}
 {meta: composer B. Dunham and H. Vars}
+{meta: x_source classic-country}
+{meta: x_source_file speaktomeprettylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Speak to me pretty ah [C]speak to me nice
@@ -35,3 +38,7 @@ Speak to me softly [C]as you do
 [A7]Speak to me (speak to me) speak to [C]me (speak to me) 
 [G]Speak [C]to [G]me 
 {end_of_verse}
+
+
+
+

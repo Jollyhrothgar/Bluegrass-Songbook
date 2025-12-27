@@ -1,5 +1,8 @@
 {meta: title Don't This Road Look Rough And Rocky}
 {meta: artist Earl Scruggs and Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file dontthisroadlookroughandrockylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling I have [C]come to tell [G]you
@@ -42,3 +45,8 @@ Don't that sea look wide and [D7]deep
 [G]Don't my baby [C]look the [G]sweetest
 [D7]When she's in my arms [G]asleep
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Leaning On The Everlasting Arm}
 {meta: artist George Jones}
 {meta: composer Elisha A. Hoffman, Anthony J. Showalter, Wilbur Jones}
+{meta: x_source classic-country}
+{meta: x_source_file leaningontheeverlastingarmlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What a fellowship what a joy [C]divine
@@ -37,3 +40,8 @@
 [C]Leaning [G]leaning safe and secure from all [D7]alarms
 [G]Leaning [C]lean-ing  [G]leaning on the everlasting [G][D7]arms
 {end_of_verse}
+
+
+
+
+

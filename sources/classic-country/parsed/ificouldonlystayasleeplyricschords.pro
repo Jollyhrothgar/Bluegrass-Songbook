@@ -1,6 +1,9 @@
 {meta: title If I Could Only Stay Asleep}
 {meta: artist Patsy Cline}
 {meta: composer Ethel Bassey and Wayland Chandler}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldonlystayasleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I [D7]dreamed  of you [G]sweetheart
@@ -22,3 +25,5 @@
 For once I [C]know  [D7]your promise you would [G]keep
 If I could [C]only  [D7]only stay [G]asleep
 {end_of_verse}
+
+

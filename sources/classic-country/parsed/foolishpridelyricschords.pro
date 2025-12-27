@@ -1,6 +1,9 @@
 {meta: title Foolish Pride}
 {meta: artist Ricky Van Shelton}
 {meta: composer Ernie Rowell and Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file foolishpridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You always try to stop me from telling her I'm [F]sorry
@@ -33,3 +36,7 @@ So don't stop me [C]now  [G7]foolish [C]pride
 {start_of_verse: Verse 4}
 [F]So don't stop me [C]now  [G7]foolish [C]pride
 {end_of_verse}
+
+
+
+

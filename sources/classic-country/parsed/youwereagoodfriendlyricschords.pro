@@ -1,6 +1,9 @@
 {meta: title You Were A Good Friend}
 {meta: artist Kenny Rogers}
 {meta: composer Dave Ellingson and Kim Carnes}
+{meta: x_source classic-country}
+{meta: x_source_file youwereagoodfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I closed my eyes [D7]it doesn’t hurt quite so [G]bad [D7]
@@ -39,3 +42,8 @@ And in my [C]memory you’ll always be a [D7]good good friend to [G]me
 {start_of_verse: Verse 4}
 And in my [C]memory you’ll always be a [D7]good good friend to [G]me
 {end_of_verse}
+
+
+
+
+

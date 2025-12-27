@@ -1,6 +1,9 @@
 {meta: title Borrowed Wings}
 {meta: artist Tanya Tucker}
 {meta: composer Pat Terry and Roger Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file borrowedwingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The saddest song I've ever [F]heard
@@ -48,3 +51,9 @@
 [Em]Guess a [F]fool can [C]fall [E7]for [Am]anything
 [F]We've flown [C]too high [G7]on borrowed [C]wings
 {end_of_verse}
+
+
+
+
+
+

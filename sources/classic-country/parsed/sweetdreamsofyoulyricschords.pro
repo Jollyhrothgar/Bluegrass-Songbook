@@ -1,6 +1,9 @@
 {meta: title Sweet Dreams Of You}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley and John David}
+{meta: x_source classic-country}
+{meta: x_source_file sweetdreamsofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lonely [F]tears roll [C]down
@@ -35,3 +38,7 @@ In [F]sweet [G7]dreams of [C]you
 In [F]sweet [G7]dreams of [C]you
 In [F]sweet [G7]dreams of [C]you
 {end_of_verse}
+
+
+
+

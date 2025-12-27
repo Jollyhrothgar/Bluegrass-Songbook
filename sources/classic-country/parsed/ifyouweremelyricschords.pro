@@ -1,6 +1,9 @@
 {meta: title If You Were Me}
 {meta: artist Rhonda Vincent}
 {meta: composer Troy Seals and Graham Hamilton Lyle}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouweremelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met someone I need to talk about
@@ -40,3 +43,8 @@ I've always played it safe with this heart of mine
 {start_of_verse: Verse 6}
 [D7]If you were [G]me
 {end_of_verse}
+
+
+
+
+

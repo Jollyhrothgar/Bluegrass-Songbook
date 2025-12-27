@@ -1,6 +1,9 @@
 {meta: title The Footsteps of My Lord}
 {meta: artist Kitty Wells}
 {meta: composer John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file thefootstepsofmylordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hear the thunder in the night 
@@ -25,3 +28,5 @@
 [C]Hear the splashing of the seas
 [G]That's just the [D7]footsteps of my [G]Lord
 {end_of_verse}
+
+

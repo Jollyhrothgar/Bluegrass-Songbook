@@ -1,6 +1,9 @@
 {meta: title Turn Me To Love}
 {meta: artist Keith Whitley}
 {meta: composer Norro Wilson and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file turnmetolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Turn Me To Love
@@ -36,3 +39,7 @@ They've been [C]there long [G]enough
 Take my [C]life you could [G]fix it [D7]up
 [G]Turn me [D7]around turn me on turn me to [G]love
 {end_of_verse}
+
+
+
+

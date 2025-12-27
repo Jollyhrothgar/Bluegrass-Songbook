@@ -1,5 +1,8 @@
 {meta: title Bummin' An Old Freight Train}
 {meta: artist Lester Flatt}
+{meta: x_source classic-country}
+{meta: x_source_file bumminanoldfreighttrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was a wild and reckless hobo [C]left my happy [G]home
@@ -45,3 +48,8 @@ Just bummin' an old freight train oh Lord
 [C]A thousand miles away from [G]home
 [D7]Just a bummin' an old freight [G]train
 {end_of_verse}
+
+
+
+
+

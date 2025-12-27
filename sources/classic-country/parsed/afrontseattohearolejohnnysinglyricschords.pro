@@ -1,5 +1,8 @@
 {meta: title A Front Seat To Hear Ole Johnny Sing}
 {meta: artist Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file afrontseattohearolejohnnysinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now you know some fellas they want fame and fortune
@@ -88,3 +91,15 @@ And I guess that judge he weren't no music lover
 [C]A show come through and har de har
 [D7]I had a front row seat to hear ole Johnny [G]sing
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

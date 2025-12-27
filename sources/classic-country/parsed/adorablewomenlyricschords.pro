@@ -1,5 +1,8 @@
 {meta: title Adorable Women}
 {meta: artist Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file adorablewomenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She can watch every move I [F]make 
@@ -41,3 +44,8 @@ So you can see why I'm spendin [F]all of my time
 Yes [G7]tryin' to adore more of '[C]em [F]
 Hmm [G7]tryin' to adore more of '[C]em
 {end_of_verse}
+
+
+
+
+

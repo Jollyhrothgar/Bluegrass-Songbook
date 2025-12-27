@@ -1,6 +1,9 @@
 {meta: title Sing Me An Old Fashioned Song}
 {meta: artist Jean Shepard}
 {meta: composer Larry Henley and Johnny Slate}
+{meta: x_source classic-country}
+{meta: x_source_file singmeanoldfashionedsonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sing me  sing me an old fashioned song
@@ -43,3 +46,8 @@
 [F]A good timin' song the kind that makes you want to sing [C]along
 [G7]A good ole fashioned hand clappin' knee slappin' foot tappin' [C]song
 {end_of_verse}
+
+
+
+
+

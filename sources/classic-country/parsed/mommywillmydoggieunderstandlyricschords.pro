@@ -1,6 +1,9 @@
 {meta: title Mommy Will My Doggie Understand}
 {meta: artist The Blue Sky Boys}
 {meta: composer Jim Eanes}
+{meta: x_source classic-country}
+{meta: x_source_file mommywillmydoggieunderstandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our little girl so pale and wan [F]lay on her dying bed
@@ -31,3 +34,6 @@ I [C]know that you'll be [C7]lonely too
 And [F]miss me just like dad and you
 But [G7]want you try to make her under[C]stand
 {end_of_verse}
+
+
+

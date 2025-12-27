@@ -1,5 +1,8 @@
 {meta: artist Garth Brooks}
 {meta: composer Stephanie Brown and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file burningbridgeslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Yesterday she [C]thanked me for [F]oiling that front [C]door
@@ -44,3 +47,9 @@ But [Dm]every time the [C]chance comes up [F]anot[C]her [G7]bridge goes [C]down
 {start_of_verse: Verse 7}
 [Am]Another bridge goes [C]down
 {end_of_verse}
+
+
+
+
+
+

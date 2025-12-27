@@ -1,6 +1,9 @@
 {meta: title Boys And Lucy Brown}
 {meta: artist Leona Williams}
 {meta: composer Leona Williams and Ron Williams}
+{meta: x_source classic-country}
+{meta: x_source_file boysandlucybrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We've been planning on this [G7]party all year [C]long
@@ -50,3 +53,9 @@ Now [G7]where are the fellows and good ol' Lucy [C]Brown
 {start_of_verse: Verse 5}
 Now [G7]where are the fellows and good ol' Lucy [C]Brown
 {end_of_verse}
+
+
+
+
+
+

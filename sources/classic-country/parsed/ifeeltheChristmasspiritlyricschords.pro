@@ -1,6 +1,9 @@
 {meta: title I Feel the Christmas Spirit}
 {meta: artist Doyle Lawson}
 {meta: composer Joe Isaacs}
+{meta: x_source classic-country}
+{meta: x_source_file ifeeltheChristmasspiritlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to mark the calendar and watch the days go [G7]by
@@ -54,3 +57,10 @@ The [G7]world is celebrating with friends and [C]family
 {start_of_verse: Verse 5}
 The [G7]world is celebrating with friends and [C]family
 {end_of_verse}
+
+
+
+
+
+
+

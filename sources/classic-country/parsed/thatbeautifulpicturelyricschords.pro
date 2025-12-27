@@ -1,6 +1,9 @@
 {meta: title That Beautiful Picture}
 {meta: artist The Bailes Brothers}
 {meta: composer Roy Acuff}
+{meta: x_source classic-country}
+{meta: x_source_file thatbeautifulpicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night by the fireside dreaming
@@ -43,3 +46,8 @@ To [F]me while there [C]alone
 That beautiful picture He gave me
 Of mother up [G7]there by the [C]throne
 {end_of_verse}
+
+
+
+
+

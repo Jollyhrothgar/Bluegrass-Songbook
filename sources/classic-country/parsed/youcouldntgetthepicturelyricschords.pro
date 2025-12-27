@@ -1,6 +1,9 @@
 {meta: title You Couldn't Get The Picture}
 {meta: artist George Jones}
 {meta: composer Chuck Harter}
+{meta: x_source classic-country}
+{meta: x_source_file youcouldntgetthepicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I walked in the front door turned the light on [F]in the [C]hall
@@ -40,3 +43,6 @@ Maybe [F]you can read the [G7]writing on the [C]wall
 But if [G7]you couldn't get the picture
 Maybe y[F]ou can read the [G7]writing on the [C]wall
 {end_of_verse}
+
+
+

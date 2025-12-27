@@ -1,6 +1,9 @@
 {meta: title Thicker Than Blood}
 {meta: artist Garth Brooks}
 {meta: composer Jenny Yates and Garth Brooks}
+{meta: x_source classic-country}
+{meta: x_source_file thickerthanbloodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]She was [C]born in Kansas City [Am]raised in Arkansas
@@ -56,3 +59,10 @@ Oh but [Dm]love love is [G7]thicker than [C]blood
 [F]She was [C]born in Kansas City [Am]raised in Arkansas
 Fell in [F]love with an ex-[C]Marine
 {end_of_verse}
+
+
+
+
+
+
+

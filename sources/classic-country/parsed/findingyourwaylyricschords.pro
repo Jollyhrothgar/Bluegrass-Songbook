@@ -1,5 +1,8 @@
 {meta: title Finding Your Way}
 {meta: artist The Lonesome River Band}
+{meta: x_source classic-country}
+{meta: x_source_file findingyourwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The first time and it’s [C]clear [G]as if it were [Am]yester[D7]day
@@ -41,3 +44,8 @@ Through this maze of [D7]life [G]alone
 Forever [D7]turned out to [G]be two [C]score years and [G]three
 Now you're [D7]finding your [G]way
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Coming For To Carry Me Home}
 {meta: artist aka Swing Low Sweet Chariot}
+{meta: x_source classic-country}
+{meta: x_source_file comingfortocarrymehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Coming For To Carry Me Home
@@ -58,3 +61,11 @@ I saw a [C]whole band of angels [F]coming after [C]me
 {start_of_verse: Verse 7}
 [Am]Coming for to [G7]carry me [C]home
 {end_of_verse}
+
+
+
+
+
+
+
+

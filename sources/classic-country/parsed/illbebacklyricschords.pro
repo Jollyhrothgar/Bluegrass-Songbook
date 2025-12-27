@@ -1,6 +1,9 @@
 {meta: title I'll Be Back}
 {meta: artist Elvis Presley}
 {meta: composer Ben Weisman and Sid Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file illbebacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'll be back yeah I'll be back 
@@ -43,3 +46,8 @@ A teeny [C]weeny crack to your [A7]shack
 So [D7]keep that love light [G7]burning 
 I'll be [C]back yeah (I'll be back) [F]yeah I'll be [C]back (I'll be back)
 {end_of_verse}
+
+
+
+
+

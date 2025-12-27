@@ -1,6 +1,9 @@
 {meta: title If I Want To}
 {meta: artist Marty Robbins}
 {meta: composer Buddy Mize}
+{meta: x_source classic-country}
+{meta: x_source_file ifiwanttolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Uh hum la da la [G7]da if I [C]want to
@@ -25,3 +28,6 @@ Then I’ll [G7]love you that much longer if I [C]want to
 And [G7]love you beyond forever if I [C]want to
 [F]Uh hum la da la [G7]da if I [C]want to
 {end_of_verse}
+
+
+

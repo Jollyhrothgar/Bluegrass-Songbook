@@ -1,6 +1,9 @@
 {meta: title Don't Want To Live Without Honey}
 {meta: artist Jimmy Dean}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file dontwanttolivewithouthoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]First time I saw her my [C]heart felt a little bit [G]funny
@@ -30,3 +33,6 @@ Touchin' mine [G]makes my everyday [C]sunny
 I'm such a fool about [D7]don't want to live without [G]honey
 I'm such a fool about [D7]don't want to live without [G]honey
 {end_of_verse}
+
+
+

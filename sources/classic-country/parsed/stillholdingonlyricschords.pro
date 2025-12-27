@@ -1,6 +1,9 @@
 {meta: title Still Holding On}
 {meta: artist Clint Black}
 {meta: composer Matraca Berg, Marty Stuart, Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file stillholdingonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's [Em]something out there [C]left for you [G]but it's not me
@@ -50,3 +53,8 @@ I'm still [G]holdin' on I’m still [D7]holding on to [C]you
 Holdin' on I’m still holding [G]on[D7]   [C]
 I’m still holding [G]on
 {end_of_verse}
+
+
+
+
+

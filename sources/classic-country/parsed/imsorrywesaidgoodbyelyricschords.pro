@@ -1,6 +1,9 @@
 {meta: title I'm Sorry We Said Goodbye}
 {meta: artist Bob Wills}
 {meta: composer Harley Huggins}
+{meta: x_source classic-country}
+{meta: x_source_file imsorrywesaidgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’m sorry [G7]that we said good[C]bye 
@@ -22,3 +25,5 @@ The memory I can’t [G7]erase
 Now [C]all I do is sit and [F]cry
 I’m [C]sorry [G7]that we said good[C]bye
 {end_of_verse}
+
+

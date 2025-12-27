@@ -1,6 +1,9 @@
 {meta: title The Window Up Above}
 {meta: artist Loretta Lynn}
 {meta: composer George Jones}
+{meta: x_source classic-country}
+{meta: x_source_file thewindowupabovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been living a new way of [G7]life that I love [C]so
@@ -27,3 +30,6 @@ I lost mine while I was [G7]watching from the [F]window up [C]above
 How I wished I could be dreaming and wake up to a [G7]love that's [C]true
 But I can't for I was [G7]watching from the window [F]up [C]above 
 {end_of_verse}
+
+
+

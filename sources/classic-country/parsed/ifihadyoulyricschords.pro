@@ -1,6 +1,9 @@
 {meta: title If I Had You}
 {meta: artist Alabama}
 {meta: composer Danny Bear Mayo and Kerry Chater}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I had you  we'd [F]run like gypsies in the [C]wind
@@ -27,3 +30,6 @@
 [C]And there's [F]nothing  no there's [G7]nothing
 [C]No there's nothing [C7]that I wouldn't [F]do  [G7]if I had [C]you
 {end_of_verse}
+
+
+

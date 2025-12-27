@@ -1,6 +1,9 @@
 {meta: title My Greatest Memories}
 {meta: artist Marty Robbins}
 {meta: composer Misty Capps, Buck Moore, Bill Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file mygreatestmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I built so many [F]temporary [C]bridges
@@ -30,3 +33,6 @@ Oh you [C]built me up then [F]tore me down and [C]now you're leaving [F]me
 But you'll go [C]down as my [G7]greatest memo[C]ry
 [F]Yes you'll go [C]down as my [G7]greatest memo[C]ry 
 {end_of_verse}
+
+
+

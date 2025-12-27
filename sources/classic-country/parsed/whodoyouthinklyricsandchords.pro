@@ -1,5 +1,8 @@
 {meta: title Who Do You Think}
 {meta: artist Frankie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file whodoyouthinklyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who do you [C]think made the mountains and the [G]valleys
@@ -42,3 +45,8 @@
 [C]Who do you think put the colors in the [G]rainbow
 [D7]Don’t you know God did it all for you and [G]me
 {end_of_verse}
+
+
+
+
+

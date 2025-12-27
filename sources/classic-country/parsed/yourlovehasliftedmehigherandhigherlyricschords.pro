@@ -1,6 +1,9 @@
 {meta: title Your Love Has Lifted Me Higher And Higher}
 {meta: artist Dolly Parton}
 {meta: composer Carl Smith and Gary Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file yourlovehasliftedmehigherandhigherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your love has lifted me [F]your love has lifted me 
@@ -57,3 +60,10 @@ Higher higher and [C]higher
 Your love has lifted me [F]keeps right on liftin' me 
 Higher higher and [C]higher
 {end_of_verse}
+
+
+
+
+
+
+

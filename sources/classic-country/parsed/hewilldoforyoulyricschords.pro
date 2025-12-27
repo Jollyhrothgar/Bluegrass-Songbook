@@ -1,6 +1,9 @@
 {meta: title He Will Do For You}
 {meta: artist Patsy Cline}
 {meta: composer V. F. Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file hewilldoforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once my soul was in sin 
@@ -41,3 +44,9 @@ What He's [D7]done for [G]me
 {start_of_verse: Verse 7}
 Repeat last two verses
 {end_of_verse}
+
+
+
+
+
+

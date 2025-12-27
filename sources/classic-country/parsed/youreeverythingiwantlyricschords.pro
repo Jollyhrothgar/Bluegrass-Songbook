@@ -1,5 +1,8 @@
 {meta: title You’re Everything I Want}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file youreeverythingiwantlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You walked in with an attitude 
@@ -41,3 +44,8 @@ Tag:
 [F]I’d run like the devil if I knew what was good for [C]me
 You’re everything I want and [G7]not a thing I [C]need
 {end_of_verse}
+
+
+
+
+

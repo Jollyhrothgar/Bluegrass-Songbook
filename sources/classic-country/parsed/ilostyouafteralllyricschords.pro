@@ -1,6 +1,9 @@
 {meta: title I Lost You After All}
 {meta: artist Jean Shepard}
 {meta: composer Ira Louvin and Helen Carter}
+{meta: x_source classic-country}
+{meta: x_source_file ilostyouafteralllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I should have known you'd never change that you were having [C]fun
@@ -22,3 +25,5 @@
 [G]I loved you more than anything that love I can't [C]recall
 [G]I even wore your wedding [D7]ring but I lost you after [G]all
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title You Don't Count the Cost}
 {meta: artist Billy Dean}
 {meta: composer Bucky Jones, Chris Waters, Tom Curtis Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file youdontcountthecostlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It happens to a mother when [F]she is giving birth
@@ -36,3 +39,7 @@ And [Am]all that counts is [F]what you feel in[G7]side
 It [F]doesn't really matter what is [C]gained or what is [F]lost
 [C]When it comes to love no [G7]you don't count the [C]cost
 {end_of_verse}
+
+
+
+

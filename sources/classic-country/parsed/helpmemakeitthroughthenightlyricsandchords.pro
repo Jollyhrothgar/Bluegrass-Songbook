@@ -1,6 +1,9 @@
 {meta: title Help Me Make It Through The Night}
 {meta: artist Charley Pride}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file helpmemakeitthroughthenightlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 {comment: C}
@@ -42,3 +45,8 @@ Take the [F]ribbon from [C]your hair
 [Dm]I don't want to be [G7]alone
 [C]So help me make it through the night
 {end_of_verse}
+
+
+
+
+

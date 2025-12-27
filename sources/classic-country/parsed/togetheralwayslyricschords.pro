@@ -1,6 +1,9 @@
 {meta: title Together Always}
 {meta: artist Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file togetheralwayslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You and I have [F]been together [C]for a long long [F]time
@@ -27,3 +30,6 @@ God's been good to you and I and [F]in
 To-geth-er [F]to-geth-er [C]together always you and [G7]me 
 [C]For-ever and [F]ev-er [C]together [G7]always you and [C]me   
 {end_of_verse}
+
+
+

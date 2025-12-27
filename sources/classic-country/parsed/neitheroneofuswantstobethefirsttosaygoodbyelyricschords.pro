@@ -1,6 +1,9 @@
 {meta: title Neither One Of Us (Wants To Be The First To Say Goodbye)}
 {meta: artist Bob Luman}
 {meta: composer Jim Weatherly}
+{meta: x_source classic-country}
+{meta: x_source_file neitheroneofuswantstobethefirsttosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Neither One Of Us 
@@ -35,3 +38,7 @@ But [Dm]we can't go on  [C]hurting and pretending [G7]
 [C]So let's convince our[Em]selves to give it [C]give it one more [F]try [D7]
 Because [C]neither one of us  [G7]wants to be the first to say good[F]by[C]e
 {end_of_verse}
+
+
+
+

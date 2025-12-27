@@ -1,5 +1,8 @@
 {meta: title You Plus Him Minus Me}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file youplushimminusmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's always [G7]you plus him minus [C]me
@@ -32,3 +35,7 @@
 [C]My heart [G7]lives on [C]bending knees and I keep [C7]dying by [F]degrees
 [G7]Because of you plus him minus [C]me
 {end_of_verse}
+
+
+
+

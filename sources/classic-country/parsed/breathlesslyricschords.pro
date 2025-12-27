@@ -1,6 +1,9 @@
 {meta: title Breathless}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Otis Blackwell}
+{meta: x_source classic-country}
+{meta: x_source_file breathlesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now if you love me please don't [G7]tease
@@ -51,3 +54,8 @@
 [G7]You have left me [F]ahhhh
 [C]Breathless ah
 {end_of_verse}
+
+
+
+
+

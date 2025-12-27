@@ -1,6 +1,9 @@
 {meta: title Be-bop Baby}
 {meta: artist Ricky Nelson}
 {meta: composer Pearl Lendhurst}
+{meta: x_source classic-country}
+{meta: x_source_file bebopbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F][C]Be-bop [G7]ba--by [C]be-bop baby [F]be-bop [F][C]ba--by
@@ -39,3 +42,8 @@
 [C]Be-bop baby in her [F]old blue jeans is the [G7]be-bop baby for [C]me
 [F]Be-bop [G7]baby for [C]me
 {end_of_verse}
+
+
+
+
+

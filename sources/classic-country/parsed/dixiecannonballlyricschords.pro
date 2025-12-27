@@ -1,6 +1,9 @@
 {meta: title Dixie Cannonball}
 {meta: artist Hank Williams}
 {meta: composer Vaughn Horton}
+{meta: x_source classic-country}
+{meta: x_source_file dixiecannonballlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a heading back to Dixie
@@ -65,3 +68,10 @@ With the sweetest how you [F]all
 Well shut my mouth I'm a heading [C]south
 On the [G7]Dixie [C]cannonball
 {end_of_verse}
+
+
+
+
+
+
+

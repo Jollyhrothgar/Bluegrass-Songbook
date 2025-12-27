@@ -1,6 +1,9 @@
 {meta: title The Girl In The Valley}
 {meta: artist Doyle Lawson}
 {meta: composer Jamie Dailey}
+{meta: x_source classic-country}
+{meta: x_source_file thegirlinthevalleylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just across the mountains in a valley [C]down below
@@ -29,3 +32,6 @@ Oh how I [C]miss her warm and touching [D7]ways
 And some[G]day I hope she'll want to [C]go
 Back to the [D7]mountains and the valley down [G]below
 {end_of_verse}
+
+
+

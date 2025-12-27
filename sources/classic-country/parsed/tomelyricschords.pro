@@ -1,6 +1,9 @@
 {meta: title To Me}
 {meta: artist Lee Greenwood}
 {meta: composer Mike Reid and Mack David}
+{meta: x_source classic-country}
+{meta: x_source_file tomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]To me you are the [C]hand that I reach for
@@ -36,3 +39,7 @@ Oh oh [D7]oh just as [C]sure as I'm sure there's a [Bm]heaven
 [G]No road is too [D7]long 
 As [G]long as you [C]be[G]long [D7]to [G]me
 {end_of_verse}
+
+
+
+

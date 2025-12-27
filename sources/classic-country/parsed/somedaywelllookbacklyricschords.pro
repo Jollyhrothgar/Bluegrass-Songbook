@@ -1,5 +1,8 @@
 {meta: title Someday We’ll Look Back}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file somedaywelllookbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someday when our dream world finds us 
@@ -31,3 +34,6 @@ If [C]we both pull together [F]tomorrow's sure to [Fm]come
 {start_of_verse: Verse 3}
 And [C]someday we'll look [G7]back and say  it was [C]fun
 {end_of_verse}
+
+
+

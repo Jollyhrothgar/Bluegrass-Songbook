@@ -1,5 +1,8 @@
 {meta: title I'm Not Worth The Tears}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file imnotworththetearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Momma didn't always have those tears in her eyes
@@ -25,3 +28,6 @@ And now they [D7]cry but [G]I'm not [C]worth the [G]tears they [D7]cry for [G]me
 {start_of_verse: Verse 4}
 [C]Yes now they [D7]cry but [G]I'm not [C]worth the [G]tears they [D7]cry for [C]me[G]
 {end_of_verse}
+
+
+

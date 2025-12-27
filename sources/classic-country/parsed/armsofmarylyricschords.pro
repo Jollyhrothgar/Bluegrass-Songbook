@@ -1,6 +1,9 @@
 {meta: title Arms Of Mary}
 {meta: artist the Everly Brothers}
 {meta: composer Ian Sutherland}
+{meta: x_source classic-country}
+{meta: x_source_file armsofmarylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The lights shine down the [G7]valley
@@ -60,3 +63,10 @@ She really [F]gave all a boy could [G7]take
 [F]Lying in the arms of [C]Mary
 [G7]Yeah yeah [C]yeah
 {end_of_verse}
+
+
+
+
+
+
+

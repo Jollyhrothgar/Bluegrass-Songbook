@@ -1,5 +1,8 @@
 {meta: title Love Is Like A Butterfly}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file loveislikeabutterflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love is like a butterfly as [F]soft and [G7]gentle [C]as a sigh
@@ -43,3 +46,8 @@ It [F]flutters [G7]like soft [C]wings in flight
 {start_of_verse: Verse 4}
 [F]Love is like a [C]butterfly a [A]rare and [F]gentle [C]thing
 {end_of_verse}
+
+
+
+
+

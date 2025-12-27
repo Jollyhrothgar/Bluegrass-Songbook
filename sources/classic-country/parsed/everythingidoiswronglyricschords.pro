@@ -1,6 +1,9 @@
 {meta: title Everything I Do is Wrong}
 {meta: artist Charlie Rich}
 {meta: composer Joe Josea, B.B. King, Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file everythingidoiswronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I see a great big [C]sign on a [G]one way [C]street
@@ -43,3 +46,8 @@ Everything I [C]do is [G]wrong on [C]me
 I [G]just don't [C]see how I'm [G]gonna get [C]along
 Cause [G]everything I [C]do is [G]wrong
 {end_of_verse}
+
+
+
+
+

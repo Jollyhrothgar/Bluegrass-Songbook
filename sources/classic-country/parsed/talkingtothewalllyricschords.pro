@@ -1,5 +1,8 @@
 {meta: title Talking To The Wall}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file talkingtothewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I [G]might as well be [D7]talking to the [G]wall
@@ -34,3 +37,7 @@ Cause every time you [C]come around I [G]fall
 Tag:
 [C]Yes I [G]might as well be [D7]talking to the [G]wall
 {end_of_verse}
+
+
+
+

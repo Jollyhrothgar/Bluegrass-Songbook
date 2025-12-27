@@ -1,6 +1,9 @@
 {meta: title Santa's Gonna Come In A Stagecoach}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file santasgonnacomeinastagecoachlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've been sorta worried about [C]Santa Claus this [G]year
@@ -33,3 +36,7 @@ Cause the [G]weatherman had some problems he [C]couldn't get snow you [G]see
 {start_of_verse: Verse 5}
 [C]Santa's gonna come in a [G]stage[E7]coach when he [A7]visits [D7]you and [G]me
 {end_of_verse}
+
+
+
+

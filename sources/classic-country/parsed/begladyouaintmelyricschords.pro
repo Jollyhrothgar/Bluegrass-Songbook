@@ -1,6 +1,9 @@
 {meta: title Be Glad You Ain't Me}
 {meta: artist Porter Wagoner}
 {meta: composer Dave Estes and Porter Wagoner}
+{meta: x_source classic-country}
+{meta: x_source_file begladyouaintmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you've never [F]laid a[C]wake at night and [F]prayed to be set [C]free
@@ -32,3 +35,6 @@ Be [C]glad that your heart has never wanted a love that couldn't [G7]be
 If you [C]never [F]saw a [C]love go wrong [F]because of jealou[C]sy
 Just [F]put yourself in [C]my place friend [G7]be glad that you ain't [C]me
 {end_of_verse}
+
+
+

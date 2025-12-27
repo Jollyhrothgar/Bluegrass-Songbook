@@ -1,6 +1,9 @@
 {meta: title I'm Not The Marrying Kind}
 {meta: artist Elvis Presley}
 {meta: composer Sherman Edwards and Mack David}
+{meta: x_source classic-country}
+{meta: x_source_file imnotthemarryingkindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Show me a girl with a dimple on her [G7]cheek
@@ -55,3 +58,12 @@ I'm not I'm not I'm not I'm not
 [G7]Oh I'm not the marrying [C]kind
 [G7]Oh I'm not the marrying [C]kind
 {end_of_verse}
+
+
+
+
+
+
+
+
+

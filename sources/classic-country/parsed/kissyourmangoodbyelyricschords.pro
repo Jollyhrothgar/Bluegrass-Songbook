@@ -1,6 +1,9 @@
 {meta: title Kiss Your Man Good Bye}
 {meta: artist The Everly Brothers}
 {meta: composer Phil Everly and Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file kissyourmangoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Kiss Your Man Good Bye
@@ -33,3 +36,6 @@ It had better be at me
 [A7]Oh girl you'd better try to [D7]please me
 Then kiss your man good[G]bye [D7]good[G]bye
 {end_of_verse}
+
+
+

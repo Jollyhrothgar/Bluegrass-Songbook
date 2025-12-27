@@ -1,6 +1,9 @@
 {meta: title If Ole Hank Could Only See Us Now}
 {meta: artist Waylon Jennings}
 {meta: composer Waylon Jennings and Roger Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file ifolehankcouldonlyseeusnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If Ole Hank could only see us now
@@ -60,3 +63,13 @@ And the records never scratch and never [C]break
 {start_of_verse: Verse 10}
 And break and break and break
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

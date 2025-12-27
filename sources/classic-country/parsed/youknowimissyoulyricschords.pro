@@ -1,6 +1,9 @@
 {meta: title You Know I Miss You}
 {meta: artist Fats Domino}
 {meta: composer Al Young and Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file youknowimissyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The rain is falling   I can hear my baby calling
@@ -19,3 +22,5 @@ The cloud is getting clearer   my baby’s getting nearer
 The [C]cloud is getting clearer   my [G]baby’s getting nearer
 Yes I [D7]need your loving and I need it very [G]bad
 {end_of_verse}
+
+

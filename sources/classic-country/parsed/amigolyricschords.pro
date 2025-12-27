@@ -1,6 +1,9 @@
 {meta: title Amigo}
 {meta: artist David Ball}
 {meta: composer Kostas and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file amigolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Where ever you go we [D7]go [G]amigo
@@ -54,3 +57,9 @@ Down and out and back [G]again
 Where [Am]ever you go we [D7]go [G]amigo
 On the [D7]road that leads us to the setting [G]sun
 {end_of_verse}
+
+
+
+
+
+

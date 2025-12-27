@@ -1,6 +1,9 @@
 {meta: title I Thank God For You}
 {meta: artist Bill Anderson}
 {meta: composer Bill Anderson and Mike Cloer}
+{meta: x_source classic-country}
+{meta: x_source_file ithankGodforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Every [F]morning when [C]I wake up) I thank [G7]God for [C]you
@@ -43,3 +46,9 @@ But we've gonna [C]make it on faith and on love
 (Every [F]morning when [C]I wake up) I thank [G7]God for [C]you
 (Every [F]night I [C]close my eyes) and I thank [G7]God for [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title In The Ghetto}
 {meta: artist Dolly Parton}
 {meta: composer Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file intheghettolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As the snow flies  
@@ -41,3 +44,7 @@ On a [Em]cold and gray Chicago morn
 [F]Another little baby [G7]child is born in the [C]Ghetto 
 And his momma cries
 {end_of_verse}
+
+
+
+

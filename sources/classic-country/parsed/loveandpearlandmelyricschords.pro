@@ -1,6 +1,9 @@
 {meta: title Love And Pearl And Me}
 {meta: artist Vernon Oxford}
 {meta: composer Doodle Owens and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file loveandpearlandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Love  and [G7]Pearl and [C]Me
@@ -37,3 +40,7 @@ And when I’m alone at night I get [G7]lonesome for the time
 When nothing lived in this old house but  
 [C]Love (love) and [G7]Pearl (and Pearl) and [C]me [C7]
 {end_of_verse}
+
+
+
+

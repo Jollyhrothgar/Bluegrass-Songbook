@@ -1,6 +1,9 @@
 {meta: title As Long As We Can}
 {meta: artist George Jones}
 {meta: composer Roni Rivers and Agnes Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file aslongaswecanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I never fail to count my blessing [F]when each day is [C]done
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]And we're gonna [C]stay in each [G7]others arms as long as we [C]can
 {end_of_verse}
+
+
+
+

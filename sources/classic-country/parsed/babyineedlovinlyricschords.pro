@@ -1,6 +1,9 @@
 {meta: title Baby I Need Lovin'}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Dorothy Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file babyineedlovinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby I need lovin' in any kind of [G7]way
@@ -30,3 +33,6 @@ And [D7]feel your respiration [G7]and hold you tenderly
 Baby I need lovin' from a pretty little girl [D7]
 [G7]From a pretty little girl like [C]you
 {end_of_verse}
+
+
+

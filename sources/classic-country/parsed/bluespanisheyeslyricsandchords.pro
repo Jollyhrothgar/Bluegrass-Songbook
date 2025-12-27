@@ -1,6 +1,9 @@
 {meta: title Blue Spanish Eyes Lyrics and Chords}
 {meta: artist Charlie Rich}
 {meta: composer Charles Singleton, Bert Kaempfert, Eddie Snyder}
+{meta: x_source classic-country}
+{meta: x_source_file bluespanisheyeslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blue Spanish Eyes
@@ -23,3 +26,4 @@ Bringing you all the [C7]love your heart can [F]hold
 [Fm]Please say si si
 [C]Say you and your [G7]Spanish eyes will wait for[C] me
 {end_of_verse}
+

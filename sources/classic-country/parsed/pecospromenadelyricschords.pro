@@ -1,5 +1,8 @@
 {meta: title Pecos Promenade}
 {meta: artist Tanya Tucker}
+{meta: x_source classic-country}
+{meta: x_source_file pecospromenadelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you've got a road map of [D7]Texas
@@ -50,3 +53,10 @@ Lead off with the Cotton-Eyed Joe
 {start_of_verse: Verse 7}
 [F]To do the [G7]Pecos [C]Promenade
 {end_of_verse}
+
+
+
+
+
+
+

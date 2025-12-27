@@ -1,5 +1,8 @@
 {meta: title Are You Treating Your Neighbor As Yourself}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file areyoutreatingyourneighborasyourselflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On this muddy road of life as we come face to face with strife
@@ -45,3 +48,11 @@ Or in that moment we see doubt could say with our last breath
 And a neighbor comes around and helps you out when you are down
 [D7]Are you treating your neighbor as [G]yourself
 {end_of_verse}
+
+
+
+
+
+
+
+

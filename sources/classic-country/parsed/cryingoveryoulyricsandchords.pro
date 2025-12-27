@@ -1,6 +1,9 @@
 {meta: title Crying Over You}
 {meta: artist Norma Jean}
 {meta: composer James Intveld}
+{meta: x_source classic-country}
+{meta: x_source_file cryingoveryoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Crying cry cry over you
@@ -55,3 +58,10 @@ And [C]that’s why I keep [D7]crying over [G]you
 {start_of_verse: Verse 6}
 And [C]that’s why I keep [D7]crying over [G]you
 {end_of_verse}
+
+
+
+
+
+
+

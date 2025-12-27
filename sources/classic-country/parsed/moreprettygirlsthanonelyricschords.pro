@@ -1,5 +1,8 @@
 {meta: title More Pretty Girls Than One}
 {meta: artist Ricky Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file moreprettygirlsthanonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's more pretty girls than one 
@@ -35,3 +38,7 @@ And hoping that [G7]I'll never [C]die
 [F]Every town that I ramble [C]around 
 There's more pretty [G7]girls than [C]one
 {end_of_verse}
+
+
+
+

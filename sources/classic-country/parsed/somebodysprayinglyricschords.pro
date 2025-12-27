@@ -1,6 +1,9 @@
 {meta: title Somebody's Praying}
 {meta: artist Ricky Skaggs}
 {meta: composer John G. Elliott}
+{meta: x_source classic-country}
+{meta: x_source_file somebodysprayinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Somebody's [Am]praying
@@ -50,3 +53,9 @@ Praying [Dm]all this time for [F][G7][Am]me--e--e
 [C]Somebody's [Am]praying for [F]me 
 [C]Mighty hands are guiding [F]me
 {end_of_verse}
+
+
+
+
+
+

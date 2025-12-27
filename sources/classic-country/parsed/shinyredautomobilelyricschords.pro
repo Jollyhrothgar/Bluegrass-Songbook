@@ -1,6 +1,9 @@
 {meta: title Shiny Red Automobile}
 {meta: artist George Morgan}
 {meta: composer Dixie Deen and Ray King}
+{meta: x_source classic-country}
+{meta: x_source_file shinyredautomobilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I pulled out of St. Paul and started my haul
@@ -62,3 +65,11 @@ So I left her high and dry [C]and a-wonderin' why
 [F]So I left her high and dry [C]and a-wonderin' why
 [G7]In her shiny red automo[C]bile 
 {end_of_verse}
+
+
+
+
+
+
+
+

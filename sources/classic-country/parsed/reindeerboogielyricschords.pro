@@ -1,6 +1,9 @@
 {meta: title Reindeer Boogie}
 {meta: artist Hank Snow}
 {meta: composer Hank Snow, Peanut Faircloth, Cordia Volkmar}
+{meta: x_source classic-country}
+{meta: x_source_file reindeerboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Santa had a cup of coffee and he ate a little snack
@@ -74,3 +77,17 @@ Thought he heard a toy drum starting to beat
 [G7]Don't boogie to the left now boogie to the right
 [C]Do the reindeer boogie this [G7]Christmas Eve [C]night
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

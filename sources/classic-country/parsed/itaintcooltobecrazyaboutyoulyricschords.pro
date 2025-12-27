@@ -1,6 +1,9 @@
 {meta: title It Ain't Cool To Be Crazy About You}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Royce Porter}
+{meta: x_source classic-country}
+{meta: x_source_file itaintcooltobecrazyaboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I thought you and me were [C]somethin' special
@@ -33,3 +36,6 @@ It ain't [C]smart to be so [Em]reckless with my [Dm]heart
 I should've [G7]known right from the [F]start
 I'd [Em]end up like a [Dm]fool  [G7]believe me it ain't [F]coo[C]l
 {end_of_verse}
+
+
+

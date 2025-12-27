@@ -1,6 +1,9 @@
 {meta: title Kisses Never Lie}
 {meta: artist Carl Smith}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file kissesneverlielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don’t hold me close and say you love [Bm]me
@@ -43,3 +46,8 @@
 [C]Cause when you kiss me well I [G]know [Em]better
 [A7]Kisses [D7]never [G]lie (kisses [C]never [G]lie)
 {end_of_verse}
+
+
+
+
+

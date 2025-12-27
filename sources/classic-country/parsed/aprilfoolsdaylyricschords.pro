@@ -1,6 +1,9 @@
 {meta: title April Fools Day}
 {meta: artist Marty Robbins}
 {meta: composer Donald L. Winters Sr. and Mark Webb}
+{meta: x_source classic-country}
+{meta: x_source_file aprilfoolsdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It should be April Fools Day cause you've been fooling [F]me
@@ -29,3 +32,6 @@ It [F]hurt me so to see you go [C]your secret love and [G7]you
 [C]Your secret love has left you and I found someone [F]new
 It [G7]should be April Fools Day and the joke should be on [C]you
 {end_of_verse}
+
+
+

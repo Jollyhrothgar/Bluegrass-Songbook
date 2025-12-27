@@ -1,6 +1,9 @@
 {meta: title Gonna Buy Me A Jukebox}
 {meta: artist Charlie Walker}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file gonnabuymeajukeboxlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna buy me a jukebox and put it in the [G7]den
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]Then maybe you'll stay home once in a [C]while
 {end_of_verse}
+
+
+
+
+

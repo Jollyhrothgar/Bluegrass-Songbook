@@ -1,6 +1,9 @@
 {meta: title Daddy Don't You Walk So Fast}
 {meta: artist Charlie Rich}
 {meta: composer Peter Callender and Geoff Stephens}
+{meta: x_source classic-country}
+{meta: x_source_file daddydon'tyouwalksofastlyricsandchords-2.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The love between the two of us was [Dm]dying 
@@ -43,3 +46,8 @@ She said daddy don't you walk so fast
 Daddy [C]slow down [E7]some cause you're [Am]makin' me [D7]run 
 [C]Daddy don't you [G7]walk so [C]fast 
 {end_of_verse}
+
+
+
+
+

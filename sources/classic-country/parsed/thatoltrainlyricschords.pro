@@ -1,6 +1,9 @@
 {meta: title That Ol' Train}
 {meta: artist Del McCoury}
 {meta: composer Ronny Scaife and Alan Rhody}
+{meta: x_source classic-country}
+{meta: x_source_file thatoltrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just heard that city [F]of New [C]Orleans
@@ -45,3 +48,8 @@ Check out every whistle [F]stop that came [C]along
 Cover every mile of [F]track and I'd [C]bring my baby [Am]back
 Put a [F]happy [G7]ending to this [C]song
 {end_of_verse}
+
+
+
+
+

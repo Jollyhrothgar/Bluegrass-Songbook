@@ -1,6 +1,9 @@
 {meta: title I Take The Fifth}
 {meta: artist Tony Booth}
 {meta: composer Dave Lindsey, Leo Taylor, Lee Bach}
+{meta: x_source classic-country}
+{meta: x_source_file itakethefifthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Your [C]leaving's made [F]quite a change in [C]me 
@@ -34,3 +37,7 @@ But when asking about [G7]you I take the [C]fifth[G7]
 And I [F]exercise my [G7]rights in this [C]bar every [F]night
 When they ask me about [G7]you I take the [C]fifth
 {end_of_verse}
+
+
+
+

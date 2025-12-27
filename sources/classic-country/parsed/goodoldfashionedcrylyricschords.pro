@@ -1,6 +1,9 @@
 {meta: title Good Old Fashioned Cry}
 {meta: artist George Jones}
 {meta: composer George Jones, Johnny Mathis, Virginia Franks}
+{meta: x_source classic-country}
+{meta: x_source_file goodoldfashionedcrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I feel so lonesome [C]and I think that [G]I
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]Run and [G]hide and have a [D7]good old fashioned [G]cry
 {end_of_verse}
+
+
+
+

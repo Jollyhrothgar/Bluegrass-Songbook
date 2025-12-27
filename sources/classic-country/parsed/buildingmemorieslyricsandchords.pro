@@ -1,6 +1,9 @@
 {meta: title Building Memories}
 {meta: artist Sonny James}
 {meta: composer Arleigh E. Duff}
+{meta: x_source classic-country}
+{meta: x_source_file buildingmemorieslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down every [F]step we [C]take 
@@ -29,3 +32,6 @@ But we’ll stand side by side un[G7]afraid
 As [F]long as we live by the [C]golden rule of love
 [F]We’re building [G7]memories [F]life’s own sweet [G7]memories every [F]da[C]y
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Till Melinda Comes Around}
 {meta: artist Gene Watson}
 {meta: composer Glenn Ray}
+{meta: x_source classic-country}
+{meta: x_source_file tillmelindacomesaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I think my [G7]world is all to[C]gether
@@ -40,3 +43,8 @@ And I can [F]do it till [G7]Melinda comes [C]around
 {start_of_verse: Verse 5}
 And I can [F]do it till [G7]Melinda comes [F]around[C]
 {end_of_verse}
+
+
+
+
+

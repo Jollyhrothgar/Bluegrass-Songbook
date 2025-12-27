@@ -1,5 +1,8 @@
 {meta: title Loving An Angel Everyday}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file lovinganangeleverydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Loving an [C]angel every[G]day
@@ -39,3 +42,7 @@ There's [C]nothing left to [A7]say
 When [G]you're loving an [D7]angel like I'm [G]loving my [D7]angel
 [G]Loving an [D7]angel every[C]day[G]
 {end_of_verse}
+
+
+
+

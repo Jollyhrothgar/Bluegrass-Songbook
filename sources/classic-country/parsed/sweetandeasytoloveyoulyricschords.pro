@@ -1,5 +1,8 @@
 {meta: title Sweet And Easy To Love You}
 {meta: artist Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file sweetandeasytoloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it's so sweet and [F]easy to [G7]love you
@@ -33,3 +36,7 @@ like I [F]do yes it's [G7]true I love [C]you
 {start_of_verse: Verse 5}
 [G7]I love [C]you [G7]I love [C]you
 {end_of_verse}
+
+
+
+

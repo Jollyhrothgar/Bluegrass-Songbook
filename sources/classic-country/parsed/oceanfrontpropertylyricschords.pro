@@ -1,6 +1,9 @@
 {meta: title Ocean Front Property}
 {meta: artist George Strait}
 {meta: composer Hank Cochran, Dean Dillon, Royce Porter}
+{meta: x_source classic-country}
+{meta: x_source_file oceanfrontpropertylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you leave me [F]I won't [C]miss you
@@ -40,3 +43,8 @@ If [C]you'll buy that I'll [F]throw the Golden Gate [G7]in [C]free
 {start_of_verse: Verse 4}
 If you'll buy that I'll [F]throw the Golden Gate [G7]in [C]free
 {end_of_verse}
+
+
+
+
+

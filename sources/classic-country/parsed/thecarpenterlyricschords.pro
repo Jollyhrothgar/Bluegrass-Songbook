@@ -1,6 +1,9 @@
 {meta: title The Carpenter}
 {meta: artist Randy Travis}
 {meta: composer Randy Travis, Ron Avis, Chip Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file thecarpenterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He was just a [D7]carpenter by [Em]trade
@@ -68,3 +71,11 @@ In the [G]manner of the [C]Carpenter of [G]old
 He was just a [D7]carpenter by [Em]trade
 He [C]learned from His Father at a very early [G]age
 {end_of_verse}
+
+
+
+
+
+
+
+

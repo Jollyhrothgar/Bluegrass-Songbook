@@ -1,6 +1,9 @@
 {meta: title Come Back Little Pal}
 {meta: artist Roy Acuff}
 {meta: composer Roy Hall}
+{meta: x_source classic-country}
+{meta: x_source_file comebacklittlepallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am lonely tonight little [D7]pal
@@ -50,3 +53,9 @@
 [C]My heart is withered like a petal
 [G]Of a rose [D7]I saw dying [G]today
 {end_of_verse}
+
+
+
+
+
+

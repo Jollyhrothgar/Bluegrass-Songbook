@@ -1,6 +1,9 @@
 {meta: title Don't Make Me Dream}
 {meta: artist Connie Smith}
 {meta: composer Bob Morrison and Wanda Mallette}
+{meta: x_source classic-country}
+{meta: x_source_file dontmakemedreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't believe you're at my door [F]again[G7]
@@ -42,3 +45,7 @@ Don't stay a [F]while then say goodbye
 Don't touch the [G7]feelings we once knew
 Don't make me [F]dream [G7]if dreaming can't come [C]true
 {end_of_verse}
+
+
+
+

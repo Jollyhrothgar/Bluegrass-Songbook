@@ -1,6 +1,9 @@
 {meta: title Then Maybe I Can Get Some Sleep}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file thenmaybeicangetsomesleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gotta find out who's a [G7]callin'
@@ -55,3 +58,10 @@ Then [G7]maybe I can get some [C]sleep
 We'll get us a license to [F]keep house
 [C]Then maybe [G7]we can get some [C]sleep
 {end_of_verse}
+
+
+
+
+
+
+

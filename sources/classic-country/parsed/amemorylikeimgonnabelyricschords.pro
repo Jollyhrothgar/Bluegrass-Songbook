@@ -1,6 +1,9 @@
 {meta: title A Memory Like I'm Gonna Be}
 {meta: artist Tanya Tucker}
 {meta: composer Jerry Laseter and Roger Murrah}
+{meta: x_source classic-country}
+{meta: x_source_file amemorylikeimgonnabelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can hear you smiling on the [Em]phone 
@@ -52,3 +55,9 @@ Just [C]surrender cause you can't get [Em]away
 You [Dm]never can be [F]free 
 From a [G7]memory like I'm gonna [C]be
 {end_of_verse}
+
+
+
+
+
+

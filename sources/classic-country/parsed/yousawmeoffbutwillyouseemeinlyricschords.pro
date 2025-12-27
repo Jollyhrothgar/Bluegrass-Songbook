@@ -1,6 +1,9 @@
 {meta: title You Saw Me Off (But Will You See Me In)}
 {meta: artist Stonewall Jackson}
 {meta: composer Hugh X. Lewis and Benny Joy}
+{meta: x_source classic-country}
+{meta: x_source_file yousawmeoffbutwillyouseemeinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mile after mile I [F]have ridden this ol' [C]bus
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]You saw me off but [F]will you see me [C]in
 {end_of_verse}
+
+
+
+

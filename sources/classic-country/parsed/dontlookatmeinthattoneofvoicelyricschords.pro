@@ -1,6 +1,9 @@
 {meta: title Don’t Look At Me In That Tone Of Voice}
 {meta: artist Gene Watson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file dontlookatmeinthattoneofvoicelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Won't you talk to me my darling tell me what a [C]fool I [G]am
@@ -23,3 +26,5 @@ Run me [G]down I've got it coming say that I should be [G][C]ashamed
 [C]Just don't [G]look at me  in [D7]that tone of [G]voice
 [C]No don't [G]look at me  in [D7]that tone of [G]voice
 {end_of_verse}
+
+

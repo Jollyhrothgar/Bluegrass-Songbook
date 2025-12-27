@@ -1,5 +1,8 @@
 {meta: artist Emmylou Harris}
 {meta: composer Lucinda Williams}
+{meta: x_source classic-country}
+{meta: x_source_file crescentcitylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody's [C]had a few  
@@ -49,3 +52,9 @@ Now I'm after that [G]back highway
 And the longest [Am]bridge 
 I've ever [F]crossed over Pontchar[G]train
 {end_of_verse}
+
+
+
+
+
+

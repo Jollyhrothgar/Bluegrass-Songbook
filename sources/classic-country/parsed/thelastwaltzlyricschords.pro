@@ -1,6 +1,9 @@
 {meta: title The Last Waltz Lyrics Chords}
 {meta: artist Webb Pierce}
 {meta: composer Myra Freeman and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file thelastwaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The ballroom was empty the hour [C7]was [F]three
@@ -24,3 +27,6 @@ When [G7]they played the last waltz for my darling and [C]me
 {start_of_verse: Verse 4}
 Repeat last verse
 {end_of_verse}
+
+
+

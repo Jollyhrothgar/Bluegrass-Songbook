@@ -1,5 +1,8 @@
 {meta: title Shame On Me}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file shameonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Shame on me  for hurting [D7]you 
@@ -75,3 +78,16 @@ Tag:
 [G]Last night I was blind but to-day I [D7]see 
 I did you wrong Shame on [G]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

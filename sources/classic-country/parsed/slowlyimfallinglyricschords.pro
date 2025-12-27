@@ -1,6 +1,9 @@
 {meta: title Slowly I'm Falling}
 {meta: artist Web Pierce}
 {meta: composer Webb Pierce adn Tommy Hill}
+{meta: x_source classic-country}
+{meta: x_source_file slowlyimfallinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Slowly I'm falling [F]more in love with [C]you
@@ -22,3 +25,5 @@ More and more I love you [D7]as each day passes [G7]by
 No [C]need to hide my feelings for [F]it's so plain and [C]true
 [F]Slowly I'm [C]falling more in [G7]love with [C]you
 {end_of_verse}
+
+

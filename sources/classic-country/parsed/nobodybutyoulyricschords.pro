@@ -1,6 +1,9 @@
 {meta: title Nobody But You}
 {meta: artist Don Williams}
 {meta: composer John Jarrard and J.D. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file nobodybutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Who by touching my [C]hand makes me under[Dm]stand
@@ -31,3 +34,6 @@ Nobody but [C]you[F]  no[G7]body but [C]you [F]
 [F]Your love is [C]true 
 And [F]I don't need [G7]nobody but [C]you
 {end_of_verse}
+
+
+

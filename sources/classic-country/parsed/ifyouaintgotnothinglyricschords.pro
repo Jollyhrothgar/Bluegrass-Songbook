@@ -1,6 +1,9 @@
 {meta: title If You Ain't Got Nothing}
 {meta: artist Bobby Bare}
 {meta: composer Red Lane and Dan Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouaintgotnothinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if you ain’t got nothing you ain’t got nothing to lose
@@ -36,3 +39,7 @@ There ain’t no pleasure in singing these low down [G7]blues
 [C]Smoking that get down and bumming them Red Man [F]chews
 If you [C]ain’t got nothing you [G7]ain’t got nothing to [C]lose
 {end_of_verse}
+
+
+
+

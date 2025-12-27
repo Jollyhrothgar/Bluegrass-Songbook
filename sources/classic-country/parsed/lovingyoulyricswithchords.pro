@@ -1,6 +1,9 @@
 {meta: title Loving You}
 {meta: artist Tony Booth}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file lovingyoulyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You take my [F]breath [C]away each time you [D7]touch me
@@ -26,3 +29,6 @@ And let me [C]live my life [G7]loving [C]you
 {start_of_verse: Verse 4}
 [F]And let me [C]live my life [G7]loving [F]you[C]
 {end_of_verse}
+
+
+

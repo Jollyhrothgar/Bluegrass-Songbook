@@ -1,6 +1,9 @@
 {meta: title I Never Had It So Good}
 {meta: artist Kris Kristofferson}
 {meta: composer Paul Williams and Roger Nichols}
+{meta: x_source classic-country}
+{meta: x_source_file ineverhaditsogoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I never had much mon[C]ey [D7]  I [G]never won a race
@@ -35,3 +38,7 @@ I [C]always hoped that someone [G]would [D7]
 I [Em]never had a [G]love like [C]this be[Bm]fore [G]no no [Am]never
 [D7]I never had it so [G]good
 {end_of_verse}
+
+
+
+

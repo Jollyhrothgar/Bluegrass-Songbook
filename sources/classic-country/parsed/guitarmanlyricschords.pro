@@ -1,6 +1,9 @@
 {meta: title Guitar Man}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Reed}
+{meta: x_source classic-country}
+{meta: x_source_file guitarmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I quit my job down at the car wash 
@@ -51,3 +54,6 @@ You’ll wind up out on his dance floor
 And [G7]guess who’s leadin’ that five piece band 
 [F]Wouldn’t you know it’s that swingin’ little guitar [C]man 
 {end_of_verse}
+
+
+

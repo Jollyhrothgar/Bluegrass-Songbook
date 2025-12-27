@@ -1,5 +1,8 @@
 {meta: title Jesus Hold My Hand}
 {meta: artist Ricky Skaggs}
+{meta: x_source classic-country}
+{meta: x_source_file jesusholdmyhandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As I wander through this pilgrim land 
@@ -34,3 +37,6 @@ That I may [C]reach the golden [G]strand
 There's no other [C]friend on whom I can [G]depend 
 Blessed [C]Jesus [D7]hold my [G]hand
 {end_of_verse}
+
+
+

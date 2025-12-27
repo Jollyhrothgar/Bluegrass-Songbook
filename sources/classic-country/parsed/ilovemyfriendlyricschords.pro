@@ -1,6 +1,9 @@
 {meta: title I Love My Friend}
 {meta: artist Charlie Rich}
 {meta: composer Billy Sherrill and Norris D. Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file ilovemyfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She was [F]crying [C]   [D7]and I was [G7]lonely [F]
@@ -26,3 +29,5 @@ I'll still treat her like a [D7]lady
 [C]Still call her [G7]baby cause [C]I love my [G7]friend
 And we'll make it [Am]maybe
 {end_of_verse}
+
+

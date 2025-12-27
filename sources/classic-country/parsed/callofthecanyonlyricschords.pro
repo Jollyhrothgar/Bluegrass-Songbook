@@ -1,6 +1,9 @@
 {meta: title Call Of The Canyon}
 {meta: artist Jimmy Wakely}
 {meta: composer Billy Hill}
+{meta: x_source classic-country}
+{meta: x_source_file callofthecanyonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just a melan[Am]choly [Fm]echo
@@ -36,3 +39,7 @@ Standing there a[G]lone by the [Dm]ashes
 [G7]It's the [C]call [C7]of the [F]canyon
 [C]Bringing [Am]back your [Dm]answer [G7]to [C]me
 {end_of_verse}
+
+
+
+

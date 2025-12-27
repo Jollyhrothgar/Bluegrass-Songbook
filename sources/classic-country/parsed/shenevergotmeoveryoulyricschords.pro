@@ -1,6 +1,9 @@
 {meta: title She Never Got Me Over You}
 {meta: artist Keith Whitley}
 {meta: composer Hank Cochran, Dean Dillon, Keith Whitley}
+{meta: x_source classic-country}
+{meta: x_source_file shenevergotmeoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She got me to stop drinking 
@@ -30,3 +33,6 @@ She [C]never got [G7]me over [C]you
 {start_of_verse: Verse 4}
 She never got [G7]me over [F]you[C]
 {end_of_verse}
+
+
+

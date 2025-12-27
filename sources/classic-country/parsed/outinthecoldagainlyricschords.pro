@@ -1,6 +1,9 @@
 {meta: title Out In The Cold Again}
 {meta: artist Ferlin Husky}
 {meta: composer Ted Koehler and Rube Bloom}
+{meta: x_source classic-country}
+{meta: x_source_file outinthecoldagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The song that [G7]you sang so [C]sweetly 
@@ -36,3 +39,7 @@ To shelter [A#7]me from the [A7]rain
 But [D7]now I'm [A7]back where you [Dm]found me 
 [D7]Out in the [G7]cold [C]again
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Can't Go On}
 {meta: artist Earl Thomas Conley}
 {meta: composer Earl Thomas Conley and Randy Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file youcantgoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So once [Am]again the party's [Em]over
@@ -56,3 +59,9 @@ So you've [G]been shot down from love before
 You [D7]can't say no if your heart says more
 [Am]You're gonna find your[D7]self alone some[G]day
 {end_of_verse}
+
+
+
+
+
+

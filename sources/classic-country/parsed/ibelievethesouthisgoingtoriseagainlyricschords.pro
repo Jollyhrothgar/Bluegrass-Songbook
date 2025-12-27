@@ -1,6 +1,9 @@
 {meta: title I Believe The South Is Going To Rise Again}
 {meta: artist Tanya Tucker}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file ibelievethesouthisgoingtoriseagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mama never had a flower [F]garden 
@@ -43,3 +46,8 @@ But [F]not the way we [E7]thought it would back [Am]then
 [F]I mean everybody [G7]hand in [Am]hand 
 [F]I [C]believe the south is [G7]gonna rise [C]again
 {end_of_verse}
+
+
+
+
+

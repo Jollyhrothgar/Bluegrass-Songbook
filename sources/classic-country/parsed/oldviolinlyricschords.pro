@@ -1,5 +1,8 @@
 {meta: title Old Violin}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file oldviolinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I can't recall  [F]one time in my [C]life
@@ -48,3 +51,10 @@ That old violin and I were just alike
 We'd give our all to music
 [G7]And soon we'll give our [C]lives
 {end_of_verse}
+
+
+
+
+
+
+

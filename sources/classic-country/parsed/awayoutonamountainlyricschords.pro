@@ -1,6 +1,9 @@
 {meta: title Away Out On A Mountain}
 {meta: artist Jimmy Rodgers}
 {meta: composer Kelly Harrell}
+{meta: x_source classic-country}
+{meta: x_source_file awayoutonamountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I packed my grip for a farewell trip
@@ -44,3 +47,8 @@ Then [F]I'll feast on the meat and the honey so [C]sweet
 Away [G7]out on the [C]mountain
 Repeat yodel
 {end_of_verse}
+
+
+
+
+

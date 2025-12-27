@@ -1,6 +1,9 @@
 {meta: title Mardi Gras In New Orleans}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew and Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file mardigrasinneworleanslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm going to New Orleans I'm gonna see the Mardi Gras
@@ -19,3 +22,5 @@ When I see the Zulu King down on Rampart and Dumaine
 When I [C]see the Zulu King down on Rampart and [G]Dumaine
 I'm gonna [D7]stay right there [C]until I see the Zulu [G]Queen
 {end_of_verse}
+
+

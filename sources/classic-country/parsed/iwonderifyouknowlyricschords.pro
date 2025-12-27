@@ -1,5 +1,8 @@
 {meta: artist Johnny And Jack}
 {meta: composer Ella Barrett}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderifyouknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It was just by chance she came my [C]way
@@ -35,3 +38,7 @@ I’m telling you because she never [D7]will
 I [G]gave her up because she loves you [C]so
 She’s [D7]true to you I wonder if you [G]know
 {end_of_verse}
+
+
+
+

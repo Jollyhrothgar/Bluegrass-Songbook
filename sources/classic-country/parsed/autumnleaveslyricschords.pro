@@ -1,6 +1,9 @@
 {meta: title Autumn Leaves}
 {meta: artist the Everly Brothers}
 {meta: composer Joseph Kosma and Jacques Andre Marie}
+{meta: x_source classic-country}
+{meta: x_source_file autumnleaveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]The fall-ing [Dm]leaves [G7]drift by the [C]window
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [E7]When Autumn leaves [Am]start to [Dm]fall
 {end_of_verse}
+
+
+

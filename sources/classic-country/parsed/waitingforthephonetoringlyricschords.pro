@@ -1,6 +1,9 @@
 {meta: title Waiting For The Phone To Ring}
 {meta: artist Patty Loveless}
 {meta: composer Joe Tassi and Bob Tassi}
+{meta: x_source classic-country}
+{meta: x_source_file waitingforthephonetoringlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How many nights you cried so sad and lonely
@@ -52,3 +55,9 @@ You sit there like a fool
 [F]Waitin' for the phone to [C]ring now baby 
 [F]Waitin' for the phone to [C]ring
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Country Girl Lyrics and Chords}
 {meta: artist Kitty Wells}
 {meta: composer Myra Smith and Margaret Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file countrygirllyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]New York is a [F]long way from [C]Texas
@@ -37,3 +40,8 @@ If you've never been there
 {start_of_verse: Verse 5}
 [F]Oh what I'd [C]give to be a [G7]country girl [C]again
 {end_of_verse}
+
+
+
+
+

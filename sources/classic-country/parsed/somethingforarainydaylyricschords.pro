@@ -1,6 +1,9 @@
 {meta: title Something For A Rainy Day}
 {meta: artist Brenda Lee}
 {meta: composer Ronal McCown}
+{meta: x_source classic-country}
+{meta: x_source_file somethingforarainydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I'm just a [G]penny that fell [F] from a [C]hole in your pocket
@@ -28,3 +31,6 @@ Just a [G]hopeful heart standing in line
 [G]So from now on I [F]guess I'll always be [C]that something
 [Am]You saved for a [D7]rainy day that [G]never came
 {end_of_verse}
+
+
+

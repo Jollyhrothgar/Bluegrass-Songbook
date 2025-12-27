@@ -1,6 +1,9 @@
 {meta: title Call Me Up (The Phone Is In The Cradle)}
 {meta: artist Kenny Rogers}
 {meta: composer Kim Carnes and Dave Ellingson}
+{meta: x_source classic-country}
+{meta: x_source_file callmeupthephoneisinthecradlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]My friends they don't talk much bout the [A]legend
@@ -45,3 +48,8 @@
 [A7]But if you saw [G7]any plan and if you got the [D7]time
 [G7]We could talk the night [C]away
 {end_of_verse}
+
+
+
+
+

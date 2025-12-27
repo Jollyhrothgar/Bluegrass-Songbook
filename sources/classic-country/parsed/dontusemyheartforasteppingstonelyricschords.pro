@@ -1,5 +1,8 @@
 {meta: title Don't Use My Heart For A Stepping Stone}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file dontusemyheartforasteppingstonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't use my heart for a [F]stepping stone to [G7]someone else's [C]arms
@@ -21,3 +24,5 @@
 [C]Don't use my heart for a [F]stepping stone to [G7]someone else's [C]arms
 [F]Cause darling now I love [G7]you so my heart belongs to [C]you
 {end_of_verse}
+
+

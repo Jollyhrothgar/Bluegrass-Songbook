@@ -1,6 +1,9 @@
 {meta: title Country Girl Lyrics chords}
 {meta: artist Faron Young}
 {meta: composer Roy Drusky}
+{meta: x_source classic-country}
+{meta: x_source_file countrygirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I met you my country girl you didn't have a [G7]thing
@@ -29,3 +32,6 @@
 [C7]When you two are dancing and you whisper soft and [F]sweet
 [C]I wonder if you'll [F]tell him   I bought [G7]the shoes on your [C]feet
 {end_of_verse}
+
+
+

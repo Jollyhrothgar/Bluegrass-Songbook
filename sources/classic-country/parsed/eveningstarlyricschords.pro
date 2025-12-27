@@ -1,6 +1,9 @@
 {meta: title Evening Star}
 {meta: artist Kenny Rogers}
 {meta: composer Barry and Maurice Gibb}
+{meta: x_source classic-country}
+{meta: x_source_file eveningstarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you never rode west of the Arizona [D7]border
@@ -33,3 +36,6 @@ I can [G]follow the [D7]evening [G]star
 Starlight you [D7]never need [G]somebody [C]else's name
 If you [G]follow the [D7]evening [G]star
 {end_of_verse}
+
+
+

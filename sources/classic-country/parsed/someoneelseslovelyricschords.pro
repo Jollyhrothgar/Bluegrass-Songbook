@@ -1,6 +1,9 @@
 {meta: title Someone Else's Love}
 {meta: artist Wilburn Brothers}
 {meta: composer Jodi Bancino}
+{meta: x_source classic-country}
+{meta: x_source_file someoneelseslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Someone else's arms are [G7]holding her tight
@@ -26,3 +29,5 @@ Someone else's love will be my love [C]again
 She'll be just mine alone she'll [C7]be my very [F]own
 She [G7]wants to be someone else's [C]love
 {end_of_verse}
+
+

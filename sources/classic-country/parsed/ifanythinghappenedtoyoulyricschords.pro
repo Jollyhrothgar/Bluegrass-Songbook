@@ -1,6 +1,9 @@
 {meta: title If Anything Happened To You}
 {meta: artist Mary Duff}
 {meta: composer Charlie McGettigan}
+{meta: x_source classic-country}
+{meta: x_source_file ifanythinghappenedtoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]If any[G]thing [D7]happened to [G]you [G7]               
@@ -44,3 +47,8 @@ I'd [C]be de[D7]vastated be [Em]broken and [Am]blue
 If [C]anything [D7]happened 
 If [C]anything [D7]happened to [G]you
 {end_of_verse}
+
+
+
+
+

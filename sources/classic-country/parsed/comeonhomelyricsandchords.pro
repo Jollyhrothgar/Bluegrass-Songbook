@@ -1,6 +1,9 @@
 {meta: title Come On Home}
 {meta: artist Mel Tillis}
 {meta: composer Jeff Lopez}
+{meta: x_source classic-country}
+{meta: x_source_file comeonhomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's an empty pillow [C]in the bed [G]beside me
@@ -48,3 +51,9 @@ Turn [C]around pack your [D7]bags and come on [G]home
 Won't you lift your eyes and [C]look into the [G]sunset
 Turn [C]around pack your [D7]bags and come on [G]home
 {end_of_verse}
+
+
+
+
+
+

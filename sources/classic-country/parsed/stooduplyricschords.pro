@@ -1,6 +1,9 @@
 {meta: title Stood Up}
 {meta: artist Ricky Nelson}
 {meta: composer Willis Dickerson and Erma Herrold}
+{meta: x_source classic-country}
+{meta: x_source_file stooduplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I've been waiting ever since eight
@@ -36,3 +39,8 @@ Stood [C]up broken[G7]hearted a[C]gain
 {start_of_verse: Verse 6}
 [F]Stood [C]up broken[G7]hearted a[C]gain
 {end_of_verse}
+
+
+
+
+

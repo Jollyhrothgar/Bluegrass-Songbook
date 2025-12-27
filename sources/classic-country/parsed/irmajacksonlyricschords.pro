@@ -1,5 +1,8 @@
 {meta: title Irma Jackson}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file irmajacksonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'd love to shout my feelin's from a mountain high
@@ -28,3 +31,6 @@ And I guess it's right but she alone [G7]should have the final say
 But in spite of her decision forcin' us to say goodbye
 I'll still love Irma Jackson till I [C]die
 {end_of_verse}
+
+
+

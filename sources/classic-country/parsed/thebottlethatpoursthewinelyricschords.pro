@@ -1,6 +1,9 @@
 {meta: title The Bottle That Pours The Wine}
 {meta: artist David Ball}
 {meta: composer Allen Shamblin and David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file thebottlethatpoursthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was heading for the bus and [F]another one night stand
@@ -36,3 +39,7 @@ A fragile [C]vessel for melody and [G7]rhyme
 [C]Put me on a pedestal I'll [F]fall and shatter every time
 Cause I'm just the [C]bottle [G7]that pours the [C]wine
 {end_of_verse}
+
+
+
+

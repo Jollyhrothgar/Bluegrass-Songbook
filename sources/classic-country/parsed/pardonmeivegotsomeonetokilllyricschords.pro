@@ -1,5 +1,8 @@
 {meta: title Pardon Me I've Got Someone To Kill}
 {meta: artist Johnny Paycheck}
+{meta: x_source classic-country}
+{meta: x_source_file pardonmeivegotsomeonetokilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know you'll excuse me if I say goodnight 
@@ -28,3 +31,6 @@ He'll [F]find me at their [C]big house on the [G7]hill
 He'll find [Am]a note explaining why I killed us [C]all 
 Now [F]it's time to go I've got someone to [C]kill
 {end_of_verse}
+
+
+

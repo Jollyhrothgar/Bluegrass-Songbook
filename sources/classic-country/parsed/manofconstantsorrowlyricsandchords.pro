@@ -1,5 +1,8 @@
 {meta: title Man of Constant Sorrow}
 {meta: artist Soggy Bottom Boys}
+{meta: x_source classic-country}
+{meta: x_source_file manofconstantsorrowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am the ma-n of [G7]constant [C]sorrow
@@ -35,3 +38,7 @@ My face you'll [D7]never see no [G]more
 But there is one prom-ise [G7]that is [C]given
 I'll meet you on [D7]God's golden [G]shore
 {end_of_verse}
+
+
+
+

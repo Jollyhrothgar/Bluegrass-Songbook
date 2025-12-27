@@ -1,6 +1,9 @@
 {meta: title Face To The Wall}
 {meta: artist Faron Young}
 {meta: composer Bill Anderson and Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file facetothewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Was I [D7]farther from your conscience standing face to the [G]wall
@@ -26,3 +29,6 @@ As [D7]you cheated me I watched my idol [G]fall
 With your arms around another and his lips where mine should [C]be
 Then I [D7]saw you turned my picture slowly face to the [G]wall
 {end_of_verse}
+
+
+

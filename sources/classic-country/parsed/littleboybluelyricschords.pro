@@ -1,6 +1,9 @@
 {meta: title Little Boy Blue}
 {meta: artist Lacy J. Dalton}
 {meta: composer Lance Gray}
+{meta: x_source classic-country}
+{meta: x_source_file littleboybluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hey little boy I’m so proud of you
@@ -45,3 +48,8 @@ And they’ll [C]pull you through  my little boy [G]blue
 No matter [D7]what comes down  I’ll always [G]love you
 No matter [D7]what comes down  I’ll always [G]love you
 {end_of_verse}
+
+
+
+
+

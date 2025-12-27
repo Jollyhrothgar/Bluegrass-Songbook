@@ -1,6 +1,9 @@
 {meta: title Get Together}
 {meta: artist Anne Murray}
 {meta: composer Chet Powers and David Valentini}
+{meta: x_source classic-country}
+{meta: x_source_file gettogetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Love is but a song we sing fear's the way we [Dm]die
@@ -39,3 +42,9 @@
 [C]C'mon people now smile on your [D7]brother
 [G]Everybody get together try to [C]love one [D7]another right [G]now
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Who's Counting}
 {meta: artist Ronnie Milsap}
 {meta: composer Kye Fleming and Dennis Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file whoscountinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess you [Am]wonder what's become of me well I'm [G]doing fine
@@ -40,3 +43,8 @@ It doesn't [Am]matter to me that [Dm]tomorrow makes [D7]tomorrow [C]makes
 Four hundred [Em]fifty one [Bm]long nights of [C]thinking [D7]about you
 The [C]lonely hours and [Bm]minutes keep [Dm]mounting but who's [G]counting
 {end_of_verse}
+
+
+
+
+

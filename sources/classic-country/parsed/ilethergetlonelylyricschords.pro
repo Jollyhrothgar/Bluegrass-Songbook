@@ -1,6 +1,9 @@
 {meta: title I Let Her Get Lonely}
 {meta: artist Don Gibson}
 {meta: composer Carl Belew, Art Bishop, W.S. Stevenson}
+{meta: x_source classic-country}
+{meta: x_source_file ilethergetlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She'd still be here with me 
@@ -43,3 +46,8 @@ I'd take her [G7]back again
 It's plain to see why she left me 
 I let her get [C]lonely
 {end_of_verse}
+
+
+
+
+

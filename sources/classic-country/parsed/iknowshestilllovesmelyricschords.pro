@@ -1,6 +1,9 @@
 {meta: title I Know She Still Loves Me}
 {meta: artist George Strait}
 {meta: composer Aaron Gayle Barker and Monty H. N Holmes}
+{meta: x_source classic-country}
+{meta: x_source_file iknowshestilllovesmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's just a hint of indifference 
@@ -48,3 +51,9 @@ But I don't think she likes me any[C]more
 Right [G7]now I know she loves me 
 But I don't think she likes me any[C]more
 {end_of_verse}
+
+
+
+
+
+

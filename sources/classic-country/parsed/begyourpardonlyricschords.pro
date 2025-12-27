@@ -1,6 +1,9 @@
 {meta: title Beg Your Pardon}
 {meta: artist Sonny James}
 {meta: composer Beasley Smith and Francis Craig}
+{meta: x_source classic-country}
+{meta: x_source_file begyourpardonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I lose my pay beg your [G7]pardon
@@ -27,3 +30,6 @@
 [F]But if some sunny day you'll [C]let me have my [Am]way
 [D7]I won't have to [G7]say beg your [C]pardon
 {end_of_verse}
+
+
+

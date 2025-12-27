@@ -1,6 +1,9 @@
 {meta: title Blue Monday}
 {meta: artist Fats Domino}
 {meta: composer Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file bluemondaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Blue Monday I hate blue Monday
@@ -39,3 +42,8 @@ My girl [C]calls got to tell her I'm [G]out
 Cause Thursday is a hard working [D7]day
 And Friday I get my [G]pay
 {end_of_verse}
+
+
+
+
+

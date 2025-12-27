@@ -1,6 +1,9 @@
 {meta: title Green Green}
 {meta: artist Eddy Arnold}
 {meta: composer Randy Sparks, Barry McGuire, Encino Mandalay}
+{meta: x_source classic-country}
+{meta: x_source_file greengreenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Green green it's green they [C]say
@@ -56,3 +59,10 @@
 [D7]To where the [G]grass is [D7]greener [G]still
 [D7]To where the [G]grass is [D7]greener [G]still
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When The Boy In Your Arms}
 {meta: artist Connie Francis}
 {meta: composer Roy Bennett and Sid Tepper}
+{meta: x_source classic-country}
+{meta: x_source_file whentheboyinyourarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the boy in your arms 
@@ -36,3 +39,8 @@ So [F]hold him tight [C]and never let him go
 [G7]Make him yours for ever [C]more
 [G7]Make him yours for ever [C]more
 {end_of_verse}
+
+
+
+
+

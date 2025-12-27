@@ -1,6 +1,9 @@
 {meta: title Pretty Words}
 {meta: artist Vince Gill}
 {meta: composer Don Schlitz and Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file prettywordslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've seen the way he cast his [C]spell 
@@ -49,3 +52,7 @@ Just pretty [G]words [D7]just pretty [G]words
 [C]Pretty words won't [F]make your dreams [D7]come true
 Just pretty [G]words [D7]just pretty [G]words
 {end_of_verse}
+
+
+
+

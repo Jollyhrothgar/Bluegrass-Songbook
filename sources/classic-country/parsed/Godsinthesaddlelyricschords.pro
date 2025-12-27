@@ -1,5 +1,8 @@
 {meta: title God's In The Saddle}
 {meta: artist Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file Godsinthesaddlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On the trail when a storm is in the sky I [G7]never [C]worry
@@ -18,3 +21,5 @@
 {start_of_verse: Verse 3}
 Repeat
 {end_of_verse}
+
+

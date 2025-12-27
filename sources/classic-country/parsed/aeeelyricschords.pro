@@ -1,5 +1,8 @@
 {meta: title A-Eee}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file aeeelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [A]Written and recorded by Hank Williams Jr.
@@ -55,3 +58,11 @@ Well she's 24 in the waste and 36 and [C]38
 And she's as pretty as she can be she's got a beautiful [G7]body
 And that’s all that matters to me me and my baby and [C]a-eee
 {end_of_verse}
+
+
+
+
+
+
+
+

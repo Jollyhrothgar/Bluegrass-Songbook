@@ -1,6 +1,9 @@
 {meta: title Love Coming Down}
 {meta: artist Elvis Presley}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file lovecomingdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember how your eyes used to light [C7]up
@@ -46,3 +49,8 @@ But if a man's so [G7]busy [C]going up in the [F]world
 That he couldn't see love coming [G7]down
 Love coming [C]down
 {end_of_verse}
+
+
+
+
+

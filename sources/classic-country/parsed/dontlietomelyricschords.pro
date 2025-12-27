@@ -1,5 +1,8 @@
 {meta: title Don't Lie To Me}
 {meta: artist Fats Domino}
+{meta: x_source classic-country}
+{meta: x_source_file dontlietomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well let's talk it over baby fore we start 
@@ -40,3 +43,10 @@ You give me all your loving if I give mine to you
 But don't you lie [F]to me oh don't you lie to [C]me 
 Because it [G7]makes me mad and I'll get evil as a man can [C]be
 {end_of_verse}
+
+
+
+
+
+
+

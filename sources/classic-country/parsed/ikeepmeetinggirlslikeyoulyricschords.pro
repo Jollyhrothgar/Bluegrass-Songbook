@@ -1,5 +1,8 @@
 {meta: title I Keep Meeting Girls Like You}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file ikeepmeetinggirlslikeyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to [Am]dream [F]I don't dream any[G7]more 
@@ -42,3 +45,8 @@ And play the game just like they [C]do
 [F]I guess I'll get to be [C]just like my compa[Am]ny 
 If I [D7]keep meeting [G7]girls like [C]you
 {end_of_verse}
+
+
+
+
+

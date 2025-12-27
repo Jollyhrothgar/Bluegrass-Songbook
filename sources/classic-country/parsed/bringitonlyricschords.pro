@@ -1,6 +1,9 @@
 {meta: title Bring It On}
 {meta: artist Willie Nelson}
 {meta: composer Willie Nelson and Buddy Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file bringitonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say there is no gain without pain
@@ -41,3 +44,8 @@
 [F]Bring it on  bring it [C]on
 [G7]It's just one more storm in the sea so bring it [C]on
 {end_of_verse}
+
+
+
+
+

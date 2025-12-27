@@ -1,6 +1,9 @@
 {meta: title Old Fashioned Singing}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery and Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file oldfashionedsinginglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just love  good [F]old gospel [C]singing 
@@ -35,3 +38,7 @@ Tag:
 I just love  good [F]old country [C]preaching
 This old world has gone [G7]without it much too [C]long
 {end_of_verse}
+
+
+
+

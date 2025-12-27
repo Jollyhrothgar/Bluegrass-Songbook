@@ -1,6 +1,9 @@
 {meta: title I'll Always Be Loving You}
 {meta: artist George Strait}
 {meta: composer Aaron Baker, Donny Kees, Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file illalwaysbelovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You can turn me loose tear me [G7]up and run me [C]down
@@ -33,3 +36,7 @@ As for [G7]me I'll always be loving [C]you
 {start_of_verse: Verse 4}
 As for [G7]me I'll always be loving [C]you
 {end_of_verse}
+
+
+
+

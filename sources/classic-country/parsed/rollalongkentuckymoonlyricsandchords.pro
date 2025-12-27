@@ -1,6 +1,9 @@
 {meta: title Roll Along Kentucky Moon}
 {meta: artist JImmy Rodgers}
 {meta: composer Bill Halley}
+{meta: x_source classic-country}
+{meta: x_source_file rollalongkentuckymoonlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where are you old moon of Ken[G7]tucky
@@ -43,3 +46,8 @@ Twas a [D7]love dream that ended too [G7]soon
 But wher[C]ever you may be go [G7]bring her back to [D7]me
 Roll [G7]along roll along Kentucky [C]moon
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Better Life Is Waiting}
 {meta: artist Melba Montgomery}
 {meta: composer Melba Montgomery and Carl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file abetterlifeiswaitinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm ready to leave this sinful world
@@ -45,3 +48,7 @@ I'll walk [C]down a lighted pathway with my [F]Jesus for my [C]guide
 I’ll find a better life is waiting for me [G7]on the other [C]side
 ([F]The other [C]side) 
 {end_of_verse}
+
+
+
+

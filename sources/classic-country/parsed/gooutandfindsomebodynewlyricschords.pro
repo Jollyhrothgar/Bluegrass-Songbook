@@ -1,5 +1,8 @@
 {meta: title Go Out And Find Somebody New}
 {meta: artist Floyd Tillman}
+{meta: x_source classic-country}
+{meta: x_source_file gooutandfindsomebodynewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've tried so hard to make you [G7]happy
@@ -28,3 +31,6 @@ I know my heart will break in [C]two
 I know I want you to be [F]happy
 Go [G7]out and find somebody [C]new
 {end_of_verse}
+
+
+

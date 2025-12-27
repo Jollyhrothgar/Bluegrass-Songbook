@@ -1,6 +1,9 @@
 {meta: title Chandelier Of Stars}
 {meta: artist Jim Ed Brown}
 {meta: composer Eddie White and Mack Wolfson}
+{meta: x_source classic-country}
+{meta: x_source_file chandelierofstarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The miracle we [G]saw that night 
@@ -38,3 +41,8 @@ We [D7]saw the light of [G]love
 Bom [D7]bom bom bom bom bom bom [G]bom bom bom bom bom
 Bom [D7]bom bom bom bom bom bom [G]bom bom bom bom bom
 {end_of_verse}
+
+
+
+
+

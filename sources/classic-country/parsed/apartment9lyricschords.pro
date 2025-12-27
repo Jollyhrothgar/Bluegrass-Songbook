@@ -1,6 +1,9 @@
 {meta: title Apartment # 9}
 {meta: artist Tammy Wynette}
 {meta: composer Johnny Paycheck - Bobby Austin}
+{meta: x_source classic-country}
+{meta: x_source_file apartment9lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just follow the [F]stairway
@@ -36,3 +39,7 @@
 [C7]And the sun will never [F]shine
 [G7]In Apartment Number [C]nine
 {end_of_verse}
+
+
+
+

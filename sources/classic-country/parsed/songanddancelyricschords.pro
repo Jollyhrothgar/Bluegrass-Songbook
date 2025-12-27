@@ -1,5 +1,8 @@
 {meta: title Song And Dance}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file songanddancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Song and dance [C]song and [G]dance 
@@ -35,3 +38,7 @@ Well you said you gonna make you some [C]brand new [G]plans
 [G]You're back now begging for [C]another [G]chance 
 [C]Singing that [G]same old [D7]song and [G]dance
 {end_of_verse}
+
+
+
+

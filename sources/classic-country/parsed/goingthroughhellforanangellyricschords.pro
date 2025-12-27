@@ -1,6 +1,9 @@
 {meta: title Going Through Hell For An Angel}
 {meta: artist Jack Greene}
 {meta: composer Jerry Max Lane and Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file goingthroughhellforanangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My so called friends I [F]used to spend my [C]time with
@@ -33,3 +36,7 @@ And [F]now the angel's [G7]mine to hell with all the [C]rest
 {start_of_verse: Verse 4}
 Yes [F]now the angel's [G7]mine to hell with all the [C]rest
 {end_of_verse}
+
+
+
+

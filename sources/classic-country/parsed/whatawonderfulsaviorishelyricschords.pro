@@ -1,5 +1,8 @@
 {meta: title What A Wonderful Savior Is He}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file whatawonderfulsaviorishelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I once wandered out in sin and despair
@@ -39,3 +42,8 @@ What a wonderful [D7]Savior is [G]He
 {start_of_verse: Verse 4}
 What a wonderful [D7]Savior is [G]He
 {end_of_verse}
+
+
+
+
+

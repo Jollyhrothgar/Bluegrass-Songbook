@@ -1,6 +1,9 @@
 {meta: title Montego Bay}
 {meta: artist Jack Greene}
 {meta: composer Hank Cochran &amp; Glenn Martin}
+{meta: x_source classic-country}
+{meta: x_source_file montegobaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I showed her most of Tennessee that's [F]all I could afford
@@ -27,3 +30,6 @@ Tag:
 {start_of_verse: Verse 4}
 [G7]Oh I like it here (like it here) but I love Montego [C]Bay
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title A Home in Heaven}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file ahomeinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Around me many [D7]are [G]building
@@ -42,3 +45,8 @@
 [G]Will you move to [C]that beautiful [G]city
 [D7]And live with Christ [G]evermore
 {end_of_verse}
+
+
+
+
+

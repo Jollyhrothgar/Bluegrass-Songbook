@@ -1,6 +1,9 @@
 {meta: title Every Other Friday At Five}
 {meta: artist Doug Stone}
 {meta: composer Steven Dale Jones}
+{meta: x_source classic-country}
+{meta: x_source_file everyotherfridayatfivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]One out of [G7]two ain't gonna make [Am]it
@@ -45,3 +48,8 @@ On [Dm]every other Fri[G7]day at [C]five
 {start_of_verse: Verse 5}
 On [Dm]every other Fri[G7]day at [C]five
 {end_of_verse}
+
+
+
+
+

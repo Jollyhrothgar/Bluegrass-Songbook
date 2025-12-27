@@ -1,6 +1,9 @@
 {meta: title If I Could Hold Back The Dawn}
 {meta: artist Carl Smith}
 {meta: composer Carl Butler}
+{meta: x_source classic-country}
+{meta: x_source_file ificouldholdbackthedawnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you [C]called me and said you had to see [G]me
@@ -29,3 +32,6 @@
 [C]But there wouldn't be a new [G]tomorrow
 [A7]If I could [D7]hold back the [G]dawn
 {end_of_verse}
+
+
+

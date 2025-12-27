@@ -1,5 +1,8 @@
 {meta: title El Gavilan}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file elgavilanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You gotta make your own [F]rules child 
@@ -26,3 +29,6 @@ Running for [G7]glory freedom to [C]fly
 Will you [F]remember way down the [C]road 
 Somebody [G7]loves you more than you [C]know
 {end_of_verse}
+
+
+

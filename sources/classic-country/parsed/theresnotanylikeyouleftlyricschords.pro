@@ -1,5 +1,8 @@
 {meta: title There’s Not Any Like You Left Lyrics and chords}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file theresnotanylikeyouleftlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I used to [F]think all the [G7]girls I knew were [C]just the same
@@ -18,3 +21,5 @@ Too late I [F]find no there's not [G7]any like ya [C]left
 {start_of_verse: Verse 3}
 Too late I [F]find no there's not [G7]any like ya [C]left 
 {end_of_verse}
+
+

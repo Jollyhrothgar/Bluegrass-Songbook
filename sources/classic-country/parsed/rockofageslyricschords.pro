@@ -1,6 +1,9 @@
 {meta: title Rock Of Ages}
 {meta: artist The Statler Brothers}
 {meta: composer Brantley George}
+{meta: x_source classic-country}
+{meta: x_source_file rockofageslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rock of ages [C]cleft for [G]me 
@@ -33,3 +36,6 @@ Let me hide [D7]myself in [G]Thee
 Rock of ages [C]cleft for [G]me 
 Let me hide [D7]myself in [G]Thee
 {end_of_verse}
+
+
+

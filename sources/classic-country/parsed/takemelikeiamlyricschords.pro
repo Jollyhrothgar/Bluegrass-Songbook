@@ -1,6 +1,9 @@
 {meta: title Take Me Like I Am}
 {meta: artist Johnny Horton}
 {meta: composer Claude King}
+{meta: x_source classic-country}
+{meta: x_source_file takemelikeiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a-livin' on the other side [G7]of the track its [C]true
@@ -37,3 +40,7 @@ Had a million heart-aches but I'm happy all the time
 I can be like a tiger or as [F]meek as a [C]lamb
 If you want to get along with me you'll [G7]take me like I [C]am
 {end_of_verse}
+
+
+
+

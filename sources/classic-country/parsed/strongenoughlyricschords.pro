@@ -1,6 +1,9 @@
 {meta: title Strong Enough}
 {meta: artist Alan Jackson}
 {meta: composer Adam Wright}
+{meta: x_source classic-country}
+{meta: x_source_file strongenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I just took your [G7]picture off the [C]table
@@ -48,3 +51,9 @@ Strong enough to [G7]get her off my [C]mind
 Strong enough to [G7]get her off my [C]mind
 Strong enough to [G7]get her off my [F]mind[C]
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title On The Back Row}
 {meta: artist George Jones}
 {meta: composer Jerry Chestnut and Norris Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file onthebackrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I sit on the [F]back row in a [C]church down the street
@@ -29,3 +32,6 @@ Where [G7]lonely people find someone that [C]hopes to settle down
 They tell [F]me to go and I can't under[C]stand
 Here [G7]I sit on the back row  while you wed another [C]man
 {end_of_verse}
+
+
+

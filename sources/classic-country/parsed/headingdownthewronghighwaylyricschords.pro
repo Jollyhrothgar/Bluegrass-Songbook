@@ -1,6 +1,9 @@
 {meta: title Heading Down the Wrong Highway}
 {meta: artist Hank Thompson}
 {meta: composer Ted Daffan}
+{meta: x_source classic-country}
+{meta: x_source_file headingdownthewronghighwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Too many sweethearts and none of them [G7]true
@@ -29,3 +32,6 @@ God only knows how this all will [C]end
 Drinking and gambling [C7]both night and [F]day
 Headin' [G7]down the wrong [C]highway
 {end_of_verse}
+
+
+

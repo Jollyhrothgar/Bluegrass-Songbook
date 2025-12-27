@@ -1,6 +1,9 @@
 {meta: title We Had A Good Thing Going}
 {meta: artist Brenda Lee}
 {meta: composer Eddie Polo}
+{meta: x_source classic-country}
+{meta: x_source_file wehadagoodthinggoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh baby I know that we just [Dm]couldn't go wrong
@@ -32,3 +35,6 @@ Oh baby we had a good thing [Dm]going yeah we did
 But we [F]lost it somewhere and [G7]Lord knows it's a crying [C]shame[G7]
 Yes we [F]lost it somewhere and [G7]Lord knows it's a crying [C]shame
 {end_of_verse}
+
+
+

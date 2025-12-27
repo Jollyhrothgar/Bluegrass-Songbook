@@ -1,6 +1,9 @@
 {meta: title Here I Am Drunk Again}
 {meta: artist Moe Bandy}
 {meta: composer Robert Warden and Clyde Beavers}
+{meta: x_source classic-country}
+{meta: x_source_file hereiamdrunkagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I said I'd [C]never do it [G]again
@@ -29,3 +32,6 @@
 [G]Drowning my [C]sorrows deep with [G]in
 [D7]Here I am I'm drunk [G]again
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Greystone Chapel}
 {meta: artist Johnny Cash}
 {meta: composer Glen Sherley}
+{meta: x_source classic-country}
+{meta: x_source_file greystonechapellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7][C]Inside the walls of prison my body may [C]be
@@ -44,3 +47,9 @@ Now there's Greystone chapel here at Folsom
 [G7]Inside the walls of prison my body may [C]be
 [F]But my Lord [G7]has set my soul [C]free
 {end_of_verse}
+
+
+
+
+
+

@@ -1,4 +1,7 @@
 {meta: artist Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file whenthefallenangelsflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I have climbed so many [G7]mountains  just to reach the other [C]side
@@ -32,3 +35,7 @@ We will have the wings of [G7]eagles  when the fallen angels [C]fly
 When [C7]the fallen angels [F]fly  when the fallen angels [C]fly
 We will have the wings of [G7]eagles  when the fallen angels [C]fly
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title You Oughta See Pickles Now}
 {meta: artist Tommy Collins}
 {meta: composer Dick Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file yououghtaseepicklesnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Now when I was a little boy there lived next door to [D7]me
@@ -43,3 +46,8 @@ When [D7]she walks by I look and sigh [G]all I can say is wow
 [C]Now I realize that she's the sweetest thing [G]around
 Oh [D7]gee oh golly you oughta see Pickles [G]now
 {end_of_verse}
+
+
+
+
+

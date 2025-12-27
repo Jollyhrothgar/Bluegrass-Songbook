@@ -1,6 +1,9 @@
 {meta: title Numbers}
 {meta: artist Bobby Bare}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file numberslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was sitting here Friday supping on a glass of [D7]wine
@@ -71,3 +74,12 @@ There's flaws in all of them
 That's why on a scale of ten to one friend
 There ain't no ten
 {end_of_verse}
+
+
+
+
+
+
+
+
+

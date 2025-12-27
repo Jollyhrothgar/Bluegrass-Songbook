@@ -1,6 +1,9 @@
 {meta: title Dixie Lullaby}
 {meta: artist Clint Black}
 {meta: composer Claude Bridges and Chris Stainton}
+{meta: x_source classic-country}
+{meta: x_source_file dixielullabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why don't you [F]gather round me people 
@@ -51,3 +54,10 @@ With his [G7]Dixie Lulla[C]by [Dm]
 He's got a [G7]Dixie Lulla[C]by [Dm]
 He's got a [G7]Dixie Lulla[F]by [D7]   [G7]   [C]
 {end_of_verse}
+
+
+
+
+
+
+

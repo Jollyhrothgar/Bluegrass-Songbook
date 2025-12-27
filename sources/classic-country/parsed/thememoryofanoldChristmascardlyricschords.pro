@@ -1,6 +1,9 @@
 {meta: title The Memory Of An Old Christmas Card}
 {meta: artist Jim Reeves}
 {meta: composer Vaughn Horton}
+{meta: x_source classic-country}
+{meta: x_source_file thememoryofanoldChristmascardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It’s the [D7]memory of an old Christmas [G]card
@@ -41,3 +44,8 @@ And it [D7]brings back sweet memories dear to [G]me
 Though it's faded and worn it's as [C]precious as the [G]morn
 When I [D7]found it neath our first Christmas [G]tree
 {end_of_verse}
+
+
+
+
+

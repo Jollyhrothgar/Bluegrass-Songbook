@@ -1,6 +1,9 @@
 {meta: title Freight Train}
 {meta: artist Canadian Sweethearts}
 {meta: composer Elizabeth Cotton, Paul James, Frederick Williams}
+{meta: x_source classic-country}
+{meta: x_source_file freighttrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Freight train freight train [G7]going so fast
@@ -41,3 +44,8 @@ As [C]long as it keeps [G7]rolling [C]on
 I don't [E7]care what [F]train I'm on
 As [C]long as it keeps [G7]rolling [C]on
 {end_of_verse}
+
+
+
+
+

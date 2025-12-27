@@ -1,6 +1,9 @@
 {meta: title Be My Guest}
 {meta: artist Fats Domino}
 {meta: composer Fats Domino, Tommy Boyce, John S. Marascalco}
+{meta: x_source classic-country}
+{meta: x_source_file bemyguestlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come on baby and [C]be my guest
@@ -36,3 +39,7 @@ So [D7]be my guest to[G]night
 [C]Don't  [G]let me down
 [D7]I'm the king but you can wear my [G]crown
 {end_of_verse}
+
+
+
+

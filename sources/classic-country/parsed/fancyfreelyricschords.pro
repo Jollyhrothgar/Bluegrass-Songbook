@@ -1,6 +1,9 @@
 {meta: title Fancy Free}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Roy August and Jimmy Hinson}
+{meta: x_source classic-country}
+{meta: x_source_file fancyfreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm setting fancy free be cause she wants to [G7]go
@@ -36,3 +39,7 @@
 [F]Even though that girl she's the best part of my [C]world
 [G7]Along with all my dreams I'm setting fancy [C]free
 {end_of_verse}
+
+
+
+

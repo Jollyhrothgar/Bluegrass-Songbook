@@ -1,6 +1,9 @@
 {meta: title One Thing Leads To Another}
 {meta: artist Carl Smith}
 {meta: composer Eddy Raven}
+{meta: x_source classic-country}
+{meta: x_source_file onethingleadstoanotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I guess if I'd admit it [C]we'd all know who was [G]wrong
@@ -33,3 +36,7 @@ One thing leads to [D7]another every [G]time
 {start_of_verse: Verse 4}
 One thing leads to [D7]another every [G]time
 {end_of_verse}
+
+
+
+

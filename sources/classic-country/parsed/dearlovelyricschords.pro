@@ -1,6 +1,9 @@
 {meta: title Dear Love}
 {meta: artist Sonny James}
 {meta: composer Dub Dickerson}
+{meta: x_source classic-country}
+{meta: x_source_file dearlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Dear lo-v-e in this [G7]message I am sending
@@ -25,3 +28,6 @@ It’s [C]not goodbye I’m [D7]signing
 Our [C]love will [D7]live dear [G]love
 Repeat last verse
 {end_of_verse}
+
+
+

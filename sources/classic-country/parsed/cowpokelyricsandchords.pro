@@ -1,6 +1,9 @@
 {meta: title Cowpoke Lyrics Chords}
 {meta: artist Slim Whitman}
 {meta: composer Stan Jones}
+{meta: x_source classic-country}
+{meta: x_source_file cowpokelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woo [Am]hoo doo [C]woo woo hoo ooo woo [Am]ooo
@@ -34,3 +37,8 @@
 {start_of_verse: Verse 6}
 [C]Woo [Am]hoo doo [C]woo woo hoo ooo woo [Am]ooo
 {end_of_verse}
+
+
+
+
+

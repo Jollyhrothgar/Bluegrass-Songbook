@@ -1,6 +1,9 @@
 {meta: title Let Me Try}
 {meta: artist Randy Travis}
 {meta: composer Buddy Cannon and Allen Shamblin}
+{meta: x_source classic-country}
+{meta: x_source_file letmetrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say love  is just a [C]lie
@@ -30,3 +33,6 @@ I will [C]wipe away the saddest tear that [G]falls from your [C]blue eyes
 My [Am]love can heal the hurt you feel   [D7]let me [G]try [C]
 Oh [Am]love can heal the hurt you feel  [D7]let me [G]try
 {end_of_verse}
+
+
+

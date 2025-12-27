@@ -1,6 +1,9 @@
 {meta: title I'm A Long Way From Home}
 {meta: artist Porter Wagoner}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file imalongwayfromhomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a l-ong [F]way from [G7]home
@@ -36,3 +39,8 @@ Spoken:
 [F]I'm a l-ong [G7]way from home every-thing [F]is [G7]wrong
 [F]Lord please [G7]watch over [C]me
 {end_of_verse}
+
+
+
+
+

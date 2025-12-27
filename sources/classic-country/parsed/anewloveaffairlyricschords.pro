@@ -1,5 +1,8 @@
 {meta: title A New Love Affair Lyrics Chords}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file anewloveaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It takes a little heartache it takes a little yearning
@@ -21,3 +24,5 @@ If your dreams have all been shattered and your [G]heart's left cold and [D7]bar
 [G]Just a little affection [G7]from someone who [C]cares
 [G]That's just what started [D7]my new love [G]affair
 {end_of_verse}
+
+

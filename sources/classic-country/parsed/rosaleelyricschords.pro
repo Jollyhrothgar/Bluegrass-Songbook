@@ -1,6 +1,9 @@
 {meta: title Rosalee}
 {meta: artist Bobby Bare}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file rosaleelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]As I [F]lay here all [G7]alone I feel the [C]darkness coming on
@@ -54,3 +57,10 @@ When our [F]sun is shining six feet over [G7]me
 Rosa[Dm]lee
 Yes your [G7]leaving took the living out of [C]me    
 {end_of_verse}
+
+
+
+
+
+
+

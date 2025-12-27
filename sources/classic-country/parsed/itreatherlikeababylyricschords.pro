@@ -1,6 +1,9 @@
 {meta: title I Treat Her Like A Baby}
 {meta: artist Billy Walker}
 {meta: composer Kay Arnold and Kendall Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file itreatherlikeababylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't stand to see my baby want for [D7]anything
@@ -23,3 +26,5 @@ I've [G7]done all I know to do [C]trying hard [F]to [C]please
 While [G7]I treat her like a baby and she treats me like a [C]dog
 While [G7]I treat her like a baby and she treats me like a [C]dog
 {end_of_verse}
+
+

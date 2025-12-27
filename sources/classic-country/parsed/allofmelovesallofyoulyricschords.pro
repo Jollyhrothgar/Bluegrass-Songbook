@@ -1,5 +1,8 @@
 {meta: title All Of Me Loves All Of You}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file allofmelovesallofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just one minute with you my love
@@ -46,3 +49,11 @@ Makes me feel like I’m in heaven above
 Cause you’re an angel I know [G7]it’s true
 And all of me loves all of [C]you
 {end_of_verse}
+
+
+
+
+
+
+
+

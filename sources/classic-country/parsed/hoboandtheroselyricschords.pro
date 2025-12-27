@@ -1,6 +1,9 @@
 {meta: title Hobo And The Rose}
 {meta: artist Webb Pierce}
 {meta: composer Vincent Matthews and Don Vinson}
+{meta: x_source classic-country}
+{meta: x_source_file hoboandtheroselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It happened many [F]years [C]ago not [C7]many people [F]know
@@ -60,3 +63,12 @@
 {start_of_verse: Verse 10}
 [G7]A hobo and [C]the rose a [G7]hobo and the [C]rose
 {end_of_verse}
+
+
+
+
+
+
+
+
+

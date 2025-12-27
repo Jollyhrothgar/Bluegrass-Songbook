@@ -1,6 +1,9 @@
 {meta: title Glad I Found You}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Joe E. Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file gladifoundyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There ain’t no dark clouds in my sky any [D7]more
@@ -26,3 +29,6 @@ I didn’t even know your name
 [G]My prayers at last have been [D7]answered
 [G]God was so good He gave me you
 {end_of_verse}
+
+
+

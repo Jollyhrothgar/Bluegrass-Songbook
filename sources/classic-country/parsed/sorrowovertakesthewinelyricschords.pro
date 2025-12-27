@@ -1,6 +1,9 @@
 {meta: title Sorrow Overtakes The Wine}
 {meta: artist Porter Wagoner}
 {meta: composer Joyce McCord}
+{meta: x_source classic-country}
+{meta: x_source_file sorrowovertakesthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say my tears come from the [F]bottle
@@ -29,3 +32,6 @@ Where I can leave old memories [G7]behind
 But [C]always just before I [F]reach them
 [G7]Sorrow overtakes the [C]wine
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title There Goes My Baby}
 {meta: artist Ricky Nelson}
 {meta: composer James Kirkland and Gary Burton}
+{meta: x_source classic-country}
+{meta: x_source_file theregoesmybabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There goes my baby going for a ride
@@ -40,3 +43,8 @@ There goes my baby going for a ride
 {start_of_verse: Verse 6}
 [G7]Well I know she's lonesome if I'm not by her [C]side
 {end_of_verse}
+
+
+
+
+

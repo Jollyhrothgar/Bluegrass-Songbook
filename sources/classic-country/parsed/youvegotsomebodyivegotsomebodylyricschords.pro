@@ -1,6 +1,9 @@
 {meta: title You've Got Somebody I've Got Somebody}
 {meta: artist Vern Gosdin}
 {meta: composer Michael Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file youvegotsomebodyivegotsomebodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Friday night [Am]after the [C]show [F]hotel rooms are [G7]gettin’ [C]small
@@ -40,3 +43,6 @@ When you’re trying to prove you’ve still [C]got what it takes
 You’re afraid to [G7]walk out a[C]lone
 You got somebody I got somebody [G7]why don’t we go [C]home
 {end_of_verse}
+
+
+

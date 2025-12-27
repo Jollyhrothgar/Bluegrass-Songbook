@@ -1,6 +1,9 @@
 {meta: title The City Cries at Night}
 {meta: artist Jim Ed Brown}
 {meta: composer Eddie Miller}
+{meta: x_source classic-country}
+{meta: x_source_file thecitycriesatnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have you ever stopped and listened at the way that a city sheds its [C]tears
@@ -38,3 +41,7 @@ Tells me how the city cries at [G]night
 The [D7]walls of my heart are thin and the hurt it just walks right in
 Tells me how the city cries at [G]night
 {end_of_verse}
+
+
+
+

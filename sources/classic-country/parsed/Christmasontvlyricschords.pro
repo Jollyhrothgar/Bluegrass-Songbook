@@ -1,5 +1,8 @@
 {meta: title Christmas On TV}
 {meta: artist Chris Isaak}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasontvlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm watching Christmas on TV
@@ -41,3 +44,9 @@ So merry [C]Christmas from one [D7]million miles [G]away
 {start_of_verse: Verse 6}
 Oh merry [C]Christmas from a [D7]million miles [G]away
 {end_of_verse}
+
+
+
+
+
+

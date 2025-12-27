@@ -1,5 +1,8 @@
 {meta: title My window faces the South}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file mywindowfacesthesouthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My window faces the south
@@ -28,3 +31,6 @@ And though I am far from that [G7]Swanee
 [C]I'm never frowning or down in the [E7]mouth
 My [A7]Window [D7]faces the [G]South
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'm Gonna Fool Everybody}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnafooleverybodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Gonna fool everybody gonna tell everybody that I left you
@@ -28,3 +31,6 @@ That I longed for someone new both [C7]night and [F]day
 But if you call me on the phone [C]saying daddy you can come on [A7]home
 I'm [D7]gonna be the fool that [G7]tried to fool every[C]body
 {end_of_verse}
+
+
+

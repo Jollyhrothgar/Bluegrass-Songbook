@@ -1,6 +1,9 @@
 {meta: title Hitch Hiking Girl}
 {meta: artist Red Sovine}
 {meta: composer Ray King}
+{meta: x_source classic-country}
+{meta: x_source_file hitchhikinggirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was rolling along minding my [F]business
@@ -54,3 +57,10 @@ Take all the time you need
 [F]Now you can take it from me and the [C]ICC
 [G7]Don't ever trust a hitchhiking [C]girl
 {end_of_verse}
+
+
+
+
+
+
+

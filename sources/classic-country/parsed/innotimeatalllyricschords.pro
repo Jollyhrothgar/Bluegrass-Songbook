@@ -1,6 +1,9 @@
 {meta: title In No Time at All}
 {meta: artist Ronnie Milsap}
 {meta: composer Archie Jordan and Richard C Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file innotimeatalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The moment that you smile [F]is when it all began
@@ -42,3 +45,8 @@ In no time at [C]a--[F]--[C]ll
 {start_of_verse: Verse 6}
 [G7]In no time at [C]all
 {end_of_verse}
+
+
+
+
+

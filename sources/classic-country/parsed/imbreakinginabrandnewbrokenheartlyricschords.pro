@@ -1,6 +1,9 @@
 {meta: title I’m Breaking In A Brand New Broken Heart}
 {meta: artist Wilburn Brothers}
 {meta: composer Howard Greenfield and Jack Keller}
+{meta: x_source classic-country}
+{meta: x_source_file imbreakinginabrandnewbrokenheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If my friends should ask for me
@@ -33,3 +36,7 @@ I'm [G7]breaking in a brand new broken [C]heart
 {start_of_verse: Verse 5}
 I'm [G7]breaking in a brand new broken [C]heart
 {end_of_verse}
+
+
+
+

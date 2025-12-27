@@ -1,6 +1,9 @@
 {meta: title All The Way To Love}
 {meta: artist Tommy Overstreet}
 {meta: composer Dale Vest and Tommy Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file allthewaytolovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tell me girl [F]before you dress and [G7]go
@@ -43,3 +46,8 @@ Tell me girl [F]before we say good[G7]bye
 [F]Now that everything's been said and [C]done
 [F]Did we have to take it all the [G7]way to [C]love
 {end_of_verse}
+
+
+
+
+

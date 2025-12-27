@@ -1,6 +1,9 @@
 {meta: title Devil's Disciple}
 {meta: artist Johnny Bush}
 {meta: composer Wynn Preston}
+{meta: x_source classic-country}
+{meta: x_source_file devilsdisciplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When love [G7]goes out the [C]window
@@ -57,3 +60,10 @@ I'm the devil's dis[C]ciple
 [F]I'm the devil's dis[C]ciple
 [G7]Shake hands with mister [C]blue
 {end_of_verse}
+
+
+
+
+
+
+

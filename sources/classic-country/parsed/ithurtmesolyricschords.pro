@@ -1,6 +1,9 @@
 {meta: title It Hurt Me So}
 {meta: artist Charlie Rich}
 {meta: composer Charlie Rich and William E. Justis Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file ithurtmesolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It hurt me so you'll never [G7]know how much it [C]hurt me [C7]
@@ -48,3 +51,9 @@ It hurt me [C]so
 You'll never know you'll never [G7]know
 It hurt me [C]so
 {end_of_verse}
+
+
+
+
+
+

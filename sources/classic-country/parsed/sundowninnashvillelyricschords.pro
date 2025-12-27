@@ -1,6 +1,9 @@
 {meta: title Sundown In Nashville}
 {meta: artist Marty Stuart}
 {meta: composer Dwayne Warwick}
+{meta: x_source classic-country}
+{meta: x_source_file sundowninnashvillelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The sign says welcome [C]to [G]Nashville
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 6}
 [D7]They sweep broken dreams off [C]the [G]street
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Official Historian On Shirley Jean Berrell}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file theofficialhistorianonshirleyjeanberrelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm the [C]official historian on [G]Shirley Jean Berrell
@@ -48,3 +51,9 @@ And [D7]Shirley she knows me just as [G]well
 Oh [D7]Shirley she knows me just as [G]well
 [C]J-e-a-[G]n 
 {end_of_verse}
+
+
+
+
+
+

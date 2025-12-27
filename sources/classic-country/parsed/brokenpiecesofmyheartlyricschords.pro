@@ -1,6 +1,9 @@
 {meta: title Broken Pieces of My Heart}
 {meta: artist Lee Greenwood}
 {meta: composer Jan Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file brokenpiecesofmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's a shame we didn't make it
@@ -50,3 +53,9 @@ Going [Dm]through the broken [G7]pieces of my [C]heart[F]
 So I'm [Dm]looking for some [A7]memories
 Going [Dm]through the broken [G7]pieces of my [C]heart
 {end_of_verse}
+
+
+
+
+
+

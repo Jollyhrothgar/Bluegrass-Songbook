@@ -1,6 +1,9 @@
 {meta: title Mister Blues}
 {meta: artist Ernest Tubb}
 {meta: composer Jack Toombs}
+{meta: x_source classic-country}
+{meta: x_source_file misterblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I come home at night [D7]I find him sitting there
@@ -29,3 +32,6 @@ He knows that I still [G]love you [D7]and I hate this kind of [G]news
 I [G]don't mean to be unkind but he's got [C]nothing I can use
 So won't you come on [G]back sweetheart [D7]and run off Mister [G]Blues
 {end_of_verse}
+
+
+

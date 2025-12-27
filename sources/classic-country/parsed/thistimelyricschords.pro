@@ -1,5 +1,8 @@
 {meta: title This Time}
 {meta: artist Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file thistimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]This time  if you want me to come back [C]it's up to [G]you
@@ -24,3 +27,6 @@ This time [C]will be the [G]last time
 [C]If this time should be [F]anything like the other times
 This time [C]will be the [G]last time mmm
 {end_of_verse}
+
+
+

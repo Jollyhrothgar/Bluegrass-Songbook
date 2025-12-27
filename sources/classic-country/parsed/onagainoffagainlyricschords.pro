@@ -1,6 +1,9 @@
 {meta: title On Again Off Again}
 {meta: artist Tracy Byrd}
 {meta: composer Austin Cunningham and Gil Grand}
+{meta: x_source classic-country}
+{meta: x_source_file onagainoffagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]She locks him out but [G7]leaves the key 
@@ -40,3 +43,7 @@ If [Dm]things don't change she [C]just can't go on [G7]loving him
 Cause [Dm]forever can't [C]begin 
 Till this [G7]thing ends this on again [F]off a[C]gain
 {end_of_verse}
+
+
+
+

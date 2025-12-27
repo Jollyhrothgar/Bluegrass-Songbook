@@ -1,6 +1,9 @@
 {meta: title I'll Say It's My Fault}
 {meta: artist Roy Orbison}
 {meta: composer Fred Foster and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file illsayitsmyfaultlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Too many [Em]quarrels so [C]now we [Em]breakup 
@@ -31,3 +34,7 @@ I'll [C]say I was [G7]wild when I [F]should have been [G7]tame
 I'll say [F]it's my fault I'll give a good [Am]show 
 I'll [F]say I'm a needle that [G7]just wouldn't [C]sew 
 {end_of_verse}
+
+
+
+

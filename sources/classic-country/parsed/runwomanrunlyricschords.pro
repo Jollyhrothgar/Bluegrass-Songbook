@@ -1,6 +1,9 @@
 {meta: title Run Woman Run}
 {meta: artist Tammy Wynette}
 {meta: composer Ann Booth, Duke Goff, Dan Hoffman}
+{meta: x_source classic-country}
+{meta: x_source_file runwomanrunlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today's the day you're telling [C]him that he's [G]got to [D7]set you [Em]free
@@ -33,3 +36,8 @@ And find a [Am]way to work [D7]it out with [G]your [D7]man
 {start_of_verse: Verse 5}
 [C]Run woman [D7]run back to your [G][C]m-an
 {end_of_verse}
+
+
+
+
+

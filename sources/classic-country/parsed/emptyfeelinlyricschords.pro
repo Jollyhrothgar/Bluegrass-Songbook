@@ -1,6 +1,9 @@
 {meta: title Empty Feelin'}
 {meta: artist Johnny Tillotson}
 {meta: composer Paul Tannen and Paul Hart}
+{meta: x_source classic-country}
+{meta: x_source_file emptyfeelinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dom dom [F]doo doowa [C]dom dom [G7]doo doowa 
@@ -46,3 +49,9 @@ That empty feelin' will [C]start you're in my [G7]heart
 [C]Dom dom [F]doo doowa [C]dom dom [G7]doo doowa 
 [C]Dom dom [F]doo doowa [C]dom dom [G7]doo doowa 
 {end_of_verse}
+
+
+
+
+
+

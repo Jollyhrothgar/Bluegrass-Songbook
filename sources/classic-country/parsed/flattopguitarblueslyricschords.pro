@@ -1,6 +1,9 @@
 {meta: title Flat Top Guitar Blues}
 {meta: artist Cowboy Copas}
 {meta: composer and recorded by Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file flattopguitarblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went down to Nashville on a Saturday night
@@ -33,3 +36,6 @@ You [C]will hear the people sing and the banjos they will ring
 And the flat top will play the [G7]blues for [C]me
 And the flat top will play the [G7]blues for [C]me
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I've Got It Bad For You}
 {meta: artist Buck Owens and Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotitbadforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I worship the ground that you walk [G7]on 
@@ -25,3 +28,6 @@ Yes [C]I've got it [G7]bad for [C]you
 {start_of_verse: Verse 4}
 Yes I've got it [G7]bad for [C]you
 {end_of_verse}
+
+
+

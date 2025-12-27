@@ -1,5 +1,8 @@
 {meta: title Sitting And Thinking}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file sittingandthinkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Please baby wait for [C]me  wait for [G7]me wait for [C]me
@@ -34,3 +37,7 @@ Cause when I'm drinking I [C7]ain’t nobody's [F]friend
 But please baby wait for [C]me until they [G7]let me out [C]again
 [F]Please baby wait for [C]me until they [G7]let me out [C]again
 {end_of_verse}
+
+
+
+

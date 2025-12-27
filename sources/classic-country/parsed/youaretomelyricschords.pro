@@ -1,6 +1,9 @@
 {meta: title You Are To Me}
 {meta: artist Conway Twitty}
 {meta: composer Don Schlitz and Billy Livsey}
+{meta: x_source classic-country}
+{meta: x_source_file youaretomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last Friday night [F]down at the [C]diner
@@ -41,3 +44,8 @@ That's [F]what I [C]see  [G7]you are to [C]me
 {start_of_verse: Verse 6}
 Last Friday night [F]down at the [C]diner
 {end_of_verse}
+
+
+
+
+

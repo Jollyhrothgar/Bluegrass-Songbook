@@ -1,6 +1,9 @@
 {meta: title Something's Wrong With Me}
 {meta: artist Brenda Lee}
 {meta: composer Bobby Hart and Danny Janssen}
+{meta: x_source classic-country}
+{meta: x_source_file somethingswrongwithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Something's wrong with me can't get you [F]out of my mind
@@ -38,3 +41,7 @@ There's [C]something wrong with me[F]
 There's something [C]wrong[F] 
 Repeat #2  [G7]Oh there's [C]something   
 {end_of_verse}
+
+
+
+

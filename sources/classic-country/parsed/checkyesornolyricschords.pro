@@ -1,6 +1,9 @@
 {meta: title Check Yes Or No}
 {meta: artist George Strait}
 {meta: composer Danny M. Wells and Dana H. Oglesby}
+{meta: x_source classic-country}
+{meta: x_source_file checkyesornolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It started way [G7]back in third [F]grade
@@ -59,3 +62,10 @@
 [G7]Check yes or [C]no
 [G7]Check yes or [C]no
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Soldiers Sweetheart}
 {meta: artist Jimmie Rodgers}
+{meta: x_source classic-country}
+{meta: x_source_file thesoldierssweetheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once I had [G7]a [C]sweetheart
@@ -54,3 +57,10 @@
 [F]And I'll always live a single [C]life
 [G7]For the soldier who was so [C]true
 {end_of_verse}
+
+
+
+
+
+
+

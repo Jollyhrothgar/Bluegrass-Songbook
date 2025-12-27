@@ -1,6 +1,9 @@
 {meta: title We're Gonna Build A Fire}
 {meta: artist Buck Owens}
 {meta: composer Dennis J. Knutson and Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file weregonnabuildafirelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]We’re gonna build a fire and we’re gonna [C]let it [G]burn
@@ -41,3 +44,10 @@ Till the stars fall out of heaven and the [D7]world no longer [G]turns
 [G]We’re gonna build a fire and we’re gonna [C]let it [G]burn
 Till the stars fall out of heaven and the [D7]world no longer [G]turns
 {end_of_verse}
+
+
+
+
+
+
+

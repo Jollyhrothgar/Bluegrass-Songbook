@@ -1,6 +1,9 @@
 {meta: title I Love You Because}
 {meta: artist Willie Nelson}
 {meta: composer Leon Payne}
+{meta: x_source classic-country}
+{meta: x_source_file iloveyoubecauselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I love you because you understand [F][C7]dear 
@@ -29,3 +32,6 @@ I [D7]know your love will always see me [G7]through
 I [C]love you for a hundred [C7]thousand [F]reasons
 But [C]most of all I [G7]love you cause you're [C]you
 {end_of_verse}
+
+
+

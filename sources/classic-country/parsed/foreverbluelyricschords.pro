@@ -1,6 +1,9 @@
 {meta: title Forever Blue}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo}
+{meta: x_source classic-country}
+{meta: x_source_file foreverbluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why was I so wrong when [G7]everything was right
@@ -55,3 +58,10 @@ So I guess I'll always be forever [C]blue
 So you've [F]gone and now I don't know what to [G7]do
 So I guess I'll always be forever [C]blue
 {end_of_verse}
+
+
+
+
+
+
+

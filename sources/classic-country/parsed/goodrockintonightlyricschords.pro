@@ -1,6 +1,9 @@
 {meta: title Good Rockin’ Tonight}
 {meta: artist Buddy Holly}
 {meta: composer Roy Brown}
+{meta: x_source classic-country}
+{meta: x_source_file goodrockintonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I heard the news there's good rockin' tonight
@@ -38,3 +41,7 @@ Hey hey let's [F]rock rock
 C'mon and [C]rock rock rock rock
 We gonna [G7]rock all [F]our blues [C]away
 {end_of_verse}
+
+
+
+

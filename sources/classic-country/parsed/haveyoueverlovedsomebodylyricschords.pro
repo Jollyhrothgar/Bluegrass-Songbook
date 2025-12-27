@@ -1,6 +1,9 @@
 {meta: title Have You Ever Loved Somebody}
 {meta: artist The Everly Brothers}
 {meta: composer Graham Nash, Alan Clarke, Tony Hicks}
+{meta: x_source classic-country}
+{meta: x_source_file haveyoueverlovedsomebodylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You say that you [C]want me
@@ -66,3 +69,14 @@ But thinking had ruined the feeling
 [C]Don't come back tomorrow
 [F]And say what we did wasn't right
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

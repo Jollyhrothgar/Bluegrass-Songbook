@@ -1,6 +1,9 @@
 {meta: title Bridge Over Troubled Water}
 {meta: artist Buck Owens}
 {meta: composer Paul Simon}
+{meta: x_source classic-country}
+{meta: x_source_file bridgeovertroubledwaterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When you're [C]weary  [F]feeling [C]small 
@@ -26,3 +29,5 @@ I'm [C7]sailing [F]right [D7]beh[G7]ind
 [C]Like a [F]bridge over [C]troubled [Am]water [F]I will [G7]lay me [C]down
 Like a [F]bridge over [C]troubled [Am]water [F]I will [G7]lay me [C]down
 {end_of_verse}
+
+

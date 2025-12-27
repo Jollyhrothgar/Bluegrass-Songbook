@@ -1,6 +1,9 @@
 {meta: title Wish I Didn't Have To Miss You}
 {meta: artist Norma Jean}
 {meta: composer Hank Cochran and Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file wishididnthavetomissyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Monday morning and I best [F]be on my way 
@@ -43,3 +46,9 @@ Cause [Dm]when it's Sunday it'll be Sunday [G7]day and night
 {start_of_verse: Verse 5}
 [Dm]Wish I [G7]didn't have to [C]miss you 
 {end_of_verse}
+
+
+
+
+
+

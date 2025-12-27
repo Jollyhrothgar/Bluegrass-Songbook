@@ -1,6 +1,9 @@
 {meta: title You're The One}
 {meta: artist Bobby Helms}
 {meta: composer Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file youretheonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am](You're the only [G7]one)[C]   [Am]   [F]  [G7]
@@ -31,3 +34,6 @@ Your [F]smile was one to [Em]see
 My [F]heart and I [G7]agreed you're the [C]one 
 [Am](You're the only [Dm]one[G7])  [C]
 {end_of_verse}
+
+
+

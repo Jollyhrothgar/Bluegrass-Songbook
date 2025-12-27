@@ -1,5 +1,8 @@
 {meta: title Life's Railway to Heaven}
 {meta: artist Patsy Cline}
+{meta: x_source classic-country}
+{meta: x_source_file lifesrailwaytoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You will roll up grades of trial 
@@ -42,3 +45,8 @@ God the [C]Father God the [G]Son
 With the hearty joyous plaudit 
 Weary [D7]pilgrim welcome [G]home
 {end_of_verse}
+
+
+
+
+

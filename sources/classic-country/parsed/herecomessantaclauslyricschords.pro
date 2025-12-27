@@ -1,6 +1,9 @@
 {meta: title Here Comes Santa Claus}
 {meta: artist Gene Autry}
 {meta: composer O. Haldeman}
+{meta: x_source classic-country}
+{meta: x_source_file herecomessantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here comes Santa Claus here comes Santa Claus
@@ -35,3 +38,8 @@ He's got a bag that is filled with toys
 [F]So jump in bed cover up your [C]head
 [F]Cause Santa Claus [G7]comes [C]tonight
 {end_of_verse}
+
+
+
+
+

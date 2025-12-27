@@ -1,4 +1,7 @@
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file bawlinbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bawlin' baby your [C]daddy's leaving [G]town
@@ -34,3 +37,7 @@
 [G]You ran around all over town you [C]cheated and you [G]lied
 [D7]Bawlin' baby I hope you're [G]satisfied
 {end_of_verse}
+
+
+
+

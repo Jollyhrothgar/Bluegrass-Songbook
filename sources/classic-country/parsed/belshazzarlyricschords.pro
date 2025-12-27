@@ -1,6 +1,9 @@
 {meta: title Belshazzar}
 {meta: artist Johnny Cash}
 {meta: composer the mystic hand}
+{meta: x_source classic-country}
+{meta: x_source_file belshazzarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well the bible tells us about a man 
@@ -64,3 +67,11 @@ His kingdom was divided couldn't [D7]stand
 He was [G]weighed in the balance and found wanting
 His houses were [D7]built upon the [G]sand
 {end_of_verse}
+
+
+
+
+
+
+
+

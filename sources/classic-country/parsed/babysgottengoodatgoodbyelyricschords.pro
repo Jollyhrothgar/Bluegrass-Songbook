@@ -1,6 +1,9 @@
 {meta: title Baby's Gotten Good At Goodbye}
 {meta: artist George Strait}
 {meta: composer Tony Martin and Troy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file babysgottengoodatgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What a rotten day [F]this turned out to [C]be
@@ -38,3 +41,7 @@
 [F]After she packed when [C]she looked back [G7]there were no tears in her [C]eyes
 [F]And that's got me worried thinking [C]maybe my baby's [Dm]gotten good [G7]at [C]goodbye
 {end_of_verse}
+
+
+
+

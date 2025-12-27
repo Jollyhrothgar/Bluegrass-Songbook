@@ -1,6 +1,9 @@
 {meta: title What Makes A Man Wander}
 {meta: artist Waylon Jennings}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file whatmakesamanwanderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What makes me wanna roam 
@@ -52,3 +55,9 @@ What makes a man [G]wander
 Oh what makes a man [D7]wander 
 What makes a man [G]wander
 {end_of_verse}
+
+
+
+
+
+

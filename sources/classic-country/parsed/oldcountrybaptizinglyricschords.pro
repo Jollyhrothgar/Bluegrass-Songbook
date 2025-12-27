@@ -1,6 +1,9 @@
 {meta: title Old Country Baptizing}
 {meta: artist Emmylou Harris}
 {meta: composer Carl Story}
+{meta: x_source classic-country}
+{meta: x_source_file oldcountrybaptizinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Traveling down a country road on [F]a Sunday [C]morn
@@ -36,3 +39,7 @@
 [C]They seem to be saying with a [F]smile upon their [C]face
 [G7]I'm ready now to move along to my resting [C]place
 {end_of_verse}
+
+
+
+

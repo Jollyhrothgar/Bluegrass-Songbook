@@ -1,6 +1,9 @@
 {meta: title Linger Awhile}
 {meta: artist David Ball}
 {meta: composer Harry Owens and Vincent Rose}
+{meta: x_source classic-country}
+{meta: x_source_file lingerawhilelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The time is [Dm]coming [F]soon to say [C]goodbye[G7]
@@ -25,3 +28,5 @@ They whisper I love you [C]oh linger awhile
 I've [C]something to [A7]tell you [D7]oh [G7]linger [C]awhile[A7]
 [D7]Yes linger [G7]a--[C]while
 {end_of_verse}
+
+

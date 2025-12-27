@@ -1,6 +1,9 @@
 {meta: title The Door Is Always Open}
 {meta: artist Ernest Tubb}
 {meta: composer Bob McDill and Dickey Lee}
+{meta: x_source classic-country}
+{meta: x_source_file thedoorisalwaysopenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Saw your picture in the paper [C]and I see you've married [G]good
@@ -20,3 +23,5 @@ When he begs for your attention will you [C]think of me [D7]instead
 And [G]when he reaches out to [C]touch you is [D7]your face turned to the [G]wall
 Yes the door is always [C]open [D7]and the light's on in the [G]hall
 {end_of_verse}
+
+

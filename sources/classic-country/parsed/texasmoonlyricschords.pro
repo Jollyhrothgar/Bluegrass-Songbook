@@ -1,6 +1,9 @@
 {meta: title Texas Moon}
 {meta: artist Johnny Duncan}
 {meta: composer David Patton}
+{meta: x_source classic-country}
+{meta: x_source_file texasmoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the window sill of an [F]empty hotel [C]room
@@ -33,3 +36,6 @@ Texas [C]moon shine down on this [F]cowboy
 [C]Another 14 hours and she'll [F]take away these blues
 [Dm]Underneath that [G7]big ol' Texas [C]moon
 {end_of_verse}
+
+
+

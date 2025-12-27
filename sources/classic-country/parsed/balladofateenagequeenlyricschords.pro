@@ -1,6 +1,9 @@
 {meta: title Ballad Of A Teenage Queen}
 {meta: artist Johnny Cash}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file balladofateenagequeenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dream on Dream on [F]teenage [C]queen
@@ -81,3 +84,13 @@
 [G7]Now this story has some [C]more
 [G7]You'll hear it all at the candy [C]store
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

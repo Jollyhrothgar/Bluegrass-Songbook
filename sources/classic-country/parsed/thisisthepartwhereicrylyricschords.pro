@@ -1,6 +1,9 @@
 {meta: title This Is The Part Where I Cry}
 {meta: artist Faron Young}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file thisisthepartwhereicrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Life is a [C7]picture and I [F]play the [Fm]lead
@@ -29,3 +32,6 @@
 [F]And if you have just walked into [C]the [Am]picture
 [C]This is the [G7]part where I [C]cry
 {end_of_verse}
+
+
+

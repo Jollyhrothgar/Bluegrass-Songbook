@@ -1,6 +1,9 @@
 {meta: title Texas Blues}
 {meta: artist Bob Wills}
 {meta: composer Helen G. Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file texasblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I heard a lonely coyotee a howling for his mate
@@ -37,3 +40,9 @@ They’re built that way to swing and sway and dust out all the sky
 But they’ll play the dickens getting Texas out of me
 [G7]I’m heading back I got the Texas [C]blues
 {end_of_verse}
+
+
+
+
+
+

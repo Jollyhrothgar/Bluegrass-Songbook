@@ -1,5 +1,8 @@
 {meta: title Birds Of A Feather}
 {meta: artist Joe South}
+{meta: x_source classic-country}
+{meta: x_source_file birdsofafeatherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I remember back a [C]long time ago in the [G]days of my child[D7]hood
@@ -53,3 +56,9 @@ Birds of a [G]feather la la la [E7]la la la
 [C]We should be together like
 [G]Birds of a feather la la la [E7]la la la  
 {end_of_verse}
+
+
+
+
+
+

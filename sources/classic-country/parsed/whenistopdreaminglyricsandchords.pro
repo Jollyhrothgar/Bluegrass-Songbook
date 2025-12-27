@@ -1,6 +1,9 @@
 {meta: title When I Stop Dreaming}
 {meta: artist Louvin Brothers}
 {meta: composer Ira and Charles Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file whenistopdreaminglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 When [C]I stop [F]dreaming
@@ -43,3 +46,9 @@ But you [C]can't teach my heart to [G7]forget
 When [C]I stop [F]dreaming
 That's [C]when I'll stop crying [G7]you[C]  [F]  [C]
 {end_of_verse}
+
+
+
+
+
+

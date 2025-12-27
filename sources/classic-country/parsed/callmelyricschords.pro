@@ -1,5 +1,8 @@
 {meta: title Call Me}
 {meta: artist Louvin Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file callmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Call me just once in a [G7]while 
@@ -28,3 +31,6 @@ To let my heart know you're all [C]right
 Darling if you can't come [F]by
 Oh [C]call me just [G7]once in a [C]while
 {end_of_verse}
+
+
+

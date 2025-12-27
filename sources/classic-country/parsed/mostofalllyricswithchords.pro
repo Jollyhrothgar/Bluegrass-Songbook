@@ -1,6 +1,9 @@
 {meta: title Most Of All}
 {meta: artist George Morgan}
 {meta: composer Red Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file mostofalllyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Most [G7]of [C]all I wanna [G7]love [C]you
@@ -22,3 +25,5 @@ Most of [G7]all I want you [C]near
 Most [G7]of [C]all [C7]I wanna [F]hold you
 And keep you for[C]ever I [G7]love you most of [C]all
 {end_of_verse}
+
+

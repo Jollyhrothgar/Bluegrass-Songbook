@@ -1,5 +1,8 @@
 {meta: title Leaving Something Left To Do}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file leavingsomethinglefttodolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been sitting trying to get myself 
@@ -43,3 +46,8 @@ Cause I'm a [G7]doer leaving something left to do
 For someone down along the [C]track
 Repeat last verse
 {end_of_verse}
+
+
+
+
+

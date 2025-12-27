@@ -1,6 +1,9 @@
 {meta: title Your Mother Still Prays For You Jack}
 {meta: artist Lester Flatt and Earl Scruggs}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file yourmotherstillpraysforyoujacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The night was dark and [C]stormy
@@ -64,3 +67,11 @@ Your mother still prays for [C]you Jack
 In a home far over the [C]ocean
 Your [D7]mother still prays for [C]you[G]
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Maiden's Prayer}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file amaidensprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Twilight falls evening [G7]shadows [C]find
@@ -17,3 +20,4 @@ Lonely there she kneels and [G7]tells the stars [C]above
 In her [G]arms he belongs [C]in her [G]heart is a song
 An undying [D7]song of [G]love
 {end_of_verse}
+

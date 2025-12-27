@@ -1,6 +1,9 @@
 {meta: title Sailing Toward Home}
 {meta: artist The Kingsmen}
 {meta: composer Dottie Rambo and Donnie Howard Sumner}
+{meta: x_source classic-country}
+{meta: x_source_file sailingtowardhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I stood upon the [C]sandy bank looking [D7]out across the [G]ocean
@@ -29,3 +32,6 @@ I see the [C]lights up[G]on the banks [A7]across the misty [D7]foam
 [G]Angels [D7]guard my [G]vessel 'til I'm [C]safe within the [G]harbor
 [C]Captain guide my [G]ship '[D7]til I get [G]home
 {end_of_verse}
+
+
+

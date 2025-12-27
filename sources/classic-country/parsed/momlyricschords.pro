@@ -1,6 +1,9 @@
 {meta: title Mom}
 {meta: artist Garth Brooks}
 {meta: composer Don Sampson and Wynn Varble}
+{meta: x_source classic-country}
+{meta: x_source_file momlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A little baby told God hey I'm [G7]kinda scared
@@ -63,3 +66,10 @@ Is [C]makin' sure you're always gonna be [F]alright[C]
 A [Dm]loving angel [C]tender tough and [F]strong
 It's [Dm]almost time to [G7]go and meet your [C]mom [G7]
 {end_of_verse}
+
+
+
+
+
+
+

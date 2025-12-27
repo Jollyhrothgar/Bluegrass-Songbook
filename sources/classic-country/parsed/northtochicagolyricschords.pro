@@ -1,6 +1,9 @@
 {meta: title North To Chicago}
 {meta: artist Hank Snow}
 {meta: composer Les Pouliot}
+{meta: x_source classic-country}
+{meta: x_source_file northtochicagolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I filled my ol' car up with [F]gas 
@@ -43,3 +46,8 @@ I only come to say good[F]bye
 [G7]But I guess it's gotta be this way 
 Then I guess I'm bound north to [C]Chicago
 {end_of_verse}
+
+
+
+
+

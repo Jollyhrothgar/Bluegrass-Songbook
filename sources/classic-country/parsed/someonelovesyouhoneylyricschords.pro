@@ -1,5 +1,8 @@
 {meta: title Someone Loves You Honey}
 {meta: artist Charlie Pride}
+{meta: x_source classic-country}
+{meta: x_source_file someonelovesyouhoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wanna share your [F]life
@@ -32,3 +35,7 @@ It's a [G7]shoulder to lean on a [F]port in the [G7]storm
 {start_of_verse: Verse 4}
 Remember someone...
 {end_of_verse}
+
+
+
+

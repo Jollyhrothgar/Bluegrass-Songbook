@@ -1,6 +1,9 @@
 {meta: title I'm A Big Hurt Now}
 {meta: artist Freddie Hart}
 {meta: composer Larry Lee}
+{meta: x_source classic-country}
+{meta: x_source_file imabighurtnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't lie    as little [Em]tears
@@ -29,3 +32,6 @@
 [C]I hope you're proud of your creation
 [G7]I'm a big hurt [C]now
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title My Nova Scotia Home}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file mynovascotiahomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a place I'll always cherish neath the [G7]blue Atlantic skies
@@ -36,3 +39,7 @@ To the rockbound coasts of Newfoundland I'll [C]love them till I die
 But if God came here on Earth with us and [F]asked if He could rest
 I'd take [C]Him to my Nova Scotia home the [G7]place that I love [C]best
 {end_of_verse}
+
+
+
+

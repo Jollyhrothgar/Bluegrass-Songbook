@@ -1,6 +1,9 @@
 {meta: title Talk About Jesus}
 {meta: artist Ray Price}
 {meta: composer Arthur Smith}
+{meta: x_source classic-country}
+{meta: x_source_file talkaboutJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Whenever I'm lost [D7]I tumble and toss
@@ -44,3 +47,8 @@ When I [C]speak you better believe
 That I [F]know what I'm speaking [D7]of
 Talk about [C]Jes[G7]us talk about [C]love
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Hot Texas Christmas Day}
 {meta: artist Dale Watson}
+{meta: x_source classic-country}
+{meta: x_source_file hottexasChristmasdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Put oh my boots  I'll put on my hat
@@ -37,3 +40,8 @@ It's a hot [G7]Texas Christmas [C]day
 {start_of_verse: Verse 5}
 It's a hot [G7]Texas Christmas [C]day
 {end_of_verse}
+
+
+
+
+

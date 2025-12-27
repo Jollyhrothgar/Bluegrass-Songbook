@@ -1,5 +1,8 @@
 {meta: title That Little Boy Of Mine}
 {meta: artist Eddy Arnold}
+{meta: x_source classic-country}
+{meta: x_source_file thatlittleboyofminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A tiny [C]turned up [G]nose his cheek's [C]just like a [G]rose
@@ -22,3 +25,5 @@ repeat #1
 [G]In dreams I [C]see his [G]face and feel his fond [G][C]embrace
 [D7]There's no one can replace that little boy of [G]mine
 {end_of_verse}
+
+

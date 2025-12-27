@@ -1,5 +1,8 @@
 {meta: title Cheating River}
 {meta: artist Jack Greene}
+{meta: x_source classic-country}
+{meta: x_source_file cheatingriverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can't swim (no I can't [C7]swim) this cheating [F]river
@@ -29,3 +32,6 @@ Cause the [C]memory of your [G7]love won't set me [C]free
 {start_of_verse: Verse 4}
 Cause the memory of your [G7]love won't set me [C]free
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Holdin' on to You}
 {meta: artist Marty Robbins}
 {meta: composer L. Buchanan}
+{meta: x_source classic-country}
+{meta: x_source_file holdinontoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I shouldn't think about you and [C]forget we ever met
@@ -30,3 +33,6 @@ That's [C]when you cross my mind
 [G]I guess it takes a little more of [C]what I'm going through
 [G]Cause now I feel this memory and it's [D7]holdin' on to [G]you
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title There's Nothing On My Mind}
 {meta: artist Ernest Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file theresnothingonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the blues found me today [F]I just can’t hide [C]away
@@ -28,3 +31,6 @@ Cause there’s nothing on my mind but [F]troubles of all [C]kind
 [C]Cause I know you got ‘em too and [F]you lie just like I [C]do
 [F]When you say there’s [C]nothing [G7]on my [C]mind
 {end_of_verse}
+
+
+

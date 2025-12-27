@@ -1,6 +1,9 @@
 {meta: title Nothing's Changed Nothing's New}
 {meta: artist Willie Nelson}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file nothingschangednothingsnewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Nothing's [E7]changed nothing's [A7]new 
@@ -39,3 +42,6 @@ I'm [F]just the same ol' [G7]me without [C]you
 [C]Nothing's [E7]changed nothing's [A7]new 
 I'm [F]still the same ol' [G7]me without [C]you
 {end_of_verse}
+
+
+

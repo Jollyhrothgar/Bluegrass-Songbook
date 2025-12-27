@@ -1,6 +1,9 @@
 {meta: title Have A Good One}
 {meta: artist Tracy Byrd}
 {meta: composer Max D. Barnes, Paul Craft, David Kent}
+{meta: x_source classic-country}
+{meta: x_source_file haveagoodonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Have a good one she told me as she walked [C]away
@@ -26,3 +29,6 @@ Have a [G]good one [C]thought I [G]had one [D7]I guess I was [G]wrong
 {start_of_verse: Verse 4}
 [C]Have a good one [Am]thought I [G]had one [D7]I guess I was [G]wrong
 {end_of_verse}
+
+
+

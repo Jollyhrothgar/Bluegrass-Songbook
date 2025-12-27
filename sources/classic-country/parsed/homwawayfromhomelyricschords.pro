@@ -1,6 +1,9 @@
 {meta: title Home Away From Home}
 {meta: artist Carl Belew}
 {meta: composer Carl Belew and Van Givens}
+{meta: x_source classic-country}
+{meta: x_source_file homwawayfromhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I spent too many sleepless nights alone
@@ -37,3 +40,7 @@ I know I'll never find a [G7]home  away from home
 We're goin' [C]home to
 repeat last verse  Yeah if the sun ...
 {end_of_verse}
+
+
+
+

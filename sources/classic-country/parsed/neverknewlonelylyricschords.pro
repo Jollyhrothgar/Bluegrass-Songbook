@@ -1,6 +1,9 @@
 {meta: title Never Knew Lonely}
 {meta: artist Vince Gill}
 {meta: composer Vince Gill and Amy Grant}
+{meta: x_source classic-country}
+{meta: x_source_file neverknewlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]No other lover never [F]really cared
@@ -41,3 +44,8 @@ Well I [C]never knew [G7]lonely till [C]you
 Never loved someone like [F]I love you
 Well I [C]never knew [G7]lonely till [C]you[F]  [G7]   [C]
 {end_of_verse}
+
+
+
+
+

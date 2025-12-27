@@ -1,6 +1,9 @@
 {meta: title These Shoes}
 {meta: artist The Everly Brothers}
 {meta: composer Jon Goin and Larry Michael Lee}
+{meta: x_source classic-country}
+{meta: x_source_file theseshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I need to buy me some new [F]shoes
@@ -56,3 +59,9 @@ There’s nothing left to [G7]say
 These [F]shoes are [G7]all you’re gonna [Am]see
 These [F]shoes will [G7]be the last of [Am]me
 {end_of_verse}
+
+
+
+
+
+

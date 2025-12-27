@@ -1,5 +1,8 @@
 {meta: title Austin Prison}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file austinprisonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They had a warrant out for me all over the country
@@ -36,3 +39,7 @@ Now [G]all I want between me and there are a [C]lot of friendly people
 And [G]miles and miles and [D7]miles and miles 
 And [G]miles and [D7]miles and [G]miles
 {end_of_verse}
+
+
+
+

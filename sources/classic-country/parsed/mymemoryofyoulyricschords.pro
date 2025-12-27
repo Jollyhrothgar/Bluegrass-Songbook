@@ -1,6 +1,9 @@
 {meta: title My Memory Of You}
 {meta: artist Don Gibson}
 {meta: composer Lamar Morris and Warren Keith}
+{meta: x_source classic-country}
+{meta: x_source_file mymemoryofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said I'd for[F]get that [G7]we'd ever [C]met
@@ -20,3 +23,5 @@ Oh I [G7]can't shake this memory of [C]you
 Yes there's one thing [C7]you gave that [F]I'll take to my [Dm]grave
 I [G7]can't shake this memory of [C]you
 {end_of_verse}
+
+

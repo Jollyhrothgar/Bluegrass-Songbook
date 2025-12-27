@@ -1,6 +1,9 @@
 {meta: title Mother Went A Walkin'}
 {meta: artist Jim Reeves}
 {meta: composer Tom Bearden and Bob Lowery}
+{meta: x_source classic-country}
+{meta: x_source_file motherwentawalkinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Shall we gather at the river that [G7]flows by the throne of [C]God)
@@ -50,3 +53,10 @@ Mother went a-walkin' son up yonder in the sky
 [G7]She's gone to meet your daddy son and take him by the [C]hand
 Yes [G7]mother went a-walkin' son in God's great [C]meadowland
 {end_of_verse}
+
+
+
+
+
+
+

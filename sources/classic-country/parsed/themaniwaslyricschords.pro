@@ -1,6 +1,9 @@
 {meta: title The Man I Was}
 {meta: artist Tracy Lawrence}
 {meta: composer Paul Nelson, Tony Martin, Mark Nesler}
+{meta: x_source classic-country}
+{meta: x_source_file themaniwaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Look at me in that photograph 
@@ -57,3 +60,10 @@ Before the [A#7]fool you [F]made of [C]me
 I want to be the man I was 
 Before the [A#7]fool you [F]made of [C]me
 {end_of_verse}
+
+
+
+
+
+
+

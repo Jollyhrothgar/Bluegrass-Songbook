@@ -1,6 +1,9 @@
 {meta: title Don't Wait On Me}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file dontwaitonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the sun wakes up in the [D7]west and lays its [C]head down in the [G]east
@@ -47,3 +50,9 @@ Never have and [C]don't (intend to) [D7]don't wait on [G]me
 {start_of_verse: Verse 5}
 [D7]Don't wait on [G]me [D7]don't wait on [G]me [D7]don't wait on [G]me [D7]don't wait on [G]me
 {end_of_verse}
+
+
+
+
+
+

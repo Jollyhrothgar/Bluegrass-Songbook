@@ -1,6 +1,9 @@
 {meta: title When I Said I Do}
 {meta: artist Clint Black with Lisa Hartman Black}
 {meta: composer Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file whenisaididolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]These times are troubled and [D7]these times are good
@@ -60,3 +63,10 @@ I'll [Em]always be [G]there for [A7]you
 That's what [C]I had in mind 
 (That's what I had in mind) when I [G]said [D7]I  [G]do
 {end_of_verse}
+
+
+
+
+
+
+

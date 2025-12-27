@@ -1,6 +1,9 @@
 {meta: title I'll Warm By The Flame}
 {meta: artist Johnny Bush}
 {meta: composer Buzz Rabin and James Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file illwarmbytheflamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just as long [F]as the [C]fire [F]burns I'll [G7]warm by the [C]flame
@@ -26,3 +29,6 @@ I'll [D7]keep the fire burning as [G7]long as I can
 The [C]fire of our love may [G7]cast shadows of [C]shame
 But as long [F]as the [C]fire [F]burns I'll [G7]warm by the [C]flame
 {end_of_verse}
+
+
+

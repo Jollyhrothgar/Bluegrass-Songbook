@@ -1,6 +1,9 @@
 {meta: title Lasting Love}
 {meta: artist Ferlin Husky}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file lastinglovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want a [F]lasting love that's [G7]guarantee to [C]stay
@@ -37,3 +40,8 @@ I want a [F]lasting love that's [G7]guarantee to [C]stay
 {start_of_verse: Verse 6}
 I want a [F]lasting love that's [G7]guarantee to [C]stay
 {end_of_verse}
+
+
+
+
+

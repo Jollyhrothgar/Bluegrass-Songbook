@@ -1,6 +1,9 @@
 {meta: title Bill Bailey Won’t You Please Come Home}
 {meta: artist Patsy Cline}
 {meta: composer Hughie Cannon}
+{meta: x_source classic-country}
+{meta: x_source_file billbaileywontyoupleasecomehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Won't you come home Bill Bailey  won't you come home
@@ -43,3 +46,9 @@ Come home come home Bill Bailey
 [A7]Bill Bailey won't you [D7]please come on [G]home
 [D7]Come on [G]home
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Clap Your Hands}
 {meta: artist Ronnie Milsap}
 {meta: composer Kent M. Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file clapyourhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everyone who came to hear the [F]music
@@ -74,3 +77,11 @@
 [C]Just sing loud as you [F]can
 [C]Clap your [G7]hands clap your [C]hands
 {end_of_verse}
+
+
+
+
+
+
+
+

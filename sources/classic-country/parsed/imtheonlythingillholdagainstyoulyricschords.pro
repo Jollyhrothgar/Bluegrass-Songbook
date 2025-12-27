@@ -1,6 +1,9 @@
 {meta: title I'm The Only Thing I'll Hold Against You}
 {meta: artist Conway Twitty}
 {meta: composer William Lon Wilson, Kim Edwin Williams, Joe Diffie}
+{meta: x_source classic-country}
+{meta: x_source_file imtheonlythingillholdagainstyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday you [Am]walked away and left [F]me
@@ -46,3 +49,8 @@
 [Am]No matter [Em]how much [F]heartache [Em]we go [Dm]through  I [Em]love [F]you
 [Dm]I'm the [Em]only [F]thing I'll [G7]hold against [C]you
 {end_of_verse}
+
+
+
+
+

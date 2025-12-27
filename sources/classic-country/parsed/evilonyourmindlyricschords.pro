@@ -1,6 +1,9 @@
 {meta: title Evil On Your Mind}
 {meta: artist Jean Shepard}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file evilonyourmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say I need the rest why don't I go 
@@ -43,3 +46,8 @@ And the candy honey that was a very [F]kind
 For that's your way of [G7]telling me 
 You're sorry for the evil on your [C]mind
 {end_of_verse}
+
+
+
+
+

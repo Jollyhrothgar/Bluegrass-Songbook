@@ -1,6 +1,9 @@
 {meta: title Broken Heartsville}
 {meta: artist Johnny Rodriguez}
 {meta: composer Clint Daniels and Donny Keys}
+{meta: x_source classic-country}
+{meta: x_source_file brokenheartsvillelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He wore that cowboy [G7]hat to cover up his [Am]horns
@@ -57,3 +60,10 @@ That [F]angel who did me [G7]in
 Not [C]against her will and I've got time to [G7]kill
 [F]Down in [G7]Broken [C]Heartsville
 {end_of_verse}
+
+
+
+
+
+
+

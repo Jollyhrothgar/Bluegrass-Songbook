@@ -1,6 +1,9 @@
 {meta: title Don't Cry Darlin'}
 {meta: artist David Allan Coe}
 {meta: composer Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file dontcrydarlinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Drunk totally [Em]drained
@@ -31,3 +34,6 @@ I [G7]was hooked on that whisky so bad [C]I didn't know my [C7]name when I died
 But don't [F]cry darlin' [C]well it's not you're [Am]fault
 I was [C]stealin' [F]time from the devil and [G7]I just got [C]caught
 {end_of_verse}
+
+
+

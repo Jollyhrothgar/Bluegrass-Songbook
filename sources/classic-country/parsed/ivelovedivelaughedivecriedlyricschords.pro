@@ -1,6 +1,9 @@
 {meta: title I've Loved I've Laughed I've Cried}
 {meta: artist Webb Pierce}
 {meta: composer Webb Pierce and Hal Harris}
+{meta: x_source classic-country}
+{meta: x_source_file ivelovedivelaughedivecriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've loved I've laughed and I've cried
@@ -29,3 +32,6 @@ Keep you forever from my [G7]side
 Although you broke my heart let's make another [C]start
 I've [G7]loved I've laughed and I've [C]cried
 {end_of_verse}
+
+
+

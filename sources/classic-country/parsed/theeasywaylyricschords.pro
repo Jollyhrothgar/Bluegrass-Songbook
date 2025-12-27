@@ -1,6 +1,9 @@
 {meta: title The Easy Way}
 {meta: artist Eddy Arnold}
 {meta: composer Glenn Sutton and Merle Kilgore}
+{meta: x_source classic-country}
+{meta: x_source_file theeasywaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've always been a lover the [C]easy going kind
@@ -48,3 +51,9 @@ Just [D7]love 'em and leave 'em that's the easy [G]way
 Just [D7]love 'em and leave 'em that's the easy [G]way
 Just [D7]love 'em and leave 'em that's the easy [G]way
 {end_of_verse}
+
+
+
+
+
+

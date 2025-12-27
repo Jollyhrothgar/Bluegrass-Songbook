@@ -1,6 +1,9 @@
 {meta: title Cold On The Shoulder}
 {meta: artist Tony Rice}
 {meta: composer Gordon Lightfoot}
+{meta: x_source classic-country}
+{meta: x_source_file coldontheshoulderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All you need is [C]time
@@ -41,3 +44,7 @@ And you [C]know that we get a little older every [G]day
 It’s [D7]cold on the shoulder
 And you [C]know that we get a little older every [G]day
 {end_of_verse}
+
+
+
+

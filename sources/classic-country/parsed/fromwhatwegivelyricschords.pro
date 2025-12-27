@@ -1,6 +1,9 @@
 {meta: title From What We Give}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file fromwhatwegivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Johnny Baker [C]works down at the [D7]mill
@@ -39,3 +42,7 @@ Then your [Bm]soul is satis[Em]fied [D7]
 From what we [C]give we [D7]make a [G]living from what we [C]give [D7]we make a [G]life
 What we [C]give we [D7]make a [Em]living from what we [C]give [D7]we make a [G]life
 {end_of_verse}
+
+
+
+

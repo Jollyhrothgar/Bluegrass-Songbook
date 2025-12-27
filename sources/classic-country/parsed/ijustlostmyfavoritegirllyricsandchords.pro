@@ -1,6 +1,9 @@
 {meta: title I Just Lost My Favorite Girl}
 {meta: artist George Jones}
 {meta: composer Don Adams}
+{meta: x_source classic-country}
+{meta: x_source_file ijustlostmyfavoritegirllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In a barroom I'm [C7]standing with a [F]drink in my [C]hand
@@ -29,3 +32,6 @@ Last call I heard the [D7]bartender [G7]say
 [C]With no place to [C7]go to [F]here I can't [C]stay
 I just lost my [G7]favorite [C]girl
 {end_of_verse}
+
+
+

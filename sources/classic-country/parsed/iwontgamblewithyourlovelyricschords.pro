@@ -1,6 +1,9 @@
 {meta: title I Won't Gamble With Your Love}
 {meta: artist Patty Loveless}
 {meta: composer Kevin Welch and Gary Scruggs}
+{meta: x_source classic-country}
+{meta: x_source_file iwontgamblewithyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've taken a [C]lot of [G]chances 
@@ -65,3 +68,12 @@ I won't gamble [D7]with your [G]love
 {start_of_verse: Verse 8}
 I won't gamble [D7]with your [G]love
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Uncle Sam}
 {meta: artist Bob Luman}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file unclesamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been mighty lucky 
@@ -65,3 +68,12 @@ And most of all to have an Uncle [C]Sam
 I'm [G7]proud to be American 
 And most of all to have an Uncle [C]Sam
 {end_of_verse}
+
+
+
+
+
+
+
+
+

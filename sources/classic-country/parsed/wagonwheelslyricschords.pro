@@ -1,6 +1,9 @@
 {meta: title Wagon Wheels}
 {meta: artist Sons of the Pioneers}
 {meta: composer Billy Hill and Peter Derose}
+{meta: x_source classic-country}
+{meta: x_source_file wagonwheelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wagon wheels (rollin' rollin' rollin') [G7]wagon wheels
@@ -24,3 +27,5 @@ There's a [Am]pasture at [D7]the end of each [G7]road
 [F]Wagon wheels [G7]carry me [C]home
 (Wagon wheels [F]carry me [C]home)
 {end_of_verse}
+
+

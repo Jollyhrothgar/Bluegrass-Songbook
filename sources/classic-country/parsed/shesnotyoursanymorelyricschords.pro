@@ -1,6 +1,9 @@
 {meta: title She's Not Yours Anymore}
 {meta: artist Ferlin Husky}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file shesnotyoursanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The fact that she's [C]gone has become very [A7]real
@@ -31,3 +34,7 @@ So live with it [A7]friend [D7]she's not yours any[G]more
 {start_of_verse: Verse 5}
 So live with it [A7]friend [D7]she's not yours any[G]more
 {end_of_verse}
+
+
+
+

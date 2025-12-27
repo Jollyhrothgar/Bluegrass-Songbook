@@ -1,6 +1,9 @@
 {meta: title A Memory Of You}
 {meta: artist Jim and Jesse}
 {meta: composer Larry Roll}
+{meta: x_source classic-country}
+{meta: x_source_file amemoryofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I turned the key in the [C]lock tonight 
@@ -43,3 +46,8 @@ The [G]moon may be giving us [D7]light
 But [G]all that I have is a [C]memory of you
 And I’m [G]lost in a [D7]world black as [G]night
 {end_of_verse}
+
+
+
+
+

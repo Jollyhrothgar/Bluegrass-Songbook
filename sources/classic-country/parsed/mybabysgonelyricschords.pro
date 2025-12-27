@@ -1,6 +1,9 @@
 {meta: title My Baby's Gone}
 {meta: artist Jim Ed Brown}
 {meta: composer Hazel Houser}
+{meta: x_source classic-country}
+{meta: x_source_file mybabysgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7](My world has ended) my baby's [C]gone
@@ -48,3 +51,9 @@ My baby's [C]gone[F]
 {start_of_verse: Verse 6}
 [G7]My baby's [C]gone
 {end_of_verse}
+
+
+
+
+
+

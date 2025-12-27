@@ -1,6 +1,9 @@
 {meta: title My Dear Companion}
 {meta: artist Emmylou Harris}
 {meta: composer Jean Ritchie}
+{meta: x_source classic-country}
+{meta: x_source_file mydearcompanionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh have you seen my dear [F]companion
@@ -36,3 +39,7 @@
 [F]Oh have you seen my dear [C]companion
 [G7]For he was all this world to [C]me
 {end_of_verse}
+
+
+
+

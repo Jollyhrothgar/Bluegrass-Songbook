@@ -1,6 +1,9 @@
 {meta: title When I Lost You}
 {meta: artist Jim Reeves}
 {meta: composer Irvin Berlin}
+{meta: x_source classic-country}
+{meta: x_source_file whenilostyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I lost the sunshine and [F][G7]ros-es 
@@ -22,3 +25,5 @@ I lost the sweet thing who gave [F]me
 I lost the gladness that turned into [F]sadness 
 When [G7]I lost [C]you
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Helen}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file helenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was easy to [F]pick me up [G7]easy to put me [C]down
@@ -34,3 +37,6 @@ When [F]most of the reasons for living are [G7]gone
 And you've almost got the best of [F]me
 [G7]And you've almost got me [C]down
 {end_of_verse}
+
+
+

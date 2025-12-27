@@ -1,6 +1,9 @@
 {meta: title North Alabama}
 {meta: artist Cal Smith}
 {meta: composer Dave Kirby and Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file northalabamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's colder than nine kinds of [F]hell in Montana
@@ -33,3 +36,6 @@ I wanna go [C]home [F]to north Ala[C]bama
 And thaw out my [Dm]hands 
 In my [G7]sweet Jennie's [C]hair 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Do You Want To Go To Heaven}
 {meta: artist T.G.Sheppard}
 {meta: music Curly Putman and Bucky Jones}
+{meta: x_source classic-country}
+{meta: x_source_file doyouwanttogotoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was the hottest day of August
@@ -78,3 +81,17 @@ When she [G7]whispered come on in   she [C]said
 And I’ll [C]never forget I remember it yet
 The [F]taste of that clear pure [C]water
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

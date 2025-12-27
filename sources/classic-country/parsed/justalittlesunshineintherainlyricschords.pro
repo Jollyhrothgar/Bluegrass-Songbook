@@ -1,6 +1,9 @@
 {meta: title Just A Little Sunshine In The Rain}
 {meta: artist Connie Smith}
 {meta: composer Ricci Mareno}
+{meta: x_source classic-country}
+{meta: x_source_file justalittlesunshineintherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Like a wonderous dream that ends with [Am]dawn [D7]
@@ -26,3 +29,6 @@ You're the one who taught me how to [Am]smile [D7]
 {start_of_verse: Verse 4}
 [D7]Just a little sunshine in the [G]rain
 {end_of_verse}
+
+
+

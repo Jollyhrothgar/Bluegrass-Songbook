@@ -1,6 +1,9 @@
 {meta: title Count On Me}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file countonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can tell by looking you got feelings in your [F]heart
@@ -61,3 +64,11 @@ Count on me I’ll always be [F]there
 {start_of_verse: Verse 7}
 [F]You can [G7]count on [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+

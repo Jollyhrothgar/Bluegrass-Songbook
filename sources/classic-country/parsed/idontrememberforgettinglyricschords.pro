@@ -1,6 +1,9 @@
 {meta: title I Don't Remember Forgetting}
 {meta: artist Ricky Skaggs}
 {meta: composer Billy Foster, Jason Sellers, Lee Ann Womack}
+{meta: x_source classic-country}
+{meta: x_source_file idontrememberforgettinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't remember [A7]forgetting 
@@ -41,3 +44,8 @@ I [C]don't [D7]remember at [G]all
 If I neglected to [A7]show you I love you
 I [C]don't [D7]remember at [G]all
 {end_of_verse}
+
+
+
+
+

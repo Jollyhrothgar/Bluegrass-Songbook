@@ -1,6 +1,9 @@
 {meta: title I Ain't Built That Way}
 {meta: artist Bob Luman}
 {meta: composer Glenn Sutton}
+{meta: x_source classic-country}
+{meta: x_source_file iaintbuiltthatwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You're a sweet little thing and I hate to put you down
@@ -38,3 +41,6 @@ I [F]don't care where I go or who I love next
 Forget about what I said about that ring
 Cause I ain't built that [C]way
 {end_of_verse}
+
+
+

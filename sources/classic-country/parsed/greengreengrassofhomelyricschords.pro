@@ -1,6 +1,9 @@
 {meta: title Green Green Grass Of Home}
 {meta: artist Johnny Cash}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file greengreengrassofhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The old home town looks the same
@@ -42,3 +45,7 @@ Yes they'll all come to see me
 [C]As they lay me beneath
 [G7]The green green grass [F]of [C]home
 {end_of_verse}
+
+
+
+

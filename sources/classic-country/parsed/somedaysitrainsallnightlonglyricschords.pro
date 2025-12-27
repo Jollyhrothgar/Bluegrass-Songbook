@@ -1,6 +1,9 @@
 {meta: title Some Days It Rains All Night Long}
 {meta: artist Anne Murray}
 {meta: composer Ed Penney}
+{meta: x_source classic-country}
+{meta: x_source_file somedaysitrainsallnightlonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I know how the melody goes
@@ -30,3 +33,6 @@ To [A7]keep us from saying good[D7]bye
 And [G]some days it [D7]rains all night [G]long [C]
 [G]Some days it [D7]rains all night [G]long
 {end_of_verse}
+
+
+

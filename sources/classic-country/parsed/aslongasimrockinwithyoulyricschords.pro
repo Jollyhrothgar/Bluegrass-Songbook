@@ -1,6 +1,9 @@
 {meta: title As Long As I'm Rockin' With You}
 {meta: artist John Conlee}
 {meta: composer Bruce Channel and Kieran Kan}
+{meta: x_source classic-country}
+{meta: x_source_file aslongasimrockinwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Wherever I'm going wherever I'm staying it doesn't matter 
@@ -34,3 +37,7 @@ It doesn't [G]matter  as [D7]long as I'm rocking with [G]you
 {start_of_verse: Verse 4}
 [C]It doesn't [G]matter  as [D7]long as I'm rocking with [G]you
 {end_of_verse}
+
+
+
+

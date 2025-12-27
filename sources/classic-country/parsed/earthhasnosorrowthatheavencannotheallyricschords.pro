@@ -1,6 +1,9 @@
 {meta: title Earth Has No Sorrow (That Heaven Cannot Heal)}
 {meta: artist Webb Pierce}
 {meta: composer Sylvia Fisher and Leon Miller}
+{meta: x_source classic-country}
+{meta: x_source_file earthhasnosorrowthatheavencannotheallyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Earth has no sorrow that [C]heaven cannot [G]heal
@@ -33,3 +36,7 @@ For earth has no sorrow that [D7]heaven cannot [G]heal[C]  [G]
 {start_of_verse: Verse 5}
 Earth has no sorrow that [D7]heaven cannot [G]heal[C]  [G]
 {end_of_verse}
+
+
+
+

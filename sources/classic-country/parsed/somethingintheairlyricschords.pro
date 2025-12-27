@@ -1,6 +1,9 @@
 {meta: title Something In The Air}
 {meta: artist Tracy Lawrence}
 {meta: composer Phyllis Fishleder and Georgie McKearly}
+{meta: x_source classic-country}
+{meta: x_source_file somethingintheairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There is [C]something in the [Cm]air at [Dm]Christmas [G7]time
@@ -51,3 +54,9 @@ To keep that [G7]feeling in my [Em]heart[A7]
 {start_of_verse: Verse 6}
 [Dm]That Christmas [G7]feeling in my [C]heart
 {end_of_verse}
+
+
+
+
+
+

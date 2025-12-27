@@ -1,6 +1,9 @@
 {meta: title Rollin' And Ramblin' (The Death Of Hank Williams)}
 {meta: artist Emmylou Harris}
 {meta: composer Robin Williams, Linda Williams, Jerome Clark}
+{meta: x_source classic-country}
+{meta: x_source_file rollinandramblinthedeathofhankwilliamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Rollin' And Ramblin' 
@@ -64,3 +67,10 @@ Find someone else to keep you [G7]from the [C]cold
 Rollin' and [F]ramblin' the sun has set out [C]on the trail
 The hobo's drifted [G7]up the rail he's taken his last [C]ride
 {end_of_verse}
+
+
+
+
+
+
+

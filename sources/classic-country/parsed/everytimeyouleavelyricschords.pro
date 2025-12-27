@@ -1,6 +1,9 @@
 {meta: title Every Time You Leave}
 {meta: artist Emmylou Harris}
 {meta: composer Charlie Louvin and Ira Louvin}
+{meta: x_source classic-country}
+{meta: x_source_file everytimeyouleavelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]E-very [Em]time you [F]leave you [G7]tear the soul from [C]me 
@@ -19,3 +22,4 @@ One [D7]kiss and I'll give [Dm]in to [G7]you
 But I want to live so I'll [G7]forgive 
 Every time you [C]leave 
 {end_of_verse}
+

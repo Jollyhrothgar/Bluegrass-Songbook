@@ -1,6 +1,9 @@
 {meta: title Go On Home}
 {meta: artist Ernest Tubb}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file goonhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You’re watching your watch and I know what's on your [C]mind
@@ -29,3 +32,6 @@ Though I [A7]want you and I need you desperate[D7]ly
 But to [G]hide here in the darkness is as wrong as can [C]be
 Go on [G]home you don't [D7]belong here with [G]me
 {end_of_verse}
+
+
+

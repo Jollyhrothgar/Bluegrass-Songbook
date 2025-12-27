@@ -1,5 +1,8 @@
 {meta: title Do Wacka Do}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file dowackadolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hear tell you're [F]doin' well [G7]good things have come to [C]you
@@ -42,3 +45,9 @@ Root-doot-doot-doot-doot do-wah
 [F]I wish I had your good-luck charm and you had a [G7]do-wacka
 [C]Do wacka [F]do wacka [C]do wacka [G7]do wacka [C]do
 {end_of_verse}
+
+
+
+
+
+

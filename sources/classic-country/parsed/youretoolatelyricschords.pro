@@ -1,6 +1,9 @@
 {meta: title You're Too Late}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Herman Willis}
+{meta: x_source classic-country}
+{meta: x_source_file youretoolatelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I had some[C]one that's [G]true
@@ -33,3 +36,6 @@ When I [D7]search for heaven’s door
 I hope these [C]words won’t ring no [G]more
 And a voice say here’s a [D7]gate but you’re too [G]late
 {end_of_verse}
+
+
+

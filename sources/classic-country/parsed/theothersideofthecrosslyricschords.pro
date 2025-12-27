@@ -1,6 +1,9 @@
 {meta: title The Other Side Of The Cross}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file theothersideofthecrosslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There were tears in the eyes of [C][F]Je-sus 
@@ -50,3 +53,9 @@ On [D7]the other [G7]side of the [C]cross
 [Am]If you were [C]there on that [A7]day
 On [D7]the other [G7]side of the [C]cross
 {end_of_verse}
+
+
+
+
+
+

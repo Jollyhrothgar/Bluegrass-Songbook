@@ -1,6 +1,9 @@
 {meta: title Your Kind Of Living}
 {meta: artist Mel Tillis}
 {meta: composer Billy Large}
+{meta: x_source classic-country}
+{meta: x_source_file yourkindoflivinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your kind of livin' has [C7]got me to [F]wishin'
@@ -29,3 +32,6 @@
 [F]Your kind of living I want to [C]leave [Am]behind
 [C]While I've [G7]still got my right [C]mind
 {end_of_verse}
+
+
+

@@ -1,4 +1,7 @@
 {meta: artist Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file bluetexaswaltzlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blue Texas [G7]waltz my friend
@@ -34,3 +37,7 @@ We are [C]sweethearts again
 Here's where it [G7]all began
 Dancing the blue Texas [C]waltz
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm So Afraid of Losing You Again}
 {meta: artist Charlie Pride}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file imsoafraidoflosingyouagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I want to throw my arms around [F]you
@@ -34,3 +37,7 @@ But I'm [C]so afraid of [G7]losing you [C]again
 Tag
 [F]But I'm [C]so afraid of [G7]losing you [C]again
 {end_of_verse}
+
+
+
+

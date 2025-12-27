@@ -1,6 +1,9 @@
 {meta: title You Don't Love Me Anymore}
 {meta: artist Merle Haggard}
 {meta: composer Freddy Powers}
+{meta: x_source classic-country}
+{meta: x_source_file youdontlovemeanymorelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You used to get so uptight
@@ -29,3 +32,6 @@
 [E7]Then I wrote a hurtin' song like [Am]you've never heard [D7]before
 [C]That's because I know you [Dm]don't [G7]love [C]me   [C][Dm][C][F]anymore
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rainy Nights And Memories}
 {meta: artist Don Williams}
 {meta: composer Wayland Holyfield and Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file rainynightsandmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's hard to hide a lingering [C][F]disappointment
@@ -29,3 +32,6 @@
 [C]I can almost hear my pleading on the night you were [F]leaving
 [C]But I might as well [G7]have tried to stop [C]the [G7]rain
 {end_of_verse}
+
+
+

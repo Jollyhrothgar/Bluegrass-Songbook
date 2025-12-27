@@ -1,6 +1,9 @@
 {meta: title The Moon The Stars And Me}
 {meta: artist Dolly Parton}
 {meta: composer Wayland Patton and Diana Rae}
+{meta: x_source classic-country}
+{meta: x_source_file themoonthestarsandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight I feel a [C]chill in the [G]air 
@@ -45,3 +48,8 @@ You [Am]lied to the [G]moon the [D7]stars and [G]me
 I know that it's true but it's [C]hard to [A7]believe
 You [Am]lied to the [G]moon the [D7]stars and [G]me
 {end_of_verse}
+
+
+
+
+

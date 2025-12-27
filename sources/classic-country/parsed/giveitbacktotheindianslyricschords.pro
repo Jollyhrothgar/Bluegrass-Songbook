@@ -1,6 +1,9 @@
 {meta: title Give It Back To The Indians}
 {meta: artist Stonewall Jackson}
 {meta: composer David Wilkins}
+{meta: x_source classic-country}
+{meta: x_source_file giveitbacktotheindianslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was riding down the river in a real old Indian canoe
@@ -44,3 +47,10 @@ Now I got a big heartache and I don't know what to do
 {start_of_verse: Verse 3}
 I was shooting with a bow and arrow
 {end_of_verse}
+
+
+
+
+
+
+

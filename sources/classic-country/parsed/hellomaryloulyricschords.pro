@@ -1,6 +1,9 @@
 {meta: title Hello Mary Lou}
 {meta: artist Ricky Nelson}
 {meta: composer Gene Pitney}
+{meta: x_source classic-country}
+{meta: x_source_file hellomaryloulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hello Mary Lou  [F]goodbye heart
@@ -33,3 +36,6 @@ Wild [C]horses couldn't make me stay [G7]away
 My [F]arms about good and tight
 [C]That's all I had to [G7]see for me to [C]say
 {end_of_verse}
+
+
+

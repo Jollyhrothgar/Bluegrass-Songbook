@@ -1,5 +1,8 @@
 {meta: title You Are My Sunshine}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file youaremysunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The other night dear as I lay sleeping
@@ -42,3 +45,8 @@ You are my sunshine my only sunshine
 [G7]You'll never know [C]dear how much I love [G]you
 Please don't take my [D7]sunshine [G]away 
 {end_of_verse}
+
+
+
+
+

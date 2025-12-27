@@ -1,6 +1,9 @@
 {meta: title All Hat No Cattle}
 {meta: artist Gene Watson}
 {meta: composer Lee Bach, Billy Troy, Leroy Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file allhatnocattlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]He's [F]dressed up like a cowboy right out of [C]Hollywood
@@ -37,3 +40,7 @@
 {start_of_verse: Verse 4}
 [G7]He's all hat and no [C]cattle
 {end_of_verse}
+
+
+
+

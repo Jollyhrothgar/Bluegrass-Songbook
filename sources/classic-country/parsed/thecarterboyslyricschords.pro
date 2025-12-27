@@ -1,5 +1,8 @@
 {meta: title The Carter Boys}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file thecarterboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The Carter boys were born one and [F]after [C]another
@@ -73,3 +76,13 @@ And there were [F]six of [G7]us all to[C]gether
 [F]Six of [G7]us all to[C]gether
 The [F]Carter boys were [G7]brothers of [C]mine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It Takes One To Know One}
 {meta: artist Jimmy Martin}
 {meta: composer Harlan Howard and Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file ittakesonetoknowonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Little girl you [G7]stand out in the [C]crowd
@@ -33,3 +36,7 @@ It takes [D7]one to know one and I know [G]you
 {start_of_verse: Verse 4}
 It takes [D7]one to know one and I know [G]you
 {end_of_verse}
+
+
+
+

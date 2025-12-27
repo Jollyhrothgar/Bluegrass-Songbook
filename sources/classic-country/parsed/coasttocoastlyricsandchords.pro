@@ -1,5 +1,8 @@
 {meta: title Coast to Coast}
 {meta: artist Asleep at the Wheel}
+{meta: x_source classic-country}
+{meta: x_source_file coasttocoastlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's not just the bedroom where she used to lay her head
@@ -40,3 +43,8 @@ California seems like someplace I could catch my breath
 [G]But the shadow that it's casting seem to [C]fall
 [G]Coast to [D7]coast and wall to [G]wall
 {end_of_verse}
+
+
+
+
+

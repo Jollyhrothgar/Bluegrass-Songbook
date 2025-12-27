@@ -1,6 +1,9 @@
 {meta: title Drifting With The Tide}
 {meta: artist Del McCoury}
 {meta: composer Don Reno and Red Smiley}
+{meta: x_source classic-country}
+{meta: x_source_file driftingwiththetidelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]As my boat draws near the harbor
@@ -36,3 +39,7 @@ I have waited for the [D7]time
 But [G]if another has you darling
 [D7]I'll go drifting with [G]tide
 {end_of_verse}
+
+
+
+

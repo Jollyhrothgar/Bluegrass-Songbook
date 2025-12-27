@@ -1,6 +1,9 @@
 {meta: title Heads I Go Hearts I Stay}
 {meta: artist Mickey Gilley}
 {meta: composer Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file headsigoheartsistaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We both know I ought to leave
@@ -33,3 +36,6 @@ Heads I [C]go [Dm]   [G7]hearts I [C]stay[F]
 Oh but it's [C]all wrong honey we keep [F]holding on[Fm]
 Heads I [C]go [Dm]   [G7]hearts I [C]stay
 {end_of_verse}
+
+
+

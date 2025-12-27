@@ -1,5 +1,8 @@
 {meta: title My Carolina Sunshine Girl}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file mycarolinasunshinegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Moon moon I can see you sinking low
@@ -31,3 +34,7 @@ You make me think of a sweetheart
 {start_of_verse: Verse 5}
 Repeat #3
 {end_of_verse}
+
+
+
+

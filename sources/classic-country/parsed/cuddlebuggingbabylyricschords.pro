@@ -1,6 +1,9 @@
 {meta: title Cuddle Bugging Baby}
 {meta: artist Eddy Arnold}
 {meta: composer Ralph Red Rowe}
+{meta: x_source classic-country}
+{meta: x_source_file cuddlebuggingbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the weather's kinda chilly and we start to kiss and hug
@@ -30,3 +33,6 @@ I love that [F]cuddle bugging baby of mine
 Keeps cuddle bugging all the [C]time
 [G7]Makes this boy jump with joy that [F]cuddle bugging baby of [C]mine
 {end_of_verse}
+
+
+

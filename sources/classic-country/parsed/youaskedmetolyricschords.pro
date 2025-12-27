@@ -1,6 +1,9 @@
 {meta: title You Asked Me To}
 {meta: artist Waylon Jennings}
 {meta: composer Billy Joe Shaver and Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file youaskedmetolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Long ago and far [F]away
@@ -36,3 +39,7 @@ But if things are right with me and [C]you
 That's all that matters and I'll [G7]do
 Anything you asked me [C]to
 {end_of_verse}
+
+
+
+

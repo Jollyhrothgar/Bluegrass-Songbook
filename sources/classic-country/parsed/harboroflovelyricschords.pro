@@ -1,6 +1,9 @@
 {meta: title Harbor Of Love}
 {meta: artist Stanley Brothers}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file harboroflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's coming a time on the great [C]judgment [G]morning
@@ -29,3 +32,6 @@
 [G]And the midnight is past a [C]new day is [G]dawning
 [Em]Oh the great [D7]ship will anchor in the harbor of [G]love
 {end_of_verse}
+
+
+

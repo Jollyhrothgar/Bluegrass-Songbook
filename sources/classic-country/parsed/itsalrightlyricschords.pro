@@ -1,5 +1,8 @@
 {meta: title It's Alright}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file itsalrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey little [Em]one  [Dm]don't you [G7]cry
@@ -50,3 +53,10 @@ Just in [Em]time  [Dm]to be too [G7]late
 It's [F]alright  it's [C]alright
 It's [F]alright  [G7]I'll be on my [C]way
 {end_of_verse}
+
+
+
+
+
+
+

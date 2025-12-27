@@ -1,6 +1,9 @@
 {meta: title Answer The Phone}
 {meta: artist Darrell McCall}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file answerthephonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve called and I’ve called you [F]but each time I [C]phone
@@ -33,3 +36,7 @@ For [F]I’ll never [G7]bother you [C]again
 {start_of_verse: Verse 4}
 For [F]I’ll never [G7]bother you [C]again
 {end_of_verse}
+
+
+
+

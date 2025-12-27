@@ -1,6 +1,9 @@
 {meta: title It Takes So Long}
 {meta: artist Jim Ed Brown}
 {meta: composer Helen Cornelius}
+{meta: x_source classic-country}
+{meta: x_source_file ittakessolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]It takes [C]so long so [F]long to say good[C]night
@@ -39,3 +42,7 @@ It takes so long so [F]long to say good[C]night
 But it's so good [G7]to say goodnight
 To [F]someone who really [C]loves you
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I'll Start Believing In You}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file illstartbelievinginyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tell me how the cow jumped over the [D7]moon
@@ -61,3 +64,11 @@ When I [D7]believe there’s truth in old mother [G]goose
 When I [D7]believe there’s truth in old mother [G]goose  
 [A7]Then I’ll start [D7]believing in [G]you
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Back Home Again In Indiana}
 {meta: artist Bob Wills}
 {meta: composer James F. Hanley and Ballard MacDonald}
+{meta: x_source classic-country}
+{meta: x_source_file backhomeagaininindianalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Back home [A7]again in Indiana [D7]and it [G7]seems that I can [C]see
@@ -15,3 +18,4 @@
 {start_of_verse: Verse 2}
 Repeat
 {end_of_verse}
+

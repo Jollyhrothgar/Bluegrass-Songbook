@@ -1,6 +1,9 @@
 {meta: title Lady’s Man}
 {meta: artist Hank Snow}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file ladysmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm a lady's man oh yes-sir-ee
@@ -46,3 +49,7 @@ Oh I like 'em short I like [C]'em tall
 As a mater of fact I love [F]'em all
 Make [C]way for me [G7]I'm a loving lady's [C]man
 {end_of_verse}
+
+
+
+

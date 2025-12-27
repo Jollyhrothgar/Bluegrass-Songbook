@@ -1,6 +1,9 @@
 {meta: title We Call On Him}
 {meta: artist Elvis Presley}
 {meta: composer Ben Weisman, Sid Wayne, Freddie Karger}
+{meta: x_source classic-country}
+{meta: x_source_file wecallonhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We call on [F]Him whenever storm clouds [C]gather
@@ -19,3 +22,4 @@ Filled to the [Dm]brim  [G7]we call on [C]Him
 Why don't we [Dm]call on Him [G7]before we lose our [C]way
 To count our [Dm]blessings and [G7]thank Him while we [C]may
 {end_of_verse}
+

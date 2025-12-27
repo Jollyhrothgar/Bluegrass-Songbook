@@ -1,6 +1,9 @@
 {meta: title Sound Of A Heartache}
 {meta: artist Johnny Bush}
 {meta: composer Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file soundofaheartachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Loneliness surrounds me 
@@ -47,3 +50,9 @@ Above the [F]noise of happy [G7]people in that [C]crowd
 {start_of_verse: Verse 6}
 Above the [F]noise of happy [G7]people in that [C]crowd
 {end_of_verse}
+
+
+
+
+
+

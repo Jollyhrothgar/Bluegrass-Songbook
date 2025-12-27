@@ -1,6 +1,9 @@
 {meta: title Dixie Road}
 {meta: artist Lee Greenwood}
 {meta: composer Don Goodman, Mary Ann Kennedy, Pamela Rose}
+{meta: x_source classic-country}
+{meta: x_source_file dixieroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I would pick and we would sing
@@ -69,3 +72,17 @@ And I'm clear across the country
 {start_of_verse: Verse 3}
 I found new notes on that old guitar
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

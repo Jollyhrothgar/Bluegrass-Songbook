@@ -1,6 +1,9 @@
 {meta: title Before The Sunrise}
 {meta: artist Bobby Bare}
 {meta: composer Jerry McBee}
+{meta: x_source classic-country}
+{meta: x_source_file beforethesunriselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I guess I'd better try again 
@@ -41,3 +44,8 @@ If we don't make it home before the [C]sunrise
 [G7]Tears will fill somebody's eyes 
 If we don't make it home before the [C]sunrise
 {end_of_verse}
+
+
+
+
+

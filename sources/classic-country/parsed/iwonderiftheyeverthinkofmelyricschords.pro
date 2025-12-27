@@ -1,5 +1,8 @@
 {meta: title I Wonder If They Ever Think Of Me}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderiftheyeverthinkofmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's not much a man can do [C]inside a [G]prison
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 5}
 [D7]Oh I just wonder if they ever think of [G]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Lead Us Back To Your Love}
 {meta: artist Conway Twitty}
 {meta: composer Jack Dunham}
+{meta: x_source classic-country}
+{meta: x_source_file leadusbacktoyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord Jesus You gotta get us all back [F]together
@@ -31,3 +34,6 @@ And lead us back to the top of [G7]Calvary once [C]again
 Show us where Your blood spilled and first made love [F]grow
 Cause we turned our backs on Your [G7]love a long time [C]ago
 {end_of_verse}
+
+
+

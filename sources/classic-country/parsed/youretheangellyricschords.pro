@@ -1,6 +1,9 @@
 {meta: title You're The Angel}
 {meta: artist Faron Young}
 {meta: composer George Riddle}
+{meta: x_source classic-country}
+{meta: x_source_file youretheangellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You're the [G]angel but I'm the one that's living in [C]heaven
@@ -33,3 +36,7 @@ You're the [G]angel but I'm the one who [D7]walks on a [G]cloud
 {start_of_verse: Verse 4}
 You're the angel but I'm the one who [D7]walks on a [C]clou[G]d
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title If This House Could Talk}
 {meta: artist Stonewall Jackson}
 {meta: composer Hugh X. Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file ifthishousecouldtalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]If this house could talk oh what a [C]story 
@@ -39,3 +42,7 @@ I walked up close [G7]looked through the picture [C]window
 [F]How it would brag about its days of [C]glory 
 When [G7]it almost became a happy [C]home
 {end_of_verse}
+
+
+
+

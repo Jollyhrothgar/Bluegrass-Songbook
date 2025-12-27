@@ -1,6 +1,9 @@
 {meta: title The River Of Happiness}
 {meta: artist Josh Turner}
 {meta: composer Jennifer Turner and Hampton Turner}
+{meta: x_source classic-country}
+{meta: x_source_file theriverofhappinesslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a river way out [C]yonder
@@ -23,3 +26,5 @@ Won't you come [G]with us to the [C]river
 The [G]river of [D7]happi[G]ness
 The river of [D7]happi[G]ness
 {end_of_verse}
+
+

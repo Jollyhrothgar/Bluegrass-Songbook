@@ -1,6 +1,9 @@
 {meta: title I Sacrificed More Than You'll Ever Lose}
 {meta: artist Reba McEntire}
 {meta: composer Beverly Carlton and James Benton}
+{meta: x_source classic-country}
+{meta: x_source_file isacrificedmorethanyoulleverloselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I fed the children and I [F]kissed them good[C]night
@@ -28,3 +31,6 @@ You [C]say I'm to blame but [F]who's fooling [C]who
 I've sacri[F]ficed [C]more than [G7]you'll ever [C]lose
 Yeah I sacri[F]ficed [C]more than [G7]you'll ever [F]lose[C]
 {end_of_verse}
+
+
+

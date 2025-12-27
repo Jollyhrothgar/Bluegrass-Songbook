@@ -1,6 +1,9 @@
 {meta: title Ten Thousands Angels Cried}
 {meta: artist LeAnn Rimes}
 {meta: composer David Patillo}
+{meta: x_source classic-country}
+{meta: x_source_file tenthousandsangelscriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Stillness filled the heavens on crucifixion [Am]day
@@ -45,3 +48,8 @@
 [D7]It must have looked [Bm]like [Em]rain
 [Am]When ten thousand [D7]angels [G]cried
 {end_of_verse}
+
+
+
+
+

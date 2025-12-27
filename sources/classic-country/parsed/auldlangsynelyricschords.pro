@@ -1,5 +1,8 @@
 {meta: title Auld Lang Syne}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file auldlangsynelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Should auld acquaintance [G7]be forgot
@@ -28,3 +31,6 @@ For [C]auld lang [F]syne
 We'll [C]take a cup of [G7]kindness yet
 For [Am]days of [F]auld lang [C]syne
 {end_of_verse}
+
+
+

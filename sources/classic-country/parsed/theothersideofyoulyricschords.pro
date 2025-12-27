@@ -1,6 +1,9 @@
 {meta: title The Other Side Of You}
 {meta: artist Webb Pierce}
 {meta: composer Audrey Grisham and Leon Miller}
+{meta: x_source classic-country}
+{meta: x_source_file theothersideofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You used to call me your darling
@@ -34,3 +37,7 @@ To the [G7]other side of [C]you
 [F]I'm wondering what [C]happened 
 To the [G7]other side of [C]you
 {end_of_verse}
+
+
+
+

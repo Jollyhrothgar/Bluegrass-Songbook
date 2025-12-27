@@ -1,6 +1,9 @@
 {meta: title All for the Love of Sunshine}
 {meta: artist Hank Williams Jr.}
 {meta: composer Mike Curb and Lalo Schifrin}
+{meta: x_source classic-country}
+{meta: x_source_file allfortheloveofsunshinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The darkness of my world [G7]was all cleared away
@@ -43,3 +46,8 @@ All for the [F]love of sun[C]shine
 The [C]Lord smiled down [F]on this life of [C]mine 
 And sent me the [G7]love of sun[C]shine
 {end_of_verse}
+
+
+
+
+

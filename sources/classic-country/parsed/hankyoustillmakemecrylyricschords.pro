@@ -1,5 +1,8 @@
 {meta: title Hank You Still Make Me Cry}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file hankyoustillmakemecrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well Hank you [G7]still make me [C]cry
@@ -32,3 +35,7 @@ And [C]Hank you [G7]still make me [C]cry
 {start_of_verse: Verse 4}
 Yeah Hank you [G7]still make me [C]cry
 {end_of_verse}
+
+
+
+

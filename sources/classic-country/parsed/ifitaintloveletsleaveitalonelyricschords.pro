@@ -1,6 +1,9 @@
 {meta: title If It Ain't Love Let's Leave It Alone}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file ifitaintloveletsleaveitalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If it ain't love then let's don't even let it [A]start
@@ -43,3 +46,8 @@ If it ain't love then let's don't tempt our foolish [A]hearts
 If it ain't love then let's don't tempt our foolish [A]hearts
 [F]Let's leave it [C]alone
 {end_of_verse}
+
+
+
+
+

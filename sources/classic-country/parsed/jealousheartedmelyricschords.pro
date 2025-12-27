@@ -1,6 +1,9 @@
 {meta: title Jealous Hearted Me}
 {meta: artist Bob Wills}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file jealousheartedmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It takes a rocking chair to rock a rubber ball to roll
@@ -22,3 +25,5 @@ But when you fool around my man I [C7]won’t stand for that
 I'm [F]jealous jealous hearted [C]me
 Oh yes I'm [G7]jealous jealous as I can [C]be
 {end_of_verse}
+
+

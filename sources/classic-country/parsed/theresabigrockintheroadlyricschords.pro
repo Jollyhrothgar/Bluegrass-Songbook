@@ -1,6 +1,9 @@
 {meta: title There's A Big Rock In The Road}
 {meta: artist Bob Wills}
 {meta: composer Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file theresabigrockintheroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a big [G7]rock in the [C]road 
@@ -47,3 +50,8 @@ So if you’re not very [C]humble
 Then you’re liable to [F]stumble 
 On the [C]big [G7]rock in the [C]road
 {end_of_verse}
+
+
+
+
+

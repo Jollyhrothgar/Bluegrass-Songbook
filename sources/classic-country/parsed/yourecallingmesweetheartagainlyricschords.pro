@@ -1,6 +1,9 @@
 {meta: title You're Calling Me Sweetheart Again}
 {meta: artist Jean Shepard}
 {meta: composer Jack Rhodes and Gertrude Cox}
+{meta: x_source classic-country}
+{meta: x_source_file yourecallingmesweetheartagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's nothing so precious as [C]something you've [G]lost
@@ -36,3 +39,7 @@
 [C]No matter what [G]happen or [D7]who's had your [G]love
 [D7]You're calling me sweetheart [G]again
 {end_of_verse}
+
+
+
+

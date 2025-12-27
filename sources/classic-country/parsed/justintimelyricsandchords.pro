@@ -1,5 +1,8 @@
 {meta: title Just In Time Lyrics chords}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file justintimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tomorrow I'll be married tomorrow you'll be [C]blue
@@ -28,3 +31,6 @@
 [C]But sometimes there'll be better days for them you'll have to wait
 [D7]You came back just in time old friend in time to be too [G]late
 {end_of_verse}
+
+
+

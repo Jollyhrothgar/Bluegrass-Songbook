@@ -1,6 +1,9 @@
 {meta: title Make Me Wonderful In Her Eyes}
 {meta: artist Jim Reeves}
 {meta: composer Leona R. Butrum, Nellie Smith, Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file makemewonderfulinhereyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I lay me [G7]down to sleep
@@ -47,3 +50,9 @@ And [G7]make me wonderful in her [C]eyes
 {start_of_verse: Verse 7}
 [G7]Please make me wonderful in her [C]e-[F]y-[C]es
 {end_of_verse}
+
+
+
+
+
+

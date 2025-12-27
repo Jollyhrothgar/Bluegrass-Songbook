@@ -1,6 +1,9 @@
 {meta: title No Relief In Sight}
 {meta: artist Conway Twitty}
 {meta: composer Johnny Wilson,Gene Dobbins,Rory Bourke}
+{meta: x_source classic-country}
+{meta: x_source_file noreliefinsightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My mind goes all to pieces
@@ -49,3 +52,10 @@ Cause I’ve done everything I know of
 To forget about your sweet love
 [C]Still  there’s [D7]no relief in [G]sight
 {end_of_verse}
+
+
+
+
+
+
+

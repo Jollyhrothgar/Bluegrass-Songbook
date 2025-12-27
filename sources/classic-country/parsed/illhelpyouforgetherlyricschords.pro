@@ -1,6 +1,9 @@
 {meta: title I'll Help You Forget Her}
 {meta: artist Dottie West}
 {meta: composer Yvonne Devaney}
+{meta: x_source classic-country}
+{meta: x_source_file illhelpyouforgetherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll help you forget her if you'll let [D7]me
@@ -32,3 +35,7 @@ Toss and turn by the tide of emotion
 [G7]I'll be the anchor you cling [C]to
 [G]Your harbor of [D7]love [G]evermore
 {end_of_verse}
+
+
+
+

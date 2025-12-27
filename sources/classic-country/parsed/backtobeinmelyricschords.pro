@@ -1,6 +1,9 @@
 {meta: title Back To Bein' Me}
 {meta: artist George Strait}
 {meta: composer Hank Cochran and Dean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file backtobeinmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm back to bein' me
@@ -43,3 +46,8 @@
 [C]I'm back to bein' me
 [G7]I'm back to bein' [C]me
 {end_of_verse}
+
+
+
+
+

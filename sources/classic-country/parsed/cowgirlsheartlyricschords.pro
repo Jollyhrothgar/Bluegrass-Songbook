@@ -1,5 +1,8 @@
 {meta: title Cowgirls Heart}
 {meta: artist Becky Hobbs}
+{meta: x_source classic-country}
+{meta: x_source_file cowgirlsheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met you at the rodeo in town
@@ -39,3 +42,8 @@ You [Am]sure knew how to [D7]win a cowgirls [G]heart
 {start_of_verse: Verse 5}
 You [Am]sure knew how to [D7]win this cowgirls [G]heart
 {end_of_verse}
+
+
+
+
+

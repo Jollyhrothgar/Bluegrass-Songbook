@@ -1,5 +1,8 @@
 {meta: title Local Memory}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file localmemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]The lights go out each evening at [G]eleven
@@ -41,3 +44,8 @@
 {start_of_verse: Verse 5}
 [C]And each night the local [D7]memory comes [G]around
 {end_of_verse}
+
+
+
+
+

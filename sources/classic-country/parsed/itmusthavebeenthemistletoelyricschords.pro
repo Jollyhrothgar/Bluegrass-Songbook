@@ -1,6 +1,9 @@
 {meta: title It Must Have Been The Mistletoe}
 {meta: artist Barbara Mandrell}
 {meta: composer Justin Wilde and Douglas Konecky}
+{meta: x_source classic-country}
+{meta: x_source_file itmusthavebeenthemistletoelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It must have been the mistletoe the lazy fire the falling snow
@@ -41,3 +44,8 @@ The [C]magic in the frosty air that [D7]feeling everywhere
 [G]It must have been the mistletoe the lazy fire the falling snow
 The [C]magic in the frosty air that [D7]made me love you (fade)
 {end_of_verse}
+
+
+
+
+

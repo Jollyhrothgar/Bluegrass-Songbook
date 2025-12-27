@@ -1,6 +1,9 @@
 {meta: title Do You Wanna Make Love}
 {meta: artist Jim Ed Brown}
 {meta: composer Peter McCann}
+{meta: x_source classic-country}
+{meta: x_source_file doyouwannamakelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes the love rhymes that [C]fill the afternoon
@@ -52,3 +55,8 @@ Do you want to make [C]love
 Or do you just want to [G]fool around
 You can take it [D7]seriously or take it somewhere [G]else
 {end_of_verse}
+
+
+
+
+

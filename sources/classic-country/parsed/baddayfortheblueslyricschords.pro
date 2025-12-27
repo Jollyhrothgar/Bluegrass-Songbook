@@ -1,6 +1,9 @@
 {meta: title Bad Day For The Blues}
 {meta: artist David Ball}
 {meta: composer David Ball and Tommy Polk}
+{meta: x_source classic-country}
+{meta: x_source_file baddayfortheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The sun is comin’ up its a [C]brand new day
@@ -44,3 +47,8 @@ Than the [D7]tallest tree on the highest hill
 Just like the weatherman I’m [C]tellin’ you
 Its [D7]lookin’ like a bad day for the [G]blues
 {end_of_verse}
+
+
+
+
+

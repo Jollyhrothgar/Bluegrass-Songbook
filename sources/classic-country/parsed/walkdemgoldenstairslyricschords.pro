@@ -1,6 +1,9 @@
 {meta: title Walk Dem Golden Stairs}
 {meta: artist Elvis Presley}
 {meta: composer Cully Holt}
+{meta: x_source classic-country}
+{meta: x_source_file walkdemgoldenstairslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I’m gonna walk walk dem golden [C]stairs
@@ -44,3 +47,9 @@ Well well well
 [C]Well when he comes to call me to that home on [F]high
 I'm gonna [C]walk dem [A7]golden [D7]stairs [G7]when I [C]die [F]when I [C]die
 {end_of_verse}
+
+
+
+
+
+

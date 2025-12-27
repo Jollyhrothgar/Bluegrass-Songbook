@@ -1,5 +1,8 @@
 {meta: title Everything's Okay}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file everythingsokaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I went to the country just the [C]other day
@@ -77,3 +80,13 @@ I asked [D7]for another loan but the banker [G]turned me down
 But we're still a livin' and we're [C]prayin' for better days
 So [D7]after all everything's in purty good [G]shape
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

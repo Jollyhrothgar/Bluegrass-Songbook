@@ -1,6 +1,9 @@
 {meta: title In My Dreams}
 {meta: artist Emmylou Harris}
 {meta: composer Paul Kennerley}
+{meta: x_source classic-country}
+{meta: x_source_file inmydreamslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When the sun goes down on the [C]other side of town [G]tonight
@@ -54,3 +57,11 @@ Oh [G]oh everything will [D7]work out [G]right
 Oh [G]oh everything will [D7]work out [G]right
 [C]Cause I'll still [F]hold you [C]tight [D7]in my [G]dreams
 {end_of_verse}
+
+
+
+
+
+
+
+

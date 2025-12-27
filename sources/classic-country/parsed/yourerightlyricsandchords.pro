@@ -1,6 +1,9 @@
 {meta: title You're Right}
 {meta: artist Faron Young}
 {meta: composer Helen Carter and Chet Atkins}
+{meta: x_source classic-country}
+{meta: x_source_file yourerightlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you think I'm gonna cry because you said [F]goodbye
@@ -29,3 +32,6 @@ You're [G7]right but I wish you were [C]wrong
 [C]If you think I'm gonna pray that you'll come back some [F]day
 You're [G7]right but I wish you were [C]wrong
 {end_of_verse}
+
+
+

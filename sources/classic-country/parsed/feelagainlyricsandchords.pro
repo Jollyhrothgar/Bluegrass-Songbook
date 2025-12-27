@@ -1,6 +1,9 @@
 {meta: title Feel Again Lyrics and Chords}
 {meta: artist Faron Young}
 {meta: composer John Virgin}
+{meta: x_source classic-country}
+{meta: x_source_file feelagainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All the [G7]times I can't be with you and you get tired of being left [C]alone
@@ -22,3 +25,5 @@ So if you ever get the feeling I don't love you feel [C]again
 Ever day I'm thankful that I have you as a lover and a [G7]friend
 So if you ever get the feeling I don't love you feel [C]again 
 {end_of_verse}
+
+

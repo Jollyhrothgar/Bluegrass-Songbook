@@ -1,6 +1,9 @@
 {meta: title Losing You}
 {meta: artist Jimmy Martin}
 {meta: composer Edria A. Humphrey and Jimmy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file losingyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's no such thing as sleep for a jealous [C]fool
@@ -33,3 +36,7 @@ Losing [G]you might [D7]be the best thing [G]yet
 {start_of_verse: Verse 4}
 Losing you might [D7]be the best thing [G]yet 
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Born For Trouble}
 {meta: artist Willie Nelson}
 {meta: composer Fred Carter}
+{meta: x_source classic-country}
+{meta: x_source_file bornfortroublelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was born when the moon was full and [E7]bright
@@ -37,3 +40,8 @@
 [F]But I gotta keep living until I [C]die
 [D7]I was born for trouble and [G7]somebody musta raised me [C]right
 {end_of_verse}
+
+
+
+
+

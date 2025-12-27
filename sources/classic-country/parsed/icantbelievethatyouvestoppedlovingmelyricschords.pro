@@ -1,6 +1,9 @@
 {meta: title I Can't Believe That You've Stopped Loving Me}
 {meta: artist Charley Pride}
 {meta: composer Dallas Frazier - Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file icantbelievethatyouvestoppedlovingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tomorrow I'll say Happy [F]Birthday [C]darling
@@ -33,3 +36,7 @@ I can't believe that [G7]you've stopped loving [C]me
 {start_of_verse: Verse 4}
 I can't believe that [G7]you've stopped loving [C][F]m-e
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Would You Lay With Me}
 {meta: artist Tanya Tucker}
+{meta: x_source classic-country}
+{meta: x_source_file wouldyoulaywithmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Would you lay with me in a field of stone
@@ -32,3 +35,8 @@ In my [G7]time of trials will you stand by [C]me
 Should my lips grow dry would you wet them dear
 In the [G7]midnight hour if my lips were [C]dry
 {end_of_verse}
+
+
+
+
+

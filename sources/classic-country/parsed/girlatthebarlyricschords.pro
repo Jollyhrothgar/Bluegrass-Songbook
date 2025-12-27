@@ -1,5 +1,8 @@
 {meta: title Girl At The Bar}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file girlatthebarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Don't go too far with the girl at the bar
@@ -37,3 +40,8 @@
 {start_of_verse: Verse 6}
 [C]To her I'm just [D7]another used to [G]be
 {end_of_verse}
+
+
+
+
+

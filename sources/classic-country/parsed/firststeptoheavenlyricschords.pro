@@ -1,6 +1,9 @@
 {meta: title First Step To Heaven}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Emory Gordy and Jim Rushing}
+{meta: x_source classic-country}
+{meta: x_source_file firststeptoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wake up oh sinner you're [G7]facing the darkness of [C]death
@@ -33,3 +36,7 @@ The first step to [G7]heaven is down on your [C]knees
 {start_of_verse: Verse 4}
 The first step to [G7]heaven is down on your [C]knees
 {end_of_verse}
+
+
+
+

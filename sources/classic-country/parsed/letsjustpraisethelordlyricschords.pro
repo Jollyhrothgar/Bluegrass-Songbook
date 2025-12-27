@@ -1,6 +1,9 @@
 {meta: title Let’s Just Praise The Lord}
 {meta: artist Wanda Jackson}
 {meta: composer William Gaither and Gloria Gaither}
+{meta: x_source classic-country}
+{meta: x_source_file letsjustpraisethelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let's just praise the Lord [C]praise the Lord
@@ -27,3 +30,6 @@ Let's just [G]lift our hands to [A7]heaven and [D7]praise the [G]Lord
 Let's just praise the Lord [C]praise the Lord
 Let's just [G]lift our voice to [A7]heaven and [D7]praise the [G]Lord
 {end_of_verse}
+
+
+

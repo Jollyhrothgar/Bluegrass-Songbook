@@ -1,6 +1,9 @@
 {meta: title Today}
 {meta: artist John Denver}
 {meta: composer Randy Sparks}
+{meta: x_source classic-country}
+{meta: x_source_file todaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today while the [Am]blossoms still [Dm]cling to the [G7]vine
@@ -43,3 +46,8 @@ I'll [C]taste your [Am]strawberries I'll [Dm]drink your sweet [G7]wine
 A [C]million tomorrows shall [F]all pass [Fm]away
 [C]Ere I for[Am]get all the [Dm]joy that is [G7]mine  to[C]day[Am]   [F]  [G7]
 {end_of_verse}
+
+
+
+
+

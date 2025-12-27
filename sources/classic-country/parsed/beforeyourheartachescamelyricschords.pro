@@ -1,6 +1,9 @@
 {meta: title Before Your Heartaches Came}
 {meta: artist Bobby Helms}
 {meta: composer Merrill St. John}
+{meta: x_source classic-country}
+{meta: x_source_file beforeyourheartachescamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Is your love just as strong
@@ -43,3 +46,7 @@ Do you dream of me [G7]now
 As you [C]did be[Am]fore
 Be[D7]fore your heartaches [G]came
 {end_of_verse}
+
+
+
+

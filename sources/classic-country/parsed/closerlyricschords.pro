@@ -1,6 +1,9 @@
 {meta: title Closer}
 {meta: artist Faron Young}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file closerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well closer than the knob is to the [G7]door
@@ -47,3 +50,9 @@ That’s [G7]how close I want to be to [C]you
 {start_of_verse: Verse 6}
 That’s [G7]how close I want to be to [C]you
 {end_of_verse}
+
+
+
+
+
+

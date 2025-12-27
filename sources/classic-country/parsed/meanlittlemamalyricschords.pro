@@ -1,6 +1,9 @@
 {meta: title Mean Little Mama}
 {meta: artist Roy Orbison}
 {meta: composer Sam Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file meanlittlemamalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Well why do you treat me so [C]mean
@@ -32,3 +35,5 @@ Well [F]I'm down on my knees for [G7]you
 Well I'm [F]beggin' and a pleadin' 
 [G7]Oh please please love me [C]too
 {end_of_verse}
+
+

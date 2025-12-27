@@ -1,6 +1,9 @@
 {meta: title Butter Beans}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Charles D. Colvin}
+{meta: x_source classic-country}
+{meta: x_source_file butterbeanslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just a bowl of butter [G7]beans
@@ -36,3 +39,7 @@ Pass the corn-bread if you [C]please
 [C7]I don't want no collard [F]greens
 All I [C]want is a [G7]bowl of butter [C]beans
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title If No News Is Good News}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file ifnonewsisgoodnewslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If no news is good news then I should be [F]happy
@@ -21,3 +24,5 @@ Pay no [F]heed though if you hear me [G7]sighing
 So if [C]no news is good news then I should [F]be happy
 And [C]baby I’m so [G7]happy I’m [C]crying
 {end_of_verse}
+
+

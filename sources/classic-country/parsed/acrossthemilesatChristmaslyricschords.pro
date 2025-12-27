@@ -1,5 +1,8 @@
 {meta: title Across The Miles At Christmas}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file acrossthemilesatChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You’re [G7]on my [C]mind [F]across the miles at [G7]Christmas
@@ -32,3 +35,7 @@ And pray [G7]God to keep you in His care and [C]grace
 {start_of_verse: Verse 5}
 I send my [G7]love across the miles this [C]Christmas [G7]   [C]
 {end_of_verse}
+
+
+
+

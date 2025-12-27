@@ -1,6 +1,9 @@
 {meta: title I'll Meet You At The Throne}
 {meta: artist Red Steagall}
 {meta: composer Larry McWhorter}
+{meta: x_source classic-country}
+{meta: x_source_file illmeetyouatthethronelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear friend we’ve been through many miles and years
@@ -62,3 +65,11 @@
 [F]Be it first you [D7]or me let us [C]hear now [Am]agree
 [D7]I’ll meet you [G7]at the [C]Throne
 {end_of_verse}
+
+
+
+
+
+
+
+

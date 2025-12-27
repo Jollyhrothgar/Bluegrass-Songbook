@@ -1,5 +1,8 @@
 {meta: title Atta Way To Go}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file attawaytogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Atta a way to [F]go you finally broke it [C]off
@@ -32,3 +35,7 @@
 [F]Atta a way to go we can’t [C]even talk  or [G7]cry
 [F]Or even wonder [C]why  [G7]atta a way to [C]go
 {end_of_verse}
+
+
+
+

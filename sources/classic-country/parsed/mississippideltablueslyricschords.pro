@@ -1,6 +1,9 @@
 {meta: title Mississippi Delta Blues}
 {meta: artist Bob Wills}
 {meta: composer Jimmie Rodgers and Jack Neville}
+{meta: x_source classic-country}
+{meta: x_source_file mississippideltablueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]With friends around and even pals that I know are [G7]true
@@ -43,3 +46,8 @@
 [F]There's a feeling I can't lose that muddy [C]water in my [A7]shoes
 [D7]When I get that [G7]Mississippi Delta [C]blues
 {end_of_verse}
+
+
+
+
+

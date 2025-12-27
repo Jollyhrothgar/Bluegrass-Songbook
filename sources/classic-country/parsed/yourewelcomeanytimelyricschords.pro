@@ -1,6 +1,9 @@
 {meta: title You're Welcome Anytime}
 {meta: artist Buck Owens}
 {meta: composer Buddy Mize and Ray Sanders}
+{meta: x_source classic-country}
+{meta: x_source_file yourewelcomeanytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Back in my arms again back in my dreams [C]again
@@ -29,3 +32,6 @@ Well I've heard that your new love is not the life you've [C]planned
 If you were just another girl I wouldn't care at [C]all
 [D7]But I love you so you're welcome [G]anytime
 {end_of_verse}
+
+
+

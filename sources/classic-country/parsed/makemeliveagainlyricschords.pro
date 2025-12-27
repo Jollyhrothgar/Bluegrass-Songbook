@@ -1,6 +1,9 @@
 {meta: title Make Me Live Again}
 {meta: artist Ferlin Husky}
 {meta: composer Tommy Bland, Jerry Morton, Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file makemeliveagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I've [C]died a thousand [C7]times [F]since you went [C]away
@@ -15,3 +18,4 @@ And [F]make me live [C]again like you made [G7]me live [C]before
 [C]I pray that you'll come [G7]back and [F]love me ever [Em]more
 And [F]make me live [C]again like you made [G7]me live [C]before
 {end_of_verse}
+

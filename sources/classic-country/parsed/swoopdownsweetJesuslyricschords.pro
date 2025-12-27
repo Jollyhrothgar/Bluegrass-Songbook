@@ -1,6 +1,9 @@
 {meta: title Swoop Down Sweet Jesus}
 {meta: artist George Jones}
 {meta: composer Bill Emerson, John Anderson, James Bohon}
+{meta: x_source classic-country}
+{meta: x_source_file swoopdownsweetJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well-a want You swoop down sweet Jesus [F]and put a hold on [C]me
@@ -37,3 +40,7 @@ The devil’s got me all tied up and he [D7]just won’t set me [G7]free
 I’ve been [C]all junked up in a honky tonk and a [F]bottle mise[C]ry 
 So won't You swoop down sweet Jesus [G7]and put a hold on [C]me
 {end_of_verse}
+
+
+
+

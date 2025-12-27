@@ -1,6 +1,9 @@
 {meta: title I’m Sorry If My Love Got In Your Way}
 {meta: artist Connie Smith}
 {meta: composer Dallas Frazier & Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file imsorryifmylovegotinyourwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The kindness in your heart is all that kept us [G7]together
@@ -22,3 +25,4 @@ I'm sorry if my love got in your [C]way
 {start_of_verse: Verse 2}
 I'm [G7]sorry if my love got in your [C]way
 {end_of_verse}
+

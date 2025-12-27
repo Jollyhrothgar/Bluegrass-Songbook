@@ -1,6 +1,9 @@
 {meta: title Gonna Burn Some Bridges}
 {meta: artist Ray Price}
 {meta: composer Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file gonnaburnsomebridgeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tonight I'm going out and burn some [D7]bridges
@@ -29,3 +32,6 @@ And maybe somehow then I can [G]forget
 Cause [G]tonight I'm going out and burn some [D7]bridges
 But only on the road that leads to [G]you
 {end_of_verse}
+
+
+

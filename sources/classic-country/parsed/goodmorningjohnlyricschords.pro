@@ -1,6 +1,9 @@
 {meta: title Good Morning John}
 {meta: artist Waylon Jennings}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file goodmorningjohnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Good morning John
@@ -59,3 +62,9 @@ But you ain't gonna lose me as your [C]friend
 {start_of_verse: Verse 7}
 [G7]Good morning [C]John 
 {end_of_verse}
+
+
+
+
+
+

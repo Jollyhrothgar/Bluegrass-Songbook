@@ -1,6 +1,9 @@
 {meta: title This Love's On Me}
 {meta: artist Alabama}
 {meta: composer Jeff Cook, John Lawrence, Kenneth Randolph}
+{meta: x_source classic-country}
+{meta: x_source_file thislovesonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sittin' alone at a [Em]table for two [D7] when she walked [C]in
@@ -48,3 +51,10 @@ This love's [D7]on me I'm [G]gonna love away your [C]misery
 [G]I'm gonna love away your [C]misery
 [G]Soon you will [D7]see this love's on [G]me
 {end_of_verse}
+
+
+
+
+
+
+

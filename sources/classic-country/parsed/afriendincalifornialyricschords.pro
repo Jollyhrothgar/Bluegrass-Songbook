@@ -1,6 +1,9 @@
 {meta: title A Friend In California}
 {meta: artist Merle Haggard}
 {meta: composer Freddy Powers}
+{meta: x_source classic-country}
+{meta: x_source_file afriendincalifornialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]L.A. traffic is bad this time of [D7]year
@@ -35,3 +38,8 @@ But there's a friend of yours in California
 [C]And as you lay your head on your pillow tonight just remember
 [D7]There's a friend of yours in California sure misses [G]you
 {end_of_verse}
+
+
+
+
+

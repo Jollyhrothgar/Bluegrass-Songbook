@@ -1,6 +1,9 @@
 {meta: title Steppin' Out}
 {meta: artist Ernest Tubb}
 {meta: composer Billy Starr}
+{meta: x_source classic-country}
+{meta: x_source_file steppinoutlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I [D7]know that my baby's been steppin' out used to be my [G]darlin'
@@ -22,3 +25,5 @@ I have [D7]worried now so long dear it's driving me [G]crazy
 But I [B7]won't ever pout neither [E7]darlin' can I shout
 Cause I [A7]know that my [D7]baby's steppin' [G]out
 {end_of_verse}
+
+

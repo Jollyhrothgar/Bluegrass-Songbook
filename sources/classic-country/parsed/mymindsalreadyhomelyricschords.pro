@@ -1,6 +1,9 @@
 {meta: title My Mind's Already Home}
 {meta: artist T.G.Sheppard}
 {meta: composer Sonny Throckmorton and Chris Dodson}
+{meta: x_source classic-country}
+{meta: x_source_file mymindsalreadyhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been [C]screwin' up [G]production
@@ -36,3 +39,7 @@ Momma's [C]got hot biscuits [G]on
 Can't you [C]hear that whistle [G]blow son
 I'm leavin' now [D7]but my mind's already [G]home
 {end_of_verse}
+
+
+
+

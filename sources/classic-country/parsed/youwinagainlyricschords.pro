@@ -1,5 +1,8 @@
 {meta: title You Win Again}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file youwinagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]The news is [G]out  all over [C]town
@@ -28,3 +31,6 @@ You take true love  and give the [D7]blame
 I guess that I  [G]should not [C]complain
 I love you [G]still  you win [G][D7]again
 {end_of_verse}
+
+
+

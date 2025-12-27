@@ -1,6 +1,9 @@
 {meta: title Don't Take It Away}
 {meta: artist Conway Twitty}
 {meta: composer Max Barnes and Troy Seals}
+{meta: x_source classic-country}
+{meta: x_source_file donttakeitawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I been looking for you all night long darling 
@@ -57,3 +60,12 @@ And you'd hold on
 I hope I don't embarrass you too much
 Here in front of all your [F]friends
 {end_of_verse}
+
+
+
+
+
+
+
+
+

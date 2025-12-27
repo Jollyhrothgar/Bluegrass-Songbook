@@ -1,6 +1,9 @@
 {meta: title Stolen Love Is The Beginning Of The End}
 {meta: artist George Morgan}
 {meta: composer Ott Stephens}
+{meta: x_source classic-country}
+{meta: x_source_file stolenloveisthebeginningoftheendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]All that [G]remains of our affair is the shame if [C]we must [G]bare
@@ -29,3 +32,6 @@ And the one I really love has turned me [D7]down
 Oh how [G]foolish we have been giving up our [C]homes for [G]sin
 And stolen love was the [D7]beginning of the [G]end
 {end_of_verse}
+
+
+

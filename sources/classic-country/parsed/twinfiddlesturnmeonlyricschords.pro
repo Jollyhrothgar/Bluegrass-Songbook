@@ -1,6 +1,9 @@
 {meta: title Twin Fiddles Turn Me On}
 {meta: artist Curtis Potter}
 {meta: composer Mel Holt}
+{meta: x_source classic-country}
+{meta: x_source_file twinfiddlesturnmeonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Twin fiddles watch you turn me on 
@@ -35,3 +38,6 @@ I'm [G]back here in the crowd
 [D7]Turn your [G]volume way up [C]loud
 [G]Play your best for me [D7]twin fiddles turn me [G]on
 {end_of_verse}
+
+
+

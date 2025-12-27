@@ -1,6 +1,9 @@
 {meta: title Take Good Care of Him}
 {meta: artist Anita Carter}
 {meta: composer Arthur Kent and Ed Warren}
+{meta: x_source classic-country}
+{meta: x_source_file takegoodcareofhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I suppose I ought to [C]say congratu[G]lations
@@ -27,3 +30,6 @@ For I couldn't bear to see him there with [D7]you
 If he's happy that will be my conso[G]lation
 So take good [D7]care of him take good [G]care [C]of [G]him
 {end_of_verse}
+
+
+

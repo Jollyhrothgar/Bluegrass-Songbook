@@ -1,6 +1,9 @@
 {meta: title Red Cadillac And A Black Mustache}
 {meta: artist Bob Luman}
 {meta: composer Lillian May}
+{meta: x_source classic-country}
+{meta: x_source_file redcadillacandablackmustachelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who you been lovin' since [Am]I've been gone
@@ -41,3 +44,7 @@ He [C]held your hand and he [Am]sang you a song
 {start_of_verse: Verse 4}
 [F]Who you been loving since [G7]I've been [C]gone[Am]
 {end_of_verse}
+
+
+
+

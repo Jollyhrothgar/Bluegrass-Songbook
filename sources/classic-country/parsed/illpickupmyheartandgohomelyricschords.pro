@@ -1,5 +1,8 @@
 {meta: title I'll Pick Up My Heart And Go Home}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file illpickupmyheartandgohomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Once [G]again [D7]you've got me [G]cryin'
@@ -26,3 +29,6 @@ I'm a [C]fool if I let this go [G]on
 You can [C]hurt me without even [G]tryin'
 Think I'll pick up my [D7]heart and go [C]home[G]
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Family Tradition}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file familytraditionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Country music singers have always been [F]a real close family
@@ -44,3 +47,8 @@ Don't ask me Hank why do ya drink Hank [F]why do you roll smoke
 Stop and think it over try to put [F]yourself in my unique position
 [G7]If I get stoned and sing all night long it's a family tra[C]dition
 {end_of_verse}
+
+
+
+
+

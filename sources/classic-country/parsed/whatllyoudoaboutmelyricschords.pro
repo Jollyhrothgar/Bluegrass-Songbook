@@ -1,6 +1,9 @@
 {meta: title What'll You Do About Me}
 {meta: artist Randy Travis}
 {meta: composer Dennis Linde}
+{meta: x_source classic-country}
+{meta: x_source_file whatllyoudoaboutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]All you wanted was a [G7]one night stand
@@ -59,3 +62,10 @@ But [F]what'll you [G7]do about [C]me
 Now [F]what'll you [G7]do about [C]me
 Now [F]what'll you [G7]do about [C]me
 {end_of_verse}
+
+
+
+
+
+
+

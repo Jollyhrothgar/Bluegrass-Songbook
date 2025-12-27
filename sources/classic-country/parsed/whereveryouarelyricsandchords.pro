@@ -1,6 +1,9 @@
 {meta: title Wherever You Are}
 {meta: artist Jean Shepard}
 {meta: composer Richard Johnson and Jan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file whereveryouarelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I don't have to live in a [C]mansion
@@ -48,3 +51,9 @@
 [C]I just wanna be near you
 [D7]Wherever you [G]are
 {end_of_verse}
+
+
+
+
+
+

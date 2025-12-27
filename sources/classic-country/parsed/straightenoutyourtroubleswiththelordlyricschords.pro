@@ -1,6 +1,9 @@
 {meta: title Straighten Out Your Troubles (With the Lord)}
 {meta: artist Ole Rasmussen}
 {meta: composer Tex Atchison}
+{meta: x_source classic-country}
+{meta: x_source_file straightenoutyourtroubleswiththelordlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The Lord is standing by to lend a helping hand
@@ -43,3 +46,8 @@ His front door is open and you're welcome to come in
 His front door is open and you're welcome to come in
 And [D7]straighten out your troubles with the [G]Lo[C]rd[G]
 {end_of_verse}
+
+
+
+
+

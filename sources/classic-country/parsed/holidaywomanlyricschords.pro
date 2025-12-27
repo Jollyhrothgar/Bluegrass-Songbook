@@ -1,5 +1,8 @@
 {meta: title Holiday Woman}
 {meta: artist Johnny Duncan}
+{meta: x_source classic-country}
+{meta: x_source_file holidaywomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I wish your hair was not so [C]long
@@ -40,3 +43,8 @@ Holiday [D7]wom[G7]an why must I [Am]love your [G7]kind of [C]girl[F]  [C]
 Holiday [D7]woman [G7]you're a good time [C]girl (holiday woman)
 Holiday [D7]wom[G7]an won't you [Am]come and [G7]share my [C]world
 {end_of_verse}
+
+
+
+
+

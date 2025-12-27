@@ -1,6 +1,9 @@
 {meta: title Why Did You Wait}
 {meta: artist Jean Shepard}
 {meta: composer Clyde Wilson and Bettie Westergard}
+{meta: x_source classic-country}
+{meta: x_source_file whydidyouwaitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why did you wait to prove [F]to be [C]untrue
@@ -29,3 +32,6 @@ Think of the shame [D7]look at the [G7]harm
 [C]Think of what you've done to your [F]baby and [C]me
 [F]Why did you [C]wait till we [G7]had a [C]family
 {end_of_verse}
+
+
+

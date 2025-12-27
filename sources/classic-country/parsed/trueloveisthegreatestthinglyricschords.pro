@@ -1,6 +1,9 @@
 {meta: title True Love Is The Greatest Thing}
 {meta: artist George Morgan}
 {meta: composer Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file trueloveisthegreatestthinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]True love is the greatest [C7]thing [F]without it life doesn't [C]mean a thing
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 3}
 [F]For true love [G7]is still the greatest [C]thing
 {end_of_verse}
+
+
+

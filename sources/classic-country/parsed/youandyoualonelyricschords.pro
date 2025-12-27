@@ -1,6 +1,9 @@
 {meta: title You And You Alone}
 {meta: artist Randy Travis}
 {meta: composer Tim Ryan, Leslie Satcher, Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file youandyoualonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When this old world gets me [F]down
@@ -34,3 +37,7 @@ Is [G7]you and you a[C]lone
 The only reason for hanging [F]on
 Is [G7]you and you a[C]lone
 {end_of_verse}
+
+
+
+

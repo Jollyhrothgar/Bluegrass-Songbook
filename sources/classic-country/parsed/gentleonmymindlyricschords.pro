@@ -1,6 +1,9 @@
 {meta: title Gentle On My Mind}
 {meta: artist Glen Campbell}
 {meta: composer John Hartford}
+{meta: x_source classic-country}
+{meta: x_source_file gentleonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's knowing that your door is always open
@@ -57,3 +60,10 @@ I pretend I hold you to my breast and [Dm]find
 That you're waving from the back-roads
 By the rivers of my memory ever smiling ever [G7]gentle on my [C]mind
 {end_of_verse}
+
+
+
+
+
+
+

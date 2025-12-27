@@ -1,6 +1,9 @@
 {meta: title Heart First}
 {meta: artist Jeanne Pruett}
 {meta: composer Johnny Wilson, Kim Morrison, Scott Phelps}
+{meta: x_source classic-country}
+{meta: x_source_file heartfirstlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've had other [Em]lovers [C]before we met each [G]other
@@ -45,3 +48,8 @@ Falling into [C]love with [G]you heart [Em]first
 Letting all those [C]feelings [Em]through together we're [C]falling
 [D7]Heart [G]first
 {end_of_verse}
+
+
+
+
+

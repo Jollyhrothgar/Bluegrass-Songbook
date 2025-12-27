@@ -1,6 +1,9 @@
 {meta: title Dear John Letter}
 {meta: artist Jean Shepard}
 {meta: composer Lewis Talley, Fuzzy Owen, Billy Barton}
+{meta: x_source classic-country}
+{meta: x_source_file dearjohnletterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dear John oh how I hate to [G7]write
@@ -53,3 +56,10 @@ And I'll wed your brother [F]Don
 Will you wish us happiness [G7]forever
 Dear [C]John
 {end_of_verse}
+
+
+
+
+
+
+

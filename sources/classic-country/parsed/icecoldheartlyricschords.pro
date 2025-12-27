@@ -1,6 +1,9 @@
 {meta: title Ice Cold Heart}
 {meta: artist Ray Price}
 {meta: composer Benny E. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file icecoldheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ice cold [Dm]love your love is [G7]cold as the north [C]pole
@@ -24,3 +27,5 @@ I remember [Dm]dear when your [G7]lips were warm as [C]fire
 You said you [Dm]loved me so
 But now it's [G7]awful cold your ice cold [C]heart
 {end_of_verse}
+
+

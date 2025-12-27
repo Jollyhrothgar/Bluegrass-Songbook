@@ -1,6 +1,9 @@
 {meta: title Best Years Of Your Life}
 {meta: artist Carl Smith}
 {meta: composer Keith Lloyd}
+{meta: x_source classic-country}
+{meta: x_source_file bestyearsofyourlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]And [C]these will be the [G]best years of [D7]your [G]life
@@ -33,3 +36,7 @@
 [G]But if you let it grieve you your youth [C]will surely leave [G]you
 [C]Cause these should be the [G]best years [D7]of your [G]life
 {end_of_verse}
+
+
+
+

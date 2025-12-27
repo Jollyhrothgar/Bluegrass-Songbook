@@ -1,6 +1,9 @@
 {meta: title Bottle Of Wine}
 {meta: artist Porter Wagoner}
 {meta: composer Tom Paxton}
+{meta: x_source classic-country}
+{meta: x_source_file bottleofwinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Bottle of wine fruit of the vine
@@ -36,3 +39,7 @@ When you gonna let me get [G7]sob[C]er
 Leave me alone let me go home
 Let me go home and start [G7]ove[C]r
 {end_of_verse}
+
+
+
+

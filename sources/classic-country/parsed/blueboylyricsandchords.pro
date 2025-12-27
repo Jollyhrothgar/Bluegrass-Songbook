@@ -1,6 +1,9 @@
 {meta: title Blue Boy Lyrics and Chords}
 {meta: artist Jim Reeves}
 {meta: composer Boudleaux Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file blueboylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Blue boy [F]that's what they call [C]me 
@@ -20,3 +23,5 @@ Blue boy I'm [F]known as blue [C]boy
 [C]Blue boy I'll [F]be a blue [C]boy 
 [F]Until you [C]need me [G7]as I need [C]you
 {end_of_verse}
+
+

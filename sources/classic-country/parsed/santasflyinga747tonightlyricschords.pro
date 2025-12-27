@@ -1,6 +1,9 @@
 {meta: title Santa's Flying A 747 Tonight}
 {meta: artist Doug Stone}
 {meta: composer Phyllis Bennett and Lonnie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file santasflyinga747tonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I saw St Nick down at the mall [C]today
@@ -40,3 +43,8 @@ I've [G]been good so he's gonna treat me [Em]right
 {start_of_verse: Verse 4}
 [Am]Santa's flyin' a [D7]747 to[G]night wow
 {end_of_verse}
+
+
+
+
+

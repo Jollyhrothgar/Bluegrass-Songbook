@@ -1,6 +1,9 @@
 {meta: title Day Drinker}
 {meta: artist Johnny Duncan}
 {meta: composer Sonny Curtis}
+{meta: x_source classic-country}
+{meta: x_source_file daydrinkerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Day drinker habitual [G7]no-count drunk 
@@ -31,3 +34,6 @@ My life's a mere existence
 I'd [F]find myself a good woman to love
 [G7]Forget about [F]you and [C]bootleg [G7]sneaky beatin' [C]wine
 {end_of_verse}
+
+
+

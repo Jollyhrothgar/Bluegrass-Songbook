@@ -1,6 +1,9 @@
 {meta: title When A Love Ain't Right}
 {meta: artist Charly McClain}
 {meta: composer Bob Morrison and Johnny Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file whenaloveaintrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Teardrops fall hearts will [Am]break 
@@ -55,3 +58,9 @@ When a [C]love ain't right
 When a [Am]love ain't right
 When a [C]love ain't right
 {end_of_verse}
+
+
+
+
+
+

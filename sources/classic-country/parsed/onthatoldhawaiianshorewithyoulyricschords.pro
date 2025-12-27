@@ -1,5 +1,8 @@
 {meta: title On That Old Hawaiian Shore With You}
 {meta: artist Hank Snow}
+{meta: x_source classic-country}
+{meta: x_source_file onthatoldhawaiianshorewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a faraway Island neath [C]the silvery [G]moonlight
@@ -28,3 +31,6 @@
 [C]Mid that tropical splendor my heart will [G]surrender
 [D7]On that old Hawaiian shore with [G]you
 {end_of_verse}
+
+
+

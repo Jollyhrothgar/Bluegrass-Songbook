@@ -1,6 +1,9 @@
 {meta: title Teach Me The Words To Your Song}
 {meta: artist Tanya Tucker}
 {meta: composer Rory Bourke and Gayle Barnhill}
+{meta: x_source classic-country}
+{meta: x_source_file teachmethewordstoyoursonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I hope it's [Am]all that I'd found
@@ -33,3 +36,7 @@ Just [C]teach me the [G7]words to your [Am]song [D7]
 {start_of_verse: Verse 5}
 Just [C]teach me the [G7]words to your [F]son[C]g
 {end_of_verse}
+
+
+
+

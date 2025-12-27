@@ -1,6 +1,9 @@
 {meta: title Where Is She}
 {meta: artist Johnny Tillotson}
 {meta: composer Cynthia Weil and Barry Mann}
+{meta: x_source classic-country}
+{meta: x_source_file whereisshelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Where is [Em]she [F]that sweet little [G7]child
@@ -27,3 +30,6 @@
 [Am]Where is [Em]she [E7]with her Dixie [Am]charms[Fm]
 [C]Why she's [Em]all grown up and [F]right here [G7]in my [C]arms
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Little Rock}
 {meta: artist Reba McEntire}
 {meta: composer Bob DiPiero, Pat McManus, Gerry House}
+{meta: x_source classic-country}
+{meta: x_source_file littlerocklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [F]married to the good life I said I'd be a good wife 
@@ -52,3 +55,8 @@ When I [G7]slip off this little [C]rock
 {start_of_verse: Verse 5}
 Mmm mmm mmm mmm [G7]little [C]rock yeah
 {end_of_verse}
+
+
+
+
+

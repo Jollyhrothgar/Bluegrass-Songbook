@@ -1,6 +1,9 @@
 {meta: title I'm Knee Deep In Love With You}
 {meta: artist Dave And Sugar}
 {meta: composer Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file imkneedeepinlovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I'm knee deep in loving [F]you 
@@ -43,3 +46,8 @@ Done got [G7]deeper than I wanted [C]to
 It'll probably drown me before I'm [F]through 
 But I done got [C]knee deep [G7]in loving [C]you
 {end_of_verse}
+
+
+
+
+

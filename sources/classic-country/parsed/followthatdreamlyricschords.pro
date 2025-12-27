@@ -1,6 +1,9 @@
 {meta: title Follow That Dream}
 {meta: artist Elvis Presley}
 {meta: composer Fred Wise and Ben Weisman}
+{meta: x_source classic-country}
+{meta: x_source_file followthatdreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Follow that [Em]dream  I [F]gotta [G7]follow that [C]dream
@@ -36,3 +39,7 @@ I've gotta [Am]follow that dream to [F]find the love [G7]I [C]need
 {start_of_verse: Verse 5}
 Keep a moving  move [Am]along  keep [C]a moving move [Am]along 
 {end_of_verse}
+
+
+
+

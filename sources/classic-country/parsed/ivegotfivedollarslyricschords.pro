@@ -1,6 +1,9 @@
 {meta: title I've Got Five Dollars}
 {meta: artist Faron Young}
 {meta: composer Ted Daffan}
+{meta: x_source classic-country}
+{meta: x_source_file ivegotfivedollarslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I've been working hard the whole week [F]long
@@ -41,3 +44,9 @@ Repeat chorus
 {start_of_verse: Verse 7}
 Repeat last Verse
 {end_of_verse}
+
+
+
+
+
+

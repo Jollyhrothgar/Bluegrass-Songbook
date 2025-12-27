@@ -1,5 +1,8 @@
 {meta: title We're Gonna Let The Good Times Roll}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file weregonnaletthegoodtimesrolllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well today's a gonna be my lucky [C]day 
@@ -66,3 +69,12 @@ Gonna let the [C]good times [G]roll
 She ain't never gonna leave no [C]more 
 We're [D7]gonna let the good times [G]roll
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Do My Swinging At Home}
 {meta: artist David Houston}
 {meta: composer Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file idomyswingingathomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Nobody loves a [C]drink anymore than [G]me
@@ -30,3 +33,6 @@ I [G]might do a lotta [C]talking but soon [B7]you'll see me [C]walking
 [G]I do a lotta [D7]swinging a lotta [G]love song [C]singing
 [G]But I do my [D7]swinging at [G][C]ho-me
 {end_of_verse}
+
+
+

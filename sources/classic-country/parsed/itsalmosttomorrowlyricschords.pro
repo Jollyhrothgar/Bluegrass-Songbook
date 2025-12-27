@@ -1,6 +1,9 @@
 {meta: title It's Almost Tomorrow}
 {meta: artist The Dream Weavers}
 {meta: composer Eugene H. Adkinson and Wade Buff}
+{meta: x_source classic-country}
+{meta: x_source_file itsalmosttomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My dearest [Em]my darling [F]tomorrow is [C]near
@@ -29,3 +32,6 @@
 [C]I'll love [Em]you forever 'til [F]stars cease to [C]shine
 [F]And hope someday [C]darling [Am]that you'll [D7]al-ways [G7]be [C]mine
 {end_of_verse}
+
+
+

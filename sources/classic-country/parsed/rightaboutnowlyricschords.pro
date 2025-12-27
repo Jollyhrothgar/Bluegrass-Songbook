@@ -1,6 +1,9 @@
 {meta: title Right About Now}
 {meta: artist Tracy Byrd}
 {meta: composer Joy Swinea and Toni Dae}
+{meta: x_source classic-country}
+{meta: x_source_file rightaboutnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Right about now she's brushin' her hair 
@@ -37,3 +40,7 @@ But if I did her [C]wrong I could [F]never feel [C]right [G7]about [C]now
 I can [F]hear the devil whisper go [C]ahead she'll never find [F]out
 But if I did her [C]wrong I could [F]never feel [C]right [G7]about [C]now
 {end_of_verse}
+
+
+
+

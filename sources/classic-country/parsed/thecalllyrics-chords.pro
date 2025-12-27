@@ -1,6 +1,9 @@
 {meta: title The Call}
 {meta: artist John Anderson}
 {meta: composer Michael White and Eric Heatherly}
+{meta: x_source classic-country}
+{meta: x_source_file thecalllyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I remember that old rotary phone
@@ -57,3 +60,11 @@ There's calls [F]you love to take and calls you hate to [C]make
 [Em]Long [Dm]distance doesn't [C]matter 
 But [D7]you've got to [F]make  [G7]the [C]call
 {end_of_verse}
+
+
+
+
+
+
+
+

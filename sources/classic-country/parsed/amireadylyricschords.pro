@@ -1,6 +1,9 @@
 {meta: title Am I Ready}
 {meta: artist Elvis Presley}
 {meta: composer Sid Tepper and Roy C. Bennett}
+{meta: x_source classic-country}
+{meta: x_source_file amireadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Am [C]I [G7]ready [Am]can my heart be [D7]true
@@ -21,3 +24,5 @@
 [C]Am I [Em]ready to [Dm]fall in [G7]love with [C]you
 [Dm]Fall in [G7]love with [C]you
 {end_of_verse}
+
+

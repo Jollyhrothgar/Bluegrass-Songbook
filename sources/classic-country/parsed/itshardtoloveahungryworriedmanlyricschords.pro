@@ -1,6 +1,9 @@
 {meta: title It's Hard To Love A Hungry Worried Man}
 {meta: artist Billy Crash Craddock}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file itshardtoloveahungryworriedmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There'll be new dresses that you wear now
@@ -46,3 +49,8 @@ Lord it [F]seems the only thing we did was [Fm]fight
 And [G7]one day if you can take the time to understand
 That it's hard to love a hungry worried [C]man
 {end_of_verse}
+
+
+
+
+

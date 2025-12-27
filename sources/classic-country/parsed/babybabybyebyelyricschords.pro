@@ -1,6 +1,9 @@
 {meta: title Baby Baby Bye Bye}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Jerry Lee Lewis and Hughie Piano Smith}
+{meta: x_source classic-country}
+{meta: x_source_file babybabybyebyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everything I say is wrong
@@ -54,3 +57,10 @@ Cause there's just [C]no more dreams you dream
 {start_of_verse: Verse 5}
 Baby [D7]baby bye [G]bye
 {end_of_verse}
+
+
+
+
+
+
+

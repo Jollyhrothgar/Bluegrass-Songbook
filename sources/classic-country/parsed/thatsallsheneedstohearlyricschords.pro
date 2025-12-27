@@ -1,6 +1,9 @@
 {meta: title That's All She Needs To Hear}
 {meta: artist Moe Bandy}
 {meta: composer Blake Mevis, Bill Shore, Becky Hobbs}
+{meta: x_source classic-country}
+{meta: x_source_file thatsallsheneedstohearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She sat there all alone and [F]in the barroom [C]light
@@ -46,3 +49,9 @@ That's [F]all she [G7]needed to [C]hear
 Just [F]someone to say they [G7]care
 That's [F]all she [G7]needed to [C]hear
 {end_of_verse}
+
+
+
+
+
+

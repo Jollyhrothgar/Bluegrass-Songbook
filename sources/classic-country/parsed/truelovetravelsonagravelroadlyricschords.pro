@@ -1,6 +1,9 @@
 {meta: title True Love Travels On A Gravel Road}
 {meta: artist Elvis Presley}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file truelovetravelsonagravelroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How many girls choose cotton dress [Em]worlds
@@ -35,3 +38,7 @@
 {start_of_verse: Verse 4}
 [Em]Yeah [G7]true love travels on a gravel [C]road
 {end_of_verse}
+
+
+
+

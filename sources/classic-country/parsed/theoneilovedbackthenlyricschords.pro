@@ -1,4 +1,7 @@
 {meta: artist (the Corvette Song)}
+{meta: x_source classic-country}
+{meta: x_source_file theoneilovedbackthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I stopped off at the Quicksack for some beer and [G][C]cigarettes
@@ -33,3 +36,6 @@ She was built and fun to handle [G]son
 I'm glad that you walked [C]in
 She reminds me of the [G]one I [D7]loved back [G]then
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Loser's Lounge}
 {meta: artist Cal Smith}
 {meta: composer Bobby Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file losersloungelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a honky tonk in this town that they [F]call the Loser's [C]Lounge
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Cause anywhere a poor boy goes there’s a Loser's [C]Lounge
 {end_of_verse}
+
+
+
+

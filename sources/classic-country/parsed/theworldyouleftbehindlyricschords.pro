@@ -1,5 +1,8 @@
 {meta: title The World You Left Behind}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file theworldyouleftbehindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I try to sleep to kill the pain  
@@ -30,3 +33,6 @@ Wasting years before I [C]die
 In this lonely [G]world
 This [D7]world you left [G]behind
 {end_of_verse}
+
+
+

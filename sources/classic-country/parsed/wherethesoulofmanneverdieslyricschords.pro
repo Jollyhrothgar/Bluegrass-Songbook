@@ -1,6 +1,9 @@
 {meta: title Where the Soul of Man Never Dies}
 {meta: artist Hank Williams}
 {meta: composer Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file wherethesoulofmanneverdieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To Canaan's land I'm on my way
@@ -29,3 +32,6 @@ There'll be no tear-dimmed [G7]eyes
 Where all is joy peace and [C]love
 And the soul of man [G7]never [C]dies
 {end_of_verse}
+
+
+

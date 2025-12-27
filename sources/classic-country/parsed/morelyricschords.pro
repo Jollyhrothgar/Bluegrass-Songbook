@@ -1,6 +1,9 @@
 {meta: title More}
 {meta: artist Brenda Lee}
 {meta: composer Norman Newell, Riziero Ortolani, Nino Oliviero}
+{meta: x_source classic-country}
+{meta: x_source_file morelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]More than the [Em]greatest love the [Am]world has [D7]known
@@ -17,3 +20,4 @@ My [Am]life will be [A7]in your keeping [Am]waking sleeping [D7]laughing weeping
 [Em]I know I never lived before and my heart is very [Am]sure
 No one else could [D7]love you [G]more
 {end_of_verse}
+

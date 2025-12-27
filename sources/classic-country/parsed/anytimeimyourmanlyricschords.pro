@@ -1,6 +1,9 @@
 {meta: title Anytime I'm Your Man}
 {meta: artist Alabama}
 {meta: composer Randy Owen, Teddy Gentry, Greg Fowler, Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file anytimeimyourmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Any[G]time you wanna [Em]love me you can [G]love me any[Em]time
@@ -35,3 +38,7 @@ Any[Am]time any[D7]time I'm your [G]man [C]  [G]  [D7]
 Oh [C]if you want to hold me well you [B7]know you always [E7]can
 Any[Am]time any[D7]time I'm your [G]man
 {end_of_verse}
+
+
+
+

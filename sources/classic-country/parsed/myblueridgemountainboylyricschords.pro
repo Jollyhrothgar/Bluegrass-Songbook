@@ -1,5 +1,8 @@
 {meta: title My Blue Ridge Mountain Boy}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file myblueridgemountainboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]From a shack by a mountain stream 
@@ -49,3 +52,8 @@ Oh the sweet love of my [D7]blue ridge mountain [G]boy
 {start_of_verse: Verse 6}
 Blue ridge [D7]mountain [G]boy
 {end_of_verse}
+
+
+
+
+

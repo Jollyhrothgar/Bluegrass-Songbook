@@ -1,6 +1,9 @@
 {meta: title He Will She Knows}
 {meta: artist Kenny Rogers}
 {meta: composer Frank Rogers and Steve Leslie}
+{meta: x_source classic-country}
+{meta: x_source_file hewillsheknowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Two room house on an acre lot 
@@ -51,3 +54,8 @@ A [G7]little further down the [A7]road
 Her [D7]faith it [G7]shows  [D7]even if the whole world says [G7]he won't
 He [D7]will 
 {end_of_verse}
+
+
+
+
+

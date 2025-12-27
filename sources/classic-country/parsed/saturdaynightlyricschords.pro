@@ -1,6 +1,9 @@
 {meta: title Saturday Night}
 {meta: artist Webb Pierce}
 {meta: composer Sue Brewer, Max T. Powell, Michael Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file saturdaynightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We’re gonna do the [D7]town come Saturday [G]night
@@ -47,3 +50,9 @@ Just about day[D7]light
 {start_of_verse: Verse 5}
 [C]We’re gonna do the [D7]town come Saturday [G]night
 {end_of_verse}
+
+
+
+
+
+

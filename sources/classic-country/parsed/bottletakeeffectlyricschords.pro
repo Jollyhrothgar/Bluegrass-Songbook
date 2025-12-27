@@ -1,5 +1,8 @@
 {meta: title Bottle Take Effect}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file bottletakeeffectlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I'm sitting here a [D7]glass so near filled [G]with my one [C]concern
@@ -28,3 +31,6 @@ Cause when in Rome you'll do as [G]the Romans do oh bottle [D7]take [G]effect
 [G]Then just lead me to [D7]those lights [G]of blue on the corner of [C]regret
 In some barroom I'll [G]lose my gloom so bottle [D7]take [G]effect
 {end_of_verse}
+
+
+

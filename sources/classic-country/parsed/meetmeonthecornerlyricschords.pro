@@ -1,5 +1,8 @@
 {meta: title Meet Me On The Corner}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file meetmeonthecornerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Get dressed up in your sharpest threads and [D7]come along with me
@@ -46,3 +49,9 @@ When it's loud and smokey we [D7]really play the part
 {start_of_verse: Verse 5}
 [G7]Meet me on the corner as soon as it gets [C]dark
 {end_of_verse}
+
+
+
+
+
+

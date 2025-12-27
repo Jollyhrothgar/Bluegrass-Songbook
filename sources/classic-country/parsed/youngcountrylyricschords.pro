@@ -1,5 +1,8 @@
 {meta: title Young Country}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file youngcountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We are young country we are the [F]pride
@@ -38,3 +41,7 @@ Cause we like our [A#7]country [F]mixed with some rhythm and [C]blues
 We know when it's hot we know when it's [F]not 
 If you don't mind thank [C]you
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Who's Gonna Fill Their Shoes}
 {meta: artist George Jones}
 {meta: composer Troy Seals and Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file whosgonnafilltheirshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You know this whole world is full of singers
@@ -55,3 +58,9 @@ Who's gonna fill their shoes
 [G7]Who's gonna play the Opry
 And the Wabash [C]Cannonball
 {end_of_verse}
+
+
+
+
+
+

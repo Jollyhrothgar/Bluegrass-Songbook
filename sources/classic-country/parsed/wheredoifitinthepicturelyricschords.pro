@@ -1,5 +1,8 @@
 {meta: title Where Do I Fit In The Picture}
 {meta: artist Clay Walker}
+{meta: x_source classic-country}
+{meta: x_source_file wheredoifitinthepicturelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Well it [C]looks like you [G7]finally made the [F]front page
@@ -46,3 +49,9 @@ Oh [C]oh but it [G7]left me all [F]alone[G7]
 {start_of_verse: Verse 6}
 [F]On an old forgotten [C]wall
 {end_of_verse}
+
+
+
+
+
+

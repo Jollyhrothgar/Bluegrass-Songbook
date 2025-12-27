@@ -1,6 +1,9 @@
 {meta: title I’m Losing Your Love}
 {meta: artist Anne Murray}
 {meta: composer Kye Fleming, Hank DeVito, Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file imlosingyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Stars are falling from your [Am]eyes
@@ -57,3 +60,10 @@
 [C]I'm losing your love  don't you think I [Em]know
 [F]It's a matter of [Dm]time [Em]'til [F]you [G]let [C]go
 {end_of_verse}
+
+
+
+
+
+
+

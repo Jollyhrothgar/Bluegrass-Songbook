@@ -1,5 +1,8 @@
 {meta: title Bring Your Sweet Self Back to Me}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file bringyoursweetselfbacktomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]B-a-[G7]b-y [F]listen oh my [G7]darling please listen and hear [C]me
@@ -31,3 +34,6 @@ Oh catch a [D7]plane because a train [G7]just ain’t fast enough
 You’ve[C] been away dear too lon[F]g you see
 Yes [C]yes please please hurry and [G7]bring your sweet self back to [C]me
 {end_of_verse}
+
+
+

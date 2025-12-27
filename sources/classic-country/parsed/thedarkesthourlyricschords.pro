@@ -1,5 +1,8 @@
 {meta: title The Darkest Hour Lyrics Chords}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file thedarkesthourlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I played with fire darling and I got my fingers [G7]burned
@@ -35,3 +38,7 @@
 [G7]It gives me consolation when I’m blue to stop and say
 [C]The darkest hour is just before the dawn
 {end_of_verse}
+
+
+
+

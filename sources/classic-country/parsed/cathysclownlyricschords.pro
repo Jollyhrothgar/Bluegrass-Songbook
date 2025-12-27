@@ -1,6 +1,9 @@
 {meta: title Cathy's Clown}
 {meta: artist Everly Brothers}
 {meta: composer Don Everly}
+{meta: x_source classic-country}
+{meta: x_source_file cathysclownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don’t want your lo-o-o-o-ove [G][D7]any-more
@@ -42,3 +45,9 @@ That you’re treating me so bad
 [Em]I die each time I hear this [C]sound
 [G]Here he co-o-o-o-omes [D7]that’s Cathy’s [G]clown
 {end_of_verse}
+
+
+
+
+
+

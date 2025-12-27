@@ -1,6 +1,9 @@
 {meta: title Still They Call Me Love}
 {meta: artist Gene Watson}
 {meta: composer John Wayne Wiggins and Harley Lee Allen}
+{meta: x_source classic-country}
+{meta: x_source_file stilltheycallmelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I make people [F]crazy  [G7]make their hearts beat [C]wild
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [F]I'm poison when [G7]you kiss me  but still they call me [C]love
 {end_of_verse}
+
+
+
+

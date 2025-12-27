@@ -1,6 +1,9 @@
 {meta: title Empty Arms}
 {meta: artist Wanda Jackson}
 {meta: composer Ivory Joe Hunter}
+{meta: x_source classic-country}
+{meta: x_source_file emptyarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Empty arms that long for [D7]you 
@@ -24,3 +27,6 @@ These empty [D7]arms I'll have no [G]more
 {start_of_verse: Verse 4}
 These empty [D7]arms I'll have no [G]more
 {end_of_verse}
+
+
+

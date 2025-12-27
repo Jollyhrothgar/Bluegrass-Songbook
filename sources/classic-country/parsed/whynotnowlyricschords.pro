@@ -1,6 +1,9 @@
 {meta: title Why Not Now}
 {meta: artist George Strait}
 {meta: composer Steve Bogard and Jeff Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file whynotnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You take it nice and easy
@@ -49,3 +52,7 @@ Why not [G]you why not [Bm]me
 Living like [C]we were meant to [D7]be
 To[Am]gether [G]forever [D7]why not [G]now
 {end_of_verse}
+
+
+
+

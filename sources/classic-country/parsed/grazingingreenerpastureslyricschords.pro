@@ -1,6 +1,9 @@
 {meta: title Grazing In Greener Pastures}
 {meta: artist Ray Price}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file grazingingreenerpastureslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Anytime love's [F]waters  [G7]grow cold and [C]deep
@@ -50,3 +53,10 @@ You'll find me grazing in greener [C]pastures
 {start_of_verse: Verse 6}
 [F]And the grass is getting [G7]greener all the [C]time
 {end_of_verse}
+
+
+
+
+
+
+

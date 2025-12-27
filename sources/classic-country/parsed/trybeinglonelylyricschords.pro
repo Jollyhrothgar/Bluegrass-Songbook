@@ -1,6 +1,9 @@
 {meta: title Try Being Lonely}
 {meta: artist Porter Wagoner}
 {meta: composer Buck Trent and George McCormick}
+{meta: x_source classic-country}
+{meta: x_source_file trybeinglonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just [C]try being [G]lonely and you'll [D7]know just how I [G]feel
@@ -20,3 +23,5 @@
 [G]Just try being lonely and [D7]you'll know just how I [G]feel
 [C]Just try being [G]lonely and you'll [D7]know just how I [G]feel
 {end_of_verse}
+
+

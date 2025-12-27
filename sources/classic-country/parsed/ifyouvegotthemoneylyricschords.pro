@@ -1,6 +1,9 @@
 {meta: title If You've Got the Money}
 {meta: artist Lefty Frizzell}
 {meta: composer Lefty Frizzell and Jim Beck}
+{meta: x_source classic-country}
+{meta: x_source_file ifyouvegotthemoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you've got the money I've got the time 
@@ -36,3 +39,7 @@ We'll go honky tonkin' and we'll have a [C]time
 We'll make all the night spots dance drink [D7]beer and wine
 If you've got the money honey I've got the [G]time
 {end_of_verse}
+
+
+
+

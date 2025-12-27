@@ -1,6 +1,9 @@
 {meta: title Look What Followed Me Home}
 {meta: artist Ray Price}
 {meta: composer Roger Brown and Rick Peoples}
+{meta: x_source classic-country}
+{meta: x_source_file lookwhatfollowedmehomelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I went [C]out with some [Dm]old friends and I [G7]had a good [Am]time
@@ -34,3 +37,7 @@
 [F]I thought tonight it was finally [Fm]gone
 [Dm]But look what [G7]followed me [C]home
 {end_of_verse}
+
+
+
+

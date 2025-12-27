@@ -1,6 +1,9 @@
 {meta: title Take Your Hands Off My Heart}
 {meta: artist Ray Pillow}
 {meta: composer Fred Carter}
+{meta: x_source classic-country}
+{meta: x_source_file takeyourhandsoffmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You reach out for every[G7]thing [C]that comes close to you
@@ -33,3 +36,7 @@ So [D7]please take your hands off my [G]heart
 {start_of_verse: Verse 4}
 So [D7]please take your hands off my [G]heart
 {end_of_verse}
+
+
+
+

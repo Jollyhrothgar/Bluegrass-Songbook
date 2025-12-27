@@ -1,6 +1,9 @@
 {meta: title Don't Rob Another Man's Castle}
 {meta: artist Eddy Arnold}
 {meta: composer Jenny Lou Carson}
+{meta: x_source classic-country}
+{meta: x_source_file dontrobanothermanscastlelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say a man's [G7]home is his [C]castle [C7]
@@ -29,3 +32,6 @@ You [D7]never know how much you'll [G7]pay
 I robbed another [F]man's  [C]cast[Am]le [C]
 Now [F]someone just [G7]took her from [C]me
 {end_of_verse}
+
+
+

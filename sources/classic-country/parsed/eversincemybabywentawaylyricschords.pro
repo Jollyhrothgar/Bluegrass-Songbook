@@ -1,6 +1,9 @@
 {meta: title Ever Since My Baby Went Away}
 {meta: artist Jack Greene}
 {meta: composer Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file eversincemybabywentawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Ever since my baby went [C]away
@@ -34,3 +37,8 @@ Tag:
 {start_of_verse: Verse 6}
 [F]Ever since my [G7]baby went [C]away
 {end_of_verse}
+
+
+
+
+

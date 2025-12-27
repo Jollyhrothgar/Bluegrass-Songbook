@@ -1,6 +1,9 @@
 {meta: title What Have We Done}
 {meta: artist Wanda Jackson}
 {meta: composer Wendell Goodman and Wanda Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file whathavewedonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What have I done to you what [C]turned you against me
@@ -23,3 +26,5 @@ So [C]what have we done [G]now that it's all over
 {start_of_verse: Verse 3}
 [D7]Neither of us won so [C]what have we [G]done
 {end_of_verse}
+
+

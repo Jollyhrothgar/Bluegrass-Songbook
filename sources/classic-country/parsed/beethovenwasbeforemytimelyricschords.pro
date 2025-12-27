@@ -1,6 +1,9 @@
 {meta: title Beethoven Was Before My Time}
 {meta: artist Moe Bandy}
 {meta: composer Jerry Dycke}
+{meta: x_source classic-country}
+{meta: x_source_file beethovenwasbeforemytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]One night while I was playin' at place [C]called The Big [G]Still
@@ -47,3 +50,9 @@
 {start_of_verse: Verse 6}
 [Am]Beethoven was [D7]before my time but I still like his [G]songs
 {end_of_verse}
+
+
+
+
+
+

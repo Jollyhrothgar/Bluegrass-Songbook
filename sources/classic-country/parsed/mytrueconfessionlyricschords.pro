@@ -1,6 +1,9 @@
 {meta: title My True Confession}
 {meta: artist Cowboy Copas}
 {meta: composer Sydney Nathan and Lloyd Copas}
+{meta: x_source classic-country}
+{meta: x_source_file mytrueconfessionlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This is my [F]true con[C]fession
@@ -29,3 +32,6 @@ With [D7]heartaches and teardrops [G7]untold
 [C]That's why to [F]you I'm con[C]fessing
 Con[G7]fession is good for the [C]soul
 {end_of_verse}
+
+
+

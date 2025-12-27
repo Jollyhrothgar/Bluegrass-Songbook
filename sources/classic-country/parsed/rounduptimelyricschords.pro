@@ -1,5 +1,8 @@
 {meta: title Roundup Time}
 {meta: artist Rex Allen Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file rounduptimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When it's roundup time on the [F]Chisholm Trail 
@@ -32,3 +35,7 @@ Oh it's [D7]roundup [G7]time at [C]last
 {start_of_verse: Verse 5}
 Oh it's [D7]roundup [G7]time at [C]last
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Makin' Promises}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy and Donald Alan Schlitz}
+{meta: x_source classic-country}
+{meta: x_source_file makinpromiseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I was [G]standing on a corner [C]watching all the [D7]people walk [G]by [C]  [D7]
@@ -41,3 +44,8 @@ And [G]tonight when we’re lying in our [C]bed be[D7]fore we go to [G]sleep [C]
 Our [C]bodies will make promises [D7]that our hearts can [G]keep [C]  [D7]
 Yes our [G]bodies will make promises [D7]that our hearts will [G]keep
 {end_of_verse}
+
+
+
+
+

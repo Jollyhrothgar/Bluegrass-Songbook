@@ -1,6 +1,9 @@
 {meta: title Yours And His}
 {meta: artist Hank Williams Jr.}
 {meta: composer Danny Overby}
+{meta: x_source classic-country}
+{meta: x_source_file yoursandhislyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The hour is late and so I try to [C7]walk in [F]silence
@@ -34,3 +37,7 @@ Every[C]thing once yours and [G7]mine is yours and [C]his
 [G7]Oh I must [C]run before they find [C7]me out here [F]crying
 Every[C]thing once yours and [G7]mine is yours and [C]his
 {end_of_verse}
+
+
+
+

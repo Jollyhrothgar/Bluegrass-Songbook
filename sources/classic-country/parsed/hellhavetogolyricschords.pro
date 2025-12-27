@@ -1,6 +1,9 @@
 {meta: title He'll Have to Go}
 {meta: artist Jim Reeves}
 {meta: composer Joe Allison and Audrey Allison}
+{meta: x_source classic-country}
+{meta: x_source_file hellhavetogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Put your sweet lips a little [C]closer to the [G]phone
@@ -32,3 +35,6 @@
 [G]And you can tell your friend there with [D7]you
 [G]He'll have to go
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Shahdaroba}
 {meta: artist Roy Orbison}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file shahdarobalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Where the Nile flows [Dm]and the [Am]moon glows
@@ -30,3 +33,6 @@ Shahda[G7]roba Shahda[C]roba
 In the [G7]future you will find a love that [C]lasts
 Shahda[Am]roba
 {end_of_verse}
+
+
+

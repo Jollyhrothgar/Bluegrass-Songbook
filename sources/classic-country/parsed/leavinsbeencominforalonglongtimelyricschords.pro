@@ -1,6 +1,9 @@
 {meta: title Leavin's Been Comin' (For A Long Long Time)}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby, Joe Allen, Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file leavinsbeencominforalonglongtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's never [G7]over till [F]it's really [C]over
@@ -29,3 +32,6 @@
 [Dm]It's a hard road to travel from blacktop to [G7]gravel
 [F]And the next hill is the hardest to [G7]climb
 {end_of_verse}
+
+
+

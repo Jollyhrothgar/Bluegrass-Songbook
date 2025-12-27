@@ -1,6 +1,9 @@
 {meta: title Sometimes I Cry In My Sleep}
 {meta: artist Ricky Van Shelton}
 {meta: composer R.V. Shelton and R.M. Bourke}
+{meta: x_source classic-country}
+{meta: x_source_file sometimesicryinmysleeplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been about a [G7]year now since [C]you said goodbye
@@ -42,3 +45,8 @@ Cause [C]sometimes I [G7]cry in my [C]sleep
 Cause [C]sometimes I [G7]cry in my [F]sleep
 Yes [C]sometimes I [G7]cry in my [C]sleep
 {end_of_verse}
+
+
+
+
+

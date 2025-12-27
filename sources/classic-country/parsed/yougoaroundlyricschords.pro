@@ -1,6 +1,9 @@
 {meta: title You Go Around}
 {meta: artist Johnny Rodriguez}
 {meta: composer Tom T. Hall and Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file yougoaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]You go [G]around  [C]where good times roll [G]on
@@ -33,3 +36,7 @@ You go around with people that we [D7]used to know
 {start_of_verse: Verse 4}
 [D7]Maybe you'll come back around to [G]me
 {end_of_verse}
+
+
+
+

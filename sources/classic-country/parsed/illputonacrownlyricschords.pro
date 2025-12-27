@@ -1,6 +1,9 @@
 {meta: title I’ll Put On A Crown}
 {meta: artist Del McCoury}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file illputonacrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am on a journey to that city [C]four [G]square
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 I'll put on a crown and walk around all [D7]over God's promised [G]land
 {end_of_verse}
+
+
+
+

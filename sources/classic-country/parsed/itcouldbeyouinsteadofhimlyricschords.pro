@@ -1,6 +1,9 @@
 {meta: title It Could Be You (Instead Of Him)}
 {meta: artist Johnny Cash}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file itcouldbeyouinsteadofhimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you should meet some lonely soul
@@ -28,3 +31,5 @@ Share his [C]fears don't pass him [G]by
 But for the grace of God it could be [D7]you instead of [G]him
 (It could be [D7]you instead of [G]him)
 {end_of_verse}
+
+

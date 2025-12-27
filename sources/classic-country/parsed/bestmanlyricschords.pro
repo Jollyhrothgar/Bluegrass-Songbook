@@ -1,6 +1,9 @@
 {meta: title Best Man}
 {meta: artist Bobby Helms}
 {meta: composer Jerry Fuller}
+{meta: x_source classic-country}
+{meta: x_source_file bestmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am gathered [Em]here to[Am]gether[G7]   [C]
@@ -36,3 +39,7 @@ Cause I'll [F]hold on as [G7]long as I [C]can
 And [F]maybe some[G7]day if [C]things don't work [Am]out
 [D7]You'll discover that [G7]I'm the best [C]man [F]   [C]
 {end_of_verse}
+
+
+
+

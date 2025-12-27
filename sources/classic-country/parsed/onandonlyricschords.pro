@@ -1,5 +1,8 @@
 {meta: title On And On}
 {meta: artist Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file onandonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Traveling down this [C]long lonesome [G]highway
@@ -42,3 +45,8 @@ And I wonder where she can [D7]be
 [G]On and on I'll [C]follow my [G]darling
 And I wonder if she [D7]ever thinks of [G]me
 {end_of_verse}
+
+
+
+
+

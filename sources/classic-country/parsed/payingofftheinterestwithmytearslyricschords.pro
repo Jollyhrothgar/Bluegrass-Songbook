@@ -1,5 +1,8 @@
 {meta: title Paying Off The Interest With My Tears}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file payingofftheinterestwithmytearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You said that you'd be mine and we [D7]signed that dotted line
@@ -42,3 +45,8 @@ That I'd [D7]have to pay in heartaches for [G7]taking my amount
 I'll [C]give you back your love that [D7]I've had all these years
 But I'm [G7]paying off the interest with my [C]tears
 {end_of_verse}
+
+
+
+
+

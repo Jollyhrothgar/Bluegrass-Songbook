@@ -1,6 +1,9 @@
 {meta: title You're The Cloud I'm On (When I'm High)}
 {meta: artist George Strait}
 {meta: composer Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file yourethecloudimonwhenimhighlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes I like a drink cause I'm [D7]happy
@@ -27,3 +30,6 @@ Honey [D7]you're the cloud I'm on when I'm [G]high
 [D7]If you [G]see me light [Dm]on my [G]feet [C]feeling good [Am]inside
 Honey [D7]you're the cloud I'm on when I'm [G]high
 {end_of_verse}
+
+
+

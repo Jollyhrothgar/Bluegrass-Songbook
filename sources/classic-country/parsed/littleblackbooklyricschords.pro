@@ -1,5 +1,8 @@
 {meta: title Little Black Book}
 {meta: artist Jimmy Dean}
+{meta: x_source classic-country}
+{meta: x_source_file littleblackbooklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well my pretty baby just left me this morning
@@ -73,3 +76,15 @@ He'll get [G7]another'n before the sun goes [C]down
 'Cause with [F]a little bit of luck and a little black [C]book
 He'll get [G7]another'n before the sun goes [C]down
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Here Comes Santa Claus Again}
 {meta: artist Buck Owens}
 {meta: composer Buck Owens and Red Simpson}
+{meta: x_source classic-country}
+{meta: x_source_file herecomessantaclausagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He's got a fuzzy white beard neath a [F]great big smile
@@ -47,3 +50,9 @@ And while you're sleeping his [F]fun begins
 {start_of_verse: Verse 5}
 [G7]Santa Claus is here [C]again
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Unicorn}
 {meta: artist Bill Anderson}
 {meta: composer Shel Silverstein}
+{meta: x_source classic-country}
+{meta: x_source_file theunicornlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A long time ago when the [Dm]earth was green
@@ -71,3 +74,12 @@ Some [G7]humpty back camels and some [C]chimpanzees
 Some cats and rats and elephants but [Dm]sure as you're born
 You're [C]never gonna see no [D7]un-[G7]i-c[C]orn
 {end_of_verse}
+
+
+
+
+
+
+
+
+

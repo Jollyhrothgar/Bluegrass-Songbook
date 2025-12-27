@@ -1,5 +1,8 @@
 {meta: title No Use Running}
 {meta: artist Don Williams}
+{meta: x_source classic-country}
+{meta: x_source_file nouserunninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The weather vane out on the shed [F]is looking to the [C]west
@@ -29,3 +32,6 @@ We both learned too young that you [F]reap what's been [C]sowed
 And there's no use runnin' when [F]you're on [G7]the wrong [C]road
 No there's no use runnin' when [F]you're on [G7]the wrong [C]road
 {end_of_verse}
+
+
+

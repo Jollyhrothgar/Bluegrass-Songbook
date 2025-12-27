@@ -1,6 +1,9 @@
 {meta: title Happiness Is Just A Prayer Away}
 {meta: artist Jimmie Davis}
 {meta: composer Albert Williams}
+{meta: x_source classic-country}
+{meta: x_source_file happinessisjustaprayerawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you're sad and alone far [F]away from home
@@ -29,3 +32,6 @@ Happi[C]ness is just a prayer [G7]away
 You can [C]turn fog gloom into [F]sunny noon
 Happi[C]ness is just a [G7]prayer [C]away[F]  [C]
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Bet Your Heart On Me}
 {meta: artist Johnny Lee}
 {meta: composer Jim McBride}
+{meta: x_source classic-country}
+{meta: x_source_file betyourheartonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You took a [G7]chance on [C]him
@@ -71,3 +74,12 @@ Forget about the last time [Am]out
 So [C]lay your love down one more [Am]time
 And [F]bet your [G7]heart on [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+

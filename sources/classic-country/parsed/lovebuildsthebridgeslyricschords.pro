@@ -1,6 +1,9 @@
 {meta: title Love Builds The Bridges}
 {meta: artist Patty Loveless}
 {meta: composer Jim McBride and Jerry Salley}
+{meta: x_source classic-country}
+{meta: x_source_file lovebuildsthebridgeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She's twistin' the ring on her finger
@@ -41,3 +44,8 @@ Cause [C]love builds the bridges but [G7]pride builds the [C]walls
 Until each heart is willing [C7]there's no hope at [F]all
 Cause [C]love builds the bridges but [G7]pride builds the [C]walls 
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title We Owe It All To Yesterday}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file weoweitalltoyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday will [F]never be [G7]forgotten
@@ -36,3 +39,7 @@
 [F]Everything we ever had [G7]together
 [Dm]We owe it [G7]all to [C]yesterday
 {end_of_verse}
+
+
+
+

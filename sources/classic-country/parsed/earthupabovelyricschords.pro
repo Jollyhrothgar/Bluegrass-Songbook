@@ -1,6 +1,9 @@
 {meta: title Earth Up Above}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Donald Murray}
+{meta: x_source classic-country}
+{meta: x_source_file earthupabovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From the Houston Astrodome to the [F]blue skies over Rome
@@ -33,3 +36,7 @@ They all [C]share the same ol' [G7]moon up [C]above
 {start_of_verse: Verse 4}
 They all share the same ol' [G7]moon up [C]above
 {end_of_verse}
+
+
+
+

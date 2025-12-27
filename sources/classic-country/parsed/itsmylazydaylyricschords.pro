@@ -1,6 +1,9 @@
 {meta: title It's My Lazy Day}
 {meta: artist Bob Wills}
 {meta: composer Smiley Burnette}
+{meta: x_source classic-country}
+{meta: x_source_file itsmylazydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I might have gone fishing I got to thinking it [C]over
@@ -22,3 +25,5 @@ I ain’t taking no [G]women I ain’t wanting to [D7]play
 Just gonna look [G]stupid don’t wanta meet [C]cupid
 Justa taking it [G]easy  [D7]it’s my lazy [G]day
 {end_of_verse}
+
+

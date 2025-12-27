@@ -1,6 +1,9 @@
 {meta: title Release Me From Sin}
 {meta: artist George Jones}
 {meta: composer Eddie Miller and William McCall}
+{meta: x_source classic-country}
+{meta: x_source_file releasemefromsinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Please re[F]lease me [C]from my [F]sin
@@ -33,3 +36,7 @@ Send Your [F]spirit [C]from [F]above
 {start_of_verse: Verse 4}
 Release me from [G7]sin to sin no [C]more
 {end_of_verse}
+
+
+
+

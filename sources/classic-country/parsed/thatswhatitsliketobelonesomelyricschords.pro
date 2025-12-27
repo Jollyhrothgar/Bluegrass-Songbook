@@ -1,6 +1,9 @@
 {meta: title That's What It's Like To Be Lonesome}
 {meta: artist Cal Smith}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file thatswhatitsliketobelonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The streets are dark and empty as you [C]walk them all [G]alone
@@ -29,3 +32,6 @@ With a heart a broken [D7]love taught to [G]cry
 And that's what it's [C]like to be [G]lonesome
 I know cause [D7]I'm a mighty lonesome [G]guy
 {end_of_verse}
+
+
+

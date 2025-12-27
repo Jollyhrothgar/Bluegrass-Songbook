@@ -1,6 +1,9 @@
 {meta: title Little Bitty}
 {meta: artist Alan Jackson}
 {meta: composer Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file littlebittylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You have a little love on a [G7]little honey[C]moon
@@ -57,3 +60,10 @@ A little home[G7]town or a big old [C]city
 Might as well [F]share might as well [C]smile
 Life goes on for a [G7]little bitty [C]while
 {end_of_verse}
+
+
+
+
+
+
+

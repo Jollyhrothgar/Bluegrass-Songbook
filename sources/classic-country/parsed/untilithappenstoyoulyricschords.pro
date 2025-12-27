@@ -1,6 +1,9 @@
 {meta: title Until It Happens To You}
 {meta: artist Alabama}
 {meta: composer Jeff Cook, Teddy Gentry, Ronnie Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file untilithappenstoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [G7]worry all day and I [F]can't go to sleep at [C]night
@@ -46,3 +49,8 @@ You'll never [G7]know [A#7]all that I'm [F]going [C]through
 You'll never [G7]know  [A#7]oh no [C]you'll never [G7]know [A#7]oh  [F]oh
 [C]You'll never [G7]know [A#7]until it [F]happens to [C]you
 {end_of_verse}
+
+
+
+
+

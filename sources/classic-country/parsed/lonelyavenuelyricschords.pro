@@ -1,6 +1,9 @@
 {meta: title Lonely Avenue}
 {meta: artist Everly Brothers}
 {meta: composer Doc Pomus}
+{meta: x_source classic-country}
+{meta: x_source_file lonelyavenuelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My room has [F]got two [C]windows
@@ -58,3 +61,11 @@ It's all be[F]cause of [C]you
 I could [G7]cry cry cry I could [F]die die die
 I live on a [C]lonely [G7]ave[C]nue a lonely [G7]ave[C]nue
 {end_of_verse}
+
+
+
+
+
+
+
+

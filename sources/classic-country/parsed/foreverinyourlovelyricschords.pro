@@ -1,5 +1,8 @@
 {meta: title Forever In Your Love}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file foreverinyourlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lover [F]make believe in [C]dreams
@@ -33,3 +36,7 @@ And [G7]I'll be here forever in your [C]love
 Be the best that you can be now [F]from [C]here to [F]eternity
 And [G7]I'll be here forever in your [C]love
 {end_of_verse}
+
+
+
+

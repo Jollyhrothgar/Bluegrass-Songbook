@@ -1,6 +1,9 @@
 {meta: title Losing You}
 {meta: artist Roy Orbison}
 {meta: composer Roy Kelton Orbison, Bill Dees, William Dees}
+{meta: x_source classic-country}
+{meta: x_source_file losingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Teardrops tell me that I'm losing [Dm]you 
@@ -28,3 +31,6 @@ I [C]love you [D7]less than [G7][F]tomorrow
 I'm [Dm]losing you [F]what can I [C]do 
 I don't want to but I'm [Dm]lo-sing [C][G7]you
 {end_of_verse}
+
+
+

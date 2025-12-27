@@ -1,6 +1,9 @@
 {meta: title Candlelight World}
 {meta: artist Jean Shepard}
 {meta: composer Larry Butler}
+{meta: x_source classic-country}
+{meta: x_source_file candlelightworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A checkered cloth red and white
@@ -57,3 +60,13 @@ For that solid wall of shame
 {start_of_verse: Verse 11}
 [F]That borders on our [G7]candle lighted [C]world
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The First Time}
 {meta: artist Cal Smith}
 {meta: composer John Adrian}
+{meta: x_source classic-country}
+{meta: x_source_file thefirsttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No rose will ever seems as red  
@@ -38,3 +41,8 @@ No song will ever sound as sweet
 [Em]No love will sweep you off your feet
 [C]As when you fall in love [D7]for the first [G]time
 {end_of_verse}
+
+
+
+
+

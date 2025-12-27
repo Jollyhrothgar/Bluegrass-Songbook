@@ -1,6 +1,9 @@
 {meta: title Don't Sell Daddy Anymore Whiskey}
 {meta: artist Johnny Cash}
 {meta: composer Martha Jo Emerson and Ronal Elmer McCown}
+{meta: x_source classic-country}
+{meta: x_source_file dontselldaddyanymorewhiskeylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't sell daddy [C]anymore [G]whiskey
@@ -46,3 +49,9 @@
 [G]We are all hungry and [C]momma is [G]weeping
 [D7]Don't sell him no whiskey [G]today
 {end_of_verse}
+
+
+
+
+
+

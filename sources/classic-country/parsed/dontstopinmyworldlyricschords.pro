@@ -1,6 +1,9 @@
 {meta: title Don’t Stop In My World}
 {meta: artist Billy Walker}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file dontstopinmyworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What are you [G7]doing here you never wanted [C]me before 
@@ -33,3 +36,7 @@ To [D7]have you and to lose you would be [F]more than I could take
 {start_of_verse: Verse 5}
 [G7]Don't stop in my world if you don't mean to [C]stay 
 {end_of_verse}
+
+
+
+

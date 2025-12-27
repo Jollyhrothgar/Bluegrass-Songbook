@@ -1,5 +1,8 @@
 {meta: title Triangle}
 {meta: artist Carl Smith}
+{meta: x_source classic-country}
+{meta: x_source_file trianglelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Triangle untangle don’t [F]mingle don’t [C]mangle
@@ -28,3 +31,6 @@ He [F]loves her she loves me what [D7]good does it [G7]do
 My [C]life’s a triangle that I [F]can’t [C]untangle
 [F]Untangle [C]triangle stop [G7]making me [C]blue
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title White Lightning Lyrics Chords}
 {meta: artist George Jones}
 {meta: composer J.P. Richardson}
+{meta: x_source classic-country}
+{meta: x_source_file whitelightninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well in North Carolina way back in the hills
@@ -42,3 +45,7 @@ And I heard him a moaning as he hit the ground
 [D7]Mighty mighty pleasing your [C]pappy's 
 Corn squeezings   ooh white [G]lightnin'
 {end_of_verse}
+
+
+
+

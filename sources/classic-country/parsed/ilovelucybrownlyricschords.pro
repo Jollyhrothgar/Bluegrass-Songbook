@@ -1,6 +1,9 @@
 {meta: title I Love Lucy Brown}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file ilovelucybrownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They tell me Homer [C7]Jones was huntin' [F]bears
@@ -33,3 +36,7 @@ It don't [C]worry me [G7]cause I love Lucy [C]Brown
 {start_of_verse: Verse 4}
 It don't worry me [G7]cause I love Lucy [C]Brown
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Beyond The Wall}
 {meta: artist Charlie Pride}
+{meta: x_source classic-country}
+{meta: x_source_file beyondthewalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]On a cold day in D.C. at the wall she touched his [D7]name
@@ -26,3 +29,6 @@
 [C]Special things are left there yet [G]by those that won't [D7]for-g-et
 [G]For every name memories go on [D7]beyond the [G]wall
 {end_of_verse}
+
+
+

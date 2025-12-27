@@ -1,6 +1,9 @@
 {meta: title Little Country Church}
 {meta: artist Pat Boone}
 {meta: composer Chuck Girard}
+{meta: x_source classic-country}
+{meta: x_source_file littlecountrychurchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little country church on the [F]edge of [G7]town
@@ -46,3 +49,9 @@ And it s very plain to see
 [C]Little country church on the [F]edge of [G7]town
 [C]Do-do-do-do-do-do
 {end_of_verse}
+
+
+
+
+
+

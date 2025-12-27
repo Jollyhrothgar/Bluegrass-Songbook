@@ -1,6 +1,9 @@
 {meta: title The Pale Horse And His Rider}
 {meta: artist Hank Williams Sr.}
 {meta: composer Johnny Bailes, Ervin Staggs, Zeke Clements}
+{meta: x_source classic-country}
+{meta: x_source_file thepalehorseandhisriderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Listen poor sinner you're drifting away 
@@ -29,3 +32,6 @@ You can't pay your way with silver and [D7]gold
 [G]If you're not saved you'll be lost in the [C]night
 When the pale [G]horse and his [D7]rider goes [G]by
 {end_of_verse}
+
+
+

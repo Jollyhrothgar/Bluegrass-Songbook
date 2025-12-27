@@ -1,6 +1,9 @@
 {meta: title Sleeping At The Foot Of The Bed}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Eugene Wilson and Luther Patrick}
+{meta: x_source classic-country}
+{meta: x_source_file sleepingatthefootofthebedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Did you ever sleep at the foot of the bed
@@ -86,3 +89,17 @@ Instead [F]of forging [C]ahead
 And I [F]don't think it's caused from a doggone [C]thing
 But [G7]sleeping at the foot of the [C]bed
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

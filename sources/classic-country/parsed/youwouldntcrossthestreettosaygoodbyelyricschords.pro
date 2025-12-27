@@ -1,5 +1,8 @@
 {meta: title You Wouldn't Cross The Street (To Say Goodbye)}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file youwouldntcrossthestreettosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Today I stood across the street an' watched you [G7]leave with him
@@ -28,3 +31,6 @@ You'd tear out your tongue before you'd tell me [G7]lies
 Once you [C]said you'd crawl on hands and knees to [G7]be with me
 Today you wouldn't cross the street to say [C]goodbye
 {end_of_verse}
+
+
+

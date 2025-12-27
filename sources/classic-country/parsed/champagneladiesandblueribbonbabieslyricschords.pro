@@ -1,6 +1,9 @@
 {meta: title Champagne Ladies And Blue Ribbon Babies}
 {meta: artist Ferlin Husky}
 {meta: composer Dallas Frazier and Arthur Leo Owens}
+{meta: x_source classic-country}
+{meta: x_source_file champagneladiesandblueribbonbabieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Champagne ladies and blue ribbon [F]babies
@@ -31,3 +34,6 @@ In a [C]honky tonk on Loser's [G7]Avenue
 [C]Long blond hair and blue eyes lonesome songs and soft [F]lights
 [C]Darling I've got [G7]everything but [C]you
 {end_of_verse}
+
+
+

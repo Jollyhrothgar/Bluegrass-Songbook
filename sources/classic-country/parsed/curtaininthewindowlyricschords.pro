@@ -1,6 +1,9 @@
 {meta: title Curtain in the Window}
 {meta: artist Ray Price}
 {meta: composer Lee Ross}
+{meta: x_source classic-country}
+{meta: x_source_file curtaininthewindowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]These lyin' lips said they'd [D7]forget
@@ -33,3 +36,6 @@ While the [D7]curtain in the window waves [G]goodbye
 tag:
 While the [D7]curtain in the window waves [G]goodbye
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title At The Sight Of You}
 {meta: artist Cal Smith}
 {meta: composer Bozo Darnell and Dave Pittman}
+{meta: x_source classic-country}
+{meta: x_source_file atthesightofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I go [C]all to pieces [D7]at the sight of [G]you
@@ -37,3 +40,8 @@
 {start_of_verse: Verse 5}
 [C]I go all to pieces [D7]at the sight of [G]you
 {end_of_verse}
+
+
+
+
+

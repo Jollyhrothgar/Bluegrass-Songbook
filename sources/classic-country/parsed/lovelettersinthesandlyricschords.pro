@@ -1,5 +1,8 @@
 {meta: title Love Letters in the Sand}
 {meta: artist Patsy Cline}
+{meta: x_source classic-country}
+{meta: x_source_file lovelettersinthesandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On a day like today we [F]pass the time [D7]away
@@ -23,3 +26,6 @@ How you laughed when I cried
 {start_of_verse: Verse 4}
 Repeat
 {end_of_verse}
+
+
+

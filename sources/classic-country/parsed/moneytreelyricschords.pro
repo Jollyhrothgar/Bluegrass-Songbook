@@ -1,6 +1,9 @@
 {meta: title Money Tree}
 {meta: artist Merle Haggard}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file moneytreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Silver and gold made [C]you say [G]goodbye
@@ -29,3 +32,6 @@
 [G]Someday when you're older a [C]wiser girl you'll [G]be
 [C]Then you'll know that love can't [D7]grow on a money [G]tree
 {end_of_verse}
+
+
+

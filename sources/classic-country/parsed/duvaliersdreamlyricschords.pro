@@ -1,5 +1,8 @@
 {meta: title Duvalier's Dream}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file duvaliersdreamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Duvalier was a [C]bitter man who [G7]cursed the mornin' sun
@@ -42,3 +45,8 @@ To face a lie and dare to try [G7]again
 But there's nothin' like a woman with the spell of make believe
 To make a new believer of a [Am]man
 {end_of_verse}
+
+
+
+
+

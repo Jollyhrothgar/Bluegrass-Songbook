@@ -1,6 +1,9 @@
 {meta: title Father Of Judy Ann}
 {meta: artist Red Sovine}
 {meta: composer Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file fatherofjudyannlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm the father of Judy [F]Ann
@@ -46,3 +49,9 @@ I didn't come here just to scare ye
 [C]And you're gonna pay with your life
 [G7]For what you've [C]done
 {end_of_verse}
+
+
+
+
+
+

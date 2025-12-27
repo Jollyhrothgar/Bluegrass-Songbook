@@ -1,6 +1,9 @@
 {meta: title Someone Had to Teach You}
 {meta: artist Wade Hayes}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file someonehadtoteachyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Yes I'll take you back again  you knew I [C]would
@@ -34,3 +37,6 @@ Our [D7]sins have a way of coming [G]home
 {start_of_verse: Verse 3}
 tag: Now [C]maybe you'll be [D7]satisfied with [G]me
 {end_of_verse}
+
+
+

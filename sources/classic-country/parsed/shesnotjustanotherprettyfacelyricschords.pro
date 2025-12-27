@@ -1,6 +1,9 @@
 {meta: title She's Not Just Another Pretty Face}
 {meta: artist The Oak Ridge Boys}
 {meta: composer Sam Lorber and J.D. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file shesnotjustanotherprettyfacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I was [G]just looking her [C]over
@@ -36,3 +39,6 @@ She's got dreams that take her [A7]any place she wants to [Am]be [D7]
 [F#m]There's so much [B7]that doesn't [Em]show
 [Am]She's not just another [D7]pretty face oh [G]no
 {end_of_verse}
+
+
+

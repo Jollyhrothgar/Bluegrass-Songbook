@@ -1,5 +1,8 @@
 {meta: title Swing Baby Swing}
 {meta: artist David Ball}
+{meta: x_source classic-country}
+{meta: x_source_file swingbabyswinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once you were together now you're far [C]apart
@@ -28,3 +31,6 @@ It's [G]easy as the lullaby your momma used to [D7]sing
 [G]Once you feel that rhythm you won't worry about a [C]thing
 Just [G]swing [D7]swing baby [G]swing
 {end_of_verse}
+
+
+

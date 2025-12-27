@@ -1,6 +1,9 @@
 {meta: title From Here To The Moon And Back}
 {meta: artist Willie Nelson}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file fromheretothemoonandbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could hold out my arms say I [F]love you this much 
@@ -44,3 +47,8 @@ And [Am]I'll spend forever [C]proving that [Am]fact
 From [C]here to the [G7]moon and [F]back
 [C]From here to the [G7]moon and [C]back
 {end_of_verse}
+
+
+
+
+

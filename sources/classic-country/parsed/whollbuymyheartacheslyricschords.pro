@@ -1,6 +1,9 @@
 {meta: title Who'll Buy My Heartaches}
 {meta: artist Carl Smith}
 {meta: composer Frances Kane, Kay Twomey}
+{meta: x_source classic-country}
+{meta: x_source_file whollbuymyheartacheslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A sign in the window said cottage for [F]sale
@@ -29,3 +32,6 @@
 [F]Goodbye to our love and its sad souvenirs
 [G7]But who'll buy my heartaches and who'll buy my [C]tears
 {end_of_verse}
+
+
+

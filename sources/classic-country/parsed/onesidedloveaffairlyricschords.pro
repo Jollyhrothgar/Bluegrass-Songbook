@@ -1,6 +1,9 @@
 {meta: title One Sided Love Affair}
 {meta: artist Elvis Presley}
 {meta: composer Bill Campbell}
+{meta: x_source classic-country}
+{meta: x_source_file onesidedloveaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you wanna be loved you got to love me too
@@ -50,3 +53,10 @@ Understanding solves all problems baby
 Cause [D7]I ain't for no one sided love [G]affair
 Cause [D7]I ain't for no one sided love [G]affair
 {end_of_verse}
+
+
+
+
+
+
+

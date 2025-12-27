@@ -1,5 +1,8 @@
 {meta: title Angel}
 {meta: artist Elvis Presley}
+{meta: x_source classic-country}
+{meta: x_source_file angellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am][C]An-gel with those angel [Am][C]e-yes
@@ -46,3 +49,10 @@ here on earth [C]with [G7]you
 {start_of_verse: Verse 8}
 [Am][C]An-gel  [Am][C]An-gel
 {end_of_verse}
+
+
+
+
+
+
+

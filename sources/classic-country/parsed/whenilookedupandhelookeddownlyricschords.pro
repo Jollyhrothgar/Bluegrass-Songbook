@@ -1,6 +1,9 @@
 {meta: title When I Looked Up And He Looked Down}
 {meta: artist Chuck Wagon Gang}
 {meta: composer Albert E. Brumley Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file whenilookedupandhelookeddownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was wandering far from Jesus in the [C]paths of sin and [G]shame
@@ -51,3 +54,10 @@ Yes I looked up (yes I looked up)
 [C]And He looked down (and He looked down)
 [D7]And what’da ya know I really am heaven [G]bound
 {end_of_verse}
+
+
+
+
+
+
+

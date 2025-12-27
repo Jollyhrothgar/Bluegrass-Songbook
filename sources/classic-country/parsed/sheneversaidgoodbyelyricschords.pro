@@ -1,5 +1,8 @@
 {meta: title She Never Said Goodbye}
 {meta: artist Jerry Lee Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file sheneversaidgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it hit me just like lightning 
@@ -47,3 +50,9 @@ Cause she [C]never [G7]said good[C]bye
 No [F]I don’t believe she’s [C]gone for [F]good
 Cause she [C]never [G7]said good[C]bye
 {end_of_verse}
+
+
+
+
+
+

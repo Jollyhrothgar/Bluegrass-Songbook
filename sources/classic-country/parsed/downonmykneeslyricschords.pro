@@ -1,5 +1,8 @@
 {meta: title Down On My Knees}
 {meta: artist Hank Locklin}
+{meta: x_source classic-country}
+{meta: x_source_file downonmykneeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I said when you left me the [F]hurt will go [C]away
@@ -25,3 +28,6 @@ But here I am [G7]down on my knees [C]again
 {start_of_verse: Verse 4}
 Yes darling here I am back [G7]on my knees [C]again 
 {end_of_verse}
+
+
+

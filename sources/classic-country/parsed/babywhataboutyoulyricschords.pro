@@ -1,6 +1,9 @@
 {meta: title Baby What About You}
 {meta: artist Crystal Gayle}
 {meta: composer Wendy Waldman and Josh Leo}
+{meta: x_source classic-country}
+{meta: x_source_file babywhataboutyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Everybody thinks I'm [C]crazy it's going a[F]round
@@ -50,3 +53,9 @@ They say it's gonna be a [Am]long [G7]hard [F]ride
 [G7]Baby what about [C]you
 [G7]Baby what about [C]you
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Only One I Ever Loved I Lost}
 {meta: artist Kitty Wells}
 {meta: composer Johnny Wright, Jack Anglin, Jim Anglin}
+{meta: x_source classic-country}
+{meta: x_source_file theonlyoneieverlovedilostlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I lost your love dear I [G]lost my everything
@@ -33,3 +36,6 @@ I'm [C]doomed to be a failure though the
 [G]Future brings wealth and fame
 For the [D7]only one I ever loved I [G]lost
 {end_of_verse}
+
+
+

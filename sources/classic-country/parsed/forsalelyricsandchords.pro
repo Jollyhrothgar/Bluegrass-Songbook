@@ -1,6 +1,9 @@
 {meta: title For Sale Lyrics and Chords}
 {meta: artist Hank Snow}
 {meta: composer John Howard and Eugene Dragee}
+{meta: x_source classic-country}
+{meta: x_source_file forsalelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For sale one ring that's on your finger (it's such a pretty [G7]thing)
@@ -29,3 +32,6 @@ You say your soul is tired from tryin' (don't know what to [C]do)
 But it was plain to see it was never meant to [F]be
 So goodbye  [C]good [G7]luck  for [C]sale
 {end_of_verse}
+
+
+

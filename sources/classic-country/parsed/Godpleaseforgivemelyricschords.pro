@@ -1,5 +1,8 @@
 {meta: title God Please Forgive Me}
 {meta: artist Isla Grant}
+{meta: x_source classic-country}
+{meta: x_source_file Godpleaseforgivemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God forgive me for my [G7]many sins
@@ -40,3 +43,8 @@ And if I hurt someone along the way [F]God [G7]please [C]forgive me
 [F]So if I [G7]go astray  [F]if I should [G7]loose my way 
 [F]In every [G7]prayer I'll say [F]God [G7]please [C]forgive me
 {end_of_verse}
+
+
+
+
+

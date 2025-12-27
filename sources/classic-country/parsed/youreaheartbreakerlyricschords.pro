@@ -1,6 +1,9 @@
 {meta: title You're A Heartbreaker}
 {meta: artist Elvis Presley}
 {meta: composer Jack Sallee}
+{meta: x_source classic-country}
+{meta: x_source_file youreaheartbreakerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're a heartbreaker you're a [F]love faker
@@ -43,3 +46,8 @@ For I [G7]just found someone else who's [C]sure to take your place
 You're a heartbreaker you're a [F]love faker
 But you [C]can't break my [G7]heart any[C]more
 {end_of_verse}
+
+
+
+
+

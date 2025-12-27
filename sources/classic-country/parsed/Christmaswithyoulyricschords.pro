@@ -1,6 +1,9 @@
 {meta: title Christmas With You}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file Christmaswithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's so nice to spend [D7]Christmas with [G]you
@@ -37,3 +40,8 @@
 {start_of_verse: Verse 5}
 [C]It's so [G]nice to spend [D7]Christmas with [G]you
 {end_of_verse}
+
+
+
+
+

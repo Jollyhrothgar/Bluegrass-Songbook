@@ -1,6 +1,9 @@
 {meta: title It Only Hurts When I Cry ,}
 {meta: artist Dwight Yoakam}
 {meta: composer Dwight Yoakam and Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file itonlyhurtswhenicrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The only time I feel the [C]pain
@@ -51,3 +54,8 @@
 [C]I tell the truth except when I lie
 [D7]And it only hurts me when I [G]cry
 {end_of_verse}
+
+
+
+
+

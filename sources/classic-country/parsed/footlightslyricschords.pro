@@ -1,5 +1,8 @@
 {meta: title Footlights}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file footlightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I live the kinda life  [C]most men only [G]dream of
@@ -30,3 +33,6 @@ But I'm forty-one years old and I ain't [C]got no place to go when it's [G]over
 But I'll hide my age and make the stage 
 And [D7]try to kick the footlights out [G]again
 {end_of_verse}
+
+
+

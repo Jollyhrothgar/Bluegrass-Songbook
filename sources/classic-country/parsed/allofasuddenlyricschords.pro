@@ -1,6 +1,9 @@
 {meta: title All Of A Sudden}
 {meta: artist Wynn Stewart}
 {meta: composer Gene Price}
+{meta: x_source classic-country}
+{meta: x_source_file allofasuddenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]For a while I was happy for a while I had you
@@ -29,3 +32,6 @@ I [F]just hope you're happy and I pray that your [C]world
 [C7]All of a sudden I miss you [F]girl 
 [G7]Cause all of a sudden you're [C]gone
 {end_of_verse}
+
+
+

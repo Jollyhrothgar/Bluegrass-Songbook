@@ -1,5 +1,8 @@
 {meta: title Starlight and Stone}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file starlightandstonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I just wanted a [D7]ride
@@ -40,3 +43,8 @@ I'm still your [G]man
 [D7]Headin' for [G]home
 [D7]Starlight and [G]Stone
 {end_of_verse}
+
+
+
+
+

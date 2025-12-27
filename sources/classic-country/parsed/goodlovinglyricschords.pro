@@ -1,6 +1,9 @@
 {meta: title Good Loving}
 {meta: artist Tammy Wynette}
 {meta: composer Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file goodlovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]Good loving [G]keeps a home [C][F]to-geth-er
@@ -43,3 +46,8 @@
 {start_of_verse: Verse 5}
 [A7]Yeah a lot of good loving woulda [D7]made everything [G]alright
 {end_of_verse}
+
+
+
+
+

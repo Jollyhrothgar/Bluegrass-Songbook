@@ -1,6 +1,9 @@
 {meta: title Butterfly Love}
 {meta: artist Jim Reeves}
 {meta: composer Mitchell Torok}
+{meta: x_source classic-country}
+{meta: x_source_file butterflylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your butterfly love just flutters around
@@ -60,3 +63,11 @@
 [F]I'm just one of a hundred [C]flowers
 [G7]Waiting for your butterfly [C]love
 {end_of_verse}
+
+
+
+
+
+
+
+

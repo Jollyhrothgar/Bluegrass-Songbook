@@ -1,6 +1,9 @@
 {meta: title If It Pleases You}
 {meta: artist Billy Walker}
 {meta: composer Wayne P. Walker}
+{meta: x_source classic-country}
+{meta: x_source_file ifitpleasesyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If it pleases you to break my [C]heart
@@ -24,3 +27,5 @@
 [G7]I love you so much I’d gladly go [C]through
 [D7]A hundred broken hearts if it pleases [G]you
 {end_of_verse}
+
+

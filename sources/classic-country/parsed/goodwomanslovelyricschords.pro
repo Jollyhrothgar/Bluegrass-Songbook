@@ -1,6 +1,9 @@
 {meta: title Good Woman's Love}
 {meta: artist Hank Locklin}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file goodwomanslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was a rover on land and on [Am]sea
@@ -15,3 +18,4 @@
 [C]And when the night falls  and the moon shines [Am]above
 [C]I'm a man with [G7]a dream   and a good woman's [C]love
 {end_of_verse}
+

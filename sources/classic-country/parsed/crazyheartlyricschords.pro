@@ -1,6 +1,9 @@
 {meta: title Crazy Heart}
 {meta: artist Hank Williams Sr.}
 {meta: composer Maurice Murray and Fred Rose}
+{meta: x_source classic-country}
+{meta: x_source_file crazyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You thought she'd care for you and so [C7]you acted [F]smart
@@ -22,3 +25,5 @@ I [F]tried my best to warn you but [C]you wouldn't [G7]listen
 You [C]told me I was wrong  you [C7]thought that you were [F]smart
 Go [G7]on and break you Crazy [C]Heart 
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title How's My Ex Treating You}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file howsmyextreatingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How's my ex my ex treating [F]you
@@ -23,3 +26,5 @@ Your two arms will never keep her satis[D7]fied [G7]
 She'll [C]use you just the way [C7]she used me [F]too
 But up to [C]now how's my [G7]ex treating [C]you
 {end_of_verse}
+
+

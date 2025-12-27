@@ -1,6 +1,9 @@
 {meta: title Bedroom Ballad}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file bedroomballadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Somehow two people brought their lives [C]together
@@ -50,3 +53,10 @@ She's got a way of saying things
 [D7]Her bedroom ballad is her best her sweetest
 [G]And it's playing on my mind
 {end_of_verse}
+
+
+
+
+
+
+

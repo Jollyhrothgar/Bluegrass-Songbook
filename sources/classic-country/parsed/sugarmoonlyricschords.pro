@@ -1,6 +1,9 @@
 {meta: title Sugar Moon}
 {meta: artist Bob Wills}
 {meta: composer Bob Wills and Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file sugarmoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]When it's sugarcane [C]time along around about [D7]June
@@ -29,3 +32,6 @@
 [C]Till it’s sugarcane time long around about [D7]June
 [G7]I’ll be walking with sugar neath that old sugar [C]moon
 {end_of_verse}
+
+
+

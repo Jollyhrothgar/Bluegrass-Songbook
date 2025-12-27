@@ -1,6 +1,9 @@
 {meta: title I'll Have to Make Some Changes}
 {meta: artist Marty Robbins}
 {meta: composer Bill D. Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file illhavetomakesomechangeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've got to forget you if [C]I'm going to sur[G]vive
@@ -29,3 +32,6 @@ Who [G]doesn't look like you
 Who [C]doesn't do love's little things
 The [G]way we used to [D7]do
 {end_of_verse}
+
+
+

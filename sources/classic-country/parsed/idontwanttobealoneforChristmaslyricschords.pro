@@ -1,6 +1,9 @@
 {meta: title I Don't Want To Be Alone For Christmas}
 {meta: artist Bill Haley}
 {meta: composer Al Russell}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttobealoneforChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can [G7]hear those church bells ringing
@@ -48,3 +51,9 @@ I don’t wanna always [G7]roam
 [F]So I think I’ll pack and [C]hurry to the [Am]tracks
 And [F]catch the train that [G7]takes me [C]home
 {end_of_verse}
+
+
+
+
+
+

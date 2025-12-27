@@ -1,6 +1,9 @@
 {meta: title I Wanna Play House With You}
 {meta: artist Eddy Arnold}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file iwannaplayhousewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Come here to me my little chickadee 
@@ -57,3 +60,10 @@ So gimme a [C7]kiss or [F]two
 [G7]You be the mama and I'll be the papa 
 Cause I wanna play house with [C]you
 {end_of_verse}
+
+
+
+
+
+
+

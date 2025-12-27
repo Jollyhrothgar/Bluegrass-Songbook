@@ -1,6 +1,9 @@
 {meta: title And Then}
 {meta: artist Hank Locklin}
 {meta: composer Gloria Shayne}
+{meta: x_source classic-country}
+{meta: x_source_file andthenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]And then I slowly took you in my arms and held [D7]you
@@ -24,3 +27,6 @@ And then I closed my eyes and heard you say
 [C]And then and then you said I'll love you till I die
 [G]And then and then [Em]I woke up and [C]then [D7]I started to [G]cry
 {end_of_verse}
+
+
+

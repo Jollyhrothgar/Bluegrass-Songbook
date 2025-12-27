@@ -1,6 +1,9 @@
 {meta: title Keep A Memory}
 {meta: artist Ricky Skaggs}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file keepamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Keep a memory of our love [C]dear
@@ -43,3 +46,8 @@ When our old friends ask about you
 [F]Why betray the heart you've [C]broken
 [G7]I'll find happiness some [C]way
 {end_of_verse}
+
+
+
+
+

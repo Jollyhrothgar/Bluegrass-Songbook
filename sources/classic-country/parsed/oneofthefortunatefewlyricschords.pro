@@ -1,6 +1,9 @@
 {meta: title One Of The Fortunate Few}
 {meta: artist Hank Thompson}
 {meta: composer Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file oneofthefortunatefewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]When the [G]world closes in your arms are a place I can [D7]hide
@@ -49,3 +52,9 @@ And [C]thank God for giving me [Am]you
 {start_of_verse: Verse 5}
 Your love has made me [D7]one of the fortunate [G]few
 {end_of_verse}
+
+
+
+
+
+

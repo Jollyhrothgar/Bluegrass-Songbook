@@ -1,6 +1,9 @@
 {meta: title I Just Came Home to Count the Memories}
 {meta: artist Cal Smith}
 {meta: composer Glenn Ray}
+{meta: x_source classic-country}
+{meta: x_source_file ijustcamehometocountthememorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I saw roses choking in the grass
@@ -61,3 +64,11 @@ I just came home to count the [F]memories
 {start_of_verse: Verse 8}
 Tag:  I [G7]guess it's time to say [C]goodbye 
 {end_of_verse}
+
+
+
+
+
+
+
+

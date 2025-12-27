@@ -1,6 +1,9 @@
 {meta: title Come Home To My Heart}
 {meta: artist Johnny Paycheck}
 {meta: composer Country Johnny Mathis}
+{meta: x_source classic-country}
+{meta: x_source_file comehometomyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you get lonely out there in that [F]old [C]world
@@ -29,3 +32,6 @@ Come on [Am]home when the [D7]tears began to [G7]fall
 [C]Forget the past and [F]forget what you have [C]been
 And come home to my [F]heart and [G7]walk right [C]in
 {end_of_verse}
+
+
+

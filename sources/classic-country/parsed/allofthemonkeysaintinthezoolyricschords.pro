@@ -1,5 +1,8 @@
 {meta: title All Of The Monkeys Ain't In The Zoo}
 {meta: artist Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file allofthemonkeysaintinthezoolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now I've got a cousin [G7]on my daddy's [C]side
@@ -56,3 +59,10 @@ All of the monkeys [F]ain't in the zoo
 [C]Just watch when you're in a crowd and [F]you'll agree [C]too
 That [F]all of the [C]monkeys [G7]ain't in the [C]zoo
 {end_of_verse}
+
+
+
+
+
+
+

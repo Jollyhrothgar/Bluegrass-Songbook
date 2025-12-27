@@ -1,6 +1,9 @@
 {meta: title Blue Skies}
 {meta: artist Jim Reeves}
 {meta: composer Irving Berlin}
+{meta: x_source classic-country}
+{meta: x_source_file blueskieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]Blue skies  smiling at [C]me
@@ -21,3 +24,5 @@ Nothing but blue skies  [G7]from now [C]on
 {start_of_verse: Verse 3}
 repeat all
 {end_of_verse}
+
+

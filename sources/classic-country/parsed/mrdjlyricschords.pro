@@ -1,6 +1,9 @@
 {meta: title Mr. D.J.}
 {meta: artist Jack Greene}
 {meta: composer Gil Francis and Bob House}
+{meta: x_source classic-country}
+{meta: x_source_file mrdjlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Mr. D.J. would you please play
@@ -50,3 +53,9 @@ That [F]Old Rugged [C]Cross
 Oh it saved me and it [Am]gave me
 A [C]hope I [G7]thought I'd [C]lost
 {end_of_verse}
+
+
+
+
+
+

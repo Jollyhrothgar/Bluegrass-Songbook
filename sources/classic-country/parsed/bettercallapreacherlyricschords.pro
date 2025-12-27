@@ -1,6 +1,9 @@
 {meta: title Better Call A Preacher}
 {meta: artist Sammy Kershaw}
 {meta: composer Steven Cohen, Rick Lagneaux, Sammy Kershaw}
+{meta: x_source classic-country}
+{meta: x_source_file bettercallapreacherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I thought I saw an angel just the other night
@@ -47,3 +50,8 @@ It's a [D7]bad case of lovin' so I'm tellin' you
 {start_of_verse: Verse 4}
 I'm in love with you [G7]honey yeah yeah
 {end_of_verse}
+
+
+
+
+

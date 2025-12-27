@@ -1,5 +1,8 @@
 {meta: title Going Steady}
 {meta: artist Faron Young}
+{meta: x_source classic-country}
+{meta: x_source_file goingsteadylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well me and my baby we're going steady
@@ -38,3 +41,6 @@ Well now sweet baby that we're going steady
 [F]I'll be yours and you'll be mine
 [C]Cause you're my baby  [G7]you're goin' steady with [C]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Cowboy Pride}
 {meta: artist Michael Martin Murphey}
 {meta: composer Ian Tyson}
+{meta: x_source classic-country}
+{meta: x_source_file cowboypridelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Friend I'm writing you this [C]letter
@@ -62,3 +65,11 @@ I'm talkin' about the faithful [G]kind
 Don't end up like me [D7]now
 With nothin' left but cowboy [G]pride
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It's Too Much Like Lonesome}
 {meta: artist Wynn Stewart}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file itstoomuchlikelonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My mailbox still stands  [G7]but I don't [C]need it
@@ -33,3 +36,7 @@ It's [G]too much like [D7]lonesome since you're [G]gone
 {start_of_verse: Verse 4}
 It's just too much like [D7]lonesome since you're [G]gone
 {end_of_verse}
+
+
+
+

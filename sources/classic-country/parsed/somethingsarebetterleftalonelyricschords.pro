@@ -1,6 +1,9 @@
 {meta: title Some Things Are Better Left Alone}
 {meta: artist Ricky Van Shelton}
 {meta: composer Roger Murrah and Larry Shell}
+{meta: x_source classic-country}
+{meta: x_source_file somethingsarebetterleftalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Every [C]time I stir the [C7]ashes
@@ -31,3 +34,6 @@
 [C]I love to remember
 [G7]Some things are better left [C]alone
 {end_of_verse}
+
+
+

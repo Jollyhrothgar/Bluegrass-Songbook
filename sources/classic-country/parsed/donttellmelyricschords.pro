@@ -1,6 +1,9 @@
 {meta: title Don't Tell Me}
 {meta: artist Jim Reeves}
 {meta: composer Jim Reeves, Vernon Dee, Ginger Willis, Hal Willis}
+{meta: x_source classic-country}
+{meta: x_source_file donttellmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't tell me her eyes are bright as [G7]diamonds
@@ -29,3 +32,6 @@ Don't tell me it's your name now she'll [C]sign
 Your new bride [C7]to be meant everything to [F]me
 Your [G7]new love is a lost love of [C]mine
 {end_of_verse}
+
+
+

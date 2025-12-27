@@ -1,6 +1,9 @@
 {meta: title Rambler's Blues}
 {meta: artist Del McCoury}
 {meta: composer Darrell "Pee Wee" Lambert}
+{meta: x_source classic-country}
+{meta: x_source_file ramblersblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m just a rovin’ rambler
@@ -50,3 +53,9 @@ I’m [C]always on the [G]roam
 I [C]do my sleepin’ in an [G]old haystack
 And a [D7]boxcar is my [G]home
 {end_of_verse}
+
+
+
+
+
+

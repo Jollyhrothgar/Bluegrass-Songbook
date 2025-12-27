@@ -1,6 +1,9 @@
 {meta: title Diggin' Up Bones}
 {meta: artist Randy Travis}
 {meta: composer Al Gore and Paul Overstreet}
+{meta: x_source classic-country}
+{meta: x_source_file digginupboneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night I dug your picture out from our old dresser drawer 
@@ -48,3 +51,9 @@ Exhuming things that's better left [G7]alone
 [C]I'm resurrecting memories of a [F]love that's dead and gone 
 [C]Yeah tonight I'm sittin' a[G7]lone diggin' up [C]bones 
 {end_of_verse}
+
+
+
+
+
+

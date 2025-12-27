@@ -1,6 +1,9 @@
 {meta: title Turn Your Eyes Upon Jesus}
 {meta: artist Alan Jackson}
 {meta: composer Helen H. Lemmel}
+{meta: x_source classic-country}
+{meta: x_source_file turnyoureyesuponJesuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]O soul are you [G7]weary and [Am]trou[C]bled 
@@ -43,3 +46,8 @@ Look [F]full in His [Dm]wonderful [G7]face
 And the [C]things of earth will grow [F]strangely [Fm]dim 
 In the [C]light of His [G7]glory and [C]grace 
 {end_of_verse}
+
+
+
+
+

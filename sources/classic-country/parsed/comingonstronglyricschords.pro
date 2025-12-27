@@ -1,6 +1,9 @@
 {meta: title Coming On Strong}
 {meta: artist Brenda Lee}
 {meta: composer David Wilkins}
+{meta: x_source classic-country}
+{meta: x_source_file comingonstronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Coming on [C]strong coming on [Am]strong
@@ -30,3 +33,6 @@ And [Am]memories of a [F]love gone wrong [G7]that keep coming on [C]strong
 (Coming on [F]strong) coming on [C]strong
 (Coming on [F]strong) coming on [C]strong
 {end_of_verse}
+
+
+

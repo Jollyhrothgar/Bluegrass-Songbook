@@ -1,5 +1,8 @@
 {meta: title Please Don't Blame Me}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file pleasedontblamemelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight  is the last time [C7]I'll see [F]you
@@ -25,3 +28,5 @@ But [D7]I'll never give you back the ones you've written to my [G7]heart
 So if I [C]don't want to let you [G7]go
 Please don't blame [C]me
 {end_of_verse}
+
+

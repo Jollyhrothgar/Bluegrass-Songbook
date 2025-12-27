@@ -1,6 +1,9 @@
 {meta: title Southern Loving}
 {meta: artist Jim Ed Brown}
 {meta: composer Jim Owen}
+{meta: x_source classic-country}
+{meta: x_source_file southernlovinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been loved in Cincinnati Evansville and St Paul 
@@ -42,3 +45,9 @@ Now everybody's heard about that southern [F]hospitality
 But [D7]that ain't why the sunny south has got a hold on [G7]me 
 Southern [F]loving take that [G7]southern loving every [C]time
 {end_of_verse}
+
+
+
+
+
+

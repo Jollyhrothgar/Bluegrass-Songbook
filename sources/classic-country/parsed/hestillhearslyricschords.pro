@@ -1,6 +1,9 @@
 {meta: title He Still Hears}
 {meta: artist Flatt Lonesome}
 {meta: composer Dolton Robertson}
+{meta: x_source classic-country}
+{meta: x_source_file hestillhearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the days can seem so long [F]and the nights are [C]longer still
@@ -40,3 +43,8 @@ Just [C]cry out to the [G7]Lord He hears you [C]still
 {start_of_verse: Verse 4}
 Just cry out to the [G7]Lord He hears you [F]still[Fm]   [C]
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title He Set Me Free}
 {meta: artist Connie Smith}
 {meta: composer Albert E. Brumley}
+{meta: x_source classic-country}
+{meta: x_source_file hesetmefreelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Once like a bird in prison I dwelt
@@ -43,3 +46,8 @@ And He broke the bonds of [A7]prison for [D7]me
 [G]I'm glory bound my [C]Jesus to [G]see
 Oh glory to God [D7]He set me [G]free
 {end_of_verse}
+
+
+
+
+

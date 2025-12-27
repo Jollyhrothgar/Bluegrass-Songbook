@@ -1,5 +1,8 @@
 {meta: title I'm Gonna Bid My Blues Goodbye}
 {meta: artist Hank Snow Lyrics}
+{meta: x_source classic-country}
+{meta: x_source_file imgonnabidmybluesgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've got the blues them mean old worries 
@@ -36,3 +39,6 @@ And worries with the [C]world below
 I'm headin' [G7]where I'll never see 
 My lovin' baby's face no [C]more 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'll Do It Every Time}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Mathis, Johnny Horton, Tillman Franks}
+{meta: x_source classic-country}
+{meta: x_source_file illdoiteverytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I called you on the phone to tell you who I [C]love
@@ -36,3 +39,7 @@
 [C]When I feel the touch of your wonderful love
 [G]I just can't get it [D7]enough
 {end_of_verse}
+
+
+
+

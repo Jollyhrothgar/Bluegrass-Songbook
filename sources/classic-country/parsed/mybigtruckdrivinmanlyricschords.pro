@@ -1,6 +1,9 @@
 {meta: title My Big Truck Drivin' Man}
 {meta: artist Kitty Wells}
 {meta: composer Hank Mills}
+{meta: x_source classic-country}
+{meta: x_source_file mybigtruckdrivinmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm just a waitress at this truck [F]stop
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [G7]And he'll kiss me my big truck drivin' [C]man
 {end_of_verse}
+
+
+
+
+

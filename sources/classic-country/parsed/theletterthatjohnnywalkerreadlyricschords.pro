@@ -1,6 +1,9 @@
 {meta: title The Letter That Johnny Walker Read}
 {meta: artist Asleep at the Wheel}
 {meta: composer Ray Benson, Leroy Preston, Chris Frayne}
+{meta: x_source classic-country}
+{meta: x_source_file theletterthatjohnnywalkerreadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Johnny Walker sat at a table in a bar
@@ -68,3 +71,13 @@ The letter that Johnny Walker [G]read
 [D7]Yes that's what the letter said
 The letter that Johnny Walker [G]read
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Lady Takes A Cowboy Everytime}
 {meta: artist Gatlin Brothers}
 {meta: composer Larry Gatlin}
+{meta: x_source classic-country}
+{meta: x_source_file theladytakesacowboyeverytimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sm--ooth talker
@@ -52,3 +55,11 @@ And the [G]lady takes the [D7]cowboy [G]everytime
 He might as well be gone
 Because she's got [B7]her eyes on the dance [C]floor
 {end_of_verse}
+
+
+
+
+
+
+
+

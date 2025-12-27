@@ -1,6 +1,9 @@
 {meta: title Here I Am In Dallas}
 {meta: artist Faron Young}
 {meta: composer Lomar Morris, Ronnie Hughes, Terry Isham}
+{meta: x_source classic-country}
+{meta: x_source_file hereiamindallaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I am in Dallas where in the hell are [F]you
@@ -47,3 +50,9 @@ Have cowboy hats and pickup trucks made a fool of [F]you
 {start_of_verse: Verse 6}
 [G7]Here I am in Dallas where in the hell are [C]you
 {end_of_verse}
+
+
+
+
+
+

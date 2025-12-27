@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Side Of Town}
 {meta: artist Randy Travis}
 {meta: composer Troy Seals, Eddie Setser, Jerry Phillips}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonksideoftownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Don't you cry [C]don't you moan [G7]hang your [C]head down all night [F]long
@@ -37,3 +40,7 @@
 [C]No the blues can't do [G7]no business the [C]blues can't do no [F]business
 [C]The blues can't do [F]no business on the [G7]honky tonk side of [C]town
 {end_of_verse}
+
+
+
+

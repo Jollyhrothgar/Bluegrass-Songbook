@@ -1,6 +1,9 @@
 {meta: title A Lady in Your Life}
 {meta: artist Ray Price}
 {meta: composer Tom Grant and Eddie Burton}
+{meta: x_source classic-country}
+{meta: x_source_file aladyinyourlifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The old gypsy woman she [F]looked at my [C]palm
@@ -33,3 +36,7 @@ You need a lady in your life
 A [F]lover and a [C]wife
 [F]Someone to call your [C]own
 {end_of_verse}
+
+
+
+

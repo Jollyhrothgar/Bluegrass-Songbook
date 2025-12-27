@@ -1,6 +1,9 @@
 {meta: title I'm Still Dreamin'}
 {meta: artist Alabama}
 {meta: composer John Dillon and Steve Cash}
+{meta: x_source classic-country}
+{meta: x_source_file imstilldreaminlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I know people who lose their lover
@@ -39,3 +42,8 @@ Cause [G]I'm still dreamin'
 [C]I'm [G]still [F]dreamin' [C]baby
 [G]I'm still dreamin' [C]oh oh [F]oh [C]about [G]you
 {end_of_verse}
+
+
+
+
+

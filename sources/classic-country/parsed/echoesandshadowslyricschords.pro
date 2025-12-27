@@ -1,6 +1,9 @@
 {meta: title Echoes And Shadows}
 {meta: artist Bobby Helms}
 {meta: composer Merrill St John}
+{meta: x_source classic-country}
+{meta: x_source_file echoesandshadowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There comes a time everyday
@@ -35,3 +38,6 @@ Are [G7]dim but they burn in my [C]mind
 Are all that's [G7]left
 Of a love like your [C]kind
 {end_of_verse}
+
+
+

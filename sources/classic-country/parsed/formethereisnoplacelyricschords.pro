@@ -1,6 +1,9 @@
 {meta: title For Me There Is No Place}
 {meta: artist Hank Williams Jr.}
 {meta: composer Hank Williams Sr. and Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file formethereisnoplacelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You have always wanted the [G7]finest things in life
@@ -25,3 +28,6 @@ Cause in the world you live now for [F]me there is no [C]place
 {start_of_verse: Verse 4}
 [G7]And in the world you live now for [F]me there is no [C]place
 {end_of_verse}
+
+
+

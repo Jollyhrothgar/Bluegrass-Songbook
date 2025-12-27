@@ -1,6 +1,9 @@
 {meta: title Soft Lights And Hard Country Music}
 {meta: artist Moe Bandy}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file softlightsandhardcountrymusiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it really tears me up when I hear a [F]hurtin' song
@@ -34,3 +37,7 @@ A steel guitar in a [C]dim lit bar knows [G7]exactly how I [C]feel
 {start_of_verse: Verse 5}
 [F]A steel guitar in a [C]dim lit bar knows [G7]exactly how I [F]fee[C]l
 {end_of_verse}
+
+
+
+

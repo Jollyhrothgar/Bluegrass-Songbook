@@ -1,6 +1,9 @@
 {meta: title Your Selfish Heart}
 {meta: artist Ricky Skaggs}
 {meta: composer Ruby Rakes and Albert Elliot}
+{meta: x_source classic-country}
+{meta: x_source_file yourselfishheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm going away [F]to stay [C]awhile
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]Just for another [C]man
 {end_of_verse}
+
+
+
+

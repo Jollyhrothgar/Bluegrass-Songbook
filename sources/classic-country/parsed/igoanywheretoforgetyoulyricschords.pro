@@ -1,6 +1,9 @@
 {meta: title I Go Anywhere (To Forget You)}
 {meta: artist Charlie Walker}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file igoanywheretoforgetyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh I go [C]anywhere anywhere to [G]forget you
@@ -23,3 +26,5 @@ I go [C]anywhere anywhere to [G]forget you
 [D7]To forget how you’ve forgotten [G]me
 Repeat last verse
 {end_of_verse}
+
+

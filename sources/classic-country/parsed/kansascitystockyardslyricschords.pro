@@ -1,6 +1,9 @@
 {meta: title Kansas City Stockyards}
 {meta: artist George Morgan}
 {meta: composer Johnny Adcock}
+{meta: x_source classic-country}
+{meta: x_source_file kansascitystockyardslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I quit my job out in the [G]wheat fields
@@ -53,3 +56,8 @@ Her in that old car with me
 [Am]Way down in the [D7]Kansas City [G]stockyards
 [Am]Way down in the [D7]Kansas City [G]stockyards
 {end_of_verse}
+
+
+
+
+

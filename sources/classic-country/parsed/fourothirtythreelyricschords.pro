@@ -1,6 +1,9 @@
 {meta: title Four O Thirty Three}
 {meta: artist George Jones}
 {meta: composer Earl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file fourothirtythreelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the two new people that's moved to the middle of the block 
@@ -46,3 +49,8 @@ They're a part of heaven right here on earth at [G7]four O thirty [C]three
 We're not gonna sale our happy little house at [G7]four O thirty [C]three
 Wouldn't take a pretty penny for the love we have at [G7]four O thirty [C]three
 {end_of_verse}
+
+
+
+
+

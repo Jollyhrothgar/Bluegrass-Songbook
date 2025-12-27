@@ -1,6 +1,9 @@
 {meta: title New York Times}
 {meta: artist Gene Watson}
 {meta: composer O.B. McClinton and Sara Young}
+{meta: x_source classic-country}
+{meta: x_source_file newyorktimeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My woman always talked about the [F]New York City life
@@ -42,3 +45,8 @@ To [G7]go up there somewhere lookin' for the New York T[C]imes
 {start_of_verse: Verse 5}
 Well if [G7]I don't find my baby today I'll run an ad in the New York [C]Times
 {end_of_verse}
+
+
+
+
+

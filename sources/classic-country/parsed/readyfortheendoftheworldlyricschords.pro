@@ -1,6 +1,9 @@
 {meta: title Ready For The End Of The World}
 {meta: artist George Strait}
 {meta: composer Tony Martin and Clint Daniels}
+{meta: x_source classic-country}
+{meta: x_source_file readyfortheendoftheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know the [G7]end is [C]near I've seen the warning [F]signs
@@ -33,3 +36,7 @@ I'm gettin [C]ready [G7]ready for the end of the [C]world
 {start_of_verse: Verse 5}
 [F]Yeah I'll be [C]ready [G7]ready for the end of the [C]world
 {end_of_verse}
+
+
+
+

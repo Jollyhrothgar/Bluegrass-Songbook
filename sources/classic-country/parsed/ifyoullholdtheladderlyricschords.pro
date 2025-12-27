@@ -1,6 +1,9 @@
 {meta: title If You'll Hold The Ladder}
 {meta: artist David Allan Coe}
 {meta: composer Buzz Rabin and Sara Rabin}
+{meta: x_source classic-country}
+{meta: x_source_file ifyoullholdtheladderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby you're the only dream I've [F]ever had come true
@@ -23,3 +26,5 @@ Yeah [C]and I'll be everything this man can [F]be before I [Dm]stop
 [F]If you'll just hold the [C]ladder baby [G7]I'll climb to the [C]top [C7]
 [F]If you'll just hold the [C]ladder baby [G7]I'll climb to the [F]to[C]p
 {end_of_verse}
+
+

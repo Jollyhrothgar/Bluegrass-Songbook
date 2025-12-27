@@ -1,6 +1,9 @@
 {meta: title He is My Everything}
 {meta: artist Elvis Presley}
 {meta: composer Dallas Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file heismyeverythinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I long to be His [C]possession
@@ -31,3 +34,6 @@
 [C]I long to be His possession
 [G]For He is my [G][D7]everything
 {end_of_verse}
+
+
+

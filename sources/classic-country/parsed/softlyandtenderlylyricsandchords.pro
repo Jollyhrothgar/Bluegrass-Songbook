@@ -1,6 +1,9 @@
 {meta: title Softly And Tenderly}
 {meta: artist Anne Murray}
 {meta: composer Will L. Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file softlyandtenderlylyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Softly and tenderly [F]Jesus is [C]calling 
@@ -47,3 +50,9 @@ Come [G7]home  come [C]hom[Am]e
 {start_of_verse: Verse 5}
 [Am]Calling [F]o [C]sinner [G7]come [F]hom[C]e
 {end_of_verse}
+
+
+
+
+
+

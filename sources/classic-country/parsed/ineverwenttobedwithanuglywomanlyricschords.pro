@@ -1,6 +1,9 @@
 {meta: title I Never Went To Bed With An Ugly Woman}
 {meta: artist Bobby Bare}
 {meta: composer Royal C. Bannon}
+{meta: x_source classic-country}
+{meta: x_source_file ineverwenttobedwithanuglywomanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I serve my time loosing track of the [F]wine
@@ -43,3 +46,8 @@ But I [F]sure woke [G7]up with a [C]few
 Oh I've never gone to bed with an ugly [G7]woman
 But I [F]sure woke [G7]up with a [C]few
 {end_of_verse}
+
+
+
+
+

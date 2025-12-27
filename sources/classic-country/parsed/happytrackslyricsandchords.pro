@@ -1,6 +1,9 @@
 {meta: title Happy Tracks}
 {meta: artist Wilburn Brothers}
 {meta: composer Ray Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file happytrackslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know that you've heard people say many many times
@@ -44,3 +47,8 @@ Leave a lotta happy tracks as you go down life's road
 [C]Leave a lotta happy tracks and keep this in [F]mind
 [C]Others will have to [F]follow in the [C]path you [G7]leave [C]behind
 {end_of_verse}
+
+
+
+
+

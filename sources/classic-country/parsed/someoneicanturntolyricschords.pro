@@ -1,6 +1,9 @@
 {meta: title Someone I Can Turn To}
 {meta: artist Vern Gosdin}
 {meta: composer Equen Gosdin, Kathy Gosdin, Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file someoneicanturntolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There must be [C]someone I can turn [G]to
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [C]Yes there must be someone I can turn [G]to
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Living in the Kingdom of God}
 {meta: artist Jamie Dailey and Darrin Vincent}
 {meta: composer Jamie Dailey}
+{meta: x_source classic-country}
+{meta: x_source_file livinginthekingdomofGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My life changed on the [D7]day when the Lord saved my [G]soul
@@ -44,3 +47,8 @@ Walking [G]down the streets of [D7]Glory I'll sing and [C]tell my story
 Praise the name of Jesus I'll be [D7]living in the [C]kingdom of [G]God
 I’ll be living in the [C]kingdom [G]living in the [D7]kingdom of [G]God
 {end_of_verse}
+
+
+
+
+

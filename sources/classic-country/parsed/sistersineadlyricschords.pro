@@ -1,5 +1,8 @@
 {meta: title Sister Sinead}
 {meta: artist Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file sistersineadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm singing this song for my [C]sister Si[G]nead
@@ -35,3 +38,7 @@ And humans in charge of the [D7]saving of souls
 [G]And humans responded all [C]over the [G]world
 Condemning that bald headed [D7]brave little [G]girl
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title When It's Roundup Time In Heaven}
 {meta: artist Eddy Arnold}
 {meta: composer Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file whenitsrounduptimeinheavenlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh they tell me of a place and they [C]tell me of a day
@@ -32,3 +35,6 @@ When they [G]comb heaven's plains
 Will they [C]find your name
 At the [D7]great roundup in the [G]sky
 {end_of_verse}
+
+
+

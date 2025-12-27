@@ -1,6 +1,9 @@
 {meta: title One More Shot}
 {meta: artist Johnny Lee}
 {meta: composer Ron Moore and Doug Hauseman}
+{meta: x_source classic-country}
+{meta: x_source_file onemoreshotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everybody's talking all over town
@@ -43,3 +46,9 @@ Just give me [C]one more shot one more [F]shot at your [G]love
 Give me [C]one more shot one more [F]shot one more shot
 One more shot at your [G]love
 {end_of_verse}
+
+
+
+
+
+

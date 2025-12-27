@@ -1,6 +1,9 @@
 {meta: title Heartache Killer}
 {meta: artist Jim Ed Brown}
 {meta: composer Swany Cornette}
+{meta: x_source classic-country}
+{meta: x_source_file heartachekillerlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just bring me one more round of heartache killer
@@ -48,3 +51,8 @@ Yes I'll have [C]one more round of I don't miss her
 {start_of_verse: Verse 4}
 Maybe I'll stop [G7]caring before [C]long 
 {end_of_verse}
+
+
+
+
+

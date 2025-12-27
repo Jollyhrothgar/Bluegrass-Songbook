@@ -1,6 +1,9 @@
 {meta: title Journey's End}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb and Henry Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file journeysendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Each night brings back  my dreams of [F]you 
@@ -29,3 +32,6 @@ Clouds are moving in I've lost my [G7]way
 I tried to [C]smile  but why I [F]pretend 
 Cause the sign [C]ahead  [G7]reads journey's [C]end
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title From The Church To The Barroom}
 {meta: artist Norma Jean}
 {meta: composer Rochelle Frazier}
+{meta: x_source classic-country}
+{meta: x_source_file fromthechurchtothebarroomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]No cursin' no smokin' no drinkin' for me
@@ -29,3 +32,6 @@ No [C]cursin' no smokin' no drinkin' for me
 From the [C]church to the barroom that's where you led me
 Now [G]I'm dodging love they’re [D7]swingin' at [G]me
 {end_of_verse}
+
+
+

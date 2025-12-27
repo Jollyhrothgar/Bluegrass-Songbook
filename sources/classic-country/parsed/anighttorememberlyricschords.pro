@@ -1,6 +1,9 @@
 {meta: title A Night To Remember}
 {meta: artist Wynn Stewart}
 {meta: composer Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file anighttorememberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Let this be a night to remember [G](remember)
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [A7]And let this be [D7]a night for [G]love
 {end_of_verse}
+
+
+
+
+

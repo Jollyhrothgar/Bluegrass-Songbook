@@ -1,6 +1,9 @@
 {meta: title I’ve Never Seen The Likes Of You}
 {meta: artist Conway Twitty}
 {meta: composer Bob McDill and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file iveneverseenthelikesofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You walk in  and [F]I can hear the [C]whispers
@@ -27,3 +30,6 @@
 [G7]And now three kids [C]later you're more [F]beautiful than [C]ever
 [F]And babe [G7]I've never  seen the likes of [C]you
 {end_of_verse}
+
+
+

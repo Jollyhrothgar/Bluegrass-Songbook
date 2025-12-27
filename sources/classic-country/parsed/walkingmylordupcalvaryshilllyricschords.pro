@@ -1,5 +1,8 @@
 {meta: title Walking My Lord Up Calvary’s Hill}
 {meta: artist Wilma Lee Cooper}
+{meta: x_source classic-country}
+{meta: x_source_file walkingmylordupcalvaryshilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the cross as He hung in [F]shame was for[C]saken
@@ -39,3 +42,8 @@ They were walking my Lord [G7]up Calvary’s [C]Hill
 {start_of_verse: Verse 4}
 They were walking my Lord [G7]up Calvary’s [C]Hill[F]   [C]
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Born To Boogie}
 {meta: artist Hank Williams Jr.}
+{meta: x_source classic-country}
+{meta: x_source_file borntoboogielyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well my momma met my daddy down in Alabam 
@@ -75,3 +78,16 @@ I still got my hat and I still wear my jeans
 [G7]Get down with me baby cause I ain’t no rookie 
 I was born to party and I was born to [C]boogie  
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

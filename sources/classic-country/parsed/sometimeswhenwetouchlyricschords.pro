@@ -1,6 +1,9 @@
 {meta: title Sometimes When We Touch}
 {meta: artist Tammy Wynette}
 {meta: composer Barry Mann and Dan Hill}
+{meta: x_source classic-country}
+{meta: x_source_file sometimeswhenwetouchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You ask me if I [F]love you [G7]and I choke on my [C]reply
@@ -47,3 +50,9 @@ I [Dm]wanna hold you till the [G7]fear in me sub[C]sides
 {start_of_verse: Verse 5}
 I [Dm]wanna hold you till the [G7]fear in me sub[C]sides
 {end_of_verse}
+
+
+
+
+
+

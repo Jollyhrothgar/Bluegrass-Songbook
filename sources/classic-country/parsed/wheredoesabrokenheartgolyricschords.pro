@@ -1,5 +1,8 @@
 {meta: title Where Does A Broken Heart Go}
 {meta: artist Jim Reeves}
+{meta: x_source classic-country}
+{meta: x_source_file wheredoesabrokenheartgolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Where does a [C]broken heart go  [D7]does it just fade [G]away
@@ -21,3 +24,5 @@ Is it then [D7]protected  with God's loving [G]hand
 Where does a [C]broken heart go [D7]when it dies of [G]pain
 Is there a heaven for [D7]broken hearts  will it live [G]again
 {end_of_verse}
+
+

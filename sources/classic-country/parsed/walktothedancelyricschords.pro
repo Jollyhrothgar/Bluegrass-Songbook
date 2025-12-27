@@ -1,6 +1,9 @@
 {meta: title Walk To The Dance}
 {meta: artist Sonny James}
 {meta: composer Carrol Bobbie}
+{meta: x_source classic-country}
+{meta: x_source_file walktothedancelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Walk to the [Em]dance [F]without the [C]car
@@ -30,3 +33,7 @@ We fell in [Am]love [F]on our [G7]walk to the [C]dance
 {start_of_verse: Verse 5}
 We fell in [Am]love [F]on our [G7]walk to the [C]dance
 {end_of_verse}
+
+
+
+

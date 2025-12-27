@@ -1,6 +1,9 @@
 {meta: title My Life's Been Grand}
 {meta: artist George Strait}
 {meta: composer Merle Haggard and Terry Gordon}
+{meta: x_source classic-country}
+{meta: x_source_file mylifesbeengrandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My [D7]life's been [G]grand
@@ -29,3 +32,6 @@ My [D7]life's been [G]grand
 {start_of_verse: Verse 4}
 My [D7]life's been [G]grand
 {end_of_verse}
+
+
+

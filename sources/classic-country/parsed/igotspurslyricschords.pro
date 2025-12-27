@@ -1,5 +1,8 @@
 {meta: title I Got Spurs}
 {meta: artist Gene Autry}
+{meta: x_source classic-country}
+{meta: x_source_file igotspurslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Yippee [C]yay there'll be [Am]no wedding [G7]bells for [C]today
@@ -58,3 +61,14 @@
 [F]And that song [G7]ain't so very far from [C]wrong
 [F]So I’ll jingle jangle [G7]jingle all [C]along
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

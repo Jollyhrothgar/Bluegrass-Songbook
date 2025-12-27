@@ -1,6 +1,9 @@
 {meta: title A Long Time Ago}
 {meta: artist Waylon Jennings}
 {meta: composer Shel Silverstein and Waylon Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file alongtimeagolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't look the way the average cowboy singer looks
@@ -33,3 +36,6 @@ We [G7]ain't the only outlaws just the only ones they caught
 They [F]tried to run us off but Willie's slow
 I [G7]quit running a long time [C]ago
 {end_of_verse}
+
+
+

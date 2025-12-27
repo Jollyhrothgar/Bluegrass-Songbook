@@ -1,6 +1,9 @@
 {meta: title Lone Star Love}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton and Larry Cheshier}
+{meta: x_source classic-country}
+{meta: x_source_file lonestarlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Dallas Ft Worth San Antone
@@ -51,3 +54,8 @@ Cowboy suits I'll [G7]take it every [C]time
 You can bet your boots and your
 Cowboy suits I'll [G7]take it every [C]time[F]  [C]
 {end_of_verse}
+
+
+
+
+

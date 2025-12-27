@@ -1,6 +1,9 @@
 {meta: title Talking To God}
 {meta: artist Ricky Van Shelton}
 {meta: composer Lewis J. Anderson and Layng Martine}
+{meta: x_source classic-country}
+{meta: x_source_file talkingtoGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]School let out at [D7]3:00 and [C]I picked Jackson [D7]up
@@ -40,3 +43,8 @@ A [C]mountain stream cold and clean gets me in[D7]spired
 {start_of_verse: Verse 6}
 [C]It’s just my way of [D7]talking to [G]God
 {end_of_verse}
+
+
+
+
+

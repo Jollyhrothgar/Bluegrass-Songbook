@@ -1,6 +1,9 @@
 {meta: title It's Cold In California}
 {meta: artist Merle Haggard}
 {meta: composer Freddy D. Powers and Nate Green}
+{meta: x_source classic-country}
+{meta: x_source_file itscoldincalifornialyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a boy here in [D7]old Cali[G]fornia
@@ -28,3 +31,6 @@ Though the weather is [B7]fine the [C]chill that is [F]mine
 And it's [G]cold in [D7]California [G]tonight
 Lord it's cold in [D7]California [G]tonight
 {end_of_verse}
+
+
+

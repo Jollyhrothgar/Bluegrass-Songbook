@@ -1,6 +1,9 @@
 {meta: title Her L-O-V-E'S Gone}
 {meta: artist Red Steagall}
 {meta: composer Glenn Sutton and Larry Cheshier}
+{meta: x_source classic-country}
+{meta: x_source_file herlovesgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here I stand in front of an [F]old familiar sight
@@ -33,3 +36,7 @@ And [C]now all her [G7]l-o-v-e's [C]gone
 {start_of_verse: Verse 4}
 All her [G7]l-o-v-e's [C]gone
 {end_of_verse}
+
+
+
+

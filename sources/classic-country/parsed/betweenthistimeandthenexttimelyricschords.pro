@@ -1,6 +1,9 @@
 {meta: title Between This Time And The Next Time}
 {meta: artist Gene Watson}
 {meta: composer Ray Griff}
+{meta: x_source classic-country}
+{meta: x_source_file betweenthistimeandthenexttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's not waste a [G7]minute of each [C]other 
@@ -26,3 +29,5 @@ It [G7]seems more like a million years [C]instead of just one week
 It's a [F]long time between this time and the [C]next time
 So [G7]let's make this the best time till the next time that we [C]meet
 {end_of_verse}
+
+

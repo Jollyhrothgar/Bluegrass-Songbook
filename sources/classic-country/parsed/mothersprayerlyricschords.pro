@@ -1,6 +1,9 @@
 {meta: title Mother's Prayer}
 {meta: artist Eddy Arnold}
 {meta: composer Wally Fowler}
+{meta: x_source classic-country}
+{meta: x_source_file mothersprayerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The postman came and brought a letter
@@ -43,3 +46,8 @@ Help him win the victory [D7]there
 And when this [C]cruel old war is [G]over
 Send him home [D7]to mother's [G]prayer
 {end_of_verse}
+
+
+
+
+

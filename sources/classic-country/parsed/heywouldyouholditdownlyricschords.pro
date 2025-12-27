@@ -1,5 +1,8 @@
 {meta: title Hey Would You Hold It Down}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file heywouldyouholditdownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well my brother in law and my [F]sister Sue
@@ -49,3 +52,9 @@ Down down [G7]hey would you hold it [C]down
 [G7]Hey would you hold it [C]down
 Down down [G7]hey would you hold it [C]down
 {end_of_verse}
+
+
+
+
+
+

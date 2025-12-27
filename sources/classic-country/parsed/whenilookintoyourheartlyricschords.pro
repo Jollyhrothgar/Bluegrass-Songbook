@@ -1,6 +1,9 @@
 {meta: title When I Look Into Your Heart}
 {meta: artist Vince Gill}
 {meta: composer Vince Gill}
+{meta: x_source classic-country}
+{meta: x_source_file whenilookintoyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When I look into your [Em]heart 
@@ -41,3 +44,8 @@ When I [Dm]look in[G7]to your [C]heart
 I can [F]finally see for[Em]ever 
 When I [Dm]look in[G7]to your [C]heart
 {end_of_verse}
+
+
+
+
+

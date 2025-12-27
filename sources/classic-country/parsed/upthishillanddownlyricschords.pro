@@ -1,6 +1,9 @@
 {meta: title Up This Hill And Down}
 {meta: artist The Wilburn Brothers}
 {meta: composer Richard D. Staedtler}
+{meta: x_source classic-country}
+{meta: x_source_file upthishillanddownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it's up this hill and down and up this hill [G7]again
@@ -43,3 +46,9 @@ It [D7]seems like everything bad [C]hangs around with [G]me
 [C]Up this hill and down and up this hill [G]again
 It's a [D7]mighty mighty long road [C]what ain't got no [G]end
 {end_of_verse}
+
+
+
+
+
+

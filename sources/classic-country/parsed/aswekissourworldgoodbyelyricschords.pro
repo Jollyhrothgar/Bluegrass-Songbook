@@ -1,6 +1,9 @@
 {meta: title As We Kiss Our World Goodbye}
 {meta: artist Rhonda Vincent}
 {meta: composer Billy Wayne Yates}
+{meta: x_source classic-country}
+{meta: x_source_file aswekissourworldgoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Time [D7]just stood [G]still it's the moment [C]that we [G]will
@@ -53,3 +56,10 @@ As we [C]kiss our [D7]world good[G]bye[D7]
 {start_of_verse: Verse 5}
 As we [C]kiss our [D7]world good[G]bye
 {end_of_verse}
+
+
+
+
+
+
+

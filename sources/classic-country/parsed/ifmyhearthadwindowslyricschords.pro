@@ -1,5 +1,8 @@
 {meta: title If My Heart Had Windows}
 {meta: artist Patty Loveless}
+{meta: x_source classic-country}
+{meta: x_source_file ifmyhearthadwindowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If my  [E7]heart had [A7]windows
@@ -32,3 +35,8 @@ A thief couldn't steal the love that I feel
 [C]If my  [E7]heart had [A7]windows
 You'd see a [C]heart full of [D7]love just for [G]you
 {end_of_verse}
+
+
+
+
+

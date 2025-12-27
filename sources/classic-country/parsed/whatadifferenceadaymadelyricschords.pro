@@ -1,6 +1,9 @@
 {meta: title What A Difference A Day Made}
 {meta: artist Willie Nelson}
 {meta: composer María Mendez Grever and Stanley Adams}
+{meta: x_source classic-country}
+{meta: x_source_file whatadifferenceadaymadelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]What a difference [Dm]a day [G7]made
@@ -33,3 +36,6 @@
 [F]And it's heaven when [Fm]you find romance on your [Em]menu
 [Am]What a difference a [Dm]day makes [G7]and the difference is [C]you
 {end_of_verse}
+
+
+

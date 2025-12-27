@@ -1,6 +1,9 @@
 {meta: title Hearts Were Made For Beating}
 {meta: artist Billy Walker}
 {meta: composer Lamar Morris and Warren Keith}
+{meta: x_source classic-country}
+{meta: x_source_file heartsweremadeforbeatinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]God made man and then God made a [F]woman
@@ -23,3 +26,5 @@ How [C]much longer can what's left go on [F]beating
 Cause [C]Lord what a [G7]beating mine's [C]had
 Cause Lord what a [G7]beating mine's [F]ha[C]d
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title Dusty Road}
 {meta: artist Norma Jean}
 {meta: composer Dave Kirby and Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file dustyroadlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Life gets so lonely when you live down on dusty road
@@ -38,3 +41,6 @@ It ain't [G]rained in a month and it looks like the corn won't grow
 There's an [Em]awful lotta talk down [D7]here on dusty [G]road
 There's an [Em]awful lotta talk down [D7]here on dusty [G]road
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Watched My Dream World Crumble Like Clay}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file iwatchedmydreamworldcrumblelikeclaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I built a dream world [F]darling for [C]two
@@ -21,3 +24,5 @@ You promised darling [F]that we'd never [C]part
 I saw your love dear [F]fade and die [C]away
 [G7]I watched my dream world crumble like [C]clay
 {end_of_verse}
+
+

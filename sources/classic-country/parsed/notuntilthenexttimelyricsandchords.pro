@@ -1,6 +1,9 @@
 {meta: title Not Until the Next Time}
 {meta: artist Jim Reeves}
 {meta: composer Gail Talley}
+{meta: x_source classic-country}
+{meta: x_source_file notuntilthenexttimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not until the next time will I [G]cry all night for you
@@ -34,3 +37,7 @@ And [D7]listen when you beg me for a [G]chance when you're untrue
 [C]Not until the next time will my [G]heart let me forgive
 Yes [D7]I'll stop loving you until the [G]next time[C]   [G]
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Letter To Tom}
 {meta: artist The Country Gentleman}
 {meta: composer John Duffey}
+{meta: x_source classic-country}
+{meta: x_source_file alettertotomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wandered [C]by the [G]village Tom I [D7]set beneath the [G]tree
@@ -21,3 +24,5 @@ But [C]when our time shall [G]come dear Tom and [C]we are [G]called to [D7]go
 I [C]hope they’ll lay us [G]where we played just [D7]fifteen years [G]ago
 Just [D7]fifteen years [G]ago
 {end_of_verse}
+
+

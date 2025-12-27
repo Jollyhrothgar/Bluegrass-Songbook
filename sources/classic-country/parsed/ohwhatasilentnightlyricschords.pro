@@ -1,6 +1,9 @@
 {meta: title Oh What A Silent Night}
 {meta: artist Randy Travis}
 {meta: composer Kathy Louvin and Mark Collie}
+{meta: x_source classic-country}
+{meta: x_source_file ohwhatasilentnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The night before Christmas alone in the [D7]dark
@@ -33,3 +36,7 @@ Oh what a [D7]silent [Em]night[C]
 {start_of_verse: Verse 5}
 [G]Oh what a [D7]silent [G]night
 {end_of_verse}
+
+
+
+

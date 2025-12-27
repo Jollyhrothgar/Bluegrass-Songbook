@@ -1,6 +1,9 @@
 {meta: title Dance The Night Away}
 {meta: artist The Mavericks}
 {meta: composer Raul Malo}
+{meta: x_source classic-country}
+{meta: x_source_file dancethenightawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Here comes my [G7]happiness [C]again[G7]
@@ -47,3 +50,8 @@ Tell her [C]no [G7]  I gotta [C]go [G7]
 [C]Right now [G7]tomorrow's looking [C]bright[G7]
 [C]Just like the [G7]sunny morning [C]light[G7]
 {end_of_verse}
+
+
+
+
+

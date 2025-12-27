@@ -1,5 +1,8 @@
 {meta: title Christmas In Heaven}
 {meta: artist Eddie Bond}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasinheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She’ll spend [G7]Christmas in heaven this [C]year
@@ -30,3 +33,7 @@ Spoken:
 {start_of_verse: Verse 5}
 [G7]She’ll spend Christmas in heaven this [C]year
 {end_of_verse}
+
+
+
+

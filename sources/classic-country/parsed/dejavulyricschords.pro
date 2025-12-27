@@ -1,5 +1,8 @@
 {meta: title Deja Vu}
 {meta: artist Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file dejavulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It's deja [Am]vu again [D7]it's me and [G]you again[Em]
@@ -30,3 +33,6 @@ When it's [C]deja vu [D7]deja me and deja [G]you[C]   [G]
 {start_of_verse: Verse 4}
 I try to [Am]hold on to [D7]deja me and deja [G]you
 {end_of_verse}
+
+
+

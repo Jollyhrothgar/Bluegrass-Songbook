@@ -1,6 +1,9 @@
 {meta: title Before My Time}
 {meta: artist Carl Smith}
 {meta: composer Ben Peters}
+{meta: x_source classic-country}
+{meta: x_source_file beforemytimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He lied he [Em]cheated till he [Am]broke your [F]heart
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [G7]That was before [F]my [C]time
 {end_of_verse}
+
+
+
+

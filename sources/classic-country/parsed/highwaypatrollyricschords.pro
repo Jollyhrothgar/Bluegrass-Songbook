@@ -1,6 +1,9 @@
 {meta: title Highway Patrol}
 {meta: artist Junior Brown}
 {meta: composer Red Simpson, Dennis Payne, Ray Rush}
+{meta: x_source classic-country}
+{meta: x_source_file highwaypatrollyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got a star on my car and one on my chest
@@ -48,3 +51,8 @@ I'm just a-[G]doin' my job I'm the [D7]Highway Pat[G]rol
 {start_of_verse: Verse 5}
 I'm just a-[D7]doin' my job I'm the Highway Pat[G]rol
 {end_of_verse}
+
+
+
+
+

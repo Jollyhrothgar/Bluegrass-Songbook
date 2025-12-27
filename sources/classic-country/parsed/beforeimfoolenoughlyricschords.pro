@@ -1,6 +1,9 @@
 {meta: title Before I'm Fool Enough}
 {meta: artist Crystal Gayle}
 {meta: composer Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file beforeimfoolenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm going away babe [C]I cannot [G]stay
@@ -34,3 +37,7 @@ Before I'm fool enough to [D7]give it one more [G]try
 [Em]Once I get the nerve up I'm [G]going
 Before I'm fool enough to [D7]give it one more [G]try
 {end_of_verse}
+
+
+
+

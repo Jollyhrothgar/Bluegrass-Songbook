@@ -1,5 +1,8 @@
 {meta: title Branded Man}
 {meta: artist Merle Haggard}
+{meta: x_source classic-country}
+{meta: x_source_file brandedmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd like to hold my head up and be [C]proud of who I [G]am
@@ -39,3 +42,8 @@ Now I'm a branded [D7]man out in the [G]cold
 {start_of_verse: Verse 4}
 Now I'm a branded [D7]man out in the [G]cold
 {end_of_verse}
+
+
+
+
+

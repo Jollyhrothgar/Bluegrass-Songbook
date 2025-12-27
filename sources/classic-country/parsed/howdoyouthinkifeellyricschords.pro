@@ -1,6 +1,9 @@
 {meta: title How Do You Think I Feel}
 {meta: artist Elvis Presley}
 {meta: composer Wayne Walker and Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file howdoyouthinkifeellyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]How do you think I feel
@@ -75,3 +78,17 @@ And you’ve included three
 And that’s too much for me
 How do you think I [C]feel
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

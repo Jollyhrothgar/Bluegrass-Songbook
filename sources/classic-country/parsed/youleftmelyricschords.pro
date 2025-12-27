@@ -1,6 +1,9 @@
 {meta: title You Left Me}
 {meta: artist Fats Domino}
 {meta: composer Antoine Domino and Dave Bartholomew}
+{meta: x_source classic-country}
+{meta: x_source_file youleftmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You [C]left me all by myself
@@ -22,3 +25,5 @@ If [C]you should ever leave me
 [C]No matter where you be
 [G7]I'll find you [C]there
 {end_of_verse}
+
+

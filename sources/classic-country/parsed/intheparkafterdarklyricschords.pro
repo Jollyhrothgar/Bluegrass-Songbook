@@ -1,6 +1,9 @@
 {meta: title In The Park After Dark}
 {meta: artist Norma Jean}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file intheparkafterdarklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the [F]park after dark [G7]we'll be [C]together 
@@ -36,3 +39,7 @@ Though I may never call you mine you'll be mine while we [F]cheat
 Will our [F]love ever get [G7]any [C]farther 
 Than in the [F]park after [G7]dark six to [C]nine
 {end_of_verse}
+
+
+
+

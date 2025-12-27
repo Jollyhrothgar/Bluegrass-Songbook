@@ -1,6 +1,9 @@
 {meta: title Where We'll Never Say Farewell}
 {meta: artist Rhonda Vincent}
 {meta: composer Larry Sparks and Eva Sparks}
+{meta: x_source classic-country}
+{meta: x_source_file wherewellneversayfarewelllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I am going [C]in the [G]morning
@@ -47,3 +50,9 @@ Where we'll never [D7]say fare[G]well
 {start_of_verse: Verse 4}
 Oh where we'll never [D7]say fare[G]well
 {end_of_verse}
+
+
+
+
+
+

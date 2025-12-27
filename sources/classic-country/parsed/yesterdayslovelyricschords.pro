@@ -1,6 +1,9 @@
 {meta: title Yesterday's Love}
 {meta: artist Ricky Nelson}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdayslovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]When I get to [G]thinking [D7]about the [G]past
@@ -29,3 +32,6 @@ You have to cross [C]over and you never [G]return
 For dreams have their day [A7]and then fade away
 [D7]With yesterday's [G]love [C]yesterday's [G]love
 {end_of_verse}
+
+
+

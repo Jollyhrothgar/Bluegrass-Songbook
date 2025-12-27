@@ -1,6 +1,9 @@
 {meta: title Crossing Over Jordan}
 {meta: artist Melba Montgomery}
 {meta: composer Melba Montgomery and Carl Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file crossingoverjordanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Our many long years in bondage has shown how people have been
@@ -33,3 +36,7 @@ And when you reach the other side you [G7]shall be [C]free
 {start_of_verse: Verse 5}
 And when you reach the other side you [G7]shall be [C]free
 {end_of_verse}
+
+
+
+

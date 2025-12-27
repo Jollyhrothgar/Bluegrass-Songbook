@@ -1,6 +1,9 @@
 {meta: title Where The Tall Grass Grows}
 {meta: artist George Jones}
 {meta: composer Kerry Kurt Phillips, Andy Spooner, Randy Boudreaux}
+{meta: x_source classic-country}
+{meta: x_source_file wherethetallgrassgrowslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's three bedrooms hardwood floors and the kitchen's [D7]new
@@ -31,3 +34,7 @@
 {start_of_verse: Verse 5}
 [C]Can’t go back and face those [G]memories  [D7]where the tall grass [G]grows
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title The Fragrance Of Her Perfume}
 {meta: artist Boxcar Willie}
 {meta: composer Lecil Travis Martin}
+{meta: x_source classic-country}
+{meta: x_source_file thefragranceofherperfumelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There she goes [G7]she slowly walks [C]away
@@ -23,3 +26,5 @@ Why can't her love [G7]that had to come my [C]way
 Be [D7]like her perfume just fade [G]away
 Be [D7]like her perfume and fade [G]away
 {end_of_verse}
+
+

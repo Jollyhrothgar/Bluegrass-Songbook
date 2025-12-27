@@ -1,6 +1,9 @@
 {meta: title No Reason To Hurry Home}
 {meta: artist Dolly Parton and Porter Wagoner}
 {meta: composer Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file noreasontohurryhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There is no love and [F]there is no [C]hate
@@ -34,3 +37,7 @@ No reason [G7]to hurry [C]home
 There is [A#7]nothing to [F]look forward [C]to
 No reason [G7]to hurry [F]home[C]
 {end_of_verse}
+
+
+
+

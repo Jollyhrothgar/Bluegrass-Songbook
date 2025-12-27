@@ -1,5 +1,8 @@
 {meta: title It Looks Like I'm Just in Your Way}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file itlookslikeimjustinyourwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The way that we live has no [G7]meaning
@@ -28,3 +31,6 @@
 [F]Cause there seems to be something you love more than [C]me
 [G7]And it looks like I'm just in your [C]way
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Didn't Have The Nerve It Took To Go}
 {meta: artist Billy Walker}
 {meta: composer Billy Walker and Mitchell Torok}
+{meta: x_source classic-country}
+{meta: x_source_file ididnthavethenerveittooktogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve always tried to tell you that someday I’d [G7]change
@@ -29,3 +32,6 @@ I realized that pride I can’t live [G7]on
 I [C]guess that in my heart you were right all [G7]along
 That I didn’t have the nerve it took to [C]go
 {end_of_verse}
+
+
+

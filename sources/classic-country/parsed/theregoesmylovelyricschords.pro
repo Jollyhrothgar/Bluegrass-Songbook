@@ -1,5 +1,8 @@
 {meta: title There Goes My Love}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file theregoesmylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]There goes the girl I used to know 
@@ -39,3 +42,8 @@ That's with my night and [C]day
 There goes the girl that I love [F]so
 There goes the [C]arms that used to hold me [G7]tight
 {end_of_verse}
+
+
+
+
+

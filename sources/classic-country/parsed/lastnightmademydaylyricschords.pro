@@ -1,6 +1,9 @@
 {meta: title Last Night Made My Day}
 {meta: artist Johnny Duncan}
 {meta: composer Bobby Goldsboro}
+{meta: x_source classic-country}
+{meta: x_source_file lastnightmademydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Baby last night made my day
@@ -71,3 +74,12 @@ And [D7]girl it’s all [G7]because of you
 [F]I’m the happiest man alive
 And [D7]babe you know I [G7]can’t wait till [C]tonight
 {end_of_verse}
+
+
+
+
+
+
+
+
+

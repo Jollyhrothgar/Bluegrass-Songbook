@@ -1,6 +1,9 @@
 {meta: title Simple Life}
 {meta: artist Ricky Skaggs}
 {meta: composer Mac McAnally}
+{meta: x_source classic-country}
+{meta: x_source_file simplelifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I live a simple [G7]life
@@ -51,3 +54,8 @@ And my [Am]favorite thing to hear is [G7]Daddy I’m so glad you [F]home
 And my [Am]favorite woman is [G7]5’3” with long [F]black hair and green [D7]eyes
 Still [F]I live a [G7]simple [C]life
 {end_of_verse}
+
+
+
+
+

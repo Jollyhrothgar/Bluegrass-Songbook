@@ -1,6 +1,9 @@
 {meta: title He's All I Got}
 {meta: artist Tanya Tucker}
 {meta: composer Gary Bonds and Jerry Williams}
+{meta: x_source classic-country}
+{meta: x_source_file hesalligotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I said friend don't take him he's [Dm]all I've got
@@ -43,3 +46,8 @@ He's [Dm]every[Em]thing to [F]me in [G7]life that [C]life can give
 He's my [Dm]water [G7]when I need to [C]drink
 He's the [Dm]first thought [Em]in my [F]mind each [G7]time I try to [C]think
 {end_of_verse}
+
+
+
+
+

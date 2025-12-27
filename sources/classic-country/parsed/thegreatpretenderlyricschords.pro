@@ -1,5 +1,8 @@
 {meta: title The Great Pretender}
 {meta: artist The Platters}
+{meta: x_source classic-country}
+{meta: x_source_file thegreatpretenderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Oh [G]yes I'm the [C]great [G]pretender
@@ -60,3 +63,11 @@ I'm [G]wearing my [D7]heart like a [B7]crown
 {start_of_verse: Verse 7}
 [C]Still [G]around
 {end_of_verse}
+
+
+
+
+
+
+
+

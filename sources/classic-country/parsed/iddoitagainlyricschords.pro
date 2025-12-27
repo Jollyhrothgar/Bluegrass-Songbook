@@ -1,5 +1,8 @@
 {meta: title I'd Do It Again}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file iddoitagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They ask me if I'm sorry [C]that I loved her so
@@ -28,3 +31,6 @@ The [A7]only time I really lived was [D7]when I held her tight
 I [G]couldn't help but love her I don't [C]think it was a sin
 And if I had it to do [G]over [D7]I'd do it [G]again
 {end_of_verse}
+
+
+

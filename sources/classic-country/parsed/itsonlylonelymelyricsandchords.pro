@@ -1,6 +1,9 @@
 {meta: title It's Only Lonely Me}
 {meta: artist Stonewall Jackson}
 {meta: composer Liz Anderson and Casey Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file itsonlylonelymelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If you hear some footsteps [C]walking close [G]behind you in the night
@@ -33,3 +36,7 @@ The [D7]ghost of love that's gone it's only lonely [G]me
 {start_of_verse: Verse 4}
 The [D7]ghost of love that's gone it's only lonely [G]me
 {end_of_verse}
+
+
+
+

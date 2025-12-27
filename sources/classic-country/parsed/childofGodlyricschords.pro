@@ -1,5 +1,8 @@
 {meta: title Child Of God}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file childofGodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]My grandpa [Am]was a [Em]fisher man just [G]like my [D7]dad and [Em]me
@@ -21,3 +24,5 @@ My brother [Am]was a [C]fisher of men on the [Em]sea of [B7]Gali[Em]lee [G]
 My [C]grandpa was a [G]holy man [C] he [G]read The Good Book [D7]through
 My [Em]daddy [D7]was a [C]gentle man my [Em]brother [B7]was a [Em]Jew
 {end_of_verse}
+
+

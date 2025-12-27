@@ -1,6 +1,9 @@
 {meta: title I Learned It All From You}
 {meta: artist Jean Shepard}
 {meta: composer Tommy Collins}
+{meta: x_source classic-country}
+{meta: x_source_file ilearneditallfromyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If I'm sometimes unkind and treat you cruel [F]dear
@@ -29,3 +32,6 @@ I [D7]know how to make you think you'll die [G7]inside
 [C]If I know just what to do to make you cry [F]dear
 It's [C]because I [G7]learned it all from [C]you
 {end_of_verse}
+
+
+

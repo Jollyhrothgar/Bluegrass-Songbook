@@ -1,6 +1,9 @@
 {meta: title God Guide Our Leader's Hand}
 {meta: artist Jimmy Martin}
 {meta: composer Tex Climer, Paul William, Jimmy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file Godguideourleadershandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Oh dear [C]God please watch and guide our greatest [G]leaders
@@ -50,3 +53,9 @@ Of all [D7]nations so that they may under[G]stand
 That old [C]war with these mighty destructive [G]weapons
 Could [D7]destroy us all upon this earth and [G]land
 {end_of_verse}
+
+
+
+
+
+

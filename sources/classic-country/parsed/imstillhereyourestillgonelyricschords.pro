@@ -1,6 +1,9 @@
 {meta: title I'm Still Here You're Still Gone}
 {meta: artist Randy Travis}
 {meta: composer Kevin Brandt and Ralph Murthy}
+{meta: x_source classic-country}
+{meta: x_source_file imstillhereyourestillgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun comes up [G7]you're still [C]gone
@@ -47,3 +50,9 @@ Cause I'm still [F]here [G7]you're still [C]gone
 {start_of_verse: Verse 6}
 Yes I'm still [F]here and [G7]you're still [C]gone
 {end_of_verse}
+
+
+
+
+
+

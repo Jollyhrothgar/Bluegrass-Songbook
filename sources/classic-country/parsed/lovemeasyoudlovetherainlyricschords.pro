@@ -1,6 +1,9 @@
 {meta: title Love Me As You'd Love The Rain}
 {meta: artist Doyle Lawson}
 {meta: composer Leroy Maxey Drumm and Pete Goble}
+{meta: x_source classic-country}
+{meta: x_source_file lovemeasyoudlovetherainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I have caused your [C]dreams to [G]die 
@@ -49,3 +52,9 @@ So love me as you’d [G]love the [C]rain
 So love me as you’d [D7]love the [G]rain
 So love me as you’d [D7]love the [G]rain
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Greener Pastures}
 {meta: artist Stonewall Jackson}
 {meta: composer Marijohn Wilkin}
+{meta: x_source classic-country}
+{meta: x_source_file greenerpastureslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You'll be [F]leaving me to look for greener [C]pastures
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [G7]And greener pasture's on the other [C]side
 {end_of_verse}
+
+
+
+
+

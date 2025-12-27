@@ -1,5 +1,8 @@
 {meta: title I Find You Cheating On Me}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file ifindyoucheatingonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I find you cheating on me  like [F]you have done [C]before
@@ -28,3 +31,6 @@ My [F]love is [C]unassisted [D7]because you cheated once [G7]again
 [C]I find you cheating on me  [F]but this is the [C]end
 We'll be lovers no more [G7]we'll just be [C]friends
 {end_of_verse}
+
+
+

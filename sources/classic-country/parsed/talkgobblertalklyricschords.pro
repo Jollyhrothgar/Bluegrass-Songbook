@@ -1,6 +1,9 @@
 {meta: title Talk Gobbler Talk}
 {meta: artist Johnny Horton}
 {meta: composer Johnny Horton &amp; Fred Horton}
+{meta: x_source classic-country}
+{meta: x_source_file talkgobblertalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When the moon comes over old Smokey
@@ -66,3 +69,15 @@ I run through the spot and lo and behold
 [G7]Talk Gobbler talk  talk Gobbler talk
 [C]That music echo's through my ears talk Gobbler talk
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

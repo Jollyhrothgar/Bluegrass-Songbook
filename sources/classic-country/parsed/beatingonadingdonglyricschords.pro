@@ -1,6 +1,9 @@
 {meta: title Beating On A Ding Dong}
 {meta: artist Jim Reeves}
 {meta: composer Bob Shelton and Idell Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file beatingonadingdonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Beatin' on the ding dong all day [G7]long
@@ -68,3 +71,12 @@ I got a gal maybe two or [F]three
 {start_of_verse: Verse 8}
 [G7]Beatin' on the ding dong don't bother [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+
+

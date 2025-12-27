@@ -1,5 +1,8 @@
 {meta: title Conscience Turn Your Back}
 {meta: artist Johnny Bush}
+{meta: x_source classic-country}
+{meta: x_source_file conscienceturnyourbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I let the darkness hide me while [C]I'm slipping out [G]again
@@ -26,3 +29,6 @@ I can't [C]bring myself to tell her [G]about me and you
 So [G]until I find a way to end this [C]double life of [G]mine
 Oh conscience [C]please turn your [D7]back just one more [G]time
 {end_of_verse}
+
+
+

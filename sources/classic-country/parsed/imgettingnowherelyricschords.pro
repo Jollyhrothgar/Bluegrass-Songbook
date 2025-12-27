@@ -1,6 +1,9 @@
 {meta: title I'm Getting Nowhere}
 {meta: artist Faron Young}
 {meta: composer Ray Pennington, Ron Pennington, Ronnie Pennington}
+{meta: x_source classic-country}
+{meta: x_source_file imgettingnowherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Today is no different  than [C]yesterday
@@ -29,3 +32,6 @@
 [G]For time is a silent  and slow moving [C]thing
 [G]I'm getting nowhere [D7]at getting over [G]you
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Keep My Love With You}
 {meta: artist Ricky Skaggs}
 {meta: composer Ralph Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file keepmylovewithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Keep my love with [C]you
@@ -29,3 +32,6 @@ Yesterday someone told me
 [C]Please don’t ever hurt me
 [G7]Or turn my life into [C]woe
 {end_of_verse}
+
+
+

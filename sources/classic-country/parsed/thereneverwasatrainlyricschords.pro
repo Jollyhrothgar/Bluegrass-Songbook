@@ -1,6 +1,9 @@
 {meta: title There Never Was A Train}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file thereneverwasatrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Given up the [G7]traveling it's [F]driving me insane 
@@ -37,3 +40,7 @@ But there [C]never [F]was a [G7]train that couldn't [F]try [C]
 [F]Somewhere I [E7]slipped off track I was [Am]thinking I could [D7]fly
 But there [C]never [F]was a [G7]train that wouldn't [F]try[C]
 {end_of_verse}
+
+
+
+

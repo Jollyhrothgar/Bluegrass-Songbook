@@ -1,6 +1,9 @@
 {meta: title Faded Love}
 {meta: artist Bob Wills}
 {meta: composer John Wills and Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file fadedlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]As I [G]look at the [G7]letters that [C]you wrote to me
@@ -29,3 +32,6 @@ I miss you darling more and [C]more every day
 With [G]every heartbeat I still [C]think of you
 And r[G]emember our [D7]faded [G]love 
 {end_of_verse}
+
+
+

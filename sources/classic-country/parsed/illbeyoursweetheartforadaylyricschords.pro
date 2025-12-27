@@ -1,5 +1,8 @@
 {meta: title I'll Be Your Sweetheart For A Day}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file illbeyoursweetheartforadaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now listen girl as you gather [F]round
@@ -28,3 +31,6 @@ Don't [G7]depend on me to [C]stay
 Like a breeze that blows I've got to [F]ramble
 I'll be your [C]sweetheart  [G7]for a [C]day
 {end_of_verse}
+
+
+

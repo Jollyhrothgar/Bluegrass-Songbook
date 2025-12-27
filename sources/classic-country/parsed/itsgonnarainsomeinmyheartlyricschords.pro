@@ -1,6 +1,9 @@
 {meta: title It's Gonna Rain Some In My Heart}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Dub Murray}
+{meta: x_source classic-country}
+{meta: x_source_file itsgonnarainsomeinmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's gonna rain some rain [G7]some in my [C]heart 
@@ -36,3 +39,7 @@ It's gonna rain some [G7]rain some in my [C]heart
 It's gonna rain some rain [G7]some in my [C]heart 
 It's gonna rain some [G7]rain some in my [C]heart
 {end_of_verse}
+
+
+
+

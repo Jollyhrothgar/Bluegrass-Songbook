@@ -1,6 +1,9 @@
 {meta: title Leave It There}
 {meta: artist Joey and Rory}
 {meta: composer Charles A. Tindley}
+{meta: x_source classic-country}
+{meta: x_source_file leaveittherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If the world from you withholds 
@@ -42,3 +45,7 @@ Take your [G]burden to the [D7]Lord leave it [G]there
 [C]Take your [G]burden to the [D7]Lord leave it [G]there
 (Leave it there) [D7]leave it [G]there
 {end_of_verse}
+
+
+
+

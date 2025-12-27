@@ -1,6 +1,9 @@
 {meta: title Warm Warm Lips}
 {meta: artist Slim Whitman}
 {meta: composer Erwin King}
+{meta: x_source classic-country}
+{meta: x_source_file warmwarmlipslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've got warm warm lips but a [F]c-old [D7]heart
@@ -24,3 +27,6 @@
 {start_of_verse: Verse 4}
 Repeat
 {end_of_verse}
+
+
+

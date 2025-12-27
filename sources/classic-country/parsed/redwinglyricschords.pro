@@ -1,5 +1,8 @@
 {meta: title Red Wing}
 {meta: artist The Steel Wheels}
+{meta: x_source classic-country}
+{meta: x_source_file redwinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In the summer sun in [C]nineteen eighty [G]one  
@@ -49,3 +52,9 @@ To my [D7]home now to my [G]family
 Oh my [C]red wing hold me [G]closely 
 Take me [D7]under the setting [G]sun 
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Green Rolling Hills}
 {meta: artist Emmylou Harris}
 {meta: composer Utah Phillips, Alice Gerrard, Hazel Dickens}
+{meta: x_source classic-country}
+{meta: x_source_file greenrollinghillslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The green rolling hills [G7]of West [C]Virginia
@@ -48,3 +51,9 @@
 [F]Yes someday I'll go home and I know I'll right the wrong
 [C]These troubled times will [G7]follow me no [C]more
 {end_of_verse}
+
+
+
+
+
+

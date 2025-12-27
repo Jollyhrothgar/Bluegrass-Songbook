@@ -1,6 +1,9 @@
 {meta: title Woman Let Me Sing You A Song}
 {meta: artist Vernon Oxford}
 {meta: composer Harland Howard}
+{meta: x_source classic-country}
+{meta: x_source_file womanletmesingyouasonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Woman let me [G7]sing you a [C]song
@@ -29,3 +32,6 @@ Woman let me [G7]sing you a [C]song
 {start_of_verse: Verse 4}
 Woman I’ve done [G7]sang you my [C]song
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'd Be Just As Lonely There}
 {meta: artist Jeannie Seely}
 {meta: composer Hank Cochran}
+{meta: x_source classic-country}
+{meta: x_source_file idbejustaslonelytherelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd [C]be just as lonely [G]there
@@ -22,3 +25,5 @@ Since you're gone it's the [C]same any[D7]where
 In a [C]crowd or alone it all [G]boils down to your gone
 And [D7]I'd be just as lonely [G]there
 {end_of_verse}
+
+

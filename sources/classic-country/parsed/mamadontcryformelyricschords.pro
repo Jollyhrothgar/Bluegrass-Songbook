@@ -1,6 +1,9 @@
 {meta: title Mama Don't Cry For Me}
 {meta: artist Charlie Pride}
 {meta: composer Johnny Wilson and Fred Foster}
+{meta: x_source classic-country}
+{meta: x_source_file mamadontcryformelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've seen the big fish jumping mama I've heard crickets sing
@@ -32,3 +35,6 @@ So mama when I'm gone don't cry for [G]me
 {start_of_verse: Verse 4}
 So [D7]mama when I'm gone don't cry for [G]me
 {end_of_verse}
+
+
+

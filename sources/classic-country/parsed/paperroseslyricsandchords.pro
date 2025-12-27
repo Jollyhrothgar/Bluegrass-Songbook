@@ -1,6 +1,9 @@
 {meta: title Paper Roses}
 {meta: artist Connie Smith}
 {meta: composer Janice Torre and Fred Spielman}
+{meta: x_source classic-country}
+{meta: x_source_file paperroseslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm](Paper [G7]roses [C]paper [Dm]ros[G7]es)
@@ -35,3 +38,7 @@ Paper [F]roses [G7]paper [C]roses
 But they're [F]only [G7]imita[C]tion
 [A7]Like your [Dm]imitation [G7]love for [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Southern Belle}
 {meta: artist Bobby Helms}
 {meta: composer Bobby Helms and Bob Hall}
+{meta: x_source classic-country}
+{meta: x_source_file southernbellelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Belle Southern [G7]Belle
@@ -41,3 +44,8 @@ She's a lovely southern [C]belle[F]  [G7]
 {start_of_verse: Verse 4}
 [G7]She's a lovely southern [C]belle
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Soft Lips And Hard Liquor}
 {meta: artist Charlie Walker}
 {meta: composer Lorene Allen and Walter Haynes}
+{meta: x_source classic-country}
+{meta: x_source_file softlipsandhardliquorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Soft lips and hard liquor make a fool out of a man
@@ -40,3 +43,8 @@ Than temping him with [C]soft lips and [D7]hard hard [G]liquor
 {start_of_verse: Verse 4}
 Than temping him with [C]soft lips and [D7]hard hard [G]liquor
 {end_of_verse}
+
+
+
+
+

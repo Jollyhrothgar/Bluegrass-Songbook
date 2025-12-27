@@ -1,6 +1,9 @@
 {meta: title Let Me Be Your Baby}
 {meta: artist Charly McClain}
 {meta: composer Bob Morrison and Johnny McRae}
+{meta: x_source classic-country}
+{meta: x_source_file letmebeyourbabylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Let me be your baby hold me close [C]tonight
@@ -26,3 +29,6 @@ Promise me you'll [C]never [A7]make your baby [D7]cry
 Let me be your [G]baby [C]tell me [D7]it'll be all [G]right
 Let me be your [C]baby [D7]tell me it'll be all [G]right
 {end_of_verse}
+
+
+

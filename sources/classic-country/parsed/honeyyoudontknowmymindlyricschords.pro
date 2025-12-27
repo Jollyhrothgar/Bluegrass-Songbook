@@ -1,5 +1,8 @@
 {meta: title Honey You Don't Know My Mind}
 {meta: artist Jimmy Martin}
+{meta: x_source classic-country}
+{meta: x_source_file honeyyoudontknowmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Honey you don't know my mind I'm lonesome all the [C]time
@@ -33,3 +36,7 @@ You’re gonna find you were wrong when your loving daddy’s [C]gone
 You’re gonna find you were wrong when your loving daddy’s [C]gone
 [D7]Baby you don't know my mind [G]today
 {end_of_verse}
+
+
+
+

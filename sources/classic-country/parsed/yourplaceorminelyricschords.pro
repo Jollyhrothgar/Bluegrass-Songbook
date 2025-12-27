@@ -1,6 +1,9 @@
 {meta: title Your Place Or Mine}
 {meta: artist Gary Stewart}
 {meta: composer Rory Burke, Carol Anderson, Mary Beth Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file yourplaceorminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The band just stopped playing they're [C7]sweeping the [F]floor
@@ -33,3 +36,7 @@ Where are we [C]going  [G7]your place or [C]mine
 {start_of_verse: Verse 4}
 [F]Where are we [C]going  [G7]your place or [C]mine
 {end_of_verse}
+
+
+
+

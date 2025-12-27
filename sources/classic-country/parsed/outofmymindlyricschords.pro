@@ -1,5 +1,8 @@
 {meta: title Out Of My Mind}
 {meta: artist Johnny Tillotson}
+{meta: x_source classic-country}
+{meta: x_source_file outofmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I just can't [G]understand how you could [C]hurt me so
@@ -28,3 +31,6 @@ I can't [D7]help lovin' you like I [G]do [G7]
 My heart [C]breaks up inside with each [G]tear that I cry
 And I'm [D7]out of my mind over [G]you
 {end_of_verse}
+
+
+

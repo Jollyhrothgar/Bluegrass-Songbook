@@ -1,6 +1,9 @@
 {meta: title Happy Blues}
 {meta: artist Wynn Stewart}
 {meta: composer Dale Noe}
+{meta: x_source classic-country}
+{meta: x_source_file happyblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I woke up this morning not a cloud in the [C]sky
@@ -27,3 +30,5 @@
 [D7]And you'll be back tomorrow
 [C]That's why I've got [D7]the happy [G]happy [G][C]blues
 {end_of_verse}
+
+

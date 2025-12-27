@@ -1,6 +1,9 @@
 {meta: title Tennessee Nights}
 {meta: artist Crystal Gayle}
 {meta: composer Jan Buckingham and Shawna Harrington}
+{meta: x_source classic-country}
+{meta: x_source_file tennesseenightslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sunlight is [D7]gone  a wind stirs the [G]willow
@@ -33,3 +36,7 @@ Cause here in my [D7]heart you'll always be [G]mine[C]  [G]
 {start_of_verse: Verse 5}
 So here in my [D7]heart you'll always be [G]mine[C]  [G]
 {end_of_verse}
+
+
+
+

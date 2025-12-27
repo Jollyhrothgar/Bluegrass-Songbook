@@ -1,5 +1,8 @@
 {meta: title Lone Star Christmas}
 {meta: artist Lee Greenwood}
+{meta: x_source classic-country}
+{meta: x_source_file lonestarChristmaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a blanket of white all [F]over [C]Chicago
@@ -39,3 +42,8 @@
 {start_of_verse: Verse 5}
 [F]Tonight I'm dreaming of a Lone Star [C]Christmas
 {end_of_verse}
+
+
+
+
+

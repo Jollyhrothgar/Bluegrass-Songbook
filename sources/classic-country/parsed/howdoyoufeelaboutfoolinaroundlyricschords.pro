@@ -1,6 +1,9 @@
 {meta: title How Do You Feel About Foolin' Around}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson, Stephen Bruton, Mike Utley}
+{meta: x_source classic-country}
+{meta: x_source_file howdoyoufeelaboutfoolinaroundlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]So many people got [A7]so many lines
@@ -36,3 +39,7 @@ So tell me how do you feel about [A7]foolin' around
 Cause there ain't nothin' realer than [A7]right here and now
 [C]If that's as [D7]far as it [G]goes
 {end_of_verse}
+
+
+
+

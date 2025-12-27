@@ -1,6 +1,9 @@
 {meta: title I'm Your Private Santa Claus}
 {meta: artist Eddy Arnold}
 {meta: composer Cy Coben}
+{meta: x_source classic-country}
+{meta: x_source_file imyourprivatesantaclauslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m [D7]your private Santa [G]Claus
@@ -37,3 +40,6 @@
 [C]Will be the sprig of [G]mistletoe
 [A7]For you and for your [D7]private Santa [G]Claus
 {end_of_verse}
+
+
+

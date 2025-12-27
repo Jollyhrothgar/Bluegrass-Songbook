@@ -1,6 +1,9 @@
 {meta: title Echoes}
 {meta: artist Jerry Lee Lewis}
 {meta: composer Cecil Harrelson and Linda Gail Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file echoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Memories and bitter tears all my dreams down through the [G7]years
@@ -28,3 +31,6 @@ And to a lonely heart that is paying the [G7]price
 [D7]The price for love's [C]unforgivable [G]sins
 Echoes of your love will they [D7]ever let me [G]be
 {end_of_verse}
+
+
+

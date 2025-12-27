@@ -1,6 +1,9 @@
 {meta: title High On Love}
 {meta: artist Patty Loveless}
 {meta: composer Jeff Hanna and Kostas Lazarides}
+{meta: x_source classic-country}
+{meta: x_source_file highonlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]High on love and I ain't comin' [F]down 
@@ -46,3 +49,8 @@ No no no [F]hig[G7]h on [C]love
 No I ain't comin' [F]down
 [G7]No I ain't comin' [C]down
 {end_of_verse}
+
+
+
+
+

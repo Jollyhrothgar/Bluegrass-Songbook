@@ -1,6 +1,9 @@
 {meta: title Messin' With My Mind}
 {meta: artist Randy Travis}
 {meta: composer Joe Allen and Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file messinwithmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I said one thing I'd [G7]never do was [C]care
@@ -41,3 +44,8 @@ I [C]swore one thing I'd never do was [F]be to staying [Fm]kind
 I swore one thing I'd never do was [F]be to staying [Fm]kind
 [C]Then you started [G7]messin' with my [C]mind
 {end_of_verse}
+
+
+
+
+

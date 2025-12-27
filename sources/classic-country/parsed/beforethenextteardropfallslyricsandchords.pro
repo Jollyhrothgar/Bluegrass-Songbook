@@ -1,6 +1,9 @@
 {meta: title Before The Next Teardrop Falls}
 {meta: artist Jack Greene}
 {meta: composer Ben Peters and Vivian Keith}
+{meta: x_source classic-country}
+{meta: x_source_file beforethenextteardropfallslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If he brings you happiness then [C]I wish you both the [G]best
@@ -26,3 +29,6 @@ If he [G]ever leaves you blue just [C]remember I [G]love you
 {start_of_verse: Verse 4}
 Yes [C]I'll be [G]there before the [D7]next teardrop [G]falls
 {end_of_verse}
+
+
+

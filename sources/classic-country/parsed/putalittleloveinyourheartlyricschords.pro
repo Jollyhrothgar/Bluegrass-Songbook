@@ -1,6 +1,9 @@
 {meta: title Put a Little Love in Your Heart}
 {meta: artist Dolly Parton}
 {meta: composer Jackie De Shannon}
+{meta: x_source classic-country}
+{meta: x_source_file putalittleloveinyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Think of your fellow man lend him a helping hand 
@@ -66,3 +69,15 @@ There's got to be a better way
 Don't you think it's time we start
 [F]Put a little love in your [C]heart
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I'm Gettin' Lonely}
 {meta: artist Bobby Bare}
 {meta: composer Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file imgettinlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My baby's [Am]gone and I'm [Em]all [C]alone
@@ -27,3 +30,5 @@
 [Em]She knows that she will always be my one and [C]only
 [G7]Please tell her for me I'm [C]gettin' lonely  [C][Em](lonely)
 {end_of_verse}
+
+

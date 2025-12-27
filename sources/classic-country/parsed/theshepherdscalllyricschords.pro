@@ -1,6 +1,9 @@
 {meta: title The Shepherd's Call}
 {meta: artist Crabb Family}
 {meta: composer Gerald Crabb}
+{meta: x_source classic-country}
+{meta: x_source_file theshepherdscalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wandered far from the fold where I was [C]safe
@@ -27,3 +30,6 @@ But I felt a [D7]hand and I heard the Shepherd's [G]call
 That night long ago how I still [C]recall
 When I lost my [D7]way I heard the Shepherd's [G]call
 {end_of_verse}
+
+
+

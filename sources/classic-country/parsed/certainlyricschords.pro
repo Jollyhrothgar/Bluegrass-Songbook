@@ -1,5 +1,8 @@
 {meta: title Certain}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file certainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was certain you'd always [F]love me
@@ -25,3 +28,5 @@ And can't quit [G7]hurtin'
 Life won't [C]ever be the [C7]way it was [F]before
 Seems that's[C] all I know for[F] certain[G7] any[C]more
 {end_of_verse}
+
+

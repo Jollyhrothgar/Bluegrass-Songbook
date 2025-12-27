@@ -1,6 +1,9 @@
 {meta: title I Turn To You}
 {meta: artist George Jones}
 {meta: composer Max Barnes and Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file iturntoyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Rivers turn to oceans  and flow on to the [F]sea
@@ -23,3 +26,5 @@
 [G7]When the world turns on me I turn to [C]you
 [G7]When the world turns on my I turn to [C]you
 {end_of_verse}
+
+

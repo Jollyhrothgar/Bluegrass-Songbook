@@ -1,6 +1,9 @@
 {meta: title Ramblin’ In My Shoes}
 {meta: artist Hank Williams Jr.}
 {meta: composer Bill Emerson and Vince Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file ramblininmyshoeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now daddy told me stories 
@@ -51,3 +54,8 @@ Now [F]every time we hear that whistle [C]blowin'
 We get a bad case of ramblin' in our shoes
 We get a bad bad case of [G7]ramblin' in our [C]shoes
 {end_of_verse}
+
+
+
+
+

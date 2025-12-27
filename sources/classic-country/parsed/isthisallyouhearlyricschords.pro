@@ -1,6 +1,9 @@
 {meta: title Is This All You Hear}
 {meta: artist Connie Smith}
 {meta: composer Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file isthisallyouhearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Is this all you hear when a [D7]heart breaks
@@ -33,3 +36,7 @@ Or is good[D7]bye all you hear when a [G]heart breaks[C]
 {start_of_verse: Verse 5}
 Is good[D7]bye all you hear when a [G]heart breaks
 {end_of_verse}
+
+
+
+

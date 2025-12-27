@@ -1,6 +1,9 @@
 {meta: title I'm Falling For You}
 {meta: artist Merle Haggard}
 {meta: composer Bonnie Owens, Buck Owens, Don Rich}
+{meta: x_source classic-country}
+{meta: x_source_file imfallingforyoulyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You bring me happiness and leave me [G7]loneliness
@@ -22,3 +25,5 @@
 [C]I love in misery you're so unfair [G7]to me
 [C]It's all a mystery why I'm falling for you
 {end_of_verse}
+
+

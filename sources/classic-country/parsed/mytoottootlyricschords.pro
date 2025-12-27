@@ -1,6 +1,9 @@
 {meta: title My Toot Toot}
 {meta: artist Fats Domino}
 {meta: composer Sidney Semien}
+{meta: x_source classic-country}
+{meta: x_source_file mytoottootlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't mess with my toot toot 
@@ -62,3 +65,11 @@ But don't mess with my [G]toot toot
 Now you can have the other [D7]women
 But don't mess with my [G]toot toot
 {end_of_verse}
+
+
+
+
+
+
+
+

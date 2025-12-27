@@ -1,6 +1,9 @@
 {meta: title Scarlet Fever}
 {meta: artist Kenny Rogers}
 {meta: composer Mike Dekle}
+{meta: x_source classic-country}
+{meta: x_source_file scarletfeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I stood outside the Lucky Star staring at the flashing sign
@@ -62,3 +65,10 @@ Yes I get scarlet [G7][F]fe-v-er
 If she knew how much I need [C]her 
 She'd [F]place her hand in my hand and [G7]dance away with [C]me
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title 80 Proof Bottle Of Tear Stopper}
 {meta: artist George Strait}
 {meta: composer Darrell Statler}
+{meta: x_source classic-country}
+{meta: x_source_file 80proofbottleoftearstopperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You ain't never [Am]fell as [C]far as [F]when you [G7]fall in [C]love
@@ -45,3 +48,7 @@ And [C]I won't think I'm close to dying
 [C]An 80 proof bottle of [Am]tear [C]stopper
 [F]Always [G7]sets me [C]free
 {end_of_verse}
+
+
+
+

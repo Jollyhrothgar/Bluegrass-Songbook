@@ -1,6 +1,9 @@
 {meta: title Class Of '49}
 {meta: artist Red Sovine}
 {meta: composer Red Sovine and Benny Whitehead}
+{meta: x_source classic-country}
+{meta: x_source_file classof49lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well it feels so good to be comin' [D7]home [F]after all these [C]years
@@ -29,3 +32,6 @@ I wanna thank you again for the ride young man
 [C]The [Am]guy most likely [F]to succeed thinks you're [G7]very [C]kind
 [F]The guy most likely [Am][C]to succeed [F]class of [C][G7]'4-9
 {end_of_verse}
+
+
+

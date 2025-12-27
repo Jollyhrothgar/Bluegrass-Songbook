@@ -1,6 +1,9 @@
 {meta: title Problem Solving Doctor}
 {meta: artist Johnny Paycheck}
 {meta: composer Johnny Paycheck, Aubrey Mayhew, Sam Perrin}
+{meta: x_source classic-country}
+{meta: x_source_file problemsolvingdoctorlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd like to invite you to my [C]psychiatric office
@@ -32,3 +35,6 @@ I've been voted the most popular [D7]problem solving doctor in [G]town
 So if [C]you're in their shoes and [D7]you've got bad news 
 My office hours are nine to [G]two
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Town That Never Sleeps}
 {meta: artist Charlie Walker}
 {meta: composer Autry Inman}
+{meta: x_source classic-country}
+{meta: x_source_file townthatneversleepslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My baby flirts and walks [C]the [G]streets
@@ -33,3 +36,7 @@
 {start_of_verse: Verse 4}
 [C]In the [G]town in [C]the town [G]that never [G][D7]sleeps
 {end_of_verse}
+
+
+
+

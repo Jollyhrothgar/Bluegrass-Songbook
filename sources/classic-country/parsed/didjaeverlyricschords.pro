@@ -1,6 +1,9 @@
 {meta: title Didja' Ever}
 {meta: artist Elvis Presley}
 {meta: composer Sherman Edwards and Sid Wayne}
+{meta: x_source classic-country}
+{meta: x_source_file didjaeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Didja' ever (didja' ever) didja' ever get
@@ -69,3 +72,16 @@ Didja' ever get one of them girls
 {start_of_verse: Verse 14}
 Girls girls girls girls girls girls girls girls
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

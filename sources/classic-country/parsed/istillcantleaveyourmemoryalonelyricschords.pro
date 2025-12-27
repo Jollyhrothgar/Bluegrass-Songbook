@@ -1,6 +1,9 @@
 {meta: title I Still Can't Leave Your Memory Alone}
 {meta: artist Charley Pride}
 {meta: composer Kent M. Robbins and Geoff Morgan}
+{meta: x_source classic-country}
+{meta: x_source_file istillcantleaveyourmemoryalonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night it came [F]around again and went walking through my [C]mind
@@ -33,3 +36,7 @@ And I [C]still can't [F]leave your [C]mem-o[G7]ry a[C]lone
 {start_of_verse: Verse 4}
 [F]No I [C]still can't [F]leave your [C]mem-o[G7]ry a[C]lone
 {end_of_verse}
+
+
+
+

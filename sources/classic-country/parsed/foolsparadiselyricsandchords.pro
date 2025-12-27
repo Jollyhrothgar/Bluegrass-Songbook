@@ -1,6 +1,9 @@
 {meta: title Fool's Paradise}
 {meta: artist Jim Reeves}
 {meta: composer Johnny Bond}
+{meta: x_source classic-country}
+{meta: x_source_file foolsparadiselyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]As I write this letter to you [G7]darlin'
@@ -48,3 +51,9 @@ So I slapped his face and I told him
 [C7]And if ever you visit old Dodge [F]City
 [G7]Remember the Fool's [C]Paradise
 {end_of_verse}
+
+
+
+
+
+

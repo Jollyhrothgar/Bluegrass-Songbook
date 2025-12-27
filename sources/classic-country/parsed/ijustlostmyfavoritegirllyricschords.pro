@@ -1,6 +1,9 @@
 {meta: title I Just Lost My Favorite Girl}
 {meta: artist Darrell McCall}
 {meta: composer Don Adams}
+{meta: x_source classic-country}
+{meta: x_source_file ijustlostmyfavoritegirllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a barroom I'm standin' with a [C]drink in my [G]hand
@@ -33,3 +36,7 @@ I just lost my [D7]favorite [G]girl
 {start_of_verse: Verse 5}
 I just lost my [D7]favorite [C]gi[D7]rl [G]
 {end_of_verse}
+
+
+
+

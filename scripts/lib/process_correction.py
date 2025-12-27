@@ -5,11 +5,17 @@ Process a song correction from a GitHub issue.
 Reads the issue body from ISSUE_BODY environment variable,
 extracts the ChordPro content and song ID, overwrites the existing file,
 and adds it to the protected list.
+
+Adds correction provenance metadata:
+  {meta: x_corrected_by github:username}
+  {meta: x_corrected 2025-12-26}
+  {meta: x_correction_issue 24}
 """
 
 import os
 import re
 import sys
+from datetime import date
 from pathlib import Path
 
 
@@ -37,6 +43,46 @@ def extract_song_id(issue_body: str) -> str | None:
     return None
 
 
+def add_correction_metadata(content: str, author: str, issue_number: str) -> str:
+    """Add correction provenance metadata to ChordPro content.
+
+    Inserts metadata after existing meta lines but before first section.
+    """
+    lines = content.split('\n')
+
+    # Find insertion point (after existing meta lines)
+    insert_idx = 0
+    for i, line in enumerate(lines):
+        if line.startswith('{meta:') or line.startswith('{title:') or line.startswith('{artist:'):
+            insert_idx = i + 1
+
+    # Build metadata lines
+    today = date.today().isoformat()
+    metadata = [
+        f'{{meta: x_corrected_by github:{author}}}',
+        f'{{meta: x_corrected {today}}}',
+        f'{{meta: x_correction_issue {issue_number}}}',
+    ]
+
+    # Remove any existing correction metadata (in case of re-correction)
+    lines = [l for l in lines if not (
+        l.startswith('{meta: x_corrected') or
+        l.startswith('{meta: x_correction_issue')
+    )]
+
+    # Recalculate insert index after filtering
+    insert_idx = 0
+    for i, line in enumerate(lines):
+        if line.startswith('{meta:') or line.startswith('{title:') or line.startswith('{artist:'):
+            insert_idx = i + 1
+
+    # Insert new metadata
+    for j, meta_line in enumerate(metadata):
+        lines.insert(insert_idx + j, meta_line)
+
+    return '\n'.join(lines)
+
+
 def add_to_protected_list(song_id: str, protected_file: Path) -> bool:
     """Add song ID to protected.txt if not already present."""
     # Read existing entries
@@ -61,9 +107,10 @@ def add_to_protected_list(song_id: str, protected_file: Path) -> bool:
 
 
 def main():
-    # Get issue body from environment
+    # Get issue info from environment
     issue_body = os.environ.get('ISSUE_BODY', '')
     issue_number = os.environ.get('ISSUE_NUMBER', 'unknown')
+    issue_author = os.environ.get('ISSUE_AUTHOR', 'unknown')
 
     if not issue_body:
         print("Error: ISSUE_BODY environment variable is empty")
@@ -80,6 +127,9 @@ def main():
     if not chordpro:
         print("Error: Could not find ChordPro content in issue body")
         sys.exit(1)
+
+    # Add correction provenance metadata
+    chordpro = add_correction_metadata(chordpro, issue_author, issue_number)
 
     # Determine paths
     script_dir = Path(__file__).parent

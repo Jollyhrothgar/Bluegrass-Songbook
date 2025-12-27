@@ -1,6 +1,9 @@
 {meta: title Lefty's Gone}
 {meta: artist George Strait}
 {meta: composer Sanger D. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file leftysgonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]A jukebox introduced us 
@@ -38,3 +41,7 @@ In [D7]every song he sang I played the [G]part
 [Em]It don't seem like he was around that [D7]long
 [C]It's not [D7]right but Lefty's [G]gone
 {end_of_verse}
+
+
+
+

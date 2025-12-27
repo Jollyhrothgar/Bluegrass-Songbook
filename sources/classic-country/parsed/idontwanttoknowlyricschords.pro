@@ -1,6 +1,9 @@
 {meta: title I Don't Want to Know}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Don Clay}
+{meta: x_source classic-country}
+{meta: x_source_file idontwanttoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]They say what you don't know will never hurt [C]you
@@ -29,3 +32,6 @@ And in my heart I think she loves me [D7]so
 [G]I'd be broken hearted if I heard from [C]you
 [D7]All the things that I don't want to [G]know
 {end_of_verse}
+
+
+

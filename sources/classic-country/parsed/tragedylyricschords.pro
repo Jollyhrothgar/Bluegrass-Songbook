@@ -1,6 +1,9 @@
 {meta: title Tragedy}
 {meta: artist Johnny Tillotson}
 {meta: composer Fred Burch and Gerald Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file tragedylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wind and storm [F]blocks the sun
@@ -22,3 +25,5 @@ Of [F]dreams have all [Fm]gone of [C]love oh [Am]oh
 You've gone from [G7]me oh [Dm]oh [F]trage[C]dy[Em]   [G7]
 [F]Trage[C]dy
 {end_of_verse}
+
+

@@ -1,5 +1,8 @@
 {meta: title Honky Tonk Christmas}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkChristmaslyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Pretty [D7]Paper is playing on the [C]jukebox 
@@ -32,3 +35,7 @@ For these [G]silent nights at home are killing [D7]me
 It's going to be a [G]ho-[F]o-onky tonk [C]Christmas
 But [G]I'll be over [D7]you by New Year's [G]Eve
 {end_of_verse}
+
+
+
+

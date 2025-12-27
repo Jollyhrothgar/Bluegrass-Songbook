@@ -1,6 +1,9 @@
 {meta: title Praying}
 {meta: artist Vern Gosdin}
 {meta: composer Hazel Houser}
+{meta: x_source classic-country}
+{meta: x_source_file prayinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They were [G7]pray---ing
@@ -36,3 +39,7 @@ Out[F]side in the darkness [C]I could not see
 [F]But I could picture [C]them down on their[G7] knees
 Pray---ing praying for someone like [C]me
 {end_of_verse}
+
+
+
+

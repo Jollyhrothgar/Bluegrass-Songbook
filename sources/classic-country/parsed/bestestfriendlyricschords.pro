@@ -1,5 +1,8 @@
 {meta: title Bestest Friend}
 {meta: artist Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file bestestfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Who wipes me off when I spill gravy on my shirt
@@ -32,3 +35,7 @@ You [G]Babe  [D7]you're my bestest [G]friend
 {start_of_verse: Verse 5}
 I'm talking about you Babe  you're [D7]my bestest [G]friend 
 {end_of_verse}
+
+
+
+

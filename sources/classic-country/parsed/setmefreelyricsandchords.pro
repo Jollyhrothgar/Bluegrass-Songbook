@@ -1,6 +1,9 @@
 {meta: title Set Me Free}
 {meta: artist Don Gibson}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file setmefreelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well if you think [F]you've had enough 
@@ -38,3 +41,7 @@ Release the chains that [F]bind me to [D7]th--[G7]ee
 And set me [C]free
 Spoken:
 {end_of_verse}
+
+
+
+

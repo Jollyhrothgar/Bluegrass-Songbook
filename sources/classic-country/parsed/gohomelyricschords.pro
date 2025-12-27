@@ -1,6 +1,9 @@
 {meta: title Go Home}
 {meta: artist Earl Scruggs and Lester Flatt}
 {meta: composer D. Wheeler}
+{meta: x_source classic-country}
+{meta: x_source_file gohomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]While drinking alone in a [F]tavern one [C]day
@@ -57,3 +60,10 @@ And [C]kneel by your bedside and [G7]pray
 Go [C]home (go home) go [F]home (go home)
 God will [C]answer your [G7]prayer to[C]day
 {end_of_verse}
+
+
+
+
+
+
+

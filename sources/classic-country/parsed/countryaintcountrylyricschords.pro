@@ -1,6 +1,9 @@
 {meta: title Country Ain't Country}
 {meta: artist Travis Tritt}
 {meta: composer Casey Beathard and Carson Chamberlain}
+{meta: x_source classic-country}
+{meta: x_source_file countryaintcountrylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He was raised on a tractor in [F]overalls and [C]boots
@@ -48,3 +51,8 @@ There's no turning back and you [F]just can't [C]ignore
 That [F]country ain't [G7]country no [Am]more[G7]
 No [F]country ain't [G7]country no [C]more
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Forever's A Long Long Time}
 {meta: artist Jimmie Davis}
 {meta: composer Hank Williams and Jimmie Davis}
+{meta: x_source classic-country}
+{meta: x_source_file foreversalonglongtimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You swear your love will last for[F]ever 
@@ -29,3 +32,6 @@ Are you sure that time won't change your [G7]mind
 Are you [C]certain your [F]love won't grow [C]cold dear
 For[G7]ever's a long long [C]time
 {end_of_verse}
+
+
+

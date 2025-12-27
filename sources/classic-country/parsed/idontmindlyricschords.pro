@@ -1,6 +1,9 @@
 {meta: title I Don't Mind}
 {meta: artist Waylon Jennings}
 {meta: composer Harlan Howard and Richard Johnson}
+{meta: x_source classic-country}
+{meta: x_source_file idontmindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't mind I don't [F]mind
@@ -42,3 +45,9 @@
 [C]I don't mind I don't [F]mind
 [G7]I did for a time but I don't [C]mind
 {end_of_verse}
+
+
+
+
+
+

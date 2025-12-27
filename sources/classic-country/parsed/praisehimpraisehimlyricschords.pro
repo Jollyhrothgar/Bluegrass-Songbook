@@ -1,6 +1,9 @@
 {meta: title Praise Him Praise Him}
 {meta: artist Jimmy Dean}
 {meta: composer Fanny Crosby and Chester Allen}
+{meta: x_source classic-country}
+{meta: x_source_file praisehimpraisehimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Praise Him praise Him [F]praise my blessed [C]Redeemer
@@ -31,3 +34,6 @@ Power and glory [G7]unto the Lord belong
 [C]Praise Him praise Him [F]praise my blessed [C]Redeemer
 Praise Him [F]praise Him [G7]ever in joyful [C]song 
 {end_of_verse}
+
+
+

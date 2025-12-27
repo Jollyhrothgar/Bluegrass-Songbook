@@ -1,5 +1,8 @@
 {meta: title Best Of Intentions}
 {meta: artist Travis Tritt}
+{meta: x_source classic-country}
+{meta: x_source_file bestofintentionslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]I had big [C]plans for our [D7]future 
@@ -68,3 +71,12 @@ Girl [G]I've had the best of in[C]tentions
 Yes I've [G]had the best of in[C]tentions [D7]loving [Em]you[C]  [D7]
 Oh [Em]oh [C]  [G]
 {end_of_verse}
+
+
+
+
+
+
+
+
+

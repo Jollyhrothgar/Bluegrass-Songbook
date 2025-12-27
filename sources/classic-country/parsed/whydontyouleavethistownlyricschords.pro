@@ -1,6 +1,9 @@
 {meta: title Why Don't You Leave This Town}
 {meta: artist Hawkshaw Hawkins}
 {meta: composer Lee Roberts}
+{meta: x_source classic-country}
+{meta: x_source_file whydontyouleavethistownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why don’t you leave this [A7]town
@@ -36,3 +39,8 @@ Every time I look at you
 {start_of_verse: Verse 6}
 Repeat
 {end_of_verse}
+
+
+
+
+

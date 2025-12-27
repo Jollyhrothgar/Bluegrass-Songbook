@@ -1,6 +1,9 @@
 {meta: title Galvanized Washing Tub}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Cottonseed Clark and Chet Turner}
+{meta: x_source classic-country}
+{meta: x_source_file galvanizedwashingtublyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Did you ever take your Saturday bath 
@@ -85,3 +88,14 @@ I'd rather eat a bug
 Than to take my Saturday bath again 
 In a [D7]galvanized washing [G]tub
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

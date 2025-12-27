@@ -1,6 +1,9 @@
 {meta: title 32 Acres}
 {meta: artist The Bluegrass Cardinals}
 {meta: composer Randall Hylton}
+{meta: x_source classic-country}
+{meta: x_source_file 32acreslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I sawed the timber for the cabin floor
@@ -26,3 +29,6 @@ Cause it's on the [G7]right way for a four lane [C]road
 {start_of_verse: Verse 4}
 Thirty two [G7]acres of bottom [C]land 
 {end_of_verse}
+
+
+

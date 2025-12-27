@@ -1,6 +1,9 @@
 {meta: title Right On The Money}
 {meta: artist Alan Jackson}
 {meta: composer Charlie Black and Phil Vassar}
+{meta: x_source classic-country}
+{meta: x_source_file rightonthemoneylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let's begin with the [D7]day I [G7]met her
@@ -50,3 +53,9 @@ When she says I [Dm]wouldn't last ten [G7]minutes without her
 [F]She's every[C]thing I need [D]bulls-eye [D7]perfect
 She's [G7]right on the [C]money 
 {end_of_verse}
+
+
+
+
+
+

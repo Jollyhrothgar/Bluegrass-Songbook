@@ -1,6 +1,9 @@
 {meta: title Bedtime Comes Earlier At Our House}
 {meta: artist Charly McClain}
 {meta: composer Danny Hogan and Butch Carter}
+{meta: x_source classic-country}
+{meta: x_source_file bedtimecomesearlieratourhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Every time every time you lay your body next to [G7]mine
@@ -40,3 +43,8 @@ That's why [C]bedtime comes [G7]earlier at [C]our house
 {start_of_verse: Verse 4}
 Then we touch then we [F]feel then it's [C]love all [G7]over a[C]gain
 {end_of_verse}
+
+
+
+
+

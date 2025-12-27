@@ -1,5 +1,8 @@
 {meta: title Hey Porter}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file heyporterlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hey porter  hey porter would you tell me the time
@@ -35,3 +38,7 @@ Hey porter hey porter please open up the door
 [C]Tell that engineer I said thanks a lot and I didn't mind the [F]fare
 [C]I'm gonna sat my feet on southern [G7]soil and breathe that southern [C]air
 {end_of_verse}
+
+
+
+

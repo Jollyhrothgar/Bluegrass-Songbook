@@ -1,6 +1,9 @@
 {meta: title Our Love}
 {meta: artist Ricky Van Shelton}
 {meta: composer Mike Geiger, Woody Mullis, Deanna Cox}
+{meta: x_source classic-country}
+{meta: x_source_file ourlovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I never did think that anything happens for a [G7]reason
@@ -40,3 +43,8 @@ It's [G7]destiny it's meant to be it's you and me and our [C]love
 {start_of_verse: Verse 4}
 Oh it's [G7]destiny it's meant to be it's you and me and our [C]love
 {end_of_verse}
+
+
+
+
+

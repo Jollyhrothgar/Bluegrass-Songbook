@@ -1,6 +1,9 @@
 {meta: title Too Much Of Me Loving You}
 {meta: artist Dottie West}
 {meta: composer Jan Crutchfield and Johnny Slate}
+{meta: x_source classic-country}
+{meta: x_source_file toomuchofmelovingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Last night [Em]I almost [C][G7]told someone [A7][F]a [Dm]lie
@@ -28,3 +31,6 @@
 [F]I'd be [Am]satisfied just [F][C]knowing that we're [G7][D7]through
 [C]But there's [G7]much too [C]much of me still [A#7]loving [C][F]you
 {end_of_verse}
+
+
+

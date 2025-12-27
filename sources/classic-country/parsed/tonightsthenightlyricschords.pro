@@ -1,5 +1,8 @@
 {meta: title Tonight's The Night}
 {meta: artist Bobby Helms}
+{meta: x_source classic-country}
+{meta: x_source_file tonightsthenightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]To-[C]night's the night I cry 
@@ -32,3 +35,6 @@ It's [G7]better that I go
 [C]Tonight's the night I cry 
 Be[G7]cause you're saying good[C]bye
 {end_of_verse}
+
+
+

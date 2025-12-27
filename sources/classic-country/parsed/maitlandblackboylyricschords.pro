@@ -1,5 +1,8 @@
 {meta: title Maitland Black Boy}
 {meta: artist Bryan Watkins}
+{meta: x_source classic-country}
+{meta: x_source_file maitlandblackboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In Maitland’s busy High Street all dressed in red and [G7]blue
@@ -49,3 +52,9 @@
 [C]But treat him as you would a child and [C7]not as something [F]caste
 [C]And let him stand in memory [G7]or your town’s historic [C]past
 {end_of_verse}
+
+
+
+
+
+

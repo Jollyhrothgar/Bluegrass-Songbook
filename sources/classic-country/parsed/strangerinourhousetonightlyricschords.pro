@@ -1,6 +1,9 @@
 {meta: title Stranger in Our House Tonight}
 {meta: artist Gene Watson}
 {meta: composer Dave Kirby}
+{meta: x_source classic-country}
+{meta: x_source_file strangerinourhousetonightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I laid down with [C]someone I [G]love
@@ -29,3 +32,6 @@ It's [G]hard to believe I don't [D7]know you
 [G]I hate to [B7]turn out the [C]light
 [G]With a stranger in [D7]our house [G]tonight
 {end_of_verse}
+
+
+

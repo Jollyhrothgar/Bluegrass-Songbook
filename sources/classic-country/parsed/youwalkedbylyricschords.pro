@@ -1,5 +1,8 @@
 {meta: title You Walked By}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file youwalkedbylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You walked by just like you don't know me you walked [E7]by  [Am]
@@ -31,3 +34,7 @@ You [C]locked me out and [G7]threw away the [C]key
 {start_of_verse: Verse 5}
 You walked [D7]by and [G7]I don't know [C]why
 {end_of_verse}
+
+
+
+

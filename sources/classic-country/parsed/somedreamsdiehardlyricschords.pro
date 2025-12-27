@@ -1,6 +1,9 @@
 {meta: title Some Dreams Die Hard}
 {meta: artist Johnny Lee}
 {meta: composer Jenna Schell}
+{meta: x_source classic-country}
+{meta: x_source_file somedreamsdiehardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes I think I'm [Dm]over you
@@ -45,3 +48,7 @@ It's [F]hard to find a [C]new dream
 [G7]With tears in your [C]eyes
 Repeat last verse
 {end_of_verse}
+
+
+
+

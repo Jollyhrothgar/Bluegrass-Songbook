@@ -1,6 +1,9 @@
 {meta: title Lazarus And The Rich Man}
 {meta: artist Larry Sparks}
 {meta: composer Connie Leigh}
+{meta: x_source classic-country}
+{meta: x_source_file lazarusandtherichmanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well a rich man one day heard a [F]poor man a [C]begging
@@ -36,3 +39,7 @@ When [F]your life is [C]over tell [D7]me where can you [G7]go
 When your name is [C]called will you [F]pass through that [C]gate
 Or [F]will you be like the [C]rich man [G7]when it all fades [C]away
 {end_of_verse}
+
+
+
+

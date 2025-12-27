@@ -1,5 +1,8 @@
 {meta: title You Can Bet Your Bottom Dollar}
 {meta: artist Jack Scott}
+{meta: x_source classic-country}
+{meta: x_source_file youcanbetyourbottomdollarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]You can [C]bet your bottom dollar
@@ -23,3 +26,4 @@ So I [C]give my arms to [D7]hold you
 I [G7]guess I'll always be [C]blue
 Repeat last verse
 {end_of_verse}
+

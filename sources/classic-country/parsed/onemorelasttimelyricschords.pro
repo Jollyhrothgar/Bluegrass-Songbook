@@ -1,6 +1,9 @@
 {meta: title One More Last Time}
 {meta: artist Billy Parker}
 {meta: composer James H. Forst}
+{meta: x_source classic-country}
+{meta: x_source_file onemorelasttimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 One More Last Time
@@ -47,3 +50,9 @@ And [G7]pretend that the end was [C]today
 [G7]Just love me [C]one [G7]more [A#7]last [F]time
 [G7]Once more we’ll say it’s the [C]end
 {end_of_verse}
+
+
+
+
+
+

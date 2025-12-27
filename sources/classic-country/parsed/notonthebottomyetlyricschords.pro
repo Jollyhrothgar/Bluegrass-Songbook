@@ -1,6 +1,9 @@
 {meta: title Not On The Bottom Yet}
 {meta: artist Boxcar Willie}
 {meta: composer Bobby Dwight Caraway and Llone Martin}
+{meta: x_source classic-country}
+{meta: x_source_file notonthebottomyetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There you stand with your [F]pretty made up [C]face
@@ -47,3 +50,9 @@ I'm [G7]down but I'm not on the bottom [C]yet
 {start_of_verse: Verse 6}
 I'm [G7]down but I'm not on the bottom [C]yet
 {end_of_verse}
+
+
+
+
+
+

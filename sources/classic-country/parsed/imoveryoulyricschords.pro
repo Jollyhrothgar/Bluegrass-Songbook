@@ -1,6 +1,9 @@
 {meta: title I'm Over You}
 {meta: artist George Jones}
 {meta: composer Bobby Braddock}
+{meta: x_source classic-country}
+{meta: x_source_file imoveryoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My arms are not [G7]reaching to hold [C]you
@@ -43,3 +46,8 @@
 [C]After long years of trying I'm finally [F]flying
 [C]At last now [G7]I'm over [C]you
 {end_of_verse}
+
+
+
+
+

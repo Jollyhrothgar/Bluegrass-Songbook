@@ -1,6 +1,9 @@
 {meta: title Invisible Hands Me}
 {meta: artist Hank Snow}
 {meta: composer Bill Harrington, Fred Patrick, Frank Stanton}
+{meta: x_source classic-country}
+{meta: x_source_file invisiblehandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Invisible hands [D7](invisible hands) [G]are waiting to guide [D7]you
@@ -30,3 +33,6 @@ Invisible hands (are always beside [G]you
 )
 So pray and believe and help you [D7]receive from invisible [G]hands
 {end_of_verse}
+
+
+

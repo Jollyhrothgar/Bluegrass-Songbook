@@ -1,6 +1,9 @@
 {meta: title Feeling The Weight Of My Chains}
 {meta: artist Cal Smith}
 {meta: composer Jimmy Payne}
+{meta: x_source classic-country}
+{meta: x_source_file feelingtheweightofmychainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I nearly made it all the way to work this [C]morning
@@ -63,3 +66,14 @@ I'm just [D7]feeling the weight of my [G]chains
 Lord knows I'll keep on trying
 I'm just [D7]feeling the weight of my [G]chains
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

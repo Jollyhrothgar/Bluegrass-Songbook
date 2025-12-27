@@ -1,5 +1,8 @@
 {meta: title Baby Don’t Get Hooked On Me}
 {meta: artist Mac Davis}
+{meta: x_source classic-country}
+{meta: x_source_file babydontgethookedonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl you're getting that look in your [F]eyes
@@ -42,3 +45,8 @@ I can't take no clinging [G7]vine
 Cause I'll just use you then I'll set you [Dm]free
 [G7]Baby baby don't get hooked on [F]me
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Helen}
 {meta: artist J.D. Crowe}
 {meta: composer Rebe Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file helenlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Helen the night that I [C]met you
@@ -29,3 +32,6 @@ That [D7]you would always be mine
 [G]Helen my darling please [C]tell me
 A [D7]place in your heart will always [G]pine
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Why Oh Why}
 {meta: artist Charlie Rich}
+{meta: x_source classic-country}
+{meta: x_source_file whyohwhylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why oh [Em]why  [Am]must I [Dm]sit and [C]cry [Dm]
@@ -28,3 +31,6 @@ All [C]alone yes all [A7]alone
 [D7]I guess it should become [G7]
 [G7]I know I'll never have you for my [C]own
 {end_of_verse}
+
+
+

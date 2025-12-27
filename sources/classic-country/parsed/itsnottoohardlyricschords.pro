@@ -1,5 +1,8 @@
 {meta: title It's Not Too Hard}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file itsnottoohardlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sometimes when she thinks that I'm not [F]looking
@@ -36,3 +39,7 @@ Oh it's [C]not too hard to [G7]see through her [C]disguise [F]
 {start_of_verse: Verse 5}
 Oh it's [C]not too hard to [G7]see through her [F]disgui[C]se 
 {end_of_verse}
+
+
+
+

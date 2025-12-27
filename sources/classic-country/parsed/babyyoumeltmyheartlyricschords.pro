@@ -1,6 +1,9 @@
 {meta: title Baby You Melt My Heart}
 {meta: artist Sonny James}
 {meta: composer Richard Hollingsworth and Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file babyyoumeltmyheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You've got a pair of lovely eyes
@@ -76,3 +79,18 @@ For you must know that since you came
 That turn and look up kinda shy
 [G7]Ah baby you melt my heart
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

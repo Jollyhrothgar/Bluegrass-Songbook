@@ -1,6 +1,9 @@
 {meta: title Don't Wait Till Tomorrow}
 {meta: artist Darrell McCall}
 {meta: composer Lister}
+{meta: x_source classic-country}
+{meta: x_source_file dontwaittilltomorrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't wait till [D7]tomorrow be sure let her [G]know
@@ -30,3 +33,7 @@
 {start_of_verse: Verse 4}
 [D7]Don't wait till tomorrow be sure let her [G]know
 {end_of_verse}
+
+
+
+

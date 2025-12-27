@@ -1,6 +1,9 @@
 {meta: title Our Honeymoon}
 {meta: artist Carl Smith}
 {meta: composer Boudleaux Bryant, Carl Smith, Bodet Torres}
+{meta: x_source classic-country}
+{meta: x_source_file ourhoneymoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Pretty soon we're gonna be all alone on [F]our honey[C]moon
@@ -30,3 +33,5 @@ Then I'll hug and kiss you some [G7]more
 I can [C]hardly wait for that happy day it [F]can't be too [C]soon
 Till we cuddle and we snuggle on [G7]our honey[C]moon
 {end_of_verse}
+
+

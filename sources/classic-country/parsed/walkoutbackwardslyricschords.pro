@@ -1,5 +1,8 @@
 {meta: title Walk Out Backwards}
 {meta: artist Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file walkoutbackwardslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'd rather live a life of lies and [C]fantasy
@@ -34,3 +37,6 @@ The truth won't hurt so much if I can just [C]pretend
 So walk out [D7]backwards
 And I'll think you're walking [G]in
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Reasons I Cheat}
 {meta: artist Randy Travis}
+{meta: x_source classic-country}
+{meta: x_source_file reasonsicheatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]A working day [G7]too long when [Am]everything goes [C]wrong 
@@ -47,3 +50,9 @@ Just [C]some of the [G7]reasons I [C]cheat
 [F]Yes I'm getting [F#m]older my [C]life's growing [F]colder 
 Just [C]some of the [G7]reasons I [F]chea[C]t
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Miami My Amy}
 {meta: artist Keith Whitley}
 {meta: composer Hank Cochran, Dean Dillon, Royce Porter}
+{meta: x_source classic-country}
+{meta: x_source_file miamimyamylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well everybody talks about the California quakes
@@ -35,3 +38,6 @@ Mi[F]ami my [Em]Amy [Am]
 Mi[Dm]ami my [C]Amy [F]loves me [G7]after [C]all
 Mi[Dm]ami my [C]Amy [F]loves me [G7]after [C]all
 {end_of_verse}
+
+
+

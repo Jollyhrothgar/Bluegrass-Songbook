@@ -1,6 +1,9 @@
 {meta: title The Way It Was}
 {meta: artist Ferlin Husky}
 {meta: composer Leona Williams}
+{meta: x_source classic-country}
+{meta: x_source_file thewayitwaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You should know by now I love you [C]baby
@@ -29,3 +32,6 @@ And all I have is all I've got to [G]give
 I wanna feel your arms around me [C]baby
 For the [D7]way it was is still the way it [G]is
 {end_of_verse}
+
+
+

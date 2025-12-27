@@ -1,6 +1,9 @@
 {meta: title You're Free To Go}
 {meta: artist Jim Reeves}
 {meta: composer Don Robertson and Lou Hersher}
+{meta: x_source classic-country}
+{meta: x_source_file yourefreetogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're free to go [E7]darling 
@@ -20,3 +23,4 @@ That [F]once said yes to [C]me
 The tender glow is gone I [G7]know 
 You're free to [C]go
 {end_of_verse}
+

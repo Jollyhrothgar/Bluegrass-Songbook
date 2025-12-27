@@ -1,6 +1,9 @@
 {meta: title The Cowboy Rides Away}
 {meta: artist George Strait}
 {meta: composer Casey Kelly and Sonny Throckmorton}
+{meta: x_source classic-country}
+{meta: x_source_file thecowboyridesawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I knew the stakes were high right from the [C]start
@@ -34,3 +37,7 @@ And [D7]this is where the cowboy rides [G]away
 Oh the last goodbye's the hardest one to [C]say
 [D7]This is where the cowboy rides [G]away
 {end_of_verse}
+
+
+
+

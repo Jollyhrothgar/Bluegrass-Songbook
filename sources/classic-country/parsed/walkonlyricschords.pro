@@ -1,6 +1,9 @@
 {meta: title Walk On}
 {meta: artist Reba McEntire}
 {meta: composer Steve Dean and Lonnie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file walkonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Oh ain't life [C]wonderful [Am]when everything is [Dm]right[G7]
@@ -29,3 +32,6 @@ Walk [C]on walk [Am]on  [Dm]don't just stand there [G7]in the [E7]storm
 [Am]Walk toward the light till you [G7]find the sun
 [F]You'll be better off in the [G7]long run and walk [C]on
 {end_of_verse}
+
+
+

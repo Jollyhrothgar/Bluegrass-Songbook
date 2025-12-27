@@ -1,5 +1,8 @@
 {meta: title The Old Iron Trail}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file theoldirontraillyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well the old iron trail is a [F]railroad track it [C]runs all over our [G7]land
@@ -38,3 +41,7 @@ He’s a lot smarter than I gave him credit for
 Yeah there ain’t no milk and [F]honey [C]there ain’t no beer and [G7]ale
 [C]Life is hell the [F]bread is stale [C]out on the [G7]old iron [C]trail
 {end_of_verse}
+
+
+
+

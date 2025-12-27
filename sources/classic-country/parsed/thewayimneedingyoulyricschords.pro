@@ -1,5 +1,8 @@
 {meta: title The Way I'm Needing You}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file thewayimneedingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's someone in my arms who really needs [F]me
@@ -32,3 +35,7 @@ When she turns to me it's 'cause she wants [F]to
 {start_of_verse: Verse 5}
 [F]Yes she's needin' me the [G7]way I'm needin' [C]you
 {end_of_verse}
+
+
+
+

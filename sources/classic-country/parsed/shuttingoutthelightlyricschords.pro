@@ -1,6 +1,9 @@
 {meta: title Shutting Out The Light}
 {meta: artist Waylon Jennings}
 {meta: composer Woody Starr and Claude Brown}
+{meta: x_source classic-country}
+{meta: x_source_file shuttingoutthelightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I left the light in my [Em]window[C] 
@@ -43,3 +46,8 @@ Yes I'm [G]shutting out the light in my [Em]window
 This [G]heart of mine can't take it any [Em]longer
 So I'm [C]shutting out the [D7]light on [G]you
 {end_of_verse}
+
+
+
+
+

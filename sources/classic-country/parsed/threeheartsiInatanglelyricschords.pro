@@ -1,6 +1,9 @@
 {meta: title Three Hearts In A Tangle}
 {meta: artist Roy Drusky}
 {meta: composer Ray Pennington, Sonny Thompson, Ray Starr}
+{meta: x_source classic-country}
+{meta: x_source_file threeheartsiInatanglelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Three hearts in a [F]tangle
@@ -34,3 +37,7 @@ Which heart should I [G7]take
 [C]Three hearts in a [F]tangle
 Which [C]heart [G7]will I [C]break
 {end_of_verse}
+
+
+
+

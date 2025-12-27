@@ -1,5 +1,8 @@
 {meta: title You've Been An Inspiration To Me}
 {meta: artist Doyle Lawson}
+{meta: x_source classic-country}
+{meta: x_source_file youvebeenaninspirationtomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]For many years I have traveled in this lowland
@@ -46,3 +49,10 @@ You've been an inspiration
 [C]And I would like to tell you while I [G]may
 [D7]You've been an inspiration to [G]me
 {end_of_verse}
+
+
+
+
+
+
+

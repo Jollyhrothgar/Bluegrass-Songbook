@@ -1,6 +1,9 @@
 {meta: title Drinking Again}
 {meta: artist Jim Ed Brown}
 {meta: composer Jack Schneider and Claude Southall}
+{meta: x_source classic-country}
+{meta: x_source_file drinkingagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The piano is lonely the crowd [G7]left with the [C]band
@@ -26,3 +29,6 @@
 {start_of_verse: Verse 4}
 [D7]They'll point and they'll whisper he's drinking [G]again
 {end_of_verse}
+
+
+

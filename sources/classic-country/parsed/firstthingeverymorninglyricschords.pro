@@ -1,6 +1,9 @@
 {meta: title First Thing Every Morning}
 {meta: artist Jimmy Dean}
 {meta: composer Ruth Roberts and Jimmy Dean}
+{meta: x_source classic-country}
+{meta: x_source_file firstthingeverymorninglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The  [C]first th-ing every [E7]morn-ing 
@@ -29,3 +32,6 @@ And the [F]la-st thing every [C][G7]ni-ght
 The very [F]first th-ing every [Am][C]morn-ing 
 And the [F]la-st thing [G7]eve-ry [C]night
 {end_of_verse}
+
+
+

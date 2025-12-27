@@ -1,6 +1,9 @@
 {meta: title Everything I Am}
 {meta: artist Charlie Pride}
 {meta: composer Kenny O'Dell}
+{meta: x_source classic-country}
+{meta: x_source_file everythingiamlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everything I am  [F]all [C]that I hope to [F]be
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [F]And I just want to [C]thank you for [F]loving me [G7]and everything I [C]am
 {end_of_verse}
+
+
+
+
+

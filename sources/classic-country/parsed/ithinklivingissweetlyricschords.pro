@@ -1,6 +1,9 @@
 {meta: title I Think Living Is Sweet}
 {meta: artist Vernon Oxford}
 {meta: composer Everett Jimmy Corbin}
+{meta: x_source classic-country}
+{meta: x_source_file ithinklivingissweetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I’ve got a house on the hill looking down in the valley [G7]below
@@ -29,3 +32,7 @@
 {start_of_verse: Verse 4}
 [G7]Well I think living is [C]sweet
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title From Then Till Now}
 {meta: artist Melba Montgomery}
+{meta: x_source classic-country}
+{meta: x_source_file fromthentillnowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been a long time since [F]I have held [C]you
@@ -21,3 +24,5 @@
 [F]Each faithless hand that's reachin' for [C]you
 [F]For it's been [C]a long time [G7]from then till [C]now
 {end_of_verse}
+
+

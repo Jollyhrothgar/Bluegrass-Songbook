@@ -1,5 +1,8 @@
 {meta: title Bring Back The Waltzes}
 {meta: artist Red Steagall}
+{meta: x_source classic-country}
+{meta: x_source_file bringbackthewaltzeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I wish someone would bring back the [G7]waltzes
@@ -39,3 +42,8 @@
 {start_of_verse: Verse 5}
 [G7]I wish someone would bring back the [C]waltzes
 {end_of_verse}
+
+
+
+
+

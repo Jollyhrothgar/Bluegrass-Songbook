@@ -1,6 +1,9 @@
 {meta: title Let Me Take That Heartache (Off Your Hands)}
 {meta: artist Clay Walker}
 {meta: composer Kent Blazy, Kim Williams, Clay Walker}
+{meta: x_source classic-country}
+{meta: x_source_file letmetakethatheartacheoffyourhandslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Once [G]again he left you here [C]crying
@@ -36,3 +39,7 @@ Let [G]me take that [D7]heartache off your [G]hands[D7]
 Don't [C]give up on [D7]love till you [G]give me a [C]chance
 Let [G]me take that [D7]heartache off your [C]hand[G]s
 {end_of_verse}
+
+
+
+

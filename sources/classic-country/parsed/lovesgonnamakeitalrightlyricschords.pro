@@ -1,6 +1,9 @@
 {meta: title Love’s Gonna Make It Alright}
 {meta: artist George Strait}
 {meta: composer Al Anderson and Chris Stapleton}
+{meta: x_source classic-country}
+{meta: x_source_file lovesgonnamakeitalrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl you had [Dm]one of those days
@@ -56,3 +59,11 @@ Tonight tonight [C]tonight
 {start_of_verse: Verse 9}
 [G7]Tonight tonight [C]tonight 
 {end_of_verse}
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Just Now Thought Of You}
 {meta: artist Wynn Stewart}
 {meta: composer Bessie George}
+{meta: x_source classic-country}
+{meta: x_source_file justnowthoughtofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]Just now [G]thought of you [C] for no [G]reason
@@ -28,3 +31,6 @@ It's been a [D7]long long time since I've lost [G]you
 {start_of_verse: Verse 4}
 It's been a [D7]long long time since I've lost [G]you
 {end_of_verse}
+
+
+

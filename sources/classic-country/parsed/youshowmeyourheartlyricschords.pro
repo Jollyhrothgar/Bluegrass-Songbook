@@ -1,5 +1,8 @@
 {meta: title You Show Me Your Heart}
 {meta: artist Tom T Hall}
+{meta: x_source classic-country}
+{meta: x_source_file youshowmeyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]You [G7]show me [F]your [C]heart and [G7]I'll show you [C]mine
@@ -67,3 +70,15 @@ Just make it a one sided offer that's fine
 [C]You show me your heart and [G7]I'll show you [C]mine
 [F]You [G7]show me [F]your [C]heart and [G7]I'll show you [C]mine
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

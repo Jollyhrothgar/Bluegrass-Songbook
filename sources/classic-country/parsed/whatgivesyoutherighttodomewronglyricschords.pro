@@ -1,6 +1,9 @@
 {meta: title What Gives You The Right (To Do Me Wrong)}
 {meta: artist Wanda Jackson}
 {meta: composer John Scott Sherrill, Bob DiPiero, Rosie Flores}
+{meta: x_source classic-country}
+{meta: x_source_file whatgivesyoutherighttodomewronglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You [G7]know I had no reason not to [C]trust you  
@@ -33,3 +36,7 @@ I hate to think that you have just been [F]stinging me along
 {start_of_verse: Verse 4}
 [G7]What gives you the right to do me [C]wrong
 {end_of_verse}
+
+
+
+

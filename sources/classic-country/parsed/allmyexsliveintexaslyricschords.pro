@@ -1,6 +1,9 @@
 {meta: title All My Ex's Live In Texas}
 {meta: artist George Strait}
 {meta: composer Sanger D. Shafer and Linda J. Shafer}
+{meta: x_source classic-country}
+{meta: x_source_file allmyexsliveintexaslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]All my Ex's live in [D7]Texas
@@ -41,3 +44,8 @@ And therefore I reside in Tennes[G]see
 [D7]Some folks think I'm hiding it's been rumored that I died
 But I'm alive and well in Tennes[G]see 
 {end_of_verse}
+
+
+
+
+

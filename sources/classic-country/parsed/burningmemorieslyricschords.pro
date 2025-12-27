@@ -1,6 +1,9 @@
 {meta: title Burning Memories}
 {meta: artist Mel Tillis}
 {meta: composer Wayne P. Walker and Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file burningmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C][G7]To-night I'm Burning Old Love [D7]Letters
@@ -29,3 +32,6 @@ Teardrops Fall While I Am
 Burning Memories
 [D7]Burning All The Memories Of You That I Can't [G]Lose
 {end_of_verse}
+
+
+

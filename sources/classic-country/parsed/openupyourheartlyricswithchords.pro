@@ -1,6 +1,9 @@
 {meta: title Open Up Your Heart}
 {meta: artist Prairie Oyster}
 {meta: composer Russell de Carle and Keith Glass}
+{meta: x_source classic-country}
+{meta: x_source_file openupyourheartlyricswithchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Burned by an [G7]old flame now you’re out for a [C]fling
@@ -38,3 +41,8 @@ This [F]love  I [G7]have  for [C]you
 {start_of_verse: Verse 5}
 This [F]love  I [G7]have  for [C]you
 {end_of_verse}
+
+
+
+
+

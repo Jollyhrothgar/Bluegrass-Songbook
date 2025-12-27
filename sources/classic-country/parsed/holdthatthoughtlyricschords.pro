@@ -1,6 +1,9 @@
 {meta: title Hold That Thought}
 {meta: artist Gene Watson}
 {meta: composer Ray Griff and Tommy Rocco}
+{meta: x_source classic-country}
+{meta: x_source_file holdthatthoughtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Picture this  a small cafe a table set for [C]two
@@ -27,3 +30,6 @@ Let's [A7]leave this bar and make those pictures come to [D7]life
 [C]Hold that [G]thought  
 [C]Hold that [G]thought  for [D7]me [G]tonight
 {end_of_verse}
+
+
+

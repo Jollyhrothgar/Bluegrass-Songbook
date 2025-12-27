@@ -1,6 +1,9 @@
 {meta: title Hand of love}
 {meta: artist Billy Walker}
 {meta: composer Jerry Foster and Bill Rice}
+{meta: x_source classic-country}
+{meta: x_source_file handoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She came from the [D7]night looking [G7]lonely
@@ -27,3 +30,6 @@ Your [C]hand of [F]love reached [Dm]out and [G7]brought me [C]home
 When de[C7]sire almost overruled my [F]conscience
 Your [C]hand of [F]love reached [Dm]out and [G7]brought me [C]home
 {end_of_verse}
+
+
+

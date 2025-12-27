@@ -1,6 +1,9 @@
 {meta: title Man Ain't Made Of Stone}
 {meta: artist Randy Travis}
 {meta: composer Gary Burr, Robin Lerner, Franne Golde}
+{meta: x_source classic-country}
+{meta: x_source_file manaintmadeofstonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I was supposed to be the rock that you could [Am]stand on
@@ -45,3 +48,9 @@ And [G]sometimes all it [C]takes is facing the [D7]night [Em]alone
 And that's when you [C]know a [D7]man ain't made of [G]stone
 That's when you [C]know a [D7]man ain't made of [G]stone
 {end_of_verse}
+
+
+
+
+
+

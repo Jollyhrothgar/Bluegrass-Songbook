@@ -1,6 +1,9 @@
 {meta: title Born To Be Lucky}
 {meta: artist Jim Reeves}
 {meta: composer Taffey Kikillus}
+{meta: x_source classic-country}
+{meta: x_source_file borntobeluckylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Just born to be lucky as the gamblin' man must be
@@ -29,3 +32,6 @@ Just born to be a [D7]lucky gamblin' man from Tenne[G]ssee
 Just born to be [C]lucky lucky happy and [G]free
 Just born to be a [D7]lucky gamblin' man from Tenne[G]ssee
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Clown}
 {meta: artist Conway Twitty}
+{meta: x_source classic-country}
+{meta: x_source_file theclownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You love the way it makes me feel  when [C]I can’t catch my [G]breath
@@ -28,3 +31,6 @@ I’ll do [G]any-thing [D7]it takes just [C]to hang [D7]around
 I’ll paint [G]a smile for you  to [C]cover up my [G]frown
 Cause you love the [G]circus  but [D7]you don't love the [G]clown
 {end_of_verse}
+
+
+

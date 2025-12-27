@@ -1,6 +1,9 @@
 {meta: title If Her Blue Eyes Don't Get You}
 {meta: artist Marty Robbins}
 {meta: composer Curly Putman, Steve Pippin, Richard Hill}
+{meta: x_source classic-country}
+{meta: x_source_file ifherblueeyesdontgetyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]If her blue eyes don't get ya ooh I'll bet [F]ya
@@ -57,3 +60,12 @@ The sunshine of her smile sure [C]will
 If her blue [G7]eyes don't get ya  ooh I'll bet [F]ya
 The [G7]sunshine of her smile sure [C]will
 {end_of_verse}
+
+
+
+
+
+
+
+
+

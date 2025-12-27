@@ -1,6 +1,9 @@
 {meta: title You Won't Have Far To Go}
 {meta: artist Johnny Cash}
 {meta: composer Chuck Glaser}
+{meta: x_source classic-country}
+{meta: x_source_file youwonthavefartogolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can see now that [D7]you've stacked the [G]cards
@@ -29,3 +32,6 @@ Cause [D7]I'm gonna stick close to [G]you
 And I'm [C]not the kind to say I told you [G]so
 [C]Look for [G]me you won't [D7]have far to [G]go
 {end_of_verse}
+
+
+

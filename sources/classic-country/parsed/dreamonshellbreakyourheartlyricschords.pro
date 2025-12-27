@@ -1,6 +1,9 @@
 {meta: title Dream On (She'll Break Your Heart)}
 {meta: artist Jim Ed Brown with Maxine and Bonnie}
 {meta: composer Billy Sherrill and Kelso Herston}
+{meta: x_source classic-country}
+{meta: x_source_file dreamonshellbreakyourheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I met a girl and her eyes were blue 
@@ -35,3 +38,7 @@ Dream on she'll [C]break your [G]heart
 Dream on she'll [C]break your [G]heart 
 Dream on she'll [C]break your [G]heart
 {end_of_verse}
+
+
+
+

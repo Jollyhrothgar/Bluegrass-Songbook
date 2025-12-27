@@ -1,6 +1,9 @@
 {meta: title Dancing Cowboys}
 {meta: artist The Bellamy Brothers}
 {meta: composer David Bellamy}
+{meta: x_source classic-country}
+{meta: x_source_file dancingcowboyslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]We like boots and [C]saddles  [G7]we love girls and [C]guitars
@@ -36,3 +39,7 @@ Gypsy [G7]music  ringing [C]voices[C7]
 Dancing [F]cowboys  singing [C]horses
 Gypsy [G7]music songs about [C]love  [G7]
 {end_of_verse}
+
+
+
+

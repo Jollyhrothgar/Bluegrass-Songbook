@@ -1,6 +1,9 @@
 {meta: title I Do My Cryin' At Night}
 {meta: artist Rhonda Vincent}
 {meta: composer Sanger Shafer, Lefty Frizzell, Arthur Owens Sr.}
+{meta: x_source classic-country}
+{meta: x_source_file idomycryinatnightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Darlin' I've got all our friends be[D7]lievin'
@@ -33,3 +36,7 @@ It only takes the moon to [D7]make me change my tune
 {start_of_verse: Verse 4}
 [G7]I do my cryin' at [C]night
 {end_of_verse}
+
+
+
+

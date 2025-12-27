@@ -1,5 +1,8 @@
 {meta: title My First Payday}
 {meta: artist Jeanne Pruett}
+{meta: x_source classic-country}
+{meta: x_source_file myfirstpaydaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This morning when I woke up
@@ -42,3 +45,8 @@ It [F]takes my breath [C]away
 It [F]hurts just like you [C]said it would
 This is my [G7]first pay[C]day
 {end_of_verse}
+
+
+
+
+

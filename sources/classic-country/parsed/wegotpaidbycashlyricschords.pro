@@ -1,6 +1,9 @@
 {meta: title We Got Paid By Cash}
 {meta: artist Statler Brothers}
 {meta: composer Harold Reid and Don Reid}
+{meta: x_source classic-country}
+{meta: x_source_file wegotpaidbycashlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It started March of sixty-four [F]many years [C]ago
@@ -50,3 +53,9 @@ But we can tell you they were some of the best we ever [G7]had
 [C]Carl Perkins and The Carter's and The [F]Tennessee [C]Three
 We were one big happy family and would have done [G7]it all for [C]free 
 {end_of_verse}
+
+
+
+
+
+

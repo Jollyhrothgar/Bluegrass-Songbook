@@ -1,5 +1,8 @@
 {meta: title Wishful Thinking}
 {meta: artist Wynn Stewart}
+{meta: x_source classic-country}
+{meta: x_source_file wishfulthinkinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Wishing I could see [F]you again [C]dear
@@ -32,3 +35,7 @@ And make [G7]my wishful thinking come [C]true
 {start_of_verse: Verse 5}
 Repeat last verse
 {end_of_verse}
+
+
+
+

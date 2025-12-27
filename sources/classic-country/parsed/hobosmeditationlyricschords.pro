@@ -1,6 +1,9 @@
 {meta: title Hobo’s Meditation}
 {meta: artist Merle Haggard}
 {meta: composer Jimmie Rodgers [3/4 time]}
+{meta: x_source classic-country}
+{meta: x_source_file hobosmeditationlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tonight as I lay [G7]on a [C]boxcar
@@ -36,3 +39,7 @@
 [F]Will there be any tough cops and [C]brakemen
 [D7]Will they tell us we cannot [G7]ride
 {end_of_verse}
+
+
+
+

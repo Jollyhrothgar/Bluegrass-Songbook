@@ -1,6 +1,9 @@
 {meta: title Don't Use The Word Lightly}
 {meta: artist Jim Ed, Maxine and Bonnie Brown}
 {meta: composer Dave Coleman}
+{meta: x_source classic-country}
+{meta: x_source_file dontusethewordlightlylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]Love [C]love that [G7]little word called [C]love[G7]
@@ -37,3 +40,7 @@ True [C]love is divine
 Don't use the world lightly 
 You're really [G7]not [C]mine
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Thank You Lord For Your Blessings On Me}
 {meta: artist The Easter Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file thankyoulordforyourblessingsonmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]While the world looks upon me as I struggle [D7]along
@@ -28,3 +31,6 @@
 [G7]You gave me Your love Lord and a fine [C]family
 [G]Thank you Lord for [D7]Your blessings on [G]me
 {end_of_verse}
+
+
+

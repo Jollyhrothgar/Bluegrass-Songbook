@@ -1,6 +1,9 @@
 {meta: title Remember Me}
 {meta: artist Johnny Cash}
 {meta: composer Stuart Hamblen}
+{meta: x_source classic-country}
+{meta: x_source_file remembermelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you're all [D7]alone and [G]blue
@@ -39,3 +42,8 @@
 [G7]Where you go I'll tag [C]along
 [G]Remember me I'm the [D7]one who loves [G]you
 {end_of_verse}
+
+
+
+
+

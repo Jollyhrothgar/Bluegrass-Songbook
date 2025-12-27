@@ -1,6 +1,9 @@
 {meta: title Blue Bayou}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melson and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file bluebayoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I feel so bad I got a worried mind
@@ -38,3 +41,8 @@ Oh [C]some sweet day gonna [G7]take away this [C]hurting inside
 Well I'd [G7]never be blue my dreams come true
 On Blue Ba[C]you
 {end_of_verse}
+
+
+
+
+

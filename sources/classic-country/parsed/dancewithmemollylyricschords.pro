@@ -1,6 +1,9 @@
 {meta: title Dance With Me Molly}
 {meta: artist Keith Whitley}
 {meta: composer Roger Bowling and Steve Tutsie}
+{meta: x_source classic-country}
+{meta: x_source_file dancewithmemollylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They say he's crazy pay him no [G]mind 
@@ -46,3 +49,8 @@ Said dance with me [G]Molly [C]dance with me [A7]Molly
 [C]Said dance with me [G]Molly [C]dance with me [A7]Molly 
 [D7]Just one more [G]time
 {end_of_verse}
+
+
+
+
+

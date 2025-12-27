@@ -1,6 +1,9 @@
 {meta: title I Got A Feeling}
 {meta: artist Ricky Nelson}
 {meta: composer Baker Knight}
+{meta: x_source classic-country}
+{meta: x_source_file igotafeelinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well I've got a feeling
@@ -47,3 +50,8 @@ Just waiting for you and [D7]me
 [D7]Till I fell in love with [G]you
 Till I f-ell in [C]l-ove with [G]you
 {end_of_verse}
+
+
+
+
+

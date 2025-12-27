@@ -1,6 +1,9 @@
 {meta: title I Won't Cheat On You Again}
 {meta: artist Ernest Tubb and Loretta Lynn}
 {meta: composer Milton Brown}
+{meta: x_source classic-country}
+{meta: x_source_file iwontcheatonyouagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You love to put me down each time you're out with your [D7]girlfriends
@@ -47,3 +50,9 @@ I [G]won't cheat again on you [D7]if you won't cheat on [G]me
 {start_of_verse: Verse 6}
 I won't cheat again on you [D7]if you won't cheat on [G]me
 {end_of_verse}
+
+
+
+
+
+

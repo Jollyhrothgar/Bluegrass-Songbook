@@ -1,6 +1,9 @@
 {meta: title You Better Treat Your Man Right}
 {meta: artist George Jones}
 {meta: composer Wayne Raney}
+{meta: x_source classic-country}
+{meta: x_source_file youbettertreatyourmanrightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You better start to treatin' your man a little bit better
@@ -40,3 +43,8 @@ Well you was so nice and sweet and cute dear when I met you
 {start_of_verse: Verse 4}
 Or [C]there'll be a day when your old sweet [G7]man won't be [C]around
 {end_of_verse}
+
+
+
+
+

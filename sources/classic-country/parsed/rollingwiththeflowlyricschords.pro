@@ -1,6 +1,9 @@
 {meta: title Rolling With The Flow}
 {meta: artist Charlie Rich}
 {meta: composer Jerry Hayes}
+{meta: x_source classic-country}
+{meta: x_source_file rollingwiththeflowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Once was a thought inside my head
@@ -50,3 +53,9 @@ If I keep on [F]rolling with the [C]flow
 Keep on [G7]rolling with the [C]flow
 [G7]Keep on rolling with the [C]flow
 {end_of_verse}
+
+
+
+
+
+

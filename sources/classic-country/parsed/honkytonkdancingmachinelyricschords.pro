@@ -1,6 +1,9 @@
 {meta: title Honky Tonk Dancing Machine}
 {meta: artist Tracy Byrd}
 {meta: composer Mark Nesler and Tracy Byrd}
+{meta: x_source classic-country}
+{meta: x_source_file honkytonkdancingmachinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I could tell she was a hot rod when she walked in all [C7]alone
@@ -47,3 +50,8 @@ Driven honky tonk dancing [C]machine
 She's a [G7]real low maintenance country music beat 
 Driven honky tonk dancing [C]machine
 {end_of_verse}
+
+
+
+
+

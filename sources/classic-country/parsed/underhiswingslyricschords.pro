@@ -2,6 +2,9 @@
 {meta: artist Slim Whitman}
 {meta: composer William O. Cushing music by Ira D. Sankey}
 {meta: music Ira D. Sankey}
+{meta: x_source classic-country}
+{meta: x_source_file underhiswingslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Under His wings I am safely [G7]abiding
@@ -30,3 +33,6 @@ Who from His [F]love can [G7]sever
 [C]Under His wings my [F]soul shall [C]abide
 [F]Safely [C]abide [C][G7]for-ever
 {end_of_verse}
+
+
+

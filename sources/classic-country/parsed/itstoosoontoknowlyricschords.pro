@@ -1,6 +1,9 @@
 {meta: title It's Too Soon To Know}
 {meta: artist Roy Orbison}
 {meta: composer Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file itstoosoontoknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's too [Em]soon to [Dm]know if [G7]I can for[C]get her
@@ -29,3 +32,7 @@ And it's [G7]too soon to [C]know
 My heart's been [C7]broken in [F]too many pieces 
 And it's [G7]too soon to [C]know 
 {end_of_verse}
+
+
+
+

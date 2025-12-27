@@ -1,6 +1,9 @@
 {meta: title What I Want You To Be}
 {meta: artist Ray Price}
 {meta: composer Dave Hall and Aaron Brown}
+{meta: x_source classic-country}
+{meta: x_source_file whatiwantyoutobelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Now Lord You know I've traveled many [G7]highways
@@ -41,3 +44,8 @@ And I'll [C]make you what I [G7]want you to [C]be
 [F]You take up My [G7]cross and [C]then you follow [F]Me
 And I'll [C]make you what I [G7]want you to [C]be
 {end_of_verse}
+
+
+
+
+

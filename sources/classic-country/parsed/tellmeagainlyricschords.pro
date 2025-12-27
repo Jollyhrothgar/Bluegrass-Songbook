@@ -1,6 +1,9 @@
 {meta: title Tell Me Again}
 {meta: artist Billy Walker}
 {meta: composer Jerry Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file tellmeagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tell me [A#7]again how [A7]I'll soon forget you
@@ -30,3 +33,6 @@ Then [F]tell me the [Fm]part what to [C]do with a [A7]heart
 That still [Dm]loves you [G7]yes tell me [Am]again
 [F]Yes [G7]tell me [C]again
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Working on the Building}
 {meta: artist Elvis Presley}
 {meta: composer Lillian M. Bowles and W.O. Hayle}
+{meta: x_source classic-country}
+{meta: x_source_file workingonthebuildinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I’m [G7]working on the [C]building it's a [G7]true foun[C]dation
@@ -43,3 +46,8 @@ I'm holding up the bloodstained banner for my [G7]Lord
 Well I never get [C]tired tired [C7]tired of working on the [F]building
 I'm going up to [C]heaven oh yeah [G7]to get my [C]reward
 {end_of_verse}
+
+
+
+
+

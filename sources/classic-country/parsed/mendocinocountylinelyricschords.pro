@@ -1,6 +1,9 @@
 {meta: title Mendocino County Line}
 {meta: artist Willie Nelson}
 {meta: composer Matt Serletic and Bernie Taupin}
+{meta: x_source classic-country}
+{meta: x_source_file mendocinocountylinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We counted the stars on the fourth of [Am]July
@@ -61,3 +64,11 @@ But the [F]sun sank west of the [G7]Mendocino county [C]line
 But the [F]sun sank west of the [G7]Mendocino county [C]line
 [G7]Mendocino county [C]line [G7]Mendocino county [C]line
 {end_of_verse}
+
+
+
+
+
+
+
+

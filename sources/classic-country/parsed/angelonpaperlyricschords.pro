@@ -1,6 +1,9 @@
 {meta: title Angel On Paper Lyrics and Chords}
 {meta: artist Dottie West}
 {meta: composer Delmar Williams and Paul Borst}
+{meta: x_source classic-country}
+{meta: x_source_file angelonpaperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]An angel on [G]paper that's [D7]all that's left for [G]me
@@ -33,3 +36,7 @@
 [G7]Your footsteps say you walked away out into the [C]night
 [D7]A star just fell the moon just hit my angel's out of [G]sight
 {end_of_verse}
+
+
+
+

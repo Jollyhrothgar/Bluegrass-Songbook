@@ -1,6 +1,9 @@
 {meta: title Christmas Eve}
 {meta: artist Statler Brothers}
 {meta: composer Don Reid and Harold Reid}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasevelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If [D7]dreams came [G]true on Christmas [C]Eve
@@ -22,3 +25,5 @@ Memories of [A7]you are ever[D7]green
 Turn down the [G]lights and make be[C]lieve
 You're here with [D7]me on Christmas [G]Eve
 {end_of_verse}
+
+

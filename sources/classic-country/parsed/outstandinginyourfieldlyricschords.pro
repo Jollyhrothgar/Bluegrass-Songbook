@@ -1,6 +1,9 @@
 {meta: title Outstanding In Your Field}
 {meta: artist Jean Shepard}
 {meta: composer Larry Lee}
+{meta: x_source classic-country}
+{meta: x_source_file outstandinginyourfieldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're [F]outstanding in your field and that's where you ought to [C]be
@@ -36,3 +39,7 @@
 [C]You know he loves me true but you must try him one more [F]time
 [G7]You're outstanding in your field but you'd rather be in [C]mine
 {end_of_verse}
+
+
+
+

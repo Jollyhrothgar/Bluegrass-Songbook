@@ -1,5 +1,8 @@
 {meta: title I Want To See My Hometown}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttoseemyhometownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I want to see my hometown one more time
@@ -39,3 +42,8 @@ I [D7]want to see my [G7]hometown one more [C]time
 {start_of_verse: Verse 6}
 So [G7]take me to my hometown one more [C]time
 {end_of_verse}
+
+
+
+
+

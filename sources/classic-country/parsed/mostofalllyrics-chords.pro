@@ -1,6 +1,9 @@
 {meta: title Most Of All}
 {meta: artist Anne Murray}
 {meta: composer James Cobb and Buddy Buie}
+{meta: x_source classic-country}
+{meta: x_source_file mostofalllyrics-chords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Hello darlin' my it's good to [Am]hear you
@@ -36,3 +39,7 @@ I love you [D7]baby  [C]most [D7]of [G]all
 I love you [C]baby [D7]most of [G]all
 [Am]I love you [D7]baby [C]most of [G]all
 {end_of_verse}
+
+
+
+

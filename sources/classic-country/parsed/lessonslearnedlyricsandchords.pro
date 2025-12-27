@@ -1,6 +1,9 @@
 {meta: title Lessons Learned}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file lessonslearnedlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was ten years [G7]old the day [C]I got caught
@@ -50,3 +53,9 @@ They [C]don't go away and they don't come cheap
 Oh [A#7]there's no way [F]around this world [Dm]turns 
 [G7]On lessons [C]learned
 {end_of_verse}
+
+
+
+
+
+

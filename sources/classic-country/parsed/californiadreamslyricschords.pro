@@ -1,6 +1,9 @@
 {meta: title California Dreams}
 {meta: artist Bobby Bare}
 {meta: composer Curly Putman}
+{meta: x_source classic-country}
+{meta: x_source_file californiadreamslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Let me carry [F]that old suitcase [C]hon
@@ -41,3 +44,8 @@ It's [F]always there for [C]you and me
 {start_of_verse: Verse 5}
 [G7]California [C]dreams
 {end_of_verse}
+
+
+
+
+

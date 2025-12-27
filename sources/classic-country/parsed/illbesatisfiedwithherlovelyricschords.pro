@@ -1,6 +1,9 @@
 {meta: title I'll Be Satisfied With Her Love}
 {meta: artist Faron Young}
 {meta: composer Wayne P. Walker and Gary Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file illbesatisfiedwithherlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Just let me love you as long as I live
@@ -39,3 +42,8 @@ To last through the [G7]years
 [F]Funny that I should [C]feel this way
 [G7]But I'll be satisfied with [C]love
 {end_of_verse}
+
+
+
+
+

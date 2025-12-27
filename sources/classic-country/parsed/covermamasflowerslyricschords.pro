@@ -1,6 +1,9 @@
 {meta: title Cover Mama's Flowers}
 {meta: artist Mel Tillis}
 {meta: composer Johnny Gore}
+{meta: x_source classic-country}
+{meta: x_source_file covermamasflowerslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been many years now since [F]mom passed [C]away
@@ -48,3 +51,9 @@ Or my [G7]flowers will wither [C]away
 [F]Be sure to cover my [C]flowers
 Or my [G7]flowers will wither [C]away 
 {end_of_verse}
+
+
+
+
+
+

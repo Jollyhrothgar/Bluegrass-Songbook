@@ -1,5 +1,8 @@
 {meta: title It Was So Easy For You To Say Goodbye}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file itwassoeasyforyoutosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I left you this [G7]morning in [C]Texas
@@ -34,3 +37,7 @@ It was so [C]easy for [G7]you to say good[C]bye
 {start_of_verse: Verse 5}
 [F]It was so [C]easy for [G7]you to say good[C]bye
 {end_of_verse}
+
+
+
+

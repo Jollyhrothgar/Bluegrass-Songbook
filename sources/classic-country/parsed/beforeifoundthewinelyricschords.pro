@@ -1,6 +1,9 @@
 {meta: title Before I Found The Wine}
 {meta: artist Tommy Cash}
 {meta: composer Jimmy Peppers}
+{meta: x_source classic-country}
+{meta: x_source_file beforeifoundthewinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yesterday I had a future and I was [F]happy
@@ -33,3 +36,7 @@ Yes but [G7]that was before I found the [C]wine
 {start_of_verse: Verse 4}
 Yes but [G7]that was before I found the [F]win[C]e
 {end_of_verse}
+
+
+
+

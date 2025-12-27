@@ -1,6 +1,9 @@
 {meta: title They Don't Make'em Like My Daddy Anymore}
 {meta: artist Loretta Lynn}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file theydontmakeemlikemydaddyanymorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I wasn't much more than a baby I thought he was a bear
@@ -52,3 +55,9 @@ They don't [G]make 'em like my [D7]daddy any [G]more
 {start_of_verse: Verse 6}
 They don't make 'em like my [D7]daddy any [G]more 
 {end_of_verse}
+
+
+
+
+
+

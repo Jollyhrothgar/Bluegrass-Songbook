@@ -1,6 +1,9 @@
 {meta: title Your Kind Of People}
 {meta: artist Porter Wagoner}
 {meta: composer Ned Miller}
+{meta: x_source classic-country}
+{meta: x_source_file yourkindofpeoplelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So the [G7]boy in the mansion on the [C]hill 
@@ -30,3 +33,6 @@ You'll come back to [G7]your kind of people torn all apart
 So please don't [C]go  [G7]baby please don't [C]go
 [G7]Baby please don't g[C]o
 {end_of_verse}
+
+
+

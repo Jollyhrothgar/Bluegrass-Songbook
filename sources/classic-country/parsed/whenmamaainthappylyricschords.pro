@@ -1,6 +1,9 @@
 {meta: title When Mama Ain't Happy}
 {meta: artist Tracy Byrd}
 {meta: composer Rick Giles, Tim Nichols, Gilles Godard}
+{meta: x_source classic-country}
+{meta: x_source_file whenmamaainthappylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ever since [F]Monday [G7]I've seen it [C]comin'
@@ -57,3 +60,10 @@ I wanna see the sparkle [F]back in her eyes
 When [C]mama ain't happy ain't nobody happy
 So [G7]daddy's gonna make mama happy [C]tonight
 {end_of_verse}
+
+
+
+
+
+
+

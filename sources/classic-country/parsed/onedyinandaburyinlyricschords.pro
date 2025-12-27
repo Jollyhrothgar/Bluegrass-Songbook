@@ -1,5 +1,8 @@
 {meta: title One Dyin' And A Buryin'}
 {meta: artist Roger Miller}
+{meta: x_source classic-country}
+{meta: x_source_file onedyinandaburyinlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I think I finally found me a surefire way to forget
@@ -31,3 +34,7 @@ Some [F]cryin' six carryin' [C]m--[G7]e I wanna be [C]free
 One dyin' and a [F]buryin' [G7]one dyin' and a [C]buryin'
 Some [F]cryin' six carryin' [C]m--[G7]e I wanna be [C]free
 {end_of_verse}
+
+
+
+

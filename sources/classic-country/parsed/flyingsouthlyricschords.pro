@@ -1,6 +1,9 @@
 {meta: title Flying South}
 {meta: artist Hank Locklin}
 {meta: composer Cindy Walker}
+{meta: x_source classic-country}
+{meta: x_source_file flyingsouthlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [E7]Winter's gone and summertime's a [A7]coming
@@ -33,3 +36,7 @@ And [D7]honey in the south is where I wanna [G]be
 {start_of_verse: Verse 5}
 [D7]Way back home in Nashville Tenne[G]ssee
 {end_of_verse}
+
+
+
+

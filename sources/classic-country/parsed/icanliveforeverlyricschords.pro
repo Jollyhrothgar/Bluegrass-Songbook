@@ -1,6 +1,9 @@
 {meta: title I Can Live Forever}
 {meta: artist George Jones}
 {meta: composer Tony Stampley, Johnny Christopher, Harvey Hoy Lindsey}
+{meta: x_source classic-country}
+{meta: x_source_file icanliveforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When you're born you [G7]enter in
@@ -41,3 +44,8 @@ Walking through His [G7]kingdom the kingdom of the [C]Lord
 Walking through His [G7]kingdom the kingdom of the [F]Lord
 I can live [C]forever 
 {end_of_verse}
+
+
+
+
+

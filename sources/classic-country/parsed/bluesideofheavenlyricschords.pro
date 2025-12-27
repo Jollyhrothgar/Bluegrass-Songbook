@@ -1,5 +1,8 @@
 {meta: title Blue Side Of Heaven}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file bluesideofheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't be [G7]sad [F]darlin' I [C]love you
@@ -49,3 +52,9 @@ And I'll [G7]see you when it [F]comes to your [C]time
 We'll walk [G7]along some [F]beauti[C]ful river
 [G7]Hand in hand on [A#7]life's other [C]side
 {end_of_verse}
+
+
+
+
+
+

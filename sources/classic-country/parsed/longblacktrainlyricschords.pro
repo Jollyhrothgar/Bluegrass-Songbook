@@ -1,5 +1,8 @@
 {meta: title Long Black Train}
 {meta: artist Josh Turner}
+{meta: x_source classic-country}
+{meta: x_source_file longblacktrainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a long black train coming down the line
@@ -66,3 +69,14 @@ And [Em]don't go [G]riding on that long [D7]black [G]train
 Yea [Em]watch out [G]brother for that long [D7]black [G]train
 That [Em]devil's [G]driving that long [D7]black [G]train
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

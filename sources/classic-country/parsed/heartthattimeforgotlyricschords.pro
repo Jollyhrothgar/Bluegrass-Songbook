@@ -1,6 +1,9 @@
 {meta: title Heart That Time Forgot}
 {meta: artist Sammy Kershaw}
 {meta: composer Sterling Whipple and Tony Martin}
+{meta: x_source classic-country}
+{meta: x_source_file heartthattimeforgotlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Just [C]when I feel like a night on the [G7]town
@@ -35,3 +38,7 @@
 {start_of_verse: Verse 5}
 [F]I'm the [C]man with the [G7]heart that time [C]forgot
 {end_of_verse}
+
+
+
+

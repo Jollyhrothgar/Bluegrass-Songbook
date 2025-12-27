@@ -1,6 +1,9 @@
 {meta: title I Can't Keep The Girls Away}
 {meta: artist Billy Walker}
 {meta: composer L. Butler}
+{meta: x_source classic-country}
+{meta: x_source_file icantkeepthegirlsawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Momma’s gone and I’m alone and I can’t keep the girls [D7]away
@@ -52,3 +55,11 @@ And all they want to do [G]play
 What can I do I’m asking you please tell me what to [D7]say
 I’m confused and I got the blues cause I can’t keep the girls [G]away
 {end_of_verse}
+
+
+
+
+
+
+
+

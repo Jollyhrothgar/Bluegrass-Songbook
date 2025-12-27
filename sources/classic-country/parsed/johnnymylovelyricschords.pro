@@ -1,6 +1,9 @@
 {meta: title Johnny My Love (Grandma's Diary)}
 {meta: artist Hank Locklin}
 {meta: composer Boudleaux Bryant and Felice Bryant}
+{meta: x_source classic-country}
+{meta: x_source_file johnnymylovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Johnny my love  Johnny [D7]my love  Johnny [G]my love  Johnny my [D7]love
@@ -38,3 +41,8 @@ And [D7]on the first old tattered page we found these words so [G]dear
 Cause [D7]you're my Johnny my [G]love
 Cause [D7]you're my Johnny my [G]love
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Kneeling Drunkard's Plea}
 {meta: artist Louvin Brothers}
 {meta: composer Anita Carter, Helen Carter,}
+{meta: x_source classic-country}
+{meta: x_source_file kneelingdrunkardsplealyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Lord have [D7]mercy on me
@@ -43,3 +46,8 @@ Was the kneeling [C]drunkard's [G]plea
 And as he knelt there [C]on the ground
 I [G]know that God from [D7]heaven looked [C]dow[G]n
 {end_of_verse}
+
+
+
+
+

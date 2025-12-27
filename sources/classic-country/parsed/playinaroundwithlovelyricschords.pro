@@ -1,6 +1,9 @@
 {meta: title Playin' Around With Love}
 {meta: artist Barbara Mandrell}
 {meta: composer Billy Sherrill}
+{meta: x_source classic-country}
+{meta: x_source_file playinaroundwithlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Not too long [F]ago you said to [C]me 
@@ -36,3 +39,7 @@ With the brand new love [E7]that's walking by my [F]side
 Cause already there's an old love on my [C]mind [F]
 [C]Playin' around with [D7]love'll do it [G7]every [F]tim[C]e
 {end_of_verse}
+
+
+
+

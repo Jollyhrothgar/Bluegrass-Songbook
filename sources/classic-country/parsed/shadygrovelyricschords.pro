@@ -1,5 +1,8 @@
 {meta: title Shady Grove}
 {meta: artist Everly Brothers}
+{meta: x_source classic-country}
+{meta: x_source_file shadygrovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Beyond this maze of city streets beyond these painted faces
@@ -33,3 +36,7 @@ Shady Grove my little miss [F]Shady Grove my [D7]darlin'
 Shady Grove my little miss [F]Shady Grove my [D7]darlin'
 [G]Shady Grove my little miss [D7]come with me to [G]Harlan
 {end_of_verse}
+
+
+
+

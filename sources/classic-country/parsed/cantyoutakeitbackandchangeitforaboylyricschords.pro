@@ -1,6 +1,9 @@
 {meta: title Can't You Take It Back And Change It For A Boy}
 {meta: artist Rex Allen}
 {meta: composer Thurland Chattaway}
+{meta: x_source classic-country}
+{meta: x_source_file cantyoutakeitbackandchangeitforaboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]From the nursery creepin' a little boy came peepin'
@@ -57,3 +60,10 @@ A [G7]girl you know could never fix a [C]toy
 So I'll tell you what to do if it's [F]just the same with you
 Can't you [G7]take it back and change it for a [C]boy
 {end_of_verse}
+
+
+
+
+
+
+

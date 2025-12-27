@@ -1,6 +1,9 @@
 {meta: title Far Away Heart}
 {meta: artist Bobby Helms}
 {meta: composer Lee Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file farawayheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Don't let it happen don't find somebody [C]new
@@ -29,3 +32,6 @@ With [C]only lonely duties hadn't [G]taken me from [D7]you
 [G]And sent me far across the seas away from you sweet[C]heart
 But [G]have no fear you're always here in this [D7]far away [G]heart
 {end_of_verse}
+
+
+

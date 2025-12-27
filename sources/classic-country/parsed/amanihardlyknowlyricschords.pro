@@ -1,5 +1,8 @@
 {meta: title A Man I Hardly Know}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file amanihardlyknowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]In a booth back in a [C]corner 
@@ -32,3 +35,7 @@ Cause here I [D7]am with a man I hardly [G]know
 Where the [D7]lights are way down [G]low
 In the [D7]arms of a man I hardly [G]know
 {end_of_verse}
+
+
+
+

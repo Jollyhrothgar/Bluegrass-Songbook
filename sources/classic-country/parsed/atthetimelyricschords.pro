@@ -1,6 +1,9 @@
 {meta: title At The Time}
 {meta: artist Jean Shepard}
 {meta: composer Bill Anderson}
+{meta: x_source classic-country}
+{meta: x_source_file atthetimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I told him that I loved him cause I [C]loved him at the [G]time
@@ -34,3 +37,7 @@
 [C]If you've never been to Paris France Big Spring Texas will suit you [G]fine
 [D7]And that's the way it was when I loved him at the [G]time
 {end_of_verse}
+
+
+
+

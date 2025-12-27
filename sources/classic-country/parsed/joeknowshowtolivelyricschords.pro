@@ -1,6 +1,9 @@
 {meta: title Joe Knows How To Live}
 {meta: artist Eddy Raven}
 {meta: composer Graham Hamilton, Seals Troy, Harold Barnes and Max Duane}
+{meta: x_source classic-country}
+{meta: x_source_file joeknowshowtolivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Blue Monday morning at the [C]factory gate
@@ -65,3 +68,11 @@ Yeah I've [Dm]got to admit
 Yeah [Dm]I hate to admit  
 But [G7]Joe knows how [C]to live
 {end_of_verse}
+
+
+
+
+
+
+
+

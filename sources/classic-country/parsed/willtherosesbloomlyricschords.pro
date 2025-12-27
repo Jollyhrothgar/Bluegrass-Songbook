@@ -1,6 +1,9 @@
 {meta: title Will The Roses Bloom}
 {meta: artist Ricky Skaggs}
 {meta: composer J. and I. Bevins}
+{meta: x_source classic-country}
+{meta: x_source_file willtherosesbloomlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Will the roses bloom where she lies [F]sleeping
@@ -43,3 +46,8 @@
 [C]Will the dewdrops fall upon the [F]roses
 [C]Where my [G7]darling sleeps beneath the [C]sand
 {end_of_verse}
+
+
+
+
+

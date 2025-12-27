@@ -1,6 +1,9 @@
 {meta: title I've Come To Say Goodbye}
 {meta: artist Faron Young}
 {meta: composer Don Robertson and Hal Blair}
+{meta: x_source classic-country}
+{meta: x_source_file ivecometosaygoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I [G7]haven't come to [C]plead [F]like all the times [C]before
@@ -27,3 +30,6 @@ I've gotta go away [G7]and I've come to say [C]goodbye[F]
 Yes [C]I've just gotta go away 
 [G7]And I've come to say [C]goodbye[F]  [C]
 {end_of_verse}
+
+
+

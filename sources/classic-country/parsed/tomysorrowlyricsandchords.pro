@@ -1,6 +1,9 @@
 {meta: title To My Sorrow}
 {meta: artist Nat Stuckey}
 {meta: composer Vic McAlpin}
+{meta: x_source classic-country}
+{meta: x_source_file tomysorrowlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([G]To my sorrow [D7]you're in my [G]heart)[C]  [G]  [D7]
@@ -26,3 +29,6 @@ Maybe [C]someday when your [D7]hair has turned to [G]silver
 Though I'm [G]smiling [G7]inside I'm [C]crying
 Cause to my [G]sorrow [D7]you're in my [G]heart ([C]in my [G]heart)
 {end_of_verse}
+
+
+

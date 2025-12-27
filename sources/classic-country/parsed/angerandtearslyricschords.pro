@@ -1,6 +1,9 @@
 {meta: title Anger and Tears}
 {meta: artist Mel McDaniel}
 {meta: composer Carol W. Chase and Howard Russell Smith}
+{meta: x_source classic-country}
+{meta: x_source_file angerandtearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I left home this morning didn't say a [F]word
@@ -43,3 +46,8 @@ Is [C]that all that's left us after loving all these [G7]years
 As [C]slowly as love grows how soon it [F]disappears
 In a [C]house full of anger and a [G7]heart full of [C]tears
 {end_of_verse}
+
+
+
+
+

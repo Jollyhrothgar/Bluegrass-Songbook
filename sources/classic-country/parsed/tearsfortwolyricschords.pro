@@ -1,6 +1,9 @@
 {meta: title Tears For Two}
 {meta: artist Dwight Yoakam}
 {meta: composer Dwight Yoakam and Holly Lamar}
+{meta: x_source classic-country}
+{meta: x_source_file tearsfortwolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Luck found me too [D7]late to [F]be what I could [C]use
@@ -33,3 +36,6 @@ And all it's foolish [G7]hopes were [C]true
 This one lifetime just won't do
 Cause I've cried enough [G7]tears  for [C]two
 {end_of_verse}
+
+
+

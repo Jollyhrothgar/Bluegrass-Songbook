@@ -1,6 +1,9 @@
 {meta: title Hummingbird}
 {meta: artist Ricky Skaggs}
 {meta: composer Tim Dubois and Greg Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file hummingbirdlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Got tired of livin' in that one horse town
@@ -47,3 +50,10 @@ Lyin' here lonely knowin' what I lost
 [G]I'm gonna ride that [C]hummingbird
 [G]Just let [C]me ride that [G]hummingbird
 {end_of_verse}
+
+
+
+
+
+
+

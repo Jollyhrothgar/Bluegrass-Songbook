@@ -1,6 +1,9 @@
 {meta: title Tell Her So}
 {meta: artist Wilburn Brothers}
 {meta: composer Glenn D. Tubb}
+{meta: x_source classic-country}
+{meta: x_source_file tellhersolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you  have a love that's [G7]true 
@@ -33,3 +36,7 @@ Never let her heart grow [G7]cold
 {start_of_verse: Verse 5}
 [G7]Tell her [C]so  
 {end_of_verse}
+
+
+
+

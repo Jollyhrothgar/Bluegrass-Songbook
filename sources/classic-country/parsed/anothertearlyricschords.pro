@@ -1,6 +1,9 @@
 {meta: title Another Tear}
 {meta: artist Rhonda Vincent}
 {meta: composer Irl Hees}
+{meta: x_source classic-country}
+{meta: x_source_file anothertearlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Another tear somewhere there is [F]falling
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 6}
 [G7]Another tear is getting better just for [C]you
 {end_of_verse}
+
+
+
+
+

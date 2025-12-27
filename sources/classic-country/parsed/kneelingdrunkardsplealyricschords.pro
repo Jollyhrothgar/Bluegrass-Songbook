@@ -1,6 +1,9 @@
 {meta: title Kneeling Drunkard's Plea}
 {meta: artist Johnny Cash}
 {meta: composer June, Helen and Anita Carter}
+{meta: x_source classic-country}
+{meta: x_source_file kneelingdrunkardsplealyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lord have mercy [G7]on me
@@ -43,3 +46,8 @@ Was the kneeling [F]drunkard's [C]plea
 And as he knelt there on the [F]ground
 I [C]know that God in [G7]Heaven looked [C]down 
 {end_of_verse}
+
+
+
+
+

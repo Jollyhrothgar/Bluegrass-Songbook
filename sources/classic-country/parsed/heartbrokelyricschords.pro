@@ -1,6 +1,9 @@
 {meta: title Heartbroke}
 {meta: artist Ricky Skaggs}
 {meta: composer Guy Clark}
+{meta: x_source classic-country}
+{meta: x_source_file heartbrokelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well who wouldn't notice the fire in your eyes 
@@ -61,3 +64,11 @@ With my [Am]heartbroke
 With my [G]heartbroke 
 [D7]You got your [G]heartbroke
 {end_of_verse}
+
+
+
+
+
+
+
+

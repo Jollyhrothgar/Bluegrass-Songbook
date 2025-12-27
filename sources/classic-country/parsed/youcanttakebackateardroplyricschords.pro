@@ -1,6 +1,9 @@
 {meta: title You Can't Take Back A Teardrop Lyrics and Chords}
 {meta: artist Connie Smith}
 {meta: composer Christopher Waters Dunn and Tom C. Shapiro}
+{meta: x_source classic-country}
+{meta: x_source_file youcanttakebackateardroplyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You came back tonight to take [F]back the things that you said to [C]me
@@ -29,3 +32,6 @@
 [C]I wish you could make up for all the hurt [C7]you've [F]caused
 [G7]But you can't take back [F]a teardrop once it [C]falls
 {end_of_verse}
+
+
+

@@ -1,5 +1,8 @@
 {meta: title True Love Never Dies}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file trueloveneverdieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've heard the saying all my life that true love never [C]dies
@@ -21,3 +24,5 @@ Can't you be [D7]realize true love never [G]dies
 [G]For you'll face so many bitter years alone and then you'll [C]cry
 Can't you be [D7]realize true love never [G]dies
 {end_of_verse}
+
+

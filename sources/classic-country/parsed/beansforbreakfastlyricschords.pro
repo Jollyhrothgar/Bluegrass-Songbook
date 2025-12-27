@@ -1,5 +1,8 @@
 {meta: title Beans For Breakfast}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file beansforbreakfastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I couldn't hear you for the [D7]TV I didn't know you said [G]goodbye
@@ -34,3 +37,7 @@
 [C]After I took all them pills but I got out safe in my duck head [D7]overalls
 [G]Beans for breakfast once [D7]again I'm a hungry nasty lonesome [G]man
 {end_of_verse}
+
+
+
+

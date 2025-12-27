@@ -1,6 +1,9 @@
 {meta: title Shine From The Mountain}
 {meta: artist Gene Watson}
 {meta: composer Bobbie Bost}
+{meta: x_source classic-country}
+{meta: x_source_file shinefromthemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]My desire is to speak life as those all [G7]around me are [C]dying
@@ -33,3 +36,7 @@ And the [D7]light of His Glorious image is filling the [G]land
 {start_of_verse: Verse 4}
 And the [D7]light of His Glorious image is filling the [C]l--an[G]d
 {end_of_verse}
+
+
+
+

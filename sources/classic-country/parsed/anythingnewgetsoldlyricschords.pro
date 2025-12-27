@@ -1,5 +1,8 @@
 {meta: title Anything New Gets Old}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file anythingnewgetsoldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Anything new gets old except [F]my love for you
@@ -28,3 +31,6 @@ I'll forever love you there'll [F]be no one new
 I'll forever love you oh my [F]whole life through
 [G7]Anything new gets old except my [C]love for you
 {end_of_verse}
+
+
+

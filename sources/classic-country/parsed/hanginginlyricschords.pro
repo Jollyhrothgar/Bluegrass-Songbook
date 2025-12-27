@@ -1,6 +1,9 @@
 {meta: title Hanging In}
 {meta: artist Tanya Tucker}
 {meta: composer Steve Bogard and Rick Giles}
+{meta: x_source classic-country}
+{meta: x_source_file hanginginlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Em]You said goodbye on Tuesday
@@ -44,3 +47,8 @@ I'm hangin' [C]in I'm hangin' [D7]out and hangin' [G]on
 {start_of_verse: Verse 4}
 I'm hangin' [C]in I'm hangin' [D7]out and hangin' [G]on
 {end_of_verse}
+
+
+
+
+

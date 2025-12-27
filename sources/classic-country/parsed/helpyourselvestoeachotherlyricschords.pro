@@ -1,6 +1,9 @@
 {meta: title Help Yourselves To Each Other}
 {meta: artist Don Williams}
 {meta: composer Bob McDill and Allen Reynolds}
+{meta: x_source classic-country}
+{meta: x_source_file helpyourselvestoeachotherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What a time to [C]turn your back on someone
@@ -37,3 +40,7 @@ It's a long road we must [C]cling to one [G]another
 Help yourselves to each [C]other
 That's the way it's meant to [G]be
 {end_of_verse}
+
+
+
+

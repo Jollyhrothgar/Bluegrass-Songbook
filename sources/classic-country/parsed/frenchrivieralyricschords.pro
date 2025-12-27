@@ -1,5 +1,8 @@
 {meta: title French Riviera}
 {meta: artist Webb Pierce}
+{meta: x_source classic-country}
+{meta: x_source_file frenchrivieralyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]On the French Riviera I met a girl named [Dm]Macharia
@@ -37,3 +40,8 @@
 [G7]Till the day I return I'll have been rich to burn
 [C]On the French Riviera
 {end_of_verse}
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Ruby Don't Take Your Love to Town}
 {meta: artist Mel Tillis}
+{meta: x_source classic-country}
+{meta: x_source_file rubydonttakeyourlovetotownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You've painted up your lips and rolled and [C]curled your tinted [D7]hair
@@ -30,3 +33,6 @@ Oh [G]Ru--by [C]don't take your love [D7]to [G]town
 Ruby [C]for God sake's turn [G]around 
 Don't [C]take your love [D7]to [G]town 
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Little Mountain Church House}
 {meta: artist Ricky Skaggs}
 {meta: composer Carl Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file littlemountainchurchhouselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a little mountain church in my thoughts of [F]yesterday
@@ -36,3 +39,7 @@ Has [C]become my life's corner [G7]stone
 It was [C]there in that little mountain church [F]house
 I first [C]heard the word I've [G7]based my life [C]upon
 {end_of_verse}
+
+
+
+

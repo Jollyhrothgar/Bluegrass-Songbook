@@ -1,6 +1,9 @@
 {meta: title Let The Four Winds Choose}
 {meta: artist Hank Thompson}
 {meta: composer Hank Thompson and Presley Lewis}
+{meta: x_source classic-country}
+{meta: x_source_file letthefourwindschooselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]North south [F]east or west
@@ -85,3 +88,14 @@ I [G7]just can't figure which a [C]way is best
 I'm a ramblin' man not [F]much to lose
 [G7]I just wait and let the [C]four winds choose
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

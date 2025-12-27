@@ -1,6 +1,9 @@
 {meta: title Adalida}
 {meta: artist George Strait}
 {meta: composer Mike Geiger, Mike Huffman, Woody Mullis}
+{meta: x_source classic-country}
+{meta: x_source_file adalidalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Adalida pretty little Cajun [G7]queen
@@ -63,3 +66,9 @@ To stand beside you sweet Adalida
 Just to stand beside a my sweet Adalida
 I’d swim the Pontchar[C]train
 {end_of_verse}
+
+
+
+
+
+

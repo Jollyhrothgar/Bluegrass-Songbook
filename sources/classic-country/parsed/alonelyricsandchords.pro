@@ -1,5 +1,8 @@
 {meta: title Alone}
 {meta: artist Ricky Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file alonelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've [F]waited for the [C]sunrise [F]but it never [C]came
@@ -22,3 +25,5 @@
 I just [F]smile and say I'm [C]doing fine [F]I'm glad [G7]that I'm [C]alone
 I [F]guess I'll [G7]go back [C]home [F]I'll al[G7]ways be a[C]lone
 {end_of_verse}
+
+

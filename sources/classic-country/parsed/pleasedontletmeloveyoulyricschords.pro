@@ -1,6 +1,9 @@
 {meta: title Please Don't Let Me Love You Chords}
 {meta: artist Hank Williams}
 {meta: composer Ralph Jones}
+{meta: x_source classic-country}
+{meta: x_source_file pleasedontletmeloveyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh plea-ease  don't let me love [F]you
@@ -29,3 +32,6 @@ When I'm [G7]lonely I want you [C]only
 Oh [C]plea-ease  don't let me love [F]you
 'Cause I [C]know [G7]you'll be [C]untrue
 {end_of_verse}
+
+
+

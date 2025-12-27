@@ -1,5 +1,8 @@
 {meta: title June Or September}
 {meta: artist Blaze Foley}
+{meta: x_source classic-country}
+{meta: x_source_file juneorseptemberlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It was June or September I [F]don't rightly [C]remember
@@ -35,3 +38,7 @@ The first time I [G7]laid eyes on [C]you
 It was June or September [F]Seattle or [C]Denver
 The first time I [G7]laid eyes on [C]you               
 {end_of_verse}
+
+
+
+

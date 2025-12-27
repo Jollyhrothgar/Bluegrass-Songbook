@@ -1,6 +1,9 @@
 {meta: title You’re My Jamaica}
 {meta: artist Charley Pride}
 {meta: composer Kent Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file youremyjamaicalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Everyday I read ads in the paper saying [D7]come to the island 
@@ -29,3 +32,6 @@ You're my is[D7]land when I'm being tossed on a stormy [G]sea
 My heavenly haven where I could spend eterni[C]ty
 You're my Ja[D7]maica you're paradise to [G]me
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Rodeo Romeo}
 {meta: artist Moe Bandy}
 {meta: composer Dan Mitchell}
+{meta: x_source classic-country}
+{meta: x_source_file rodeoromeolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He’ll dust off his hat clean out his old pickup [F]truck
@@ -31,3 +34,6 @@ He [F]loves what he does and he [D7]does what he loves every [G7]night
 He’ll [C]hit the dancehalls flashing the girls his best [F]smile
 He’s [G7]burning both ends of the candle  [F]Rodeo Romeo [C][G7]style
 {end_of_verse}
+
+
+

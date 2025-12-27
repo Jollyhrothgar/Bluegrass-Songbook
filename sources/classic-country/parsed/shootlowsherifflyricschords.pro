@@ -1,6 +1,9 @@
 {meta: title Shoot Low Sheriff}
 {meta: artist John Anderson}
 {meta: composer Monroe Fields and Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file shootlowsherifflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 Shoot Low Sheriff
@@ -54,3 +57,11 @@ By John Anderson
 Shoot Low Sheriff
 By John Anderson
 {end_of_verse}
+
+
+
+
+
+
+
+

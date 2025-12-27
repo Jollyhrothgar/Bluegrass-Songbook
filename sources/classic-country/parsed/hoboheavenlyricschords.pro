@@ -1,6 +1,9 @@
 {meta: title Hobo Heaven}
 {meta: artist Boxcar Willie}
 {meta: composer Lloene S. Martin, Billy Ray Palmerand Vern Stovall}
+{meta: x_source classic-country}
+{meta: x_source_file hoboheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I am going home to hobo heaven 
@@ -40,3 +43,8 @@ Where I can watch the lights of Dallas [C]glow
 {start_of_verse: Verse 5}
 [G7]Hobo heaven's where I wanna [C]go
 {end_of_verse}
+
+
+
+
+

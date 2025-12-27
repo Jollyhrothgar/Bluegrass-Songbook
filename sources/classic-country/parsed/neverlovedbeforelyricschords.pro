@@ -1,5 +1,8 @@
 {meta: title Never Loved Before}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file neverlovedbeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Girl I swear you [F]got me acting [G7]crazy
@@ -63,3 +66,13 @@ Oh I [F]love you like I [C]never loved before
 Oh I [F]love you like I [C]never oh I [F]love you like I [C]never
 Oh I [F]love you like I [C]never loved before
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

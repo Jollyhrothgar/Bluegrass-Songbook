@@ -1,6 +1,9 @@
 {meta: title I'll Take Any Chance I Can With You}
 {meta: artist Kris Kristofferson}
 {meta: composer Kris Kristofferson and Clark}
+{meta: x_source classic-country}
+{meta: x_source_file illtakeanychanceicanwithyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am]We know [F]better it was [C]bitter [Am]baby
@@ -36,3 +39,7 @@
 {start_of_verse: Verse 4}
 [F]I'll take any [Em]chance I can with [C]you
 {end_of_verse}
+
+
+
+

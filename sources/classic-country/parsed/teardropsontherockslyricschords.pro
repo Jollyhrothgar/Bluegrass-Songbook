@@ -1,6 +1,9 @@
 {meta: title Teardrops On The Rocks}
 {meta: artist Jim Reeves}
 {meta: composer Bobby Bare and Charlie Williams}
+{meta: x_source classic-country}
+{meta: x_source_file teardropsontherockslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well hello Sam now how you been
@@ -52,3 +55,10 @@ Oh but without her here it's not the same
 [F]Those soft lights shining in her [C]hair
 [F]And she's saying she loves [C]me
 {end_of_verse}
+
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title Undercover Cowboy}
 {meta: artist Clint Black}
+{meta: x_source classic-country}
+{meta: x_source_file undercovercowboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sneakin' all [Dm]around
@@ -88,3 +91,15 @@ How to get under the [Dm]cover with [D7]you
 [D7]Undercover [C]cowboy undercover [G]cowboy
 Undercover [Dm]cowboy
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

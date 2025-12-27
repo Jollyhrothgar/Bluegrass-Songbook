@@ -1,6 +1,9 @@
 {meta: title One Step Ahead Of The Storm}
 {meta: artist Tracy Lawrence}
 {meta: composer Larry Boone, Paul Nelson, Tracy Lawrence}
+{meta: x_source classic-country}
+{meta: x_source_file onestepaheadofthestormlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Broke down on the [Em]interstate [C]just outside of [G]Wichita
@@ -49,3 +52,9 @@ One step [D7]ahead of the [G]storm
 {start_of_verse: Verse 5}
 Oh [D7]we were [C]one step [D7]ahead of the [G]storm
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Live And Learn}
 {meta: artist Ricky Nelson}
 {meta: composer Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file liveandlearnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Your baby said goodbye like I knew she would
@@ -41,3 +44,8 @@ Just live and [D7]learn live and learn baby live and [G]learn
 You gotta live and [D7]learn baby live and learn live and [G]learn
 You gotta live and [D7]learn live and learn live and [G]learn
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title It Could Have Been So Good}
 {meta: artist Tammy Wynette}
 {meta: composer Chris Waters and Lonnie Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file itcouldhavebeensogoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I think about you leaving and being here [C]alone
@@ -34,3 +37,7 @@ You see it's [D7]not that it [G]was so bad [D7]it just could've been so [Em]good
 {start_of_verse: Verse 5}
 [A7]Oh you see it's [D7]not that it was so bad it just could've been so [G]good
 {end_of_verse}
+
+
+
+

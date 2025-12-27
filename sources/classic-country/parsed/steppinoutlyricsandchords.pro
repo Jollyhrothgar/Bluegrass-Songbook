@@ -1,6 +1,9 @@
 {meta: title Steppin' Out}
 {meta: artist Lefty Frizzell}
 {meta: composer Billy Starr}
+{meta: x_source classic-country}
+{meta: x_source_file steppinoutlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When me and my baby go steppin' out
@@ -43,3 +46,8 @@ We're steppin' out [C]I've got the time
 And that's just fine
 I'll stick to her like a [G7]melon on a [C]vine
 {end_of_verse}
+
+
+
+
+

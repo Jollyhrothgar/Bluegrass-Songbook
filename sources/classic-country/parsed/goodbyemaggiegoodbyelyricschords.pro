@@ -1,6 +1,9 @@
 {meta: title Goodbye Maggie Goodbye}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file goodbyemaggiegoodbyelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Maggie lies under the [F]cold freshly [C]turned ground
@@ -36,3 +39,7 @@ Goodbye [F]Maggie Maggie [C]goodbye
 I miss you so I can't help but [F]cry 
 I [C]love you [Am]so [F]goodbye [G7]Maggie [C]goodbye [G7]
 {end_of_verse}
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title I Won't Be Needing You}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file iwontbeneedingyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't need these fingers to [F]count how long you're [C]gone
@@ -25,3 +28,6 @@ And [F]when there's nothing [C]left of me I [G7]won't be needing [C]you
 {start_of_verse: Verse 4}
 And [F]when there's nothing [C]left of me I [G7]won't be needing [C]you
 {end_of_verse}
+
+
+

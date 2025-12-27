@@ -1,5 +1,8 @@
 {meta: title I Wonder}
 {meta: artist Asleep At The Wheel}
+{meta: x_source classic-country}
+{meta: x_source_file iwonderlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Every time I'm near you  [G7]my heart jumps all [C]about
@@ -22,3 +25,5 @@
 [A7]Your love may linger on  [D7]but I [G]wonder
 [D7]I wonder   yeah I [G]wonder
 {end_of_verse}
+
+

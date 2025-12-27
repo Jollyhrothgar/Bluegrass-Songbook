@@ -1,6 +1,9 @@
 {meta: title I Sat Back And Let It Happen}
 {meta: artist Don Gibson}
 {meta: composer Paul Hampton}
+{meta: x_source classic-country}
+{meta: x_source_file isatbackandletithappenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well he took my woman [F]away from [C]me
@@ -46,3 +49,8 @@ If you come back you'll [F]stay right [C]here
 I'll love you so you can't forget it
 And [G7]we'll sat back and let it [C]happen
 {end_of_verse}
+
+
+
+
+

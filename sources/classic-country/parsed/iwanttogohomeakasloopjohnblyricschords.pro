@@ -1,5 +1,8 @@
 {meta: title I Want To Go Home (aka Sloop John B)}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file iwanttogohomeakasloopjohnblyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We sailed on the ship John B  my grandfather and me
@@ -35,3 +38,7 @@ So hoist up the John B sail see how the mainsail sets
 [C]Let me go home  why don't you let me go [F]home
 [C]Well I feel so homesick [G7]I wanna go [C]home
 {end_of_verse}
+
+
+
+

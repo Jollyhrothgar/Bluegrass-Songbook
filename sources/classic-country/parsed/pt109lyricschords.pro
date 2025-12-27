@@ -1,6 +1,9 @@
 {meta: title P. T. 109}
 {meta: artist Jimmy Dean}
 {meta: composer Marijohn Wilkin & Fred Burch}
+{meta: x_source classic-country}
+{meta: x_source_file pt109lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In forty-three they put to [F]sea
@@ -85,3 +88,14 @@ The P. T. 109 was [F]gone
 Spoken:
 Which proves it's hard to get the best of a man named John
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

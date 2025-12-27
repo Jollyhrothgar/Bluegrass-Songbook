@@ -1,6 +1,9 @@
 {meta: title Making Memories Of Us}
 {meta: artist Tracy Byrd}
 {meta: composer Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file makingmemoriesofuslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna be here for you [G7]baby [C]I'll be a man of my [F]word
@@ -33,3 +36,6 @@ Cause I'm gonna [C]love you [F]like nobody [C]loves you
 [F]Yeah I'm gonna [C]love you [F]like nobody [C]loves you
 [F]And I'll win your [Am]trust making [G7]memories of [C]us
 {end_of_verse}
+
+
+

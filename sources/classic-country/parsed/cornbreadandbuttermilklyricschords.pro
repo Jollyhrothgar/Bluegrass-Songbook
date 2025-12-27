@@ -1,6 +1,9 @@
 {meta: title Cornbread And Buttermilk}
 {meta: artist Little Jimmy Dickens}
 {meta: composer Roland Johnson and Earl Nunn}
+{meta: x_source classic-country}
+{meta: x_source_file cornbreadandbuttermilklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When you was just a little boy remember how your ma
@@ -47,3 +50,8 @@ I [C]eat it every [G]mornin' I [A7]eat it noon and [D7]night
 Some [G]people like fried chicken while others like their ham
 But [C]cornbread and [G]buttermilk [D7]made me what I [G]am
 {end_of_verse}
+
+
+
+
+

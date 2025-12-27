@@ -1,6 +1,9 @@
 {meta: title He Ain't Gone For Good}
 {meta: artist Gene Watson}
 {meta: composer Dirk Johnson and David S. Kraft}
+{meta: x_source classic-country}
+{meta: x_source_file heaintgoneforgoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Jesus virgin our salvation from the borrowed grave
@@ -44,3 +47,8 @@ Though He [D7]seems good and gone He ain't gone for [G]good
 It's the [C]reason for believing He's the [G]only one who [C]could
 Though He [D7]seems good and gone He ain't gone for [G]good 
 {end_of_verse}
+
+
+
+
+

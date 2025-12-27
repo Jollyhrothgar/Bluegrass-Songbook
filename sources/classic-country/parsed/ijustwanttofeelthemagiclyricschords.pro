@@ -1,6 +1,9 @@
 {meta: title I Just Want To Feel The Magic}
 {meta: artist Tommy Overstreet}
 {meta: composer Rory Bourke and Mel McDaniel}
+{meta: x_source classic-country}
+{meta: x_source_file ijustwanttofeelthemagiclyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]A miracle man of love [D7]found me yester[G]day
@@ -51,3 +54,9 @@ Thanks to the man with the [G]ready made plan
 For [A7]putting you in con[D7]trol 
 I [G]just want to feel the [C]magic [D7]honey put your touch on [G]me
 {end_of_verse}
+
+
+
+
+
+

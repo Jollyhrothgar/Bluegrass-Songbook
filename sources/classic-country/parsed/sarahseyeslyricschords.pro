@@ -1,6 +1,9 @@
 {meta: title Sarah's Eyes}
 {meta: artist Vern Gosdin}
 {meta: composer Shirl Milete and Vern Gosdin}
+{meta: x_source classic-country}
+{meta: x_source_file sarahseyeslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I found her in the morning sunshine [F]standing by the [Dm]road
@@ -42,3 +45,8 @@ She said [Dm]I'll be [G7]waiting [C]for you
 Until we're back [F]toget[Dm]her 
 No [G7]life will ever shine in Sarah's [C]eyes
 {end_of_verse}
+
+
+
+
+

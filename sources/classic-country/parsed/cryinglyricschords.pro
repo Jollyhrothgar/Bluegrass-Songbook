@@ -1,6 +1,9 @@
 {meta: title Crying}
 {meta: artist Roy Orbison}
 {meta: composer Joe Melson and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file cryinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I was all right for a while
@@ -71,3 +74,16 @@ Than I did before
 [C]I'll be crying crying [F]crying [Fm]crying
 [C]Yeah crying [Am]crying  [F]ov-er [C][G7]you
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

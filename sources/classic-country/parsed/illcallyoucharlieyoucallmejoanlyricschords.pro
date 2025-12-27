@@ -1,6 +1,9 @@
 {meta: title I'll Call You Charlie (You Call Me Joan)}
 {meta: artist George Morgan}
 {meta: composer Roy Kitson}
+{meta: x_source classic-country}
+{meta: x_source_file illcallyoucharlieyoucallmejoanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The [F]one that we're tied to won't [C]know who's on the phone
@@ -25,3 +28,6 @@ If [G7]I call you Charlie and I call you [C]Joan
 The [F]one that we're tied to won't [C]know who's on the phone
 If [G7]I call you Charlie and I call you [F]Joa[C]n
 {end_of_verse}
+
+
+

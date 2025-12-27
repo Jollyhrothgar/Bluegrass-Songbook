@@ -1,6 +1,9 @@
 {meta: title Try To Remember}
 {meta: artist Roy Orbison}
 {meta: composer Tom Jones and Harvey Schmidt}
+{meta: x_source classic-country}
+{meta: x_source_file trytorememberlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Try to [Em]remember the [Dm]kind of Sep[G7]tember
@@ -29,3 +32,6 @@ The [C]fire of [F]September that [A#7]made you [G7]mellow
 [C]Deep in [Em]December it's [Dm]nice to re[G7]member
 And [C]follow [Em]    [Dm]    [G7]    [C]
 {end_of_verse}
+
+
+

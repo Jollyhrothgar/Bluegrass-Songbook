@@ -1,6 +1,9 @@
 {meta: title Two Sides To Every Story}
 {meta: artist Willie Nelson}
 {meta: composer Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file twosidestoeverystorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There must be two [D7]sides to every [G]story [G7]
@@ -33,3 +36,7 @@ Come on home and tell me [D7]yours I love you [G]so
 {start_of_verse: Verse 4}
 Come on home and tell me [D7]yours I love you [G]so  
 {end_of_verse}
+
+
+
+

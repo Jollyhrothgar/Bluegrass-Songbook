@@ -1,4 +1,7 @@
 {meta: artist Roy Payne}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldnttakeamilliondollarsforasinglemapleleaflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 I Wouldn't Take A Million Dollars 
@@ -63,3 +66,11 @@ And [G7]forever keep us [C]free
 I wouldn't [F]take a million [C]dollars
 For a [G7]single maple [F]leaf[Fm]    [C]
 {end_of_verse}
+
+
+
+
+
+
+
+

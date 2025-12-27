@@ -1,6 +1,9 @@
 {meta: title Fit To Be Tied Down}
 {meta: artist Sammy Kershaw}
 {meta: composer Wynn Varble and Charles Victor}
+{meta: x_source classic-country}
+{meta: x_source_file fittobetieddownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This ain't hoops this ain't [C][F]hopscotch
@@ -42,3 +45,8 @@
 [F]And this ain't cards it's our hearts we're dealing [C]with [C][F]now
 [G7]No more games for me [F]girl I'm fit [G7]to be [C]tied [C][F]down
 {end_of_verse}
+
+
+
+
+

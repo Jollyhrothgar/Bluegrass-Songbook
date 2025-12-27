@@ -1,5 +1,8 @@
 {meta: title Why Don't My Mommy Stay With My Daddy And Me}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file whydontmymommystaywithmydaddyandmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why [F]don't my mommy stay with my [C]daddy and me
@@ -21,3 +24,5 @@ Why [F]don't my mommy stay with my [C]daddy and me
 [C]Why don’t you come home [F]then we won’t be [C]alone
 Why [F]don't my mommy [C]stay with my [G7]daddy and [C]me
 {end_of_verse}
+
+

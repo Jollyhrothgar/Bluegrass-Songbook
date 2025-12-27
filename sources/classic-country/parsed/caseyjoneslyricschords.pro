@@ -1,6 +1,9 @@
 {meta: title Casey Jones}
 {meta: artist Johnny Cash}
 {meta: composer Lawrence Seibert and Ernie Newton}
+{meta: x_source classic-country}
+{meta: x_source_file caseyjoneslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Come all you rounders if you wanna hear
@@ -78,3 +81,13 @@ Casey Jones climbed in the [D7]cabin
 [G]Casey Jones leaning out the [D7]window
 [G]Making a trip to the [D7]Promised [G]Land
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

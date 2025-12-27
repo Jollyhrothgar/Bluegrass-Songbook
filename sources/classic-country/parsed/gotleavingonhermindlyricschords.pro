@@ -1,6 +1,9 @@
 {meta: title Got Leaving On Her Mind}
 {meta: artist Charlie Pride}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file gotleavingonhermindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She don't hold and [F]kiss me like [C]she did one [Am]time
@@ -46,3 +49,10 @@
 {start_of_verse: Verse 5}
 [F]I think my sweet [G7]baby's got leaving on her [C]mind
 {end_of_verse}
+
+
+
+
+
+
+

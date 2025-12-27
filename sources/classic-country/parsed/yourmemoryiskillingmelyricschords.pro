@@ -1,6 +1,9 @@
 {meta: title Your Memory Is Killing Me}
 {meta: artist The Survivors}
 {meta: composer Guyanne McCall}
+{meta: x_source classic-country}
+{meta: x_source_file yourmemoryiskillingmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I went to the doctor yesterday
@@ -27,3 +30,6 @@ Repeat Last Verse
 {start_of_verse: Verse 4}
 Your memory is [G7]killing me this [C]time
 {end_of_verse}
+
+
+

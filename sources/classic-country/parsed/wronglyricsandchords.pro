@@ -1,6 +1,9 @@
 {meta: title Wrong}
 {meta: artist Ferlin Husky}
 {meta: composer Pee Wee Maddux and Mario Carpenter}
+{meta: x_source classic-country}
+{meta: x_source_file wronglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Would it be [Em]wrong to [Dm]love you [G7]you know how much I [C]care
@@ -23,3 +26,5 @@
 [Dm]My heart may [G7]break [C]but [Am]for my sake I [D7]wonder [G7]would it be [E7]wrong [A7]
 I [D7]wonder [G7]would it be [C]wrong
 {end_of_verse}
+
+

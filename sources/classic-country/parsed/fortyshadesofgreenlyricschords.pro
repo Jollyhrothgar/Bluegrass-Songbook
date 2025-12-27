@@ -1,5 +1,8 @@
 {meta: title Forty Shades of Green}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file fortyshadesofgreenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I close my eyes and picture the emerald of the [F]sea
@@ -28,3 +31,6 @@
 [C]Again I want to see and do the things we've done and [F]seen
 [C]Where the breeze is sweet as Shalimar [F]and there's [G7]forty shades of [C]green
 {end_of_verse}
+
+
+

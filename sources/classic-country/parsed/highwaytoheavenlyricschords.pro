@@ -1,6 +1,9 @@
 {meta: title Highway To Heaven}
 {meta: artist Jimmie Davis}
 {meta: composer Thomas A Dorsey}
+{meta: x_source classic-country}
+{meta: x_source_file highwaytoheavenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It’s a [F]highway to [C]heaven
@@ -61,3 +64,13 @@ Walking up the King’s [C]highway
 It’s a [F]highway to [C]heaven
 I’m walking up the King’s [C][G7]highway
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+

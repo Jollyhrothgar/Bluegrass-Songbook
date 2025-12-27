@@ -1,6 +1,9 @@
 {meta: title I'd Just As Soon Go}
 {meta: artist George Strait}
 {meta: composer Dean Dillon and Aaron Baker}
+{meta: x_source classic-country}
+{meta: x_source_file idjustassoongolyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You say you want to talk it over [Am]want to try again
@@ -33,3 +36,7 @@ I'd just as soon [C]stop I'd just as soon end the [Am]madness
 {start_of_verse: Verse 4}
 [F]Knowing [C]what I [G7]know I'd just as soon [C]go
 {end_of_verse}
+
+
+
+

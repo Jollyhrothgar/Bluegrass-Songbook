@@ -1,6 +1,9 @@
 {meta: title The Whole World Comes To Me}
 {meta: artist Jack Greene}
 {meta: composer Betty Walker}
+{meta: x_source classic-country}
+{meta: x_source_file thewholeworldcomestomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The pages of the past are filled
@@ -48,3 +51,9 @@ And the [F]whole world [G7]comes to [C]me
 I just climb [F]one flight of [G7]stairs and ring the [C]doorbell
 And the [F]whole world [G7]comes to [C]me
 {end_of_verse}
+
+
+
+
+
+

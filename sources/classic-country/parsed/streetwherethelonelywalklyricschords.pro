@@ -1,6 +1,9 @@
 {meta: title Street Where The Lonely Walk}
 {meta: artist Connie Smith}
 {meta: composer Gladness Jennings}
+{meta: x_source classic-country}
+{meta: x_source_file streetwherethelonelywalklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The street where the [Em]lonely walk is [C]calling to [G]me
@@ -36,3 +39,7 @@
 [G]The street where the [Em]glory is is [C]pretty to [G]see
 [Em]But the street where the [C]lonely walk is calling calling [G]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title I Met A Friend Of Yours Today}
 {meta: artist Mel Street}
 {meta: composer Bob McDill and Wayland Holyfield}
+{meta: x_source classic-country}
+{meta: x_source_file imetafriendofyourstodaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes I know I'm late getting home [F]tonight
@@ -34,3 +37,7 @@ And all [C]because I met a [G7]friend of yours [C]today
 And ain't it sad a love like ours should end this [F]way
 And all [C]because I met a [G7]friend of yours [C]today
 {end_of_verse}
+
+
+
+

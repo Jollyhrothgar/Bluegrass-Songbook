@@ -1,6 +1,9 @@
 {meta: title Canaan's Land}
 {meta: artist Don Gibson}
 {meta: composer A.P. Carter}
+{meta: x_source classic-country}
+{meta: x_source_file canaanslandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G](I'm on my way I'm on my way)
@@ -40,3 +43,8 @@ I'm on my way to Canaan's [G]land
 I've done signed up made up my [C]mind
 I'm on my [D7]way to Canaan's [G]land
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title She Knows When You're On My Mind}
 {meta: artist George Strait}
 {meta: composer Wayne Kemp and Mack Vickery}
+{meta: x_source classic-country}
+{meta: x_source_file sheknowswhenyoureonmymindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]She knows she's holdin' someone who don't [F]love her
@@ -31,3 +34,6 @@ And you come [C]runnin' through my mind
 And I [F]let my memory [C]chase you
 She knows when you're [G7]on my mind [C]again
 {end_of_verse}
+
+
+

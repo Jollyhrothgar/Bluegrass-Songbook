@@ -1,5 +1,8 @@
 {meta: title I'm All Wrapped Up In You}
 {meta: artist Don Gibson}
+{meta: x_source classic-country}
+{meta: x_source_file imallwrappedupinyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You  and the [Dm]good times
@@ -27,3 +30,6 @@ So darlin' please  put your [Dm]hand in mine
 Cause [F]I'm  all [G7]wrapped up in [C]you
 Yes [F]I'm  all [G7]wrapped up in [C]you
 {end_of_verse}
+
+
+

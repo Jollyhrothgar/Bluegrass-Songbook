@@ -1,6 +1,9 @@
 {meta: title For The Memories}
 {meta: artist Gene Watson}
 {meta: composer Joe Allen}
+{meta: x_source classic-country}
+{meta: x_source_file forthememorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]We've gone as far together as [F]love will let us [C]go
@@ -33,3 +36,7 @@ And I'm saving it [G7]all for the [C][F]memo-ries
 {start_of_verse: Verse 4}
 Yes I'm saving it [G7]all for the [C][F]memo-ries
 {end_of_verse}
+
+
+
+

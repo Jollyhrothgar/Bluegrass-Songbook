@@ -1,6 +1,9 @@
 {meta: title Angels}
 {meta: artist Randy Travis}
 {meta: composer Harvey Harold McNalley, Barclay Anthony Moore}
+{meta: x_source classic-country}
+{meta: x_source_file angelslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Me and some of the boys were sitting around the other night
@@ -71,3 +74,14 @@ Well I might believe in all that [C]stuff
 {start_of_verse: Verse 11}
 That's right
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+

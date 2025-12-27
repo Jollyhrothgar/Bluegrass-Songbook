@@ -1,5 +1,8 @@
 {meta: title Bill Monroe For Breakfast}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file billmonroeforbreakfastlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]When I was just a little boy we [C]lived down on a [G]farm
@@ -49,3 +52,9 @@ And we had Bill Monroe for breakfast [D7]every [G]day
 {start_of_verse: Verse 5}
 We had Bill Monroe for breakfast [D7]every [G]day
 {end_of_verse}
+
+
+
+
+
+

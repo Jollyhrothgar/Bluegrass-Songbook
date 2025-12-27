@@ -1,6 +1,9 @@
 {meta: title Boxcar Blues}
 {meta: artist Boxcar Willie}
 {meta: composer Lecil T. Martin}
+{meta: x_source classic-country}
+{meta: x_source_file boxcarblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I lost all my money in a crooked poker game
@@ -47,3 +50,9 @@ You’ll get the [G7]boxcar blues and Lord you may never get [C]back
 {start_of_verse: Verse 7}
 You’ll get the [G7]boxcar blues and Lord you may never get [C]back
 {end_of_verse}
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title A Poor Man's Roses}
 {meta: artist Patsy Cline}
 {meta: composer Bob Hillard &amp; Milton Delugg}
+{meta: x_source classic-country}
+{meta: x_source_file apoormansroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I must make up my [C]mind today
@@ -29,3 +32,6 @@ Is the hand [F]I will [C]hold
 For the [Em]rose of love means [Dm]more to me
 More than [G7]any rich man's [C]gold
 {end_of_verse}
+
+
+

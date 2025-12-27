@@ -1,6 +1,9 @@
 {meta: title Ain't She Sweet}
 {meta: artist Ferlin Husky}
 {meta: composer Jack Yellen and Milton Ager}
+{meta: x_source classic-country}
+{meta: x_source_file aintshesweetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh ain't she [G7]sweet see her [Am]comin' down the [G7]street
@@ -29,3 +32,6 @@ Oh me oh [F]my ain't that [C]perfection [G7]
 Oh [C]I re[G7]peat don't you [C]think she's kinda [G7]neat
 Now I [C]ask you [E7]very [A7]confidentially [D7]ain't [G7]she [C]sweet
 {end_of_verse}
+
+
+

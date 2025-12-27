@@ -1,5 +1,8 @@
 {meta: title Empty Bed Blues}
 {meta: artist Johnny Horton}
+{meta: x_source classic-country}
+{meta: x_source_file emptybedblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well when the sun rose this morning
@@ -78,3 +81,15 @@ Don't you go and spread the news
 [G7]Cause your man will leave you
 [C]With those empty bed blues
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

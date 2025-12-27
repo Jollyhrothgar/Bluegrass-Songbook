@@ -1,6 +1,9 @@
 {meta: title Christmas In The Mountains}
 {meta: artist Faron Young}
 {meta: composer Bill Emerson and Jody Emerson}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasinthemountainslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Mama's busy making her own deco[C]rations
@@ -33,3 +36,7 @@ I'm coming home Bow Mountain 'cause it's [D7]Christmas time [G]again
 {start_of_verse: Verse 4}
 I'm coming home Bow Mountain 'cause it's [D7]Christmas time [G]again
 {end_of_verse}
+
+
+
+

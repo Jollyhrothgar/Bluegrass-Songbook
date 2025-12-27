@@ -1,6 +1,9 @@
 {meta: title If I Had A Cheating Heart}
 {meta: artist Mel Street}
 {meta: composer Wayland Holyfield and Al Turney}
+{meta: x_source classic-country}
+{meta: x_source_file ifihadacheatingheartlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Your ruby lips  [F]girl they [C]tempt
@@ -29,3 +32,6 @@ And oh baby you're making it [G7]hard
 And it would be [F]easy to let you please [C]me
 If I had a  [G7]cheating [C]heart
 {end_of_verse}
+
+
+

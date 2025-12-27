@@ -1,6 +1,9 @@
 {meta: title Can't Hurt A Man}
 {meta: artist Randy Travis}
 {meta: composer Lance Miller, Brad Warren, Brett Warren}
+{meta: x_source classic-country}
+{meta: x_source_file canthurtamanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don't mistake me for [Dm]somebody
@@ -42,3 +45,8 @@ Ah you [F]can't hurt a man who [G7]can't feel nothin' no [C]more
 Go on and put me down can't fall off the [Dm]floor
 Ah you [F]can't hurt a man who [G7]can't feel nothin' no [C]more
 {end_of_verse}
+
+
+
+
+

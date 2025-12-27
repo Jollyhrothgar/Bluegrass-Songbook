@@ -1,6 +1,9 @@
 {meta: title Teach Me To Forget}
 {meta: artist Merle Haggard}
 {meta: composer Leon}
+{meta: x_source classic-country}
+{meta: x_source_file teachmetoforgetlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You taught me how to love with all my [D7]heart
@@ -29,3 +32,6 @@ You say someday I'll find [C]somebody new
 [G]Stay awhile if what you say is [D7]true
 Stay and teach me to [G]forget
 {end_of_verse}
+
+
+

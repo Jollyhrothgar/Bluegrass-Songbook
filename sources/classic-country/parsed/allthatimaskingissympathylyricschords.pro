@@ -1,6 +1,9 @@
 {meta: title All That I'm Asking Is Sympathy}
 {meta: artist Slim Whitman}
 {meta: composer Benny Davis and Joe Burke}
+{meta: x_source classic-country}
+{meta: x_source_file allthatimaskingissympathylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You were all I had [F]now I feel so bad
@@ -26,3 +29,5 @@ I [G7]love you I need you [C]so before we part
 [F]Spare my aching heart
 [C]All that I'm asking [G7]is sympa[C]thy
 {end_of_verse}
+
+

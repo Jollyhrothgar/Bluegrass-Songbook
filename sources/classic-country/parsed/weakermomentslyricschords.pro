@@ -1,6 +1,9 @@
 {meta: title Weaker Moments}
 {meta: artist Ferlin Husky}
 {meta: composer Ray Buzzeo}
+{meta: x_source classic-country}
+{meta: x_source_file weakermomentslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I said I'm [C]leavin' this time we're [D7]through
@@ -33,3 +36,7 @@ You've got me [C]in my weaker [D7]moments [G]again
 {start_of_verse: Verse 5}
 You've got me [C]in my weaker [D7]moments [G]again
 {end_of_verse}
+
+
+
+

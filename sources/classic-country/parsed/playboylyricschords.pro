@@ -1,6 +1,9 @@
 {meta: title Playboy}
 {meta: artist Buck Owens}
 {meta: composer Eddie Miller and Bob Morris}
+{meta: x_source classic-country}
+{meta: x_source_file playboylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]They call me a [F]playboy well I'm making my [C]rounds
@@ -22,3 +25,5 @@
 [C]This false front I'm [F]wearing is just to cover my [C]blues
 [G7]And they may call me a playboy but I'm just lonesome for [C]you
 {end_of_verse}
+
+

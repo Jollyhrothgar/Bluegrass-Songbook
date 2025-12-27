@@ -1,6 +1,9 @@
 {meta: title Top Of The Mountain}
 {meta: artist Ray Price}
 {meta: composer Walter Mills}
+{meta: x_source classic-country}
+{meta: x_source_file topofthemountainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I've been traveling this [Am]low road for you[F]
@@ -38,3 +41,7 @@ And I'm [C]heading for the [G7]top of the [C]mountain
 Yes I'm [Am]going to the [G7]top of the [C]mountain
 I'm gonna [Am]make it to the [G7]top of the [F]mountain[C]
 {end_of_verse}
+
+
+
+

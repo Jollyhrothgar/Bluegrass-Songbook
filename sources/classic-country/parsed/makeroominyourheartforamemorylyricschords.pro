@@ -1,5 +1,8 @@
 {meta: title Make Room In Your Heart For A Memory}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file makeroominyourheartforamemorylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Am](Make room in your [D7]heart for a [G]dream)
@@ -37,3 +40,8 @@ Now and [G7]then just a [E7]thought of your [Am]used-to-[C]be
 {start_of_verse: Verse 6}
 [C](memo[G]ry)
 {end_of_verse}
+
+
+
+
+

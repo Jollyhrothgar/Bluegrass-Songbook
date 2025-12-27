@@ -1,6 +1,9 @@
 {meta: title I Could Love The Devil Out Of You Lyrics chords}
 {meta: artist Hank Thompson}
 {meta: composer Homer D. MacDonald}
+{meta: x_source classic-country}
+{meta: x_source_file icouldlovethedeviloutofyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m an all time sucker for a [D7]little ole gal like [G]you
@@ -33,3 +36,6 @@
 [C]I want you to be mine for [G]keeps
 [D7]Cause I could love the devil out of [G]you
 {end_of_verse}
+
+
+

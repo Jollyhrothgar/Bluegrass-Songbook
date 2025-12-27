@@ -1,6 +1,9 @@
 {meta: title Slow Rolling Low}
 {meta: artist Waylon Jennings}
 {meta: composer Billy Joe Shaver}
+{meta: x_source classic-country}
+{meta: x_source_file slowrollinglowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I got a slow rollin' low
@@ -29,3 +32,6 @@ Forgot the words to my [C]song
 Ain't that just like a [D7]fool to want a ride on them trains
 When the train is all [G]gone
 {end_of_verse}
+
+
+

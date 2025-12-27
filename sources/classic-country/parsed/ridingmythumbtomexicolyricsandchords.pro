@@ -1,5 +1,8 @@
 {meta: title Riding My Thumb to Mexico}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file ridingmythumbtomexicolyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]This old highway seems so lonesome when you're going where you've [Em]been
@@ -36,3 +39,7 @@ If there's any [C]place I haven't been at all that's where I'll [Am]go
 [F]I'm ridin' my thumb [C]til I see [Em]her [Am]again
 [C]So I'll  [F]ride my thumb [G7]to [C]Mexico
 {end_of_verse}
+
+
+
+

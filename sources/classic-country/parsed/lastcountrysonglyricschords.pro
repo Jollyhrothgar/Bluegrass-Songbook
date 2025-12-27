@@ -1,5 +1,8 @@
 {meta: title Last Country Song}
 {meta: artist Tom T. Hall}
+{meta: x_source classic-country}
+{meta: x_source_file lastcountrysonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's the last country song by the last country band
@@ -28,3 +31,6 @@ Dis[F]sension has [G7]torn us a[C]part
 It's the last country song on the last country station
 For they've broken the [G7]last country [C]heart
 {end_of_verse}
+
+
+

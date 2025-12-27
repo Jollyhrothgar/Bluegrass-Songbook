@@ -1,6 +1,9 @@
 {meta: title I Think I’ve Got A Love On For You}
 {meta: artist Moe Bandy}
 {meta: composer Dallas Frazier and Larry Lee}
+{meta: x_source classic-country}
+{meta: x_source_file ithinkivegotaloveonforyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What in this world has come and [D7]slipped up on me
@@ -33,3 +36,7 @@ I [G]think I've got a [D7]love on for [G]you
 {start_of_verse: Verse 4}
 I think I've got a [D7]love on for [G]you
 {end_of_verse}
+
+
+
+

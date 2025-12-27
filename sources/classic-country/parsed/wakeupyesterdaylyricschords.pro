@@ -1,6 +1,9 @@
 {meta: title Wake Up Yesterday}
 {meta: artist Clint Black}
 {meta: composer Clint Black and Hayden Nicholas}
+{meta: x_source classic-country}
+{meta: x_source_file wakeupyesterdaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [Dm]All in just a moment my [Gm]whole life passed before me
@@ -55,3 +58,10 @@ There's a [A#7]light at the [C]end of the [Am]tunnel I can [Dm]see
 No [A#7]I'm never gonna [A7]wake up yester[Dm]day 
 No [A#7]I'm never gonna wake [A7]up  [Dm]
 {end_of_verse}
+
+
+
+
+
+
+

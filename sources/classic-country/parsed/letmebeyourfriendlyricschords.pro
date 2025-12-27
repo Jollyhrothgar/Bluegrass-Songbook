@@ -1,6 +1,9 @@
 {meta: title Let Me Be Your Friend}
 {meta: artist The Stanley Brothers}
 {meta: composer Carter Stanley}
+{meta: x_source classic-country}
+{meta: x_source_file letmebeyourfriendlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Many times I've thought about you
@@ -50,3 +53,9 @@ Since you [C]say it is the [G]end
 Though I know that you don't love me
 Won't you [D7]let me be your [G]friend
 {end_of_verse}
+
+
+
+
+
+

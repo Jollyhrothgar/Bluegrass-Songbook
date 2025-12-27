@@ -1,6 +1,9 @@
 {meta: title Strike It Rich}
 {meta: artist Jim Reeves}
 {meta: composer Anton De Waal and Nico Carstens}
+{meta: x_source classic-country}
+{meta: x_source_file strikeitrichlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I'm gonna strike it rich I'm [F]gonna get my lucky [G7]break
@@ -32,3 +35,6 @@ Today our [C]hearts are feeling [A7]lighter
 We're gonna [D7]strike it rich  oh yes so [F]very rich
 We're gonna [D7]hit the road and [G7]strike it [C]rich
 {end_of_verse}
+
+
+

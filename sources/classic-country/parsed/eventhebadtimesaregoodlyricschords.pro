@@ -1,6 +1,9 @@
 {meta: title Even The Bad Times Are Good}
 {meta: artist George Jones}
 {meta: composer Carl Belew and Clyde Pitts}
+{meta: x_source classic-country}
+{meta: x_source_file eventhebadtimesaregoodlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If there's a chance that your heart misses 
@@ -44,3 +47,10 @@ Yes [G]even the [D7]bad times are [G]good
 The words I try to say with kisses
 If I [D7]don't seem to look as happy as I [G]should
 {end_of_verse}
+
+
+
+
+
+
+

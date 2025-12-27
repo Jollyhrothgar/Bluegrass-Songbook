@@ -1,5 +1,8 @@
 {meta: title Christmas Is Holy}
 {meta: artist Ferlin Husky}
+{meta: x_source classic-country}
+{meta: x_source_file Christmasisholylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C](Christmas is holy [G7]not a holi[C]day)
@@ -37,3 +40,8 @@ It's the day that's made to praise the one [G7]unseen
 It's been [C]changed from holy to a [G7]holi[C]day
 And we seldom stop to [G7]think of what it [C]means
 {end_of_verse}
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Big Love}
 {meta: artist Tracy Byrd}
 {meta: composer Michael Clark and Jeff Stevens}
+{meta: x_source classic-country}
+{meta: x_source_file biglovelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You need a man to get lost in 
@@ -51,3 +54,9 @@ I've got a big [C]love
 I've got a [F]big [C]love[F]
 [C]I've got a [F]big [C]love
 {end_of_verse}
+
+
+
+
+
+

@@ -1,5 +1,8 @@
 {meta: title The Table Next To Mine}
 {meta: artist Sonny James}
+{meta: x_source classic-country}
+{meta: x_source_file thetablenexttominelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Why do you always want to hurt [F]me
@@ -28,3 +31,6 @@
 [C]I walked away with all my [F]heartaches
 [G7]And I left them at the table next to [C]mine
 {end_of_verse}
+
+
+

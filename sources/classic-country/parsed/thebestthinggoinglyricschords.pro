@@ -1,6 +1,9 @@
 {meta: title The Best Thing Going}
 {meta: artist Johnny Rodriguez}
 {meta: composer Mike Geiger}
+{meta: x_source classic-country}
+{meta: x_source_file thebestthinggoinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]The day I knew that my love couldn’t hold [C]you
@@ -34,3 +37,7 @@ Till the [G]best thing you [D7]got going is [G]gone
 No you never really see how [C]bad goodbye can be
 Till the [G]best thing you [D7]got going is [G]gone
 {end_of_verse}
+
+
+
+

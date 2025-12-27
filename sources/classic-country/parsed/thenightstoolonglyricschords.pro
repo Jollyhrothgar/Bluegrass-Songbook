@@ -1,6 +1,9 @@
 {meta: title The Night's Too Long}
 {meta: artist Patty Loveless}
 {meta: composer Lucinda Williams}
+{meta: x_source classic-country}
+{meta: x_source_file thenightstoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sylvia was working as a [C]waitress in Beaumont
@@ -52,3 +55,9 @@ She [D7]doesn't want the [C]night don't want it to [G]end
 {start_of_verse: Verse 6}
 [C]Don't want it to [G]end
 {end_of_verse}
+
+
+
+
+
+

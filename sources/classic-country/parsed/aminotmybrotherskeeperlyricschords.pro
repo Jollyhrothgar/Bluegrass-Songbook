@@ -1,6 +1,9 @@
 {meta: title Am I Not My Brother's Keeper}
 {meta: artist Wanda Jackson}
 {meta: composer Kenny O'Dell and Larry Henley}
+{meta: x_source classic-country}
+{meta: x_source_file aminotmybrotherskeeperlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If he comes to me [F]stumbling [C]from the weight of his [G]load
@@ -25,3 +28,6 @@ To show a little love some[D7]time
 [G]Am I [D7]not my brother's [Em]keepe[G]r [C]am I [Am]not my brother's [D7]friend
 [G]If I'm [D7]not my brother's [Em]keep[G]er [C]who will [Am]look out [D7]after [G]him
 {end_of_verse}
+
+
+

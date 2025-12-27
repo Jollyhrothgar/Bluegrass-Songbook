@@ -1,6 +1,9 @@
 {meta: title Better Things Than These}
 {meta: artist Faron Young}
 {meta: composer Red Hayes and Iris Franks}
+{meta: x_source classic-country}
+{meta: x_source_file betterthingsthantheselyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You thought you'd set the world on fire that life was just a [C]song
@@ -22,3 +25,5 @@ To [D7]see you in another's arm and know you're happy [G]there
 My heart is broken still I try a jealous heart to [C]please
 It's [G]hard to smile but [C]God may show me [D7]better things than [G]these
 {end_of_verse}
+
+

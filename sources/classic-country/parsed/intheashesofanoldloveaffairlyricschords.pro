@@ -1,6 +1,9 @@
 {meta: title In The Ashes Of An Old Love Affair}
 {meta: artist Marty Robbins}
 {meta: composer Leon Douglas}
+{meta: x_source classic-country}
+{meta: x_source_file intheashesofanoldloveaffairlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]In the ashes of an old love I found the spark burning [G7]yet
@@ -22,3 +25,5 @@ And it [G7]thrilled me to think there [F]could still be a [C]chance
 In [F]these smoldering embers I saw [C]love burning bright
 In the [G7]ashes of an old love [F]aff-ai[C]r
 {end_of_verse}
+
+

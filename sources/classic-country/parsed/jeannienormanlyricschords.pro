@@ -1,6 +1,9 @@
 {meta: title Jeannie Norman}
 {meta: artist Charley Pride}
 {meta: composer Dale Morris}
+{meta: x_source classic-country}
+{meta: x_source_file jeannienormanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It's been ten long and [F]lonely years since [C]I've been to my hometown
@@ -33,3 +36,7 @@ Just to [G7]hold Jeannie close one more [C]time
 {start_of_verse: Verse 4}
 Just to [G7]hold Jeannie close one more [C]time
 {end_of_verse}
+
+
+
+

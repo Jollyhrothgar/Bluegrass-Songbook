@@ -1,5 +1,8 @@
 {meta: title We Are The Shepherds}
 {meta: artist Johnny Cash}
+{meta: x_source classic-country}
+{meta: x_source_file wearetheshepherdslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]So here is the [G7]stable and [C]there is the [G7]manger
@@ -42,3 +45,8 @@
 [C]Oh the beautiful singin' of heavenly [F]choirs
 [C]We had to come see Him [G7]we had to come [C]here
 {end_of_verse}
+
+
+
+
+

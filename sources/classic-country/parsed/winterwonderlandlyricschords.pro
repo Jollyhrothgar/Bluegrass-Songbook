@@ -1,3 +1,6 @@
+{meta: x_source classic-country}
+{meta: x_source_file winterwonderlandlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Sleigh bells ring are you listening
@@ -52,3 +55,12 @@ Though your nose gets a [G7]chilling
 We'll frolic and play the Eskimo way
 [D7]Walking in a [G7]winter [C]wonderland
 {end_of_verse}
+
+
+
+
+
+
+
+
+

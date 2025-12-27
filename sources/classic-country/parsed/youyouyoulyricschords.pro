@@ -1,6 +1,9 @@
 {meta: title You You You}
 {meta: artist Doyle Lawson}
 {meta: composer Robert Mellin}
+{meta: x_source classic-country}
+{meta: x_source_file youyouyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You you you [F]I'm in love with [C]you you you
@@ -43,3 +46,9 @@ If you say you [C]love [F]me [C]too
 {start_of_verse: Verse 5}
 You you you [F]I'm in love with [C]you 
 {end_of_verse}
+
+
+
+
+
+

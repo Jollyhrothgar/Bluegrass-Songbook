@@ -1,6 +1,9 @@
 {meta: title Don't You Believe Him}
 {meta: artist Reba McEntire}
 {meta: composer Nat Stuckey}
+{meta: x_source classic-country}
+{meta: x_source_file dontyoubelievehimlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]He can give you a reason to live if he [D7]wants to
@@ -30,3 +33,6 @@ And soon he'll be leaving [G]me
 Don't you [C]believe him if you [D7]do
 Then soon he'll be leaving [G]you too
 {end_of_verse}
+
+
+

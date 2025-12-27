@@ -1,6 +1,9 @@
 {meta: title Fan It}
 {meta: artist Bob Wills}
 {meta: composer Frankie Jaxon}
+{meta: x_source classic-country}
+{meta: x_source_file fanitlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If the sun’s too hot cool it if you can
@@ -36,3 +39,7 @@ Fanning that thang wouldn’t [C7]cost me at all
 [F]Fan it [C]fan it if you [G7]fan it and cool it
 Honey then you can’t go [C]wrong
 {end_of_verse}
+
+
+
+

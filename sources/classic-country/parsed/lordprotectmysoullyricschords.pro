@@ -1,6 +1,9 @@
 {meta: title Lord Protect My Soul}
 {meta: artist The Country Gentlemen}
 {meta: composer Bill Monroe}
+{meta: x_source classic-country}
+{meta: x_source_file lordprotectmysoullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Down life's highway alone I trod
@@ -43,3 +46,8 @@ To lead me [F]on to heaven's [C]door
 My life down here will soon be o'er
 And I want the Lord [G7]to protect my [C]soul
 {end_of_verse}
+
+
+
+
+

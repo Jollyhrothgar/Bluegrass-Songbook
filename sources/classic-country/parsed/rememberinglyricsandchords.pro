@@ -1,6 +1,9 @@
 {meta: title Remembering}
 {meta: artist Webb Pierce}
 {meta: composer Sylvia Fisher and Leon Miller}
+{meta: x_source classic-country}
+{meta: x_source_file rememberinglyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't regret the years I've spent loving only [G7]you
@@ -29,3 +32,6 @@ Re[G7]membering the love we [C]shared before
 Re[F]membering the past won't [C]set you free
 Re[G7]membering that's all that's [C]left for me
 {end_of_verse}
+
+
+

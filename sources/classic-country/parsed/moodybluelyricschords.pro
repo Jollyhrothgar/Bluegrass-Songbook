@@ -1,6 +1,9 @@
 {meta: title Moody Blue}
 {meta: artist Elvis Presley}
 {meta: composer Mark James}
+{meta: x_source classic-country}
+{meta: x_source_file moodybluelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Well it's hard to be a gambler betting on the number
@@ -39,3 +42,6 @@ Tell me who I'm [Am]talking to
 You're like [D7]night and day
 And it's hard to say which [G]one is you
 {end_of_verse}
+
+
+

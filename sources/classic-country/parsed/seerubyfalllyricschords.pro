@@ -1,6 +1,9 @@
 {meta: title See Ruby Fall}
 {meta: artist Johnny Cash}
 {meta: composer Johnny Cash and Roy Orbison}
+{meta: x_source classic-country}
+{meta: x_source_file seerubyfalllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I knew someday Ruby would be [F]leavin'
@@ -29,3 +32,6 @@ One man is not enough when she wants it [G7]all
 Yeah I [C]let her go when I [C7]saw what she [F]wanted
 Cause [G7]I don't care to see Ruby [C]fall
 {end_of_verse}
+
+
+

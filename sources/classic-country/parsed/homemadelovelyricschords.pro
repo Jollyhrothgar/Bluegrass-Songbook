@@ -1,6 +1,9 @@
 {meta: title Home Made Love}
 {meta: artist Norma Jean}
 {meta: composer Lola Jean Dillon}
+{meta: x_source classic-country}
+{meta: x_source_file homemadelovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Meet her on your [F]business trips [G7]hold her tight and [C]kiss her lips
@@ -29,3 +32,6 @@ Home made [F]lo-[G7]ve home made [C]love
 Home made [F]lo-[G7]ve home made [C]love
 The [F]only thing you'll [G7]find it in my [C]arms
 {end_of_verse}
+
+
+

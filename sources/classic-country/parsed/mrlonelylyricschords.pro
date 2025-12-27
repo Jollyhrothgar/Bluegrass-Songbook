@@ -1,6 +1,9 @@
 {meta: title Mr. Lonely}
 {meta: artist Bobby Vinton}
 {meta: composer Gene Allan and Bobby Vinton}
+{meta: x_source classic-country}
+{meta: x_source_file mrlonelylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Lonely I'm Mr. [Em]Lonely
@@ -29,3 +32,6 @@ Away from [F]home through no wish of my [Fm]own [G7]
 That's why I'm [C]lonely I'm Mr. [Em]Lonely
 I wish that [F]I could [G7]go back [C]home
 {end_of_verse}
+
+
+

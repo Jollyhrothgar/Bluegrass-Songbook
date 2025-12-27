@@ -1,5 +1,8 @@
 {meta: title Never Tie Me Down}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file nevertiemedownlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Give me lots of elbow room but never tie me down
@@ -24,3 +27,6 @@ Let me ride and roam and let me [C]wander
 [C]Let me sleep out in the cold upon the dampened ground
 [F]But never [G7]tie me [C]down
 {end_of_verse}
+
+
+

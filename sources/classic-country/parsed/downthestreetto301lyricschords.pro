@@ -1,6 +1,9 @@
 {meta: title Down The Street To 301}
 {meta: artist Johnny Cash}
 {meta: composer Jack Clement}
+{meta: x_source classic-country}
+{meta: x_source_file downthestreetto301lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a boy [F]across the [C]street lately he's looked very [G7]neat
@@ -37,3 +40,8 @@ Don't you tell 'em [F]to be[C]ware of a summer love [G7]affair
 [C]You know she's his [F]only [C]one the girl that lives at[G7] 30[C]1
 (You know she's his [F]only [C]one the girl that lives at[G7] 30[C]1)
 {end_of_verse}
+
+
+
+
+

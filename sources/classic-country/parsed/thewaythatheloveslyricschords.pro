@@ -1,6 +1,9 @@
 {meta: title The Way That He Loves}
 {meta: artist The Heritage Singers}
 {meta: composer Elmo W. Mercer}
+{meta: x_source classic-country}
+{meta: x_source_file thewaythatheloveslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]The [C]way that He [Em]loves is as [Am]fair as the [Dm]day
@@ -36,3 +39,7 @@
 [C]The way that [Em]He loves is so [Am]thrilling [Dm]because
 [C]His love reaches [G7]even [C]me
 {end_of_verse}
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Everything That's Beautiful Lyrics and Chords}
 {meta: artist Ray Price}
 {meta: composer Bud Reneau and Hal Bynum}
+{meta: x_source classic-country}
+{meta: x_source_file everythingthatsbeautifullyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Everything that's beautiful reminds me of [Dm]you
@@ -29,3 +32,6 @@
 [Dm]The sound of children laughing the rose in morning dew
 [G7]Everything that's beautiful [F]reminds me of [C]you
 {end_of_verse}
+
+
+

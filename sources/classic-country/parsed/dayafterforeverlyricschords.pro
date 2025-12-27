@@ -1,6 +1,9 @@
 {meta: title Day After Forever}
 {meta: artist George Jones}
 {meta: composer Max D. Barnes}
+{meta: x_source classic-country}
+{meta: x_source_file dayafterforeverlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]If you think you can depend on me you’re right you [F]can
@@ -30,3 +33,6 @@ Don't count on me [F]baby for I will be [C]gone
 Day after [G7]forever honey you’re on your [C]own
 Day after [G7]forever honey you’re on your [C]own
 {end_of_verse}
+
+
+

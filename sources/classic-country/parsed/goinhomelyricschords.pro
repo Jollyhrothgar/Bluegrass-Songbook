@@ -1,6 +1,9 @@
 {meta: title Goin’ Home}
 {meta: artist Fats Domino}
 {meta: composer Fats Domino and Al Young}
+{meta: x_source classic-country}
+{meta: x_source_file goinhomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Goin' home tomorrow can't stand your evil way
@@ -19,3 +22,5 @@ Don't try to find me don't even call me on the phone
 Don't [F]try to find me don't even call me on the [C]phone
 I'm better [G7]off without you so won't you leave poor me [C]alone
 {end_of_verse}
+
+

@@ -1,6 +1,9 @@
 {meta: title I Gave My Wedding Dress Away}
 {meta: artist Kitty Wells}
 {meta: composer Fred Rose and Hy Heath}
+{meta: x_source classic-country}
+{meta: x_source_file igavemyweddingdressawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Tomorrow was to [G7]be my wedding [C]day
@@ -37,3 +40,7 @@ But [C]I could never [G]break her heart the way that she broke [D7]mine
 I'll [G]worship him [G7]until my dying [C]day
 But [D7]I gave my wedding dress [G]away
 {end_of_verse}
+
+
+
+

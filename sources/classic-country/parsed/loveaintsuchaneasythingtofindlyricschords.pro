@@ -1,5 +1,8 @@
 {meta: title Love Ain't Such An Easy Thing To Find}
 {meta: artist Johnny Rodriguez}
+{meta: x_source classic-country}
+{meta: x_source_file loveaintsuchaneasythingtofindlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I'm [C]sitting on the [G7]corner of the [F]roughest street in [C]town
@@ -22,3 +25,5 @@ Don't [C]laugh at me for [G7]crying Lord I [F]know I'm not [C]blind
 Cause [F]love ain't such an [G7]easy thing to [C]find  [F]
 Cause [G7]love ain't such an easy thing to [C]find
 {end_of_verse}
+
+

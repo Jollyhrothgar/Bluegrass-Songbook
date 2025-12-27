@@ -1,6 +1,9 @@
 {meta: title If I Live Long Enough}
 {meta: artist Norma Jean}
 {meta: composer Helen Carter and Anita Carter}
+{meta: x_source classic-country}
+{meta: x_source_file ifilivelongenoughlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]If I try [C]hard enough If I cry [D7]long enough 
@@ -22,3 +25,5 @@ If I love [C]hard enough [D7]perhaps in[G]side
 If I wait [C]long enough if I work [D7]hard enough
 If I live [C]long enough [D7]maybe you'll be [G]mine
 {end_of_verse}
+
+

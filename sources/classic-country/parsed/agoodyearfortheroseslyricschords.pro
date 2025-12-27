@@ -1,6 +1,9 @@
 {meta: title A Good Year For The Roses}
 {meta: artist George Jones}
 {meta: composer Jerry Chesnut}
+{meta: x_source classic-country}
+{meta: x_source_file agoodyearfortheroseslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I can hardly bare the sight of lipstick
@@ -56,3 +59,11 @@ That you poured and didn't [C]drink
 But at least you thought you [G7]wanted it
 That's so much more than I can say for [C]me
 {end_of_verse}
+
+
+
+
+
+
+
+

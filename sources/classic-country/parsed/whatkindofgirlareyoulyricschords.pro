@@ -1,6 +1,9 @@
 {meta: title What Kind Of Girl Are You}
 {meta: artist The Everly Brothers}
 {meta: composer Ray Charles}
+{meta: x_source classic-country}
+{meta: x_source_file whatkindofgirlareyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]What kind of girl are you [C]yeah
@@ -37,3 +40,7 @@ What kind of girl are you [C]yeah
 You like to see me [G]cry
 What kind of girl are [C]you
 {end_of_verse}
+
+
+
+

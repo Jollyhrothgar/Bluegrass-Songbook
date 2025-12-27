@@ -1,6 +1,9 @@
 {meta: title A Room Without A View}
 {meta: artist Doug Stone}
 {meta: composer Gary Burr and Doug Stone}
+{meta: x_source classic-country}
+{meta: x_source_file aroomwithoutaviewlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]I need a [C]room without a [G7]view
@@ -57,3 +60,10 @@ I need a [G7]room with[F]out a [Am]view
 Oh [F]yes I do
 [C]I need a [G7]room with[F]out a [C]view
 {end_of_verse}
+
+
+
+
+
+
+

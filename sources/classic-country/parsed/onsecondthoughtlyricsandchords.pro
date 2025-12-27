@@ -1,5 +1,8 @@
 {meta: title On Second Thought}
 {meta: artist Eddie Rabbitt}
+{meta: x_source classic-country}
+{meta: x_source_file onsecondthoughtlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Sometimes a man does things without half [C]thinking
@@ -44,3 +47,9 @@ Cause you're the only one I'll [D7]always be in love [G][C]with
 {start_of_verse: Verse 5}
 Yes you're the [D7]only one I'll always be in love [G][C]with
 {end_of_verse}
+
+
+
+
+
+

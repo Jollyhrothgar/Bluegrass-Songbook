@@ -1,6 +1,9 @@
 {meta: title King Of The Mountain}
 {meta: artist George Strait}
 {meta: composer Larry Boone and Paul Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file kingofthemountainlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]I  [C]gave her that [G7]diamond she [C]dreamed of
@@ -34,3 +37,7 @@ I [C]thought I was king of the [F]moun[C]tain
 [F]I thought I was king of the [C]mountain
 [F]But I was [C]only a [G7]fool on the [C]hill
 {end_of_verse}
+
+
+
+

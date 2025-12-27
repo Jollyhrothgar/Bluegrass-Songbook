@@ -1,6 +1,9 @@
 {meta: title Change Of Heart}
 {meta: artist Boxcar Willie}
 {meta: composer Lecil Travis Martin}
+{meta: x_source classic-country}
+{meta: x_source_file changeofheartlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Darling have you had a change of heart
@@ -36,3 +39,7 @@ La la la la la la la la [D7]la
 La la la la la la la la la
 La la la la la la la la [G]la
 {end_of_verse}
+
+
+
+

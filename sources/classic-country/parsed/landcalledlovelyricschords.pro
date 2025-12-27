@@ -1,6 +1,9 @@
 {meta: title Land Called Love}
 {meta: artist Faron Young}
 {meta: composer Billy Deaton, Len Pitts, Hilda Young}
+{meta: x_source classic-country}
+{meta: x_source_file landcalledlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There's a place where I've always [F]wanted to [C]go
@@ -44,3 +47,8 @@ A place where [C]hearts never break and dreams don't die
 {start_of_verse: Verse 6}
 [F]Just take my [C]hand and let me [G7]take you to a land called [C]love
 {end_of_verse}
+
+
+
+
+

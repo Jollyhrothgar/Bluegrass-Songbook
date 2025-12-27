@@ -1,6 +1,9 @@
 {meta: title Pick Up The Oars And Row}
 {meta: artist Randy Travis}
 {meta: composer Jamie O'Hara}
+{meta: x_source classic-country}
+{meta: x_source_file pickuptheoarsandrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]What good does it do to hold onto 
@@ -59,3 +62,10 @@ So [G7]pick up the oars and [C]row
 Sometimes love is a river of tears 
 So [G7]pick up the oars and [C]go
 {end_of_verse}
+
+
+
+
+
+
+

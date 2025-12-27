@@ -1,6 +1,9 @@
 {meta: title I Can Hear The Angels Singing}
 {meta: artist Don Reno and Red Smiley}
 {meta: composer Don Reno}
+{meta: x_source classic-country}
+{meta: x_source_file icanheartheangelssinginglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I can hear the angels singing
@@ -36,3 +39,7 @@ I can hear my Savior's voice
 And I'll soon be singing with them
 Through endless ages [D7]we'll re[G]joice
 {end_of_verse}
+
+
+
+

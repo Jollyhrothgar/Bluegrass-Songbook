@@ -1,5 +1,8 @@
 {meta: title I Couldn't Leave You If I Tried}
 {meta: artist Rodney Crowell}
+{meta: x_source classic-country}
+{meta: x_source_file icouldntleaveyouifitriedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The sun is coming up and I'm just going [G7]down
@@ -41,3 +44,8 @@ I know I said I never would be [G7]satisfied
 Baby I [F]lied I couldn't [G7]leave you if I [C]tried
 [F]I couldn't [G7]leave you if I [C]tried
 {end_of_verse}
+
+
+
+
+

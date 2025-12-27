@@ -1,6 +1,9 @@
 {meta: title Wild As A Wildcat}
 {meta: artist Charlie Walker}
 {meta: composer Carmol Taylor}
+{meta: x_source classic-country}
+{meta: x_source_file wildasawildcatlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You're just as wild as a wildcat and you’ve got your claws in [C]me
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 4}
 [D7]You're gonna get the best of me you little wildcat [G]you
 {end_of_verse}
+
+
+
+
+

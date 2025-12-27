@@ -1,6 +1,9 @@
 {meta: title That's My Desire}
 {meta: artist Patsy Cline}
 {meta: composer Carroll Loveday and Helmy Kresa}
+{meta: x_source classic-country}
+{meta: x_source_file thatsmydesirelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]To spend one night with you
@@ -43,3 +46,8 @@ To meet where gypsies play
 [G]Darling I love you [D7]so
 [G]That's my desire
 {end_of_verse}
+
+
+
+
+

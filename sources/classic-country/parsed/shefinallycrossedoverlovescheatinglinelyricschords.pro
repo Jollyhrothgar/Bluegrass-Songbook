@@ -1,5 +1,8 @@
 {meta: title She Finally Crossed Over Love's Cheating Line}
 {meta: artist David Allan Coe}
+{meta: x_source classic-country}
+{meta: x_source_file shefinallycrossedoverlovescheatinglinelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Yep she finally crossed [C]over [C7]love's cheating [F]line
@@ -29,3 +32,6 @@ I guess I should have [C]noticed Lord those old danger [G7]signs
 Yeah this bottle's gonna [C]help me yeah [C7]to get her off of my [F]mind
 She's finally crossed [C]over [G7]  love's cheating [C]line
 {end_of_verse}
+
+
+

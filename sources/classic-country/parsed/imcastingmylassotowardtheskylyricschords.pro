@@ -1,6 +1,9 @@
 {meta: title I’m Casting My Lasso Toward The Sky}
 {meta: artist Jimmy Wakely}
 {meta: composer Jimmy Wakely and Lee White}
+{meta: x_source classic-country}
+{meta: x_source_file imcastingmylassotowardtheskylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I’m casting my lasso [C]way up towards the sky
@@ -29,3 +32,6 @@ Up [A7]there in heaven’s round up [D7]across the [A7]great di[D7]vide
 There [G]up there riding I’m [C]join them by and by
 I’m [G]casting my [D7]lasso towards the [G]sky
 {end_of_verse}
+
+
+

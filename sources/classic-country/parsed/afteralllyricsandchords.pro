@@ -1,5 +1,8 @@
 {meta: title After All}
 {meta: artist Bob Wills}
+{meta: x_source classic-country}
+{meta: x_source_file afteralllyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Last night I dreamed a dream that I [D7]dreamed too much [G]of
@@ -28,3 +31,6 @@
 [C]There’s so many nights of splendor my heart can [G]recall
 [D7]Since you’ve gone and left me alone after [G]all
 {end_of_verse}
+
+
+

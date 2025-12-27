@@ -1,6 +1,9 @@
 {meta: title Some Old Day}
 {meta: artist J.D. Crowe & the New South}
 {meta: composer Louise Certain and Gladys Stacey}
+{meta: x_source classic-country}
+{meta: x_source_file someolddaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I've been working out in the rain 
@@ -35,3 +38,6 @@ Oh dear mother I'll come [A7]home some old [D7]day
 From this [C]dirty old cala[G]boose
 Oh dear mother I'll come [A7]home [D7]some old [G]day
 {end_of_verse}
+
+
+

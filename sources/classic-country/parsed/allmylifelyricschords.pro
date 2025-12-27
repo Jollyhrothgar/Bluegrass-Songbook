@@ -1,6 +1,9 @@
 {meta: title All My Life}
 {meta: artist Conway Twitty}
 {meta: composer Jesse Harris}
+{meta: x_source classic-country}
+{meta: x_source_file allmylifelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Maybe it's the [D7]way you [Em]kiss me [C]or that [G]twinkle in your [D7]eye
@@ -26,3 +29,6 @@ Maybe it's the [D7]way I sometimes [Em]catch you [C]with my reflection in your [
 {start_of_verse: Verse 4}
 [C]You're the one I've [G]dreamed of [D7]all my [G]life
 {end_of_verse}
+
+
+

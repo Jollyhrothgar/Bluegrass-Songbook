@@ -1,5 +1,8 @@
 {meta: title Crying Time}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file cryingtimelyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh it's crying time again your gonna leave [G7]me
@@ -35,3 +38,7 @@ I can see that far away look in your [C]eyes
 I can [C7]tell by the way you hold me [F]darling
 That it [C]won't be long [G7]before it's crying [C]time
 {end_of_verse}
+
+
+
+

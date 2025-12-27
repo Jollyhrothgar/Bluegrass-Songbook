@@ -1,5 +1,8 @@
 {meta: title The Wonders You Perform}
 {meta: artist Tammy Wynette}
+{meta: x_source classic-country}
+{meta: x_source_file thewondersyouperformlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh Lord You know that I'm not one to [Am]bother You with little things
@@ -59,3 +62,10 @@ And I’d [G7]ask you one favor if I can
 Help [F]me to better understand 
 The [C]mystery of the [G7]wonders You [C]perform
 {end_of_verse}
+
+
+
+
+
+
+

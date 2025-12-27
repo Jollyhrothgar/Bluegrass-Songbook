@@ -1,6 +1,9 @@
 {meta: title Let Me Stay In Your Arms}
 {meta: artist Don Gibson}
 {meta: composer J.D. Miller and Jimmy C. Newman}
+{meta: x_source classic-country}
+{meta: x_source_file letmestayinyourarmslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Hold me close hold me tight let me stay in your [G7]arms
@@ -29,3 +32,6 @@ By the moons silver light let me share all your [C]charms
 Make me happy once more with the one I [G7]adore
 Hold me close hold me tight let me stay in your [C]arms
 {end_of_verse}
+
+
+

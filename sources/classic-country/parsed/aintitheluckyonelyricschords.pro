@@ -1,5 +1,8 @@
 {meta: title Ain’t I The Lucky One}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file aintitheluckyonelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Ain’t I the lucky one look what I've gone and done
@@ -30,3 +33,7 @@ Ain't I the lucky one feel like a son of a gun
 [F]I let her steal my heart  I know we'll never [C]part
 [G7]She brings me joy  [F]so much fun  [G7]ain't I the lucky [C]one
 {end_of_verse}
+
+
+
+

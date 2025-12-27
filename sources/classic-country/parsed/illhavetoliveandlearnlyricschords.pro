@@ -1,6 +1,9 @@
 {meta: title I'll Have To Live And Learn}
 {meta: artist Eddy Arnold}
 {meta: composer Zeke Clements}
+{meta: x_source classic-country}
+{meta: x_source_file illhavetoliveandlearnlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]To day the storms clouds gathered all about [F]me
@@ -29,3 +32,6 @@
 [C]And only time will let me know the [F]answer
 [G7]So I suppose I'll have to live and [C]learn
 {end_of_verse}
+
+
+

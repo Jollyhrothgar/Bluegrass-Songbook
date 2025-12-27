@@ -1,5 +1,8 @@
 {meta: title Streets of Baltimore}
 {meta: artist Bobby Bare}
+{meta: x_source classic-country}
+{meta: x_source_file streetsofbaltimorelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well I sold the farm to [F]take my woman [C]where she longed to [F]be
@@ -29,3 +32,6 @@ Now I'm a-going back on that [F]same train that [C]brought me here [F]before
 While [G7]my baby walks the streets of [C]Baltimore
 While [G7]my baby walks the streets of [C]Baltimore
 {end_of_verse}
+
+
+

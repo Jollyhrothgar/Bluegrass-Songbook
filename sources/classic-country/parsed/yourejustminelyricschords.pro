@@ -1,5 +1,8 @@
 {meta: title You're Just Mine}
 {meta: artist Lefty Frizzell}
+{meta: x_source classic-country}
+{meta: x_source_file yourejustminelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I know [G7]that it's [C]so you can never ever be [G7]mine
@@ -23,3 +26,5 @@ You're [G7]my only [C]one that's [C7]what your loving [F]means
 But tears fill my eyes when [C]I realize 
 You're just [G7]mine only in my [C]dreams
 {end_of_verse}
+
+

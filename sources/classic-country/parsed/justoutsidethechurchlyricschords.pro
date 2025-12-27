@@ -1,5 +1,8 @@
 {meta: title Just Outside The Church}
 {meta: artist Freddie Hart}
+{meta: x_source classic-country}
+{meta: x_source_file justoutsidethechurchlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh I telephoned before you left home
@@ -44,3 +47,10 @@ Don't take his ring for you
 [G7]While you're still free please
 [C]Come to me just outside the church
 {end_of_verse}
+
+
+
+
+
+
+

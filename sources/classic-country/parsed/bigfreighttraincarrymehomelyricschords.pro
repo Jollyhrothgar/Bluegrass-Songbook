@@ -1,5 +1,8 @@
 {meta: title Big Freight Train Carry Me Home}
 {meta: artist Boxcar Willie}
+{meta: x_source classic-country}
+{meta: x_source_file bigfreighttraincarrymehomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Big freight train carry me [G7]home
@@ -56,3 +59,10 @@ Big freight train carry me [C]home
 I’ve been away much too [F]long
 Big [C]freight train [G7]carry me [C]home
 {end_of_verse}
+
+
+
+
+
+
+

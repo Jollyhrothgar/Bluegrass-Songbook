@@ -1,5 +1,8 @@
 {meta: title Blue and Lonesome}
 {meta: artist Alison Krauss with Dan Tyminski}
+{meta: x_source classic-country}
+{meta: x_source_file blueandlonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]The lonesome sound of a [F]train going [C]by 
@@ -34,3 +37,7 @@ These lonesome blues I [F]just can't [C]loose
 I'm blue and I'm [G7]lonesome [C]too 
 I'm blue and I'm [G7]lonesome [C]too
 {end_of_verse}
+
+
+
+

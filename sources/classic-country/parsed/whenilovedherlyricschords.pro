@@ -1,6 +1,9 @@
 {meta: title When I Loved Her}
 {meta: artist Ray Price}
 {meta: composer Kris Kristofferson}
+{meta: x_source classic-country}
+{meta: x_source_file whenilovedherlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Well she didn't look as pretty as some [F]others I have [C]known
@@ -40,3 +43,8 @@
 {start_of_verse: Verse 5}
 [F]And it made me want to [G7]smile  when I loved [C]her
 {end_of_verse}
+
+
+
+
+

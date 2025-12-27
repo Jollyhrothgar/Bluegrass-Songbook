@@ -1,6 +1,9 @@
 {meta: title I Threw The Rest Away}
 {meta: artist Tracy Lawrence}
 {meta: composer Paul Nelson and Gene Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file ithrewtherestawaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Met him in a dive down in New Orleans 
@@ -50,3 +53,7 @@ That [Am]week I spent a [G7]year in L[F]A
 You know I [D7]hate to admit [G7]I threw the rest [C]away
 [G7]I threw the rest [C]away
 {end_of_verse}
+
+
+
+

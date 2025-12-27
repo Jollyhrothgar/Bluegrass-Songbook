@@ -1,6 +1,9 @@
 {meta: title Careless Darling}
 {meta: artist Ernest Tubb}
 {meta: composer Ernest Tubb, Lou Wayne, Bob Shelton}
+{meta: x_source classic-country}
+{meta: x_source_file carelessdarlinglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]You said you love me and me [C]alone 
@@ -43,3 +46,8 @@ You broke the [D7]vow that you made to [G]me
 With all my heart I believed in [C]you 
 But careless [G]darling [D7]you were [G]untrue
 {end_of_verse}
+
+
+
+
+

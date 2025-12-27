@@ -1,5 +1,8 @@
 {meta: title I Got Caught}
 {meta: artist Loretta Lynn}
+{meta: x_source classic-country}
+{meta: x_source_file igotcaughtlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You're standin' there a [G7]sayin' I'm no [C]good
@@ -27,3 +30,6 @@ Repeat last verse
 {start_of_verse: Verse 4}
 Yeah the thing you've got [G7]away with I got [C]caught
 {end_of_verse}
+
+
+

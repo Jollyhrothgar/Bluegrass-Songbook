@@ -1,5 +1,8 @@
 {meta: title Moaning The Blues}
 {meta: artist Hank Williams}
+{meta: x_source classic-country}
+{meta: x_source_file moaningtheblueslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]When my baby moved out and the blues moved in
@@ -66,3 +69,15 @@ I'm sitting here waiting for you right now
 To [G7]walk through that front [C]door
 Then I'll stop [G7]moaning moaning the [C]blues
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+

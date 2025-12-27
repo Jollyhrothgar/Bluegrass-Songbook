@@ -1,6 +1,9 @@
 {meta: title Fuel To The Flame}
 {meta: artist Dolly Parton}
 {meta: composer Dolly Parton and Bill Owens}
+{meta: x_source classic-country}
+{meta: x_source_file fueltotheflamelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 ([Dm]Fuel to the [G7]flame)
@@ -52,3 +55,10 @@ I'll [C]give you [E7]every [Am]thing[C]
 Yes [F]every [G7]time you [C]touch me 
 [Am]You add [F]fuel [G7]to the [C]flame
 {end_of_verse}
+
+
+
+
+
+
+

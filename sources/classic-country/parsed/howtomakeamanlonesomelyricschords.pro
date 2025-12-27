@@ -1,6 +1,9 @@
 {meta: title How To Make A Man Lonesome}
 {meta: artist Clay Walker}
 {meta: composer Kim Williams and Randy Boudreaux}
+{meta: x_source classic-country}
+{meta: x_source_file howtomakeamanlonesomelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Three [Am]weeks in Phoenix with [Bm]one night to go
@@ -34,3 +37,7 @@ But she [G]knows how to [D7]keep her man [G]true
 [D7]You sure [G]know how to make a man [C]lonesome[Am]
 But she [G]knows how to [D7]keep her man [C]true[G]
 {end_of_verse}
+
+
+
+

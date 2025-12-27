@@ -1,5 +1,8 @@
 {meta: title I'll Go To Church Again With Momma}
 {meta: artist Buck Owens}
+{meta: x_source classic-country}
+{meta: x_source_file illgotochurchagainwithmommalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'll go to church again with [C]momma 
@@ -41,3 +44,5 @@ That [C]just seemed to warm your heart all over
 [G]Yes I know those were the [D7]happiest days I've ever [G]spent
 When I went to church with momma
 {end_of_verse}
+
+

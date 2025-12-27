@@ -1,6 +1,9 @@
 {meta: title I've Been Loving You Too Long}
 {meta: artist Barbara Mandrell}
 {meta: composer Jerry Butler and Otis Redding}
+{meta: x_source classic-country}
+{meta: x_source_file ivebeenlovingyoutoolonglyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [D7]I've been [G]loving you too [D7]long to [G]stop now[C]  [G]
@@ -21,3 +24,4 @@ I can't [G]stop now[C]  [G]
 I've been [G]loving you [C]much too long[D]
 I've [G]been loving you too [D7]long to [C]stop now[G]
 {end_of_verse}
+

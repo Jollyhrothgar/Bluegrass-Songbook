@@ -1,5 +1,8 @@
 {meta: title My Front Door Is Open}
 {meta: artist Hank Thompson}
+{meta: x_source classic-country}
+{meta: x_source_file myfrontdoorisopenlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]My front door is [E7]open for [A7]someone like you 
@@ -30,3 +33,6 @@ It's [C]plain to see that [E7]you and me
 Could get [A7]along just fine
 My [D7]front door is [G7]open for [C]you
 {end_of_verse}
+
+
+

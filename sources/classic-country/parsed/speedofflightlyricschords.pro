@@ -1,6 +1,9 @@
 {meta: title Speed Of Flight}
 {meta: artist Tracy Lawrence}
 {meta: composer Samuel Davis}
+{meta: x_source classic-country}
+{meta: x_source_file speedofflightlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]We [C]said our goodbyes I watched her board the plane
@@ -50,3 +53,7 @@ As [Am]her plane left the ground
 [F]Faster than speed of [Dm]flight 
 My [G7]world fell a[C]part[G7]
 {end_of_verse}
+
+
+
+

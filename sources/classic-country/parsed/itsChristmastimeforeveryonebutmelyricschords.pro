@@ -1,6 +1,9 @@
 {meta: title It's Christmas Time For Everyone But Me}
 {meta: artist Buck Owens}
 {meta: composer Dixie Deen and Ray King}
+{meta: x_source classic-country}
+{meta: x_source_file itsChristmastimeforeveryonebutmelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It must be that time again the snow is [D7]falling
@@ -29,3 +32,6 @@ The lights are shining brightly on the [G]tree
 It's the season of big cheer how I [C]wish that you were here
 Oh it's [G]Christmas time for [D7]everyone but [G]me
 {end_of_verse}
+
+
+

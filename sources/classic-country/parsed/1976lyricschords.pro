@@ -1,5 +1,8 @@
 {meta: title 1976}
 {meta: artist Alan Jackson}
+{meta: x_source classic-country}
+{meta: x_source_file 1976lyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Rocky burned up the movie screen 
@@ -59,3 +62,9 @@ Yeah that was 19[C]76 didn't know who [G]we were yet
 Built a fire that [D7]just won’t quit and [C]that was 19[G]76
 We built a fire that [D7]just won’t quit that was 19[G]76
 {end_of_verse}
+
+
+
+
+
+

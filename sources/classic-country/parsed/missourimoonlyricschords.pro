@@ -1,6 +1,9 @@
 {meta: title Missouri Moon}
 {meta: artist Rhonda Vincent}
 {meta: composer Jennifer Lynn Strickland}
+{meta: x_source classic-country}
+{meta: x_source_file missourimoonlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There’s a full moon [F]out to[C]night
@@ -35,3 +38,7 @@ As I [B7]cry beneath that [G7]old Missouri [C]moon
 As I [B7]cry beneath that [G7]old Missouri [C]moon
 [G7]Missouri [C]moon  [G7]Missouri [C]moon
 {end_of_verse}
+
+
+
+

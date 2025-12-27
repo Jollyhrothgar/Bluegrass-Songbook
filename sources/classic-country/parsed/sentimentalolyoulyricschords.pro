@@ -1,6 +1,9 @@
 {meta: title Sentimental ol' You}
 {meta: artist Charly McClain}
 {meta: composer Bob Dipiero and Patrick Joseph McManusG}
+{meta: x_source classic-country}
+{meta: x_source_file sentimentalolyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Who saves each [D7]card I've ever [G]sent 
@@ -28,3 +31,6 @@ Sentimental ol' you  I need you  like [C]the night time needs [D7]the [G]stars
 You're the kind of [G7]dreamer  that dreams [E7][C]big  enough [Am]for [Am][C]two 
 And [C]whatever you do  don't [D7]change  sentimental old [G]you 
 {end_of_verse}
+
+
+

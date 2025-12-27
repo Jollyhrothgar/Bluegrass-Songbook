@@ -1,6 +1,9 @@
 {meta: title I Wouldn't Miss It For The World}
 {meta: artist Hank Thompson}
 {meta: composer Orville Proctor and Preston Sergeant}
+{meta: x_source classic-country}
+{meta: x_source_file iwouldntmissitfortheworldlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]You really had yourself a fling [F]all night parties everything
@@ -36,3 +39,7 @@ I [D7]want to be around to see that [G7]look upon your face
 He'll [C]be gone and you'll remain [F]then your teardrops fall like rain
 [C]And I wouldn't [G7]miss it for the [C]world
 {end_of_verse}
+
+
+
+

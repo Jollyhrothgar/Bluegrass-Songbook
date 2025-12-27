@@ -1,6 +1,9 @@
 {meta: title Pride Covered Ears}
 {meta: artist Johnny Paycheck}
 {meta: composer Larry Kingston}
+{meta: x_source classic-country}
+{meta: x_source_file pridecoveredearslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It sounds like a mad heard of elephants
@@ -29,3 +32,6 @@ But it's [C]really just me whispering please [G]stay dear
 Ain't it [C]strange how the mind exagge[G]rates little sounds
 That [D7]pride covered ears barely [G]hear   
 {end_of_verse}
+
+
+

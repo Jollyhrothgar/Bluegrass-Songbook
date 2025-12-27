@@ -1,6 +1,9 @@
 {meta: title I'm A Sad Lonely Man}
 {meta: artist Cal Smith}
 {meta: composer Glenn Raye and Ralph Davis}
+{meta: x_source classic-country}
+{meta: x_source_file imasadlonelymanlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I'm a sad lonely man who [D7]walks in the night
@@ -29,3 +32,6 @@ The [D7]one love I live for is [C]gone with the [G]wind
 These tears you see falling [G7]don't blame on the [C]wine
 I'm a sad lonely [G]man that [D7]love left [G]behind
 {end_of_verse}
+
+
+

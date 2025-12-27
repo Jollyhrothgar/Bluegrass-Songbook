@@ -1,5 +1,8 @@
 {meta: title Language Of Love}
 {meta: artist John D. Loudermilk}
+{meta: x_source classic-country}
+{meta: x_source_file languageoflovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Oh two lovers parked on the lover's lane 
@@ -39,3 +42,8 @@ Dooby dooby dooby doo (dooby dooby dooby doo)
 Dooby dooby dooby [G7]doo (doo dooby doo doo)
 Dooby dooby dooby doo dooby dooby dooby doo doo doo [C]doo
 {end_of_verse}
+
+
+
+
+

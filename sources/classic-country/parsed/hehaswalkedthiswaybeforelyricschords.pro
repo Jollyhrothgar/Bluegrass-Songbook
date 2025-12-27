@@ -1,6 +1,9 @@
 {meta: title He Has Walked This Way Before}
 {meta: artist Sonny James}
 {meta: composer Sonny James and Carole Smith}
+{meta: x_source classic-country}
+{meta: x_source_file hehaswalkedthiswaybeforelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]He has [F]walked this way [C][G7]before
@@ -45,3 +48,8 @@
 {start_of_verse: Verse 4}
 [C]Yes He [F]has walked [G7]this way [C][F]before
 {end_of_verse}
+
+
+
+
+

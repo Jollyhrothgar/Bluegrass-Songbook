@@ -1,5 +1,8 @@
 {meta: title Nine To Five}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file ninetofivelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Tumble outta bed and stumble to the kitchen
@@ -40,3 +43,6 @@
 [F]It's a rich man's game no matter what they call it
 [D7]And you spend your life putting money in his [G7]wallet
 {end_of_verse}
+
+
+

@@ -1,6 +1,9 @@
 {meta: title Little Sparrow}
 {meta: artist Eddy Arnold}
 {meta: composer Jan Crutchfield and Jerry Crutchfield}
+{meta: x_source classic-country}
+{meta: x_source_file littlesparrowlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Little sparrow little [C][G7]sparrow
@@ -41,3 +44,8 @@
 [F]Laughing at [G7]fools like [C]me [F]singing in a [G7]high oak [C]tree
 [F]Laughing at [G7]fools like [C]me [F]singing in a [G7]high oak [C]tree
 {end_of_verse}
+
+
+
+
+

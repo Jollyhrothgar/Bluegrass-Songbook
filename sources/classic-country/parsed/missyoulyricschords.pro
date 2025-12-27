@@ -1,6 +1,9 @@
 {meta: title Miss You}
 {meta: artist Webb Pierce}
 {meta: composer Audrey Grisham and Sylvia Fisher}
+{meta: x_source classic-country}
+{meta: x_source_file missyoulyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Miss you miss you I [D7]need you so
@@ -40,3 +43,8 @@ But some[G]day you'll be [D7]coming [G]home
 {start_of_verse: Verse 4}
 Yes someday you'll be [D7]coming [G]home
 {end_of_verse}
+
+
+
+
+

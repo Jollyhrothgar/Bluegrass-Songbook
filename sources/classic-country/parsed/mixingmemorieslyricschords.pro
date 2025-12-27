@@ -1,6 +1,9 @@
 {meta: title Mixing Memories}
 {meta: artist Darrell McCall}
 {meta: composer Sanger D. Shafer and Warren Robb}
+{meta: x_source classic-country}
+{meta: x_source_file mixingmemorieslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Forgive me darlin’ [C]I just had to [D7]call you
@@ -29,3 +32,6 @@ That [C]today was yesterday and you [D7]were mine
 For[G]give me dear [C]for drinkin’ and [D7]dreamin’
 But I [C]started mixing [D7]memories with my [G]wine
 {end_of_verse}
+
+
+

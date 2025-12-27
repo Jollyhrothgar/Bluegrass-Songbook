@@ -1,6 +1,9 @@
 {meta: title Billy The Kid}
 {meta: artist Billy Dean}
 {meta: composer Paul Nelson and Billy Dean}
+{meta: x_source classic-country}
+{meta: x_source_file billythekidlyricsandchords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Strapped on my holster low across my hips
@@ -43,3 +46,8 @@ The times that he [C]had the life that he [G7]lived
 I guess he must have got [F]caught his innocence [C]lost 
 I wonder where he [G7]is I miss Billy the [C]Kid
 {end_of_verse}
+
+
+
+
+

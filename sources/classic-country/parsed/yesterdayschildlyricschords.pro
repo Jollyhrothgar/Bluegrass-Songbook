@@ -1,6 +1,9 @@
 {meta: title Yesterday's Child}
 {meta: artist Roy Orbison}
 {meta: composer Roy Orbison and Bill Dees}
+{meta: x_source classic-country}
+{meta: x_source_file yesterdayschildlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]I see the [Bm]face of [Em]yesterday's child
@@ -38,3 +41,7 @@ Will you [G]turn to dust
 Or [C]go to the sea [F]racing with [G]desti[A7]ny
 [C]Oh look at me born to be [D7]yesterday's [E7]child
 {end_of_verse}
+
+
+
+

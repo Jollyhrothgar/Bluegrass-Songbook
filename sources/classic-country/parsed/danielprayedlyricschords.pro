@@ -1,6 +1,9 @@
 {meta: title Daniel Prayed}
 {meta: artist Patty Loveless}
 {meta: composer Ralph Stanley and G.T. Speer}
+{meta: x_source classic-country}
+{meta: x_source_file danielprayedlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I read about a man one day
@@ -71,3 +74,16 @@ And pray to God He'll see us through
 But trusted one who never fails
 [G7]Oh Daniel prayed every morning  noon and [C]night
 {end_of_verse}
+
+
+
+
+
+
+
+
+
+
+
+
+

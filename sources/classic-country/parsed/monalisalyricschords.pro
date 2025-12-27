@@ -1,6 +1,9 @@
 {meta: title Mona Lisa}
 {meta: artist Jim Reeves}
 {meta: composer Jay Livingston and Ray Evans}
+{meta: x_source classic-country}
+{meta: x_source_file monalisalyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G7]Mona [C]Lisa Mona Lisa men have [F]named [C]you 
@@ -18,3 +21,4 @@ They just lie [G7]that and they'd die [C]there
 Or just a [G7]cold and lonely lovely work of [C]art
 Or just a cold and lonely lovely work of art
 {end_of_verse}
+

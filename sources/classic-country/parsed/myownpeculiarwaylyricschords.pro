@@ -1,5 +1,8 @@
 {meta: title My Own Peculiar Way}
 {meta: artist Willie Nelson}
+{meta: x_source classic-country}
+{meta: x_source_file myownpeculiarwaylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]It would be a comfort just to know you never doubt [G7]me
@@ -32,3 +35,7 @@
 {start_of_verse: Verse 4}
 [F]I'll always [C]love you in my [G7]own peculiar [C][F]w-ay
 {end_of_verse}
+
+
+
+

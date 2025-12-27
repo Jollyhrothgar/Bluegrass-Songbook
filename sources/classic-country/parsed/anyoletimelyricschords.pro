@@ -1,6 +1,9 @@
 {meta: title Any Ole Time}
 {meta: artist The Lonesome River Band}
 {meta: composer Tom Botkin, Kevin Denney, Mike Rogers}
+{meta: x_source classic-country}
+{meta: x_source_file anyoletimelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Any ole [C]time you get [G]lonely
@@ -47,3 +50,9 @@ If you get hurt and run around on
 {start_of_verse: Verse 4}
 [D7]Any old time you want something [G]new
 {end_of_verse}
+
+
+
+
+
+

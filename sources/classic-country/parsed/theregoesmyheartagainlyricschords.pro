@@ -1,6 +1,9 @@
 {meta: title There Goes My Heart Again}
 {meta: artist Holly Dunn}
 {meta: composer William Lon Wilson, Joe Diffie, Darrell Wayne Perry}
+{meta: x_source classic-country}
+{meta: x_source_file theregoesmyheartagainlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]There [G7]goes my heart [C]again here [C7]comes the hurt back [F]in
@@ -40,3 +43,8 @@ Just when it's on [G7]the mend there goes my heart [C]again
 {start_of_verse: Verse 4}
 Just when it's on [G7]the mend there goes my heart [C]again
 {end_of_verse}
+
+
+
+
+

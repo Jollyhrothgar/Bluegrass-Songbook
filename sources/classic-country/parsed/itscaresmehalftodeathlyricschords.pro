@@ -1,6 +1,9 @@
 {meta: title It Scares Me Half To Death}
 {meta: artist Jean Shepard}
 {meta: composer Audrey Allison and Joe Allison}
+{meta: x_source classic-country}
+{meta: x_source_file itscaresmehalftodeathlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]It scares me half to death to think I almost [D7]lost you
@@ -32,3 +35,7 @@ The vows we made to stay together come what [G]may
 And while you’re holding me my darling I’m [C]holding my breath
 Cause [G]just the thought of losing you [D7]scares me half to [G]death
 {end_of_verse}
+
+
+
+

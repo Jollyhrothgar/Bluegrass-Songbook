@@ -1,5 +1,8 @@
 {meta: title Never Look Back}
 {meta: artist Marty Robbins}
+{meta: x_source classic-country}
+{meta: x_source_file neverlookbacklyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Never look back you're decision you've [G7]made
@@ -21,3 +24,5 @@ You must [G7]forget him though the hurt may live [C]on
 Start life all over [C7]though the future looks [F]black
 You've known so [C]long to love him was [G7]wrong so never look [C]back
 {end_of_verse}
+
+

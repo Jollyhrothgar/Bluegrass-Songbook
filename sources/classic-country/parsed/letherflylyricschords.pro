@@ -1,5 +1,8 @@
 {meta: title Let Her Fly}
 {meta: artist Dolly Parton}
+{meta: x_source classic-country}
+{meta: x_source_file letherflylyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]There's a wreath on the door she [C]don't live here no [G]more
@@ -38,3 +41,7 @@
 [C]Let her fly
 [G]Ooh she's an [D7]angel let her [G]fly
 {end_of_verse}
+
+
+
+

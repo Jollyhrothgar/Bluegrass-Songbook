@@ -1,5 +1,8 @@
 {meta: title Wall Of Pictures}
 {meta: artist Darrell McCall}
+{meta: x_source classic-country}
+{meta: x_source_file wallofpictureslyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Don’t tell me what I [A]already know is [C]true
@@ -33,3 +36,6 @@ Won’t let me [Dm]see [G7]beyond your [C]eyes
 But of all the [F]pictures ‘round your [C]heart
 Won’t let me [Dm]see [G7]beyond your [C]eyes
 {end_of_verse}
+
+
+

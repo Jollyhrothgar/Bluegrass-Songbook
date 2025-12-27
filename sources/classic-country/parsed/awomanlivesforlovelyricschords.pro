@@ -1,6 +1,9 @@
 {meta: title A Woman Lives For Love}
 {meta: artist Wanda Jackson}
 {meta: composer George Richey, Glenn Sutton, Norro Wilson}
+{meta: x_source classic-country}
+{meta: x_source_file awomanlivesforlovelyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]I don't mind waiting up [G7]for you late [C]hours
@@ -29,3 +32,6 @@
 [F]For my day [C]is made at night when you kiss and [F]hold me [C]tight
 [F]And say you love me cause [G7]a woman lives for [C]love
 {end_of_verse}
+
+
+

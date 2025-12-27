@@ -1,6 +1,9 @@
 {meta: title Beyond The Reef}
 {meta: artist Marty Robbins}
 {meta: composer Jack Pitman}
+{meta: x_source classic-country}
+{meta: x_source_file beyondthereeflyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Beyond the reef  [Dm]where [G7]the sea is dark and [C]cold
@@ -22,3 +25,5 @@
 [Dm]Someday I [G7]know  she'll come back again to [C]me
 [Dm]Till then my heart will [G7]be  beyond the [C]reef
 {end_of_verse}
+
+

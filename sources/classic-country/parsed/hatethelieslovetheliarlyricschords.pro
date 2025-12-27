@@ -1,6 +1,9 @@
 {meta: title Hate The Lies Love The Liar}
 {meta: artist Ronnie Milsap}
 {meta: composer Steve Dorff and Mack David}
+{meta: x_source classic-country}
+{meta: x_source_file hatethelieslovetheliarlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [F]If a [C]star fell from the sky for every time you told a [F]lie
@@ -36,3 +39,7 @@ And I just [G7]can't stop loving [C]you
 So [Am]much that I convince my heart they're [D7]true
 And I just [G7]can't stop loving [C]you
 {end_of_verse}
+
+
+
+

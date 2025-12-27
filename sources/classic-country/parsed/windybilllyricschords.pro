@@ -1,5 +1,8 @@
 {meta: title Windy Bill}
 {meta: artist Rex Allen}
+{meta: x_source classic-country}
+{meta: x_source_file windybilllyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Bill was a Texas lad 
@@ -70,3 +73,12 @@ But take your dally [D7]welters
 You'll never see your old rim-fire
 Go [D7]driftin' down the [G]draw
 {end_of_verse}
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,9 @@
 {meta: title No Trash In My Trailer}
 {meta: artist Gene Watson}
 {meta: composer Byron Hill & Mike Dekle}
+{meta: x_source classic-country}
+{meta: x_source_file notrashinmytrailerlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [C]Yes I live in a single wide
@@ -33,3 +36,6 @@ Though they might find an empty can of [G7]beer
 There [C]ain’t been no trash [F]in my [C]trailer
 Since the [F]day I [C]threw you out [G7]of [C]here
 {end_of_verse}
+
+
+

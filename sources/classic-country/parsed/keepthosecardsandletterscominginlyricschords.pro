@@ -1,6 +1,9 @@
 {meta: title Keep Those Cards And Letters Coming In}
 {meta: artist Ernest Tubb}
 {meta: composer Harlan Howard}
+{meta: x_source classic-country}
+{meta: x_source_file keepthosecardsandletterscominginlyricschords.pro}
+{meta: x_enriched 2025-12-26}
 
 {start_of_verse: Verse 1}
 [G]Didn't wanna be no soldier [D7]didn't want to leave your side
@@ -26,3 +29,6 @@ Keep a letin' me know you [G]miss me so [D7]till you come home to [G]me
 {start_of_verse: Verse 4}
 So [G]keep those cards and letters comin' [C]in
 {end_of_verse}
+
+
+
