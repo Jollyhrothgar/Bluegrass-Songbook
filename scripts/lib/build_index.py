@@ -2,10 +2,12 @@
 """
 Build search index from parsed .pro files
 
-Generates docs/data/index.json with song metadata and lyrics for search.
+Generates docs/data/index.jsonl with song metadata and lyrics for search.
 Precomputes key detection and Nashville numbers for fast chord search.
+Enriches songs with genre tags from MusicBrainz and harmonic analysis.
 """
 
+import argparse
 import hashlib
 import json
 import re
@@ -419,8 +421,14 @@ def get_first_line(lyrics: str) -> str:
     return ''
 
 
-def build_index(parsed_dirs: list[Path], output_file: Path):
-    """Build search index from all .pro files in multiple directories."""
+def build_index(parsed_dirs: list[Path], output_file: Path, enrich_tags: bool = True):
+    """Build search index from all .pro files in multiple directories.
+
+    Args:
+        parsed_dirs: List of directories containing .pro files
+        output_file: Path to write the index.jsonl file
+        enrich_tags: Whether to enrich songs with MusicBrainz/harmonic tags
+    """
     songs = []
 
     # Collect files from all directories
@@ -496,6 +504,31 @@ def build_index(parsed_dirs: list[Path], output_file: Path):
 
         songs.append(song)
 
+    # Enrich songs with tags (MusicBrainz + harmonic analysis)
+    if enrich_tags:
+        try:
+            from tag_enrichment import enrich_songs_with_tags
+            songs = enrich_songs_with_tags(songs, use_musicbrainz=True)
+
+            # Count tag stats
+            tag_counts = {}
+            songs_with_tags = 0
+            for song in songs:
+                if song.get('tags'):
+                    songs_with_tags += 1
+                    for tag in song['tags']:
+                        tag_counts[tag] = tag_counts.get(tag, 0) + 1
+
+            print(f"Tagged {songs_with_tags}/{len(songs)} songs")
+            if tag_counts:
+                print("  Top tags:")
+                for tag, count in sorted(tag_counts.items(), key=lambda x: -x[1])[:10]:
+                    print(f"    {tag}: {count}")
+        except ImportError as e:
+            print(f"Tag enrichment not available: {e}")
+        except Exception as e:
+            print(f"Tag enrichment failed: {e}")
+
     # Deduplicate truly identical songs (exact same content)
     # Keep versions with same lyrics but different chords
     seen_content = {}
@@ -524,6 +557,11 @@ def build_index(parsed_dirs: list[Path], output_file: Path):
 
 
 def main():
+    parser = argparse.ArgumentParser(description='Build song search index')
+    parser.add_argument('--no-tags', action='store_true',
+                        help='Skip tag enrichment (faster build)')
+    args = parser.parse_args()
+
     # All song sources
     parsed_dirs = [
         Path('sources/classic-country/parsed'),
@@ -532,7 +570,7 @@ def main():
     ]
     output_file = Path('docs/data/index.jsonl')
 
-    build_index(parsed_dirs, output_file)
+    build_index(parsed_dirs, output_file, enrich_tags=not args.no_tags)
 
 
 if __name__ == '__main__':
