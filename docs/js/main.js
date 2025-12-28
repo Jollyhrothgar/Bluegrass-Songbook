@@ -70,7 +70,9 @@ const accountBtn = document.getElementById('account-btn');
 const accountModal = document.getElementById('account-modal');
 const accountModalClose = document.getElementById('account-modal-close');
 const signInBtn = document.getElementById('sign-in-btn');
-const signOutBtn = document.getElementById('sign-out-btn');
+const userInfo = document.getElementById('user-info');
+const userAvatar = document.getElementById('user-avatar');
+const userName = document.getElementById('user-name');
 
 // Song actions
 const printBtn = document.getElementById('print-btn');
@@ -352,22 +354,26 @@ async function loadIndex() {
 // ============================================
 
 function updateAuthUI(user) {
-    const accountBtnIcon = accountBtn?.querySelector('.account-icon');
-    const accountBtnText = accountBtn?.querySelector('.account-text');
-
     if (user) {
-        if (accountBtnIcon) accountBtnIcon.textContent = user.email?.charAt(0).toUpperCase() || 'U';
-        if (accountBtnText) accountBtnText.textContent = 'Account';
+        // Hide sign-in button, show user info
         signInBtn?.classList.add('hidden');
-        signOutBtn?.classList.remove('hidden');
+        userInfo?.classList.remove('hidden');
+
+        // Populate user info
+        if (userAvatar) {
+            userAvatar.src = user.user_metadata?.avatar_url || user.user_metadata?.picture || '';
+        }
+        if (userName) {
+            userName.textContent = user.user_metadata?.full_name || user.email?.split('@')[0] || 'User';
+        }
+
         updateSyncUI('syncing');
         performFullSync();
         performFullListsSync();
     } else {
-        if (accountBtnIcon) accountBtnIcon.textContent = '?';
-        if (accountBtnText) accountBtnText.textContent = 'Sign In';
+        // Show sign-in button, hide user info
         signInBtn?.classList.remove('hidden');
-        signOutBtn?.classList.add('hidden');
+        userInfo?.classList.add('hidden');
         updateSyncUI('offline');
     }
 }
@@ -1121,9 +1127,9 @@ function init() {
             await SupabaseAuth.signInWithGoogle();
         });
 
-        signOutBtn?.addEventListener('click', async () => {
-            await SupabaseAuth.signOut();
-            closeAccountModal();
+        // Click on user info opens account modal
+        userInfo?.addEventListener('click', () => {
+            openAccountModal();
         });
     }
 
