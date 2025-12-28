@@ -1937,10 +1937,11 @@ function renderSong(song, chordpro, isInitialRender = false) {
     const title = metadata.title || song?.title || 'Unknown Title';
     const artist = metadata.artist || song?.artist || '';
     const composer = metadata.writer || metadata.composer || song?.composer || '';
-    // Only show source link for classic-country songs (they have external source URLs)
+    // Source display - external link for classic-country, text for others
     const sourceUrl = song?.source === 'classic-country' && song?.id
         ? `https://www.classic-country-song-lyrics.com/${song.id}.html`
         : null;
+    const bookDisplay = song?.book || null;
 
     // Build key dropdown options (availableKeys already defined above)
     const keyOptions = availableKeys.map(k => {
@@ -1964,6 +1965,14 @@ function renderSong(song, chordpro, isInitialRender = false) {
     }
     if (composer) {
         metaHtml += `<div class="meta-item"><span class="meta-label">Written by:</span> ${escapeHtml(composer)}</div>`;
+    }
+    if (bookDisplay) {
+        // Use book URL from song metadata if available
+        const bookUrl = song?.book_url || null;
+        const bookHtml = bookUrl
+            ? `<a href="${bookUrl}" target="_blank" rel="noopener">${escapeHtml(bookDisplay)}</a>`
+            : escapeHtml(bookDisplay);
+        metaHtml += `<div class="meta-item"><span class="meta-label">From:</span> ${bookHtml}</div>`;
     }
     if (sourceUrl) {
         metaHtml += `<div class="meta-item"><span class="meta-label">Source:</span> <a href="${sourceUrl}" target="_blank" rel="noopener">${escapeHtml(song.id)}</a></div>`;

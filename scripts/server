@@ -3,8 +3,11 @@
 # server - Start development servers
 #
 # Usage:
-#   ./scripts/server                    # Start frontend server on port 8080
+#   ./scripts/server [port]             # Start frontend server (default port 8080)
+#   ./scripts/server 9000               # Start frontend on port 9000
 #   ./scripts/server enrichment         # Start enrichment preview viewer
+#
+# If the port is in use, automatically tries the next available port.
 #
 # For source-specific servers (like debug viewers), use:
 #   ./sources/classic-country/scripts/server debug_viewer
@@ -15,24 +18,72 @@ set -e
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO_ROOT"
 
-COMMAND="${1:-frontend}"
+# Check if a port is available
+port_available() {
+    ! lsof -i:"$1" >/dev/null 2>&1
+}
+
+# Find an available port starting from the given port
+find_available_port() {
+    local port="$1"
+    local max_attempts=20
+    local attempt=0
+
+    while [ $attempt -lt $max_attempts ]; do
+        if port_available "$port"; then
+            echo "$port"
+            return 0
+        fi
+        echo "Port $port is in use, trying $((port + 1))..." >&2
+        port=$((port + 1))
+        attempt=$((attempt + 1))
+    done
+
+    echo "Could not find available port after $max_attempts attempts" >&2
+    return 1
+}
+
+# Parse arguments - check if first arg is a number (port) or command
+ARG1="${1:-frontend}"
+ARG2="${2:-}"
+
+if [[ "$ARG1" =~ ^[0-9]+$ ]]; then
+    # First arg is a port number
+    COMMAND="frontend"
+    PORT="$ARG1"
+elif [[ -n "$ARG2" && "$ARG2" =~ ^[0-9]+$ ]]; then
+    # Second arg is a port number
+    COMMAND="$ARG1"
+    PORT="$ARG2"
+else
+    COMMAND="$ARG1"
+    PORT="8080"
+fi
 
 case "$COMMAND" in
     frontend|"")
+        PORT=$(find_available_port "$PORT")
         echo "Starting frontend server..."
-        echo "Visit: http://localhost:8080"
-        python3 -m http.server 8080 --directory docs
+        echo "Visit: http://localhost:$PORT"
+        python3 -m http.server "$PORT" --directory docs
         ;;
     enrichment|enrichment-viewer|enrich)
         echo "Starting enrichment preview viewer..."
         uv run python3 scripts/enrichment-viewer/server.py
         ;;
     help|--help|-h)
-        echo "Usage: ./scripts/server [command]"
+        echo "Usage: ./scripts/server [port] [command]"
         echo ""
         echo "Commands:"
         echo "  frontend     Start the main frontend (default)"
         echo "  enrichment   Start the enrichment preview viewer"
+        echo ""
+        echo "Options:"
+        echo "  port         Port number (default: 8080, auto-increments if in use)"
+        echo ""
+        echo "Examples:"
+        echo "  ./scripts/server           # Frontend on port 8080"
+        echo "  ./scripts/server 9000      # Frontend on port 9000"
         echo ""
         ;;
     *)

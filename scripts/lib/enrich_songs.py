@@ -466,6 +466,7 @@ def main():
     sources_dir = Path('sources')
     sources = [
         ('classic-country', sources_dir / 'classic-country'),
+        ('golden-standard', sources_dir / 'golden-standard'),
         ('manual', sources_dir / 'manual'),
     ]
 

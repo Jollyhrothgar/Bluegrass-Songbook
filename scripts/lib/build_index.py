@@ -270,6 +270,8 @@ def parse_chordpro_metadata(content: str) -> dict:
         'composer': None,
         # Source tracking
         'source': None,
+        'book': None,
+        'book_url': None,
         # Version metadata (x_version_* fields)
         'version_label': None,
         'version_type': None,
@@ -288,6 +290,10 @@ def parse_chordpro_metadata(content: str) -> dict:
         # Map x_* fields to metadata keys
         if key == 'x_source':
             metadata['source'] = value
+        elif key == 'x_book':
+            metadata['book'] = value
+        elif key == 'x_book_url':
+            metadata['book_url'] = value
         elif key == 'x_version_label':
             metadata['version_label'] = value
         elif key == 'x_version_type':
@@ -472,7 +478,11 @@ def build_index(parsed_dirs: list[Path], output_file: Path):
             'lyrics_hash': lyrics_hash,  # For similarity detection
         }
 
-        # Add version metadata if present (omit null fields to save space)
+        # Add version/provenance metadata if present (omit null fields to save space)
+        if metadata['book']:
+            song['book'] = metadata['book']
+        if metadata['book_url']:
+            song['book_url'] = metadata['book_url']
         if metadata['version_label']:
             song['version_label'] = metadata['version_label']
         if metadata['version_type']:
@@ -517,6 +527,7 @@ def main():
     # All song sources
     parsed_dirs = [
         Path('sources/classic-country/parsed'),
+        Path('sources/golden-standard/parsed'),
         Path('sources/manual/parsed'),
     ]
     output_file = Path('docs/data/index.jsonl')
