@@ -1,0 +1,2429 @@
+{title: A Hundred Years From Now}
+{artist: Lester Flatt and Earl Scruggs}
+{key: G}
+
+[G]Lord a hundred years from now I won’t be crying
+[G]A hundred years from now I won’t be [D]blue
+[G]And my heart would have forgotten that you broke every [C]vow
+[G]I won’t care a [D]hundred years from [G]now
+
+[G]Lord it seems that it was yesterday you told me
+[G]You couldn’t live without my love some[D]how
+[G]Now that you’re with another it breaks my heart some[C]how
+[G]I won’t care a [D]hundred years from [G]now
+
+[G]Now do you recall the night sweetheart you promised
+[G]Another’s kiss you never would al[D]low
+[G]That’s all in the past dear it didn’t seem to [C]last
+[G]I won’t care a [D]hundred years from [G]now
+
+{new_song}
+
+{title: Angel Band}
+{artist: William Batchelder Bradbury}
+{key: G}
+{time: 3/4}
+
+[G]My latest sun is [C]sinking [G]fast
+My [G]race is [D]nearly [G]run
+[G]My longest trials [C]now are [G]past
+My [G]triumph [D]has be[G]gun
+
+{soc}
+[D]Oh come angel [G]band
+Come [D]and around me [G]stand
+Oh [C]Bear me away on your snow white [G]wings
+To my im[D]mortal [G]home
+Oh [C]bear me away on you snow white [G]wings
+To my im[D]mortal [G]home
+{eoc}
+
+[G]Oh bear my longing [C]Heart to [G]him
+Who [G]bled and [D]died for [G]me
+[G]Whose blood now cleanses [C]from all [G]sin
+And [G]gives me [D]victo[G]ry
+
+{new_song}
+
+{title: Any Old Time}
+{artist: Jimmie Rodgers}
+{key: G}
+
+[G]I just received your letter, you're down and [C]out, you [G]say
+At [C]first I thought I [G]would tell you to [E]travel on the [A]other [D]way
+[G]But in my memory lingers all you [C]once were to me
+[C]So I'm gonna give you [G]one more chance to [E]prove what [A]you can [D]be
+
+{soc}
+[G]Any old time you wanna come back home
+[C]Drop me a line and, honey, say no more you'll [G]roam
+[D]You had your chance to play the game [G]fair
+[A]But when you left me, sweetheart, you only left a love who [D]cared
+[G]Now that you're down, I'm gonna stick by you
+[G]If you will only tell me that your roaming days are through
+[G]You'll find me here, just like the day you left me alone
+[G]Any old time you wanna come back home
+{eoc}
+
+{new_song}
+
+{title: Back To The Old Home}
+{artist: Traditional}
+{key: G}
+
+[G]Back in the days of my [C]childhood
+[G]In the evening when everything was [D]still
+[G]I used to sit and listen to the [C]foxhounds
+[G]With my dad in the [D]old Kentucky [G]hills
+
+{soc}
+[G]I’m on my way back to the [C]old home
+[G]The road winds on up the [D]hill
+[G]But there’s no light in the [C]window
+[G]That shined long a[D]go where I [G]live
+{eoc}
+
+[G]Soon my childhood days were [C]over
+[G]I had to leave my old [D]home
+[G]For dad and mother were called to [C]heaven
+[G]I’s left in this [D]world all a[G]lone
+
+[G]High in the hills of old Ken[C]tucky
+[G]Stands the fondest spot in my memo[D]ry
+[G]I’m on my way back to the [C]old home
+[G]The light in the [D]window I long to [G]see
+
+{new_song}
+
+{title: Big Spike Hammer}
+{artist: Bobby Osborne, Pete Goble}
+{key: G}
+
+[G]Can't you hear the riffle of my [Em]big spike hammer
+[C]Lord it's busting my [Em]side
+[G]I've done all I can do to [Em]keep that woman
+[C]Still she's [Em]not satis[D]fied
+
+{soc}
+[G]Hey hey Della Mae
+[G]Why do you treat me this ‘a [D]way [G]
+[G]Hey hey Della Mae
+[G]I'll get [D]even some [G]day
+{eoc}
+
+[G]I'm the best hammer swinger in this [Em]big section gang
+[C]Big Bill Johnson is my [Em]name
+[G]Lord this hammer that I swing for a [Em]dollar and a half a day
+[C]It’s all for [Em]my Della [D]Mae
+
+[G]Now I've been lots of places, [Em]not much I ain't done
+[C]There's still a lot of things I'd like to [Em]see
+[G]Big spike hammer that I swing or the [Em]woman that I love
+[C]Yeah one's gonna [Em]be the death [D]of me
+
+{new_song}
+
+{title: Blue Moon Of Kentucky}
+{artist: Bill Monroe}
+{key: G}
+{meta: timing 3/4 to 4/4}
+
+[G]Blue moon of Kentucky keep on [C]shining
+[G]Shine on the one that's gone and proved un[D]true
+[G]Blue moon of Kentucky keep on [C]shining
+[G]Shine on the one that's [D]gone and left me [G]blue
+
+[C]It was on a moonlight night
+[G]The stars were shining bright
+[C]And they whispered from on high
+[G]Your love has said good-[D]bye
+
+[G]Blue moon of Kentucky keep on [C]shining
+[G]Shine on the one that's [D]gone and said good-[G]bye
+
+{new_song}
+
+{title: Blue Night}
+{artist: Kirk McGee}
+{key: G}
+
+[G]Blue night I got you on my mind
+[G]Blue night I can’t keep from [C]crying
+[G]You met someone that was [C]new
+[G]You quit someone that you knew was true
+[D]Blue night I got you on my [G]mind
+
+[G]Blue night blue as I can be
+[G]I don’t know what’ll become of [C]me
+[G]Where we used to walk I walk a[C]lone
+[G]With an aching heart because my love is gone
+[D]Blue night blue as I can [G]be
+
+[G]Blue night ’cause I’m all alone
+[G]I used to call you on the tele[C]phone
+[G]I used to call and it made you [C]glad
+[G]Now I call and it makes you mad
+[D]Blue night ’cause I’m all a[G]lone
+
+[G]Blue night all by myself
+[G]Since you put me on that [C]shelf
+[G]There’s just one thing that you must [C]know
+[G]You’re gonna reap just what you sow
+[D]Blue night, all by my[G]self
+
+{new_song}
+
+{title: Blue Ridge Cabin Home}
+{artist: Thomas C. Ashley}
+{key: G}
+
+[G]There's a well beaten path on this [C]old mountainside
+[D]Where I wandered when I was a [G]lad
+[G]And I wandered alone to the [C]place I call home
+[D]In those Blue Ridge hills far a[G]way
+
+{soc}
+[G]Oh I love those hills of old [C]Virginia
+[D]From those Blue Ridge hills I did [G]roam
+[G]When I die won't you bury me [C]on the mountain
+[D]Far away near my Blue Ridge mountain [G]home
+{eoc}
+
+[G]Now my thoughts wander back to the [C]ramshackle shack
+[D]In those Blue Ridge hills far a[G]way
+[G]My mother and dad they’re [C]laid there to rest
+[D]They are sleeping in peace together [G]there
+
+[G]I return to that old cabin [C]home with a sigh
+[D]I've been longing for days gone [G]by
+[G]When I die won't you bury me on that [C]old mountainside
+[D]Make my resting place upon the hills so [G]high
+
+{new_song}
+
+{title: Bound To Ride}
+{artist: Peter Rowan}
+{key: G}
+
+[G]Well I’m going Down the road Got no shoes upon my feet
+[C]Honey c’mon I’m [Cm]bound to [G]ride
+[C]Honey c’mon I’m [Cm]bound to [G]ride
+[G]Don’t you want to [D]go
+
+[G]Well I’m going Down the track Got my home upon my back
+[C]Honey c’mon I’m [Cm]bound to [G]ride
+[C]Honey c’mon I’m [Cm]bound to [G]ride
+[G]Don’t you want to [D]go
+
+[G]Well I know It won’t be long Till I hold you in my arms
+[C]Honey c’mon I’m [Cm]bound to [G]ride
+[C]Honey c’mon I’m [Cm]bound to [G]ride
+[G]Don’t you want to [D]go
+
+{new_song}
+
+{title: Bury Me Beneath The Weeping Willow}
+{artist: Traditional}
+{key: G}
+
+[G]My heart is sad and I am [C]lonely
+[G]For the only one I [D]love
+[G]When shall I see her oh no [C]never
+[G]'Til we [D]meet in heaven a[G]bove
+
+{soc}
+[G]Oh, bury me beneath the [C]willow
+[G]Under the weeping willow [D]tree
+[G]So she will know where I am [C]sleeping
+[G]And per[D]haps she'll weep for [G]me
+{eoc}
+
+[G]She told me that she dearly [C]loved me
+[G]How could I believe it un[D]true
+[G]Until the angels softly [C]whispered
+[G]She will [D]prove untrue to [G]you
+
+[G]Tomorrow was our wedding [C]day
+[G]Oh God oh God where can she [D]be
+[G]She's out a courting with a[C]nother
+[G]And no [D]longer cares for [G]me
+
+{title: Carolina In The Pines}
+{artist: Michael Martin Murphey}
+{key: G}
+
+[G]She came to me, said she [Am]knew me Said she'd [C]known me a long [G]time
+[Am]And she spoke of being in [Bm]love With every [C]mountain she had [D]climbed
+
+[G]And she talked of trails she'd [Am]walked up
+[C]Far above the timber[G]line
+[Am]From that night on I knew I'd [Bm]write songs
+[C]With Carolina in the [D]pines
+
+{soc}
+[C]There's a new moon on the [G]fourteenth, [C]first quarter the [G]21st
+[C]And the full moon in the [G]last week brings a [Am]fullness to this [D]earth
+[C]There's no guesswork in the [G]clockwork on the [C]worlds heart or [G]mind
+[C]There are nights I only [G]feel right With [Am]Carolina in the [D]pines
+{eoc}
+
+[G]When the frost shows on the [Am]windows And the [C]wood stove smokes and [G]glows
+[Am]As the fire grows we can [Bm]warm our souls Watching [C]rainbows in the [D]coals
+[G]And we’ll talk of trails we’ve [Am]walked up [C]Far above the timber[G]line
+[Am]There are nights I only [Bm]feel right With [C]Carolina in the [D]pines
+
+{new_song}
+
+{title: Carolina Star}
+{artist: Hugh Moffatt}
+{key: G}
+
+[G]Back in the hills oh [C]slow rollin' hills
+[G]Where North Carolina comes [D]close to the stars
+[G]There's livin' a lady who's [C]shinin' so high
+[D]They call her the "Carolina [G]Star'
+
+[G]She works at the factory from [C]Monday through Friday
+[G]She's raisin' three daughters a[D]lone
+[G]Their daddy's away, he's [C]chasing a dream
+[D]They're waitin' for the day that he comes [G]home
+
+{soc}
+[D]Oh, Carolina [C]Even stars get [G]lonesome now and [D]then
+[D]Oh, Carolina [C]Don't you worry, he'll be [D]comin' home a[G]gain
+{eoc}
+
+[G]He's playing his songs down in [C]Nashville
+[G]He's pickin' for tips in a [D]bar
+[G]He's broke and all alone, but he [C]ain't ready to come home
+[D]He's wants to be a bluegrass pickin' [G]star
+
+[G]Sometimes she wakes up just [C]thinking of him
+[G]She remembers him beside her in the [D]night
+[G]While out across those hills that old [C]moon is settled in
+[D]And those Carolina stars are shining [G]bright
+
+{new_song}
+
+{title: Columbus Stockade Blues}
+{artist: Thomas Darby}
+{key: G}
+
+[G]Way down in Columbus Georgia
+[D]Lord I wish I was back in Tennes[G]see
+[G]Way down in that old Columbus Stockade
+[D]My friends have all turned their back on [G]me.
+
+{soc}
+[C]Go and leave me if you [G]wish to
+[C]Never let me cross your [D]mind
+[G]In your heart, you love another
+[D]Leave me, little darling, I don't [G]mind
+{eoc}
+
+[G]Many a night with you I've rambled
+[D]Honey, countless hours with you I've [G]spent
+[G]Thought I had your sweet love and your little heart forever
+[D]But I find it was only [G]lent.
+
+[G]Last night as I lay sleeping
+[D]Oh, I dreamed that it was you in my [G]arms
+[G]When I woke I was mistaken
+[D]Lord, I was still behind these [G]bars
+
+{new_song}
+
+{title: Crawdad Song}
+{artist: Traditional}
+{key: G}
+
+[G]You get a line and I'll get a pole, honey
+[G]You get a line and I'll get a pole, [D]babe
+[G]You get a line and I'll get a pole
+[C]We'll go fishin' in the crawdad hole
+[G]Honey, [D]baby [G]mine
+
+[G]Whatcha’ gonna do when the lake goes dry, honey?
+[G]Whatcha’ gonna do when the lake goes dry, [D]babe?
+[G]Whatcha’ gonna do when the lake goes dry?
+[C]Sit on the bank, watch crawdads die?
+[G]Honey, [D]baby [G]mine
+
+[G]Sell your crawdads three for a dime, honey
+[G]Sell your crawdads three for a dime, [D]babe
+[G]Sell your crawdads three for a dime
+[C]Everybody knows your crawdads ain't good as mine..
+[G]Honey, [D]baby [G]mine
+
+[G]Hurry up, you slept too late, honey
+[G]Hurry up, you slept too late, [D]babe
+[G]Hurry up, you slept too late
+[C]Crawdad man done passed your gate
+[G]Honey, [D]baby [G]mine
+
+{new_song}
+
+{title: Cripple Creek}
+{artist: Traditional}
+{key: G}
+
+[G]I got a girl and she loves me She’s as [C]sweet as sweet can [G]be
+She’s got [G]eyes of baby blue, makes my [D]gun shoot straight and [G]true.
+
+{soc}
+[G]Goin’ up Cripple Creek goin’ in a run
+[G]Goin’ up Cripple Creek to [D]have some [G]fun.
+{eoc}
+
+[G]Cripple Creek’s wide and Cripple Creek’s deep
+I’ll [C]wade old Cripple Creek before I [G]sleep
+[G]Roll my breeches to my knees
+I’ll [D]wade ol’ Cripple Creek when I [G]please
+
+[G]I went down to Cripple Creek
+To [C]see what them girls had to [G]eat
+[G]I got drunk and fell against the wall
+[D]Old corn likker was the cause of it [G]all
+
+{new_song}
+
+{title: Dark Hollow}
+{artist: Bill Browning}
+{key: G}
+
+[G]I'd rather be in some [D]dark [G]hollow
+[C]Where the sun don't never [G]shine
+[G]Than to be [C]home alone and knowing that you're gone
+[G]Would cause me to [D]lose my [G]mind
+
+{soc}
+[G]So blow your whistle freight train
+[C]Carry me farther on down the [G]track
+[G]Well I'm going [C]away I'm leaving today
+[G]I'm going but I [D]ain't coming [G]back
+{eoc}
+
+[G]I'd rather be in some [D]dark [G]hollow
+[C]Where the sun don't ever [G]shine
+[G]Than to be [C]in some big city
+[G]In a small room with your [D]love on my [G]mind
+
+[G]I’d rather be in some [D]dark [G]hollow
+[C]Where the sun don’t ever [G]shine
+[G]Then to see [C]you as another man’s darling
+[G]Or to know you won’t [D]ever be [G]mine
+
+{new_song}
+
+{title: Deep Elem Blues}
+{artist: Cofer Brothers}
+{key: G}
+{meta: description Blues progression}
+
+[G]If you go down to deep elm put your money in your shoes
+[G]The women in deep elem, they give you the deep elem blues
+[C]Oh, sweet mama, your daddy's got them deep elem [G]blues
+[D]Oh, sweet mama, your daddy's got them deep elem [G]blues
+
+[G]Once I had a girlfriend, she meant the world to me
+[G]She went down to deep elem, now, she ain't what she used to be
+[C]Oh, sweet mama, your daddy's got them deep elem [G]blues
+[D]Oh, sweet mama, your daddy's got them deep elem [G]blues
+
+[G]Once I knew a preacher, preached the bible through and through
+[G]He went sown to deep elem, now, his preaching days are through
+[C]Oh, sweet mama, your daddy's got them deep elem [G]blues
+[D]Oh, sweet mama, your daddy's got them deep elem [G]blues
+
+[G]When you go down to deep elem to have a little fun
+[G]Have your ten dollars ready when the police man comes
+[C]Oh, sweet mama, your daddy's got them deep elem [G]blues
+[D]Oh, sweet mama, your daddy's got them deep elem [G]blues
+
+{new_song}
+
+{title: Deep River Blues}
+{artist: Eddie Green and Lucile Marie Handy}
+{key: E}
+
+[E7]Let it rain, let it [D#7]pour, let it [E7]rain, a whole lot [A7]more
+[E7] 'Cause I got them deep river [B7]blues
+[E7]Let the rain drive right [D#7]on, let the [E7]wave sweep a[A7]long
+[E7] 'Cause I got them deep river [B7]blues
+
+[E7]My old girl is a good old [D#7]pal, but she [E7]looks like a water[A7]fowl
+[E7]When I get them deep river [B7]blues
+
+[E7]There ain't no one to cry for [D#7]me, and the [E7]fish all go out on a [A7]spree…
+[E7]When I get them deep river [B7]blues
+
+[E7]Give me back my old [D#7]boat, I'm gonna [E7]sail if she'll [A7]float
+[E7]When I get them deep river [B7]blues
+
+[E7]I'm goin' back to Muscle [D#7]Shoals, times are [E7]better there I'm [A7]told
+[E7]When I get them deep river [B7]blues
+
+{new_song}
+
+{title: Dim Lights, Thick Smoke}
+{artist: Joe Maphis, Max Fidler, Rose Lee Maphis}
+{key: G}
+
+[G]Dim lights, thick smoke, and [C]loud, loud music
+[G]Is the only kind of life you'll ever under[D]stand
+[G]Dim lights, thick smoke and [C]loud, loud music
+[G]You'll never make a [D]wife to a home-loving [G]man
+
+[G]A home and little children mean [C]nothing to you
+[G]A house filled with love and a husband so [D]true
+[G]You'd rather have a drink with the [C]first guy you meet
+[G]And the only home you [D]know is the club down the [G]street
+
+[G]A drinking and dancing to a [C]honky tonk band
+[G]Is the only kind of life you'll ever under[D]stand
+[G]Go on and have your fun, you [C]think you've played it smart
+[G]I'm sorry for [D]you and your honky tonk [G]heart
+
+{new_song}
+
+{title: Dust In A Baggie}
+{artist: Billy Strings}
+{key: G}
+{meta: note crooked}
+
+[G]I ain't slept in seven days, [C]haven't ate in [G]three
+[G]Methamphetamine has got a damn good hold of [D]me
+[G]My tweaker friends have got me to the [C]point of no re[G]turn
+[G]I just took the lighter to the [D]bulb and watched it [G]burn
+
+{soc}
+[C]This life of sin [G]This life of sin
+[C]Is got me in [G]Is got me in
+[D]Well it's got me back in prison once again
+[G]I used my only phone call to [C]contact my daddy
+[G]I got twenty long years for some [D]dust in a [G]baggie
+{eoc}
+
+[G]Well if I would have listened to what [C]Mom and Papa [G]said,
+[G]I wouldn't be locked up in prison, troubled in the [D]head
+[G]I took that little pop and [C]sucked until my mind was [G]spun
+[G]I got twenty years to sit and [D]think of what I've [G]done
+
+[G]Well sometimes I sit and wonder where my [C]little life went [G]wrong,
+[G]These old jailhouse blues have got me singing this old [D]song
+[G]My life is a disaster, Lord, and [C]I feel so a[G]shamed
+[G]In here where they call by a [D]number, not a [G]name
+
+{title: Faded Love}
+{artist: Bob Wills, John Wills}
+{key: G}
+
+[G]As I look at the letters that you [C]wrote to me
+[G]It's you that I am thinking [D]of
+[G]As I read the lines that to [C]me were so dear
+[G]I re[D]member our faded [G]love
+
+{soc}
+[G]I miss you darlin' more and more [C]everyday
+[G]As heaven would miss the stars a[D]bove
+[G]With every heartbeat, I still [C]think of you
+[G]And re[D]member our faded [G]love
+{eoc}
+
+[G]As I think of the past, and all the [C]pleasures we had
+[G]As I watch the mating of the [D]doves
+[G]It was in the springtime that you [C]said goodbye
+[G]I re[D]member our faded [G]love
+
+{new_song}
+
+{title: Footprints in the Snow}
+{artist: Bill Monroe}
+{key: G}
+
+[G]Now some folks like the summertime when [C]they can walk about
+[D]Strolling through the meadow green it's pleasant there no [G]doubt
+[G]But give me the wintertime when the [C]snow is on the ground
+[D]For I found her when the snow on the [G]ground
+
+{soc}
+[G]I traced her little footprints in the [D]snow
+[D]I found her little footprints in the [G]snow
+[G]I bless that happy day when Nellie [C]lost her way
+[D]For I found her when the snow was on the [G]ground
+{eoc}
+
+[G]I dropped in to see her there was a [C]big round moon
+[D]Her mother said she just stepped out but would be returning [G]soon
+[G]I found her little footprints and I [C]traced them in the snow
+[D]I found her when the snow was on the [G]ground
+
+[G]Now she's up in heaven she's with the [C]angel band
+[D]I know I'm going to meet her in that promised [G]land
+[G]But every time the snow falls it [C]brings back memories
+[D]For I found her when the snow was on the [G]ground
+
+{new_song}
+
+{title: Freeborn Man}
+{artist: Keith Allison, Mark Lindsay}
+{key: G}
+{meta: note Blues progression}
+
+[G]Well, I was born in the Southland
+[G]Twenty-some odd years ago
+[C]I ran away for the first time
+[G]When I was four years old
+
+{soc}
+[G]I’m a free born man
+[G]My home is on my back
+[C]I know every inch of highway
+[G]And every foot of back road
+[D]Every mile of railroad [G]track
+{eoc}
+
+[G]I got a gal in Cincinnati
+[G]Got a woman in San Antone
+[C]I always loved the girl next door
+[G]But anyplace is home
+
+[G]I got me a Martin guitar
+[G]I carry an old tote sack
+[C]I hocked it about two hundred times
+[G]But I always get it back
+
+[G]You may not like my appearance
+[G]May not like my song
+[C]You sure don’t love me when I’m here
+[G]But you love me when I’m gone
+
+{new_song}
+
+{title: Ginseng Sullivan}
+{artist: Norman Blake}
+{key: D}
+
+[D]About three miles from the Battele yard
+[G]From the reverse curve on down
+[G]Not far south of the [D]town depot Sullivan's [Bm]shack
+[F#m]was found, [A]Back on the higher [D]ground
+
+[D]You could see him every day Walking [G]down the line
+[G]With his old brown sack a[D]cross his back
+[G]And his long hair [D]down behind Speaking his [Bm]worried mind
+
+{soc}
+[D]It's a long way to the Delta from the [G]North Georgia hills
+[G]And a tote sack full of [D]ginseng Won't pay no [G]travelling bills
+[C]Now, I'm too old to [D]ride the rails or [Em]thumb the road a[A]lone
+[D]Well I guess I'll never [G]make it back to [D]home
+[D]My muddy water [G]Mississippi [A]Delta [D]home
+{eoc}
+
+[D]Well, the winters here they get too cold
+[G]The damp it makes me ill
+[G]Can't dig no roots in the [D]mountain side
+[G]With the ground froze [D]hard and still
+[G]Gotta stay at the [D]foot of the [Bm]hill
+
+[D]But next summer, if things turn right
+[G]The companies will pay high
+[G]I'll make enough money to [D]pay my bills
+[G]And bid these [D]mountains goodbye
+[G]Then he said [D]with a [Bm]sigh..
+
+{new_song}
+
+{title: Gotta Travel On}
+{artist: Larry Ehrlich, David Lazar, Paul Clayton, Tom Six}
+{key: G}
+
+[G]Poppa writes to Johnny, but Johnny can't come home
+[G]Johnny can't come home, no, [C]Johnny can't come [G]home
+[G]Poppa writes to Johnny, but Johnny can't come home
+[G]'Cause he's been on the [D]chain gang too [G]long
+
+[G]I've laid around and played around this old town too long
+[G]Summer's almost gone, yes, [C]winter's comin' [G]on
+[G]I've laid around and played around this old town too long
+[G]And I feel like I [D]gotta travel [G]on
+
+[G]High sheriff and police ridin' after me
+[G]Ridin' after me, yes, [C]comin' after [G]me
+[G]High sheriff and police ridin' after me
+[G]And I feel like I [D]gotta travel [G]on
+
+[G]Wanna see my honey, wanna see her bad
+[G]Wanna see her bad, oh, [C]wanna see her [G]bad
+[G]Wanna see my honey, wanna see her bad
+[G]She's the best girl this [D]poor boy ever [G]had
+
+{new_song}
+
+{title: Hand Me Down My Walking Cane}
+{artist: Traditional}
+{key: G}
+
+[G]I got high, lord I got in jail Lord I [D]got high, and I got in [G]jail
+[C]I got high and I got in jail, had [G]nobody for to go my bail
+[G]My sins, they have [D]overtaken [G]me
+
+{soc}
+[G]Hand me down my walkin’ cane
+[G]Hand me down my walkin’ [D]cane
+[G]Hand me down my walkin’ cane
+[C]I'm gonna leave on the morning train
+[G]My sins, they have [D]overtaken [G]me
+{eoc}
+
+[G]Well, the beans was tough, and the meat was fat
+[G]The beans was tough, and the meat was [D]fat
+[G]The beans was tough, and the meat was fat
+[C]Oh good God, I couldn't eat that
+[G]My sins, they have [D]overtaken [G]me
+
+[G]Well it's come on Ma, and go my bail
+[G]Come on Ma, and go my [D]bail
+[G]Come on Ma, and go my bail
+[C]Get me outta this Nashville jail
+[G]My sins, they have [D]overtaken [G]me
+
+[G]Well if I die in Tennessee
+[G]If I die in Tennes[D]see
+[G]If I die in Tennessee
+[C]Ship me back by C.O.D.
+[G]My sins, they have [D]overtaken [G]me
+
+{new_song}
+
+{title: Hello City Limits}
+{artist: Johnny Elgin}
+{key: G}
+
+[G]Hello, city limits I see your sign [C]Left all my worries way be[G]hind
+[D]Left all my troubles and heartaches there too
+[C]Hello, city limits I’m [D]starting out brand [G]new
+
+[G]I need a change of scenery, need it real bad
+[C]To help me forget all the troubles I’ve [G]had
+[G]I’ve got a feeling I’ll find a love that’s true
+[C]Hello city limits I’m [D]starting out brand [G]new
+
+[G]I haven’t told a soul just where I’ll be
+[C]I don’t want the blues to catch up with [G]me
+[G]I may decide to change my name too
+[C]Well hello city limits, I’m [D]starting out brand [G]new
+
+{new_song}
+
+{title: How Mountain Girls Can Love}
+{artist: Carter Stanley}
+{key: G}
+
+[G]Riding the night in the high cold winds
+[D]On the trail of the old lonesome [G]pine
+[G]Thinking of you, feeling so blue
+[D]Wondering why I left you be[G]hind
+
+{soc}
+[C]Get down boys, go back [G]home
+[D]Back to the girl you [G]love
+[C]Treat her right, never [G]wrong
+[D]How mountain gals can [G]love
+{eoc}
+
+[G]Remember the night we strolled down the lane
+[D]Our hearts were gay and happy [G]then
+[G]You whispered to me when I held you close
+[D]We hoped that night would never [G]end
+
+{new_song}
+
+{title: I Haven’t Seen Mary In Years}
+{artist: Damon Black}
+{key: G}
+{time: 3/4}
+
+[G]While walking one day in the country
+[C]I saw a gathering [G]crowd
+[C]And as my footsteps drew me [G]closer
+[G]I smelled the sweet [D]fragrance of [G]flowers
+
+[G]It looking like a family reunion
+[C]had my eyes not counted the [G]tears
+[G]And an old man sat by a graveyard
+[G]I haven’t seen [D]Mary in [G]years
+
+{soc}
+[C]Hold to my hand and [G]lead me
+[C]Lead me away from [G]here
+[C]I just brought these flowers for [G]Mary
+[G]I haven’t seen [D]Mary in [G]years
+{eoc}
+
+[G]When Mary and I were first married
+[C]we had such plans for our [G]child
+[G]But for no reason I started rambling
+[G]and like the four [D]winds I just went [G]wild
+
+[G]If I could live my life over
+[C]I would bring Mary such [G]cheer
+[G]Now she’s gone where she’ll never meet me
+[G]I haven’t seen [D]Mary in [G]years
+
+[G]Then the old man left the graveyard
+[C]and I walked right by his [G]side
+[G]I called his name but through all his shame
+[G]his son he did [D]not recog[G]nize
+
+{new_song}
+
+{title: I Wonder Where You Are Tonight}
+{artist: Johnny Bond}
+{key: G}
+
+[G]Now tonight I'm sad, my heart is weary
+[C]I'm wondering if I'm wrong or [G]right
+[C]To dream about you though you left me
+[G]I wonder [D]where you are to[G]night
+
+{soc}
+[C]The rain is cold and slowly falling
+[D]Upon my window pane to[G]night
+[G]And though your love was even [C]colder
+[G]I wonder [D]where you are to[G]night
+{eoc}
+
+[G]Your heart was cold, you never loved me
+[C]Though you often said you [G]cared
+[C]But now you've gone to find another
+[G]Someone who [D]knows the love I [G]shared
+
+[G]Then came the dawn the day you left me
+[C]I tried to smile with all my [G]might
+[C]But you could see the pain within me
+[G]That lingers [D]in my heart to[G]night
+
+{new_song}
+
+{title: I’ll Fly Away}
+{artist: Albert E. Brumley}
+{key: G}
+
+[G]Some bright morning when this life is over [C]I’ll fly [G]away
+[G]To that home on God’s celestial shore [D]I’ll fly [G]away
+
+{soc}
+[G]I’ll fly away oh glory [C]I’ll fly [G]away in the morning
+[G]When I die hallelujah by and by [D]I’ll fly [G]away
+{eoc}
+
+[G]When the shadows of this life have gone [C]I’ll fly [G]away
+[G]Like a bird from these prison walls [D]I’ll fly [G]away
+
+[G]Oh how glad and happy when we meet [C]I’ll fly [G]away
+[G]No more cold iron shackles on my feet [D]I’ll fly [G]away
+
+[G]Just a few more weary days and then [C]I’ll fly [G]away
+[G]To a land where joys will never end [D]I’ll fly [G]away
+
+{new_song}
+
+{title: I’ll Never Shed Another Tear}
+{artist: Lester Flatt}
+{key: G}
+
+[G]I used to sit alone at night and [C]worry little [G]darling
+[G]For I thought you meant the world to [D]me
+[G]But now things have changed and those [C]days are gone [G]forever
+[G]So I'll never [D]shed another [G]tear
+
+{soc}
+[G]I'll never shed another tear now I don't care what happens
+[G]You have proved your love untrue to [D]me
+[G]There's nothing you can do that will [C]ever change my [G]feelings
+[G]So I'll never [D]shed another [G]tear
+{eoc}
+
+[G]With a broken heart I'll never forget the [C]vows we made [G]together
+[G]The many times you told me not to [D]fear
+[G]But now you've forgotten and you've [C]left me here [G]forever
+[G]So I'll never [D]shed another [G]tear
+
+[G]Now you should have told me dear that [C]you was only [G]fooling
+[G]Then I'd never learn to love you [D]so
+[G]Then I wouldn't have all these [C]heartaches my [G]darling
+[G]Dreading the [D]day I see you [G]go
+
+{new_song}
+
+{title: I’ve Endured}
+{artist: Ola Belle Reed}
+{key: G}
+
+[G]Born in the mountains many years ago
+[C]I traveled the hills and valleys through the rain and [G]snow
+[C]Seen the lightning flashing heard the thunder [G]roll
+[C]I've endured, [G]I've endured - [C]How long [D]can one en[G]dure?
+
+{soc}
+[G]Barefoot in the summer running through the fog
+[C]Too many mouths to feed they couldn't hold us [G]all
+[C]Trip to church on Sunday to learn the golden [G]rule
+[C]I've endured, [G]I've endured [C]How long [D]can one en[G]dure?
+{eoc}
+
+[G]I've worked for the rich I've lived with the poor
+[C]I've seen many a heartache and I’ll see many [G]more.
+[C]I've lived luck and sorrow been to success and [G]stone
+[C]I've endured, [G]I've endured [C]How long [D]can one en[G]dure?
+
+{new_song}
+
+{title: In The Pines}
+{artist: Traditional}
+{key: G}
+
+[G]The longest train I ever saw Went [C]down that Georgia [G]line
+[C]The engine passed at [G]six o'clock
+[D]And the cab passed by at [G]nine
+
+{soc}
+[G]In the pines, in the pines Where the [C]sun never [G]shines
+[G]And we shiver when the [D]cold wind [G]blows
+[G]Hoo hoo hoo hoo hoo, [C]hoo hoo hoo hoo [G]hoo
+{eoc}
+
+[G]I asked my captain for the time of day
+[C]He said he throwed his [G]watch away
+[C]A long steel rail and a [G]short cross tie
+[D]I'm on my way back [G]home
+
+[G]Little girl, little girl, what have I done
+[C]That makes you [G]treat me so?
+[G]You caused me to weep, you [C]caused me to [G]moan
+[D]You caused me to leave my [G]home
+
+{title: John Deere Tractor}
+{artist: Lawrence Hammond}
+{key: D}
+
+[D]Hey [D/C#]mama, [D/C]here's a [D/B]letter from your [G]son [Em]
+[G]Well, I guess my city days are [D]done, ma
+[C]And it ain't been [G]three weeks since you [D]came
+
+[D]Hey [D/C#]mama, [D/C]I do [D/B]remember what you [G]said [Em]
+[G]"Say your prayers before you go to [D]bed, son
+[C]And remember, [G]city women ain't the [D]same"
+
+{soc}
+[D]I'm like a [C]John Deere tractor in a half-acre [G]field
+[B7]I'm tryin' to plow furrows Where the soil is made of [E]steel
+[A]Oh, I wish I was [D]home, mama Where the [A]blue[D]grass is growin'
+[A]And the [E]sweet country girls don't com[A]plain [A7]
+{eoc}
+
+[D]Hey [D/C#]mama, [D/C]so much [D/B]perfume I thought I'd [G]drown [Em]
+[G]And the Lord didn't seem to be nowhere a[D]round
+[C]Oh, I feel like a [G]flower on the [D]vine
+
+[D]Oh, [D/C#]she was [D/C]pretty, [D/B]Lord [G]knows [Em]
+[G]Thought that she would bring me [D]joy
+[C]She laughed, and she [G]called me "country [D]boy"
+[C]And after [G]she had been so [D]kind..
+
+{new_song}
+
+{title: John Hardy}
+{artist: Traditional}
+{key: G}
+
+[C]Oh, John Hardy was a [G]desperate little man
+[C]Strapped on his guns every [G]day
+[C]Shot down a man on the [G]West Virginia line
+[D]You ought to see John Hardy getting away
+[D]You ought to see John Hardy getting a[G]way
+
+[C]When he run up to Virginia a[G]round East Stone Bridge
+[C]Thought he would surely be [G]free
+[C]And alone came a marshall with a [G]gun in his hand
+[D]Said, “Johnny come along with me
+[D]Johnny come along with [G]me.”
+
+[C]The first one to visit John [G]Hardy in his cell
+[C]Was a little girl dressed in [G]blue
+[C]She went on down to that [G]old jail cell
+[D]Said ‘Johnny I’ve been true to you’
+[D]‘Johnny, I’ve been true to [G]you’
+
+[C]The second one to visit John [G]Hardy in his cell
+[C]Was a little girl dressed in [G]red
+[C]She went on down to that [G]old jail cell
+[D]Said ‘Johnny I’d rather see you dead’
+[D]‘Johnny I’d rather see you [G]dead’
+
+[C]I was let in to travel from the [G]East to the West
+[C]From the North to the South in the [G]town
+[C]But when the sun comes up tomorrow they'll [G]take John Hardy down
+[D]And shone to his hanging ground
+[D]They'll gonna let John Hardy swing [G]down
+
+{new_song}
+
+{title: John Henry}
+{artist: Traditional}
+{key: G}
+
+[G]John Henry was a little baby boy
+[D]You could hold him on the palm of your hand
+[G]And his Papa cried out this lonesome farewell
+[Em]Son you’re gonna be a steel driving man lord, lord
+[G]Son you’re gonna be a [D]steel driving [G]man
+
+[G]John Henry went up on the mountain
+[D]Looked down on the other side
+[G]Lord the mountain was so tall John Henry was so small
+[Em]He laid down his hammer and he cried poor boy
+[G]Laid down his [D]hammer and he [G]cried
+
+[G]John Henry walked through the tunnel
+[D]Had his captain by his side
+[G]The last words that John Henry said was bring me
+[Em]Cool drink of what ‘for I die lord, lord
+[G]Cool drink of [D]what ‘for I [G]die
+
+[G]Talk about John Henry as much as you please
+[D]Say and do all that you can
+[G]There never was born in these United States
+[Em]No such a steel driving man lord, lord
+[G]No such a [D]steel driving [G]man
+
+[G]John Henry told his captain,
+[D]I want to go to bed
+[G]Lord fix me a pallet, I want to lay down
+[Em]Got a mighty roaring in my head lord, lord
+[G]Mighty roaring [D]in my [G]head
+
+{new_song}
+
+{title: Katy Daley}
+{artist: Eamon O'Shea}
+{key: G}
+{meta: note Two chords only}
+
+[G]With her old man she came from Tipperary
+[G]In the pioneering days of ’42
+[G]Her old man was shot in Tombstone City
+[G]For the making of his good old mountain [D]dew
+
+{soc}
+[G]Oh Come on down the mountain Katy Daley
+[G]Come on down the mountain Katy do
+[G]Can’t you hear us calling Katy Daley
+[G]We want to drink your good old mountain [D]dew
+{eoc}
+
+[G]Wake up and pay attention Katy Daley
+[G]For I’m the judge that’s gonna sentence you
+[G]All the boys in court have drunk your whiskey
+[G]To tell the truth I like a little [D]too
+
+[G]So to the jail they took poor Katy Daley
+[G]And pretty soon the gates were open wide
+[G]Angels came for poor old Katy Daley
+[G]Took her far across the great di[D]vide
+
+{new_song}
+
+{title: Kentucky Waltz}
+{artist: Bill Monroe}
+{key: G}
+{time: 3/4}
+
+[G]We were waltzing that night in Kentucky
+[D]‘Neath the beautiful harvest moon
+[D]And I was the boy who was lucky
+[G]But it all ended too soon
+
+[G]As I sit here alone in the moonlight
+[D]I can see your smiling face
+[D]And I long once more for your embrace
+[D]In that beautiful Kentucky [G]waltz
+
+{new_song}
+
+{title: Last Thing On My Mind}
+{artist: Tom Paxton}
+{key: G}
+
+[G]It's a lesson too [C]late for the [G]learning
+[G]Made of sand, [D]made of [G]sand
+[G]In the wink of an [C]eye my soul is [G]turning
+[G]In your hand, [D]in your [G]hand
+
+{soc}
+[D]Are you going away with no [C]word of fare[G]well
+[C]Will there [G]be not a [D]trace left behind
+[C]I could have loved you better, didn't
+[G]mean to be un[Em]kind
+[G]You know it was the [D]last thing on my [G]mind
+{eoc}
+
+[G]As we walk a[C]long my thoughts are [G]tumbling.
+[G]Round and round, [D]round and [G]round
+[G]Underneath our [C]feet a subway’s [G]rumbling
+[G]Underground [D]under[G]ground
+
+[G]You’ve got reason a-[C]plenty for [G]going
+[G]This I know, [D]this I [G]know
+[G]For the weeds have been [C]steadily [G]growing
+[G]Please don’t go, [D]please don’t [G]go
+
+{new_song}
+
+{title: Life To Go}
+{artist: George Jones}
+{key: G}
+
+[G]I've got a sad sad story friend that [D]I don't like to [C]tell [G]
+[G]I had a home and family when they [D]locked me in this [C]cell [G]
+[C]I've been in here eighteen years a [D]long long time I [C]know [G]
+[G]But time don't mean a thing to me cause [D]I've got life to [C]go [G]
+
+[G]Well I went one night where the lights were bright just to [D]see what I could [C]see [G]
+[G]I met up with the old friend who just [D]thought the world of [C]me [G]
+[C]Well he brought me drinks and he took me to [D]every honky tonk in [C]town [G]
+[G]Then words were said and now he's dead I [D]just had to bring him [C]down [G]
+
+[G]Well it's been a long long time now since I've [D]heard from my [C]wife [G]
+[G]I know I'd be there with her yet if I [D]hadn't used the [C]knife [G]
+[C]Well I'll bet that little girl of mine [D]don't realize or [C]know [G]
+[G]Her daddy's been here eighteen years and [D]still got life to [C]go [G]
+
+[G]Well I'll bet there's not one man outside that's [D]spent this long in [C]jail [G]
+[G]I'll be here in this prison till my [D]body's just a [C]shell [G]
+[C]No I can't be free to go and [D]see the ones that I love [C]so [G]
+[G]I've been in here eighteen years I've [D]still got life to [C]go [G]
+[G]Yes I've still got life to go oh [D]I've still got life to [C]go [G]
+
+{new_song}
+
+{title: Little Cabin Home On The Hill}
+{artist: Bill Monroe}
+{key: G}
+
+[G]Tonight I'm alone without you my [C]dear [G]
+[D]It seems there's a longing for you still
+[G]All I have to do now is sit alone and [C]cry [G]
+[D]In our little cabin home on the [G]hill
+
+{soc}
+[C]Oh someone has taken you from [G]me And left me here all [G]alone [D]
+[G]Just listen to the rain beat on my [C]window [G]pane
+[G]In our [D]little cabin home on the [G]hill
+{eoc}
+
+[G]I hope you are happy tonight as you [C]are [G]
+[D]But in my heart there's a longing for you still
+[G]I just keep it there so I won't be [C]alone [G]
+[D]In our little cabin home on the [G]hill
+
+[G]Now when you have come to the end of the [C]way [G]
+[D]And find there's no more happiness for you
+[G]Just let your thoughts turn back once more if you [C]will [G]
+[D]To our little cabin home on the [G]hill
+
+{new_song}
+
+{title: Little Maggie}
+{artist: Traditional}
+{key: G}
+
+[G]Over yonder stands little [F]Maggie [D]
+[G]With a dram glass [D]in her [G]hand
+[G]She's drinking away her [F]trouble [D]
+[G]And a courting [D]some other [G]man
+
+[G]Oh how can I ever [F]stand it [D]
+[G]To see them [D]two blue [G]eyes
+[G]A shining in the [F]moonlight [D]
+[G]Like two diamonds [D]in the [G]sky
+
+[G]Pretty flowers were made for [F]blooming [D]
+[G]Pretty stars were [D]made to [G]shine
+[G]Pretty women were made for [F]loving [D]
+[G]Little Maggie was [D]made for [G]mine
+
+[G]Last time a saw little [F]Maggie [D]
+[G]She was sitting on the banks of the [G]sea
+[G]With a forty-four a[F]round her [D]
+[G]And a banjo [D]on her [G]knee
+
+[G]Go away go away little [F]Maggie [D]
+[G]Go and do the [D]best you [G]can
+[G]I’ll get me another [F]woman [D]
+[G]You can get you [D]another [G]man
+
+{new_song}
+
+{title: Little Sadie}
+{artist: Clarence Ashley}
+{key: Gm}
+
+[Gm]Went out last night for to [Bb]take a look a[Gm]round
+[F]I met Little Sadie and I [Dm]shot her down
+[F]Went back home, jumped into bed
+[Dm].44 pistol under my [Gm]head
+
+[Gm]I woke up in the morning about [Bb]half-past-[Gm]nine
+[F]The hacks and the buggies [Dm]standing in line
+[F]Gents and gamblers standing around
+[Dm]Taking Little Sadie to her [Gm]burying ground
+
+[Gm]I began to think of what a [Bb]deed I'd [Gm]done
+[F]I grabbed my hat and a[Dm]way I did run
+[F]Made a good run, just a little too slow
+[Dm]They overtook me in [Gm]Jericho
+
+[Gm]Standing on the corner a [Bb]reading a [Gm]bill
+[F]And up stepped the sheriff from [Dm]Thomasville
+[F]He said, "Miss, is your name Brown?
+[Dm]Remember the night you shot [Gm]Sadie down?"
+
+[Gm]I said, "Oh yes sir, but my [Bb]name is [Gm]Lee
+[F]And I murdered Little Sadie in the [Dm]first degree
+[F]First degree and second degree
+[Dm]Got any papers, will you [Gm]read 'em to me?"
+
+[Gm]So they took me downtown and [Bb]dressed me in [Gm]black
+[F]Put me on a train and [Dm]started me back
+[F]All the way back to the Thomasville jail
+[Dm]Had no money for to [Gm]go my bail
+
+[Gm]The judge and the jury they [Bb]took their [Gm]stand
+[F]The judge had the papers [Dm]in his right hand
+[F]41 days, 41 nights
+[Dm]41 years to wear the [Gm]ball and stripes
+
+[Gm]Went out one night to make a [Bb]little [Gm]round
+[F]I met Little Sadie and I [Dm]shot her down
+[F]Went back home, jumped into bed
+[Dm].44 pistol under my [Gm]head
+
+{new_song}
+
+{title: Lonesome Road Blues}
+{artist: Traditional}
+{key: G}
+
+[G]Going down the road feeling bad
+[C]Going down the road feeling [G]bad
+[C]Going down the road feeling [G]bad, [Em]hey hey
+[G]Don't wanna be [D]treated this a [G]way
+
+[G]Going where the climate suits my clothes
+[C]Going where the climate suits my [G]clothes
+[C]Going where the climate suits my [G]clothes, [Em]hey hey
+[G]Don't wanna be [D]treated this a [G]way
+
+[G]Going where the water tastes like wine
+[C]Going where the water tastes like [G]wine
+[C]Going where the water tastes like [G]wine, [Em]hey hey
+[G]Jump in the water and stay [D]drunk all the [G]time
+
+[G]You’ve got me way down in jail on my knees
+[C]And sweet momma, you’re sure are hard to [G]please
+[C]Feed me only corn bread and [G]cheese, [Em]lord, lord
+[G]I ain’t - a gonna be [D]treated this old [G]way.
+
+[G]I’m going where the chilly winds don’t blow
+[C]I’m going where the chilly winds don’t [G]blow
+[C]I’m going where the chilly winds don’t [G]blow, [Em]hey hey
+[G]Ain’t gonna be [D]treated this [G]way
+
+{new_song}
+
+{title: Long Journey Home}
+{artist: Traditional}
+{key: G}
+
+[G]Lost all my money but a two dollar bill
+[C]Two dollar bill lord, [G]two dollar bill
+[G]Lost all my money but a two dollar bill
+[G]And I'm on my [D]long journey [G]home
+
+[G]Black smoke’s-a-rising, boys, surely there’s a train
+[C]Surely there's a train, [G]surely there's a train
+[G]Black smoke’s-a-rising, boys, surely there’s a train
+[G]I'm on my [D]long journey [G]home
+
+[G]Homesick and lonesome, I’m feeling kind of blue
+[C]Feeling kind of blue, [G]feeling kind of blue
+[G]Homesick and lonesome, I’m feeling kind of blue
+[G]I'm on my [D]long journey [G]home
+
+[G]Pretty girl’s a calling, and she’s on the other line
+[C]She's on the other line, [G]she's on the other line
+[G]Pretty girl’s a calling, and she’s on the other line
+[G]I'm on my [D]long journey [G]home
+
+[G]Cloudy in the West and it looks like some rain
+[C]Looks like some rain, [G]looks like some rain
+[G]Cloudy in the West and it looks like some rain
+[G]I'm on my [D]long journey [G]home
+
+{title: Man Of Constant Sorrow}
+{artist: Dick Burnett}
+{key: G}
+
+[G]I am a man of constant [C]sorrow
+[D]I’ve seen trouble all my [G]days
+[G]I bid farewell to old Ken[C]tucky
+[D]The place where I was borned and [G]raised
+(The place where he was borned and [G]raised)
+
+[G]For six long years I’ve been in [C]trouble
+[D]No pleasure here on earth I [G]find
+[G]For in this world I’m bound to [C]ramble
+[D]I have no friends to help me [G]now
+(He has no friends to help him [G]now)
+
+[G]It’s fare thee well my own true [C]lover
+[D]I never expect to see you a[G]gain
+[G]For I’m bound to ride that northern [C]railroad
+[D]Perhaps I’ll die upon this [G]train
+(Perhaps he’ll die upon this [G]train)
+
+[G]You can bury me in some deep [C]valley
+[D]For many years where I may [G]lay
+[G]Then you may learn to love a[C]nother
+[D]While I am sleeping in my [G]grave
+(While he is sleeping in his [G]grave)
+
+[G]Maybe your friends think I’m just a [C]stranger
+[D]My face you’ll never will see no [G]more
+[G]But there is one promise that is [C]given
+[D]I’ll meet you on God’s golden [G]shore
+(He’ll meet you on God’s golden [G]shore)
+
+{new_song}
+
+{title: Mountain Dew}
+{artist: Bascom Lamar Lunsford, Scotty Wiseman}
+{key: G}
+
+[G]There’s a big hollow tree down the road here from me
+[C]Where you lay down a dollar or [G]two
+[G]You stroll ’round the bend and you come back again
+[G]There’s a jug full of [D]good old mountain [G]dew
+
+{soc}
+[G]They call it that mountain dew
+[C]And them that refuse it are [G]few
+[G]I’ll hush up my mug if you fill up my jug
+[G]With that [D]good old mountain [G]dew
+{eoc}
+
+[G]My uncle Mort, he’s sawed off and short
+[C]He measures about four foot [G]two
+[G]But he thinks he’s a giant when you give him a pint
+[G]Of that [D]good old mountain [G]dew
+
+[G]Well, my old aunt June bought some brand new perfume
+[C]It had such a sweet smelling [G]pew
+[G]But to her surprise when she had it analyzed
+[G]It was nothing but [D]good old mountain [G]dew
+
+[G]Well, my brother Bill’s got a still on the hill
+[C]Where he runs off a gallon or [G]two
+[G]The buzzards in the sky get so drunk they can’t fly
+[G]From smelling that [D]good old mountain [G]dew
+
+{new_song}
+
+{title: Mountain Cabin Home}
+{artist: Ken Rosen, Ryan Schindler}
+{key: G}
+
+[G]I was born in a Cabin on the [C]Mountain,
+[G]60 years ago I left for [D]city life
+[G]I moved job to job and soon I [C]prospered
+[G]And married Cindy [D]Lou, my faithful [G]Darlin’ wife
+
+[G]Now Cindy Lou is singin’ with the angels,
+[C]My sons have wives and children of their [G]own.
+[G]Time to pack my clothes, my savings, and my memories,
+[G]and retire to that [D]mountain cabin [G]home
+
+{soc}
+[C]My Mountain cabin home is now a [G]Walmart
+[G]There’s condos in the hills I used to [D]roam
+[G]There's a apple store, a target, and a [C]costco
+[G]But not a Trace of my [D]Mountain Cabin [G]Home
+{eoc}
+
+[G]No more hunting, no more fishing, no more logging
+[C]Bring your credit card or iphone, no more [G]cash
+[G]Now the only hunting left upon the mountain,
+[G]Is a bear hunting [D]food in dumpster [G]trash
+
+[G]I pondered in the food court over pizza,
+[C]This wasn’t the retirement I [G]planned,
+[G]I went on-line while having frozen yoghurt,
+[G]To learn how we were [D]kicked off our [G]land
+
+[G]Two hundred years we lived up the mountain,
+[C]Our title to the land was lost in [G]time,
+[G]The country grabbed the mountain top for Westfield,
+[G]We never saw a [D]dollar or a [G]dime
+
+[C]My mountain cabin home is now a [G]Walmart
+[G]There’s condos in the hills I used to [D]roam
+[G]There’s a Chick-fil-a, McDonald’s, and a [C]Starbucks,
+[G]But not a trace of my [D]mountain cabin [G]home
+
+[G]Our mountain cabin home was cold and drafty
+[C]The winter snow would freeze you to your [G]bones
+[G]Now the whole wide world is hot and getting hotter,
+[G]Wish I were freezing in our [D]mountain cabin [G]home
+
+[G]So, I’ll go back to the comforts of the city,
+[C]To my power, shower, microwave and [G]phone,
+[G]But late at night my mind will go on wandering,
+[G]Oh how I miss that [D]old mountain cabin [G]home.
+
+[C]My mountain cabin home is now a [G]Walmart
+[G]There’s condos in the hills I used to [D]roam
+[G]There’s a fitness gym, a hair salon, a [C]sports bar,
+[G]But not a trace of my [D]mountain cabin [G]home
+
+[G]There’s a Ford, and Chevy, Subaru, and [C]Honda,
+[G]But not a trace of my [D]mountain cabin [G]home
+[G]But not a trace of my [D]mountain cabin [G]home
+
+{new_song}
+
+{title: My Little Georgia Rose}
+{artist: Bill Monroe}
+{key: G}
+
+[G]Now come and listen to my story
+[D]A story that I know is true
+[G]A little rose who bloomed in Georgia
+[D]With hair of gold and a heart so [G]true
+
+{soc}
+[C]Way down in the blue ridge [G]mountains
+[D]Way down where the tall pines grow
+[G]Lives my sweetheart of the [C]mountains
+[G]She's my [D]little Georgia [G]rose
+{eoc}
+
+[G]Her mother left her with another
+[D]A carefree life she had planned
+[G]The baby now is a lady
+[D]The one her mother couldn't [G]stand
+
+[G]We often sing love songs together
+[D]I watched her do her little part
+[G]She smiled at me when I would tell her
+[D]That she was my sweet[G]heart
+
+{new_song}
+
+{title: My Little Girl In Tennessee}
+{artist: Lester Flatt}
+{key: G}
+
+[G]Oh, a long long time ago when I left my home to [C]roam [G]
+[D]Down in the hills of Tennessee
+[G]The sweetest little girl that was ever in this [C]world [G]
+[D]Down in the hills of Tennes[G]see
+
+{soc}
+[C]Oh the little girl of mine in Tennes[G]see
+[D]I know she's waiting there for me
+[G]Someday I'll settle down in that little country [C]town [G]
+[D]With that little girl of mine in Tennes[G]see
+{eoc}
+
+[G]Oh, she begged me not to go you'll be sorry, dear, I [C]know [G]
+[D]For the way that you were treating me
+[G]So I rambled all around and nothing could be [C]found [G]
+[D]To take the place of her in Tennes[G]see
+
+[G]Oh, someday I'll wander back to that little cabin [C]shack [G]
+[D]Little girl that's waiting there for me
+[G]I can see her smiling face waiting for me at the [C]gate [G]
+[D]Oh that little girl of mine in Tennes[G]see
+
+{new_song}
+
+{title: My Rose Of Old Kentucky}
+{artist: Bill Monroe}
+{key: G}
+
+[G]She bloomed for me near a little [C]village
+[G]In a cabin on the [D]hill [G]
+[G]We made our vows we’d love each other
+[G]And I know we always [D]will [G]
+
+{soc}
+[C]She’s my rose of old Ken[G]tucky
+[D]I watched her bloom as the years roll by
+[G]And to me there’ll never be a[C]nother
+[G]I’ll love her ’til the [D]day I [G]die
+{eoc}
+
+[G]Oh in dreams I see my darling
+[C]In a gingham dress she [G]looks so [D]sweet [G]
+[G]Oh I long for old Kentucky
+[G]And my darling was [D]more to [G]me
+
+[G]Oh I know you often wonder So I’ll tell you the reason why
+[C]She’s my rose of old Ken[G]tucky And I know she’ll [D]never [G]lie
+
+{new_song}
+
+{title: Nellie Kane}
+{artist: Tim O'Brien}
+{key: G}
+
+[G]As a young man I went riding out on the western plain
+[Em]In the state of North Dakota I met my Nellie Kane
+[D]I met my Nellie [G]Kane
+
+[G]She was living in a lonely cabin with a son by another man
+[Em]Five years she had waited for him as long as a woman can
+[D]As long as a woman [G]can
+
+{soc}
+[C]I don't know what changed my [G]mind
+[D]'Til then I was the rambling [G]kind
+[G]The kind of love I can't explain
+[G]That I had for Nellie Kane
+{eoc}
+
+[G]She took me on to work that day to help her till the land
+[Em]In the afternoon we planted seeds in the evening we held hands
+[D]In the evening we held [G]hands
+
+[G]Her blue eyes told me everything a man could want to know
+[Em]And it was then I realized I would never go
+[D]I would never [G]go
+
+[G]Now many years have gone by and her son has grown up tall
+[Em]I became a father to him and she became my all
+[D]She became my [G]all
+
+{new_song}
+
+{title: New River Train}
+{artist: Traditional}
+{key: G}
+
+[G]Darlin', you can't love one, [G]Darlin', you can't love [D]one
+[G]You can't love but one and have any [C]fun
+[G]Oh, darlin, you [D]can't love [G]one
+
+[G]Ridin' on the New River train
+[G]Ridin' on the New River [D]train
+[G]Same ol' train that brought me [C]here
+[G]And soon gonna [D]carry me [G]away
+
+[G]Darlin', you can't love two, [G]Darlin', you can't love [D]two
+[G]You can't love two And your little heart be [C]true
+[G]No, darlin', you [D]can't love [G]two
+
+[G]Darlin', you can't love three, [G]Darlin', you can't love [D]three
+[G]You can't love three And still love [C]me
+[G]No, darlin', you [D]can't love [G]three
+
+[G]Darlin, ' you can't love four, [G]Darlin', you can't love [D]four
+[G]You can't love four And love me any[C]more
+[G]No, darlin', you [D]can't love [G]four
+
+{new_song}
+
+{title: Nine Pound Hammer}
+{artist: Traditional}
+{key: G}
+
+[G]Well the nine pound hammer, is a little too [C]heavy
+[G]It’s for my [D]size, honey for my [G]size
+
+[G]Well roll on buddy, don’t you roll so [C]slow
+[G]How can I [D]roll, when the wheels won’t [G]go
+
+[G]It's a long way to Harlan, and a long way to [C]Hazard
+[G]Just to get a little [D]brew, just to get a little [G]brew
+
+[G]Well it ain’t one hammer, that’s in this [C]town
+[G]That’ll ring like [D]mine, that’ll ring like [G]mine
+
+[G]I'm goin' on a mountain, yeah to see my [C]baby
+[G]And I ain't comin' [D]back, no I ain't comin' [G]back
+
+[G]Now when Im long gone, you can make my [C]tombstone
+[G]Out of number nine [D]coal, outta’ number nine [G]coal
+
+[G]That nine pound hammer that killed John [C]Henry
+[G]Ain’t gonna kill [D]me, naw it won’t kill [G]me
+
+{new_song}
+
+{title: Ocean Of Diamonds}
+{artist: Cliff Carnahan}
+{key: G}
+{time: 3/4}
+
+[G]Some people drink champagne out under the [C]stars
+[D]While others drink wine leaning over a [G]bar
+[C]But all that I need dear to make me feel fine
+[D]Is to know that your love will forever be [G]mine
+
+{soc}
+[C]I give a ocean of diamonds a world filled with [G]flowers
+[D]To hold you closely for just a few [G]hours
+[G]Hear you whisper softly that you love me [C]too
+[D]Would change all the dark clouds to the [G]bluest of blue
+{eoc}
+
+[G]I don't drink their champagne and I don't drink their [C]wine
+[D]So if you refuse me, my poor heart will [G]pine
+[C]I'll be so lonely till the day that I die
+[D]And as long as I live dear, you'll still hear me [G]cry
+
+{new_song}
+
+{title: Old Home Place}
+{artist: Mitch Jayne, Dean Webb}
+{key: G}
+
+[G]It's been ten long [B]years since I [C]left my [G]home
+[G]In the hollow where I was [D]born
+[G]Where the cool fall [B]nights make the [C]wood smoke [G]rise
+[D]And the foxhunter blows his [G]horn
+
+{soc}
+[G]I fell in love with a [B]girl from the [C]town [G]
+[G]I thought that she would be [D]true
+[G]I ran away to [B]Charlottesville And [C]worked in a sawmill [G]too
+{eoc}
+
+[D]What have they done to the [G]old home place
+[A]Why did they tear it [D]down
+[G]And why did I [B]leave the [C]plow in the [G]field
+[G]And look for a [D]job in the [G]town
+
+[G]Well the girl ran [B]off with [C]somebody [G]else
+[G]The tariffs took all my [D]pay
+[G]And here I [B]stand where the [C]old home [G]stood
+[G]Before they [D]took it a[G]way
+
+[G]Now the geese fly [B]south and the [C]cold wind [G]moans
+[G]As I stand here and hang my [D]head
+[G]I've lost my [B]love I've [C]lost my [G]home
+[G]And now I wish that [D]I was [G]dead
+
+{new_song}
+
+{title: Old Train}
+{artist: Herb Pedersen}
+{key: G}
+
+[G]Old train I can [F]hear your whistle [C]blow [D]
+[C]But I won’t be [D]jumping on a[G]gain
+[G]Old train I’ve been [F]everywhere you [C]go [D]
+[C]And I know what [D]lies beyond each [G]bend.
+
+{soc}
+[C]Old train each time you [D]pass you’re older [C]than the [D]last [G]
+[D]And it seems I’m too [A]old for running [D]
+[C]I hear your rusty [D]wheels grate a[C]gainst the [D]rails [G]
+[D]They cry with every [C]mile and I think I’ll stay a[G]while.
+{eoc}
+
+[G]Old train I grow [F]weary at the [C]miles [D]
+[C]And I miss the [D]freedom that was [G]mine
+[G]Old train just to [F]think about those [C]times [D]
+[C]And I’ll smile when [D]you’re high-balling [G]by.
+
+{new_song}
+
+{title: One More Night}
+{artist: Bob Dylan}
+{key: G}
+
+[G]One more night, the stars are in sight
+[C]But tonight I’m as [D]lonesome as can [G]be
+[C]Well, the moon is shining’ [G]bright
+[C]Lighting everything in [D]sight
+[G]But tonight no [C]light will [D]shine on [G]me
+
+[G]Oh, it’s shameful and it’s sad I lost the only pal I had
+[C]I just couldn’t be what she [D]wanted me to [G]be
+[G]I will turn my head up high
+[C]To that dark and lonely [G]sky
+[G]For tonight no [C]light will [D]shine on [G]me
+
+{soc}
+[D]I was so mis[C]taken when I [G]thought that she’d be [Am]true
+[G]And I had no i[Em]dea what a [C]woman in love
+[D]would do
+{eoc}
+
+[G]One more night, I will wait for the light
+[C]While the wind blows [D]high above the [G]tree
+[G]Oh, I miss my darling so
+[C]I didn’t mean to see her [G]go
+[G]But tonight no [C]light will [D]shine on [G]me
+
+{title: Pig in a Pen}
+{artist: Arthur Smith}
+{key: G}
+
+[G]I got a pig at home in a pen corn to feed ‘im [C]on
+[G]All I need is a pretty little girl to feed ‘im [D]when I’m [G]gone.
+
+{soc}
+[G]Going up the mountain to sow a little cane
+[G]Raise a barrel of whisky for my sweet lil’ Liza Jane.
+{eoc}
+
+[G]Black cloud’s a-rising, surely signs of rain
+[G]Get the old blue bonnet on Little Liza Jane.
+
+[G]Overs comes that gal of mine how you think I know
+[G]Tell by that summer gown-a hanging down so low
+
+[G]Bake them biscuits baby bake ’em good n’ brown
+[G]When you get them biscuits baked I’m coming back around
+
+[G]When she sees me comin’ she wrings her hands and moans
+[G]Yonder comes the sweetest boy that ever lived or roamed.
+
+[G]Now when she sees me leaving, she wrings her hands and cries
+[G]Yonder goes the meanest boy that ever lived or died.
+
+{new_song}
+
+{title: Rank Stranger}
+{artist: Albert E. Brumley}
+{key: G}
+{time: 3/4}
+
+[G]I wandered again to my home in the [D]mountains
+[G]Where in youth's early dawn I was happy and [D]free
+[G]I looked for my friends, but I never could [D]find them
+[G]I found they were [D]all rank strangers to [G]me
+
+{soc}
+[G]Everybody I met (x2)
+[C]Seemed to be a rank [G]stranger (x2)
+[G]No mother nor dad (x2)
+[A]Not a friend could I [D]see (x2)
+[G]They knew not my name (x2) And I [C]knew not their [G]faces
+[G]I found they were all (x2) Rank [D]strangers to [G]me (x2)
+{eoc}
+
+[G]"They've all moved away, " said the voice of a [D]stranger
+[G]"To a beautiful home by the bright crystal [D]sea"
+[G]Some beautiful day I'll meet 'em in [D]heaven
+[G]Where no one will [D]be a stranger to [G]me
+
+{new_song}
+
+{title: Rocky Top}
+{artist: Boudleaux Bryant, Felice Bryant}
+{key: G}
+
+[G]Wish that I was on ol' [C]Rocky Top, [G]down in the [Em]Tennessee [D]hills [G]
+[G]Ain't no smoggy smoke on [C]Rocky Top [G]ain't no [Em]telephone [D]bills [G]
+
+[G]Once I had a girl on [C]Rocky Top [G]half bear the [Em]other half [D]cat [G]
+[G]Wild as a mink, but sweet as [C]soda pop [G]I still [Em]dream about [D]that [G]
+
+{soc}
+[Em]Rocky Top, you'll always be [D]home sweet home to me
+[F]Good ol' Rocky Top
+[C]Rocky Top, Tennes[G]see [F]Rocky Top, Tennes[G]see
+{eoc}
+
+[G]Once two strangers climbed ol' [C]Rocky Top [G]lookin' for a [Em]moonshine [D]still [G]
+[G]Strangers ain't come down from [C]Rocky Top [G]reckon they [Em]never [D]will [G]
+
+[G]Corn won't grow at all on [C]Rocky Top [G]dirt's too [Em]rocky by [D]far [G]
+[G]That's why all the folks on [C]Rocky Top [G]get their [Em]corn from a [D]jar [G]
+
+[G]I've had years of cramped-up [C]city life [G]trapped like a [Em]duck in a [D]pen [G]
+[G]All I know is it's a [C]pity life [G]can't be [Em]simple a[D]gain [G]
+
+{new_song}
+
+{title: Roving Gambler}
+{artist: Traditional}
+{key: G}
+
+[G]I am a roving gambler, gambled all around
+[C]Ever I meet with a deck of [G]cards
+[C]I lay my money [G]down
+[G]Lay my money [D]down, lay my money [G]down
+
+[G]I had not been in ‘Frisco many more weeks than three
+[G]I met up with a pretty little girl
+[C]She fell in love with [G]me
+[G]Fell in love with [D]me, fell in love with [G]me
+
+[G]She took me in her parlour, she cooled me with a fan
+[G]Whispered low in her mother's ear
+[C]Love this gambling [G]man
+[G]Love this gambling [D]man, love this gambling [G]man
+
+[G]Oh daughter oh dear daughter how can you treat me so?
+[G]Leave your dear old mother
+[C]And with the gambler [G]go
+[G]With the gambler [D]go, with the gambler [G]go
+
+[G]My mother, oh dear mother I tell you if I can
+[G]If you ever see me coming back
+[C]I'll be with a gambling [G]man
+[G]With the gambling [D]man, with the gambling [G]man
+
+[G]I left her in ‘Frisco I wound up in Maine
+[G]I met up with a gambling man
+[C]I got in a poker [G]game
+[G]Got in a poker [D]game, got in a poker [G]game
+
+[G]He put his money in the pot and dealt the cards around
+[G]Saw him deal from the bottom of the deck
+[C]So I shot the gambler [G]down
+[G]Shot the gambler [D]down, shot the gambler [G]down
+
+[G]Now I'm down in prison got a number for my name
+[G]The Warden said as he locked the door
+[C]You've gambled your last [G]game
+[G]Gambled your last [D]game, gambled your last [G]game
+
+{new_song}
+
+{title: Roll on Buddy}
+{artist: The Wilburn Brothers}
+{key: G}
+
+[G]Roll on, buddy, roll on. [C]Roll on, buddy, roll [G]on
+[C]Wouldn't roll so slow, If you [G]knew what I know
+[G]So roll on, [D]buddy, roll [G]on
+
+[G]I'm going to that east pay road (x2)
+[G]I'm going to that east, I going to the west
+[C]I'm going to the one that I [G]love best
+
+[G]My home in down in Tennessee (x2)
+[G]In sunny Tennessee
+[C]That's where I want to [G]be
+[G]Way down in sunny Tennessee
+
+[G]I've got me a good woman just the same (x2)
+[G]Got a woman just the same
+[C]And I'm gonna change her [G]name
+[G]I've got a good woman just the same
+
+{new_song}
+
+{title: Reuben’s Train}
+{artist: Traditional}
+{key: G}
+
+[G]Reuben made a train and he put it on the track
+[G]He run it to the [D]Lord-knows-[G]where
+[G]Oh me, oh my
+[G]Run it to the [D]Lord-knows-[G]where
+
+[G]Oh, you ought a-been in town
+[G]When old Reuben's train go down
+[G]You could hear the whistle blow a hundred miles
+[G]Blow that whistle, boy
+
+[G]Lord, I've been to the east and I've been to the west
+[G]I'm goin' where these chilly winds don't blow
+[G]Oh me, oh my
+[G]Goin' where these chilly winds don't blow
+
+[G]Oh, Reuben made a train and he put it on the track
+[G]Hе run it to the Lord-knows-where
+[G]Oh mе, oh my
+[G]Run it to the Lord-knows-where
+
+{new_song}
+
+{title: Salty Dog Blues}
+{artist: Traditional}
+{key: G}
+
+[G]Standin' on the corner with the [E7]low down blues
+[A7]A great big hole in the bottom of my shoes
+[D7]Honey let me be your salty [G]dog
+
+{soc}
+[G]Let me be your salty dog
+[E7]Or I won't be your man at all
+[D7]Honey let me be your salty [G]dog
+{eoc}
+
+[G]Looking here Sal, I know [E7]you
+[A7]Run down stockin' and a worn out shoe
+[D7]Honey let me be your salty [G]dog
+
+[G]Down in the wildwood sitting on a [E7]log
+[A7]Finger on the trigger and an eye on the hog
+[D7]Honey let me be your salty [G]dog
+
+[G]Pulled the trigger and the gun said [E7]go
+[A7]The shot fell over in Mexico
+[D7]Honey let me be you salty [G]dog
+
+{new_song}
+
+{title: Shady Grove}
+{artist: Traditional}
+{key: Em}
+
+[Em]Cheeks as red as a [D]blooming rose
+[Em]And eyes are the [D]prettiest [Em]brown
+[G]She's the darling [D]of my heart
+[D]Sweetest little [Em]girl in town
+
+{soc}
+[Em]Shady Grove, my little love, [D]Shady Grove I say
+[Em]Shady Grove, my little love, I'm [D]bound to go a[Em]way
+{eoc}
+
+[Em]If I had a big fine horse And the [D]grain to feed him on
+[Em]And Shady Grove to stay at home And [D]feed him while I'm [Em]gone
+
+[Em]A kiss from pretty little Shady Grove Is as [D]sweet as brandy wine
+[Em]And there ain't no girl in this whole world [D]Prettier than [Em]mine
+
+[Em]Went to see my Shady Grove She was [D]standing in the door
+[Em]Her shoes and stockings in her hand And her little [D]bare feet on the [Em]floor
+
+[Em]When I was a little boy I [D]wanted a Barlow knife
+[Em]And now I want little Shady Grove To [D]say she'll be my [Em]wife
+
+[Em]Peaches in the summertime And [D]apples in the fall
+[Em]If I can't have my Shady Grove I [D]don't have none at [Em]all
+
+{new_song}
+
+{title: She’ll be Coming ‘Round the Mountain}
+{artist: Traditional}
+{key: G}
+
+[G]She'll be coming round the mountain when she comes
+[G]She'll be coming round the mountain when she [D]comes
+[G]She’ll be coming round the mountain, she'll be [C]coming round the mountain
+[G]Coming round the [D]mountain when she [G]comes
+
+[G]She'll be driving six white horses when she comes…
+[G]She’ll be wearing blue pajamas when she comes…
+[G]We’ll all go out to meet her when she comes…
+[G]We’ll all have chicken and dumplings when she comes…
+
+{new_song}
+
+{title: Sitting On Top Of The World}
+{artist: Walter Vinson, Lonnie Chatmon}
+{key: G}
+
+[G]Was in the spring one sunny day
+[C]My good gal left me, she went a[G]way
+[G]Well, now she’s gone, but I [Em]don’t worry
+[G]Lord I’m [D]sitting on top of the [G]world
+
+[G]She called me up from down in El Paso
+[C]Said come back, daddy, how I need you [G]so
+[G]Well, now she’s gone, but I [Em]don’t worry
+[G]Lord I’m [D]sitting on top of the [G]world
+
+[G]Ashes to ashes, and dust to dust
+[C]Show me a woman a man can [G]trust
+[G]Well, now she’s gone, but I [Em]don’t worry
+[G]Lord I’m [D]sitting on top of the [G]world
+
+[G]The Mississippi River, runs deep and wide
+[C]The one I’m loving is on the other [G]side
+[G]Well, now she’s gone, but I [Em]don’t worry
+[G]Lord I’m [D]sitting on top of the [G]world
+
+[G]You don’t like my peaches, don’t you shake my tree
+[C]Get out of my orchard, let my peaches [G]be
+[G]Well, now she’s gone, but I [Em]don’t worry
+[G]Lord I’m [D]sitting on top of the [G]world
+
+[G]Don’t you come here running, holding out your hand
+[C]I’ll get me a woman like you got your [G]man
+[G]Well, now she’s gone, but I [Em]don’t worry
+[G]Lord I’m [D]sitting on top of the [G]world
+
+{new_song}
+
+{title: Sleep With One Eye Open}
+{artist: Lester Flatt}
+{key: G}
+
+[G]I just found out today the little game you play
+[D]I’ve been sleeping all my life away
+[G]You’ve been stepping so they say between midnight and day
+[G]So I’m gonna sleep with [D]one eye open from now [G]on
+
+{soc}
+[C]From now on - [G]all night long
+[G]You won’t have a chance to treat your daddy [D]wrong
+[G]You’ve been stepping so they say between midnight and day
+[G]So I’m gonna sleep with [D]one eye open from now [G]on
+{eoc}
+
+[G]There’s honky tonk down the road just a mile or so
+[D]I understand that’s where you spend your time
+[G]Baby I got news for you your little game is through
+[G]From now on baby you’re [D]gonna toe the [G]line
+
+[G]You thought you were being wise running around with other guys
+[D]And leaving me to spend my time alone
+[G]But you’ll find out today it don’t work out that way
+[G]You started a little game [D]that two can [G]play
+
+{new_song}
+
+{title: Steam Powered Aereo Plane}
+{artist: John Hartford}
+{key: G}
+
+[G]Well i dreamt I went away on a [Am]steam powered aero plane
+[Am]I went and I [C]stayed and I damn near didn't come [G]back again
+[G]I didn't go very fast on a [Am]steam powered aero plane
+[Am]Oh the wheel went a[C]round and up and down, and
+[G]inside and then back again
+
+{soc}
+[Am]Sittin' in a 747 just a [Bm]watching them clouds roll by
+[Am]Can't tell if it's sunshine or if it's [G]rain
+[Am]I’d rather be a sittin' in a deck chair high up [Bm]over Kansas City
+[C]On a genuine old fashioned authentic steam
+[D]powered aereo plane
+{eoc}
+
+[G]Well I'd like to be a pilot on a [Am]steam powered aero plane
+[Am]Well I'd pull that [C]pilot wheel around and then [G]back again
+[G]And I'll wear a blue hat, yeah, that [Am]says Steam Powered Aero plane
+[Am]With letters that [C]go around the rim and then [G]back again
+
+{new_song}
+
+{title: Stone Walls And Steel Bars}
+{artist: Ray Pennington, Roy Marcum}
+{key: G}
+{time: 3/4}
+
+[G]Stone walls , steel bars a [C]love on my [G]mind
+[G]I'm a three-time loser I'm [D]long gone this [G]time
+
+[D]Jealousy has took my [C]young [G]life
+[D]All for the love of an[C]other man's [G]wife
+[G]But I've had it coming I've [C]known all the time
+[G]No more stone walls and steel [D]bars or you on my [G]mind
+
+[G]Gray-haired warden [C]deep Frisco [G]Bay
+[G]Guards all around me [D]leading my [G]way
+[G]But I've had it coming at the [C]end of the line
+[G]No more stone walls and steel [D]bars and you on my [G]mind
+
+{title: This Land is Your Land}
+{artist: Woodie Guthrie}
+{key: G}
+
+[C]This land is your land, and [G]this land is my land
+[D]From California to the [G]New York island
+[C]From the Redwood Forest to the [G]Gulf Stream waters
+[D]This land was made for you and [G]me
+
+[C]As I went walking that [G]ribbon of highway
+[D]And I saw above me that [G]endless skyway
+[C]I saw below me that [G]golden valley
+[D]This land was made for you and [G]me
+
+[C]I roamed and rambled, and I've [G]followed my footsteps
+[D]To the sparkling sands of her [G]diamond deserts
+[C]All around me, a [G]voice was sounding
+[D]This land was made for you and [G]me
+
+[C]There was a big, high wall there that [G]tried to stop me
+[D]A sign was painted said "Private [G]Property"
+[C]But on the backside, it [G]didn't say nothing
+[D]This land was made for you and [G]me
+
+[C]When the sun come shining, then [G]I was strolling
+[D]And the wheat fields waving, and the [G]dust clouds rolling
+[C]The voice was chanting as the [G]fog was lifting
+[D]This land was made for you and [G]me
+
+{new_song}
+
+{title: Tom Dooley}
+{artist: Traditional}
+{key: G}
+
+[G]Hang your head, Tom Dooley, [C]hang your head and [G]cry
+[G]You killed poor Laurie [D]Foster
+[D]and you know you're bound to [G]die
+
+[G]You left her by the roadside where you [C]begged to be ex[G]cused
+[G]You left her by the roadside, then you [D]hid her clothes and [G]shoes
+
+[G]You took her on the hillside, for to [C]make her your [G]wife
+[G]You took her on the hillside, and [D]there you took her [G]life
+
+[G]You dug the grave four feet long and you [C]dug it three feet [G]deep
+[G]You rolled the cold clay over her and [D]stomped it with your [G]feet
+
+[G]Trouble, oh, it's trouble a-[C]rollin' through my [G]breast
+[G]As long as I'm a-livin', boys, they [D]ain't a-gonna let me [G]rest
+
+[G]I know they're gonna hang me, to[C]morrow, I'll be [G]dead
+[G]Though I never even harmed a hair on [D]poor little Laurie's [G]head
+
+{new_song}
+
+{title: Toy Heart}
+{artist: Bill Monroe}
+{key: G}
+
+[G]Darling, you toyed with [D]toy [G]heart
+[C]I think you played the game right from the [G]start
+[C]This toy heart was broken
+[G]When parting words were spoken
+[G]Darling, you [D]toyed with a [G]toy heart
+
+[G]You played with my poor heart like a toy
+[G]That toy broke and then we had to part
+[G]It never can be mended, I hope this romance's ended
+[G]Darling, you toyed with a toy heart
+
+[G]Now darling my time will come some day
+[G]Time alone will heal my broken heart
+[G]The clouds will roll away, The sun will shine someday
+[G]Darling, you toyed with a toy hear
+
+[G]Now darling you know you've done me wrong
+[G]Your love for me has passed and gone
+[G]I'll find somebody new, I hope that they'll be true
+[G]Darling you toyed with a toy heart
+
+{new_song}
+
+{title: Train That Carried My Girl}
+{artist: Traditional}
+{key: G}
+
+[G]Where was you when the train left town
+[G]I was standing on the corner with my [D]head hung [G]down
+[G]If I had my gun I’d let the hammer down
+[G]Lord I’d shoot that rounder took my girl from town
+
+{soc}
+[G]Hey, the train that [D]carried my girl from [G]town
+[G]Hey, hey, [D]hey, [G]hey
+{eoc}
+
+[G]There goes the train that carried my girl from town
+[G]If I knowed her number, Lord, I'd flag her down
+[G]Wish to the Lord that the train would wreck
+[G]Kill that engineer and break the fireman's neck
+
+[G]Rations on the table and the coffee's getting cold
+[G]And some dirty rounder took my jelly roll
+[G]Hello, Central, give me six-o-nine
+[G]I want to talk to that woman of mine
+
+[G]Ashes to ashes and dust to dust
+[G]Can you show me that woman that a man can trust
+[G]There goes my girl, somebody bring her back
+[G]'Cause she got her hand in my money sack
+
+{new_song}
+
+{title: Wagon Wheel}
+{artist: Bob Dylan, Ketch Secor}
+{key: G}
+
+[G]Headin' down south to the [D]land of the pines
+[Em]I'm thumbin' my way into [C]North Caroline
+[G]Starin' up the road and pray to [D]God I see [C]headlights
+[G]I made it down the coast in [D]seventeen hours
+[Em]Pickin' me a bouquet of [C]dogwood flowers
+[G]And I'm a-hopin' for Raleigh, I can [D]see my baby to[C]night
+
+{soc}
+[G]So, rock me mama like a [D]wagon wheel
+[Em]Rock me mama any [C]way you feel
+[G]Hey... [D]mama rock [C]me
+[G]Rock me mama like the [D]wind and the rain
+[Em]Rock me mama like a [C]southbound train
+[G]Hey... [D]mama rock [C]me
+{eoc}
+
+[G]Runnin' from the cold up in [D]New England
+[Em]I was born to be a fiddler in an [C]old time string band
+[G]My baby plays a guitar, I [D]pick a banjo [C]now
+[G]Oh, north country winters keep a-[D]gettin' me down
+[Em]Lost my money playin' poker, so I [C]had to leave town
+[G]But I ain't a-turnin' back to [D]livin' that old life no [C]more
+
+[G]Walkin' to the south out of [D]Roanoke
+[Em]I caught a trucker out of Philly, had a [C]nice long toke
+[G]But he's a-headin' west from the [D]Cumberland [C]Gap
+[G]To Johnson City, [D]Tennessee
+[Em]And I gotta get a move on be[C]fore the sun
+[G]I hear my baby callin' my name and I [D]know that she's the only [C]one
+[G]And if I died in Raleigh, at [D]least I will die [C]free
+
+{new_song}
+
+{title: Walk On Boy}
+{artist: Traditional}
+{key: Em}
+
+[Em]I was born one morning, The [B7]rain a pourin' [Em]down,
+[Em]heard my [D]mammy say to [G]my [C]pappy
+[B7]Let's call him John Henry [Em]Brown
+
+{soc}
+[Em]Walk on boy, walk on [B7]down the road
+[Em]Ain't [D]nobody in this [G]whole wide [C]world
+[B7]A gonna help you carry [Em]load
+{eoc}
+
+[Em]I left my mammy and pappy
+[Em]Just about the age of ten
+[Em]Lord I got me a job a workin' men
+[Em]Totin' water for the hard workin' men
+
+[Em]One day my pappy told me
+[Em]Some advice I wanna give to you
+[Em]Son, find a good woman, be good to her
+[Em]Ah she's gonna be good to you
+
+[Em]If anyone should ever ask you
+[Em]Just who is that fella Brown
+[Em]You can tell him I'm the boy
+[Em]Who left his hammmer smokin'
+[Em]When he beat that steam drill down
+
+{new_song}
+
+{title: Way Downtown}
+{artist: Traditional}
+{key: G}
+
+[C]Way downtown just [G]foolin' around
+[D]Took me to the [G]jail
+[G]It's oh me and it's oh my, No one to go my bail
+
+[G]It was late last night when Willie came home
+[G]I heard him a-rapping on the door
+[G]He's a-slipping and a-sliding with his new shoes on
+[G]Mamma said Willie don't you rap no more
+
+[G]I wish I was over at my sweet Sally's house
+[G]Sittin' in that big armed chair
+[G]One arm around this old guitar
+[G]And the other one around my dear
+
+[G]Now, its one old shirt is all that I got
+[G]And a dollar is all that I crave
+[G]I brought nothing with me into this old world
+[G]Ain't gonna take nothing to my grave
+
+{new_song}
+
+{title: Wayfaring Stranger}
+{artist: Traditional}
+{key: Em}
+
+[Em]I am a poor wayfaring stranger,
+[Am]Traveling through this world be[Em]low
+[Em]There is no sickness, no toil or danger In that
+[Am]bright world to [B7]which I [Em]go
+
+[Em]I'm going there to see my father
+[Em]And all my loved ones who've gone [B7]on
+[Em]I'm just going over [Am]Jordan, I'm just [B7]going over [Em]home
+
+[Em]I know dark clouds will gather 'round me
+[Em]I know the path is hard and steep
+[Em]But golden fields lie out before me
+[Em]Where God's redeemed, their vigils keep
+
+[Em]I'm going there to see my mother
+[Em]She said she'd meet me when I come
+[Em]So I'm just going over Jordan
+[Em]I'm just going over home
+
+{new_song}
+
+{title: What A Waste Of Good Corn Liquor}
+{artist: Mac Wiseman}
+{key: G}
+
+[G]I have lost my blue-eyed darling, Now I sit with a [C]broken heart
+[G]By my cabin in the [D]Carolina hills
+[G]Oh I loved a shiner's daughter Loved her true with [C]all my heart
+[G]Till she fell into her [D]pappy's liquor [G]still
+
+{soc}
+[G]Oh what a waste of good corn liquor From the still [D]they pulled the plug
+[G]All the revenuers snickered 'cause she [C]melted in the [G]liquor
+[G]And they had to bury [D]poor Lilly by the [G]jug
+{eoc}
+
+[G]Cousin Cale upon the juice harp played a mighty mournful tune
+[G]Kinfolks all bowed their heads and gathered round
+[G]Then I heard the parson sing Drink me only with thine eyes as we watch them pour poor Lilly in the ground
+
+[G]Now I'm sitting in the twilight Neath the weeping willow tree The sun is slowly sinking in the west
+[G]And I'm clasping to my bosom A little jug of Lilly Mae
+[G]With a broken heart I'm longing for the rest.
+
+{new_song}
+
+{title: Whiskey}
+{artist: Trampled by Turtles}
+{key: G}
+
+[G]Whiskey, won't you come and [D]take my [Em]troubles
+[C]'Cause I can't seem to [G]do it on my [D]own
+[C]In the morning there is [G]hours and in[Em]finity
+[C]The starlit [D]evening's come to take me [G]home
+
+[G]I ain't got a dime in my pocket
+[G]I just stepped on my last cigarette
+[G]There's a bar downtown that'll give me credit
+[G]A home away from home, away I went
+
+[G]Tomorrow there's a train to Carolina
+[G]Tomorrow that's where I'm gonna go
+[G]Feel the warm sunshine on my shoulders
+[G]And live my days a free and easy soul
+
+[G]My home is with the hills and trees around me
+[G]My ceiling holds the moon and stars above
+[G]So I'll never be a lonely man a'walking
+[G]I'll never live one day without love
+
+{soc}
+[G]So whiskey, won't you come and [D]take my [Em]troubles
+[C]'Cause I can't seem to [G]do it on my [D]own
+[C]In the morning there is [G]hours and in[Em]finity
+[C]The starlit [D]evening's come to take me [G]home
+{eoc}
+
+{new_song}
+
+{title: White Freightliner Blues}
+{artist: Townes Van Zandt}
+{key: G}
+{meta: note Blues starting on the IV chord}
+
+[C]I'm goin' out on the highway Listen to them big trucks whine
+[G]Listen to them big trucks whine
+[C]I'm goin' out on the highway
+[G]Listen to them big trucks whine
+[D]White freight liner, Won't you steal away my [G]mind?
+
+[C]Well, it's bad news from Houston, Half my friends are [G]dying…
+[C]Mexico ain’t bad, lord, people there, they treat you [G]kind…
+[C]Lord, I’m gonna ramble ‘til I get back to where I [G]came…
+
+{new_song}
+
+{title: Why You Been Gone So Long}
+{artist: Mickey Newbury}
+{key: G}
+
+[G]Every time it rains, Lord, I [C]run to my [G]window
+[G]All I do is just wring my hands and [D]moan
+[G]And listen to that thunder, Lord
+[C]Can't you hear that lonesome [G]wind moan?
+[G]Tell me, baby, now [D]why you been gone so [G]long
+
+{soc}
+[G]Tell me, baby, now why you been gone so long
+[G]You been gone so long now
+[G]Tell me, baby, now why you been gone so long
+[G]A wolf is scratchin' at my door, Lord, Lord
+[G]And I can hear that lonesome wind moan
+[G]Tell me, baby, now why you been gone so long
+{eoc}
+
+[G]Somebody said they thought they saw you roarin' down in Reno
+[G]With a big ol' man from San Anton
+[G]They tell me I'm a fool, I pine for you, but what do they know?
+[G]Tell me, baby, now why you been gone so long
+
+{new_song}
+
+{title: Will The Circle Be Unbroken}
+{artist: Ada R. Habershon, Charles H. Gabriel}
+{key: G}
+
+[G]I was standing by my window
+[C]On a cold and cloudy [G]day
+[G]When I saw the hearse come [Em]rolling
+[G]For to [D]carry my mother a[G]way.
+
+{soc}
+[G]Will the circle be unbroken
+[C]By and by Lord, by and [G]by
+[G]There's a better home a[Em]waiting
+[G]In the [D]sky Lord, in the [G]sky.
+{eoc}
+
+[G]Well, I went back home, home was lonely
+[C]For my mother she was [G]gone
+[G]And all my family there was [Em]cryin'
+[G]For out home felt [D]sad and a[G]lone.
+
+[G]Undertaker, undertaker, undertaker
+[C]Won't you please drive [G]slow
+[G]For that lady you are [Em]haulin'
+[G]Lord, I [D]hate to see her [G]go.
+
+{new_song}
+
+{title: Your Love Is Like A Flower}
+{artist: Lester Flatt, Earl Scruggs, Everett Lilly}
+{key: G}
+
+[G]It was long, long ago in the [C]moonlight
+[G]We were sitting on the [D]banks of the [G]stream
+[G]When you whispered so sweetly, I [C]love you
+[G]As the [D]waters murmured a [G]tune
+
+{soc}
+[G]Oh they tell me your love is like a [C]flower
+[G]In the springtime blossoms so [D]fair
+[G]In the fall when it withers a[C]way dear
+[G]And they tell me that's the [D]way of your [G]love
+{eoc}
+
+[G]I remember the night, little darling
+[G]We were talking of days gone by
+[G]When you told me you always would love me
+[G]That your love for me would never die
+
+[G]It was spring when you whispered these words dear
+[G]The flowers were all blooming so fair
+[G]But today as the snow falls around us
+[G]I can see that your love is not there
