@@ -113,17 +113,23 @@ const feedbackDropdown = document.getElementById('feedback-dropdown');
 const navFeedback = document.getElementById('nav-feedback');
 
 // Bug report modal
-const bugReportModal = document.getElementById('bug-report-modal');
-const bugReportModalClose = document.getElementById('bug-report-modal-close');
+const bugModal = document.getElementById('bug-modal');
+const bugModalClose = document.getElementById('bug-modal-close');
 const bugFeedback = document.getElementById('bug-feedback');
-const bugSubmitBtn = document.getElementById('bug-submit');
+const bugSubmitBtn = document.getElementById('submit-bug-btn');
+
+// Song correction modal
+const correctionModal = document.getElementById('correction-modal');
+const correctionModalClose = document.getElementById('correction-modal-close');
+const correctionEditBtn = document.getElementById('correction-edit-btn');
+const correctionFeedbackBtn = document.getElementById('correction-feedback-btn');
 
 // Contact modal
 const contactModal = document.getElementById('contact-modal');
 const contactModalClose = document.getElementById('contact-modal-close');
 const contactModalTitle = document.getElementById('contact-modal-title');
 const contactFeedback = document.getElementById('contact-feedback');
-const contactSubmitBtn = document.getElementById('contact-submit');
+const contactSubmitBtn = document.getElementById('submit-contact-btn');
 
 // ============================================
 // THEME HANDLING
@@ -441,14 +447,22 @@ function handleFeedbackOption(type) {
 
     switch (type) {
         case 'song-issue':
-        case 'song-correction':
-            // Open bug report modal for song-specific issues
-            if (bugReportModal) {
-                bugReportModal.classList.remove('hidden');
+            // Open bug report modal for song display issues
+            if (bugModal) {
+                bugModal.classList.remove('hidden');
                 if (bugFeedback) {
                     bugFeedback.value = song ? `Song: ${song.title} by ${song.artist}\n\n` : '';
                     bugFeedback.focus();
                 }
+            }
+            break;
+        case 'song-correction':
+            // Show correction modal with edit option
+            if (song) {
+                correctionModal?.classList.remove('hidden');
+            } else {
+                // No song open, just show feedback form
+                openContactModal('Song Correction', '');
             }
             break;
         case 'search-problem':
@@ -458,31 +472,39 @@ function handleFeedbackOption(type) {
         case 'general':
         case 'copyright':
             // Open contact modal for general feedback
-            if (contactModal) {
-                const titles = {
-                    'search-problem': 'Report Search Problem',
-                    'app-issue': 'Report App Issue',
-                    'request-song': 'Request a Song',
-                    'feature-idea': 'Feature Idea',
-                    'general': 'General Feedback',
-                    'copyright': 'Copyright Concern'
-                };
-                if (contactModalTitle) {
-                    contactModalTitle.textContent = titles[type] || 'Send Feedback';
-                }
-                contactModal.classList.remove('hidden');
-                if (contactFeedback) {
-                    contactFeedback.value = '';
-                    contactFeedback.focus();
-                }
-            }
+            const titles = {
+                'search-problem': 'Report Search Problem',
+                'app-issue': 'Report App Issue',
+                'request-song': 'Request a Song',
+                'feature-idea': 'Feature Idea',
+                'general': 'General Feedback',
+                'copyright': 'Copyright Concern'
+            };
+            openContactModal(titles[type] || 'Send Feedback', '');
             break;
     }
 }
 
-function closeBugReportModal() {
-    bugReportModal?.classList.add('hidden');
+function openContactModal(title, prefill) {
+    if (contactModal) {
+        if (contactModalTitle) {
+            contactModalTitle.textContent = title;
+        }
+        contactModal.classList.remove('hidden');
+        if (contactFeedback) {
+            contactFeedback.value = prefill;
+            contactFeedback.focus();
+        }
+    }
+}
+
+function closeBugModal() {
+    bugModal?.classList.add('hidden');
     if (bugFeedback) bugFeedback.value = '';
+}
+
+function closeCorrectionModal() {
+    correctionModal?.classList.add('hidden');
 }
 
 function closeContactModal() {
@@ -497,7 +519,7 @@ function submitBugReport() {
     const subject = encodeURIComponent('Song Issue Report');
     const body = encodeURIComponent(feedback);
     window.open(`mailto:bluegrassbook.feedback@gmail.com?subject=${subject}&body=${body}`);
-    closeBugReportModal();
+    closeBugModal();
 }
 
 function submitContactForm() {
@@ -1210,11 +1232,27 @@ function init() {
     });
 
     // Bug report modal
-    bugReportModalClose?.addEventListener('click', closeBugReportModal);
-    bugReportModal?.addEventListener('click', (e) => {
-        if (e.target === bugReportModal) closeBugReportModal();
+    bugModalClose?.addEventListener('click', closeBugModal);
+    bugModal?.addEventListener('click', (e) => {
+        if (e.target === bugModal) closeBugModal();
     });
     bugSubmitBtn?.addEventListener('click', submitBugReport);
+
+    // Song correction modal
+    correctionModalClose?.addEventListener('click', closeCorrectionModal);
+    correctionModal?.addEventListener('click', (e) => {
+        if (e.target === correctionModal) closeCorrectionModal();
+    });
+    correctionEditBtn?.addEventListener('click', () => {
+        closeCorrectionModal();
+        // Trigger edit mode for current song
+        enterEditMode(getCurrentSong());
+    });
+    correctionFeedbackBtn?.addEventListener('click', () => {
+        closeCorrectionModal();
+        const song = getCurrentSong();
+        openContactModal('Song Correction', song ? `Song: ${song.title} by ${song.artist}\n\n` : '');
+    });
 
     // Contact modal
     contactModalClose?.addEventListener('click', closeContactModal);

@@ -408,7 +408,7 @@ If you want to contribute, your contributions are welcome! Reach out to me, or s
             <div class="modal-content">
                 <div class="modal-header">
                     <h2>Report Parsing Bug</h2>
-                    <button id="modal-close" class="modal-close">&times;</button>
+                    <button id="bug-modal-close" class="modal-close">&times;</button>
                 </div>
                 <div class="modal-body">
                     <label for="bug-feedback">Describe the issue:</label>
@@ -417,6 +417,24 @@ If you want to contribute, your contributions are welcome! Reach out to me, or s
                 <div class="modal-footer">
                     <button id="submit-bug-btn" class="action-btn primary">Submit Bug Report</button>
                     <span id="bug-status" class="copy-status"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Song Correction Modal -->
+        <div id="correction-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Song Correction</h2>
+                    <button id="correction-modal-close" class="modal-close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p style="margin-bottom: 1rem;">You can edit songs directly! Click the edit button to fix chords, lyrics, or formatting yourself.</p>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Your changes can be submitted for review and added to the songbook.</p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <button id="correction-edit-btn" class="action-btn primary">Edit This Song</button>
+                        <button id="correction-feedback-btn" class="action-btn">Just Send Feedback</button>
+                    </div>
                 </div>
             </div>
         </div>
