@@ -18,6 +18,8 @@ HTML → raw .pro  →  enriched .pro       →   index.jsonl
 scripts/lib/
 ├── enrich_songs.py       # Enrich .pro files (provenance, chord normalization)
 ├── build_index.py        # Build docs/data/index.jsonl from .pro files
+├── tag_enrichment.py     # Tag enrichment (MusicBrainz + harmonic analysis)
+├── query_artist_tags.py  # Optimized MusicBrainz artist tag queries
 ├── add_song.py           # Add a song to manual/parsed/
 ├── process_submission.py # GitHub Action: process song-submission issues
 ├── process_correction.py # GitHub Action: process song-correction issues
@@ -41,6 +43,9 @@ uv run python scripts/lib/enrich_songs.py
 
 # Count chord usage across all songs
 ./scripts/utility count-chords
+
+# Refresh tags from MusicBrainz (requires local MB database)
+./scripts/utility refresh-tags
 ```
 
 ## enrich_songs.py
@@ -179,6 +184,59 @@ Scores each possible key by:
 1. How many song chords fit the key's diatonic scale
 2. Bonus weight for tonic chord appearances
 3. Tie-breaking: prefer common keys (G, C, D, A, E, Am, Em)
+
+---
+
+## Tag System
+
+Tags are added to songs during index build via `tag_enrichment.py`.
+
+### Tag Taxonomy
+
+| Category | Tags |
+|----------|------|
+| **Genre** | Bluegrass, ClassicCountry, OldTime, Gospel, Folk, HonkyTonk, Outlaw, Rockabilly, etc. |
+| **Vibe** | JamFriendly, Modal, Jazzy |
+| **Structure** | Instrumental, Waltz |
+
+### Tag Sources
+
+1. **MusicBrainz artist tags** - Genre tags from crowdsourced artist data
+2. **Harmonic analysis** - Vibe tags computed from chord content:
+   - `JamFriendly`: ≤5 unique chords, has I-IV-V, no complex extensions
+   - `Modal`: Has bVII chord (e.g., F in key of G)
+   - `Jazzy`: Has 7th, 9th, dim, aug, or slash chords
+
+### Data Files
+
+| File | Purpose |
+|------|---------|
+| `docs/data/artist_tags.json` | Cached MusicBrainz artist tags (checked into git) |
+| `docs/data/tags.json` | Song-level tag cache |
+
+### Refreshing Tags
+
+MusicBrainz is only available locally (not on GitHub Actions). To refresh:
+
+```bash
+# Requires local MusicBrainz database on port 5440
+./scripts/utility refresh-tags
+```
+
+This updates `artist_tags.json` and rebuilds the index. GitHub Actions builds read from the cached file.
+
+### query_artist_tags.py
+
+Optimized MusicBrainz queries using LATERAL joins with indexed lookups:
+
+```python
+# Query tags for artists (0.9s for 900 artists)
+from query_artist_tags import query_artist_tags_batch
+results = query_artist_tags_batch(['Bill Monroe', 'Hank Williams'])
+# Returns: {'Bill Monroe': [('bluegrass', 45), ('country', 12), ...], ...}
+```
+
+---
 
 ## add_song.py
 

@@ -8,6 +8,7 @@ A searchable collection of 17,000+ bluegrass and country songs with chords, buil
 ./scripts/bootstrap          # First-time setup (install deps + build index)
 ./scripts/server             # Start frontend at http://localhost:8080
 ./scripts/utility add-song FILE.pro  # Add a song to the collection
+./scripts/utility refresh-tags       # Refresh tags from MusicBrainz (local only)
 ```
 
 ## Development Practices
@@ -74,7 +75,7 @@ Bluegrass-Songbook/
 ├── scripts/                 # CLI tools
 │   ├── bootstrap            # Setup + build index
 │   ├── server               # Start dev server
-│   ├── utility              # add-song, count-chords
+│   ├── utility              # add-song, count-chords, refresh-tags
 │   └── lib/                 # Python implementations
 │
 ├── supabase/                # Supabase backend configuration
@@ -176,7 +177,8 @@ See `.claude/skills/chordpro/SKILL.md` for full syntax reference.
 
 ## Current State
 
-- **17,053 songs** with chord search, transposition, favorites, dark mode
+- **17,144 songs** with chord search, transposition, favorites, dark mode
+- **Tags**: Genre (Bluegrass, ClassicCountry, etc.), Vibe (JamFriendly, Modal), Structure (Instrumental, Waltz) - 93% coverage via MusicBrainz + harmonic analysis
 - **User accounts**: Google OAuth via Supabase, cloud-synced lists
 - **Song versions**: Multiple arrangements with voting (infrastructure ready)
 - **URL stability**: Song URLs (`#song/{id}`) are permanent; new submissions get unique IDs, corrections update in place
