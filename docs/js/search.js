@@ -293,6 +293,28 @@ function toggleTheme() {
     setTheme(current === 'dark' ? 'light' : 'dark');
 }
 
+// Tag display helpers
+const TAG_CATEGORIES = {
+    // Genres
+    'Bluegrass': 'genre', 'OldTime': 'genre', 'Gospel': 'genre', 'Folk': 'genre',
+    'ClassicCountry': 'genre', 'HonkyTonk': 'genre', 'Bakersfield': 'genre',
+    'Outlaw': 'genre', 'WesternSwing': 'genre', 'NashvilleSound': 'genre',
+    'Rockabilly': 'genre', 'Pop': 'genre', 'Jazz': 'genre',
+    // Structure
+    'Instrumental': 'structure', 'Waltz': 'structure', 'Standard': 'structure', 'Crooked': 'structure',
+    // Vibe
+    'JamFriendly': 'vibe', 'Modal': 'vibe', 'Ragtime': 'vibe', 'Jazzy': 'vibe', 'Slow': 'vibe',
+};
+
+function getTagCategory(tag) {
+    return TAG_CATEGORIES[tag] || 'other';
+}
+
+function formatTagName(tag) {
+    // Convert CamelCase to readable format
+    return tag.replace(/([A-Z])/g, ' $1').trim();
+}
+
 // Favorites management
 function saveFavorites() {
     localStorage.setItem('songbook-favorites', JSON.stringify([...favorites]));
@@ -940,7 +962,8 @@ function parseSearchQuery(query) {
     const result = {
         textTerms: [],
         chordFilters: [],      // e.g., ['VII', 'II']
-        progressionFilter: null // e.g., ['ii', 'V', 'I']
+        progressionFilter: null, // e.g., ['ii', 'V', 'I']
+        tagFilters: []         // e.g., ['Bluegrass', 'JamFriendly']
     };
 
     const tokens = query.split(/\s+/);
@@ -952,6 +975,9 @@ function parseSearchQuery(query) {
         } else if (token.startsWith('prog:') || token.startsWith('p:')) {
             const prog = token.replace(/^(prog:|p:)/, '').split('-');
             result.progressionFilter = prog.filter(c => c);
+        } else if (token.startsWith('tag:') || token.startsWith('t:')) {
+            const tags = token.replace(/^(tag:|t:)/, '').split(',');
+            result.tagFilters.push(...tags.filter(t => t));
         } else if (token) {
             result.textTerms.push(token.toLowerCase());
         }
@@ -996,6 +1022,20 @@ function songHasProgression(song, progression) {
     return false;
 }
 
+// Check if song has all required tags (case-insensitive prefix match)
+function songHasTags(song, requiredTags) {
+    if (!requiredTags.length) return true;
+
+    const songTags = song.tags || {};
+    const songTagKeys = Object.keys(songTags).map(t => t.toLowerCase());
+
+    return requiredTags.every(searchTag => {
+        const searchLower = searchTag.toLowerCase();
+        // Match if any tag starts with the search term
+        return songTagKeys.some(tag => tag.startsWith(searchLower));
+    });
+}
+
 // Search songs
 function search(query) {
     showingFavorites = false;
@@ -1007,7 +1047,7 @@ function search(query) {
         return;
     }
 
-    const { textTerms, chordFilters, progressionFilter } = parseSearchQuery(query);
+    const { textTerms, chordFilters, progressionFilter, tagFilters } = parseSearchQuery(query);
 
     const results = allSongs.filter(song => {
         // Text search
@@ -1033,6 +1073,11 @@ function search(query) {
         // Progression search
         if (progressionFilter && progressionFilter.length > 0) {
             if (!songHasProgression(song, progressionFilter)) return false;
+        }
+
+        // Tag search
+        if (tagFilters.length > 0) {
+            if (!songHasTags(song, tagFilters)) return false;
         }
 
         return true;
@@ -1067,6 +1112,9 @@ function search(query) {
     }
     if (progressionFilter && progressionFilter.length > 0) {
         statsText += ` with ${progressionFilter.join('-')} progression`;
+    }
+    if (tagFilters.length > 0) {
+        statsText += ` tagged ${tagFilters.map(formatTagName).join(', ')}`;
     }
     searchStats.textContent = statsText;
 
@@ -1108,11 +1156,19 @@ function renderResults(songs, query) {
             ? `<span class="version-badge" data-group-id="${groupId}">${versionCount} versions</span>`
             : '';
 
+        // Generate tag badges (max 3)
+        const tags = song.tags || {};
+        const tagBadges = Object.keys(tags).slice(0, 3).map(tag => {
+            const category = getTagCategory(tag);
+            return `<span class="tag-badge tag-${category}" data-tag="${tag}">${formatTagName(tag)}</span>`;
+        }).join('');
+
         return `
             <div class="result-item ${favClass}" data-id="${song.id}" data-group-id="${groupId || ''}">
                 <div class="result-main">
                     <div class="result-title">${highlightMatch(song.title || 'Unknown', query)}${versionBadge}</div>
                     <div class="result-artist">${highlightMatch(song.artist || 'Unknown artist', query)}</div>
+                    ${tagBadges ? `<div class="result-tags">${tagBadges}</div>` : ''}
                     <div class="result-preview">${song.first_line || ''}</div>
                 </div>
                 <button class="result-list-btn ${btnClass}" data-song-id="${song.id}" title="Add to list">+</button>
@@ -1123,8 +1179,9 @@ function renderResults(songs, query) {
     // Click on result item opens song (or version picker if multiple versions)
     resultsDiv.querySelectorAll('.result-item').forEach(item => {
         item.addEventListener('click', (e) => {
-            // Don't open song if clicking the list button
+            // Don't open song if clicking the list button or tag badge
             if (e.target.classList.contains('result-list-btn')) return;
+            if (e.target.classList.contains('tag-badge')) return;
 
             const groupId = item.dataset.groupId;
             const versions = groupId ? (songGroups[groupId] || []) : [];
@@ -1144,6 +1201,19 @@ function renderResults(songs, query) {
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
             showResultListPicker(btn, btn.dataset.songId);
+        });
+    });
+
+    // Click on tag badge filters by that tag
+    resultsDiv.querySelectorAll('.tag-badge').forEach(badge => {
+        badge.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const tag = badge.dataset.tag;
+            if (tag) {
+                // Set search to filter by this tag
+                searchInput.value = `tag:${tag}`;
+                search(`tag:${tag}`);
+            }
         });
     });
 }
@@ -2182,6 +2252,67 @@ document.querySelectorAll('.search-hint').forEach(hint => {
         search(searchInput.value);
     });
 });
+
+// Tag dropdown
+const tagDropdownBtn = document.getElementById('tag-dropdown-btn');
+const tagDropdownContent = document.getElementById('tag-dropdown-content');
+
+if (tagDropdownBtn && tagDropdownContent) {
+    // Toggle dropdown
+    tagDropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        tagDropdownContent.classList.toggle('show');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!tagDropdownContent.contains(e.target) && e.target !== tagDropdownBtn) {
+            tagDropdownContent.classList.remove('show');
+        }
+    });
+
+    // Handle checkbox changes
+    tagDropdownContent.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            updateSearchFromTagCheckboxes();
+        });
+    });
+
+    // Sync checkboxes with search input
+    searchInput.addEventListener('input', syncTagCheckboxes);
+}
+
+function updateSearchFromTagCheckboxes() {
+    const checkedTags = [];
+    tagDropdownContent.querySelectorAll('input[type="checkbox"]:checked').forEach(cb => {
+        checkedTags.push(cb.dataset.tag);
+    });
+
+    // Get current search without tag filters
+    let currentSearch = searchInput.value;
+    // Remove existing tag: filters
+    currentSearch = currentSearch.replace(/\s*(tag|t):[^\s]+/g, '').trim();
+
+    // Add new tag filters
+    if (checkedTags.length > 0) {
+        const tagFilter = `tag:${checkedTags.join(',')}`;
+        currentSearch = currentSearch ? `${currentSearch} ${tagFilter}` : tagFilter;
+    }
+
+    searchInput.value = currentSearch;
+    search(currentSearch);
+}
+
+function syncTagCheckboxes() {
+    const { tagFilters } = parseSearchQuery(searchInput.value);
+    const tagFiltersLower = tagFilters.map(t => t.toLowerCase());
+
+    tagDropdownContent.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        const tag = cb.dataset.tag.toLowerCase();
+        // Check if this tag (or prefix) is in the filters
+        cb.checked = tagFiltersLower.some(f => tag.startsWith(f) || f.startsWith(tag));
+    });
+}
 
 backBtn.addEventListener('click', goBack);
 
